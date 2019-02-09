@@ -50,5 +50,5 @@ HRESULT get_program ( 
   
    プログラム文字列が、CPU と現在のスタック フレームで表される関数を設定する呼び出し規約に固有であるに注意してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
