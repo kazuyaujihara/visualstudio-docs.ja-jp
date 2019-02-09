@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cada6491e0c4af20197848302ff0cf7006acd3ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99cd0704c74da1e3f31363c5847260e39d844a41
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068916"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944443"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>図の外観のカスタマイズ
 この図は、ドメイン固有言語デザイナーの主な表示領域です。 通常、ユーザーはこの図を使用してモデルを作成します。 以降のトピックで説明されているように、図をカスタマイズできます。

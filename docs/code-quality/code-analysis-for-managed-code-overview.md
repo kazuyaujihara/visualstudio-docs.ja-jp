@@ -1,7 +1,6 @@
 ---
 title: マネージ コード用の静的コード分析
 ms.date: 03/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04ae73deb4bc4dfba550df2c663d8f77a4b1efcf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030081"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909142"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio でマネージ コード用の静的コード分析の概要
 
@@ -35,13 +34,13 @@ Visual Studio 2017 は、2 つの方法でマネージ コードのコード分�
 
 手動または自動では、プロジェクトでコード分析を実行できます。
 
-プロジェクトをビルドするたびにコード分析を実行する選択**ビルドに対するコード分析を有効にする**プロジェクトのプロパティ ページ。 詳細については、「[方法 :有効にして、自動コード分析を無効にする](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)します。
+プロジェクトをビルドするたびにコード分析を実行する選択**ビルドに対するコード分析を有効にする**プロジェクトのプロパティ ページ。 詳細については、「[方法 :自動コード分析を有効/無効にする](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)」を参照してください。
 
 プロジェクトに手動でコード分析を実行する、メニュー バーから選択**分析** > **コード分析を実行** > **でコード分析を実行\<プロジェクト>** します。
 
 ## <a name="rule-sets"></a>規則セット
 
-マネージ コードのコード分析規則にグループ化[ルール セット](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)します。 Microsoft 標準の規則セットのいずれかを使用することもできます[カスタム規則セットを作成](../code-quality/how-to-create-a-custom-rule-set.md)を特定のニーズを満たすためにします。
+マネージド コード用のコード分析規則は、[規則セット](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)にグループ化されています。 Microsoft 標準の規則セットのいずれかを使用することもできます[カスタム規則セットを作成](../code-quality/how-to-create-a-custom-rule-set.md)を特定のニーズを満たすためにします。
 
 ## <a name="suppress-warnings"></a>警告を表示しない
 
@@ -80,4 +79,4 @@ Public class MyClass
 
 - [Roslyn アナライザーの概要](../code-quality/roslyn-analyzers-overview.md)
 - [規則セットを使用したコード分析規則のグループ化](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [方法: 有効にして、自動コード分析を無効にします。](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [方法: 自動コード分析を有効/無効にする](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

@@ -2,7 +2,6 @@
 title: ワークフロー デザイナーの State アクティビティ デザイナー
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
@@ -11,20 +10,22 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2d69b5533ebaf617563c7ce8ff9ba83453bc2fb0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4d07cfeeb713767bc4f711c99b6b482759af2232
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926151"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940765"
 ---
 # <a name="state-activity-designer"></a>State アクティビティ デザイナー
 
-<xref:System.Activities.Statements.State> はステート マシンの状態を表します。
+
+  <xref:System.Activities.Statements.State> はステート マシンの状態を表します。
 
 ## <a name="using-the-state-activity-designer"></a>State アクティビティ デザイナーの使用
 
-追加する、 <xref:System.Activities.Statements.State> 、ワークフローにドラッグ、**状態**からアクティビティ デザイナー、**ステート マシン**のセクション、**ツールボックス**にドロップし、 <xref:System.Activities.Statements.StateMachine>ワークフロー デザイナー画面でアクティビティ。 <xref:System.Activities.Statements.State> アクティビティは、<xref:System.Activities.Statements.StateMachine> にドロップして遷移を後で追加できます。または遷移は、<xref:System.Activities.Statements.State> アクティビティをドロップしたときに作成できます。 追加する、<xref:System.Activities.Statements.State>アクティビティ ドラッグの 1 つのステップの遷移を作成し、**状態**からのアクティビティ、**ステート マシン**のセクション、**ツールボックス**別上に置きますワークフロー デザイナーでの状態。 ドラッグされている <xref:System.Activities.Statements.State> が別の <xref:System.Activities.Statements.State> の上にある場合、もう一方の <xref:System.Activities.Statements.State> の周囲に 4 つの三角形が表示されます。 <xref:System.Activities.Statements.State> を 4 つの三角形のいずれかにドロップすると、ステート マシンに追加され、遷移元の <xref:System.Activities.Statements.State> からドロップされた遷移先の <xref:System.Activities.Statements.State> に遷移が作成されます。 詳細については、次を参照してください。[遷移](../workflow-designer/transition-activity-designer.md)します。
+追加する、 <xref:System.Activities.Statements.State> 、ワークフローにドラッグ、**状態**からアクティビティ デザイナー、**ステート マシン**のセクション、**ツールボックス**にドロップし、 <xref:System.Activities.Statements.StateMachine>ワークフロー デザイナー画面でアクティビティ。 <xref:System.Activities.Statements.State> アクティビティは、<xref:System.Activities.Statements.StateMachine> にドロップして遷移を後で追加できます。または遷移は、<xref:System.Activities.Statements.State> アクティビティをドロップしたときに作成できます。 追加する、<xref:System.Activities.Statements.State>アクティビティ ドラッグの 1 つのステップの遷移を作成し、**状態**からのアクティビティ、**ステート マシン**のセクション、**ツールボックス**別上に置きますワークフロー デザイナーでの状態。 ドラッグされている <xref:System.Activities.Statements.State> が別の <xref:System.Activities.Statements.State> の上にある場合、もう一方の <xref:System.Activities.Statements.State> の周囲に 4 つの三角形が表示されます。 
+  <xref:System.Activities.Statements.State> を 4 つの三角形のいずれかにドロップすると、ステート マシンに追加され、遷移元の <xref:System.Activities.Statements.State> からドロップされた遷移先の <xref:System.Activities.Statements.State> に遷移が作成されます。 詳細については、次を参照してください。[遷移](../workflow-designer/transition-activity-designer.md)します。
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>ワークフロー デザイナーでの State アクティビティのプロパティ
 

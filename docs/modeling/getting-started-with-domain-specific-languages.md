@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 55faad5ee76819320384d977100bf02e482b79ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 93a121a103d18d886fafa2368d8669276a8010e8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940129"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938287"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>ドメイン固有言語の概要
 
@@ -394,7 +393,7 @@ DSL 定義では、保存、変更のたびに次のようにクリックしま�
 
  Visual Studio の実験用インスタンスを使用する必要はありませんので、自分のコンピューターに、DSL をインストールするには、同じ手順に従います。
 
- 詳細については、次を参照してください。[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)します。
+ 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
 
 ##  <a name="Reset"></a> 以前の実験的な Dsl を削除します。
  不要な実験用の Dsl を作成した場合は、Visual Studio 実験用インスタンスをリセットすることで、コンピューターから削除にできます。
