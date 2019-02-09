@@ -40,5 +40,5 @@ HRESULT get_sourceCompression ( 
 ## <a name="remarks"></a>コメント  
  このメソッドによって返される値は、使用されるコンパイラに固有です。 たとえば、コンパイラは、実行長エンコーディングまたは Huffman スタイルの圧縮を使用する可能性があります。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
