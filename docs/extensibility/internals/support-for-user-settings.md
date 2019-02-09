@@ -42,19 +42,19 @@ VSPackage は、ユーザーが選択したときに永続化状態変数のグ�
 
  `<CSPName`>= s '#12345'  
 
- パッケージ ' {XXXXXX XXXX XXXX XXXX XXXXXXXXX}' を =  
+ Package = '{XXXXXX XXXX XXXX XXXX XXXXXXXXX}' 
 
- カテゴリ ' {YYYYYY YYYY YYYY YYYY YYYYYYYYY}' を =  
+ Category = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}' 
 
- ResourcePackage ' {ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}' を =  
+ ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}' 
 
- AlternateParent CategoryName を =  
+ AlternateParent = CategoryName 
 
 
 | 名前 | 型 | データ | 説明 |
 |-----------------|--------| - | - |
 | (既定) | REG_SZ | カスタム設定ポイントの名前 | キーの名前、 `<CSPName`>、カスタム設定ポイントのローカライズされていない名前を指定します。<br /><br /> MPF に基づいた実装では、キーの名前を取得するのと組み合わせることで、`categoryName`と`objectName`の引数、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>コンス トラクターに`categoryName_objectName`します。<br /><br /> キーは、空にできます。 またはサテライト DLL にローカライズされた文字列への参照 ID を含めることができます。 この値は、`objectNameResourceID`への引数、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>コンス トラクター。 |
-| パッケージ | REG_SZ | GUID | カスタム設定ポイントを実装する VSPackage の GUID です。<br /><br /> 実装で、MPF を使用してに基づいて、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラスを使用して、コンス トラクターの`objectType`引数を含む VSPackage の<xref:System.Type>とリフレクションはこの値を取得します。 |
-| カテゴリ | REG_SZ | GUID | 設定カテゴリを識別する GUID。<br /><br /> 相互運用機能アセンブリに基づく実装では、この値は任意に選択したは、GUID を[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE に渡します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A>メソッド。 これら 2 つのメソッドのすべての実装では、その GUID 引数を確認してください。<br /><br /> MPF に基づいた実装では、この GUID を取得するので、<xref:System.Type>実装するクラスの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]設定メカニズム。 |
+| Package | REG_SZ | GUID | カスタム設定ポイントを実装する VSPackage の GUID です。<br /><br /> 実装で、MPF を使用してに基づいて、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラスを使用して、コンス トラクターの`objectType`引数を含む VSPackage の<xref:System.Type>とリフレクションはこの値を取得します。 |
+| Category | REG_SZ | GUID | 設定カテゴリを識別する GUID。<br /><br /> 相互運用機能アセンブリに基づく実装では、この値は任意に選択したは、GUID を[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE に渡します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A>メソッド。 これら 2 つのメソッドのすべての実装では、その GUID 引数を確認してください。<br /><br /> MPF に基づいた実装では、この GUID を取得するので、<xref:System.Type>実装するクラスの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]設定メカニズム。 |
 | ResourcePackage | REG_SZ | GUID | 任意。<br /><br /> サテライト DLL を含むへのパスでは、実装する VSPackage がそれらを指定しない場合、文字列がローカライズされました。<br /><br /> MPF リフレクションを使用して、適切なリソース、VSPackage を取得するため、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラスは、この引数を設定しません。 |
 | AlternateParent | REG_SZ | このカスタム設定ポイントを格納しているツール オプション ページの下のフォルダーの名前です。 | 任意。<br /><br /> 設定の実装をサポートしている場合にのみ、この値を設定する必要があります**ツール オプション**で永続化メカニズムを使用するページ、[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]オートメーション モデルの状態を保存するメカニズムではなく。<br /><br /> AlternateParent キーの値は、このような場合、`topic`のセクション、`topic.sub-topic`特定を識別するために使用される文字列**制御**ページ。 たとえば、**制御**ページ`"TextEditor.Basic"`AlternateParent の値になります。`"TextEditor"`します。<br /><br /> ときに<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>カスタム設定ポイントを生成します。 これは、カテゴリ名と同じです。 |
