@@ -7,16 +7,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9d9a1826e8c06d947e05bf7201f2963a7bac860f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82309eb9288dffb1fca0a3917b764ffb9040ab9d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039580"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937182"
 ---
 # <a name="how-to--with-text-templates"></a>テキスト テンプレートでどうやって ... をする
-Visual Studio でテキスト テンプレートでは、あらゆる種類のテキストを生成するのに便利な方法を提供します。 テキスト テンプレートを使用すると、実行時に、アプリケーションの一部として、デザイン時、プロジェクト コードの一部を生成するのにテキストを生成します。 このトピックでは、最も頻繁にまとめたものです"How do I..."よく寄せられる 質問します。
+Visual Studio のテキスト テンプレートは、あらゆる種類のテキストを生成するのに便利な方法を提供します。 テキスト テンプレートを使用すると、アプリケーションの一部として実行時にテキストを生成したり、デザイン時にプロジェクト コードの一部を生成することができます。 このトピックでは、「どうやって ... をするか？」として最も頻繁に寄せられる質問をまとめています。 質問します。
 
  このトピックでは、ビュレットが付いている複数の回答は代替案です。
 
@@ -27,28 +26,28 @@ Visual Studio でテキスト テンプレートでは、あらゆる種類の�
 ### <a name="generate-part-of-my-application-code"></a>アプリケーション コードの一部を生成
  ファイルまたはデータベースにコンフィグレーションまたは*モデル*があります。 コードの 1 つ以上の部分が、そのモデルに依存しています。
 
--   テキスト テンプレートからは、一部のコード ファイルを生成します。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)と[テンプレートの作成を開始する最善の方法は何ですか?](#starting)します。
+-   テキスト テンプレートから、コード ファイルの一部を生成します。 詳細については、[T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)と[テンプレートの作成を開始する最善の方法は何ですか?](#starting)を参照してください。
 
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>テンプレートにデータを渡して、実行時にファイルを生成する
  実行時に、アプリケーションは、標準のテキストとデータの組み合わせを含むレポートなどのテキスト ファイルを生成します。 何百もの `write` ステートメントを書くことを回避したいです。
 
 -   ランタイム テキスト テンプレートをプロジェクトに追加します。 このテンプレートは、あなたのコードでインスタンス化しテキストを生成することができるクラスを作成します。 データは、コンストラクターのパラメーターから渡すことができます。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
--   実行時にのみ使用可能なテンプレートから生成する場合は、標準のテキスト テンプレートを使用できます。 Visual Studio 拡張機能を作成する場合は、テキスト テンプレート サービスを呼び出すことができます。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)します。 他のコンテキストで、テキスト テンプレート エンジンを使用することができます。 詳細については、「 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 」を参照してください。
+-   実行時にのみ使用可能なテンプレートを生成する場合は、標準のテキスト テンプレートを使用できます。 Visual Studio 拡張機能を作成する場合は、テキスト テンプレート サービスを呼び出すことができます。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md) 他のコンテキストで、テキスト テンプレート エンジンを使用することができます。 詳細については、「 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 」を参照してください。
 
-     使用して、 \<#@parameter#> ディレクティブには、これらのテンプレート パラメーターを渡します。 詳細については、次を参照してください。 [T4 パラメーター ディレクティブ](../modeling/t4-parameter-directive.md)します。
+     パラメーターをこれらのテンプレートに渡すには \<#@parameter#> ディレクティブを使用します。 詳細については、次を参照してください。 [T4 パラメーター ディレクティブ](../modeling/t4-parameter-directive.md)
 
 ### <a name="read-another-project-file-from-a-template"></a>テンプレートから別のプロジェクト ファイルを読み取る
  テンプレートと同じ Visual Studio プロジェクトからのファイルを読み取るには次のようにします。
 
 -   `hostSpecific="true"` ディレクティブに `<#@template#>` を挿入します。
 
-     コードで、次のように使用します。`this.Host.ResolvePath(filename)`ファイルの完全なパスを取得します。
+     コードで、ファイルの完全なパスを取得するために、`this.Host.ResolvePath(filename)` を使用します。
 
 ### <a name="invoke-methods-from-a-template"></a>テンプレートからメソッドを呼び出す
  標準[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .NET Framework クラスなど、既に存在するメソッドの場合:
 
-- 使用して、 \<#@assembly#> ディレクティブは、アセンブリをロードして使用する\<#@import#> 名前空間のコンテキストを設定します。 詳細については、次を参照してください。 [T4 インポート ディレクティブ](../modeling/t4-import-directive.md)
+- \<#@assembly ディレクティブを使用して、アセンブリをロードし、\<#@import#> を使用して名前空間のコンテキストを設定します。 詳細については、次を参照してください。 [T4 インポート ディレクティブ](../modeling/t4-import-directive.md)
 
    頻繁に同じアセンブリのセットを使用し、ディレクティブをインポートする場合には、ディレクティブ プロセッサの作成を検討してください。 各テンプレートでは、アセンブリとモデル ファイルを読み込み、名前空間のコンテキストを設定できるディレクティブ プロセッサを呼び出すことができます。 詳細については、次を参照してください。[カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成](../modeling/creating-custom-t4-text-template-directive-processors.md)
 
@@ -56,13 +55,13 @@ Visual Studio でテキスト テンプレートでは、あらゆる種類の�
 
 - ランタイム テキスト テンプレートを作成する場合、ランタイム テキスト テンプレートと同じ名前を持つ部分クラス定義を記述します。 このクラスに、追加するメソッドを追加します。
 
-- クラス機能コントロール ブロックを書き込む`<#+ ... #>`でメソッド、プロパティ、およびプライベートのクラス宣言できますが。 テキスト テンプレートのコンパイル時に、クラスに変換されます。 標準コントロール ブロック`<#...#>`テキストが 1 つのメソッドに変換され、別のメンバーとしてクラス機能ブロックが挿入されます。 詳細については、次を参照してください。[テキスト テンプレートのコントロール ブロック](../modeling/text-template-control-blocks.md)します。
+- メソッド、プロパティ、およびプライベートのクラス宣言ができるクラス機能コントロール ブロック `<#+ ... #>` を書きます。 そのテキスト テンプレートはコンパイル時に、クラスに変換されます。 標準コントロール ブロック `<#...#>` とテキストは、1 つのメソッドに変換され、クラス機能ブロックは別のメンバーとして挿入されます。 詳細については、次を参照してください。[テキスト テンプレートのコントロール ブロック](../modeling/text-template-control-blocks.md)
 
    クラスの機能として定義されたメソッドは、埋め込みのテキスト ブロックとして含めることもできます。
 
-   可能な別のファイルにクラスの機能を配置すること検討`<#@include#>`を 1 つまたは複数のテンプレート ファイルにします。
+   別のファイルにクラスの機能を配置すること検討します。`<#@include#>` で1 つまたは複数のテンプレート ファイルにインクルードするこができます。
 
-- 別のアセンブリ (クラス ライブラリ) で、メソッドを記述し、テンプレートから呼び出すことです。 使用して、`<#@assembly#>`ディレクティブは、アセンブリの読み込みと`<#@import#>`名前空間のコンテキストを設定します。 それをデバッグするときに、アセンブリを再構築するためにする必要がありますを停止し、Visual Studio を再起動に注意してください。 詳細については、次を参照してください。 [T4 テキスト テンプレート ディレクティブ](../modeling/t4-text-template-directives.md)します。
+- 別のアセンブリ (クラス ライブラリ) で、メソッドを記述し、テンプレートから呼び出します。 `<#@assembly#>` ディレクティブを使用してアセンブリを読み込み、`<#@import#>` を使用して名前空間のコンテキストを設定します。 デバッグによりアセンブリを再構築するには、Visual Studio を停止し再起動する必要があることに注意してください。 詳細については、次を参照してください。 [T4 テキスト テンプレート ディレクティブ](../modeling/t4-text-template-directives.md)
 
 ### <a name="generate-many-files-from-one-model-schema"></a>1 つのモデル スキーマからの多数のファイル生成
  同じXMLまたはデータベース スキーマを持つモデルからファイルをしばしば生成する場合:
@@ -75,7 +74,7 @@ Visual Studio でテキスト テンプレートでは、あらゆる種類の�
 
      `foreach (Book book in this.Library) { ... }`
 
-     詳細については、次を参照してください。[ドメイン固有言語の概要](../modeling/getting-started-with-domain-specific-languages.md)と[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)します。
+     詳細については、次を参照してください。[ドメイン固有言語の概要](../modeling/getting-started-with-domain-specific-languages.md)と[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)
 
 ### <a name="get-data-from-visual-studio"></a>Visual Studio からのデータの取得
  Visual Studio で提供されるサービスを使用するには、`hostSpecific` 属性を設定し、`EnvDTE` アセンブリをロードします。 例:
@@ -98,11 +97,11 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ## <a name="more-general-questions"></a>一般的な質問
 
-### <a name="starting"></a> テキスト テンプレートの作成を開始する最善の方法とは何ですか。
+### <a name="starting"></a>テキスト テンプレートの作成を開始する最善の方法は何ですか?
 
 1.  生成されたファイルの具体的な例を記述します。
 
-2.  挿入することで、テキスト テンプレートに変えます、`<#@template #>`ディレクティブおよびディレクティブとコードを入力ファイルまたはモデルを読み込むために必要な。
+2.  `<#@template #>` ディレクティブを挿入することで、テキスト テンプレートに変えます。ディレクティブとコードは、入力ファイルまたはモデルを読み込むために必要です。
 
 3.  段階的に、ファイルの一部を式とコード ブロックに置き換えます。
 
