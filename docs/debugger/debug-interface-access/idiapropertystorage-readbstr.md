@@ -44,5 +44,5 @@ HRESULT ReadBSTR ( 
 ## <a name="remarks"></a>コメント  
  A `BSTR` 0 で終わるワイド文字列としての Windows によって定義されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
