@@ -40,5 +40,5 @@ HRESULT get_nopad(
 ## <a name="remarks"></a>コメント  
  これは通常、古いファイルでのみ見プロパティです。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
