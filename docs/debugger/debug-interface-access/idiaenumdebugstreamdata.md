@@ -109,7 +109,7 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
  [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)
