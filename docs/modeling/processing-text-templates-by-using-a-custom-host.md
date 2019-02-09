@@ -10,20 +10,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d6de5da0ca6026ad993cbd2d4b2e9cb3e8c9280b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e72b279d55cbe11f6232ff1f91c8fee443d9c283
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962002"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910937"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>カスタム ホストを使用したテキスト テンプレートの処理
 
 *テキスト テンプレート変換*処理は、*テキスト テンプレート*ファイルを入力とし、テキスト ファイルを出力として生成します。 テキスト変換エンジンは、Visual Studio の拡張機能、または Visual Studio がインストールされているマシンで実行されているスタンドアロンのアプリケーションから呼び出すことができます。 ただし、*テキスト テンプレート ホスト*を提供する必要があります。 このクラスは、テンプレートを環境に接続し、アセンブリやインクルード ファイルなどのリソースの検索と、出力およびエラー メッセージの処理を行います。
 
 > [!TIP]
-> パッケージまたは Visual Studio 内で実行される拡張機能を記述する場合は、独自のホストを記述する代わりに、テキスト テンプレート サービスを使用することを検討します。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)します。
+> パッケージまたは Visual Studio 内で実行される拡張機能を記述する場合は、独自のホストを記述する代わりに、テキスト テンプレート サービスを使用することを検討します。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
 > [!NOTE]
 > サーバー アプリケーションでテキスト テンプレート変換を使用することはお勧めしません。 また、シングル スレッド以外でテキスト テンプレート変換を使用することはお勧めしません。 テキスト テンプレート エンジンでは、単一の AppDomain を再利用して、テンプレートを変換、コンパイル、および実行するためです。 変換されたコードは、スレッド セーフになるように設計されているわけではありません。 エンジンは、Visual Studio プロジェクトのデザイン時のように、順番に処理するように設計されています。

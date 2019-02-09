@@ -1,19 +1,18 @@
 ---
 title: 有効にするか、コード分析を無効にします。
 ms.date: 10/25/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 32987a8008638b13606c3eb14cb023ded2741998
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4878c25021d87e91f6a575d11a876d7aac2455d5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973942"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918131"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>方法: 有効にして、マネージ コードの自動コード分析を無効にします。
 

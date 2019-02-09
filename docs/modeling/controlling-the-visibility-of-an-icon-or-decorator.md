@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 731ca1a7091af81abb5b9ed2521cc41f575747cb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbe658dd3cad8c89dca04fe1dc9fb61d6c5813e3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933751"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913211"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>アイコンまたはデコレーターの可視性の制御
 A*デコレーター*がアイコンか、ドメイン固有言語 (DSL) 内の図形に表示されるテキストの行。 デコレーターの表示を作成でき、モデル内のプロパティの状態によって非表示になります。 など、人を表す図形、個人の性別、子供の数に応じて表示されると、さまざまなアイコンがある可能性があります。

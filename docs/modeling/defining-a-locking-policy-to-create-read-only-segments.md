@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 548840c3671b0760380c84520fe3a39238dfd19a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e53c91a641606f0ab4b29f9ce0357f4e9ee87022
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027348"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944631"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>ロック ポリシーの定義と読み取り専用セグメントの作成
 Visual Studio Visualization and Modeling SDK の不変性 API は、読み取りが変更されていないことができるように、ドメイン固有言語 (DSL) モデルの一部またはすべてをロックするプログラムを使用できます。 この読み取り専用オプションされる可能性があります、たとえば、ユーザーが仕事仲間の注釈を付け、DSL モデルを確認するように依頼できますが、元の変更を禁止することができますようにします。
@@ -96,7 +95,8 @@ partition.SetLocks(Locks.Delete);
 
  ロック ポリシーを定義するには、する必要があります。
 
--   <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> を実装するクラスを作成します。
+-   
+  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> を実装するクラスを作成します。
 
 -   このクラスを DSL の DocData を介して利用できるサービスに追加します。
 

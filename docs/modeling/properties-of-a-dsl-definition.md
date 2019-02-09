@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cdad251b4440219285ba1341663b7531634ed806
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942238"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911586"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定義のプロパティ
 DslDefinition プロパティ定義*ドメイン固有言語*バージョン番号などのプロパティを定義します。 DslDefinition プロパティに表示されます、**プロパティ**ウィンドウでは、図の空いている領域をクリックすると、*ドメイン固有言語デザイナー*します。
@@ -41,7 +40,7 @@ DslDefinition プロパティ定義*ドメイン固有言語*バージョン番�
 |ビルド|このドメイン固有言語定義のインクリメンタル ビルド番号。|0|
 |メジャー バージョン|このドメイン固有言語定義の増分のメジャー ビルド番号。|1|
 |マイナー バージョン|このドメイン固有言語定義の増分のマイナー ビルド番号。|0|
-|リビジョン|増分のリビジョンは、このドメイン固有言語定義の番号をビルドします。|0|
+|Revision|増分のリビジョンは、このドメイン固有言語定義の番号をビルドします。|0|
 
 ## <a name="see-also"></a>関連項目
 
