@@ -38,7 +38,7 @@ HRESULT get_nopad(
  正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
   
 ## <a name="remarks"></a>コメント  
- これは通常、古いファイルでのみ見プロパティです。  
+ これは通常、古いファイルでのみ見られるプロパティです。  
   
 ## <a name="see-also"></a>関連項目
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
