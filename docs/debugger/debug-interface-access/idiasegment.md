@@ -100,7 +100,7 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
  [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)
