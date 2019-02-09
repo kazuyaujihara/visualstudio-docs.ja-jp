@@ -31,5 +31,5 @@ HRESULT Reset();
 ## <a name="return-value"></a>戻り値  
  `S_OK` を返します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
