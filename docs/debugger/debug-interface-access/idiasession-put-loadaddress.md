@@ -40,5 +40,5 @@ HRESULT put_loadAddress ( 
 > [!NOTE]
 >  取得する場合は、このメソッドを呼び出す必要があります、 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)オブジェクトし、シンボルで任意の仮想プロパティを使用する必要がある場合、オブジェクトの使用を開始する前にします。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
