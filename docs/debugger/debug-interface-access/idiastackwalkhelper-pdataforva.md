@@ -54,5 +54,5 @@ HRESULT pdataForVA( 
   
  データの量が、呼び出し元に、データの量は使用を要求する必要がないために返される、呼び出し元が認識しています。 そのため、許容される場合は、エラーを返すには、このメソッドの実装は、`pbData`パラメーターが`NULL`します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
