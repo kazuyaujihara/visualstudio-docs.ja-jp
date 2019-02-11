@@ -40,5 +40,5 @@ HRESULT get_uniqueId ( 
 ## <a name="remarks"></a>コメント  
  文字列には、行番号の処理が高速化できるのではなくキーの比較。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
