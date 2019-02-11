@@ -25,7 +25,7 @@ ms.locfileid: "55042739"
 ## <a name="syntax"></a>構文  
   
 ```C++  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumSymbols** ppenum  
 );  
 ```  
