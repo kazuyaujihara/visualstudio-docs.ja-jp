@@ -34,5 +34,5 @@ HRESULT RestrictOriginalPathAccess ();
 ## <a name="remarks"></a>コメント  
  すべてのコード以外のリターン`S_OK`元のデバッグ ディレクトリに .pdb ファイルを検索できないようにします。 元のデバッグ ディレクトリは、デバッグがオンにすると、実行可能ファイルにコンパイル シンボル ファイルへのパスです。 このパスが必ずしも同じ実行可能ファイルが存在するパスです。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
