@@ -587,7 +587,7 @@ namspace MySPAppTests
   
  [このトピックの内容](#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [コードの単体テスト](../test/unit-test-your-code.md)   
  [コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)   
  [SharePoint 2010 および 2013 アプリケーションの Web パフォーマンス テストおよびロード テスト](http://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
