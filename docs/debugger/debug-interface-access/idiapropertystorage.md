@@ -126,7 +126,7 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
