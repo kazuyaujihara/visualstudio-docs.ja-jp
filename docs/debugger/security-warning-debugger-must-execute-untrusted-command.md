@@ -1,4 +1,4 @@
----
+﻿---
 title: セキュリティ警告:デバッガーは信頼されていないコマンドを実行する必要があります |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

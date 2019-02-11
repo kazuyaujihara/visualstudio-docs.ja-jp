@@ -1,7 +1,6 @@
 ---
 title: マネージド コードの "マネージ推奨規則" 規則セット
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fa15f79be09b9663fb8fc98e32e09e20a030a5d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c07471290756acc74289a552fcafde746c020e71
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009597"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918391"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>マネージド コードの "マネージ推奨規則" 規則セット
 潜在的なセキュリティ ホール、アプリケーションのクラッシュ、その他の重要なロジックとデザイン エラーなど、マネージ コードで最も重要な問題に集中する設定の Microsoft マネージ推奨規則規則を使用することができます。 この規則セットは、プロジェクト用に作成したカスタム規則セットを含める必要があります。

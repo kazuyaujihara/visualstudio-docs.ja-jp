@@ -1,4 +1,4 @@
----
+﻿---
 title: JavaScript コンソール コマンド |Microsoft Docs
 ms.custom: seodec18
 ms.date: 07/17/2017

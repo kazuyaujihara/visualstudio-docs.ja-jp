@@ -1,4 +1,4 @@
----
+﻿---
 title: キーボード ショートカット (HTML および JavaScript) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

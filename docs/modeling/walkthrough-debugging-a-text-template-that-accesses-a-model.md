@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 50190afd6dfbda054ab7c1636bb0f0f89984117a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915bbc86422af4d60605934c3e7359087eba102e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004501"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938112"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>チュートリアル: モデルにアクセスするテキスト テンプレートのデバッグ
 変更またはドメイン固有言語ソリューションでテキスト テンプレートを追加するときに、エンジンのソース コードに、または、生成されたコードをコンパイル時にテンプレートを変換するときにエラーが発生する可能性があります。 次のチュートリアルでは、テキスト テンプレートをデバッグすることの一部を示します。
@@ -32,7 +31,7 @@ ms.locfileid: "55004501"
 
 - 会社名:Fabrikam Fiber Web サイト
 
-  ドメイン固有言語ソリューションを作成する方法の詳細については、次を参照してください。[方法。ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)です。
+  ドメイン固有言語ソリューションを作成する方法の詳細については、次を参照してください。[方法。ドメイン固有言語ソリューションを作成する](../modeling/how-to-create-a-domain-specific-language-solution.md)」を参照してください。
 
 ## <a name="creating-a-text-template"></a>テキスト テンプレートの作成
  テキスト テンプレートをソリューションに追加します。

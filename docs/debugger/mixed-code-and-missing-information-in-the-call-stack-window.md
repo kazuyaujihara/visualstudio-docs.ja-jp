@@ -1,4 +1,4 @@
----
+﻿---
 title: 混合コードと不足情報、呼び出し履歴 ウィンドウ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting

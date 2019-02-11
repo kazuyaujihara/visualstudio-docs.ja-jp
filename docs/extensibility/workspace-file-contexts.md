@@ -2,18 +2,17 @@
 title: Visual Studio でワークスペース ファイル コンテキスト |Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 7aaa0e65-f492-49ea-a845-35bd14910ca7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93690eab989cee62d756a774675bf1d46da017fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826865"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939191"
 ---
 # <a name="workspace-file-contexts"></a>ワークスペース ファイルのコンテキスト
 
@@ -27,7 +26,7 @@ ms.locfileid: "53826865"
 
 ## <a name="file-context-lifecycle"></a>ファイル コンテキストのライフ サイクル
 
-ライフ サイクルを`FileContext`が非決定的です。 いつでも、コンポーネントを非同期的にコンテキストの種類のいくつかのセットを要求できます。 要求コンテキストの種類のサブセットをサポートするプロバイダーは照会されます。 `IWorkspace`インスタンスは、コンシューマーとプロバイダー間の仲介として機能します、<xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A>メソッド。 コンシューマーは、コンテキストを要求し、他のユーザー コンテキストを要求して長期的な参照を保持可能性があります、コンテキストに基づくの短期的なアクションを実行可能性があります。 
+ライフ サイクルを`FileContext`が非決定的です。 いつでも、コンポーネントを非同期的にコンテキストの種類のいくつかのセットを要求できます。 要求コンテキストの種類のサブセットをサポートするプロバイダーは照会されます。 `IWorkspace`インスタンスは、コンシューマーとプロバイダー間の仲介として機能します、<xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A>メソッド。 コンシューマーは、コンテキストを要求し、他のユーザー コンテキストを要求して長期的な参照を保持可能性があります、コンテキストに基づくの短期的なアクションを実行可能性があります。
 
 変更は、古くなる場合がファイルのコンテキストとなるファイルが発生する可能性があります。 プロバイダーでイベントを発生させることができます、`FileContext`更新プログラムのコンシューマーに通知します。 たとえば、いくつかのファイルのビルド コンテキストが提供されている場合は、ディスク上の変更をそのコンテキストが無効になりますし、元のプロデューサーもイベントに呼び出すことができます。 まだを参照しているすべてのコンシューマー`FileContext`新しいできますし、クエリを再実行`FileContext`します。
 

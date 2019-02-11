@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: ca1cb693977a5197bdf6adfe399ed269e0211a00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b3e6d9812f06df6d4af65f624579ec5f6550515
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55071073"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913315"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>ドメイン固有言語ソリューション テンプレートの選択
 ドメイン固有言語ソリューションを作成するには、ドメイン固有言語デザイナー ウィザードで利用できるソリューション テンプレートのいずれかを選択します。 作成し言語に最も近いテンプレートを選択して、ソリューションを開始する必要がある変更を最小限に抑えることができます。

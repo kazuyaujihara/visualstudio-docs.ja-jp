@@ -11,13 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cc2527739c40802f3e21ea4fabebfc20fb09cdcc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b44b32f98406e4692de97562bbf97e2656b3a7de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962132"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937378"
 ---
 # <a name="properties-of-compartment-shapes"></a>コンパートメント シェイプのプロパティ
 コンパートメント シェイプには、ドメイン固有言語におけるドメイン クラスを表示する図形の 1 つがあります。 展開し、コンパートメントを折りたたむことができます。
@@ -28,7 +27,7 @@ ms.locfileid: "54962132"
 
 |プロパティ|説明|既定値|
 |-|-|-|
-|既定値は、折りたたみの状態を展開します。|場合`Expanded`コンパートメントは作成時に表示されます。 場合`Collapsed`、いません。|展開済み|
+|既定値は、折りたたみの状態を展開します。|場合`Expanded`コンパートメントは作成時に表示されます。 場合`Collapsed`、いません。|[展開済み]|
 |[塗りつぶしの色]|この図形の塗りつぶしの色。|白|
 |塗りつぶしのグラデーション モード|この図形の塗りつぶしのグラデーション モード。|[水平方向]|
 |geometry|この図形 (四角形または角丸長方形) のジオメトリ。|四角形|

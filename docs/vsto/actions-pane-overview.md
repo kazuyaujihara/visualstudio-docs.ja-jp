@@ -1,7 +1,6 @@
 ---
 title: 操作ウィンドウの概要
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 947b5730ce459751ec281749d369a9770c074df3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 32fef9f6d197e9bd9e8ea29efb05ef0939a28e4d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875954"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924384"
 ---
 # <a name="actions-pane-overview"></a>操作ウィンドウの概要
   操作ウィンドウは、カスタマイズ可能な**ドキュメント アクション**特定の Microsoft Office Word ドキュメントまたは Microsoft Office Excel ブックに関連付けられている作業ウィンドウ。 [操作] ウィンドウがなどの他の組み込み作業ウィンドウと Office 作業ウィンドウ内でホストされる、 **XML ソース**Excel での作業ウィンドウ、または**スタイルと書式**Word 作業ウィンドウ。 操作ウィンドウのユーザー インターフェイスは、Windows フォーム コントロールまたは WPF コントロールを使用してデザインできます。

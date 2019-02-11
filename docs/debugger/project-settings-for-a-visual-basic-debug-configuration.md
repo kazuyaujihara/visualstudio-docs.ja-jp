@@ -1,4 +1,4 @@
----
+﻿---
 title: VB のプロジェクト設定の構成のデバッグ |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016

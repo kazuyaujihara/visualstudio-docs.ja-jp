@@ -11,13 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 38bb141c6011739e56c5e7fee0fe77729f472232
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ab2e10eed7452bf58390513bed68fac3f4c9a0f6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933363"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956845"
 ---
 # <a name="properties-of-swimlanes"></a>スイムレーンのプロパティ
 図にスイムレーンを追加できます。 スイムレーンは、ダイアグラムを垂直または水平方向の領域に分割します。 スイムレーン内に表示するには、他の図形を定義することができます。 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。 これらのプロパティを使用する方法の詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。

@@ -1,7 +1,6 @@
 ---
 title: 'チュートリアル: C/C++ コード分析による障害の検出'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
@@ -13,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a35bc07c9fe6478107162b625a824b6344898f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26635f9f6680931d02993613f96dcfcbe623af1d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829512"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919678"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>チュートリアル: C/C++ コード分析による障害の検出
 

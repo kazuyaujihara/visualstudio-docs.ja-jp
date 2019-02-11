@@ -1,7 +1,6 @@
 ---
 title: C/C++ のコード分析の概要
 ms.date: 04/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
@@ -22,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 534421fb2a455fafad785a3bc8d4e6e7013b3931
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896397"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947641"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C と C++ の概要のコード分析
 
@@ -37,7 +36,7 @@ C/C++ コード分析ツールは、C/C++ ソース コードの障害に関す�
 
 コード分析ツールは、Visual Studio IDE 内で完全に統合されています。
 
-ビルド プロセス中には、ソース コードの生成された警告がエラー一覧に表示されます。 警告の原因となったソース コードに移動して、原因と問題の考えられる解決策に関する追加情報を表示できます。
+ビルド プロセス中は、ソース コードに対して生成された警告がエラー一覧に表示されます。 警告の原因となったソース コードに移動して、問題の原因と考えられる解決策に関する追加情報を表示できます。
 
 ## <a name="command-line-support"></a>コマンド ライン サポート
 
@@ -55,15 +54,15 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="annotation-support"></a>注釈のサポート
 
-注釈には、コード分析の精度が向上します。 注釈は、関数のパラメーターの前と後の状態に関する追加情報を提供し、型を返します。 詳細については、「[方法 :_Analysis_assume を使用してコードを追加情報を指定します。](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+注釈によってコード分析の精度が向上します。 注釈には、関数のパラメーターと戻り値の型について、事前および事後の状態に関する追加情報を指定します。 詳細については、「[方法 :__analysis_assume を使用して追加のコード情報を指定する](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)」を参照してください。
 
-## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>分析ツールでは、チェックイン ポリシーの一部として実行します。
+## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>チェックイン ポリシーの一部としての分析ツールの実行
 
-すべて元のコードのチェックインが特定のポリシーを満たすことを要求する可能性があります。 具体的には、最新のローカル ビルドのステップとして分析が実行されているかどうかを確認します。 コード分析チェックイン ポリシーを有効にする方法の詳細については、次を参照してください[の作成とコード分析チェックイン ポリシーの使用。](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+チェックインされるすべてのソース コードが、特定のポリシーを満たしていることが必要な場合があります。 具体的には、最新のローカル ビルドのステップとして分析が実行されたことを確認する必要があります。 コード分析チェックイン ポリシーを有効にする方法の詳細については、「[コード分析を用いたチェックイン ポリシーの作成と使用](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)」を参照してください。
 
 ## <a name="team-build-integration"></a>チーム ビルドの統合
 
-手順として、コード分析ツールを実行するビルド システムの統合機能を使用することができます、[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]プロセスを構築します。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
+ビルド システムの統合機能を使用すると、コード分析ツールを [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] ビルド プロセスのステップとして実行できます。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

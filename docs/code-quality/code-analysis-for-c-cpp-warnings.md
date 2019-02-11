@@ -1,7 +1,6 @@
 ---
 title: C/C++ コードの警告に対応するコードの分析
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, warnings for C/C++ code
@@ -19,12 +18,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 369aee6e9d94aa1f2f25029022609d11aac9d7a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc3f09575085039986a0b2fbbf3eb386ee5f5e1b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907921"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921394"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/C++ コードの警告に対応するコードの分析
 このセクションで発生するものを除く、C/C++ コード分析警告を一覧表示、 [C++ Core ガイドライン チェッカー](code-analysis-for-cpp-corecheck.md)します。 コード分析の詳細については、次を参照してください。 [/analyze (コード分析)](/cpp/build/reference/analyze-code-analysis)と[クイック スタート。C/C++ のコード分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)します。

@@ -10,16 +10,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 2d99fc575bffb6bf6af72be7e09b642cdf7f1b5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a84b24dff387e0a93058c07e9f6d7b6cfe503d49
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041000"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935590"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>チュートリアル: 生成済みディレクティブ プロセッサをホストに接続します。
 
@@ -67,7 +66,7 @@ DSL を定義するには、以下のコンポーネントをインストール�
 
    -   会社名:Fabrikam Fiber Web サイト
 
-   ドメイン固有言語ソリューションを作成する方法の詳細については、次を参照してください。[方法。ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)です。
+   ドメイン固有言語ソリューションを作成する方法の詳細については、次を参照してください。[方法。ドメイン固有言語ソリューションを作成する](../modeling/how-to-create-a-domain-specific-language-solution.md)」を参照してください。
 
 2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
@@ -240,7 +239,7 @@ DSL を定義するには、以下のコンポーネントをインストール�
 
 ### <a name="create-a-text-template-to-test-the-custom-host"></a>カスタム ホストをテストするテキスト テンプレートを作成します。
 
-1.  テキスト ファイルを作成し、名前`TestTemplateWithDP.tt`します。 メモ帳などの任意のテキスト エディターを使用して、ファイルを作成することができます。
+1.  テキスト ファイルを作成し、名前を `TestTemplateWithDP.tt` にします。 メモ帳などの任意のテキスト エディターを使用して、ファイルを作成することができます。
 
 2.  次の内容をテキスト ファイルに追加します。
 

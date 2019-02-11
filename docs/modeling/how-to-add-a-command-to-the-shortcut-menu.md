@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 365e5cae52eb9b1982900faa68afdd72de9e1337
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb8a9990c28d30d00efdfd98bd106dcd12b05c66
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028498"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913380"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>方法: ショートカット メニューにコマンドを追加する
 
@@ -335,7 +334,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 **コマンドは、メニューは表示されません。**
 
-- DSL パッケージをインストールするまでは、コマンドは Visual Studio のデバッグ インスタンスでのみ表示されます。 詳細については、次を参照してください。[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)します。
+- DSL パッケージをインストールするまでは、コマンドは Visual Studio のデバッグ インスタンスでのみ表示されます。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
 
 - 実験用サンプルに、この DSL の正しいファイル名拡張子が含まれていることを確認します。 ファイル名拡張子を確認するには、Visual Studio のメイン インスタンスで DslDefinition.dsl を開きます。 DSL エクスプローラーで [エディター] プロジェクト ノードを右クリックし、[プロパティ] をクリックします。 [プロパティ] ウィンドウで、FileExtension プロパティを調べます。
 

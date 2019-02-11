@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: aded621c89f6d351c6abb9bbe1744de51673e6b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be803d02ab2040537b06a81327355abf80f56aab
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070800"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919873"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則によって変更内容がモデル内に反映される
 1 つの要素から Visualization and Modeling SDK (VMSDK) の間の変更を伝達するストア ルールを作成することができます。 ストア内の任意の要素を変更する場合は、ルールは、通常、最も外側のトランザクションがコミットされたときに実行される予定です。 要素の追加や削除などのイベントのさまざまな種類のルールの種類があります。 ルールは、特定の種類の要素、図形、またはダイアグラムをアタッチできます。 多くの組み込み機能がルールによって定義されます。 など、規則では、モデルが変更されたときに、ダイアグラムが更新されることを確認します。 独自のルールを追加することで、ドメイン固有言語をカスタマイズできます。

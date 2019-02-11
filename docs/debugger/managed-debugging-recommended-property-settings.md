@@ -1,4 +1,4 @@
----
+﻿---
 title: デバッガーのプロパティの設定をお勧めしますC#、VB |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016

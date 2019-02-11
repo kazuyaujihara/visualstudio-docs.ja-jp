@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft Visual Studio リモート デバッグ モニターに接続できません |。Microsoft Docs
 ms.date: 08/24/2017
 ms.topic: reference

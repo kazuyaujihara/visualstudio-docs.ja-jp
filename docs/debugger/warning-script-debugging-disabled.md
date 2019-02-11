@@ -1,4 +1,4 @@
----
+﻿---
 title: 警告:スクリプト デバッグが無効 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

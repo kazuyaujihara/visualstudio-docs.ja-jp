@@ -1,4 +1,4 @@
----
+﻿---
 title: MFC のデバッグ手法 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

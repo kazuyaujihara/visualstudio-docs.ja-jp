@@ -1,7 +1,6 @@
 ---
 title: SAL について
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 author: mikeblome
@@ -9,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d416ce154f071804beb9b47d2623f2acee15af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7f79796d186f5a365c37a8e24a3e523aba7ceb72
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889921"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946653"
 ---
 # <a name="understanding-sal"></a>SAL について
 
@@ -42,7 +41,7 @@ void * memcpy(
 この関数の動作とわかりますか。 関数が実装されているかと呼ばれる、特定のプロパティをプログラムの正確性を確実に維持する必要があります。 この例のなどの宣言を見るだけでは何かがわかりません。 、SAL 注釈のないドキュメントやコードのコメントに依存する必要があります。 ここでの MSDN ドキュメントは、`memcpy`といいます。
 
 > "コピーは、src を取引先のバイト数をカウントします。 ソースとコピー先 memcpy の動作は未定義です。 Memmove を使用して、重複する領域を処理します。
-> **セキュリティに関する注意:** コピー先のバッファーが、ソース バッファーと同じサイズ、または大きいサイズであることを確認してください。 詳細についてを参照してバッファー オーバーランの回避します。"
+> **セキュリティに関するメモ:** コピー先のバッファーが、ソース バッファーと同じサイズ、または大きいサイズであることを確認してください。 詳細についてを参照してバッファー オーバーランの回避します。"
 
 ドキュメントには、いくつかプログラムの正確性を確実に特定のプロパティを維持するために、コードが提案する情報のビットにはが含まれています。
 

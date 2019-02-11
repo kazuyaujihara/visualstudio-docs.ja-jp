@@ -1,7 +1,6 @@
 ---
 title: CA2116:APTCA メソッドは APTCA メソッドのみを呼び出すことができます
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ecd6c5a51feb025eb5e90fa63ae0b2a8bf877ed
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03948506d928f7d638b21c1fa4bc0a35818ec09a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029792"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926914"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116:APTCA メソッドは APTCA メソッドのみを呼び出すことができます
 

@@ -50,6 +50,6 @@ ms.locfileid: "54782282"
   
  **クイック起動**の使用に関する最新のヒントとテクニックについては、「[The Visual Studio Blog](http://go.microsoft.com/fwlink/?LinkId=236054)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [一般的なユーザー インターフェイス要素 (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)   
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)

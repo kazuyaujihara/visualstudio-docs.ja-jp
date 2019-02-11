@@ -1,4 +1,4 @@
----
+﻿---
 title: シンボル型の階層をクラス |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

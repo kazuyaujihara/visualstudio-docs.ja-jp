@@ -16,13 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6924e73d97b282b4027244c542684c2090520437
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3133c3f37a7ce899575e4e6b0798ce8037b33929
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039243"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954181"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL 定義図の使用
 ダイアグラムを[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]定義は、ドメイン固有言語を定義するための重要なツールです。 ドメイン モデルに要素を追加し、図で関係を定義し、図のレイアウトを読みやすいように変更できます。
