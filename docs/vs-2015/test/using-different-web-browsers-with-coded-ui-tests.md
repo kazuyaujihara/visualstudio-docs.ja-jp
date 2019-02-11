@@ -151,7 +151,7 @@ ms.locfileid: "54805535"
 ### <a name="forum"></a>フォーラム  
  [Visual Studio の UI オートメーションのテスト (コード化された UI を含む)](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
  [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [コード化された UI テスト ログを使用したコード化された UI テストの分析](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
