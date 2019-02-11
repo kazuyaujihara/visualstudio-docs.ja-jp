@@ -41,5 +41,5 @@ HRESULT get_columnNumber ( 
 ## <a name="remarks"></a>コメント  
  このメソッドによって返される列の値は、行のステートメントの最初の文字を行へのバイト オフセット。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
