@@ -1,4 +1,4 @@
----
+﻿---
 title: 並列アプリケーションのデバッグ |Microsoft Docs
 description: Visual Studio での並列タスク ウィンドウと並列スタック ウィンドウを使用したデバッグします。
 ms.date: 03/22/2018

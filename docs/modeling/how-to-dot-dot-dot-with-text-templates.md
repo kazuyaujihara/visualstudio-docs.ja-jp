@@ -7,16 +7,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9d9a1826e8c06d947e05bf7201f2963a7bac860f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82309eb9288dffb1fca0a3917b764ffb9040ab9d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039580"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937182"
 ---
 # <a name="how-to--with-text-templates"></a>テキスト テンプレートでどうやって ... をする
-Visual Studio のテキスト テンプレートは、あらゆる種類のテキストを生成するのに便利な方法を提供します。 テキスト テンプレートを使用すると、アプリケーションの一部として実行時にテキストを生成したり、デザイン時にプロジェクト コードの一部を生成することができます。 このトピックでは、「どうやって ... をするか？」として最も頻繁に寄せられる質問をまとめています。
+Visual Studio のテキスト テンプレートは、あらゆる種類のテキストを生成するのに便利な方法を提供します。 テキスト テンプレートを使用すると、アプリケーションの一部として実行時にテキストを生成したり、デザイン時にプロジェクト コードの一部を生成することができます。 このトピックでは、「どうやって ... をするか？」として最も頻繁に寄せられる質問をまとめています。 質問します。
 
  このトピックでは、ビュレットが付いている複数の回答は代替案です。
 
@@ -47,7 +46,7 @@ Visual Studio のテキスト テンプレートは、あらゆる種類のテ�
 ### <a name="invoke-methods-from-a-template"></a>テンプレートからメソッドを呼び出す
  標準[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .NET Framework クラスなど、既に存在するメソッドの場合:
 
-- \<#@assembly#> ディレクティブを使用して、アセンブリをロードし、\<#@import#> を使用して名前空間のコンテキストを設定します。 詳細については、次を参照してください。 [T4 インポート ディレクティブ](../modeling/t4-import-directive.md)
+- \<#@assembly ディレクティブを使用して、アセンブリをロードし、\<#@import#> を使用して名前空間のコンテキストを設定します。 詳細については、次を参照してください。 [T4 インポート ディレクティブ](../modeling/t4-import-directive.md)
 
    頻繁に同じアセンブリのセットを使用し、ディレクティブをインポートする場合には、ディレクティブ プロセッサの作成を検討してください。 各テンプレートでは、アセンブリとモデル ファイルを読み込み、名前空間のコンテキストを設定できるディレクティブ プロセッサを呼び出すことができます。 詳細については、次を参照してください。[カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成](../modeling/creating-custom-t4-text-template-directive-processors.md)
 

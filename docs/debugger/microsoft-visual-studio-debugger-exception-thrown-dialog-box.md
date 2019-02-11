@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft Visual Studio デバッガー (例外がスローされます) ダイアログ ボックス |Microsoft Docs
 titleSuffix: ''
 ms.custom: seodec18

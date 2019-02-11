@@ -1,4 +1,4 @@
----
+﻿---
 title: DebuggerDisplay 属性の使用 |Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual

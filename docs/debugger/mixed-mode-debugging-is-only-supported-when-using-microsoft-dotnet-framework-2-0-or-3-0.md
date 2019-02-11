@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft .NET Framework 2.0 または 3.0 を使用する場合にのみサポートは、混合モードのデバッグ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

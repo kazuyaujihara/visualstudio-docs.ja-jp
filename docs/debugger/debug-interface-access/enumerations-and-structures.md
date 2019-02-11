@@ -1,4 +1,4 @@
----
+﻿---
 title: 列挙体と構造体 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

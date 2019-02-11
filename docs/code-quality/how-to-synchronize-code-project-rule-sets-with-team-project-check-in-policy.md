@@ -1,7 +1,6 @@
 ---
 title: '方法: コード プロジェクト規則セットをチーム プロジェクトのチェックイン ポリシーと同期させる'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275d4ff2eea093acc226b7e491b5d429a41f7a64
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 41fb9f60efa439f3a8157059ee4e64af5c25292e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036746"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945444"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>方法: Azure DevOps プロジェクトでは、チェックイン ポリシーを使用してコード プロジェクト規則セットを同期させる
 

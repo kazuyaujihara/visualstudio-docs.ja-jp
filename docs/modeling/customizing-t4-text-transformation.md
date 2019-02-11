@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: bc59718131cc4879a351097b767fa513d72b5c81
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33f7fd14ff62369de66e4934bf9bb2cf6fd83542
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962755"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951554"
 ---
 # <a name="customize-t4-text-transformation"></a>T4 テキスト変換をカスタマイズする
 
@@ -32,7 +31,7 @@ ms.locfileid: "54962755"
 
  [カスタム ホストを使用したテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md) テンプレートのコードを実行するとき、ホストは外部のファイルへのアクセスとアプリケーションの状態を提供します。 たとえば、Visual Studio 内でテキスト変換を実行するホストは、**ソリューション エクスプローラー**へのアクセスを提供します。 これは、エラーをエラー メッセージ ウィンドウに表示します。 別のコンテキストでテキスト変換を実行する場合は、そのコンテキストで使用可能なサービスへのアクセスを提供する独自のホストを定義できます。
 
- Visual Studio 拡張機能を作成する場合は、独自のホストを記述する代わりに既存のテキスト変換サービスの使用を検討してください。詳細については、「[VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)」を参照してください。
+ Visual Studio 拡張機能を作成する場合は、独自のホストを記述する代わりに既存のテキスト変換サービスの使用を検討してください。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
 ## <a name="reference"></a>参照
 

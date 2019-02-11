@@ -1,7 +1,6 @@
 ---
 title: アーキテクチャを分析およびモデルする
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
@@ -31,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1bb0d17b5fc6767669fd58f666d0505f38961dc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ddf7e7bf78baede7e964aeeed7484261fdab2ef7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986047"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924468"
 ---
 # <a name="analyze-and-model-your-architecture"></a>アーキテクチャを分析およびモデルする
 
@@ -50,7 +49,7 @@ ms.locfileid: "54986047"
 
 参照してください[シナリオ。視覚エフェクトを使用して、モデリングおよびデザインの変更](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)します。
 
-## <a name="to"></a>終了
+## <a name="to"></a>目的
 
 |||
 |-|-|

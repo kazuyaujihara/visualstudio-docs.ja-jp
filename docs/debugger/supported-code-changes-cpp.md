@@ -1,4 +1,4 @@
----
+﻿---
 title: サポートされるコードの変更 (C++) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

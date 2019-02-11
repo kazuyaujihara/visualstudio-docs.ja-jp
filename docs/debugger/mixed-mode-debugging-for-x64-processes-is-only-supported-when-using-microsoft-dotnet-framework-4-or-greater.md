@@ -1,4 +1,4 @@
----
+﻿---
 title: 混合モード デバッグ プロセスが Microsoft.NET Framework 4 を使用する場合にのみサポートされている x64 より |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
