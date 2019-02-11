@@ -32,7 +32,7 @@ ms.locfileid: "54779521"
   
 3.  規則セットを再度開き、変更を元に戻し、規則セットを再度保存します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [アプリケーション品質の分析](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
  [マネージド コードの品質の分析](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [規則セットを使用したコード分析規則のグループ化](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
