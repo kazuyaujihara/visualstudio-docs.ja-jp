@@ -49,5 +49,5 @@ HRESULT get_rawLVarInstanceValue(
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
