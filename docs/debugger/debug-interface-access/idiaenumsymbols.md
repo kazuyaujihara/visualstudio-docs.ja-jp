@@ -92,7 +92,7 @@ void ShowUDTs(IDiaSymbol *pGlobals)
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
