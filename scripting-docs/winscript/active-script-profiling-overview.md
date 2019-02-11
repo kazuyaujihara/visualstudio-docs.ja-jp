@@ -44,5 +44,5 @@ ms.locfileid: "54347503"
 ## <a name="profiler"></a>プロファイラー  
  プロファイラーは、さまざまなイベントが発生すると、言語エンジンから呼び出しを受け取ります。 プロファイラーは、COM オブジェクトとして登録され、[IActiveScriptProfilerCallback インターフェイス](../winscript/reference/iactivescriptprofilercallback-interface.md)を実装している必要があります。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [アクティブ スクリプト プロファイラーのインターフェイス](../winscript/reference/active-script-profiler-interfaces.md)
