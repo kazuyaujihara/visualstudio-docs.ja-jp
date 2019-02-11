@@ -37,5 +37,5 @@ HRESULT Skip ( 
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`をスキップする複数の行番号なしがある場合。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
