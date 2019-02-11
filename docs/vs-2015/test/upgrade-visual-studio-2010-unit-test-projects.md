@@ -43,5 +43,5 @@ ms.locfileid: "54788640"
 |テストの影響は削除されます|||
 |テスト エクスプローラーからの TRX ログによる実行結果の共有。||TRX ログは、依然としてコマンド ラインおよびチーム ビルドから取得できます。|
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [移植、移行、および Visual Studio プロジェクトのアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[コードの単体テスト](../test/unit-test-your-code.md)[以前のバージョンの Visual Studio からテストのアップグレード](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)[コード化された UI テストからをアップグレードします。Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
