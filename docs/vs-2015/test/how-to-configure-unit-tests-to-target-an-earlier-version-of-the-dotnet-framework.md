@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: .NET Framework の以前のバージョンを対象とする単体テストの構成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

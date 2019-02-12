@@ -1,4 +1,4 @@
----
+﻿---
 title: コード化された UI テストでのさまざまな Web ブラウザーの使用 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

@@ -1,4 +1,4 @@
----
+﻿---
 title: Idialoadcallback 2::restrictreferencepathaccess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

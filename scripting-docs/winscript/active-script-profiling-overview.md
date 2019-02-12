@@ -1,4 +1,4 @@
----
+﻿---
 title: アクティブ スクリプト プロファイリングの概要 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017

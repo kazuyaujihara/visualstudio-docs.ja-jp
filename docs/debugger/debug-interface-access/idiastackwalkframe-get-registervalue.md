@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiastackwalkframe::get_registervalue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

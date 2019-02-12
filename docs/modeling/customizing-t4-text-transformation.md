@@ -31,7 +31,7 @@ ms.locfileid: "55951554"
 
  [カスタム ホストを使用したテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md) テンプレートのコードを実行するとき、ホストは外部のファイルへのアクセスとアプリケーションの状態を提供します。 たとえば、Visual Studio 内でテキスト変換を実行するホストは、**ソリューション エクスプローラー**へのアクセスを提供します。 これは、エラーをエラー メッセージ ウィンドウに表示します。 別のコンテキストでテキスト変換を実行する場合は、そのコンテキストで使用可能なサービスへのアクセスを提供する独自のホストを定義できます。
 
- Visual Studio 拡張機能を作成する場合は、独自のホストを記述する代わりに既存のテキスト変換サービスの使用を検討してください。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+ Visual Studio 拡張機能を作成する場合は、独自のホストを記述する代わりに既存のテキスト変換サービスの使用を検討してください。 詳細については、「[VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)」を参照してください
 
 ## <a name="reference"></a>参照
 

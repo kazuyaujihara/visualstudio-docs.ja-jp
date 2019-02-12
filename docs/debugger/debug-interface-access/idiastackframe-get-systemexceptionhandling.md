@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaStackFrame::get_systemExceptionHandling |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

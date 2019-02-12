@@ -112,8 +112,7 @@ ms.locfileid: "54994567"
 ### <a name="managed-types-reports"></a>マネージド型レポート  
  メモリ使用量の概要テーブルで、**[オブジェクト (相違)]** または **[割り当て (相違)]** セルの現在のリンクを選択します。  
   
- 
-  ![デバッガーのマネージド型のレポート &#45; ルートへのパス](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ ![デバッガーのマネージド型のレポート &#45; ルートへのパス](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
  上のウィンドウには、型で参照されているすべてのオブジェクトのサイズ (**包括サイズ**) を含む、スナップショット内の型の総数およびサイズが表示されます。  
   

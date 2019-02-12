@@ -1,4 +1,4 @@
----
+﻿---
 title: スマート ホスト ヘルパー インターフェイスの実装 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
