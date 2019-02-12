@@ -47,6 +47,6 @@ HRESULT get_isNaked(
 |ヘッダー:|dia2.h|  
 |バージョン:|DIA SDK バージョン 8.0|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [naked 関数呼び出し](/cpp/cpp/naked-function-calls)
