@@ -46,5 +46,5 @@ HRESULT get_optimizedCodeDebugInfo(
 |-----------------|-----------------|  
 |ヘッダー:|dia2.h|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
