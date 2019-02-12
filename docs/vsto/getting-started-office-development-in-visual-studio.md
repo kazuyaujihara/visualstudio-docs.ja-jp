@@ -60,7 +60,7 @@ ms.locfileid: "54874418"
  サンプル アプリケーション、および一般的なタスクの詳細な手順を説明するトピックへのリンクを示します。  
   
  [Visual Studio での Office ソリューションのアーキテクチャ](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
- Office ソリューションのコンポーネントとデザイン時および実行時にのどように動くのかについて説明します。  
+ Office ソリューションのコンポーネントと、デザイン時および実行時にどのように動くのかについて説明します。  
   
  [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で Office プロジェクトを作成し、プロジェクトを構成する方法について説明します。  
