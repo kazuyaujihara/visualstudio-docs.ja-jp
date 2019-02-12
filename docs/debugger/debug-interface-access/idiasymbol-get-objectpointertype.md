@@ -43,6 +43,6 @@ HRESULT get_objectPointerType ( 
 ## <a name="remarks"></a>コメント  
  このプロパティを使用したシンボルにのみ適用されます、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)の入力`SymTagFunctionType`します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)
