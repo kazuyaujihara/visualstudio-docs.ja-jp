@@ -20,14 +20,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/08/2019
 ms.locfileid: "55951593"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>チュートリアル: カスタム テキスト テンプレート ホストを作成します。
+# <a name="walkthrough-create-a-custom-text-template-host"></a>チュートリアル: カスタム テキスト テンプレート ホストの作成
 
-A*テキスト テンプレート ホスト*できる環境を提供します、*テキスト テンプレート変換エンジン*を実行します。 ホストは、エンジンとファイル システムとの対話を管理します。 エンジンまたは*ディレクティブ プロセッサ*ファイルが必要なまたはアセンブリは、ホストからリソースを要求することができます。 ホストは、要求されたリソースをディレクトリとグローバル アセンブリ キャッシュ内で探すことができます。 詳細については、次を参照してください。 [テキスト テンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)です。
+*テキスト テンプレート ホスト*は、*テキスト テンプレート変換エンジン*が実行できる環境を提供します。 ホストは、エンジンとファイル システムとの対話を管理します。 ファイルまたはアセンブリが必要なエンジンまたは*ディレクティブ プロセッサ*は、ホストからリソースを要求することができます。 ホストは、要求されたリソースをディレクトリとグローバル アセンブリ キャッシュ内で探すことができます。 詳細については、次を参照してください。 [テキスト テンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)
 
 Visual Studio の外部から*テキスト テンプレート変換*機能を使用したい、あるいは、カスタム ツールにその機能を統合したいならば、カスタム ホストを書くことができます。 カスタム ホストを作成するには、<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> を継承するクラスを作成する必要があります。 個々のメソッドの説明については、「<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>」を参照してください。
 
 > [!WARNING]
-> Visual Studio 拡張機能またはパッケージを作成する場合は、独自のホストを作成する代わりに、テキスト テンプレート サービスを使用して検討してください。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+> Visual Studio 拡張機能またはパッケージを作成する場合は、独自のホストを作成する代わりに、テキスト テンプレート サービスの使用を検討してください。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
 このチュートリアルでは、次の作業について説明します。
 
@@ -43,7 +43,7 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
 
 -   Visual Studio SDK
 
-## <a name="create-a-custom-text-template-host"></a>カスタム テキスト テンプレート ホストを作成します。
+## <a name="create-a-custom-text-template-host"></a>カスタム テキスト テンプレート ホストの作成
 
 このチュートリアルでは、コマンド ラインから呼び出すことのできる実行可能なアプリケーションでカスタム ホストを作成します。 このアプリケーションは、テキスト テンプレート ファイルを引数として受け取り、テンプレートを読み取ります。さらに、エンジンを呼び出してテンプレートを変換し、発生したすべてのエラーをコマンド プロンプト ウィンドウに表示します。
 
@@ -714,7 +714,7 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
    End Namespace
    ```
 
-4. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]のみ、開く、**プロジェクト** メニューをクリック**CustomHost のプロパティ**です。 **スタートアップ オブジェクト**一覧で、 **customhost.program**します。
+4. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]の場合のみ、**プロジェクト** メニューを開き、**CustomHost のプロパティ**をクリックします。 **スタートアップ オブジェクト**一覧で、 **customhost.program** をクリックします。
 
 5. **[ファイル]** メニューの **[すべてを保存]** をクリックします。
 
@@ -819,7 +819,7 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
 
 ## <a name="next-steps"></a>次の手順
 
-このチュートリアルでは、基本的な変換機能をサポートするテキスト テンプレート変換ホストを作成しました。 ホストの機能を拡張して、カスタム ディレクティブ プロセッサまたは生成されたディレクティブ プロセッサを呼び出すテキスト テンプレートをサポートすることもできます。 詳細については、「[チュートリアル:生成済みディレクティブ プロセッサをホストに接続する](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)します。
+このチュートリアルでは、基本的な変換機能をサポートするテキスト テンプレート変換ホストを作成しました。 ホストの機能を拡張して、カスタム ディレクティブ プロセッサまたは生成されたディレクティブ プロセッサを呼び出すテキスト テンプレートをサポートすることもできます。 詳細については、[チュートリアル: 生成済みディレクティブ プロセッサをホストに接続する](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

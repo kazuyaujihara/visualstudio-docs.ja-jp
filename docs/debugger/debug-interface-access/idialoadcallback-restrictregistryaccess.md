@@ -34,5 +34,5 @@ HRESULT RestrictRegistryAccess();
 ## <a name="remarks"></a>コメント  
  すべてのコード以外のリターン`S_OK`シンボル検索パスのレジストリを照会できないようにします。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

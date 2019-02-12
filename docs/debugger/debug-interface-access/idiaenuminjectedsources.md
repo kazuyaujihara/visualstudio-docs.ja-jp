@@ -112,7 +112,7 @@ void DumpAllInjectedSources( IDiaSession* pSession)
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)   
  [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   

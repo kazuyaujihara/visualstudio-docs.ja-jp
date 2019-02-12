@@ -40,5 +40,5 @@ HRESULT get_functionStart ( 
 ## <a name="remarks"></a>コメント  
  フレームを表す、インライン メソッドや関数の関数に挿入されるため、関数の開始をできないスタック フレームのことができます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

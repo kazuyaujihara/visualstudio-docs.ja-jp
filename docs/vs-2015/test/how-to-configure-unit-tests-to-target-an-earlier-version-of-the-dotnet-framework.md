@@ -125,7 +125,7 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
   
 8.  ソリューション エクスプローラーで、新しい Visual C++ テスト プロジェクトのショートカット メニューから **[プロジェクトの再読み込み]** を選択します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [既存コードに対する単体テストの作成と実行](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [SharePoint ソリューションの作成](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
  [SharePoint ソリューションのビルドとデバッグ](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   

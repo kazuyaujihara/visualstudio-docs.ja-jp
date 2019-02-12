@@ -538,6 +538,6 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ### <a name="guidance"></a>ガイダンス  
  [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  <xref:System.Windows.Forms.AccessibleObject>   
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)

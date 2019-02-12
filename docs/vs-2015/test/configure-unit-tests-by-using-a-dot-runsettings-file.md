@@ -162,6 +162,6 @@ Visual Studio の単体テストは、*.runsettings ファイルを使用して�
 |InProcMode|False|テストを MSTest アダプターと同じプロセスで実行する場合は、この値を true に設定します。 この設定で、わずかにパフォーマンスが向上します。 ただし、あるテストが例外で終了した場合、他のテストは続行されません。|  
 |AssemblyResolution|False|単体テストを検索して実行する場合、追加のアセンブリへのパスを指定できます。  たとえば、テスト アセンブリと同じディレクトリに存在しない依存関係アセンブリにこれらのパスを使用します。  パスを指定するには、"ディレクトリ パス" 要素を使用します。  パスには、環境変数を含めることができます。<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)   
  [Visual Studio のテストにおけるテスト設定の指定](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

@@ -24,7 +24,7 @@ Visual Studio 2017 には、.NET コンパイラ プラットフォームのコ�
 
 ## <a name="to-install-nuget-analyzer-packages"></a>NuGet アナライザー パッケージをインストールするには
 
-1.  www.nuget.org をインストールするアナライザー パッケージを検索します。たとえば、したい場合があります[Microsoft FxCop アナライザーをインストール](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)コードの他のユーザーの間でのセキュリティとパフォーマンスの問題を確認します。
+1. www.nuget.org をインストールするアナライザー パッケージを検索します。たとえば、したい場合があります[Microsoft FxCop アナライザーをインストール](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)コードの他のユーザーの間でのセキュリティとパフォーマンスの問題を確認します。
 
 2. いずれかを使用して、Visual Studio でパッケージをインストール、[パッケージ マネージャー コンソール](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)または[パッケージ マネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)します。
 

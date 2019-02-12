@@ -44,5 +44,5 @@ HRESULT ReadBOOL ( 
 ## <a name="remarks"></a>コメント  
  一貫性のある結果は、解釈、`BOOL`値の 0 以外の値が実行されるように`TRUE`0 は`FALSE`します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
