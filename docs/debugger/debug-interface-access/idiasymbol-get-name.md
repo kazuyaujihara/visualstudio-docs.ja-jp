@@ -48,5 +48,5 @@ BSTR        name;
 pType->get_name( &name );  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
