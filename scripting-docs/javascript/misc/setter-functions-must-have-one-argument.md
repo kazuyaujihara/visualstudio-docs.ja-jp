@@ -1,4 +1,4 @@
----
+﻿---
 title: セッター関数は 1 つの引数が必要 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 01/16/2019
 ms.locfileid: "54346645"
 ---
-# <a name="setter-functions-must-have-one-argument"></a>セッター関数には 1 つの引数が必要です
+# <a name="setter-functions-must-have-one-argument"></a>Setter 関数には 1 つの引数が必要です
 1051:セッター関数には 1 つの引数が必要です  
   
  Set アクセス操作子関数の引数を 1 つだけが必要です。

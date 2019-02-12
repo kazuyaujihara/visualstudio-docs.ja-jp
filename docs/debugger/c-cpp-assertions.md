@@ -1,4 +1,4 @@
----
+﻿---
 title: C/C++ アサーション |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -338,7 +338,7 @@ _ASSERT(!myErr); // Don't do this, either!
 
  [このトピックの内容](#BKMK_In_this_topic)  
 
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)   
  [マネージド コードのアサーション](../debugger/assertions-in-managed-code.md)

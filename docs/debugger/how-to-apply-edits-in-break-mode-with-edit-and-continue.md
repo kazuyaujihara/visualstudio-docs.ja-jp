@@ -1,4 +1,4 @@
----
+﻿---
 title: エディット コンティニュの中断モードで編集を適用 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -60,6 +60,6 @@ ms.locfileid: "54925477"
   
      適用した編集がプロジェクトに取り込まれた状態でコードが実行されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [サポートされているコード変更 (c# および Visual Basic)](../debugger/supported-code-changes-csharp.md)   
  [エディット コンティニュ (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

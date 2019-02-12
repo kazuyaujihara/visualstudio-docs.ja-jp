@@ -1,4 +1,4 @@
----
+﻿---
 title: コードの種類 ダイアログ ボックスを選択します |。Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -37,6 +37,6 @@ ms.locfileid: "54940168"
  **次のコードの種類をデバッグする:**   
  表示される一覧から、デバッグするコードの種類を選択します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

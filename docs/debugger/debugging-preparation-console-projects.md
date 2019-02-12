@@ -1,4 +1,4 @@
----
+﻿---
 title: コンソール プロジェクトをデバッグするための準備 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -54,7 +54,7 @@ ms.locfileid: "54972210"
   
   Visual Studio からコンソール アプリケーションを起動すると、**[コンソール]** ウィンドウが Visual Studio ウィンドウの背後に表示される場合があります。 Visual Studio からコンソール アプリケーションを起動しようとしても、何も起こらない場合は、Visual Studio ウィンドウを移動してみてください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)   
  [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)   
  [Visual C++ プロジェクトの種類](../debugger/debugging-preparation-visual-cpp-project-types.md)   

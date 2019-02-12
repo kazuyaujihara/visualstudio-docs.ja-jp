@@ -1,4 +1,4 @@
----
+﻿---
 title: サードパーティ製の単体テスト フレームワークをインストールする | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -58,5 +58,5 @@ Visual Studio テスト エクスプ ローラーは、エクスプ ローラー
   
 7. 結果の一覧でフレームワークを選択してから、ツールの Visual Studio ギャラリー ページに移動します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [コードの単体テスト](../test/unit-test-your-code.md)

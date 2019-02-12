@@ -1,4 +1,4 @@
----
+﻿---
 title: ループの外 'の continue' を含めることはできません |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
@@ -34,7 +34,7 @@ ms.locfileid: "54348556"
   
 -   `while` ループ  
   
--   **ために**ループ  
+-   **for**ループ  
   
 -   **for とで**ループします。  
   
@@ -46,7 +46,7 @@ ms.locfileid: "54348556"
   
     -   `while` ループ  
   
-    -   **ために**ループ  
+    -   **for**ループ  
   
     -   **for とで**ループします。  
   

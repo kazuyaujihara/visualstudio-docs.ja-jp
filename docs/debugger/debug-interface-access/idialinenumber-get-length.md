@@ -1,4 +1,4 @@
----
+﻿---
 title: Idialinenumber::get_length |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -40,5 +40,5 @@ HRESULT get_length ( 
 ## <a name="remarks"></a>コメント  
  によって表される、ブロックが行目のソース コードの長さ、 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)オブジェクト。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

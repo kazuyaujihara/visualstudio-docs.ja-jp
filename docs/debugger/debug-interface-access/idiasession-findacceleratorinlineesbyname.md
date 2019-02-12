@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaSession::findAcceleratorInlineesByName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -46,7 +46,7 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 ## <a name="remarks"></a>コメント  
  この関数はインラインに起因アクセラレータ スタブ関数内でのみを検索します。 ネイティブ C++ プロシージャ レコードは無視されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

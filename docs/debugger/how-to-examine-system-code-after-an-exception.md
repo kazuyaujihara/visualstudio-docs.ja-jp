@@ -1,4 +1,4 @@
----
+﻿---
 title: 例外の後にシステム コードを調べる |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -43,5 +43,5 @@ ms.locfileid: "55008167"
   
 4.  **[呼び出し履歴]** ウィンドウおよび他のウィンドウで、システム コードを調べることができるようになります。 たとえば、呼び出し履歴のフレームをダブルクリックすると、ソースや **[逆アセンブル]** ウィンドウ内のコードを表示できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [デバッガーでの例外の管理](../debugger/managing-exceptions-with-the-debugger.md)

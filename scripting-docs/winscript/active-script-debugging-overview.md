@@ -1,4 +1,4 @@
----
+﻿---
 title: アクティブ スクリプトのデバッグの概要 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
@@ -292,5 +292,5 @@ ms.locfileid: "54345488"
   [ISimpleConnectionPoint インターフェイス](../winscript/reference/isimpleconnectionpoint-interface.md)  
   特定の接続ポイントで発生したイベントを記述および列挙する簡単な方法をスクリプト エンジンに提供します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [アクティブ スクリプト デバッガー インターフェイス](../winscript/reference/active-script-debugger-interfaces.md)

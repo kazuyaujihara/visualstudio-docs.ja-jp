@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio for Mac の概要
 description: この記事では Visual Studio for Mac の機能を紹介します
 author: conceptdev
@@ -43,7 +43,7 @@ Visual Studio for Mac でクロスプラットフォーム アプリケーショ
 
 ### <a name="f"></a>F#
 
-F# は、.NET 上で実行するように設計されている、厳密に型指定されたプログラミング言語です。 Visual Studio for Mac ユーザーが Android、Mac、および iOS で使用するプログラミング言語として提供されています。 F# の使用方法と F# で作成されたサンプルについては、[F#](https://developer.xamarin.com/guides/cross-platform/fsharp/) ガイドを参照してください。
+F# は、.NET 上で実行するように設計されている、厳密に型指定されたプログラミング言語です。 Visual Studio for Mac ユーザーが Android、Mac、および iOS で使用するプログラミング言語として提供されています。F# の使用方法と F# で作成されたサンプルについては、[F#](https://developer.xamarin.com/guides/cross-platform/fsharp/) ガイドを参照してください。
 
 ## <a name="platform-support"></a>プラットフォームのサポート
 

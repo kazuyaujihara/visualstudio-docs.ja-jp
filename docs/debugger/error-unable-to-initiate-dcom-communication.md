@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :DCOM 通信を開始できません |。Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -30,5 +30,5 @@ ms.locfileid: "54932065"
   
 -   Windows 認証を復元するために、両方のコンピューターを再起動してみます。 Kerberos エラーがないかどうかローカル コンピューターとリモート コンピューターのイベント ログを確認し、既知の問題がないかどうかドメイン管理者に問い合わせてください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Remote Debugging](../debugger/remote-debugging.md)

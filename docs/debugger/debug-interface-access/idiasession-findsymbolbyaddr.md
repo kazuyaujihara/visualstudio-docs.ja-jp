@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasession::findsymbolbyaddr |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -56,7 +56,7 @@ IDiaSymbol* pFunc;
 pSession->findSymbolByAddr( isect, offset, SymTagFunction, &pFunc );  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)

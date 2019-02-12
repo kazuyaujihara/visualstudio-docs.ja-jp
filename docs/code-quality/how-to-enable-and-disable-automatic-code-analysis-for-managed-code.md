@@ -1,4 +1,4 @@
----
+﻿---
 title: 有効にするか、コード分析を無効にします。
 ms.date: 10/25/2018
 ms.topic: conceptual

@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。
 titleSuffix: ''
 ms.custom: seodec18
@@ -74,5 +74,5 @@ ms.locfileid: "54991035"
   
  res://*\<Visual Studio インストール ディレクトリ >* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)

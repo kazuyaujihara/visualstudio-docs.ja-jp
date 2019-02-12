@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :サイトは IP アドレスの使用 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -36,5 +36,5 @@ ms.locfileid: "54981117"
   
 2.  IIS の **[Web サイトの識別]** 設定を変更します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

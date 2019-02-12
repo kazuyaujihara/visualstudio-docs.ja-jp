@@ -1,4 +1,4 @@
----
+﻿---
 title: ループの外 'break' を含めることはできません |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017

@@ -1,4 +1,4 @@
----
+﻿---
 title: 64 ビット プロセスとして単体テストを実行する | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -38,7 +38,7 @@ ms.locfileid: "54784629"
   
      .runsettings ファイルに `<TargetPlatform>x64</TargetPlatform>` を指定します。 この方法の長所は、さまざまなファイルに設定のグループを指定し、設定を簡単に切り替えられることです。 ソリューション間で設定をコピーすることもできます。 詳細については、「[.runsettings ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)」をご覧ください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)   
  [コードの単体テスト](../test/unit-test-your-code.md)   
  [Visual Studio のテストにおけるテスト設定の指定](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

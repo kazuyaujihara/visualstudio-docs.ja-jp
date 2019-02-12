@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :リモート コンピューター上の SQL Server に接続できません |。Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -29,5 +29,5 @@ ms.locfileid: "55023172"
   
 -   「[リモート デバッグ](../debugger/remote-debugging.md)」をご覧ください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [SQL のデバッグ](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))

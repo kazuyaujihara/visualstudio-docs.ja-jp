@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 自己ホスト型 WCF サービスのデバッグ |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -53,7 +53,7 @@ ms.locfileid: "55030289"
   
    6.  **[OK]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [WCF サービスのデバッグ](../debugger/debugging-wcf-services.md)   
  [WCF デバッグの制約](../debugger/limitations-on-wcf-debugging.md)   
  [方法: WCF サービスにステップインする](../debugger/how-to-step-into-wcf-services.md)

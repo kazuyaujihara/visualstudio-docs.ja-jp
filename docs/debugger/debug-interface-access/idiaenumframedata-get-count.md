@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiaenumframedata::get_count |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -37,6 +37,6 @@ HRESULT get_Count ( 
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

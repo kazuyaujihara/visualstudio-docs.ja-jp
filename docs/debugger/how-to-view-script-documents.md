@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: スクリプト ドキュメントを表示 |Microsoft Docs'
 ms.date: 01/08/2019
 ms.topic: conceptual
@@ -45,5 +45,5 @@ ms.locfileid: "54983808"
   
      クライアント側スクリプト ファイルがソース ウィンドウに表示されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)

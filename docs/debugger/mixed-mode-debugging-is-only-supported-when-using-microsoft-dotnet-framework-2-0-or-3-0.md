@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft .NET Framework 2.0 または 3.0 を使用する場合にのみサポートは、混合モードのデバッグ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -53,5 +53,5 @@ ms.locfileid: "55041751"
   
 -   参照してください[SQL デバッグ セットアップ](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [64 ビット アプリケーションをデバッグする](../debugger/debug-64-bit-applications.md)

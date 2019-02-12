@@ -1,4 +1,4 @@
----
+﻿---
 title: DebuggerDisplay 属性の使用 |Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
@@ -177,7 +177,7 @@ class MyHashtable
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)   
  [マネージド オブジェクトのカスタム ビューの作成](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [C# の書式指定子](../debugger/format-specifiers-in-csharp.md)   

@@ -1,4 +1,4 @@
----
+﻿---
 title: ダイアログ ボックスのあいまいさの解決 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -41,5 +41,5 @@ ms.locfileid: "55033067"
  `Module`  
  関数のオブジェクト コードを含むモジュール (EXE または DLL) を表示します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [デバッガー内の式](../debugger/expressions-in-the-debugger.md)

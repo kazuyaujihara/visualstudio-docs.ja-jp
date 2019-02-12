@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :IIS 管理サービスが応答しないために、セキュリティ チェックが失敗しました |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -44,5 +44,5 @@ ms.locfileid: "54992595"
   
      詳細については、IIS のドキュメントを参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiaenumdebugstreams::item |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -67,6 +67,6 @@ IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

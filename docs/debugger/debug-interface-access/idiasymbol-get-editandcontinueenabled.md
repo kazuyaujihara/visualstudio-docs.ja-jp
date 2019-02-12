@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasymbol::get_editandcontinueenabled |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -47,6 +47,6 @@ HRESULT get_editAndContinueEnabled ( 
 |ヘッダー:|dia2.h|  
 |バージョン:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [/Z7、/Zi、/ZI (デバッグ情報の形式)](/cpp/build/reference/z7-zi-zi-debug-information-format)

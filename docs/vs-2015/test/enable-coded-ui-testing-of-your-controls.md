@@ -1,4 +1,4 @@
----
+﻿---
 title: コントロールのコード化された UI テストの有効化 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -538,6 +538,6 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ### <a name="guidance"></a>ガイダンス  
  [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  <xref:System.Windows.Forms.AccessibleObject>   
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)

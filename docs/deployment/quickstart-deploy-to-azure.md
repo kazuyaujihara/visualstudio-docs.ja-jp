@@ -1,4 +1,4 @@
----
+﻿---
 title: Azure App Service に発行する
 ms.date: 01/29/2019
 ms.topic: quickstart

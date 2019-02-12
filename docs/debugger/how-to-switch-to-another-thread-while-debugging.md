@@ -1,4 +1,4 @@
----
+﻿---
 title: デバッグ中に別のスレッドに切り替える
 ms.custom: seodec18
 ms.date: 04/27/2017
@@ -47,5 +47,5 @@ ms.locfileid: "55005190"
   
 2.  一覧で、切り替え先のスレッドをクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)

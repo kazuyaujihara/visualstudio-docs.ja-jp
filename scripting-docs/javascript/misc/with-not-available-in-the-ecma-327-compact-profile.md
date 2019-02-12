@@ -1,4 +1,4 @@
----
+﻿---
 title: "'with' は ECMA 327 Compact Profile では利用できません |Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017

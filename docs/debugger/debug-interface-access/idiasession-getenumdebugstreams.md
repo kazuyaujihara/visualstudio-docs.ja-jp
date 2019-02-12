@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasession::getenumdebugstreams |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -37,6 +37,6 @@ HRESULT getEnumDebugStreams ( 
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

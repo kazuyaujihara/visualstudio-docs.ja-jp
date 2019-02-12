@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasectioncontrib::get_code16bit |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -40,5 +40,5 @@ HRESULT get_code16bit(
 ## <a name="remarks"></a>コメント  
  このメソッドでは、コードは 16 ビットをのみを示します。 コードがない 16 ビットの場合は、32 ビットまたは 64 ビットのコードなどの他に何も可能性があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

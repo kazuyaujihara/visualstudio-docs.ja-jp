@@ -1,4 +1,4 @@
----
+﻿---
 title: デバッガー内の式 |Microsoft Docs
 ms.date: 02/07/2017
 ms.topic: conceptual
@@ -204,7 +204,7 @@ int main()
   
 -   名前空間またはモジュール レベルのキーワード ( `End Sub` や `Module`など)。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [C++ の書式指定子](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C# の書式指定子](../debugger/format-specifiers-in-csharp.md)   

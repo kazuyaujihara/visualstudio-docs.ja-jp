@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: WPF トレース情報を表示 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -84,5 +84,5 @@ ms.locfileid: "54981039"
   
 8.  **[OK]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [WPF のデバッグ](../debugger/debugging-wpf.md)

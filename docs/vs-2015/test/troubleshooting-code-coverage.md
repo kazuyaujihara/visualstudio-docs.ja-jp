@@ -1,4 +1,4 @@
----
+﻿---
 title: トラブルシューティング コード カバレッジ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -145,5 +145,5 @@ Visual Studio のコード カバレッジ分析ツールは、ネイティブ �
  解像度  
  なし。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

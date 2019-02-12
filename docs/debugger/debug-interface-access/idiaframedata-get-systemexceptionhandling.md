@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiaframedata::get_systemexceptionhandling |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -42,6 +42,6 @@ HRESULT get_systemExceptionHandling ( 
   
  C++ 例外処理が有効でかどうかを判断するを呼び出して、 [idiaframedata::get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)メソッド。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)

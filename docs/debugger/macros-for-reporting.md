@@ -1,4 +1,4 @@
----
+﻿---
 title: レポート用マクロの |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -79,5 +79,5 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
   
  多かれ少なかれさまざまな宛先に情報を報告するカスタム マクロを簡単に変更することができます。 デバッグ ニーズが進化するにつれて、この方法は特に便利です。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [CRT のデバッグ技術](../debugger/crt-debugging-techniques.md)

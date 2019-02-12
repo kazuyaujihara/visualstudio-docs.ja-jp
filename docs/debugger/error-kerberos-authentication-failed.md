@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :Kerberos 認証に失敗しました |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -58,6 +58,6 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 5.  IP アドレス値を比較します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

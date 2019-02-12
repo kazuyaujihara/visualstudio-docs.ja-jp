@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual C プロジェクトのリモート デバッグ |Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
@@ -106,7 +106,7 @@ ms.locfileid: "55231572"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)] 
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Visual Studio でのデバッグ](../debugger/index.md)  
  [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)   
  [Windows ファイアウォールをリモート デバッグ用に構成する](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   

@@ -1,4 +1,4 @@
----
+﻿---
 title: カスタム ホストを使用したテキスト テンプレートの処理
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -49,7 +49,7 @@ string output = engine.ProcessTemplate(templateString, host);
  ホストは、エラーのログの記録、アセンブリとインクルード ファイルへの参照の解決、テンプレートを実行できるアプリケーション ドメインの指定、各ディレクティブの適切なプロセッサの呼び出しを実行できる必要があります。
 
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> は、**Microsoft.VisualStudio.TextTemplating.\*.0.dll** で定義され、<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> は、**Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0.dll** で定義されています。
-
+ 
 ## <a name="in-this-section"></a>このセクションの内容
  [チュートリアル: カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)は、Visual Studio の外部テキスト テンプレートの機能を利用できるようにするカスタム テキスト テンプレート ホストを作成する方法を示します。
 

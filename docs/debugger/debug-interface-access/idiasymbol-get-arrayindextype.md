@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasymbol::get_arrayindextype |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -50,5 +50,5 @@ HRESULT get_arrayIndexType ( 
 |ヘッダー:|dia2.h|  
 |バージョン:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

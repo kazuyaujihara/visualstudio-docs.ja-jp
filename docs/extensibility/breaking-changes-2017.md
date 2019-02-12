@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio 2017 の拡張機能における重大な変更 |Microsoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual

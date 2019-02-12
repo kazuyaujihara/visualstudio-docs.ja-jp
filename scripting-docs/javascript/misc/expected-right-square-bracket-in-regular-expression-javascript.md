@@ -1,4 +1,4 @@
----
+﻿---
 title: 予想 ']' では、正規表現 (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017

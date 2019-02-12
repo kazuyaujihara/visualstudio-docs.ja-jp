@@ -1,4 +1,4 @@
----
+﻿---
 title: テスト エクスプローラーを使用して単体テストを実行する | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -292,6 +292,6 @@ FullName:"MyClass" - FullName:"PerfTest"
 ###  <a name="BKMK_Guidance"></a> ガイダンス  
  [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [コードの単体テスト](../test/unit-test-your-code.md)   
  [64 ビット プロセスとして単体テストを実行する](../test/run-a-unit-test-as-a-64-bit-process.md)

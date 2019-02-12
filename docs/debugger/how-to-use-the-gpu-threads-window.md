@@ -1,4 +1,4 @@
----
+﻿---
 title: デバッガーで GPU スレッドの表示 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -102,7 +102,7 @@ GPU スレッド ウィンドウでは、デバッグ中のアプリケーショ
   
 -   GPU スレッド ウィンドウでフラグ ボタンをクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [方法: [並列ウォッチ] ウィンドウを使用する](../debugger/how-to-use-the-parallel-watch-window.md)   
  [チュートリアル: C++ AMP アプリケーションのデバッグ](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

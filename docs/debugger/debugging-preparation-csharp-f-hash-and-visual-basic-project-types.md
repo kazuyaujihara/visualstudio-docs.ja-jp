@@ -1,4 +1,4 @@
----
+﻿---
 title: デバッグの準備C#、 F#、および VB プロジェクト |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -53,5 +53,5 @@ ms.locfileid: "55043065"
  [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)  
  マネージド コードで記述されたアプリケーションのデバッグに関する一般的な問題と手法について説明します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [デバッガーのセキュリティ](../debugger/debugger-security.md)

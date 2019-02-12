@@ -1,4 +1,4 @@
----
+﻿---
 title: ネイティブ コードのよく寄せられる質問のデバッグ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -48,6 +48,6 @@ ms.locfileid: "54941192"
   
 -   [MFC の中で停止した場合、MFC を呼び出した関数に戻るには](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)

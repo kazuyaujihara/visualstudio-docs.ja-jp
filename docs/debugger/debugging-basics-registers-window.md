@@ -1,4 +1,4 @@
----
+﻿---
 title: '[レジスタ] ウィンドウについて |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -49,6 +49,6 @@ ms.locfileid: "54920215"
 ## <a name="register-groups"></a>レジスタ グループ  
  **[レジスタ]** ウィンドウでは、見やすいようにレジスタがグループ別に表示されます。 **[レジスタ]** ウィンドウを右クリックすると、ショートカット メニューがグループの一覧と共に表示され、必要に応じて表示と非表示を切り替えることができます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [方法: [レジスタ] ウィンドウを使用する](../debugger/how-to-use-the-registers-window.md)   
  [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: ローカル フォルダーに配置する
 ms.date: 01/29/2019
 ms.topic: quickstart

@@ -1,4 +1,4 @@
----
+﻿---
 title: UWP アプリでプリフェッチされたコンテンツを使用したデバッグ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -39,5 +39,5 @@ ms.locfileid: "54984224"
 > [!NOTE]
 >  指定された Web コンテンツを追加または変更するたびにこの手順を繰り返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ブログの投稿:Visual Studio 2013 Update 2 で Windows ストア アプリのプリフェッチをトリガーします。](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

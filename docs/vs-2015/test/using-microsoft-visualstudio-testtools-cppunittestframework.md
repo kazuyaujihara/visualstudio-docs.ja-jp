@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework の使用 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -650,7 +650,7 @@ public:
 };  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [コードの単体テスト](../test/unit-test-your-code.md)   
  [テスト エクスプローラーを使用したネイティブ コードの単体テスト](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)   
  [既存の C++ アプリケーションへの単体テストの追加](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio SDK のインストール |Microsoft Docs
 ms.date: 07/12/2018
 ms.topic: conceptual

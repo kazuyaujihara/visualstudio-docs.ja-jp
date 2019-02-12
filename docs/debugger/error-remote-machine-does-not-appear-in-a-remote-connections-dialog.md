@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :リモート コンピューターがリモート接続 ダイアログに表示されません |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -34,5 +34,5 @@ ms.locfileid: "54991191"
   
 -   ウイルス対策ソフトウェアで、Visual Studio とリモート コンピューター間の通信がブロックされています。 これを解決するには、Visual Studio とリモート デバッガー (msvsmon) の通信を許可するようにウイルス対策ソフトウェアを構成します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Remote Debugging](../debugger/remote-debugging.md)

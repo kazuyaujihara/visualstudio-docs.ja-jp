@@ -1,4 +1,4 @@
----
+﻿---
 title: '[ブレークポイント] ダイアログ ボックスの選択 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -40,5 +40,5 @@ ms.locfileid: "54992582"
  **None**  
  **[ブレークポイント]** ボックスに示されたすべてのブレークポイントをクリアします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ブレークポイントの使用](../debugger/using-breakpoints.md)

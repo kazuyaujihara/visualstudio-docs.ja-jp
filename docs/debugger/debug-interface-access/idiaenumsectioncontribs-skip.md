@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiaenumsectioncontribs::skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -37,5 +37,5 @@ HRESULT Skip( 
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`複数セクションをスキップする投稿がある場合。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

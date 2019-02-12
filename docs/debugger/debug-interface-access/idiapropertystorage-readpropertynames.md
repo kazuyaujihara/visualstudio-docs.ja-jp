@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaPropertyStorage::ReadPropertyNames |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -48,5 +48,5 @@ HRESULT ReadPropertyNames (
 ## <a name="remarks"></a>コメント  
  返されるプロパティの名前を解放する必要があります (呼び出すことによって、`SysFreeString`関数) が必要な不要になった場合。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

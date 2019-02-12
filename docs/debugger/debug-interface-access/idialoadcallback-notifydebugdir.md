@@ -1,4 +1,4 @@
----
+﻿---
 title: Idialoadcallback::notifydebugdir |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -52,6 +52,6 @@ HRESULT NotifyDebugDir ( 
   
  は、ほとんどのクライアントにこのコールバックは必要ありません、`IDiaDataSource::loadDataForExe`メソッドが透過的にシンボルを処理するために必要な場合に、.pdb と .dbg の両方のファイルを開きます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

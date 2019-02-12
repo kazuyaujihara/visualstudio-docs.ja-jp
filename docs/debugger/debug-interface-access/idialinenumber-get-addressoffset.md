@@ -1,4 +1,4 @@
----
+﻿---
 title: Idialinenumber::get_addressoffset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -45,6 +45,6 @@ DWORD offset;
 pLine->get_addressOffset( &offset);  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)

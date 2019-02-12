@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiaenumsymbolsbyaddr::next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -48,6 +48,6 @@ HRESULT Next ( 
 ## <a name="remarks"></a>コメント  
  このメソッドは、フェッチされる要素の数によって、列挙子の位置を更新します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

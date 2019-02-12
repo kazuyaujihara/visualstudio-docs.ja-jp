@@ -1,4 +1,4 @@
----
+﻿---
 title: エディット コンティニュ (Visual c#) |Microsoft Docs
 ms.date: 10/11/2017
 ms.topic: conceptual
@@ -38,6 +38,6 @@ ms.locfileid: "54976434"
   
  詳細については、「[方法 :エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [方法: エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
  [サポートされているコード変更 (c# および Visual Basic)](../debugger/supported-code-changes-csharp.md)

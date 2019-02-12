@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: ファインダー ツールを使用して、|Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -50,7 +50,7 @@ ms.locfileid: "55013159"
   
     選択した場合**プロパティ**、[ウィンドウ プロパティ ダイアログ ボックス](../debugger/window-properties-dialog-box.md)が開きます。 選択した場合**メッセージ**、[メッセージ ビュー](../debugger/messages-view.md)ウィンドウが開きます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Spy++ ビュー](../debugger/spy-increment-views.md)   
  [Spy++ の使用](../debugger/using-spy-increment.md)   
  [Spy++ リファレンス](../debugger/spy-increment-reference.md)

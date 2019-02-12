@@ -1,4 +1,4 @@
----
+﻿---
 title: ネイティブ コード内のスレッドをデバッグするためのヒント |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -32,6 +32,6 @@ ms.locfileid: "54968845"
   
 -   マルチスレッド アプリケーションのデバッグには、C ランタイム ライブラリ (CRT) 関数を使用できます。 詳細については、「[_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)」をご覧ください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)

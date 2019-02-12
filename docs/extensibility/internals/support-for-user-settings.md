@@ -1,4 +1,4 @@
----
+﻿---
 title: ユーザー設定のサポート |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -42,13 +42,13 @@ VSPackage は、ユーザーが選択したときに永続化状態変数のグ�
 
  `<CSPName`>= s '#12345'  
 
- Package = '{XXXXXX XXXX XXXX XXXX XXXXXXXXX}'  
+ Package = '{XXXXXX XXXX XXXX XXXX XXXXXXXXX}' 
 
- Category = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}'  
+ Category = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}' 
 
- ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
+ ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}' 
 
- AlternateParent = CategoryName  
+ AlternateParent = CategoryName 
 
 
 | 名前 | 型 | データ | 説明 |

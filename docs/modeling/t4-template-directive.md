@@ -1,4 +1,4 @@
----
+﻿---
 title: T4 テンプレート ディレクティブ
 ms.date: 11/04/2016
 ms.topic: reference
@@ -91,7 +91,7 @@ hostspecific="true"
 `false` (既定値)
 
 `trueFromBase`
-
+ 
 この属性の値を `true` に設定した場合、テキスト テンプレートによって生成されたクラスに、`Host` というプロパティが追加されます。 このプロパティは変換エンジンのホストへの参照であり、<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> として宣言されます。 カスタム ホストを定義している場合は、そのカスタム ホストの型にキャストできます。
 
 このプロパティの型はホストの型に依存するため、特定のホストとのみ連携するテキスト テンプレートを作成している場合以外、利用価値はありません。 これは、[デザイン時テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)には適用されますが、[実行時テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)にはされません。

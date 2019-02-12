@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaEnumSymbolsByAddr |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -100,7 +100,7 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

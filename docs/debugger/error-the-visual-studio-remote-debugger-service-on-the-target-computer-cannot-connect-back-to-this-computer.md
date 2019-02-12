@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません
 titleSuffix: ''
 ms.custom: seodec18
@@ -74,6 +74,6 @@ ms.locfileid: "55018892"
   
 -   リモート デバッグ モニターをサービスとして実行する代わりに、アプリケーションとして実行します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

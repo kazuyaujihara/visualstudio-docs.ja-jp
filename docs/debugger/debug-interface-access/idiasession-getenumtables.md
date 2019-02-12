@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasession::getenumtables |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -66,6 +66,6 @@ IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

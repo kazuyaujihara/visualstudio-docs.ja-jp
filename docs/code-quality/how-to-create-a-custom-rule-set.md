@@ -1,4 +1,4 @@
----
+﻿---
 title: カスタム コード分析ルール セットを作成します。
 ms.date: 11/02/2018
 ms.topic: conceptual

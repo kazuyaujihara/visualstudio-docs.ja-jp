@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio による Office および SharePoint 開発
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -82,7 +82,7 @@ ms.locfileid: "54872841"
 |SharePoint ソリューションと SharePoint アドインのどちらを構築するかを選択する。|[SharePoint アドインと SharePoint ソリューションのどちらにするかを決定する。](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
   
 ##  <a name="Add-ins"></a> VSTO アドインの作成します。  
- Office 2007 または Office 2010 を対象とする、あるいは Office アドインでできることを超えて Office 2013 および Office 2016 を拡張する VSTO アドインを作成します。VSTO アドインはデスクトップ上でのみ動作します。 ユーザーはVSTO アドインをインストールする必要があるため、典型的にはデプロイおよびサポートがより困難になります。  ただし、VSTO アドインは、より密接に Office に統合できます。 たとえば、Office リボンにタブやコントロールを追加し、文書の結合やグラフの変更などの高度な自動化タスクを実行できます。 また、.NET Framework を活用し、C# および Visual Basic を使用して、Office オブジェクトと対話することもできます。  
+ Office 2007 または Office 2010 を対象とする、あるいは Office アドインでできることを超えて Office 2013 および Office 2016 を拡張する VSTO アドインを作成します。 VSTO アドインはデスクトップ上でのみ動作します。 ユーザーはVSTO アドインをインストールする必要があるため、典型的にはデプロイおよびサポートがより困難になります。 ただし、VSTO アドインは、より密接に Office に統合できます。 たとえば、Office リボンにタブやコントロールを追加し、文書の結合やグラフの変更などの高度な自動化タスクを実行できます。 また、.NET Framework を活用し、C# および Visual Basic を使用して、Office オブジェクトと対話することもできます。  
   
  どのような VSTO アドインを実行できるかの例を示します。 この VSTO アドインは、PowerPoint にリボン コントロール、カスタム作業ウィンドウ、およびダイアログ ボックスを追加します。  
   

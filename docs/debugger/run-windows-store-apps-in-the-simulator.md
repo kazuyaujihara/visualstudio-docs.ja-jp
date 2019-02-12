@@ -1,4 +1,4 @@
----
+﻿---
 title: シミュレーターで UWP アプリの実行 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiadatasource::get_lasterror |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -44,5 +44,5 @@ BSTR    fileName;
 HRESULT errorCode = pSource->get_lastError( &fileName );  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

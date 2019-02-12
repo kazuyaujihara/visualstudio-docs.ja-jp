@@ -1,4 +1,4 @@
----
+﻿---
 title: ClickOnce のセキュリティと展開 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -30,7 +30,7 @@ ms.locfileid: "55008687"
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 展開では、展開で 3 つの主要な問題を克服します。  
   
 - **アプリケーションの更新における問題。** Microsoft Windows インストーラーの配置、アプリケーションが更新されると、ユーザー、msp ファイルに、更新プログラムをインストールされ、インストールされている製品に適用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]デプロイ、更新プログラムを自動的に提供することができます。 変更された、アプリケーションの部分のみをダウンロードすると、サイド バイ サイドでの新しいフォルダーから、最新の完全なアプリケーションを再インストールし、.  
-  
+
 - **ユーザーのコンピューターへの影響。** Windows インストーラーの展開を多くの場合、アプリケーションはバージョン管理の競合の可能性がありますの共有コンポーネントに依存しています。[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]展開、各アプリケーションは自己完結型、およびその他のアプリケーションに干渉することはできません。  
   
 - **セキュリティ アクセス許可。** Windows インストーラーの配置は、管理者権限が必要でき、制限付きユーザーのインストールのみです。[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]展開により、管理者以外のユーザーをインストールして、アプリケーションに必要なコード アクセス セキュリティのアクセス許可のみを付与します。  

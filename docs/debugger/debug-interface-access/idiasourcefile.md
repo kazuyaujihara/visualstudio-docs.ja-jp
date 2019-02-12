@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaSourceFile |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -79,7 +79,7 @@ void ShowSourceFiles(IDiaTable *pTable)
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)   
  [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)   

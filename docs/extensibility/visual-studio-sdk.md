@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio SDK |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -28,7 +28,7 @@ Visual Studio SDK は Visual Studio の機能を拡張することや、Visual S
   
 - ツール ウィンドウに新しい機能を追加する  
   
-- 特定の言語の IntelliSense の拡張または新しいプログラミング言語に対して IntelliSense を提供  
+- 特定の言語の IntelliSense の拡張または新しいプログラミング言語に対して IntelliSense を提供する。  
   
 - 電球を使用して、優れたコードを記述のヒントと開発者に役立つ提案を提供  
   
@@ -80,7 +80,7 @@ Visual Studio SDK は Visual Studio の機能を拡張することや、Visual S
  [マネージ コード内の複数のスレッドを管理](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [メニューとコマンドを拡張](../extensibility/extending-menus-and-commands.md)   
  [ツールバーにコマンドを追加](../extensibility/adding-commands-to-toolbars.md)   
- [ツール ウィンドウの拡張とカスタマイズ](../extensibility/extending-and-customizing-tool-windows.md)   
+ [ツール ウィンドウの拡張とカスタマイズ ](../extensibility/extending-and-customizing-tool-windows.md)   
  [エディターと言語サービスの拡張機能](../extensibility/editor-and-language-service-extensions.md)   
  [プロジェクトの拡張](../extensibility/extending-projects.md)   
  [ユーザー設定とオプションの拡張](../extensibility/extending-user-settings-and-options.md)   

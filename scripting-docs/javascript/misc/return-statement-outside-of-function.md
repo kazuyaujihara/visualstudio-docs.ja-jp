@@ -1,4 +1,4 @@
----
+﻿---
 title: "'return' ステートメントが関数の外側で |Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017

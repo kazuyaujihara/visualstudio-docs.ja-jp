@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaStackFrame |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -107,7 +107,7 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
  [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   

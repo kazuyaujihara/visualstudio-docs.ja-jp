@@ -1,4 +1,4 @@
----
+﻿---
 title: T4 テキスト テンプレートの作成
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -259,7 +259,7 @@ Content of MyFile.txt is:
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>別の AppDomain で実行されるデザイン時テキスト テンプレート
 
- [デザイン時テキスト テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)はメインのアプリケーションから分離した AppDomain で実行されることを認識しておく必要があります。 ほとんどの場合、これは重要ではありませんが、一部の複雑な状況で制限が生じることがあります。 たとえば、別のサービスからテンプレート内またはテンプレート外のデータを渡す場合、そのサービスでシリアル化可能な API を提供する必要があります。
+[デザイン時テキスト テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)はメインのアプリケーションから分離した AppDomain で実行されることを認識しておく必要があります。 ほとんどの場合、これは重要ではありませんが、一部の複雑な状況で制限が生じることがあります。 たとえば、別のサービスからテンプレート内またはテンプレート外のデータを渡す場合、そのサービスでシリアル化可能な API を提供する必要があります。
 
  (これは、[実行時テキスト テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)にはあてはまりません。コードの残りの部分と一緒にコンパイルされるコードが提供されます。)
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :リモート コンピューター上の Microsoft Visual Studio リモート デバッグ モニターには、このコンピューターに接続するアクセス許可がありません
 titleSuffix: ''
 ms.custom: seodec18
@@ -43,6 +43,6 @@ ms.locfileid: "55002419"
   
   - コマンド プロンプトで `runas.exe` を実行します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

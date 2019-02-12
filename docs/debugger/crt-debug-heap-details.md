@@ -1,4 +1,4 @@
----
+﻿---
 title: CRT デバッグ ヒープの詳細 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -365,5 +365,5 @@ int addNewRecord(struct RecStruct *prevRecord,
   
  ![ページのトップへ](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaSymbol::get_baseSymbol |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -34,6 +34,6 @@ HRESULT get_baseSymbol(
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_baseSymbolId](../../debugger/debug-interface-access/idiasymbol-get-basesymbolid.md)

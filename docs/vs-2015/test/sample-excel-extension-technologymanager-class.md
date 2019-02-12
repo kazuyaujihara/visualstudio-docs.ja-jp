@@ -1,4 +1,4 @@
----
+﻿---
 title: Excel 拡張子のサンプル:TechnologyManager クラス |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -60,7 +60,7 @@ ms.locfileid: "54779571"
 ## <a name="getexcelelement-internal-method"></a>GetExcelElement 内部メソッド  
  この内部メソッドは、ウィンドウ ハンドルと Excel 要素についての情報を受け取り、要求された Excel 要素を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>   
  <xref:System.NotSupportedException>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   

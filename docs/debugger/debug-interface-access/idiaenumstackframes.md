@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaEnumStackFrames |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -69,7 +69,7 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)   

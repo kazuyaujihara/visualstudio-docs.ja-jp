@@ -1,4 +1,4 @@
----
+﻿---
 title: 配置機能のツアー
 description: Visual Studio からアプリを配置する際の選択肢について説明します。
 ms.custom: mvc

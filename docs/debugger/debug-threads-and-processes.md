@@ -1,4 +1,4 @@
----
+﻿---
 title: スレッドとプロセスをデバッグするためのツール |Microsoft Docs
 ms.date: 04/21/2017
 ms.topic: conceptual

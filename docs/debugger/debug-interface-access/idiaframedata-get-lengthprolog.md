@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiaframedata::get_lengthprolog |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -40,5 +40,5 @@ HRESULT get_lengthProlog ( 
 ## <a name="remarks"></a>コメント  
  プロローグ コードは、レジスタの保持し、CPU の状態を設定し、関数のスタックを確立する命令のシーケンスです。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Idialoadcallback 2::restrictreferencepathaccess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -34,5 +34,5 @@ HRESULT RestrictReferencePathAccess();
 ## <a name="remarks"></a>コメント  
  すべてのコード以外のリターン`S_OK`.exe ファイルの場所のパスで .pdb ファイルを検索しないようにします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

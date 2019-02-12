@@ -1,4 +1,4 @@
----
+﻿---
 title: セキュリティ警告:信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。 次の情報に関して疑わしい、または不明ながこのプロセスにアタッチされません |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -42,6 +42,6 @@ ms.locfileid: "54952185"
  [アタッチしない]  
  プロセスにアタッチしません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [実行中のプロセスにアタッチする](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [デバッガーのセキュリティ](../debugger/debugger-security.md)

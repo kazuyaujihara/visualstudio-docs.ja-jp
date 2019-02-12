@@ -1,4 +1,4 @@
----
+﻿---
 title: Idialinenumber::get_columnnumberend |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -40,5 +40,5 @@ HRESULT get_columnNumberEnd ( 
 ## <a name="remarks"></a>コメント  
  このメソッドによって返される列の値は、バイトの行にステートメントの最後の文字の後の位置に行のオフセットです。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

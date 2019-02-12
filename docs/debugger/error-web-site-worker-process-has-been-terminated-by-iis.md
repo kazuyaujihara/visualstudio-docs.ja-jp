@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :Web サイトのワーカー プロセスが IIS によって停止されました |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -56,5 +56,5 @@ ms.locfileid: "54946127"
   
 8. IIS マネージャーと **[管理ツール]** ウィンドウを閉じます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)

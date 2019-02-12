@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiaimagedata::get_imagebase |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -40,5 +40,5 @@ HRESULT get_imageBase ( 
 ## <a name="remarks"></a>コメント  
  イメージ ベースの競合によってイメージは、可能性がありますにリベースされます自動的には、未使用のメモリの場所が読み込まれるときにします。 このメソッドは、コンパイル時に、モジュールに格納された基本ヒント (推奨されるメモリの場所) を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

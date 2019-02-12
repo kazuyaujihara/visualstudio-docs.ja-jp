@@ -1,4 +1,4 @@
----
+﻿---
 title: 実行時のエラー レポート関数の記述 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -122,5 +122,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ネイティブ ランタイム チェックのカスタマイズ](../debugger/native-run-time-checks-customization.md)

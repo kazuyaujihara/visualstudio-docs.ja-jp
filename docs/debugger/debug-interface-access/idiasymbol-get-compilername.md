@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasymbol::get_compilername |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -49,5 +49,5 @@ HRESULT get_compilerName (
 |ヘッダー:|dia2.h|  
 |バージョン:|DIA SDK バージョン 8.0|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

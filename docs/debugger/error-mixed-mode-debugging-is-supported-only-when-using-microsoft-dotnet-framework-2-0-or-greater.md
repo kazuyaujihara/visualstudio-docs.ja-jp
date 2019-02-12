@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :混合モード デバッグは Microsoft .NET Framework 2.0 を使用する場合にのみ以上サポート |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -28,5 +28,5 @@ ms.locfileid: "54981858"
   
 - [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] を Version 2.0、3.0、3.5、または 4 にアップグレードします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Remote Debugging](../debugger/remote-debugging.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasymbol::findchildren |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -52,7 +52,7 @@ HRESULT findChildren ( 
 ## <a name="remarks"></a>コメント  
  このメソッドを呼び出すことは、 [idiasession::findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)このシンボルを最初のパラメーターとしてメソッド。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   

@@ -1,4 +1,4 @@
----
+﻿---
 title: コードの編集し、デバッグを続行 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/31/2017
@@ -45,7 +45,7 @@ ms.locfileid: "54930934"
   
  [F# ではエディット コンティニュはサポートされません。](../debugger/edit-and-continue-not-supported-for-f-hash.md)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](https://msdn.microsoft.com/library/bcew296c.aspx)   
  [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: フォントを変更する |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -30,7 +30,7 @@ ms.locfileid: "55018954"
   
    選択**既定としてフォントを保存**このフォントを使用するすべての将来 spy++ ウィンドウになります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Spy++ の使用](../debugger/using-spy-increment.md)   
  [Spy++ ビュー](../debugger/spy-increment-views.md)   
  [Spy++ リファレンス](../debugger/spy-increment-reference.md)

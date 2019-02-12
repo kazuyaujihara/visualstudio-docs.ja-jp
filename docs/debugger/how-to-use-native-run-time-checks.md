@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: ネイティブ ランタイム チェックの使用 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -77,7 +77,7 @@ Visual C++ では、ネイティブ [runtime_checks](/cpp/preprocessor/runtime-c
   
 -   `runtime_checks` プラグマを使用します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Visual Studio でのデバッグ](../debugger/index.md)  
  [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   

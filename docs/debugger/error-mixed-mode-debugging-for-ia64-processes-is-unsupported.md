@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :IA64 プロセスの混合モードのデバッグはサポートされていません |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -28,5 +28,5 @@ ms.locfileid: "54981634"
   
 -   デバッグのため、32 ビット バージョンのアプリケーションをビルドします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Remote Debugging](../debugger/remote-debugging.md)

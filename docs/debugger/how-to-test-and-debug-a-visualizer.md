@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: テストおよびデバッグのビジュアライザー |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -53,7 +53,7 @@ ms.locfileid: "54936532"
   
      詳細な例では、次を参照してください。[チュートリアル。C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [チュートリアル: C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [方法: ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)   
  [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: 進行状況 ダイアログ ボックスでのデバッグの停止 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -34,6 +34,6 @@ ms.locfileid: "54979024"
  **今すぐ停止**  
  デバッグ セッションを直ちに終了する場合は、このボタンをクリックします。 使用して**今すぐ停止**デバッグ中のプロセスをデタッチするのではなく、終了します。 システム プロセスをデバッグしている場合は、これらのプロセスを **[今すぐ停止]** で終了すると、予想不可能な結果や望ましくない結果になることがあります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [プログラムのデタッチ](/previous-versions/visualstudio/visual-studio-2010/x1thkxez(v=vs.100))

@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaPropertyStorage::ReadULONGLONG |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -44,5 +44,5 @@ HRESULT ReadULONGLONG ( 
 ## <a name="remarks"></a>コメント  
  A `ULONGLONG` 64 ビット符号なし整数としての Windows によって定義されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

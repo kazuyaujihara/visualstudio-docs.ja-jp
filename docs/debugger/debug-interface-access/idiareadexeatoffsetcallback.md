@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaReadExeAtOffsetCallback |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -48,7 +48,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)

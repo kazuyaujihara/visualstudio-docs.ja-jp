@@ -1,4 +1,4 @@
----
+﻿---
 title: EditorConfig 設定
 ms.date: 08/01/2018
 ms.topic: conceptual

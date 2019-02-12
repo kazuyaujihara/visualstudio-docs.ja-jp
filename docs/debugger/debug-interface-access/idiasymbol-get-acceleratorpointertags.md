@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaSymbol::get_acceleratorPointerTags |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -45,5 +45,5 @@ HRESULT get_acceleratorPointerTags(
 ## <a name="remarks"></a>コメント  
  このメソッドが、 `IDiaSymbol` C++ AMP のアクセラレータのスタブ関数に対応するインターフェイス。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

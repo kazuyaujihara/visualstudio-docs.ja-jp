@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: Visual Studio 2017 の機能拡張プロジェクトの移行 |Microsoft Docs'
 ms.date: 11/09/2016
 ms.topic: conceptual

@@ -1,4 +1,4 @@
----
+﻿---
 title: IA64 プロセスの混合モードのデバッグはサポートされていません。 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -49,5 +49,5 @@ Visual Studio では、IA64 プロセスでマネージド コードとネイテ
   
 2.  プロパティ ページで **[プラットフォーム]** をクリックし、プラットフォームの一覧の [Win32] をクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [64 ビット アプリケーションをデバッグする](../debugger/debug-64-bit-applications.md)

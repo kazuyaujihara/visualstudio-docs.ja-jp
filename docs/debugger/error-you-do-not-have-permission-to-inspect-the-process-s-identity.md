@@ -1,4 +1,4 @@
----
+﻿---
 title: エラー :プロセスを検査するアクセス許可がありません&#39;id |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -62,5 +62,5 @@ ms.locfileid: "54951886"
   
 5.  **[OK]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)

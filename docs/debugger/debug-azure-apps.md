@@ -1,4 +1,4 @@
----
+﻿---
 title: Azure サービスのデバッグ |Microsoft Docs
 ms.date: 09/14/2017
 ms.topic: conceptual
@@ -29,5 +29,5 @@ Visual Studio を使用して、さまざまなシナリオでの Azure サー�
 
 - Azure Service Fabric での ASP.NET のリモート デバッグを参照してください[リモート Service Fabric アプリケーションのデバッグ。](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Visual Studio でのデバッグ](../debugger/index.md)

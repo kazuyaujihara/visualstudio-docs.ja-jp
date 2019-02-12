@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasymbol::get_datakind |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -47,6 +47,6 @@ HRESULT get_dataKind ( 
 |ヘッダー:|dia2.h|  
 |バージョン:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [DataKind 列挙型](../../debugger/debug-interface-access/datakind.md)

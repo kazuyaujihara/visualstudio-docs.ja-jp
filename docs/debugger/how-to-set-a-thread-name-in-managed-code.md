@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: マネージ コードのスレッド名を設定 |Microsoft Docs'
 ms.date: 04/27/2017
 ms.topic: conceptual
@@ -75,6 +75,6 @@ Sub Main()
 End Sub  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [方法: ネイティブ コードのスレッド名を設定する](../debugger/how-to-set-a-thread-name-in-native-code.md)

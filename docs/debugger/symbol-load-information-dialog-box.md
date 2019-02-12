@@ -1,4 +1,4 @@
----
+﻿---
 title: シンボルの読み込み情報 ダイアログ ボックス |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -32,5 +32,5 @@ ms.locfileid: "55019451"
  **シンボルの設定**  
  このボタンをクリックして、**[オプション]** ダイアログ ボックス (**[デバッグ]** カテゴリの **[シンボル]** ページ) のシンボル設定を変更します。 このページで、シンボル位置の追加または削除、シンボル サーバーを使用しているときはローカルのキャッシュ位置の指定、およびシンボルの位置を検索するときの制御を行うことができます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [シンボルとソース コードの管理](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: メニュー コマンドを使用して拡張機能の作成 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -25,7 +25,7 @@ ms.locfileid: "55041153"
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 詳細については、"[Visual Studio SDK をインストール](../extensibility/installing-the-visual-studio-sdk.md)"を参照してください。  
-  
+
 ## <a name="create-a-menu-command"></a>メニュー コマンドを作成します。  
   
 1.  という名前の VSIX プロジェクトを作成する**FirstMenuCommand**します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#** > **Extensibility**します。  

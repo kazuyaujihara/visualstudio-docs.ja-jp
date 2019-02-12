@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasectioncontrib::get_informational |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -40,5 +40,5 @@ HRESULT get_informational(
 ## <a name="remarks"></a>コメント  
  通常、.directive セクションには、情報が含まれています。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

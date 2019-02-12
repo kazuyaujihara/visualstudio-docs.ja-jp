@@ -1,4 +1,4 @@
----
+﻿---
 title: ビルド処理でのコード生成
 ms.date: 03/22/2018
 ms.topic: conceptual

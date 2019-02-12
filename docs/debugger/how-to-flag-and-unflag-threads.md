@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: フラグを設定し、スレッドのフラグ解除 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -60,7 +60,7 @@ ms.locfileid: "54969458"
   
 5.  **[OK]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [マルチ スレッド アプリケーションのデバッグの開始](../debugger/get-started-debugging-multithreaded-apps.md)  
  [チュートリアル: [スレッド] ウィンドウを使用してマルチ スレッド アプリケーションをデバッグします。](../debugger/how-to-use-the-threads-window.md)

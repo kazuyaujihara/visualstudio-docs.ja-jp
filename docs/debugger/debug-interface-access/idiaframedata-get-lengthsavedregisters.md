@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiaframedata::get_lengthsavedregisters |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -40,6 +40,6 @@ HRESULT get_lengthSavedRegisters ( 
 ## <a name="remarks"></a>コメント  
  このメソッドによって返される値がプログラム文字列の解釈で通常使用される (を参照してください、 [idiaframedata::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)プログラム文字列の定義のメソッド)。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

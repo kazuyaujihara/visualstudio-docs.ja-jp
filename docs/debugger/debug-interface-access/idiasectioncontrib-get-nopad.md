@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasectioncontrib::get_nopad |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -40,5 +40,5 @@ HRESULT get_nopad(
 ## <a name="remarks"></a>コメント  
  これは通常、古いファイルでのみ見られるプロパティです。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

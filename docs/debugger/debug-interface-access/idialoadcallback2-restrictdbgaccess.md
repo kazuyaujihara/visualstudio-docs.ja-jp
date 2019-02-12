@@ -1,4 +1,4 @@
----
+﻿---
 title: Idialoadcallback 2::restrictdbgaccess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -34,5 +34,5 @@ HRESULT RestrictDBGAccess();
 ## <a name="remarks"></a>コメント  
  以外の値を返す任意`S_OK`.dbg ファイルからデバッグ情報を探すことを防ぐためにします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Idialinenumber::get_columnnumber |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -41,5 +41,5 @@ HRESULT get_columnNumber ( 
 ## <a name="remarks"></a>コメント  
  このメソッドによって返される列の値は、行のステートメントの最初の文字を行へのバイト オフセット。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

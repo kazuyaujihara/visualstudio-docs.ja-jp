@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaSymbol::findChildrenExByRVA |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -63,7 +63,7 @@ HRESULT findChildrenExByRVA ( 
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   

@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiaenumsectioncontribs::reset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -31,5 +31,5 @@ HRESULT Reset();
 ## <a name="return-value"></a>戻り値  
  `S_OK` を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

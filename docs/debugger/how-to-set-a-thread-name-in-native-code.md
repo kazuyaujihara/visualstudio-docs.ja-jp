@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: ネイティブ コードのスレッド名を設定 |Microsoft Docs'
 ms.date: 12/17/2018
 ms.topic: conceptual
@@ -108,7 +108,7 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 }  
 ```  
 
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)   
  [方法: マネージド コードのスレッド名を設定する](../debugger/how-to-set-a-thread-name-in-managed-code.md)

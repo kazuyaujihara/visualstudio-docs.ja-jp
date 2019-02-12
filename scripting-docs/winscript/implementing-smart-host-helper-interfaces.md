@@ -1,4 +1,4 @@
----
+﻿---
 title: スマート ホスト ヘルパー インターフェイスの実装 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
@@ -105,5 +105,5 @@ pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew
   
 -   ファイル システムでのドキュメントのパス名を提供します。 一部のデバッグ UI はこれを使って、ユーザーがドキュメントを編集して変更を保存できるようにします。 ドキュメントが保存された後は、ホストに通知するために [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) が呼び出されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [アクティブ スクリプトのデバッグの概要](../winscript/active-script-debugging-overview.md)

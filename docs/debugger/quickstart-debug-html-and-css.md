@@ -1,4 +1,4 @@
----
+﻿---
 title: UWP アプリで HTML および CSS のデバッグ |Microsoft Docs
 ms.date: 07/17/2017
 ms.topic: conceptual
@@ -253,7 +253,7 @@ ms.locfileid: "54978036"
 > [!NOTE]
 >  Windows Phone エミュレーターは、マウス ポインターを置くことによる要素の強調表示を部分的にサポートします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)   

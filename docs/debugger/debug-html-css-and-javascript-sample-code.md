@@ -1,4 +1,4 @@
----
+﻿---
 title: HTML および CSS のサンプル コードのデバッグ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -100,5 +100,5 @@ ms.locfileid: "54991581"
 })();  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)

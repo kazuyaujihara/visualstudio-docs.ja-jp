@@ -1,4 +1,4 @@
----
+﻿---
 title: Hello World の拡張機能のチュートリアル |Microsoft Docs
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -35,7 +35,7 @@ ms.locfileid: "54921048"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-開始する前に、 必要なVSIX のテンプレートとサンプル コードを含む**Visual Studio 拡張機能の開発**ワークロードがインストールされていることを確認してください。
+開始する前に、 必要なVSIX のテンプレートとサンプル コードを含む**Visual Studio 拡張機能の開発**ワークロードがインストールされていることを確認してください。 
 
 > [!NOTE]
 > Visual Studio 機能拡張プロジェクトを作成するには、Visual Studio の任意のエディション(Community、Professional、または Enterprise)を使用することができます。

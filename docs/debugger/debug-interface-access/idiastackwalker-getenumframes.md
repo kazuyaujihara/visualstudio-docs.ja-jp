@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaStackWalker::getEnumFrames |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -44,7 +44,7 @@ HRESULT getEnumFrames( 
 ## <a name="remarks"></a>コメント  
  その他の任意のプラットフォームでスタック フレームの一覧を取得する、 [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)メソッド。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   

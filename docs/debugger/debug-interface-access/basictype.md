@@ -1,4 +1,4 @@
----
+﻿---
 title: BasicType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -110,7 +110,7 @@ enum BasicType { 
 ## <a name="requirements"></a>要件  
  ヘッダー: cvconst.h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: キーボード ショートカット (HTML および JavaScript) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -55,6 +55,6 @@ ms.locfileid: "55034637"
 |選択した CSS 値を 1 つ増やす|↑ キー|  
 |選択した CSS 値を 1 つ減らす|↓ キー|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)   
  [クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md)

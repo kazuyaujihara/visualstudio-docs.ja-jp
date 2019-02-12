@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio での Django 学習チュートリアル、手順 5、認証
 titleSuffix: ''
 description: Visual Studio プロジェクトのコンテキストにおける Django の基本のチュートリアルです。具体的には、Django Web プロジェクト テンプレートによって提供される認証機能について取り上げます。

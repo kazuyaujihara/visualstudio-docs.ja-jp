@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasession::findlinesbyva |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -61,6 +61,6 @@ IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

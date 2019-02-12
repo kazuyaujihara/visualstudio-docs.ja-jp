@@ -1,4 +1,4 @@
----
+﻿---
 title: 自動機能の中断
 ms.date: 11/04/2016
 ms.topic: conceptual

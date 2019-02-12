@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio 拡張機能の開発を始める |Microsoft Docs
 ms.date: 09/18/2017
 ms.topic: conceptual
