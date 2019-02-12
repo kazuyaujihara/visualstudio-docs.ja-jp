@@ -1,4 +1,4 @@
----
+﻿---
 title: Excel 用にコード化された UI テストの拡張機能のサンプル | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

@@ -1,4 +1,4 @@
----
+﻿---
 title: コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

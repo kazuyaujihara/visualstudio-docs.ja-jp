@@ -1,4 +1,4 @@
----
+﻿---
 title: SharePoint 2010 アプリケーションの単体テストを分離するためのエミュレーターの使用 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

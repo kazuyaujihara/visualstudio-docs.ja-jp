@@ -1,4 +1,4 @@
----
+﻿---
 title: コントロールのコード化された UI テストの有効化 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

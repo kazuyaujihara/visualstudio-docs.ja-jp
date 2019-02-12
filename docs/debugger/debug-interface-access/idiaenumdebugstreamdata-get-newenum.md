@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaEnumDebugStreamData::get__NewEnum |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
