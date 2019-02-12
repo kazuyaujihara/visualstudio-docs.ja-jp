@@ -27,7 +27,7 @@ ms.locfileid: "55910937"
 > [!NOTE]
 > サーバー アプリケーションでテキスト テンプレート変換を使用することはお勧めしません。 また、シングル スレッド以外でテキスト テンプレート変換を使用することはお勧めしません。 テキスト テンプレート エンジンでは、単一の AppDomain を再利用して、テンプレートを変換、コンパイル、および実行するためです。 変換されたコードは、スレッド セーフになるように設計されているわけではありません。 エンジンは、Visual Studio プロジェクトのデザイン時のように、順番に処理するように設計されています。
 >
-> 実行時のアプリケーションでは、前処理されたテキスト テンプレートの使用を検討してください。 を参照してください[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)します。
+> ランタイム アプリケーションでは、前処理されたテキスト テンプレートの使用を検討してください。 次を参照してください。[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
 コンパイル時に決定されるテンプレートのセットをアプリケーションで使用する場合は、前処理されたテキスト テンプレートを使用する方が簡単です。 Visual Studio がインストールされていないコンピューターで実行されるアプリケーションでも、このアプローチを使用することができます。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
@@ -48,10 +48,10 @@ string output = engine.ProcessTemplate(templateString, host);
 
  ホストは、エラーのログの記録、アセンブリとインクルード ファイルへの参照の解決、テンプレートを実行できるアプリケーション ドメインの指定、各ディレクティブの適切なプロセッサの呼び出しを実行できる必要があります。
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 定義されている**Microsoft.VisualStudio.TextTemplating。\*します。0 dll**、および<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>で定義されている**Microsoft.VisualStudio.TextTemplating.Interfaces。\*します。0 dll**します。
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> は、**Microsoft.VisualStudio.TextTemplating.\*.0.dll** で定義され、<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> は、**Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0.dll** で定義されています。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [チュートリアル: カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)Visual Studio の外部テキスト テンプレートの機能を利用できるようにするカスタム テキスト テンプレート ホストを作成する方法を示します。
+ [チュートリアル: カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)は、Visual Studio の外部テキスト テンプレートの機能を利用できるようにするカスタム テキスト テンプレート ホストを作成する方法を示します。
 
 ## <a name="reference"></a>参照
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
