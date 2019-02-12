@@ -10,19 +10,19 @@ dev_langs:
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 131fb1cf2db9a22bb6bc6aa4ca313481c3b399aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947557"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991581"
 ---
 # <a name="debug-html-and-css-sample-code"></a>HTML と CSS のサンプル コードをデバッグする
   
- このトピックのコードのサンプル ファイルは、[クイック スタート。HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md) クイック スタートの設計上のエラーは、このバージョンのコードで修正されています。  
+ このトピックのコードのサンプル ファイルは、[クイック スタート。HTML と CSS をデバッグする](../debugger/quickstart-debug-html-and-css.md) クイック スタートの設計上のエラーは、このバージョンのコードで修正されています。  
   
 ## <a name="sample-code"></a>サンプル コード  
  次の HTML コードは、クイック スタートの \<body> タグで使用します。  
@@ -100,5 +100,5 @@ ms.locfileid: "53947557"
 })();  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)
