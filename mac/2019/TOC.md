@@ -10,7 +10,7 @@
 
 # [ユーザー アカウント](/visualstudio/mac/user-accounts)
 ## [サインイン](/visualstudio/mac/signing-in)
-## [サブスクリプションの有効化](/visualstudio/mac/activation)
+## [サブスクリプションの有効化](/visualstudio/mac/enable-subscription)
 
 # [IDE のカスタマイズ](/visualstudio/mac/customizing-the-ide)
 ## [Visual Studio for Mac の拡張](/visualstudio/mac/extending-visual-studio-mac)
