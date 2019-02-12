@@ -25,13 +25,13 @@ ms.locfileid: "54875889"
  Office Developer Tools で提供される機能は、さまざまなビジネス要件に合った Office ソリューションを作成するのに役立ちます。このツールには、Visual Basic または Visual C# を使用した Office ソリューションの作成に役立つプロジェクト テンプレートや、Office ソリューションで使用するカスタム ユーザー インターフェイスの作成に役立つビジュアルなデザイナーが含まれています。  
   
 > [!NOTE]  
->  [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは、VSTO アドインとソリューションと比較して小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML といった、ほぼすべての web プログラミング テクノロジを使用して、それらをビルドすることができます。  
+> [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。Office アドインは、VSTO アドインとソリューションに比べて小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML といった、ほぼすべての Web プログラミング テクノロジを使用して、それらをビルドすることができます。  
   
  Office 開発の最新情報については、MSDN の次のデベロッパー センターを参照してください。  
   
--   [Visual Studio の開発者ポータルでの Office 開発](http://go.microsoft.com/fwlink/?LinkId=123844)は、製品情報、コード サンプル、ビデオ、および Visual Studio を使用して、ソリューションの一部として、Office アプリケーションをカスタマイズする方法のコミュニティ リソースへのリンクが含まれています。  
+-   [Visual Studio の開発者ポータルでの Office 開発](http://go.microsoft.com/fwlink/?LinkId=123844)には、製品情報、コード サンプル、ビデオに加え、Visual Studio を使用して、Office アプリケーションをソリューションの一部としてカスタマイズする方法のコミュニティ リソースへのリンクが含まれています。  
   
--   [Microsoft Office デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=83467)は、技術記事、コード サンプル、ダウンロード、コミュニティ情報、サポート、および Office のカスタマイズと Office Business Application (Oba に関する他のドキュメントへのリンクが含まれています)。
+-   [Microsoft Office デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=83467)には、技術記事、コード サンプル、ダウンロード、コミュニティ情報、サポート、および Office のカスタマイズと Office Business Application (OBA) に関する他のドキュメントへのリンクが含まれています。
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [はじめに&#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
@@ -89,7 +89,7 @@ ms.locfileid: "54875889"
  Office プライマリ相互運用機能アセンブリ、マニフェスト、ユーザー インターフェイス要素、およびエラー メッセージに関する詳細情報へのリンクを提供します。  
   
  [マネージ参照&#40;Visual Studio での Office 開発&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]を対象とする Office プロジェクトで使用される API の名前空間と型に関する情報へのリンクを示します。 .NET Framework 3.5 をターゲットとする Office プロジェクトで使用されている名前空間と型に関する API リファレンス ドキュメントは、Visual Studio 2008 ドキュメントのリファレンス セクション [2007 system マネージ参照](http://go.microsoft.com/fwlink/?LinkId=160658)を参照してください。
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] を対象とする Office プロジェクトで使用される API の名前空間と型に関する情報へのリンクを示します。.NET Framework 3.5 を対象とする Office プロジェクトで使用されている名前空間と型に関する API リファレンス ドキュメントは、Visual Studio 2008 ドキュメントのリファレンス セクション [2007 system マネージ参照](http://go.microsoft.com/fwlink/?LinkId=160658)を参照してください。
   
  [アンマネージ API リファレンス&#40;Visual Studio での Office 開発&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Office アプリケーションでマネージド VSTO アドインのロードとアンロードなどの操作を実行するために使用できる COM インターフェイスに関する情報へのリンクを示します。  
