@@ -1,19 +1,18 @@
 ---
 title: UWP アプリ用の Visual C++ DLL をテストする方法
 ms.date: 02/15/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: b6ab809287bdcaac290328b81b5e9213758f5984
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87cffd39897d0e3122181792409044c6b0aedc99
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986541"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924683"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL をテストする方法
 
@@ -64,7 +63,7 @@ ms.locfileid: "54986541"
 
      テスト プロジェクトがビルドされ、実行されます。 **テスト エクスプローラー**のウィンドウが表示され、テストが **[成功したテスト]** に表示されます。 ウィンドウの下部の **[概要]** ウィンドウに、選択したテストに関する詳細情報が表示されます。
 
-     ![Test Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png)
+     ![テスト エクスプローラー](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> DLL プロジェクトをソリューションに追加する
 

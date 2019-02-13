@@ -10,13 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4f8e80fa9568bf418b972a3e2dd77d9141ba829f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a2c368f15da44bdc965d2176f290c2a796f4347
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932728"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956416"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>ロード パターンを編集して仮想ユーザー アクティビティをモデル化する
 
@@ -75,7 +74,7 @@ ms.locfileid: "54932728"
 
 - エージェントからの出力を最大化する。エージェントの出力を最大化するために、エージェントの主要な制限メトリックを測定します。 通常は CPU ですが、メモリが原因の場合もあります。
 
-- ターゲット サーバーで、通常は CPU が対象のリソース レベルに到達したときに、そのレベルでのスループットを計測する。 これにより、サーバーのリソース利用状況を一定のレベルに保った状態で、スループットの実行ごとの比較を行うことができます。
+- 対象のサーバーで、通常は CPU が対象のリソース レベルに到達したときに、そのレベルでのスループットを計測する。 これにより、サーバーのリソース利用状況を一定のレベルに保った状態で、スループットの実行ごとの比較を行うことができます。
 
 - サーバーで対象のスループット レベルに到達する。
 
@@ -86,7 +85,7 @@ ms.locfileid: "54932728"
 |パフォーマンス カウンター|カテゴリ|プロセッサ|
 |パフォーマンス カウンター|コンピューター|ContosoServer1|
 |パフォーマンス カウンター|カウンター|% プロセッサ時間|
-|パフォーマンス カウンター|[インスタンス]|_Total|
+|パフォーマンス カウンター|インスタンス|_Total|
 |パフォーマンス カウンターの対象範囲|最大値|90|
 |パフォーマンス カウンターの対象範囲|最小値|70|
 |ユーザー カウントの制限|初期のユーザー カウント|1|

@@ -4,7 +4,6 @@ titleSuffix: ''
 description: コンピューターから Visual Studio を完全に削除する詳細な手順を説明します。
 ms.date: 09/12/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - uninstall
@@ -21,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc3aad95042b59a18df0d805ce11ac5e2f0518ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f996e5b284393be91d4e83e3e403bdbb1073e6ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009844"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909650"
 ---
 # <a name="remove-visual-studio-2017"></a>Visual Studio 2017 の削除
 
@@ -43,7 +42,7 @@ ms.locfileid: "55009844"
 2. 管理者のコマンド プロンプトを開きます。 管理者のコマンド プロンプトを開くには、以下の手順に従います。
    * **[スタート]** メニューをクリックします。
    * 「**cmd**」と入力します。
-   * [ **Command Prompt**] を右クリックし、[ **管理者として実行**] をクリックします。
+   * **[Command Prompt]** を右クリックし、**[管理者として実行]** をクリックします。
 3. `InstallCleanup.exe` ユーティリティの完全なパスを入力して、必要なコマンドライン スイッチを渡します。 既定では、ユーティリティのパスは次のようになります。
    ```
    C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe

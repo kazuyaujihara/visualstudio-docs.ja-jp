@@ -1,8 +1,7 @@
 ---
 title: Python Interactive ウィンドウ (REPL)
 description: Visual Studio で Python コードを迅速に開発するために対話型ウィンドウ (REPL) を使用します。
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 601527ee9fadb3ac9bda196df71ac75501635e9e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992387"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155657"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python 対話型ウィンドウの使用
 
@@ -28,18 +27,14 @@ Visual Studio では、複数の Python REPL モードから選ぶことがで�
 
 | REPL | 説明 | 編集 | デバッグ | イメージ |
 | --- | --- | --- | --- | --- |
-| 標準 | 既定の REPL、Python と直接対話 | 標準的な編集 (複数行など)。 | はい、`$attach` を使用 | × |
-| デバッグ | 既定の REPL、デバッグ対象の Python プロセスと対話 | 標準的な編集 | デバッグのみ | × |
-| IPython | REPL は IPython のバックエンドと対話 | IPython コマンド、Pylab の利便性 | × | はい、REPL でインライン |
-| IPython (Pylab なし) | REPL は IPython のバックエンドと対話 | 標準的な IPython | × | はい、別のウィンドウ |
+| 標準 | 既定の REPL、Python と直接対話 | 標準的な編集 (複数行など)。 | はい、`$attach` を使用 | いいえ |
+| デバッグ | 既定の REPL、デバッグ対象の Python プロセスと対話 | 標準的な編集 | デバッグのみ | いいえ |
+| IPython | REPL は IPython のバックエンドと対話 | IPython コマンド、Pylab の利便性 | いいえ | はい、REPL でインライン |
+| IPython (Pylab なし) | REPL は IPython のバックエンドと対話 | 標準的な IPython | いいえ | はい、別のウィンドウ |
 
 この記事では、REPL の**標準**モードと**デバッグ** モードについて説明します。 IPython モードについて詳しくは、[IPython REPL の使用](interactive-repl-ipython.md)に関するページをご覧ください。
 
 **Ctrl**+**Enter** などのエディターとのやりとりを含む、例を使用した詳細なチュートリアルについては、チュートリアルの「[手順 3: 対話型 REPL ウィンドウを使用する](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)」を参照してください。
-
-|   |   |
-|---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | **対話型**ウィンドウについては、[こちらのビデオ (Microsoft Virtual Academy) をご覧ください](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) (2 分 22 秒)。|
 
 ## <a name="open-an-interactive-window"></a>対話型ウィンドウを開く
 

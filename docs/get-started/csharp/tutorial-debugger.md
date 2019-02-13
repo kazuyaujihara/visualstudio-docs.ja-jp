@@ -15,20 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fca037da8a0623d7cebbb7108e4a1028833ffe8
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 187fe0e75ffa084f95265adf5ca3061f29f11ca7
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424578"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156112"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>チュートリアル: Visual Studio を使用した C# のデバッグについて理解する
 
 この記事では、ステップ バイ ステップのチュートリアルで Visual Studio デバッガーの機能を紹介します。 デバッガー機能の概要を確認したい場合は、「[デバッガーでのはじめに](../../debugger/debugger-feature-tour.md)」を参照してください。 "*ご自分のアプリをデバッグする*" 場合、通常、それはデバッガーをアタッチした状態でご自分のアプリケーションを実行することを意味します。 これを行う場合、デバッガーには、ご自分のコードが実行されている間にそのコードによって何が行われているのかを確認するためのさまざまな方法が用意されています。 ご自分のコードをステップ実行して変数内に格納されている値を確認したり、変数に対してウォッチ式を設定して値が変わるタイミングを確認したり、コードの実行パスを調べたり、コードの分岐が実行されているかどうかを確認したりできます。 コードのデバッグを試みるのが今回初めてである場合は、この記事を先に進む前に[超初心者向けのデバッグ方法](../../debugger/debugging-absolute-beginners.md)に関するページを参照することをお勧めします。
-
-| | |
-|---------|---------|
-| ![ビデオのムービー カメラ アイコン](../../install/media/video-icon.png "ビデオを見る") | デバッグに関する[ビデオを見る](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)。同様の手順が示されています。 |
 
 デモ アプリは C# ですが、ほとんどの機能は C++、Visual Basic、F#、Python、JavaScript、および Visual Studio でサポートされているその他の言語にも適用されます (F# はエディット コンティニュをサポートしていません。 F# および JavaScript は、**[自動変数]** ウィンドウをサポートしていません)。 スクリーン ショットは C# になっています。
 

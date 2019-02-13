@@ -1,7 +1,6 @@
 ---
 title: QuickWatch コマンド
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.quickwatch
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dcfd4e7245699be6bdadc4a43ceacbf7a718e43
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5e45a6c63cb1f886c1440b93d58f944458f61290
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921792"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55969868"
 ---
 # <a name="quick-watch-command"></a>QuickWatch コマンド
 選択または指定したテキストが [[クイック ウォッチ]](../../debugger/watch-and-quickwatch-windows.md) ウィンドウの [式] フィールドに表示されます。 このダイアログ ボックスを利用し、デバッガーが認識する変数または式の現在値やレジスタのコンテンツの現在値を計算できます。 さらに、非定数の変数の値やレジストリのコンテンツの値を変更できます。
@@ -44,7 +43,7 @@ Debug.QuickWatchq [text]
 >Debug.QuickWatch
 ```
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [Visual Studio でウォッチ ウィンドウとクイック ウォッチ ウィンドウを使用して変数のウォッチ ポイントを設定する](../../debugger/watch-and-quickwatch-windows.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)

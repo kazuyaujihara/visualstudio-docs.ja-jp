@@ -1,7 +1,6 @@
 ---
 title: ListCallStack コマンド
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.listcallstack
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4442b5c7275bd7733f4d5a49c4ac3baf0b92c1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55272f5d30602d03d0f3bb7e2ac16e9a709cafdf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007465"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912405"
 ---
 # <a name="list-call-stack-command"></a>ListCallStack コマンド
 現在の呼び出し履歴を表示します。
@@ -107,7 +106,7 @@ kb 2
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [ListDisassembly コマンド](../../ide/reference/list-disassembly-command.md)
 - [ListThreads コマンド](../../ide/reference/list-threads-command.md)

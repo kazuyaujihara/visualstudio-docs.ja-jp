@@ -2,19 +2,18 @@
 title: R Tools のインストール
 description: オフライン インストールなど、Visual Studio 2017 および Visual Studio 2015 に R Tools をインストールする方法について説明します。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 9f4c00056c93230d588216ff425dee56d42e0961
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1cfdf0e301ff4c2fdf997824a037eedcc9886081
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921095"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909194"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>R Tools for Visual Studio のインストール方法
 
@@ -30,7 +29,7 @@ ms.locfileid: "54921095"
 
 ## <a name="supported-versions-of-visual-studio"></a>サポートされている Visual Studio のバージョン
 
-Windows では R Tools for Visual Studio (RTVS) は、[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) および [Visual Studio 2015 Update 3 (以降)](http://go.microsoft.com/fwlink/?LinkId=691129) (直接ダウンロード) の両方の Community (無料)、Professional、Enterprise の各エディションでサポートされています。
+Windows では R Tools for Visual Studio (RTVS) は、[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) および [Visual Studio 2015 Update 3 (以降)](http://go.microsoft.com/fwlink/?LinkId=691129) (直接ダウンロード) の両方の Community (無料)、Professional、Enterprise の各エディションでサポートされています。
 
 現在、Visual Studio for Mac では RTVS はサポートされていません。
 
@@ -40,7 +39,7 @@ Visual Studio Test Professional や SQL Server Management Studio などの製品
 
 1. Visual Studio インストーラーを実行して、**[変更]** オプションを選びます (詳しくは、[Visual Studio の変更](../install/modify-visual-studio.md)に関するページをご覧ください)。 Visual Studio をまだインストールしていない場合は、[Visual Studio のインストール](../install/install-visual-studio.md)に関するページをご覧ください。 Windows 7 の場合、Visual Studio 2017 バージョン *15.2 ビルド 26430.12* 以降を表示するには、インストーラーを更新する必要があります。
 
-1. [**データ サイエンスと分析のアプリケーション**] ワークロードを選択します。
+1. **[データ サイエンスと分析のアプリケーション]** ワークロードを選択します。
 
     ![VS2017 の [データ サイエンスと分析のアプリケーション] ワークロード](media/installation-data-science-workload.png)
 

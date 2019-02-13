@@ -11,16 +11,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4ba6526f05cd0d7acf795151c379d751b9add413
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: da816891c53d4576518102ad7438c735c415f7b4
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028557"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768386"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と Express のアプリを作成する
 
-このチュートリアルでは、Node.js と Express を使用して Visual Studio を開発します。単純な Node.js Web アプリを作成し、いくつかのコードを追加し、IDE の一部の機能を試し、アプリを実行します。 まだ Visual Studio をインストールしていない場合は、[ここ](http://visualstudio.microsoft.com)から無料でインストールできます。
+このチュートリアルでは、Node.js と Express を使用して Visual Studio を開発します。単純な Node.js Web アプリを作成し、いくつかのコードを追加し、IDE の一部の機能を試し、アプリを実行します。 まだ Visual Studio をインストールしていない場合は、[ここ](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)から無料でインストールできます。
 
 このチュートリアルでは、次の作業を行う方法について説明します。
 > [!div class="checklist"]

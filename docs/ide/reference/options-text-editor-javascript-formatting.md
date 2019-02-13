@@ -1,7 +1,6 @@
 ---
 title: '[オプション]、[テキスト エディター]、[JavaScript]、[書式設定]'
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17552294f4ce0fdfd3e78621217c4495186a365e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e995ec564d0260faac02eb3b4a0237fa9f1f89b4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042817"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933511"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>[オプション]、[テキスト エディター]、[JavaScript]、[書式設定]
 **[オプション]** ダイアログ ボックスの **[書式設定]** ページで、コード エディターでのコード書式オプションを設定します。 このページにアクセスするには、メニュー バーで **[ツール]**、**[オプション]** の順にクリックし、次に、**[テキスト エディター]**、**[JavaScript]**、**[書式設定]** を展開します。
@@ -65,6 +64,6 @@ ms.locfileid: "55042817"
 |**匿名関数に対する関数キーワードの後にスペースを挿入する**|このオプションをオンにすると、匿名関数に対する`function`キーワードの後にスペースが挿入されます。|
 |**かっこ内が空でない場合に始めかっこの後ろと終わりかっこの前にスペースを挿入する**|このオプションをオンにすると、かっこ内が空でない場合に始めかっこの後ろと終わりかっこの前にスペースが挿入されます。|
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)

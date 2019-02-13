@@ -3,14 +3,15 @@ title: Visual Studio for Mac ツアー
 description: Visual Studio for Mac は、iOS、Android、Mac、Xamarin.Forms 用に、ASP.NET Core Web サイトや Xamarin プロジェクトなどの .NET アプリケーションを macOS 上で構築する統合開発環境 (IDE) として利用できます。
 author: conceptdev
 ms.author: crdun
-ms.date: 11/03/2018
+ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 99ad6cfcda7bf271853aff5c095bbb0664b3b592
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.custom: video
+ms.openlocfilehash: 3bfc0b9f6d7ba65b2b2023d9641992a27aa11ed8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315830"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917001"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac ツアー
 
@@ -102,6 +103,11 @@ Visual Studio for Mac は、Git と Subversion ソース管理システムと統
 ![Solution Pad のコミットされていないファイル](media/ide-tour-image23.png)
 
 Visual Studio でバージョン管理を使用する方法については、「[バージョン管理](/visualstudio/mac/version-control)」を参照してください。
+
+## <a name="related-video"></a>関連ビデオ
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
+
 
 ## <a name="see-also"></a>関連項目
 
