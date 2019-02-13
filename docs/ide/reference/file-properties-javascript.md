@@ -1,7 +1,6 @@
 ---
 title: ファイルのプロパティ、JavaScript
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -26,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc9832ba7774f58d5f1826e633dfd9bf24ce205
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 684e638d1a2e69d48381964272294999d43c5242
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946543"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956767"
 ---
 # <a name="file-properties-javascript"></a>ファイルのプロパティ、JavaScript
 ファイルのプロパティを使用して、プロジェクト システムがファイルに対して実行するアクションを指定できます。 たとえば、ファイルがリソース ファイルとしてパッケージに追加するかどうかを示すには、ファイル プロパティを設定できます。
@@ -93,6 +92,6 @@ ms.locfileid: "54946543"
 ### <a name="version"></a>Version
  参照のバージョンが表示されます。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [プロジェクトおよびソリューションのプロパティの管理](../../ide/managing-project-and-solution-properties.md)

@@ -3,7 +3,6 @@ title: Visual Studio での Django チュートリアル手順 1、Django の基
 titleSuffix: ''
 description: Visual Studio プロジェクトのコンテキストでの Django の基礎に関するチュートリアルでは、Visual Studio が Django 開発のために提供するサポートについて説明します。
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a5ed50e90f869e9f40f0132586f61e292f44069
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14a365a85a446737982a6ec608c5935fc17ee408
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977201"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955259"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>チュートリアル:Visual Studio での Django Web フレームワークの概要
 

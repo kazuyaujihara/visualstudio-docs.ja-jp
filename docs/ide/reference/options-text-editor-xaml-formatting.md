@@ -1,7 +1,6 @@
 ---
 title: '[オプション]、[テキスト エディター]、[XAML]、[書式設定]'
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Formatting.General
@@ -30,16 +29,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 77424baa8b359846026dfa57c1bcd57b2e4cbcda
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f92dc12dfb9e9f8fb1ec3d3910edf7102342f69b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039372"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920393"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>[オプション]、[テキスト エディター]、[XAML]、[書式設定]
 
-[**書式設定**] プロパティ ページを使用して、XAML ドキュメントで要素と属性をどのように書式設定するかを指定します。 [**オプション**] ダイアログ ボックスを開くには、[**ツール**] メニューをクリックし、[**オプション**] をクリックします。 **[書式設定]** プロパティ ページにアクセスするには、**[テキスト エディター]** > **[XAML]** > **[書式設定]** ノードを展開します。
+**[書式設定]** プロパティ ページを使用して、XAML ドキュメントで要素と属性をどのように書式設定するかを指定します。 **[オプション]** ダイアログ ボックスを開くには、**[ツール]** メニューをクリックし、**[オプション]** をクリックします。 **[書式設定]** プロパティ ページにアクセスするには、**[テキスト エディター]** > **[XAML]** > **[書式設定]** ノードを展開します。
 
 ## <a name="auto-formatting-events"></a>オートフォーマット イベント
 
@@ -89,7 +88,7 @@ ms.locfileid: "55039372"
 
 **指定の長さを超えたタグを折り返す**
 
-[**長さ**] で指定された行の長さで行を折り返すかどうかを指定します。
+**[長さ]** で指定された行の長さで行を折り返すかどうかを指定します。
 
 **長さ**
 

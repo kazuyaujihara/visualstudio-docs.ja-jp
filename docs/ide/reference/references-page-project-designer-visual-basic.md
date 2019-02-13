@@ -1,7 +1,6 @@
 ---
 title: '[参照設定] ページ (プロジェクト デザイナー) (Visual Basic)'
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesReference
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d1abaab6d0d15e882f2496281657f3169120b0c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0afd144248ed01210c888ee516a19bf93a156b86
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921871"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970752"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>[参照設定] ページ (プロジェクト デザイナー) (Visual Basic)
 
@@ -96,7 +95,7 @@ ms.locfileid: "54921871"
 
 -   `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">` など、XML 名前空間。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [プロジェクト内の参照の管理](../../ide/managing-references-in-a-project.md)
 - [方法: インポートした名前空間を追加または削除する (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
