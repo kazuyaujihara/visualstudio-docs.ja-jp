@@ -14,15 +14,14 @@ ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c291f9437cab79ca1030bdde3d5d3df86547a87
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952315"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936617"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>データベースへのデータの保存 (複数テーブル)
 
@@ -44,7 +43,7 @@ ms.locfileid: "54952315"
 
 -   データセット内の更新されたデータをデータベースに返送するコードを変更します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 
@@ -78,7 +77,7 @@ ms.locfileid: "54952315"
 
 ## <a name="create-the-data-source"></a>データ ソースを作成します。
 
-この手順では、**データ ソース構成ウィザード**を使用して、Northwind データベースからデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースの設定の詳細については、次を参照してください。[方法。サンプル データベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)します。
+この手順では、**データ ソース構成ウィザード**を使用して、Northwind データベースからデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースの設定の詳細については、次を参照してください。[方法: サンプル データベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)します。
 
 1. **データ**メニューの  **データ ソースの**します。
 

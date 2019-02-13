@@ -11,21 +11,20 @@ ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7f5edbdd8f02b5f283626b212ae796befd9ab0e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd7ea5df54d1ef740feddaeb5fbedbc9b9a42fd4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932156"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943117"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>データベースを作成し、Visual Studio でのテーブルの追加
 
 Visual Studio を使用して作成し、SQL Server Express LocalDB にローカル データベース ファイルを更新することができます。 TRANSACT-SQL ステートメントを実行することによって、データベースを作成することも、 **SQL Server オブジェクト エクスプ ローラー** Visual Studio でツール ウィンドウです。 このトピックで作成します、 *.mdf*ファイルを開き、テーブル デザイナーを使用してテーブルおよびキーを追加します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルを完了する、省略可能な必要**データ ストレージと処理**ワークロードを Visual Studio でインストールします。 これをインストールするには、開く**Visual Studio インストーラー**を選択し、**ワークロード**タブ。**Web & クラウド**、選択**データ ストレージと処理**します。 選択、**変更**ワークロードを Visual Studio に追加するボタンをクリックします。
 
@@ -81,7 +80,7 @@ Visual Studio を使用して作成し、SQL Server Express LocalDB にローカ
 
 3. グリッドで、次のエントリのそれぞれに行を追加します。
 
-    |列名|データの種類|Null を許容|
+    |列名|データ型|Null を許容|
     |-----------------|---------------|-----------------|
     |`CustomerID`|`nchar(5)`|false (オフ)|
     |`CompanyName`|`nvarchar(50)`|false (オフ)|
@@ -112,7 +111,7 @@ Visual Studio を使用して作成し、SQL Server Express LocalDB にローカ
 
 1. 別のテーブルを追加し、次の表の各エントリの行を追加します。
 
-    |列名|データの種類|Null を許容|
+    |列名|データ型|Null を許容|
     |-----------------|---------------|-----------------|
     |`OrderID`|`int`|false (オフ)|
     |`CustomerID`|`nchar(5)`|false (オフ)|
