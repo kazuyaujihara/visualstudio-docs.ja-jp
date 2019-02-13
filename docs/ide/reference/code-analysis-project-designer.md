@@ -1,7 +1,6 @@
 ---
 title: コード分析 (プロジェクト デザイナー)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs29106
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9195bdb33b84420f66e93afb338b1c203c3886c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b23de974e7d8587cc7185eb9bb01d029fc2dcc27
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023120"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950723"
 ---
 # <a name="code-analysis-project-designer"></a>コード分析 (プロジェクト デザイナー)
 コードに対して実行できるコード分析ツールが含まれます。 ツールは、Microsoft .NET Framework デザイン ガイドラインに規定されたプログラミングやデザインに関する規則違反など、アセンブリに関する情報を報告します。
@@ -73,7 +72,7 @@ ms.locfileid: "55023120"
 
  使い方の規則を有効または無効にします。 このエントリを展開して、個別の規則を有効または無効にすることもできます。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [マネージド コードの警告に対応するコードの解析](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [マネージド コードに対するコード分析の概要](../../code-quality/code-analysis-for-managed-code-overview.md)

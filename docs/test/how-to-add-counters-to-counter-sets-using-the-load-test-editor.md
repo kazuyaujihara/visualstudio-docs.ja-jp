@@ -10,13 +10,12 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 29ca2518e56adf95d11fcaf750d8ddd9aa15a3f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 539d56d4adaa0cf831bde96ccd280fd03750b89f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916513"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970531"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>方法: ロード テスト エディターを使用してカウンターをカウンター セットに追加する
 
@@ -50,7 +49,7 @@ ms.locfileid: "54916513"
 5.  **[パフォーマンス カテゴリ]** を選択して、パフォーマンス データ カウンターのカテゴリを絞り込みます。 2 つのデータの列が表示されるので、そこからパフォーマンス カウンターを選択します。
 
     > [!NOTE]
-    > カウンター カテゴリによっては、インスタンスの選択も必要になります。 たとえば、SQL カウンターを選択した場合は、ターゲット コンピューターに SQL インスタンスが複数インストールされている可能性があるので、SQL インスタンスを選択する必要があります。
+    > カウンター カテゴリによっては、インスタンスの選択も必要になります。 たとえば、SQL カウンターを選択した場合は、対象のコンピューターに SQL インスタンスが複数インストールされている可能性があるので、SQL インスタンスを選択する必要があります。
 
 6.  カスタム カウンター セットに追加するカウンターおよびインスタンスを選択します。
 
