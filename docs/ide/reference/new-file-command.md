@@ -1,7 +1,6 @@
 ---
 title: NewFile コマンド
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - file.newfile
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6ccf2d50a0e6c6319da30be09df2b0573d0ce8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d6707d2e9ed8e001762939cb08ffee58f1c1cdc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937614"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930520"
 ---
 # <a name="new-file-command"></a>NewFile コマンド
 新規ファイルを作成して開きます。 ファイルは [その他のファイル] フォルダーの下に表示されます。
@@ -69,7 +68,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)

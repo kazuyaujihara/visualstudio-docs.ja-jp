@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aad63a7e-4e22-44e4-8a5b-81b5174ced1e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 463720503440771dcbdfbef39703a53cdc875e66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f02338f46ace5da0d7769a6b27bc3500b797a9be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843347"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977656"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 チェックサムのバイトを取得します。  
@@ -34,7 +34,7 @@ HRESULT get_checksum ( 
   
 #### <a name="parameters"></a>パラメーター  
  `cbData`  
- [in](バイト単位)、データ バッファーのサイズ。  
+ [in]\(バイト単位)、データ バッファーのサイズ。  
   
  `pcbData`  
  [out]チェックサムのバイト数を返します。 このパラメーターを `NULL` とすることはできません。  
@@ -52,6 +52,6 @@ HRESULT get_checksum ( 
   
  一般的なチェックサムは、32 バイトを超えるサイズではありませんが、チェックサムの最大サイズと見なさないでください。 設定、`data`パラメーターを`NULL`チェックサムの取得に必要なバイト数を取得します。 適切なサイズのバッファーを割り当てし、もう一度新しいバッファーでは、このメソッドを呼び出します。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)
