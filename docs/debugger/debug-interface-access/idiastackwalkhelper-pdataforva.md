@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a29c1a9fa21b973bca5db03bae07f608f82014f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42ab689c5c94fcf0200775d9fdd59ac2a0f7202c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888024"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916978"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 仮想アドレスに関連付けられている PDATA データ ブロックを返します。  
@@ -38,7 +38,7 @@ HRESULT pdataForVA( 
  [in]取得するデータの仮想アドレスを指定します。  
   
  `cbData`  
- [in](バイト) を取得するデータのサイズ。  
+ [in]\(バイト) を取得するデータのサイズ。  
   
  `pcbData`  
  [out]取得したバイトでは、データの実際のサイズを返します。  
@@ -54,5 +54,5 @@ HRESULT pdataForVA( 
   
  データの量が、呼び出し元に、データの量は使用を要求する必要がないために返される、呼び出し元が認識しています。 そのため、許容される場合は、エラーを返すには、このメソッドの実装は、`pbData`パラメーターが`NULL`します。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

@@ -1,7 +1,6 @@
 ---
 title: 動的なシンボリック実行 | Microsoft IntelliTest 開発者テスト ツール
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b210248a9ac27945ee6eb1e2f1d5219c6dd62117
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5e7bd4fd0672e7d861a53fdeef814d092a26cadb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936620"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917326"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>動的なシンボリック実行を使用する入力生成
 

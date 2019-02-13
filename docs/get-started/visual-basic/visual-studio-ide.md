@@ -1,7 +1,6 @@
 ---
 title: Visual Basic 開発者向けの概要
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b9777fc9bbe22e394c06152808d35b3f0a549d4
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: ee53c59c0ff3fcc898e30551357733b9d8b71725
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690529"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155709"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE へようこそ | Visual Basic
 
@@ -298,4 +297,3 @@ Visual Studio でのデバッグの詳細については、[デバッガーの�
 - [Visual Studio のその他の機能](../../ide/advanced-feature-overview.md)を確認します
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/) にアクセスします
 - [Visual Studio ブログ](https://blogs.msdn.microsoft.com/visualstudio/)を参照します
-- [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) で無料の Visual Studio コースを確認します

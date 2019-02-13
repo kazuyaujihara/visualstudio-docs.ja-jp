@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87fffbc69860fe41e3497109f889dc2ae8298ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a8736e27337aa2b2512eb96b3325489c96b0e93
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980363"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853782"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper タスク
-アプリケーションとその前提条件を検出、ダウンロード、インストールする自動化方法を提供します。 これは、アプリケーションを構成するすべてのコンポーネントの別々のインストーラーを統合する単一のインストーラーとして機能します。  
-  
-## <a name="task-parameters"></a>タスク パラメーター  
- 次の表では、`GenerateBootstrapper` タスクのパラメーターを説明します。  
-  
+アプリケーションとその前提条件を検出、ダウンロード、インストールする自動化方法を提供します。 これは、アプリケーションを構成するすべてのコンポーネントの別々のインストーラーを統合する単一のインストーラーとして機能します。
+
+## <a name="task-parameters"></a>タスク パラメーター
+次の表では、`GenerateBootstrapper` タスクのパラメーターを説明します。
+
 - `ApplicationFile`  
   
    省略可能な `String` 型のパラメーターです。  
@@ -67,14 +67,14 @@ ms.locfileid: "54980363"
   
    ブートストラップに組み込む製品を指定します。 このパラメーターに渡される項目は、以下の構文に従わなければなりません。  
   
-  ```xml  
-  <BootstrapperItem  
-      Include="ProductCode">  
-      <ProductName>  
-          ProductName  
-      </ProductName>  
-  </BootstrapperItem>  
-  ```  
+  ```xml
+  <BootstrapperItem
+      Include="ProductCode">
+      <ProductName>
+          ProductName
+      </ProductName>
+  </BootstrapperItem>
+  ```
   
    `Include` 属性は、インストールする必要がある前提条件の名前を表します。 `ProductName` 項目メタデータは省略可能であり、パッケージが見つからない場合に、ユーザー フレンドリーな名前としてビルド エンジンによって使用されます。 これらの項目は、`ApplicationFile` が指定されている場合を除き、必須の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 入力パラメーターではありません。 アプリケーション用にインストールする必要がある前提条件ごとに、1 つの項目を含める必要があります。  
   
@@ -146,35 +146,35 @@ ms.locfileid: "54980363"
   
    省略可能な `Boolean` 型のパラメーターです。  
   
-   `true` の場合、ブートストラップは指定された入力ブートストラップ項目に対して XSD 検証を実行します。 このパラメーターの既定値は、`false` です。  
-  
-## <a name="remarks"></a>コメント  
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
-  
-## <a name="example"></a>例  
- 次の例では、前提条件として [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] がインストールされていなければならないアプリケーションをインストールするために `GenerateBootstrapper` タスクが使用されています。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <BootstrapperFile Include="Microsoft.Net.Framework.2.0">  
-            <ProductName>Microsoft .NET Framework 2.0</ProductName>  
-        </BootstrapperFile>  
-    </ItemGroup>  
-  
-    <Target Name="BuildBootstrapper">  
-        <GenerateBootstrapper  
-            ApplicationFile="WindowsApplication1.application"  
-            ApplicationName="WindowsApplication1"  
-            ApplicationUrl="http://mycomputer"  
-            BootstrapperItems="@(BootstrapperFile)"  
-            OutputPath="C:\output" />  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [タスク](../msbuild/msbuild-tasks.md)   
- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+   `true` の場合、ブートストラップは指定された入力ブートストラップ項目に対して XSD 検証を実行します。 このパラメーターの既定値は、`false` です。
+
+## <a name="remarks"></a>コメント
+上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
+
+## <a name="example"></a>例
+次の例では、前提条件として [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] がインストールされていなければならないアプリケーションをインストールするために `GenerateBootstrapper` タスクが使用されています。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <BootstrapperFile Include="Microsoft.Net.Framework.2.0">
+            <ProductName>Microsoft .NET Framework 2.0</ProductName>
+        </BootstrapperFile>
+    </ItemGroup>
+
+    <Target Name="BuildBootstrapper">
+        <GenerateBootstrapper
+            ApplicationFile="WindowsApplication1.application"
+            ApplicationName="WindowsApplication1"
+            ApplicationUrl="http://mycomputer"
+            BootstrapperItems="@(BootstrapperFile)"
+            OutputPath="C:\output" />
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>関連項目
+[タスク](../msbuild/msbuild-tasks.md)  
+[タスク リファレンス](../msbuild/msbuild-task-reference.md)

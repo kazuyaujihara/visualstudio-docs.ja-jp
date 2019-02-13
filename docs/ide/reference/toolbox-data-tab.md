@@ -1,7 +1,6 @@
 ---
 title: ツールボックス、[データ] タブ
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Data tab
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f30bc874f5ed3debecf24a3259a8b13c9c38d49
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a83999345cd36f1677eca91b243e1ab3455c8a3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997404"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910767"
 ---
 # <a name="toolbox-data-tab"></a>ツールボックス、[データ] タブ
 
@@ -38,7 +37,7 @@ ms.locfileid: "54997404"
 |<xref:System.Windows.Forms.BindingSource>|基になるデータ ソースにコントロールをバインドするプロセスを簡略化します。|
 |<xref:System.Windows.Forms.BindingNavigator>|データにバインドされている、フォーム上のコントロールを移動および操作するためのユーザー インターフェイス (UI) を表します。|
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [Visual Studio でのデータへのアクセス](../../data-tools/accessing-data-in-visual-studio.md)
 - [.NET 用の Visual Studio データ ツール](../../data-tools/visual-studio-data-tools-for-dotnet.md)

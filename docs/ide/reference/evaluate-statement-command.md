@@ -1,7 +1,6 @@
 ---
 title: Evaluate Statement コマンド
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89f8eacc11e591545e1a542c0e1eeda3c45b7df3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98bdaf41aa34367d656e2bfb5694f3b615dbe3b8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002393"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911742"
 ---
 # <a name="evaluate-statement-command"></a>Evaluate Statement コマンド
 指定したステートメントを評価し、表示します。
@@ -58,7 +57,7 @@ Debug.EvaluateStatement text
 >Debug.EvaluateStatement(a+b)
 ```
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [Print コマンド](../../ide/reference/print-command.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)

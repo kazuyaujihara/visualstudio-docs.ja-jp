@@ -1,7 +1,6 @@
 ---
 title: '[マイ拡張] ページ (プロジェクト デザイナー) (Visual Basic)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesMyExtensions
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 654e96948d738deae78781dacd16b327aac1a141
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d366ed403eba6fbfab4aec22f4542ee5362962f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027907"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923240"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>[マイ拡張] ページ (プロジェクト デザイナー) (Visual Basic)
 **プロジェクト デザイナー**の **[マイ拡張]** ページを使用して、プロジェクトの `My` 名前空間拡張を管理します。 `My` 名前空間拡張を使用すれば、`My` 名前空間をカスタマイズして独自のカスタム メンバーに追加することができます。 カスタムの `My` 名前空間拡張の作成については、「[Visual Basic における My 名前空間の拡張](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)」を参照してください。
@@ -41,7 +40,7 @@ ms.locfileid: "55027907"
 
  **[マイ名前空間拡張]** リストで 1 つ以上の参照を選択し、このボタンをクリックして `My` 名前空間拡張をプロジェクトから削除します。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [Visual Basic における My 名前空間の拡張](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [カスタム My 拡張のパッケージ化と配置](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)

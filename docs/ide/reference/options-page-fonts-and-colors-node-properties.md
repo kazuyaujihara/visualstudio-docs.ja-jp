@@ -1,7 +1,6 @@
 ---
 title: '[フォントおよび色] ノード プロパティ ([オプション] ページ)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Fonts and Colors node properties
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a67b683f92a7fc05f8c6c25cead9921959aa550
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b5363d71082128c13146c445fe312424be7e4340
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959357"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907362"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>[フォントおよび色] ノード プロパティ ([オプション] ページ)
 このドキュメントでは、**[オプション]** ダイアログ ボックスの **[環境]** カテゴリの **[フォントと色]** に表示されるように登録されているツール ウィンドウのフォントと色のプロパティについて説明します。 ここで説明するプロパティを使用することにより、色を設定できる項目のグループの動的な特性がサポートされます。このグループは、VSPackages がインストールまたはアンインストールされる場合に変化させることができます。
@@ -41,7 +40,7 @@ ms.locfileid: "54959357"
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|<xref:EnvDTE.vsFontCharSet> の値。ヘブライ語やロシア語など、使用する文字セットの種類を指定します。|
 |FontSize|Get/Set (Short)|使用するフォントのサイズ (ポイント単位)。 例: 10 や 12 など。|
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [オプション設定の制御](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [オプション ページにあるプロパティ項目名の確認](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)

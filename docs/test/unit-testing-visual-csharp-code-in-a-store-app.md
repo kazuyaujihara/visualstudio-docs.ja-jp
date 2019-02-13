@@ -1,19 +1,18 @@
 ---
 title: Visual C# コードの単体テスト
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 64481c974df834fe7f5296c3023c9335f9394dda
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 23c16ab17ef1ad4870fa6435939bc29db5208803
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998548"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917767"
 ---
 # <a name="unit-testing-visual-c-code"></a>Visual C# コードの単体テスト
 
@@ -85,7 +84,7 @@ ms.locfileid: "54998548"
 
    テスト プロジェクトがビルドされ、実行されます。 **テスト エクスプローラー**のウィンドウが表示され、テストが **[成功したテスト]** に表示されます。 ウィンドウの下部の **[概要]** ウィンドウに、選択したテストに関する詳細情報が表示されます。
 
-   ![Test Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png)
+   ![テスト エクスプローラー](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Maths プロジェクトに Rooter クラスを追加します。
 

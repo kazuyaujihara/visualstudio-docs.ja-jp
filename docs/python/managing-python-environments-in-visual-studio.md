@@ -2,7 +2,6 @@
 title: Python 環境とインタープリターを管理する
 description: '[Python 環境] ウィンドウを使用して、グローバル環境、仮想環境、および conda 環境を管理し、Python インタープリターとパッケージをインストールし、環境を Visual Studio プロジェクトに割り当てます。'
 ms.date: 12/07/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e883cb199ca2959015dac0c6492d19e7875c5ca1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4514aa132adab37425d0d49c4594fec8db09d12d
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958785"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155722"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio で Python 環境を作成および管理する方法
 
@@ -71,10 +70,6 @@ Visual Studio では、仮想環境と conda 環境 (「[環境の種類](#types
 
 > [!Note]
 > Visual Studio はシステム サイト パッケージのオプションを尊重しますが、Visual Studio 内からそれを変更する方法は用意されていません。
-
-|   |   |
-|---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | Visual Studio での Python 環境については、[こちらのビデオ (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) をご覧ください (2 分 35 秒)。|
 
 ### <a name="what-if-no-environments-appear"></a>環境が表示されない場合
 
