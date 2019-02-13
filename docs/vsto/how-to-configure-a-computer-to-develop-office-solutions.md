@@ -21,7 +21,7 @@ ms.lasthandoff: 01/24/2019
 ms.locfileid: "54865590"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Office ソリューションを開発するコンピューターを構成する方法
-  Visual Studio の Microsoft Office Developer Tools を使用できるように開発コンピューターを構成するには、次のトピックの手順を実行します。これらの手順を実行するには、開発コンピューターの管理特権を保持している必要があります。  
+  Visual Studio の Microsoft Office Developer Tools を使用できるように開発用コンピューターを構成するには、次のトピックの手順を実行します。これらの手順を実行するには、開発用コンピューターの管理特権を保持している必要があります。  
   
 ### <a name="to-configure-the-development-computer"></a>開発コンピューターを構成するには  
   
