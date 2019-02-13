@@ -1,14 +1,9 @@
 ---
-title: 'チュートリアル: メモリ リークの検出 (JavaScript)| Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: メモリ リーク (JavaScript) の検出 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744950"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780935"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>チュートリアル: メモリ リークの検出 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +219,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
     - このオブジェクトは、スナップショット #2 から残されたオブジェクトで、メモリ リークの可能性があるものを表しています。  
   
-      ここでこのアプリについて少し説明しておくと、 **[Leak Memory] (メモリ リーク)** をクリックすると DIV 要素が削除され、要素の追加されます。したがって、このコードは正しく動作していないと思われます (つまり、メモリがリークする)。 次のセクションでは、その修正方法について説明します。  
+      この時点でのアプリの知識が役立ちます。選択、 **Leak Memory**ボタンの DIV 要素を削除して、コードが正しく動作してないようですので、要素を追加する必要があります (つまり、メモリがリークする)。 次のセクションでは、その修正方法について説明します。  
   
     > [!TIP]
     >  `Global` オブジェクトに対する相対的な位置を特定することによってオブジェクトを識別できる場合があります。 これを行うには、その識別子のショートカット メニューを開き、 **[ルート ビューで表示]** をクリックします。  
@@ -291,8 +286,5 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
       ![修正されたメモリ リークを示すスナップショット](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [[JavaScript メモリ]](../profiling/javascript-memory.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
-title: '方法: シェーダーをエクスポートする | Microsoft Docs'
-ms.custom: ''
+title: '方法: シェーダーをエクスポートする |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e8c3a6ea90b43caeb1140cbb9ab7c699bdb09c3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3858d10d685e104617a6de7b5c11c87cfee1872d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213292"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802794"
 ---
 # <a name="how-to-export-a-shader"></a>方法: シェーダーをエクスポートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,9 +51,6 @@ ms.locfileid: "49213292"
   
 4.  エクスポートするシェーダーの名前を **[ファイル名]** コンボ ボックスに指定し、**[保存]** ボタンを選択します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法: 基本カラー シェーダーを作成する](../designers/how-to-create-a-basic-color-shader.md)   
  [シェーダー デザイナー](../designers/shader-designer.md)
-
-
-

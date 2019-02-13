@@ -1,14 +1,9 @@
 ---
 title: イミディエイト ウィンドウ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ImmediateWindow
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802675"
 ---
 # <a name="immediate-window"></a>イミディエイト ウィンドウ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -128,7 +123,7 @@ ms.locfileid: "49850426"
   
 2.  **[出力]** ウィンドウのテキスト領域で右クリックし、**[例外メッセージ]** をクリックして選択または選択解除します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーでのコード間の移動](../../debugger/navigating-through-code-with-the-debugger.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [Visual Studio でのデバッグ](../../debugger/debugging-in-visual-studio.md)   
@@ -136,6 +131,3 @@ ms.locfileid: "49850426"
  [チュートリアル: デザイン時のデバッグ](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)   
  [Visual Studio での正規表現の使用](../../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

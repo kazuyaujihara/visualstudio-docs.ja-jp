@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227981"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231975"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>マルチ スレッド アプリケーションのデバッグの開始 (C#、Visual Basic、C++)
 Visual Studio には、いくつかのツールとマルチ スレッド アプリケーションをデバッグする方法をユーザー インターフェイス要素が用意されています。 このチュートリアルでは、スレッド マーカーを使用する方法、**並列スタック**ウィンドウで、**並列ウォッチ**ウィンドウ、条件付きブレークポイントは、および [フィルター] ブレークポイント。 このチュートリアルを完了に慣れることがするマルチ スレッド アプリケーションをデバッグするための Visual Studio の機能を使用します。
@@ -36,7 +36,7 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
 
 - 使用する、**デバッグの場所**ツールバーと**スレッド**ウィンドウを参照してください[チュートリアル。マルチ スレッド アプリケーションをデバッグ](../debugger/how-to-use-the-threads-window.md)します。
 
-- 使用するサンプルの<xref:System.Threading.Tasks.Task>(マネージ コード) を参照してください (C++)、同時実行ランタイムと[チュートリアル: 並行アプリケーションをデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)します。 最もマルチ スレッド アプリケーションの種類に適用される一般的なデバッグ ヒント、そのトピックと、この 1 つの両方を参照します。
+- 使用するサンプルの<xref:System.Threading.Tasks.Task>(マネージ コード) を参照してください (C++)、同時実行ランタイムと[チュートリアル。並行アプリケーションをデバッグする 最もマルチ スレッド アプリケーションの種類に適用される一般的なデバッグ ヒント、そのトピックと、この 1 つの両方を参照します。
   
 まず、マルチ スレッド アプリケーション プロジェクトを必要があります。 以下に例を示します。  
   
@@ -106,39 +106,37 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     ```
 
     ```C++
-    #include "stdafx.h"
+    #include "pch.h"
     #include <thread>
     #include <iostream>
     #include <vector>
-
-    using namespace;
 
     int count = 0;
 
     void doSomeWork() {
 
-        cout << "The doSomeWork function is running on another thread." << endl;
+        std::cout << "The doSomeWork function is running on another thread." << std::endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        this_thread::sleep_for(chrono::seconds(3));
-        cout << "The function called by the worker thread has ended." << endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "The function called by the worker thread has ended." << std::endl;
     }
 
     int main() {
-        vector<thread> threads;
+        std::vector<std::thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(thread(doSomeWork));
-            cout << "The Main() thread calls this after starting the new thread" << endl;
-        }
+            threads.push_back(std::thread(doSomeWork));
+            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+    }
 
-        for (auto& thread : threads) {
-            thread.join();
-        }
+    for (auto& thread : threads) {
+        thread.join();
+    }
 
-        return 0;
+    return 0;
     }
     ```
 
@@ -194,6 +192,8 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     ```
   
 7.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
+
+8. (Visual Basic のみ)ソリューション エクスプ ローラー (右側のウィンドウ) でプロジェクト ノードを右クリックし、選択**プロパティ**します。 下、**アプリケーション** タブで、変更、**スタートアップ オブジェクト**に**単純**します。
   
 ## <a name="debug-the-multithreaded-app"></a>マルチ スレッド アプリをデバッグします。  
   
@@ -205,8 +205,8 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     ```  
   
     ```C++  
-    this_thread::sleep_for(chrono::seconds(3));
-    cout << "The function called by the worker thread has ended." << endl; 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "The function called by the worker thread has ended." << std::endl; 
     ```  
 
     ```VB
@@ -214,7 +214,7 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     Console.WriteLine()
     ```
 
-1. 左側の余白で左クリックして、`Thread.Sleep`または`this_thread::sleep_for`新しいブレークポイントを挿入するステートメント。  
+1. 左側の余白で左クリックして、`Thread.Sleep`または`std::this_thread::sleep_for`新しいブレークポイントを挿入するステートメント。  
   
     余白は、赤い円は、この場所にブレークポイントを設定することを示します。 
   
