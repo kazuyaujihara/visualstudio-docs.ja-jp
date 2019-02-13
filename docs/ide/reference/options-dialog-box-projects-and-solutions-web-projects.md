@@ -1,7 +1,6 @@
 ---
 title: '[Web プロジェクト] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])'
 ms.date: 07/14/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.WebProjects
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa38914362de371628d5ebbf76e46f2d7e5f72f7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f0d645d8c1c204105f5e505cd34386a1fcc19b46
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017462"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937969"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>[Web プロジェクト] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])
 
@@ -34,7 +33,7 @@ ms.locfileid: "55017462"
 
 このオプションが設定されているときは、Web アプリケーションをエラーなしでコンパイルできなかった場合にそのアプリケーションを実行しようとすると警告が表示されます。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]](projects-and-solutions-options-dialog-box.md)
 - [[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](options-dialog-box-projects-and-solutions-web-projects.md)

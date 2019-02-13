@@ -1,24 +1,19 @@
 ---
 title: Xamarin アプリを使用したアプリケーション ライフサイクル管理 (ALM) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f2e7af8227e11d554a4f953593dad396d5543aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 6f8d2a776b8867230bb618dfb0ce8b558c69619e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793812"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Xamarin アプリを使用したアプリケーション ライフサイクル管理 (ALM)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Xamarin では、Android、iOS、および Windows を対象とするクロス�
  次の表は、Visual Studio ALM 機能のうち Xamarin プロジェクトで機能するはずの機能と、制限がある機能を示しています。 各機能そのものの詳細については、リンク先のドキュメントを参照してください。  
   
 ## <a name="agile-tools"></a>アジャイル ツール  
- 参照リンク: **[作業](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (Visual Studio Team Services または TFS (Team Explorer Everywhere など) を使用)  
+ 参照リンク:**[作業](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (Visual Studio Team Services または Team Explorer Everywhere など、TFS を使用)  
   
  一般的なコメント: すべての計画機能と追跡機能は、プロジェクトの種類とコーディング言語には依存しません。  
   
@@ -80,7 +75,7 @@ Xamarin では、Android、iOS、および Windows を対象とするクロス�
 |-------------|----------------------------|-------------------------|  
 |オンプレミス TFS サーバー|はい|ビルド コンピューターに Xamarin がインストールされている必要があります。iOS 用にビルドするには、OSX コンピューターにリンクできる必要があります。 「 [Xamarin 用に TFS を構成する](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) 」(Xamarin web サイト) を参照してください。|  
 |Visual Studio Team Services にリンクされたオンプレミスのビルド サーバー|はい|手順については、[ビルド サーバー](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c)を参照してください。|  
-|Visual Studio Team Services のホスト コントローラー サービス|はい|「[Build your Xamarin app](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin)」 (Xamarin アプリのビルド) を参照してください。|  
+|Visual Studio Team Services のホスト コントローラー サービス|はい|「[Build your Xamarin app](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)」 (Xamarin アプリのビルド) を参照してください。|  
 |事前スクリプトと事後スクリプトによるビルド定義|はい||  
 |継続的な統合 (ゲート チェックインを含む)|はい|Git としての TFVC へのゲート チェックインのみ、チェックイン モデルではなく、プル要求モデルで機能します。|  
   
@@ -122,4 +117,3 @@ Xamarin では、Android、iOS、および Windows を対象とするクロス�
 |機能|Xamarin でサポートされているかどうか|その他のコメント|  
 |-------------|----------------------------|-------------------------|  
 |クラッシュ分析、製品利用統計情報、およびベータ版の配布|はい||
-

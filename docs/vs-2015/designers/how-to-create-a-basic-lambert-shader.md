@@ -1,25 +1,20 @@
 ---
-title: '方法: 基本ランバート シェーダーを作成する | Microsoft Docs'
-ms.custom: ''
+title: '方法: 基本ランバート シェーダーを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4fbf209e970367ded8e019087287d429bad8fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792009"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>方法: 基本ランバート シェーダーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +59,11 @@ ms.locfileid: "49929726"
   
  ![モデルに適用されるランバート照明。](../designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-Result")  
   
- 3-D モデルにシェーダーを適用する方法の詳細については、「[方法: シェーダーを 3-D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)」を参照してください。  
+ シェーダーを 3-D モデルに適用する方法の詳細については、次を参照してください。[方法。シェーダーを 3-D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)します。  
   
-## <a name="see-also"></a>関連項目  
- [方法: シェーダーを 3-D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+## <a name="see-also"></a>参照  
+ [方法: シェーダーを 3-D モデルに適用します。](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)   
  [方法: 基本フォン シェーダーを作成する](../designers/how-to-create-a-basic-phong-shader.md)   
  [シェーダー デザイナー](../designers/shader-designer.md)   
  [シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)
-
-
-

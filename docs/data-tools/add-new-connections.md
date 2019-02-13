@@ -5,15 +5,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93918890c2e58a8460f6a896c760516047d09213
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: da6763cffedccb1dae296e2959732237cd126b25
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932026"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909921"
 ---
 # <a name="add-new-connections"></a>新しい接続を追加する
 
@@ -51,7 +50,7 @@ ms.locfileid: "54932026"
 
 データ ソースを選択した後にをクリックして**Test-connection**します。 成功しなかった場合はトラブルシューティングが必要なベンダーのドキュメントに基づいて。
 
-![テスト接続](../data-tools/media/raddata-test-connection.png)
+![接続のテスト](../data-tools/media/raddata-test-connection.png)
 
 作成する準備が完了したら、テストが成功した場合、*データ ソース*、つまり本当に Visual Studio という用語は、*データ モデル*基になるデータベースまたはサービスに基づきます。
 

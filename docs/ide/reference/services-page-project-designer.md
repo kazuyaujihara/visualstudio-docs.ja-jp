@@ -1,7 +1,6 @@
 ---
 title: '[サービス] ページ (プロジェクト デザイナー)'
 ms.date: 01/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
@@ -13,20 +12,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac182562241fd35c8eaf58bd49fe8004cb27367f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3c439a981573934215ecad8796e7980a5f9c8c2f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013367"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936461"
 ---
 # <a name="services-page-project-designer"></a>[サービス] ページ (プロジェクト デザイナー)
 
-クライアント アプリケーション サービスにより、Windows フォーム アプリケーションおよび Windows Presentation Foundation (WPF) アプリケーションから [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] ログイン サービス、ロール サービス、プロファイル サービスに簡単にアクセスできます。 クライアント アプリケーション サービスは、**プロジェクト デザイナー**の [**サービス**] ページで有効にし、構成することができます。
+クライアント アプリケーション サービスにより、Windows フォーム アプリケーションおよび Windows Presentation Foundation (WPF) アプリケーションから [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] ログイン サービス、ロール サービス、プロファイル サービスに簡単にアクセスできます。 クライアント アプリケーション サービスは、**プロジェクト デザイナー**の **[サービス]** ページで有効にし、構成することができます。
 
 クライアント アプリケーション サービスを使用すると、中央のサーバーを使用してユーザーを認証し、各ユーザーの割り当てられたロール (複数可) を判断し、ネットワーク経由で共有できるユーザーごとのアプリケーション設定を保存できます。 詳細については、「[クライアント アプリケーション サービス](/dotnet/framework/common-client-technologies/client-application-services)」を参照してください。
 
-この [**サービス**] ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、[**プロジェクト**] メニューの **[プロパティ**] をクリックします。 **プロジェクト デザイナー** が表示されたら、[**サービス**] タブをクリックします。
+この **[サービス]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、**[プロジェクト]** メニューの **[プロパティ**] をクリックします。 **プロジェクト デザイナー** が表示されたら、**[サービス]** タブをクリックします。
 
 ## <a name="task-list"></a>タスク一覧
 
@@ -44,7 +43,7 @@ ms.locfileid: "55013367"
 
  **クライアント アプリケーション サービスを有効にする**
 
- 選択すると、クライアント アプリケーション サービスが有効になります。 クライアント アプリケーション サービスを使用するには、[**サービス**] ページでサービスの場所を指定する必要があります。
+ 選択すると、クライアント アプリケーション サービスが有効になります。 クライアント アプリケーション サービスを使用するには、**[サービス]** ページでサービスの場所を指定する必要があります。
 
  **Windows 認証の使用**
 

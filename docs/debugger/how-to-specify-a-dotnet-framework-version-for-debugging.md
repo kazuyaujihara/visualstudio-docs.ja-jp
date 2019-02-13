@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 855dedd3073614c913abcc619babdaad03d61797
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17e63c220dcf7677dbc62d9607e21bfbb11b42fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893828"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973981"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>方法: デバッグで .NET Framework のバージョンを指定 (C#、Visual Basic、 F#)
 
@@ -46,7 +46,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
 3. **レジストリ エディター**で、[HKEY_LOCAL_MACHINE] フォルダーを開きます。  
   
-4.  に移動しますHKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449ec4cc-30d2-4032-9256-ee18eb41b62b}  
+4. HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B} に移動します。  
   
     このキーが存在しない場合、HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine を右クリックし、**[新しいキー]** をクリックします。 新しいキーの名前`{449EC4CC-30D2-4032-9256-EE18EB41B62B}`します。  
   
@@ -56,7 +56,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
 6. **[CLRVersionForDebugging]** をダブルクリックします。  
   
-7. **[文字列の編集]** ボックスの **[値]** ボックスに、.NET Framework のバージョン番号を入力します。 次に例を示します。V1.1.4322  
+7. **[文字列の編集]** ボックスの **[値]** ボックスに、.NET Framework のバージョン番号を入力します。 たとえば、「V1.1.4322」などです。  
   
 8. **[OK]** をクリックします。  
   
@@ -64,5 +64,5 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
      それでもデバッグの開始時にエラー メッセージが表示される場合は、レジストリに正しいバージョン番号が入力されていることを確認します。 また、Visual Studio でサポートされている [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] のバージョンを使用していることを確認します。 デバッガーは、現在のバージョンおよび以前のバージョンの .NET Framework と互換性がありますが、将来のバージョンとの上位互換性はない可能性があります。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)

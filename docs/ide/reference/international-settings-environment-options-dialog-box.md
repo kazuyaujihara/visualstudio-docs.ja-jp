@@ -1,7 +1,6 @@
 ---
 title: '[国際対応の設定] ([オプション] ダイアログ ボックス - [環境])'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.InternationalSettings
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae6eb64abe6533b6110742815bc92b96abfa9cb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9cf9fc547451cd77c6f1fff568202f930540f9f1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923245"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951710"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>[国際対応の設定] ([オプション] ダイアログ ボックス - [環境])
 
@@ -36,7 +35,7 @@ ms.locfileid: "54923245"
 > [!CAUTION]
 > 複数の言語がインストールされているシステムでは、Visual C++ ビルド ツール (cl.exe、link.exe、nmake.exe、bscmake.exe、および関連ファイル) はこの設定による影響を受けません。 これらのツールでは、最後にインストールされた言語のバージョンを使用します。 Visual C++ ビルド ツールはサテライト DLL モデルを使用しないため、以前にインストールされた言語のビルド ツールは上書きされます。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [言語パックのインストール](../../install/install-visual-studio.md#step-6---install-language-packs-optional)
 - [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)

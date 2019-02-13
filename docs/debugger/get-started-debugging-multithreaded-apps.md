@@ -12,29 +12,25 @@ dev_langs:
 helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
-ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: 8e30eafdc9a01b126f2a08bb8e4395298f446069
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227981"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155787"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>マルチ スレッド アプリケーションのデバッグの開始 (C#、Visual Basic、C++)
-Visual Studio には、いくつかのツールとマルチ スレッド アプリケーションをデバッグする方法をユーザー インターフェイス要素が用意されています。 このチュートリアルでは、スレッド マーカーを使用する方法、**並列スタック**ウィンドウで、**並列ウォッチ**ウィンドウ、条件付きブレークポイントは、および [フィルター] ブレークポイント。 このチュートリアルを完了に慣れることがするマルチ スレッド アプリケーションをデバッグするための Visual Studio の機能を使用します。
 
-| | |
-|---------|---------|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | [ビデオを見る](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171)同様の手順を示しています。 マルチ スレッド デバッグします。 |
+Visual Studio には、いくつかのツールとマルチ スレッド アプリケーションをデバッグする方法をユーザー インターフェイス要素が用意されています。 このチュートリアルでは、スレッド マーカーを使用する方法、**並列スタック**ウィンドウで、**並列ウォッチ**ウィンドウ、条件付きブレークポイントは、および [フィルター] ブレークポイント。 このチュートリアルを完了に慣れることがするマルチ スレッド アプリケーションをデバッグするための Visual Studio の機能を使用します。
 
 これら 2 つのトピックでは、その他のマルチ スレッド デバッグ ツールを使用して追加についてを説明します。
 
-- 使用する、**デバッグの場所**ツールバーと**スレッド**ウィンドウを参照してください[チュートリアル。マルチ スレッド アプリケーションをデバッグ](../debugger/how-to-use-the-threads-window.md)します。
+- 使用する、**デバッグの場所**ツールバーと**スレッド**ウィンドウを参照してください[チュートリアル: マルチ スレッド アプリケーションをデバッグ](../debugger/how-to-use-the-threads-window.md)します。
 
 - 使用するサンプルの<xref:System.Threading.Tasks.Task>(マネージ コード) を参照してください (C++)、同時実行ランタイムと[チュートリアル: 並行アプリケーションをデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)します。 最もマルチ スレッド アプリケーションの種類に適用される一般的なデバッグ ヒント、そのトピックと、この 1 つの両方を参照します。
   
@@ -46,7 +42,7 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
   
      **[新しいプロジェクト]** ダイアログ ボックスが表示されます。  
   
-2.  言語の選択**Visual c#**、 **Visual C**、または**Visual Basic**します。  
+2.  言語の選択: **Visual C#** 、 **Visual C**、または**Visual Basic**します。  
   
 3.  **Windows デスクトップ**、選択**コンソール アプリ**します。  
   
@@ -106,39 +102,37 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     ```
 
     ```C++
-    #include "stdafx.h"
+    #include "pch.h"
     #include <thread>
     #include <iostream>
     #include <vector>
-
-    using namespace;
 
     int count = 0;
 
     void doSomeWork() {
 
-        cout << "The doSomeWork function is running on another thread." << endl;
+        std::cout << "The doSomeWork function is running on another thread." << std::endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        this_thread::sleep_for(chrono::seconds(3));
-        cout << "The function called by the worker thread has ended." << endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "The function called by the worker thread has ended." << std::endl;
     }
 
     int main() {
-        vector<thread> threads;
+        std::vector<std::thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(thread(doSomeWork));
-            cout << "The Main() thread calls this after starting the new thread" << endl;
-        }
+            threads.push_back(std::thread(doSomeWork));
+            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+    }
 
-        for (auto& thread : threads) {
-            thread.join();
-        }
+    for (auto& thread : threads) {
+        thread.join();
+    }
 
-        return 0;
+    return 0;
     }
     ```
 
@@ -194,6 +188,8 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     ```
   
 7.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
+
+8. (Visual Basic のみ)ソリューション エクスプ ローラー (右側のウィンドウ) でプロジェクト ノードを右クリックし、選択**プロパティ**します。 下、**アプリケーション** タブで、変更、**スタートアップ オブジェクト**に**単純**します。
   
 ## <a name="debug-the-multithreaded-app"></a>マルチ スレッド アプリをデバッグします。  
   
@@ -205,8 +201,8 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     ```  
   
     ```C++  
-    this_thread::sleep_for(chrono::seconds(3));
-    cout << "The function called by the worker thread has ended." << endl; 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "The function called by the worker thread has ended." << std::endl; 
     ```  
 
     ```VB
@@ -214,7 +210,7 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     Console.WriteLine()
     ```
 
-1. 左側の余白で左クリックして、`Thread.Sleep`または`this_thread::sleep_for`新しいブレークポイントを挿入するステートメント。  
+1. 左側の余白で左クリックして、`Thread.Sleep`または`std::this_thread::sleep_for`新しいブレークポイントを挿入するステートメント。  
   
     余白は、赤い円は、この場所にブレークポイントを設定することを示します。 
   
@@ -257,7 +253,7 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     これらの右クリック メニューからさまざまなアクションを実行することができますが、このチュートリアルでこれらの詳細の示しますが、**並列ウォッチ**ウィンドウ (次のセクション)。
 
     > [!NOTE]
-    > リスト ビューを各スレッドの情報を表示する、**スレッド**ウィンドウ代わりにします。 「[チュートリアル:マルチ スレッド アプリケーションをデバッグ](../debugger/how-to-use-the-threads-window.md)します。
+    > リスト ビューを各スレッドの情報を表示する、**スレッド**ウィンドウ代わりにします。 参照してください[チュートリアル: マルチ スレッド アプリケーションをデバッグ](../debugger/how-to-use-the-threads-window.md)します。
 
 ### <a name="set-a-watch-on-a-variable"></a>変数のウォッチを設定します。
 
@@ -342,8 +338,9 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     > [!NOTE]
     > デバッガーが進むと、すべてのスレッドが実行されます。 ただし、他のスレッドのいずれかのブレークポイントをヒットしない限り、デバッガーが他のスレッドでコードを中断しません。 
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
+
 [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[方法: デバッグ中に別のスレッドに切り替える](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[方法: 並列スタック ウィンドウを使用します。](../debugger/using-the-parallel-stacks-window.md)  
+[方法 : デバッグ中に別のスレッドに切り替える](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+[方法: 並列スタック ウィンドウを使用](../debugger/using-the-parallel-stacks-window.md)  
 [方法: [並列ウォッチ] ウィンドウを使用する](../debugger/how-to-use-the-parallel-watch-window.md)  

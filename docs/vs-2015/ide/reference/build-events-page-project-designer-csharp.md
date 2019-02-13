@@ -1,14 +1,9 @@
 ---
 title: '[ビルド イベント] ページ (プロジェクト デザイナー) (C#) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEvents
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5a73978bf78c26914e7ee6b21c27f1eb2e7682ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e55d9d34a4837e2c01d78cc1f52ae2a25f28da8d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223095"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785785"
 ---
 # <a name="build-events-page-project-designer-c"></a>[ビルド イベント] ページ (プロジェクト デザイナー) (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,11 +57,8 @@ ms.locfileid: "49223095"
 |**ビルドが成功したとき**|ビルド後イベントは、ビルドが成功した場合に実行されます。 したがって、ビルドが成功した場合は、最新のプロジェクトについてもイベントが実行されます。|  
 |**ビルドがプロジェクト出力を更新したとき**|ビルド後イベントは、コンパイラの出力ファイル (.exe または .dll) が以前のコンパイラの出力ファイルと異なる場合にのみ実行されます。 したがって、ビルド後イベントは、プロジェクトが最新の場合は実行されません。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法 : ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [方法 : ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)   
  [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)   
  [コードのコンパイルとビルド](../../ide/compiling-and-building-in-visual-studio.md)
-
-
-

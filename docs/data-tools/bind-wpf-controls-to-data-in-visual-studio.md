@@ -14,15 +14,14 @@ ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b1359371cc7a10ceb3056660a7b445f47e950247
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00cc931a75dee9d3762e94ca522e4d060584840b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918271"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939100"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio でデータに WPF コントロールをバインドする
 
@@ -55,8 +54,8 @@ Visual Studio でのデータ バインド コントロールを作成する方�
 | - | - | - |
 | データセット | はい | はい |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | はい | はい |
-| サービス | はい | × |
-| Object | はい | × |
+| サービス | はい | いいえ |
+| オブジェクト | はい | いいえ |
 
 ### <a name="datasets"></a>データセット
 
@@ -84,7 +83,7 @@ Visual Studio は、分離コード ファイルに次の変更も加えます�
 
 - コントロールを格納する <xref:System.Windows.FrameworkElement.Loaded> 要素の [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] イベント ハンドラーを作成する。 イベント ハンドラーの呼び出し、`Get<EntityName>Query`エンティティをデータを格納するメソッドを取得、<xref:System.Windows.Data.CollectionViewSource>からコンテナーのリソース、し、最初のデータ項目の現在の項目。 場合、<xref:System.Windows.FrameworkElement.Loaded>イベント ハンドラーが既に存在する、Visual Studio は、既存のイベント ハンドラーに次のコードを追加します。
 
-### <a name="services"></a>Services
+### <a name="services"></a>サービス
 
 サービス オブジェクトまたはプロパティからドラッグすると、**データソース**デザイナー、Visual Studio ウィンドウの生成[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]をデータ バインド コントロールを作成します (または、オブジェクトまたはプロパティに既存のコントロールをバインドします)。 ただし、Visual Studio では、データをプロキシ サービス オブジェクトに設定するコードは生成しません。 このコードは、ユーザーが手動で記述する必要があります。 これを行う方法については、例では、次を参照してください。 [WCF data service にコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)します。
 

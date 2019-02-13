@@ -6,15 +6,14 @@ ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb37e041872b8f5c37f256f762986ed22276e4c1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 83ca0059e576683571435764914bf0087eded2fa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069396"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951164"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext メソッド (O/R デザイナー)
 
@@ -24,7 +23,7 @@ ms.locfileid: "55069396"
 
 ## <a name="methods-pane"></a>メソッド ペイン
 
-<xref:System.Data.Linq.DataContext> ストアド プロシージャおよび関数にマップされるメソッドに表示される、**メソッド**のウィンドウ、 **O/R デザイナー**します。 **[メソッド]** ペインは、**[エンティティ]** ペイン (メインのデザイン サーフェイス) の横に表示されているペインです。 **メソッド**ウィンドウすべて一覧表示<xref:System.Data.Linq.DataContext>メソッドを使用して作成した、 **O/R デザイナー**します。 既定で、**メソッド**ペインは空ドラッグ ストアド プロシージャまたは関数から**サーバー エクスプ ローラー**または**データベース エクスプ ローラー**上に、 **O/r デザイナー。** を作成する<xref:System.Data.Linq.DataContext>メソッドを設定し、**メソッド**ウィンドウ。 詳細については、「[方法 :ストアド プロシージャや関数にマップされる DataContext メソッドを作成する (O/R デザイナー)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
+<xref:System.Data.Linq.DataContext> ストアド プロシージャおよび関数にマップされるメソッドに表示される、**メソッド**のウィンドウ、 **O/R デザイナー**します。 **[メソッド]** ペインは、**[エンティティ]** ペイン (メインのデザイン サーフェイス) の横に表示されているペインです。 **メソッド**ウィンドウすべて一覧表示<xref:System.Data.Linq.DataContext>メソッドを使用して作成した、 **O/R デザイナー**します。 既定で、**メソッド**ペインは空ドラッグ ストアド プロシージャまたは関数から**サーバー エクスプ ローラー**または**データベース エクスプ ローラー**上に、 **O/r デザイナー。** を作成する<xref:System.Data.Linq.DataContext>メソッドを設定し、**メソッド**ウィンドウ。 詳細については、次を参照してください。[方法: ストアド プロシージャおよび関数 (O/r デザイナー) にマップされる DataContext の作成メソッド](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)します。
 
 > [!NOTE]
 > 右クリックし、メソッド ペインを開いたり閉じたり、 **O/R デザイナー**  をクリックし、**メソッド ペインの非表示に**または**メソッド ペインの表示**、キーボードショートカットを使用して、または**Ctrl キーを押し**+**1**します。
@@ -35,18 +34,18 @@ DataContext メソッドは、データベース内のストアド プロシー�
 
 - 1 つ以上の結果セットを返す <xref:System.Data.Linq.DataContext> メソッド
 
-   この種類の <xref:System.Data.Linq.DataContext> メソッドは、アプリケーションでデータベース内のストアド プロシージャおよび関数を実行し、結果を返すことだけが必要な場合に作成します。 詳細については、「[方法 :ストアド プロシージャおよび関数 (O/R デザイナー) にマップされる DataContext メソッドの作成](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)、System.Data.Linq.ISingleResult\<T >、および<xref:System.Data.Linq.IMultipleResults>します。
+   この種類の <xref:System.Data.Linq.DataContext> メソッドは、アプリケーションでデータベース内のストアド プロシージャおよび関数を実行し、結果を返すことだけが必要な場合に作成します。 詳細については、次を参照してください。[方法: ストアド プロシージャおよび関数 (O/r デザイナー) にマップされる DataContext の作成メソッド](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)、System.Data.Linq.ISingleResult\<T >、および<xref:System.Data.Linq.IMultipleResults>します。
 
 - 結果セットを返さない <xref:System.Data.Linq.DataContext> メソッド (特定のエンティティ クラスの挿入、更新、削除など)
 
-   この種類の <xref:System.Data.Linq.DataContext> メソッドは、エンティティ クラスとデータベース間で変更されたデータを保存するために、既定の [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] の動作を使用するのではなく、アプリケーションでストアド プロシージャを実行する必要がある場合に作成します。 詳細については、「[方法 :更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)」を参照してください。
+   この種類の <xref:System.Data.Linq.DataContext> メソッドは、エンティティ クラスとデータベース間で変更されたデータを保存するために、既定の [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] の動作を使用するのではなく、アプリケーションでストアド プロシージャを実行する必要がある場合に作成します。 詳細については、次を参照してください。[方法: 更新、挿入、および削除 (O/r デザイナー) を実行するストアド プロシージャを割り当てる](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)します。
 
 ## <a name="return-types-of-datacontext-methods"></a>DataContext メソッドの戻り値の型
 
 ストアド プロシージャおよび関数からのドラッグと**サーバー エクスプ ローラー**または**データベース エクスプ ローラー**上に、 **O/R デザイナー**、戻り値の型を生成された<xref:System.Data.Linq.DataContext>メソッドは、項目をドロップする場所によって異なります。 作成、既存のエンティティ クラスに直接の項目をドロップする、<xref:System.Data.Linq.DataContext>エンティティ クラスの戻り値の型を持つメソッドは項目をドロップの空の領域、 **O/R デザイナー** (いずれかのウィンドウ) では、作成、<xref:System.Data.Linq.DataContext>メソッド返す、自動的に生成された型です。 自動生成された型は、ストアド プロシージャまたは関数名とプロパティは、ストアド プロシージャまたは関数によって返されるフィールドのマッピングと一致する名前を持ちます。
 
 > [!NOTE]
-> <xref:System.Data.Linq.DataContext> メソッドをメソッド ペインに追加した後に、その戻り値の型を変更できます。 <xref:System.Data.Linq.DataContext> メソッドの戻り値の型を確認または変更するには、**[プロパティ]** ウィンドウでメソッドを選択し、**[戻り値の型]** プロパティを調べます。 詳細については、「[方法 :DataContext メソッドの戻り値の型を変更する (O/R デザイナー)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)」を参照してください。
+> <xref:System.Data.Linq.DataContext> メソッドをメソッド ペインに追加した後に、その戻り値の型を変更できます。 <xref:System.Data.Linq.DataContext> メソッドの戻り値の型を確認または変更するには、**[プロパティ]** ウィンドウでメソッドを選択し、**[戻り値の型]** プロパティを調べます。 詳細については、次を参照してください。[方法: DataContext メソッド (O/r デザイナー) の戻り値の型を変更する](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)します。
 
 O/R デザイナー画面上にデータベースからドラッグしたオブジェクトは、データベース内のオブジェクトの名前に基づいて、自動的に命名されます。 同じオブジェクトを複数回ドラッグすると、数値は、名前を識別する新しい名前の末尾に追加されます。 データベース オブジェクト名にスペースや Visual Basic または C# でサポートされない文字が含まれている場合、そのスペースまたは無効な文字はアンダースコアに置き換えられます。
 
@@ -57,5 +56,5 @@ O/R デザイナー画面上にデータベースからドラッグしたオブ�
 - [ストアド プロシージャ](/dotnet/framework/data/adonet/sql/linq/stored-procedures)
 - [方法: ストアド プロシージャや関数にマップされる DataContext メソッドを作成する (O/R デザイナー)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [方法: 更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
-- [チュートリアル: エンティティ クラスの挿入、更新、および削除の動作のカスタマイズ](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
-- [チュートリアル: LINQ to SQL クラス (O/R デザイナー) を作成](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [チュートリアル : エンティティ クラスの挿入、更新、および削除の動作のカスタマイズ](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
+- [チュートリアル: LINQ to SQL クラスの作成 (O-R デザイナー)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

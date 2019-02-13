@@ -1,14 +1,9 @@
 ---
-title: '方法: 型の間の継承を表示する (クラス デザイナー) | Microsoft Docs'
-ms.custom: ''
+title: '方法: 型 (クラス デザイナー) の間の継承を表示 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.AssociationTypeNotFoundError
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 59d07bd9b4f069773593359e396b63df6407b1ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 95fc42cd3d13a0613e865b8a0294c74ca016155c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823074"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782237"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>方法: 型の間の継承を表示する (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +47,6 @@ ms.locfileid: "49823074"
   
    また、派生型を表示する型を右クリックして、**[派生クラスの表示]** または **[派生インターフェイスの表示]** を選択することもできます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法: 型の間の関連付けを作成する (クラス デザイナー)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

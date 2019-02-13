@@ -1,14 +1,9 @@
 ---
 title: '[デバッグ] ページ (プロジェクト デザイナー) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f16abf5fbf21678187a22efc9a368df7785057ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 22a1accc7421e169ee345fda0446a8474d2eda00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271363"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776145"
 ---
 # <a name="debug-page-project-designer"></a>[デバッグ] ページ (プロジェクト デザイナー)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,10 +36,10 @@ ms.locfileid: "49271363"
  次のオプションを使用すると、表示または変更する構成およびプラットフォームを選択できます。  
   
  **構成**  
- 表示または変更する構成設定を指定します。 設定は、**[デバッグ]** (既定)、**[リリース]**、または **[すべての構成]** のいずれかになります。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
+ 表示または変更する構成設定を指定します。 設定は、**[デバッグ]** (既定)、**[リリース]**、または **[すべての構成]** のいずれかになります。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
   
  **プラットフォーム**  
- 表示または変更するプラットフォーム設定を指定します。 **[Any CPU]** (既定)、**[x64]**、および **[x86]** から選択できます。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
+ 表示または変更するプラットフォーム設定を指定します。 **[Any CPU]** (既定)、**[x64]**、および **[x86]** から選択できます。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
   
 ## <a name="start-action"></a>開始動作  
  **[開始動作]** は、アプリケーションをデバッグするときに開始するアイテムを示します。プロジェクト、カスタム プログラム、URL のいずれかを指定できます。また、省略することもできます。 既定では、このオプションは **[プロジェクトの開始]** に設定されます。 **[デバッグ]** ページの **[開始動作]** 設定で、`StartAction` プロパティの値が決まります。  
@@ -80,13 +75,10 @@ ms.locfileid: "49271363"
   
  セキュリティ ゾーンでデバッグするには、このオプションと、[[セキュリティの詳細設定] ダイアログ ボックス](../../ide/reference/advanced-security-settings-dialog-box.md)の **[選択されたアクセス許可セットでこのアプリケーションをデバッグする]** を有効にする必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio でのデバッグ](../../debugger/debugging-in-visual-studio.md)   
  [C# デバッグ構成のプロジェクト設定](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic デバッグ構成のプロジェクト設定](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [デバッグ プロパティの管理](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [デバッグ プロパティの管理](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
  [方法 : アクセス許可が制限された ClickOnce アプリケーションをデバッグする](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [方法 : 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)
-
-
-

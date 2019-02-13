@@ -13,15 +13,14 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f349887512cdfb9a98d64b0880eda45ecd5c186
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 611accb591b63f31ffe6a14535d470f2807f0e99
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970228"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951736"
 ---
 # <a name="create-relationships-between-datasets"></a>データセット間にリレーションシップを作成する
 関連データを含むデータセット テーブルを使用して<xref:System.Data.DataRelation>を 1 つ別の関連レコードを返すと、テーブル間の親/子リレーションシップを表すオブジェクト。 使用してデータセットの関連テーブルの追加、**データ ソース構成ウィザード**、または**データセット デザイナー**を作成し、構成、<xref:System.Data.DataRelation>オブジェクト。
@@ -56,10 +55,10 @@ Foreign key 制約の一部として、次の 3 つの時点で適用される�
 
 行うことができる規則が指定されて、<xref:System.Data.Rule>列挙およびは次の表に記載します。
 
-|外部キー制約の規則|アクション|
+|外部キー制約の規則|操作|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|親レコードに加えられた変更 (更新または削除) は、子テーブル内の関連レコードでも作成します。|
-|<xref:System.Data.Rule.SetNull>|子レコードは削除されませんが、子レコードの外部キーに設定されて<xref:System.DBNull>します。 この設定では、子レコードを「孤立」のまま残してかまいません: 親レコードとの関係あるありませんは、します。 **注:** このルールを使用すると、子テーブル内の無効なデータがあります。|
+|<xref:System.Data.Rule.SetNull>|子レコードは削除されませんが、子レコードの外部キーに設定されて<xref:System.DBNull>します。 この設定では、子レコードを「孤立」のまま残してかまいません: 親レコードとの関係あるありませんは、します。 **注:** 子テーブルに無効なデータによりこの規則を使用します。|
 |<xref:System.Data.Rule.SetDefault>|関連する子レコードの外部キーが既定値に設定 (列のによって確立されると、<xref:System.Data.DataColumn.DefaultValue%2A>プロパティ)。|
 |<xref:System.Data.Rule.None>|関連する子レコードは変更されません。 この設定では、子レコードが無効な親レコードへの参照を含めることができます。|
 
@@ -77,7 +76,7 @@ Visual Studio で、データ デザイン ツールを使用して、データ 
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>2 つのデータ テーブル間のリレーションシップを作成するには
 
-1.  **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[チュートリアル:データセット デザイナーでデータセットを作成する](walkthrough-creating-a-dataset-with-the-dataset-designer.md)します。
+1.  **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、次を参照してください。[チュートリアル: データセット デザイナーでデータセットを作成する](walkthrough-creating-a-dataset-with-the-dataset-designer.md)します。
 
 2.  ドラッグ、**関係**オブジェクトから、**データセット**ツールボックス リレーションシップの子のデータ テーブル。
 
@@ -101,7 +100,7 @@ Visual Studio で、データ デザイン ツールを使用して、データ 
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>データセット デザイナーでリレーションシップ名を表示するには
 
-1.  **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[チュートリアル:データセット デザイナーでデータセットを作成する](walkthrough-creating-a-dataset-with-the-dataset-designer.md)します。
+1.  **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、次を参照してください。[チュートリアル: データセット デザイナーでデータセットを作成する](walkthrough-creating-a-dataset-with-the-dataset-designer.md)します。
 
 2.  **データ**メニューの 、**リレーションシップ ラベルを表示する**リレーションシップ名を表示するコマンド。 リレーションシップ名を非表示にするには、そのコマンドをオフにします。
 

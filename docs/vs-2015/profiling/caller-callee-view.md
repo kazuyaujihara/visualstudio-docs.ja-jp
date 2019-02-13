@@ -1,14 +1,9 @@
 ---
 title: 呼び出し元/呼び出し先ビュー | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.callercallee
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7631085e0560c74ea162f8aeae9147bbcf9412e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 58aca542571066ecfa9328c9600972665e757150
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784430"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788945"
 ---
 # <a name="callercallee-view"></a>[呼び出し元/呼び出し先] ビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,12 +40,9 @@ ms.locfileid: "51784430"
   
  データを並べ替えるには、列名をクリックします。 呼び出し元/呼び出し先ビューには、列を追加できます。 詳細については、「[方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [呼び出し元/呼び出し先ビュー - サンプリング データ](../profiling/caller-callee-view-sampling-data.md)   
  [呼び出し元/呼び出し先ビュー - インストルメンテーション データ](../profiling/caller-callee-view-instrumentation-data.md)   
  [呼び出し元/呼び出し先ビュー - .NET メモリ インストルメンテーション データ](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [呼び出し元/呼び出し先ビュー - .NET メモリ サンプリング データ](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [呼び出し元/呼び出し先ビュー - 競合データ](../profiling/caller-callee-view-contention-data.md)
-
-
-

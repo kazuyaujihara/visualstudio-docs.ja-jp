@@ -12,15 +12,14 @@ ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 08cf47310c9743d1071dd46a30e5c04372ca5cb6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5adc9574fa36fd77c1d30d6045795953c37349bc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996728"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928674"
 ---
 # <a name="edit-data-in-datasets"></a>データセットのデータの編集
 任意のデータベースのテーブルにデータを編集するのと同様に、データ テーブル内のデータを編集します。 プロセスには、挿入、更新、およびテーブル内のレコードの削除を含めることができます。 データ バインド フォームでは、どのフィールドがユーザーが編集可能なを指定できます。 その場合は、データ バインド インフラストラクチャは、すべての変更の追跡、変更を後で元のデータベースに送信できるようにを処理します。 データにプログラムで編集を行ってそれらの変更をデータベースに送信する場合は、オブジェクトや変更の追跡を行うメソッドを使用する必要があります。

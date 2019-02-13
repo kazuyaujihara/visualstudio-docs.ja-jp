@@ -1,14 +1,9 @@
 ---
 title: '[セキュリティ] ページ (プロジェクト デザイナー) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
 - vb.XBAPProjectPropertiesSecurity
@@ -23,13 +18,13 @@ ms.assetid: 641d9cd3-fa07-498a-8568-3c169bb4d3d5
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 967ce9221313c88b10a792f15ffaec80da99de03
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 79900957453464ea5f5dcf338f447dbe01399d11
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267814"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760097"
 ---
 # <a name="security-page-project-designer"></a>[セキュリティ] ページ (プロジェクト デザイナー)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +71,7 @@ ms.locfileid: "49267814"
  **詳細設定**  
  [[セキュリティの詳細設定]](../../ide/reference/advanced-security-settings-dialog-box.md) ダイアログ ボックスが開きます。このダイアログ ボックスでは、制限されたアクセス許可でのアプリケーションのデバッグ用の設定を構成できます。 これらの設定はデバッグ中にチェックされます。アクセス許可例外は、ゾーンで定義されているよりも多くのアクセス許可をアプリケーションが必要としている可能性があることを示します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:System.Security.Permissions.WebBrowserPermission>   
  <xref:System.Security.Permissions.MediaPermission>   
  [ClickOnce アプリケーションのコード アクセス セキュリティ](../../deployment/code-access-security-for-clickonce-applications.md)   
@@ -87,6 +82,3 @@ ms.locfileid: "49267814"
  [ClickOnce のセキュリティと配置](../../deployment/clickonce-security-and-deployment.md)   
  [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)   
  [[セキュリティの詳細設定] ダイアログ ボックス](../../ide/reference/advanced-security-settings-dialog-box.md)
-
-
-

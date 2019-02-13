@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: データセット デザイナーでデータセットを作成します。'
+title: 'チュートリアル : データセット デザイナーでのデータセットの作成'
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,21 +11,20 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ce6d5a6a485a2d72c3a531219455efd425cd991f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d706ab0cf179a4a4efefa8f60143ea8ce9800ef9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003306"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927673"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>チュートリアル: データセット デザイナーでデータセットを作成します。
 
 使用してデータセットを作成するこのチュートリアルでは、**データセット デザイナー**します。 記事では、新しいプロジェクトを作成し、新しい追加のプロセス**データセット**項目にします。 ウィザードを使用せず、データベース内のテーブルに基づいて、テーブルを作成する方法について説明します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 

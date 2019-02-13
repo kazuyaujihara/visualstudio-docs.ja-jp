@@ -1,30 +1,25 @@
 ---
-title: 'チュートリアル: 初めての WPF デスクトップ アプリケーション 2 | Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: 最初 WPF デスクトップ アプリケーション 2 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3607bac8d8cd9808a54e4c8956b3c4d41df8aecb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899280"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795946"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>チュートリアル: 初めての WPF デスクトップ アプリケーション
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-name =「概要」></a>このチュートリアルは、Windows Presentation Foundation (WPF) 開発の概要を提供します。 ここでは、ほとんどの WPF デスクトップ アプリケーションに共通する要素 (XAML マークアップ、分離コード、アプリケーション定義、コントロール、レイアウト、データ バインディング、スタイル) を含む基本的なアプリケーションを作成します。  
+name =「概要」></a>このチュートリアルは、Windows Presentation Foundation (WPF) 開発の概要を提供します。 ほとんどの WPF デスクトップ アプリケーションに共通する要素を含む基本的なアプリケーションを作成します。XAML マークアップ、分離コード、アプリケーション定義、コントロール、レイアウト、データ バインディング、およびスタイル。  
   
 ##  <a name="Create_The_Application_Code_Files"></a> アプリケーション プロジェクトの作成  
  このセクションでは、プロジェクトとメイン ウィンドウまたはフォームを含むアプリケーション インフラストラクチャを作成します。  
@@ -37,7 +32,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 3.  テンプレートの一覧で、 **[WPF アプリケーション]** テンプレートを選択します。  
   
-4.  **[名前]** ボックスに「 `ExpenseIt`」と入力して、 **[OK]** を選択します。  
+4.   **[名前]** ボックスに「 `ExpenseIt`」と入力して、 **[OK]** を選択します。  
   
      プロジェクトが作成され、プロジェクト ファイルが **ソリューション エクスプローラー**に追加され、 **MainWindow.xaml** という名前の既定のアプリケーション ウィンドウのデザイナーが表示されます。  
   
@@ -58,7 +53,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      **NavigationWindow** に、 **グリッド**などの他の UI 要素を含めることはできません。  
   
-4.  **[プロパティ]** ウィンドウで **[共通]** カテゴリ ノードを展開し、 **[タイトル]** プロパティを選択しから、「 `ExpenseIt` 」と入力して **Enter** キーを押します。  
+4.   **[プロパティ]** ウィンドウで **[共通]** カテゴリ ノードを展開し、 **[タイトル]** プロパティを選択しから、「 `ExpenseIt` 」と入力して **Enter** キーを押します。  
   
      [XAML] ウィンドウの **[Title]** 要素がこの新しい値と一致していることに注目してください。 XAML のプロパティは、[XAML] ウィンドウまたは **[プロパティ]** ウィンドウのいずれかで変更でき、それらの変更は同期されます。  
   
@@ -111,7 +106,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 1.  **ソリューション エクスプローラー**で **[ExpenseIt]** ノードのショートカット メニューを開き、 **[追加]**、 **[ページ]** を選択します。  
   
-2.  **[新しい項目の追加]** ダイアログで **[名前]** テキスト ボックスを選択して「 `ExpenseItHome`」と入力し、 **[追加]** ボタンを選択します。  
+2.   **[新しい項目の追加]** ダイアログで **[名前]** テキスト ボックスを選択して「 `ExpenseItHome`」と入力し、 **[追加]** ボタンを選択します。  
   
      このページが、アプリケーションの起動時に表示される最初のウィンドウになります。  
   
@@ -196,7 +191,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 1.  **ソリューション エクスプローラー**で **[ExpenseIt]** ノードのショートカット メニューを開き、 **[追加]**、 **[ページ]** を選択します。  
   
-2.  **[新しい項目の追加]** ダイアログで **[名前]** テキスト ボックスを選択して「 `ExpenseReportPage`」と入力し、 **[追加]** ボタンを選択します。  
+2.   **[新しい項目の追加]** ダイアログで **[名前]** テキスト ボックスを選択して「 `ExpenseReportPage`」と入力し、 **[追加]** ボタンを選択します。  
   
      このウィンドウには、個々の経費明細書が表示されます。  
   
@@ -256,7 +251,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 1.  **ExpenseItHome.xaml** を開き、 `<Grid>` 要素を選択します。  
   
-2.  **[プロパティ]** ウィンドウで **[高さ]** カテゴリ ノードを展開し、 **[余白]** の値を `10`、 `10`、 `0`、 and `10`、 which corresponds to left、 right、 top and bottom margins.  
+2.   **[プロパティ]** ウィンドウで **[高さ]** カテゴリ ノードを展開し、 **[余白]** の値を `10`、 `10`、 `0`、 and `10`、 which corresponds to left、 right、 top and bottom margins.  
   
      要素 `Margin="10,0,10,10"` は XAML 内の `<Grid>` 要素に追加されます。 繰り返しになりますが、 **[プロパティ]** ウィンドウの代わりに XAML コード内にこれらの値を直接入力しても同じ結果になります。  
   
@@ -880,7 +875,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 1.  **ExpenseReportPage.xaml**を開きます。  
   
-2.  **[名前]** と **Department**`<StackPanel` 要素の XAML コードを次に置き換えます。  
+2.   **[名前]** と **Department**`<StackPanel` 要素の XAML コードを次に置き換えます。  
   
     ```xaml  
     <!-- Name -->  
@@ -980,9 +975,6 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 - [WPF のドキュメント](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
-## <a name="see-also"></a>関連項目  
- [チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
+## <a name="see-also"></a>参照  
+ [チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成します。](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
  [Windows Presentation Foundation での最新のデスクトップ アプリケーションの作成](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

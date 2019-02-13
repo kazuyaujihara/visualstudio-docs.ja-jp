@@ -1,27 +1,22 @@
 ---
 title: 'チュートリアル: MSBuild の使用 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792221"
 ---
 # <a name="walkthrough-using-msbuild"></a>チュートリアル: MSBuild の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ MSBuild は Microsoft および Visual Studio のビルド プラットフォー
   
 - タスクとは、作業の最小単位であり、ビルドの "原子" のようなものです。 タスクは独立した実行可能コンポーネントで、入力と出力を持つ場合もあります。 現在このプロジェクト ファイルで参照または定義されているタスクはありません。 後ほど、このプロジェクト ファイルにタスクを追加します。 詳細については、「[MSBuild タスク](../msbuild/msbuild-tasks.md)」をご覧ください。  
   
-- ターゲットとは、一連のタスクに名前を付けたものです。 このプロジェクト ファイルには、末尾に BeforeBuild と AfterBuild という 2 つのターゲットがあります。これらは現在、HTML コメントに囲まれています。  
+- ターゲットとは、一連のタスクに名前を付けたものです。 HTML コメントで囲まれた現在のプロジェクト ファイルの最後に 2 つのターゲットがあります。BeforeBuild と afterbuild というします。  
   
   ```  
   <Target Name="BeforeBuild">  
@@ -181,7 +176,7 @@ MSBuild は Microsoft および Visual Studio のビルド プラットフォー
 </PropertyGroup>  
 ```  
   
- すべてのプロパティは、PropertyGroup 要素の子要素です。 子要素の名前がプロパティの名前になり、子要素のテキスト要素がプロパティの値になります。 例えば以下のようにします。  
+ すべてのプロパティは、PropertyGroup 要素の子要素です。 子要素の名前がプロパティの名前になり、子要素のテキスト要素がプロパティの値になります。 たとえば、オブジェクトに適用された  
   
 ```  
 <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
@@ -236,7 +231,7 @@ $(PropertyName)
 >  これらの行が表示されない場合は、コード エディターでプロジェクト ファイルが保存されていない可能性があります。 ファイルを保存して、やり直してください。  
   
 ### <a name="conditional-properties"></a>条件付きプロパティ  
- Configuration など、多くのプロパティは、Condition 属性を使用して条件付きで定義されます。 条件付きプロパティは、条件が "true" と評価された場合にのみ定義 (または再定義) されます。 未定義のプロパティには、既定値として空の文字列が割り当てられます。 例えば以下のようにします。  
+ Configuration など、多くのプロパティは、Condition 属性を使用して条件付きで定義されます。 条件付きプロパティは、条件が "true" と評価された場合にのみ定義 (または再定義) されます。 未定義のプロパティには、既定値として空の文字列が割り当てられます。 たとえば、オブジェクトに適用された  
   
 ```  
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -303,7 +298,7 @@ $(PropertyName)
 ## <a name="build-items"></a>ビルド項目  
  項目とは、ファイル名など、ビルド システムへの入力として使用される情報です。 たとえば、ソース ファイルを表す項目のコレクションを Compile という名前のタスクに渡して、アセンブリにコンパイルする場合などがあります。  
   
- すべての項目は、ItemGroup 要素の子要素です。 子要素の名前が項目の名前になり、子要素の Include 属性の値が項目の値になります。 同じ名前を持つ項目の値は、その名前の項目の種類に収集されます。  例えば以下のようにします。  
+ すべての項目は、ItemGroup 要素の子要素です。 子要素の名前が項目の名前になり、子要素の Include 属性の値が項目の値になります。 同じ名前を持つ項目の値は、その名前の項目の種類に収集されます。  たとえば、オブジェクトに適用された  
   
 ```  
 <ItemGroup>  
@@ -396,7 +391,7 @@ $(PropertyName)
     ```  
   
 ### <a name="include-exclude-and-wildcards"></a>Include、Exclude、およびワイルドカード  
- Include 属性でワイルドカード ("*"、"\*\*"、および "?") を使用して、項目を項目の種類に追加できます。 例えば以下のようにします。  
+ Include 属性でワイルドカード ("*"、"\*\*"、および "?") を使用して、項目を項目の種類に追加できます。 たとえば、オブジェクトに適用された  
   
 ```  
 <Photos Include="images\*.jpeg" />  
@@ -410,7 +405,7 @@ $(PropertyName)
   
  この例では、images フォルダーとそのすべてのサブフォルダーにある拡張子が ".jpeg" のすべてのファイルが項目の種類 Photos に追加されます。 例については、「[方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)」をご覧ください。  
   
- 項目を宣言すると、それらが項目の種類に追加されます。 例えば以下のようにします。  
+ 項目を宣言すると、それらが項目の種類に追加されます。 たとえば、オブジェクトに適用された  
   
 ```  
 <Photos Include="images\*.jpeg" />  
@@ -423,7 +418,7 @@ $(PropertyName)
 <Photos Include="images\*.jpeg;images\*.gif" />  
 ```  
   
- 項目の種類から項目を除外するには、Exclude 属性を使用します。 例えば以下のようにします。  
+ 項目の種類から項目を除外するには、Exclude 属性を使用します。 たとえば、オブジェクトに適用された  
   
 ```  
 <Compile Include="*.cs" Exclude="*Designer*">  
@@ -431,7 +426,7 @@ $(PropertyName)
   
  この例では、拡張子が ".cs" のすべてのファイルが項目の種類 Compile に追加されますが、名前に文字列 "Designer" が含まれているファイルは除外されます。 例については、「[方法: ビルドからファイルを除外する](../msbuild/how-to-exclude-files-from-the-build.md)」をご覧ください。  
   
- Exclude 属性は、同一の項目要素内にある Include 属性によって追加された項目のみに作用します。 例えば以下のようにします。  
+ Exclude 属性は、同一の項目要素内にある Include 属性によって追加された項目のみに作用します。 たとえば、オブジェクトに適用された  
   
 ```  
 <Compile Include="*.cs" />  
@@ -584,8 +579,6 @@ $(PropertyName)
 ## <a name="whats-next"></a>次の内容  
  簡単なプロジェクト ファイルを 1 ステップずつ作成する方法については、「[チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)」をご覧ください。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 [MSBuild の概要](msbuild.md)  
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)
-
-

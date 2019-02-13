@@ -15,21 +15,20 @@ ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b06e433c5c412ba97d0cd04c670a39cc4bb7ec8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc2626ba0efab60921ed721b9f06fec28c66f58b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946076"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932275"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>チュートリアル: トランザクションにデータを保存する
 
 このチュートリアルを使用して、トランザクションでデータを保存する方法について説明、<xref:System.Transactions>名前空間。 このチュートリアルでは、Windows フォーム アプリケーションを作成します。 Northwind サンプル データベース内のデータセットを 2 つのテーブルを作成するのにデータ ソース構成ウィザードを使用します。 Windows フォームにデータ バインド コントロールと BindingNavigator の保存 ボタンを TransactionScope 内部でデータベースを更新するためにコードを変更するを追加します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 
@@ -123,7 +122,8 @@ ms.locfileid: "54946076"
 
 1.  選択、**保存**のボタンでは、 **CustomersBindingNavigator** (フロッピー ディスクのアイコンのボタン)。
 
-2.  `CustomersBindingNavigatorSaveItem_Click` メソッドを次のコードで置き換えます。
+2.  
+  `CustomersBindingNavigatorSaveItem_Click` メソッドを次のコードで置き換えます。
 
      [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]

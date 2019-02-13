@@ -12,15 +12,14 @@ ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1f17a69706b224598bff095374f197ee1492af55
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3c73ab24cd2b50efd26f9a5b3ac1105325345033
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001278"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945069"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>データを検索する Windows フォームを作成する
 
@@ -46,7 +45,7 @@ ms.locfileid: "55001278"
 
 -   フォームにパラメーターを入力し、パラメーター化クエリを実行します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 

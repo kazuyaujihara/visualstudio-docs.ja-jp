@@ -1,7 +1,6 @@
 ---
 title: 開発者用テスト ツール
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3dccb61be21e571deb2bb8475b784e3a981449
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b133a9ce3aa5773349260249ee80edc02d6b318b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956013"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954957"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>開発者用テスト ツール、シナリオ、および機能
 
@@ -61,7 +60,7 @@ IntelliTest でカバレッジを改善し、回帰を回避します。 Intelli
 * [Visual Studio での単体テスト、コード カバレッジおよびコード クローン分析 (ラボ)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [コード カバレッジ分析のカスタマイズ](customizing-code-coverage-analysis.md)
 
-## <a name="test-explorer"></a>Test Explorer
+## <a name="test-explorer"></a>テスト エクスプローラー
 
 **テスト エクスプローラー**は、開発者が単体テストを作成、管理、実行する場合に役立ちます。
 

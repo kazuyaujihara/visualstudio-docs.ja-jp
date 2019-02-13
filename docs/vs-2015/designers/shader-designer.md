@@ -1,14 +1,9 @@
 ---
 title: シェーダー デザイナー | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
@@ -16,13 +11,13 @@ ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942011"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805462"
 ---
 # <a name="shader-designer"></a>シェーダー デザイナー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +80,7 @@ ms.locfileid: "49942011"
 |**ティーポットでプレビュー**|有効な場合、ティーポットのモデルを使用してシェーダーをプレビューします。 一度に 1 つのプレビュー図形だけ有効にすることができます。|  
 |**平面でプレビュー**|有効な場合、平面のモデルを使用してシェーダーをプレビューします。 一度に 1 つのプレビュー図形だけ有効にすることができます。|  
 |**ツールボックス**|**ツールボックス**の表示または非表示を切り替えます。|  
-|**Properties**|**[プロパティ]** ウィンドウの表示または非表示を切り替えます。|  
+|**プロパティ**|**[プロパティ]** ウィンドウの表示または非表示を切り替えます。|  
 |**詳細設定**|高度なコマンドとオプションがあります。<br /><br /> **エクスポート**: 複数の形式でシェーダーをエクスポートできます。<br /><br /> **名前を付けてエクスポート**: HLSL ソース コードか、またはコンパイル済みシェーダー バイトコードとしてシェーダーをエクスポートします。 シェーダーをエクスポートする方法の詳細については、「[方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)」を参照してください。<br /><br /> **グラフィックス エンジン**: デザイン サーフェイスの表示に使用されるレンダラーを選択できます。<br /><br /> **D3D11 で描画**: Direct3D 11 を使用して、シェーダー デザイナーのデザイン サーフェイスを描画します。<br /><br /> **D3D11WARP で描画**: Direct3D 11 Windows Advanced Rasterization Platform (WARP) を使用して、シェーダー デザイナーのデザイン サーフェイスを描画します。<br /><br /> **表示**: シェーダー デザイナーに関する追加情報を選択できるようにします。<br /><br /> **フレーム レート**: 有効にすると、デザイン サーフェイスの右上隅に現在のフレーム レートが表示されます。 フレーム レートは、1 秒あたりの描画フレーム数です。  このオプションは **リアルタイム レンダリング モード** オプションを有効にする場合に便利です。|  
   
 > [!TIP]
@@ -188,11 +183,8 @@ ms.locfileid: "49942011"
   
 ## <a name="related-topics"></a>関連トピック  
   
-|タイトル|説明|  
+|Title|説明|  
 |-----------|-----------------|  
 |[ゲームとアプリケーション用の 3D アセットの操作](../designers/working-with-3-d-assets-for-games-and-apps.md)|テクスチャ、イメージ、3-D モデル、およびシェーダー効果の操作に使用できる [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のツールの概要を説明します。|  
 |[イメージ エディター](../designers/image-editor.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] イメージ エディターを使用してテクスチャとイメージを操作する方法について説明します。|  
 |[モデル エディター](../designers/model-editor.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] モデル エディターを使用して 3-D モデルを操作する方法について説明します。|
-
-
-

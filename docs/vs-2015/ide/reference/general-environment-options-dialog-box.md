@@ -1,14 +1,9 @@
 ---
-title: '[全般] ([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
-ms.custom: ''
+title: '[全般]([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -31,22 +26,22 @@ ms.assetid: 90fc2e6f-572f-4384-96d8-5678299ce58e
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 967036aa0aedef2f789a1352e213079270f70339
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206883"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752291"
 ---
-# <a name="general-environment-options-dialog-box"></a>[全般]\([オプション] ダイアログ ボックス - [環境])
+# <a name="general-environment-options-dialog-box"></a>[全般] ([オプション] ダイアログ ボックス - [環境])
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
 このページを使用して、統合開発環境 (IDE: Integrated Development Environment) のオプションのうち特に配色テーマ、ステータス バーの設定、およびファイル拡張子の関連付けを変更します。 **[オプション]** ダイアログ ボックスを表示するには、**[ツール]** メニューを開いて、**[オプション]** をクリックし、**[環境]** フォルダーを開き、**[全般]** ページをクリックします。 このページが一覧に表示されない場合は、**[オプション]** ダイアログ ボックスの **[すべての設定を表示]** チェック ボックスをオンにします。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、**[ツール]** メニューを開き、**[設定のインポートとエクスポート]** を選択します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、**[ツール]** メニューを開き、**[設定のインポートとエクスポート]** を選択します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="visual-experience"></a>視覚的効果  
  **[配色テーマ]**  
@@ -87,9 +82,6 @@ ms.locfileid: "49206883"
   
  このオプションは、同じコンピューターに 2 つのバージョンの Visual Studio がインストールされていて、後で一方のバージョンをアンインストールする場合に役立ちます。 アンインストールすると、Visual Studio ファイルのアイコンがエクスプローラーに表示されなくなります。 さらに、これらのファイルを編集するための既定のアプリケーションが Visual Studio であるとは認識されなくなります。 このオプションは、このような関連付けを復元します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)   
  [ウィンドウ レイアウトをカスタマイズする](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

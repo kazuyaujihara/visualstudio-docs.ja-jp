@@ -1,14 +1,9 @@
 ---
 title: '方法: サンプリング イベントを選択する | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.sampling
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 96bf47c6bfc28e0939f6feb9fd7999e898c042a1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 78d5e8bbc024009ad6515bdf08c5219253b42d12
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734514"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784513"
 ---
 # <a name="how-to-choose-sampling-events"></a>方法 : サンプリング イベントを選択する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,12 +61,9 @@ ms.locfileid: "51734514"
   
 5.  サンプル イベントを選択すると、**[サンプリング間隔]** テキスト ボックスに既定のサンプリング間隔の値が表示されます。 必要に応じて、テキスト ボックスに希望の値を入力できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)   
  [CPU カウンターと Windows カウンター](../profiling/cpu-and-windows-counters.md)   
  [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)   
  [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

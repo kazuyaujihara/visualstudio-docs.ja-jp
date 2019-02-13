@@ -3,7 +3,6 @@ title: インストールまたはアップグレードの問題をトラブル�
 description: ときには、問題が発生してしまうことがあります。 Visual Studio のインストールまたはアップグレードが失敗した場合、このページが役に立ちます。
 ms.date: 08/01/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1196902df41ec9c465be948415f866280de62e32
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: edb6d9133fdf3a2a7a4109b9f438f86cc0cdec61
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939817"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931573"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 のインストールとアップグレードの問題のトラブルシューティング
 
@@ -49,7 +48,7 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 1. Visual Studio インストーラーを閉じます。
 2. Visual Studio インストーラーのディレクトリを削除します。 通常、ディレクトリは `C:\Program Files (x86)\Microsoft Visual Studio\Installer` です。
-3. Visual Studio インストーラーのブートストラップを実行します。 [ダウンロード] フォルダーのブートストラップのファイル名には `vs_[Visual Studio edition]__*.exe` のパターンが使用されている場合があります。 アプリケーションが見つからない場合は、「[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)」ページに移動し、Visual Studio のお使いのエディションの **[ダウンロード]** をクリックして、ブートストラップをダウンロードできます。 次に、実行可能ファイルを実行して、インストール メタデータをリセットします。
+3. Visual Studio インストーラーのブートストラップを実行します。 [ダウンロード] フォルダーのブートストラップのファイル名には `vs_[Visual Studio edition]__*.exe` のパターンが使用されている場合があります。 アプリケーションが見つからない場合は、「[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)」ページに移動し、Visual Studio のお使いのエディションの **[ダウンロード]** をクリックして、ブートストラップをダウンロードできます。 次に、実行可能ファイルを実行して、インストール メタデータをリセットします。
 4. Visual Studio のインストールまたは更新を再度試します。 インストーラーのエラーが続く場合は、次の手順に進みます。
 
 ### <a name="step-4---report-a-problem"></a>手順 4 - 問題を報告する

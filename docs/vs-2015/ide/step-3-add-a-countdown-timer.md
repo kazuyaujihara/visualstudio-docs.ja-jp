@@ -1,25 +1,20 @@
 ---
-title: '手順 3: カウントダウン タイマーの追加 | Microsoft ドキュメント'
-ms.custom: ''
+title: '手順 3: カウント ダウン タイマーの追加 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5bbbc5e7de56e3ab03976b1933895035913bb7d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4440370453db96fa207c283e9c4a03b28d7ef6b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775969"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>手順 3: カウントダウン タイマーの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,6 +110,3 @@ ms.locfileid: "49228151"
 -   チュートリアルの次の手順に進むには、「[手順 4: CheckTheAnswer() メソッドの追加](../ide/step-4-add-the-checktheanswer-parens-method.md)」を参照してください。  
   
 -   チュートリアルの前の手順に戻るには、「[手順 2: ランダムな加算問題の作成](../ide/step-2-create-a-random-addition-problem.md)」を参照してください。
-
-
-

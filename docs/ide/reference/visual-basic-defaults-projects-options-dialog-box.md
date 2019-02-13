@@ -1,7 +1,6 @@
 ---
 title: '[Visual Basic の既定値] ([オプション] ダイアログ ボックス - [プロジェクト])'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VBDefaults
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a558fa33760645648b427c3f6cc95991d601c483
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5aedaf5c31eca900ec1730622dfc7ff6f026a61a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934505"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951242"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>[Visual Basic の既定値] ([オプション] ダイアログ ボックス - [プロジェクト])
 Visual Basic プロジェクトのオプションに対する既定の設定を指定します。 新しいプロジェクトを作成すると、指定したオプション ステートメントがコード エディターのプロジェクト ヘッダーに追加されます。 このオプションは、すべての Visual Basic プロジェクトに適用されます。
@@ -43,6 +42,6 @@ Visual Basic プロジェクトのオプションに対する既定の設定を�
 
  ローカル型の推論についてのコンパイラの既定値を設定します。 既定では、新しく作成されたプロジェクトの場合は **[Option Infer]** が **[On]** に設定され、以前のバージョンの Visual Basic で作成されて移行されたプロジェクトの場合は **[Off]** に設定されます。 詳細については、「[/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer)」を参照してください。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [ソリューションおよびプロジェクト](../../ide/solutions-and-projects-in-visual-studio.md)

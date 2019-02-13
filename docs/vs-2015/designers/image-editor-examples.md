@@ -1,25 +1,20 @@
 ---
 title: イメージ エディターの例 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 9f887976-25ae-4099-b987-87ea97f98c58
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f6a00dfb0ce15280bb028fb38eb116754c43db1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 921ed880d7a1827a8e52914fa21738f628cf17fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206753"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781318"
 ---
 # <a name="image-editor-examples"></a>イメージ エディターの例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "49206753"
   
 ## <a name="related-topics"></a>関連トピック  
   
-|タイトル|説明|  
+|Title|説明|  
 |-----------|-----------------|  
 |[方法: 基本テクスチャを作成する](../designers/how-to-create-a-basic-texture.md)|基本的なテクスチャの作成方法を示します。|  
 |[方法: Direct2D または Javascipt アプリで使用するためのテクスチャをエクスポートする](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Direct2D または WWA アプリで使用できる、前乗算されたアルファを持つ DDS 形式テクスチャの作成方法を示します。|  
@@ -37,6 +32,3 @@ ms.locfileid: "49206753"
 |[方法: ミップマップを含むテクスチャをエクスポートする](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|イメージ コンテンツ パイプラインを使用して、前計算された MIPMAP を含むテクスチャをエクスポートする方法について説明します。|  
 |[方法: 前乗算されたアルファを持つテクスチャをエクスポートする](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|イメージ コンテンツ パイプラインを使用して、前乗算されたアルファ値を含むテクスチャをエクスポートする方法について説明します。|  
 |[方法: Direct2D または Javascipt アプリで使用するためのテクスチャをエクスポートする](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|イメージ コンテンツ パイプラインを使用して、Direct2D または JavaScript アプリで使用できるテクスチャをエクスポートする方法について説明します。|
-
-
-

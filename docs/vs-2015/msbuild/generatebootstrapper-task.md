@@ -1,14 +1,9 @@
 ---
 title: GenerateBootstrapper タスク | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateBootstrapper
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c5c96c91a48e854c1619aa112bae5e1d84737765
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 85ea10b956069415198feb74be8c9e546ecc7ff8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811909"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769224"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +152,7 @@ ms.locfileid: "49811909"
   
    `true` の場合、ブートストラップは指定された入力ブートストラップ項目に対して XSD 検証を実行します。 このパラメーターの既定値は、`false` です。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>解説  
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
   
 ## <a name="example"></a>例  
@@ -184,9 +179,6 @@ ms.locfileid: "49811909"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [タスク](../msbuild/msbuild-tasks.md)   
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -2,7 +2,6 @@
 title: Visual Studio のユーザー補助機能
 description: ユーザー補助機能とユーティリティについて詳しく説明します。これらの機能とユーティリティによって、誰でも (視覚に障碍のある方でも) Windows オペレーティング システムと Visual Studio の開発者用パッケージの両方が使いやすくなります。
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -13,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9a42279680f6cb0b2f617428af49114bbc993c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 09b21ab89fe7631ae40def360c1dd111ded0df93
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937523"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935005"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio のユーザー補助機能
 

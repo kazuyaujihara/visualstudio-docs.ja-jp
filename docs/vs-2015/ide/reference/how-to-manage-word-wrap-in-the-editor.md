@@ -1,14 +1,9 @@
 ---
-title: '方法 : エディターのワード ラップを管理する | Microsoft Docs'
-ms.custom: ''
+title: '方法: エディターのワード ラップを管理する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - word wrap
 - editors, text viewing
@@ -17,13 +12,13 @@ ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 011bae45760e01d6b3cb8ed55e7d0afdf017e7cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7b8b195569d5e1daf0a414ee872a828f7c98be90
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271805"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753247"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>方法 : エディターのワード ラップを管理する
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,10 +26,10 @@ ms.locfileid: "49271805"
   
 **[右端で折り返す]** オプションを設定および解除できます。 このオプションを設定すると、コード エディター ウィンドウの現在の幅からはみ出した長い行の部分は次の行に表示されます。 たとえば行番号の使用を容易にするためにこのオプションをオフにすると、右にスクロールして長い行の末尾を表示できます。  
   
- 詳しくは、「[方法: 一般エディター オプションを設定する](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)」をご覧ください。  
+ 詳細については、「[方法 :一般的なエディターのオプションを設定](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)します。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、**ヘルプ**の説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、**ヘルプ**の説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="procedure"></a>プロシージャ  
   
@@ -57,10 +52,7 @@ ms.locfileid: "49271805"
     > [!NOTE]
     >  改行インジケーターはコードには追加されません。表示専用です。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [エディターのカスタマイズ](../../ide/customizing-the-editor.md)   
  [[テキスト エディター] ([オプション] ダイアログ ボックス)](../../ide/reference/text-editor-options-dialog-box.md)   
  [コードの作成](../../ide/writing-code-in-the-code-and-text-editor.md)
-
-
-

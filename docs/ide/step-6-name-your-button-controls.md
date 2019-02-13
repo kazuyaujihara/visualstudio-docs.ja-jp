@@ -1,7 +1,6 @@
 ---
 title: '手順 6: ボタン コントロールの名前を設定する'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ae13c13ce4f8574df8a6a5ffbf432fab555810
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e0b1c4b34a9d4195875c1ae1104b1dc88585871b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043597"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946152"
 ---
 # <a name="step-6-name-your-button-controls"></a>手順 6: ボタン コントロールの名前を設定する
 <xref:System.Windows.Forms.PictureBox> はフォームで 1 つだけ使用しています。 このコントロールには、追加したときに自動的に **pictureBox1**という名前が付けられています。 <xref:System.Windows.Forms.CheckBox> も 1 つだけで、**checkBox1** という名前が付けられています。 この後コードを記述しますが、そのコードでは CheckBox と PictureBox を参照します。 これらのコントロールについては、どちらも 1 つだけであるため、コードで **pictureBox1** または **checkBox1** となっていても何を指しているのかがわかります。

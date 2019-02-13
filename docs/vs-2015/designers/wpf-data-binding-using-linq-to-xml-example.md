@@ -1,25 +1,20 @@
 ---
 title: LINQ to XML を使用した WPF のデータ バインディングの例 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 8e90b252-646e-4449-a898-5f03e40df87d
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5c86dcc5e75474c6e0539b9d47f1b9ad11592de2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e5f92b616b33c95d9d1a7de71d2a5fe5c9026991
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767087"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>LINQ to XML を使用した WPF のデータ バインディングの例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +28,5 @@ ms.locfileid: "49288042"
 |[方法: LinqToXmlDataBinding という例をビルドして実行する](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|この例の Visual Studio プロジェクトを作成、設定、およびビルドするための手順について説明します。|  
 |[チュートリアル: LinqToXmlDataBinding の例](../designers/walkthrough-linqtoxmldatabinding-example.md)|プロジェクトのプライマリ ソース ファイルを示し、このコード内で LINQ to XML がどのようにデータ バインディングに使用されているかについて説明します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [LINQ to XML による WPF のデータ バインディング](../designers/wpf-data-binding-with-linq-to-xml.md)
-
-
-

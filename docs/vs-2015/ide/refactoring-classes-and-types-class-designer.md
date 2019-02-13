@@ -1,14 +1,9 @@
 ---
 title: クラスおよび型のリファクタリング (クラス デザイナー) | Microsoft ドキュメント
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e6a150d32fa4eb5bc162f9ce8522ddfed634253b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207963"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782127"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>クラスおよび型のリファクタリング (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49207963"
 コードをリファクタリングするときに、その外部動作ではなく、内部構造とオブジェクトの設計を変更することによって、コードが理解および保守しやすくなり、効率も向上します。 クラス デザイナーと [クラスの詳細] ウィンドウを使用すると、必要な作業の量を減らし、Visual Studio プロジェクト内の Visual C# .NET、Visual Basic .NET、または C++ コードをリファクタリングするときに、バグが発生する可能性を低下させることができます。  
   
 > [!NOTE]
->  プロジェクトはソース コードの管理下にあり、チェックアウトされていないので、プロジェクトのファイルは読み取り専用である可能性があります。このプロジェクトは、参照されているプロジェクトであるか、そのファイルがディスク上で読み取り専用としてマークされています。 これらの状態のいずれかに当てはまるプロジェクト内で作業する場合、プロジェクトの状態に応じて、さまざまな方法で作業を保存できます。 このことは、コードをリファクターする場合だけでなく、コードを直接編集するなど、別の方法でコードを変更する場合にも当てはまります。 詳細については、「 [読み取り専用の情報の表示 (クラス デザイナー)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)を参照してください。  
+>  プロジェクトはソース コードの管理下にあり、チェックアウトされていないので、プロジェクトのファイルは読み取り専用である可能性があります。このプロジェクトは、参照されているプロジェクトであるか、そのファイルがディスク上で読み取り専用としてマークされています。 これらの状態のいずれかに当てはまるプロジェクト内で作業する場合、プロジェクトの状態に応じて、さまざまな方法で作業を保存できます。 このことは、コードをリファクターする場合だけでなく、コードを直接編集するなど、別の方法でコードを変更する場合にも当てはまります。 詳細については、「 [読み取り専用の情報の表示 (クラス デザイナー)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)を参照してください。  
   
 ## <a name="common-tasks"></a>一般的なタスク  
   
@@ -99,6 +94,3 @@ ms.locfileid: "49207963"
 |-----------|-----------------|  
 |[型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)||  
 |[クラスおよび型のデザイン (クラス デザイナー)](../ide/designing-classes-and-types-class-designer.md)||
-
-
-

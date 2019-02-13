@@ -1,24 +1,19 @@
 ---
 title: コード化された UI テストと操作の記録を拡張して Microsoft Excel をサポート | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4852dc5b65f00f7d298f5f1a15d39ff041022578
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791993"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>コード化された UI テストと操作の記録を拡張して Microsoft Exce をサポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,15 +48,15 @@ ms.locfileid: "49872981"
 ## <a name="details-about-the-sample"></a>サンプルについての詳細  
  次のセクションでは、サンプルとその構造の詳細について説明します。  
   
-### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft Excel アドイン: ExcelCodedUIAddinHelper  
+### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft Excel アドイン:ExcelCodedUIAddInHelper  
  このプロジェクトには、Excel プロセスで実行するアドインが含まれています。 アドイン プロジェクトの概要については、[「コード化された UI テスト用の Excel アドインのサンプル」](../test/sample-excel-add-in-for-coded-ui-testing.md) を参照してください。  
   
  詳細については、[「チュートリアル : 初めての Excel 用 VSTO アドインの作成」](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) を参照してください。  
   
-### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Excel の UI 通信: ExcelUIcommunicationHelper  
+### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Excel の UI 通信:ExcelUICommunicationHelper  
  このプロジェクトには、コード化された UI テスト フレームワークと Excel の間でデータを渡すのに使用する `IExcelUICommunication` インターフェイスと情報クラスが含まれています。 詳細については、「[Excel Communicator インターフェイスのサンプル](../test/sample-excel-communicator-interface.md)」を参照してください。  
   
-### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>コード化された UI テストの拡張機能: CodedUIExentsibilitySample  
+### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>コード化された UI テスト拡張機能:CodedUIExentsibilitySample  
  このプロジェクトには、Excel ワークシートのテストで使用するカスタム クラスが含まれています。 それぞれのクラスのコードは、自己記述的です。 ただし、各カスタム クラスについて簡単に説明しています。 詳細については、[「Excel 用にコード化された UI テストの拡張子のサンプル」](../test/sample-coded-ui-test-extension-for-excel.md) を参照してください。  
   
 ### <a name="deploying-your-add-in-and-extension"></a>アドインと拡張機能の配置  
@@ -76,7 +71,7 @@ ms.locfileid: "49872981"
 ### <a name="testing-excel-with-the-sampletestproject"></a>SampleTestProject を使用した Excel のテスト  
  所有していない特定の Excel バージョンを使用する、提供されたテスト プロジェクトでのテストを実行できます。または、独自のテスト プロジェクトを作成して、独自のテストを記録できます。 詳細については、[「コード化された UI テストを作成する」](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
@@ -84,6 +79,3 @@ ms.locfileid: "49872981"
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
  [コード化された UI テストのベスト プラクティス](../test/best-practices-for-coded-ui-tests.md)   
  [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

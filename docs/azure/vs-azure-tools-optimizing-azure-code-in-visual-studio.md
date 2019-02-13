@@ -9,13 +9,12 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: a85a74907f36057d52257688960b897724a06502
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1c341345005795b2a4a1f95ef80a6ed2eb045c1b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55140555"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948083"
 ---
 # <a name="optimizing-your-azure-code"></a>Azure コードの最適化
 Microsoft Azure を使用するアプリケーションをプログラミングする場合、クラウド環境でのアプリケーションのスケーラビリティ、動作、パフォーマンスに関する問題の回避に役立つコーディングの手法がいくつかあります。 Microsoft では、このような一般的に発生する問題の一部を認識および特定し、その解決を支援する Azure コード分析ツールを提供しています。 このツールは、NuGet を使用して Visual Studio でダウンロードできます。
@@ -45,7 +44,7 @@ ASP.NET セッション状態では、セッション状態データのさまざ
 AP1000
 
 ### <a name="description"></a>説明
-非同期メソッド ([await](https://msdn.microsoft.com/library/hh156528.aspx) など) を [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) メソッドの外に作成し、[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) から非同期メソッドを呼び出します。  [[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) メソッドを非同期として宣言すると、worker ロールが再起動ループに入ります。
+非同期メソッド ([await](https://msdn.microsoft.com/library/hh156528.aspx) など) を [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) メソッドの外に作成し、[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) から非同期メソッドを呼び出します。 [[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) メソッドを非同期として宣言すると、worker ロールが再起動ループに入ります。
 
 [Azure コード分析のフィードバック](http://go.microsoft.com/fwlink/?LinkId=403771)のページでアイデアやフィードバックを共有してください。
 

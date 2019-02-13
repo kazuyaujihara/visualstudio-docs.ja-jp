@@ -4,18 +4,17 @@ description: Visual Studio から Windows PowerShell スクリプトを使用し
 author: ghogen
 manager: jillfra
 assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
-ms.prod: visual-studio-dev15
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 8b1dc9599095f3b32c94640753b8ba799e167a61
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6d1e485e89c3455c61b1050575398cae17b4aaa1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55140813"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941908"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行
 

@@ -2,7 +2,6 @@
 title: '方法: IDE アクセシビリティ オプションを設定する'
 description: 視力が弱くて文字が読みづらい方や入力動作に制限がある方を含め、誰もが統合開発環境 (IDE) を簡単に使えるようにするアクセシビリティ オプションを Visual Studio で設定する方法について説明します。
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac057edf27661403185fb31e5ca9364c629bd38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aad7b5896ce8f090ef627fe9d08b0eae506a42cc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982417"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928440"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>方法: IDE アクセシビリティ オプションを設定する
 

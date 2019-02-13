@@ -12,16 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54269918"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909688"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF Data Service への WPF コントロールのバインド
 
@@ -79,7 +78,7 @@ WCF データ サービスのプロジェクトを作成して、このチュー
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>サービスのエンティティ データ モデルを作成します。
 
-WCF Data Service を使用してアプリケーションにデータを公開するには、サービスのデータ モデルを定義する必要があります。 WCF データ サービスには、2 つの種類のデータ モデルがサポートされています。エンティティ データ モデルでは、およびカスタム データ モデルを実装する共通言語ランタイム (CLR) オブジェクトを使用して定義されている、<xref:System.Linq.IQueryable%601>インターフェイス。 このチュートリアルでは、データ モデルとして Entity Data Model を作成します。
+WCF Data Service を使用してアプリケーションにデータを公開するには、サービスのデータ モデルを定義する必要があります。 WCF データ サービスは、2 つの種類のデータ モデルをサポートしています。 エンティティのデータ モデル、およびカスタム データ モデルを実装する共通言語ランタイム (CLR) オブジェクトを使用して定義されている、<xref:System.Linq.IQueryable%601>インターフェイス。 このチュートリアルでは、データ モデルとして Entity Data Model を作成します。
 
 1. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
@@ -306,7 +305,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 - Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールをその他の種類のデータ ソースにバインドする方法について学習します。 詳細については、次を参照してください。[データセットにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-dataset.md)します。
 
-- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、「[チュートリアル:WPF アプリケーションで関連データを表示する](../data-tools/display-related-data-in-wpf-applications.md)」を参照してください。
+- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、次を参照してください。[チュートリアル: WPF アプリケーションで関連データの表示](../data-tools/display-related-data-in-wpf-applications.md)します。
 
 ## <a name="see-also"></a>関連項目
 

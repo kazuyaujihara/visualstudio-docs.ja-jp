@@ -1,14 +1,9 @@
 ---
 title: イメージ エディター | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
@@ -16,13 +11,13 @@ ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185771"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768304"
 ---
 # <a name="image-editor"></a>イメージ エディター
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -118,7 +113,7 @@ ms.locfileid: "49185771"
 |**前の MIPMAP レベルを表示**|MIP マップ チェーン内の次に小さい MIPMAP レベルをアクティブにします。 デザイン サーフェイスにアクティブな MIPMAP レベルが表示されます。 この項目は MIPMAP レベルがあるテクスチャに対してのみ使用できます。|  
 |**赤チャネル**<br /><br /> **緑チャネル**<br /><br /> **青チャネル**<br /><br /> **アルファ チャネル**|特定のカラー チャネルを有効または無効にします。 **注記:** カラー チャネルを体系的に有効または無効にすると、1 つまたは複数のカラー チャネルに関連する問題を特定できます。 たとえば、誤ったアルファ透明度を特定できる場合があります。|  
 |**背景**|画像の透明な部分での背景表示を有効または無効にします。 背景の表示方法は、次のオプションを選択して構成できます。<br /><br /> **[チェッカーボード]**<br /> 緑色と指定された背景色で、背景をチェッカーボード パターンとして表示します。 このオプションを使用すると、イメージの透明な部分が明確になります。<br /><br /> [背景を白にする]<br /> 背景を白色で表示します。<br /><br /> [背景を黒にする]<br /> 背景を黒色で表示します。<br /><br /> [背景のアニメーション]<br /> チェッカーボード パターンを低速でパンします。 このオプションを使用すると、イメージの透明な部分が明確になります。|  
-|**Properties**|**[プロパティ]** ウィンドウを表示または非表示にします。|  
+|**プロパティ**|**[プロパティ]** ウィンドウを表示または非表示にします。|  
 |**詳細設定**|追加のコマンドとオプションがあります。<br /><br /> **フィルター**<br /><br /> 一般的なイメージ フィルターがいくつかあります。**[白黒]**、**[ぼかし]**、**[輝度]**、**[暗]**、**[境界の検出]**、**[エンボス]**、**[色の反転]**、**[水面]**、**[セピア調]**、および **[シャープネス]** の 10 種類です。<br /><br /> **グラフィックス エンジン**<br /><br /> **D3D11 で描画**<br /> Direct3D 11 を使用してイメージ エディターのデザイン サーフェイスを描画します。<br /><br /> **[D3D11WARP で描画]**<br /> Direct3D 11 Windows Advanced Rasterization Platform (WARP) を使用してイメージ エディターのデザイン サーフェイスを描画します。<br /><br /> **ツール**<br /><br /> **[左右反転]**<br /> イメージを水平方向または x 軸上で入れ替えます。<br /><br /> **[上下反転]**<br /> イメージを垂直方向または y 軸上で入れ替えます。<br /><br /> **MIPS の生成**<br /> イメージの MIPMAP レベルを生成します。 MIPMAP レベルが既に存在する場合は、最大の MIPMAP レベルで再作成されます。 小さい MIPMAP レベルに対して行われた変更内容はすべて失われます。 生成した MIPMAP レベルを保存するには、.dds 形式でイメージを保存する必要があります。<br /><br /> **表示**<br /><br /> **フレーム レート**<br /> 有効にすると、デザイン サーフェイスの右上の隅にフレーム レートが表示されます。 フレーム レートは、1 秒あたりの描画フレーム数です。 **ヒント:** **[詳細設定]** ボタンを選択すると、最後のコマンドを再実行できます。|  
   
  **[イメージ エディター]** ツール バーを次に示します。  
@@ -274,11 +269,8 @@ ms.locfileid: "49185771"
   
 ## <a name="related-topics"></a>関連トピック  
   
-|タイトル|説明|  
+|Title|説明|  
 |-----------|-----------------|  
 |[ゲームとアプリケーション用の 3D アセットの操作](../designers/working-with-3-d-assets-for-games-and-apps.md)|テクスチャ、イメージ、3-D モデル、シェーダー効果などのグラフィックス アセットを処理するために [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で使用できるツールの概要について説明します。|  
 |[モデル エディター](../designers/model-editor.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] モデル エディターを使用して 3-D モデルを操作する方法について説明します。|  
 |[シェーダー デザイナー](../designers/shader-designer.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] シェーダー デザイナーを使用してシェーダーを操作する方法について説明します。|
-
-
-
