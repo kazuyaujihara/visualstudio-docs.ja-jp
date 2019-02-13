@@ -40,5 +40,5 @@ HRESULT get_virtualBasePointerOffset ( 
 > [!NOTE]
 >  戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
