@@ -1,7 +1,6 @@
 ---
 title: ツールボックス、[HTML] タブ
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.html
@@ -14,18 +13,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e7f5e09a1352ee1fdcb6247920c12990c2df19
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 420a65fb8b91495c5fbba228e190b5589019c99f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966112"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926776"
 ---
 # <a name="toolbox-html-tab"></a>ツールボックス、[HTML] タブ
 
-ツールボックスの **[HTML]** タブは、Web ページと Web フォームで使用するコンポーネントを提供します。 このタブを表示するには、まず、HTML デザイナーで編集するためのドキュメントを開きます。 [**表示**] メニューで [**ツールボックス**] をクリックし、ツールボックスの [**HTML**] タブをクリックします。
+ツールボックスの **[HTML]** タブは、Web ページと Web フォームで使用するコンポーネントを提供します。 このタブを表示するには、まず、HTML デザイナーで編集するためのドキュメントを開きます。 **[表示]** メニューで **[ツールボックス]** をクリックし、ツールボックスの **[HTML]** タブをクリックします。
 
- [**HTML**] タブでツールのインスタンスを作成するには、ドキュメントに追加するツールをダブルクリックするか、またはツールを選択して編集サーフェイスの目的の位置にドラッグします。
+ **[HTML]** タブでツールのインスタンスを作成するには、ドキュメントに追加するツールをダブルクリックするか、またはツールを選択して編集サーフェイスの目的の位置にドラッグします。
 
 ## <a name="ui-elements"></a>UI 要素
 

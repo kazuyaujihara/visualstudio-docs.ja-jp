@@ -2,7 +2,6 @@
 title: Python コードの編集
 description: Python の場合、Visual Studio では、高性能 IntelliSense、コード スニペット、ナビゲーション機能、書式設定、lint、リファクタリングの機能が提供されます。
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,22 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81430d156330f067f84cdf7fbba1238c098ae406
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036057"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155397"
 ---
 # <a name="edit-python-code"></a>Python コードの編集
 
 開発者は、開発時間の多くをコード エディターで費やすため、[Visual Studio での Python のサポート](installing-python-support-in-visual-studio.md)は、生産性を向上させる機能を提供しています。 機能には、IntelliSense 構文の強調表示、オートコンプリート、署名ヘルプ、メソッドのオーバーライド、検索、ナビゲーションが含まれます。
 
 また、エディターは Visual Studio の**対話型**ウィンドウと統合され、この 2 つの間で簡単にコードを交換することができます。 詳細については、[「チュートリアル」の「手順 3:対話型 REPL ウィンドウを使用する」](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)と、[対話型ウィンドウの使用 - 対話型コマンドにコードを送信する](python-interactive-repl-in-visual-studio.md#send-to-interactive-command)に関するページを参照してください。
-
-|   |   |
-|---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | Python コードの編集のデモについては、[こちらのビデオ (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) をご覧ください (2 分 30 秒)。|
 
 Visual Studio でのコードの編集に関する全般的な説明については、「[コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)」をご覧ください。 また、コードの特定のセクションに注意を集中するのに役立つ、[アウトライン](../ide/outlining.md)についての記事もご覧ください。
 

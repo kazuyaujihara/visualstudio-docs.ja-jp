@@ -2,19 +2,18 @@
 title: SQL Server と R の統合
 description: Visual Studio では、R から SQL クエリを作成して実行したり、ストアド プロシージャを使ったりすることができます。
 ms.date: 06/25/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: fbe0144985355b30d92430d8b0a923987b7bf111
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f15c785658b5c4cd5a6b158b05eb67ff9a4e4c2d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936152"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913981"
 ---
 # <a name="work-with-sql-server-and-r"></a>SQL Server と R の使用
 

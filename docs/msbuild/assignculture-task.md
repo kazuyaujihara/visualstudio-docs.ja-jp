@@ -18,65 +18,65 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b67fb585c6e006b76417fec91d5eaf80288ba9a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 980a9c49ee801af0caf45ecd6123c6af3e26f1ae
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001853"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853626"
 ---
 # <a name="assignculture-task"></a>AssignCulture タスク
-このタスクは、有効な .NET カルチャ ID 文字列をファイル名の一部として含む可能性がある項目の一覧を受け取り、対応するカルチャ ID を含む `Culture` という名前のメタデータを持つ項目を生成します。 たとえば、ファイル名 *Form1.fr-fr.resx* には、"fr-fr" というカルチャ ID が埋め込まれています。したがって、このタスクでは、`fr-fr` と等しい値の `Culture` メタデータを持つ同じファイル名の項目が生成されます。 また、このタスクでは、ファイル名からカルチャを削除したファイル名の一覧も生成されます。  
-  
-## <a name="task-parameters"></a>タスク パラメーター  
- `AssignCulture` タスクのパラメーターの説明を次の表に示します。  
-  
-|パラメーター|説明|  
-|---------------|-----------------|  
-|`AssignedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> `Files` パラメーターで受信した項目の一覧が含まれています。各項目には `Culture` メタデータ エントリが追加されています。<br /><br /> `Files` パラメーターから受信した項目に既に `Culture` メタデータ エントリが含まれている場合は、この元のメタデータ エントリが使用されます。<br /><br /> このタスクでは、ファイル名に有効なカルチャ ID が含まれている場合にのみ、`Culture` メタデータ エントリが割り当てられます。 カルチャ ID は、ファイル名の最後の 2 つのドットの間にある必要があります。|  
-|`AssignedFilesWithCulture`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> `AssignedFiles` パラメーターの項目のうち、`Culture` メタデータ エントリを持つ項目のサブセットが含まれています。|  
-|`AssignedFilesWithNoCulture`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> `AssignedFiles` パラメーターの項目のうち、`Culture` メタデータ エントリを持たない項目のサブセットが含まれています。|  
-|`CultureNeutralAssignedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> `AssignedFiles` パラメーターに生成された項目の同じ一覧が含まれていますが、ファイル名からカルチャが削除されています。<br /><br /> このタスクでは、カルチャ ID が有効な場合にのみ、ファイル名からカルチャが削除されます。|  
-|`Files`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> カルチャを割り当てるためのカルチャ名が埋め込まれたファイルの一覧を指定します。|  
-  
-## <a name="remarks"></a>コメント  
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
-  
-## <a name="example"></a>例  
- `ResourceFiles` 項目コレクションを指定して `AssignCulture` タスクを実行する例を以下に示します。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ResourceFiles Include="MyResource1.fr.resx"/>  
-        <ResourceFiles Include="MyResource2.XX.resx"/>  
-    </ItemGroup>  
-  
-    <Target Name="Culture">  
-        <AssignCulture  
-            Files="@(ResourceFiles)"  
-            <Output TaskParameter="AssignedFiles"  
-                ItemName="OutAssignedFiles"/>  
-            <Output TaskParameter="AssignedFilesWithCulture"  
-                ItemName="OutAssignedFilesWithCulture"/>  
-            <Output TaskParameter="AssignedFilesWithNoCulture"  
-                ItemName="OutAssignedFilesWithNoCulture"/>  
-            <Output TaskParameter="CultureNeutralAssignedFiles"  
-                ItemName="OutCultureNeutralAssignedFiles"/>  
-        </AssignCulture>  
-    </Target>  
-</Project>  
-```  
-  
- 次の表では、タスク実行後の出力項目の値について説明します。 項目のメタデータは、項目の後にかっこで囲まれて示されます。  
-  
-|項目コレクション|目次|  
-|---------------------|--------------|  
-|`OutAssignedFiles`|*MyResource1.fr.resx* (カルチャ = "fr")<br /><br /> *MyResource2.XX.resx* (追加メタデータなし)|  
-|`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (カルチャ = "fr")|  
-|`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (追加メタデータなし)|  
-|`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (カルチャ = "fr")<br /><br /> *MyResource2.XX.resx* (追加メタデータなし)|  
-  
-## <a name="see-also"></a>関連項目  
- [タスク](../msbuild/msbuild-tasks.md)   
- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+このタスクは、有効な .NET カルチャ ID 文字列をファイル名の一部として含む可能性がある項目の一覧を受け取り、対応するカルチャ ID を含む `Culture` という名前のメタデータを持つ項目を生成します。 たとえば、ファイル名 *Form1.fr-fr.resx* には、"fr-fr" というカルチャ ID が埋め込まれています。したがって、このタスクでは、`fr-fr` と等しい値の `Culture` メタデータを持つ同じファイル名の項目が生成されます。 また、このタスクでは、ファイル名からカルチャを削除したファイル名の一覧も生成されます。
+
+## <a name="task-parameters"></a>タスク パラメーター
+`AssignCulture` タスクのパラメーターの説明を次の表に示します。
+
+|パラメーター|説明|
+|---------------|-----------------|
+|`AssignedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> `Files` パラメーターで受信した項目の一覧が含まれています。各項目には `Culture` メタデータ エントリが追加されています。<br /><br /> `Files` パラメーターから受信した項目に既に `Culture` メタデータ エントリが含まれている場合は、この元のメタデータ エントリが使用されます。<br /><br /> このタスクでは、ファイル名に有効なカルチャ ID が含まれている場合にのみ、`Culture` メタデータ エントリが割り当てられます。 カルチャ ID は、ファイル名の最後の 2 つのドットの間にある必要があります。|
+|`AssignedFilesWithCulture`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> `AssignedFiles` パラメーターの項目のうち、`Culture` メタデータ エントリを持つ項目のサブセットが含まれています。|
+|`AssignedFilesWithNoCulture`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> `AssignedFiles` パラメーターの項目のうち、`Culture` メタデータ エントリを持たない項目のサブセットが含まれています。|
+|`CultureNeutralAssignedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> `AssignedFiles` パラメーターに生成された項目の同じ一覧が含まれていますが、ファイル名からカルチャが削除されています。<br /><br /> このタスクでは、カルチャ ID が有効な場合にのみ、ファイル名からカルチャが削除されます。|
+|`Files`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> カルチャを割り当てるためのカルチャ名が埋め込まれたファイルの一覧を指定します。|
+
+## <a name="remarks"></a>コメント
+上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
+
+## <a name="example"></a>例
+ `ResourceFiles` 項目コレクションを指定して `AssignCulture` タスクを実行する例を以下に示します。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ResourceFiles Include="MyResource1.fr.resx"/>
+        <ResourceFiles Include="MyResource2.XX.resx"/>
+    </ItemGroup>
+
+    <Target Name="Culture">
+        <AssignCulture
+            Files="@(ResourceFiles)"
+            <Output TaskParameter="AssignedFiles"
+                ItemName="OutAssignedFiles"/>
+            <Output TaskParameter="AssignedFilesWithCulture"
+                ItemName="OutAssignedFilesWithCulture"/>
+            <Output TaskParameter="AssignedFilesWithNoCulture"
+                ItemName="OutAssignedFilesWithNoCulture"/>
+            <Output TaskParameter="CultureNeutralAssignedFiles"
+                ItemName="OutCultureNeutralAssignedFiles"/>
+        </AssignCulture>
+    </Target>
+</Project>
+```
+
+次の表では、タスク実行後の出力項目の値について説明します。 項目のメタデータは、項目の後にかっこで囲まれて示されます。
+
+|項目コレクション|目次|
+|---------------------|--------------|
+|`OutAssignedFiles`|*MyResource1.fr.resx* (カルチャ = "fr")<br /><br /> *MyResource2.XX.resx* (追加メタデータなし)|
+|`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (カルチャ = "fr")|
+|`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (追加メタデータなし)|
+|`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (カルチャ = "fr")<br /><br /> *MyResource2.XX.resx* (追加メタデータなし)|
+
+## <a name="see-also"></a>関連項目
+[タスク](../msbuild/msbuild-tasks.md)  
+[タスク リファレンス](../msbuild/msbuild-task-reference.md)

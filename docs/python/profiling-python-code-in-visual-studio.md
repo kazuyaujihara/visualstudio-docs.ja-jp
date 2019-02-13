@@ -2,7 +2,6 @@
 title: Python コードのパフォーマンスの測定
 description: CPython ベースのインタープリターを使っているときに、Visual Studio プロファイラーを使って Python コードのパフォーマンスを調べます。
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d598ce08942ed159b7e03a282ccf9f378f89c889
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979544"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155137"
 ---
 # <a name="profile-python-code"></a>Python コードのプロファイリング
 
@@ -31,10 +30,6 @@ CPython ベースのインタープリターを使っている場合、Python �
 **[OK]** を選ぶと、プロファイラーが実行されてパフォーマンス レポートが表示され、アプリケーションで時間がどのように消費されたかを調べることができます。
 
 ![プロファイリング パフォーマンス レポート](media/profiling-results.png)
-
-|   |   |
-|---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | Python プロファイリングのデモについては、[こちらのビデオ (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) をご覧ください (3 分 00 秒)。|
 
 > [!Note]
 > 現時点では、Visual Studio は、このレベルのフル アプリケーション プロファイリングのみをサポートしています。今後の機能に関するフィードバックをお寄せください。 このページの下部にある [**[製品のフィードバック]** ボタン](#feedback)をお使いください。

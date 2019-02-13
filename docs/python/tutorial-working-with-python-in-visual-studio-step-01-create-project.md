@@ -3,7 +3,6 @@ title: Visual Studio での Python チュートリアル、手順 1、プロジ�
 titleSuffix: ''
 description: 前提条件や新しい Python プロジェクトの作成など、Visual Studio での Python 機能の中核となるチュートリアルの概要と手順 1。
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc6f831d30f578cb03bbb760da410aefff312e99
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 23f843c745d672d9aa4f8dcbfec9c25f7ba98919
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231871"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155215"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>チュートリアル: Visual Studio での Python の使用
 
@@ -79,5 +78,3 @@ Visual Studio は、Python 言語の最上のサポートを提供していま�
 - [Visual Studio の Python プロジェクト](managing-python-projects-in-visual-studio.md)。
 - [python.org で Python 言語を学習する](https://www.python.org)
 - [初心者向けの Python](https://www.python.org/about/gettingstarted/) (python.org)
-- [Microsoft Virtual Academy の無料 Python コース](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Python に関して寄せられることの多い質問 (Microsoft Virtual Academy)](https://aka.ms/mva-top-python-questions)

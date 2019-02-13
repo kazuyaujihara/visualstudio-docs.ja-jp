@@ -3,7 +3,6 @@ title: Windows 上の Visual Studio の Python サポート
 titleSuffix: ''
 description: Windows 上で最高の Python IDE である Visual Studio の Python 機能 (Python Tools for Visual Studio (PTVS) とも呼ばれます) の概要について説明します
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 699578e564999db55562abaad764cde80fc8b618
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 39d11b1b3bc17cd8a7329fd6f4c1a8010f461438
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232066"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155839"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows 上の Visual Studio での Python の使用
 
@@ -30,7 +29,7 @@ Visual Studio は、Windows 上の強力な Python IDE です。 Visual Studio �
 開始するには:
 
 - [インストール手順](installing-python-support-in-visual-studio.md)に従って、Python ワークロードを設定します。
-- この記事の各セクションを読んで、Visual Studio の Python 機能に関する知識を深めてください。 Visual Studio での Python の概要については、[ビデオ シリーズ (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) もご覧ください (合計 22 分)。
+- この記事の各セクションを読んで、Visual Studio の Python 機能に関する知識を深めてください。
 - 1 つ以上のクイックスタートを使用して、プロジェクトを作成します。 わからない場合は、[Flask を使用して Web アプリを作成する](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)方法から始めます。
 - 完全なエンド ツー エンドのエクスペリエンスの場合は、[Visual Studio での Python の使用](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)のチュートリアルに従います。
 
@@ -44,9 +43,8 @@ Visual Studio の **[Python 環境]** ウィンドウ (以下の図では横幅�
 
 詳細情報
 
-- ビデオ (2 分 35 秒):[Python 環境を管理する](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- ドキュメント:[Python 環境を管理する](managing-python-environments-in-visual-studio.md)
-- ドキュメント:[Python 環境のリファレンス](python-environments-window-tab-reference.md)
+- [Python 環境を管理する](managing-python-environments-in-visual-studio.md)
+- [Python 環境のリファレンス](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>豊富な編集、IntelliSense、コード読解
 
@@ -56,7 +54,6 @@ Visual Studio には、構文の色分け、すべてのコードとライブラ
 
 詳細情報
 
-- ビデオ (2 分 30 秒):[Python コードの編集](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - ドキュメント:[Python コードの編集](editing-python-code-in-visual-studio.md)
 - ドキュメント:[コードの書式設定](formatting-python-code.md)
 - ドキュメント:[コードのリファクタリング](refactoring-python-code.md)
@@ -75,9 +72,8 @@ Visual Studio は、インライン プロット、.NET、Windows Presentation F
 
 詳細情報
 
-- ビデオ (2 分 22 秒):[Python Interactive ウィンドウ](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- ドキュメント:[対話型ウィンドウ](python-interactive-repl-in-visual-studio.md)
-- ドキュメント:[Visual Studio の IPython](interactive-repl-ipython.md)
+- [対話型ウィンドウ](python-interactive-repl-in-visual-studio.md)
+- [Visual Studio の IPython](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>プロジェクト システム、プロジェクト テンプレート、項目テンプレート
 
@@ -106,7 +102,6 @@ Visual Studio の長所の 1 つは強力なデバッガーです。 特に Pyth
 
 詳細情報
 
-- ビデオ:[Python のデバッグ (3 分 32 秒)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
 - ドキュメント:[Python のデバッグ](debugging-python-in-visual-studio.md)
 - ドキュメント:[Python と C++ の混合モード デバッグ](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - ドキュメント:[Linux 上のリモート デバッグ](debugging-python-code-on-remote-linux-machines.md)
@@ -120,7 +115,6 @@ Visual Studio の長所の 1 つは強力なデバッガーです。 特に Pyth
 
 詳細情報
 
-- ビデオ:[Python のプロファイリング (3 分 00 秒)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
 - ドキュメント:[Python のプロファイリング ツール](profiling-python-code-in-visual-studio.md)
 - 一般的な Visual Studio 機能のドキュメント:[プロファイリング機能ツアー](../profiling/profiling-feature-tour.md) (Visual Studio のプロファイリング機能の一部は、Python では使用できません)。
 
@@ -132,7 +126,6 @@ Visual Studio **テスト エクスプローラー**でテストを検出、実�
 
 詳細情報
 
-- ビデオ:[Python のテスト (2 分 31 秒)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
 - ドキュメント:[Python 用の単体テスト ツール](unit-testing-python-in-visual-studio.md)
 - 一般的な Visual Studio 機能のドキュメント:[コードの単体テスト](../test/unit-test-your-code.md)。
 
@@ -141,12 +134,6 @@ Visual Studio **テスト エクスプローラー**でテストを検出、実�
 Python ワークロードに含まれる Azure SDK for Python を使うと、Windows、Mac OS X、Linux アプリから Azure サービスを簡単に利用できます。
 
 詳細については、[Python 用 Azure SDK](/python/azure/?view=azure-python) に関するページを参照してください。
-
-## <a name="python-training-on-microsoft-virtual-academy"></a>Microsoft Virtual Academy の Python トレーニング
-
-|   |   |
-|---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | <ul><li>[Python によるプログラミングの入門](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python 初心者:文字列と関数](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python の基礎:リストとループ](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[よく寄せられる質問](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>質問と回答
 
@@ -314,9 +301,3 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 1. Windows 8 以降が必要です。 **サーバー エクスプローラー**の **[デバッガーのアタッチ(Python)]** コマンドには、[Azure SDK for .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 以降が必要です。
 
 1. Windows 8 以降が必要です。
-
-## <a name="additional-resources"></a>その他の技術情報
-
-- [IIS と Python の間の WFastCGI ブリッジ](https://pypi.org/p/wfastcgi) (pypi.org)
-- [Microsoft Virtual Academy の無料 Python コース](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Python に関して寄せられることの多い質問 (Microsoft Virtual Academy)](https://aka.ms/mva-top-python-questions)
