@@ -43,5 +43,5 @@ HRESULT get_symIndexId ( 
 ## <a name="remarks"></a>コメント  
  識別子は、一意としてすべてのシンボルをマークする DIA SDK によって作成された一意の値です。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
