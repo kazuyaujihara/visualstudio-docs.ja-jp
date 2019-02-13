@@ -1,19 +1,18 @@
 ---
 title: '[定義をここに表示] を使用'
 ms.date: 01/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97caa6bac07839d962693914c8bbd22869f7e488
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8cda6865a4dee34976fa2885313db6aad253f32c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969406"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924449"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>方法:[定義をここに表示] を使用してコードを表示および編集する (Alt + F12)
 

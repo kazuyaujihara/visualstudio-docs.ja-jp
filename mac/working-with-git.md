@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: 10d5b34ece7d093a42bafc1f0e410b670dd342f1
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: ba98312617aaf636ee388ec97f47c14ede75507d
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296451"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55852976"
 ---
 # <a name="working-with-git"></a>Git の使用
 
@@ -95,6 +96,10 @@ Solution Pad でプロジェクト名の横にある現在のブランチを参�
 ![ファイルをコミットする](media/version-control-gitCommit.png)
 
 変更をコミットした後、他のユーザーが表示できるようにそれらをリモート リポジトリにプッシュします。
+
+## <a name="related-video"></a>関連ビデオ
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Manage-Projects-with-Git/player]
 
 ## <a name="see-also"></a>関連項目
 

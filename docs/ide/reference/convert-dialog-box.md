@@ -1,7 +1,6 @@
 ---
 title: '[変換] ダイアログ ボックス'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - jlca_Conversion_F1_3
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5016fbfb6f2257f1129cffad3b5274455c9d727
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: beabf926eb0f6496857d7fc552fe4924202647de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026038"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927595"
 ---
 # <a name="convert-dialog-box"></a>[変換] ダイアログ ボックス
 
@@ -34,6 +33,6 @@ ms.locfileid: "55026038"
 
 2.  アプリケーションに適したツールを選択します。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [Visual Studio プロジェクトの移植、移行、およびアップグレード](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

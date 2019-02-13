@@ -1,7 +1,6 @@
 ---
 title: '[プロパティ] ウィンドウ'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - properties [Visual Studio], Properties Window
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1302b2e035bc884bd6b3e914b848eada79e45236
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de1330f0c7bf835a68fb003a227002207a0f2329
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014992"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928232"
 ---
 # <a name="properties-window"></a>[プロパティ] ウィンドウ
 このウィンドウで、エディターやデザイナーのオブジェクトを選択してデザイン時のプロパティやイベントを表示および変更できます。 また、**[プロパティ]** ウィンドウでは、ファイル、プロジェクト、およびソリューションのプロパティの編集や表示もできます。 **[プロパティ]** ウィンドウは **[表示]** メニューにあります。 また、F4 キーを押すか、**[クイック起動]** ウィンドウに「**プロパティ**」と入力して開くこともできます。
@@ -46,7 +45,7 @@ ms.locfileid: "55014992"
 
  選択したオブジェクトのデザイン時のプロパティおよびイベントがすべてアルファベット順に並べ替えられます。 淡色表示されていないプロパティを編集するには、セル内でプロパティの右側をクリックして、変更内容を入力します。
 
- プロパティ ページ
+ [プロパティ ページ]
 
  選択した項目に対応する **[プロパティ ページ]** ダイアログ ボックスまたは **[プロジェクト デザイナー]** が表示されます。 [プロパティ ページ] には、**[プロパティ]** ウィンドウで使用できるプロパティのサブセット、同じプロパティ、またはプロパティのスーパーセットが表示されます。 このボタンを使用して、プロジェクトのアクティブな設定に関連するプロパティを表示および編集します。
 
@@ -66,7 +65,7 @@ ms.locfileid: "55014992"
 > **[プロパティ]** ウィンドウのこのツール バー コントロールを使用できるのは、フォーム デザイナーまたはコントロール デザイナーが [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] プロジェクトのコンテキストでアクティブなときに限られます。 XAML ファイルの編集時、イベントはプロパティ ウィンドウの別のタブに表示されます。
 
 
- メッセージ
+ [メッセージ]
 
  すべての Windows メッセージが表示されます。 選択したクラスに提供されたメッセージについて、指定されたハンドラー関数を追加または削除できます。
 
@@ -98,7 +97,7 @@ ms.locfileid: "55014992"
 
  デザイナーでの XAML ファイルの編集時に、プロパティとイベントを検索するための機能を提供します。 検索ボックスは単語の一部の入力に反応し、入力すると検索結果が更新されます。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)
 - [ウィンドウ レイアウトをカスタマイズする](../../ide/customizing-window-layouts-in-visual-studio.md)
