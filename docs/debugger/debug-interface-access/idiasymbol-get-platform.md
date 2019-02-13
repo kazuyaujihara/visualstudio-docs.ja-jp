@@ -40,6 +40,6 @@ HRESULT get_platform ( 
 > [!NOTE]
 >  戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CV_CPU_TYPE_e 列挙型](../../debugger/debug-interface-access/cv-cpu-type-e.md)

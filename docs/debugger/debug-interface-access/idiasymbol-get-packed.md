@@ -43,5 +43,5 @@ HRESULT get_packed ( 
 ## <a name="remarks"></a>コメント  
  パック手段をメモリ境界に揃えるの介在する埋め込みなしで、UDT のすべてのメンバーが、できるだけ近くに配置されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

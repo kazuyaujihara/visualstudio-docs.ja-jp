@@ -44,26 +44,26 @@ ms.locfileid: "54862181"
 |プロジェクトの種類|Microsoft Office アプリケーション|  
 |-------------------|----------------------------------|  
 |ドキュメント レベルのカスタマイズ|Excel<br /><br /> Word|  
-|VSTO アドイン|Excel<br /><br /> InfoPath (InfoPath 2013 と InfoPath 2010 のみ)<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> プロジェクト<br /><br /> Visio<br /><br /> Word<br /><br /> Excel|  
+|VSTO アドイン|Excel<br /><br /> InfoPath (InfoPath 2013 と InfoPath 2010 のみ)<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word<br /><br /> Excel|  
   
 ## <a name="features-available-in-different-project-types"></a>異なる種類のプロジェクトで使用できる機能  
  プロジェクトの種類ごとに異なる機能を次の表に示します。  
   
 |機能|機能を提供するプロジェクトの種類|関連項目|  
 |-------------|--------------------------------------------|---------------------|  
-|[操作] ウィンドウ。|ドキュメントレベルのプロジェクト。|[操作ウィンドウの概要](../vsto/actions-pane-overview.md)|  
-|ClickOnce 配置。|VS およびドキュメントレベルのプロジェクト。|[Office ソリューションをデプロイします。](../vsto/deploying-an-office-solution.md)|  
-|カスタム作業ウィンドウ。|次のアプリケーション用の VSTO アドイン プロジェクト:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 と InfoPath 2010 のみ)<br />-   Outlook<br />-PowerPoint<br />ワード|[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)|  
-|カスタム XML 部分。|ドキュメントレベルのプロジェクト。<br /><br /> 次のアプリケーション用のアプリケーション レベルのプロジェクト:<br /><br /> -Excel<br />-PowerPoint<br />ワード|[カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)|  
-|データ キャッシュ。|ドキュメントレベルのプロジェクト。|[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)|  
+|操作ウィンドウ|ドキュメントレベルのプロジェクト|[操作ウィンドウの概要](../vsto/actions-pane-overview.md)|  
+|ClickOnce 配置|VS およびドキュメントレベルのプロジェクト|[Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)|  
+|カスタム作業ウィンドウ|次のアプリケーション用の VSTO アドイン プロジェクト:<br /><br /> -   Excel<br />-   InfoPath (InfoPath 2013 と InfoPath 2010 のみ)<br />-   Outlook<br />-   PowerPoint<br />-   Word|[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)|  
+|カスタム XML 部分。|ドキュメントレベルのプロジェクト<br /><br /> 次のアプリケーション用のアプリケーション レベルのプロジェクト:<br /><br /> -   Excel<br />-   PowerPoint<br />-   Word|[カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)|  
+|データ キャッシュ。|ドキュメントレベルのプロジェクト|[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)|  
 |他の Microsoft Office ソリューションに VSTO アドイン内のオブジェクトを公開します。|VSTO アドイン プロジェクト。|[他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
-|次のホスト コントロール:<br /><br /> -グラフ<br />-   ListObject<br />-   NamedRange<br />-コンテンツ コントロール<br />-ブックマーク|ドキュメントレベルのプロジェクト。<br /><br /> Word と Excel 用の VSTO アドイン プロジェクト。|[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)|  
-|次のホスト コントロール:<br /><br /> -   XMLMappedRange<br />-   XMLNode<br />-   XMLNodes|ドキュメントレベルのプロジェクト。|[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)|  
-|複数プロジェクトの配置。|ドキュメントレベルのプロジェクト。<br /><br /> VSTO アドイン プロジェクト。|[チュートリアル: 単一の ClickOnce インストーラーで複数の Office ソリューションを配置します。](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
+|次のホスト コントロール:<br /><br /> -グラフ<br />-   ListObject<br />-   NamedRange<br />-コンテンツ コントロール<br />-ブックマーク|ドキュメントレベルのプロジェクト<br /><br /> Word と Excel 用の VSTO アドイン プロジェクト。|[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)|  
+|次のホスト コントロール:<br /><br /> -   XMLMappedRange<br />-   XMLNode<br />-   XMLNodes|ドキュメントレベルのプロジェクト|[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)|  
+|複数プロジェクトの配置。|ドキュメントレベルのプロジェクト<br /><br /> VSTO アドイン プロジェクト。|[チュートリアル: 単一の ClickOnce インストーラーで複数の Office ソリューションを配置します。](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Outlook フォーム領域。|Outlook 用の VSTO アドイン プロジェクト。|[Outlook フォーム領域を作成します。](../vsto/creating-outlook-form-regions.md)|  
-|配置後の動作。|ドキュメントレベルのプロジェクト。<br /><br /> VSTO アドイン プロジェクト。|[チュートリアル: ClickOnce インストール後にドキュメントをエンドユーザーのコンピューターにコピーします。](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
-|リボンのカスタマイズ。|ドキュメントレベルのプロジェクト。<br /><br /> 次のアプリケーション用の VSTO アドイン プロジェクト:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 と InfoPath 2010 のみ)<br />-   Outlook<br />-PowerPoint<br />-プロジェクト<br />-   Visio<br />ワード|[リボンの概要](../vsto/ribbon-overview.md)|  
-|視覚的なドキュメント デザイナー。|ドキュメントレベルのプロジェクト。|[Visual Studio 環境における office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)|  
+|配置後の動作。|ドキュメントレベルのプロジェクト<br /><br /> VSTO アドイン プロジェクト。|[チュートリアル: ClickOnce インストール後にドキュメントをエンドユーザーのコンピューターにコピーします。](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|リボンのカスタマイズ。|ドキュメントレベルのプロジェクト<br /><br /> 次のアプリケーション用の VSTO アドイン プロジェクト:<br /><br /> -   Excel<br />-   InfoPath (InfoPath 2013 と InfoPath 2010 のみ)<br />-   Outlook<br />-   PowerPoint<br />-プロジェクト<br />-   Visio<br />-   Word|[リボンの概要](../vsto/ribbon-overview.md)|  
+|視覚的なドキュメント デザイナー。|ドキュメントレベルのプロジェクト|[Visual Studio 環境における office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>関連項目  
  [開始&#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
@@ -73,4 +73,4 @@ ms.locfileid: "54862181"
  [Outlook フォーム領域を作成します。](../vsto/creating-outlook-form-regions.md)   
  [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)   
  [ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)   
- [Office ソリューションをデプロイします。](../vsto/deploying-an-office-solution.md)  
+ [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)  

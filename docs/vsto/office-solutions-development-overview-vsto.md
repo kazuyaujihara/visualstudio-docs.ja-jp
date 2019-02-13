@@ -25,7 +25,7 @@ ms.locfileid: "54867092"
   
  ここでは、Visual Studio の Office Developer Tools で使用可能な Visual Studio Tools for Office (VSTO) テンプレートを使用して作成できる、Office ソリューションの種類の概要について説明します。 Office での開発方法に関する概要については、次を参照してください。、 [Office デベロッパー センター](https://dev.office.com/)します。  
   
-## <a name="choose-an-office-project-type"></a>Office プロジェクトの種類を選択します。  
+## <a name="choose-an-office-project-type"></a>Office プロジェクトの種類の選択  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] では、VSTO ベースの Office 開発のために、次の種類のプロジェクト テンプレートを提供します。  
   
 - **ドキュメント レベルのカスタマイズ** は、特定のドキュメントに関連付けられます。  
@@ -43,16 +43,16 @@ ms.locfileid: "54867092"
   
  カスタマイズの詳細については、次のトピックを参照してください。  
   
--   [Excel 用ドキュメント レベル カスタマイズのプログラミングを開始します。](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
+-   [Excel をドキュメント レベルでカスタマイズするプログラミングを始める](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
   
--   [Word 用ドキュメント レベル カスタマイズのプログラミングを開始します。](../vsto/getting-started-programming-document-level-customizations-for-word.md)  
+-   [Word をドキュメント レベルでカスタマイズするプログラミングを始める](../vsto/getting-started-programming-document-level-customizations-for-word.md)  
   
 -   [ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)  
   
 ### <a name="vsto-add-ins"></a>VSTO アドイン  
  VSTO アドインは、Microsoft Office アプリケーションに関連付けられているアセンブリで構成されます。 アプリケーションが既に実行されている場合に VSTO アドインを読み込むこともできますが、通常、VSTO アドインは関連付けられたアプリケーションが開始されたときに実行されます。 作成した VSTO アドインの機能は、どのドキュメントが開いているかにかかわらず、アプリケーション自体に対して使用できます。  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、VSTO アドインの作成に役立つツールが含まれています。アドイン プロジェクトには、VSTO アドインを表す自動的に生成されたクラスが含まれます。 このクラスは、ホスト アプリケーションのオブジェクト モデルへのアクセス、および VSTO アドインの読み込みとシャット ダウン時のコードの実行に使用できる、プロパティとイベントを提供します。 その他の多くの [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 機能は、Windows フォームや統合デバッガーなどの VSTO アドイン プロジェクトで利用可能です。  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、VSTO アドインの作成に役立つツールが含まれています。アドイン プロジェクトには、VSTO アドインを表す自動的に生成されたクラスが含まれます。 このクラスは、ホスト アプリケーションのオブジェクト モデルへのアクセス、および VSTO アドインの読み込みとシャットダウン時のコードの実行に使用できる、プロパティとイベントを提供します。 その他の多くの [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 機能は、Windows フォームや統合デバッガーなどの VSTO アドイン プロジェクトで利用可能です。  
   
  VSTO アドインの詳細については、次のトピックを参照してください。  
   
@@ -60,7 +60,7 @@ ms.locfileid: "54867092"
   
 -   [VSTO アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)  
   
-## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>プライマリ相互運用機能アセンブリを使用して Office アプリケーションを自動化します。  
+## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>プライマリ相互運用機能アセンブリを使用した Office アプリケーションの自動化  
  アプリケーションのオブジェクト モデルにアクセスするコードを記述して、Office アプリケーションの機能をソリューションにプログラムによって組み込むことができます。 オブジェクト モデルは、さまざまなプロパティとメソッドを介して機能を公開するクラスの配置です。 各 Office アプリケーションのオブジェクト モデルは異なります。  
   
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]の Office 開発者ツールを使用して作成されたソリューションから Office アプリケーションのオブジェクト モデルを使用するには、アプリケーションのプライマリ相互運用機能アセンブリ (PIA) を使用する必要があります。 PIA によって、Office アプリケーションの COM ベースのオブジェクト モデルと対話するソリューション内にマネージド コードを作成できるようになります。  
@@ -69,11 +69,11 @@ ms.locfileid: "54867092"
   
  VSTO Office ソリューションでの PIA の使用に関する詳細については、次のトピックを参照してください。  
   
--   [Office ソリューションでコードを記述します。](../vsto/writing-code-in-office-solutions.md)  
+-   [Office ソリューションでのコードの記述](../vsto/writing-code-in-office-solutions.md)  
   
 -   [Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)  
   
-## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>エンドユーザーのコンピューターに Microsoft VSTO Office ソリューションを実行します。  
+## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>エンドユーザーのコンピューターでの Microsoft VSTO Office ソリューションの実行  
  VSTO Office ソリューションを作成する場合、配置要件が開発方法に与える可能性のある影響について考慮します。  
   
 ### <a name="deployment-options"></a>配置オプション  

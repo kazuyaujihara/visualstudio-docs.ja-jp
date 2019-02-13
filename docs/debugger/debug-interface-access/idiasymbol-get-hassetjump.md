@@ -47,7 +47,7 @@ HRESULT get_hasSetJump(
 |ヘッダー:|dia2.h|  
 |バージョン:|DIA SDK バージョン 8.0|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)   
  [longjmp](/cpp/c-runtime-library/reference/longjmp)   

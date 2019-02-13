@@ -49,6 +49,6 @@ HRESULT get_hfaFloat( 
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

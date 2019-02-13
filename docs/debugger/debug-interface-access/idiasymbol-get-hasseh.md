@@ -47,6 +47,6 @@ HRESULT get_hasSEH(
 |ヘッダー:|dia2.h|  
 |バージョン:|DIA SDK バージョン 8.0|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [構造化例外処理 (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp)

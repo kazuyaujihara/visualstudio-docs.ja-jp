@@ -14,7 +14,7 @@ ms.workload:
 - office
 ms.openlocfilehash: b6dfbd0ed4ae41942f3c587d490a4dafaa1f93a7
 ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/24/2019
 ms.locfileid: "54875889"
@@ -25,28 +25,28 @@ ms.locfileid: "54875889"
  Office Developer Tools で提供される機能は、さまざまなビジネス要件に合った Office ソリューションを作成するのに役立ちます。 このツールには、Visual Basic または Visual C# を使用した Office ソリューションの作成に役立つプロジェクト テンプレートや、Office ソリューションで使用するカスタム ユーザー インターフェイスの作成に役立つビジュアルなデザイナーが含まれています。  
   
 > [!NOTE]  
->  [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは、小さなフット プリントが VSTO アドインとソリューションの比較を持ち、ほぼすべての web テクノロジ、HTML5、JavaScript、CSS3、XML などのプログラミングを使用して、それらをビルドすることができます。  
+>  [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは、VSTO アドインとソリューションに比べて小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML といった、ほぼすべての Web プログラミング テクノロジを使用して、それらをビルドすることができます。  
   
- Office 開発の最新情報については、MSDN の次の開発センターを参照してください。  
+ Office 開発の最新情報については、MSDN の次のデベロッパー センターを参照してください。  
   
--   [Visual Studio の開発者ポータルでの Office 開発](http://go.microsoft.com/fwlink/?LinkId=123844)製品情報、コード サンプル、ビデオ、および Visual Studio を使用して、ソリューションの一部として、Office アプリケーションをカスタマイズする方法のコミュニティ リソースへのリンクが含まれています.  
+-   [Visual Studio の開発者ポータルでの Office 開発](http://go.microsoft.com/fwlink/?LinkId=123844)には、製品情報、コード サンプル、ビデオに加え、Visual Studio を使用して、Office アプリケーションをソリューションの一部としてカスタマイズする方法のコミュニティ リソースへのリンクが含まれています。  
   
--   [Microsoft Office デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=83467)技術記事、コード サンプル、ダウンロード、コミュニティ情報、サポート、および Office のカスタマイズと Office Business Application (Oba に関する他のドキュメントへのリンクが含まれています).  
+-   [Microsoft Office デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=83467)には、技術記事、コード サンプル、ダウンロード、コミュニティ情報、サポート、および Office のカスタマイズと Office Business Application (OBA) に関する他のドキュメントへのリンクが含まれています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [開始&#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Office ソリューションの作成用に開発コンピューターを構成する方法、Office ソリューションの作成を開始する方法、および Visual Studio での Office 開発を対象とする新機能に関する情報へのリンクを示します。  
   
- [アップグレードし、Office ソリューションの移行](../vsto/upgrading-and-migrating-office-solutions.md)  
+ [Office ソリューションのアップグレードと移行](../vsto/upgrading-and-migrating-office-solutions.md)  
  Visual Studio の以前のバージョンを使用して作成されたプロジェクトのアップグレード プロセスに関する情報へのリンクを示します。  
   
  [Visual Studio での Office ソリューションのアーキテクチャ](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
  ドキュメント レベルのカスタマイズと VSTO アドインに関する情報など、Office ソリューションの動作に関する情報へのリンクを示します。  
   
- [設計および Office ソリューションの作成](../vsto/designing-and-creating-office-solutions.md)  
+ [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)  
  Visual Studio で Office プロジェクトを作成し、プロジェクトを構成する方法について説明します。  
   
- [Office ソリューションを開発します。](../vsto/developing-office-solutions.md)  
+ [Office ソリューションの開発](../vsto/developing-office-solutions.md)  
  Office ユーザー インターフェイスをカスタマイズする方法、データを処理する方法、問題のトラブルシューティングを行う方法など、Office ソリューションでマネージド コードを使用する方法について説明します。  
   
  [Excel ソリューション](../vsto/excel-solutions.md)  
@@ -61,8 +61,8 @@ ms.locfileid: "54875889"
  [PowerPoint ソリューション](../vsto/powerpoint-solutions.md)  
  PowerPoint を自動化し、PowerPoint VSTO アドインを作成する方法について説明します。  
   
- [プロジェクトから成るソリューション](../vsto/project-solutions.md)  
- Microsoft Office project の自動化および VSTO アドイン プロジェクトを作成する方法について説明します。  
+ [Project ソリューション](../vsto/project-solutions.md)  
+ Microsoft Office Project の自動化および VSTO アドイン プロジェクトを作成する方法について説明します。  
   
  [Visio ソリューション](../vsto/visio-solutions.md)  
  Visio を自動化し、Visio VSTO アドインを作成する方法について説明します。  
@@ -70,10 +70,10 @@ ms.locfileid: "54875889"
  [Word ソリューション](../vsto/word-solutions.md)  
  Word を自動化し、Word ソリューションを作成する方法について説明します。  
   
- [Office ソリューションを構築します。](../vsto/building-office-solutions.md)  
+ [Office ソリューションの構築](../vsto/building-office-solutions.md)  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]における、Office プロジェクトのビルドと、その他の種類のプロジェクトのビルドとの間の相違点について説明します。  
   
- [Office プロジェクトをデバッグします。](../vsto/debugging-office-projects.md)  
+ [Office プロジェクトのデバッグ](../vsto/debugging-office-projects.md)  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]における、Office プロジェクトのデバッグと、その他の種類のプロジェクトのデバッグとの間の相違点について説明します。  
   
  [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)  
@@ -95,17 +95,17 @@ ms.locfileid: "54875889"
  Office アプリケーションでマネージド VSTO アドインのロードとアンロードなどの操作を実行するために使用できる COM インターフェイスに関する情報へのリンクを示します。  
   
 ## <a name="related-sections"></a>関連項目  
- [Visual Studio の開発者ポータルでの office 開発](http://go.microsoft.com/fwlink/?LinkId=123844)  
+ [Visual Studio による Office 開発デベロッパー ポータル](http://go.microsoft.com/fwlink/?LinkId=123844)  
  技術記事、ビデオ、ブログなど、その他のリソースを提供します。  
   
  [Visual Studio デベロッパー センター](http://go.microsoft.com/fwlink/?LinkID=99124)  
  技術記事、ビデオ、ブログなど、Visual Studio に関するその他のリソースを提供します。  
   
- [Office business application デベロッパー ポータル](http://go.microsoft.com/fwlink/?LinkId=99125)  
- Office Business Application (Oba) に関する情報と、Office system プラットフォームを使用してそれらをビルドする方法を提供します。  
+ [Office Business Application デベロッパー ポータル](http://go.microsoft.com/fwlink/?LinkId=99125)  
+ Office Business Application (OBA) に関する情報と、Office system プラットフォームを使用してそれらをビルドする方法を提供します。  
   
  [MSDN ライブラリの Microsoft Office 開発 セクション](http://go.microsoft.com/fwlink/?LinkId=149870)  
- 場所の記事を検索し、いくつかのバージョンの Office (Visual Studio を使用して Office 開発に限定されません) のソリューションの開発に関するドキュメントを参照して、MSDN ライブラリの領域。  
+ 様々なバージョンの Office (Visual Studio を使用しての Office 開発に限定されません) のソリューションの開発に関する記事と参照ドキュメントを、MSDN ライブラリの中で見つけることができます。  
   
  [Visual Studio でのアプリケーション開発](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
  設計、開発、デバッグ、Visual Studio を使用してし、web アプリケーション、XML web サービス、および従来のクライアント アプリケーションをデプロイする方法を説明するトピックへのリンクが含まれています。  
