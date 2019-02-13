@@ -1,74 +1,73 @@
 ---
-title: Excel を使用したチュートリアル
+title: Excel 用ドキュメント レベル カスタマイズのプログラミングのスタート ガイド
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
-- walkthroughs [Office development in Visual Studio], Excel
-- Excel [Office development in Visual Studio], walkthroughs
+- Excel solutions in Visual Studio
+- Excel projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d6d3aceb52b788d1a3f7bfc2828ac2550e6161a
+ms.openlocfilehash: 47762c781b24a31b90c75e5f8d9f0d00a6d3363d
 ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869555"
+ms.locfileid: "54870140"
 ---
-# <a name="walkthroughs-using-excel"></a>Excel を使用したチュートリアル
-  次のチュートリアルでは、ドキュメント レベルのカスタマイズと VSTO アドインを使用して Microsoft Office Excel を自動化し、ユーザー インターフェイス (UI) をカスタマイズする方法について説明します。  
+# <a name="get-started-programming-document-level-customizations-for-excel"></a>Excel 用ドキュメント レベル カスタマイズのプログラミングのスタート ガイド
+  Visual Studio を使用して Microsoft Office Excel のドキュメント レベルのカスタマイズを作成することを始めるには、次を知る必要がありますに示します。  
   
-## <a name="document-level-walkthroughs"></a>ドキュメント レベルのチュートリアル  
- [チュートリアル: 最初の Excel 用ドキュメント レベルのカスタマイズを作成します。](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
- Excel 用の基本的なドキュメント レベルのカスタマイズを作成する方法を示します。  
+ [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- [チュートリアル: リボン デザイナーを使用してカスタム タブを作成します。](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
- Excel ブックのリボンにカスタム タブを追加する方法について説明します。  
+## <a name="understand-how-document-level-customizations-for-excel-work"></a>Excel のドキュメント レベルのカスタマイズがどのように働くかの理解  
+ Excel 用ドキュメント レベルのカスタマイズは、1 つのブックに基づいています。カスタマイズの使用を開始するには、エンドユーザーはブックを開く、または Excel テンプレートから、ブックを作成します。たとえば、セルに入力する、ボタンおよびメニュー項目をクリックするといった、ブック内のイベントは、アセンブリ内のイベント処理メソッドを呼び出すことができます。ブックが閉じられると、カスタマイズによって提供される機能は Excel では使用できず、それらが含まれているドキュメント内でのみ使用できます。
   
- [チュートリアル: Windows フォームを使用してデータを収集します。](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
- Windows フォームを使用してユーザー入力を収集し、その入力を Excel ワークシートのセルに送信する方法について説明します。  
+ 詳細については、「[ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)」を参照してください。
   
- [チュートリアル: CheckBox コントロールを使用してワークシートの書式設定を変更します。](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
- Excel ワークシートでチェック ボックスを使用して書式を変更する操作の基本について説明します。  
+## <a name="create-document-level-projects-for-excel"></a>Excel 用ドキュメント レベルのプロジェクトの作成  
+ Excel 用ドキュメント レベルのカスタマイズを作成するには、**新しいプロジェクト** ダイアログ ボックスで、Excel ブックまたは Excel テンプレート プロジェクト テンプレートを使用します。これらのテンプレートには必要なアセンブリ参照とプロジェクト ファイルが含まれています。  
   
- [チュートリアル: ボタンを使用してワークシート内のテキスト ボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
- Excel ワークシートでボタンやテキスト ボックスを使用する操作の基本について説明します。  
+ Excel 用ドキュメント レベルのプロジェクトを作成する方法の詳細については、「[Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。プロジェクト テンプレートの詳細については、「[Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)」を参照してください。
   
- [チュートリアル: NamedRange コントロールのイベントのプログラム](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)  
- <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールをワークシートに追加し、そのイベントに対してプログラミングを実行する手順を説明します。  
+## <a name="program-excel-workbooks-by-using-host-items-and-host-controls"></a>ホスト項目とホスト コントロールを使用した Excel ブックのプログラミング  
+ *ホスト項目*と*ホスト コントロール*は Visual Studio を使用して作成されたドキュメント レベル カスタマイズのプログラミング モデルを提供するクラスです。  
   
- [チュートリアル: ドキュメント レベルのプロジェクトでの単純データ バインディング](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
- SQL Server データベースの 1 つのデータ フィールドを Excel の名前付き範囲にバインドする操作の基本について説明します。  
+ ホスト項目は、コードのエントリ ポイントを提供し、ホスト コントロールや Windows フォーム コントロールのコンテナーとしても機能できます。Excel 用ドキュメント レベルのプロジェクトにおいて、これらのホスト項目は、`ThisWorkbook`、 `Sheet1`、 `Sheet2`、および`Sheet3`クラスとして表されます。
   
- [チュートリアル: ドキュメント レベルのプロジェクトで複合データ バインディング](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
- Excel ワークシートの複数のセルを Northwind SQL Server データベースのフィールドにバインドする操作の基本について説明します。  
+ ホスト コントロールは、リスト オブジェクトや範囲といったネイティブな Excel オブジェクトに基づいています。ホスト コントロールは、ネイティブな Excel オブジェクトと同様の機能を提供し、新しいイベント、デザイナー サポート、およびデータ バインディング機能も備えています。これにより、Excel オブジェクト モデルを操作することがなくコード内で直接特定のオブジェクトを参照しやすく、プロジェクト コードおよび IntelliSense で最上位のオブジェクトとして表示されます。  
   
- [チュートリアル: キャッシュされたデータセットを使用したマスター/詳細関係を作成します。](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
- ワークシート上にマスター/詳細関係を作成して、ソリューションをオフラインで使用できるようにデータをキャッシュする方法について説明します。  
+ 詳細については、次のトピックを参照してください。  
   
- [チュートリアル: ラジオ ボタンを使用してワークシートのグラフを更新します。](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
- オプション ボタンを使用して Excel ワークシート上のグラフのスタイルを変更する操作の基本について説明します。  
+-   [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)  
   
- [チュートリアル: データを Excel の操作ウィンドウ上のコントロールにバインドします。](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
- データ ソースにバインドされるコントロールを Excel の操作ウィンドウに追加する方法について説明します。  
+-   [拡張オブジェクトを使用した Excel の自動化](../vsto/automating-excel-by-using-extended-objects.md)  
   
-## <a name="application-level-walkthroughs"></a>アプリケーション レベルのチュートリアル  
- [チュートリアル: Excel 用の最初の VSTO アドインの作成します。](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
- Excel 用の基本的な VSTO アドインを作成する方法を示します。  
+-   [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)  
   
- [チュートリアル: VSTO アドイン プロジェクトでの実行時にワークシートにコントロールを追加します。](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)  
- VSTO アドインを使用してワークシートにコントロールを追加する方法について説明します。  
+## <a name="customize-the-user-interface-of-excel"></a>Excel のユーザー インターフェイスのカスタマイズ
+ ほとんどの Microsoft Office ソリューションは、Office アプリケーションのユーザー インターフェイス (UI) を変更して、ユーザーがソリューションと対話するためのなんらかの方法を提供します。ドキュメント レベルのカスタマイズを使用して Excel の UI を変更する方法はたくさんあります。たとえば、リボンにコントロールを追加したり、操作ウィンドウを表示したりすることが可能です。詳細については、「[Office UI のカスタマイズ](../vsto/office-ui-customization.md)」を参照してください。
   
- [チュートリアル: VBA から VSTO アドイン内のコードを呼び出す](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)  
- VSTO アドインのオブジェクトをブックの VBA コードに公開する方法について説明します。  
+ Visual Studio で直接、プロジェクトに関連付けられているブックを開くこともできます。ブックを Visual Studio で開いて、Excel のユーザー インターフェイスを使用して、ブックを変更できます。コントロールをワークシートにドラッグすることができます、デザイン サーフェイスとして、ブックを使用することもできます。詳細については、「[Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)」を参照してください。
   
- [チュートリアル: リボン ボタンとカスタム作業ウィンドウを同期します。](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)  
- リボンに配置されたトグル ボタンをクリックすることで、ユーザーが表示/非表示を切り替えできる、カスタム作業ウィンドウの作成方法について説明します。  
+## <a name="use-data-binding"></a>データ バインディングの使用  
+ ホスト コントロールは、**データソース**ウィンドウからドラッグできるコントロールのリストの中にもあります。この方法でホスト コントロール追加すると、ウィンドウを使用して設定したデータ ソースに自動的にバインドされます。コードを記述せずに、データベース、Web サービス、およびビジネス オブジェクトからデータを表示できます。詳細については、「[Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。。  
   
- [チュートリアル: VSTO アドイン プロジェクトで複雑なデータ バインディング](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
- SQL Server データベースのテーブルを Excel 用の VSTO アドイン内の <xref:Microsoft.Office.Tools.Excel.ListObject> にバインドする方法について説明します。  
+## <a name="next-steps"></a>次の手順  
+ Excel 用ドキュメント レベルのカスタマイズを作成する方法については、「[チュートリアル。最初の Excel 用ドキュメント レベルのカスタマイズを作成する](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)」を参照してください。このチュートリアルでは、Visual Studio による Office 開発ツールと Excel のドキュメント レベルのカスタマイズのプログラミング モデルについて説明します。
+  
+ Excel プロジェクトで、一般的なタスクを解説しているトピックの一覧は、「[Office プログラミングにおける一般的なタスク](../vsto/common-tasks-in-office-programming.md)」を参照してください。
+  
+## <a name="see-also"></a>関連項目  
+ [Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)   
+ [Excel ソリューション](../vsto/excel-solutions.md)   
+ [チュートリアル: 最初の Excel 用ドキュメント レベルのカスタマイズの作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
+ [Excel を使用したチュートリアル](../vsto/walkthroughs-using-excel.md)   
+ [Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)   
+ [Office ソリューションにおけるコードの記述](../vsto/writing-code-in-office-solutions.md)  
