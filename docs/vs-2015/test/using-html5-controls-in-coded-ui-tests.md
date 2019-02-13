@@ -1,24 +1,19 @@
 ---
 title: コード化された UI テストでの HTML5 コントロールの使用 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92ee95d4840ab9a833adc1b0060117f0d6b94fbd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6002c3636030b67e9dca5e76c7ef57fbd93b6e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805077"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>コード化された UI テストでの HTML5 コントロールの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "49254463"
   
  ![HTML5 オーディオ コントロール](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
   
-|アクション|記録中|生成されたコード|  
+|操作|記録中|生成されたコード|  
 |------------|---------------|--------------------|  
 |**オーディオの再生**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> オーディオを 00:00:00 の時点から再生|HtmlAudio.Play(TimeSpan)|  
 |**オーディオの特定の時点にシーク**|\<name> オーディオの 00:01:48 の時点にシーク|HtmlAudio.Seek(TimeSpan)|  
@@ -94,7 +89,7 @@ string Volume
   
  ![HTML5 ビデオ コントロール](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
   
-|アクション|記録中|生成されたコード|  
+|操作|記録中|生成されたコード|  
 |------------|---------------|--------------------|  
 |**ビデオの再生**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> ビデオを 00:00:00 の時点から再生|HtmlVideo.Play(TimeSpan)|  
 |**ビデオの特定の時点にシーク**|\<name> ビデオの 00:01:48 の時点にシーク|HtmlVideo.Seek(TimeSpan)|  
@@ -124,7 +119,7 @@ string VideoWidth
   
  ![HTML5 スライダー コントロール](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
   
-|アクション|記録中|生成されたコード|  
+|操作|記録中|生成されたコード|  
 |------------|---------------|--------------------|  
 |**スライダーにおける位置の設定**|\<name> スライダー内の \<x> に位置を設定|HtmlSlider.ValueAsNumber=\<x>|  
   
@@ -144,12 +139,9 @@ string ValueAsNumber
   
  ![HTML5 ProgressBar コントロール](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [HTML 要素](http://go.microsoft.com/fwlink/?LinkID=232441)   
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
  [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [コード化された UI テストをカスタマイズする](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
  [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

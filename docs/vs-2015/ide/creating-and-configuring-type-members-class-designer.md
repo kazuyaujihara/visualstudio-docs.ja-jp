@@ -1,14 +1,9 @@
 ---
 title: 型のメンバーの作成と構成 (クラス デザイナー) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
 - vs.classdetails.property
@@ -34,13 +29,13 @@ ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827975"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795304"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>型のメンバーの作成と構成 (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,7 +131,7 @@ ms.locfileid: "49827975"
      **メモ:** ショートカット キーを使用してメンバーを作成することもできます。 詳細については、「[クラス ダイアグラムおよびクラスの詳細情報のウィンドウでのキーボードとマウスのショートカット (クラス デザイナー)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)」を参照してください。  
   
 ##  <a name="ModifyTypeMembers"></a> 型のメンバーの変更  
- クラス デザイナーを使用して、ダイアグラムに表示される型のメンバーを変更できます。 読み取り専用でない、クラス ダイアグラムに表示される任意の型のメンバーを変更できます。 (「[読み取り専用の情報の表示 (クラス デザイナー)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)」を参照してください。)型のメンバーは、デザイン サーフェイス、プロパティ ウィンドウ、および [クラスの詳細] ウィンドウで埋め込み先編集を使用して変更します。  
+ クラス デザイナーを使用して、ダイアグラムに表示される型のメンバーを変更できます。 読み取り専用でない、クラス ダイアグラムに表示される任意の型のメンバーを変更できます。 (「[読み取り専用の情報の表示 (クラス デザイナー)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)」を参照してください。)型のメンバーは、デザイン サーフェイス、プロパティ ウィンドウ、および [クラスの詳細] ウィンドウで埋め込み先編集を使用して変更します。  
   
  [クラスの詳細] ウィンドウに表示されるすべてのメンバーは、クラス ダイアグラムの型のメンバーを表します。 メソッド、プロパティ、フィールド、およびイベントという 4 種類のメンバーがあります。  
   
@@ -268,7 +263,7 @@ ms.locfileid: "49827975"
   
  [クラスの詳細] ウィンドウのすべてのセルは、次のいくつかの例外を除いて編集できます。  
   
-- たとえば、参照アセンブリに存在する場合などは、型全体が読み取り専用です (「[読み取り専用の情報の表示 (クラス デザイナー)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)」を参照してください)。クラス デザイナーで図形を選択すると、[クラスの詳細] ウィンドウにその詳細が読み取り専用状態で表示されます。  
+- たとえば、参照アセンブリに存在する場合などは、型全体が読み取り専用です (「[読み取り専用の情報の表示 (クラス デザイナー)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)」を参照してください)。クラス デザイナーで図形を選択すると、[クラスの詳細] ウィンドウにその詳細が読み取り専用状態で表示されます。  
   
 - インデクサーの場合、名前は読み取り専用でその他 (型、修飾子、概要) は編集できます。  
   

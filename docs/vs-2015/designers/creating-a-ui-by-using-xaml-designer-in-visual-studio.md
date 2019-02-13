@@ -1,13 +1,9 @@
 ---
 title: XAML デザイナーを使用した UI の作成
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
@@ -17,13 +13,13 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53837291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795170"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio での XAML デザイナーを使用した UI の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +87,9 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
  **表示** アプリの異なる画面サイズと解像度を指定します。
 
- **印刷の向き**アプリの向きを指定します。[横] または **[縦]** に指定します。
+ **向き** アプリの向きを **[横]** または **[縦]** に指定します。
 
- **Edge**アプリの端の位置揃えを指定します。[両方]、**[左]**、**[右]**、または **[なし]** に指定します。
+ **エッジ** アプリの端の位置揃えを **[両方]**、**[左]**、**[右]**、または **[なし]** に指定します。
 
  **ハイコントラスト** 選択したコントラスト設定に基づいてアプリをプレビューします。 **[既定]** 以外の値を設定すると、App.xaml 内に設定された `RequestedTheme` プロパティをオーバーライドします。
 
@@ -141,5 +137,5 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
  各プロパティの値の右側には、 *プロパティ マーカー* がボックスのシンボルとして表示されます。 プロパティ マーカーの外観は、プロパティに適用されるデータ バインドやリソースの有無を示します。 たとえば、白色のボックス シンボルは既定値を示します。黒色のボックス シンボルは、通常、ローカル リソースが適用されていることを示します。オレンジ色のボックスは、通常、データ バインドが適用されていることを示します。 プロパティ マーカーをクリックすると、スタイルの定義に移動したり、データ バインディング ビルダーを開いたり、リソース ピッカーを開いたりできます。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
  [XAML デザイナーで要素の操作](../designers/working-with-elements-in-xaml-designer.md)[を作成し、リソースの適用方法](../designers/how-to-create-and-apply-a-resource.md)[チュートリアル。XAML デザイナーでデータにバインドする](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

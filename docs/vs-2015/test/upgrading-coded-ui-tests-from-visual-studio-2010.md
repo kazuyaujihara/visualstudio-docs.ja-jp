@@ -2,18 +2,18 @@
 title: コード化された UI テストのアップグレード
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 664eeb618b92b7d3181a223a531aac02e046ab0f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 54ccd9ad0cfefe33be7c51d44e9adb6c15717a7a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055051"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803628"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Visual Studio 2010 からのコード化された UI テストのアップグレード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "53055051"
 -   Visual Studio Enterprise
 
 > [!NOTE]
->  Visual Studio には、テスト プロジェクトの種類が複数含まれています。 コード化された UI テストを新しく作成する場合は、コード化された UI テスト プロジェクトの種類で作成されます。 詳しくは、「 [旧バージョンの Visual Studio からのテストのアップグレード](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)」をご覧ください。
+>  Visual Studio には、テスト プロジェクトの種類が複数含まれています。 コード化された UI テストを新しく作成する場合は、コード化された UI テスト プロジェクトの種類で作成されます。 詳しくは、「 [旧バージョンの Visual Studio からのテストのアップグレード](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)」をご覧ください。
 
 > [!WARNING]
 >  コード化された UI テストを含む[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] テスト プロジェクトは、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] または [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] と [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]の side-by-side 実行で開くときにリビルドする必要があります。
@@ -57,11 +57,11 @@ ms.locfileid: "53055051"
 
   この更新プログラムには、次の問題の修正プログラムも含まれています。
 
-- **コード カバレッジ**Visual Studio 2012 で作成されたコード カバレッジ ファイル (.coverage) を開くことができない[!INCLUDE[vs2010](../includes/vs2010-md.md)]SP1。
+- **コード カバレッジ:** Visual Studio 2012 で作成されたコード カバレッジ ファイル (.coverage) を [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 で開くことができません。
 
-- **孤立したテストの成果物。** チームでは、Team Foundation Server (TFS) 2010 で無効なユーザーに割り当てられているテスト アーティファクトがあります。 たとえば、退職したユーザーにまだ割り当てられたままのテスト ケースがあります。 TFS 2010 を TFS 2012 にアップグレードします。 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 を使用して、アップグレードした TFS サーバーに接続します。 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 を使用して、任意の TFS ユーザーにテスト アーティファクトを割り当てることはできません。
+- **取り残されたテスト アーティファクト:** Team Foundation Server (TFS) 2010 の無効なユーザーに割り当てられているテスト アーティファクトがあります。 たとえば、退職したユーザーにまだ割り当てられたままのテスト ケースがあります。 TFS 2010 を TFS 2012 にアップグレードします。 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 を使用して、アップグレードした TFS サーバーに接続します。 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 を使用して、任意の TFS ユーザーにテスト アーティファクトを割り当てることはできません。
 
-- ロード テストコンピューターで、ローカル エリア ネットワーク (LAN) プロファイル以外のネットワークの種類でロード テストを実行するを実行している Windows 8、ネットワーク エミュレーターのドライバーとオペレーティング システムがクラッシュします。 詳細については、「 [サポート技術情報記事 2736182](http://support.microsoft.com/kb/2736182)」を参照してください。
+- **ロード テスト:** Windows 8 を実行しているコンピューターで、ローカル エリア ネットワーク (LAN) プロファイル以外のネットワークの種類でロード テストを実行すると、ネットワーク エミュレーターのドライバーにより、オペレーティング システムがクラッシュします。 詳細については、「 [サポート技術情報記事 2736182](http://support.microsoft.com/kb/2736182)」を参照してください。
 
 ## <a name="see-also"></a>参照
- [移植、移行、および Visual Studio プロジェクトのアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[以前のバージョンの Visual Studio からテストのアップグレード](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [UI オートメーションを使用して、コードをテストする](../test/use-ui-automation-to-test-your-code.md)[を生成する、コード化された UI テストを既存の操作の記録から](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[コード化された UI テストと操作の記録の構成とプラットフォームのサポート](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [移植、移行、および Visual Studio プロジェクトのアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[以前のバージョンの Visual Studio からテストのアップグレード](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [UI オートメーションを使用して、コードをテストする](../test/use-ui-automation-to-test-your-code.md)[を生成する、コード化された UI テストを既存の操作の記録から](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[コード化された UI テストと操作の記録の構成とプラットフォームのサポート](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
