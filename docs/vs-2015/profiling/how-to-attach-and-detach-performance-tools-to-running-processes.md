@@ -1,14 +1,9 @@
 ---
-title: '方法 : 実行中のプロセスにパフォーマンス ツールをアタッチする/実行中のプロセスからパフォーマンス ツールをデタッチする | Microsoft Docs'
-ms.custom: ''
+title: '方法: アタッチし、デタッチの実行中のプロセスのパフォーマンス ツール |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 931608decb44f0e49cb4ae2984b9cbf724a63d56
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778242"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762436"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>方法 : 実行中のプロセスにパフォーマンス ツールをアタッチする/実行中のプロセスからパフォーマンス ツールをデタッチする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51778242"
   
 1.  **[分析]** メニューの **[プロファイラー]** をポイントし、**[アタッチ/デタッチ]** をクリックします。  
   
-     \- または -  
+     \- または  
   
      **パフォーマンス エクスプローラー**でパフォーマンス セッションを右クリックし、**[アタッチ/デタッチ]** をクリックします。  
   
@@ -65,7 +60,7 @@ ms.locfileid: "51778242"
   
 1.  **[分析]** メニューの **[プロファイラー]** をポイントし、**[アタッチ/デタッチ]** をクリックします。  
   
-     \- または -  
+     \- または  
   
      **パフォーマンス エクスプローラー**でパフォーマンス セッションを右クリックし、**[アタッチ/デタッチ]** をクリックします。  
   
@@ -75,12 +70,9 @@ ms.locfileid: "51778242"
   
 3.  **[デタッチ]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [データ収集の制御](../profiling/controlling-data-collection.md)   
  [パフォーマンス セッションの概要](../profiling/performance-session-overview.md)   
  [方法: 開始と終了のパフォーマンス データの収集](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [プロファイルと Windows Vista のセキュリティ](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)
-
-
-

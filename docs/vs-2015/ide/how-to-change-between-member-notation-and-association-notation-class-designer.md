@@ -1,14 +1,9 @@
 ---
-title: '方法: メンバー表記と関連付け表記の間で変更する (クラス デザイナー) | Microsoft Docs'
-ms.custom: ''
+title: '方法: メンバー表記と関連付け表記 (クラス デザイナー) の間の変更 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - notation, member
 - association notation
@@ -18,13 +13,13 @@ ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1ed7ee328e65f0e76426a21db8f2481e590b0546
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 23320b93f0cdafc7cd47ed5b04fcdf66754c4b67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173609"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777326"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>方法: メンバー表記と関連付け表記の間で変更する (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,11 +46,8 @@ ms.locfileid: "49173609"
   
      関連行が表示されなくなり、ダイアグラムの型の図形内の適切なコンパートメントにプロパティが表示されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法: 型の間の継承を作成する (クラス デザイナー)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
  [方法: 型の間の継承を表示する (クラス デザイナー)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)   
  [方法: コレクションの関連付けをビジュアル化する (クラス デザイナー)](../ide/how-to-visualize-a-collection-association-class-designer.md)
-
-
-

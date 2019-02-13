@@ -1,14 +1,9 @@
 ---
 title: '[プロジェクトおよびソリューション] の [オプション] ダイアログ ボックス | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
@@ -16,13 +11,13 @@ ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4230f99b78809594d65da991c65c11d7dc30efd4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1294de78e93709bc60cd94be97613f032725bf5c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246195"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758202"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>[プロジェクトおよびソリューション] の [オプション] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49246195"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] プロジェクト フォルダーの既定パスを設定し、プロジェクトの開発と構築に伴って、**[出力]** ウィンドウ、**[タスク一覧]**、および **[ソリューション エクスプローラー]** の既定動作を決定します。 このダイアログ ボックスにアクセスするには、**[ツール] メニューの [オプション]** をクリックして、**[プロジェクトおよびソリューション]** を展開し、**[全般]** をクリックします。  
   
 > [!NOTE]
->  使用している設定またはエディションによっては、ダイアログ ボックスで使用可能なオプションや、メニュー コマンドの名前や位置がヘルプに記載されている内容と異なる場合があります。 このヘルプ ページは、**全般的な開発設定**を考慮して記述されています。 設定を表示または変更するには、**[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  使用している設定またはエディションによっては、ダイアログ ボックスで使用可能なオプションや、メニュー コマンドの名前や位置がヘルプに記載されている内容と異なる場合があります。 このヘルプ ページは、**全般的な開発設定**を考慮して記述されています。 設定を表示または変更するには、**[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="settings"></a>設定  
  **プロジェクトの場所**  
@@ -69,8 +64,5 @@ ms.locfileid: "49246195"
  **ファイル名の変更時にシンボルの名前変更を求めるプロンプトを出す**  
  選択すると、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] がコード要素に対するプロジェクト内のすべての参照も名前変更するかどうかを確認する、メッセージ ボックスが表示されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: データ ドリブンのコード化された UI テストの作成 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
 ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d3674d6ccbda89a2a3ee1de551587ba034ba51c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 71c08c78d67f65ec69a982ce431a64ec1c620d27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932625"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755371"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>データ ドリブンのコード化された UI テストの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ ms.locfileid: "49932625"
     }  
     ```  
   
-5.  `AddNumbers()` メソッドを使用して、テストが実行されていることを確認します。 前に示したテスト メソッドにカーソルを置き、コンテキスト メニューを開き、**[テストの実行]** を選択します。 (キーボード ショートカット: Ctrl + R、T)。  
+5.  `AddNumbers()` メソッドを使用して、テストが実行されていることを確認します。 前に示したテスト メソッドにカーソルを置き、コンテキスト メニューを開き、**[テストの実行]** を選択します。 (キーボード ショートカット:Ctrl + r、T)。  
   
      テストの合格または失敗を示すテスト結果が、[テスト エクスプローラー] ウィンドウに表示されます。 [テスト エクスプローラー] ウィンドウを開くには、**[テスト]** メニューの **[Windows]** を選択し、**[テスト エクスプローラー]** を選択します。  
   
@@ -111,7 +106,7 @@ ms.locfileid: "49932625"
     |----------|----------|---------|  
     |3|4|7|  
     |5|6|11|  
-    |6|9|14|  
+    |6|8|14|  
   
      データを追加した後、ファイルが次のように表示されます。  
   
@@ -210,7 +205,7 @@ ms.locfileid: "49932625"
   
    **ガイダンス**  
   
-   詳細については、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)」 (Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 2 章: 単体テスト: 内部のテスト) および「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)」 (Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 5 章: システム テストの自動化) を参照してください。  
+   詳細については、次を参照してください。 [Visual Studio 2012 – Chapter 2 による継続的デリバリーのためのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)と[Visual Studio 2012 – Chapter 5 による継続的デリバリーのためのテストします。システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>Q & A  
   
@@ -255,13 +250,10 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
  記録されたメソッドを変更する必要がある場合は、メソッドを UIMap.cs ファイルにコピーし、メソッド名を変更する必要があります。 UIMap.cs ファイルを使用すると、UIMapDesigner.cs ファイルのメソッドやプロパティをオーバーライドできます。 Coded UITest.cs ファイルの元のメソッドへの参照を削除し、変更したメソッド名に置き換える必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
  [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [コード化された UI テストのベスト プラクティス](../test/best-practices-for-coded-ui-tests.md)   
  [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

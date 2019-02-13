@@ -1,27 +1,22 @@
 ---
 title: MSBuild の概念 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, concepts
 ms.assetid: 083b8ba3-e4ad-45af-bb5d-3bc81d406131
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 54c8fcd52a6d3650726281f55c3d6192c089ce78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b12406af6894c8478c6f142c98edf064f2c58280
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174123"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770867"
 ---
 # <a name="msbuild-concepts"></a>MSBuild の概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,4 @@ ms.locfileid: "49174123"
 |[チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|テキスト エディターのみを使用して、基本的なプロジェクト ファイルをインクリメント方式で作成する方法について説明します。|  
 |[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)|MSBuild のビルド ブロックについて説明し、Visual Studio 統合開発環境 (IDE) を閉じずに MSBuild プロジェクトを記述、操作、およびデバッグする方法について説明します。|  
 |[MSBuild リファレンス](../msbuild/msbuild-reference.md)|リファレンス情報を示すドキュメントへのリンクを提供します。|  
-|[MSBuild](http://msdn.microsoft.com/en-us/e39f13f7-1e1d-4435-95ca-0c222bca071c)|プロジェクト ファイルの XML スキーマの概要を説明し、ソフトウェアを構築するプロセスを制御する方法を示します。|
-
-
-
+|[MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|プロジェクト ファイルの XML スキーマの概要を説明し、ソフトウェアを構築するプロセスを制御する方法を示します。|

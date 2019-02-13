@@ -1,25 +1,20 @@
 ---
-title: '方法: MIP レベルを作成および変更する | Microsoft Docs'
-ms.custom: ''
+title: '方法: 作成し、MIP レベルの変更 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9578fd2bdafeaf8c9a3e9fcd3dd5523b4d8cc7f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6495f9271114be5fcd35e38d9ed210e07a8b6f66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774063"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>方法: MIP レベルを作成および変更する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,8 +44,5 @@ ms.locfileid: "49184289"
 > [!NOTE]
 >  各 MIPMAP レベルの内容を変更する必要がない場合 (特定の効果を得るためになど)、ビルド時にソース テクスチャから MIPMAP を生成することをお勧めします。 これは、MIPMAP レベルがソース テクスチャと確実に同期するために役立ちます。1 つの MIPMAP レベルに対する変更がその他の MIPMAP レベルに自動的に反映されないためです。 ビルド時に mipmap を生成する方法については、「[方法: ミップマップを含むテクスチャをエクスポートする](../designers/how-to-export-a-texture-that-contains-mipmaps.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法: 基本テクスチャを作成する](../designers/how-to-create-a-basic-texture.md)
-
-
-

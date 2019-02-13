@@ -1,25 +1,20 @@
 ---
 title: Unity アプリを使用したアプリケーション ライフサイクル管理 (ALM) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
 caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 0a39bee5517f0a4311613af336a5b8bc6e6fa00e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b37f379fc60a260e7c16e87d7c1553429e73fbad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760709"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778592"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Unity アプリを使用したアプリケーション ライフサイクル管理 (ALM)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51760709"
  次の表は、Unity を使用するときの Visual Studio ALM の機能を適用する方法と適用しない方法について示しています。 各機能そのものの詳細については、リンク先のドキュメントを参照してください。  
   
 ## <a name="agile-tools"></a>アジャイル ツール  
- 参照リンク: **[作業](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (Visual Studio Team Services または TFS (Team Explorer Everywhere など) を使用)  
+ 参照リンク:**[作業](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (Visual Studio Team Services または Team Explorer Everywhere など、TFS を使用)  
   
  一般的なコメント: すべての計画機能と追跡機能は、プロジェクトの種類とコーディング言語には依存しません。  
   
@@ -127,6 +122,3 @@ ms.locfileid: "51760709"
 |機能|Unity でサポートされているかどうか|その他のコメント|  
 |-------------|--------------------------|-------------------------|  
 |クラッシュ分析、製品利用統計情報、およびベータ版の配布|はい|HockeyApp は、主にベータ分布を処理し、クラッシュ レポートを取得するために役立ちます。<br /><br /> C# スクリプトからの製品利用統計情報の場合、Unity によって使用される .NET のバージョンで実行されるときは、分析用のフレームワークを使用することができます。 ただし、ゲームのスクリプト内でのみ分析でき、Unity エンジン内で詳細に分析することはできません。 現時点では、Application Insights のプラグインはありませんが、[Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) や [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity) などの他の分析ソリューションのプラグインが使用できます。 Unity プロジェクトの特性を理解する Unity Analytics のようなサービスは、汎用的なフレームワークもより効果的な分析を提供します。|
-
-
-

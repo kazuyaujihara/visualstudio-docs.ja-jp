@@ -1,14 +1,9 @@
 ---
 title: ユーザー補助アプリケーションのデザイン リソース | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -18,13 +13,13 @@ ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178283"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761673"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>ユーザー補助アプリケーションのデザイン リソース
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "49178283"
   
 ## <a name="windows-applications"></a>Windows アプリケーション  
   
--   [チュートリアル: ユーザー補助対応の Windows ベースのアプリケーションの作成](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) このトピックでは、Certified for Windows ロゴで必要となる、ユーザー補助機能の 5 つの要件を実装するための手順を、サンプル Windows アプリケーションを使って順番に説明します。  
+-   [チュートリアル: アクセス可能な Windows ベースのアプリケーションを作成する](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)このトピックでは、サンプル Windows アプリケーションでは、Certified for Windows ロゴの 5 つのアクセシビリティ要件を含む手順に沿って説明します。  
   
 -   **キーボード ユーザー インターフェイス デザインのガイドライン** この技術情報では、ユーザーがキーボードから操作できる Windows アプリケーション ユーザー インターフェイスの設計方法について説明します。 詳細については、「[http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx)」を参照してください。  
   
@@ -62,8 +57,5 @@ ms.locfileid: "49178283"
   
 -   **W3C (World Wide Web Consortium) の WAI (Web Accessibility Initiative)** この Web サイトには、ユーザー補助機能を持つ Web サイトの開発に関するガイドラインと技術情報が示されています。 詳細については、「[http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-

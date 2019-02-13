@@ -1,24 +1,19 @@
 ---
 title: C++ 用の Microsoft 単体テスト フレームワークを使用した C++ 用単体テストの記述 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6600621c195994bf5becec9cae4f77340008516
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760029"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>C++ 用の Microsoft 単体テスト フレームワークを使用した C++ 用単体テストの記述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +82,7 @@ Visual Studio では、C++ で記述されたアンマネージ コードの単�
   
         3.  テストのショートカット メニューで、 **[選択したテストのデバッグ]** をクリックして、デバッガーでテストを実行します。  
   
-##  <a name="walkthrough"></a> チュートリアル: テスト エクスプローラーによるアンマネージ DLL の開発  
+##  <a name="walkthrough"></a>チュートリアル:テスト エクスプ ローラーによるアンマネージ DLL の開発  
  このチュートリアルを、自分の DLL の開発に適応させることができます。 基本的な手順は次のとおりです。  
   
 1.  [ネイティブのテスト プロジェクトを作成する](#unitTestProject)。 テストは、開発中の DLL とは別のプロジェクト内に作成されます。  
@@ -397,13 +392,10 @@ Visual Studio では、C++ で記述されたアンマネージ コードの単�
   
      また、最低限のコード カバレッジも要求できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [既存の C++ アプリケーションへの単体テストの追加](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [Microsoft.VisualStudio.TestTools.CppUnitTestFramework の使用](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
  [マネージ/アンマネージ コードの相互運用性の概要](http://msdn.microsoft.com/library/ms973872.aspx)   
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)   
  [チュートリアル: ダイナミック リンク ライブラリの作成と使用 (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
  [インポートとエクスポート](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
-
-
-

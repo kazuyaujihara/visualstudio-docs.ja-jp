@@ -1,14 +1,9 @@
 ---
-title: 'チュートリアル: データ ソースを定義するための構成ファイルの使用 | Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: データ ソースを定義する構成ファイルの使用 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6adfc19d16e13449dd673ca7722781f16b4b6cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843042"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835122"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>チュートリアル : データ ソースを定義するための構成ファイルの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +219,7 @@ ms.locfileid: "49843042"
   
 1.  単体テストをテスト プロジェクトに追加します。  
   
-     詳細については、「[既存コードに対する単体テストの作成と実行](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)」を参照してください。  
+     詳細については、「[既存コードに対する単体テストの作成と実行](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)」を参照してください。  
   
 2.  自動生成された単体テストの内容を次のコードに置き換えます。  
   
@@ -273,11 +268,8 @@ ms.locfileid: "49843042"
 > [!IMPORTANT]
 >  データ ソースなどの項目を、配置ディレクトリのテストからアクセスできるように配置します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コードの単体テスト](../test/unit-test-your-code.md)   
- [既存コードに対する単体テストの作成と実行](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [既存コードに対する単体テストの作成と実行](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [アプリケーションのテスト](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [方法: データドリブン単体テストを作成する](../test/how-to-create-a-data-driven-unit-test.md)
-
-
-

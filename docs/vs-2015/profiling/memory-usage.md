@@ -1,25 +1,20 @@
 ---
 title: メモリ使用量 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: bbb58d6c-3362-4ca3-8e87-64b2d4415bf6
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f62137fcbc71df87fb0569ed0516a7ae36d8a30a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6b060f35abf79d76e17f847e6b4b296c253a4b30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766112"
 ---
 # <a name="memory-usage"></a>メモリ使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "51746193"
 >   
 >  ![スナップショットを有効にする](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
->  デバッグを停止 (ショートカット キー: **Shift + F5**) してから再開します。  
+>  デバッグを停止 (ショートカット キー: **Shift キーを押しながら f5 キーを押して**) し、デバッグを再開します。  
   
  メモリの状態をキャプチャする場合は常に、 **[メモリ使用量]** 概要ツールバーで **[スナップショットの取得]** を選択します。  
   
@@ -86,7 +81,8 @@ ms.locfileid: "51746193"
 ### <a name="managed-types-reports"></a>マネージド型レポート  
  メモリ使用量の概要テーブルで、 **[マネージド オブジェクト]** または **[マネージド ヒープ サイズ]** セルの現在のリンクを選択します。  
   
- ![デバッガーのマネージド型のレポート &amp;amp;#45; ルートへのパス](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ 
+  ![デバッガーのマネージド型のレポート &#45; ルートへのパス](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
  上のウィンドウには、型で参照されているすべてのオブジェクトのサイズ (**包括サイズ**) を含む、スナップショット内の型の総数およびサイズが表示されます。  
   
@@ -136,12 +132,8 @@ ms.locfileid: "51746193"
 ## <a name="blogs-and-videos"></a>ブログとビデオ  
  [Visual Studio 2015 の診断ツール [デバッガー] ウィンドウ](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
- [ブログ: Visual Studio 2015 のデバッグ中のメモリ使用量ツール](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
+ [ ブログ Visual Studio 2015 のデバッグ中のメモリ使用量ツール](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
   
- [Visual C++ ブログ: VS2015 プレビューでのネイティブ メモリ診断](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
+ [Visual C++ ブログ:VS2015 プレビューでのネイティブ メモリ診断](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   
- [Visual C++ ブログ: Visual Studio 2015 CTP のネイティブ メモリ診断ツール](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
-
-
-
-
+ [Visual C++ ブログ:Visual Studio 2015 CTP のネイティブ メモリ診断ツール](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)

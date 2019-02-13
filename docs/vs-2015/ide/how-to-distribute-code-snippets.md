@@ -1,27 +1,22 @@
 ---
-title: '方法: コード スニペットを配布する | Microsoft Docs'
-ms.custom: ''
+title: '方法: コード スニペットを配布 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bf0cff7902bfbf62dbb0e0929cf924505d37aed2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185706"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799033"
 ---
 # <a name="how-to-distribute-code-snippets"></a>方法: コード スニペットを配布する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49185706"
  Visual Studio 拡張機能を作成するには、Visual Studio SDK をインストールする必要があります。 Visual Studio のインストールと一致する VSSDK のバージョンを見つける[Visual Studio 2015 のダウンロード](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx)します。  
   
 ## <a name="setting-up-the-extension"></a>拡張機能を設定する  
- この手順では、「[チュートリアル: コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md)」で作成したのと同じ Hello World コード スニペットを使います。 .snippet のテキストは用意されているため、前の手順に戻ってコード スニペットを作成する必要はありません。  
+ この手順で作成したのと同じ Hello World コード スニペットを使用しました[チュートリアル。コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md) .snippet のテキストは用意されているため、前の手順に戻ってコード スニペットを作成する必要はありません。  
   
 1.  **TestSnippet** という新しい VSIX プロジェクトを作成します  (**[ファイル] > [新規作成] > [プロジェクト] > [Visual C#]\(または [Visual Basic]) > [拡張]**)。  
   
@@ -101,14 +96,11 @@ ms.locfileid: "49185706"
   
 4.  スニペットをテストします。 実験用インスタンスで、Visual Basic プロジェクトを開き、コード ファイルのいずれかを開きます。 コードの任意の場所にカーソルを置いて右クリックし、コンテキスト メニューで **[スニペットの挿入]** を選びます。  
   
-5.  フォルダーの 1 つとして HelloWorldVB が表示されるはずです。 これをダブルクリックします。 **[スニペットの挿入: HellowWorldVB >]** ポップアップが表示されます。ここに **[HelloWorldVB]** ドロップダウン リストが表示されます。 [HelloWorldVB] ドロップダウン リストをクリックします。 次の行がファイルに追加されます。  
+5.  フォルダーの 1 つとして HelloWorldVB が表示されるはずです。 これをダブルクリックします。 **スニペットの挿入:HellowWorldVB >** ドロップダウン リストを持つ**HelloWorldVB**します。 [HelloWorldVB] ドロップダウン リストをクリックします。 次の行がファイルに追加されます。  
   
     ```vb  
     Console.WriteLine("Hello, World!")  
     ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コード スニペット](../ide/code-snippets.md)
-
-
-

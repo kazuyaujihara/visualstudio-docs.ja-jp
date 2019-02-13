@@ -1,14 +1,9 @@
 ---
-title: '方法: .NET Framework のバージョンをターゲットにする | Microsoft Docs'
-ms.custom: ''
+title: '方法: .NET Framework のバージョンを対象 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework version [Visual Studio]
 - versions [Visual Studio], targeting .NET Framework version
@@ -16,13 +11,13 @@ ms.assetid: dea62d25-3d1b-492e-a6cc-b5154489800a
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3370c62535f2bb915115533ea79f4b913c3ac347
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ee322255cbb737aa4503517c599c62c9151937ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782308"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>方法: .NET Framework のバージョンをターゲットにする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +80,7 @@ ms.locfileid: "49182365"
     > [!NOTE]
     >  対象とするバージョンとは別の .NET Framework のバージョンへの参照がコードに含まれている場合、コードをコンパイルまたは実行するとエラー メッセージが表示されることがあります。 これらのエラーを解決するには、参照を変更する必要があります。 「[.NET Framework を対象とするエラーのトラブルシューティング](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio のマルチ ターゲットの概要](../ide/visual-studio-multi-targeting-overview.md)   
  [ASP.NET Web プロジェクト用の .NET Framework Multi-Targeting](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [.NET Framework を対象とするエラーのトラブルシューティング](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   
@@ -93,6 +88,3 @@ ms.locfileid: "49182365"
  [[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [プロジェクトの構成](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
  [方法: ターゲット フレームワークおよびプラットフォームのツールセットを変更する](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
-
-
-

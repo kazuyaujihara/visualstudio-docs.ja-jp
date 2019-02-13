@@ -21,7 +21,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54782211"
 ---
-# <a name="how-to-manually-create-web-templates"></a>方法: Web テンプレートを手動で作成する」を参照してください。
+# <a name="how-to-manually-create-web-templates"></a>方法 : Web テンプレートを手動で作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Web テンプレートの作成方法は、他の種類のテンプレートを作成する場合と異なります。 Web プロジェクト テンプレートは **[新しい Web サイトの追加]** ダイアログ ボックスに表示され、Web プロジェクトの項目はプログラミング言語によって分類されるので、.vstemplate ファイルではテンプレートを Web テンプレートとして指定し、プログラミング言語を示す必要があります。  
@@ -86,6 +86,6 @@ Web テンプレートの作成方法は、他の種類のテンプレートを�
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)

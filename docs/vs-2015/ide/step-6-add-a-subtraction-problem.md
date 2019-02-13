@@ -1,25 +1,20 @@
 ---
-title: '手順 6: 減算問題の追加 | Microsoft ドキュメント'
-ms.custom: ''
+title: '手順 6: 減算問題の追加 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 793204bf4a08d09d7ce6e48e37254dd311ac6a08
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 500836281c1dba10bfdfe61b2442d30fb985fe38
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229243"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796625"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>手順 6: 減算問題の追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,6 +86,3 @@ IntelliSense 内での Next() メソッドのオーバーライド
 -   チュートリアルの次の手順に進むには、「[手順 7: 乗算問題と除算問題の追加](../ide/step-7-add-multiplication-and-division-problems.md)」を参照してください。  
   
 -   チュートリアルの前の手順に戻るには、「[手順 5: NumericUpDown コントロールの Enter イベント ハンドラーの追加](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)」を参照してください。
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: MSBuild インライン タスク | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f210aa8e33859f41046edc8e524cbfbeaf5417b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 03a0dcde4b96afa028a69f5def5cdb52632e5e85
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898617"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792173"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild インライン タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -149,7 +144,7 @@ Log.LogError("Hello, world!");
   
 - `Output` は省略可能な属性で、既定値は `false` です。 `true` の場合、そのパラメーターの値を、Execute メソッドから戻る前に指定する必要があります。  
   
-  例えば以下のようにします。  
+  たとえば、オブジェクトに適用された  
   
 ```  
 <ParameterGroup>  
@@ -197,9 +192,6 @@ File.WriteAllText(Path, content);
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [タスク](../msbuild/msbuild-tasks.md)   
  [チュートリアル: インライン タスクの作成](../msbuild/walkthrough-creating-an-inline-task.md)
-
-
-

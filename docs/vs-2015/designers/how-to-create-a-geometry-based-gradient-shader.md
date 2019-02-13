@@ -1,25 +1,20 @@
 ---
-title: '方法: ジオメトリベースのグラデーション シェーダーを作成する | Microsoft Docs'
-ms.custom: ''
+title: '方法: ジオメトリ ベースのグラデーション シェーダーを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 61dd80bb8d8ba4c272beff018d3ab65ffce41dc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911877"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797538"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>方法: ジオメトリベースのグラデーション シェーダーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,19 +65,16 @@ ms.locfileid: "49911877"
   
  シェーダーによっては、特定の図形を使用すると、より適切にプレビューできる可能性があります。 シェーダー デザイナーでシェーダーをプレビューする方法については、「[シェーダー デザイナー](../designers/shader-designer.md)」の「**シェーダーのプレビュー**」を参照してください。  
   
- 次の図は、このドキュメントで説明したシェーダーを「[方法: 3-D 地形をモデル化する](../designers/how-to-model-3-d-terrain.md)」に示した 3-D シーンに適用したものです。 ここでは、色の輝度とワールド空間のポイントの高さが共に増加しています。  
+ 次の図は、」に示した 3-D シーンに適用するこのドキュメントで説明したシェーダーを示します[方法。3-D 地形をモデル化](../designers/how-to-model-3-d-terrain.md)します。 ここでは、色の輝度とワールド空間のポイントの高さが共に増加しています。  
   
  ![3&#45;D 地形モデルに適用されたグラデーション効果](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")  
   
- 3-D モデルにシェーダーを適用する方法の詳細については、「[方法: シェーダーを 3-D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)」を参照してください。  
+ シェーダーを 3-D モデルに適用する方法の詳細については、次を参照してください。[方法。シェーダーを 3-D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)します。  
   
-## <a name="see-also"></a>関連項目  
- [方法: シェーダーを 3-D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+## <a name="see-also"></a>参照  
+ [方法: シェーダーを 3-D モデルに適用します。](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)   
- [方法: 3-D 地形をモデル化する](../designers/how-to-model-3-d-terrain.md)   
+ [方法: 3-D 地形をモデル](../designers/how-to-model-3-d-terrain.md)   
  [方法: グレースケール テクスチャ シェーダーを作成する](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [シェーダー デザイナー](../designers/shader-designer.md)   
  [シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)
-
-
-

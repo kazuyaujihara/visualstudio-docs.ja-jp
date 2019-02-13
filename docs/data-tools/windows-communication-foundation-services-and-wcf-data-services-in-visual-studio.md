@@ -33,15 +33,14 @@ ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677d68aab6f6dfdb39f12ba33002758f61a03a31
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: b253c4e3447b8d7cd76dcef010adf99addb7bf9d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919942"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933666"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio での Windows Communication Foundation サービスと WCF データ サービス
 
@@ -92,7 +91,7 @@ WCF クライアントが作成された後は、他のオブジェクトと同�
 
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio での WCF ツール
 
-Visual Studio には、WCF サービスと WCF クライアントの両方を作成するためのツールが用意されています。 ツールについて説明するチュートリアルでは、次を参照してください。[チュートリアル。Windows フォームでのシンプルな WCF サービスの作成
+Visual Studio には、WCF サービスと WCF クライアントの両方を作成するためのツールが用意されています。 ツールについて説明するチュートリアルでは、次を参照してください。[チュートリアル: Windows フォームにおける単純な WCF サービスを作成する](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)します。
 
 ### <a name="create-and-test-wcf-services"></a>作成し、WCF サービスのテスト
 
@@ -174,7 +173,7 @@ Visual Studio がプロキシとサービスを使用して、追加のエンド
 
 4.  内で、`<EndPoint>`タグが表示されます、 `name="` *SomeService* `"`パラメーター (場所*SomeService*エンドポイント名を表します)。 渡すことができるエンドポイントの名前が、`endpointConfigurationName As String`サービス参照のコンス トラクターのオーバー ロードします。
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>方法: サービス メソッドを非同期的に呼び出す
+## <a name="how-to-call-a-service-method-asynchronously"></a>方法: 非同期サービス メソッドを呼び出す
 
 Windows Communication Foundation (WCF) サービスのほとんどのメソッドは、同期または非同期で呼び出すことができます。 メソッドを非同期的に呼び出すには、低速接続で実行しているときに、メソッドが呼び出されるときに作業を続行するアプリケーションができるようにします。
 
@@ -193,7 +192,7 @@ Windows Communication Foundation (WCF) サービスのほとんどのメソッ�
 
 3.  **サービス参照の構成**ダイアログ ボックスで、**非同期操作を生成する**チェック ボックスをオンします。
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>方法: サービスによって返されるデータをバインドします。
+## <a name="how-to-bind-data-returned-by-a-service"></a>方法: サービスによって返されるデータのバインド
 
 他のデータ ソースをコントロールにバインドすると同様、コントロールに Windows Communication Foundation (WCF) サービスによって返されるデータをバインドすることができます。 自動的に追加されますが、サービスにデータを返す複合型が含まれている場合に、WCF サービスへの参照を追加すると、**データソース**ウィンドウ。
 
@@ -255,7 +254,7 @@ Windows Communication Foundation (WCF) サービスのほとんどのメソッ�
 
 | Title | 説明 |
 | - | - |
-| [チュートリアル: Windows フォームでの簡単な WCF サービスの作成](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Visual Studio で作成および WCF サービスのステップ バイ ステップ デモを提供します。 |
+| [チュートリアル : Windows フォームでの簡単な WCF サービスの作成](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Visual Studio で作成および WCF サービスのステップ バイ ステップ デモを提供します。 |
 | [チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | ステップ バイ ステップを作成して、Visual Studio で WCF Data Services を使用する方法のデモを提供します。 |
 | [WCF 開発ツールの使用](/dotnet/framework/wcf/using-the-wcf-development-tools) | 作成し、Visual Studio で WCF サービスをテストする方法について説明します。 |
 | | [方法: WCF データ サービス参照を追加、更新、または削除する](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |

@@ -1,27 +1,22 @@
 ---
-title: 'チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成 | Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 8d42620f-553b-4b04-a38b-f6b306d73a50
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9ab2c5bbea358c226407ba83e2a367195ecfef06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270612"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803732"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル サービスを利用してデータの格納および提供を行う、最新式のデスクトップ アプリケーションをすばやく作成することができます。  
@@ -48,7 +43,7 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
 3.  テンプレートの一覧で、 **[WPF アプリケーション]** テンプレートを選択します。  
   
-4.  **[名前]** ボックスに「 `WPFQuickStart`」と入力して、 **[OK]** を選択します。  
+4.   **[名前]** ボックスに「 `WPFQuickStart`」と入力して、 **[OK]** を選択します。  
   
      プロジェクトが作成され、プロジェクト ファイルが **ソリューション エクスプローラー**に追加され、 **MainWindow.xaml** という名前の既定のアプリケーション ウィンドウのデザイナーが表示されます。  
   
@@ -81,7 +76,7 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
 3.  **[Common]** フォルダーのショートカット メニューを開き、 **[追加]**、 **[ユーザー コントロール]** の順に選択します。  
   
-4.  **[新しい項目の追加]** ダイアログで、[名前] フィールドを選択して「 `QuickStartTask`」と入力して、 **[追加]** を選択します。  
+4.   **[新しい項目の追加]** ダイアログで、[名前] フィールドを選択して「 `QuickStartTask`」と入力して、 **[追加]** を選択します。  
   
      ユーザー コントロールがプロジェクトに追加され、 **[QuickStartTask.xaml]** ファイルがデザイナーで開きます。  
   
@@ -217,7 +212,7 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
     xmlns:local=”clr-namespace:WPFQuickStart.Common”  
     ```  
   
-3.  **[プロパティ]** ウィンドウで、 **Common** カテゴリ ノードを展開し **[Title]** プロパティを選択してから、「 `WPF Todo List` 」と入力して **Enter** キーを押します。  
+3.   **[プロパティ]** ウィンドウで、 **Common** カテゴリ ノードを展開し **[Title]** プロパティを選択してから、「 `WPF Todo List` 」と入力して **Enter** キーを押します。  
   
      [XAML] ウィンドウの **[Title]** 要素がこの新しい値と一致していることに注目してください。 XAML のプロパティは、[XAML] ウィンドウまたは **[プロパティ]** ウィンドウのいずれかで変更でき、それらの変更は同期されます。  
   
@@ -514,7 +509,7 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
 1.  Microsoft Azure ポータルで、モバイル サービスの名前の横にある右矢印をクリックし、メニュー バーで **[データ]** を選択してから、 **[テーブルの追加]** リンクを選択します。  
   
-2.  **[新しいテーブルの作成]** ダイアログの **[テーブル名]** テキスト ボックスに「 `TodoItem`」と入力して、 **[完了]** (チェックマーク) ボタンをクリックします。  
+2.   **[新しいテーブルの作成]** ダイアログの **[テーブル名]** テキスト ボックスに「 `TodoItem`」と入力して、 **[完了]** (チェックマーク) ボタンをクリックします。  
   
      テーブルの作成が完了するのを待機してから、最後の手順に進みます。  
   
@@ -554,7 +549,7 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
 1.  メニュー バーで、 **[デバッグ]**、 **[デバッグの開始]** の順に選択します (または F5 キーを押します)。  
   
-2.  **[Insert a TodoItem]** テキスト ボックスに「 `Do something`」と入力して、 **[Save]** を選択します。  
+2.   **[Insert a TodoItem]** テキスト ボックスに「 `Do something`」と入力して、 **[Save]** を選択します。  
   
 3.  Enter `Do something else`」と入力して、 **[Save]** ボタンを再度クリックします。  
   
@@ -573,9 +568,6 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
  Azure Mobile Services を使用して、既存の SQL データベースや他のデータ ソースに接続することができます。 「 [Mobile Services のドキュメント](http://azure.microsoft.com/services/app-service/mobile/)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [チュートリアル: 初めての WPF デスクトップ アプリケーション](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
  [Windows Presentation Foundation での最新のデスクトップ アプリケーションの作成](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

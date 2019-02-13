@@ -1,14 +1,9 @@
 ---
 title: 概要ビュー | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fdacfcba18d465685053cdea4581a5806c25db9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bfba1981fb6becea34fb567a2f7ae2e6c06896d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757321"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767858"
 ---
 # <a name="summary-view"></a>概要 ビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +52,12 @@ ms.locfileid: "51757321"
 |**トリミングされたコール ツリーの表示**|コール ツリー ビューに最も負荷が高い実行パスを表示します。 詳細については、「[コール ツリー ビュー](../profiling/call-tree-view.md)」を参照してください。|  
 |**ホット ラインの表示**|インストルメンテーション メソッドを使用して収集されたプロファイル データには使用できません。 行ビューに最も負荷が高いソース コードを表示します。 詳細については、「[行ビュー](../profiling/lines-view.md)」を参照してください。|  
 |**レポートの比較**|**[比較のための分析ファイルを選択します]** ダイアログ ボックスを表示します。このダイアログ ボックスで、現在のファイルと比較する別のプロファイル データ ファイルを指定できます。 詳細については、「[パフォーマンス データ ファイルの比較](../profiling/comparing-performance-data-files.md)」を参照してください。|  
-|**レポート データのエクスポート**|**[レポートのエクスポート]** ダイアログ ボックスを表示します。このダイアログ ボックスで、コンマ区切りの値 (.csv) または .xml ファイルとして保存する 1 つ以上のレポート ビューを指定できます。 詳細については、「[How to: Export Profiling Tools Reports](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451)」(方法 : プロファイル ツール レポートをエクスポートする) を参照してください。|  
-|**分析されたレポートの保存**|現在のプロファイル データ ファイルを .vsps ファイルとして保存します。このファイルは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のインターフェイスでよりすばやく開くことができます。 詳細については、「[How to: Save Analyzed Profiling Data Files](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)」(方法: 分析されたプロファイリング データ ファイルを保存する) を参照してください。|  
+|**レポート データのエクスポート**|**[レポートのエクスポート]** ダイアログ ボックスを表示します。このダイアログ ボックスで、コンマ区切りの値 (.csv) または .xml ファイルとして保存する 1 つ以上のレポート ビューを指定できます。 詳細については、「[How to: Export Profiling Tools Reports](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451)」(方法 : プロファイル ツール レポートをエクスポートする) を参照してください。|  
+|**分析されたレポートの保存**|現在のプロファイル データ ファイルを .vsps ファイルとして保存します。このファイルは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のインターフェイスでよりすばやく開くことができます。 詳細については、「[How to: Save Analyzed Profiling Data Files](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)」(方法: 分析されたプロファイリング データ ファイルを保存する) を参照してください。|  
 |**レポート データのフィルター**|プロファイル レポート フィルター ウィンドウを表示します。このウィンドウでは、レポート ビューに表示されるデータを制限するための条件を指定できます。 詳細については、「[パフォーマンス レポート ビュー フィルター](../profiling/performance-report-view-filter.md)」を参照してください。|  
 |**全画面表示の切り替え**|レポート ビューの全画面表示モードを切り替えます。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [概要 ビュー](../profiling/summary-view-sampling-data.md)   
  [概要 ビュー](../profiling/summary-view-instrumentation-data.md)   
  [概要 ビュー](../profiling/summary-view-dotnet-memory-data.md)
-
-
-
