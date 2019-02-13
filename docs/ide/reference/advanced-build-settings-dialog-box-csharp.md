@@ -1,7 +1,6 @@
 ---
 title: '[ビルドの詳細設定] ダイアログ ボックス (C#)'
 ms.date: 06/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6ac21b5a10f45d6f105e02517a15a5b6c4b2368
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956598"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930463"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>[ビルドの詳細設定] ダイアログ ボックス (C#)
 
@@ -94,7 +93,7 @@ ms.locfileid: "54956598"
 
 DLL を読み込む位置に推奨されるベース アドレスを指定します。 DLL の既定のベース アドレスは、[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 共通言語ランタイムにより設定されます。 詳しくは、「[/baseaddress (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)」をご覧ください。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)
 - [[ビルド] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-page-project-designer-csharp.md)

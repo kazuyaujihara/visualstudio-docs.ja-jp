@@ -2,7 +2,6 @@
 title: Visual Studio 2017 の概要
 titleSuffix: ''
 ms.date: 10/26/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f58fd5969a06cadf0ebbbb61f58a9ecbe12ef0d2
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 32bb2ea08ffc5b60948d45c31b7c7a471d7d57ea
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483784"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155957"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE へようこそ
 
@@ -287,5 +286,4 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 - [Visual Studio のその他の機能](../ide/advanced-feature-overview.md)を確認します
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/) にアクセスします
 - [Visual Studio ブログ](https://blogs.msdn.microsoft.com/visualstudio/)を参照します
-- [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) で無料の Visual Studio コースを確認します
 - [Visual Studio のダウンロード ページ](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)で Visual Studio をダウンロードします

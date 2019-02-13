@@ -2,7 +2,6 @@
 title: Python サポートをインストールする
 description: Visual Studio 2017、2015、2013、2012、2010 で Python Tools for Visual Studio (PTVS) をインストールする方法と、オプションやインストールの場所。
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31fc5a4ffd9f6c973597e59bac6c89823b30d80b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a74c5992699fa321839c671f527c513ae2b9291
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991178"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155488"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows に Visual Studio の Python サポートをインストールする方法
 
@@ -69,10 +68,6 @@ Visual Studio 用の Python サポート (Python Tools for Visual Studio (PTVS) 
 1. インストール後、Visual Studio を変更、起動、修復またはアンインストールするオプションが提供されます。 Visual Studio への更新プログラムがインストールされているすべてのコンポーネントに利用可能になると、**[変更]** ボタンが **[更新]** に変わります。 (その後、**[変更]** オプションは、ドロップダウン メニューから利用可能になります)。Windows の **[スタート]** メニューで "Visual Studio" を検索して、Visual Studio とインストーラーを起動することも可能です。
 
     ![インストーラーからの Visual Studio の起動、変更、またはアンインストール](media/installation-vs-launch.png)
-
-|   |   |
-|---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | Visual Studio での Python サポートのインストールについては、[こちらのビデオ (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) をご覧ください。|
 
 ### <a name="troubleshooting"></a>トラブルシューティング
 
