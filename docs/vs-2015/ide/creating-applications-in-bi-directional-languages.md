@@ -1,14 +1,9 @@
 ---
 title: Visual Studio による双方向言語用アプリケーションの作成 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
 - bi-directional language support, about bi-directional language support
@@ -17,13 +12,13 @@ ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32acd2a58c2482de6fdd7ed10c99a023d41a8cb4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 340dc798cdff3276df78b6cbf13065f7e769cb23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248496"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763454"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Visual Studio による双方向言語用アプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,16 +79,15 @@ Visual Studio では、アラビア語やヘブライ語など、右から左に
 -   コードおよびリテラル テキスト。 (テキスト エディターでもある) コード エディターで、アラビア語またはヘブライ語を使用してクラス、関数、変数、プロパティ、リテラル文字列、属性などに名前を付けることができます。 ただし、エディターでは右から左への読み取り順序がサポートされていません。テキストは常に左の余白から開始されます。  
   
     > [!TIP]
-    >  リテラル文字列は、プログラムにハードコーディングするのではなく、リソース ファイルに配置することをお勧めします。 詳しくは、「[チュートリアル: Windows フォームのローカリゼーション](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5)」をご覧ください。  
+    >  リテラル文字列は、プログラムにハードコーディングするのではなく、リソース ファイルに配置することをお勧めします。 詳細については、「[チュートリアル:Windows フォームのローカリゼーション](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5)します。  
   
     > [!NOTE]
     >  これらの言語で名前を付けたオブジェクトは、一貫した方法で参照する必要があります。 たとえば、アラビア語の変数に Kashida を使用して名前を付けた場合は、その変数を参照するときに常に Kashida を使用する必要があります。そうしないと、エラーが発生します。  
   
 -   コードのコメント。 アラビア語およびヘブライ語は、コメントに使用できます。 また、コメント ビルダー ツールでもこれらの言語を使用できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Windows フォーム アプリケーションの双方向サポート](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
  [ASP.NET Web アプリケーションに対する双方向サポート](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [アプリケーションのグローバル化](../ide/globalizing-applications.md)   
  [アプリケーションのローカライズ](../ide/localizing-applications.md)
-

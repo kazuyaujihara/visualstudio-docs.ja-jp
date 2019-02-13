@@ -1,14 +1,9 @@
 ---
-title: '方法: 参照マネージャーを使用して参照を追加または削除する | Microsoft Docs'
-ms.custom: ''
+title: '方法: 追加または参照マネージャーを使用して参照を削除する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -27,13 +22,13 @@ ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
 caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917558"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756987"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>方法: 参照マネージャーを使用して参照を追加または削除する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +109,7 @@ ms.locfileid: "49917558"
   
   - 同じソリューション内のその他のプロジェクト ディレクトリ。 ここにあるアセンブリは、**[プロジェクト]** タブに表示されます。  
   
-    \- または -  
+    \- または  
   
 - 表示するアセンブリの場所を指定するレジストリ キーを設定します。  
   
@@ -159,16 +154,18 @@ ms.locfileid: "49917558"
   
  Visual Studio 内で、次のような 2 とおりの方法で WinMD ファイルを生成できます。  
   
-- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションのマネージド プロジェクト**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ プロジェクトは、[プロジェクトのプロパティ &amp;amp;#124; 出力の種類 = WinMD ファイル] に設定することにより、WinMD バイナリを出力できます。 WinMD のファイル名はその中に存在するすべての名前空間に対するスーパーセットの名前空間である必要があります。 たとえば、1 つのプロジェクトが名前空間 A.B と A.B.C で形成されている場合は、出力される WinMD で使用可能な名前は A.winmd と A.B.winmd です。 ユーザーが、[プロジェクトのプロパティ &#124; アセンブリ名] または [プロジェクトのプロパティ &#124; 名前空間] に、プロジェクト内の一連の名前空間から分離されている値を入力した場合や、プロジェクト内に存在する名前空間に対するスーパーセットの名前空間が存在しない場合は、次のようなビルドの警告が生成されます。'A.winmd' は、このアセンブリに有効な winmd ファイル名ではありません。 Windows メタデータ ファイル内のすべての型は、ファイル名で指定される名前空間のサブ名前空間に存在する必要があります。 このようなサブ名前空間に存在しない型は、ランタイムに見つかりません。 このアセンブリでは、ファイル名として使用できる最も小さい共通の名前空間は 'CSWSClassLibrary1' です。 デスクトップの Visual Basic プロジェクトまたは Visual C# プロジェクトでは、[!INCLUDE[win8](../includes/win8-md.md)] SDK を使用して生成される WinMD のみを使用できます。このような WinMD を、ファースト パーティ WinMD と呼びます。また、これらのプロジェクトでは WinMD を生成できません。  
+- 
+  **
+  [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションのマネージド プロジェクト**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ プロジェクトは、[プロジェクトのプロパティ &#124; 出力の種類 = WinMD ファイル] に設定することにより、WinMD バイナリを出力できます。 WinMD のファイル名はその中に存在するすべての名前空間に対するスーパーセットの名前空間である必要があります。 たとえば、1 つのプロジェクトが名前空間 A.B と A.B.C で形成されている場合は、出力される WinMD で使用可能な名前は A.winmd と A.B.winmd です。 ユーザーが入力すると、プロジェクトのプロパティ&#124;アセンブリ名またはプロジェクトのプロパティ&#124;がプロジェクトの名前空間のセットから離れて Namespace 値またはプロジェクト内でのスーパー セットの名前空間がない、ビルド警告が生成されます。'A.winmd' では、このアセンブリの有効な .winmd ファイル名はありません。 Windows メタデータ ファイル内のすべての型は、ファイル名で指定される名前空間のサブ名前空間に存在する必要があります。 このようなサブ名前空間に存在しない型は、ランタイムに見つかりません。 このアセンブリでは、ファイル名として使用できる最も小さい共通の名前空間は 'CSWSClassLibrary1' です。 デスクトップの Visual Basic プロジェクトまたは Visual C# プロジェクトでは、[!INCLUDE[win8](../includes/win8-md.md)] SDK を使用して生成される WinMD のみを使用できます。このような WinMD を、ファースト パーティ WinMD と呼びます。また、これらのプロジェクトでは WinMD を生成できません。  
   
-- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションのネイティブ プロジェクト**: ネイティブ WinMD ファイルは、メタデータのみで構成されます。 その実装は、別の DLL ファイル内に存在します。 **[新しいプロジェクト]** ダイアログ ボックス内で Windows ランタイム構成プロジェクト テンプレートを選ぶか、空のプロジェクトから作業を開始し、WinMD ファイルを生成するようにプロジェクトのプロパティを変更することによって、ネイティブ バイナリを生成できます。 プロジェクトが、分離された複数の名前空間で形成されている場合は、ユーザーがそれらの名前空間を結合するか、MSMerge ツールを実行することを求めるビルド エラーが表示されます。  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションのネイティブ プロジェクト**:ネイティブ WinMD ファイルは、メタデータのみで構成されます。 その実装は、別の DLL ファイル内に存在します。 **[新しいプロジェクト]** ダイアログ ボックス内で Windows ランタイム構成プロジェクト テンプレートを選ぶか、空のプロジェクトから作業を開始し、WinMD ファイルを生成するようにプロジェクトのプロパティを変更することによって、ネイティブ バイナリを生成できます。 プロジェクトが、分離された複数の名前空間で形成されている場合は、ユーザーがそれらの名前空間を結合するか、MSMerge ツールを実行することを求めるビルド エラーが表示されます。  
   
   [Windows] タブの中には、次の 2 つのサブグループがあります。  
   
 ### <a name="core-subgroup"></a>[コア] サブグループ  
  [コア] サブグループには、対象となる Windows のバージョンに対応する SDK の中にある (Windows ランタイム要素に対応する) すべての WinMD が一覧表示されます。  
   
- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーション プロジェクトには、プロジェクトを作成した時点の既定として、[!INCLUDE[win8](../includes/win8-md.md)] 内にあるすべての WinMD への参照が含まれています。 マネージド プロジェクトでは、**ソリューション エクスプローラー**の [参照] フォルダーの下にある 1 つの読み取り専用ノードが、[!INCLUDE[win8](../includes/win8-md.md)] SDK 全体に対する参照を示します。 したがって、[参照マネージャー] の [コア] サブグループでは、[!INCLUDE[win8](../includes/win8-md.md)] SDK からのアセンブリのいずれも列挙されず、代わりに次のメッセージが表示されます。"The Windows SDK is already referenced. (Windows SDK が既に参照されています。) Please use the Object Browser to explore the references in the Windows SDK. (オブジェクト ブラウザーを使用して Windows SDK 内の参照を調べてください。)"  
+ [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーション プロジェクトには、プロジェクトを作成した時点の既定として、[!INCLUDE[win8](../includes/win8-md.md)] 内にあるすべての WinMD への参照が含まれています。 マネージド プロジェクトでは、**ソリューション エクスプローラー**の [参照] フォルダーの下にある 1 つの読み取り専用ノードが、[!INCLUDE[win8](../includes/win8-md.md)] SDK 全体に対する参照を示します。 したがって、参照マネージャーで [コア] サブグループいずれも列挙されず、アセンブリからの[!INCLUDE[win8](../includes/win8-md.md)]SDK 代わりにメッセージを表示します。"The Windows SDK is already referenced. (Windows SDK が既に参照されています。) Please use the Object Browser to explore the references in the Windows SDK. (オブジェクト ブラウザーを使用して Windows SDK 内の参照を調べてください。)"  
   
  デスクトップ プロジェクトでは、[コア] サブグループは既定では表示されません。 Windows ランタイムを追加するために、プロジェクト ノードのショートカット メニューを開き、**[プロジェクトのアンロード]** をクリックし、次のスニペットを追加してから、プロジェクトをもう一度開きます (プロジェクト ノードで、**[プロジェクトの再読み込み]** をクリックします)。 **[参照マネージャー]** ダイアログ ボックスを開くと、[コア] サブグループが表示されます。  
   
@@ -220,9 +217,6 @@ ms.locfileid: "49917558"
 ## <a name="search"></a>検索  
  **[参照マネージャー]** ダイアログ ボックス内の検索バーは、現在フォーカスが置かれているタブを対象として動作します。 たとえば、**[ソリューション]** タブにフォーカスがあるときにユーザーが検索バーに「System」と入力した場合は、"System" という文字列を含むプロジェクト名がソリューションを形成している状況以外では、検索結果が返されません。  
   
-## <a name="see-also"></a>関連項目  
- [NIB 方法: [参照の追加] ダイアログ ボックスを使用して参照を追加または削除する](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+## <a name="see-also"></a>参照  
+ [(NIB) 方法:追加または参照の追加 ダイアログ ボックスを使用して参照を削除します。](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [プロジェクト内の参照の管理](../ide/managing-references-in-a-project.md)
-
-
-

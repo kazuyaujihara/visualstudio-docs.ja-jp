@@ -1,14 +1,9 @@
 ---
 title: '方法: Web サイトのパフォーマンス データを収集する | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -23,13 +18,13 @@ ms.assetid: a62d27fd-a966-4065-bebe-6874195a71fb
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 646d5a59dee68123e478da074901c9d6f98c2763
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766153"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>方法: Web サイトのパフォーマンス データを収集する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ ms.locfileid: "51783910"
   
 8.  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションのパフォーマンス セッションが作成され、ブラウザーで Web サイトが起動します。 プロファイリングする機能を実行してからブラウザーを閉じます。  
   
-     プロファイラーで、データ ファイルが生成され、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] メイン ウィンドウにデータの概要ビューが表示されます。  
+     プロファイラーで、データ ファイルが生成され、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] メイン ウィンドウにデータの概要ビューが表示されます。  
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Visual Studio でプロジェクトを開かずに Web サイトをプロファイリングする  
   
@@ -107,11 +102,8 @@ ms.locfileid: "51783910"
   
      プロファイラーで、データ ファイルが生成され、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] メイン ウィンドウにデータの概要ビューが表示されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [概要](../profiling/overviews-performance-tools.md)   
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [インストルメンテーション データ値について](../profiling/understanding-instrumentation-data-values.md)   
  [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)
-
-
-

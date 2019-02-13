@@ -1,14 +1,9 @@
 ---
-title: '方法: プロジェクト テンプレートを作成する | Microsoft Docs'
-ms.custom: ''
+title: '方法: プロジェクト テンプレートの作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ExportTemplateWizard
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fb68a9902fc3adf9f2643b52e069cf182d9ca75a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a7a48039699c5bb35e07a21e5c5c3be8ae8585f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225512"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785914"
 ---
 # <a name="how-to-create-project-templates"></a>方法 : プロジェクト テンプレートを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49225512"
   
 2.  プロジェクトを編集して、テンプレートとしてエクスポートできる状態にします。  
   
-3.  必要に応じて、コード ファイルを編集し、パラメーター置換を行う場所を示します。 パラメーター置換について詳しくは、「[方法: テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」をご覧ください。  
+3.  必要に応じて、コード ファイルを編集し、パラメーター置換を行う場所を示します。 パラメーター置換の詳細については、次を参照してください。[方法。テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」を参照してください。  
   
 4.  **[ファイル]** メニューの **[テンプレートのエクスポート]** をクリックします。 **[テンプレートのエクスポート]** ウィザードが開きます。  
   
@@ -61,9 +56,6 @@ ms.locfileid: "49225512"
   
      [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] がインストールされている場合は、**VSIX プロジェクト** テンプレートを使うことで、完成したテンプレートを配置用に .vsix ファイルにラップすることができます。 詳しくは、「[VSIX プロジェクトのテンプレートの概要](../extensibility/getting-started-with-the-vsix-project-template.md)」をご覧ください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [方法 : 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)
-
-
-

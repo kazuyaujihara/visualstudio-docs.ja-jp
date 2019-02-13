@@ -1,14 +1,9 @@
 ---
 title: Visual C# の IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [J#]
 - Visual C#, IntelliSense
@@ -17,13 +12,13 @@ ms.assetid: 79ca304d-dc1e-4dc9-a2a6-7808df2e588e
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862204"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800876"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# の IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Visual C# の IntelliSense は、エディターでコーディングする際�
   C# でのコンプリート リストは非常に高機能でもあるため、コンテキストに基づいて、無関係なトークンを除外したり、トークンを事前に選択したりします。 詳細については、「[C# でフィルター処理されたコンプリート リスト](../misc/filtered-completion-lists-in-csharp.md)」および「[C# で事前に選択されたコンプリート リスト項目](../misc/pre-selected-completion-list-items-in-csharp.md)」を参照してください。  
   
 ###  <a name="CodeSnippets"></a> コンプリート リストのコード スニペット  
- Visual C# のコンプリート リストには、コード スニペットが含まれており、事前に定義されたコードの本体をプログラムに簡単に挿入できます。 コード スニペットは、スニペットの [Shortcut 要素 (IntelliSense コード スニペット)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa) としてコンプリート リストに表示されます。  既定で Visual C# で利用できるコード スニペットの詳細については、「[Visual C# のコード スニペット](../ide/visual-csharp-code-snippets.md)」を参照してください。  
+ Visual C# のコンプリート リストには、コード スニペットが含まれており、事前に定義されたコードの本体をプログラムに簡単に挿入できます。 コード スニペットは、スニペットの [Shortcut 要素 (IntelliSense コード スニペット)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) としてコンプリート リストに表示されます。  既定で Visual C# で利用できるコード スニペットの詳細については、「[Visual C# のコード スニペット](../ide/visual-csharp-code-snippets.md)」を参照してください。  
   
 ###  <a name="Keywords"></a> コンプリート リストの言語キーワード  
  Visual C# のコンプリート リストには、言語キーワードも含まれています。 C# の言語キーワードの詳細については、「[C# のキーワード](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)」を参照してください。  
@@ -162,8 +157,5 @@ Visual C# の IntelliSense は、エディターでコーディングする際�
   
  次のタスクは、IntelliSense が `button1_Click` という名前のイベント ハンドラーを、`button1.Click` という名前のイベント フィールドに自動的にフックアップする方法について示しています。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
-

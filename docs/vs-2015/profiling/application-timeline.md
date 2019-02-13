@@ -1,25 +1,20 @@
 ---
 title: アプリケーション タイムライン |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8d3a8edb0a2bf7809fc125812b5d541ba008547a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 89e1b8460ccfa99a1adef93ed6bcd78990f75d67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751434"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792962"
 ---
 # <a name="application-timeline"></a>アプリケーションのタイムライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,10 +119,7 @@ ms.locfileid: "51751434"
 |![タイムラインの詳細リストのフィルター](../profiling/media/timeline-filter.png "TIMELINE_Filter")|選択したカテゴリまたはイベントの長さに基づいて、一覧をフィルター処理します。|  
 |![タイムラインの詳細情報のカスタマイズ](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|イベントに注釈を指定できます。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [WPF チーム ブログ: WPF アプリケーション用の新しい UI パフォーマンス分析ツール](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
- [C++、C#、または Visual Basic を使った Windows ストア アプリのパフォーマンスのベスト プラクティス](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
+ [C++、C#、または Visual Basic を使った Windows ストア アプリのパフォーマンスのベスト プラクティス](http://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [WPF アプリケーションのパフォーマンスの最適化](http://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
-
-
-

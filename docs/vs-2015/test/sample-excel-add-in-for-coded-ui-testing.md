@@ -1,33 +1,28 @@
 ---
 title: コード化された UI テスト用の Excel アドインのサンプル | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, Excel Add-in sample
 ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 564669d5af3ea526ad8822d3aea7310095151c6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ded54760efe611b337c736e0474042b70ff8bf2e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290681"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791951"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>コード化された UI テスト用の Excel アドインのサンプル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 この [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 用アドイン サンプルは、Excel ワークシートのコード化された UI テストを明確にサポートし、Visual Studio Enterprise で動作するように設計されています。 このアドインは、Visual Studio Tools for Office を使用して作成されています。  
   
- Excel アドインを作成する方法の詳細については、「[チュートリアル : 初めての Excel 用 VSTO アドインの作成](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)」を参照するか、または MSDN で "Excel アドイン" を検索してください。  
+ Excel アドインを作成する方法の詳細については、次を参照してください。[チュートリアル。Excel 用の最初の VSTO アドインを作成する](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)またはの「Excel アドイン」MSDN を検索します。  
   
  Excel アドインは Excel 用のコード化された UI テスト拡張機能に関するこのドキュメントの主題ではありませんが、いくつかのコメントが役立ちます。  
   
@@ -50,10 +45,7 @@ ms.locfileid: "49290681"
 ## <a name="exceluicommunicator-class"></a>ExcelUICommunicator クラス  
  このクラスは、`IExcelUITestCommunication` インターフェイスを実装し、Excel オブジェクト モデルから要求された UI 情報を取得します。 詳細については、「[Excel Communicator インターフェイスのサンプル](../test/sample-excel-communicator-interface.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コード化された UI テストと操作の記録を拡張して Microsoft Excel をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
  [チュートリアル : 初めての Excel 用 VSTO アドインの作成](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
  [Office および SharePoint 開発](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: '方法 : 複数プロジェクトのテンプレートを作成する | Microsoft Docs'
-ms.custom: ''
+title: '方法: 複数プロジェクトのテンプレートの作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project templates
 - project templates, creating multi-project templates
@@ -17,13 +12,13 @@ ms.assetid: 8c7f7065-137e-40ad-868d-37e007270efd
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950850"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755340"
 ---
 # <a name="how-to-create-multi-project-templates"></a>方法 : 複数プロジェクトのテンプレートを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,14 +49,14 @@ ms.locfileid: "49950850"
   
   複数プロジェクトのテンプレートのルート .vstemplate ファイルは、単一プロジェクトのテンプレートとは次の点が異なります。  
   
-- `VSTemplate` 要素の `Type` 属性には値 `ProjectGroup` が含まれます。 例えば:  
+- `VSTemplate` 要素の `Type` 属性には値 `ProjectGroup` が含まれます。 次に例を示します。  
   
   ```  
   <VSTemplate Version="2.0.0" Type="ProjectGroup"  
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
   ```  
   
-- `TemplateContent` 要素には、含まれるプロジェクトの .vstemplate ファイルへのパスを定義する 1 つ以上の `ProjectTemplateLink` 要素を持つ `ProjectCollection` 要素が含まれます。 例えば:  
+- `TemplateContent` 要素には、含まれるプロジェクトの .vstemplate ファイルへのパスを定義する 1 つ以上の `ProjectTemplateLink` 要素を持つ `ProjectCollection` 要素が含まれます。 次に例を示します。  
   
   ```  
   <TemplateContent>  
@@ -154,13 +149,10 @@ ms.locfileid: "49950850"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
  [方法 : プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
  [SolutionFolder 要素 (Visual Studio テンプレート)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
  [ProjectTemplateLink 要素 (Visual Studio テンプレート)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
-
-
-

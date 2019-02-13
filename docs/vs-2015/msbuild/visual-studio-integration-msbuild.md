@@ -1,14 +1,9 @@
 ---
 title: Visual Studio の統合 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -23,13 +18,13 @@ ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b9591ebff8708d0cd63825854c31cf297d32ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763311"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio の統合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,14 +49,14 @@ Visual Studio は、マネージド プロジェクトの読み込みとビル�
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
-Condition=" '$(Configuration)' == 'Release' "   
+Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はこの目的のために、`PropertyGroup`、`ItemGroup`、`Import`、プロパティ、および項目要素の条件を確認します。  
   
 ## <a name="additional-build-actions"></a>その他のビルド アクション  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、[[ファイルのプロパティ]](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) ウィンドウの **[ビルド アクション]** プロパティを使用して、プロジェクト内のファイルの項目の種類名を変更できます。 `Compile`、 `EmbeddedResource`、 `Content`、および `None` の各項目の種類名は、プロジェクト内に既に存在する他の項目の種類名と共に、常にこのメニューに表示されます。 このメニューにカスタムの項目の種類名すべてが常に表示されるようにするには、 `AvailableItemName`という項目の種類に名前を追加します。 たとえば、プロジェクト ファイルに次の内容を追加すると、このファイルをインポートするすべてのプロジェクトの当該メニューに、カスタム型 `JScript` が追加されます。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、[[ファイルのプロパティ]](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) ウィンドウの **[ビルド アクション]** プロパティを使用して、プロジェクト内のファイルの項目の種類名を変更できます。 `Compile`、 `EmbeddedResource`、 `Content`、および `None` の各項目の種類名は、プロジェクト内に既に存在する他の項目の種類名と共に、常にこのメニューに表示されます。 このメニューにカスタムの項目の種類名すべてが常に表示されるようにするには、 `AvailableItemName`という項目の種類に名前を追加します。 たとえば、プロジェクト ファイルに次の内容を追加すると、このファイルをインポートするすべてのプロジェクトの当該メニューに、カスタム型 `JScript` が追加されます。  
   
 ```  
 <ItemGroup>  
@@ -187,7 +182,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  Visual Studio の通常のビルドでは、高速更新チェックは適用されず、コマンド プロンプトでビルドを開始する場合と同じ方法でプロジェクトがビルドされます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法: Visual Studio ビルド処理を拡張する](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [IDE 内からのビルドの開始](../msbuild/starting-a-build-from-within-the-ide.md)   
  [.NET Framework の拡張機能の登録](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
@@ -197,6 +192,3 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [Target 要素 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Csc タスク](../msbuild/csc-task.md)   
  [Vbc タスク](../msbuild/vbc-task.md)
-
-
-

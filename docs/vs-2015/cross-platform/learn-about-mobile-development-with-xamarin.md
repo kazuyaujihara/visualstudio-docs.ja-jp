@@ -1,21 +1,17 @@
 ---
 title: Xamarin によるモバイル開発の概要 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 329c684dcc09a15ec86f80493d9f084e486b7cfe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733182"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781697"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin を使用したモバイル開発について学習します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,17 +42,17 @@ ms.locfileid: "51733182"
   
   ![Xamarin 環境における Windows 開発機 と Mac 開発機の関係 ](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
-## <a name="essentials-how-projects-are-structured"></a>要点: プロジェクトの構造化の方法  
+## <a name="essentials-how-projects-are-structured"></a>基本情報プロジェクトの構造  
  *10 分から 30 分*  
   
-1.  [コード共有のオプション](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com)。 すべてのターゲット プラットフォームでサポートされる .NET API のみの使用を最も良くサポートしているため、ポータブル クラス ライブラリのオプションを使用することをお勧めします。 ほとんどのビジネス ロジックのコードは、データベースへのアクセス、REST API の呼び出し、ポータブル Xamarin コンポーネントの呼び出し (このトピックの最後の「 [Deeper Dive: Xamarin Components](#components) 」を参照) を含めて、PCL に存在します。 Xamarin.Forms で記述された共通の UI コードは、PCL にも置くことができます。  
+1.  [コード共有のオプション](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com)。 すべてのターゲット プラットフォームでサポートされる .NET API のみの使用を最も良くサポートしているため、ポータブル クラス ライブラリのオプションを使用することをお勧めします。 ほとんどのビジネス ロジックのコードは、データベース、REST Api の呼び出しおよびポータブル Xamarin コンポーネントへの呼び出しへのアクセスを含めて、PCL に置かれます (を参照してください[かかわりについて詳しく説明します。Xamarin コンポーネント](#components)このトピックの最後に)。 Xamarin.Forms で記述された共通の UI コードは、PCL にも置くことができます。  
   
-2.  (省略可能) [ケース スタディ: Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com) では、フル機能アプリのデザインと構造のベスト プラクティスを説明します。たとえば、データ、データ アクセス、ビジネスの各レイヤーを分離する共有コードのために PCL を使用してプロジェクトを構成するなどです。  
+2.  (省略可能)[ケース スタディ。Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) 」(xamarin.com) のデータ、データのアクセス、ビジネス層を分離する共有コードの PCL がある、プロジェクトを構成するなど、フル機能アプリのデザインと構造に関する推奨事項を説明します。  
   
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>要点: ネイティブと Xamarin.Forms UI レイヤー  
  *10 分から 40 分*  
   
- Xamarin では、優れたネイティブ アプリを構築する Xamarin Native と Xamarin.Forms の 2 つの方法を提供します。  
+ Xamarin では、優れたネイティブ アプリをビルドする 2 つの方法を提供します。Xamarin Native と Xamarin.Forms です。  
   
  Xamarin Native を使用して、iOS、Android、Windows の各ターゲット プラットフォームに個別の UI コードを記述します。  この方法では、プラットフォーム固有の API に直接アクセスでき、プラットフォームごとにカスタマイズされた UI エクスペリエンスが可能になります。  また、それぞれの UI の構築を支援するため、各プラットフォーム用のネイティブのデザイナーとコントロールのすべての機能を利用できます。  
   
@@ -76,7 +72,7 @@ ms.locfileid: "51733182"
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) は、簡単な概要、および Xamarin.Forms とネイティブ UI レイヤー (つまり、Xamarin.iOS と Xamarin.Android) を比較した長所と短所を提供します。  
   
-2.  James Montemagno 氏のビデオ「[Xamarin.Forms: Native iOS, Android & Windows apps with C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704)」(Xamarin.Forms: C# と XAML を使用した、ネイティブの iOS、Android および Windows アプリ) (Channel9, 13 分 3 秒) の最初の 3 分間では、別の構成で概要を紹介しており、それに続けてデモを見ることができます。  
+2.  James Montemagno 氏のビデオの最初の 3 分[Xamarin.Forms:ネイティブ iOS、Android、Windows のアプリを c# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9、13m3s) は、別の概要とデモを見るを続行することができます。  
   
 3.  (省略可能) [Xamarin.Forms の概要](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
   
@@ -84,14 +80,14 @@ ms.locfileid: "51733182"
   
 5.  (省略可能) Jason Smith による「 [クロスプラットフォーム - Xamarin.Forms を使用して UI コードをモバイル プラットフォーム間で共有する](https://msdn.microsoft.com/magazine/dn904669.aspx) 」(MSDN マガジン) では、Xamarin.Forms 内でのさまざまなカスタマイズ オプションの概要を説明します。それについて詳しくは、「 [各プラットフォームでコントロールをカスタマイズする](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) 」(xamarin.com) で説明されています。  
   
-## <a name="deeper-dive-debugging-with-emulators"></a>詳細: エミュレーターでのデバッグ  
+## <a name="deeper-dive-debugging-with-emulators"></a>詳細:エミュレーターでのデバッグ  
  *10 分から 15 分*  
   
  物理デバイスを使用せずにクロスプラットフォーム アプリをデバッグするには、次を使用する必要があります。  
   
 1.  **Android エミュレーター** 使用している Windows のバージョンに応じて、Microsoft’s Visual Studio Emulator for Android と Xamarin Player のいずれかをお勧めします。どちらも高速パフォーマンスを提供し、さまざまなデバイスの機能をサポートしています。  
   
-    -   **Windows 8 以降のコンピューター:** Visual Studio と共にインストールされる Microsoft の [Visual Studio Emulator for Android](https://www.visualstudio.com/en-us/features/msft-android-emulator-vs.aspx)の使用を強くお勧めします。  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) ビデオ (Channel9、5 分 55 秒) は、概要とデモを提供します  
+    -   **Windows 8 以降のコンピューター:** Microsoft の使用を強くお勧め[Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)、Visual Studio と共にインストールされます。  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) ビデオ (Channel9、5 分 55 秒) は、概要とデモを提供します  
   
     -   **Windows 7 以前/Mac OS X で実行する Windows**: [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player) (xamarin.com) を使用します。  
   
@@ -99,8 +95,7 @@ ms.locfileid: "51733182"
   
 3.  **Microsoft の Windows Phone エミュレーター。** 詳しくは、「[エミュレーターにおける Windows Phone アプリの実行](https://msdn.microsoft.com/library/dn632391.aspx)」をお読みください。  
   
-##  <a name="components"></a> Deeper Dive: Xamarin Components  
+##  <a name="components"></a> 詳細:Xamarin コンポーネント  
  *10 分*  
   
  多くの拡張機能は、Xamarin コンポーネントをとおして、Xamarin アプリで利用できます。 [http://components.xamarin.com/](http://components.xamarin.com/) でダウンロードできる完全なカタログを見つけることができます。それには、追加の UI コントロール、認証、Microsoft Azure などのさまざまなクラウド サービス、その他多数のコンポーネントが含まれます。
-

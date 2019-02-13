@@ -1,14 +1,9 @@
 ---
-title: '方法: クラス ダイアグラムをイメージとしてエクスポートする (クラス デザイナー) | Microsoft Docs'
-ms.custom: ''
+title: '方法: クラス ダイアグラム (クラス デザイナー) のイメージとしてエクスポート |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.exportdialog
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bd4e306f2dc8dcb31766f78c644769087eba9819
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4bfc46e4860933d57b3439f8293b0d88fc0519ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799760"
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>方法: クラス ダイアグラムをイメージとしてエクスポートする (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +37,6 @@ ms.locfileid: "49240527"
   
      他のドキュメントからリンクされているエクスポート済みイメージを自動的に更新するには、Visual Studio でもう一度ダイアグラムをエクスポートします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法: クラス ダイアグラムを印刷する (クラス デザイナー)](../ide/how-to-print-class-diagrams-class-designer.md)   
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)
-
-
-

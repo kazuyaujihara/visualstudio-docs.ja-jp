@@ -1,26 +1,21 @@
 ---
 title: コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
 ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 23c1c84180df7fd185ce29d265f89c6b905ff794
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bb4c7d76ab8ff58dc33c11c7b25c1417e24f671a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198771"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781435"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +70,6 @@ Visual Studio Enterprise のコード化された UI テストがサポートさ
   
  その他のプラットフォームをサポートするための拡張機能の作成方法については、「[コントロールのコード化された UI テストの有効化](../test/enable-coded-ui-testing-of-your-controls.md)」および「[コード化された UI テストと操作の記録を拡張して Microsoft Excel をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)」をご覧ください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
  [既存の操作の記録からのコード化された UI テストの生成](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)
-
-
-

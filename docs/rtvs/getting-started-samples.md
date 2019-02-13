@@ -2,19 +2,18 @@
 title: R のサンプル プロジェクト
 description: Visual Studio で R を使い始めるときに役立つサンプルのコレクションの索引です。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: d4ebd1c8363c9801a9ac16a3b10a702de5954a14
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82231756568c8b8139443a168ed22c28528c385c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023263"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920018"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>R Tools for Visual Studio のサンプル プロジェクト
 

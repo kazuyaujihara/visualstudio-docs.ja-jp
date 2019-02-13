@@ -1,7 +1,6 @@
 ---
 title: リソースを作成して適用する方法
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.CreateResource
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32b39cbdd98aa58c369fed3dee7347dc66383b2f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b27afce3f27b2a6325f3ee59f5220bac68275c6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042011"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919340"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>リソースを作成して適用する方法
 XAML デザイナーで、要素のスタイルとテンプレートは "リソース" という再利用可能なエンティティに保存されます。 スタイルを使用すると、要素のプロパティを設定し、それらの設定を複数の要素で再利用することにより、一貫した外観を維持できます。 [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) は、コントロールの外観を定義し、リソースとしての適用も可能です。 詳細については、「[クイック スタート:コントロールのスタイル](http://go.microsoft.com/fwlink/?LinkID=248239)」および「[クイック スタート:コントロール テンプレート](http://go.microsoft.com/fwlink/?LinkID=247982)」を参照してください。

@@ -1,4 +1,4 @@
----
+﻿---
 title: Office ソリューションを開発するコンピューターの構成
 ms.date: 02/02/2017
 ms.topic: conceptual

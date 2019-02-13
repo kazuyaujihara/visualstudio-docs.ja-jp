@@ -1,14 +1,9 @@
 ---
 title: '方法: 同じソース ファイルを異なるオプションでビルドする | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - source files, building with different options
 - MSBuild, properties
@@ -18,13 +13,13 @@ ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 738f6e9f3a31407f30d30c963265b78d8000ca82
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831004"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800423"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>方法 : 同じソース ファイルを異なるオプションでビルドする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ ms.locfileid: "49831004"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>コマンド ライン上でプロジェクト プロパティを設定するには  
   
--   **/property** スイッチをプロパティおよびプロパティ値と共に使用します。 例えば:  
+-   **/property** スイッチをプロパティおよびプロパティ値と共に使用します。 次に例を示します。  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
@@ -75,7 +70,7 @@ ms.locfileid: "49831004"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>コマンド ライン上で 2 つ以上のプロジェクト プロパティを指定するには  
   
-- **/property** または **/p** スイッチをプロパティおよびプロパティ値と共に複数回使用するか、**/property** または **/p** スイッチを 1 回使用し、複数のプロパティをセミコロン (;) で分けます。 例えば:  
+- **/property** または **/p** スイッチをプロパティおよびプロパティ値と共に複数回使用するか、**/property** または **/p** スイッチを 1 回使用し、複数のプロパティをセミコロン (;) で分けます。 次に例を示します。  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
@@ -191,10 +186,8 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
 [MSBuild](msbuild.md)  
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
  [Project 要素 (MSBuild)](../msbuild/project-element-msbuild.md)
-
-

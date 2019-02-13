@@ -1,14 +1,9 @@
 ---
-title: '方法 : 複数ファイルの項目テンプレートを作成する | Microsoft Docs'
-ms.custom: ''
+title: '方法: 複数ファイルの項目テンプレートを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -17,13 +12,13 @@ ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4616cb2f0e908b3228061288da05ce01543afdc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862178"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785901"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>方法 : 複数ファイルの項目テンプレートを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "49862178"
   
 1.  単一ファイルの項目テンプレートと同じように、項目テンプレートを作成します。 詳細については、「[方法 : 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)」を参照してください。  
   
-2.  すべての `ProjectItem` 要素に `TargetFileName` 属性を追加します。 `TargetFileName` 属性の値を $fileinputname$.*FileExtension* に設定します。ここで、*FileExtension* はテンプレートに含まれるファイルのファイル名拡張子です。 例えば:  
+2.  すべての `ProjectItem` 要素に `TargetFileName` 属性を追加します。 `TargetFileName` 属性の値を $fileinputname$.*FileExtension* に設定します。ここで、*FileExtension* はテンプレートに含まれるファイルのファイル名拡張子です。 次に例を示します。  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -88,11 +83,8 @@ ms.locfileid: "49862178"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)   
  [テンプレート パラメーター](../ide/template-parameters.md)   
  [方法 : テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)
-
-
-

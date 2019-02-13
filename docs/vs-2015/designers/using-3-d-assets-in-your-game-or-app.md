@@ -1,14 +1,9 @@
 ---
 title: ゲームまたはアプリでの 3-D アセットの使用 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
 - VC.Project.MeshContentTask.ContentOutput
@@ -20,13 +15,13 @@ ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0ca0150b44bbed9f411af25c5ce3805e553e8272
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775112"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>ゲームまたはアプリケーションでの 3-D アセットの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,13 +200,10 @@ cbuffer MiscVars : register(b3)
   
 ## <a name="related-topics"></a>関連トピック  
   
-|タイトル|説明|  
+|Title|説明|  
 |-----------|-----------------|  
 |[方法: ミップマップを含むテクスチャをエクスポートする](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|イメージ コンテンツ パイプラインを使用して、前計算された MIPMAP を含むテクスチャをエクスポートする方法について説明します。|  
 |[方法: 前乗算されたアルファを持つテクスチャをエクスポートする](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|イメージ コンテンツ パイプラインを使用して、前乗算されたアルファ値を含むテクスチャをエクスポートする方法について説明します。|  
 |[方法: Direct2D または Javascipt アプリで使用するためのテクスチャをエクスポートする](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|イメージ コンテンツ パイプラインを使用して、Direct2D または JavaScript アプリで使用できるテクスチャをエクスポートする方法について説明します。|  
 |[ゲームとアプリケーション用の 3D アセットの操作](../designers/working-with-3-d-assets-for-games-and-apps.md)|テクスチャとイメージ、3-D モデル、シェーダーを含む 3-D アセットを作成および操作するために Visual Studio に用意されている編集ツールについて説明します。|  
 |[方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)|シェーダー デザイナーからシェーダーをエクスポートする方法について説明します。|
-
-
-

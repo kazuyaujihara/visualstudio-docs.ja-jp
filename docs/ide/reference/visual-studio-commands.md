@@ -1,7 +1,6 @@
 ---
 title: コマンド
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, commands
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 015cc736ca9c6c430ca0312d55ab53b58794f01b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041218"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928219"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio コマンド
 
@@ -75,7 +74,7 @@ IDE のローカライズ版では、IDE のネイティブ言語または英語
 | [ブレークポイントの設定/解除](../../ide/reference/toggle-breakpoint-command.md) | ファイル内の現在位置で、現在の状態に基づいてブレークポイントのオン/オフを切り替えます。 |
 | [Watch コマンド](../../ide/reference/watch-command.md) | 指定したインスタンスの **[ウォッチ]** ウィンドウを作成し、開きます。 |
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)

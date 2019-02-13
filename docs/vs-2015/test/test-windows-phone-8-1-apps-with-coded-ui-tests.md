@@ -1,24 +1,19 @@
 ---
 title: コード化された UI テストを使用した Windows UWP および 8.1 Phone アプリのテスト | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 74d86998657a380e4cef1f3ee6ca0d87bccb3507
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890145"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765100"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>コード化された UI テストを使用した Windows UWP および 8.1 Phone アプリのテスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +86,7 @@ ms.locfileid: "49890145"
   
 2. 十字線ツールを使用して UI マップを編集することを選択します。  
   
-    ![十字線ツールを使用してコード化された UI テストを生成する](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
+    ![十字線ツールを使用してコード化された UI テストを生成する] (../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
 3. 十字線ツールを使用してアプリを選択してから、アプリの **[AutomationId]** プロパティの値をコピーします。この値は後で、テストでアプリを起動するために使用します。  
   
@@ -323,7 +318,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **A**: はい、その必要があります。コード化された UI テスト ビルダーでは、エミュレーターが実行中であること、そしてエミュレーターにアプリが配置されていることが要件となります。 そうでないと、実行中のエミュレーターが見つからないことを通知するエラー メッセージがスローされます。  
   
 ###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> Q: テストを実行できるのはエミュレーターだけですか? 物理デバイスを使用することもできますか?  
- **A**: どちらのオプションもサポートされています。 テストの実行ターゲットを選択するには、エミュレーター タイプを変更するか、デバイスのツールバーでデバイスを選択します。 [デバイス] を選択する場合、Phone Blue デバイスがコンピューターのいずれかの USB ポートに接続されている必要があります。  
+ **A**:いずれかのオプションがサポートされています。 テストの実行ターゲットを選択するには、エミュレーター タイプを変更するか、デバイスのツールバーでデバイスを選択します。 [デバイス] を選択する場合、Phone Blue デバイスがコンピューターのいずれかの USB ポートに接続されている必要があります。  
   
  ![エミュレータのバージョンまたは物理デバイスを選択する](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")  
   
@@ -347,7 +342,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   プロジェクトを作成した後も、テストの作成は以前と同じままになります。  
   
 ### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>Q: エミュレーターにはないコントロールを選択することはできますか?  
- **A**: いいえ、できません。そのようなコントロールは、ビルダーで検出されません。  
+ **A**:いいえ、ビルダーでは、それらは検出されませんが。  
   
 ### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>Q: 物理的な電話デバイスを使用して、コード化された UI テスト ビルダーを使ってコントロールをマップすることはできますか?  
  **A**: いいえ、できません。ビルダーが UI 要素をマップできるのは、アプリがエミュレーターに配置されている場合のみです。  
@@ -356,7 +351,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **A**: UIMapDesigner.cs ファイルでコードを変更しても、[UIMap - コード化された UI テスト ビルダー] を使用してコードを生成するたびに変更が上書きされます。 記録されたメソッドを変更する必要がある場合は、メソッドを UIMap.cs ファイルにコピーし、メソッド名を変更する必要があります。 UIMap.cs ファイルを使用すると、UIMapDesigner.cs ファイルのメソッドやプロパティをオーバーライドできます。 Coded UITest.cs ファイルの元のメソッドへの参照を削除し、変更したメソッド名に置き換える必要があります。  
   
 ### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>Q: コマンド ラインから、コード化された UI テストを Windows Phone アプリで実行することはできますか?  
- **A**: はい、できます。 runsettings ファイルを使用して、テストを実行するターゲット デバイスを指定できます。 例えば:  
+ **A**: はい、できます。 runsettings ファイルを使用して、テストを実行するターゲット デバイスを指定できます。 次に例を示します。  
   
  **vstest.console.exe “pathToYourCodedUITestDll” /settings:devicetarget.runsettings**  
   
@@ -366,7 +361,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 <?xml version="1.0" encoding="utf-8"?>  
 <RunSettings>  
 <MSPhoneTest>  
-<!--to specify test execution on device, use a TargetDevice option as follows-->  
+<!--to specify test execution on device, use a TargetDevice option as follows-->  
 <TargetDevice>Device</TargetDevice>  
 <!--to specify an emulator instead, use a TargetDevice option like below-->  
 <!--<TargetDevice>Emulator 8.1 WVGA 4 inch 512MB</TargetDevice>-->  
@@ -375,11 +370,11 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ```  
   
 ### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>Q: XAML ベースの Windows ストア アプリと Windows Phone アプリでは、コード化された UI テストにどのような違いがありますか?  
- **A**: 次のように、いくつかの重要な違いがあります。  
+ **A**:これらは、主な違いの一部を示します。  
   
 |機能|Windows ストア アプリ|Windows Phone アプリ|  
 |-------------|------------------------|------------------------|  
-|テストの実行ターゲット|ローカルまたはリモート コンピューター。 リモート コンピューターを指定できるのは、自動テスト ケースを使用してテストを実行する場合です。 「 [Microsoft Test Manager でのテスト ケースの自動化](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42)」を参照してください。|エミュレーターまたはデバイス。 このトピックの「 [Q: テストを実行できるのはエミュレーターだけですか? 物理デバイスを使用することもできますか?](#TestingPhoneAppsCodedUI_EmulatorDevice) 」を参照してください。|  
+|テストの実行ターゲット|ローカルまたはリモート コンピューター。 リモート コンピューターを指定できるのは、自動テスト ケースを使用してテストを実行する場合です。 「 [Microsoft Test Manager でのテスト ケースの自動化](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42)」を参照してください。|エミュレーターまたはデバイス。 参照してください、 [q:のみ、エミュレーターでテストを実行できる使用できますかも、物理デバイスですか。](#TestingPhoneAppsCodedUI_EmulatorDevice)このトピックの「します。|  
 |コマンド ラインからの実行|ターゲットを指定するのに設定ファイルは必要ありません。|ターゲットを指定するには runsettings ファイルが必要です。|  
 |シェル コントロールに特化されたクラス|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |XAML アプリの WebView コントロール|Html* に特化されたクラスを使用して HTML 要素を操作する場合はサポートされます。 「 <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>」を参照してください。|サポートされていません。|  
@@ -387,10 +382,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |データ ドリブン テスト|外部データ ソースの使用およびテスト メソッドでの DataSource 属性の使用については、「 [データ ドリブン テスト](../test/creating-a-data-driven-coded-ui-test.md) 」を参照してください。|データは、テスト メソッドの DataRow 属性を使用して、インラインで指定されます。 このトピックの「 [Windows Phone アプリでのデータ ドリブンのコード化された UI テストの使用](#TestingPhoneAppsCodedUI_DataDriven) 」を参照してください。|  
   
 ## <a name="external-resources"></a>外部リソース  
- Microsoft Visual Studio アプリケーション ライフサイクル管理ブログ: [コード化された UI を使用して XAML ベースの Windows Phone アプリをテストする](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
+ Microsoft Visual Studio アプリケーション ライフ サイクル管理ブログ:[コード化された UI を使用して Windows Phone の XAML ベース アプリをテストするには](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
-
-
-

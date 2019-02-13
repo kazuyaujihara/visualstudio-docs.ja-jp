@@ -11,16 +11,15 @@ helpviewer_keywords:
 - upgrading to LocalDB
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e42058d2728d806551ae319112052e664950dab
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: 841620330c10bae3cbced7710930af8c72456c31
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53863421"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943780"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf ファイルのアップグレード
 
@@ -70,7 +69,7 @@ Visual Studio を使用してデータベース ファイルを含むプロジ�
 
         -   特定のバージョンを使用する:`(localdb)\ProjectsV12`または`(localdb)\ProjectsV13`V12 は LocalDB 2014、V13 は LocalDB 2016。
 
-    -   **データベース ファイルを添付**:プライマリの物理パス *.mdf*ファイル。
+    -   **データベース ファイルを添付**: プライマリの物理パス *.mdf*ファイル。
 
     -   論理名(&L):ファイルで使用する名前です****。
 

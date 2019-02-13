@@ -1,7 +1,6 @@
 ---
 title: Live Unit Testing に関する FAQ
-ms.date: 2017-10-03
-ms.prod: visual-studio-dev15
+ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3aefd7ec3f50538ed0986c0e6e80acf75b8e84f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935594"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947394"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing についてよく寄せられる質問
 
@@ -139,7 +138,7 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 
 `LiveUnitTesting_BuildRoot` ユーザー レベル環境変数を、Live Unit Testing のビルド成果物を格納するパスに設定します。 
 
-## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>テスト エクスプローラーとLive Unit Testing のテストの実行 
+## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>テスト エクスプローラーとLive Unit Testing のテストの実行
 **[テスト エクスプローラー] ウィンドウと Live Unit Testing では、テストの実行方法はどのように違いますか?**
 
 いくつか違いがあります。
@@ -158,7 +157,7 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 **Live Unit Testing からテストを除外するにはどうすればよいですか?**
 
 ユーザー固有の設定については、「[Visual Studio 2017 での Live Unit Testing](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods)」記事の「テスト プロジェクトとテスト メソッドを含めるか除外する」セクションをご覧ください。 テストを含めるまたは除外すると、特定の編集セッションに対して特定のテスト セットを実行したい場合、または個人設定を維持したい場合に便利です。
- 
+
 ソリューション固有の設定では、<xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> 属性をプログラムで適用することにより、Live Unit Testing によるインストルメント化からメソッド、プロパティ、クラス、構造体を除外できます。 さらに、プロジェクト ファイルで `<ExcludeFromCodeCoverage>` プロパティを `true` に設定して、プロジェクト全体をインストルメント化から除外することもできます。 それでも Live Unit Testing はインストルメント化されていないテストを実行しますが、カバレッジは視覚化されません。
 
 `Microsoft.CodeAnalysis.LiveUnitTesting.Runtime` が現在のアプリケーション ドメインに読み込まれているかどうかを確認し、理由に基づいてテストを無効にすることもできます。 たとえば、xUnit では次のような処理を行うことができます。

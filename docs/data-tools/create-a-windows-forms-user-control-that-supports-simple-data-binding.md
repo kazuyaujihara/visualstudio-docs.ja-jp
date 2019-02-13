@@ -12,15 +12,14 @@ ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 328d6e35116787f32b22e2ab265f94f497b01af5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 716366366bd9bb7514d042748b07dcb30a3567eb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997248"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923825"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>単純なデータ バインディングをサポートする Windows フォーム ユーザー コントロールの作成
 
@@ -54,7 +53,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 -   フォームを作成して、新しいコントロールにデータを表示します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 
@@ -121,7 +120,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 ## <a name="create-a-data-source-from-your-database"></a>データベースからデータ ソースを作成します。
 
-この手順では、**データ ソース構成**ウィザードを使用して、Northwind サンプル データベースの `Customers` テーブルに基づいてデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースのセットアップについては、次を参照してください。[方法。サンプル データベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)します。
+この手順では、**データ ソース構成**ウィザードを使用して、Northwind サンプル データベースの `Customers` テーブルに基づいてデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースのセットアップについては、次を参照してください。[方法: サンプル データベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)します。
 
 1.  開くには、**データ ソース**ウィンドウで、**データ**] メニューのをクリックして **[データ ソースの**します。
 

@@ -1,14 +1,9 @@
 ---
 title: Import 要素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Import
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 575fd2e83abd309b67e6e1684fd38b8d5c9953ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b7aee698498fa59c4dc6fee66f89b496f8b21f34
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804041"
 ---
 # <a name="import-element-msbuild"></a>Import 要素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +62,7 @@ ms.locfileid: "49248470"
 |[プロジェクト](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルの必須のルート要素です。|  
 |[ImportGroup](../msbuild/importgroup-element.md)|オプションの条件下でグループ化された `Import` 要素のコレクションが格納されます。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  `Import` 要素を使用すると、複数のプロジェクト ファイルに共通するコードを再利用できます。 これにより、共有されたコードに対する更新が、そのコードをインポートしたすべてのプロジェクトに反映されるため、コードの保守が容易になります。  
   
  慣例により、インポートされた共有プロジェクト ファイルは .targets ファイルとして保存されますが、これらは標準の [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルです。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] では、別のファイル名拡張子を使用してプロジェクトをインポートすることもできますが、一貫性を持たせるために .targets 拡張子を使用することをお勧めします。  
@@ -120,9 +115,6 @@ ms.locfileid: "49248470"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
  [方法: 複数のプロジェクト ファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
-
-
-

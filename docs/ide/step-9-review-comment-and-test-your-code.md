@@ -1,7 +1,6 @@
 ---
 title: '手順 9: レビュー、コメントの追加、およびコードのテスト'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a92c6356a5d6f382e97abb745412134d22bfa97c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9cddb92e57a501fb8ea5eeda9b2c6ec60b95c45c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920749"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934316"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>手順 9: レビュー、コメントの追加、およびコードのテスト
 次に、コードにコメントを追加します。 コメントは、プログラムの動作には影響しないメモです。 コメントを追加すると、コードを読む人が動作内容を理解しやすくなります。 コードにコメントを追加することをお勧めします。 行をコメントとしてマークするには、Visual C# では 2 つのスラッシュ (//) を使用します。 Visual Basic では、単一引用符 (') を使用してコメントとしてマークします。 コメントを追加したら、プログラムをテストします。 プロジェクトで作業している間にコードを頻繁に実行してテストすることをお勧めします。これによって、コードが複雑になる前に、問題を早期に見つけて修正することができます。 これは*反復テスト*と呼ばれます。

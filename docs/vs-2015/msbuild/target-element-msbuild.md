@@ -1,14 +1,9 @@
 ---
 title: Target 要素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
 caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc4224930782e24b20d3e9720c517304b0153f2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6e763c0a39e3785e91733105f8fc18eae324e958
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173408"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758291"
 ---
 # <a name="target-element-msbuild"></a>Target 要素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +88,7 @@ ms.locfileid: "49173408"
 |-------------|-----------------|  
 |[プロジェクト](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルの必須のルート要素です。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>解説  
  実行する最初のターゲットは実行時に指定されます。 各ターゲットは他のターゲットとの依存関係を持つ場合があります。 たとえば、展開用のターゲットはコンパイル用のターゲットに依存します。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] エンジンは `DependsOnTargets` 属性に出現する順序で、依存関係を左から右に実行します。 詳細については、「[ターゲット](../msbuild/msbuild-targets.md)」を参照してください。  
   
  あるターゲットに複数のターゲットが依存関係を持つ場合でも、ターゲットは 1 回のビルド中に 1 回だけ実行されます。  
@@ -125,9 +120,6 @@ ms.locfileid: "49173408"
 </Target>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ターゲット](../msbuild/msbuild-targets.md)   
  [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

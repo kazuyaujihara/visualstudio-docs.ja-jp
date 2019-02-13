@@ -4,18 +4,17 @@ description: Azure のコマンド ライン ビルド
 author: ghogen
 manager: jillfra
 assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
-ms.prod: visual-studio-dev15
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 713e9ac777a29ed4cb5de07c51f733a2b375e0e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc65d64f4dad2ac38c1f0c64ce6c7297d3c37d3a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55140663"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945262"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>コマンド ラインからの Azure プロジェクトのビルド
 Microsoft Build Engine (MSBuild) を使用すると、Visual Studio がインストールされていないビルド ラボ環境で製品のビルドを構築できます。 MSBuild は、拡張可能で Microsoft が完全にサポートしている XML 形式をプロジェクト ファイルに使用します。 MSBuild ファイル形式を使用すると、1 つまたは複数のプラットフォームや構成でビルドが必要な項目を記述できます。

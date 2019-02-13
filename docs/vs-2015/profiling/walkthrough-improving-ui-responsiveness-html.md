@@ -1,14 +1,9 @@
 ---
-title: 'チュートリアル: UI の応答性の向上 (HTML) | Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: UI 応答性 (HTML) の向上 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 7e5a2524-dbf5-4a40-b5d6-2d1ed7fff3de
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f0cf1b080a0e803beda6682265dc383dc43a33d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758686"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>チュートリアル: UI の応答性の向上 (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -207,7 +202,7 @@ ms.locfileid: "51791146"
   
      ![タイマー イベント](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
   
-     このデータからはさまざまなことがわかります。 例えば:  
+     このデータからはさまざまなことがわかります。 次に例を示します。  
   
     -   各 `Timer` イベント (色分けからスクリプト イベントであることがわかります) には `document.createElement` の呼び出しが含まれており、その後にスタイルの計算と `style.backgroundColor` および `appendChild()` の呼び出しが続いています。  
   
@@ -247,8 +242,5 @@ ms.locfileid: "51791146"
   
 2.  HTML UI の応答性プロファイラーを再度実行し、CPU 使用状況グラフを確認します。 過剰なイベントはなくなり、CPU 使用状況はゼロに近い値に下がっています。 問題は修正されました。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [HTML UI の応答性](../profiling/html-ui-responsiveness.md)
-
-
-

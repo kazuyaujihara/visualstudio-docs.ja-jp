@@ -1,14 +1,9 @@
 ---
 title: '[サービス] ページ (プロジェクト デザイナー) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
 helpviewer_keywords:
@@ -18,26 +13,26 @@ ms.assetid: 6dd9e0fa-acba-4d7d-b081-705b0fc86ff5
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3a968283a8836c9a31c1d7f1e6552c8302d87140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 412dc2adaa168cce8d11e4181537a7ccf3908e8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243699"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756425"
 ---
 # <a name="services-page-project-designer"></a>[サービス] ページ (プロジェクト デザイナー)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-クライアント アプリケーション サービスにより、Windows フォーム アプリケーションおよび Windows Presentation Foundation (WPF) アプリケーションから [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] ログイン サービス、ロール サービス、プロファイル サービスに簡単にアクセスできます。 クライアント アプリケーション サービスは、**プロジェクト デザイナー**の **[サービス]** ページで有効にし、構成することができます。  
+クライアント アプリケーション サービスにより、Windows フォーム アプリケーションおよび Windows Presentation Foundation (WPF) アプリケーションから [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] ログイン サービス、ロール サービス、プロファイル サービスに簡単にアクセスできます。 クライアント アプリケーション サービスは、**プロジェクト デザイナー**の [**サービス**] ページで有効にし、構成することができます。  
   
  クライアント アプリケーション サービスを使用すると、中央のサーバーを使用してユーザーを認証し、各ユーザーの割り当てられたロール (複数可) を判断し、ネットワーク経由で共有できるユーザーごとのアプリケーション設定を保存できます。 詳細については、「[クライアント アプリケーション サービス](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)」を参照してください。  
   
- この **[サービス]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、**[プロジェクト]** メニューの **[プロパティ**] をクリックします。 **プロジェクト デザイナー** が表示されたら、**[サービス]** タブをクリックします。  
+ この [**サービス**] ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、[**プロジェクト**] メニューの **[プロパティ**] をクリックします。 **プロジェクト デザイナー** が表示されたら、[**サービス**] タブをクリックします。  
   
 > [!NOTE]
->  クライアント アプリケーション サービスには完全版の .NET Framework が必要です。クライアント アプリケーション サービスは、.NET Framework Client Profile ではサポートされません。 **[クライアント アプリケーション サービスを有効にする]** チェック ボックスが無効になっている場合、**[ターゲット フレームワーク]** が .NET Framework 3.5 以降に設定されていることを確認します。 C# で **[ターゲット フレームワーク]** の設定を表示するには、プロジェクト デザイナーを開き、**[アプリケーション]** ページをクリックします。 Visual Basic で **[ターゲット フレームワーク]** の設定を表示するには、プロジェクト デザイナーを開き、**[コンパイル]** ページをクリックして、**[詳細コンパイル オプション]** をクリックします。  
+>  クライアント アプリケーション サービスには完全版の .NET Framework が必要です。クライアント アプリケーション サービスは、.NET Framework Client Profile ではサポートされません。 [**クライアント アプリケーション サービスを有効にする**] チェック ボックスが無効になっている場合、[**ターゲット フレームワーク**] が .NET Framework 3.5 以降に設定されていることを確認します。 C# で [**ターゲット フレームワーク**] の設定を表示するには、プロジェクト デザイナーを開き、[**アプリケーション**] ページをクリックします。 Visual Basic で [**ターゲット フレームワーク**] の設定を表示するには、プロジェクト デザイナーを開き、[**コンパイル**] ページをクリックして、[**詳細コンパイル オプション**] をクリックします。  
   
 ## <a name="task-list"></a>タスク一覧  
  [方法 : クライアント アプリケーション サービスを構成する](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  
@@ -50,7 +45,7 @@ ms.locfileid: "49243699"
  このコントロールは、このページでは編集できません。 このコントロールの詳細については、「[[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)」または「[[ビルド] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-page-project-designer-csharp.md)」を参照してください。  
   
  **クライアント アプリケーション サービスを有効にする**  
- 選択すると、クライアント アプリケーション サービスが有効になります。 クライアント アプリケーション サービスを使用するには、**[サービス]** ページでサービスの場所を指定する必要があります。  
+ 選択すると、クライアント アプリケーション サービスが有効になります。 クライアント アプリケーション サービスを使用するには、[**サービス**] ページでサービスの場所を指定する必要があります。  
   
  **Windows 認証の使用**  
  認証プロバイダーが Windows ベースの認証、つまり Windows オペレーティング システムによって付与された ID を使用することを示します。  
@@ -73,13 +68,10 @@ ms.locfileid: "49243699"
  **詳細設定**  
  既定の動作をオーバーライドすることができる [[サービスの詳細設定] ダイアログ ボックス](../../ide/reference/advanced-settings-for-services-dialog-box.md)を開きます。 たとえば、このダイアログ ボックスを使用すると、ローカル ファイル システムを使用する代わりに、オフラインのストレージにデータベースを指定できます。 詳細については、「[[サービスの詳細設定] ダイアログ ボックス](../../ide/reference/advanced-settings-for-services-dialog-box.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [クライアント アプリケーション サービス](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   
  [[サービスの詳細設定] ダイアログ ボックス](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
  [方法 : クライアント アプリケーション サービスを構成する](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
  [[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
  [[ビルド] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-page-project-designer-csharp.md)   
- [プロジェクト デザイナーの概要](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)
-
-
-
+ [プロジェクト デザイナーの概要](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)

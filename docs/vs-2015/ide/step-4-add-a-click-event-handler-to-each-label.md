@@ -1,25 +1,20 @@
 ---
-title: '手順 4: 各ラベルへの Click イベント ハンドラーの追加 | Microsoft Docs'
-ms.custom: ''
+title: '手順 4: 各ラベルへの Click イベント ハンドラーの追加 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9af0d60e9321baa9f4d2ffc4944d939e6398dcf7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923382"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775931"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>手順 4: 各ラベルへの Click イベント ハンドラーの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +31,11 @@ ms.locfileid: "49923382"
   
 ### <a name="to-add-a-click-event-handler-to-each-label"></a>各ラベルに Click イベント ハンドラーを追加するには  
   
-1.  Windows フォーム デザイナーでフォームを開きます。 ソリューション エクスプローラーで Form1.cs または Form1.vb を選択します。 メニュー バーで **[表示]**、**[デザイナー]** の順にクリックします。  
+1.  Windows フォーム デザイナーでフォームを開きます。 ソリューション エクスプローラーで Form1.cs または Form1.vb を選択します。 メニュー バーで [**表示**]、[**デザイナー**] の順にクリックします。  
   
 2.  最初のラベル コントロールをクリックして選択します。 次に、Ctrl キーを押しながら他のラベルを 1 つずつクリックして選択します。 すべてのラベルが選択されていることを確認します。  
   
-3.  **[プロパティ]** ウィンドウのツール バーにある **[イベント]** をクリックして、**[プロパティ]** ウィンドウに **[イベント]** ページを表示します。 **Click** イベントまで下へスクロールし、次の図に示すように、ボックスに「**label_Click**」と入力します。  
+3.  [**プロパティ**] ウィンドウのツール バーにある [**イベント**] をクリックして、[**プロパティ**] ウィンドウに [**イベント**] ページを表示します。 **Click** イベントまで下へスクロールし、次の図に示すように、ボックスに「**label_Click**」と入力します。  
   
      ![Click イベントが表示された [プロパティ] ウィンドウ](../ide/media/express-labelclick.png "Express_labelClick")  
 Click イベントが表示された [プロパティ] ウィンドウ  
@@ -60,13 +55,10 @@ Click イベントが表示された [プロパティ] ウィンドウ
   
      このメソッドは、最初に **clickedLabel** がオブジェクトからラベル コントロールに正常に変換 (キャスト) されたかどうかをチェックします。 正常に変換されなかった場合は、値が `null` (C#) または `Nothing` (Visual Basic) となり、メソッドの残りのコードは実行されません。 次に、メソッドはラベルの **ForeColor** プロパティを使用して、クリックされたラベルのテキストの色をチェックします。 ラベルのテキストの色が黒になっている場合は、アイコンが既にクリックされていて、メソッドは実行されています  (この場合、`return` ステートメントが、メソッドの実行を停止するようにプログラムに指示します)。アイコンがクリックされていない場合、プログラムはそのテキストの色を黒に変更します。  
   
-6.  メニュー バーで、**[ファイル]**、**[すべてを保存]** の順にクリックして、ここまでの進捗を保存したら、**[デバッグ]**、**[デバッグ開始]** の順にクリックしてプログラムを実行します。 青色の背景の空のフォームが表示されます。 フォーム内で任意のセルをクリックすると、いずれかのアイコンが表示されます。 フォーム内のさまざまな場所でクリックし続けます。 アイコンをクリックすると、そのアイコンが表示されます。  
+6.  メニュー バーで、[**ファイル**]、[**すべてを保存**] の順にクリックして、ここまでの進捗を保存したら、[**デバッグ**]、[**デバッグ開始**] の順にクリックしてプログラムを実行します。 青色の背景の空のフォームが表示されます。 フォーム内で任意のセルをクリックすると、いずれかのアイコンが表示されます。 フォーム内のさまざまな場所でクリックし続けます。 アイコンをクリックすると、そのアイコンが表示されます。  
   
 ### <a name="to-continue-or-review"></a>続行または確認するには  
   
 -   チュートリアルの次の手順に進むには、「[手順 5: ラベルの参照の追加](../ide/step-5-add-label-references.md)」を参照してください。  
   
 -   チュートリアルの前の手順に戻るには、「[手順 3: 各ラベルへのランダムなアイコンの割り当て](../ide/step-3-assign-a-random-icon-to-each-label.md)」を参照してください。
-
-
-

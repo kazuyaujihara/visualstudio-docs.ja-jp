@@ -1,14 +1,9 @@
 ---
 title: コード スニペット | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -23,13 +18,13 @@ ms.assetid: 85976ad9-4c9a-4e7b-896e-66ec6f955199
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 317471f73c9e7507768b9b600ce995a35b000c23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242174"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774874"
 ---
 # <a name="code-snippets"></a>コード スニペット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +85,7 @@ End Property
   
  **[コード スニペット マネージャー]** ダイアログの **[追加]** と **[削除]** ボタンを使用して、スニペット ディレクトリを追加および削除することができます。 個々のコード スニペットを追加するには、**[インポート]** ボタンを使用します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [チュートリアル: コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md)   
  [方法: コード スニペットを配布する](../ide/how-to-distribute-code-snippets.md)   
  [コード スニペットを使用するためのベスト プラクティス](../ide/best-practices-for-using-code-snippets.md)   
@@ -98,6 +93,3 @@ End Property
  [Visual C# のコード スニペット](../ide/visual-csharp-code-snippets.md)   
  [Visual C++ のコード スニペット](../ide/visual-cpp-code-snippets.md)   
  [コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)
-
-
-

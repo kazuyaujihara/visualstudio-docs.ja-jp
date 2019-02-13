@@ -1,27 +1,22 @@
 ---
 title: MSBuild ターゲット | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, targets
 ms.assetid: 8060b4d2-e4a9-48cf-a437-852649ceb417
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: af666f40dec018e2dfde330cfc5727159b8b1dc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 06b49a8fda448707540d5bfe65d0499c6c2dde96
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925736"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767364"
 ---
 # <a name="msbuild-targets"></a>MSBuild ターゲット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49925736"
 </Target>  
 ```  
   
- MSBuild プロパティと同様に、ターゲットは再定義できます。 例えば以下のようにします。  
+ MSBuild プロパティと同様に、ターゲットは再定義できます。 たとえば、オブジェクトに適用された  
   
 ```  
 <Target Name="AfterBuild" >  
@@ -69,7 +64,7 @@ ms.locfileid: "49925736"
   ターゲットのビルド順序に関する詳細については、「[ターゲットのビルド順序](../msbuild/target-build-order.md)」を参照してください。  
   
 ## <a name="target-batching"></a>ターゲットのバッチ  
- あるターゲット要素に、%(メタデータ) 形式でメタデータを指定する `Outputs` 属性が含まれている場合があります。 その場合、MSBuild は一意のメタデータ値ごとにターゲットを 1 回実行し、そのメタデータ値を含むアイテムをグループ化または "バッチ処理" します。 例えば以下のようにします。  
+ あるターゲット要素に、%(メタデータ) 形式でメタデータを指定する `Outputs` 属性が含まれている場合があります。 その場合、MSBuild は一意のメタデータ値ごとにターゲットを 1 回実行し、そのメタデータ値を含むアイテムをグループ化または "バッチ処理" します。 たとえば、オブジェクトに適用された  
   
 ```  
 <ItemGroup>  
@@ -104,9 +99,6 @@ Reference: 4.0
   
  すべての出力項目が最新の状態になっている場合、MSBuild はターゲットをスキップします。これがビルドのスピードを大幅に上げます。 これはターゲットのインクリメンタル ビルドと呼ばれています。 一部のファイルだけが最新の状態になっている場合、MSBuild は最新の項目なしでターゲットを実行します。 これはターゲットの部分的インクリメンタル ビルドと呼ばれています。 詳しくは、「[インクリメンタル ビルド](../msbuild/incremental-builds.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
  [方法: 複数のプロジェクト ファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
-
-
-

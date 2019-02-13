@@ -1,14 +1,9 @@
 ---
 title: '方法: アクセス許可を設定する | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling, setting permissions
 - security [Visual Studio ALM], setting permissions
@@ -19,13 +14,13 @@ ms.assetid: 69f27896-8f46-4ef3-bfb7-726d95304f3a
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2bfbcb15d9dae16dd7d65ac00ad7c5b17600fa9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 61276307516052673f07a6798673b9998cb609fb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792895"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833837"
 ---
 # <a name="how-to-set-permissions"></a>方法: アクセス許可を設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,10 +126,7 @@ ms.locfileid: "51792895"
   
    指定されたユーザーは、ログオン後に、管理者アクセス許可なしにプロファイリング ツールを使用できるようになります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [プロファイルと Windows Vista のセキュリティ](../profiling/profiling-and-windows-vista-security.md)
-
-
-

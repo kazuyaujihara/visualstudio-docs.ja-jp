@@ -1,7 +1,6 @@
 ---
 title: AddExistingProject コマンド
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - file.addexistingproject
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cded9ecfa76114e43efa07c7bac5d5b0c314f91c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d0946efb15758c76c078ff234717af6fd1fac15c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980051"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951632"
 ---
 # <a name="add-existing-project-command"></a>AddExistingProject コマンド
 既存のプロジェクトを現在のソリューションに追加します。
@@ -47,7 +46,7 @@ File.AddExistingProject filename
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
 ```
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)

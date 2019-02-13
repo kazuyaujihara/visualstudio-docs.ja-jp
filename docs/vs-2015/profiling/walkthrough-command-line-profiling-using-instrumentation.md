@@ -1,14 +1,9 @@
 ---
-title: 'チュートリアル: インストルメンテーションを使ったコマンド ライン プロファイル | Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: インストルメンテーションを使ったコマンド ライン プロファイリング |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -17,13 +12,13 @@ ms.assetid: 1c6f1586-3d6a-431f-bedf-c54088e280ba
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1b670ef29ca2edcc96ed8886b82dd5d7c6cb416b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 053904df9a4930385d25c90c310c3199ce1d664f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741469"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755434"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>チュートリアル: インストルメンテーションを使ったコマンド ライン プロファイリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,12 +123,9 @@ ms.locfileid: "51741469"
   
      スプレッドシート プログラムで生成されたレポートを分析できます。または、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE を使用して、Report.vsp ファイル内のプロファイル データを分析することもできます。 詳細については、「[パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [パフォーマンス セッションの概要](../profiling/performance-session-overview.md)   
  [コマンドラインからのプロファイル](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)   
  [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)
-
-
-

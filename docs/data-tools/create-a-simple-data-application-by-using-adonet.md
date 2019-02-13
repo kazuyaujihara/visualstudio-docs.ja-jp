@@ -9,15 +9,14 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 833f4fba621c41a51adca1368c784df313419f97
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945516"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929402"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用した単純なデータ アプリケーションの作成
 
@@ -28,7 +27,7 @@ ms.locfileid: "54945516"
 > [!IMPORTANT]
 > コードをシンプルにするため、運用環境で使用する例外処理は含まれていません。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 アプリケーションの作成には、次が必要です:
 
@@ -60,7 +59,7 @@ ms.locfileid: "54945516"
 
 7. T-SQL スクリプトをクエリ エディターに貼り付けて選択し、 **Execute**ボタンをクリックします。
 
-     しばらくすると、クエリの実行が完了し、データベース オブジェクトを作成します。 データベースには、2 つのテーブルが含まれています。顧客と注文です。 これらのテーブル データを含まない初期状態で、作成するアプリケーションを実行するときにデータを追加することができます。 データベースには、次の 4 つのシンプルなストアド プロシージャも含まれています。
+     しばらくすると、クエリの実行が完了し、データベース オブジェクトを作成します。 データベースには、2 つのテーブルが含まれています: 顧客と注文です。 これらのテーブル データを含まない初期状態で、作成するアプリケーションを実行するときにデータを追加することができます。 データベースには、次の 4 つのシンプルなストアド プロシージャも含まれています。
 
 ## <a name="create-the-forms-and-add-controls"></a>フォームを作成してコントロールを追加する
 

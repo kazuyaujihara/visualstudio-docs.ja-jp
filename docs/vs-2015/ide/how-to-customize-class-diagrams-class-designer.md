@@ -1,14 +1,9 @@
 ---
-title: '方法: クラス ダイアグラムをカスタマイズする (クラス デザイナー) | Microsoft Docs'
-ms.custom: ''
+title: '方法: クラス ダイアグラム (クラス デザイナー) のカスタマイズ |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, customizing
 - shapes, removing type from class diagrams
@@ -18,13 +13,13 @@ ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8e26cbc2a4c49f09f41e16287cef75beecdf4fdf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950977"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781051"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>方法: クラス ダイアグラムをカスタマイズする (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,11 +147,8 @@ ms.locfileid: "49950977"
   
      シェイプがダイアグラムから削除され、基礎となるコードはプロジェクトから削除されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)   
  [方法: メンバー表記と関連付け表記の間で変更する (クラス デザイナー)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)   
  [方法: 既存の型を表示する (クラス デザイナー)](../ide/how-to-view-existing-types-class-designer.md)   
  [型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

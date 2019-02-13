@@ -1,25 +1,20 @@
 ---
-title: 'チュートリアル: リアルな 3-D のビリヤード ボールの作成 | Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: リアルな 3-D のビリヤード ボールの作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829587"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793306"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>チュートリアル: リアルな 3-D のビリヤード ボールの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,12 +214,9 @@ ms.locfileid: "49829587"
   
    この最終的なイメージでは、真に迫ったビリヤード ボールを作成するために追加した効果がどのように連携しているかに注目してください。 図形、テクスチャ、および照明は、3-D オブジェクトの基本的な外観を作成し、反射の光源および景色の反射は、ビリヤード ボールをより目を引くものにして、環境の一部であるかのように見せます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)   
- [方法: シェーダーを 3-D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [方法: シェーダーを 3-D モデルに適用します。](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [シェーダー デザイナー](../designers/shader-designer.md)   
  [イメージ エディター](../designers/image-editor.md)   
  [シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)
-
-
-

@@ -3,7 +3,6 @@ title: Visual Studio での Flask 学習チュートリアル、手順 3、静�
 titleSuffix: ''
 description: Visual Studio プロジェクトのコンテキストにおける Flask の基本のチュートリアルです。具体的には、静的ファイルを提供する方法、アプリにページを追加する方法、およびテンプレートの継承を使用する方法を示します。
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1b6464e48441f436b4f93fc8747972e334e768b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 72ef0011f2df86ddc25b2f566cd3a5e72d492833
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918539"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939789"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>手順 3: 静的ファイルを提供し、ページを追加し、テンプレート継承を使用する
 

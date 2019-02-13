@@ -1,24 +1,19 @@
 ---
 title: 再生中に特定のイベントを待機するようにコード化された UI テストを設定 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0042be9e22b4143021b78cb96b6032144bd624f5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bb5648bfc823230998a324aedb0e21cf6606174d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779197"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>再生中に特定のイベントを待機するようにコード化された UIT テストを設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,15 +109,12 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
   
  **ガイダンス**  
   
- 追加のガイダンスについては、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196) (Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化)」をご覧ください。  
+ 詳細については、次を参照してください。 [Visual Studio 2012 – Chapter 5 による継続的デリバリーのためのテスト。システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
  [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
  [コード化された UI テストの構造](../test/anatomy-of-a-coded-ui-test.md)   
  [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [方法: コード化された UI テスト エディターを使用して UI アクションの前に遅延を挿入する](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
-
-
-

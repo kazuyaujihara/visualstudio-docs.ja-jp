@@ -1,14 +1,9 @@
 ---
-title: '方法: 既存の型を表示する (クラス デザイナー) | Microsoft Docs'
-ms.custom: ''
+title: '方法: 既存の型 (クラス デザイナー) の表示 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 630902cd789fb3eec0f51ed1cfede3ae54e1ac83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5eb3891026976c036fb48b16ed5ebfeba909100e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846982"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758144"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>方法: 既存の型を表示する (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ ms.locfileid: "49846982"
    クラス ビューのプロジェクト ノードから 1 つ以上の型をクラス ダイアグラムにドラッグしてプロジェクトの型を表示することもできます。  
   
 > [!TIP]
->  クラス ビューが開いていない場合は、**[表示]** メニューから開きます。 クラス ビューの詳細については、「[クラスとそのメンバーを表示する](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)」を参照してください。  
+>  クラス ビューが開いていない場合は、**[表示]** メニューから開きます。 クラス ビューの詳細については、「[クラスとそのメンバーを表示する](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)」を参照してください。  
   
  ダイアグラムの既定の場所で型を表示するには、クラス ビューで 1 つ以上の型を選択し、選択した型を右クリックし、**[クラス ダイアグラムで表示]** を選択します。  
   
@@ -70,10 +65,7 @@ ms.locfileid: "49846982"
   
      自動設定されたクラス ダイアグラムが作成されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法: 型の間の継承を表示する (クラス デザイナー)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [方法: クラス ダイアグラムをカスタマイズする (クラス デザイナー)](../ide/how-to-customize-class-diagrams-class-designer.md)   
  [型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

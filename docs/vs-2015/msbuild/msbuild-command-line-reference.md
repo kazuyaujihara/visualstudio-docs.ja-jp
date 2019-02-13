@@ -1,14 +1,9 @@
 ---
 title: MSBuild コマンド ライン リファレンス | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
 caps.latest.revision: 61
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a1827166829686801743ccc98156a0009e50dc3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e56784e960729292c46d9b1241fc7e3504c6e434
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245909"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777496"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild コマンド ライン リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ## <a name="switches"></a>スイッチ  
   
-|スイッチ|省略形|説明|  
+|切り替え|省略形|説明|  
 |------------|----------------|-----------------|  
 |/help|/? または /h|使用方法を表示します。 たとえば、次のようなコマンドになります。<br /><br /> `msbuild.exe /?`|  
 |/detailedsummary|/ds|ビルド ログの最後に、ビルドされた構成に関する詳細情報と、それらの構成がノードに対してどのようにスケジュールされているかについて表示します。|  
@@ -70,7 +65,7 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ### <a name="switches-for-loggers"></a>ロガーのスイッチ  
   
-|スイッチ|省略形|説明|  
+|切り替え|省略形|説明|  
 |------------|----------------|-----------------|  
 |/consoleloggerparameters:<br /><br /> `parameters`|/clp:`parameters`|指定したパラメーターをコンソール logger に渡し、コンソール ウィンドウにビルド情報を表示します。 次のパラメーターを指定できます。<br /><br /> -   **PerformanceSummary**。 タスク、ターゲット、およびプロジェクトで経過した時間を表示します。<br />-   **Summary**。 エラーや警告の概要を終了時に表示します。<br />-   **NoSummary**。 エラーや警告の概要を終了時に表示しません。<br />-   **ErrorsOnly**。 エラーのみを表示します。<br />-   **WarningsOnly**。 警告のみを表示します。<br />-   **NoItemAndPropertyList**。 詳細レベルが `diagnostic` に設定されている場合、各プロジェクト ビルドの開始時に項目とプロパティの一覧を表示しません。<br />-   **ShowCommandLine**。 `TaskCommandLineEvent` メッセージを表示します。<br />-   **ShowTimestamp**。 タイムスタンプをメッセージの先頭に表示します。<br />-   **ShowEventId**。 開始したイベント、終了したイベント、およびメッセージのイベント ID を表示します。<br />-   **ForceNoAlign**。 テキストをコンソール バッファーのサイズに合わせません。<br />-   **DisableConsoleColor**。 すべてのログ メッセージに、コンソールの既定の色を使用します。<br />-   **DisableMPLogging**。 マルチプロセッサ以外のモードで実行されている場合にマルチプロセッサ ログ出力方法を無効にします。<br />-   **EnableMPLogging**。 マルチプロセッサ以外のモードで実行されている場合でもマルチプロセッサ ログ出力方法を有効にします。 このログ出力方法はデフォルトで有効です。<br />-   **Verbosity**。 このロガーの **/verbosity** 設定をオーバーライドします。<br /><br /> 次の例に示すように、セミコロンまたはコンマを使用して複数のパラメーターを区切ります。<br /><br /> `/consoleloggerparameters:PerformanceSummary;NoSummary /verbosity:minimal`|  
 |/distributedFileLogger|/dfl|各 MSBuild ノードのビルド出力を、そのノード独自のファイルに記録します。 これらのファイルの初期位置は、現在のディレクトリです。 既定では、ファイルの名前は "MSBuild*NodeId*.log" になります。 **/fileLoggerParameters** スイッチを使用して、ファイルの場所と fileLogger の他のパラメーターを指定できます。<br /><br /> **/fileLoggerParameters** スイッチを使用してログ ファイル名を指定すると、分散ロガーはその名前をテンプレートとして使用し、各ノードのログ ファイルを作成するときに、その名前にノード ID を追加します。|  
@@ -94,9 +89,6 @@ MSBuild.exe MyProject.proj /t:rebuild
 msbuild SlnFolders.sln /t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder:Clean  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
  [Common MSBuild Project Properties (MSBuild プロジェクトの共通プロパティ)](../msbuild/common-msbuild-project-properties.md)
-
-
-

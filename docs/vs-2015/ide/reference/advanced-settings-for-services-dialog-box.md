@@ -1,14 +1,9 @@
 ---
 title: '[サービスの詳細設定] ダイアログ ボックス | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedServices
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 217d1f6f546df94a66c5b7554a7a1710747cf83c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a7affd12dceeb8802740b7d0cd502ede051f5ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291877"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779137"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>[サービスの詳細設定] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +33,11 @@ ms.locfileid: "49291877"
 ## <a name="task-list"></a>タスク一覧  
  [方法 : クライアント アプリケーション サービスを構成する](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  
   
- [方法 : クライアント アプリケーション サービスをオフライン モードで操作する](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
+ [方法: クライアント アプリケーション サービスでオフラインで作業します。](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
   
 ## <a name="uielement-list"></a>UIElement の一覧  
  **オフラインでログインできるようにパスワードのハッシュをローカルに保存する**  
- 暗号化された形式のユーザー パスワードをローカルにキャッシュして、アプリケーションがオフライン モードのときでもユーザーがログインできるようにするかどうかを指定します。 詳細については、「[How to: Work Offline with Client Application Services](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)」(方法: クライアント アプリケーション サービスをオフライン モードで操作する) を参照してください。 既定では、このオプションはオンです。  
+ 暗号化された形式のユーザー パスワードをローカルにキャッシュして、アプリケーションがオフライン モードのときでもユーザーがログインできるようにするかどうかを指定します。 詳細については、「[方法 :クライアント アプリケーション サービスでオフラインで作業](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)します。 既定では、このオプションはオンです。  
   
  **サーバー クッキーの期限が切れた場合は常に再度ログオンすることをユーザーに要求する**  
  アプリケーションがロールまたはプロファイル サービスにアクセスし、サーバー認証の Cookie が期限切れになっているときに、以前に認証済みのユーザーを自動的に再認証するかどうかを指定します。 Cookie の期限切れ後はアプリケーション サービスへのアクセスを拒否し、明示的に再認証を必須にするには、このオプションをオンにします。 このオプションは、公共の場所に配置されたアプリケーションで、使用後にアプリケーションを実行中のままにしているユーザーが無期限に認証されないようにするのに便利です。 既定では、このオプションはオフになっています。  
@@ -55,11 +50,8 @@ ms.locfileid: "49291877"
  **カスタム接続文字列を使用**  
  クライアント サービス プロバイダーがローカル キャッシュにカスタムのデータ ストアを使用するかどうかを指定します。 既定では、サービス プロバイダーはキャッシュのローカル ファイル システムを使用します。 このオプションをオンにすると、テキスト ボックスには既定の接続文字列が自動的に入力されます。 自動生成される既定の接続文字列のままにして、SQL Server Compact Edition データベースを使用するか、既存の SQL Server データベースに対する接続文字列を指定することができます。 詳細については、「 [How to: Configure Client Application Services](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)」を参照してください。 既定では、このオプションはオフになっています。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [クライアント アプリケーション サービス](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   
  [[サービス] ページ (プロジェクト デザイナー)](../../ide/reference/services-page-project-designer.md)   
  [方法 : クライアント アプリケーション サービスを構成する](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
- [方法 : クライアント アプリケーション サービスをオフライン モードで操作する](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)
-
-
-
+ [方法: クライアント アプリケーション サービスでオフラインで作業します。](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)

@@ -1,14 +1,9 @@
 ---
 title: ビルド構成について | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - SolutionProperties.ActiveConfig
 - vs.build.newprojectconfiguration
@@ -30,13 +25,13 @@ ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1c7a6304683095b0a3db5c175535d7d28e38eecb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4cde65af7de5ff56c2420116c026c61793fcf983
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304136"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799311"
 ---
 # <a name="understanding-build-configurations"></a>ビルド構成について
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49304136"
 異なる種類のビルドに使用できるように、ソリューションおよびプロジェクト プロパティの異なる構成を保存することができます。 構成を作成、選択、変更、または削除するには、**構成マネージャー**を使用できます。 構成マネージャーを開くには、メニュー バーで、**[ビルド]**、**[構成マネージャー]** の順にクリックするか、**[クイック起動]** ボックスに「**構成**」と入力します。 また、**[標準]** ツール バーの **[ソリューション構成]** ボックスの一覧を使用して構成を選択することも、**[構成マネージャー]** を開くこともできます。  
   
 > [!NOTE]
->  ツール バーでソリューション構成設定を見つけることができず、**[構成マネージャー]** にアクセスできないときは、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 開発設定を適用できます。 詳細については、「[方法: Visual Basic 開発者設定が適用された構成を管理する](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)」を参照してください。  
+>  ツール バーでソリューション構成設定を見つけることができず、**[構成マネージャー]** にアクセスできないときは、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 開発設定を適用できます。 詳細については、「[方法 :Visual Basic 開発者設定が適用された構成の管理](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)します。  
   
  既定では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] テンプレートを使用して作成されたプロジェクトには、デバッグ構成とリリース構成が含まれます。 デバッグ構成ではアプリのデバッグがサポートされ、リリース構成では展開可能なバージョンのアプリがビルドされます。 詳細については、「[方法: デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。 カスタム ソリューション構成とプロジェクト構成を作成することもできます。 詳細については、「[How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md)」(方法 : 構成を作成および編集する) を参照してください。  
   
@@ -89,12 +84,9 @@ ms.locfileid: "49304136"
   
 -   プロジェクトで複数のプラットフォームがサポートされる場合、サポートされている各プラットフォームについて、ソリューション構成が見つかればその構成が割り当てられ、見つからなければ追加されます。 各ソリューション構成の名前には、プロジェクト構成名とプラットフォーム名の両方が含まれ、*\<プロジェクト構成名> \<プラットフォーム名>* という形式になります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [チュートリアル: アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)   
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)   
  [ソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)   
  [C/C++ ビルドのリファレンス](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   
  [Devenv コマンド ライン スイッチ](../ide/reference/devenv-command-line-switches.md)
-
-
-

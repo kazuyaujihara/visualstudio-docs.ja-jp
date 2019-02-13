@@ -1,14 +1,9 @@
 ---
 title: '方法: 最初にビルドするターゲットを指定する | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - DefaultTargets attribute [MSBuild]
 - MSBuild, specifying the defalut target
@@ -17,13 +12,13 @@ ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 52baabe5a8cf2e064c72ef7a5ab146d534214d90
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840702"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797041"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>方法 : 最初にビルドするターゲットを指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49840702"
   
 #### <a name="to-specify-one-initial-target"></a>1 つの初期ターゲットを指定するには  
   
-- `Project` 要素の `InitialTargets` 属性の既定のターゲットを指定します。 例えば:  
+- `Project` 要素の `InitialTargets` 属性の既定のターゲットを指定します。 次に例を示します。  
   
    `<Project InitialTargets="Clean">`  
   
@@ -53,7 +48,7 @@ ms.locfileid: "49840702"
   
 #### <a name="to-specify-one-default-target"></a>1 つの既定のターゲットを指定するには  
   
-- `Project` 要素の `DefaultTargets` 属性の既定のターゲットを指定します。 例えば:  
+- `Project` 要素の `DefaultTargets` 属性の既定のターゲットを指定します。 次に例を示します。  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -70,19 +65,17 @@ ms.locfileid: "49840702"
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>最初に既定のターゲット以外のターゲットを使用する  
   
--   **/target** コマンド ライン スイッチを使用してターゲットを最初のターゲットとして指定します。 例えば:  
+-   **/target** コマンド ライン スイッチを使用してターゲットを最初のターゲットとして指定します。 次に例を示します。  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>最初に既定のターゲット以外の複数のターゲットを使用するには  
   
--   **/target** コマンド ライン スイッチを使用して、セミコロンまたはコンマで区切られたターゲットを一覧表示します。 例えば:  
+-   **/target** コマンド ライン スイッチを使用して、セミコロンまたはコンマで区切られたターゲットを一覧表示します。 次に例を示します。  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
   [MSBuild](msbuild.md)  
  [ターゲット](../msbuild/msbuild-targets.md)   
  [方法 : ビルドをクリーンする](../msbuild/how-to-clean-a-build.md)
-
-

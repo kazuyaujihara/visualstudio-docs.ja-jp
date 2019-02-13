@@ -1,32 +1,27 @@
 ---
-title: '方法: LinqToXmlDataBinding という例をビルドして実行する | Microsoft Docs'
-ms.custom: ''
+title: '方法: ビルドおよび実行 linqtoxmldatabinding という例 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3943deaf-80e2-4968-ac04-d3ef56cfad6c
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9e299000cd8477ccc36829e806072cb25e115f8f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0128ab98f1fb359ea41accfec115325ea8888eb7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786369"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>方法 : LinqToXmlDataBinding という例をビルドして実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このトピックでは、LinqToXmlDataBinding という Visual Studio プロジェクトを作成してビルドする方法、および結果として生成される LinqToXmlDataBinding という Windows Presentation Foundation (WPF) プログラムの例を実行する方法について説明します。  
   
- Visual Studio を使用したプロジェクトの作成の詳細については、[「Visual Studio でのアプリケーション開発」](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68) を参照してください。  
+ Visual Studio を使用したプロジェクトの作成の詳細については、[「Visual Studio でのアプリケーション開発」](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) を参照してください。  
   
 ## <a name="creating-and-populating-the-project"></a>プロジェクトの作成とデータの取り込み  
   
@@ -81,10 +76,7 @@ ms.locfileid: "49237914"
   
 2.  キーボードを使用して値を編集します。 いずれかの <xref:System.Windows.Controls.TextBox> コントロールがフォーカスを失った時点で、XML ソースと書籍一覧の両方に変更が自動的に反映されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [LINQ to XML を使用した WPF のデータ バインディングの例](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
  [チュートリアル: LinqToXmlDataBinding の例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [Visual Studio でのアプリケーション開発](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)
-
-
-
+ [Visual Studio でのアプリケーション開発](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)

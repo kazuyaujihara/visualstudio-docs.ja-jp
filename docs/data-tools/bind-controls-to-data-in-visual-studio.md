@@ -11,15 +11,14 @@ ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ff7c2db3fc1032e08a9e15f17ca6ae1af6d9373b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 32b392f59fb0ac587730d2aa432ca11d91d5a9ea
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991633"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939763"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio でのデータへのコントロールのバインド
 
@@ -33,16 +32,16 @@ ms.locfileid: "54991633"
 
 | データ ソース | **Windows フォーム デザイナー**でのドラッグ アンド ドロップのサポート | **WPF デザイナー**でのドラッグ アンド ドロップのサポート | **Silverlight デザイナー**でのドラッグ アンド ドロップのサポート |
 | - | - | - | - |
-| データセット | はい | はい | × |
+| データセット | はい | はい | いいえ |
 | エンティティ データ モデル | ○<sup>1</sup> | はい | はい |
 | LINQ to SQL クラス | ×<sup>2</sup> | ×<sup>2</sup> | ×<sup>2</sup> |
 | サービス ([!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、WCF サービス、および Web サービスを含む) | はい | はい | はい |
-| Object | はい | はい | はい |
+| オブジェクト | はい | はい | はい |
 | SharePoint | はい | はい | はい |
 
 1. 使用して、モデルの生成、 **Entity Data Model**ウィザード、デザイナーにそれらのオブジェクトをドラッグします。
 
-2. LINQ to SQL クラスは、**[データ ソース]** ウィンドウに表示されません。 ただし、LINQ to SQL クラスに基づく新しいオブジェクト データ ソースを追加し、それらのオブジェクトをデザイナーにドラッグして、データ バインディング コントロールを作成できます。 詳細については、「[チュートリアル:LINQ to SQL クラス (O/R デザイナー) を作成する](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)します。
+2. LINQ to SQL クラスは、**[データ ソース]** ウィンドウに表示されません。 ただし、LINQ to SQL クラスに基づく新しいオブジェクト データ ソースを追加し、それらのオブジェクトをデザイナーにドラッグして、データ バインディング コントロールを作成できます。 詳細については、次を参照してください。[チュートリアル: LINQ to SQL クラス (O/r デザイナー) を作成する](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)します。
 
 ## <a name="data-sources-window"></a>[データ ソース] ウィンドウ
 

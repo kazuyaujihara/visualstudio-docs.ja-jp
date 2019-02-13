@@ -1,13 +1,8 @@
 ---
 title: パフォーマンス プロファイリングのビギナーズ ガイド | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -19,13 +14,13 @@ ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4a1b8fbc31bb05f69a1f9e30960106c08df5eb6f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2e243c1202ffbc9bd61f42073d6e464de858ff87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731484"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761530"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>パフォーマンス プロファイリングのビギナーズ ガイド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,10 +122,7 @@ Visual Studio プロファイリング ツールを使用して、アプリケ�
   
      新しいレポート ウィンドウが開き、比較の結果が表示されます。 比較ビューの使用方法の詳細については、「[方法: パフォーマンス データ ファイルを比較する](../profiling/how-to-compare-performance-data-files.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)   
  [はじめに](../profiling/getting-started-with-performance-tools.md)   
  [概要](../profiling/overviews-performance-tools.md)
-
-
-

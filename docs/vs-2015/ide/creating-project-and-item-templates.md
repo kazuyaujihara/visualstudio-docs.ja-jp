@@ -1,14 +1,9 @@
 ---
 title: プロジェクトと項目テンプレートの作成 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - templates [Visual Studio], projects
 - item templates, about item templates
@@ -22,13 +17,13 @@ ms.assetid: a6ce501a-699b-4e3e-ade8-c81895645c20
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32c1c66484d5bdaff6ba37b8b37f7f86cb513e44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bfcfadf13074c3fc1dc82fce51f449453ca03b11
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851661"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763362"
 ---
 # <a name="creating-project-and-item-templates"></a>プロジェクトと項目テンプレートの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,12 +49,9 @@ ms.locfileid: "49851661"
 ## <a name="starter-kits"></a>スタート キット  
  スタート キットは拡張されたテンプレートであり、コミュニティの他のメンバーと共有できます。 スタート キットには、コンパイルされるコード サンプル、ドキュメント、および有用で実際的なアプリケーションをビルドする際の新しいツールやプログラミング技法を習得するうえで役立つ他のリソースが含まれています。 スタート キットの基本的な内容と手順は、テンプレートの場合と同じです。 詳しくは、「[方法: スタート キットを作成する](../ide/how-to-create-starter-kits.md)」をご覧ください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法 : プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)   
  [方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)   
  [テンプレート パラメーター](../ide/template-parameters.md)   
  [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)   
  [方法 : スタート キットを作成する](../ide/how-to-create-starter-kits.md)
-
-
-

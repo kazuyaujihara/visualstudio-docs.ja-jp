@@ -1,7 +1,6 @@
 ---
 title: '方法: エディターで URL をリンクとして表示する'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - URLs, opening
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae3a05145c2e5bcdc1775b0efe035374e2b0a23b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7d05dd3a6c6797bbd563a45e93df76ec16f1e36b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956404"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949630"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>方法: エディターで URL をリンクとして表示する
 
