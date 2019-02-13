@@ -4,23 +4,22 @@ description: より良い .NET コードをより早く書き込むのに役立�
 author: kuhlenh
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484096"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920601"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# の生産性ガイド
 
-[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) によって開発者の生産性がどのように向上するかを説明します。 逆コンパイルされたアセンブリへの移動、入力時の変数名の提案、**テスト エクスプローラー**の階層ビュー、ファイル/型/メンバー/シンボルの宣言に移動するための [すべてに移動] (**Ctrl** + **T**)、インテリジェントな**例外ヘルパー**、コード スタイルの構成と適用、多くのリファクタリングとコード修正など、パフォーマンスと生産性を向上させる機能を利用できます。
+[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) によって開発者の生産性がどのように向上するかを説明します。 逆コンパイルされたアセンブリへの移動、入力時の変数名の提案、**テスト エクスプローラー**の階層ビュー、ファイル/型/メンバー/シンボルの宣言に移動するための [すべてに移動] (**Ctrl** + **T**)、インテリジェントな**例外ヘルパー**、コード スタイルの構成と適用、多くのリファクタリングとコード修正など、パフォーマンスと生産性を向上させる機能を利用できます。
 
 ## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>別の拡張機能/エディター/IDE のキーボード ショートカットを使い慣れています
 

@@ -3,7 +3,6 @@ title: Visual Studio での Django 学習チュートリアル、手順 3、静�
 titleSuffix: ''
 description: Visual Studio プロジェクトのコンテキストにおける Django の基本のチュートリアルです。具体的には、静的ファイルを提供する方法、アプリにページを追加する方法、およびテンプレートの継承を使用する方法を示します。
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd226257b8af989ff336b518a6666d1aad3156ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e649dd6b802f99c73b99e5980039d0fef6e5a86f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947583"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957248"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>手順 3: 静的ファイルを提供し、ページを追加し、テンプレート継承を使用する
 

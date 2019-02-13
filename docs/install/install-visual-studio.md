@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio をインストールする方法について、ステップ バイ ステップで説明します。
 ms.date: 05/07/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -19,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e01f51bd94f14b5f78ab26d452be6a100e4fd50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fab4a79bfd7a72b6b81493db241cd1ade8068158
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961881"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156138"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 のインストール
 
@@ -55,10 +54,6 @@ Visual Studio 2017 と以前のバージョンの Visual Studio を共存させ�
  > [!div class="button"]
  > [Visual Studio 2017 をダウンロードする](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
-
-|         |         |
-|---------|---------|
-|  ![ビデオのムービー カメラ アイコン](media/video-icon.png "ビデオを見る")  |    Visual Studio ブートストラップ ファイルをダウンロードして、適切な Visual Studio のエディションを選択する方法については、[こちらのビデオ](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171)をご覧ください。 |
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>手順 3 - Visual Studio インストーラーをインストールする
 
@@ -95,29 +90,17 @@ Visual Studio 2017 と以前のバージョンの Visual Studio を共存させ�
 > [!TIP]
 > インストール後いつでも、最初にインストールしなかったワークロードまたはコンポーネントをインストールできます。 Visual Studio を開いている場合は、**[ツール]** > **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 または、スタート メニューから **Visual Studio インストーラー**を開きます。 そこから、インストールするワークロードまたはコンポーネントを選択し、**[変更]** をクリックします。
 
-|         |         |
-|---------|---------|
-|  ![ビデオのムービー カメラ アイコン](media/video-icon.png "ビデオを見る")  |    Visual Studio インストーラーをインストールしてからワークロードをインストールする方法については、[こちらのビデオ](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171)をご覧ください。 |
-
 ## <a name="step-5---select-individual-components-optional"></a>手順 5 - 個々のコンポーネントを選択する (省略可能)
 
 Visual Studio のインストールをカスタマイズする際にワークロード機能を使用しない場合は、代わりに個々のコンポーネントをインストールできます。 個別のコンポーネントを選択するには、Visual Studio インストーラーから **[個別のコンポーネント]** オプションをクリックして、必要なものを選択してから画面の指示に従います。
 
   ![Visual Studio 2017 - 個々のコンポーネントのインストール](media/vs2017-components.PNG "Visual Studio の個々のコンポーネントのインストール")
 
-  |         |         |
-  |---------|---------|
-  |  ![ビデオのムービー カメラ アイコン](media/video-icon.png "ビデオを見る")  |   Visual Studio インストーラーを使用して、個々のコンポーネントをインストールする方法については、[こちらのビデオ](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171)をご覧ください。 |
-
 ## <a name="step-6---install-language-packs-optional"></a>手順 6 - 言語パックをインストールする (省略可能)
 
 既定では、インストーラー プログラムが、最初の実行時にオペレーティング システムの言語の照合を試みます。 選択した言語で Visual Studio 2017 をインストールするには、Visual Studio インストーラーで **[言語パック]** オプションをクリックし、画面の指示に従います。
 
   ![Visual Studio 2017 - 言語パックのインストール](media/vs2017-languages.PNG "Visual Studio の言語パックのインストール")
-
-  |         |         |
-  |---------|---------|
-  |  ![ビデオのムービー カメラ アイコン](media/video-icon.png "ビデオを見る")  |   Visual Studio インストーラーを使用して、言語パックをインストールする方法については、[こちらのビデオ](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171)をご覧ください。 |
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>コマンド ラインかインストーラーの言語を変更する
 

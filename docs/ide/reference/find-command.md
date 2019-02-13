@@ -1,7 +1,6 @@
 ---
 title: Find コマンド
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - edit.find
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae309eb6ba1d3dc18d08bf8710e73438698a5535
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9cd4a50ebf4c27213d288cbab33647931c4a399d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958330"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953062"
 ---
 # <a name="find-command"></a>Find コマンド
 **[検索と置換]** ウィンドウの **[フォルダーを指定して検索]** タブにあるオプションのサブセットを使って、ファイルを検索します。
@@ -66,7 +65,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 >Edit.Find somestring /sel /case
 ```
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)

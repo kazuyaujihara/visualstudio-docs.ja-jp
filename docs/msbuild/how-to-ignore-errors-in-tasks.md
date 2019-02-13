@@ -9,57 +9,57 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6d56c1b4e22250f56592e45d56c433c7ad78065
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2d8c11fef90a4910c178e7494a5a16f6ea9bfbf0
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024800"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853288"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>方法: タスクで発生したエラーを無視する
-ビルド時に一部のタスクのエラーを許容するとよい場合があります。 そのような重要でないタスクが失敗しても必要な出力は生成できるため、ビルドを続行させる場合です。 たとえば、各コンポーネントのビルド後にプロジェクトで `SendMail` タスクを使ってメール メッセージを送信する場合、メール サーバーが利用できず、ステータス メッセージを送信できなくても、完了までビルドを続行させるのは許容範囲と見なせる場合があります。 別の例として、通常、ビルド中に中間ファイルが削除される場合、それらのファイルを削除できなくても、完了までビルドを続行させるのは許容範囲と見なせる場合があります。  
-  
-## <a name="use-the-continueonerror-attribute"></a>ContinueOnError 属性を使用する  
- `Task` 要素の `ContinueOnError` 属性は、タスク エラーの発生時にビルドを停止するか続行するかを制御します。 この属性は、ビルドを続行するときに、エラーをエラーとして扱うか、それとも警告として扱うかも制御します。  
-  
- `ContinueOnError` 属性には、次の値のいずれかを含めることができます。  
-  
-- **WarnAndContinue** または **true**。 タスクが失敗すると、[Target](../msbuild/target-element-msbuild.md) 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーが警告として扱われます。  
-  
-- **ErrorAndContinue**。 タスクが失敗すると、`Target` 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーがエラーとして扱われます。  
-  
+ビルド時に一部のタスクのエラーを許容するとよい場合があります。 そのような重要でないタスクが失敗しても必要な出力は生成できるため、ビルドを続行させる場合です。 たとえば、各コンポーネントのビルド後にプロジェクトで `SendMail` タスクを使ってメール メッセージを送信する場合、メール サーバーが利用できず、ステータス メッセージを送信できなくても、完了までビルドを続行させるのは許容範囲と見なせる場合があります。 別の例として、通常、ビルド中に中間ファイルが削除される場合、それらのファイルを削除できなくても、完了までビルドを続行させるのは許容範囲と見なせる場合があります。
+
+## <a name="use-the-continueonerror-attribute"></a>ContinueOnError 属性を使用する
+`Task` 要素の `ContinueOnError` 属性は、タスク エラーの発生時にビルドを停止するか続行するかを制御します。 この属性は、ビルドを続行するときに、エラーをエラーとして扱うか、それとも警告として扱うかも制御します。
+
+`ContinueOnError` 属性には、次の値のいずれかを含めることができます。
+
+- **WarnAndContinue** または **true**。 タスクが失敗すると、[Target](../msbuild/target-element-msbuild.md) 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーが警告として扱われます。
+
+- **ErrorAndContinue**。 タスクが失敗すると、`Target` 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーがエラーとして扱われます。
+
 - **ErrorAndStop** または **false** (既定値)。 タスクが失敗すると、`Target` 要素の残りのタスクとビルドは実行されず、`Target` 要素全体とビルドは失敗したと見なされます。  
   
   バージョン 4.5 より前の .NET Framework では、`true` 値と `false` 値のみがサポートされます。  
   
-  `ContinueOnError` の既定値は `ErrorAndStop` です。 属性を `ErrorAndStop` に設定すると、プロジェクト ファイルを読むユーザーにとって動作は明確になります。  
+  `ContinueOnError` の既定値は `ErrorAndStop` です。 属性を `ErrorAndStop` に設定すると、プロジェクト ファイルを読むユーザーにとって動作は明確になります。
+
+#### <a name="to-ignore-an-error-in-a-task"></a>タスクのエラーを無視するには
+
+- タスクの `ContinueOnError` 属性を使用します。 次に例を示します。  
   
-#### <a name="to-ignore-an-error-in-a-task"></a>タスクのエラーを無視するには  
-  
--   タスクの `ContinueOnError` 属性を使用します。 次に例を示します。  
-  
-     `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
-  
-## <a name="example"></a>例  
- 次のコード例は、`Delete` タスクが失敗した場合でも `Build` ターゲットが実行され続け、ビルドが成功したと見なされることを示します。  
-  
-```xml  
-<Project DefaultTargets="FakeBuild"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <Files Include="*.obj"/>  
-    </ItemGroup>  
-    <Target Name="Clean">  
-        <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>  
-    </Target>  
-  
-    <Target Name="FakeBuild" DependsOnTargets="Clean">  
-        <Message Text="Building after cleaning..."/>  
-    </Target>  
-</Project>  
-```  
-  
+    `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`
+
+## <a name="example"></a>例
+次のコード例は、`Delete` タスクが失敗した場合でも `Build` ターゲットが実行され続け、ビルドが成功したと見なされることを示します。
+
+```xml
+<Project DefaultTargets="FakeBuild"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Files Include="*.obj"/>
+    </ItemGroup>
+    <Target Name="Clean">
+        <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
+    </Target>
+
+    <Target Name="FakeBuild" DependsOnTargets="Clean">
+        <Message Text="Building after cleaning..."/>
+    </Target>
+</Project>
+```
+
 ## <a name="see-also"></a>関連項目
 [MSBuild](../msbuild/msbuild.md)  
-[タスク リファレンス](../msbuild/msbuild-task-reference.md)   
+[タスク リファレンス](../msbuild/msbuild-task-reference.md)  
 [タスク](../msbuild/msbuild-tasks.md)

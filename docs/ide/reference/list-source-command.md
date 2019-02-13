@@ -1,7 +1,6 @@
 ---
 title: List Source コマンド
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Debug.ListSource
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5348bd2533a10d98732911a6b7af5410e8ffe42
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8dcecdaa206964e6c8a5aebcadc958fe2c1ee1e5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031631"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953192"
 ---
 # <a name="list-source-command"></a>List Source コマンド
 ソース コードの指定行が表示されます。
@@ -60,7 +59,7 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes
 ```
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)
