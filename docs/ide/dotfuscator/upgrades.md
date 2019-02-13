@@ -2,7 +2,6 @@
 title: Dotfuscator Community Edition (CE) をアップグレードする
 ms.date: 02/08/2017
 ms.devlang: dotnet
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, community edition, 難読化, .NET, 無料, Visual Studio 2017, アップグレード, コマンド ライン
 helpviewer_keywords:
@@ -24,12 +23,12 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62a9273ef55a84c26714d2ad2ea1ebb7efe94319
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8665fdb1cc527c85e3071f9f19362caf4e5bc544
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034143"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937322"
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE) をアップグレードする
 
@@ -66,7 +65,7 @@ Dotfuscator Professional は業界標準の [.NET 難読化ツール][net-obfusc
 Dotfuscator Professional の高度なアプリケーション保護機能の詳細については、PreEmptive Solutions の [Dotfuscator の概要][product-about]と、[Community Edition との比較][product-compare]に関するページを参照してください。
 [preemptive.com では、完全にサポートされている評価版を入手できます][eval]。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 [Dotfuscator CE の完全なユーザー ガイドのこの記事][full]
 
