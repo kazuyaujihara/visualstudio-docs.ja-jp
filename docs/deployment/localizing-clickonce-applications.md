@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 784d4b6df24a5f4327a87c638b9624a0e4cec46c
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: 3c7ef2073afe7321bfee6d100e7df644bc9b3eed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53893598"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005216"
 ---
 # <a name="localize-clickonce-applications"></a>ClickOnce アプリケーションのローカライズ
 ローカライズは、アプリケーションを特定のカルチャに適したものにするためのプロセスです。 このプロセスには、ユーザー インターフェイス (UI) のテキストを地域固有の言語に翻訳する作業、正しい日付と通貨の書式の適用、フォーム上にあるコントロールのサイズの調整、およびコントロールを右から左へとミラー化する作業 (必要な場合) が含まれます。  

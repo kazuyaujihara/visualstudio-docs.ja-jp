@@ -1,25 +1,20 @@
 ---
 title: CodeLens によるコード変更とその他の履歴の検索 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f697d7b4-704e-4cac-b13a-bc57d2ff8318
 caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c8cf042ce5a0b713eccdf9c89b15dcb57cf966ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825674"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753901"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens によるコード変更とその他の履歴の検索
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +83,7 @@ ms.locfileid: "49825674"
   
  ![CodeLens: TFVC で自分のコードの変更履歴を取得する](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
- 既定の時間は直近 12 か月です。 Team Foundation Server にコードが格納される場合、 [TFSConfig コマンド](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) および [/indexHistoryPeriod](../ide/codeindex-command.md) フラグを指定した **CodeIndex コマンド** を実行することにより、この制限を変更できます。  
+ 既定の時間は直近 12 か月です。 Team Foundation Server にコードが格納される場合、 [TFSConfig コマンド](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) および [/indexHistoryPeriod](../ide/codeindex-command.md) フラグを指定した **CodeIndex コマンド** を実行することにより、この制限を変更できます。  
   
  1 年以上前のものを含む、すべての変更の詳細な履歴を表示するには、 **[すべてのファイルの変更を表示する]** を選択します。  
   
@@ -227,9 +222,9 @@ ms.locfileid: "49825674"
   
 -   CodeLens が有効になっていることを確認します。 **[ツール]**、 **[オプション]**、 **[テキスト エディター]**、 **[すべての言語]**、 **[CodeLens]** の順に移動します。  
   
--   コードが TFS に格納されている場合は、 [TFS Config コマンド](../ide/codeindex-command.md) と共に [CodeIndex コマンド](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)を使用することによって、コード インデックス作成が有効になっていることを確認します。  
+-   コードが TFS に格納されている場合は、 [TFS Config コマンド](../ide/codeindex-command.md) と共に [CodeIndex コマンド](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)を使用することによって、コード インデックス作成が有効になっていることを確認します。  
   
--   TFS 関連のインジケーターは、作業項目がコードにリンクされていて、リンクされた作業項目を開くアクセス許可をユーザーが持っている場合にだけ表示されます。 [チーム メンバーのアクセス許可があることを確認してください。](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+-   TFS 関連のインジケーターは、作業項目がコードにリンクされていて、リンクされた作業項目を開くアクセス許可をユーザーが持っている場合にだけ表示されます。 [チーム メンバーのアクセス許可があることを確認してください。](http://msdn.microsoft.com/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
   
 -   アプリケーション コードに単体テストがない場合は、単体テスト インジケーターが表示されません。 テスト状態インジケーターは、テスト プロジェクトに自動的に表示されます。 アプリケーション コードに単体テストがあることがわかっているのに、テスト インジケーターが表示されない場合は、ソリューションのビルドを試みます (**Ctrl + Shift + B**)。  
   
@@ -288,8 +283,4 @@ ms.locfileid: "49825674"
  **A:** **[ローカル バージョン]** 矢印は、このファイルのローカル バージョンの最新の変更セットを指しています。 サーバーにさらに新しい変更セットが含まれる場合、その変更セットは、使用されている並べ替え順序に応じて **[ローカル バージョン]** 矢印の上または下に表示されます。  
   
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Q: 履歴やリンク された項目が表示されるように CodeLens によるコードの処理方法を管理することはできますか。  
- **A:** はい、できます。コードが TFS にある場合は、 [TFS Config コマンド](../ide/codeindex-command.md) と共に [CodeIndex コマンド](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)を使用します。
-
-
-
-
+ **A:** はい、できます。コードが TFS にある場合は、 [TFS Config コマンド](../ide/codeindex-command.md) と共に [CodeIndex コマンド](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)を使用します。

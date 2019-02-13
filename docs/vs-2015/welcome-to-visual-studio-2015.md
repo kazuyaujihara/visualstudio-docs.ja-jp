@@ -3,10 +3,7 @@ title: Visual Studio 2015 へようこそ | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msdnstart
 helpviewer_keywords:
@@ -15,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
-manager: crdun
-ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+manager: jillfra
+ms.openlocfilehash: 4d71c74f54e2ce2a79ffff44d8054c15bd3b4a86
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805147"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835087"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 へようこそ
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -53,19 +50,19 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 ## <a name="build-apps-for-android-ios-and-windows"></a>Android、iOS、Windows 用アプリを作成する
  Visual Studio を使用して、Android、iOS、および Windows デバイス用のアプリを作成できます。 詳細については、[クロス プラットフォーム モバイル開発](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)に関する記事をご覧ください。
 
- ユニバーサル Windows アプリ (UWP) の詳細については、「 [ユニバーサル Windows アプリ](https://dev.windows.com/en-us/windows-apps)」を参照してください。
+ ユニバーサル Windows アプリ (UWP) の詳細については、「 [ユニバーサル Windows アプリ](https://dev.windows.com/windows-apps)」を参照してください。
 
  アプリ要件に基づいて必要なツールと使用する言語を選択します。
 
 1.  [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): すべてのデバイスを対象とする C# の共通コード ベース
 
-2.  [Visual Studio での Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42):HTML、CSS、および JavaScript または Typescript の基本の共通コード
+2.  [Apache Cordova with Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): HTML、CSS、および JavaScript または Typescript 用の共通コード ベース
 
 3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): C# での 2D/3D ゲーム開発
 
-4.  [クロスプラット フォーム開発用 C++](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md):共有コード ライブラリと C++ でのアプリ
+4.  [クロスプラットフォーム開発用 C++](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): C++ の共有コード ライブラリとアプリ
 
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md)Visual Studio Emulator for Androidデバッグおよび IDE に関係なく、Android アプリのテスト
+5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: IDE とは関係なく、Android アプリをデバッグおよびテストします。
 
 ## <a name="connect-your-apps-to-services"></a>アプリをサービスに接続する
  追加の設定なしで以下のサービスに接続できます (各サービスのアカウントを持っていることを前提とします)。
@@ -82,7 +79,7 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 ## <a name="build-test-and-manage-your-code"></a>コードのビルド、テスト、管理
 
 ### <a name="check-in-your-code"></a>コードのチェックイン
- チームで作業している場合、最新バージョンのコードを共有して、チーム全員が同じコードベースを使用する必要があります。 Visual Studio は Visual Studio Team Services や Team Foundation Server とシームレスに統合し、Git または TFVC (Team Foundation バージョン管理) でのバージョン管理を提供します。 Visual Studio Team Services を使用してコードをクラウドに格納すると、ローカル サーバーのメンテナンスが不要になります。 オンプレミスのサーバーを使用する場合は、Team Foundation Server を使用します。 コード プロジェクトを作成するたびに、そのプロジェクトをバージョン管理に追加するオプションが表示されます。 システムは、ニーズに最適にバージョン管理について説明します。[バージョン管理の使用](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)
+ チームで作業している場合、最新バージョンのコードを共有して、チーム全員が同じコードベースを使用する必要があります。 Visual Studio は Visual Studio Team Services や Team Foundation Server とシームレスに統合し、Git または TFVC (Team Foundation バージョン管理) でのバージョン管理を提供します。 Visual Studio Team Services を使用してコードをクラウドに格納すると、ローカル サーバーのメンテナンスが不要になります。 オンプレミスのサーバーを使用する場合は、Team Foundation Server を使用します。 コード プロジェクトを作成するたびに、そのプロジェクトをバージョン管理に追加するオプションが表示されます。 ニーズに最適のバージョン管理システムを調べるには、「 [バージョン管理の使用](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)」を参照してください。
 
 ### <a name="build-your-app"></a>アプリのビルド
  [アプリをローカルでビルドし、](./ide/compiling-and-building-in-visual-studio.md) それが正常に機能することを確認します。 [デバッグ ツールを使用して](./debugger/debugging-in-visual-studio.md) 、アプリの問題を修正します。 あるいは、共有ビルド サーバーまたはクラウドにプロジェクトをビルドすることもできます。 チームの開発者がバージョン管理にチェックインしたコードをビルドするよう、ビルド プロセスを自動化します。 たとえば、1 つまたは複数のプロジェクトを夜間にビルドすることも、コードのチェックインごとにビルドすることもできます。
@@ -99,7 +96,7 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 
 |||||
 |-|-|-|-|
-|[Visual Studio 2015 の新機能 ](./what-s-new-in-visual-studio-2015.md)|[Visual C# の新機能](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 の新機能](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM の新機能](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Visual Studio 2015 の新機能 ](./what-s-new-in-visual-studio-2015.md)|[Visual C# の新機能](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 の新機能](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM の新機能](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
 |[C++ の新機能](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic の新機能](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript の新機能](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 

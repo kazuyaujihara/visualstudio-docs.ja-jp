@@ -1,24 +1,19 @@
 ---
 title: 'チュートリアル: コード化された UI テストの作成、編集、および保守 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: aff0363b1fe554e55cae7b58d79cd8f765e76d68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c110ace4eba116c578d9d675eeafe4f678ac9d5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257531"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792234"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>チュートリアル: コード化された UI テストの作成、編集、および保守
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -391,11 +386,8 @@ ms.locfileid: "49257531"
 ### <a name="forum"></a>フォーラム  
  [Visual Studio の UI オートメーションのテスト (CodedUI を含む)](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
- [WPF デザイナーの使用を開始する](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
+ [WPF デザイナーの使用を開始する](http://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
  [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [コード化された UI テスト エディターを使用したコード化された UI テストの編集](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
-
-
-

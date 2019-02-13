@@ -1,11 +1,7 @@
 ---
 title: 起動時間の最適化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - startup time [Visual Studio]
 - optimizing startup time [Visual Studio]
@@ -14,13 +10,13 @@ ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a17b8955d6c81c182523a7616f927eabd8703632
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 0ceed13cc320e2c98d413e6694acb2b473ad72eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050180"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780276"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio の起動時間の最適化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +31,7 @@ Visual Studio で起動の遅延が検出されると、ポップアップ メ�
 
 ![Visual Studio のパフォーマンスの管理 - ポップアップ](../ide/media/vside-perfdialog-popup.PNG "Visual Studio のパフォーマンスの管理 - ポップアップ")
 
-**Visual Studio のパフォーマンスの管理** ダイアログ ボックスが 2 つのカテゴリ。拡張機能とツール ウィンドウ
+**[Visual Studio のパフォーマンスの管理]** ダイアログ ボックスには、**[拡張機能]** と **[ツール ウィンドウ]** という 2 つのカテゴリがあります。
 
 ### <a name="control-extensions"></a>拡張機能の制御
 拡張機能が Visual Studio の起動の遅延の原因となっている場合、いずれかの種類の拡張機能を選択したときに、**[Visual Studio のパフォーマンスを管理]** ダイアログ ボックスに拡張機能が表示されます。 起動時間への影響 (**[影響]** セクションにリストされている) が受け入れがたい場合には、**[無効にする]** ボタンを選び、起動時には常に拡張機能を無効にするよう選択することができます。 拡張機能マネージャーまたは [Visual Studio のパフォーマンスの管理] ダイアログ ボックスを使用して、今後のセッションで拡張機能を再度有効にすることができます。
@@ -47,8 +43,8 @@ Visual Studio で起動の遅延が検出されると、ポップアップ メ�
 ### <a name="control-tool-windows"></a>ツール ウィンドウの制御
 ツール ウィンドウが Visual Studio の起動の遅延の原因となっている場合、既定の動作のままにしておく (起動速度にメリットなし) か、次の 2 つの動作のいずれかを選択して、動作をオーバーライドすることができます。
 
-- 起動時にウィンドウを表示しないこのオプションを選択した場合、指定したツール ウィンドウは常に閉じられます、Visual Studio を開く場合でも、前のセッションで開いたまま。 ツール ウィンドウはメニューから開くことができます。
-- 起動時にウィンドウを自動的に隠すツール ウィンドウが前のセッションで開いたままにした場合は、このオプションを選択すると、ツール ウィンドウが初期化されないように起動時にツール ウィンドウのグループを折りたたむは。 これは、ツール ウィンドウがまだ使用可能でも、Visual Studio の起動時間には悪影響しなくなるため、ツール ウィンドウを頻繁に使用する場合に適しています。
+- **起動時にウィンドウを表示しない:** このオプションを選択すると、Visual Studio を開いたときに指定されたツール ウィンドウが常に閉じられます。前のセッションで開いたままの場合でも同じです。 ツール ウィンドウはメニューから開くことができます。
+- **起動時にウィンドウを自動的に隠す:** ツール ウィンドウが前のセッションで開いたままの場合、このオプションを選択すると、起動時にツール ウィンドウのグループが折りたたまれ、ツール ウィンドウが初期化されないようになります。 これは、ツール ウィンドウがまだ使用可能でも、Visual Studio の起動時間には悪影響しなくなるため、ツール ウィンドウを頻繁に使用する場合に適しています。
 
 ![Visual Studio のパフォーマンスの管理 - ツール ウィンドウ](../ide/media/vside-perfdialog-toolwindows.PNG "Visual Studio のパフォーマンスの管理 - ツール ウィンドウ")
 
