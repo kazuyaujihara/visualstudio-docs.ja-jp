@@ -57,12 +57,12 @@ ms.locfileid: "54862181"
 |カスタム XML 部分|ドキュメントレベルのプロジェクト<br /><br /> 次のアプリケーション用のアプリケーション レベルのプロジェクト:<br /><br /> -   Excel<br />-   PowerPoint<br />-   Word|[カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)|  
 |データ キャッシュ|ドキュメントレベルのプロジェクト|[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)|  
 |他の Microsoft Office ソリューションへの VSTO アドイン内のオブジェクトの公開|VSTO アドイン プロジェクト|[他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
-|次のホスト コントロール:<br /><br /> -   Chart<br />-   ListObject<br />-   NamedRange<br />-   コンテンツ コントロール<br />-   Bookmark|ドキュメントレベルのプロジェクト<br /><br /> Word と Excel 用の VSTO アドイン プロジェクト|[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)|  
+|次のホスト コントロール:<br /><br /> - Chart<br />- ListObject<br />- NamedRange<br />- コンテンツ コントロール<br />- Bookmark|ドキュメントレベルのプロジェクト<br /><br /> Word と Excel の VSTO アドイン プロジェクト|[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)|  
 |次のホスト コントロール:<br /><br /> -   XMLMappedRange<br />-   XMLNode<br />-   XMLNodes|ドキュメントレベルのプロジェクト|[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)|  
 |複数プロジェクトの配置|ドキュメントレベルのプロジェクト<br /><br /> VSTO アドイン プロジェクト|[チュートリアル: 単一の ClickOnce インストーラーでの複数の Office ソリューションのデプロイ](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
-|Outlook フォーム領域|Outlook 用の VSTO アドイン プロジェクト|[Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)|  
+|Outlook フォーム領域|Outlook の VSTO アドイン プロジェクト|[Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)|  
 |配置後の動作|ドキュメントレベルのプロジェクト<br /><br /> VSTO アドイン プロジェクト|[チュートリアル: ClickOnce インストール後のドキュメントのエンドユーザーのコンピューターへのコピー](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
-|リボンのカスタマイズ|ドキュメントレベルのプロジェクト<br /><br /> 次のアプリケーション用の VSTO アドイン プロジェクト:<br /><br /> -   Excel<br />-   InfoPath (InfoPath 2013 と InfoPath 2010 のみ)<br />-   Outlook<br />-   PowerPoint<br />-   Project<br />-   Visio<br />-   Word|[リボンの概要](../vsto/ribbon-overview.md)|  
+|リボンのカスタマイズ|ドキュメントレベルのプロジェクト<br /><br /> 次のアプリケーションの VSTO アドイン プロジェクト:<br /><br /> - Excel<br />- InfoPath (InfoPath 2013 と InfoPath 2010 のみ)<br />- Outlook<br />- PowerPoint<br />- Project<br />- Visio<br />- Word|[リボンの概要](../vsto/ribbon-overview.md)|  
 |視覚的なドキュメント デザイナー|ドキュメントレベルのプロジェクト|[Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>関連項目  
