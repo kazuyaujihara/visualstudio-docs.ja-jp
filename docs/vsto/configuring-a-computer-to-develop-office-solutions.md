@@ -29,7 +29,7 @@ Microsoft Office の VSTO アドインおよびカスタマイズを作成する
 |.NET Framework|.NET Framework 4 以降|
 |Microsoft Office|<ul><li>Office Professional Plus for Office 365 を含む Office のいずれかのスイート エディション</li><li>次のいずれかのスタンドアロン アプリケーション:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 および Office 2010 のみ)</li><li>Outlook</li><li>PowerPoint</li><li>Project</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) は Office の一部としてインストールされている必要があります。 **重要:** Office 2010 アプリケーションのクイック実行バージョンはサポートされていません。|
 
-詳細なインストール手順については、次を参照してください。[方法。Office ソリューションを開発コンピューターを構成する](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)します。
+詳細なインストール手順については、「[Office ソリューションを開発するコンピューターを構成する方法](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)」を参照してください。
 
 ## <a name="if-project-templates-dont-appear-or-they-dont-work-in-visual-studio"></a>プロジェクト テンプレートが表示されない、または Visual Studio で動作しない場合
 
@@ -41,16 +41,16 @@ Microsoft Office の VSTO アドインおよびカスタマイズを作成する
 
      これらのツールがインストールされていることを確認するために、Visual Studio のセットアップ プログラムを開始して、**[変更]** ボタンをクリックします。 **[Microsoft Office Developer Tools]** チェック ボックスをオンにして **[更新]** ボタンをクリックします。
 
-- 実行で提供された Office のバージョンを実行していないことを確認します。 「[方法:Outlook がコンピューター上のクリック クイック実行アプリケーションかどうかを確認](/previous-versions/office/developer/office-2010/ff864733(v=office.14))します。
+- 実行で提供された Office のバージョンを実行していないことを確認します。 「[Outlook がコンピューター上のクイック実行アプリケーションかどうかを確認する方法](/previous-versions/office/developer/office-2010/ff864733(v=office.14))」を参照してください。
 
 - Microsoft Office の 1 つだけのバージョンを実行していることを確認します。
 
-問題が発生する場合を参照してください。 [Office ソリューションのエラーのための追加サポート](../vsto/additional-support-for-errors-in-office-solutions.md)します。
+問題が発生する場合、「[Office ソリューションのエラーのための追加サポート](../vsto/additional-support-for-errors-in-office-solutions.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-[開始&#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[方法: Office ソリューションを開発コンピューターを構成します。](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[方法: Visual Studio Tools for Office ランタイム再頒布可能パッケージのインストールします。](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[方法: Office プライマリ相互運用機能アセンブリをインストールします。](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+[はじめに &#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+[Office ソリューションを開発するコンピューターを構成する方法](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+[Visual Studio Tools for Office ランタイム再頒布可能パッケージをインストールする方法](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
+[Office プライマリ相互運用機能アセンブリをインストールする方法](../vsto/how-to-install-office-primary-interop-assemblies.md)  
 [Office アプリケーションおよびプロジェクトの種類で使用できる機能](../vsto/features-available-by-office-application-and-project-type.md)

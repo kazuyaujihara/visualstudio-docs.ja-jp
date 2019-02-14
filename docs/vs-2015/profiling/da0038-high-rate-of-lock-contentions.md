@@ -1,14 +1,9 @@
 ---
 title: 'DA0038: 高率のロック競合 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.38
 - vs.performance.rules.DA0038
@@ -17,13 +12,13 @@ ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c160ff4a61e8a0e2879cc0cacc59aae9e951361b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 21d5811493dff235b43d128ab7f62f32702e7961
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761150"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766203"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: 高率のロック競合
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,5 +55,4 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法  
  メッセージをダブルクリックして、プロファイル データの [[マーク]](../profiling/marks-view.md) ビューに移動します。  **.NET CLR LocksAndThreads\Contention Rate / sec** 列を探します。 ロックの競合が他のフェーズよりも多い特定のプログラム実行フェーズがあるかどうかを確認します。  
   
- この規則は、コンカレンシー プロファイル方法を使用していない場合にのみ適用されます。 コンカレンシー プロファイル方法は、アプリケーション内でのロックの競合に関連するパフォーマンス上の問題を診断するのに最適なツールです。 コンカレンシー プロファイル データを収集して、アプリケーションのロック動作を確認してください。 これには、競合の多いロックはどれであるか、実行時間の長いスレッドは競合したロックを待機してどのように遅延するか、および示唆される特定のコードはどれであるかの確認が含まれます。 コンカレンシー プロファイルは、すべてのロック競合についてデータを収集します。これには、ネイティブの Windows 機能、.NET Framework クラス、およびアプリケーションで参照するその他すべてのサードパーティ ライブラリが含まれます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE からのコンカレンシー プロファイルの情報については、「[スレッドおよびプロセスのコンカレンシー データの収集](../profiling/collecting-thread-and-process-concurrency-data.md)」を参照してください。 コマンド ラインからのコンカレンシー プロファイルの情報へのリンクについては、「[コマンド ラインからのプロファイル方法の使用](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)」の「**コンカレンシー メソッドを使用してリソースの競合およびスレッド アクティビティのデータを収集する**」セクションを参照してください。
-
+ この規則は、コンカレンシー プロファイル方法を使用していない場合にのみ適用されます。 コンカレンシー プロファイル方法は、アプリケーション内でのロックの競合に関連するパフォーマンス上の問題を診断するのに最適なツールです。 コンカレンシー プロファイル データを収集して、アプリケーションのロック動作を確認してください。 これには、競合の多いロックはどれであるか、実行時間の長いスレッドは競合したロックを待機してどのように遅延するか、および示唆される特定のコードはどれであるかの確認が含まれます。 コンカレンシー プロファイルは、すべてのロック競合についてデータを収集します。これには、ネイティブの Windows 機能、.NET Framework クラス、およびアプリケーションで参照するその他すべてのサードパーティ ライブラリが含まれます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE からの同時実行プロファイルの情報については、「[スレッドおよびプロセスの同時実行データの収集](../profiling/collecting-thread-and-process-concurrency-data.md)」を参照してください。 コマンド ラインからのコンカレンシー プロファイルの情報へのリンクについては、「[コマンド ラインからのプロファイル方法の使用](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)」の「**コンカレンシー メソッドを使用してリソースの競合およびスレッド アクティビティのデータを収集する**」セクションを参照してください。

@@ -1,11 +1,7 @@
 ---
 title: その他の言語のエディターのサポートの追加 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax colorization
 - IntelliSense
@@ -18,13 +14,13 @@ ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fa622ddb6d840698d1134e0fec1540d99b44f5e2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758816"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Visual Studio エディターでの他の言語のサポートの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +80,7 @@ Visual Studio エディターでさまざまなコンピューター言語の読
 
  Windows では、%userprofile% はパス (c:\Users\\*\<ユーザー名>*) に解決されます。 システム上に拡張機能フォルダーが存在しない場合は、作成する必要があります。 フォルダーが既に存在する場合は、表示されません。
 
- TextMate 文法を作成する方法の詳細については、次を参照してください。 [TextMate-言語の文法の概要。ソース コード構文の強調表示を追加する方法は、HTML に埋め込まれた](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)と[Textmate バンドルの言語の文法とカスタム テーマを作成する方法に関する注意事項](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)します。
+ TextMate 文法の作成方法の詳細については、「[TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)」 (TextMate - 言語の文法の概要: HTML に埋め込みのソース コード構文の強調表示を追加する方法) と「[Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)」 (Textmate バンドルの言語の文法とカスタム テーマを作成する方法に関する注意事項) を参照してください。
 
 ## <a name="see-also"></a>参照
  [Visual Studio 2013 の移動機能の強化](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)[チュートリアル: コード スニペットを作成](../ide/walkthrough-creating-a-code-snippet.md)[チュートリアル: 候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)
