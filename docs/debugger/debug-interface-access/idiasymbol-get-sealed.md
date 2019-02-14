@@ -50,5 +50,5 @@ HRESULT get_sealed( 
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -43,5 +43,5 @@ HRESULT get_thisAdjust ( 
 ## <a name="remarks"></a>コメント  
  複数の継承によってメソッド自体が、真を計算する必要があります`this`値のオフセット位置に追加することによって`this`します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

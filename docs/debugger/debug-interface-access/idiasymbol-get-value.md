@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 21564107cba68288e4a0b577f4bf794f1503796d
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55039671"
@@ -68,5 +68,5 @@ void ProcessValue2(IDiaSymbol *pSymbol)
 }  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
