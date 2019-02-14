@@ -90,5 +90,5 @@ ms.locfileid: "54996809"
     }  
     ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
