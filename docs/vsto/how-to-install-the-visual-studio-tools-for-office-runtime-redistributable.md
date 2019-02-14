@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74e63f34a7285fc035ae2acd338a73725a77e6ce
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: HT
+ms.openlocfilehash: 28bd6b050f5f313132167631d25ec7c4be661462
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867209"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227369"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>方法: Visual Studio Tools for Office ランタイム再頒布可能パッケージをインストールする方法
   Visual Studio 2010 Tools for Office ランタイムは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の中で Microsoft Office developer tools を使用して作成されたソリューションを実行する各コンピューターにインストールする必要があります。 ランタイムは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、および Microsoft Office をインストールすると自動的にインストールされます。 詳細については、[Visual Studio Tools for Office runtime のインストール シナリオ](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)を参照してください。  
@@ -48,7 +48,7 @@ ms.locfileid: "54867209"
   
      これらのセットアップ ファイルは、[Visual Studio 2010 Tools for Office ランタイム](http://go.microsoft.com/fwlink/?LinkId=140384)からダウンロードできます。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] の必須コンポーネントは .NET Framework の場合と同じです。  
   
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] には言語パックが含まれています。 Windows のインストールが英語以外の言語に設定されている場合、Windows と同じ言語でランタイム メッセージを表示できます。 同様に、エンド ユーザーが [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] をインストールし、英語以外の言語に設定されている Windows のインストールでソリューションを実行すると、Windows と同じ言語でランタイム メッセージが表示されます。 場合によっては、追加の言語パックが必要になる場合があります。 たとえば、Windows のコピーが 1 つ以上の言語設定を使用したり、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]が既にインストールされた後に別の言語に切り替える場合は、追加の言語パックが必要になることがあります。 言語パックは、[Microsoft Visual Studio 2010 Tools for Microsoft Office system (バージョン 4.0 ランタイム) language pack](http://go.microsoft.com/fwlink/?LinkId=140386)で見つかります。  
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] には、言語パックが用意されています。 Windows のインストールが英語以外の言語に設定されている場合、Windows と同じ言語でランタイム メッセージを表示できます。 同様に、エンド ユーザーが [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] をインストールし、英語以外の言語に設定されている Windows のインストールでソリューションを実行すると、Windows と同じ言語でランタイム メッセージが表示されます。 場合によっては、追加の言語パックが必要になる場合があります。 たとえば、Windows のコピーが 1 つ以上の言語設定を使用したり、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]が既にインストールされた後に別の言語に切り替える場合は、追加の言語パックが必要になることがあります。 言語パックは、[Microsoft Visual Studio 2010 Tools for Microsoft Office system (バージョン 4.0 ランタイム) language pack](http://go.microsoft.com/fwlink/?LinkId=140386)で見つかります。  
   
 ## <a name="see-also"></a>関連項目  
  [はじめに &#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
