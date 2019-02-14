@@ -1,27 +1,22 @@
 ---
-title: '方法 : テンプレートの問題を解決する | Microsoft Docs'
-ms.custom: ''
+title: '方法: テンプレートのトラブルシューティング |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 helpviewer_keywords:
 - Visual Studio templates, troubleshooting
 ms.assetid: 3e577ad2-f725-4c11-93b3-477f2404ec81
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a68097745de1f1d94e5c09963a474a0095588fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb2c708bfb6bfafe90b548ad2826e0cf11882a3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296427"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793207"
 ---
 # <a name="how-to-troubleshoot-templates"></a>方法 : テンプレートの問題を解決する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49296427"
 5.  .vstemplate ファイルの XML が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] テンプレート スキーマに準拠していることを確認します。 .vstemplate スキーマの詳細については、「[Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」を参照してください。  
   
     > [!NOTE]
-    >  .Vstemplate ファイルを作成する際に IntelliSense サポートを取得するには追加、`xmlns`属性を`VSTemplate`要素の値を割り当てると http://schemas.microsoft.com/developer/vstemplate/2005します。  
+    >  `xmlns`vstemplate`VSTemplate` ファイルを作成する際に IntelliSense サポートを取得するには、 http://schemas.microsoft.com/developer/vstemplate/2005 属性を  要素に追加し、  の値を割り当てます。  
   
 6.  .vstemplate ファイルを保存して、閉じます。  
   
@@ -67,10 +62,7 @@ ms.locfileid: "49296427"
   
 4.  テンプレート イベントをダブルクリックして、エラーを表示します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)   
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
-
-
-

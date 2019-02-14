@@ -1,12 +1,8 @@
 ---
 title: ご意見 | Microsoft ドキュメント
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
 - Help [Visual Studio], product support
@@ -14,13 +10,13 @@ ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d046603919c0639427b29cb23cdfa6f8ea74337c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 198953116a6489c0e771a66b463e44da48590a4f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289836"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785940"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +31,7 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
  ページの下部にあるフィードバック ボタン (**[このページは役に立ちましたか]**) をお使いください。 このボタンは、すべての MSDN ページに表示されます。 目的の回答が見つからない場合は、お探しの情報の内容をお聞かせください。  
   
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Visual Studio での問題を報告します。  
- クラッシュ、パフォーマンスの低下、予期しない動作や Visual Studio を使用して問題を実行している場合、問題をご報告くださいを横にあるフィードバック アイコンを右クリックして**クイック起動**を選択して**ヘルプ&#124;フィードバックの送信&#124;問題を報告する**メイン メニューから。 詳細については、次を参照してください。 [Visual Studio で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2015.md)します。  
+ クラッシュ、パフォーマンスの低下、予期しない動作や Visual Studio を使用して問題を実行している場合、問題をご報告くださいを横にあるフィードバック アイコンを右クリックして**クイック起動**を選択して**ヘルプ&#124;フィードバックの送信&#124;問題を報告する**メイン メニューから。 詳細については、「[Visual Studio で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2015.md)」を参照してください。  
   
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Visual Studio の機能に関するご提案  
  改善できる点がありましたら、ぜひご連絡ください! **[提案事項の送信]** を選択して、Visual Studio チームに機能または変更を提案します。 提案事項は自動的に [UserVoice](https://visualstudio.uservoice.com) に投稿され、それに対して他のユーザーが投票できるようになります。  
@@ -59,5 +55,5 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>開発者コミュニティへの参加  
  質問や回答を他の開発者と共有する場合は、「 [MSDN フォーラム](http://social.msdn.microsoft.com/Forums/home) 」または「 [StackOverflow](http://stackoverflow.com/)」をご利用になれます。 「 [開発者コード サンプル](http://code.msdn.microsoft.com/) 」と「 [CodePlex](http://www.codeplex.com/) 」の Web サイトで、他の開発者のコードを閲覧したり、ご自分の例を公開したりすることができます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio 2015 で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

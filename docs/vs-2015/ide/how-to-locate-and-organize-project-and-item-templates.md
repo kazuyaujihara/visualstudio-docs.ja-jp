@@ -1,14 +1,9 @@
 ---
-title: '方法 : プロジェクト テンプレートと項目テンプレートを配置して整理する | Microsoft Docs'
-ms.custom: ''
+title: '方法: 配置して整理プロジェクト テンプレートと項目テンプレート |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - custom template locations [Visual Studio]
@@ -20,13 +15,13 @@ ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830978"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778527"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>方法 : プロジェクト テンプレートと項目テンプレートを配置して整理する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ ms.locfileid: "49830978"
   
   たとえば、次のディレクトリにはカスタム [!INCLUDE[csprcs](../includes/csprcs-md.md)] プロジェクト テンプレートが含まれています。  
   
-  C:\Documents and Settings\UserName\My ドキュメント\\< Visual Studio バージョン\>\Templates\ProjectTemplates\Visual C \  
+  C:\Documents and Settings\<ユーザー名>\My Documents\Visual Studio \\バージョン\>\Templates\ProjectTemplates\Visual C#\  
   
   カスタム テンプレートには、ローカライズされたテンプレート用のサブディレクトリは含まれていません。 カスタム テンプレートの既定ディレクトリは、**[オプション]** ダイアログ ボックスの **[環境] > [プロジェクトおよびソリューション]** で変更できます。  
   
@@ -122,7 +117,7 @@ ms.locfileid: "49830978"
   
 1. カスタム プロジェクト テンプレートのディレクトリの言語フォルダーに、フォルダーを作成します。 たとえば、[!INCLUDE[csprcs](../includes/csprcs-md.md)] テンプレートに対して HelloWorld カテゴリを作成するには、次のディレクトリを作成する必要があります。  
   
-    \My documents\\< Visual Studio バージョン\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My Documents\Visual Studio \\バージョン\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。  
   
@@ -136,7 +131,7 @@ ms.locfileid: "49830978"
   
 1.  カスタム項目テンプレートのディレクトリの言語フォルダーに、フォルダーを作成します。 たとえば、[!INCLUDE[csprcs](../includes/csprcs-md.md)] テンプレートに対して HelloWorld カテゴリを作成するには、次のディレクトリを作成する必要があります。  
   
-     \My documents\\< Visual Studio バージョン\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \My Documents\Visual Studio \\バージョン\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。  
   
@@ -177,12 +172,9 @@ ms.locfileid: "49830978"
   
 8.  削除した .zip ファイルが含まれていたディレクトリに、新しい .zip ファイルを配置します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (Visual Studio テンプレート)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [方法 : プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)   
  [方法 : 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)
-
-
-

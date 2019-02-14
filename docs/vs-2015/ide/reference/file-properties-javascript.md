@@ -1,14 +1,9 @@
 ---
 title: ファイルのプロパティ、JavaScript | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
 - javascript.project.property.expandedsdknode.uri
@@ -30,13 +25,13 @@ ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909734"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780370"
 ---
 # <a name="file-properties-javascript"></a>ファイルのプロパティ、JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "49909734"
   
 - **コンテンツ** - ファイルはパッケージ マニフェストに含まれます。 たとえば、.htm、.js、.css、image、audio、または video ファイルでは、この設定が既定値です。  
   
-- **マニフェスト**– ファイルはパッケージ マニフェストに含まれません。 このファイルは、パッケージ マニフェストの生成時に入力に使用されます。 package.appxmanifest ファイルでは、この設定が既定値です。  
+- **マニフェスト** - ファイルはパッケージ マニフェストに含まれません。 このファイルは、パッケージ マニフェストの生成時に入力に使用されます。 package.appxmanifest ファイルでは、この設定が既定値です。  
   
 - **リソース** - ファイルはパッケージ マニフェストに含まれません。 ファイルの内容のインデックスはパッケージ リソース インデックス (PRI) に保存され、パッケージ マニフェストに含まれます。 通常、リソース ファイルに使用されます。  
   
@@ -96,13 +91,10 @@ ms.locfileid: "49909734"
  参照される SDK ファイルのパスが表示されます。  
   
 ### <a name="uri"></a>URI  
- ソース ファイルとしてファイルを含め、プロジェクトの HTML または JavaScript ファイルに含める必要がある URI を表示します。  
+ ソース ファイルとしてファイルに含めるために、プロジェクトの HTML または JavaScript ファイルに含める必要がある URI が表示されます。  
   
 ### <a name="version"></a>Version  
  参照のバージョンが表示されます。  
   
-## <a name="see-also"></a>関連項目  
- [NIB: プロジェクトのプロパティ (Visual Studio)](http://msdn.microsoft.com/en-us/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
-
-
-
+## <a name="see-also"></a>参照  
+ [NIB: プロジェクトのプロパティ (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

@@ -1,14 +1,9 @@
 ---
 title: コードの構造の表示 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -32,13 +27,13 @@ ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901646"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801213"
 ---
 # <a name="viewing-the-structure-of-code"></a>コードの構造の表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ Visual Studio プロジェクトのオブジェクトとメンバー、および
   
  [コード定義ウィンドウ (C#、C++)](#BKMK_CodeDefinition)  
   
- 使用することも**ソリューション エクスプ ローラー**型と、プロジェクト内のメンバーを参照するシンボルの検索、メソッドの呼び出し階層の表示、シンボル参照の場合は、その他複数のツール ウィンドウを切り替えることがなくの検索前の表にします。  
+ プロジェクトの型とメンバーの参照、シンボルの検索、メソッドの呼び出し階層の表示、シンボル参照の検索などを行うために、**ソリューション エクスプローラー**を使用することもできます。この場合、前述の複数のツール ウィンドウを切り替える必要がなくなります。  
   
  Visual Studio Enterprise があるなら、コード マップを使用して、コードの構造や、ソリューション全体におけるその依存関係を視覚化したり、コードの中の関心のある部分までドリルダウンしたりすることができます。 詳細については、「[ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)」を参照してください。  
   
@@ -227,8 +222,5 @@ Visual Studio プロジェクトのオブジェクトとメンバー、および
 ### <a name="document-outline-window"></a>[ドキュメント アウトライン] ウィンドウ  
  **[ドキュメント アウトライン]** ウィンドウを、XAML ページのデザイナーや Windows フォーム デザイナー、または HTML ページなどのデザイナー ビューと共に使用することができます。 このウィンドウでは、要素がツリー ビューで表示されます。これにより、フォームまたはページの論理構造を表示し、組み込み位置の深いコントロールや非表示になっているコントロールを見つけることができます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン](../ide/class-view-and-object-browser-icons.md)
-
-
-

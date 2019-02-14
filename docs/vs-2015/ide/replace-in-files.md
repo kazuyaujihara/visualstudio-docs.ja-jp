@@ -1,14 +1,9 @@
 ---
 title: '[フォルダーを指定して置換] | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.replaceinfiles
 - vs.replaceinfiles
@@ -20,21 +15,21 @@ ms.assetid: ca361466-53bd-44db-a28a-3a74bc03b028
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 92029377d5e7d4faf4c6b7f38deda1eecdeaa395
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 87a9d344b6cad7d27979e73c73caf0dbf97f521d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228827"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779243"
 ---
 # <a name="replace-in-files"></a>[フォルダーを指定して置換]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-* * ファイル内の置換文字列や正規表現、ファイルの指定したセットのコードを検索し、見つかった一致の一部またはすべてを変更することができます。 見つかった一致項目と実行された処理は、**[結果オプション]** で選択した **[検索結果]** ウィンドウに表示されます。  
+[フォルダーを指定して置換] では、文字列または式を対象に、指定したファイル セットのコードを検索し、見つかった一致項目の一部または全部を変更できます。 見つかった一致項目と実行された処理は、**[結果オプション]** で選択した **[検索結果]** ウィンドウに表示されます。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
  **[検索と置換]** ウィンドウに **[フォルダーを指定して置換]** を表示するには、次の方法を使用できます。  
   
@@ -95,10 +90,7 @@ ms.locfileid: "49228827"
 > [!CAUTION]
 >  **[元に戻す]** は、編集のために開いた状態を維持しているファイルにのみ使用できます。 このオプションが選択されていない場合、編集のために開いていなかったファイルは開いていない状態を維持します。そのようなファイルでは、**[元に戻す]** オプションは利用できません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [テキストの検索と置換](../ide/finding-and-replacing-text.md)   
  [フォルダーを指定して検索](../ide/find-in-files.md)   
  [Visual Studio のコマンド](../ide/reference/visual-studio-commands.md)
-
-
-

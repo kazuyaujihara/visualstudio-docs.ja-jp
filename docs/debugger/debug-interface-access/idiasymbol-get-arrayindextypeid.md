@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_arrayindextypeid |Microsoft Docs
+title: IDiaSymbol::get_arrayIndexTypeId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 124f86e2-6f66-4541-87c3-799f435b731e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 013f3283b4a362e05a9fd7d9bf80c70963991b50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e11eccf44699c7c3b482d8f8a50fd338f003974e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990530"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986687"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 シンボルの配列インデックスの種類の識別子を取得します。  
@@ -50,5 +50,5 @@ HRESULT get_arrayIndexTypeId ( 
 |ヘッダー:|dia2.h|  
 |バージョン:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

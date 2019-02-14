@@ -1,5 +1,5 @@
 ---
-title: Idiareadexeatoffsetcallback::readexecutableat |Microsoft Docs
+title: IDiaReadExeAtOffsetCallback::ReadExecutableAt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30b1cef0-b366-4712-8e89-d21f640964f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d75529a2baebc6a5f488122106f47e512a4b9ac0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3a637608c8da5d7c5c5e0d857520a08ffae494a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962157"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944867"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 指定した実行可能ファイルから指定したオフセットから始まるバイト数を読み取ります。  
@@ -49,6 +49,6 @@ HRESULT ReadExecutableAt ( 
 ## <a name="remarks"></a>コメント  
  このメソッドは、ファイルの絶対オフセットを使用する実行可能ファイルからバイトのデータを読み込む DIA サポート コードによって呼び出されます。 サポートにこのメソッドは、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッド。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

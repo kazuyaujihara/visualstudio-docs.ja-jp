@@ -1,25 +1,20 @@
 ---
-title: 'チュートリアル: アプリケーションをビルドする | Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: アプリケーションをビルドする |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220208"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799156"
 ---
 # <a name="walkthrough-building-an-application"></a>チュートリアル: アプリケーションをビルドする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ ms.locfileid: "50220208"
 4.  **[OK]** を選択します。  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> カスタム ビルド構成を作成する  
- ソリューションを作成すると、デバッグ ビルド構成およびリリース ビルド構成と、これらの既定のプラットフォーム ターゲットがソリューションに対して自動的に定義されます。 これらの構成をカスタマイズすることも、独自に作成することもできます。 ビルド構成では、ビルドの種類を指定します。 ビルド プラットフォームでは、その構成でアプリケーションが対象とするオペレーティング システムを指定します。 詳細については、「[Understanding Build Configurations](../ide/understanding-build-configurations.md)」(ビルド構成の概要)、「[Understanding Build Platforms](../ide/understanding-build-platforms.md)」(ビルド プラットフォームの概要)、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
+ ソリューションを作成すると、デバッグ ビルド構成およびリリース ビルド構成と、これらの既定のプラットフォーム ターゲットがソリューションに対して自動的に定義されます。 これらの構成をカスタマイズすることも、独自に作成することもできます。 ビルド構成では、ビルドの種類を指定します。 ビルド プラットフォームでは、その構成でアプリケーションが対象とするオペレーティング システムを指定します。 詳細については、「[Understanding Build Configurations](../ide/understanding-build-configurations.md)」(ビルド構成の概要)、「[Understanding Build Platforms](../ide/understanding-build-platforms.md)」(ビルド プラットフォームの概要)、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
   
  **[構成マネージャー]** ダイアログ ボックスを使用すると、構成とプラットフォームの設定を変更または作成できます。 この手順では、テスト用のビルド構成を作成します。  
   
@@ -98,7 +93,7 @@ ms.locfileid: "50220208"
   
 4. **[アクティブ ソリューション プラットフォーム]** 一覧の **[新規作成]** をクリックします。  
   
-5. **新しいソリューション プラットフォーム** ダイアログ ボックスで、選択**x64**、x86 の設定はコピーしませんプラットフォーム。  
+5. 5. **[新しいソリューション プラットフォーム]** ダイアログ ボックスで、**[x64]** を選択します。x86 プラットフォームの設定はコピーしません。  
   
     ![[新しいソリューション プラットフォーム] ダイアログ ボックス](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
@@ -125,7 +120,7 @@ ms.locfileid: "50220208"
   
   ![出力ウィンドウ、Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
-  図 2: Visual C# の警告  
+  図 2: Visual c# の警告  
   
   ![出力ウィンドウ、Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
@@ -208,7 +203,7 @@ ms.locfileid: "50220208"
 ##  <a name="BKMK_releasebuild"></a> リリース ビルドを作成する  
  出荷用に最適化されたバージョンとしてサンプル アプリケーションをビルドすることができます。 リリース ビルドでは、ビルドの開始前に実行可能ファイルをネットワーク共有にコピーすることを指定します。  
   
- 詳細については、「[How to: Change the Build Output Directory](../ide/how-to-change-the-build-output-directory.md)」(方法: ビルドの出力ディレクトリを変更する) と「[Building and Cleaning Projects and Solutions in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)」(Visual Studio のプロジェクトとソリューションのビルドと消去) を参照してください。  
+ 詳細については、「[方法 :ビルド出力ディレクトリを変更](../ide/how-to-change-the-build-output-directory.md)と[プロジェクトと Visual Studio のソリューションをビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)します。  
   
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>Visual Basic 用にリリース ビルドを指定するには  
   
@@ -260,10 +255,7 @@ ms.locfileid: "50220208"
   
    これで、このチュートリアルを完了できました。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [チュートリアル: プロジェクトの構築 (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
- [ASP.NET Web アプリケーション プロジェクト プリコンパイルの概要](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
+ [ASP.NET Web アプリケーション プロジェクト プリコンパイルの概要](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)   
  [チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)
-
-
-

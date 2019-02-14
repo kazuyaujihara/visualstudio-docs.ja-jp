@@ -1,14 +1,9 @@
 ---
-title: '[オプション]-[テキスト エディター]、C-C++、高度な |Microsoft Docs'
-ms.custom: ''
+title: '[オプション]、[テキスト エディター]、[C/C++]、[詳細] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Advanced
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Advanced
@@ -19,13 +14,13 @@ ms.assetid: 67c82ae5-fddd-49df-baec-8e7498b156f3
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: aafa46e62af6eadb56d8cf53cb2190bc7403358b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285702"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790098"
 ---
 # <a name="options-text-editor-cc-advanced"></a>[オプション]、[テキスト エディター]、[C/C++]、[詳細]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49285702"
  このページにアクセスするには、左ウィンドウ枠の **[オプション]** ダイアログ ボックスで、**[テキスト エディター]**、**[C/C++]** の順に展開して、**[詳細]** を選択します。  
   
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 「[Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 「[Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="browsingnavigation"></a>参照/ナビゲーション  
  ソリューションの規模が大きすぎるため、データベース アクティビティにより許容できない量のシステム リソースが消費されるというまれなケースを除いて、これらのオプションを選択しないでください。  
@@ -162,8 +157,5 @@ ms.locfileid: "49285702"
   
  **参照の強調表示を無効にする**  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [言語固有のエディター オプションの設定](../../ide/reference/setting-language-specific-editor-options.md)
-
-
-

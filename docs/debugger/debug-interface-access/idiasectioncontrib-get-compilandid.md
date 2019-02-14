@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_compilandid |Microsoft Docs
+title: IDiaSectionContrib::get_compilandId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 71ef2e63-d095-42b6-88d8-626e3129f0d9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b53066e1fd247340d6d7d05b147597ccb338a19
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dda294060e9126e43e80bac35ea68ba202434140
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966130"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951210"
 ---
 # <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
 セクションのコンパイル単位の識別子を取得します。  
@@ -37,5 +37,5 @@ HRESULT get_compilandId ( 
 ## <a name="return-value"></a>戻り値  
  正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

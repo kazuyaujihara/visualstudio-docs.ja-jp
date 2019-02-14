@@ -1,14 +1,9 @@
 ---
 title: '[エラー一覧] ウィンドウ | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ErrorList
 helpviewer_keywords:
@@ -20,19 +15,19 @@ ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 080bc6b8efe5407a372ef2e22c53d04fa977e057
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873703"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785772"
 ---
 # <a name="error-list-window"></a>[エラー一覧] ウィンドウ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-注]
+メモ:
 >  エラー一覧には、特定のエラー メッセージに関する情報が表示されます。 [出力] ウィンドウから、エラー番号またはエラー文字列のテキストをコピーできます。 [出力] ウィンドウを表示するには、Ctrl + Alt + O キーを押します。 「[[出力] ウィンドウ](../../ide/reference/output-window.md)」をご覧ください。  
   
  **[エラー一覧]** ウィンドウを使うと、アプリケーションをより迅速に開発できます。 たとえば、次のタスクを実行できます。  
@@ -56,7 +51,7 @@ ms.locfileid: "49873703"
   一覧を並べ替えるには、任意の列ヘッダーをクリックします。 並べ替えに使用する列を追加するには、Shift キーを押しながら、他の列ヘッダーをクリックします。 どの列を表示し、どの列を表示しないのかを指定するには、ショートカット メニューの **[列の表示]** を選びます。 列の表示順序を変更するには、任意の列を左右にドラッグします。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ここで説明する内容と異なる場合があります。 設定を変更するには、**[ツール] > [設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ここで説明する内容と異なる場合があります。 設定を変更するには、**[ツール] > [設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="error-list-filters"></a>エラー一覧のフィルター  
  2 つのドロップダウンボックス内には、ツールバーの左側とツールバーの右側に 2 種類のフィルターがあります。 ツールバーの左側にあるドロップダウン リストでは、使うコード ファイルのセットを指定します (**[ソリューション全体]**、**[開かれているドキュメント]**、**[現在のプロジェクト]**、**[現在のドキュメント]**)。  
@@ -100,6 +95,3 @@ ms.locfileid: "49873703"
   
  行  
  問題が発生した行を表示します。
-
-
-

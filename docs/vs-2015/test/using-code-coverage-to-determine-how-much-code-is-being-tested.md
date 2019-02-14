@@ -1,26 +1,21 @@
 ---
 title: コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
 ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 46e9ad272dd7d7b6e4a1f6033f09e99cb4b289d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782660"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49834059"
   
 2.  実行された行を表示するには、![[コード カバレッジの色分けを表示] アイコン](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon") **[コード カバレッジの色分け表示]** を選択します。  
   
-     色を変更したり太字を使用したりする場合は、**[ツール]**、**[オプション]**、**[環境]**、**[フォントおよび色]**、**[設定の表示: テキスト エディター]** の順に選択します。 **[表示項目]** でカバレッジ項目を調整します。  
+     色を変更したり太字を使用するには、選択**ツール**、**オプション**、**環境**、**フォントおよび色**、**を表示します。設定:テキスト エディター** の順に選択します。 **[表示項目]** でカバレッジ項目を調整します。  
   
 3.  結果が低カバレッジを示していた場合は、コードのどの部分が実行されていないかを調べ、その部分をカバーするテストをさらに作成します。 開発チームは、通常、約 80% のコード カバレッジを目標にします。 状況によっては、より低いカバレッジでも許容されます。 たとえば、一部のコードが標準テンプレートから生成される場合は、より低いカバレッジでも許容されます。  
   
@@ -101,7 +96,7 @@ ms.locfileid: "49834059"
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>コード カバレッジの結果から要素を除外する  
  コードがテキスト テンプレートから生成された場合のように、コード内の特定の要素をカバレッジのスコアから除外する必要があることがあります。 その場合は、コード要素であるクラス、構造体、メソッド、プロパティ、プロパティ set または get アクセス操作子、およびイベントに、属性 `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` を追加します。 クラスを除外しても、派生クラスは除外されないことに注意してください。  
   
- 例えば:  
+ 次に例を示します。  
   
 ```csharp  
   
@@ -261,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
     複数のテスト ソース定義がある場合は、各定義に対してこの手順を繰り返します。  
   
-   - <em>という名前のフィールドはありませんが、**実行設定ファイルの種類</em>**。  
+   - <em>ただし、*[実行設定の種類]</em> というフィールドはありません。*  
   
       **[自動テスト]** の下の **[テスト アセンブリ]** を選択し、行の末尾の省略記号 (**[...]**) ボタンを選択します。 **[テストの実行の追加と編集]** ダイアログ ボックスで、**[テスト ランナー]** の下の **[Visual Studio テスト ランナー]** を選択します。  
   
@@ -286,12 +281,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>外部リソース  
   
 ### <a name="guidance"></a>ガイダンス  
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)   
  [トラブルシューティング コード カバレッジ](../test/troubleshooting-code-coverage.md)   
  [コードの単体テスト](../test/unit-test-your-code.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 標準ツールセット構成とカスタム ツールセット構成 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
@@ -16,13 +11,13 @@ ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1a1d57903ec2a8c3afb439f27433898467028eb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0ad0d60921e9bb42f54cc70c49efbe64f036398d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906703"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801675"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準ツールセット構成とカスタム ツールセット構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,8 +103,5 @@ MSBuild ツールセットには、アプリケーション プロジェクト�
 
   MSBuildToolsPath プロパティを追加する場合と同じ構文を使用して、ToolsVersion 固有のカスタム プロパティを構成ファイルに追加することもできます。 このようなカスタム プロパティをプロジェクト ファイルで利用できるようにするには、構成ファイルに指定された値の名前と同じ名前を使用します。 構成ファイルではツールセットを定義できますが、サブツールセットは定義できません。  
 
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
-
-
-

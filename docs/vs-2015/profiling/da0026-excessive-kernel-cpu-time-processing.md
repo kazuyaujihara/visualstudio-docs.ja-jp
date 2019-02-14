@@ -1,14 +1,9 @@
 ---
 title: 'DA0026: 過剰なカーネル CPU 処理時間。 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0026
 - vs.performance.DA0026
@@ -17,13 +12,13 @@ ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2dbf52ab216a2272cb3b6094126a34987588704
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fef0a3c42be1057bd1217ec676ae43b220d80345
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749676"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768972"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: 過剰なカーネル CPU 処理時間。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51749676"
 規則 Id |TODO |  
 |カテゴリ |プロファイリング ツールの使用 |  
 |プロファイル方法 |サンプリング |  
-|メッセージ |比較的高いカーネル モード CPU 時間の量が測定されました。 SysCall サンプリングを有効にした原因の調査を検討してください |。  
+|メッセージ |比較的高いカーネル モード CPU 時間の量が測定されました。 SysCall サンプリングを有効にし、原因を調査することを検討してください。  
 |規則の種類 |情報 |  
   
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。  
@@ -44,6 +39,3 @@ ms.locfileid: "51749676"
   
 ## <a name="how-to-fix-violations"></a>違反の修正方法  
  アプリケーションが実行するシステム コールを調べるには、プロファイルを再度実行し、システム コールに基づいてサンプルを収集するオプションを選択します。 IDE 内でプロファイリング ツールを実行する場合の詳細については、「[方法 : サンプリング イベントを選択する](../profiling/how-to-choose-sampling-events.md)」を参照してください。 コマンド ラインからプロファイリング ツールを実行する場合の詳細については、コマンド ライン プロファイリング ツール リファレンスのトピック、「[VSPerfCmd](../profiling/vsperfcmd.md)」の「**サンプリング間隔オプション**」のセクションを参照してください。
-
-
-

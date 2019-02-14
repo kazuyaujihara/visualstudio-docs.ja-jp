@@ -1,14 +1,9 @@
 ---
 title: '[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons, in Object Browser
 - signal icons
@@ -22,18 +17,18 @@ ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785050"
 ---
 # <a name="class-view-and-object-browser-icons"></a>[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-クラス ビュー * *、**オブジェクト ブラウザー**コードのエンティティを表すアイコン、名前空間、クラス、関数、および変数を表示します。 各アイコンおよびその説明を次の表に示します。  
+**[クラス ビュー]** およびオブジェクト ブラウザーには、名前空間、クラス、関数、変数などのコード エンティティを表すアイコンが表示されます。 各アイコンおよびその説明を次の表に示します。  
   
 |アイコン|説明|アイコン|説明|  
 |----------|-----------------|----------|-----------------|  
@@ -66,8 +61,5 @@ ms.locfileid: "49279741"
 |![シグナル フレンド&#47;内部シンボル](../ide/media/vxsignal-icon-diamond.gif "vxSignal_Icon_Diamond")|フレンド/内部。 プロジェクトからのみアクセスできます。|  
 |![シグナル アイコン矢印](../ide/media/vxsignal-icon-arrow.gif "vxSignal_Icon_Arrow")|ショートカット。 オブジェクトへのショートカットです。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コードの構造の表示](../ide/viewing-the-structure-of-code.md)
-
-
-
