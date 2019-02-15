@@ -35,7 +35,7 @@ VsgDbg(
   
  `bDefaultInit` が `false` に設定された状態でコンストラクターが呼び出された場合、後で `Init` 関数を呼び出して、グラフィックス情報をアクティブにキャプチャして記録するようにグラフィックス診断のアプリ内コンポーネントを準備できます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [VsgDbg::~VsgDbg (デストラクター)](vsgdbg-tilde-vsgdbg-destructor.md)   
  [Init](init.md)   
  [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)   
