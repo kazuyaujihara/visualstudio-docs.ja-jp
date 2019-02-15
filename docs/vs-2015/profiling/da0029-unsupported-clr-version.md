@@ -1,14 +1,9 @@
 ---
 title: 'DA0029: サポートされていない CLR バージョンです | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.29
 - vs.performance.rules.DA0029
@@ -20,13 +15,13 @@ ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 51195b14be7bffe682f4ac8588e38c6f5bd56e58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 532427618f476e1e187d8a1c88749810f9d157c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803541"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: サポートされていない CLR バージョンです。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51762518"
 規則 Id |DA0029 |  
 |カテゴリ |プロファイリング ツールの使用 |  
 |プロファイル方法 |コマンドラインからのプロファイリング |  
-|メッセージ |コレクション中に、サポートされていない CLR バージョンが検出されました。 マネージド シンボルが正しく解決されない場合があります |。  
+|メッセージ |コレクション中に、サポートされていない CLR バージョンが検出されました。 マネージド シンボルが正しく解決されない可能性があります。  
 |規則の種類 |情報 |。  
   
 ## <a name="cause"></a>原因  
@@ -45,6 +40,3 @@ ms.locfileid: "51762518"
   
 ## <a name="how-to-fix-violations"></a>違反の修正方法  
  なし。
-
-
-

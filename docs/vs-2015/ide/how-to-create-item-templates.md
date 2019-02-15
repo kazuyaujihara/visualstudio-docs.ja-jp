@@ -1,14 +1,9 @@
 ---
-title: '方法 : 項目テンプレートを作成する | Microsoft Docs'
-ms.custom: ''
+title: '方法: 項目テンプレートを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project item templates, XML reference
 - project item templates, custom template locations
@@ -18,13 +13,13 @@ ms.assetid: 77bc53d4-d607-4820-a032-7e3b365891b5
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863634"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788250"
 ---
 # <a name="how-to-create-item-templates"></a>方法 : 項目テンプレートを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,9 +155,9 @@ ms.locfileid: "49863634"
   
 7.  エクスプローラーで、テンプレートに含めるファイルを選択します。右クリックして [送信] をクリックし、[圧縮 (zip 形式) フォルダー] をクリックします。 選択したファイルは .zip ファイルに圧縮されます。  
   
-8.  .zip ファイルをコピーして、ユーザーの項目テンプレートの場所に貼り付けます。 Visual Studio 2015 では、既定のディレクトリは.\Users\\< ユーザー名\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\します。 詳細については、「方法 : プロジェクト テンプレートと項目テンプレートを配置して整理する」を参照してください。  
+8.  .zip ファイルをコピーして、ユーザーの項目テンプレートの場所に貼り付けます。 Visual Studio 2017 での規定のディレクトリは、..\Users\\<ユーザー名\>\Documents\Visual Studio 2017\Templates\ItemTemplates\\ です。 詳細については、「方法 : プロジェクト テンプレートと項目テンプレートを配置して整理する」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [方法 : 複数ファイルの項目テンプレートを作成する](../ide/how-to-create-multi-file-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,14 +1,9 @@
 ---
 title: GenerateApplicationManifest タスク | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5c9cb78ff4d3d9542c956a377f6342945d11a0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245571"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756585"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,10 +45,10 @@ ms.locfileid: "49245571"
 |`Dependencies`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 作成するマニフェストが依存する一連のアセンブリを定義したアイテム一覧を指定します。 配置状態に関するその他の情報や依存関係の種類を示したアイテム メタデータを添えると、各アイテムを詳細に記述できます。 詳細については、後述する「アイテム メタデータ」を参照してください。|  
 |`Description`|省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションまたはコンポーネントの説明を記述します。|  
 |`EntryPoint`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 作成されるマニフェスト アセンブリのエントリ ポイントを示すアイテムを 1 つ指定します。<br /><br /> [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーション マニフェストの場合、このパラメーターには、アプリケーションの実行時に起動されるアセンブリを指定します。|  
-|`ErrorReportUrl`|(省略可能) [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) パラメーター。<br /><br /> ClickOnce インストールのエラー報告時にダイアログ ボックスに表示される Web ページの URL を指定します。|  
+|`ErrorReportUrl`|省略可能な <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String 型のパラメーターです。<br /><br /> ClickOnce インストールのエラー報告時にダイアログ ボックスに表示される Web ページの URL を指定します。|  
 |`FileAssociations`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> ClickOnce の配置マニフェストに関連付けられている 1 つまたは複数のファイルの種類のリストを指定します。<br /><br /> ファイルの関連付けは、.NET Framework 3.5 以降が対象となっている場合にのみ有効です。|  
 |`Files`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> マニフェストに含めるファイルです。 各ファイルの完全パスを指定します。|  
-|`HostInBrowser`|(省略可能) [ブール] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) パラメーター。<br /><br /> `true` の場合、WPF Web ブラウザー アプリケーションのように、アプリケーションがブラウザーでホストされます。|  
+|`HostInBrowser`|省略可能な [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 型のパラメーターです。<br /><br /> `true` の場合、WPF Web ブラウザー アプリケーションのように、アプリケーションがブラウザーでホストされます。|  
 |`IconFile`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> アプリケーション アイコンのファイルを示します。 アプリケーション アイコンは、作成されるアプリケーション マニフェストに記述され、[スタート] メニューおよび [プログラムの追加と削除] ダイアログ ボックスで使用されます。 指定しなかった場合には、既定のアイコンが使用されます。 タスクがネイティブ マニフェストを生成する場合には、このパラメーターは無視されます。|  
 |`InputManifest`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> マニフェスト ジェネレーターのベースとして使用する、入力 XML ドキュメントを指定します。 これによって、アプリケーション セキュリティまたはカスタム マニフェスト定義など、構造化されたデータが出力マニフェストに反映されます。 XML ドキュメントのルート要素は、asmv1 名前空間内のアセンブリ ノードである必要があります。|  
 |`IsolatedComReferences`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 作成されるマニフェスト内で分離する COM コンポーネントを指定します。 このパラメーターを使用すると、"登録を必要としない COM" の配置用に COM コンポーネントを分離できます。 この機能は、標準の COM 登録の定義を使用してマニフェストを自動作成することによって実現されています。 ただし、正しく動作するためには、ビルド処理を行っているコンピューターに、対象の COM コンポーネントが登録されている必要があります。|  
@@ -73,7 +68,7 @@ ms.locfileid: "49245571"
 |`TrustInfoFile`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> アプリケーションのセキュリティを指定する XML ドキュメントを示します。 XML ドキュメントのルート要素は、asmv2 名前空間内の trustInfo ノードである必要があります。 タスクがネイティブ マニフェストを生成する場合には、このパラメーターは無視されます。|  
 |`UseApplicationTrust`|省略可能な <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> 型のパラメーターです。<br /><br /> true の場合、`Product`、`Publisher`、および `SupportUrl` の各プロパティがアプリケーション マニフェストに書き込まれます。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.GenerateManifestBase> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 Task クラスのパラメーターの一覧については、[「Task Base Class」](../msbuild/task-base-class.md) を参照してください。  
   
  `GenerateDeploymentManifest` タスクの使用方法については、「[GenerateApplicationManifest タスク](../msbuild/generateapplicationmanifest-task.md)」を参照してください。  
@@ -358,11 +353,8 @@ ms.locfileid: "49245571"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [タスク](../msbuild/msbuild-tasks.md)   
  [GenerateDeploymentManifest タスク](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile タスク](../msbuild/signfile-task.md)   
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)
-
-
-

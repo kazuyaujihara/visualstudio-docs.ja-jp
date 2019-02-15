@@ -1,14 +1,9 @@
 ---
 title: ストア アプリでのエネルギー使用の分析 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 102302a1c14f379745007135593cc039aa9f8836
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b61f367384c8ff11de72f16586a98a5d54f0ee06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790354"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>ストア アプリでのエネルギー使用の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Visual Studio の **エネルギー消費** プロファイラーは、常時ま
  メソッドが実行されると、ユーザー マークがメッセージと共にプロファイル データに追加されます。  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel を実装して、 [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx)インターフェイス (として投影[System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) c# および VB で)。オペレーティング システム リソースのリークを避けるため、呼び出す[LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (c# および VB で Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) は、ログ チャンネルで終了するとき。  
+> - Windows.Foundation.Diagnostics LoggingChannel は [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) インターフェイス (C# および VB で [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) として投影) を実装します。オペレーティング システム リソースのリークを防ぐには、ログ チャネルで終了するときに [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx) (C# および VB では Windows.Foundation.Diagnostics.LoggingChannel.Dispose) を呼び出します。  
 >   -   開いているログ記録チャネルそれぞれに一意の名前を付ける必要があります。 破棄されていないチャネルと同じ名前で新しくログ記録チャネルを作成しようとすると、例外が発生します。  
   
  例については、Windows SDK サンプル [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) を参照してください。  
@@ -153,11 +148,8 @@ if (performance && performance.mark) {
   
 ##  <a name="BKMK_Other_resources"></a> その他のリソース  
   
--   Windows デベロッパー センターの **C#/VB/C++ と XAML** および [JavaScript と HTML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) の「 [接続状態とコストの管理](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) 」セクションでは、ネットワーク接続情報を提供する Windows API について説明しています。この情報を使って、アプリはネットワーク トラフィックのコストを最小限にすることができます。  
+-   Windows デベロッパー センターの **C#/VB/C++ と XAML** および [JavaScript と HTML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) の「 [接続状態とコストの管理](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 」セクションでは、ネットワーク接続情報を提供する Windows API について説明しています。この情報を使って、アプリはネットワーク トラフィックのコストを最小限にすることができます。  
   
      Windows ストア アプリ用の Visual Studio シミュレーターでは、ネットワーク情報 API のデータ接続プロパティをシミュレートすることができます。 「 [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md)」を参照してください。  
   
 -   **JavaScript 関数タイミング** および **CPU 使用率** ツールは、非効率的な関数のために生じる CPU 負荷の削減に役立ちます。 「[CPU 使用率の分析](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md)」をご覧ください。
-
-
-

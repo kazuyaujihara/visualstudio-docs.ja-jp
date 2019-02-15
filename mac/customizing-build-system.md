@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f2b3abf20e75dcf783f03f696ec679a1ce575c56
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296308"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853639"
 ---
 # <a name="customizing-the-build-system"></a>ビルド システムのカスタマイズ
 
-MSbuild は Microsoft が開発したビルド エンジンです。主に .NET アプリケーションのビルドを可能にします。 Mono フレームワークはまた、Microsoft のビルド エンジンを独自に実装しています。それが **xbuild** です。 ただし、xbuild は廃止となり、すべてのオペレーティング システムで MSBuild が使用されています。
+MSBuild は Microsoft が開発したビルド エンジンです。主に .NET アプリケーションのビルドを可能にします。 Mono フレームワークはまた、Microsoft のビルド エンジンを独自に実装しています。それが **xbuild** です。 ただし、xbuild は廃止となり、すべてのオペレーティング システムで MSBuild が使用されています。
 
-**MSbuild** は、Visual Studio for Mac のビルド システムとして主に使用されます。
+**MSBuild** は、Visual Studio for Mac のプロジェクト用のビルド システムとして主に使用されます。
 
 MSBuild は、ソース ファイルなど、一連の入力を受け取ることで動作し、入力を実行可能ファイルなどの出力に変換します。 この出力は、コンパイラのようなツールを呼び出して行われます。
 

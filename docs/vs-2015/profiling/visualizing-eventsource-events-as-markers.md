@@ -1,25 +1,20 @@
 ---
 title: マーカーとしての EventSource イベントの視覚化 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c39f137299c1f229de8c3c6dc8d7329cba6033cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801493"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>マーカーとしての EventSource イベントの視覚化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ ms.locfileid: "51742557"
   
 ### <a name="marker-type"></a>マーカーの種類  
   
-1.  [オペコード](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start または win:Stop を持つイベントは、それぞれスパンの開始と終了として扱われます。  入れ子になっているスパンまたは重複するスパンは表示できません。 あるスレッドで開始し、別のスレッドで終了するイベント ペアは表示できません。  
+1.  [オペコード](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start または win:Stop を持つイベントは、それぞれスパンの開始と終了として扱われます。  入れ子になっているスパンまたは重複するスパンは表示できません。 あるスレッドで開始し、別のスレッドで終了するイベント ペアは表示できません。  
   
-2.  オペコードが win:Start でも win:Stop でもないイベントは、その[レベル](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR のフィールド) が win:Verbose 以上でない限り、マーカー フラグとして扱われます。  
+2.  オペコードが win:Start でも win:Stop でもないイベントは、その[レベル](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR のフィールド) が win:Verbose 以上でない限り、マーカー フラグとして扱われます。  
   
 3.  それ以外の場合はすべて、イベントはメッセージとして扱われます。  
   
@@ -47,8 +42,8 @@ ms.locfileid: "51742557"
 |win:Error|重大|  
 |win:Warning|High|  
 |win:Informational|標準|  
-|win:Verbose|Low|  
-|win:verbose より大きい|Low|  
+|win:Verbose|低|  
+|win:verbose より大きい|低|  
   
 ### <a name="series-name"></a>系列の名前  
  イベントのタスク名は系列名に使用されます。 イベントにタスクが定義されていない場合、系列名は空です。  
@@ -56,7 +51,7 @@ ms.locfileid: "51742557"
 ### <a name="category"></a>カテゴリ  
  レベルが win:Critical または win:Error の場合、カテゴリはアラート (-1) です。 それ以外の場合は、カテゴリは既定 (0) です。  
   
-### <a name="text"></a>テキスト  
+### <a name="text"></a>Text  
  printf 型の書式設定されたテキスト メッセージがイベントに対して定義されている場合、マーカーの説明として表示されます。 それ以外の場合は、説明はイベントの名前と各ペイロード フィールドの値です。  
   
 ## <a name="customizing-visualization-of-eventsource-events"></a>EventSource イベントの視覚化のカスタマイズ  
@@ -67,11 +62,11 @@ ms.locfileid: "51742557"
   
 |cvType 値|結果として得られるマーカーの種類|  
 |------------------|---------------------------|  
-|0|メッセージ|  
+|0|Message|  
 |1|スパンの開始|  
 |2|スパンの終了|  
 |3|フラグ|  
-|その他のすべての値|メッセージ|  
+|その他のすべての値|Message|  
   
 ### <a name="importance"></a>重要度  
  `cvImportance` フィールド (バイト) を使用して、EventSource イベントの重要度の設定を制御できます。 しかし、表示されるイベントの重要度はレベルを使用して制御することをお勧めします。  
@@ -80,17 +75,17 @@ ms.locfileid: "51742557"
 |------------------------|---------------------------------------|  
 |0|標準|  
 |1|重大|  
-|2|High|  
-|3|High|  
+|2|高|  
+|3|高|  
 |4|標準|  
 |5|Low|  
-|その他のすべての値|Low|  
+|その他のすべての値|低|  
   
 ### <a name="series-name"></a>系列の名前  
  `cvSeries` イベント フィールド (文字列) を使用して、コンカレンシー ビジュアライザーが EventSource イベントに指定する系列名を制御できます。  
   
 ### <a name="category"></a>カテゴリ  
- `cvCategory` ィールド (バイト) を使用して、コンカレンシー ビジュアライザーが EventSource イベントに指定するカテゴリを制御できます。  
+ `cvCategory` フィールド (バイト) を使用して、コンカレンシー ビジュアライザーが EventSource イベントに指定するカテゴリを制御できます。  
   
 ### <a name="text"></a>テキスト  
  `cvTextW` フィールド (文字列) を使用して、コンカレンシー ビジュアライザーが EventSource イベントに指定する説明を制御できます。  
@@ -101,8 +96,5 @@ ms.locfileid: "51742557"
 > [!NOTE]
 >  SpanID を使用してスパンを入れ子にすること、同じスレッドで部分的に重複させること、または開始と終了のスレッドを別にすることはサポートされていません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)
-
-
-

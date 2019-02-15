@@ -1,14 +1,9 @@
 ---
 title: 'DA0018: 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -17,13 +12,13 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aeca49e13a2d7181d74f48522786185f4be9ed58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773288"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51722251"
 規則 Id |DA 0018 |  
 |カテゴリ |プロファイリング ツールの使用 |  
 |プロファイル方法 |サンプリング |  
-|メッセージ |マネージ メモリの割り当てが 32 ビット プロセスの既定の制限に近づいています。 アプリケーションのメモリ バインドされた可能性があります |。  
+|メッセージ |マネージ メモリの割り当てが 32 ビット プロセスの既定の制限に近づいています。 アプリケーションがメモリにより制限されている可能性があります。  
 |規則の種類 |警告 |  
   
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。  
@@ -74,6 +69,3 @@ ms.locfileid: "51722251"
   プロセス アドレス空間のプライベート部分のサイズに関する仮想メモリのアーキテクチャ上の制約を解除するには、64 ビット コンピューター上でこの 32 ビット プロセスを実行してみてください。  64 ビット コンピューター上で実行されている 32 ビット プロセスの場合、最大 4 GB のプライベート仮想メモリを取得できます。  
   
   64 ビット コンピューター上で実行されている 64 ビット プロセスの場合、最大 8 TB のプライベート仮想メモリを取得できます。 アプリケーションを再コンパイルし、ネイティブの 64 ビット アプリケーションとして実行することを検討してください。 この規則は情報提供用であるため、是正措置は必要ない場合があります。
-
-
-

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccd9fa5ea1f7963d4864e276bd05011be817de2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3556c36e00ac092c1ebb3af4e6d09921fcd11233
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865982"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023578"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;要素 (ブートス トラップ)
 `InstallChecks`要素のさまざまなアプリケーションの適切な前提条件のすべてがインストールされているかどうかを確認するローカル コンピューターに対するテストの開始をサポートしています。  
@@ -167,8 +167,8 @@ ms.locfileid: "53865982"
 
 |プロパティ|メモ|使用できる値|  
 |--------------|-----------|---------------------|  
-|`Version9X`|Windows 9 X オペレーティング システムのバージョン番号。|4.10 Windows 98 を =|  
-|`VersionNT`|Windows NT ベースのオペレーティング システムのバージョン番号。|Major.minor.servicepack です。<br /><br /> 5.0 Windows 2000 を =<br /><br /> 5.1.0 が Windows XP を =<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
+|`Version9X`|Windows 9 X オペレーティング システムのバージョン番号。|4.10 = Windows 98|  
+|`VersionNT`|Windows NT ベースのオペレーティング システムのバージョン番号。|Major.minor.servicepack です。<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 が Windows XP を =<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
 |`VersionNT64`|64 ビット Windows NT ベースのオペレーティング システムのバージョン番号。|前に示したのと同じです。|  
 |`VersionMsi`|Windows インストーラー サービスのバージョン番号。|2.0 Windows インストーラー 2.0 を =|  
 |`AdminUser`|ユーザーが Windows NT ベースのオペレーティング システムの管理者特権を持つかどうかを指定します。|0 = 管理者特権なし<br /><br /> 1 = 管理者の権限|  

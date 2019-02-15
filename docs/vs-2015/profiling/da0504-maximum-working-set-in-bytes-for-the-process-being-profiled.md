@@ -1,5 +1,5 @@
 ---
-title: DA0504:プロセスのワーキング セット最大バイト数がプロファイリングされています | Microsoft Docs
+title: 'DA0504: プロセスのワーキング セット最大バイト数がプロファイリングされています | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,7 +20,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54787192"
 ---
-# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504:プロセスのワーキング セット最大バイト数がプロファイリングされています
+# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: プロセスのワーキング セット最大バイト数がプロファイリングされています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則 Id |DA 0504 |  

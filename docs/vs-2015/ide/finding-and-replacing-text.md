@@ -1,14 +1,9 @@
 ---
 title: テキストの検索と置換 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.find
 - vs.findreplacecontrol
@@ -41,13 +36,13 @@ ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a0edc40a8a6523c76a6b6f8074a108219152c06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273443"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756879"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,13 +74,10 @@ Visual Studio Code エディターや、**[検索結果]** ウィンドウなど
  **[すべて検索]** を選択すると、**[検索結果]** ウィンドウが開き、検索に対する一致項目が一覧表示されます。 一覧内でいずれかの検索結果を選択すると、関連付けられたファイルが表示され、一致項目が強調表示されます。 まだファイルが編集用に開いていなければ、タブ ウェルの右側にあるプレビュー タブで開かれます。 **[検索結果]** ボックスの一覧内の検索にも **[検索]** コントロールを使用できます。  
   
 ### <a name="creating-custom-search-folder-sets"></a>カスタムの検索フォルダー セットの作成  
- 選択して、検索スコープを定義することができます、**検索フォルダーの選択**ボタン (よう **.**) 横に、**検索**ボックス。 **[検索フォルダーの選択]** ダイアログ ボックスでは、検索対象としてフォルダーのセットを指定し、その指定内容を後で再利用できるように保存することができます。 リモート コンピューター上のフォルダーは、そのコンピューターのドライブがローカル コンピューターにマッピングされている場合のみ、指定することができます。  
+ **[検索対象]** ボックスの横にある **[検索フォルダーの選択]** ボタン (**[...]**) をクリックすると、検索スコープを定義できます。 **[検索フォルダーの選択]** ダイアログ ボックスでは、検索対象としてフォルダーのセットを指定し、その指定内容を後で再利用できるように保存することができます。 リモート コンピューター上のフォルダーは、そのコンピューターのドライブがローカル コンピューターにマッピングされている場合のみ、指定することができます。  
   
 ### <a name="creating-custom-component-sets"></a>カスタムのコンポーネント セットの作成  
  **[検索対象]** ボックスの横にある **[カスタム コンポーネント セットの編集]** をクリックすると、コンポーネント セットを検索スコープとして定義できます。 インストールされている .NET または COM コンポーネント、ソリューションに含まれている Visual Studio プロジェクト、または任意のアセンブリやタイプ ライブラリ (.dll、.tlb、.olb、.exe、.ocx) を指定できます。 参照を検索するには、**[参照内で検索]** チェック ボックスをオンにします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio での正規表現の使用](../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

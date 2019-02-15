@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d16b4e82dc84ce88ac47fd623502891c7b85ba1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a322d201310121a843fd1fe805d502b5aa9364b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834166"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941302"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;依存関係&gt;要素 (ClickOnce 配置)
 をインストールするアプリケーションのバージョンとアプリケーション マニフェストの場所を識別します。  
@@ -123,7 +123,7 @@ ms.locfileid: "53834166"
 |-------------| - |
 | `Algorithm` | このファイルのダイジェストを計算するために使用するアルゴリズム。 現在、唯一の値で使用される[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]は`http://www.w3.org/2000/09/xmldsig#sha1`します。 |
 
-## <a name="dsigdigestvalue"></a>目的  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue`要素の必須の子では、`hash`要素。 `dsig:DigestValue` 要素に属性はありません。 テキスト値は、指定したファイルの計算されたハッシュです。  
 
 ## <a name="remarks"></a>コメント  

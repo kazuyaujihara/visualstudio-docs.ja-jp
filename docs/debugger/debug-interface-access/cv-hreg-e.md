@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a3ecd9d4b7e1dc8cffc3a11a8b58c0812a1a36
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0697507b9df10ac1f39108581a651c5290ad6b78
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829645"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919553"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 ターゲットのレジスタを指定します。  
@@ -409,37 +409,37 @@ enum CV_HREG_e { 
 ```  
   
 ## <a name="elements"></a>Elements  
- CV_REG_ *  
+ CV_REG_*  
  登録して、Intel 80x86 および ix86 プロセッサを p コードを使用します。  
   
- CV_R68_ *  
+ CV_R68_*  
  68 K プロセッサによって使用されるレジスタ。  
   
  CV_M4_ *  
  MIPS 4000 シリーズのプロセッサで使用される登録します。  
   
- CV_ALPHA_ *  
+ CV_ALPHA_*  
  Digital Equipment Corporation Alpha AXP シリーズのプロセッサで使用される登録します。  
   
- CV_PPC_ *  
+ CV_PPC_*  
  登録/IBM Motorola PowerPC プロセッサで使用します。  
   
  CV_SH3_ * と CV_SH_\*  
  日立 SH3 と日立 SH シリーズのプロセッサで使用される登録します。  
   
- CV_ARM_ *  
+ CV_ARM_*  
  Advanced RISC Machine (ARM) プロセッサが使用を登録します。  
   
- CV_IA64_ *  
+ CV_IA64_*  
  Intel の IA64 シリーズのプロセッサで使用される登録します。  
   
- CV_TRI_ *  
+ CV_TRI_*  
  Infineon テクノロジ TriCore プロセッサによって使用されるレジスタ。  
   
- CV_AM33_ *  
+ CV_AM33_*  
  レジスタは松下/Panasonic AM33 によって使用され、プロセッサに関連します。  
   
- CV_M32R_ *  
+ CV_M32R_*  
  三菱 M32R プロセッサによって使用されるレジスタ。  
   
 ## <a name="remarks"></a>コメント  
@@ -460,7 +460,7 @@ enum CV_HREG_e { 
 ## <a name="requirements"></a>要件:  
  ヘッダー: cvconst.h  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
  [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   

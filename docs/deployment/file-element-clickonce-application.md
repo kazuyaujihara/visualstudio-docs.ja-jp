@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c16c2cb00bf91d3fc0d991be71ba9b387d5a09cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d71192b38ea14ade737ecb4b34e3cc25f8b91d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828304"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984718"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;ファイル&gt;要素 (ClickOnce アプリケーション)
 アセンブリ以外のファイルをすべてダウンロードして、アプリケーションで使用されるを識別します。  
@@ -179,7 +179,7 @@ ms.locfileid: "53828304"
 |-------------| - |
 | `Algorithm` | このファイルのダイジェストを計算するために使用するアルゴリズム。 現在、唯一の値で使用される[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]は`http://www.w3.org/2000/09/xmldsig#sha1`します。 |
 
-## <a name="dsigdigestvalue"></a>目的  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue`要素の必須の子では、`hash`要素。 `dsig:DigestValue` 要素に属性はありません。 テキスト値は、指定したファイルの計算されたハッシュです。  
 
 ## <a name="remarks"></a>コメント  

@@ -1,14 +1,9 @@
 ---
 title: 'DA0007: 制御フローでの例外の使用を避けてください | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAExceptionsThrown
 - vs.performance.7
@@ -18,13 +13,13 @@ ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a86c36c55d11f91daff8e876e852daed2f222307
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2599282909c62e3a35702346f793dfd914c18ac4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770835"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: 制御フローでの例外の使用を避けてください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51737098"
 規則 Id |DA 0007 |  
 |カテゴリ |。NET Framework の使用 |  
 |プロファイル方法 |すべて |  
-|メッセージ |多数の例外が継続してスローされています。 プログラム ロジックで例外の使用を減らすことを検討します |。  
+|メッセージ |多数の例外が継続してスローされています。 プログラム ロジックで例外の使用を減らすことを検討してください。  
 |メッセージの種類 |警告 |  
   
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 25 個収集する必要があります。  
@@ -49,6 +44,3 @@ ms.locfileid: "51737098"
  [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、[マーク] ビューに移動します。 **.NET CLR Exceptions(@ProcessInstance)\\# of Exceps Thrown / sec** の測定値が含まれる列を見つけます。 例外処理の頻度が他よりも高い特定のプログラム実行フェーズがあるかどうかを確認します。 サンプリング プロファイルを使用して、頻繁な例外を生成する throw ステートメントおよび try/catch ブロックを識別してください。 必要に応じて、ロジックを catch ブロックに追加すると、最も頻繁に処理されている例外を見分けることができます。 可能な場合は、頻繁に実行される throw ステートメントまたは catch ブロックを、簡単なフロー制御ロジックまたは検証コードと置き換えてください。  
   
  たとえば、アプリケーションが DivideByZeroException 例外を頻繁に処理している場合、ロジックをプログラムに追加して値が 0 の分母をチェックすると、アプリケーションのパフォーマンスが向上します。
-
-
-

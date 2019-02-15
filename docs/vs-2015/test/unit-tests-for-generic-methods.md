@@ -197,6 +197,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [単体テストの構造](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [コードの単体テスト](../test/unit-test-your-code.md)

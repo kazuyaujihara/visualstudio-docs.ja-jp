@@ -1,25 +1,20 @@
 ---
 title: '方法: コンカレンシー ビジュアライザー マーカー SDK を使用する | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 17e18ada321752c1cde780031524fb45d8bd4997
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9e589ab9d3dde1e8940f6db28d42a566d021b4d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761121"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801714"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>方法: コンカレンシー ビジュアライザー マーカー SDK を使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +96,7 @@ ms.locfileid: "51761121"
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  既定のマーカー系列に 3 つのスパンを作成して各スパンにフラグ、メッセージ、警告を 1 つずつ記述するためのコードを追加します。 作成する、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span>静的 [EnterSpan] を呼び出すことによってオブジェクト (<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->) メソッドです。 既定の系列に書き込むには、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> クラスの静的な write メソッドを使用します。  
+3.  既定のマーカー系列に 3 つのスパンを作成して各スパンにフラグ、メッセージ、警告を 1 つずつ記述するためのコードを追加します。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> オブジェクトを作成するには、<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->EnterSpan メソッドを呼び出します。 既定の系列に書き込むには、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> クラスの静的な write メソッドを使用します。  
   
     ```vb  
   
@@ -184,8 +179,5 @@ ms.locfileid: "51761121"
   
      ![3 つのカスタム マーカー系列があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)
-
-
-

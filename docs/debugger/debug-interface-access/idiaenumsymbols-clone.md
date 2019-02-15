@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiaenumsymbols::clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -25,7 +25,7 @@ ms.locfileid: "55042739"
 ## <a name="syntax"></a>構文  
   
 ```C++  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumSymbols** ppenum  
 );  
 ```  

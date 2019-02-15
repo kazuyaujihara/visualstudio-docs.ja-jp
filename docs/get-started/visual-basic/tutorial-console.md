@@ -3,7 +3,6 @@ title: 'チュートリアル: Visual Basic 入門'
 description: Visual Studio で Visual Basic コンソール アプリを作成する方法の詳細な手順を説明します。
 ms.custom: seodec18, get-started
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: vb
@@ -14,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2d5cf15b6afd1b6eed6d800a1b7ba67c1f87b8
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424500"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155696"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>チュートリアル: Visual Studio の Visual Basic の概要
 
@@ -142,10 +141,10 @@ Visual Studio は、開発者向け生産性向上ツールの統合開発スイ
 これでこのチュートリアルは完了です。 詳細については、以下のチュートリアルをご覧ください。
 
 > [!div class="nextstepaction"]
-> [ビデオ チュートリアル:超初心者向けの Visual Basic の基本](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+> [Visual Studio で Visual Basic と .NET Core SDK を使用してライブラリを構築する](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Basic の新機能](/dotnet/visual-basic/getting-started/whats-new)
-* [Visual Basic コード ファイルの IntelliSense](../../ide/visual-basic-specific-intellisense.md)
+* [Visual Basic 言語のチュートリアル](/dotnet/visual-basic/walkthroughs)
 * [Visual Basic の言語リファレンス](/dotnet/visual-basic/language-reference/index)
+* [Visual Basic コード ファイルの IntelliSense](../../ide/visual-basic-specific-intellisense.md)

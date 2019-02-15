@@ -1,14 +1,9 @@
 ---
 title: 'DA0017: ディスクへのアクティブなメモリのページングが高率で発生しています。 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.17
 - vs.performance.rules.DA0017
@@ -17,13 +12,13 @@ ms.assetid: 01011eec-5930-43b3-980d-2cb01e2ca7f6
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6a7fbe924ee3d0f5dbd142d8e7f7020c6eed1ee5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 136a8489ed3eac621543cb40b004052c2c9d3324
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803489"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: ディスクへのアクティブなメモリのページングが高率で発生しています。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51766589"
 規則 Id |DA0017 |  
 |カテゴリ |メモリとページング |  
 |プロファイル方法 |すべて |  
-|メッセージ |ディスクへのアクティブなメモリのページング率が高いが発生しています。 アプリケーションのメモリ バインドされた可能性があります |。  
+|メッセージ |ディスクへのアクティブなメモリのページング率が高いが発生しています。 アプリケーションがメモリにより制限されている可能性があります。  
 |規則の種類 |情報 |  
   
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。  
@@ -54,6 +49,3 @@ ms.locfileid: "51766589"
  ロード テスト シナリオで ASP.NET アプリケーション用のプロファイル データを収集している場合は、追加の物理メモリ (または RAM) が構成されているコンピューターでもう一度ロード テストを実行してください。  
   
  アルゴリズムを修正し、String.Concat や String.Substring などのメモリ消費量の多い API の使用を控えることにより、メモリの割り当てを減らすことを検討してください。
-
-
-

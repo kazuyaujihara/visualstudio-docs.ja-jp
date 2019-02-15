@@ -1,14 +1,9 @@
 ---
 title: 'DA0008: 少数のサンプルしか収集されていません | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DATooFewSamples
 - vs.performance.8
@@ -18,13 +13,13 @@ ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 291daa031f66cc37e444a41ea085cff65a177b9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 03fd9b6fd794320faf76119616900b79d5bf4333
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800406"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: 少数のサンプルしか収集されていません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51759376"
 規則 Id |DA0008 |  
 |カテゴリ |プロファイリング ツールの使用 |  
 |プロファイル方法 |サンプリング |  
-|メッセージ |サンプルをいくつかのみが収集されませんでした。 多くの結果の長い実行か、サンプル速度を検討してください |。  
+|メッセージ |サンプルをいくつかのみが収集されませんでした。 収集されるサンプル数を増やすには、実行時間を長くするか、サンプリング速度を上げてください。  
 |規則の種類 |情報 |  
   
 ## <a name="cause"></a>原因  
@@ -43,6 +38,3 @@ ms.locfileid: "51759376"
   
 ## <a name="how-to-fix-violations"></a>違反の修正方法  
  統計的に有意な結果を得るために、プロファイリングするアプリケーションの実行時間を長くするか、サンプリング速度を上げることを検討してください。 Visual Studio IDE でサンプル速度を変更する方法については、「[方法 : サンプリング イベントを選択する](../profiling/how-to-choose-sampling-events.md)」を参照してください。 コマンド ラインからプロファイリング ツールを使用してサンプル速度を変更する方法の詳細については、「[VSPerfCmd](../profiling/vsperfcmd.md)」リファレンスの「[Timer](../profiling/timer.md)」を参照してください。
-
-
-
