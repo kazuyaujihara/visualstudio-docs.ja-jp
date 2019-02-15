@@ -96,7 +96,7 @@ ms.locfileid: "54864073"
 ## <a name="language-choice-and-office-programming"></a>言語の選択と Office のプログラミング
  Microsoft Office と Visual Basic for Applications (VBA) には、相互の連携によってアプリケーションのカスタマイズ ワークフローを最適化する機能が組み込まれています。 そうした機能の一部は Visual Basic に引き継がれています。 たとえば、Visual Basic は省略可能なパラメーターをサポートしているため、Microsoft Office プライマリ相互運用機能アセンブリのメソッドを呼び出す場合、Visual C# よりコードが小さくなります。
 
-## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>OfficeソリューションでVisual BasicとVisual C＃を使用したプログラム
+## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Office ソリューションで Visual Basic と Visual C ＃を使用したプログラム
  Office ソリューションは、Visual Basic と Visual C# のどちらを使用しても作成できます。 Microsoft Office オブジェクト モデルは VBA (Microsoft Visual Basic for Applications) で使用するようにデザインされているので、Visual Basic 開発者は Microsoft Office アプリケーションで公開されているオブジェクトを容易に操作できます。 Visual C# 開発者は Visual Basic 開発者と同じ機能のほとんどを使用できますが、Office オブジェクト モデルを使用するには、追加のコードを記述することが必要な場合があります。 また、Office 開発における基本的なプログラミング機能と Visual Basic や C# で記述されたマネージド コードとの間にもいくつかの違いがあります。
 
 ## <a name="key-differences-between-visual-basic-and-visual-c"></a>Visual Basic および Visual c# の主な違い
