@@ -57,5 +57,5 @@ ms.locfileid: "54919760"
 ## <a name="remarks"></a>コメント  
  Typedef はクラス、ポインター、またはユーザー定義型 (UDT) を表すことのできるため、typedef のシンボルはシンボルの他の種類のいずれかと同じプロパティを共有します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [シンボル型のクラス階層](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

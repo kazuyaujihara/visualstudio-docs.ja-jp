@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 157ee347b52a3820811693732fce183b6f54a303
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54917499"
@@ -60,6 +60,6 @@ enum StackFrameTypeEnum {
 ## <a name="requirements"></a>要件  
  ヘッダー: cvconst.h  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

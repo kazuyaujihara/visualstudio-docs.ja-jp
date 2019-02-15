@@ -25,7 +25,7 @@ ms.locfileid: "55042739"
 ## <a name="syntax"></a>構文  
   
 ```C++  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumSymbols** ppenum  
 );  
 ```  
@@ -37,5 +37,5 @@ HRESULT Clone (
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

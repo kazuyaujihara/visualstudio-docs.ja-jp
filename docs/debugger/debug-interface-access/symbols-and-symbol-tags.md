@@ -36,5 +36,5 @@ ms.locfileid: "54969000"
  [シンボル型のクラス階層](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
  クラス、配列、および関数型を返すなど、さまざまな言語要素に対応するシンボルの型について説明します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Debug Interface Access SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

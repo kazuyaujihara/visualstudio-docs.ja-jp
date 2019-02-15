@@ -130,5 +130,5 @@ ms.locfileid: "54980376"
  [定数 (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
  DIA SDK で使用できる定数をについて説明します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [参照](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
