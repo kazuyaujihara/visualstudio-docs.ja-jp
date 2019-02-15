@@ -43,5 +43,5 @@ ms.locfileid: "55006178"
 #include <vsgcapture.h>  
 ```  
 
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)
