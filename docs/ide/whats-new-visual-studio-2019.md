@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 01/29/2019
+ms.date: 02/08/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,13 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-monikerRange: '>= vs-2017'
-ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483706"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987419"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview の新機能
 
@@ -90,6 +89,8 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 また、Visual Studio 2019 Preview では、このサービスは既定でインストールされます。
 
+   ![Visual Studio 2019 の Live Share コラボレーション機能を示すアニメーション GIF ファイル](media/live-share-collaboration.gif)
+
 詳しくは、「[Visual Studio Live Share for real-time code reviews and interactive education (Visual Studio Live Share のリアルタイム コード レビューと対話型の教育)](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/)」のブログ投稿をご覧ください。
 
 ## <a name="modern-development-support"></a>最新の開発サポート
@@ -100,11 +101,16 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 今すぐ作業を開始するには、[Visual Studio 用のプル要求](https://aka.ms/pr4vs)拡張機能を Visual Studio Marketplace からダウンロードします。
 
-### <a name="develop-with-net-core-3-preview-1"></a>.NET Core 3 Preview 1 を使用した開発
+### <a name="develop-with-net-core-3-preview"></a>.NET Core 3 Preview を使用した開発
 
-Visual Studio 2019 のプレビュー リリースでは、任意のプラットフォーム向けの [.NET Core 3](http://aka.ms/netcore3preview1) アプリケーションのビルドをサポートしています。 クロスプラット フォーム C++ 開発と、iOS や Xamarin を使った Android 向けの .NET モバイル開発のサポートと改善は引き続き行います。
+Visual Studio 2019 のプレビュー リリースでは、任意のプラットフォーム向けの [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0) アプリケーションのビルドをサポートしています。 クロスプラット フォーム C++ 開発と、iOS や Xamarin を使った Android 向けの .NET モバイル開発のサポートと改善は引き続き行います。
 
-   ![Visual Studio 2019 で .NET Core 3 Preview 1 を使用してアプリを開発する](media/dot-net-core-three-dev.png)
+   ![Visual Studio 2019 で .NET Core 3 Preview を使用してアプリを開発する](media/dot-net-core-three-dev.png)
+
+詳細については、次のページを参照してください。
+
+* [.NET Core 3 Preview 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) および [.NET Core 3 Preview 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md) のリリース ノート
+* [.NET Core 3 Preview 1 の発表](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)および [.NET Core 3 Preview 2 の発表](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/)に関するブログ記事
 
 ## <a name="continuous-innovation"></a>継続的なイノベーション
 
@@ -116,6 +122,8 @@ Visual Studio 2019 Preview のリリースにより、Visual Studio を Per-moni
 
    ![Visual Studio 2019 の Per-monitor aware (PMA) レンダリング](media/per-monitor-aware-dpi-scaling.png)
 
+詳細については、[Visual Studio 2019 を使ったマルチモニター エクスペリエンスの向上](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/)に関するブログ記事をご覧ください。
+
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) は、人工知能 (AI) を使用したソフトウェア開発作業を強化するための拡張機能です。 IntelliCode は GitHub 上の 2,000 のオープン ソース プロジェクト (それぞれに 100 個以上の星が付いています) 全体をトレーニングして、レコメンデーションを生成します。
@@ -126,6 +134,8 @@ Visual Studio IntelliCode が生産性の強化に役立つ方法を次にいく
 * チームのパターンやスタイルに準拠するように開発者を導く
 * 見つけにくいコード問題を見つける
 * コード レビューの焦点を本当に重要な領域に向ける
+
+ ![IntelliSense の候補の例](media/intellicode-intellisense-suggestion.png)
 
 Visual Studio 向けの IntelliCode を初めてプレビューしたときには、C# しかサポートしていませんでした。 今回、Visual Studio で C++ のサポートに加え、XAML のサポートも追加されました。
 

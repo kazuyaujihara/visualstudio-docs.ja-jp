@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969669"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768433"
 ---
 # <a name="vbc-task"></a>Vbc タスク
 実行可能ファイル (*.exe*)、ダイナミック リンク ライブラリ (*.dll*)、またはコード モジュール (*.netmodule*) を生成する *vbc.exe* をラップします。 *vbc.exe* の詳細については、「[Visual Basic のコマンド ライン コンパイラ](/dotnet/visual-basic/reference/command-line-compiler/index)」を参照してください。  
@@ -51,7 +51,7 @@ ms.locfileid: "54969669"
 | `Imports` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 指定した項目コレクションから名前空間をインポートします。 このパラメーターは、*vbc.exe* コンパイラの [-imports](/dotnet/visual-basic/reference/command-line-compiler/imports) スイッチに相当します。 |
 | `KeyContainer` | 省略可能な `String` 型のパラメーターです。<br /><br /> 暗号化キー コンテナーの名前を指定します。 このパラメーターは、*vbc.exe* コンパイラの [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) スイッチに相当します。 |
 | `KeyFile` | 省略可能な `String` 型のパラメーターです。<br /><br /> 暗号化キーを格納するファイル名を指定します。 詳細については、「[-keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile)」を参照してください。 |
-| `LangVersion` | 省略可能な <xref:System.String?displayProperty=fullName> 型のパラメーターです。<br /><br /> 言語バージョンとして "9" か "10" を指定します。 |
+| `LangVersion` | 省略可能な <xref:System.String?displayProperty=fullName> 型のパラメーターです。<br /><br /> [言語バージョン](/dotnet/visual-basic/language-reference/configure-language-version)を指定します ("15.5" など)。 |
 | `LinkResources` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 出力ファイル内で .NET Framework リソースへのリンクを作成します。リソース ファイルは出力ファイル内に置かれません。 このパラメーターは、*vbc.exe* コンパイラの [-linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) スイッチに相当します。 |
 | `MainEntryPoint` | 省略可能な `String` 型のパラメーターです。<br /><br /> `Sub Main` プロシージャを格納するクラスまたはモジュールを指定します。 このパラメーターは、*vbc.exe* コンパイラの [-main](/dotnet/visual-basic/reference/command-line-compiler/main) スイッチに相当します。 |
 | `ModuleAssemblyName` | 省略可能な `String` 型のパラメーターです。<br /><br /> このモジュールが一部となるアセンブリを指定します。 |

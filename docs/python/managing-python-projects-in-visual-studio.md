@@ -2,7 +2,6 @@
 title: Python アプリケーション プロジェクトの管理
 description: Visual Studio のプロジェクトでは、ファイル間の依存関係とアプリケーションの関係の複雑さが管理されます。
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231936"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155865"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio の Python プロジェクト
 
@@ -37,8 +36,7 @@ Visual Studio には、多数のアプリケーション構造を短時間で設
 
 |   |   |
 |---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | Python プロジェクトの概要に関する[ビデオを見る (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) (2 分 17 秒)。 |
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | また、「[Deep Dive:Use source control with Python projects](https://youtu.be/Aq8eqApnugM)」(Deep Dive: Python プロジェクトでのソース管理の使用) (youtube.com、8 分 55 秒) もご覧ください。 |
+| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | 「[Deep Dive:Use source control with Python projects](https://youtu.be/Aq8eqApnugM)」(Deep Dive: Python プロジェクトでのソース管理の使用) (youtube.com、8 分 55 秒) もご覧ください。 |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>ファイルの追加、スタートアップ ファイルの割り当て、環境の設定
 
