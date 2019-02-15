@@ -87,5 +87,5 @@ ms.locfileid: "55014225"
   
  Graphics Analyzer ツールを一緒に使用する方法の詳細については、次を参照してください。、[例](graphics-diagnostics-examples.md)します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Direct3D 12 グラフィックス](/windows/desktop/direct3d12/direct3d-12-graphics)
