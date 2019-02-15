@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e4b97779c458fd7cb02ab5c168401f061869ccb1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
+ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953452"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56270577"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>FxCop アナライザーを Visual Studio をインストールします。
 
@@ -43,7 +43,7 @@ Microsoft と呼ばれるアナライザーのセットを作成する[Microsoft
 
 | Visual Studio のバージョン | FxCop アナライザー パッケージ バージョン |
 | - | - |
-| Visual Studio 2017 バージョン 15.5 以降 | たとえば、2.6.2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2 |
+| Visual Studio 2017 バージョン 15.5 以降 | たとえば、2.6.3 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3 |
 | Visual Studio 2017 バージョン 15.3 を 15.4 | たとえば、2.3.0-beta1 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1 |
 | Visual Studio 2017 バージョン 15.0 を 15.2 | たとえば、2.0.0-beta2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2 |
 | Visual Studio 2015 update 2 と 3 | たとえば、バージョン 1.2.0-beta2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2 |
@@ -79,7 +79,7 @@ Visual Studio 2017 バージョン 15.5 以降にインストールすること�
 
 1. 選択**変更**インストールを開始します。
 
-1. しばらくすると、2 つのインストールを完了します。 選択**閉じる**します。
+1. しばらくすると、2 つのインストールを完了します。 **[閉じる]** を選択します。
 
 1. Visual Studio を再度開きます。
 
