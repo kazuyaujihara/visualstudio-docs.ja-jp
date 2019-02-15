@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 865b5c220a410c9b0d744263820a50dd1bb9395a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e5a4791b6703db72f67c9b18abcb3b0592916be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878628"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945061"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>サポートされているコード変更 (c# および Visual Basic)
 エディット コンティニュでは、メソッドの本体内で行ったほとんどの種類のコード変更を処理できます。 しかし、メソッドの本体外で行った変更の大部分やメソッドの本体内で行った一部の変更は、デバッグ時に適用できません。 このようなサポートされていない変更を適用するには、デバッグを停止し、新しいバージョンのコードを再起動する必要があります。
@@ -33,11 +33,11 @@ ms.locfileid: "53878628"
 |言語要素/機能|サポートされている編集操作|制限事項|
 |-|-|-|
 |種類|メソッド、フィールド、コンス トラクター、他を追加します。|[はい](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Iterators|追加または変更します。|×|
+|Iterators|追加または変更します。|いいえ|
 |非同期/待機式|追加または変更します。|[はい](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|動的オブジェクト|追加または変更します。|×|
+|動的オブジェクト|追加または変更します。|いいえ|
 |ラムダ式|追加または変更します。|[はい](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|LINQ 式|追加または変更します。|[ラムダ式と同じ](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|LINQ expressions|追加または変更します。|[ラムダ式と同じ](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
 > [!NOTE]
 > 文字列補間と null 条件演算子などの新しい言語機能は通常、エディット コンティニュでサポートします。 最新情報については、次を参照してください。、 [Enc サポートされている編集](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)ページ。
@@ -104,6 +104,6 @@ ms.locfileid: "53878628"
   
 -   ビルド エラーによって新しいバージョンのビルドが失敗した後の旧バージョンのデバッグ
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [方法: エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+ [方法 : エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

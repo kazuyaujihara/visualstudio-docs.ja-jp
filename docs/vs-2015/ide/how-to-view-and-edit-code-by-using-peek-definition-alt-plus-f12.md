@@ -1,32 +1,27 @@
 ---
-title: '方法: [定義をここに表示] を使用してコードを表示および編集する (Alt + F12) | Microsoft Docs'
-ms.custom: ''
+title: '方法: 表示し、ピークの定義 (Alt + F12) を使用してコードの編集 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 45f3dd20-902a-4047-8cca-9f18216123f4
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc99602fe1ca2003995594f75736d581fa37e0d0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 24db36d6bb3a431d5ee3848eb8a6a794980f919a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254476"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777304"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>方法: [定義をここに表示] を使用してコードを表示および編集する (Alt + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **[定義をここに表示]** を使うと、記述中のコードから切り替えずにコードを表示および編集できます。 **[定義をここに表示]** と **[定義へ移動]** では同じ情報が表示されますが、**[定義をここに表示]** ではコードがポップアップ ウィンドウに表示され、**[定義へ移動]** では別のコード ウィンドウに表示されます。 **[定義へ移動]** を実行すると、コンテキスト (アクティブなコード ウィンドウ、現在の行、およびカーソルの位置) が定義コード ウィンドウに切り替わります。 **[定義をここに表示]** を使うと、元のコード ファイル内での位置を保ちながら、定義を表示および編集したり、定義ファイル内を移動したりできます。  
   
- **[定義をここに表示]** は、C#、Visual Basic、および C++ のコードで使うことができます。 Visual basic で**ピークの定義**へのリンクを示しています、**オブジェクト ブラウザー**シンボル定義のメタデータ (に組み込まれている .NET Framework 型など) がないです。  
+ **[定義をここに表示]** は、C#、Visual Basic、および C++ のコードで使うことができます。 Visual Basic では **[定義をここに表示]** に、定義メタデータのないシンボル (.NET Framework の組み込み型など) の**オブジェクト ブラウザー**へのリンクが表示されます。  
   
 > [!IMPORTANT]
 >  このコマンドは、Visual Studio 2013 の Express Edition では使用できません。  
@@ -83,8 +78,5 @@ ms.locfileid: "49254476"
     > [!NOTE]
     >  Visual Studio の他の場所でも、同じキーボード ショートカットを使って **[定義をここに表示]** ウィンドウでコードを編集できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)
-
-
-

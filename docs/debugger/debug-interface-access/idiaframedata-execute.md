@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7a6c7d03-1ff1-4059-bd54-5f407eeebc26
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be6c631f9ea0db47829f305f90bd1c296de2f28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b8a301bd4f16cd3fb6f1b6fcec90e0f1cf3f47c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958745"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992023"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 スタック アンワインドを実行し、スタック ウォーク フレーム インターフェイスで結果を返します。  
@@ -47,6 +47,6 @@ HRESULT execute ( 
 ## <a name="remarks"></a>コメント  
  このメソッドは、スタックをアンワインドするデバッグ中に呼び出されます。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)オブジェクトがレジスタに更新プログラムを受信しで使用されるメソッドを提供するクライアント アプリケーションによって実装される、`execute`メソッド。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

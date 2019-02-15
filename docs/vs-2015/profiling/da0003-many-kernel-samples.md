@@ -1,14 +1,9 @@
 ---
 title: 'DA0003: カーネル サンプルが多数存在します | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0003
 - vs.performance.DA0003
@@ -18,13 +13,13 @@ ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 922cc6998db9813c188eb9028b8e855a8b860270
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa60d16eec09255f39e18b86b468a2fef2269aff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741695"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782635"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: カーネル サンプルが多数存在します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51741695"
 規則 Id |DA0003 |  
 |カテゴリ |プロファイリング ツールの使用 |  
 |プロファイル方法 |サンプリング |  
-|メッセージ |サンプルの大部分がカーネル モードであります。 これは I/O アクティビティの量が多いか、コンテキスト切り替えの率が高いことを示す可能性があります。 インストルメンテーション モードを使用して、アプリケーションのプロファイリングを検討してください |。  
+|メッセージ |サンプルの大部分がカーネル モードであります。 これは I/O アクティビティの量が多いか、コンテキスト切り替えの率が高いことを示す可能性があります。 インストルメンテーション モードで再度、アプリケーションをプロファイリングすることを検討してください。  
 |規則の種類 |情報 |  
   
 ## <a name="cause"></a>原因  
@@ -49,6 +44,3 @@ ms.locfileid: "51741695"
 -   インストルメンテーション方式を使用してプロファイリングする。  
   
 -   サンプリング レートを増やし、ユーザー モードで集めるサンプルを増やす。
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: Python の概要 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 18e55aef8d95110dc44f20084eb5e45f643bf3cf
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275289"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833944"
 ---
 # <a name="getting-started-with-python"></a>Python の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +27,11 @@ Python は、多くの大学、科学者、アプリのスクリプト作成者�
 
 プログラミング言語として Python に示します。
   
-- 信頼性の高い。
+- 信頼性が高い
 - クイック プログラムのスクリプトを作成、アプリのスクリプト、デスクトップ アプリ、web サーバー、web サービス、および科学技術計算に一般的に便利です。
-- 簡単に学習できます (多くの大学、使用プログラミングの入門コースの優れたコーディングを推奨する優れたデザインを持つとします。
+- 簡単に学ぶことができ、適切なコーディングを推奨する優れたデザイン (多くの大学でプログラミングの入門コースに使用される)
 - 柔軟な命令型、機能、およびオブジェクト指向のプログラミング スタイルをサポートします。
-- 無料かつオープン ソースです。
+- 無料かつオープン ソース
 - すべての主要なオペレーティング システムで適切に実行されます。  
 - 無料かつ便利で適切に設計された多くのライブラリによってサポートされています。  
 - 多数のドキュメント、サンプル、および強力な開発者コミュニティによってサポートされています。  
@@ -48,10 +43,10 @@ Python 自体をインストールするを参照してください。 [ https:/
   
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
-Python Tools for Visual Studio からインストールできます[visualstudio.com](https://www.visualstudio.com/en-us/explore/python-vs)、次の機能を提供します。  
+Python Tools for Visual Studio からインストールできます[visualstudio.com](https://www.visualstudio.com/explore/python-vs)、次の機能を提供します。  
   
 - さまざまなバージョンの CPython、IronPython、IPython など、複数のインタープリターのサポート  
-- プロジェクト システムを Python コードのフォルダー構造を暗黙的に取得し、アプリ コード、テスト コード、web ページ、JavaScript、ビルド スクリプトなど、具合を識別できるように明示的に制御ができます。  
+- Python コードのフォルダー構造を暗黙的に取得し、またアプリ コード、テスト コード、Web ページ、JavaScript、ビルド スクリプトなどを識別できるように、明示的な制御も可能にするプロジェクト システム。  
 - コンソール、Web、Azure、データ サイエンスおよび他の種類のプロジェクト用のプロジェクト テンプレート。    
 - Azure SDK for Python (下記参照)    
 - 構文の色分け、すべてのコードとライブラリ間でのオートコンプリート、シグネチャ ヘルプ、クラス ビュー、定義への移動、すべての参照の検索、リファクタリングなどを含む、豊富な編集とコード読解の機能。    
@@ -96,12 +91,11 @@ Windows、Mac、および Linux をサポートしている Azure SDK for Python
 
 IPython と科学技術計算のライブラリ (matplotlib、scipy、numpy など) を[カリフォルニア大学アーバイン校](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack)から入手することをお勧めします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
 
-[PTVS の概要: Visual Studio のセットアップ](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[PTVS の概要: コーディングの開始 (プロジェクト)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[PTVS の概要: コードの編集](../python/getting-started-with-ptvs-editing-code.md)
-[PTVS の概要: デバッグ](../python/getting-started-with-ptvs-debugging.md)
-[PTVS の概要: 対話型の Python](../python/getting-started-with-ptvs-interactive-python.md)
-[PTVS の概要: Azure での Web サイトの作成](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
-
+[PTVS の概要。Visual Studio のセットアップ](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[PTVS の概要。コーディングの開始 (プロジェクト)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[PTVS の概要。コードの編集](../python/getting-started-with-ptvs-editing-code.md)
+[PTVS の概要。デバッグ](../python/getting-started-with-ptvs-debugging.md)
+[PTVS の概要。対話型 Python](../python/getting-started-with-ptvs-interactive-python.md)
+[PTVS の概要。Azure で web サイトの作成](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

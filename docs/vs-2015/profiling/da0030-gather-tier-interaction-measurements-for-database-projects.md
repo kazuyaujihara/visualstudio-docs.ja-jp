@@ -1,14 +1,9 @@
 ---
 title: 'DA0030: データベース プロジェクトの階層の相互作用の測定を収集します。 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0030
 - vs.performance.rules.DA0030
@@ -17,13 +12,13 @@ ms.assetid: 42b2f69d-0cfa-4854-82c4-589c3d8b4557
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 16d6275074b3cae6b186fe9bb113e32c33e284af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a4b140c1859d3a3a17eb2f48eb02a60a3e9d50c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796754"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801480"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: データベース プロジェクトの階層の相互作用の測定を収集します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51796754"
 規則 Id |DA0030 |  
 |カテゴリ |プロファイリング ツールの使用 |  
 |プロファイル方法 |サンプリング |  
-|メッセージ |多階層アプリケーションの相互作用の測定を収集、データベースの使用パターンと重要なデータを理解するのに役立ちますアクセス遅延が発生します。 階層相互作用プロファイリング オプションを有効にもう一度アプリケーションをプロファイリングを試みてください |。  
+|メッセージ |多階層アプリケーションの相互作用の測定を収集、データベースの使用パターンと重要なデータを理解するのに役立ちますアクセス遅延が発生します。 階層の相互作用のプロファイル オプションを有効にして、再度アプリケーションのプロファイリングを試みてください。  
 |規則の種類 |情報 |  
   
 ## <a name="cause"></a>原因  
@@ -48,6 +43,3 @@ ms.locfileid: "51796754"
  この規則は情報提供用であるため、是正措置は必要ない場合があります。  
   
  Visual Studio IDE から階層の相互作用データをプロファイル データに追加する方法については、「[階層相互作用データの収集](../profiling/collecting-tier-interaction-data.md)」を参照してください。 コマンド ラインから階層の相互作用データを追加する方法の詳細については、「[階層相互作用データの収集](../profiling/adding-tier-interaction-data-from-the-command-line.md)」を参照してください。
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: Idiasession::findfilebyid |Microsoft Docs
+title: IDiaSession::findFileById | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 710efe04-78b5-4f3e-a1d8-f9b069063503
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f92e811936e4ed7e8bc5e5272c22256f66fbf689
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c97df0a5c860fa27fdc136164b9fea79f58fa26
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832847"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042141"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 ソース ファイルの識別子を使用してソース ファイルを取得します。  
@@ -44,7 +44,7 @@ HRESULT findFileById ( 
 ## <a name="remarks"></a>コメント  
  ソース ファイルの識別子は、すべてのソース ファイルを一意にする DIA SDK に内部的に使用される一意の値です。 通常、DIA SDK に内部的にこのメソッドが使用されます。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

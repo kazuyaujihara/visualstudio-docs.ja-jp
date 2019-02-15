@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 290c1971e22a0a0f8ffcd7b92441c81a4ec0037b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296477"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910988"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core の概要
 
@@ -41,7 +42,7 @@ ASP.NET Core アプリケーションの作成を開始するためのテンプ�
 
 ![新しい ASP.NET Core の空のプロジェクト](media/asp-net-core-image4.png)
 
-ASP.NET Core 空の Web アプリケーションでは、Web アプリケーションと共に **Program.cs** と **Startup.cs** という既定のファイルが 2 つ作成されます。ファイルの説明を以下に記します。 また、[依存関係] フォルダーが作成されます。このフォルダーには、ASP.NET Core、.NET Core フレームワーク、プロジェクトをビルドする MSBuild ターゲットなど、プロジェクトの NuGet パッケージ依存関係が含まれます。
+ASP.NET Core 空の Web アプリケーションでは、2 つの既定のファイルを使って Web アプリケーションが作成されます:**Program.cs** と **Startup.cs** です。これらについて以下で説明します。 また、[依存関係] フォルダーが作成されます。このフォルダーには、ASP.NET Core、.NET Core フレームワーク、プロジェクトをビルドする MSBuild ターゲットなど、プロジェクトの NuGet パッケージ依存関係が含まれます。
 
 ![Solution Pad と依存関係](media/asp-net-core-image12.png)
 
@@ -64,10 +65,10 @@ public static void Main(string[] args)
 ```
 ASP.NET Core アプリにより、その main メソッドで Web サーバーが作成されます。[`WebHostBuilder`](/aspnet/core/fundamentals/hosting) のインスタンスを介してホストが構成され、起動されます。 このビルダーは、ホストの構成を可能にするメソッドを提供します。 テンプレート アプリで、次の構成が使用されます。
 
-* `UseKestrel`: Kestrel サーバーがアプリにより使用されることを指定します
-* `UseContentRoot(Directory.GetCurrentDirectory())`: アプリがこのフォルダーから起動されるとき、Web プロジェクトのルート フォルダーをアプリのコンテンツ ルートとして使用します
-* `.UseIISIntegration()`: アプリが IIS と連動しなければならないことを指定します。 IIS と ASP.NET Core を一緒に使用するには、`UseKestrel` と `UseIISIntegration` を指定する必要があります。
-* `.UseStartup<Startup>()`: スタートアップ クラスを指定します。
+* `UseKestrel`:Kestrel サーバーがアプリにより使用されることを指定します
+* `UseContentRoot(Directory.GetCurrentDirectory())`:アプリがこのフォルダーから起動されるとき、Web プロジェクトのルート フォルダーをアプリのコンテンツ ルートとして使用します
+* `.UseIISIntegration()`:アプリが IIS と連動しなければならないことを指定します。 IIS と ASP.NET Core を一緒に使用するには、`UseKestrel` と `UseIISIntegration` を指定する必要があります。
+* `.UseStartup<Startup>()`:スタートアップ クラスを指定します。
 
   ビルド/実行メソッドにより、IWebHost がビルドされます。これはアプリをホストし、入ってくる HTTP 要求の待ち受けをアプリに開始させます。
 
@@ -130,9 +131,9 @@ Visual Studio for Mac では、ランダムのポートを利用して Web プ�
 
 ASP.NET Core アプリはモデル ビュー コントローラー (MVC) デザイン パターンを利用し、アプリの各パーツの責任を論理的に分離します。 MVC の構造は次のとおりです。
 
-- **モデル**: アプリのデータを表すクラス。
-- **ビュー**: アプリのユーザー インターフェイス (多くの場合、モデル データ) を表示します。
-- **コント ローラー**: ブラウザー要求を処理し、ユーザー入力と繰り返しに応答するクラス。
+- **モデル**:アプリのデータを表すクラス。
+- **表示**:アプリのユーザー インターフェイス (多くの場合、モデル データ) を表示します。
+- **コントローラー**:ブラウザー要求を処理し、ユーザー入力と繰り返しに応答するクラス。
 
 MVC の使用方法については、「[Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview)」 (ASP.NET Core MVC の概要) ガイドを参照してください。
 
@@ -236,3 +237,7 @@ Mac OS 10.11 (El Capitan) 以降に .NET Core を手動インストールする�
 - [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) ドキュメント。
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (ネイティブ モバイル アプリケーションのバックエンド サービスを作成する)。ここでは、Xamarin.Forms アプリのために ASP.NET Core を利用して REST サービスをビルドする方法について解説しています。
 - [ASP.NET Core 実践ラボ](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
+
+## <a name="related-video"></a>関連ビデオ
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]

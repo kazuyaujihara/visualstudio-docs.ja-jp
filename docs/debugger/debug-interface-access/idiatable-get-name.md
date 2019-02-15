@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiatable::get_name |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

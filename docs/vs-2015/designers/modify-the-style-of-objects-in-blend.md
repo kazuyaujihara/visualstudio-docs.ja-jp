@@ -1,25 +1,20 @@
 ---
 title: Blend におけるオブジェクト スタイルの変更 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 31192d2c-5b84-41bc-94c0-898638c170bd
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c9d010b8218dca94e4d9bcbf1e7d48088758f5ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843647"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781376"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Blend におけるオブジェクト スタイルの変更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49843647"
 ##  <a name="Brushes"></a> ブラシ: オブジェクトの外観を変更する  
  外観を変更する場合は、オブジェクトにブラシを適用します。  
   
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [ブラシ エディター](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor)  
+ **短いビデオを見る:**![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [ブラシ エディター](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor)します。  
   
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>繰り返しイメージまたはパターンでオブジェクトを塗りつぶします。  
  繰り返しイメージやパターンでオブジェクトを塗りつぶすには、*タイル ブラシ*を使用します。  
@@ -60,7 +55,7 @@ ms.locfileid: "49843647"
   
  ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [タイル ブラシ](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes)  
+ **短いビデオを見る:**![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [タイル ブラシ](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes)します。  
   
 ##  <a name="Styles"></a> スタイルとテンプレート: コントロール全体で一貫したルック アンド フィールを作成する  
  コントロールの外観と動作を一度にデザインし、個別に維持しなくてもよいように、そのデザインを他のコントロールにも適用することができます。  
@@ -84,7 +79,7 @@ ms.locfileid: "49843647"
   
 - **[空アイテムの作成]** を選択すると、最初から開始します。  
   
-  **現在編集**スタイルやテンプレートを既に作成して編集する場合にのみ、オプションが表示されます。 既定のシステム テンプレートを使用しているコントロールの場合は表示されません。  
+  **[現在のテンプレートの編集]** オプションは、既に作成したスタイルやテンプレートを編集する場合のみ表示されます。 既定のシステム テンプレートを使用しているコントロールの場合は表示されません。  
   
   **[スタイル リソースの作成]** ダイアログ ボックスで、スタイルやテンプレートを後で使えるように指定するか、スタイルやテンプレートを特定の種類のコントロールすべてに適用することができます。  
   
@@ -97,34 +92,31 @@ ms.locfileid: "49843647"
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [スタイルを作成する](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95)  
+ **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [スタイルを作成する](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95)します。  
   
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Expression Blend でのコントロール テンプレートの作成](http://msdn.microsoft.com/expression/cc263912.aspx)  
+ **短いビデオを見る:**![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Expression Blend でコントロール テンプレートの作成](http://msdn.microsoft.com/expression/cc263912.aspx)です。  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>コントロールにスタイルまたはテンプレートを適用する  
- [[オブジェクトとタイムライン]](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57) パネルでオブジェクトを右クリックして、**[テンプレートの編集]**、**[リソースの適用]** の順に選択します。  
+ [[オブジェクトとタイムライン]](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) パネルでオブジェクトを右クリックして、**[テンプレートの編集]**、**[リソースの適用]** の順に選択します。  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>コントロールの既定のスタイルまたはテンプレートを復元する  
- コントロールを選択し、[[プロパティ]](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57) パネルで **[スタイル]** または **[テンプレート]** のプロパティの場所を探します。 次に、**[詳細オプション]** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") をクリックし、ショートカット メニューで **[リセット]** をクリックします。  
+ コントロールを選択し、[[プロパティ]](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) パネルで **[スタイル]** または **[テンプレート]** のプロパティの場所を探します。 次に、**[詳細オプション]** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") をクリックし、ショートカット メニューで **[リセット]** をクリックします。  
   
 ##  <a name="Visual"></a> 表示状態: コントロールの状態に基づき、コントロールの外観を変更する  
  ユーザーとの対話に基づいて、コントロールの視覚的外観が異なります。 たとえば、ユーザーがボタンをクリックするとボタンが緑色になる、アニメーションを実行できるなどです。 遷移を使用すると、表示状態の間の時間を短縮または延長することができます。  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [WPF コントロールの状態を管理する](https://www.youtube.com/watch?v=m0PlkF5i6uw)  
+ **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [、WPF コントロールの状態を管理](https://www.youtube.com/watch?v=m0PlkF5i6uw)します。  
   
 ##  <a name="Resources"></a> リソース: 色、スタイル、テンプレートを作成し、後で再利用する  
  プロジェクトにあるあらゆるものをリソースに変換できます。 リソースは、 アプリケーションのさまざまな場所で再利用できるオブジェクトです。 たとえば、1 回色を作成し、リソースにしてから、その色を複数のオブジェクトに使用することができます。 これらすべてのオブジェクトの色を変更するには、単に色リソースを変更します。  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [リソースの簡単な説明](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources)  
+ **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [リソースの簡単なタッチ](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources)します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95d2caea47db9429f62eaf0527aa36ddcec2ca3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195e574a3ae98bc43e41d2040e2070cf36b89067
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898624"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920657"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;依存関係&gt;要素 (ClickOnce アプリケーション)
 アプリケーションに必要なプラットフォームやアセンブリ依存関係を識別します。  
@@ -127,7 +127,7 @@ ms.locfileid: "53898624"
 |-----------------------| - |
 | `dependencyType` | 必須です。 依存関係の種類を指定します。 有効値は `preprequisite` または `install` です。 `install`アセンブリがの一部としてインストールされている、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション。 A`prerequisite`アセンブリは、前にグローバル アセンブリ キャッシュ (GAC) に存在する必要があります、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションをインストールできます。 |
 | `allowDelayedBinding` | 必須です。 実行時にプログラムによって読み込むアセンブリことができるかどうかを指定します。 |
-| `group` | 任意。 場合、`dependencyType`属性に設定されて`install`オンデマンドでインストールするのみのアセンブリの名前付きグループを指定します。 詳細については、「[チュートリアル:デザイナーを使用して必要に応じて ClickOnce 配置 API でアセンブリをダウンロードする](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)」を参照してください。<br /><br /> 場合に設定`framework`と`dependencyType`属性に設定されて`prerequisite`、.NET Framework の一部として、アセンブリを指定します。 インストールする場合、このアセンブリをグローバル アセンブリ キャッシュ (GAC) がチェックされません[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]以降のバージョン。 |
+| `group` | 任意。 場合、`dependencyType`属性に設定されて`install`オンデマンドでインストールするのみのアセンブリの名前付きグループを指定します。 詳細については、「[チュートリアル : デザイナーを使用し、ClickOnce 配置 API で必要に応じてアセンブリをダウンロードする](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)」を参照してください。<br /><br /> 場合に設定`framework`と`dependencyType`属性に設定されて`prerequisite`、.NET Framework の一部として、アセンブリを指定します。 インストールする場合、このアセンブリをグローバル アセンブリ キャッシュ (GAC) がチェックされません[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]以降のバージョン。 |
 | `codeBase` | 必要なときに、`dependencyType`属性に設定されて`install`します。 依存アセンブリへのパス。 可能性があります絶対パス、または、マニフェストのコードからの相対パスのいずれかベース。 このパスは有効であるアセンブリ マニフェストの順序で、有効な URI である必要があります。 |
 | `size` | 必要なときに、`dependencyType`属性に設定されて`install`します。 (バイト単位) の依存アセンブリのサイズ。 |
 
@@ -166,7 +166,7 @@ ms.locfileid: "53898624"
 |-------------| - |
 | `Algorithm` | このファイルのダイジェストを計算するために使用するアルゴリズム。 現在、唯一の値で使用される[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]は`http://www.w3.org/2000/09/xmldsig#sha1`します。 |
 
-### <a name="dsigdigestvalue"></a>目的  
+### <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue`要素の必須の子では、`hash`要素。 `dsig:DigestValue` 要素に属性はありません。 テキスト値は、指定したファイルの計算されたハッシュです。  
 
 ## <a name="remarks"></a>コメント  

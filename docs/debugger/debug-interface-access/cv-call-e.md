@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f230560b-4243-432d-8f19-46df112043b9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a243bd873e323cb3a58668c36dc1327b7927141
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9963a36e8e9054103ea1517cb476670b0c6656f7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923995"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012639"
 ---
 # <a name="cvcalle"></a>CV_call_e
 関数の呼び出し規約を指定します。  
@@ -63,6 +63,6 @@ typedef enum CV_call_e { 
 ## <a name="requirements"></a>要件  
  ヘッダー: cvconst.h  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

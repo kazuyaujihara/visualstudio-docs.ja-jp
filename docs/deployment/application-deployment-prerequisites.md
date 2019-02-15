@@ -1,4 +1,4 @@
-﻿---
+---
 title: アプリケーション展開の前提条件 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0baff8d685a1ac5f4899edc2f1dbf6ddf9c2e5b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3525d12bfbb745c54bb452a16d12cd65394023ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941074"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995688"
 ---
 # <a name="application-deployment-prerequisites"></a>アプリケーション配置の必要条件
 
@@ -45,10 +45,10 @@ ms.locfileid: "53941074"
 
 - アセンブリ マニフェストにアセンブリ依存関係の宣言で指定されたグローバル アセンブリ キャッシュ (GAC) にプレインストールする必要がありますすべてのアセンブリの最小バージョン。  
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不足している前提条件を検出できるし、ブートス トラップを使用して、前提条件をインストールすることができます。 詳細については、「[方法 :ClickOnce アプリケーションと共に必須コンポーネントをインストールする](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)」を参照してください。  
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不足している前提条件を検出できるし、ブートス トラップを使用して、前提条件をインストールすることができます。 詳細については、次を参照してください。[方法: ClickOnce アプリケーションと共に必須コンポーネントをインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)します。  
 
 > [!NOTE]
->  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] や *MageUI.exe* などのツールによって生成されたマニフェスト内の値を変更するには、アプリケーション マニフェストをテキスト エディターで編集した後に、アプリケーション マニフェストと配置マニフェストの両方に再署名する必要があります。 詳細については、「[方法 :アプリケーション マニフェストと配置マニフェストの再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。  
+>  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] や *MageUI.exe* などのツールによって生成されたマニフェスト内の値を変更するには、アプリケーション マニフェストをテキスト エディターで編集した後に、アプリケーション マニフェストと配置マニフェストの両方に再署名する必要があります。 詳細については、「 [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。  
 
  Visual Studio と ClickOnce を使用してアプリケーションを配置する場合、既定で選択されるブートストラップ パッケージは、ソリューション内の .NET Framework のバージョンによって異なります。 ただし、対象の .NET Framework のバージョンを変更する場合は、**[必須コンポーネント]** ダイアログ ボックスのオプションを手動で更新する必要があります。  
 
@@ -75,10 +75,10 @@ ms.locfileid: "53941074"
 | コマンド ライン引数 | 説明 |
 | - | - |
 | **-?、-h、-help** | [ヘルプ] ダイアログ ボックスを表示します。 |
-| **-- 用の url** | このセットアップ用に保存されている URL とコンポーネントの URL を表示します。 |
-| **-url =** `location` | *Setup.exe* が [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを検索する URL を設定します。 |
-| **-用 =** `location` | *Setup.exe* が [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] などの依存関係を検索する URL を設定します。 |
-| **homesite-=** `true`**&#124;** `false` | ときに`true`、仕入先のサイトで適切な場所からの依存関係をダウンロードします。 この設定をオーバーライド、 **- 用**設定します。 ときに`false`で指定された URL から依存関係がダウンロード **- 用**します。 |
+| **-url, -componentsurl** | このセットアップ用に保存されている URL とコンポーネントの URL を表示します。 |
+| **-url=** `location` | *Setup.exe* が [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを検索する URL を設定します。 |
+| **-componentsurl=** `location` | *Setup.exe* が [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] などの依存関係を検索する URL を設定します。 |
+| **-homesite=** `true` **&#124;** `false` | ときに`true`、仕入先のサイトで適切な場所からの依存関係をダウンロードします。 この設定をオーバーライド、 **- 用**設定します。 ときに`false`で指定された URL から依存関係がダウンロード **- 用**します。 |
 
 ## <a name="operating-system-support"></a>オペレーティング システムのサポート  
  Visual Studio ブートス トラップは、低いメンテナンス サーバー環境を提供する機能が制限された Windows Server 2008 の Server Core または Windows Server 2008 R2 Server Core でサポートされていません。 たとえば、Server Core インストール オプションは、完全な .NET Framework に依存する Visual Studio の機能を実行することはできませんが、.NET Framework 3.5 Server Core プロファイルのみをサポートします。  

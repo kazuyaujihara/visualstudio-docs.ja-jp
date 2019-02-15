@@ -6,28 +6,28 @@ ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: feb5b247bb3e7bb8814946f5648408323a33084c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0e3c148e52de053cce27912305281c115767697
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959749"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956182"
 ---
 # <a name="remote-debugger-port-assignments"></a>リモート デバッガーのポートの割り当て
 Visual Studio リモート デバッガーは、アプリケーションまたはバック グラウンド サービスとして実行できます。 アプリケーションとして実行される際には、次のように既定で割り当てられているポートを使用します。  
 
-- Visual Studio 2019:4024
+- Visual Studio 2019
 
-- Visual Studio 2017:4022
+- Visual Studio 2017
 
-- Visual Studio 2015:4020  
+- Visual Studio 2015: 4020  
   
-- Visual Studio 2013:  
+- Visual Studio 2013: 4018  
   
-- Visual Studio 2012:4016  
+- Visual Studio 2012: 4016  
   
   つまり、リモート デバッガーに割り当てられるポート番号はリリースごとに 2 つずつ増えます。 別の任意のポート番号を設定することができます。 ポート番号の設定方法は、後のセクションで説明します。  
   
@@ -46,7 +46,7 @@ Visual Studio リモート デバッガーは、アプリケーションまた�
  このポートは、コマンドラインから構成できます。**Msvsmon/wow64port\<ポート番号 >** します。  
   
 ## <a name="the-discovery-port"></a>検出ポート  
- 実行中のリモート デバッガーのインスタンスをネットワークで検出するには (たとえば、 **[プロセスにアタッチ]** ダイアログの **[検索]** ダイアログ)、UDP 3702 が使用されます。 これが使用されるのは、リモート デバッガーを実行しているコンピューターを検出する場合だけです。つまり、対象コンピューターのコンピューター名または IP アドレスが他の方法でわかれば省略できます。 これは検出用の標準ポートなので、ポート番号を構成することはできません。  
+ 実行中のリモート デバッガーのインスタンスをネットワークで検出するには (たとえば、 **[プロセスにアタッチ]** ダイアログの **[検索]** ダイアログ)、UDP 3702 が使用されます。 これが使用されるのは、リモート デバッガーを実行しているコンピューターを検出する場合だけです。つまり、ターゲット コンピューターのコンピューター名または IP アドレスが他の方法でわかれば省略できます。 これは検出用の標準ポートなので、ポート番号を構成することはできません。  
   
  探索を有効にしたくない場合は、検出を無効にコマンドラインから msvsmon を開始できます。**Msvsmon/nodiscovery**します。  
   
@@ -59,5 +59,5 @@ Visual Studio リモート デバッガーは、アプリケーションまた�
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [Remote Debugging](../debugger/remote-debugging.md)

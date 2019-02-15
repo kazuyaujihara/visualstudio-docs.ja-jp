@@ -1,14 +1,9 @@
 ---
 title: '方法: インクリメンタル ビルドを実行する | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
 - incremental builds
@@ -17,13 +12,13 @@ ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803911"
 ---
 # <a name="how-to-build-incrementally"></a>方法 : インクリメンタル ビルドを実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49844621"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>ターゲットに入力と出力を指定するには  
   
-- `Target` 要素の `Inputs` 属性と `Outputs` 属性を使用します。 例えば:  
+- `Target` 要素の `Inputs` 属性と `Outputs` 属性を使用します。 次に例を示します。  
   
   ```  
   <Target Name="Build"  
@@ -57,7 +52,7 @@ ms.locfileid: "49844621"
 </Target>  
 ```  
   
- ターゲットで入力と出力が指定されている場合は、各出力を 1 つの入力のみにマップできるか、出力と入力の間に直接マッピングがないかのいずれかになります。 前の[Csc タスク](../msbuild/csc-task.md)など、出力 hello.exe は、単一の入力にマップすることはできません: それらすべてに依存します。  
+ ターゲットで入力と出力が指定されている場合は、各出力を 1 つの入力のみにマップできるか、出力と入力の間に直接マッピングがないかのいずれかになります。 たとえば前の [Csc タスク](../msbuild/csc-task.md)では、出力 hello.exe はどの単一の入力にもマップできず、すべての入力に依存します。  
   
 > [!NOTE]
 >  入力と出力の間の直接マッピングがないターゲットは、各ターゲットが 1 つの出力だけにマップできるターゲットよりもより頻繁にビルドされます。これは、入力の一部が変更された場合に、どの出力を再ビルドする必要があるかを [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] が判断できないからです。  
@@ -110,12 +105,9 @@ ms.locfileid: "49844621"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ターゲット](../msbuild/msbuild-targets.md)   
  [Target 要素 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [変換](../msbuild/msbuild-transforms.md)   
  [Csc タスク](../msbuild/csc-task.md)   
  [Vbc タスク](../msbuild/vbc-task.md)
-
-
-

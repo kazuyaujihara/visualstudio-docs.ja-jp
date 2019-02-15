@@ -1,14 +1,9 @@
 ---
-title: '方法: クラス デザイナーを使用して型を作成する | Microsoft Docs'
-ms.custom: ''
+title: '方法: クラス デザイナーを使用して型を作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -22,13 +17,13 @@ ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772155"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>方法: クラス デザイナーを使用して型を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクト�
     |-|-|  
     |**対象**|**[追加]**|  
     |クラス、抽象クラス、構造体|型を定義するメソッド、プロパティ、フィールド、イベント、コンストラクター (メソッド)、デストラクター (メソッド)、および定数|  
-    |列挙型|列挙型を構成するフィールド値|  
+    |列挙体|列挙型を構成するフィールド値|  
     |インターフェイス|インターフェイスを構成するメソッド、プロパティ、イベント|  
     |Delegate|デリゲートを定義するパラメーター|  
     |Module|モジュールを定義するメソッド、プロパティ、フィールド、イベント、コンストラクター (メソッド)、および定数|  
@@ -84,7 +79,7 @@ Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクト�
   
 1.  クラス ダイアグラムで型の図形をクリックします。  
   
-2.  [プロパティ] ウィンドウで横に、**カスタム属性**プロパティ型には、省略記号 (...) ボタンをクリックします。  
+2.  [プロパティ] ウィンドウで、型の **[カスタム属性]** プロパティの横の省略記号 (...) ボタンをクリックします。  
   
 3.  1 つ以上のカスタム属性を 1 行あたり 1 つ追加します。 角かっこで閉じません。  
   
@@ -100,12 +95,9 @@ Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクト�
   
      終了後、カスタム属性が型に適用されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法: 型の間の継承を作成する (クラス デザイナー)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
  [方法: 型の間の関連付けを作成する (クラス デザイナー)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [型のメンバーの作成と構成 (クラス デザイナー)](../ide/creating-and-configuring-type-members-class-designer.md)   
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)   
  [クラスおよび型のデザイン (クラス デザイナー)](../ide/designing-classes-and-types-class-designer.md)
-
-
-
