@@ -265,7 +265,7 @@ items:
         href: error-workgroup-remote-logon-failure.md
       - name: Kerberos 認証に失敗しました
         href: error-kerberos-authentication-failed.md
-      - name: 対象コンピューターで DNS が正しく構成されていることを確認してください。
+      - name: ターゲット コンピューターで DNS が正しく構成されていることを確認してください
         href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
       - name: Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。
         href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
@@ -283,7 +283,7 @@ items:
         href: error-rpc-requires-authentication.md
       - name: プロセスの ID を検査する権限がありません。
         href: error-you-do-not-have-permission-to-inspect-the-process-s-identity.md
-      - name: 対象コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません
+      - name: ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません
         href: error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md
       - name: Web サイトのワーカー プロセスが IIS によって停止されました
         href: error-web-site-worker-process-has-been-terminated-by-iis.md
