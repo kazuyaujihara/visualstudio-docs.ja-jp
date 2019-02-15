@@ -643,5 +643,5 @@ ms.locfileid: "54764579"
 
  PCL はコンパイルされてから各プラットフォーム固有のアプリ パッケージに組み込まれるため、PCL の共有コードはプラットフォームに中立的です。 条件付きコンパイルを使用してプラットフォーム固有のコードを区別した共有コードを記述する場合は、*共有*プロジェクトを使用することができます。 詳細については、[コード共有オプション](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com) の説明を参照してください。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [Xamarin 開発者サイト](http://developer.xamarin.com/) [Windows デベロッパー センター](https://dev.windows.com/en-us) [Swift およびC#クイック リファレンスのポスター](http://aka.ms/scposter)
