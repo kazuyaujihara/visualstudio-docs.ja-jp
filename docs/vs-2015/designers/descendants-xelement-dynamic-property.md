@@ -37,6 +37,6 @@ elem.Descendants[{namespaceName}localName]
   
  このプロパティは、遅延実行を使用します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [XElement クラスの動的プロパティ](../designers/xelement-class-dynamic-properties.md)   
  [要素](../designers/elements-xelement-dynamic-property.md)
