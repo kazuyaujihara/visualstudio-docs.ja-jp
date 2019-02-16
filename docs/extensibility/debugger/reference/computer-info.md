@@ -10,56 +10,56 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c6a5d6e2037e050a9d187a69a3b818fee575f4a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 183c079206dd4c16a9301e370abec2f9351b1f61
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979882"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316835"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
-デバッガーが実行されているコンピューターをについて説明します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-typedef struct tagCOMPUTER_INFO  
-{  
-    WORD wProcessorArchitecture;  
-    WORD wSuiteMask;  
-    DWORD dwOperatingSystemVersion;  
-} COMPUTER_INFO;  
-```  
-  
-```csharp  
-public struct COMPUTER_INFO  
-{  
-    public ushort wProcessorArchitecture;  
-    public ushort wSuiteMask;  
-    public uint dwOperatingSystemVersion;  
-}  
-```  
-  
-## <a name="terms"></a>用語  
- wProcessorArchitecture  
- マイクロプロセッサのアーキテクチャを識別します。  
-  
- wSuiteMask  
- スイートのマスクを識別します。  
-  
- dwOperatingSystemVersion  
- オペレーティング システムのバージョン番号。  
-  
-## <a name="remarks"></a>Remarks  
- この構造体がによって返される、 [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)メソッド。  
-  
-## <a name="requirements"></a>必要条件  
- ヘッダー:Msdbg.h  
-  
- 名前空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>関連項目  
- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)
+デバッガーが実行されているコンピューターをについて説明します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+typedef struct tagCOMPUTER_INFO
+{
+    WORD wProcessorArchitecture;
+    WORD wSuiteMask;
+    DWORD dwOperatingSystemVersion;
+} COMPUTER_INFO;
+```
+
+```csharp
+public struct COMPUTER_INFO
+{
+    public ushort wProcessorArchitecture;
+    public ushort wSuiteMask;
+    public uint dwOperatingSystemVersion;
+}
+```
+
+## <a name="terms"></a>用語
+wProcessorArchitecture  
+マイクロプロセッサのアーキテクチャを識別します。
+
+wSuiteMask  
+スイートのマスクを識別します。
+
+dwOperatingSystemVersion  
+オペレーティング システムのバージョン番号。
+
+## <a name="remarks"></a>Remarks
+この構造体がによって返される、 [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)メソッド。
+
+## <a name="requirements"></a>必要条件
+ヘッダー:Msdbg.h
+
+名前空間: Microsoft.VisualStudio.Debugger.Interop
+
+アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>関連項目
+[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d02a27775a84dab7d95571665b7fad96e223ec45
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 958526ccd6145813589167c639cb10550e9e8869
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933679"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316003"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio での設計向けの新機能
 
@@ -38,7 +38,7 @@ ms.locfileid: "55933679"
 
 表示、ソリューションの現在のコード分析の結果ですぐに、変更の影響、ダイアグラムを保存するたびにします。 不要「依存関係の検証」コマンドの完了を待機する必要はありません。
 
-詳細については、[このブログの投稿](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)を参照してください。
+詳細については、[このブログの投稿](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)を参照してください。
 
 ## <a name="uml-designers-have-been-removed"></a>UML デザイナー向けが削除されました
 
@@ -59,7 +59,7 @@ UML デザイナーは、このバージョンの Visual Studio Enterprise か�
 
 UML デザイナー向けの重要なユーザーの場合は、UML のニーズに代替のツールを決定するときに、Visual Studio 2015 またはそれ以前のバージョンを使用することもできます。
 
-詳細については、[このブログの投稿](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)を参照してください。
+詳細については、[このブログの投稿](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)を参照してください。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

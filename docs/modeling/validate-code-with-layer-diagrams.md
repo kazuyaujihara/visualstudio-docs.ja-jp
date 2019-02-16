@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 483366fef0d736f4f1a0a98a027e7872f9c278da
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5248609ed51f82cfbc69c883063a032ab48813f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923618"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317368"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>依存関係図を使用したコードの検証
 
@@ -235,6 +235,6 @@ Web サイト、Office ドキュメント、プレーン テキスト ファイ�
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio 2017 でのリアルタイム依存関係の検証](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Visual Studio 2017 でのリアルタイム依存関係の検証](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)
 - [ビデオ:リアルタイムでアーキテクチャ依存関係を検証します。](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
