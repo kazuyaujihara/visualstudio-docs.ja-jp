@@ -63,5 +63,5 @@ ms.locfileid: "54834392"
 ##  <a name="LiveStore"></a> ストアまたは Phone アプリでライブ データを表示する  
  「 [データとファイルの操作 (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
