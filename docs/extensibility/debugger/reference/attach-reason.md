@@ -12,56 +12,56 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d5a7cb8cfbc4efc2ffd90a58c0c0650b677ed8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7acd5b87288365cde43b2eb8f460b52048dcf36f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966284"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318708"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
-プログラム ノードにアタッチするデバッグ エンジン (DE) の理由を指定します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-enum enum_ATTACH_REASON {   
-   ATTACH_REASON_LAUNCH = 0x0001,  
-   ATTACH_REASON_USER   = 0x0002,  
-   ATTACH_REASON_AUTO   = 0x0003  
-};  
-typedef DWORD ATTACH_REASON;  
-```  
-  
-```csharp  
-public enum enum_ATTACH_REASON {   
-   ATTACH_REASON_LAUNCH = 0x0001,  
-   ATTACH_REASON_USER   = 0x0002,  
-   ATTACH_REASON_AUTO   = 0x0003  
-};  
-```  
-  
-## <a name="members"></a>メンバー  
- ATTACH_REASON_AUTO  
- プロセスがデバッグ モードでは現在ためにをアタッチします。  
-  
- ATTACH_REASON_LAUNCH  
- プロセスが起動されているため、接続します。  
-  
- ATTACH_REASON_USER  
- ユーザーの要求によりアタッチします。  
-  
-## <a name="remarks"></a>Remarks  
- これらの値がパラメーターとして使用される、[アタッチ](../../../extensibility/debugger/reference/idebugengine2-attach.md)と[アタッチ](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)メソッド。  
-  
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
-  
- 名前空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [アタッチ](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
- [添付](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+プログラム ノードにアタッチするデバッグ エンジン (DE) の理由を指定します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+enum enum_ATTACH_REASON {
+    ATTACH_REASON_LAUNCH = 0x0001,
+    ATTACH_REASON_USER   = 0x0002,
+    ATTACH_REASON_AUTO   = 0x0003
+};
+typedef DWORD ATTACH_REASON;
+```
+
+```csharp
+public enum enum_ATTACH_REASON {
+    ATTACH_REASON_LAUNCH = 0x0001,
+    ATTACH_REASON_USER   = 0x0002,
+    ATTACH_REASON_AUTO   = 0x0003
+};
+```
+
+## <a name="members"></a>メンバー
+ATTACH_REASON_AUTO  
+プロセスがデバッグ モードでは現在ためにをアタッチします。
+
+ATTACH_REASON_LAUNCH  
+プロセスが起動されているため、接続します。
+
+ATTACH_REASON_USER  
+ユーザーの要求によりアタッチします。
+
+## <a name="remarks"></a>Remarks
+これらの値がパラメーターとして使用される、[アタッチ](../../../extensibility/debugger/reference/idebugengine2-attach.md)と[アタッチ](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)メソッド。
+
+## <a name="requirements"></a>必要条件
+ヘッダー: msdbg.h
+
+名前空間: Microsoft.VisualStudio.Debugger.Interop
+
+アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>関連項目
+[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)  
+[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
