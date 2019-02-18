@@ -1,24 +1,19 @@
 ---
 title: コード カバレッジ分析のカスタマイズ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768035"
 ---
 # <a name="customizing-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +101,7 @@ ms.locfileid: "49890167"
 ### <a name="regular-expressions"></a>正規表現  
  Include ノードと Exclude ノードでは、正規表現を使用できます。 詳細については、「[Visual Studio での正規表現の使用](../ide/using-regular-expressions-in-visual-studio.md)」を参照してください。 正規表現は、ワイルドカードと同じではありません。 特に次の点に注意してください。  
   
-1. **\.\\*** 任意の文字の文字列に一致します。  
+1. **\.\\*** は任意の文字の文字列と一致します  
   
 2. **\\.** はピリオド "." と一致します  
   
@@ -158,7 +153,7 @@ ms.locfileid: "49890167"
   
   **関数名の一致**  
   
-  正規表現が、名前空間、クラス名、メソッド名、およびパラメーター リストを含む関数の完全修飾名と一致する必要があります。 次に例を示します。  
+  正規表現が、名前空間、クラス名、メソッド名、およびパラメーター リストを含む関数の完全修飾名と一致する必要があります。 たとえば、オブジェクトに適用された  
   
 - C# または Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
@@ -207,7 +202,7 @@ ms.locfileid: "49890167"
   
 3. **[プロセス]** ページで **[自動テスト]**、**[テスト ソース]**、**[実行設定]** の順に展開します。 **.runsettings** ファイルを選択します。  
   
-   - <em>**テスト アセンブリ</em>* の代わりに表示**テスト ソース**します。[実行設定]** フィールドを設定しようとすると、.testsettings ファイルしか選択できません。*  
+   - <em>しかし、**[テスト ソース]** の代わりに **[テスト アセンブリ]</em>* が表示されます。**[実行設定]** フィールドを設定しようとすると、.testsettings ファイルしか選択できません。*  
   
       **[自動テスト]** の下の **[テスト アセンブリ]** を選択し、行の末尾の **[...]** ボタンを選択します。 **[テストの実行の追加と編集]** ダイアログ ボックスで、**[テスト ランナー]** を **[Visual Studio テスト ランナー]** に設定します。  
   
@@ -330,9 +325,6 @@ Included items must then not match any entries in the exclude list to remain inc
   
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [コードの単体テスト](../test/unit-test-your-code.md)
-
-
-

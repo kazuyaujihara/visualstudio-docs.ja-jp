@@ -1,25 +1,20 @@
 ---
 title: Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a704215d-d252-4087-921b-ac81ebe2a9c9
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e02ce9a9ef06574de999620017b96d470a76e6c9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c13472fc1322701fefada53ee3e94156f35e8072
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757972"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,19 +60,19 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
   [リモート コンピューターでの Windows ストア アプリの実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
-  [アプリのパフォーマンスを分析します。](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [アプリのパフォーマンスの分析](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
 - [JavaScript 関数タイミング](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
 - [リモート デバイスで JavaScript 関数タイミング](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
-- [JavaScript 関数タイミング データを分析します。](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [JavaScript 関数タイミング データの分析](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [ローカル コンピューターでの Windows ストア アプリの Visual C++、Visual C#、および Visual Basic コードのプロファイリング](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [ローカル コンピューターでの Windows ストア アプリの Visual C++、Visual C#、および Visual Basic コードのプロファイリング](http://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
-- [リモート デバイスでの Windows ストア アプリの Visual C++、Visual C#、および Visual Basic コードのプロファイリング](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [リモート デバイスでの Windows ストア アプリの Visual C++、Visual C#、および Visual Basic コードのプロファイリング](http://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
-- [Windows ストア アプリの Visual C++、Visual C#、および Visual Basic コードのパフォーマンス データの分析](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Windows ストア アプリの Visual C++、Visual C#、および Visual Basic コードのパフォーマンス データの分析](http://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
   [このトピックの内容](#BKMK_In_this_topic)  
   
@@ -141,7 +136,7 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
    **リモート コンピューターでの TIP データの収集**  
   
-   コピーする必要がありますをリモート コンピューターで階層相互作用データを収集する、 **vs\_プロファイラー\_**_\<プラットフォーム >_ **\_**_\<言語 >_**.exe**ファイルから、 _%vsinstalldir%_**\Team Tools\Performance \setups**Visual Studio のフォルダーを選択し、コンピューターのリモート コンピューターにインストールします。 [Visual Studio Remote Tools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。  
+   リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** フォルダーから **vs\_profiler\_**_\<プラットフォーム>_**\_**_\<言語>_**.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [Visual Studio Remote Tools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。  
   
    プロファイル データを収集するには、[VSPerfCmd](../profiling/vsperfcmd.md) または [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) を使用できます。  
   
@@ -149,10 +144,7 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
    階層相互作用データは、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] または [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE でのみ表示できます。 [VSPerfReport](../profiling/vsperfreport.md) の使用による、ファイル ベースの階層相互作用レポートは利用できません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)   
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [コマンドラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-
