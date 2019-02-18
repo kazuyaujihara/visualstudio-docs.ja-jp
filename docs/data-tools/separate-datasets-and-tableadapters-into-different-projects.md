@@ -9,15 +9,14 @@ ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5d3386cd6a379a1d38c40f97f3a9c4ef93e293d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3eb9e8035dd8fa4b6a3143341e7be9959254452e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947635"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927660"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>データセットと TableAdapters を別々のプロジェクトに分離する
 型指定されたデータセットが強化されているように、 [Tableadapter](create-and-configure-tableadapters.md)および個別のプロジェクトにデータセット クラスを生成することができます。 これにより、アプリケーション層を分離して、n 層データ アプリケーションをすばやく生成できるようになります。
@@ -61,7 +60,7 @@ TableAdapter コードからデータセット コードを分離する場合は
 ## <a name="see-also"></a>関連項目
 
 - [n 層データ アプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)
-- [チュートリアル: n 層データ アプリケーションを作成する](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [チュートリアル: n 層データ アプリケーションの作成](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [階層更新](../data-tools/hierarchical-update.md)
 - [Visual Studio でのデータへのアクセス](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

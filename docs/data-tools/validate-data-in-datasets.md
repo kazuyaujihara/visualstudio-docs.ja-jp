@@ -19,15 +19,14 @@ ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a8d533b647861b8185a65c926f1783744cded74
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a68d93e43feea26dc62635fccb561f9c2bd025a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004397"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945808"
 ---
 # <a name="validate-data-in-datasets"></a>データセットのデータの検証
 データの検証は、データ オブジェクトに入力される値は、データセットのスキーマ内の制約に準拠することを確認するプロセスです。 また、検証プロセスは、これらの値が、アプリケーションに対して設定した規則に従っていることを確認します。 基になるデータベースの更新を送信する前にデータを検証することをお勧めします。 これには、エラーに加え、潜在的なアプリケーションとデータベース間のラウンド トリップ数が削減されます。
@@ -39,9 +38,9 @@ ms.locfileid: "55004397"
 ## <a name="validate-data"></a>データを検証します。
  データセット内での検証は、次の方法で実現されます。
 
--   変更時に個々 のデータ列の値をチェックできるアプリケーション固有の検証を作成します。 詳細については、「[方法 :列の変更時にデータを検証](validate-data-in-datasets.md)です。
+-   変更時に個々 のデータ列の値をチェックできるアプリケーション固有の検証を作成します。 詳細については、次を参照してください。[方法: 列の変更時にデータを検証](validate-data-in-datasets.md)です。
 
--   データ全体の中に値にデータをチェックできるアプリケーション固有の検証を作成して、行が変更されます。 詳細については、「[方法 :行の変更時にデータを検証](validate-data-in-datasets.md)です。
+-   データ全体の中に値にデータをチェックできるアプリケーション固有の検証を作成して、行が変更されます。 詳細については、次を参照してください。[方法: 行の変更時にデータを検証](validate-data-in-datasets.md)です。
 
 -   これに、データセットの実際のスキーマ定義の一部としてキー、一意の制約を作成します。
 
@@ -98,7 +97,7 @@ ms.locfileid: "55004397"
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>行の変更時にデータを検証するには (Visual Basic)
 
-1.  **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[チュートリアル:データセット デザイナーでデータセットを作成する](walkthrough-creating-a-dataset-with-the-dataset-designer.md)します。
+1.  **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、次を参照してください。[チュートリアル: データセット デザイナーでデータセットを作成する](walkthrough-creating-a-dataset-with-the-dataset-designer.md)します。
 
 2.  検証するテーブルのタイトル バーをダブルクリックします。 この操作により、データセットの部分クラス ファイルに <xref:System.Data.DataTable.RowChanging> の <xref:System.Data.DataTable> イベント ハンドラーが自動的に作成されます。
 
@@ -109,7 +108,7 @@ ms.locfileid: "55004397"
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>行の変更時にデータ検証するには (C#)
 
-1.  **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[チュートリアル:データセット デザイナーでデータセットを作成する](walkthrough-creating-a-dataset-with-the-dataset-designer.md)します。
+1.  **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、次を参照してください。[チュートリアル: データセット デザイナーでデータセットを作成する](walkthrough-creating-a-dataset-with-the-dataset-designer.md)します。
 
 2.  検証するテーブルのタイトル バーをダブルクリックします。 この操作により、<xref:System.Data.DataTable> の部分クラス ファイルが作成されます。
 
@@ -211,5 +210,5 @@ ms.locfileid: "55004397"
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio のデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)
-- [方法: Windows フォーム DataGridView コントロールでデータを検証します。](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [方法: Windows フォーム ErrorProvider コンポーネントを使用してフォーム検証のエラー アイコンを表示します。](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [方法: Windows フォーム DataGridView コントロールのデータを検証する](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [方法: Windows フォーム ErrorProvider コンポーネントを使用してフォーム妥当性検査でエラー アイコンを表示する](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
