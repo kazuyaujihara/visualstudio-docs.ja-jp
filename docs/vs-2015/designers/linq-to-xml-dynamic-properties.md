@@ -45,7 +45,7 @@ ms.locfileid: "54790614"
   
  <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [LINQ to XML による WPF のデータ バインディング](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [LINQ to XML による WPF のデータ バインディングの概要](../designers/wpf-data-binding-with-linq-to-xml-overview.md)   
  [LINQ クエリの概要 (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)
