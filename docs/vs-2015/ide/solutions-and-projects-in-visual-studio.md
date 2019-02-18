@@ -102,5 +102,5 @@ Visual Studio でアプリケーション、Web サイト、Web アプリ、ス�
 
 -   [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [Visual Studio IDE](../ide/visual-studio-ide.md)
