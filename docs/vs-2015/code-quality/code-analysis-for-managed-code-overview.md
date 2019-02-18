@@ -65,6 +65,6 @@ ms.locfileid: "54782841"
 ## <a name="team-build-integration"></a>チーム ビルドの統合  
  ビルド システムの統合機能を使用すると、分析ツールをビルド プロセスの一環として実行できます。 詳細については、「[アプリケーションのビルド](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)」をご覧ください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [規則セットを使用したコード分析規則のグループ化](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
  [方法: 自動コード分析を有効/無効にする](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
