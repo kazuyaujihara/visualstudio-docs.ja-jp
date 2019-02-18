@@ -28,12 +28,12 @@ ms.locfileid: "54870140"
 ## <a name="understand-how-document-level-customizations-for-excel-work"></a>Excel のドキュメント レベルのカスタマイズがどのように働くかの理解  
  Excel 用ドキュメント レベルのカスタマイズは、1 つのブックに基づいています。 カスタマイズの使用を開始するには、エンド ユーザーはブックを開くか、Excel テンプレートからブックを作成します。 たとえば、セルに入力する、ボタンおよびメニュー項目をクリックするといった、ブック内のイベントは、アセンブリ内のイベント処理メソッドを呼び出すことができます。 ブックが閉じられると、カスタマイズによって提供される機能は Excel では使用できず、それらが含まれているドキュメント内でのみ使用できます。  
   
- 詳細については、次を参照してください。[のドキュメント レベル カスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)します。  
+ 詳細については、「[ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)」を参照してください。  
   
 ## <a name="create-document-level-projects-for-excel"></a>Excel 用ドキュメント レベルのプロジェクトの作成  
- Excel 用ドキュメント レベルのカスタマイズを作成するで Excel ブックまたは Excel テンプレート プロジェクト テンプレートを使用して、**新しいプロジェクト** ダイアログ ボックス。 これらのテンプレートには必要なアセンブリ参照とプロジェクト ファイルが含まれています。  
+ Excel 用ドキュメント レベルのカスタマイズを作成するには、**[新しいプロジェクト]** ダイアログ ボックスで、Excel ブックまたは Excel テンプレート プロジェクト テンプレートを使用します。 これらのテンプレートには必要なアセンブリ参照とプロジェクト ファイルが含まれています。  
   
- Excel 用ドキュメント レベルのプロジェクトを作成する方法の詳細については、次を参照してください。[方法。Visual Studio での Office プロジェクトの作成](../vsto/how-to-create-office-projects-in-visual-studio.md)です。 プロジェクト テンプレートの詳細については、次を参照してください。 [Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)します。  
+ Excel 用ドキュメント レベルのプロジェクトを作成する方法の詳細については、「[Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。 プロジェクト テンプレートの詳細については、「[Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)」を参照してください。  
   
 ## <a name="program-excel-workbooks-by-using-host-items-and-host-controls"></a>ホスト項目とホスト コントロールを使用した Excel ブックのプログラミング  
  *ホスト項目*と*ホスト コントロール*は Visual Studio を使用して作成されたドキュメント レベル カスタマイズのプログラミング モデルを提供するクラスです。  
@@ -51,23 +51,23 @@ ms.locfileid: "54870140"
 -   [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)  
   
 ## <a name="customize-the-user-interface-of-excel"></a>Excel のユーザー インターフェイスのカスタマイズ  
- ほとんどの Microsoft Office ソリューションでは、ソリューションとの対話をユーザーに対していくつかの方法を提供する Office アプリケーションのユーザー インターフェイス (UI) を変更します。 ドキュメント レベルのカスタマイズを使用して Excel の UI を変更する方法はたくさんあります。 たとえば、コントロールを追加するには、リボンにまたは操作ウィンドウを表示することができます。 詳細については、次を参照してください。 [Office UI のカスタマイズ](../vsto/office-ui-customization.md)します。  
+ ほとんどの Microsoft Office ソリューションは、Office アプリケーションのユーザー インターフェイス (UI) を変更して、ユーザーがソリューションと対話するためのなんらかの方法を提供します。 ドキュメント レベルのカスタマイズを使用して Excel の UI を変更する方法はたくさんあります。 たとえば、リボンにコントロールを追加したり、操作ウィンドウを表示したりすることが可能です。 詳細については、「[Office UI のカスタマイズ](../vsto/office-ui-customization.md)」を参照してください。  
   
- Visual Studio で直接、プロジェクトに関連付けられているブックを開くこともできます。 ブック Visual Studio で開く場合に、Excel のユーザー インターフェイスを使用して、ブックを変更できます。 コントロールをワークシートにドラッグすることができます、デザイン サーフェイスとして、ブックを使用することもできます。 詳細については、次を参照してください。 [Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)します。  
+ Visual Studio で直接、プロジェクトに関連付けられているブックを開くこともできます。 ブックが Visual Studio で開かれていれば、Excel のユーザー インターフェイスを使用して、ブックを変更できます。 ブックをデザイン サーフェイスとして使用して、コントロールをワークシートにドラッグすることもできます。 詳細については、「[Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)」を参照してください。  
   
 ## <a name="use-data-binding"></a>データ バインディングの使用  
- ホスト コントロールはからドラッグできるコントロールのリストでも、**データソース**ウィンドウ。 このように自動的にホスト コントロールの追加 ウィンドウを使用し、設定したデータ ソースにバインドされます。 コードを記述せずには、データベース、web サービス、およびビジネス オブジェクトからデータを表示できます。 詳細については、次を参照してください。 [Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)します。  
+ ホスト コントロールは、**[データソース]** ウィンドウからドラッグできるコントロールのリストの中にもあります。 この方法でホスト コントロール追加すると、ウィンドウを使用して設定したデータ ソースに自動的にバインドされます。 コードを記述せずに、データベース、Web サービス、およびビジネス オブジェクトからデータを表示できます。 詳細については、「[Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。  
   
 ## <a name="next-steps"></a>次の手順  
- Excel 用ドキュメント レベルのカスタマイズを作成する方法についてを参照してください。[チュートリアル。最初の Excel 用ドキュメント レベルのカスタマイズを作成する](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)します。 このチュートリアルでは、Visual Studio と Excel のドキュメント レベルのカスタマイズのプログラミング モデルでの Office 開発ツールについて説明します。  
+ Excel 用ドキュメント レベルのカスタマイズを作成する方法については、「[チュートリアル:最初の Excel 用ドキュメント レベルのカスタマイズを作成する](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)」を参照してください。 このチュートリアルでは、Visual Studio による Office 開発ツールと Excel のドキュメント レベルのカスタマイズのプログラミング モデルについて説明します。  
   
- Excel プロジェクトで、一般的なタスクを解説しているトピックの一覧は、次を参照してください。 [Office プログラミングで一般的なタスク](../vsto/common-tasks-in-office-programming.md)します。  
+ Excel プロジェクトで、一般的なタスクを解説しているトピックの一覧は、「[Office プログラミングにおける一般的なタスク](../vsto/common-tasks-in-office-programming.md)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: Visual Studio での Office プロジェクトを作成します。](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [プログラムのドキュメント レベルのカスタマイズ](../vsto/programming-document-level-customizations.md)   
  [Excel ソリューション](../vsto/excel-solutions.md)   
- [チュートリアル: 最初の Excel 用ドキュメント レベルのカスタマイズを作成します。](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
+ [チュートリアル: 最初の Excel 用ドキュメント レベルのカスタマイズの作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
  [Excel を使用したチュートリアル](../vsto/walkthroughs-using-excel.md)   
  [Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)   
  [Office ソリューションにおけるコードの記述](../vsto/writing-code-in-office-solutions.md)  
