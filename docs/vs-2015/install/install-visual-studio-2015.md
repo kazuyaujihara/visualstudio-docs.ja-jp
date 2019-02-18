@@ -3,10 +3,7 @@ title: Visual Studio 2015 のインストール | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -21,13 +18,13 @@ ms.assetid: da049020-cfda-40d7-8ff4-7492772b620f
 caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799178"
 ---
 # <a name="install-visual-studio-2015"></a>Visual Studio 2015 のインストール
 
@@ -43,10 +40,10 @@ ms.locfileid: "53828057"
 |------------------|----------------|
 |![Visual Studio のダウンロード](../install/media/downloads.png "ダウンロード") |**ダウンロード**Visual Studio 2015 をインストールするには、製品の実行可能ファイルからダウンロードできます、 [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) (サブスクリプションが必要) ページ、またはボックス化された製品のインストール メディアを使用します。 [現在または以前のバージョンの Visual Studio をダウンロードする方法についての詳細は](https://www.visualstudio.com/vs/older-downloads/)します。|
 |![機能の詳細について](../install/media/features.png "機能") |**機能**Visual Studio 2015 の機能に関する詳細については、リリース ノートを参照してください。 [RTM](https://www.visualstudio.com/news/vs2015-vs)、 [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs)、 [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs)、および[Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)します。|
-|![各 SKU で新機能については](../install/media/sku.png "Sku") |**SKU**:Visual Studio 2015 の各エディションに用意されている提供物については、「[Visual Studio 製品の比較](http://go.microsoft.com/fwlink/?LinkID=242142)」ページを参照してください。|
-|![システム要件を表示](../install/media/system-requirements.png "システム要件") |**システム要件**:Visual Studio 2015 の各エディションのシステム要件については、「[Visual Studio 2015 の互換性](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs)」ページを参照してください。|
+|![各 SKU で新機能については](../install/media/sku.png "Sku") |**SKU**: Visual Studio 2015 の各エディションで提供しているものについては、「[Visual Studio 製品の比較](http://go.microsoft.com/fwlink/?LinkID=242142)」ページを参照してください。|
+|![システム要件を表示](../install/media/system-requirements.png "システム要件") |**システム要件**: Visual Studio 2015 の各エディションのシステム要件を表示するを参照してください。、 [Visual Studio 2015 の互換性](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs)ページ。|
 |![プロダクト キーを検索](../install/media/product-keys.png "プロダクト キー") |**プロダクト キー**プロダクト キーを検索するを参照してください、[方法。Visual Studio プロダクト キーを検索](../install/how-to-locate-the-visual-studio-product-key.md)トピック。|
-|![ライセンスをお探し](../install/media/licensing.png "ライセンス") |**ライセンス**:個人または企業のお客様の両方のライセンス オプションについては、「[Visual Studio と MSDN のライセンス](https://www.microsoft.com/download/details.aspx?id=13350)」ホワイト ペーパーを参照してください。|
+|![ライセンスをお探し](../install/media/licensing.png "ライセンス") |**ライセンス**: 個人または企業のお客様の両方のライセンス オプションについて確認するを参照してください、 [Visual Studio と MSDN のライセンス](https://www.microsoft.com/download/details.aspx?id=13350)ホワイト ペーパー。|
 
 ##  <a name="custom"></a> 既定値とカスタム セットアップ
  Visual Studio 2015 をインストールするときに、日常的に使用するコンポーネントを含めたり除外したりできます。 一般的に、既定のインストールはカスタム インストールよりサイズが小さく、インストールにかかる時間も短くなります。 また、以前のバージョンで既定でインストールされていたコンポーネントの多数が、このバージョンでは、明示的に選択する必要があるカスタム コンポーネントと見なされるようになりました。
@@ -83,7 +80,7 @@ ms.locfileid: "53828057"
 |プログラムのデバッグ|SeDebugPrivilege|
 |監査ログとセキュリティ ログの管理|SeSecurityPrivilege|
 
- ローカル管理者アカウントの要件の詳細については、サポート技術情報「 [セットアップ アカウントに特定のユーザー権限がない場合、SQL Server のインストールが失敗する](https://support.microsoft.com/en-us/kb/2000257)」を参照してください。
+ ローカル管理者アカウントの要件の詳細については、サポート技術情報「 [セットアップ アカウントに特定のユーザー権限がない場合、SQL Server のインストールが失敗する](https://support.microsoft.com/kb/2000257)」を参照してください。
 
 ###  <a name="BKMK_Media"></a> インストール メディアを使用します。
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]をインストールするには、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] インストール メディアのルート ディレクトリで、必要なエディションのインストール ファイルを実行します。
@@ -197,6 +194,6 @@ ms.locfileid: "53828057"
 |[Visual Studio Image Library](../designers/the-visual-studio-image-library.md)|Visual Studio アプリケーションで使用できるグラフィックスをインストールする方法について説明します。|
 |[Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md)|情報と Visual Studio をより効果的に使用するのに役立つリンクが含まれています。|
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [Visual Studio へのサインイン](../ide/signing-in-to-visual-studio.md)

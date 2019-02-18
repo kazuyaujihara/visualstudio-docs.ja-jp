@@ -39,7 +39,7 @@ ms.locfileid: "54793207"
 5.  .vstemplate ファイルの XML が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] テンプレート スキーマに準拠していることを確認します。 .vstemplate スキーマの詳細については、「[Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」を参照してください。  
   
     > [!NOTE]
-    >  `xmlns`vstemplate`VSTemplate` ファイルを作成する際に IntelliSense サポートを取得するには、 http://schemas.microsoft.com/developer/vstemplate/2005 属性を  要素に追加し、  の値を割り当てます。  
+    >  .vstemplate ファイルを作成する際に IntelliSense のサポートを得るには、`xmlns` 属性を `VSTemplate` 要素に追加し、 http://schemas.microsoft.com/developer/vstemplate/2005 の値を割り当てます。  
   
 6.  .vstemplate ファイルを保存して、閉じます。  
   

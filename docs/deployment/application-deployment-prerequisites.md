@@ -48,7 +48,7 @@ ms.locfileid: "54995688"
   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不足している前提条件を検出できるし、ブートス トラップを使用して、前提条件をインストールすることができます。 詳細については、次を参照してください。[方法: ClickOnce アプリケーションと共に必須コンポーネントをインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)します。  
 
 > [!NOTE]
->  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] や *MageUI.exe* などのツールによって生成されたマニフェスト内の値を変更するには、アプリケーション マニフェストをテキスト エディターで編集した後に、アプリケーション マニフェストと配置マニフェストの両方に再署名する必要があります。 詳細については、「 [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。  
+>  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] や *MageUI.exe* などのツールによって生成されたマニフェスト内の値を変更するには、アプリケーション マニフェストをテキスト エディターで編集した後に、アプリケーション マニフェストと配置マニフェストの両方に再署名する必要があります。 詳細については、「[方法: アプリケーション マニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。  
 
  Visual Studio と ClickOnce を使用してアプリケーションを配置する場合、既定で選択されるブートストラップ パッケージは、ソリューション内の .NET Framework のバージョンによって異なります。 ただし、対象の .NET Framework のバージョンを変更する場合は、**[必須コンポーネント]** ダイアログ ボックスのオプションを手動で更新する必要があります。  
 
@@ -75,7 +75,7 @@ ms.locfileid: "54995688"
 | コマンド ライン引数 | 説明 |
 | - | - |
 | **-?、-h、-help** | [ヘルプ] ダイアログ ボックスを表示します。 |
-| **-url, -componentsurl** | このセットアップ用に保存されている URL とコンポーネントの URL を表示します。 |
+| **-url、-componentsurl** | このセットアップ用に保存されている URL とコンポーネントの URL を表示します。 |
 | **-url=** `location` | *Setup.exe* が [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを検索する URL を設定します。 |
 | **-componentsurl=** `location` | *Setup.exe* が [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] などの依存関係を検索する URL を設定します。 |
 | **-homesite=** `true` **&#124;** `false` | ときに`true`、仕入先のサイトで適切な場所からの依存関係をダウンロードします。 この設定をオーバーライド、 **- 用**設定します。 ときに`false`で指定された URL から依存関係がダウンロード **- 用**します。 |

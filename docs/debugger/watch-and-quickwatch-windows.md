@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 49afa8e56a45e3ebda5572afd1604cee7076578a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204470"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002523"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>ウォッチ ウィンドウと クイック ウォッチ変数なウォッチ 
 
@@ -30,7 +30,7 @@ ms.locfileid: "54204470"
 
 **ウォッチ**windows は、デバッグ中に、一度にいくつかの変数を表示できます。 **[クイック ウォッチ]** ダイアログは、一度に 1 つの変数を表示し、デバッグを続行する前に閉じる必要があります。
 
-コードのデバッグを試みるのが今回初めてである場合は、この記事を先に進む前に[超初心者向けのデバッグ方法](../debugger/debugging-absolute-beginners.md)および[より良い C# コードを書くことによるバグの修正](../debugger/write-better-code-with-visual-studio.md)に関するページを参照することをお勧めします。
+コードをデバッグしようとした初めての場合は、読み取りをする可能性があります[超初心者向けのデバッグ](../debugger/debugging-absolute-beginners.md)と[手法とツールをデバッグ](../debugger/write-better-code-with-visual-studio.md)にこの記事に進む前にします。
 
 ## <a name="observe-variables-with-a-watch-window"></a>ウォッチ ウィンドウで変数を観察します。
 
@@ -280,5 +280,5 @@ static void Main(string[] args)
 
 ## <a name="see-also"></a>関連項目
  [デバッグとは](../debugger/what-is-debugging.md)  
- [より良い C# コードを書くことでバグを修正する](../debugger/write-better-code-with-visual-studio.md)  
+ [デバッグの技術とツール](../debugger/write-better-code-with-visual-studio.md)  
  [最初に、デバッグについて](../debugger/debugger-feature-tour.md)[デバッガー ウィンドウ](../debugger/debugger-windows.md)

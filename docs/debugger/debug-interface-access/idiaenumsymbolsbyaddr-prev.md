@@ -45,7 +45,7 @@ HRESULT Prev ( 
 ## <a name="return-value"></a>戻り値  
  正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`前のシンボルがない場合。 それ以外の場合はエラー コードを返します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  このメソッドは、フェッチされる要素の数によって、列挙子の位置を更新します。  
   
 ## <a name="see-also"></a>関連項目  

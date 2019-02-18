@@ -40,11 +40,11 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 |**/AddRemoveFeatures**|インストールされている製品に追加または削除する機能を指定します。|
 |**/AdminFile** *AdminDeployment.xml*|管理用インストールに指定したデータ ファイルを使用して Visual Studio をインストールします。|
 |**/ChainingPackage** *BundleName*|このバンドルをチェーンするバンドルを指定します。 カスタマー エクスペリエンス向上コホートの指定にも使用できます。|
-|**/CreateAdminFile \<filename>**|/AdminFile と組み合わせて使用できるコントロール ファイルを作成する場所を指定します。|
+|**/CreateAdminFile \<ファイル名>**|/AdminFile と組み合わせて使用できるコントロール ファイルを作成する場所を指定します。|
 |**/CustomInstallPath** *InstallationDirectory*|指定したディレクトリに再ターゲット可能パッケージをすべてインストールします。|
 |**/ForceRestart**|インストール後に必ずコンピューターを再起動します。|
 |**/full**|すべての製品の機能をインストールします。|
-|**/InstallSelectableItems \<item name 1>[;\<item name 2>]**|インストーラー ウィザードの選択画面でチェックする選択ツリー項目の一覧。|
+|**/InstallSelectableItems \<項目名 1>[;\<項目名 2>]**|インストーラー ウィザードの選択画面でチェックする選択ツリー項目の一覧。|
 |**/l**<br /><br /> **/Log** *Filename*|ログ ファイルの場所を指定します。|
 |**/layout** *Directory*|インストール メディアのファイルを指定したディレクトリにコピーします。|
 |**/NoCacheOnlyMode**|パッケージ キャッシュの事前設定を防ぎます。|

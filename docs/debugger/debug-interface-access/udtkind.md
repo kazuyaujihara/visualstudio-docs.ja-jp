@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: eaca67dd56fa34993e46693d6274bc4b7b593006
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54929407"
@@ -46,7 +46,7 @@ enum UdtKind { 
  UdtInterface  
  UDT は、インターフェイスです。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  この列挙体の値がによって返される、 [idiasymbol::get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)メソッド。  
   
 ## <a name="requirements"></a>要件  

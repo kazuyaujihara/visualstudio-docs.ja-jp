@@ -60,7 +60,7 @@ Visual Studio の **エネルギー消費** プロファイラーは、常時ま
  メソッドが実行されると、ユーザー マークがメッセージと共にプロファイル データに追加されます。  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel は [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) インターフェイス (C# および VB で [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) として投影) を実装します。オペレーティング システム リソースのリークを防ぐには、ログ チャネルで終了するときに [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx) (C# および VB では Windows.Foundation.Diagnostics.LoggingChannel.Dispose) を呼び出します。  
+> - Windows.Foundation.Diagnostics LoggingChannel は [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) インターフェイス (C# および VB で [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) として投影) を実装します。オペレーティング システム リソースのリークを防ぐには、ログ チャネルで終了するときに [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (C# および VB では Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) を呼び出します。  
 >   -   開いているログ記録チャネルそれぞれに一意の名前を付ける必要があります。 破棄されていないチャネルと同じ名前で新しくログ記録チャネルを作成しようとすると、例外が発生します。  
   
  例については、Windows SDK サンプル [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) を参照してください。  

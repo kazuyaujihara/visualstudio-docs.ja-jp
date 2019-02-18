@@ -47,7 +47,7 @@ ms.locfileid: "54801428"
 |`ResolvedAssemblyReferences`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 解決されたアセンブリ参照を指定します。|  
 |`ResolvedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> このタスクの入力として指定されたタイプ ライブラリの物理的な位置に対応するディスク上の完全修飾ファイルを指定します。|  
 |`ResolvedModules`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。|  
-|`SdkToolsPath`|省略可能な <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String 型のパラメーターです。<br /><br /> `ExecuteAsTool` が `true` の場合、このパラメーターを、対象となっているフレームワークのバージョンの SDK ツール パスに設定する必要があります。|  
+|`SdkToolsPath`|省略可能な [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 型のパラメーターです。<br /><br /> `ExecuteAsTool` が `true` の場合、このパラメーターを、対象となっているフレームワークのバージョンの SDK ツール パスに設定する必要があります。|  
 |`StateFile`|省略可能な <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 型のパラメーターです。<br /><br /> COM コンポーネントのタイムスタンプのキャッシュ ファイルを指定します。 存在しない場合は、実行するたびにすべてのラッパーが再生成されます。|  
 |`TargetFrameworkVersion`|省略可能な <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 型のパラメーターです。<br /><br /> プロジェクトのターゲット フレームワークのバージョンを指定します。<br /><br /> 既定値は、`String.Empty` です。 その場合、ターゲット フレームワークに基づく参照のフィルター処理はありません。|  
 |`TargetProcessorArchitecture`|省略可能な <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 型のパラメーターです。<br /><br /> 優先されるターゲットのプロセッサ アーキテクチャを指定します。 変換後、tlbimp.exe/machine フラグに渡されます。<br /><br /> パラメーター値は <xref:Microsoft.Build.Utilities.ProcessorArchitecture> のメンバーである必要があります。|  
@@ -55,7 +55,7 @@ ms.locfileid: "54801428"
 |`TypeLibNames`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 解決するタイプ ライブラリ名を指定します。 このパラメーターに含まれる項目には、項目メタデータをいくつか含める必要があります。 詳細については、後述する「TypeLibNames 項目メタデータ」を参照してください。|  
 |`WrapperOutputDirectory`|省略可能な `String` 型のパラメーターです。<br /><br /> 生成された相互運用機能アセンブリが配置されるディスク上の場所。 この項目メタデータが指定されていない場合、タスクはプロジェクト ファイルがあるディレクトリの絶対パスを使用します。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
   
 ## <a name="typelibnames-item-metadata"></a>TypeLibNames 項目メタデータ  
  次の表に、`TypeLibNames` パラメーターに渡された項目に使用可能な項目メタデータを示します。  
@@ -78,7 +78,7 @@ ms.locfileid: "54801428"
 > [!NOTE]
 >  タイプ ライブラリを一意に識別するために提供する情報が多いほど、タスクがディスク上の正しいファイルに解決される可能性が大きくなります。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  上記のパラメーターに加えて、このタスクは <xref:Microsoft.Build.Utilities.Task> クラスからパラメーターを継承します。 これらの追加パラメーターのリストとその説明については、「[Task Base Class](../msbuild/task-base-class.md)」を参照してください。  
   
 ## <a name="see-also"></a>参照  

@@ -44,7 +44,7 @@ ms.locfileid: "54986671"
 ### <a name="return-value"></a>戻り値  
  成功した場合、S_OK を返します。それ以外の場合、エラーを表す HRESULT を返します。 マネージ例外が発生した場合は、0x80020009 (DISP_E_EXCEPTION) を返します。  
   
-### <a name="remarks"></a>コメント  
+### <a name="remarks"></a>解説  
  CleanOnlineAppCache の呼び出しが開始されます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]サービスが実行されていない場合。  
   
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest  
@@ -68,7 +68,7 @@ ms.locfileid: "54986671"
 ### <a name="return-value"></a>戻り値  
  成功した場合、S_OK を返します。それ以外の場合、エラーを表す HRESULT を返します。 バッファーが小さすぎる場合は、HRESULTFROMWIN32(ERROR_INSUFFICIENT_BUFFER) を返します。  
   
-### <a name="remarks"></a>コメント  
+### <a name="remarks"></a>解説  
  ポインターを null にするにはできません。 `pcwzActivationUrl` `pcwzPathToDeploymentManifest`空にできません。  
   
  アクティベーション URL をクリーンアップする、呼び出し元の役目です。 必要な場所またはクエリ文字列を削除するが、文字エスケープを追加します。  

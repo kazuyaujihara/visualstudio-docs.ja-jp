@@ -1,25 +1,20 @@
 ---
 title: JavaScript IntelliSense の JSDoc コメントを作成する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: a0dadc81-3755-4a47-bcee-c1010819ff2a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d338b2bece99f720670871a1b92c6b2a57c4280
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 22db62a186c1f1c668a0304a9b586aca85e713c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908588"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758511"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>JavaScript IntelliSense の JSDoc コメントを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +29,12 @@ IntelliSense in Visual Studio は、標準的な JSDoc コメントを使用し�
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | @deprecated  |              @deprecated *説明*              |                                   非推奨の関数またはメソッドを指定します。                                   |
 | @description |             @description *説明*              |                              関数またはメソッドの説明を指定します。                               |
-|    @param    | @param {*型*} *parameterName*<em>の説明</em> | 関数またはメソッドのパラメーターの情報を指定します。<br /><br /> TypeScript もサポートしています。@paramTagします。 |
-|  @property   |          @property {*型*} *propertyName*          |   オブジェクトで定義されているフィールドまたはメンバーについて、説明を含む情報を指定します。    |
+|    @param    | @param {*型*} *パラメーター名*<em>説明</em> | 関数またはメソッドのパラメーターの情報を指定します。<br /><br /> TypeScript もサポートしています。@paramTagします。 |
+|  @property   |          @property {*型*} *プロパティ名*          |   オブジェクトで定義されているフィールドまたはメンバーについて、説明を含む情報を指定します。    |
 |   @returns   |                  @returns {*型*}                  |           戻り値を指定します。<br /><br /> TypeScript を使用して@returnTypeの代わりに@returnsします。           |
 |   @summary   |               @summary *説明*                |                   関数またはメソッドの説明を指定します (同じ@description)。                   |
 |    @type     |                   @type {*型*}                    |                                定数または変数の種類を指定します。                                |
-|   @typedef   |         @typedef {*型*} *customTypeName*          |                                            カスタム型を指定します。                                            |
+|   @typedef   |         @typedef {*型*} *カスタム型名*          |                                            カスタム型を指定します。                                            |
 
 ### <a name="examples"></a>使用例  
  次の例では、使用、 @description、 @param、および@returnJSDoc タグという名前の関数`getArea`します。  
@@ -73,7 +68,7 @@ function getForecast(Weather) {
 var w = new Weather();  
 ```  
 
- 次の例では、使用、 @type JSDoc タグ。 この例に示すように 1 つのアスタリスク (*)、最初のアスタリスクのペアに続く (\*\*) は必要ありません。  
+ 次の例では、使用、 @type JSDoc タグ。 この例で示すように、最初のアスタリスクのペア (\*\*) の後に続く 1 つのアスタリスク (*) は必須ではありません。  
 
 ```javascript  
 /**  
@@ -92,6 +87,3 @@ const RED = 'FF0000';
 function old() {  
 }  
 ```
-
-
-

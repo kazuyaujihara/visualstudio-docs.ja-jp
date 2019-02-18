@@ -155,7 +155,7 @@ ms.locfileid: "54788250"
   
 7.  エクスプローラーで、テンプレートに含めるファイルを選択します。右クリックして [送信] をクリックし、[圧縮 (zip 形式) フォルダー] をクリックします。 選択したファイルは .zip ファイルに圧縮されます。  
   
-8.  .zip ファイルをコピーして、ユーザーの項目テンプレートの場所に貼り付けます。 Visual Studio 2017 での規定のディレクトリは、..\Users\\<ユーザー名\>\Documents\Visual Studio 2017\Templates\ItemTemplates\\ です。 詳細については、「方法 : プロジェクト テンプレートと項目テンプレートを配置して整理する」を参照してください。  
+8.  .zip ファイルをコピーして、ユーザーの項目テンプレートの場所に貼り付けます。 Visual Studio 2015 での既定のディレクトリは、..\Users\\<ユーザー名\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\ です。 詳細については、「方法 : プロジェクト テンプレートと項目テンプレートを配置して整理する」を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   

@@ -1,14 +1,9 @@
 ---
 title: '方法: Web ページ内の JavaScript コードをプロファイリングする | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript performance profiling
 - Profiling Tools,JavaScript
@@ -17,13 +12,13 @@ ms.assetid: 37d02aad-ca4d-4eb0-bf66-ca3ecef31fbe
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8f9def923e0cc012a37c02d24b67e807668ae976
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 093054168a2314711476a5c4bc8a98ffdc6f732e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792113"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780761"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>方法: Web ページ内の JavaScript コードをプロファイリングする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51792113"
 >  Windows ストア アプリで JavaScript をプロファイリングするには、次のトピックのいずれかをご覧ください。  
 > 
 > - [JavaScript 関数タイミング](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)[リモート デバイスで JavaScript 関数タイミング](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
->   -   [JavaScript 関数タイミング データを分析します。](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+>   -   [JavaScript 関数タイミング データの分析](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
 >   -  
   
  プロファイル ウィザードを使用して、パフォーマンス セッションを作成できます。 インストルメンテーション メソッドを指定し、パフォーマンス セッションの [プロパティ] ダイアログ ボックスの [インストルメンテーション] ページで、JavaScript のプロファイル オプションを指定します。  
@@ -90,6 +85,3 @@ ms.locfileid: "51792113"
 7.  プロファイリングする機能を実行します。  
   
 8.  プロファイル セッションを終了するには、ブラウザーを閉じます。
-
-
-

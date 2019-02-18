@@ -46,7 +46,7 @@ HRESULT ReadExecutableAtRVA ( 
  `data[]`  
  [入力、出力]ファイルから読み取られたバイトに設定している配列。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  このメソッドは DIA のサポート コード相対仮想アドレスを使用して実行可能ファイルからデータのバイト数を読み込めません。 サポートにこのメソッドは、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッド。  
   
 ## <a name="see-also"></a>参照  

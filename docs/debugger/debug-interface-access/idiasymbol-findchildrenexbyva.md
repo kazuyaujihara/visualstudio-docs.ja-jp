@@ -53,7 +53,7 @@ HRESULT findChildrenExByVA ( 
 ## <a name="return-value"></a>戻り値  
  返します`S_OK`シンボルの少なくとも 1 つの子が検出されましたが、またはを返す`S_FALSE`場合は子が見つかりませんでした。 それ以外の場合、エラー コードを返します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  返されるローカル シンボルには、ライブの範囲の情報が含まれます。  
   
 ## <a name="requirements"></a>要件  

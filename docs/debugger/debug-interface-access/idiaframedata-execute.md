@@ -44,7 +44,7 @@ HRESULT execute ( 
 |E_DIA_FRAME_ACCESS|アクセスのレジスタまたはメモリをできません。|  
 |E_DIA_VALUE|(たとえば、0 による除算)、値の計算のエラーです。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  このメソッドは、スタックをアンワインドするデバッグ中に呼び出されます。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)オブジェクトがレジスタに更新プログラムを受信しで使用されるメソッドを提供するクライアント アプリケーションによって実装される、`execute`メソッド。  
   
 ## <a name="see-also"></a>参照  

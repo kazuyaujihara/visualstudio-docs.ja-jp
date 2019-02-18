@@ -1,14 +1,9 @@
 ---
 title: LIB タスク | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
 - VC.Project.VCLibrarianTool.TreatLibWarningsAsErrors
@@ -30,13 +25,13 @@ ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 141c153fa65d9858991061c79dc423f18227a381
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f542c50f062da66d707e92409f3856304578e676
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763394"
 ---
 # <a name="lib-task"></a>LIB タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Microsoft 32-Bit Library Manager ツール (lib.exe) をラップします。 Li
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **AdditionalDependencies**     |                                                                                                                                                                                                                                                                                                                                                                                                                      省略可能な **String[]** 型のパラメーターです。<br /><br /> コマンド ラインに追加する項目を指定します。                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |  **AdditionalLibraryDirectories**  |                                                                                                                                                                                                                                                                                                                                         省略可能な **String[]** 型のパラメーターです。<br /><br /> 環境ライブラリ パスをオーバーライドします。 ディレクトリ名を指定します。<br /><br /> 詳細については、「[/LIBPATH (追加ライブラリのパス)](http://msdn.microsoft.com/library/7240af0b-9a3d-4d53-8169-2a92cd6958ba)」を参照してください。                                                                                                                                                                                                                                                                                                                                          |
-|       **AdditionalOptions**        |                                                                                                                                                                                                                                                                        省略可能な **String** 型のパラメーターです。<br /><br /> コマンド ラインで指定する lib.exe オプションのリストです。 たとえば、 **"*/option1/option2/option#*"。このパラメーターを使用して、他では表されない lib.exe オプションを指定する\* \*LIB**タスク パラメーター。<br /><br /> 詳細については、「[LIB の実行](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd)」を参照してください。                                                                                                                                                                                                                                                                        |
+|       **AdditionalOptions**        |                                                                                                                                                                                                                                                                        省略可能な **String** 型のパラメーターです。<br /><br /> コマンド ラインで指定する lib.exe オプションのリストです。 たとえば、**"*/option1 /option2 /option#*" のような形式です。他の \*\*LIB** タスク パラメーターでは表されない lib.exe オプションを指定する場合は、このパラメーターを使用します。<br /><br /> 詳細については、「[LIB の実行](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd)」を参照してください。                                                                                                                                                                                                                                                                        |
 |         **DisplayLibrary**         |                                                                                                                                                                                                                                                                                                                      省略可能な **String** 型のパラメーターです。<br /><br /> 出力ライブラリに関する情報を表示します。 情報をファイルにリダイレクトするために、ファイル名を指定します。 情報をコンソールにリダイレクトするには、"CON" を指定するか、何も指定しません。<br /><br /> このパラメーターは、lib.exe の **/LIST** オプションに対応しています。                                                                                                                                                                                                                                                                                                                      |
 |         **ErrorReporting**         |                                                                                                                                              省略可能な **String** 型のパラメーターです。<br /><br /> lib.exe が実行時に失敗した場合に、内部エラーの情報を Microsoft に送信する方法を指定します。<br /><br /> 次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。<br /><br /> -   **NoErrorReport** - **/ERRORREPORT:NONE**<br />-   **PromptImmediately** - **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** - **/ERRORREPORT:SEND**<br /><br /> 詳細については、「[LIB の実行](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd)」で **/ERRORREPORT** コマンド ライン オプションを参照してください。                                                                                                                                               |
 |      **ExportNamedFunctions**      |                                                                                                                                                                                                                                                                                                                                                                                     省略可能な **String[]** 型のパラメーターです。<br /><br /> エクスポートする 1 つ以上の関数を指定します。<br /><br /> このパラメーターは、lib.exe の **/EXPORT:** オプションに対応しています。                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -75,10 +70,7 @@ Microsoft 32-Bit Library Manager ツール (lib.exe) をラップします。 Li
 |    **UseUnicodeResponseFiles**     |                                                                                                                                                                                                                                                                                                                                                               省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合は、ライブラリアンが起動されるときに、プロジェクト システムが UNICODE 応答ファイルを生成するようにします。 プロジェクト内のファイルが UNICODE パスを持っている場合は、`true` を指定します。                                                                                                                                                                                                                                                                                                                                                               |
 |            **Verbose**             |                                                                                                                                                                                                                                                                       省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合は、セッションの進行状況の詳細を表示します。これには、追加される .obj ファイルの名前も含まれます。 情報は標準出力に送信され、ファイルにリダイレクトすることもできます。<br /><br /> 詳細については、「[LIB の実行](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd)」で **/VERBOSE** オプションを参照してください。                                                                                                                                                                                                                                                                        |
 
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>解説  
 
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)
-
-
-

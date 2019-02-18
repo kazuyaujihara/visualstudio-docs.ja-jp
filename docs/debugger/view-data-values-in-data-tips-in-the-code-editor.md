@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: caca7622d2634a6da08d0d09aaef5b0a8634180e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204402"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986554"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>データヒントで、コード エディターで値のデータ表示
 
-DataTips は、デバッグ中にプログラムの変数に関する情報を確認するときに便利です。 データヒントは、中断モードのときにのみ機能します。また、実行の現在のスコープ内にある変数に対してだけ使用できます。 コードのデバッグを試みるのが今回初めてである場合は、この記事を先に進む前に[超初心者向けのデバッグ方法](../debugger/debugging-absolute-beginners.md)および[より良い C# コードを書くことによるバグの修正](../debugger/write-better-code-with-visual-studio.md)に関するページを参照することをお勧めします。
+DataTips は、デバッグ中にプログラムの変数に関する情報を確認するときに便利です。 データヒントは、中断モードのときにのみ機能します。また、実行の現在のスコープ内にある変数に対してだけ使用できます。 コードをデバッグしようとした初めての場合は、読み取りをする可能性があります[超初心者向けのデバッグ](../debugger/debugging-absolute-beginners.md)と[手法とツールをデバッグ](../debugger/write-better-code-with-visual-studio.md)にこの記事に進む前にします。
   
 ## <a name="work-with-datatips"></a>データヒントを使用します。
 
@@ -124,7 +124,7 @@ Datatip を透過的にデータヒントでその下にあるコードを参照
 
 ## <a name="see-also"></a>関連項目  
  [デバッグとは](../debugger/what-is-debugging.md)  
- [より良い C# コードを書くことでバグを修正する](../debugger/write-better-code-with-visual-studio.md)  
+ [デバッグの技術とツール](../debugger/write-better-code-with-visual-studio.md)  
  [最初に、デバッグについて](../debugger/debugger-feature-tour.md)[デバッガーでのデータの表示](../debugger/viewing-data-in-the-debugger.md)   
  [ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)   
  [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)   

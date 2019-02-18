@@ -37,7 +37,7 @@ ms.locfileid: "54758549"
   
 |パラメーター|説明|  
 |---------------|-----------------|  
-|`AdditionalSearchPaths`|必須の <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String`[]` 型のパラメーターです。<br /><br /> ネイティブ参照のアセンブリ ID を解決するための検索パスを取得または設定します。|  
+|`AdditionalSearchPaths`|必須の [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]` 型のパラメーターです。<br /><br /> ネイティブ参照のアセンブリ ID を解決するための検索パスを取得または設定します。|  
 |`ContainedComComponents`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> ネイティブ アセンブリの COM コンポーネントを取得または設定します。|  
 |`ContainedLooseEtcFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> ネイティブ マニフェストに示されているルース Etc ファイルを取得または設定します。|  
 |`ContainedLooseTlbFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> ネイティブ アセンブリの Loose .tlb ファイルを取得または設定します。|  
@@ -46,7 +46,7 @@ ms.locfileid: "54758549"
 |`ContainingReferenceFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 参照ファイルを取得または設定します。|  
 |`NativeReferences`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> Win32 ネイティブ アセンブリ参照を取得または設定します。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
   
 ## <a name="see-also"></a>参照  

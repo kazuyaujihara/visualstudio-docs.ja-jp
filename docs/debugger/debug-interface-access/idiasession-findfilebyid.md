@@ -41,7 +41,7 @@ HRESULT findFileById ( 
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  ソース ファイルの識別子は、すべてのソース ファイルを一意にする DIA SDK に内部的に使用される一意の値です。 通常、DIA SDK に内部的にこのメソッドが使用されます。  
   
 ## <a name="see-also"></a>参照  

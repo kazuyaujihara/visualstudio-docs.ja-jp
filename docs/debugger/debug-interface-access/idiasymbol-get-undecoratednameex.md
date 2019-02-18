@@ -44,7 +44,7 @@ HRESULT get_undecoratedNameEx( 
 > [!NOTE]
 >  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  `undecorateOptions`次のフラグの組み合わせとすることができます。  
   
 > [!NOTE]

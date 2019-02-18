@@ -100,7 +100,7 @@ ClickOnce 配置テクノロジを使用して複数バージョンの .NET Fram
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>マニフェストを更新して、アプリケーションおよび配置に再署名  
   
--   更新し、アプリケーション マニフェストと配置マニフェストに再署名します。 詳細については、「 [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。  
+-   更新し、アプリケーション マニフェストと配置マニフェストに再署名します。 詳細については、「[方法: アプリケーション マニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   

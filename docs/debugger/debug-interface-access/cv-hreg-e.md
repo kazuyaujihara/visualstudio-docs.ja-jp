@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0697507b9df10ac1f39108581a651c5290ad6b78
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54919553"
@@ -442,7 +442,7 @@ enum CV_HREG_e { 
  CV_M32R_*  
  三菱 M32R プロセッサによって使用されるレジスタ。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  各プロセッサの種類は、独自のレジスタのセットを使用します。  
   
  この列挙体の値は、次のメソッドに渡されます。  

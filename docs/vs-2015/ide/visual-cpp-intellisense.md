@@ -1,25 +1,20 @@
 ---
 title: Visual C++ の Intellisense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9d7c6414-4e6c-4889-a74c-a6033795eccc
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881678"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802630"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# の IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ Visual Studio 2015 では、単一コードのファイルおよびプロジェ�
   
  次の点に注意してください。  
   
-- # 8 行目の else 分岐が淡色表示、非アクティブな領域を示すため`__ANDROID__`Android プロジェクト用に定義されています。  
+- # 8 行目の else 分岐は淡色表示で非アクティブ領域は、ため`__ANDROID__`Android プロジェクトに対して定義されます。  
   
 - 11 行目のあいさつの変数は HELLO 識別子で初期化され、紫の波線で表示されています。 これは現在アクティブではない iOS プロジェクトに、HELLO 識別子が定義されていないためです。 Android プロジェクトでは、11 行目がコンパイルされますが、iOS ではコンパイルされません。 これは共有コードのため、現在アクティブな構成でコンパイルする場合でも、変更する必要があります。  
   
@@ -85,14 +80,14 @@ Visual Studio 2015 では、単一コードのファイルおよびプロジェ�
   
   次の点に注意してください。  
   
-- 6 行目は、#ifdef 分岐は淡色表示、非アクティブな領域を示すため *_ANDROID\\*  \_ iOS プロジェクトが定義されていません。  
+- *_ANDROID\\*\_ が iOS プロジェクトに対して定義されていないため、6 行目の #ifdef 分岐は淡色表示で非アクティブ領域として表示されています。  
   
 - 11 行目のあいさつの変数は、HELLO 識別子で初期化され、赤の波線で表示されています。 これは現在アクティブな iOS プロジェクトに、HELLO 識別子が定義されていないためです。  
   
 - 12 行目の BYE 識別子は紫の波線で表示されており、現在非アクティブな Android.NativeActivity プロジェクトでは定義されていません。  
   
 ## <a name="single-file-intellisense"></a>単一ファイルの IntelliSense  
- プロジェクトの外部で 1 つのファイルを開いても、やはり IntelliSense を取得します。 **[テキスト エディター]、[C/C++]、[詳細]** にアクセスして IntelliSense 機能をオン/オフすることにより、特定の機能を有効または無効にすることができます。 プロジェクトの一部ではない 1 つのファイルに IntelliSense を構成するには、**[詳細設定]** のセクションで **IntelliSense and Browsing for Non-Project Files** (IntelliSense およびプロジェクト以外のファイルの参照) を検索します。 「[Visual C++ ガイド ツアー](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)」を参照してください。  
+ プロジェクトの外部で 1 つのファイルを開いても、やはり IntelliSense を取得します。 **[テキスト エディター]、[C/C++]、[詳細]** にアクセスして IntelliSense 機能をオン/オフすることにより、特定の機能を有効または無効にすることができます。 プロジェクトの一部ではない 1 つのファイルに IntelliSense を構成するには、**[詳細設定]** のセクションで **IntelliSense and Browsing for Non-Project Files** (IntelliSense およびプロジェクト以外のファイルの参照) を検索します。 「[Visual C++ ガイド ツアー](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)」を参照してください。  
   
  ![Visual C&#43;&#43; の単一ファイルの IntelliSense](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   
@@ -100,8 +95,5 @@ Visual Studio 2015 では、単一コードのファイルおよびプロジェ�
   
  ![ヘッダー ファイルまでのパスを追加しています。](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IntelliSense の使用](../ide/using-intellisense.md)
-
-
-

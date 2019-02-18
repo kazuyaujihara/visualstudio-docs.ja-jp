@@ -169,7 +169,7 @@ ms.locfileid: "54920657"
 ### <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue`要素の必須の子では、`hash`要素。 `dsig:DigestValue` 要素に属性はありません。 テキスト値は、指定したファイルの計算されたハッシュです。  
 
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  アプリケーションによって使用されるすべてのアセンブリの対応する必要があります`dependency`要素。 依存アセンブリでは、プラットフォーム アセンブリとグローバル アセンブリ キャッシュにプレインストールする必要がありますアセンブリは含まれません。  
 
 ## <a name="example"></a>例  

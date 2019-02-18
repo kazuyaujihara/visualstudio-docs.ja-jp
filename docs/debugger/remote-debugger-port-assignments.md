@@ -19,9 +19,9 @@ ms.locfileid: "54956182"
 # <a name="remote-debugger-port-assignments"></a>リモート デバッガーのポートの割り当て
 Visual Studio リモート デバッガーは、アプリケーションまたはバック グラウンド サービスとして実行できます。 アプリケーションとして実行される際には、次のように既定で割り当てられているポートを使用します。  
 
-- Visual Studio 2019
+- Visual Studio 2019: 4024
 
-- Visual Studio 2017
+- Visual Studio 2017: 4022
 
 - Visual Studio 2015: 4020  
   

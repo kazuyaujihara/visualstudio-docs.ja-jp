@@ -51,7 +51,7 @@ ms.locfileid: "54778527"
   
   たとえば、次のディレクトリにはカスタム [!INCLUDE[csprcs](../includes/csprcs-md.md)] プロジェクト テンプレートが含まれています。  
   
-  C:\Documents and Settings\<ユーザー名>\My Documents\Visual Studio \\バージョン\>\Templates\ProjectTemplates\Visual C#\  
+  C:\Documents and Settings\<ユーザー名>\My Documents\\<Visual Studio バージョン\>\Templates\ProjectTemplates\Visual C#\  
   
   カスタム テンプレートには、ローカライズされたテンプレート用のサブディレクトリは含まれていません。 カスタム テンプレートの既定ディレクトリは、**[オプション]** ダイアログ ボックスの **[環境] > [プロジェクトおよびソリューション]** で変更できます。  
   
@@ -117,7 +117,7 @@ ms.locfileid: "54778527"
   
 1. カスタム プロジェクト テンプレートのディレクトリの言語フォルダーに、フォルダーを作成します。 たとえば、[!INCLUDE[csprcs](../includes/csprcs-md.md)] テンプレートに対して HelloWorld カテゴリを作成するには、次のディレクトリを作成する必要があります。  
   
-    \My Documents\Visual Studio \\バージョン\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My Documents\\<Visual Studio バージョン\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。  
   
@@ -131,7 +131,7 @@ ms.locfileid: "54778527"
   
 1.  カスタム項目テンプレートのディレクトリの言語フォルダーに、フォルダーを作成します。 たとえば、[!INCLUDE[csprcs](../includes/csprcs-md.md)] テンプレートに対して HelloWorld カテゴリを作成するには、次のディレクトリを作成する必要があります。  
   
-     \My Documents\Visual Studio \\バージョン\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \My Documents\\<Visual Studio バージョン\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。  
   

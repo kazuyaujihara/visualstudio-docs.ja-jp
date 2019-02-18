@@ -37,7 +37,7 @@ ms.locfileid: "54945061"
 |非同期/待機式|追加または変更します。|[はい](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |動的オブジェクト|追加または変更します。|いいえ|
 |ラムダ式|追加または変更します。|[はい](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|LINQ expressions|追加または変更します。|[ラムダ式と同じ](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|LINQ 式|追加または変更します。|[ラムダ式と同じ](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
 > [!NOTE]
 > 文字列補間と null 条件演算子などの新しい言語機能は通常、エディット コンティニュでサポートします。 最新情報については、次を参照してください。、 [Enc サポートされている編集](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)ページ。

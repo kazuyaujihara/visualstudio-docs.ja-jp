@@ -1,14 +1,9 @@
 ---
 title: JavaScript IntelliSense の拡張 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript, intellisense object
 - extending JavaScript IntelliSense
@@ -19,13 +14,13 @@ ms.assetid: 004e1ab6-bd7a-4327-9e01-89b9be96ba2f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867079"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797448"
 ---
 # <a name="extending-javascript-intellisense"></a>JavaScript IntelliSense の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,12 +90,12 @@ intellisense.addEventListener('statementcompletion', function (event) {
 > [!NOTE]
 >  JavaScript では、クイック ヒントは、入力候補一覧の右側に表示されるポップアップ ボックスを参照します。 クイック ヒントを手動で起動することはできません。  
   
-##  <a name="intellisenseObject"></a> intellisense オブジェクト  
+##  <a name="intellisenseObject"></a> IntelliSense オブジェクト  
  次の表に、使用可能な関数、`intellisense`オブジェクト。 `intellisense`オブジェクトは、デザイン時にのみ使用します。  
   
 |関数|説明|  
 |--------------|-----------------|  
-|`addEventListener(type, handler);`|IntelliSense のイベントのイベント ハンドラーを追加します。<br /><br /> `type` 文字列値です。 有効な値は`statementcompletion`、 `signaturehelp`、および`statementcompletionhint`します。<br /><br /> `handler` 次の種類のいずれかのイベント オブジェクトを受信するイベント ハンドラー関数。<br /><br /> -   `CompletionEvent`で使用される、`statementcompletion`イベント。<br />-   `SignatureHelpEvent`で使用される、`signaturehelp`イベント。<br />-   `CompletionHintEvent`で使用される、`statementcompletionhint`イベント。<br /><br /> この関数を使用する例については、次を参照してください。[コード例](#CodeExamples)します。|  
+|`addEventListener(type, handler);`|IntelliSense のイベントのイベント ハンドラーを追加します。<br /><br /> `type` 文字列値です。 有効な値は、`statementcompletion`、`signaturehelp`、および `statementcompletionhint` です。<br /><br /> `handler` 次の種類のいずれかのイベント オブジェクトを受信するイベント ハンドラー関数。<br /><br /> -   `CompletionEvent`で使用される、`statementcompletion`イベント。<br />-   `SignatureHelpEvent`で使用される、`signaturehelp`イベント。<br />-   `CompletionHintEvent`で使用される、`statementcompletionhint`イベント。<br /><br /> この関数を使用する例については、次を参照してください。[コード例](#CodeExamples)します。|  
 |`annotate(obj, doc);`|オブジェクトのドキュメントを指定するには、ドキュメントのコメントを 1 つのオブジェクトから別のオブジェクトにコピーします。<br /><br /> `obj` ドキュメントのコピー先となるオブジェクトを指定します。<br /><br /> `doc` ドキュメントのコピー元のオブジェクトを指定します。<br /><br /> この関数を使用する方法を示しますたとえば、次を参照してください。 [IntelliSense 注釈の追加](#Annotations)します。|  
 |`getFunctionComments(func);`|指定された関数は、コメントを返します。<br /><br /> `func` コメントが返される関数を指定します。<br /><br /> 設定することができます、`func`パラメーターを使用して`completionItem.value`します。<br /><br /> 返された`functionComments`オブジェクトには、次のメンバーが含まれています: `above`、 `inside`、および`paramComment`します。 詳細については、次を参照してください。、 [functionComments プロパティ](#FunctionComments)プロパティ。<br /><br /> `getFunctionComments` 内で登録されているイベント ハンドラーのいずれかからのみ呼び出すことが`addEventListener`します。<br /><br /> この関数を使用する方法を示しますたとえば、次を参照してください。 \\ \\ *Visual Studio インストール パス*\JavaScript\References\showPlainComments.js します。|  
 |`logMessage(msg);`|出力ウィンドウには、診断メッセージを送信します。<br /><br /> `msg` メッセージを含む文字列です。<br /><br /> この関数を使用する方法を示しますたとえば、次を参照してください。[出力ウィンドウにメッセージを送信する](#Logging)します。|  
@@ -214,7 +209,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  戻り値: オブジェクト  
   
-###  <a name="Target"></a> ターゲット プロパティ  
+###  <a name="Target"></a> target プロパティ  
  ピリオド (.) は、トリガーの文字の左側に項目を表すオブジェクトを返します。 関数では、`target`パラメーター情報を要求する対象の関数を返します。 このプロパティは使用できます、`statementcompletion`と`signaturehelp`イベント オブジェクト。  
   
  戻り値: オブジェクト  
@@ -550,9 +545,6 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
      ![IntelliSense の結果をオーバーライドする例](../ide/media/js-intellisense-override-fixed.png "js_intellisense_override_fixed")  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [識別子の入力候補](../ide/statement-completion-for-identifiers.md)
-
-
-

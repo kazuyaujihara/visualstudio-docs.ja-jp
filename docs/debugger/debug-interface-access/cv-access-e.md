@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c77135fe5ab8e6971bac7cb17d8fa98e5c20577a
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54986567"
@@ -42,7 +42,7 @@ typedef enum CV_access_e { 
  CV_public  
  メンバーは、パブリック アクセスを持ちます。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  `friend`アクセス指定子は含まれませんので、通常は、クラスの private と protected の両方の要素にアクセスできる非メンバー関数によって使用されます。 使用して、 [idiasymbol::get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)でシンボルを検索するメソッド`SymTagFriend`アクセスします。  
   
 ## <a name="requirements"></a>要件  
