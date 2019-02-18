@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: c4852e3c760f2974620f0a6c641a540b92d19bc3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957443"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317121"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>方法: 拡張機能による診断 UI の遅延
 
@@ -102,7 +102,7 @@ PerfView トレースの収集が開始されたら、再び表示されるよ�
 次に、左側のウィンドウで、トレース ファイルを選択しを選択して開きます**開く**右クリックまたはコンテキスト メニューから。
 
 > [!NOTE]
-> 既定では、PerfView は、Zip アーカイブを出力します。 開く*trace.zip*、自動的にアーカイブの圧縮を解除し、トレースが表示されます。 これをスキップするにはオフにすると、 **Zip**トレースの収集中にボックス。 ただし、転送し、別のコンピューター間でのトレースの使用を計画している場合強くお勧めしますをオフにすると、 **Zip**ボックス。 このオプションを指定せず、必要なアセンブリの Ngen Pdb がトレースに付属し、移行先コンピューターはそのためする Ngen アセンブリからのシンボルが解決しません。 (を参照してください[このブログの投稿](https://blogs.msdn.microsoft.com/devops/2012/12/10/creating-ngen-pdbs-for-profiling-reports/)アセンブリの Ngen Pdb の詳細についてはします)。 
+> 既定では、PerfView は、Zip アーカイブを出力します。 開く*trace.zip*、自動的にアーカイブの圧縮を解除し、トレースが表示されます。 これをスキップするにはオフにすると、 **Zip**トレースの収集中にボックス。 ただし、転送し、別のコンピューター間でのトレースの使用を計画している場合強くお勧めしますをオフにすると、 **Zip**ボックス。 このオプションを指定せず、必要なアセンブリの Ngen Pdb がトレースに付属し、移行先コンピューターはそのためする Ngen アセンブリからのシンボルが解決しません。 (を参照してください[このブログの投稿](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/)アセンブリの Ngen Pdb の詳細についてはします)。 
 
 PerfView を処理し、トレースを開くには数分かかることができます。 トレースが開いたら、その下にあるさまざまな「ビュー」の一覧が表示されます。
 

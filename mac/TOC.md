@@ -1,4 +1,4 @@
-# [Visual Studio for Mac](index.md)
+# [Visual Studio for Mac](index.yml)
 # [IDE ツアー](/visualstudio/mac/ide-tour/)
 
 # [インストール](/visualstudio/mac/installation/)
@@ -70,7 +70,7 @@
 ### [Unity ツールの使用](using-vsmac-tools-unity.md)
 ### [Unity で .NET 4.x を使用する](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [変更ログ](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
-## [Xamarin を使用したモバイル アプリ](/xamarin/)
+## [Xamarin を使用したモバイル アプリ](/visualstudio/mac/xamarin)
 
 # [ユーザー補助](accessibility.md)
 

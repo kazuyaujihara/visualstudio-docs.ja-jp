@@ -14,15 +14,14 @@ ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed448c44b46098a6ccaa7ac1194acd76bd64c089
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fd3e7867b74c9dab923e91fd76424e88b309743
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988910"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931612"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF アプリケーションでルックアップ テーブルを作成する
 
@@ -36,7 +35,7 @@ ms.locfileid: "54988910"
 
     -   データセットまたはエンティティ データ モデル。
 
-    -   WCF データ サービス、WCF サービスまたは web サービス。 詳細については、「[方法 :サービスのデータに接続する](../data-tools/how-to-connect-to-data-in-a-service.md)
+    -   WCF データ サービス、WCF サービスまたは web サービス。 詳細については、次を参照してください。[方法: データ サービスに接続する](../data-tools/how-to-connect-to-data-in-a-service.md)します。
 
     -   オブジェクト。 詳細については、次を参照してください。 [Visual Studio でのオブジェクトにバインド](bind-objects-in-visual-studio.md)します。
 
@@ -93,4 +92,4 @@ ms.locfileid: "54988910"
 
 - [Visual Studio でデータに WPF コントロールをバインドする](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [WPF アプリケーションで関連データを表示する](../data-tools/display-related-data-in-wpf-applications.md)
-- [チュートリアル: WPF アプリケーションで関連データを表示する](../data-tools/display-related-data-in-wpf-applications.md)
+- [チュートリアル: WPF アプリケーションでの関連データの表示](../data-tools/display-related-data-in-wpf-applications.md)

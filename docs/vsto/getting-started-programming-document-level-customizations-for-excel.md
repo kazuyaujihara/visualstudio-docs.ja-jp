@@ -1,4 +1,4 @@
----
+﻿---
 title: Excel 用ドキュメント レベル カスタマイズのプログラミングのスタート ガイド
 ms.date: 02/02/2017
 ms.topic: conceptual

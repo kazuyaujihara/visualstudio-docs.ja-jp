@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visual Studio 2017 の拡張機能における重大な変更 |Microsoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual
@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012275"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318746"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 の機能拡張の変更
 
-Visual Studio 2017 では、Visual Studio のユーザーシステムへの影響を軽減させる[高速で軽量な Visual Studio インストール エクスペリエンス](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer)を提供するとともに、インストールされるワークロードと機能をユーザーが幅広く選択することを可能にしています。  これらの機能強化をサポートするため、機能拡張モデルに変更を加え、Visual Studio の拡張性にいくつかの重大な変更を行いました。 このドキュメントでは、これらの変更に関する技術的な詳細とその対処方法について説明します。 一部の情報は特定の時点の実装の詳細であり、後に変更される可能性がありますのでご注意ください。
+Visual Studio 2017 では、Visual Studio のユーザーシステムへの影響を軽減させる[高速で軽量な Visual Studio インストール エクスペリエンス](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer)を提供するとともに、インストールされるワークロードと機能をユーザーが幅広く選択することを可能にしています。  これらの機能強化をサポートするため、機能拡張モデルに変更を加え、Visual Studio の拡張性にいくつかの重大な変更を行いました。 このドキュメントでは、これらの変更に関する技術的な詳細とその対処方法について説明します。 一部の情報は特定の時点の実装の詳細であり、後に変更される可能性がありますのでご注意ください。
 
 ## <a name="changes-affecting-vsix-format-and-installation"></a>VSIX 形式とインストールに影響する変更
 
@@ -28,7 +28,7 @@ VSIX 形式における変更は次のとおりです:
 * セットアップの前提条件の宣言。 Visual Studio の軽量で、高速なインストールを実現するため、 インストーラーはより多くの構成オプションをユーザーへ提供するようになりました。 その結果、拡張機能によって必要とされる機能とコンポーネントがインストールされていることを確かめるために、拡張機能はその依存関係を宣言する必要があります。
   * Visual Studio 2017 インストーラーは、拡張機能のインストールの過程で、必要なコンポーネントを取得し、自動的なインストールをユーザーに提供します。
   * 新しい VSIX v3 形式を使用せずに構築された拡張機能をインストールしようとするとき、ユーザーは警告を受けるようになります。例え、拡張機能のマニフェストで 15.0 のバージョンを対象とするとマークされている場合でも同様です。
-* VSIX 形式の機能を強化します。 サイド バイ サイド インストールをもサポートする Visual Studio の[影響の少ないインストール](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install)で提供するため、ほとんどの構成データはシステム レジストリに保存されなくなり、Visual Studio 固有のアセンブリが GAC から取り除かれました。 また VSIX 形式と VSIX インストールエンジンの機能が強化されたため、一部のインストールの種類においては、MSI や EXE の代わりにそれらの機能を使用して拡張機能をインストールできるようになりました。
+* VSIX 形式の機能を強化します。 サイド バイ サイド インストールをもサポートする Visual Studio の[影響の少ないインストール](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install)で提供するため、ほとんどの構成データはシステム レジストリに保存されなくなり、Visual Studio 固有のアセンブリが GAC から取り除かれました。 また VSIX 形式と VSIX インストールエンジンの機能が強化されたため、一部のインストールの種類においては、MSI や EXE の代わりにそれらの機能を使用して拡張機能をインストールできるようになりました。
 
   新しい機能は次のとおりです。
 
