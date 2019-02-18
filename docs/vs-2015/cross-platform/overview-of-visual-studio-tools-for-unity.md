@@ -67,5 +67,5 @@ ms.locfileid: "54776512"
   
 -   Visual Studio Tools for Unity がプロジェクト ファイルを生成する方法を変更するには、Unity のスタイル コールバック ProjectFileGeneration を使用します。 詳細については、プロジェクト ファイル生成の例を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Unity ホームページ](http://unity3d.com)
