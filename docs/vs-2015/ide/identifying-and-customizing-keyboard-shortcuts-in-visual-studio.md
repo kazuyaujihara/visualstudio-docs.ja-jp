@@ -144,5 +144,5 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
      ![カスタマイズされたショートカット キーのみをインポート](../ide/media/importshortcuts.png "ImportShortcuts")
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [Visual Studio のユーザー補助機能](../ide/reference/accessibility-features-of-visual-studio.md)
