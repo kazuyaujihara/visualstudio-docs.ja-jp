@@ -44,5 +44,5 @@ ms.locfileid: "54778446"
 ### <a name="main-menu-casing"></a>メイン メニューの大文字小文字の区別
  メイン メニューの大文字小文字の区別の変更は一般的に需要が高いため、これを **[タイトル文字]** と **[すべて大文字]** の間で変更できます。**[クイック起動]** に 「`environment`」と入力して **[環境 &#124; 全般]** を選択します。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [Visual Studio IDE](../ide/visual-studio-ide.md)
