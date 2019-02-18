@@ -70,5 +70,5 @@ ms.locfileid: "54775873"
 
      Visual Studio の起動時には、**[(管理者)]** がタイトル バーの製品名の後に表示されます。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [移植、移行、および Visual Studio プロジェクトのアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Visual Studio 2015 をインストールします。](../install/install-visual-studio-2015.md)
