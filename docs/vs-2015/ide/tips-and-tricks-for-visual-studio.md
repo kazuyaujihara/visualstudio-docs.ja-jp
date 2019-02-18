@@ -141,7 +141,7 @@ Visual Studio では、このトピックのショートカットを使用して
 
 参照してください[キーボード ショートカット。Visual Studio Online、TFS web ポータル、およびチーム エクスプ ローラー](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)します。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio ブログ](http://blogs.msdn.com/b/visualstudio)
 - [Visual Studio のヒントとテクニックに関するブログ](http://blogs.msdn.com/b/zainnab)
