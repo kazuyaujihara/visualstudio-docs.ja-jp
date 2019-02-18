@@ -43,5 +43,5 @@ ms.locfileid: "54772061"
 ### <a name="refactoring-in-f"></a>リファクタリング [F#]
  F# のリファクタリングのサポートは、サード パーティ製の Visual Studio 拡張機能の [Visual F# Power Tool](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff) で提供されます。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [Visual Studio IDE](../ide/visual-studio-ide.md) [コード エディターとテキスト エディターでのコードの作成](../ide/writing-code-in-the-code-and-text-editor.md)
