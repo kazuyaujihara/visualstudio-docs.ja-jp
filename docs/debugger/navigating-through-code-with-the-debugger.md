@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 2a009bb48d130f35fa9663602762d5cff9789037
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204491"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070618"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio デバッガーでコード内を移動します。
 
-Visual Studio デバッガーでは、アプリの状態を検査し、その実行フローを表示するコード内を移動できます。 キーボード ショートカット、デバッグ コマンド、ブレークポイント、およびその他の機能を使用するを簡単に確認するコードを取得します。 デバッガー ナビゲーション コマンドとショートカットの知識は、高速かつ簡単に見つけ、アプリの問題を解決します。  コードのデバッグを試みるのが今回初めてである場合は、この記事を先に進む前に[超初心者向けのデバッグ方法](../debugger/debugging-absolute-beginners.md)および[より良い C# コードを書くことによるバグの修正](../debugger/write-better-code-with-visual-studio.md)に関するページを参照することをお勧めします。
+Visual Studio デバッガーでは、アプリの状態を検査し、その実行フローを表示するコード内を移動できます。 キーボード ショートカット、デバッグ コマンド、ブレークポイント、およびその他の機能を使用するを簡単に確認するコードを取得します。 デバッガー ナビゲーション コマンドとショートカットの知識は、高速かつ簡単に見つけ、アプリの問題を解決します。  コードをデバッグしようとした初めての場合は、読み取りをする可能性があります[超初心者向けのデバッグ](../debugger/debugging-absolute-beginners.md)と[手法とツールをデバッグ](../debugger/write-better-code-with-visual-studio.md)にこの記事に進む前にします。
   
 ## <a name="basic-debugging"></a>デバッグの基本  
 
@@ -186,5 +186,5 @@ Microsoft のシンボルを読み込むには、次を参照してください�
 
 ## <a name="see-also"></a>関連項目
  [デバッグとは](../debugger/what-is-debugging.md)  
- [より良い C# コードを書くことでバグを修正する](../debugger/write-better-code-with-visual-studio.md)  
+ [デバッグの技術とツール](../debugger/write-better-code-with-visual-studio.md)  
  [デバッグの概要](../debugger/debugger-feature-tour.md) 

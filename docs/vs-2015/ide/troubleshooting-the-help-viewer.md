@@ -1,14 +1,9 @@
 ---
 title: ヘルプ ビューアーのトラブルシューティング |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: troubleshooting
 helpviewer_keywords:
 - troubleshooting [Help Viewer 2.0]
 - Help Viewer 2.0, troubleshooting
@@ -16,13 +11,13 @@ ms.assetid: 461a4553-064a-4142-a2d2-058658b9ba12
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3497d46ed4c9c5a04d8f40cc3056ea282593884
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774602"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>ヘルプ ビューアーのトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,10 +47,7 @@ ms.locfileid: "49934237"
   
 - フィードバックを提供するには、Microsoft の Web サイト、[Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) をご覧になるか、[hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com) まで電子メールを送信してください。  
   
-- 詳細については、次を参照してください。、[デベロッパー ドキュメントおよびヘルプ システム](http://go.microsoft.com/fwlink/?LinkId=232741)フォーラムと[The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743)ブログ。  
+- 詳細については、[Developer Documentation and Help System](http://go.microsoft.com/fwlink/?LinkId=232741) (デベロッパー ドキュメントおよびヘルプ システム) フォーラムおよび [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743) (ヘルプ ガイ) ブログを参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ヘルプ ビューアー 2.1 の管理者ガイド](http://go.microsoft.com/fwlink/?LinkId=243985)
-
-
-

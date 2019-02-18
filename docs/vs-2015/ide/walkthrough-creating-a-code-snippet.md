@@ -1,14 +1,9 @@
 ---
-title: 'チュートリアル: コード スニペットを作成する | Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: コード スニペットを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -20,21 +15,21 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f9b09a8990de97357da2703f1d08dabec50ea75e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267749"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790114"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>チュートリアル: コード スニペットを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-コード スニペットは、わずかな手順で作成できます。 必要な操作は、XML ファイルを作成し、適切な要素を指定して、コードを追加するだけです。 コードには、参照や置換パラメーターを追加することもできます。 [インポート] ボタンをコード スニペット マネージャーを使用して、Visual Studio のインストールにスニペットを追加することができます (**ツール/コード スニペット マネージャー**)。  
+コード スニペットは、わずかな手順で作成できます。 必要な操作は、XML ファイルを作成し、適切な要素を指定して、コードを追加するだけです。 コードには、参照や置換パラメーターを追加することもできます。 Visual Studio インストールにスニペットを追加するには、コード スニペット マネージャー (**[ツール]、[コード スニペット マネージャー]**) の [インポート] を使用します。  
   
 > [!TIP]
->  コード スニペットをより簡単に記述する方法については、CodePlex web サイトのコミュニティ ツールをなど、検索[Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033)します。  
+>  コード スニペットをより簡単に作成する方法の詳細については、CodePlex の Web サイトで、[Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033) などのコミュニティ ツールを検索してください。  
   
 ## <a name="snippet-template"></a>スニペット テンプレート  
  基本的なスニペット テンプレートを次に示します。  
@@ -78,7 +73,7 @@ ms.locfileid: "49267749"
   
 ### <a name="to-add-a-code-snippet-to-visual-studio"></a>コード スニペットを Visual Studio に追加するには  
   
-1.  コード スニペット マネージャーを使用すると、独自のスニペットを Visual Studio インストールに追加できます。 コード スニペット マネージャーを開きます (**ツール/コード スニペット マネージャー**)。  
+1.  コード スニペット マネージャーを使用すると、独自のスニペットを Visual Studio インストールに追加できます。 コード スニペット マネージャーを開きます (**[ツール]、[コード スニペット マネージャー]**)。  
   
 2.  **[インポート]** ボタンをクリックします。  
   
@@ -90,7 +85,7 @@ ms.locfileid: "49267749"
   
      `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippets`  
   
-6.  Visual Basic プロジェクトを開き、コード ファイルを開くことによって、スニペットをテストします。 ファイルに次のようにクリックします。**スニペットの挿入**コンテキスト メニューで、**マイ コード スニペット**します。 **[My Visual Basic Code Snippet]** (マイ Visual Basic コード スニペット) という名前のスニペットが表示されます。 これをダブルクリックします。  
+6.  Visual Basic プロジェクトを開き、コード ファイルを開くことによって、スニペットをテストします。 ファイル内でコンテキスト メニューの **[スニペットの挿入]** をクリックし、**[マイ コード スニペット]** をクリックします。 **[My Visual Basic Code Snippet]** (マイ Visual Basic コード スニペット) という名前のスニペットが表示されます。 これをダブルクリックします。  
   
 7.  コード内に `Console.WriteLine("Hello, World!")` が挿入されます。  
   
@@ -266,8 +261,5 @@ ms.locfileid: "49267749"
   
     ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)
-
-
-

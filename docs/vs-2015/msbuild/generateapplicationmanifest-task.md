@@ -45,7 +45,7 @@ ms.locfileid: "54756585"
 |`Dependencies`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 作成するマニフェストが依存する一連のアセンブリを定義したアイテム一覧を指定します。 配置状態に関するその他の情報や依存関係の種類を示したアイテム メタデータを添えると、各アイテムを詳細に記述できます。 詳細については、後述する「アイテム メタデータ」を参照してください。|  
 |`Description`|省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションまたはコンポーネントの説明を記述します。|  
 |`EntryPoint`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 作成されるマニフェスト アセンブリのエントリ ポイントを示すアイテムを 1 つ指定します。<br /><br /> [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーション マニフェストの場合、このパラメーターには、アプリケーションの実行時に起動されるアセンブリを指定します。|  
-|`ErrorReportUrl`|省略可能な <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String 型のパラメーターです。<br /><br /> ClickOnce インストールのエラー報告時にダイアログ ボックスに表示される Web ページの URL を指定します。|  
+|`ErrorReportUrl`|省略可能な [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 型のパラメーターです。<br /><br /> ClickOnce インストールのエラー報告時にダイアログ ボックスに表示される Web ページの URL を指定します。|  
 |`FileAssociations`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> ClickOnce の配置マニフェストに関連付けられている 1 つまたは複数のファイルの種類のリストを指定します。<br /><br /> ファイルの関連付けは、.NET Framework 3.5 以降が対象となっている場合にのみ有効です。|  
 |`Files`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> マニフェストに含めるファイルです。 各ファイルの完全パスを指定します。|  
 |`HostInBrowser`|省略可能な [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 型のパラメーターです。<br /><br /> `true` の場合、WPF Web ブラウザー アプリケーションのように、アプリケーションがブラウザーでホストされます。|  
@@ -68,7 +68,7 @@ ms.locfileid: "54756585"
 |`TrustInfoFile`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> アプリケーションのセキュリティを指定する XML ドキュメントを示します。 XML ドキュメントのルート要素は、asmv2 名前空間内の trustInfo ノードである必要があります。 タスクがネイティブ マニフェストを生成する場合には、このパラメーターは無視されます。|  
 |`UseApplicationTrust`|省略可能な <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> 型のパラメーターです。<br /><br /> true の場合、`Product`、`Publisher`、および `SupportUrl` の各プロパティがアプリケーション マニフェストに書き込まれます。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.GenerateManifestBase> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 Task クラスのパラメーターの一覧については、[「Task Base Class」](../msbuild/task-base-class.md) を参照してください。  
   
  `GenerateDeploymentManifest` タスクの使用方法については、「[GenerateApplicationManifest タスク](../msbuild/generateapplicationmanifest-task.md)」を参照してください。  

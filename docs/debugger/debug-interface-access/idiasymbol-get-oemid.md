@@ -40,7 +40,7 @@ HRESULT get_oemId ( 
 > [!NOTE]
 >  戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  このプロパティを使用したシンボルにのみ適用されます、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)の入力`SymTagCustomType`します。  
   
 ## <a name="see-also"></a>関連項目

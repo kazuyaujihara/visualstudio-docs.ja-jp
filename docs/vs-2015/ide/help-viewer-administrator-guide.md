@@ -1,25 +1,20 @@
 ---
 title: ヘルプ ビューアーの管理者ガイド | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799706"
 ---
 # <a name="help-viewer-administrator-guide"></a>ヘルプ ビューアー の管理者ガイド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "49871291"
   
  基本構文は次のとおりです。  
   
- \<*パス*> \HlpCtntmgr.exe/operation \<*引数*>/catalogname \<*名前*>/locale \<*ロケール*>/sourceuri \< *.msha パスまたは URL*>  
+ \<*path to*>\HlpCtntmgr.exe /operation \<*argument*> /catalogname \<*name*> /locale \<*locale*> /sourceuri \<*.msha path または URL*>  
   
  HlpCtntMgr.exe のコマンド ライン構文の詳細については、「[ヘルプ コンテンツ マネージャーのコマンド ライン引数](../ide/command-line-arguments-for-the-help-content-manager.md)」を参照してください。  
   
@@ -41,7 +36,7 @@ ms.locfileid: "49871291"
 ## <a name="deploying-local-help-content-from-the-internet"></a>インターネットからのローカル ヘルプ コンテンツの配置  
  MSDN のコンテンツ パッケージ サービスを使用して、ローカル ヘルプ コンテンツをインターネットからクライアント コンピューターに配置できます。 このコマンドの構文は次のとおりです。  
   
- \\<*パス*> \v2.2\HlpCtntmgr.exe/operation \<*名前*>/catalogname \<*カタログ名*>/locale \< *ロケール*>  
+ \\<*path to*>\v2.2\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>  
   
  HlpCtntMgr.exe のコマンド ライン構文の詳細については、「[ヘルプ コンテンツ マネージャーのコマンド ライン引数](../ide/command-line-arguments-for-the-help-content-manager.md)」を参照してください。  
   
@@ -100,13 +95,13 @@ ms.locfileid: "49871291"
   
 1. ヘルプ ビューアーで、**[コンテンツの管理]** タブを選択します。  
   
-2. **利用可能なドキュメント**、Visual Studio のドキュメント セットに移動します。  
+2. **[利用可能なドキュメント]** で、Visual Studio のドキュメント セットに移動します。  
   
 3. 各サブ項目の横の **[削除]** を選択します。  
   
-4. 選択**開始**をアンインストールするには  
+4. **[開始]** をクリックしてアンインストールします。  
   
-5. 参照する*n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 フォルダーにファイル catalogType.xml にはのみが含まれていることを確認します。  
+5. *n*:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 に移動し、フォルダーに catalogType.xml ファイルだけが含まれていることを確認します。  
   
    前にインストールされた Visual Studio のローカル ヘルプ コンテンツをすべて削除したら、基本コンテンツ セットをダウンロードする準備が整いました。  
   
@@ -114,7 +109,7 @@ ms.locfileid: "49871291"
   
 1. ヘルプ ビューアーで、**[コンテンツの管理]** タブを選択します。  
   
-2. **利用可能なドキュメント**、クリックしてダウンロードするドキュメント セットに移動**追加**します。  
+2. **[利用可能なドキュメント]** で、ダウンロードするドキュメント セットに移動し、**[追加]** を選択します。  
   
 3. **[開始]** を選択します。  
   
@@ -132,7 +127,7 @@ ms.locfileid: "49871291"
   
 4.  次のように入力します。  
   
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *foldername*> \/y/e/k/o  
+     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o  
   
      例: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`  
   
@@ -142,7 +137,7 @@ ms.locfileid: "49871291"
   
 1.  ネットワーク共有を作成し、その場所に theee ヘルプ コンテンツをコピーします。  
   
-     たとえば、c:\VS12Help へのコンテンツをコピー \\\myserver\VS12Help します。  
+     たとえば、c:\VS12Help のコンテンツを \\\myserver\VS12Help にコピーします。  
   
 2.  ヘルプ コンテンツの配置スクリプトを含める .bat ファイルを作成します。 クライアントがプッシュの一部として、削除されるファイルのいずれかに読み取りロックを設定している可能性があるため、更新をプッシュする前にクライアントをシャットダウンする必要があります。  
   
@@ -206,9 +201,6 @@ ms.locfileid: "49871291"
   
 3.  ヘルプ コンテンツをインストールするローカル コンピューターで、bat ファイルを実行します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ヘルプ コンテンツ マネージャーのコマンドライン引数](../ide/command-line-arguments-for-the-help-content-manager.md)   
  [ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)
-
-
-

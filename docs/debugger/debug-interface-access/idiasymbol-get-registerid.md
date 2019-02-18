@@ -40,7 +40,7 @@ HRESULT get_registerId ( 
 > [!NOTE]
 >  戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  記号がつまりがレジスタを基準とした場合、場合、シンボルの[LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)に設定されている`LocIsRegRel`を使用して、`get_registerId`メソッドへの呼び出しに続けて、 [idiasymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)記号が配置されているレジスタからのオフセットを取得するメソッド。  
   
 ## <a name="see-also"></a>関連項目

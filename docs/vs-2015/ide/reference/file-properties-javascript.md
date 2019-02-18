@@ -78,7 +78,7 @@ ms.locfileid: "54780370"
 ### <a name="file-version"></a>ファイルのバージョン  
  参照のファイル バージョンが表示されます。  
   
-### <a name="identity"></a>同一。  
+### <a name="identity"></a>Identity  
  プロジェクトに使用されている参照の ID が表示されます。これはプロジェクト ファイルに保存されています。  
   
 ### <a name="package"></a>Package  

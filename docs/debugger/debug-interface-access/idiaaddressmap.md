@@ -42,7 +42,7 @@ IDiaAddressMap : IUnknown
 |[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|イメージの相対仮想アドレス変換を有効にするヘッダーのセット。|  
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|イメージのレイアウトの翻訳をサポートするために、アドレス マップを提供します。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  このインターフェイスによって提供されるコントロールは 2 つを指定するデータのセットにカプセル化: イメージのヘッダーと、マップに対応します。 ほとんどのクライアントを使用して、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)イメージと、メソッドことが必要なヘッダーとマップ データ自体のすべてを検出通常の適切なデバッグ情報を検索するメソッド。 ただし一部のクライアントは、特殊な処理とデータの検索を実装します。 このようなクライアントのメソッドを使用して、 `IDiaAddressMap` DIA SDK 検索結果を提供するインターフェイス。  
   
 ## <a name="notes-for-callers"></a>呼び出し元のノート  

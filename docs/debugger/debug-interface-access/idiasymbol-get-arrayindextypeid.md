@@ -40,7 +40,7 @@ HRESULT get_arrayIndexTypeId ( 
 > [!NOTE]
 >  戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  識別子は、一意としてすべてのシンボルをマークする DIA SDK によって作成された一意の値です。  
   
 ## <a name="requirements"></a>要件  

@@ -1,25 +1,20 @@
 ---
 title: RequireJS 用に IntelliSense をカスタマイズ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2be07ef8-9c08-444b-a21a-22a4fe6386a3
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7b1c32d0096742c2364e5ac3b8afe59b39152b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5bcf5f27653782d0280082713306e142702559c8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246715"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770319"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>RequireJS 用に IntelliSense をカスタマイズする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Visual Studio 2013 Update 4 以降では、人気のある RequireJS JavaScript 
 -   JSProj プロジェクトで RequireJS をカスタマイズして、Apache Cordova アプリ、Windows ストア アプリ、および LightSwitch HTML アプリを構築するために使用する  
   
 ## <a name="customize-requirejs-in-aspnet-projects"></a>ASP.NET プロジェクトで RequireJS をカスタマイズする  
- Require.js という名前のファイルが現在の JavaScript ファイルで参照されている場合に自動的に RequireJS のサポートが有効になって (詳細については、IntelliSense のコンテキスト確認」セクションを参照してください。 [JavaScript IntelliSense](../ide/javascript-intellisense.md))。 ASP.NET プロジェクトで require.js を参照するは、普通///を使用して\<参照/> ディレクティブ _references.js ファイル内で。  
+ require.js という名前のファイルが現在の JavaScript ファイルで参照されている場合、自動的に RequireJS のサポートが有効になります (詳細については、「[JavaScript IntelliSense](../ide/javascript-intellisense.md)」の IntelliSense のコンテキスト確認に関するセクションを参照してください)。 ASP.NET プロジェクトでは、通常、_references.js ファイル内で /// \<reference/> ディレクティブを使用することによって require.js が参照されます。  
   
 ### <a name="configure-the-data-main-attribute-in-an-aspnet-project"></a>ASP.NET プロジェクトで data-main 属性を構成する  
  アプリを実行した時の動作を正確にシミュレートするには、require.js の設定時に最初に読み込まれるファイルを JavaScript エディターが認識する必要があります。 これは、通常、次に示すように require.js を参照する script 要素の `data-main` 属性を使用して、アプリケーションの HTML ファイル内で構成します。  
@@ -44,14 +39,14 @@ Visual Studio 2013 Update 4 以降では、人気のある RequireJS JavaScript 
 <script src="js/require.js" data-main="js/app.js"></script>  
 ```  
   
- この例では、data-main によって参照されるスクリプト (js/app.js) は、require.js の直後に読み込まれます。 直後に読み込まれるファイルは、まず、RequireJS を使用する最適な場所 (を使用して`require.config()`)。使用するには、どのようなファイルを JavaScript エディターに通知する`data-main`アプリケーションでは、追加、`data-main`属性、および変更し、///\<参照/> ディレクティブ、アプリケーション内で require.js を参照します。 たとえば、このディレクティブを使用することができます。  
+ この例では、data-main によって参照されるスクリプト (js/app.js) は、require.js の直後に読み込まれます。 直後に読み込まれるファイルは、RequireJS の使用を最初に構成するのに最適な場所です (`require.config()` を使用)。アプリケーション内で `data-main` のためにどのファイルを使用するかを JavaScript エディターに通知するには、`data-main` 属性を追加し、/// \<reference/> ディレクティブを変更してアプリケーション内で require.js を参照します。 たとえば、このディレクティブを使用することができます。  
   
 ```javascript  
 /// <reference path="js/require.js" data-main="js/app.js" />  
 ```  
   
 ### <a name="configure-the-application-start-page-in-an-aspnet-project"></a>ASP.NET プロジェクトでアプリケーションのスタート ページを構成する  
- アプリの実行時に requirejs は相対ファイルへのパス (たとえば、"..\\"パス) では、require.js ライブラリが読み込まれている HTML ファイルに対して相対的です。 Visual Studio エディターで ASP.NET プロジェクトのコードを記述するときは、この開始ページが不明であるため、相対ファイル パスに使用する開始ページをエディターに知らせる必要があります。 これを行うには、追加、`start-page`属性を///\<参照/> ディレクティブ。  
+ アプリの実行時に requirejs は相対ファイルへのパス (たとえば、"..\\"パス) では、require.js ライブラリが読み込まれている HTML ファイルに対して相対的です。 Visual Studio エディターで ASP.NET プロジェクトのコードを記述するときは、この開始ページが不明であるため、相対ファイル パスに使用する開始ページをエディターに知らせる必要があります。 そのためには、`start-page` 属性を /// \<reference/> ディレクティブに追加します。  
   
 ```javascript  
 /// <reference path="js/require.js" data-main="js/app.js" start-page="/app/index.html" />  
@@ -64,8 +59,5 @@ Visual Studio 2013 Update 4 以降では、人気のある RequireJS JavaScript 
   
  JSProj プロジェクト ファイルでは、ASP.NET プロジェクトに必要なカスタマイズの手順は必要ありません。 つまり、require.js を参照する script タグの `data-main` 属性で使用されているスクリプト ファイルが自動的に読み込まれて require.js が構成されます。 require.js を参照する、HTML ファイルは、アプリケーションのスタート ページとしても使用されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)
-
-
-

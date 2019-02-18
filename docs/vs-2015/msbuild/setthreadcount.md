@@ -41,7 +41,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  使用するスレッドの数。  
   
 ## <a name="return-value"></a>戻り値  
- スレッド カウントが更新された場合、<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> に SUCCEEDED ビットが設定されます。  
+ スレッド カウントが更新された場合、[HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) に [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) ビットが設定されます。  
   
 ## <a name="requirements"></a>要件  
  **ヘッダー:** FileTracker.h

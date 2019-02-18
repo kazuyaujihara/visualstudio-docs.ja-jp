@@ -1,25 +1,20 @@
 ---
 title: 複数のユーザー アカウントを使って作業する | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176268"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802643"
 ---
 # <a name="work-with-multiple-user-accounts"></a>複数のユーザー アカウントを使って作業する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,20 +46,20 @@ ms.locfileid: "49176268"
   
 1.  C# でユニバーサル アプリ プロジェクトを作成します。  
   
-2.  ソリューション エクスプ ローラーでプロジェクト ノードを右クリックし、選択**追加 > 接続済みサービスの**します。 [接続済みサービスの追加] ウィザードが表示され、Visual Studio ログイン ID に関連付けられた Azure アカウントのサービスの一覧が表示されます。 なお、Azure には個別にサインインする必要はありません。 ただし、特定のコンピューターから他のアカウントのリソースへのアクセスを初めて試みるときは、そのアカウントにサインインする必要があります。  
+2.  ソリューション エクスプローラーでプロジェクト ノードを右クリックし、**[追加] > [接続済みサービス]** を選択します。 [接続済みサービスの追加] ウィザードが表示され、Visual Studio ログイン ID に関連付けられた Azure アカウントのサービスの一覧が表示されます。 なお、Azure には個別にサインインする必要はありません。 ただし、特定のコンピューターから他のアカウントのリソースへのアクセスを初めて試みるときは、そのアカウントにサインインする必要があります。  
   
     > [!WARNING]
-    >  これが初めてである場合は、特定のコンピューターで Visual Studio 2015 でストア アプリを作成してに移動して、デバイスを開発モードを有効にすることを求められます**設定&#124;します。更新プログラムおよびセキュリティ&#124;開発者向け**コンピューターにします。 詳細については、「[デバイスを開発用に有効にする](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx)」を参照してください。  
+    >  特定のコンピューターの Visual Studio 2015 でストア アプリを初めて作成する場合は、コンピューターの [設定]**、更新プログラムおよびセキュリティ&#124;開発者向け**コンピューターにします。 詳細については、「[デバイスを開発用に有効にする](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx)」を参照してください。  
   
 ###  <a name="access_azure"></a>Web プロジェクトで Azure Active Directory にアクセス  
- Azure AD では、ASP.NET MVC の Web アプリケーションでのエンド ユーザー シングル サインオンや、Web API サービスでの AD 認証をサポートしています。 ドメイン認証は個々のユーザー アカウント認証とは異なります。Active Directory ドメインにアクセスできるユーザーは、既存の Azure AD アカウントを使用して、Web アプリケーションに接続できます。 Office 365 アプリでは、ドメイン認証も使用できます。 アクションの表示は、web アプリケーションを作成 (**ファイル > 新しいプロジェクト > c# > クラウド > ASP.NET Web アプリケーション**)。 新しい ASP.NET プロジェクトのダイアログで、**[認証の変更]** を選択します。 認証ウィザードが表示され、アプリケーションで使用する認証の種類を選択できます。  
+ Azure AD では、ASP.NET MVC の Web アプリケーションでのエンド ユーザー シングル サインオンや、Web API サービスでの AD 認証をサポートしています。 ドメイン認証は個々のユーザー アカウント認証とは異なります。Active Directory ドメインにアクセスできるユーザーは、既存の Azure AD アカウントを使用して、Web アプリケーションに接続できます。 Office 365 アプリでは、ドメイン認証も使用できます。 これを実際に見るには、Web アプリケーションを作成します (**[ファイル]、[新しいプロジェクト]、[C#]、[クラウド]、[ASP.NET Web アプリケーション]**)。 新しい ASP.NET プロジェクトのダイアログで、**[認証の変更]** を選択します。 認証ウィザードが表示され、アプリケーションで使用する認証の種類を選択できます。  
   
  ![ASP.NET の認証の変更ダイアログ](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  
   
  ASP.NET での異なる種類の認証について詳しくは、「 [Visual Studio 2013 での ASP.NET Web プロジェクトの作成](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) 」をご覧ください (認証に関する情報は Visual Studio 2015 にも引き続き該当します)。  
   
 ### <a name="access-your-visual-studio-team-services-account"></a>Visual Studio Team Services のアカウントへのアクセス  
- メイン メニューで、次のように選択します。**チーム > Team Foundation Server への接続**を起動、**チーム エクスプ ローラー**ウィンドウ。 **[チーム プロジェクトの選択]** をクリックすると、 **[Team Foundation Server の選択]** にあるリスト ボックスに Visual Studio Team Services アカウントの URL が表示されます。 URL を選択すると、資格情報を再入力しなくてもログインできます。  
+ メイン メニューから、**[チーム] > [Team Foundation Server への接続]** を選択して、**チーム エクスプローラー** ウィンドウを開きます。 **[チーム プロジェクトの選択]** をクリックすると、 **[Team Foundation Server の選択]** にあるリスト ボックスに Visual Studio Team Services アカウントの URL が表示されます。 URL を選択すると、資格情報を再入力しなくてもログインできます。  
   
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Visual Studio に 2 つ目にユーザー アカウントを追加  
  Visual Studio の右上にあるユーザー名の横の矢印をクリックします。 その後、 **[アカウントの設定]** メニュー項目をクリックします。 **[アカウント マネージャー]** ダイアログが表示され、サインインしたアカウントが表示されます。 ダイアログの左下にある **[アカウントの追加]** リンクをクリックして、新しい Microsoft アカウントまたは新しい仕事や学校のアカウントを追加します。  
@@ -76,7 +71,4 @@ ms.locfileid: "49176268"
  ![アカウント マネージャー](../ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")  
   
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>[接続済みサービスの追加] ウィザードおよびサーバー エクスプローラーを再表示します。  
- **サーバー エクスプローラー** に再び移動し、Azure ノードを右クリックして、**[サブスクリプションの管理とフィルター]** を選択します。 現在のアカウントの横にあるドロップダウン矢印をクリックして新しいアカウントを選択し、サーバー エクスプローラーに表示するサブスクリプションを選択します。 指定したサブスクリプションに関連付けられているすべてのサービスが表示されます。現在 2 番目のアカウントで Visual Studio IDE にサインインしてはいませんが、そのアカウントのサービスとリソースにサインインします。 場合も同様**プロジェクト > 接続済みサービス**と**チーム > Team Foundation Server への接続**します。
-
-
-
+ **サーバー エクスプローラー** に再び移動し、Azure ノードを右クリックして、**[サブスクリプションの管理とフィルター]** を選択します。 現在のアカウントの横にあるドロップダウン矢印をクリックして新しいアカウントを選択し、サーバー エクスプローラーに表示するサブスクリプションを選択します。 指定したサブスクリプションに関連付けられているすべてのサービスが表示されます。現在 2 番目のアカウントで Visual Studio IDE にサインインしてはいませんが、そのアカウントのサービスとリソースにサインインします。 同じことが **[プロジェクト] > [接続済みサービスの追加]** および **[チーム] > [Team Foundation Server への接続]** にも当てはまります。

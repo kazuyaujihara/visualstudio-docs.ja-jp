@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2a967581a2b5da2354908f6f5d6a2f5a35d7fa1c
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55040022"
@@ -70,7 +70,7 @@ enum DataKind { 
  DataIsConstant  
  データ項目は、定数値です。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  この列挙体の値がによって返される、 [idiasymbol::get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)メソッド。  
   
 ## <a name="requirements"></a>要件  

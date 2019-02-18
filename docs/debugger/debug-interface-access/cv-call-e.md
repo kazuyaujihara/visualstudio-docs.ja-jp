@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9963a36e8e9054103ea1517cb476670b0c6656f7
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55012639"
@@ -57,7 +57,7 @@ typedef enum CV_call_e { 
  CV_CALL_CLRCALL  
  共通言語ランタイム (CLR) (とも呼ばれる呼び出し規約マネージ コード) で使用される関数呼び出し規約を指定します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  この列挙体の値が呼び出しによって返される、 [idiasymbol::get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)メソッド。  
   
 ## <a name="requirements"></a>要件  

@@ -96,7 +96,7 @@ ms.locfileid: "54801714"
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  既定のマーカー系列に 3 つのスパンを作成して各スパンにフラグ、メッセージ、警告を 1 つずつ記述するためのコードを追加します。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> オブジェクトを作成するには、<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->EnterSpan メソッドを呼び出します。 既定の系列に書き込むには、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> クラスの静的な write メソッドを使用します。  
+3.  既定のマーカー系列に 3 つのスパンを作成して各スパンにフラグ、メッセージ、警告を 1 つずつ記述するためのコードを追加します。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> オブジェクトを作成するには、[EnterSpan](<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->) メソッドを呼び出します。 既定の系列に書き込むには、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> クラスの静的な write メソッドを使用します。  
   
     ```vb  
   

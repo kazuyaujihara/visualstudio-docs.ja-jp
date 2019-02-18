@@ -37,7 +37,7 @@ HRESULT get_uniqueId ( 
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  文字列には、行番号の処理が高速化できるのではなくキーの比較。  
   
 ## <a name="see-also"></a>参照  

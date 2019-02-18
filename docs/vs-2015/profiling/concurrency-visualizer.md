@@ -26,7 +26,7 @@ ms.locfileid: "54779118"
 # <a name="concurrency-visualizer"></a>コンカレンシー ビジュアライザー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-メモ:
+注意]
 >  コンカレンシー ビジュアライザーは、Visual Studio に対する任意の拡張機能です。 コンカレンシー ビジュアライザーとコンカレンシー ビジュアライザー コレクション ツールは、以下のリンクからダウンロードします。  
 > 
 > - [コンカレンシー ビジュアライザー](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) 拡張機能をダウンロードします。  

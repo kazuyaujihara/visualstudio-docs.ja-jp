@@ -41,7 +41,7 @@ HRESULT ReadDWORD ( 
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 返します`E_INVALIDARG`型のプロパティがない場合`DWORD`します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  A `DWORD` 32 ビット符号なし整数としての Windows によって定義されます。  
   
 ## <a name="see-also"></a>参照  

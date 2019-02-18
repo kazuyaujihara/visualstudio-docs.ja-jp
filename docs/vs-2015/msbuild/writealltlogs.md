@@ -44,7 +44,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
  ログ ファイル名のルート名。  
   
 ## <a name="return-value"></a>戻り値  
- 追跡コンテキストが作成された場合、<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> に SUCCEEDED ビットが設定されます。  
+ 追跡コンテキストが作成された場合、[HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) に [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) ビットが設定されます。  
   
 ## <a name="requirements"></a>要件  
  **ヘッダー:** FileTracker.h  

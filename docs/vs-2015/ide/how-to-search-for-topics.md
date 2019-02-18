@@ -1,25 +1,20 @@
 ---
-title: '方法: トピックを検索する | Microsoft Docs'
-ms.custom: ''
+title: '方法: トピックの検索 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b784dc20f072a7cb8ab6ed80242c09e57ce1127a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248290"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799081"
 ---
 # <a name="how-to-search-for-topics"></a>方法 : トピックを検索する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +34,16 @@ ms.locfileid: "49248290"
     > [!NOTE]
     >  **[ビューアー オプション]** ダイアログ ボックスで、一度に表示する検索結果の最大数や、プライマリ ロケールが英語でない場合に英語のコンテンツを含めるかどうかなど、追加の設定を指定することができます。  
   
-3.  Enter キーを選択します。  
+3.  Enter キーを押します。  
   
      既定では、検索で最大 200 件のヒットが返され、それらが検索結果領域に表示されます。  
   
-     コンテンツによっては、各結果の追加のバージョン情報が表示されます。  
+     コンテンツによっては、各結果に対して追加のバージョン情報が表示される場合があります。  
   
 4.  トピックを表示するには、結果リストからそのタイトルを選択します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [フルテキスト検索のヒント](../ide/full-text-search-tips.md)   
  [検索式の論理演算子](../ide/logical-operators-in-search-expressions.md)   
- [検索式の検索演算子の詳細](../ide/advanced-search-operators-in-search-expressions.md)   
- [方法 : 検索結果をカスタマイズする](../ide/how-to-customize-search-results.md)
-
-
-
+ [検索式の高度な検索演算子](../ide/advanced-search-operators-in-search-expressions.md)   
+ [方法: 検索結果をカスタマイズします。](../ide/how-to-customize-search-results.md)

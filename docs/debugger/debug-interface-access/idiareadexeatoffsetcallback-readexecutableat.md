@@ -46,7 +46,7 @@ HRESULT ReadExecutableAt ( 
  data[]  
  [入力、出力]ファイルから読み取られたバイトに設定している配列。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  このメソッドは、ファイルの絶対オフセットを使用する実行可能ファイルからバイトのデータを読み込む DIA サポート コードによって呼び出されます。 サポートにこのメソッドは、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッド。  
   
 ## <a name="see-also"></a>参照  

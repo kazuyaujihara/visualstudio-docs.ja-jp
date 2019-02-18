@@ -1,5 +1,5 @@
 ---
-title: '[オプション]、[テキスト エディター]、[C/C++]、[詳細] | Microsoft Docs'
+title: '[オプション]、[テキスト エディター]、[C-C++]、[詳細] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general

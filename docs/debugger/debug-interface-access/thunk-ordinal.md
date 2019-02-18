@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 756a1b9fde9c85ca914b00924cb13191859be78e
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54952302"
@@ -60,7 +60,7 @@ typedef enum THUNK_ORDINAL { 
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
  分岐ポイント トランポリン サンクします。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  この列挙体の値が呼び出しから返される、 [idiasymbol::get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)メソッド。  
   
 ## <a name="requirements"></a>要件  
