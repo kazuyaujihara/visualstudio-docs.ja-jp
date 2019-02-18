@@ -87,5 +87,5 @@ ms.locfileid: "54795138"
     > [!NOTE]
     >  プロジェクト コードを無効にすると、デザイン時データが失われることがあります。 別の方法は、デザイナーで実行されているコードをデバッグすることです。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Visual Studio および Blend for Visual Studio での XAML の設計](../designers/designing-xaml-in-visual-studio.md)
