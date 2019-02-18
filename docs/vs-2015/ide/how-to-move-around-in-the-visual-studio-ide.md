@@ -91,5 +91,5 @@ ms.locfileid: "54805420"
     > [!TIP]
     >  **[アクティブなツール ウィンドウ]** リストの順番を逆に切り替えるには、Shift キーと Alt キーを押したまま F7 キーを押します。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [ウィンドウ レイアウトをカスタマイズ](../ide/customizing-window-layouts-in-visual-studio.md)[既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md)
