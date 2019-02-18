@@ -76,7 +76,7 @@ ms.locfileid: "54760772"
   
    次の手順として、この 3-D モデルにシェーダーを適用できます。 詳細については、「[方法:シェーダーを 3-D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [方法: 3-D 地形をモデル](../designers/how-to-model-3-d-terrain.md)   
  [モデル エディター](../designers/model-editor.md)   
  [シェーダー デザイナー](../designers/shader-designer.md)
