@@ -114,7 +114,7 @@ ms.locfileid: "55001187"
   
 -   グラフィックス診断ツールを使用してキャプチャされたグラフィックス情報を解析する方法について学習します。 参照してください[概要](overview-of-visual-studio-graphics-diagnostics.md)します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [チュートリアル: グラフィックス情報をキャプチャする](walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](capturing-graphics-information.md)   
  [コマンド ライン キャプチャ ツール](command-line-capture-tool.md)
