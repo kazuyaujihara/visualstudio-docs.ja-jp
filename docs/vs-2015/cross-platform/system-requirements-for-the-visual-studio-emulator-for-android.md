@@ -155,5 +155,5 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>ハードウェア グラフィックス転送 (OpenGL ES のサポート) の要件
  OpenGL ES で使用される GPU など、エミュレーターで GPU の呼び出しをエミュレートするには、適切な DirectX ドライバーがインストールされた DirectX 互換の GPU が必要です。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [Visual Studio Emulator for Android のトラブルシューティング](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
