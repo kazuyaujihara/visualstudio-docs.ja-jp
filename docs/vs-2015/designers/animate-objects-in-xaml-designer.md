@@ -40,5 +40,5 @@ ms.locfileid: "54805510"
 |![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [ボタンをアニメーション化する](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|ユーザーがボタンをマウスでポイントすると表示される面白い効果を作成します。|  
 |![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [アニメーションを作成し、イージングを使用する](https://www.youtube.com/watch?v=mAJXYrwxGYo)|ユーザーが電卓のイメージ上のボタンを押した時に表示される効果をアニメーション化します。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
