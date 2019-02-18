@@ -12,47 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d462c760688ee31727eb44066a9a24088a753d5b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b792d8b113cf19fbc7f9bf3efb45963c447df564
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941731"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318473"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
-コードのブレークポイントの場所について説明します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-typedef struct _BP_RESOLUTION_CODE {   
-   IDebugCodeContext2* pCodeContext;  
-} BP_RESOLUTION_CODE;  
-```  
-  
-```csharp  
-public struct BP_RESOLUTION_CODE {   
-   public IDebugCodeContext2 pCodeContext;  
-};  
-```  
-  
-## <a name="members"></a>メンバー  
- `pCodeContext`  
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)コード内のブレークポイントの位置を識別するオブジェクト。  
-  
-## <a name="remarks"></a>Remarks  
- この構造体のメンバーである、 [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)がで有効にするのメンバーの構造、 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)によって返される構造体、 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)メソッド。  
-  
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
-  
- 名前空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>関連項目  
- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   
- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   
- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)   
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+コードのブレークポイントの場所について説明します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+typedef struct _BP_RESOLUTION_CODE {
+    IDebugCodeContext2* pCodeContext;
+} BP_RESOLUTION_CODE;
+```
+
+```csharp
+public struct BP_RESOLUTION_CODE {
+    public IDebugCodeContext2 pCodeContext;
+};
+```
+
+## <a name="members"></a>メンバー
+`pCodeContext`  
+[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)コード内のブレークポイントの位置を識別するオブジェクト。
+
+## <a name="remarks"></a>Remarks
+この構造体のメンバーである、 [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)がで有効にするのメンバーの構造、 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)によって返される構造体、 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)メソッド。
+
+## <a name="requirements"></a>必要条件
+ヘッダー: msdbg.h
+
+名前空間: Microsoft.VisualStudio.Debugger.Interop
+
+アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>関連項目
+[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
+[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
+[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)  
+[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

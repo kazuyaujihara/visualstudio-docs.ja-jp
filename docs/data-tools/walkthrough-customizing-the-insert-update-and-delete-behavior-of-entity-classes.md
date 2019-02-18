@@ -9,17 +9,16 @@ ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 12b09ee0e0767ad98a27387e7caf79425320598b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 27c2677b8afef1f1e2cd035acb3038b42a4ef56d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009753"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948603"
 ---
-# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>チュートリアル: エンティティ クラスの挿入、更新、および削除の動作をカスタマイズする
+# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>チュートリアル: 挿入、更新、およびエンティティ クラスの削除の動作をカスタマイズします。
 
 [Visual Studio での LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)作成および to SQL クラス (エンティティ クラス)、データベース内のオブジェクトに基づく LINQ を編集するため、ビジュアル デ ザイン サーフェイスを提供します。 使用して[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)、SQL データベースにアクセスする LINQ テクノロジを使用することができます。 詳細については、[LINQ (統合言語クエリ)](/dotnet/csharp/linq/) に関するページを参照してください。
 
@@ -46,7 +45,7 @@ ms.locfileid: "55009753"
 
 -   構成、`Customer`ストアド プロシージャを使用して実行するクラスが挿入、更新、および削除します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 
@@ -103,7 +102,7 @@ LINQ to SQL クラスからテーブルをドラッグして、データベー�
      **Customer** という名前のエンティティ クラスが作成されます。 これには、Customers テーブルの列に対応するプロパティが含まれています。 このエンティティ クラスは Customers テーブルの 1 人の顧客を表すため、**Customers** ではなく **Customer** という名前が付けられます。
 
     > [!NOTE]
-    > このような名前の変更動作を*複数形化*と呼びます。 オンまたはオフにすることができます、[オプション ダイアログ ボックス](../ide/reference/options-dialog-box-visual-studio.md)します。 詳細については、「[方法 :複数形化をオンおよびオフにする (O/R デザイナー)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)」を参照してください。
+    > このような名前の変更動作を*複数形化*と呼びます。 オンまたはオフにすることができます、[オプション ダイアログ ボックス](../ide/reference/options-dialog-box-visual-studio.md)します。 詳細については、次を参照してください。[方法: 複数形化のオンとオフにする (O/r デザイナー)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)します。
 
 3.  **[ビルド]** メニューの **[UpdatingwithSProcsWalkthrough のビルド]** をクリックして、プロジェクトをビルドします。
 
@@ -233,7 +232,7 @@ LINQ から SQL データ ソース アイテムをドラッグすることに�
 19. **[OK]** をクリックします。
 
 > [!NOTE]
-> LINQ to SQL の挿入時に id (自動インクリメント)、rowguidcol 列 (データベースが生成した GUID) 列とタイムスタンプ列を自動的にデータベースによって生成された値を処理する注目すべきは特定のチュートリアルではこの問題ではありませんが、更新します。 その他の列型のデータベースが生成した値は、予想に反して null 値になります。 データベースが生成した値を返すには、手動で <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> を `true` に設定し、<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> を 、、または  のいずれかに設定する必要があります。[AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)、 [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)、または[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)します。
+> LINQ to SQL の挿入時に id (自動インクリメント)、rowguidcol 列 (データベースが生成した GUID) 列とタイムスタンプ列を自動的にデータベースによって生成された値を処理する注目すべきは特定のチュートリアルではこの問題ではありませんが、更新します。 その他の列型のデータベースが生成した値は、予想に反して null 値になります。 データベースによって生成された値を返す必要があります手動で設定する<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>に`true`と<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>、次のいずれか: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)、 [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)、または[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)します。
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
 

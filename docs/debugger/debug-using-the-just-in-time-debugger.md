@@ -5,18 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
-ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a593548936b84f852015a09dd8f63f7fceb7472b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831551"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921433"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual studio Just-In-Time デバッガーを使用してデバッグします。
 
@@ -40,7 +39,7 @@ ms.locfileid: "53831551"
 
    ![有効にするか、JIT デバッグを無効にする](../debugger/media/dbg-jit-enable-or-disable.png "を有効にするか、JIT デバッグを無効にします。")
 
-1. **コードの種類の有効にする Just-In-Time デバッグを**ボックスに、時にのみをデバッグするデバッグするコードの種類を選択します。**マネージ**、**ネイティブ**、や**スクリプト**します。
+1. **コードの種類の有効にする Just-In-Time デバッグを**ボックスに、時にのみをデバッグするデバッグするコードの種類を選択:**マネージ**、**ネイティブ**、や**スクリプト**します。
    
 1. **[OK]** を選択します。
 
@@ -64,7 +63,7 @@ Visual Studio がコンピューターからアンインストールされた後
 
 3.  お使いのコンピューターで 64 ビットのオペレーティング システムが実行されている場合も、次のレジストリ エントリを削除します。
 
-    -   **Hkey_local_machine \software\wow6432node\microsoft\\します。NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -105,7 +104,7 @@ Visual Studio がコンピューターからアンインストールされた後
 
 この例では、することになります、C#をスローする Visual Studio でコンソール アプリを[NullReferenceException](/dotnet/api/system.nullreferenceexception)します。
 
-1. Visual Studio で、作成、C#コンソール アプリ (**ファイル** > **新規** > **プロジェクト** > **Visual C#**   > **コンソール アプリケーション**) という名前の*ThrowsNullException*します。 Visual Studio でプロジェクトを作成する方法の詳細については、次を参照してください。[チュートリアル。シンプルなアプリケーションの作成](/visualstudio/get-started/csharp/tutorial-wpf)
+1. Visual Studio で、作成、C#コンソール アプリ (**ファイル** > **新規** > **プロジェクト** > **Visual C#**   > **コンソール アプリケーション**) という名前の*ThrowsNullException*します。 Visual Studio でプロジェクトを作成する方法の詳細については、次を参照してください。[チュートリアル: 単純なアプリケーション作成](/visualstudio/get-started/csharp/tutorial-wpf)です。
    
 1. Visual Studio でプロジェクトを開いたら、開く、 *Program.cs*ファイル。 Main() メソッドをコンソールには行を表示し、NullReferenceException をスローし、次のコードに置き換えます。
    
@@ -159,7 +158,7 @@ Visual Studio がコンピューターからアンインストールされた後
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows エラーの報告**
     
-  - (64 ビット コンピューターの場合)。**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows エラーの報告**
+  - (64 ビット コンピューター) 用: **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows エラーの報告**
   
   詳細については、次を参照してください。[します。WER 設定](https://docs.microsoft.com/windows/desktop/wer/wer-settings)します。
   
@@ -168,9 +167,9 @@ Visual Studio がコンピューターからアンインストールされた後
   修正を追加するには、 **DWORD 値**の**自動**で**値データ**の**1**、次のレジストリ キーに。
   
   
-  - **Hkey_local_machine \software\microsoft\windows NT\CurrentVersion\AeDebug**
+  - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
     
-  - (64 ビット コンピューターの場合)。**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - (64 ビット コンピューター) 用: **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 ジャスト イン タイムの中に次のエラー メッセージを表示する場合がありますのデバッグします。
 
@@ -193,6 +192,7 @@ Visual Studio がコンピューターからアンインストールされた後
     この問題を解決するには、再インストールするか、Visual Studio のインストールを修復する Visual Studio インストーラーを使用します。
 
 ## <a name="see-also"></a>関連項目
+
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
 - [オプション、デバッグ、ジャスト イン タイム ダイアログ ボックス](../debugger/just-in-time-debugging-options-dialog-box.md)

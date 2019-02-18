@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Office プライマリ相互運用機能アセンブリをインストールする方法'
 ms.date: 02/02/2017
 ms.topic: conceptual

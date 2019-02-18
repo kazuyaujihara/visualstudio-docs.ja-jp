@@ -15,16 +15,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b626aa489323d26ef439ade216d1fa97a52a8d13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825647"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927218"
 ---
 # <a name="handle-a-concurrency-exception"></a>コンカレンシー例外を処理する
 
@@ -46,7 +45,7 @@ ms.locfileid: "53825647"
 
 7. エラーをキャッチし、操作を継続してデータベースを更新するか、または更新をキャンセルするかを判断できるように、レコードの異なるバージョンを表示します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 
@@ -156,7 +155,8 @@ ms.locfileid: "53825647"
 > [!NOTE]
 > `CreateMessage`と`ProcessDialogResults`メソッドは、チュートリアルの後半で追加されます。
 
-1. `Form1_Load` メソッドの下に次のコードを追加します。
+1. 
+  `Form1_Load` メソッドの下に次のコードを追加します。
 
    [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
    [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
@@ -175,7 +175,7 @@ ms.locfileid: "53825647"
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
-### <a name="process-the-users-response"></a>ユーザーの応答を処理します。
+### <a name="process-the-users-response"></a>ユーザーの応答の処理
 
 メッセージ ボックスに、ユーザーの応答を処理するコードも必要です。 、提案された変更で、データベースの現在のレコードを上書きまたはローカルの変更を破棄し、現在、データベース内にあるレコードをデータ テーブルを更新することもできます。 ユーザーが選択した場合**はい**、<xref:System.Data.DataTable.Merge%2A>メソッドを呼び出すと、 *preserveChanges*引数に設定**true**します。 これにより、レコードの元のバージョンがデータベース内のレコードと一致するように成功すると、ある更新の試行です。
 
@@ -207,7 +207,7 @@ ms.locfileid: "53825647"
 
 8. フォームの最初のレコードで (**ALFKI**)、変更**ContactName**に**Maria Anders1**します。
 
-9. 選択、**保存**ボタンをクリックします。
+9. **[保存]** ボタンを選択します。
 
      コンカレンシー エラーが発生し、メッセージ ボックスが表示されます。
 

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965693"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318798"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>言語サーバー プロトコルの拡張機能を追加します。
 
@@ -89,9 +89,9 @@ textDocument/rename | 可
 ## <a name="getting-started"></a>作業の開始
 
 > [!NOTE]
-> 以降では、Visual Studio 15.8 Preview 3、一般的な言語サーバー プロトコルのサポートは、Visual Studio に組み込まれています。  LSP 拡張機能のプレビューを使用して構築した場合[言語サーバー クライアントの VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)バージョンについてに 15.8 Preview 3 以降にアップグレードした後の操作停止されます。  再度動作している LSP 拡張機能を取得するには、次を実行する必要があります。
+> 以降では、Visual Studio 15.8 Preview 3、一般的な言語サーバー プロトコルのサポートは、Visual Studio に組み込まれています。 LSP 拡張機能のプレビューを使用して構築した場合[言語サーバー クライアントの VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)バージョンについてに 15.8 Preview 3 以降にアップグレードした後の操作停止されます。 再度動作している LSP 拡張機能を取得するには、次を実行する必要があります。
 >
-> 1. Microsoft Visual Studio の言語サーバー プロトコル Preview VSIX をアンインストールします。  15.8 Preview 4 以降、Visual Studio で、アップグレードを実行するたびに自動的に検出しのアップグレード処理中に VSIX のプレビューの削除します。
+> 1. Microsoft Visual Studio の言語サーバー プロトコル Preview VSIX をアンインストールします。 15.8 Preview 4 以降、Visual Studio で、アップグレードを実行するたびに自動的に検出しのアップグレード処理中に VSIX のプレビューの削除します。
 >
 > 2. Nuget 参照を最新の非プレビュー バージョンに更新[LSP パッケージ](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)します。
 >
@@ -129,10 +129,10 @@ LSP に基づく言語サーバーを使用して、言語サービス拡張を�
 
 4. 作成、 *.pkgdef*ファイルし、次のように行を追加します。
 
-   ```xml
-   [$RootKey$\TextMate\Repositories]
-   "MyLang"="$PackageFolder$\Grammars"
-   ```
+    ```xml
+    [$RootKey$\TextMate\Repositories]
+    "MyLang"="$PackageFolder$\Grammars"
+    ```
 
 5. クリックし、ファイルを右クリックして**プロパティ**します。 変更、**ビルド**アクションを**コンテンツ**と**VSIX に含める**プロパティを true にします。
 
@@ -292,31 +292,31 @@ LSP 言語サービス拡張機能への設定のサポートを追加する以�
 
 1. JSON ファイルを追加 (たとえば、 *MockLanguageExtensionSettings.json*) 設定とその既定値を含むプロジェクト。 例:
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": -1
-   }
-   ```
+    ```json
+    {
+        "foo.maxNumberOfProblems": -1
+    }
+    ```
 2. JSON ファイルを右クリックし、選択**プロパティ**します。 変更、**ビルド**アクションを「コンテンツ」、"VSIX に含める ' プロパティを true にします。
 
 3. ConfigurationSections を実装し、JSON ファイルで定義された設定のプレフィックスの一覧を返します (Visual Studio Code で、これにマップ package.json 内の構成セクション名)。
 
-   ```csharp
-   public IEnumerable<string> ConfigurationSections
-   {
-      get
-      {
-          yield return "foo";
-      }
-   }
-   ```
+    ```csharp
+    public IEnumerable<string> ConfigurationSections
+    {
+        get
+        {
+            yield return "foo";
+        }
+    }
+    ```
 
 4. .Pkgdef ファイルをプロジェクトに追加する (新しいテキスト ファイルを追加して、.pkgdef ファイル拡張子を変更)。 Pkgdef ファイルには、この情報を含める必要があります。
 
-   ```xml
+    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-   ```
+    ```
 
     サンプル:
     ```xml
@@ -340,13 +340,13 @@ LSP 言語サービス拡張機能への設定のサポートを追加する以�
 2. ユーザーが内のファイルを追加、 *.vs*という名前のフォルダー *VSWorkspaceSettings.json*します。
 3. ユーザーは、線を追加、 *VSWorkspaceSettings.json*ファイルの設定、サーバーを提供します。 例:
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": 10
-   }
-   ```
-   ### <a name="enabling-diagnostics-tracing"></a>診断トレースを有効にします。
-   クライアントとサーバーで、問題をデバッグするときに役に立ちます間のすべてのメッセージを出力する診断トレースを有効にすることができます。  診断トレースを有効にするには、次の操作を行います。
+    ```json
+    {
+        "foo.maxNumberOfProblems": 10
+    }
+    ```
+    ### <a name="enabling-diagnostics-tracing"></a>診断トレースを有効にします。
+    クライアントとサーバーで、問題をデバッグするときに役に立ちます間のすべてのメッセージを出力する診断トレースを有効にすることができます。 診断トレースを有効にするには、次の操作を行います。
 
 4. 開くか、ワークスペースの設定ファイルを作成する*VSWorkspaceSettings.json* (「ユーザーのワークスペースの設定の編集」を参照してください)。
 5. 設定の json ファイルでは、次の行を追加します。
@@ -362,7 +362,7 @@ LSP 言語サービス拡張機能への設定のサポートを追加する以�
 * "Messages": トレースをオンが唯一のメソッドの名前、および応答の ID がトレースされます。
 * "Verbose"トレースを有効にする場合。全体の rpc メッセージがトレースされます。
 
-内のファイルに書き込まれるコンテンツにトレースを有効にする場合、 *%temp%\VisualStudio\LSP*ディレクトリ。  名前付け形式に依存して、ログ *[LanguageClientName]-[時刻のタイムスタンプ] .log*します。  現時点では、トレースは、フォルダーを開く場合のみ有効にできます。  言語サーバーをアクティブ化する 1 つのファイルを開くしても、診断トレースのサポートはありません。
+内のファイルに書き込まれるコンテンツにトレースを有効にする場合、 *%temp%\VisualStudio\LSP*ディレクトリ。 名前付け形式に依存して、ログ *[LanguageClientName]-[時刻のタイムスタンプ] .log*します。 現時点では、トレースは、フォルダーを開く場合のみ有効にできます。 言語サーバーをアクティブ化する 1 つのファイルを開くしても、診断トレースのサポートはありません。
 
 ### <a name="custom-messages"></a>カスタム メッセージ
 
@@ -425,7 +425,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     }
 
     public async Task SendServerCustomNotification(object arg)
-    {    
+    {
         await this.customMessageRpc.NotifyWithParameterObjectAsync("OnCustomNotification", arg);
     }
 
@@ -477,7 +477,7 @@ Visual Studio での LSP クライアント API を使用して拡張機能の�
 
 **Visual Studio より豊富な機能のサポートを提供するために LSP 言語サーバーを補足するカスタム プロジェクト システムを構築したいこと移動する方法でしょうか。**
 
-Visual Studio でサーバーを LSP ベースの言語のサポートに依存、[フォルダーを開く機能](https://blogs.msdn.microsoft.com/visualstudio/2016/04/12/open-any-folder-with-visual-studio-15-preview/)カスタム プロジェクト システムを必要としないものでは具体的には。 次の手順については、独自のカスタム プロジェクト システムを構築できます[ここ](https://github.com/Microsoft/VSProjectSystem)、設定など、一部の機能は機能しません。 LSP 言語のサーバーの既定の初期化ロジックがカスタム プロジェクト システムを使用する場合は、言語、サーバーはことを確認するために初期化中にカスタム ロジックを提供する必要がありますので、現在開いているフォルダーのルート フォルダーの場所で渡すには正常に起動します。
+Visual Studio でサーバーを LSP ベースの言語のサポートに依存、[フォルダーを開く機能](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/)カスタム プロジェクト システムを必要としないものでは具体的には。 次の手順については、独自のカスタム プロジェクト システムを構築できます[ここ](https://github.com/Microsoft/VSProjectSystem)、設定など、一部の機能は機能しません。 LSP 言語のサーバーの既定の初期化ロジックがカスタム プロジェクト システムを使用する場合は、言語、サーバーはことを確認するために初期化中にカスタム ロジックを提供する必要がありますので、現在開いているフォルダーのルート フォルダーの場所で渡すには正常に起動します。
 
 **デバッガーのサポートを追加する方法はありますか**
 
