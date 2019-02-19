@@ -60,7 +60,7 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release   
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)   
  [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
