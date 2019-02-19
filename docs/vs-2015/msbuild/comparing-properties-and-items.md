@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9418bd27d2f089b57cc2fb2abcf7b6610342f32d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758455"
 ---
 # <a name="comparing-properties-and-items"></a>プロパティと項目の比較
@@ -71,7 +71,7 @@ MSBuild のプロパティと項目は、いずれもタスクに情報を渡し
 </PropertyGroup>  
 ```  
   
- 項目の種類 OutputDir には、"KeyFiles\\;Certificates\\" という値の `Include` 属性があります。 MSBuild は、この文字列を 2 つの項目KeyFiles\ と Certificates\\ に解析します。 項目の種類 OutputDir を OutputDirList プロパティの値として使用している場合、MSBuild は、項目の種類をセミコロン区切りの文字列 "KeyFiles\\;Certificates\\" に変換または "平坦化" します。  
+ 項目の種類 OutputDir には、"KeyFiles\\;Certificates\\" という値の `Include` 属性があります。 MSBuild は、この文字列を 2 つの項目 KeyFiles\ と Certificates\\ に解析します。 項目の種類 OutputDir を OutputDirList プロパティの値として使用している場合、MSBuild は、項目の種類をセミコロン区切りの文字列 "KeyFiles\\;Certificates\\" に変換または "平坦化" します。  
   
 ## <a name="properties-and-items-in-tasks"></a>タスクのプロパティと項目  
  プロパティと項目は、MSBuild タスクの入力と出力として使用されます。 詳細については、[タスク](../msbuild/msbuild-tasks.md)に関する記事を参照してください。  
@@ -182,5 +182,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [詳細な概念](../msbuild/msbuild-advanced-concepts.md)

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0d95d4593939b878194d2aeef79bdd0a8ad946a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756518"
 ---
 # <a name="execution-profile-report"></a>実行プロファイル レポート
@@ -42,5 +42,5 @@ ms.locfileid: "54756518"
   
  このレポートの表については、[実行時間 (スレッド ビュー)](../profiling/execution-time-threads-view.md) ビューで確認できます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

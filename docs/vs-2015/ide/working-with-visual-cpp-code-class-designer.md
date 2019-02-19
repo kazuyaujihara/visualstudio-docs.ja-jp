@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54765013"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Visual C++ コードの使用 (クラス デザイナー)
@@ -48,7 +48,7 @@ ms.locfileid: "54765013"
 -   Typedef  
   
 > [!NOTE]
->  これは、モデリング プロジェクトで作成できる UML クラス図と同じではありません。 詳細については、「[UML Class Diagrams:Reference](../modeling/uml-class-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。  
+>  これは、モデリング プロジェクトで作成できる UML クラス図と同じではありません。 詳細については、「[UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。  
   
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>型解決および表示の問題のトラブルシューティング  
   
@@ -63,7 +63,7 @@ ms.locfileid: "54765013"
 ### <a name="type-resolution-issues"></a>型解決の問題  
  クラス デザイナーは、次のような理由により、型解決ができない場合があります。  
   
-- 型が、クラス ダイアグラムを含むプロジェクトから参照されていないプロジェクトまたはアセンブリ内にあります。 このエラーを修正するには、型を含むプロジェクトまたはアセンブリへの参照を追加します。 詳細については、次を参照してください。[に NIB 方法。追加または参照の追加 ダイアログ ボックスを使用して参照を削除する](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)します。  
+- 型が、クラス ダイアグラムを含むプロジェクトから参照されていないプロジェクトまたはアセンブリ内にあります。 このエラーを修正するには、型を含むプロジェクトまたはアセンブリへの参照を追加します。 詳しくは、「[方法: [参照の追加] ダイアログ ボックスを使用して参照を追加または削除する](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)」を参照してください。  
   
 - 型が正しいスコープ内にないため、クラス デザイナーが型を見つけられません。 コードに `using` ステートメント、`imports` ステートメント、または `#include` ステートメントが欠落していないことを確認します。 また、型 (または関連する型) を最初に配置した名前空間の外に移動していないことも確認します。  
   
@@ -77,7 +77,7 @@ ms.locfileid: "54765013"
   
 - クラス デザイナーが、入力した型をサポートしていることを確認します。 「[C++ コード要素の制限事項](#limitations)」を参照してください。  
   
-- 型の解決を試みます。 型は、クラス ダイアグラムを含むプロジェクトから参照されていないプロジェクトまたはアセンブリ内にある場合もあります。 このエラーを修正するには、型を含むプロジェクトまたはアセンブリへの参照を追加します。 詳細については、次を参照してください。[に NIB 方法。追加または参照の追加 ダイアログ ボックスを使用して参照を削除する](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)します。  
+- 型の解決を試みます。 型は、クラス ダイアグラムを含むプロジェクトから参照されていないプロジェクトまたはアセンブリ内にある場合もあります。 このエラーを修正するには、型を含むプロジェクトまたはアセンブリへの参照を追加します。 詳しくは、「[方法: [参照の追加] ダイアログ ボックスを使用して参照を追加または削除する](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)」を参照してください。  
   
 - クラス デザイナーが型を検出できるように、型が正しいスコープ内にあることを確認します。 コードに `using` ステートメント、`imports` ステートメント、または `#include` ステートメントが欠落していないことを確認します。 また、型 (または関連する型) を最初に配置した名前空間の外に移動していないことも確認します。  
   
@@ -106,7 +106,7 @@ ms.locfileid: "54765013"
   
 -   クラス デザイナーでは、void 型または void 型から派生した型を表示できません。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [クラスと型のデザインおよび表示](../ide/designing-and-viewing-classes-and-types.md)   
  [クラスと他の型の使用 (クラス デザイナー)](../ide/working-with-classes-and-other-types-class-designer.md)   
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)   

@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ae2ed3e8a9c07d59f5b1c2fe2350956a54dfaa66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54761508"
 ---
 # <a name="list-source-command"></a>List Source コマンド
@@ -51,7 +51,7 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
  /ShowLineNumbers:`yes|no`  
  任意。 行番号を表示するかどうかを指定します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
   
 ## <a name="example"></a>例  
  この例では、Form1.vb ファイルの 4 行目からソース コードが行番号付きでリストされます。  
@@ -60,6 +60,6 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)

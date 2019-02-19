@@ -18,10 +18,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c7ec3911496c5106d53f90a281452df2c8a128f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54788348"
 ---
 # <a name="command-window"></a>コマンド ウィンドウ
@@ -125,6 +125,6 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="use-quotes-for-path-names-with-spaces"></a>スペースを含むパス名には引用符を使用する  
  たとえば、スペースを含むパスを持つファイルを開く場合は、スペースを含むパスまたはパス セグメントを二重引用符で囲む必要があります (**C:\\"Program Files"** または **"C:\Program Files"**)。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)

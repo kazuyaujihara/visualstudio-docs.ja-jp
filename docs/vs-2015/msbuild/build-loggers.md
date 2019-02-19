@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 306762ff2f9316043782f64532b278f54fddc1d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801441"
 ---
 # <a name="build-loggers"></a>ビルド ロガー
@@ -84,6 +84,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="comments"></a>コメント  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [MSBuild の概念](../msbuild/msbuild-concepts.md)

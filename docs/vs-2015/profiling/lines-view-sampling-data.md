@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ade498586f7d0a675ad2fe770a21435604ec57d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54752539"
 ---
 # <a name="lines-view---sampling-data"></a>行ビュー - サンプリング データ
@@ -62,5 +62,5 @@ ms.locfileid: "54752539"
 |**サンプル数 (関数のみ)**|関数行を実行していたときに収集されたサンプルの合計数です。|  
 |**サンプル % (関数のみ)**|関数行を実行していたときに収集された、プロファイリング実行内のすべてのサンプルの割合です。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [行ビュー - サンプリング](../profiling/lines-view-dotnet-memory-sampling-data.md)

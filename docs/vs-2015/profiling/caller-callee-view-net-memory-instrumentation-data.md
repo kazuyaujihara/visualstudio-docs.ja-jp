@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 355ca018f1bf5192d6eb65b3fc218c8d1076563b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54777626"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>呼び出し元/呼び出し先ビュー - .NET メモリ インストルメンテーション データ
@@ -106,7 +106,7 @@ ms.locfileid: "54777626"
 |**最大アプリケーション時間 (関数のみ)**|このコンテキストのこの関数の呼び出しの最大アプリケーション排他時間。|  
 |**最小アプリケーション時間 (関数のみ)**|このコンテキストのこの関数の呼び出しの最小アプリケーション排他時間。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
  [呼び出し元/呼び出し先ビュー - .NET メモリ サンプリング データ](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [呼び出し元/呼び出し先ビュー - インストルメンテーション データ](../profiling/caller-callee-view-instrumentation-data.md)   

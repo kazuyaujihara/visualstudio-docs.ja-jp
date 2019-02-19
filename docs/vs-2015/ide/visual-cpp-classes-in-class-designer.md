@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787077"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>クラス デザイナーの Visual C++ クラス
@@ -36,7 +36,7 @@ class A {};
 class B : A {};  
 ```  
   
- また、クラス ダイアグラムに B クラスのみをドラッグしてから、B のクラス図形を右クリックして、**[基底クラスの表示]** をクリックすることもできます。 このようにすると、基底クラスである A が表示されます。A:   
+ また、クラス ダイアグラムに B クラスのみをドラッグしてから、B のクラス図形を右クリックして、**[基底クラスの表示]** をクリックすることもできます。 このようにすると、基底クラスである A が表示されます。  
   
 ## <a name="multiple-inheritance"></a>多重継承  
  クラス デザイナーは、複数クラスの継承関係の視覚化をサポートしています。 *多重継承*は、派生クラスが複数の基底クラスの属性を持つときに使用されます。 多重継承の例を次に示します。  

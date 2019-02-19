@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a8477de8bf84950d778d4ce843522be35b2d7387
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54772382"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;param&gt; (JavaScript)
@@ -86,7 +86,7 @@ ms.locfileid: "54772382"
   `description`  
   任意。 パラメーターの説明。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  必須属性は `name` だけです。 他のすべての属性は省略可能です。  
   
  などの関数の注釈に使用される要素[\<概要 >](../ide/summary-javascript.md)、 [ \<param >](../ide/param-javascript.md)、および[\<返します >](../ide/returns-javascript.md)、配置する必要がありますステートメントの前に、関数本体。  

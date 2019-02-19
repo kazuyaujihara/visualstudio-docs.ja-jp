@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1edbcddd27f2c3637e0e56dd9b4841e17ace16af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767564"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
@@ -38,7 +38,7 @@ Devenv /debugexe ExecutableFile
   
  .exe ファイルが見つからない場合、または存在しない場合、警告やエラーは表示されず、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は通常どおり起動します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  `ExecutableFile` パラメーターに続くどの文字列もそのファイルに引数として渡されます。  
   
 ## <a name="example"></a>例  
@@ -48,5 +48,5 @@ Devenv /debugexe ExecutableFile
 Devenv.exe /debugexe MyApplication.exe  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

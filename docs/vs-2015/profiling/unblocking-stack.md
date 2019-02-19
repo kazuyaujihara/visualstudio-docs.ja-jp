@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c3561c9aa82589c6362620ef0fe0464af7fc2e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758388"
 ---
 # <a name="unblocking-stack"></a>ブロック解除スタック
@@ -25,5 +25,5 @@ ms.locfileid: "54758388"
 
 現在選択されているスレッドの要素が、現在のプロセスの別のスレッドによってブロック解除された後に実行を開始するブロック セグメントを表している場合、ブロック解除を行ったスレッドの呼び出し履歴がこのタブに表示されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

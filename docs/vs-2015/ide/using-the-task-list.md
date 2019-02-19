@@ -17,16 +17,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801171"
 ---
 # <a name="using-the-task-list"></a>タスク一覧の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**[タスク一覧]** を使って、 `TODO` 、 `HACK`などのトークンやカスタム トークンを使用するコード コメントを追跡し、コード内の事前に定義された場所に直接アクセスできるショートカットを管理できます。 ソース コード内のその場所に移動するには、一覧の項目をクリックします。  
+[ **タスク一覧** ] を使って、 `TODO` 、 `HACK`などのトークンやカスタム トークンを使用するコード コメントを追跡し、コード内の事前に定義された場所に直接アクセスできるショートカットを管理できます。 ソース コード内のその場所に移動するには、一覧の項目をクリックします。  
   
  このトピックの内容:  
   
@@ -47,7 +47,7 @@ ms.locfileid: "54801171"
   
 #### <a name="to-open-the-task-list"></a>[タスク一覧] を開くには  
   
--   **ビュー** ] メニューの [選択**タスク一覧**(キーボード。Ctrl+\\T)。  
+-   **[表示]** メニューで、**[タスク一覧]** をクリックします (キーボード: Ctrl + \\、T)。  
   
      ![[タスク一覧] ウィンドウ](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -86,7 +86,7 @@ ms.locfileid: "54801171"
  `TODO` が事前に定義されたトークンであるため、このコメントは `TODO` タスクとして一覧に表示されます。  
   
 ###  <a name="customTokens"></a> カスタム トークン  
- 既定では、Visual Studio には次のトークンが含まれます。HACK、TODO、元に戻すに注意してください。 大文字と小文字は区別されません。  
+ 既定で、Visual Studio には、HACK、TODO、UNDONE、NOTE のトークンが含まれます。 大文字と小文字は区別されません。  
   
  カスタム トークンを独自に作成することもできます。  
   
@@ -122,7 +122,7 @@ ms.locfileid: "54801171"
   
 #### <a name="to-create-a-shortcut"></a>ショートカットを作成するには  
   
--   ショートカットを配置するコードにポインターを挿入します。 選択**編集&#124;ブックマーク&#124;タスク一覧ショートカットの追加**またはキーを押します (キーボード。Ctrl + K、Ctrl + H  
+-   ショートカットを配置するコードにポインターを挿入します。 **[編集 &#124; ブックマーク &#124; タスク一覧へのショートカットの追加]** を選択するか、キーボードで Ctrl + K、Ctrl + H を押します。  
   
      コード内のショートカットをナビゲートしていくには、一覧でショートカットを選択し、ショートカット メニューから **[次のタスク]** か **[前のタスク]** をクリックします。  
   

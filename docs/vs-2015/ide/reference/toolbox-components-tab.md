@@ -12,19 +12,19 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775889"
 ---
 # <a name="toolbox-components-tab"></a>ツールボックス、[コンポーネント] タブ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] および [!INCLUDE[csprcs](../../includes/csprcs-md.md)] のデザイナーに追加できるコンポーネントを表示します。 <xref:System.Messaging.MessageQueue> コンポーネントや <xref:System.Diagnostics.EventLog> コンポーネントなど、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] に含まれている [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] コンポーネントに加え、独自のコンポーネントまたはサード パーティ製のコンポーネントをこのタブに追加できます。詳細については、「[方法 :[ツールボックス] タブを操作](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)します。  
+[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] および [!INCLUDE[csprcs](../../includes/csprcs-md.md)] のデザイナーに追加できるコンポーネントを表示します。 <xref:System.Messaging.MessageQueue> コンポーネントや <xref:System.Diagnostics.EventLog> コンポーネントなど、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] に含まれている [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] コンポーネントに加え、独自のコンポーネントまたはサード パーティ製のコンポーネントをこのタブに追加できます。詳細については、「[How to: Manipulate Toolbox Tabs](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)」 (方法: [ツールボックス] タブの操作) を参照してください。  
   
- このタブを表示するには、**[表示]** メニューで **[ツールボックス]** を選択します。 **ツールボックス**で、**[コンポーネント]** タブをクリックします。  
+ このタブを表示するには、[**表示**] メニューで [**ツールボックス**] を選択します。 **ツールボックス**で、[**コンポーネント**] タブをクリックします。  
   
  **BackgroundWorker**  
  別の専用スレッドで操作を実行できる `System.ComponentModel.BackgroundWorker` コンポーネント インスタンスを作成します。  
@@ -42,7 +42,7 @@ ms.locfileid: "54775889"
  ログへのイベントの書き込みおよびログ データの読み込みなど、システムおよびカスタム イベント ログとやり取りするために使用できる <xref:System.Diagnostics.EventLog> コンポーネント インスタンスを作成します。 詳細については、「[Introduction to the EventLog Component](http://msdn.microsoft.com/a2ba4f28-4b1a-435e-99ef-51b28e21f805)」 (EventLog コンポーネントの概要) を参照してください。  
   
  **FileSystemWatcher**  
- アクセス権がある任意のディレクトリまたはファイルへの変更を監視するために使用できる <xref:System.IO.FileSystemWatcher> コンポーネント インスタンスを作成します。 詳細については、「[方法 :FileSystemWatcher コンポーネント インスタンスを構成する](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50)します。  
+ アクセス権がある任意のディレクトリまたはファイルへの変更を監視するために使用できる <xref:System.IO.FileSystemWatcher> コンポーネント インスタンスを作成します。 詳細については、「[How to: Configure FileSystemWatcher Component Instances](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50)」 (方法: FileSystemWatcher コンポーネント インスタンスの構成) を参照してください。  
   
  **HelpProvider**  
  コントロールのポップアップまたはオンライン ヘルプを提供する `System.Windows.Forms.HelpProvider` コンポーネント インスタンスを作成します。  
@@ -71,7 +71,7 @@ ms.locfileid: "54775889"
 > [!NOTE]
 >  **ツールボックス**に追加できるシステム ベースの <xref:System.Timers.Timer> もあります。この <xref:System.Timers.Timer> は、サーバー アプリケーション用に最適化され、Windows フォーム <xref:System.Windows.Forms.Timer> は Windows フォームで使用するのに最も適しています。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [コンポーネントによるプログラミング](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)   
  [コンポーネント プログラミングのチュートリアル](http://msdn.microsoft.com/library/373cacf7-479e-4b05-991c-5cb18824e913)   
  [ツールボックス](../../ide/reference/toolbox.md)   

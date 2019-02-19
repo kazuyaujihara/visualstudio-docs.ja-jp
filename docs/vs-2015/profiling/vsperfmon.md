@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a06a6632d62f853eef33cad00ad766e0d1aab87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54776054"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
@@ -49,7 +49,7 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 |**WINCOUNTER** `:path`|マーク データと共に含める Windows パフォーマンス カウンターを指定します。 `path` は、PDH カウンター パス形式の Windows パフォーマンス カウンター文字列です。 次に例を示します。<br /><br /> \Processor(0)\\% Processor Time<br /><br /> \System\Context Switches/sec|  
 |**AUTOMARK** `:n`|/WINCOUNTER を使用する際の自動的なマーク間の時間間隔 (ミリ秒単位) を指定します。 値は、500 ミリ秒単位で切り上げられます。<br /><br /> 0 を使用すると、自動的なマークは無効になります。 (指定しない場合、既定の 500 ミリ秒になります)|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   

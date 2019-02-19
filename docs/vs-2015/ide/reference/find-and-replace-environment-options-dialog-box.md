@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cc374d536997c05aed644a80fe3826283d208569
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758183"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>[検索と置換] ([オプション] ダイアログ ボックス - [環境])
@@ -55,5 +55,5 @@ ms.locfileid: "54758183"
  **検索テキストをエディターから自動的に作成する**  
  このオプションをオンにすると、**[編集]** メニューから **[検索と置換]** ウィンドウの任意のビューを選択したときに、現在のエディターの挿入ポイントのいずれかの側にあるテキストが、**[検索する文字列]** フィールドに貼り付けられます。 **[検索する文字列]** として前回の検索で指定した検索パターンを使用するには、このオプションをオフにします。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [テキストの検索と置換](../../ide/finding-and-replacing-text.md)

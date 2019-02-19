@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58257921634e1afb89dfc0c012728523bc98a2ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54792890"
 ---
 # <a name="xdcmake-task"></a>XDCMake タスク
@@ -35,7 +35,7 @@ XML ドキュメント ツール (xdcmake.exe) をラップします。このツ
   
  Visual C++ ソース コードにドキュメンテーション コメントを記入し、[/doc](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63) コンパイラ オプションでコンパイルすると、.xdc ファイルが作成されます。 詳細については、[XDCMake リファレンス](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)、[XML ドキュメント ジェネレーター プロパティ ページ](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)、xdcmake.exe のコマンドライン ヘルプ オプション (**/?**) をご覧ください。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  既定では、xdcmake.exe ツールはいくつかのコマンドライン オプションをサポートしています。 **/old** コマンドライン オプションを指定すると、追加のオプションがサポートされます。  
   
 ## <a name="parameters"></a>パラメーター  
@@ -53,5 +53,5 @@ XML ドキュメント ツール (xdcmake.exe) をラップします。このツ
 |**SuppressStartupBanner**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、タスクの開始時に著作権およびバージョン番号のメッセージが表示されないようにします。<br /><br /> 詳細については、「[XDCMake リファレンス](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)」の **/nologo** オプションの説明を参照してください。|  
 |**TrackerLogDirectory**|省略可能な **String** 型のパラメーターです。<br /><br /> トラッカー ログのディレクトリを指定します。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

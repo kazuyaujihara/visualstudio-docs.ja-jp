@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f4336ef93eded7ed1d56a8ee34fff0189813da17
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54763349"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>[ビルドの詳細設定] ダイアログ ボックス (C#)
@@ -77,6 +77,6 @@ ms.locfileid: "54763349"
   **DLL ベース アドレス**  
   DLL を読み込む位置に推奨されるベース アドレスを指定します。 DLL の既定のベース アドレスは、[!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 共通言語ランタイムにより設定されます。 詳しくは、「[/baseaddress (C# コンパイラ オプション)](http://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608)」をご覧ください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [C# コンパイラのオプション](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)   
  [[ビルド] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-page-project-designer-csharp.md)

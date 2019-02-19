@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ab42cd9466561f64ecb35e65621bcbb91004f8f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775918"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE の 64 ビット サポート
@@ -30,21 +30,21 @@ ms.locfileid: "54775918"
 
 -   [64 ビット アプリケーションの配置のための必要条件](../deployment/deploying-prerequisites-for-64-bit-applications.md)
 
--   [方法: 64 ビット プラットフォーム用の Windows インストーラーを作成します。](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
+-   [方法: 64 ビット プラットフォーム用の Windows インストーラーを作成する](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
 
 ## <a name="configuring-projects-as-64-bit-applications"></a>プロジェクトを 64 ビット アプリケーションとして構成
  次のトピックでは、64 ビット アプリケーションにビルドするプロジェクトの構成について説明しています。
 
--   [方法: プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)
+-   [方法 : プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>64 ビット アプリケーションのデバッグ
  [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] を 64 ビット Windows オペレーティング システムで実行している場合、エディット コンティニュは機能しません。 次のトピックでは、64 ビット アプリケーションのデバッグについて説明しています。
 
--   [方法: 64 ビット プラットフォームでのデバッグします。](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
+-   [方法: 64 ビット プラットフォームでデバッグする](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
 
 -   [64 ビット アプリケーションをデバッグする](../debugger/debug-64-bit-applications.md)
 
 -   [ダンプ ファイルの使用](../debugger/using-dump-files.md)
 
-## <a name="see-also"></a>「
- [方法: プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)
+## <a name="see-also"></a>参照
+ [方法 : プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)
