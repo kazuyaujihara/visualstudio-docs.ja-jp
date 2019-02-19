@@ -78,5 +78,5 @@ ms.locfileid: "54768881"
 ## <a name="enabling-linq"></a>LINQ の有効化
  .NET Framework Version 3.5 以降を対象にする場合は、System.Core の参照と System.Linq のプロジェクトレベル インポート (Visual Basic のみ) が自動的に追加されます。 LINQ 機能を使用する場合は、[Option Infer] もオンにする必要があります (Visual Basic のみ)。 対象をそれより前のバージョンの .NET Framework に変更すると、この参照とインポートは自動的に削除されます。 詳細については、「[方法 :LINQ プロジェクトを作成する](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2)」を参照してください。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md) [ASP.NET Web プロジェクトの .NET Framework のマルチ ターゲット](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)[プラットフォームの互換性とシステム要件](http://www.microsoft.com/visualstudio/eng/products/compatibility)
