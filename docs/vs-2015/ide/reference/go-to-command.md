@@ -1,4 +1,4 @@
----
+﻿---
 title: GoTo コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 50f91c4bdb17612d56534290a7b83b7df1d771c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54790021"
 ---
 # <a name="go-to-command"></a>GoTo コマンド
@@ -37,7 +37,7 @@ Edit.GoTo [linenumber]
  `linenumber`  
  任意。 移動先の行番号を表す整数。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  行番号は 1 から始まります。 `linenumber` の値が 1 未満の場合は、最初の行が表示されます。 `linenumber` の値が最終行の値より大きい場合は、最後の行が表示されます。  
   
  `linenumber` の値が指定されていない場合は、**[指定行へ移動]** ダイアログ ボックスが表示されます。  
@@ -50,7 +50,7 @@ Edit.GoTo [linenumber]
 >Edit.GoTo 125  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [[検索/コマンド] ボックス](../../ide/find-command-box.md)   

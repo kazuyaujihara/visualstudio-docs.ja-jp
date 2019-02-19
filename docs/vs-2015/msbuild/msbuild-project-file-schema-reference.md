@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67a57953dc0583b105741be358b19a74897c308c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54772587"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild プロジェクト ファイル スキーマ リファレンス
@@ -58,7 +58,7 @@ ms.locfileid: "54772587"
 |[UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> TaskBody|AssemblyFile<br /><br /> AssemblyName<br /><br /> 条件<br /><br /> TaskFactory<br /><br /> TaskName|  
 |[When 要素 (MSBuild)](../msbuild/when-element-msbuild.md)|[保存]<br /><br /> ItemGroup<br /><br /> PropertyGroup|条件|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [タスク リファレンス](../msbuild/msbuild-task-reference.md)   
  [条件](../msbuild/msbuild-conditions.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)  

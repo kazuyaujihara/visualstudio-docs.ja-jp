@@ -22,10 +22,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bd437be1dd61e05259bc13501d7b9b9aaa06e285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54753533"
 ---
 # <a name="properties-window"></a>[プロパティ] ウィンドウ
@@ -46,7 +46,7 @@ ms.locfileid: "54753533"
  [アルファベット順]  
  選択したオブジェクトのデザイン時のプロパティおよびイベントがすべてアルファベット順に並べ替えられます。 淡色表示されていないプロパティを編集するには、セル内でプロパティの右側をクリックして、変更内容を入力します。  
   
- プロパティ ページ  
+ [プロパティ ページ]  
  選択した項目に対応する **[プロパティ ページ]** ダイアログ ボックスまたは **[プロジェクト デザイナー]** が表示されます。 [プロパティ ページ] には、**[プロパティ]** ウィンドウで使用できるプロパティのサブセット、同じプロパティ、またはプロパティのスーパーセットが表示されます。 このボタンを使用して、プロジェクトのアクティブな設定に関連するプロパティを表示および編集します。  
   
  プロパティ  
@@ -61,7 +61,7 @@ ms.locfileid: "54753533"
 > [!NOTE]
 >  **[プロパティ]** ウィンドウのこのツール バー コントロールを使用できるのは、フォーム デザイナーまたはコントロール デザイナーが [!INCLUDE[csprcs](../../includes/csprcs-md.md)] プロジェクトのコンテキストでアクティブなときに限られます。 XAML ファイルの編集時、イベントはプロパティ ウィンドウの別のタブに表示されます。  
   
- メッセージ  
+ [メッセージ]  
  すべての Windows メッセージが表示されます。 選択したクラスに提供されたメッセージについて、指定されたハンドラー関数を追加または削除できます。  
   
 > [!NOTE]
@@ -85,6 +85,6 @@ ms.locfileid: "54753533"
  検索  
  デザイナーでの XAML ファイルの編集時に、プロパティとイベントを検索するための機能を提供します。 検索ボックスは単語の一部の入力に反応し、入力すると検索結果が更新されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)   
  [ウィンドウ レイアウトをカスタマイズする](../../ide/customizing-window-layouts-in-visual-studio.md)

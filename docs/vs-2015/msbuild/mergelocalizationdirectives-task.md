@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5f9b269bd68bf40358645b6bd6fd88b701da385b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54791485"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives タスク
@@ -39,7 +39,7 @@ ms.locfileid: "54791485"
 |`GeneratedLocalizationFiles`|必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] バイナリ形式の個々のファイルに対するローカリゼーション ディレクティブ ファイルの一覧を指定します。|  
 |`OutputFile`|省略可能な **String** 型の出力パラメーターです。<br /><br /> コンパイルされたローカリゼーション ディレクティブ アセンブリの出力パスを指定します。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] のコンテンツには、ローカリゼーション属性とコメントを追加できます。 [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)] のローカリゼーション サポートを使用すると、ローカリゼーション属性とコメントを取り出し、生成されるアセンブリとは別の .loc ファイルに格納できます。 これを行うには、**LocalizationPropertyStorage** 属性を使用します。 ローカリゼーション属性とコメント、および **LocalizationPropertyStorage** の詳細については、「[ローカリゼーション属性とコメント](http://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f)」を参照してください。  
   
 ## <a name="example"></a>例  
@@ -58,7 +58,7 @@ ms.locfileid: "54791485"
 </Project>  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [WPF MSBuild リファレンス](../msbuild/wpf-msbuild-reference.md)   
  [Task Reference (タスク リファレンス)](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   

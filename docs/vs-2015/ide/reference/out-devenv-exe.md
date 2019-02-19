@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4b198732a5771ad39dab6d3797bad01e7b55c189
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770621"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -42,7 +42,7 @@ devenv /out FileName
  `FileName`  
  必須です。 実行可能ファイルのビルド時にエラーを受け取るファイルのパスと名前です。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  指定したファイル名が存在しない場合は、自動的に作成されます。 ファイルが既に存在する場合、結果はファイルの既存の内容に追加されます。  
   
  コマンド ラインのビルド エラーは、**[コマンド]** ウィンドウと **[出力]** ウィンドウの [ソリューション ビルダー] ビューに表示されます。 このオプションは、無人操作でビルドを実行して結果を表示する必要がある場合に便利です。  
@@ -54,7 +54,7 @@ devenv /out FileName
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)   
  [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   

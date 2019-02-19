@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8bf0e41f750a7003f3d267b2bd17dcf6dc2d4a3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800850"
 ---
 # <a name="project-properties-reference"></a>プロジェクトのプロパティのリファレンス
@@ -45,6 +45,6 @@ ms.locfileid: "54800850"
 |||  
 |||  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [プロジェクト デザイナーの概要](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [ソリューションおよびプロジェクト](../../ide/solutions-and-projects-in-visual-studio.md)

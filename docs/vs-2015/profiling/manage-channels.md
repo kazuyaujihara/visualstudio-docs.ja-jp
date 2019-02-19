@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61b20ea728cd0b714ba61dfa7aef1893a91cfaca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758375"
 ---
 # <a name="manage-channels"></a>チャネルの管理
@@ -61,7 +61,7 @@ ms.locfileid: "54758375"
 ## <a name="group-markers-by-thread"></a>スレッド別にマーカーをグループ化  
  トレースにマーカー イベントが含まれている場合は、このコマンドを使用して、それらのマーカー イベントを生成したスレッドの下にマーカーのチャネルをグループ化することができます。  ディスクのチャネルはチャネルの一覧の先頭に移動し、GPU チャネルは、一番下に移動します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [ズーム コントロール (スレッド ビュー)](../profiling/zoom-control-threads-view.md)   
  [測定モード オン/オフ](../profiling/measure-mode-on-off.md)   
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

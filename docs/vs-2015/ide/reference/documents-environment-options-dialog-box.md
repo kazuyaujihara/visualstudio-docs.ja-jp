@@ -1,4 +1,4 @@
----
+﻿---
 title: '[ドキュメント] ([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -34,10 +34,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 57191c1db161dab12175b1c05d4304c8b6f684d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778579"
 ---
 # <a name="documents-environment-options-dialog-box"></a>[ドキュメント] ([オプション] ダイアログ ボックス - [環境])
@@ -86,7 +86,7 @@ ms.locfileid: "54778579"
  **コードページでデータが保存できない場合、Unicode でドキュメントを保存**  
  このオプションを選択すると、選択したコードページと互換性のない情報を含むファイルが既定で Unicode として保存されます。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)   
  [その他のファイル](../../ide/reference/miscellaneous-files.md)   
  [テキストの検索と置換](../../ide/finding-and-replacing-text.md)

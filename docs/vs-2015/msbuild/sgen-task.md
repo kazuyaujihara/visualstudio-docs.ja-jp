@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8122988e5db3ca69c4b845c54ff4de2223c4556d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767469"
 ---
 # <a name="sgen-task"></a>SGen タスク
@@ -53,10 +53,10 @@ ms.locfileid: "54767469"
 |`Types`|省略可能な `String[]` 型のパラメーターです。<br /><br /> シリアル化コードを生成する特定の型の一覧を取得または設定します。 SGen は、これらの型に対してのみ、シリアル化コードを生成します。|  
 |`UseProxyTypes`|必須の `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、SGen タスクでは XML Web サービス プロキシ型に対してのみシリアル化コードを生成します。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension 基本クラス](../msbuild/tooltaskextension-base-class.md)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)   
  [MSBuild の概念](../msbuild/msbuild-concepts.md)

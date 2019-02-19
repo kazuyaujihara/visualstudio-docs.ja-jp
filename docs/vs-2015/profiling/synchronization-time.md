@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 218f333f97e8252993f87893238a0f51f964d6c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54790331"
 ---
 # <a name="synchronization-time"></a>同期時間
@@ -31,5 +31,5 @@ ms.locfileid: "54790331"
   
   スレッド ブロック イベントの根本的な原因を理解するために、ブロック呼び出し履歴とプロファイル レポートをよく調べてください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

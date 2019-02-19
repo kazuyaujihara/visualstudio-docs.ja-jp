@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 04c714576a0207d4168f20a241d6f0c7dd29298c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784458"
 ---
 # <a name="modules-view---sampling-data"></a>モジュール ビュー - サンプリング データ
@@ -43,7 +43,7 @@ ms.locfileid: "54784458"
 |**排他サンプル数**|-   関数の場合、この関数が直接実行されていた呼び出し履歴サンプルの数、つまり、この関数が呼び出し履歴の最上位にあったときのサンプルの数。<br />-   モジュールの場合、このモジュール内の関数における排他サンプルの合計。<br />-   行または命令の場合、この行または命令が実行されたサンプルの数。|  
 |**サンプル % (関数のみ)**|-   関数またはモジュールの場合、プロファイリング実行のすべてのサンプルに対する、関数またはモジュールの排他サンプルの割合。<br />-   行または命令の場合、プロファイリング実行のすべてのサンプルに対する、この行または命令が実行されたサンプルの割合。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [モジュール ビュー - サンプリング](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [モジュール ビュー - インストルメンテーション](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [モジュール ビュー](../profiling/modules-view-instrumentation-data.md)

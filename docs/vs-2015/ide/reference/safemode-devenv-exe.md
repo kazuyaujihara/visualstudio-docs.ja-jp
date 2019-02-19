@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4c1cd4b15c3ce3462d6d49eca39fedbc64c744c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767303"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
@@ -32,7 +32,7 @@ ms.locfileid: "54767303"
 devenv /SafeMode   
 ```  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  このスイッチでは、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] が起動したときに、すべてのサード パーティ VSPackage を読み込まないようにするため、実行が安定したものになります。  
   
 ## <a name="description"></a>説明  
@@ -44,5 +44,5 @@ devenv /SafeMode
 Devenv.exe /SafeMode  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

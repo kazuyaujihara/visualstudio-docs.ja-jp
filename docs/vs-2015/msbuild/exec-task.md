@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 337dcd310efbdf0f0657b5eb44b1ed0fc8253b39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782508"
 ---
 # <a name="exec-task"></a>Exec タスク
@@ -48,7 +48,7 @@ ms.locfileid: "54782508"
 |`StdOutEncoding`|省略可能な `String` 型の出力パラメーターです。<br /><br /> キャプチャしたタスクの標準出力ストリームのエンコーディングを指定します。 既定値は、現在のコンソール出力のエンコーディングです。|  
 |`WorkingDirectory`|省略可能な `String` 型のパラメーターです。<br /><br /> コマンドを実行するディレクトリを指定します。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  このタスクは、実行したいジョブの特定の [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] タスクを使用できないときに便利です。 ただし、`Exec` タスクは、固有のタスクとは異なり、実行したツールまたはコマンドから出力を収集することはできません。  
   
  `Exec` タスクは、プロセスを直接呼び出す代わりに cmd.exe を呼び出します。  
@@ -72,6 +72,6 @@ ms.locfileid: "54782508"
 </Project>  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [タスク](../msbuild/msbuild-tasks.md)   
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

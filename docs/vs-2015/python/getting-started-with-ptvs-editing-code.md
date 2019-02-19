@@ -1,5 +1,5 @@
 ---
-title: PTVS の概要。コードの編集 |Microsoft Docs
+title: 'PTVS の概要: コードの編集 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -10,13 +10,13 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758401"
 ---
-# <a name="getting-started-with-ptvs-editing-code"></a>PTVS の概要。コードの編集
+# <a name="getting-started-with-ptvs-editing-code"></a>PTVS の概要: コードの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 PTVS は、Python のために生産性の高い Visual Studio エディターのエクスペリエンスを提供します。  
@@ -66,6 +66,6 @@ def main ():
   
  これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=uZGZNEyyeKs&index=3&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)で視聴できます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Wiki ドキュメント](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
  [PTVS の概要と詳細に関するビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

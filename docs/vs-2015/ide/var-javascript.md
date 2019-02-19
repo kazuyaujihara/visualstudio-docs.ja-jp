@@ -1,4 +1,4 @@
----
+﻿---
 title: '&lt;var&gt; (JavaScript) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98bf86f807874fefe066ed2d1008e31451fbbba0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54802662"
 ---
 # <a name="ltvargt-javascript"></a>&lt;var&gt; (JavaScript)
@@ -92,5 +92,5 @@ var Rectangle = {
 }  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)

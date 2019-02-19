@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fd209f65464126650106eb4509cd3de39ad8c25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54752640"
 ---
 # <a name="preemption-time"></a>優先時間
@@ -33,5 +33,5 @@ ms.locfileid: "54752640"
   
   優先セグメントのツールヒントには、優先の原因となったプロセスまたはスレッドの名前が表示されます。 ただし、優先されたプロセスまたはスレッドが優先期間を通じて実際に実行されることを意味するものではありません。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

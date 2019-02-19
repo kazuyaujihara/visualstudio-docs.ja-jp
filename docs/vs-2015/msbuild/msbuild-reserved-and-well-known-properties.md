@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0ab47b0058b80b49b5892a92ea6eeda1afe5296c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54804177"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild の予約済みおよび既知のプロパティ
@@ -55,10 +55,10 @@ ms.locfileid: "54804177"
 |`MSBuildThisFileDirectory`|`MSBuildThisFileFullPath` のディレクトリの部分。<br /><br /> パスに最後の円記号を含めます。|予約されています。|  
 |`MSBuildThisFileDirectoryNoRoot`|`MSBuildThisFileFullPath` のディレクトリの部分 (ルート ドライブを除く)。<br /><br /> パスに最後の円記号を含めます。|予約されています。|  
 |`MSBuildThisFileExtension`|`MSBuildThisFileFullPath` のファイル名拡張子の部分。|予約されています。|  
-|`MSBuildThisFileFullPath`|実行中のターゲットを含むプロジェクト ファイルまたはターゲット ファイルの絶対パス。<br /><br /> ヒント :ターゲット ファイルに対して相対的であり、元のプロジェクト ファイルに対しては相対的ではない位置を示す、ターゲット ファイルの相対パスを指定できます。|予約されています。|  
+|`MSBuildThisFileFullPath`|実行中のターゲットを含むプロジェクト ファイルまたはターゲット ファイルの絶対パス。<br /><br /> ヒント：ターゲット ファイルに対して相対的であり、元のプロジェクト ファイルに対しては相対的ではない位置を示す、ターゲット ファイルの相対パスを指定できます。|予約されています。|  
 |`MSBuildThisFileName`|`MSBuildThisFileFullPath` のファイル名の部分 (ファイル名拡張子を除く)。|予約されています。|  
 |`MSBuildToolsPath`|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] の値に関連付けられている `MSBuildToolsVersion` のバージョンのインストール パス。<br /><br /> パスに最後の円記号を含めません。<br /><br /> このプロパティはオーバーライドできません。|予約されています。|  
-|`MSBuildToolsVersion`|プロジェクトのビルドに使用する [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ツールセットのバージョン。<br /><br /> メモ:[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ツールセットは、アプリケーションのビルドで使用するタスク、ターゲット、およびツールで構成されます。 ツールには、csc.exe や vbc.exe などのコンパイラが含まれます。 詳細については、「[MSBuild ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)」と「[標準ツールセット構成とカスタム ツールセット構成](../msbuild/standard-and-custom-toolset-configurations.md)」をご覧ください。|予約されています。|  
+|`MSBuildToolsVersion`|プロジェクトのビルドに使用する [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ツールセットのバージョン。<br /><br /> メモ：[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ツールセットは、アプリケーションのビルドで使用するタスク、ターゲット、およびツールで構成されます。 ツールには、csc.exe や vbc.exe などのコンパイラが含まれます。 詳細については、「[MSBuild ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)」と「[標準ツールセット構成とカスタム ツールセット構成](../msbuild/standard-and-custom-toolset-configurations.md)」をご覧ください。|予約されています。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [MSBuild リファレンス](../msbuild/msbuild-reference.md) [MSBuild プロパティ](msbuild-properties1.md)

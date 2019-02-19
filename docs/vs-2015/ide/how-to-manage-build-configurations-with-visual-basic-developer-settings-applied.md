@@ -1,5 +1,5 @@
----
-title: '方法: Visual Basic 開発者設定が適用されたビルド構成の管理 |Microsoft Docs'
+﻿---
+title: '方法 : Visual Basic 開発者設定が適用されたビルド構成を管理する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d6a315adb859445c5efa15df5b8366815bfc86d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784788"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>方法: Visual Basic 開発者設定が適用されたビルド構成を管理する
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>方法 : Visual Basic 開発者設定が適用されたビルド構成を管理する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 既定では、すべてのビルド構成の詳細オプションは [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 開発者設定が適用されて非表示になっています。 このトピックでは、これらの設定を手動で有効にする方法について説明します。  

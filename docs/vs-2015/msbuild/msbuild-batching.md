@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c2e2392c3b04ce7f81e023f449da890122946e3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770810"
 ---
 # <a name="msbuild-batching"></a>MSBuild バッチ
@@ -103,7 +103,7 @@ ms.locfileid: "54770810"
   
  プロパティ関数の詳細については、「[プロパティ関数](../msbuild/property-functions.md)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [ItemMetadata 要素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2440d6af45f08a3b53cf531a357cc807d4b22fc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54804454"
 ---
 # <a name="createproperty-task"></a>CreateProperty タスク
@@ -40,7 +40,7 @@ ms.locfileid: "54804454"
 |`Value`|省略可能な `String` 型の出力パラメーターです。<br /><br /> 新しいプロパティにコピーする値を指定します。|  
 |`ValueSetByTask`|省略可能な `String` 型の出力パラメーターです。<br /><br /> `Value` パラメーターと同じ値を含みます。 出力が最新の状態であるため、含まれているターゲットをスキップするとき、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] によって出力プロパティが設定されることを回避する場合にのみ、このパラメーターを使用します。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
   
 ## <a name="example"></a>例  
@@ -70,6 +70,6 @@ ms.locfileid: "54804454"
   
  プロジェクトの実行後、`NewFile` プロパティの値は `Module1.vb` になります。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)

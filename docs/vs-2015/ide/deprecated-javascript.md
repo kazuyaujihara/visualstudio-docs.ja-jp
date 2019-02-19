@@ -1,4 +1,4 @@
----
+﻿---
 title: '&lt;非推奨とされます&gt;(JavaScript) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b93a2b4dcc541f32c16766da0dd9dd19a4fdfe0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54759757"
 ---
 # <a name="ltdeprecatedgt-javascript"></a>&lt;非推奨とされます&gt;(JavaScript)
@@ -40,7 +40,7 @@ ms.locfileid: "54759757"
  `description`  
  任意。 非推奨となる関数またはメソッドの説明。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  `<deprecated>` など、関数の注釈に使用される要素は、ステートメントの前の関数本体に配置する必要があります。 交換することをお勧め関数を非推奨としてマークすると、その[\<概要 >](../ide/summary-javascript.md)を持つ要素、`<deprecated>`要素。  
   
 ## <a name="example"></a>例  

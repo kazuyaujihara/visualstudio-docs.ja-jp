@@ -1,4 +1,4 @@
----
+﻿---
 title: Alias コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -18,10 +18,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4260804760b4abe55f6a62efa4841ad08dead1b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54753271"
 ---
 # <a name="alias-command"></a>Alias コマンド
@@ -53,7 +53,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
  /reset  
  任意。 定義済みエイリアスの一覧を元の設定に戻します。 つまり、定義済みエイリアスをすべて復元し、ユーザー定義のエイリアスをすべて削除します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  エイリアスはコマンドを表すため、コマンド ラインの先頭に指定する必要があります。  
   
  このコマンドを実行するときは、エイリアスの後ではなく、コマンドの直後にスイッチを置く必要があります。そうしないと、スイッチ自体がエイリアスの文字列の一部として取り込まれます。  
@@ -79,7 +79,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 >Tools.Alias  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [[検索/コマンド] ボックス](../../ide/find-command-box.md)   

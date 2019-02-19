@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5f25f100a1d6eb31dbd03a26d927f81c4e564d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769433"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成
@@ -46,7 +46,7 @@ ms.locfileid: "54769433"
   
 - インクリメンタル ビルドを実行します。  
   
-  このチュートリアルでは、コマンド プロンプトでプロジェクトをビルドして結果を確認する方法を説明します。 MSBuild の詳細および MSBuild をコマンド プロンプトで実行する方法の詳細については、「[チュートリアル:MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)に関するページを参照してください。  
+  このチュートリアルでは、コマンド プロンプトでプロジェクトをビルドして結果を確認する方法を説明します。 MSBuild の詳細および MSBuild をコマンド プロンプトで実行する方法の詳細については、「[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)」をご覧ください。  
   
   このチュートリアルを実行するには、.NET Framework (Version 2.0、3.5、4.0、または 4.5) がインストールされている必要があります。これらには、このチュートリアルに必要な MSBuild と Visual C# コンパイラが含まれています。  
   
@@ -394,9 +394,9 @@ ms.locfileid: "54769433"
   
      **すべての出力ファイルが入力ファイルに対して最新なので、ターゲット "Build" を省略します。**  
   
-     **入力ファイル:HelloWorld.cs**  
+     **入力ファイル: HelloWorld.cs**  
   
-     **出力ファイル:BinMSBuildSample.exe**  
+     **出力ファイル: BinMSBuildSample.exe**  
   
      アプリケーションがビルドされてから変更されたソース ファイルがないため、Build ターゲットはスキップされます。  
   
@@ -479,8 +479,8 @@ ms.locfileid: "54769433"
 ```  
   
 ## <a name="whats-next"></a>次の内容  
- このチュートリアルで説明した作業の大半は、Visual Studio で自動的に実行できます。 Visual Studio を使用して MSBuild プロジェクト ファイルを作成、編集、ビルド、およびテストする方法については、「[チュートリアル:MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)に関するページを参照してください。  
+ このチュートリアルで説明した作業の大半は、Visual Studio で自動的に実行できます。 Visual Studio を使用して MSBuild プロジェクト ファイルを作成、編集、ビルド、およびテストする方法については、「[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)」をご覧ください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
 [MSBuild の概要](msbuild.md)  
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)

@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 298609aa37557eebc52dce7ca6eada2f98f2096d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54759987"
 ---
 # <a name="open-solution-command"></a>OpenSolution コマンド
@@ -39,7 +39,7 @@ File.OpenSolution filename
   
  `filename` 引数の構文の場合、空白を含むパスで引用符を使用する必要があります。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  オート コンプリートでは、入力された正しいパスとファイル名の検索を試みます。  
   
 ## <a name="example"></a>例  
@@ -49,7 +49,7 @@ File.OpenSolution filename
 >File.OpenSolution "c:\MySolutions\Test1\Test1.sln"  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [[検索/コマンド] ボックス](../../ide/find-command-box.md)   

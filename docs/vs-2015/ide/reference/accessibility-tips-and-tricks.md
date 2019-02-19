@@ -1,4 +1,4 @@
----
+﻿---
 title: アクセシビリティのヒントとテクニック | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 77254bea0c4b587df8f4aef8297f17b6b4304339
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800789"
 ---
 # <a name="accessibility-tips-and-tricks"></a>アクセシビリティのヒントとテクニック
@@ -50,7 +50,7 @@ ms.locfileid: "54800789"
 |[ツールボックス] ウィンドウ|[ツールボックス] からフォームまたはデザイナーにコントロールを追加します。|**Enter**|  
 |[キーボード]\([オプション] ダイアログ ボックス - [環境])|**[ショートカット キー]** オプションに入力されたキーの組み合わせを削除します。|**Backspace**|  
 |すべてのツール ウィンドウ|ウィンドウのツール バーにある最初のボタンを選択します。|**Shift** + **Alt**|  
-|IDE ツール バー|標準ツール バーの最初のボタンを選択します。|**ALT**、 **CTRL** + **タブ****に注意してください。** キーを押して**CTRL** + **タブ**次の IDE ツールバーの最初のボタンを選択するには、もう一度です。|  
+|IDE ツール バー|標準ツール バーの最初のボタンを選択します。|**Alt**、**Ctrl** + **Tab**。**注:** 次の IDE ツール バーの最初のボタンを選択する場合は、**Ctrl** + **Tab** キーをもう一度押します。|  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)

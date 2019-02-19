@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f60e8eedeeb7106a7a95a33a4a5cc794194861c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54797000"
 ---
 # <a name="caller--callee-view----contention-data"></a>呼び出し元/呼び出し先ビュー - 競合データ
@@ -50,7 +50,7 @@ ms.locfileid: "54797000"
 |**ルート関数名**|現在の関数の名前です。 [VSPerfReport](../profiling/vsperfreport.md) コマンド ライン レポートでのみ有効です。|  
 |**ソース ファイル**|この関数の定義を含むソース ファイルです。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
  [呼び出し元/呼び出し先ビュー](../profiling/caller-callee-view.md)   
  [呼び出し元/呼び出し先ビュー - サンプリング データ](../profiling/caller-callee-view-sampling-data.md)   

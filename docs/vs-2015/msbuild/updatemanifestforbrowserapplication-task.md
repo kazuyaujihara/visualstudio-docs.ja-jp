@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d1c45f001c6d050ca48546579f313ee64d5fec2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778816"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication タスク
@@ -39,7 +39,7 @@ ms.locfileid: "54778816"
 |`ApplicationManifest`|必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> `<hostInBrowser />` 要素を追加するアプリケーション マニフェスト ファイルのパスと名前を指定します。|  
 |`HostInBrowser`|必須の **Boolean** 型のパラメーターです。<br /><br /> **\<hostInBrowser />** 要素を含めるようにアプリケーション マニフェストを変更するかどうかを指定します。 **true** の場合、新しい `<`**hostInBrowser />** 要素が **\<entryPoint />** 要素に含められます。 要素の挿入は累積的に行われることに注意してください。**\<hostInBrowser />** 要素が既に存在していても、それが削除または上書きされることはありません。 代わりに、追加の **\<hostInBrowser />** 要素が作成されます。 **false** の場合、アプリケーション マニフェストは変更されません。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  [!INCLUDE[TLA2#tla_xbap#plural](../includes/tla2sharptla-xbapsharpplural-md.md)] は、[!INCLUDE[TLA#tla_clickonce](../includes/tlasharptla-clickonce-md.md)] 配置を使用して実行されるため、サポート用の配置マニフェストおよびアプリケーション マニフェストと一緒に発行する必要があります。 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] では [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx) タスクを使用して、アプリケーション マニフェストを生成します。  
   
  ブラウザーからホストされるようにアプリケーションを構成する場合は、**\<hostInBrowser />** 要素をアプリケーション マニフェストに追加する必要があります。次に例を示します。  
@@ -76,7 +76,7 @@ ms.locfileid: "54778816"
 </Project>  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [WPF MSBuild リファレンス](../msbuild/wpf-msbuild-reference.md)   
  [Task Reference (タスク リファレンス)](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   

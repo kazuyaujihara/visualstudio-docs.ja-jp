@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: be3b993034ef9ab8d39b254cf3f4be1fdebbb106
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769127"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 要素 (MSBuild)
@@ -70,7 +70,7 @@ ms.locfileid: "54769127"
 |-------------|-----------------|  
 |[プロジェクト](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルの必須のルート要素です。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  環境変数、コマンド ライン プロパティ、およびプロジェクト レベル プロパティは、明示的に、またはインポートされたプロジェクト ファイルを通じてプロジェクト ファイル内に表示されている限り、`UsingTask` 要素内の任意の場所から参照できます。 詳細については、[タスク](../msbuild/msbuild-tasks.md)に関する記事を参照してください。  
   
 > [!NOTE]
@@ -102,7 +102,7 @@ ms.locfileid: "54769127"
               AssemblyFile="c:\myTasks\myTask.dll" />  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [タスク](../msbuild/msbuild-tasks.md)   
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 10d63e85a7e0b97b588b368318eb7d040694c72b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784526"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>モジュール ビュー - .NET メモリ インストルメンテーション データ
@@ -100,7 +100,7 @@ ms.locfileid: "54784526"
 |**最大アプリケーション排他時間 (関数のみ)**|-   関数の場合、この関数の呼び出しの最大アプリケーション排他時間。<br />-   モジュールの場合、モジュール内の関数のすべての呼び出しの最大アプリケーション排他時間。|  
 |**最小アプリケーション排他時間 (関数のみ)**|-   関数の場合、このモジュールまたは関数の呼び出しの最小アプリケーション排他時間。<br />-   モジュールの場合、モジュール内の関数のすべての呼び出しの最小アプリケーション排他時間。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [モジュール ビュー - サンプリング](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [モジュール ビュー](../profiling/modules-view-instrumentation-data.md)   
  [モジュール ビュー](../profiling/modules-view-sampling-data.md)

@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 60e0dd272bd22cce2367e59b16fdea7965cb50e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54761590"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
@@ -40,7 +40,7 @@ Devenv /ResetSettings SettingsFile
   
  全般的な開発設定のプロファイルを復元するには、`General` を使用します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  `SettingsFile` が指定されていない場合、次回 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] を起動したときに、既定の設定のコレクションを選択するよう要求されます。  
   
 ## <a name="example"></a>例  
@@ -50,6 +50,6 @@ Devenv /ResetSettings SettingsFile
 Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

@@ -1,5 +1,5 @@
----
-title: '方法: インデックスでトピックを検索 |Microsoft Docs'
+﻿---
+title: '方法 : インデックスでトピックを検索する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,13 +17,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758170"
 ---
-# <a name="how-to-find-topics-in-the-index"></a>方法: インデックスでトピックを検索する
+# <a name="how-to-find-topics-in-the-index"></a>方法 : インデックスでトピックを検索する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 インデックスには、インストールされているコンテンツのトピックに関連付けられているキーワードの一覧が含まれます。 各トピックには複数のキーワードが関連付けられている場合があり、各キーワードは複数のトピックに関連付けられている場合があります。 このインデックスの使い方は本の索引と同じです。  

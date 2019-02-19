@@ -1,4 +1,4 @@
----
+﻿---
 title: クラス デザイナーの Visual C++ 列挙体 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 209f56d8222d4cc446d15f8eedd4d89b08993c5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755020"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>クラス デザイナーの Visual C++ 列挙体
@@ -45,6 +45,6 @@ enum class CardSuit {
   
  `enum` 型の使用法の詳細については、「[列挙型](http://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)」を参照してください。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [Visual C++ コードの使用 (クラス デザイナー)](../ide/working-with-visual-cpp-code-class-designer.md)   
  [列挙型](http://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)

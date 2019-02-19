@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d1ebec5f0d708396db914d0bffcef832a33ceec9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800480"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基本クラス
@@ -51,6 +51,6 @@ ms.locfileid: "54800480"
 |<xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A>|省略可能な `bool` 型のパラメーターです。<br /><br /> `true` に設定した場合、このタスクで直接コマンドを実行する代わりに、コマンド ラインのバッチ ファイルを作成し、そのファイルをコマンド プロセッサで実行します。|  
 |<xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A>|省略可能な `bool` 型のパラメーターです。<br /><br /> `true` に設定した場合、このタスクは、その実行時にノードを生成します。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)

@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 611bc5c0fbb81d38aa10561d8603ef281a51d9a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54788690"
 ---
 # <a name="msbuild-tasks"></a>MSBuild タスク
@@ -68,7 +68,7 @@ ms.locfileid: "54788690"
 ## <a name="overridden-tasks"></a>オーバーライドされたタスク  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] は、複数の場所でタスクを検索します。 最初の検索場所は、.NET Framework ディレクトリに格納されている拡張子が .OverrideTasks であるファイル内です。 これらのファイル内のタスクは、プロジェクト ファイル内のタスクも含め、同じ名前を持つ他のタスクをオーバーライドします。 2 番目の検索場所は、.NET Framework ディレクトリ内の拡張子が .Tasks であるファイル内です。 タスクがこれらの場所のいずれにも見つからない場合は、プロジェクト ファイル内のタスクが使用されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
  [タスクの作成](../msbuild/task-writing.md)   

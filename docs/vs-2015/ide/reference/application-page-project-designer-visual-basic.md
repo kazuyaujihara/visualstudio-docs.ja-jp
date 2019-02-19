@@ -1,4 +1,4 @@
----
+﻿---
 title: '[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 21f94323fbfa7369e3fef93b0f95a8db2ea46ce2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774861"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
@@ -60,7 +60,7 @@ ms.locfileid: "54774861"
 > [!NOTE]
 >  [[必須コンポーネント] ダイアログ ボックス](../../ide/reference/prerequisites-dialog-box.md)にリストされている必須コンポーネントのパッケージは、ダイアログ ボックスを初めて開いたときに自動的に設定されます。 その後、プロジェクトのターゲット フレームワークを変更した場合は、新しいターゲット フレームワークに合わせて必須コンポーネントを手動で指定する必要があります。  
   
- 詳細については、「[方法 : .NET Framework のバージョンをターゲットにする](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)」と「[Visual Studio のマルチ ターゲットの概要](../../ide/visual-studio-multi-targeting-overview.md)」を参照してください。  
+ 詳細については、「[方法: .NET Framework のバージョンをターゲットにする](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)」と「[Visual Studio のマルチ ターゲットの概要](../../ide/visual-studio-multi-targeting-overview.md)」を参照してください。  
   
  **アプリケーションの種類**  
  ビルドするアプリケーションの種類を指定します。 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] アプリの場合は、**[Windows ストア アプリ]**、**[クラス ライブラリ]**、または **[WinMD ファイル]** を指定できます。 他のほとんどのアプリケーションの種類では、**[Windows アプリケーション]**、**[コンソール アプリケーション]**、**[クラス ライブラリ]**、**[Windows サービス]**、または **[Web コントロール ライブラリ]** を指定できます。  
@@ -159,5 +159,5 @@ ms.locfileid: "54774861"
   
  特定のアプリケーション状態が変化すると (アプリケーション スタートアップやシャットダウンなどで)、<xref:System.Windows.Application> オブジェクトでイベントが発生します。 このクラスで公開されるイベントの完全な一覧については、「<xref:System.Windows.Application>」を参照してください。 これらのイベントは、`Application` 部分クラスのユーザー コード セクションで処理されます。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
 [アプリケーション プロパティの管理](../../ide/application-properties.md) [Office ソリューションのコードの記述](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

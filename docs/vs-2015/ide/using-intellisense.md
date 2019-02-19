@@ -1,4 +1,4 @@
----
+﻿---
 title: IntelliSense を使用する | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -26,16 +26,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758829"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-IntelliSense は、さまざまな機能の一般的な用語です。入力候補などの多くの機能を含むコード補完機能です。 これらの機能により、使用中のコードに関する情報の確認、入力中のパラメーターの追跡、プロパティおよびメソッドの呼び出しの追加などが、わずかなキーストロークで可能になります。  
+IntelliSense とは、メンバーの一覧、パラメーター ヒント、クイック ヒント、入力候補など多数の機能を指す総称です。 これらの機能により、使用中のコードに関する情報の確認、入力中のパラメーターの追跡、プロパティおよびメソッドの呼び出しの追加などが、わずかなキーストロークで可能になります。  
   
  IntelliSense には、言語によって異なる要素が多数あります。 各言語の IntelliSense の詳細については、「参照」に示されているトピックを参照してください。  
   
@@ -101,7 +101,7 @@ MessageBox( hWnd, "String literal|") )
   
  **自動オプションがオフになっている。** 既定では、IntelliSense は自動的に動作しますが、無効にすることもできます。 入力候補がオフになっている場合でも、IntelliSense 機能は起動できます。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [Visual Basic 固有の IntelliSense](../ide/visual-basic-specific-intellisense.md)   
  [Visual C# の IntelliSense](../ide/visual-csharp-intellisense.md)   
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   

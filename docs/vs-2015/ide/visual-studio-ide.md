@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780680"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
@@ -111,7 +111,7 @@ Visual Studio 2015 の新機能について説明する場合は、「 [Visual S
 
  ![コード エディターの GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "c++ IDE_EditorLineNumbersWordWrapOn")
 
- テキスト エディターには、生産性の向上に役立つ多くの機能との高度な対話性があります (望む場合)。これによって、より質の高いコードをより早く作成できます。 言語によって異なり、機能と、いずれかが (クイック起動で「エディター」の種類) を使用して機能を有効または無効にする必要はありません。一般的な生産性機能を次に示します。
+ テキスト エディターには、生産性の向上に役立つ多くの機能との高度な対話性があります (望む場合)。これによって、より質の高いコードをより早く作成できます。 機能は言語によって異なり、機能をオンまたはオフにするためにそれらを使用する必要はありません (クイック起動で「エディター」を入力)。一般的な生産性向上機能として、次のものがあります。
 
 1. [Refactoring](../ide/refactoring-in-visual-studio.md) 。これには、変数の名前をインテリジェントに変更する、選んだコード行を別個の関数に移動する、コードを他の場所に移動する、関数パラメーターを並べ替える、などの操作が含まれます。
 
@@ -129,9 +129,9 @@ Visual Studio 2015 の新機能について説明する場合は、「 [Visual S
 
 6. **コード レンズ** 。コードへの参照および変更、リンクされたバグ、作業項目、コード レビュー、単体テストをすべて、エディターを離れずに検索できます。 詳しくは、「[コード変更およびその他の履歴の検索](../ide/find-code-changes-and-other-history-with-codelens.md)」をご覧ください。
 
-7. **[ピークの定義]** ウィンドウ。現在のコンテキストから移動せずに、メソッドまたは型の定義インラインが表示されます。 このウィンドウは、XAML でも有効です。
+7. [ **ピークの定義** ] ウィンドウ。現在のコンテキストから移動せずに、メソッドまたは型の定義インラインが表示されます。 このウィンドウは、XAML でも有効です。
 
-8. **[定義に移動]** コンテキスト メニュー オプション。関数またはオブジェクトが定義されている場所に直接移動します。 エディターを右クリックすることで、その他のナビゲーション コマンドも使用できます。
+8. [ **定義に移動** ] コンテキスト メニュー オプション。関数またはオブジェクトが定義されている場所に直接移動します。 エディターを右クリックすることで、その他のナビゲーション コマンドも使用できます。
 
 9. [オブジェクト ブラウザー](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470) (関連ツール)。システム上の .NET アセンブリまたは Windows ランタイム アセンブリを調べ、アセンブリにどの型が含まれているか、またそれらの型にどのメソッドとプロパティが含まれているかを確認できます。
 
@@ -150,7 +150,7 @@ Visual Studio 2015 の新機能について説明する場合は、「 [Visual S
 
  ![ブレークポイントの設定の [表示のみ] ウィンドウ](../ide/media/dbg-breakpoints-peekwindow.png "DBG_Breakpoints_PeekWindow")
 
- デバッガー自体に複数のウィンドウがあり、それらのウィンドウから、ローカル変数、呼び出し履歴、ランタイム環境のその他の側面を表示および操作できます。 これらのウィンドウは **[デバッグ]** メニューにあります。
+ デバッガー自体に複数のウィンドウがあり、それらのウィンドウから、ローカル変数、呼び出し履歴、ランタイム環境のその他の側面を表示および操作できます。 これらのウィンドウは [ **デバッグ** ] メニューにあります。
 
  [Immediate Window](../ide/reference/immediate-window.md) では、式に入力し、その結果を即時に表示できます。
 
@@ -164,7 +164,7 @@ Visual Studio 2015 の新機能について説明する場合は、「 [Visual S
  ![単体テスト エクスプローラー](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
 ## <a name="analyzing-code-quality-and-performance"></a>コード品質とパフォーマンスの分析
- Visual Studio には、静的分析とランタイム分析のための強力なツールが含まれています。 静的分析ツールでは、デザイン、グローバリゼーション、相互運用性、パフォーマンス、セキュリティ、その他のカテゴリでの潜在的なエラーを特定することができます。 パフォーマンス テスト (プロファイリング) では、プログラムの実行方法を測定する必要があります。 これらのツールには、**[分析]** メニューからアクセスできます。 詳細については、「 [Visual Studio 診断ツールによる品質の向上](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)」を参照してください。
+ Visual Studio には、静的分析とランタイム分析のための強力なツールが含まれています。 静的分析ツールでは、デザイン、グローバリゼーション、相互運用性、パフォーマンス、セキュリティ、その他のカテゴリでの潜在的なエラーを特定することができます。 パフォーマンス テスト (プロファイリング) では、プログラムの実行方法を測定する必要があります。 これらのツールには、[ **分析** ] メニューからアクセスできます。 詳細については、「 [Visual Studio 診断ツールによる品質の向上](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)」を参照してください。
 
 ## <a name="connecting-to-cloud-services-and-databases"></a>クラウド サービスとデータベースへの接続
  Visual Studio の [ [サーバー エクスプローラー](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) ] ウィンドウには、個人アカウント (ログインで使用するアカウント) の下で管理されているすべてのアカウントのリソースが表示されます。これには、SQL Server インスタンス、Azure、salesforce.com、Office 365、Websites が含まれます。

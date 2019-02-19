@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1262e88055fceef0b2170c304c8ff646eea07205
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793075"
 ---
 # <a name="detach"></a>Detach
@@ -61,7 +61,7 @@ VSPerfCmd.exe /Detach
 VSPerfCmd.exe /Shutdown  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a5d07c374e75bd7f042f466f13fc5727241e252
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54781003"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>方法: プロジェクト ファイルの名前または場所を参照する
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>方法 : プロジェクト ファイルの名前または場所を参照する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -76,6 +76,6 @@ ms.locfileid: "54781003"
 </Project>  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
 [MSBuild](msbuild.md)  
  [MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)

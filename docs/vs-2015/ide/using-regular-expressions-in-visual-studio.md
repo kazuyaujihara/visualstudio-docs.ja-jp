@@ -1,13 +1,9 @@
 ---
 title: 正規表現を使用する
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -22,13 +18,13 @@ ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5ca54797fe9a8aa4adac7883aaeda761ba08509d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8ede92874833ca54f44740f518994dac1d6a822f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959587"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774513"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio での正規表現の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +36,7 @@ Visual Studio 2012 より前、Visual Studio は [検索と置換] ウィンド�
 > Windows オペレーティング システムでは、ほとんどの行は、"\r\n" (キャリッジ リターンと、それに続く新しい行) で終わります。 これらの文字は表示されませんが、エディターの中に存在し、.NET の正規表現のサービスに渡されます。
 
 > [!TIP]
-> 置換パターンでよく使用される正規表現の詳細については、「[置換](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)」を参照してください。 番号付きのキャプチャ グループを使用する場合の構文は、番号付きグループを指定する `$1` と、該当のグループを指定する `(x)` です。 たとえば、グループ化された正規表現`(\d)([a-z])`次の文字列に 4 つの一致を検索します。1a 3c 2b 4d** という文字列の中で、4 つの一致が見つかります。 置換文字列 `z$1` を使用すると、この文字列は "**z1 z2 z3 z4**" に変換されます。
+> 置換パターンでよく使用される正規表現の詳細については、「[置換](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)」を参照してください。 番号付きのキャプチャ グループを使用する場合の構文は、番号付きグループを指定する `$1` と、該当のグループを指定する `(x)` です。 たとえば、グループ化された正規表現`(\d)([a-z])`、次の文字列に 4 つの一致を検索します: **2 b の 1 a 3 c 4 d**します。 置換文字列 `z$1` を使用すると、この文字列は "**z1 z2 z3 z4**" に変換されます。
 
 ## <a name="regular-expression-examples"></a>正規表現の例
 
@@ -73,7 +69,7 @@ Visual Studio 2012 より前、Visual Studio は [検索と置換] ウィンド�
 |                                                                                                           任意の空白文字と一致します。                                                                                                           |                                                   (?([^\r\n])\s)                                                   |                                                `Public\sInterface` は、語句 "Public Interface" に一致します。                                                 |
 |                                                                                                             任意の数字 1 文字に一致します。                                                                                                             |                                                         \d                                                         |                                                `\d` は、"3456" の中の "3"、"23" の中の "2"、および "1" の中の "1" に一致します。                                                |
 |                                                                                                              Unicode 文字に一致します。                                                                                                              |                              \uXXXX、ここで XXXX は、Unicode 文字の値を指定します。                              |                                                            `\u0065` は、^ 文字に一致します。                                                            |
-|                                                                                                                 識別子に一致します                                                                                                                 |                                         \b (*\w+&#124;[\w-[0-9\\*] \w\*) \b                                          |                                                       "type1" に一致しますが、&type1" や "#define" に一致しません。                                                       |
+|                                                                                                                 識別子に一致します                                                                                                                 |                                         \b(*\w+&#124;[\w-[0-9\\*]]\w\*)\b                                          |                                                       "type1" に一致しますが、&type1" や "#define" に一致しません。                                                       |
 |                                                                                                            引用符の内側にある文字列と一致します                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    単一引用符または二重引用符の内部にある任意の文字列に一致します。                                                     |
 |                                                                                                             16 進数に一致します                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          "0xc67f" 一致しますが、"0xc67fc67f" には一致しません。                                                           |
-|                                                                                                             整数と小数に一致します                                                                                                             |                                               \b[0-9]\*\\.\*[0-9] + \b                                               |                                                                     "1.333" に一致します。                                                                      |
+|                                                                                                             整数と小数に一致します                                                                                                             |                                               \b[0-9]\*\\.\*[0-9]+\b                                               |                                                                     "1.333" に一致します。                                                                      |

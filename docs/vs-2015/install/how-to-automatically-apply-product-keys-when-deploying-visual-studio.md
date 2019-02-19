@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: bbbc5cf6a6a65f7dbb38de60a5a99ec89fc70687
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834849"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>方法: Visual Studio の展開時にプロダクト キーを自動的に適用する
@@ -54,9 +54,9 @@ Visual Studio 2015 の配置を自動化するために使用されるスクリ�
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- プロダクト キーの取得の詳細についてを参照してください[方法。Visual Studio プロダクト キーを検索](../install/how-to-locate-the-visual-studio-product-key.md)します。
+ プロダクト キーの取得方法の詳細については、「 [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md)」を参照してください。
 
  StorePID.exe が正常にプロダクト キーを適用した場合は 0 を返します。 エラーが検出された場合は、1 ～ 6 の範囲の数値を返します。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
  [Visual Studio のインストール](../install/install-visual-studio-2015.md)

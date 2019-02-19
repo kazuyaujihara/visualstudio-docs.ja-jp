@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d27e104aec3719e3f88e75cb326082913068b44b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793088"
 ---
 # <a name="filtering-report-views"></a>レポート ビューのフィルター処理
@@ -23,9 +23,9 @@ ms.locfileid: "54793088"
 
 フィルターをプロファイル データ ファイルに適用すると、パフォーマンス レポート ビューに表示する、またはレポート ファイルにエクスポートするプロファイル データを制限することができます。 レポートはタイム スタンプ値の間のデータに制限でき、データは特定のプロセスおよびスレッドに制限できます。 フィルターをファイルに保存し、保存したフィルターをインポートすることで、別のプロファイル データ ファイルにフィルターを作成できます。  
   
- また、概要ビューのグラフィカルなタイムラインを使用することで、レポートを時間セグメントに制限することもできます。 「[方法:概要ビューのタイムラインからレポート ビューをフィルター処理する](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)」を参照してください。  
+ また、概要ビューのグラフィカルなタイムラインを使用することで、レポートを時間セグメントに制限することもできます。 「[方法: 概要ビューのタイムラインからレポート ビューをフィルター処理する](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)」を参照してください。  
   
- システムおよびサードパーティのコードをレポートから除外するには、次のページを参照してください。[方法:プロファイル ツールのレポート ビューをフィルター処理してマイ コードのみを表示する](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
+ レポートからシステムとサードパーティ コードを除外する方法については、「[方法: プロファイリング ツールのレポート ビューをフィルター処理してマイ コードのみを表示する](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)」を参照してください。  
   
 ## <a name="procedures"></a>手順  
   
@@ -94,5 +94,5 @@ ms.locfileid: "54793088"
   
 2.  保存するフィルター (.vspf) ファイルの場所と名前を指定します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [パフォーマンス ツール のレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)

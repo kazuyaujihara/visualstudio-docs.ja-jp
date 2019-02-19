@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 254602005966a9d9f95ff6b76f8ad42360e4a57d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770790"
 ---
 # <a name="message-task"></a>Message タスク
@@ -40,7 +40,7 @@ ms.locfileid: "54770790"
 |`Importance`|省略可能な `String` 型のパラメーターです。<br /><br /> メッセージの重要度を指定します。 このパラメーターの値には、`high`、`normal`、または `low` を指定できます。 既定値は `normal` です。|  
 |`Text`|省略可能な `String` 型のパラメーターです。<br /><br /> ログに記録するエラー テキスト。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  `Message` タスクを使用すると、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクトで、ビルド処理のさまざまな段階でロガーにメッセージを発行できます。  
   
  `Condition` パラメーターが `true` と評価されると、`Text` パラメーターの値がログに記録され、ビルド処理が継続されます。 `Condition` パラメーターが存在しない場合は、メッセージ テキストがログに記録されます。 ログ処理の詳細については、[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)に関するページを参照してください。  
@@ -62,6 +62,6 @@ ms.locfileid: "54770790"
 </Project>  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)

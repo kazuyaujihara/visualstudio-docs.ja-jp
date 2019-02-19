@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cabd90c249f4ea725987586874544de5772887ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801158"
 ---
 # <a name="profiling-tools-apis"></a>プロファイリング ツールの API
@@ -28,11 +28,11 @@ ms.locfileid: "54801158"
  <xref:Microsoft.VisualStudio.Profiler>  
  .NET プロファイリング ツールのメソッドについて説明します。  
   
- [チュートリアル: プロファイラー API の使用](../profiling/walkthrough-using-profiler-apis.md)  
+ [チュートリアル : プロファイラー API の使用](../profiling/walkthrough-using-profiler-apis.md)  
  完全なサンプルを使って、.NET プロファイリング ツールのメソッドの使い方について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
  [データ収集の制御](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: クラス デザイナーの Visual C++ クラス | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787077"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>クラス デザイナーの Visual C++ クラス
@@ -36,7 +36,7 @@ class A {};
 class B : A {};  
 ```  
   
- また、クラス ダイアグラムに B クラスのみをドラッグしてから、B のクラス図形を右クリックして、**[基底クラスの表示]** をクリックすることもできます。 このようにすると、基底クラスである A が表示されます。A:   
+ また、クラス ダイアグラムに B クラスのみをドラッグしてから、B のクラス図形を右クリックして、**[基底クラスの表示]** をクリックすることもできます。 このようにすると、基底クラスである A が表示されます。  
   
 ## <a name="multiple-inheritance"></a>多重継承  
  クラス デザイナーは、複数クラスの継承関係の視覚化をサポートしています。 *多重継承*は、派生クラスが複数の基底クラスの属性を持つときに使用されます。 多重継承の例を次に示します。  
@@ -169,7 +169,7 @@ typedef struct
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> クラス<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> クラス<br /><br /> `C<T>`<br /><br /> テンプレート クラス<br /><br /> `D`<br /><br /> クラス<br /><br /> ->C\<float>|  
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [Visual C++ コードの使用 (クラス デザイナー)](../ide/working-with-visual-cpp-code-class-designer.md)   
  [クラスと構造体](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
  [匿名クラス型](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   

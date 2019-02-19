@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8d76e4b1c9a7f7b6882eccab4a250e95c7419ea0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54763134"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio のオフライン インストールを作成する
@@ -64,7 +64,7 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dotfuscator および Analytics Community Edition 5.19.1 (にインストールされている、Visual Studio の Community、Professional、および Enterprise エディションの**Windows 7 SP1**と**Windows Server 2008 R2**) |                                                                                                                                       オフラインのコンピューターが実行されている場合**Windows 7 SP1**または**Windows Server 2008 R2**、Visual Studio 2015 をインストールする前に、次の手順を実行する必要があります。<br /><br /> 1.CTL ファイルをダウンロードするファイルまたは web サーバーを構成します。<br /><br /> 2.  切断された環境の Microsoft Automatic Update URL をリダイレクトします。<br /><br /> 詳細については、次を参照してください。、[信頼されたルートを構成および許可されない証明書](https://technet.microsoft.com/library/dn265983.aspx)、Microsoft TechNet サイトのページ。                                                                                                                                       |
 |                                                                                  Android SDK セットアップ (API レベル)                                                                                   |                                                                        Android SDK (API レベル) パッケージをインストールするには、インターネットに接続する必要があります。 制限付きネットワークを使用している場合は、Visual Studio のインストール時に次の URL へのアクセスを許可する必要があります。<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />プロキシ設定で考えられる問題を解決する方法の詳細については、ブログ投稿の「[Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/)」(プロキシ経由で Visual Studio 2015 をインストールできない (Android SDK セットアップ)) を参照してください。                                                                         |
-|                             Visual Studio の拡張項目テンプレート<br /><br /> Visual Studio 向け GitHub 拡張<br /><br /> PowerShell Tools for Visual Studio                             | Visual Studio 2015 をインストールするときに、インターネット接続があるありません、特殊なオフライン インストール レイアウトを生成するオフライン フィードを使用することができます。 **注:** この特殊なフィードには、Visual Studio 2015 に最新の更新プログラムが含まれています。 <br /><br /> 特殊なオフライン フィードを作成するには、次のコマンドを実行します/layout*ドライブ:* \VisualStudio2015/overridefeeduri *xml フィード URL。*<br /><br /> たとえば、Visual Studio 2015 Enterprise の英語版の特別なオフライン フィードの次のように実行します。<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> 好みの言語で特別なオフライン フィードを作成するのに使用できる Url の完全な一覧は、次の表を参照してください。 |
+|                             Visual Studio の拡張項目テンプレート<br /><br /> Visual Studio 向け GitHub 拡張<br /><br /> PowerShell Tools for Visual Studio                             | Visual Studio 2015 をインストールするときに、インターネット接続があるありません、特殊なオフライン インストール レイアウトを生成するオフライン フィードを使用することができます。 **注:** この特殊なフィードには Visual Studio 2015 の最新の更新プログラムが含まれています。 <br /><br /> 特殊なオフライン フィードを作成するには、次のコマンドを実行します/layout*ドライブ:* \VisualStudio2015/overridefeeduri *xml フィード URL。*<br /><br /> たとえば、Visual Studio 2015 Enterprise の英語版の特別なオフライン フィードの次のように実行します。<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> 好みの言語で特別なオフライン フィードを作成するのに使用できる Url の完全な一覧は、次の表を参照してください。 |
 
  上記の表に示すように、言語固有特別なオフライン フィードを作成するのに次の Url を使用します。
 
@@ -86,5 +86,5 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 |        ロシア語        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
 |        トルコ語        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
  [Visual Studio のインストール]()

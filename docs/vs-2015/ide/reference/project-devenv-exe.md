@@ -18,10 +18,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d048edd60d41c3f08a8bd0b731beddb3619a1887
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54776070"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
@@ -62,13 +62,13 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
  /projectconfig `ProjConfigName`  
  任意。 指定した `/project` に適用されるプロジェクトのビルド構成の名前。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
   
 -   `devenv /build`、/`clean`、`/rebuild`、または `/deploy` コマンドに含めて使用する必要があります。  
   
 -   空白を含む文字列を二重引用符で囲みます。  
   
--   エラーなどのビルドの概要情報は、**[コマンド]** ウィンドウ、または `/out` スイッチで指定された任意のログ ファイルに表示できます。  
+-   エラーなどのビルドの概要情報は、[**コマンド**] ウィンドウ、または `/out` スイッチで指定された任意のログ ファイルに表示できます。  
   
 ## <a name="example"></a>例  
  この例では、`Debug` プロジェクトのビルド構成を使用して、`MySolution` の `Debug` ソリューション構成内でプロジェクト `CSharpConsoleApp` をビルドします。  
@@ -77,7 +77,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)   
  [/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   

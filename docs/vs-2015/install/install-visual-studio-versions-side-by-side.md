@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 67a564b789d24b11b92b218c2a30673c6bd7baad
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834862"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>複数バージョンの Visual Studio をインストールする
@@ -54,7 +54,7 @@ Visual Studio のこのバージョンは、旧バージョンの Visual Studio 
     |C++|[方法: ターゲット フレームワークおよびプラットフォームのツールセットを変更する](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
     |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[以前のバージョンの共通言語ランタイムでの JScript アプリケーションの実行](http://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [Visual Studio のインストール](../install/install-visual-studio-2015.md)
 - [Visual Studio プロジェクトのポート、移行、アップグレード](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)

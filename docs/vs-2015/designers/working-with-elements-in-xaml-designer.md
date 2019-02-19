@@ -1,4 +1,4 @@
----
+﻿---
 title: XAML デザイナーでの要素の操作 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 49ec96150eda9bf0a62b9767fefbfd5936aef840
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774166"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>XAML デザイナーでの要素の操作
@@ -66,9 +66,9 @@ ms.locfileid: "54774166"
   
 1.  位置を揃える要素を選択します。 複数の要素を選択するには、Ctrl キーを押したまま、要素を選択します。  
   
-2.  プロパティ ウィンドウの **[レイアウト]** セクションの **[HorizontalAlignment]** で、**[Left]**、**[Center]**、**[Right]**、または **[Stretch]** のいずれかを選択します。  
+2.  [プロパティ] ウィンドウの **[レイアウト]** セクションの **[HorizontalAlignment]** で、次のいずれかを選択します: **[Left]**、**[Center]**、**[Right]**、または **[Stretch]**。  
   
-3.  プロパティ ウィンドウの **[レイアウト]** セクションの **[VerticalAlignment]** で、**[Top]**、**[Center]**、**[Bottom]**、または **[Stretch]** のいずれかを選択します。  
+3.  [プロパティ] ウィンドウの **[レイアウト]** セクションの **[VerticalAlignment]** で、次のいずれかを選択します: **[Top]**、**[Center]**、**[Bottom]**、または **[Stretch]**。  
   
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>スナップ ガイドラインを使用して 2 つ以上の要素の位置を揃えるには  
   

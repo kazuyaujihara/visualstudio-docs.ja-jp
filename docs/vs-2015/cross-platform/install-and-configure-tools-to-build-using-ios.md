@@ -48,7 +48,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
 -   OS X Mavericks 以降を実行する Mac コンピューター  
   
--    [Apple ID](https://appleid.apple.com/)  
+-   [Apple ID](https://appleid.apple.com/)  
   
 -   Apple のアクティブな [iOS Developer Program](https://developer.apple.com/programs/ios/) アカウント  
   

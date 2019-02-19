@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758649"
 ---
 # <a name="al-assembly-linker-task"></a>AL (アセンブリ リンカー) タスク
@@ -72,7 +72,7 @@ AL タスクは、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)] と共に
 |`Win32Icon`|省略可能な `String` 型のパラメーターです。<br /><br /> .ico ファイルをアセンブリに挿入します。 この .ico ファイルは、エクスプローラーにおける出力ファイルの視覚的な表現を提供します。 このパラメーターは、「[Al.exe (アセンブリ リンカー)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)」の `/win32icon` オプションに対応します。|  
 |`Win32Resource`|省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース (.res ファイル) を出力ファイルに挿入します。 詳しくは、「[Al.exe (アセンブリ リンカー)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)」で `/win32res` オプションのドキュメントをご覧ください。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension 基本クラス](../msbuild/tooltaskextension-base-class.md)」を参照してください。  
   
 ## <a name="example"></a>例  
@@ -95,6 +95,6 @@ AL タスクは、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)] と共に
 </AL>  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)

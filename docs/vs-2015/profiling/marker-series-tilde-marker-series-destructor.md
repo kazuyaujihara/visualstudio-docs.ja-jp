@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4d363b554babfbac994d9ec71eddbefd68f38d50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803018"
 ---
 # <a name="markerseriesmarkerseries-destructor"></a>marker_series::~marker_series デストラクター
@@ -36,5 +36,5 @@ marker_series オブジェクトを破棄し、割り当てられているすべ
   
  **名前空間:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [marker_series クラス](../profiling/marker-series-class.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 26c956255aba9a4ca67249a6e540a7899e0da28a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794187"
 ---
 # <a name="attach"></a>Attach
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  **GlobalOn GlobalOff**  
  プロファイリングを再開 (**GlobalOn**) または一時停止 (**GlobalOff**) しますが、プロファイル セッションは終了しません。  
   
- **ProcessOn:**`PID` **ProcessOff:** `PID`  
+ **ProcessOn:** `PID` **ProcessOff:** `PID`  
  指定されたプロセスのプロファイリングを再開 (**ProcessOn**) または一時停止 (**ProcessOff**) します。  
   
 ## <a name="interval-options"></a>間隔のオプション  
@@ -76,7 +76,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Attach:12345  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

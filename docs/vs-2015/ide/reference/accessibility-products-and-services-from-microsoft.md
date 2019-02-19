@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft からのユーザー補助製品およびサービス | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d07901a14b61ccddf8d4799828c6d42bddf7f94b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794355"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft からのユーザー補助製品およびサービス
@@ -63,7 +63,7 @@ Microsoft は、すべてのユーザーが簡単に使用できる製品とサ�
   
 |Recording for the Blind & Dyslexic, Inc.|  
 |----------------------------------------------|  
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> 米国内からの電話連絡先:(800) 221-4792<br /><br /> 米国外およびカナダからの電話連絡先:(609) 452-0606<br /><br /> Fax:(609) 987-8116<br /><br /> Recording for the Blind & Dyslexic Web サイト: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504)。|  
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> 米国内からの電話連絡先: (800) 221-4792<br /><br /> 米国外およびカナダからの電話連絡先: (609) 452-0606<br /><br /> Fax: (609) 987-8116<br /><br /> Recording for the Blind & Dyslexic Web サイト: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504)。|  
   
  Web アドレスは変更される可能性があるため、ここで示した Web サイトに接続できない場合があります。  
   
@@ -79,6 +79,6 @@ Microsoft は、すべてのユーザーが簡単に使用できる製品とサ�
 ##  <a name="moreinfo"></a> 参照項目  
  コンピューターのユーザー補助技術によって、障碍のある方の生活がどれほど向上するかに関する詳細については、 [マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)を参照してください。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [ユーザー補助アプリケーションのデザイン リソース](../../ide/reference/resources-for-designing-accessible-applications.md)   
  [Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)

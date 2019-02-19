@@ -28,10 +28,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d0398217bb48786067f8392c5e372b0888d060f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782476"
 ---
 # <a name="midl-task"></a>MIDL タスク
@@ -419,7 +419,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/W** オプションを参照してください。 この表にある **WarnAsError** パラメーターも参照してください。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

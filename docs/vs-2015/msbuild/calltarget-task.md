@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 12c0992cd9d1ece4f9d3ea0d22512948fafaf5cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54791395"
 ---
 # <a name="calltarget-task"></a>CallTarget タスク
@@ -40,7 +40,7 @@ ms.locfileid: "54791395"
 |`Targets`|省略可能な `String[]` 型のパラメーターです。<br /><br /> ビルドする 1 つまたは複数のターゲットを指定します。|  
 |`UseResultsCache`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、キャッシュされた結果が返されます (存在する場合)。<br /><br /> **メモ** MSBuild タスクが実行された場合、その出力は、ビルド項目のリストとしてスコープ ((ProjectFileName, GlobalProperties)[TargetNames]) にキャッシュされます。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  `Targets` に指定されたターゲットのビルドが失敗し、`RunEachTargetSeparately` が `true` に設定されている場合、タスクは残りのターゲットのビルドを続行します。  
   
  既定のターゲットをビルドする場合は、[MSBuild タスク](../msbuild/msbuild-task.md)を使用して、`Projects` パラメーターを `$(MSBuildProjectFile)` と等しくなるように設定します。  
@@ -65,6 +65,6 @@ ms.locfileid: "54791395"
 </Project>  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [ターゲット](../msbuild/msbuild-targets.md)

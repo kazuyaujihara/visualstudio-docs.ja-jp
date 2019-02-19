@@ -13,13 +13,13 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 047cb8733e1f1fa32e67b2fc7b6c53edb6174fcb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54797052"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>方法: Visual C プロジェクトを Visual Studio 2015 にアップグレードします。
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>方法: Visual C++ プロジェクトを Visual Studio 2015 にアップグレードする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 2017 の最新ドキュメントについては、次を参照してください。 [Visual c 移植とアップグレードのガイド](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide)します。
@@ -53,5 +53,5 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>カスタム PlatformToolset の使用の継続
  [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]でカスタム PlatformToolset を引き続き使用する場合、ツールセットは、x86 コンピューターでは %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ の下、x64 コンピューターでは %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ の下に格納されている必要があります。 カスタム PlatformToolset を作成する方法については、Visual C++ チーム ブログの「 [C++ ネイティブ マルチ ターゲット](http://go.microsoft.com/fwlink/?LinkId=248587) 」を参照してください。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
  [Visual C 移植とアップグレードのガイド](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)[の移植、移行、および Visual Studio プロジェクトのアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

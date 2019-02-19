@@ -1,4 +1,4 @@
----
+﻿---
 title: Devenv コマンド ライン スイッチ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -22,10 +22,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54754972"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv コマンド ライン スイッチ
@@ -102,5 +102,5 @@ Devenv を使用すると、コマンド ラインから統合開発環境 (IDE:
 |[/Updateconfiguration (devenv.exe)](../../ide/reference/updateconfiguration-devenv-exe.md)|[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] にシステム上の [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] パッケージをマージさせ、MEF キャッシュに変更がないかを確認することを通知します。|  
 |[/Upgrade (devenv.exe)](../../ide/reference/upgrade-devenv-exe.md)|指定されたソリューション ファイルとそのすべてのプロジェクト ファイル、または指定されたプロジェクト ファイルを、そのファイルに対応する現在の [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] の形式にアップグレードします。|  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)

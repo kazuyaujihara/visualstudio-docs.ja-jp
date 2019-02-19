@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767993"
 ---
 # <a name="options-page-text-editor-node-properties"></a>[テキスト エディター] ノード プロパティ ([オプション] ページ)
@@ -58,7 +58,7 @@ ms.locfileid: "54767993"
 |WordWrap|Get/Set (Boolean)|長い行をワード境界で折り返すかどうかを指定します。 このプロパティを `true` に設定すると、(この一覧にある) `VirtualSpace` プロパティ項目が `false` に設定されます。|  
 |WordWrapGlyphs|Get/Set (Boolean)|行末にグリフを表示します。これは、その行を次の行に折り返すことを示します。|  
 |EnableLeftClickForURLs|Get/Set (Boolean)|URL に下線を付け、マウスの左ボタンを 1 回クリックするだけで、システムに登録されている Web ブラウザーでその URL にジャンプできるようにするかどうかを指定します。|  
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|次のインデントのスタイルを指定します。(既定、スマート、またはなし)。|  
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|インデントのスタイルを指定します ([既定]、[スマート]、または [なし])。|  
 |TabSize|Get/Set (Long)|1 つのタブに相当するスペースの数を表します。1 ～ 60 以外の整数は設定できません。|  
 |InsertTabs|Get/Set (Boolean)|`True` の場合、インデントの設定時にタブ文字が使用されません。|  
 |IndentSize|Get/Set (Long)|1 インデント レベルに相当するスペースの数を表します。 1 ～ 60 以外の整数値は設定できません。|  
@@ -66,7 +66,7 @@ ms.locfileid: "54767993"
 |ShowNavigationBar|Get/Set (Boolean)|エディター ウィンドウの最上部にドロップダウン リストとボタンを表示するかどうかを指定します。|  
 |CutCopyBlankLines|Get/Set (Boolean)|選択時に空白行を切り取るか、コピーします。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [オプション設定の制御](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [オプション ページにあるプロパティ項目名の確認](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [[環境] ノード プロパティ ([オプション] ページ)](../../ide/reference/options-page-environment-node-properties.md)   

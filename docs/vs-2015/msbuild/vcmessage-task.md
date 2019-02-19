@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e1011ccfe1609376dc496dc6eb8e7f50795fab5c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784500"
 ---
 # <a name="vcmessage-task"></a>VCMessage タスク
@@ -33,7 +33,7 @@ ms.locfileid: "54784500"
   
 ビルド時の警告およびエラー メッセージをログに記録します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  このタスクは Visual C++ 用の MSBuild の実装に役立ちます。ユーザーによる呼び出しは意図されていません。 詳細については、「<xref:Microsoft.Build.Utilities.TaskLoggingHelper>」を参照してください。  
   
 ## <a name="parameters"></a>パラメーター  
@@ -45,5 +45,5 @@ ms.locfileid: "54784500"
 |**コード**|必須の **String** 型のパラメーターです。<br /><br /> メッセージに付けられるエラー番号です。|  
 |**Type**|省略可能な **String** 型のパラメーターです。<br /><br /> 発信するメッセージの種類を指定します。 警告メッセージの場合は `"Warning"` を、エラー メッセージの場合は `"Error"` を指定します。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: ユーザー アカウントと更新プログラム | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e955eaacd2f290558c5d786439373a9cc8febb35
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54802604"
 ---
 # <a name="user-accounts-and-updates"></a>ユーザー アカウントと更新プログラム
@@ -31,5 +31,5 @@ Visual Studio 自体は、接続環境です。 サインインすると、ユ�
 |[Visual Studio のロックを解除する方法](../ide/how-to-unlock-visual-studio.md)|さまざまなシナリオで Visual Studio のロックを解除する方法について説明します。|  
 |[通知](../ide/visual-studio-notifications.md)|SDK などのコンポーネント、または Visual Studio 自体で更新プログラムが使用可能な場合に Visual Studio がユーザーに通知する方法について説明します。|  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

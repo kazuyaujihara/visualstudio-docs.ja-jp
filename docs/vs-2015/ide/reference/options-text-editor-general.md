@@ -49,10 +49,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5ac63b183493b378fc0e1df454bc94a56722224f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794458"
 ---
 # <a name="options-text-editor-general"></a>[オプション]、[テキスト エディター]、[全般]
@@ -97,7 +97,7 @@ ms.locfileid: "54794458"
  [現在の行を強調表示する]  
  選択すると、カーソルが置かれているコード行の周りに灰色のボックスが表示されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [[オプション]、[テキスト エディター]、[すべての言語]](../../ide/reference/options-text-editor-all-languages.md)   
  [[オプション]、[テキスト エディター]、[すべての言語]、[タブ]](../../ide/reference/options-text-editor-all-languages-tabs.md)   
  [[オプション]、[テキスト エディター]、[ファイル拡張子]](../../ide/reference/options-text-editor-file-extension.md)   

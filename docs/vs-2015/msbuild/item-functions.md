@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3477c7f4a9f6368ce8c2ef5a87c101e8ef66f4bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758584"
 ---
 # <a name="item-functions"></a>項目用の関数
@@ -103,5 +103,5 @@ MSBuild 4.0 以降、タスクとターゲットのコードは項目用の関�
   -->  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [項目](../msbuild/msbuild-items.md)
