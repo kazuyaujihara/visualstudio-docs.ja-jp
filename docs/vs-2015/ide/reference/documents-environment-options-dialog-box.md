@@ -86,7 +86,7 @@ ms.locfileid: "54778579"
  **コードページでデータが保存できない場合、Unicode でドキュメントを保存**  
  このオプションを選択すると、選択したコードページと互換性のない情報を含むファイルが既定で Unicode として保存されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)   
  [その他のファイル](../../ide/reference/miscellaneous-files.md)   
  [テキストの検索と置換](../../ide/finding-and-replacing-text.md)
