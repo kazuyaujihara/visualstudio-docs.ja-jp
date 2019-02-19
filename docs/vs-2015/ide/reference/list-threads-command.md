@@ -47,7 +47,7 @@ Debug.ListThreads [index]
 >Debug.ListThreads   
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [ListCallStack コマンド](../../ide/reference/list-call-stack-command.md)   
  [逆アセンブリの一覧表示コマンド](../../ide/reference/list-disassembly-command.md)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
