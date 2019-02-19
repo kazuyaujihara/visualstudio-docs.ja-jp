@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c422b1bb2e41e3b1a848d3957530f43177d9c29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54791806"
 ---
 # <a name="profiling-aspnet-load-tests"></a>ASP.NET ロード テストのプロファイリング
@@ -27,7 +27,7 @@ ASP.NET Web サイト プロジェクトに対して実行する自動 [!INCLUDE
 
  [Microsoft Visual Studio を使用したシステム テストの実行](http://msdn.microsoft.com/library/19fae5c4-5798-4c4c-b531-3e8f901b1130)
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 - [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)
 - [パフォーマンス規則を使用したデータの分析](../profiling/using-performance-rules-to-analyze-data.md)

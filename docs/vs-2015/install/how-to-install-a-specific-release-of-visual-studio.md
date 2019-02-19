@@ -12,13 +12,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756361"
 ---
-# <a name="how-to-install-a-specific-release-of-visual-studio"></a>方法: Visual Studio の特定のリリースをインストールします。
+# <a name="how-to-install-a-specific-release-of-visual-studio"></a>方法: Visual Studio の特定のリリースをインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 最新で最適化されたバージョンのオプション機能をご利用いただけるよう、Visual Studio のセットアップは頻繁に更新されています。  しかし、以前のリリースの Visual Studio 2015 (たとえば、iOS サポートが含まれている Update 1 より前のリリースの Visual Studio 2015) をインストールする場合は、Visual Studio セットアップで強制的に以前のバージョンのフィーチャー マニフェスト ファイルを使用する必要があります。 この記事では、その方法について説明します。
@@ -59,5 +59,5 @@ ms.locfileid: "54756361"
 >   -   rus (ロシア語)
 >   -   trk (トルコ語)
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
  [Visual Studio 管理者ガイド](../install/visual-studio-administrator-guide.md)
