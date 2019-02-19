@@ -7,22 +7,24 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 905193110d8485399b01c1e3c00791154efee637
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824289"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335351"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>方法: Visual Studio 拡張機能のルール ベースの UI コンテキストを使用します。
+
 Visual Studio と特定の Vspackage の読み込みを許可するよく知られている<xref:Microsoft.VisualStudio.Shell.UIContext>s がアクティブ化されます。 ただし、これらの UI コンテキストは問題ありません、粒度を選択しない拡張機能の作成者に残っていますが、ポイントの前にアクティブにする使用可能な UI コンテキストを選択する本当に望んで、VSPackage を読み込みます。 よく知られている UI コンテキストの一覧は、次を参照してください。<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>します。  
   
- パッケージを読み込んでいますが、パフォーマンスに影響あり、必要に応じてよりも早くに読み込むことはベスト プラクティスではありません。 Visual Studio 2015 には、規則に基づいた UI コンテキスト、する UI コンテキストがアクティブになるし、関連付けられている Vspackage が読み込まれる正確な条件を定義する拡張機能の作成者をできるようにするメカニズムの概念が導入されました。  
+パッケージを読み込んでいますが、パフォーマンスに影響あり、必要に応じてよりも早くに読み込むことはベスト プラクティスではありません。 Visual Studio 2015 には、規則に基づいた UI コンテキスト、する UI コンテキストがアクティブになるし、関連付けられている Vspackage が読み込まれる正確な条件を定義する拡張機能の作成者をできるようにするメカニズムの概念が導入されました。  
   
 ## <a name="rule-based-ui-context"></a>ルール ベースの UI コンテキスト  
- 「ルール」は、新しい UI コンテキスト (GUID) と 1 つまたは複数の"Terms"を参照するブール式を組み合わせる論理"and"、「または」、"not"操作。 「条件」は、実行時に動的に評価され、式が再評価されるたびに、用語の変更のいずれか。 式の評価が true と関連付けられた UI コンテキストがアクティブにします。 それ以外の場合、UI コンテキストでは、解除が有効にします。  
+
+「ルール」は、新しい UI コンテキスト (GUID) と 1 つまたは複数の"Terms"を参照するブール式を組み合わせる論理"and"、「または」、"not"操作。 「条件」は、実行時に動的に評価され、式が再評価されるたびに、用語の変更のいずれか。 式の評価が true と関連付けられた UI コンテキストがアクティブにします。 それ以外の場合、UI コンテキストでは、解除が有効にします。  
   
- ルール ベースの UI コンテキストは、さまざまな方法で使用できます。  
+ルール ベースの UI コンテキストは、さまざまな方法で使用できます。  
   
 1. コマンドとツール ウィンドウの可視性の制約を指定します。 UI コンテキスト ルールが満たされるまでは、コマンド/ツール ウィンドウを非表示にすることができます。  
   
@@ -124,11 +126,12 @@ Visual Studio と特定の Vspackage の読み込みを許可するよく知ら�
 ```  
   
 ## <a name="term-types"></a>用語の種類  
- サポートされているさまざまな種類の用語を次に示します。  
+
+サポートされているさまざまな種類の用語を次に示します。  
   
 |用語|説明|  
 |-|-|  
-|{0} この nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID は、UI コンテキストを表します。 という用語は、ときに、UI コンテキストがアクティブで false、それ以外の場合、true になります。|  
+|{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID は、UI コンテキストを表します。 という用語は、ときに、UI コンテキストがアクティブで false、それ以外の場合、true になります。|  
 |HierSingleSelectionName:\<パターン >|アクティブな階層内の選択範囲が 1 つの項目と、選択した項目の名前「パターン」で指定された .Net の正規表現と一致するたびに、用語が true になります。|  
 |UserSettingsStoreQuery:\<クエリ >|"query"は、0 以外の値に評価される必要がありますユーザー設定ストアに完全なパスを表します。 クエリは、"collection"および"propertyName"最後のスラッシュでに分割されます。|  
 |ConfigSettingsStoreQuery:\<クエリ >|"query"は、0 以外の値に評価される必要があります構成設定ストアに完全なパスを表します。 クエリは、"collection"および"propertyName"最後のスラッシュでに分割されます。|  
@@ -138,16 +141,15 @@ Visual Studio と特定の Vspackage の読み込みを許可するよく知ら�
 |SolutionHasProjectCapability:\<式 >|上記に似ていますが、用語はソリューションには、読み込まれているプロジェクトを式に一致する場合に当てはまります。|  
 |SolutionHasProjectFlavor:\<projectTypeGuid >|ソリューション (集計) プロジェクト フレーバーがあり、特定のプロジェクト型 GUID と一致するフレーバーたびに、用語が true になります。|
 
-
-  
 ## <a name="compatibility-with-cross-version-extension"></a>バージョン間の拡張機能との互換性  
- ルール ベースの UI コンテキストは、Visual Studio 2015 の新機能で以前のバージョンに移植しない場合します。 以前のバージョンに移植しない拡張機能/パッケージを Visual Studio の複数のバージョンを対象とする問題を作成します。 これらのバージョンでは、Visual Studio 2013 での自動読み込みと以前のバージョンをする必要がありますを自動で読み込まれる Visual Studio 2015 を防ぐために UI のルールに基づくコンテキストを享受できます。  
+
+ルール ベースの UI コンテキストは、Visual Studio 2015 の新機能で以前のバージョンに移植しない場合します。 以前のバージョンに移植しない拡張機能/パッケージを Visual Studio の複数のバージョンを対象とする問題を作成します。 これらのバージョンでは、Visual Studio 2013 での自動読み込みと以前のバージョンをする必要がありますを自動で読み込まれる Visual Studio 2015 を防ぐために UI のルールに基づくコンテキストを享受できます。  
   
- このようなパッケージをサポートするために、レジストリのエントリを AutoLoadPackages はようになりましたを Visual Studio 2015 以降で、エントリがスキップされることを示すために、値フィールドにフラグを指定できます。 フラグを追加することによってこれできます<xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>します。 Vspackage を追加できるようになりました**SkipWhenUIContextRulesActive**オプションをその<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>を Visual Studio 2015 以降、エントリを無視するかを示す属性です。  
-  
+このようなパッケージをサポートするために、レジストリのエントリを AutoLoadPackages はようになりましたを Visual Studio 2015 以降で、エントリがスキップされることを示すために、値フィールドにフラグを指定できます。 フラグを追加することによってこれできます<xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>します。 Vspackage を追加できるようになりました**SkipWhenUIContextRulesActive**オプションをその<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>を Visual Studio 2015 以降、エントリを無視するかを示す属性です。  
 ## <a name="extensible-ui-context-rules"></a>拡張可能な UI コンテキスト ルール  
- 場合によっては、パッケージは、静的コンテキストの UI のルールを使用することはできません。 たとえば、コマンドの状態がインポートされた MEF プロバイダーでサポートされている種類のエディターに基づいているような機能拡張をサポートしているパッケージがあるとします。 コマンドは、現在の編集の種類をサポートしている拡張機能がある場合に有効です。 このような場合は、に応じてどの MEF 拡張機能は使用可能な条件を変更するため、パッケージ自体は、静的 UI コンテキスト規則を使用することはできません。  
+
+場合によっては、パッケージは、静的コンテキストの UI のルールを使用することはできません。 たとえば、コマンドの状態がインポートされた MEF プロバイダーでサポートされている種類のエディターに基づいているような機能拡張をサポートしているパッケージがあるとします。 コマンドは、現在の編集の種類をサポートしている拡張機能がある場合に有効です。 このような場合は、に応じてどの MEF 拡張機能は使用可能な条件を変更するため、パッケージ自体は、静的 UI コンテキスト規則を使用することはできません。  
   
- ルール ベースの UI コンテキストがハードコーディングされた式をサポートするこのようなパッケージをサポートするために"*"を示すすべて、以下の条項と結合またはします。 これにより、マスター パッケージを既知のルール ベースの UI コンテキストを定義し、このコンテキストにそのコマンドの状態を関連付けます。 その後、マスター パッケージの対象となる任意の MEF 拡張機能では、エディターの他の用語や、マスターの式に影響を与えることがなく、サポートの条項を追加できます。  
+ルール ベースの UI コンテキストがハードコーディングされた式をサポートするこのようなパッケージをサポートするために"*"を示すすべて、以下の条項と結合またはします。 これにより、マスター パッケージを既知のルール ベースの UI コンテキストを定義し、このコンテキストにそのコマンドの状態を関連付けます。 その後、マスター パッケージの対象となる任意の MEF 拡張機能では、エディターの他の用語や、マスターの式に影響を与えることがなく、サポートの条項を追加できます。  
   
- コンス トラクター<xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A>ドキュメントは、拡張可能な UI コンテキスト規則の構文を示します。
+コンス トラクター<xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A>ドキュメントは、拡張可能な UI コンテキスト規則の構文を示します。

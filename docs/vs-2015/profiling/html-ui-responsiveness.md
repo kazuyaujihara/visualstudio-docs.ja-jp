@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54752967"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI の応答性
@@ -193,7 +193,7 @@ if (performance.mark && performance.measure) {
 -   ナビゲーション イベント。 別のページに移動するときに発生します。 イベントのツールヒントには、移動先ページの URL が表示されます。  
   
 ###  <a name="CPUUtilization"></a> CPU 使用率の表示  
- CPU 使用状況グラフにより、過剰な CPU アクティビティがある期間を特定できます。 一定期間内でのアプリの平均 CPU 使用量に関する情報を示します。 情報は、特定のカテゴリを表すように色分けされています。カテゴリには、**[読み込み中]**、**[スクリプティング]**、ガベージ コレクション (**[GC]**)、**[スタイル]**、**[レンダリング]**、**[イメージ デコード中]** があります。 これらのカテゴリの詳細については、このトピックで後述する「 [Profiler event reference](#ProfilerEvents) 」を参照してください。  
+ CPU 使用状況グラフにより、過剰な CPU アクティビティがある期間を特定できます。 一定期間内でのアプリの平均 CPU 使用量に関する情報を示します。 情報は、特定のカテゴリを表すように色分けされています。 カテゴリには、 **[読み込み中]**、 **[スクリプティング]**、ガベージ コレクション (**[GC]**)、 **[スタイル]**、 **[レンダリング]**、 **[イメージ デコード中]** があります。 これらのカテゴリの詳細については、このトピックで後述する「 [Profiler event reference](#ProfilerEvents) 」を参照してください。  
   
  CPU 使用状況グラフは、1 つまたは複数の CPU の使用率値を 1 つのパーセント値にまとめて、すべてのアプリ スレッドに費やされた時間を示します。 CPU 使用率値は、複数の CPU を使用している場合、100% を超えることがあります。  
   
@@ -362,5 +362,5 @@ if (performance.mark && performance.measure) {
   
 -   シングル スレッドのコード実行モデルとパフォーマンスについては、「 [コードの実行](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [アプリのパフォーマンスの分析](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

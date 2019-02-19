@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f230a2270274f85fd799f86caa278bb98cb5fd46
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54772236"
 ---
 # <a name="replace-command"></a>Replace コマンド
@@ -89,7 +89,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [テキストの検索と置換](../../ide/finding-and-replacing-text.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [[検索/コマンド] ボックス](../../ide/find-command-box.md)   

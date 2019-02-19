@@ -25,10 +25,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 94f0fc19c84a5e86dbfff27a88b179f6a9bfb566
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54795485"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>[タスク一覧] \([オプション] ダイアログ ボックス - [環境])
@@ -74,7 +74,7 @@ ms.locfileid: "54795485"
 > [!NOTE]
 >  既定のコメント トークンの名前変更や削除はできませんが、優先順位は変更できます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [タスク一覧の使用](../../ide/using-the-task-list.md)   
  [コードへのブックマークの設定](../../ide/setting-bookmarks-in-code.md)   
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)

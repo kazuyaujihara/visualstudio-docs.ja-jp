@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758471"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
@@ -67,7 +67,7 @@ ms.locfileid: "54758471"
 |DisableFastUpToDateCheck|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のみに適用されるブール値です。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ビルド マネージャーは、FastUpToDateCheck と呼ばれるプロセスを使用して、プロジェクトをリビルドして最新の状態にする必要があるかどうかを判断します。 この判断を行う機能としては、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] より、このプロセスの方が高速です。 DisableFastUpToDateCheck プロパティを `true` に設定すると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ビルド マネージャーをバイパスし、プロジェクトが最新の状態かどうかを判断するために [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] を使用するように強制できます。|  
 |DocumentationFile|XML ドキュメント ファイルとして生成されるファイルの名前です。 この名前はファイル名のみを示し、パス情報は含んでいません。|  
 |ErrorReport|コンパイラ タスクで内部コンパイル エラーを報告するかどうかを指定します。 有効な値は "prompt"、"send"、または "none" です。 このプロパティは、`/errorreport` コンパイラ スイッチに相当します。|  
-|ExcludeDeploymentUrl|プロジェクト ファイルに次の要素が含まれている場合は、[GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md) によって、deploymentProvider タグが配置マニフェストに追加されます。<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> ただし、ExcludeDeploymentUrl を使用すると、上記の URL が指定されている場合でも、配置マニフェストに deploymentProvider タグが追加されないようにすることができます。 これを行うには、次のプロパティをプロジェクト ファイルに追加します。<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **注:** ExcludeDeploymentUrl は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE では公開されていないため、プロジェクト ファイルを手動で編集する方法でのみ設定できます。 このプロパティを設定しても、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内での発行には影響はありません。つまり、PublishUrl で指定された URL に deploymentProvider タグが追加されます。|  
+|ExcludeDeploymentUrl|プロジェクト ファイルに次の要素が含まれている場合は、[GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md) によって、deploymentProvider タグが配置マニフェストに追加されます。<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> ただし、ExcludeDeploymentUrl を使用すると、上記の URL が指定されている場合でも、配置マニフェストに deploymentProvider タグが追加されないようにすることができます。 これを行うには、次のプロパティをプロジェクト ファイルに追加します。<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **注意:** ExcludeDeploymentUrl は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE では公開されていないため、プロジェクト ファイルを手動で編集する方法でのみ設定できます。 このプロパティを設定しても、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内での発行には影響はありません。つまり、PublishUrl で指定された URL に deploymentProvider タグが追加されます。|  
 |FileAlignment|出力ファイルでセクションをアラインするサイズをバイト単位で指定します。 有効値は 512、1024、2048、4096、および 8192 です。 このプロパティは、`/filealignment` コンパイラ スイッチに相当します。|  
 |FrameworkPathOverride|mscorlib.dll および microsoft.visualbasic.dll の位置を指定します。 このパラメーターは、vbc.exe コンパイラの `/sdkpath` スイッチに相当します。|  
 |GenerateDocumentation|ビルドによってドキュメントを生成するかどうかを示すブール値パラメーターです。 `true` に設定すると、ビルドによってドキュメント情報が生成され、ビルド タスクが作成した実行可能ファイルまたはライブラリの名前と共に .xml ファイルに格納されます。|  
@@ -129,5 +129,5 @@ ms.locfileid: "54758471"
 |Win32Manifest|最終的なアセンブリに埋め込むマニフェスト ファイルの名前です。 このパラメーターは、`/win32Manifest` コンパイラ スイッチに相当します。|  
 |Win32Resource|最終的なアセンブリに埋め込む Win32 リソースのファイル名です。 このパラメーターは、`/win32resource` コンパイラ スイッチに相当します。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8be45de29f379161845cc7ba8ec58d2d1bc9285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756442"
 ---
 # <a name="stopprofile"></a>StopProfile
@@ -57,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|プロファイル関数呼び出し、プロファイル レベル、または呼び出しとレベルの組み合わせがまだ実装されていません。|  
 |PROFILE_OK|呼び出しに成功しました。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  StartProfile および StopProfile によって、プロファイル レベルの開始/停止状態を制御します。 開始/停止の既定値は 1 です。 初期値はレジストリで変更できます。 StartProfile を呼び出すたびに、開始/停止が 1 に設定され、StopProfile を呼び出すたびに 0 に設定されます。  
   
  開始/停止が 0 よりも大きい場合、そのレベルの開始/停止状態はオンになります。 開始/停止が 0 以下の場合、開始/停止状態はオフになります。  
@@ -68,9 +68,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>関数の情報  
- ヘッダー:VSPerf.h で宣言  
+ ヘッダー : VSPerf.h で宣言  
   
- インポート ライブラリ:VSPerf.lib  
+ インポート ライブラリ : VSPerf.lib  
   
 ## <a name="example"></a>例  
  StopProfile メソッドの例を以下に示します。 この例は、[PROFILE_CURRENTID](../profiling/profile-currentid.md) で識別される同じスレッドまたはプロセスに対して、StartProfile メソッドが呼び出されていることを前提としています。  
@@ -109,5 +109,5 @@ void ExerciseStopProfile()
 }  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)

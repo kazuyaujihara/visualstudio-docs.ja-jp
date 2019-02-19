@@ -1,5 +1,5 @@
 ---
-title: PTVS の概要。対話型 Python |Microsoft Docs
+title: 'PTVS の概要: 対話型 Python |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -10,13 +10,13 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 4fba8bf658a50a7a7e28abace1eb622ab14f5f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780987"
 ---
-# <a name="getting-started-with-ptvs-interactive-python"></a>PTVS の概要。対話型の Python
+# <a name="getting-started-with-ptvs-interactive-python"></a>PTVS の概要: 対話型の Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 対話型のプロンプトや read-eval-print ループ (REPL) は、生産性の高いプログラミング言語のための重要なツールです。  これにより、コードのスニペットを実行して API を発見および理解したり、API の使用を試したり、プロジェクトやプログラムなどの実動コードを対話形式で開発したりすることが可能になります。  
@@ -33,6 +33,6 @@ ms.locfileid: "54780987"
   
  これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=yc2CROtTsC0&index=5&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)で視聴できます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Wiki ドキュメント](https://github.com/Microsoft/PTVS/wiki/Interactive-REPL)   
  [PTVS の概要と詳細に関するビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

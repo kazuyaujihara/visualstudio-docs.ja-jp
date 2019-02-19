@@ -1,4 +1,4 @@
----
+﻿---
 title: '[ビルド] ページ (プロジェクト デザイナー) (C#) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 066535309c7001c3f7a951f68321f7530a06ed05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54805322"
 ---
 # <a name="build-page-project-designer-c"></a>[ビルド] ページ (プロジェクト デザイナー) (C#)
@@ -41,7 +41,7 @@ ms.locfileid: "54805322"
  表示または変更する構成設定を指定します。 この設定は、**[アクティブ (Debug)]** (既定)、**[Debug]**、**[Release]**、または **[すべての構成]** に指定できます。  
   
  **プラットフォーム**  
- 表示または変更するプラットフォーム設定を指定します。 既定の設定は **[アクティブ (Any CPU)]** です。 アクティブなプラットフォームは、**構成マネージャー**を使って変更できます。 詳細については、「[方法 :構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)」を参照してください。  
+ 表示または変更するプラットフォーム設定を指定します。 既定の設定は **[アクティブ (Any CPU)]** です。 アクティブなプラットフォームは、**構成マネージャー**を使って変更できます。 詳細については、「[How to: Create and Edit Configurations](../../ide/how-to-create-and-edit-configurations.md)」(方法 : 構成を作成および編集する) を参照してください。  
   
 ## <a name="general"></a>全般  
  次のオプションでは、いくつかの C# コンパイラ設定を構成できます。  
@@ -120,6 +120,6 @@ ms.locfileid: "54805322"
  **詳細設定**  
  クリックすると、[[ビルドの詳細設定] ダイアログ ボックス (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) ダイアログ ボックスが表示されます。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)   
  [C# コンパイラ オプション](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)

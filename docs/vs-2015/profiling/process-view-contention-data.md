@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e43541ddb75b067faa23437d315ce5f239256b1a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796779"
 ---
 # <a name="process-view---contention-data"></a>プロセス ビュー - 競合データ
@@ -41,6 +41,6 @@ ms.locfileid: "54796779"
 |**Name**|プロセスまたはスレッドの名前。|  
 |**ID (一意)**|プロファイラーによって生成される、プロセスまたはスレッドに固有の ID。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
  [プロセス ビュー](../profiling/process-view.md)

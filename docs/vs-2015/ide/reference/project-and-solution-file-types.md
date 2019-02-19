@@ -31,10 +31,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b0c4a353923bbf5d98bd2ef4fcb3c5fe28447fe8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54773337"
 ---
 # <a name="project-and-solution-file-types"></a>プロジェクト ファイルとソリューション ファイルの種類
@@ -61,5 +61,5 @@ ms.locfileid: "54773337"
   
  [Unicode](http://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [ソリューションおよびプロジェクト](../../ide/solutions-and-projects-in-visual-studio.md)

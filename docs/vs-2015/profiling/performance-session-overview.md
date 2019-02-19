@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce2c8f124b30d7ff85a96d857894bd84578b318c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803141"
 ---
 # <a name="performance-session-overview"></a>パフォーマンス セッションの概要
@@ -76,6 +76,6 @@ ms.locfileid: "54803141"
 ## <a name="generate-a-report-of-the-results"></a>結果のレポートの生成  
  パフォーマンス レポートのビューはどれも、行をメールやスプレッドシートに貼り付けることができます。1 つ以上のビューのデータを含むレポートを生成できます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [概要](../profiling/overviews-performance-tools.md)   
  [チュートリアル: パフォーマンスの問題を特定する](../profiling/walkthrough-identifying-performance-problems.md)

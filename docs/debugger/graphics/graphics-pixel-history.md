@@ -41,7 +41,7 @@ Visual Studio Graphics Analyzer の [ピクセル履歴] ウィンドウでは�
 |アイコン|除外の理由|  
 |----------|--------------------------|  
 |![深度テスト エラーのアイコン。](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|ピクセルは深度テストに失敗したため除外されました。|  
-|![ハサミ テスト エラーのアイコン。](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")| ピクセルはハサミ テストに失敗したため除外されました。|  
+|![ハサミ テスト エラーのアイコン。](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|ピクセルはハサミ テストに失敗したため除外されました。|  
 |![ステンシル テスト エラーのアイコン。](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|ピクセルはステンシル テストに失敗したため除外されました。|  
   
 ### <a name="draw-call-exclusion"></a>描画呼び出しの除外  

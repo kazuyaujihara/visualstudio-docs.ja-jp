@@ -15,13 +15,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758666"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>方法: Visual Studio ビルド処理を拡張する
+# <a name="how-to-extend-the-visual-studio-build-process"></a>方法 : Visual Studio ビルド処理を拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 
@@ -59,7 +59,7 @@ ms.locfileid: "54758666"
 |ターゲット名|説明|
 |-----------------|-----------------|
 |`BeforeCompile`、 `AfterCompile`|これらのターゲットのいずれかに挿入されているタスクは、コア コンパイル完了の前または後に実行されます。 ほとんどのカスタマイズはこれら 2 つのターゲットのいずれかで行われます。|
-|`BeforeBuild`、 `AfterBuild`|これらのターゲットのいずれかに挿入されているタスクは、ビルド内の他のすべての前または後に実行されます。 **注:**`BeforeBuild`と`AfterBuild`ターゲットは、ほとんどのプロジェクト ファイルの末尾にあるコメントで既に定義されています。 これにより、ビルド前イベントとビルド後イベントをプロジェクト ファイルに簡単に追加できます。|
+|`BeforeBuild`、 `AfterBuild`|これらのターゲットのいずれかに挿入されているタスクは、ビルド内の他のすべての前または後に実行されます。 **注:**  `BeforeBuild` ターゲットと `AfterBuild` ターゲットは、ほとんどのプロジェクト ファイルの終わりにあるコメントで既に定義されています。 これにより、ビルド前イベントとビルド後イベントをプロジェクト ファイルに簡単に追加できます。|
 |`BeforeRebuild`、 `AfterRebuild`|これらのターゲットのいずれかに挿入されているタスクは、コア再ビルド機能の呼び出しの前または後に実行されます。 Microsoft.Common.targets のターゲット実行順序は `BeforeRebuild`、`Clean`、`Build`、`AfterRebuild` です。|
 |`BeforeClean`、 `AfterClean`|これらのターゲットのいずれかに挿入されているタスクは、コア クリーン機能の呼び出しの前または後に実行されます。|
 |`BeforePublish`、 `AfterPublish`|これらのターゲットのいずれかに挿入されているタスクは、コア公開機能の呼び出しの前または後に実行されます。|
@@ -126,5 +126,5 @@ ms.locfileid: "54758666"
 |`CleanDependsOn`|カスタム ビルド処理からの出力をクリーンアップする場合にオーバーライドするプロパティ。|
 |`CompileDependsOn`|コンパイル手順の前または後にカスタム プロセスを挿入する場合にオーバーライドするプロパティ。|
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
  [Visual Studio の統合](../msbuild/visual-studio-integration-msbuild.md) [MSBuild の概念](../msbuild/msbuild-concepts.md)[します。ターゲット ファイル](../msbuild/msbuild-dot-targets-files.md)

@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7387f2bc55d00695e85df3b023914e8d6fe9696d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768086"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
@@ -106,10 +106,10 @@ VSPerfCmd /Attach:MyService.exe
 |**Off**|標準的な .NET プロファイル用の環境変数を削除します。 このオプションは、グローバルではない VSPerfClrEnv オプションを使用してプロファイラー環境変数を設定した場合に使用します。|  
 |**GlobalOff**|グローバルな .NET プロファイル用の環境変数を削除します。 プロファイラーではなく、オペレーティング システムによってアプリケーションが起動された場合に、このオプションを使用します。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  IDE のパフォーマンス エクスプローラーを使用して起動されたマネージド アプリケーションの場合、アプリケーションのプロファイルにこれらのオプションは必要ありません。 必要なすべての環境設定は、パフォーマンス エクスプローラーによって設定されます。  
   
  プロファイル中に正しい環境が設定されていないと、分析時に警告が報告され、マネージド関数名は正しく解決されません。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -27,10 +27,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54763285"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
@@ -157,7 +157,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 </asp:ScriptManager>
 ```
 
- IntelliSense では、ASP.NET AJAX Web アプリケーションのアセンブリ内にリソースとして埋め込まれるスクリプト ファイルもサポートされます。 埋め込みスクリプト リソースの詳細については、次を参照してください。[チュートリアル。JavaScript ファイルをリソースとしてアセンブリに埋め込む](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)します。
+ IntelliSense では、ASP.NET AJAX Web アプリケーションのアセンブリ内にリソースとして埋め込まれるスクリプト ファイルもサポートされます。 埋め込みスクリプト リソースの詳細については、次を参照してください。[チュートリアル: JavaScript ファイルをリソースとしてアセンブリに埋め込む](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)します。
 
 ####  <a name="ReferenceDirectives"></a> 参照ディレクティブ
  `reference` ディレクティブを使用すると、現在編集中のスクリプトとその他のスクリプトとの間の関係を [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] で確立できます。 `reference` ディレクティブにより、現在のスクリプト ファイル内のスクリプトのコンテキストにスクリプト ファイルを含めることができます。 これにより、コードの入力時に、外部で定義されている関数、型、およびフィールドを IntelliSense で参照できます。

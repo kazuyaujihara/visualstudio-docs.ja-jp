@@ -1,4 +1,4 @@
----
+﻿---
 title: スニペットのトラブルシューティング | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7fe80ad6c3983b35f97071093428bf7f356292b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803763"
 ---
 # <a name="troubleshooting-snippets"></a>スニペットのトラブルシューティング
@@ -39,5 +39,5 @@ IntelliSense コード スニペットに関する問題は、通常は 2 つの
   
 -   変数が未定義の可能性があります。 スニペット内の未定義の変数は強調表示されます。 そうなっていない場合は、スニペットの作成者にエラーとして報告できます。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [コード スニペット](../ide/code-snippets.md)

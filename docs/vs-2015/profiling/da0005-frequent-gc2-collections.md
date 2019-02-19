@@ -1,14 +1,9 @@
 ---
 title: 'DA0005: 頻繁な GC2 のコレクションです | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0005
 - vs.performance.rules.DAManyGC2Collections
@@ -18,13 +13,13 @@ ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 80b3f769a151974559f70d247696fd7abb794731
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5817943ebca51433e64ae3b549af76522992f018
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745784"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794104"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: 頻繁な GC2 のコレクションです
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +41,6 @@ RuleId |DA 0005 |
  この規則は、ジェネレーション 2 のガベージ コレクションの発生率が高くなりすぎた場合に適用されます。 有効期間が比較的短いオブジェクトの多くが、ジェネレーション 1 のコレクションでは収集されずにジェネレーション 2 のコレクションで収集される場合、メモリ管理のコストが簡単に高くなる可能性があります。 詳細については、MSDN Web サイトの「Rico Mariani's Performance Tidbits」 (Rico Mariani のパフォーマンスに関する話題) の「[Mid-life crisis](http://go.microsoft.com/fwlink/?LinkId=177835)」 (有効期間半ばでの危機) の投稿を参照してください。  
   
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法  
- [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md) レポートを確認して、メモリ割り当てに関するアプリケーションのパターンを把握します。 使用して、[オブジェクトの有効期間ビュー](../profiling/object-lifetime-view.md)オブジェクトはジェネレーション 2 およびその後、そこから解放されるに残っており、プログラムのデータを確認します。 [割り当てビュー](../profiling/dotnet-memory-allocations-view.md)を使用して、これらの割り当てが行われた実行パスを判断します。  
+ [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md) レポートを確認して、メモリ割り当てに関するアプリケーションのパターンを把握します。 [オブジェクトの有効期間ビュー](../profiling/object-lifetime-view.md)を使用して、ジェネレーション 2 に残っており、その後そこから解放される、プログラムのデータ オブジェクトを確認します。 [割り当てビュー](../profiling/dotnet-memory-allocations-view.md)を使用して、これらの割り当てが行われた実行パスを判断します。  
   
  ガベージ コレクションのパフォーマンスの向上の方法の詳細については、Microsoft Web サイトの「[ガベージ コレクターの基本とパフォーマンスのヒント](http://go.microsoft.com/fwlink/?LinkId=148226)」を参照してください。 自動ガベージ コレクションのオーバーヘッドについては、「[Large Object Heap Uncovered](http://go.microsoft.com/fwlink/?LinkId=177836)」 (大きなオブジェクト ヒープの秘密) を参照してください。
-
-
-

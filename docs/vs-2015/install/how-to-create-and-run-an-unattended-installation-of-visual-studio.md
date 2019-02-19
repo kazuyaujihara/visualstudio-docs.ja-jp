@@ -1,5 +1,5 @@
 ---
-title: '方法: 作成し、無人インストールの実行 |Microsoft Docs'
+title: '方法: を作成し、無人インストールの実行 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -13,13 +13,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803563"
 ---
-# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>方法: 作成し、Visual Studio の無人インストールの実行
+# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>方法: Visual Studio の無人インストールを作成して実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のインストール アプリケーションは、DVD などのメディアの代わりに、イントラネット経由での無人インストール (つまり、カスタマイズしたサイレント インストール) として実行できます。 このトピックでは、準備する方法を説明します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]この種のネットワーク共有からインストールします。
@@ -114,7 +114,7 @@ ms.locfileid: "54803563"
 
 2. **[スタート]** メニューを開き、 **[ファイル名を指定して実行]** を選択します。
 
-3. 次のテキストを入力します。\\\\*ServerName*\IDEinstall\vs_*製品*/AdminFile PathToAdmindeployment.xml の .exe ファイル
+3. 次のテキストを入力します: \\ \\ *ServerName*\IDEinstall\vs_*製品*.exe/AdminFile PathToAdmindeployment.xml ファイル
 
     AdditionalParametersAsNeeded
 
@@ -173,7 +173,7 @@ ms.locfileid: "54803563"
 
 2.  プロダクト キーを入力します。
 
-     詳細については、「[方法:Visual Studio プロダクト キーを検索](../install/how-to-locate-the-visual-studio-product-key.md)、[方法。Visual Studio の展開時に、プロダクト キーを自動的に適用](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)トピックです)。
+     (詳細については、次を参照してください、[方法: Visual Studio プロダクト キーを検索](../install/how-to-locate-the-visual-studio-product-key.md)と[方法: Visual Studio の展開時に、プロダクト キーを自動的に適用](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)トピックです。)。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
  [Visual Studio のインストール](../install/install-visual-studio-2015.md)

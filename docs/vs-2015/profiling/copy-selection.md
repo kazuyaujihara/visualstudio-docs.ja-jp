@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a1e9a4f3451e7ca5c4cb242ecef9374a07213373
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778942"
 ---
 # <a name="copy-selection"></a>選択範囲のコピー
@@ -25,5 +25,5 @@ ms.locfileid: "54778942"
 
 レポート タブから呼び出し履歴全体をコピーするには、**[コピー]** をクリックします。 その後、貼り付けをサポートする任意のプログラムに呼び出し履歴を貼り付けることができます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

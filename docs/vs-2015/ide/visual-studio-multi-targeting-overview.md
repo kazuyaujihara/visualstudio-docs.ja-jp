@@ -1,4 +1,4 @@
----
+﻿---
 title: マルチ ターゲットの概要 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768881"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio のマルチ ターゲットの概要
@@ -60,7 +60,7 @@ ms.locfileid: "54768881"
 >  フレームワークの対象機能は、開発中のアプリケーションが正しく実行されることを保証するわけではありません。 対象のバージョンで実行できるかどうかを確認するために、アプリケーションをテストする必要があります。 .NET Framework 2.0 より前のバージョンのフレームワークを対象にすることはできません。
 
 ## <a name="selecting-a-target-framework-version"></a>対象フレームワークのバージョンの選択
- プロジェクトを作成するときに、**[新しいプロジェクト]** ダイアログ ボックスで、対象の [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョンを選択します。 この選択内容に基づいて、使用できるプロジェクト テンプレートの一覧が抽出されます。 既存のプロジェクトでは、プロジェクトのプロパティ ダイアログ ボックス内で、対象となる [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョンを変更できます。 詳細については、「[方法 :.NET Framework のターゲット バージョンを指定する](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
+ プロジェクトを作成するときに、**[新しいプロジェクト]** ダイアログ ボックスで、対象の [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョンを選択します。 この選択内容に基づいて、使用できるプロジェクト テンプレートの一覧が抽出されます。 既存のプロジェクトでは、プロジェクトのプロパティ ダイアログ ボックス内で、対象となる [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョンを変更できます。 詳細については、「[How to: Target a Version of the .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」(方法: .NET Framework のバージョンをターゲットにする) を参照してください。
 
 > [!NOTE]
 >  Visual Studio Express Edition では、**[新しいプロジェクト]** ダイアログ ボックスで対象のフレームワークを設定することはできません。
@@ -76,7 +76,7 @@ ms.locfileid: "54768881"
  アセンブリ参照の詳細については、「[Resolving Assemblies at Design Time](../msbuild/resolving-assemblies-at-design-time.md)」(デザイン時のアセンブリの解決) を参照してください。
 
 ## <a name="enabling-linq"></a>LINQ の有効化
- .NET Framework Version 3.5 以降を対象にする場合は、System.Core の参照と System.Linq のプロジェクトレベル インポート (Visual Basic のみ) が自動的に追加されます。 LINQ 機能を使用する場合は、[Option Infer] もオンにする必要があります (Visual Basic のみ)。 対象をそれより前のバージョンの .NET Framework に変更すると、この参照とインポートは自動的に削除されます。 詳細については、「[方法 :LINQ プロジェクトを作成する](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2)」を参照してください。
+ .NET Framework Version 3.5 以降を対象にする場合は、System.Core の参照と System.Linq のプロジェクトレベル インポート (Visual Basic のみ) が自動的に追加されます。 LINQ 機能を使用する場合は、[Option Infer] もオンにする必要があります (Visual Basic のみ)。 対象をそれより前のバージョンの .NET Framework に変更すると、この参照とインポートは自動的に削除されます。 詳細については、「[How to: Create a LINQ Project](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2)」(方法: LINQ プロジェクトを作成する) を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md) [ASP.NET Web プロジェクトの .NET Framework のマルチ ターゲット](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)[プラットフォームの互換性とシステム要件](http://www.microsoft.com/visualstudio/eng/products/compatibility)

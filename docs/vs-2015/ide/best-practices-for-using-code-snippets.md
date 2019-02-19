@@ -1,4 +1,4 @@
----
+﻿---
 title: コード スニペットを使用するためのベスト プラクティス | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 750d96442f59c29a8e565e6b57eda292656ad1f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770324"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>コード スニペットを使用するためのベスト プラクティス
@@ -25,7 +25,7 @@ ms.locfileid: "54770324"
 コード スニペットのコードは、最も基本的な処理方法のみを示しています。 ほとんどのアプリケーションでは、そのアプリケーションに合わせてコードを変更する必要があります。  
   
 ## <a name="handling-exceptions"></a>例外処理  
- 通常、コード スニペットの Try…Catch ブロックは、すべての例外をキャッチして再スローします。 これは、プロジェクトにより適していない場合があります。 例外ごとに、対応方法はいくつかあります。 たとえば、「[方法:処理、例外 try/catch を使用して (c# プログラミング ガイド)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818)と[お試しください.キャッチしてください.Finally ステートメント](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)します。  
+ 通常、コード スニペットの Try…Catch ブロックは、すべての例外をキャッチして再スローします。 これは、プロジェクトにより適していない場合があります。 例外ごとに、対応方法はいくつかあります。 たとえば、「[方法: try/catch を使用して例外を処理する (C# プログラミング ガイド)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818)」と「[Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)」(Try...Catch...Finally ステートメント) を参照してください。  
   
 ## <a name="file-locations"></a>ファイルの位置  
  ファイルの位置をアプリケーションに採用する場合、次の点を考慮する必要があります。  

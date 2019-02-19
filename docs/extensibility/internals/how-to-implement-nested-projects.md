@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13993fca03afce3e14b5a016eba7924226c24b8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037838"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335247"
 ---
 # <a name="how-to-implement-nested-projects"></a>方法: 入れ子になったプロジェクトを実装します。
 
@@ -65,7 +65,7 @@ ms.locfileid: "55037838"
      親と子プロジェクトがプログラムによってインスタンス化されるため、この時点で入れ子になったプロジェクトのプロパティを設定できます。
 
     > [!NOTE]
-    > だけでなく、入れ子になったプロジェクトからコンテキスト情報を受け取ることは、親プロジェクトに、チェックしてその項目の任意のコンテキストが含まれるかどうかも要求できます<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>します。 この方法で、余分なダイナミック ヘルプの属性と固有のメニュー オプションを個別の入れ子になったプロジェクトに追加できます。
+    > だけでなく、入れ子になったプロジェクトからコンテキスト情報を受け取ることは、親プロジェクトに、チェックしてその項目の任意のコンテキストが含まれるかどうかも要求できます[__VSHPROPID します。VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>)します。 この方法で、余分なダイナミック ヘルプの属性と固有のメニュー オプションを個別の入れ子になったプロジェクトに追加できます。
 
 10. 表示、階層が構築された**ソリューション エクスプ ローラー**を呼び出して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>メソッド。
 

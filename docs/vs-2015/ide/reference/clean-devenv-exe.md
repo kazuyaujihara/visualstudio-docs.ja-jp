@@ -1,4 +1,4 @@
----
+﻿---
 title: -Clean (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b6aed7fd5ac6282d66d44ae04c4a989b72a7c37b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834456"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
@@ -43,7 +43,7 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
  /projectconfig `ProjConfigName`  
  任意。 指定した `/project` のクリーン時に使用されるプロジェクトのビルド構成の名前。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  このスイッチは、統合開発環境 (IDE) 内の **[ソリューションのクリーン]** メニュー コマンドと同じ機能を実行します。  
   
  空白を含む文字列を二重引用符で囲みます。  
@@ -61,7 +61,7 @@ Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"   
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   

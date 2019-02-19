@@ -56,11 +56,10 @@
 ## [Azure App Service に発行する](publish-app-svc.md)
 ## [フォルダーに発行する](publish-folder.md)
 
-
 # [ワークロード](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
-### [JavaScript](javascript.md)
+### [JavaScript および TypeScript](javascript.md)
 ## [Azure](azure-workload.md)
 ### [Azure Functions の紹介](azure-functions.md)
 ### [チュートリアル: Azure Functions](azure-functions-lab.md)

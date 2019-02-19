@@ -1,5 +1,5 @@
----
-title: 'チュートリアル: Visual c# または Visual Basic での単純なアプリケーションの作成 |Microsoft Docs'
+﻿---
+title: 'チュートリアル : Visual C# または Visual Basic による簡単なアプリケーションの作成 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54802617"
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>チュートリアル: Visual c# または Visual Basic による簡単なアプリケーションを作成します。
+# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>チュートリアル : Visual C# または Visual Basic による簡単なアプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルを完了すると、Visual Studio を使用してアプリケーションを開発する際に使用できるさまざまなツール、ダイアログ ボックス、およびデザイナーの使用方法を習得できます。 簡単な "Hello, World" スタイルのアプリケーションの作成、UI の設計、コードの追加、およびエラーのデバッグを行いながら、統合開発環境 (IDE) での作業方法について学習します。  
@@ -47,7 +47,7 @@ ms.locfileid: "54802617"
   
  **[オプション]** ダイアログ ボックスを使用すると、Visual Studio をさらにカスタマイズできます。たとえば、エディターのテキストのフォント フェイスとサイズや IDE の配色テーマを変更できます。 適用した設定の組み合わせによっては、そのダイアログ ボックスに自動的に表示されない項目があります。 **[すべての設定を表示]** チェック ボックスをオンにすると、使用可能なすべてのオプションを表示できます。  
   
- 図 3:[オプション] ダイアログ ボックス  
+ 図 3: [オプション] ダイアログ ボックス  
   
  ![[すべての設定を表示] オプションをオンにした [オプション] ダイアログ ボックス](../ide/media/exploreide-optionsdialogbox.png "ExploreIDE-Optionsdialogbox")  
   
@@ -80,7 +80,7 @@ ms.locfileid: "54802617"
   
     ![メニュー バーで、[ファイル]、[新規作成]、[プロジェクト] の順に選択します。](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
   
-    また、**[クイック起動]** ボックスに「 **新しいプロジェクト** 」と入力しても、同じことができます。  
+    また、[ **クイック起動** ] ボックスに「 **新しいプロジェクト** 」と入力しても、同じことができます。  
   
     ![クイック起動ボックスで新しいプロジェクトを指定](../ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE-QuickLaunchNewProjectsmall")  
   
@@ -94,7 +94,7 @@ ms.locfileid: "54802617"
   
    Visual Studio は HelloWPFApp というプロジェクトとソリューションを作成し、 **ソリューション エクスプローラー** は各種ファイルを表示します。 WPF デザイナーは、MainWindow.xaml のデザイン ビューと XAML ビューを分割ビューに表示します。 分割線をスライドして、それぞれのビューの表示範囲を増減できます。  ビジュアル ビューか XAML ビューの一方のみを表示することも選択できます。 (詳細については、「 [Windows フォーム開発者向け WPF デザイナー](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)」を参照してください)。 次の項目が **ソリューション エクスプローラー**に表示されます。  
   
-   図 5:プロジェクト項目  
+   図 5: プロジェクト項目  
   
    ![HelloWPFApp ファイルを読み込んだソリューション エクスプローラー](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
@@ -132,7 +132,7 @@ ms.locfileid: "54802617"
   
    ウィンドウは次の図のようになります。  
   
-   図7TextBlock コントロール greetings ウィンドウ  
+   図 7: TextBlock コントロールが配置されている Greetings ウィンドウ  
   
    ![グリーティング フォームの TextBlock コントロール](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
@@ -162,7 +162,7 @@ ms.locfileid: "54802617"
   
     ウィンドウは、次のようになります。  
   
-    図 8-20。Greetings ウィンドウの Radiobutton です。  
+    図 8: Greetings ウィンドウの RadioButton  
   
     ![テキストブロックと 2 つのオプション ボタンのあるグリーティング フォーム](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")  
   
@@ -259,7 +259,7 @@ ms.locfileid: "54802617"
   
     ![[デバッグ] メニューの [デバッグの開始] コマンド](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-    IOException が発生したことを示すダイアログ ボックスが表示されます。リソース 'mainwindow.xaml' が見つけられないことが示されます。  
+    ダイアログ ボックスが表示され、IOException が発生し、リソース 'mainwindow.xaml' を見つけることができないことが示されます。  
   
 2. **[OK]** を選択し、デバッガーを停止します。  
   
@@ -331,7 +331,7 @@ ms.locfileid: "54802617"
   
    このチュートリアルは完了しました。 ビルドした .exe は、ソリューションとプロジェクトのディレクトリ (…\HelloWPFApp\HelloWPFApp\bin\Release\\) の下にあります。 その他の例については、「[Visual Studio Samples](../ide/visual-studio-samples.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [Visual Studio 2015 の新機能](../what-s-new-in-visual-studio-2015.md)   
  [Visual Studio を使用した開発の開始](../ide/get-started-developing-with-visual-studio.md)   
  [生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)

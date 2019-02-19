@@ -21,10 +21,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0abb0a38e63231dfddea391b3a63a73ae982bd24
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54802559"
 ---
 # <a name="options-text-editor-all-languages"></a>[オプション]、[テキスト エディター]、[すべての言語]
@@ -96,7 +96,7 @@ ms.locfileid: "54802559"
  [ナビゲーション バー]  
  選択すると、コード エディターの上部に**ナビゲーション バー**が表示されます。 そのドロップダウンの **[オブジェクト]** 一覧と **[メンバー]** 一覧では、コードの特定のオブジェクトを選択したり、そのメンバーから選択したり、コード エディターで選択したメンバーの宣言に移動したりできます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [[オプション]、[テキスト エディター]、[すべての言語]、[タブ]](../../ide/reference/options-text-editor-all-languages-tabs.md)   
  [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)   
  [IntelliSense の使用](../../ide/using-intellisense.md)

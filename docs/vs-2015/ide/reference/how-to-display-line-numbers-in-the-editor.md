@@ -1,5 +1,5 @@
----
-title: '方法: エディターで行番号を表示 |Microsoft Docs'
+﻿---
+title: '方法 : エディターで行番号を表示する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,13 +15,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f4b38f39fbb7b1f72622be58ee049554cb04f02f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800744"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>方法: エディターで行番号を表示する
+# <a name="how-to-display-line-numbers-in-the-editor"></a>方法 : エディターで行番号を表示する
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
@@ -42,7 +42,7 @@ ms.locfileid: "54800744"
 > [!NOTE]
 >  使う言語または設定によっては、**[オプション]** ダイアログ ボックスの **[すべての設定を表示]** チェック ボックスをオンにして、**[すべての言語]** サブノードを表示する必要がある場合があります。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [エディターのカスタマイズ](../../ide/customizing-the-editor.md)   
  [[テキスト エディター] ([オプション] ダイアログ ボックス)](../../ide/reference/text-editor-options-dialog-box.md)   
  [コードの作成](../../ide/writing-code-in-the-code-and-text-editor.md)

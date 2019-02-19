@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 62b4a3e83b368a015cee30284acee0dbab39ca36
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54779309"
 ---
 # <a name="shell-command"></a>Shell コマンド
@@ -55,7 +55,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
  /outputwindow、/output、/out、または /o  
  任意。 実行可能ファイルの出力が **[出力]** ウィンドウに表示されるように指定します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  /dir、/o、/c の各スイッチは、`Tools.Shell` の直後に指定する必要があります。 実行可能ファイルの名前の後に指定した内容は、その実行可能ファイルにコマンド ライン引数として渡されます。  
   
  定義済みの `Shell` エイリアスは、`Tools.Shell` の代わりに使用できます。  
@@ -83,7 +83,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [[出力] ウィンドウ](../../ide/reference/output-window.md)   

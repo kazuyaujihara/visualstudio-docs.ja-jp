@@ -1,4 +1,4 @@
----
+﻿---
 title: -LCID (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -18,10 +18,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: def8ce2a40e068c602b0182b4580f5e3b524d222
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782224"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -40,7 +40,7 @@ devenv {/LCID|/l} LocaleID
  `LocaleID`  
  必須です。 指定する言語の LCID (ロケール ID)。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  IDE を読み込み、環境用の既定の自然言語を設定します。 この変更はセッション間で保持され、IDE の **[オプション]** ダイアログ ボックスにある **[環境]** オプションの **[国際対応の設定]** ウィンドウに反映されます。  
   
  指定した言語がユーザーのシステムで使用できない場合、/LCID スイッチは無視されます。  
@@ -66,7 +66,7 @@ devenv {/LCID|/l} LocaleID
 devenv /LCID 1033  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)   
  [[国際対応の設定] \([オプション] ダイアログ ボックス - [環境])](../../ide/reference/international-settings-environment-options-dialog-box.md)   
  [ウィンドウ レイアウトをカスタマイズする](../../ide/customizing-window-layouts-in-visual-studio.md)

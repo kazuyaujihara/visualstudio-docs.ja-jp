@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 09562c3372a6dd933d3656f1b2f7ccf7ca68109d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54771031"
 ---
 # <a name="vsinstr"></a>VSInstr
@@ -49,18 +49,18 @@ VSInstr [/U] filename [/options]
 |**DumpFuncs**|指定したイメージ内の関数を一覧表示します。 インストルメンテーションは実行されません。|  
 |**ExcludeSmallFuncs**|小規模関数 (関数呼び出しを行わない短い関数) をインストルメンテーションから除外します。 **ExcludeSmallFuncs** オプションを指定すると、インストルメンテーション オーバーヘッドが軽減されてインストルメンテーションの速度が向上します。<br /><br /> 小規模関数を除外すると、.vsp ファイルのサイズが小さくなり、解析に要する時間も短くなります。|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|.vsp レポート ファイル内のデータ範囲の先頭または末尾を識別するために使用できるプロファイル マーク (レポート内のデータを区切るために使用する識別子) を挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前<br /><br /> `Markid` - プロファイル マークの識別子として使用する正の整数 (long)。|  
-|**Coverage**|カバレッジ インストルメンテーションを実行します。 次のオプションでのみできますを指定できます。**Verbose**、**OutputPath**、**Exclude** および **Logfile** のオプションでのみ使用できます。|  
+|**Coverage**|カバレッジ インストルメンテーションを実行します。 これと併用できるオプションは **Verbose**、**OutputPath**、**Exclude**、**Logfile** だけです。|  
 |**Verbose**|**Verbose** オプションは、インストルメンテーション プロセスに関する詳細情報を表示するために使用します。|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|すべてまたは特定の警告を抑制します。<br /><br /> `Message Number` - 警告番号。 `Message Number` を省略した場合、すべての警告が抑制されます。<br /><br /> 詳細については、「[VSInstr の警告](../profiling/vsinstr-warnings.md)」を参照してください。|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|次の VSInstr データ収集制御オプションのプロファイリング レベルを指定します。<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** - スレッド レベルのデータ収集制御関数を指定します。 プロファイリングは、現在のスレッドに対してのみ開始または停止されます。 他のスレッドのプロファイリング状態は影響を受けません。 既定値は thread です。<br /><br /> **Process** - プロセス レベルのプロファイリング データ収集制御関数を指定します。 プロファイリングは、現在のプロセスのすべてのスレッドに対して開始または停止されます。 他のプロセスのプロファイリング状態は影響を受けません。<br /><br /> **Global** - グローバル レベル (プロセス間) のデータ収集制御関数を指定します。<br /><br /> プロファイリング レベルを指定しない場合は、エラーが発生します。|  
 |**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|データ収集を対象の関数とその関数から呼び出される子関数に制限します。<br /><br /> **Inside** - 対象の関数に入った直後に StartProfile 関数を挿入します。 対象の関数が戻るたびに、その直前に StopProfile 関数を挿入します。<br /><br /> **Outside** - 対象の関数を呼び出すたびに、その直前に StartProfile 関数を挿入します。 対象の関数を呼び出すたびに、その直後に StopProfile 関数を挿入します。<br /><br /> `funcname` - 対象の関数の名前。|  
 |**Suspend** `:{` **Inside** `&#124;` **Outside** `},funcname`|対象の関数とその関数から呼び出される子関数に関するデータ収集を除外します。<br /><br /> **Inside** - 対象の関数に入った直後に SuspendProfile 関数を挿入します。 対象の関数が戻るたびに、その直前に ResumeProfile 関数を挿入します。<br /><br /> **Outside** - 対象の関数に入る直前に SuspendProfile 関数を挿入します。 対象の関数が終了した直後に ResumeProfile 関数を挿入します。<br /><br /> `funcname` - 対象の関数の名前。<br /><br /> 対象の関数に StartProfile 関数が含まれている場合は、その前に SuspendProfile 関数が挿入されます。 対象の関数に StopProfile 関数が含まれている場合は、その後に ResumeProfile 関数が挿入されます。|  
-|**StartOnly:**`{` **Before** `&#124;` **After** `&#124;` **Top** `&#124;` **Bottom** `},funcname`|プロファイリング実行中にデータ収集を開始します。 このオプションは、StartProfile API 関数を指定の位置に挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前。|  
+|**StartOnly:** `{` **Before** `&#124;` **After** `&#124;` **Top** `&#124;` **Bottom** `},funcname`|プロファイリング実行中にデータ収集を開始します。 このオプションは、StartProfile API 関数を指定の位置に挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前。|  
 |**StopOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|プロファイリング実行中にデータ収集を停止します。 このオプションは、StopProfile 関数を指定の位置に挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前。|  
 |**SuspendOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|プロファイリング実行中にデータ収集を停止します。 このオプションは、SuspendProfile API を指定の位置に挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前。<br /><br /> 対象の関数に StartProfile 関数が含まれている場合は、その前に SuspendProfile 関数が挿入されます。|  
 |**ResumeOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|プロファイリング実行中にデータ収集を開始または再開します。<br /><br /> 通常、このオプションは、**SuspendOnly** オプションによってプロファイリングが停止された後にプロファイリングを再開するために使用します。 このオプションは、ResumeProfile API を指定の位置に挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前。<br /><br /> 対象の関数に StopProfile 関数が含まれている場合は、その後に ResumeProfile 関数が挿入されます。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   

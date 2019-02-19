@@ -1,14 +1,9 @@
 ---
 title: コード化された UI テスト エディターを使用したコード化された UI テストの編集 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951269"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793764"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>コード化された UI テスト エディターを使用したコード化された UI テストの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ UI 操作のプロパティの編集
   
  UI 操作のプロパティを **[UI 操作]** ウィンドウで変更する場合は、プロパティを編集する対象の UI 操作を含むテスト メソッドを展開し、UI 操作を選択してから [プロパティ] ウィンドウを使用してプロパティを変更します。  
   
- たとえば、サーバーが使用できないと、Web ブラウザーに関連付けられた UI 操作があるかどうかを示す**Web ページに移動 '<http://Contoso1/default.aspx’>** への URL を変更することが`‘http://Contoso2/default.aspx’`します。  
+ たとえば、サーバーが使用できないときに **Web ページ ‘<http://Contoso1/default.aspx’> に移動**というメッセージを表示する UI 操作が Web ブラウザーに関連付けられている場合は、URL を `‘http://Contoso2/default.aspx’` に変更できます。  
   
  ![コントロールのプロパティ](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 コントロールのプロパティの編集  
@@ -125,7 +120,7 @@ UI 操作のプロパティの編集
  *その他に知っておく必要があること*  
  **重要な問題**  
   
-- ![注意のアイコン](../test/media/caution.gif "注意") **警告:** メソッドを分割する場合は、引き続きそれらの UI 操作を含めるのであれば、既存のメソッドを呼び出すコードを変更し、作成しようとしている新しいメソッドも呼び出すようにする必要があります。 メソッドを分割すると、Microsoft Visual Studio のダイアログ ボックスが表示されます。 既存のメソッドを呼び出すコードを変更し、作成しようとしている新しいメソッドも呼び出すコードにする必要があることを示す警告が表示されます。 **[はい]** をクリックします。  
+- ![注意のアイコン](../test/media/caution.gif "注意")**警告。** メソッドを分割する際は、既存のメソッドを呼び出すコードを変更し、含まれている UI 操作を必要とする場合に作成しようとしている新しいメソッドも呼び出すコードにする必要があります。 メソッドを分割すると、Microsoft Visual Studio のダイアログ ボックスが表示されます。 既存のメソッドを呼び出すコードを変更し、作成しようとしている新しいメソッドも呼び出すコードにする必要があることを示す警告が表示されます。 **[はい]** をクリックします。  
   
   **ヒント**  
   
@@ -149,7 +144,7 @@ UI 操作のプロパティの編集
  *その他に知っておく必要があること*  
  **重要な問題**  
   
-- ![注意のアイコン](../test/media/caution.gif "注意") **警告:** メソッドを移動すると、コード化された UI テスト エディターを使用してそのメソッドを編集できなくなります。 カスタム コードを追加し、コード エディターを使って管理する必要があります。 メソッドを移動すると、Microsoft Visual Studio のダイアログ ボックスが表示されます。 メソッドが UIMap.uitest ファイルから UIMap.cs ファイルまたは UIMap.vb ファイルに移動すること、およびコード化された UI テスト エディターを使用してメソッドを編集できなくなることを示す警告が表示されます。 **[はい]** をクリックします。  
+- ![注意のアイコン](../test/media/caution.gif "注意")**警告。** メソッドを移動すると、コード化された UI テスト エディターを使用してそのメソッドを編集できなくなります。 カスタム コードを追加し、コード エディターを使って管理する必要があります。 メソッドを移動すると、Microsoft Visual Studio のダイアログ ボックスが表示されます。 メソッドが UIMap.uitest ファイルから UIMap.cs ファイルまたは UIMap.vb ファイルに移動すること、およびコード化された UI テスト エディターを使用してメソッドを編集できなくなることを示す警告が表示されます。 **[はい]** をクリックします。  
   
   **ヒント**  
   
@@ -167,7 +162,7 @@ UI 操作のプロパティの編集
  *その他に知っておく必要があること*  
  **重要な問題**  
   
-- ![注意のアイコン](../test/media/caution.gif "注意") **警告**: UI コントロールを検索する前に、テストに関連付けられているアプリケーションが実行されていることを確認してください。  
+- ![注意のアイコン](../test/media/caution.gif "注意")**警告。** UI コントロールを検索する前に、テストに関連付けられているアプリケーションが実行されていることを確認してください。  
   
   **ヒント**  
   
@@ -185,7 +180,7 @@ UI 操作のプロパティの編集
  *その他に知っておく必要があること*  
  **重要な問題**  
   
--   ![注意のアイコン](../test/media/caution.gif "注意") **警告:** UI コントロールを検索する前に、テストに関連付けられているアプリケーションが実行されていることを確認してください。  
+-   ![注意のアイコン](../test/media/caution.gif "注意")**警告。** UI コントロールを検索する前に、テストに関連付けられているアプリケーションが実行されていることを確認してください。  
   
 ##  <a name="CodedUITestEditor_InsertDelay"></a>UI 操作の前に遅延を挿入する  
  ウィンドウの表示やプログレス バーの非表示などの特定のイベントが発生するまでテストを待機させる必要がある場合があります。 コード化された UI テスト エディターを使用し、UI 操作の前に遅延を挿入することで、この処理を実行できます。 遅延する秒数を指定できます。  
@@ -210,7 +205,7 @@ UI 操作のプロパティの編集
 ## <a name="external-resources"></a>外部リソース  
   
 ### <a name="guidance"></a>ガイダンス  
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>FAQ  
  [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -220,12 +215,9 @@ UI 操作のプロパティの編集
 ### <a name="forum"></a>フォーラム  
  [Visual Studio の UI オートメーションのテスト (CodedUI を含む)](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
  [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [データ ドリブンのコード化された UI テストの作成](../test/creating-a-data-driven-coded-ui-test.md)   
  [既存の操作の記録からのコード化された UI テストの生成](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-
-
-

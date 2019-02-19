@@ -32,10 +32,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4575516304862b4d50060a101a08a74f88db4597
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768515"
 ---
 # <a name="link-task"></a>Link タスク
@@ -927,5 +927,5 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    詳細については、「[/VERSION (バージョン情報)](http://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

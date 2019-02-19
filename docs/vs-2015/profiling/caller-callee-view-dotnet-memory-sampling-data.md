@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c43ba87fea6af474975c759cc18dab74b12e8eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782492"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>呼び出し元/呼び出し先ビュー - .NET メモリ サンプリング データ
@@ -52,7 +52,7 @@ ms.locfileid: "54782492"
 |**割り当てバイト数 (関数のみ)**|-   現在の関数の場合、プロファイル実行で関数によって割り当てられたメモリのバイト数。 この数値には、現在の関数によって呼び出された関数で割り当てられたメモリは含まれません。<br />-   呼び出し元関数の場合、呼び出し先関数からの呼び出しによって生成された現在の関数の排他バイト数。<br />-   呼び出し先関数の場合、現在の関数からの呼び出しによって生成された関数のインスタンスで割り当てられたバイト数。 この数値には、呼び出し先関数によって呼び出された関数で割り当てられたバイト数は含まれません。|  
 |**割り当てバイト数 % (関数のみ)**|プロファイル実行で割り当てられたすべてのメモリのバイト数に対する、この関数の排他的割り当てであったバイト数の割合。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
  [呼び出し元/呼び出し先ビュー - .NET メモリ インストルメンテーション データ](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [呼び出し元/呼び出し先ビュー - サンプリング データ](../profiling/caller-callee-view-sampling-data.md)   

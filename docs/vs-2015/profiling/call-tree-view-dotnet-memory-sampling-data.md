@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ed0d8a2ccf8e33b493ddcb71f9ce3a794a06862
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787666"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>コール ツリー ビュー - .NET メモリ サンプリング データ
@@ -53,7 +53,7 @@ ms.locfileid: "54787666"
 |**割り当てバイト数 (関数のみ)**|コール ツリーの親関数が呼び出した、この関数のインスタンスによって割り当てられたメモリのバイト数。 この数には、子関数によって行われた割り当てが含まれません。|  
 |**割り当てバイト数 % (関数のみ)**|プロファイル実行で割り当てられたすべてのメモリのバイト数に対する、この関数の排他的割り当てであったバイト数の割合。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [コール ツリー ビュー - インストルメンテーション](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [コール ツリー ビュー](../profiling/call-tree-view-sampling-data.md)   
  [コール ツリー ビュー](../profiling/call-tree-view-instrumentation-data.md)

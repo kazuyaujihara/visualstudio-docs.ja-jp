@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f08baa8c27debf6493ca090a2a5e80f02b3da982
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774456"
 ---
 # <a name="start-command"></a>Start コマンド
@@ -37,7 +37,7 @@ Debug.Start [address]
  `address`  
  任意。 プログラムの実行を中断するアドレス。ソース コードでのブレークポイントに似ています。 この引数は、デバッグ モードでのみ有効です。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  **Start** コマンドを実行すると、指定したアドレスまで RunToCursor 操作が実行されます。  
   
 ## <a name="example"></a>例  
@@ -47,7 +47,7 @@ Debug.Start [address]
 >Debug.Start  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [[検索/コマンド] ボックス](../../ide/find-command-box.md)   

@@ -19,10 +19,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8d5bf89a4f4b33306176b1fe5e33fa91fb1d325d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54776923"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Pack (LIP) および Visual Studio
@@ -102,5 +102,5 @@ Windows Language Interface Pack (LIP) を使用すると、1 つの言語バー�
 
    また、devenv コマンドを使用して、UI に使用される言語を設定することもできます。 詳細については、「[/lcid (devenv.exe)](../ide/reference/lcid-devenv-exe.md)」を参照してください。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
  [[国際対応の設定] ([オプション] ダイアログ ボックス - [環境])](../ide/reference/international-settings-environment-options-dialog-box.md)

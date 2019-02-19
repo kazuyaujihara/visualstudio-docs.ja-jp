@@ -1,4 +1,4 @@
----
+﻿---
 title: '[指定行へのジャンプ] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 324af42596017ebe474994e590ff48a19b8f0aaf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768868"
 ---
 # <a name="go-to-line"></a>[指定行へのジャンプ]
@@ -30,7 +30,7 @@ ms.locfileid: "54768868"
  [行番号 (1 - `n`)]  
  アクティブ ドキュメント内の移動先の行番号を入力できます。 入力できる値は、1 から `n` (現在のドキュメントの行数) までです。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [コードへのブックマークの設定](../../ide/setting-bookmarks-in-code.md)   
  [テキストの検索と置換](../../ide/finding-and-replacing-text.md)   
  [コードの作成](../../ide/writing-code-in-the-code-and-text-editor.md)

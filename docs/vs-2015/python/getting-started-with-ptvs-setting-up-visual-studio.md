@@ -1,5 +1,5 @@
 ---
-title: PTVS の概要。Visual Studio 2015 のセットアップ |Microsoft Docs
+title: 'PTVS の概要: Visual Studio 2015 のセットアップ |Microsoft Docs'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -11,13 +11,13 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 56afdd8be32e4977fd6c42a6b3c442e237c4f370
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782348"
 ---
-# <a name="getting-started-with-ptvs-setting-up-visual-studio"></a>PTVS の概要。Visual Studio のセットアップ
+# <a name="getting-started-with-ptvs-setting-up-visual-studio"></a>PTVS の概要: Visual Studio のセットアップ
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
@@ -39,6 +39,6 @@ IPython を PTVS と共に使用する場合、これらの[手順](http://pytoo
 
 これらの手順を簡単に見ることができます[youtube ビデオ](https://www.youtube.com/watch?v=_okUV47eM5c&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=1)します。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 
 [PTVS の概要と詳細に関するビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

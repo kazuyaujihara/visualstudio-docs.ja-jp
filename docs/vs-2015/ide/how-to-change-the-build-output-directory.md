@@ -1,5 +1,5 @@
----
-title: '方法: ビルド出力ディレクトリの変更 |Microsoft Docs'
+﻿---
+title: '方法 : ビルド出力ディレクトリを変更する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0d8ee4bac6f04515439f5703fe2f98546e011af4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54777366"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>方法: ビルド出力ディレクトリを変更する
+# <a name="how-to-change-the-build-output-directory"></a>方法 : ビルド出力ディレクトリを変更する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 プロジェクトによって生成された (デバッグ、リリース、またはその両方の) 構成ごとに出力の場所を指定できます。  

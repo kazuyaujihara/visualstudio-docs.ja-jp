@@ -1,4 +1,4 @@
----
+﻿---
 title: 生産性に関するヒント |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 096de590d49f5d09614bb9149ae6e5218f2ab7ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54785688"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio の生産性に関するヒント
@@ -79,7 +79,7 @@ ms.locfileid: "54785688"
 
      青いボックスでは、コードのエラーを修正するための推奨方法が表示されます。
 
-     図 1: エラー スマート タグ
+     図 1: エラーのスマート タグ
 
      ![エラー スマート タグの例](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
@@ -115,7 +115,7 @@ ms.locfileid: "54785688"
 
 -   **ダイアログ ボックス、メニュー コマンド、およびオプションを検索する**。 [[クイック起動] ([オプション] ダイアログ ボックス - [環境])](../ide/reference/quick-launch-environment-options-dialog-box.md) に、検索対象の項目のキーワードまたは語句を入力します。 たとえば、「`new project`」と入力すると、次のオプションが表示されます。
 
-     図 3:クイック起動の結果を一覧表示します。 `new project`
+     図 3: `new project`に対するクイック起動の結果一覧
 
      !["新しいプロジェクト" のクイック起動結果](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
@@ -151,11 +151,11 @@ ms.locfileid: "54785688"
 
      ファイルを固定するには、ファイルのタブを選択し、**[ピン ステータスを切り替える]** ボタンを選択します。
 
--   **ドキュメントやウィンドウを他のモニターに移動する**。 アプリケーションを開発する際にマルチモニターを使用する場合は、エディターで開いているファイルを別のモニターに移動すると、アプリケーションの特定の部分の作業がより簡単になります。 デバッガー ウィンドウなどのツール ウィンドウを別のモニターに移動することや、タブによりドキュメントとツール ウィンドウをまとめてドッキングして、「ラフティング」を作成することもできます。 詳細については、「[方法 :ウィンドウを整列およびドッキングする](../misc/how-to-arrange-and-dock-windows.md)」を参照してください。
+-   **ドキュメントやウィンドウを他のモニターに移動する**。 アプリケーションを開発する際にマルチモニターを使用する場合は、エディターで開いているファイルを別のモニターに移動すると、アプリケーションの特定の部分の作業がより簡単になります。 デバッガー ウィンドウなどのツール ウィンドウを別のモニターに移動することや、タブによりドキュメントとツール ウィンドウをまとめてドッキングして、「ラフティング」を作成することもできます。 詳細については、「[方法: ウィンドウを整列およびドッキングする](../misc/how-to-arrange-and-dock-windows.md)」を参照してください。
 
      また、**ソリューション エクスプローラー**のインスタンスをもう 1 つ作成し、それを別のモニターに移動すると、ファイルをより簡単に管理できます。 **ソリューション エクスプローラー**のインスタンスをもう 1 つ作成するには、**ソリューション エクスプローラー**のショートカット メニューを開き、**[新しいソリューション エクスプローラー ビュー]** を選択します。
 
--   **Visual Studio に表示されるフォントをカスタマイズする**。 IDE のテキストに使用されるフォント フェイス、サイズ、および色を変更できます。 たとえば、エディター内の特定のコード要素の色や、ツール ウィンドウまたは IDE 全体のフォント フェイスをカスタマイズできます。 詳細については、「[方法 :フォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」と「[How to: Change fonts and colors in the editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)」 (方法: エディターのフォントと色を変更する) を参照してください。
+-   **Visual Studio に表示されるフォントをカスタマイズする**。 IDE のテキストに使用されるフォント フェイス、サイズ、および色を変更できます。 たとえば、エディター内の特定のコード要素の色や、ツール ウィンドウまたは IDE 全体のフォント フェイスをカスタマイズできます。 詳細については、「[方法: Visual Studio で使用するフォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」および「[方法 : エディターで使用するフォントのフォント フェイス、サイズ、色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
- [頻繁に使用するコマンドの既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)[方法。メニューおよびツールバーをカスタマイズ](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)[チュートリアル。単純なアプリケーション作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)
+## <a name="see-also"></a>参照
+ [頻繁に使用するコマンドの既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)[方法: メニューおよびツールバーをカスタマイズ](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)[チュートリアル: 単純なアプリケーション作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)

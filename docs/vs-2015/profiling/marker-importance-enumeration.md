@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4451a7b222b66f0fe5bea2b0e5f2b8499c9033c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54779038"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance 列挙型
@@ -47,5 +47,5 @@ enum marker_importance;
   
  **名前空間:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [diagnostic 名前空間](../profiling/diagnostic-namespace.md)

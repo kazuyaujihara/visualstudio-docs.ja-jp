@@ -1,4 +1,4 @@
----
+﻿---
 title: '[ツールボックス アイテムの選択]、[WPF コンポーネント] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 773ecc04569850546f03fd0cdb68bfe1a81a79f9
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54835027"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>[ツールボックス アイテムの選択]、[WPF コンポーネント]
@@ -30,7 +30,7 @@ ms.locfileid: "54835027"
 - コンポーネントの横にあるチェック ボックスをオンにすると、そのコンポーネントのアイコンが **[ツールボックス]** に表示されます。  
   
   > [!TIP]
-  >  編集用に開かれるプロジェクト ドキュメントに WPF コントロールのインスタンスを追加するには、その**ツールボックス** アイコンをデザイン ビュー サーフェイスにドラッグします。 コンポーネントの既定のマークアップとコードがプロジェクトに挿入されて、変更できるようになります。 詳細については、「[方法 :ツールボックス ウィンドウの管理](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)と[方法。[ツールボックス] タブを操作](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)します。  
+  >  編集用に開かれるプロジェクト ドキュメントに WPF コントロールのインスタンスを追加するには、その**ツールボックス** アイコンをデザイン ビュー サーフェイスにドラッグします。 コンポーネントの既定のマークアップとコードがプロジェクトに挿入されて、変更できるようになります。 詳しくは、「[方法: ツールボックス ウィンドウの管理](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)」および「[[ツールボックス] タブの操作方法](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)」をご覧ください。  
   
 - コンポーネントの横にあるチェック ボックスをオフにすると、対応するアイコンが **[ツールボックス]** に表示されなくなります。  
   
@@ -73,10 +73,10 @@ ms.locfileid: "54835027"
   
   さらに、デザイン時のメタデータがカスタム コントロールに適用されていて、<xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> が `false` に設定されていることがこのメタデータで指定されている場合、コントロールはツールボックスに表示されません。  
   
-  コントロールの名前空間とアセンブリをマッピングすることにより、XAML ビューでコントロールを直接参照できます。 詳細については、「[方法 :Namespace を XAML にインポート](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)します。  
+  コントロールの名前空間とアセンブリをマッピングすることにより、XAML ビューでコントロールを直接参照できます。 詳しくは、「[方法 : 名前空間を XAML にインポートする](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)」をご覧ください。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [[ツールボックス アイテムの選択] ダイアログ ボックス (Visual Studio)](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
  [ツールボックス](../../ide/reference/toolbox.md)   
- [方法: WPF アプリケーションでサードパーティの WPF コントロールを使用します。](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
+ [方法 : WPF アプリケーション内でサードパーティの WPF コントロールを使用する](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
  [WPF デザイナー](http://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)

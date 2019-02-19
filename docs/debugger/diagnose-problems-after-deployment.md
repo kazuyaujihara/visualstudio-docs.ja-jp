@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54228033"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008713"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace を使用したデプロイ後に問題を診断 (C#、Visual Basic)
 
@@ -90,7 +90,7 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
 6.  新しいビルドを実行します。
 
-    手順 1. に進みます。アプリをリリースします。](#DeployRelease)
+    移動して[手順 2: アプリのリリース](#DeployRelease)
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 または 2010
  プロジェクトのビルド マニフェスト (BuildInfo.config ファイル) を自動的に作成し、プロジェクトの出力フォルダーに配置するには、次の手順を実行します。 このファイルは出力フォルダーで "*ProjectName*.BuildInfo.config" と表示されますが、アプリの発行後に配置フォルダーで "BuildInfo.config" という名前に変更されます。
@@ -115,7 +115,7 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
 4.  新しいビルドを実行します。
 
-    手順 1. に進みます。アプリをリリースします。](#DeployRelease)
+    移動して[手順 2: アプリのリリース](#DeployRelease)
 
 ###  <a name="ManualBuild"></a>Visual Studio を使用して手動ビルドのビルド マニフェストを作成する
  プロジェクトのビルド マニフェスト (BuildInfo.config ファイル) を自動的に作成し、プロジェクトの出力フォルダーに配置するには、次の手順を実行します。 このファイルは出力フォルダーで "*ProjectName*.BuildInfo.config" と表示されますが、アプリの発行後に配置フォルダーで "BuildInfo.config" という名前に変更されます。
@@ -142,7 +142,7 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
 4.  新しいビルドを実行します。
 
-    手順 1. に進みます。アプリをリリースします。](#DeployRelease)
+    移動して[手順 2: アプリのリリース](#DeployRelease)
 
 ###  <a name="MSBuild"></a>MSBuild.exe を使用して手動ビルドのビルド マニフェストを作成する
  ビルドの実行時に次のビルド引数を追加します。
@@ -186,7 +186,7 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
      特定のマッピングを備えたワークスペースや、コンピューターとは名前が異なるワークスペースを作成するには、 **[管理]** を選択します。
 
-     [Q: 選択したワークスペースが適切でないというメッセージが Visual Studio によって表示されるのはなぜですか。](#IneligibleWorkspace)
+     [Q: 選択したワークスペースが適切でないというメッセージが Vidual Studio によって表示されるのはなぜですか。](#IneligibleWorkspace)
 
      [Q: チーム コレクションまたは別のコレクションを選択するまで続行できないのはなぜですか。](#ChooseTeamProject)
 
@@ -248,12 +248,12 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
 ###  <a name="FAQ"></a> Q & A
 
-####  <a name="WhyInclude"></a> Q:プロジェクト、ソース管理、ビルド、およびシンボルに関する情報をリリースに含めるのはなぜですか。
+####  <a name="WhyInclude"></a> Q: プロジェクト、ソース管理、ビルド、およびシンボルに関する情報をリリースに含めるのはなぜですか。
  Visual Studio はこの情報を使用して、デバッグしようとするリリースに対応するソリューションやソースを検索します。 IntelliTrace ログを開き、イベントを選択してデバッグを開始した後に、Visual Studio はシンボルを使用して検索を実行し、イベントが発生したコードを表示します。 それから、記録された値を確認し、実行中のコード内を前後に移動できます。
 
  TFS を使用しているとき、この情報がビルド マニフェスト (BuildInfo.config ファイル) ではない場合は、対応するソースとシンボルが、現在接続されている TFS 上で Visual Studio によって検索されます。 Visual Studio が適切な TFS または対応するソースを見つけられない場合、他の TFS を選択するように求めるプロンプトが表示されます。
 
-####  <a name="InvalidConfigFile"></a> Q:配置したアプリに関する情報が IntelliTrace ログ内にありません。 なぜこのようなことが起きたのですか。 どうしたらよいですか。
+####  <a name="InvalidConfigFile"></a> Q: 配置したアプリに関する情報が IntelliTrace ログ内にありません。 なぜこのようなことが起きたのですか。 どうしたらよいですか。
  この問題は、開発用コンピューターから配置した場合や配置中に TFS に接続していない場合に発生する可能性があります。
 
 1.  プロジェクトの配置フォルダーに移動します。
@@ -298,7 +298,7 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
     - **GitSourceControl**:場所、 **GitSourceControl**スキーマ
 
-    - RepositoryUrlTeam Foundation Server、プロジェクト コレクション、および Git リポジトリの URI
+    - **RepositoryUrl**: Team Foundation Server、プロジェクト コレクション、および Git リポジトリの URI
 
     - **ProjectPath**:アプリのプロジェクト ファイル (.csproj または .vbproj) へのパス
 
@@ -357,12 +357,12 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
     </Build>
     ```
 
-####  <a name="IneligibleWorkspace"></a> Q:選択したワークスペースが適切でないというメッセージが Visual Studio によって表示されるのはなぜですか。
+####  <a name="IneligibleWorkspace"></a> Q: 選択したワークスペースが適切でないというメッセージが Vidual Studio によって表示されるのはなぜですか。
  **A:** 選択したワークスペースのソース コントロール フォルダーとローカル フォルダーの間にマッピングがありません。 このワークスペースのマッピングを作成するには、 **[管理]** を選択します。 それ以外の場合は、既に割り当てられているワークスペースを選択するか、新しいワークスペースを作成します。
 
  ![マップされたワークスペースとソース管理から開く](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
-####  <a name="ChooseTeamProject"></a> Q:チーム コレクションまたは別のコレクションを選択するまで続行できないのはなぜですか。
+####  <a name="ChooseTeamProject"></a> Q: チーム コレクションまたは別のコレクションを選択するまで続行できないのはなぜですか。
  **A:** これは次の理由によって発生する場合があります。
 
 -   Visual Studio が TFS に接続されていない。
@@ -380,9 +380,9 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
      ![ソース管理から開く&#45;移行](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> Q:ワークスペースとは何ですか。
- **A:** ご利用の[ワークスペースにはソースのコピーが格納](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts)されるので、ご自分の作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。
+ **A:** [ワークスペースにはソースのコピーが格納](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) されるので、作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。
 
-####  <a name="UntrustedSymbols"></a> Q:信頼されていないシンボルに関する次のメッセージが表示されるのはなぜですか。
+####  <a name="UntrustedSymbols"></a> Q: 次の信頼されていないシンボルに関するメッセージが表示されるのはなぜですか。
  ![信頼されていないシンボル パスでデバッグしますか。](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
  **A:** このメッセージは、ビルド マニフェスト ファイル (\<*ProjectName*>.BuildInfo.config) のシンボル パスが、信頼されたシンボル パスの一覧に含まれない場合に表示されます。 このパスをシンボル パスの一覧に追加するには、デバッガー オプションを使用します。

@@ -10,13 +10,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 036705b8184b0c2465b92d616bec399c769fc496
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758227"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>方法: ターゲットとタスクを構成する
+# <a name="how-to-configure-targets-and-tasks"></a>方法 : ターゲットとタスクを構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -111,5 +111,5 @@ ms.locfileid: "54758227"
 > [!NOTE]
 >  タスク パラメーターは、タスク ホストのコンテキストではなく、親ノードのコンテキストで評価されます。ランタイムまたはアーキテクチャに依存する環境変数は (プログラム ファイルの場所など)、親ノードに一致する値として評価されます。  一方、同じ環境変数がタスクによって直接読み取られた場合は、タスク ホストのコンテキストで正しく評価されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [ターゲットとタスクの構成](../msbuild/configuring-targets-and-tasks.md)

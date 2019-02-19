@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ff52925dea61916b9fa27af8cfacc044588cdb75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54785623"
 ---
 # <a name="performance-report-overview"></a>パフォーマンス レポートの概要
@@ -96,6 +96,6 @@ Visual Studio Team System Development Edition の統合開発環境 (IDE) の **
   
 -   **[エクスポート]** - .CVS 形式または .XML 形式のファイルに現在のレポートを保存します。別のビューで保存するためのオプションを指定できます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)   
  [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)

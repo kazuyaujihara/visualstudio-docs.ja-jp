@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 422a96f51022f52cab7499f8e5dcfe5e3db510f4
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834733"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>[オプション]、[テキスト エディター]、[JavaScript]、[IntelliSense]
@@ -80,5 +80,5 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
  **[Add a reference to the group] (グループへの参照の追加)**  
  このオプションを使用すると、適切なファイルを参照して IntelliSense (.js) ファイルを追加できます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

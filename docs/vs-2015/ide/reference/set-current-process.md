@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: be451ee1a0b4361e44c8be96713872ca0ee3bd76
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768849"
 ---
 # <a name="set-current-process"></a>SetCurrentProcess
@@ -35,7 +35,7 @@ Debug.SetCurrentProcess index
  `index`  
  必須です。 プロセスのインデックスです。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  デバッグ中には複数のプロセスにアタッチできますが、デバッガーでアクティブになっているプロセスは常に 1 つだけです。 `SetCurrentProcess` コマンドを使用すると、アクティブなプロセスを設定できます。  
   
 ## <a name="example"></a>例  
@@ -44,7 +44,7 @@ Debug.SetCurrentProcess index
 >Debug.SetCurrentProcess 1  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

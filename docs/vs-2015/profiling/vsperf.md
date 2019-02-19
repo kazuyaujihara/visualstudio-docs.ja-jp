@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a32de469c5b58ca2bf58901e30b81cfb70ed84b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803528"
 ---
 # <a name="vsperf"></a>VSPerf
@@ -69,6 +69,6 @@ ms.locfileid: "54803528"
 |**/detach**|データ収集を停止しますが、ターゲット プロセスの実行は続行します。|  
 |**/status**|プロファイラーの状態を表示します。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [コマンド ラインからのプロファイル](../profiling/using-the-profiling-tools-from-the-command-line.md)

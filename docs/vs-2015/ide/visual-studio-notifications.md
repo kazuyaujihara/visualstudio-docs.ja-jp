@@ -1,4 +1,4 @@
----
+﻿---
 title: 通知 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9aacdbf7bbde890abd0b7ac03f5cd5d714d6c9c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54799996"
 ---
 # <a name="visual-studio-notifications"></a>Visual Studio の通知
@@ -33,5 +33,5 @@ Visual Studio には、さまざまなイベントを警告する通知システ
 
    ![Visual Studio の通知アイコン](../ide/media/vs2015-notificationicon.png "vs2015_NotificationIcon")
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio IDE](../ide/visual-studio-ide.md)

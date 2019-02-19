@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784101"
 ---
 # <a name="performance-explorer"></a>パフォーマンス エクスプローラー
@@ -41,12 +41,12 @@ ms.locfileid: "54784101"
 |**操作を行う:** プロファイリング ツールを使用してコード パフォーマンスの収集、表示、分析を行う場合に使用する基本的な手順について説明します。 チュートリアルに従って操作します。|[はじめに](../profiling/getting-started-with-performance-tools.md)|  
 |**プロファイリング セッションを構成する:** プロファイリングを行うプロジェクトまたはバイナリを指定する方法、プロファイリング方式を選択する方法、収集するパフォーマンス データを選択する方法、およびその他のプロファイリング セッションのオプションを設定する方法の詳細について説明します。|[パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)|  
 |**プロファイラーが収集するデータを制御する:** パフォーマンス セッションのプロパティおよび対話形式の手順を使用してプロファイリングを開始および停止する方法と、収集するパフォーマンス データを必要な情報だけに制限する方法について説明します。|[データ コレクションの制御](../profiling/controlling-data-collection.md)|  
-|**パフォーマンスの問題を特定する:** 収集したパフォーマンス データをプロファイル ツールのレポート ビュー ウィンドウに表示して分析する方法について説明します。|[パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)|  
+|**パフォーマンスの問題を特定する:** 収集したパフォーマンス データをプロファイリング ツールのレポート ビュー ウィンドウに表示して分析する方法について説明します。|[パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)|  
 |**パフォーマンスの変化を分析する:** 2 つのプロファイラー データ ファイルを比較して、パフォーマンスの変化を分析する方法について説明します。|[パフォーマンス データ ファイルの比較](../profiling/comparing-performance-data-files.md)|  
 |**結果を保存して共有する:** プロファイリング データを保存してアーカイブまたは共有する方法について説明します。|[パフォーマンス ツール データの保存とエクスポート](../profiling/saving-and-exporting-performance-tools-data.md)|  
 |**プロファイリングを自動化する:** コマンド プロンプトからプロファイリング ツールを使用する方法について説明します。|[コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)|  
-|**プロファイリングをプログラムで制御する:** プロファイル ツールのマネージド API とネイティブ API を使用して、ソース コードから直接データ コレクションを制御する方法について説明します。|[プロファイリング ツールの API](../profiling/profiling-tools-apis.md)|  
+|**プロファイリングをプログラムで制御する:** プロファイリング ツールのマネージド API とネイティブ API を使用して、ソース コードから直接データ コレクションを制御する方法について説明します。|[プロファイリング ツールの API](../profiling/profiling-tools-apis.md)|  
 |**プロファイリングに関する問題のトラブルシューティング**|[パフォーマンス ツールに関する問題のトラブルシューティング](../profiling/troubleshooting-performance-tools-issues.md)|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [プロファイリング ツール](../profiling/profiling-tools.md)

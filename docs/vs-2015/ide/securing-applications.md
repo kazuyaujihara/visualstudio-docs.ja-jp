@@ -1,4 +1,4 @@
----
+﻿---
 title: アプリケーションの保護 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d5e7bba9dd9806952fc56ac62b2322f00aebc5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800767"
 ---
 # <a name="securing-applications"></a>アプリケーションの保護
@@ -30,7 +30,7 @@ ms.locfileid: "54800767"
  [セキュリティ推奨事項](http://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42)  
  Visual C++ で作業するときに利用できるセキュリティ関連の機能と手法について説明します。  
   
- [ビルド内にありません。セキュリティとプログラミング (C# および Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
+ [ビルドに存在しません: セキュリティとプログラミング (C# および Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
  Visual Basic および C# の開発者が考慮する必要のある、セキュリティに関する 3 つの最も重要な事項 (特権、Web アプリケーション、Visual Studio のセットアップ) について説明します。  
   
 ## <a name="securing-mobile-applications"></a>モバイル アプリケーションのセキュリティ  

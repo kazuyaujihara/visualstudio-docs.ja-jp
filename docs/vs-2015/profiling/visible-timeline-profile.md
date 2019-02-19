@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8803d5fcdd8bd1da85cc26977d68f2c96b15563f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801506"
 ---
 # <a name="visible-timeline-profile"></a>表示されているタイムライン プロファイル
@@ -25,5 +25,5 @@ ms.locfileid: "54801506"
 
 スレッド ブロック ビューの [表示されているランタイム プロファイル] には、統計情報とレポートへのリンクが表示されます。 拡大、縮小、水平方向へのスクロール、またはチャネルの非表示と表示の切り替えを行うと、アクティブな凡例の数値が現在の表示内容に応じて変更されます。 凡例の項目に関するレポートを表示するには、その項目をクリックします。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

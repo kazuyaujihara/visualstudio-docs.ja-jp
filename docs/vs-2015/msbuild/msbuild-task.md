@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15a6f0d3a0a50068d05a96994cb01462f07f3258
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54772338"
 ---
 # <a name="msbuild-task"></a>MSBuild タスク
@@ -46,13 +46,13 @@ ms.locfileid: "54772338"
 |`SkipNonexistentProjects`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、ディスク上に存在しないプロジェクト ファイルはスキップされます。 それ以外の場合は、そのようなプロジェクトによりエラーが発生します。|  
 |`StopOnFirstFailure`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、プロジェクトの 1 つがビルドに失敗すると、プロジェクトはそれ以上ビルドされません。 この機能は現在、同時にビルド (複数のプロセッサを使用) する際にはサポートされていません。|  
 |`TargetAndPropertyListSeparators`|省略可能な `String[]` 型のパラメーターです。<br /><br /> `Project` 項目メタデータとしてターゲットとプロパティのリストを指定します。 区切り記号は、処理の前にエスケープ解除されます。 たとえば、%3B (エスケープされた ';') はエスケープされていない ';' のように扱われます。|  
-|`TargetOutputs`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の読み取り専用の出力パラメーターです。<br /><br /> すべてのプロジェクト ファイルからビルドされたターゲットの出力を返します。 指定したターゲットの出力だけが返されます。それらのターゲットが依存しているターゲットに存在する可能性があるすべての出力が返されるわけではありません。<br /><br /> `TargetOutputs` パラメーターには、次のメタデータも含まれています。<br /><br /> -   `MSBuildSourceProjectFile`:出力を設定するターゲットを含む [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイル。<br />-   `MSBuildSourceTargetName`:出力を設定するターゲット。 **注:** 各プロジェクト ファイルまたはターゲットの出力を個別に識別する場合は、プロジェクト ファイルまたはターゲットごとに `MSBuild` タスクを実行します。 `MSBuild` タスクを 1 回だけ実行してすべてのプロジェクト ファイルをビルドすると、すべてのターゲットの出力が 1 つの配列に収集されます。|  
-|`Targets`|省略可能な `String` 型のパラメーターです。<br /><br /> プロジェクト ファイルでビルドする 1 つまたは複数のターゲットを指定します。 セミコロンを使用して、ターゲットの名前の一覧を区切ります。 `MSBuild` タスクにターゲットを指定しない場合は、プロジェクト ファイルで指定されている既定のターゲットがビルドされます。 **注:** ターゲットはすべてのプロジェクト ファイルに必要です。 ターゲットが存在しない場合は、ビルド エラーが発生します。|  
+|`TargetOutputs`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の読み取り専用の出力パラメーターです。<br /><br /> すべてのプロジェクト ファイルからビルドされたターゲットの出力を返します。 指定したターゲットの出力だけが返されます。それらのターゲットが依存しているターゲットに存在する可能性があるすべての出力が返されるわけではありません。<br /><br /> `TargetOutputs` パラメーターには、次のメタデータも含まれています。<br /><br /> -   `MSBuildSourceProjectFile`: 出力を設定するターゲットを含む [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイル。<br />-   `MSBuildSourceTargetName`: 出力を設定するターゲット。 **注:**  各プロジェクト ファイルまたはターゲットの出力を個別に識別する場合は、プロジェクト ファイルまたはターゲットごとに `MSBuild` タスクを実行します。 `MSBuild` タスクを 1 回だけ実行してすべてのプロジェクト ファイルをビルドすると、すべてのターゲットの出力が 1 つの配列に収集されます。|  
+|`Targets`|省略可能な `String` 型のパラメーターです。<br /><br /> プロジェクト ファイルでビルドする 1 つまたは複数のターゲットを指定します。 セミコロンを使用して、ターゲットの名前の一覧を区切ります。 `MSBuild` タスクにターゲットを指定しない場合は、プロジェクト ファイルで指定されている既定のターゲットがビルドされます。 **注:**  ターゲットは、すべてのプロジェクト ファイルに必要です。 ターゲットが存在しない場合は、ビルド エラーが発生します。|  
 |`ToolsVersion`|省略可能な `String` 型のパラメーターです。<br /><br /> このタスクに渡されたプロジェクトのビルド時に使用する `ToolsVersion` を指定します。<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] タスクが、プロジェクトで指定されたものとは別のバージョンの [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] をターゲットとするプロジェクトをビルドできるようにします。 有効な値は `2.0`、`3.0`、`3.5` です。 既定値は `3.5`にする必要があります。|  
 |`UnloadProjectsOnCompletion`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、操作が完了したらプロジェクトはアンロードされます。|  
 |`UseResultsCache`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、キャッシュされた結果が返されます (ある場合)。 MSBuild タスクが実行された場合、その結果はスコープ (ProjectFileName, GlobalProperties)[TargetNames] に<br /><br /> ビルド項目のリストとしてキャッシュされます。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
   
  [Exec Task](../msbuild/exec-task.md) を使用して MSBuild.exe を起動する場合と異なり、このタスクでは、同じ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロセスを使用して子プロジェクトがビルドされます。 すでにビルドされていて、スキップできるターゲットの一覧は、親のビルドと子のビルドの両方で共有されます。 また、新しい [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロセスが作成されないため、このタスクは高速です。  
@@ -190,6 +190,6 @@ ms.locfileid: "54772338"
 </Project>  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [タスク](../msbuild/msbuild-tasks.md)   
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

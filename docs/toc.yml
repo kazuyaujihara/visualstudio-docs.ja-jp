@@ -322,6 +322,10 @@ items:
           items:
           - name: メソッド シグネチャの変更
             href: ide/reference/change-method-signature.md
+          - name: 匿名型をクラスに変換する
+            href: ide/reference/convert-anonymous-type-to-class.md
+          - name: 匿名型をタプルに変換する
+            href: ide/reference/convert-anonymous-type-to-tuple.md
           - name: For ループと Foreach ステートメントの間で変換する
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: Get メソッドとプロパティの間で変換する
@@ -340,6 +344,8 @@ items:
             href: ide/reference/move-declaration-near-reference.md
           - name: 一致するファイルへの型の移動
             href: ide/reference/move-type-to-matching-file.md
+          - name: メンバーを取り出す
+            href: ide/reference/pull-members-up.md
           - name: 到達できないコードの削除
             href: ide/reference/remove-unreachable-code.md
           - name: 名前の変更
@@ -348,6 +354,8 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: 明示的な型の使用
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: ラップ、インデント、およびパラメーターの整列
+            href: ide/reference/wrap-align-indent-parameters.md
         - name: 'チュートリアル: 使用法からのコードの生成'
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: 生産性に関するヒント
@@ -508,6 +516,11 @@ items:
       href: vsto/office-and-sharepoint-development-in-visual-studio.md
     - name: XML ファイルと XSLT ファイルの操作
       href: xml-tools/xml-tools-in-visual-studio.md
+    - name: 国際対応のアプリの開発
+      href: ide/globalizing-and-localizing-applications.md
+      items:
+      - name: 双方向言語
+        href: ide/creating-applications-in-bi-directional-languages.md
     - name: 追加のチュートリアル
       items:
       - name: C# または Visual Basic を使用した WPF アプリの作成
@@ -696,29 +709,6 @@ items:
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
     - name: アクセシビリティ対応アプリのデザイン リソース
       href: ide/reference/resources-for-designing-accessible-applications.md
-  - name: アプリのグローバライズとローカライズ
-    href: ide/globalizing-and-localizing-applications.md
-    items:
-    - name: 国際対応 .NET Framework アプリ入門
-      href: ide/introduction-to-international-applications-based-on-the-dotnet-framework.md
-    - name: アプリのローカライズ
-      href: ide/localizing-applications.md
-      items:
-      - name: ローカリゼーション用リソースの階層編成
-        href: ide/hierarchical-organization-of-resources-for-localization.md
-      - name: セキュリティおよびローカライズされたサテライト アセンブリ
-        href: ide/security-and-localized-satellite-assemblies.md
-      - name: メイン アセンブリおよびローカライズされたサテライト アセンブリのバージョン番号
-        href: ide/version-numbers-for-main-and-localized-satellite-assemblies.md
-      - name: ローカリゼーションのニュートラル リソース言語
-        href: ide/neutral-resources-languages-for-localization.md
-    - name: アプリのグローバライズ
-      href: ide/globalizing-applications.md
-      items:
-      - name: グローバルな Windows フォームおよび Web フォームにおけるカルチャ固有のクラス
-        href: ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md
-    - name: 双方向言語でのアプリの作成
-      href: ide/creating-applications-in-bi-directional-languages.md
 - name: 参照
   items:
   - name: 一般的なユーザー インターフェイス要素
@@ -1145,9 +1135,9 @@ items:
   - name: ご意見
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 69a36121297349edd6a3e79880935a9b3ed6fe75
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: d81e33771d4e5b8333c7dddf7311e63488a55604
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424617"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335585"

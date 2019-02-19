@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1fcb0ae81a2f758f548f11bb9875b2275f6ebfe3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782514"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>[詳細設定] ダイアログ ボックス (コンカレンシー ビジュアライザー)
@@ -86,6 +86,6 @@ ms.locfileid: "54782514"
   
   2 つの ETL ファイルには生のトレース データが保存され、2 つのコンカレンシー ビジュアライザー ファイルには処理されたデータが保存されます。  生の ETL ファイルは通常、トレースが処理された後は使われません。  **[分析後にイベント トレース ログ (ETL) ファイルを削除]** チェック ボックスをオンにすると、ディスクに保存されるトレース データの量が減ります。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [マイ コードのみ](../profiling/just-my-code-threads-view.md)   
  [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)

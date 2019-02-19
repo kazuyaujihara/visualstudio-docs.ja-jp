@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ccef8ebbf63835a71027643b518280d5f4f867b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54797953"
 ---
 # <a name="markerseriesisenabled-method"></a>marker_series::is_enabled メソッド
@@ -49,5 +49,5 @@ bool is_enabled(
   
  **名前空間:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [marker_series クラス](../profiling/marker-series-class.md)

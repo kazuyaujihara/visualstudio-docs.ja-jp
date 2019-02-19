@@ -1,5 +1,5 @@
----
-title: 'チュートリアル: ビルド環境の複数のコンピューターを作成する |Microsoft Docs'
+﻿---
+title: 'チュートリアル: 複数のコンピューターを使用するビルド環境の作成 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769075"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>チュートリアル: 複数のコンピューターのビルド環境の作成
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>チュートリアル: 複数のコンピューターを使用するビルド環境の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 組織内でビルド環境を作成するには、ホスト コンピューターに Visual Studio をインストールし、ビルドに参加できるように各種のファイルおよび設定を別のコンピューターにコピーします。 別コンピューターの方に Visual Studio をインストールする必要はありません。  
@@ -423,6 +423,6 @@ ms.locfileid: "54769075"
   
          ネイティブ 64 ビットのビルドの場合は、64 ビットの MSBuild が指定されるように調整します。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [デバッグ バージョンのアプリケーションを実行するテスト用コンピューターの準備](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [Command-Line Reference (コマンド ライン リファレンス)](../msbuild/msbuild-command-line-reference.md)

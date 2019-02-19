@@ -1,4 +1,4 @@
----
+﻿---
 title: ユーザー補助機能 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 519eefc9260816fcbbbbd3dd8672bbaeebb3429f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778514"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio のユーザー補助機能
@@ -50,5 +50,5 @@ Visual Studio 2013 は、Windows のユーザー補助機能およびユーテ�
 
 -   [方法: フォントと色を変更する](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Microsoft からのユーザー補助製品およびサービス](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

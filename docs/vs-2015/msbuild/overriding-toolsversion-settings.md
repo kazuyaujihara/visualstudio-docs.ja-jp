@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e4cd6d3199d09ffa56c0ac6d2d29fcba613fd280
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770711"
 ---
 # <a name="overriding-toolsversion-settings"></a>ToolsVersion 設定のオーバーライド
@@ -127,7 +127,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     4.  それ以外の場合は、現在の `ToolsVersion` を使用します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [マルチターゲット](../msbuild/msbuild-multitargeting-overview.md)   
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
  [ツール セット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   

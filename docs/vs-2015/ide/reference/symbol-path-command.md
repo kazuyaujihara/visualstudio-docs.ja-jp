@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: da136a76a06182bd32ebf2ca868e77f202087e45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767284"
 ---
 # <a name="symbol-path-command"></a>Symbol Path コマンド
@@ -38,7 +38,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
  `pathname`  
  任意。 デバッガーによってシンボルが検索されるパスを、セミコロンで区切った一覧です。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  `pathname` を指定しない場合、シンボル用の現在のパスがコマンドによって一覧表示されます。  
   
 ## <a name="example"></a>例  
@@ -55,6 +55,6 @@ Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 Debug.SymbolPath  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)

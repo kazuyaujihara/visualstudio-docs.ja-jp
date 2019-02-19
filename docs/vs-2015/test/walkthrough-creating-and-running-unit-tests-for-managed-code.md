@@ -1,14 +1,9 @@
 ---
-title: 'チュートリアル: マネージド コードに対する単体テストの作成と実行 | Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: マネージ コードを作成して、単体テストを実行して |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874502"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784661"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>チュートリアル: マネージド コードに対する単体テストの作成と実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +108,7 @@ public void Debit(double amount)
 ```  
   
 ##  <a name="BKMK_Create_a_unit_test_project"></a> 単体テスト プロジェクトを作成する  
- **必要条件**: 「 [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)」の手順に従います。  
+ **前提条件となる**: 次の手順では、手順[チュートリアルを準備する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)します。  
   
 #### <a name="to-create-a-unit-test-project"></a>単体テスト プロジェクトを作成するには  
   
@@ -182,7 +177,7 @@ using BankAccountNS;
   
  テスト対象のメソッドを分析したところ、チェックする必要のある動作が 3 つ以上あると判断されます。  
   
-1. [ArgumentOutOfRangeException] がスローされます (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) 引き落とし金額が残高を上回る場合。  
+1. 引き落とし金額が残高を上回る場合、このメソッドは [ArgumentOutOfRangeException](<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) をスローします。  
   
 2. また、引き落とし金額が 0 未満の場合も、このメソッドは `ArgumentOutOfRangeException` をスローします。  
   
@@ -423,6 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  この最後のセクションでは、テスト コード向上の作業を実行したことにより、より堅牢でわかりやすいテスト メソッドになりました。 さらに重要なこととして、分析の追加によってテスト対象のプロジェクトのコードを改善することもできます。
-
-
-
