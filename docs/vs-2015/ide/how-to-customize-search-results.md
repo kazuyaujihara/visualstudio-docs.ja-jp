@@ -49,5 +49,5 @@ ms.locfileid: "54799786"
   
 2.  **[すべてのナビゲーション タブおよび F1 要求に英語版コンテンツを含める]** チェック ボックスをオンにします。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [フルテキスト検索のヒント](../ide/full-text-search-tips.md)

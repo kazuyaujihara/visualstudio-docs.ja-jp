@@ -203,7 +203,7 @@ Visual Studio 2015 の新機能について説明する場合は、「 [Visual S
 |[Visual Studio のサンプル](../ide/visual-studio-samples.md)|[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)|
 |[アプリケーションのグローバライズとローカライズ](../ide/globalizing-and-localizing-applications.md)|[UI リファレンス](../ide/reference/general-user-interface-elements-visual-studio.md)|
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio 2015 のインストール](../install/install-visual-studio-2015.md)
 - [コードの編集](https://www.visualstudio.com/features/ide-vs)

@@ -126,5 +126,5 @@ ms.locfileid: "54801171"
   
      コード内のショートカットをナビゲートしていくには、一覧でショートカットを選択し、ショートカット メニューから **[次のタスク]** か **[前のタスク]** をクリックします。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [[タスク一覧] ([オプション] ダイアログ ボックス - [環境])](../ide/reference/task-list-environment-options-dialog-box.md)

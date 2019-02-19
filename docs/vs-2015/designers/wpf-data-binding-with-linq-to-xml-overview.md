@@ -88,7 +88,7 @@ ms.locfileid: "54774179"
   
  WPF の動的バインドを実装するには、動的プロパティを <xref:System.Windows.Data> 名前空間 (特に <xref:System.Windows.Data.Binding> クラス) の機能と共に使用します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [LINQ to XML による WPF のデータ バインディング](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [LINQ to XML の動的プロパティ](../designers/linq-to-xml-dynamic-properties.md)   
  [WPF の XAML](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   

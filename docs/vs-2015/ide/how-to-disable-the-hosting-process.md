@@ -44,7 +44,7 @@ ms.locfileid: "54785882"
   
 -   部分信頼デバッグが使用できなくなる。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [プロセスのデバッグとホスト](../debugger/debugging-and-the-hosting-process.md)   
  [ホスト プロセス (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
  [アプリケーション開発時のビルド](http://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

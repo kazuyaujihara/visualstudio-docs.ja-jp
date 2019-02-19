@@ -65,7 +65,7 @@ ms.locfileid: "54793435"
   
  特定の図形を使用すると、一部のシェーダーをより適切にプレビューできる可能性があります。 シェーダー デザイナーでシェーダーをプレビューする方法の詳細については、「[シェーダー デザイナー](../designers/shader-designer.md)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [方法: シェーダーを 3-D モデルに適用します。](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [イメージ エディター](../designers/image-editor.md)   
  [シェーダー デザイナー](../designers/shader-designer.md)   

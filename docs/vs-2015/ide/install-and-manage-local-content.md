@@ -124,5 +124,5 @@ Microsoft ヘルプ ビューアーを使用すると、ソフトウェア開発
   
 3.  コンテンツが移動したら、**[閉じる]** をクリックします。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

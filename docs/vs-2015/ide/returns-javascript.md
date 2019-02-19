@@ -112,5 +112,5 @@ calculate().  // Completion list for a Number.
   
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)

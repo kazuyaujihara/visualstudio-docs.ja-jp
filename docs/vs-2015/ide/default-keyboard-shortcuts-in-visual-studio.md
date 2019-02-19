@@ -1159,5 +1159,5 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |XsdDesigner.ShowGraphView|Ctrl + 数字 3|
 |XsdDesigner.ShowStartView|Ctrl + 数字 1|
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [アイコン用イメージ エディター](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd) [IntelliSense の使用](../ide/using-intellisense.md)

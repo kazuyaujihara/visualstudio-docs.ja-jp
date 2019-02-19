@@ -33,7 +33,7 @@ elem.Attribute[{namespaceName}attribName]
 ## <a name="remarks"></a>コメント  
  このプロパティは、<xref:System.Xml.Linq.XElement.Attribute%2A> クラスの <xref:System.Xml.Linq.XElement?displayProperty=fullName> メソッドに相当します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName>   
  [XElement クラスの動的プロパティ](../designers/xelement-class-dynamic-properties.md)   
  [[値]](../designers/value-xattribute-dynamic-property.md)

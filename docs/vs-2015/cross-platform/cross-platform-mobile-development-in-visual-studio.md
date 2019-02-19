@@ -170,7 +170,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 |[Visual Studio Tools for Unity 2.0 Preview の紹介ビデオを見る](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (ビデオ)|
 |[Unity について学習する](http://unity3d.com/) (Unity Web サイト)|
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio プロジェクトに Office 365 API を追加する](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
 - [Azure モバイル サービス](http://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)

@@ -33,5 +33,5 @@ Visual Studio Image Library には、Microsoft Visual Studio、Microsoft Windows
 
  イメージ ライブラリは、共通の要素、アクション、注釈、アイコン、オブジェクトという 5 つのカテゴリに分割されています。 共通の要素およびアイコンについては、PDF 形式のリリース ノート ファイルが含まれています。 リリース ノート ファイルには、アプリケーションでこれらのイメージを適切に使用する方法に関する情報が含まれています。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [イメージ、ビットマップ、メタファイル](http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)

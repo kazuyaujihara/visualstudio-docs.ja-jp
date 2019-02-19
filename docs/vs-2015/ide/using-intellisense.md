@@ -101,7 +101,7 @@ MessageBox( hWnd, "String literal|") )
   
  **自動オプションがオフになっている。** 既定では、IntelliSense は自動的に動作しますが、無効にすることもできます。 入力候補がオフになっている場合でも、IntelliSense 機能は起動できます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Visual Basic 固有の IntelliSense](../ide/visual-basic-specific-intellisense.md)   
  [Visual C# の IntelliSense](../ide/visual-csharp-intellisense.md)   
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   

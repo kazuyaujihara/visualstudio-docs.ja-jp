@@ -277,7 +277,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 
 -   読み込まれなかった参照が [出力] ウィンドウに表示されます。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
 - [IntelliSense の使用](../ide/using-intellisense.md)
 - [XML ドキュメントのコメントを作成する](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)
 - [JavaScript IntelliSense の拡張](../ide/extending-javascript-intellisense.md)

@@ -58,7 +58,7 @@ ms.locfileid: "54976525"
   
 6.  **[このアプリケーションが次の URL からダウンロードされたと仮定してデバッグする]** テキスト ボックスに、URL またはネットワーク パスを入力します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [方法: ClickOnce アプリケーションのカスタム アクセス許可を設定する](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)   
  [ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)   

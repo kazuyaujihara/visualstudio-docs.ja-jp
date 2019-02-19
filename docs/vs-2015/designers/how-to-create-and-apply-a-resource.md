@@ -75,5 +75,5 @@ XAML デザイナーで、要素のスタイルとテンプレートは "リソ�
   
 3.  リソースのオプションを変更します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

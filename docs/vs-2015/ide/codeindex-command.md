@@ -124,6 +124,6 @@ TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam We
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [TFSConfig でのサーバー構成の管理](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
  [TFS のコマンド ライン ツール](http://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)

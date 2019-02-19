@@ -67,6 +67,6 @@ ms.locfileid: "54755465"
   
  マニフェストへの署名については、「[方法:アプリケーション マニフェストおよび配置マニフェストに署名する](../ide/how-to-sign-application-and-deployment-manifests.md)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [厳密な名前付きアセンブリ](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
  [厳密名アセンブリ (アセンブリ署名) (C++/CLI)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)

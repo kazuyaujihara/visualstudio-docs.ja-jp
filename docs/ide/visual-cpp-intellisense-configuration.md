@@ -124,6 +124,6 @@ IntelliSense のビルドでは、バイナリは作成されませんが、そ�
 
 環境変数 TRACEDESIGNTIME の詳細については、[Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors)と[共通プロジェクト システム](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md)に関するページを参照してください。 これらの記事の情報は、C++ プロジェクトに関連します。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)

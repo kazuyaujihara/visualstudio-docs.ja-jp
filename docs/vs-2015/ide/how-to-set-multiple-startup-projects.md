@@ -33,6 +33,6 @@ Visual Studio では、デバッガーの起動時に複数のプロジェクト
   
 4.  クリックして**マルチ スタートアップ プロジェクト**し適切なアクションを設定します。 詳細については、次を参照してください。[に NIB 方法。プロジェクトのプロパティと構成設定を変更](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)   
  [ソリューションとプロジェクトの作成](../ide/creating-solutions-and-projects.md)

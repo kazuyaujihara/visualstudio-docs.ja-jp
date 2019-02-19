@@ -34,5 +34,5 @@ ms.locfileid: "54774141"
 |Adobe Photoshop ファイルのインポート|![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Photoshop ファイルを Blend にインポートする](https://www.youtube.com/watch?v=ekYyhirFKs0)|  
 |オーディオ クリップを挿入する|![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [オーディオ クリップを追加する](https://www.youtube.com/watch?v=7qW9l0tmkAI&index=52&list=PLBDF977B2F1DAB358)|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

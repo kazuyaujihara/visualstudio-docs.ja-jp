@@ -42,7 +42,7 @@ ms.locfileid: "54771332"
 |開いているドキュメントを切り替える|Ctrl キーと Tab キーを押す|  
 |**[アセット]** パネルを開く|Ctrl キーを押しながらピリオド キーを押す|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [キーボード ショートカット](../designers/keyboard-shortcuts-in-blend.md)   
  [ペン ツールの修飾キー](../designers/pen-tool-modifier-keys-in-blend.md)   
  [[個別選択] ツールの修飾キー](../designers/direct-selection-tool-modifier-keys-in-blend.md)

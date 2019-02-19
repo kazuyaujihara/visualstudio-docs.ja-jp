@@ -32,7 +32,7 @@ ms.locfileid: "54781022"
   
  通常、組織の署名のグループまたは外部の署名機関には、秘密キーを使って署名させる必要があります。 これは、秘密キーの機密性によるもので、多くの場合、アクセスは数人のユーザーに制限されます。 開発時には遅延署名を使用することができます。 詳細については、「[アセンブリへの遅延署名](http://msdn.microsoft.com/library/9d300e17-5bf1-4360-97da-2aa55efd9070)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [アセンブリのセキュリティに関する考慮事項](http://msdn.microsoft.com/library/1b5439c1-f3d5-4529-bd69-01814703d067)   
  [セキュリティの基本概念](http://msdn.microsoft.com/library/3cfced4f-ea02-4e66-ae98-d69286363e98)   
  [.NET Framework ベースの国際対応アプリケーションの概要](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   

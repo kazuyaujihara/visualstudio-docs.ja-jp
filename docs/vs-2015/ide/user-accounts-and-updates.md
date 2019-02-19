@@ -31,5 +31,5 @@ Visual Studio 自体は、接続環境です。 サインインすると、ユ�
 |[Visual Studio のロックを解除する方法](../ide/how-to-unlock-visual-studio.md)|さまざまなシナリオで Visual Studio のロックを解除する方法について説明します。|  
 |[通知](../ide/visual-studio-notifications.md)|SDK などのコンポーネント、または Visual Studio 自体で更新プログラムが使用可能な場合に Visual Studio がユーザーに通知する方法について説明します。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

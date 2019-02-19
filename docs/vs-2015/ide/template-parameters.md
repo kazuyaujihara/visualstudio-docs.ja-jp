@@ -123,5 +123,5 @@ namespace $safeprojectname$
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)

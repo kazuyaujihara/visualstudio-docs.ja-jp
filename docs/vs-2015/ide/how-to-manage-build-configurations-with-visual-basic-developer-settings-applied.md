@@ -47,6 +47,6 @@ ms.locfileid: "54784788"
   
      **[ビルド]** メニューで **[構成マネージャー]** を使用できるようになり、**[構成]** 一覧と **[プラットフォーム]** 一覧がプロジェクト デザイナーに表示されるようになります。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [ビルド構成について](../ide/understanding-build-configurations.md)   
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

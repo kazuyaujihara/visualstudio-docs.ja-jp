@@ -112,5 +112,5 @@ ms.locfileid: "54764610"
 ## <a name="next-steps"></a>次の手順  
  Visual Studio で Unity プロジェクトを操作およびデバッグする方法については、「[Visual Studio Tools for Unity を使用する](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md)」をご覧ください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Unity ホームページ](http://unity3d.com)

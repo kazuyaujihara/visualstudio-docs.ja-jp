@@ -45,6 +45,6 @@ enum class CardSuit {
   
  `enum` 型の使用法の詳細については、「[列挙型](http://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Visual C++ コードの使用 (クラス デザイナー)](../ide/working-with-visual-cpp-code-class-designer.md)   
  [列挙型](http://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)

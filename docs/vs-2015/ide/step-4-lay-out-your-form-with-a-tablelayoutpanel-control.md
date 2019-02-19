@@ -1,32 +1,27 @@
 ---
-title: '手順 4: TableLayoutPanel コントロールを使用したフォームのレイアウトの設定 | Microsoft Docs'
-ms.custom: ''
+title: '手順 4: TableLayoutPanel コントロールを使用してフォームのレイアウト |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a08359c11fa45c87c787a5a3a414eb8515e7473
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210100"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763272"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>手順 4: TableLayoutPanel コントロールを使用したフォームのレイアウトの設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 この手順では、フォームに `TableLayoutPanel` コントロールを追加します。 TableLayoutPanel は、後で追加するフォームのコントロールを適切にアラインするために役立ちます。  
   
- ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic によるピクチャ ビューアーの作成 - ビデオ 2](http://go.microsoft.com/fwlink/?LinkId=205211)」または「[チュートリアル 1: C# によるピクチャ ビューアーの作成 - ビデオ 2](http://go.microsoft.com/fwlink/?LinkId=205200)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。  
+ ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版について、次を参照してください[チュートリアル 1: ピクチャ ビューアーの Visual Basic - ビデオ 2 で作成](http://go.microsoft.com/fwlink/?LinkId=205211)または[チュートリアル 1: ピクチャ ビューアーの作成 - c#。ビデオ 2](http://go.microsoft.com/fwlink/?LinkId=205200)します。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。  
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>TableLayoutPanel コントロールを使用してフォームのレイアウトを設定するには  
   
@@ -62,7 +57,7 @@ TableLayoutPanel コントロールを示す [プロパティ] ウィンドウ
      ![[塗りつぶし] が選択された [プロパティ] ウィンドウ](../ide/media/express-docktable.png "Express_DockTable")  
 [塗りつぶし] が選択された [プロパティ] ウィンドウ  
   
-     ウィンドウが別のウィンドウまたは IDE の領域にアタッチされている場合、Visual Studio の*ドッキング*が参照します。 たとえば、プロパティ ウィンドウはドッキング解除できます – は、アタッチされておらず、フローティング状態である Visual Studio – 内またはに対してドッキングできる**ソリューション エクスプ ローラー**します。  
+     ウィンドウが別のウィンドウまたは IDE の領域にアタッチされている場合、Visual Studio の*ドッキング*が参照します。 たとえば、[プロパティ] ウィンドウはドッキング解除できます。つまり、Visual Studio にアタッチせず、フローティング状態にするか、**ソリューション エクスプローラー**にドッキングできます。  
   
 7.  TableLayoutPanel の **Dock** プロパティを **Fill** に設定すると、パネルがフォーム全体に表示されます。 この後にフォームのサイズを変更した場合、TableLayoutPanel はドッキングされたまま、フォームに合わせてサイズが変更されます。  
   
@@ -98,6 +93,3 @@ TableLayoutPanel がサイズ変更された Form1
 -   チュートリアルの次の手順に進むには、「[手順 5: フォームへのコントロールの追加](../ide/step-5-add-controls-to-your-form.md)」を参照してください。  
   
 -   チュートリアルの前の手順に戻るには、「[手順 3: フォームのプロパティの設定](../ide/step-3-set-your-form-properties.md)」を参照してください。
-
-
-

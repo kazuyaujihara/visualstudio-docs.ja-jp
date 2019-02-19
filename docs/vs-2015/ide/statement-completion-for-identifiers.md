@@ -60,5 +60,5 @@ JavaScript をして入力変数の宣言を明示的に許可されていませ
   
   オブジェクトの入力候補一覧は、XML ドキュメントのコメントまたは JavaScript IntelliSense の拡張機能を使用してオーバーライドできます。 これらの機能を使用して行うことができますの種類の情報とわかりやすい IntelliSense の情報ができない可能性がありますそれ以外の場合とします。 詳細については、次を参照してください。 [JavaScript IntelliSense の拡張](../ide/extending-javascript-intellisense.md)と[XML ドキュメント コメントの作成](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)です。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)

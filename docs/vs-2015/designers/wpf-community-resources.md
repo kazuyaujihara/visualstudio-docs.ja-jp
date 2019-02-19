@@ -32,6 +32,6 @@ Microsoft は、Windows Presentation Foundation (WPF) について学習した�
 
  [Windows Presentation Foundation デベロッパー センター](https://www.visualstudio.com/features/wpf-vs)
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
 
 - [Windows Presentation Foundation での最新のデスクトップ アプリケーションの作成](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

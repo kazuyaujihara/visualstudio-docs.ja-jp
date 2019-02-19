@@ -147,5 +147,5 @@ ms.locfileid: "54758243"
 
    このチュートリアルは完了しました。 その他の例については、「[Visual Studio Samples](../ide/visual-studio-samples.md)」を参照してください。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [チュートリアル: 単純なアプリケーション作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md) [Visual Studio のサンプル](../ide/visual-studio-samples.md) [Visual Studio を使用した開発を開始します。](../ide/get-started-developing-with-visual-studio.md)

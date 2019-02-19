@@ -43,7 +43,7 @@ ms.locfileid: "54790140"
 [assembly: SatelliteContractVersionAttribute("4.3.2.1")]  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [ランタイムがアセンブリを検索する方法](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)   
  [アセンブリ属性の設定](http://msdn.microsoft.com/library/36a98a81-b5b5-4c19-912a-11f91eff7f4e)   
  [セキュリティおよびローカライズされたサテライト アセンブリ](../ide/security-and-localized-satellite-assemblies.md)   

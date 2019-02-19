@@ -56,7 +56,7 @@ Visual Studio IDE でプロジェクトをビルドしたら、**[出力]** ウ�
     > [!IMPORTANT]
     >  **[出力]** ウィンドウ (すべてのプロジェクト) と *ProjectName*.txt ファイル (C++ プロジェクトのみ) に変更を反映するには、プロジェクトをリビルドする必要があります。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

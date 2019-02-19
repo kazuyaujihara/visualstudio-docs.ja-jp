@@ -48,7 +48,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
 -   OS X Mavericks 以降を実行する Mac コンピューター  
   
--    [Apple ID](https://appleid.apple.com/)  
+-   [Apple ID](https://appleid.apple.com/)  
   
 -   Apple のアクティブな [iOS Developer Program](https://developer.apple.com/programs/ios/) アカウント  
   
@@ -240,5 +240,5 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
      ここで *config_file_path* は JSON 形式の構成ファイルのパスです。 スタートアップ オプションとその値にダッシュを含めることはできません。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

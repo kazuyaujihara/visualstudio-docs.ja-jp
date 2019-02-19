@@ -41,7 +41,7 @@ Visual Studio Graphics Analyzer の [ピクセル履歴] ウィンドウでは�
 |アイコン|除外の理由|  
 |----------|--------------------------|  
 |![深度テスト エラーのアイコン。](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|ピクセルは深度テストに失敗したため除外されました。|  
-|![ハサミ テスト エラーのアイコン。](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")| ピクセルはハサミ テストに失敗したため除外されました。|  
+|![ハサミ テスト エラーのアイコン。](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|ピクセルはハサミ テストに失敗したため除外されました。|  
 |![ステンシル テスト エラーのアイコン。](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|ピクセルはステンシル テストに失敗したため除外されました。|  
   
 ### <a name="draw-call-exclusion"></a>描画呼び出しの除外  
@@ -74,6 +74,6 @@ Visual Studio Graphics Analyzer の [ピクセル履歴] ウィンドウでは�
 ### <a name="links-to-graphics-objects"></a>グラフィックス オブジェクトへのリンク  
  ピクセル履歴のグラフィック イベントについて理解するために、イベントの発生時点におけるデバイスの状態や、そのイベントで参照されている Direct3D オブジェクトに関する情報が必要になる場合があります。 **[グラフィックス ピクセル履歴]** では、ピクセル履歴内のイベントごとに、その時点のデバイスの状態と関連オブジェクトへのリンクが提供されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [チュートリアル: デバイス状態によるオブジェクトの不足](walkthrough-missing-objects-due-to-device-state.md)   
  [チュートリアル: 網かけによるレンダリング エラーのデバッグ](walkthrough-debugging-rendering-errors-due-to-shading.md)

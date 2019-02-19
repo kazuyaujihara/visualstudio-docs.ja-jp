@@ -57,5 +57,5 @@ ms.locfileid: "54758800"
 > [!WARNING]
 >  Visual Studio 2013 と Visual Studio 2015 の間では、設定は同期されません。 Visual Studio 2015 を初めて開くと、Visual Studio 2013 の設定が移行されますが、その後で設定を Visual Studio 2013 に再度移行することはできません。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)

@@ -88,6 +88,6 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
   
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [ヘルプ ビューアーの管理者ガイド](../ide/help-viewer-administrator-guide.md)   
  [ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)

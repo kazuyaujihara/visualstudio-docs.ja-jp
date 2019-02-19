@@ -40,7 +40,7 @@ struct MyStructure
 |------------------|-------------------------|  
 |`struct StructureName {};`|**StructureName**<br /><br /> 構造体|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Visual C++ コードの使用 (クラス デザイナー)](../ide/working-with-visual-cpp-code-class-designer.md)   
  [クラスと構造体](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
  [struct](http://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6)

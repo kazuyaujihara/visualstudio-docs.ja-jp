@@ -116,7 +116,7 @@ ms.locfileid: "54763651"
 ## <a name="file-references"></a>ファイル参照  
  ファイル参照とは、Visual Studio プロジェクトのコンテキスト外にあるアセンブリへの直接参照です。これは、 **[参照マネージャー]** の **[参照]** タブを使用して作成します。 アセンブリまたはコンポーネントだけが手元にあり、それを出力として作成したプロジェクトがない場合は、ファイル参照を使用します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
  [アセンブリを使用したプログラミング](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
  [方法: 参照マネージャーを使用して参照を追加または削除する](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

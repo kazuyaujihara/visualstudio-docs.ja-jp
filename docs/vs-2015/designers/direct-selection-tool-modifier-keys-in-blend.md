@@ -34,7 +34,7 @@ ms.locfileid: "54776289"
 |線分を指定し、ポインターの位置を通るようにその線分を曲線にします。|ポインターをパスの線分に合わせ、Alt キーを押しながらドラッグします。|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> 線分変換ポインター|  
 |接線の一方をもう一方の側とは別に調整します。|点または線分を個別に選択し、Alt キーを押しながら接線の終点をドラッグします。|![](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png "923951da-4081-4f8b-bebc-0f1f64d87504")<br /><br /> 接線変換ポインター|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [キーボード ショートカットと修飾キー](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)   
  [アートボードの修飾キー](../designers/artboard-modifier-keys-in-blend.md)   
  [ペン ツールの修飾キー](../designers/pen-tool-modifier-keys-in-blend.md)   

@@ -50,5 +50,5 @@ ms.locfileid: "54979921"
 #include <vsgcapture.h>  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)

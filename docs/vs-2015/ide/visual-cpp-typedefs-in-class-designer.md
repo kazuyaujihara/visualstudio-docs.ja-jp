@@ -200,6 +200,6 @@ class A {
   
  -> MyIntVect  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Visual C++ コードの使用 (クラス デザイナー)](../ide/working-with-visual-cpp-code-class-designer.md)   
  [(NOTINBUILD) typedef 指定子](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

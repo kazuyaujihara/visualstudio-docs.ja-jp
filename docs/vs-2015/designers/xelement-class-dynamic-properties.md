@@ -32,7 +32,7 @@ ms.locfileid: "54796156"
 |[[値]](../designers/value-xelement-dynamic-property.md)|要素のコンテンツを取得または設定します。|  
 |[Xml](../designers/xml-xelement-dynamic-property.md)|要素について、書式設定されていない XML 表現を取得します。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  <xref:System.Xml.Linq.XElement?displayProperty=fullName>   
  [LINQ to XML の動的プロパティ](../designers/linq-to-xml-dynamic-properties.md)   
  [XAttribute クラスの動的プロパティ](../designers/xattribute-class-dynamic-properties.md)

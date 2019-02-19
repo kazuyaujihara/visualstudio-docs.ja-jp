@@ -32,5 +32,5 @@ ms.locfileid: "54763250"
 ## <a name="using-the-favorites-tab"></a>[お気に入り] タブの使用  
  **[お気に入り]** タブでは、エントリのショートカット メニューを開いて、名前の変更、削除、フォルダーへのエントリの編成などを行うことができます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [ショートカット キー (ヘルプ ビューアー)](../ide/shortcut-keys-help-viewer.md)

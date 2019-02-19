@@ -33,7 +33,7 @@ elem.Value
 ## <a name="remarks"></a>コメント  
  このプロパティは、<xref:System.Xml.Linq.XElement.Value%2A> クラスの <xref:System.Xml.Linq.XElement?displayProperty=fullName> プロパティに相当します。ただし、この動的プロパティは変更通知もサポートします。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=fullName>   
  [XElement クラスの動的プロパティ](../designers/xelement-class-dynamic-properties.md)   
  [Xml](../designers/xml-xelement-dynamic-property.md)

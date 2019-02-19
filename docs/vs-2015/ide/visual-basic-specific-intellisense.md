@@ -51,5 +51,5 @@ Visual Basic ソース コード エディターでは、次の IntelliSense 機
   
   詳細については、「[ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IntelliSense の使用](../ide/using-intellisense.md)

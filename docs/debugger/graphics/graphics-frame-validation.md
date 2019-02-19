@@ -33,6 +33,6 @@ ms.locfileid: "54991529"
 | メッセージ | イベントに関連付けられているメッセージ。 |
 | event | エラーまたは警告に関連するイベントです。 |
 
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
 [グラフィックス診断 (DirectX グラフィックスのデバッグ)](visual-studio-graphics-diagnostics.md)   
 <!-- /VERSIONLESS -->

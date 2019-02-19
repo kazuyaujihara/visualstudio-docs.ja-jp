@@ -54,6 +54,6 @@ ms.locfileid: "54801226"
   
  カレットは、引用符の前後のどちらに置かれた場合でも同じ働きをします。 行の最後の文字がカレットの場合は無視されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [コマンド ウィンドウ](../ide/reference/command-window.md)   
  [テキストの検索と置換](../ide/finding-and-replacing-text.md)

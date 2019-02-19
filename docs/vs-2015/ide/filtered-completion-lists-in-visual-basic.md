@@ -25,6 +25,6 @@ ms.locfileid: "54786283"
 
 Visual basic の IntelliSense コンプリート リストには、リストの下部近くに 2 つのタブ コントロールがあります。 既定で選択されている **[よく使われる候補]** タブには、作成しているステートメントを完成するために最もよく使われる項目が表示されます。 **[すべて]** タブには、**[よく使われる候補]** タブに表示されている項目も含めて、オート コンプリートで使用可能なすべての項目が表示されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [IntelliSense の使用](../ide/using-intellisense.md)   
  [Visual Basic 固有の IntelliSense](../ide/visual-basic-specific-intellisense.md)

@@ -123,5 +123,5 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 
  **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [プロパティ パネル](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)します。
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  [コントロールの挿入およびそのビヘイビアーの変更](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)[オブジェクトをアニメーション化する](../designers/animate-objects-in-xaml-designer.md)[図形とパスの描画](../designers/draw-shapes-and-paths.md) [Visual Studio と Blend for Visual Studio での XAML の設計](../designers/designing-xaml-in-visual-studio.md)

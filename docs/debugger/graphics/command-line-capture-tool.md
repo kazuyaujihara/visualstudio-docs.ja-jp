@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: be2882cd6db93da4222f8ed12d1847aa5b39a288
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53960655"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995220"
 ---
 # <a name="command-line-capture-tool"></a>コマンド ライン キャプチャ ツール
 DXCap.exe は、グラフィックス診断のキャプチャと再生に使用されるコマンド ライン ツールです。 すべての機能レベルで、Direct3D 10 から Direct3D 12 をサポートしています。  
@@ -93,7 +93,7 @@ DXCap.exe -info
  `-info`  
  コンピューターとキャプチャの DLL に関する情報を表示します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  DXCap.exe は 3 つのモードで動作します。  
   
  キャプチャ モード (-c)  
@@ -162,15 +162,15 @@ DXCap.exe -e map
   
  **パッケージ "Microsoft.BingMaps":**  
  **検出:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullNameMicrosoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **名前(&N):Microsoft.BingMaps**  
+ **名前: Microsoft.BingMaps**  
  **発行元CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = u. s.**  
- **バージョン          : 2.1.2914.1734**  
+ **バージョン: 2.1.2914.1734**  
  **起動可能なアプリケーション:**   
  **IDAppexMaps**  
- **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA:いいえ**  
+ **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **IsWWA: いいえ**  
  **(起動) を AppSpec:DXCap.exe の-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**列挙された各アプリの出力の最後の行からグラフィックス情報をキャプチャする際のコマンドを表示します。  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>特定のフレームまたは特定の期間のフレームのキャプチャ  

@@ -130,5 +130,5 @@ XAML デザイナーでは、 *図形* とはその名の示すとおりのも�
   
  **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [パスの作業します。クリッピング パスを作成する](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

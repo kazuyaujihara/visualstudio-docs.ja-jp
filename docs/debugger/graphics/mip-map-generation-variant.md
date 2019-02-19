@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 45fbbf151f4978b5c4a7406a6c3aa617cab08f94
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54953173"
@@ -69,5 +69,5 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 > [!NOTE]
 >  MIP レベルを自動的に生成する代わりに独自の MIP レベル コンテンツを提供する場合は、MIP マップ テクスチャをサポートしているイメージ エディターを使用してテクスチャを作成し、ファイルをロードして、MIP レベルを `CreateTexture2D` へ渡す必要があります。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [ハーフ/クォーター テクスチャ ディメンション バリアント](half-quarter-texture-dimensions-variant.md)

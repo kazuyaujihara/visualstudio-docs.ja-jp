@@ -93,6 +93,6 @@ ms.locfileid: "54763115"
   
 3.  ソリューションのあるディレクトリを選択し、Del キーを押します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [ソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)   
  [(NIB) 方法:マルチ プロジェクト ソリューションを作成します。](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

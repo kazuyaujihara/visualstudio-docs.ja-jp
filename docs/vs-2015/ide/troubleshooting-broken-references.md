@@ -90,7 +90,7 @@ ms.locfileid: "54780528"
 ## <a name="com-component-is-not-installed-on-computer"></a>COM コンポーネントがコンピューターにインストールされていない  
  ユーザーが COM コンポーネントに参照を追加し、2 番目のユーザーが、このコンポーネントがインストールされていないコンピューターでコードを実行しようとすると、2 番目のユーザーは、参照が壊れているというエラーを受信します。 2 番目のコンピューターにコンポーネントをインストールすると、エラーが修正されます。 プロジェクトで COM コンポーネントへの参照を使用する方法の詳細については、「[.NET Framework アプリケーションにおける COM 相互運用性](http://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [プロジェクト デザイナーの概要](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [[参照設定] ページ (プロジェクト デザイナー) (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)   
  [(NIB) 方法:追加または参照の追加 ダイアログ ボックスを使用して参照を削除します。](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

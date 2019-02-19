@@ -24,5 +24,5 @@ ms.locfileid: "54983613"
 ~VsgDbg();  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [VsgDbg::VsgDbg (コンストラクター)](vsgdbg-vsgdbg-constructor.md)

@@ -34,6 +34,6 @@ ms.locfileid: "54760071"
 |同じトピック内の最初の用語 (2 番目の用語を含まない)|NOT|"operating system" NOT DOS|"operating system" を含むが、"DOS" を含まないトピック。|  
 |トピック内で近接する両方の用語|NEAR|user NEAR kernel|"kernel" にきわめて近い "user" を含むトピック。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [フルテキスト検索のヒント](../ide/full-text-search-tips.md)   
  [情報の検索](../ide/locate-information.md)

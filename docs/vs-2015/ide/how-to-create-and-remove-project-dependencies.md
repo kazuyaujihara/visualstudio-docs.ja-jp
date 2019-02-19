@@ -62,7 +62,7 @@ ms.locfileid: "54799773"
   
 4.  **[依存先]** フィールドで、このプロジェクトの依存関係ではなくなった他のプロジェクトの横にあるチェック ボックスをオフにします。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)   
  [ビルド構成について](../ide/understanding-build-configurations.md)   

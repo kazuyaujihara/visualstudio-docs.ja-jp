@@ -49,5 +49,5 @@ XAML デザイナーでキーボード ショートカットを使うと、マ�
 |[ドキュメント アウトライン] ウィンドウにフォーカスがあるときにアートボードのオブジェクトをロックする|Ctrl + L|  
 |[ドキュメント アウトライン] ウィンドウにフォーカスがあるときにアートボードのオブジェクトのロックを解除する|Shift + Ctrl + L|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

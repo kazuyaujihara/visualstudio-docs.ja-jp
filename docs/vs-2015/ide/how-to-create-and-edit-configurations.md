@@ -123,7 +123,7 @@ ms.locfileid: "54767332"
   
 3.  **[プロジェクトのコンテキスト]** ウィンドウで、すべてのプロジェクトに対して、必要な **[構成]** と **[プラットフォーム]** を選択し、**[ビルド]** するかどうかおよび **[配置]** するかどうかを指定します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [ビルド構成について](../ide/understanding-build-configurations.md)   
  [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [(NIB) 方法:プロジェクトのプロパティと構成設定を変更します。](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

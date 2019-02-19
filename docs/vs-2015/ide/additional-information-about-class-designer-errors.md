@@ -49,5 +49,5 @@ ms.locfileid: "54783681"
  [Visual Studio クラス デザイナー フォーラム](http://go.microsoft.com/fwlink/?LinkId=160754)  
  クラス デザイナーに関する質問のためのフォーラムです。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [クラスと型のデザインおよび表示](../ide/designing-and-viewing-classes-and-types.md)

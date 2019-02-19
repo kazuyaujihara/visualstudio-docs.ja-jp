@@ -36,5 +36,5 @@ ms.locfileid: "54769508"
   
  <xref:System.Xml.Linq.XAttribute>  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目  
  [高度な LINQ to XML プログラミング](http://msdn.microsoft.com/library/88c4a6ea-700b-4468-9a29-0ea18fc63dd0)
