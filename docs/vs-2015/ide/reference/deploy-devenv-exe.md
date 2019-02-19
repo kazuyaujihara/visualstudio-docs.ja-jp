@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 16ac851c59f084a4d9e98998754e7b9d20afaf81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54804530"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
@@ -46,12 +46,12 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
  /projectconfig `ProjConfigName`  
  任意。 指定した `/project` のビルド時に使用されるプロジェクトのビルド構成の名前。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  指定するプロジェクトは、配置プロジェクトである必要があります。 指定したプロジェクトが配置プロジェクトでない場合に、ビルド済みのプロジェクトを渡して配置しようとすると、エラーが発生して配置は失敗します。  
   
  空白を含む文字列を二重引用符で囲みます。  
   
- エラーなどのビルドの概要情報は、**[コマンド]** ウィンドウ、または `/out` スイッチで指定された任意のログ ファイルに表示できます。  
+ エラーなどのビルドの概要情報は、[**コマンド**] ウィンドウ、または `/out` スイッチで指定された任意のログ ファイルに表示できます。  
   
 ## <a name="example"></a>例  
  この例では、`Release` プロジェクトのビルド構成を使用して、`MySolution` の `Release` ソリューション構成内でプロジェクト `CSharpConsoleApp` を配置します。  
@@ -60,7 +60,7 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release   
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)   
  [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   

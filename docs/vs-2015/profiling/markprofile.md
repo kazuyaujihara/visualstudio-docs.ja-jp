@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 105e81ed15a540a0c008eb94cb4af49caa099879
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803031"
 ---
 # <a name="markprofile"></a>MarkProfile
@@ -47,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_TEXTTOOLONG|文字列の長さが最大値の 256 文字を超えています。 コメント文字列は切り詰められ、マークとコメントが記録されます。|  
 |MARK_OK|成功した場合は MARK_OK が返されます。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  MarkProfile 関数を含むスレッドにプロファイルが実行される場合、コードが実行されるたびに .vsp ファイルにマーク値が挿入されます。 MarkProfile は複数回呼び出すことができます。  
   
  プロファイル マークは、スコープ内でグローバルです。 たとえば、あるスレッドに挿入したプロファイルマークを、.vsp ファイル内の任意のスレッドで使用し、データ セグメントの開始または終了をマークできます。  
@@ -61,9 +61,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>関数の情報  
- ヘッダー:VSPerf.h で宣言  
+ ヘッダー : VSPerf.h で宣言  
   
- インポート ライブラリ:VSPerf.lib  
+ インポート ライブラリ : VSPerf.lib  
   
 ## <a name="example"></a>例  
  次のコードは、MarkProfile 関数の使用例を示しています。  
@@ -100,5 +100,5 @@ void ExerciseMarkProfile()
 }  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)

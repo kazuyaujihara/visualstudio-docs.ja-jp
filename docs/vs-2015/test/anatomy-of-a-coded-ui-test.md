@@ -11,10 +11,10 @@ caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 35222fc9e320bafbaafe1bc19e174649142252c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54781178"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>コード化された UI テストの構造
@@ -31,10 +31,10 @@ ms.locfileid: "54781178"
   
 |ファイル|目次|編集可能かどうか|  
 |----------|--------------|---------------|  
-|[UIMap.Designer.cs](#UIMapDesignerFile)|[宣言セクション](#UIMapDesignerFile)<br /><br /> [UIMap クラス](#UIMapClass) (部分クラス、自動生成)<br /><br /> [メソッド](#UIMapMethods)<br /><br /> [プロパティ](#UIMapProperties)|×|  
+|[UIMap.Designer.cs](#UIMapDesignerFile)|[宣言セクション](#UIMapDesignerFile)<br /><br /> [UIMap クラス](#UIMapClass) (部分クラス、自動生成)<br /><br /> [メソッド](#UIMapMethods)<br /><br /> [プロパティ](#UIMapProperties)|いいえ|  
 |[UIMap.cs](#UIMapCS)|[UIMap クラス](#UIMapCS) (部分クラス)|はい|  
 |[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 クラス](#CodedUITestCS)<br /><br /> [メソッド](#CodedUITestMethods)<br /><br /> [プロパティ](#CodedUITestProperties)|はい|  
-|[UIMap.uitest](#UIMapuitest)|テストに使用する UI の XML マップ。|×|  
+|[UIMap.uitest](#UIMapuitest)|テストに使用する UI の XML マップ。|いいえ|  
   
 ###  <a name="UIMapDesignerFile"></a> UIMap.Designer.cs  
  このファイルには、テストの作成時に **[コード化された UI テスト ビルダー]** によって自動的に作成されるコードが含まれます。 このファイルはテストに変更があるたびに再作成されるため、ファイル内のコードに対して追加や変更はできません。  
@@ -267,7 +267,7 @@ public void MyTestCleanup()
   
  `UIMap.uitest` ファイルは直接編集できません。 ただし、コード化された UI ビルダーを使用してテストを変更することはできます。これにより、`UIMap.uitest` ファイルと [UIMap.Designer.cs](#UIMapDesignerFile) ファイルが自動的に変更されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   
