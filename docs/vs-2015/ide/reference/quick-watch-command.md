@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d8ee0de9cad23b6208c9b015c65a8d9494821eae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54789810"
 ---
 # <a name="quick-watch-command"></a>QuickWatch コマンド
@@ -37,7 +37,7 @@ Debug.QuickWatchq [text]
  `text`  
  任意。 **[クイック ウォッチ]** ダイアログ ボックスに追加するテキスト。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  `text` を省略した場合、カーソルで現在選択されているテキストや単語がウォッチ ウィンドウに追加されます。  
   
 ## <a name="example"></a>例  
@@ -46,8 +46,8 @@ Debug.QuickWatchq [text]
 >Debug.QuickWatch  
 ```  
   
-## <a name="see-also"></a>「  
- [方法: [クイック ウォッチ] ダイアログ ボックスを使用します。](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+## <a name="see-also"></a>参照  
+ [方法: [クイック ウォッチ] ダイアログ ボックスを使用する](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [[検索/コマンド] ボックス](../../ide/find-command-box.md)   
