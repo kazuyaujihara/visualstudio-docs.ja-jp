@@ -24,5 +24,5 @@ ms.locfileid: "54778699"
   
 このページを使用して、キーボード マップを設定します。 マッピングの詳細については、「[キーボード ショートカットの識別とカスタマイズ](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)
