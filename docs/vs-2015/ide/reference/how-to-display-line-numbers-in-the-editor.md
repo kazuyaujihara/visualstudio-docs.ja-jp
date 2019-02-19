@@ -42,7 +42,7 @@ ms.locfileid: "54800744"
 > [!NOTE]
 >  使う言語または設定によっては、**[オプション]** ダイアログ ボックスの **[すべての設定を表示]** チェック ボックスをオンにして、**[すべての言語]** サブノードを表示する必要がある場合があります。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [エディターのカスタマイズ](../../ide/customizing-the-editor.md)   
  [[テキスト エディター] ([オプション] ダイアログ ボックス)](../../ide/reference/text-editor-options-dialog-box.md)   
  [コードの作成](../../ide/writing-code-in-the-code-and-text-editor.md)
