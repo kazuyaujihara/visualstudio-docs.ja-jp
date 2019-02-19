@@ -77,6 +77,6 @@ ms.locfileid: "54763349"
   **DLL ベース アドレス**  
   DLL を読み込む位置に推奨されるベース アドレスを指定します。 DLL の既定のベース アドレスは、[!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 共通言語ランタイムにより設定されます。 詳しくは、「[/baseaddress (C# コンパイラ オプション)](http://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608)」をご覧ください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [C# コンパイラのオプション](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)   
  [[ビルド] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-page-project-designer-csharp.md)
