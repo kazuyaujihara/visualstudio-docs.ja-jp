@@ -125,6 +125,6 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="use-quotes-for-path-names-with-spaces"></a>スペースを含むパス名には引用符を使用する  
  たとえば、スペースを含むパスを持つファイルを開く場合は、スペースを含むパスまたはパス セグメントを二重引用符で囲む必要があります (**C:\\"Program Files"** または **"C:\Program Files"**)。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
