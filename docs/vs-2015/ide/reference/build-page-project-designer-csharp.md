@@ -120,6 +120,6 @@ ms.locfileid: "54805322"
  **詳細設定**  
  クリックすると、[[ビルドの詳細設定] ダイアログ ボックス (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) ダイアログ ボックスが表示されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)   
  [C# コンパイラ オプション](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)
