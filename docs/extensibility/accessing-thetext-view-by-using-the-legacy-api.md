@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3e781e9cb504148ae46f6a9e0b37b6ae778fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979648"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335504"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>従来の API を使用して、テキスト ビューにアクセスします。
 テキスト ビューは、テキスト バッファーに格納されているテキストのプレゼンテーションです。 テキスト ビューは、次のセクションで示すように、従来の API を使用してアクセスできます。
@@ -23,7 +23,7 @@ ms.locfileid: "54979648"
 ## <a name="text-view-object"></a>テキスト ビュー オブジェクト
  各ビューは、独自のテキスト バッファーに関連付けられていると、ビューは、バッファー内のデータでウィンドウを。 次の図は、キーによって表されるテキスト ビュー オブジェクトのインターフェイスを示しています。<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>します。
 
- ![Visual Studio テキスト ビュー オブジェクト](../extensibility/media/vstextview.gif "vstextview")テキスト ビュー オブジェクト
+ ![Visual Studio テキスト ビュー オブジェクト](../extensibility/media/vstextview.gif)
 
  ビューは、バッファー内のテキストを表示する方法です。 ビューで確認できますが、バッファー内のテキストの正確な表現されないように、折り返し、および、アウトラインなどの機能が含まれます。
 

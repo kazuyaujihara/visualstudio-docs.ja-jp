@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bd9b728ee8537f5668914f05f05481fd3fe56d92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780425"
 ---
 # <a name="toolbox-html-tab"></a>ツールボックス、[HTML] タブ
@@ -32,9 +32,9 @@ ms.locfileid: "54780425"
   
 ## <a name="tasks"></a>[タスク]  
   
--   [方法: ツールボックス ウィンドウを管理します。](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+-   [方法: ツールボックス ウィンドウの管理](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
--   [方法: [ツールボックス] タブを操作します。](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
+-   [方法: [ツールボックス] タブの操作](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
 ## <a name="ui-elements"></a>UI 要素  
  次のツールは、[HTML] タブで既定で使用できます。  
@@ -42,7 +42,7 @@ ms.locfileid: "54780425"
  **ポインター**  
  ![ASP.NET モバイル デザイナー HTMLpage ポインター](../../ide/reference/media/vxpointer.gif "vxPointer")  
   
- このツールは、任意の [ツールボックス] タブを開いたときに、既定で選択されます。 削除することはできません。 マウス ポインターを使用すると、オブジェクトをデザイン ビュー サーフェイスにドラッグしたり、サイズ変更したり、ページまたはフォーム上で位置を変更することができます。 詳細については、「[方法 :ツールボックス ウィンドウの管理](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)と[方法。[ツールボックス] タブを操作](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)します。  
+ このツールは、任意の [ツールボックス] タブを開いたときに、既定で選択されます。 削除することはできません。 マウス ポインターを使用すると、オブジェクトをデザイン ビュー サーフェイスにドラッグしたり、サイズ変更したり、ページまたはフォーム上で位置を変更することができます。 詳しくは、「[方法: ツールボックス ウィンドウの管理](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)」および「[[ツールボックス] タブの操作方法](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)」をご覧ください。  
   
  **入力 (ボタン)**  
  ![HTML Web ページ ボタン](../../ide/reference/media/vxbutton.gif "vxButton")  
@@ -55,7 +55,7 @@ ms.locfileid: "54780425"
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- 詳細については、次を参照してください[HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputButton サーバー コントロール宣言構文](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa)、 [NIB:。方法: スクリプトを作成し、イベント ハンドラーの編集](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)、[ボタン Web サーバー コントロールのコンテンツ マップ](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf)、 <xref:System.Web.UI.HtmlControls.HtmlInputButton>、<xref:System.Web.UI.HtmlControls.HtmlButton>と<xref:System.Web.UI.WebControls.Button>します。  
+ 詳細については、次を参照してください[HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputButton サーバー コントロール宣言構文](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa)、 [NIB: 方法: スクリプトの作成とイベント ハンドラーの編集](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)、 。[ボタンの Web サーバー コントロールのコンテンツ マップ](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf)、 <xref:System.Web.UI.HtmlControls.HtmlInputButton>、 <xref:System.Web.UI.HtmlControls.HtmlButton>、および<xref:System.Web.UI.WebControls.Button>します。  
   
  **入力 (リセット)**  
  ![HTMLpageResetButton スクリーンショット](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -126,7 +126,7 @@ ms.locfileid: "54780425"
 <input id="Password1" type="password" name="Password1">  
 ```  
   
- 詳細については、次を参照してください。 [HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputPassword サーバー コントロール宣言構文](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f)、[方法。パスワードの入力の TextBox Web サーバー コントロールを設定](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310)、および[チュートリアル。Web でユーザー入力の検証のフォーム ページ](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)します。  
+ 詳細については、「[HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputPassword Server Control Declarative Syntax](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f)」 (HtmlInputPassword サーバー コントロール宣言構文)、「[方法 : パスワード入力のための TextBox Web サーバー コントロールを設定する](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310)」、および「[チュートリアル : Web フォーム ページにおけるユーザーの入力の検証](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)」を参照してください。  
   
 > [!IMPORTANT]
 >  アプリケーションでユーザー名とパスワードを送信する場合、転送を暗号化するため、Secure Sockets Layer (SSL) を使用するように Web サイトを構成する必要があります。 詳細については、「[IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856)」 (IIS 操作ガイド) の「Securing Connections with SSL」 (SSL で接続を保護する) を参照してください。 また、すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  
@@ -225,7 +225,7 @@ ms.locfileid: "54780425"
   
  サイズ プロパティの値を増やすことで、複数行の `select` 要素を作成できます。  
   
- 詳細については、次を参照してください[HtmlSelect サーバー コントロール宣言構文](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5)、 [NIB:。方法: スクリプトを作成し、イベント ハンドラーの編集](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)、 [DropDownList Web サーバー コントロールの概要](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608)、 [ListBox Web サーバー コントロールの概要](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97)、 <xref:System.Web.UI.HtmlControls.HtmlSelect>、および<xref:System.Web.UI.WebControls.DropDownList>します。  
+ 詳細については、次を参照してください[HtmlSelect サーバー コントロール宣言構文](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5)、 [NIB: 方法: スクリプトの作成とイベント ハンドラーの編集](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)、 [DropDownList Web サーバー コントロールの概要](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608)。、 [ListBox Web サーバー コントロールの概要](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97)、 <xref:System.Web.UI.HtmlControls.HtmlSelect>、および<xref:System.Web.UI.WebControls.DropDownList>します。  
   
  **水平線**  
  ![HTML ページの水平線項目](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
@@ -253,7 +253,7 @@ ms.locfileid: "54780425"
   
  詳細については、次を参照してください。 [HTML Div コントロール](http://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995)、 [Label Web サーバー コントロールの概要](http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac)、および<xref:System.Web.UI.WebControls.Label>します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [ツールボックス](../../ide/reference/toolbox.md)   
  [[標準] タブ (ツールボックス)](http://msdn.microsoft.com/library/35e9320d-fcbd-474b-8b8f-55705e9a1870)   
  [HTML コントロール](http://msdn.microsoft.com/library/83bc6f7e-a2b5-4fe9-9a34-eb34aef673be)

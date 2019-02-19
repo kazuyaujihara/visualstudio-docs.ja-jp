@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 041e83f8d71679ffb26d24be37f353e39fbc08e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54765845"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>ヘルプ ビューアーのユーザー補助機能
@@ -39,5 +39,5 @@ Microsoft は、すべてのユーザーが簡単に使用できる製品とサ�
 ## <a name="internet-explorer-options"></a>Internet Explorer オプション  
  Web ページがどのように表示されるかに関連する Internet Explorer オプションを変更することによって、ヘルプ ビューアーをより使いやすくすることができます。 詳細については、「[ヘルプ ビューアーのカスタマイズ](../ide/customize-the-help-viewer.md)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

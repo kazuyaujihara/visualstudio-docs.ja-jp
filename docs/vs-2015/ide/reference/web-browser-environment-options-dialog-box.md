@@ -25,10 +25,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f66dae4d9e69ce1fc5d4351d72606e1fdad10725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755314"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>[Web ブラウザー]\([オプション] ダイアログ ボックス - [環境])
@@ -54,7 +54,7 @@ ms.locfileid: "54755314"
   
 - **ソース エディター** 選択すると、[[コードの作成]](../../ide/writing-code-in-the-code-and-text-editor.md) にソースが表示されます。  
   
-- **HTML エディター** 選択すると、[HTML デザイナー](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)に表示されます。 この選択を使用し、Web ページを 2 つのビュー、デザイン ビューまたは標準のテキスト ベースのソース ビューのいずれかで編集します。  
+- **HTML エディター** 選択すると、[HTML デザイナー](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)に表示されます。 この場合、デザイン ビューまたは標準のテキストベースのソース ビューで Web ページを編集します。  
   
 - **外部エディター** 選択すると、別のエディターにソースが表示されます。 選択するエディター (Notepad.exe など) のパスを指定します。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "54755314"
 > [!NOTE]
 >  [ブラウザーの選択] ダイアログ ボックスで、別の外部 Web ブラウザーを使用して Visual Studio 内部 Web ブラウザー (Internet Explorer のいずれかのバージョン) を置き換えます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)   
  [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)   
  [HTML デザイナー](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)

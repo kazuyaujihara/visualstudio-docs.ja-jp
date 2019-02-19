@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251dc4279530c2d10ba8b404ee515824d0671037
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54776997"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>行ビュー - .NET メモリ サンプリング データ
@@ -63,5 +63,5 @@ ms.locfileid: "54776997"
 |**割り当てバイト数 (関数のみ)**|この行で割り当てられた、プロファイリング実行で割り当てられたすべてのメモリ バイト数の割合。|  
 |**割り当てバイト数 % (関数のみ)**|この行で割り当てられた、プロファイリング実行で割り当てられたすべてのメモリ バイト数の割合。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [行 ビュー](../profiling/lines-view-sampling-data.md)

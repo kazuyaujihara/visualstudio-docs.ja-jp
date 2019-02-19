@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 958692d9227017eba0901ddb48a19502af9ec452
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769197"
 ---
 # <a name="property-element-msbuild"></a>Property 要素 (MSBuild)
@@ -64,7 +64,7 @@ ms.locfileid: "54769197"
   
  このテキストはプロパティ値を指定します。これに XML を含めることができます。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  プロパティ名に使用できるのは ASCII 文字のみに制限されます。 プロパティ値は、"`$(`" と "`)`" の間にプロパティ名を入れることでプロジェクト内で参照されます。 たとえば、`builddir` プロパティの値が `build` の場合、`$(builddir)\classes` は "build\classes" に解決されます。 プロパティの詳細については、「[MSBuild プロパティ](msbuild-properties1.md)」を参照してください。  
   
 ## <a name="example"></a>例  
@@ -77,6 +77,6 @@ ms.locfileid: "54769197"
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>「
+## <a name="see-also"></a>参照
 [MSBuild プロパティ](msbuild-properties1.md)  
  [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)

@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c6dcd6da21d83203f2e22472aaeb226f65e8475
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767505"
 ---
 # <a name="instruction-pointers-ips-view"></a>命令ポインター (IP) ビュー
@@ -36,7 +36,7 @@ ms.locfileid: "54767505"
   
  .NET メモリ データの場合、IP ビューには、メモリを割り当てる命令が表示されます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [命令ポインター (IP) ビュー](../profiling/instruction-pointers-ips-view-sampling-data.md)   
  [命令ポインター (IP) ビュー - サンプリング](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [命令ポインター (IP) ビュー](../profiling/instruction-pointers-ips-view-contention-data.md)

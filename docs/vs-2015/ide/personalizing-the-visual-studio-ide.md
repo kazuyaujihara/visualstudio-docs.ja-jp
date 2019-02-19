@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dbdeb2188580c9be67cbca992a8513c509d5514e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778446"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Visual Studio IDE のカスタマイズ
@@ -36,10 +36,10 @@ ms.locfileid: "54778446"
  自分とチームのカスタム スタート ページを作成するには、「[スタート ページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)」を参照してください。
 
 ### <a name="environment-color-themes"></a>環境の配色テーマ
- 明色、暗色、青の配色テーマを変更するには、**[クイック起動]** に「environment」と入力して、**[環境 &#124; 全般]** を選択します。 エディターで配色オプションを変更するには、**[クイック起動]** に「`environment`」と入力して、**[環境 &#124; フォントおよび色]** を選択します。 また、「[方法: フォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」も参照してください。
+ 明色、暗色、青の配色テーマを変更するには、[**クイック起動**] に「environment」と入力して、**[環境 &#124; 全般]** を選択します。 エディターで配色オプションを変更するには、**[クイック起動]** に「`environment`」と入力して、**[環境 &#124; フォントおよび色]** を選択します。 「[方法: フォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」も参照してください。
 
 ### <a name="menus-and-toolbars"></a>メニューとツールバー
- メニューやツールバーの項目を追加または削除するには、[メニューおよびツール バーのカスタマイズ](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)に関するページを参照してください。
+ メニュー項目やツールバーの項目を追加または削除するには、「[方法: メニューおよびツールバーをカスタマイズする](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)」を参照してください。
 
 ### <a name="main-menu-casing"></a>メイン メニューの大文字小文字の区別
  メイン メニューの大文字小文字の区別の変更は一般的に需要が高いため、これを **[タイトル文字]** と **[すべて大文字]** の間で変更できます。**[クイック起動]** に 「`environment`」と入力して **[環境 &#124; 全般]** を選択します。

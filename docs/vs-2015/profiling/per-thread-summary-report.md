@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54805382"
 ---
 # <a name="per-thread-summary-report"></a>スレッド別の概要レポート
@@ -25,7 +25,7 @@ ms.locfileid: "54805382"
 
 この棒グラフは、現在の表示時間範囲におけるアクティビティ カテゴリごとに、非表示にされていない各スレッドで費やされた時間の割合を示します。 "実行" はそのスレッドが実行中であることを示し、他のすべてのカテゴリはそのスレッドが何らかの処理の待機中であることを示します。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [実行時間 (スレッド ビュー)](../profiling/execution-time-threads-view.md)   
  [I/O 時間 (スレッド ビュー)](../profiling/i-o-time-threads-view.md)   
  [メモリ管理時間](../profiling/memory-management-time.md)   

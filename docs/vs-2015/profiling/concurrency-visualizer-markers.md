@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 47860775a6351cab83cd43975e94373c3558305a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54795348"
 ---
 # <a name="concurrency-visualizer-markers"></a>コンカレンシー ビジュアライザー マーカー
@@ -63,7 +63,7 @@ ms.locfileid: "54795348"
 ## <a name="markers-from-eventsource"></a>EventSource からのマーカー  
  コンカレンシー ビジュアライザーでは、EventSource イベントも表示できます。  詳細については、「[マーカーとしての EventSource イベントの視覚化](../profiling/visualizing-eventsource-events-as-markers.md)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [フラグ マーカー](../profiling/flag-markers.md)   
  [メッセージ マーカー](../profiling/message-markers.md)   
  [スパン マーカー](../profiling/span-markers.md)   

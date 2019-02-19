@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758243"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio 内の C++ の概要
@@ -148,4 +148,4 @@ ms.locfileid: "54758243"
    このチュートリアルは完了しました。 その他の例については、「[Visual Studio Samples](../ide/visual-studio-samples.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
- [チュートリアル: 単純なアプリケーション作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md) [Visual Studio のサンプル](../ide/visual-studio-samples.md) [Visual Studio を使用した開発を開始します。](../ide/get-started-developing-with-visual-studio.md)
+ [チュートリアル: 単純なアプリケーションを作成する](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md) [Visual Studio のサンプル](../ide/visual-studio-samples.md) [Visual Studio を使用した開発を開始します。](../ide/get-started-developing-with-visual-studio.md)

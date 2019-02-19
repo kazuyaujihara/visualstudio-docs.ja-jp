@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9e058d18c0a7c6d1d3b26a5b379c308d26f790ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54783162"
 ---
 # <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv.exe)
@@ -32,7 +32,7 @@ ms.locfileid: "54783162"
 devenv /updateconfiguration  
 ```  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  VSIX パッケージをインストールすると、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ではこのコマンドが自動的に実行されます。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] が MEF キャッシュを更新するように、ファイルの修正プログラムを適用した後に `devenv.exe /updateconfiguration` を実行する必要があります。 これにより、修正が適切かどうかを評価することができます。  
   
 ## <a name="example"></a>例  
@@ -42,6 +42,6 @@ devenv /updateconfiguration
 Devenv.exe /updateconfiguration  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 44d816c7107d34cf81369a98ea0c435133e8e4b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767521"
 ---
 # <a name="zoom-control-threads-view"></a>ズーム コントロール (スレッド ビュー)
@@ -31,7 +31,7 @@ ms.locfileid: "54767521"
 ## <a name="zooming-in-and-out-by-using-the-mouse-wheel"></a>マウス ホイールを使用した拡大縮小  
  タイムライン上の任意の点をクリックし (マウス フォーカスを確実に置くため)、Ctrl キーを押しながらマウス ホイールを移動します (拡大するには前方へ、縮小するには後方へ)。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [チャネルの管理](../profiling/manage-channels.md)   
  [測定モード オン/オフ](../profiling/measure-mode-on-off.md)   
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)   

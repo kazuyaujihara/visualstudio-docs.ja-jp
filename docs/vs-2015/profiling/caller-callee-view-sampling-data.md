@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f5e3c28d7aa24f46bb3fc09045574030f8eb03db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803924"
 ---
 # <a name="caller--callee-view---sampling-data"></a>呼び出し元/呼び出し先ビュー - サンプリング データ
@@ -50,7 +50,7 @@ ms.locfileid: "54803924"
 |**サンプル数 (関数のみ)**|-   現在の関数の場合、この関数が直接実行されていたとき、つまりこの関数が呼び出し履歴の最上位にあったときに収集されたプロファイル実行のサンプル数。 この関数の子関数の実行中に収集されたサンプルは、排他カウントには含まれません。<br />-   呼び出し元関数の場合、この関数が現在の関数を呼び出したときに収集された現在の関数の排他サンプル数。<br />-   呼び出し先関数の場合、現在の関数がこの関数を呼び出したときに収集されたこの関数の排他サンプル数。|  
 |**サンプル % (関数のみ)**|プロファイル実行のすべてのサンプルに対する、この関数の排他サンプルの割合。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [呼び出し元/呼び出し先ビュー - .NET メモリ サンプリング データ](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [呼び出し元/呼び出し先ビュー - .NET メモリ インストルメンテーション データ](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [呼び出し元/呼び出し先ビュー - インストルメンテーション データ](../profiling/caller-callee-view-instrumentation-data.md)

@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b25e7bb0f6498e9160dd8602648ced28b3bb9fed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780515"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
@@ -38,7 +38,7 @@ Devenv /edit [file1[ file2]]
  `file2`  
  任意。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] の既存インスタンスで開く 1 つ以上の追加ファイル。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  ファイルが指定されておらず、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] の既存のインスタンスがある場合は、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] の既存のインスタンスがフォーカスを取得します。 ファイルが指定されておらず、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] の既存のインスタンスがない場合は、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] の新しいインスタンスが簡略化されたウィンドウ レイアウトで作成されます。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] の既存のインスタンスがモーダル状態の場合 (たとえば、[[オプション] ダイアログ ボックス](../../ide/reference/options-dialog-box-visual-studio.md)が開かれている場合)、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] がモーダル状態を終了すると、ファイルが既存のインスタンスで開かれます。  
@@ -50,5 +50,5 @@ Devenv /edit [file1[ file2]]
 devenv /edit MyFile.cs  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

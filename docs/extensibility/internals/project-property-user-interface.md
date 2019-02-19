@@ -12,20 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ec1a46b619eecc08e08c74535430f9a0d7bfc3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f341a0825c4fcacc41fc01b29c6d65882fa500d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957055"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335299"
 ---
 # <a name="project-property-user-interface"></a>プロジェクト プロパティのユーザー インターフェイス
+
 プロジェクト サブタイプは、プロジェクトで項目を使用できる**プロパティ ページ** ダイアログ ボックス ベースのプロジェクトで指定されているように非表示または読み取り専用のコントロールとページ全体のことを指定するには、または、にプロジェクトサブタイプに固有のページを追加**プロパティ ページ** ダイアログ ボックス。
 
 ## <a name="extending-the-project-property-dialog-box"></a>プロジェクトのプロパティ ダイアログ ボックスを拡張します。
- プロジェクト サブタイプは、オートメーション エクステンダーとプロジェクト構成の参照オブジェクトを実装します。 これらのエクステンダーの実装、<xref:EnvDTE.IFilterProperties>インターフェイスの特定のプロパティを非表示] または [読み取り専用にします。 **プロパティ ページ**ベースのプロジェクトによって実装される、基本プロジェクトのダイアログ ボックスでは、オートメーション エクステンダーによって実行されるフィルター処理します。
 
- 拡張するプロセス、**プロジェクト プロパティ** ダイアログ ボックスを以下に示します。
+プロジェクト サブタイプは、オートメーション エクステンダーとプロジェクト構成の参照オブジェクトを実装します。 これらのエクステンダーの実装、<xref:EnvDTE.IFilterProperties>インターフェイスの特定のプロパティを非表示] または [読み取り専用にします。 **プロパティ ページ**ベースのプロジェクトによって実装される、基本プロジェクトのダイアログ ボックスでは、オートメーション エクステンダーによって実行されるフィルター処理します。
+
+拡張するプロセス、**プロジェクト プロパティ** ダイアログ ボックスを以下に示します。
 
 -   ベースのプロジェクトからプロジェクトのサブタイプが実装することによって、エクステンダーを取得する、<xref:EnvDTE80.IInternalExtenderProvider>インターフェイス。 [参照]、プロジェクトの自動化、およびすべての基本プロジェクトのプロジェクト構成の参照オブジェクトは、このインターフェイスを実装します。
 
@@ -39,11 +41,11 @@ ms.locfileid: "54957055"
 
 -   プロジェクト サブタイプであるか、次を取得することによって実行時に基本プロジェクトのさまざまな拡張可能なオブジェクトの適切な Catid を調べる<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>値。
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
 プロジェクト サブタイプ プロジェクト スコープの Catid を判断するには上記のプロパティを取得します[VSITEMID します。ルート](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)から、`VSITEMID typedef`します。 プロジェクト サブタイプを制御する可能性がありますも**プロパティ ページ**プロジェクトのダイアログ ボックスのページが表示されます構成に依存し、構成に依存しません。 いくつかのプロジェクト サブタイプは、組み込みのページを削除し、プロジェクトのサブタイプの特定のページを追加する必要があります。 この管理対象のクライアント プロジェクトの呼び出しを有効にするには、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>メソッドは、次のプロパティ。
 

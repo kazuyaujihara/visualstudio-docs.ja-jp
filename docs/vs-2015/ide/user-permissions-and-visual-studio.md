@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775873"
 ---
 # <a name="user-permissions-and-visual-studio"></a>ユーザー アクセス許可と Visual Studio
@@ -34,7 +34,7 @@ ms.locfileid: "54775873"
 |区分|タスク|詳細情報|
 |----------|----------|--------------------------|
 |インストール|Visual Studio をインストールする。|[Visual Studio 2015 のインストール](../install/install-visual-studio-2015.md)|
-||Visual Studio の評価版からアップグレードする。|[方法: Visual Studio の評価版からのアップグレード](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
+||Visual Studio の評価版からアップグレードする。|[方法: 評価版の Visual Studio からアップグレードする](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||ローカル ヘルプ コンテンツをインストール、更新、または削除する。|[ローカル コンテンツのインストールと管理](../ide/install-and-manage-local-content.md)|
 |アプリケーションの種類|SharePoint 2010 のソリューションを開発する。|[SharePoint ソリューションの開発要件](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] の開発者ライセンスを取得する。|[開発者用ライセンスの取得](http://go.microsoft.com/fwlink/?LinkID=241313)|
@@ -48,7 +48,7 @@ ms.locfileid: "54775873"
 ||エミュレーターを使用して、Microsoft Azure クラウド サービス プロジェクトをデバッグする。|[Visual Studio でのクラウド サービスのデバッグ](http://go.microsoft.com/fwlink/?LinkId=266725)|
 ||リモート デバッグのファイアウォールを構成する。|[デバイスのリモート ツールのセットアップ](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |パフォーマンス ツール|アプリケーションをプロファイルする。|[パフォーマンス プロファイリングのビギナーズ ガイド](../profiling/beginners-guide-to-performance-profiling.md)|
-|配置|ローカル コンピューターでインターネット インフォメーション サービス (IIS) に Web アプリケーションを配置する。|[Visual Studio または Visual Web Developer を使用して、ホスティング プロバイダーへの ASP.NET Web アプリケーションの展開。テスト環境として IIS に展開します。](http://go.microsoft.com/fwlink/?LinkId=266478)|
+|配置|ローカル コンピューターでインターネット インフォメーション サービス (IIS) に Web アプリケーションを配置する。|[Visual Studio または Visual Web Developer を使用しているホスティング プロバイダーへの ASP.NET Web アプリケーションの配置: テスト環境としての IIS への配置](http://go.microsoft.com/fwlink/?LinkId=266478)|
 |Microsoft にフィードバックを提供する。|Visual Studio カスタマー エクスペリエンス向上プログラムへの参加方法を変更する。|[方法: フィードバックを送信する](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>管理者としての Visual Studio の実行

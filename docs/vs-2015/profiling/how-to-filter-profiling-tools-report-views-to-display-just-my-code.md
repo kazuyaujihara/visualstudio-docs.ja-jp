@@ -1,5 +1,5 @@
 ---
-title: '方法: プロファイル ツールのレポート ビューをフィルター処理してマイ コードのみを表示する | Microsoft Docs'
+title: '方法: プロファイリング ツールのレポート ビューをフィルター処理してマイ コードのみを表示する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f57dedfecd8db92f93183fa0430de712431f83a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787609"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>方法: プロファイリング ツールのレポート ビューをフィルター処理してマイ コードのみを表示する
@@ -37,5 +37,5 @@ Visual Studio 2010 Premium では、自分が実装したコードのみをパ�
   
 3.  **[全般設定]** で、**[マイ コードのみを有効にする]** チェック ボックスをオフにします。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [パフォーマンス ツール のレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)

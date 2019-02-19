@@ -1,5 +1,5 @@
 ---
-title: '方法: 複数のスタートアップ プロジェクトの設定 |Microsoft Docs'
+title: '方法 : 複数のスタートアップ プロジェクトを設定する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 729388f71fcad2a9204e41dcc2bc7c3b6a657523
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54760084"
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>方法: 複数のスタートアップ プロジェクトを設定する
+# <a name="how-to-set-multiple-startup-projects"></a>方法 : 複数のスタートアップ プロジェクトを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio では、デバッガーの起動時に複数のプロジェクトをどのように実行するかを指定できます。  
@@ -31,7 +31,7 @@ Visual Studio では、デバッガーの起動時に複数のプロジェクト
   
 3.  **[共通プロパティ]** ノードを展開し、**[スタートアップ プロジェクト]** をクリックします。  
   
-4.  クリックして**マルチ スタートアップ プロジェクト**し適切なアクションを設定します。 詳細については、次を参照してください。[に NIB 方法。プロジェクトのプロパティと構成設定を変更](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)します。  
+4.  クリックして**マルチ スタートアップ プロジェクト**し適切なアクションを設定します。 詳細については、「[方法: プロジェクト プロパティおよび構成設定を変更する](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)」をご覧ください。  
   
 ## <a name="see-also"></a>関連項目  
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)   

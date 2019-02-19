@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787093"
 ---
 # <a name="template-parameters"></a>テンプレート パラメーター
@@ -74,7 +74,7 @@ ms.locfileid: "54787093"
 ## <a name="custom-template-parameters"></a>カスタム テンプレート パラメーター  
  パラメーター置換時に使用される既定の予約済みテンプレート パラメーターの他に、独自のテンプレート パラメーターと値を指定できます。詳細については、「[CustomParameters 要素 (Visual Studio テンプレート)](../extensibility/customparameters-element-visual-studio-templates.md)」を参照してください。  
   
-## <a name="example-replacing-files-names"></a>例:ファイル名の置換  
+## <a name="example-replacing-files-names"></a>例: ファイル名の置換  
  `TargetFileName` 属性を指定してパラメーターを使用することにより、プロジェクト項目に対して変数ファイル名を指定できます。 たとえば、.exe ファイルが `$projectname$` によって指定されるプロジェクト名をファイル名として使用するように指定できます。  
   
 ```  
@@ -88,7 +88,7 @@ ms.locfileid: "54787093"
 </TemplateContent>  
 ```  
   
-## <a name="example-using-the-project-name-for-the-namespace-name"></a>例:Namespace 名に対するプロジェクト名を使用します。  
+## <a name="example-using-the-project-name-for-the-namespace-name"></a>例: 名前空間名に対するプロジェクト名の使用  
  Visual C# クラス ファイル Class1.cs で名前空間に対してプロジェクト名を使用するには、次の構文を使用します。  
   
 ```  

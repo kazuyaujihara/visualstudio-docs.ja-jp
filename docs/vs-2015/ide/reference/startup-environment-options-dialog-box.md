@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 946c9b42d247df010863074786b41e6c52d7d585
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54785927"
 ---
 # <a name="startup-environment-options-dialog-box"></a>[スタートアップ] ([オプション] ダイアログ ボックス - [環境])
@@ -24,5 +24,5 @@ ms.locfileid: "54785927"
   
 このページを使用して、Visual Studio のスタート ページをカスタマイズするか、Visual Studio 起動時の別の既定のアクションを設定します。 詳細については、[スタート ページのカスタマイズ](../../ide/customizing-the-start-page-for-visual-studio.md)に関するページを参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)

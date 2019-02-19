@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2b81d4f2341f9ddca3468bd77f0f79940dba3d29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755007"
 ---
 # <a name="options-text-editor-file-extension"></a>[オプション]、[テキスト エディター]、[ファイル拡張子]
@@ -56,5 +56,5 @@ ms.locfileid: "54755007"
  **[拡張子のないファイルのオプション]**  
  **[エディター]** と同じ一覧を提供します。 ファイル拡張子のない文書を開く IDE のエディターまたはデザイナーを選択します。  
   
-## <a name="see-also"></a>「  
- [方法: エディター モードを管理する](../../ide/how-to-manage-editor-modes.md)
+## <a name="see-also"></a>参照  
+ [方法 : エディター モードを管理する](../../ide/how-to-manage-editor-modes.md)

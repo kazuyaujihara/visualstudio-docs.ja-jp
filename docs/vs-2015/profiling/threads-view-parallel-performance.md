@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756805"
 ---
 # <a name="threads-view-parallel-performance"></a>スレッド ビュー (並行処理のパフォーマンス)
@@ -149,5 +149,5 @@ ms.locfileid: "54756805"
 #### <a name="disk-operations"></a>ディスク操作  
  このタブでは、現在のプロセスのために、ディスク I/O に関与したプロセスとスレッド、それによって影響を受けたファイル (読み込まれた DLL など)、読み取られたバイト数、その他の情報を示します。 このレポートを使用して、実行中にファイルへのアクセスに費やされる時間を評価できます (特に、I/O バウンドなプロセスと思われる場合に役立ちます)。 詳細については、「[ディスク操作レポート](../profiling/disk-operations-report-threads-view.md)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>参照  
  [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)
