@@ -52,5 +52,5 @@ ms.locfileid: "54800789"
 |すべてのツール ウィンドウ|ウィンドウのツール バーにある最初のボタンを選択します。|**Shift** + **Alt**|  
 |IDE ツール バー|標準ツール バーの最初のボタンを選択します。|**ALT**、 **CTRL** + **タブ****に注意してください。** キーを押して**CTRL** + **タブ**次の IDE ツールバーの最初のボタンを選択するには、もう一度です。|  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)
