@@ -30,7 +30,7 @@ ms.locfileid: "54768868"
  [行番号 (1 - `n`)]  
  アクティブ ドキュメント内の移動先の行番号を入力できます。 入力できる値は、1 から `n` (現在のドキュメントの行数) までです。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [コードへのブックマークの設定](../../ide/setting-bookmarks-in-code.md)   
  [テキストの検索と置換](../../ide/finding-and-replacing-text.md)   
  [コードの作成](../../ide/writing-code-in-the-code-and-text-editor.md)
