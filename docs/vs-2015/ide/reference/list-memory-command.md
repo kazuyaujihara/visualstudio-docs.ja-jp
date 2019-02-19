@@ -84,7 +84,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [ListCallStack コマンド](../../ide/reference/list-call-stack-command.md)   
  [スレッドの一覧表示コマンド](../../ide/reference/list-threads-command.md)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
