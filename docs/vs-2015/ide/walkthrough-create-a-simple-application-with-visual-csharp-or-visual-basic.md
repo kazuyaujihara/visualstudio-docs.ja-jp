@@ -331,7 +331,7 @@ ms.locfileid: "54802617"
   
    このチュートリアルは完了しました。 ビルドした .exe は、ソリューションとプロジェクトのディレクトリ (…\HelloWPFApp\HelloWPFApp\bin\Release\\) の下にあります。 その他の例については、「[Visual Studio Samples](../ide/visual-studio-samples.md)」を参照してください。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [Visual Studio 2015 の新機能](../what-s-new-in-visual-studio-2015.md)   
  [Visual Studio を使用した開発の開始](../ide/get-started-developing-with-visual-studio.md)   
  [生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)
