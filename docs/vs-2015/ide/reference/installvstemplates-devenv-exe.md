@@ -37,5 +37,5 @@ devenv.exe /InstallVSTemplates
   
 ## <a name="remarks"></a>コメント  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
