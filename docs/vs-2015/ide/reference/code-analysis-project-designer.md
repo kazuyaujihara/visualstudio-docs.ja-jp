@@ -64,7 +64,7 @@ ms.locfileid: "54764827"
  [使い方の規則]  
  使い方の規則を有効または無効にします。 このエントリを展開して、個別の規則を有効または無効にすることもできます。  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [マネージド コードの警告に対応するコードの解析](../../code-quality/code-analysis-for-managed-code-warnings.md)   
  [マネージド コードに対するコード分析の概要](../../code-quality/code-analysis-for-managed-code-overview.md)   
  [チュートリアル: マネージド コードの分析によるコード障害の検出](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
