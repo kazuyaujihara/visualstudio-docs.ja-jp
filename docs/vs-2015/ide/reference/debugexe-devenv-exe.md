@@ -48,5 +48,5 @@ Devenv /debugexe ExecutableFile
 Devenv.exe /debugexe MyApplication.exe  
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
