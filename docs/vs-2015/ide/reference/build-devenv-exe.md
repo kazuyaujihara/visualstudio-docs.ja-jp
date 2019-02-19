@@ -62,7 +62,7 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## <a name="see-also"></a>「  
+## <a name="see-also"></a>関連項目
  [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
