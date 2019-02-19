@@ -73,5 +73,5 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|有効な識別子文字のチェックを抑制します。|  
 |UNDNAME_NO_PTR64|0x20000|出力で ptr64 は含まれません。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
