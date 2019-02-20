@@ -50,5 +50,5 @@ Visual Studio 2013 は、Windows のユーザー補助機能およびユーテ�
 
 -   [方法: フォントと色を変更する](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Microsoft からのユーザー補助製品およびサービス](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
