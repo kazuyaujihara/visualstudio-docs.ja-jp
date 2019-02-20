@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b4dd4e347d6a8c96cef9ce9028071214200682c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916168"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316146"
 ---
 # <a name="install-unit-test-frameworks"></a>単体テスト フレームワークのインストール
 
@@ -58,7 +58,7 @@ Visual Studio 拡張機能マネージャーを使用して、または [Visual 
 
 ## <a name="update-to-the-latest-test-adapters"></a>最新のテスト アダプターに更新する
 
-テスト検出と実行のエクスペリエンスを向上させるには、最新の安定したテスト アダプターに更新します。 MSTest、NUnit、および xUnit テスト アダプターへの更新の詳細については、[Visual Studio ブログ](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/)を参照してください。
+テスト検出と実行のエクスペリエンスを向上させるには、最新の安定したテスト アダプターに更新します。 MSTest、NUnit、および xUnit テスト アダプターへの更新の詳細については、[Visual Studio ブログ](https://devblogs.microsoft.com/visualstudio/test-experience-improvements/)を参照してください。
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>最新の安定したテスト アダプター バージョンに更新するには
 
