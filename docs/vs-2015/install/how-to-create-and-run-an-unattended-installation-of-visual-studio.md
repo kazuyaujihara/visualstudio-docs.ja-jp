@@ -62,13 +62,13 @@ ms.locfileid: "54803563"
 |要素|属性|値|説明|
 |-------------|---------------|------------|-----------------|
 |BundleCustomizations|TargetDir|*パス*|インストール アプリケーションのユーザー インターフェイスでパスをオーバーライドした場合と同じように動作します。 Visual Studio が既にインストールされている場合、この要素は無視されます。|
-|BundleCustomizations|NoWeb|[はい]&#124;既定|この要素の値が yes の場合は、セットアップ中にインストール アプリケーションが Web にアクセスすることはありません。|
-|SelectableItemCustomization|非表示|[はい]&#124;なし|この要素の値が Yes の場合は、カスタマイズ ツリーの選択可能な項目が非表示になります。|
-|SelectableItemCustomization|選択済み|[はい]&#124;なし|カスタマイズ ツリーの選択可能な項目を選択または選択解除します。|
+|BundleCustomizations|NoWeb|はい&#124;既定|この要素の値が yes の場合は、セットアップ中にインストール アプリケーションが Web にアクセスすることはありません。|
+|SelectableItemCustomization|非表示|はい&#124;なし|この要素の値が Yes の場合は、カスタマイズ ツリーの選択可能な項目が非表示になります。|
+|SelectableItemCustomization|選択済み|はい&#124;なし|カスタマイズ ツリーの選択可能な項目を選択または選択解除します。|
 |BundleCustomizations|フィード|パス|ユーザーが使用するフィードの場所。  これ以降のこのコンピューターに対する変更操作では、このフィードが使用されます (既定では "Default") 。|
-|BundleCustomizations|SuppressRefreshPrompt|[はい]&#124;既定|使用可能な新しいバージョンがある場合に、ユーザーにセットアップを更新するように要求しなくなります。|
-|BundleCustomizations|NoRefresh|[はい]&#124;既定|使用可能な新しいバージョンがある場合に、セットアップを更新しません。|
-|BundleCustomizations|NoCacheOnlyMode|[はい]&#124;既定|パッケージ キャッシュの事前設定を防ぎます。|
+|BundleCustomizations|SuppressRefreshPrompt|はい&#124;既定|使用可能な新しいバージョンがある場合に、ユーザーにセットアップを更新するように要求しなくなります。|
+|BundleCustomizations|NoRefresh|はい&#124;既定|使用可能な新しいバージョンがある場合に、セットアップを更新しません。|
+|BundleCustomizations|NoCacheOnlyMode|はい&#124;既定|パッケージ キャッシュの事前設定を防ぎます。|
 
 > [!WARNING]
 >  インストール アプリケーションでは、選択可能な項目が非表示になっている場合でも、その Selected の状態が反映されます。 たとえば、ある選択可能な項目を常にインストールする場合は、その項目を非表示で選択済みとしてマークできます。
