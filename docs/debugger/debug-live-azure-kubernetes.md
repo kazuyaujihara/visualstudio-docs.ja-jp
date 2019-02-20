@@ -1,25 +1,26 @@
 ---
-title: ライブの ASP.NET Azure アプリをデバッグします。
+title: ライブの ASP.NET Azure Kubernetes サービスをデバッグします。
 description: スナップ ポイントを設定し、スナップショット デバッガーでのスナップショットを表示する方法について説明します。
 ms.custom: ''
-ms.date: 03/16/2018
+ms.date: 02/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
+author: poppastring
+ms.author: madownie
+manager: andster
+monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
+ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
 ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335598"
+ms.locfileid: "56335983"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用して、ライブの ASP.NET Azure アプリをデバッグします。
+# <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用してライブ ASP.NET Azure Kubernetes サービスをデバッグします。
 
 スナップショット デバッガーで関心があるコードを実行するときに、運用環境でのアプリのスナップショットを取得します。 スナップショットを取得するようにデバッガーに指示するには、コードでスナップショットとログポイントを設定します。 デバッガーでは、実稼働アプリケーションのトラフィックに影響を与えることなく、問題を正確に確認できます。 スナップショット デバッガーは、実稼働環境で発生する問題の解決にかかる時間を大幅に短縮するのに役立ちます。
 
@@ -34,55 +35,43 @@ ms.locfileid: "56335598"
 
 ## <a name="prerequisites"></a>前提条件
 
-* スナップショット デバッガーは、Visual Studio 2017 Enterprise バージョン 15.5 以降で使用できるのみ、 **Azure 開発ワークロード**します。 (下、**個々 のコンポーネント** タブを下にあります**デバッグとテスト** > **スナップショット デバッガー**)。
+* Azure Kubernetes サービスでは Visual Studio 2019 Enterprise preview の使用可能な以上でのみのスナップショットのデバッガー、 **Azure 開発ワークロード**します。 (下、**個々 のコンポーネント** タブを下にあります**デバッグとテスト** > **スナップショット デバッガー**)。
 
-    インストールされていない場合は、インストール[Visual Studio 2017 Enterprise バージョン 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)またはそれ以降。 以前の Visual Studio 2017 のインストールから更新する場合、Visual Studio インストーラーを実行しスナップショット デバッガーのコンポーネントを確認、 **ASP.NET および web 開発ワークロード**します。
+    インストールされていない場合は、インストール[Visual Studio 2019 Enterprise preview](https://visualstudio.microsoft.com/vs/preview/)します。
 
-* Basic 以上の Azure App Service プランです。
+* スナップショット コレクションは、次の Azure Kubernetes サービスの web アプリに対して使用できます。
+  * ASP.NET Core アプリケーションは後で、.NET Core 2.2 または Debian 9 で実行されています。
+  * .NET Core 2.2 または後で Alpine 3.8 で実行されている ASP.NET Core アプリケーション。
+  * .NET Core 2.2 または後で Ubuntu 18.04 で実行されている ASP.NET Core アプリケーション。
 
-* スナップショット コレクションは、Azure App Service で実行されている次の Web アプリで利用できます。
-  * .NET Framework 4.6.1 以降で実行されている ASP.NET アプリケーション。
-  * Windows の .NET Core 2.0 以降で実行されている ASP.NET Core アプリケーション。
+    > [!NOTE]
+    > スナップショット デバッガーを提供して AKS でのサポートを有効にするため、 [Docker イメージでセットアップのデモンストレーションの Dockerfile のセットを含むリポジトリ](https://github.com/Microsoft/vssnapshotdebugger-docker)します。
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>プロジェクトを開き、スナップショット デバッガーを起動します
 
 1. スナップショット デバッグするには、プロジェクトを開きます。
 
     > [!IMPORTANT]
-    > スナップショットのデバッグを開く必要があります、*ソース コードの同じバージョン*Azure App Service に公開されています。
-::: moniker range="< vs-2019"
+    > スナップショットのデバッグを開く必要があります、*ソース コードの同じバージョン*Azure Kubernetes サービスに公開されています。
 
-2. Cloud Explorer で (**ビュー > Cloud Explorer**) で、プロジェクトに配置する Azure App Service を右クリックし、選択**スナップショット デバッガーのアタッチ**します。
+1. スナップショット デバッガーをアタッチします。 いくつかの方法のいずれかを使用できます。
 
-   ![スナップショット デバッガーを起動します。](../debugger/media/snapshot-launch.png)
-
-    選択した最初の時刻**スナップショット デバッガーのアタッチ**、Azure App Service でのスナップショット デバッガー サイト拡張機能をインストールするように求められます。 このインストールでは、Azure App Service の再起動が必要です。
-
-::: moniker-end
-::: moniker range=">= vs-2019"
-2. スナップショット デバッガーをアタッチします。 いくつかの方法のいずれかを使用できます。
-
-    * 選択**デバッグ > スナップショット デバッガーをアタッチしています.**.プロジェクトがデプロイされた Azure App Service と Azure ストレージ アカウントを選択し、クリックして**アタッチ**します。
+    * 選択**デバッグ > スナップショット デバッガーをアタッチしています.**.AKS リソースに web アプリが展開されると、Azure ストレージ アカウントを選択し、クリックして**アタッチ**します。
   
       ![[デバッグ] メニューからスナップショット デバッガーを起動します。](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * クリックし、プロジェクトを右クリックして**発行**とでは、発行ページをクリックし、**スナップショット デバッガーのアタッチ**します。 プロジェクトがデプロイされた Azure App Service と Azure ストレージ アカウントを選択し、クリックして**アタッチ**します。
+    * クリックし、プロジェクトを右クリックして**発行**とでは、発行ページをクリックし、**スナップショット デバッガーのアタッチ**します。 AKS リソースに web アプリが展開されると、Azure ストレージ アカウントを選択し、クリックして**アタッチ**します。
     ![[発行] ページからスナップショット デバッガーを起動します。](../debugger/media/snapshot-publish-attach.png)
 
-    * デバッグ対象ドロップダウン メニューの **スナップショット デバッガー**ヒット、 **F5**し、必要な選択にプロジェクトがデプロイされた Azure App Service と Azure storage のかどうか、アカウントをクリックして**アタッチ**します。
+    * デバッグ対象ドロップダウン メニューの **スナップショット デバッガー**ヒット、 **F5**し、必要な選択に web アプリが展開される、AKS リソースと Azure storage のかどうか、アカウントをクリックして**アタッチ**します。
     ![F5 キーを押してのドロップダウン メニューからスナップショット デバッガーを起動します。](../debugger/media/snapshot-F5-dropdown-attach.png)
 
-    * Cloud Explorer を使用して (**ビュー > Cloud Explorer**) にプロジェクトがデプロイされた Azure App Service を右クリックし、Azure storage アカウントを選択および順にクリックします**スナップショット デバッガーのアタッチ**します。
+    * Cloud Explorer を使用して (**ビュー > Cloud Explorer**) に、web アプリを展開、AKS リソースと、Azure ストレージ アカウントを右クリックし、クリックして**スナップショット デバッガーのアタッチ**します。
   
       ![Cloud Explorer からスナップショット デバッガーを起動します。](../debugger/media/snapshot-launch.png)
 
-    選択した最初の時刻**スナップショット デバッガーのアタッチ**、Azure App Service でのスナップショット デバッガー サイト拡張機能をインストールするように求められます。 このインストールでは、Azure App Service の再起動が必要です。
-::: moniker-end
-
-   Visual Studio はデバッグ モードのスナップショットが開始されました。
-
-  > [!NOTE]
-  > Application Insights サイト拡張機能では、スナップショットのデバッグもサポートしています。 「期限切れの拡張機能をサイト」のエラー メッセージが発生した場合は、次を参照してください。[トラブルシューティングのヒントやスナップショットのデバッグに関する既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)の詳細をアップグレードします。
+    > [!NOTE]
+    > Application Insights サイト拡張機能では、スナップショットのデバッグもサポートしています。 「期限切れの拡張機能をサイト」のエラー メッセージが発生した場合は、次を参照してください。[トラブルシューティングのヒントやスナップショットのデバッグに関する既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)の詳細をアップグレードします。
 
    ![スナップショットのデバッグ モード](../debugger/media/snapshot-message.png)
 
@@ -96,7 +85,7 @@ ms.locfileid: "56335598"
 
    ![設定、スナップ ポイント](../debugger/media/snapshot-set-snappoint.png)
 
-2. クリックして**コレクションの開始**スナップ ポイントを有効にします。
+1. クリックして**コレクションの開始**スナップ ポイントを有効にします。
 
    ![オンにする、スナップ ポイント](../debugger/media/snapshot-start-collection.png)
 
@@ -163,7 +152,7 @@ ms.locfileid: "56335598"
 
 ## <a name="next-steps"></a>次の手順
 
-このチュートリアルでは、App Services に対してスナップショット デバッガーを使用する方法を学習できました。 この機能の詳細を確認することがあります。
+このチュートリアルでは、Azure の Kubernetes のスナップショット デバッガーを使用する方法を学習できました。 この機能の詳細を確認することがあります。
 
 > [!div class="nextstepaction"]
 > [スナップショットのデバッグに関する FAQ](../debugger/debug-live-azure-apps-faq.md)

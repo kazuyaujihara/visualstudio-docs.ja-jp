@@ -1,4 +1,4 @@
-﻿---
+---
 title: IDiaImageData |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,111 +12,111 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6854a099548b8db97b26a2b3fe70c7870fb2af2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 625b9dd6a1ffb6e982097626018617c9b74d4746
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964939"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227107"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
-モジュールまたはイメージのベースの位置とメモリのオフセットの詳細が公開されます。  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-IDiaImageData : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDiaImageData`します。  
-  
-|メソッド|説明|  
-|------------|-----------------|  
-|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|アプリケーションを基準モジュールの仮想メモリの場所を取得します。|  
-|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|イメージの仮想メモリの場所を取得します。|  
-|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|イメージのベースでのメモリ位置を取得します。|  
-  
-## <a name="remarks"></a>コメント  
- いくつかの debug ストリーム (XDATA、PDATA) では、イメージにも格納されているデータのコピーが含まれます。 これらのストリームのオブジェクトを照会できますデータ、`IDiaImageData`インターフェイス。 詳細については、このトピックでは、「ノートの呼び出し元」を参照してください。  
-  
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- このインターフェイスを呼び出すことによって取得`QueryInterface`上、 [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)オブジェクト。 ストリームのサポートのないすべてのデバッグに注意してください、`IDiaImageData`インターフェイス。 例については、現在 XDATA および PDATA ストリームのみサポートされている、`IDiaImageData`インターフェイス。  
-  
-## <a name="example"></a>例  
- この例では、すべてのデバッグ ストリームをサポートする任意のストリームの検索、`IDiaImageData`インターフェイス。 そのようなストリームが見つかった場合は、そのストリームに関する情報が表示されます。  
-  
-```C++  
-void ShowImageData(IDiaSession *pSession)  
-{  
-    if (pSession != NULL)  
-    {  
-        CComPtr<IDiaEnumDebugStreams> pStreamsList;  
-        HRESULT hr;  
-  
-        hr = pSession->getEnumDebugStreams(&pStreamsList);  
-        if (SUCCEEDED(hr))  
-        {  
-            LONG numStreams = 0;  
-            hr = pStreamsList->get_Count(&numStreams);  
-            if (SUCCEEDED(hr))  
-            {  
-                ULONG fetched = 0;  
-                for (LONG i = 0; i < numStreams; i++)  
-                {  
-                    CComPtr<IDiaEnumDebugStreamData> pStream;  
-                    hr = pStreamsList->Next(1,&pStream,&fetched);  
-                    if (fetched == 1)  
-                    {  
-                        CComPtr<IDiaImageData> pImageData;  
-                        hr = pStream->QueryInterface(__uuidof(IDiaImageData),  
-                                                     (void **)&pImageData);  
-                        if (SUCCEEDED(hr))  
-                        {  
-                            CComBSTR name;  
-                            hr = pStream->get_name(&name);  
-                            if (SUCCEEDED(hr))  
-                            {  
-                                wprintf(L"Stream %s:\n",(BSTR)name);  
-                            }  
-                            else  
-                            {  
-                                wprintf(L"Failed to get name of stream\n");  
-                            }  
-  
-                            ULONGLONG imageBase = 0;  
-                            if (pImageData->get_imageBase(&imageBase) == S_OK)  
-                            {  
-                                wprintf(L"  image base = 0x%0I64x\n",imageBase);  
-                            }  
-  
-                            DWORD relVA = 0;  
-                            if (pImageData->get_relativeVirtualAddress(&relVA) == S_OK)  
-                            {  
-                                wprintf(L"  relative virtual address = 0x%08lx\n",relVA);  
-                            }  
-  
-                            ULONGLONG va = 0;  
-                            if (pImageData->get_virtualAddress(&va) == S_OK)  
-                            {  
-                                wprintf(L"  virtual address = 0x%0I64x\n", va);  
-                            }  
-                        }  
-                    }  
-                }  
-            }  
-        }  
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>要件  
- ヘッダー:dia2.h  
-  
- ライブラリ: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
+モジュールまたはイメージのベースの位置とメモリのオフセットの詳細が公開されます。
+
+## <a name="syntax"></a>構文
+
+```
+IDiaImageData : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
+次の表は、メソッドの`IDiaImageData`します。
+
+|方法|説明|
+|------------|-----------------|
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|アプリケーションを基準モジュールの仮想メモリの場所を取得します。|
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|イメージの仮想メモリの場所を取得します。|
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|イメージのベースでのメモリ位置を取得します。|
+
+## <a name="remarks"></a>解説
+いくつかの debug ストリーム (XDATA、PDATA) では、イメージにも格納されているデータのコピーが含まれます。 これらのストリームのオブジェクトを照会できますデータ、`IDiaImageData`インターフェイス。 詳細については、このトピックでは、「ノートの呼び出し元」を参照してください。
+
+## <a name="notes-for-callers"></a>呼び出し元のノート
+このインターフェイスを呼び出すことによって取得`QueryInterface`上、 [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)オブジェクト。 ストリームのサポートのないすべてのデバッグに注意してください、`IDiaImageData`インターフェイス。 例については、現在 XDATA および PDATA ストリームのみサポートされている、`IDiaImageData`インターフェイス。
+
+## <a name="example"></a>例
+この例では、すべてのデバッグ ストリームをサポートする任意のストリームの検索、`IDiaImageData`インターフェイス。 そのようなストリームが見つかった場合は、そのストリームに関する情報が表示されます。
+
+```C++
+void ShowImageData(IDiaSession *pSession)
+{
+    if (pSession != NULL)
+    {
+        CComPtr<IDiaEnumDebugStreams> pStreamsList;
+        HRESULT hr;
+
+        hr = pSession->getEnumDebugStreams(&pStreamsList);
+        if (SUCCEEDED(hr))
+        {
+            LONG numStreams = 0;
+            hr = pStreamsList->get_Count(&numStreams);
+            if (SUCCEEDED(hr))
+            {
+                ULONG fetched = 0;
+                for (LONG i = 0; i < numStreams; i++)
+                {
+                    CComPtr<IDiaEnumDebugStreamData> pStream;
+                    hr = pStreamsList->Next(1,&pStream,&fetched);
+                    if (fetched == 1)
+                    {
+                        CComPtr<IDiaImageData> pImageData;
+                        hr = pStream->QueryInterface(__uuidof(IDiaImageData),
+                                                     (void **)&pImageData);
+                        if (SUCCEEDED(hr))
+                        {
+                            CComBSTR name;
+                            hr = pStream->get_name(&name);
+                            if (SUCCEEDED(hr))
+                            {
+                                wprintf(L"Stream %s:\n",(BSTR)name);
+                            }
+                            else
+                            {
+                                wprintf(L"Failed to get name of stream\n");
+                            }
+
+                            ULONGLONG imageBase = 0;
+                            if (pImageData->get_imageBase(&imageBase) == S_OK)
+                            {
+                                wprintf(L"  image base = 0x%0I64x\n",imageBase);
+                            }
+
+                            DWORD relVA = 0;
+                            if (pImageData->get_relativeVirtualAddress(&relVA) == S_OK)
+                            {
+                                wprintf(L"  relative virtual address = 0x%08lx\n",relVA);
+                            }
+
+                            ULONGLONG va = 0;
+                            if (pImageData->get_virtualAddress(&va) == S_OK)
+                            {
+                                wprintf(L"  virtual address = 0x%0I64x\n", va);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+## <a name="requirements"></a>要件
+ヘッダー: Dia2.h
+
+ライブラリ: diaguids.lib
+
+DLL: msdia80.dll
+
 ## <a name="see-also"></a>関連項目
- [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+[インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

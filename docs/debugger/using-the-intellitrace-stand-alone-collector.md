@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96a7fe0e46420a2469271219aa44ee76c9a49774
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 446348078f79ae49408dac9a1d00cb29f968b184
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986801"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316848"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace スタンドアロン コレクターを使用して (C#、Visual Basic)
 
@@ -379,7 +379,7 @@ ms.locfileid: "54986801"
 
 -   IntelliTrace デバッグ セッションを Visual Studio Enterprise から次を参照してください。 [IntelliTrace 機能](../debugger/intellitrace-features.md)します。
 
--   Microsoft Test Manager でのテスト セッションから次を参照してください。[方法: 困難なの問題のデバッグを支援する IntelliTrace データの収集](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)します。
+-   Microsoft Test Manager のテスト セッションからの場合は、「 [方法: 困難な問題をデバッグするのに役立つ IntelliTrace データを収集する](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)」を参照します。
 
 ## <a name="where-can-i-get-more-information"></a>情報の入手方法
  [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)
@@ -393,10 +393,10 @@ ms.locfileid: "54986801"
 
  [運用サーバーでの IntelliTrace 収集の最適化](http://go.microsoft.com/fwlink/?LinkId=255233)
 
- [Microsoft の DevOps](https://blogs.msdn.microsoft.com/devops/)
+ [Microsoft の DevOps](https://devblogs.microsoft.com/devops/)
 
 ### <a name="forums"></a>フォーラム
  [Visual Studio デバッガー](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 ### <a name="videos"></a>ビデオ
- [Channel 9 ビデオ: IntelliTrace データ収集および分析](http://go.microsoft.com/fwlink/?LinkID=251851)
+ [Channel 9 ビデオ: IntelliTrace データを収集して分析する](http://go.microsoft.com/fwlink/?LinkID=251851)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: リモート デバッグ、C#または VB プロジェクト |Microsoft Docs
 ms.custom:
 - remotedebugging"=
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b29907488ba276f3deb18e10cf47a0205501e1e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 470212f3b6dc4151b793dcd62b9ff1d39fc2e55b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982885"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316224"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>リモート Visual Studio で c# または Visual Basic プロジェクトのデバッグ
 別のコンピューターに展開されている Visual Studio アプリケーションをデバッグするには、インストールし、アプリをデプロイしたコンピューターでリモート ツールを実行、Visual Studio からリモート コンピューターに接続するプロジェクトを構成し、アプリを実行します。
@@ -98,7 +98,7 @@ ms.locfileid: "54982885"
 
      WPF アプリケーションのメイン ウィンドウがリモート コンピューター上で開いていることを確認できるはずです。
   
-14. 必要に応じては、ブレークポイントにヒットするアクションを実行します。 ブレークポイントがアクティブになっていることを確認できるはずです。 いない場合は、アプリケーションのシンボルが読み込まれていません。 Retry、およびシンボルの読み込みについての情報を取得しでそれらのトラブルシューティング方法がうまくいかない場合[Understanding シンボル ファイルおよび Visual Studio のシンボルの設定](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)します。
+14. 必要に応じては、ブレークポイントにヒットするアクションを実行します。 ブレークポイントがアクティブになっていることを確認できるはずです。 いない場合は、アプリケーションのシンボルが読み込まれていません。 Retry、およびシンボルの読み込みについての情報を取得しでそれらのトラブルシューティング方法がうまくいかない場合[Understanding シンボル ファイルおよび Visual Studio のシンボルの設定](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)します。
   
 15. Visual Studio コンピューターで、実行がブレークポイントで停止したことを確認できるはずです。
   
@@ -108,7 +108,7 @@ ms.locfileid: "54982885"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [Visual Studio でのデバッグ](../debugger/index.md)  
  [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)   
  [Windows ファイアウォールをリモート デバッグ用に構成する](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   

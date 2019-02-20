@@ -12,82 +12,82 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29c02335f83438bf727a5daacd01d88c99e8d038
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a5c17dd03a3e037023fc307eecf33714acbeaab3
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972757"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413008"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
-デバッグ プロパティについてを説明します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-typedef struct tagDEBUG_PROPERTY_INFO {   
-   DEBUGPROP_INFO_FLAGS dwValidFields;  
-   BSTR                 bstrFullName;  
-   BSTR                 bstrName;  
-   BSTR                 bstrType;  
-   BSTR                 bstrValue;  
-   IDebugProperty2*     pProperty;  
-   DBG_ATTRIB_FLAGS     dwAttrib;  
-} DEBUG_PROPERTY_INFO;  
-```  
-  
-```csharp  
-public struct DEBUG_PROPERTY_INFO {   
-   public uint            dwValidFields;  
-   public string          bstrFullName;  
-   public string          bstrName;  
-   public string          bstrType;  
-   public string          bstrValue;  
-   public IDebugProperty2 pProperty;  
-   public ulong           dwAttrib;  
-};  
-```  
-  
-## <a name="members"></a>メンバー  
- dwValidFields  
- フラグの組み合わせ、 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)どのフィールドに入力を指定する列挙体。  
-  
- bstrFullName  
- プロパティの完全名。  
-  
- bstrName  
- コンテキスト内でプロパティ名。  
-  
- bstrType  
- 書式設定された文字列としてプロパティの型。  
-  
- bstrValue  
- 書式設定された文字列としてプロパティ値です。  
-  
- プロパティ  
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)この構造体で表されるオブジェクト。  
-  
- dwAttrib  
- フラグの組み合わせ、 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)このプロパティの属性を説明する列挙です。  
-  
-## <a name="remarks"></a>Remarks  
- プロパティは、名前、型、および値を持つ階層的な性質のオブジェクトです。 たとえば、プロパティには、ローカル変数、パラメーター、ウォッチ変数と式、およびレジスタを記述できます。  
-  
- この構造体に渡される、 [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)メソッドでいっぱいになった場所。 この構造体がこの構造体からの一覧の一部としても返されます、 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)インターフェイスをさらへの呼び出しから返される、 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)と[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)メソッド。  
-  
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
-  
- 名前空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>関連項目  
- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)   
- [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)   
- [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)   
- [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   
- [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
+デバッグ プロパティについてを説明します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+typedef struct tagDEBUG_PROPERTY_INFO {
+    DEBUGPROP_INFO_FLAGS dwValidFields;
+    BSTR                 bstrFullName;
+    BSTR                 bstrName;
+    BSTR                 bstrType;
+    BSTR                 bstrValue;
+    IDebugProperty2*     pProperty;
+    DBG_ATTRIB_FLAGS     dwAttrib;
+} DEBUG_PROPERTY_INFO;
+```
+
+```csharp
+public struct DEBUG_PROPERTY_INFO {
+    public uint            dwValidFields;
+    public string          bstrFullName;
+    public string          bstrName;
+    public string          bstrType;
+    public string          bstrValue;
+    public IDebugProperty2 pProperty;
+    public ulong           dwAttrib;
+};
+```
+
+## <a name="members"></a>メンバー
+dwValidFields  
+フラグの組み合わせ、 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)どのフィールドに入力を指定する列挙体。
+
+bstrFullName  
+プロパティの完全名。
+
+bstrName  
+コンテキスト内でプロパティ名。
+
+bstrType  
+書式設定された文字列としてプロパティの型。
+
+bstrValue  
+書式設定された文字列としてプロパティ値です。
+
+プロパティ  
+[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)この構造体で表されるオブジェクト。
+
+dwAttrib  
+フラグの組み合わせ、 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)このプロパティの属性を説明する列挙です。
+
+## <a name="remarks"></a>Remarks
+プロパティは、名前、型、および値を持つ階層的な性質のオブジェクトです。 たとえば、プロパティには、ローカル変数、パラメーター、ウォッチ変数と式、およびレジスタを記述できます。
+
+この構造体に渡される、 [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)メソッドでいっぱいになった場所。 この構造体がこの構造体からの一覧の一部としても返されます、 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)インターフェイスをさらへの呼び出しから返される、 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)と[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)メソッド。
+
+## <a name="requirements"></a>必要条件
+ヘッダー: msdbg.h
+
+名前空間: Microsoft.VisualStudio.Debugger.Interop
+
+アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>関連項目
+[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)  
+[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)  
+[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)  
+[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)  
+[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)  
+[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)  
+[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)

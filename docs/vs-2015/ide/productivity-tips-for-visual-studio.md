@@ -157,5 +157,5 @@ ms.locfileid: "54785688"
 
 -   **Visual Studio に表示されるフォントをカスタマイズする**。 IDE のテキストに使用されるフォント フェイス、サイズ、および色を変更できます。 たとえば、エディター内の特定のコード要素の色や、ツール ウィンドウまたは IDE 全体のフォント フェイスをカスタマイズできます。 詳細については、「[方法: Visual Studio で使用するフォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」および「[方法 : エディターで使用するフォントのフォント フェイス、サイズ、色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [頻繁に使用するコマンドの既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)[方法: メニューおよびツールバーをカスタマイズ](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)[チュートリアル: 単純なアプリケーション作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2f709322c847057e31b89260a7cfae99e46f7b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016535"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318421"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Visual Studio のデバッガーの生産性に関するヒントと秘訣を学習します。
 
@@ -77,9 +77,9 @@ Visual Studio でサポートされているほとんどの言語では、デバ
 3. 変数を見つけて、**ローカル**ウィンドウ (**デバッグ > Windows > [ローカル]**) では、変数を右クリックし、選択**オブジェクト ID の作成**です。
 
     ![オブジェクト ID の作成](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  **$** ウィンドウに、 **[ローカル]** ウィンドウを閉じます。 この変数はオブジェクト ID です。
-  
+
 5.  オブジェクト ID の変数を右クリックし **ウォッチ式の追加**します。
 
 詳細については、次を参照してください。[オブジェクト ID の作成](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds)です。
@@ -123,11 +123,11 @@ Visual Studio でサポートされているほとんどの言語では、デバ
 #### <a name="to-show-threads-in-your-source-code"></a>ソース コードのスレッドを表示するには
 
 1.  デバッグ中に、をクリックして、**ソース スレッドを表示**ボタン![ソース スレッドを表示](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")で、**デバッグ**ツールバー。
-  
+
 2.  ウィンドウ左端の余白に注目します。 この行で表示、*スレッド マーカー*アイコン![スレッド マーカー](../debugger/media/dbg-thread-marker.png "ThreadMarker")布の 2 つのスレッドと類似しています。 スレッド マーカーは、スレッドが停止している位置を示します。
 
     スレッド マーカーを部分的にブレークポイントによって隠さ可能性がありますに注意してください。
-  
+
 3.  スレッド マーカーの上にポインターを置きます。 DataTip が表示されます。 データヒントは、停止したスレッドごとに名前とスレッド ID 番号を表示します。
 
     内のスレッドの場所を表示することも、[並列スタック ウィンドウ](../debugger/get-started-debugging-multithreaded-apps.md)します。
@@ -158,12 +158,12 @@ UWP アプリを使用して実行されたネットワーク操作を分析す�
 
 デバッガーはユーザー コードとしてコードを分類する方法についてを参照してください。[マイ コードのみ](../debugger/just-my-code.md)します。 シンボル ファイルの詳細についてを参照してください。 [Visual Studio デバッガーでシンボル (.pdb) ファイルとソース ファイルの指定](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)します。
 
-## <a name="learn-more"></a>詳細情報
+## <a name="learn-more"></a>詳細情報を見る
 
 その他のヒントとテクニックとより詳細な情報は、次のブログ投稿を参照してください。
 
-- [Visual Studio でのデバッグの 7 の小さい既知ハック](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [Visual Studio で非表示 gem の 7](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [Visual Studio でのデバッグの 7 の小さい既知ハック](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [Visual Studio で非表示 gem の 7](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>関連項目
 [キーボード ショートカット](../ide/tips-and-tricks-for-visual-studio.md)

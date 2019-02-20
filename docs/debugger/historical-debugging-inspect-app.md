@@ -8,72 +8,72 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64cbebf3380e4450f889bee5e4e49ff3282917f5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dea338f940cca0ce24cc200ed933adadb7d5643f
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024514"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227447"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Visual Studio でデバッグ履歴の IntelliTrace を使用してアプリを検査 (C#、Visual Basic、C++)
 
-使用することができます[デバッグ履歴](../debugger/historical-debugging.md)を後方に移動し、アプリケーションの実行を転送してその状態を検査します。  
-  
-IntelliTrace は Visual Studio Enterprise Edition で使用できますが、Professional Edition または Community Edition では使用できません。  
-  
+使用することができます[デバッグ履歴](../debugger/historical-debugging.md)を後方に移動し、アプリケーションの実行を転送してその状態を検査します。
+
+IntelliTrace は Visual Studio Enterprise Edition で使用できますが、Professional Edition または Community Edition では使用できません。
+
 ## <a name="navigate-your-code-with-historical-debugging"></a>デバッグ履歴でコードを移動します。
 
- バグのあるシンプルなプログラムから始めましょう。 C# コンソール アプリケーションで次のコードを追加します。  
-  
-```csharp  
-static void Main(string[] args)  
-{  
-    int testInt = 0;  
-    int resultInt = AddAll(testInt);  
-    Console.WriteLine(resultInt);  
-}  
-private static int AddAll(int j)  
-{  
-    for (int i = 0; i < 20; i++)  
-    {  
-        j = AddInt(j);  
-    }  
-    return j;  
-}  
-  
-private static int AddInt(int add)  
-{  
-    if (add == 10)  
-    {  
-        return add += 25;  
-    }  
-    return ++add;  
-}  
-```  
-  
- `AddAll()` を呼び出した後の `resultInt` の予想される値が 20 であるものとします (`testInt` を 20 回インクリメントした結果)。 (でバグが表示されないものとしますも`AddInt()`)。実際には 44 になります。 `AddAll()` を 10 回ステップ実行しないでバグを見つけるにはどうすればよいでしょう。 デバッグ履歴を使うと、迅速かつ簡単にバグを発見できます。 次の手順に従います。  
-  
-1.  **ツール > オプション > IntelliTrace > 全般**、IntelliTrace が有効になっていることを確認および選択**IntelliTrace イベントと呼び出し情報**します。 このオプションを選択しないと、ナビゲーション余白が表示されません (後で説明します)。  
-  
-2.  `Console.WriteLine(resultInt);` の行にブレークポイントを設定します。  
-  
-3.  デバッグを開始します。 コードがブレークポイントまで実行されます。 **[ローカル]** ウィンドウで、`resultInt` の値が 44 であることを確認できます。  
-  
-4.  **[診断ツール]** ウィンドウを開きます (**[デバッグ] > [診断ツールの表示]**)。 コード ウィンドウは、次のようになります。  
-  
-     ![コード ウィンドウのブレークポイントで](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
-  
-5.  ブレークポイントのすぐ上の左余白の横に双方向矢印が表示されます。 この領域はナビゲーション余白と呼ばれ、履歴デバッグに使用されます。 矢印をクリックします。  
-  
-     コード ウィンドウでは、上記のコード行 (`int resultInt = AddIterative(testInt);`) がピンク色で表示されます。 ウィンドウの上には、現在デバッグ履歴中であることを示すメッセージが表示されます。  
-  
-     コード ウィンドウは、次のようになります。  
-  
-     ![デバッグ履歴モードでのコード ウィンドウ](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
-  
-6.  ここで、`AddAll()` メソッドにステップ インできます (**F11** キー、またはナビゲーション余白の **[ステップ イン]** ボタン)。 ステップ前進します (**F10** キー、またはナビゲーション余白の **[次の呼び出しへ移動]**)。 ピンクの行が `j = AddInt(j);` 行に移ります。 ここで **F10** キーを押しても、次のコード行には移動しません。 代わりに、次の関数呼び出しに移動します。 デバッグ履歴は呼び出しから呼び出しに移動し、関数呼び出しを含まないコード行はスキップされます。  
-  
-7.  ここで、`AddInt()` メソッドにステップ インします。 このコードにバグがあることがすぐにわかります。  
+バグのあるシンプルなプログラムから始めましょう。 C# コンソール アプリケーションで次のコードを追加します。
+
+```csharp
+static void Main(string[] args)
+{
+    int testInt = 0;
+    int resultInt = AddAll(testInt);
+    Console.WriteLine(resultInt);
+}
+private static int AddAll(int j)
+{
+    for (int i = 0; i < 20; i++)
+    {
+        j = AddInt(j);
+    }
+    return j;
+}
+
+private static int AddInt(int add)
+{
+    if (add == 10)
+    {
+        return add += 25;
+    }
+    return ++add;
+}
+```
+
+`AddAll()` を呼び出した後の `resultInt` の予想される値が 20 であるものとします (`testInt` を 20 回インクリメントした結果)。 (でバグが表示されないものとしますも`AddInt()`)。実際には 44 になります。 `AddAll()` を 10 回ステップ実行しないでバグを見つけるにはどうすればよいでしょう。 デバッグ履歴を使うと、迅速かつ簡単にバグを発見できます。 次の手順に従います。
+
+1. **ツール > オプション > IntelliTrace > 全般**、IntelliTrace が有効になっていることを確認および選択**IntelliTrace イベントと呼び出し情報**します。 このオプションを選択しないと、ナビゲーション余白が表示されません (後で説明します)。
+
+2. `Console.WriteLine(resultInt);` の行にブレークポイントを設定します。
+
+3. デバッグを開始します。 コードがブレークポイントまで実行されます。 **[ローカル]** ウィンドウで、`resultInt` の値が 44 であることを確認できます。
+
+4. **[診断ツール]** ウィンドウを開きます (**[デバッグ] > [診断ツールの表示]**)。 コード ウィンドウは、次のようになります。
+
+    ![コード ウィンドウのブレークポイントで](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")
+
+5. ブレークポイントのすぐ上の左余白の横に双方向矢印が表示されます。 この領域はナビゲーション余白と呼ばれ、履歴デバッグに使用されます。 矢印をクリックします。
+
+    コード ウィンドウでは、上記のコード行 (`int resultInt = AddIterative(testInt);`) がピンク色で表示されます。 ウィンドウの上には、現在デバッグ履歴中であることを示すメッセージが表示されます。
+
+    コード ウィンドウは、次のようになります。
+
+    ![デバッグ履歴モードでのコード ウィンドウ](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")
+
+6. ここで、`AddAll()` メソッドにステップ インできます (**F11** キー、またはナビゲーション余白の **[ステップ イン]** ボタン)。 ステップ前進します (**F10** キー、またはナビゲーション余白の **[次の呼び出しへ移動]**)。 ピンクの行が `j = AddInt(j);` 行に移ります。 ここで **F10** キーを押しても、次のコード行には移動しません。 代わりに、次の関数呼び出しに移動します。 デバッグ履歴は呼び出しから呼び出しに移動し、関数呼び出しを含まないコード行はスキップされます。
+
+7. ここで、`AddInt()` メソッドにステップ インします。 このコードにバグがあることがすぐにわかります。
 
 ## <a name="next-steps"></a>次の手順
 

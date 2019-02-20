@@ -1,25 +1,26 @@
 ---
-title: ライブの ASP.NET Azure アプリをデバッグします。
+title: デバッグ中の ASP.NET Azure 仮想マシンと Azure の仮想マシン スケール セット
 description: スナップ ポイントを設定し、スナップショット デバッガーでのスナップショットを表示する方法について説明します。
 ms.custom: ''
-ms.date: 03/16/2018
+ms.date: 02/06/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
+author: poppastring
+ms.author: madownie
+manager: andster
+monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
+ms.openlocfilehash: 7a0363c26171382b0cab13e529b08378681f3f65
 ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335598"
+ms.locfileid: "56335991"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用して、ライブの ASP.NET Azure アプリをデバッグします。
+# <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用して Azure の仮想マシン スケール セットおよび Azure の仮想マシンのライブ ASP.NET アプリをデバッグします。
 
 スナップショット デバッガーで関心があるコードを実行するときに、運用環境でのアプリのスナップショットを取得します。 スナップショットを取得するようにデバッガーに指示するには、コードでスナップショットとログポイントを設定します。 デバッガーでは、実稼働アプリケーションのトラフィックに影響を与えることなく、問題を正確に確認できます。 スナップショット デバッガーは、実稼働環境で発生する問題の解決にかかる時間を大幅に短縮するのに役立ちます。
 
@@ -34,13 +35,11 @@ ms.locfileid: "56335598"
 
 ## <a name="prerequisites"></a>前提条件
 
-* スナップショット デバッガーは、Visual Studio 2017 Enterprise バージョン 15.5 以降で使用できるのみ、 **Azure 開発ワークロード**します。 (下、**個々 のコンポーネント** タブを下にあります**デバッグとテスト** > **スナップショット デバッガー**)。
+* Azure Virtual Machines (VM) と Azure 仮想マシン スケール セット (VMSS) 用のスナップショット デバッガーでは Visual Studio 2019 Enterprise preview の使用可能な以上でのみ、 **Azure 開発ワークロード**します。 (下、**個々 のコンポーネント** タブを下にあります**デバッグとテスト** > **スナップショット デバッガー**)。
 
-    インストールされていない場合は、インストール[Visual Studio 2017 Enterprise バージョン 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)またはそれ以降。 以前の Visual Studio 2017 のインストールから更新する場合、Visual Studio インストーラーを実行しスナップショット デバッガーのコンポーネントを確認、 **ASP.NET および web 開発ワークロード**します。
+    インストールされていない場合は、インストール[Visual Studio 2019 Enterprise preview](https://visualstudio.microsoft.com/vs/preview/)します。
 
-* Basic 以上の Azure App Service プランです。
-
-* スナップショット コレクションは、Azure App Service で実行されている次の Web アプリで利用できます。
+* スナップショット コレクションは、次の Azure VM と VMSS web アプリに対して使用できます。
   * .NET Framework 4.6.1 以降で実行されている ASP.NET アプリケーション。
   * Windows の .NET Core 2.0 以降で実行されている ASP.NET Core アプリケーション。
 
@@ -49,44 +48,37 @@ ms.locfileid: "56335598"
 1. スナップショット デバッグするには、プロジェクトを開きます。
 
     > [!IMPORTANT]
-    > スナップショットのデバッグを開く必要があります、*ソース コードの同じバージョン*Azure App Service に公開されています。
-::: moniker range="< vs-2019"
+    > スナップショットのデバッグを開く必要があります、*ソース コードの同じバージョン*VM/VMSS の Azure サービスに公開されています。
 
-2. Cloud Explorer で (**ビュー > Cloud Explorer**) で、プロジェクトに配置する Azure App Service を右クリックし、選択**スナップショット デバッガーのアタッチ**します。
+1. スナップショット デバッガーをアタッチします。 いくつかの方法のいずれかを使用できます。
 
-   ![スナップショット デバッガーを起動します。](../debugger/media/snapshot-launch.png)
-
-    選択した最初の時刻**スナップショット デバッガーのアタッチ**、Azure App Service でのスナップショット デバッガー サイト拡張機能をインストールするように求められます。 このインストールでは、Azure App Service の再起動が必要です。
-
-::: moniker-end
-::: moniker range=">= vs-2019"
-2. スナップショット デバッガーをアタッチします。 いくつかの方法のいずれかを使用できます。
-
-    * 選択**デバッグ > スナップショット デバッガーをアタッチしています.**.プロジェクトがデプロイされた Azure App Service と Azure ストレージ アカウントを選択し、クリックして**アタッチ**します。
+    * 選択**デバッグ > スナップショット デバッガーをアタッチしています.**.Web アプリがデプロイされた Azure VM と VMSS と Azure ストレージ アカウントを選択し、クリックして**アタッチ**します。
   
       ![[デバッグ] メニューからスナップショット デバッガーを起動します。](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * クリックし、プロジェクトを右クリックして**発行**とでは、発行ページをクリックし、**スナップショット デバッガーのアタッチ**します。 プロジェクトがデプロイされた Azure App Service と Azure ストレージ アカウントを選択し、クリックして**アタッチ**します。
+    * クリックし、プロジェクトを右クリックして**発行**とでは、発行ページをクリックし、**スナップショット デバッガーのアタッチ**します。 Web アプリがデプロイされた Azure VM と VMSS と Azure ストレージ アカウントを選択し、クリックして**アタッチ**します。
     ![[発行] ページからスナップショット デバッガーを起動します。](../debugger/media/snapshot-publish-attach.png)
 
-    * デバッグ対象ドロップダウン メニューの **スナップショット デバッガー**ヒット、 **F5**し、必要な選択にプロジェクトがデプロイされた Azure App Service と Azure storage のかどうか、アカウントをクリックして**アタッチ**します。
+    * デバッグ対象ドロップダウン メニューの **スナップショット デバッガー**ヒット、 **F5**し、必要な選択を web アプリがデプロイされた Azure VM と VMSS と Azure storage のかどうか、アカウントをクリックして**アタッチ**します。
     ![F5 キーを押してのドロップダウン メニューからスナップショット デバッガーを起動します。](../debugger/media/snapshot-F5-dropdown-attach.png)
 
-    * Cloud Explorer を使用して (**ビュー > Cloud Explorer**) にプロジェクトがデプロイされた Azure App Service を右クリックし、Azure storage アカウントを選択および順にクリックします**スナップショット デバッガーのアタッチ**します。
+    * Cloud Explorer を使用して (**ビュー > Cloud Explorer**) に web アプリがデプロイされた Azure VM と VMSS を右クリックし、Azure storage アカウントを選択および順にクリックします**スナップショット デバッガーのアタッチ**します。
   
       ![Cloud Explorer からスナップショット デバッガーを起動します。](../debugger/media/snapshot-launch.png)
 
-    選択した最初の時刻**スナップショット デバッガーのアタッチ**、Azure App Service でのスナップショット デバッガー サイト拡張機能をインストールするように求められます。 このインストールでは、Azure App Service の再起動が必要です。
-::: moniker-end
+    > [!IMPORTANT]
+    > 選択した最初の時刻**スナップショット デバッガーのアタッチ**vm では、自動的に IIS を再起動します。
+    > 選択した最初の時刻**スナップショット デバッガーのアタッチ**VMSS では、VMSS の各インスタンスの手動アップグレードが必要です。
 
-   Visual Studio はデバッグ モードのスナップショットが開始されました。
+    メタデータ、**モジュール**を最初にアクティブにできません、web アプリに移動し、**コレクションの開始**ボタンがアクティブになります。 Visual Studio はデバッグ モードのスナップショットが開始されました。
 
-  > [!NOTE]
-  > Application Insights サイト拡張機能では、スナップショットのデバッグもサポートしています。 「期限切れの拡張機能をサイト」のエラー メッセージが発生した場合は、次を参照してください。[トラブルシューティングのヒントやスナップショットのデバッグに関する既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)の詳細をアップグレードします。
+    > [!NOTE]
+    > Application Insights サイト拡張機能では、スナップショットのデバッグもサポートしています。 「期限切れの拡張機能をサイト」のエラー メッセージが発生した場合は、次を参照してください。[トラブルシューティングのヒントやスナップショットのデバッグに関する既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)の詳細をアップグレードします。
+    > VMSS、ユーザーは、最初のスナップショット デバッガーをアタッチした後、VMSS 内のインスタンスを手動でアップグレードする必要があります。
 
    ![スナップショットのデバッグ モード](../debugger/media/snapshot-message.png)
 
-   **モジュール**ウィンドウは、すべてのモジュールが読み込まれるときに、Azure App Service を示します (選択**デバッグ > Windows > モジュール**をこのウィンドウを開きます)。
+   **モジュール**ウィンドウは、すべてのモジュールに Azure VM と VMSS が読み込まれるときに示します (選択**デバッグ > Windows > モジュール**をこのウィンドウを開きます)。
 
    ![[モジュール] ウィンドウを確認してください。](../debugger/media/snapshot-modules.png)
 
@@ -96,7 +88,7 @@ ms.locfileid: "56335598"
 
    ![設定、スナップ ポイント](../debugger/media/snapshot-set-snappoint.png)
 
-2. クリックして**コレクションの開始**スナップ ポイントを有効にします。
+1. クリックして**コレクションの開始**スナップ ポイントを有効にします。
 
    ![オンにする、スナップ ポイント](../debugger/media/snapshot-start-collection.png)
 
@@ -163,7 +155,7 @@ ms.locfileid: "56335598"
 
 ## <a name="next-steps"></a>次の手順
 
-このチュートリアルでは、App Services に対してスナップショット デバッガーを使用する方法を学習できました。 この機能の詳細を確認することがあります。
+このチュートリアルでは、Azure Virtual Machines と Azure 仮想マシン スケール セットのスナップショット デバッガーを使用する方法を学習できました。 この機能の詳細を確認することがあります。
 
 > [!div class="nextstepaction"]
 > [スナップショットのデバッグに関する FAQ](../debugger/debug-live-azure-apps-faq.md)

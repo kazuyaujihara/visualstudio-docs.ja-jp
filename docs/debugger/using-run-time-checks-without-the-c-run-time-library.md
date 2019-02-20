@@ -1,4 +1,4 @@
-﻿---
+---
 title: C ランタイム ライブラリなしのチェックの実行時間を使用して |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,45 +23,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b440c2e95432dfa543d7e9aacae1256b27929de1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a2d9d97b9ba8a93864ec9af6ff02df7b20bbb35e
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020192"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227736"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>C ランタイム ライブラリなしのランタイム チェックの使用方法
-C ランタイム ライブラリなしプログラムをリンクする場合を使用して **/NODEFAULTLIB**実行時のチェックを使用しては、RunTmChk.lib とリンクする必要があります。  
-  
- `_RTC_Initialize` は、ランタイム チェックでプログラムを初期化します。 C ランタイム ライブラリとリンクしない場合は、次のように、プログラムが `_RTC_Initialize` を呼び出す前に、ランタイム エラー チェックでコンパイルされているかどうかを確認する必要があります。  
-  
+C ランタイム ライブラリなしプログラムをリンクする場合を使用して **/NODEFAULTLIB**実行時のチェックを使用しては、RunTmChk.lib とリンクする必要があります。
+
+`_RTC_Initialize` は、ランタイム チェックでプログラムを初期化します。 C ランタイム ライブラリとリンクしない場合は、次のように、プログラムが `_RTC_Initialize` を呼び出す前に、ランタイム エラー チェックでコンパイルされているかどうかを確認する必要があります。
+
 ```cpp
-#ifdef __MSVC_RUNTIME_CHECKS  
-    _RTC_Initialize();  
-#endif  
-```  
-  
- C ランタイム ライブラリをリンクしない場合は、`_CRT_RTC_INITW` と呼ばれる関数も定義する必要があります。 `_CRT_RTC_INITW` は、次に示すように、ユーザー定義関数を既定のエラー レポート関数としてインストールします。  
-  
+#ifdef __MSVC_RUNTIME_CHECKS
+    _RTC_Initialize();
+#endif
+```
+
+C ランタイム ライブラリをリンクしない場合は、`_CRT_RTC_INITW` と呼ばれる関数も定義する必要があります。 `_CRT_RTC_INITW` は、次に示すように、ユーザー定義関数を既定のエラー レポート関数としてインストールします。
+
 ```cpp
-// C version:  
-_RTC_error_fnW __cdecl _CRT_RTC_INITW(  
-        void *res0, void **res1, int res2, int res3, int res4)  
-{  
-    // set the error handler.  
-    return &MyErrorFunc;   
-}  
-  
-// C++ version:  
-extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(  
-       void *res0, void **res1, int res2, int res3, int res4)  
-{  
-    // set the error handler:  
-    return &MyErrorFunc;  
-}  
-```  
-  
- 既定のエラー レポート関数を組み込むと、`_RTC_SetErrorFuncW` を使用して追加のエラー レポート関数を組み込むことができます。 詳細については、「[_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)」を参照してください。  
-  
-## <a name="see-also"></a>関連項目
- [方法: ネイティブ ランタイム チェックを使用する](../debugger/how-to-use-native-run-time-checks.md)
+// C version:
+_RTC_error_fnW __cdecl _CRT_RTC_INITW(
+        void *res0, void **res1, int res2, int res3, int res4)
+{
+    // set the error handler.
+    return &MyErrorFunc;
+}
+
+// C++ version:
+extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
+       void *res0, void **res1, int res2, int res3, int res4)
+{
+    // set the error handler:
+    return &MyErrorFunc;
+}
+```
+
+既定のエラー レポート関数を組み込むと、`_RTC_SetErrorFuncW` を使用して追加のエラー レポート関数を組み込むことができます。 詳細については、「[_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)」を参照してください。
+
+## <a name="see-also"></a>参照
+[方法 : ネイティブ ランタイム チェックを使用する](../debugger/how-to-use-native-run-time-checks.md)

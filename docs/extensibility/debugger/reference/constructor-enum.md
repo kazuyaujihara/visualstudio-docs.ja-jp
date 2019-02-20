@@ -12,54 +12,54 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b1f22d92780dbd4178a7a0696bac5aa27337ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bd5067591f4f296825db6362f4a7b91f1a7a37e8
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963711"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412813"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
-さまざまな種類のコンス トラクターを選択します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-typedef enum ConstructorMatchOptions {   
-   crAll       = 0,  
-   crNonStatic = 1,  
-   crStatic    = 2  
-} CONSTRUCTOR_ENUM;  
-```  
-  
-```csharp  
-public enum ConstructorMatchOptions {   
-   crAll       = 0,  
-   crNonStatic = 1,  
-   crStatic    = 2  
-};  
-```  
-  
-## <a name="members"></a>メンバー  
- crAll  
- すべてのコンス トラクターを選択します。  
-  
- crNonStatic  
- 非静的コンス トラクターを選択します。  
-  
- crStatic  
- 静的コンス トラクターを選択します。  
-  
-## <a name="remarks"></a>Remarks  
- 引数として渡される、 [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)メソッド。  
-  
-## <a name="requirements"></a>必要条件  
- ヘッダー: sh.h  
-  
- 名前空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
+さまざまな種類のコンス トラクターを選択します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+typedef enum ConstructorMatchOptions {
+    crAll       = 0,
+    crNonStatic = 1,
+    crStatic    = 2
+} CONSTRUCTOR_ENUM;
+```
+
+```csharp
+public enum ConstructorMatchOptions {
+    crAll       = 0,
+    crNonStatic = 1,
+    crStatic    = 2
+};
+```
+
+## <a name="members"></a>メンバー
+crAll  
+すべてのコンス トラクターを選択します。
+
+crNonStatic  
+非静的コンス トラクターを選択します。
+
+crStatic  
+静的コンス トラクターを選択します。
+
+## <a name="remarks"></a>Remarks
+引数として渡される、 [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)メソッド。
+
+## <a name="requirements"></a>必要条件
+ヘッダー: sh.h
+
+名前空間: Microsoft.VisualStudio.Debugger.Interop
+
+アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>関連項目
+[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
