@@ -39,5 +39,5 @@ Microsoft は、すべてのユーザーが簡単に使用できる製品とサ�
 ## <a name="internet-explorer-options"></a>Internet Explorer オプション  
  Web ページがどのように表示されるかに関連する Internet Explorer オプションを変更することによって、ヘルプ ビューアーをより使いやすくすることができます。 詳細については、「[ヘルプ ビューアーのカスタマイズ](../ide/customize-the-help-viewer.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
