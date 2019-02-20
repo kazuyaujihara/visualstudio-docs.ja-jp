@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fddaedca2e1e1728916a2e12ea9d9538081be96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954050"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318553"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio のアクセシビリティのヒントとテクニック
 
 > [!TIP]
-> 最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)」をご覧ください。
+> 最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)」をご覧ください。
 
 Visual Studio には、スクリーン リーダーやその他の支援テクノロジと互換性を持つユーザー補助機能が組み込まれています。 このトピックでは、キーボードのみを使用してタスクを実行するためによく使用されるショートカット キーの組み合わせを一覧すると共に、見やすさを改善するためのハイ コントラストのテーマの使用に関する情報を提供します。 さらに、注釈を使用してコードに関する有用な情報を表示する方法と、ビルドおよびブレークポイントのイベントに対してサウンド キューを設定する方法についても説明します。
 

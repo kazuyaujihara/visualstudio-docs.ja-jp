@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c040d0375a8ecb2872e148331166ecae45040cf
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: ab8c76a867f67f94cb0ce3589cc8aa411fd70663
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154051"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316966"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio におけるクロス プラットフォーム モバイル開発
 
@@ -158,7 +158,7 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 |[Visual Studio での Unity ゲーム構築について学習する](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Visual Studio Tools for Unity についてさらに学習する](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Visual Studio Tools for Unity を使い始める](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
-|[Visual Studio Tools for Unity 2.0 Preview の最新の拡張機能について学習する](https://blogs.msdn.microsoft.com/visualstudio/2014/12/03/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio ブログ)|
+|[Visual Studio Tools for Unity 2.0 Preview の最新の拡張機能について学習する](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio ブログ)|
 |[Visual Studio Tools for Unity 2.0 Preview の紹介ビデオを見る](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (ビデオ)|
 |[Unity について学習する](http://unity3d.com/) (Unity Web サイト)|
 

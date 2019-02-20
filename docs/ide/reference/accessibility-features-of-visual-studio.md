@@ -12,17 +12,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b21ab89fe7631ae40def360c1dd111ded0df93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935005"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318590"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio のユーザー補助機能
 
 > [!TIP]
-> 最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)」をご覧ください。
+> 最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)」をご覧ください。
 
 Visual Studio は、Windows のユーザー補助機能およびユーティリティ、さらに次の機能によって、視覚に障碍のある方でも、これまで以上に使いやすくなっています。
 

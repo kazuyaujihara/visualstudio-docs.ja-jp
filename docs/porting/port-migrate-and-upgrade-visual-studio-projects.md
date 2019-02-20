@@ -7,8 +7,9 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload: multiple
+monikerRange: vs-2017
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768833"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335540"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 のプロジェクトの移行とアップグレードのリファレンス
 
@@ -34,7 +35,7 @@ ms.locfileid: "54768833"
 
 現在、この記事では、Visual Studio 2017 の移行が可能なプロジェクト タイプに対してのみ詳細を提供しています。 この記事では、Visual Studio 2017 でサポートされなくなったことで移行できないプロジェクト タイプは除外されています。 また、移行に関する問題がないサポート対象のプロジェクト タイプ ([対象プラットフォームと互換性](/visualstudio/productinfo/vs2017-compatibility-vs)に関するページでその一覧を確認できます) もこの記事では除外されています。
 
-> [!Important]
+> [!IMPORTANT]
 > 特定の種類のプロジェクトでは、Visual Studio インストーラーで適切なワークロードをインストールする必要があります。 ワークロードがインストールされていない場合、Visual Studio は不明な、または互換性のないプロジェクトの種類を報告します。 その場合、インストール オプションを確認して、やり直してください。 Visual Studio 2017 でサポートされているプロジェクトの詳細について、[対象プラットフォームと互換性](/visualstudio/productinfo/vs2017-compatibility-vs)に関する記事をもう一度ご覧ください。
 
 ## <a name="project-types"></a>プロジェクトの種類

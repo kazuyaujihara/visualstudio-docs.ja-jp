@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8cdcc9e05a3b238adcd559911208cbb6532b1d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918248"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318434"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>コード化された UI テストでさまざまな Web ブラウザーを使用する
 
@@ -24,13 +24,13 @@ ms.locfileid: "55918248"
 
 ## <a name="whats-supported-across-all-web-browsers"></a>すべての Web ブラウザーでサポートされている機能
 
--   プロパティ、検索、再生待機処理などの[機能を制御するためのカスタム コードを追加](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)します。
+-   プロパティ、検索、再生待機処理などの[機能を制御するためのカスタム コードを追加](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)します。
 
 -   ポップアップとダイアログ ボックス
 
--   [戻り値の型を持たない基本 JavaScript を実行します](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+-   [戻り値の型を持たない基本 JavaScript を実行します](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   検索の回復機能 (スマート一致を使用) と[パフォーマンスの向上](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+-   検索の回復機能 (スマート一致を使用) と[パフォーマンスの向上](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>コード化された UI テストを複数の Web ブラウザーの種類で使用する理由
 

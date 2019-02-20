@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155995"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317225"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Visual Studio IDE へようこそ | C#
 
@@ -122,18 +122,6 @@ Visual Studio を初めて起動する際には、Microsoft アカウント、�
 IDE の他のカスタマイズ方法については、「[Visual Studio IDE のカスタマイズ](../../ide/personalizing-the-visual-studio-ide.md)」をご覧ください。
 
 ## <a name="create-a-program"></a>プログラムの作成
-
-最初に、C# 開発者に合わせた環境設定を使用するように Visual Studio を構成します。
-
-1. メニュー バーで、**[ツール]** > **[設定のインポートとエクスポート]** の順にクリックします。
-
-2. **設定のインポートとエクスポート ウィザード**の最初のページで **[すべての設定をリセット]** を選択し、**[次へ]** を選択します。
-
-3. **[現在の設定の保存]** ページで、現在の設定を保存するオプションを選択するか選択せずに、**[次へ]** を選択します  (設定をカスタマイズしていない場合は、**[No, just reset settings, overwriting my current settings]\(いいえ、設定をリセットして現在の設定を上書きするだけです\)** を選択します)。
-
-4. **[設定の既定のコレクションの選択]** ページで、**[Visual C#]** を選択し、**[完了]** を選択します。
-
-5. **[リセットの完了]** ページで **[閉じる]** を選択します。
 
 簡単なプログラムを作成してみましょう。
 
@@ -303,4 +291,4 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 - [Visual Studio のその他の機能](../../ide/advanced-feature-overview.md)を確認します
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/) にアクセスします
-- [Visual Studio ブログ](https://blogs.msdn.microsoft.com/visualstudio/)を参照します
+- [Visual Studio ブログ](https://devblogs.microsoft.com/visualstudio/)を参照します

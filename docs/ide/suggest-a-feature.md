@@ -8,12 +8,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e94d48a1a9dc926bc039ba12c64f26616ae68ec5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912158"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316081"
 ---
 # <a name="overview-suggest-a-feature"></a>概要: 機能を提案する
 
@@ -129,4 +129,4 @@ Microsoft は、お客様からの機能の提案に耳を傾け、お客様に�
 
 ## <a name="see-also"></a>関連項目
 
-- [開発者コミュニティの [機能を提案する] 機能の概要 (Visual Studio ブログ)](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)
+- [開発者コミュニティの [機能を提案する] 機能の概要 (Visual Studio ブログ)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

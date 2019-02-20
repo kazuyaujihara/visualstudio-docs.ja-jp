@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8b1f602dc791b0475b0e33aa49215aaa62860d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 7bc7d75329e83345107cac18fa49267dc62f964d
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155306"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316705"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU 使用率を分析することでアプリケーションのパフォーマンスを測定する
 Visual Studio プロファイリング ツールを使用して、アプリケーションでパフォーマンスの問題を分析することができます。 このガイドでは、診断ツールの **[CPU 使用率]** タブを使用し、アプリのパフォーマンス データを取得する方法について説明します。 診断ツールは Visual Studio の .NET 開発 (ASP.NET を含む) とネイティブ/C++ 開発で利用できます。
@@ -64,7 +64,7 @@ Windows 7 以降ではデバッガーなしでプロファイル ツールを使
 
      ![診断ツールの概要タブ](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     イベントに関する詳細については、「[診断ツール ウィンドウの [イベント検索とフィルター処理] タブ](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)」を参照してください。
+     イベントに関する詳細については、「[診断ツール ウィンドウの [イベント検索とフィルター処理] タブ](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)」を参照してください。
 
 6.  最初のブレークポイントにヒットするシナリオを実行します。
 

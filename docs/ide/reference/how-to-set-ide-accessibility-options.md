@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aad7b5896ce8f090ef627fe9d08b0eae506a42cc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5763178ecf30cc0c946c8810770ba2948383a715
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928440"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317186"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>方法: IDE アクセシビリティ オプションを設定する
 
 > [!TIP]
-> 最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)」をご覧ください。
+> 最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)」をご覧ください。
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] には、視力の弱い方に見やすい表示にしたり、動作に制限があっても入力しやすくするための機能が装備してあります。 たとえば、エディター内のテキストのサイズや色を変更する機能、ツール バーのテキストやボタンのサイズを変更する機能、入力する文字数を減らすためのメソッドやパラメーターのオート コンプリート機能などがあります。
 

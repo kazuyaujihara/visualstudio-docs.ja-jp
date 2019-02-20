@@ -19,17 +19,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5b610a268344946390c66a5c6cc34ae0dc3c4d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 02b35ff8325c6cb155d54a2ada6bf6f7d63dc341
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932093"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318629"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>マイクロソフトのアクセシビリティ製品とサービス
 
 > [!TIP]
-> Visual Studio に対して最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)」 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化) をご覧ください。
+> Visual Studio に対して最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)」 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化) をご覧ください。
 
 Microsoft は、すべてのユーザーが簡単に使用できる製品とサービスの開発に取り組んでいます。 以下のトピックでは、障碍があるユーザーが Microsoft Windows をさらに使いやすくするためのユーザー補助機能、製品、およびサービスについて説明しています。
 

@@ -8,7 +8,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: c393d6f9fbd239ab38957f66161bcff7372ac45f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe6a2b69cbd95ad558ed87e9afb65883b30175a3
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058664"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335572"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019-preview"></a>Visual Studio 2019 Preview のプロジェクトの移行とアップグレードのリファレンス
 
@@ -35,7 +35,7 @@ ms.locfileid: "53058664"
 
 この記事では、Visual Studio 2019 Preview の移行が可能なプロジェクト タイプに対する詳細を提供しています。 また、Visual Studio 2019 Preview で非推奨となった、または近いうちに非推奨となるプロジェクト タイプに関する詳細も提供します。 この記事では、Visual Studio 2019 でサポートされなくなったことで移行できないプロジェクト タイプは除外されています。 また、移行に関する問題がないサポート対象のプロジェクト タイプ ([対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関するページでその一覧を確認できます) もこの記事では除外されています。
 
-> [!Important]
+> [!IMPORTANT]
 > 特定のプロジェクト タイプでは、Visual Studio インストーラーを通じて特定のワークロードをインストールする必要があります。 ワークロードがインストールされていない場合、Visual Studio は不明な、または互換性のないプロジェクトの種類を報告します。 その場合、インストール オプションを確認して、やり直してください。 Visual Studio 2019 Preview でサポートされているプロジェクトの詳細については、[対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関する記事をご覧ください。
 
 ## <a name="project-types"></a>プロジェクトの種類
@@ -73,7 +73,7 @@ ms.locfileid: "53058664"
 | SQL Server Reporting Services および SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | これらのプロジェクト タイプのサポートは、Visual Studio ギャラリーの次の 2 つの拡張機能を通じて提供されます。[Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) と [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 Visual Studio 2019 Preview のデータの保存と処理のワークロードには SSDT のサポートも含まれます。 |
 | SQL Server Integration Services (SSIS) | Visual Studio 2019 Preview のサポートは、SQL Server Data Tools (SSDT) から使用できます。 詳細については、[SQL Server Integration Services のブログ](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/)をご覧ください。 |
 | Visual C++ | Visual Studio 2019 Preview を使用して、Visual Studio 2010 以降の Visual Studio で作成されたプロジェクトを操作できます。 プロジェクトを初めて開いたときに、最新のコンパイラとツールセットにアップグレードするか、元のプロジェクトを引き続き使用するかを選択できます。 元のプロジェクトを引き続き使用することを選択した場合、Visual Studio 2019 Preview はプロジェクト ファイルを変更せず、以前の Visual Studio のインストールのツールセットを使用してプロジェクトをビルドします。 元のオプションを維持すると、必要に応じて、Visual Studio の元のバージョンでプロジェクトを開くことができます。 詳細については、「[Visual Studio でネイティブ マルチ ターゲットを利用し、古いプロジェクトを作成する](/cpp/porting/use-native-multi-targeting)」を参照してください。 |
-| Visual Studio 拡張性/VSIX | MinimumVersion 14.0 以前のプロジェクトは、MinimumVersion 15.0 を宣言するように更新されます。この宣言により、前のバージョンの Visual Studio でプロジェクトを開けなくなります。 前のバージョンでプロジェクトを開くには、MinimumVersion を `$(VisualStudioVersion)` に設定します。 「[How to:Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)」 (方法: 機能拡張プロジェクトを Visual Studio 2017 に移行する) もご覧ください。 |
+| Visual Studio 拡張性/VSIX | MinimumVersion 14.0 以前のプロジェクトは、MinimumVersion 15.0 を宣言するように更新されます。この宣言により、前のバージョンの Visual Studio でプロジェクトを開けなくなります。 前のバージョンでプロジェクトを開くには、MinimumVersion を `$(VisualStudioVersion)` に設定します。 「[方法: 機能拡張プロジェクトの Visual Studio 2017 への移行](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)に関するページも参照してください。 |
 | Visual Studio Lab Management | Microsoft Test Manager または Visual Studio 2010 SP1 以降を利用し、これらのバージョンで差制された環境を開くことができます。 ただし、Visual Studio 2010 SP1 の場合、環境を作成するには、使用している Microsoft Test Manager のバージョンが Team Foundation Server のバージョンと一致する必要があります。 |
 | Visual Studio Tools for Apache Cordova | Apache Cordova のサポートは、Visual Studio 2019 Preview で削除されました。 Visual Studio 2019 Preview にはこれに相当するものがないため、これらのプロジェクトへの自動移行パスはありません。<br/><br/>Cordova Tools for Visual Studio Code 拡張機能 (Cordova の最新バージョンのサポートを提供) を使用することも、Visual Studio 2017 を引き続き使用することもできます。 |
 | Web 配置 (wdproj) | 発行プロファイルのサポートが追加されたことで、Visual Studio 2012 では Web 配置プロジェクトのサポートが削除されました。 Visual Studio 2019 Preview にはこれに相当するものがないため、これらのプロジェクトへの自動移行パスはありません。 そこで、[StackOverflow](https://stackoverflow.com/a/12061065/1203388) に説明されているように、テキスト エディターで wdproj ファイルを開き、pubxml (発行プロファイル) ファイルに任意のカスタマイズをコピーおよび貼り付けます。 [Web サイトおよび Web 配置プロジェクトに関する計画](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/)に関するページも参照してください。 |
