@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 942007063ffa5ce6f24963067b7707495faa84b9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935096"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318811"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 の新機能
 
@@ -72,7 +72,7 @@ Visual Studio をインストールするときに確認できる最も重要な
 
 **15.3 の新機能**として、Visual Studio と多くのユーザーが使用している支援技術との互換性を改善する、1,700 を超える変更を行いました。 スクリーン リーダーやハイ コントラスト テーマなどの支援技術との互換性を従来よりも改善するシナリオが、数多くあります。 デバッガー、エディター、シェルのすべてに重要な変更点があります。
 
-詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)」をご覧ください。
+詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)」をご覧ください。
 
 ## <a name="performance-and-productivity"></a>パフォーマンスと生産性
 
@@ -80,7 +80,7 @@ Visual Studio をインストールするときに確認できる最も重要な
 
 チーム エクスプローラー、Azure Tools、Microsoft ストアでの発行で使用するユーザー アカウントを共有できるように、Visual Studio で新しい ID サービスを導入しました。
 
-また、より長い時間サインインしたままにできます。 Visual Studio に 12 時間ごとにサインインを求められることはなくなりました。 詳細については、「[Fewer Visual Studio Sign-in Prompts](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/)」 (Visual Studio のサインインの確認メッセージを減らす) のブログの投稿を参照してください。
+また、より長い時間サインインしたままにできます。 Visual Studio に 12 時間ごとにサインインを求められることはなくなりました。 詳細については、「[Fewer Visual Studio Sign-in Prompts](https://devblogs.microsoft.com/visualstudio/fewer-visual-studio-sign-in-prompts/)」 (Visual Studio のサインインの確認メッセージを減らす) のブログの投稿を参照してください。
 
 ### <a name="start-visual-studio-faster"></a>Visual Studio の起動の高速化
 
@@ -131,7 +131,7 @@ Visual Studio Enterprise 2017 では、ライブ単体テストを実行する�
 
 自動化されたテストの詳細については、[DevOps の 自動化テストの CI/CD パイプライン](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/)に関するブログ投稿をご覧ください。
 
-[Continuous Delivery Tools for Visual Studio (Visual Studio 用の継続的デリバリー ツール)](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 拡張の新機能の詳細については、ブログ投稿「[Commit with confidence: Commit time code quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/)」 (自信を持ってコミットする: タイム コードの品質をコミットする) をご覧ください。
+[Continuous Delivery Tools for Visual Studio (Visual Studio 用の継続的デリバリー ツール)](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 拡張の新機能の詳細については、ブログ投稿「[Commit with confidence: Commit time code quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/)」 (自信を持ってコミットする: タイム コードの品質をコミットする) をご覧ください。
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE の拡張機能
 
@@ -188,7 +188,7 @@ Visual Studio でプロジェクトを操作する際に、コードを迅速に
 
   ![Visual Studio 2017 の構造ビジュアライザー](media/vsIDE-StructureVisualizer.png)
 
-新しい生産性向上機能の詳細については、[Visual Studio 2017 での生産性向上](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/)に関する Mark Wilson-Thomas のブログ投稿を参照してください。
+新しい生産性向上機能の詳細については、[Visual Studio 2017 での生産性向上](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/)に関する Mark Wilson-Thomas のブログ投稿を参照してください。
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -212,7 +212,7 @@ Visual Studio には、C++ Core ガイドラインの配信、C++11 および C+
 
 ![Visual Studio の新しい例外ヘルパー ダイアログ](media/vs2017ide-ExceptionHelper.png)
 
-詳細については、「[Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/)」 (Visual Studio で新しい例外ヘルパーを使用する) のブログの投稿を参照してください。
+詳細については、「[Use the new Exception Helper in Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/)」 (Visual Studio で新しい例外ヘルパーを使用する) のブログの投稿を参照してください。
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>スナップショットと IntelliTrace ステップ バック
 
@@ -328,7 +328,7 @@ Visual Studio 2017 のすべてのエディションに付属:
 
 * [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) では、複数のデータベースから SQL のフラグメントやオブジェクトをすばやく見つけることができ、生産性が向上します。
 
-詳細については、ブログの投稿「[Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/)」 (Visual Studio 2017 の Redgate Data Tools) を参照してください。
+詳細については、ブログの投稿「[Redgate Data Tools in Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/)」 (Visual Studio 2017 の Redgate Data Tools) を参照してください。
 
 ### <a name="net-core"></a>.NET Core
 

@@ -16,17 +16,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fad50ea0a2d37d04edb12830ecb195990c508fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d03ef199e0c1c4ea3684287e1621e6d9b5fc52f8
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921420"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315535"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>方法: キーボード主体で操作する
 
 > [!TIP]
-> 最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)」をご覧ください。
+> 最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)」をご覧ください。
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] で提供されているさまざまな既定のショートカット キーの組み合わせを使うと、統合開発環境 (IDE) 内で移動やコーディングを簡単に行うことができます。 Visual Studio で使われるすべてのショートカット キーの一覧については、「[既定のキーボード ショートカット](../../ide/default-keyboard-shortcuts-in-visual-studio.md)」を参照してください。 他の Microsoft 製品で利用できるキーボード ショートカットについては、[http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400) をご覧ください。
 

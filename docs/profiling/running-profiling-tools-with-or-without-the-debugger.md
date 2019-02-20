@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96341ada2485654f5553b7b862c84dd03b8b4a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a6f7b61bc3dd6f11bf16808df15d9c2dad1222f6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979492"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316913"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>デバッガーを使用して、または使用せずにプロファイリング ツールを実行する
 
@@ -63,7 +63,7 @@ Visual Studio には、パフォーマンス測定とプロファイルのため
 
 ![診断イベント検索](../profiling/media/diagnosticseventsearch.png "診断イベント検索")  
 
-詳細については、「 [Searching and filtering the Events tab of the Diagnostic Tools window](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)」を参照してください。  
+詳細については、「 [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)」を参照してください。  
 
 ## <a name="collect-profiling-data-without-debugging"></a>デバッグなしでプロファイリング データを収集する  
 
@@ -118,14 +118,14 @@ Visual Studio には、パフォーマンス測定とプロファイルのため
   
  [MSDN マガジン:IntelliTrace を使用して迅速に問題を診断する](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [ブログの投稿:Visual Studio 2015 でのメモリ使用量ツールを使用したイベント ハンドラーのリークの診断](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
+ [ブログの投稿:Visual Studio 2015 でのメモリ使用量ツールを使用したイベント ハンドラーのリークの診断](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
   
  [ビデオ:Microsoft Visual Studio Ultimate 2015 での IntelliTrace を使用したデバッグ履歴](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
   
  [ビデオ:Visual Studio 2015 を使用したパフォーマンスに関する問題のデバッグ](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [パフォーマンスのヒント:Visual Studio を使用したデバッグ中のパフォーマンス概要の参照](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+ [パフォーマンスのヒント:Visual Studio を使用したデバッグ中のパフォーマンス概要の参照](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
   
- [Visual Studio 2015 の診断ツール [デバッガー] ウィンドウ](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
+ [Visual Studio 2015 の診断ツール [デバッガー] ウィンドウ](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   
- [IntelliTrace in Visual Studio Enterprise 2015 (Visual Studio Enterprise2015 の IntelliTrace)](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+ [IntelliTrace in Visual Studio Enterprise 2015 (Visual Studio Enterprise2015 の IntelliTrace)](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
