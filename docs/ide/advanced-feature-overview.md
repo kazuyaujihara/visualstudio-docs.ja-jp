@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3b213c9baf82317c390ee29512de946a220fb6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: da502b2f527f811f20bbce299107cac20517048a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909637"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317836"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 の機能
 
@@ -99,7 +99,7 @@ Visual Studio の **SQL Server オブジェクト エクスプローラー**で�
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>ソース コードの管理および他のユーザーとの共同作業
 
-GitHub などの任意のプロバイダーがホストしている Git リポジトリにあるソース コードを管理できます。 また、[Azure DevOps Services](/azure/devops/index) を使用して、プロジェクト全体でコードをバグおよび作業項目と共に管理することもできます。 Visual Studio でチーム エクスプローラーを使用して Git リポジトリを管理する方法の詳細については、「[Get started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio)」(Git および Azure Repos の使用を開始する) を参照してください。 Visual Studio には、その他の組み込みのソース管理機能もあります。 それらの機能の詳細については、ブログ「[New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/)」(Visual Studio 2017 の新しい Git 機能) をご覧ください。
+GitHub などの任意のプロバイダーがホストしている Git リポジトリにあるソース コードを管理できます。 また、[Azure DevOps Services](/azure/devops/index) を使用して、プロジェクト全体でコードをバグおよび作業項目と共に管理することもできます。 Visual Studio でチーム エクスプローラーを使用して Git リポジトリを管理する方法の詳細については、「[Get started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio)」(Git および Azure Repos の使用を開始する) を参照してください。 Visual Studio には、その他の組み込みのソース管理機能もあります。 それらの機能の詳細については、ブログ「[New Git Features in Visual Studio 2017](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/)」(Visual Studio 2017 の新しい Git 機能) をご覧ください。
 
 Azure DevOps Services はクラウド ベースのサービスであり、ソフトウェアのプランニング、ホスティング、自動化、およびデプロイを行うことができるほか、チームでのコラボレーションが可能になります。 Azure DevOps Services では、Git リポジトリ (分散型バージョン管理) と Team Foundation バージョン管理 (集中型バージョン管理) の両方がサポートされています。 また、バージョン管理システムに格納されたコードを継続的にビルドおよびリリース (CI/CD) できるようにパイプラインがサポートされています。 Azure DevOps Services では、スクラム、CMMI、アジャイル開発方法もサポートしています。
 

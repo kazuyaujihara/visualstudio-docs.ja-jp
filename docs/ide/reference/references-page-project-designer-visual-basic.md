@@ -9,19 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
-- Unused References dialog box
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afd144248ed01210c888ee516a19bf93a156b86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970752"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335131"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>[参照設定] ページ (プロジェクト デザイナー) (Visual Basic)
 
@@ -32,12 +31,6 @@ ms.locfileid: "55970752"
 ## <a name="uielement-list"></a>UIElement の一覧
 
 次のオプションを使用すると、プロジェクトの参照やインポートした名前空間を選択または削除できます。
-
-**[未使用の参照]**
-
-このボタンをクリックすると、**[未使用の参照]** ダイアログ ボックスにアクセスします。
-
-**[未使用の参照]** ダイアログ ボックスでは、プロジェクトに含まれているが、実際にはコードで使用されていない参照を削除できます。 このボックスに含まれるグリッドには、**参照名**、**パス**、プロジェクトで使用されていない名前空間参照に関するその他の情報が一覧表示されています。 このグリッドで、プロジェクトから削除する名前空間参照を選択し、**[削除]** をクリックします。
 
 **[参照パス]**
 

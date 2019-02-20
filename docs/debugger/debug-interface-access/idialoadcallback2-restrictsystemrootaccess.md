@@ -34,5 +34,5 @@ HRESULT RestrictSystemRootAccess();
 ## <a name="remarks"></a>解説  
  すべてのコード以外のリターン`S_OK`.pdb ファイルのシステム ルートを検索できないようにします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

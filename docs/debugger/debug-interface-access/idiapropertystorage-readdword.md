@@ -44,5 +44,5 @@ HRESULT ReadDWORD ( 
 ## <a name="remarks"></a>解説  
  A `DWORD` 32 ビット符号なし整数としての Windows によって定義されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

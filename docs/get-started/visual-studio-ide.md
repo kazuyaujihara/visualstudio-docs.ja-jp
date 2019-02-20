@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32bb2ea08ffc5b60948d45c31b7c7a471d7d57ea
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d38f102dd0a61d80c383307abdc96a03b50c0d74
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155957"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316822"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE へようこそ
 
@@ -285,5 +285,5 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 - [Visual Studio のその他の機能](../ide/advanced-feature-overview.md)を確認します
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/) にアクセスします
-- [Visual Studio ブログ](https://blogs.msdn.microsoft.com/visualstudio/)を参照します
+- [Visual Studio ブログ](https://devblogs.microsoft.com/visualstudio/)を参照します
 - [Visual Studio のダウンロード ページ](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)で Visual Studio をダウンロードします
