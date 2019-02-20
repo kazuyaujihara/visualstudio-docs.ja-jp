@@ -46,5 +46,5 @@ ms.locfileid: "54775918"
 
 -   [ダンプ ファイルの使用](../debugger/using-dump-files.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [方法 : プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)

@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 817e6f31d9282caf77c9f403c7e5555075726d2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bbdbeb10d9d5d7afb7adf17b7a27a0b8d59c9e72
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943800"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335481"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio でスナップショットのデバッグのトラブルシューティングと既知の問題
 
 この記事で説明されている手順を実行しても問題が解決しない場合にお問い合わせsnaphelp@microsoft.comします。
 
-## <a name="issue-snappoint-does-not-turn-on"></a>問題:スナップ ポイントを有効にしません
+## <a name="issue-snappoint-does-not-turn-on"></a>問題: スナップ ポイントを有効にしません
 
 警告アイコンを表示する場合![スナップ ポイントの警告アイコン](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "スナップ ポイントの警告アイコン")正規のスナップ ポイントのアイコンの代わりに、スナップ ポイントを使用し、スナップ ポイントがオンになっていません。
 
@@ -32,7 +32,7 @@ ms.locfileid: "54943800"
 
 1. 構築し、app.isua1 のデプロイに使用されたソース コードの同じバージョンであることを確認します。 展開に適切なシンボルを読み込んでいることを確認します。 これを行うには、表示、**モジュール**ウィンドウを選択し、スナップショットのデバッグ中にシンボル ファイルの列が .pdb ファイルをデバッグしているモジュールのアンロードの表示を確認します。 スナップショット デバッガーは、自動的にダウンロードして、デプロイ用のシンボルの使用を試みます。
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題:スナップショットを開くと、シンボルが読み込まれない
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題: スナップショットを開くときにシンボルが読み込まれない
 
 次のウィンドウが表示、シンボルが読み込まれませんでした。
 
@@ -48,14 +48,26 @@ ms.locfileid: "54943800"
 
 - または、組織では、シンボル サーバーを使用してまたは別のパスにシンボルを削除は、シンボルの設定を使用して、展開に適切なシンボルを読み込みます。
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>問題:クラウド エクスプ ローラーで、「スナップショット デバッガーのアタッチ」オプションを表示できません。
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>問題: クラウド エクスプ ローラーで「スナップショット デバッガーのアタッチ」オプションが表示できません。
 
 次の手順を実行します。
 
 - スナップショット デバッガーのコンポーネントがインストールされていることを確認します。 Visual Studio インストーラーを開き、確認、**スナップショット デバッガー** Azure ワークロードにコンポーネント。
+::: moniker range="< vs-2019"
 - アプリがサポートされていることを確認します。 現時点では、ASP.NET だけ (4.6.1+) し、Azure App Services にデプロイされた ASP.NET Core (2.0 以降) のアプリがサポートされます。
+::: moniker-end
+::: moniker range=">= vs-2019"
+- アプリがサポートされていることを確認します。
+  - Azure App Services の .NET Framework 4.6.1 で実行される ASP.NET アプリケーションまたはそれ以降。
+  - Azure アプリ サービス - ASP.NET Core アプリケーションの .NET Core 2.0 または後で Windows を実行します。
+  - .NET Framework 4.6.1 で実行されている azure の仮想マシン (と VMSS) では、ASP.NET アプリケーションまたはそれ以降。
+  - Azure 仮想マシン (VMSS) - ASP.NET Core アプリケーションで .NET Core 2.0 または Windows の後で実行されています。
+  - Azure Kubernetes サービス - .NET Core 2.2 または Debian 9 の後で実行されている ASP.NET Core アプリケーション。
+  - Azure Kubernetes サービス - .NET Core 2.2 または後で Alpine 3.8 で実行されている ASP.NET Core アプリケーション。
+  - Azure Kubernetes サービス - .NET Core 2.2 または後で Ubuntu 18.04 で実行されている ASP.NET Core アプリケーション。
+::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>問題:診断ツールでのスナップショットの調整のみ表示します。
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>問題: しか表示診断ツールでのスナップショットの調整
 
 ![調整されるスナップ ポイント](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "スナップ ポイントのスロットル")
 
@@ -66,7 +78,7 @@ ms.locfileid: "54943800"
 ## <a name="known-issues"></a>既知の問題
 
 - 同じ App Service に対して複数の Visual Studio クライアントでスナップショットのデバッグは現在サポートされていません。
-- Roslyn の IL の最適化は ASP.NET Core プロジェクトで完全にサポートされていません。 いくつかの ASP.NET Core プロジェクトでは、いくつかの変数を参照してください。 または、条件付きステートメントでいくつかの変数を使用すること可能性がありますできません。 
+- Roslyn の IL の最適化は ASP.NET Core プロジェクトで完全にサポートされていません。 いくつかの ASP.NET Core プロジェクトでは、いくつかの変数を参照してください。 または、条件付きステートメントでいくつかの変数を使用すること可能性がありますできません。
 - 特別な変数など *$FUNCTION*または *$CALLER*、条件付きステートメントまたはログポイント ASP.NET Core プロジェクトで評価されることはできません。
 - スナップショットのデバッグはアプリのサービスでは動作しません[ローカル キャッシュ](/azure/app-service/app-service-local-cache)オンにします。
 - API アプリのデバッグ スナップショットは現在サポートされていません。
@@ -86,4 +98,6 @@ ms.locfileid: "54943800"
 
 [Visual Studio でのデバッグ](../debugger/index.md)  
 [スナップショット デバッガーを使用して、ライブ ASP.NET アプリをデバッグします。](../debugger/debug-live-azure-applications.md)  
+[ライブ ASP.NET Azure 仮想 Machines\Virtual マシン スケール セットのスナップショット デバッガーを使用したデバッグします。](../debugger/debug-live-azure-virtual-machines.md)  
+[スナップショット デバッガーを使用して、ライブの ASP.NET Azure Kubernetes デバッグします。](../debugger/debug-live-azure-kubernetes.md)  
 [スナップショットのデバッグに関する FAQ](../debugger/debug-live-azure-apps-faq.md)  

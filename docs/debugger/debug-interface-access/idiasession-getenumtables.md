@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiasession::getenumtables |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,60 +12,60 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 748da3122a6ac15e8b6bd6101a6a97f504d35fc6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5c331171a62d2319666229f108428b9d62b7464e
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070995"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227619"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
-シンボル ストアに含まれているすべてのテーブルの列挙子を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT getEnumTables (   
-   IDiaEnumTables** ppEnumTables  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `ppEnumTables`  
- [out]返します、 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)オブジェクト。 シンボル ストア内のテーブルを列挙するのにには、このインターフェイスを使用します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
-## <a name="example"></a>例  
- この例で使用する一般的な関数、`getEnumTables`特定の列挙子オブジェクトを取得するメソッド。 関数が、必要なインターフェイスにキャスト可能なポインターを返します、列挙子が見つかった場合関数を返しますそれ以外の場合、`NULL`します。  
-  
-```C++  
-IUnknown *GetTable(IDiaSession *pSession, REFIID iid)  
-{  
-    IUnknown *pUnknown = NULL;  
-    if (pSession != NULL)  
-    {  
-        CComPtr<IDiaEnumTables> pEnumTables;  
-        if (pSession->getEnumTables(&pEnumTables) == S_OK)  
-        {  
-             CComPtr<IDiaTable> pTable;  
-             DWORD celt = 0;  
-             while(pEnumTables->Next(1,&pTable,&celt) == S_OK &&  
-                   celt == 1)  
-             {  
-                  if (pTable->QueryInterface(iid, (void **)pUnknown) == S_OK)  
-                  {  
-                       break;  
-                  }  
-                  pTable = NULL;  
-             }  
-        }  
-    }  
-    return(pUnknown);  
-}  
-```  
-  
-## <a name="see-also"></a>関連項目
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+シンボル ストアに含まれているすべてのテーブルの列挙子を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT getEnumTables (
+    IDiaEnumTables** ppEnumTables
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+`ppEnumTables`  
+[out]返します、 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)オブジェクト。 シンボル ストア内のテーブルを列挙するのにには、このインターフェイスを使用します。
+
+## <a name="return-value"></a>戻り値
+成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
+## <a name="example"></a>例
+この例で使用する一般的な関数、`getEnumTables`特定の列挙子オブジェクトを取得するメソッド。 関数が、必要なインターフェイスにキャスト可能なポインターを返します、列挙子が見つかった場合関数を返しますそれ以外の場合、`NULL`します。
+
+```C++
+IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
+{
+    IUnknown *pUnknown = NULL;
+    if (pSession != NULL)
+    {
+        CComPtr<IDiaEnumTables> pEnumTables;
+        if (pSession->getEnumTables(&pEnumTables) == S_OK)
+        {
+            CComPtr<IDiaTable> pTable;
+            DWORD celt = 0;
+            while(pEnumTables->Next(1,&pTable,&celt) == S_OK &&
+                  celt == 1)
+            {
+                if (pTable->QueryInterface(iid, (void **)pUnknown) == S_OK)
+                {
+                    break;
+                }
+                pTable = NULL;
+            }
+        }
+    }
+    return(pUnknown);
+}
+```
+
+## <a name="see-also"></a>参照
+[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)  
+[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
