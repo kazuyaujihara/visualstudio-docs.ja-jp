@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b416d48b8e5351f0a6ddf037fa80b442888bbe2
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866832"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450179"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel ソリューションのグローバリゼーションとローカリゼーション
   ここでは、Windows に英語以外の言語を設定しているコンピューターで実行される Microsoft Office Excel ソリューションにおいて、特に考慮が必要な事項について説明します。 Microsoft Office ソリューションのグローバリゼーションとローカリゼーションは、ほとんどの点で、Visual Studio を使用して他の種類のソリューションを作成する場合と同じです。 一般的な情報は、次を参照してください。 [Globalize とアプリケーションのローカライズ](../ide/globalizing-and-localizing-applications.md)します。
@@ -47,7 +47,7 @@ ms.locfileid: "54866832"
  この場合でも、ドキュメントのテキストを操作するコードのすべての部分がテキストの言語と一致しているか確認する必要があります。また、ブックマーク、名前付き範囲、および他の表示フィールドが Office ドキュメントの再設定に対応しているか確認する必要もあります。この再設定は、異なる文法やテキストの長さに合わせて調整する場合に必要とされたものです。 ドキュメント テンプレートの比較的簡単なテキストが含まれている場合、リソース ファイルにテキストを格納して、実行時にテキストを読み込みを検討する可能性があります。
 
 ### <a name="text-direction"></a>テキストの方向
- Excel では、テキストが右から左へ表記されるようにワークシートのプロパティを設定できます。 ホスト コントロール、または任意のコントロールを持つ、`RightToLeft`デザイナーに自動的に配置されているプロパティは、実行時にこれらの設定に一致します。 Word の場合、双方向テキスト用のドキュメント設定はありません (テキストの配置を変更できるだけです)。そのため、コントロールをこの設定にマップすることはできません。 ユーザーは、代わりにテキストの配置を各コントロールに設定する必要があります。 コードを記述して、すべてのコントロールでテキストが右から左へ表記されるようにできます。
+ Excel では、テキストが右から左へ表記されるようにワークシートのプロパティを設定できます。 ホスト コントロール、または任意のコントロールを持つ、`RightToLeft`デザイナーに自動的に配置されているプロパティは、実行時にこれらの設定に一致します。 Word には (だけ変更するテキストの配置)、双方向テキスト用のドキュメント設定がないため、この設定に、コントロールをマップすることはできません。 ユーザーは、代わりにテキストの配置を各コントロールに設定する必要があります。 コードを記述して、すべてのコントロールでテキストが右から左へ表記されるようにできます。
 
 ### <a name="change-culture"></a>カルチャを変更します。
  ドキュメント レベルのカスタマイズ コードは、通常、Excel のメイン UI スレッドを共有します。そのため、スレッド カルチャに対して行った変更は、そのスレッドで実行されている、すべてのものに影響します。変更はカスタマイズに限定されません。
@@ -98,5 +98,5 @@ Application.ActiveCell.Value2 = "05/12/04"
 ## <a name="see-also"></a>関連項目
 
 - [方法: Office の multilingual user interface します。](../vsto/how-to-target-the-office-multilingual-user-interface.md)
-- [設計および Office ソリューションの作成](../vsto/designing-and-creating-office-solutions.md)
+- [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)
