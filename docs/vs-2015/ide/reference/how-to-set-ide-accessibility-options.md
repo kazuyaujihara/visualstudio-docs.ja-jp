@@ -111,6 +111,6 @@ ms.locfileid: "54803224"
   
 2.  **[名前]** の右側に、選択したボタンの新しいキャプションを入力します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)   
  [ユーザー補助アプリケーションのデザイン リソース](../../ide/reference/resources-for-designing-accessible-applications.md)

@@ -97,7 +97,7 @@ ms.locfileid: "54782622"
   
      ツール ウィンドウが、新しいドッキング場所の所定の位置にスナップされます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [キーボード ショートカットの識別とカスタマイズ](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [アクセシビリティのヒントとテクニック](../../ide/reference/accessibility-tips-and-tricks.md)   
  [既定のキーボード ショートカット](../../ide/default-keyboard-shortcuts-in-visual-studio.md)

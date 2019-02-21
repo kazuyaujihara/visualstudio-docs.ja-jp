@@ -347,7 +347,7 @@ some F# code
 
   次のレジストリ キーと値を追加します。
 
-  HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic ヘルプ キー: 小売価格でのデバッグ出力を表示します [はい]。
+  HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic ヘルプ キー: 小売価格でのデバッグ出力を表示します はい。
 
   [ヘルプ] メニュー項目で、IDE で「ヘルプ コンテキストのデバッグ」を選択します。
 

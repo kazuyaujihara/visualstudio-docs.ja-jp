@@ -62,7 +62,7 @@ Debug.EvaluateStatement text
 >Debug.EvaluateStatement(a+b)  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Print コマンド](../../ide/reference/print-command.md)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   

@@ -50,5 +50,5 @@ Devenv /edit [file1[ file2]]
 devenv /edit MyFile.cs  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
