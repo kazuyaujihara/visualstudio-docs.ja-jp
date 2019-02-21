@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2191ed7d6c091b730be9204d70cec79a0c6e5e44
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035238"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317771"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace の機能 (C#、Visual Basic、C++)
 
 IntelliTrace を使用すると、イベントとアプリケーションを呼び出すメソッドとを記録することができます。この機能により、さまざまな実行ポイントでの状態 (呼び出し履歴およびローカル変数の値) を確認することができます。 通常どおりのデバッグの開始 - 既定では、IntelliTrace はオンになっています。このため、IntelliTrace が記録する情報が **[イベント]** タブの新しい **[診断ツール]** ウィンドウに表示されます。イベントについて記録された呼び出し履歴とローカルを確認するには、目的のイベントを選択し、**[デバッグ履歴の有効化]** をクリックします。
 
-ステップ バイ ステップの説明を参照してください。[チュートリアル: IntelliTrace を使用した](../debugger/walkthrough-using-intellitrace.md)します。
+ステップ バイ ステップの説明については、「[チュートリアル: IntelliTrace の使用](../debugger/walkthrough-using-intellitrace.md)」を参照してください。
 
 IntelliTrace は Visual Studio Enterprise Edition で使用できますが、Visual Studio Professional Edition または Community Edition では使用できません。
 
@@ -105,21 +105,21 @@ IntelliTrace データをファイルに保存する場合は、IntelliTrace が
 
 ## <a name="blogs"></a>ブログ
 
-[IntelliTrace in Visual Studio Enterprise 2015 (Visual Studio Enterprise2015 の IntelliTrace)](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+[IntelliTrace in Visual Studio Enterprise 2015 (Visual Studio Enterprise2015 の IntelliTrace)](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
 
-[ライブ デバッグのチュートリアル IntelliTrace を使用して、Visual Studio 2015 (テキスト エディター)](https://blogs.msdn.microsoft.com/devops/2015/01/16/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
+[ライブ デバッグのチュートリアル IntelliTrace を使用して、Visual Studio 2015 (テキスト エディター)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
 
-[ライブ デバッグのチュートリアルでは、Visual Studio 2015 (ソーシャル クラブ) IntelliTrace を使用します。](https://blogs.msdn.microsoft.com/devops/2015/04/29/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
+[ライブ デバッグのチュートリアルでは、Visual Studio 2015 (ソーシャル クラブ) IntelliTrace を使用します。](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
 
-[サポートしているアタッチの Visual Studio Enterprise 2015 の IntelliTrace を!](https://blogs.msdn.microsoft.com/devops/2015/05/14/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
+[サポートしているアタッチの Visual Studio Enterprise 2015 の IntelliTrace を!](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
 
-[IntelliTrace スタンドアロン コレクターを使用して windows サービスからデータを収集します。](https://blogs.msdn.microsoft.com/devops/2015/05/14/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
+[IntelliTrace スタンドアロン コレクターを使用して windows サービスからデータを収集します。](https://devblogs.microsoft.com/devops/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
 
-[IntelliTrace 収集計画の編集](https://blogs.msdn.microsoft.com/devops/2015/03/09/editing-the-intellitrace-collection-plan/)
+[IntelliTrace 収集計画の編集](https://devblogs.microsoft.com/devops/editing-the-intellitrace-collection-plan)
 
-[カスタム TraceSource と IntelliTrace を使用したデバッグ](https://blogs.msdn.microsoft.com/devops/2014/12/16/custom-tracesource-and-debugging-using-intellitrace/)
+[カスタム TraceSource と IntelliTrace を使用したデバッグ](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
 
-[Active Directory アカウントで実行中の IntelliTrace スタンドアロン コレクターとアプリケーション プール](https://blogs.msdn.microsoft.com/devops/2014/12/22/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
+[Active Directory アカウントで実行中の IntelliTrace スタンドアロン コレクターとアプリケーション プール](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
 
 ## <a name="forums"></a>フォーラム
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008713"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316887"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace を使用したデプロイ後に問題を診断 (C#、Visual Basic)
 
@@ -31,7 +31,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
 
 -   診断データを確認して IntelliTrace でコードをデバッグするための Visual Studio Enterprise (ただし、Professional および Community Edition を除く)
 
-##  <a name="SetUpBuild">手順 1:</a> リリースのビルド情報が含まれます
+##  <a name="SetUpBuild"></a> 手順 1: リリースにビルド情報を含める
  ビルド プロセスを設定して Web プロジェクトのビルド マニフェスト (*BuildInfo.config* ファイル) を作成し、このマニフェストをリリースに含めます。 このマニフェストには、特定のビルドを作成するために使用されたプロジェクト、ソース管理、およびビルド システムに関する情報が含まれます。 この情報は、IntelliTrace ログを開いて記録されたイベントを確認した後に、Visual Studio が対応するソースとシンボルを見つけるのに役立ちます。
 
 ###  <a name="AutomatedBuild"></a>Team Foundation Server を使用して自動ビルドのビルド マニフェストを作成する
@@ -153,15 +153,15 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
  **/p:BuildSymbolStorePath=**\<*シンボルへのパス*>
 
-##  <a name="DeployRelease"></a>手順 2: アプリをリリースします。
+##  <a name="DeployRelease"></a> 手順 2: アプリをリリースする
  アプリを配置するためのビルド プロセスにより作成された [Web.Deploy パッケージ](https://msdn.microsoft.com/library/dd394698.aspx) を使用する場合、ビルド マニフェストの名前は "*ProjectName*.BuildInfo.config" から "BuildInfo.config" へ自動的に変更され、Web サーバー上にあるアプリの Web.config ファイルと同じフォルダーに配置されます。
 
  他の方法を使用してアプリを配置する場合は、ビルド マニフェストの名前が "*ProjectName*.BuildInfo.config" から "BuildInfo.config" へ変更され、Web サーバー上にあるアプリの Web.config ファイルと同じフォルダーに配置されていることを確認します。
 
-## <a name="step-3-monitor-your-app"></a>手順 3: アプリを監視します。
+## <a name="step-3-monitor-your-app"></a>手順 3: アプリを監視する
  Web サーバー上でアプリケーション パフォーマンスの監視を設定して、アプリの問題の監視、診断イベントの記録、および IntelliTrace ログ ファイルへのイベントの保存ができるようにします。 「 [Monitor your release for deployment problems (配置の問題に関するリリースの監視)](../debugger/using-the-intellitrace-stand-alone-collector.md)」を参照してください。
 
-##  <a name="InvestigateEvents">手順 4:</a>問題を見つける
+##  <a name="InvestigateEvents"></a> 手順 4: 問題を見つける
  記録されたイベントを確認し、IntelliTrace を使用してコードをデバッグするには、開発用コンピューターまたは別のコンピューターに Visual Studio Enterprise がインストールされている必要があります。 問題の診断に役立つ CodeLens、デバッガー マップ、コード マップなどのツールを使用することもできます。
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>IntelliTrace ログと対応するソリューションを開く
@@ -216,7 +216,7 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
     - [IntelliTrace ログ内の他のイベントと情報について](../debugger/using-saved-intellitrace-data.md)
     - [ここでは他に何ができますか。](#WhatElse)
-    - [パフォーマンス イベントに関する詳細を確認しましょう](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)
+    - [パフォーマンス イベントに関する詳細を確認しましょう](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>例外の診断
 
@@ -276,11 +276,11 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
   - **TFS**
 
-    - **ProjectCollectionUri**:Team Foundation Server およびプロジェクト コレクションの URI
+    - **ProjectCollectionUri**: Team Foundation Server およびプロジェクト コレクションの URI
 
-    - **ProjectItemSpec**:アプリのプロジェクト ファイル (.csproj または .vbproj) へのパス
+    - **ProjectItemSpec**: アプリのプロジェクト ファイル (.csproj または .vbproj) へのパス
 
-    - **ProjectVersionSpec**:プロジェクトのバージョン
+    - **ProjectVersionSpec**: プロジェクトのバージョン
 
       次に例を示します。
 
@@ -296,13 +296,13 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
   - **Git**
 
-    - **GitSourceControl**:場所、 **GitSourceControl**スキーマ
+    - **GitSourceControl**: **GitSourceControl** スキーマの場所
 
     - **RepositoryUrl**: Team Foundation Server、プロジェクト コレクション、および Git リポジトリの URI
 
-    - **ProjectPath**:アプリのプロジェクト ファイル (.csproj または .vbproj) へのパス
+    - **ProjectPath**: アプリのプロジェクト ファイル (.csproj or .vbproj) へのパス
 
-    - **CommitId**:コミットの id
+    - **CommitId**: コミットの ID
 
       次に例を示します。
 
@@ -320,15 +320,15 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
    ビルド システムに関する情報 ( `"TeamBuild"` または `"MSBuild"`) と以下の必須プロパティ:
 
-  - **BuildLabel** (teambuild の場合)。ビルドの名前と番号。 このラベルは配置イベントの名前としても使用されます。 ビルド番号について詳しくは、「 [完了したビルドにわかりやすい名前を付けるためにビルド番号を使用](/azure/devops/pipelines/build/options?view=vsts)」をご覧ください。
+  - **BuildLabel** (TeamBuild の場合): ビルドの名前と番号。 このラベルは配置イベントの名前としても使用されます。 ビルド番号について詳しくは、「 [完了したビルドにわかりやすい名前を付けるためにビルド番号を使用](/azure/devops/pipelines/build/options?view=vsts)」をご覧ください。
 
-  - **SymbolPath** (推奨)。セミコロンで区切ったシンボル (PDB ファイル) の場所の Uri の一覧です。 これらの URI は、URL または UNC のいずれかです。 これにより、Visual Studio は対応するシンボルを容易に検索でき、デバッグに役立ちます。
+  - **SymbolPath** (推奨): セミコロンで区切ったシンボル (PDB ファイル) の場所に関する URI の一覧。 これらの URI は、URL または UNC のいずれかです。 これにより、Visual Studio は対応するシンボルを容易に検索でき、デバッグに役立ちます。
 
-  - **BuildReportUrl** (teambuild の場合)。TFS でのビルド レポートの場所
+  - **BuildReportUrl** (TeamBuild の場合): TFS でのビルド レポートの場所
 
-  - **BuildId** (teambuild の場合)。TFS でビルドの詳細の URI。 この URI は配置イベントの ID としても使用されます。 TeamBuild を使用していない場合は、この ID は一意である必要があります。
+  - **BuildId** (TeamBuild の場合): TFS でのビルドの詳細の URI。 この URI は配置イベントの ID としても使用されます。 TeamBuild を使用していない場合は、この ID は一意である必要があります。
 
-  - **BuiltSolution**:ソリューション ファイルへのパスを検索して、対応するソリューションを開く Visual Studio を使用します。 これは、 **SolutionPath** MsBuild プロパティの内容です。
+  - **BuiltSolution**: 対応するソリューションを検索して開くために Visual Studio が使用するソリューション ファイルへのパス。 これは、 **SolutionPath** MsBuild プロパティの内容です。
 
     次に例を示します。
 
@@ -379,7 +379,7 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
      ![ソース管理から開く&#45;移行](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a> Q:ワークスペースとは何ですか。
+####  <a name="WhatWorkspace"></a> Q: ワークスペースとは何ですか。
  **A:** [ワークスペースにはソースのコピーが格納](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) されるので、作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。
 
 ####  <a name="UntrustedSymbols"></a> Q: 次の信頼されていないシンボルに関するメッセージが表示されるのはなぜですか。

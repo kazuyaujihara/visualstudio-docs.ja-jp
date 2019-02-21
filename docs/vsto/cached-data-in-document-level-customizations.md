@@ -58,7 +58,7 @@ ms.locfileid: "54868275"
 |-|----------------|----------------------|  
 |Office アプリケーションには、これらを使用できますか。|次のアプリケーションのドキュメント レベルのカスタマイズ:<br /><br /> -Excel<br />ワード|次のアプリケーションのドキュメント レベルおよびアプリケーション レベルのソリューション:<br /><br /> -Excel<br />-PowerPoint<br />ワード|  
 |どのような種類のデータを格納することができますか。|特定の要件を満たすカスタマイズ アセンブリ内の任意のパブリック オブジェクト。 詳細については、次を参照してください。[データ キャッシュ](../vsto/caching-data.md)します。|任意の XML データ。|  
-|Microsoft Office アプリケーションを起動せず、データにアクセスすることができますか。|使用して、はい、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>クラスによって提供される、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。|内のクラスを使用して、[はい]、<xref:System.IO.Packaging>名前空間、または Open XML 形式の SDK を使用しています。|  
+|Microsoft Office アプリケーションを起動せず、データにアクセスすることができますか。|使用して、はい、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>クラスによって提供される、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。|内のクラスを使用して、はい、<xref:System.IO.Packaging>名前空間、または Open XML 形式の SDK を使用しています。|  
   
 ## <a name="see-also"></a>関連項目  
  [Office ソリューションにおけるデータ](../vsto/data-in-office-solutions.md)   

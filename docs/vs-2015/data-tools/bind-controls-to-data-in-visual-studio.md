@@ -24,7 +24,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3a4143777e51a03867e94f1d4ebdd9c8182a5401
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49291573"
@@ -42,12 +42,12 @@ ms.locfileid: "49291573"
   
 |データ ソース|ドラッグ アンド ドロップのサポート**Windows フォーム デザイナー**|ドラッグ アンド ドロップのサポート**WPF デザイナー**|ドラッグ アンド ドロップのサポート**Silverlight デザイナー**|  
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|  
-|データセット|はい|[はい]|いいえ|  
-|エンティティ データ モデル|[はい]<sup>1</sup>|はい|はい|  
+|データセット|はい|はい|いいえ|  
+|エンティティ データ モデル|はい<sup>1</sup>|はい|はい|  
 |LINQ to SQL クラス|×<sup>2</sup>|×<sup>2</sup>|×<sup>2</sup>|  
-|サービス (を含む[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]、WCF サービス、および web サービス)|はい|[はい]|はい|  
-|Object|はい|[はい]|はい|  
-|SharePoint|はい|[はい]|はい|  
+|サービス (を含む[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]、WCF サービス、および web サービス)|はい|はい|はい|  
+|Object|はい|はい|はい|  
+|SharePoint|はい|はい|はい|  
   
  1. 使用して、モデルの生成、 **Entity Data Model**ウィザード、デザイナーにそれらのオブジェクトをドラッグします。  
   

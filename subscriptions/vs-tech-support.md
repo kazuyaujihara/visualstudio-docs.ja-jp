@@ -92,10 +92,10 @@ Azure に関連する問題がある場合に Visual Studio サブスクリプ�
 
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 4 つのインシデント       |  [はい]|
-| Visual Studio Professional (Standard) | VL、Azure、リテール、一部の NFR<sup>2</sup>                                        | 2 つのインシデント                                                          |[はい]         |
-| Visual Studio Test Professional (標準)                         | VL、リテール                                              | 2 つのインシデント                                             |  [はい]         |
-| MSDN Platforms (標準)                                          | VL、リテール                                              | 2 つのインシデント                                               | [はい]         |
+| Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 4 つのインシデント       |  はい|
+| Visual Studio Professional (Standard) | VL、Azure、リテール、一部の NFR<sup>2</sup>                                        | 2 つのインシデント                                                          |はい         |
+| Visual Studio Test Professional (標準)                         | VL、リテール                                              | 2 つのインシデント                                             |  はい         |
+| MSDN Platforms (標準)                                          | VL、リテール                                              | 2 つのインシデント                                               | はい         |
 | Visual Studio Dev Essentials | N/A | 使用できません |N/A|
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
 

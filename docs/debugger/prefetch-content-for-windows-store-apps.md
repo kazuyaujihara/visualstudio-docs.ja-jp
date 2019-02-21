@@ -1,4 +1,4 @@
-﻿---
+---
 title: UWP アプリでプリフェッチされたコンテンツを使用したデバッグ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fe9d698e5732c0dfe4c9282e6cfac683e0d4d8b0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 693c63e7d1094974643d17c3899a7c7c93f9f5d0
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984224"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315795"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>プリフェッチされたコンテンツを使用して、Visual Studio で UWP アプリをデバッグします。
   
@@ -28,9 +28,9 @@ ms.locfileid: "54984224"
 ## <a name="to-force-preloading-of-contentprefetcher-specified-resources"></a>ContentPrefetcher で指定されるリソースのプリロードを強制するには  
  この手順では、ContentPrefetcher 機能が既に設定されていて、アプリ プロジェクトでプリロードするコンテンツ URI が指定されていると仮定しています。 指定されたリソースが新しいまたは変更されている場合にコンテンツのプリロードを強制するには、**Trigger Windows Store App Prefetch** コマンドを選択する前にアプリを開始および停止する必要があります。 まず、アプリを実行して、URI を登録します。 **Trigger Windows Store App Prefetch** コマンドによって、ContentPrefetcher がコンテンツをダウンロードし、キャッシュに追加するように強制されます。 アプリの後続の実行で、コンテンツがプリロードされたと見なすことができます。  
   
-1. アプリを開始して、アプリでプリフェッチ コンテンツ URI を登録します。 **[デバッグ]** メニューで、**[デバッグの開始]** をクリックします (キーボード ショートカット: F5 キー)。  
+1. アプリを開始して、アプリでプリフェッチ コンテンツ URI を登録します。 **[デバッグ]** メニューで、**[デバッグの開始]** を選択します (キーボード ショートカット: F5 キー)。  
   
-2. **デバッグ** メニューの 選択**デバッグの停止** (キーボード ショートカット。Shift キーを押しながら f5 キー)。  
+2. **[デバッグ]** メニューで、**[デバッグの停止]** を選択します (キーボード ショートカット: Shift + F5 キー)。  
   
 3. **[デバッグ]** メニューで、**[その他のデバッグ ターゲット]** をクリックし、**[Windows ストア アプリ プリフェッチのトリガー]** をクリックします。  
   
@@ -39,5 +39,5 @@ ms.locfileid: "54984224"
 > [!NOTE]
 >  指定された Web コンテンツを追加または変更するたびにこの手順を繰り返します。  
   
-## <a name="see-also"></a>関連項目
- [ブログの投稿:Visual Studio 2013 Update 2 で Windows ストア アプリのプリフェッチをトリガーします。](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+## <a name="see-also"></a>関連項目  
+ [ブログの投稿: プリフェッチ Windows ストア アプリ用 Visual Studio 2013 Update 2 をトリガーします。](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
