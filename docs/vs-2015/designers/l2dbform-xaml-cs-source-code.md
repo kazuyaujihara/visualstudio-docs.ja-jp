@@ -137,6 +137,6 @@ namespace LinqToXmlDataBinding {
 ### <a name="comments"></a>コメント  
  これらのハンドラーに関連する XAML ソースについては、「[L2DBForm.xaml ソース コード](../designers/l2dbform-xaml-source-code.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [チュートリアル: LinqToXmlDataBinding の例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml ソース コード](../designers/l2dbform-xaml-source-code.md)
