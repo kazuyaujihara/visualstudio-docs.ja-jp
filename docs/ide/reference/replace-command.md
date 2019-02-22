@@ -100,7 +100,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [テキストの検索と置換](../../ide/finding-and-replacing-text.md)
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)
