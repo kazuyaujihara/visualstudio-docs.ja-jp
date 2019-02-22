@@ -125,7 +125,7 @@ ms.locfileid: "55928856"
 |[プロセスの一覧]|&#124;|Debug.ListProcesses|
 |[ListThreads コマンド](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)
