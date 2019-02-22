@@ -56,7 +56,7 @@ Debug.Print text
 >Debug.Print varA
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Evaluate Statement コマンド](../../ide/reference/evaluate-statement-command.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
