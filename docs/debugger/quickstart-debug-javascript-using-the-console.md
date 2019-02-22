@@ -248,7 +248,7 @@ JavaScript コンソール ウィンドウを使用すると、1 回につき、
 
 `cd` コマンドを使用して実行コンテキストを切り替えることもできますが、別の実行コンテキストの名前を知っている必要があります。また、使用する参照がスコープ内になければなりません。 **[ターゲット]** リストを使用すると、別の実行コンテキストに簡単にアクセスできます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [Visual Studio でのアプリのデバッグ](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
 [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md)  
 [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)  
