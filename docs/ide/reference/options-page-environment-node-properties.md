@@ -157,7 +157,7 @@ ms.locfileid: "55955753"
 |ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (Source、Design、External) です。|
 |ViewSourceExternalProgram|Get/Set (String)|外部ソース ビューアーのパスです。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [オプション設定の制御](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [オプション ページにあるプロパティ項目名の確認](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
