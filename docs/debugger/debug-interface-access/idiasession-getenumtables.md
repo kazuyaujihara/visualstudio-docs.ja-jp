@@ -66,6 +66,6 @@ IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)  
 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
