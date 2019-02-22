@@ -90,5 +90,5 @@ ms.locfileid: "54767100"
   
     次の手順では、このテクスチャの MIP レベルを生成できます。 詳細については、「[方法: MIP レベルを作成および変更する](../designers/how-to-create-and-modify-mip-levels.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Image Editor](../designers/image-editor.md)
