@@ -20,6 +20,6 @@ ms.locfileid: "55942285"
 # <a name="startup-environment-options-dialog-box"></a>[スタートアップ] ([オプション] ダイアログ ボックス - [環境])
 このページを使用して、Visual Studio のスタート ページをカスタマイズするか、Visual Studio 起動時の別の既定のアクションを設定します。 詳細については、[スタート ページのカスタマイズ](../../ide/customizing-the-start-page-for-visual-studio.md)に関するページを参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)
