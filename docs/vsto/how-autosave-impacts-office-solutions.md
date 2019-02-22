@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2ca14146a6a0444859722bfded24faaa36dd9f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875629"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601383"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Office ソリューションの自動保存の影響
 
@@ -27,5 +27,4 @@ ms.locfileid: "54875629"
 > Windows デスクトップ AutoSave Word、Excel、および PowerPoint 2017 で導入され、は、office 365 のサブスクライバーで現在使用できます。 Office 2016 またはそれ以前の永続的ライセンスを購入した場合は、チームの機能へのアクセスが存在しません。 (Excel Online では、Excel for Android、ios、Excel および Excel Mobile、Windows ストアではこの機能をサポート、ただし。)
 
 ## <a name="see-also"></a>関連項目
-
-[Office ソリューションを開発します。](./developing-office-solutions.md)
+- [Office ソリューションの開発](./developing-office-solutions.md)
