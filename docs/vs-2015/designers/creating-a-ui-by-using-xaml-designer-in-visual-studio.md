@@ -137,5 +137,5 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
  各プロパティの値の右側には、 *プロパティ マーカー* がボックスのシンボルとして表示されます。 プロパティ マーカーの外観は、プロパティに適用されるデータ バインドやリソースの有無を示します。 たとえば、白色のボックス シンボルは既定値を示します。黒色のボックス シンボルは、通常、ローカル リソースが適用されていることを示します。オレンジ色のボックスは、通常、データ バインドが適用されていることを示します。 プロパティ マーカーをクリックすると、スタイルの定義に移動したり、データ バインディング ビルダーを開いたり、リソース ピッカーを開いたりできます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [XAML デザイナーで要素の操作](../designers/working-with-elements-in-xaml-designer.md)[を作成し、リソースの適用方法](../designers/how-to-create-and-apply-a-resource.md)[チュートリアル。XAML デザイナーでデータにバインドする](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
