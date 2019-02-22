@@ -423,6 +423,6 @@ ms.locfileid: "54769075"
   
          ネイティブ 64 ビットのビルドの場合は、64 ビットの MSBuild が指定されるように調整します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [デバッグ バージョンのアプリケーションを実行するテスト用コンピューターの準備](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [Command-Line Reference (コマンド ライン リファレンス)](../msbuild/msbuild-command-line-reference.md)

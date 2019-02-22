@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 89d08619ede0269adb8cbf1df70bb423bb436bca
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: a1c9de1c65c5f3f780e6ea4374fa7d96f436f514
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155384"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227762"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Node.js Tools for Visual Studio を使用して Vue.js アプリケーションを作成する
 
@@ -178,5 +178,5 @@ vue-cli 3.0 の原因がわからない問題のため、ビルド プロセス�
 ## <a name="see-also"></a>関連項目
 
 - [Vue の概要ガイド](https://vuejs.org/v2/guide)。
-- [Vue CLI プロジェクト](https://github.com/vuejs/vue-cli(。
+- [Vue CLI プロジェクト](https://github.com/vuejs/vue-cli)。
 - [webpack 構成ドキュメント](https://webpack.js.org/configuration/)。

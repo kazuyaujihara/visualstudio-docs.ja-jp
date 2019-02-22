@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 02/08/2019
+ms.date: 02/14/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: b9ecca40da855daf4f49619bb62498927dc9a296
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987419"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318395"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview の新機能
 
-**[Preview 2 リリース](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)の更新**
+**[Preview 3 リリース](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)の更新**
 
 >[!div class="button"]
 >[Preview をダウンロードする](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
@@ -39,7 +39,7 @@ Visual Studio が提供する機能の基本的な概要を次に示します。
 * **[継続的なイノベーション](#continuous-innovation)**。 インテリジェントなクラウドを利用したサポートによるコード スマート。
 
 > [!NOTE]
-> Visual Studio 2019 Preview の新機能の一覧については、[リリース ノート](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)をご覧ください。 2 番目のプレビューの新機能のまとめについては、「[Visual Studio 2019 Preview 2 is now available](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/)」(Visual Studio 2019 Preview 2 を利用できるようになりました) ブログ投稿をご覧ください。
+> Visual Studio 2019 Preview の新機能の一覧については、[リリース ノート](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)をご覧ください。
 
 ## <a name="personal-and-team-productivity"></a>個人およびチームの生産性
 
@@ -53,7 +53,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 この新しい新しいスタート ウィンドウには、コードの複製またはチェックアウト、プロジェクトまたはソリューションを開く、ローカル フォルダーを開く、または新しいプロジェクトを作成するためのオプションが表示されます。 これらのオプションを単純なダイアログに表示することで、Visual Studio を初めて使うユーザーも上級ユーザーもすばやくコードに到達することができます。
 
-詳しくは、「[Get to code:How we designed the new Visual Studio start window (コードを取得: 新しい Visual Studio 開始ウィンドウの設計方法)](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/)」のブログ投稿をご覧ください。
+詳しくは、「[Get to code:How we designed the new Visual Studio start window (コードを取得: 新しい Visual Studio 開始ウィンドウの設計方法)](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/)」のブログ投稿をご覧ください。
 
 ### <a name="better-search"></a>検索の向上
 
@@ -81,7 +81,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
    ![Visual Studio 2019 の新しいウォッチ ウィンドウと値の書式設定機能](media/search-watch-window.png)
 
-詳細については、「[Enhanced in Visual Studio 2019:Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/)」(Visual Studio 2019 での機能拡張: [ウォッチ]、[自動変数]、[ローカル] ウィンドウでオブジェクトとプロパティを検索する) ブログ投稿をご覧ください。
+詳細については、「[Enhanced in Visual Studio 2019:Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/)」(Visual Studio 2019 での機能拡張: [ウォッチ]、[自動変数]、[ローカル] ウィンドウでオブジェクトとプロパティを検索する) ブログ投稿をご覧ください。
 
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
@@ -89,9 +89,9 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 また、Visual Studio 2019 Preview では、このサービスは既定でインストールされます。
 
-   ![Visual Studio 2019 の Live Share コラボレーション機能を示すアニメーション GIF ファイル](media/live-share-collaboration.gif)
+![Visual Studio 2019 の Live Share コラボレーション機能を示すアニメーション GIF ファイル](media/live-share-collaboration.gif)
 
-詳しくは、「[Visual Studio Live Share for real-time code reviews and interactive education (Visual Studio Live Share のリアルタイム コード レビューと対話型の教育)](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/)」のブログ投稿をご覧ください。
+詳しくは、「[Visual Studio Live Share for real-time code reviews and interactive education (Visual Studio Live Share のリアルタイム コード レビューと対話型の教育)](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/)」のブログ投稿をご覧ください。
 
 ## <a name="modern-development-support"></a>最新の開発サポート
 
@@ -122,7 +122,7 @@ Visual Studio 2019 Preview のリリースにより、Visual Studio を Per-moni
 
    ![Visual Studio 2019 の Per-monitor aware (PMA) レンダリング](media/per-monitor-aware-dpi-scaling.png)
 
-詳細については、[Visual Studio 2019 を使ったマルチモニター エクスペリエンスの向上](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/)に関するブログ記事をご覧ください。
+詳細については、[Visual Studio 2019 を使ったマルチモニター エクスペリエンスの向上](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/)に関するブログ記事をご覧ください。
 
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
@@ -141,7 +141,7 @@ Visual Studio 向けの IntelliCode を初めてプレビューしたときに�
 
 C# を使用している場合は、独自のコードでカスタム モデルをトレーニングする機能も追加されました。
 
-最新の更新プログラムについて詳しくは、「[Visual Studio IntelliCode supports more languages and learns from your code (Visual Studio IntelliCode はより多くの言語をサポートし、コードから学習する)](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/)」のブログ投稿をご覧ください。 また、拡張機能の詳細とダウンロード方法については、Microsoft DevLabs で「[Visual Studio IntelliCode - Preview (Visual Studio IntelliCode - プレビュー)](https://go.microsoft.com/fwlink/?linkid=872707)」をご覧ください。
+最新の更新プログラムについて詳しくは、「[Visual Studio IntelliCode supports more languages and learns from your code (Visual Studio IntelliCode はより多くの言語をサポートし、コードから学習する)](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/)」のブログ投稿をご覧ください。 また、拡張機能の詳細とダウンロード方法については、Microsoft DevLabs で「[Visual Studio IntelliCode - Preview (Visual Studio IntelliCode - プレビュー)](https://go.microsoft.com/fwlink/?linkid=872707)」をご覧ください。
 
 ## <a name="give-us-feedback"></a>フィードバックの送信
 

@@ -19,8 +19,7 @@ ms.locfileid: "55940765"
 ---
 # <a name="state-activity-designer"></a>State アクティビティ デザイナー
 
-
-  <xref:System.Activities.Statements.State> はステート マシンの状態を表します。
+<xref:System.Activities.Statements.State> はステート マシンの状態を表します。
 
 ## <a name="using-the-state-activity-designer"></a>State アクティビティ デザイナーの使用
 

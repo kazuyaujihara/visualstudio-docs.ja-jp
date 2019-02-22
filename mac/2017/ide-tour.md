@@ -6,20 +6,34 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 3bfc0b9f6d7ba65b2b2023d9641992a27aa11ed8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4f3c868edb19cc45e25d73a11e7a65ead37c0b11
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917001"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316731"
 ---
-# <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac ツアー
+# <a name="visual-studio-2017-for-mac-preview-tour"></a>Visual Studio 2017 for Mac プレビュー ツアー
 
-Visual Studio for Mac は、Xamarin のモバイルを中心とした IDE である Xamarin Studio を、Mac 上のモバイル優先、クラウド優先の開発環境へと進化させました。 この開発者向けツールから .NET の機能を使用して、対象ユーザーに必要なすべてのプラットフォーム用アプリケーションを作成できます。
+> [!NOTE]
+> Visual Studio 2019 for Mac がプレビューとして[リリース](installation.md)され、テストできるようになりました。
 
-Visual Studio for Mac のユーザー エクスペリエンス (UX) は Windows 版と似ていますが、ネイティブ macOS の操作感もあります。 Windows で Visual Studio を使用したことがあれば、使い慣れた方法でアプリの作成、起動、開発を行うことができます。 また、Visual Studio for Mac は、Windows 版を強力な IDE にしている強力なツールの多くを採用しています。 Roslyn コンパイラ プラットフォームは、リファクタリングと IntelliSense に使用されます。 そのプロジェクト システムとビルド エンジンは MSBuild を使用し、ソース エディターは TextMate バンドルをサポートしています。 Xamarin アプリと .NET Core アプリに同じデバッグ エンジンを使用し、Xamarin.iOS と Xamarin.Android に同じデザイナーを使用しています。
+Visual Studio for Mac は、コードを編集、デバッグ、ビルドし、その後にアプリを発行できる Mac 上の .NET _統合開発環境_です。 Visual Studio for Mac には、期待されている標準エディターおよびデバッガーなどの機能に加えて、コンパイラ、コード補完ツール、グラフィック デザイナー、ソース管理など、ソフトウェア開発プロセスを容易にする機能があります。
 
-この記事では、Visual Studio for Mac の多様なセクションについて説明し、クロスプラットフォーム アプリケーションを作成する場合に強力なツールになる機能の一部を紹介します。
+Visual Studio for Mac は、`.csproj`、`.fsproj`、または `.sln` など、対応する Windows 版と同じ種類のファイルを多くサポートしています。また、EditorConfig などの機能もサポートしており、これはご自分に最適な IDE を使用できることを意味しています。
+Windows で Visual Studio を使用したことがあれば、使い慣れた方法でアプリの作成、起動、開発を行うことができます。 また、Visual Studio for Mac は、Windows 版を強力な IDE にしている強力なツールの多くを採用しています。 Roslyn コンパイラ プラットフォームは、リファクタリングと IntelliSense に使用されます。 そのプロジェクト システムとビルド エンジンは MSBuild を使用し、ソース エディターは TextMate バンドルをサポートしています。 Xamarin アプリと .NET Core アプリに同じデバッグ エンジンを使用し、Xamarin.iOS と Xamarin.Android に同じデザイナーを使用しています。
+
+## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Visual Studio for Mac で実行できること
+
+Visual Studio for Mac では、次の種類での開発をサポートしています。
+
+- C#、F# を使用した ASP.NET Core Web アプリケーション、および Razor ページ、JavaScript および TypeScript のサポート
+- C# または F# を使用した .NET Core コンソール アプリケーション
+- C# を使用したクロスプラットフォーム Unity ゲームおよびアプリケーション
+- C# または F# および XAML を使用した Xamarin での Android、iOS、tvOS および watchOS アプリケーション
+- C# または F# での Cocoa デスクトップ アプリ
+
+この記事では、Visual Studio for Mac の多様なセクションについて説明し、これらのアプリケーションを作成する場合に強力なツールになる機能の一部を紹介します。
 
 ## <a name="ide-tour"></a>IDE ツアー
 

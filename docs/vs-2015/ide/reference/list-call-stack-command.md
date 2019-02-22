@@ -100,7 +100,7 @@ kb 2
 >Debug.CallStack /Count:4 /ShowTypes:yes  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [逆アセンブリの一覧表示コマンド](../../ide/reference/list-disassembly-command.md)   
  [スレッドの一覧表示コマンド](../../ide/reference/list-threads-command.md)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
