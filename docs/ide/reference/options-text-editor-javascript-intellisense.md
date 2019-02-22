@@ -73,6 +73,6 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
 
 
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [JavaScript IntelliSense](../../ide/javascript-intellisense.md)
