@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 254a7ce0409ffbf254f0ec7d10ad3fa543775d61
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870036"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631966"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>共同編集と、アドインを理解します。
 
@@ -26,4 +26,4 @@ ms.locfileid: "54870036"
 メモ:For Windows Desktop の Excel 共同編集して、2017年で導入されたは、office 365 のサブスクライバーで現在使用できます。 Office 2016 以前の永続的ライセンスを購入したユーザーは現在ありません、チームでの機能へのアクセス。 (Excel Online では、Excel for Android、ios、Excel および Excel Mobile、Windows ストアでもサポート共同で行う)。
 
 ## <a name="see-also"></a>関連項目
-[Excel ソリューション](./excel-solutions.md)
+- [Excel ソリューション](./excel-solutions.md)
