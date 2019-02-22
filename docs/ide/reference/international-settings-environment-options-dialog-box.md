@@ -35,7 +35,7 @@ ms.locfileid: "55951710"
 > [!CAUTION]
 > 複数の言語がインストールされているシステムでは、Visual C++ ビルド ツール (cl.exe、link.exe、nmake.exe、bscmake.exe、および関連ファイル) はこの設定による影響を受けません。 これらのツールでは、最後にインストールされた言語のバージョンを使用します。 Visual C++ ビルド ツールはサテライト DLL モデルを使用しないため、以前にインストールされた言語のビルド ツールは上書きされます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [言語パックのインストール](../../install/install-visual-studio.md#step-6---install-language-packs-optional)
 - [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)
