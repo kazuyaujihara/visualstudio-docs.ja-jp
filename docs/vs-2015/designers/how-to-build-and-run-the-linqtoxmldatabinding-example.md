@@ -76,7 +76,7 @@ ms.locfileid: "54786369"
   
 2.  キーボードを使用して値を編集します。 いずれかの <xref:System.Windows.Controls.TextBox> コントロールがフォーカスを失った時点で、XML ソースと書籍一覧の両方に変更が自動的に反映されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [LINQ to XML を使用した WPF のデータ バインディングの例](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
  [チュートリアル: LinqToXmlDataBinding の例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [Visual Studio でのアプリケーション開発](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)
