@@ -200,6 +200,6 @@ ms.locfileid: "55933965"
 
  有効にすると、テキスト エディターに '(' を入力すれば選んだテキストがかっこで囲まれます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [言語固有のエディター オプションの設定](../../ide/reference/setting-language-specific-editor-options.md)
