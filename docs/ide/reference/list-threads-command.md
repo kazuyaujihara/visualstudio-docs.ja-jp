@@ -44,7 +44,7 @@ Debug.ListThreads [index]
 >Debug.ListThreads
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ListCallStack コマンド](../../ide/reference/list-call-stack-command.md)
 - [ListDisassembly コマンド](../../ide/reference/list-disassembly-command.md)
