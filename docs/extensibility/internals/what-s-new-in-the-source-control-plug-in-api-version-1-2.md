@@ -11,31 +11,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80bfefacf73e1ed7209ee7b40eec4c180e16904d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0ab98719f13ed787947a5e1d8a06d2080718eb0e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949702"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614826"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>どのような&#39;ソース新プラグイン API バージョン 1.2 の制御
-このセクションには、ソース管理プラグイン API バージョン 1.2 での高度なソース コード管理機能が強調表示されます。 バージョン 1.2 の新機能を次に示します。  
-  
-## <a name="changes"></a>変更  
- [~SAK ファイルの削除](../../extensibility/internals/elimination-of-tilde-sak-files.md)  
- ソース管理プラグイン API 1.2 が一時ファイルをやり取りする方法について説明します。  
-  
- [複数のプロジェクト接続全体への設定の適用](../../extensibility/internals/application-of-settings-across-multiple-project-connections.md)  
- ソース管理プラグインがバッチ操作を使用して、複数のプロジェクトまたは複数の接続コンテキスト全体にわたって、同じソース管理の操作を実行する方法を示しています。  
-  
- [ソリューションの親コンテナー フォルダーの作成](../../extensibility/internals/creating-parent-container-folders-for-solutions.md)  
- ソース管理プラグイン API バージョン 1.2 が、ソリューション内のすべての Web プロジェクトの 1 つのルート ソース コントロール先を指定のユーザーを使用する方法について説明します。  
-  
- [ソース管理ストアとローカルのプロジェクト フォルダーとの比較 (オプション)](../../extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store.md)  
- ソース管理プラグイン API 1.2 がファイルのバージョンを比較する方法について説明します。  
-  
- [.Proj および .Sln ファイルからのソース管理情報の削除](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md)  
- ソース管理プラグイン API バージョン 1.2 がプロジェクトとソリューションに関する情報を格納する方法について説明します。  
-  
-## <a name="see-also"></a>関連項目  
- [はじめに](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
+このセクションには、ソース管理プラグイン API バージョン 1.2 での高度なソース コード管理機能が強調表示されます。 バージョン 1.2 の新機能を次に示します。
+
+## <a name="changes"></a>変更内容
+- [排除 ~ SAK ファイル](../../extensibility/internals/elimination-of-tilde-sak-files.md)ソース管理プラグイン API 1.2 が一時ファイルをやり取りする方法について説明します。
+
+- [複数プロジェクト接続の設定間でのアプリケーション](../../extensibility/internals/application-of-settings-across-multiple-project-connections.md)ソース管理プラグインが複数のプロジェクトまたは複数の接続コンテキスト全体にわたって、同じソース管理の操作を実行するバッチ操作を使用する方法を示します。
+
+- [ソリューションの親コンテナーのフォルダーを作成する](../../extensibility/internals/creating-parent-container-folders-for-solutions.md)ソース管理プラグイン API バージョン 1.2 が、ソリューション内のすべての Web プロジェクトの 1 つのルート ソース コントロール先を指定のユーザーを使用する方法について説明します。
+
+- [省略可能な比較のローカル プロジェクト フォルダーにソース管理ストア](../../extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store.md)ソース管理プラグイン API 1.2 がファイルのバージョンを比較する方法について説明します。
+
+- [ソース管理情報の削除。Proj とします。Sln ファイル](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md)ソース管理プラグイン API バージョン 1.2 がプロジェクトとソリューションに関する情報を格納する方法について説明します。
+
+## <a name="see-also"></a>関連項目
+- [はじめに](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
