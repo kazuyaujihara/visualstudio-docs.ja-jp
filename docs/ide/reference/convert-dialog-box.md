@@ -33,6 +33,6 @@ ms.locfileid: "55927595"
 
 2.  アプリケーションに適したツールを選択します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio プロジェクトの移植、移行、およびアップグレード](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)
