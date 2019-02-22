@@ -88,7 +88,7 @@ ms.locfileid: "56335131"
 
 -   `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">` など、XML 名前空間。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [プロジェクト内の参照の管理](../../ide/managing-references-in-a-project.md)
 - [方法: インポートした名前空間を追加または削除する (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
