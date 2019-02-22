@@ -73,7 +73,7 @@ enum NameSearchOptions {
 ## <a name="requirements"></a>要件
 ヘッダー: dia2.h
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
 [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
 [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
