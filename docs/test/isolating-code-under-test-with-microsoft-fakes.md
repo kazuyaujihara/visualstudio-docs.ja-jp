@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 512c62c589dcfc4276e35247d268a035b03865a9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d3ec88a8abc0a6fcac47043a1b27d27f5b3e6f4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937722"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316458"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes を使用したテストでコードを分離する
 
@@ -35,7 +35,8 @@ Fakes には 2 種類のフレーバーがあります。
 -   .NET Framework プロジェクト
 
 > [!NOTE]
-> .NET Standard プロジェクトはサポートされていません。
+> - .NET Standard プロジェクトはサポートされていません。
+> - Microsoft Fakes を使用するテストでは、Visual Studio でのプロファイリングは使用できません。
 
 ## <a name="choose-between-stub-and-shim-types"></a>スタブ型と shim 型から選択する
 通常、Visual Studio プロジェクトはコンポーネントと見なされますが、それは、これらのクラスを同時に開発および更新するためです。 プロジェクトがソリューション内の別のプロジェクトに対して実行する呼び出し、またはプロジェクトが参照する別のアセンブリに対して実行する呼び出しにスタブと shim を使用することを検討します。

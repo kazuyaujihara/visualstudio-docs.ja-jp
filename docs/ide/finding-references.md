@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 777e8519077cebc162b1bad575a6ffcf976c4db4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908882"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335273"
 ---
 # <a name="find-references-in-your-code"></a>コード内の参照の検索
 
@@ -46,6 +46,11 @@ ms.locfileid: "55908882"
 既定では、参照はまずプロジェクトによってグループ化され、次に定義によってグループ化されます。 ただし、ツール バーの **[グループ化]** ドロップダウン リスト ボックスで設定を変更すると、このグループ化の順序を変更できます。 たとえば、既定の設定である **[プロジェクト、その次に定義]** から **[定義、その次にプロジェクト]** に、またはその他の設定に変更できます。
 
 **[定義]** と **[プロジェクト]** の 2 つが既定のグループ化として使用されますが、選択した項目の右クリック (コンテキスト) メニューで **[グループ化]** コマンドを選択して、その他のグループ化を追加できます。 ソリューションのファイルとパスが多い場合は、その他のグループ化を追加すると便利です。
+
+## <a name="filter-by-reference-type-in-net"></a>.NET での参照型でのフィルター処理
+C# または Visual Basic の [参照の検索] ウィンドウには、検索された参照の種類が一覧表示される [種類] 列があります。 この列は、列ヘッダーにマウスと置くと表示されるフィルター アイコンをクリックすることにより、参照の種類でフィルター処理するために使用できます。 参照は、[読み取り]、[書き込み]、[参照]、および [NameOnly]\(名前のみ\) でフィルター処理できます。
+
+![[参照の検索] ウィンドウの [種類] 列 ](../ide/media/vside_findallreferencesKind.png)
 
 ## <a name="see-also"></a>関連項目
 

@@ -51,7 +51,7 @@ ms.locfileid: "54758842"
   
 4.  **[表示]** の **[シングル クリックでの URL ナビゲーションを有効にする]** をオンにします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [エディターのカスタマイズ](../../ide/customizing-the-editor.md)   
  [[テキスト エディター] ([オプション] ダイアログ ボックス)](../../ide/reference/text-editor-options-dialog-box.md)   
  [コードの作成](../../ide/writing-code-in-the-code-and-text-editor.md)

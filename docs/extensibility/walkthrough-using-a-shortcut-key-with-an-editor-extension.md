@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46564673417f93d139f554dbe67d1970ec7c5519
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d484ae5bffad903258b7f6f5d4561a23dcba1f5d
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988572"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450491"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でショートカット キーを使用します。
 エディター拡張機能で、ショートカット キーに応答することができます。 次のチュートリアルでは、テキスト ビューにショートカット キーを使用してビューの表示要素を追加する方法を示します。 このチュートリアルは、ビューポート adornment エディター テンプレートに基づいており、使用して、表示要素を追加することができます、+ 文字。  
@@ -47,12 +47,12 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 
 KeyBindingTestTextViewCreationListener.cs クラス ファイルでから AdornmentLayer の名前を変更する**KeyBindingTest**に**PurpleCornerBox**:
   
-    ```csharp  
-    [Export(typeof(AdornmentLayerDefinition))]  
-    [Name("PurpleCornerBox")]  
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
-    public AdornmentLayerDefinition editorAdornmentLayer;  
-    ```  
+```csharp  
+[Export(typeof(AdornmentLayerDefinition))]  
+[Name("PurpleCornerBox")]  
+[Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
+public AdornmentLayerDefinition editorAdornmentLayer;  
+```  
 
 ## <a name="handle-typechar-command"></a>TYPECHAR コマンドを処理します。
 Visual Studio 2017 バージョン 15.6 のエディターの拡張機能でのコマンドを処理する唯一の方法を実装する前に、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>ベースのコマンドのフィルター。 Visual Studio 2017 バージョン 15.6 では、エディター コマンド ハンドラーに基づいた最新の簡略化されたアプローチが導入されました。 次の 2 つのセクションでは、旧バージョンと最新のアプローチの両方を使用してコマンドを処理する方法を示します。

@@ -106,7 +106,7 @@ ms.locfileid: "54765013"
   
 -   クラス デザイナーでは、void 型または void 型から派生した型を表示できません。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [クラスと型のデザインおよび表示](../ide/designing-and-viewing-classes-and-types.md)   
  [クラスと他の型の使用 (クラス デザイナー)](../ide/working-with-classes-and-other-types-class-designer.md)   
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)   

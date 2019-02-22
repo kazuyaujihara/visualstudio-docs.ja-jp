@@ -159,5 +159,5 @@ ms.locfileid: "54774861"
   
  特定のアプリケーション状態が変化すると (アプリケーション スタートアップやシャットダウンなどで)、<xref:System.Windows.Application> オブジェクトでイベントが発生します。 このクラスで公開されるイベントの完全な一覧については、「<xref:System.Windows.Application>」を参照してください。 これらのイベントは、`Application` 部分クラスのユーザー コード セクションで処理されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
 [アプリケーション プロパティの管理](../../ide/application-properties.md) [Office ソリューションのコードの記述](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

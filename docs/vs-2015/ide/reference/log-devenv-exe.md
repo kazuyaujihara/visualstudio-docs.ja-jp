@@ -41,5 +41,5 @@ Devenv /log Path\NameOfLogFile
   
  ログは、/log スイッチで呼び出した Visual Studio のすべてのインスタンスを対象として記録されます。 スイッチなしで呼び出した Visual Studio のインスタンスについてはログ記録の対象外です。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

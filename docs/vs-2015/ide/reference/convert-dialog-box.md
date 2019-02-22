@@ -40,6 +40,6 @@ ms.locfileid: "54758568"
   
 2.  アプリケーションに適したツールを選択します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [NOTINBUILD - 方法: プロジェクトを Visual Basic 6.0 からアップグレードする](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
  [Visual Studio プロジェクトの移植、移行、およびアップグレード](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

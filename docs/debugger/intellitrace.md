@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 408864d2f105762cbaede528f8794595a34b3b29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a4ad4108e798c493ee17bf37420440acdf607b53
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973331"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317056"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise の IntelliTrace (C#、Visual Basic、C++)
 
@@ -39,11 +39,11 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
 
 IntelliTrace は Visual Studio Enterprise Edition で使用できます (Professional Edition または Community Edition の場合は使用できません)。
 
-## <a name="what-do-you-want-to-do"></a>実行する操作
+## <a name="what-do-you-want-to-do"></a>実行する作業を選択してください。
 
 |||
 |-|-|
-|**IntelliTrace を使用してアプリケーションをデバッグする:** <br /><br /> - 過去のイベントを表示する。<br />- 過去のイベントの呼び出し情報を表示する。<br />- IntelliTrace セッションを保存する。<br />- IntelliTrace により収集されたデータを制御する。|- [IntelliTrace を使用して前のアプリ状態を調べる](../debugger/view-historical-application-state.md)<br />- [チュートリアル: IntelliTrace](../debugger/walkthrough-using-intellitrace.md) の使用<br />- [IntelliTrace の機能](../debugger/intellitrace-features.md)<br />- [デバッグ履歴](../debugger/historical-debugging.md)|
+|**IntelliTrace を使用してアプリケーションをデバッグする:** <br /><br /> - 過去のイベントを表示する。<br />- 過去のイベントの呼び出し情報を表示する。<br />- IntelliTrace セッションを保存する。<br />- IntelliTrace により収集されたデータを制御する。|- [IntelliTrace を使用して前のアプリ状態を調べる](../debugger/view-historical-application-state.md)<br />- [チュートリアル: IntelliTrace の使用](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace の機能](../debugger/intellitrace-features.md)<br />- [デバッグ履歴](../debugger/historical-debugging.md)|
 |**テスト マネージャーのテスト セッション中に IntelliTrace データを収集する**|- [手動テストでの複数の診断データの収集](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**展開されたアプリケーションから IntelliTrace データを収集する**|- [IntelliTrace スタンドアロン コレクターを使用する](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**IntelliTrace ログ ファイル (.iTrace ファイル) からデバッグを開始する**|- [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)|
@@ -52,7 +52,7 @@ IntelliTrace は Visual Studio Enterprise Edition で使用できます (Profess
 
 | | |
 |---------------------| - |
-| **完全なサポート** | - .NET Framework 2.0 以降のバージョンを使用する Visual Basic および Visual c# のアプリケーション。<br/>ASP.NET、Microsoft Azure、Windows フォーム、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013、および 64 ビットのアプリを含むほとんどのアプリケーションをデバッグできます。<br/>IntelliTrace を使用した SharePoint アプリケーションをデバッグするを参照してください。[チュートリアル。IntelliTrace を使用して SharePoint アプリケーションのデバッグ](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)します。<br/> IntelliTrace を使用した Microsoft Azure アプリをデバッグするを参照してください。 [IntelliTrace および Visual Studio で発行されたクラウド サービスのデバッグ](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)します。 |
+| **完全なサポート** | - .NET Framework 2.0 以降のバージョンを使用する Visual Basic および Visual c# のアプリケーション。<br/>ASP.NET、Microsoft Azure、Windows フォーム、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013、および 64 ビットのアプリを含むほとんどのアプリケーションをデバッグできます。<br/>IntelliTrace を使用した SharePoint アプリケーションをデバッグするを参照してください。[チュートリアル: IntelliTrace を使用した、SharePoint アプリケーションのデバッグ](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)します。<br/> IntelliTrace を使用した Microsoft Azure アプリをデバッグするを参照してください。 [IntelliTrace および Visual Studio で発行されたクラウド サービスのデバッグ](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)します。 |
 | **限定されたサポート** | IntelliTrace ステップ バックを使用してスナップショットを表示する Windows のサポートを対象とする C++ アプリ。 デバッガーおよび例外のイベントのみがサポートされています。<br />-.NET core と ASP.NET Core アプリでサポートされて特定のイベントのみ (MVC コント ローラー、ADO.NET、HTTPClient イベント) ローカル デバッグします。 スタンドアロン コレクターは、.NET Core または ASP.NET Core アプリはサポートされていません。<br />- 試用前提の F# アプリ<br />イベントについてのみサポートされている UWP アプリ |
 | **サポートされていません** | -その他の言語とスクリプト<br />- Windows サービス、Silverlight、Xbox、[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] のアプリ |
 
@@ -141,7 +141,7 @@ IntelliTrace は、これらの時点で特定のイベントやデータを記�
 
     - [保存された IntelliTrace データを使用する](../debugger/using-saved-intellitrace-data.md)
 
-    - [チュートリアル: IntelliTrace を使用して SharePoint アプリケーションのデバッグ](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
+    - [チュートリアル: IntelliTrace を使用した SharePoint アプリケーションのデバッグ](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
 
 **スナップショットをキャプチャします。**
 
@@ -186,7 +186,7 @@ IntelliTrace で収集される呼び出し情報の量を制御するには、�
 
 ### <a name="blogs"></a>ブログ
 
-[Microsoft の DevOps](https://blogs.msdn.microsoft.com/devops/)
+[Microsoft の DevOps](https://devblogs.microsoft.com/devops/)
 
 ### <a name="forums"></a>フォーラム
 

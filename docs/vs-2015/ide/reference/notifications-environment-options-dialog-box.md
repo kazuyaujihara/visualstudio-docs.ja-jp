@@ -24,5 +24,5 @@ ms.locfileid: "54767316"
   
 以前に [通知] ダイアログで無視することを選択した通知を無視しないようにするには、このオプションを使用します。 詳しくは、「[通知](../../ide/visual-studio-notifications.md)」をご覧ください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)

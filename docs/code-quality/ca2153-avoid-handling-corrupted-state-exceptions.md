@@ -1,49 +1,49 @@
 ---
-title: CA2153:破損状態例外の処理を回避する
-ms.date: 11/04/2016
+title: Ca 2153 コード分析ルールは、破損状態例外を
+ms.date: 02/19/2019
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3e8253936c406a3f84304337b818e0f28f1036f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4b75e45b8a199265eaefe3a2b3c37ed62039e0eb
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950904"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450270"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153:破損状態例外の処理を回避する
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153:破損状態例外の処理を回避します。
 
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
-|カテゴリ|Microsoft.Security|
+|Category|Microsoft.Security|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
 
-[破損状態例外 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) は、メモリの破損がプロセス内に存在していることを示します。 プロセスをクラッシュさせるのではなくこれらの例外をキャッチすることは、攻撃者が破損したメモリ領域にセキュリティ上の弱点を見出すことができた場合に、セキュリティ上の脆弱性となる可能性があります。
+[破損状態例外 (Cse)](https://msdn.microsoft.com/magazine/dd419661.aspx)そのメモリ破損がプロセス内に存在します。 プロセスをクラッシュさせるのではなくこれらの例外をキャッチすることは、攻撃者が破損したメモリ領域にセキュリティ上の弱点を見出すことができた場合に、セキュリティ上の脆弱性となる可能性があります。
 
 ## <a name="rule-description"></a>規則の説明
 
-CSE は、プロセスが破損状態にあり、システムによってキャッチされていないことを示します。 破損した状態のシナリオでは、適切な `HandleProcessCorruptedStateExceptions` 属性でメソッドをマークした場合に、汎用ハンドラーのみがこの例外をキャッチします。 既定では、 [共通言語ランタイム (CLR)](/dotnet/standard/clr) は、CSE の catch ハンドラーを呼び出しません。
+CSE は、プロセスが破損状態にあり、システムによってキャッチされていないことを示します。 破損した状態では、汎用ハンドラーのみが例外をキャッチでメソッドをマークする場合、<xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName>属性。 既定で、[共通言語ランタイム (CLR)](/dotnet/standard/clr) Cse の catch ハンドラーは呼び出されません。
 
-コードをログに記録しても攻撃者はメモリ破損のバグを悪用できるため、このような例外をキャッチせずにプロセスをクラッシュさせるほうが安全な方法です。
+最も安全なオプションでは、これらの種類の例外をキャッチせず、プロセスがクラッシュするを許可します。 コードのログ記録もメモリ破損のバグを悪用する攻撃者を許可できます。
 
-catch(exception) や catch(no exception specification) などすべての例外をキャッチする汎用ハンドラーを使用して CSE をキャッチすると、この警告がトリガーされます。
+たとえば、すべての例外をキャッチする汎用ハンドラーで Cse をキャッチするときに、この警告がトリガー`catch (System.Exception e)`または`catch`ありません例外パラメーターを使用します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
 この警告を解決するには、次のいずれかの操作を行います。
 
-- `HandleProcessCorruptedStateExceptions` 属性を削除します。 これにより、CSE を catch ハンドラーに渡さない既定の実行時の動作に戻ります。
+- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> 属性を削除します。 これにより、CSE を catch ハンドラーに渡さない既定の実行時の動作に戻ります。
 
-- 特定の例外の種類をキャッチするハンドラーではなく汎用 catch ハンドラーを削除します。 Cse と仮定すると、ハンドラーのコードが安全に処理して (まれな) 場合があります。
+- 特定の例外の種類をキャッチするハンドラーではなく汎用 catch ハンドラーを削除します。 Cse は、ハンドラーのコードに処理できる安全な場合 (まれな) 場合があります。
 
-- Catch ハンドラーに、これにより、例外が呼び出し元に渡され、実行中のプロセスを終了、CSE を再スローします。
+- Catch ハンドラーに、呼び出し元に例外を渡し、実行中のプロセスを終了すると、する必要があります CSE を再スローします。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 
@@ -57,7 +57,7 @@ catch(exception) や catch(no exception specification) などすべての例外�
 
 ```csharp
 [HandleProcessCorruptedStateExceptions]
-// Method to handle and log CSE exceptions.
+// Method that handles CSE exceptions.
 void TestMethod1()
 {
     try
@@ -66,14 +66,14 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error.
+        // Handle exception.
     }
 }
 ```
 
-### <a name="solution-1"></a>解決方法 1
+### <a name="solution-1---remove-the-attribute"></a>解決策 1 - 属性を削除します。
 
-HandleProcessCorruptedExceptions 属性を削除することにより、例外が処理されないようにします。
+削除、<xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>属性により、破損状態例外は、メソッドによって処理されません。
 
 ```csharp
 void TestMethod1()
@@ -82,18 +82,14 @@ void TestMethod1()
     {
         FileStream fileStream = new FileStream("name", FileMode.Create);
     }
-    catch (IOException e)
+    catch (Exception e)
     {
-        // Handle error.
-    }
-    catch (UnauthorizedAccessException e)
-    {
-        // Handle error.
+        // Handle exception.
     }
 }
 ```
 
-### <a name="solution-2"></a>解決方法 2
+### <a name="solution-2---catch-specific-exceptions"></a>解決策 2 - 特定の例外をキャッチします。
 
 汎用 catch ハンドラーを削除し、特定の例外の種類のみをキャッチします。
 
@@ -106,20 +102,21 @@ void TestMethod1()
     }
     catch (IOException e)
     {
-        // Handle error.
+        // Handle IOException.
     }
     catch (UnauthorizedAccessException e)
     {
-        // Handle error.
+        // Handle UnauthorizedAccessException.
     }
 }
 ```
 
-### <a name="solution-3"></a>解決方法 3
+### <a name="solution-3---rethrow"></a>解決策 3 - を再スローします。
 
 例外を再スローします。
 
 ```csharp
+[HandleProcessCorruptedStateExceptions]
 void TestMethod1()
 {
     try
@@ -128,7 +125,7 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error.
+        // Rethrow the exception.
         throw;
     }
 }

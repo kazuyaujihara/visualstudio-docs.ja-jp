@@ -33,5 +33,5 @@ Visual Studio には、さまざまなイベントを警告する通知システ
 
    ![Visual Studio の通知アイコン](../ide/media/vs2015-notificationicon.png "vs2015_NotificationIcon")
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio IDE](../ide/visual-studio-ide.md)

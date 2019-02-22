@@ -1,4 +1,4 @@
----
+﻿---
 title: 設計は新機能
 ms.date: 11/04/2016
 ms.topic: conceptual

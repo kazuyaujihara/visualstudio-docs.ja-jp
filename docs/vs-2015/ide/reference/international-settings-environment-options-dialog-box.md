@@ -41,5 +41,5 @@ ms.locfileid: "54754945"
 > [!CAUTION]
 >  複数の言語がインストールされているシステムでは、Visual C++ ビルド ツール (cl.exe、link.exe、nmake.exe、bscmake.exe、および関連ファイル) はこの設定による影響を受けません。 Visual C++ ビルド ツールはサテライト DLL モデルを使用しないため、これらのツールは最後にインストールされた言語のバージョンを使用し、以前にインストールされた言語のツールは上書きされます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)

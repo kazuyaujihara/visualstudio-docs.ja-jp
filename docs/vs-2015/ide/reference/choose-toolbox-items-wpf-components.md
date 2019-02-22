@@ -75,7 +75,7 @@ ms.locfileid: "54835027"
   
   コントロールの名前空間とアセンブリをマッピングすることにより、XAML ビューでコントロールを直接参照できます。 詳しくは、「[方法 : 名前空間を XAML にインポートする](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)」をご覧ください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [[ツールボックス アイテムの選択] ダイアログ ボックス (Visual Studio)](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
  [ツールボックス](../../ide/reference/toolbox.md)   
  [方法 : WPF アプリケーション内でサードパーティの WPF コントロールを使用する](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
