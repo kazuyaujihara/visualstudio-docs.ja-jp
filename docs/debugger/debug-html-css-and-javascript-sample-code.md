@@ -100,5 +100,5 @@ ms.locfileid: "56227094"
 })();
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)
