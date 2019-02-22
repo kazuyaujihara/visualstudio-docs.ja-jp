@@ -15,110 +15,110 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20227318063a2b9a2c7b64384d7c31b7fb956946
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: be8f9e7715fd06f4f5da17d951dd0c4f4ee58f01
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872067"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603769"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>方法: プログラムから除外する段落記号の範囲を作成するときに
-  段落に基づいて <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを作成する場合、段落記号などの印刷されない文字はすべて範囲に含まれています。 出力先の段落に、元の段落からテキストを挿入したい場合があります。 出力先の段落を複数の段落に分割したくない場合、元の段落から段落記号を最初に削除する必要があります。 また、段落の書式設定情報は段落記号に格納されるので、範囲を既存の段落に挿入するとき、この情報を含めないようにすることもできます。  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
- 次の手順の例では、2 つの文字列変数を宣言し、アクティブなドキュメント内の最初と 2 番目の段落の内容を取得し、その内容を入れ替えます。 その後、 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> メソッドを使用して範囲から段落記号を削除し、段落内にテキストを挿入しています。  
-  
-## <a name="to-control-paragraph-structure-when-inserting-text"></a>テキストを挿入するときに、段落の構造を制御するには  
-  
-1.  最初と 2 番目の段落の 2 つの範囲変数を作成して、 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> プロパティを使用してその内容を取得します。  
-  
-     次のコード例はドキュメント レベルのカスタマイズで使用できます。  
-  
+  段落に基づいて <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを作成する場合、段落記号などの印刷されない文字はすべて範囲に含まれています。 出力先の段落に、元の段落からテキストを挿入したい場合があります。 出力先の段落を複数の段落に分割したくない場合、元の段落から段落記号を最初に削除する必要があります。 また、段落の書式設定情報は段落記号に格納されるので、範囲を既存の段落に挿入するとき、この情報を含めないようにすることもできます。
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+ 次の手順の例では、2 つの文字列変数を宣言し、アクティブなドキュメント内の最初と 2 番目の段落の内容を取得し、その内容を入れ替えます。 その後、 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> メソッドを使用して範囲から段落記号を削除し、段落内にテキストを挿入しています。
+
+## <a name="to-control-paragraph-structure-when-inserting-text"></a>テキストを挿入するときに、段落の構造を制御するには
+
+1.  最初と 2 番目の段落の 2 つの範囲変数を作成して、 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> プロパティを使用してその内容を取得します。
+
+     次のコード例はドキュメント レベルのカスタマイズで使用できます。
+
      [!code-vb[Trin_VstcoreWordAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#27)]
-     [!code-csharp[Trin_VstcoreWordAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#27)]  
-  
-     次のコード例はアプリケーション レベルの VSTO アドインで使用できます。 このコードでは作業中のドキュメントを使用します。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#27)]
+
+     次のコード例はアプリケーション レベルの VSTO アドインで使用できます。 このコードでは作業中のドキュメントを使用します。
+
      [!code-vb[Trin_VstcoreWordAutomationAddIn#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#27)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#27](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#27)]  
-  
-2.  2 つの段落の間のテキストを入れ替え、 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> プロパティを割り当てます。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#27](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#27)]
+
+2.  2 つの段落の間のテキストを入れ替え、 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> プロパティを割り当てます。
+
      [!code-vb[Trin_VstcoreWordAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#28)]
-     [!code-csharp[Trin_VstcoreWordAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#28)]  
-  
-3.  範囲を順に選択し、一時停止してメッセージ ボックスに結果を表示します。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#28)]
+
+3.  範囲を順に選択し、一時停止してメッセージ ボックスに結果を表示します。
+
      [!code-vb[Trin_VstcoreWordAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#29)]
-     [!code-csharp[Trin_VstcoreWordAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#29)]  
-  
-4.  `firstRange` メソッドを使用して <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> を調整し、段落記号が `firstRange`に含まれないようにします。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#29)]
+
+4.  `firstRange` メソッドを使用して <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> を調整し、段落記号が `firstRange`に含まれないようにします。
+
      [!code-vb[Trin_VstcoreWordAutomation#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#30)]
-     [!code-csharp[Trin_VstcoreWordAutomation#30](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#30)]  
-  
-5.  最初の段落の残りのテキストを置換して、新しい文字列を範囲の <xref:Microsoft.Office.Interop.Word.Range.Text%2A> プロパティに割り当てます。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#30](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#30)]
+
+5.  最初の段落の残りのテキストを置換して、新しい文字列を範囲の <xref:Microsoft.Office.Interop.Word.Range.Text%2A> プロパティに割り当てます。
+
      [!code-vb[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#31)]
-     [!code-csharp[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#31)]  
-  
-6.  `secondRange`のテキストを置換して、段落記号を含めます。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#31)]
+
+6.  `secondRange`のテキストを置換して、段落記号を含めます。
+
      [!code-vb[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#32)]
-     [!code-csharp[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#32)]  
-  
-7.  `firstRange` を選択し、一時停止してメッセージ ボックスに結果を表示して、 `secondRange`と同じ操作を行います。  
-  
-     `firstRange` が再定義され、段落記号が除外されると段落の元の書式が保持されます。 ただし、文が `secondRange`の段落記号の上に挿入されると、別の段落が削除されます。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#32)]
+
+7.  `firstRange` を選択し、一時停止してメッセージ ボックスに結果を表示して、 `secondRange`と同じ操作を行います。
+
+     `firstRange` が再定義され、段落記号が除外されると段落の元の書式が保持されます。 ただし、文が `secondRange`の段落記号の上に挿入されると、別の段落が削除されます。
+
      [!code-vb[Trin_VstcoreWordAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#33)]
-     [!code-csharp[Trin_VstcoreWordAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#33)]  
-  
-     2 つの範囲の元の内容は文字列として保存されているため、ドキュメントを元の状態に復元することができます。  
-  
-8.  再調整`firstRange`を使用して、段落記号を含める、<xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A>メソッドの 1 つの文字位置。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#33)]
+
+     2 つの範囲の元の内容は文字列として保存されているため、ドキュメントを元の状態に復元することができます。
+
+8.  再調整`firstRange`を使用して、段落記号を含める、<xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A>メソッドの 1 つの文字位置。
+
      [!code-vb[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#34)]
-     [!code-csharp[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#34)]  
-  
-9. `secondRange`を削除します。 これにより、3 段落目が元の位置に戻ります。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#34)]
+
+9. `secondRange`を削除します。 これにより、3 段落目が元の位置に戻ります。
+
      [!code-vb[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#35)]
-     [!code-csharp[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#35)]  
-  
-10. `firstRange`に元の段落テキストを復元します。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#35)]
+
+10. `firstRange`に元の段落テキストを復元します。
+
      [!code-vb[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#36)]
-     [!code-csharp[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#36)]  
-  
-11. <xref:Microsoft.Office.Interop.Word.Range.InsertAfter%2A> オブジェクトの <xref:Microsoft.Office.Interop.Word.Range> メソッドを使用して元の 2 段落目の内容を `firstRange`の後に挿入し、 `firstRange`を選択します。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#36)]
+
+11. <xref:Microsoft.Office.Interop.Word.Range.InsertAfter%2A> オブジェクトの <xref:Microsoft.Office.Interop.Word.Range> メソッドを使用して元の 2 段落目の内容を `firstRange`の後に挿入し、 `firstRange`を選択します。
+
      [!code-vb[Trin_VstcoreWordAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#37)]
-     [!code-csharp[Trin_VstcoreWordAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#37)]  
-  
-## <a name="document-level-customization-example"></a>ドキュメント レベルのカスタマイズ例  
-  
-### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>ドキュメント レベルのカスタマイズでテキストを挿入するときに段落の構造を制御するには  
-  
-1.  次の例は、ドキュメント レベルのカスタマイズのメソッド全体を示しています。 このコードを使用するには、プロジェクトの `ThisDocument` クラスから実行します。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#37)]
+
+## <a name="document-level-customization-example"></a>ドキュメント レベルのカスタマイズ例
+
+### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>ドキュメント レベルのカスタマイズでテキストを挿入するときに段落の構造を制御するには
+
+1.  次の例は、ドキュメント レベルのカスタマイズのメソッド全体を示しています。 このコードを使用するには、プロジェクトの `ThisDocument` クラスから実行します。
+
      [!code-vb[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#26)]
-     [!code-csharp[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#26)]  
-  
-## <a name="vsto-add-in-example"></a>VSTO アドインの例  
-  
-### <a name="to-control-paragraph-structure-when-inserting-text-in-a-vsto-add-in"></a>VSTO アドインのテキストを挿入するときに、段落の構造を制御するには  
-  
-1.  次の例では、VSTO アドインの完全なメソッドを示します。 このコードを使用するには、プロジェクトの `ThisAddIn` クラスから実行します。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#26)]
+
+## <a name="vsto-add-in-example"></a>VSTO アドインの例
+
+### <a name="to-control-paragraph-structure-when-inserting-text-in-a-vsto-add-in"></a>VSTO アドインのテキストを挿入するときに、段落の構造を制御するには
+
+1.  次の例では、VSTO アドインの完全なメソッドを示します。 このコードを使用するには、プロジェクトの `ThisAddIn` クラスから実行します。
+
      [!code-vb[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#26)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]  
-  
-## <a name="see-also"></a>関連項目  
- [方法: プログラムによってドキュメント内の範囲を拡張します。](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [方法: プログラムまたはドキュメント内の選択範囲を折りたたむ](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [方法: プログラムによって Word 文書にテキストを挿入します。](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [方法: プログラムによって Word のドキュメント内の範囲をリセットします。](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [方法: プログラムで定義し、ドキュメントで範囲を選択します](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]
+
+## <a name="see-also"></a>関連項目
+- [方法: プログラムによってドキュメント内の範囲を拡張します。](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [方法: プログラムまたはドキュメント内の選択範囲を折りたたむ](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [方法: プログラムによって Word 文書にテキストを挿入します。](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [方法: プログラムによって Word のドキュメント内の範囲をリセットします。](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [方法: プログラムで定義し、ドキュメントで範囲を選択します](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

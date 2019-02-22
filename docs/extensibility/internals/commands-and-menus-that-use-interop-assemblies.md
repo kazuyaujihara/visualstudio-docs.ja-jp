@@ -13,43 +13,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 116c7e3adf8b8d75b96d70e25fb0bd173ff9474e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d08e7ad95e621ab444f98c295f5d84aa2b6e0066
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984692"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628092"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>相互運用機能アセンブリを使用するコマンドとメニュー
-相互運用機能アセンブリを使用してメニューやツールバーを実装する VSPackage にする必要があります。  
-  
-- 通知、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) についてサポートしているコマンドやかどうかが現在有効にします。  
-  
-- (コントラクト) コマンドを処理するための規則に従います。  
-  
-- いずれかを使用してコマンド処理を明示的に実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>インターフェイス。  
-  
-  次のセクションでは、これらのタスクを実行する方法について説明します。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [相互運用機能アセンブリを使用してコマンドのステータスを確認します。](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
- VSPackage に IDE がユーザーに通知方法について説明します。 コマンドについてサポートし、かどうかが現在有効になっています。  
-  
- [相互運用機能アセンブリでのコマンドのコントラクト](../../extensibility/internals/command-contracts-in-interop-assemblies.md)  
+相互運用機能アセンブリを使用してメニューやツールバーを実装する VSPackage にする必要があります。
+
+- 通知、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) についてサポートしているコマンドやかどうかが現在有効にします。
+
+- (コントラクト) コマンドを処理するための規則に従います。
+
+- いずれかを使用してコマンド処理を明示的に実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>インターフェイス。
+
+  次のセクションでは、これらのタスクを実行する方法について説明します。
+
+## <a name="in-this-section"></a>このセクションの内容
+- [相互運用機能アセンブリを使用してコマンドのステータスを確認します。](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
+
+ VSPackage に IDE がユーザーに通知方法について説明します。 コマンドについてサポートし、かどうかが現在有効になっています。
+
+- [相互運用機能アセンブリでのコマンドのコントラクト](../../extensibility/internals/command-contracts-in-interop-assemblies.md)
+
  相互運用機能アセンブリを使用してコマンドを実装するすべての Vspackage で使用される基本的なコマンドのコントラクトの定義を提供します。
-  
- [コマンドの実装](../../extensibility/internals/command-implementation.md)  
- VSPackage のコマンドを実装する方法の概要を示します。  
-  
- [相互運用機能アセンブリ コマンド ハンドラーを登録します。](../../extensibility/internals/registering-interop-assembly-command-handlers.md)  
- VSPackage がコマンド ハンドラーを提供することを IDE に通知するために必要なレジストリ エントリについて説明します。  
-  
-## <a name="related-sections"></a>関連項目  
- [利用可能なコマンド](../../extensibility/internals/command-availability.md)  
- VSPackage のコマンドに利用をどのようなオブジェクトには、それらは処理を決定する、IDE で使用される条件について説明します。  
-  
- [Vspackage がユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- 使用する UI を作成する方法の詳細については、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]コマンドをサポートします。  
-  
- [Vspackage のコマンド ルーティング](../../extensibility/internals/command-routing-in-vspackages.md)  
+
+- [コマンドの実装](../../extensibility/internals/command-implementation.md)
+
+ VSPackage のコマンドを実装する方法の概要を示します。
+
+- [相互運用機能アセンブリ コマンド ハンドラーを登録します。](../../extensibility/internals/registering-interop-assembly-command-handlers.md)
+
+ VSPackage がコマンド ハンドラーを提供することを IDE に通知するために必要なレジストリ エントリについて説明します。
+
+## <a name="related-sections"></a>関連項目
+- [利用可能なコマンド](../../extensibility/internals/command-availability.md)
+
+ VSPackage のコマンドに利用をどのようなオブジェクトには、それらは処理を決定する、IDE で使用される条件について説明します。
+
+- [Vspackage がユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+
+ 使用する UI を作成する方法の詳細については、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]コマンドをサポートします。
+
+- [Vspackage のコマンド ルーティング](../../extensibility/internals/command-routing-in-vspackages.md)
+
  適切なコマンドの要求を持つオブジェクトを関連付けるために使用するプロセスの概要。
