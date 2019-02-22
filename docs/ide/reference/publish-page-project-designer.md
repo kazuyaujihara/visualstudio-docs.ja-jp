@@ -77,7 +77,7 @@ ms.locfileid: "55909350"
 
  現在の設定を使用して、アプリケーションを発行します。 **[発行ウィザード]** の **[完了]** ボタンと同じです。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ClickOnce アプリケーションの発行](../../deployment/publishing-clickonce-applications.md)
 - [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
