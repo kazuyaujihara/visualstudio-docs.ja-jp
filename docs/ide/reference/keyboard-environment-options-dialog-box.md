@@ -20,6 +20,6 @@ ms.locfileid: "55934641"
 # <a name="keyboard-environment-options-dialog-box"></a>[キーボード] ([オプション] ダイアログ ボックス - [環境])
 このページを使用して、キーボード マップを設定します。 マッピングの詳細については、「[キーボード ショートカットの識別とカスタマイズ](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)
