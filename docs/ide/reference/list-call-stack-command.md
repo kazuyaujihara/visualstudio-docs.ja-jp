@@ -106,7 +106,7 @@ kb 2
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ListDisassembly コマンド](../../ide/reference/list-disassembly-command.md)
 - [ListThreads コマンド](../../ide/reference/list-threads-command.md)
