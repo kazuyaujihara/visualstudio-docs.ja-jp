@@ -41,7 +41,7 @@ ms.locfileid: "54803163"
  **拡張機能の削除**  
  **[マイ名前空間拡張]** リストで 1 つ以上の参照を選択し、このボタンをクリックして `My` 名前空間拡張をプロジェクトから削除します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Visual Basic における My 名前空間の拡張](http://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e)   
  [カスタム マイ拡張のパッケージ化と配置](http://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21)   
  [Visual Basic アプリケーション モデルの拡張](http://msdn.microsoft.com/library/e91d3bed-4c27-40e3-871d-2be17467c72c)   

@@ -62,7 +62,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 >Debug.ListDisassembly  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ListCallStack コマンド](../../ide/reference/list-call-stack-command.md)   
  [スレッドの一覧表示コマンド](../../ide/reference/list-threads-command.md)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
