@@ -253,7 +253,7 @@ DOM Explorer を使用すると次のことができます。
 > [!NOTE]
 > Windows Phone エミュレーターは、マウス ポインターを置くことによる要素の強調表示を部分的にサポートします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [Visual Studio でのアプリのデバッグ](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
 [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)  
 [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)  
