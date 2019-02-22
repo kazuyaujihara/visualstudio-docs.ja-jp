@@ -43,7 +43,7 @@ Debug.QuickWatchq [text]
 >Debug.QuickWatch
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio でウォッチ ウィンドウとクイック ウォッチ ウィンドウを使用して変数のウォッチ ポイントを設定する](../../debugger/watch-and-quickwatch-windows.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
