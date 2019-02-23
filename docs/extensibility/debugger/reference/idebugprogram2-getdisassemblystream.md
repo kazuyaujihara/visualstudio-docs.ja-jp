@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::GetDisassemblyStream |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::GetDisassemblyStream
 helpviewer_keywords:
@@ -12,52 +12,55 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a80dd1a97be20f6065f6a9e1444dececfa52141
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bcc5032fe2fa080034cda3f63a0fb013e12c42e3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975667"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712932"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
-このプログラムまたはこのプログラムの一部の逆アセンブリのストリームを取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-HRESULT GetDisassemblyStream(   
-   DISASSEMBLY_STREAM_SCOPE   dwScope,  
-   IDebugCodeContext2*        pCodeContext,  
-   IDebugDisassemblyStream2** ppDisassemblyStream  
-);  
-```  
-  
-```csharp  
-int GetDisassemblyStream(   
-   enum_DISASSEMBLY_STREAM_SCOPE  dwScope,  
-   IDebugCodeContext2             pCodeContext,  
-   out IDebugDisassemblyStream2   ppDisassemblyStream  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `dwScope`  
- [in]値を指定します、 [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)逆アセンブリのストリームのスコープを定義する列挙です。  
-  
- `pCodeContext`  
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)逆アセンブリのストリームを開始する位置を表すオブジェクト。  
-  
- `ppDisassemblyStream`  
- [out]返します、 [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)逆アセンブリのストリームを表すオブジェクト。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_DISASM_NOTSUPPORTED`逆アセンブリがこの特定のアーキテクチャのサポートされていない場合。  
-  
-## <a name="remarks"></a>Remarks  
- 場合、`dwScopes`パラメーターには、`DSS_HUGE`のフラグ、 [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)列挙型を設定し、ファイル全体の逆アセンブリ命令の数が多いを返す、逆アセンブルが必要ですまたはモジュール。 場合、`DSS_HUGE`フラグが設定されていない、逆アセンブルされることに、小さな領域に限定する 1 つの関数の通常します。  
-  
-## <a name="see-also"></a>関連項目  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)   
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
+このプログラムまたはこのプログラムの一部の逆アセンブリのストリームを取得します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT GetDisassemblyStream( 
+   DISASSEMBLY_STREAM_SCOPE   dwScope,
+   IDebugCodeContext2*        pCodeContext,
+   IDebugDisassemblyStream2** ppDisassemblyStream
+);
+```
+
+```csharp
+int GetDisassemblyStream( 
+   enum_DISASSEMBLY_STREAM_SCOPE  dwScope,
+   IDebugCodeContext2             pCodeContext,
+   out IDebugDisassemblyStream2   ppDisassemblyStream
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `dwScope`
+
+ [in]値を指定します、 [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)逆アセンブリのストリームのスコープを定義する列挙です。
+
+ `pCodeContext`
+
+ [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)逆アセンブリのストリームを開始する位置を表すオブジェクト。
+
+ `ppDisassemblyStream`
+
+ [out]返します、 [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)逆アセンブリのストリームを表すオブジェクト。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_DISASM_NOTSUPPORTED`逆アセンブリがこの特定のアーキテクチャのサポートされていない場合。
+
+## <a name="remarks"></a>Remarks
+ 場合、`dwScopes`パラメーターには、`DSS_HUGE`のフラグ、 [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)列挙型を設定し、ファイル全体の逆アセンブリ命令の数が多いを返す、逆アセンブルが必要ですまたはモジュール。 場合、`DSS_HUGE`フラグが設定されていない、逆アセンブルされることに、小さな領域に限定する 1 つの関数の通常します。
+
+## <a name="see-also"></a>関連項目
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)
+- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+- [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
