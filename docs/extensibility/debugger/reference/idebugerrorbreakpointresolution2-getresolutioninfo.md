@@ -1,7 +1,7 @@
 ---
 title: IDebugErrorBreakpointResolution2::GetResolutionInfo |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugErrorBreakpointResolution2::GetResolutionInfo
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3e61cc093e6a987eec6fdd865b0316901e6c46d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f399c82e5bc5619e0690cb27245baab9944c9377
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631303"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691008"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
 ブレークポイント エラーの解決策情報を取得します。
@@ -39,10 +39,12 @@ int GetResolutionInfo( 
 ```
 
 #### <a name="parameters"></a>パラメーター
-`dwFields`  
+`dwFields`
+
 [in]フラグの組み合わせ、 [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)のフィールドを決定する列挙体`pErrorResolutionInfo`を記入します。
 
-`pErrorResolutionInfo`  
+`pErrorResolutionInfo`
+
 [入力、出力][BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)構造体のブレークポイントの解決の説明が入力されます。
 
 ## <a name="return-value"></a>戻り値
@@ -51,7 +53,7 @@ int GetResolutionInfo( 
 ## <a name="example"></a>例
 次の例では、単純なは、このメソッドを実装する`CDebugErrorBreakpointResolution`を公開するオブジェクト、 [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)インターフェイス。
 
-```
+```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(
     BPERESI_FIELDS dwFields,
     BP_ERROR_RESOLUTION_INFO* pBPErrorResolutionInfo)
@@ -150,6 +152,7 @@ HRESULT CDebugErrorBreakpointResolution::CopyBP_ERROR_RESOLUTION_INFO(
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)  
-[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)  
-[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+
+- [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
+- [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)

@@ -11,61 +11,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4b28112abad97dae3c4edcb46b5f93109df4a4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f30ce24d720ff849b4c3959780facc8115b0fb23
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980311"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697053"
 ---
 # <a name="buttons-element"></a>Buttons 要素
-グループ[ボタン](../extensibility/button-element.md)要素で、個々 のコマンドを表します。  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-<Buttons>  
-  <Button>... </Button>  
-  <Button>... </Button>  
-</Buttons>  
-```  
-  
-## <a name="attributes-and-elements"></a>属性と要素  
- 以降のセクションでは、属性、子要素、および親要素について説明します。  
-  
-### <a name="attributes"></a>属性  
-  
-|属性|説明|  
-|---------------|-----------------|  
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
-  
-### <a name="child-elements"></a>子要素  
-  
-|要素|説明|  
-|-------------|-----------------|  
-|[Buttons 要素](../extensibility/buttons-element.md)|ボタン要素をグループ化します。|  
-|[Button 要素](../extensibility/button-element.md)|ユーザーが対話できるコマンドを定義します。|  
-  
-### <a name="parent-elements"></a>親要素  
-  
-|要素|説明|  
-|-------------|-----------------|  
-|[Commands 要素](../extensibility/commands-element.md)|VSPackage のツールバーのコマンドのコレクションを表します。|  
-  
-## <a name="example"></a>例  
-  
-```  
-<Buttons>  
-  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">  
-    <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>  
-    <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>  
-    <Strings>  
-      <ButtonText>C# Command Sample</ButtonText>  
-    </Strings>  
-  </Button>  
-</Buttons>  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [Vspackage がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)
+グループ[ボタン](../extensibility/button-element.md)要素で、個々 のコマンドを表します。
+
+## <a name="syntax"></a>構文
+
+```
+<Buttons>
+  <Button>... </Button>
+  <Button>... </Button>
+</Buttons>
+```
+
+## <a name="attributes-and-elements"></a>属性と要素
+ 以降のセクションでは、属性、子要素、および親要素について説明します。
+
+### <a name="attributes"></a>属性
+
+|属性|説明|
+|---------------|-----------------|
+|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|
+
+### <a name="child-elements"></a>子要素
+
+|要素|説明|
+|-------------|-----------------|
+|[Buttons 要素](../extensibility/buttons-element.md)|ボタン要素をグループ化します。|
+|[Button 要素](../extensibility/button-element.md)|ユーザーが対話できるコマンドを定義します。|
+
+### <a name="parent-elements"></a>親要素
+
+|要素|説明|
+|-------------|-----------------|
+|[Commands 要素](../extensibility/commands-element.md)|VSPackage のツールバーのコマンドのコレクションを表します。|
+
+## <a name="example"></a>例
+
+```
+<Buttons>
+  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">
+    <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>
+    <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>
+    <Strings>
+      <ButtonText>C# Command Sample</ButtonText>
+    </Strings>
+  </Button>
+</Buttons>
+```
+
+## <a name="see-also"></a>関連項目
+- [Vspackage がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)

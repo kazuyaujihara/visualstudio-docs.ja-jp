@@ -1,7 +1,7 @@
 ---
 title: BP_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81fa3cf9504c4b883a075999fa1993ea0e8e8529
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fe346d708110cf16b85e84d61aeb25ee335c0e96
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315730"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688434"
 ---
 # <a name="bpflags"></a>BP_FLAGS
 ブレークポイントを設定するときに、追加情報を指定するために使用するオプションのフラグを提供します。
@@ -42,14 +42,11 @@ public enum enum_BP_FLAGS {
 ```
 
 ## <a name="members"></a>メンバー
-BP_FLAG_NONE  
-ブレークポイントのフラグを指定しません。
+BP_FLAG_NONE はブレークポイント フラグを指定します。
 
-BP_FLAG_MAP_DOCPOSITION  
-デバッグ エンジン (DE) がドキュメントの位置を使用してブレークポイントをマップする必要がありますを指定します。 これは、機能は、Active Server Pages (ASP) などのスクリプトを使用したソース ファイルに設定されたブレークポイントにのみ適用されます。
+BP_FLAG_MAP_DOCPOSITION では、デバッグ エンジン (DE) がドキュメントの位置を使用してブレークポイントをマップする必要がありますを指定します。 これは、機能は、Active Server Pages (ASP) などのスクリプトを使用したソース ファイルに設定されたブレークポイントにのみ適用されます。
 
-BP_FLAG_DONT_STOP  
-デバッグ エンジン最終的に停止するようにされませんが、ブレークポイントが、デバッグ エンジンによって処理されることを指定 (つまり、 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)イベント オブジェクトを送信しない必要があります)。 このフラグは、トレース ポイントで主に使用する設計されています。
+ブレークポイントは、デバッグ エンジンで処理する必要がありますが、最終的には、デバッグ エンジンがありますに停止する必要があります BP_FLAG_DONT_STOP を指定します (つまり、 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)イベント オブジェクトを送信しない必要があります)。 このフラグは、トレース ポイントで主に使用する設計されています。
 
 ## <a name="remarks"></a>Remarks
 使用、`dwFlags`のメンバー、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)と[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体。
@@ -64,7 +61,7 @@ BP_FLAG_DONT_STOP
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
-[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)  
-[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+- [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)

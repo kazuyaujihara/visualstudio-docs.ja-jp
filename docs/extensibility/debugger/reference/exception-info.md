@@ -1,7 +1,7 @@
 ---
 title: EXCEPTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - EXCEPTION_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ff28c46931905e3386a675711653fff99df8b08
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4c5863c9ebb790ebcbc267f62cc2a0a1fd14603c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413580"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686263"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
 例外またはデバッグ中のプログラムによってスローされた実行時エラーについて説明します。
@@ -47,23 +47,17 @@ public struct EXCEPTION_INFO {
 ```
 
 ## <a name="members"></a>メンバー
-pProgram  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)例外が発生したプログラムを表すオブジェクト。
+pProgram、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)例外が発生したプログラムを表すオブジェクト。
 
-bstrProgramName  
-例外が発生したプログラムの名前。
+bstrProgramName プログラムの名前で、例外が発生しました。
 
-bstrExceptionName  
-例外の名前。
+bstrExceptionName 例外の名前。
 
-dwCode  
-例外または実行時エラーの識別コード。
+dwCode 例外または実行時エラーの識別コード。
 
-dwState  
-値、 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)例外の状態を定義する列挙です。
+dwState A 値から、 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)例外の状態を定義する列挙です。
 
-guidType  
-GUID の言語識別子か、`guidLang`または`guidEng`します。
+guidType GUID 言語識別子か、`guidLang`または`guidEng`します。
 
 ## <a name="remarks"></a>Remarks
 この構造体がパラメーターとして渡される、 [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)と[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)メソッド。 この構造体に渡されることも、 [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)情報を格納するメソッド。
@@ -76,9 +70,9 @@ GUID の言語識別子か、`guidLang`または`guidEng`します。
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)  
-[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)  
-[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)  
-[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)
+- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
+- [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)
+- [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)
