@@ -53,5 +53,5 @@ ms.locfileid: "54795513"
   
  [クラスおよび型のリファクタリング (クラス デザイナー)](../ide/refactoring-classes-and-types-class-designer.md)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)
