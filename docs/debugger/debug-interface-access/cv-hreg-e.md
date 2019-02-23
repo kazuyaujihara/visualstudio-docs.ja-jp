@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 48650731d9f3493d1b399aae0345792e04e5eada
 ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56316107"
@@ -460,7 +460,7 @@ CV_M32R_*
 ## <a name="requirements"></a>要件:
 ヘッダー: cvconst.h
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
 [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
 [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)  

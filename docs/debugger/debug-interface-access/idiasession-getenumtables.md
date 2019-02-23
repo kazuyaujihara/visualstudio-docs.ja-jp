@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 5c331171a62d2319666229f108428b9d62b7464e
 ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/13/2019
 ms.locfileid: "56227619"
@@ -66,6 +66,6 @@ IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)  
 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -241,6 +241,6 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="comments"></a>コメント  
  WPF UI 要素に関連付けられているイベント ハンドラーの C# ソース コードについては、「[L2DBForm.xaml.cs ソース コード](../designers/l2dbform-xaml-cs-source-code.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [チュートリアル: LinqToXmlDataBinding の例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)

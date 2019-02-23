@@ -30,7 +30,7 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 461c2c4bc5525eee61c413cb8c25afd6090852a5
 ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/11/2019
 ms.locfileid: "55987471"
@@ -338,7 +338,7 @@ _ASSERT(!myErr); // Don't do this, either!
 
 [このトピックの内容](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [デバッガーのセキュリティ](../debugger/debugger-security.md)  
 [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)  
 [マネージド コードのアサーション](../debugger/assertions-in-managed-code.md)

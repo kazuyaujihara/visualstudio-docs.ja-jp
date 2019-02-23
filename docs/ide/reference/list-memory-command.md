@@ -85,7 +85,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ListCallStack コマンド](../../ide/reference/list-call-stack-command.md)
 - [ListThreads コマンド](../../ide/reference/list-threads-command.md)

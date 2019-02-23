@@ -51,7 +51,7 @@ Visual Studio 2017 バージョン 15.7 以降、ClangFormat サポートは既�
 
 これらのページでは、さまざまな書式設定をカスタマイズできますが、ClangFormat が有効になっている場合は無視されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)
 - [IntelliSense の使用](../../ide/using-intellisense.md)

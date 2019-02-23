@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 086b30bd46071e96af1f87f71c74c5cc1b9eda80
 ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56317797"
@@ -204,7 +204,7 @@ enum SymTagEnum {
 ## <a name="requirements"></a>要件
 ヘッダー: cvconst.h
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
 [シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)  
 [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)  

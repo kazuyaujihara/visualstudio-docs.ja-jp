@@ -62,7 +62,7 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
 - [/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)

@@ -98,6 +98,6 @@ XAML デザイナーでは、アートボードと [プロパティ] ウィン�
   
      `TextBlock` コントロールに、既定値の 0 がテキストとして表示されるはずです。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
  [NIB: ダイアログ ボックスの値コンバーターを追加します。](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b472c52934353e6324d72077f8ea878467159cbd
 ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56318642"
@@ -54,6 +54,6 @@ A. イメージの相対仮想アドレス (RVA)
 ## <a name="requirements"></a>要件
 ヘッダー: dia2.h
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
 [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

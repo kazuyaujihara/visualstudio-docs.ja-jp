@@ -35,6 +35,6 @@ JavaScript でのエラーの処理方法の設定を変更するには、**[オ
 
  **[True]** に設定すると、JavaScript のエラーが **[エラー一覧]** にエラーではなく警告として表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

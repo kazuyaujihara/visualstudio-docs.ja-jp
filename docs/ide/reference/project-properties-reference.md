@@ -37,6 +37,6 @@ ms.locfileid: "55955454"
 | [[セキュリティ] ページ (プロジェクト デザイナー)](../../ide/reference/security-page-project-designer.md) | このページを使用して、[!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 配置によって配置されたアプリケーションのコード アクセス セキュリティの設定を構成できます。 |
 | [[署名] ページ (プロジェクト デザイナー)](../../ide/reference/signing-page-project-designer.md) | このページを使用して、アプリケーション マニフェストと配置マニフェストに署名し、アセンブリに署名できます。 |
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ソリューションおよびプロジェクト](../../ide/solutions-and-projects-in-visual-studio.md)

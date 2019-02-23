@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 8540a3aef4460ec022c3da8d69da44d14863d7e1
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/26/2019
 ms.locfileid: "55068668"
@@ -31,5 +31,5 @@ HRESULT Reset ();
 ## <a name="return-value"></a>戻り値  
  `S_OK` を返します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

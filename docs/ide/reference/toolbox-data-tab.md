@@ -37,7 +37,7 @@ ms.locfileid: "55910767"
 |<xref:System.Windows.Forms.BindingSource>|基になるデータ ソースにコントロールをバインドするプロセスを簡略化します。|
 |<xref:System.Windows.Forms.BindingNavigator>|データにバインドされている、フォーム上のコントロールを移動および操作するためのユーザー インターフェイス (UI) を表します。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのデータへのアクセス](../../data-tools/accessing-data-in-visual-studio.md)
 - [.NET 用の Visual Studio データ ツール](../../data-tools/visual-studio-data-tools-for-dotnet.md)

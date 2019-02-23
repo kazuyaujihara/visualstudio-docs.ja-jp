@@ -265,7 +265,7 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 
  まずは、前述の手順に従って問題点、改善点の報告をお送りください。 その後にポップアップ表示されるダイアログで、フィードバックに既定のタグを付けるか、または独自のタグを作成してタグ付けすることができます。 タグを付けるなら、フィードバックを該当する機能のチームに転送する際に助けになります。 **[カテゴリの選択]** ドロップダウン リストで、報告する問題に該当するオプションを選択した後、問題を再現する手順に従ってください。 Visual Studio を使用してフィードバックを報告する方法についての詳細な手順も利用できます。 詳細については、次を参照してください。[スマイルの指示を送信する Visual Studio](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 * [Apache Cordova を使ったクロスプラットフォーム アプリをビルドする](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Visual Studio で Xamarin を使用してネイティブ UI を備えたアプリを作成する](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)

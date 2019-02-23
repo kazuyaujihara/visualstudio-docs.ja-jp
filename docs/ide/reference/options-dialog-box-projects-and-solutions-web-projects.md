@@ -33,7 +33,7 @@ ms.locfileid: "55937969"
 
 このオプションが設定されているときは、Web アプリケーションをエラーなしでコンパイルできなかった場合にそのアプリケーションを実行しようとすると警告が表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]](projects-and-solutions-options-dialog-box.md)
 - [[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](options-dialog-box-projects-and-solutions-web-projects.md)

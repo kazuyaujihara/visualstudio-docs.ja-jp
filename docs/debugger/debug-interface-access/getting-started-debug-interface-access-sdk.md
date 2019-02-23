@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 24dc53efe0b7e30d2b585519d0ca0a8c070791d3
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55031204"
@@ -48,5 +48,5 @@ ms.locfileid: "55031204"
  [.Pdb ファイルの照会](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
  DIA API を使用して、.pdb ファイルを照会する方法の手順を説明します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Debug Interface Access SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

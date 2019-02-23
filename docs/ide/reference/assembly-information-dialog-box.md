@@ -47,7 +47,7 @@ ms.locfileid: "55930013"
 
  **アセンブリを COM 参照可能にする** アセンブリの型を COM に使用できるようにするかどうかを指定します。 <xref:System.Runtime.InteropServices.ComVisibleAttribute> に相当します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[アプリケーション] ページ (プロジェクト デザイナー)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [属性](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

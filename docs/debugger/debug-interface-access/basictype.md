@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3bc24a62281e754af8d97e641e8fa6e6866f7570
 ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56318020"
@@ -110,7 +110,7 @@ btHresult
 ## <a name="requirements"></a>要件
 ヘッダー: cvconst.h
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
 [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
 [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

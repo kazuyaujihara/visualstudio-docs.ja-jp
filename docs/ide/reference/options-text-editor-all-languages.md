@@ -124,7 +124,7 @@ ms.locfileid: "55929337"
 > [!TIP]
 > 空白、タブ、および行末のインジケーターを表示し、インデントの設定された行と、空白行とを区別できるようにするには、**[編集]** メニューの **[詳細]** をクリックし、**[スペースの表示]** を選択します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[オプション]、[テキスト エディター]、[すべての言語]、[タブ]](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)

@@ -69,5 +69,5 @@ public class ProjectFileHook
 }  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [例: ログのコールバック](../cross-platform/share-the-unity-log-callback-with-vstu.md)

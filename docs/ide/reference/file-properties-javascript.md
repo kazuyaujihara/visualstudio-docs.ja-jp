@@ -92,6 +92,6 @@ ms.locfileid: "55956767"
 ### <a name="version"></a>Version
  参照のバージョンが表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [プロジェクトおよびソリューションのプロパティの管理](../../ide/managing-project-and-solution-properties.md)

@@ -74,7 +74,7 @@ IDE のローカライズ版では、IDE のネイティブ言語または英語
 | [ブレークポイントの設定/解除](../../ide/reference/toggle-breakpoint-command.md) | ファイル内の現在位置で、現在の状態に基づいてブレークポイントのオン/オフを切り替えます。 |
 | [Watch コマンド](../../ide/reference/watch-command.md) | 指定したインスタンスの **[ウォッチ]** ウィンドウを作成し、開きます。 |
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)

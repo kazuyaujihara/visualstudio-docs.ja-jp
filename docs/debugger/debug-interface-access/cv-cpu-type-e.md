@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dbd089cc22c69978485c9277a67b44114b66c38b
 ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56315251"
@@ -100,6 +100,6 @@ typedef enum CV_CPU_TYPE_e {
 ## <a name="requirements"></a>要件
 ヘッダー: cvconst.h
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
 [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

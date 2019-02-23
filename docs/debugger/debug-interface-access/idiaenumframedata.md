@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: eea2b3e903e3311773bc1fcfe9df7d67949dc5e5
 ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/12/2019
 ms.locfileid: "56155567"
@@ -107,7 +107,7 @@ void ShowFrameData(IDiaSession *pSession)
 
 **DLL:** msdia80.dll
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
 [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)  
 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

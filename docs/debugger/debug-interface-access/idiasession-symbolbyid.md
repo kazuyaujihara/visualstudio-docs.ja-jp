@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 71072c597a445d54fc3429e949b24fde81761fc1
 ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/13/2019
 ms.locfileid: "56227671"
@@ -63,7 +63,7 @@ IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
 [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

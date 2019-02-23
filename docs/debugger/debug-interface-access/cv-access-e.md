@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2b5fa908692167b49c6bb92c892fb143b882d231
 ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56318577"
@@ -48,7 +48,7 @@ CV_public
 ## <a name="requirements"></a>要件
 ヘッダー: cvconst.h
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
 [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)  
 [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

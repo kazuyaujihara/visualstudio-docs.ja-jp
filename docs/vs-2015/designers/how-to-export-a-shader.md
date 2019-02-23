@@ -51,6 +51,6 @@ ms.locfileid: "54802794"
   
 4.  エクスポートするシェーダーの名前を **[ファイル名]** コンボ ボックスに指定し、**[保存]** ボタンを選択します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: 基本カラー シェーダーを作成する](../designers/how-to-create-a-basic-color-shader.md)   
  [シェーダー デザイナー](../designers/shader-designer.md)
