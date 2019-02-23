@@ -1,7 +1,7 @@
 ---
 title: IDebugDisassemblyStream2::GetCurrentLocation | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDisassemblyStream2::GetCurrentLocation
 helpviewer_keywords:
@@ -12,41 +12,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d75b8dd21c8d6fc184d349677849d43ff2c45a1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fa89650ea1497afcb5ac1143264103ee7fc69b1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976746"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678534"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
-現在のコードの場所を表すコードの場所の識別子を返します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-HRESULT GetCurrentLocation(   
-   UINT64* puCodeLocationId  
-);  
-```  
-  
-```csharp  
-int GetCurrentLocation(   
-   out ulong puCodeLocationId  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `puCodeLocationId`  
- [out]コードの場所の識別子を返します。 「解説」を参照してください、 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)メソッドについては、コードの場所の識別子。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
-## <a name="remarks"></a>Remarks  
- コードの場所の識別子は、呼び出すことによって、コードのコンテキストに変換できる、 [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)メソッド。  
-  
-## <a name="see-also"></a>関連項目  
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
- [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)   
- [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)
+現在のコードの場所を表すコードの場所の識別子を返します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT GetCurrentLocation( 
+   UINT64* puCodeLocationId
+);
+```
+
+```csharp
+int GetCurrentLocation( 
+   out ulong puCodeLocationId
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `puCodeLocationId`
+
+ [out]コードの場所の識別子を返します。 「解説」を参照してください、 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)メソッドについては、コードの場所の識別子。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
+## <a name="remarks"></a>Remarks
+ コードの場所の識別子は、呼び出すことによって、コードのコンテキストに変換できる、 [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)メソッド。
+
+## <a name="see-also"></a>関連項目
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)
+- [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)

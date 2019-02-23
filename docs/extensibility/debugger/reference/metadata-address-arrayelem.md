@@ -1,7 +1,7 @@
 ---
 title: METADATA_ADDRESS_ARRAYELEM | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - METADATA_ADDRESS_ARRAYELEM
 helpviewer_keywords:
@@ -12,14 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7cfd9204dfbcc2254da6a4539e6b18d90c156c4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b08d3d25912123d62de9a096b810f42d1418aa6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632798"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707901"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
+
 この構造体は、配列内の配列要素を表します。
 
 ## <a name="syntax"></a>構文
@@ -39,12 +40,15 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 ```
 
 ## <a name="terms"></a>用語
-tokMethod  
+
+tokMethod
+
 ID の配列のこの要素はの一部です。
 
 [C++]`_mdToken`は、 `typedef` 32 ビット`int`します。
 
-dwIndex  
+dwIndex
+
 この要素の配列内のインデックス。
 
 ## <a name="remarks"></a>Remarks
@@ -58,6 +62,7 @@ dwIndex
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
-[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+
+- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

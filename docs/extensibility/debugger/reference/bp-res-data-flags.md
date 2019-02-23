@@ -1,7 +1,7 @@
 ---
 title: BP_RES_DATA_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_RES_DATA_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b111e98edb1d364a466157a6db4c0089617f18de
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: dfbf34af69accc3fa50e0648880b5f8633f1618a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413021"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714063"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 データ ブレークポイントがエミュレートされるかどうか、またはに実装されているハードウェアを指定します。
@@ -38,8 +38,7 @@ public enum enum_BP_RES_DATA_FLAGS {
 ```
 
 ## <a name="members"></a>メンバー
-BP_RES_DATA_EMULATED  
-データ ブレークポイントがエミュレートされることを指定します。
+BP_RES_DATA_EMULATED では、データ ブレークポイントがエミュレートされることを指定します。
 
 ## <a name="remarks"></a>Remarks
 使用、`dwFlags`のメンバー、 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)構造体。
@@ -52,5 +51,5 @@ BP_RES_DATA_EMULATED
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)
