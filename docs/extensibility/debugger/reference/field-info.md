@@ -1,7 +1,7 @@
 ---
 title: FIELD_INFO |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b34624672b64d88ca9b080094c5d661494c089cf
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 83cdacae192ad1286203139432a0eacd632b8511
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315899"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694230"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 この構造体には、ローカル変数、パラメーター、またはその他のフィールドについて説明します。
@@ -45,20 +45,15 @@ public struct FIELD_INFO {
 ```
 
 ## <a name="members"></a>メンバー
-dwFields  
-フラグの組み合わせ、 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)のどのメンバーが入力を指定する列挙体。
+フラグの組み合わせを dwFields A、 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)のどのメンバーが入力を指定する列挙体。
 
-bstrFullName  
-フィールドの完全名。
+bstrFullName フィールドの完全名。
 
-bstrName  
-フィールドの短い名前。
+bstrName フィールドの短い名前。
 
-bstrType  
-フィールドの型。
+bstrType フィールドの型。
 
-dwModifiers  
-フラグの組み合わせ、 [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)フィールドを表す列挙体。
+フラグの組み合わせを dwModifiers A、 [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)フィールドを表す列挙体。
 
 ## <a name="remarks"></a>Remarks
 この構造体に渡される、 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)メソッドでいっぱいになった場所。
@@ -71,7 +66,7 @@ dwModifiers
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)  
-[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
+- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)
+- [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)

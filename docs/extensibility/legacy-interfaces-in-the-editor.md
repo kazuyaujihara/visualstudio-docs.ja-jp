@@ -10,17 +10,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21ebfb4babc32642c37d1a8ccf469a1a5c37046e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 044bf36845be70290291b79dee255c452f56f0a0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982547"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694414"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>エディターでのレガシー インターフェイス
-Visual Studio エディターは、従来のインターフェイスからアクセスできます。 Visual Studio SDK と呼ばれるアダプタが含まれています。 *shim*、これらの新しいエディターと対話するインターフェイスを有効にします。 ただし、新しいエディターの API を使用して従来のコードを更新することをお勧めします。 コードのパフォーマンスが向上し、Windows Presentation Foundation (WPF) と Managed Extensibility Framework (MEF) などの新しいテクノロジを使用することができます。  
+Visual Studio エディターは、従来のインターフェイスからアクセスできます。 Visual Studio SDK と呼ばれるアダプタが含まれています。 *shim*、これらの新しいエディターと対話するインターフェイスを有効にします。 ただし、新しいエディターの API を使用して従来のコードを更新することをお勧めします。 コードのパフォーマンスが向上し、Windows Presentation Foundation (WPF) と Managed Extensibility Framework (MEF) などの新しいテクノロジを使用することができます。
 
-## <a name="related-topics"></a>関連トピック  
+## <a name="related-topics"></a>関連トピック
 
 | タイトル | 説明 |
 | - | - |

@@ -1,7 +1,7 @@
 ---
 title: EVALFLAGS |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - EVALFLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f780f06188d738deeb7f4b781fba1313e46db6d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d9d59262349891a5c0483297039578c5de4a7b72
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315769"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696273"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 式の評価を制御するフラグを指定します。
@@ -50,26 +50,19 @@ public enum enum_EVALFLAGS {
 ```
 
 ## <a name="members"></a>メンバー
-EVAL_RETURNVALUE  
-存在する場合は、戻り値に評価することを指定します。
+EVAL_RETURNVALUE では、存在する場合は、戻り値に評価することを指定します。
 
-EVAL_NOSIDEEFFECTS  
-副作用を許可しないことを指定します。
+EVAL_NOSIDEEFFECTS では、副作用を許可しないことを指定します。
 
-EVAL_ALLOWBPS  
-ブレークポイントの停止を指定します。
+EVAL_ALLOWBPS では、ブレークポイントで停止を指定します。
 
-EVAL_ALLOWERRORREPORT  
-エラー報告を許可するホストを指定します。 主に、Internet Explorer でスクリプトに式の評価に使用します。
+EVAL_ALLOWERRORREPORT を指定しますエラーが許可するホストに報告します。 主に、Internet Explorer でスクリプトに式の評価に使用します。
 
-EVAL_FUNCTION_AS_ADDRESS  
-関数を呼び出す代わりに、アドレスとして評価される関数を強制的にします。
+関数を呼び出す代わりに、アドレスとして評価される EVAL_FUNCTION_AS_ADDRESS 強制的に機能します。
 
-EVAL_NOFUNCEVAL  
-関数が評価するを防ぎます。 たとえば、`int`式トークン`myExpression(int) + 10`します。 この関数は、アドレスとしてではない値を正しく評価できます。
+評価対象から EVAL_NOFUNCEVAL により関数。 たとえば、`int`式トークン`myExpression(int) + 10`します。 この関数は、アドレスとしてではない値を正しく評価できます。
 
-EVAL_NOEVENTS  
-セッション デバッグ マネージャー (SDM) または、IDE には式の評価中に発生するイベントを送信しないかを示すフラグです。
+EVAL_NOEVENTS セッション デバッグ マネージャー (SDM) または、IDE には式の評価中に発生するイベントを送信しないかを示すフラグ。
 
 ## <a name="remarks"></a>Remarks
 これらのフラグは、引数として渡される、 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)と[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)メソッド。
@@ -84,6 +77,6 @@ EVAL_NOEVENTS
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)  
-[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
+- [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

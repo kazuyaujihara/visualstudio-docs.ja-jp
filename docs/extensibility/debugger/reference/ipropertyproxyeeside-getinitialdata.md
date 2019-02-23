@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyEESide::GetInitialData |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IPropertyProxyEESide::GetInitialData
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54a85cbd525f2578685f363f4ccee6ec0f94f208
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b8fdfd41b8ab15a1c1b6e7b494d02c3e488c54c5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934180"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695701"
 ---
 # <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
-このオブジェクトの初期データを返します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-HRESULT GetInitialData(  
-   IEEDataStorage** dataOut  
-);  
-```  
-  
-```csharp  
-int GetInitialData(  
-   out IEEDataStorage dataOut  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `dataOut`  
- [out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)このオブジェクトの最初のデータを格納しているオブジェクト。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
-## <a name="see-also"></a>関連項目  
- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
+このオブジェクトの初期データを返します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT GetInitialData(
+   IEEDataStorage** dataOut
+);
+```
+
+```csharp
+int GetInitialData(
+   out IEEDataStorage dataOut
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `dataOut`
+
+ [out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)このオブジェクトの最初のデータを格納しているオブジェクト。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
+## <a name="see-also"></a>関連項目
+- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
