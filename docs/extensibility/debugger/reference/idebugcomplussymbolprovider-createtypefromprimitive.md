@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::CreateTypeFromPrimitive |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 - CreateTypeFromPrimitive
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aa6a1c6c97090da451c2d9bdd08891d0f6cb0f3
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: da9d0639ec6cf6cae01298273f21e3fde1f2aafd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412891"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718093"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 指定したプリミティブ型から型を作成します。
 
 ## <a name="syntax"></a>構文
 
-```
-[C++]
+```cpp
 HRESULT CreateTypeFromPrimitive(
     DWORD          dwPrimType,
     IDebugAddress* pAddress,
@@ -32,8 +31,7 @@ HRESULT CreateTypeFromPrimitive(
 );
 ```
 
-```
-[C#]
+```csharp
 int CreateTypeFromPrimitive(
     uint          dwPrimType,
     IDebugAddress pAddress,
@@ -42,14 +40,17 @@ int CreateTypeFromPrimitive(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`dwPrimType`  
-[in]値を[CorElementType 列挙型](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)プリミティブ型を表します。
+`dwPrimType`
 
-`pAddress`  
-[in]によって表されるアドレス オブジェクトを[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。
+ [in]値を[CorElementType 列挙型](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)プリミティブ型を表します。
 
-`ppType`  
-[in]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)型を記述するオブジェクト。
+`pAddress`
+
+ [in]によって表されるアドレス オブジェクトを[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。
+
+`ppType`
+
+ [in]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)型を記述するオブジェクト。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -95,4 +96,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

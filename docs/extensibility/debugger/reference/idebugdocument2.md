@@ -1,7 +1,7 @@
 ---
 title: IDebugDocument2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocument2
 helpviewer_keywords:
@@ -12,49 +12,49 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c4bae697b12fa7056777c3875a651d8ac1c6dbd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 28334cc7aa0c8a5587a20d6c9dfdee3133d9ea7e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940909"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718197"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
-このインターフェイスは、ソース ドキュメントを表します。  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-IDebugDocument2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 一般にこのインターフェイスを実装します。 デバッグ エンジン (DE) は、ソース コードを指定する必要があるあり、ソースがディスクに存在しない場合にも、このインターフェイスに実装できます。  このような場合、DE は実装にも[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)と[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)で追加のメソッドと同様に、インターフェイス、 [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)と[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)インターフェイス。  
-  
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- 上のメソッド、 `IDebugDocumentContext2`、 `IDebugDisassemblyStream2`、 `IDebugDocumentPosition2`、および`IDebugActivateDocumentEvent2`インターフェイスは、このインターフェイスを返します。  
-  
-## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugDocument2`します。  
-  
-|メソッド|説明|  
-|------------|-----------------|  
-|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|いくつかの形式のいずれかで、ドキュメントの名前を取得します。|  
-|[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|ドキュメントのクラス識別子を取得します。|  
-  
-## <a name="remarks"></a>Remarks  
- このインターフェイスは、DE、ソース コードを提供する場合にのみ実装されます。 たとえば、HTML ページ上のスクリプトをデバッグする場合、DE を提供ソース コード、ソースをダウンロードまたは動的に生成されるため、ディスク ファイルとして存在しません。 C++ などの従来の言語をデバッグするときに、このインターフェイスを実装する必要はありません。  
-  
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
-  
- 名前空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>関連項目  
- [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)   
- [GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)   
- [GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)   
- [GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)   
- [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)
+このインターフェイスは、ソース ドキュメントを表します。
+
+## <a name="syntax"></a>構文
+
+```
+IDebugDocument2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>実装についてのメモ
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 一般にこのインターフェイスを実装します。 デバッグ エンジン (DE) は、ソース コードを指定する必要があるあり、ソースがディスクに存在しない場合にも、このインターフェイスに実装できます。  このような場合、DE は実装にも[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)と[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)で追加のメソッドと同様に、インターフェイス、 [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)と[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)インターフェイス。
+
+## <a name="notes-for-callers"></a>呼び出し元のノート
+ 上のメソッド、 `IDebugDocumentContext2`、 `IDebugDisassemblyStream2`、 `IDebugDocumentPosition2`、および`IDebugActivateDocumentEvent2`インターフェイスは、このインターフェイスを返します。
+
+## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
+ 次の表は、メソッドの`IDebugDocument2`します。
+
+|メソッド|説明|
+|------------|-----------------|
+|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|いくつかの形式のいずれかで、ドキュメントの名前を取得します。|
+|[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|ドキュメントのクラス識別子を取得します。|
+
+## <a name="remarks"></a>Remarks
+ このインターフェイスは、DE、ソース コードを提供する場合にのみ実装されます。 たとえば、HTML ページ上のスクリプトをデバッグする場合、DE を提供ソース コード、ソースをダウンロードまたは動的に生成されるため、ディスク ファイルとして存在しません。 C++ などの従来の言語をデバッグするときに、このインターフェイスを実装する必要はありません。
+
+## <a name="requirements"></a>必要条件
+ ヘッダー: msdbg.h
+
+ 名前空間: Microsoft.VisualStudio.Debugger.Interop
+
+ アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>関連項目
+- [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)
+- [GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)
+- [GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)
+- [GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)
+- [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)

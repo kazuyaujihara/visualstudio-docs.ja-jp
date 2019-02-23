@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointRequest2::GetLocationType |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointRequest2::GetLocationType
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afddb4f27eaae9ae9960ae07127d88d0d4588d1f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ef63656e645611e13bfc6e0fcf1fb3a5cc339abc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315679"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684690"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 このブレークポイント要求のブレークポイントの場所の種類を取得します。
@@ -37,7 +37,9 @@ int GetLocationType(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`pBPLocationType` [out]値を返します、 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)このブレークポイント要求の場所を表す列挙体。
+`pBPLocationType`
+
+ [out]値を返します、 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)このブレークポイント要求の場所を表す列挙体。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_FAIL`場合、`bpLocation`フィールドに関連付けられている[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)構造が無効です。
@@ -77,7 +79,7 @@ HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationTy
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)  
-[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)  
-[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
+- [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)
+- [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

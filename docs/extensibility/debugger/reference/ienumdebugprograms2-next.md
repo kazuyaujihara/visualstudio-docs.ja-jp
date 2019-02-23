@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPrograms2::Next |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPrograms2::Next
 helpviewer_keywords:
@@ -12,47 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b00ea8f27705f1d4fc21a019618be44b1c1eb7f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96f46692b86f35c999e21541b9c8c7a7dcc7f670
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977970"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714167"
 ---
 # <a name="ienumdebugprograms2next"></a>IEnumDebugPrograms2::Next
-列挙体から次の要素のセットを返します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-HRESULT Next(  
-   ULONG            celt,  
-   IDebugProgram2** rgelt,  
-   ULONG*           pceltFetched  
-);  
-```  
-  
-```csharp  
-int Next(  
-   uint             celt,  
-   IDebugProgram2[] rgelt,  
-   ref uint         pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `celt`  
- [in]取得する要素の数。 最大サイズを指定します、`rgelt`配列。  
-  
- `rgelt`  
- [入力、出力]配列[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)情報を格納する要素。  
-  
- `pceltFetched`  
- [out]実際に返される要素の数を返します`rgelt`します。  
-  
-## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`返される可能性があります、要求された要素数よりも少ない場合、それ以外の場合、エラー コードを返します。  
-  
-## <a name="see-also"></a>関連項目  
- [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)   
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+列挙体から次の要素のセットを返します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT Next(
+   ULONG            celt,
+   IDebugProgram2** rgelt,
+   ULONG*           pceltFetched
+);
+```
+
+```csharp
+int Next(
+   uint             celt,
+   IDebugProgram2[] rgelt,
+   ref uint         pceltFetched
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `celt`
+
+ [in]取得する要素の数。 最大サイズを指定します、`rgelt`配列。
+
+ `rgelt`
+
+ [入力、出力]配列[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)情報を格納する要素。
+
+ `pceltFetched`
+
+ [out]実際に返される要素の数を返します`rgelt`します。
+
+## <a name="return-value"></a>戻り値
+ 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`返される可能性があります、要求された要素数よりも少ない場合、それ以外の場合、エラー コードを返します。
+
+## <a name="see-also"></a>関連項目
+- [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
