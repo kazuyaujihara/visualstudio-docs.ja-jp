@@ -49,7 +49,7 @@ ms.locfileid: "54763362"
 ## <a name="starter-kits"></a>スタート キット  
  スタート キットは拡張されたテンプレートであり、コミュニティの他のメンバーと共有できます。 スタート キットには、コンパイルされるコード サンプル、ドキュメント、および有用で実際的なアプリケーションをビルドする際の新しいツールやプログラミング技法を習得するうえで役立つ他のリソースが含まれています。 スタート キットの基本的な内容と手順は、テンプレートの場合と同じです。 詳しくは、「[方法: スタート キットを作成する](../ide/how-to-create-starter-kits.md)」をご覧ください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [方法 : プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)   
  [方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)   
  [テンプレート パラメーター](../ide/template-parameters.md)   
