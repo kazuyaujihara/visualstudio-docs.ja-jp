@@ -86,7 +86,7 @@ Visual Studio では、アラビア語やヘブライ語など、右から左に
   
 -   コードのコメント。 アラビア語およびヘブライ語は、コメントに使用できます。 また、コメント ビルダー ツールでもこれらの言語を使用できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Windows フォーム アプリケーションの双方向サポート](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
  [ASP.NET Web アプリケーションに対する双方向サポート](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [アプリケーションのグローバル化](../ide/globalizing-applications.md)   
