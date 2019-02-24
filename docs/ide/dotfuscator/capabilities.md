@@ -57,7 +57,7 @@ Dotfuscator CE は、[改ざん防止][tamper]、[デバッグ防止][debug]、[
 
 これらの多くの方法は、評価版や試用版のソフトウェアの[有効期間][shelflife]を強制するためにも使用できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [Dotfuscator CE の完全なユーザー ガイドのこのトピック][full]
 

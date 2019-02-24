@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: e4af16c9a0f2e254a0e63e95fb8c1f7881785a4c
 ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56315145"
@@ -104,6 +104,6 @@ CV_CFL_HLSL
 ## <a name="requirements"></a>要件
 ヘッダー: cvconst.h
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
 [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

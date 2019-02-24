@@ -65,7 +65,7 @@ Dotfuscator Professional は業界標準の [.NET 難読化ツール][net-obfusc
 Dotfuscator Professional の高度なアプリケーション保護機能の詳細については、PreEmptive Solutions の [Dotfuscator の概要][product-about]と、[Community Edition との比較][product-compare]に関するページを参照してください。
 [preemptive.com では、完全にサポートされている評価版を入手できます][eval]。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [Dotfuscator CE の完全なユーザー ガイドのこの記事][full]
 

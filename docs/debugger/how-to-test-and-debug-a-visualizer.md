@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: bd0c483f7fb4941430355ef287bce973e1a1659e
 ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/13/2019
 ms.locfileid: "56227133"
@@ -53,7 +53,7 @@ ms.locfileid: "56227133"
 
     詳細な例では、次を参照してください。[チュートリアル: c# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [チュートリアル : C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 [方法 : ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)  
 [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)
