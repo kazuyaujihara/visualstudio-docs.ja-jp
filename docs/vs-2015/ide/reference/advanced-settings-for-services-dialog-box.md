@@ -50,7 +50,7 @@ ms.locfileid: "54779137"
  **カスタム接続文字列を使用**  
  クライアント サービス プロバイダーがローカル キャッシュにカスタムのデータ ストアを使用するかどうかを指定します。 既定では、サービス プロバイダーはキャッシュのローカル ファイル システムを使用します。 このオプションをオンにすると、テキスト ボックスには既定の接続文字列が自動的に入力されます。 自動生成される既定の接続文字列のままにして、SQL Server Compact Edition データベースを使用するか、既存の SQL Server データベースに対する接続文字列を指定することができます。 詳細については、「 [How to: Configure Client Application Services](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)」を参照してください。 既定では、このオプションはオフになっています。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [クライアント アプリケーション サービス](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   
  [[サービス] ページ (プロジェクト デザイナー)](../../ide/reference/services-page-project-designer.md)   
  [方法 : クライアント アプリケーション サービスを構成する](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
