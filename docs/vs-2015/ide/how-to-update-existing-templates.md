@@ -63,7 +63,7 @@ ms.locfileid: "54771114"
   
 9. 次のコマンドを実行します: `devenv /installvstemplates`  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)   
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
