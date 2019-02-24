@@ -169,7 +169,7 @@ ms.locfileid: "54778913"
   **詳細コンパイル オプション**  
   このボタンをクリックして、**[コンパイラの詳細設定]** ダイアログ ボックスにアクセスします。 **[コンパイラの詳細設定]** ダイアログ ボックスを使用して、プロジェクトの詳細なビルド構成プロパティを指定します。 このダイアログ ボックスは、Visual Basic プロジェクトにのみ適用されます。 詳細については、「[[ビルドの詳細設定] ダイアログ ボックス (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [デバッグ プロジェクト構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
  [コンパイル プロパティの管理](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [方法 : ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
