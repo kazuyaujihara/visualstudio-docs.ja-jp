@@ -71,7 +71,7 @@ ms.locfileid: "54775889"
 > [!NOTE]
 >  **ツールボックス**に追加できるシステム ベースの <xref:System.Timers.Timer> もあります。この <xref:System.Timers.Timer> は、サーバー アプリケーション用に最適化され、Windows フォーム <xref:System.Windows.Forms.Timer> は Windows フォームで使用するのに最も適しています。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [コンポーネントによるプログラミング](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)   
  [コンポーネント プログラミングのチュートリアル](http://msdn.microsoft.com/library/373cacf7-479e-4b05-991c-5cb18824e913)   
  [ツールボックス](../../ide/reference/toolbox.md)   
