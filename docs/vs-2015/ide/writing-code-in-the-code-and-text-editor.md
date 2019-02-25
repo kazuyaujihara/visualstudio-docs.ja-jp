@@ -229,5 +229,5 @@ Visual Studio の [移動] コマンドは、コード ファイル、ファイ�
 
 -   [コード変更およびその他の履歴の検索](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Visual Studio IDE](../ide/visual-studio-ide.md)
