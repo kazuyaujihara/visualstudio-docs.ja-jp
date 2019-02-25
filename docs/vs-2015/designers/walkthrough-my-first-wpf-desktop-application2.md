@@ -975,6 +975,6 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 - [WPF のドキュメント](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成します。](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
  [Windows Presentation Foundation での最新のデスクトップ アプリケーションの作成](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
