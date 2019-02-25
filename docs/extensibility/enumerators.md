@@ -10,41 +10,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e57f11f61a1bcb2372a07e34167ecacd324067c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 37f469ecc0ae097592a128b30a6a6f189d58d94b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037799"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689747"
 ---
 # <a name="enumerators"></a>列挙子
-このセクションでは、ソース管理プラグインが認識する必要がありますソース コントロールのプラグイン API で列挙子のデータ型を示します。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [コマンド コード](../extensibility/command-code-enumerator.md)  
- オプションを列挙、 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)と[SccPopulateList](../extensibility/sccpopulatelist-function.md)関数。  
-  
- [メッセージ](../extensibility/message-enumerator.md)  
- 印刷のコールバックを使用するフラグの列挙[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)します。  
-  
- [ファイルの状態コード](../extensibility/file-status-code-enumerator.md)  
- ソース管理下にあるファイルの状態を指定する名前付き定数の値が含まれています。  
-  
- [ディレクトリの状態コード](../extensibility/directory-status-code-enumerator.md)  
- ソース管理下のディレクトリの状態を指定する名前付き定数の値が含まれています。  
-  
-## <a name="related-sections"></a>関連項目  
- [ソース管理プラグインを作成します。](../extensibility/internals/creating-a-source-control-plug-in.md)  
- ソース管理プラグインの SDK を定義し、含まれているリソースについて説明します。  
-  
- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
- 指定したコマンドの詳細設定オプションのユーザーに求めます。  
-  
- [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- 現在の状態のファイルの一覧を検証します。 また、使用して、`pfnPopulate`ファイルでの条件が一致しない場合に、呼び出し元に通知するため、`nCommand`します。  
-  
- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- によって使用されるコールバック関数について説明します[SccOpenProject](../extensibility/sccopenproject-function.md) ide プラグインのソース管理からのメッセージを表示します。  
-  
- [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)  
- ソース管理プラグイン API のすべての要素の完全な一覧を提供します。
+このセクションでは、ソース管理プラグインが認識する必要がありますソース コントロールのプラグイン API で列挙子のデータ型を示します。
+
+## <a name="in-this-section"></a>このセクションの内容
+- [コマンド コード](../extensibility/command-code-enumerator.md)のオプションを列挙、 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)と[SccPopulateList](../extensibility/sccpopulatelist-function.md)関数。
+
+- [メッセージ](../extensibility/message-enumerator.md)印刷のコールバックを使用するフラグの列挙[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)します。
+
+- [状態コードをファイル](../extensibility/file-status-code-enumerator.md)という名前のソース管理下にあるファイルの状態を示す定数値が含まれます。
+
+- [ディレクトリの状態コード](../extensibility/directory-status-code-enumerator.md)という名前のソース管理下のディレクトリの状態を示す定数値が含まれます。
+
+## <a name="related-sections"></a>関連項目
+- [ソース管理プラグインを作成する](../extensibility/internals/creating-a-source-control-plug-in.md)ソース管理プラグインの SDK を定義し、含まれているリソースを説明します。
+
+- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)指定されたコマンドの詳細設定オプションのユーザーに求めます。
+
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md)その現在の状態のファイルの一覧を検査します。 また、使用して、`pfnPopulate`ファイルでの条件が一致しない場合に、呼び出し元に通知するため、`nCommand`します。
+
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)によって使用されるコールバック関数について説明します[SccOpenProject](../extensibility/sccopenproject-function.md) ide プラグインのソース管理からのメッセージを表示します。
+
+- [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)ソース管理プラグイン API のすべての要素の完全な一覧を提供します。

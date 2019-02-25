@@ -1,7 +1,7 @@
 ---
 title: IDebugAlias::GetICorDebugValue |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugAlias::GetICorDebugValue
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38debf5be309a97367f9a14c5f07ec3db6e7b666
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 59506af5ad48bd18c454f4c59367921eed1e679a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005944"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707914"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
-このエイリアスに関連付けられている値を表すマネージ コード インターフェイスを取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-HRESULT GetICorDebugValue(  
-   IUnknown** ppUnk  
-);  
-```  
-  
-```csharp  
-int GetICorDebugValue(  
-   out object ppUnk  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `ppUnk`  
- [out]`IUnknown`このエイリアスに関連付けられている値を表すインターフェイスです。 このインターフェイスを照会できます、`ICorDebugValue`インターフェイス。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
-  
-## <a name="remarks"></a>Remarks  
- このメソッドは、管理対象の値のみに適用されます (、`ICorDebugValue`インターフェイスでは、[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]で定義されていると、 [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK では cordebug.idl ファイル)。  
-  
-## <a name="see-also"></a>関連項目  
- [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
+このエイリアスに関連付けられている値を表すマネージ コード インターフェイスを取得します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT GetICorDebugValue(
+   IUnknown** ppUnk
+);
+```
+
+```csharp
+int GetICorDebugValue(
+   out object ppUnk
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `ppUnk`
+
+ [out]`IUnknown`このエイリアスに関連付けられている値を表すインターフェイスです。 このインターフェイスを照会できます、`ICorDebugValue`インターフェイス。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+
+## <a name="remarks"></a>Remarks
+ このメソッドは、管理対象の値のみに適用されます (、`ICorDebugValue`インターフェイスでは、[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]で定義されていると、 [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK では cordebug.idl ファイル)。
+
+## <a name="see-also"></a>関連項目
+- [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

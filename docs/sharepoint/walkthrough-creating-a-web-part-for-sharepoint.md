@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e31e34c634965dc00a5d8c806759ec82cf78d014
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 622dfafbe16efee1e953fbc42bfa3b94cfa3cc58
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863982"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604575"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>チュートリアル: For SharePoint の web パーツを作成します。
 
@@ -216,7 +216,7 @@ Web パーツ動詞メニューに表示される項目をクリックすると�
 
 ## <a name="see-also"></a>関連項目
 
-[For SharePoint の web パーツを作成します。](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[方法: SharePoint web パーツを作成します。](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[方法: デザイナーを使用して、SharePoint web パーツを作成します。](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
-[チュートリアル: デザイナーを使用して、SharePoint の web パーツを作成します。](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+[SharePoint の web パーツを作成](../sharepoint/creating-web-parts-for-sharepoint.md)
+[方法。SharePoint web パーツを作成](../sharepoint/how-to-create-a-sharepoint-web-part.md)
+[方法。デザイナーを使用して、SharePoint web パーツを作成する](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
+[チュートリアル。デザイナーを使用して、SharePoint の web パーツを作成します。](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

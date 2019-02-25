@@ -1,7 +1,7 @@
 ---
 title: IDebugArrayObject |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugArrayObject
 helpviewer_keywords:
@@ -12,51 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a35aa8dd85cbcd6d04e30fc88b0595151624ba42
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f5943aae9fb8ef848bdaeecdebc0f1354be2c0e7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037656"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697079"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
-  
- このインターフェイスは、配列オブジェクトを表します。  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-IDebugArrayObject : IDebugObject  
-```  
-  
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- 式エバリュエーターでは、配列を表すためには、このインターフェイスを実装します。  
-  
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)インターフェイスを使用してこのインターフェイスを取得できる[QueryInterface](/cpp/atl/queryinterface)場合は、オブジェクトの配列を表します。  
-  
-## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- メソッドだけでなく、 `IDebugObject` 、次のメソッドが実装されている、インターフェイス、`IDebugArrayObject`インターフェイス。  
-  
-|メソッド|説明|  
-|------------|-----------------|  
-|[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)|配列内の要素数を取得します。|  
-|[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)|配列の要素を取得します。|  
-|[GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)|配列のすべての要素を取得します。|  
-|[GetRank](../../../extensibility/debugger/reference/idebugarrayobject-getrank.md)|配列のランクを取得します。|  
-|[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)|配列の次元を取得します。|  
-  
-## <a name="remarks"></a>Remarks  
- 式エバリュエーターでは、このインターフェイスを使用して、解析ツリー内の配列を表します。  
-  
-## <a name="requirements"></a>必要条件  
- ヘッダー: ee.h  
-  
- 名前空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>関連項目  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+>  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+
+ このインターフェイスは、配列オブジェクトを表します。
+
+## <a name="syntax"></a>構文
+
+```
+IDebugArrayObject : IDebugObject
+```
+
+## <a name="notes-for-implementers"></a>実装についてのメモ
+ 式エバリュエーターでは、配列を表すためには、このインターフェイスを実装します。
+
+## <a name="notes-for-callers"></a>呼び出し元のノート
+ [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)インターフェイスを使用してこのインターフェイスを取得できる[QueryInterface](/cpp/atl/queryinterface)場合は、オブジェクトの配列を表します。
+
+## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
+ メソッドだけでなく、 `IDebugObject` 、次のメソッドが実装されている、インターフェイス、`IDebugArrayObject`インターフェイス。
+
+|メソッド|説明|
+|------------|-----------------|
+|[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)|配列内の要素数を取得します。|
+|[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)|配列の要素を取得します。|
+|[GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)|配列のすべての要素を取得します。|
+|[GetRank](../../../extensibility/debugger/reference/idebugarrayobject-getrank.md)|配列のランクを取得します。|
+|[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)|配列の次元を取得します。|
+
+## <a name="remarks"></a>Remarks
+ 式エバリュエーターでは、このインターフェイスを使用して、解析ツリー内の配列を表します。
+
+## <a name="requirements"></a>必要条件
+ ヘッダー: ee.h
+
+ 名前空間: Microsoft.VisualStudio.Debugger.Interop
+
+ アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>関連項目
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -11,24 +11,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea7b54d8a27f061c1ef5d023f309ddab8295db90
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2e5b50a3f2969f8f22ce938522526a6010c640a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989602"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691385"
 ---
 # <a name="servers-visual-studio-sdk"></a>サーバー (Visual Studio SDK)
-デバッガーのアーキテクチャで、 *server*:  
-  
--   ポートおよびポート サプライヤーのコンテナーと、セッション デバッグ マネージャー (SDM) とデバッグ エンジンにポートとポート サプライヤーを通信します。  
-  
--   名前で識別し、そのポートとポート サプライヤーを列挙できます。  
-  
--   によって表される、 [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)インターフェイスで、Visual Studio (Visual Studio の実行の各インスタンスのサーバーの 1 つのインスタンス) によってのみ実装されます。  
-  
-## <a name="see-also"></a>関連項目  
- [ポート](../../extensibility/debugger/ports.md)   
- [ポート サプライヤー](../../extensibility/debugger/port-suppliers.md)   
- [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)   
- [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)
+デバッガーのアーキテクチャで、 *server*:
+
+-   ポートおよびポート サプライヤーのコンテナーと、セッション デバッグ マネージャー (SDM) とデバッグ エンジンにポートとポート サプライヤーを通信します。
+
+-   名前で識別し、そのポートとポート サプライヤーを列挙できます。
+
+-   によって表される、 [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)インターフェイスで、Visual Studio (Visual Studio の実行の各インスタンスのサーバーの 1 つのインスタンス) によってのみ実装されます。
+
+## <a name="see-also"></a>関連項目
+- [ポート](../../extensibility/debugger/ports.md)
+- [ポート サプライヤー](../../extensibility/debugger/port-suppliers.md)
+- [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)
+- [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

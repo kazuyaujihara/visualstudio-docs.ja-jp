@@ -11,32 +11,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6053c01908df9f1c2884e81c8610a989ac89294
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 094bff5c761a45e936f14f79587b4846d3838610
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030679"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722409"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>方法: Atom プライベート ギャラリーのフィードの作成します。
-Atom (RSS) フィードを拡張機能を含みにフィードを追加するイントラネット上の場所を作成する**拡張機能と更新**をプライベート ギャラリーとして。 詳細については、次を参照してください。[プライベート ギャラリー](../extensibility/private-galleries.md)します。  
-  
-## <a name="create-an-atom-feed"></a>Atom フィードを作成します。  
- Atom をプライベート ギャラリーとしてフィードを作成するを収集して、拡張機能 (*.vsix*ファイル) のフォルダーにします。 場合は、サブフォルダーにそれらを編成できます。 次のリソースも必要になります。  
-  
-- *Atom.xml*ファイルをプライベート ギャラリーとして拡張機能を利用できるようにします。 接続する方法については、 *atom.xml*ファイルを**拡張機能と更新**を参照してください[プライベート ギャラリー](../extensibility/private-galleries.md)します。  
-  
-- 拡張機能 (たとえば、スクリーン ショット) から抽出されたすべてのイメージ ファイルを格納するフォルダー。 *Atom.xml*で利用できるように、ファイルがこれらのイメージへの相対リンクを含む**拡張機能と更新**します。  
-  
-  たとえば、フォルダーに次の 2 つの拡張機能を収集したとします。  
-  
-- *Template_Wizard_239.vsix*、これは、空の VSIX プロジェクト テンプレート。  
-  
-- *SelectionHighlight.vsix*、選択した単語のすべてのインスタンスを強調表示するためのツールであります。  
-  
-  内容、 *atom.xml*ファイルは次の例のようになります。  
-  
-```xml  
+Atom (RSS) フィードを拡張機能を含みにフィードを追加するイントラネット上の場所を作成する**拡張機能と更新**をプライベート ギャラリーとして。 詳細については、次を参照してください。[プライベート ギャラリー](../extensibility/private-galleries.md)します。
+
+## <a name="create-an-atom-feed"></a>Atom フィードを作成します。
+ Atom をプライベート ギャラリーとしてフィードを作成するを収集して、拡張機能 (*.vsix*ファイル) のフォルダーにします。 場合は、サブフォルダーにそれらを編成できます。 次のリソースも必要になります。
+
+- *Atom.xml*ファイルをプライベート ギャラリーとして拡張機能を利用できるようにします。 接続する方法については、 *atom.xml*ファイルを**拡張機能と更新**を参照してください[プライベート ギャラリー](../extensibility/private-galleries.md)します。
+
+- 拡張機能 (たとえば、スクリーン ショット) から抽出されたすべてのイメージ ファイルを格納するフォルダー。 *Atom.xml*で利用できるように、ファイルがこれらのイメージへの相対リンクを含む**拡張機能と更新**します。
+
+  たとえば、フォルダーに次の 2 つの拡張機能を収集したとします。
+
+- *Template_Wizard_239.vsix*、これは、空の VSIX プロジェクト テンプレート。
+
+- *SelectionHighlight.vsix*、選択した単語のすべてのインスタンスを強調表示するためのツールであります。
+
+  内容、 *atom.xml*ファイルは次の例のようになります。
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text" />
@@ -68,9 +68,9 @@ Atom (RSS) フィードを拡張機能を含みにフィードを追加するイ
     ...
   </entry>
 </feed>
-```  
-  
- 2 つのリンク タグをイメージの生成されたフォルダーのスクリーン ショットを参照することに注意してください。  
-  
-## <a name="see-also"></a>関連項目  
- [プライベート ギャラリー](../extensibility/private-galleries.md)
+```
+
+ 2 つのリンク タグをイメージの生成されたフォルダーのスクリーン ショットを参照することに注意してください。
+
+## <a name="see-also"></a>関連項目
+- [プライベート ギャラリー](../extensibility/private-galleries.md)

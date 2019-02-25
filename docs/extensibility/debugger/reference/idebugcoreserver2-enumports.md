@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer2::EnumPorts |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer2::EnumPorts
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0555c9167ae24ad1ea700af142d4598117c58f3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bafa89a38d008a54536976097edc2a874d1ba2d3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037981"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686276"
 ---
 # <a name="idebugcoreserver2enumports"></a>IDebugCoreServer2::EnumPorts
-すべての利用可能なポートの一覧を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-HRESULT EnumPorts(   
-   IEnumDebugPorts2** ppEnum  
-);  
-```  
-  
-```csharp  
-int EnumPorts(   
-   out IEnumDebugPorts2 ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `ppEnum`  
- [out]返します、 [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)すべてのポート サプライヤーからのすべてのポートの一覧を含むオブジェクト。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
-## <a name="see-also"></a>関連項目  
- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
- [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
+すべての利用可能なポートの一覧を取得します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT EnumPorts( 
+   IEnumDebugPorts2** ppEnum
+);
+```
+
+```csharp
+int EnumPorts( 
+   out IEnumDebugPorts2 ppEnum
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `ppEnum`
+
+ [out]返します、 [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)すべてのポート サプライヤーからのすべてのポートの一覧を含むオブジェクト。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
+## <a name="see-also"></a>関連項目
+- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
+- [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

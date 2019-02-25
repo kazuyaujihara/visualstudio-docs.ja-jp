@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3967dc1b324c2dd73de4797588159d745ae24756
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 25b703eafccb412c33640a9e73e72afa09c0c277
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315717"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695987"
 ---
 # <a name="get-a-port"></a>ポートを取得します。
 ポートは、プロセスが実行されているマシンへの接続を表します。 そのマシンは、ローカル コンピューターまたはリモート コンピューターの可能性があります (これ場合によって実行される可能性が非 Windows ベースのオペレーティング システムは、参照してください[ポート](../../extensibility/debugger/ports.md)詳細については)。
@@ -97,7 +97,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 ```
 
 ## <a name="see-also"></a>関連項目
-[プログラムの登録](../../extensibility/debugger/registering-the-program.md)  
-[デバッグするプログラムを有効にします。](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
-[ポート サプライヤー](../../extensibility/debugger/port-suppliers.md)  
-[ポート](../../extensibility/debugger/ports.md)
+- [プログラムの登録](../../extensibility/debugger/registering-the-program.md)
+- [デバッグするプログラムを有効にします。](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [ポート サプライヤー](../../extensibility/debugger/port-suppliers.md)
+- [ポート](../../extensibility/debugger/ports.md)

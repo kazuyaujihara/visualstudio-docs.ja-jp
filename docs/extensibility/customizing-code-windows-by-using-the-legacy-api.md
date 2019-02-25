@@ -10,39 +10,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ff4fb8a8a2e60b047361624ae805910906c19e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0ea617a252d60d8e8d5810c42f7331508c28165
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022054"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708980"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>従来の API を使用してコード ウィンドウをカスタマイズします。
-コード ウィンドウは、1 つまたは複数のテキスト ビューをサポートしているドキュメント ウィンドウ オブジェクトです。 コード ウィンドウの正確な機能は、関連する言語サービスに依存します。 マルチ ドキュメント インターフェイス (MDI) モードでは、コード ウィンドウは、MDI 子フレームです。  
-  
- コード ウィンドウは言語サービスによって制御され、各言語サービスは、独自のコード ウィンドウ マネージャーを提供できます。 これにより、波線、色付けなどのコード ウィンドウに、独自の表示要素を追加する言語サービス。 Core ウィンドウを作成する方法の詳細については、次を参照してください。[従来の API を使用して、コア エディターをインスタンス化](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)します。  
-  
- コード ウィンドウは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>テキスト ビューとオブジェクトの表示要素を持つオブジェクト。 言語サービスをアタッチできるエディターのコアのインスタンス化中に、コード ウィンドウを作成するときに、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>コード ウィンドウに次の図に示すとは。  
-  
- ![CodeWindow グラフィック](../extensibility/media/vscodewindow.gif "vscodewindow")  
-コード ウィンドウ  
-  
- 言語サービスは、コード ウィンドウ マネージャーを実装し、ドロップダウン バーなどの表示要素の管理を担当します。 コード ウィンドウでは、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>メソッドのコード ウィンドウの初期化中にします。 ドロップダウン バーまたはボタン バーに、言語サービスを追加できますこの呼び出しが行われたときに (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) のコード ウィンドウにします。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- `Customizing Code Windows by Using the Legacy API`  
- 従来の API を使用してコード ウィンドウをカスタマイズする方法について説明します。  
-  
- [方法: ホスト別のエディターで、エディター](../extensibility/how-to-host-an-editor-in-another-editor.md)  
- エディター ウィンドウ内の 2 つ目のエディターをホストする方法について説明します。  
-  
- [方法: エディターがフォーカスを失ったときにイベントを発生させる](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
- ドキュメント データ オブジェクトをドキュメント ビューを接続する方法について説明します。  
-  
-## <a name="see-also"></a>関連項目  
- <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [従来の API を使用して、コア エディターをインスタンス化します。](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
- [従来の API を使用してアクセス テキスト ビュー](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+コード ウィンドウは、1 つまたは複数のテキスト ビューをサポートしているドキュメント ウィンドウ オブジェクトです。 コード ウィンドウの正確な機能は、関連する言語サービスに依存します。 マルチ ドキュメント インターフェイス (MDI) モードでは、コード ウィンドウは、MDI 子フレームです。
+
+ コード ウィンドウは言語サービスによって制御され、各言語サービスは、独自のコード ウィンドウ マネージャーを提供できます。 これにより、波線、色付けなどのコード ウィンドウに、独自の表示要素を追加する言語サービス。 Core ウィンドウを作成する方法の詳細については、次を参照してください。[従来の API を使用して、コア エディターをインスタンス化](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)します。
+
+ コード ウィンドウは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>テキスト ビューとオブジェクトの表示要素を持つオブジェクト。 言語サービスをアタッチできるエディターのコアのインスタンス化中に、コード ウィンドウを作成するときに、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>コード ウィンドウに次の図に示すとは。
+
+ ![CodeWindow グラフィック](../extensibility/media/vscodewindow.gif "vscodewindow")コード ウィンドウ
+
+ 言語サービスは、コード ウィンドウ マネージャーを実装し、ドロップダウン バーなどの表示要素の管理を担当します。 コード ウィンドウでは、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>メソッドのコード ウィンドウの初期化中にします。 ドロップダウン バーまたはボタン バーに、言語サービスを追加できますこの呼び出しが行われたときに (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) のコード ウィンドウにします。
+
+## <a name="in-this-section"></a>このセクションの内容
+ `Customizing Code Windows by Using the Legacy API` 従来の API を使用してコード ウィンドウをカスタマイズする方法について説明します。
+
+- [方法: 別のエディターで、エディターをホスト](../extensibility/how-to-host-an-editor-in-another-editor.md)エディター ウィンドウ内の 2 つ目のエディターをホストする方法について説明します。
+
+- [方法: エディターがフォーカスを失ったときにイベントを発生させる](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)ドキュメント ビューをドキュメント データ オブジェクトにアタッチする方法について説明します。
+
+## <a name="see-also"></a>関連項目
+- <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
+- [従来の API を使用して、コア エディターをインスタンス化します。](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)
+- [従来の API を使用してアクセス テキスト ビュー](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

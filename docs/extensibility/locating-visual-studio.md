@@ -9,12 +9,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b57150a7a2ad94b4e0706f3dd21d2fe410ed813d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c13146d0d48dc176417040bcb756bf8069ad3c3e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944385"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683572"
 ---
 # <a name="locate-visual-studio"></a>Visual Studio を検索します。
 
@@ -22,7 +22,7 @@ Visual Studio 2017 以降では、同じバージョンまたはエディショ�
 
 これは、ネイティブおよびマネージ コードの使用可能な NuGet パッケージで高速の読み取り専用の API です。
 
-| コード | パッケージ |
+| コード | Package |
 | ---- | --- |
 | ネイティブ | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
 | マネージド | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
@@ -33,7 +33,7 @@ Visual Studio 2017 以降では、同じバージョンまたはエディショ�
 
 ビルド環境、PowerShell スクリプト、インストーラー、およびより多くのシナリオで Visual Studio およびその他のツールを検索するには、さまざまなオープン ソース ツールを直接使用したり、独自のスクリプトと共に再配布があります。
 
-| プロジェクト | 説明 |
+| Project | 説明 |
 | ------- | ----------- |
 | [vswhere](https://github.com/Microsoft/vswhere) | 1 つのファイルのネイティブ リリースなどの条件を満たすインスタンスを検索する実行可能ファイルまたはプレリリース版では、どのような製品がインストールされている、およびどのワークロードがインストールされています。 以下の情報が返さを Visual Studio 2017 以降、2010 以降、Visual Studio の検索もサポートします。 参照してください、 [wiki](https://github.com/Microsoft/vswhere/wiki)例についてはします。 |
 | [VSSetup コマンドレット](https://github.com/Microsoft/vssetup.powershell) | サポートされている PowerShell コマンドレットと同じ条件に基づいてインスタンスを検索する際のオブジェクトとしての豊富な情報を返す 2.0 と新しい_vswhere_インスタンスに関するさらに多くのプロパティを検出するとします。 参照してください、 [wiki](https://github.com/Microsoft/vssetup.powershell/wiki)例についてはします。 |
@@ -41,4 +41,4 @@ Visual Studio 2017 以降では、同じバージョンまたはエディショ�
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 セットアップの変更点](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup/)
+* [Visual Studio 2017 セットアップの変更点](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)

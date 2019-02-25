@@ -15,7 +15,7 @@ ms.workload:
 - cordova
 ms.openlocfilehash: f24c8d79f0b300be4e65b9a14e7675ddf2dcf195
 ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/13/2019
 ms.locfileid: "56227408"

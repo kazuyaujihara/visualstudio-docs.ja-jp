@@ -30,57 +30,57 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f937acf163d3a9a1fed2e1dc83fa944c89c4b71a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 9c9ed2a67f320d9d7af94e1a31d88e48e3672a11
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864463"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600390"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Office プロジェクト内のオブジェクトへのグローバル アクセス
-  Office プロジェクトを作成すると、Visual Studio は自動的に `Globals` という名前のクラスをプロジェクトに生成します。 `Globals` クラスを使用して、プロジェクト内の任意のコードから実行時に異なる複数のプロジェクト項目にアクセスすることができます。  
-  
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
-  
-## <a name="how-to-use-the-globals-class"></a>Globals クラスを使用する方法  
- `Globals` はプロジェクト内の特定の項目への参照を保持する静的クラスです。 `Globals` クラスを使用することで、実行時にプロジェクト内の任意のコードから次の項目へとアクセスすることができます。  
-  
-- Excel ブックまたはテンプレート プロジェクトの `ThisWorkbook` および `Sheet`*n* クラス。 これらのオブジェクトは、 `Globals.ThisWorkbook` および `Sheet`*n* プロパティを使用してアクセスすることができます。  
-  
-- Word 文書またはテンプレート プロジェクトの `ThisDocument` クラス。 このオブジェクトには、 `Globals.ThisDocument` プロパティを使用してアクセスすることができます。  
-  
-- `ThisAddIn` VSTO アドイン プロジェクト内のクラス。 このオブジェクトには、 `Globals.ThisAddIn` プロパティを使用してアクセスすることができます。  
-  
-- リボン デザイナーを使用してカスタマイズした、プロジェクト内のすべてのリボン。 リボンには、 `Globals.Ribbons` プロパティを使用してアクセスすることができます。 詳細については、次を参照してください。[実行時にリボンをアクセス](../vsto/accessing-the-ribbon-at-run-time.md)します。  
-  
-- Outlook VSTO アドイン プロジェクトのすべての Outlook フォーム領域。 フォーム領域には、 `Globals.FormRegions` プロパティを使用してアクセスすることができます。 詳細については、次を参照してください。[実行時にフォーム領域へのアクセス](../vsto/accessing-a-form-region-at-run-time.md)します。  
-  
-- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]をターゲットとするプロジェクトで実行時にリボン コントロールおよびホスト項目を作成できるようにするファクトリ オブジェクト。 このオブジェクトには、 `Globals.Factory` プロパティを使用してアクセスすることができます。 このオブジェクトは、次のいずれかのインターフェイスを実装するクラスのインスタンスです。  
-  
-  -   <xref:Microsoft.Office.Tools.Factory>  
-  
-  -   <xref:Microsoft.Office.Tools.Excel.Factory>  
-  
-  -   <xref:Microsoft.Office.Tools.Outlook.Factory>  
-  
-  -   <xref:Microsoft.Office.Tools.Word.Factory>  
-  
-  たとえば、 `Globals.Sheet1` プロパティを使用すると、Excel のドキュメントレベルのプロジェクトの操作ウィンドウでユーザーがボタンをクリックした場合に <xref:Microsoft.Office.Tools.Excel.NamedRange> の `Sheet1` コントロールにテキストを挿入することができます。  
-  
+  Office プロジェクトを作成すると、Visual Studio は自動的に `Globals` という名前のクラスをプロジェクトに生成します。 `Globals` クラスを使用して、プロジェクト内の任意のコードから実行時に異なる複数のプロジェクト項目にアクセスすることができます。
+
+ [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+
+## <a name="how-to-use-the-globals-class"></a>Globals クラスを使用する方法
+ `Globals` はプロジェクト内の特定の項目への参照を保持する静的クラスです。 `Globals` クラスを使用することで、実行時にプロジェクト内の任意のコードから次の項目へとアクセスすることができます。
+
+- Excel ブックまたはテンプレート プロジェクトの `ThisWorkbook` および `Sheet`*n* クラス。 これらのオブジェクトは、 `Globals.ThisWorkbook` および `Sheet`*n* プロパティを使用してアクセスすることができます。
+
+- Word 文書またはテンプレート プロジェクトの `ThisDocument` クラス。 このオブジェクトには、 `Globals.ThisDocument` プロパティを使用してアクセスすることができます。
+
+- `ThisAddIn` VSTO アドイン プロジェクト内のクラス。 このオブジェクトには、 `Globals.ThisAddIn` プロパティを使用してアクセスすることができます。
+
+- リボン デザイナーを使用してカスタマイズした、プロジェクト内のすべてのリボン。 リボンには、 `Globals.Ribbons` プロパティを使用してアクセスすることができます。 詳細については、次を参照してください。[実行時にリボンをアクセス](../vsto/accessing-the-ribbon-at-run-time.md)します。
+
+- Outlook VSTO アドイン プロジェクトのすべての Outlook フォーム領域。 フォーム領域には、 `Globals.FormRegions` プロパティを使用してアクセスすることができます。 詳細については、次を参照してください。[実行時にフォーム領域へのアクセス](../vsto/accessing-a-form-region-at-run-time.md)します。
+
+- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]をターゲットとするプロジェクトで実行時にリボン コントロールおよびホスト項目を作成できるようにするファクトリ オブジェクト。 このオブジェクトには、 `Globals.Factory` プロパティを使用してアクセスすることができます。 このオブジェクトは、次のいずれかのインターフェイスを実装するクラスのインスタンスです。
+
+  -   <xref:Microsoft.Office.Tools.Factory>
+
+  -   <xref:Microsoft.Office.Tools.Excel.Factory>
+
+  -   <xref:Microsoft.Office.Tools.Outlook.Factory>
+
+  -   <xref:Microsoft.Office.Tools.Word.Factory>
+
+  たとえば、 `Globals.Sheet1` プロパティを使用すると、Excel のドキュメントレベルのプロジェクトの操作ウィンドウでユーザーがボタンをクリックした場合に <xref:Microsoft.Office.Tools.Excel.NamedRange> の `Sheet1` コントロールにテキストを挿入することができます。
+
   [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
-  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
-  
-## <a name="initialize-the-globals-class"></a>Globals クラスを初期化します。  
- 使用を試みるコード、`Globals`クラスのドキュメントまたは VSTO アドインが初期化される前に、実行時の例外をスロー可能性があります。 たとえば、クラス レベルの変数の宣言が `Globals` を使用することで失敗する場合があります。これは、宣言されたオブジェクトがインスタンス化される前に、 `Globals` クラスがすべてのホスト項目への参照を使用して初期化されない可能性があるためです。  
-  
-> [!NOTE]  
->  `Globals` クラスは設計時に初期化されることはありませんが、コントロールのインスタンスがデザイナーによって作成されます。 これは、ユーザー コントロール クラス内から `Globals` クラスのプロパティを使用するユーザー コントロールを作成する場合、そのプロパティが返されたオブジェクトを使用しようとする前に **null** を返すかどうかを決定する必要があることを意味します。  
-  
-## <a name="see-also"></a>関連項目  
- [実行時にリボンへのアクセスします。](../vsto/accessing-the-ribbon-at-run-time.md)   
- [実行時にフォーム領域へのアクセスします。](../vsto/accessing-a-form-region-at-run-time.md)   
- [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)   
- [Document ホスト項目](../vsto/document-host-item.md)   
- [Workbook ホスト項目](../vsto/workbook-host-item.md)   
- [Worksheet ホスト項目](../vsto/worksheet-host-item.md)   
- [Office ソリューションでコードを記述します。](../vsto/writing-code-in-office-solutions.md)  
+  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]
+
+## <a name="initialize-the-globals-class"></a>Globals クラスを初期化します。
+ 使用を試みるコード、`Globals`クラスのドキュメントまたは VSTO アドインが初期化される前に、実行時の例外をスロー可能性があります。 たとえば、クラス レベルの変数の宣言が `Globals` を使用することで失敗する場合があります。これは、宣言されたオブジェクトがインスタンス化される前に、 `Globals` クラスがすべてのホスト項目への参照を使用して初期化されない可能性があるためです。
+
+> [!NOTE]
+>  `Globals` クラスは設計時に初期化されることはありませんが、コントロールのインスタンスがデザイナーによって作成されます。 これは、ユーザー コントロール クラス内から `Globals` クラスのプロパティを使用するユーザー コントロールを作成する場合、そのプロパティが返されたオブジェクトを使用しようとする前に **null** を返すかどうかを決定する必要があることを意味します。
+
+## <a name="see-also"></a>関連項目
+- [実行時にリボンへのアクセスします。](../vsto/accessing-the-ribbon-at-run-time.md)
+- [実行時にフォーム領域へのアクセスします。](../vsto/accessing-a-form-region-at-run-time.md)
+- [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
+- [Document ホスト項目](../vsto/document-host-item.md)
+- [Workbook ホスト項目](../vsto/workbook-host-item.md)
+- [Worksheet ホスト項目](../vsto/worksheet-host-item.md)
+- [Office ソリューションにおけるコードの記述](../vsto/writing-code-in-office-solutions.md)

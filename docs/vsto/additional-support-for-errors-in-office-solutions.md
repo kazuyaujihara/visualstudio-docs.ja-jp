@@ -56,37 +56,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9e68a3e97e352a3cb85c0c68fe6666c381c4d5c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 62cd0007a2dd231bcfc0e99f64ac76d20d415263
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949786"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643431"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office ソリューションのエラーのための追加サポート
-  Visual Studio で Office ソリューションを作成するときに発生する問題に対する回答を検索するのに役立つ、次のリソースを使用することができます。  
-  
-## <a name="troubleshoot-specific-errors"></a>特定のエラーをトラブルシューティングします。  
- Office ソリューションの一般的なエラーの詳細については、次のトピックを参照してください。  
-  
--   [Office ソリューションのエラーをトラブルシューティングします。](../vsto/troubleshooting-errors-in-office-solutions.md)  
-  
--   [Office ソリューションのセキュリティをトラブルシューティングします。](../vsto/troubleshooting-office-solution-security.md)  
-  
--   [Office ソリューションのデプロイをトラブルシューティングします。](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-## <a name="other-resources"></a>その他のリソース  
- [Visual Studio のツールの Office フォーラム](http://go.microsoft.com/fwlink/?LinkId=149744)  
- Visual Studio での Office 開発ツールに関する質問をフォーラムを提供します。  
-  
- [Microsoft ヘルプとサポート](http://go.microsoft.com/fwlink/?LinkID=108287)  
- サポート技術情報 (KB: Knowledge Base) の文書、ダウンロード ファイルや更新プログラム、Support Webcast、およびその他のサービスへのアクセスを提供します。  
-  
- [Office ソリューションを開発するための他のリソース](../vsto/additional-resources-for-developing-office-solutions.md)  
- Office ソリューションおよび Visual Studio での Office 開発の開発に関する詳細について学習するためには、その他のリソースへのリンクを提供します。  
-  
-## <a name="see-also"></a>関連項目  
- [Office ソリューションのエラーをトラブルシューティングします。](../vsto/troubleshooting-errors-in-office-solutions.md)   
- [Office ソリューションのセキュリティをトラブルシューティングします。](../vsto/troubleshooting-office-solution-security.md)   
- [Office ソリューションのデプロイをトラブルシューティングします。](../vsto/troubleshooting-office-solution-deployment.md)   
- [Office ソリューションを開発するための他のリソース](../vsto/additional-resources-for-developing-office-solutions.md)  
+
+Visual Studio で Office ソリューションを作成するときに発生する問題に対する回答を検索するのに役立つ、次のリソースを使用することができます。
+
+## <a name="troubleshoot-specific-errors"></a>特定のエラーをトラブルシューティングします。
+
+Office ソリューションの一般的なエラーの詳細については、次のトピックを参照してください。
+
+-   [Office ソリューションのエラーをトラブルシューティングします。](../vsto/troubleshooting-errors-in-office-solutions.md)
+
+-   [Office ソリューションのセキュリティをトラブルシューティングします。](../vsto/troubleshooting-office-solution-security.md)
+
+-   [Office ソリューションのデプロイをトラブルシューティングします。](../vsto/troubleshooting-office-solution-deployment.md)
+
+## <a name="other-resources"></a>その他のリソース
+
+[Visual Studio のツールの Office フォーラム](http://go.microsoft.com/fwlink/?LinkId=149744)
+
+Visual Studio での Office 開発ツールに関する質問をフォーラムを提供します。
+
+[Microsoft ヘルプとサポート](http://go.microsoft.com/fwlink/?LinkID=108287)
+
+サポート技術情報 (KB: Knowledge Base) の文書、ダウンロード ファイルや更新プログラム、Support Webcast、およびその他のサービスへのアクセスを提供します。
+
+[Office ソリューションを開発するための他のリソース](../vsto/additional-resources-for-developing-office-solutions.md)
+
+Office ソリューションおよび Visual Studio での Office 開発の開発に関する詳細について学習するためには、その他のリソースへのリンクを提供します。
+
+## <a name="see-also"></a>関連項目
+
+- [Office ソリューションのエラーをトラブルシューティングします。](../vsto/troubleshooting-errors-in-office-solutions.md)
+- [Office ソリューションのセキュリティをトラブルシューティングします。](../vsto/troubleshooting-office-solution-security.md)
+- [Office ソリューションのデプロイをトラブルシューティングします。](../vsto/troubleshooting-office-solution-deployment.md)
+- [Office ソリューションを開発するための他のリソース](../vsto/additional-resources-for-developing-office-solutions.md)

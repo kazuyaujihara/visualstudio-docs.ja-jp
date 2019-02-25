@@ -10,20 +10,20 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97c43a440eee4aa6ebe5e51a53c4aa2da13111a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 344b8d7af2a89b8a39a1a6686a92f8ea2f4fd573
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959633"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710865"
 ---
 # <a name="debug-session"></a>デバッグ セッション
-デバッガーのアーキテクチャの観点から、*セッション*:  
-  
--   すべてのセットを処理する関連または関連のないを起動または IDE の 1 つのインスタンスに接続です。  
-  
--   セッション デバッグ マネージャー (SDM) によって実装されます。 詳細については、次を参照してください。[セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)します。  
-  
-## <a name="see-also"></a>関連項目  
- [セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)   
- [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)
+デバッガーのアーキテクチャの観点から、*セッション*:
+
+-   すべてのセットを処理する関連または関連のないを起動または IDE の 1 つのインスタンスに接続です。
+
+-   セッション デバッグ マネージャー (SDM) によって実装されます。 詳細については、次を参照してください。[セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)します。
+
+## <a name="see-also"></a>関連項目
+- [セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)
+- [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)

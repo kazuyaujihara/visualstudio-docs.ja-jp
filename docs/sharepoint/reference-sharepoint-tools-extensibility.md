@@ -12,22 +12,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 592720bfce0ed4f05442f82c5c972d63f0d9ad2a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4ab3b60e727f7f4ce113b86fc3491bf244115551
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868015"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621661"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>リファレンス (SharePoint ツール拡張機能)
-  このセクションには、Visual Studio での SharePoint ツールの拡張のリファレンス ドキュメントが含まれています。  
-  
+
+このセクションには、Visual Studio での SharePoint ツールの拡張のリファレンス ドキュメントが含まれています。
+
 ## <a name="in-this-section"></a>このセクションの内容
- [SharePoint プロジェクト項目スキーマのリファレンス](../sharepoint/sharepoint-project-item-schema-reference.md)  
- リファレンス ドキュメント、 *.spdata*ファイルのスキーマ。  
-  
- [API リファレンス&#40;SharePoint ツールの拡張性&#41;](../sharepoint/api-reference-sharepoint-tools-extensibility.md)  
- Visual Studio での SharePoint ツールの拡張の API リファレンス ドキュメントが含まれています。  
-  
+
+[SharePoint プロジェクト項目スキーマのリファレンス](../sharepoint/sharepoint-project-item-schema-reference.md)
+
+リファレンス ドキュメント、 *.spdata*ファイルのスキーマ。
+
+[API リファレンス&#40;SharePoint ツールの拡張性&#41;](../sharepoint/api-reference-sharepoint-tools-extensibility.md)
+
+Visual Studio での SharePoint ツールの拡張の API リファレンス ドキュメントが含まれています。
+
 ## <a name="see-also"></a>関連項目
- [Visual Studio の SharePoint ツールを拡張します。](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
+
+- [Visual Studio の SharePoint ツールを拡張します。](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)

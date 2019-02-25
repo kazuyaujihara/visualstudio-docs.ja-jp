@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75e918c752484129f9b89f939bc6fbbce6df803c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961599"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618199"
 ---
 # <a name="web-site-support-templates"></a>Web サイト サポートのテンプレート
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web サイト プロジェクトと項目テンプレートは、新しい Web サイト プロジェクトと項目を最初から作成する必要はありませんが、開発プロセスを加速する再利用可能かつカスタマイズ可能な Web サイト プロジェクトと項目スタブを提供します。 詳細については[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]テンプレートを参照してください[を作成するプロジェクトと項目テンプレート](../../ide/creating-project-and-item-templates.md)します。
@@ -185,4 +185,4 @@ ms.locfileid: "54961599"
      存在する場合は、新しいマスター ページとその依存ファイルの内容を決定するテンプレート ファイル。
 
 ## <a name="see-also"></a>関連項目
- [Web サイト サポート](../../extensibility/internals/web-site-support.md)
+- [Web サイト サポート](../../extensibility/internals/web-site-support.md)

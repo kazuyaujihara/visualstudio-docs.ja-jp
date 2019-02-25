@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::IsEqual |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject::IsEqual
 helpviewer_keywords:
@@ -12,44 +12,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b801594c4e3dd1edb04ae0d29dfe6c814fa4a094
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 49d909dc0896bcc1b130ce908699c04ad9543c73
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954450"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691112"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
-このオブジェクトを持つオブジェクトを比較します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-HRESULT IsEqual(   
-   IDebugObject* pObject,  
-   BOOL*         pfIsEqual  
-);  
-```  
-  
-```csharp  
-int IsEqual(  
-   IDebugObject pObject,  
-   out int      pfIsEqual  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pObject`  
- [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)と比較するオブジェクトを表すオブジェクト。  
-  
- `pfIsEqual`  
- [out]0 以外を返します (`TRUE`) のオブジェクトの値がそれ以外の場合は 0 を返します (`FALSE`)。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
-  
-## <a name="remarks"></a>Remarks  
- 通常、このメソッドはによって表される値のアドレスを比較できる、`pObject`パラメーターとこの[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトは、アドレスが等しいかどうかは、オブジェクトを等しい。  
-  
-## <a name="see-also"></a>関連項目  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+このオブジェクトを持つオブジェクトを比較します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT IsEqual( 
+   IDebugObject* pObject,
+   BOOL*         pfIsEqual
+);
+```
+
+```csharp
+int IsEqual(
+   IDebugObject pObject,
+   out int      pfIsEqual
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pObject`
+
+ [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)と比較するオブジェクトを表すオブジェクト。
+
+ `pfIsEqual`
+
+ [out]0 以外を返します (`TRUE`) のオブジェクトの値がそれ以外の場合は 0 を返します (`FALSE`)。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+
+## <a name="remarks"></a>Remarks
+ 通常、このメソッドはによって表される値のアドレスを比較できる、`pObject`パラメーターとこの[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトは、アドレスが等しいかどうかは、オブジェクトを等しい。
+
+## <a name="see-also"></a>関連項目
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

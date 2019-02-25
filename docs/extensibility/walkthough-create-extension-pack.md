@@ -10,31 +10,31 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55ceb788807f5d4fc9de2a96b4d359f290218dda
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866323"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718365"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>チュートリアル: 拡張機能パックを作成する
 
 拡張機能パックには、一連の拡張機能を一緒にインストールすることができます。 拡張機能パックを使用すると、簡単にお気に入りの拡張機能を他のユーザーに共有または特定のシナリオの拡張機能のセットをバンドルできます。
-  
+
 ## <a name="prerequisites"></a>必須コンポーネント
 
-Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
+Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。
 
 拡張機能パックの機能は、Visual Studio 15.8 Preview 2 以降から使用できます。
-  
+
 ## <a name="create-an-extension-with-an-extension-pack-item-template"></a>拡張機能を拡張パック項目テンプレートの作成します。
 
 拡張機能パック項目テンプレートは、一緒にインストールすることができる拡張機能のセットを拡張機能パックを作成します。
-  
-1. **新しいプロジェクト** ダイアログ ボックスで、展開**Visual c#** または**Visual Basic**順にクリックします**Extensibility**します。 **テンプレート**ペインで、 **VSIX プロジェクト**します。 **[名前]** ボックスに「 `Test Extension Pack`」と入力します。 **[OK]** をクリックします。  
-  
-2. **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 移動する、Visual c#**拡張**ノード**拡張パック**します。 既定のファイル名 (ExtensionPack1.cs) のままにします。  
-  
+
+1. **新しいプロジェクト** ダイアログ ボックスで、展開**Visual c#** または**Visual Basic**順にクリックします**Extensibility**します。 **テンプレート**ペインで、 **VSIX プロジェクト**します。 **[名前]** ボックスに「 `Test Extension Pack`」と入力します。 **[OK]** をクリックします。
+
+2. **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 移動する、Visual c#**拡張**ノード**拡張パック**します。 既定のファイル名 (ExtensionPack1.cs) のままにします。
+
 3. 次のコードを含む、ExtensionPack1.vsext ファイルが追加されます。
 
    ```json
@@ -53,18 +53,18 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
         "name": "CopyAsHtml"
       }
     ]
-   }  
+   }
    ```
 
 4. 拡張機能パックに含めない拡張機能の vsixid で確認できます、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)します。 拡張機能を含める をクリックする**コピー ID**します。 既存を更新する**vsixId**上記のファイルまたはリストに別の拡張機能を追加します。
 
     ![Marketplace から VsixId をコピーします。](media/vsixid-marketplace.png)
 
-5. プロジェクトをビルドし、拡張機能を Marketplace にアップロードします。 参照してください[Visual Studio 拡張機能を公開](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)します。 
-    
+5. プロジェクトをビルドし、拡張機能を Marketplace にアップロードします。 参照してください[Visual Studio 拡張機能を公開](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)します。
+
 > [!NOTE]
 > 拡張機能パックをで使用できる拡張機能をインストールのみ、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)または[プライベート ギャラリー](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)します。
- 
+
 ## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>Visual Studio Marketplace から拡張機能パックをインストールします。
 
 これで、拡張機能を公開すると、Visual Studio にインストールし、テストします。
