@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2cfd6153389bbfe9cbbd36f33f6a2e4384509297
 ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/13/2019
 ms.locfileid: "56227062"
@@ -52,6 +52,6 @@ Windows サービスをデバッグするには、サービスを起動し、デ
 
 5. Visual Studio の新しいインスタンスが開始し、 `Debugger.Launch()` メソッドで実行が停止します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [デバッガーのセキュリティ](../debugger/debugger-security.md)  
 [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)
