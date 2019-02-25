@@ -56,7 +56,7 @@ ms.locfileid: "54761641"
   
      エディターの新しいタブ付きインスタンスが追加されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [エディターのカスタマイズ](../ide/customizing-the-editor.md)   
  [コードの作成](../ide/writing-code-in-the-code-and-text-editor.md)   
  [ウィンドウ レイアウトをカスタマイズする](../ide/customizing-window-layouts-in-visual-studio.md)
