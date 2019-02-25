@@ -78,5 +78,5 @@ ms.locfileid: "54777304"
     > [!NOTE]
     >  Visual Studio の他の場所でも、同じキーボード ショートカットを使って **[定義をここに表示]** ウィンドウでコードを編集できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)
