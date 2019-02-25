@@ -54,7 +54,7 @@ Visual Studio のこのバージョンは、旧バージョンの Visual Studio 
     |C++|[方法: ターゲット フレームワークおよびプラットフォームのツールセットを変更する](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
     |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[以前のバージョンの共通言語ランタイムでの JScript アプリケーションの実行](http://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のインストール](../install/install-visual-studio-2015.md)
 - [Visual Studio プロジェクトのポート、移行、アップグレード](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
