@@ -86,5 +86,5 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 |        ロシア語        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
 |        トルコ語        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio のインストール]()
