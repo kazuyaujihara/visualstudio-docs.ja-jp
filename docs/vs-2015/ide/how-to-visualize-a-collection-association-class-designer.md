@@ -38,7 +38,7 @@ ms.locfileid: "54799731"
   
      プロパティまたはフィールドは、収集された型にリンクする関連行として表示されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [方法: 型の間の関連付けを作成する (クラス デザイナー)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [クラスおよび型のデザイン (クラス デザイナー)](../ide/designing-classes-and-types-class-designer.md)   
  [型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)
