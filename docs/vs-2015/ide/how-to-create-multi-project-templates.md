@@ -149,7 +149,7 @@ ms.locfileid: "54755340"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
  [方法 : プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)   
