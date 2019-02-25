@@ -42,7 +42,7 @@ ms.locfileid: "54788166"
   
      **(C#)** **[アイコン]** 一覧の近くにある **[参照]** ボタンを選び、使うアイコン ファイルの場所を参照します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [アプリケーション プロパティの管理](../ide/application-properties.md)  
