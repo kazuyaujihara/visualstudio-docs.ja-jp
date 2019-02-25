@@ -78,5 +78,5 @@ ms.locfileid: "54798960"
   
 5.  **[ユーザー インポートの更新]** ボタンをクリックすると、**[インポートされた名前空間]** の一覧の名前空間が更新されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [プロジェクト内の参照の管理](../ide/managing-references-in-a-project.md)
