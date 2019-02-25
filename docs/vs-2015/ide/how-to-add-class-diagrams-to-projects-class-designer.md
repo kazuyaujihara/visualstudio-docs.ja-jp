@@ -50,7 +50,7 @@ ms.locfileid: "54760267"
   
      自動設定されたクラス ダイアグラムが作成されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [方法: クラス デザイナーを使用して型を作成する](../ide/how-to-create-types-by-using-class-designer.md)   
  [方法: 既存の型を表示する (クラス デザイナー)](../ide/how-to-view-existing-types-class-designer.md)   
  [クラスおよび型のデザイン (クラス デザイナー)](../ide/designing-classes-and-types-class-designer.md)   
