@@ -157,5 +157,5 @@ ms.locfileid: "54790098"
   
  **参照の強調表示を無効にする**  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [言語固有のエディター オプションの設定](../../ide/reference/setting-language-specific-editor-options.md)
