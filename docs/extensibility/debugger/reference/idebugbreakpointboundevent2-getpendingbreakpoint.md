@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointBoundEvent2::GetPendingBreakpoint |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointBoundEvent2::GetPendingBreakpoint
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4039a8ca3b6759480ff1df7b2a9f648ae4ad01e9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e0a67ec99f553fd5201b1ee1bf17760fd94bb890
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316159"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699185"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
 バインドされている保留中のブレークポイントを取得します。
@@ -37,8 +37,9 @@ int GetPendingBreakpoint(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`ppPendingBP`  
-[out]返します、 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)バインドされている保留中のブレークポイントを表すオブジェクト。
+`ppPendingBP`
+
+ [out]返します、 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)バインドされている保留中のブレークポイントを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -73,5 +74,5 @@ STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)  
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

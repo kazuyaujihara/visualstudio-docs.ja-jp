@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319cd31ccdc2c5c8cfa2b4540e5f32382008ca5a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873745"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636516"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>方法: オフラインか、サーバーで使用するデータをキャッシュします。
   オフラインをマーキングするドキュメントでキャッシュされるデータ項目使用できるようにします。 これもにより、データのドキュメントがサーバーに格納されている場合、他のコードによって操作されるドキュメントで。
@@ -60,4 +60,8 @@ ms.locfileid: "54873745"
 4.  **プロパティ**ウィンドウで、設定、**修飾子**プロパティを**パブリック**(既定では、**内部**)。
 
 ## <a name="see-also"></a>関連項目
- [データをキャッシュ](../vsto/caching-data.md)[方法。Office ドキュメント内のデータ ソースをプログラムでキャッシュ](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)[方法。パスワードで保護されたドキュメント内のデータをキャッシュ](../vsto/how-to-cache-data-in-a-password-protected-document.md)[サーバー上のドキュメント内のデータ アクセス](../vsto/accessing-data-in-documents-on-the-server.md)[データの保存](../data-tools/saving-data.md)
+- [キャッシュ データ](../vsto/caching-data.md)
+- [方法: Office ドキュメント内のデータ ソースをプログラムでキャッシュします。](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+- [方法: パスワードで保護されたドキュメント内のキャッシュ データ](../vsto/how-to-cache-data-in-a-password-protected-document.md)
+- [サーバー上のドキュメントのデータにアクセス](../vsto/accessing-data-in-documents-on-the-server.md)
+- [データを保存します。](../data-tools/saving-data.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugExpression2::EvaluateSync |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugExpression2::EvaluateSync
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41ae89c52a477686647ccd5e2d3bf6f5c70c95e
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 158e24a57838d7f7a1c7221fc243455b5a4bd2bc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450517"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678554"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 このメソッドは、同期的に、式を評価します。
@@ -43,17 +43,21 @@ int EvaluateSync(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`dwFlags`  
-[in]フラグの組み合わせ、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)式の評価を制御する列挙体。
+`dwFlags`
 
-`dwTimeout`  
-[in]このメソッドから戻る前に待機するミリ秒単位で最大時間。 使用`INFINITE`を無期限に待機します。
+ [in]フラグの組み合わせ、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)式の評価を制御する列挙体。
 
-`pExprCallback`  
-[in]このパラメーターは、常に null 値です。
+`dwTimeout`
 
-`ppResult`  
-[out]返します、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)式の評価の結果を格納するオブジェクト。
+ [in]このメソッドから戻る前に待機するミリ秒単位で最大時間。 使用`INFINITE`を無期限に待機します。
+
+`pExprCallback`
+
+ [in]このパラメーターは、常に null 値です。
+
+`ppResult`
+
+ [out]返します、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)式の評価の結果を格納するオブジェクト。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 一部の一般的なエラー コードは次のとおりです。
@@ -115,7 +119,7 @@ HRESULT CExpression::EvalExpression(BOOL bSynchronous,
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)  
-[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)  
-[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)  
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
+- [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

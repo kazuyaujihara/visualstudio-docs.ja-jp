@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2
 helpviewer_keywords:
@@ -12,53 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d534c5616bd32011fb4e84367911b9a8c1b29ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce4112addee78c4df293bf49e1cb191e4bbcd18b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986944"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703940"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
-このインターフェイスは、特定のスレッドのコール スタックの 1 つのスタック フレームを表します。  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-IDebugStackFrame2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デバッグ エンジン (DE) は、スタック フレームを表すためには、このインターフェイスを実装します。  
-  
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- 呼び出す[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)を取得する、 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)インターフェイス。 呼び出す[次](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)を取得する、 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)を含む構造体、`IDebugStackFrame2`インターフェイス。  
-  
-## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugStackFrame2`します。  
-  
-|メソッド|説明|  
-|------------|-----------------|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|このスタック フレームのコードのコンテキストを取得します。|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|このスタック フレームのドキュメント コンテキストを取得します。|  
-|[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|スタック フレームの名前を取得します。|  
-|[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|スタック フレームの説明を取得します。|  
-|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|スタック フレームに関連付けられている物理アドレスの範囲のマシンに依存する形式を取得します。|  
-|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|スタック フレームとスレッドの現在のコンテキストで式の評価を行うためには、評価コンテキストを取得します。|  
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|スタック フレームに関連付けられている言語を取得します。|  
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|スタック フレームに関連付けられているプロパティの説明を取得します。|  
-|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|スタックの列挙子フレームのプロパティを作成します。|  
-|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|スタック フレームに関連付けられているスレッドを取得します。|  
-  
-## <a name="remarks"></a>Remarks  
- このインターフェイスは、デバッグ中のプログラムが (いずれかはユーザー設定のブレークポイントまたは例外によって生じた) ブレークポイントで停止された場合にのみ取得されます。 このインターフェイスは、式を評価する式のコンテキストを取得できます、レジスタの一覧を返すことが、または呼び出し履歴を取得して調べることができます。  
-  
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
-  
- 名前空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+このインターフェイスは、特定のスレッドのコール スタックの 1 つのスタック フレームを表します。
+
+## <a name="syntax"></a>構文
+
+```
+IDebugStackFrame2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>実装についてのメモ
+ デバッグ エンジン (DE) は、スタック フレームを表すためには、このインターフェイスを実装します。
+
+## <a name="notes-for-callers"></a>呼び出し元のノート
+ 呼び出す[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)を取得する、 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)インターフェイス。 呼び出す[次](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)を取得する、 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)を含む構造体、`IDebugStackFrame2`インターフェイス。
+
+## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
+ 次の表は、メソッドの`IDebugStackFrame2`します。
+
+|メソッド|説明|
+|------------|-----------------|
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|このスタック フレームのコードのコンテキストを取得します。|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|このスタック フレームのドキュメント コンテキストを取得します。|
+|[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|スタック フレームの名前を取得します。|
+|[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|スタック フレームの説明を取得します。|
+|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|スタック フレームに関連付けられている物理アドレスの範囲のマシンに依存する形式を取得します。|
+|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|スタック フレームとスレッドの現在のコンテキストで式の評価を行うためには、評価コンテキストを取得します。|
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|スタック フレームに関連付けられている言語を取得します。|
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|スタック フレームに関連付けられているプロパティの説明を取得します。|
+|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|スタックの列挙子フレームのプロパティを作成します。|
+|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|スタック フレームに関連付けられているスレッドを取得します。|
+
+## <a name="remarks"></a>Remarks
+ このインターフェイスは、デバッグ中のプログラムが (いずれかはユーザー設定のブレークポイントまたは例外によって生じた) ブレークポイントで停止された場合にのみ取得されます。 このインターフェイスは、式を評価する式のコンテキストを取得できます、レジスタの一覧を返すことが、または呼び出し履歴を取得して調べることができます。
+
+## <a name="requirements"></a>必要条件
+ ヘッダー: msdbg.h
+
+ 名前空間: Microsoft.VisualStudio.Debugger.Interop
+
+ アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>関連項目
+- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

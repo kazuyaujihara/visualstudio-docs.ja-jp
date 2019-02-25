@@ -12,58 +12,63 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b2f1fff6bff9130bc337a4636aea3127d85514b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d21dfe4418d033776431f4864f46412a798be204
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993510"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711710"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 関数
-この関数は、指定されたコールバック関数を使用して各ファイルの名前変更に関する情報を提供する、ファイルの一覧を列挙します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-SCCRTN SccQueryChanges(  
-   LPVOID           pContext,  
-   LONG             nFiles,  
-   LPCSTR*          lpFileNames,  
-   QUERYCHANGESFUNC pfnCallback,  
-   LPVOID           pvCallerData  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- pContext  
- [in]ソース管理プラグインのコンテキストのポインター。  
-  
- nFiles  
- [in]ファイルの数`lpFileNames`配列。  
-  
- lpFileNames  
- [in]に関する情報を取得するファイル名の配列。  
-  
- pfnCallback  
- [in]リスト内の各ファイル名を呼び出すためのコールバック関数 (を参照してください[QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)詳細については)。  
-  
- pvCallerData  
- [in]コールバック関数に渡される値は変更されません。  
-  
-## <a name="return-value"></a>戻り値  
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。  
-  
-|[値]|説明|  
-|-----------|-----------------|  
-|SCC_OK|クエリの処理が正常に完了しました。|  
-|SCC_E_PROJNOTOPEN|ソース管理で、プロジェクトが開かれていません。|  
-|SCC_E_ACCESSFAILURE|ソース管理システムのネットワークまたは競合の問題の可能性へのアクセスに問題が発生しました。|  
-|SCC_E_NONSPECIFICERROR|指定されていないか、一般的なエラーが発生しました。|  
-  
-## <a name="remarks"></a>Remarks  
- 名前空間に変更を照会する。 具体的には、名前変更、追加、およびファイルを削除します。  
-  
-## <a name="see-also"></a>関連項目  
- [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)   
- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
- [エラー コード](../extensibility/error-codes.md)
+この関数は、指定されたコールバック関数を使用して各ファイルの名前変更に関する情報を提供する、ファイルの一覧を列挙します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+SCCRTN SccQueryChanges(
+   LPVOID           pContext,
+   LONG             nFiles,
+   LPCSTR*          lpFileNames,
+   QUERYCHANGESFUNC pfnCallback,
+   LPVOID           pvCallerData
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ pContext
+
+[in]ソース管理プラグインのコンテキストのポインター。
+
+ nFiles
+
+[in]ファイルの数`lpFileNames`配列。
+
+ lpFileNames
+
+[in]に関する情報を取得するファイル名の配列。
+
+ pfnCallback
+
+[in]リスト内の各ファイル名を呼び出すためのコールバック関数 (を参照してください[QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)詳細については)。
+
+ pvCallerData
+
+[in]コールバック関数に渡される値は変更されません。
+
+## <a name="return-value"></a>戻り値
+ この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+
+|[値]|説明|
+|-----------|-----------------|
+|SCC_OK|クエリの処理が正常に完了しました。|
+|SCC_E_PROJNOTOPEN|ソース管理で、プロジェクトが開かれていません。|
+|SCC_E_ACCESSFAILURE|ソース管理システムのネットワークまたは競合の問題の可能性へのアクセスに問題が発生しました。|
+|SCC_E_NONSPECIFICERROR|指定されていないか、一般的なエラーが発生しました。|
+
+## <a name="remarks"></a>Remarks
+ 名前空間に変更を照会する。 具体的には、名前変更、追加、およびファイルを削除します。
+
+## <a name="see-also"></a>関連項目
+- [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
+- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)
+- [エラー コード](../extensibility/error-codes.md)

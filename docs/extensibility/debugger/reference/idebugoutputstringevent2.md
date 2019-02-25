@@ -1,7 +1,7 @@
 ---
 title: IDebugOutputStringEvent2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugOutputStringEvent2
 helpviewer_keywords:
@@ -12,51 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e7f13d75090e2b1a8e0fc22bc1640943e32785c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dfce52f89e75c8e9e697a3fa5ad4184c3d1fa42b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971833"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721982"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
-このインターフェイスは、文字列を出力する、デバッグ エンジン (DE) によって、セッション デバッグ マネージャー (SDM) に送信されます。  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-IDebugOutputStringEvent2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- 文字列を送信するには、このインターフェイスを実装する、DE、**出力**IDE のウィンドウ。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して[QueryInterface](/cpp/atl/queryinterface)にアクセスする、`IDebugEvent2`インターフェイス。  
-  
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- デは作成し、文字列を送信するには、このイベント オブジェクトを送信します、**出力**ウィンドウ。 使用して、イベントが送信される、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムにアタッチされているときに、SDM によって指定されたコールバック関数。  
-  
-## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugOutputStringEvent2`します。  
-  
-|メソッド|説明|  
-|------------|-----------------|  
-|[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|表示可能なメッセージを取得します。|  
-  
-## <a name="remarks"></a>Remarks  
- たとえば、アンマネージ コードで出力される文字列開始できるはデバッグ中のプログラムは、Win32 に文字列を送信すると`OutputDebugString`関数。 この文字列は、DE によって傍受ありとして SDM に送られる、`IDebugOutputStringEvent2`イベント。  
-  
- 使用[IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)ユーザー応答を必要とするメッセージを送信します。  
-  
- 使用[IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)応答が不要なエラー メッセージを送信します。  
-  
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
-  
- 名前空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>関連項目  
- [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
- [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)   
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+このインターフェイスは、文字列を出力する、デバッグ エンジン (DE) によって、セッション デバッグ マネージャー (SDM) に送信されます。
+
+## <a name="syntax"></a>構文
+
+```
+IDebugOutputStringEvent2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>実装についてのメモ
+ 文字列を送信するには、このインターフェイスを実装する、DE、**出力**IDE のウィンドウ。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して[QueryInterface](/cpp/atl/queryinterface)にアクセスする、`IDebugEvent2`インターフェイス。
+
+## <a name="notes-for-callers"></a>呼び出し元のノート
+ デは作成し、文字列を送信するには、このイベント オブジェクトを送信します、**出力**ウィンドウ。 使用して、イベントが送信される、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムにアタッチされているときに、SDM によって指定されたコールバック関数。
+
+## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
+ 次の表は、メソッドの`IDebugOutputStringEvent2`します。
+
+|メソッド|説明|
+|------------|-----------------|
+|[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|表示可能なメッセージを取得します。|
+
+## <a name="remarks"></a>Remarks
+ たとえば、アンマネージ コードで出力される文字列開始できるはデバッグ中のプログラムは、Win32 に文字列を送信すると`OutputDebugString`関数。 この文字列は、DE によって傍受ありとして SDM に送られる、`IDebugOutputStringEvent2`イベント。
+
+ 使用[IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)ユーザー応答を必要とするメッセージを送信します。
+
+ 使用[IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)応答が不要なエラー メッセージを送信します。
+
+## <a name="requirements"></a>必要条件
+ ヘッダー: msdbg.h
+
+ 名前空間: Microsoft.VisualStudio.Debugger.Interop
+
+ アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>関連項目
+- [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
+- [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
+- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

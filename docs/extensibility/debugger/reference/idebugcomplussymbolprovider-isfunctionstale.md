@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::IsFunctionStale |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsFunctionStale
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97e6cd6d3f44c294788289f50ea55cef966e2250
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d17b6a6fc84a7e0d2787e93bb12345d8243bfd41
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412761"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717846"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
 かどうか、指定されたデバッグ アドレスに、この関数は古いと見なさを決定します。
@@ -35,8 +35,9 @@ int IsFunctionStale(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`pAddress`  
-[in]デバッグ アドレスで表される、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。 このアドレスは、METHOD_ADDRESS を指定する必要があります。
+`pAddress`
+
+ [in]デバッグ アドレスで表される、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。 このアドレスは、METHOD_ADDRESS を指定する必要があります。
 
 ## <a name="return-value"></a>戻り値
 場合は、関数は、古いと見なされますが、返す`S_OK`します。 関数では、古い、返します`S_FALSE`します。
@@ -89,4 +90,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

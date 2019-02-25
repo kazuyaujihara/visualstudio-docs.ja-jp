@@ -1,7 +1,7 @@
 ---
 title: BPERESI_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BPERESI_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5877bc3fa7fb2844030a862a0a8f8244cffdbb6d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 488c2b1a96d01e0e7dfa9868d2f7e5111adc4e2d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317550"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699432"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 ブレークポイントの失敗した解像度について取得する情報を指定します。
@@ -48,23 +48,17 @@ public enum enum_BPERESI_FIELDS {
 ```
 
 ## <a name="members"></a>メンバー
-PERESI_BPRESLOCATION  
-初期化/使用、 `bpResLocation` (ブレークポイント解像度の位置) フィールドの[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)構造体。
+PERESI_BPRESLOCATION 初期化/使用、 `bpResLocation` (ブレークポイント解像度の位置) フィールドの[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)構造体。
 
-BPERESI_PROGRAM  
-初期化/使用、`pProgram`のフィールド、`BP_ERROR_RESOLUTION_INFO`構造体。
+BPERESI_PROGRAM 初期化/使用、`pProgram`のフィールド、`BP_ERROR_RESOLUTION_INFO`構造体。
 
-BPERESI_THREAD  
-初期化/使用、`pThread`のフィールド、`BP_ERROR_RESOLUTION_INFO`構造体。
+BPERESI_THREAD 初期化/使用、`pThread`のフィールド、`BP_ERROR_RESOLUTION_INFO`構造体。
 
-BPERESI_MESSAGE  
-初期化/使用、`bstrMessage`のフィールド、`BP_ERROR_RESOLUTION_INFO`構造体。
+BPERESI_MESSAGE 初期化/使用、`bstrMessage`のフィールド、`BP_ERROR_RESOLUTION_INFO`構造体。
 
-BPERESI_TYPE  
-初期化/使用、 `dwType` (ブレークポイントの種類) フィールドの`BP_ERROR_RESOLUTION_INFO`構造体。
+BPERESI_TYPE 初期化/使用、 `dwType` (ブレークポイントの種類) フィールドの`BP_ERROR_RESOLUTION_INFO`構造体。
 
-BPERESI_ALLFIELDS  
-すべてのフィールドの初期化/使用して、`BP_ERROR_RESOLUTION_INFO`構造体。
+BPERESI_ALLFIELDS 初期化/使用のすべてのフィールド、`BP_ERROR_RESOLUTION_INFO`構造体。
 
 ## <a name="remarks"></a>Remarks
 パラメーターとして渡される、 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)のどのフィールドを示すメソッド、 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)構造体が初期化されるは。
@@ -81,6 +75,6 @@ BPERESI_ALLFIELDS
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)

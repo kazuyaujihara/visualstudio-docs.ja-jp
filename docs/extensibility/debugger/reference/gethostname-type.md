@@ -1,7 +1,7 @@
 ---
 title: GETHOSTNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - GETHOSTNAME_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f158cdaba17c030ce830c8adf26b6985c9b86dad
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d8578056f907c70e3b900b1f3cdbcbeefc39688b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413437"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689240"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 ホスト名の種類を指定します。
@@ -40,11 +40,9 @@ public enum enum_GETHOSTNAME_TYPE {
 ```
 
 ## <a name="members"></a>メンバー
-GHN_FRIENDLY_NAME  
-ホストのフレンドリ名を指定します。
+GHN_FRIENDLY_NAME では、ホストのフレンドリ名を指定します。
 
-GHN_FILE_NAME  
-ホストのファイル名を指定します。
+GHN_FILE_NAME では、ホストのファイル名を指定します。
 
 ## <a name="remarks"></a>Remarks
 これらの値が引数として渡される、 [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)さまざまな形式でのホスト名を取得します。
@@ -57,5 +55,5 @@ GHN_FILE_NAME
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

@@ -11,12 +11,13 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89ff96ef73070570b7295ab6256a501d5865b6e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982768"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693010"
 ---
 # <a name="deploy-custom-start-pages"></a>カスタム スタート ページをデプロイします。
 
@@ -43,13 +44,13 @@ Visual Studio をスタート ページ プロジェクト テンプレートを
 
 - 手動で作成、 *.vsix*ファイル。 作成する、 *.vsix*ファイルを手動で。
 
-  1.  作成、 *extension.vsixmanifest*ファイルと *[Content_Types] .xml*新しいフォルダー内のファイル。 詳細については、次を参照してください。 [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)します。
+   1. 作成、 *extension.vsixmanifest*ファイルと *[Content_Types] .xml*新しいフォルダー内のファイル。 詳細については、次を参照してください。 [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)します。
 
-  2.  Windows エクスプ ローラーでは、2 つの XML ファイルを含むフォルダーを右クリックし、をクリックして**送信**圧縮 (zip 形式) フォルダーを順にクリックします。 結果の名前を変更 *.zip*ファイルを*Filename.vsix*ファイル名は、パッケージをインストールする再頒布可能ファイルの名前です。
+   2. Windows エクスプ ローラーでは、2 つの XML ファイルを含むフォルダーを右クリックし、をクリックして**送信**圧縮 (zip 形式) フォルダーを順にクリックします。 結果の名前を変更 *.zip*ファイルを*Filename.vsix*ファイル名は、パッケージをインストールする再頒布可能ファイルの名前です。
 
-  Visual studio がスタート ページでは、認識、 `Content Element` VSIX マニフェストの含める必要があります、`CustomExtension Element`を持つ、`Type`属性に設定`"StartPage"`。 VSIX 配置を使用して、インストールされているスタート ページの拡張機能が表示されます、**スタート ページのカスタマイズ**ボックスの一覧、**スタートアップ**オプションのページとして **[インストールされている拡張機能]** *拡張機能名*します。
+Visual studio がスタート ページでは、認識、 `Content Element` VSIX マニフェストの含める必要があります、`CustomExtension Element`を持つ、`Type`属性に設定`"StartPage"`。 VSIX 配置を使用して、インストールされているスタート ページの拡張機能が表示されます、**スタート ページのカスタマイズ**ボックスの一覧、**スタートアップ**オプションのページとして **[インストールされている拡張機能]** *拡張機能名*します。
 
-  スタート ページのパッケージには、アセンブリが含まれている場合、Visual Studio の起動時に使用可能なものには、パスの登録をバインディングを追加する必要があります。 これを行うことをパッケージが含まれていることを確認して、 *.pkgdef*次の情報を含むファイル。
+スタート ページのパッケージには、アセンブリが含まれている場合、Visual Studio の起動時に使用可能なものには、パスの登録をバインディングを追加する必要があります。 これを行うことをパッケージが含まれていることを確認して、 *.pkgdef*次の情報を含むファイル。
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]

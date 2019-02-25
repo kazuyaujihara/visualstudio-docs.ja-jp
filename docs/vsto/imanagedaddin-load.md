@@ -11,40 +11,40 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 267e2ec1b2ec2dbb5b72a100185ce6b68d455c39
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 87fb34e90d36383f49b6369fb1dea4b9854c7300
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865888"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604008"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
-  管理対象の VSTO アドインが読み込まれるときに呼び出されます。  
-  
-## <a name="syntax"></a>構文  
-  
+  管理対象の VSTO アドインが読み込まれるときに呼び出されます。
+
+## <a name="syntax"></a>構文
+
 ```csharp
-HRESULT Load([in] BSTR bstrManifestURL,   
-             [in] IDispatch *pdispApplication);  
-```  
-  
-### <a name="parameters"></a>パラメーター  
-  
-|パラメーター|説明|  
-|---------------|-----------------|  
-|*bstrManifestURL*|VSTO アドインのマニフェストの完全なパス。|  
-|*pdispApplication*|VSTO アドインの読み込みは、ホスト アプリケーションを表すへのポインター。|  
-  
-## <a name="return-value"></a>戻り値  
- メソッドが正常に完了したかどうかを示す HRESULT 値。  
-  
-## <a name="remarks"></a>Remarks  
- マニフェストは、VSTO アドインの読み込みに使用される情報を提供するファイル (通常は XML ファイル) です。 たとえば、マニフェストには、VSTO アドイン アセンブリの場所や、VSTO アドインが読み込まれるときにインスタンス化するエントリ ポイント クラスを指定できます。  
-  
- *BstrManifestURL*パラメーターには値が含まれています、`Manifest`の下のエントリ、 **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<アプリケーション名>_ \Addins\\_\<アドイン ID >_**  VSTO アドインのレジストリ キー。 詳細については、次を参照してください。 [IManagedAddin インターフェイス](../vsto/imanagedaddin-interface.md)します。  
-  
- 読み込まれる VSTO アドインのアプリケーション ドメインやセキュリティ ポリシーの構成などのタスクを実行するように、 [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) メソッドを実装します。  
-  
-## <a name="see-also"></a>関連項目  
- [IManagedAddin Interface](../vsto/imanagedaddin-interface.md)   
- [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)  
+HRESULT Load([in] BSTR bstrManifestURL,
+             [in] IDispatch *pdispApplication);
+```
+
+### <a name="parameters"></a>パラメーター
+
+|パラメーター|説明|
+|---------------|-----------------|
+|*bstrManifestURL*|VSTO アドインのマニフェストの完全なパス。|
+|*pdispApplication*|VSTO アドインの読み込みは、ホスト アプリケーションを表すへのポインター。|
+
+## <a name="return-value"></a>戻り値
+ メソッドが正常に完了したかどうかを示す HRESULT 値。
+
+## <a name="remarks"></a>Remarks
+ マニフェストは、VSTO アドインの読み込みに使用される情報を提供するファイル (通常は XML ファイル) です。 たとえば、マニフェストには、VSTO アドイン アセンブリの場所や、VSTO アドインが読み込まれるときにインスタンス化するエントリ ポイント クラスを指定できます。
+
+ *BstrManifestURL*パラメーターには値が含まれています、`Manifest`の下のエントリ、 **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<アプリケーション名>_ \Addins\\_\<アドイン ID >_**  VSTO アドインのレジストリ キー。 詳細については、次を参照してください。 [IManagedAddin インターフェイス](../vsto/imanagedaddin-interface.md)します。
+
+ 読み込まれる VSTO アドインのアプリケーション ドメインやセキュリティ ポリシーの構成などのタスクを実行するように、 [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) メソッドを実装します。
+
+## <a name="see-also"></a>関連項目
+- [IManagedAddin Interface](../vsto/imanagedaddin-interface.md)
+- [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)

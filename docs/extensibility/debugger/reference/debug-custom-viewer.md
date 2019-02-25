@@ -1,7 +1,7 @@
 ---
 title: DEBUG_CUSTOM_VIEWER |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_CUSTOM_VIEWER
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe17c8747d5c678c14561a918ddd9d62bd658841
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f50f46376e21694bebeb4f13ab8ed8e658838bf2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315834"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680456"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
 カスタム ビューアーを識別する構造またはビジュアライザーを入力します。
@@ -47,23 +47,17 @@ public struct DEBUG_CUSTOM_VIEWER {
 ```
 
 ## <a name="members"></a>メンバー
-dwID  
-複数の閲覧者またはビジュアライザーで 1 つ実装を区別するために ID`GUID`します。
+複数の閲覧者またはビジュアライザーで 1 つ実装を区別するために ID dwID`GUID`します。
 
-bstrMenuName  
-ドロップダウン メニューに表示されるテキスト。
+bstrMenuName ドロップダウン メニューに表示されるテキスト。
 
-bstrDescription  
-カスタム ビューアーまたは型のビジュアライザーが (あります null 値を使用しない場合) の説明。
+カスタム ビューアーまたは型のビジュアライザーが (あります null 値を使用しない場合) の bstrDescription A 説明です。
 
-guidLang  
-提供する式エバリュエーターの言語です。
+guidLang 提供する式エバリュエーターの言語。
 
-guidVendor  
-提供する式エバリュエーターのベンダー。
+guidVendor ベンダーの提供する式エバリュエーター。
 
-bstrMetric  
-メトリックをカスタム ビューアーまたは型のビジュアライザー`CLSID`格納されます。
+bstrMetric メトリックをカスタム ビューアーまたは型のビジュアライザー`CLSID`格納されます。
 
 ## <a name="remarks"></a>Remarks
 この構造体のリストがへの呼び出しによって返される、 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)メソッド (と拡張機能によって、 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)メソッド)。
@@ -76,6 +70,6 @@ bstrMetric
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
+- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

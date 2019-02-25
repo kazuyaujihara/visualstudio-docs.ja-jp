@@ -1,7 +1,7 @@
 ---
 title: DISASSEMBLY_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DISASSEMBLY_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ac3a43f64e4284cd14741acde390c930ffbb69
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 0c4602fa1b8d30e9119bb39e925cf7768ae1cbcf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413281"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682428"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 逆アセンブリのフラグを指定します。
@@ -48,23 +48,17 @@ public enum enum_DISASSEMBLY_FLAGS {
 ```
 
 ## <a name="members"></a>メンバー
-DF_DOCUMENTCHANGE  
-この命令が別のドキュメントは、前のことを示します。
+DF_DOCUMENTCHANGE では、この命令は、別のドキュメントは、前のことを示します。
 
-DF_DISABLED  
-この命令は実行されないことを示します。
+DF_DISABLED では、この命令は実行されないことを示します。
 
-DF_INSTRUCTION_ACTIVE  
-この命令が実行される次の手順のいずれかであることを示します (あります 1 つ以上)。
+DF_INSTRUCTION_ACTIVE では、この命令は、次の手順を実行するのいずれかのことを示します (あります 1 つ以上)。
 
-DF_DATA  
-この命令は、データ (コードではなく) で、実際にあることを示します。
+DF_DATA では、この命令は、データ (コードではなく) で、実際にあることを示します。
 
-DF_HASSOURCE  
-この命令にソースがあることを示します。 プロファイルまたはガベージ コレクションのコードなどのいくつかの手順では、対応するソースがあるありません。
+DF_HASSOURCE では、この命令がソースのことを示します。 プロファイルまたはガベージ コレクションのコードなどのいくつかの手順では、対応するソースがあるありません。
 
-DF_DOCUMENT_CHECKSUM  
-示します`bstrDocumentUrl`フィールドには、ドキュメントの URL の後のチェックサム データが含まれています。 「解説」を参照してください、 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)チェックサム データを格納する方法の構造体。
+示す DF_DOCUMENT_CHECKSUM`bstrDocumentUrl`フィールドには、ドキュメントの URL の後のチェックサム データが含まれています。 「解説」を参照してください、 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)チェックサム データを格納する方法の構造体。
 
 ## <a name="remarks"></a>Remarks
 として使用される、`dwFlags`のメンバー、 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)構造体。
@@ -79,5 +73,5 @@ DF_DOCUMENT_CHECKSUM
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

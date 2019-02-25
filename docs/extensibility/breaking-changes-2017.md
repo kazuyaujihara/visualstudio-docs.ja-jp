@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fac02f024813e3ca747f498025e113ba4e7a59bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318746"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680476"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 の機能拡張の変更
 
@@ -103,6 +103,6 @@ Visual Studio プロセス内で実行されているコードは、Visual Studi
 ### <a name="reacting-to-this-breaking-change"></a>この重大な変更に反応します。
 
 * 同様に COM コンポーネントの登録なしのアクティベーションを使用する外部コードを変換する必要があります。
-* 外部コンポーネントは、Visual Studio の場所を見つけることができます[こちらのガイダンスに従って](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)します。
+* 外部コンポーネントは、Visual Studio の場所を見つけることができます[こちらのガイダンスに従って](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup)します。
 * 外部コンポーネントが使用することをお勧め、[外部設定マネージャー](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) Visual Studio のレジストリ キーに直接読み取り/書き込みの代わりにします。
 * 登録のための別の手法は、拡張機能を使用して、コンポーネントに実装がかどうかを確認します。 たとえば、デバッガーの拡張機能が新しい利用することが可能性があります[msvsmon JSON ファイルの COM 登録](migrate-debugger-COM-registration.md)します。

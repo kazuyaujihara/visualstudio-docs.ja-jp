@@ -1,7 +1,7 @@
 ---
 title: DEBUG_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_ADDRESS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 779564cf93e22f64b926a80644bb9da3375335b9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d45fa0be28fcad891366581e13425d3940a0a967
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317823"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684612"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 この構造体では、アドレスを表します。
@@ -43,14 +43,11 @@ public struct DEBUG_ADDRESS {
 ```
 
 ## <a name="terms"></a>用語
-ulAppDomainID  
-プロセス id です。
+ulAppDomainID プロセス id です。
 
-guidModule  
-このアドレスを含むモジュールの GUID です。
+guidModule をこのアドレスを含むモジュールの GUID。
 
-tokClass  
-クラスまたはこのアドレスの種類を識別するトークンです。
+tokClass クラスまたはこのアドレスの種類を識別するトークン。
 
 > [!NOTE]
 > この値は、シンボル プロバイダーに固有で、クラス型の識別子として以外の一般的な意味を持たない。
@@ -79,7 +76,7 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != 
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)  
-[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
-[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

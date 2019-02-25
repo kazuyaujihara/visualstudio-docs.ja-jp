@@ -8,37 +8,37 @@ ms.author: v-brickg
 manager: jillfra
 ms.workload:
 - v-brickg
-ms.openlocfilehash: b26eb91439547b3d9837c1482e707dcb7ea62cd8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a17361536437e6ba4811a687fdc75a9b47d4c0e6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940714"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698483"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio の visual Language Dictionary
-Visual Studio では、そのことは考えません、およびその他の画像のビルディング ブロックの概念を説明するために一般的な visual 言語を使用します。 新しいアイコンを設計するときは、独自のイメージで伝達する概念を識別するためにこの辞書を使用します。  
-  
+Visual Studio では、そのことは考えません、およびその他の画像のビルディング ブロックの概念を説明するために一般的な visual 言語を使用します。 新しいアイコンを設計するときは、独自のイメージで伝達する概念を識別するためにこの辞書を使用します。
+
 ## <a name="general-guidelines"></a>一般的なガイドライン
-  
--   これらのビジュアルの概念、辞書の定義を常に使用する必要があります。 それ以外の場合、しに一貫性のある意味を持つ共通の要素を期待するユーザーが混乱する可能性があります。  
-  
--   画像が鮮明かつ簡単に区別できるように、アイコンが、使用するため最も関連性または重要な概念のみを選択します。  
-  
--   各イメージでは、1 つまたは 2 つの概念を使用します。  
-  
--   デザイン アイコンの詳細戦略は、次を参照してください。[アイコン デザイン](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)します。  
-  
-**セクションにジャンプします。**  
-  
-1.  [概念の A ~ Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)    
-2.  [製品とプラットフォーム](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)    
-3.  [矢印を使用して一般的な概念](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows) 
-4.  [状態インジケーター](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)  
-  
-##  <a name="BKMK_VLDConcepts"></a> 概念の A ~ Z  
-  
-###  <a name="BKMK_VLDConceptsA"></a> A  
-  
+
+-   これらのビジュアルの概念、辞書の定義を常に使用する必要があります。 それ以外の場合、しに一貫性のある意味を持つ共通の要素を期待するユーザーが混乱する可能性があります。
+
+-   画像が鮮明かつ簡単に区別できるように、アイコンが、使用するため最も関連性または重要な概念のみを選択します。
+
+-   各イメージでは、1 つまたは 2 つの概念を使用します。
+
+-   デザイン アイコンの詳細戦略は、次を参照してください。[アイコン デザイン](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)します。
+
+**セクションにジャンプします。**
+
+1.  [概念の A ~ Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)
+2.  [製品とプラットフォーム](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)
+3.  [矢印を使用して一般的な概念](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows)
+4.  [状態インジケーター](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)
+
+##  <a name="BKMK_VLDConcepts"></a> 概念の A ~ Z
+
+###  <a name="BKMK_VLDConceptsA"></a> A
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | - | - | - | - |
 | **ユーザー補助** | ![ユーザー補助 アイコン](../../extensibility/ux-guidelines/media/vld_c_accessibility.png "VLD_C_Accessibility") | | |
@@ -50,38 +50,38 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **アラートを生成します。** | ![警告アイコン](../../extensibility/ux-guidelines/media/vld_c_alert.png "VLD_C_Alert") | | |
 | **アルファ チャネル** | ![アルファ チャネル アイコン](../../extensibility/ux-guidelines/media/vld_c_alphachannel.png "VLD_C_AlphaChannel") | | |
 | **アニメーション** | ![アニメーション アイコン](../../extensibility/ux-guidelines/media/vld_c_animation.png "VLD_C_Animation") | ![アニメーション エラー アイコン](../../extensibility/ux-guidelines/media/vld_c_animation_animationerror.png "VLD_C_Animation_AnimationError")<br />アニメーションのエラー<br />![[次へ] のアニメーションアイコン](../../extensibility/ux-guidelines/media/vld_c_animation_nextanimation.png "VLD_C_Animation_NextAnimation")<br />次のアニメーション | |
-| **アプリケーション**<br />プロジェクト | ![アプリケーション アイコン](../../extensibility/ux-guidelines/media/vld_c_application.png "VLD_C_Application") | ![アプリケーション ロール エラー アイコン](../../extensibility/ux-guidelines/media/vld_c_application_applicationroleerror.png "VLD_C_Application_ApplicationRoleError")<br />アプリケーション ロール エラー<br />![C&#43; &#43; MFC プロジェクト アイコン](../../extensibility/ux-guidelines/media/vld_c_application_cppmfcproject.png "VLD_C_Application_CPPMFCProject")<br />C++ MFC プロジェクト | |
+| **アプリケーション**<br />Project | ![アプリケーション アイコン](../../extensibility/ux-guidelines/media/vld_c_application.png "VLD_C_Application") | ![アプリケーション ロール エラー アイコン](../../extensibility/ux-guidelines/media/vld_c_application_applicationroleerror.png "VLD_C_Application_ApplicationRoleError")<br />アプリケーション ロール エラー<br />![C&#43; &#43; MFC プロジェクト アイコン](../../extensibility/ux-guidelines/media/vld_c_application_cppmfcproject.png "VLD_C_Application_CPPMFCProject")<br />C++ MFC プロジェクト | |
 | **区分** | ![領域のアイコン](../../extensibility/ux-guidelines/media/vld_c_area.png "VLD_C_Area") | ![スプライン面グラフ アイコン](../../extensibility/ux-guidelines/media/vld_c_area_splineareachart.png "VLD_C_Area_SplineAreaChart")<br />スプライン面グラフ<br />![積み上げ面グラフ系列 アイコン](../../extensibility/ux-guidelines/media/vld_c_area_stackedareaseries.png "VLD_C_Area_StackedAreaSeries")<br />積み上げ面グラフの系列 | |
 | **配置します。** | ![[整列] アイコン](../../extensibility/ux-guidelines/media/vld_c_arrange.png "VLD_C_Arrange") | ![図形アイコンの整列](../../extensibility/ux-guidelines/media/vld_c_arrange_arrangeshapes.png "VLD_C_Arrange_ArrangeShapes")<br />図形を整列します。<br />![自動&#45;図形アイコンの整列](../../extensibility/ux-guidelines/media/vld_c_arrange_autoarrangeshapes.png "VLD_C_Arrange_AutoArrangeShapes")<br />図形の自動配置 | |
 | **Assign** | ![アイコンの割り当て](../../extensibility/ux-guidelines/media/vld_c_assign.png "VLD_C_Assign") | | |
 | **関連付け** | ![[関連付け] アイコン](../../extensibility/ux-guidelines/media/vld_c_association.png "VLD_C_Association") | ![[関連付け] アイコンを追加](../../extensibility/ux-guidelines/media/vld_c_association_addassociation.png "VLD_C_Association_AddAssociation")<br />関連付けを追加します。<br />![[関連付け] アイコンを編集](../../extensibility/ux-guidelines/media/vld_c_association_editassociation.png "VLD_C_Association_EditAssociation")<br />関連付けを編集します。 | |
 | **非対称** | ![[非対称] アイコン](../../extensibility/ux-guidelines/media/vld_c_asymmetric.png "VLD_C_Asymmetric") | | **非対称**概念は (たとえば、/暗または左/右) の反対側の画像の juxtaposition で表されます。 |
-| **添付** | ![アイコンのアタッチ](../../extensibility/ux-guidelines/media/vld_c_attach.png "VLD_C_Attach") | ![添付ファイルのアイコンを追加](../../extensibility/ux-guidelines/media/vld_c_attach_addattachment.png "VLD_C_Attach_AddAttachment")<br />添付ファイルの追加<br />![添付ファイルを開くアイコン](../../extensibility/ux-guidelines/media/vld_c_attach_openattachment.png "VLD_C_Attach_OpenAttachment")<br />添付ファイルを開く | |
+| **Attach** | ![アイコンのアタッチ](../../extensibility/ux-guidelines/media/vld_c_attach.png "VLD_C_Attach") | ![添付ファイルのアイコンを追加](../../extensibility/ux-guidelines/media/vld_c_attach_addattachment.png "VLD_C_Attach_AddAttachment")<br />添付ファイルの追加<br />![添付ファイルを開くアイコン](../../extensibility/ux-guidelines/media/vld_c_attach_openattachment.png "VLD_C_Attach_OpenAttachment")<br />添付ファイルを開く | |
 | **属性**<br />変数、パラメーター | ![属性アイコン](../../extensibility/ux-guidelines/media/vld_c_attribute.png "VLD_C_Attribute") | ![アカウントの属性アイコン](../../extensibility/ux-guidelines/media/vld_c_attribute_accountattribute.png "VLD_C_Attribute_AccountAttribute")<br />アカウントの属性<br />![[追加パラメーター] アイコン](../../extensibility/ux-guidelines/media/vld_c_attribute_addparameter.png "VLD_C_Attribute_AddParameter")<br />パラメーターを追加します。<br />![メンバー変数 アイコン](../../extensibility/ux-guidelines/media/vld_c_attribute_membervariable.png "VLD_C_Attribute_MemberVariable")<br />メンバー変数 | |
 | **オーディオ** | ![オーディオ アイコン](../../extensibility/ux-guidelines/media/vld_c_audio.png "VLD_C_Audio") | ![オーディオのミュート アイコン](../../extensibility/ux-guidelines/media/vld_c_audio_audiomute.png "VLD_C_Audio_AudioMute")<br />オーディオのミュート<br />![オーディオの再生アイコン](../../extensibility/ux-guidelines/media/vld_c_audio_audioplayback.png "VLD_C_Audio_AudioPlayback")<br />オーディオの再生<br />![音声ファイル アイコン](../../extensibility/ux-guidelines/media/vld_c_audio_soundfile.png "VLD_C_Audio_SoundFile")<br />音声ファイル | |
 | **オーディオ録音** | ![オーディオ録音 アイコン](../../extensibility/ux-guidelines/media/vld_c_audiorecording.png "VLD_C_AudioRecording") | ![録音ミュート アイコン](../../extensibility/ux-guidelines/media/vld_c_audiorecording_recordmute.png "VLD_C_AudioRecording_RecordMute")<br />録音ミュート<br />![画面と音声の記録 アイコン](../../extensibility/ux-guidelines/media/vld_c_audiorecording_recordscreenandvoice.png "VLD_C_AudioRecording_RecordScreenAndVoice")<br />レコードの画面と音声 | |
 | **オート Sum** | ![オート Sum アイコン](../../extensibility/ux-guidelines/media/vld_c_autosum.png "VLD_C_Autosum") | | |
-  
-###  <a name="BKMK_VLDConceptsB"></a> B  
-  
+
+###  <a name="BKMK_VLDConceptsB"></a> B
+
 | 概念 | メイン アイコン | その他の例 | メモ |
-| --- | --- | --- | --- |  
-| **双方向** | ![双方向 アイコン](../../extensibility/ux-guidelines/media/vld_c_bidirectional.png "VLD_C_Bidirectional") |||  
-| **Binary** | ![[バイナリ] アイコン](../../extensibility/ux-guidelines/media/vld_c_binary.png "VLD_C_Binary") | ![インストルメンテーション ターゲット バイナリのアイコンを起動](../../extensibility/ux-guidelines/media/vld_c_binary_launchinstrumentationtargetbinary.png "VLD_C_Binary_LaunchInstrumentationTargetBinary")<br />インストルメンテーション ターゲット バイナリを起動します。 ||  
-| **ブックマーク** | ![ブックマーク アイコン](../../extensibility/ux-guidelines/media/vld_c_bookmark.png "VLD_C_Bookmark") | ![ブックマーク プロジェクト アイコン](../../extensibility/ux-guidelines/media/vld_c_bookmark_bookmarkproject.png "VLD_C_Bookmark_BookmarkProject")<br />プロジェクトをブックマークします。<br />![ブックマークのクリア アイコン](../../extensibility/ux-guidelines/media/vld_c_bookmark_clearbookmark.png "VLD_C_Bookmark_ClearBookmark")<br />ブックマークのクリア<br />![前のブックマークに移動して](../../extensibility/ux-guidelines/media/vld_c_bookmark_gotopreviousbookmark.png "VLD_C_Bookmark_GoToPreviousBookmark")<br />前のブックマークに移動 ||  
+| --- | --- | --- | --- |
+| **双方向** | ![双方向 アイコン](../../extensibility/ux-guidelines/media/vld_c_bidirectional.png "VLD_C_Bidirectional") |||
+| **Binary** | ![[バイナリ] アイコン](../../extensibility/ux-guidelines/media/vld_c_binary.png "VLD_C_Binary") | ![インストルメンテーション ターゲット バイナリのアイコンを起動](../../extensibility/ux-guidelines/media/vld_c_binary_launchinstrumentationtargetbinary.png "VLD_C_Binary_LaunchInstrumentationTargetBinary")<br />インストルメンテーション ターゲット バイナリを起動します。 ||
+| **ブックマーク** | ![ブックマーク アイコン](../../extensibility/ux-guidelines/media/vld_c_bookmark.png "VLD_C_Bookmark") | ![ブックマーク プロジェクト アイコン](../../extensibility/ux-guidelines/media/vld_c_bookmark_bookmarkproject.png "VLD_C_Bookmark_BookmarkProject")<br />プロジェクトをブックマークします。<br />![ブックマークのクリア アイコン](../../extensibility/ux-guidelines/media/vld_c_bookmark_clearbookmark.png "VLD_C_Bookmark_ClearBookmark")<br />ブックマークのクリア<br />![前のブックマークに移動して](../../extensibility/ux-guidelines/media/vld_c_bookmark_gotopreviousbookmark.png "VLD_C_Bookmark_GoToPreviousBookmark")<br />前のブックマークに移動 ||
 | **ブランチ** | ![分岐 アイコン](../../extensibility/ux-guidelines/media/vld_c_branch.png "VLD_C_Branch") | ![アップロードされた分岐 アイコン](../../extensibility/ux-guidelines/media/vld_c_branch_branchuploaded.png "VLD_C_Branch_BranchUploaded") <br />アップロードされたブランチ<br />![リモート分岐 アイコン](../../extensibility/ux-guidelines/media/vld_c_branch_remotebranch.png "VLD_C_Branch_RemoteBranch")<br />リモート ブランチ ||
 | **明るさ** | ![[明るさ] アイコン](../../extensibility/ux-guidelines/media/vld_c_brightness.png "VLD_C_Brightness") | ![暗くする アイコン](../../extensibility/ux-guidelines/media/vld_c_brightness_brightnessdown.png "VLD_C_Brightness_BrightnessDown")<br />[暗くする]<br />![明るくする アイコン](../../extensibility/ux-guidelines/media/vld_c_brightness_brightnessup.png "VLD_C_Brightness_BrightnessUp")<br />明るくします。 ||
-| **参照** | ![参照アイコン](../../extensibility/ux-guidelines/media/vld_c_browse.png "VLD_C_Browse") | ![[次へ] アイコンを参照](../../extensibility/ux-guidelines/media/vld_c_browse_browsenext.png "VLD_C_Browse_BrowseNext")<br />次に [参照] します。<br />![参照前アイコン](../../extensibility/ux-guidelines/media/vld_c_browse_browseprevious.png "VLD_C_Browse_BrowsePrevious")<br />参照前 ||  
-| **バグ** | ![[バグ] アイコン](../../extensibility/ux-guidelines/media/vld_c_bug.png "VLD_C_Bug") | ![[新しいバグ] アイコンを作成する](../../extensibility/ux-guidelines/media/vld_c_bug_createnewbug.png "VLD_C_Bug_CreateNewBug")<br />新しいバグを作成します。 || 
+| **参照** | ![参照アイコン](../../extensibility/ux-guidelines/media/vld_c_browse.png "VLD_C_Browse") | ![[次へ] アイコンを参照](../../extensibility/ux-guidelines/media/vld_c_browse_browsenext.png "VLD_C_Browse_BrowseNext")<br />次に [参照] します。<br />![参照前アイコン](../../extensibility/ux-guidelines/media/vld_c_browse_browseprevious.png "VLD_C_Browse_BrowsePrevious")<br />参照前 ||
+| **バグ** | ![[バグ] アイコン](../../extensibility/ux-guidelines/media/vld_c_bug.png "VLD_C_Bug") | ![[新しいバグ] アイコンを作成する](../../extensibility/ux-guidelines/media/vld_c_bug_createnewbug.png "VLD_C_Bug_CreateNewBug")<br />新しいバグを作成します。 ||
 | **ビルド** | ![ビルド アイコン](../../extensibility/ux-guidelines/media/vld_c_build.png "VLD_C_Build") | ![ビルドの選択アイコン](../../extensibility/ux-guidelines/media/vld_c_build_buildselection.png "VLD_C_Build_BuildSelection")<br />選択範囲をビルドします。<br />![プライベート ビルド インスタンス アイコン](../../extensibility/ux-guidelines/media/vld_c_build_privatebuildinstance.png "VLD_C_Build_PrivateBuildInstance")<br />プライベート ビルド インスタンス<br />![ユーザー&#45;ビルド アイコンを作成した](../../extensibility/ux-guidelines/media/vld_c_build_usercreatedbuild.png "VLD_C_Build_UserCreatedBuild")<br />ユーザーが作成したビルド ||
 | **ビルダー** | ![ビルダー アイコン](../../extensibility/ux-guidelines/media/vld_c_builder.png "VLD_C_Builder") | ![[キューブ ビルダー] アイコン](../../extensibility/ux-guidelines/media/vld_c_builder_cubebuilder.png "VLD_C_Builder_CubeBuilder") <br />キューブ ビルダー<br />![[ディメンション ビルダー] アイコン](../../extensibility/ux-guidelines/media/vld_c_builder_dimensionbuilder.png "VLD_C_Builder_DimensionBuilder")<br />ディメンション ビルダー ||
 | **ビジネス** | ![[ビジネス] アイコン](../../extensibility/ux-guidelines/media/vld_c_business.png "VLD_C_Business") | ![ビジネス モデル テンプレート アイコン](../../extensibility/ux-guidelines/media/vld_c_business_businessmodeltemplate.png "VLD_C_Business_BusinessModelTemplate")<br />ビジネス モデル テンプレート<br />![ビジネス オブジェクト データ ソースのアイコン](../../extensibility/ux-guidelines/media/vld_c_business_businessobjectsdatasource.png "VLD_C_Business_BusinessObjectsDataSource")<br />ビジネス オブジェクト データ ソース<br />![オンライン ビジネス アイコン](../../extensibility/ux-guidelines/media/vld_c_business_onlinebusiness.png "VLD_C_Business_OnlineBusiness")<br />オンライン ビジネス ||
 | **Button** |![ボタンのアイコン](../../extensibility/ux-guidelines/media/vld_c_button.png "VLD_C_Button") | ![ボタンのアイコンを追加](../../extensibility/ux-guidelines/media/vld_c_button_addbutton.png "VLD_C_Button_AddButton")<br />[追加] ボタン<br />![イメージ ボタン アイコン](../../extensibility/ux-guidelines/media/vld_c_button_imagebutton.png "VLD_C_Button_ImageButton")<br />イメージ ボタン<br />![リンク ボタン アイコン](../../extensibility/ux-guidelines/media/vld_c_button_linkedbutton.png "VLD_C_Button_LinkedButton")<br />リンクされたボタン ||
-  
-###  <a name="BKMK_VLDConceptsC"></a> C  
-  
-| 概念 | メイン アイコン | その他の例 | メモ |  
-| --- | --- | --- | --- |  
+
+###  <a name="BKMK_VLDConceptsC"></a> C
+
+| 概念 | メイン アイコン | その他の例 | メモ |
+| --- | --- | --- | --- |
 | **キャッシュ** | ![キャッシュのアイコン](../../extensibility/ux-guidelines/media/vld_c_cache.png "VLD_C_Cache") | ![キャッシュ [ok] アイコン](../../extensibility/ux-guidelines/media/vld_c_cache_cacheok.png "VLD_C_Cache_CacheOK")<br />Cache OK<br />![キャッシュ更新アイコン](../../extensibility/ux-guidelines/media/vld_c_cache_cacherefresh.png "VLD_C_Cache_CacheRefresh")<br />キャッシュの更新 ||
 | **Calendar** | ![予定表アイコン](../../extensibility/ux-guidelines/media/vld_c_calendar.png "VLD_C_Calendar") | ![日付&#47;時間軸アイコン](../../extensibility/ux-guidelines/media/vld_c_calendar_datetimeaxis.png "VLD_C_Calendar_DateTimeAxis")<br />軸の日付/時刻<br />![グローバル予定表アイコン](../../extensibility/ux-guidelines/media/vld_c_calendar_globalcalendar.png "VLD_C_Calendar_GlobalCalendar")<br />グローバル予定表 ||
 | **Call** | ![[呼び出し] アイコン](../../extensibility/ux-guidelines/media/vld_c_call.png "VLD_C_Call") | ![呼び出しブラウザー アイコン](../../extensibility/ux-guidelines/media/vld_c_call_callbrowser.png "VLD_C_Call_CallBrowser")<br />呼び出しブラウザー<br />![呼び出しブラウザーの設定 アイコン](../../extensibility/ux-guidelines/media/vld_c_call_callbrowsersettings.png "VLD_C_Call_CallBrowserSettings") <br />呼び出しブラウザーの設定<br />![呼び出し元または呼び出し先ビュー アイコン](../../extensibility/ux-guidelines/media/vld_c_call_callerorcalleeview.png "VLD_C_Call_CallerOrCalleeView") <br />呼び出し元または呼び出し先ビュー ||
@@ -91,15 +91,15 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **証明書** | ![証明書 アイコン](../../extensibility/ux-guidelines/media/vld_c_certificate.png "VLD_C_Certificate") | ![証明書のエラー アイコン](../../extensibility/ux-guidelines/media/vld_c_certificate_certificateerror.png "VLD_C_Certificate_CertificateError")<br />証明書のエラー<br />![証明書の警告アイコン](../../extensibility/ux-guidelines/media/vld_c_certificate_certificatewarning.png "VLD_C_Certificate_CertificateWarning")<br />証明書の警告 ||
 | **変更セット** | ![変更セット アイコン](../../extensibility/ux-guidelines/media/vld_c_changeset.png "VLD_C_Changeset") | ![グループの変更セット アイコン](../../extensibility/ux-guidelines/media/vld_c_changeset_groupchangesets.png "VLD_C_Changeset_GroupChangesets")<br />グループの変更セット<br />![新しい変更セット アイコン](../../extensibility/ux-guidelines/media/vld_c_changeset_newchangeset.png "VLD_C_Changeset_NewChangeset")<br />新しい変更セット ||
 | **選択肢切り替え** | ![選択肢切り替えアイコン](../../extensibility/ux-guidelines/media/vld_c_choicetoggle.png "VLD_C_ChoiceToggle") | ![チェック ボックス フィールド列アイコン](../../extensibility/ux-guidelines/media/vld_c_choicetoggle_checkboxfieldcolumn.png "VLD_C_ChoiceToggle_CheckboxFieldColumn")<br />チェック ボックス フィールド列<br />![チェック ボックス リスト アイコン](../../extensibility/ux-guidelines/media/vld_c_choicetoggle_checkboxlist.png "VLD_C_ChoiceToggle_CheckboxList")<br />チェック ボックスの一覧 ||
-| **Class** | ![クラス アイコン](../../extensibility/ux-guidelines/media/vld_c_class.png "VLD_C_Class") | ![クラスのアイコンを追加](../../extensibility/ux-guidelines/media/vld_c_class_addclass.png "VLD_C_Class_AddClass")<br />クラスを追加します。<br />![クラスの詳細ツール ウィンドウ アイコン](../../extensibility/ux-guidelines/media/vld_c_class_classdetailstoolwindow.png "VLD_C_Class_ClassDetailsToolWindow")<br />クラスの詳細ツール ウィンドウ || 
+| **Class** | ![クラス アイコン](../../extensibility/ux-guidelines/media/vld_c_class.png "VLD_C_Class") | ![クラスのアイコンを追加](../../extensibility/ux-guidelines/media/vld_c_class_addclass.png "VLD_C_Class_AddClass")<br />クラスを追加します。<br />![クラスの詳細ツール ウィンドウ アイコン](../../extensibility/ux-guidelines/media/vld_c_class_classdetailstoolwindow.png "VLD_C_Class_ClassDetailsToolWindow")<br />クラスの詳細ツール ウィンドウ ||
 | **クリア**<br />「キャンセル」および「削除」と同じ | ![[クリア] アイコン](../../extensibility/ux-guidelines/media/vld_c_clear.png "VLD_C_Clear") | ![すべてのブレークポイントのアイコンをオフに](../../extensibility/ux-guidelines/media/vld_c_clear_clearallbreakpoints.png "VLD_C_Clear_ClearAllBreakpoints")<br />すべてのブレークポイントをクリアします。<br />![ブックマークのクリア アイコン](../../extensibility/ux-guidelines/media/vld_c_clear_clearbookmark.png "VLD_C_Clear_ClearBookmark")<br />ブックマークのクリア<br />![コレクションのクリア アイコン](../../extensibility/ux-guidelines/media/vld_c_clear_clearcollection.png "VLD_C_Clear_ClearCollection")<br />コレクションのクリア ||
 | **閉じる**<br />終了 | ![ある閉じるアイコン](../../extensibility/ux-guidelines/media/vld_c_close.png "VLD_C_Close") | ![すべてのアイコンを閉じる](../../extensibility/ux-guidelines/media/vld_c_close_closeall.png "VLD_C_Close_CloseAll")<br />すべて閉じる<br />![結果の終了 アイコン](../../extensibility/ux-guidelines/media/vld_c_close_closeresults.png "VLD_C_Close_CloseResults")<br />結果の終了<br />![終了プロセスのアイコン](../../extensibility/ux-guidelines/media/vld_c_close_terminateprocess.png "VLD_C_Close_TerminateProcess")<br />プロセスが終了します。 ||
 | **クラウド** | ![[クラウド] アイコン](../../extensibility/ux-guidelines/media/vld_c_cloud.png "VLD_C_Cloud") | ![クラウド パッケージ アイコン](../../extensibility/ux-guidelines/media/vld_c_cloud_cloudpackage.png "VLD_C_Cloud_CloudPackage")<br />クラウド パッケージ<br />![クラウド サービス アイコン](../../extensibility/ux-guidelines/media/vld_c_cloud_cloudservice.png "VLD_C_Cloud_CloudService")<br />クラウド サービス ||
-| **コード** | ![コード アイコン](../../extensibility/ux-guidelines/media/vld_c_code.png "VLD_C_Code") | ![コード化された UI テスト アイコン](../../extensibility/ux-guidelines/media/vld_c_code_codeduitest.png "VLD_C_Code_CodedUITest")<br />コード化された UI テスト<br />![コード化された web テスト アイコンに変換](../../extensibility/ux-guidelines/media/vld_c_code_converttocodedwebtest.png "VLD_C_Code_ConvertToCodedWebTest")<br />コード化された web テストへの変換します。 ||  
-| **折りたたむ** | ![折りたたみアイコン](../../extensibility/ux-guidelines/media/vld_c_collapse.png "VLD_C_Collapse") | ![すべてのアイコンを折りたたむ](../../extensibility/ux-guidelines/media/vld_c_collapse_collapseall.png "VLD_C_Collapse_CollapseAll")<br />すべて折りたたむ<br />![折りたたまれた値に戻す](../../extensibility/ux-guidelines/media/vld_c_collapse_returntocollapsedvalue.png "VLD_C_Collapse_ReturnToCollapsedValue")<br />折りたたまれた値に戻る ||  
-| **コレクション** | ![[コレクション] アイコン](../../extensibility/ux-guidelines/media/vld_c_collection.png "VLD_C_Collection") | ![コレクションのクリア アイコン](../../extensibility/ux-guidelines/media/vld_c_collection_clearcollection.png "VLD_C_Collection_ClearCollection")<br />コレクションのクリア<br />![Count コレクション アイコン](../../extensibility/ux-guidelines/media/vld_c_collection_countcollection.png "VLD_C_Collection_CountCollection")<br />コレクションの数 ||  
+| **コード** | ![コード アイコン](../../extensibility/ux-guidelines/media/vld_c_code.png "VLD_C_Code") | ![コード化された UI テスト アイコン](../../extensibility/ux-guidelines/media/vld_c_code_codeduitest.png "VLD_C_Code_CodedUITest")<br />コード化された UI テスト<br />![コード化された web テスト アイコンに変換](../../extensibility/ux-guidelines/media/vld_c_code_converttocodedwebtest.png "VLD_C_Code_ConvertToCodedWebTest")<br />コード化された web テストへの変換します。 ||
+| **折りたたむ** | ![折りたたみアイコン](../../extensibility/ux-guidelines/media/vld_c_collapse.png "VLD_C_Collapse") | ![すべてのアイコンを折りたたむ](../../extensibility/ux-guidelines/media/vld_c_collapse_collapseall.png "VLD_C_Collapse_CollapseAll")<br />すべて折りたたむ<br />![折りたたまれた値に戻す](../../extensibility/ux-guidelines/media/vld_c_collapse_returntocollapsedvalue.png "VLD_C_Collapse_ReturnToCollapsedValue")<br />折りたたまれた値に戻る ||
+| **コレクション** | ![[コレクション] アイコン](../../extensibility/ux-guidelines/media/vld_c_collection.png "VLD_C_Collection") | ![コレクションのクリア アイコン](../../extensibility/ux-guidelines/media/vld_c_collection_clearcollection.png "VLD_C_Collection_ClearCollection")<br />コレクションのクリア<br />![Count コレクション アイコン](../../extensibility/ux-guidelines/media/vld_c_collection_countcollection.png "VLD_C_Collection_CountCollection")<br />コレクションの数 ||
 | **列** | ![[列] アイコン](../../extensibility/ux-guidelines/media/vld_c_column.png "VLD_C_Column") | ![[列] アイコンの Autosize](../../extensibility/ux-guidelines/media/vld_c_column_autosizecolumn.png "VLD_C_Column_AutosizeColumn")<br />Autosize 列<br />![列の詳細 アイコン](../../extensibility/ux-guidelines/media/vld_c_column_columndetails.png "VLD_C_Column_ColumnDetails")<br />列の詳細<br />![列のエラー アイコン](../../extensibility/ux-guidelines/media/vld_c_column_columnerror.png "VLD_C_Column_ColumnError")<br />列のエラー ||
-| **コメント**<br />注釈のフィードバック | ![コメント&#40;バブル&#41;アイコン](../../extensibility/ux-guidelines/media/vld_c_comment_bubble.png "VLD_C_Comment_bubble") | ![[追加] アイコンのコメント](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_addcomment.png "VLD_C_Comment_bubble_AddComment")<br />コメントの追加<br />![[吹き出し] アイコン](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_callout.png "VLD_C_Comment_bubble_Callout")<br />引き出し線 ||  
+| **コメント**<br />注釈のフィードバック | ![コメント&#40;バブル&#41;アイコン](../../extensibility/ux-guidelines/media/vld_c_comment_bubble.png "VLD_C_Comment_bubble") | ![[追加] アイコンのコメント](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_addcomment.png "VLD_C_Comment_bubble_AddComment")<br />コメントの追加<br />![[吹き出し] アイコン](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_callout.png "VLD_C_Comment_bubble_Callout")<br />引き出し線 ||
 | **コメント (コード)** | ![コメント&#40;コード&#41;](../../extensibility/ux-guidelines/media/vld_c_comment_lines.png "VLD_C_Comment_lines") | ![コメント解除 アイコン](../../extensibility/ux-guidelines/media/vld_c_comment_lines_uncomment.png "VLD_C_Comment_lines_Uncomment") <br />選択範囲のコメントの解除 ||
 | **Compare** | ![比較 アイコン](../../extensibility/ux-guidelines/media/vld_c_compare.png "VLD_C_Compare") | ![データのアイコンの比較](../../extensibility/ux-guidelines/media/vld_c_compare_comparedata.png "VLD_C_Compare_CompareData")<br />データを比較します。<br />![フォルダー アイコンの比較](../../extensibility/ux-guidelines/media/vld_c_compare_comparefolders.png "VLD_C_Compare_CompareFolders")<br />フォルダーの比較<br />![パフォーマンス レポート アイコンの比較](../../extensibility/ux-guidelines/media/vld_c_compare_compareperformancereports.png "VLD_C_Compare_ComparePerformanceReports")<br />パフォーマンス レポートを比較します。 ||
 | **コンポーネント** | ![コンポーネントのアイコン](../../extensibility/ux-guidelines/media/vld_c_component.png "VLD_C_Component") | ![コンポーネントのアイコンを追加](../../extensibility/ux-guidelines/media/vld_c_component_addcomponent.png "VLD_C_Component_AddComponent")<br />コンポーネントを追加<br />![コンポーネント図 アイコン](../../extensibility/ux-guidelines/media/vld_c_component_componentdiagram.png "VLD_C_Component_ComponentDiagram")<br />コンポーネント図<br />![Windows Phone RT コンポーネント アイコン](../../extensibility/ux-guidelines/media/vld_c_component_phonewindowsrtcomponent.png "VLD_C_Component_PhoneWindowsRTComponent")<br />Windows Phone RT コンポーネント ||
@@ -116,11 +116,11 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **カーソル**<br />ポインター | ![カーソル アイコン](../../extensibility/ux-guidelines/media/vld_c_cursor.png "VLD_C_Cursor") | ![検査モード ボタン アイコン](../../extensibility/ux-guidelines/media/vld_c_cursor_inspectmodebutton.png "VLD_C_Cursor_InspectModeButton") <br />検査モード ボタン<br />![ホット スポットの設定ツール アイコン](../../extensibility/ux-guidelines/media/vld_c_cursor_sethotspottool.png "VLD_C_Cursor_SetHotspotTool")<br />ホット スポット ツールのセット ||
 | **カスタム式**<br />予測 | ![カスタム式 アイコン](../../extensibility/ux-guidelines/media/vld_c_customexpression.png "VLD_C_CustomExpression") | ![データ マイニング予測](../../extensibility/ux-guidelines/media/vld_c_customexpression_dataminingprediction.png "VLD_C_CustomExpression_DataMiningPrediction")<br />データ マイニング予測 ||
 | **切り取り** | ![[切り取り] アイコン](../../extensibility/ux-guidelines/media/vld_c_cut.png "VLD_C_Cut") |||
-  
-###  <a name="BKMK_VLDConceptsD"></a> D  
-  
+
+###  <a name="BKMK_VLDConceptsD"></a> D
+
 | 概念 | メイン アイコン | その他の例 | メモ |
-| --- | --- | --- | --- | 
+| --- | --- | --- | --- |
 | **ダーク テーマ** | ![ダーク テーマ アイコン](../../extensibility/ux-guidelines/media/vld_c_darktheme.png "VLD_C_DarkTheme") | ![ダーク テーマ オン アイコン](../../extensibility/ux-guidelines/media/vld_c_darktheme_darkthemeon.png "VLD_C_DarkTheme_DarkThemeOn")<br />ダーク テーマ オン ||
 | **データ** | ![データのアイコン](../../extensibility/ux-guidelines/media/vld_c_data.png "VLD_C_Data") | ![データベースの両方のアイコンの比較](../../extensibility/ux-guidelines/media/vld_c_data_comparebothdatabases.png "VLD_C_Data_CompareBothDatabases")<br />両方のデータベースを比較します。<br />![データベース監査の仕様 アイコン](../../extensibility/ux-guidelines/media/vld_c_data_databaseauditspecification.png "VLD_C_Data_DatabaseAuditSpecification")<br />データベース監査の仕様<br />![データベース プロジェクト アイコン](../../extensibility/ux-guidelines/media/vld_c_data_databaseproject.png "VLD_C_Data_DatabaseProject")<br />データベース プロジェクト ||
 | **データ マイニング** | ![データ マイニング アイコン](../../extensibility/ux-guidelines/media/vld_c_datamining.png "VLD_C_DataMining") | ![データ マイニング列 アイコン](../../extensibility/ux-guidelines/media/vld_c_datamining_dataminingcolumn.png "VLD_C_DataMining_DataMiningColumn")<br />データ マイニング列<br />![データ マイニング予測 アイコン](../../extensibility/ux-guidelines/media/vld_c_datamining_dataminingprediction.png "VLD_C_DataMining_DataMiningPrediction")<br />データ マイニング予測<br />![データ マイニング構造 アイコン](../../extensibility/ux-guidelines/media/vld_c_datamining_dataminingstructure.png "VLD_C_DataMining_DataMiningStructure")<br />データ マイニング構造 ||
@@ -138,10 +138,10 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **Driver** | ![[ドライバー] アイコン](../../extensibility/ux-guidelines/media/vld_c_driver.png "VLD_C_Driver") | ![ドライバー パッケージのテンプレート アイコン](../../extensibility/ux-guidelines/media/vld_c_driver_driverpackagetemplate.png "VLD_C_Driver_DriverPackageTemplate")<br />ドライバー パッケージのテンプレート<br />![ドライバー テスト グループ エクスプ ローラー アイコン](../../extensibility/ux-guidelines/media/vld_c_driver_drivertestgroupexplorer.png "VLD_C_Driver_DriverTestGroupExplorer")<br />ドライバー テスト グループ エクスプ ローラー<br />![ネットワーク NDIS ドライバー テンプレート アイコン](../../extensibility/ux-guidelines/media/vld_c_driver_networkndisdrivertemplate.png "VLD_C_Driver_NetworkNDISDriverTemplate")<br />ネットワーク NDIS ドライバー テンプレート ||
 | **動的** | ![動的アイコン](../../extensibility/ux-guidelines/media/vld_c_dynamic.png "VLD_C_Dynamic") | ![ASP.NET ダイナミック コントロール アイコン](../../extensibility/ux-guidelines/media/vld_c_dynamic_aspnetdynamiccontrol.png "VLD_C_Dynamic_ASPNETDynamicControl")<br />ASP.NET ダイナミック コントロール<br />![C&#35;動的データ web サイト アイコン](../../extensibility/ux-guidelines/media/vld_c_dynamic_csdynamicdatawebsite.png "VLD_C_Dynamic_CSDynamicDataWebsite")<br />C# 動的データ web サイト<br />![動的検証コントロールのアイコン](../../extensibility/ux-guidelines/media/vld_c_dynamic_dynamicvalidator.png "VLD_C_Dynamic_DynamicValidator")<br />動的検証コントロール ||
 | **動的な値** | ![動的な値のアイコン](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue.png "VLD_C_DynamicValue") | ![動的な値は、コピー アイコン](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue_copydynamicvalue.png "VLD_C_DynamicValue_CopyDynamicValue")<br />動的な値をコピーします。<br />![動的な値が空のアイコン](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue_emptydynamicvalue.png "VLD_C_DynamicValue_EmptyDynamicValue")<br />空の動的な値 ||
-  
-###  <a name="BKMK_VLDConceptsE"></a> E  
-  
-| 概念 | メイン アイコン | その他の例 | メモ |  
+
+###  <a name="BKMK_VLDConceptsE"></a> E
+
+| 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **編集** | ![[編集] アイコン](../../extensibility/ux-guidelines/media/vld_c_edit.png "VLD_C_Edit") | ![アドレス エディター アイコン](../../extensibility/ux-guidelines/media/vld_c_edit_addresseditor.png "VLD_C_Edit_AddressEditor")<br />アドレス エディター<br />![[クエリ] アイコンを編集](../../extensibility/ux-guidelines/media/vld_c_edit_editquery.png "VLD_C_Edit_EditQuery")<br />クエリの編集<br />![[編集] アイコンの関係](../../extensibility/ux-guidelines/media/vld_c_edit_editrelation.png "VLD_C_Edit_EditRelation")<br />リレーションシップを編集します。 | **編集**注釈によって、基本のアイコンがどのように左または右に直面します。 全体的なアイコン デザインが最適に表示される方向を選択します。 |
 | **エフェクト**<br />*"Function"、「変数 (グローバル)」と同じ* | ![効果アイコン](../../extensibility/ux-guidelines/media/vld_c_effects.png "VLD_C_Effects") |||
@@ -152,10 +152,10 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **展開** | ![展開アイコン](../../extensibility/ux-guidelines/media/vld_c_expand.png "VLD_C_Expand") | ![戻り値の展開アイコン](../../extensibility/ux-guidelines/media/vld_c_expand_returnvalueexpanded.png "VLD_C_Expand_ReturnValueExpanded")<br />展開されている値を返す ||
 | **拡大/縮小** | ![展開アイコン](../../extensibility/ux-guidelines/media/vld_c_contractexpand_expand.png "VLD_C_ContractExpand_expand") ![コントラクト&#40;動詞&#41;アイコン](../../extensibility/ux-guidelines/media/vld_c_contractexpand_contract.png "VLD_C_ContractExpand_contract") || **の拡大/縮小**を 2 つの要素の間にスペースを縮小することを示すアイコンがレイアウトの状況で使用されます。 |
 | **エクスポート**<br />*[開く] と同じ*| ![[エクスポート] アイコン](../../extensibility/ux-guidelines/media/vld_c_export.png "VLD_C_Export") | ![フィルター アイコンをエクスポート](../../extensibility/ux-guidelines/media/vld_c_export_exportfilter.png "VLD_C_Export_ExportFilter")<br />フィルターをエクスポートします。<br />![レポート データ アイコンをエクスポート](../../extensibility/ux-guidelines/media/vld_c_export_exportreportdata.png "VLD_C_Export_ExportReportData") <br />レポート データをエクスポートします。<br />![レポートのフィルター アイコンをエクスポート](../../extensibility/ux-guidelines/media/vld_c_export_exportreportfilter.png "VLD_C_Export_ExportReportFilter")<br />レポート フィルターのエクスポート ||
-  
-###  <a name="BKMK_VLDConceptsF"></a> F  
-  
-| 概念 | メイン アイコン | その他の例 | メモ | 
+
+###  <a name="BKMK_VLDConceptsF"></a> F
+
+| 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **お気に入り**<br />保護された、評価 | ![お気に入りアイコン](../../extensibility/ux-guidelines/media/vld_c_favorite.png "VLD_C_Favorite") | ![[お気に入り] アイコンを追加](../../extensibility/ux-guidelines/media/vld_c_favorite_addtofavorites.png "VLD_C_Favorite_AddToFavorites")<br />お気に入りに追加<br />![[評価] アイコン](../../extensibility/ux-guidelines/media/vld_c_favorite_rating.png "VLD_C_Favorite_Rating")<br />年齢区分 ||
 | **フィールド** | ![フィールド アイコン](../../extensibility/ux-guidelines/media/vld_c_field.png "VLD_C_Field") | ![フィールドのアイコンを追加](../../extensibility/ux-guidelines/media/vld_c_field_addfield.png "VLD_C_Field_AddField")<br />フィールドを追加します。<br />![フィールドのアイコンを編集](../../extensibility/ux-guidelines/media/vld_c_field_editfield.png "VLD_C_Field_EditField")<br />フィールドを編集します。 ||
@@ -169,9 +169,9 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **Frame** | ![[フレーム] アイコン](../../extensibility/ux-guidelines/media/vld_c_frame.png "VLD_C_Frame") |||
 | **Friend** | ![[友人] アイコン](../../extensibility/ux-guidelines/media/vld_c_friend.png "VLD_C_Friend") |||
 | **Function**<br />正規表現<br />*「変数 (グローバル)」と「効果」と同じ* | ![関数のアイコン](../../extensibility/ux-guidelines/media/vld_c_function.png "VLD_C_Function") | ![関数の警告アイコン](../../extensibility/ux-guidelines/media/vld_c_function_functionwarning.png "VLD_C_Function_FunctionWarning")<br />関数の警告<br />![WPF ページ関数 アイコン](../../extensibility/ux-guidelines/media/vld_c_function_wpfpagefunction.png "VLD_C_Function_WPFPageFunction")<br />WPF ページ関数 ||
-  
-###  <a name="BKMK_VLDConceptsG"></a> G  
-  
+
+###  <a name="BKMK_VLDConceptsG"></a> G
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **Get**<br />ダウンロード | ![アイコンを取得](../../extensibility/ux-guidelines/media/vld_c_get.png "VLD_C_Get") | ![フォルダー アイコンをダウンロード](../../extensibility/ux-guidelines/media/vld_c_get_downloadfolder.png "VLD_C_Get_DownloadFolder")<br />ダウンロード フォルダーを取得します。<br />![ディクショナリの値 アイコンを取得](../../extensibility/ux-guidelines/media/vld_c_get_getdictionaryvalue.png "VLD_C_Get_GetDictionaryValue")<br />ディクショナリの値を取得します。<br />![アイコンのコレクションから項目を取得](../../extensibility/ux-guidelines/media/vld_c_get_getitemfromcollection.png "VLD_C_Get_GetItemFromCollection")<br />コレクションから項目を取得します。 ||
@@ -180,17 +180,17 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **グリッド** | ![[グリッド] アイコン](../../extensibility/ux-guidelines/media/vld_c_grid.png "VLD_C_Grid") | ![資産データ グリッド コントロール](../../extensibility/ux-guidelines/media/vld_c_grid_assetdatagridcontrol.png "VLD_C_Grid_AssetDataGridControl")<br />資産のデータ グリッド コントロール<br />![グリッド アプリ C&#43; &#43;アイコン](../../extensibility/ux-guidelines/media/vld_c_grid_gridappcpp.png "VLD_C_Grid_GridAppCPP")<br />グリッド アプリ C++<br />![[グリッド] アイコンの切り替え](../../extensibility/ux-guidelines/media/vld_c_grid_togglegrid.png "VLD_C_Grid_ToggleGrid")<br />グリッドを切り替える ||
 | **グリッド web レイアウト** | ![[グリッド web レイアウト] アイコン](../../extensibility/ux-guidelines/media/vld_c_gridweblayout.png "VLD_C_GridWebLayout") | ![グリッド要素 アイコン](../../extensibility/ux-guidelines/media/vld_c_gridweblayout_gridelement.png "VLD_C_GridWebLayout_GridElement")<br />グリッド要素<br />![グリッド スプリッター要素 アイコン](../../extensibility/ux-guidelines/media/vld_c_gridweblayout_gridsplitterelement.png "VLD_C_GridWebLayout_GridSplitterElement")<br />グリッド スプリッター要素 ||
 | **グループ化** | ![グループ化 アイコン](../../extensibility/ux-guidelines/media/vld_c_grouping.png "VLD_C_Grouping") | ![[ダイアログ グループ] アイコン](../../extensibility/ux-guidelines/media/vld_c_grouping_dialoggroup.png "VLD_C_Grouping_DialogGroup")<br />ダイアログのグループ<br />![[チーム] アイコン](../../extensibility/ux-guidelines/media/vld_c_grouping_team.png "VLD_C_Grouping_Team")<br />チーム<br />![仮想マシン アイコン](../../extensibility/ux-guidelines/media/vld_c_grouping_virtualmachines.png "VLD_C_Grouping_VirtualMachines")<br />バーチャル マシン| 互いの上に複数のオブジェクトの重ね合わせの概念を表します**グループ化**または多重度。 |
-  
-###  <a name="BKMK_VLDConceptsH"></a> H  
-  
+
+###  <a name="BKMK_VLDConceptsH"></a> H
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **階層** | ![階層アイコン](../../extensibility/ux-guidelines/media/vld_c_hierarchy.png "VLD_C_Hierarchy") | ![階層変数 アイコン](../../extensibility/ux-guidelines/media/vld_c_hierarchy_hierarchyvariable.png "VLD_C_Hierarchy_HierarchyVariable")<br />階層の変数<br />![[呼び出し階層] アイコン](../../extensibility/ux-guidelines/media/vld_c_hierarchy_callhierarchy.png "VLD_C_Hierarchy_CallHierarchy") <br />呼び出し階層 ||
 | **履歴** | ![履歴アイコン](../../extensibility/ux-guidelines/media/vld_c_history.png "VLD_C_History") |||
 | **Home** | ![ホーム アイコン](../../extensibility/ux-guidelines/media/vld_c_home.png "VLD_C_Home") | ![LightSwitch ホーム画面アイコン](../../extensibility/ux-guidelines/media/vld_c_home_lightswitchhomescreen.png "VLD_C_Home_LightSwitchHomeScreen")<br />LightSwitch ホーム画面 ||
-  
-###  <a name="BKMK_VLDConceptsI"></a> 私  
-  
+
+###  <a name="BKMK_VLDConceptsI"></a> 私
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **アイデア** | ![[アイデア] アイコン](../../extensibility/ux-guidelines/media/vld_c_idea.png "VLD_C_Idea") |||
@@ -201,16 +201,16 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **継承 (矢印)** | ![継承&#40;矢印&#41;アイコン](../../extensibility/ux-guidelines/media/vld_c_inheritance_arrow.png "VLD_C_Inheritance_arrow") || **継承 (矢印)** アイコンは、モデリングの画面のツールボックス コントロールを表します。 |
 | **Interface** | ![インターフェイスのアイコン](../../extensibility/ux-guidelines/media/vld_c_interface.png "VLD_C_Interface") | ![実装インターフェイス アイコン](../../extensibility/ux-guidelines/media/vld_c_interface_implementinterface.png "VLD_C_Interface_ImplementInterface")<br />インターフェイスの実装 ||
 | **Item** | ![項目のアイコン](../../extensibility/ux-guidelines/media/vld_c_item.png "VLD_C_Item") | ![コピー項目アイコン](../../extensibility/ux-guidelines/media/vld_c_item_copyitem.png "VLD_C_Item_CopyItem")<br />項目をコピーします。<br />![リスト項目のアイコンを作成する](../../extensibility/ux-guidelines/media/vld_c_item_createlistitem.png "VLD_C_Item_CreateListItem")<br />リスト項目を作成します。<br />![項目のアイコンをチェックイン](../../extensibility/ux-guidelines/media/vld_c_item_checkinitem.png "VLD_C_Item_CheckInItem")<br />項目をチェックインします。 ||
-  
-###  <a name="BKMK_VLDConceptsK"></a> K  
-  
+
+###  <a name="BKMK_VLDConceptsK"></a> K
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **Key**<br />ID、アクセス許可 | ![キー アイコン](../../extensibility/ux-guidelines/media/vld_c_key.png "VLD_C_Key") | ![新しいキー アイコン](../../extensibility/ux-guidelines/media/vld_c_key_newkey.png "VLD_C_Key_NewKey")<br />新しいキー<br />![アクセス許可 アイコン](../../extensibility/ux-guidelines/media/vld_c_key_permission.png "VLD_C_Key_Permission")<br />アクセス許可<br />![現在の項目 ID アイコンを取得](../../extensibility/ux-guidelines/media/vld_c_key_getcurrentitemid.png "VLD_C_Key_GetCurrentItemID")<br />現在の項目 ID を取得します。 ||
 | **主要業績評価指標 (KPI)** | ![KPI アイコン](../../extensibility/ux-guidelines/media/vld_c_kpi.png "VLD_C_KPI") | ![KPI 削除 アイコン](../../extensibility/ux-guidelines/media/vld_c_kpi_deletekpi.png "VLD_C_KPI_DeleteKPI")<br />KPI を削除します。<br />![KPI ブラウザー ビュー アイコン](../../extensibility/ux-guidelines/media/vld_c_kpi_kpibrowserview.png "VLD_C_KPI_KPIBrowserView")<br />KPI ブラウザー ビュー<br />![エラー アイコンが付いた KPI](../../extensibility/ux-guidelines/media/vld_c_kpi_kpiwitherror.png "VLD_C_KPI_KPIWithError")<br />エラーのある KPI ||
-  
-###  <a name="BKMK_VLDConceptsL"></a> L  
-  
+
+###  <a name="BKMK_VLDConceptsL"></a> L
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **Library** | ![[ライブラリ] アイコン](../../extensibility/ux-guidelines/media/vld_c_library.png "VLD_C_Library") | ![C&#43; &#43;クラス ライブラリ プロジェクト アイコン](../../extensibility/ux-guidelines/media/vld_c_library_cppclasslibraryproject.png "VLD_C_Library_CPPClassLibraryProject")<br />C++ クラス ライブラリ プロジェクト<br />![エクスポート ライブラリ アイコン](../../extensibility/ux-guidelines/media/vld_c_library_exportslibrary.png "VLD_C_Library_ExportsLibrary")<br />エクスポート ライブラリ<br />![F&#35; Windows フォーム コントロール ライブラリ アイコン](../../extensibility/ux-guidelines/media/vld_c_library_fswindowsformcontrollibrary.png "VLD_C_Library_FSWindowsFormControlLibrary")<br />F#Windows フォーム コントロール ライブラリ ||
@@ -218,9 +218,9 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **ロック**<br />プライベート、アクセス許可 | ![ロック アイコン](../../extensibility/ux-guidelines/media/vld_c_lock.png "VLD_C_Lock") | ![ロックの X 軸 アイコン](../../extensibility/ux-guidelines/media/vld_c_lock_lockxaxis.png "VLD_C_Lock_LockXAxis")<br />X 軸のロック<br />![分岐のアクセス許可 アイコン](../../extensibility/ux-guidelines/media/vld_c_lock_branchpermissions.png "VLD_C_Lock_BranchPermissions")<br />ブランチのアクセス許可<br />![専用キュー アイコン](../../extensibility/ux-guidelines/media/vld_c_lock_privatequeue.png "VLD_C_Lock_PrivateQueue")<br />専用キュー ||
 | **ログ** | ![ログ アイコン](../../extensibility/ux-guidelines/media/vld_c_log.png "VLD_C_Log") | ![[カタログのプロパティ] アイコン](../../extensibility/ux-guidelines/media/vld_c_log_catalogproperties.png "VLD_C_Log_CatalogProperties")<br />カタログのプロパティ<br />![アクション ログ アイコン](../../extensibility/ux-guidelines/media/vld_c_log_actionlog.png "VLD_C_Log_ActionLog")<br />操作ログ<br />![[接続テスト計画] アイコン](../../extensibility/ux-guidelines/media/vld_c_log_connecttestplan.png "VLD_C_Log_ConnectTestPlan")<br />テスト計画を接続します。 ||
 | **Loop** | ![[ループ] アイコン](../../extensibility/ux-guidelines/media/vld_c_loop.png "VLD_C_Loop") | ![追加または条件付きループ アイコンを挿入](../../extensibility/ux-guidelines/media/vld_c_loop_addorinsertconditionalloop.png "VLD_C_Loop_AddOrInsertConditionalLoop")<br />追加または条件付きループの挿入<br />![[条件付きループ] アイコン](../../extensibility/ux-guidelines/media/vld_c_loop_conditionalloop.png "VLD_C_Loop_ConditionalLoop")<br />条件付きループ ||
-  
-###  <a name="BKMK_VLDConceptsM"></a> M  
-  
+
+###  <a name="BKMK_VLDConceptsM"></a> M
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **メール**<br />メッセージ | ![メール アイコン](../../extensibility/ux-guidelines/media/vld_c_mail.png "VLD_C_Mail") | ![メッセージ キュー アイコン](../../extensibility/ux-guidelines/media/vld_c_mail_messagequeue.png "VLD_C_Mail_MessageQueue")<br />メッセージ キュー<br />![受信したメッセージのトレース アイコン](../../extensibility/ux-guidelines/media/vld_c_mail_messagereceivedtrace.png "VLD_C_Mail_MessageReceivedTrace")<br />Message Received トレース<br />![電子メール アドレス ビューアー アイコン](../../extensibility/ux-guidelines/media/vld_c_mail_emailaddressviewer.png "VLD_C_Mail_EmailAddressViewer")<br />電子メール アドレス ビューアー ||
@@ -241,26 +241,26 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **携帯電話** | ![携帯電話 アイコン](../../extensibility/ux-guidelines/media/vld_c_mobilephone.png "VLD_C_MobilePhone") | ![モバイル サービス アイコン](../../extensibility/ux-guidelines/media/vld_c_mobilephone_mobileservices.png "VLD_C_MobilePhone_MobileServices")<br />モバイル サービス<br />![モバイル ゲーム コンポーネント アイコン](../../extensibility/ux-guidelines/media/vld_c_mobilephone_mobilegamecomponents.png "VLD_C_MobilePhone_MobileGameComponents")<br />モバイル ゲーム コンポーネント<br />![VB モバイル web プロジェクト アイコン](../../extensibility/ux-guidelines/media/vld_c_mobilephone_vbmobilewebproject.png "VLD_C_MobilePhone_VBMobileWebProject")<br />VB モバイル web プロジェクト ||
 | **Module** | ![モジュールのアイコン](../../extensibility/ux-guidelines/media/vld_c_module.png "VLD_C_Module") | ![マージ モジュール プロジェクト アイコン](../../extensibility/ux-guidelines/media/vld_c_module_mergemoduleproject.png "VLD_C_Module_MergeModuleProject")<br />マージ モジュール プロジェクト<br />![モジュールのアイコンを追加](../../extensibility/ux-guidelines/media/vld_c_module_addmodule.png "VLD_C_Module_AddModule")<br />モジュールを追加します。<br />![マージ モジュールの除外 アイコン](../../extensibility/ux-guidelines/media/vld_c_module_mergemoduleexclude.png "VLD_C_Module_MergeModuleExclude")<br />マージ モジュールの除外 ||
 | **移動** | ![アイコンを移動](../../extensibility/ux-guidelines/media/vld_c_move.png "VLD_C_Move") |||
-  
-###  <a name="BKMK_VLDConceptsN"></a> N  
-  
+
+###  <a name="BKMK_VLDConceptsN"></a> N
+
 | 概念 | メイン アイコン | その他の例 | メモ |
-| --- | --- | --- | --- |  
+| --- | --- | --- | --- |
 | **Namespace** | ![Namespace アイコン](../../extensibility/ux-guidelines/media/vld_c_namespace.png "VLD_C_Namespace") | ![名前空間 アイコンを使用して削除](../../extensibility/ux-guidelines/media/vld_c_namespace_removeusingnamespace.png "VLD_C_Namespace_RemoveUsingNamespace")<br />名前空間を使用した削除します。<br />![名前空間のアイコンを使用して並べ替え](../../extensibility/ux-guidelines/media/vld_c_namespace_sortusingnamespace.png "VLD_C_Namespace_SortUsingNamespace")<br />名前空間を使用した並べ替え<br />![名前空間 アイコンを使用して追加](../../extensibility/ux-guidelines/media/vld_c_namespace_addusingnamespace.png "VLD_C_Namespace_AddUsingNamespace")<br />名前空間を使用して追加します。 ||
 | **Network**<br />接続 | ![ネットワーク アイコン](../../extensibility/ux-guidelines/media/vld_c_network.png "VLD_C_Network") | ![ネットワークのドライバー パッケージのテンプレート アイコン](../../extensibility/ux-guidelines/media/vld_c_network_networkdriverpackagetemplate.png "VLD_C_Network_NetworkDriverPackageTemplate")<br />ネットワークのドライバー パッケージのテンプレート<br />![接続のオフライン アイコン](../../extensibility/ux-guidelines/media/vld_c_network_connectionoffline.png "VLD_C_Network_ConnectionOffline")<br />オフラインの接続<br />![接続の不明なアイコン](../../extensibility/ux-guidelines/media/vld_c_network_connectionunknown.png "VLD_C_Network_ConnectionUnknown")<br />不明な接続 ||
 | **ノード**<br />十字カーソル | ![[ノード] アイコン](../../extensibility/ux-guidelines/media/vld_c_node.png "VLD_C_Node") |||
 | **Nonsubstantive (非表示またはテンプレート)**<br />*「仮想」と同じ* | ![[Nonsubstantive] アイコン](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive.png "VLD_C_Nonsubstantive") | ![非表示フィールド アイコン](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfield.png "VLD_C_Nonsubstantive_HiddenField")<br />非表示フィールド<br />![非表示のフォルダー アイコン](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfolder.png "VLD_C_Nonsubstantive_HiddenFolder")<br />非表示のフォルダー<br />![動的テンプレート アイコン](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_dynamictemplate.png "VLD_C_Nonsubstantive_DynamicTemplate")<br />動的テンプレート | オブジェクトの点線のアウトラインがあることを示します**非表示またはテンプレート宣言**します。 |
 | **注:** | ![注アイコン](../../extensibility/ux-guidelines/media/vld_c_note.png "VLD_C_Note") |||
-  
-###  <a name="BKMK_VLDConceptsO"></a> O  
-  
+
+###  <a name="BKMK_VLDConceptsO"></a> O
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **開く**<br />*「エクスポート」と同じ* | ![[開く] アイコン](../../extensibility/ux-guidelines/media/vld_c_open.png "VLD_C_Open") | ![添付ファイルを開くアイコン](../../extensibility/ux-guidelines/media/vld_c_open_openattachment.png "VLD_C_Open_OpenAttachment")<br />添付ファイルを開く<br />![開いている比較結果アイコン](../../extensibility/ux-guidelines/media/vld_c_open_opencomparisonresult.png "VLD_C_Open_OpenComparisonResult")<br />比較結果を開く<br />![ファイルを開く ダイアログのアイコン](../../extensibility/ux-guidelines/media/vld_c_open_openfiledialog.png "VLD_C_Open_OpenFileDialog")<br />ファイルを開くダイアログ ||
 | **出力** | ![[出力] アイコン](../../extensibility/ux-guidelines/media/vld_c_output.png "VLD_C_Output") |||
-  
-###  <a name="BKMK_VLDConceptsP"></a> P  
-  
+
+###  <a name="BKMK_VLDConceptsP"></a> P
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **パッケージ** | ![パッケージのアイコン](../../extensibility/ux-guidelines/media/vld_c_package.png "VLD_C_Package") | ![クラウド パッケージ アイコン](../../extensibility/ux-guidelines/media/vld_c_package_cloudpackage.png "VLD_C_Package_CloudPackage")<br />クラウド パッケージ<br />![パッケージのアイコンを作成する](../../extensibility/ux-guidelines/media/vld_c_package_createpackage.png "VLD_C_Package_CreatePackage")<br />パッケージを作成します。<br />![ドライバー パッケージのテンプレート アイコン](../../extensibility/ux-guidelines/media/vld_c_package_driverpackagetemplate.png "VLD_C_Package_DriverPackageTemplate")<br />ドライバー パッケージのテンプレート ||
@@ -277,15 +277,15 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **印刷** | ![印刷アイコン](../../extensibility/ux-guidelines/media/vld_c_print.png "VLD_C_Print") | ![印刷の向き アイコン](../../extensibility/ux-guidelines/media/vld_c_print_printdirect.png "VLD_C_Print_PrintDirect")<br />ダイレクト印刷<br />![印刷ダイアログ ボックスのアイコン](../../extensibility/ux-guidelines/media/vld_c_print_printdialog.png "VLD_C_Print_PrintDialog")<br />[印刷] ダイアログ<br />![印刷ドキュメントのコントロールのアイコン](../../extensibility/ux-guidelines/media/vld_c_print_printdocumentcontrol.png "VLD_C_Print_PrintDocumentControl")<br />印刷ドキュメントのコントロール ||
 | **プロシージャ**<br />対話型ウィンドウ | ![プロシージャ アイコン](../../extensibility/ux-guidelines/media/vld_c_procedure.png "VLD_C_Procedure") | ![Python 対話型ウィンドウ アイコン](../../extensibility/ux-guidelines/media/vld_c_procedure_pythoninteractivewindow.png "VLD_C_Procedure_PythonInteractiveWindow")<br />Python Interactive ウィンドウ<br />![プロシージャの警告アイコン](../../extensibility/ux-guidelines/media/vld_c_procedure_procedurewarning.png "VLD_C_Procedure_ProcedureWarning")<br />プロシージャの警告<br />![ストアド プロシージャ アイコン](../../extensibility/ux-guidelines/media/vld_c_procedure_storedprocedure.png "VLD_C_Procedure_StoredProcedure")<br />ストアド プロシージャ ||
 | **Property**<br />構成の設定 | ![プロパティ アイコン](../../extensibility/ux-guidelines/media/vld_c_property.png "VLD_C_Property") | ![プロパティ アイコンを追加](../../extensibility/ux-guidelines/media/vld_c_property_addproperty.png "VLD_C_Property_AddProperty")<br />プロパティを追加します。<br />![拡張プロパティの警告アイコン](../../extensibility/ux-guidelines/media/vld_c_property_extendedpropertywarning.png "VLD_C_Property_ExtendedPropertyWarning")<br />拡張プロパティ&mdash;警告<br />![新しいプロパティ アイコン](../../extensibility/ux-guidelines/media/vld_c_property_newproperty.png "VLD_C_Property_NewProperty")<br />新しいプロパティ ||
-  
-###  <a name="BKMK_VLDConceptsQ"></a> Q  
-  
+
+###  <a name="BKMK_VLDConceptsQ"></a> Q
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **クエリ** | ![クエリ アイコン](../../extensibility/ux-guidelines/media/vld_c_query.png "VLD_C_Query") | ![[クエリ] アイコンを編集](../../extensibility/ux-guidelines/media/vld_c_query_editquery.png "VLD_C_Query_EditQuery")<br />クエリの編集<br />![[クエリ エクステンダー] アイコン](../../extensibility/ux-guidelines/media/vld_c_query_queryextender.png "VLD_C_Query_QueryExtender")<br />クエリ エクステンダー<br />![簡単なクエリ アイコン](../../extensibility/ux-guidelines/media/vld_c_query_quickquery.png "VLD_C_Query_QuickQuery")<br />簡単なクエリ ||
-  
-###  <a name="BKMK_VLDConceptsR"></a> R  
-  
+
+###  <a name="BKMK_VLDConceptsR"></a> R
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **レコード** | ![[レコード] アイコン](../../extensibility/ux-guidelines/media/vld_c_record.png "VLD_C_Record") | ![レコードの画面表示アイコン](../../extensibility/ux-guidelines/media/vld_c_record_recordscreen.png "VLD_C_Record_RecordScreen")<br />レコード 画面<br />![記録されたテスト セッションのアイコンに移動して](../../extensibility/ux-guidelines/media/vld_c_record_gotorecordedtestsession.png "VLD_C_Record_GoToRecordedTestSession")<br />記録されたテスト セッションに移動します。 ||
@@ -301,9 +301,9 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **レポート** | ![レポート アイコン](../../extensibility/ux-guidelines/media/vld_c_report.png "VLD_C_Report") | ![ファイル ダイアログ レポート アイコン](../../extensibility/ux-guidelines/media/vld_c_report_filedialogreport.png "VLD_C_Report_FileDialogReport")<br />ファイル ダイアログ レポート<br />![インストルメンテーション パフォーマンス レポート アイコン](../../extensibility/ux-guidelines/media/vld_c_report_instrumentationperformancereport.png "VLD_C_Report_InstrumentationPerformanceReport")<br />インストルメンテーション パフォーマンス レポート<br />![レポート プロジェクト ウィザード アイコン](../../extensibility/ux-guidelines/media/vld_c_report_reportprojectwizard.png "VLD_C_Report_ReportProjectWizard")<br />レポート プロジェクト ウィザード ||
 | **ルール** | ![ルールのアイコン](../../extensibility/ux-guidelines/media/vld_c_rule.png "VLD_C_Rule") | ![新しい抽出規則 アイコン](../../extensibility/ux-guidelines/media/vld_c_rule_newextractionrule.png "VLD_C_Rule_NewExtractionRule")<br />新しい抽出規則<br />![新しいしきい値規則 アイコン](../../extensibility/ux-guidelines/media/vld_c_rule_newthresholdrule.png "VLD_C_Rule_NewThresholdRule")<br />新しいしきい値規則<br />![新しい検証規則 アイコン](../../extensibility/ux-guidelines/media/vld_c_rule_newvalidationrule.png "VLD_C_Rule_NewValidationRule")<br />新しい検証規則 ||
 | **ルーラー**<br />メジャー、ガイド | ![ルーラー アイコン](../../extensibility/ux-guidelines/media/vld_c_ruler.png "VLD_C_Ruler") | ![測定モード オン アイコン](../../extensibility/ux-guidelines/media/vld_c_ruler_measuremodeon.png "VLD_C_Ruler_MeasureModeOn")<br />測定モード オン<br />![測定単位 アイコン](../../extensibility/ux-guidelines/media/vld_c_ruler_unitsofmeasure.png "VLD_C_Ruler_UnitsOfMeasure")<br />測定単位 ||
-  
-###  <a name="BKMK_VLDConceptsS"></a> S  
-  
+
+###  <a name="BKMK_VLDConceptsS"></a> S
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **保存** | ![[保存] アイコン](../../extensibility/ux-guidelines/media/vld_c_save.png "VLD_C_Save") | ![[保存] アイコンをすべて](../../extensibility/ux-guidelines/media/vld_c_save_saveall.png "VLD_C_Save_SaveAll")<br />すべてを保存します。<br />![保存して閉じる アイコン](../../extensibility/ux-guidelines/media/vld_c_save_saveandclose.png "VLD_C_Save_SaveAndClose")<br />保存して閉じる<br />![ダイアログ コントロール アイコンのファイルを保存](../../extensibility/ux-guidelines/media/vld_c_save_savefiledialogcontrol.png "VLD_C_Save_SaveFileDialogControl")<br />ファイル ダイアログ コントロールを保存します。 ||
@@ -322,8 +322,8 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **Structure**<br />構造体 | ![構造体&#40;構造体&#41;アイコン](../../extensibility/ux-guidelines/media/vld_c_structure.png "VLD_C_Structure") |||
 | **スタイル シート** | ![スタイル シート アイコン](../../extensibility/ux-guidelines/media/vld_c_stylesheet.png "VLD_C_StyleSheet") | ![新しいスタイル シートのアイコン](../../extensibility/ux-guidelines/media/vld_c_stylesheet_newstylesheet.png "VLD_C_StyleSheet_NewStyleSheet")<br />新しいスタイル シート<br />![スタイル シート アイコンをアタッチ](../../extensibility/ux-guidelines/media/vld_c_stylesheet_attachstylesheet.png "VLD_C_StyleSheet_AttachStyleSheet")<br />スタイル シートを適用します。 ||
 | **[同期]**<br />更新 | ![[同期] アイコン](../../extensibility/ux-guidelines/media/vld_c_synchronize.png "VLD_C_Synchronize") | ![更新された JavaScript アイコン](../../extensibility/ux-guidelines/media/vld_c_synchronize_updatedjavascript.png "VLD_C_Synchronize_UpdatedJavaScript")<br />更新された JavaScript<br />![データベースのアイテムのアイコンを更新する](../../extensibility/ux-guidelines/media/vld_c_synchronize_databaseupdateditems.png "VLD_C_Synchronize_DatabaseUpdatedItems")<br />データベースのアイテムを更新します。<br />![同期アイコン](../../extensibility/ux-guidelines/media/vld_c_synchronize_sync.png "VLD_C_Synchronize_Sync")<br />同期 ||
-  
-###  <a name="BKMK_VLDConceptsT"></a> T  
+
+###  <a name="BKMK_VLDConceptsT"></a> T
 
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
@@ -338,18 +338,18 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **タイマー** | ![タイマーのアイコン](../../extensibility/ux-guidelines/media/vld_c_timer.png "VLD_C_Timer") | ![時間にアイコンが [完了]](../../extensibility/ux-guidelines/media/vld_c_timer_timefinish.png "VLD_C_Timer_TimeFinish")<br />時間の終了<br />![時間の開始 アイコン](../../extensibility/ux-guidelines/media/vld_c_timer_timestart.png "VLD_C_Timer_TimeStart")<br />開始時間 ||
 | **切り替え** | ![切り替えアイコン](../../extensibility/ux-guidelines/media/vld_c_toggle.png "VLD_C_Toggle") | ![すべてのブレークポイントのアイコンを切り替えます](../../extensibility/ux-guidelines/media/vld_c_toggle_toggleallbreakpoints.png "VLD_C_Toggle_ToggleAllBreakpoints")<br />すべてのブレークポイントを切り替える<br />![切り替えアイコン](../../extensibility/ux-guidelines/media/vld_c_toggle_toggle.png "VLD_C_Toggle_Toggle")<br />切り替え ||
 | **ツールボックス** | ![ツールボックス アイコン](../../extensibility/ux-guidelines/media/vld_c_toolbox.png "VLD_C_Toolbox") | ![Winform ツールボックス コントロール アイコン](../../extensibility/ux-guidelines/media/vld_c_toolbox_winformtoolboxcontrol.png "VLD_C_Toolbox_WinformToolboxControl")<br />Winform ツールボックス コントロール<br />![WPF ツールボックス コントロール アイコン](../../extensibility/ux-guidelines/media/vld_c_toolbox_wpftoolboxcontrol.png "VLD_C_Toolbox_WPFToolboxControl")<br />WPF ツールボックス コントロール ||
-  
-###  <a name="BKMK_VLDConceptsU"></a> U  
-  
+
+###  <a name="BKMK_VLDConceptsU"></a> U
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **元に戻す**<br />元に戻す、復元 | ![アイコンを元に戻す](../../extensibility/ux-guidelines/media/vld_c_undo.png "VLD_C_Undo") | ![イメージの復元 アイコン](../../extensibility/ux-guidelines/media/vld_c_undo_imagerestore.png "VLD_C_Undo_ImageRestore")<br />イメージの復元<br />![チェック アウト項目アイコンを元に戻す](../../extensibility/ux-guidelines/media/vld_c_undo_undocheckoutitem.png "VLD_C_Undo_UndoCheckOutItem")<br />アイテムのチェック アウトを元に戻す ||
 | **アップ**<br />アップロード | ![アイコンを](../../extensibility/ux-guidelines/media/vld_c_up.png "VLD_C_Up") | ![ファイル アップロード パラメーター アイコン](../../extensibility/ux-guidelines/media/vld_c_up_fileuploadparameter.png "VLD_C_Up_FileUploadParameter")<br />ファイル アップロード パラメーター<br />![1 つのアイコン上の](../../extensibility/ux-guidelines/media/vld_c_up_onelevelup.png "VLD_C_Up_OneLevelUp")<br />1 レベル上 ||
 | **User**<br />ロール、プロファイル | ![ユーザー アイコン](../../extensibility/ux-guidelines/media/vld_c_user.png "VLD_C_User") | ![[ユーザー] アイコンを追加](../../extensibility/ux-guidelines/media/vld_c_user_adduser.png "VLD_C_User_AddUser")<br />ユーザーを追加します。<br />![Web ユーザー コントロールのアイコンを追加](../../extensibility/ux-guidelines/media/vld_c_user_addwebusercontrol.png "VLD_C_User_AddWebUserControl")<br />Web ユーザー コントロールを追加します。<br />![SQL ユーザー&#45;種類アイコンが定義されている](../../extensibility/ux-guidelines/media/vld_c_user_sqluserdefinedtype.png "VLD_C_User_SQLUserDefinedType")<br />SQL ユーザー定義型 ||
 | **ユーザー インターフェイス**<br />UI | ![ユーザー インターフェイス アイコン](../../extensibility/ux-guidelines/media/vld_c_userinterface.png "VLD_C_UserInterface") |||
-  
-###  <a name="BKMK_VLDConceptsV"></a> V  
-  
+
+###  <a name="BKMK_VLDConceptsV"></a> V
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **変数 (ローカル)** | ![変数&#40;ローカル&#41;アイコン](../../extensibility/ux-guidelines/media/vld_c_variable_local.png "VLD_C_Variable_local") | ![新しい変数 アイコン](../../extensibility/ux-guidelines/media/vld_c_variable_local_newvariable.png "VLD_C_Variable_local_NewVariable")<br />新しい変数<br />![変数&#40;ローカル&#41;アイコン](../../extensibility/ux-guidelines/media/vld_c_variable_local_localvariable.png "VLD_C_Variable_local_LocalVariable")<br />ローカル変数<br />![SQL 変数 アイコン](../../extensibility/ux-guidelines/media/vld_c_variable_local_sqlvariable.png "VLD_C_Variable_local_SQLVariable")<br />SQL 変数 ||
@@ -358,33 +358,33 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **表示**<br />監査 | ![ビュー&#40;監査&#41;アイコン](../../extensibility/ux-guidelines/media/vld_c_view_audit.png "VLD_C_View_audit") | ![リソース ビュー アイコン](../../extensibility/ux-guidelines/media/vld_c_view_audit_resourceview.png "VLD_C_View_audit_ResourceView")<br />リソース ビュー<br />![ブラウザーのアイコンで表示](../../extensibility/ux-guidelines/media/vld_c_view_audit_viewinbrowser.png "VLD_C_View_audit_ViewInBrowser")<br />ブラウザーで表示します。<br />![X&#45;レイ ビュー アイコン](../../extensibility/ux-guidelines/media/vld_c_view_audit_xrayview.png "VLD_C_View_audit_XRayView")<br />X 線ビュー ||
 | **Virtual**<br />*同じ"Nonsubstantive (非表示またはテンプレート)"* | ![仮想アイコン](../../extensibility/ux-guidelines/media/vld_c_virtual.png "VLD_C_Virtual") | ![仮想環境 アイコン](../../extensibility/ux-guidelines/media/vld_c_virtual_virtualenvironment.png "VLD_C_Virtual_VirtualEnvironment")<br />仮想環境 ||
 | **Visible** | ![[可視] アイコン](../../extensibility/ux-guidelines/media/vld_c_visible.png "VLD_C_Visible") | ![[クロークまたは非表示] アイコン](../../extensibility/ux-guidelines/media/vld_c_visible_cloakorhide.png "VLD_C_Visible_CloakOrHide")<br />クロークまたは非表示にします。 ||
-  
-###  <a name="BKMK_VLDConceptsW"></a> W  
-  
+
+###  <a name="BKMK_VLDConceptsW"></a> W
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **ウォッチ** | ![[ウォッチ] アイコン](../../extensibility/ux-guidelines/media/vld_c_watch.png "VLD_C_Watch") | ![ファイル システム ウォッチャー アイコン](../../extensibility/ux-guidelines/media/vld_c_watch_filesystemwatcher.png "VLD_C_Watch_FileSystemWatcher")<br />ファイル システムの監視 ||
 | **Web** | ![Web アイコン](../../extensibility/ux-guidelines/media/vld_c_web.png "VLD_C_Web") | ![Web アイコンへの公開](../../extensibility/ux-guidelines/media/vld_c_web_publishtoweb.png "VLD_C_Web_PublishToWeb")<br />Web に公開します。<br />![Web 設定アイコンをダウンロード](../../extensibility/ux-guidelines/media/vld_c_web_downloadwebsettings.png "VLD_C_Web_DownloadWebSettings")<br />Web 設定をダウンロードします。<br />![新しい web サイト アイコン](../../extensibility/ux-guidelines/media/vld_c_web_newwebsite.png "VLD_C_Web_NewWebsite")<br />新しい web サイト ||
 | **ウィザード** | ![ウィザードのアイコン](../../extensibility/ux-guidelines/media/vld_c_wizard.png "VLD_C_Wizard") | ![マップ レイヤー ウィザード アイコン](../../extensibility/ux-guidelines/media/vld_c_wizard_maplayerwizard.png "VLD_C_Wizard_MapLayerWizard")<br />マップ レイヤー ウィザード<br />![MFC クラス ウィザード アイコン](../../extensibility/ux-guidelines/media/vld_c_wizard_mfcclasswizard.png "VLD_C_Wizard_MFCCLassWizard")<br />MFC クラス ウィザード<br />![マップ ウィザード アイコン](../../extensibility/ux-guidelines/media/vld_c_wizard_mapwizard.png "VLD_C_Wizard_MapWizard")<br />マップ ウィザード ||
 | **作業項目** | ![作業項目 アイコン](../../extensibility/ux-guidelines/media/vld_c_workitem.png "VLD_C_WorkItem") | ![作業項目のアイコンに移動して](../../extensibility/ux-guidelines/media/vld_c_workitem_gotoworkitem.png "VLD_C_WorkItem_GoToWorkItem")<br />作業項目へ移動<br />![作業項目クエリ アイコン](../../extensibility/ux-guidelines/media/vld_c_workitem_workitemquery.png "VLD_C_WorkItem_WorkItemQuery")<br />作業項目クエリ ||
-  
-###  <a name="BKMK_VLDConceptsY"></a> Y  
-  
+
+###  <a name="BKMK_VLDConceptsY"></a> Y
+
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **Yield** | ![[Yield] アイコン](../../extensibility/ux-guidelines/media/vld_c_yield.png "VLD_C_Yield") |||
-  
-###  <a name="BKMK_VLDConceptsZ"></a> Z  
+
+###  <a name="BKMK_VLDConceptsZ"></a> Z
 
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **ズーム** | ![[ズーム] アイコン](../../extensibility/ux-guidelines/media/vld_c_zoom.png "VLD_C_Zoom") | ![ズーム イン アイコン](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomin.png "VLD_C_Zoom_ZoomIn")<br />拡大表示<br />![ズーム アウト アイコン](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomout.png "VLD_C_Zoom_ZoomOut")<br />ズーム アウト ||
-  
-##  <a name="BKMK_VLDProducts"></a> 製品とプラットフォーム  
-  
+
+##  <a name="BKMK_VLDProducts"></a> 製品とプラットフォーム
+
 | 概念 | メイン アイコン | その他の例 |
 | --- | --- | --- |
-| **App Insights** | ![App Insights アイコン](../../extensibility/ux-guidelines/media/vld_p_appinsights.png "VLD_P_AppInsights") ||  
+| **App Insights** | ![App Insights アイコン](../../extensibility/ux-guidelines/media/vld_p_appinsights.png "VLD_P_AppInsights") ||
 | **ATL** | ![[ATL] アイコン](../../extensibility/ux-guidelines/media/vld_p_atl.png "VLD_P_ATL") | ![ATL active server page コンポーネント アイコン](../../extensibility/ux-guidelines/media/vld_p_atl_atlactiveserverpagecomponent.png "VLD_P_ATL_ATLActiveServerPageComponent")<br />ATL active server page コンポーネント<br />![ATL コントロール クラスのアイコン](../../extensibility/ux-guidelines/media/vld_p_atl_atlcontrolclass.png "VLD_P_ATL_ATLControlClass")<br />ATL コントロール クラス<br />![ATL サーバー アイコン](../../extensibility/ux-guidelines/media/vld_p_atl_atlserver.png "VLD_P_ATL_ATLServer")<br />ATL サーバー |
 | **blend** | ![Blend アイコン](../../extensibility/ux-guidelines/media/vld_p_blend.png "VLD_P_Blend") | ![Blend SketchFlow アプリケーション アイコン](../../extensibility/ux-guidelines/media/vld_p_blend_blendsketchflowapplication.png "VLD_P_Blend_BlendSketchFlowApplication")<br />Blend SketchFlow アプリケーション<br />![Blend Windows Phone アプリケーション アイコン](../../extensibility/ux-guidelines/media/vld_p_blend_blendwindowsphoneapplication.png "VLD_P_Blend_BlendWindowsPhoneApplication")<br />Blend の Windows Phone アプリケーション<br />![Blend の Windows Phone ピボット アプリケーション](../../extensibility/ux-guidelines/media/vld_p_blend_blendwindowsphonepivotapplication.png "VLD_P_Blend_BlendWindowsPhonePivotApplication")<br />Blend Windows Phone ピボット アプリケーション |
 | **CoffeeScript** | ![[CoffeeScript] アイコン](../../extensibility/ux-guidelines/media/vld_p_coffeescript.png "VLD_P_CoffeeScript") ||
@@ -395,9 +395,9 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **Microsoft Foundation Class**<br />MFC | ![[MFC] アイコン](../../extensibility/ux-guidelines/media/vld_p_mfc.png "VLD_P_MFC") | ![MFC ActiveX コントロール プロジェクト アイコン](../../extensibility/ux-guidelines/media/vld_p_mfc_mfcactivexcontrolproject.png "VLD_P_MFC_MFCActiveXControlProject")<br />MFC ActiveX コントロール プロジェクト<br />![MFC アプリケーション プロジェクト アイコン](../../extensibility/ux-guidelines/media/vld_p_mfc_mfcapplicationproject.png "VLD_P_MFC_MFCApplicationProject")<br />MFC アプリケーション プロジェクト<br />![C&#43; &#43; MFC DLL プロジェクト アイコン](../../extensibility/ux-guidelines/media/vld_p_mfc_cppmfcdllproject.png "VLD_P_MFC_CPPMFCDLLProject")<br />C++ MFC DLL プロジェクト |
 | **WCF** | ![[WCF] アイコン](../../extensibility/ux-guidelines/media/vld_p_wcf.png "VLD_P_WCF") | ![WCF data services アイコン](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfdataservices.png "VLD_P_WCF_WCFDataServices")<br />WCF データ サービス<br />![WCF プロジェクト F#&#35;アイコン](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfprojectfs.png "VLD_P_WCF_WCFProjectFS")<br />WCF プロジェクトF#<br />![WCF プロジェクト VB アイコン](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfprojectvb.png "VLD_P_WCF_WCFProjectVB")<br />WCF プロジェクト VB |
 | **WF** | ![[WF] アイコン](../../extensibility/ux-guidelines/media/vld_p_wf.png "VLD_P_WF") | ![WF プロジェクト C#&#35;アイコン](../../extensibility/ux-guidelines/media/vld_p_wf_wfprojectcs.png "VLD_P_WF_WFProjectCS")<br />WF プロジェクト c#<br />![[WF プロジェクト VB] アイコン](../../extensibility/ux-guidelines/media/vld_p_wf_wfprojectvb.png "VLD_P_WF_WFProjectVB")<br />WF プロジェクト VB |
-  
-##  <a name="BKMK_VLDArrows"></a> 矢印を使用して一般的な概念  
-  
+
+##  <a name="BKMK_VLDArrows"></a> 矢印を使用して一般的な概念
+
 | 概念 | メイン アイコン | その他の例 |
 | --- | --- | --- | --- |
 | **関連行** | ![関連線 アイコン](../../extensibility/ux-guidelines/media/vld_a_associationline.png "VLD_A_AssociationLine") ||
@@ -437,9 +437,9 @@ Visual Studio では、そのことは考えません、およびその他の画
 | **同期** | ![同期アイコン](../../extensibility/ux-guidelines/media/vld_a_sync.png "VLD_A_Sync") | ![同期内容アイコン](../../extensibility/ux-guidelines/media/vld_a_sync_synccontents.png "VLD_A_Sync_SyncContents")<br />目次の同期 |
 | **元に戻す**<br />元に戻す、復元 | ![アイコンを元に戻す](../../extensibility/ux-guidelines/media/vld_a_undo.png "VLD_A_Undo") | ![イメージの復元 アイコン](../../extensibility/ux-guidelines/media/vld_a_undo_imagerestore.png "VLD_A_Undo_ImageRestore")<br />イメージの復元<br />![コメント解除 アイコン](../../extensibility/ux-guidelines/media/vld_a_undo_uncomment.png "VLD_A_Undo_Uncomment")<br />選択範囲のコメントの解除 |
 | **アップ**<br />アップロード | ![アイコンを](../../extensibility/ux-guidelines/media/vld_a_up.png "VLD_A_Up") | ![ファイル アップロード パラメーター アイコン](../../extensibility/ux-guidelines/media/vld_a_up_fileuploadparameter.png "VLD_A_Up_FileUploadParameter")<br />ファイル アップロード パラメーター<br />![1 つのアイコン上の](../../extensibility/ux-guidelines/media/vld_a_up_onelevelup.png "VLD_A_Up_OneLevelUp")<br />1 レベル上 |
-  
-##  <a name="BKMK_VLDStatus"></a> 状態インジケーター  
-  
+
+##  <a name="BKMK_VLDStatus"></a> 状態インジケーター
+
 | 概念 | メイン アイコン | その他の例 |
 | --- | --- | --- |
 | **アクションの状態: 一時停止** | ![アクションの状態: 一時停止 アイコン](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused.png "VLD_S_ActionStatusPaused") | ![サーバーにアイコンが一時停止した](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused_serverpaused.png "VLD_S_ActionStatusPaused_ServerPaused")<br />サーバーを一時停止 |

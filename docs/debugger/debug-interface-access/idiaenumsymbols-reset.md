@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaEnumSymbols::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 8540a3aef4460ec022c3da8d69da44d14863d7e1
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/26/2019
 ms.locfileid: "55068668"

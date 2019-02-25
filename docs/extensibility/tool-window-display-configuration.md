@@ -11,29 +11,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 089b0ac1a30a7605df61d5e5e5545e6f4c80549a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973409"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707043"
 ---
 # <a name="tool-window-display-configuration"></a>ツール ウィンドウの表示構成
-VSPackage でツール ウィンドウ、既定の位置、サイズ、ドッキング スタイル、およびその他の可視性の情報を登録する場合は、省略可能な値で指定されます。 ツール ウィンドウの登録の詳細については、次を参照してください[ツールの Windows レジストリで。](../extensibility/tool-windows-in-the-registry.md)  
+VSPackage でツール ウィンドウ、既定の位置、サイズ、ドッキング スタイル、およびその他の可視性の情報を登録する場合は、省略可能な値で指定されます。 ツール ウィンドウの登録の詳細については、次を参照してください[ツールの Windows レジストリで。](../extensibility/tool-windows-in-the-registry.md)
 
-## <a name="window-display-information"></a>ウィンドウの表示情報  
- ツール ウィンドウの基本的な表示の構成は、最大 6 個の省略可能な値に格納されます。  
+## <a name="window-display-information"></a>ウィンドウの表示情報
+ ツール ウィンドウの基本的な表示の構成は、最大 6 個の省略可能な値に格納されます。
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        <Version>\  
-          ToolWindows\  
-            <Tool Window GUID>\  
-              (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        <Version>\
+          ToolWindows\
+            <Tool Window GUID>\
+              (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
+```
 
 
 | 名前 | 型 | データ | 説明 |
@@ -45,67 +45,67 @@ HKEY_LOCAL_MACHINE\
 | [方向] | REG_SZ | "Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Bottom" | 以下のコメント セクションを参照してください。 |
 | DontForceCreate | REG_DWORD | 0 または 1 | このエントリが存在し、その値が 0 でない場合、ウィンドウが読み込まれましたが、すぐに表示されます。 |
 
-### <a name="comments"></a>コメント  
- 印刷の向きのエントリは、そのタイトル バーをダブルクリックしたときにツール ウィンドウがドッキング位置を定義します。 ウィンドウのエントリで指定されたウィンドウに対する相対位置パスです。 スタイル エントリは、「リンクされた」に設定されている場合、向きエントリは、"Left"、"Right"、"Top"または"Bottom"にすることができます。 場合は、スタイルのエントリは、「タブ」、向きのエントリ「おくことができます」または"Right"をタブが追加されますを指定します。 スタイルのエントリが「フローティング」場合は、ツール ウィンドウは最初に寄せて配置します。 タイトル バーがダブルクリックされたとき向きとウィンドウのエントリを適用して、ウィンドウは、「タブ」スタイルを使用します。 スタイルのエントリが"AlwaysFloat"の場合は、ツール ウィンドウをドッキングことはできません。 スタイルのエントリが"MDI"の場合は、ツール ウィンドウは、MDI 領域にリンクされているし、ウィンドウのエントリは無視されます。  
+### <a name="comments"></a>コメント
+ 印刷の向きのエントリは、そのタイトル バーをダブルクリックしたときにツール ウィンドウがドッキング位置を定義します。 ウィンドウのエントリで指定されたウィンドウに対する相対位置パスです。 スタイル エントリは、「リンクされた」に設定されている場合、向きエントリは、"Left"、"Right"、"Top"または"Bottom"にすることができます。 場合は、スタイルのエントリは、「タブ」、向きのエントリ「おくことができます」または"Right"をタブが追加されますを指定します。 スタイルのエントリが「フローティング」場合は、ツール ウィンドウは最初に寄せて配置します。 タイトル バーがダブルクリックされたとき向きとウィンドウのエントリを適用して、ウィンドウは、「タブ」スタイルを使用します。 スタイルのエントリが"AlwaysFloat"の場合は、ツール ウィンドウをドッキングことはできません。 スタイルのエントリが"MDI"の場合は、ツール ウィンドウは、MDI 領域にリンクされているし、ウィンドウのエントリは無視されます。
 
-### <a name="example"></a>例  
+### <a name="example"></a>例
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        8.0Exp\  
-          ToolWindows\  
-            {A0C5197D-0AC7-4B63-97CD-8872A789D233}\  
-              (Default)       = reg_sz: {DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}  
-              DontForceCreate = reg_dword: 0x00000000  
-              Float           = reg_sz: 100,100,450,300  
-              Name            = reg_sz: Bookmarks  
-              Orientation     = reg_sz: Left  
-              Style           = reg_sz: Tabbed  
-              Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        8.0Exp\
+          ToolWindows\
+            {A0C5197D-0AC7-4B63-97CD-8872A789D233}\
+              (Default)       = reg_sz: {DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}
+              DontForceCreate = reg_dword: 0x00000000
+              Float           = reg_sz: 100,100,450,300
+              Name            = reg_sz: Bookmarks
+              Orientation     = reg_sz: Left
+              Style           = reg_sz: Tabbed
+              Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}
+```
 
-## <a name="tool-window-visibility"></a>ツール ウィンドウの表示  
- オプションの可視性のサブキーの値では、ツール ウィンドウの可視性の設定によって決まります。 ウィンドウの可視性を必要とするコマンドの Guid を格納する値の名前が使用されます。 コマンドを実行すると、IDE は、ツール ウィンドウが作成され、表示されることを保証します。  
+## <a name="tool-window-visibility"></a>ツール ウィンドウの表示
+ オプションの可視性のサブキーの値では、ツール ウィンドウの可視性の設定によって決まります。 ウィンドウの可視性を必要とするコマンドの Guid を格納する値の名前が使用されます。 コマンドを実行すると、IDE は、ツール ウィンドウが作成され、表示されることを保証します。
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        <Version>\  
-          ToolWindows\  
-            <Tool Window GUID>\  
-              Visibility\  
-                (Default) = reg_sz:  
-                <GUID>    = reg_dword:  
-                <GUID>    = reg_dword:  
-                <GUID>    = reg_sz:  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        <Version>\
+          ToolWindows\
+            <Tool Window GUID>\
+              Visibility\
+                (Default) = reg_sz:
+                <GUID>    = reg_dword:
+                <GUID>    = reg_dword:
+                <GUID>    = reg_sz:
+```
 
-|名前|型|データ|説明|  
-|----------|----------|----------|-----------------|  
-|(既定)|REG_SZ|なし|空のままにします。|  
-|*\<GUID>*|REG_DWORD または REG_SZ|0 または説明する文字列。|任意。 エントリの名前は、可視性を必要とするコマンドの GUID である必要があります。 値は、情報の文字列だけを保持します。 通常、値は、`reg_dword`を 0 に設定します。|  
+|名前|型|データ|説明|
+|----------|----------|----------|-----------------|
+|(既定)|REG_SZ|なし|空のままにします。|
+|*\<GUID>*|REG_DWORD または REG_SZ|0 または説明する文字列。|任意。 エントリの名前は、可視性を必要とするコマンドの GUID である必要があります。 値は、情報の文字列だけを保持します。 通常、値は、`reg_dword`を 0 に設定します。|
 
-### <a name="example"></a>例  
+### <a name="example"></a>例
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        8.0Exp\  
-          ToolWindows\  
-            {EEFA5220-E298-11D0-8F78-00A0C9110057}\  
-              Visibility\  
-                (Default) = reg_sz:  
-                {93694fa0-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
-                {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000  
-                {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        8.0Exp\
+          ToolWindows\
+            {EEFA5220-E298-11D0-8F78-00A0C9110057}\
+              Visibility\
+                (Default) = reg_sz:
+                {93694fa0-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000
+                {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000
+                {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000
+```
 
-## <a name="see-also"></a>関連項目  
- [VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>関連項目
+- [VSPackage](../extensibility/internals/vspackages.md)

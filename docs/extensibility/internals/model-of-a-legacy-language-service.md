@@ -10,36 +10,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b399a7d65f4bc1eb214b19e5447c99b1f438ff78
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a044d623931d024f15baba1532e3a563273242e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953407"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621943"
 ---
 # <a name="model-of-a-legacy-language-service"></a>従来の言語サービスのモデル
-言語サービスは、要素と、特定の言語の機能を定義し、その言語に固有の情報に、エディターを提供するために使用します。 たとえば、エディターでは、構文の色分けをサポートするために、要素と言語のキーワードを把握する必要があります。  
-  
- 言語サービスは、エディターと、エディターを含むビューによって管理されるテキスト バッファーと密接に連携します。 Microsoft IntelliSense**クイック ヒント**オプションは、言語サービスによって提供される機能の例を示します。  
-  
-## <a name="a-minimal-language-service"></a>最小言語サービス  
- 最も基本的な言語サービスには、次の 2 つのオブジェクトが含まれています。  
-  
-- *言語サービス*実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>インターフェイス。 言語サービスでは、名前、ファイル名拡張子、コード ウィンドウ マネージャー、および colorizer を含め、c# 言語に関する情報があります。  
-  
-- *Colorizer*実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>インターフェイス。  
-  
-  次の概念図は、基本的な言語サービスのモデルを示しています。  
-  
-  ![言語サービス モデル グラフィック](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-  基本的な言語サービス モデル  
-  
-  ドキュメント ウィンドウのホスト、*ドキュメント ビュー*ここでは、エディターの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]のコア エディター。 ドキュメントの表示とテキスト バッファーは、エディターによって所有されます。 これらのオブジェクトが使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]と呼ばれる特殊なドキュメント ウィンドウで、*コード ウィンドウ*します。 コード ウィンドウに含まれている、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>が作成され、IDE によって制御されるオブジェクト。  
-  
-  エディターはその拡張機能に関連付けられた言語サービスを検索し、呼び出すことによって、コード ウィンドウに渡します特定の拡張子を持つファイルが読み込まれるときに、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>メソッド。 言語サービスを返します、*コード ウィンドウ マネージャー*、実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>インターフェイス。  
-  
-  次の表では、モデル内のオブジェクトの概要を示します。  
-  
+言語サービスは、要素と、特定の言語の機能を定義し、その言語に固有の情報に、エディターを提供するために使用します。 たとえば、エディターでは、構文の色分けをサポートするために、要素と言語のキーワードを把握する必要があります。
+
+ 言語サービスは、エディターと、エディターを含むビューによって管理されるテキスト バッファーと密接に連携します。 Microsoft IntelliSense**クイック ヒント**オプションは、言語サービスによって提供される機能の例を示します。
+
+## <a name="a-minimal-language-service"></a>最小言語サービス
+ 最も基本的な言語サービスには、次の 2 つのオブジェクトが含まれています。
+
+- *言語サービス*実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>インターフェイス。 言語サービスでは、名前、ファイル名拡張子、コード ウィンドウ マネージャー、および colorizer を含め、c# 言語に関する情報があります。
+
+- *Colorizer*実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>インターフェイス。
+
+  次の概念図は、基本的な言語サービスのモデルを示しています。
+
+  ![言語サービス モデル グラフィック](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")基本的な言語サービス モデル
+
+  ドキュメント ウィンドウのホスト、*ドキュメント ビュー*ここでは、エディターの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]のコア エディター。 ドキュメントの表示とテキスト バッファーは、エディターによって所有されます。 これらのオブジェクトが使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]と呼ばれる特殊なドキュメント ウィンドウで、*コード ウィンドウ*します。 コード ウィンドウに含まれている、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>が作成され、IDE によって制御されるオブジェクト。
+
+  エディターはその拡張機能に関連付けられた言語サービスを検索し、呼び出すことによって、コード ウィンドウに渡します特定の拡張子を持つファイルが読み込まれるときに、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>メソッド。 言語サービスを返します、*コード ウィンドウ マネージャー*、実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>インターフェイス。
+
+  次の表では、モデル内のオブジェクトの概要を示します。
+
 | コンポーネント | Object | 関数 |
 |------------------| - | - |
 | テキスト バッファー | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Unicode の読み取り/書き込みテキスト ストリーム。 その他のエンコーディングを使用するテキストのことができます。 |
@@ -47,6 +46,6 @@ ms.locfileid: "54953407"
 | テキスト ビュー | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | ユーザーが移動し、キーボードとマウスを使用してテキストを表示できるウィンドウです。 テキスト ビューは、エディターとしてユーザーに表示されます。 通常のエディター ウィンドウ、出力ウィンドウやイミディ エイト ウィンドウのテキスト ビューを使用することができます。 さらに、コード ウィンドウ内の 1 つまたは複数のテキスト ビューを構成できます。 |
 | テキスト マネージャー | によって管理される、<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>から取得する、サービス、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>ポインター | 前に説明したすべてのコンポーネントによって共有される一般的な情報を保持するコンポーネント。 |
 | 言語サービス | 実装に依存します。実装します。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | 構文の強調表示、ステートメント入力候補、およびかっこの照合などの言語に固有の情報で、エディターを提供するオブジェクト。 |
-  
-## <a name="see-also"></a>関連項目  
- [カスタム エディターでのドキュメント データとドキュメント ビュー](../../extensibility/document-data-and-document-view-in-custom-editors.md)
+
+## <a name="see-also"></a>関連項目
+- [カスタム エディターでのドキュメント データとドキュメント ビュー](../../extensibility/document-data-and-document-view-in-custom-editors.md)

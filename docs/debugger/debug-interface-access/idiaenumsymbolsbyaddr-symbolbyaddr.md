@@ -1,4 +1,4 @@
----
+﻿---
 title: IDiaEnumSymbolsByAddr::symbolByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c2305c155e0f9790e43514ac4ef68a8e23113e94
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55008349"

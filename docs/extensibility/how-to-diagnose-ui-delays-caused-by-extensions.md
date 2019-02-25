@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317121"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719484"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>方法: 拡張機能による診断 UI の遅延
 
@@ -21,7 +21,7 @@ UI が応答しなくなった、リーフからベースの方向に、Visual S
 
 通知は、拡張機能からのコードの結果があります (つまり、UI の無応答) UI の遅延にされていることをユーザーに通知します。 ユーザーは、拡張機能またはその拡張機能の今後の通知を無効にするオプションも提供します。
 
-このドキュメントでは、UI の遅延通知の原因は拡張機能のコードで何を診断する方法について説明します。 
+このドキュメントでは、UI の遅延通知の原因は拡張機能のコードで何を診断する方法について説明します。
 
 > [!NOTE]
 > UI の遅延を診断する Visual Studio の実験用インスタンスを使わないでください。 つまり、UI の遅延通知が表示されませんが、実験用インスタンスを使用する場合、UI の遅延通知に必要な呼び出し履歴の分析の一部が無効になります。
@@ -102,7 +102,7 @@ PerfView トレースの収集が開始されたら、再び表示されるよ�
 次に、左側のウィンドウで、トレース ファイルを選択しを選択して開きます**開く**右クリックまたはコンテキスト メニューから。
 
 > [!NOTE]
-> 既定では、PerfView は、Zip アーカイブを出力します。 開く*trace.zip*、自動的にアーカイブの圧縮を解除し、トレースが表示されます。 これをスキップするにはオフにすると、 **Zip**トレースの収集中にボックス。 ただし、転送し、別のコンピューター間でのトレースの使用を計画している場合強くお勧めしますをオフにすると、 **Zip**ボックス。 このオプションを指定せず、必要なアセンブリの Ngen Pdb がトレースに付属し、移行先コンピューターはそのためする Ngen アセンブリからのシンボルが解決しません。 (を参照してください[このブログの投稿](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/)アセンブリの Ngen Pdb の詳細についてはします)。 
+> 既定では、PerfView は、Zip アーカイブを出力します。 開く*trace.zip*、自動的にアーカイブの圧縮を解除し、トレースが表示されます。 これをスキップするにはオフにすると、 **Zip**トレースの収集中にボックス。 ただし、転送し、別のコンピューター間でのトレースの使用を計画している場合強くお勧めしますをオフにすると、 **Zip**ボックス。 このオプションを指定せず、必要なアセンブリの Ngen Pdb がトレースに付属し、移行先コンピューターはそのためする Ngen アセンブリからのシンボルが解決しません。 (を参照してください[このブログの投稿](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/)アセンブリの Ngen Pdb の詳細についてはします)。
 
 PerfView を処理し、トレースを開くには数分かかることができます。 トレースが開いたら、その下にあるさまざまな「ビュー」の一覧が表示されます。
 

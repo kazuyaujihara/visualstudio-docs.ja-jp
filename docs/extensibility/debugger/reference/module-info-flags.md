@@ -1,7 +1,7 @@
 ---
 title: MODULE_INFO_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - MODULE_INFO_FLAGS
 helpviewer_keywords:
@@ -12,45 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec59f745a0de459bb2b8b73337f13f5e03573975
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6db802fba0d6cd6b6f9b91dd40f6046491fb1f2b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946218"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688876"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
-モジュールのシンボルの状態を指定します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-enum enum_MODULE_INFO_FLAGS {  
-   MIF_SYMBOLS_LOADED = 0x0001  
-};  
-typedef DWORD MODULE_INFO_FLAGS;  
-```  
-  
-```csharp  
-public enum enum_MODULE_INFO_FLAGS {  
-   MIF_SYMBOLS_LOADED = 0x0001  
-};  
-```  
-  
-## <a name="members"></a>メンバー  
- MIF_SYMBOLS_LOADED  
- 記号のセットを少なくとも 1 つは、モジュールによって読み込まれた (それ以外の場合シンボルが読み込まれていません)。  
-  
-## <a name="remarks"></a>Remarks  
- この値がによって返される、 [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)メソッド。  
-  
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
-  
- 名前空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)
+モジュールのシンボルの状態を指定します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+enum enum_MODULE_INFO_FLAGS {
+   MIF_SYMBOLS_LOADED = 0x0001
+};
+typedef DWORD MODULE_INFO_FLAGS;
+```
+
+```csharp
+public enum enum_MODULE_INFO_FLAGS {
+   MIF_SYMBOLS_LOADED = 0x0001
+};
+```
+
+## <a name="members"></a>メンバー
+ MIF_SYMBOLS_LOADED モジュールによって読み込まれたシンボルの少なくとも 1 つのセットに (それ以外の場合シンボルが読み込まれていません)。
+
+## <a name="remarks"></a>Remarks
+ この値がによって返される、 [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)メソッド。
+
+## <a name="requirements"></a>必要条件
+ ヘッダー: msdbg.h
+
+ 名前空間: Microsoft.VisualStudio.Debugger.Interop
+
+ アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>関連項目
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

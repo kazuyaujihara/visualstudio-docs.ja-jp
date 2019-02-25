@@ -1,7 +1,7 @@
 ---
 title: IDebugMessageEvent2::SetResponse |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMessageEvent2::SetResponse
 helpviewer_keywords:
@@ -13,37 +13,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fab851d7d2ec7a248e56b522f13c9dc7e9457e11
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b54c84c5f5c13424354c65201d290fbef83e055
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996559"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701057"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
-メッセージ ボックスから存在する場合、応答を設定します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-HRESULT SetResponse(   
-   DWORD dwResponse  
-);  
-```  
-  
-```csharp  
-int SetResponse(   
-   uint dwResponse  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `dwResponse`  
- [in]Win32 の規則を使用して、応答を指定します`MessageBox`関数。 参照してください、 [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)詳細については、関数。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
-## <a name="see-also"></a>関連項目  
- [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
- [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)
+メッセージ ボックスから存在する場合、応答を設定します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT SetResponse( 
+   DWORD dwResponse
+);
+```
+
+```csharp
+int SetResponse( 
+   uint dwResponse
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `dwResponse`
+
+ [in]Win32 の規則を使用して、応答を指定します`MessageBox`関数。 参照してください、 [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)詳細については、関数。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
+## <a name="see-also"></a>関連項目
+- [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
+- [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

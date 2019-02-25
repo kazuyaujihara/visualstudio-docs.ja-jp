@@ -1,7 +1,7 @@
 ---
 title: EVALFLAGS90 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93345609a7dadc240aa33ce2a1751f6d04ab4384
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 73673d0b0ca7ccb640a3fab2043bc35b26657a9b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315665"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720303"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 式の評価を制御するフラグの有効な値を列挙します。 この列挙体を拡張、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列挙体。
@@ -62,35 +62,25 @@ public enum enum_EVALFLAGS90
 ```
 
 #### <a name="parameters"></a>パラメーター
-EVAL90_RETURNVALUE  
-存在する場合は、戻り値に評価することを指定します。
+EVAL90_RETURNVALUE では、存在する場合は、戻り値に評価することを指定します。
 
-EVAL90_NOSIDEEFFECTS  
-副作用を許可しないことを指定します。
+EVAL90_NOSIDEEFFECTS では、副作用を許可しないことを指定します。
 
-EVAL90_ALLOWBPS  
-ブレークポイントの停止を指定します。
+EVAL90_ALLOWBPS では、ブレークポイントで停止を指定します。
 
-EVAL90_ALLOWERRORREPORT  
-そのエラーを許可するホストにレポートを指定します。 主に、Internet Explorer でスクリプトに式の評価に使用します。
+EVAL90_ALLOWERRORREPORT では、そのエラーを許可するホストにレポートを指定します。 主に、Internet Explorer でスクリプトに式の評価に使用します。
 
-EVAL90_FUNCTION_AS_ADDRESS  
-関数を呼び出す代わりに、アドレスとして評価される関数を強制的にします。
+関数を呼び出す代わりに、アドレスとして評価される EVAL90_FUNCTION_AS_ADDRESS 強制的に機能します。
 
-EVAL90_NOFUNCEVAL  
-関数が評価するを防ぎます。 たとえば、`int`式トークン`myExpression(int) + 10`します。 この関数は、アドレスとしてではない値を正しく評価できます。
+評価対象から EVAL90_NOFUNCEVAL により関数。 たとえば、`int`式トークン`myExpression(int) + 10`します。 この関数は、アドレスとしてではない値を正しく評価できます。
 
-EVAL90_NOEVENTS  
-セッション デバッグ マネージャー (SDM) または、IDE には式の評価中に発生するイベントを送信しないかを示すフラグです。
+EVAL90_NOEVENTS セッション デバッグ マネージャー (SDM) または、IDE には式の評価中に発生するイベントを送信しないかを示すフラグ。
 
-EVAL90_DESIGN_TIME_EXPR_EVAL  
-デザイン時の式の評価を有効にします。
+デザイン時の式の評価の EVAL90_DESIGN_TIME_EXPR_EVAL できます。
 
-EVAL90_ALLOW_IMPLICIT_VARS  
-暗黙的な変数の作成を許可します。
+EVAL90_ALLOW_IMPLICIT_VARS により暗黙的な変数の作成。
 
-EVAL90_FORCE_EVALUATION_NOW  
-直ちに強制的に評価します。 これは、機能は、ユーザーの要求など、要求を処理するときに便利です。
+直ちに EVAL90_FORCE_EVALUATION_NOW 強制的に評価します。 これは、機能は、ユーザーの要求など、要求を処理するときに便利です。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー:Msdbg90.h
@@ -100,4 +90,4 @@ EVAL90_FORCE_EVALUATION_NOW
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

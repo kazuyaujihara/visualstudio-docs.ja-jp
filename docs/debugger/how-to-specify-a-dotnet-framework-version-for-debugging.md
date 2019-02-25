@@ -1,4 +1,4 @@
----
+﻿---
 title: デバッグで .NET Framework のバージョンの指定 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -19,7 +19,7 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 17e63c220dcf7677dbc62d9607e21bfbb11b42fb
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54973981"

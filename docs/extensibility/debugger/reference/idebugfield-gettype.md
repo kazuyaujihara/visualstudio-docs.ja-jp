@@ -1,7 +1,7 @@
 ---
 title: IDebugField::GetType |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugField::GetType
 helpviewer_keywords:
@@ -12,36 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47ae50baf0ea906815a0a95b8eccb3668ec7c40
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8887be18d59d331913a1978d915b91f9c996b8f0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007559"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692165"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
-このメソッドは、フィールドの型を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-HRESULT GetType(   
-   IDebugField** ppType  
-);  
-```  
-  
-```csharp  
-int GetType(  
-   out IDebugField ppType  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `ppType`  
- [out]別のフィールドの型を返します[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクト。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
-## <a name="see-also"></a>関連項目  
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+このメソッドは、フィールドの型を取得します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT GetType( 
+   IDebugField** ppType
+);
+```
+
+```csharp
+int GetType(
+   out IDebugField ppType
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `ppType`
+
+ [out]別のフィールドの型を返します[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクト。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
+## <a name="see-also"></a>関連項目
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
