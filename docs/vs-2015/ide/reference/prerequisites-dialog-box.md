@@ -66,7 +66,7 @@ ms.locfileid: "54799833"
 |**Windows インストーラー 3.1**|Microsoft Windows インストーラー再頒布パッケージ Version 3.1 をインストールし、Windows インストーラー セットアップ プロジェクトをインストールできるようにします。 このパッケージは、Windows Server 2003 SP1 以降にプレインストールされています。<br /><br /> この項目は既定で選択されます。|  
 |**Windows インストーラー 4.5**|Microsoft Windows インストーラー再頒布パッケージ Version 4.5 をインストールし、Windows インストーラー セットアップ プロジェクトをインストールできるようにします。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [[発行] ページ (プロジェクト デザイナー)](../../ide/reference/publish-page-project-designer.md)   
  [アプリケーション配置の必要条件](../../deployment/application-deployment-prerequisites.md)   
  [.NET Framework の再配布](http://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287)   
