@@ -24,5 +24,5 @@ ms.locfileid: "54804739"
   
 このページを使用して、複数のコンピューター間で設定を同期 (ローミング) するかどうかを指定します。 詳細については、「[同期された設定](../../ide/synchronized-settings-in-visual-studio.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)
