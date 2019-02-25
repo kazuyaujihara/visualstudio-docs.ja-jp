@@ -58,5 +58,5 @@ Visual Studio 2015 の配置を自動化するために使用されるスクリ�
 
  StorePID.exe が正常にプロダクト キーを適用した場合は 0 を返します。 エラーが検出された場合は、1 ～ 6 の範囲の数値を返します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio のインストール](../install/install-visual-studio-2015.md)
