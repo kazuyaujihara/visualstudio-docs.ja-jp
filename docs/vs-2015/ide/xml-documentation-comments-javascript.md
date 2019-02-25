@@ -48,5 +48,5 @@ JavaScript では、ソース コードの特別なコメント フィールド�
   
 -   [\<var>](../ide/var-javascript.md)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)
