@@ -71,7 +71,7 @@ Visual C# での IntelliSense の動作設定を変更するには、[**IntelliS
  **最近使用されたメンバーをあらかじめ選択する**  
  このオプションを選択すると、統合開発環境 (IDE) での現在のセッション中に、オブジェクト名の自動補完のために、ポップアップ メンバーの一覧ボックスで最近選択したメンバーが IntelliSense によってあらかじめ選択されます。 最近使用したメンバーの履歴は、IDE の各セッションの間に消去されます。 詳細については、「[最近使用されたメンバーに対する IntelliSense](../../misc/intellisense-for-most-recently-used-members.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)   
  [XML ドキュメント コメント](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [IntelliSense の使用](../../ide/using-intellisense.md)
