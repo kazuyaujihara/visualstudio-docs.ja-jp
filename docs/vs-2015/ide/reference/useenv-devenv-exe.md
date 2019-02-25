@@ -46,5 +46,5 @@ Devenv /useenv
 Devenv.exe /useenv  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
