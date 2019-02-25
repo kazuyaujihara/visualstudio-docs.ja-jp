@@ -79,5 +79,5 @@ Visual Studio Code エディターや、**[検索結果]** ウィンドウなど
 ### <a name="creating-custom-component-sets"></a>カスタムのコンポーネント セットの作成  
  **[検索対象]** ボックスの横にある **[カスタム コンポーネント セットの編集]** をクリックすると、コンポーネント セットを検索スコープとして定義できます。 インストールされている .NET または COM コンポーネント、ソリューションに含まれている Visual Studio プロジェクト、または任意のアセンブリやタイプ ライブラリ (.dll、.tlb、.olb、.exe、.ocx) を指定できます。 参照を検索するには、**[参照内で検索]** チェック ボックスをオンにします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Visual Studio での正規表現の使用](../ide/using-regular-expressions-in-visual-studio.md)
