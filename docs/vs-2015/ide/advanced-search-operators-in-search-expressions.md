@@ -49,6 +49,6 @@ ms.locfileid: "54775575"
 |JavaScript|code:javascript<br /><br /> または<br /><br /> code:js|  
 |XAML|code:xaml|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [検索式の論理演算子](../ide/logical-operators-in-search-expressions.md)   
  [フルテキスト検索のヒント](../ide/full-text-search-tips.md)
