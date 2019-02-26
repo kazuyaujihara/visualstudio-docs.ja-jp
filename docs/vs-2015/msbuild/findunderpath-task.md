@@ -76,7 +76,7 @@ ms.locfileid: "54777051"
 </Project>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)   
  [MSBuild の概念](../msbuild/msbuild-concepts.md)
