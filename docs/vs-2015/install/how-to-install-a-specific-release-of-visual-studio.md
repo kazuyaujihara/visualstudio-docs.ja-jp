@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 特定のリリースのインストール |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -59,5 +59,5 @@ ms.locfileid: "54756361"
 >   -   rus (ロシア語)
 >   -   trk (トルコ語)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio 管理者ガイド](../install/visual-studio-administrator-guide.md)

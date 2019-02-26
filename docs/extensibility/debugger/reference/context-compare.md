@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_COMPARE |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_COMPARE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35c68d2be2179b3bbcb1b3c691deb42cd8e8414f
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412839"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689175"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 メモリの 2 つのコンテキストを比較するための条件を指定します。
@@ -54,32 +54,23 @@ public enum enum_CONTEXT_COMPARE {
 ```
 
 ## <a name="members"></a>メンバー
-CONTEXT_EQUAL  
-ターゲット メモリのコンテキストに相当するリスト内の最初のメモリのコンテキストを検索します。
+CONTEXT_EQUAL は、ターゲット メモリのコンテキストに相当するリスト内の最初のメモリのコンテキストを検索します。
 
-CONTEXT_LESS_THAN  
-ターゲット メモリのコンテキストよりも小さいリスト内の最初のメモリのコンテキストを検索します。
+CONTEXT_LESS_THAN は、ターゲット メモリのコンテキストよりも小さいリスト内の最初のメモリのコンテキストを検索します。
 
-CONTEXT_GREATER_THAN  
-ターゲット メモリのコンテキストよりも大きいリスト内の最初のメモリのコンテキストを検索します。
+CONTEXT_GREATER_THAN は、ターゲット メモリのコンテキストよりも大きいリスト内の最初のメモリのコンテキストを検索します。
 
-CONTEXT_LESS_THAN_OR_EQUAL  
-ターゲット メモリ コンテキスト以下であるリストで最初のメモリのコンテキストを検索します。
+CONTEXT_LESS_THAN_OR_EQUAL は、ターゲット メモリ コンテキスト未満であるリストで最初のメモリのコンテキストを検索します。
 
-CONTEXT_GREATER_THAN_OR_EQUAL  
-ターゲット メモリ コンテキスト以上であるリストで最初のメモリのコンテキストを検索します。
+CONTEXT_GREATER_THAN_OR_EQUAL は、ターゲット メモリ コンテキスト以上であるリストで最初のメモリのコンテキストを検索します。
 
-CONTEXT_SAME_SCOPE  
-ターゲット メモリのコンテキストと同じスコープ内にある一覧で最初のメモリのコンテキストを検索します。
+CONTEXT_SAME_SCOPE は、ターゲット メモリのコンテキストと同じスコープ内にある一覧で最初のメモリのコンテキストを検索します。
 
-CONTEXT_SAME_FUNCTION  
-ターゲット メモリのスコープと同じ機能であるリストで最初のメモリのコンテキストを検索します。
+CONTEXT_SAME_FUNCTION は、ターゲット メモリの範囲と同じ関数内にある一覧で最初のメモリのコンテキストを検索します。
 
-CONTEXT_SAME_MODULE  
-ターゲット メモリのコンテキストと同じモジュール内にある一覧で最初のメモリのコンテキストを検索します。
+CONTEXT_SAME_MODULE は、ターゲット メモリのコンテキストと同じモジュール内にある一覧で最初のメモリのコンテキストを検索します。
 
-CONTEXT_SAME_PROCESS  
-ターゲット メモリのコンテキストと同じプロセス内にある一覧で最初のメモリのコンテキストを検索します。
+CONTEXT_SAME_PROCESS は、ターゲット メモリのコンテキストと同じプロセス内にある一覧で最初のメモリのコンテキストを検索します。
 
 ## <a name="remarks"></a>Remarks
 引数として渡される、[比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)メソッド。
@@ -94,5 +85,5 @@ CONTEXT_SAME_PROCESS
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

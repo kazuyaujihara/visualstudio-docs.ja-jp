@@ -11,23 +11,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 864141055487b598a8f91641f40fe4c027c53b6c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 729d37c36782cd1786124c94796f610931473f0c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918434"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704892"
 ---
 # <a name="terminating-a-program"></a>プログラムの終了
-次のセクションでは、1 つのスレッドで 1 つのプログラムの終了について説明します。  
-  
-## <a name="termination-process"></a>終了プロセス  
-  
-1. DE 送信、 [IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)有効な[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)します。  
-  
-2. DE 送信、 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)有効な[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)します。  
-  
-   IDE は、デザイン モードに入ります。 デバッグ エンジンまたはランタイム環境は[IDebugPortNotify2::RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)ポートからプログラムを削除します。  
-  
-## <a name="see-also"></a>関連項目  
- [デバッガー イベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)
+次のセクションでは、1 つのスレッドで 1 つのプログラムの終了について説明します。
+
+## <a name="termination-process"></a>終了プロセス
+
+1. DE 送信、 [IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)有効な[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)します。
+
+2. DE 送信、 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)有効な[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)します。
+
+   IDE は、デザイン モードに入ります。 デバッグ エンジンまたはランタイム環境は[IDebugPortNotify2::RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)ポートからプログラムを削除します。
+
+## <a name="see-also"></a>関連項目
+- [デバッガー イベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)

@@ -94,6 +94,6 @@ ms.locfileid: "54796907"
   
  \<LogicalName> メタデータがない場合、リソースは myAssembly.myResource.resources という名前になります。  この例は、Visual Basic と Visual C# のビルド処理にのみ適用されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [タスク](../msbuild/msbuild-tasks.md)   
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

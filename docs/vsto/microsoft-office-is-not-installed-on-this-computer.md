@@ -12,20 +12,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f07b17ddb38ad94709739dcc9e0b3489220c2c0b
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 77af11a4ff7a04c664127e2a1a1f409bf997aacf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862983"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634592"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>コンピューターに Microsoft Office がインストールされていません
-  Visual Studio で、プロジェクトの種類に対応する Microsoft Office アプリケーションが見つかりません。 VSTO アドイン プロジェクトを開発している場合は、デバッグまたはプロジェクトを実行できないことを意味します。 ドキュメント レベルのプロジェクトを作成しようとしている場合、これはプロジェクトを作成できないことを表します。  
-  
-## <a name="to-correct-the-error"></a>このエラーを解決するには  
-  
-1.  プライマリ相互運用機能アセンブリを含む、プロジェクトの種類に関連付けられている Microsoft Office アプリケーションをインストールします。 Microsoft Office のサポートされているバージョンの詳細については、次を参照してください。 [Office ソリューションを開発コンピューターを構成する](../vsto/configuring-a-computer-to-develop-office-solutions.md)します。  
-  
-## <a name="see-also"></a>関連項目  
- [Office ソリューションを開発コンピューターを構成します。](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
- [方法: Office ソリューションを開発コンピューターを構成します。](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+  Visual Studio で、プロジェクトの種類に対応する Microsoft Office アプリケーションが見つかりません。 VSTO アドイン プロジェクトを開発している場合は、デバッグまたはプロジェクトを実行できないことを意味します。 ドキュメント レベルのプロジェクトを作成しようとしている場合、これはプロジェクトを作成できないことを表します。
+
+## <a name="to-correct-the-error"></a>このエラーを解決するには
+
+1.  プライマリ相互運用機能アセンブリを含む、プロジェクトの種類に関連付けられている Microsoft Office アプリケーションをインストールします。 Microsoft Office のサポートされているバージョンの詳細については、次を参照してください。 [Office ソリューションを開発コンピューターを構成する](../vsto/configuring-a-computer-to-develop-office-solutions.md)します。
+
+## <a name="see-also"></a>関連項目
+- [Office ソリューションの開発コンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md)
+- [方法: Office ソリューションを開発するコンピューターを構成する方法](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)

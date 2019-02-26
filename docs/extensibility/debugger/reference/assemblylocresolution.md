@@ -1,7 +1,7 @@
 ---
 title: ASSEMBLYLOCRESOLUTION |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - ASSEMBLYLOCRESOLUTION
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: befa1c67aa8d095288d13cb6f309f31b5c2916e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 06eb23c14636b72004e1089f8681adc37d68ae11
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316432"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710254"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 アセンブリがある場所を指定します。
@@ -44,17 +44,13 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 ```
 
 ## <a name="members"></a>メンバー
-ALR_NAME  
-アセンブリは、現在の名前空間にあります。
+ALR_NAME アセンブリは、現在の名前空間にあります。
 
-ALR_USERDIR  
-アセンブリは、ユーザー ディレクトリ内にあります。
+ALR_USERDIR アセンブリについては、ユーザーのディレクトリにあります。
 
-ALR_SHAREDDIR  
-アセンブリは共有ディレクトリにあります。
+ALR_SHAREDDIR アセンブリは共有ディレクトリにあります。
 
-ALR_REMOTEDIR  
-アセンブリは、リモート ディレクトリ内にあります。
+ALR_REMOTEDIR アセンブリは、リモート ディレクトリ内にあります。
 
 ## <a name="remarks"></a>Remarks
 これらの値がによって返される、 [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)と[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)メソッド。
@@ -69,6 +65,6 @@ ALR_REMOTEDIR
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)  
-[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)
+- [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

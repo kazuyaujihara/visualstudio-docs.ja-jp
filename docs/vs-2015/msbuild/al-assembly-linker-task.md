@@ -95,6 +95,6 @@ AL タスクは、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)] と共に
 </AL>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)

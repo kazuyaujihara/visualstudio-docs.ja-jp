@@ -78,5 +78,5 @@ ms.locfileid: "54800863"
   
  ビルド ログ ファイルに書き込まれる情報量を決定します。ビルド ログ ファイルは、\\...\\*ProjectName*\Debug\\*ProjectName*.log にあります。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [コードのコンパイルとビルド](../../ide/compiling-and-building-in-visual-studio.md)

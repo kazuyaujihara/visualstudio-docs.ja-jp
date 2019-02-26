@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual C++ の Intellisense | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -95,5 +95,5 @@ Visual Studio 2015 では、単一コードのファイルおよびプロジェ�
   
  ![ヘッダー ファイルまでのパスを追加しています。](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [IntelliSense の使用](../ide/using-intellisense.md)

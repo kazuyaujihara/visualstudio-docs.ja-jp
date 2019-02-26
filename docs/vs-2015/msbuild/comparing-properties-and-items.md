@@ -182,5 +182,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [詳細な概念](../msbuild/msbuild-advanced-concepts.md)

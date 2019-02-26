@@ -1,4 +1,4 @@
----
+﻿---
 title: グローバルな Windows フォームおよび Web フォームにおけるカルチャ固有のクラス | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -70,7 +70,7 @@ Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));
   
  `$100.00`  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  <xref:System.IFormattable.ToString%2A?displayProperty=fullName>   
  <xref:System.Globalization.DateTimeFormatInfo>   
  <xref:System.Globalization.NumberFormatInfo>   

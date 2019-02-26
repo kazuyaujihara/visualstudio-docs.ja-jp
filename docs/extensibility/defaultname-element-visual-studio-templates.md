@@ -13,76 +13,74 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f8dfd0a5efd302b64130fc2ed029b94d4396d4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc859155afcde0b72b8898b2ea37c098f7458e53
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927081"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717456"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName 要素 (Visual Studio テンプレート)
-作成時にそのプロジェクトまたは項目の Visual Studio プロジェクト システムにより生成される名前を指定します。  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<DefaultName >  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-<DefaultName>  
-    Default Project Name  
-</DefaultName>  
-```  
-  
-## <a name="attributes-and-elements"></a>属性と要素  
- 以降のセクションでは、属性、子要素、および親要素について説明します。  
-  
-### <a name="attributes"></a>属性  
- なし。  
-  
-### <a name="child-elements"></a>子要素  
- なし。  
-  
-### <a name="parent-elements"></a>親要素  
-  
-|要素|説明|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートをカテゴリに分類し、 **[新しいプロジェクト]** ダイアログ ボックス、または **[新しい項目の追加]** ダイアログ ボックスでどのように表示させるかを定義します。|  
-  
-## <a name="text-value"></a>テキスト値  
- テキスト値が必要です。  
-  
- このテキストは、プロジェクトまたは項目の既定の名前を指定します。  
-  
-## <a name="remarks"></a>Remarks  
- `DefaultName` は、省略可能な要素です。  
-  
- プロジェクトの場合は、この要素は、ディスク上、プロジェクトを格納するディレクトリの名前を指定します。 項目については、ソース ファイルのファイル名を指定します。  
-  
- 使用して、既定の名前を変更するにはプロジェクトまたは項目を作成するときに、**名前**はいずれかから使用可能なオプション、**新しいプロジェクト** ダイアログ ボックスまたは**新しい項目の追加**ダイアログ ボックス。  
-  
- プロジェクトまたは項目の既定の名前を生成するプロジェクト システムしたくない場合は、設定、 [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)要素`False`します。  
-  
-## <a name="example"></a>例  
- 次の例では、用の標準的な項目テンプレートのメタデータを[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]クラス。  
-  
-```  
-<VSTemplate Type="Item" Version="3.0.0"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>MyClass</Name>  
-        <Description>My custom C# class.</Description>  
-        <Icon>Icon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-        <DefaultName>MyClass.cs</DefaultName>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectItem ReplaceParameters="true">MyClass.cs</ProjectItem>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+作成時にそのプロジェクトまたは項目の Visual Studio プロジェクト システムにより生成される名前を指定します。
+
+ \<VSTemplate> \<TemplateData> \<DefaultName>
+
+## <a name="syntax"></a>構文
+
+```
+<DefaultName>
+    Default Project Name
+</DefaultName>
+```
+
+## <a name="attributes-and-elements"></a>属性と要素
+ 以降のセクションでは、属性、子要素、および親要素について説明します。
+
+### <a name="attributes"></a>属性
+ なし。
+
+### <a name="child-elements"></a>子要素
+ なし。
+
+### <a name="parent-elements"></a>親要素
+
+|要素|説明|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートをカテゴリに分類し、 **[新しいプロジェクト]** ダイアログ ボックス、または **[新しい項目の追加]** ダイアログ ボックスでどのように表示させるかを定義します。|
+
+## <a name="text-value"></a>テキスト値
+ テキスト値が必要です。
+
+ このテキストは、プロジェクトまたは項目の既定の名前を指定します。
+
+## <a name="remarks"></a>Remarks
+ `DefaultName` は、省略可能な要素です。
+
+ プロジェクトの場合は、この要素は、ディスク上、プロジェクトを格納するディレクトリの名前を指定します。 項目については、ソース ファイルのファイル名を指定します。
+
+ 使用して、既定の名前を変更するにはプロジェクトまたは項目を作成するときに、**名前**はいずれかから使用可能なオプション、**新しいプロジェクト** ダイアログ ボックスまたは**新しい項目の追加**ダイアログ ボックス。
+
+ プロジェクトまたは項目の既定の名前を生成するプロジェクト システムしたくない場合は、設定、 [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)要素`False`します。
+
+## <a name="example"></a>例
+ 次の例では、用の標準的な項目テンプレートのメタデータを[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]クラス。
+
+```
+<VSTemplate Type="Item" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>MyClass</Name>
+        <Description>My custom C# class.</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <DefaultName>MyClass.cs</DefaultName>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectItem ReplaceParameters="true">MyClass.cs</ProjectItem>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: JavaScript IntelliSense の XML ドキュメントのコメントを作成する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -156,7 +156,7 @@ ms.locfileid: "54802059"
     add(  
     ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)   
  [NIB:チュートリアル: ASP.NET での JavaScript IntelliSense](http://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)

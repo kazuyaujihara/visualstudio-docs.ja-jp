@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c762df17c836fd99b62603678eb17c65f0015c3c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 977962352887e9cce09b3b703c3f66dd15cb7397
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318213"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710904"
 ---
 # <a name="evaluate-locals"></a>ローカル変数を評価します。
 > [!IMPORTANT]
@@ -190,6 +190,6 @@ HRESULT FieldGetPrimitiveValue(
 ```
 
 ## <a name="see-also"></a>関連項目
-[ローカル変数のサンプルの実装](../../extensibility/debugger/sample-implementation-of-locals.md)  
-[ローカルの値を取得します。](../../extensibility/debugger/getting-local-values.md)  
-[評価コンテキスト](../../extensibility/debugger/evaluation-context.md)
+- [ローカル変数のサンプルの実装](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [ローカルの値を取得します。](../../extensibility/debugger/getting-local-values.md)
+- [評価コンテキスト](../../extensibility/debugger/evaluation-context.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: '[オプション]、[テキスト エディター]、[JavaScript]、[IntelliSense] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -54,7 +54,7 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
  **[Tab キーと Enter キーのみをコミットに使用する]**  
  このチェック ボックスをオンにすると、Tab または Enter キーを選択した後にのみ、JavaScript コード エディターによって入力候補一覧で選択された項目を含むステートメントが追加されます。 このチェック ボックスがオフの場合、ピリオド、コンマ、コロン、始めかっこ、始め中かっこ ({) など、その他の文字でも選択された項目を含むステートメントを追加できます。  
   
-## <a name="references"></a>参照  
+## <a name="references"></a>関連項目  
  これらのオプションを使用して、JavaScript のさまざまなプロジェクトの種類のスコープ内にある IntelliSense (.js) ファイルの種類を指定できます。 通常、IntelliSense 参照は、グローバル オブジェクトに IntelliSense サポートを提供するために使用されます。 このページを使用して、実行時に読み込む必要があるスクリプトの読み込み順序を設定したり、IntelliSense の拡張ファイルを追加したりすることもできます。  
   
 ## <a name="uielement-list"></a>UIElement の一覧  
@@ -80,5 +80,5 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
  **[Add a reference to the group] (グループへの参照の追加)**  
  このオプションを使用すると、適切なファイルを参照して IntelliSense (.js) ファイルを追加できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

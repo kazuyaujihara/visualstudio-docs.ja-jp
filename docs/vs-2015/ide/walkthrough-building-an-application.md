@@ -1,4 +1,4 @@
----
+﻿---
 title: 'チュートリアル: アプリケーションをビルドする |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -255,7 +255,7 @@ ms.locfileid: "54799156"
   
    これで、このチュートリアルを完了できました。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [チュートリアル: プロジェクトの構築 (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
  [ASP.NET Web アプリケーション プロジェクト プリコンパイルの概要](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)   
  [チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)

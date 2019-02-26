@@ -1,7 +1,7 @@
 ---
 title: BP_STATE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_STATE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95e228a3aa0e96eedcf0413df7680e7a5664b707
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4117b3cb92eef555d5ed9a6c3e829fb3302924ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315418"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709253"
 ---
 # <a name="bpstate"></a>BP_STATE
 バインドされたブレークポイントの存在を指定し、かどうかには有効に指定します。
@@ -44,17 +44,13 @@ public enum enum_BP_STATE {
 ```
 
 ## <a name="members"></a>メンバー
-BPS_NONE  
-ブレークポイントが存在しないことを指定します。
+BPS_NONE では、ブレークポイントが存在しないことを指定します。
 
-BPS_DELETED  
-ブレークポイントが削除されたことを指定します。
+BPS_DELETED では、ブレークポイントが削除されたことを指定します。
 
-BPS_DISABLED  
-ブレークポイントが無効になっていることを指定します。
+BPS_DISABLED では、ブレークポイントが無効になっていることを指定します。
 
-BPS_ENABLED  
-ブレークポイントが有効になっていることを指定します。
+BPS_ENABLED では、ブレークポイントが有効になっていることを指定します。
 
 ## <a name="remarks"></a>Remarks
 返される、 [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)メソッド。
@@ -67,5 +63,5 @@ BPS_ENABLED
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

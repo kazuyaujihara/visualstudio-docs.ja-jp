@@ -47,5 +47,5 @@ Visual C++ プロジェクトのビルド時に MSBuild によって作成され
 
 ## <a name="remarks"></a>解説  
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

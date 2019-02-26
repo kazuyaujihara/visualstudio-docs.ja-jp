@@ -12,61 +12,67 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79eb0bdfdcb9f0b64258128b801e65f257e0ed3e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a74d6008db15cc8cd89daf4882d8952006dc547d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949949"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711593"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 関数
-この関数は、ディレクトリと (必要に応じて) ファイルがソース コントロールが確認するディレクトリの一覧に格納されているかを判断します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-SCCRTN SccPopulateDirList(  
-   LPVOID        pContext,  
-   LONG          nDirs,  
-   LPCSTR*       lpDirPaths,  
-   POPDIRLISTFUNCpfnPopulate,  
-   LPVOID        pvCallerData,  
-   LONG          fOptions  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- pContext  
- [in]ソース管理プラグインのコンテキストのポインター。  
-  
- nDirs  
- [in]内のディレクトリ パスの数、`lpDirPaths`配列。  
-  
- lpDirPaths  
- [in]確認へのディレクトリ パスの配列。  
-  
- pfnPopulate  
- [in]各ディレクトリのパスと (必要に応じて) ファイル名にするために呼び出すコールバック関数`lpDirPaths`(を参照してください[POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)詳細については)。  
-  
- pvCallerData  
- [in]コールバック関数に渡される値は変更されません。  
-  
- 方法は限られて  
- [in]ディレクトリの処理方法を制御する値の組み合わせ (の「PopulateDirList フラグ」セクションを参照して[特定のコマンドで使用されるビットフラグ](../extensibility/bitflags-used-by-specific-commands.md)使用可能な値)。  
-  
-## <a name="return-value"></a>戻り値  
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。  
-  
-|[値]|説明|  
-|-----------|-----------------|  
-|SCC_OK|操作が正常に完了しました。|  
-|SCC_E_UNKNOWNERROR|エラーが発生しました。|  
-  
-## <a name="remarks"></a>Remarks  
- これらのディレクトリとのみ (必要に応じて) 実際には、ソース管理リポジトリ内にあるファイル名は、コールバック関数に渡されます。  
-  
-## <a name="see-also"></a>関連項目  
- [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)   
- [特定のコマンドで使用されるビットフラグ](../extensibility/bitflags-used-by-specific-commands.md)   
- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
- [エラー コード](../extensibility/error-codes.md)
+この関数は、ディレクトリと (必要に応じて) ファイルがソース コントロールが確認するディレクトリの一覧に格納されているかを判断します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+SCCRTN SccPopulateDirList(
+   LPVOID        pContext,
+   LONG          nDirs,
+   LPCSTR*       lpDirPaths,
+   POPDIRLISTFUNCpfnPopulate,
+   LPVOID        pvCallerData,
+   LONG          fOptions
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ pContext
+
+[in]ソース管理プラグインのコンテキストのポインター。
+
+ nDirs
+
+[in]内のディレクトリ パスの数、`lpDirPaths`配列。
+
+ lpDirPaths
+
+[in]確認へのディレクトリ パスの配列。
+
+ pfnPopulate
+
+[in]各ディレクトリのパスと (必要に応じて) ファイル名にするために呼び出すコールバック関数`lpDirPaths`(を参照してください[POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)詳細については)。
+
+ pvCallerData
+
+[in]コールバック関数に渡される値は変更されません。
+
+ 方法は限られて
+
+[in]ディレクトリの処理方法を制御する値の組み合わせ (の「PopulateDirList フラグ」セクションを参照して[特定のコマンドで使用されるビットフラグ](../extensibility/bitflags-used-by-specific-commands.md)使用可能な値)。
+
+## <a name="return-value"></a>戻り値
+ この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+
+|[値]|説明|
+|-----------|-----------------|
+|SCC_OK|操作が正常に完了しました。|
+|SCC_E_UNKNOWNERROR|エラーが発生しました。|
+
+## <a name="remarks"></a>Remarks
+ これらのディレクトリとのみ (必要に応じて) 実際には、ソース管理リポジトリ内にあるファイル名は、コールバック関数に渡されます。
+
+## <a name="see-also"></a>関連項目
+- [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
+- [特定のコマンドで使用されるビットフラグ](../extensibility/bitflags-used-by-specific-commands.md)
+- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)
+- [エラー コード](../extensibility/error-codes.md)

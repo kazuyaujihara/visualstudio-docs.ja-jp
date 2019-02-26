@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 評価版からのアップグレード |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -43,5 +43,5 @@ Visual Studio のプレリリース版は、製品を登録しないでも 14 �
     > [!NOTE]
     >  Visual Studio のいずれのエディションの登録やロック解除にも、インターネットへの接続が必要になります。 ただし、Visual Studio の登録後、インターネットへの接続は任意になります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio のインストール](../install/install-visual-studio-2015.md) [Visual Studio にサインイン](../ide/signing-in-to-visual-studio.md)[方法: Visual Studio プロダクト キーを検索](../install/how-to-locate-the-visual-studio-product-key.md)[検索または Team Foundation Serverのプロダクトキーの変更](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd)[Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

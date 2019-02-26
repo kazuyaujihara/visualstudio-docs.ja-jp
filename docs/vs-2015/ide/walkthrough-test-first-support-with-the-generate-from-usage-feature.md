@@ -1,4 +1,4 @@
----
+﻿---
 title: 'チュートリアル: テスト ファーストのサポート、機能の使用法から生成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -186,7 +186,7 @@ Visual C#
      ![合格したテストの結果](../ide/media/testspassed.png "TestsPassed")  
 [テスト結果] ウィンドウ  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [使用法から生成](../misc/generate-from-usage.md)   
  [コードの作成](../ide/writing-code-in-the-code-and-text-editor.md)   
  [IntelliSense の使用](../ide/using-intellisense.md)   

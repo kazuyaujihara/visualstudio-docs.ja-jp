@@ -41,5 +41,5 @@ ms.locfileid: "54752339"
 |[Office 開発のサンプル](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Visual Studio 内で Office 開発ツールを使用する方法を示します。 最新のサンプルについては、「 [コード レシピ: サンプルコードから学ぶ](http://go.microsoft.com/fwlink/?LinkID=248199)」をご覧ください。|
 |[VSSDK のサンプル](http://aka.ms/vs2015sdksamples)|Visual Studio を拡張する方法を示します。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual C# と Visual Basic の概要](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

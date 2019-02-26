@@ -1,7 +1,7 @@
 ---
 title: GUID_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3aa33d8cef230d07c9b5f7cd3bd11a538fa651a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eed39ee4446e66e1e7b1700d97ad680eb62c2523
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315522"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704970"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
 使用可能なデバッグ エンジンの一意の識別子の配列について説明します。
@@ -39,11 +39,9 @@ public struct GUID_ARRAY
 ```
 
 ## <a name="terms"></a>用語
-dwCount  
-配列内の一意の識別子の数。
+dwCount 配列内の一意の識別子の数。
 
-メンバー  
-一意の識別子を含む配列。
+一意の識別子を含むメンバーの配列。
 
 ## <a name="remarks"></a>Remarks
 この構造体がによって返される、 [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)メソッド。
@@ -56,5 +54,5 @@ dwCount
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)
+- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)

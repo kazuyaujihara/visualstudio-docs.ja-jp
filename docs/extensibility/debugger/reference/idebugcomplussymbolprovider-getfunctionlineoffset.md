@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetFunctionLineOffset |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetFunctionLineOffset
 - GetFunctionLineOffset
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ff64676ba99f16941044f18c8988a690bfc8a28
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 73bd3184396ec020e8337efe6397503263be5359
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412982"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706289"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 指定した行オフセットを表す関数内でアドレスを取得します。
@@ -40,14 +40,17 @@ int GetFunctionLineOffset(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`pAddress`  
-[in]関数を表すアドレス。
+`pAddress`
 
-`dwLine`  
-[in]行が関数の先頭からのオフセットします。
+ [in]関数を表すアドレス。
 
-`ppNewAddress`  
-[out]関数の先頭からのオフセットの行を表す新しいアドレス。
+`dwLine`
+
+ [in]行が関数の先頭からのオフセットします。
+
+`ppNewAddress`
+
+ [out]関数の先頭からのオフセットの行を表す新しいアドレス。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -101,4 +104,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

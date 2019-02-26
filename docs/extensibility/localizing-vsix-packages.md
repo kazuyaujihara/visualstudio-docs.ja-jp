@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28426c7cad7abeb159434108656b5c16d47b148e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936646"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687082"
 ---
 # <a name="localizing-vsix-packages"></a>VSIX パッケージのローカライズ
 
@@ -27,7 +27,7 @@ VSIX パッケージのコンテンツは追加する VSPackage が含まれる�
 
 ## <a name="directory-structure"></a>ディレクトリの構造
 
- ユーザーは、拡張機能をインストール**拡張機能と更新**VSIX パッケージの名前を持つ対象のコンピューターの Visual Studio ロケールに一致するフォルダーの最上位のレベルを確認します。 場合**拡張機能と更新**検索、 *.vsixlangpack*ファイル、フォルダー内の対応する値には、そのファイルでローカライズされた値を置き換える、 *.vsixmanifest*ファイル。 拡張機能がインストールされるときに、これらの値が表示されます。 次の例では、スペイン語 (ES-ES) とフランス語 (FR) にローカライズされた VSIX パッケージのディレクトリ構造を示します。  
+ ユーザーは、拡張機能をインストール**拡張機能と更新**VSIX パッケージの名前を持つ対象のコンピューターの Visual Studio ロケールに一致するフォルダーの最上位のレベルを確認します。 場合**拡張機能と更新**検索、 *.vsixlangpack*ファイル、フォルダー内の対応する値には、そのファイルでローカライズされた値を置き換える、 *.vsixmanifest*ファイル。 拡張機能がインストールされるときに、これらの値が表示されます。 次の例では、スペイン語 (ES-ES) とフランス語 (FR) にローカライズされた VSIX パッケージのディレクトリ構造を示します。
 
 ```text
 .
@@ -63,7 +63,7 @@ VSIX パッケージのコンテンツは追加する VSPackage が含まれる�
 
 ### <a name="code"></a>コード
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ VSIX パッケージのコンテンツは追加する VSPackage が含まれる�
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

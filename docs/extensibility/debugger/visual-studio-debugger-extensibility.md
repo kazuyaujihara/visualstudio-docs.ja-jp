@@ -11,39 +11,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04031c2307d5d91a4854678f810f87b5afde0627
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: df9d1bccb2147d8416555099f3493ceac8c21b4b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952159"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704801"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio デバッガーの拡張性
-Visual Studio には、プログラムでバグを追跡するための強力で使いやすいツールを提供する完全な対話型のソース コードのデバッガーが含まれています。 デバッガーでは、完全なサポート Visual Basic、c#、C と C++ および JavaScript が。 ただし、 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]、つまりから使用可能な[Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkId=214453)、他のプログラミング言語は同じ豊富な機能を使用してデバッガーでサポートされます。  
-  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガーは、一般的なフロント エンド (つまり、ユーザー インターフェイス)、デバッグ コンポーネントは、さらに、デバッグ中の言語に固有です。 によってサポートのために必要なすべての新しい言語は、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガーはデバッグ エンジン (DE) など、必要なバックエンド コンポーネントを作成します。 このポイントは、where、[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]が用意されています。  
-  
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]すべてに完全なリファレンスが含まれています[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]新しい DE の作成に必要な要素です。 さらに、あるサンプルとチュートリアルの作業を開始するのに役立つ。  
-  
- デバッグのサポートと言語のプロジェクト システムの完全なサンプルを参照してください、 [IronPython サンプル](https://www.microsoft.com/download/details.aspx?id=55984)します。  
-  
- 次のセクションを使用して、デバッガーを拡張する方法を説明します、[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]します。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [開始するには](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)  
- 点について説明します[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プランと、SDK をインストールする方法をデバッグします。  
-  
- [カスタム デバッグ エンジンを作成します。](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- ドイツ、DE をデタッチするため、プログラムの準備から、カスタム DE プロセスについて説明します。  
-  
- [CLR の式エバリュエーターを書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
- 式エバリュエーターを記述する必要があるかどうかについて説明します。  
-  
- [デバッグ エンジンの実装方法を選択します。](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  
- DE を実装する方法について説明します。  
-  
- [参照](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
- ドキュメント、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] API をデバッグします。  
-  
- [サンプル](../../extensibility/debugger/visual-studio-debugging-samples.md)  
- 共通言語ランタイム式エバリュエーター サンプルとデバッグ エンジンのサンプルへのリンクが含まれています。
+Visual Studio には、プログラムでバグを追跡するための強力で使いやすいツールを提供する完全な対話型のソース コードのデバッガーが含まれています。 デバッガーでは、完全なサポート Visual Basic、c#、C と C++ および JavaScript が。 ただし、 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]、つまりから使用可能な[Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkId=214453)、他のプログラミング言語は同じ豊富な機能を使用してデバッガーでサポートされます。
+
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガーは、一般的なフロント エンド (つまり、ユーザー インターフェイス)、デバッグ コンポーネントは、さらに、デバッグ中の言語に固有です。 によってサポートのために必要なすべての新しい言語は、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガーはデバッグ エンジン (DE) など、必要なバックエンド コンポーネントを作成します。 このポイントは、where、[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]が用意されています。
+
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]すべてに完全なリファレンスが含まれています[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]新しい DE の作成に必要な要素です。 さらに、あるサンプルとチュートリアルの作業を開始するのに役立つ。
+
+ デバッグのサポートと言語のプロジェクト システムの完全なサンプルを参照してください、 [IronPython サンプル](https://www.microsoft.com/download/details.aspx?id=55984)します。
+
+ 次のセクションを使用して、デバッガーを拡張する方法を説明します、[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]します。
+
+## <a name="in-this-section"></a>このセクションの内容
+ [開始](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)点について説明します[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プランと、SDK をインストールする方法をデバッグします。
+
+ [カスタム デバッグ エンジンを作成](../../extensibility/debugger/creating-a-custom-debug-engine.md)をドイツ、DE をデタッチするため、プログラムの準備から、カスタム DE プロセスについて説明します。
+
+ [CLR の式エバリュエーターの書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)式エバリュエーターを記述する必要があるかどうかについて説明します。
+
+ [デバッグ エンジンの実装方法を選択](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)DE を実装する方法について説明します。
+
+ [参照](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)ドキュメント、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] API をデバッグします。
+
+ [サンプル](../../extensibility/debugger/visual-studio-debugging-samples.md)共通言語ランタイム式エバリュエーター サンプルとデバッグ エンジンのサンプルへのリンクが含まれています。

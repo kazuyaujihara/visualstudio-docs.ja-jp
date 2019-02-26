@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39d3385b56e35018093ceaaf26472d425847b100
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd5bfc24fcf1cd8a465bafe1e5bcf6c4df61308c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947412"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722292"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>チュートリアル: ビューの表示要素、コマンド、および設定 (ガイド) を作成します。
 コマンドとビューの効果を Visual Studio のテキストまたはコード エディターを拡張することができます。 この記事では、人気のある拡張機能、列ガイドを使用する方法を示します。 列ガイドは、特定の列の幅にコードを管理するために、テキスト エディターのビューに描画される視覚的にライトの線です。 具体的には、書式設定されたコードは、ドキュメント、ブログの投稿に含めるか、バグのレポートのサンプルについてがあります。
@@ -24,10 +24,10 @@ ms.locfileid: "54947412"
 - 保存と設定の取得 (どこに描画列ガイドと、色) のサポートを追加します。
 - コマンドの追加 (列ガイドの追加と削除、その色を変更する)
 - テキスト ドキュメントのコンテキスト メニューの [編集] メニューで、コマンドを配置します。
-- Visual Studio コマンド ウィンドウからコマンドを呼び出すためのサポートを追加します。  
-  
-  この Visual Studio ギャラリーで列ガイド機能のバージョンを試すことができます[拡張子](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)します。  
-  
+- Visual Studio コマンド ウィンドウからコマンドを呼び出すためのサポートを追加します。
+
+  この Visual Studio ギャラリーで列ガイド機能のバージョンを試すことができます[拡張子](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)します。
+
   **注**: このチュートリアルでは、Visual Studio 拡張機能テンプレートによって生成されるいくつかのファイルに大量のコードを貼り付けます。 しかし、すぐにこのチュートリアルでは他の拡張機能の例を含む GitHub で完成したソリューションを参照します。 Generictemplate アイコンを使用する代わりに実際のコマンドのアイコンがあることで、完成したコードは若干異なります。
 
 ## <a name="get-started"></a>作業開始
@@ -38,14 +38,14 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 - テキスト ビュー作成リスナーを作成するがある、`ColumnGuideAdornment`ビューごとにオブジェクト。 このオブジェクトがビューの変更に関するイベントをリッスンまたはの設定変更、列を更新または再描画が必要に応じてガイドします。
 - `GuidesSettingsManager` Visual Studio の設定の保存場所から読み取りと書き込みを処理します。 設定マネージャーは、ユーザーのコマンドをサポートする設定を更新するための操作もあります (列を追加、列の削除、色を変更する)。
 - ユーザーのコマンドがある場合に必要な VSIP パッケージがありますが、コマンドの実装オブジェクトを初期化する定型コードだけです。
-- `ColumnGuideCommands`ユーザーを実行しているオブジェクトのコマンドで宣言されたコマンドは、コマンド ハンドラーをフック、 *.vsct*ファイル。  
-  
-  **VSIX**します。 使用して**ファイル &#124; です。新機能 ...** プロジェクトを作成するコマンド。 選択、**拡張**ノードの下**c#** 左側のナビゲーション ウィンドウで選択**VSIX プロジェクト**右側のペインでします。 名前を入力します**ColumnGuides**選択**OK**プロジェクトを作成します。  
-  
-  **装飾の表示**します。 ソリューション エクスプ ローラーでプロジェクト ノードを右ポインター ボタンを押します。 選択、**追加&#124;新しい項目.** 新しいビューの表示要素項目を追加するコマンド。 選択**拡張&#124;エディター**左側のナビゲーション ウィンドウで選択**エディターのビューポート Adornment**右側のウィンドウで。 名前を入力します**ColumnGuideAdornment**項目として名前を指定し、選択**追加**に追加します。  
-  
-  この項目テンプレートのプロジェクト (だけでなく、参照およびなど) に 2 つのファイルの追加を確認できます。**ColumnGuideAdornment.cs**と**ColumnGuideAdornmentTextViewCreationListener.cs**します。 テンプレートは、ビューで、紫色の四角形を描画します。 次のセクションでは、ビューの作成のリスナー内の行のいくつかの変更し、の内容を置き換えます**ColumnGuideAdornment.cs**します。  
-  
+- `ColumnGuideCommands`ユーザーを実行しているオブジェクトのコマンドで宣言されたコマンドは、コマンド ハンドラーをフック、 *.vsct*ファイル。
+
+  **VSIX**します。 使用して**ファイル &#124; です。新機能 ...** プロジェクトを作成するコマンド。 選択、**拡張**ノードの下**c#** 左側のナビゲーション ウィンドウで選択**VSIX プロジェクト**右側のペインでします。 名前を入力します**ColumnGuides**選択**OK**プロジェクトを作成します。
+
+  **装飾の表示**します。 ソリューション エクスプ ローラーでプロジェクト ノードを右ポインター ボタンを押します。 選択、**追加&#124;新しい項目.** 新しいビューの表示要素項目を追加するコマンド。 選択**拡張&#124;エディター**左側のナビゲーション ウィンドウで選択**エディターのビューポート Adornment**右側のウィンドウで。 名前を入力します**ColumnGuideAdornment**項目として名前を指定し、選択**追加**に追加します。
+
+  この項目テンプレートのプロジェクト (だけでなく、参照およびなど) に 2 つのファイルの追加を確認できます。**ColumnGuideAdornment.cs**と**ColumnGuideAdornmentTextViewCreationListener.cs**します。 テンプレートは、ビューで、紫色の四角形を描画します。 次のセクションでは、ビューの作成のリスナー内の行のいくつかの変更し、の内容を置き換えます**ColumnGuideAdornment.cs**します。
+
   **コマンド**します。 **ソリューション エクスプ ローラー**、プロジェクト ノードの右のポインター ボタンを押します。 選択、**追加&#124;新しい項目.** 新しいビューの表示要素項目を追加するコマンド。 選択**拡張&#124;VSPackage**左側のナビゲーション ウィンドウで選択**カスタム コマンド**右側のウィンドウでします。 名前を入力します**ColumnGuideCommands**項目として名前を指定し、選択**追加**します。 コマンドとも追加するパッケージを追加するだけでなく、複数の参照**ColumnGuideCommands.cs**、 **ColumnGuideCommandsPackage.cs**、および**ColumnGuideCommandsPackage.vsct**. 次のセクションでは、定義して、コマンドを実装する最初と最後のファイルの内容を置き換えます。
 
 ## <a name="set-up-the-text-view-creation-listener"></a>テキスト ビューの作成のリスナーを設定します。
@@ -370,7 +370,7 @@ namespace ColumnGuides
         /// <summary>
         /// Creates editor column guidelines
         /// </summary>
-        /// <param name="view">The <see cref="IWpfTextView"/> upon 
+        /// <param name="view">The <see cref="IWpfTextView"/> upon
         /// which the adornment will be drawn</param>
         public ColumnGuideAdornment(IWpfTextView view)
         {
@@ -378,7 +378,7 @@ namespace ColumnGuides
             _guidelines = CreateGuidelines();
             GuidesSettingsManager.SettingsChanged +=
                 new GuidesSettingsManager.SettingsChangedHandler(SettingsChanged);
-            view.LayoutChanged += 
+            view.LayoutChanged +=
                 new EventHandler<TextViewLayoutChangedEventArgs>(OnViewLayoutChanged);
             _view.Closed += new EventHandler(OnViewClosed);
         }
@@ -466,7 +466,7 @@ namespace ColumnGuides
 
         void AddGuidelinesToAdornmentLayer()
         {
-            // Grab a reference to the adornment layer that this adornment 
+            // Grab a reference to the adornment layer that this adornment
             // should be added to
             // Must match exported name in ColumnGuideAdornmentTextViewCreationListener
             IAdornmentLayer adornmentLayer =
@@ -710,7 +710,7 @@ namespace ColumnGuides
                 value="{e914e5de-0851-4904-b361-1a3a9d449704}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidColumnGuidesCommandSet" 
+    <GuidSymbol name="guidColumnGuidesCommandSet"
                 value="{c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e}">
       <IDSymbol name="GuidesContextMenuGroup" value="0x1020" />
       <IDSymbol name="GuidesMenuItemsGroup" value="0x1021" />
@@ -843,7 +843,7 @@ namespace ColumnGuides
         /// <summary>
         /// Command menu group (command set GUID).
         /// </summary>
-        static readonly Guid CommandSet = 
+        static readonly Guid CommandSet =
             new Guid("c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e");
 
         /// <summary>
@@ -1143,7 +1143,7 @@ namespace ColumnGuides
                                                              color.B);
                 if (picker.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    GuidesSettingsManager.GuidelinesColor = 
+                    GuidesSettingsManager.GuidelinesColor =
                         System.Windows.Media.Color.FromRgb(picker.Color.R,
                                                            picker.Color.G,
                                                            picker.Color.B);
@@ -1204,7 +1204,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```csharp
    IVsMonitorSelection selection =
-       this.ServiceProvider.GetService(typeof(IVsMonitorSelection)) 
+       this.ServiceProvider.GetService(typeof(IVsMonitorSelection))
            as IVsMonitorSelection;
    object frameObj = null;
 
@@ -1339,9 +1339,9 @@ Visual Studio 機能拡張のサンプルの GitHub プロジェクトはまも�
 この Visual Studio ギャラリーで列ガイド機能のバージョンを試すことができます[拡張子](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)します。
 
 ## <a name="see-also"></a>関連項目
-[エディター内で](../extensibility/inside-the-editor.md)
-[エディターと言語サービス拡張](../extensibility/extending-the-editor-and-language-services.md) 
-[言語サービスとエディターの拡張機能ポイント](../extensibility/language-service-and-editor-extension-points.md) 
- [メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)
-[メニューにサブメニューを追加する](../extensibility/adding-a-submenu-to-a-menu.md)
-[とエディターの項目テンプレートの拡張機能の作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [エディター内で](../extensibility/inside-the-editor.md)
+- [エディターと言語サービスを拡張します。](../extensibility/extending-the-editor-and-language-services.md)
+- [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)
+- [メニューとコマンドを拡張します。](../extensibility/extending-menus-and-commands.md)
+- [メニューにサブメニューを追加します。](../extensibility/adding-a-submenu-to-a-menu.md)
+- [エディターの項目テンプレートを使用した拡張機能を作成します。](../extensibility/creating-an-extension-with-an-editor-item-template.md)

@@ -1,7 +1,7 @@
 ---
 title: インターフェイスのコア |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
@@ -10,133 +10,133 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afb66ea504a51a726b1645b0886cf19f1d0ae940
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33f2d4fda2fe7981863d65b17fc6dba53355dbeb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981351"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702279"
 ---
 # <a name="core-interfaces"></a>コア インターフェイス
-次のインターフェイスは、コア インターフェイスを使用してデバッガーを拡張するため、[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]します。  
+次のインターフェイスは、コア インターフェイスを使用してデバッガーを拡張するため、[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]します。
 
-## <a name="discussion"></a>説明  
- これらのインターフェイスは主に、デバッグ エンジン (DE) の作成に使用します。 カテゴリがここで分類されます。  
+## <a name="discussion"></a>説明
+ これらのインターフェイスは主に、デバッグ エンジン (DE) の作成に使用します。 カテゴリがここで分類されます。
 
-- [ブレークポイント](#Breakpoints)  
+- [ブレークポイント](#Breakpoints)
 
-- [コンテキスト](#Contexts)  
+- [コンテキスト](#Contexts)
 
-- [Server core](#CoreServer)  
+- [Server core](#CoreServer)
 
-- [デバッグ エンジン](#DebugEngines)  
+- [デバッグ エンジン](#DebugEngines)
 
-- [ドキュメント](#Documents)  
+- [ドキュメント](#Documents)
 
-- [イベント](#Events)  
+- [イベント](#Events)
 
-- [式](#Expressions)  
+- [式](#Expressions)
 
-- [メモリ](#Memory)  
+- [メモリ](#Memory)
 
-- [モジュール](#Modules)  
+- [モジュール](#Modules)
 
-- [ポート](#Ports)  
+- [ポート](#Ports)
 
-- [プロセス](#Processes)  
+- [プロセス](#Processes)
 
-- [プログラム](#Programs)  
+- [プログラム](#Programs)
 
-- [Properties](#Properties)  
+- [Properties](#Properties)
 
-- [スタック フレーム](#StackFrames)  
+- [スタック フレーム](#StackFrames)
 
-- [スレッド](#Threads)  
+- [スレッド](#Threads)
 
-- [型のビジュアライザー](#TypeVisualizers)  
+- [型のビジュアライザー](#TypeVisualizers)
 
-  インターフェイスを実装できるエンティティは次のとおりです。  
+  インターフェイスを実装できるエンティティは次のとおりです。
 
-- デバッグ エンジン (DE)  
+- デバッグ エンジン (DE)
 
-- ポート サプライヤー (PS)  
+- ポート サプライヤー (PS)
 
-- 式エバリュエーター (EE)  
+- 式エバリュエーター (EE)
 
-- Visual Studio (VS)  
+- Visual Studio (VS)
 
-##  <a name="Breakpoints"></a> ブレークポイント  
- これらのインターフェイスが関連する実装およびブレークポイントの追跡。  
+##  <a name="Breakpoints"></a> ブレークポイント
+ これらのインターフェイスが関連する実装およびブレークポイントの追跡。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)|DE|メモリの場所にバインドされているブレークポイントを表します。|  
-|[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|メモリ位置にブレークポイントがバインドされると、DE によって送信されます。|  
-|[IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)|VS|ブレークポイント要求のチェックサムをドキュメントを表します。|  
-|[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|DE|メモリの場所にバインドするブレークポイントが失敗したときに、DE によって送信されます。|  
-|[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)|DE|ブレークポイントに達すると、DE によって送信されます。|  
-|[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)|VS|ブレークポイント; の要求を表します保留中のブレークポイントの作成に使用します。|  
-|[IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)|VS|ブレークポイント; の要求を表します保留中のブレークポイントの作成に使用します。|  
-|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|DE|ブレークポイントをバインドするための情報を表します。|  
-|[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|DE|メモリの場所からブレークポイントがバインドされているとき、DE によって送信されます。|  
-|[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)|DE|無効なブレークポイントを表します (によって返される`IDebugBreakpointErrorEvent2`)。|  
-|[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)|DE|解決の無効なブレークポイント情報を表します。|  
-|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|DE|ブレークポイントが設定されている関数内の位置を表します。|  
-|[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)|DE|バインドされる; ブレークポイントを表しますバインドされたブレークポイントの作成に使用します。|  
-|[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|バインドされたブレークポイントのセットを列挙体を表します。|  
-|[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|メモリの場所にバインドできませんでしたブレークポイントのセットを列挙体を表します。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)|DE|メモリの場所にバインドされているブレークポイントを表します。|
+|[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|メモリ位置にブレークポイントがバインドされると、DE によって送信されます。|
+|[IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)|VS|ブレークポイント要求のチェックサムをドキュメントを表します。|
+|[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|DE|メモリの場所にバインドするブレークポイントが失敗したときに、DE によって送信されます。|
+|[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)|DE|ブレークポイントに達すると、DE によって送信されます。|
+|[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)|VS|ブレークポイント; の要求を表します保留中のブレークポイントの作成に使用します。|
+|[IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)|VS|ブレークポイント; の要求を表します保留中のブレークポイントの作成に使用します。|
+|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|DE|ブレークポイントをバインドするための情報を表します。|
+|[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|DE|メモリの場所からブレークポイントがバインドされているとき、DE によって送信されます。|
+|[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)|DE|無効なブレークポイントを表します (によって返される`IDebugBreakpointErrorEvent2`)。|
+|[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)|DE|解決の無効なブレークポイント情報を表します。|
+|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|DE|ブレークポイントが設定されている関数内の位置を表します。|
+|[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)|DE|バインドされる; ブレークポイントを表しますバインドされたブレークポイントの作成に使用します。|
+|[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|バインドされたブレークポイントのセットを列挙体を表します。|
+|[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|メモリの場所にバインドできませんでしたブレークポイントのセットを列挙体を表します。|
 
-##  <a name="Contexts"></a> コンテキスト  
- これらのインターフェイスは、さまざまな種類のデバッグ中のプログラム内でコンテキストを表します。  
+##  <a name="Contexts"></a> コンテキスト
+ これらのインターフェイスは、さまざまな種類のデバッグ中のプログラム内でコンテキストを表します。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|コードの命令の開始位置を表します。|  
-|[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|拡張、 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)モジュールとプロセスのインターフェイスの取得を有効にするインターフェイス。|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS、DE|ドキュメント内の位置を表します。|  
-|[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|式を評価するコンテキストを表します。|  
-|[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|バイトのコレクションのメモリ内の開始位置を表します。|  
-|[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|ブレークポイントまたは例外のスタック フレームのコンテキストを表します。|  
-|[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|ブレークポイントまたは例外のスタック フレームのコンテキストを表します。|  
-|[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|コード コンテキストのセットに対して列挙体を表します。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|コードの命令の開始位置を表します。|
+|[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|拡張、 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)モジュールとプロセスのインターフェイスの取得を有効にするインターフェイス。|
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS、DE|ドキュメント内の位置を表します。|
+|[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|式を評価するコンテキストを表します。|
+|[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|バイトのコレクションのメモリ内の開始位置を表します。|
+|[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|ブレークポイントまたは例外のスタック フレームのコンテキストを表します。|
+|[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|ブレークポイントまたは例外のスタック フレームのコンテキストを表します。|
+|[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|コード コンテキストのセットに対して列挙体を表します。|
 
-##  <a name="CoreServer"></a> Server core  
- これらのインターフェイスは、プログラムがデバッグされているコンピューターを表します。 これらは実装によって[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]デバッグ エンジンを呼び出すことができますが、します。  
+##  <a name="CoreServer"></a> Server core
+ これらのインターフェイスは、プログラムがデバッグされているコンピューターを表します。 これらは実装によって[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]デバッグ エンジンを呼び出すことができますが、します。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|ポートとポート サプライヤーだけでなく、コンピューターに関する情報へのアクセスを提供します。|  
-|[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|表す、 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)リモート デバッグをサポートします。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|ポートとポート サプライヤーだけでなく、コンピューターに関する情報へのアクセスを提供します。|
+|[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|表す、 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)リモート デバッグをサポートします。|
 
-##  <a name="DebugEngines"></a> デバッグ エンジン  
- これらのインターフェイスは、デバッグ エンジンと、関連するイベントを表します。  
+##  <a name="DebugEngines"></a> デバッグ エンジン
+ これらのインターフェイスは、デバッグ エンジンと、関連するイベントを表します。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)|DE|カスタム デバッグ エンジンを表します。|  
-|[IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)|DE|シンボル、JustMyCode、および例外の読み込みをサポートするカスタム デバッグ エンジンを表します。|  
-|[IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)|DE|デバッグ タスクを処理する準備があることを示す、DE の新しいインスタンスによって送信されます。|  
-|[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)|DE|起動プログラムをサポートするカスタム デバッグ エンジンを表します。|  
-|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE、PS|複数のデバッグ エンジンを処理するプログラムのノードを表します。|  
-|[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|スレッド、プログラム、またはスタック フレームからデバッグ エンジンにインターフェイスの取得に SDM を提供します。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)|DE|カスタム デバッグ エンジンを表します。|
+|[IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)|DE|シンボル、JustMyCode、および例外の読み込みをサポートするカスタム デバッグ エンジンを表します。|
+|[IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)|DE|デバッグ タスクを処理する準備があることを示す、DE の新しいインスタンスによって送信されます。|
+|[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)|DE|起動プログラムをサポートするカスタム デバッグ エンジンを表します。|
+|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE、PS|複数のデバッグ エンジンを処理するプログラムのノードを表します。|
+|[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|スレッド、プログラム、またはスタック フレームからデバッグ エンジンにインターフェイスの取得に SDM を提供します。|
 
-##  <a name="Documents"></a> ドキュメント  
- これらのインターフェイスは、ドキュメント (ソース ファイル) とそれに関連付けられている要素を表します。  
+##  <a name="Documents"></a> ドキュメント
+ これらのインターフェイスは、ドキュメント (ソース ファイル) とそれに関連付けられている要素を表します。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|開かれているドキュメントを要求する、DE によって送信されます。|  
-|[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|逆アセンブルした命令ドキュメントからのストリームを表します。|  
-|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS、DE|名前とクラス ID (CLSID) を指定する、DE によって提供されるドキュメントを表します。|  
-|[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE、EE|デバッグ ドキュメントのチェックサムを表し、コンポーネント間のチェックサムを渡すことができます。|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS、DE|ドキュメントのコンテキストでは、特定のステートメントとコードのコンテキストに対応するドキュメント内の位置を表します。|  
-|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS、DE|ドキュメント内の [全般] の位置を表します。|  
-|[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|文字のオフセットとしてソース ファイル内の位置を表します。|  
-|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS、DE|デによって提供されるテキスト ドキュメントを表します (から派生した[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md))、実際のテキストを指定します。|  
-|[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|メモリ内にあるソース ファイルへの変更を指定する、DE によって送信されます。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|開かれているドキュメントを要求する、DE によって送信されます。|
+|[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|逆アセンブルした命令ドキュメントからのストリームを表します。|
+|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS、DE|名前とクラス ID (CLSID) を指定する、DE によって提供されるドキュメントを表します。|
+|[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE、EE|デバッグ ドキュメントのチェックサムを表し、コンポーネント間のチェックサムを渡すことができます。|
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS、DE|ドキュメントのコンテキストでは、特定のステートメントとコードのコンテキストに対応するドキュメント内の位置を表します。|
+|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS、DE|ドキュメント内の [全般] の位置を表します。|
+|[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|文字のオフセットとしてソース ファイル内の位置を表します。|
+|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS、DE|デによって提供されるテキスト ドキュメントを表します (から派生した[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md))、実際のテキストを指定します。|
+|[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|メモリ内にあるソース ファイルへの変更を指定する、DE によって送信されます。|
 
-##  <a name="Events"></a> イベント  
- これらのインターフェイスは、DE およびセッション デバッグ マネージャー (SDM) の間で送信されるすべてのイベントを表します。  
+##  <a name="Events"></a> イベント
+ これらのインターフェイスは、DE およびセッション デバッグ マネージャー (SDM) の間で送信されるすべてのイベントを表します。
 
 
 | Interface | によって実装されます。 | 説明 |
@@ -181,36 +181,36 @@ ms.locfileid: "54981351"
 | [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) | DE | スレッドが破棄されたときに、DE によって送信されます。 |
 | [IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md) | DE | スレッドには、その名前が変更されたとき、DE によって送信されます。 |
 
-##  <a name="Expressions"></a> 式  
- これらのインターフェイスは、特定のコンテキストで評価される式を表します。  
+##  <a name="Expressions"></a> 式
+ これらのインターフェイスは、特定のコンテキストで評価される式を表します。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|評価される式を表します。 取得した、 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス。|  
-|[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|式が評価されるコンテキストを表します。 取得した、 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)インターフェイス。|  
-|[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|非同期の式の評価が完了すると、DE によって送信されます。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|評価される式を表します。 取得した、 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス。|
+|[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|式が評価されるコンテキストを表します。 取得した、 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)インターフェイス。|
+|[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|非同期の式の評価が完了すると、DE によって送信されます。|
 
-##  <a name="Memory"></a> メモリ  
- これらのインターフェイスは、メモリ内のバイトのシーケンスを表します。  
+##  <a name="Memory"></a> メモリ
+ これらのインターフェイスは、メモリ内のバイトのシーケンスを表します。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|読み取るまたは書き込むできるメモリ内のバイト シーケンスを表します。|  
-|[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|バイトのシーケンスのメモリ内の場所を表します。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|読み取るまたは書き込むできるメモリ内のバイト シーケンスを表します。|
+|[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|バイトのシーケンスのメモリ内の場所を表します。|
 
-##  <a name="Modules"></a> モジュール  
- これらのインターフェイスは、実行可能ファイルに対応するモジュールの場合またはします。DLL ファイルです。  
+##  <a name="Modules"></a> モジュール
+ これらのインターフェイスは、実行可能ファイルに対応するモジュールの場合またはします。DLL ファイルです。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)|DE|1 つの実行可能ファイルまたは DLL を表します。|  
-|[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)|DE|表す、 [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)シンボルをサポートします。|  
-|[IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|DE|モジュールがロードまたはアンロードされるときに、DE によって送信されます。|  
-|[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|PDB ファイルに含まれるソース サーバーの情報を表します。|  
-|[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|認識されているモジュールのセットに対して列挙体を表す、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)します。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)|DE|1 つの実行可能ファイルまたは DLL を表します。|
+|[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)|DE|表す、 [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)シンボルをサポートします。|
+|[IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|DE|モジュールがロードまたはアンロードされるときに、DE によって送信されます。|
+|[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|PDB ファイルに含まれるソース サーバーの情報を表します。|
+|[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|認識されているモジュールのセットに対して列挙体を表す、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)します。|
 
-##  <a name="Ports"></a> ポート  
- これらのインターフェイスは、ポートとポート サプライヤーを表します。  
+##  <a name="Ports"></a> ポート
+ これらのインターフェイスは、ポートとポート サプライヤーを表します。
 
 
 | Interface | によって実装されます。 | 説明 |
@@ -230,81 +230,81 @@ ms.locfileid: "54981351"
 | [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) | VS、PS | ポートのセットに対して列挙体を表します。 |
 | [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) | VS | ポート サプライヤーのセットに対して列挙体を表します。 |
 
-##  <a name="Processes"></a> プロセス  
- これらのインターフェイスは、プロセス、1 つまたは複数のプログラムを含む 1 つの実行可能ファイルを表します。  
+##  <a name="Processes"></a> プロセス
+ これらのインターフェイスは、プロセス、1 つまたは複数のプログラムを含む 1 つの実行可能ファイルを表します。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS、DE|コンピューターで実行されているプロセスを表します。|  
-|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS、DE|アクティブにサポートしているプロセスを表すデバッグ (ステップを置き換えるために使用を続けるには、メソッドをおよび実行で、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイス)。|  
-|[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE、PS|プロセスが作成されると、DE またはポートによって送信されます。|  
-|[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE、PS|プロセスが破棄されたときに、DE またはポートによって送信されます。|  
-|[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|どのセッションに接続して追跡する必要があるプロセスを表します。|  
-|[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|ポート上のプロセスの一連の列挙体を表します。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS、DE|コンピューターで実行されているプロセスを表します。|
+|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS、DE|アクティブにサポートしているプロセスを表すデバッグ (ステップを置き換えるために使用を続けるには、メソッドをおよび実行で、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイス)。|
+|[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE、PS|プロセスが作成されると、DE またはポートによって送信されます。|
+|[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE、PS|プロセスが破棄されたときに、DE またはポートによって送信されます。|
+|[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|どのセッションに接続して追跡する必要があるプロセスを表します。|
+|[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|ポート上のプロセスの一連の列挙体を表します。|
 
-##  <a name="Programs"></a> プログラム  
- これらのインターフェイスは、プログラム、物理的な実行可能ファイルまたはモジュールに必ずしも対応しませんが、実行の論理ユニットを表します。  
+##  <a name="Programs"></a> プログラム
+ これらのインターフェイスは、プログラム、物理的な実行可能ファイルまたはモジュールに必ずしも対応しませんが、実行の論理ユニットを表します。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)|DE|表す、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)を同時にデバッグされている他のアプリケーションと連携する必要があります。|  
-|[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|DE、PS|実行の論理単位を表します。|  
-|[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|DE、PS|プログラムが作成されると、DE またはポートによって送信されます。|  
-|[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|DE、PS|プログラムが破棄されたときに、DE またはポートによって送信されます。|  
-|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE、PS|表す、 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)を複数のデバッグ エンジンで処理できます。|  
-|[IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)|PS|表す、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)をセッションに接続して追跡できる必要があります。|  
-|[IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)|DE、PS|表す、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)が実行されているプロセスに関する情報を返すことができます。|  
-|[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)|DE、PS|デバッグ可能なプログラムを表します。|  
-|[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)|DE、PS|プログラム ノードが関連付けられているプログラムにアタッチしようとすると、通知を許可します。|  
-|[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)|DE|その DE によって制御されるプログラムについての DE を照会する SDM の方法を提供します。|  
-|[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)|VS|DEs でプログラムを表示して、デバッグ中に SDM を登録するために使用します。|  
-|[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE、PS|表す、 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)スレッドまたはプロセスの境界を越えてインターフェイスをマーシャ リングすることができます。|  
-|[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE、PS|プログラムのセットの列挙体を表します。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)|DE|表す、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)を同時にデバッグされている他のアプリケーションと連携する必要があります。|
+|[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|DE、PS|実行の論理単位を表します。|
+|[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|DE、PS|プログラムが作成されると、DE またはポートによって送信されます。|
+|[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|DE、PS|プログラムが破棄されたときに、DE またはポートによって送信されます。|
+|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE、PS|表す、 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)を複数のデバッグ エンジンで処理できます。|
+|[IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)|PS|表す、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)をセッションに接続して追跡できる必要があります。|
+|[IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)|DE、PS|表す、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)が実行されているプロセスに関する情報を返すことができます。|
+|[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)|DE、PS|デバッグ可能なプログラムを表します。|
+|[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)|DE、PS|プログラム ノードが関連付けられているプログラムにアタッチしようとすると、通知を許可します。|
+|[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)|DE|その DE によって制御されるプログラムについての DE を照会する SDM の方法を提供します。|
+|[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)|VS|DEs でプログラムを表示して、デバッグ中に SDM を登録するために使用します。|
+|[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE、PS|表す、 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)スレッドまたはプロセスの境界を越えてインターフェイスをマーシャ リングすることができます。|
+|[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE、PS|プログラムのセットの列挙体を表します。|
 
-##  <a name="Properties"></a> プロパティ  
- これらのインターフェイスは、プロパティ、式の評価の結果は、通常、特定のコンテキストに関連付けられている値を表します。  
+##  <a name="Properties"></a> プロパティ
+ これらのインターフェイスは、プロパティ、式の評価の結果は、通常、特定のコンテキストに関連付けられている値を表します。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)|EE|表す、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)独自の方法でその値を表示することができます。|  
-|[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)|DE|スタック フレーム、ドキュメント、または、式の評価の結果の値を表します。|  
-|[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)|DE|表す、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)任意の長さの文字列をサポートします。|  
-|[IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|DE|ときに新しいプロパティ DE によって送信された (によって表される、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)インターフェイス) が作成されました。|  
-|[IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|DE|プロパティが破棄されたときに、DE によって送信されます。|  
-|[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)|DE|任意の特定のスタック フレームの外側にあるプロパティへの参照を表します。|  
-|[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|一連の列挙体を表します[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)変数、レジスタ、パラメーター、および式を記述する構造体。|  
-|[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|一連の列挙体を表します[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)|EE|表す、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)独自の方法でその値を表示することができます。|
+|[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)|DE|スタック フレーム、ドキュメント、または、式の評価の結果の値を表します。|
+|[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)|DE|表す、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)任意の長さの文字列をサポートします。|
+|[IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|DE|ときに新しいプロパティ DE によって送信された (によって表される、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)インターフェイス) が作成されました。|
+|[IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|DE|プロパティが破棄されたときに、DE によって送信されます。|
+|[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)|DE|任意の特定のスタック フレームの外側にあるプロパティへの参照を表します。|
+|[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|一連の列挙体を表します[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)変数、レジスタ、パラメーター、および式を記述する構造体。|
+|[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|一連の列挙体を表します[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体。|
 
-##  <a name="StackFrames"></a> スタック フレーム  
- これらのインターフェイスは、スタック フレームのコンテキストで、ブレークポイントまたは例外が発生しました。  
+##  <a name="StackFrames"></a> スタック フレーム
+ これらのインターフェイスは、スタック フレームのコンテキストで、ブレークポイントまたは例外が発生しました。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|コンテキストを表しますでブレークポイントまたは例外が発生しました。|  
-|[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|表す、 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)例外をインターセプトして処理することができます。|  
-|[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|セットに対して列挙体を表す[CODE_PATH](../../../extensibility/debugger/reference/code-path.md)関数を指定する構造体の呼び出しシーケンスの特定のスタック フレームに到達するために使用します。|  
-|[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|一連の列挙体を表します[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)構造体は、スタック フレームをについて説明します。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|コンテキストを表しますでブレークポイントまたは例外が発生しました。|
+|[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|表す、 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)例外をインターセプトして処理することができます。|
+|[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|セットに対して列挙体を表す[CODE_PATH](../../../extensibility/debugger/reference/code-path.md)関数を指定する構造体の呼び出しシーケンスの特定のスタック フレームに到達するために使用します。|
+|[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|一連の列挙体を表します[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)構造体は、スタック フレームをについて説明します。|
 
-##  <a name="Threads"></a>スレッド  
- これらのインターフェイスは、スレッドと、関連するイベントを表します。  
+##  <a name="Threads"></a>スレッド
+ これらのインターフェイスは、スレッドと、関連するイベントを表します。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|DE|実行のスレッドを表します。|  
-|[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|スレッドが作成されると、DE によって送信されます。|  
-|[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|スレッドが破棄されたときに、DE によって送信されます。|  
-|[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|スレッドには、その名前が変更されたとき、DE によって送信されます。|  
-|[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|スレッドのセットを列挙体を表します。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|DE|実行のスレッドを表します。|
+|[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|スレッドが作成されると、DE によって送信されます。|
+|[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|スレッドが破棄されたときに、DE によって送信されます。|
+|[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|スレッドには、その名前が変更されたとき、DE によって送信されます。|
+|[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|スレッドのセットを列挙体を表します。|
 
-##  <a name="TypeVisualizers"></a> 型のビジュアライザー  
- これらのインターフェイスは、型のビジュアライザーのサポートを提供します。 通常、これらのインターフェイスは、式エバリュエーターによって実装されます。  
+##  <a name="TypeVisualizers"></a> 型のビジュアライザー
+ これらのインターフェイスは、型のビジュアライザーのサポートを提供します。 通常、これらのインターフェイスは、式エバリュエーターによって実装されます。
 
-|Interface|によって実装されます。|説明|  
-|---------------|--------------------|-----------------|  
-|[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)|EE|型のビジュアライザーに表示するバイトの配列を表します。|  
-|[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|型のビジュアライザーに渡されるデータへのアクセスを取得するためのメソッドを提供します。|  
-|[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|アクセスを提供するプロパティを表す[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)実装します。|  
+|Interface|によって実装されます。|説明|
+|---------------|--------------------|-----------------|
+|[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)|EE|型のビジュアライザーに表示するバイトの配列を表します。|
+|[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|型のビジュアライザーに渡されるデータへのアクセスを取得するためのメソッドを提供します。|
+|[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|アクセスを提供するプロパティを表す[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)実装します。|
 
-## <a name="see-also"></a>関連項目  
- [API リファレンス](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
- [カスタム デバッグ エンジンの作成](../../../extensibility/debugger/creating-a-custom-debug-engine.md)
+## <a name="see-also"></a>関連項目
+- [API リファレンス](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
+- [カスタム デバッグ エンジンの作成](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

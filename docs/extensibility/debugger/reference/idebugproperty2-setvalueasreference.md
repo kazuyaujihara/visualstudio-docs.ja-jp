@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2::SetValueAsReference |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2::SetValueAsReference
 helpviewer_keywords:
@@ -12,59 +12,63 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b185d284c7b5d5970737fa28aa006c636a6e6f1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2c8baa009160cc22766d1a30711fae5b153d2c5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951483"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709552"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
-このプロパティの値を指定された参照の値に設定します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-HRESULT SetValueAsReference(  
-   IDebugReference2** rgpArgs,  
-   DWORD              dwArgCount,  
-   IDebugReference2*  pValue,  
-   DWORD              dwTimeout  
-);  
-```  
-  
-```csharp  
-int SetValueAsReference(  
-   IDebugReference2[] rgpArgs,  
-   uint               dwArgCount,  
-   IDebugReference2   pValue,  
-   uint               dwTimeout  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `rgpArgs`  
- [in]マネージ コードのプロパティ set アクセス操作子に渡す引数の配列。 プロパティ set アクセス操作子が引数を受け取らない場合、またはこの[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトがこのようなプロパティ setter を参照しない`rgpArgs`null 値を指定する必要があります。 通常、このパラメーターは、null 値です。  
-  
- `dwArgCount`  
- [in]引数の数、`rgpArgs`配列。  
-  
- `pValue`  
- [in]形式での参照、 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)を使用してこのプロパティを設定する値のオブジェクト。  
-  
- `dwTimeout`  
- [in]時間 (ミリ秒単位)、値を設定するためにします。 一般的な値は`INFINITE`します。 これは、すべての可能な評価が実行できる時間の長さに影響します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`; エラーを返しますそれ以外の場合のコードは、通常、次のいずれか。  
-  
-|Error|説明|  
-|-----------|-----------------|  
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|参照から値を設定することはサポートされていません。|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|このプロパティは、メソッドには、値を設定できません。|  
-|`E_SETVALUE_VALUE_IS_READONLY`|値は読み取り専用と、設定することはできません。|  
-|`E_NOTIMPL`|メソッドが実装されていません。|  
-  
-## <a name="see-also"></a>関連項目  
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
+このプロパティの値を指定された参照の値に設定します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT SetValueAsReference(
+   IDebugReference2** rgpArgs,
+   DWORD              dwArgCount,
+   IDebugReference2*  pValue,
+   DWORD              dwTimeout
+);
+```
+
+```csharp
+int SetValueAsReference(
+   IDebugReference2[] rgpArgs,
+   uint               dwArgCount,
+   IDebugReference2   pValue,
+   uint               dwTimeout
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `rgpArgs`
+
+ [in]マネージ コードのプロパティ set アクセス操作子に渡す引数の配列。 プロパティ set アクセス操作子が引数を受け取らない場合、またはこの[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトがこのようなプロパティ setter を参照しない`rgpArgs`null 値を指定する必要があります。 通常、このパラメーターは、null 値です。
+
+ `dwArgCount`
+
+ [in]引数の数、`rgpArgs`配列。
+
+ `pValue`
+
+ [in]形式での参照、 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)を使用してこのプロパティを設定する値のオブジェクト。
+
+ `dwTimeout`
+
+ [in]時間 (ミリ秒単位)、値を設定するためにします。 一般的な値は`INFINITE`します。 これは、すべての可能な評価が実行できる時間の長さに影響します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`; エラーを返しますそれ以外の場合のコードは、通常、次のいずれか。
+
+|Error|説明|
+|-----------|-----------------|
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|参照から値を設定することはサポートされていません。|
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|このプロパティは、メソッドには、値を設定できません。|
+|`E_SETVALUE_VALUE_IS_READONLY`|値は読み取り専用と、設定することはできません。|
+|`E_NOTIMPL`|メソッドが実装されていません。|
+
+## <a name="see-also"></a>関連項目
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

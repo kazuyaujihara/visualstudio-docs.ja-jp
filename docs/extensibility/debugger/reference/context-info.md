@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_INFO |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a162858431f319e4d56667c2c85b7b53d1d86ab
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c41a155fb3a85bcb9f0b0e5eae461f2ae172c7e2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316029"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709981"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 この構造体には、メモリのコンテキストまたはコードのコンテキストについて説明します。
@@ -49,26 +49,19 @@ public struct CONTEXT_INFO {
 ```
 
 ## <a name="members"></a>メンバー
-dwFields  
-彼からフラグの組み合わせ[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)フィールドが記入を指定する列挙体<strong>します。</strong>
+dwFields 彼からフラグの組み合わせ[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)フィールドが記入を指定する列挙体<strong>します。</strong>
 
-bstrModuleUrl  
-コンテキストが配置されているモジュールの名前。
+bstrModuleUrl コンテキストが配置されているモジュールの名前。
 
-bstrFunction  
-コンテキストが配置されている関数の名前。
+bstrFunction コンテキストがある関数の名前。
 
-posFunctionOffset  
-A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)コードのコンテキストに関連付けられている関数の行と列のオフセットを識別する構造体。
+posFunctionOffset A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)コードのコンテキストに関連付けられている関数の行と列のオフセットを識別する構造体。
 
-bstrAddress  
-指定されたコンテキストが配置されているコード内のアドレス。
+bstrAddress 指定されたコンテキストが配置されているコード内のアドレス。
 
-bstrAddressOffset  
-指定されたコンテキストが配置されているコード内のアドレスのオフセット。
+bstrAddressOffset コードが指定されたコンテキストがある場所のアドレスのオフセット。
 
-bstrAddressAbsolute  
-指定されたコンテキストが配置されているメモリ内で絶対アドレスです。
+bstrAddressAbsolute メモリの指定されたコンテキストがある場所の絶対アドレスです。
 
 ## <a name="remarks"></a>Remarks
 この構造体がへの呼び出しから返される、 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)メソッド。
@@ -83,7 +76,7 @@ bstrAddressAbsolute
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)  
-[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
+- [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

@@ -1,7 +1,7 @@
 ---
 title: BUILT_TYPE |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BUILT_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 692391379c3f2581e535a9e5c885f776565fb93d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 09f0438bed235729d390b784725b89abec201c7f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315486"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693527"
 ---
 # <a name="builttype"></a>BUILT_TYPE
 この構造体には、メタデータから取得したフィールドの種類に関する情報を指定します。
@@ -41,14 +41,11 @@ public struct BUILT_TYPE {
 ```
 
 #### <a name="parameters"></a>パラメーター
-ulAppDomainID  
-シンボルが元のアプリケーションの ID。 これは、アプリケーションのインスタンスを一意に識別するに使用されます。
+シンボルが元のアプリケーションの ulAppDomainID ID です。 これは、アプリケーションのインスタンスを一意に識別するに使用されます。
 
-guidModule  
-このフィールドが含まれるモジュールの GUID です。
+guidModule をこのフィールドを含むモジュールの GUID。
 
-pUnderlyingField  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)この組み込みのフィールドに関連付けられている基になるフィールドを識別するオブジェクト。
+pUnderlyingField、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)この組み込みのフィールドに関連付けられている基になるフィールドを識別するオブジェクト。
 
 ## <a name="remarks"></a>Remarks
 共用体の一部としてこの構造体が表示されます、 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)ときに構造体、`dwKind`のフィールド、`TYPE_INFO`構造に設定されている`TYPE_KIND_BUILT`(からの値、 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列挙型)。
@@ -61,7 +58,7 @@ pUnderlyingField
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)  
-[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
+- [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

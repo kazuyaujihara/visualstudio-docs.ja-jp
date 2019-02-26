@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 配置して整理プロジェクト テンプレートと項目テンプレート |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -172,7 +172,7 @@ ms.locfileid: "54778527"
   
 8.  削除した .zip ファイルが含まれていたディレクトリに、新しい .zip ファイルを配置します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (Visual Studio テンプレート)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   

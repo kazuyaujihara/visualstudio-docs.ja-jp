@@ -1,7 +1,7 @@
 ---
 title: LAUNCH_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - LAUNCH_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d793adfd8be2fb86f51e94cfd43e8dbcbd75036f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449997"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680182"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 デバッグの起動フラグを指定します。
@@ -44,17 +44,13 @@ public enum enum_LAUNCH_FLAGS {
 ```
 
 ## <a name="members"></a>メンバー
-LAUNCH_DEBUG  
-デバッグ プロセスを起動します。
+LAUNCH_DEBUG では、デバッグ プロセスを起動します。
 
-LAUNCH_NODEBUG  
-デバッグを行わず、プロセスを起動します。
+LAUNCH_NODEBUG は、デバッグを行わず、プロセスを起動します。
 
-LAUNCH_ENABLE_ENC  
-非推奨では使用しないでください。
+非推奨とされます、LAUNCH_ENABLE_ENC は使用しないでください。
 
-LAUNCH_MERGE_ENV  
-プロセスを起動し、ホストを起動すると、環境をマージします。
+LAUNCH_MERGE_ENV はプロセスを起動し、ホストを起動すると、環境をマージします。
 
 ## <a name="remarks"></a>Remarks
 これらの値が引数として渡される、 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)メソッド。
@@ -69,5 +65,5 @@ LAUNCH_MERGE_ENV
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

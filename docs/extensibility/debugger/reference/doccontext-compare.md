@@ -1,7 +1,7 @@
 ---
 title: DOCCONTEXT_COMPARE |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DOCCONTEXT_COMPARE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5805f34528225849afb51ce6a854ef5028acb3a5
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413034"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686250"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 2 つのドキュメント コンテキストを比較するための条件を指定します。
@@ -44,17 +44,13 @@ enum enum_DOCCONTEXT_COMPARE {
 ```
 
 ## <a name="members"></a>メンバー
-DOCCONTEXT_EQUAL  
-ターゲット ドキュメントのコンテキストに相当するリスト内の最初のドキュメント コンテキストを検索します。
+DOCCONTEXT_EQUAL は、ターゲット ドキュメントのコンテキストに相当するリスト内の最初のドキュメント コンテキストを検索します。
 
-DOCCONTEXT_LESS_THAN  
-ターゲット ドキュメントのコンテキストよりも小さいリスト内の最初のドキュメント コンテキストを検索します。
+DOCCONTEXT_LESS_THAN は、ターゲット ドキュメントのコンテキストよりも小さいリスト内の最初のドキュメント コンテキストを検索します。
 
-DOCCONTEXT_GREATER_THAN  
-ターゲット ドキュメントのコンテキストよりも大きいリスト内の最初のドキュメント コンテキストを検索します。
+DOCCONTEXT_GREATER_THAN は、ターゲット ドキュメントのコンテキストよりも大きいリスト内の最初のドキュメント コンテキストを検索します。
 
-DOCCONTEXT_SAME_DOCUMENT  
-ターゲット ドキュメント コンテキストと同じドキュメント内にある一覧で最初のドキュメント コンテキストを検索します。
+DOCCONTEXT_SAME_DOCUMENT は、ターゲット ドキュメント コンテキストと同じドキュメント内にある一覧で最初のドキュメント コンテキストを検索します。
 
 ## <a name="remarks"></a>Remarks
 引数として渡される、[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)メソッド。
@@ -69,5 +65,5 @@ DOCCONTEXT_SAME_DOCUMENT
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

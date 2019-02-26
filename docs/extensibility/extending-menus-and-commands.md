@@ -12,49 +12,39 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 052dff899c1f6c6141e605c41e8269a584800ed7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c8f8d98525f1038b4a50dcaa5ca6237bd4c0f7b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966817"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709266"
 ---
 # <a name="extend-menus-and-commands"></a>メニューとコマンドを拡張します。
-コマンドは、アクションとプロセスを Visual Studio に追加する方法です。 ほとんどの場合は、コマンドがメニューやツールバーに表示されます。 VSPackage プロジェクト テンプレートは、非常に基本的なコマンドを実装する方法を示します。 若干時間ですがまだ基本的な実装では、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。  
-  
- Visual Studio コマンド、メニューおよびツールバーの詳細については、次を参照してください。[コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。  
-  
- コマンド、メニューのおよびツールバーがで定義されている、 *.vsct*されているファイルと VSPackage プロジェクトの一部です。 Visual Studio IDE についての情報を見つけることができます、 *.vsct*ファイル[Vspackage ではどのように追加のユーザー インターフェイス要素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)します。  
-  
- 次のトピックでは、さまざまな種類のコマンド、メニューのおよびツールバーを追加する方法について説明します。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [Visual Studio のメニュー バー メニューに追加します。](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)  
- Visual Studio のメニュー バーの上部にメニューを追加する方法について説明します。  
-  
- [キーボード ショートカットをメニュー項目にバインドします。](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
- (CTRL + 3) などのキーボード ショートカットをメニュー項目を追加する方法について説明します。  
-  
- [メニューにサブメニューを追加します。](../extensibility/adding-a-submenu-to-a-menu.md)  
- 上部のメニューにサブメニューを追加する方法について説明します。  
-  
- [最近使用した一覧のサブメニューへの追加します。](../extensibility/adding-a-most-recently-used-list-to-a-submenu.md)  
- 最近使用した一覧に追加する方法をについて説明します。  
-  
- [ボタンの再利用可能なグループを作成します。](../extensibility/creating-reusable-groups-of-buttons.md)  
- 複数のメニューに含めることができますようにコマンド項目をグループ化する方法について説明します。  
-  
- [メニュー コマンドにアイコンを追加します。](../extensibility/adding-icons-to-menu-commands.md)  
- ツールバーとメニューの両方でのコマンドにアイコンを追加する方法について説明します。  
-  
- [メニュー コマンドのテキストを変更します。](../extensibility/changing-the-text-of-a-menu-command.md)  
- 使用について説明します、`TextChanges`動的に変更するメニュー項目を有効にするフラグ。  
-  
- [コマンドの外観を変更します。](../extensibility/changing-the-appearance-of-a-command.md)  
- 動的に有効または、コマンドを無効にする方法について説明します。  
-  
- [ユーザー インターフェイスを更新します。](../extensibility/updating-the-user-interface.md)  
- 最近の変更を反映するように、ユーザー インターフェイスの更新を強制する方法について説明します。  
-  
- [メニュー コマンドをローカライズします。](../extensibility/localizing-menu-commands.md)  
- メニュー コマンドをローカライズする方法について説明します。  
+コマンドは、アクションとプロセスを Visual Studio に追加する方法です。 ほとんどの場合は、コマンドがメニューやツールバーに表示されます。 VSPackage プロジェクト テンプレートは、非常に基本的なコマンドを実装する方法を示します。 若干時間ですがまだ基本的な実装では、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
+
+ Visual Studio コマンド、メニューおよびツールバーの詳細については、次を参照してください。[コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。
+
+ コマンド、メニューのおよびツールバーがで定義されている、 *.vsct*されているファイルと VSPackage プロジェクトの一部です。 Visual Studio IDE についての情報を見つけることができます、 *.vsct*ファイル[Vspackage ではどのように追加のユーザー インターフェイス要素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)します。
+
+ 次のトピックでは、さまざまな種類のコマンド、メニューのおよびツールバーを追加する方法について説明します。
+
+## <a name="in-this-section"></a>このセクションの内容
+- [Visual Studio のメニュー バーにメニューを追加](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)上の Visual Studio のメニュー バーにメニューを追加する方法について説明します。
+
+- [キーボード ショートカットをメニュー項目にバインド](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)メニュー項目を (CTRL + 3) などのキーボード ショートカットを追加する方法について説明します。
+
+- [メニューにサブメニューを追加する](../extensibility/adding-a-submenu-to-a-menu.md)上部のメニューにサブメニューを追加する方法について説明します。
+
+- [最近使用した一覧をサブメニューに追加](../extensibility/adding-a-most-recently-used-list-to-a-submenu.md)最近使用したリストに追加する方法について説明します。
+
+- [ボタンの再利用可能なグループ作成](../extensibility/creating-reusable-groups-of-buttons.md)できるように、複数のメニューに含めることができます、コマンドの項目をグループ化する方法について説明します。
+
+- [メニュー コマンドにアイコンを追加](../extensibility/adding-icons-to-menu-commands.md)ツールバーとメニューの両方でのコマンドにアイコンを追加する方法について説明します。
+
+- [メニュー コマンドのテキストを変更する](../extensibility/changing-the-text-of-a-menu-command.md)の使用について説明します、`TextChanges`動的に変更するメニュー項目を有効にするフラグ。
+
+- [コマンドの外観を変更](../extensibility/changing-the-appearance-of-a-command.md)を動的に有効または、コマンドを無効にする方法について説明します。
+
+- [ユーザー インターフェイスを更新](../extensibility/updating-the-user-interface.md)を強制的に最新の変更を反映するように、ユーザー インターフェイスの更新方法について説明します。
+
+- [メニュー コマンドのローカライズ](../extensibility/localizing-menu-commands.md) メニューのコマンドをローカライズする方法について説明します。

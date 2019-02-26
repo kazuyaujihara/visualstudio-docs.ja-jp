@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bbaedce280924cbad81286992c9bdef586b4346
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316328"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681479"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>ツール ウィンドウのショートカット メニューを追加します。
 このチュートリアルでは、ツール ウィンドウのショートカット メニューを配置します。 ショートカット メニューは、ユーザーは、ボタン、テキスト ボックスに、またはウィンドウの背景を右クリックしたときに表示されるメニューです。 ショートカット メニューのコマンドは、その他のメニューまたはツールバーでコマンドと同じ動作します。 ショートカット メニューをサポートするために指定で、 *.vsct*ファイルを開き、マウスの右クリックに応答に表示します。
@@ -277,5 +277,5 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 4. ショートカット メニューの 色をクリックします。 ツール ウィンドウの背景色は、選択した色を変更しないでください。
 
 ## <a name="see-also"></a>関連項目
-[コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)  
-[使用して、サービスを提供します。](../extensibility/using-and-providing-services.md)
+- [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)
+- [使用して、サービスを提供します。](../extensibility/using-and-providing-services.md)

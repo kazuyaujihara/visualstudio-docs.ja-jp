@@ -10,50 +10,39 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19777ec9020fb5e4e825652cbea8034755a0ebac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 299db84fb06679bfbf9dff92234c944cbdec6295
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937101"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695207"
 ---
 # <a name="debug-tasks"></a>タスクをデバッグします。
-起動できることをプログラムをデバッグして、デバッグ エンジン (DE) をアタッチする必要があります。 そう、DE は、以前に起動されたプログラムにアタッチする必要があります。 アタッチされると、デは特定のスタートアップ イベントを生成する必要があります。 応答では、パッケージのデバッグは、IDE で設定されたブレークポイントをバインドしようとします。 プログラムがバインドされたブレークポイントに達するときに停止し、ユーザー入力を待機します。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [セキュリティの問題](../../extensibility/debugger/security-issues.md)  
- プログラムをデバッグするために必要なセキュリティ手順について説明します。  
-  
- [プログラムを起動します。](../../extensibility/debugger/launching-a-program.md)  
- プログラムを起動するオペレーティング システムを呼び出す、DE を指定する方法の手順を説明します。  
-  
- [プログラムに直接アタッチします。](../../extensibility/debugger/attaching-directly-to-a-program.md)  
- 既に実行されているプロセスでプログラムをデバッグするために使用するプロセスについて説明します。  
-  
- [起動の後のスタートアップ イベントを送信します。](../../extensibility/debugger/sending-startup-events-after-a-launch.md)  
- プログラムのメイン エントリ ポイントでし、デバッグの準備が整うまで、プログラム、DE がアタッチされると発生するイベントを一覧表示します。  
-  
- [実行の制御](../../extensibility/debugger/control-of-execution.md)  
- 送信する方法、DE 通常エントリ ポイント イベント、読み込み完了イベントの場合、または、状況に応じて、停止イベントについて説明します。  
-  
- [ブレークポイントをバインドします。](../../extensibility/debugger/binding-breakpoints.md)  
- 方法については、ユーザーは、ブレークポイントを設定、IDE、要求の作成し、プロンプトをブレークポイントを作成する、デバッグ セッションをについて説明します。  
-  
- [式を評価します。](../../extensibility/debugger/evaluating-expressions.md)  
- 式の作成方法と、式が評価されるときの動作について説明します。  
-  
- [視覚化し、データを表示します。](../../extensibility/debugger/visualizing-and-viewing-data.md)  
- 式エバリュエーター (EE) で型のビジュアライザーおよびカスタム ビューアーをサポートする方法について説明します。  
-  
-## <a name="related-sections"></a>関連項目  
- [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)  
- デバッグ アーキテクチャの主要な概念をについて説明します。  
-  
- [デバッガーのコンポーネント](../../extensibility/debugger/debugger-components.md)  
- DE、EE、およびシンボル ハンドラー (SH) を含む Visual Studio のデバッグ コンポーネントの概要を示します。  
-  
- [デバッガー コンテキスト](../../extensibility/debugger/debugger-contexts.md)  
- コード、ドキュメント、および式の評価のコンテキスト内で、DE がどの同時に動作について説明します。 3 つのコンテキスト、場所、位置、またはそれに関連する評価ごとに説明します。  
-  
-## <a name="see-also"></a>関連項目  
+起動できることをプログラムをデバッグして、デバッグ エンジン (DE) をアタッチする必要があります。 そう、DE は、以前に起動されたプログラムにアタッチする必要があります。 アタッチされると、デは特定のスタートアップ イベントを生成する必要があります。 応答では、パッケージのデバッグは、IDE で設定されたブレークポイントをバインドしようとします。 プログラムがバインドされたブレークポイントに達するときに停止し、ユーザー入力を待機します。
+
+## <a name="in-this-section"></a>このセクションの内容
+ [セキュリティの問題](../../extensibility/debugger/security-issues.md)プログラムをデバッグするために必要なセキュリティ手順について説明します。
+
+ [プログラムを起動](../../extensibility/debugger/launching-a-program.md)DE では、プログラムを起動するオペレーティング システムの呼び出しを指定する方法の手順について説明します。
+
+ [プログラムに直接アタッチ](../../extensibility/debugger/attaching-directly-to-a-program.md)が既に実行中のプロセスでプログラムをデバッグするために使用するプロセスについて説明します。
+
+ [起動後、スタートアップ イベントを送信](../../extensibility/debugger/sending-startup-events-after-a-launch.md)まで、プログラムは、メイン エントリ ポイントで、デバッグの準備ができて、DE がプログラムにアタッチされると発生するイベントを一覧表示されます。
+
+ [実行の制御](../../extensibility/debugger/control-of-execution.md)DE 通常送信する方法のエントリ ポイント イベント、読み込み完了イベントの場合、または、状況に応じて、停止イベントについて説明します。
+
+ [ブレークポイントをバインド](../../extensibility/debugger/binding-breakpoints.md)方法については、ユーザーは、ブレークポイントを設定、IDE、要求の作成し、プロンプトをブレークポイントを作成する、デバッグ セッションをについて説明します。
+
+ [式の評価](../../extensibility/debugger/evaluating-expressions.md)式の作成方法と、式が評価されるときの動作について説明します。
+
+ [データを視覚化および](../../extensibility/debugger/visualizing-and-viewing-data.md)(EE) の式エバリュエーターで型のビジュアライザーおよびカスタム ビューアーをサポートする方法について説明します。
+
+## <a name="related-sections"></a>関連項目
+ [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)デバッグ アーキテクチャの主要な概念について説明します。
+
+ [デバッガーのコンポーネント](../../extensibility/debugger/debugger-components.md)Visual Studio のデバッグ、DE、EE、およびシンボル ハンドラー (SH) のコンポーネントの概要を説明します。
+
+ [デバッガー コンテキスト](../../extensibility/debugger/debugger-contexts.md)DE が同時にして動作し、コード、ドキュメント、および式の評価コンテキスト内で方法について説明します。 3 つのコンテキスト、場所、位置、またはそれに関連する評価ごとに説明します。
+
+## <a name="see-also"></a>関連項目
  [開始するには](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
