@@ -1,5 +1,5 @@
 ---
-title: '方法: Office プライマリ相互運用機能アセンブリをインストールします。'
+title: '方法: Office プライマリ相互運用機能アセンブリをインストールする方法'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,7 +20,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/21/2019
 ms.locfileid: "56623048"
 ---
-# <a name="how-to-install-office-primary-interop-assemblies"></a>方法: Office プライマリ相互運用機能アセンブリをインストールします。
+# <a name="how-to-install-office-primary-interop-assemblies"></a>方法: Office プライマリ相互運用機能アセンブリをインストールする方法
   Microsoft Office のインストール時に、Office のプライマリ相互運用機能アセンブリ (PIA) をインストールします。
 
 ## <a name="to-install-the-pias-when-you-install-office"></a>Office のインストール時に PIA をインストールするには
