@@ -1,4 +1,4 @@
----
+﻿---
 title: ツールボックス、[データ] タブ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -39,7 +39,7 @@ ms.locfileid: "54768959"
 |<xref:System.Windows.Forms.BindingSource>|基になるデータ ソースにコントロールをバインドするプロセスを簡略化します。|  
 |<xref:System.Windows.Forms.BindingNavigator>|データにバインドされている、フォーム上のコントロールを移動および操作するためのユーザー インターフェイス (UI) を表します。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [データに関するチュートリアル](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Visual Studio でのデータへの Windows フォーム コントロールのバインド](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [アプリケーションでデータを受け取るための準備](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   

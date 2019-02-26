@@ -1,7 +1,7 @@
 ---
 title: dwTYPE_KIND |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - dwTYPE_KIND
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5a60939b779fe7377662a267826722b4c916679
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2a33bdf1875426898a6db72831bee4d1d7ac1f9a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317381"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689253"
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
 型を解釈する方法を指定します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクト。
@@ -43,14 +43,11 @@ public enum enum_dwTYPE_KIND {
 ```
 
 #### <a name="parameters"></a>パラメーター
-TYPE_KIND_METADATA  
-[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)共用体として解釈する必要があります、 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)構造体。
+TYPE_KIND_METADATA、 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)共用体として解釈する必要があります、 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)構造体。
 
-TYPE_KIND_PDB  
-`TYPE_INFO`共用体として解釈する必要があります、 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)構造体。
+TYPE_KIND_PDB、`TYPE_INFO`共用体として解釈する必要があります、 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)構造体。
 
-TYPE_KIND_BUILT  
-`TYPE_INFO`共用体として解釈する必要があります、 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)構造体。
+TYPE_KIND_BUILT、`TYPE_INFO`共用体として解釈する必要があります、 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)構造体。
 
 ## <a name="remarks"></a>Remarks
 この列挙体の値に表示されます、`dwKind`のフィールド、 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)構造体し、解釈する方法を決定するために使用、`type`共用体メンバーです。 `TYPE_INFO`への呼び出しによって返される構造体、 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)メソッド。
@@ -63,9 +60,9 @@ TYPE_KIND_BUILT
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)  
-[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)  
-[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)  
-[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)  
-[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
+- [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)
+- [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)
+- [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)
+- [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)

@@ -1,7 +1,7 @@
 ---
 title: BP_COND_STYLE |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_COND_STYLE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8ca4f551f4dd6541bad9d73b5e91c671ad80492
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 70ab3655d27e810b3c05d0e0e81d81bc15a26950
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318304"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685860"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 保留中のブレークポイントの条件のスタイルを指定し、ブレークポイントをバインドします。
@@ -42,14 +42,11 @@ public enum enum_BP_COND_STYLE {
 ```
 
 ## <a name="members"></a>メンバー
-BP_COND_NONE  
-ブレークポイントの位置に達すると、ブレークポイントが発生します。 ブレークポイントの条件を指定します。
+BP_COND_NONE はブレークポイントの位置に達すると、ブレークポイントが発生します。 ブレークポイントの条件を指定します。
 
-BP_COND_WHEN_TRUE  
-評価される条件式がブレークポイントに関連付けられている場合のみ、ブレークポイントを発生させる`true`します。
+BP_COND_WHEN_TRUE に評価される条件式がブレークポイントに関連付けられている場合のみ、ブレークポイントを発生させる`true`します。
 
-BP_COND_WHEN_CHANGED  
-条件付きの式の値は、ブレークポイントに関連付けられている場合にのみ、ブレークポイントがその以前の評価から変更が発生します。
+条件付きの式の値は、ブレークポイントに関連付けられている場合にのみ、ブレークポイントがその以前の評価から変更された BP_COND_WHEN_CHANGED 発生します。
 
 ## <a name="remarks"></a>Remarks
 使用、`styleCondition`のメンバー、 [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)構造体。
@@ -62,5 +59,5 @@ BP_COND_WHEN_CHANGED
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

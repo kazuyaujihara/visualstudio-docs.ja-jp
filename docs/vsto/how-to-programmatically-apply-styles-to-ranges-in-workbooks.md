@@ -14,60 +14,60 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9932aae9e54c65baf35e1dbff5c6ebbf2ff9dc7
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 178d5c22c74386cb70ced170b8643baeedfab55e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863254"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607968"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>方法: プログラムによってブック内の範囲にスタイルを適用します。
-  ブック内の領域に名前付きスタイルを適用できます。 Excel には、定義済みのスタイルがいくつか用意されています。  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
- **[セルの書式設定]** ダイアログ ボックスには、セルの書式を設定するために使用できるすべてのオプションが表示されます。これらの各オプションはコードから使用できます。 Excel でこのダイアログ ボックスを表示するには、 **[書式]** メニューの **[セル]** をクリックします。  
-  
-## <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズで名前付き範囲にスタイルを適用するには  
-  
-1.  新しいスタイルを作成し、その属性を設定します。  
-  
+  ブック内の領域に名前付きスタイルを適用できます。 Excel には、定義済みのスタイルがいくつか用意されています。
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+ **[セルの書式設定]** ダイアログ ボックスには、セルの書式を設定するために使用できるすべてのオプションが表示されます。これらの各オプションはコードから使用できます。 Excel でこのダイアログ ボックスを表示するには、 **[書式]** メニューの **[セル]** をクリックします。
+
+## <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズで名前付き範囲にスタイルを適用するには
+
+1.  新しいスタイルを作成し、その属性を設定します。
+
      [!code-csharp[Trin_VstcoreExcelAutomation#53](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#53)]
-     [!code-vb[Trin_VstcoreExcelAutomation#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#53)]  
-  
-2.  <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを作成し、テキストを割り当て、新しいスタイルを適用します。 このコードは、 `ThisWorkbook` クラスではなく、シート クラスに配置する必要があります。  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#53)]
+
+2.  <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを作成し、テキストを割り当て、新しいスタイルを適用します。 このコードは、 `ThisWorkbook` クラスではなく、シート クラスに配置する必要があります。
+
      [!code-csharp[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#54)]
-     [!code-vb[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#54)]  
-  
-## <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズで名前付き範囲からスタイルをクリアするには  
-  
-1.  Normal スタイルを範囲に適用します。 このコードは、 `ThisWorkbook` クラスではなく、シート クラスに配置する必要があります。  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#54)]
+
+## <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズで名前付き範囲からスタイルをクリアするには
+
+1.  Normal スタイルを範囲に適用します。 このコードは、 `ThisWorkbook` クラスではなく、シート クラスに配置する必要があります。
+
      [!code-csharp[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#55)]
-     [!code-vb[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#55)]  
-  
-## <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>VSTO アドインで名前付き範囲にスタイルを適用するには  
-  
-1.  新しいスタイルを作成し、その属性を設定します。  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#55)]
+
+## <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>VSTO アドインで名前付き範囲にスタイルを適用するには
+
+1.  新しいスタイルを作成し、その属性を設定します。
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#28](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#28)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#28](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#28)]  
-  
-2.  <xref:Microsoft.Office.Interop.Excel.Range> を作成し、テキストを割り当て、新しいスタイルを適用します。  
-  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#28](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#28)]
+
+2.  <xref:Microsoft.Office.Interop.Excel.Range> を作成し、テキストを割り当て、新しいスタイルを適用します。
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#29)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]  
-  
-## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>VSTO アドインで名前付き範囲からスタイルをクリアするには  
-  
-1.  Normal スタイルを範囲に適用します。  
-  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]
+
+## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>VSTO アドインで名前付き範囲からスタイルをクリアするには
+
+1.  Normal スタイルを範囲に適用します。
+
      [!code-csharp[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#56)]
-     [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]  
-  
-## <a name="see-also"></a>関連項目  
- [範囲を操作します。](../vsto/working-with-ranges.md)   
- [NamedRange コントロール](../vsto/namedrange-control.md)   
- [Office プロジェクト内のオブジェクトへのグローバル アクセス](../vsto/global-access-to-objects-in-office-projects.md)   
- [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]
+
+## <a name="see-also"></a>関連項目
+- [範囲を操作します。](../vsto/working-with-ranges.md)
+- [NamedRange コントロール](../vsto/namedrange-control.md)
+- [Office プロジェクト内のオブジェクトへのグローバル アクセス](../vsto/global-access-to-objects-in-office-projects.md)
+- [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

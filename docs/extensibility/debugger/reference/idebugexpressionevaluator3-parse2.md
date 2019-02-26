@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator3::Parse2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba8f5f214c8100780bb703a0733854228dae097f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 626911d4eb9f23655ad2808e1e79ec6635cb8b00
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450543"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678606"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 シンボル プロバイダーと、評価のフレームのアドレスを指定された解析された式を式の文字列に変換します。
@@ -49,29 +49,37 @@ HRESULT Parse2 (
 ```
 
 #### <a name="parameters"></a>パラメーター
-`upstrExpression`  
-[in]解析対象の式の文字列。
+`upstrExpression`
 
-`dwFlags`  
-[in]コレクション[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)式の解析方法を決定する定数。
+ [in]解析対象の式の文字列。
 
-`nRadix`  
-[in]任意の数値情報を解釈するための基数。
+`dwFlags`
 
-`pSymbolProvider`  
-[in]シンボル プロバイダーのインターフェイスです。
+ [in]コレクション[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)式の解析方法を決定する定数。
 
-`pAddress`  
-[in]評価のフレームのアドレス。
+`nRadix`
 
-`pbstrError`  
-[out]人間が判読できるテキストとして、エラーを返します。
+ [in]任意の数値情報を解釈するための基数。
 
-`pichError`  
-[out]式の文字列で、エラーの開始文字位置を返します。
+`pSymbolProvider`
 
-`ppParsedExpression`  
-[out]解析された式を返します、 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)オブジェクト。
+ [in]シンボル プロバイダーのインターフェイスです。
+
+`pAddress`
+
+ [in]評価のフレームのアドレス。
+
+`pbstrError`
+
+ [out]人間が判読できるテキストとして、エラーを返します。
+
+`pichError`
+
+ [out]式の文字列で、エラーの開始文字位置を返します。
+
+`ppParsedExpression`
+
+ [out]解析された式を返します、 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)オブジェクト。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -135,4 +143,4 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)
+- [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

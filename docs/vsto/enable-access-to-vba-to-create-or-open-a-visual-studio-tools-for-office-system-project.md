@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 219b2e1bd3ff7690f19066f83e914e5d0b878a73
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca3810df7751245acc3f7a93372d565b88170b07
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945782"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634826"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>作成するか、Visual Studio Tools for the Microsoft Office system プロジェクトを開き、VBA へのアクセスを有効にします。
 
@@ -126,5 +126,4 @@ ms.locfileid: "55945782"
 5. 選択**Office のインストールでエラーを検出して修復**、 をクリックし、**インストール**します。
 
 ## <a name="see-also"></a>関連項目
-
- [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)
+- [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)

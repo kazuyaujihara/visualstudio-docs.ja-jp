@@ -1,4 +1,4 @@
----
+﻿---
 title: ヘルプ ビューアーの管理者ガイド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -201,6 +201,6 @@ ms.locfileid: "54799706"
   
 3.  ヘルプ コンテンツをインストールするローカル コンピューターで、bat ファイルを実行します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [ヘルプ コンテンツ マネージャーのコマンドライン引数](../ide/command-line-arguments-for-the-help-content-manager.md)   
  [ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: '[オプション]、[テキスト エディター]、[全般] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -97,7 +97,7 @@ ms.locfileid: "54794458"
  [現在の行を強調表示する]  
  選択すると、カーソルが置かれているコード行の周りに灰色のボックスが表示されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [[オプション]、[テキスト エディター]、[すべての言語]](../../ide/reference/options-text-editor-all-languages.md)   
  [[オプション]、[テキスト エディター]、[すべての言語]、[タブ]](../../ide/reference/options-text-editor-all-languages-tabs.md)   
  [[オプション]、[テキスト エディター]、[ファイル拡張子]](../../ide/reference/options-text-editor-file-extension.md)   

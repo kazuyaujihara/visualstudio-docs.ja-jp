@@ -10,71 +10,90 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: adb5e4dd96037eafa2b4e90f03f79dc2ec7f3b2b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d2a1eea79b0ac2d80fb2b75043d4462e73928798
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031579"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620838"
 ---
 # <a name="legacy-language-service-features"></a>従来の言語サービスの機能
-マネージ パッケージ フレームワーク (MPF) の言語サービスは、1 つ以上をサポートできる[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]構文の強調表示、IntelliSense、ブレークポイントの検証などの機能です。 各機能は独立して実装できますが、パーサーとスキャナーのみを必要とするスキャナー構文の強調表示を除くすべてが必要です。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [従来の言語サービスでのかっこの一致](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
- かっこの一致とも呼ばれる、一致する言語のペアをサポートするために必要なものについて説明します。  
-  
- [従来の言語サービスのコメント コード](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
- 選択したコードのコメントを解除、注釈をサポートするために必要なものについて説明します。  
-  
- [従来の言語サービスのカスタム ドキュメント プロパティ](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
- ソース ファイルに埋め込まれているドキュメントのプロパティをサポートするために必要なものについて説明します。  
-  
- [従来の言語サービスのアウトライン](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
- アウトラインの非表示の領域の実装をサポートするために必要なものについて説明します。  
-  
- [従来の言語サービスの再フォーマット コード](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
- コードの再フォーマットをサポートするために必要なものについて説明します。  
-  
- [従来の言語サービスでのコード スニペットのサポート](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
- 挿入され、編集できるコードのセグメントであるコード スニペットをサポートするために必要なものについて説明します。  
-  
- [従来の言語サービスのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
- メソッドの入力には、メソッド シグネチャを表示するためのパラメーター情報の IntelliSense 操作をサポートするために必要なものについて説明します。  
-  
- [従来の言語サービスのクイック ヒント](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
- 識別子に関する情報を表示するための IntelliSense によるクイック ヒントの操作をサポートするために必要なものについて説明します。  
-  
- [従来の言語サービスでのメンバー補完](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
- 名前空間のメンバーを一覧から選択するため、IntelliSense のメンバー入力候補の操作をサポートするために必要なものについて説明します。  
-  
- [従来の言語サービスでの単語補完](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
- 部分的に型指定された単語を完了するため、IntelliSense の入力候補の操作をサポートするために必要なものについて説明します。  
-  
- [従来の言語サービスでの自動変数ウィンドウのサポート](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
- 説明の言語サービスの実行をサポートすることができます、 **[自動変数]** ウィンドウは、デバッグ中です。  
-  
- [従来の言語サービスでのナビゲーション バーのサポート](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
- 使用する方法について説明します、**ナビゲーション バー**任意の型またはそのビューに表示されるファイル内のメンバーに迅速なナビゲーションを提供するエディター ビューの上部に.  
-  
- [従来の言語サービスでの構文の配色変更](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
- ソース コードの構文の強調表示をサポートするために必要なものについて説明します。  
-  
- [従来の言語サービスでのブレークポイントの検証](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
- 言語サービスが、デバッガーの外部の検証のブレークポイントをサポートするために行うことができますをについて説明します。  
-  
-## <a name="related-sections"></a>関連項目  
- [従来の言語サービスのパーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
- Managed package framework を使用する言語サービスのすべての機能を実装するために必要なスキャナーとパーサーについて説明します。  
-  
- [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
- MPF を使用して、言語サービスを実装するために必要なものについて説明します。  
-  
- [従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)  
- MPF ベースの言語サービスを登録するために必要な手順について説明します[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。  
-  
- [IntelliSense の使用](../../ide/using-intellisense.md)  
- IntelliSense のしくみの言語リファレンスに簡単にアクセスについて説明します。  
-  
- [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
+マネージ パッケージ フレームワーク (MPF) の言語サービスは、1 つ以上をサポートできる[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]構文の強調表示、IntelliSense、ブレークポイントの検証などの機能です。 各機能は独立して実装できますが、パーサーとスキャナーのみを必要とするスキャナー構文の強調表示を除くすべてが必要です。
+
+## <a name="in-this-section"></a>このセクションの内容
+- [従来の言語サービスでのかっこの一致](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
+
+ かっこの一致とも呼ばれる、一致する言語のペアをサポートするために必要なものについて説明します。
+
+- [従来の言語サービスのコメント コード](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)
+
+ 選択したコードのコメントを解除、注釈をサポートするために必要なものについて説明します。
+
+- [従来の言語サービスのカスタム ドキュメント プロパティ](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)
+
+ ソース ファイルに埋め込まれているドキュメントのプロパティをサポートするために必要なものについて説明します。
+
+- [従来の言語サービスのアウトライン](../../extensibility/internals/outlining-in-a-legacy-language-service.md)
+
+ アウトラインの非表示の領域の実装をサポートするために必要なものについて説明します。
+
+- [従来の言語サービスの再フォーマット コード](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)
+
+ コードの再フォーマットをサポートするために必要なものについて説明します。
+
+- [従来の言語サービスでのコード スニペットのサポート](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
+
+ 挿入され、編集できるコードのセグメントであるコード スニペットをサポートするために必要なものについて説明します。
+
+- [従来の言語サービスのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)
+
+ メソッドの入力には、メソッド シグネチャを表示するためのパラメーター情報の IntelliSense 操作をサポートするために必要なものについて説明します。
+
+- [従来の言語サービスのクイック ヒント](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)
+
+ 識別子に関する情報を表示するための IntelliSense によるクイック ヒントの操作をサポートするために必要なものについて説明します。
+
+- [従来の言語サービスでのメンバー補完](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)
+
+ 名前空間のメンバーを一覧から選択するため、IntelliSense のメンバー入力候補の操作をサポートするために必要なものについて説明します。
+
+- [従来の言語サービスでの単語補完](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)
+
+ 部分的に型指定された単語を完了するため、IntelliSense の入力候補の操作をサポートするために必要なものについて説明します。
+
+- [従来の言語サービスでの自動変数ウィンドウのサポート](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)
+
+ 説明の言語サービスの実行をサポートすることができます、 **[自動変数]** ウィンドウは、デバッグ中です。
+
+- [従来の言語サービスでのナビゲーション バーのサポート](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)
+
+ 使用する方法について説明します、**ナビゲーション バー**任意の型またはそのビューに表示されるファイル内のメンバーに迅速なナビゲーションを提供するエディター ビューの上部に.
+
+- [従来の言語サービスでの構文の配色変更](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
+
+ ソース コードの構文の強調表示をサポートするために必要なものについて説明します。
+
+- [従来の言語サービスでのブレークポイントの検証](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
+
+ 言語サービスが、デバッガーの外部の検証のブレークポイントをサポートするために行うことができますをについて説明します。
+
+## <a name="related-sections"></a>関連項目
+- [従来の言語サービスのパーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
+
+ Managed package framework を使用する言語サービスのすべての機能を実装するために必要なスキャナーとパーサーについて説明します。
+
+- [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service2.md)
+
+ MPF を使用して、言語サービスを実装するために必要なものについて説明します。
+
+- [従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)
+
+ MPF ベースの言語サービスを登録するために必要な手順について説明します[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
+
+- [IntelliSense の使用](../../ide/using-intellisense.md)
+
+ IntelliSense のしくみの言語リファレンスに簡単にアクセスについて説明します。
+
+- [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service1.md)
+
  Managed package framework (MPF) を使用して、マネージ コードでのフル機能の言語サービスを実装する方法について説明します。

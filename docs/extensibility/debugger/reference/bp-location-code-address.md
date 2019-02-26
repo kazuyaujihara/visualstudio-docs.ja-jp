@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_CODE_ADDRESS |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_CODE_ADDRESS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e90801f17690b48ba82e9fa80fba345e206c50b2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: cce96e2edfcbc0dcb6dc4c6ff0e58617ad792ad8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315925"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698002"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 コード内のアドレスのブレークポイントの場所について説明します。
@@ -34,17 +34,13 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 ```
 
 ## <a name="members"></a>メンバー
-`bstrContext`  
-ブレークポイントのコンテキスト、通常は呼び出し履歴で見られる同様のメソッドまたは関数の名前。
+`bstrContext` ブレークポイントのコンテキスト、通常は呼び出し履歴で見られる同様のメソッドまたは関数の名前。
 
-`bstrModuleUrl`  
-ブレークポイントを含むモジュールの URL。
+`bstrModuleUrl` ブレークポイントを含むモジュールの URL。
 
-`bstrFunction`  
-ブレークポイントを含む関数の名前。
+`bstrFunction` ブレークポイントを含む関数の名前。
 
-`bstrAddress`  
-バインドする式エバリュエーターによって解析のブレークポイントのアドレス、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)オブジェクト。
+`bstrAddress` バインドする式エバリュエーターによって解析のブレークポイントのアドレス、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)オブジェクト。
 
 ## <a name="remarks"></a>Remarks
 この構造体のメンバーである、 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)構造体、共用体の一部として。
@@ -57,6 +53,6 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
-[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

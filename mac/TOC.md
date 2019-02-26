@@ -41,6 +41,7 @@
 # [コードのコンパイルとビルド](compiling-and-building.md)
 ## [プロジェクトとソリューションのビルドおよびクリーン](building-and-cleaning-projects-and-solutions.md)
 ## [ビルド アクション](build-actions.md)
+## [方法: 複数のスタートアップ プロジェクトを設定する](set-startup-projects.md)
 ## [ビルド システムのカスタマイズ](customizing-build-system.md)
 ## [構成](configurations.md)
 ### [構成を作成および編集する](create-and-edit-configurations.md)

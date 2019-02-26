@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba3d10fc129edfa5ac159bcf394cdbe734d65dba
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 8d3c85d949f9547897b924bea86fe0cf9d438768
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317641"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685665"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 使用するチェックサム アルゴリズムの一意の識別子を指定されたブレークポイント要求のドキュメントのチェックサムを取得します。
@@ -37,11 +37,13 @@ public int GetChecksum(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`guidAlgorithm`  
-[in]チェックサム アルゴリズムの一意の識別子。
+`guidAlgorithm`
 
-`pChecksumData`  
-[out]ブレークポイント要求のドキュメントのチェックサム。
+ [in]チェックサム アルゴリズムの一意の識別子。
+
+`pChecksumData`
+
+ [out]ブレークポイント要求のドキュメントのチェックサム。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -102,4 +104,4 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)
+- [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

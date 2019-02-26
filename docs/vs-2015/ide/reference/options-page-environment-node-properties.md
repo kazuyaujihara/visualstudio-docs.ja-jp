@@ -1,4 +1,4 @@
----
+﻿---
 title: '[環境] ノード プロパティ ([オプション] ページ) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -161,7 +161,7 @@ ms.locfileid: "54753517"
 |ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (Source、Design、External) です。|  
 |ViewSourceExternalProgram|Get/Set (String)|外部ソース ビューアーのパスです。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [オプション設定の制御](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [オプション ページにあるプロパティ項目名の確認](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [[フォントおよび色] ノード プロパティ ([オプション] ページ)](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   

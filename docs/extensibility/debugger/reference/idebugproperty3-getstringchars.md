@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::GetStringChars |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::GetStringChars
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ce59e1fcbc9b219f1436bd09d4d947cd6995c0f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 900238434f5671cd9a5ba1bd358304638551dbc5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450426"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698145"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 このプロパティに関連付けられている文字列を取得し、ユーザーが指定したバッファーに格納します。
@@ -41,16 +41,20 @@ int GetStringChars(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`buflen`  
-[in]ユーザーが指定したバッファーが保持できる最大文字数。
+`buflen`
 
-`rgString`  
-[out]文字列を返します。
+ [in]ユーザーが指定したバッファーが保持できる最大文字数。
 
-[C++ のみ]、`rgString`を文字列の Unicode 文字を受け取るバッファーへのポインターです。 このバッファーは以上である必要があります`buflen`サイズの文字 (バイトではありません)。
+`rgString`
 
-`pceltFetched`  
-[out]実際には、バッファーに格納されている文字数が返されます。 (できます`NULL`c++)。
+ [out]文字列を返します。
+
+
+ [C++ のみ]、`rgString`を文字列の Unicode 文字を受け取るバッファーへのポインターです。 このバッファーは以上である必要があります`buflen`サイズの文字 (バイトではありません)。
+
+`pceltFetched`
+
+ [out]実際には、バッファーに格納されている文字数が返されます。 (できます`NULL`c++)。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。
@@ -85,6 +89,6 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 ```
 
 ## <a name="see-also"></a>関連項目
-[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)  
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)  
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

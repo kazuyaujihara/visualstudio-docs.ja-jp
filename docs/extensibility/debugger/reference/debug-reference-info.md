@@ -1,7 +1,7 @@
 ---
 title: DEBUG_REFERENCE_INFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_REFERENCE_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3167deaa7e088ed75584f9fdc0777a608f11a47e
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: c82e1d3894b9fa3ffbdffb5ab69c134ff73e0df7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413476"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720290"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 参照を記述します。
@@ -49,26 +49,19 @@ public struct DEBUG_REFERENCE_INFO {
 ```
 
 ## <a name="members"></a>メンバー
-dwFields  
-フラグの組み合わせ、 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)フィールドが記入を指定する列挙体。
+フラグの組み合わせを dwFields A、 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)フィールドが記入を指定する列挙体。
 
-bstrName  
-ユーザーが指定した名前、 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)オブジェクト。
+bstrName ユーザーが指定した名前の[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)オブジェクト。
 
-bstrType  
-書式設定された文字列として参照型。
+bstrType 参照は、書式設定された文字列として入力します。
 
-bstrValue  
-書式設定された文字列として参照値
+bstrValue 書式設定された文字列として参照値
 
-dwAttrib  
-フラグの組み合わせ、 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)デバッグ プロパティの属性のフラグを指定する列挙体。
+フラグの組み合わせを dwAttrib A、 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)デバッグ プロパティの属性のフラグを指定する列挙体。
 
-dwRefType  
-値、 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)参照型が強いか弱いかどうかを指定する列挙体。
+dwRefType A 値から、 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)参照型が強いか弱いかどうかを指定する列挙体。
 
-m_pReference  
-[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)参照情報を指定するオブジェクト。
+m_pReference、 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)参照情報を指定するオブジェクト。
 
 ## <a name="remarks"></a>Remarks
 この構造体がへの呼び出しに渡される、 [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)情報を格納するメソッド。 リストの一部としてこの構造体が返されることも、 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)インターフェイスをさらへの呼び出しから返される、 [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)メソッド。
@@ -81,11 +74,11 @@ m_pReference
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)  
-[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)  
-[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)  
-[REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)  
-[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)  
-[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)  
-[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)
+- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
+- [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
+- [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)
+- [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)
+- [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)
+- [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)
+- [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)

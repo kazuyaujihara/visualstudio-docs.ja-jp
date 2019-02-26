@@ -11,63 +11,63 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95308f286506aa9e032e3923bbff23c90d464d48
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 73e48cfb0a30ca71592879c8276ef1be76cb973f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070670"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680297"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML スキーマの条件付き属性
-条件付き属性は、すべてのリストとアイテムに適用できます。 論理演算子およびシンボルの拡張の式は、true または false に評価されます。 True の場合、結果の出力で、関連付けられているリストまたは項目が含まれます。  
-  
- その他のトークンの拡張や定数に対してトークンの拡張をテストすることができます。 関数は、`Defined()`値が存在しない場合でも、特定の名前が定義されているかどうかをテストします。  
-  
- Condition 属性がリストに適用されると、条件は、リスト内のすべての子要素に適用されます。 子要素自体に条件属性が含まれている場合、その条件が結合親式 AND 演算によって。  
-  
- True の場合、値 1、'1' および 'true' に評価して 0、'0' および 'false' が false として評価されます。  
-  
-## <a name="operators"></a>演算子  
- 条件付きの式を評価するのにには、次の演算子を使用します。  
-  
-|演算子|定義|  
-|--------------|----------------|  
-|(,)|グループ化|  
-|!|論理 NOT|  
-|\<, >, \<=, >=, ==, !=|関係と比較|  
-|と、呼び出し|ブール型|  
-|または|ブール型|  
-  
-## <a name="examples"></a>使用例  
-  
-```xml  
-<Menu Condition="Defined(DEBUG)" ...  
-</Menu>  
-  
-<Menu Condition="%(SKU_MODE) = 'Demo'" ...  
-</Menu>  
-  
-<Menus Condition="Defined(DEBUG)">  
-    <Menu ...  
-    </Menu>  
-</Menus>  
-  
-<Menus Condition="Defined(DEMO_SKU)">  
-    <Menus Condition="!Defined(DEBUG)">  
-        <Menu ...  
-        </Menu>  
-    </Menus>  
-  
-    <Menu ...  
-    </Menu>  
-</Menus>  
-  
-<Menus Condition="(Defined(DEMO_SKU) or Defined(SAMPLE_SKU))   
-and !Defined(DEBUG)">  
-    <Menu ...  
-    </Menu>  
-</Menus>  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [Visual Studio コマンド テーブル (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+条件付き属性は、すべてのリストとアイテムに適用できます。 論理演算子およびシンボルの拡張の式は、true または false に評価されます。 True の場合、結果の出力で、関連付けられているリストまたは項目が含まれます。
+
+ その他のトークンの拡張や定数に対してトークンの拡張をテストすることができます。 関数は、`Defined()`値が存在しない場合でも、特定の名前が定義されているかどうかをテストします。
+
+ Condition 属性がリストに適用されると、条件は、リスト内のすべての子要素に適用されます。 子要素自体に条件属性が含まれている場合、その条件が結合親式 AND 演算によって。
+
+ True の場合、値 1、'1' および 'true' に評価して 0、'0' および 'false' が false として評価されます。
+
+## <a name="operators"></a>演算子
+ 条件付きの式を評価するのにには、次の演算子を使用します。
+
+|演算子|定義|
+|--------------|----------------|
+|(,)|グループ化|
+|!|論理 NOT|
+|\<, >, \<=, >=, ==, !=|関係と比較|
+|と、呼び出し|ブール型|
+|または|ブール型|
+
+## <a name="examples"></a>使用例
+
+```xml
+<Menu Condition="Defined(DEBUG)" ...
+</Menu>
+
+<Menu Condition="%(SKU_MODE) = 'Demo'" ...
+</Menu>
+
+<Menus Condition="Defined(DEBUG)">
+    <Menu ...
+    </Menu>
+</Menus>
+
+<Menus Condition="Defined(DEMO_SKU)">
+    <Menus Condition="!Defined(DEBUG)">
+        <Menu ...
+        </Menu>
+    </Menus>
+
+    <Menu ...
+    </Menu>
+</Menus>
+
+<Menus Condition="(Defined(DEMO_SKU) or Defined(SAMPLE_SKU))
+and !Defined(DEBUG)">
+    <Menu ...
+    </Menu>
+</Menus>
+```
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio コマンド テーブル (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

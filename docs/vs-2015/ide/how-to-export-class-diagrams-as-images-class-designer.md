@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: クラス ダイアグラム (クラス デザイナー) のイメージとしてエクスポート |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -37,6 +37,6 @@ ms.locfileid: "54799760"
   
      他のドキュメントからリンクされているエクスポート済みイメージを自動的に更新するには、Visual Studio でもう一度ダイアグラムをエクスポートします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [方法: クラス ダイアグラムを印刷する (クラス デザイナー)](../ide/how-to-print-class-diagrams-class-designer.md)   
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: ユーザー補助アプリケーションのデザイン リソース | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -57,5 +57,5 @@ ms.locfileid: "54761673"
   
 -   **W3C (World Wide Web Consortium) の WAI (Web Accessibility Initiative)** この Web サイトには、ユーザー補助機能を持つ Web サイトの開発に関するガイドラインと技術情報が示されています。 詳細については、「[http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)

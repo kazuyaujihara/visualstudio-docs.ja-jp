@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft Language Interface Pack (Lip) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -102,5 +102,5 @@ Windows Language Interface Pack (LIP) を使用すると、1 つの言語バー�
 
    また、devenv コマンドを使用して、UI に使用される言語を設定することもできます。 詳細については、「[/lcid (devenv.exe)](../ide/reference/lcid-devenv-exe.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [[国際対応の設定] ([オプション] ダイアログ ボックス - [環境])](../ide/reference/international-settings-environment-options-dialog-box.md)

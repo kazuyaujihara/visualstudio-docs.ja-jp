@@ -1,4 +1,4 @@
----
+﻿---
 title: '[オプション]、[テキスト エディター]、[C/C++]、[書式設定] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -78,6 +78,6 @@ ms.locfileid: "54770640"
   
 -   [while ステートメント (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)   
  [IntelliSense の使用](../../ide/using-intellisense.md)

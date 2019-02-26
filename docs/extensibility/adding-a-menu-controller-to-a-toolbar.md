@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c355ba523bd16cce9d352d483af8c142f0ee439c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318239"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705639"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>ツールバーにメニュー コント ローラーを追加します。
 このチュートリアルの[ツール ウィンドウにツールバーを追加](../extensibility/adding-a-toolbar-to-a-tool-window.md)チュートリアルとツール ウィンドウのツールバーにメニュー コント ローラーを追加する方法について説明します。 以下に示す手順も適用できますで作成したツールバーに、[ツールバーを追加](../extensibility/adding-a-toolbar.md)チュートリアル。
@@ -223,5 +223,5 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     ダイアログ ボックスが、メッセージが表示されます**コント ローラーのメニュー項目 3 を選択した**します。 メッセージは、メニュー コント ローラーのボタンのテキストに対応することを確認します。 メニュー コント ローラー ボタンを表示するようになりました**MC 項目 3**します。
 
 ## <a name="see-also"></a>関連項目
-[ツール ウィンドウにツールバーを追加します。](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
-[ツールバーの追加](../extensibility/adding-a-toolbar.md)
+- [ツール ウィンドウにツールバーを追加します。](../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [ツールバーの追加](../extensibility/adding-a-toolbar.md)

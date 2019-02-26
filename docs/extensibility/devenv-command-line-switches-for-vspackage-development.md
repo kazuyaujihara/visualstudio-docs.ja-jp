@@ -18,28 +18,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89114689f933f3b09aac1d7ffcec109e81f631ad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd95fe31949b51c7167337ad21c51251e84a19a7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970553"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705532"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage 開発の Devenv コマンド ライン スイッチ
 
-Visual Studio により、開発者は実行時に、コマンドラインからタスクを自動化する`devenv.exe`、Visual Studio IDE を起動するファイル。  
+Visual Studio により、開発者は実行時に、コマンドラインからタスクを自動化する`devenv.exe`、Visual Studio IDE を起動するファイル。
 
- タスクは次のとおりです。  
+ タスクは次のとおりです。
 
-- IDE の外部から定義済みの構成でアプリケーションを展開します。  
+- IDE の外部から定義済みの構成でアプリケーションを展開します。
 
-- 自動的にプリセットを使用してプロジェクトをビルドする設定を作成するかのデバッグ構成。  
+- 自動的にプリセットを使用してプロジェクトをビルドする設定を作成するかのデバッグ構成。
 
-- IDE の外部からすべての特定の構成で IDE を読み込んでいます。 起動すると、IDE をカスタマイズすることもできます。  
+- IDE の外部からすべての特定の構成で IDE を読み込んでいます。 起動すると、IDE をカスタマイズすることもできます。
 
 ## <a name="guidelines-for-switches"></a>スイッチのガイドライン
 
-Visual Studio のドキュメントには、ユーザー レベルがについて説明します`devenv`コマンド ライン スイッチ。 詳細については、次を参照してください。 [Devenv コマンド ライン スイッチ](../ide/reference/devenv-command-line-switches.md)します。 `devenv`ツールには、VSPackage の開発、展開、およびデバッグで便利な追加のコマンド ライン スイッチもサポートしています。  
+Visual Studio のドキュメントには、ユーザー レベルがについて説明します`devenv`コマンド ライン スイッチ。 詳細については、次を参照してください。 [Devenv コマンド ライン スイッチ](../ide/reference/devenv-command-line-switches.md)します。 `devenv`ツールには、VSPackage の開発、展開、およびデバッグで便利な追加のコマンド ライン スイッチもサポートしています。
 
 | コマンド ライン スイッチ | 説明 |
 |---------------------| - |

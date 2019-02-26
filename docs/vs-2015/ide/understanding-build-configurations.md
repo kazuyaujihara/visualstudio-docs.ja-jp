@@ -1,4 +1,4 @@
----
+﻿---
 title: ビルド構成について | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -84,7 +84,7 @@ ms.locfileid: "54799311"
   
 -   プロジェクトで複数のプラットフォームがサポートされる場合、サポートされている各プラットフォームについて、ソリューション構成が見つかればその構成が割り当てられ、見つからなければ追加されます。 各ソリューション構成の名前には、プロジェクト構成名とプラットフォーム名の両方が含まれ、*\<プロジェクト構成名> \<プラットフォーム名>* という形式になります。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [チュートリアル: アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)   
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)   
  [ソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)   

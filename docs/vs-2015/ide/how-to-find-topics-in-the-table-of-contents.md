@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 目次のトピックが見つかります |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -54,6 +54,6 @@ ms.locfileid: "54778343"
   
      **[目次]** タブが開き、TOC 内のトピックの場所が表示されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [情報の検索](../ide/locate-information.md)   
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

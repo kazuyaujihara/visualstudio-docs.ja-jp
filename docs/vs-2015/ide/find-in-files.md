@@ -1,4 +1,4 @@
----
+﻿---
 title: '[フォルダーを指定して検索] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -93,7 +93,7 @@ ms.locfileid: "54804360"
  結果を追加  
  検索結果を、前の検索結果に追加します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [テキストの検索と置換](../ide/finding-and-replacing-text.md)   
  [フォルダーを指定して置換](../ide/replace-in-files.md)   
  [Visual Studio のコマンド](../ide/reference/visual-studio-commands.md)

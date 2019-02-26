@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetConstraints |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetConstraints
 - GetConstraints
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abed2d77156aac83b09bf5a0ba472b1887d15600
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: a98a62ca294af5f7151ca0047b966cc151970fe6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450075"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700875"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 このジェネリック パラメーターに関連付けられている制約を取得します。
@@ -40,14 +40,17 @@ int GetConstraints(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`cConstraints`  
-[in]制約の数。
+`cConstraints`
 
-`ppConstraints`  
-[out]このフィールドに関連付けられている制約を格納する配列を返します。
+ [in]制約の数。
 
-`pcConstraints`  
-[入力、出力]制約の数、`ppConstraints`配列。
+`ppConstraints`
+
+ [out]このフィールドに関連付けられている制約を格納する配列を返します。
+
+`pcConstraints`
+
+ [入力、出力]制約の数、`ppConstraints`配列。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -149,4 +152,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

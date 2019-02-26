@@ -52,5 +52,5 @@ ms.locfileid: "54779450"
 
 -   並行ビルドを使用してビルド パフォーマンスを改善する。 詳細については、「[複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)」またはブログ投稿「[Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)」 (C++ での並列ビルドの調整) を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [チュートリアル: アプリケーションの構築](../ide/walkthrough-building-an-application.md)[ビルド構成について](../ide/understanding-build-configurations.md)[ビルド プラットフォームについて](../ide/understanding-build-platforms.md) [(コンパイル)のWebサイトプロジェクトのビルド](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193)[方法: を作成し、プロジェクトの依存関係の削除](../ide/how-to-create-and-remove-project-dependencies.md)

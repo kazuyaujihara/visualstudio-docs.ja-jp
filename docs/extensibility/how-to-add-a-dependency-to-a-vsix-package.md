@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba9f1f5f1d656dc2283d9cc943ca03f752cb5067
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 225f2bba47aea209e406abe4555b508a2ee93ade
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000112"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708577"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>方法: VSIX パッケージへの依存関係を追加します。
 
@@ -49,6 +49,6 @@ VSIXInstaller は Visual Studio の以前のバージョンを検出し、以降
 
 ## <a name="see-also"></a>関連項目
 
- [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)   
- [Windows インストーラーの配置の拡張機能を準備します。](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+- [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)
+- [Windows インストーラーの配置の拡張機能を準備します。](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

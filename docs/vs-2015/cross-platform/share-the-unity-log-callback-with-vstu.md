@@ -1,4 +1,4 @@
----
+﻿---
 title: Unity のログ コールバックを VSTU と共有する | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

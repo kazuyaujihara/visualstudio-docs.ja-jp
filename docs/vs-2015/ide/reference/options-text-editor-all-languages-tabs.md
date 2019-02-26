@@ -1,4 +1,4 @@
----
+﻿---
 title: '[オプション]、[テキスト エディター]、[すべての言語]、[タブ] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -67,6 +67,6 @@ ms.locfileid: "54800805"
  [タブの保持]  
  選択した場合、インデント操作によって、可能な限りの TAB 文字が挿入されます。 TAB 文字の長さは、**[タブ サイズ]** ボックスで指定したスペースの数に相当します。 **[インデント サイズ]** 値が **[タブ サイズ]** 値の倍数ではない場合は、その差を埋めるために空白文字が挿入されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [[オプション]、[テキスト エディター]、[すべての言語]](../../ide/reference/options-text-editor-all-languages.md)   
  [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)

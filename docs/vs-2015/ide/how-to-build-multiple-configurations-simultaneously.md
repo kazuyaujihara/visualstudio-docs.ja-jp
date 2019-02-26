@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 複数の構成を同時にビルド |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -38,7 +38,7 @@ ms.locfileid: "54785869"
   
 3.  指定した構成でプロジェクトをビルドするには、**[ビルド]** または **[リビルド]** ボタンを選択します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [方法 : 構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)   
  [ビルド構成について](../ide/understanding-build-configurations.md)   
  [MSBuild での複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

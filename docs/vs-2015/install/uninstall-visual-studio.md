@@ -75,5 +75,5 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 
    Visual Studio の以前のバージョンをインストールする場合でも、新しいバージョンを使用して、またはリリースがある場合にお試しくださいまだセットアップ プログラム可能性があります。 詳細についてを参照してください、[方法: 特定のリリースの Visual Studio をインストール](../install/how-to-install-a-specific-release-of-visual-studio.md)トピック。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio のインストール](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

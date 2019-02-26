@@ -1,7 +1,7 @@
 ---
 title: BP_UNBOUND_REASON |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_UNBOUND_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab701ef9886dddc0c2e32aa79092f22ad91d4630
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316068"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717664"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 ブレークポイントがバインドされた理由を説明します。
@@ -44,17 +44,13 @@ public enum enum_BP_UNBOUND_REASON {
 ```
 
 ## <a name="members"></a>メンバー
-BPUR_UNKNOWN  
-不明な理由です。
+BPUR_UNKNOWN 理由が不明です。
 
-BPUR_CODE_UNLOADED  
-ブレークポイントを含むコードがアンロードされました。
+BPUR_CODE_UNLOADED ブレークポイントを含むコードがアンロードされました。
 
-BPUR_BREAKPOINT_REBIND  
-ブレークポイントが別の場所にバインドされています。 編集後に発生したり、ブレークポイントに移動したとき、またはファイル パスが無効になっているブレークポイントがバインドされている場合は、操作を続行します。
+BPUR_BREAKPOINT_REBIND ブレークポイントが別の場所にバインドされています。 編集後に発生したり、ブレークポイントに移動したとき、またはファイル パスが無効になっているブレークポイントがバインドされている場合は、操作を続行します。
 
-BPUR_ BREAKPOINT_ERROR  
-ブレークポイントを判定して、バインド後にエラーが発生されます。 これは管理対象のブレークポイント条件を持つは無効になります。
+エラーが発生するバインド後 BPUR_ BREAKPOINT_ERROR ブレークポイントが決定されます。 これは管理対象のブレークポイント条件を持つは無効になります。
 
 ## <a name="remarks"></a>Remarks
 によって返される、 [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)メソッド。
@@ -67,5 +63,5 @@ BPUR_ BREAKPOINT_ERROR
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplier2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPortSupplier2
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a52bc088b2781f31894213c4c37c50069c9fea2
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 16ffb759c2f3309351f9c27feb719e18c49a39ea
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449893"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678579"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 このインターフェイスには、セッション デバッグ マネージャー (SDM) へのポートが用意されています。
@@ -51,9 +51,9 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 
 呼び出し[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)によって使用されている現在のポート サプライヤーを表す、このインターフェイスを返します[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]します。
 
-[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)ポートを作成したポートのサプライヤーを表す、このインターフェイスを返します。
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)ポートを作成したポートのサプライヤーを表す、このインターフェイスを返します。
 
-[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)の一覧を表します`IDebugPortSupplier`インターフェイス (、`IEnumDebugPortSuppliers`インターフェイスがから取得した[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)に登録されているすべてのポートサプライヤーを表す[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).
+- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)の一覧を表します`IDebugPortSupplier`インターフェイス (、`IEnumDebugPortSuppliers`インターフェイスがから取得した[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)に登録されているすべてのポートサプライヤーを表す[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).
 
 デバッグ エンジンは、通常、ポート サプライヤーは操作できません。
 
@@ -81,7 +81,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)  
-[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)  
-[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)  
-[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)
+- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)
+- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

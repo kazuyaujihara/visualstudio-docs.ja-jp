@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::LoadSymbolsFromStream |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 - LoadSymbolsFromStream
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02e88780e41b9a46163c7b66b2d83e64d190c307
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4fb22dfdfb92b4955624a587a340d9f57eb2d59c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413385"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717950"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 読み込みでは、データ ストリームを指定するシンボルをデバッグします。
@@ -44,20 +44,25 @@ int LoadSymbolsFromStream(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`ulAppDomainID`  
-[in]アプリケーション ドメインの識別子。
+`ulAppDomainID`
 
-`guidModule`  
-[in]モジュールの一意の識別子。
+ [in]アプリケーション ドメインの識別子。
 
-`baseAddress`  
-[in]基本のメモリ アドレス。
+`guidModule`
 
-`pUnkMetadataImport`  
-[in]シンボルのメタデータを含むオブジェクト。
+ [in]モジュールの一意の識別子。
 
-`pStream`  
-[in]シンボルを含むデータ ストリーム。
+`baseAddress`
+
+ [in]基本のメモリ アドレス。
+
+`pUnkMetadataImport`
+
+ [in]シンボルのメタデータを含むオブジェクト。
+
+`pStream`
+
+ [in]シンボルを含むデータ ストリーム。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -79,4 +84,4 @@ HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

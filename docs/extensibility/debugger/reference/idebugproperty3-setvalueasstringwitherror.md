@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::SetValueAsStringWithError |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee3d317cf45692a8214f15c1473eb8f781b21451
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 1f3bc987cf097f3573b40d4d907204c742608fd0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450309"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709279"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 このプロパティの値を設定し、必要な場合に、エラー メッセージを返します。
@@ -43,17 +43,21 @@ int SetValueAsStringWithError(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`pszValue`  
-[in]設定する値。
+`pszValue`
 
-`dwRadix`  
-[in]設定されている値の基数です。
+ [in]設定する値。
 
-`dwTimeout`  
-[in]値を設定するを待機する時間の長さ (`INFINITE`手段が無期限に待機) します。
+`dwRadix`
 
-`errorString`  
-[out]値の設定中にエラーがあった場合、これは失敗の理由を保持します。
+ [in]設定されている値の基数です。
+
+`dwTimeout`
+
+ [in]値を設定するを待機する時間の長さ (`INFINITE`手段が無期限に待機) します。
+
+`errorString`
+
+ [out]値の設定中にエラーがあった場合、これは失敗の理由を保持します。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -167,4 +171,4 @@ HRESULT CProperty::SetValueAsStringWithError(
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

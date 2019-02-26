@@ -1,4 +1,4 @@
----
+﻿---
 title: 複数の言語バージョンのインストール |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -34,5 +34,5 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 
 -   Visual Studio セットアップのメンテナンス モードを使用して、言語パッケージをアンインストールできます。 **[コントロール パネル]**、 **[プログラムと機能]** の順に開き、インストールした Visual Studio のエディションを選択して、 **[アンインストールと変更]** をクリックします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Microsoft Language Interface Pack (Lip) および Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md) [Visual Studio のインストール](../install/install-visual-studio-2015.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: プロジェクトのプロパティのリファレンス | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -45,6 +45,6 @@ ms.locfileid: "54800850"
 |||  
 |||  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [プロジェクト デザイナーの概要](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [ソリューションおよびプロジェクト](../../ide/solutions-and-projects-in-visual-studio.md)

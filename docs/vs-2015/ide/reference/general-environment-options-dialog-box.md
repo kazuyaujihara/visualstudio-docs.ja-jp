@@ -1,4 +1,4 @@
----
+﻿---
 title: '[全般]([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -82,6 +82,6 @@ ms.locfileid: "54752291"
   
  このオプションは、同じコンピューターに 2 つのバージョンの Visual Studio がインストールされていて、後で一方のバージョンをアンインストールする場合に役立ちます。 アンインストールすると、Visual Studio ファイルのアイコンがエクスプローラーに表示されなくなります。 さらに、これらのファイルを編集するための既定のアプリケーションが Visual Studio であるとは認識されなくなります。 このオプションは、このような関連付けを復元します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)   
  [ウィンドウ レイアウトをカスタマイズする](../../ide/customizing-window-layouts-in-visual-studio.md)

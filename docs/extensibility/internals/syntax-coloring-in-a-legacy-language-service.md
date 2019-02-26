@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081f48f89b533862125069f751996c72a4cf00f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025645"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629574"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>従来の言語サービスでの構文の色分け表示
 
@@ -63,11 +63,17 @@ Visual Studio では、言語の要素を特定し、エディターで指定し
 >  言語サービスの colorizer を使用するだけでなく、VSPackage は、汎用的な Visual Studio テキストが色分け表示メカニズムにも使用できます。 このメカニズムの詳細については、次を参照してください。[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [構文の色分けを実装する](../../extensibility/internals/implementing-syntax-coloring.md)言語サービスの構文の色付けと構文の色分けをサポートするためにどのような言語サービスを実装する必要があります、エディターにアクセスする方法について説明します。
+- [構文の色分け表示の実装](../../extensibility/internals/implementing-syntax-coloring.md)
 
- [方法: 組み込みの配色可能な項目を使用して、](../../extensibility/internals/how-to-use-built-in-colorable-items.md)言語サービスからの組み込みの配色可能な項目を使用する方法を示します。
+ 言語サービスの構文の色分け表示と構文をサポートするために実装の色分けする必要があります、言語サービスはどのようなエディターにアクセスする方法について説明します。
 
- [カスタムの配色可能な項目](../../extensibility/internals/custom-colorable-items.md)カスタムの配色可能な項目を実装する方法について説明します。
+- [方法: 組み込みの配色可能な項目を使用して、](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+
+ 言語サービスからの組み込みの配色可能な項目を使用する方法を示します。
+
+- [カスタムの配色可能な項目](../../extensibility/internals/custom-colorable-items.md)
+
+ カスタムの配色可能な項目を実装する方法について説明します。
 
 ## <a name="see-also"></a>関連項目
 

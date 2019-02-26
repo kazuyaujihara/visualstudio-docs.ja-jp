@@ -1,7 +1,7 @@
 ---
 title: BP_TYPE |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f18d21485084351e639405dad946dff8be4c767a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d2fab9a97ef944b153287a58671193324aecf52c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315977"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711476"
 ---
 # <a name="bptype"></a>BP_TYPE
 ブレークポイントにコードの場所にし、データの場所ですか、別の種類のブレークポイントは、かどうかを指定します。
@@ -44,17 +44,13 @@ public enum enum_BP_TYPE {
 ```
 
 ## <a name="members"></a>メンバー
-BPT_NONE  
-ブレークポイントの種類を指定しません。
+BPT_NONE はブレークポイントの種類を指定しません。
 
-BPT_CODE  
-コードのブレークポイントを指定します。
+BPT_CODE には、コードのブレークポイントを指定します。
 
-BPT_DATA  
-データ ブレークポイントを指定します。
+BPT_DATA では、データ ブレークポイントを指定します。
 
-BPT_SPECIAL  
-ブレークポイントは、コードでもデータ型を指定します。 この型は非推奨し、は使用できません。
+コードでもデータ ブレークポイントは入力 BPT_SPECIAL を指定します。 この型は非推奨し、は使用できません。
 
 ## <a name="remarks"></a>Remarks
 パラメーターとして渡される、 [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)と[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)メソッド。
@@ -67,6 +63,6 @@ BPT_SPECIAL
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)  
-[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
+- [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

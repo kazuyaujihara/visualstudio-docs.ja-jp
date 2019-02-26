@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugThreads2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugThreads2
 helpviewer_keywords:
@@ -12,53 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c21a87d4f6005a2ebf0339d8e4bfd20c6fcef423
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: db9a7eae6a0a37f8bd1f530afe067f4766197591
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917277"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708564"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
-このインターフェイスは、現在のデバッグ セッションで実行中のスレッドを列挙します。  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-IEnumDebugThreads2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デバッグ エンジン (DE) は、プログラム内のスレッドの一覧を表すためには、このインターフェイスを実装します。  
-  
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- 呼び出す[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)プロセスで実行されているすべてのプログラムのすべてのスレッドのリストを表す、このインターフェイスを取得します。 呼び出す[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)プログラムで実行中のスレッドのリストを表す、このインターフェイスを取得します。  
-  
-## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IEnumDebugThreads2`します。  
-  
-|メソッド|説明|  
-|------------|-----------------|  
-|[次へ](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|指定した列挙体シーケンス内のスレッド数を取得します。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|指定する列挙体シーケンス内のスレッド数をスキップします。|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|先頭に、列挙体シーケンスをリセットします。|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|現在のものと同じ列挙状態を格納する列挙子を作成します。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|列挙子では、スレッドの数を取得します。|  
-  
-## <a name="remarks"></a>Remarks  
- Visual Studio が通常を更新するには、このインターフェイスを取得、**スレッド**ウィンドウでもを呼び出すために、リストの最初のスレッドを取得したり[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)、[続行](../../../extensibility/debugger/reference/idebugprocess3-continue.md)と[手順](../../../extensibility/debugger/reference/idebugprocess3-step.md)します。  
-  
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
-  
- 名前空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
- [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)   
- [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)   
- [手順](../../../extensibility/debugger/reference/idebugprocess3-step.md)   
- [続行](../../../extensibility/debugger/reference/idebugprocess3-continue.md)   
- [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)
+このインターフェイスは、現在のデバッグ セッションで実行中のスレッドを列挙します。
+
+## <a name="syntax"></a>構文
+
+```
+IEnumDebugThreads2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>実装についてのメモ
+ デバッグ エンジン (DE) は、プログラム内のスレッドの一覧を表すためには、このインターフェイスを実装します。
+
+## <a name="notes-for-callers"></a>呼び出し元のノート
+ 呼び出す[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)プロセスで実行されているすべてのプログラムのすべてのスレッドのリストを表す、このインターフェイスを取得します。 呼び出す[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)プログラムで実行中のスレッドのリストを表す、このインターフェイスを取得します。
+
+## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
+ 次の表は、メソッドの`IEnumDebugThreads2`します。
+
+|メソッド|説明|
+|------------|-----------------|
+|[次へ](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|指定した列挙体シーケンス内のスレッド数を取得します。|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|指定する列挙体シーケンス内のスレッド数をスキップします。|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|先頭に、列挙体シーケンスをリセットします。|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|現在のものと同じ列挙状態を格納する列挙子を作成します。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|列挙子では、スレッドの数を取得します。|
+
+## <a name="remarks"></a>Remarks
+ Visual Studio が通常を更新するには、このインターフェイスを取得、**スレッド**ウィンドウでもを呼び出すために、リストの最初のスレッドを取得したり[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)、[続行](../../../extensibility/debugger/reference/idebugprocess3-continue.md)と[手順](../../../extensibility/debugger/reference/idebugprocess3-step.md)します。
+
+## <a name="requirements"></a>必要条件
+ ヘッダー: msdbg.h
+
+ 名前空間: Microsoft.VisualStudio.Debugger.Interop
+
+ アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>関連項目
+- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)
+- [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)
+- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+- [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
+- [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)
