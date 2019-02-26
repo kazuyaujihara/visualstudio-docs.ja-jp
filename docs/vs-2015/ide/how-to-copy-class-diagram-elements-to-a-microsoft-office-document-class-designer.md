@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: Microsoft Office ドキュメント (クラス デザイナー) にクラス ダイアグラムの要素のコピー |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

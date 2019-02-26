@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 保存し、エンコードでファイルを開く |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

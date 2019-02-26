@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 表示し、ピークの定義 (Alt + F12) を使用してコードの編集 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

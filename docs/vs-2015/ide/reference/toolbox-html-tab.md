@@ -1,4 +1,4 @@
----
+﻿---
 title: ツールボックス、[HTML] タブ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -94,7 +94,7 @@ ms.locfileid: "54780425"
 <input id="Text1" TYPE="text" value="Text Field" name="Text1">  
 ```  
   
- 詳細については、次を参照してください[HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputText サーバー コントロール宣言構文](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e)、 [TextBox Web サーバー コントロールの概要](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f)、 <xref:System.Web.UI.HtmlControls.HtmlInputText>、と。<xref:System.Web.UI.WebControls.TextBox>.  
+ 詳細については、次を参照してください[HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputText サーバー コントロール宣言構文](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e)、 [TextBox Web サーバー コントロールの概要](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f)、 <xref:System.Web.UI.HtmlControls.HtmlInputText>、と。<xref:System.Web.UI.WebControls.TextBox>  
   
 > [!IMPORTANT]
 >  すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  

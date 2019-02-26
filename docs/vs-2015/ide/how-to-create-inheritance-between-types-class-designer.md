@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 型 (クラス デザイナー) の間の継承の作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
