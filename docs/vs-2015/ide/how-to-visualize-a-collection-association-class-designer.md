@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: コレクションの関連付け (クラス デザイナー) の視覚化 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

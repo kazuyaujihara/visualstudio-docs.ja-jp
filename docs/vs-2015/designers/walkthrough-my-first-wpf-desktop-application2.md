@@ -1,4 +1,4 @@
----
+﻿---
 title: 'チュートリアル: 最初 WPF デスクトップ アプリケーション 2 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

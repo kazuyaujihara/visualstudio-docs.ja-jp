@@ -1,4 +1,4 @@
----
+﻿---
 title: RequireJS 用に IntelliSense をカスタマイズ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

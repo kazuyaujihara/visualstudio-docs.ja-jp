@@ -1,5 +1,5 @@
 ﻿---
-title: 'Office プライマリ相互運用機能アセンブリをインストールする方法'
+title: '方法: Office プライマリ相互運用機能アセンブリをインストールする方法'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,7 +20,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/21/2019
 ms.locfileid: "56623048"
 ---
-# <a name="how-to-install-office-primary-interop-assemblies"></a>Office プライマリ相互運用機能アセンブリをインストールする方法
+# <a name="how-to-install-office-primary-interop-assemblies"></a>方法: Office プライマリ相互運用機能アセンブリをインストールする方法
   Microsoft Office のインストール時に、Office のプライマリ相互運用機能アセンブリ (PIA) をインストールします。
 
 ## <a name="to-install-the-pias-when-you-install-office"></a>Office のインストール時に PIA をインストールするには
@@ -29,7 +29,7 @@ ms.locfileid: "56623048"
 
 2.  Microsoft Office をインストールし、アプリケーションを拡張するための **.NET プログラミング サポート**の機能(この機能は既定のインストールに含まれています)が選択されていることを確認します。
 
-    > [!WARNING]
+    > [!警告]
     >  既定では、PIA はビルドするときにソリューションに埋め込まれるので、VSTO アドインまたはカスタマイズを使用する前提条件として PIA をユーザーに配布する必要はありません。
 
 ## <a name="see-also"></a>関連項目

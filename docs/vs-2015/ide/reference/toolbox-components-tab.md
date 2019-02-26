@@ -1,4 +1,4 @@
----
+﻿---
 title: ツールボックス、[コンポーネント] タブ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -24,7 +24,7 @@ ms.locfileid: "54775889"
   
 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] および [!INCLUDE[csprcs](../../includes/csprcs-md.md)] のデザイナーに追加できるコンポーネントを表示します。 <xref:System.Messaging.MessageQueue> コンポーネントや <xref:System.Diagnostics.EventLog> コンポーネントなど、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] に含まれている [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] コンポーネントに加え、独自のコンポーネントまたはサード パーティ製のコンポーネントをこのタブに追加できます。詳細については、「[How to: Manipulate Toolbox Tabs](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)」 (方法: [ツールボックス] タブの操作) を参照してください。  
   
- このタブを表示するには、[**表示**] メニューで [**ツールボックス**] を選択します。 **ツールボックス**で、[**コンポーネント**] タブをクリックします。  
+ このタブを表示するには、**[表示]** メニューで **[ツールボックス]** を選択します。 **ツールボックス**で、**[コンポーネント]** タブをクリックします。  
   
  **BackgroundWorker**  
  別の専用スレッドで操作を実行できる `System.ComponentModel.BackgroundWorker` コンポーネント インスタンスを作成します。  

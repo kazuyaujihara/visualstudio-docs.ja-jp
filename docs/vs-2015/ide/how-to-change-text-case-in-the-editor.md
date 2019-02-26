@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: エディターでテキストの大文字小文字を変更 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

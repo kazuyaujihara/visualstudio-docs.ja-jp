@@ -1,4 +1,4 @@
----
+﻿---
 title: '[拡張機能と更新プログラム]([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

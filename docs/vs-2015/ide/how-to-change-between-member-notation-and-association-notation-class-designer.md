@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: メンバー表記と関連付け表記 (クラス デザイナー) の間の変更 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
