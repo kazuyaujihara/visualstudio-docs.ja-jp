@@ -568,6 +568,6 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
  Azure Mobile Services を使用して、既存の SQL データベースや他のデータ ソースに接続することができます。 「 [Mobile Services のドキュメント](http://azure.microsoft.com/services/app-service/mobile/)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [チュートリアル: 初めての WPF デスクトップ アプリケーション](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
  [Windows Presentation Foundation での最新のデスクトップ アプリケーションの作成](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
