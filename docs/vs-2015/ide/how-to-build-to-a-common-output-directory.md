@@ -35,6 +35,6 @@ ms.locfileid: "54805433"
   
 4.  ソリューションのすべてのプロジェクトに対して、手順 1 から 3 を繰り返します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)   
  [方法 : ビルド出力ディレクトリを変更する](../ide/how-to-change-the-build-output-directory.md)

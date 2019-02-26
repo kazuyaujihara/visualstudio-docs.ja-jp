@@ -65,7 +65,7 @@ Visual Studio のコード エディターは、さまざまな表示モード�
     > [!NOTE]
     >  **列の選択**モードで**仮想空白文字**が有効になります。 **仮想空白**モードを有効にしないと、挿入ポイントは行の末尾から次の行の先頭文字に直接移動します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [エディターのカスタマイズ](../ide/customizing-the-editor.md)   
  [方法 : ウィンドウを整列およびドッキングする](../misc/how-to-arrange-and-dock-windows.md)   
  [[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

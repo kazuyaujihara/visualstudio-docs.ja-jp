@@ -36,7 +36,7 @@ ms.locfileid: "54804820"
  [方法 : エディター モードを管理する](../ide/how-to-manage-editor-modes.md)  
  全画面表示および仮想空白モードの使用方法について説明します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コードの作成](../ide/writing-code-in-the-code-and-text-editor.md)   
  [コードへのブックマークの設定](../ide/setting-bookmarks-in-code.md)   
  [[全般]、[環境]、[オプション] ダイアログ ボックス](../ide/reference/general-environment-options-dialog-box.md)   

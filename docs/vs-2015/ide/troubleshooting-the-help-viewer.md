@@ -49,5 +49,5 @@ ms.locfileid: "54774602"
   
 - 詳細については、[Developer Documentation and Help System](http://go.microsoft.com/fwlink/?LinkId=232741) (デベロッパー ドキュメントおよびヘルプ システム) フォーラムおよび [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743) (ヘルプ ガイ) ブログを参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ヘルプ ビューアー 2.1 の管理者ガイド](http://go.microsoft.com/fwlink/?LinkId=243985)

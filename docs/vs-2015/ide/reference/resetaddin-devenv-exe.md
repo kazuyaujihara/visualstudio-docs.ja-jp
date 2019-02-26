@@ -46,6 +46,6 @@ Devenv /ResetAddin AddIn
 Devenv.exe /ResetAddin MyAddin.Connect.MyAddin  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

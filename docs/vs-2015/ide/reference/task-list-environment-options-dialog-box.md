@@ -74,7 +74,7 @@ ms.locfileid: "54795485"
 > [!NOTE]
 >  既定のコメント トークンの名前変更や削除はできませんが、優先順位は変更できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [タスク一覧の使用](../../ide/using-the-task-list.md)   
  [コードへのブックマークの設定](../../ide/setting-bookmarks-in-code.md)   
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)

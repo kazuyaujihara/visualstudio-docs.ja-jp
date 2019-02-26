@@ -59,5 +59,5 @@ Visual Studio 2013 Update 4 以降では、人気のある RequireJS JavaScript 
   
  JSProj プロジェクト ファイルでは、ASP.NET プロジェクトに必要なカスタマイズの手順は必要ありません。 つまり、require.js を参照する script タグの `data-main` 属性で使用されているスクリプト ファイルが自動的に読み込まれて require.js が構成されます。 require.js を参照する、HTML ファイルは、アプリケーションのスタート ページとしても使用されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)

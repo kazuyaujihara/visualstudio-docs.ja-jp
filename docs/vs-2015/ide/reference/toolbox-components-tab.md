@@ -24,7 +24,7 @@ ms.locfileid: "54775889"
   
 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] および [!INCLUDE[csprcs](../../includes/csprcs-md.md)] のデザイナーに追加できるコンポーネントを表示します。 <xref:System.Messaging.MessageQueue> コンポーネントや <xref:System.Diagnostics.EventLog> コンポーネントなど、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] に含まれている [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] コンポーネントに加え、独自のコンポーネントまたはサード パーティ製のコンポーネントをこのタブに追加できます。詳細については、「[How to: Manipulate Toolbox Tabs](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)」 (方法: [ツールボックス] タブの操作) を参照してください。  
   
- このタブを表示するには、[**表示**] メニューで [**ツールボックス**] を選択します。 **ツールボックス**で、[**コンポーネント**] タブをクリックします。  
+ このタブを表示するには、**[表示]** メニューで **[ツールボックス]** を選択します。 **ツールボックス**で、**[コンポーネント]** タブをクリックします。  
   
  **BackgroundWorker**  
  別の専用スレッドで操作を実行できる `System.ComponentModel.BackgroundWorker` コンポーネント インスタンスを作成します。  
@@ -71,7 +71,7 @@ ms.locfileid: "54775889"
 > [!NOTE]
 >  **ツールボックス**に追加できるシステム ベースの <xref:System.Timers.Timer> もあります。この <xref:System.Timers.Timer> は、サーバー アプリケーション用に最適化され、Windows フォーム <xref:System.Windows.Forms.Timer> は Windows フォームで使用するのに最も適しています。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コンポーネントによるプログラミング](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)   
  [コンポーネント プログラミングのチュートリアル](http://msdn.microsoft.com/library/373cacf7-479e-4b05-991c-5cb18824e913)   
  [ツールボックス](../../ide/reference/toolbox.md)   

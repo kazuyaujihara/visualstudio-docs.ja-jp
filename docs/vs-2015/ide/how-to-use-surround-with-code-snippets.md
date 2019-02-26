@@ -58,6 +58,6 @@ ms.locfileid: "54799059"
   
      または、コード スニペットの名前を入力し、Tab キーまたは Enter キーを押します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Visual C# のコード スニペット](../ide/visual-csharp-code-snippets.md)   
  [コード スニペット ピッカー](../ide/reference/code-snippet-picker.md)

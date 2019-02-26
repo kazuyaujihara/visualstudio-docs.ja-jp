@@ -28,5 +28,5 @@ ms.locfileid: "54767087"
 |[方法: LinqToXmlDataBinding という例をビルドして実行する](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|この例の Visual Studio プロジェクトを作成、設定、およびビルドするための手順について説明します。|  
 |[チュートリアル: LinqToXmlDataBinding の例](../designers/walkthrough-linqtoxmldatabinding-example.md)|プロジェクトのプライマリ ソース ファイルを示し、このコード内で LINQ to XML がどのようにデータ バインディングに使用されているかについて説明します。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [LINQ to XML による WPF のデータ バインディング](../designers/wpf-data-binding-with-linq-to-xml.md)

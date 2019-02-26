@@ -60,6 +60,6 @@ ms.locfileid: "54764979"
   
      たとえば、入力した場合動名詞"building"試行「作成」代わりにします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [フルテキスト検索のヒント](../ide/full-text-search-tips.md)   
  [情報の検索](../ide/locate-information.md)

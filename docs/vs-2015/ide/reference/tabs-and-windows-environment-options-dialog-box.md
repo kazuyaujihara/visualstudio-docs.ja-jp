@@ -24,5 +24,5 @@ ms.locfileid: "54803211"
   
 このページを使用して、エディター ウィンドウでのタブ付きウィンドウの動作およびツール ウィンドウの動作に関するオプションを設定します。 詳細については、「[方法: ウィンドウを整列およびドッキングする](../../misc/how-to-arrange-and-dock-windows.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)

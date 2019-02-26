@@ -53,6 +53,6 @@ devenv SolutionFile | ProjectFile /upgrade
 devenv "MyProject.sln" /upgrade  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: Visual Studio プロジェクトのアップグレードが成功しなかった場合のトラブルシューティング](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
  [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

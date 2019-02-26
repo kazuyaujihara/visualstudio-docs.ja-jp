@@ -65,7 +65,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 r /Display Flags  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [デバッグの基礎 : [レジスタ] ウィンドウ](../../debugger/debugging-basics-registers-window.md)   
  [方法: [レジスタ] ウィンドウを使用する](../../debugger/how-to-use-the-registers-window.md)

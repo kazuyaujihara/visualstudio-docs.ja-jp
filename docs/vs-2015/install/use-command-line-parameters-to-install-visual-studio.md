@@ -61,5 +61,5 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 |**/u**<br /><br /> **/Uninstall**|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]をアンインストールします。|
 |**/Uninstall/Force**<br /><br /> **/u/force**|Visual Studio および他の製品と共有するすべての機能をアンインストールします。 **警告:** このパラメーターを使用する場合、同じコンピューターにインストールされているその他の製品が正しく機能しているを停止する可能性があります。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio 管理者ガイド](../install/visual-studio-administrator-guide.md)

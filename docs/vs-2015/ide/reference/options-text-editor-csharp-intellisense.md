@@ -30,7 +30,7 @@ ms.locfileid: "54793191"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-Visual C# での IntelliSense の動作設定を変更するには、[**IntelliSense**] プロパティ ページを使用します。 [**IntelliSense**] プロパティ ページにアクセスするには、[**ツール**] メニューの [**オプション**] をクリックして、[**テキスト エディター**] フォルダーで [**C#**] をクリックし、[**IntelliSense**] をクリックします。  
+Visual C# での IntelliSense の動作設定を変更するには、**[IntelliSense]** プロパティ ページを使用します。 **[IntelliSense]** プロパティ ページにアクセスするには、**[ツール]** メニューの **[オプション]** をクリックして、**[テキスト エディター]** フォルダーで **[C#]** をクリックし、**[IntelliSense]** をクリックします。  
   
 > [!NOTE]
 >  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
@@ -39,7 +39,7 @@ Visual C# での IntelliSense の動作設定を変更するには、[**IntelliS
   
 ## <a name="completion-lists"></a>入力候補一覧  
  **文字が入力された後に入力候補一覧を表示する**  
- このオプションを選択すると、入力を開始したときに IntelliSense によって入力候補一覧が自動的に表示されます。 このオプションを選択しない場合でも、IntelliSense の入力候補は [**IntelliSense**] メニューから、または CTRL キーを押しながら SPACE キーを押して使用できます。  
+ このオプションを選択すると、入力を開始したときに IntelliSense によって入力候補一覧が自動的に表示されます。 このオプションを選択しない場合でも、IntelliSense の入力候補は **[IntelliSense]** メニューから、または CTRL キーを押しながら SPACE キーを押して使用できます。  
   
  **入力候補一覧にキーワードを配置する**  
  このオプションを選択すると、IntelliSense によって C# キーワード ([class](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690) など) が入力候補一覧に追加されます。  
@@ -71,7 +71,7 @@ Visual C# での IntelliSense の動作設定を変更するには、[**IntelliS
  **最近使用されたメンバーをあらかじめ選択する**  
  このオプションを選択すると、統合開発環境 (IDE) での現在のセッション中に、オブジェクト名の自動補完のために、ポップアップ メンバーの一覧ボックスで最近選択したメンバーが IntelliSense によってあらかじめ選択されます。 最近使用したメンバーの履歴は、IDE の各セッションの間に消去されます。 詳細については、「[最近使用されたメンバーに対する IntelliSense](../../misc/intellisense-for-most-recently-used-members.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)   
  [XML ドキュメント コメント](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [IntelliSense の使用](../../ide/using-intellisense.md)

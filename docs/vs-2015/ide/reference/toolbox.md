@@ -51,5 +51,5 @@ ms.locfileid: "54799799"
   
 -   [ツールボックス、[HTML] タブ](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ツールボックスの使用](../../ide/using-the-toolbox.md)

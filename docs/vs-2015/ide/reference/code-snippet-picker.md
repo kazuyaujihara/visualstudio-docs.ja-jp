@@ -55,7 +55,7 @@ ms.locfileid: "54789836"
  項目一覧  
  挿入に使用できるコード スニペットの一覧、またはコード スニペットを含むフォルダーの一覧です。 スニペットを挿入またはフォルダーを展開するには、目的の項目を選択して Enter キーを押します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コード スニペットを使用するためのベスト プラクティス](../../ide/best-practices-for-using-code-snippets.md)   
  [Visual Basic の IntelliSense コード スニペット](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [コードへのブックマークの設定](../../ide/setting-bookmarks-in-code.md)   

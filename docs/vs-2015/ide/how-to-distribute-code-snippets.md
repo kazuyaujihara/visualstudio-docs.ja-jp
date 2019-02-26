@@ -102,5 +102,5 @@ ms.locfileid: "54799033"
     Console.WriteLine("Hello, World!")  
     ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コード スニペット](../ide/code-snippets.md)

@@ -545,6 +545,6 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
      ![IntelliSense の結果をオーバーライドする例](../ide/media/js-intellisense-override-fixed.png "js_intellisense_override_fixed")  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [識別子の入力候補](../ide/statement-completion-for-identifiers.md)

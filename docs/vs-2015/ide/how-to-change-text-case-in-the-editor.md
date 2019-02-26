@@ -44,7 +44,7 @@ ms.locfileid: "54799744"
     > [!TIP]
     >  大文字/小文字の書式設定を元に戻すには、**[編集]** メニューの **[元に戻す]** を選択します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [エディターのカスタマイズ](../ide/customizing-the-editor.md)   
  [[テキスト エディター] ([オプション] ダイアログ ボックス)](../ide/reference/text-editor-options-dialog-box.md)   
  [コードの作成](../ide/writing-code-in-the-code-and-text-editor.md)

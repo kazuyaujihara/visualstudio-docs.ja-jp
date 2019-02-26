@@ -46,5 +46,5 @@ ms.locfileid: "54787735"
 ### <a name="show-all-settings"></a>すべての設定を表示
  **[すべての設定を表示]** のオンまたはオフの操作は、**[OK]** をクリックしていなくても、**[オプション]** ダイアログ ボックスで行ったすべての変更に適用されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [エディターのカスタマイズ](../../ide/customizing-the-editor.md)

@@ -194,6 +194,6 @@ ms.locfileid: "54799178"
 |[Visual Studio Image Library](../designers/the-visual-studio-image-library.md)|Visual Studio アプリケーションで使用できるグラフィックスをインストールする方法について説明します。|
 |[Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md)|情報と Visual Studio をより効果的に使用するのに役立つリンクが含まれています。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio へのサインイン](../ide/signing-in-to-visual-studio.md)

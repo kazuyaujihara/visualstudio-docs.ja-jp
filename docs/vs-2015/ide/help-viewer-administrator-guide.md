@@ -201,6 +201,6 @@ ms.locfileid: "54799706"
   
 3.  ヘルプ コンテンツをインストールするローカル コンピューターで、bat ファイルを実行します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ヘルプ コンテンツ マネージャーのコマンドライン引数](../ide/command-line-arguments-for-the-help-content-manager.md)   
  [ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)

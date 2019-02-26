@@ -55,6 +55,6 @@ Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 Debug.SymbolPath  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)

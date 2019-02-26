@@ -36,7 +36,7 @@ Visual Studio のホスト プロセスは、デバッグのパフォーマン�
 ## <a name="design-time-expression-evaluation"></a>デザイン時の式評価  
  デザイン時の式評価を使うと、**[イミディエイト]** ウィンドウからコードをテストすることができ、アプリケーションを実行する必要がありません。 ホスト プロセスは、デザイン時の式評価の間にこのコードを実行します。 詳しくは、「[イミディエイト ウィンドウ](../ide/reference/immediate-window.md)」をご覧ください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [プロセスのデバッグとホスト](../debugger/debugging-and-the-hosting-process.md)   
  [方法 : ホスト プロセスを無効にする](../ide/how-to-disable-the-hosting-process.md)   
  [イミディエイト ウィンドウ](../ide/reference/immediate-window.md)   

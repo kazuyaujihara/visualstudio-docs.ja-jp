@@ -61,5 +61,5 @@ ms.locfileid: "54773337"
   
  [Unicode](http://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ソリューションおよびプロジェクト](../../ide/solutions-and-projects-in-visual-studio.md)

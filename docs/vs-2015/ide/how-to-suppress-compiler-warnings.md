@@ -106,7 +106,7 @@ ms.locfileid: "54782088"
   
    詳しくは、「[/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)」をご覧ください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [チュートリアル: アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)   
  [方法: ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)   
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

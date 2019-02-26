@@ -46,7 +46,7 @@ Debug.Watch[index]
 >Debug.Watch1  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [[自動変数] ウィンドウと [ローカル] ウィンドウ](../../debugger/autos-and-locals-windows.md)   
  [方法: [変数] ウィンドウで値を編集する](http://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)   
  [方法: [クイック ウォッチ] ダイアログ ボックスを使用する](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   

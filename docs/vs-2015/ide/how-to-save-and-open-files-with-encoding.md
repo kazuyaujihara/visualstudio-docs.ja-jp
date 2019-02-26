@@ -58,6 +58,6 @@ ms.locfileid: "54799017"
   
 3.  前の手順の 2. と 3. を実行します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [エンコード方式および Windows フォームのグローバリゼーション](http://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
  [アプリケーションのグローバライズとローカライズ](../ide/globalizing-and-localizing-applications.md)

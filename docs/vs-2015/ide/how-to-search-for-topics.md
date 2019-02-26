@@ -42,7 +42,7 @@ ms.locfileid: "54799081"
   
 4.  トピックを表示するには、結果リストからそのタイトルを選択します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [フルテキスト検索のヒント](../ide/full-text-search-tips.md)   
  [検索式の論理演算子](../ide/logical-operators-in-search-expressions.md)   
  [検索式の高度な検索演算子](../ide/advanced-search-operators-in-search-expressions.md)   

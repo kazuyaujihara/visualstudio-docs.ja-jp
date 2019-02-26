@@ -42,6 +42,6 @@ ms.locfileid: "54756759"
   
    **[イメージのコピー]** の代わりに **[コピー]** を選択することもできます。 **[コピー]** は、イメージを通常のビットマップとしてコピーします。 **[イメージのコピー]** は、イメージをベクター ベースのイメージとしてコピーするので、ほとんどの Office アプリケーションにとってはこちらが向いています。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: クラス ダイアグラムを印刷する (クラス デザイナー)](../ide/how-to-print-class-diagrams-class-designer.md)   
  [方法: クラス ダイアグラムをイメージとしてエクスポートする (クラス デザイナー)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
