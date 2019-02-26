@@ -80,6 +80,6 @@ ms.locfileid: "54802161"
 |---------------------|--------------|  
 |`MySourceItemsWithMetadata`|`file1.resx` (`MyMetadata="Hello"`)<br /><br /> `file2.resx` (`MyMetadata="Hello"`)|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)
