@@ -1,4 +1,4 @@
----
+﻿---
 title: '[フォントおよび色] ノード プロパティ ([オプション] ページ) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -44,7 +44,7 @@ ms.locfileid: "54791536"
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|<xref:EnvDTE.vsFontCharSet> の値。ヘブライ語やロシア語など、使用する文字セットの種類を指定します。|  
 |FontSize|Get/Set (Short)|使用するフォントのサイズ (ポイント単位)。 例: 10 や 12 など。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [オプション設定の制御](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [オプション ページにあるプロパティ項目名の確認](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [[環境] ノード プロパティ ([オプション] ページ)](../../ide/reference/options-page-environment-node-properties.md)   

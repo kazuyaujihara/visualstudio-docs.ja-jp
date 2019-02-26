@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 既存の型 (クラス デザイナー) の表示 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -65,7 +65,7 @@ ms.locfileid: "54758144"
   
      自動設定されたクラス ダイアグラムが作成されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [方法: 型の間の継承を表示する (クラス デザイナー)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [方法: クラス ダイアグラムをカスタマイズする (クラス デザイナー)](../ide/how-to-customize-class-diagrams-class-designer.md)   
  [型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)

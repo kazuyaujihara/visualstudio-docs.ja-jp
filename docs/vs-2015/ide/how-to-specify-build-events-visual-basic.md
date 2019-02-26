@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: ビルド イベント (Visual Basic) の指定 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -164,7 +164,7 @@ Visual Basic のビルド イベントを使用して、コンパイル処理の
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />  
     ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [コンパイル プロパティの管理](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [[発行] ページ (プロジェクト デザイナー)](../ide/reference/publish-page-project-designer.md)   

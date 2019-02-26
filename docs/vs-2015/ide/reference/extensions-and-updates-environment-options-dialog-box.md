@@ -1,4 +1,4 @@
----
+﻿---
 title: '[拡張機能と更新プログラム]([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -36,5 +36,5 @@ ms.locfileid: "54756336"
 ### <a name="additional-extension-galleries"></a>その他の拡張機能のギャラリー  
  専用拡張機能のギャラリーのサポートを有効にするエンタープライズ機能です。 詳細については、「[プライベート ギャラリー](../../extensibility/private-galleries.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)

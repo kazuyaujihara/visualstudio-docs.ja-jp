@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetNameFromToken |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetNameFromToken
 - GetNameFromToken
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f9a07b7c6e1abcf8bf63fb8f6bd61ec82d7e9b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 6122e134fda4b7704385609fec8fa7cd25665968
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413411"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682532"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
 特定のメタデータ オブジェクトの指定したトークンに関連付けられた名前を返します。
@@ -40,14 +40,17 @@ int GetNameFromToken (
 ```
 
 #### <a name="parameters"></a>パラメーター
-`pMetadataImport`  
-[in]メタデータ情報を含むオブジェクト。
+`pMetadataImport`
 
-`dwToken`  
-[in]名前を指定するトークンです。
+ [in]メタデータ情報を含むオブジェクト。
 
-`pbstrName`  
-[out]トークンに対応する名前です。
+`dwToken`
+
+ [in]名前を指定するトークンです。
+
+`pbstrName`
+
+ [out]トークンに対応する名前です。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -120,4 +123,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

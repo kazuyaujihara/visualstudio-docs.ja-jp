@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery::GetCustomAttributeByName |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb887a7d8e164616a987e475e4617e9ea88f90bf
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413424"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56725022"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 指定した名前のカスタム属性を取得します。
@@ -40,14 +40,17 @@ int GetCustomAttributeByName(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`pszCustomAttributeName`  
-[in]カスタム属性の名前。
+`pszCustomAttributeName`
 
-`ppBlob`  
+ [in]カスタム属性の名前。
+
+`ppBlob`
+
 [入力、出力]カスタム属性データを含むバイト配列。
 
-`pdwLen`  
-[out]長のバイト単位、`ppBlob`パラメーター。
+`pdwLen`
+
+ [out]長のバイト単位、`ppBlob`パラメーター。
 
 ## <a name="return-value"></a>戻り値
 正常に終了した場合は、`S_OK` を返します。 カスタム属性が存在しない場合は、返す`S_FALSE`します。 それ以外の場合はエラー コードを返します。
@@ -91,4 +94,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

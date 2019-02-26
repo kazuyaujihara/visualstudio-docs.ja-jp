@@ -14,75 +14,73 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6af40c2af3a16f313ea9eac496198562c7678165
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4477d5ff193df40eaf84175b09b5e28a521f72c7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960010"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696338"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 要素 (Visual Studio テンプレート)
-いずれかに表示される、同じカテゴリ内の他のテンプレート間で、テンプレートの配置に使用する値を指定します、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<SortOrder>  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-<SortOrder> ... </SortOrder>  
-```  
-  
-## <a name="attributes-and-elements"></a>属性および要素  
- 以降のセクションでは、属性、子要素、および親要素について説明します。  
-  
-### <a name="attributes"></a>属性  
- なし。  
-  
-### <a name="child-elements"></a>子要素  
- なし。  
-  
-### <a name="parent-elements"></a>親要素  
-  
-|要素|説明|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートをカテゴリに分類し、 **[新しいプロジェクト]** ダイアログ ボックス、または **[新しい項目の追加]** ダイアログ ボックスでどのように表示させるかを定義します。|  
-  
-## <a name="text-value"></a>テキスト値  
- テキスト値が必要です。  
-  
- `integer`並べ替え順序の値を表します。  
-  
-## <a name="remarks"></a>Remarks  
- `SortOrder` は、省略可能な要素です。 既定値は 100、およびすべての値は 10 の倍数である必要があります。  
-  
- `SortOrder`ユーザーが作成したテンプレートの要素は無視されます。 すべてのユーザーが作成したテンプレートは、アルファベット順に並べ替えられます。  
-  
- いずれかで、低の並べ替え順序の値を持つテンプレートが表示されます、**新しいプロジェクト**または**新しい項目の追加**高の並べ替え順序の値を持つテンプレートの前に ダイアログ ボックス。  
-  
-## <a name="example"></a>例  
- 次の例では、標準のメタデータ[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]クラス テンプレートです。  
-  
-```  
-<VSTemplate Type="Item" Version="3.0.0"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>MyClass</Name>  
-        <Description>My custom C# class template.</Description>  
-        <Icon>Icon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-        <SortOrder>290</SortOrder>  
-        <DefaultName>MyClass</DefaultName>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectItem>MyClass.cs</ProjectItem>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
- この例で、`SortOrder`要素が比較的高い。 可能性がありますの他の[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]項目テンプレートには、`SortOrder`よりも小さい値`290`と前にこのテンプレートに表示されます、**新しい項目の** ダイアログ ボックス。  
-  
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+いずれかに表示される、同じカテゴリ内の他のテンプレート間で、テンプレートの配置に使用する値を指定します、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。
+
+ \<VSTemplate > \<TemplateData > \<SortOrder >
+
+## <a name="syntax"></a>構文
+
+```
+<SortOrder> ... </SortOrder>
+```
+
+## <a name="attributes-and-elements"></a>属性および要素
+ 以降のセクションでは、属性、子要素、および親要素について説明します。
+
+### <a name="attributes"></a>属性
+ なし。
+
+### <a name="child-elements"></a>子要素
+ なし。
+
+### <a name="parent-elements"></a>親要素
+
+|要素|説明|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートをカテゴリに分類し、 **[新しいプロジェクト]** ダイアログ ボックス、または **[新しい項目の追加]** ダイアログ ボックスでどのように表示させるかを定義します。|
+
+## <a name="text-value"></a>テキスト値
+ テキスト値が必要です。
+
+ `integer`並べ替え順序の値を表します。
+
+## <a name="remarks"></a>Remarks
+ `SortOrder` は、省略可能な要素です。 既定値は 100、およびすべての値は 10 の倍数である必要があります。
+
+ `SortOrder`ユーザーが作成したテンプレートの要素は無視されます。 すべてのユーザーが作成したテンプレートは、アルファベット順に並べ替えられます。
+
+ いずれかで、低の並べ替え順序の値を持つテンプレートが表示されます、**新しいプロジェクト**または**新しい項目の追加**高の並べ替え順序の値を持つテンプレートの前に ダイアログ ボックス。
+
+## <a name="example"></a>例
+ 次の例では、標準のメタデータ[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]クラス テンプレートです。
+
+```
+<VSTemplate Type="Item" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>MyClass</Name>
+        <Description>My custom C# class template.</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <SortOrder>290</SortOrder>
+        <DefaultName>MyClass</DefaultName>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectItem>MyClass.cs</ProjectItem>
+    </TemplateContent>
+</VSTemplate>
+```
+
+ この例で、`SortOrder`要素が比較的高い。 可能性がありますの他の[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]項目テンプレートには、`SortOrder`よりも小さい値`290`と前にこのテンプレートに表示されます、**新しい項目の** ダイアログ ボックス。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

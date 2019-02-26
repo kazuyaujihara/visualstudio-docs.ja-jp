@@ -18,7 +18,7 @@ ms.workload:
 - uwp
 ms.openlocfilehash: 02203ba84ee2d394ca9b714d74f607480ba68460
 ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/13/2019
 ms.locfileid: "56227814"

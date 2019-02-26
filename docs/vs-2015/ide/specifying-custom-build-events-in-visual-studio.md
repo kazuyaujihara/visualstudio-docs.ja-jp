@@ -55,5 +55,5 @@ ms.locfileid: "54775847"
     > [!NOTE]
     >  上記のコードの `%I` は、バッチ スクリプトでは `%%I` になります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)[ビルド前のコマンド ラインダイアログ ボックスのビルド後イベント](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild の特殊文字](../msbuild/msbuild-special-characters.md)[チュートリアル。アプリケーションをビルドするを参照してください](../ide/walkthrough-building-an-application.md)

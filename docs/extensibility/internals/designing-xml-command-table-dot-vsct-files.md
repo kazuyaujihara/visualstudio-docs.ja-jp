@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68647dbcbeaedd8ce3a6a493b685142434eec2c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923095"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641547"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML コマンド テーブル (.vsct) ファイルを設計します。
 XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマンドの項目の外観とレイアウトについて説明します。 コマンドの項目には、ボタン、コンボ ボックス、メニューのツールバー、およびコマンドのアイテムのグループが含まれます。 この記事では、XML コマンド テーブルのファイル、コマンドの項目、メニューの影響、およびそれらを作成する方法について説明します。
@@ -61,7 +61,7 @@ XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマン
 - キー バインド:エミュレーターを指定する必要がなくなりました。 いずれかを指定して、コンパイラ、エディターと、エミュレーターは、同じであると想定されます。
 
 - Keychord:Keychord が削除されました。 新しい形式は *、Key1、Mod1、Key2 Mod2*します。  文字、16 進数、または VK 定数のいずれかを指定することができます。
-       
+
 新しいコンパイラで*vsct.exe*、両方のコンパイル *.ctc*と *.vsct*ファイル。 古い*ctc.exe*ただし、コンパイラが認識またはコンパイル *.vsct*ファイル。
 
 使用することができます、 *vsct.exe*既存を変換するコンパイラ *.cto*ファイルを *.vsct*ファイル。 詳細については、「[方法 :既存の .cto ファイルから .vsct ファイルを作成](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)です。
@@ -69,31 +69,31 @@ XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマン
 ## <a name="the-vsct-file-elements"></a>.Vsct ファイルの要素
  コマンド テーブルには、次の階層と要素があります。
 
- [CommandTable 要素](../../extensibility/commandtable-element.md):すべてのコマンド、メニュー グループ、および VSPackage に関連付けられているメニューを表します。
+- [CommandTable 要素](../../extensibility/commandtable-element.md):すべてのコマンド、メニュー グループ、および VSPackage に関連付けられているメニューを表します。
 
- [Extern 要素](../../extensibility/extern-element.md):マージする任意の外部の .h ファイルを参照、 *.vsct*ファイル。
+- [Extern 要素](../../extensibility/extern-element.md):マージする任意の外部の .h ファイルを参照、 *.vsct*ファイル。
 
- [要素を含める](../../extensibility/include-element.md):参照と共にコンパイルする追加のヘッダー (.h) ファイル、 *.vsct*ファイル。 A *.vsct*ファイルを含めることができます *.h*コマンド、メニュー グループ、およびメニュー IDE または別の VSPackage を提供するを定義する定数を含むファイル。
+- [要素を含める](../../extensibility/include-element.md):参照と共にコンパイルする追加のヘッダー (.h) ファイル、 *.vsct*ファイル。 A *.vsct*ファイルを含めることができます *.h*コマンド、メニュー グループ、およびメニュー IDE または別の VSPackage を提供するを定義する定数を含むファイル。
 
- [Commands 要素](../../extensibility/commands-element.md):すべての実行可能な個々 のコマンドを表します。 各コマンドには、次の 4 つの子要素があります。
+- [Commands 要素](../../extensibility/commands-element.md):すべての実行可能な個々 のコマンドを表します。 各コマンドには、次の 4 つの子要素があります。
 
- [Menus 要素](../../extensibility/menus-element.md):すべてのメニューとツールバー、VSPackage で表します。 メニューは、コマンドのグループのコンテナーです。
+- [Menus 要素](../../extensibility/menus-element.md):すべてのメニューとツールバー、VSPackage で表します。 メニューは、コマンドのグループのコンテナーです。
 
- [Groups 要素](../../extensibility/groups-element.md):すべての VSPackage でグループを表します。 グループは、個々 のコマンドのコレクションです。
+- [Groups 要素](../../extensibility/groups-element.md):すべての VSPackage でグループを表します。 グループは、個々 のコマンドのコレクションです。
 
- [Buttons 要素](../../extensibility/buttons-element.md):すべてのコマンド ボタンと、VSPackage でのメニュー項目を表します。 ボタンは、コマンドに関連付けることができるビジュアル コントロールです。
+- [Buttons 要素](../../extensibility/buttons-element.md):すべてのコマンド ボタンと、VSPackage でのメニュー項目を表します。 ボタンは、コマンドに関連付けることができるビジュアル コントロールです。
 
- [Bitmaps 要素](../../extensibility/bitmaps-element.md):VSPackage で、ボタンのすべてのビットマップのすべてを表します。 ビットマップは、または、コンテキストに応じて、コマンド ボタンの横に表示される画像です。
+- [Bitmaps 要素](../../extensibility/bitmaps-element.md):VSPackage で、ボタンのすべてのビットマップのすべてを表します。 ビットマップは、または、コンテキストに応じて、コマンド ボタンの横に表示される画像です。
 
- [CommandPlacements 要素](../../extensibility/commandplacements-element.md):個々 のコマンドを VSPackage のメニューに配置する必要があります、その他の場所を示します。
+- [CommandPlacements 要素](../../extensibility/commandplacements-element.md):個々 のコマンドを VSPackage のメニューに配置する必要があります、その他の場所を示します。
 
- [VisibilityConstraints 要素](../../extensibility/visibilityconstraints-element.md):時間、または特定のダイアログ ボックスまたはウィンドウが表示される場合など、特定のコンテキストでのみコマンドがまったく表示かどうかを指定します。 メニューとコマンドをこの要素の値を持つ、指定したコンテキストがアクティブな場合にのみが表示されます。 既定の動作では、常に、コマンドが表示されます。
+- [VisibilityConstraints 要素](../../extensibility/visibilityconstraints-element.md):時間、または特定のダイアログ ボックスまたはウィンドウが表示される場合など、特定のコンテキストでのみコマンドがまったく表示かどうかを指定します。 メニューとコマンドをこの要素の値を持つ、指定したコンテキストがアクティブな場合にのみが表示されます。 既定の動作では、常に、コマンドが表示されます。
 
- [KeyBindings 要素](../../extensibility/keybindings-element.md):コマンドの任意のキー バインドを指定します。 つまり、1 つまたは複数のキーの組み合わせなど、コマンドを実行する押す必要がある**Ctrl**+**S**します。
+- [KeyBindings 要素](../../extensibility/keybindings-element.md):コマンドの任意のキー バインドを指定します。 つまり、1 つまたは複数のキーの組み合わせなど、コマンドを実行する押す必要がある**Ctrl**+**S**します。
 
- [UsedCommands 要素](../../extensibility/usedcommands-element.md):通知、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境が、現在の VSPackage がアクティブなときに、その他のコードで指定されたコマンドが実装されていることコマンドの実装を提供します。
+- [UsedCommands 要素](../../extensibility/usedcommands-element.md):通知、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境が、現在の VSPackage がアクティブなときに、その他のコードで指定されたコマンドが実装されていることコマンドの実装を提供します。
 
- [Symbols 要素](../../extensibility/symbols-element.md):シンボルの名前とすべてのパッケージにコマンドの GUID Id が含まれています。
+- [Symbols 要素](../../extensibility/symbols-element.md):シンボルの名前とすべてのパッケージにコマンドの GUID Id が含まれています。
 
 ## <a name="vsct-file-design-guidelines"></a>.vsct ファイルのデザイン ガイドライン
  正常に設計、 *.vsct*ファイルで、これらのガイドラインに従ってください。
@@ -122,4 +122,4 @@ XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマン
  コマンドを使用してツールを実行**CreateExpInstance/Reset**します。 実験用ハイブから削除しますこのツールが、通常にインストールされているすべての登録されている Vspackage を使用することに注意してください。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
 
 ## <a name="see-also"></a>関連項目
- [メニューとコマンドを拡張します。](../../extensibility/extending-menus-and-commands.md)
+- [メニューとコマンドを拡張します。](../../extensibility/extending-menus-and-commands.md)

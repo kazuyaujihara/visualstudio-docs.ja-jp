@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: プロダクト キーを見つける |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -34,5 +34,5 @@ ms.locfileid: "54793940"
 
     -   ソフトウェアを購入したベンダーから提供されるドキュメント類
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [方法: Visual Studio の評価版からアップグレード](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [Visual Studio のインストール](../install/install-visual-studio-2015.md) [Visual Studio と MSDN のライセンス ホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkId=191417)

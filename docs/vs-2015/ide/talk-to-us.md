@@ -1,4 +1,4 @@
----
+﻿---
 title: ご意見 | Microsoft ドキュメント
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -55,5 +55,5 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>開発者コミュニティへの参加  
  質問や回答を他の開発者と共有する場合は、「 [MSDN フォーラム](http://social.msdn.microsoft.com/Forums/home) 」または「 [StackOverflow](http://stackoverflow.com/)」をご利用になれます。 「 [開発者コード サンプル](http://code.msdn.microsoft.com/) 」と「 [CodePlex](http://www.codeplex.com/) 」の Web サイトで、他の開発者のコードを閲覧したり、ご自分の例を公開したりすることができます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Visual Studio 2015 で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: ユーザー設定のサポート |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,43 +12,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8204f7c6716acaad0183d63b487a8191c5a1dd1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bba2a948ef9554434ad1032bcbfb8b54dfe8d4c3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964250"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622723"
 ---
 # <a name="support-for-user-settings"></a>ユーザー設定のサポート
-VSPackage は、ユーザーが選択したときに永続化状態変数のグループが 1 つまたは複数の設定カテゴリを定義できます、**設定のインポート/エクスポート**コマンドを**ツール**メニュー。 この永続化を有効にするには、Api の設定を使用するには[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]します。  
+VSPackage は、ユーザーが選択したときに永続化状態変数のグループが 1 つまたは複数の設定カテゴリを定義できます、**設定のインポート/エクスポート**コマンドを**ツール**メニュー。 この永続化を有効にするには、Api の設定を使用するには[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]します。
 
- カスタム設定ポイントと GUID として参照されるレジストリ エントリは、VSPackage のカテゴリの設定を定義します。 VSPackage が複数のカテゴリの設定をサポートできますが、カスタム設定ポイントによって定義されている各。  
+ カスタム設定ポイントと GUID として参照されるレジストリ エントリは、VSPackage のカテゴリの設定を定義します。 VSPackage が複数のカテゴリの設定をサポートできますが、カスタム設定ポイントによって定義されている各。
 
--   相互運用機能アセンブリに基づく設定の実装 (を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>インターフェイス)、レジストリを編集するか、レジストラー スクリプト (.rgs ファイル) を使用してカスタム設定ポイントを作成する必要があります。 詳細については、「 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)」を参照してください。  
+-   相互運用機能アセンブリに基づく設定の実装 (を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>インターフェイス)、レジストリを編集するか、レジストラー スクリプト (.rgs ファイル) を使用してカスタム設定ポイントを作成する必要があります。 詳細については、「 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)」を参照してください。
 
--   管理パッケージ フレームワーク (MPF) を使用するコードは、アタッチすることでのカスタム設定ポイントを作成する必要があります、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>各カスタム設定ポイントの VSPackage にします。  
+-   管理パッケージ フレームワーク (MPF) を使用するコードは、アタッチすることでのカスタム設定ポイントを作成する必要があります、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>各カスタム設定ポイントの VSPackage にします。
 
-     単一 VSPackage は、いくつかのカスタム設定ポイントをサポートしている場合は、各カスタム設定ポイントが別のクラスによって実装されるの一意のインスタンスで登録されますが、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラス。 そのため、クラスの実装設定では、1 つ以上のカテゴリの設定をサポートできます。  
+     単一 VSPackage は、いくつかのカスタム設定ポイントをサポートしている場合は、各カスタム設定ポイントが別のクラスによって実装されるの一意のインスタンスで登録されますが、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラス。 そのため、クラスの実装設定では、1 つ以上のカテゴリの設定をサポートできます。
 
-## <a name="custom-settings-point-registry-entry-details"></a>カスタム設定ポイントのレジストリ エントリの詳細  
- 次の場所にレジストリ エントリでは、カスタム設定ポイントが作成されます。Hklm \software\microsoft\visualstudio\\*\<バージョン >* \UserSettings\\`<CSPName>`ここで、 `<CSPName>` VSPackage がサポートをカスタム設定ポイントの名前には*\<バージョン >* のバージョンである[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]8.0 などの。  
+## <a name="custom-settings-point-registry-entry-details"></a>カスタム設定ポイントのレジストリ エントリの詳細
+ 次の場所にレジストリ エントリでは、カスタム設定ポイントが作成されます。Hklm \software\microsoft\visualstudio\\*\<バージョン >* \UserSettings\\`<CSPName>`ここで、 `<CSPName>` VSPackage がサポートをカスタム設定ポイントの名前には*\<バージョン >* のバージョンである[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]8.0 などの。
 
 > [!NOTE]
->  Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、次を参照してください。[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)します。  
+>  Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、次を参照してください。[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)します。
 
- レジストリ エントリの構造は、次に示します。  
+ レジストリ エントリの構造は、次に示します。
 
- HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\
 
- `<CSPName`>= s '#12345'  
+ `<CSPName`>= s '#12345'
 
- Package = '{XXXXXX XXXX XXXX XXXX XXXXXXXXX}' 
+ Package = '{XXXXXX XXXX XXXX XXXX XXXXXXXXX}'
 
- Category = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}' 
+ Category = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}'
 
- ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}' 
+ ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'
 
- AlternateParent = CategoryName 
+ AlternateParent = CategoryName
 
 
 | 名前 | 型 | データ | 説明 |

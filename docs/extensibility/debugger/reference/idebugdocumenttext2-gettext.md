@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentText2::GetText |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentText2::GetText
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 729b56b4161d6cfd38db91334427840d0c7339d8
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449657"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678359"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 ドキュメント内の指定した位置からテキストを取得します。
@@ -43,17 +43,21 @@ int GetText(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`pos`  
-[in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造体を取得するテキストの位置を示す。
+`pos`
 
-`cMaxChars`  
-[in]取得するテキストの文字の最大数。
+ [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造体を取得するテキストの位置を示す。
 
-`pText`  
-[入力、出力]目的のテキストで格納されるバッファーへのポインター。 このバッファーは、少なくともできる必要があります`cMaxChars`ワイド文字の数。
+`cMaxChars`
 
-`pcNumChars`  
-[out]実際に取得される文字数を返します。
+ [in]取得するテキストの文字の最大数。
+
+`pText`
+
+ [入力、出力]目的のテキストで格納されるバッファーへのポインター。 このバッファーは、少なくともできる必要があります`cMaxChars`ワイド文字の数。
+
+`pcNumChars`
+
+ [out]実際に取得される文字数を返します。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -98,5 +102,5 @@ namespace Mynamespace
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

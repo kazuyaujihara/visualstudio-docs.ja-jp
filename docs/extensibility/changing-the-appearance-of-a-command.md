@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6446df8f1f3334cac9ebb6e0501a42b3da408455
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317082"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691346"
 ---
 # <a name="change-the-appearance-of-a-command"></a>コマンドの外観を変更します。
 コマンドの外観を変更することで、ユーザーにフィードバックを提供できます。 たとえば、ご利用いただけませんが異なって表示するコマンドをたい場合があります。 非ことができますコマンドを使用できないか使用できないこと、または、それらを表示するまたは確認メニューでそれらをオフにします。
@@ -85,7 +85,7 @@ ms.locfileid: "56317082"
 8. **ツール**メニューが表示**新しいテキスト**します。 クリックして**新しいテキスト**します。 コマンドを灰色に今すぐ必要があります。
 
 ## <a name="see-also"></a>関連項目
-[コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Vspackage がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
-[拡張メニューとコマンド](../extensibility/extending-menus-and-commands.md)  
-[Visual Studio コマンド テーブル (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Vspackage がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [拡張メニューとコマンド](../extensibility/extending-menus-and-commands.md)
+- [Visual Studio コマンド テーブル (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

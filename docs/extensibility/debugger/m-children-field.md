@@ -10,32 +10,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f8ea4f053d28ea14c05a50e3bc187faf6f6e207
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fefeaf07c923a5fefa282efcd96948b2d907cca1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966856"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704645"
 ---
 # <a name="mchildren-field"></a>m_children フィールド
-このタスクで登録されている子タスクの一覧。  
-  
- **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **アセンブリ:** mscorlib (で*mscorlib.dll*)  
-  
- .NET Framework からこの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。  
-  
-## <a name="syntax"></a>構文  
-  
-```csharp 
-.field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children  
-```  
-  
-## <a name="remarks"></a>Remarks  
- タスクの実行中にタスクを実行するスレッドのみがこの配列をアクセスする必要があります。  
-  
- タスクが完了した場合、他のスレッドには何も追加またはそこから何も削除されない限り、このフィールドにアクセスすることができます。  
-  
-## <a name="see-also"></a>関連項目  
- [ContingentProperties クラス](../../extensibility/debugger/contingentproperties-class-internal-members.md)
+このタスクで登録されている子タスクの一覧。
+
+ **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **アセンブリ:** mscorlib (で*mscorlib.dll*)
+
+ .NET Framework からこの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。
+
+## <a name="syntax"></a>構文
+
+```csharp
+.field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children
+```
+
+## <a name="remarks"></a>Remarks
+ タスクの実行中にタスクを実行するスレッドのみがこの配列をアクセスする必要があります。
+
+ タスクが完了した場合、他のスレッドには何も追加またはそこから何も削除されない限り、このフィールドにアクセスすることができます。
+
+## <a name="see-also"></a>関連項目
+- [ContingentProperties クラス](../../extensibility/debugger/contingentproperties-class-internal-members.md)

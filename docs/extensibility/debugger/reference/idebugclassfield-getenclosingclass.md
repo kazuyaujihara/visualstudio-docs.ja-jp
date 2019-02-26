@@ -1,7 +1,7 @@
 ---
 title: IDebugClassField::GetEnclosingClass |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugClassField::GetEnclosingClass
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab5be03fc6421f03742878f2b72f568ec0915dc
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 9e6b2cfae694d0d95f70b2251efc66764df1b539
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412917"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682012"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 このクラスの外側のクラスを取得します。
@@ -37,8 +37,9 @@ int GetEnclosingClass(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`ppClassField`  
-[out]返します、 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)オブジェクト、それを囲むを表すクラスします。 外側のクラスが存在しない場合は、null 値を返します。
+`ppClassField`
+
+ [out]返します、 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)オブジェクト、それを囲むを表すクラスします。 外側のクラスが存在しない場合は、null 値を返します。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
@@ -55,4 +56,4 @@ class RootClass {
 呼び出す、`GetEnclosingClass`メソッドを`IDebugClassField`オブジェクトを表す、`NestedClass`クラスを返します、`IDebugClassField`クラスを表すオブジェクト`RootClass`します。
 
 ## <a name="see-also"></a>関連項目
-[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
+- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

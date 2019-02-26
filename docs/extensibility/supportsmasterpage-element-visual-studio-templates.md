@@ -14,76 +14,74 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae629739bd1af7a47048cb7d1097916a1fda3958
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fa55ed4344ab071d49b9f0e4030acb2a0762b2a9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014953"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691983"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 要素 (Visual Studio テンプレート)
-指定します、かどうかどうか、**マスター ページの選択**のチェック ボックスをオンになって、**新しい項目の追加** ダイアログ ボックス。  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<SupportsMasterPage>  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-<SupportsMasterPage> true/false </SupportsMasterPage>  
-```  
-  
-## <a name="attributes-and-elements"></a>属性および要素  
- 以降のセクションでは、属性、子要素、および親要素について説明します。  
-  
-### <a name="attributes"></a>属性  
- なし。  
-  
-### <a name="child-elements"></a>子要素  
- なし。  
-  
-### <a name="parent-elements"></a>親要素  
-  
-|要素|説明|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|テンプレートを分類し、定義でどのように表示するデータを指定します、**新しいプロジェクト**または**新しい項目の** ダイアログ ボックス。|  
-  
-## <a name="text-value"></a>テキスト値  
- テキスト値が必要です。  
-  
- テキストがいずれかにする必要があります`true`または`false`ことを示すかどうか、**マスター ページの選択**のチェック ボックスをオンになって、**新しい項目の追加** ダイアログ ボックス。  
-  
-## <a name="remarks"></a>Remarks  
- `SupportsMasterPage` は、省略可能な要素です。 既定値は `false` です。  
-  
- `SupportsMasterPage`要素は、Web 項目テンプレートの使用のみ。  
-  
-## <a name="example"></a>例  
- 次の例では、マスター ページのサポートが含まれる Web プロジェクトのメタデータを示します。  
-  
-```  
-<VSTemplate Version="3.0.0" Type="Project"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>  
-    <TemplateData>  
-        <Name>MyWebProjecStarterKit</Name>  
-        <Description>A simple Web template</Description>  
-        <Icon>icon.ico</Icon>  
-        <ProjectType>Web</ProjectType>  
-        <ProjectSubType>CSharp</ProjectSubType>  
-        <DefaultName>WebSite</DefaultName>  
-        <SupportsMasterPage>true</SupportsMasterPage>  
-    </TemplateData>  
-    <TemplateContent>  
-        <Project File="WebApplication.webproj">  
-            <ProjectItem>icon.ico</ProjectItem>  
-            <ProjectItem OpenInEditor="true">Default.aspx</ProjectItem>  
-            <ProjectItem>Default.aspx.cs</ProjectItem>  
-        </Project>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+指定します、かどうかどうか、**マスター ページの選択**のチェック ボックスをオンになって、**新しい項目の追加** ダイアログ ボックス。
+
+ \<VSTemplate> \<TemplateData> \<SupportsMasterPage>
+
+## <a name="syntax"></a>構文
+
+```
+<SupportsMasterPage> true/false </SupportsMasterPage>
+```
+
+## <a name="attributes-and-elements"></a>属性および要素
+ 以降のセクションでは、属性、子要素、および親要素について説明します。
+
+### <a name="attributes"></a>属性
+ なし。
+
+### <a name="child-elements"></a>子要素
+ なし。
+
+### <a name="parent-elements"></a>親要素
+
+|要素|説明|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|テンプレートを分類し、定義でどのように表示するデータを指定します、**新しいプロジェクト**または**新しい項目の** ダイアログ ボックス。|
+
+## <a name="text-value"></a>テキスト値
+ テキスト値が必要です。
+
+ テキストがいずれかにする必要があります`true`または`false`ことを示すかどうか、**マスター ページの選択**のチェック ボックスをオンになって、**新しい項目の追加** ダイアログ ボックス。
+
+## <a name="remarks"></a>Remarks
+ `SupportsMasterPage` は、省略可能な要素です。 既定値は `false` です。
+
+ `SupportsMasterPage`要素は、Web 項目テンプレートの使用のみ。
+
+## <a name="example"></a>例
+ 次の例では、マスター ページのサポートが含まれる Web プロジェクトのメタデータを示します。
+
+```
+<VSTemplate Version="3.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>
+    <TemplateData>
+        <Name>MyWebProjecStarterKit</Name>
+        <Description>A simple Web template</Description>
+        <Icon>icon.ico</Icon>
+        <ProjectType>Web</ProjectType>
+        <ProjectSubType>CSharp</ProjectSubType>
+        <DefaultName>WebSite</DefaultName>
+        <SupportsMasterPage>true</SupportsMasterPage>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="WebApplication.webproj">
+            <ProjectItem>icon.ico</ProjectItem>
+            <ProjectItem OpenInEditor="true">Default.aspx</ProjectItem>
+            <ProjectItem>Default.aspx.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

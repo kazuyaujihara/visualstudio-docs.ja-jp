@@ -1,7 +1,7 @@
 ---
 title: AD_PROCESS_ID |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - AD_PROCESS_ID
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e03b51081b082c1180091e823eead47a21a7b3d2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 395070d018492fa8950c6856270c61c0a645cdd0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315431"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688421"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 システム ID または GUID 可能性のあるプロセス ID を指定します。
@@ -45,17 +45,13 @@ public struct AD_PROCESS_ID {
 ```
 
 ## <a name="members"></a>メンバー
-`ProcessIdType`  
-値、 [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)を解釈する方法を指定する列挙体、`ProcessId`共用体 (または、マネージ コードの構造体のメンバーにアクセスする場合)。
+`ProcessIdType` 値、 [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)を解釈する方法を指定する列挙体、`ProcessId`共用体 (または、マネージ コードの構造体のメンバーにアクセスする場合)。
 
-dwProcessId  
-システムからの値としてプロセス ID。
+システムからの値としての dwProcessId プロセス ID。
 
-guidProcessId  
-GUID としてプロセス ID。
+GUID としての guidProcessId プロセス ID。
 
-dwUnused  
-余白。
+dwUnused 余白します。
 
 ## <a name="remarks"></a>Remarks
 この構造体は、次のメソッドに渡されます。
@@ -82,12 +78,12 @@ dwUnused
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
-[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)  
-[AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)  
-[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
-[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
-[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
-[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
-[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
+- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
+- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
+- [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)
+- [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
+- [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)
+- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

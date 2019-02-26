@@ -1,7 +1,7 @@
 ---
 title: IDebugExpression2::EvaluateAsync |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugExpression2::EvaluateAsync
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1585d68de7e2ea94961e72cf3f07fa9cd147f9b9
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 2212738a2d2d14ec454cfd42db44f812f72a035a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449815"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684443"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 このメソッドは、非同期的に式を評価します。
@@ -39,11 +39,13 @@ int EvaluateAsync(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`dwFlags`  
-[in]フラグの組み合わせ、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)式の評価を制御する列挙体。
+`dwFlags`
 
-`pExprCallback`  
-[in]このパラメーターは、常に null 値です。
+ [in]フラグの組み合わせ、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)式の評価を制御する列挙体。
+
+`pExprCallback`
+
+ [in]このパラメーターは、常に null 値です。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 一般的なエラー コードに示します。
@@ -73,7 +75,7 @@ HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)  
-[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)  
-[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)  
-[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+- [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
+- [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
+- [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

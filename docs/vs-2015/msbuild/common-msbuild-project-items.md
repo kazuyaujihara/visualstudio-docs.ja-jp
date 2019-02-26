@@ -143,5 +143,5 @@ ms.locfileid: "54796878"
 ### <a name="import"></a>インポート  
  アセンブリを表します。このアセンブリの名前空間が、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] コンパイラによってインポートされます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Common MSBuild Project Properties (MSBuild プロジェクトの共通プロパティ)](../msbuild/common-msbuild-project-properties.md)

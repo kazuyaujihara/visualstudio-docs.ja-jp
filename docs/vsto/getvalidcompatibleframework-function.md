@@ -10,31 +10,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79b97867a3a5c87f1e208d93efacea711ba71efc
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: b975a4b4b2c1b4ae3f6ef0f1d6d23769bb4c77c7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869308"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643510"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework 関数
-  この API は、オフィスのインフラストラクチャをサポートしているし、コードから直接使用するものではありません。  
+  この API は、オフィスのインフラストラクチャをサポートしているし、コードから直接使用するものではありません。
 
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>構文
 
-```csharp 
-HRESULT WINAPI GetValidCompatibleFramework(  
-    LPCWSTR lpwszCompatibleFrameworksXML,  
-    BSTR* pbstrValidFrameworkTag  
-);  
-```  
+```csharp
+HRESULT WINAPI GetValidCompatibleFramework(
+    LPCWSTR lpwszCompatibleFrameworksXML,
+    BSTR* pbstrValidFrameworkTag
+);
+```
 
-### <a name="parameters"></a>パラメーター  
+### <a name="parameters"></a>パラメーター
 
-|パラメーター|説明|  
-|---------------|-----------------|  
-|*lpwszCompatibleFrameworksXML*|使用しないでください。|  
-|*pbstrValidFrameworkTag*|使用しないでください。|  
+|パラメーター|説明|
+|---------------|-----------------|
+|*lpwszCompatibleFrameworksXML*|使用しないでください。|
+|*pbstrValidFrameworkTag*|使用しないでください。|
 
-## <a name="return-value"></a>戻り値  
- 返します、関数が成功したかどうかは**S_OK**します。 関数が失敗した場合、エラー コードを返します。  
+## <a name="return-value"></a>戻り値
+ 返します、関数が成功したかどうかは**S_OK**します。 関数が失敗した場合、エラー コードを返します。

@@ -12,32 +12,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea45bc0bec473983765a7358dabc36a485f520b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f572405b6246619dac8b567283696319d65211bc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939464"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625752"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Office ソリューションを開発するその他のリソース
-  Visual Studio の Microsoft Office 開発ツールは、Office アプリケーションを拡張する数多くの方法のうちの 1 つにすぎません。 Office アプリケーションにも、Open XML Formats などの組み込み機能がいくつか用意されています。ただし、それらの機能は Visual Studio の Office 開発ツールには含まれず、このドキュメントでも取り上げていません。  
+  Visual Studio の Microsoft Office 開発ツールは、Office アプリケーションを拡張する数多くの方法のうちの 1 つにすぎません。 Office アプリケーションにも、Open XML Formats などの組み込み機能がいくつか用意されています。ただし、それらの機能は Visual Studio の Office 開発ツールには含まれず、このドキュメントでも取り上げていません。
 
- Microsoft Office および Visual Studio の Office 開発ツールで提供される機能についての理解を深めるために、ここで紹介するリソースを手掛かりにしてください。  
+ Microsoft Office および Visual Studio の Office 開発ツールで提供される機能についての理解を深めるために、ここで紹介するリソースを手掛かりにしてください。
 
- [Visual Studio デベロッパー センターでの office 開発](http://go.microsoft.com/fwlink/?LinkId=149752)  
- Visual Studio の Office 開発者向けツールの最新情報、ビデオ、フォーラム、ブログなどのリソースにアクセスするための中央ポータルです。  
+[Visual Studio デベロッパー センターでの office 開発](http://go.microsoft.com/fwlink/?LinkId=149752)
 
- [Office デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=83467)  
- Office 開発者向けの最新のリソースにアクセスするための中央ポータルです (Visual Studio を使用した Office 開発に限定されません)。  
+Visual Studio の Office 開発者向けツールの最新情報、ビデオ、フォーラム、ブログなどのリソースにアクセスするための中央ポータルです。
 
- [MSDN ライブラリの Microsoft Office 開発 セクション](http://go.microsoft.com/fwlink/?LinkId=149870)  
- この MSDN ライブラリの領域では、Office の複数のバージョンを対象とするソリューションの開発に関する記事やリファレンス ドキュメントを参照できます (Visual Studio を使用した Office 開発以外のトピックも含まれています)。  
+[Office デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=83467)
 
- [Office business application デベロッパー ポータル](http://go.microsoft.com/fwlink/?LinkId=99125)  
- Office Business Application (OBA) に関する情報にアクセスするための中央ポータルです。 OBA により、基幹業務 (LOB) システムのユーザーは、Microsoft Office アプリケーションを経由して LOB システムと接続するため、革新的な方法で各種リソースを組み合わせて、既存の IT システムを拡張できます。  
+Office 開発者向けの最新のリソースにアクセスするための中央ポータルです (Visual Studio を使用した Office 開発に限定されません)。
 
- [Visual Studio ブログでの office 開発](http://go.microsoft.com/fwlink/?LinkId=149748)  
- Visual Studio の Office 開発者向けツールを作成している Microsoft チームによって管理されているブログです。  
+[MSDN ライブラリの Microsoft Office 開発 セクション](http://go.microsoft.com/fwlink/?LinkId=149870)
 
-## <a name="see-also"></a>関連項目  
- [Office ソリューションのエラーのための追加サポート](../vsto/additional-support-for-errors-in-office-solutions.md)  
+この MSDN ライブラリの領域では、Office の複数のバージョンを対象とするソリューションの開発に関する記事やリファレンス ドキュメントを参照できます (Visual Studio を使用した Office 開発以外のトピックも含まれています)。
+
+[Office Business Application デベロッパー ポータル](http://go.microsoft.com/fwlink/?LinkId=99125)
+
+Office Business Application (OBA) に関する情報にアクセスするための中央ポータルです。 OBA により、基幹業務 (LOB) システムのユーザーは、Microsoft Office アプリケーションを経由して LOB システムと接続するため、革新的な方法で各種リソースを組み合わせて、既存の IT システムを拡張できます。
+
+[Visual Studio ブログでの office 開発](http://go.microsoft.com/fwlink/?LinkId=149748)
+
+Visual Studio の Office 開発者向けツールを作成している Microsoft チームによって管理されているブログです。
+
+## <a name="see-also"></a>関連項目
+- [Office ソリューションのエラーのための追加サポート](../vsto/additional-support-for-errors-in-office-solutions.md)

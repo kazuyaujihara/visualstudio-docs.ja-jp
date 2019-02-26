@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: を作成し、無人インストールの実行 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -175,5 +175,5 @@ ms.locfileid: "54803563"
 
      (詳細については、次を参照してください、[方法: Visual Studio プロダクト キーを検索](../install/how-to-locate-the-visual-studio-product-key.md)と[方法: Visual Studio の展開時に、プロダクト キーを自動的に適用](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)トピックです。)。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio のインストール](../install/install-visual-studio-2015.md)

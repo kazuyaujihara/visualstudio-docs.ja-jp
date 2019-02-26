@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: エディターのワード ラップを管理する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -52,7 +52,7 @@ ms.locfileid: "54753247"
     > [!NOTE]
     >  改行インジケーターはコードには追加されません。表示専用です。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [エディターのカスタマイズ](../../ide/customizing-the-editor.md)   
  [[テキスト エディター] ([オプション] ダイアログ ボックス)](../../ide/reference/text-editor-options-dialog-box.md)   
  [コードの作成](../../ide/writing-code-in-the-code-and-text-editor.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 - LoadSymbolsWithCorModule
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43975e96e4760bfd2299f6cda4ab62f44a0bd13b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413125"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682181"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 読み込みのデバッグ シンボルの指定、 **ICorDebugModule**オブジェクト。
@@ -48,26 +48,33 @@ int LoadSymbolsWithCorModule(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`ulAppDomainID`  
-[in]アプリケーション ドメインの識別子。
+`ulAppDomainID`
 
-`guidModule`  
-[in]モジュールの一意の識別子。
+ [in]アプリケーション ドメインの識別子。
 
-`baseAddress`  
-[in]基本のメモリ アドレス。
+`guidModule`
 
-`pUnkMetadataImport`  
-[in]デバッグ シンボルのメタデータを含むオブジェクト。
+ [in]モジュールの一意の識別子。
 
-`pUnkCorDebugModule`  
-[in]実装するオブジェクト、 [ICorDebugModule インターフェイス](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)します。
+`baseAddress`
 
-`bstrModuleName`  
-[in]モジュールの名前。
+ [in]基本のメモリ アドレス。
 
-`bstrSymSearchPath`  
-[in]シンボル ファイルを検索するパス。
+`pUnkMetadataImport`
+
+ [in]デバッグ シンボルのメタデータを含むオブジェクト。
+
+`pUnkCorDebugModule`
+
+ [in]実装するオブジェクト、 [ICorDebugModule インターフェイス](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)します。
+
+`bstrModuleName`
+
+ [in]モジュールの名前。
+
+`bstrSymSearchPath`
+
+ [in]シンボル ファイルを検索するパス。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -168,4 +175,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

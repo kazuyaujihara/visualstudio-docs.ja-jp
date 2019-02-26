@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91db654370cb9a186484c0fd61688bcb25af4ba1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316189"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710085"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>最近使用した一覧のサブメニューへの追加します。
 このチュートリアルのデモ」に基づいて[メニューにサブメニューを追加する](../extensibility/adding-a-submenu-to-a-menu.md)、し、サブメニューに動的な一覧を追加する方法を示しています。 動的な一覧は、最近使用 (MRU) の一覧を作成するための基礎を形成します。
@@ -202,4 +202,4 @@ ms.locfileid: "56316189"
 4. サブメニューをもう一度開きます。 注意して**項目 3**一覧の上部にあるようになり、1 つ下の他の項目がプッシュされました。 をクリックして**項目 3**もう一度と、メッセージ ボックスが表示されることがわかります**選択項目 3**テキストがコマンドのラベルと共に新しい位置に移動が正しくことを示します。
 
 ## <a name="see-also"></a>関連項目
-[メニュー項目を動的に追加します。](../extensibility/dynamically-adding-menu-items.md)
+- [メニュー項目を動的に追加します。](../extensibility/dynamically-adding-menu-items.md)

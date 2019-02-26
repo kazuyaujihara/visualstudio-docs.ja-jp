@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016240"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722279"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio のカラー値の参照
 
-このトピックでは、新しい色のトークンを作成するための参照です。 新しい UI を作成するときは、各メイン テーマの色とその要素のハイ コントラスト テーマのシステム色の名前を選択するのに既存の UI からの似た色を使用できます。 
+このトピックでは、新しい色のトークンを作成するための参照です。 新しい UI を作成するときは、各メイン テーマの色とその要素のハイ コントラスト テーマのシステム色の名前を選択するのに既存の UI からの似た色を使用できます。
 
 新しい色のトークンを作成する方法の実装については、次を参照してください。[色のテーマのツール](../../extensibility/internals/color-theming-tools.md)します。
 
@@ -26,11 +26,11 @@ ms.locfileid: "55016240"
 
 このリファレンス ガイドを使用する場合に注意してください。
 
--   **常にまとめての色合いがフォア グラウンドとバック グラウンドの両方をコピーします。** 1 つの UI 要素別のバック グラウンドからの色合いをなどからといって、前景を選択しないでください。  
+-   **常にまとめての色合いがフォア グラウンドとバック グラウンドの両方をコピーします。** 1 つの UI 要素別のバック グラウンドからの色合いをなどからといって、前景を選択しないでください。
 
 -   **これらは、16 進コード、色のトークンではありません。** トークンを今後変更される可能性がどのように制御できないために、これらの UI 要素の実際の色のトークン名を使用することはできません。 代わりに、独自のカテゴリ内のトークンを作成し、表に示す色相値を使用します。 色のトークンで見つかる既存の UI の[for Visual Studio の色を共有](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)します。
 
-- **のみの比較については、ハイ コントラストの見本が表示されます。** ハイ コントラストの UI でのシステム カラー名を使用し、これらの見本をスポイト ツールまたは色の選択を使用しないでください。 このトピックでハイ コントラスト見本は、Windows のハイコントラスト #1 テーマを反映します。 その他のハイ コントラスト テーマでさまざまな色になります。 
+- **のみの比較については、ハイ コントラストの見本が表示されます。** ハイ コントラストの UI でのシステム カラー名を使用し、これらの見本をスポイト ツールまたは色の選択を使用しないでください。 このトピックでハイ コントラスト見本は、Windows のハイコントラスト #1 テーマを反映します。 その他のハイ コントラスト テーマでさまざまな色になります。
 
 -   **最良の結果をペアの色を設定 UI を使用した例のようにします。**
 
@@ -39,17 +39,17 @@ ms.locfileid: "55016240"
 ![Light (左)、濃い (中央)、および青 (右) のテーマでのプロパティ ウィンドウ](../../extensibility/ux-guidelines/media/properties-window-light-dark-blue.png "淡色、濃色、および青のテーマでのプロパティ ウィンドウ")<br />淡色、濃色、および青のテーマでのプロパティ ウィンドウ
 
 > [!NOTE]
-> **のみの比較については、ハイ コントラストの見本が表示されます。** ハイ コントラストの UI でのシステム カラー名を使用し、これらの見本をスポイト ツールまたは色の選択を使用しないでください。 このトピックでハイ コントラスト見本は、Windows のハイコントラスト #1 テーマを反映します。 その他のハイ コントラスト テーマでさまざまな色になります。 
+> **のみの比較については、ハイ コントラストの見本が表示されます。** ハイ コントラストの UI でのシステム カラー名を使用し、これらの見本をスポイト ツールまたは色の選択を使用しないでください。 このトピックでハイ コントラスト見本は、Windows のハイコントラスト #1 テーマを反映します。 その他のハイ コントラスト テーマでさまざまな色になります。
 
 ### <a name="divider-lines"></a>区切り線
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 既定値 | ![#FFEEEEF2 見本](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 見本")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FFEEEEF2 見本](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 見本")<br />`#FFEEEEF2` | ![ControlDark 見本](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 見本")<br />`ControlDark` |
 
 ### <a name="expander-glyph"></a>展開グリフ
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 |![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![ControlText 見本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 見本")<br />`ControlText` |
 | 背景 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![ウィンドウの見本](../../extensibility/ux-guidelines/media/HCWindow.png "ウィンドウ見本")<br />`Window`|
@@ -60,7 +60,7 @@ ms.locfileid: "55016240"
 
 ### <a name="embedded-tab-control-body"></a>タブ コントロールの埋め込み: 本文
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![ControlText 見本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 見本")<br />`ControlText` |
 | 背景 | ![#FFE7E8EC 見本](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC 見本")<br />`#FFE7E8EC` | ![#FF1B1B1C 見本](../../extensibility/ux-guidelines/media/1B1B1C.png "#FF1B1B1C 見本")<br />`#FF1B1B1C` | ![#FFE7E8EC 見本](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC 見本")<br />`#FFE7E8EC` | ![コントロールの見本](../../extensibility/ux-guidelines/media/HCControl.png "コントロール サンプル")<br />`Control` |
@@ -68,7 +68,7 @@ ms.locfileid: "55016240"
 
 ### <a name="embedded-tab-control-active-tab"></a>タブ コントロールの埋め込み: アクティブなタブ
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` |![ControlText 見本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 見本")<br />`ControlText` |
 | 背景 | ![## FFE7E8EC 見本](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC 見本")<br />`#FFE7E8EC` | ![#FF1B1B1C 見本](../../extensibility/ux-guidelines/media/1B1B1C.png "## FF1B1B1C 見本")<br />`#FF1B1B1C` | ![#FFE7E8EC 見本](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC 見本")<br />`#FFE7E8EC` | ![見本を強調表示](../../extensibility/ux-guidelines/media/HCHighlight.png "色見本の強調表示")<br />`Highlight` |
@@ -76,7 +76,7 @@ ms.locfileid: "55016240"
 
 ### <a name="embedded-tab-control-inactive-tab"></a>タブ コントロールの埋め込み: 非アクティブなタブ
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![ControlText 見本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 見本")<br />`ControlText` |
 | 背景 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![コントロールの見本](../../extensibility/ux-guidelines/media/HCControl.png "コントロール サンプル")<br />`Control` |
@@ -85,12 +85,12 @@ ms.locfileid: "55016240"
 | フォア グラウンド: 無効になっています | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![#FF656565 swatch](../../extensibility/ux-guidelines/media/656565.png "#FF656565 swatch")<br />`#FF656565` | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![GrayText 見本](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText 見本")<br />`GrayText` |
 | バック グラウンド: 無効になっています | ![##FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "##FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![コントロールの見本](../../extensibility/ux-guidelines/media/HCControl.png "コントロール サンプル")<br />`Control` |
 | 境界線 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![WindowFrame 見本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 見本")<br />`WindowFrame` |
-| Border: ホバー | ![#FFC9DEF5 見本](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 見本")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![#FFFEFEFE 見本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 見本")<br />`#FFFEFEFE` | ![WindowFrame 見本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 見本")<br />`WindowFrame` | 
+| Border: ホバー | ![#FFC9DEF5 見本](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 見本")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![#FFFEFEFE 見本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 見本")<br />`#FFFEFEFE` | ![WindowFrame 見本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 見本")<br />`WindowFrame` |
 | Border: 無効になっています | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![WindowFrame 見本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 見本")<br />`WindowFrame` |
 
 ### <a name="section-header"></a>セクション ヘッダー
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![## FFF1F1F1 見本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 見本")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![ControlText 見本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 見本")<br />`ControlText` |
 | フォア グラウンド: ホバー | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
@@ -101,7 +101,7 @@ ms.locfileid: "55016240"
 
 ### <a name="category-group"></a>カテゴリ グループ
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 本文の前景色 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![ControlText 見本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 見本")<br />`ControlText` |
 | 本文の背景 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![コントロールの見本](../../extensibility/ux-guidelines/media/HCControl.png "コントロール サンプル")<br />`Control` |
@@ -110,7 +110,7 @@ ms.locfileid: "55016240"
 
 ### <a name="toggle-buttons"></a>トグル ボタン
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![WindowText 見本](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 見本")<br />`WindowText` |
 | 背景 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![ウィンドウの見本](../../extensibility/ux-guidelines/media/HCWindow.png "ウィンドウ見本")<br />`Window` |
@@ -127,7 +127,7 @@ ms.locfileid: "55016240"
 
 ### <a name="input-fields"></a>入力フィールド
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![ControlText 見本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 見本")<br />`ControlText` |
 | 背景 | ![#FFFFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 見本")<br />`#FFFFFFFF` | ![#FF333337 swatch](../../extensibility/ux-guidelines/media/333337.png "#FF333337 swatch")<br />`#FF333337` | ![#FFFCFCFC 見本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC 見本")<br />`#FFFCFCFC` | ![コントロールの見本](../../extensibility/ux-guidelines/media/HCControl.png "コントロール サンプル")<br />`Control` |
@@ -138,7 +138,7 @@ ms.locfileid: "55016240"
 
 ### <a name="list-items"></a>リスト項目
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![ControlText 見本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 見本")<br />`ControlText` |
 | フォア グラウンド: ホバー | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
@@ -151,7 +151,7 @@ ms.locfileid: "55016240"
 
 ### <a name="command-buttons"></a>コマンド ボタン
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![ControlText 見本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 見本")<br />`ControlText` |
 | バック グラウンド: ホバー | ![#FFC9DEF5 見本](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 見本")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![#FFFEFEFE 見本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 見本")<br />`#FFFEFEFE` | ![見本を強調表示](../../extensibility/ux-guidelines/media/HCHighlight.png "色見本の強調表示")<br />`Highlight` |
@@ -172,7 +172,7 @@ ms.locfileid: "55016240"
 
 ### <a name="content"></a>Content
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | ![WindowText 見本](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 見本")<br />`WindowText` |
 | 背景 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 見本")<br />`#FFFFFFFF` | ![コントロールの見本](../../extensibility/ux-guidelines/media/HCControl.png "コントロール サンプル")<br />`Control` |
@@ -184,7 +184,7 @@ ms.locfileid: "55016240"
 
 ### <a name="header"></a>Header
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | ![WindowText 見本](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 見本")<br />`WindowText` |
 | 背景 | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FFEEEEF2 見本](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 見本")<br />`#FFEEEEF2` | ![ControlDark 見本](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 見本")<br />`ControlDark` |
@@ -193,7 +193,7 @@ ms.locfileid: "55016240"
 
 ![CodeLens UI](../../extensibility/ux-guidelines/media/codelens.png "CodeLens UI")
 
-> [!NOTE] 
+> [!NOTE]
 > CodeLens の UI の色は、光、濃色、および青のテーマのと同じです。
 
 > [!NOTE]
@@ -201,7 +201,7 @@ ms.locfileid: "55016240"
 
 ### <a name="body"></a>本文
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![WindowText 見本](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 見本")<br />`WindowText` |
 | 背景 | ![#FFFCFCFC 見本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC 見本")<br />`#FFFCFCFC` | ![#FFFCFCFC 見本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC 見本")<br />`#FFFCFCFC` | ![#FFFCFCFC 見本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC 見本")<br />`#FFFCFCFC` | ![ウィンドウの見本](../../extensibility/ux-guidelines/media/HCWindow.png "ウィンドウ見本")<br />`Window` |
@@ -212,7 +212,7 @@ ms.locfileid: "55016240"
 
 ### <a name="hyperlink-and-separator"></a>ハイパーリンクと区切り記号
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | ハイパーリンクの前景色 | ![#FF0E70C0 swatch](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 swatch")<br />`#FF0E70C0` | ![#FF0E70C0 swatch](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 swatch")<br />`#FF0E70C0` | ![#FF0E70C0 swatch](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 swatch")<br />`#FF0E70C0` | ![ホット トラック見本](../../extensibility/ux-guidelines/media/HCHotTrack.png "ホット トラック見本")<br />`HotTrack` |
 | 区切り記号の前景色 | ![#FF9C9C9C 見本](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C 見本")<br />`#FF9C9C9C` | ![#FF9C9C9C 見本](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C 見本")<br />`#FF9C9C9C` | ![#FF9C9C9C 見本](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C 見本")<br />`#FF9C9C9C` | ![ホット トラック見本](../../extensibility/ux-guidelines/media/HCHotTrack.png "ホット トラック見本")<br />`HotTrack` |
@@ -226,14 +226,14 @@ ms.locfileid: "55016240"
 
 ### <a name="body"></a>本文
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | ![WindowText 見本](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 見本")<br />`WindowText` |
 | フォア グラウンド: 選択しました。 | ![#FFFFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 見本")<br />`#FFFFFFFF` | ![#FFFFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 見本")<br />`#FFFFFFFF` | ![#FFFFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 見本")<br />`#FFFFFFFF` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
 
 ### <a name="subsection-header"></a>サブセクションのヘッダー
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF717171 見本](../../extensibility/ux-guidelines/media/717171.png "#FF717171 見本")<br />`#FF717171` | ![#FF999999 swatch](../../extensibility/ux-guidelines/media/999999.png "#FF999999 swatch")<br />`#FF999999` | ![#FF717171 見本](../../extensibility/ux-guidelines/media/717171.png "#FF717171 見本")<br />`#FF717171` | ![GrayText 見本](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText 見本")<br />`GrayText` |
 | 背景 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 見本")<br />`#FFFFFFFF` | ![ウィンドウの見本](../../extensibility/ux-guidelines/media/HCWindow.png "ウィンドウ見本")<br />`Window` |
@@ -241,7 +241,7 @@ ms.locfileid: "55016240"
 
 ### <a name="grid-lines"></a>[グリッド線]
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 項目 (前景) | ![#FFF0F0F0 swatch](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 swatch")<br />`#FFF0F0F0` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | ![#FFF0F0F0 swatch](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 swatch")<br />`#FFF0F0F0` | ![スクロール バーの見本](../../extensibility/ux-guidelines/media/HCScrollBar.png "スクロール バーの見本")<br />`ScrollBar` |
 | ヘッダー (前景) | ![#FFE0E3E6 swatch](../../extensibility/ux-guidelines/media/E0E3E6.png "#FFE0E3E6 swatch")<br />`#FFE0E3E6` | ![#FF333337 swatch](../../extensibility/ux-guidelines/media/333337.png "#FF333337 swatch")<br />`#FF333337` | ![#FFBEC3CB 見本](../../extensibility/ux-guidelines/media/BEC3CB.png "#FFBEC3CB 見本")<br />`#FFBEC3CB` | ![ControlDark 見本](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 見本")<br />`ControlDark` |
@@ -255,21 +255,21 @@ ms.locfileid: "55016240"
 
 ### <a name="body"></a>本文
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![ControlText 見本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 見本")<br />`ControlText` |
 | 背景 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![コントロールの見本](../../extensibility/ux-guidelines/media/HCControl.png "コントロール サンプル")<br />`Control` |
 
 ### <a name="active-tab"></a>アクティブなタブ
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![ActiveCaptionText 見本](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText 見本")<br />`ActiveCaptionText` |
 | 背景 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` |![ActiveCaption 見本](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption 見本")<br />`ActiveCaption` |
 
 ### <a name="inactive-tab"></a>非アクティブなタブ
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![InactiveCaptionText 見本](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText 見本")<br />`InactiveCaptionText` |
 | 背景 | ![#FFFEFEFE 見本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 見本")<br />`#FFFEFEFE` | ![#FF333337 swatch](../../extensibility/ux-guidelines/media/333337.png "#FF333337 swatch")<br />`#FF333337` | ![#FFFEFEFE 見本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 見本")<br />`#FFFEFEFE` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
@@ -278,14 +278,14 @@ ms.locfileid: "55016240"
 
 ### <a name="watermark-text"></a>ウォーターマーク テキスト
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF717171 見本](../../extensibility/ux-guidelines/media/717171.png "#FF717171 見本")<br />`#FF999999` | ![#FF999999 swatch](../../extensibility/ux-guidelines/media/717171.png "999999 swatch")<br />`#FF999999` | ![#FF717171 見本](../../extensibility/ux-guidelines/media/717171.png "#FF717171 見本")<br />`#FF717171` | ![GrayText 見本](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText 見本")<br />`GrayText` |
 | 背景 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![コントロールの見本](../../extensibility/ux-guidelines/media/HCControl.png "コントロール サンプル")<br />`Control` |
 
 ### <a name="description-pane"></a>[説明ペイン]
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![ControlText 見本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 見本")<br />`ControlText` |
 | 背景 | ![#FFEEEEF2 見本](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 見本")<br />`#FFEEEEF2` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 見本")<br />`#FFFFFFFF` | ![コントロールの見本](../../extensibility/ux-guidelines/media/HCControl.png "コントロール サンプル")<br />`Control` |
@@ -299,7 +299,7 @@ ms.locfileid: "55016240"
 
 ### <a name="tags"></a>Tags
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 (テキスト) | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFFFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 見本")<br />`#FFFFFFFF` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![ActiveCaptionText 見本](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText 見本")<br />`ActiveCaptionText` |
 | 背景 | ![#FFE1E6F1 見本](../../extensibility/ux-guidelines/media/E1E6F1.png "#FFE1E6F1 見本")<br />`#FFE1E6F1` | ![#FF424242 swatch](../../extensibility/ux-guidelines/media/424242.png "#FF424242 swatch")<br />`#FF424242` | ![#FFE9ECEE 見本](../../extensibility/ux-guidelines/media/E9ECEE.png "#FFE9ECEE 見本")<br />`#FFE9ECEE` | ![ActiveCaption 見本](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption 見本")<br />`ActiveCaption` |
@@ -312,7 +312,7 @@ ms.locfileid: "55016240"
 
 ### <a name="glyph-on-hover"></a>グリフ ホバー
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | グリフ | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![#FFFFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 見本")<br />`#FFFFFFFF` | ![#FF1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 見本")<br />`#FF1E1E1E` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
 | 背景 | ![#FFF7F7F9 swatch](../../extensibility/ux-guidelines/media/F7F7F9.png "#FFF7F7F9 swatch")<br />`#FFF7F7F9` | ![#FF393939 swatch](../../extensibility/ux-guidelines/media/393939.png "#FF393939 swatch")<br />`#FF393939` | ![#FFFFFCF4 swatch](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 swatch")<br />`#FFFFFCF4` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
@@ -323,7 +323,7 @@ ms.locfileid: "55016240"
 
 ### <a name="selected-glyph"></a>選択対象グリフ
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | グリフ | ![#FFFFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 見本")<br />`#FFFFFFFF` | ![#FFFFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 見本")<br />`#FFFFFFFF` | ![#FFFFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 見本")<br />`#FFFFFFFF` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
 | 背景 | ![#FF52B0EF 見本](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF 見本")<br />`#FF52B0EF` | ![#FF52B0EF 見本](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF 見本")<br />`#FF52B0EF` | ![#FF52B0EF 見本](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF 見本")<br />`#FF52B0EF` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
@@ -339,7 +339,7 @@ ms.locfileid: "55016240"
 
 ### <a name="default"></a>既定値
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマでの既定のボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.png "ライト テーマでの既定のボタン") | ![ダーク テーマでの既定のボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.dark.png "ダーク テーマでの既定のボタン") | ![青のテーマでの既定のボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.blue.png "青のテーマでの既定のボタン") | ![ハイ コントラスト テーマでの既定のボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.hc.png "ハイ コントラスト テーマでの既定のボタン") |
 | 前景 | ![#1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 見本")<br />`#1E1E1E` | ![#F1F1F1 見本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 見本")<br />`#F1F1F1` | ![#1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 見本")<br />`#1E1E1E` | ![ControlText 見本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 見本")<br />`ControlText` |
@@ -348,7 +348,7 @@ ms.locfileid: "55016240"
 
 ### <a name="disabled"></a>無効
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマで無効にされたボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.png "ライト テーマでのボタンを無効になっています") | ![ダーク テーマで無効にされたボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.dark.png "ダーク テーマでのボタンを無効になっています") | ![青のテーマで無効にされたボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.blue.png "青のテーマでのボタンを無効になっています") | ![ハイ コントラスト テーマで無効にされたボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.hc.png "ハイ コントラスト テーマでのボタンを無効になっています") |
 | 前景 | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![#656565 見本](../../extensibility/ux-guidelines/media/656565.png "#656565 見本")<br />`#656565` | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![InactiveCaptionText 見本](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText 見本")<br />`InactiveCaptionText` |
@@ -357,7 +357,7 @@ ms.locfileid: "55016240"
 
 ### <a name="hover"></a>ホバー
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマでのホバー状態ボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.png "ライト テーマでのホバー状態のボタン") | ![ダーク テーマでのホバー状態ボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.dark.png "ダーク テーマでのホバー状態のボタン") | ![青のテーマでのホバー状態ボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.blue.png "青のテーマでのホバー状態のボタン") | ![ハイ コントラスト テーマでのホバー状態ボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "ハイ コントラスト テーマでのホバー状態のボタン") |
 | 前景 | ![#1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 見本")<br />`#1E1E1E` | ![#F1F1F1 見本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 見本")<br />`#F1F1F1` | ![#1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 見本")<br />`#1E1E1E` | ![ActiveCaptionText 見本](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText 見本")<br />`ActiveCaptionText` |
@@ -366,7 +366,7 @@ ms.locfileid: "55016240"
 
 ### <a name="pressed"></a>押されている
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマでの押されたボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.png "ライト テーマでの押されたボタン") | ![ダーク テーマでの押されたボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.dark.png "ダーク テーマでの押されたボタン") | ![青のテーマでの押されたボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.blue.png "青のテーマでの押されたボタン") | ![ハイ コントラスト テーマでの押されたボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "ハイ コントラスト テーマでの押されたボタン") |
 | 前景 | ![#FFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 見本")<br />`#FFFFFF` | ![#F1F1F1 見本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 見本")<br />`#F1F1F1` | ![#FFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 見本")<br />`#FFFFFF` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
@@ -375,7 +375,7 @@ ms.locfileid: "55016240"
 
 ### <a name="focused"></a>フォーカスされている
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマで Focused ボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.png "ライト テーマで Focused ボタン") | ![ダーク テーマで Focused ボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.dark.png "ダーク テーマで Focused ボタン") | ![青のテーマで Focused ボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.blue.png "青のテーマで Focused ボタン") | ![ハイ コントラスト テーマで Focused ボタン](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "ハイ コントラスト テーマで Focused ボタン") |
 | 前景 | ![#1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 見本")<br />`#1E1E1E` | ![#F1F1F1 見本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 見本")<br />`#F1F1F1` | ![#1E1E1E 見本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 見本")<br />`#1E1E1E` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
@@ -389,7 +389,7 @@ ms.locfileid: "55016240"
 
 ### <a name="default"></a>既定値
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマでの既定のチェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.png "ライト テーマでの既定のチェック ボックス") | ![ダーク テーマでの既定のチェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.dark.png "ダーク テーマでの既定のチェック ボックス") | ![青のテーマでの既定のチェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.blue.png "青のテーマでの既定のチェック ボックス") | ![ハイ コントラスト テーマでの既定のチェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.hc.png "ハイ コントラスト テーマでの既定のチェック ボックス") |
 | 背景 | ![#FEFEFE 見本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE 見本")<br />`#FEFEFE` | ![#252526 見本](../../extensibility/ux-guidelines/media/252526.png "#252526 見本")<br />`#252526` | ![#FEFEFE 見本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE 見本")<br />`#FEFEFE` | ![コントロールの見本](../../extensibility/ux-guidelines/media/HCControl.png "コントロール サンプル")<br />`Control` |
@@ -399,7 +399,7 @@ ms.locfileid: "55016240"
 
 ### <a name="disabled"></a>無効
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマでの無効のチェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.png "ライト テーマでのチェック ボックスを無効になっています") | ![ダーク テーマでの無効のチェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.dark.png "ダーク テーマでのチェック ボックスを無効になっています") | ![青のテーマでの無効のチェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.blue.png "青のテーマでのチェック ボックスを無効になっています") | ![ハイ コントラスト テーマでの無効のチェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.hc.png "ハイ コントラスト テーマでのチェック ボックスを無効になっています") |
 | 背景 | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![#2D2D30 見本](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 見本")<br />`#2D2D30` | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![InactiveCaption 見本](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption 見本")<br />`InactiveCaption` |
@@ -409,7 +409,7 @@ ms.locfileid: "55016240"
 
 ### <a name="hover"></a>ホバー
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマでのホバー状態 チェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.png "ライト テーマでのホバー状態 チェック ボックス") | ![ダーク テーマでのホバー状態 チェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.dark.png "ダーク テーマでのホバー状態 チェック ボックス") | ![青のテーマでのホバー状態 チェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.blue.png "青のテーマでのホバー状態 チェック ボックス") | ![ハイ コントラスト テーマでのホバー状態 チェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "ハイ コントラスト テーマでのホバー状態 チェック ボックス") |
 | 背景 | ![#F3F9FF 見本](../../extensibility/ux-guidelines/media/F3F9FF.png "#F3F9FF 見本")<br />`#F3F9FF` | ![#1F1F20 swatch](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 swatch")<br />`#1F1F20` | ![#FDF4BF 見本](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF 見本")<br />`#FDF4BF` | ![見本を強調表示](../../extensibility/ux-guidelines/media/HCHighlight.png "色見本の強調表示")<br />`Highlight` |
@@ -419,7 +419,7 @@ ms.locfileid: "55016240"
 
 ### <a name="pressed"></a>押されている
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマでの押されたチェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.png "ライト テーマでの押されたチェック ボックス") | ![ダーク テーマでの押されたチェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.dark.png "ダーク テーマでの押されたチェック ボックス") | ![青のテーマでの押されたチェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.blue.png "青のテーマでの押されたチェック ボックス") | ![ハイ コントラスト テーマでの押されたチェック ボックス](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "ハイ コントラスト テーマでの押されたチェック ボックス") |
 | 背景 | ![#007ACC 見本](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC 見本")<br />`#007ACC` | ![#007ACC 見本](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC 見本")<br />`#007ACC` | ![#E5C365 見本](../../extensibility/ux-guidelines/media/E5C365.png "#E5C365 見本")<br />`#E5C365` | ![見本を強調表示](../../extensibility/ux-guidelines/media/HCHighlight.png "色見本の強調表示")<br />`Highlight` |
@@ -429,7 +429,7 @@ ms.locfileid: "55016240"
 
 ### <a name="focused"></a>フォーカスされている
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマでのチェック ボックスを Focused](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.png "ライト テーマで Focused チェック ボックス") | ![ダーク テーマでのチェック ボックスを Focused](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.dark.png "ダーク テーマで Focused チェック ボックス") | ![青のテーマでのチェック ボックスを Focused](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.blue.png "青のテーマで Focused チェック ボックス") | ![ハイ コントラスト テーマでのチェック ボックスを Focused](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "ハイ コントラスト テーマで Focused チェック ボックス") |
 | 背景 | ![#FDF4BF 見本](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF 見本")<br />`#FDF4BF` | ![#1F1F20 swatch](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 swatch")<br />`#1F1F20` | ![#FDF4BF 見本](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF 見本")<br />`#FDF4BF` | ![見本を強調表示](../../extensibility/ux-guidelines/media/HCHighlight.png "色見本の強調表示")<br />`Highlight` |
@@ -446,7 +446,7 @@ ms.locfileid: "55016240"
 
 #### <a name="default"></a>既定値
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマでの既定のドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.png "ライト テーマでの既定のドロップダウン/コンボ ボックス") | ![ダーク テーマでの既定のドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.dark.png "ダーク テーマでの既定のドロップダウン/コンボ ボックス") | ![青のテーマでの既定のドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.blue.png "青のテーマでの既定のドロップダウン/コンボ ボックス") | ![ハイ コントラスト テーマでの既定のドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.hc.png "ハイ コントラスト テーマでの既定のドロップダウン/コンボ ボックス") |
 | 背景 | ![## 007ACC 見本](../../extensibility/ux-guidelines/media/007ACC.png "## 007ACC 見本")<br />`##007ACC` | ![#333337 見本](../../extensibility/ux-guidelines/media/333337.png "#333337 見本")<br />`#333337` | ![#FCFCFC 見本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 見本")<br />`#FCFCFC` | ![コントロールの見本](../../extensibility/ux-guidelines/media/HCControl.png "コントロール サンプル")<br />`Control` |
@@ -457,19 +457,19 @@ ms.locfileid: "55016240"
 
 #### <a name="disabled"></a>無効
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマでの無効化されたドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.png "ライト テーマでのドロップダウン/コンボ ボックスを無効になっています") | ![ダーク テーマでの無効化されたドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.dark.png "ダーク テーマでのドロップダウン/コンボ ボックスを無効になっています") | ![青のテーマでの無効化されたドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.blue.png "青のテーマでのドロップダウン/コンボ ボックスを無効になっています") | ![ハイ コントラスト テーマでの無効化されたドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.hc.png "ハイ コントラスト テーマでのドロップダウン/コンボ ボックスを無効になっています") |
 | 背景 | ![#EEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 swatch")<br />`#EEEEF2` | ![#2D2D30 見本](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 見本")<br />`#2D2D30` | ![#DFE7F3 swatch](../../extensibility/ux-guidelines/media/DFE7F3.png "#DFE7F3 swatch")<br />`#DFE7F3` | ![InactiveCaption 見本](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption 見本")<br />`InactiveCaption` |
 | 境界線 | ![#CCCEDB 見本](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 見本")<br />`#CCCEDB` | ![#434346 見本](../../extensibility/ux-guidelines/media/434346.png "#434346 見本")<br />`#434346` | ![#A4ADBA 見本](../../extensibility/ux-guidelines/media/A4ADBA.png "#A4ADBA 見本")<br />`#A4ADBA` | ![InactiveBorder 見本](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder 見本")<br />`InactiveBorder` |
 | テキスト | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![# 656565swatch](../../extensibility/ux-guidelines/media/656565.png "#656565 見本")<br />`#656565` | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![InactiveCaptionText 見本](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText 見本")<br />`InactiveCaptionText` |
-| 区切り記号 | ![#EEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 swatch")<br />`#EEEEF2` | ![#2D2D30 見本](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 見本")<br />`#2D2D30` | ![#D5DCE8 見本](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 見本")<br />`#D5DCE8` | ![InactiveBorder 見本](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder 見本")<br />`InactiveBorder` | 
+| 区切り記号 | ![#EEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 swatch")<br />`#EEEEF2` | ![#2D2D30 見本](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 見本")<br />`#2D2D30` | ![#D5DCE8 見本](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 見本")<br />`#D5DCE8` | ![InactiveBorder 見本](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder 見本")<br />`InactiveBorder` |
 | グリフ | ![#CCCEDB 見本](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 見本")<br />`#CCCEDB` | ![#656565 見本](../../extensibility/ux-guidelines/media/656565.png "#656565 見本")<br />`#656565` | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![InactiveCaptionText 見本](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText 見本")<br />`InactiveCaptionText` |
 | グリフの背景 | ![#EEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 swatch")<br />`#EEEEF2` | ![#2D2D30 見本](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 見本")<br />`#2D2D30` | ![#D5DCE8 見本](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 見本")<br />`#D5DCE8` | ![InactiveCaption 見本](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption 見本")<br />`InactiveCaption` |
 
 #### <a name="hover"></a>ホバー
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマでのホバー状態のドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.png "ライト テーマでのホバー状態のドロップダウン/コンボ ボックス") | ![ダーク テーマでのホバー状態のドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.dark.png "ダーク テーマでのホバー状態のドロップダウン/コンボ ボックス") | ![青のテーマでのホバー状態のドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.blue.png "青のテーマでのホバー状態のドロップダウン/コンボ ボックス") | ![ハイ コントラスト テーマでのホバー状態のドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.hc.png "ハイ コントラスト テーマでのホバー状態のドロップダウン/コンボ ボックス") |
 | 背景 | ![#007ACC 見本](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC 見本")<br />`#007ACC` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FCFCFC 見本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 見本")<br />`#FCFCFC` | ![見本を強調表示](../../extensibility/ux-guidelines/media/HCHighlight.png "色見本の強調表示")<br />`Highlight` |
@@ -481,7 +481,7 @@ ms.locfileid: "55016240"
 
 #### <a name="pressed"></a>押されている
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマでの押されたドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.png "ライト テーマでの押されたドロップダウン/コンボ ボックス") | ![ダーク テーマでの押されたドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.dark.png "ダーク テーマでの押されたドロップダウン/コンボ ボックス") | ![青のテーマでの押されたドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.blue.png "青のテーマでの押されたドロップダウン/コンボ ボックス") | ![ハイ コントラスト テーマでの押されたドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.hc.png "ハイ コントラスト テーマでの押されたドロップダウン/コンボ ボックス") |
 | 背景 | ![#FFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 見本")<br />`#FFFFFF` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FCFCFC 見本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 見本")<br />`#FCFCFC` | ![見本を強調表示](../../extensibility/ux-guidelines/media/HCHighlight.png "色見本の強調表示")<br />`Highlight` |
@@ -493,7 +493,7 @@ ms.locfileid: "55016240"
 
 #### <a name="focused"></a>フォーカスされている
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ライト テーマで Focused ドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.png "ライト テーマで Focused ドロップダウン/コンボ ボックス") | ![ダーク テーマで Focused ドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.dark.png "ダーク テーマで Focused ドロップダウン/コンボ ボックス") | ![青のテーマで Focused ドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.blue.png "青のテーマで Focused ドロップダウン/コンボ ボックス") | ![ハイ コントラスト テーマで Focused ドロップダウン/コンボ ボックス](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.hc.png "ハイ コントラスト テーマで Focused ドロップダウン/コンボ ボックス") |
 | 背景 | ![#FFFFFF 見本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 見本")<br />`#FFFFFF` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FCFCFC 見本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 見本")<br />`#FCFCFC` | ![見本を強調表示](../../extensibility/ux-guidelines/media/HCHighlight.png "色見本の強調表示")<br />`Highlight` |
@@ -511,7 +511,7 @@ ms.locfileid: "55016240"
 
 #### <a name="default"></a>既定値
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 背景 | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![#1B1B1C 見本](../../extensibility/ux-guidelines/media/1B1B1C.png "#1B1B1C 見本")<br />`#1B1B1C` | ![#EFEFEF swatch](../../extensibility/ux-guidelines/media/EFEFEF.png "#EFEFEF swatch")<br />`#EFEFEF` | ![メニュー見本](../../extensibility/ux-guidelines/media/HCMenu.png "メニュー見本")<br />`Menu` |
 | 境界線 | ![#CCCEDB 見本](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 見本")<br />`#CCCEDB` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#98A7B7 swatch](../../extensibility/ux-guidelines/media/98A7B7.png "#98A7B7 swatch")<br />`#98A7B7`| ![MenuText 見本](../../extensibility/ux-guidelines/media/HCMenuText.png "MenuText 見本")<br />`MenuText` |
@@ -520,7 +520,7 @@ ms.locfileid: "55016240"
 
 #### <a name="hover"></a>ホバー
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 背景 | ![#C9DEF5 見本](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 見本")<br />`#C9DEF5` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF 見本](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF 見本")<br />`#FDF4BF` | ![見本を強調表示](../../extensibility/ux-guidelines/media/HCHighlight.png "色見本の強調表示")<br />`Highlight` |
 | 境界線 | ![#CCCEDB 見本](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 見本")<br />`#CCCEDB` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF 見本](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF 見本")<br />`#FDF4BF` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
@@ -528,7 +528,7 @@ ms.locfileid: "55016240"
 
 #### <a name="pressed"></a>押されている
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 背景 |![#C9DEF5 見本](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 見本")<br />`#C9DEF5` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF 見本](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF 見本")<br />`#FDF4BF` | ![見本を強調表示](../../extensibility/ux-guidelines/media/HCHighlight.png "色見本の強調表示")<br />`Highlight` |
 | 境界線 | ![#CCCEDB 見本](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 見本")<br />`#CCCEDB` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF 見本](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF 見本")<br />`#FDF4BF` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
@@ -536,7 +536,7 @@ ms.locfileid: "55016240"
 
 #### <a name="focused"></a>フォーカスされている
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 背景 | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF 見本](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF 見本")<br />`#FDF4BF` | ![見本を強調表示](../../extensibility/ux-guidelines/media/HCHighlight.png "色見本の強調表示")<br />`Highlight` |
 | 境界線 | ![#C9DEF5 見本](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 見本")<br />`#C9DEF5` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` |![#FDF4BF 見本](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF 見本")<br />`#FDF4BF` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
@@ -544,14 +544,14 @@ ms.locfileid: "55016240"
 
 ### <a name="text-input-selection"></a>テキスト入力選択
 
-| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト | 
+| | ライト テーマ | ダーク テーマ | 青のテーマ | ハイコントラスト |
 | --- | :---: | :---: | :---: | :---: |
 | 外観 | ![ドロップダウン/コンボ ボックスのテキスト入力ライト テーマでの選択](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.png "ドロップダウン/コンボ ボックスのテキスト入力ライト テーマでの選択") | ![ドロップダウン/コンボ ボックスのテキストは、ダーク テーマでの選択範囲を入力](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.dark.png "ドロップダウン/コンボ ボックスのテキスト入力のダーク テーマでの選択") | ![ドロップダウン/コンボ ボックスのテキスト入力の青のテーマでの選択](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.blue.png "ドロップダウン/コンボ ボックスのテキスト入力の青のテーマでの選択") | ![ドロップダウン/コンボ ボックスのテキスト入力のハイ コントラスト テーマでの選択](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.hc.png "ドロップダウン/コンボ ボックスのテキスト入力のハイ コントラスト テーマでの選択") |
 | テキスト入力選択 | ![#66007ACC 見本](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC 見本")<br />`#66007ACC` | ![#66007ACC 見本](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC 見本")<br />`#66007ACC` | ![#66007ACC 見本](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC 見本")<br />`#66007ACC` | ![HighlightText 見本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 見本")<br />`HighlightText` |
 
 ## <a name="color-swatches-by-function"></a>関数によって色の見本
 
-| 淡色 | 濃色 | 青 | を使用しています. | 
+| 淡色 | 濃色 | 青 | を使用しています. |
 | :---: | :---: | :---: | --- |
 | ![#FFC9DEF5 見本](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 見本")<br />`#FFC9DEF5`   | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30`   | ![#FFFDF4BF 見本](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF 見本")<br />`#FFFDF4BF` | 動作設定ボタン、コンボ ボックスの項目、コマンド バーのボタン、ドロップダウン ボタン、およびメニュー項目: バック グラウンド |
 | ![#FFCCCEDB 見本](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 見本")<br />`#FFCCCEDB` | ![#FF3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 swatch")<br />`#FF3F3F46` | ![#FF465A7D 見本](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D 見本")<br />`#FF465A7D` | 自動非表示タブ境界線 |

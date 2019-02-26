@@ -1,7 +1,7 @@
 ---
 title: DEBUG_REASON | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0091924c5c117eb8953b5dd3fc70b5cdf446761
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 03b2db1fd58af6a8b2f8a57846e7753cdbc82352
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318603"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707264"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 デバッグ プロセスを起動した理由を指定します。
@@ -46,20 +46,15 @@ public enum enum_DEBUG_REASON {
 ```
 
 #### <a name="parameters"></a>パラメーター
-DEBUG_REASON_ERROR  
-特定できないエラーが発生しました (このとして提供される既定の条件を合わせる上の理由から、もう一方のいずれの場合)。
+DEBUG_REASON_ERROR A 不特定のエラーが発生しました (このとして提供される既定の条件を合わせる上の理由から、もう一方のいずれの場合)。
 
-DEBUG_REASON_USER_LAUNCHED  
-ユーザーの要求プロセスが開始されました。
+ユーザーの要求で DEBUG_REASON_USER_LAUNCHED プロセスが開始されました。
 
-DEBUG_REASON_USER_ATTACHED  
-既に実行中のプロセスは、ユーザーに関連付けられました。
+DEBUG_REASON_USER_ATTACHED、既に実行中のプロセスは、ユーザーに関連付けられました。
 
-DEBUG_REASON_AUTO_ATTACHED  
-プロセスが起動したときに自動的にアタッチします。
+DEBUG_REASON_AUTO_ATTACHED プロセスに自動的に添付起動したとき。
 
-DEBUG_REASON_CAUSALITY  
-プロセスを起動したために、*ジャスト イン タイム*(JIT) デバッグ イベント。
+ために、プロセスを起動した DEBUG_REASON_CAUSALITY、*ジャスト イン タイム*(JIT) デバッグ イベント。
 
 ## <a name="remarks"></a>Remarks
 返される、 [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)メソッド。
@@ -72,5 +67,5 @@ DEBUG_REASON_CAUSALITY
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::GetThreadProperties |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::GetThreadProperties
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41164b906ba3fca25347aaa65031b4dd5befe48
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: b32ec64123ef8db4724c7646c54af790fc7500a1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449841"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714648"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 このスレッドを記述するプロパティを取得します。
@@ -39,11 +39,13 @@ int GetThreadProperties (
 ```
 
 #### <a name="parameters"></a>パラメーター
-`dwFields`  
-[in]フラグの組み合わせ、 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)のどのフィールドを決定する列挙型`ptp`入力します。
+`dwFields`
 
-`ptp`  
-[入力、出力]A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)構造体のスレッドのプロパティが入力されます。
+ [in]フラグの組み合わせ、 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)のどのフィールドを決定する列挙型`ptp`入力します。
+
+`ptp`
+
+ [入力、出力]A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)構造体のスレッドのプロパティが入力されます。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -91,6 +93,6 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
-[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)  
-[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)
+- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

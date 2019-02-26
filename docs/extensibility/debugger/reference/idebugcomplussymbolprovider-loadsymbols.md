@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::LoadSymbols |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1469c2a0d8332371bb38be2616ae7dcf6a61fe37
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4c19070dce95a1f88398fe57d03e9d578086e9ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413372"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678203"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 メモリ内の指定されたデバッグ シンボルを読み込みます。
@@ -46,23 +46,29 @@ int LoadSymbols(
 ```
 
 #### <a name="parameters"></a>パラメーター
-`ulAppDomainID`  
-[in]アプリケーション ドメインの識別子。
+`ulAppDomainID`
 
-`guidModule`  
-[in]Mondule の一意の識別子。
+ [in]アプリケーション ドメインの識別子。
 
-`baseAddress`  
-[in]基本のメモリ アドレス。
+`guidModule`
 
-`pUnkMetadataImport`  
-[in]シンボルのメタデータを含むオブジェクト。
+ [in]Mondule の一意の識別子。
 
-`bstrModuleName`  
-[in]モジュールの名前。
+`baseAddress`
 
-`bstrSymSearchPath`  
-[in]シンボル ファイルを検索するパス。
+ [in]基本のメモリ アドレス。
+
+`pUnkMetadataImport`
+
+ [in]シンボルのメタデータを含むオブジェクト。
+
+`bstrModuleName`
+
+ [in]モジュールの名前。
+
+`bstrSymSearchPath`
+
+ [in]シンボル ファイルを検索するパス。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -84,4 +90,4 @@ HRESULT CDebugSymbolProvider::LoadSymbols(
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3650f59f4ad9fe690064d9972b3280bf5bbd15d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318486"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681310"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>基本的なプロジェクト システム、第 2 部を作成します。
 このシリーズでは、最初のチュートリアル[基本的なプロジェクト システム、第 1 部作成](../extensibility/creating-a-basic-project-system-part-1.md)、基本的なプロジェクト システムを作成する方法を示しています。 このチュートリアルでは、Visual Studio テンプレート、プロパティ ページでは、その他の機能を追加して、基本的なプロジェクト システムに基づいています。 この 1 つを開始する前に、最初のチュートリアルを完了する必要があります。
@@ -40,7 +40,7 @@ ms.locfileid: "56318486"
 > このチュートリアルの手順は、c# プロジェクトに基づいています。 ただし、ファイル名拡張子とコードなどの詳細を除く、Visual Basic プロジェクトと同じ手順を使用できます。
 
 ## <a name="create-a-visual-studio-template"></a>Visual Studio テンプレートを作成します。
-[基本的なプロジェクト システム、第 1 部作成](../extensibility/creating-a-basic-project-system-part-1.md)基本的なプロジェクト テンプレートを作成し、プロジェクト システムに追加する方法を示します。 Visual Studio でこのテンプレートを使用して登録する方法も示します、 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 、属性の完全なパスを書き込む、 *\\Templates\Projects\SimpleProject\\*システム内のフォルダーレジストリ。
+- [基本的なプロジェクト システム、第 1 部作成](../extensibility/creating-a-basic-project-system-part-1.md)基本的なプロジェクト テンプレートを作成し、プロジェクト システムに追加する方法を示します。 Visual Studio でこのテンプレートを使用して登録する方法も示します、 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 、属性の完全なパスを書き込む、 *\\Templates\Projects\SimpleProject\\*システム内のフォルダーレジストリ。
 
 Visual Studio テンプレートを使用して (*.vstemplate*ファイル)、基本的なプロジェクト テンプレートではなく、テンプレートでの表示方法を制御できます、**新しいプロジェクト** ダイアログ ボックスとテンプレートのパラメーターは代わりに使用します。 A *.vstemplate*ファイルはソース ファイルのプロジェクト システムのテンプレートを使用して、プロジェクトが作成されるときに含まれる方法を説明する XML ファイルです。 収集することで、プロジェクト システム自体が構築された、 *.vstemplate*ファイルとソース ファイルで、 *.zip*ファイルを開き、コピーすることによって展開されている、 *.zip*ファイルをある場所にVisual Studio に正常。 このプロセスは、このチュートリアルの後半で詳しく説明します。
 
@@ -271,7 +271,7 @@ Visual Studio テンプレートを使用して、プロジェクト階層を作
     ![単純なプロジェクト コンソール ノード](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
 
 ## <a name="substitute-project-template-parameters"></a>プロジェクト テンプレートのパラメーターを置き換える
-[基本的なプロジェクト システムを作成するには、パート 1](../extensibility/creating-a-basic-project-system-part-1.md)を上書きする方法を示しました、`ProjectNode.AddFileFromTemplate`メソッドをテンプレート パラメーター置換の基本的な種類の操作を行います。 このセクションより高度な Visual Studio テンプレートのパラメーターを使用する方法を説明します。
+- [基本的なプロジェクト システムを作成するには、パート 1](../extensibility/creating-a-basic-project-system-part-1.md)を上書きする方法を示しました、`ProjectNode.AddFileFromTemplate`メソッドをテンプレート パラメーター置換の基本的な種類の操作を行います。 このセクションより高度な Visual Studio テンプレートのパラメーターを使用する方法を説明します。
 
 Visual Studio テンプレートを使用してプロジェクトを作成するときに、**新しいプロジェクト**ダイアログ ボックスで、プロジェクトをカスタマイズする文字列のテンプレートとパラメーターが置き換えられます。 テンプレート パラメーターは、始まり $time$ など、ドル記号で終了する特別なトークンです。 次の 2 つのパラメーターは、テンプレートに基づいてプロジェクトでカスタマイズを有効にするために特に便利です。
 

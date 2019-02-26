@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetSymAttribute |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymAttribute
 - GetSymAttribute
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c46719b7de97e2a55eefb28d9e27df1557a90e65
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: bc0b5f5c8b435358464bd8b8f3984aee54af79b1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413359"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701226"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 指定したモジュールの指定した親属性で、デバッグ シンボルを取得します。
@@ -48,26 +48,33 @@ int GetSymAttribute (
 ```
 
 #### <a name="parameters"></a>パラメーター
-`ulAppDomainID`  
-[in]アプリケーション ドメインの識別子。
+`ulAppDomainID`
 
-`guidModule`  
-[in]モジュールの一意の識別子。
+ [in]アプリケーション ドメインの識別子。
 
-`tokParent`  
-[in]親属性のトークンです。
+`guidModule`
 
-`pstrName`  
-[in]モジュールの名前。
+ [in]モジュールの一意の識別子。
 
-`cBuffer`  
-[in]出力に必要なバイト数`buffer`します。
+`tokParent`
 
-`pcBuffer`  
-[out]出力の長さ`buffer`します。
+ [in]親属性のトークンです。
 
-`buffer`  
-[out]シンボルを含む配列。
+`pstrName`
+
+ [in]モジュールの名前。
+
+`cBuffer`
+
+ [in]出力に必要なバイト数`buffer`します。
+
+`pcBuffer`
+
+ [out]出力の長さ`buffer`します。
+
+`buffer`
+
+ [out]シンボルを含む配列。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
@@ -104,4 +111,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

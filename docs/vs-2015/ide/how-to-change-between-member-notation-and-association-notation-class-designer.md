@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: メンバー表記と関連付け表記 (クラス デザイナー) の間の変更 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -46,7 +46,7 @@ ms.locfileid: "54777326"
   
      関連行が表示されなくなり、ダイアグラムの型の図形内の適切なコンパートメントにプロパティが表示されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [方法: 型の間の継承を作成する (クラス デザイナー)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
  [方法: 型の間の継承を表示する (クラス デザイナー)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)   

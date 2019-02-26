@@ -1,7 +1,7 @@
 ---
 title: DEBUG_PROPERTY_INFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_PROPERTY_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5c17dd03a3e037023fc307eecf33714acbeaab3
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 11facd5b7de76aa407ef28366b789870cdad03c4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413008"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710059"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 デバッグ プロパティについてを説明します。
@@ -49,26 +49,19 @@ public struct DEBUG_PROPERTY_INFO {
 ```
 
 ## <a name="members"></a>メンバー
-dwValidFields  
-フラグの組み合わせ、 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)どのフィールドに入力を指定する列挙体。
+フラグの組み合わせを dwValidFields A、 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)どのフィールドに入力を指定する列挙体。
 
-bstrFullName  
-プロパティの完全名。
+bstrFullName プロパティの完全名。
 
-bstrName  
-コンテキスト内でプロパティ名。
+bstrName、コンテキスト内でプロパティ名。
 
-bstrType  
-書式設定された文字列としてプロパティの型。
+bstrType プロパティは、書式設定された文字列として入力します。
 
-bstrValue  
-書式設定された文字列としてプロパティ値です。
+bstrValue プロパティの値として書式設定された文字列。
 
-プロパティ  
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)この構造体で表されるオブジェクト。
+プロパティ、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)この構造体で表されるオブジェクト。
 
-dwAttrib  
-フラグの組み合わせ、 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)このプロパティの属性を説明する列挙です。
+フラグの組み合わせを dwAttrib A、 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)このプロパティの属性を説明する列挙です。
 
 ## <a name="remarks"></a>Remarks
 プロパティは、名前、型、および値を持つ階層的な性質のオブジェクトです。 たとえば、プロパティには、ローカル変数、パラメーター、ウォッチ変数と式、およびレジスタを記述できます。
@@ -83,11 +76,11 @@ dwAttrib
 アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-[構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)  
-[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)  
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)  
-[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)  
-[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)  
-[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)  
-[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
+- [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
+- [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)
+- [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)
+- [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)
+- [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)

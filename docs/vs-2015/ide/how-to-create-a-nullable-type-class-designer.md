@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: Null 許容型 (クラス デザイナー) の作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -81,7 +81,7 @@ ms.locfileid: "54834918"
   
 5.  クラスの図形を右クリックし、**[クラスの詳細]** をクリックします。 **[クラスの詳細]** ウィンドウで、新しい型のプロパティを表示または変更できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  <xref:System.Nullable%601>   
  [Null 許容型](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
  [Null 許容型の使用](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
