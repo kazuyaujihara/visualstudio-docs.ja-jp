@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 311ccb546d1712fc21e6ca01a69b5aa50a21786b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721824"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796752"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio のフォントと書式
 ##  <a name="BKMK_TheEnvironmentFont"></a> 環境フォント
@@ -101,9 +101,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
 
 #### <a name="375-environment-font--light"></a>375% 環境フォント + Light
- **として表示されます。** 34 pt Segoe UI Light**の使用:** (まれな) 一意ブランド化された UI など、Visual Studio 2017 のスタート ページで
 
- **手続き型コード:** 場所`textBlock`が以前に定義された TextBlock と`label`以前に定義されたラベルには。
+**として表示されます。** 34 pt Segoe UI Light
+
+::: moniker range="vs-2017"
+
+**使用:** (まれな) 一意ブランド UI では、このようなスタート ページに
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**使用:** (まれな) 一意のブランド化された UI
+
+::: moniker-end
+
+**手続き型コード:** 場所`textBlock`が以前に定義された TextBlock と`label`以前に定義されたラベルには。
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -112,7 +125,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
- **XAML:** TextBlock またはに示すようにラベルのスタイルを設定します。
+**XAML:** TextBlock またはに示すようにラベルのスタイルを設定します。
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -406,9 +419,21 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="310-environment-font--light"></a>310% 環境フォント + Light
 
+::: moniker range="vs-2017"
+
 |||
 |-|-|
 |**使用法:**<br /><br /> 署名のダイアログ ボックスよりも大きな見出し<br />-メイン レポートの見出し<br /><br /> **操作を行います。**<br /><br /> -文のケースを使用します。<br />-常に使用して、ライト ウェイト<br /><br /> **できません：**<br /><br /> -使用して UI の署名などのスタート ページの UI 以外<br />-太字、斜体または太字斜体<br />本文テキストの使用<br />-ツール ウィンドウで使用します。|**として表示されます。** 28 pt Segoe UI Light<br /><br /> **ビジュアルの使用例:**<br /><br /> ![310% 環境フォントの例&#43;Light の見出し](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|||
+|-|-|
+|**使用法:**<br /><br /> 署名のダイアログ ボックスよりも大きな見出し<br />-メイン レポートの見出し<br /><br /> **操作を行います。**<br /><br /> -文のケースを使用します。<br />-常に使用して、ライト ウェイト<br /><br /> **できません：**<br /><br /> -使用して UI の署名 UI 以外<br />-太字、斜体または太字斜体<br />本文テキストの使用<br />-ツール ウィンドウで使用します。|**として表示されます。** 28 pt Segoe UI Light<br /><br /> **ビジュアルの使用例:**<br /><br /> ![310% 環境フォントの例&#43;Light の見出し](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
 
 #### <a name="200-environment-font--semilight"></a>200% 環境フォント + Semilight
 

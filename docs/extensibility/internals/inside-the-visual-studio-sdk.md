@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978270"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796674"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK の内部
 ここでは、Visual Studio のアーキテクチャ、コンポーネント、サービス、スキーマ、ユーティリティ、およびなどを含む、Visual Studio 拡張機能に関する詳細な情報を示します。
@@ -28,7 +28,7 @@ ms.locfileid: "54978270"
  ![環境アーキテクチャ グラフィック](../../extensibility/internals/media/environment.gif "環境")Visual Studio のアーキテクチャのビューを汎用化
 
 ## <a name="vspackages"></a>VSPackages
- VSPackage は、UI 要素、サービス、プロジェクト、エディター、およびデザイナーで Visual Studio を構成および拡張するソフトウェア モジュールです。 Vspackage は、Visual Studio のサーバーの全体アーキテクチャ単位です。 詳細については、「 [VSPackages](../../extensibility/internals/vspackages.md)」を参照してください。
+ VSPackage は、UI 要素、サービス、プロジェクト、エディター、およびデザイナーで Visual Studio を構成および拡張するソフトウェア モジュールです。 Vspackage は、Visual Studio のサーバーの全体アーキテクチャ単位です。 詳細については、「[VSPackages](../../extensibility/internals/vspackages.md)」を参照してください。
 
 ## <a name="visual-studio-shell"></a>Visual Studio Shell
  Visual Studio shell は、基本的な機能を提供し、そのコンポーネント Vspackage および MEF 拡張機能間の相互通信をサポートします。 詳細については、次を参照してください。 [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md)します。
@@ -55,13 +55,13 @@ ms.locfileid: "54978270"
 
  ツール ウィンドウは、通常ユーザーが操作できるさまざまなコントロールを提供します。 たとえば、**プロパティ**ウィンドウでは、ユーザーが特定の目的で使用されるオブジェクトのプロパティを設定できます。 **プロパティ**ウィンドウは、この意味で特別ながも一般的なさまざまな状況で使用できるためです。 同様に、**出力**ウィンドウが Visual Studio での多くのサブシステムを使用すると、Visual Studio ユーザーに出力を提供する使用できますが、一般的なテキスト ベースの出力を提供するために特殊化されました。
 
- いくつかのツール ウィンドウを含む、Visual Studio の次の図を検討してください。
+ いくつかのツール ウィンドウを含む、Visual Studio の次の図を考慮してください。
 
  ![スクリーン ショット](../../extensibility/internals/media/t1gui.png "T1gui")
 
  ツール ウィンドウの一部は、ソリューション エクスプ ローラー ツール ウィンドウを表示し、その他のツール ウィンドウを非表示がタブをクリックして利用できるように 1 つのペインにまとめてドッキングされます。 図は、その他の 2 つのツール ウィンドウを示しています、**エラー一覧**と**出力**ウィンドウで、1 つのペインにまとめてドッキングされます。
 
- また、メイン ドキュメントのウィンドウでは、いくつかのエディター ウィンドウを示しています。 ツール ウィンドウは通常 1 つのインスタンスが (たとえば、いずれかのみを開くことができます**ソリューション エクスプ ローラー**)、エディター ウィンドウが、個別のドキュメントを編集するが使用されますですべてのドッキングの複数のインスタンスを持つことができます同じウィンドウ。 この図では 2 つのエディター ウィンドウ、1 つのフォーム デザイナー ウィンドウとスタート ページを表示するブラウザー ウィンドウを持つドキュメント ウィンドウを使用します。 ドキュメント ウィンドウで、すべての windows は、タブをクリックしてが EditorPane.cs ファイルを含むエディター ウィンドウが表示され、アクティブ。
+ また、メイン ドキュメントのウィンドウでは、いくつかのエディター ウィンドウを示しています。 ツール ウィンドウは通常 1 つのインスタンスが (たとえば、いずれかのみを開くことができます**ソリューション エクスプ ローラー**)、エディター ウィンドウが、個別のドキュメントを編集するが使用されますですべてのドッキングの複数のインスタンスを持つことができます同じウィンドウ。 この図では 2 つのエディター ウィンドウ、1 つのフォーム デザイナー ウィンドウを持つドキュメント ウィンドウを使用します。 ドキュメント ウィンドウで、すべての windows は、タブをクリックしてが EditorPane.cs ファイルを含むエディター ウィンドウが表示され、アクティブ。
 
  Visual Studio を拡張すると、拡張機能で、ユーザーが Visual Studio windows を操作するツールを作成できます。 Visual Studio ユーザーがドキュメントを編集できる、独自のエディターを作成することもできます。 ツール ウィンドウおよびエディターは、Visual Studio に統合される予定であるために、ドッキングまたはタブに正しく表示することをプログラムする必要はありません。 Visual Studio で正しく登録されたときに、自動的にあるツール ウィンドウと Visual Studio のドキュメント ウィンドウの一般的な機能。 詳細については、次を参照してください。[拡張とカスタマイズ ツール Windows](../../extensibility/extending-and-customizing-tool-windows.md)します。
 
