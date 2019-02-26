@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a002ca0696f18aa8c524b27be27047ed29b9b25
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720498"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796596"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio 拡張機能の配布
 拡張機能の開発が完了したらは、他のコンピューターにインストールして、友人や同僚と共有または Visual Studio Marketplace に発行できます。 このセクションで発行し、拡張機能を維持するために行う必要があるすべての事項を説明します。 .vsix ファイル、公開、ローカライズ、および更新を使用します。
@@ -25,7 +25,7 @@ ms.locfileid: "56720498"
 ## <a name="working-with-vsix-extensions"></a>VSIX 拡張機能の使用
  VSIX 拡張機能は、空の VSIX プロジェクトを作成し、別の項目テンプレートにして作成できます。 詳細については、次を参照してください。 [VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)します。
 
- VSIX 形式を使用して、パッケージ プロジェクト テンプレート、項目テンプレート、Vspackage、Managed Extensibility Framework (MEF) コンポーネント、**ツールボックス**コントロール、アセンブリ、およびカスタム型 (カスタム スタート ページを含む)。 VSIX 形式では、ファイル ベースの展開を使用します。 VSIX パッケージの詳細については、次を参照してください。 [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)します。
+ VSIX 形式を使用して、パッケージ プロジェクト テンプレート、項目テンプレート、Vspackage、Managed Extensibility Framework (MEF) コンポーネント、**ツールボックス**コントロール、アセンブリ、およびカスタム型 (を含むカスタム スタート ページ ビジュアルStudio 2017)。 VSIX 形式では、ファイル ベースの展開を使用します。 VSIX パッケージの詳細については、次を参照してください。 [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)します。
 
  VSIX 形式は、コード スニペットのインストールをサポートしていません。 グローバル アセンブリ キャッシュ (GAC) またはシステム レジストリへの書き込みなどの他の特定のシナリオもサポートしません。 GAC またはインストールのレジストリに書き込む必要がある場合は、Windows インストーラーを使用する必要があります。 詳細については、次を参照してください。[を準備する拡張機能の Windows インストーラーの配置](../extensibility/preparing-extensions-for-windows-installer-deployment.md)します。
 

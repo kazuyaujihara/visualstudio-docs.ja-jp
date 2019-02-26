@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953347c79470b4a77fcd590a1107416f5fcce872
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0d132c9689348fa728fc639d2aa3c8ecd8ba9e25
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694284"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796791"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio のアニメーション
 ## <a name="animation-fundamentals"></a>アニメーションの基礎
@@ -305,7 +305,7 @@ Visual Studio でのアニメーションは、ユーザーの生産性を低下
 
 -   アーキテクチャ エクスプ ローラー パネルの展開および折りたたみ
 
--   スタート ページの項目の展開および折りたたみ
+-   Visual Studio 2017 のスタート ページの項目の展開および折りたたみ
 
 #### <a name="x-y-position-change"></a>X と Y 位置の変更
 このパターンでは、UI 要素は、X または Y の位置またはその両方を変更します。
