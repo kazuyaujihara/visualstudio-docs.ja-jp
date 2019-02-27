@@ -39,7 +39,7 @@ MSBuild.exe 使用して、ソリューション内の特定のプロジェク�
 msbuild SlnFolders.sln /t:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Command-Line Reference (コマンド ライン リファレンス)](../msbuild/msbuild-command-line-reference.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
  [MSBuild](msbuild.md)  
