@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0c1ed6e2fdd461b0fdf502c01089aeafd9a87cb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925631"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720602"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>グラフィックス API とメモリの統計情報
 <!-- VERSIONLESS --> Visual Studio 2017 およびそれ以降は、グラフィックス API 統計情報とメモリの統計情報のツールをサポートします。  これら 2 つのツールを使用して、さまざまなリソースの GPU メモリ使用量と、Direct3D API 使用量情報のさまざまな部分を表示できます。
@@ -39,7 +39,7 @@ CSV で、さらに詳しい分析の Excel のようなものに貼り付ける
 
 API 統計情報ツールと同様を右クリックしてコピーすべてのデータをウィンドウとして CSV で、さらに詳しい分析の Excel のように貼り付けることができます。
 
-## <a name="see-also"></a>関連項目  
-[グラフィックス診断 (DirectX グラフィックスのデバッグ)](visual-studio-graphics-diagnostics.md)   
-[リソース履歴](graphics-event-list.md#resource-history)
+## <a name="see-also"></a>参照
+- [グラフィックス診断 (DirectX グラフィックスのデバッグ)](visual-studio-graphics-diagnostics.md)
+- [リソース履歴](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

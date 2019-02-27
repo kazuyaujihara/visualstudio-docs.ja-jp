@@ -1,4 +1,4 @@
-﻿---
+---
 title: 使用可能なソースがありません |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,28 +17,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671593cf19eab22d1b7e233481ee4004ca8ed8ee
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 85d1d1307a119fa23bf7ba015130ab9c7b6f69d5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925100"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703696"
 ---
 # <a name="no-source-available"></a>使用できるソースはありません
-表示しようとしているコードのソース コードがプロジェクトに含まれていません。 原因として、**[呼び出し履歴]** ウィンドウまたは **[スレッド]** ウィンドウで、ソース コードのないモジュールをダブルクリックしたことが考えられます。 デバッグは継続できますが、ソース ウィンドウを使ってブレークポイントを設定したり、この場所で他のアクションを実行したりすることはできません。 ブレークポイントを設定する必要があるときは、代わりに **[逆アセンブリ]** ウィンドウを使用します。  
-  
- [ソリューション  プロパティ ページ] で、デバッガーがソース ファイルを検索するディレクトリを変更したり、選択されたソース ファイルをデバッガーが無視したりするように設定できます。 参照してください[デバッグ ソース ファイル、一般的なプロパティは、ソリューション プロパティ ページ ダイアログ ボックス](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)します。  
-  
- **[参照してソースを検索]**  
- このリンクをクリックすると、参照してソース コードを検索できるダイアログ ボックスが開きます。  
-  
- **[逆アセンブルの表示]**  
- **[逆アセンブル]** ウィンドウを起動します。  
-  
- **[見つからないソース ファイルには常に逆アセンブルを表示する]**  
- このオプションをオンにすると、利用できるソースがない場合に **[逆アセンブル] ウィンドウ**が自動的に表示されます。 この設定は、**[オプション]** ダイアログ ボックス、**[デバッグ]** カテゴリ、**[全般]** ページで、**[ソースがない場合は逆アセンブルの表示]** をオンまたはオフにすることによっても変更できます。  
-  
-## <a name="see-also"></a>関連項目
- [[デバッグ ソース ファイル] ([ソリューション プロパティ ページ] ダイアログ ボックス - [共通プロパティ])](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
- [シンボル (.pdb) とソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [SOS.dll (SOS デバッガー拡張)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)
+表示しようとしているコードのソース コードがプロジェクトに含まれていません。 原因として、**[呼び出し履歴]** ウィンドウまたは **[スレッド]** ウィンドウで、ソース コードのないモジュールをダブルクリックしたことが考えられます。 デバッグは継続できますが、ソース ウィンドウを使ってブレークポイントを設定したり、この場所で他のアクションを実行したりすることはできません。 ブレークポイントを設定する必要があるときは、代わりに **[逆アセンブリ]** ウィンドウを使用します。
+
+ [ソリューション  プロパティ ページ] で、デバッガーがソース ファイルを検索するディレクトリを変更したり、選択されたソース ファイルをデバッガーが無視したりするように設定できます。 参照してください[デバッグ ソース ファイル、一般的なプロパティは、ソリューション プロパティ ページ ダイアログ ボックス](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)します。
+
+ **ソース コードを検索する参照**ソース コードを検索して参照できるダイアログ ボックスを開くには、このリンクをクリックします。
+
+ **[逆アセンブルを表示する**起動、**逆アセンブル] ウィンドウ**します。
+
+ **見つからないソース ファイルの逆アセンブルが常に表示**を表示するには、このオプションを選択、**逆アセンブル ウィンドウ**自動的にソースが使用できない場合。 この設定は、**[オプション]** ダイアログ ボックス、**[デバッグ]** カテゴリ、**[全般]** ページで、**[ソースがない場合は逆アセンブルの表示]** をオンまたはオフにすることによっても変更できます。
+
+## <a name="see-also"></a>参照
+- [[デバッグ ソース ファイル] ([ソリューション プロパティ ページ] ダイアログ ボックス - [共通プロパティ])](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
+- [シンボルとソース コードの管理](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [SOS.dll (SOS デバッガー拡張)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

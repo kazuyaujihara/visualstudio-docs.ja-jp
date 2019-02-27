@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48650731d9f3493d1b399aae0345792e04e5eada
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
+ms.openlocfilehash: 37786442124eafea719454ac94c704984f1703f3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316107"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623425"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 ターゲットのレジスタを指定します。
@@ -409,38 +409,27 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>Elements
-CV_REG_*  
-登録して、Intel 80x86 および ix86 プロセッサを p コードを使用します。
+CV_REG_ * を使用して、Intel 80x86 および ix86 プロセッサを p コードを登録します。
 
-CV_R68_*  
-68 K プロセッサによって使用されるレジスタ。
+CV_R68_ * 68 K プロセッサで使用を登録します。
 
-CV_M4_ *  
-MIPS 4000 シリーズのプロセッサで使用される登録します。
+CV_M4_ * MIPS 4000 シリーズのプロセッサで使用される登録します。
 
-CV_ALPHA_*  
-Digital Equipment Corporation Alpha AXP シリーズのプロセッサで使用される登録します。
+CV_ALPHA_ * Digital Equipment Corporation Alpha AXP シリーズのプロセッサで使用される登録します。
 
-CV_PPC_*  
-登録/IBM Motorola PowerPC プロセッサで使用します。
+CV_PPC_ */IBM Motorola PowerPC プロセッサで使用を登録します。
 
-CV_SH3_ * と CV_SH_\*  
-日立 SH3 と日立 SH シリーズのプロセッサで使用される登録します。
+CV_SH3_ * と CV_SH_\*日立 SH3 と日立 SH シリーズのプロセッサによって使用されるレジスタ。
 
-CV_ARM_*  
-Advanced RISC Machine (ARM) プロセッサが使用を登録します。
+CV_ARM_ * Advanced RISC Machine (ARM) プロセッサが使用を登録します。
 
-CV_IA64_*  
-Intel の IA64 シリーズのプロセッサで使用される登録します。
+CV_IA64_ * Intel の IA64 シリーズのプロセッサで使用される登録します。
 
-CV_TRI_*  
-Infineon テクノロジ TriCore プロセッサによって使用されるレジスタ。
+CV_TRI_ * Infineon テクノロジ TriCore プロセッサで使用を登録します。
 
-CV_AM33_*  
-レジスタは松下/Panasonic AM33 によって使用され、プロセッサに関連します。
+CV_AM33_ * 登録し、松下/Panasonic AM33 で使用される、プロセッサに関連します。
 
-CV_M32R_*  
-三菱 M32R プロセッサによって使用されるレジスタ。
+CV_M32R_ * 三菱 M32R プロセッサで使用を登録します。
 
 ## <a name="remarks"></a>解説
 各プロセッサの種類は、独自のレジスタのセットを使用します。
@@ -461,9 +450,9 @@ CV_M32R_*
 ヘッダー: cvconst.h
 
 ## <a name="see-also"></a>関連項目
-[列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
-[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)  
-[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)  
-[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)  
-[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
+- [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
+- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)
+- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)
+- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)
+- [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

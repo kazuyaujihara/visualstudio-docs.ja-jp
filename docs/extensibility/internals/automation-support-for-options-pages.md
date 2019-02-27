@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34d59fbfe6213bbcec1311cf9ad6216b3d8c86c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81cf358d3dfb8fc45a4f696b0483e28673094d44
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629146"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840459"
 ---
 # <a name="automation-support-for-options-pages"></a>[オプション] ページのオートメーションをサポートします。
 Vspackage は、ユーザー設定を提供できる**オプション** ダイアログ ボックス、**ツール**メニュー (**ツール オプション**ページ) で[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]自動化に利用できるように、モデル。
@@ -34,7 +34,7 @@ Vspackage は、ユーザー設定を提供できる**オプション** ダイ�
 
 4. 各を提供する VSPackage のオートメーション オブジェクトを使用して<xref:EnvDTE.Property>によって返される<xref:EnvDTE._DTE.Properties%2A>します。
 
-   カスタムの実装サンプル**ツール オプション**ページを参照してください[VSSDK のサンプル](http://aka.ms/vs2015sdksamples)します。
+   カスタムの実装サンプル**ツール オプション**ページを参照してください[VSSDK のサンプル](https://aka.ms/vs2015sdksamples)します。
 
 ## <a name="see-also"></a>関連項目
 - [プロジェクト オブジェクトを公開します。](../../extensibility/internals/exposing-project-objects.md)

@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 122a71289fc11e4301476c90e7ed9267cce18681
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4cd768220b25ec93ffdb4f038db475304db71333
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014823"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605537"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
-関数がで返すことはありませんとしてマークされているかどうかを指定するフラグを取得、 [noreturn](/cpp/cpp/noreturn)属性。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_noReturn(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- pFlag  
- [out]返します`TRUE`で返すことはありませんとして関数を宣言されているかどうか、 `noreturn` 、それ以外の属性`FALSE`します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
-  
+関数がで返すことはありませんとしてマークされているかどうかを指定するフラグを取得、 [noreturn](/cpp/cpp/noreturn)属性。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_noReturn(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ pFlag
+
+[out]返します`TRUE`で返すことはありませんとして関数を宣言されているかどうか、 `noreturn` 、それ以外の属性`FALSE`します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
-  
-## <a name="requirements"></a>要件  
-  
-|必要条件|説明|  
-|-----------------|-----------------|  
-|ヘッダー:|dia2.h|  
-|バージョン:|DIA SDK バージョン 8.0|  
-  
-## <a name="see-also"></a>関連項目  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [noreturn](/cpp/cpp/noreturn)
+>  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+
+## <a name="requirements"></a>要件
+
+|必要条件|説明|
+|-----------------|-----------------|
+|ヘッダー:|dia2.h|
+|バージョン:|DIA SDK バージョン 8.0|
+
+## <a name="see-also"></a>関連項目
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [noreturn](/cpp/cpp/noreturn)

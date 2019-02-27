@@ -7,18 +7,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: c6a0ba1f44d9e6d9cc0dbcce03af2705e370cbb6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e819e4935a14d3902245432b5a5c843071af0fbf
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965460"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843235"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio の Kubernetes ツールを概要します。
 
 Visual Studio の Kubernetes ツールは、Kubernetes を対象とするコンテナー化されたアプリケーションの開発を合理化に役立ちます。 Visual Studio では、Dockerfile と Helm グラフなど、Kubernetes のデプロイをサポートするために必要なコードとしての構成ファイルを自動的に作成できます。 Azure 開発用のスペースを使用してライブ Azure Kubernetes Service (AKS) クラスターでコードをデバッグまたはから AKS クラスターに直接発行することが Visual Studio 内で。
 
-このチュートリアルでは、Visual Studio を使用して、Kubernetes のサポートをプロジェクトに追加し、AKS を公開するについて説明します。 使用して、主に関心がある場合[Azure Dev スペース](http://aka.ms/get-azds)にジャンプできるでデバッグして AKS で実行されているプロジェクトをテストする、 [Azure Dev スペース チュートリアル](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)代わりにします。
+このチュートリアルでは、Visual Studio を使用して、Kubernetes のサポートをプロジェクトに追加し、AKS を公開するについて説明します。 使用して、主に関心がある場合[Azure Dev スペース](https://aka.ms/get-azds)にジャンプできるでデバッグして AKS で実行されているプロジェクトをテストする、 [Azure Dev スペース チュートリアル](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)代わりにします。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
@@ -78,7 +78,7 @@ ASP.NET Core の種類は、web アプリケーションを作成し、選択で
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Azure Kubernetes Service (AKS) への公開します。
 
-これらすべてのファイルの場所で使用するがいつもと同じようを作成して、アプリケーション コードをデバッグ、Visual Studio IDE を使用できます。 使用することも[Azure Dev スペース](http://aka.ms/get-azds)をすばやく実行し、AKS クラスターでライブ実行するコードをデバッグします。 詳細についてを参照してください、 [Azure 開発用のスペースのチュートリアル](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+これらすべてのファイルの場所で使用するがいつもと同じようを作成して、アプリケーション コードをデバッグ、Visual Studio IDE を使用できます。 使用することも[Azure Dev スペース](https://aka.ms/get-azds)をすばやく実行し、AKS クラスターでライブ実行するコードをデバッグします。 詳細についてを参照してください、 [Azure 開発用のスペースのチュートリアル](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 作成したら、希望どおりに実行されているコードを AKS クラスターに Visual Studio から直接発行することができます。
 
@@ -120,4 +120,4 @@ ASP.NET Core の種類は、web アプリケーションを作成し、選択で
 
 読み取ることによって Azure で Kubernetes 開発に関する詳細、 [AKS のドキュメント](/azure/aks)します。
 
-詳細については、Azure 開発用のスペースを読み取るして、 [Azure 開発用のスペースのドキュメント](http://aka.ms/get-azds)
+詳細については、Azure 開発用のスペースを読み取るして、 [Azure 開発用のスペースのドキュメント](https://aka.ms/get-azds)

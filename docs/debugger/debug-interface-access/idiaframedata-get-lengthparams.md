@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiaframedata::get_lengthparams |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed753a3ead3689aea7dd9806eae68a2ecb8b891
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 712f7ee9eaf497fc5dd176f3f254d5af73ebcf3b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917251"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620240"
 ---
 # <a name="idiaframedatagetlengthparams"></a>IDiaFrameData::get_lengthParams
-スタックにプッシュするパラメーターのバイト数を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_lengthParams (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]パラメーターのバイト数を返します。  
-  
-## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
-  
-## <a name="remarks"></a>コメント  
- このメソッドによって返される値がプログラム文字列の解釈で通常使用される (を参照してください、 [idiaframedata::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)プログラム文字列の定義のメソッド)。  
-  
-## <a name="see-also"></a>関連項目
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
+スタックにプッシュするパラメーターのバイト数を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_lengthParams ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]パラメーターのバイト数を返します。
+
+## <a name="return-value"></a>戻り値
+ 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+
+## <a name="remarks"></a>解説
+ このメソッドによって返される値がプログラム文字列の解釈で通常使用される (を参照してください、 [idiaframedata::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)プログラム文字列の定義のメソッド)。
+
+## <a name="see-also"></a>参照
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

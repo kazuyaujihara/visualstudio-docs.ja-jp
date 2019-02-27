@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 876868d8c2faf483f1033bab1ff8ac14f6e9ab10
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88c2198f0908e0ef8f7918d42f4ba256378e0e60
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956910"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841845"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl ファイル
 
@@ -70,7 +70,7 @@ ms.locfileid: "55956910"
 
 このセクションで定義を集めてデザイナー (エディター)、**ツールボックス**検証の設定、図、およびシリアル化スキーム。 Designer セクションでは、モデルのルート クラスも定義されます。これは通常、図のルート クラスでもあります。
 
-### <a name="explorer"></a>エクスプローラー
+### <a name="explorer"></a>Explorer
 
 このセクションで、 **DSL エクスプ ローラー** (XmlSerializationBehavior セクションで定義されている) 動作します。
 
@@ -78,7 +78,7 @@ ms.locfileid: "55956910"
 
 DslDefinition.dsl ファイルでは、モニカーを使用して特定の項目のクロス リファレンスを作成できます。 たとえば、リレーションシップの各定義には Source サブセクションと Target サブセクションが含まれています。 各サブセクションには、そのリレーションシップを使用してリンクできるオブジェクトのクラスのモニカーが含まれています。
 
-```
+```xml
 <DomainRelationship ...        Name="LibraryHasMembers" Namespace="ExampleNamespace" >    <Source>      <DomainRole ...>
        <RolePlayer>
          <DomainClassMoniker Name="Library" />
@@ -89,7 +89,7 @@ DslDefinition.dsl ファイルでは、モニカーを使用して特定の項�
 
 通常、参照される項目 (この例では `Library` ドメイン クラス) の名前空間は、参照元項目 (この例では LibraryHasMembers ドメイン リレーションシップ) と同じです。 これらの場合、モニカーによってクラス名だけが指定される必要があります。 それ以外の場合は、/Namespace/Name という完全な形式を使用する必要があります。
 
-```
+```xml
 <DomainClassMoniker Name="/ExampleNameSpace/Library" />
 ```
 
@@ -107,7 +107,7 @@ Types セクションでは、DslDefinition.dsl ファイルにプロパティ�
 
 各外部型の定義は、名前と名前空間 (String と System など) だけで構成されます。
 
-```
+```xml
 <ExternalType Name="String" Namespace="System" />
 ```
 
@@ -119,7 +119,7 @@ Types セクションでは、DslDefinition.dsl ファイルにプロパティ�
 
 標準的な列挙型の指定は次の例のようになります。
 
-```
+```xml
 <DomainEnumeration IsFlags="true" Name="PageSort"          Namespace="Fabrikam.Wizard">
   <Literals>
     <EnumerationLiteral Name="Start" Value="1"/>
@@ -136,7 +136,7 @@ Types セクションでは、DslDefinition.dsl ファイルにプロパティ�
 
 各クラスには一連のプロパティがあります。また、クラスに基底クラスが含まれていることもあります。 コンポーネント図の例では、`NamedElement` は `Name` プロパティ (型は文字列) を持つ抽象クラスです。
 
-```
+```xml
 <DomainClass Id="ee3161ca-2818-42c8-b522-88f50fc72de8"  Name="NamedElement" Namespace="Fabrikam.CmptDsl5"      DisplayName="Named Element"  InheritanceModifier="Abstract">
   <Properties>
     <DomainProperty Id="ef553cf0-33b5-4e34-a30b-cfcfd86f2261"   Name="Name" DisplayName="Name"  DefaultValue="" Category="" IsElementName="true">
@@ -150,7 +150,7 @@ Types セクションでは、DslDefinition.dsl ファイルにプロパティ�
 
 `NamedElement` は、`Component` などのその他の複数のクラスの基底クラスであり、`Name` から継承した `NamedElement` プロパティのほかに固有のプロパティを持ちます。 BaseClass 子ノードにはモニカー参照が含まれています。 参照先クラスは同じ名前空間内にあるので、モニカーで必要となるのはその名前だけです。
 
-```
+```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
   <BaseClass>
     <DomainClassMoniker Name="NamedElement" />
@@ -194,7 +194,7 @@ Types セクションでは、DslDefinition.dsl ファイルにプロパティ�
 
 型は `Types` セクションにリストされている型の 1 つを参照している必要があります。 一般に、モニカーには名前空間を含める必要があります。
 
-```
+```xml
 <DomainProperty Name="Name" DisplayName="Name"  DefaultValue="" Category="" IsElementName="true">
   <Type>
     <ExternalTypeMoniker Name="/System/String" />
@@ -246,13 +246,13 @@ Types セクションでは、DslDefinition.dsl ファイルにプロパティ�
 
 -   ロールの `Name` は、Relationship クラス内で使用され、リンクの該当する端を指す名前です。 規則により、ロール名は常に単数形です。これは、各リンクのそれぞれの端にあるインスタンスが 1 つのみであるためです。 したがって、次のコードは機能します。
 
-    ```
+    ``` 
     Connection connectionLink = ...; OutPort op = connectionLink.Source;
     ```
 
 -   既定では、`IsPropertyGenerator` 属性は true に設定されています。 この属性が false に設定されている場合、Role Player クラスでプロパティが作成されません。 (この場合 `op.Targets` などは機能しません)。 ただし、カスタム コードを使用してリレーションシップを走査できます。または、カスタム コードでリレーションシップが明示的に使用されている場合は、リンク自体へのアクセスを取得することができます。
 
-    ```
+    ``` 
     OutPort op = ...; foreach (InPort ip in Connection.GetTargets(op)) ...
     foreach (Connection link in Connection.GetLinksToTargets(op)) ...
     ```
@@ -287,7 +287,7 @@ DslDefinition.dsl ファイルではパスは `<DomainPath>...</DomainPath>` タ
 
 コンポーネント図の例では、ShapeMap の ParentElementPath に InPort のパスが含まれています。 このパスは次のように始まります。
 
-```
+``` 
     ComponentHasPorts.Component
 ```
 
@@ -295,13 +295,13 @@ DslDefinition.dsl ファイルではパスは `<DomainPath>...</DomainPath>` タ
 
 このモデルに対して c# を記述する場合に関連するクラスの各リレーションシップを生成するプロパティを使用して、1 つの手順でリンク経由でジャンプできます。
 
-```
+``` 
      InPort port; ...  Component c = port.Component;
 ```
 
 ただし、両方のホップは明示的にパス構文で行う必要があります。 この要件から、中間リンクへのアクセスが容易になります。 リンクから Component へのホップを実行するコードを次に示します。
 
-```
+``` 
     ComponentHasPorts.Component / ! Component
 ```
 
@@ -313,7 +313,7 @@ DslDefinition.dsl ファイルではパスは `<DomainPath>...</DomainPath>` タ
 
 Component などのホスト クラスで新しい要素が受け入れられるのは、ホスト クラスに、新しい要素のクラスのための要素マージ ディレクティブが含まれている場合に限ります。 たとえば Name="Component"が指定されている DomainClass ノードの内容が、次のようであるとします。
 
-```
+```xml
 <DomainClass Name="Component" ...> ...
     <ElementMergeDirective>
       <Index>
@@ -337,7 +337,7 @@ Index ノードの下のクラス モニカーは、受け入れ可能な要素�
 
 たとえば、この要素マージ ディレクティブを Component クラスに追加できます。
 
-```
+```xml
 <DomainClass Name="Component" ...> ...
   <ElementMergeDirective>
     <Index>
@@ -372,7 +372,7 @@ Index ノードの下のクラス モニカーは、受け入れ可能な要素�
 
 -   **ElementName**文字列で、このクラスのシリアル化されたインスタンスの XML タグを決定します。 規則では、ElementName は通常、最初の文字が小文字であることを除きクラス名と同一です。 たとえば、サンプル モデル ファイルは次のように始まります。
 
-    ```
+    ```xml
     <componentModel ...
     ```
 
@@ -380,7 +380,7 @@ Index ノードの下のクラス モニカーは、受け入れ可能な要素�
 
 -   **MonikerAttributeName**モニカー内の XML 属性の名前を識別します。 ドメイン固有言語の作成者によって定義されているユーザーのシリアル化されたファイルのフラグメントで**MonikerElementName** "inPortMoniker"としてと**MonikerAttributeName** "path"として。
 
-    ```
+    ```xml
     <inPortMoniker path="//Component2/InPort1" />
     ```
 
@@ -400,7 +400,7 @@ A **DomainPropertyMoniker**属性は、データが参照するプロパティ�
 
 シリアル化モデル ファイルでは、要素の完全なモニカーはモデル ルートから埋め込みリレーションシップ ツリーへのパスであり、各ポイントでモニカー キーが引用符で囲まれています。 たとえば、InPort は Component に埋め込まれており、Component はモデル ルートに埋め込まれています。 したがって有効なモニカーは次のようになります。
 
-```
+```xml
 <inPortMoniker name="//Component2/InPort1" />
 ```
 
@@ -418,7 +418,7 @@ A **DomainPropertyMoniker**属性は、データが参照するプロパティ�
 
 たとえば DslDefinition.dsl ファイルには次のコードが含まれています。
 
-```
+```xml
 <XmlClassData ElementName="component" ...>
   <DomainClassMoniker Name="Component" />
   <ElementData>
@@ -429,10 +429,10 @@ A **DomainPropertyMoniker**属性は、データが参照するプロパティ�
 
 したがって、シリアル化ファイルの内容は次のようになります。
 
-```
-<component name="Component1"> <!-- parent ->
-   <ports> <!-- role ->
-     <outPort name="OutPort1"> <!-- child element ->
+```xml
+<component name="Component1"> <!-- parent -->
+   <ports> <!-- role -->
+     <outPort name="OutPort1"> <!-- child element -->
        ...
      </outPort>
    </ports> ...
@@ -440,7 +440,7 @@ A **DomainPropertyMoniker**属性は、データが参照するプロパティ�
 
 場合、 **UseFullForm**属性に設定されて true の場合、入れ子のレイヤーが導入されます。 このレイヤーはリレーションシップ自体を表します。 リレーションシップにプロパティが含まれている場合、この属性を true に設定する必要があります。
 
-```
+```xml
 <XmlClassData ElementName="outPort">
    <DomainClassMoniker Name="OutPort" />
    <ElementData>
@@ -453,11 +453,11 @@ A **DomainPropertyMoniker**属性は、データが参照するプロパティ�
 
 シリアル化ファイルの内容は次のようになります。
 
-```
-<outPort name="OutPort1">  <!-- Parent ->
-   <targets>  <!-- role ->
-     <connection sourceRoleName="X">  <!-- relationship link ->
-         <inPortMoniker name="//Component2/InPort1" /> <!-- child ->
+```xml
+<outPort name="OutPort1">  <!-- Parent -->
+   <targets>  <!-- role -->
+     <connection sourceRoleName="X">  <!-- relationship link -->
+         <inPortMoniker name="//Component2/InPort1" /> <!-- child -->
      </connection>
     </targets>
   </outPort>
@@ -467,9 +467,9 @@ A **DomainPropertyMoniker**属性は、データが参照するプロパティ�
 
 場合、 **OmitElement**属性の設定を true に、リレーションシップ ロール名を省略すると、2 つのクラスは、複数のリレーションシップを持つ場合は、あいまいでないし、シリアル化されたファイルで省略しています。 例:
 
-```
+```xml
 <component name="Component3">
-  <!-- only one relationship could get here: ->
+  <!-- only one relationship could get here: -->
   <outPort name="OutPort1">
      <targets> ...
 ```
@@ -482,7 +482,7 @@ DslDefinition.dsl ファイル自体がシリアル化ファイルであり、�
 
 -   **クラス**は、 **RoleElementName**のドメイン固有言語と DomainClass 間のリレーションシップ。
 
-```
+```xml
 <Dsl Name="CmptDsl5" ...>
   <Classes>
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
@@ -490,7 +490,7 @@ DslDefinition.dsl ファイル自体がシリアル化ファイルであり、�
 
 -   **XmlSerializationBehavior**属性が下に埋め込まれて、`Dsl`属性が、 **OmitElement**埋め込みリレーションシップ属性が設定されています。 したがって、その間に `RoleElementName` 属性がありません。 これに対し、 **ClassData**属性は、`RoleElementName`間の埋め込みリレーションシップの属性、 **XmlSerializationBehavior**属性および**XmlClassData**属性。
 
-```
+```xml
 <Dsl Name="CmptDsl5" ...> ...
   <XmlSerializationBehavior Name="ComponentsSerializationBehavior" >
     <ClassData>
@@ -500,7 +500,7 @@ DslDefinition.dsl ファイル自体がシリアル化ファイルであり、�
 
 -   ConnectorHasDecorators は、`Connector` と `Decorator` の間の埋め込みリレーションシップです。 `UseFullForm` が設定されているため、Connector オブジェクトからの各リンクのプロパティ リストに、リレーションシップの名前が含まれます。 ただし `OmitElement` も設定されているため、`RoleElementName` 内部に埋め込まれている複数のリンクは `Connector` によって囲まれません。
 
-```
+```xml
 <Connector Name="AssociationLink" ...>
   <ConnectorHasDecorators Position="TargetTop" ...>
     <TextDecorator Name="TargetRoleName"   />
@@ -527,7 +527,7 @@ DslDefinition.dsl ファイル自体がシリアル化ファイルであり、�
 
 次の例に示すように、`ShapeMap` 要素には最小限でもドメイン クラスのモニカー、シェイプのモニカー、および `ParentElementPath` 要素が含まれています。
 
-```
+```xml
 <ShapeMap>
   <DomainClassMoniker Name="InPort" />
   <ParentElementPath>
@@ -549,7 +549,7 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 このモデルのルートにはシェイプ マップはありません。 代わりに、ルートは `Class` 要素を持つ図から直接参照されます。
 
-```
+```xml
 <Diagram Name="ComponentDiagram" >
     <Class>
       <DomainClassMoniker Name="ComponentModel" />
@@ -568,7 +568,7 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 最小のコネクタ マップは、1 つのコネクタと 1 つのリレーションシップを参照します。
 
-```
+```xml
 <ConnectorMap>
   <ConnectorMoniker Name="CommentLink" />
   <DomainRelationshipMoniker Name="CommentsReferenceComponents" />

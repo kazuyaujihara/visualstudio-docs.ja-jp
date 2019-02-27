@@ -1,4 +1,4 @@
-﻿---
+---
 title: オブジェクトのカスタム ビューの作成 |Microsoft Docs
 ms.date: 01/08/2019
 ms.topic: conceptual
@@ -23,15 +23,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57480eff4e2ad6e6c33008be6f1bbc2a2f332432
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 748305683ad8f874c985e2599028152d608ccc84
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015096"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597423"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>オブジェクトのカスタム ビューの作成 (C#、Visual Basic、C++)
-Visual Studio でデバッガーの変数ウィンドウにデータ型を表示する方法をカスタマイズできます。  
+Visual Studio でデバッガーの変数ウィンドウにデータ型を表示する方法をカスタマイズできます。
 
 ## <a name="native-code"></a>ネイティブ コード
 
@@ -39,16 +39,17 @@ Visual Studio でデバッガーの変数ウィンドウにデータ型を表示
 
 ## <a name="attributes"></a>属性
 
-C#、Visual Basic、および C++ (C +/cli CLI コードのみ)、カスタム データを使用するための拡張を追加する<xref:System.Diagnostics.DebuggerTypeProxyAttribute>、 <xref:System.Diagnostics.DebuggerDisplayAttribute>、および<xref:System.Diagnostics.DebuggerBrowsableAttribute>します。  
-  
-[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] コードでは、Visual Basic は DebuggerBrowsable 属性をサポートしません。 この制限は、.NET Framework の新しいバージョンで解除されています。    
+C#、Visual Basic、および C++ (C +/cli CLI コードのみ)、カスタム データを使用するための拡張を追加する<xref:System.Diagnostics.DebuggerTypeProxyAttribute>、 <xref:System.Diagnostics.DebuggerDisplayAttribute>、および<xref:System.Diagnostics.DebuggerBrowsableAttribute>します。
+
+[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] コードでは、Visual Basic は DebuggerBrowsable 属性をサポートしません。 この制限は、.NET Framework の新しいバージョンで解除されています。
 
 ## <a name="visualizers"></a>ビジュアライザー
 
-マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、「[方法 :ビジュアライザーを記述する](/visualstudio/debugger/create-custom-visualizers-of-data)
-  
-## <a name="see-also"></a>関連項目
- [DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)   
- [DebuggerDisplay 属性の使用](../debugger/using-the-debuggerdisplay-attribute.md)   
- [ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)   
- [デバッガー表示属性によるデバッグ機能の拡張](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、次を参照してください。[方法: ビジュアライザーを記述する](/visualstudio/debugger/create-custom-visualizers-of-data)します。
+
+## <a name="see-also"></a>参照
+
+- [DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)
+- [DebuggerDisplay 属性の使用](../debugger/using-the-debuggerdisplay-attribute.md)
+- [ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)
+- [デバッガー表示属性によるデバッグ機能の拡張](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
