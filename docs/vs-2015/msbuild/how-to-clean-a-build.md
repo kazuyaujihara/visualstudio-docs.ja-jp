@@ -102,7 +102,7 @@ ms.locfileid: "54780748"
 </Project>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Exec タスク](../msbuild/exec-task.md)   
  [MakeDir タスク](../msbuild/makedir-task.md)   
  [RemoveDir タスク](../msbuild/removedir-task.md)   
