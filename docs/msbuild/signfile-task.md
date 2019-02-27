@@ -18,37 +18,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec3dbc52c381b5e691ecf7a8072a85da70e43fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 496017f386e731e553bfce237bd1d2eabea46f49
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961963"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608982"
 ---
 # <a name="signfile-task"></a>SignFile タスク
 
 指定された証明書を使用して、指定されたファイルに署名します。
-  
+
 ## <a name="parameters"></a>パラメーター
 
  `SignFile` タスクのパラメーターの説明を次の表に示します。
-  
+
  SHA-256 の証明書は .NET 4.5 以上が実行されているコンピューター上でのみ許可されることに注意してください。
-  
+
 > [!WARNING]
 > Visual Studio 2013 Update 3 以降、このタスクには、ファイルのターゲット フレームワークのバージョンを指定できる新しい署名が用意されています。 ターゲット フレームワークが .NET 4.5 以上の場合のみ MSBuild プロセスで SHA-256 ハッシュが使用されるため、可能な限り新しい署名を使用することをお勧めします。 ターゲット フレームワークが .NET 4.0 以下である場合、SHA-256 ハッシュは使用されません。
-  
+
 |パラメーター|説明|
 |---------------|-----------------|
 |`CertificateThumbprint`|必須の `String` 型のパラメーターです。<br /><br /> 署名に使用する証明書を指定します。 この証明書は、現在のユーザーの個人ストアにある必要があります。|
 |`SigningTarget`|必須の <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> 証明書で署名するファイルを指定します。|
 |`TimestampUrl`|省略可能な `String` 型のパラメーターです。<br /><br /> タイム スタンプ サーバーの URL を指定します。|
 |`TargetFrameworkVersion`|ターゲットに使用される .NET Framework のバージョンです。|
-  
-## <a name="remarks"></a>コメント
+
+## <a name="remarks"></a>解説
 
  上記のパラメーターに加えて、このタスクは <xref:Microsoft.Build.Utilities.Task> クラスからパラメーターを継承します。 これらの追加パラメーターのリストとその説明については、「[Task 基底クラス](../msbuild/task-base-class.md)」を参照してください。
-  
+
 ## <a name="example"></a>例
 
  次に、`SignFile` タスクを使用して、`FilesToSign` アイテム コレクションで指定したファイルに、`Certificate` プロパティで指定された証明書で署名する例を示します。
@@ -72,7 +72,7 @@ ms.locfileid: "54961963"
 
 > [!NOTE]
 > 証明書の拇印は、証明書の SHA-1 ハッシュです。 詳細については、[信頼されたルート CA 証明書の SHA-1 ハッシュの取得](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\))に関する記事を参照してください。 証明書の詳細から拇印をコピーして貼り付けた場合は、余分な (3F) 表示されない文字が含まれていないことを確認します。含まれていると、`SignFile` で証明書を検索できない可能性があります。
-  
-## <a name="see-also"></a>関連項目  
- [タスク リファレンス](../msbuild/msbuild-task-reference.md)   
- [タスク](../msbuild/msbuild-tasks.md)
+
+## <a name="see-also"></a>関連項目
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [タスク](../msbuild/msbuild-tasks.md)

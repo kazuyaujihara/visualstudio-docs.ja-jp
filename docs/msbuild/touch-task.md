@@ -18,51 +18,51 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c329b68449d9c92d6e501f81f2e3f0d2978cf5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96bf92f6e0649a2d1eedda63d6159c3de95ae6bd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003176"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608631"
 ---
 # <a name="touch-task"></a>Touch タスク
-ファイルのアクセス時刻および変更時刻を設定します。  
-  
-## <a name="parameters"></a>パラメーター  
- `Touch` タスクのパラメーターの説明を次の表に示します。  
-  
-|パラメーター|説明|  
-|---------------|-----------------|  
-|`AlwaysCreate`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、まだ存在しないファイルが作成されます。|  
-|`Files`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> タッチするファイルのコレクションを指定します。|  
-|`ForceTouch`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、ファイルが読み取り専用でもファイルにタッチします。|  
-|`Time`|省略可能な `String` 型のパラメーターです。<br /><br /> 現在の時刻以外の時刻を指定します。 <xref:System.DateTime.Parse%2A> メソッドで有効な形式で指定する必要があります。|  
-|`TouchedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 正常にタッチされた項目のコレクションが含まれます。|  
-  
-## <a name="remarks"></a>コメント  
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
-  
-## <a name="example"></a>例  
- 次の例では `Touch` タスクを使用して、`Files` 項目コレクションに指定されたファイルのアクセス時刻および更新時刻を変更し、`FilesTouched` 項目コレクションに正常にタッチされたファイルのリストを配置しています。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-<ItemGroup>  
-    <Files Include="File1.cs;File2.cs;File3.cs" />  
-</ItemGroup>  
-  
-    <Target Name="TouchFiles">  
-        <Touch  
-            Files="@(Files)">  
-            <Output  
-                TaskParameter="TouchedFiles"  
-                ItemName="FilesTouched"/>  
-    </Touch>  
-</Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [タスク](../msbuild/msbuild-tasks.md)   
- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+ファイルのアクセス時刻および変更時刻を設定します。
+
+## <a name="parameters"></a>パラメーター
+ `Touch` タスクのパラメーターの説明を次の表に示します。
+
+|パラメーター|説明|
+|---------------|-----------------|
+|`AlwaysCreate`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、まだ存在しないファイルが作成されます。|
+|`Files`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> タッチするファイルのコレクションを指定します。|
+|`ForceTouch`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、ファイルが読み取り専用でもファイルにタッチします。|
+|`Time`|省略可能な `String` 型のパラメーターです。<br /><br /> 現在の時刻以外の時刻を指定します。 <xref:System.DateTime.Parse%2A> メソッドで有効な形式で指定する必要があります。|
+|`TouchedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 正常にタッチされた項目のコレクションが含まれます。|
+
+## <a name="remarks"></a>解説
+ 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
+
+## <a name="example"></a>例
+ 次の例では `Touch` タスクを使用して、`Files` 項目コレクションに指定されたファイルのアクセス時刻および更新時刻を変更し、`FilesTouched` 項目コレクションに正常にタッチされたファイルのリストを配置しています。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+<ItemGroup>
+    <Files Include="File1.cs;File2.cs;File3.cs" />
+</ItemGroup>
+
+    <Target Name="TouchFiles">
+        <Touch
+            Files="@(Files)">
+            <Output
+                TaskParameter="TouchedFiles"
+                ItemName="FilesTouched"/>
+    </Touch>
+</Target>
+</Project>
+```
+
+## <a name="see-also"></a>関連項目
+- [タスク](../msbuild/msbuild-tasks.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

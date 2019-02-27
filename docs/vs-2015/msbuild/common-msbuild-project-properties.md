@@ -129,5 +129,5 @@ ms.locfileid: "54758471"
 |Win32Manifest|最終的なアセンブリに埋め込むマニフェスト ファイルの名前です。 このパラメーターは、`/win32Manifest` コンパイラ スイッチに相当します。|  
 |Win32Resource|最終的なアセンブリに埋め込む Win32 リソースのファイル名です。 このパラメーターは、`/win32resource` コンパイラ スイッチに相当します。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)

@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 802c20a21b624e868cddac4badfd8827ef765506
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866192"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630900"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>チュートリアル: SharePoint アプリケーション ページを作成します。
- 
+
 アプリケーション ページとは、特殊なフォームの ASP.NET ページです。 アプリケーション ページには、SharePoint のマスター ページとマージされるコンテンツが含まれます。 詳細については、次を参照してください。[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)です。
 
 このチュートリアルでは、アプリケーション ページを作成し、そのページをローカル SharePoint サイトを使ってデバッグする方法を説明します。 このページには、サーバー ファーム上のあらゆるサイトで、各ユーザーが作成または変更したすべての項目が表示されます。
@@ -153,5 +153,5 @@ Visual Web Designer を使用して、SharePoint ページの内容をデザイ�
 
 ## <a name="see-also"></a>関連項目
 
-[方法: アプリケーション ページを作成します。](../sharepoint/how-to-create-an-application-page.md)  
-[アプリケーション _layouts ページ型](http://go.microsoft.com/fwlink/?LinkID=169274)
+[方法: アプリケーション ページを作成](../sharepoint/how-to-create-an-application-page.md)
+[アプリケーション _layouts ページの種類](http://go.microsoft.com/fwlink/?LinkID=169274)

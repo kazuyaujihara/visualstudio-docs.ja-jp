@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 449fd3b31f9e640d3fe02007baf7012af974c954
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 70d86074dabc4365d1d0336f191beada215f4dc1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853993"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640637"
 ---
 # <a name="compare-properties-and-items"></a>プロパティと項目を比較する
 MSBuild のプロパティと項目は、いずれもタスクに情報を渡し、条件を評価し、プロジェクト ファイルで参照する値を格納しておくために使用されます。
@@ -180,4 +180,4 @@ KeyFileVersion: 1.0.0.3
 ```
 
 ## <a name="see-also"></a>関連項目
-[詳細な概念](../msbuild/msbuild-advanced-concepts.md)
+- [詳細な概念](../msbuild/msbuild-advanced-concepts.md)

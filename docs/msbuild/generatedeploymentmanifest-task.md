@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3afbee1d4f0aee1dbf752ca241521ee121d00975
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb06b656b107dce623ea75df162b20a1ea34b401
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937497"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610321"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest タスク
 
@@ -61,13 +61,13 @@ ms.locfileid: "54937497"
 | `UpdateMode` | 省略可能な `String` 型のパラメーターです。<br /><br /> 更新プログラムの確認を、アプリケーションを起動する前にフォアグラウンドで行うのか、アプリケーションの実行中にバックグラウンドで行うのかを指定します。 このパラメーターには、次の値を指定できます。<br /><br /> -   `Foreground`<br />-   `Background`<br /><br /> このパラメーターの既定値は、`Background` です。 このパラメーターは、`Install` パラメーターおよび `UpdateEnabled` パラメーターの両方が `true` である場合にのみ適用されます。 |
 | `UpdateUnit` | 省略可能な `String` 型のパラメーターです。<br /><br /> `UpdateInterval` パラメーターの単位を指定します。 このパラメーターには、次の値を指定できます。<br /><br /> -   `Hours`<br />-   `Days`<br />-   `Weeks`<br /><br /> このパラメーターは、`Install` パラメーターおよび `UpdateEnabled` パラメーターの両方が `true` である場合にのみ適用されます。 |
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.GenerateManifestBase> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 Task クラスのパラメーターの一覧については、「[Task Base Class](../msbuild/task-base-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-[タスク](../msbuild/msbuild-tasks.md)  
-[GenerateApplicationManifest タスク](../msbuild/generateapplicationmanifest-task.md)  
-[SignFile タスク](../msbuild/signfile-task.md)  
-[タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [タスク](../msbuild/msbuild-tasks.md)
+- [GenerateApplicationManifest タスク](../msbuild/generateapplicationmanifest-task.md)
+- [SignFile タスク](../msbuild/signfile-task.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

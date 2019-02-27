@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: a190a17147530fe42cd6bb9e95b313527eb16b0d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155696"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840420"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>チュートリアル: Visual Studio の Visual Basic の概要
 
@@ -38,7 +38,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されているコンソール アプリ (.NET Core) プロジェクト テンプレート](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>ワークグループを追加する (省略可能)
+### <a name="add-a-workload-optional"></a>ワークロードを追加する (省略可能)
 
 **コンソール アプリ (.NET Core)** プロジェクト テンプレートが表示されない場合は、**.NET Core クロスプラットフォームの開発**ワークロードを追加して取得できます。 コンピューターにインストールされている Visual Studio 2017 の更新プログラムに応じて、次の 2 つの方法のうちのいずれかでこのワークロードを追加することができます。
 

@@ -19,26 +19,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfa56e76c3bd31572385499dd5055fd63f359a8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16a73ac066ff0b61570f0ed918308cf8874121d7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948233"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607799"
 ---
 # <a name="setenv-task"></a>SetEnv タスク
-指定された環境変数の値を設定または削除します。  
-  
-## <a name="parameters"></a>パラメーター  
- **SetEnv** タスクのパラメーターの説明を次の表に示します。  
-  
-|パラメーター|説明|  
-|---------------|-----------------|  
-|**Name**|必須の **String** 型のパラメーターです。<br /><br /> 環境変数の名前。|  
-|**OutputEnvironmentVariable**|省略可能な **String** 型の出力パラメーターです。<br /><br /> **Name** パラメーターによって指定される環境変数に割り当てられる値が含まれます。|  
-|**Prefix**|必須の `Boolean` パラメーターです。<br /><br /> `true` の場合、**Name** パラメーターによって指定される環境変数値の前に **Value** パラメーターの値を連結し、結果を環境変数に割り当てます。 `false` の場合、**Value** パラメーターの値のみを環境変数に割り当てます。|  
-|**Target**|省略可能な **String** 型のパラメーターです。<br /><br /> 環境変数が保存される場所を指定します。 "User" または "Machine" を指定します。<br /><br /> 詳細については、「[EnvironmentVariableTarget 列挙型](xref:System.EnvironmentVariableTarget)」をご覧ください。|  
-|**[値]**|省略可能な **String** 型のパラメーターです。<br /><br /> **Name** パラメーターによって指定される環境変数に割り当てられる値。 **Value** が空で変数が存在する場合、変数が削除されます。 変数が存在しない場合、操作が実行できなくてもエラーは発生しません。<br /><br /> 詳細については、「[Environment::SetEnvironmentVariable メソッド](xref:System.Environment.SetEnvironmentVariable%2A)」を参照してください。|  
-  
-## <a name="see-also"></a>関連項目  
- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+指定された環境変数の値を設定または削除します。
+
+## <a name="parameters"></a>パラメーター
+ **SetEnv** タスクのパラメーターの説明を次の表に示します。
+
+|パラメーター|説明|
+|---------------|-----------------|
+|**Name**|必須の **String** 型のパラメーターです。<br /><br /> 環境変数の名前。|
+|**OutputEnvironmentVariable**|省略可能な **String** 型の出力パラメーターです。<br /><br /> **Name** パラメーターによって指定される環境変数に割り当てられる値が含まれます。|
+|**Prefix**|必須の `Boolean` パラメーターです。<br /><br /> `true` の場合、**Name** パラメーターによって指定される環境変数値の前に **Value** パラメーターの値を連結し、結果を環境変数に割り当てます。 `false` の場合、**Value** パラメーターの値のみを環境変数に割り当てます。|
+|**Target**|省略可能な **String** 型のパラメーターです。<br /><br /> 環境変数が保存される場所を指定します。 "User" または "Machine" を指定します。<br /><br /> 詳細については、「[EnvironmentVariableTarget 列挙型](xref:System.EnvironmentVariableTarget)」をご覧ください。|
+|**[値]**|省略可能な **String** 型のパラメーターです。<br /><br /> **Name** パラメーターによって指定される環境変数に割り当てられる値。 **Value** が空で変数が存在する場合、変数が削除されます。 変数が存在しない場合、操作が実行できなくてもエラーは発生しません。<br /><br /> 詳細については、「[Environment::SetEnvironmentVariable メソッド](xref:System.Environment.SetEnvironmentVariable%2A)」を参照してください。|
+
+## <a name="see-also"></a>関連項目
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

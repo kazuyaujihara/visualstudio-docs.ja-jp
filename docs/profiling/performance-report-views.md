@@ -12,37 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8586bff16bdcf8a67d8d1e27abb37b13efa5ce4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8fd4e411fdb9b49a67f5fbddb27d2a0102cdc755
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041972"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632824"
 ---
 # <a name="performance-report-views"></a>パフォーマンス レポートのビュー
-このセクションでは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのレポートおよびビューに関するリファレンス情報を提供します。 プロファイリング データ ファイルのビューは、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 統合開発環境 (IDE) で表示されます。 レポートは、[VSPerfReport](../profiling/vsperfreport.md) コマンド ライン ツールによって生成されます。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [共通のデータ ビュー](../profiling/common-data-views.md)  
- すべてのプロファイリング方法に共通のプロファイリング データ ファイルのビューとレポートに関するリファレンス情報です。  
-  
- [サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)  
- サンプリング メソッドを使用して生成されたプロファイリング データ ファイルのビューとレポートに関するリファレンス情報。  
-  
- [インストルメンテーション メソッドのデータ ビュー](../profiling/instrumentation-method-data-views.md)  
- インストルメンテーション メソッドを使用して生成されたプロファイリング データ ファイルのビューとレポートに関するリファレンス情報。  
-  
- [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)  
- .NET メモリ データを含むプロファイリング データ ファイルのビューとレポートに関するリファレンス情報。  
-  
- [リソース競合データのビュー](../profiling/resource-contention-data-views.md)  
- コンカレンシー メソッドを使用して生成されたプロファイリング データ ファイルのビューとレポートに関するリファレンス情報。  
-  
- [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)  
- コンカレンシー メソッドを使用して生成され、スレッド実行データを含む、プロファイリング データ ファイルのビューとレポートに関するリファレンス情報。  
-  
- [階層相互作用のビュー](../profiling/tier-interactions-view.md)  
- 階層相互作用データを含むプロファイリング データ ファイルの相互作用のビューとレポートに関するリファレンス情報。  
-  
-## <a name="see-also"></a>関連項目  
- [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)
+このセクションでは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのレポートおよびビューに関するリファレンス情報を提供します。 プロファイリング データ ファイルのビューは、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 統合開発環境 (IDE) で表示されます。 レポートは、[VSPerfReport](../profiling/vsperfreport.md) コマンド ライン ツールによって生成されます。
+
+## <a name="in-this-section"></a>このセクションの内容
+- [共通のデータ ビュー](../profiling/common-data-views.md)
+
+ すべてのプロファイリング方法に共通のプロファイリング データ ファイルのビューとレポートに関するリファレンス情報です。
+
+- [サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)
+
+ サンプリング メソッドを使用して生成されたプロファイリング データ ファイルのビューとレポートに関するリファレンス情報。
+
+- [インストルメンテーション メソッドのデータ ビュー](../profiling/instrumentation-method-data-views.md)
+
+ インストルメンテーション メソッドを使用して生成されたプロファイリング データ ファイルのビューとレポートに関するリファレンス情報。
+
+- [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)
+
+ .NET メモリ データを含むプロファイリング データ ファイルのビューとレポートに関するリファレンス情報。
+
+- [リソース競合データのビュー](../profiling/resource-contention-data-views.md)
+
+ コンカレンシー メソッドを使用して生成されたプロファイリング データ ファイルのビューとレポートに関するリファレンス情報。
+
+- [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)
+
+ コンカレンシー メソッドを使用して生成され、スレッド実行データを含む、プロファイリング データ ファイルのビューとレポートに関するリファレンス情報。
+
+- [階層相互作用のビュー](../profiling/tier-interactions-view.md)
+
+ 階層相互作用データを含むプロファイリング データ ファイルの相互作用のビューとレポートに関するリファレンス情報。
+
+## <a name="see-also"></a>関連項目
+- [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)

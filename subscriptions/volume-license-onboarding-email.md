@@ -4,21 +4,19 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 3/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: VLSC 管理者に用意されているオンボーディング連絡の例
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a91626328b60fee748f465e3b5bde8bd29f227dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f2b376ca3a7de91f67d45f7a138dbefd6b65988
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847858"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844322"
 ---
 # <a name="onboarding-email-communications-for-administrators"></a>管理者向けのオンボーディング メール連絡
 
-組織の移行準備が整うと、このメールが組織のボリューム ライセンス (VL) 契約に列挙されている各ユーザーに送信されます。 ここでは、Visual Studio のサブスクリプションを管理するユーザーが実行する必要のある手順の概要を説明します。 
+組織の移行準備が整うと、このメールが組織のボリューム ライセンス (VL) 契約に列挙されている各ユーザーに送信されます。 ここでは、Visual Studio のサブスクリプションを管理するユーザーが実行する必要のある手順の概要を説明します。
 
 ![Header](_img/onboarding-email/header.png)
 

@@ -353,7 +353,7 @@ ms.locfileid: "54756585"
 </Project>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [タスク](../msbuild/msbuild-tasks.md)   
  [GenerateDeploymentManifest タスク](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile タスク](../msbuild/signfile-task.md)   

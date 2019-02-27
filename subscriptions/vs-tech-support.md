@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: fc1fabec9e6f220162ace335e69e63e8bc1c7286
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089225"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841706"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化する
 
@@ -22,13 +20,13 @@ ms.locfileid: "55089225"
 
 > [!NOTE]
 > 特定のレベルのすべてのサブスクリプションで、サポート インシデントを受け取れるわけではありません。 FTE、NFR、MPN、MCT およびその他のプログラムを通じて取得したサブスクリプションは、サポート インシデントを受け取りません。 自分のサブスクリプションにテクニカル サポート インシデントを受け取る資格がない場合、テクニカル サポート タイルは使用可能な特典に表示されません。
-> 
+>
 > [!div class="mx-imgBorder"]
 > ![テクニカル サポート特典タイル](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. テクニカル サポート特典の使用を開始するには、 https://my.visualstudio.com/Benefits に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。 
-2. これで、契約 ID とアクセス ID を作成してユーザーに提供できる担当者とのチャット セッションが開始されます。 
+1. テクニカル サポート特典の使用を開始するには、 https://my.visualstudio.com/Benefits に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。
+2. これで、契約 ID とアクセス ID を作成してユーザーに提供できる担当者とのチャット セッションが開始されます。
 3. プロセスを完了するには、担当者に以下のものを提供する必要があります。
    - 自分のサブスクリプションへのサインインに使用するメール アドレス
    - [[サブスクリプション]](https://my.visualstudio.com/subscriptions) タブで見つけることができるサブスクリプション ID。
@@ -38,7 +36,7 @@ ms.locfileid: "55089225"
 
 
 > [!NOTE]
-> 英語以外の言語のサポート アカウントを有効にする場合は、お住まいの国を[このリスト](https://support.microsoft.com/help/14084/activate-support-contract)から選択してください。   
+> 英語以外の言語のサポート アカウントを有効にする場合は、お住まいの国を[このリスト](https://support.microsoft.com/help/14084/activate-support-contract)から選択してください。
 
 
 ## <a name="how-to-submit-an-incident"></a>インシデントを送信する方法
@@ -48,12 +46,12 @@ ms.locfileid: "55089225"
 ### <a name="submit-an-incident-online"></a>オンラインでインシデントを送信する
 
 1. [インシデントをオンライン送信](http://support.microsoft.com/oas/)する場合は、ヘルプが必要な製品を指定します。 各種の一覧から選択するか、名前で検索できます。 たとえば、Visual Studio Enterprise 2017 のインシデントを送信するには、**[開発者ツール]** グループで **[Visual Studio]** をクリックし、グループ。
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![テクニカル サポート特典のインシデント製品を選択する](_img/vs-tech-support/vs-tech-support-select-product.png)
 
 2. サポートが必要な製品を選択します  (たとえば、Visual Studio 製品の一覧で **[Visual Studio Enterprise 2017]** をクリックします)。
 3. **[インシデントの作成**] ページで、ドロップダウン リストから該当する問題の種類を選択します。 たとえば、**[統合開発環境 (IDE)]** を選択します。
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![テクニカル サポート特典のインシデントを作成する](_img/vs-tech-support/vs-tech-support-create-incident.png)
 
 4. 質問/問題に最も適合する**カテゴリ**を選択します。 この例では、**[ツールの構築]** を選択します。
@@ -64,7 +62,7 @@ ms.locfileid: "55089225"
    - アクセス ID と契約 ID を入力します。
    - **[追加]** をクリックします。
 7. サポート契約を追加すると、プロフェッショナル サポート契約の一覧に表示されます。 それを選択し、**[続行]** をクリックします。
-   > [!div class="mx-imgBorder"]     
+   > [!div class="mx-imgBorder"]
    > ![テクニカル サポート特典の支払い](_img/vs-tech-support/vs-tech-support-payment.png)
 
 8. 連絡先情報と、希望する連絡方法を提供し、**[続行]** をクリックします。

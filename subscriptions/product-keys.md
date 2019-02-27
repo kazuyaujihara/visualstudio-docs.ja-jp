@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクリプションで、プロダクト キーを取得して管理する方法を説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803825"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843721"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのプロダクト キーの使用
 
@@ -47,9 +45,9 @@ Microsoft は、Visual Studio サブスクリプション プログラムの健�
 
 ## <a name="locating-and-claiming-product-keys"></a>プロダクト キーの確認と要求
 プロダクト キーを表示するには、Visual Studio サブスクリプションにサインインする必要があります。 以下に示す [[ダウンロード]](https://my.visualstudio.com/downloads) ページで、特定の製品の青い **[キーを入手]** リンクを選択すると、その製品のプロダクト キーが表示されます。  すべてのキーをまとめて [[プロダクト キー](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)] ページで確認することもできます。 1 つの製品に対して複数のキーが存在する場合は、使用するキーを識別できるよう、該当するダウンロードの [メモ] 列にメモが表示されます。
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![ダウンロード ページからキーを入手する](_img/product-keys/download-get-key.png)
-    
+
 製品によっては、1 つのダウンロードに製品の複数のエディションが含まれていることがあります。 このような場合、入力されたプロダクト キーによって、製品のどのエディションがインストールされるかが決まります。
 "静的" キーなどのように、自動的に提供されるキーもあります。これらは、ライセンス認証が必要ないので、同じキーを必要に応じて何回でも使用することができます。 他のキーについては、製品の **[キーを入手]** リンクを選択して要求する必要があります。
 

@@ -84,6 +84,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="comments"></a>コメント  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [MSBuild の概念](../msbuild/msbuild-concepts.md)

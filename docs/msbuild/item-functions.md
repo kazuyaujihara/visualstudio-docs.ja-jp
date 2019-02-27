@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e62482df42581b60e4e7758806efd5c7d9300c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d01de837deb5141b4b0bdbb7bebcb50412826b1f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950514"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617159"
 ---
 # <a name="item-functions"></a>項目用の関数
 MSBuild 4.0 以降、タスクとターゲットのコードは項目用の関数を呼び出し、プロジェクトの項目に関する情報を取得できます。 これらの関数により、Distinct() 項目の取得が簡素化され、項目をループ処理するよりも処理が速くなります。
@@ -100,4 +100,4 @@ MSBuild 4.0 以降、タスクとターゲットのコードは項目用の関�
 ```
 
 ## <a name="see-also"></a>関連項目
-[項目](../msbuild/msbuild-items.md)
+- [項目](../msbuild/msbuild-items.md)

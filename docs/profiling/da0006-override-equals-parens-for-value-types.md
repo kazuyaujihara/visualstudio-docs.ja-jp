@@ -13,30 +13,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87fe52e1bdf3fda37f9eda964364e7b5cc13dec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e30894ec98dd1db4de0b724082467a681a0fa696
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942465"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615456"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006:値の型で Equals() をオーバーライドしてください
 
-|||  
-|-|-|  
-|規則 ID|DA0006|  
-|カテゴリ|.NET Framework の使用|  
-|プロファイル方法|サンプリング|  
-|メッセージ|値の型で Equals と等値演算子をオーバーライドしてください。|  
-|メッセージの種類|警告|  
+|||
+|-|-|
+|規則 ID|DA0006|
+|カテゴリ|.NET Framework の使用|
+|プロファイル方法|サンプリング|
+|メッセージ|値の型で Equals と等値演算子をオーバーライドしてください。|
+|メッセージの種類|警告|
 
-## <a name="cause"></a>原因  
- パブリック値型の Equals メソッドまたは等値演算子の呼び出しが、プロファイリング データの大きな割合を占めています。 さらに効率的な方法を実装することを検討してください。  
+## <a name="cause"></a>原因
+ パブリック値型の Equals メソッドまたは等値演算子の呼び出しが、プロファイリング データの大きな割合を占めています。 さらに効率的な方法を実装することを検討してください。
 
-## <a name="rule-description"></a>規則の説明  
- 値型の場合、Equals を継承した実装が <xref:System.Reflection> ライブラリを使用して、この種類のすべてのフィールドの内容を比較します。 Reflection は計算コストが高いため、場合によってはすべてのフィールドで等値性を比較する必要はありません。 ユーザーがインスタンスの比較または並べ替えを行うことや、ハッシュ テーブル キーとしてインスタンスを使用することが予想される場合には、値型に Equals を実装する必要があります。 お使いのプログラミング言語が演算子のオーバーロードに対応している場合、等値演算子と非等値演算子も実装してください。  
+## <a name="rule-description"></a>規則の説明
+ 値型の場合、Equals を継承した実装が <xref:System.Reflection> ライブラリを使用して、この種類のすべてのフィールドの内容を比較します。 Reflection は計算コストが高いため、場合によってはすべてのフィールドで等値性を比較する必要はありません。 ユーザーがインスタンスの比較または並べ替えを行うことや、ハッシュ テーブル キーとしてインスタンスを使用することが予想される場合には、値型に Equals を実装する必要があります。 お使いのプログラミング言語が演算子のオーバーロードに対応している場合、等値演算子と非等値演算子も実装してください。
 
- Equals と等値演算子をオーバーライドする方法については、[Equals および等値演算子 (==) 実装のガイドライン](http://go.microsoft.com/fwlink/?LinkId=177818)を参照してください。  
+ Equals と等値演算子をオーバーライドする方法については、[Equals および等値演算子 (==) 実装のガイドライン](http://go.microsoft.com/fwlink/?LinkId=177818)を参照してください。
 
-## <a name="how-to-investigate-a-warning"></a>警告の調査方法  
+## <a name="how-to-investigate-a-warning"></a>警告の調査方法
  Equals と等値演算子の実装例については、コード分析ルールの「[CA1815:equals および operator equals を値型でオーバーライドします](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)」を参照してください。

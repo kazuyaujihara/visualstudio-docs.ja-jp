@@ -8,15 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 744b0861a1cd0f27974765822946f3c6986bdba6
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: c3eccdd231db075b7022548aabbd61f382a79900
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231949"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842471"
 ---
 # <a name="installation"></a>インストール
 
@@ -26,7 +25,7 @@ Visual Studio Tools for AI は、64 ビットの Windows オペレーティン�
 
 この拡張機能は、Visual Studio 2015 および Visual Studio 2017 の Community Edition 以上で動作します。
 
-このツールは、[Visual Studio Marketplace](http://aka.ms/vstoolsforai) または Visual Studio 内からダウンロードしてインストールします。
+このツールは、[Visual Studio Marketplace](https://aka.ms/vstoolsforai) または Visual Studio 内からダウンロードしてインストールします。
 
 1. **[ツール]** > **[拡張機能と更新プログラム]** を選択します。
 

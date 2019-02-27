@@ -22,35 +22,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b09c98fb41adcf1d094ca3cf35e9415773e5c292
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2188ef3026e36d5c97cf35cd29362411c473973e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963529"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624036"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory タスク
 ディレクトリのコンテンツから *.zip* アーカイブを作成します。
 
 >[!NOTE]
 >`ZipDirectory` タスクは MSBuild 15.8 以降でのみ使用できます。
-  
-## <a name="parameters"></a>パラメーター  
- `ZipDirectory` タスクのパラメーターの説明を次の表に示します。  
-  
-|パラメーター|説明|  
-|---------------|-----------------|  
+
+## <a name="parameters"></a>パラメーター
+ `ZipDirectory` タスクのパラメーターの説明を次の表に示します。
+
+|パラメーター|説明|
+|---------------|-----------------|
 |`DestinationFile`|必須の <xref:Microsoft.Build.Framework.ITaskItem> パラメーター<br /><br /> 作成する *.zip* ファイルへの完全パス。|
 |`Overwrite`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、対象ファイルが存在する場合はスキップすると上書きされます。 既定値は `false` です。|
 |`SourceDirectory`|必須の <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> *.zip* アーカイブの作成元のディレクトリを指定します。|
-  
-## <a name="remarks"></a>コメント  
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
-  
-## <a name="example"></a>例  
+
+## <a name="remarks"></a>解説
+ 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
+
+## <a name="example"></a>例
  次の例では、プロジェクトのビルド後、出力ディレクトリから *.zip* アーカイブを作成します。
-  
-```xml  
+
+```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <Target Name="ZipOutputPath" AfterTargets="Build">
@@ -61,7 +61,7 @@ ms.locfileid: "54963529"
 
 </Project>
 ```
-  
-## <a name="see-also"></a>関連項目  
- [タスク](../msbuild/msbuild-tasks.md)   
- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+
+## <a name="see-also"></a>関連項目
+- [タスク](../msbuild/msbuild-tasks.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

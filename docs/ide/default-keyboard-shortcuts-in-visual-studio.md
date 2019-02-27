@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9680087162cbfa89e12cb7d9b44d7079cba4ef2
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270655"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607409"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio の既定のキーボード ショートカット
 
@@ -807,8 +807,8 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 | Edit.HideSelection | **Ctrl + M、Ctrl + H** |
 | Edit.IncreaseFilterLevel | **Alt + .** |
 | Edit.IncrementalSearch | **Ctrl + I** |
-| Edit.InsertCaretsatAllMatching | **Shift + Alt +;** | 
-| Edit.InsertNextMatchingCaret | **Shift + Alt + .** | 
+| Edit.InsertCaretsatAllMatching | **Shift + Alt +;** |
+| Edit.InsertNextMatchingCaret | **Shift + Alt + .** |
 | Edit.InsertTab | **Tab** |
 | Edit.LineCut | **Ctrl + L** |
 | Edit.LineDelete | **Ctrl + Shift + L** |

@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d6ff3f4d13e2182c5187bc80489115b8c351c194
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5d2d878cb7f9597c0341f26fa41df8e4834a886
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935330"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713543"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows 上の Azure App Service への発行
 
@@ -28,7 +28,7 @@ Visual Studio には、Windows 上の Azure App Service に Python Web アプリ
 発行プロセスは、Visual Studio 2017 と Visual Studio 2015 では異なります。 具体的には、Visual Studio 2015 は `web.config` の作成などの一部の操作を自動化しますが、この自動化により、長期的な柔軟性と制御が制限されます。 Visual Studio 2017 では、より多くの手動操作を必要としますが、Python 環境をより厳密に制御することができます。 ここでは、両方のオプションについて説明します。
 
 > [!Note]
-> Visual Studio 2015 と Visual Studio 2017 間の変更の詳細については、ブログ記事「[Publish to Azure in Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/)」 (Visual Studio 2017 での Azure への発行) を参照してください。
+> Visual Studio 2015 と Visual Studio 2017 間の変更の詳細については、ブログ記事「[Publish to Azure in Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/)」 (Visual Studio 2017 での Azure への発行) を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 

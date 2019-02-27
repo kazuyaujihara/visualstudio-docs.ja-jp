@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 280a721cd841014823382194465816f6b132d5a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000706"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633708"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>クイック スタート: Visual Studio の CPU 使用率データの分析 (C++)
 
@@ -57,64 +57,64 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
     #include <mutex>
     #include <random>
     #include <functional>
-    
+
     //.cpp file code:
-    
+
     static constexpr int MIN_ITERATIONS = std::numeric_limits<int>::max() / 1000;
     static constexpr int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
     long long m_totalIterations = 0;
     std::mutex m_totalItersLock;
-    
+
     int getNumber()
     {
-    
+
         std::uniform_int_distribution<int> num_distribution(MIN_ITERATIONS, MAX_ITERATIONS);
         std::mt19937 random_number_engine; // pseudorandom number generator
         auto get_num = std::bind(num_distribution, random_number_engine);
         int random_num = get_num();
-    
+
         auto result = 0;
         {
             std::lock_guard<std::mutex> lock(m_totalItersLock);
             m_totalIterations += random_num;
         }
-        // we're just spinning here  
-        // to increase CPU usage 
+        // we're just spinning here
+        // to increase CPU usage
         for (int i = 0; i < random_num; i++)
         {
             result = get_num();
         }
         return result;
     }
-    
+
     void doWork()
     {
         std::wcout << L"The doWork function is running on another thread." << std::endl;
-    
-        auto x = getNumber();    
+
+        auto x = getNumber();
     }
-    
+
     int main()
     {
         std::vector<std::thread> threads;
-    
+
         for (int i = 0; i < 10; ++i) {
-    
+
             threads.push_back(std::thread(doWork));
             std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
         }
-    
+
         for (auto& thread : threads) {
             thread.join();
         }
-    
+
         return 0;
     }
     ```
-  
-## <a name="step-1-collect-profiling-data"></a>手順 1: プロファイリング データの収集 
-  
+
+## <a name="step-1-collect-profiling-data"></a>手順 1: プロファイリング データの収集
+
 1.  最初に、`main` 関数のこのコード行でアプリのブレークポイントを設定します。
 
     `for (int i = 0; i < 10; ++i) {`
@@ -127,7 +127,7 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
 
     > [!TIP]
     > 2 つのブレークポイントを設定することで、分析するコードの部分にデータ収集を限定できます。
-  
+
 3.  **[診断ツール]** ウィンドウは、オフにしていない限り表示されます。 もう一度ウィンドウを表示するには、**[デバッグ]** > **[ウィンドウ]** > **[診断ツールの表示]** の順にクリックします。
 
 4.  **[デバッグ]** > **[デバッグの開始]** の順にクリックします (または、ツール バーの **[開始]** をクリックするか、**F5** キーを押します)。
@@ -147,7 +147,7 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
      これで、2 つのブレークポイント間で実行されるコードのリージョンを対象に、アプリケーションのパフォーマンス データが得られました。
 
      プロファイラーがスレッド データの準備を開始します。 それが完了するまで待ちます。
-  
+
      CPU 使用率ツールの **[CPU 使用率]** タブにレポートが表示されます。
 
      この時点で、データの分析を開始できます。
@@ -165,7 +165,7 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
 
 2. 関数の一覧で、`getNumber` 関数をダブルクリックします。
 
-    関数をダブルクリックすると、左ウィンドウで **[呼び出し元/呼び出し先]** ビューが開きます。 
+    関数をダブルクリックすると、左ウィンドウで **[呼び出し元/呼び出し先]** ビューが開きます。
 
     ![診断ツールの [呼び出し元/呼び出し先] ビュー](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
@@ -184,7 +184,7 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
 - CPU 使用率ツールで [CPU 使用率を分析し](../profiling/cpu-usage.md)、さらに詳細な情報を取得します。
 - デバッガーをアタッチせずに、または実行中のアプリをターゲットにすることで、CPU 使用率を分析します。詳細については、「[デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」の「[デバッグなしでプロファイリング データを収集する](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)」をご覧ください。
 
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
 
- [Visual Studio のプロファイル](../profiling/index.md)  
- [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)
+- [Visual Studio のプロファイル](../profiling/index.md)
+- [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)

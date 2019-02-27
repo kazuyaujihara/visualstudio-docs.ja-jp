@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: lank
 ms.date: 07/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクリプション管理ポータルへのオープン ライセンス移行の開始について説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3f846be049ce8e3aaae8c1e49653869c37d0f72b
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995843"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843196"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理ポータルへのオープン ライセンス移行の開始
 
@@ -28,22 +26,22 @@ ms.locfileid: "43995843"
 
 - サインインすると、自分の会社のサブスクリプションにアクセスできるようになります。
 
-移行日の後、お客様とパートナーの両方が以下に示すシナリオのいずれかに分類されます。 
+移行日の後、お客様とパートナーの両方が以下に示すシナリオのいずれかに分類されます。
 
 ## <a name="open-and-open-license-management-for-new-orders"></a>新しい注文のオープン ライセンス管理の開始
 
-[Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)でサブスクリプションを管理するには、パートナーとお客様がいくつかの手順に従う必要があります。 次のようなプロセスです。 
+[Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)でサブスクリプションを管理するには、パートナーとお客様がいくつかの手順に従う必要があります。 次のようなプロセスです。
 
 - パートナーがお客様の代わりに新しい注文を行い、お客様の業務用のメール アドレスを入力します。
 
 - お客様に [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)での管理者の割り当てと、自分のサブスクリプションへのアクセスを促す通知が届きます。
 
-- お客様に代わってサブスクリプションを管理するパートナーは、管理ポータルでの登録が必要です。 アクセスするためのさまざまな方法を以下に示します (追加オープンのプロセスと似ています)。 
+- お客様に代わってサブスクリプションを管理するパートナーは、管理ポータルでの登録が必要です。 アクセスするためのさまざまな方法を以下に示します (追加オープンのプロセスと似ています)。
 
 
 ## <a name="existing-partners-adding-a-new-license"></a>新しいライセンスを追加する既存のパートナー
 
-これは [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に既にアクセスでき、管理が必要な Visual Studio サブスクリプションによるオープン ライセンスの注文を行ったパートナーに適用されます。 
+これは [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に既にアクセスでき、管理が必要な Visual Studio サブスクリプションによるオープン ライセンスの注文を行ったパートナーに適用されます。
 
 - パートナーが直接 https://manage.visualstudio.com に移動してサインインします。
 
@@ -57,9 +55,9 @@ ms.locfileid: "43995843"
 
 ## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>ボリューム ライセンス サービス センター (VLSC) に登録する新しいパートナー
 
-これは、新しいオープン ライセンスの注文を行っていて、[Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)にアクセスする前に追加オープン フローを通じて [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) に登録する新しいパートナーに適用されます。 
+これは、新しいオープン ライセンスの注文を行っていて、[Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)にアクセスする前に追加オープン フローを通じて [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) に登録する新しいパートナーに適用されます。
 
-- パートナーが VLSC にサインインして "関係サマリー" に移動します。 
+- パートナーが VLSC にサインインして "関係サマリー" に移動します。
 
 - ここで管理するオープン ライセンスを選択します。
 
@@ -75,9 +73,9 @@ ms.locfileid: "43995843"
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal--directly"></a>Visual Studio サブスクリプション管理ポータルに直接アクセスしている新しいパートナー
 
-このシナリオは、既に新しいオープン ライセンスの注文を行っているものの、[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) には登録せずに [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に直接アクセスしている新しいパートナーに適用されます。 
+このシナリオは、既に新しいオープン ライセンスの注文を行っているものの、[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) には登録せずに [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に直接アクセスしている新しいパートナーに適用されます。
 
-- パートナーが直接 https://manage.visualstudio.com に移動します。 
+- パートナーが直接 https://manage.visualstudio.com に移動します。
 
 - 認識されているユーザーではないというエラーが表示されます。
 

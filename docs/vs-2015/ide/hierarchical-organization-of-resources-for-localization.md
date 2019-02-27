@@ -49,7 +49,7 @@ Visual Studio では、ローカライズされたリソース (各カルチャ�
   
   ![NeutralSpecificResources のグラフィック](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ローカリゼーションのニュートラル リソース言語](../ide/neutral-resources-languages-for-localization.md)   
  [セキュリティおよびローカライズされたサテライト アセンブリ](../ide/security-and-localized-satellite-assemblies.md)   
  [アプリケーションのローカライズ](../ide/localizing-applications.md)   

@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16cf15e4c2f201c76fba72f547b939ce883ad2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020881"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610607"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
-次の表は、Visual Studio プロジェクト ファイルで定義される、または MSBuild に用意されている *.targets* ファイルに含まれている、使用頻度の高いプロパティを示しています。  
-  
- Visual Studio のプロジェクト ファイル (*.csproj*、*.vbproj*、*.vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 通常、プロジェクトでは、ビルド プロセスを定義するために、1 つ以上の *.targets* ファイルをインポートします。 詳しくは、「[MSBuild .Targets ファイル](../msbuild/msbuild-dot-targets-files.md)」をご覧ください。  
-  
-## <a name="list-of-common-properties-and-parameters"></a>共通のプロパティおよびパラメーター一覧  
-  
+次の表は、Visual Studio プロジェクト ファイルで定義される、または MSBuild に用意されている *.targets* ファイルに含まれている、使用頻度の高いプロパティを示しています。
+
+ Visual Studio のプロジェクト ファイル (*.csproj*、*.vbproj*、*.vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 通常、プロジェクトでは、ビルド プロセスを定義するために、1 つ以上の *.targets* ファイルをインポートします。 詳しくは、「[MSBuild .Targets ファイル](../msbuild/msbuild-dot-targets-files.md)」をご覧ください。
+
+## <a name="list-of-common-properties-and-parameters"></a>共通のプロパティおよびパラメーター一覧
+
 | プロパティ名またはパラメーター名 | 説明 |
 |------------------------------------| - |
 | AdditionalLibPaths | コンパイラが参照アセンブリを検索する追加のフォルダーを指定します。 |
@@ -128,6 +128,6 @@ ms.locfileid: "55020881"
 | WarningsNotAsErrors | エラーとして扱わない警告の一覧を指定します。 このパラメーターは、`/warnaserror` コンパイラ スイッチに相当します。 |
 | Win32Manifest | 最終的なアセンブリに埋め込むマニフェスト ファイルの名前です。 このパラメーターは、`/win32Manifest` コンパイラ スイッチに相当します。 |
 | Win32Resource | 最終的なアセンブリに埋め込む Win32 リソースのファイル名です。 このパラメーターは、`/win32resource` コンパイラ スイッチに相当します。 |
-  
-## <a name="see-also"></a>関連項目  
- [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)
+
+## <a name="see-also"></a>関連項目
+- [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)

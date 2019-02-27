@@ -33,7 +33,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6ee37247cf628c0efe99af3e8a0b06dcab0b196c
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54800731"
@@ -128,7 +128,7 @@ ms.locfileid: "54800731"
 |-|-|  
 |**ツールボックスの項目を自動取得する**|現在のソリューションのユーザー コントロールとカスタム コントロールが、ツールボックスに自動的に表示されるかどうかを指定します。|  
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [WPF の XAML](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
  [方法: XAML ビュー設定の変更](http://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
  [XAML とコードのチュートリアル](http://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

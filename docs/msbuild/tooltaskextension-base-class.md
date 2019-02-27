@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cf9e45a07544820292482ac34c034e81a305af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e4cb02cdaf2827ac5c892c7565f446d8f84257c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010351"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623009"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基本クラス
-多くのタスクが <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスを継承します。このクラスは <xref:Microsoft.Build.Utilities.ToolTask> クラスから継承され、さらに、このクラス自体は <xref:Microsoft.Build.Utilities.Task> から継承されます。 この継承チェーンにより、これらのクラスから派生したタスクにいくつかのパラメーターが追加されます。 このドキュメントでは、これらのパラメーターを示します。  
+多くのタスクが <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスを継承します。このクラスは <xref:Microsoft.Build.Utilities.ToolTask> クラスから継承され、さらに、このクラス自体は <xref:Microsoft.Build.Utilities.Task> から継承されます。 この継承チェーンにより、これらのクラスから派生したタスクにいくつかのパラメーターが追加されます。 このドキュメントでは、これらのパラメーターを示します。
 
-## <a name="parameters"></a>パラメーター  
- 基本クラスのパラメーターの説明を次の表に示します。  
+## <a name="parameters"></a>パラメーター
+ 基本クラスのパラメーターの説明を次の表に示します。
 
 
 | パラメーター | 説明 |
@@ -44,10 +44,10 @@ ms.locfileid: "55010351"
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | 省略可能な `String` 型のパラメーターです。<br /><br /> 標準出力ストリームのテキストを記録するときに使用する重要度です。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A> | 仮想の省略可能な `Int32` 型のパラメーターです。<br /><br /> タスク実行を終了するまでの時間をミリ秒単位で指定します。 既定値は `Int.MaxValue` であり、タイムアウト期限がないことを示します。 タイムアウトはミリ秒単位です。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.ToolExe%2A> | 仮想の省略可能な `string` 型のパラメーターです。<br /><br /> プロジェクトで実装すると、ToolName をオーバーライドできます。 タスクでオーバーライドすると、ToolName を保持できます。 |
-| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | 省略可能な `string` 型のパラメーターです。<br /><br /> タスクで基になる実行可能ファイルを読み込む場所を指定します。 このパラメーターを指定しないと、タスクによって [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] を実行しているフレームワークのバージョンに対応する SDK インストール パスが使用されます。 |
+| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | 省略可能な `string` 型のパラメーターです。<br /><br /> タスクで基になる実行可能ファイルを読み込む場所を指定します。 このパラメーターを指定しないと、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] を実行しているフレームワークのバージョンに対応する SDK インストール パスが使用されます。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | 省略可能な `bool` 型のパラメーターです。<br /><br /> `true` に設定した場合、このタスクで直接コマンドを実行する代わりに、コマンド ラインのバッチ ファイルを作成し、そのファイルをコマンド プロセッサで実行します。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | 省略可能な `bool` 型のパラメーターです。<br /><br /> `true` に設定した場合、このタスクは、その実行時にノードを生成します。 |
 
-## <a name="see-also"></a>関連項目  
- [タスク リファレンス](../msbuild/msbuild-task-reference.md)   
- [タスク](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>関連項目
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [タスク](../msbuild/msbuild-tasks.md)

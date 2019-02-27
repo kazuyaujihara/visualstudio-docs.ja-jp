@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dccb229712d173e847a7205f03aad308fab224d
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3d9dd845a69243cd8bedb095c63f75670f39afff
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853194"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640585"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier タスク
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> タスクは、ソース リソースのセットをアセンブリに埋め込まれるリソースとして分類します。 ローカライズできないリソースは、メイン アプリケーション アセンブリに埋め込まれます。ローカライズ可能なリソースは、サテライト アセンブリに埋め込まれます。
@@ -40,7 +40,7 @@ ms.locfileid: "55853194"
 |`SatelliteEmbeddedFiles`|省略可能な **ITaskItem[]** 型の出力パラメーターです。<br /><br /> **Culture** パラメーターで指定されたカルチャのサテライト アセンブリに埋め込まれる、ローカライズ可能なファイルを指定します。|
 |`SourceFiles`|必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> 分類するファイルのリストを指定します。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 **Culture** パラメーターを設定しない場合、**SourceFiles** パラメーターを使用して指定したリソースは、すべてローカライズできないリソースになります。それ以外の場合は、**Localizable** 属性が **false** に設定されていない限り、ローカライズ可能なリソースになります。
 
 ## <a name="example"></a>例
@@ -64,8 +64,8 @@ ms.locfileid: "55853194"
 ```
 
 ## <a name="see-also"></a>関連項目
-[WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)  
-[タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild リファレンス](../msbuild/msbuild-reference.md)  
-[タスク リファレンス](../msbuild/msbuild-task-reference.md)  
-[WPF アプリケーション (WPF) のビルド](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)
+- [タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [WPF アプリケーション (WPF) のビルド](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

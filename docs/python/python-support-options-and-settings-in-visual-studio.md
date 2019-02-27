@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3589447cdc9451a52dcffb4653a31f188b33c634
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 04f696325da6f9f5b08f37b3d0d0f90498aacd85
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987393"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702019"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio での Python のオプション
 
@@ -33,7 +33,7 @@ Python のオプションを表示するには、**[ツール]** > **[オプシ�
 また、**[テキスト エディター]** > **[Python]** > **[詳細]** タブ、および **[テキスト エディター]** グループ内の **[環境]** > **[フォントと色]** タブにも Python 固有のその他のオプションがあります。
 
 > [!Note]
-> **試験的**グループには現在開発中の機能のオプションが含まれていますが、これらについてはここでは説明しません。 これらは通常、[Microsoft ブログの Python エンジニアリング](https://blogs.msdn.microsoft.com/pythonengineering/)の投稿で取り上げられます。
+> **試験的**グループには現在開発中の機能のオプションが含まれていますが、これらについてはここでは説明しません。 これらは通常、[Microsoft ブログの Python エンジニアリング](https://devblogs.microsoft.com/python/)の投稿で取り上げられます。
 
 ## <a name="general-options"></a>全般オプション
 

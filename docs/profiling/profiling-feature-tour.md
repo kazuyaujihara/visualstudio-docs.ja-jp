@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae109558c19f408c2300830b64960d11fb57e39
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000836"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611920"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>クイック スタート: プロファイリング ツールの概要
 
@@ -149,22 +149,22 @@ CPU 使用量ツールやメモリ使用量ツールに現在入っていない�
 
 ![パフォーマンス エクスプローラー ツール](../profiling/media/prof-tour-performance-explorer.png "Performance Explorer")
 
-## <a name="which-tool-should-i-use"></a>使用するツール  
+## <a name="which-tool-should-i-use"></a>使用するツール
 
 次の表では、Visual Studio のさまざまなツールとそれらを使用できる各種プロジェクトをまとめています。
-  
-|パフォーマンス ツール|Windows デスクトップ|UWP|ASP.NET/ASP.NET Core| 
-|----------------------|---------------------|-------------|-------------|  
+
+|パフォーマンス ツール|Windows デスクトップ|UWP|ASP.NET/ASP.NET Core|
+|----------------------|---------------------|-------------|-------------|
 |[CPU 使用率](../profiling/cpu-usage.md)|可|可|可|
-|[メモリ使用量](../profiling/memory-usage.md)|可|可|可| 
-|[GPU 使用率](../debugger/gpu-usage.md)|可|可|Ｘ| 
+|[メモリ使用量](../profiling/memory-usage.md)|可|可|可|
+|[GPU 使用率](../debugger/gpu-usage.md)|可|可|Ｘ|
 |[アプリケーションのタイムライン](../profiling/application-timeline.md)|可|可|Ｘ|
 |[パフォーマンスのヒント](../profiling/perftips.md)|可|XAML の場合は可、HTML の場合は不可|可|
 |[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|可|Ｘ|可|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|
 |[ネットワーク使用率](../profiling/network-usage.md)|Ｘ|可|Ｘ|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Ｘ|HTML の場合は可、XAML の場合は不可|Ｘ| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Ｘ|HTML の場合は可、XAML の場合は不可|Ｘ|
 |[JavaScript メモリ](../profiling/javascript-memory.md)|Ｘ|HTML の場合は可、XAML の場合は不可|Ｘ|
 
-## <a name="see-also"></a>関連項目  
- [Visual Studio でのデバッグ](/visualstudio/debugger/debugger-feature-tour)
+## <a name="see-also"></a>関連項目
+- [Visual Studio でのデバッグ](/visualstudio/debugger/debugger-feature-tour)

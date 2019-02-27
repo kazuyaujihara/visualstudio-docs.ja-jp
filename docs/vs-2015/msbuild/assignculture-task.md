@@ -81,6 +81,6 @@ ms.locfileid: "54780903"
 |`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` (追加メタデータなし)|  
 |`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (`追加メタデータなし)|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [タスク](../msbuild/msbuild-tasks.md)   
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

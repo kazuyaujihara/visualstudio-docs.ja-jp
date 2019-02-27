@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d45cf1e1ee8cbb12af9f10733db9aed06e252ece
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996208"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634059"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>クイック スタート: Visual Studio での CPU 使用率データの分析 (ASP.NET)
 
@@ -87,8 +87,8 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -153,8 +153,8 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>手順 1: プロファイリング データの収集 
-  
+##  <a name="step-1-collect-profiling-data"></a>手順 1: プロファイリング データの収集
+
 1.  最初に、`Simple` コンストラクターのこのコード行でアプリのブレークポイントを設定します。
 
     `for (int i = 0; i < 200; i++)`
@@ -167,7 +167,7 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
 
     > [!TIP]
     > 2 つのブレークポイントを設定することで、分析するコードの部分にデータ収集を限定できます。
-  
+
 1.  **[診断ツール]** ウィンドウは、オフにしていない限り表示されます。 もう一度ウィンドウを表示するには、**[デバッグ]** > **[ウィンドウ]** > **[診断ツールの表示]** の順にクリックします。
 
 1.  **[デバッグ]** > **[デバッグの開始]** の順にクリックします (または、ツール バーの **[開始]** をクリックするか、**F5** キーを押します)。
@@ -189,7 +189,7 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
      これで、2 つのブレークポイント間で実行されるコードのリージョンを対象に、アプリケーションのパフォーマンス データが得られました。
 
      プロファイラーがスレッド データの準備を開始します。 それが完了するまで待ちます。
-  
+
      CPU 使用率ツールの **[CPU 使用率]** タブにレポートが表示されます。
 
      この時点で、データの分析を開始できます。
@@ -207,7 +207,7 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
 
 2. 関数の一覧で、`MyProfilingApp_MVC.Models.ServerClass::GetNumber` 関数をダブルクリックします。
 
-    関数をダブルクリックすると、左ウィンドウで **[呼び出し元/呼び出し先]** ビューが開きます。 
+    関数をダブルクリックすると、左ウィンドウで **[呼び出し元/呼び出し先]** ビューが開きます。
 
     ![診断ツールの [呼び出し元/呼び出し先] ビュー](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
@@ -226,7 +226,7 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
 - CPU 使用率ツールで [CPU 使用率を分析し](../profiling/cpu-usage.md)、さらに詳細な情報を取得します。
 - デバッガーをアタッチせずに、または実行中のアプリをターゲットにすることで、CPU 使用率を分析します。詳細については、「[デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」の「[デバッグなしでプロファイリング データを収集する](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)」をご覧ください。
 
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
 
- [Visual Studio のプロファイル](../profiling/index.md)  
- [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)
+- [Visual Studio のプロファイル](../profiling/index.md)
+- [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)

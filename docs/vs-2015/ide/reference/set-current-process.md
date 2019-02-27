@@ -44,7 +44,7 @@ Debug.SetCurrentProcess index
 >Debug.SetCurrentProcess 1  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

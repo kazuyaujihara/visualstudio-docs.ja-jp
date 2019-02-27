@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1241de2849ce0b32206c0815928c8beb140e23
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963659"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632395"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild の予約済みおよび既知のプロパティ
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] には、プロジェクト ファイルに関する情報と [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] のバイナリに関する情報を格納する一連の定義済みのプロパティが用意されています。 これらのプロパティは、他の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロパティと同じように評価されます。 たとえば、`MSBuildProjectFile` プロパティを使用するには、「`$(MSBuildProjectFile)`」と入力します。  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] には、プロジェクト ファイルに関する情報と [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] のバイナリに関する情報を格納する一連の定義済みのプロパティが用意されています。 これらのプロパティは、他の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロパティと同じように評価されます。 たとえば、`MSBuildProjectFile` プロパティを使用するには、「`$(MSBuildProjectFile)`」と入力します。
 
  MSBuild は、次の表の値を使用して予約済みおよび既知のプロパティを事前に定義します。 予約されたプロパティはオーバーライドできませんが、既知のプロパティは同じ名前を持つ環境プロパティ、グローバル プロパティ、またはプロジェクト ファイルで宣言されたプロパティでオーバーライドできます。
 
-## <a name="reserved-and-well-known-properties"></a>予約済みのプロパティと既知のプロパティ  
- 次の表では、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 予約済みプロパティについて説明します。  
+## <a name="reserved-and-well-known-properties"></a>予約済みのプロパティと既知のプロパティ
+ 次の表では、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 予約済みプロパティについて説明します。
 
 
 | プロパティ | 予約または既知 | 説明 |
@@ -75,7 +75,7 @@ ms.locfileid: "54963659"
 * 目的
 * Otherwise
 
-## <a name="see-also"></a>関連項目  
-[MSBuild リファレンス](../msbuild/msbuild-reference.md)
+## <a name="see-also"></a>関連項目
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md)
 
-[MSBuild プロパティ](../msbuild/msbuild-properties.md)
+- [MSBuild プロパティ](../msbuild/msbuild-properties.md)
