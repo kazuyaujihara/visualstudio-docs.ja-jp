@@ -126,6 +126,6 @@ ms.locfileid: "54796725"
 </Project>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [項目](../msbuild/msbuild-items.md)   
  [MSBuild](msbuild.md) [方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)
