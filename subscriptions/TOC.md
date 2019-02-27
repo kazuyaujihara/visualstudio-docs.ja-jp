@@ -81,7 +81,7 @@
 #### [MPN のサブスクリプションを管理する](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
 ## リソース
-### [Visual Studio ライセンス ホワイト ペーパー](http://aka.ms/vslicensing)
+### [Visual Studio ライセンス ホワイト ペーパー](https://aka.ms/vslicensing)
 ### [サブスクリプション オプションと価格を比較する](https://visualstudio.microsoft.com/vs/pricing)
 ### [Visual Studio IDE 機能を比較する](https://visualstudio.microsoft.com/vs/compare)
 ### [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)

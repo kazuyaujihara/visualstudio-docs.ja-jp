@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: e2052dda4062ea120c529a03c3c0c7e43a4c8421
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b5495e4548ed5a9303d70bd949249ac9d98ce77
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789295"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843832"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio におけるクロス プラットフォーム モバイル開発
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 |[Visual Studio と Xamarin](../cross-platform/visual-studio-and-xamarin.md) (MSDN ライブラリ)|
 |[Xamarin アプリを使用したアプリケーション ライフサイクル管理 (ALM)](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) (MSDN ライブラリ)|
 |[Visual Studio でのユニバーサル Windows アプリについて学習する](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
-|[Swift と C# との間の類似点について学習する](http://aka.ms/scposter) (download.microsoft.com)|
+|[Swift と C# との間の類似点について学習する](https://aka.ms/scposter) (download.microsoft.com)|
 |[Visual Studio Emulator for Android について学習する](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ###  <a name="AndroidHTML"></a> 1 つのコード ベースから Android、iOS、Windows を対象にする

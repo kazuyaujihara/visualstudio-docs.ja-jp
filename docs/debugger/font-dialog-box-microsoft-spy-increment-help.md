@@ -10,36 +10,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4716443ae2225428980306beb1c3be0e23b4306e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1746b8419c342b5627e1c6374b2b29f08f7ee75c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019321"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691892"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>[フォント] ダイアログ ボックス (Microsoft Spy++ ヘルプ)
-使用される文字のフォントを構成するこのダイアログ ボックスを使用して、 [spy++ ビュー](../debugger/spy-increment-views.md)ウィンドウ。 このダイアログ ボックスを表示するには、展開、**ビュー**メニュー選択**フォント**します。  
-  
- 次の設定を使用できます。  
-  
- **フォント**  
- フォーカスのある spy++ ビュー ウィンドウの文字のフォント。  
-  
- **フォント スタイル**  
- フォーカスのある spy++ ビュー ウィンドウのフォント スタイル。  
-  
- **Size**  
- フォーカスのある spy++ ビュー ウィンドウのフォント サイズ。  
-  
- **フォントを既定値として保存**  
- Spy++ ビューを開くときに、現在のフォント設定、環境設定として保存します。  
-  
-## <a name="related-sections"></a>関連項目  
- [Spy++ ビュー](../debugger/spy-increment-views.md)  
- Windows、メッセージ、プロセス、およびスレッドの spy++ ツリー ビューについて説明します。  
-  
- [Spy++ の使用](../debugger/using-spy-increment.md)  
- Spy++ ツールを紹介し、使用方法について説明します。  
-  
- [Spy++ リファレンス](../debugger/spy-increment-reference.md)  
- 各 spy++ メニューおよびダイアログ ボックスについて説明するセクションが含まれています。
+使用される文字のフォントを構成するこのダイアログ ボックスを使用して、 [spy++ ビュー](../debugger/spy-increment-views.md)ウィンドウ。 このダイアログ ボックスを表示するには、展開、**ビュー**メニュー選択**フォント**します。
+
+ 次の設定を使用できます。
+
+ **フォント**フォーカスのある spy++ ビュー ウィンドウの文字のフォント。
+
+ **フォント スタイル**フォーカスのある spy++ ビュー ウィンドウのフォント スタイル。
+
+ **サイズ**フォーカスのある spy++ ビュー ウィンドウのフォント サイズ。
+
+ **既定値としてフォントを保存**spy++ ビューを開くときに、環境設定として現在のフォント設定を保存します。
+
+## <a name="related-sections"></a>関連項目
+ [Spy++ ビュー](../debugger/spy-increment-views.md) spy++ ツリー ビュー ウィンドウやメッセージ、プロセス、スレッドのについて説明します。
+
+ [Spy++ の使用](../debugger/using-spy-increment.md)の spy++ ツールを紹介し、使用する方法について説明します。
+
+ [Spy++ リファレンス](../debugger/spy-increment-reference.md)各 spy++ メニューおよびダイアログ ボックスについて説明するセクションが含まれています。

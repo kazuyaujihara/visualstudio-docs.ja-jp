@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93edaaf22dd59014a29c374ea3c4613d98d00d36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946546"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623711"
 ---
 # <a name="item-metadata-in-task-batching"></a>タスクのバッチの項目メタデータ
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] には、項目メタデータに基づき、項目リストをさまざまなカテゴリまたはバッチに分割し、各バッチで一度に 1 つのタスクを実行する機能があります。 厳密にどの項目がどのバッチで渡されるのかは少々複雑です。 このトピックでは、バッチ処理を伴う一般的なシナリオについて説明します。
@@ -218,9 +218,9 @@ Items in ExampColl: Item2;Item5
 ```
 
 ## <a name="see-also"></a>関連項目
-[既知の項目メタデータ](../msbuild/msbuild-well-known-item-metadata.md)  
-[Item 要素 (MSBuild)](../msbuild/item-element-msbuild.md)  
-[ItemMetadata 要素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[バッチ処理](../msbuild/msbuild-batching.md)  
-[MSBuild の概念](../msbuild/msbuild-concepts.md)  
-[MSBuild リファレンス](../msbuild/msbuild-reference.md)
+- [既知の項目メタデータ](../msbuild/msbuild-well-known-item-metadata.md)
+- [Item 要素 (MSBuild)](../msbuild/item-element-msbuild.md)
+- [ItemMetadata 要素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [バッチ処理](../msbuild/msbuild-batching.md)
+- [MSBuild の概念](../msbuild/msbuild-concepts.md)
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md)

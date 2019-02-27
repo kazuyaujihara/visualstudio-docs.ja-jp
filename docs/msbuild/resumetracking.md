@@ -15,27 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0bc04dfa06672e7764676be87584c2a757a50b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0e2ff32a4eb2218a8b3d09188c787156e484147f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940584"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596400"
 ---
 # <a name="resumetracking"></a>ResumeTracking
-現在のコンテキストで追跡を再開します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-HRESULT WINAPI ResumeTracking();  
-```  
-  
-## <a name="return-value"></a>戻り値  
- 追跡が再開された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。 コンテキストが利用できず、追跡を再開できない場合、**E_FAIL** が返されます。  
-  
-## <a name="requirements"></a>要件  
- **ヘッダー:***FileTracker.h*  
-  
-## <a name="see-also"></a>関連項目  
- [SuspendTracking](../msbuild/suspendtracking.md)
+現在のコンテキストで追跡を再開します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT WINAPI ResumeTracking();
+```
+
+## <a name="return-value"></a>戻り値
+ 追跡が再開された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。 コンテキストが利用できず、追跡を再開できない場合、**E_FAIL** が返されます。
+
+## <a name="requirements"></a>要件
+ **ヘッダー:***FileTracker.h*
+
+## <a name="see-also"></a>関連項目
+- [SuspendTracking](../msbuild/suspendtracking.md)

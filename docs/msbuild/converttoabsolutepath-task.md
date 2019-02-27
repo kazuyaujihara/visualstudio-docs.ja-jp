@@ -18,27 +18,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78f82d5d7936a9c5fd318804ea6ba9c5731da39c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14695cbfddc2f469d48bf78ee002f0582ef7f4bc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068980"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604055"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath タスク
-相対パス (参照) を絶対パスに変換します。  
-  
-## <a name="task-parameters"></a>タスク パラメーター  
- `ConvertToAbsolutePath` タスクのパラメーターの説明を次の表に示します。  
-  
-|パラメーター|説明|  
-|---------------|-----------------|  
-|`Paths`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 絶対パスに変換する相対パスの一覧。|  
-|`AbsolutePaths`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 渡された項目の絶対パスの一覧。|  
-  
-## <a name="remarks"></a>コメント  
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
-  
-## <a name="see-also"></a>関連項目  
- [タスク](../msbuild/msbuild-tasks.md)   
- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+相対パス (参照) を絶対パスに変換します。
+
+## <a name="task-parameters"></a>タスク パラメーター
+ `ConvertToAbsolutePath` タスクのパラメーターの説明を次の表に示します。
+
+|パラメーター|説明|
+|---------------|-----------------|
+|`Paths`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 絶対パスに変換する相対パスの一覧。|
+|`AbsolutePaths`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 渡された項目の絶対パスの一覧。|
+
+## <a name="remarks"></a>解説
+ 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
+
+## <a name="see-also"></a>関連項目
+- [タスク](../msbuild/msbuild-tasks.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

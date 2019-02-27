@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0893ded1cd2eb40cc6004f90e29e0765ff48ca6a
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 4995d948cc4ad452da1585404987e3feb15e233e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853799"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610292"
 ---
 # <a name="delete-task"></a>Delete タスク
 指定されたファイルを削除します。
@@ -37,7 +37,7 @@ ms.locfileid: "55853799"
 |`Files`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 削除するファイルを指定します。|
 |`TreatErrorsAsWarnings`|省略可能な `Boolean` 型のパラメーターです<br /><br /> `true` の場合、エラーは警告として記録されます。 既定値は `false` です。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
@@ -57,5 +57,5 @@ ms.locfileid: "55853799"
 ```
 
 ## <a name="see-also"></a>関連項目
-[タスク](../msbuild/msbuild-tasks.md)  
-[タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [タスク](../msbuild/msbuild-tasks.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

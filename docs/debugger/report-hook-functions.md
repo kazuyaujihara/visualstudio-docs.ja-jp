@@ -1,4 +1,4 @@
-﻿---
+---
 title: レポート用のフック関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,30 +23,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18485d94aaedcb1f41c0ed747dc6af0be7f7e276
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6f2723304fe22af9ae2920ff828c953de9347449
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952874"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679984"
 ---
 # <a name="report-hook-functions"></a>レポート用のフック関数
-[_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook) を使用してインストールされたレポート用のフック関数は、[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) がデバッグ レポートを生成するたびに呼び出されます。 レポート用のフック関数を使用して、特定の割り当て型に関するレポートだけを出力できます。 レポート用のフック関数には、次のようなプロトタイプが必要です。  
-  
+[_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook) を使用してインストールされたレポート用のフック関数は、[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) がデバッグ レポートを生成するたびに呼び出されます。 レポート用のフック関数を使用して、特定の割り当て型に関するレポートだけを出力できます。 レポート用のフック関数には、次のようなプロトタイプが必要です。
+
 ```cpp
-int YourReportHook(int nRptType, char *szMsg, int *retVal);  
-```  
-  
- 渡すポインター **_CrtSetReportHook**の種類は **_CRT_REPORT_HOOK**CRTDBG で定義されている、します。H:  
-  
+int YourReportHook(int nRptType, char *szMsg, int *retVal);
+```
+
+ 渡すポインター **_CrtSetReportHook**の種類は **_CRT_REPORT_HOOK**CRTDBG で定義されている、します。H:
+
 ```cpp
-typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
-```  
-  
- ランタイム ライブラリが独自のフック関数を呼び出す場合は、引数 *nRptType* には、レポートのカテゴリ (**_CRT_WARN**、**_CRT_ERROR**、または **_CRT_ASSERT**) が含まれます。引数 *szMsg* には、レポート用の完全にアセンブルされたメッセージ文字列へのポインターが含まれます。また、*retVal* には、`_CrtDbgReport` がレポート作成後に通常どおり実行を継続するのか、デバッガーを起動するのかを示す値が含まれます。 (*retVal* の値が 0 の場合は実行を継続し、1 の場合はデバッガーを起動します。)  
-  
- フック関数でメッセージを完全に処理できたため、それ以上レポートを出力する必要がない場合は、**TRUE** を返すようにします。 **FALSE** を返した場合は、`_CrtDbgReport` は通常どおりにレポート メッセージを出力します。  
-  
-## <a name="see-also"></a>関連項目
- [デバッグ用フック関数の作成](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 サンプル](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)
+typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
+```
+
+ ランタイム ライブラリが独自のフック関数を呼び出す場合は、引数 *nRptType* には、レポートのカテゴリ (**_CRT_WARN**、**_CRT_ERROR**、または **_CRT_ASSERT**) が含まれます。引数 *szMsg* には、レポート用の完全にアセンブルされたメッセージ文字列へのポインターが含まれます。また、*retVal* には、`_CrtDbgReport` がレポート作成後に通常どおり実行を継続するのか、デバッガーを起動するのかを示す値が含まれます。 (*retVal* の値が 0 の場合は実行を継続し、1 の場合はデバッガーを起動します。)
+
+ フック関数でメッセージを完全に処理できたため、それ以上レポートを出力する必要がない場合は、**TRUE** を返すようにします。 **FALSE** を返した場合は、`_CrtDbgReport` は通常どおりにレポート メッセージを出力します。
+
+## <a name="see-also"></a>参照
+- [デバッグ用フック関数の作成](../debugger/debug-hook-function-writing.md)
+- [crt_dbg2 サンプル](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

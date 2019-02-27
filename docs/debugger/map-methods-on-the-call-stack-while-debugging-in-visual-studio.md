@@ -29,18 +29,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5285149bbefa8230940cfad19b5e0391a1e99bd
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 118b8a6c8d857e626d39cf27d2767f75cd0550ee
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690503"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704814"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>デバッグ中に呼び出し履歴のビジュアル マップを作成 (C#、Visual Basic、C++、JavaScript)
 
 デバッグ中に呼び出し履歴を視覚的にトレースするためのコード マップを作成します。 コメントをマップに追加することで、バグを見つけることに重点を置いてコードの動作を追跡できます。
 
-チュートリアルについては、このビデオをご覧ください。[ビデオ:コード マップ デバッガーの統合 (チャネル 9) で視覚的にデバッグします。](http://go.microsoft.com/fwlink/?LinkId=293418)
+チュートリアル、ビデオをご覧ください:[ビデオ: コード マップ デバッガーの統合 (チャネル 9) で視覚的にデバッグ](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 コマンドとコード マップで使用できる操作の詳細については、次を参照してください。[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)します。
 
@@ -54,7 +54,7 @@ ms.locfileid: "55690503"
 ##  <a name="MapStack"></a>呼び出し履歴でマップを作成する
 
 1. Visual Studio Enterprise でC#、Visual Basic、C++ または JavaScript プロジェクトを選択してデバッグを開始**デバッグ** > **デバッグの開始**キーを押して**F5**.
-   
+
 1. アプリが中断モードになるか、関数にステップ イン、選択**デバッグ** > **コード マップ**、またはキーを押します**Ctrl**+**シフト**+**`**.
 
    現在の呼び出し履歴は新しいコード マップ上にオレンジ色で表示されます。
@@ -73,19 +73,19 @@ ms.locfileid: "55690503"
 ## <a name="map-external-code"></a>外部コードをマップします。
 
 既定では、ユーザー自身のコードだけがマップに表示されます。 マップ上の外部コードを参照してください。
-  
+
 - 右クリックし、**呼び出し履歴**ウィンドウと選択**外部コードの表示**:
-  
+
   ![呼び出し履歴 ウィンドウを使用して外部コードの表示](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
 - または、選択解除**マイ コードのみを有効にする**Visual Studio で**ツール**(または**デバッグ**) >**オプション** >  **デバッグ**:
-  
+
   ![[オプション] ダイアログを使用して外部コードの表示](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
 ## <a name="control-the-maps-layout"></a>マップのレイアウトを制御します。
 
-マップのレイアウトを変更すると、任意の方法でコードに影響しません。 
+マップのレイアウトを変更すると、任意の方法でコードに影響しません。
 
-マップのレイアウトを制御するには、選択、**レイアウト**マップのツールバー メニュー。 
+マップのレイアウトを制御するには、選択、**レイアウト**マップのツールバー メニュー。
 
 **レイアウト**ことができます メニュー。
 
@@ -95,9 +95,9 @@ ms.locfileid: "55690503"
 
 ##  <a name="MakeNotes"></a>コードに関するコメントを追加する
 
-コードで何が起こっているかを追跡するためにコメントを追加することができます。 
+コードで何が起こっているかを追跡するためにコメントを追加することができます。
 
-コメントを追加するには、コード マップで右クリックして**編集** > **新しいコメント**コメントを入力します。 
+コメントを追加するには、コード マップで右クリックして**編集** > **新しいコメント**コメントを入力します。
 
 コメントで新しい行を追加するキーを押します。 **Shift**+**Enter**します。
 
@@ -109,11 +109,11 @@ ms.locfileid: "55690503"
 
 ![[次へ] のコール スタックで更新プログラムのコード マップ](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-新しい呼び出し履歴を自動的に追加することから、マップを停止する次のように選択します。 ![Show 呼び出しスタックは、自動的にコード マップを](../debugger/media/debuggermap_automaticupdateicon.gif "Show コール スタックは、自動的にコード マップに")コード マップのツールバー。 マップは、既存の呼び出し履歴を強調表示が続行されます。 マップを現在の呼び出し履歴を手動で追加するには、キーを押して**Ctrl**+**Shift**+**`** します。 
+新しい呼び出し履歴を自動的に追加することから、マップを停止する次のように選択します。 ![Show 呼び出しスタックは、自動的にコード マップを](../debugger/media/debuggermap_automaticupdateicon.gif "Show コール スタックは、自動的にコード マップに")コード マップのツールバー。 マップは、既存の呼び出し履歴を強調表示が続行されます。 マップを現在の呼び出し履歴を手動で追加するには、キーを押して**Ctrl**+**Shift**+**`** します。
 
 ##  <a name="AddRelatedCode"></a>関連するコードをマップに追加する
 
-マップを取得したできたC#または Visual Basic では、フィールド、プロパティ、およびコードで何が起こっているかを追跡するために、他の方法などの項目を追加することができます。 
+マップを取得したできたC#または Visual Basic では、フィールド、プロパティ、およびコードで何が起こっているかを追跡するために、他の方法などの項目を追加することができます。
 
 、コード内のメソッドの定義に移動するには、マップでは、メソッドをダブルクリックまたは選択してキーを押して**F12**、右クリックし、選択または**定義へ移動**します。
 
@@ -151,7 +151,7 @@ ms.locfileid: "55690503"
 
 マップをエクスポートして他のユーザーを Microsoft Outlook に送信、ソリューションに保存するか、およびバージョン管理にチェックインできます。
 
-共有する、またはマップを保存するには使用**共有**コード マップ ツールバーでします。 
+共有する、またはマップを保存するには使用**共有**コード マップ ツールバーでします。
 
 ![他のユーザーと共有呼び出し履歴コード マップ](../debugger/media/debuggermap_sharewithothers.png "他のユーザーと共有呼び出し履歴コード マップ")
 

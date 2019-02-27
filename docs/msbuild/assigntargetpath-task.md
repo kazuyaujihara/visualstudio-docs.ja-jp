@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21678dd573030076d7248dfb7bbf47ea412cecae
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3afe10d8bb912b911734437eb79684cdbfe9f78d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853457"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626506"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath タスク
 このタスクはファイルのリストを受け入れ、`<TargetPath>` 属性がまだ指定されていない場合は、この属性を追加します。
@@ -32,7 +32,7 @@ ms.locfileid: "55853457"
 |`Files`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 入力パラメーターです。<br /><br /> ファイルの受信リストが格納されます。|
 |`AssignedFiles`|Optional<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]` 出力パラメーターです。<br /><br /> ファイルの結果のリストが格納されます。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
@@ -52,5 +52,5 @@ RootFolder="Resources"
 ```
 
 ## <a name="see-also"></a>関連項目
-[タスク](../msbuild/msbuild-tasks.md)  
-[タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [タスク](../msbuild/msbuild-tasks.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

@@ -8,49 +8,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46c9061163b36b6d75bb7e6d8a9b8631ce1ea01a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b2be1ac0818f7efd31fb30981e50eff5e42df7af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070683"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634787"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>方法: プロファイラーのコマンド ラインを使用してネイティブ サービスをインストルメントし、詳細なタイミング データを収集する
-この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用してネイティブ (C/C++) サービスをインストルメント化し、詳細なタイミング データを収集する方法について説明します。  
+この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用してネイティブ (C/C++) サービスをインストルメント化し、詳細なタイミング データを収集する方法について説明します。
 
 > [!NOTE]
->  コンピューターの開始後にサービスを再開できない場合、インストルメンテーション メソッドを使用してサービスをプロファイルすることはできません。このようなサービスが開始されるのは、オペレーティング システムの開始時のみです。  
-> 
+>  コンピューターの開始後にサービスを再開できない場合、インストルメンテーション メソッドを使用してサービスをプロファイルすることはできません。このようなサービスが開始されるのは、オペレーティング システムの開始時のみです。
+>
 >  プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
- 
- インストルメンテーション メソッドを使用してネイティブ サービスから詳細なタイミング データを収集するには、[VSInstr.exe](../profiling/vsinstr.md) ツールを使用して、コンポーネントのインストルメントされたバージョンを生成します。 次に、サービスのインストルメントされていないバージョンをインストルメントされたバージョンに置き換え、サービスを手動で起動するように構成します。 次に、プロファイラーを起動します。  
 
- サービスを起動すると、タイミング データがデータ ファイルに自動的に収集されます。 プロファイル セッション中にデータ収集を一時停止および再開できます。  
+ インストルメンテーション メソッドを使用してネイティブ サービスから詳細なタイミング データを収集するには、[VSInstr.exe](../profiling/vsinstr.md) ツールを使用して、コンポーネントのインストルメントされたバージョンを生成します。 次に、サービスのインストルメントされていないバージョンをインストルメントされたバージョンに置き換え、サービスを手動で起動するように構成します。 次に、プロファイラーを起動します。
 
- プロファイル セッションを終了するには、サービスをオフにし、プロファイラーを明示的に終了します。  
+ サービスを起動すると、タイミング データがデータ ファイルに自動的に収集されます。 プロファイル セッション中にデータ収集を一時停止および再開できます。
 
-## <a name="start-the-application-with-the-profiler"></a>プロファイラーによるアプリケーションの起動  
+ プロファイル セッションを終了するには、サービスをオフにし、プロファイラーを明示的に終了します。
 
-#### <a name="to-start-profiling-a-native-service"></a>ネイティブ サービスのプロファイルを開始するには  
+## <a name="start-the-application-with-the-profiler"></a>プロファイラーによるアプリケーションの起動
 
-1. コマンド プロンプト ウィンドウを開きます。  
+#### <a name="to-start-profiling-a-native-service"></a>ネイティブ サービスのプロファイルを開始するには
 
-2. **VSInstr** ツールを使用して、サービス バイナリのインストルメントされたバージョンを生成します。  
+1. コマンド プロンプト ウィンドウを開きます。
 
-3. 元のバイナリをインストルメントされたバージョンに置き換えます。 Windows サービス コントロール マネージャーで、サービスの [スタートアップの種類] が [手動] に設定されていることを確認します。  
+2. **VSInstr** ツールを使用して、サービス バイナリのインストルメントされたバージョンを生成します。
 
-4. プロファイラーを起動します。 型:  
+3. 元のバイナリをインストルメントされたバージョンに置き換えます。 Windows サービス コントロール マネージャーで、サービスの [スタートアップの種類] が [手動] に設定されていることを確認します。
 
-    **VSPerfCmd** [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+4. プロファイラーを起動します。 型:
 
-   - **/start:trace** オプションによってプロファイラーが初期化されます。  
+    **VSPerfCmd** [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
-   - **/start** を使用するには、**/output:**`OutputFile` オプションを指定する必要があります。 `OutputFile` には、プロファイル データ (.*vsp*) ファイルの名前と場所を指定します。  
+   - **/start:trace** オプションによってプロファイラーが初期化されます。
 
-     **/start:trace** オプションを使用する場合は、次のうちいずれのオプションでも指定できます。  
+   - **/start** を使用するには、**/output:**`OutputFile` オプションを指定する必要があります。 `OutputFile` には、プロファイル データ (.*vsp*) ファイルの名前と場所を指定します。
+
+     **/start:trace** オプションを使用する場合は、次のうちいずれのオプションでも指定できます。
 
    > [!NOTE]
-   >  **/user** オプションと **/crosssession** オプションは、通常、ASP.NET アプリケーションで必要です。  
+   >  **/user** オプションと **/crosssession** オプションは、通常、ASP.NET アプリケーションで必要です。
 
    | オプション | 説明 |
    | - | - |
@@ -64,34 +64,34 @@ ms.locfileid: "55070683"
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.*etl*) ファイルに収集されます。 |
 
 
-5. サービス コントロール マネージャーからサービスを開始します。  
+5. サービス コントロール マネージャーからサービスを開始します。
 
-## <a name="control-data-collection"></a>データ収集の制御  
- サービスの実行中は、*VSPerfCmd.exe* オプションを使用して、プロファイラー データ ファイルへのデータ書き込みを開始および停止できます。 データ コレクションを制御することにより、サービスの開始、終了などの、プログラム実行の特定の部分についてのデータを収集できます。  
+## <a name="control-data-collection"></a>データ収集の制御
+ サービスの実行中は、*VSPerfCmd.exe* オプションを使用して、プロファイラー データ ファイルへのデータ書き込みを開始および停止できます。 データ収集を制御することにより、サービスの開始、終了などの、プログラム実行の特定の部分についてのデータを収集できます。
 
-#### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには  
+#### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには
 
--   次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
+-   次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
 
-    |オプション|説明|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|すべてのプロセスのデータ収集を開始 (**/globalon**) または停止 (**/globaloff**) します。|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|プロセス ID (`PID`) で指定されたプロセスのデータ収集を開始 (**/processon**) または停止 (**/processoff**) します。|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|スレッド ID (`TID`) で指定されたスレッドのデータ収集を開始 (**/threadon**) または停止 (**/threadoff**) します。|  
+    |オプション|説明|
+    |------------|-----------------|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|すべてのプロセスのデータ収集を開始 (**/globalon**) または停止 (**/globaloff**) します。|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|プロセス ID (`PID`) で指定されたプロセスのデータ収集を開始 (**/processon**) または停止 (**/processoff**) します。|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|スレッド ID (`TID`) で指定されたスレッドのデータ収集を開始 (**/threadon**) または停止 (**/threadoff**) します。|
 
-## <a name="end-the-profiling-session"></a>プロファイル セッションの終了  
- プロファイル セッションを終了するには、インストルメントされたコンポーネントを実行しているサービスを停止し、**VSPerfCmd**[/shutdown](../profiling/shutdown.md) オプションを呼び出してプロファイラーをオフにした後、プロファイル データ ファイルを閉じます。  
+## <a name="end-the-profiling-session"></a>プロファイル セッションの終了
+ プロファイル セッションを終了するには、インストルメントされたコンポーネントを実行しているサービスを停止し、**VSPerfCmd**[/shutdown](../profiling/shutdown.md) オプションを呼び出してプロファイラーをオフにした後、プロファイル データ ファイルを閉じます。
 
-#### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには  
+#### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには
 
-1.  サービス コントロール マネージャーからサービスを停止します。  
+1.  サービス コントロール マネージャーからサービスを停止します。
 
-2.  プロファイラーをシャットダウンします。 型:  
+2.  プロファイラーをシャットダウンします。 型:
 
-     **VSPerfCmd /shutdown**  
+     **VSPerfCmd /shutdown**
 
-3.  インストルメントされたモジュールを元のモジュールに置き換えます。 必要に応じて、サービスの [スタートアップの種類] を再構成します。  
+3.  インストルメントされたモジュールを元のモジュールに置き換えます。 必要に応じて、サービスの [スタートアップの種類] を再構成します。
 
-## <a name="see-also"></a>関連項目  
- [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)   
- [インストルメンテーション メソッドのデータ ビュー](../profiling/instrumentation-method-data-views.md)
+## <a name="see-also"></a>関連項目
+- [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)
+- [インストルメンテーション メソッドのデータ ビュー](../profiling/instrumentation-method-data-views.md)

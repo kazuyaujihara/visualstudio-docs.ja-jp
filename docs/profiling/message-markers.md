@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afdd3c12535c86f5fc7b4a3270613568f9fd997e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b668f0331345e6a1022ef79105614f4a22e91d9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033792"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628943"
 ---
 # <a name="message-markers"></a>メッセージ マーカー
-メッセージ マーカーは、ログ出力を表します。 メッセージは、特定のスレッドによって特定の時間に発行される文字列です。 メッセージは、その他のツールで使用するためにテキスト ファイルにエクスポートできます。 メッセージ文字列を確認するには、コンカレンシー ビジュアライザーで、メッセージにポインターを置くことができます。 そして、[マーカー レポート](../profiling/markers-report.md)で、すべてのメッセージ マーカーを確認できます。  次の図は、メッセージ マーカーを示しています。  
-  
-## <a name="message-aggregation-markers"></a>メッセージの集約マーカー  
- コンカレンシー ビジュアライザーで、複数のメッセージが相互に近接しすぎて、個別に描画できないことがあります。 そのような場合には、基になるメッセージを表す*メッセージ集約マーカー*が表示されます。 それらのアイコンのいずれかにポインターを置くと、表現されている、基になるメッセージの数がツールヒントに表示されます。 メッセージを表示するには、ズームインします。  限界までズームインしてもなお集約マーカーが表示される場合には、基になるメッセージを[マーカー レポート](../profiling/markers-report.md)で確認できます。  
-  
-## <a name="see-also"></a>関連項目  
- [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)   
- [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)
+メッセージ マーカーは、ログ出力を表します。 メッセージは、特定のスレッドによって特定の時間に発行される文字列です。 メッセージは、その他のツールで使用するためにテキスト ファイルにエクスポートできます。 メッセージ文字列を確認するには、コンカレンシー ビジュアライザーで、メッセージにポインターを置くことができます。 そして、[マーカー レポート](../profiling/markers-report.md)で、すべてのメッセージ マーカーを確認できます。  次の図は、メッセージ マーカーを示しています。
+
+## <a name="message-aggregation-markers"></a>メッセージの集約マーカー
+ コンカレンシー ビジュアライザーで、複数のメッセージが相互に近接しすぎて、個別に描画できないことがあります。 そのような場合には、基になるメッセージを表す*メッセージ集約マーカー*が表示されます。 それらのアイコンのいずれかにポインターを置くと、表現されている、基になるメッセージの数がツールヒントに表示されます。 メッセージを表示するには、ズームインします。  限界までズームインしてもなお集約マーカーが表示される場合には、基になるメッセージを[マーカー レポート](../profiling/markers-report.md)で確認できます。
+
+## <a name="see-also"></a>関連項目
+- [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)
+- [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)

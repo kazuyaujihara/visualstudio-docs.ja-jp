@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiaenumsourcefiles::skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 946fd14b3be6141763ee3185eac1da153df1c82a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b80a2a0f270ccd76d052d4c7863170448648e138
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977604"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597466"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
-指定された数の列挙体シーケンス内のソース ファイルをスキップします。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- celt  
- [in]スキップする列挙体シーケンス内のソース ファイルの数。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`以上をスキップするソース ファイルがある場合。  
-  
+指定された数の列挙体シーケンス内のソース ファイルをスキップします。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ celt
+
+[in]スキップする列挙体シーケンス内のソース ファイルの数。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`以上をスキップするソース ファイルがある場合。
+
 ## <a name="see-also"></a>関連項目
- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

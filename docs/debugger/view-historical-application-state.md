@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8d1026ca2ac677a98d36dbf4fffe12428151885
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cf319dd00048a4abf6cc4e3806845200c9eefc64
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992699"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703579"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Visual Studio の IntelliTrace のステップ バックを使用して以前のアプリケーション状態を調べる (Visual Studio Enterprise)
 
@@ -29,14 +29,14 @@ IntelliTrace のステップ バックは、Visual Studio Enterprise 2017 バー
 > * IntelliTrace イベントとスナップショットの有効化
 > * ステップ バックおよび次へ進むコマンドを使用したイベント間の移動
 > * イベントのスナップショットの参照
-  
-## <a name="enable-intellitrace-events-and-snapshots-mode"></a>IntelliTrace イベントとスナップショット モードの有効化 
+
+## <a name="enable-intellitrace-events-and-snapshots-mode"></a>IntelliTrace イベントとスナップショット モードの有効化
 
 1. Visual Studio Enterprise でプロジェクトを開きます。
 
-1. **[ツール]** > **[オプション]** > **[IntelliTrace]** 設定を開き、**[IntelliTrace events and snapshots]\(IntelliTrace のイベントとスナップショット\)** のオプションを選択します。 
+1. **[ツール]** > **[オプション]** > **[IntelliTrace]** 設定を開き、**[IntelliTrace events and snapshots]\(IntelliTrace のイベントとスナップショット\)** のオプションを選択します。
 
-    Visual Studio 2017 Enterprise バージョン 15.9 プレビュー 2 以降では、このオプションは **[IntelliTrace snapshots (managed and native)]** \(IntelliTrace スナップショット (マネージドおよびネイティブ)\) になっています。 
+    Visual Studio 2017 Enterprise バージョン 15.9 プレビュー 2 以降では、このオプションは **[IntelliTrace snapshots (managed and native)]** \(IntelliTrace スナップショット (マネージドおよびネイティブ)\) になっています。
 
     ![IntelliTrace イベントとスナップショット モードを有効にする](../debugger/media/intellitrace-enable-snapshots.png "IntelliTrace イベントとスナップショット モードを有効にする")
 
@@ -55,7 +55,7 @@ IntelliTrace のステップ バックは、Visual Studio Enterprise 2017 バー
 
     IntelliTrace は、アプリケーションの手順のデバッガーのステップ実行、ブレークポイント イベント、未処理の例外イベントごとにスナップショットを作成します。 これらのイベントは、**[診断ツール]** ウィンドウの **[イベント]** タブに、その他の IntelliTrace のイベントと共に記録されます。 ウィンドウを開くには、**[デバッグ]** > **[Windows]** > **[診断ツールの表示]** の順に選択します。
 
-    スナップショットがあるイベントの横にはカメラ アイコンが表示されます。 
+    スナップショットがあるイベントの横にはカメラ アイコンが表示されます。
 
     ![[イベント] タブとスナップショット](../debugger/media/intellitrace-events-tab-with-snapshots.png "[イベント] タブとブレークポイントとステップのスナップショット")
 
@@ -69,15 +69,15 @@ IntelliTrace のステップ バックは、Visual Studio Enterprise 2017 バー
 
     ![[前に戻る] ボタンと [次へ進む] ボタン](../debugger/media/intellitrace-step-back-icons-description.png "[前に戻る] ボタンと [次へ進む] ボタン")
 
-    前に戻ったり、次へ進んだりすると、Visual Studio はデバッグ履歴モードになります。 このモードでは、選択しているイベントが記録されたときにデバッガーのコンテキストが切り替わります。 ポインターも、Visual Studio によりソース ウィンドウの対応するコード行に移動します。 
+    前に戻ったり、次へ進んだりすると、Visual Studio はデバッグ履歴モードになります。 このモードでは、選択しているイベントが記録されたときにデバッガーのコンテキストが切り替わります。 ポインターも、Visual Studio によりソース ウィンドウの対応するコード行に移動します。
 
     このビューでは、値を **[呼び出し履歴]**、**[ローカル]**、**[自動変数]** および **[Watch]** ウィンドウで確認できます。 また、変数の上にマウスを置き、[データヒント] を表示して、式の評価を **[イミディエイト]** ウィンドウで実行できます。 表示されるデータは、アプリケーションのプロセスの時点で作成されたスナップショットからのものです。
 
-    そのため、たとえばブレークポイントにヒットし、ステップを実行した場合 (**F10**)、**[前に戻る]** ボタンにより Visual Studio は、ブレークポイントに対応するコード行で履歴モードになります。 
+    そのため、たとえばブレークポイントにヒットし、ステップを実行した場合 (**F10**)、**[前に戻る]** ボタンにより Visual Studio は、ブレークポイントに対応するコード行で履歴モードになります。
 
     ![スナップショットがあるイベントで履歴モードをアクティブにする](../debugger/media/intellitrace-historical-mode-with-snapshot.png "スナップショットがあるイベントで履歴モードをアクティブにする")
 
-2. ライブ実行に戻るには、**[続行] (F5)** を選択するか、情報バーの **[Return to Live Debugging]** \(ライブ デバッグに戻る\) リンクをクリックします。 
+2. ライブ実行に戻るには、**[続行] (F5)** を選択するか、情報バーの **[Return to Live Debugging]** \(ライブ デバッグに戻る\) リンクをクリックします。
 
 3. スナップショットは、**[イベント]** タブで確認することも可能です。これを実行するには、スナップショットがあるイベントを選択し、**[デバッグ履歴の有効化]** をクリックします。
 
@@ -87,28 +87,28 @@ IntelliTrace のステップ バックは、Visual Studio Enterprise 2017 バー
 
     ![IntelliTrace のステップ バックの概要](../debugger/media/intellitrace-step-back-overview.png "IntelliTrace のステップ バックの概要")
 
-    Visual Studio で変数を確認する方法の詳細については、[デバッガーの機能の紹介](../debugger/debugger-feature-tour.md)ページを参照してください。  
+    Visual Studio で変数を確認する方法の詳細については、[デバッガーの機能の紹介](../debugger/debugger-feature-tour.md)ページを参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 #### <a name="how-is-intellitrace-step-back-different-from-intellitrace-events-only-mode"></a>IntelliTrace のステップ バックは IntelliTrace のイベント限定モードとどのように違いますか?
 
-IntelliTrace のイベント限定モードでは、デバッガーのステップ実行とブレークポイントでデバッグ履歴を有効にできます。 ただし、IntelliTrace はウィンドウが開いている場合の **[ローカル]** および **[自動変数]** ウィンドウのデータしかキャプチャしません。そしてキャプチャされるのは、展開されて表示されているもののみです。 イベント限定モードでは、多くの場合、変数の完全なビューと複合オブジェクトがありません。 また、**[ウォッチ]** ウィンドウでの式の評価とデータの参照はサポートされていません。 
+IntelliTrace のイベント限定モードでは、デバッガーのステップ実行とブレークポイントでデバッグ履歴を有効にできます。 ただし、IntelliTrace はウィンドウが開いている場合の **[ローカル]** および **[自動変数]** ウィンドウのデータしかキャプチャしません。そしてキャプチャされるのは、展開されて表示されているもののみです。 イベント限定モードでは、多くの場合、変数の完全なビューと複合オブジェクトがありません。 また、**[ウォッチ]** ウィンドウでの式の評価とデータの参照はサポートされていません。
 
 イベントおよびスナップショット モードでは、IntelliTrace は複合オブジェクトを含むアプリケーションのプロセスのスナップショット全体をキャプチャします。 コード行では、ブレークポイントで停止したのと同じ状態で同じ情報が表示されます (これは以前情報を開いたかどうかには関係しません)。 スナップショットを参照するとき、式の評価もサポートされます。  
 
 #### <a name="what-is-the-performance-impact-of-this-feature"></a>この機能はパフォーマンスにどのような影響を与えますか? 
 
 ステップ実行がパフォーマンス全体に与える影響は、アプリケーションによって異なります。 スナップショットの作成にかかるオーバーヘッドは、約 30 ミリ秒です。 スナップショットが作成されると、アプリのプロセスがフォークされ、フォークされたコピーが中断されます。 スナップショットを参照するとき、Visual Studio はプロセスのフォークされたコピーにアタッチされています。 Visual Studio は各スナップショットで、ページ テーブルのみをコピーし、ページをコピー オン ライトとして設定します。 関連付けられているスナップショットがあるデバッガーのステップ間でヒープのオブジェクトが変わる場合、該当するページ テーブルがコピーされるので、メモリのコストはわずかになります。 Visual Studio がスナップショットを作成するのに十分なメモリがないと判断した場合、作成されません。
- 
-## <a name="known-issues"></a>既知の問題  
+
+## <a name="known-issues"></a>既知の問題
 * Windows 10 Fall Creators Update (RS3) より後のバージョンの Windows で IntelliTrace のイベントとスナップショット モードを使用しており、アプリケーションのデバッグ プラットフォーム ターゲットが x86 に設定されている場合、IntelliTrace ではスナップショットを作成しません。
 
     回避策:
-  * Windows 10 Anniversary Update (RS1) のバージョン 10.0.14393.2273 未満を使用している場合、[KB4103720 をインストール](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)します。 
+  * Windows 10 Anniversary Update (RS1) のバージョン 10.0.14393.2273 未満を使用している場合、[KB4103720 をインストール](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)します。
   * Windows 10 Creators Update (RS2) のバージョン 10.0.15063.1112 未満を使用している場合、[KB4103722 をインストール](https://support.microsoft.com/help/4103722/windows-10-update-4103722)します。
-  * Windows 10 Fall Creators Update (RS3) をインストールするか、これにアップグレードします。 
-  * または、次のようにします。 
+  * Windows 10 Fall Creators Update (RS3) をインストールするか、これにアップグレードします。
+  * または、次のようにします。
     1. Visual Studio インストーラーからデスクトップ (x86、x64) コンポーネント用の VC++ 2015.3 v140 ツールセットをインストールします。
     2. 対象アプリケーションをビルドします。
     3. コマンド ラインで editbin ツールを使って、ターゲット実行可能ファイルの `Largeaddressaware` フラグを設定します。 たとえば、(パスのアップデート後) 次のコマンドを使用します。"C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe"
@@ -120,11 +120,11 @@ IntelliTrace のイベント限定モードでは、デバッガーのステッ�
 * アプリケーションのプロセスのスナップショットが永続化メモリにマップされたファイルを使用するアプリケーションで作成された場合、(親プロセスでロックがリリースされた場合も) そのスナップショットのプロセスがメモリでマップされたファイルの排他的ロックを保持します。 その他のプロセスは、依然メモリにマップ済みのファイルを読み取ることはできますが、書き込むことはできません。
 
     回避策:
-    * デバッグ セッションを終了して、すべてのスナップショットをクリアします。 
+    * デバッグ セッションを終了して、すべてのスナップショットをクリアします。
 
-* 多数の DLL を読み込むアプリケーションなど、そのプロセスに一意のメモリ領域が多数あるアプリケーションをデバッグする場合、スナップショットが有効なステップ実行のパフォーマンスに影響がある場合があります。 この問題は、Windows の今後のバージョンで対処される予定です。 この問題が発生している場合は、stepback@microsoft.com までご連絡ください。 
+* 多数の DLL を読み込むアプリケーションなど、そのプロセスに一意のメモリ領域が多数あるアプリケーションをデバッグする場合、スナップショットが有効なステップ実行のパフォーマンスに影響がある場合があります。 この問題は、Windows の今後のバージョンで対処される予定です。 この問題が発生している場合は、stepback@microsoft.com までご連絡ください。
 
-* イベントおよびスナップショット モードで **[デバッグ] > [IntelliTrace] > [IntelliTrace セッションを保存する]** でファイルを保存する場合、スナップショットからキャプチャしたその他のデータは .itrace ファイルにはありません。 ブレークポイントやステップ イベントでは、IntelliTrace イベントのみモードでファイルを保存したのと同じ情報が表示されます。 
+* イベントおよびスナップショット モードで **[デバッグ] > [IntelliTrace] > [IntelliTrace セッションを保存する]** でファイルを保存する場合、スナップショットからキャプチャしたその他のデータは .itrace ファイルにはありません。 ブレークポイントやステップ イベントでは、IntelliTrace イベントのみモードでファイルを保存したのと同じ情報が表示されます。
 
 ## <a name="next-steps"></a>次の手順
 

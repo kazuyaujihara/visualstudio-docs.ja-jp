@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b96dff857d49f12ffaa10e22c9189eb3a1d5b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925450"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638735"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>マルチプロセッサ環境でのログ
 MSBuild では複数のプロセッサを使用できるため、プロジェクトのビルド時間が大幅に短縮されますが、同時にログの複雑性も高まります。 シングルプロセッサ環境であれば、logger は、イベント、メッセージ、警告、およびエラーを順序に従った予測可能な方法で処理できます。 それに対し、マルチプロセッサ環境では、イベントが複数のソースから同時に、または誤った順序で送られてくることがあります。 MSBuild には、マルチプロセッサ対応の新しい logger が用意されており、カスタム "転送 logger" を作成できます。
@@ -71,5 +71,5 @@ Culture=neutral
 `-dl` スイッチでは、2 つの logger 名をアスタリスク (*) で区切っています。
 
 ## <a name="see-also"></a>関連項目
-[ビルド ロガー](../msbuild/build-loggers.md)  
-[転送 logger の作成](../msbuild/creating-forwarding-loggers.md)
+- [ビルド ロガー](../msbuild/build-loggers.md)
+- [転送 logger の作成](../msbuild/creating-forwarding-loggers.md)

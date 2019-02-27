@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb537f045f3ed2409dfcf0def2826057fd55687
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5814ea188de7d3c5b7aba78ab1b239d1e9fe29e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927744"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627221"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives タスク
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> タスクは、1 つ以上の [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] バイナリ形式ファイルのローカリゼーション属性とコメントを、アセンブリ全体で単一のファイルにマージします。
@@ -35,7 +35,7 @@ ms.locfileid: "55927744"
 | `GeneratedLocalizationFiles` | 必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] バイナリ形式の個々のファイルに対するローカリゼーション ディレクティブ ファイルの一覧を指定します。 |
 | `OutputFile` | 省略可能な **String** 型の出力パラメーターです。<br /><br /> コンパイルされたローカリゼーション ディレクティブ アセンブリの出力パスを指定します。 |
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] のコンテンツには、ローカリゼーション属性とコメントを追加できます。 [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)] のローカリゼーション サポートを使用すると、ローカリゼーション属性とコメントを取り出し、生成されるアセンブリとは別の *.loc* ファイルに格納できます。 これを行うには、**LocalizationPropertyStorage** 属性を使用します。 ローカリゼーション属性とコメント、および **LocalizationPropertyStorage** の詳細については、「[ローカリゼーション属性とコメント](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)」を参照してください。
 
 ## <a name="example"></a>例
@@ -55,8 +55,8 @@ ms.locfileid: "55927744"
 ```
 
 ## <a name="see-also"></a>関連項目
-[WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)  
-[WPF MSBuild タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild リファレンス](../msbuild/msbuild-reference.md)  
-[MSBuild タスク リファレンス](../msbuild/msbuild-task-reference.md)  
-[WPF アプリケーション (WPF) のビルド](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+- [WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)
+- [WPF MSBuild タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md)
+- [MSBuild タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [WPF アプリケーション (WPF) のビルド](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

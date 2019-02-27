@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917e9927e6eb8771ea911ee938d9226ecb2eadff
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484226"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713153"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>超初心者でもわかるデバッグ方法
 
@@ -101,7 +101,7 @@ Visual Studio では、コード行の左にある余白をクリックして、
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -112,7 +112,7 @@ Visual Studio では、コード行の左にある余白をクリックして、
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -124,33 +124,33 @@ Visual Studio では、コード行の左にある余白をクリックして、
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -188,8 +188,8 @@ Visual Studio では、コード行の左にある余白をクリックして、
     アプリが開始し、デバッガーでは例外は表示されません。 しかし、コンソール ウィンドウに表示される出力は、予想したものではありません。 予想される出力を次に示します。
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -199,8 +199,8 @@ Visual Studio では、コード行の左にある余白をクリックして、
     しかし、代わりに次のように表示されます。
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -217,7 +217,7 @@ Visual Studio では、コード行の左にある余白をクリックして、
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     ブレークポイントを設定すると、左側の余白に赤い点が表示されます。
@@ -247,13 +247,13 @@ Visual Studio では、コード行の左にある余白をクリックして、
 1. 銀河の種類の設定に関するコードを調べると、`Galaxy` クラスの `GalaxyType` プロパティが、`GType` ではなく `object` として指定されていることがわかります。
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. 上記のコードを次のように変更します。
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. デバッグ ツールバーにある **[再起動]** ![アプリの再起動](../debugger/media/dbg-tour-restart.png "RestartApp") ボタンをクリックし (**Ctrl** + **Shift** + **F5**)、コードを再コンパイルして再起動します。
@@ -265,8 +265,8 @@ Visual Studio では、コード行の左にある余白をクリックして、
     アプリが実行して、出力を表示します。 今度は問題ないようですが、1 つ気付いたことがあります。コンソール出力では Small Magellanic Cloud 銀河は Irregular 銀河として表示されるようにしたかったのですが、銀河の種類には何も表示されていません。
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -283,7 +283,7 @@ Visual Studio では、コード行の左にある余白をクリックして、
 
 1. デバッグ ツールバーにある **[再起動]** ![アプリの再起動](../debugger/media/dbg-tour-restart.png "RestartApp") ボタンをクリックして (**Ctrl** + **Shift** + **F5**)、再起動します。
 
-    ブレークポイントを設定したコード行で、デバッガーが一時停止します。  
+    ブレークポイントを設定したコード行で、デバッガーが一時停止します。
 
 1. `type` 変数をポイントします。 `S` という値が (文字コードの後に) 表示されます。 銀河の種類 Irregular は `I` で表されることがわかっているので、この値に関心があります。
 
@@ -323,7 +323,7 @@ Visual Studio では、コード行の左にある余白をクリックして、
 * アプリケーションで想定されたコードが実行されているかどうかを確認します。 (たとえば、サンプル アプリケーションでは、銀河の種類を Irregular に設定する switch ステートメントのコードが想定されましたが、タイプミスのためにアプリはそのコードをスキップしていました。)
 
 > [!TIP]
-> バグを見つけるにはデバッガーが役に立ちます。 デバッグ ツールは、コードの意図がわかっている場合にのみ、"*自動的に*" バグを発見できます。 開発者がその意図を表現した場合にのみ、ツールはコードの意図を認識できます。 それを行う方法は、[単体テスト](../test/improve-code-quality.md)を書くことです。 
+> バグを見つけるにはデバッガーが役に立ちます。 デバッグ ツールは、コードの意図がわかっている場合にのみ、"*自動的に*" バグを発見できます。 開発者がその意図を表現した場合にのみ、ツールはコードの意図を認識できます。 それを行う方法は、[単体テスト](../test/improve-code-quality.md)を書くことです。
 
 ## <a name="next-steps"></a>次の手順
 

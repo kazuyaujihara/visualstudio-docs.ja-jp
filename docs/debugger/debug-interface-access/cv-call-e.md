@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8c11e84a514739049a044a12ae482f7b2d9929
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
+ms.openlocfilehash: ec5fea99994b891250dad85cfc43320848df98f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316187"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602755"
 ---
 # <a name="cvcalle"></a>CV_call_e
 関数の呼び出し規約を指定します。
@@ -39,23 +39,17 @@ typedef enum CV_call_e {
 ```
 
 ## <a name="elements"></a>Elements
-CV_CALL_NEAR_C  
-ほぼ右から左へプッシュを使用して関数呼び出し規約を指定します。 呼び出し元の関数は、スタックをクリアします。
+CV_CALL_NEAR_C では、ほぼ右から左へプッシュを使用して関数呼び出し規約を指定します。 呼び出し元の関数は、スタックをクリアします。
 
-CV_CALL_NEAR_FAST  
-ほぼ左から右プッシュを使用してレジスタと共に関数呼び出し規約を指定します。 呼び出された関数では、パラメーターのバイト数の合計を使用して、スタックをクリアします。
+CV_CALL_NEAR_FAST 指定で、ほぼ左から右のプッシュを使用して関数呼び出し規約登録します。 呼び出された関数では、パラメーターのバイト数の合計を使用して、スタックをクリアします。
 
-CV_CALL_NEAR_STD  
-Near の標準的な呼び出し (右から左へプッシュ) を使用して関数呼び出し規約を指定します。
+CV_CALL_NEAR_STD はほぼ標準呼び出し (右から左へプッシュ) を使用して関数呼び出し規約を指定します。
 
-CV_CALL_NEAR_SYS  
-ほぼシステム コールを使用して関数呼び出し規約を指定します。
+ほぼシステムを使用して関数呼び出し規約を呼び出す CV_CALL_NEAR_SYS を指定します。
 
-CV_CALL_THISCALL  
-使用して関数呼び出し規約を指定します。`this`呼び出し (`this`ポインターがレジスタに渡されます)。
+CV_CALL_THISCALL 指定の関数呼び出し規約を使用して、`this`呼び出し (`this`ポインターがレジスタに渡されます)。
 
-CV_CALL_CLRCALL  
-共通言語ランタイム (CLR) (とも呼ばれる呼び出し規約マネージ コード) で使用される関数呼び出し規約を指定します。
+CV_CALL_CLRCALL 共通言語ランタイム (CLR) (とも呼ばれる呼び出し規約マネージ コード) で使用される関数呼び出し規約を指定します。
 
 ## <a name="remarks"></a>解説
 この列挙体の値が呼び出しによって返される、 [idiasymbol::get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)メソッド。
@@ -64,5 +58,5 @@ CV_CALL_CLRCALL
 ヘッダー: cvconst.h
 
 ## <a name="see-also"></a>関連項目
-[列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)
+- [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

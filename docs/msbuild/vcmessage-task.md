@@ -19,27 +19,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5543627332e7c70fa40df5be4091bca7fab7bcfd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d025fd1f71b67acbcd532232b36b55fd35e1f530
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004855"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596062"
 ---
 # <a name="vcmessage-task"></a>VCMessage タスク
-ビルド時の警告およびエラー メッセージをログに記録します。  
-  
-## <a name="remarks"></a>コメント  
- このタスクは Visual C++ 用の MSBuild の実装に役立ちます。ユーザーによる呼び出しは意図されていません。 詳細については、「<xref:Microsoft.Build.Utilities.TaskLoggingHelper>」を参照してください。  
-  
-## <a name="parameters"></a>パラメーター  
- **VCMessage** タスクのパラメーターの説明を次の表に示します。  
-  
-|パラメーター|説明|  
-|---------------|-----------------|  
-|**引数**|省略可能な **String** 型のパラメーターです。<br /><br /> 表示するメッセージをセミコロンで区切った一覧です。|  
-|**コード**|必須の **String** 型のパラメーターです。<br /><br /> メッセージに付けられるエラー番号です。|  
-|**Type**|省略可能な **String** 型のパラメーターです。<br /><br /> 発信するメッセージの種類を指定します。 警告メッセージを発信する場合は "Warning" を、エラー メッセージを発信する場合は "Error" を指定します。|  
-  
-## <a name="see-also"></a>関連項目  
- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+ビルド時の警告およびエラー メッセージをログに記録します。
+
+## <a name="remarks"></a>解説
+ このタスクは Visual C++ 用の MSBuild の実装に役立ちます。ユーザーによる呼び出しは意図されていません。 詳細については、「<xref:Microsoft.Build.Utilities.TaskLoggingHelper>」を参照してください。
+
+## <a name="parameters"></a>パラメーター
+ **VCMessage** タスクのパラメーターの説明を次の表に示します。
+
+|パラメーター|説明|
+|---------------|-----------------|
+|**引数**|省略可能な **String** 型のパラメーターです。<br /><br /> 表示するメッセージをセミコロンで区切った一覧です。|
+|**コード**|必須の **String** 型のパラメーターです。<br /><br /> メッセージに付けられるエラー番号です。|
+|**Type**|省略可能な **String** 型のパラメーターです。<br /><br /> 発信するメッセージの種類を指定します。 警告メッセージを発信する場合は "Warning" を、エラー メッセージを発信する場合は "Error" を指定します。|
+
+## <a name="see-also"></a>関連項目
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

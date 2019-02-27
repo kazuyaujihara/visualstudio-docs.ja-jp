@@ -15,37 +15,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c81db2a67c11d702b0b35a088fe235542d99a20a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 53f2c1ebd5896eaa8a4b9d5ff4e5cb7856a1f8e2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946725"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690489"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
-応答ファイルにルート マーカーを指定し、追跡コンテキストを開始します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp 
-HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTSTR taskName, LPCTSTR rootMarkerResponseFile);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- [入力] `intermediateDirectory`  
- 追跡ログを格納するディレクトリ。  
-  
- [入力] `taskName`  
- 追跡コンテキストを識別します。 この名前はログ ファイル名の作成に使用されます。  
-  
- [入力] `rootMarkerResponseFile`  
- ルート マーカーを含む応答ファイルのパス名。 あるコンテキストのすべての追跡をグループ化するためにルート名が使用されます。  
-  
-## <a name="return-value"></a>戻り値  
- 追跡コンテキストが作成された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。  
-  
-## <a name="requirements"></a>要件  
- **ヘッダー:***FileTracker.h*  
-  
-## <a name="see-also"></a>関連項目  
- [StartTrackingContext](../msbuild/starttrackingcontext.md)
+応答ファイルにルート マーカーを指定し、追跡コンテキストを開始します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTSTR taskName, LPCTSTR rootMarkerResponseFile);
+```
+
+#### <a name="parameters"></a>パラメーター
+[入力] `intermediateDirectory`
+
+ 追跡ログを格納するディレクトリ。
+
+[入力] `taskName`
+
+ 追跡コンテキストを識別します。 この名前はログ ファイル名の作成に使用されます。
+
+[入力] `rootMarkerResponseFile`
+
+ ルート マーカーを含む応答ファイルのパス名。 あるコンテキストのすべての追跡をグループ化するためにルート名が使用されます。
+
+## <a name="return-value"></a>戻り値
+ 追跡コンテキストが作成された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
+
+## <a name="requirements"></a>要件
+ **ヘッダー:***FileTracker.h*
+
+## <a name="see-also"></a>関連項目
+- [StartTrackingContext](../msbuild/starttrackingcontext.md)

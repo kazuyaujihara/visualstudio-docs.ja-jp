@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20178ee5b241f1748ac7d0467f10ff571db0df96
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b836a0fef26f34e83f7238ebe4f6c64731b84257
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853405"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610360"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath タスク
 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] アセンブリへのパスを取得します。
@@ -40,7 +40,7 @@ ms.locfileid: "55853405"
 |`FrameworkVersion40Path`|省略可能な `String` 型の出力パラメーターです。<br /><br /> 存在する場合、フレームワーク バージョン 4.0 アセンブリのパスが含まれます。 それ以外の場合は、`null` を返します。|
 |`Path`|省略可能な `String` 型の出力パラメーターです。<br /><br /> 利用できる場合、最新のフレームワーク アセンブリのパスが含まれます。 それ以外の場合は、`null` を返します。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] のいくつかのバージョンがインストールされている場合、このタスクは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] が実行されるように設計されているバージョンを返します。
 
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
@@ -61,5 +61,5 @@ ms.locfileid: "55853405"
 ```
 
 ## <a name="see-also"></a>関連項目
-[タスク](../msbuild/msbuild-tasks.md)  
-[タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [タスク](../msbuild/msbuild-tasks.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiasectioncontrib::get_informational |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 060835769b6a9cbe0bf2153ea444d62ef5c2d301
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b00d07b788fe07fbe2e879f01a98929927743a0b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039875"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637803"
 ---
 # <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
-セクションには、コメント、または同様の情報が含まれるかどうかを示すフラグを取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_informational(  
-   BOOL* pRetVal  
-};  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]返します`TRUE`セクションには、コメント、またはその他の情報が含まれている場合を返しますそれ以外の場合`FALSE`します。  
-  
-## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
-  
-## <a name="remarks"></a>コメント  
- 通常、.directive セクションには、情報が含まれています。  
-  
+セクションには、コメント、または同様の情報が含まれるかどうかを示すフラグを取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_informational(
+   BOOL* pRetVal
+};
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]返します`TRUE`セクションには、コメント、またはその他の情報が含まれている場合を返しますそれ以外の場合`FALSE`します。
+
+## <a name="return-value"></a>戻り値
+ 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+
+## <a name="remarks"></a>解説
+ 通常、.directive セクションには、情報が含まれています。
+
 ## <a name="see-also"></a>関連項目
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

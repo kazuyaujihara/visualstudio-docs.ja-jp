@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 617e032805f0074b813bc3a7dc5a66047186861b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 228200a3439deefd44ba69b205c1fb7e27fb98ef
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989719"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632616"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd を使用した迅速な Web サイト プロファイリング
 
@@ -27,7 +27,7 @@ ms.locfileid: "54989719"
  コンカレンシー データの収集やプロファイリングの一時停止と再開などの一部のシナリオでは、プロファイリングに **VSPerfCmd** の使用をお勧めします。
 
 > [!NOTE]
->  プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。  
+>  プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
 
 ## <a name="profile-an-aspnet-application"></a>ASP.NET アプリケーションのプロファイル
 
@@ -61,7 +61,7 @@ Web アプリケーション内の静的にコンパイルされた .*dll* フ�
 
  また、**/Trace** オプションを使用して .NET メモリ データと共に詳細なタイミング情報を収集することもできます。
 
- **vsperfaspnetcmd /memory** [**:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory** **[:lifetime]** **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>階層相互作用データを収集するには
 
@@ -80,7 +80,7 @@ Web アプリケーション内の静的にコンパイルされた .*dll* フ�
 
 .NET メモリ データと共に階層相互作用データを収集するには、コマンド ラインに次のように入力します。
 
-**vsperfaspnetcmd /memory** [**:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory** **[:lifetime]** **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>/NoWait オプションの使用
 

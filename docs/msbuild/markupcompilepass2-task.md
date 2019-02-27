@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c426e65df270f6fcc3fa9a574f84cc0406d42294
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d929abc6581bf77dfd6ff5cf8b23d450a78a6f6c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016305"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627195"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 タスク
 
@@ -44,7 +44,7 @@ ms.locfileid: "55016305"
 | `RootNamespace` | 省略可能な **String** 型のパラメーターです。<br /><br /> プロジェクト内部にあるクラスのルート名前空間を指定します。 **RootNamespace** は、対応する [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルが `x:Class` 属性を含まない場合に、生成されるマネージド コード ファイルの既定の名前空間としても使用されます。 |
 | `XAMLDebuggingInformation` | 省略可能な **Boolean** 型のパラメーターです。<br /><br /> **true** の場合、デバッグを支援するための診断情報が生成され、コンパイルされた [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 内に追加されます。 |
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 **MarkupCompilePass2** を実行する前に、マークアップ コンパイル パスが延期された [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルによって使用される型を含む、一時アセンブリを生成する必要があります。 一時アセンブリを生成するには、**GenerateTemporaryTargetAssembly** タスクを実行します。
 
@@ -56,11 +56,11 @@ ms.locfileid: "55016305"
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask 
-    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass2" 
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass2"
     AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
   <Target Name="MarkupCompilePass2Task">
-    <MarkupCompilePass2 
+    <MarkupCompilePass2
       AssemblyName="WPFMSBuildSample"
       Language="C#"
       OutputType="WinExe"
@@ -72,9 +72,9 @@ ms.locfileid: "55016305"
 
 ## <a name="see-also"></a>関連項目
 
-[WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)  
-[WPF MSBuild タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild リファレンス](../msbuild/msbuild-reference.md)  
-[MSBuild タスク リファレンス](../msbuild/msbuild-task-reference.md)  
-[WPF アプリケーション (WPF) のビルド](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[WPF XAML ブラウザー アプリケーションの概要](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)
+- [WPF MSBuild タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md)
+- [MSBuild タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [WPF アプリケーション (WPF) のビルド](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [WPF XAML ブラウザー アプリケーションの概要](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

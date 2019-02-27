@@ -1,4 +1,4 @@
-﻿---
+---
 title: IDiaLoadCallback2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,45 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3b20ade9ccb7799a764c8a43a1e1957dc91960
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: daf0b48aca06b404824059030052223a8545a6b0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993418"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641456"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
-DIA シンボル プロシージャを検索する特定のプロセスに適用される制限のことからには、コールバックを受信します。  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-IDiaLoadCallback2 : IDiaLoadCallback  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 内のメソッドだけでなく、 [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)インターフェイスでは、このインターフェイスは、次のメソッドを公開します。  
-  
-|メソッド|説明|  
-|------------|-----------------|  
-|[IDiaLoadCallback2::RestrictOriginalPathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|元のデバッグ ディレクトリに .pdb ファイルを検索する場合を決定します。|  
-|[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|.Exe ファイルが配置されるパスで .pdb ファイルを検索が許可されているかどうかを決定します。|  
-|[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|.Dbg ファイルからデバッグ情報を探すことが許可されているかどうかを決定します。|  
-|[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|システム ルート ディレクトリで .pdb ファイルの検索を許可するかどうかを決定します。|  
-  
-## <a name="remarks"></a>コメント  
- クライアント アプリケーションは、このインターフェイスを実装しへの呼び出しでの参照を提供します、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッド。 すべてのメソッドの実装に注意してください、 [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)インターフェイスもします。  
-  
-## <a name="requirements"></a>要件  
- ヘッダー:dia2.h  
-  
- ライブラリ: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
+DIA シンボル プロシージャを検索する特定のプロセスに適用される制限のことからには、コールバックを受信します。
+
+## <a name="syntax"></a>構文
+
+```
+IDiaLoadCallback2 : IDiaLoadCallback
+```
+
+## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
+ 内のメソッドだけでなく、 [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)インターフェイスでは、このインターフェイスは、次のメソッドを公開します。
+
+|メソッド|説明|
+|------------|-----------------|
+|[IDiaLoadCallback2::RestrictOriginalPathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|元のデバッグ ディレクトリに .pdb ファイルを検索する場合を決定します。|
+|[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|.Exe ファイルが配置されるパスで .pdb ファイルを検索が許可されているかどうかを決定します。|
+|[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|.Dbg ファイルからデバッグ情報を探すことが許可されているかどうかを決定します。|
+|[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|システム ルート ディレクトリで .pdb ファイルの検索を許可するかどうかを決定します。|
+
+## <a name="remarks"></a>解説
+ クライアント アプリケーションは、このインターフェイスを実装しへの呼び出しでの参照を提供します、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッド。 すべてのメソッドの実装に注意してください、 [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)インターフェイスもします。
+
+## <a name="requirements"></a>要件
+ ヘッダー: Dia2.h
+
+ ライブラリ: diaguids.lib
+
+ DLL: msdia80.dll
+
 ## <a name="see-also"></a>関連項目
- [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
- [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   
- [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)
+- [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+- [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
+- [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)

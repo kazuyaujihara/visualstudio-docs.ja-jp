@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7efaa94c24c6f814de5058865664cf7b1b106ba3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be0fffc1c52c6e15e4ac564cb3e53c60a3670c22
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003319"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610685"
 ---
 # <a name="idialinenumbergetsourcefileid"></a>IDiaLineNumber::get_sourceFileId
-この行の原因であるソース ファイルの一意のソース ファイルの識別子を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_sourceFileId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]この行の原因であるソース ファイルの一意のソース ファイルの識別子を返します。  
-  
-## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
-  
-## <a name="see-also"></a>関連項目  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+この行の原因であるソース ファイルの一意のソース ファイルの識別子を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_sourceFileId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]この行の原因であるソース ファイルの一意のソース ファイルの識別子を返します。
+
+## <a name="return-value"></a>戻り値
+ 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+
+## <a name="see-also"></a>関連項目
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

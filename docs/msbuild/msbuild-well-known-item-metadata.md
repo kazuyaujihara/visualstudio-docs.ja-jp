@@ -16,37 +16,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c031d4a76b818992948b2299981b0d650e9e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a4c87d9dd6200fdd386db750a97e8f0866597d2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966596"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627286"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild の既知の項目メタデータ
-次の表は、作成時にすべてのアイテムに割り当てられたメタデータの説明です。 それぞれの例で、*C:\MyProject\Source\Program.cs* ファイルをプロジェクトに含めるために次のアイテム宣言が使用されました。  
-  
-```xml  
-<ItemGroup>  
-    <MyItem Include="Source\Program.cs" />  
-</ItemGroup>  
-```  
-  
-|項目メタデータ|説明|  
-|-------------------|-----------------|  
-|%(FullPath)|アイテムの完全パスが含まれます。 次に例を示します。<br /><br /> *C:\MyProject\Source\Program.cs*|  
-|%(RootDir)|アイテムのルート ディレクトリが含まれます。 次に例を示します。<br /><br /> *C:\\*|  
-|%(Filename)|拡張子の付かない、アイテムのファイル名が含まれます。 次に例を示します。<br /><br /> *Program*|  
-|%(Extension)|アイテムのファイル名の拡張子が含まれます。 次に例を示します。<br /><br /> *.cs*|  
-|%(RelativeDir)|`Include` 属性に指定されたパスが最後の円記号 (\\) まで含まれます。 次に例を示します。<br /><br /> *Source\\*|  
-|%(Directory)|ルート ディレクトリのないアイテムのディレクトリが含まれます。 次に例を示します。<br /><br /> *MyProject\\Source\\*|  
-|%(RecursiveDir)|`Include` 属性にワイルドカード \*\* が含まれる場合、このメタデータはワイルドカードを置き換えるパスの一部を指定します。 ワイルドカードの詳細については、「[方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)」を参照してください。<br /><br /> *C:\MySolution\MyProject\Source\\\* フォルダーに *Program.cs* ファイルが格納されている場合、およびプロジェクト ファイルに次のアイテムが含まれている場合:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> `%(MyItem.RecursiveDir)` の値は *MySolution\MyProject\Source\\* です。|  
-|%(Identity)|`Include` 属性で指定されたアイテム。 次に例を示します。<br /><br /> *Source\Program.cs*|  
-|%(ModifiedTime)|アイテムが最後に変更された時間からのタイムスタンプが含まれます。 次に例を示します。<br /><br /> `2004-07-01 00:21:31.5073316`|  
-|%(CreatedTime)|アイテムが作成された時間からのタイムスタンプが含まれます。 次に例を示します。<br /><br /> `2004-06-25 09:26:45.8237425`|  
-|%(AccessedTime)|アイテムが最後にアクセスされた時間からのタイムスタンプが含まれます。<br /><br /> `2004-08-14 16:52:36.3168743`|  
-  
-## <a name="see-also"></a>関連項目  
- [項目](../msbuild/msbuild-items.md)   
- [バッチ](../msbuild/msbuild-batching.md)   
- [MSBuild リファレンス](../msbuild/msbuild-reference.md)
+次の表は、作成時にすべてのアイテムに割り当てられたメタデータの説明です。 それぞれの例で、*C:\MyProject\Source\Program.cs* ファイルをプロジェクトに含めるために次のアイテム宣言が使用されました。
+
+```xml
+<ItemGroup>
+    <MyItem Include="Source\Program.cs" />
+</ItemGroup>
+```
+
+|項目メタデータ|説明|
+|-------------------|-----------------|
+|%(FullPath)|アイテムの完全パスが含まれます。 次に例を示します。<br /><br /> *C:\MyProject\Source\Program.cs*|
+|%(RootDir)|アイテムのルート ディレクトリが含まれます。 次に例を示します。<br /><br /> *C:\\*|
+|%(Filename)|拡張子の付かない、アイテムのファイル名が含まれます。 次に例を示します。<br /><br /> *Program*|
+|%(Extension)|アイテムのファイル名の拡張子が含まれます。 次に例を示します。<br /><br /> *.cs*|
+|%(RelativeDir)|`Include` 属性に指定されたパスが最後の円記号 (\\) まで含まれます。 次に例を示します。<br /><br /> *Source\\*|
+|%(Directory)|ルート ディレクトリのないアイテムのディレクトリが含まれます。 次に例を示します。<br /><br /> *MyProject\\Source\\*|
+|%(RecursiveDir)|`Include` 属性にワイルドカード \*\* が含まれる場合、このメタデータはワイルドカードを置き換えるパスの一部を指定します。 ワイルドカードの詳細については、「[方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)」を参照してください。<br /><br /> *C:\MySolution\MyProject\Source\\\* フォルダーに *Program.cs* ファイルが格納されている場合、およびプロジェクト ファイルに次のアイテムが含まれている場合:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> `%(MyItem.RecursiveDir)` の値は *MySolution\MyProject\Source\\* です。|
+|%(Identity)|`Include` 属性で指定されたアイテム。 次に例を示します。<br /><br /> *Source\Program.cs*|
+|%(ModifiedTime)|アイテムが最後に変更された時間からのタイムスタンプが含まれます。 次に例を示します。<br /><br /> `2004-07-01 00:21:31.5073316`|
+|%(CreatedTime)|アイテムが作成された時間からのタイムスタンプが含まれます。 次に例を示します。<br /><br /> `2004-06-25 09:26:45.8237425`|
+|%(AccessedTime)|アイテムが最後にアクセスされた時間からのタイムスタンプが含まれます。<br /><br /> `2004-08-14 16:52:36.3168743`|
+
+## <a name="see-also"></a>関連項目
+- [項目](../msbuild/msbuild-items.md)
+- [バッチ処理](../msbuild/msbuild-batching.md)
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md)

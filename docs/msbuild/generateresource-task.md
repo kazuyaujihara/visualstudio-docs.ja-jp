@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c63e9293cffca2c1b071dcd537c0f49f8faa438
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853980"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615918"
 ---
 # <a name="generateresource-task"></a>GenerateResource タスク
 *.txt* ファイルおよび *.resx* (XML ベースのリソース形式) ファイルと共通言語ランタイムの *.resources* バイナリ ファイルとの間の変換を行います。 .resources ファイルは、ランタイム バイナリ実行可能ファイルに埋め込んだり、サテライト アセンブリにコンパイルしたりできます。 このタスクは通常、*.txt* ファイルまたは *.resx* ファイルを *.resources* ファイルに変換するために使用します。 `GenerateResource` タスクの機能は [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) の機能に似ています。
@@ -60,7 +60,7 @@ ms.locfileid: "55853980"
 |`TrackFileAccess`|省略可能な <xref:System.Boolean> 型のパラメーターです。<br /><br /> true の場合、入力ファイルのディレクトリを使用して相対ファイル パスが解決されます。|
 |`UseSourcePath`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、入力ファイルのディレクトリを使用して相対ファイル パスを解決することを指定します。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 *.resx* ファイルには、他のリソース ファイルへのリンクを含めることができるため、*.resx* ファイルと *.resources* ファイルのタイムスタンプを比較するだけでは、出力が最新であるかどうかを確認できません。 `GenerateResource` タスクを使用すると、*.resx* ファイル内のリンクをたどり、リンク先のファイルのタイムスタンプも確認できます。 したがって、`GenerateResource` タスクを持つターゲットについては、`Inputs` 属性と `Outputs` 属性の使用は基本的に避けてください。実行する必要のあるターゲットがスキップされてしまう可能性があります。
 
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
@@ -95,5 +95,5 @@ MSBuild 4.0 を使用して .NET 3.5 プロジェクトをターゲットにし�
 \<LogicalName> メタデータがない場合、リソースは *myAssembly.myResource.resources* という名前になります。  この例は、Visual Basic と Visual C# のビルド処理にのみ適用されます。
 
 ## <a name="see-also"></a>関連項目
-[タスク](../msbuild/msbuild-tasks.md)  
-[タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [タスク](../msbuild/msbuild-tasks.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b472c52934353e6324d72077f8ea878467159cbd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
+ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318642"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637088"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 アドレス マップ内のエントリについて説明します。
@@ -32,11 +32,9 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Elements
-`rva`  
-A. イメージの相対仮想アドレス (RVA)
+`rva` A. イメージの相対仮想アドレス (RVA)
 
-`rvaTo`  
-相対仮想アドレス`rva`B. イメージ内にマップされます
+`rvaTo` 相対仮想アドレス`rva`B. イメージ内にマップされます
 
 ## <a name="remarks"></a>解説
 アドレス マップは、(A) をもう 1 つ (B) 1 つのイメージのレイアウトからの翻訳を提供します。 配列の`DiaAddressMapEntry`構造体の順に並べ替えて`rva`アドレス マップを定義します。
@@ -55,5 +53,5 @@ A. イメージの相対仮想アドレス (RVA)
 ヘッダー: dia2.h
 
 ## <a name="see-also"></a>関連項目
-[列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
+- [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

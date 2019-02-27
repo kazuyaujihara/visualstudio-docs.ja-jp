@@ -10,92 +10,92 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a53b3423cbda77f0625e6791e96db740636000
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5756047dc88dc01e044787cd5e3a71456e3e85c9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925189"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625011"
 ---
 # <a name="markprofile"></a>MarkProfile
-`MarkProfile` メソッドは、.*vsp* ファイルにプロファイル マークを挿入します。 `MarkProfile` 関数を含むスレッドのプロファイル実行は、挿入されるマークについてオンにしておく必要があります。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `lMarker`  
-  
- 挿入するマーカー。 マーカーは 0 以上の値にする必要があります。  
-  
-## <a name="property-valuereturn-value"></a>プロパティ値/戻り値  
- 関数の成功または失敗は、**PROFILE_COMMAND_STATUS** 列挙型を使って表されます。 戻り値は次のいずれかになります。  
-  
-|列挙子|説明|  
-|----------------|-----------------|  
-|MARK_ERROR_MARKER_RESERVED|パラメーターは 0 以下です。 これらの値は予約済みです。 マークとコメントは記録されません。|  
-|MARK_ERROR_MODE_NEVER|関数が呼び出されたときに、プロファイル モードが NEVER に設定されました。 マークとコメントは記録されません。|  
-|MARK_ERROR_MODE_OFF|関数が呼び出されたときに、プロファイル モードが OFF に設定されました。 マークとコメントは記録されません。|  
-|MARK_ERROR_NO_SUPPORT|このコンテキストでマークがサポートされていません。 マークとコメントは記録されません。|  
-|MARK_ERROR_OUTOFMEMORY|メモリ不足のため、このイベントを記録できません。 マークとコメントは記録されません。|  
-|MARK_TEXTTOOLONG|文字列の長さが最大値の 256 文字を超えています。 コメント文字列は切り詰められ、マークとコメントが記録されます。|  
-|MARK_OK|成功した場合は MARK_OK が返されます。|  
-  
-## <a name="remarks"></a>コメント  
- MarkProfile 関数を含むスレッドにプロファイルが実行される場合、コードが実行されるたびに .*vsp* ファイルにマーク値が挿入されます。 MarkProfile は複数回呼び出すことができます。  
-  
- プロファイル マークは、スコープ内でグローバルです。 たとえば、あるスレッドに挿入したプロファイルマークを、.*vsp* ファイル内の任意のスレッドで使用し、データ セグメントの開始または終了をマークできます。  
-  
- Mark コマンドまたは API 関数 (CommentMarkAtProfile、CommentMarkProfile、または MarkProfile) でマークとコメントが挿入されたとき、マークのプロファイル関数を含むスレッドでは、プロファイル状態をオンにする必要があります。  
-  
+`MarkProfile` メソッドは、.*vsp* ファイルにプロファイル マークを挿入します。 `MarkProfile` 関数を含むスレッドのプロファイル実行は、挿入されるマークについてオンにしておく必要があります。
+
+## <a name="syntax"></a>構文
+
+```cpp
+PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
+```
+
+#### <a name="parameters"></a>パラメーター
+ `lMarker`
+
+ 挿入するマーカー。 マーカーは 0 以上の値にする必要があります。
+
+## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
+ 関数の成功または失敗は、**PROFILE_COMMAND_STATUS** 列挙型を使って表されます。 戻り値は次のいずれかになります。
+
+|列挙子|説明|
+|----------------|-----------------|
+|MARK_ERROR_MARKER_RESERVED|パラメーターは 0 以下です。 これらの値は予約済みです。 マークとコメントは記録されません。|
+|MARK_ERROR_MODE_NEVER|関数が呼び出されたときに、プロファイル モードが NEVER に設定されました。 マークとコメントは記録されません。|
+|MARK_ERROR_MODE_OFF|関数が呼び出されたときに、プロファイル モードが OFF に設定されました。 マークとコメントは記録されません。|
+|MARK_ERROR_NO_SUPPORT|このコンテキストでマークがサポートされていません。 マークとコメントは記録されません。|
+|MARK_ERROR_OUTOFMEMORY|メモリ不足のため、このイベントを記録できません。 マークとコメントは記録されません。|
+|MARK_TEXTTOOLONG|文字列の長さが最大値の 256 文字を超えています。 コメント文字列は切り詰められ、マークとコメントが記録されます。|
+|MARK_OK|成功した場合は MARK_OK が返されます。|
+
+## <a name="remarks"></a>解説
+ MarkProfile 関数を含むスレッドにプロファイルが実行される場合、コードが実行されるたびに .*vsp* ファイルにマーク値が挿入されます。 MarkProfile は複数回呼び出すことができます。
+
+ プロファイル マークは、スコープ内でグローバルです。 たとえば、あるスレッドに挿入したプロファイルマークを、.*vsp* ファイル内の任意のスレッドで使用し、データ セグメントの開始または終了をマークできます。
+
+ Mark コマンドまたは API 関数 (CommentMarkAtProfile、CommentMarkProfile、または MarkProfile) でマークとコメントが挿入されたとき、マークのプロファイル関数を含むスレッドでは、プロファイル状態をオンにする必要があります。
+
 > [!IMPORTANT]
->  MarkProfile メソッドは、インストルメンテーション プロファイリングでのみ使用してください。  
-  
-## <a name="net-framework-equivalent"></a>同等の .NET Framework 関数  
- *Microsoft.VisualStudio.Profiler.dll*  
-  
-## <a name="function-information"></a>関数の情報  
- ヘッダー:*VSPerf.h* で宣言  
-  
- インポート ライブラリ:*VSPerf.lib*  
-  
-## <a name="example"></a>例  
- 次のコードは、MarkProfile 関数の使用例を示しています。  
-  
-```cpp  
-void ExerciseMarkProfile()  
-{  
-    // Declare and initialize variables to pass to   
-    // MarkProfile.  The values of these parameters   
-    // are assigned based on the needs of the code;  
-    // and for the sake of simplicity in this example,   
-    // the variables are assigned arbitrary values.  
-    int markId = 03;  
-  
-    // Declare enumeration to hold return value of   
-    // call to MarkProfile.  
-    PROFILE_COMMAND_STATUS markResult;  
-  
-    // Variables used to print output.  
-    HRESULT hResult;  
-    TCHAR tchBuffer[256];  
-  
-    markResult = MarkProfile(markId);  
-  
-    // Format and print result.  
-    LPCTSTR pszFormat = TEXT("%s %d.\0");  
-    TCHAR* pszTxt = TEXT("MarkProfile returned");  
-    hResult = StringCchPrintf(tchBuffer, 256, pszFormat,   
-        pszTxt, markResult);  
-  
-#ifdef DEBUG  
-    OutputDebugString(tchBuffer);  
-#endif  
-}  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)
+>  MarkProfile メソッドは、インストルメンテーション プロファイリングでのみ使用してください。
+
+## <a name="net-framework-equivalent"></a>同等の .NET Framework 関数
+ *Microsoft.VisualStudio.Profiler.dll*
+
+## <a name="function-information"></a>関数の情報
+ ヘッダー:*VSPerf.h* で宣言
+
+ インポート ライブラリ:*VSPerf.lib*
+
+## <a name="example"></a>例
+ 次のコードは、MarkProfile 関数の使用例を示しています。
+
+```cpp
+void ExerciseMarkProfile()
+{
+    // Declare and initialize variables to pass to
+    // MarkProfile.  The values of these parameters
+    // are assigned based on the needs of the code;
+    // and for the sake of simplicity in this example,
+    // the variables are assigned arbitrary values.
+    int markId = 03;
+
+    // Declare enumeration to hold return value of
+    // call to MarkProfile.
+    PROFILE_COMMAND_STATUS markResult;
+
+    // Variables used to print output.
+    HRESULT hResult;
+    TCHAR tchBuffer[256];
+
+    markResult = MarkProfile(markId);
+
+    // Format and print result.
+    LPCTSTR pszFormat = TEXT("%s %d.\0");
+    TCHAR* pszTxt = TEXT("MarkProfile returned");
+    hResult = StringCchPrintf(tchBuffer, 256, pszFormat,
+        pszTxt, markResult);
+
+#ifdef DEBUG
+    OutputDebugString(tchBuffer);
+#endif
+}
+```
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)

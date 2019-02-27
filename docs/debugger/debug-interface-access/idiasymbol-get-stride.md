@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df57e5a7b01bb6fde32fbaeb5608836933e8116
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c581668668a208a9bcf35a1b39d1b3d384a4f8a3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984276"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622190"
 ---
 # <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
-マトリックスまたは strided 配列のストライドを取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_stride(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]ポインター、 `DWORD` stride を保持しています。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
-  
-## <a name="see-also"></a>関連項目  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+マトリックスまたは strided 配列のストライドを取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_stride(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]ポインター、 `DWORD` stride を保持しています。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+
+## <a name="see-also"></a>関連項目
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

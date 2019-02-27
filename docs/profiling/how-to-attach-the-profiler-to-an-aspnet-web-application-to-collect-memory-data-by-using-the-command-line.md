@@ -9,62 +9,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 46920d6733dd22cb2f36a42a62b7fb227ddd398c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e82e17a01e6cbfce82e270e25de16ee788a14878
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036850"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614208"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを ASP.NET Web アプリケーションにアタッチし、メモリ データを収集する
-この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションにプロファイラーをアタッチし、.NET Framework のメモリ割り当ての数とサイズに関するデータを収集する方法について説明します。 .NET Framework メモリ オブジェクトの有効期間に関するデータも収集できます。  
+この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションにプロファイラーをアタッチし、.NET Framework のメモリ割り当ての数とサイズに関するデータを収集する方法について説明します。 .NET Framework メモリ オブジェクトの有効期間に関するデータも収集できます。
 
 > [!NOTE]
 >  プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
 
- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションからパフォーマンス データを収集するには、[VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) ツールを使用して、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションをホストするコンピューター上で該当する環境変数を初期化する必要があります。 次に、コンピューターを再起動して、Web サーバーをプロファイリング用に構成します。  
+ [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションからパフォーマンス データを収集するには、[VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) ツールを使用して、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションをホストするコンピューター上で該当する環境変数を初期化する必要があります。 次に、コンピューターを再起動して、Web サーバーをプロファイリング用に構成します。
 
- 次に、[VSPerfCmd.exe](../profiling/vsperfcmd.md) ツールを使用して、Web サイトをホストする [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスにプロファイラーをアタッチします。 プロファイラーをアプリケーションにアタッチしているときにデータ コレクションを一時停止し、完了後に再開できます。  
+ 次に、[VSPerfCmd.exe](../profiling/vsperfcmd.md) ツールを使用して、Web サイトをホストする [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスにプロファイラーをアタッチします。 プロファイラーをアプリケーションにアタッチしているときにデータ コレクションを一時停止し、完了後に再開できます。
 
- プロファイル セッションを終了するには、アプリケーションへのプロファイラーのアタッチを解除し、プロファイラーを明示的に終了する必要があります。 ほとんどの場合、セッションの最後にプロファイル環境変数を消去することをお勧めします。  
+ プロファイル セッションを終了するには、アプリケーションへのプロファイラーのアタッチを解除し、プロファイラーを明示的に終了する必要があります。 ほとんどの場合、セッションの最後にプロファイル環境変数を消去することをお勧めします。
 
-## <a name="attach-the-profiler"></a>プロファイラーのアタッチ  
+## <a name="attach-the-profiler"></a>プロファイラーのアタッチ
 
-#### <a name="to-attach-the-profiler-to-an-aspnet-web-application"></a>プロファイラーを ASP.NET Web アプリケーションにアタッチするには  
+#### <a name="to-attach-the-profiler-to-an-aspnet-web-application"></a>プロファイラーを ASP.NET Web アプリケーションにアタッチするには
 
-1. コマンド プロンプト ウィンドウを開きます。  
+1. コマンド プロンプト ウィンドウを開きます。
 
-2. プロファイル環境変数を初期化します。 型:  
+2. プロファイル環境変数を初期化します。 型:
 
-    **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]  
+    **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} **[/samplelineoff]**
 
-   -   オプションの **/globalsamplegc** と **/globalsamplegclife** では、収集するメモリ データの型を指定します。  
+   -   オプションの **/globalsamplegc** と **/globalsamplegclife** では、収集するメモリ データの型を指定します。
 
-        次のいずれかのオプションを 1 つのみ指定します。  
+        次のいずれかのオプションを 1 つのみ指定します。
 
-       |オプション|説明|  
-       |------------|-----------------|  
-       |**/globalsamplegc**|メモリの割り当てデータを収集できます。|  
-       |**/globalsamplegclife**|メモリの割り当てデータとオブジェクトの有効期間データを収集できます。|  
+       |オプション|説明|
+       |------------|-----------------|
+       |**/globalsamplegc**|メモリの割り当てデータを収集できます。|
+       |**/globalsamplegclife**|メモリの割り当てデータとオブジェクトの有効期間データを収集できます。|
 
-   -   オプションの **/samplelineoff** は特定のソース コード行への収集データの割り当てを無効にします。 このオプションを指定すると、データは関数レベルで割り当てられます。  
+   -   オプションの **/samplelineoff** は特定のソース コード行への収集データの割り当てを無効にします。 このオプションを指定すると、データは関数レベルで割り当てられます。
 
-3. コンピューターを再起動して、新しい環境構成を設定します。  
+3. コンピューターを再起動して、新しい環境構成を設定します。
 
-4. コマンド プロンプト ウィンドウを開きます。 必要に応じて、プロファイラー パスの環境変数を設定します。  
+4. コマンド プロンプト ウィンドウを開きます。 必要に応じて、プロファイラー パスの環境変数を設定します。
 
-5. プロファイラーを起動します。 型:  
+5. プロファイラーを起動します。 型:
 
-    **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+    **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
-   - **/start:sample** オプションによってプロファイラーが初期化されます。  
+   - **/start:sample** オプションによってプロファイラーが初期化されます。
 
-   - **/start** を使用するには、**/output:**`OutputFile` オプションを指定する必要があります。 `OutputFile` には、プロファイル データ (.vsp) ファイルの名前と場所を指定します。  
+   - **/start** を使用するには、**/output:**`OutputFile` オプションを指定する必要があります。 `OutputFile` には、プロファイル データ (.vsp) ファイルの名前と場所を指定します。
 
-     **/start:sample** オプションを使用する場合は、次のうちいずれかのオプションを指定できます。  
+     **/start:sample** オプションを使用する場合は、次のうちいずれかのオプションを指定できます。
 
    > [!NOTE]
-   >  **/user** オプションと **/crosssession** オプションは、通常、ASP.NET アプリケーションで必要です。  
+   >  **/user** オプションと **/crosssession** オプションは、通常、ASP.NET アプリケーションで必要です。
 
    | オプション | 説明 |
    | - | - |
@@ -76,56 +76,56 @@ ms.locfileid: "55036850"
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.etl) ファイルに収集されます。 |
 
 
-6. 一般的な方法で [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションを起動します。  
+6. 一般的な方法で [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションを起動します。
 
-7. プロファイラーを [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスにアタッチします。 型:  
+7. プロファイラーを [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスにアタッチします。 型:
 
-    **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
+    **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]
 
-   - プロセス ID `(PID)` には、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスのプロセス ID またはプロセス名を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID を参照できます。  
+   - プロセス ID `(PID)` には、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスのプロセス ID またはプロセス名を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID を参照できます。
 
-   - **/targetclr:** `Version` には、アプリケーションに複数のバージョンのランタイムが読み込まれている場合に、プロファイリングを行う共通言語ランタイム (CLR) のバージョンを指定します。  
+   - **/targetclr:** `Version` には、アプリケーションに複数のバージョンのランタイムが読み込まれている場合に、プロファイリングを行う共通言語ランタイム (CLR) のバージョンを指定します。
 
-## <a name="control-data-collection"></a>データ収集の制御  
- アプリケーションの実行中に、**VSPerfCmd.exe** オプションを使用して、プロファイラーのデータ ファイルへのデータ書き込みを開始および停止することにより、データ収集を制御できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。  
+## <a name="control-data-collection"></a>データ収集の制御
+ アプリケーションの実行中に、**VSPerfCmd.exe** オプションを使用して、プロファイラーのデータ ファイルへのデータ書き込みを開始および停止することにより、データ収集を制御できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。
 
-#### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには  
+#### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには
 
--   次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
+-   次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
 
-    |オプション|説明|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|すべてのプロセスのデータ収集を開始 (**/globalon**) または停止 (**/globaloff**) します。|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|`PID` で指定されたプロセスのデータ収集を開始 (**/processon**) または停止 (**/processoff**) します。|  
-    |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;:`ProcName`}]|**/attach** は、プロセス ID またはプロセス名で指定したプロセスのデータ収集を開始します。 **/detach** は、指定されたプロセスのデータ収集を停止します。特定のプロセスが指定されていない場合は、すべてのプロセスのデータ収集を停止します。|  
+    |オプション|説明|
+    |------------|-----------------|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|すべてのプロセスのデータ収集を開始 (**/globalon**) または停止 (**/globaloff**) します。|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|`PID` で指定されたプロセスのデータ収集を開始 (**/processon**) または停止 (**/processoff**) します。|
+    |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;:`ProcName`}]|**/attach** は、プロセス ID またはプロセス名で指定したプロセスのデータ収集を開始します。 **/detach** は、指定されたプロセスのデータ収集を停止します。特定のプロセスが指定されていない場合は、すべてのプロセスのデータ収集を停止します。|
 
-## <a name="end-the-profiling-session"></a>プロファイル セッションの終了  
- プロファイル セッションを終了するには、プロファイラーを Web アプリケーションからデタッチする必要があります。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスを再起動するか、**VSPerfCmd /detach** オプションを呼び出すことによって、サンプリング メソッドを使用してプロファイリングが実行されているアプリケーションからのデータ収集を停止できます。 次に、**VSPerfCmd** [/shutdown](../profiling/shutdown.md) オプションを呼び出して、プロファイラーをオフにし、プロファイル データ ファイルを閉じます。 **VSPerfClrEnv /globaloff** コマンドによってプロファイル環境変数は消去されますが、コンピューターを再起動するまでシステム構成はリセットされません。  
+## <a name="end-the-profiling-session"></a>プロファイル セッションの終了
+ プロファイル セッションを終了するには、プロファイラーを Web アプリケーションからデタッチする必要があります。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスを再起動するか、**VSPerfCmd /detach** オプションを呼び出すことによって、サンプリング メソッドを使用してプロファイリングが実行されているアプリケーションからのデータ収集を停止できます。 次に、**VSPerfCmd** [/shutdown](../profiling/shutdown.md) オプションを呼び出して、プロファイラーをオフにし、プロファイル データ ファイルを閉じます。 **VSPerfClrEnv /globaloff** コマンドによってプロファイル環境変数は消去されますが、コンピューターを再起動するまでシステム構成はリセットされません。
 
-#### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには  
+#### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには
 
-1. 対象アプリケーションからプロファイラーをデタッチするには、次のいずれかの手順を実行します。  
+1. 対象アプリケーションからプロファイラーをデタッチするには、次のいずれかの手順を実行します。
 
-   - 「**VSPerfCmd** [/detach](../profiling/detach.md)」と入力します  
+   - 「**VSPerfCmd** [/detach](../profiling/detach.md)」と入力します
 
-      - または -  
+      - または -
 
-   - [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスを終了します。 型:  
+   - [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスを終了します。 型:
 
-     **IISReset /stop**  
+     **IISReset /stop**
 
-2. プロファイラーをシャットダウンします。 型:  
+2. プロファイラーをシャットダウンします。 型:
 
-    **VSPerfCmd /shutdown**  
+    **VSPerfCmd /shutdown**
 
-3. (省略可能) プロファイル環境変数を削除します。 型:  
+3. (省略可能) プロファイル環境変数を削除します。 型:
 
-    **VSPerfCmd /globaloff**  
+    **VSPerfCmd /globaloff**
 
-4. コンピューターを再起動します。 必要に応じて、インターネット インフォメーション サービス (IIS: Internet Information Services) を再起動します。 型:  
+4. コンピューターを再起動します。 必要に応じて、インターネット インフォメーション サービス (IIS: Internet Information Services) を再起動します。 型:
 
-    **IISReset /start**  
+    **IISReset /start**
 
-## <a name="see-also"></a>関連項目  
- [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)
+## <a name="see-also"></a>関連項目
+- [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)

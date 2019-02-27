@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54cd1e9855bbc09a0045cd50ac26c1aef38bac2c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942812"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610542"
 ---
 # <a name="how-to-select-the-files-to-build"></a>方法: ビルドするファイルを選択する
 複数のファイルを含むプロジェクトをビルドするときに、各ファイルを個別にプロジェクト ファイルにリストしたり、ワイルドカードを使用して、1 つのディレクトリまたは入れ子になった一連のディレクトリ内のすべてのファイルを含めたりすることができます。
@@ -29,25 +29,25 @@ ms.locfileid: "55942812"
 
 #### <a name="to-declare-items-individually"></a>項目を個別に宣言するには
 
-- 次のような `Include` 属性を使用します。  
-  
-    `<CSFile Include="form1.cs"/>`  
-  
-    または  
-  
-    `<VBFile Include="form1.vb"/>`  
-  
+- 次のような `Include` 属性を使用します。
+
+    `<CSFile Include="form1.cs"/>`
+
+    または
+
+    `<VBFile Include="form1.vb"/>`
+
     > [!NOTE]
     > 項目コレクション内の項目がプロジェクト ファイルと同じディレクトリにない場合は、その項目への完全パスまたは相対パスを指定する必要があります。 たとえば、`Include="..\..\form2.cs"` のように指定します。
 
 #### <a name="to-declare-multiple-items"></a>複数の項目を宣言するには
 
--   次のような `Include` 属性を使用します。  
-  
-    `<CSFile Include="form1.cs;form2.cs"/>`  
-  
-    または  
-  
+-   次のような `Include` 属性を使用します。
+
+    `<CSFile Include="form1.cs;form2.cs"/>`
+
+    または
+
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>ワイルドカードを使用して入力を指定する
@@ -63,24 +63,24 @@ ms.locfileid: "55942812"
 
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>*Images* ディレクトリとサブディレクトリ内のすべての *.jpg* ファイルを含めるには
 
-- 次の `Include` 属性を使用します。  
-  
+- 次の `Include` 属性を使用します。
+
     `Include="Images\**\*.jpg"`
 
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>*img* で始まるすべての *.jpg* ファイルを含めるには
 
-- 次の `Include` 属性を使用します。  
-  
+- 次の `Include` 属性を使用します。
+
     `Include="Images\**\img*.jpg"`
 
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>ディレクトリ内の *jpg* で終わる名前を持つすべてのファイルを含めるには
 
-- 次のいずれかの `Include` 属性を使用します。  
-  
-    `Include="Images\**\*jpgs\*.*"`  
-  
-    または  
-  
+- 次のいずれかの `Include` 属性を使用します。
+
+    `Include="Images\**\*jpgs\*.*"`
+
+    または
+
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>項目をタスクに渡す
@@ -88,17 +88,17 @@ ms.locfileid: "55942812"
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>すべての Visual C# ファイルまたは Visual Basic ファイルを入力として使用するには
 
-- 次のような `Include` 属性を使用します。  
-  
-    `<CSC Sources="@(CSFile)">...</CSC>`  
-  
-    または  
-  
+- 次のような `Include` 属性を使用します。
+
+    `<CSC Sources="@(CSFile)">...</CSC>`
+
+    または
+
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
 >  ワイルドカードと項目を使用して、ビルドの入力を指定する必要があります。[Csc](../msbuild/csc-task.md) や [Vbc](../msbuild/vbc-task.md) などの [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクでは、`Sources` 属性を使用して入力を指定することはできません。 次の例はプロジェクト ファイルでは無効です。
-> 
+>
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>例
@@ -170,5 +170,5 @@ ms.locfileid: "55942812"
 ```
 
 ## <a name="see-also"></a>関連項目
-[方法: ビルドからファイルを除外する](../msbuild/how-to-exclude-files-from-the-build.md)  
-[項目](../msbuild/msbuild-items.md)
+- [方法: ビルドからファイルを除外する](../msbuild/how-to-exclude-files-from-the-build.md)
+- [項目](../msbuild/msbuild-items.md)

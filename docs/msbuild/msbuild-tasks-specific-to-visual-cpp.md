@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0d6485ecec44bfafd286b4e0df6f1b476b219be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4e676e8fc3bbd8532e5261ab2095fc67380e27ca
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986424"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597063"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visual C++ に固有の MSBuild タスク
-タスクでは、ビルド プロセスの間に実行するコードを指定します。 Visual C++ をインストールすると、次のタスクは [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] にインストールされたタスク以外に使用できます。 詳細については、「[MSBuild (Visual C++) の概要](/cpp/build/msbuild-visual-cpp-overview)」を参照してください。  
+タスクでは、ビルド プロセスの間に実行するコードを指定します。 Visual C++ をインストールすると、次のタスクは [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] にインストールされたタスク以外に使用できます。 詳細については、「[MSBuild (Visual C++) の概要](/cpp/build/msbuild-visual-cpp-overview)」を参照してください。
 
- タスクごとのパラメーターのほか、すべてのタスクに以下のパラメーターがあります。  
+ タスクごとのパラメーターのほか、すべてのタスクに以下のパラメーターがあります。
 
 
 | パラメーター | 説明 |
@@ -33,24 +33,24 @@ ms.locfileid: "54986424"
 | `Condition` | 省略可能な `String` 型のパラメーターです。<br /><br /> このタスクが実行されるかどうかを [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] エンジンが決定するために使用する `Boolean` 式です。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] でサポートされる条件の詳細については、「[MSBuild Conditions](../msbuild/msbuild-conditions.md)」(MSBuild の条件) を参照してください。 |
 | `ContinueOnError` | 省略可能なパラメーターです。 次の値のいずれかを含めることができます。<br /><br /> -   **WarnAndContinue** または **true**。 タスクが失敗すると、[Target](../msbuild/target-element-msbuild.md) 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーが警告として扱われます。<br />-   **ErrorAndContinue**。 タスクが失敗すると、`Target` 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーがエラーとして扱われます。<br />-   **ErrorAndStop** または **false** (既定)。 タスクが失敗すると、`Target` 要素の残りのタスクとビルドは実行されず、`Target` 要素全体とビルドは失敗したと見なされます。<br /><br /> バージョン 4.5 より前の .NET Framework では、`true` 値と `false` 値のみがサポートされます。<br /><br /> 詳細については、「[方法 :タスクで発生したエラーを無視する](../msbuild/how-to-ignore-errors-in-tasks.md)」を参照してください。 |
 
-### <a name="related-topics"></a>関連トピック  
+### <a name="related-topics"></a>関連トピック
 
-|Title|説明|  
-|-----------|-----------------|  
-|[BscMake タスク](../msbuild/bscmake-task.md)|Microsoft Browse Information Maintenance Utility ツール (*bscmake.exe*) をラップします。|  
-|[CL タスク](../msbuild/cl-task.md)|Visual C++ コンパイラ ツール (*cl.exe*) をラップします。|  
-|[CPPClean タスク](../msbuild/cppclean-task.md)|Visual C++ プロジェクトのビルド時に MSBuild によって作成される一時ファイルを削除します。|  
-|[LIB タスク](../msbuild/lib-task.md)|Microsoft 32-Bit Library Manager ツール (*lib.exe*) をラップします。|  
-|[Link タスク](../msbuild/link-task.md)|Visual C++ リンカー ツール (*link.exe*) をラップします。|  
-|[MIDL タスク](../msbuild/midl-task.md)|Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Definition Language) コンパイラ ツール (*midl.exe*) をラップします。|  
-|[MT タスク](../msbuild/mt-task.md)|Microsoft マニフェスト ツール (*mt.exe*) をラップします。|  
-|[RC タスク](../msbuild/rc-task.md)|Microsoft Windows リソース コンパイラ ツール (*rc.exe*) をラップします。|  
-|[SetEnv タスク](../msbuild/setenv-task.md)|指定された環境変数の値を設定または削除します。|  
-|[VCMessage タスク](../msbuild/vcmessage-task.md)|ビルド時の警告メッセージおよびエラー メッセージをログに記録します。 (拡張できません。 内部使用のみ。)|  
-|[XDCMake タスク](../msbuild/xdcmake-task.md)|XML ドキュメント ツール (*xdcmake.exe*) をラップします。このツールは、XML ドキュメント コメント (*.xdc*) ファイルを *.xml* ファイルにマージします。|  
-|[XSD タスク](../msbuild/xsd-task.md)|ソースからスキーマまたはクラス ファイルを生成する XML スキーマ定義ツール (*xsd.exe*) をラップします。 *下記のメモをご覧ください。*|  
-|[MSBuild リファレンス](../msbuild/msbuild-reference.md)|MSBuild システムの要素について説明します。|  
-|[タスク](../msbuild/msbuild-tasks.md)|タスクについて説明します。タスクはコードの単位であり、組み合わせることでビルドを生成できます。|  
+|Title|説明|
+|-----------|-----------------|
+|[BscMake タスク](../msbuild/bscmake-task.md)|Microsoft Browse Information Maintenance Utility ツール (*bscmake.exe*) をラップします。|
+|[CL タスク](../msbuild/cl-task.md)|Visual C++ コンパイラ ツール (*cl.exe*) をラップします。|
+|[CPPClean タスク](../msbuild/cppclean-task.md)|Visual C++ プロジェクトのビルド時に MSBuild によって作成される一時ファイルを削除します。|
+|[LIB タスク](../msbuild/lib-task.md)|Microsoft 32-Bit Library Manager ツール (*lib.exe*) をラップします。|
+|[Link タスク](../msbuild/link-task.md)|Visual C++ リンカー ツール (*link.exe*) をラップします。|
+|[MIDL タスク](../msbuild/midl-task.md)|Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Definition Language) コンパイラ ツール (*midl.exe*) をラップします。|
+|[MT タスク](../msbuild/mt-task.md)|Microsoft マニフェスト ツール (*mt.exe*) をラップします。|
+|[RC タスク](../msbuild/rc-task.md)|Microsoft Windows リソース コンパイラ ツール (*rc.exe*) をラップします。|
+|[SetEnv タスク](../msbuild/setenv-task.md)|指定された環境変数の値を設定または削除します。|
+|[VCMessage タスク](../msbuild/vcmessage-task.md)|ビルド時の警告メッセージおよびエラー メッセージをログに記録します。 (拡張できません。 内部使用のみ。)|
+|[XDCMake タスク](../msbuild/xdcmake-task.md)|XML ドキュメント ツール (*xdcmake.exe*) をラップします。このツールは、XML ドキュメント コメント (*.xdc*) ファイルを *.xml* ファイルにマージします。|
+|[XSD タスク](../msbuild/xsd-task.md)|ソースからスキーマまたはクラス ファイルを生成する XML スキーマ定義ツール (*xsd.exe*) をラップします。 *下記のメモをご覧ください。*|
+|[MSBuild リファレンス](../msbuild/msbuild-reference.md)|MSBuild システムの要素について説明します。|
+|[タスク](../msbuild/msbuild-tasks.md)|タスクについて説明します。タスクはコードの単位であり、組み合わせることでビルドを生成できます。|
 |[タスクの作成](../msbuild/task-writing.md)|タスクを作成する方法を説明します。|
 
 > [!NOTE]

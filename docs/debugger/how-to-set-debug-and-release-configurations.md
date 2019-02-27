@@ -1,4 +1,4 @@
----
+﻿---
 title: デバッグ設定し、リリース構成 |Microsoft Docs
 ms.date: 10/05/2018
 ms.topic: reference
@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e4c1c12409d89d88e683cd0e5b39a8d5a5459df
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969773"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715428"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Visual Studio でのデバッグおよびリリース構成の設定
 
@@ -118,10 +118,10 @@ Visual Studio プロジェクトでは、ご使用のプログラムに対応す
    コンパイラでは、実行可能ファイルまたはメイン出力ファイルと同じフォルダーにシンボル ファイルを作成します。
 
 ## <a name="see-also"></a>関連項目
- 
-[Visual Studio デバッガーでシンボル (.pdb) ファイルおよびソース ファイルを指定します。](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
-[デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)<br/>
-[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
-[C# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
-[Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
-[方法: 構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)
+
+- [Visual Studio デバッガーでシンボル (.pdb) ファイルおよびソース ファイルを指定します。](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
+- [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)<br/>
+- [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
+- [C# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
+- [Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
+- [方法: 構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)

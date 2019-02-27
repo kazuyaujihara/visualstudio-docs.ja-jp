@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5775c743382fc1042492253f6bb8c0657da0698f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cca757bb7fea825c252a1102bf4182ca24b6303b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043142"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628053"
 ---
 # <a name="idiasymbolgetsourcefilename"></a>IDiaSymbol::get_sourceFileName
-コンパイル単位のソース ファイルのファイル名を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_sourceFileName (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]コンパイル単位のソース ファイルのファイル名を返します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
-  
+コンパイル単位のソース ファイルのファイル名を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_sourceFileName ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]コンパイル単位のソース ファイルのファイル名を返します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
-  
+>  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

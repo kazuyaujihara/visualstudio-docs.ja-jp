@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5f9ec3f2db14369cf8f469b718b027fd394649
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dfcd34daa6a9a2b4cb4bd095bc91ac5962c7335d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027335"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643055"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 タスク
 
@@ -61,7 +61,7 @@ ms.locfileid: "55027335"
 | `UICulture` | 省略可能な **String** 型のパラメーターです。<br /><br /> 生成される [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] バイナリ形式ファイルが埋め込まれる UI カルチャのサテライト アセンブリを指定します。 **UICulture** が設定されない場合、生成される [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] バイナリ形式ファイルは、メイン アセンブリに埋め込まれます。 |
 | `XAMLDebuggingInformation` | 省略可能な **Boolean** 型のパラメーターです。<br /><br /> **true** の場合、デバッグを支援するための診断情報が生成され、コンパイルされた [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 内に追加されます。 |
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> タスクは通常、[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] をバイナリ形式にコンパイルしてコード ファイルを生成します。 同じプロジェクト内で定義される型への参照が [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルに含まれている場合、**MarkupCompilePass1** は、バイナリ形式へのコンパイルを 2 番目のマークアップ コンパイル パス (**MarkupCompilePass2**) まで延期します。 このようなファイルでは、参照しているローカル定義の型がコンパイルされるまで待つ必要があるため、コンパイルを延期する必要があります。 ただし、[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルに `x:Class` 属性がある場合、<xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> はこのファイルの言語固有のコード ファイルを生成します。
 
@@ -102,11 +102,11 @@ ms.locfileid: "55027335"
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask 
-    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1" 
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1"
     AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
   <Target Name="MarkupCompilePass1Task">
-    <MarkupCompilePass1 
+    <MarkupCompilePass1
       AssemblyName="WPFMSBuildSample"
       Language="C#"
       OutputType="WinExe"
@@ -121,9 +121,9 @@ ms.locfileid: "55027335"
 
 ## <a name="see-also"></a>関連項目
 
-[WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)  
-[WPF MSBuild タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild リファレンス](../msbuild/msbuild-reference.md)  
-[MSBuild タスク リファレンス](../msbuild/msbuild-task-reference.md)  
-[WPF アプリケーション (WPF) のビルド](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[WPF XAML ブラウザー アプリケーションの概要](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)
+- [WPF MSBuild タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md)
+- [MSBuild タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [WPF アプリケーション (WPF) のビルド](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [WPF XAML ブラウザー アプリケーションの概要](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

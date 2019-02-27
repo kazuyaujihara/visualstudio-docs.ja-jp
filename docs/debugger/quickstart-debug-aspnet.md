@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 01c523abf6b6302831fee53e2546ba606089467c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027380"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683598"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して ASP.NET をデバッグする
 
 Visual Studio デバッガーでは、アプリのデバッグに役立つ多くの強力な機能が提供されます。 このトピックでは、基本的な機能のいくつかを簡単に紹介します。
 
-## <a name="create-a-new-project"></a>新しいプロジェクトを作成する 
+## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 
 1. Visual Studio で、**[ファイル]、[新しいプロジェクト]** の順に選択します。
 
@@ -110,7 +110,7 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 
     ![データヒントを表示する](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    データヒントでは、`c2` 変数の現在の値が示され、そのプロパティを検査することができます。 デバッグ中に、予期しない値が表示される場合は、先行するコード行または呼び出しているコード行にバグがある可能性があります。 
+    データヒントでは、`c2` 変数の現在の値が示され、そのプロパティを検査することができます。 デバッグ中に、予期しない値が表示される場合は、先行するコード行または呼び出しているコード行にバグがある可能性があります。
 
 2. データヒントを展開して、`c2` オブジェクトの現在のプロパティ値を確認します。
 

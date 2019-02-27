@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c063d0df3f874e232f33121dbc8f6015a3c0fc3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 119aa0a710218635cca945372ba9ea6fb6d4d27b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946786"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632746"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -56,7 +56,7 @@ VSPerfCmd /Start:Sample /Output:MyApp.exe.vsp /Launch:MyApp.exe
 VSPerfCLREnv /GlobalSampleOn
 VSPerfCLREnv /GlobalInteractionOn
 REM Restart the computer and start the service
-VSPerfCmd /Start:Sample /Output:MyService.exe.vsp 
+VSPerfCmd /Start:Sample /Output:MyService.exe.vsp
 VSPerfCmd /Attach:MyService.exe
 ```
 
@@ -103,7 +103,7 @@ VSPerfCmd /Attach:MyService.exe
 |**Off**|標準的な .NET プロファイル用の環境変数を削除します。 このオプションは、グローバルではない VSPerfClrEnv オプションを使用してプロファイラー環境変数を設定した場合に使用します。|
 |**GlobalOff**|グローバルな .NET プロファイル用の環境変数を削除します。 プロファイラーではなく、オペレーティング システムによってアプリケーションが起動された場合に、このオプションを使用します。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 IDE のパフォーマンス エクスプローラーを使用して起動されたマネージド アプリケーションの場合、アプリケーションのプロファイルにこれらのオプションは必要ありません。 必要なすべての環境設定は、パフォーマンス エクスプローラーによって設定されます。
 

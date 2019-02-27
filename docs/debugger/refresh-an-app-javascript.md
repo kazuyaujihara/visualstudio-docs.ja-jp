@@ -1,4 +1,4 @@
-﻿---
+---
 title: UWP アプリの更新 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,47 +18,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0baa9e9a94b96682cda21dec9a5ba76cbe7f0065
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4bd14f0d0a8fa0697ed8fead43bac69b0b002ed3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970917"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690566"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio で UWP アプリを更新します。
-  
- 選択して、JavaScript を使用して UWP アプリを更新して、デバッグ中に、コードに変更を行うことができます、**更新の Windows アプリ**のボタンでは、**デバッグ**ツールバー。 このボタンを選択すると、デバッガーを停止したり再起動したりせずにアプリが再度読み込まれます。 更新機能によって、HTML、CSS、および JavaScript コードを変更し、その結果をすばやく確認できます。 この機能は UWP アプリをサポートします。  
-  
- 更新では、アプリの状態は保持されません。また、アプリに対する次の変更は反映されません。  
-  
--   パッケージ マニフェストに指定されたイメージの変更を含むパッケージ マニフェスト ファイルの変更。  
-  
--   SDK 参照の追加や削除などの参照の変更、または Windows ランタイム コンポーネント (.winmd ファイル) の変更。  
-  
--   .resjson ファイル内の文字列の変更などのリソースの変更。  
-  
--   パス名の変更、新しいプロジェクト ファイル、または削除ファイルが発生するプロジェクト ファイルの変更。  
-  
--   選択したデバッグ デバイスの変更などのプロジェクトおよび項目プロパティの変更、またはファイルのパッケージ操作の変更 ([プロパティ] ウィンドウ内)。  
-  
+
+ 選択して、JavaScript を使用して UWP アプリを更新して、デバッグ中に、コードに変更を行うことができます、**更新の Windows アプリ**のボタンでは、**デバッグ**ツールバー。 このボタンを選択すると、デバッガーを停止したり再起動したりせずにアプリが再度読み込まれます。 更新機能によって、HTML、CSS、および JavaScript コードを変更し、その結果をすばやく確認できます。 この機能は UWP アプリをサポートします。
+
+ 更新では、アプリの状態は保持されません。また、アプリに対する次の変更は反映されません。
+
+-   パッケージ マニフェストに指定されたイメージの変更を含むパッケージ マニフェスト ファイルの変更。
+
+-   SDK 参照の追加や削除などの参照の変更、または Windows ランタイム コンポーネント (.winmd ファイル) の変更。
+
+-   .resjson ファイル内の文字列の変更などのリソースの変更。
+
+-   パス名の変更、新しいプロジェクト ファイル、または削除ファイルが発生するプロジェクト ファイルの変更。
+
+-   選択したデバッグ デバイスの変更などのプロジェクトおよび項目プロパティの変更、またはファイルのパッケージ操作の変更 ([プロパティ] ウィンドウ内)。
+
 > [!IMPORTANT]
->  参照やパッケージ マニフェストの変更など、上記の項目の変更を行った場合、HTML、CSS、および JavaScript のソース ファイルを更新するには、デバッガーを停止して再起動する必要があります。  
-  
-### <a name="to-refresh-an-app"></a>アプリを更新するには  
-  
+>  参照やパッケージ マニフェストの変更など、上記の項目の変更を行った場合、HTML、CSS、および JavaScript のソース ファイルを更新するには、デバッガーを停止して再起動する必要があります。
+
+### <a name="to-refresh-an-app"></a>アプリを更新するには
+
 1.  UWP プロジェクトを Visual Studio で開いて、次のように選択します。**ローカル マシン**デバッグ ターゲットとして。
-  
-     ![デバッグ ターゲット リスト](../debugger/media/js_select_target.png "JS_Select_Target")  
-  
-3.  F5 キーを押して、アプリをデバッグ モードで実行します。  
-  
-4.  Visual Studio に切り替えます  
-  
+
+     ![デバッグ ターゲット リスト](../debugger/media/js_select_target.png "JS_Select_Target")
+
+3.  F5 キーを押して、アプリをデバッグ モードで実行します。
+
+4.  Visual Studio に切り替えます 
+
 5.  UWP アプリのホーム ページで、HTML の一部を編集します。
-  
-7.  [Windows アプリケーションの更新] **ボタン (**) をクリックします![Windows アプリのボタンを更新](../debugger/media/js_refresh.png "JS_Refresh")します。 (または F4 キーを押します)。  
-  
+
+7.  をクリックして、**更新の Windows アプリ**のように、ボタン:![更新の Windows アプリのボタン](../debugger/media/js_refresh.png "JS_Refresh")します。 (または F4 キーを押します)。
+
 8.  アプリに切り替えます。 アプリが再度読み込まれ、更新された HTML は、アプリを表示するために使用します。
-  
-## <a name="see-also"></a>関連項目
- [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)
+
+## <a name="see-also"></a>参照
+- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)

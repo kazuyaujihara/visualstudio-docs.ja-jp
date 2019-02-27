@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e3e97a191180978eed3bb6be0a59ae38bcd64b6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c8bf20f43fcc8da48a6e1ec1dfd0f65b14f8ad86
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984289"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640247"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
-シンボルに対応するかどうかを示すフラグを取得、*定義範囲シンボル*C++ AMP のアクセラレータのコンパイルされたコードでポインター変数のタグの要素。 定義の範囲のシンボルは、アドレスの範囲の変数の場所です。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_isAcceleratorPointerTagLiveRange(   
-   BOOL* pFlag);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pFlag`  
- [out]ポインターを`BOOL`シンボルが定義の範囲のシンボルに対応するかどうかを示します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
-  
+シンボルに対応するかどうかを示すフラグを取得、*定義範囲シンボル*C++ AMP のアクセラレータのコンパイルされたコードでポインター変数のタグの要素。 定義の範囲のシンボルは、アドレスの範囲の変数の場所です。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_isAcceleratorPointerTagLiveRange(
+   BOOL* pFlag);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pFlag`
+
+[out]ポインターを`BOOL`シンボルが定義の範囲のシンボルに対応するかどうかを示します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+
 ## <a name="see-also"></a>関連項目
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

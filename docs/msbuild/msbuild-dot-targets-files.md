@@ -16,24 +16,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4053cd105bddf94644318ff7e06811e8d8cbbaf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fa0366fed1a405acfa600e9af594e32c1ab47346
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961898"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623750"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .targets ファイル
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] には、項目、プロパティ、ターゲット、および一般的なシナリオ用のタスクが含まれているいくつかの *.targets* ファイルが含まれます。 これらのファイルはほぼすべて [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロジェクト ファイル自動的にインポートされ、これによってメンテナンスが簡素化されて読みやすさが向上します。  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] には、項目、プロパティ、ターゲット、および一般的なシナリオ用のタスクが含まれているいくつかの *.targets* ファイルが含まれます。 これらのファイルはほぼすべて [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロジェクト ファイル自動的にインポートされ、これによってメンテナンスが簡素化されて読みやすさが向上します。
 
- 通常、プロジェクトでは、ビルド プロセスを定義するために、1 つ以上の *.targets* ファイルをインポートします。 たとえば、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって作成された [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトは、*Microsoft.Common.targets* をインポートする *Microsoft.CSharp.targets* をインポートします。 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクト自体はそのプロジェクトに固有の項目とプロパティを定義しますが、[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトの標準のビルド規則は、インポートされた *.targets* ファイルで定義されます。  
+ 通常、プロジェクトでは、ビルド プロセスを定義するために、1 つ以上の *.targets* ファイルをインポートします。 たとえば、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって作成された [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトは、*Microsoft.Common.targets* をインポートする *Microsoft.CSharp.targets* をインポートします。 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクト自体はそのプロジェクトに固有の項目とプロパティを定義しますが、[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトの標準のビルド規則は、インポートされた *.targets* ファイルで定義されます。
 
- `$(MSBuildToolsPath)` 値によって、これらの共通 *.targets* ファイルのパスが指定されます。 `ToolsVersion` が 4.0 の場合、ファイルは次の場所にあります。*\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*  
+ `$(MSBuildToolsPath)` 値によって、これらの共通 *.targets* ファイルのパスが指定されます。 `ToolsVersion` が 4.0 の場合、ファイルは次の場所にあります。*\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
 
 > [!NOTE]
->  独自のターゲットを作成する方法については、[ターゲット](../msbuild/msbuild-targets.md)に関する記事を参照してください。 `Import` 要素を使用してプロジェクト ファイルを他のプロジェクト ファイルに挿入する方法については、「[Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)」と「[方法:複数のプロジェクト ファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)」を参照してください。  
+>  独自のターゲットを作成する方法については、[ターゲット](../msbuild/msbuild-targets.md)に関する記事を参照してください。 `Import` 要素を使用してプロジェクト ファイルを他のプロジェクト ファイルに挿入する方法については、「[Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)」と「[方法:複数のプロジェクト ファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)」を参照してください。
 
-## <a name="common-targets-files"></a>共通 .Targets ファイル  
+## <a name="common-targets-files"></a>共通 .Targets ファイル
 
 | *.targets* ファイル | 説明 |
 |---------------------------------| - |
@@ -44,7 +44,7 @@ ms.locfileid: "54961898"
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
 *Directory.Build.targets* は、ディレクトリの下のプロジェクトをカスタマイズできるようにする、ユーザー定義のファイルです。 **ImportDirectoryBuildTargets** プロパティを **false** に設定しない限り、このファイルは *Microsoft.Common.targets* から自動的にインポートされます。
 
-## <a name="see-also"></a>関連項目  
- [Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)   
- [MSBuild リファレンス](../msbuild/msbuild-reference.md)  
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>関連項目
+- [Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

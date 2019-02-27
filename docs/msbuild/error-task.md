@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc603d11a087fb413896b9ae897ee730e18aae1b
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d3788fae176b344f99884efe7552f33762255ddc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853379"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610308"
 ---
 # <a name="error-task"></a>Error タスク
 ビルドを停止し、条件付きステートメントの評価に基づいてエラーをログに記録します。
@@ -38,7 +38,7 @@ ms.locfileid: "55853379"
 | `HelpKeyword` | 省略可能な `String` 型のパラメーターです。<br /><br /> エラーに関連付けるヘルプ キーワード。 |
 | `Text` | 省略可能な `String` 型のパラメーターです。<br /><br /> `Condition` パラメーターが `true` と評価された場合に、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] がログに記録するエラー テキストです。 |
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 `Error` タスクにより、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトはロガーに対してメッセージ テキストを発行し、ビルドの実行を中断することができます。
 
 `Condition` パラメーターが `true` と評価されると、ビルドを中止し、ログにエラーを記録します。 `Condition` パラメーターが存在しない場合には、エラーがログ記録され、ビルドの実行が中止されます。 ログ処理の詳細については、[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)に関するページを参照してください。
@@ -63,5 +63,5 @@ ms.locfileid: "55853379"
 ```
 
 ## <a name="see-also"></a>関連項目
-[タスク リファレンス](../msbuild/msbuild-task-reference.md)  
-[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)

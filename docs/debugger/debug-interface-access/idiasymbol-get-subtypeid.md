@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d6b74fc004128572825d17c71bf93c0da0b4e66
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e54f800b5843a17e0617b57de21bfcdd4616cef4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920826"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611686"
 ---
 # <a name="idiasymbolgetsubtypeid"></a>IDiaSymbol::get_subTypeId
-Sub 型 ID を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_subTypeId(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]ポインター、`DWORD`サブ タイプの ID を保持します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
-  
+Sub 型 ID を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_subTypeId(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]ポインター、`DWORD`サブ タイプの ID を保持します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+
 ## <a name="see-also"></a>関連項目
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

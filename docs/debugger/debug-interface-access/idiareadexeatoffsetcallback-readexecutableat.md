@@ -12,43 +12,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a637608c8da5d7c5c5e0d857520a08ffae494a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f199db93fa2ea0b3ee2633f9af8a02fff5a4fdf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944867"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695818"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
-指定した実行可能ファイルから指定したオフセットから始まるバイト数を読み取ります。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT ReadExecutableAt (   
-   DWORDLONG fileOffset,  
-   DWORD     cbData,  
-   DWORD*    pcbData,  
-   BYTE      data[]  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- fileOffset  
- [in]読み取りを開始する実行可能ファイル内のオフセット。  
-  
- cbData  
- [in]読み取るバイト数。  
-  
- pcbData  
- [out]読み取られたバイト数を返します。  
-  
- data[]  
- [入力、出力]ファイルから読み取られたバイトに設定している配列。  
-  
-## <a name="remarks"></a>解説  
- このメソッドは、ファイルの絶対オフセットを使用する実行可能ファイルからバイトのデータを読み込む DIA サポート コードによって呼び出されます。 サポートにこのメソッドは、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッド。  
-  
-## <a name="see-also"></a>関連項目  
- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+指定した実行可能ファイルから指定したオフセットから始まるバイト数を読み取ります。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT ReadExecutableAt ( 
+   DWORDLONG fileOffset,
+   DWORD     cbData,
+   DWORD*    pcbData,
+   BYTE      data[]
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ fileOffset
+
+[in]読み取りを開始する実行可能ファイル内のオフセット。
+
+ cbData
+
+[in]読み取るバイト数。
+
+ pcbData
+
+[out]読み取られたバイト数を返します。
+
+ data[]
+
+[入力、出力]ファイルから読み取られたバイトに設定している配列。
+
+## <a name="remarks"></a>解説
+ このメソッドは、ファイルの絶対オフセットを使用する実行可能ファイルからバイトのデータを読み込む DIA サポート コードによって呼び出されます。 サポートにこのメソッドは、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッド。
+
+## <a name="see-also"></a>参照
+- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

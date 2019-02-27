@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 82231756568c8b8139443a168ed22c28528c385c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920018"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840884"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>R Tools for Visual Studio のサンプル プロジェクト
 
@@ -65,7 +65,7 @@ ms.locfileid: "55920018"
 
 ## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>Microsoft R Open と Microsoft ML Server の特別な点
 
-[Microsoft R Open](http://aka.ms/rtvs-r-open) (Microsoft が配布する R) は、次の 2 つの重要な点が [CRAN R](https://cran.r-project.org/) とは異なります。
+[Microsoft R Open](https://aka.ms/rtvs-r-open) (Microsoft が配布する R) は、次の 2 つの重要な点が [CRAN R](https://cran.r-project.org/) とは異なります。
 
 1. [Intel 数値演算ライブラリ](https://software.intel.com/intel-mkl)と併用時の[優れた計算性能](https://mran.revolutionanalytics.com/rro/#intelmkl1)。 ライブラリは、Microsoft R Open と共に使用するために、Microsoft から無料でダウンロードして入手できます。
 
@@ -81,7 +81,7 @@ ms.locfileid: "55920018"
 
 ![MKL を使用する MLS と MRO と MKL を使用しない R と MRO の比較](media/samples-speed-comparison.png)
 
-MRO と MLS を使用した R の技術的な比較については、[Lixun Zhang の詳細なディスカッション](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) に関するページを参照してください。
+MRO と MLS を使用した R の技術的な比較については、[Lixun Zhang の詳細なディスカッション](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) に関するページを参照してください。
 
 次の図では、ロジスティック回帰モデルの構築時に使用される経過時間 (秒) を比較して、15 分を超える航空便の遅延を予測しています。  CRAN R で使われた経過時間は、行が少し増えると大幅に増加しますが、MLS では約 2 倍のみ増加しています。 このベンチマークの詳細については、*Benchmarks/rxGlm_benchmark.R* サンプルをご覧ください。
 

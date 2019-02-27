@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab674576655df3b4a695d97fdfdb42df2ffa449
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227265"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602456"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 スタック フレームの種類を指定します。
@@ -36,23 +36,17 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Elements
-`FrameTypeFPO`  
-フレーム ポインターを指定します。FPO 情報を使用できます。
+`FrameTypeFPO` フレーム ポインターを指定します。FPO 情報を使用できます。
 
-`FrameTypeTrap`  
-カーネル トラップ フレーム。
+`FrameTypeTrap` カーネル トラップ フレーム。
 
-`FrameTypeTSS`  
-カーネル トラップ フレーム。
+`FrameTypeTSS` カーネル トラップ フレーム。
 
-`FrameTypeStandard`  
-標準 EBP スタック フレーム。
+`FrameTypeStandard` 標準 EBP スタック フレーム。
 
-`FrameTypeFrameData`  
-フレーム ポインターを指定します。フレーム データ情報は利用可能です。
+`FrameTypeFrameData` フレーム ポインターを指定します。フレーム データ情報は利用可能です。
 
-`FrameTypeUnknown`  
-すべてのデバッグ情報がないフレーム。
+`FrameTypeUnknown` すべてのデバッグ情報がないフレーム。
 
 ## <a name="remarks"></a>解説
 この列挙体の値が呼び出しによって返される、 [idiastackframe::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)メソッド。
@@ -61,5 +55,5 @@ enum StackFrameTypeEnum {
 ヘッダー: cvconst.h
 
 ## <a name="see-also"></a>関連項目
-[列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)
+- [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

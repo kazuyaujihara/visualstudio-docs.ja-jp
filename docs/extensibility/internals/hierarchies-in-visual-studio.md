@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9466e081aad6e5e928198b4d6f43d9f68c4eee8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616886"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841780"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio での階層
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) とプロジェクトが表示されます、*階層*します。 IDE では、階層は、各ノードが関連付けられているプロパティのセットを持つノードのツリーです。 A*プロジェクト階層*はプロジェクトのアイテム、アイテムのリレーションシップ、および項目の関連付けられているプロパティおよびコマンドを保持するコンテナーです。
@@ -35,4 +35,4 @@ ms.locfileid: "56616886"
 ## <a name="see-also"></a>関連項目
 - [プロジェクトの種類](../../extensibility/internals/project-types.md)
 - [選択と、IDE で通貨](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [VSSDK のサンプル](http://aka.ms/vs2015sdksamples)
+- [VSSDK のサンプル](https://aka.ms/vs2015sdksamples)

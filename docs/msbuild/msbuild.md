@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d270afeb4c0c0404ae83bbaa51938d7c741965
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce0e95a72c6c2400f5ac245f3ac4741423194c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069864"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618238"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] は、アプリケーションをビルドするためのプラットフォームです。 MSBuild とも呼ばれるこのエンジンには、ビルド プラットフォームでソフトウェアを処理およびビルドする方法を制御する、プロジェクト ファイル用の XML スキーマが用意されています。 Visual Studio は MSBuild を使用しますが、MSBuild は Visual Studio に依存しません。 プロジェクト ファイルまたはソリューション ファイルに対して *msbuild.exe* を実行すると、Visual Studio がインストールされていない環境で、製品の統合とビルドを実行できます。
@@ -182,7 +182,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [MSBuild でのログ](../msbuild/logging-in-msbuild.md) | ビルド イベント、メッセージ、およびエラーを記録する方法について説明します。 |
 | [その他のリソース](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | MSBuild に関する詳細な情報を提供するコミュニティやサポートのリソースを紹介します。 |
 
-## <a name="reference"></a>参照
- [MSBuild リファレンス](../msbuild/msbuild-reference.md) リファレンス情報を示すトピックへのリンクを提供します。
+## <a name="reference"></a>関連項目
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md) リファレンス情報を示すトピックへのリンクを提供します。
 
- [用語集](msbuild-glossary.md) MSBuild の一般的な用語を定義します。
+- [用語集](msbuild-glossary.md) MSBuild の一般的な用語を定義します。

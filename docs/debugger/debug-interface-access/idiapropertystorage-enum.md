@@ -1,4 +1,4 @@
-﻿---
+---
 title: IDiaPropertyStorage::Enum |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0244aca54ffe7b68ea4cfd82be465c28524758ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e39693f63ea706ecdfa30a9ce0202444f51d4f57
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973487"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616106"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
-このセット内のプロパティの列挙子を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT Enum (   
-   IEnumSTATPROPSTG** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `ppenum`  
- [out]返します、`IEnumSTATPROPSTG`プロパティの列挙型を表す (Microsoft.VisualStudio.OLE.Interop 名前空間の) 内のオブジェクト。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。  
-  
+このセット内のプロパティの列挙子を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT Enum ( 
+   IEnumSTATPROPSTG** ppenum
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `ppenum`
+
+[out]返します、`IEnumSTATPROPSTG`プロパティの列挙型を表す (Microsoft.VisualStudio.OLE.Interop 名前空間の) 内のオブジェクト。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Hello World の拡張機能のチュートリアル |Microsoft Docs
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c68ddea3f92c33056ba1dc98332755dfd3bb1b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921048"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688343"
 ---
 # <a name="create-your-first-extension-hello-world"></a>初めての拡張機能を作成します。Hello World
 
@@ -35,7 +35,7 @@ ms.locfileid: "54921048"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-開始する前に、 必要なVSIX のテンプレートとサンプル コードを含む**Visual Studio 拡張機能の開発**ワークロードがインストールされていることを確認してください。 
+開始する前に、 必要なVSIX のテンプレートとサンプル コードを含む**Visual Studio 拡張機能の開発**ワークロードがインストールされていることを確認してください。
 
 > [!NOTE]
 > Visual Studio 機能拡張プロジェクトを作成するには、Visual Studio の任意のエディション(Community、Professional、または Enterprise)を使用することができます。
@@ -44,13 +44,17 @@ ms.locfileid: "54921048"
 
 手順 1. **ファイル** メニューから**新しいプロジェクト**をクリックします。 画面の下部には、プロジェクトの名前を入力します。
 
-手順 2. メニューの **Visual C#** をクリックし、 **Extensibility**をクリックし、 次に **VSIX プロジェクト**をクリックします****。
+手順 2. **メニューの** **Visual C#** をクリックし、 **Extensibility**をクリックし、 次に **VSIX プロジェクト**をクリックします。
 
 ![新しいプロジェクト](media/hello-world-new-project.png)
 
 はじめに *Getting Started* ページといくつかのサンプル リソースが表示されます。
 
+::: moniker range="vs-2017"
+
 このチュートリアルを終了した後に再開する必要がある場合、 **スタート ページ** の **最近** セクションで HelloWorld プロジェクトを見つけられます。
+
+::: moniker-end
 
 ## <a name="add-a-custom-command"></a>カスタム コマンドの追加
 

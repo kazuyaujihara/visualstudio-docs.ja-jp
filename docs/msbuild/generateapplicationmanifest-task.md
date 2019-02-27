@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854110"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626623"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest タスク
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーション マニフェストまたはネイティブ マニフェストを生成します。 ネイティブ マニフェストでは、コンポーネントの一意の ID を定義し、コンポーネントを構成するアセンブリおよびファイルを指定することによって、コンポーネントを記述します。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーション マニフェストはネイティブ マニフェストを拡張するもので、アプリケーションのエントリ ポイントとセキュリティ レベルを指定します。
@@ -64,7 +64,7 @@ ms.locfileid: "55854110"
 | `TrustInfoFile` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> アプリケーションのセキュリティを指定する XML ドキュメントを示します。 XML ドキュメントのルート要素は、asmv2 名前空間内の trustInfo ノードである必要があります。 タスクがネイティブ マニフェストを生成する場合には、このパラメーターは無視されます。 |
 | `UseApplicationTrust` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> true の場合、`Product`、`Publisher`、および `SupportUrl` の各プロパティがアプリケーション マニフェストに書き込まれます。 |
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.GenerateManifestBase> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 Task クラスのパラメーターの一覧については、「[Task Base Class](../msbuild/task-base-class.md)」を参照してください。
 
 `GenerateDeploymentManifest` タスクの使用方法については、「[GenerateApplicationManifest タスク](../msbuild/generateapplicationmanifest-task.md)」を参照してください。
@@ -88,7 +88,7 @@ ms.locfileid: "55854110"
 
 > [!NOTE]
 > 次の例では、マニフェストの作成処理に着目するために、アプリケーションのバイナリはすべてビルド済みであると仮定してあります。 この例では、完全に実用的な [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置が作成されます。
-> 
+>
 > [!NOTE]
 > この例の `SignFile` タスクで使用されている `Thumbprint` プロパティの詳細については、「[SignFile タスク](../msbuild/signfile-task.md)」を参照してください。
 
@@ -141,7 +141,7 @@ ms.locfileid: "55854110"
 
 > [!NOTE]
 > 次の例では、マニフェストの作成処理に着目するために、アプリケーションのバイナリはすべてビルド済みであると仮定してあります。 この例では、完全に実用的な [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置が作成されます。
-> 
+>
 > [!NOTE]
 > この例の `SignFile` タスクで使用されている `Thumbprint` プロパティの詳細については、「[SignFile タスク](../msbuild/signfile-task.md)」を参照してください。
 
@@ -199,7 +199,7 @@ ms.locfileid: "55854110"
 
 > [!NOTE]
 > 次の例では、マニフェストの作成処理に着目するために、アプリケーションのバイナリはすべてビルド済みであると仮定してあります。 この例では、完全に実用的な [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置が作成されます。
-> 
+>
 > [!NOTE]
 > この例の `SignFile` タスクで使用されている `Thumbprint` プロパティの詳細については、「[SignFile タスク](../msbuild/signfile-task.md)」を参照してください。
 
@@ -350,7 +350,7 @@ ms.locfileid: "55854110"
 ```
 
 ## <a name="see-also"></a>関連項目
-[タスク](../msbuild/msbuild-tasks.md)  
-[GenerateDeploymentManifest タスク](../msbuild/generatedeploymentmanifest-task.md)  
-[SignFile タスク](../msbuild/signfile-task.md)  
-[タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [タスク](../msbuild/msbuild-tasks.md)
+- [GenerateDeploymentManifest タスク](../msbuild/generatedeploymentmanifest-task.md)
+- [SignFile タスク](../msbuild/signfile-task.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 040b0f5f657b41a268f69d7f34d6c0072646a8e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 617783019a8a8b5a1ac2623ed113b78308466501
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034091"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696884"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して C# または Visual Basic でデバッグする
 
 Visual Studio デバッガーでは、アプリのデバッグに役立つ多くの強力な機能が提供されます。 このトピックでは、基本的な機能のいくつかを簡単に紹介します。
 
-## <a name="create-a-new-project"></a>新しいプロジェクトを作成する 
+## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 
 1. Visual Studio で、**[ファイル]、[新しいプロジェクト]** の順に選択します。
 
@@ -158,7 +158,7 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 
     ![データヒントを表示する](../debugger/media/dbg-qs-data-tip-csharp.png "データヒントを表示する")
 
-    データヒントでは、`c1` 変数の現在の値が示され、そのプロパティを検査することができます。 デバッグ中に、予期しない値が表示される場合は、先行するコード行または呼び出しているコード行にバグがある可能性があります。 
+    データヒントでは、`c1` 変数の現在の値が示され、そのプロパティを検査することができます。 デバッグ中に、予期しない値が表示される場合は、先行するコード行または呼び出しているコード行にバグがある可能性があります。
 
 2. データヒントを展開して、`c1` オブジェクトの現在のプロパティ値を確認します。
 

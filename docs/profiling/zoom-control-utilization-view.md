@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f497c7105f0b05caf907d14b59dbbbfc1801dc9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c7f50a3117daeee0ec1727adbcdcc5ca710be36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943329"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598662"
 ---
 # <a name="zoom-control-utilization-view"></a>ズーム コントロール (使用状況ビュー)
-ズーム コントロールを使用すると、CPU 使用状況グラフを拡大し、特に興味のある領域に絞り込むことができます。 このコントロールは、ビューの中心を拡大します。 そのため、表示を拡大する前に、興味のある領域を中央に位置させる必要があります。  
-  
- CPU 使用状況グラフまたは GPU アクティビティ グラフでは、マウス ポインターをドラッグして、強調表示する領域を作成できます。 マウスのボタンを離すと、選択した範囲が拡大されます。  
-  
-## <a name="see-also"></a>関連項目  
- [使用状況ビュー](../profiling/utilization-view.md)
+ズーム コントロールを使用すると、CPU 使用状況グラフを拡大し、特に興味のある領域に絞り込むことができます。 このコントロールは、ビューの中心を拡大します。 そのため、表示を拡大する前に、興味のある領域を中央に位置させる必要があります。
+
+ CPU 使用状況グラフまたは GPU アクティビティ グラフでは、マウス ポインターをドラッグして、強調表示する領域を作成できます。 マウスのボタンを離すと、選択した範囲が拡大されます。
+
+## <a name="see-also"></a>関連項目
+- [使用状況ビュー](../profiling/utilization-view.md)
