@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a4a6e65929e6c437481397e5aadb6bbe4d1f33
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978933"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692568"
 ---
 # <a name="messages-menu-commands"></a>[メッセージ] メニューのコマンド
-**メッセージ**] メニューの [メッセージ ビューを制御するためのコマンドを提供します。  
-  
- **ログ記録の開始/停止**  
- 開始またはメッセージの表示を停止します。  
-  
- **ログ オプション**  
- 開く、**メッセージ** ダイアログ ボックスで、メッセージの検索条件を指定できます。  
-  
- **ログのクリア**  
- アクティブなメッセージ ビューの内容を消去します。
+**メッセージ**] メニューの [メッセージ ビューを制御するためのコマンドを提供します。
+
+ **ログ開始/終了**開始または停止メッセージを表示します。
+
+ **ログ オプション**開きます、**メッセージ** ダイアログ ボックスで、メッセージの検索条件を指定できます。
+
+ **ログの消去**アクティブなメッセージ ビューの内容を消去します。

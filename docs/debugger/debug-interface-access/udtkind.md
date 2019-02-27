@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb649915179bc6e6b767970150df99caff306b4c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
+ms.openlocfilehash: 511beae100529f0db555eca0a8ddb995d7a335d1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317732"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636581"
 ---
 # <a name="udtkind"></a>UdtKind
 さまざまなユーザー定義型 (UDT) をについて説明します。
@@ -34,17 +34,13 @@ enum UdtKind {
 ```
 
 ## <a name="elements"></a>Elements
-UdtStruct  
-UDT は、構造です。
+UdtStruct UDT は、構造です。
 
-UdtClass  
-UDT は、クラスです。
+UdtClass UDT は、クラスです。
 
-UdtUnion  
-UDT は、共用体です。
+UdtUnion UDT は、共用体です。
 
-UdtInterface  
-UDT は、インターフェイスです。
+UdtInterface UDT は、インターフェイスです。
 
 ## <a name="remarks"></a>解説
 この列挙体の値がによって返される、 [idiasymbol::get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)メソッド。
@@ -53,5 +49,5 @@ UDT は、インターフェイスです。
 ヘッダー: cvconst.h
 
 ## <a name="see-also"></a>関連項目
-[列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)
+- [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

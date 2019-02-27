@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec2b4c518223d308f27a853c28c97b99b5ff7188
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c58bc069b3d38c4086a5642d13bb907528923bb5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917474"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680010"
 ---
 # <a name="help-menu-commands"></a>[ヘルプ] メニューのコマンド
-**ヘルプ**メニューには、ヘルプ ファイルを開くコマンドが用意されています。  
-  
- **Index**  
- Spy++ ヘルプの内容の画面を開きます。  
-  
- **ヘルプの使い方**  
- ヘルプを使用する方法について説明するヘルプ ファイルを開きます。  
-  
- **Spy++ のバージョン情報**  
- Spy++ のソフトウェア バージョンおよび著作権情報が表示されます。
+**ヘルプ**メニューには、ヘルプ ファイルを開くコマンドが用意されています。
+
+ **インデックス**spy++ ヘルプの目次画面を開きます。
+
+ **ヘルプを使用して**ヘルプを使用する方法を説明するヘルプ ファイルを開きます。
+
+ **Spy++ について**spy++ のソフトウェア バージョンおよび著作権情報が表示されます。

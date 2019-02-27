@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d710699912a05839ac32c582f40571b04b2de7c2
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 4e4adb0747ce569bc372daf0d36cfe1719a2ff61
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155750"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597752"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 スタック フレームの詳細が公開されます。
@@ -31,7 +31,7 @@ IDiaFrameData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
 次の表は、メソッドの`IDiaFrameData`します。
 
-|方法|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|フレームのコード アドレスのセクションの一部を取得します。|
 |[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|フレームのコード アドレスのオフセットの部分を取得します。|
@@ -52,7 +52,7 @@ IDiaFrameData : IUnknown
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|関数を囲むデータ インターフェイスのフレームを取得します。|
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|スタック アンワインドを実行し、スタック ウォーク フレーム インターフェイスでレジスタの現在の状態を返します。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
  フレームの使用の詳細は、アドレスとブロックの長さで表されるアドレス範囲に含まれる実行ポイントはいます。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
@@ -120,7 +120,7 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>関連項目
-[インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
-[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)  
-[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)
+- [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+- [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)
+- [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)

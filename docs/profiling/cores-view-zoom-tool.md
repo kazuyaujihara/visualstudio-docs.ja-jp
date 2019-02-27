@@ -12,21 +12,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c30cadc2ab781712deebf7edb6fda47fce5eb724
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a956c45db7d4929105ff665aaca0b2559b2f4426
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035407"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601549"
 ---
 # <a name="cores-view-zoom-tool"></a>コア ビューのズーム ツール
-ズーム コントロールは、タイムラインの表示を拡大縮小できるスライダーです。このコントロールを使用して、興味のある領域を集中的に見ることができます。 このコントロールは現在のビューの中心でズームします。そのため、拡大する前にビューを調整してください。  
-  
-## <a name="other-ways-to-zoom"></a>その他のズーム方法  
-  
--   拡大:ドラッグでタイムライン ビュー内の領域を選択します。 マウス ボタンを離すと、タイムライン ビューの選択した範囲が拡大されます。  
-  
--   拡大と縮小:タイムラインの上にマウス ポインターを置き、**Ctrl** キーを押しながらマウス ホイールを動かします。  
-  
-## <a name="see-also"></a>関連項目  
- [コア ビュー](../profiling/cores-view.md)
+ズーム コントロールは、タイムラインの表示を拡大縮小できるスライダーです。このコントロールを使用して、興味のある領域を集中的に見ることができます。 このコントロールは現在のビューの中心でズームします。そのため、拡大する前にビューを調整してください。
+
+## <a name="other-ways-to-zoom"></a>その他のズーム方法
+
+-   拡大:ドラッグでタイムライン ビュー内の領域を選択します。 マウス ボタンを離すと、タイムライン ビューの選択した範囲が拡大されます。
+
+-   拡大と縮小:タイムラインの上にマウス ポインターを置き、**Ctrl** キーを押しながらマウス ホイールを動かします。
+
+## <a name="see-also"></a>関連項目
+- [コア ビュー](../profiling/cores-view.md)

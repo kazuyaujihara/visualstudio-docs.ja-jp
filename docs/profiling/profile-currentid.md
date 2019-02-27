@@ -10,57 +10,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bad393dafc2aae0476b4986554b2a02c919e074
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 747922bf52bee18b20aeba95f7d549c890afceea
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985238"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599312"
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
-PROFILE_CURRENTID は、NameProfile、StartProfile、StopProfile、SuspendProfile、および ResumeProfile の各関数呼び出しで、スレッド ID またはプロセス ID の疑似トークンを返します。 指定されたスレッドやプロセスではなく、現在のスレッドまたはプロセスで関数を実行する場合に使用します。  
-  
-## <a name="example"></a>例  
- PROFILE_CURRENTID は *VSPerf.h* で次のように定義されます。  
-  
-```cpp  
-static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;  
-```  
-  
-## <a name="example"></a>例  
- PROFILE_CURRENTID の例を以下に示します。 この例では、[StartProfile](../profiling/startprofile.md) 関数の呼び出しで現在のスレッドを識別するパラメーターとして、PROFILE_CURRENTID を使用しています。  
-  
-```cpp  
-void ExerciseProfileCurrentID()  
-{  
-    // Declare ProfileOperationResult enumeration   
-    // to hold return value of a call to StartProfile.  
-    PROFILE_COMMAND_STATUS profileResult;  
-  
-    // Variables used to print output.  
-    HRESULT hResult;  
-    TCHAR tchBuffer[256];  
-  
-    profileResult = StartProfile(  
-        PROFILE_GLOBALLEVEL,  
-        PROFILE_CURRENTID);  
-  
-    // Format and print result.  
-    LPCTSTR pszFormat = TEXT("%s %d.\0");  
-    TCHAR* pszTxt = TEXT("StartProfile returned");  
-    hResult = StringCchPrintf(tchBuffer, 256, pszFormat,   
-        pszTxt, profileResult);  
-  
-#ifdef DEBUG  
-    OutputDebugString(tchBuffer);  
-#endif  
-}  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)   
- [NameProfile](../profiling/nameprofile.md)   
- [ResumeProfile](../profiling/resumeprofile.md)   
- [StartProfile](../profiling/startprofile.md)   
- [StopProfile](../profiling/stopprofile.md)   
- [SuspendProfile](../profiling/suspendprofile.md)
+PROFILE_CURRENTID は、NameProfile、StartProfile、StopProfile、SuspendProfile、および ResumeProfile の各関数呼び出しで、スレッド ID またはプロセス ID の疑似トークンを返します。 指定されたスレッドやプロセスではなく、現在のスレッドまたはプロセスで関数を実行する場合に使用します。
+
+## <a name="example"></a>例
+ PROFILE_CURRENTID は *VSPerf.h* で次のように定義されます。
+
+```cpp
+static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;
+```
+
+## <a name="example"></a>例
+ PROFILE_CURRENTID の例を以下に示します。 この例では、[StartProfile](../profiling/startprofile.md) 関数の呼び出しで現在のスレッドを識別するパラメーターとして、PROFILE_CURRENTID を使用しています。
+
+```cpp
+void ExerciseProfileCurrentID()
+{
+    // Declare ProfileOperationResult enumeration
+    // to hold return value of a call to StartProfile.
+    PROFILE_COMMAND_STATUS profileResult;
+
+    // Variables used to print output.
+    HRESULT hResult;
+    TCHAR tchBuffer[256];
+
+    profileResult = StartProfile(
+        PROFILE_GLOBALLEVEL,
+        PROFILE_CURRENTID);
+
+    // Format and print result.
+    LPCTSTR pszFormat = TEXT("%s %d.\0");
+    TCHAR* pszTxt = TEXT("StartProfile returned");
+    hResult = StringCchPrintf(tchBuffer, 256, pszFormat,
+        pszTxt, profileResult);
+
+#ifdef DEBUG
+    OutputDebugString(tchBuffer);
+#endif
+}
+```
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [NameProfile](../profiling/nameprofile.md)
+- [ResumeProfile](../profiling/resumeprofile.md)
+- [StartProfile](../profiling/startprofile.md)
+- [StopProfile](../profiling/stopprofile.md)
+- [SuspendProfile](../profiling/suspendprofile.md)

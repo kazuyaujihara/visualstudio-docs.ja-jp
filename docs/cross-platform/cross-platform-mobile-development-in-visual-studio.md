@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8c76a867f67f94cb0ce3589cc8aa411fd70663
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316966"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843814"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio におけるクロス プラットフォーム モバイル開発
 
@@ -38,7 +38,7 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 |[Xamarin モバイル アプリ開発ドキュメント](/xamarin/) |
 |[Xamarin アプリを使用した DevOps](/xamarin/tools/ci/devops/) |
 |[Visual Studio でのユニバーサル Windows アプリについて学習する](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
-|[Swift と C# との間の類似点について学習する](http://aka.ms/scposter) (download.microsoft.com)|
+|[Swift と C# との間の類似点について学習する](https://aka.ms/scposter) (download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a> 1 つのコード ベースから Android、iOS、Windows を対象にする
 

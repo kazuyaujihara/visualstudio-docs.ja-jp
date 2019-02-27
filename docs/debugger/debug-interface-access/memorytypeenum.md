@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e0f0973c0491cd65c2d03be785bb03b8c2f31df
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 19776c8d4ef72149c575d6835e9265e9cdb33727
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227421"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622671"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 アクセスするメモリの種類を指定します。
@@ -34,17 +34,13 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>パラメーター
-`MemTypeCode`  
-アクセスには、メモリがコードのみです。
+`MemTypeCode` アクセスには、メモリがコードのみです。
 
-`MemTypeData`  
-アクセスのデータまたはスタックのメモリ。
+`MemTypeData` アクセスのデータまたはスタックのメモリ。
 
-`MemTypeStack`  
-アクセスにはスタック メモリのみ。
+`MemTypeStack` アクセスにはスタック メモリのみ。
 
-`MemTypeAny`  
-任意の種類のメモリにアクセスします。
+`MemTypeAny` 任意の種類のメモリにアクセスします。
 
 ## <a name="remarks"></a>解説
 この列挙体の値を渡す、 [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)にさまざまな種類のメモリへのアクセスを制限する方法。
@@ -53,5 +49,5 @@ enum MemoryTypeEnum {
 ヘッダー: cvconst.h
 
 ## <a name="see-also"></a>関連項目
-[列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)
+- [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

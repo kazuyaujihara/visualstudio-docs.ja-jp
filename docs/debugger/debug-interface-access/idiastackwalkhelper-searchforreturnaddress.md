@@ -1,4 +1,4 @@
-﻿---
+---
 title: IDiaStackWalkHelper::searchForReturnAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfdd6d9c48e701ce123b8602eacffafb61da1b55
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87518257d9cab91976f69dd03c9026b0800a0680
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003384"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641482"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddress"></a>IDiaStackWalkHelper::searchForReturnAddress
-最も近い関数のリターン アドレスの指定したスタック フレームを検索します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT searchForReturnAddress(   
-   IDiaFrameData*  frame,  
-   ULONGLONG*      returnAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `frame`  
- [in][IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)現在のスタック フレームを表すオブジェクト。  
-  
- `returnAddress`  
- [out]最も近い関数のリターン アドレスを返します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
+最も近い関数のリターン アドレスの指定したスタック フレームを検索します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT searchForReturnAddress( 
+   IDiaFrameData*  frame,
+   ULONGLONG*      returnAddress
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `frame`
+
+[in][IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)現在のスタック フレームを表すオブジェクト。
+
+ `returnAddress`
+
+[out]最も近い関数のリターン アドレスを返します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

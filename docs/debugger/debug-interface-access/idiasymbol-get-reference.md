@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e73fbc4fff9c0742d4bc89d6bc43c5b845a7e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a2b5602219b9544f12e16c395051804c253807ae
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039872"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626428"
 ---
 # <a name="idiasymbolgetreference"></a>IDiaSymbol::get_reference
-ポインター型が参照するかどうかを指定するフラグを取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_reference (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]返します`TRUE`ポインター型が; の参照を返しますそれ以外の場合、`FALSE`します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
-  
+ポインター型が参照するかどうかを指定するフラグを取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_reference ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]返します`TRUE`ポインター型が; の参照を返しますそれ以外の場合、`FALSE`します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
-  
+>  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

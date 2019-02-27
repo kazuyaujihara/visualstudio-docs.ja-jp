@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiaframedata::get_addresssection |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d3f343e54f2d45799b5020f7ea0d39d79f524c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 93e3c6b02477097bd9dfe3fa0cf4292c3a8723f7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977357"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632551"
 ---
 # <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
-フレームのコード アドレスのセクションの一部を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_addressSection (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]フレームのコード アドレスのセクションの一部を返します。  
-  
-## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
-  
+フレームのコード アドレスのセクションの一部を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_addressSection ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]フレームのコード アドレスのセクションの一部を返します。
+
+## <a name="return-value"></a>戻り値
+ 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

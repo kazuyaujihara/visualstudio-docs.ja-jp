@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiasegment::get_offset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d0e12be0f6dbec2febc55a9fae6a010c8b61d4a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fe768bc356f5e3284218d973c31fa41db0bc51ad
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979008"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596491"
 ---
 # <a name="idiasegmentgetoffset"></a>IDiaSegment::get_offset
-セグメント、セクションの開始位置のオフセットを取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_offset (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]セグメント単位でセクションの開始位置にオフセットを返します。  
-  
-## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
-  
+セグメント、セクションの開始位置のオフセットを取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_offset ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]セグメント単位でセクションの開始位置にオフセットを返します。
+
+## <a name="return-value"></a>戻り値
+ 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

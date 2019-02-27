@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c6f37c26dac231bbfab38b6370786bd9bbe6b17c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 107e39e147c62f73c5656f3a398fbca231620c67
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956403"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840407"
 ---
 # <a name="rtvs-current-version"></a>RTVS の現在のバージョン
 
@@ -27,4 +27,4 @@ Visual Studio 2015 の場合、最新のインストーラーは [aka.ms/rtvs-cu
 
 Visual Studio と Windows の要件については、「[Installation](installing-r-tools-for-visual-studio.md)」(インストール) をご覧ください。
 
-Microsoft R Open と Microsoft Machine Learning Server (以前の Microsoft R Server) の更新プログラムについては、[Microsoft R 製品](http://aka.ms/rtvs-msft-r)のページを参照してください。
+Microsoft R Open と Microsoft Machine Learning Server (以前の Microsoft R Server) の更新プログラムについては、[Microsoft R 製品](https://aka.ms/rtvs-msft-r)のページを参照してください。

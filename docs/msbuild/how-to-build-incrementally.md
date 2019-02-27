@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853902"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621332"
 ---
 # <a name="how-to-build-incrementally"></a>方法: インクリメンタル ビルド
 大規模なプロジェクトをビルドする場合、今でも最新の以前にビルドされたコンポーネントが再ビルドされないことが重要です。 すべてのターゲットが毎回ビルドされると、各ビルドが完了するのに長い時間がかかります。 インクリメンタル ビルド (ビルド内の以前にビルドされていないターゲット、または古くなっているターゲットだけが再ビルドされます) を有効にするため、[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) は入力ファイルのタイムスタンプと出力ファイルのタイムスタンプを比較して、ターゲットをスキップ、ビルド、または部分的に再ビルドするかどうかを判断できます。 ただし、入力と出力の間に一対一のマッピングが必要です。 変換を使用して、ターゲットがこの直接マッピングを識別できるようにすることができます。 変換の詳細については、「[MSBuild 変換](../msbuild/msbuild-transforms.md)」を参照してください。
@@ -38,12 +38,12 @@ ms.locfileid: "55853902"
   [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は入力ファイルのタイムスタンプと出力ファイルのタイムスタンプを比較し、ターゲットをスキップ、ビルド、または部分的に再ビルドするかどうかを判断できます。 次の例では、`@(CSFile)` 項目リスト内の任意のファイルが *hello.exe* ファイルより新しい場合、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] はターゲットを実行します。そうでない場合は、ターゲットがスキップされます。
 
 ```xml
-<Target Name="Build" 
-    Inputs="@(CSFile)" 
+<Target Name="Build"
+    Inputs="@(CSFile)"
     Outputs="hello.exe">
 
     <Csc
-        Sources="@(CSFile)" 
+        Sources="@(CSFile)"
         OutputAssembly="hello.exe"/>
 </Target>
 ```
@@ -103,8 +103,8 @@ ms.locfileid: "55853902"
 ```
 
 ## <a name="see-also"></a>関連項目
-[ターゲット](../msbuild/msbuild-targets.md)  
-[Target 要素 (MSBuild)](../msbuild/target-element-msbuild.md)  
-[変換](../msbuild/msbuild-transforms.md)  
-[Csc タスク](../msbuild/csc-task.md)  
-[Vbc タスク](../msbuild/vbc-task.md)
+- [ターゲット](../msbuild/msbuild-targets.md)
+- [Target 要素 (MSBuild)](../msbuild/target-element-msbuild.md)
+- [変換](../msbuild/msbuild-transforms.md)
+- [Csc タスク](../msbuild/csc-task.md)
+- [Vbc タスク](../msbuild/vbc-task.md)

@@ -1,5 +1,5 @@
-﻿---
-title: エラー :Web サーバーが正しく構成されていない |Microsoft Docs
+---
+title: 'エラー: web サーバーが正しく構成されていません |Microsoft Docs'
 ms.date: 09/20/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd59211da9228f2940c675f889d0536fbea9045d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019193"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711606"
 ---
-# <a name="error-the-web-server-is-not-configured-correctly"></a>エラー :Web サーバーは正しく構成されていません。
+# <a name="error-the-web-server-is-not-configured-correctly"></a>エラー : Web サーバーは正しく構成されていません。
 
 ここで説明するには、問題を解決する手順を実行した後と、デバッグをもう一度試す前に IIS をリセットする必要もあります。 管理者のコマンド プロンプトを開き、入力を行うことができます`iisreset`します。
 
@@ -44,9 +44,9 @@ ms.locfileid: "55019193"
 4. (IIS)正しいバージョンの ASP.NET がサーバーにインストールされていることを確認します。
 
     Visual Studio プロジェクトと IIS で ASP.NET のバージョンの不一致には、この問題が発生します。 Web.config で、フレームワークのバージョンを設定する必要があります。IIS で ASP.NET をインストールするには、使用、 [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)します。 またを参照してください[IIS 8.0 を使用して ASP.NET 3.5 および ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)または ASP.NET Core, [IIS と Windows 上のホスト](https://docs.asp.net/en/latest/publishing/iis.html)します。
-  
+
 4. 場合、 `maxConnection` IIS での制限が小さすぎる、接続が多すぎますがあるとする必要があります、[接続制限を増やす](/iis/configuration/system.applicationhost/sites/sitedefaults/limits)します。
-  
-## <a name="see-also"></a>関連項目
- [リモートの IIS コンピューター上の ASP.NET のリモート デバッグ](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
- [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+
+## <a name="see-also"></a>参照
+- [リモートの IIS コンピューター上の ASP.NET のリモート デバッグ](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+- [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

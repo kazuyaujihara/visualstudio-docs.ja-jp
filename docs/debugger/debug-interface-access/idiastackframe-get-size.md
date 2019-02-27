@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiastackframe::get_size |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71fbcc3e47b0748c46f7094e1c512289253ab8fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6728418e848941bb537f5bec4cb4f772c73485c4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916600"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642691"
 ---
 # <a name="idiastackframegetsize"></a>IDiaStackFrame::get_size
-(バイト単位) のスタック フレームのサイズを取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_size (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]スタック フレームのサイズをバイト単位で返します。  
-  
-## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`プロパティがサポートされていない場合。 それ以外の場合はエラー コードを返します。  
-  
+(バイト単位) のスタック フレームのサイズを取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_size ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]スタック フレームのサイズをバイト単位で返します。
+
+## <a name="return-value"></a>戻り値
+ 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`プロパティがサポートされていない場合。 それ以外の場合はエラー コードを返します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

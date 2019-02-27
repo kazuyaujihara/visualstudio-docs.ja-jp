@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aea567014e32930e25960b069d2b755e2c0212b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b3a8b210c91019b2b7285288c7826f4983dfed6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923056"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627325"
 ---
 # <a name="msbuild-task"></a>MSBuild タスク
-別の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトから [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトをビルドします。  
+別の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトから [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトをビルドします。
 
-## <a name="parameters"></a>パラメーター  
- `MSBuild` タスクのパラメーターの説明を次の表に示します。  
+## <a name="parameters"></a>パラメーター
+ `MSBuild` タスクのパラメーターの説明を次の表に示します。
 
 
 | パラメーター | 説明 |
@@ -49,144 +49,144 @@ ms.locfileid: "54923056"
 | `UnloadProjectsOnCompletion` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、操作が完了したらプロジェクトはアンロードされます。 |
 | `UseResultsCache` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、キャッシュされた結果が返されます (ある場合)。<br /><br />  MSBuild タスクが実行されると、その結果がスコープ  <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> ビルド項目のリストとしてキャッシュされます。 |
 
-## <a name="remarks"></a>コメント  
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
+## <a name="remarks"></a>解説
+ 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
- [Exec Task](../msbuild/exec-task.md) を使用して *MSBuild.exe* を起動する場合と異なり、このタスクでは、同じ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロセスを使用して子プロジェクトがビルドされます。 すでにビルドされていて、スキップできるターゲットの一覧は、親のビルドと子のビルドの両方で共有されます。 また、新しい [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロセスが作成されないため、このタスクは高速です。  
+ [Exec Task](../msbuild/exec-task.md) を使用して *MSBuild.exe* を起動する場合と異なり、このタスクでは、同じ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロセスを使用して子プロジェクトがビルドされます。 すでにビルドされていて、スキップできるターゲットの一覧は、親のビルドと子のビルドの両方で共有されます。 また、新しい [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロセスが作成されないため、このタスクは高速です。
 
- このタスクでは、プロジェクト ファイルだけでなく、ソリューション ファイルも処理できます。  
+ このタスクでは、プロジェクト ファイルだけでなく、ソリューション ファイルも処理できます。
 
- プロジェクトを同時にビルドできるようにするために [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によって求められる構成は、構成に (ポート、プロトコル、タイムアウト、再試行などの) リモート インフラストラクチャが関連する場合でも、構成ファイルを使用して構成可能にする必要があります。 可能であれば、構成項目を `MSBuild` タスクのタスク パラメーターとして指定できるようにします。  
+ プロジェクトを同時にビルドできるようにするために [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によって求められる構成は、構成に (ポート、プロトコル、タイムアウト、再試行などの) リモート インフラストラクチャが関連する場合でも、構成ファイルを使用して構成可能にする必要があります。 可能であれば、構成項目を `MSBuild` タスクのタスク パラメーターとして指定できるようにします。
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 以降、ソリューション プロジェクトは、ビルドするすべてのサブ プロジェクトから TargetOutputs を出力するようになりました。  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 以降、ソリューション プロジェクトは、ビルドするすべてのサブ プロジェクトから TargetOutputs を出力するようになりました。
 
-## <a name="pass-properties-to-projects"></a>プロジェクトへのプロパティの引き渡し  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 以前のバージョンの [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 項目に一覧表示されている別のプロジェクトに対してプロパティの別のセットを渡すことは困難でした。 [MSBuild タスク](../msbuild/msbuild-task.md)の Properties 属性を使用すると、その設定はビルド対象のすべてのプロジェクトに適用されていました (ただし、[MSBuild タスク](../msbuild/msbuild-task.md)をバッチ処理し、項目一覧内の各プロジェクトに対して別のプロパティを条件に応じて用意する場合は除く)。  
+## <a name="pass-properties-to-projects"></a>プロジェクトへのプロパティの引き渡し
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 以前のバージョンの [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 項目に一覧表示されている別のプロジェクトに対してプロパティの別のセットを渡すことは困難でした。 [MSBuild タスク](../msbuild/msbuild-task.md)の Properties 属性を使用すると、その設定はビルド対象のすべてのプロジェクトに適用されていました (ただし、[MSBuild タスク](../msbuild/msbuild-task.md)をバッチ処理し、項目一覧内の各プロジェクトに対して別のプロパティを条件に応じて用意する場合は除く)。
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 には、ただし、新しい予約済みのメタデータ項目が 2 つあります (Properties と AdditionalProperties)。これらのメタデータ項目は、[MSBuild タスク](../msbuild/msbuild-task.md)を使ってビルドされる別プロジェクトに異なるプロパティを渡すための柔軟な方法を提供します。  
-
-> [!NOTE]
->  これらの新しいメタデータ項目は、[MSBuild タスク](../msbuild/msbuild-task.md)の Projects 属性に渡される項目に対してのみ適用可能です。  
-
-## <a name="multi-processor-build-benefits"></a>マルチプロセッサ ビルドの利点  
- この新しいメタデータを使用する最大の利点の 1 つを享受できるのは、マルチプロセッサ システム上でプロジェクトを同時にビルドする場合です。 メタデータを使用することで、すべてのプロジェクトを単一の [MSBuild タスク](../msbuild/msbuild-task.md)呼び出しに統合することができます。バッチ処理や条件付き [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクを実行する必要はありません。 単一の [MSBuild タスク](../msbuild/msbuild-task.md)を呼び出すだけで、Projects 属性に指定されているすべてのプロジェクトが同時にビルドされます。 (ただし、`BuildInParallel=true` 属性が [MSBuild タスク](../msbuild/msbuild-task.md)に指定されている場合に限定されます。)詳細については、「[複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)」を参照してください。  
-
-## <a name="properties-metadata"></a>Properties メタデータ  
- 一般的なシナリオとして、[MSBuild タスク](../msbuild/msbuild-task.md)を使用し、ビルド構成だけは異なるものを使用して、複数のソリューション ファイルをビルドすることが挙げられます。 デバッグ構成を使用してソリューション a1 をビルドし、リリース構成を使用してソリューション a2 をビルドすることができます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 では、このプロジェクト ファイルは次のようになります。  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 には、ただし、新しい予約済みのメタデータ項目が 2 つあります (Properties と AdditionalProperties)。これらのメタデータ項目は、[MSBuild タスク](../msbuild/msbuild-task.md)を使ってビルドされる別プロジェクトに異なるプロパティを渡すための柔軟な方法を提供します。
 
 > [!NOTE]
->  次の例で、"…" はその他のソリューション ファイルを表します。  
+>  これらの新しいメタデータ項目は、[MSBuild タスク](../msbuild/msbuild-task.md)の Projects 属性に渡される項目に対してのみ適用可能です。
 
-### <a name="aproj"></a>a.proj  
+## <a name="multi-processor-build-benefits"></a>マルチプロセッサ ビルドの利点
+ この新しいメタデータを使用する最大の利点の 1 つを享受できるのは、マルチプロセッサ システム上でプロジェクトを同時にビルドする場合です。 メタデータを使用することで、すべてのプロジェクトを単一の [MSBuild タスク](../msbuild/msbuild-task.md)呼び出しに統合することができます。バッチ処理や条件付き [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクを実行する必要はありません。 単一の [MSBuild タスク](../msbuild/msbuild-task.md)を呼び出すだけで、Projects 属性に指定されているすべてのプロジェクトが同時にビルドされます。 (ただし、`BuildInParallel=true` 属性が [MSBuild タスク](../msbuild/msbuild-task.md)に指定されている場合に限定されます。)詳細については、「[複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)」を参照してください。
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="Build">  
-        <MSBuild Projects="a1.sln..." Properties="Configuration=Debug"/>  
-        <MSBuild Projects="a2.sln" Properties="Configuration=Release"/>  
-    </Target>  
-</Project>  
-```  
+## <a name="properties-metadata"></a>Properties メタデータ
+ 一般的なシナリオとして、[MSBuild タスク](../msbuild/msbuild-task.md)を使用し、ビルド構成だけは異なるものを使用して、複数のソリューション ファイルをビルドすることが挙げられます。 デバッグ構成を使用してソリューション a1 をビルドし、リリース構成を使用してソリューション a2 をビルドすることができます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 では、このプロジェクト ファイルは次のようになります。
 
- しかし、Properties メタデータを使用すると、次の例に示すように、単一の [MSBuild タスク](../msbuild/msbuild-task.md)を使用して簡素化できます。  
+> [!NOTE]
+>  次の例で、"…" はその他のソリューション ファイルを表します。
 
-### <a name="aproj"></a>a.proj  
+### <a name="aproj"></a>a.proj
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln...">  
-            <Properties>Configuration=Debug</Properties>  
-        </ProjectToBuild>  
-        <ProjectToBuild Include="a2.sln">  
-            <Properties>Configuration=Release</Properties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"/>  
-    </Target>  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="Build">
+        <MSBuild Projects="a1.sln..." Properties="Configuration=Debug"/>
+        <MSBuild Projects="a2.sln" Properties="Configuration=Release"/>
+    </Target>
+</Project>
+```
 
- \- または  
+ しかし、Properties メタデータを使用すると、次の例に示すように、単一の [MSBuild タスク](../msbuild/msbuild-task.md)を使用して簡素化できます。
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln..."/>  
-        <ProjectToBuild Include="a2.sln">  
-            <Properties>Configuration=Release</Properties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"   
-          Properties="Configuration=Debug"/>  
-    </Target>  
-</Project>  
-```  
+### <a name="aproj"></a>a.proj
 
-## <a name="additionalproperties-metadata"></a>AdditionalProperties メタデータ  
- [MSBuild タスク](../msbuild/msbuild-task.md)を使用して 2 つのソリューション ファイルをビルドするシナリオを考えます。いずれのソリューション ファイルでもリリース構成を使用しますが、一方は x86 アーキテクチャ、もう一方は ia64 アーキテクチャを使用します。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 では、[MSBuild タスク](../msbuild/msbuild-task.md)の複数のインスタンスを作成する必要があります。一方は x86 アーキテクチャに基づいたリリース構成を使用してプロジェクトをビルドし、もう一方は ia64 アーキテクチャに基づいたリリース構成を使用してプロジェクトをビルドします。 プロジェクト ファイルは次のようになります。  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ProjectToBuild Include="a1.sln...">
+            <Properties>Configuration=Debug</Properties>
+        </ProjectToBuild>
+        <ProjectToBuild Include="a2.sln">
+            <Properties>Configuration=Release</Properties>
+        </ProjectToBuild>
+    </ItemGroup>
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"/>
+    </Target>
+</Project>
+```
 
-### <a name="aproj"></a>a.proj  
+ \- または
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="Build">  
-        <MSBuild Projects="a1.sln..." Properties="Configuration=Release;   
-          Architecture=x86"/>  
-        <MSBuild Projects="a2.sln" Properties="Configuration=Release;   
-          Architecture=ia64"/>  
-    </Target>  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ProjectToBuild Include="a1.sln..."/>
+        <ProjectToBuild Include="a2.sln">
+            <Properties>Configuration=Release</Properties>
+        </ProjectToBuild>
+    </ItemGroup>
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"
+          Properties="Configuration=Debug"/>
+    </Target>
+</Project>
+```
 
- AdditionalProperties メタデータを使用すると、次のコードを使用することによって、単一の [MSBuild タスク](../msbuild/msbuild-task.md)を使用して簡素化できます。  
+## <a name="additionalproperties-metadata"></a>AdditionalProperties メタデータ
+ [MSBuild タスク](../msbuild/msbuild-task.md)を使用して 2 つのソリューション ファイルをビルドするシナリオを考えます。いずれのソリューション ファイルでもリリース構成を使用しますが、一方は x86 アーキテクチャ、もう一方は ia64 アーキテクチャを使用します。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 では、[MSBuild タスク](../msbuild/msbuild-task.md)の複数のインスタンスを作成する必要があります。一方は x86 アーキテクチャに基づいたリリース構成を使用してプロジェクトをビルドし、もう一方は ia64 アーキテクチャに基づいたリリース構成を使用してプロジェクトをビルドします。 プロジェクト ファイルは次のようになります。
 
-### <a name="aproj"></a>a.proj  
+### <a name="aproj"></a>a.proj
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln...">  
-            <AdditionalProperties>Architecture=x86  
-              </AdditionalProperties>  
-        </ProjectToBuild>  
-        <ProjectToBuild Include="a2.sln">  
-            <AdditionalProperties>Architecture=ia64  
-              </AdditionalProperties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"   
-          Properties="Configuration=Release"/>  
-    </Target>  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="Build">
+        <MSBuild Projects="a1.sln..." Properties="Configuration=Release;
+          Architecture=x86"/>
+        <MSBuild Projects="a2.sln" Properties="Configuration=Release;
+          Architecture=ia64"/>
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>例  
- 次の例では、`MSBuild` タスクを使用して、`ProjectReferences` 項目コレクションで指定されたプロジェクトをビルドしています。 ターゲットの出力結果は、`AssembliesBuiltByChildProjects` 項目コレクションに格納されます。  
+ AdditionalProperties メタデータを使用すると、次のコードを使用することによって、単一の [MSBuild タスク](../msbuild/msbuild-task.md)を使用して簡素化できます。
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+### <a name="aproj"></a>a.proj
 
-    <ItemGroup>  
-        <ProjectReferences Include="*.*proj" />  
-    </ItemGroup>  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ProjectToBuild Include="a1.sln...">
+            <AdditionalProperties>Architecture=x86
+              </AdditionalProperties>
+        </ProjectToBuild>
+        <ProjectToBuild Include="a2.sln">
+            <AdditionalProperties>Architecture=ia64
+              </AdditionalProperties>
+        </ProjectToBuild>
+    </ItemGroup>
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"
+          Properties="Configuration=Release"/>
+    </Target>
+</Project>
+```
 
-    <Target Name="BuildOtherProjects">  
-        <MSBuild  
-            Projects="@(ProjectReferences)"  
-            Targets="Build">  
-            <Output  
-                TaskParameter="TargetOutputs"  
-                ItemName="AssembliesBuiltByChildProjects" />  
-        </MSBuild>  
-    </Target>  
+## <a name="example"></a>例
+ 次の例では、`MSBuild` タスクを使用して、`ProjectReferences` 項目コレクションで指定されたプロジェクトをビルドしています。 ターゲットの出力結果は、`AssembliesBuiltByChildProjects` 項目コレクションに格納されます。
 
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-## <a name="see-also"></a>関連項目  
- [タスク](../msbuild/msbuild-tasks.md)   
- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+    <ItemGroup>
+        <ProjectReferences Include="*.*proj" />
+    </ItemGroup>
+
+    <Target Name="BuildOtherProjects">
+        <MSBuild
+            Projects="@(ProjectReferences)"
+            Targets="Build">
+            <Output
+                TaskParameter="TargetOutputs"
+                ItemName="AssembliesBuiltByChildProjects" />
+        </MSBuild>
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>関連項目
+- [タスク](../msbuild/msbuild-tasks.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

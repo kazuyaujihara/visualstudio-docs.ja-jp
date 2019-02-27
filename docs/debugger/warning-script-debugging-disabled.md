@@ -1,5 +1,5 @@
-﻿---
-title: 警告:スクリプト デバッグが無効 |Microsoft Docs
+---
+title: '警告: スクリプト デバッグが無効 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,33 +15,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27db28656715d3fbce1515e0152a200b6933f7fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2543ad00b2065f7659a89e165c2d4df990403667
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951639"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687043"
 ---
-# <a name="warning-script-debugging-disabled"></a>警告:スクリプト デバッグが無効
-Internet Explorer では、スクリプトのデバッグは現在無効になっています。  
-  
- この警告は、Internet Explorer でスクリプトのデバッグを有効にしないままスクリプトをデバッグした場合に発生します。 セキュリティ上の理由から、Internet Explorer ではスクリプトのデバッグは既定で無効になっています。  
-  
-### <a name="to-enable-script-debugging-in-internet-explorer"></a>Internet Explorer でスクリプトのデバッグを有効にするには  
-  
-1.  Internet Explorer で、**[ツール]** メニューの **[インターネット オプション]** を選択します。  
-  
-2.  **[インターネット オプション]** ダイアログ ボックスで、 **[詳細設定]** タブをクリックします。  
-  
-3.  **[詳細設定]** タブの **[設定]** で **[参照]** カテゴリを表示します。  
-  
-4.  **[スクリプトのデバッグを使用しない (Internet Explorer)]** チェック ボックスをオフにします。  
-  
-5.  **[OK]** をクリックします。  
-  
-6.  Internet Explorer を終了して再起動します。  
-  
-     新しい設定が反映されます。  
-  
-## <a name="see-also"></a>関連項目
- [方法: ](../debugger/how-to-attach-to-script.md)スクリプトにアタッチする
+# <a name="warning-script-debugging-disabled"></a>警告 : スクリプト デバッグが無効
+Internet Explorer では、スクリプトのデバッグは現在無効になっています。
+
+ この警告は、Internet Explorer でスクリプトのデバッグを有効にしないままスクリプトをデバッグした場合に発生します。 セキュリティ上の理由から、Internet Explorer ではスクリプトのデバッグは既定で無効になっています。
+
+### <a name="to-enable-script-debugging-in-internet-explorer"></a>Internet Explorer でスクリプトのデバッグを有効にするには
+
+1.  Internet Explorer で、**[ツール]** メニューの **[インターネット オプション]** を選択します。
+
+2.  **[インターネット オプション]** ダイアログ ボックスで、 **[詳細設定]** タブをクリックします。
+
+3.  **[詳細設定]** タブの **[設定]** で **[参照]** カテゴリを表示します。
+
+4.  **[スクリプトのデバッグを使用しない (Internet Explorer)]** チェック ボックスをオフにします。
+
+5.  **[OK]** をクリックします。
+
+6.  Internet Explorer を終了して再起動します。
+
+     新しい設定が反映されます。
+
+## <a name="see-also"></a>参照
+- [方法 : スクリプトにアタッチする](../debugger/how-to-attach-to-script.md)

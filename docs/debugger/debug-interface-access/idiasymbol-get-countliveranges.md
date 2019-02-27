@@ -1,4 +1,4 @@
-﻿---
+---
 title: IDiaSymbol::get_countLiveRanges |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,37 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be097c9d57f67c0e4fcf211041b3862e32952d18
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b8cd86edee72f3d25763fd3d19dd9c789e152ed6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931610"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615313"
 ---
 # <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
-ローカル シンボルに関連付けられている有効なアドレス範囲の数を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_countLiveRanges (   
-   DWORD* count  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `count`  
- [out]アドレス範囲の数を返します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
-## <a name="requirements"></a>要件  
- ヘッダー:dia2.h  
-  
- ライブラリ: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
+ローカル シンボルに関連付けられている有効なアドレス範囲の数を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_countLiveRanges ( 
+   DWORD* count
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `count`
+
+[out]アドレス範囲の数を返します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
+## <a name="requirements"></a>要件
+ ヘッダー: Dia2.h
+
+ ライブラリ: diaguids.lib
+
+ DLL: msdia100.dll
+
 ## <a name="see-also"></a>関連項目
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

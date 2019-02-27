@@ -4,6 +4,7 @@ titleSuffix: ''
 description: ワークロード ID とコンポーネント ID を使用して、コマンドラインを使用して Visual Studio をインストールするか、VSIX マニフェストで依存関係として指定します。
 keywords: ''
 author: TerryGLee
+ms.prod: visual-studio-dev15
 ms.author: tglee
 manager: jillfra
 ms.date: 11/13/2018
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e3c83283ac9cf2cb592b554edd315c672feecf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+monikerRange: vs-2017
+ms.openlocfilehash: f4f16344295b3c51833cb7ae71566d0936d183a4
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942714"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842933"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Visual Studio Enterprise 2017 のコンポーネント ディレクトリ
 

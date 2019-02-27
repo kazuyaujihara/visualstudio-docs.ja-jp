@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bcf2c97e26e61b72a1279a11e8c95474099c3d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918565"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716520"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して C++ でデバッグする
 
 Visual Studio デバッガーでは、アプリのデバッグに役立つ多くの強力な機能が提供されます。 このトピックでは、基本的な機能のいくつかを簡単に紹介します。
 
-## <a name="create-a-new-project"></a>新しいプロジェクトを作成する 
+## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 
 1. Visual Studio で、**[ファイル]、[新しいプロジェクト]** の順に選択します。
 
@@ -47,7 +47,7 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
     このコードで置換します (`#include "stdafx.h"` は削除しないでください)。
 
     ```c++
-    #include <list>  
+    #include <list>
     #include <iostream>
 
     using namespace std;
@@ -90,7 +90,7 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
     > [!TIP]
     > ループまたは再帰処理の中にブレークポイントがある場合、または頻繁にステップ実行するブレークポイントが数多くある場合、[条件付きブレークポイント](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)を使用して、特定の条件が満たされる場合にのみコードが中断されるようにしてください。 条件付きブレークポイントでは時間が節約され、再現が難しい問題をより簡単にデバッグすることもできます。
 
-    C++ でメモリ関連エラーのデバッグを試みる場合、ブレークポイントを使用して、アドレス値 (NULL を検索) と参照カウントを検査することもできます。 
+    C++ でメモリ関連エラーのデバッグを試みる場合、ブレークポイントを使用して、アドレス値 (NULL を検索) と参照カウントを検査することもできます。
 
 ## <a name="navigate-code"></a>コード間の移動
 
@@ -110,7 +110,7 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 
     ![データヒントを表示する](../debugger/media/dbg-qs-data-tip.png "データヒントを表示する")
 
-    データヒントでは、`c1` 変数の現在の値が示され、そのプロパティを検査することができます。 デバッグ中に、予期しない値が表示される場合は、先行するコード行または呼び出しているコード行にバグがある可能性があります。 
+    データヒントでは、`c1` 変数の現在の値が示され、そのプロパティを検査することができます。 デバッグ中に、予期しない値が表示される場合は、先行するコード行または呼び出しているコード行にバグがある可能性があります。
 
 2. データヒントを展開して、`c1` オブジェクトの現在のプロパティ値を確認します。
 

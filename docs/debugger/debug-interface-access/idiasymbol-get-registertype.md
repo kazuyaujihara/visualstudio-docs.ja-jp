@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7dfe85b4e4903aa00521c8188a48a026b949565
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f714e5637776d6a0606246d339d3f9d2ccd9f19a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997534"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628079"
 ---
 # <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registerType
-Register 型を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_registerType(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]ポインター、 `DWORD` register 型を保持しています。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
-  
+Register 型を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_registerType(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]ポインター、 `DWORD` register 型を保持しています。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+
 ## <a name="see-also"></a>関連項目
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

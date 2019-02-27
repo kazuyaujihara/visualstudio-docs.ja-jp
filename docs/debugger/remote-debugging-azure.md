@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 28f97dd46c38b356d45c4c0ded08f1c2790ab229
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981273"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710826"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Visual Studio 2017 での Azure での IIS で ASP.NET Core のリモート デバッグ
 
@@ -47,7 +47,7 @@ Azure 上のリモート デバッグに推奨される方法は、シナリオ�
 
 プロキシを介して接続されている 2 台のコンピューター間でのデバッグはサポートされていません。 国の間での高待機時間またはダイヤルアップ、インターネットなどの低帯域幅接続経由またはインターネット経由でのデバッグは使用しないでと失敗は、ある非常に遅く。 要件の完全な一覧を参照してください。[要件](../debugger/remote-debugging.md#requirements_msvsmon)します。
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Visual Studio 2017 のコンピューターで ASP.NET Core アプリケーションを作成します。 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Visual Studio 2017 のコンピューターで ASP.NET Core アプリケーションを作成します。
 
 1. 新しい ASP.NET Core アプリケーションを作成します。 (選択**ファイル > 新規 > プロジェクト**を選択し、 **Visual c# > Web > ASP.NET Core Web アプリケーション**)。
 
@@ -61,7 +61,7 @@ Azure 上のリモート デバッグに推奨される方法は、シナリオ�
 
 ## <a name="remote_debug_azure_app_service"></a> Azure App Service で ASP.NET Core のリモート デバッグ
 
-Visual Studio から簡単に発行し、IIS の完全にプロビジョニングされたインスタンスにアプリをデバッグできます。 ただし、IIS の構成が事前設定、カスタマイズすることはできません。 詳細な手順についてを参照してください。 [Visual Studio を使用して Azure に ASP.NET Core web アプリのデプロイ](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)します。 (IIS をカスタマイズする機能が必要な場合のデバッグで試す、 [Azure VM](#remote_debug_azure_vm))。 
+Visual Studio から簡単に発行し、IIS の完全にプロビジョニングされたインスタンスにアプリをデバッグできます。 ただし、IIS の構成が事前設定、カスタマイズすることはできません。 詳細な手順についてを参照してください。 [Visual Studio を使用して Azure に ASP.NET Core web アプリのデプロイ](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)します。 (IIS をカスタマイズする機能が必要な場合のデバッグで試す、 [Azure VM](#remote_debug_azure_vm))。
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>サーバー エクスプ ローラーを使用してリモート デバッグとアプリを展開するには
 
@@ -184,7 +184,7 @@ Web Deploy を使用していない場合は、発行およびファイル シ�
 このチュートリアルでは、Visual Studio 2017 を使用します。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ### <a name="BKMK_setup"></a> Windows Server のリモート デバッガーを設定します。
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -198,7 +198,7 @@ Web Deploy を使用していない場合は、発行およびファイル シ�
 2. Visual Studio で、次のようにクリックします。**デバッグ > プロセスにアタッチ**(Ctrl + Alt + P)。
 
     > [!TIP]
-    > Visual Studio 2017 では、することができますを使用して、以前にアタッチした同じプロセスにアタッチして再**デバッグ > プロセスに再アタッチしています.** Shift + Alt + P 
+    > Visual Studio 2017 では、することができますを使用して、以前にアタッチした同じプロセスにアタッチして再**デバッグ > プロセスに再アタッチしています.** Shift + Alt + P
 
 3. [修飾子] フィールドを「**\<リモート コンピューター名>:4022**」に設定します。
 4. **[最新の情報に更新]** をクリックします。
@@ -211,7 +211,7 @@ Web Deploy を使用していない場合は、発行およびファイル シ�
 5. **[すべてのユーザーからのプロセスを表示する]** をオンにします。
 
 6. すばやく検索するプロセス名の最初の文字を入力*dotnet.exe* (for ASP.NET Core)。
-   
+
    ASP.NET Core アプリでは、前のプロセス名でした*dnx.exe*します。
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -219,7 +219,7 @@ Web Deploy を使用していない場合は、発行およびファイル シ�
 7. **[アタッチ]** をクリックします。
 
 8. リモート コンピューターの Web サイトを開きます。 ブラウザーで、**http://\<リモート コンピューター名>** に移動します。
-    
+
     ASP.NET の Web ページが表示されるはずです。
 9. 実行中の ASP.NET アプリケーションでリンクをクリックして、**について**ページ。
 
@@ -229,7 +229,7 @@ Web Deploy を使用していない場合は、発行およびファイル シ�
 
 ほとんどの設定では、ASP.NET とリモート デバッガーのインストールに必要なポートが開かれます。 ただし、デプロイに関する問題のトラブルシューティングを行うと、アプリがファイアウォールの背後にホストされている場合、は、正しいポートが開いていることを確認する必要があります。
 
-Azure VM 上でポートを開く必要があります、[ネットワーク セキュリティ グループ](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic)します。 
+Azure VM 上でポートを開く必要があります、[ネットワーク セキュリティ グループ](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic)します。
 
 必要なポート:
 

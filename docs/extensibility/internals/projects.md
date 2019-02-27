@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ae786d3fa65bdf4ce591be1c8ec677a5ac757e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615534"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840905"
 ---
 # <a name="projects"></a>プロジェクト
 Visual Studio で、プロジェクトは、開発者は、ソース コード ファイルと含まれるその他のリソースを分類に使用するコンテナー**ソリューション エクスプ ローラー**します。 通常、プロジェクトは、ソース コード ファイルおよびビットマップ ファイルなどのリソースへの参照を格納するファイル (たとえば、c# プロジェクトの .csproj ファイル) です。 プロジェクトの整理、ビルド、デバッグ、およびソース コードを配置するように、Web サービスとデータベース、およびその他のリソースへの参照します。 Vspackage は、次の 3 つの主な方法で、Visual Studio プロジェクト システムを拡張できます。*プロジェクトの種類*、*プロジェクトのサブタイプ*、および*カスタム ツール*します。
@@ -41,7 +41,7 @@ Visual Studio で、プロジェクトは、開発者は、ソース コード �
 
  新しいプロジェクトを作成するときに実際の処理について説明します。
 
-- [VSSDK のサンプル](http://aka.ms/vs2015sdksamples)プロジェクトとソリューションを処理する VSSDK のサンプルが含まれています。
+- [VSSDK のサンプル](https://aka.ms/vs2015sdksamples)プロジェクトとソリューションを処理する VSSDK のサンプルが含まれています。
 
 ## <a name="related-sections"></a>関連項目
 - [Visual Studio SDK の内部](../../extensibility/internals/inside-the-visual-studio-sdk.md)

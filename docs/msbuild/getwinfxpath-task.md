@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd751f36ce3a5f74bea78fd0d57920a5145c0fb
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c95e5ad882d7021b597d7ba0ad8c38177f4a5136
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853678"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646930"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath タスク
 <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> タスクは、現在の [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] ランタイムのディレクトリを返します。
@@ -36,7 +36,7 @@ ms.locfileid: "55853678"
 | `WinFXNativePath` | 必須の **String** 型のパラメーターです。<br /><br /> ネイティブ [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] ランタイムへのパスを指定します。 |
 | `WinFXWowPath` | 必須の **String** 型のパラメーターです。<br /><br /> 64 ビット システムの 32 ビット **Windows on Windows** モジュール内の [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] アセンブリへのパスを指定します。 |
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
  <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> タスクが 64 ビット プロセッサで実行されている場合、**WinFXPath** パラメーターは **WinFXWowPath** パラメーターに保存されているパスに設定されます。それ以外の場合、**WinFXPath** パラメーターは **WinFXNativePath** パラメーターに保存されているパスに設定されます。
 
 ## <a name="example"></a>例
@@ -57,8 +57,8 @@ ms.locfileid: "55853678"
 ```
 
 ## <a name="see-also"></a>関連項目
-[WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)  
-[タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild リファレンス](../msbuild/msbuild-reference.md)  
-[タスク リファレンス](../msbuild/msbuild-task-reference.md)  
-[WPF アプリケーション (WPF) のビルド](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)
+- [タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [WPF アプリケーション (WPF) のビルド](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

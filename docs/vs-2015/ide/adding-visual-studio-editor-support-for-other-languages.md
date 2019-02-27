@@ -1,4 +1,4 @@
----
+﻿---
 title: その他の言語のエディターのサポートの追加 |Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual

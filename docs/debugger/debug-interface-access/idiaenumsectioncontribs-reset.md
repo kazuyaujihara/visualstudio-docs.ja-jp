@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiaenumsectioncontribs::reset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74cc4ff77ae359d5804a02055d96f84467342b84
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1fb0a79cf2ef300df7e0cf4a745d8d22a30a80fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939076"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644421"
 ---
 # <a name="idiaenumsectioncontribsreset"></a>IDiaEnumSectionContribs::Reset
-先頭に、列挙体シーケンスをリセットします。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT Reset();  
-```  
-  
-## <a name="return-value"></a>戻り値  
- `S_OK` を返します。  
-  
+先頭に、列挙体シーケンスをリセットします。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT Reset();
+```
+
+## <a name="return-value"></a>戻り値
+ `S_OK` を返します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

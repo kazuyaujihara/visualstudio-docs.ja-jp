@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d9563d45d9a09e4402f1586a18fe9e5d7d9775c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027238"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611075"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>変更ログ (Visual Studio Tools for Unity、Mac)
 Visual Studio Tools for Unity の変更ログです。
@@ -34,11 +34,11 @@ Visual Studio Tools for Unity の変更ログです。
 -   **デバッガー:**
 
      -   Unity のデバッガー エンジンとの通信に使用されるライブラリでのデッドロックを修正しました。このバグによって、特に [Unity にアタッチ] を選択した場合やゲームを再起動したときに、Visual Studio または Unity がフリーズしていました。
-     
+
 -   **統合:**
 
      -   別のデフォルト エディターが選択されたときの Unity プラグイン アクティベーションを修正しました。
-     
+
      -   Unity ファイルのテンプレート作成を修正しました。
 
 ## <a name="1602"></a>1.6.0.2
@@ -49,7 +49,7 @@ Visual Studio Tools for Unity の変更ログです。
 -   **統合:**
 
      -   Unity により修正された Unity パフォーマンス バグの回避策がロールバックされました。
-     
+
 ## <a name="1601"></a>1.6.0.1
  リリース日: 2018 年 7 月 10 日
 
@@ -58,7 +58,7 @@ Visual Studio Tools for Unity の変更ログです。
 -   **統合:**
 
      -   シェーダー コードの配色のサポートを修正しました。
-     
+
 ## <a name="1600"></a>1.6.0.0
  リリース日: 2018 年 6 月 26 日
 
@@ -71,23 +71,23 @@ Visual Studio Tools for Unity の変更ログです。
 -   **プロジェクトの生成:**
 
      -   Unity のパフォーマンスのバグの一時的な回避策: プロジェクト生成時の MonoIslands のキャッシュ。
-     
+
      -   今後、新しい Unity ランタイムを使用するときにはポータブル pdb を mdb に変換しないでください。
-     
+
 ## <a name="1502"></a>1.5.0.2
  リリース日: 2018 年 4 月 18 日
- 
+
 ### <a name="new-features"></a>新機能
 
 -   **統合:**
 
     -   基本的なシェーダー コードの補完機能のサポートが追加されました。
-    
+
     -   シェーダー ファイル内でのコメント切り替えのサポートが追加されました。
 
 ## <a name="1501"></a>1.5.0.1
  リリース日: 2018 年 3 月 28 日
- 
+
 ### <a name="new-features"></a>新機能
 
 -   **統合:**
@@ -96,7 +96,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1500"></a>1.5.0.0
  リリース日: 2018 年 3 月 21 日
- 
+
 ### <a name="new-features"></a>新機能
 
 -   **統合:**
@@ -105,7 +105,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1403"></a>1.4.0.3
  リリース日: 2018 年 3 月 5 日
- 
+
 ### <a name="new-features"></a>新機能
 
 -   **プロジェクトの生成:**
@@ -118,7 +118,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1402"></a>1.4.0.2
  リリース日: 2018 年 1 月 24 日
- 
+
 ### <a name="bug-fixes"></a>バグ修正
 
 -   **プロジェクトの生成:**
@@ -133,7 +133,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1401"></a>1.4.0.1
  リリース日: 2018 年 1 月 23 日
- 
+
 ### <a name="bug-fixes"></a>バグ修正
 
 -   **統合:**
@@ -142,7 +142,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1400"></a>1.4.0.0
  リリース日: 2017 年 12 月 13 日
- 
+
 ### <a name="new-features"></a>新機能
 
 -   **プロジェクトの生成:**
@@ -157,7 +157,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1301"></a>1.3.0.1
  リリース日: 2017 年 12 月 12 日
- 
+
 ### <a name="bug-fixes"></a>バグ修正
 
 -   **統合:**
@@ -170,7 +170,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1300"></a>1.3.0.0
  リリース日: 2017 年 11 月 20 日
- 
+
 ### <a name="new-features"></a>新機能
 
 -   **ウィザード:**
@@ -181,7 +181,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1200"></a>1.2.0.0
  リリース日: 2017 年 10 月 23 日
- 
+
 ### <a name="new-features"></a>新機能
 
 -   **デバッガー:**
@@ -198,7 +198,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1103"></a>1.1.0.3
  リリース日: 2017 年 10 月 23 日
- 
+
 ### <a name="new-features"></a>新機能
 
 -   **プロジェクトの生成:**
@@ -207,7 +207,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1102"></a>1.1.0.2
  リリース日: 2017 年 8 月 8 日
- 
+
 ### <a name="new-features"></a>新機能
 
 -   **デバッガー:**
@@ -220,7 +220,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1101"></a>1.1.0.1
  リリース日: 2017 年 7 月 20 日
- 
+
 ### <a name="new-features"></a>新機能
 
 -   **統合:**
@@ -229,7 +229,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1100"></a>1.1.0.0
  リリース日: 2017 年 7 月 12 日
- 
+
 ### <a name="new-features"></a>新機能
 
 -   **統合:**
@@ -240,9 +240,9 @@ Visual Studio Tools for Unity の変更ログです。
 
     -   mcs.rsp ファイルを使用したアセンブリ名の参照が修正されました。
 
-    -   assembly.json コンパイル単位のサポートが追加されました。    
+    -   assembly.json コンパイル単位のサポートが追加されました。
 
-    -   API レベルの定義が修正されました。    
+    -   API レベルの定義が修正されました。
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -252,7 +252,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ## <a name="1001"></a>1.0.0.1
  リリース日: 2017 年 5 月 4 日
- 
+
 ### <a name="bug-fixes"></a>バグ修正
 
 -   **統合:**

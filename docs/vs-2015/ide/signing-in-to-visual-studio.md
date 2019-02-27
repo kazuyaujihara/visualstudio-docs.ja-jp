@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8504ebcbcea9906148f9c3a671f185375d269d83
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a688ff56f770f2446384ab34cf7da03d69827de4
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766395"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842295"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio へのサインイン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Visual Studio の開発環境をカスタマイズし、最適化するには、
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Visual Studio にサインインする必要がある理由
  Visual Studio にサインインすると、次の利点が得られます。
 
--   無料のソフトウェア、トレーニング、サポートなど、Visual Studio Dev Essentials プログラムにおける**さまざまな特典にアクセスできます** 。 詳細については、「 [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) 」をご覧ください。
+-   無料のソフトウェア、トレーニング、サポートなど、Visual Studio Dev Essentials プログラムにおける**さまざまな特典にアクセスできます** 。 詳細については、「 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 」をご覧ください。
 
 -   **Visual Studio の設定を同期する** – どのデバイス上の Visual Studio にサインインしても、ユーザーがカスタマイズした設定 (キー バインド、ウィンドウのレイアウト、配色テーマなど) がすぐに適用されます。 「[Visual Studio での同期された設定](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)」をご覧ください。
 

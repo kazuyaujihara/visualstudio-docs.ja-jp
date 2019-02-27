@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e976fa3172b4f7d3967657b0ac8252d2db93dfb2
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 4316bfa423392a98946fc0bb86af2f2e9836aba2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227184"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626064"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
 指定したコンパイル単位で指定された相対仮想アドレス (RVA) が含まれている行を取得します。
@@ -33,13 +33,16 @@ HRESULT findLinesByRVA ( 
 ```
 
 #### <a name="parameters"></a>パラメーター
-`rva`  
+`rva`
+
 [in]として、RVA アドレスを指定します。
 
-`length`  
+`length`
+
 [in]このクエリをカバーするアドレス範囲のバイト数を指定します。
 
-`ppResult`  
+`ppResult`
+
 [out]返します、 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)番号ものを対象指定されたアドレス範囲のすべての行のリストを含むオブジェクト。
 
 ## <a name="return-value"></a>戻り値
@@ -65,5 +68,5 @@ IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSessio
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: MSBuild プロジェクトの共通項目 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -32,7 +32,7 @@ ms.locfileid: "54796878"
 ## <a name="common-items"></a>共通の項目  
  次に、プロジェクトの共通項目の一覧を示します。  
   
-### <a name="reference"></a>参照  
+### <a name="reference"></a>関連項目  
  プロジェクト内のアセンブリ (マネージド) 参照を表します。  
   
 |項目名|説明|  

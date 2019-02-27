@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 02/12/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる利点について
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3fb7fd86a5a875c16072792d9d82737b5f19160
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282223"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56839709"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio サブスクリプションに含まれる利点
 
@@ -45,4 +43,3 @@ Visual Studio サブスクリプションでは、Windows、iOS、Android、Linu
 > サブスクリプションには、ソフトウェアをダウンロードするアクセス権も含まれている場合があります。  サブスクリプションに含まれるダウンロードなど、ダウンロードに関する詳細は、[https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)をご覧ください。
 
 サブスクリプションに含まれる利点の詳細については、[Visual Studio の価格](https://visualstudio.microsoft.com/vs/pricing/)に関するページをご覧ください。  特定の利点の詳細 (それら提供するサブスクリプションなど) については、「**サブスクリプション会員の特典を使用する**」を参照してください。
-

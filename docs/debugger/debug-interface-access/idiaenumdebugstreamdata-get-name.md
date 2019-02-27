@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiaenumdebugstreamdata::get_name |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99c5743829dcb25580bb35317413d4fbe427dead
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6d92b7873395c51491b9164f27d62eec8020a0f8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031306"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613545"
 ---
 # <a name="idiaenumdebugstreamdatagetname"></a>IDiaEnumDebugStreamData::get_name
-デバッグのデータ ストリームの名前を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_Name (   
-   BSTR * pRetVal  
-)  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- pRetVal  
- [out]デバッグのデータ ストリームの名前を返します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
+デバッグのデータ ストリームの名前を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_Name ( 
+   BSTR * pRetVal
+)
+```
+
+#### <a name="parameters"></a>パラメーター
+ pRetVal
+
+[out]デバッグのデータ ストリームの名前を返します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

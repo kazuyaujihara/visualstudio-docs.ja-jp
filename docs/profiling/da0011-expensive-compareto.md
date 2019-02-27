@@ -13,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83708fa0e58381f50d1637e5f03255fc12376a7a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee5839e91e2205a98a38ed27823a26a4a127e1ac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942439"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621618"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011:CompareTo の負荷が高くなっています
 
-|||  
-|-|-|  
-|規則 ID|DA0011|  
-|カテゴリ|.NET Framework の使用|  
-|プロファイル方法|サンプリング<br /><br /> .NET メモリ|  
-|メッセージ|CompareTo 関数の負荷を抑える必要があります。メモリを割り当てることはできません。 可能な場合は、CompareTo 関数の複雑さを軽減してください。|  
-|規則の種類|警告|  
+|||
+|-|-|
+|規則 ID|DA0011|
+|カテゴリ|.NET Framework の使用|
+|プロファイル方法|サンプリング<br /><br /> .NET メモリ|
+|メッセージ|CompareTo 関数の負荷を抑える必要があります。メモリを割り当てることはできません。 可能な場合は、CompareTo 関数の複雑さを軽減してください。|
+|規則の種類|警告|
 
-## <a name="cause"></a>原因  
- 型の CompareTo メソッドが高コストであるか、またはメモリを割り当てています。  
+## <a name="cause"></a>原因
+ 型の CompareTo メソッドが高コストであるか、またはメモリを割り当てています。
 
-## <a name="rule-description"></a>規則の説明  
- CompareTo メソッドは効率的にする必要があります。メモリを割り当てることはできません。  
+## <a name="rule-description"></a>規則の説明
+ CompareTo メソッドは効率的にする必要があります。メモリを割り当てることはできません。
 
-## <a name="how-to-fix-violations"></a>違反の修正方法  
+## <a name="how-to-fix-violations"></a>違反の修正方法
  CompareTo メソッドの複雑さを軽減してください。

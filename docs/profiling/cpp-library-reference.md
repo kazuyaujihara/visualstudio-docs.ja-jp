@@ -10,21 +10,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66264af71d93bb83c217360668a14c5cae2bf812
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b71679e460b904138cb0bf922da9d157f0a91c9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975947"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634345"
 ---
 # <a name="c-library-reference"></a>C++ ライブラリ リファレンス
-このセクションでは、コンカレンシー ビジュアライザー SDK の参照情報について説明します。  
-  
+
+このセクションでは、コンカレンシー ビジュアライザー SDK の参照情報について説明します。
+
 > [!NOTE]
->  C++ 言語の標準では、ライブラリなどの実装用として、アンダースコア (`_`) 文字で始まる識別子の使用が予約されています。 コード内でアンダースコアで始まる名前を使用しないでください。 この規則に従った名前を持つコード要素の動作は永続的に保証されたものではなく、今後のリリースで変更されることがあります。 そのため、このようなコード要素はこのドキュメントから除外されています。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [コンカレンシー名前空間 (コンカレンシー ビジュアライザー)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
-  
-## <a name="see-also"></a>関連項目  
- [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)
+> C++ 言語の標準では、ライブラリなどの実装用として、アンダースコア (`_`) 文字で始まる識別子の使用が予約されています。 コード内でアンダースコアで始まる名前を使用しないでください。 この規則に従った名前を持つコード要素の動作は永続的に保証されたものではなく、今後のリリースで変更されることがあります。 そのため、このようなコード要素はこのドキュメントから除外されています。
+
+## <a name="in-this-section"></a>このセクションの内容
+
+[コンカレンシー名前空間 (コンカレンシー ビジュアライザー)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+
+## <a name="see-also"></a>関連項目
+
+- [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)

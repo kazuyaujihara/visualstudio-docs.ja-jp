@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a43e42f68b93c358ed5808a6cffc9570fcbef9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5086a59936a3fe71f9888083772ee09ab3a42d48
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918110"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700914"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio のデバッガーでの例外を管理します。
 
@@ -222,8 +222,8 @@ public class GenericException<T> : Exception
 
 ## <a name="see-also"></a>関連項目
 
-[例外後の実行の継続](../debugger/continuing-execution-after-an-exception.md)<br/>
-[方法: 例外の後にシステム コードを調べる](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[方法: ネイティブ ランタイム チェックを使用する](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[C ランタイム ライブラリなしのランタイム チェックを使用する](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
+- [例外後の実行の継続](../debugger/continuing-execution-after-an-exception.md)<br/>
+- [方法 : 例外の後にシステム コードを調べる](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [方法 : ネイティブ ランタイム チェックを使用する](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [C ランタイム ライブラリなしのランタイム チェックを使用する](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+- [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

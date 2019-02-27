@@ -8,32 +8,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 045f84542334b16d7e3d57fb48099e61f144cadd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deeb74e8e8763feb62b0cc21fcfbfbf3c6b220ca
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992335"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596699"
 ---
 # <a name="shutdown"></a>シャットダウン
-**Shutdown** オプションは、現在プロファイル中のプロセスが終了するかデタッチされるまで待機して、プロファイラーをオフにし、プロファイル データ ファイルを閉じます。 **Shutdown** オプションは、プロファイル実行の最後のコマンドである必要があります。  
-  
- タイムアウト パラメーターが指定されていない場合、**Shutdown** オプションは無期限に待機します。 タイムアウト パラメーターが指定されている場合、指定された秒数の経過後にオプションから制御が戻りますが、プロファイラーはオフにされず、データ ファイルも閉じられません。  
-  
- コマンド ラインで指定するオプションは **Shutdown** オプションのみにする必要があります。  
-  
-## <a name="syntax"></a>構文  
-  
-```cmd  
-VSPerfCmd.exe /Shutdown[:Timeout]  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `Timeout`  
- -   (省略可能) 指定した場合は、指定した秒数の経過後にオプションから制御が戻りますが、プロファイラーはオフにされず、プロファイル データ ファイルも閉じられません。  
-  
-## <a name="see-also"></a>関連項目  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)
+**Shutdown** オプションは、現在プロファイル中のプロセスが終了するかデタッチされるまで待機して、プロファイラーをオフにし、プロファイル データ ファイルを閉じます。 **Shutdown** オプションは、プロファイル実行の最後のコマンドである必要があります。
+
+ タイムアウト パラメーターが指定されていない場合、**Shutdown** オプションは無期限に待機します。 タイムアウト パラメーターが指定されている場合、指定された秒数の経過後にオプションから制御が戻りますが、プロファイラーはオフにされず、データ ファイルも閉じられません。
+
+ コマンド ラインで指定するオプションは **Shutdown** オプションのみにする必要があります。
+
+## <a name="syntax"></a>構文
+
+```cmd
+VSPerfCmd.exe /Shutdown[:Timeout]
+```
+
+#### <a name="parameters"></a>パラメーター
+ `Timeout`
+ -   (省略可能) 指定した場合は、指定した秒数の経過後にオプションから制御が戻りますが、プロファイラーはオフにされず、プロファイル データ ファイルも閉じられません。
+
+## <a name="see-also"></a>関連項目
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)

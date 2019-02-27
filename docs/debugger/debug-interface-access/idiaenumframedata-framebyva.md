@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiaenumframedata::framebyva |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c6f6252c23069ffce01b9b790a44b24efbd80a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 62999d8b8dc0313e9ca5086dc4737d7a41db1c87
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949377"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623412"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
-仮想アドレス (VA) でフレームを返します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT frameByVA(   
-   ULONGLONG       virtualAddress,  
-   IDiaFrameData** frame  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- virtualAddress  
- [in]目的のフレームの VA します。  
-  
- フレーム  
- [out]返します、 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)を指定したアドレスを含むフレームを表すオブジェクト。  
-  
-## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`フレーム データに指定されたアドレスが一致しない場合。 それ以外の場合はエラー コードを返します。  
-  
-## <a name="see-also"></a>関連項目
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+仮想アドレス (VA) でフレームを返します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT frameByVA( 
+   ULONGLONG       virtualAddress,
+   IDiaFrameData** frame
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ virtualAddress
+
+[in]目的のフレームの VA します。
+
+ フレーム
+
+[out]返します、 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)を指定したアドレスを含むフレームを表すオブジェクト。
+
+## <a name="return-value"></a>戻り値
+ 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`フレーム データに指定されたアドレスが一致しない場合。 それ以外の場合はエラー コードを返します。
+
+## <a name="see-also"></a>参照
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

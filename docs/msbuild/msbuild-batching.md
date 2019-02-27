@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cee0c3c503be815feacd5d6077dd9e560b2c4074
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22aa04bb41363eebc20257236515634f5e7e14ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928401"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603470"
 ---
 # <a name="msbuild-batching"></a>MSBuild バッチ
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] には、項目メタデータに基づき、項目一覧をさまざまなカテゴリまたはバッチに分割し、各バッチで一度に 1 つのターゲットまたはタスクを実行する機能があります。
@@ -100,7 +100,7 @@ ms.locfileid: "55928401"
 プロパティ関数の詳細については、「[プロパティ関数](../msbuild/property-functions.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-[ItemMetadata 要素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[MSBuild の概念](../msbuild/msbuild-concepts.md)  
-[MSBuild リファレンス](../msbuild/msbuild-reference.md)  
-[詳細な概念](../msbuild/msbuild-advanced-concepts.md)
+- [ItemMetadata 要素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [MSBuild の概念](../msbuild/msbuild-concepts.md)
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md)
+- [詳細な概念](../msbuild/msbuild-advanced-concepts.md)

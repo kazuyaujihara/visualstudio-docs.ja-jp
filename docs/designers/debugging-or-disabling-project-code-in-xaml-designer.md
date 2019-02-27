@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d29c23873bc22172e73c5bf8db0789177b8e9f75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919275"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596739"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>XAML デザイナーでプロジェクト コードをデバッグまたは無効化する
 
@@ -88,7 +88,7 @@ ms.locfileid: "55919275"
 ## <a name="control-display-options"></a>コントロールの表示オプション
 
 > [!NOTE]
-> **コントロールの表示オプション**は、Windows 10 Fall Creators Update (ビルド 16299) 以降を対象とするユニバーサル Windows プラットフォーム アプリケーションでのみ使用できます。 **コントロールの表示オプション**機能は、Visual Studio 2017 バージョン 15.9 以降で使用できます。 
+> **コントロールの表示オプション**は、Windows 10 Fall Creators Update (ビルド 16299) 以降を対象とするユニバーサル Windows プラットフォーム アプリケーションでのみ使用できます。 **コントロールの表示オプション**機能は、Visual Studio 2017 バージョン 15.9 以降で使用できます。
 
 XAML デザイナーでは、Windows SDK からのプラットフォーム コントロールのみを表示するようにコントロールの表示オプションを変更できます。 これにより、XAML デザイナーの信頼性が向上する可能性があります。
 

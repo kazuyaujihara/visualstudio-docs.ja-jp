@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf6957b0757da709a7f95ccf58b1b192e0edf098
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602040"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841730"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>チュートリアル: SharePoint アプリケーションをプロファイリングします。
   このチュートリアルでは、Visual Studio のプロファイル ツールを使用し、SharePoint アプリケーションのパフォーマンスを最適化する方法について説明します。 アプリケーション例は SharePoint フィーチャー イベント レシーバーで、これにはフィーチャー イベント レシーバーのパフォーマンスを低下させるアイドル ループが含まれています。 Visual Studio プロファイラーを使用するとも呼ばれるプロジェクトの最も負荷の高い (実行する最も遅い) 部分を排除を見つけて、*ホット パス*します。
@@ -47,7 +47,7 @@ ms.locfileid: "56602040"
 ## <a name="create-a-sharepoint-project"></a>SharePoint プロジェクトを作成します。
  まずは、SharePoint プロジェクトを作成します。
 
-#### <a name="to-create-a-sharepoint-project"></a>SharePoint プロジェクトを作成するには
+### <a name="to-create-a-sharepoint-project"></a>SharePoint プロジェクトを作成するには
 
 1. メニュー バーで、**ファイル** > **新規** > **プロジェクト**を表示する、**新しいプロジェクト** ダイアログ ボックス。
 
@@ -70,7 +70,7 @@ ms.locfileid: "56602040"
 ## <a name="add-a-feature-and-feature-event-receiver"></a>機能とフィーチャー イベント レシーバーを追加します。
  次に、フィーチャーを、そのイベント レシーバーと共にプロジェクトに追加します。 このイベント レシーバーには、プロファイル対象のコードが含まれます。
 
-#### <a name="to-add-a-feature-and-feature-event-receiver"></a>機能とフィーチャー イベント レシーバーを追加するには
+### <a name="to-add-a-feature-and-feature-event-receiver"></a>機能とフィーチャー イベント レシーバーを追加するには
 
 1.  **ソリューション エクスプ ローラー**、ショートカット メニューを開き、**機能**ノード選択**機能の追加**、名前の既定値のままにして、 **Feature1**.
 
@@ -184,14 +184,14 @@ ms.locfileid: "56602040"
 
 8.  **アクティブな配置構成**一覧で、選択**アクティブ化しない**します。
 
-     この配置構成を選択することにより、後で SharePoint 内から手動でフィーチャーをアクティブ化できます。
+     この配置構成を選択することにより、後で SharePoint 内から手動で機能をアクティブ化できます。
 
 9. プロジェクトを保存します。
 
 ## <a name="configure-and-deploy-the-sharepoint-application"></a>構成して SharePoint アプリケーションの展開
  SharePoint プロジェクトの準備ができたので、それを構成し、SharePoint サーバーに配置します。
 
-#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>SharePoint アプリケーションを構成し、配置するには
+### <a name="to-configure-and-deploy-the-sharepoint-application"></a>SharePoint アプリケーションを構成し、配置するには
 
 1.  **分析**] メニューの [選択**パフォーマンス ウィザードの起動**します。
 
@@ -214,7 +214,7 @@ ms.locfileid: "56602040"
 ## <a name="run-the-sharepoint-application"></a>SharePoint アプリケーションを実行します。
  `FeatureActivation` イベント コードの実行をトリガーし、SharePoint 内のフューチャーをアクティブ化します。
 
-#### <a name="to-run-the-sharepoint-application"></a>SharePoint アプリケーションを実行するには
+### <a name="to-run-the-sharepoint-application"></a>SharePoint アプリケーションを実行するには
 
 1.  SharePoint では、開く、**サイトの操作**] メニューの [選び、**サイト設定**します。
 
@@ -235,7 +235,7 @@ ms.locfileid: "56602040"
 ## <a name="view-and-interpret-the-profile-results"></a>表示し、プロファイルの結果の解釈
  SharePoint アプリケーションを実行してプロファイルを行ったので、次はテスト結果を表示します。
 
-#### <a name="to-view-and-interpret-the-profile-results"></a>表示し、プロファイルの結果を解釈するには
+### <a name="to-view-and-interpret-the-profile-results"></a>表示し、プロファイルの結果を解釈するには
 
 1.  **最も個々 の作業を実行している関数**セクション サンプル プロファイル レポートのことに注意して`TimeCounter`はリストの先頭付近にあります。
 
@@ -256,7 +256,7 @@ ms.locfileid: "56602040"
 ## <a name="fix-the-code-and-reprofile-the-application"></a>コードを修正し、アプリケーションのプロファイルを再作成
  SharePoint アプリケーション内のホットスポット関数を特定したので、次はこれを修正します。
 
-#### <a name="to-fix-the-code-and-reprofile-the-application"></a>コードを修正し、アプリケーションを再プロファイルするには
+### <a name="to-fix-the-code-and-reprofile-the-application"></a>コードを修正し、アプリケーションを再プロファイルするには
 
 1.  フィーチャー イベント レシーバーのコード内で、`FeatureActivated` の `TimeCounter` メソッドの呼び出しをコメント アウトし、これが呼び出されないようにします。
 

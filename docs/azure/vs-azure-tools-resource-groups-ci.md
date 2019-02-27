@@ -4,19 +4,19 @@ description: Visual Studio で Azure リソース グループのデプロイ �
 author: mlearned
 manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
-ms.service: azure-resource-manager
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: bbe4fc4f59527b73b46d95f70541202f87ffab4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c91b52d10e3692be600bdee3a0e2dd60182f0668
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55140587"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841793"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Azure リソース グループのデプロイ プロジェクトを使用した Azure DevOps Services での継続的インテグレーション
+
 Azure テンプレートをデプロイするには、さまざまなステージ (ビルド、テスト、Azure にコピー ("ステージング" とも呼ばれる)、テンプレートのデプロイ) でタスクを実行します。 テンプレートを Azure DevOps Services にデプロイする方法は 2 つあります。 どちらの方法でも同じ結果になるため、ワークフローに最適な方法を選択します。
 
 1. Azure リソース グループ デプロイ プロジェクト (Deploy-AzureResourceGroup.ps1) に含まれている PowerShell スクリプトを実行するビルド パイプラインに 1 つのステップを追加します。 このスクリプトではアーティファクトをコピーして、テンプレートをデプロイします。

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8353bc1cfd9b3b48357979345ba29532cd3102bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908492"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603262"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>方法: Visual Studio ビルド処理を拡張する
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のビルド処理は、プロジェクト ファイルにインポートされる一連の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* ファイルによって定義されます。 このインポートされるファイルの 1 つである *Microsoft.Common.targets* を拡張することで、ビルド処理の複数のポイントでカスタム タスクを実行できます。 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のビルド処理を拡張するための 2 つの方法について説明します。
@@ -35,8 +35,8 @@ ms.locfileid: "55908492"
 
 1. オーバーライドする *Microsoft.Common.targets* で事前定義済みターゲットを見つけます。 下の表をご覧ください。これは安全にオーバーライドできるターゲットの完全一覧です。
 
-2. プロジェクト ファイルの最後で、`</Project>` タグの直前で、ターゲットを定義します。 次に例を示します。  
-  
+2. プロジェクト ファイルの最後で、`</Project>` タグの直前で、ターゲットを定義します。 次に例を示します。
+
     ```xml
     <Project>
         ...
@@ -48,7 +48,7 @@ ms.locfileid: "55908492"
         </Target>
     </Project>
     ```
-  
+
 3. プロジェクト ファイルをビルドします。
 
 次の表は、*Microsoft.Common.targets* で安全にオーバーライドできるすべてのターゲットをまとめたものです。
@@ -124,6 +124,6 @@ XML のこの部分は、`Build` ターゲットを実行するには、`BuildDe
 |`CompileDependsOn`|コンパイル手順の前または後にカスタム プロセスを挿入する場合にオーバーライドするプロパティ。|
 
 ## <a name="see-also"></a>関連項目
-[Visual Studio の統合](../msbuild/visual-studio-integration-msbuild.md)  
-[MSBuild の概念](../msbuild/msbuild-concepts.md)  
-[.targets ファイル](../msbuild/msbuild-dot-targets-files.md)
+- [Visual Studio の統合](../msbuild/visual-studio-integration-msbuild.md)
+- [MSBuild の概念](../msbuild/msbuild-concepts.md)
+- [.targets ファイル](../msbuild/msbuild-dot-targets-files.md)

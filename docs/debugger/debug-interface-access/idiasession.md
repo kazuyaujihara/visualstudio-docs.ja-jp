@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26293210bfc0dc18ded747ef44c5cc8699b3c5c8
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: c69383eacfdb39a65cd9a791185d6793e9e6f681
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227775"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642809"
 ---
 # <a name="idiasession"></a>IDiaSession
 デバッグ シンボルのクエリ コンテキストを提供します。
@@ -31,7 +31,7 @@ IDiaSession : IUnknown
 ## <a name="methods"></a>メソッド
 次の表は、メソッドの`IDiaSession`します。
 
-|方法|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|このシンボル ストア内のシンボルに対応する実行可能ファイルの読み込みアドレスを取得します。 これは、同じ値に渡された、`put_loadAddress`メソッド。|
 |[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|このシンボル ストアのシンボルに対応する実行可能ファイルの読み込みアドレスを設定します。 **注:** するを取得する場合は、このメソッドを呼び出すことが重要、`IDiaSession`オブジェクトし、オブジェクトの使用を開始する前にします。|
@@ -117,11 +117,11 @@ void InitializeDIA(const char *szFilename)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>関連項目
-[インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[概要](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
-[Exe](../../debugger/debug-interface-access/exe.md)  
-[IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)  
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
-[.Pdb ファイルの照会](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+- [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [概要](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [Exe](../../debugger/debug-interface-access/exe.md)
+- [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [.Pdb ファイルの照会](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

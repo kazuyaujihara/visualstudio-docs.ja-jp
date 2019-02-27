@@ -14,35 +14,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b81c724d5b0c8057abb706073c3faf94bfe1b7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 905979e0bc563e7525f1385a484e9b44b523a1f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965199"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613987"
 ---
 # <a name="lines-view"></a>行ビュー
-行ビューは、サンプリング メソッドを使用して収集したプロファイラー データに対してのみ使用できます。 このビューは、インストルメンテーションを使用して収集したデータに対しては使用できません。  
-  
- サンプリング プロファイル データの場合、行ビューにサンプル収集時に直接実行された関数のステートメントが示されます。 .NET メモリ データの場合、行ビューにメモリを割り当てるステートメントが示されます。  
-  
- ソース ファイルでは、1 つのステートメントを複数の行にわたって記述することも、複数のステートメントを 1 つの行に含めることもできます。  
-  
- ステートメントは、次の項目によって識別されます。  
-  
--   function ステートメントを含むソース ファイル。  
-  
--   ステートメントを含む関数。  
-  
--   ステートメントが開始されるソース行。  
-  
--   ステートメントが開始されるソース行の文字。  
-  
--   ステートメントが終了するソース行。  
-  
--   ステートメントが終了するソース行の文字。  
-  
-## <a name="see-also"></a>関連項目  
- [行ビュー](../profiling/lines-view-sampling-data.md)   
- [行ビュー - サンプリング](../profiling/lines-view-dotnet-memory-sampling-data.md)   
- [行 ビュー](../profiling/lines-view-contention-data.md)
+行ビューは、サンプリング メソッドを使用して収集したプロファイラー データに対してのみ使用できます。 このビューは、インストルメンテーションを使用して収集したデータに対しては使用できません。
+
+ サンプリング プロファイル データの場合、行ビューにサンプル収集時に直接実行された関数のステートメントが示されます。 .NET メモリ データの場合、行ビューにメモリを割り当てるステートメントが示されます。
+
+ ソース ファイルでは、1 つのステートメントを複数の行にわたって記述することも、複数のステートメントを 1 つの行に含めることもできます。
+
+ ステートメントは、次の項目によって識別されます。
+
+-   function ステートメントを含むソース ファイル。
+
+-   ステートメントを含む関数。
+
+-   ステートメントが開始されるソース行。
+
+-   ステートメントが開始されるソース行の文字。
+
+-   ステートメントが終了するソース行。
+
+-   ステートメントが終了するソース行の文字。
+
+## <a name="see-also"></a>関連項目
+- [行 ビュー](../profiling/lines-view-sampling-data.md)
+- [行ビュー - サンプリング](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [行 ビュー](../profiling/lines-view-contention-data.md)

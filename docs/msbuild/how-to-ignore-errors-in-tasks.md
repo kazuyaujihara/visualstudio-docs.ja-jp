@@ -9,12 +9,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d8c11fef90a4910c178e7494a5a16f6ea9bfbf0
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 062edb5e7b76b3d3d308046ea1d541c543a6324f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853288"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610425"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>方法: タスクで発生したエラーを無視する
 ビルド時に一部のタスクのエラーを許容するとよい場合があります。 そのような重要でないタスクが失敗しても必要な出力は生成できるため、ビルドを続行させる場合です。 たとえば、各コンポーネントのビルド後にプロジェクトで `SendMail` タスクを使ってメール メッセージを送信する場合、メール サーバーが利用できず、ステータス メッセージを送信できなくても、完了までビルドを続行させるのは許容範囲と見なせる場合があります。 別の例として、通常、ビルド中に中間ファイルが削除される場合、それらのファイルを削除できなくても、完了までビルドを続行させるのは許容範囲と見なせる場合があります。
@@ -28,16 +28,16 @@ ms.locfileid: "55853288"
 
 - **ErrorAndContinue**。 タスクが失敗すると、`Target` 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーがエラーとして扱われます。
 
-- **ErrorAndStop** または **false** (既定値)。 タスクが失敗すると、`Target` 要素の残りのタスクとビルドは実行されず、`Target` 要素全体とビルドは失敗したと見なされます。  
-  
-  バージョン 4.5 より前の .NET Framework では、`true` 値と `false` 値のみがサポートされます。  
-  
+- **ErrorAndStop** または **false** (既定値)。 タスクが失敗すると、`Target` 要素の残りのタスクとビルドは実行されず、`Target` 要素全体とビルドは失敗したと見なされます。
+
+  バージョン 4.5 より前の .NET Framework では、`true` 値と `false` 値のみがサポートされます。
+
   `ContinueOnError` の既定値は `ErrorAndStop` です。 属性を `ErrorAndStop` に設定すると、プロジェクト ファイルを読むユーザーにとって動作は明確になります。
 
 #### <a name="to-ignore-an-error-in-a-task"></a>タスクのエラーを無視するには
 
-- タスクの `ContinueOnError` 属性を使用します。 次に例を示します。  
-  
+- タスクの `ContinueOnError` 属性を使用します。 次に例を示します。
+
     `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`
 
 ## <a name="example"></a>例
@@ -60,6 +60,6 @@ ms.locfileid: "55853288"
 ```
 
 ## <a name="see-also"></a>関連項目
-[MSBuild](../msbuild/msbuild.md)  
-[タスク リファレンス](../msbuild/msbuild-task-reference.md)  
-[タスク](../msbuild/msbuild-tasks.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [タスク](../msbuild/msbuild-tasks.md)

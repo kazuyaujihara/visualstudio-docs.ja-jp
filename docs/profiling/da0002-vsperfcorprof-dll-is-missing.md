@@ -13,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc44f1dd1a7c9b81330912871a090881987d2a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aa263f6ceab515627fd33070517e3393aeec419d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033624"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637205"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002:VSPerfCorProf.dll がありません
 
-|||  
-|-|-|  
-|規則 ID|DA0002|  
-|カテゴリ|プロファイリング ツールの使用|  
-|プロファイル方法|コマンド ライン ツールの VSPerfCmd と VSPerfASPNETCmd を使用してプロファイリングする|  
-|メッセージ|*VSPerfCLREnv.cmd* で環境変数を正しく設定しないままファイルが収集されたようです。 マネージド バイナリのシンボルを解決できません。|  
-|規則の種類|情報|  
+|||
+|-|-|
+|規則 ID|DA0002|
+|カテゴリ|プロファイリング ツールの使用|
+|プロファイル方法|コマンド ライン ツールの VSPerfCmd と VSPerfASPNETCmd を使用してプロファイリングする|
+|メッセージ|*VSPerfCLREnv.cmd* で環境変数を正しく設定しないままファイルが収集されたようです。 マネージド バイナリのシンボルを解決できません。|
+|規則の種類|情報|
 
-## <a name="cause"></a>原因  
- プロファイラーは、プロファイル実行中、*VSPerfCorProf.dll* を見つけることができませんでした。 プロファイラー データを集めるためのコマンドライン ツールが *VSPerfCLREnv.cmd* ツールで必要な環境変数を初期化することなく使用されたとき、この警告が発生します。 プロファイリング ツールの開始時に別のプロファイラーが実行されていた場合にもこの警告は発生します。  
+## <a name="cause"></a>原因
+ プロファイラーは、プロファイル実行中、*VSPerfCorProf.dll* を見つけることができませんでした。 プロファイラー データを集めるためのコマンドライン ツールが *VSPerfCLREnv.cmd* ツールで必要な環境変数を初期化することなく使用されたとき、この警告が発生します。 プロファイリング ツールの開始時に別のプロファイラーが実行されていた場合にもこの警告は発生します。
 
-## <a name="rule-description"></a>規則の説明  
- プロファイラーのプロファイリング実行で .NET Framework バイナリのシンボルを解決するには、特定の環境変数を設定する必要があります。 この警告が示唆することは、プロファイル データが集められる前に *VSPerfCLREnv.cmd* ツールが実行されなかったということです。 マネージド バイナリのシンボルを解決できないことがあります。 コマンド ラインからプロファイル ツールを使用する方法については、[コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)に関するページを参照してください。  
+## <a name="rule-description"></a>規則の説明
+ プロファイラーのプロファイリング実行で .NET Framework バイナリのシンボルを解決するには、特定の環境変数を設定する必要があります。 この警告が示唆することは、プロファイル データが集められる前に *VSPerfCLREnv.cmd* ツールが実行されなかったということです。 マネージド バイナリのシンボルを解決できないことがあります。 コマンド ラインからプロファイル ツールを使用する方法については、[コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)に関するページを参照してください。
 
-## <a name="how-to-fix-violations"></a>違反の修正方法  
+## <a name="how-to-fix-violations"></a>違反の修正方法
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのコマンドライン ツールを利用してマネージド アプリケーションをプロファイリングするとき、データの収集を開始する前に [VSPerfCLREnv](../profiling/vsperfclrenv.md) コマンドライン ツールを実行します。

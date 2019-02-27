@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b6e655ea9c5eb6c598d7a4bdbb09ed3345903
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853509"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610217"
 ---
 # <a name="downloadfile-task"></a>DownloadFile タスク
 ハイパーテキスト転送プロトコル (HTTP) を使って、指定したファイルをダウンロードします。
@@ -48,7 +48,7 @@ ms.locfileid: "55853509"
 |`SkipUnchangedFiles`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、変更されていないファイルのダウンロードをスキップします。 既定値は `true` です。 `DownloadFile` タスクでは、リモート サーバーに従って、ファイルのサイズが等しく、最終更新時刻が等しい場合、ファイルは変更されていないものと見なされます。 <br /><br />**注:** HTTP サーバーによってはファイルの最終更新日時が示されておらず、その場合はファイルが再度ダウンロードされます。|
 |`SourceUrl`|必須の `String` 型のパラメーターです。<br /><br /> ダウンロードする URL を指定します。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
@@ -73,5 +73,5 @@ ms.locfileid: "55853509"
 ```
 
 ## <a name="see-also"></a>関連項目
-[タスク](../msbuild/msbuild-tasks.md)  
-[タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [タスク](../msbuild/msbuild-tasks.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 84d2296a467bb1fc2c3e1466b715578c94c7d0d8
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: b6a41ad863ee25e4294d5d0242b3113cd405fb00
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317938"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637348"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Visual Studio でインストールされている UWP アプリ パッケージをデバッグします。
 
@@ -33,7 +33,7 @@ Visual Studio では、Windows 10 コンピューターおよび Xbox、HoloLens
 
 >[!NOTE]
 >スマート フォンでは、visual Studio がインストールされている UWP アプリのデバッグはサポートされていません。
-   
+
 UWP アプリのデバッグに関する詳細については、上、ブログの投稿を参照してください。[インストール済みアプリ パッケージのデバッグ](https://devblogs.microsoft.com/devops/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/)と[ユニバーサル Windows アプリ (UWP) を構築](https://devblogs.microsoft.com/visualstudio/universal-windows-apps-targeting-windows-10-anniversary-sdk/)します。
 
 ## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>ローカル コンピューターにインストールされている UWP アプリをデバッグします。

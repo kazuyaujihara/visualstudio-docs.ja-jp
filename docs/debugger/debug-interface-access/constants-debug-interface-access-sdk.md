@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a120a1610e6ca62ba4c19bb5dd2289628e1d273
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987406"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608579"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>定数 (Debug Interface Access SDK)
 これらの文字列定数、DIA SDK を通じてプログラム デバッグ データベース (PDB) ファイルのさまざまなセクションを識別するために使用できます。
@@ -26,7 +26,7 @@ ms.locfileid: "55987406"
 ## <a name="constants"></a>定数
 次は、C と C++ マクロとして宣言されます。
 
-|マクロ|値|
+|マクロ|[値]|
 |-----------|-----------|
 |`DiaTable_Symbols`|L「シンボル」|
 |`DiaTable_Sections`|L「セクション」|
@@ -55,8 +55,8 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ## <a name="requirements"></a>要件
 ヘッダー: dia2.h
 
-## <a name="see-also"></a>関連項目
-[参照](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
-[列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)
+## <a name="see-also"></a>参照
+- [参照](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+- [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

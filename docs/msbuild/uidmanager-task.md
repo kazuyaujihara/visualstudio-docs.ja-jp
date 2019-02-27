@@ -19,45 +19,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2e6f653ca7fc6bc335ab58530242f94b1f95d39
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9c4e8c5ccae37aba0f287e2c2f9e29ab36371846
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963808"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608566"
 ---
 # <a name="uidmanager-task"></a>UidManager タスク
-<xref:Microsoft.Build.Tasks.Windows.UidManager> タスクでは、ソース [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルに含まれるすべての [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 要素をローカライズするために、一意識別子 (UID) をチェック、更新、または削除します。  
-  
-## <a name="task-parameters"></a>タスク パラメーター  
-  
+<xref:Microsoft.Build.Tasks.Windows.UidManager> タスクでは、ソース [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルに含まれるすべての [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 要素をローカライズするために、一意識別子 (UID) をチェック、更新、または削除します。
+
+## <a name="task-parameters"></a>タスク パラメーター
+
 | パラメーター | 説明 |
 |-------------------------| - |
 | `IntermediateDirectory` | 省略可能な **String** 型のパラメーターです。<br /><br /> **MarkupFiles** パラメーターで指定されるソース [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルをバックアップするために使用されるディレクトリを指定します。 |
 | `MarkupFiles` | 必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> UID のチェック、更新、または削除の対象となるソース [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルを指定します。 |
 | `Task` | 必須の **String** 型のパラメーターです。<br /><br /> 実行する UID 管理タスクを指定します。 有効なオプションは **Check**、**Update**、または **Remove** です。 |
-  
-## <a name="example"></a>例  
- 次の例では <xref:Microsoft.Build.Tasks.Windows.UidManager> タスクを使用して、指定されたソース [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルに、適切な UID を持つ [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 要素が含まれていることをチェックします。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  <UsingTask   
-    TaskName="Microsoft.Build.Tasks.Windows.UidManager"   
-    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />  
-  <Target Name="UidManagerTask">  
-    <UidManager  
-      Task="Check"  
-      MarkupFiles="Page1.xaml;Page2.xaml"  
-      IntermediateDirectory="c:\UidManagerIntermediateDirectory" />  
-  </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [WPF MSBuild リファレンス](../msbuild/wpf-msbuild-reference.md)   
- [タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)   
- [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
- [タスク リファレンス](../msbuild/msbuild-task-reference.md)   
- [WPF アプリケーション (WPF) のビルド](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
- [方法: アプリケーションをローカライズする](/dotnet/framework/wpf/advanced/how-to-localize-an-application)
+
+## <a name="example"></a>例
+ 次の例では <xref:Microsoft.Build.Tasks.Windows.UidManager> タスクを使用して、指定されたソース [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルに、適切な UID を持つ [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 要素が含まれていることをチェックします。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.UidManager"
+    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
+  <Target Name="UidManagerTask">
+    <UidManager
+      Task="Check"
+      MarkupFiles="Page1.xaml;Page2.xaml"
+      IntermediateDirectory="c:\UidManagerIntermediateDirectory" />
+  </Target>
+</Project>
+```
+
+## <a name="see-also"></a>関連項目
+- [WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)
+- [タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [WPF アプリケーション (WPF) のビルド](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [方法: アプリケーションをローカライズする](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

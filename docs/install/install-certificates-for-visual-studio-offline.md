@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6855603c0cc322d5ed235ac81e0f9f15cef725c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936643"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645720"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio オフライン インストールに必要な証明書をインストールする
 
@@ -61,6 +61,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+
    **更新**:Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、次のコマンドでバッチ ファイルを作成します。
 
    ```cmd
@@ -123,7 +124,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 
 ## <a name="install-visual-studio"></a>Visual Studio のインストール
 
-証明書をインストールしたら、「Visual Studio 2017 のネットワーク インストールを作成する」ページの「[ネットワーク インストールから展開する](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation)」の指示に従うことで、Visual Studio の展開を続けることができます。
+証明書をインストールしたら、「Visual Studio 2017 のネットワーク インストールを作成する」ページの「[ネットワーク インストールから展開する](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation)」の指示に従うことで、Visual Studio の展開を続けることができます。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

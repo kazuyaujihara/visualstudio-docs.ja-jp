@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idialinenumber::get_length |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1044f681efbdf0f07687a34652723612feb5a4ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 896e26075780c0cbd7bf0b1762da141d5ba7d2d1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939895"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639909"
 ---
 # <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
-ブロックのバイト数を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_length (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]ブロック内のバイト数を返します。  
-  
-## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
-  
-## <a name="remarks"></a>コメント  
- によって表される、ブロックが行目のソース コードの長さ、 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)オブジェクト。  
-  
+ブロックのバイト数を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_length ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]ブロック内のバイト数を返します。
+
+## <a name="return-value"></a>戻り値
+ 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+
+## <a name="remarks"></a>解説
+ によって表される、ブロックが行目のソース コードの長さ、 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)オブジェクト。
+
 ## <a name="see-also"></a>関連項目
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d6b603a59ad27052ab8eb9bbb88942584aa5293
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000901"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843313"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn アナライザーと ImmutableArrays 用コード認識ライブラリ
 
@@ -25,7 +25,7 @@ ms.locfileid: "55000901"
 
 * Visual Studio 2015 (Express Edition されません) またはそれ以降のバージョン。 無料で使用できます[Visual Studio Community エディション](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 確認することも、Visual Studio をインストールするときに**Visual Studio Extensibility Tools** **一般的なツール**と同時に、SDK をインストールします。 既に Visual Studio をインストールする場合、メイン メニューに移動してこの SDK をインストールすることができますもする**ファイル** > **新規** > **プロジェクト**、選択**c#** で、左側のナビゲーション ウィンドウで、選択して、 **Extensibility**します。 選択した場合、"**Visual Studio 機能拡張ツールをインストール**"階層リンクのプロジェクト テンプレートを求められますをダウンロードして、SDK をインストールします。
-* [.NET コンパイラ プラットフォーム ("Roslyn") SDK](http://aka.ms/roslynsdktemplates)します。 メイン メニューに移動して、この SDK をインストールすることも**ファイル** > **新規** > **プロジェクト**選択、 **c#** 左側のナビゲーション ウィンドウで、選択して、 **Extensibility**します。 選択した場合"**.NET コンパイラ プラットフォーム SDK をダウンロードして**"階層リンクのプロジェクト テンプレートを求められますをダウンロードして、SDK をインストールします。 この SDK には、 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)します。 この便利なツールでは、どのようなコード モデルの種類を把握する必要があります内で検索アナライザーです。 特定のコード モデルの種類のコードは、のみ必要な場合に実行し、関連するコードを分析のみに集中できますので、コードにアナライザーのインフラストラクチャは呼び出し。
+* [.NET コンパイラ プラットフォーム ("Roslyn") SDK](https://aka.ms/roslynsdktemplates)します。 メイン メニューに移動して、この SDK をインストールすることも**ファイル** > **新規** > **プロジェクト**選択、 **c#** 左側のナビゲーション ウィンドウで、選択して、 **Extensibility**します。 選択した場合"**.NET コンパイラ プラットフォーム SDK をダウンロードして**"階層リンクのプロジェクト テンプレートを求められますをダウンロードして、SDK をインストールします。 この SDK には、 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)します。 この便利なツールでは、どのようなコード モデルの種類を把握する必要があります内で検索アナライザーです。 特定のコード モデルの種類のコードは、のみ必要な場合に実行し、関連するコードを分析のみに集中できますので、コードにアナライザーのインフラストラクチャは呼び出し。
 
 ## <a name="whats-the-problem"></a>何がそんなに問題ですか。
 

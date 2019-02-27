@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiaenumdebugstreams::get_count |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b37ece7f1a0d062b7c58f72a23916a28863660fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5840bbcc012fdcb209fbfb19c0119ad94f3073f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956897"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642015"
 ---
 # <a name="idiaenumdebugstreamsgetcount"></a>IDiaEnumDebugStreams::get_Count
-デバッグ ストリームの数を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_Count(   
-   LONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]この列挙子で使用できるデバッグ ストリームの数を返します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
+デバッグ ストリームの数を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_Count( 
+   LONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]この列挙子で使用できるデバッグ ストリームの数を返します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)   
- [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+- [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)
