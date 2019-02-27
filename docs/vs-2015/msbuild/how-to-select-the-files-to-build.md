@@ -173,6 +173,6 @@ ms.locfileid: "54798905"
 </Project>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [方法: ビルドからファイルを除外する](../msbuild/how-to-exclude-files-from-the-build.md)   
  [項目](../msbuild/msbuild-items.md)
