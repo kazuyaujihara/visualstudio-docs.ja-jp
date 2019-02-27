@@ -12,47 +12,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13329ce649ac1947b335ee73d1408e94a5ff52e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 155d47f6764e754a1093cbcf884368c80d709a2a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068897"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613909"
 ---
 # <a name="markerseries-class"></a>marker_series クラス
-1 つのプロバイダーによって生成されたイベントのシリアル チャネルを表します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-class marker_series;  
-```  
-  
-## <a name="members"></a>メンバー  
-  
-### <a name="public-constructors"></a>パブリック コンストラクター  
-  
-|name|説明|  
-|----------|-----------------|  
-|[marker_series::marker_series コンストラクター](../profiling/marker-series-marker-series-constructor.md)|`marker_series` クラスの新しいインスタンスを初期化します。|  
-|[marker_series::~marker_series デストラクター](../profiling/marker-series-tilde-marker-series-destructor.md)|marker_series オブジェクトを破棄し、割り当てられているすべてのリソースを解放します。|  
-  
-### <a name="public-methods"></a>パブリック メソッド  
-  
-|name|説明|  
-|----------|-----------------|  
-|[marker_series::is_enabled メソッド](../profiling/marker-series-is-enabled-method.md)|任意のセッションでプロバイダーが有効にされているかどうかを調べます。|  
-|[marker_series::write_alert メソッド](../profiling/marker-series-write-alert-method.md)|コンカレンシー ビジュアライザーのトレース ファイルにアラートを書き込みます。|  
-|[marker_series::write_flag メソッド](../profiling/marker-series-write-flag-method.md)|コンカレンシー ビジュアライザーのトレース ファイルにフラグを書き込みます。|  
-|[marker_series::write_message メソッド](../profiling/marker-series-write-message-method.md)|コンカレンシー ビジュアライザーのトレース ファイルにメッセージを書き込みます。|  
-  
-## <a name="inheritance-hierarchy"></a>継承階層  
- `marker_series`  
-  
-## <a name="requirements"></a>要件  
- **ヘッダー:** *cvmarkersobj.h*  
-  
- **名前空間:** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>関連項目  
- [diagnostic 名前空間](../profiling/diagnostic-namespace.md)
+1 つのプロバイダーによって生成されたイベントのシリアル チャネルを表します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+class marker_series;
+```
+
+## <a name="members"></a>メンバー
+
+### <a name="public-constructors"></a>パブリック コンストラクター
+
+|name|説明|
+|----------|-----------------|
+|[marker_series::marker_series コンストラクター](../profiling/marker-series-marker-series-constructor.md)|`marker_series` クラスの新しいインスタンスを初期化します。|
+|[marker_series::~marker_series デストラクター](../profiling/marker-series-tilde-marker-series-destructor.md)|marker_series オブジェクトを破棄し、割り当てられているすべてのリソースを解放します。|
+
+### <a name="public-methods"></a>パブリック メソッド
+
+|name|説明|
+|----------|-----------------|
+|[marker_series::is_enabled メソッド](../profiling/marker-series-is-enabled-method.md)|任意のセッションでプロバイダーが有効にされているかどうかを調べます。|
+|[marker_series::write_alert メソッド](../profiling/marker-series-write-alert-method.md)|コンカレンシー ビジュアライザーのトレース ファイルにアラートを書き込みます。|
+|[marker_series::write_flag メソッド](../profiling/marker-series-write-flag-method.md)|コンカレンシー ビジュアライザーのトレース ファイルにフラグを書き込みます。|
+|[marker_series::write_message メソッド](../profiling/marker-series-write-message-method.md)|コンカレンシー ビジュアライザーのトレース ファイルにメッセージを書き込みます。|
+
+## <a name="inheritance-hierarchy"></a>継承階層
+ `marker_series`
+
+## <a name="requirements"></a>要件
+ **ヘッダー:** *cvmarkersobj.h*
+
+ **名前空間:** Concurrency::diagnostic
+
+## <a name="see-also"></a>関連項目
+- [diagnostic 名前空間](../profiling/diagnostic-namespace.md)

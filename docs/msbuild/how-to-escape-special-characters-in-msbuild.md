@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 752f4c6535f498b074d2c85b4b7cb6e9870ea862
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 983e10f26e6fd1d8b4b7ff18c73edd65cb4810f4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853941"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634631"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>方法: MSBuild で特殊文字をエスケープする
 
@@ -51,6 +51,6 @@ ms.locfileid: "55853941"
 特殊文字の代わりに `%<xx>` という表記を使用します。ここで、`<xx>` は ASCII 文字の 16 進値を表します。 たとえば、アスタリスク (`*`) をリテラル文字として使用するには、値 `%2A` を使用します。
 
 ## <a name="see-also"></a>関連項目
-[MSBuild の概念](../msbuild/msbuild-concepts.md)  
-[MSBuild](../msbuild/msbuild.md)  
-[項目](../msbuild/msbuild-items.md)
+- [MSBuild の概念](../msbuild/msbuild-concepts.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [項目](../msbuild/msbuild-items.md)
