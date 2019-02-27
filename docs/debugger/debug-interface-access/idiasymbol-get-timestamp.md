@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3489751fa959f55440de75f7d74c35cf9634cb2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 726c452abe8f435ab05e3e6a5606b21fb8d9eba1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921089"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634241"
 ---
 # <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
-基になる実行可能ファイルのタイムスタンプを取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_timeStamp (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]基になる実行可能ファイルのタイムスタンプを返します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
-  
+基になる実行可能ファイルのタイムスタンプを取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_timeStamp ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]基になる実行可能ファイルのタイムスタンプを返します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
-  
-## <a name="see-also"></a>関連項目  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+
+## <a name="see-also"></a>関連項目
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

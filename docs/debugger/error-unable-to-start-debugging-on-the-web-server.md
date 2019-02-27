@@ -1,5 +1,5 @@
-﻿---
-title: エラー :Web サーバーでデバッグを開始できません |。Microsoft Docs
+---
+title: 'エラー: Web サーバーでデバッグを開始できません |。Microsoft Docs'
 ms.date: 05/23/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -26,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bf131634dc673fdeefe61fa2238c35fcc2ed8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e4c9d783fb68372e67f41eb84a1697ea3e1123b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938461"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688213"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>エラー :Web サーバー上でデバッグを開始できません
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>エラー ： Web サーバーでデバッグを開始できません
 
 Web サーバーで実行されている ASP.NET アプリケーションをデバッグしようとすると、このエラー メッセージが表示可能性があります:`Unable to start debugging on the Web server`します。
 
-多くの場合、アプリケーション プール、IIS をリセット、またはその両方に更新が必要なエラーまたは構成の変更が発生したために、このエラーが発生します。 管理者特権でコマンド プロンプトを開く」と入力して IIS をリセットできます`iisreset`します。 
+多くの場合、アプリケーション プール、IIS をリセット、またはその両方に更新が必要なエラーまたは構成の変更が発生したために、このエラーが発生します。 管理者特権でコマンド プロンプトを開く」と入力して IIS をリセットできます`iisreset`します。
 
 ## <a name="specificerrors"></a>詳細なエラー メッセージとは何ですか。
 
@@ -61,7 +61,7 @@ Web サーバーで実行されている ASP.NET アプリケーションをデ�
 
 ## <a name="web_server_config"></a> Web サーバーは正しく構成されていません
 
-- 参照してください[エラー。](../debugger/error-the-web-server-is-not-configured-correctly.md) Web サーバーは正しく構成されていません
+- 参照してください[エラー: web サーバーが正しく構成されていない](../debugger/error-the-web-server-is-not-configured-correctly.md)します。
 
 ## <a name="unabletoconnect"></a> Web サーバーに接続できません。
 
@@ -106,12 +106,12 @@ Web サーバーで実行されている ASP.NET アプリケーションをデ�
 
 ##  <a name="vxtbshttpservererrorsthingstocheck"></a> IIS の構成を確認してください。
 
-ここで説明するには、問題を解決する手順を実行した後と、デバッグをもう一度試す前に IIS をリセットする必要もあります。 管理者特権でコマンド プロンプトを開くと、入力して行うことができます`iisreset`します。 
+ここで説明するには、問題を解決する手順を実行した後と、デバッグをもう一度試す前に IIS をリセットする必要もあります。 管理者特権でコマンド プロンプトを開くと、入力して行うことができます`iisreset`します。
 
-* 停止し、IIS アプリケーション プールを再起動してから、再試行してください。 
+* 停止し、IIS アプリケーション プールを再起動してから、再試行してください。
 
     アプリケーション プールは、エラーの結果として停止した可能性があります。 または、中止し、アプリケーション プールを再起動することに行った他の構成の変更が必要があります。
-    
+
     > [!NOTE]
     > アプリケーション プールを停止していますが場合、は、コントロール パネルから、URL Rewrite モジュールをアンインストールする必要があります。 Web Platform Installer (WebPI) を使用して再インストールすることができます。 この問題は、大量のシステムのアップグレード後に発生する可能性があります。
 
@@ -120,7 +120,7 @@ Web サーバーで実行されている ASP.NET アプリケーションをデ�
     Visual Studio プロジェクトに一致しない ASP.NET のバージョンについては、アプリケーション プールを構成できます。 アプリケーション プールで ASP.NET のバージョンを更新し、それを再起動します。 詳細については、次を参照してください。 [IIS 8.0 を使用して ASP.NET 3.5 および ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)します。
 
     また、パスワードの資格情報が変更されている場合は、アプリケーション プールまたは Web サイトでそれらを更新する必要があります。  アプリケーション プール内での資格情報の更新**詳細設定 > プロセス モデル > Identity**します。 Web サイトの資格情報を更新**基本設定 > として接続しています.**.アプリケーション プールを再起動します。
-    
+
 * Web アプリケーションのフォルダーが適切なアクセス許可を持つことを確認します。
 
     IIS_IUSRS、IUSR を付与するか、特定のユーザーに関連付けられていることを確認、[アプリケーション プール](/iis/manage/configuring-security/application-pool-identities)読み取りし、Web アプリケーション フォルダーの権限を実行します。 問題を修正し、アプリケーション プールを再起動します。
@@ -128,11 +128,11 @@ Web サーバーで実行されている ASP.NET アプリケーションをデ�
 * IIS で ASP.NET の正しいバージョンがインストールされていることを確認します。
 
     Visual Studio プロジェクトと IIS で ASP.NET のバージョンの不一致には、この問題が発生します。 Web.config で、フレームワークのバージョンを設定する必要があります。IIS で ASP.NET をインストールするには、使用、 [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)します。 またを参照してください[IIS 8.0 を使用して ASP.NET 3.5 および ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)または ASP.NET Core, [IIS と Windows 上のホスト](https://docs.asp.net/en/latest/publishing/iis.html)します。
-  
+
 * IP アドレスのみを使用している場合は、認証エラーを解決します
 
      既定では、IP アドレスはインターネットの一部と見なされ、インターネット上では NTLM 認証が行われません。 認証を要求するように IIS の web サイトを構成する場合は、この認証が失敗します。 この問題を修正するには、IP アドレスではなくリモート コンピューターの名前を指定できます。
-     
+
 ## <a name="other-causes"></a>その他の原因
 
 IIS 構成が、問題を引き起こしているしない場合は、次の手順を試してください。
@@ -140,7 +140,7 @@ IIS 構成が、問題を引き起こしているしない場合は、次の手�
 - 管理者特権で Visual Studio を再起動してもう一度やり直してください。
 
     Web Deploy を使用してなどの一部の ASP.NET デバッグ シナリオでは、Visual Studio の高度な特権が必要です。
-    
+
 - Visual Studio の複数のインスタンスが実行されている場合 (管理者特権の場合) を持つ Visual Studio の 1 つのインスタンスでプロジェクトを閉じてもう一度やり直してください。
 
 - ローカル アドレスを持つホスト ファイルを使用する場合は、マシンの IP アドレスの代わりに、ループバック アドレスを使用してみてください。
@@ -152,12 +152,12 @@ IIS 構成が、問題を引き起こしているしない場合は、次の手�
 * サーバー上のブラウザーで localhost ページを表示します。
 
      IIS が正しくインストールされていない場合、ブラウザーに `http://localhost` を入力するとエラーが表示されます。
-     
+
      IIS へのデプロイに関する詳細については、次を参照してください。 [IIS 8.0 を使用して ASP.NET 3.5 および ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)と ASP.NET Core, [IIS と Windows 上のホスト](https://docs.asp.net/en/latest/publishing/iis.html)します。
 
 * サーバーの基本的な ASP.NET アプリケーションを作成します (または、基本的な web.config ファイルを使用します。)
 
     デバッガーを使用するアプリを取得できない場合は、ローカル サーバーで、基本的な ASP.NET アプリケーションを作成してみてくださいし、基本的なアプリをデバッグしようとしてください。 (既定の ASP.NET MVC テンプレートを使用する可能性があります)。基本的なアプリをデバッグする場合、2 つの構成間で異なるを判断することに役立つ可能性があります。 URL 書き換えルールなどは、web.config ファイルで設定の相違を探します。
 
-## <a name="see-also"></a>関連項目
- [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>参照
+- [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

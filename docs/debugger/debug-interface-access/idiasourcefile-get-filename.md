@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiasourcefile::get_filename |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35c62979e64bda47505561d6f87baa7dce18bee0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6f57454be3690f36cbf1addddb3d51bb01a39f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015720"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611907"
 ---
 # <a name="idiasourcefilegetfilename"></a>IDiaSourceFile::get_fileName
-ソース ファイル名を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_fileName (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]ソース ファイル名を返します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
+ソース ファイル名を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_fileName ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]ソース ファイル名を返します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

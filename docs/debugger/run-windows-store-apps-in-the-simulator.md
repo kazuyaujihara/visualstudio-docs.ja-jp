@@ -1,4 +1,4 @@
-﻿---
+---
 title: シミュレーターで UWP アプリの実行 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 36e5d5285f59170afaa22338829d186e7eb3e2e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 628683ae87bc53d59a61e13d3c21d45bfa4eee79
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949802"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710540"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>シミュレーターで UWP アプリを実行する
 UWP アプリ用の Visual Studio シミュレーターは、UWP アプリをシミュレートするデスクトップ アプリケーションです。 通常は、接続されたデバイス、またはリモート コンピューターのローカル コンピューター上でデバッグします。 ただし、一部のシナリオでの Visual Studio シミュレーターを使用して、別の物理的な画面サイズと解像度をエミュレートすることがあります。 また、一般的なタッチと回転イベントのシミュレートし、ネットワーク接続のプロパティをシミュレートできます。
@@ -107,7 +107,7 @@ UWP アプリ用の Visual Studio シミュレーターは、UWP アプリをシ
      ![設定のコンテキスト メニューのスクリーン ショット](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")
 
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> ネットワーク接続のプロパティをシミュレートする
- アプリケーションのユーザーがネットワーク接続コストやデータ プランの状態の変化を認識し、アプリケーションがその情報を使用して、ローミングや指定されたデータ転送の制限の超過による追加コストの発生を避けることにより、アプリケーションのユーザーが従量制課金接続のコストを管理できるようにします。 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API を使用すると、 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) および署名を行うイベント [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) に応答できます。 (プロセスにまだ慣れていない場合は、「[クイック スタート:従量制ネットワーク接続のコスト制約を管理する](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)します。
+ アプリケーションのユーザーがネットワーク接続コストやデータ プランの状態の変化を認識し、アプリケーションがその情報を使用して、ローミングや指定されたデータ転送の制限の超過による追加コストの発生を避けることにより、アプリケーションのユーザーが従量制課金接続のコストを管理できるようにします。 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API を使用すると、 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) および署名を行うイベント [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) に応答できます。 「 [従量制課金接続のコスト制約を管理する方法 (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)」をご覧ください。
 
  ご利用のネットワーク コストを認識するコードをデバッグまたはテストするには、シミュレーターを使って、[GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) によって返される [ConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation)オブジェクトを通じて公開されるネットワークのプロパティを模倣します。
 
@@ -131,7 +131,7 @@ UWP アプリ用の Visual Studio シミュレーターは、UWP アプリをシ
 
    **ネットワーク接続の管理の詳細について**
 
-   [クイック スタート:従量制ネットワーク接続管理のコスト制約](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+   [従量制課金接続のコスト制約を管理する方法 (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
 
    [ネットワーク情報のサンプル](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
@@ -149,4 +149,4 @@ UWP アプリ用の Visual Studio シミュレーターは、UWP アプリをシ
  シミュレーターを終了するには、キーを押して**CTRL + ALT + F4**します。
 
 ## <a name="see-also"></a>関連項目
- [Visual Studio からアプリを実行](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Visual Studio からアプリを実行](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

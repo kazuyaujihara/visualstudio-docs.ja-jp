@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab68c077ea6897d32ca215ae1fa2726900622f7
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 3252d15ebfb06fa840bfad6bf74dc3b8748776ef
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227304"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623243"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 スタック フレームのプロパティを公開します。
@@ -31,7 +31,7 @@ IDiaStackFrame : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
 以下は、このインターフェイスでサポートされるメソッドです。
 
-|方法|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|このアドレスの範囲内のコード ベースのポインターが割り当てられていることを示すフラグを取得します。 このメソッドは非推奨です。|
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|フレームのアドレス情報を取得します。|
@@ -108,7 +108,7 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>関連項目
-[インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)  
-[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)  
-[IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
+- [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

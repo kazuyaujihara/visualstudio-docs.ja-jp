@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941984"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636906"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>[自動変数] と [ローカル] ウィンドウに変数を検査します。
 
 **[自動変数]** と**ローカル**windows は、デバッグ中に変数の値を表示します。 Windows はデバッグ セッション中にのみ使用できます。 **[自動変数]** ウィンドウには、現在のブレークポイントを使用する変数が表示されます。 **ローカル**ウィンドウには、現在の関数またはメソッドは、通常は、ローカル スコープで定義された変数が表示されます。 コードをデバッグしようとした初めての場合は、読み取りをする可能性があります[超初心者向けのデバッグ](../debugger/debugging-absolute-beginners.md)と[手法とツールをデバッグ](../debugger/write-better-code-with-visual-studio.md)にこの記事に進む前にします。
 
  **[自動変数]** ウィンドウが使用できるC#、Visual Basic、C++、および Python コードでは、JavaScript ではなくまたはF#します。
-  
-開くには、 **[自動変数]** ウィンドウで、デバッグ中に、**デバッグ** > **Windows** > **[自動変数]**、またはキーを押します**Ctrl**+**Alt**+**V** > **A**します。  
+
+開くには、 **[自動変数]** ウィンドウで、デバッグ中に、**デバッグ** > **Windows** > **[自動変数]**、またはキーを押します**Ctrl**+**Alt**+**V** > **A**します。
 
 開くには、**ローカル**ウィンドウで、デバッグ中に、**デバッグ** > **Windows** > **ローカル**、またはキーを押します**Alt**+**4**します。
 
@@ -142,13 +142,15 @@ private static int subtractVars(int i, int j)
 
 戻り値を表示する、`sumVars()`と`subtractVars()`メソッドの呼び出しで、[自動変数] ウィンドウ。
 
-1. `int x = sumVars(a, b) + subtractVars(c, d);` の行にブレークポイントを設定します。  
-   
-1. デバッグを開始し、実行がブレークポイントで一時停止したときに選択**ステップ オーバー**またはキーを押します**F10**します。 次の戻り値を表示する必要があります、 **[自動変数]** ウィンドウ。  
-   
-  ![[自動変数] は値を返すC# ](../debugger/media/autosreturnvaluecsharp2.png "戻り値を [自動変数]C#")  
-  
-## <a name="see-also"></a>関連項目  
- [デバッグとは](../debugger/what-is-debugging.md)  
- [デバッグの技術とツール](../debugger/write-better-code-with-visual-studio.md)  
- [最初に、デバッグについて](../debugger/debugger-feature-tour.md)[デバッガー ウィンドウ](../debugger/debugger-windows.md)
+1. `int x = sumVars(a, b) + subtractVars(c, d);` の行にブレークポイントを設定します。
+
+1. デバッグを開始し、実行がブレークポイントで一時停止したときに選択**ステップ オーバー**またはキーを押します**F10**します。 次の戻り値を表示する必要があります、 **[自動変数]** ウィンドウ。
+
+  ![[自動変数] は値を返すC# ](../debugger/media/autosreturnvaluecsharp2.png "戻り値を [自動変数]C#")
+
+## <a name="see-also"></a>関連項目
+
+- [デバッグとは](../debugger/what-is-debugging.md)
+- [デバッグの技術とツール](../debugger/write-better-code-with-visual-studio.md)
+- [デバッグの概要](../debugger/debugger-feature-tour.md)
+- [デバッガー ウィンドウ](../debugger/debugger-windows.md)

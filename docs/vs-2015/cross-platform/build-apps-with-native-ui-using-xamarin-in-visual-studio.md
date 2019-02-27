@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8cbcbb562267f776b04aad8387e853bd1f58b5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aaae5621f3e371deb34506a9f0bd5cc64602c3f3
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764579"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841806"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio で Xamarin を使用してネイティブ UI を備えたアプリを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -519,7 +519,7 @@ ms.locfileid: "54764579"
 
 2.  適切なデバイスまたはエミュレーターのターゲットを選択し、F5 キーを押してアプリケーションを開始します。
 
-3.  デバイスまたはエミュレーターでは、編集ボックスに有効なアメリカ合衆国郵便を入力 (例。60601)、キーを押します**Get Weather**します。 該当する地域の気象データがコントロールに表示されます。
+3.  デバイスまたはエミュレーターで、米国の有効な郵便番号 (例: 60601) を編集ボックスに入力してから、**[Get Weather]** をクリックします。 該当する地域の気象データがコントロールに表示されます。
 
      ![Android および Windows Phone 用お天気アプリ](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +625,7 @@ ms.locfileid: "54764579"
 
 2.  F5 キーを押すとアプリが起動します。
 
-3.  Windows Phone エミュレーターで、編集ボックスに有効なアメリカ合衆国郵便を入力します (例。60601)、キーを押します**Get Weather**します。 該当する地域の気象データがコントロールに表示されます。
+3.  Windows Phone エミュレーターで、米国の有効な郵便番号を編集ボックスに入力 (例: 60601) してから、**[Get Weather]** をクリックします。 該当する地域の気象データがコントロールに表示されます。
 
      ![実行中のアプリの Windows バージョン](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -644,4 +644,4 @@ ms.locfileid: "54764579"
  PCL はコンパイルされてから各プラットフォーム固有のアプリ パッケージに組み込まれるため、PCL の共有コードはプラットフォームに中立的です。 条件付きコンパイルを使用してプラットフォーム固有のコードを区別した共有コードを記述する場合は、*共有*プロジェクトを使用することができます。 詳細については、[コード共有オプション](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com) の説明を参照してください。
 
 ## <a name="see-also"></a>関連項目
- [Xamarin 開発者サイト](http://developer.xamarin.com/) [Windows デベロッパー センター](https://dev.windows.com/en-us) [Swift およびC#クイック リファレンスのポスター](http://aka.ms/scposter)
+ [Xamarin 開発者サイト](http://developer.xamarin.com/) [Windows デベロッパー センター](https://dev.windows.com/en-us) [Swift およびC#クイック リファレンスのポスター](https://aka.ms/scposter)

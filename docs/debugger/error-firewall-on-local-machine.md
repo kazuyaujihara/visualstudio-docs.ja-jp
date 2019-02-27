@@ -1,5 +1,5 @@
 ---
-title: エラー :ローカル コンピューターのファイアウォール |Microsoft Docs
+title: 'エラー: ローカル コンピューターでファイアウォールの設定 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1781fef79dc9d80bae6a0484788298324e8bbd52
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87a1813410a092ced335f37b9df4cf6547ca1cc3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963737"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715766"
 ---
-# <a name="error-firewall-on-local-machine"></a>エラー :ローカル コンピューターのファイアウォール
-Visual Studio を実行するローカル コンピューターのインターネット接続ファイアウォールは、リモート デバッグを許可するように設定されていません。 既定のトランスポートを使用したマネージド リモート デバッグまたはネイティブ リモート デバッグでは、DCOM トラフィック用に TCP 135 ポートを開く必要があります。 ファイルおよびプリンターの共有を有効にし、devenv.exe を例外リストに追加することも必要です。 また、IPSEC ポートを開く必要がある場合もあります。  
-  
+# <a name="error-firewall-on-local-machine"></a>エラー : ローカル コンピューターのファイアウォール
+Visual Studio を実行するローカル コンピューターのインターネット接続ファイアウォールは、リモート デバッグを許可するように設定されていません。 既定のトランスポートを使用したマネージド リモート デバッグまたはネイティブ リモート デバッグでは、DCOM トラフィック用に TCP 135 ポートを開く必要があります。 ファイルおよびプリンターの共有を有効にし、devenv.exe を例外リストに追加することも必要です。 また、IPSEC ポートを開く必要がある場合もあります。
+
  詳細については、次を参照してください。[リモート デバッグ](../debugger/remote-debugging.md)します。
