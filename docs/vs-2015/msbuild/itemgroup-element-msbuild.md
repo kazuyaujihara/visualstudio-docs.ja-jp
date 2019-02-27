@@ -88,7 +88,7 @@ ms.locfileid: "54772080"
 </Project>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
  [項目](../msbuild/msbuild-items.md)   
  [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)
