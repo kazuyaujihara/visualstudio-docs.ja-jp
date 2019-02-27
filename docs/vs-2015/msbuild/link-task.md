@@ -927,5 +927,5 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    詳細については、「[/VERSION (バージョン情報)](http://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)
