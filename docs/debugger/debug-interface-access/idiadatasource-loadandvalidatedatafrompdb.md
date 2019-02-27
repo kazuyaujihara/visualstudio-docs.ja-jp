@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0024acf89af28e3496443c0e0dd74377618564
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 5426e27d7b100c42cd571935b1634d6dbd6e990f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987354"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626142"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 開き、プログラム データベース (.pdb) ファイルに指定すると、署名情報と一致することを確認しますと、デバッグのデータ ソースとしての .pdb ファイルを準備します。
@@ -34,22 +34,26 @@ HRESULT loadAndValidateDataFromPdb ( 
 ```
 
 #### <a name="parameters"></a>パラメーター
-`pdbPath`  
+`pdbPath`
+
 [in].Pdb ファイルへのパス。
 
-`pcsig70`  
+`pcsig70`
+
 [in].Pdb ファイルの署名を検証する GUID の署名。 ファイルを .pdb のみ[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]GUID の署名を後であるとします。
 
-`sig`  
+`sig`
+
 [in].Pdb ファイルの署名を検証する 32 ビットの署名。
 
-`age`  
+`age`
+
 [in]保存期間の値を確認します。 任意の既知の時刻値に、年齢が必ずしも対応していない、.pdb ファイルが対応する .exe ファイルと同期していないかを判断するために使用されます。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 次の表では、このメソッドの戻り値を示します。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|ファイルを開いて、できなかったか、ファイルがの形式が無効です。|
 |E_PDB_FORMAT|旧形式のファイルにアクセスしようとしています。|
@@ -58,7 +62,7 @@ HRESULT loadAndValidateDataFromPdb ( 
 |E_INVALIDARG|無効なパラメーター。|
 |E_UNEXPECTED|データ ソースは既に準備されています。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 .Pdb ファイルには、署名と経過時間の両方の値が含まれています。 これらの値は、.pdb ファイルに一致する .exe または .dll ファイルにレプリケートされます。 データ ソースを準備する前に、このメソッドは、名前付きの .pdb ファイルの署名と保存期間が指定された値と一致するを確認します。
 
 検証を伴わない .pdb ファイルを読み込むには、使用、 [idiadatasource::loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)メソッド。
@@ -88,7 +92,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)  
-[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

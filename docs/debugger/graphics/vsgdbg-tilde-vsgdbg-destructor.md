@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 800a270ddb8e320bc7f7f712850cfd84200f00a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 64d2ce58a0a543a6bccfca4d96ff57915d45ce49
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983613"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686562"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg (デストラクター)
-`VsgDbg` クラスのインスタンスを破棄します。 グラフィックス情報がアクティブに記録されている場合、グラフィック ログ ファイルは終了して閉じられ、グラフィックス情報がアクティブにキャプチャされているときに使用されたリソースが解放されます。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-~VsgDbg();  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [VsgDbg::VsgDbg (コンストラクター)](vsgdbg-vsgdbg-constructor.md)
+`VsgDbg` クラスのインスタンスを破棄します。 グラフィックス情報がアクティブに記録されている場合、グラフィック ログ ファイルは終了して閉じられ、グラフィックス情報がアクティブにキャプチャされているときに使用されたリソースが解放されます。
+
+## <a name="syntax"></a>構文
+
+```C++
+~VsgDbg();
+```
+
+## <a name="see-also"></a>関連項目
+- [VsgDbg::VsgDbg (コンストラクター)](vsgdbg-vsgdbg-constructor.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b03dfc1eb19b1e92caac17f9f3f852e5b5c227c4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: eada57433b37f759da51ecdb380e530f3fb77fdf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227382"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625986"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 セクションの投稿を記述するデータを取得、つまり、連続メモリ ブロックに起因イメージに、コンパイル単位。
@@ -31,7 +31,7 @@ IDiaSectionContrib : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
 次の表は、メソッドの`IDiaSectionContrib`します。
 
-|方法|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[IDiaSectionContrib::get_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|このセクションの原因であるコンパイル単位シンボルへの参照を取得します。|
 |[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|投稿物のアドレスのセクションの一部を取得します。|
@@ -134,7 +134,7 @@ void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>関連項目
-[インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
-[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)  
-[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)
+- [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
+- [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)
+- [IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)

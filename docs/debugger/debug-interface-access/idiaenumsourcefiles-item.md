@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiaenumsourcefiles::item |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aafa4143551afdc6fc057d6c83cf1b08303ac9a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 403aa09a487ea1587ab30389f180afecec5ac6bf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029532"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623542"
 ---
 # <a name="idiaenumsourcefilesitem"></a>IDiaEnumSourceFiles::Item
-インデックスを使用してソース ファイルを取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT Item (   
-   DWORD            index,  
-   IDiaSourceFile** sourceFile  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- インデックス  
- [in]インデックス、 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)を取得するオブジェクト。 インデックスは 0 ~ の範囲内で、 `count`-1 の場合、`count`によって返される、 [idiaenumsourcefiles::get_count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)メソッド。  
-  
- sourceFile  
- [out]返します、 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)目的のソース ファイルを表すオブジェクト。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
+インデックスを使用してソース ファイルを取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT Item ( 
+   DWORD            index,
+   IDiaSourceFile** sourceFile
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ インデックス
+
+[in]インデックス、 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)を取得するオブジェクト。 インデックスは 0 ~ の範囲内で、 `count`-1 の場合、`count`によって返される、 [idiaenumsourcefiles::get_count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)メソッド。
+
+ sourceFile
+
+[out]返します、 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)目的のソース ファイルを表すオブジェクト。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

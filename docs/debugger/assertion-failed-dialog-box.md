@@ -1,4 +1,4 @@
-﻿---
+---
 title: アサーションに失敗しました ダイアログ ボックス |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,21 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942abb66e56e72cbe462f35944a9e4e03d471052
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39362adf5837e3293782df04627af9acd06fdd88
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941815"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619850"
 ---
 # <a name="assertion-failed-dialog-box"></a>[アサートに失敗しました] ダイアログ ボックス
-アサート ステートメントでは、プログラムの特定位置にある true となるはずの条件を指定します。 条件が true にならない場合、アサーションは失敗し、プログラムの実行が停止し、このダイアログ ボックスが表示されます。  
-  
-|クリック|終了|  
-|-----------|--------|  
-|[再試行]|アサーションをデバッグするか、アサートに関するヘルプを表示します。|  
-|Ignore|アサーションを無視してプログラムを引き続き実行します。|  
-|[中止]|プログラムの実行を停止し、デバッグ セッションを終了します。|  
-  
+アサート ステートメントでは、プログラムの特定位置にある true となるはずの条件を指定します。 条件が true にならない場合、アサーションは失敗し、プログラムの実行が停止し、このダイアログ ボックスが表示されます。
+
+|ここを|終了|
+|-----------|--------|
+|[再試行]|アサーションをデバッグするか、アサートに関するヘルプを表示します。|
+|Ignore|アサーションを無視してプログラムを引き続き実行します。|
+|[中止]|プログラムの実行を停止し、デバッグ セッションを終了します。|
+
 ## <a name="see-also"></a>関連項目
- [C/C++ アサーション](../debugger/c-cpp-assertions.md)
+
+- [C/C++ アサーション](../debugger/c-cpp-assertions.md)

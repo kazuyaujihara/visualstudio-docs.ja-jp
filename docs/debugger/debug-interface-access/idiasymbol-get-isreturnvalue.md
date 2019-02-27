@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25265d25a3f4d89682ff7e4b8d74ee02f3c073c1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14ae065f16c2d047311308d63da7680a61fa22ad
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950703"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622223"
 ---
 # <a name="idiasymbolgetisreturnvalue"></a>IDiaSymbol::get_isReturnValue
-変数は戻り値の値を保持するかどうかを指定します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_isReturnValue(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]ポインター、`BOOL`変数は戻り値の値を保持するかどうかを指定します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
-  
-## <a name="see-also"></a>関連項目  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+変数は戻り値の値を保持するかどうかを指定します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_isReturnValue(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]ポインター、`BOOL`変数は戻り値の値を保持するかどうかを指定します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+
+## <a name="see-also"></a>関連項目
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

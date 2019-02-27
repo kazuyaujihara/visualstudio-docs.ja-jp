@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiaenumtables::skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80d734b03741bc6b794c925daa0c02084173c088
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 24232878452082dd1769c9bc9f1cd22d081968f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042713"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596556"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
-指定された数の列挙体シーケンス内のテーブルをスキップします。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `celt`  
- [in]スキップする列挙体シーケンス内のテーブルの数。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`をスキップする複数のテーブルがありませんがある場合。  
-  
+指定された数の列挙体シーケンス内のテーブルをスキップします。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `celt`
+
+[in]スキップする列挙体シーケンス内のテーブルの数。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`をスキップする複数のテーブルがありませんがある場合。
+
 ## <a name="see-also"></a>関連項目
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

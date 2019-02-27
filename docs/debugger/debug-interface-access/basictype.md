@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bc24a62281e754af8d97e641e8fa6e6866f7570
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
+ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318020"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626116"
 ---
 # <a name="basictype"></a>BasicType
 シンボルの基本的な型を指定します。
@@ -50,59 +50,41 @@ enum BasicType {
 ```
 
 ## <a name="elements"></a>Elements
-btNoType  
-基本的な型が指定されていません。
+基本的な型が指定されていない btNoType します。
 
-btVoid  
-基本的な型は、`void`します。
+btVoid 基本的な型は、`void`します。
 
-btChar  
-基本的な型は、 `char` (C と C++ の型)。
+btChar 基本的な型は、 `char` (C と C++ の型)。
 
-btWChar  
-基本的な型は、ワイド (Unicode) 文字 (`WCHAR`)。
+btWChar 基本的な型は、ワイド (Unicode) 文字 (`WCHAR`)。
 
-btInt  
-基本的な型が`signed int`(C と C++ の型)。
+btInt 基本的な型は`signed int`(C と C++ の型)。
 
-btUInt  
-基本的な型が`unsigned int`(C と C++ の型)。
+btUInt 基本的な型は`unsigned int`(C と C++ の型)。
 
-btFloat  
-基本的な型は、浮動小数点数 (`FLOAT`)。
+btFloat 基本的な型が浮動小数点数 (`FLOAT`)。
 
-btBCD  
-基本的な型がバイナリ コード化された 10 進数 (`BCD`)。
+btBCD 基本的な型がバイナリ コード化された 10 進数 (`BCD`)。
 
-btBool  
-基本的な型がブール (`BOOL`)。
+btBool 基本的な型がブール値 (`BOOL`)。
 
-btLong  
-基本的な型は、 `long int` (C と C++ の型)。
+btLong 基本的な型は、 `long int` (C と C++ の型)。
 
-btULong  
-基本的な型は、 `unsigned long int` (C と C++ の型)。
+btULong 基本的な型は、 `unsigned long int` (C と C++ の型)。
 
-btCurrency  
-基本的な型は、通貨です。
+btCurrency 基本的な型は、通貨です。
 
-btDate  
-基本的な型は日付/時刻 (`DATE`)。
+btDate 基本的な型は日付/時刻 (`DATE`)。
 
-btVariant  
-基本的な型が変数の型の構造 (`VARIANT`)。
+btVariant 基本的な型が変数の型の構造 (`VARIANT`)。
 
-btComplex  
-基本的な型は、複雑な数値です。
+btComplex 基本的な型は、複雑な数値です。
 
-btBit  
-基本的な型は、少しです。
+btBit 基本的な型は、少しです。
 
-btBSTR  
-基本的な型が基本またはバイナリ文字列 (`BSTR`)。
+btBSTR 基本的な型は、基本的なまたはバイナリ文字列 (`BSTR`)。
 
-btHresult  
-基本的な型は、`HRESULT`します。
+btHresult 基本的な型は、`HRESULT`します。
 
 ## <a name="remarks"></a>解説
 この列挙体の値がによって返される、 [idiasymbol::get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)メソッド。
@@ -111,6 +93,6 @@ btHresult
 ヘッダー: cvconst.h
 
 ## <a name="see-also"></a>関連項目
-[列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
-[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)
+- [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
+- [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

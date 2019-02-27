@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335598"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613376"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用して、ライブの ASP.NET Azure アプリをデバッグします。
 
@@ -32,7 +32,7 @@ ms.locfileid: "56335598"
 > * スナップ ポイントを設定し、スナップショットの表示
 > * ログポイントを設定します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 * スナップショット デバッガーは、Visual Studio 2017 Enterprise バージョン 15.5 以降で使用できるのみ、 **Azure 開発ワークロード**します。 (下、**個々 のコンポーネント** タブを下にあります**デバッグとテスト** > **スナップショット デバッガー**)。
 
@@ -63,7 +63,7 @@ ms.locfileid: "56335598"
 2. スナップショット デバッガーをアタッチします。 いくつかの方法のいずれかを使用できます。
 
     * 選択**デバッグ > スナップショット デバッガーをアタッチしています.**.プロジェクトがデプロイされた Azure App Service と Azure ストレージ アカウントを選択し、クリックして**アタッチ**します。
-  
+
       ![[デバッグ] メニューからスナップショット デバッガーを起動します。](../debugger/media/snapshot-debug-menu-attach.png)
 
     * クリックし、プロジェクトを右クリックして**発行**とでは、発行ページをクリックし、**スナップショット デバッガーのアタッチ**します。 プロジェクトがデプロイされた Azure App Service と Azure ストレージ アカウントを選択し、クリックして**アタッチ**します。
@@ -73,7 +73,7 @@ ms.locfileid: "56335598"
     ![F5 キーを押してのドロップダウン メニューからスナップショット デバッガーを起動します。](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Cloud Explorer を使用して (**ビュー > Cloud Explorer**) にプロジェクトがデプロイされた Azure App Service を右クリックし、Azure storage アカウントを選択および順にクリックします**スナップショット デバッガーのアタッチ**します。
-  
+
       ![Cloud Explorer からスナップショット デバッガーを起動します。](../debugger/media/snapshot-launch.png)
 
     選択した最初の時刻**スナップショット デバッガーのアタッチ**、Azure App Service でのスナップショット デバッガー サイト拡張機能をインストールするように求められます。 このインストールでは、Azure App Service の再起動が必要です。

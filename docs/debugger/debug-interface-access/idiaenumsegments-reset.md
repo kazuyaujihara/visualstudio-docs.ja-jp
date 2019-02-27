@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiaenumsegments::reset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9194483e836ab1280fa7ba473987e926828687
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f85cd612dc2b45150745c17420d79a487c821ff
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070852"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603106"
 ---
 # <a name="idiaenumsegmentsreset"></a>IDiaEnumSegments::Reset
-先頭に、列挙体シーケンスをリセットします。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT Reset ();  
-```  
-  
-## <a name="return-value"></a>戻り値  
- `S_OK` を返します。  
-  
+先頭に、列挙体シーケンスをリセットします。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT Reset ();
+```
+
+## <a name="return-value"></a>戻り値
+ `S_OK` を返します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

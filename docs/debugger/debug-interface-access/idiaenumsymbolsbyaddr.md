@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec61145d51ba383099d9b08fe0a50db10f97022
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 96ed66156fae24e22c549fffb6eb982a45e7e3f5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155618"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623074"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 アドレスを指定して、データ ソースに含まれるさまざまなシンボルを列挙します。
@@ -31,7 +31,7 @@ IDiaEnumSymbolsByAddr : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
 次の表は、メソッドの`IDiaEnumSymbolsByAddr`します。
 
-|方法|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|セクションとオフセットで検索を実行して、列挙子を配置します。|
 |[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|相対仮想アドレス (RVA) で検索を実行して、列挙子を配置します。|
@@ -40,7 +40,7 @@ IDiaEnumSymbolsByAddr : IUnknown
 |[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|アドレスの順序で前のシンボルを取得します。 フェッチされる要素の数によっては、列挙子の位置を更新します。|
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|オブジェクトのコピーを作成します。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 このインターフェイスは、アドレスでグループ化されたシンボルを提供します。 たとえばの種類でグループ化されたシンボルを使用する`SymTagUDT`(ユーザー定義型) または`SymTagBaseClass`を使用して、 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)インターフェイス。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
@@ -101,6 +101,6 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>関連項目
-[インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)  
-[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+- [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

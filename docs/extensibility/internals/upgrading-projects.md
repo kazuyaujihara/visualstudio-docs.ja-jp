@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a6f1d12e5735a0c285918c4621083bf6c1b6769
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31af6efb2021567b9eb4a5f5048b367c57971fee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949796"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841745"
 ---
 # <a name="upgrading-projects"></a>プロジェクトのアップグレード
 
@@ -64,7 +64,7 @@ ms.locfileid: "54949796"
 
 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> インターフェイスを使用する従来の機能は引き続きサポートされますが、概念上はプロジェクトを開くことの一部としてプロジェクト システムをアップグレードします。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>インターフェイスが Visual Studio 環境のいてによって呼び出されるため、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>インターフェイスが呼び出されるかを実装します。 この方法なら、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> を使用してプロジェクトのコピーとアップグレードの部分だけを実装できます。そして、残りの作業を <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> インターフェイスが一括 (通常は新しい場所) で実行するよう委任できます。
 
-実装のサンプルについて<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>を参照してください[VSSDK のサンプル](http://aka.ms/vs2015sdksamples)します。
+実装のサンプルについて<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>を参照してください[VSSDK のサンプル](https://aka.ms/vs2015sdksamples)します。
 
 プロジェクトのアップグレードに伴って次の状況が発生します。
 

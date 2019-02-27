@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3640cebfda96b0c618352017e982c695ad908de0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 393abb3b1e1872a416865cbfee5c142bef98ce78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155592"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637075"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 シンボルを照会するためのセッションを開きます。
@@ -31,19 +31,20 @@ HRESULT openSession ( 
 ```
 
 #### <a name="parameters"></a>パラメーター
-ppSession  
+ppSession
+
 [out]返します、 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)開いているセッションを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 次の表では、このメソッドの戻り値を示します。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)シンボルのソースとオブジェクトが既に初期化されていません。|
 |E_INVALIDARG|無効な `ppSession` パラメーター。|
 |E_OUTOFMEMORY|メモリ不足のため、セッションを開きます。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 このメソッドを開き、 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)データ ソースのオブジェクト。
 
 `IDiaSession` オブジェクトは、データ ソースにクエリを実装します。 セッションでは、デバッグ シンボルのセットごとに 1 つのアドレス空間を管理します。 データ ソースのシンボルによって記述される .exe または .dll ファイルがある場合は、アクティブでは、複数のアドレスの範囲 (たとえば、複数のプロセスでは、読み込まれることがある) ため、し、アドレス範囲ごとに 1 つのセッションを使用する必要があります。
@@ -60,7 +61,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>関連項目
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[概要](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[.Pdb ファイルの照会](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [概要](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [.Pdb ファイルの照会](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

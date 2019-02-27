@@ -1,4 +1,4 @@
-﻿---
+---
 title: Idiasession::findlines |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,41 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae2278835f6de612b61e5fc0a2a1fc2689bad564
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b127cbc5c9ddc5a2aa2d293d1371bab18d191fdb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019477"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642886"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-指定したコンパイル単位とソース ファイル識別子内で行番号を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT findLines (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `compiland`  
- [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)コンパイル単位を表すオブジェクト。 行番号を検索するためのコンテキストとしては、このインターフェイスを使用します。  
-  
- `file`  
- [in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)で行番号を検索するソース ファイルを表すオブジェクト。  
-  
- `ppResult`  
- [out]返します、 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)行番号の一覧を含むオブジェクトを取得します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
+指定したコンパイル単位とソース ファイル識別子内で行番号を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT findLines ( 
+   IDiaSymbol*           compiland,
+   IDiaSourceFile*       file,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `compiland`
+
+[in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)コンパイル単位を表すオブジェクト。 行番号を検索するためのコンテキストとしては、このインターフェイスを使用します。
+
+ `file`
+
+[in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)で行番号を検索するソース ファイルを表すオブジェクト。
+
+ `ppResult`
+
+[out]返します、 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)行番号の一覧を含むオブジェクトを取得します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
