@@ -84,6 +84,6 @@ ms.locfileid: "54782709"
 ### <a name="reference"></a>参照  
  [単体テストのコンテンツ インデックス](http://go.microsoft.com/fwlink/?LinkID=254719)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コード品質の向上](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)   
  [アプリケーションのテスト](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)

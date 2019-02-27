@@ -42,7 +42,7 @@ ms.locfileid: "54760179"
 
 3. プロファイル環境変数を初期化します。 型:  
 
-    **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
+    **VSPerfClrEnv /globalsampleon** **[/samplelineoff]**  
 
    -   **/globalsampleon** はサンプリングを有効にします。  
 
@@ -131,6 +131,6 @@ ms.locfileid: "54760179"
 
 4.  コンピューターを再起動します。  
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)   
  [サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)

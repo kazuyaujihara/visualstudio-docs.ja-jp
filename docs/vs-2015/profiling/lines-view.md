@@ -45,7 +45,7 @@ ms.locfileid: "54762014"
   
 -   ステートメントが終了するソース行の文字。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [行ビュー](../profiling/lines-view-sampling-data.md)   
  [行ビュー - サンプリング](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [行 ビュー](../profiling/lines-view-contention-data.md)

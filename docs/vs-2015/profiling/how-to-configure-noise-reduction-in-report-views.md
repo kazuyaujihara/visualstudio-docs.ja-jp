@@ -79,7 +79,7 @@ ms.locfileid: "54800330"
   
 4.  **[OK]** をクリックします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス ツールのレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)   
  [方法: インストルメンテーションで短い関数を除外または含める](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [コール ツリー ビュー](../profiling/call-tree-view.md)   

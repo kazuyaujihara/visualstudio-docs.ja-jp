@@ -129,7 +129,7 @@ Visual Studio プロファイラーでは、オペレーティング システ�
   
      C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools です。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [概要](../profiling/overviews-performance-tools.md)   
  [方法 : サンプリング イベントを選択する](../profiling/how-to-choose-sampling-events.md)   
  [方法 : CPU カウンター データを収集する](../profiling/how-to-collect-cpu-counter-data.md)   

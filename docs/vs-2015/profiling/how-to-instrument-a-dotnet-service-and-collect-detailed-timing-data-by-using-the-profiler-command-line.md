@@ -113,6 +113,6 @@ ms.locfileid: "54766433"
 
 5.  コンピューターを再起動します。  
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)   
  [インストルメンテーション メソッドのデータ ビュー](../profiling/instrumentation-method-data-views.md)

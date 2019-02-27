@@ -51,6 +51,6 @@ ms.locfileid: "54795833"
 ## <a name="zooming"></a>ズーム  
  CPU 使用状況グラフまたは GPU アクティビティ グラフをズームするには、セクションを選択するか、グラフ上部のズーム スライダー ツールを使用します。 ズーム設定は、他のビューに切り替えてもそのままになります。 また縮小するには、ズーム スライダー ツールを使用します。 Ctrl キーを押しながらスクロールしてズームすることもできます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)   
  [コア ビュー](../profiling/cores-view.md)

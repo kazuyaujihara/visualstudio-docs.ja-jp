@@ -103,5 +103,5 @@ MSBuild ツールセットには、アプリケーション プロジェクト�
 
   MSBuildToolsPath プロパティを追加する場合と同じ構文を使用して、ToolsVersion 固有のカスタム プロパティを構成ファイルに追加することもできます。 このようなカスタム プロパティをプロジェクト ファイルで利用できるようにするには、構成ファイルに指定された値の名前と同じ名前を使用します。 構成ファイルではツールセットを定義できますが、サブツールセットは定義できません。  
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

@@ -107,6 +107,6 @@ ms.locfileid: "54773377"
   
  Visual Studio 2012 以降、その 2 つの設定は両方とも非推奨とされました。 HTML ロガーを有効にするために変更する必要がある設定は、EqtTraceLevel のみです。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
  [方法: Microsoft Visual Studio からテストを実行する](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

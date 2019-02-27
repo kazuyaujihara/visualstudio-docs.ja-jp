@@ -36,7 +36,7 @@ ms.locfileid: "54767505"
   
  .NET メモリ データの場合、IP ビューには、メモリを割り当てる命令が表示されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [命令ポインター (IP) ビュー](../profiling/instruction-pointers-ips-view-sampling-data.md)   
  [命令ポインター (IP) ビュー - サンプリング](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [命令ポインター (IP) ビュー](../profiling/instruction-pointers-ips-view-contention-data.md)

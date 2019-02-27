@@ -46,7 +46,7 @@ ms.locfileid: "54764925"
  Windows パフォーマンス カウンター データ  
  Windows パフォーマンス カウンター データが収集される場合は、その値がカウンターの名前の付いた列に表示されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス レポートの概要](../profiling/performance-report-overview.md)   
  [< PAVE_OVER > 方法。プロファイル マークを構成します。](http://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
  [< PAVE_OVER > 方法。Profiler のデータ ファイルにマークを挿入します。](http://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   

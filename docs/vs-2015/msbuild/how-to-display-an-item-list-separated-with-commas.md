@@ -70,6 +70,6 @@ ms.locfileid: "54765026"
 </Project>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
  [項目](../msbuild/msbuild-items.md)

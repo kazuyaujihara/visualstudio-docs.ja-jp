@@ -45,5 +45,5 @@ ms.locfileid: "54763375"
   
 -   書き込み待機時間 (ミリ秒)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

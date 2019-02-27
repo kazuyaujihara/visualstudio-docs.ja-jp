@@ -82,6 +82,6 @@ ms.locfileid: "54801764"
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [VSPerfASPNETCmd を使用した迅速な Web サイト プロファイリング](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)

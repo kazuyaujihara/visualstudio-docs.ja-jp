@@ -40,5 +40,5 @@ ms.locfileid: "54801745"
   
  .NET Framework SDK に現在付属しているターゲット パックには、そのバージョンの Framework のすべてのランタイム アセンブリのリストが含まれています。これは再配布 (Redist) リストと呼ばれます。 これにより、ビルド システムが型を間違ったバージョンのアセンブリに解決することはなくなっています。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [詳細な概念](../msbuild/msbuild-advanced-concepts.md)

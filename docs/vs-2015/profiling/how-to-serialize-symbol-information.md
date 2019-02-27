@@ -36,7 +36,7 @@ ms.locfileid: "54769180"
   
 3.  **[全般設定]** で **[シンボル情報を自動的にシリアル化]** を選択します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [方法: Windows シンボル情報を参照する](../profiling/how-to-reference-windows-symbol-information.md)   
  [How to: Save Analyzed Report Files (方法: 分析されたレポート ファイルを保存する)](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)

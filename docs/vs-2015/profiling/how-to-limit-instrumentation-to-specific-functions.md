@@ -68,7 +68,7 @@ ms.locfileid: "54795777"
    > [!NOTE]
    >  バイナリ内の関数を一覧表示するには、プロファイリング ツールのインストール ディレクトリ (通常は、[!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]インストール ディレクトリの下にある \Team Tools\Performance Tools ディレクトリ) でコマンド プロンプト ウィンドウを開き、**vsinstr /DumpFuncs** と入力します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [データ コレクションの制御](../profiling/controlling-data-collection.md)   
  [方法: インストルメンテーションを特定の DLL に制限する](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [方法: 追加インストルメンテーション オプションを指定する](../profiling/how-to-specify-additional-instrumentation-options.md)

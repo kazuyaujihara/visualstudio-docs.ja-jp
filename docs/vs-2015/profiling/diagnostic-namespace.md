@@ -51,5 +51,5 @@ namespace diagnostic;
   
  **名前空間:** Concurrency  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コンカレンシー名前空間 (コンカレンシー ビジュアライザー)](../profiling/concurrency-namespace-concurrency-visualizer.md)

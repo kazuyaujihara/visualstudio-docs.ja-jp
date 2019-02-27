@@ -75,7 +75,7 @@ ms.locfileid: "54797041"
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
   [MSBuild](msbuild.md)  
  [ターゲット](../msbuild/msbuild-targets.md)   
  [方法 : ビルドをクリーンする](../msbuild/how-to-clean-a-build.md)

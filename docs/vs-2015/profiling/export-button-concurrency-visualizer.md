@@ -25,6 +25,6 @@ ms.locfileid: "54758575"
 
 **[エクスポート]** ボタンでは、独自のレコードのためや、Microsoft Excel など、別のツールで使用するために、.csv ファイルとして呼び出し履歴をエクスポートできます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)   
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

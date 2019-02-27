@@ -31,5 +31,5 @@ ms.locfileid: "54801454"
   
 -   拡大と縮小: タイムラインの上にマウス ポインターを置き、CTRL を押しながらマウス ホイールを動かします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コア ビュー](../profiling/cores-view.md)

@@ -61,5 +61,5 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
   
  **ANSI:** CvCreateMarkerSeriesA  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)

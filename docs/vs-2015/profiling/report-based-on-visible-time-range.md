@@ -27,7 +27,7 @@ ms.locfileid: "54774589"
   
  データに関するその他の情報については、次の表を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [表示するスレッド アクティビティがありません](../profiling/no-thread-activity-to-show-threads-view.md)   
  [実行プロファイル レポート](../profiling/execution-profile-report.md)   
  [同期時間](../profiling/synchronization-time.md)   

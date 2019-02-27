@@ -36,5 +36,5 @@ Microsoft Visual Studio のコード カバレッジ分析は、コードの中�
   
    ビルドの実行後、コード カバレッジの結果がビルドの概要に表示されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

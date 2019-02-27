@@ -34,5 +34,5 @@ ms.locfileid: "54801158"
 ## <a name="related-sections"></a>関連項目  
  [データ収集の制御](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)

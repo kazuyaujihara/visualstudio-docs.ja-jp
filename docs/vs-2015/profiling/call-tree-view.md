@@ -51,7 +51,7 @@ ms.locfileid: "54752123"
   
  [コール ツリー ビュー](../profiling/call-tree-view-contention-data.md)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)   
  [インストルメンテーション データ値について](../profiling/understanding-instrumentation-data-values.md)   
  [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)

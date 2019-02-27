@@ -147,6 +147,6 @@ Visual Studio には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-lo
 ### <a name="msdn-library"></a>MSDN ライブラリ  
  [MSDN ライブラリ – 既存コードの単体テストの作成と実行 (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Visual Studio でのストア アプリのテスト](../test/testing-store-apps-with-visual-studio.md)   
  [Team Foundation ビルドを使用した Windows ストア アプリのビルドとテスト](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

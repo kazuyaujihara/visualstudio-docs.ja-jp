@@ -57,7 +57,7 @@ ms.locfileid: "54767858"
 |**レポート データのフィルター**|プロファイル レポート フィルター ウィンドウを表示します。このウィンドウでは、レポート ビューに表示されるデータを制限するための条件を指定できます。 詳細については、「[パフォーマンス レポート ビュー フィルター](../profiling/performance-report-view-filter.md)」を参照してください。|  
 |**全画面表示の切り替え**|レポート ビューの全画面表示モードを切り替えます。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [概要 ビュー](../profiling/summary-view-sampling-data.md)   
  [概要 ビュー](../profiling/summary-view-instrumentation-data.md)   
  [概要 ビュー](../profiling/summary-view-dotnet-memory-data.md)

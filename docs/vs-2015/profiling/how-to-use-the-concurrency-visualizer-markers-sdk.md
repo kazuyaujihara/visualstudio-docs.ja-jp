@@ -179,5 +179,5 @@ ms.locfileid: "54801714"
   
      ![3 つのカスタム マーカー系列があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)

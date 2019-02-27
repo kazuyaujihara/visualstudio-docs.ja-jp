@@ -65,5 +65,5 @@ void write_flag(
   
  **名前空間:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [marker_series クラス](../profiling/marker-series-class.md)

@@ -90,7 +90,7 @@ ms.locfileid: "54756412"
   
      各レポート ビューは、\<プレフィックス>_\<レポート ビュー名>.\<csv&#124;xml> という名前の別のファイルに保存されます  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス エクスプ ローラー](../profiling/performance-explorer.md)   
  [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)   
  [パフォーマンス データ ファイルの比較](../profiling/comparing-performance-data-files.md)   

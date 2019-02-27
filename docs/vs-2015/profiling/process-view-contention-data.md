@@ -41,6 +41,6 @@ ms.locfileid: "54796779"
 |**Name**|プロセスまたはスレッドの名前。|  
 |**ID (一意)**|プロファイラーによって生成される、プロセスまたはスレッドに固有の ID。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
  [プロセス ビュー](../profiling/process-view.md)

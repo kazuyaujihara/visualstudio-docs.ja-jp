@@ -64,7 +64,7 @@ COM 相互運用のために、指定されたアセンブリの登録を解除�
 </Project>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [RegisterAssembly タスク](../msbuild/registerassembly-task.md)   
  [タスク](../msbuild/msbuild-tasks.md)   
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

@@ -41,6 +41,6 @@ ms.locfileid: "54774902"
     |*VSPFile*|プロファイル データ (.vsp または .vsps) ファイル。 完全パスまたは部分パスで指定できます。|  
     |Xml|XML 形式のレポートを生成します。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: ETW (Event Tracing for Windows) データを収集する](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
  [プロファイリング ツールの API](../profiling/profiling-tools-apis.md)

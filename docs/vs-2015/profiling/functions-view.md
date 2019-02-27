@@ -34,7 +34,7 @@ ms.locfileid: "54774662"
   
  関数ビューに表示される列は、データの収集に使用したプロファイル方法 (サンプリングまたはインストルメンテーション)、およびプロファイル実行で .NET メモリ データを収集対象としたかどうかによって異なります。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [関数ビュー](../profiling/functions-view-sampling-data.md)   
  [関数ビュー](../profiling/functions-view-instrumentation-data.md)   
  [関数ビュー - インストルメンテーション](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   

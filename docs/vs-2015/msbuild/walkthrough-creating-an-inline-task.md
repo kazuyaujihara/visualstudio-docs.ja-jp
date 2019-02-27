@@ -254,7 +254,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
   
  `</Code>`  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [インライン タスク](../msbuild/msbuild-inline-tasks.md)   
  [タスク](../msbuild/msbuild-tasks.md)   
  [ターゲット](../msbuild/msbuild-targets.md)

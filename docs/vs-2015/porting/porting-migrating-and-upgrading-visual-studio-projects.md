@@ -129,5 +129,5 @@ Visual Studio の新しいバージョンに移行するかどうかを考慮す
 |コード レビューおよび担当作業|[!INCLUDE[esprfound](../includes/esprfound-md.md)] クライアントを [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)]に接続した場合は、コード レビュー機能および担当作業機能を使用できません。|
 |[!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)]|MSBuild や [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] などの 64 ビット環境を使用して、 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] で作成した [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]アプリをビルドすることはできません。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [カスタム プロジェクトでのバージョンの認識](../misc/making-custom-projects-version-aware.md)

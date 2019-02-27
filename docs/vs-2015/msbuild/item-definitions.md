@@ -240,5 +240,5 @@ ms.locfileid: "54796674"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [バッチ処理](../msbuild/msbuild-batching.md)

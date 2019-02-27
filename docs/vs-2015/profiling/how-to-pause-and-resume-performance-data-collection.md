@@ -40,6 +40,6 @@ ms.locfileid: "54790885"
   
     -   プロファイリング セッションを終了してレポートを生成するには、**[プロファイリングの停止]** を選択します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [データ コレクションの制御](../profiling/controlling-data-collection.md)   
  [方法: パフォーマンス データの収集の開始と終了](../profiling/how-to-start-and-end-performance-data-collection.md)

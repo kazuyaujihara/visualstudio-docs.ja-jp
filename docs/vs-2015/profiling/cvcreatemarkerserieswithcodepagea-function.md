@@ -55,5 +55,5 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
 ## <a name="requirements"></a>要件  
  **ヘッダー:** cvmarkers.h  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)

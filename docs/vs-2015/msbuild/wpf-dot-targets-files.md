@@ -31,7 +31,7 @@ ms.locfileid: "54833707"
   
 [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)] は、組み合わせて特殊な .targets ファイルである **Microsoft.WinFX.targets** が生成される [!INCLUDE[TLA2#tla_wpf](../includes/tla2sharptla-wpf-md.md)] 固有のタスク セットを追加することで [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] を拡張します。 このファイルは、[!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)] で [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] プロジェクトを作るために必要な [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] タスクのセットを組み合わせます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [.Targets ファイル](../msbuild/msbuild-dot-targets-files.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
  [WPF アプリケーション (WPF) のビルド](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

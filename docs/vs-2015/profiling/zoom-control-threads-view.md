@@ -31,7 +31,7 @@ ms.locfileid: "54767521"
 ## <a name="zooming-in-and-out-by-using-the-mouse-wheel"></a>マウス ホイールを使用した拡大縮小  
  タイムライン上の任意の点をクリックし (マウス フォーカスを確実に置くため)、Ctrl キーを押しながらマウス ホイールを移動します (拡大するには前方へ、縮小するには後方へ)。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [チャネルの管理](../profiling/manage-channels.md)   
  [測定モード オン/オフ](../profiling/measure-mode-on-off.md)   
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)   

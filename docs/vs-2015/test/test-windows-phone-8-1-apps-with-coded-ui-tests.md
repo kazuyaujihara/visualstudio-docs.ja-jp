@@ -86,7 +86,7 @@ ms.locfileid: "54765100"
   
 2. 十字線ツールを使用して UI マップを編集することを選択します。  
   
-    ![十字線ツールを使用してコード化された UI テストを生成する] (../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
+    ![十字線ツールを使用してコード化された UI テストを生成する](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
 3. 十字線ツールを使用してアプリを選択してから、アプリの **[AutomationId]** プロパティの値をコピーします。この値は後で、テストでアプリを起動するために使用します。  
   
@@ -384,5 +384,5 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ## <a name="external-resources"></a>外部リソース  
  Microsoft Visual Studio アプリケーション ライフ サイクル管理ブログ:[コード化された UI を使用して Windows Phone の XAML ベース アプリをテストするには](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)

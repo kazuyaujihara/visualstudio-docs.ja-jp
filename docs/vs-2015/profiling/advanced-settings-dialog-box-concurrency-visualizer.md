@@ -86,6 +86,6 @@ ms.locfileid: "54782514"
   
   2 つの ETL ファイルには生のトレース データが保存され、2 つのコンカレンシー ビジュアライザー ファイルには処理されたデータが保存されます。  生の ETL ファイルは通常、トレースが処理された後は使われません。  **[分析後にイベント トレース ログ (ETL) ファイルを削除]** チェック ボックスをオンにすると、ディスクに保存されるトレース データの量が減ります。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [マイ コードのみ](../profiling/just-my-code-threads-view.md)   
  [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)

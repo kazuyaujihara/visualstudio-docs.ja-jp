@@ -45,7 +45,7 @@ ms.locfileid: "54834587"
 |**ソース開始行**|この命令の開始位置である、ソース ファイル内の行番号。|  
 |**ソース終了行**|この命令の終了位置である、ソース ファイル内の行番号。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
  [命令ポインター (IP) ビュー](../profiling/instruction-pointers-ips-view.md)   
  [命令ポインター (IP) ビュー - サンプリング](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   

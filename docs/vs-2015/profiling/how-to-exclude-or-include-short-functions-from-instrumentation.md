@@ -41,6 +41,6 @@ ms.locfileid: "54801662"
   
 4.  **[OK]** をクリックします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [データ コレクションの制御](../profiling/controlling-data-collection.md)   
  [パフォーマンス セッションのプロパティ](../profiling/performance-session-properties.md)

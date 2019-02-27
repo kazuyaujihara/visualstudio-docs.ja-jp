@@ -128,6 +128,6 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
   
  [階層相互作用のビュー](../profiling/tier-interaction-views.md)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: Web サイトのパフォーマンス データを収集する](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [パフォーマンス プロファイリングのビギナーズ ガイド](../profiling/beginners-guide-to-performance-profiling.md)

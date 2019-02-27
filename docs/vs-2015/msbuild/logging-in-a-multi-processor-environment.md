@@ -74,6 +74,6 @@ Culture=neutral
   
  `/dl` スイッチでは、2 つの logger 名をアスタリスク (*) で区切っています。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ビルド ロガー](../msbuild/build-loggers.md)   
  [転送ロガーの作成](../msbuild/creating-forwarding-loggers.md)

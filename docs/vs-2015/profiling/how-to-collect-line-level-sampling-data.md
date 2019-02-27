@@ -58,6 +58,6 @@ ms.locfileid: "54779025"
   
 -   アプリケーションの起動時に、「**VSPerfCmd /lineoff\<他の引数>**」を入力します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)

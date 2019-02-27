@@ -33,6 +33,6 @@ Azure での Python Web サイトの構築をすばやく開始できます。
   
  これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)で視聴できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Wiki ドキュメント](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
  [PTVS の概要と詳細に関するビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

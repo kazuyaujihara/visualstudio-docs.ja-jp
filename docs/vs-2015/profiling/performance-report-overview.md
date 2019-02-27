@@ -96,6 +96,6 @@ Visual Studio Team System Development Edition の統合開発環境 (IDE) の **
   
 -   **[エクスポート]** - .CVS 形式または .XML 形式のファイルに現在のレポートを保存します。別のビューで保存するためのオプションを指定できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)   
  [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)
