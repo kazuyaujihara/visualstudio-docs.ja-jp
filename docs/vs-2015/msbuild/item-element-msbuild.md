@@ -92,7 +92,7 @@ ms.locfileid: "54797026"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [項目](../msbuild/msbuild-items.md)   
  [MSBuild プロパティ](msbuild-properties1.md)   
  [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
