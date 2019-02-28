@@ -161,7 +161,7 @@ DataCollection.CurrentId);
   
      現在のディレクトリに、結果のパフォーマンス データが含まれた .csv ファイルが作成されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [はじめに](../profiling/getting-started-with-performance-tools.md)   

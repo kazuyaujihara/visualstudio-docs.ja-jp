@@ -94,5 +94,5 @@ ms.locfileid: "54793088"
   
 2.  保存するフィルター (.vspf) ファイルの場所と名前を指定します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス ツール のレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)

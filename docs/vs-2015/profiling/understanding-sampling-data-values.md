@@ -52,6 +52,6 @@ ms.locfileid: "54752653"
 ## <a name="exclusive-percent"></a>排他 (%)  
  関数またはデータ範囲の排他サンプル数である、プロファイリング実行での排他サンプル合計数の割合。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)   
  [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)

@@ -39,6 +39,6 @@ ms.locfileid: "54774634"
   
  フィルターを保存するには、[パフォーマンス レポート] ツール バーの **[フィルターのエクスポート]** をクリックし、.vspf ファイルの場所とファイル名を指定します。 以前に保存したフィルターを読み込むには、**[フィルターのインポート]** をクリックし、保存したフィルター ファイルを探します。 スタンドアロンのプロファイリング ツールがインストールされているコンピューター上のデータ ファイルをフィルター処理するために、フィルター ファイルを使用することもできます。 詳細については、「[VSPerfReport](../profiling/vsperfreport.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

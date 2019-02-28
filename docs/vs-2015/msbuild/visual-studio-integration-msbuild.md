@@ -182,7 +182,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  Visual Studio の通常のビルドでは、高速更新チェックは適用されず、コマンド プロンプトでビルドを開始する場合と同じ方法でプロジェクトがビルドされます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: Visual Studio ビルド処理を拡張する](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [IDE 内からのビルドの開始](../msbuild/starting-a-build-from-within-the-ide.md)   
  [.NET Framework の拡張機能の登録](../msbuild/registering-extensions-of-the-dotnet-framework.md)   

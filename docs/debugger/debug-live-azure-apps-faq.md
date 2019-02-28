@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0899b70ce4a917b0479a9ac6623e33ee8bcdbe22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f5b6315ba3cc99b60c97e70621f42cf13f6397c9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335104"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630718"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>よく寄せられる質問の Visual Studio でスナップショットのデバッグ
 
@@ -23,11 +23,11 @@ ms.locfileid: "56335104"
 
 #### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>スナップショットの作成のパフォーマンス コストとは何ですか。
 
-スナップショット デバッガーは、アプリのスナップショットをキャプチャする場合は、アプリのプロセスをフォークとフォークしたコピーを中断します。 スナップショットをデバッグするときに、プロセスのフォークしたコピーをデバッグします。 このプロセスは 10 ~ 20 ミリ秒しかかかりませんが、アプリの完全なヒープではコピーされません。 代わりに、ページのテーブルのみをコピーし、設定ページの書き込み時にコピーします。 ヒープの変更、アプリのオブジェクトの一部には場合、それぞれのページはコピーされます。 したがって、各スナップショットには、少ないメモリ内 (ほとんどのアプリのキロバイト数百) の順序があります。 
+スナップショット デバッガーは、アプリのスナップショットをキャプチャする場合は、アプリのプロセスをフォークとフォークしたコピーを中断します。 スナップショットをデバッグするときに、プロセスのフォークしたコピーをデバッグします。 このプロセスは 10 ~ 20 ミリ秒しかかかりませんが、アプリの完全なヒープではコピーされません。 代わりに、ページのテーブルのみをコピーし、設定ページの書き込み時にコピーします。 ヒープの変更、アプリのオブジェクトの一部には場合、それぞれのページはコピーされます。 したがって、各スナップショットには、少ないメモリ内 (ほとんどのアプリのキロバイト数百) の順序があります。
 
 #### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>スケール アウトされた Azure App Service (アプリの複数のインスタンス) があるとすると、どうなりますか。
 
-アプリの複数のインスタンスがある場合は、スナップ ポイントすべて 1 つのインスタンスに適用されます。 指定された条件とヒットする最初のスナップ ポイントのみでは、スナップショットを作成します。 を複数個のスナップ ポイントがある場合は、最初のスナップショットを作成する同じインスタンスからそれ以降のスナップショットが取得されます。 出力ウィンドウに送信されるログポイント ログポイント アプリケーション ログに送信されるすべてのインスタンスからメッセージを送信するときに 1 つのインスタンスからのメッセージがのみ表示されます。 
+アプリの複数のインスタンスがある場合は、スナップ ポイントすべて 1 つのインスタンスに適用されます。 指定された条件とヒットする最初のスナップ ポイントのみでは、スナップショットを作成します。 を複数個のスナップ ポイントがある場合は、最初のスナップショットを作成する同じインスタンスからそれ以降のスナップショットが取得されます。 出力ウィンドウに送信されるログポイント ログポイント アプリケーション ログに送信されるすべてのインスタンスからメッセージを送信するときに 1 つのインスタンスからのメッセージがのみ表示されます。
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>スナップショット デバッガーがシンボルを読み込む方法
 
@@ -35,11 +35,11 @@ ms.locfileid: "56335104"
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>スナップショット デバッガーは、アプリケーションのリリース ビルドに対して動作しますか。
 
-はい - スナップショット デバッガーは、リリース ビルドに対して機能するものです。 関数で、スナップ ポイントが配置されると、デバッグできるように、デバッグ バージョンに戻す、関数が再コンパイルされます。 スナップショット デバッガーを停止すると、関数は、リリース ビルドに返されます。 
+はい - スナップショット デバッガーは、リリース ビルドに対して機能するものです。 関数で、スナップ ポイントが配置されると、デバッグできるように、デバッグ バージョンに戻す、関数が再コンパイルされます。 スナップショット デバッガーを停止すると、関数は、リリース ビルドに返されます。
 
 #### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>実稼働アプリケーションで副作用が発生ログポイントことができますか。
 
-いいえ - アプリに追加するすべてのログ メッセージは実質的に評価されます。 すべての副作用は、アプリケーションでが発生することはできません。 ただし、いくつかのネイティブ プロパティをログポイントをアクセスできない可能性があります。 
+いいえ - アプリに追加するすべてのログ メッセージは実質的に評価されます。 すべての副作用は、アプリケーションでが発生することはできません。 ただし、いくつかのネイティブ プロパティをログポイントをアクセスできない可能性があります。
 
 #### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>マイ サーバーは、負荷がある場合、スナップショット デバッガーは動作でしょうか。
 
@@ -55,8 +55,8 @@ ms.locfileid: "56335104"
 
 ## <a name="see-also"></a>関連項目
 
-[Visual Studio でのデバッグ](../debugger/index.md)  
-[スナップショット デバッガーを使用して、ライブ ASP.NET アプリをデバッグします。](../debugger/debug-live-azure-applications.md)  
-[ライブ ASP.NET Azure 仮想 Machines\Virtual マシン スケール セットのスナップショット デバッガーを使用したデバッグします。](../debugger/debug-live-azure-virtual-machines.md)  
-[スナップショット デバッガーを使用して、ライブの ASP.NET Azure Kubernetes デバッグします。](../debugger/debug-live-azure-kubernetes.md)  
-[スナップショットのデバッグのトラブルシューティングと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Visual Studio でのデバッグ](../debugger/index.md)
+- [スナップショット デバッガーを使用して、ライブ ASP.NET アプリをデバッグします。](../debugger/debug-live-azure-applications.md)
+- [ライブ ASP.NET Azure 仮想 Machines\Virtual マシン スケール セットのスナップショット デバッガーを使用したデバッグします。](../debugger/debug-live-azure-virtual-machines.md)
+- [スナップショット デバッガーを使用して、ライブの ASP.NET Azure Kubernetes デバッグします。](../debugger/debug-live-azure-kubernetes.md)
+- [スナップショットのデバッグのトラブルシューティングと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 596f36457627e8da435c2a8c4223487aa35c60f4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227395"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692269"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio デバッガーで式
 Visual Studio デバッガーには式エバリュエーターという機能があり、 **[クイック ウォッチ]** ダイアログ ボックス、 **[ウォッチ]** ウィンドウ、または **[イミディエイト]** ウィンドウで式を入力するときに役立ちます。 式エバリュエーターは **[ブレークポイント]** ウィンドウなど、他のデバッガー機能でも使用できます。
@@ -205,7 +205,7 @@ int main()
 - 名前空間またはモジュール レベルのキーワード ( `End Sub` や `Module`など)。
 
 ## <a name="see-also"></a>関連項目
-[C++ の書式指定子](../debugger/format-specifiers-in-cpp.md)  
-[Context Operator (C++)](../debugger/context-operator-cpp.md)  
-[C++ の書式指定子](../debugger/format-specifiers-in-csharp.md)  
-[擬似変数](../debugger/pseudovariables.md)
+- [C++ の書式指定子](../debugger/format-specifiers-in-cpp.md)
+- [Context Operator (C++)](../debugger/context-operator-cpp.md)
+- [C++ の書式指定子](../debugger/format-specifiers-in-csharp.md)
+- [擬似変数](../debugger/pseudovariables.md)

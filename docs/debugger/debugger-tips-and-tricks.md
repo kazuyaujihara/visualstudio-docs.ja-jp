@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 87c9bd45383cdd4e5329834e4a64b1917229e08b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318421"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717547"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Visual Studio のデバッガーの生産性に関するヒントと秘訣を学習します。
 
@@ -158,7 +158,7 @@ UWP アプリを使用して実行されたネットワーク操作を分析す�
 
 デバッガーはユーザー コードとしてコードを分類する方法についてを参照してください。[マイ コードのみ](../debugger/just-my-code.md)します。 シンボル ファイルの詳細についてを参照してください。 [Visual Studio デバッガーでシンボル (.pdb) ファイルとソース ファイルの指定](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)します。
 
-## <a name="learn-more"></a>詳細情報を見る
+## <a name="learn-more"></a>詳細情報
 
 その他のヒントとテクニックとより詳細な情報は、次のブログ投稿を参照してください。
 

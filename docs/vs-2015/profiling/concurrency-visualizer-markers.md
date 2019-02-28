@@ -63,7 +63,7 @@ ms.locfileid: "54795348"
 ## <a name="markers-from-eventsource"></a>EventSource からのマーカー  
  コンカレンシー ビジュアライザーでは、EventSource イベントも表示できます。  詳細については、「[マーカーとしての EventSource イベントの視覚化](../profiling/visualizing-eventsource-events-as-markers.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [フラグ マーカー](../profiling/flag-markers.md)   
  [メッセージ マーカー](../profiling/message-markers.md)   
  [スパン マーカー](../profiling/span-markers.md)   

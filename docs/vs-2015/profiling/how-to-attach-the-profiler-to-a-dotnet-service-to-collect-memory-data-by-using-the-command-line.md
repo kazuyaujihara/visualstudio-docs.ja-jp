@@ -43,7 +43,7 @@ ms.locfileid: "54802379"
 
 3. プロファイル環境変数を初期化します。 型:  
 
-    **VSPerfClrEnv** {**/globalsamplegc /globalsamplegclife**}[**/samplelineoff**]  
+    **VSPerfClrEnv** {**/globalsamplegc /globalsamplegclife**}**[/samplelineoff]**  
 
    - オプションの **/globalsamplegclife** と **/globalsamplegclife** では、収集するメモリ データの型を指定します。 次のいずれかのオプションを 1 つのみ指定します。  
 
@@ -129,6 +129,6 @@ ms.locfileid: "54802379"
 
 4.  コンピューターを再起動します。  
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)   
  [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)

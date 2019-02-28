@@ -268,7 +268,7 @@ ms.locfileid: "54835122"
 > [!IMPORTANT]
 >  データ ソースなどの項目を、配置ディレクトリのテストからアクセスできるように配置します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コードの単体テスト](../test/unit-test-your-code.md)   
  [既存コードに対する単体テストの作成と実行](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [アプリケーションのテスト](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   

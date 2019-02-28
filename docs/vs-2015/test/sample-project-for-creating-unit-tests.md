@@ -131,7 +131,7 @@ namespace BankAccountNS
 ## <a name="working-with-the-code"></a>コードの操作  
  このコードを操作するには、必要なプロジェクトを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で作成する必要があります。 「チュートリアルを準備する」セクションの手順に従って[チュートリアル。マネージド コードに対する単体テストの作成と実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)」で作成した Bank ソリューションを開きます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [チュートリアル: マネージド コードに対する単体テストの作成と実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
  [チュートリアル: テストの実行し、コード カバレッジの表示](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
  [チュートリアル : コマンド ライン テスト ユーティリティの使用](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)

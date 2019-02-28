@@ -82,7 +82,7 @@ ms.locfileid: "54794216"
 |**[CPU カウンター]** ページで、プロファイリング データを追加するプロセッサのパフォーマンス カウンターを 1 つ以上指定します。|-   [方法 : CPU カウンター データを収集する](../profiling/how-to-collect-cpu-counter-data.md)|  
 |**[詳細]** ページで、追加する VSInstr.exe オプションをすべて指定します (特定の関数を含めるオプションや特定の関数を除外するオプションなど)。 VSInstr オプションの詳細については、「[VSInstr](../profiling/vsinstr.md)」を参照してください。|-   [方法 : 追加のインストルメンテーション オプションを指定する](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [方法 : インストルメンテーションを特定の関数に制限する](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)   
  [パフォーマンス セッションのプロパティ](../profiling/performance-session-properties.md)

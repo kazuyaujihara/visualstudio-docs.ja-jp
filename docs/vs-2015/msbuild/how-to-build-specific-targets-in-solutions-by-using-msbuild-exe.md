@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: MSBuild.exe を使用してソリューション内の特定のターゲットをビルドする | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

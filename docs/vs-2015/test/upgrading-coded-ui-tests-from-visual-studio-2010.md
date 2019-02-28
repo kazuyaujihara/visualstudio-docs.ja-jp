@@ -63,5 +63,5 @@ ms.locfileid: "54803628"
 
 - **ロード テスト:** Windows 8 を実行しているコンピューターで、ローカル エリア ネットワーク (LAN) プロファイル以外のネットワークの種類でロード テストを実行すると、ネットワーク エミュレーターのドライバーにより、オペレーティング システムがクラッシュします。 詳細については、「 [サポート技術情報記事 2736182](http://support.microsoft.com/kb/2736182)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [移植、移行、および Visual Studio プロジェクトのアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[以前のバージョンの Visual Studio からテストのアップグレード](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [UI オートメーションを使用して、コードをテストする](../test/use-ui-automation-to-test-your-code.md)[を生成する、コード化された UI テストを既存の操作の記録から](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[コード化された UI テストと操作の記録の構成とプラットフォームのサポート](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

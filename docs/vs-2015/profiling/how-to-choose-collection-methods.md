@@ -96,7 +96,7 @@ ms.locfileid: "54792877"
   
 3.  **[コンカレンシー]** をクリックします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)   
  [パフォーマンス セッションのプロパティ](../profiling/performance-session-properties.md)

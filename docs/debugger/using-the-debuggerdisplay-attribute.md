@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5304da009aa35eefb91f064929a58444f139f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
+ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317004"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680189"
 ---
 # <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>DebuggerDisplay 属性を使用して (C#、Visual Basic、 F#、C++/cli CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> は、デバッガー変数ウィンドウでのオブジェクト、プロパティ、フィールドの表示方法を制御します。 この属性は、型、デリゲート、プロパティ、フィールド、アセンブリに適用できます。
@@ -62,7 +62,7 @@ autoexp.dll への変更は、次のデバッグ セッションで取得され�
 ## <a name="using-expressions-in-debuggerdisplay"></a>DebuggerDisplay での式の使用
 DebuggerDisplay 属性では、中かっこ内で一般的な式を使用できますが、この方法はお勧めしません。
 
-DebuggerDisplay で使用される一般的な式は、対象となる型の現在のインスタンスのみの `this` ポインターに暗黙的にアクセスします。 この式には、エイリアス、ローカル、またはポインターに対するアクセスはありません。 式からプロパティを参照しても、そのプロパティに関する属性は処理されません。 たとえば、C# コード `[DebuggerDisplay("Object {count - 2}")]` では、フィールド `Object 6` が 8 の場合に `count` を表示します。
+DebuggerDisplay で使用される一般的な式は、対象となる型の現在のインスタンスのみの `this` ポインターに暗黙的にアクセスします。 この式には、エイリアス、ローカル、またはポインターに対するアクセスはありません。 式からプロパティを参照しても、そのプロパティに関する属性は処理されません。 たとえば、C# コード `[DebuggerDisplay("Object {count - 2}")]` では、フィールド `count` が 8 の場合は、`Object 6` と表示されます。
 
 DebuggerDisplay で式を使用すると、次のような問題が発生する可能性があります。
 
@@ -97,7 +97,7 @@ public sealed class MyClass
 |**Name**|**[値]**|**Type**|
 |--------------|---------------|--------------|
 |キー|"three"|object {string}|
-|値|3|object {int}|
+|[値]|3|object {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
@@ -178,7 +178,8 @@ class MyHashtable
 ```
 
 ## <a name="see-also"></a>関連項目
-[DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)  
-[.managed オブジェクトのカスタム ビューの作成](../debugger/create-custom-views-of-dot-managed-objects.md)  
-[C# の書式指定子](../debugger/format-specifiers-in-csharp.md)  
-[デバッガー表示属性によるデバッグ機能の拡張](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+
+- [DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)
+- [.managed オブジェクトのカスタム ビューの作成](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [C# の書式指定子](../debugger/format-specifiers-in-csharp.md)
+- [デバッガー表示属性によるデバッグ機能の拡張](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

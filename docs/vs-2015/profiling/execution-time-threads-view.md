@@ -31,6 +31,6 @@ ms.locfileid: "54766240"
   
  現在のビューのすべての実行セグメントについて、従来のサンプリング プロファイルを参照するには、表示されているタイムライン プロファイルで **[実行]** をクリックします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [実行プロファイル レポート](../profiling/execution-profile-report.md)   
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

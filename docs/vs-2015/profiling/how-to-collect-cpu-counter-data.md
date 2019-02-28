@@ -65,7 +65,7 @@ CPU イベント カウンターはハードウェア固有のパフォーマン
     > [!NOTE]
     >  **[使用可能なパフォーマンス カウンター]** は、**[CPU カウンターの収集]** チェック ボックスがオンになっている場合のみ有効です。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [パフォーマンス セッションのプロパティ](../profiling/performance-session-properties.md)   
  [CPU カウンターと Windows カウンター](../profiling/cpu-and-windows-counters.md)   

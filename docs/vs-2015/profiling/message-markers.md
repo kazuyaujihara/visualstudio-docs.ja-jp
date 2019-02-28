@@ -26,6 +26,6 @@ ms.locfileid: "54804028"
 ## <a name="message-aggregation-markers"></a>メッセージの集約マーカー  
  コンカレンシー ビジュアライザーで、複数のメッセージが相互に近接しすぎて、個別に描画できないことがあります。 そのような場合には、基になるメッセージを表す*メッセージ集約マーカー*が表示されます。 それらのアイコンのいずれかにポインターを置くと、表現されている、基になるメッセージの数がツールヒントに表示されます。 メッセージを表示するには、ズームインします。  限界までズームインしてもなお集約マーカーが表示される場合には、基になるメッセージを[マーカー レポート](../profiling/markers-report.md)で確認できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)   
  [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)

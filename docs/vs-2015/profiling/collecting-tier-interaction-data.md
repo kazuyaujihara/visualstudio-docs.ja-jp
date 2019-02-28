@@ -48,5 +48,5 @@ ms.locfileid: "54770890"
   
 3.  パフォーマンス エクスプローラーで、**[ターゲット]** ノードを選択し、プロファイリングするプロジェクト、実行可能ファイル、または Web サイトを指定します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [階層相互作用のビュー](../profiling/tier-interactions-view.md)

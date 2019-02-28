@@ -29,6 +29,6 @@ ms.locfileid: "54752486"
   
  このオプションを選択すると、ブロック呼び出しがフィルターで除外されることがあります。 決定に詳細な呼び出し履歴が必要になる場合、このオプションの選択を解除し、呼び出し履歴をすべて公開してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)   
  [不要項目の非表示の割合](../profiling/noise-reduction-percentage.md)

@@ -126,6 +126,6 @@ ms.locfileid: "54766449"
 
 4.  コンピューターを再起動します。  
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)   
  [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)

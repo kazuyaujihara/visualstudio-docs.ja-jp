@@ -549,7 +549,7 @@ ShimFile.WriteAllTextStringString = shim;
 ### <a name="guidance"></a>ガイダンス  
  [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Microsoft Fakes を使用したテストでのコードの分離](../test/isolating-code-under-test-with-microsoft-fakes.md)   
  [Peter Provost のブログ: Visual Studio 2012 の shim](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
  [1 時間 16 分の動画:Visual Studio 2012 で Fakes でテストされていないコードのテスト](http://go.microsoft.com/fwlink/?LinkId=261837)

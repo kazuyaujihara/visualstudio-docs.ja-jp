@@ -242,5 +242,5 @@ ms.locfileid: "54758686"
   
 2.  HTML UI の応答性プロファイラーを再度実行し、CPU 使用状況グラフを確認します。 過剰なイベントはなくなり、CPU 使用状況はゼロに近い値に下がっています。 問題は修正されました。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [HTML UI の応答性](../profiling/html-ui-responsiveness.md)

@@ -27,7 +27,7 @@ ms.locfileid: "54791456"
   
  測定プロセスは繰り返せますが、表示されるのは最新のものだけです。 測定ボタンをもう一度クリックし、測定モードをオフにします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [チャネルの管理](../profiling/manage-channels.md)   
  [ズーム コントロール (スレッド ビュー)](../profiling/zoom-control-threads-view.md)   
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

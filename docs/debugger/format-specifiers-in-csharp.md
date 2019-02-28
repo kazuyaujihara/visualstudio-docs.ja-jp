@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc36b13d6b6bdc6df0b881f2b4b91c32995a08d5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227684"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698990"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>C# では、Visual Studio デバッガーでの書式指定子
 値を表示する形式を変更することができます、**ウォッチ**書式指定子を使用してウィンドウ。 書式指定子を使用することもできます、**イミディ エイト**ウィンドウで、**コマンド**ウィンドウで、[トレース ポイント](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)と、ソース ウィンドウ。 これらのウィンドウで式を一時停止する場合、結果に表示されます、[データヒント](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)指定した形式の表示にします。
@@ -55,18 +55,18 @@ ms.locfileid: "56227684"
 ## <a name="format-specifiers"></a>書式指定子
 次の表、 C# Visual Studio デバッガーの指定子の書式を設定します。
 
-|指定子|フォーマット|元の [ウォッチ] の値|表示|
+|指定子|形式|元の [ウォッチ] の値|表示|
 |---------------|------------|--------------------------|--------------|
 |ac|プロパティと暗黙的関数呼び出しの暗黙の評価がになっている場合に利用でき、式の評価を強制します。|メッセージ "暗黙的な関数の評価はユーザーによってオフにされました"|\<value>|
-|日|10 進整数|0x0065|101|
+|d|10 進整数|0x0065|101|
 |dynamic|動的ビューを使用して、指定されたオブジェクトを表示します。|動的ビューを含む、オブジェクトのすべてのメンバーを表示します。|動的ビューのみが表示されます。|
 |h|16 進整数|61541|0x0000F065|
 |nq|引用符なしの文字列。|"My String"|My String|
 |nse|形式ではなく、動作を指定します。 「副作用なし」を使用して式を評価します。 式を解釈できません (関数呼び出し) などの評価でしか解決できない場合は、代わりにエラーが表示されます。|N/A|N/A|
-|非表示|パブリック メンバーとパブリックでないメンバーをすべて表示します。|パブリック メンバーを表示します。|すべてのメンバーを表示します。|
+|hidden|パブリック メンバーとパブリックでないメンバーをすべて表示します。|パブリック メンバーを表示します。|すべてのメンバーを表示します。|
 |raw|未処理の項目ノードで表示されるように項目を表示します。 プロキシ オブジェクトのみで有効です。|ディクショナリ\<T >|ディクショナリの未加工ビュー\<T >|
 |results|IEnumerable または IEnumerable を実装する型の変数と共に使用\<T >、通常はクエリ式の結果。 クエリ結果を含むメンバーのみを表示します。|すべてのメンバーを表示します|クエリの条件に一致するメンバーを表示します|
 
 ## <a name="see-also"></a>関連項目
-[[ウォッチ] および [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)  
-[[自動変数] ウィンドウと [ローカル] ウィンドウ](../debugger/autos-and-locals-windows.md)
+- [[ウォッチ] および [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)
+- [[自動変数] ウィンドウと [ローカル] ウィンドウ](../debugger/autos-and-locals-windows.md)

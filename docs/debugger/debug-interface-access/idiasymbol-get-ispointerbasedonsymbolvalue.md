@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b00202fbd412c8ee7f9c5a35a47d59b0f207fd76
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 07912819c3c0ece6376ed0ef63db02838f60e342
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927139"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601617"
 ---
 # <a name="idiasymbolgetispointerbasedonsymbolvalue"></a>IDiaSymbol::get_isPointerBasedOnSymbolValue
-指定するかどうか、`this`ポインターがシンボル値に基づきます。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_isPointerBasedOnSymbolValue(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]ポインターを`BOOL`を指定するかどうか、`this`ポインターがシンボル値に基づきます。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
-  
+指定するかどうか、`this`ポインターがシンボル値に基づきます。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_isPointerBasedOnSymbolValue(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]ポインターを`BOOL`を指定するかどうか、`this`ポインターがシンボル値に基づきます。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+
 ## <a name="see-also"></a>関連項目
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -283,7 +283,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ### <a name="guidance"></a>ガイダンス  
  [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)   
  [トラブルシューティング コード カバレッジ](../test/troubleshooting-code-coverage.md)   
  [コードの単体テスト](../test/unit-test-your-code.md)

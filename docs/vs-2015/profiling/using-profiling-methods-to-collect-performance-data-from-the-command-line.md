@@ -87,7 +87,7 @@ ms.locfileid: "54761381"
 ##  <a name="BKMK_Adding_tier_interaction_data_to_a_profiling_run"></a> プロファイリングの実行に階層の相互作用データを追加する  
  プロファイリングの実行に階層の相互作用データを追加するには、コマンド ライン プロファイリング ツールによる特定の手順が必要です。 「[階層相互作用データの収集](../profiling/adding-tier-interaction-data-from-the-command-line.md)」を参照してください  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [プロファイリング (サービスの)](../profiling/command-line-profiling-of-services.md)

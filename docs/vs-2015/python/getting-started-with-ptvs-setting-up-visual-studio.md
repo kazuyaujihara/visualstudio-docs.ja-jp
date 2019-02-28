@@ -39,6 +39,6 @@ IPython を PTVS と共に使用する場合、これらの[手順](http://pytoo
 
 これらの手順を簡単に見ることができます[youtube ビデオ](https://www.youtube.com/watch?v=_okUV47eM5c&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=1)します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [PTVS の概要と詳細に関するビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

@@ -115,5 +115,5 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|  
 |SHOWCOMMANDLINE|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [転送ロガーの作成](../msbuild/creating-forwarding-loggers.md)

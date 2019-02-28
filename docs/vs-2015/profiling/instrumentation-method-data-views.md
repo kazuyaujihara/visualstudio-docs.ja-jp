@@ -57,5 +57,5 @@ ms.locfileid: "54801793"
  [リソース競合データのビュー](../profiling/resource-contention-data-views.md)  
  スレッド競合メソッドを使用して生成されたプロファイラー データ ファイルのビューとレポートに関するリファレンス情報。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [インストルメンテーション データ値について](../profiling/understanding-instrumentation-data-values.md)

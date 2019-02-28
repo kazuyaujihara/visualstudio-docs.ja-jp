@@ -47,6 +47,6 @@ ms.locfileid: "54784587"
 |**Name**|関数の名前。|  
 |**排他時間 %**|プロファイル データのすべての時間に対する、その関数が関数本体でコードの実行に費やした時間の割合。 関数が呼び出した関数で費やされた時間は含まれません。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [概要ビュー](../profiling/summary-view-sampling-data.md)   
  [概要 ビュー](../profiling/summary-view-dotnet-memory-data.md)

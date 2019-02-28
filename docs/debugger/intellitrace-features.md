@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317771"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720186"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace の機能 (C#、Visual Basic、C++)
 
@@ -56,7 +56,7 @@ IntelliTrace がオンになっていることを確認するには、**[ツー�
 
 これは既定では有効になっていませんが、IntelliTrace ではイベントと共にメソッドの呼び出しを記録できます。 呼び出しメソッドのコレクションを有効にする**ツール > オプション > IntelliTrace > 全般**を選択し、 **IntelliTrace イベントと呼び出し情報 (マネージのみ)** します。
 
-呼び出し情報は、.NET Core と ASP.NET Core アプリを現在ご利用いただけません。 
+呼び出し情報は、.NET Core と ASP.NET Core アプリを現在ご利用いただけません。
 
 これにより、呼び出し履歴が表示され、コード内で呼び出しの前後を移動できるようになります。 IntelliTrace は、メソッド名、メソッド エントリ、および終了ポイントなどのデータと、特定のパラメーター値および戻り値を記録します。
 

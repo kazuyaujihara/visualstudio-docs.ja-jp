@@ -41,7 +41,7 @@ ms.locfileid: "54760393"
   
      セッション名が太字で表示されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [[パフォーマンス エクスプローラー] ウィンドウ](../profiling/performance-explorer-window.md)   
  [パフォーマンス セッションのプロパティ](../profiling/performance-session-properties.md)   

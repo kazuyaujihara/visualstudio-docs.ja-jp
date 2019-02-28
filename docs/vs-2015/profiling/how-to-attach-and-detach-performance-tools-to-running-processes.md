@@ -70,7 +70,7 @@ ms.locfileid: "54762436"
   
 3.  **[デタッチ]** をクリックします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [データ収集の制御](../profiling/controlling-data-collection.md)   
  [パフォーマンス セッションの概要](../profiling/performance-session-overview.md)   
  [方法: 開始と終了のパフォーマンス データの収集](../profiling/how-to-start-and-end-performance-data-collection.md)   

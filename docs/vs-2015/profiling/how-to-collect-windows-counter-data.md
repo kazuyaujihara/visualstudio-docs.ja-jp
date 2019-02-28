@@ -53,7 +53,7 @@ Windows カウンターは、プロファイル中に一定間隔で収集でき
   
 8.  **[適用]** をクリックします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [パフォーマンス セッションのプロパティ](../profiling/performance-session-properties.md)   
  [CPU カウンターと Windows カウンター](../profiling/cpu-and-windows-counters.md)

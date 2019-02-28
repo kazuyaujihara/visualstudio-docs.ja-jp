@@ -27,7 +27,7 @@ ASP.NET Web サイト プロジェクトに対して実行する自動 [!INCLUDE
 
  [Microsoft Visual Studio を使用したシステム テストの実行](http://msdn.microsoft.com/library/19fae5c4-5798-4c4c-b531-3e8f901b1130)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)
 - [パフォーマンス規則を使用したデータの分析](../profiling/using-performance-rules-to-analyze-data.md)

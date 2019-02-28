@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 461c2c4bc5525eee61c413cb8c25afd6090852a5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
-ms.translationtype: HT
+ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987471"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628326"
 ---
 # <a name="cc-assertions"></a>アサーション
 アサート ステートメントでは、プログラム内で true になる必要のある条件を指定します。 この条件が true にならない場合、アサーションは失敗し、プログラムの実行が中断され、[[アサートに失敗しました] ダイアログ ボックス](../debugger/assertion-failed-dialog-box.md)が表示されます。
@@ -46,7 +46,7 @@ Visual C++ は、次の構成に基づくアサート ステートメントを�
 
 - CRT アサーション (C ランタイム ライブラリを使用するプログラムの場合)
 
-- ANSI [assert 関数](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) (その他の C/C++ プログラムの場合)  
+- ANSI [assert 関数](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) (その他の C/C++ プログラムの場合)
 
   アサーションを使用して論理エラーを検出し、操作の結果を確認することで、処理する必要があるエラー条件をテストできます。
 
@@ -63,7 +63,7 @@ Visual C++ は、次の構成に基づくアサート ステートメントを�
 
 - [MFC ASSERT_VALID と CObject::AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)
 
-- [AssertValid に関する制限事項](#BKMK_Limitations_of_AssertValid)  
+- [AssertValid に関する制限事項](#BKMK_Limitations_of_AssertValid)
 
   [アサーションの使用](#BKMK_Using_assertions)
 
@@ -251,7 +251,7 @@ void CMyData::AssertValid( ) const
 #endif
 ```
 
-`CMyData` クラスは、`AssertValid` の機構を使用して、データ メンバーに格納されているオブジェクトの有効性を検証します。 `AssertValid` クラスでオーバーライドした `CMyData` は、独自の m_pDataList メンバー変数に対して `ASSERT_VALID` マクロを呼び出します。
+`CMyData` クラスでは、`AssertValid` のメカニズムを使用して、データ メンバーに格納されているオブジェクトの有効性が検証されます。 `AssertValid` クラスでオーバーライドした `CMyData` は、独自の m_pDataList メンバー変数に対して `ASSERT_VALID` マクロを呼び出します。
 
 `CObList` クラスも `AssertValid` をオーバーライドしているため、有効性の検証はこの段階では停止しません。 このオーバーライドにより、そのクラスが表すリストの内部状態の有効性も検証されます。 つまり、`CMyData` オブジェクトの有効性を検証すると、そのメンバー変数に格納されている `CObList` リスト オブジェクトの内部状態の有効性も検証されることになります。
 
@@ -339,6 +339,7 @@ _ASSERT(!myErr); // Don't do this, either!
 [このトピックの内容](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>関連項目
-[デバッガーのセキュリティ](../debugger/debugger-security.md)  
-[ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)  
-[マネージド コードのアサーション](../debugger/assertions-in-managed-code.md)
+
+- [デバッガーのセキュリティ](../debugger/debugger-security.md)
+- [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)
+- [マネージド コードのアサーション](../debugger/assertions-in-managed-code.md)

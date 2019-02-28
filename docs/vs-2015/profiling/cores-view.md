@@ -29,7 +29,7 @@ ms.locfileid: "54763009"
   
  凡例領域には、グラフの各色に対するエントリがあります。 各エントリには、スレッドの色と名前、クロスコア コンテキスト スイッチの数、コンテキスト スイッチの総数、およびクロスコア コンテキスト スイッチの割合が示されます。 凡例は、クロスコア コンテキスト スイッチの数が多い順に並べられています。 表示されている時間範囲中に実行されたスレッドのみが一覧表示されます。  ズームまたはパンすると、リストが更新されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)   
  [使用状況ビュー](../profiling/utilization-view.md)   
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

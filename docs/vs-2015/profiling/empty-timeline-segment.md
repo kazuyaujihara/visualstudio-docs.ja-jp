@@ -33,6 +33,6 @@ ms.locfileid: "54770746"
   
 -   マーカー チャネルの場合は、マーカーが生成されなかったことを意味します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)   
  [ズーム コントロール (スレッド ビュー)](../profiling/zoom-control-threads-view.md)

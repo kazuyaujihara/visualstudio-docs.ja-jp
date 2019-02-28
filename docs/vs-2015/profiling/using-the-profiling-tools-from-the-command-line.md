@@ -42,5 +42,5 @@ ms.locfileid: "54767762"
 ## <a name="reference"></a>参照  
  [コマンド ライン プロファイリング ツール リファレンス](../profiling/command-line-profiling-tools-reference.md)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)

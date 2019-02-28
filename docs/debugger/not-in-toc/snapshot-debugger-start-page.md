@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a420a278849f1f26de6869a8b723617e7fd8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939791"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703709"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>スナップショット デバッガーの概要
 
@@ -27,7 +27,7 @@ Visual Studio Snapshot Debugger は、サービスに接続されているよう
 
 ### <a name="set-a-snappoint"></a>設定、スナップ ポイント
 
-1. コード エディターで、スナップ ポイントを設定する対象のコード行の横にある左側の余白をクリックします。 これはコードを実行することがわかっていることを確認します。 
+1. コード エディターで、スナップ ポイントを設定する対象のコード行の横にある左側の余白をクリックします。 これはコードを実行することがわかっていることを確認します。
 
     ![エディターで、スナップ ポイントの設定](../media/snapshot-startpage-set-snappoint.png)
 
@@ -37,7 +37,7 @@ Visual Studio Snapshot Debugger は、サービスに接続されているよう
 
 ### <a name="open-a-snapshot"></a>スナップショットを開く
 
-1. スナップ ポイントをヒットすると、右側の [診断ツール] ウィンドウで、スナップショットが表示されます。 ウィンドウが開かない場合を選択して開くことができます**デバッグ** > **Windows** > **診断ツールの表示**します。 
+1. スナップ ポイントをヒットすると、右側の [診断ツール] ウィンドウで、スナップショットが表示されます。 ウィンドウが開かない場合を選択して開くことができます**デバッグ** > **Windows** > **診断ツールの表示**します。
 
     ![[診断ツール] ウィンドウのスナップショット](../media/snapshot-startpage-diagsession-window.png)
 
@@ -59,7 +59,7 @@ Web サイト自体はまだ存在していると、エンドユーザーに影�
 
 3. **メッセージ**フィールドに、ログに記録するログ メッセージを入力します。 中かっこ内に配置することによってログ メッセージに変数を評価することもできます。
 
-    選択した場合**出力ウィンドウに送る**、ログポイントがヒットしたときに、診断ツール ウィンドウで、メッセージが表示されます。 
+    選択した場合**出力ウィンドウに送る**、ログポイントがヒットしたときに、診断ツール ウィンドウで、メッセージが表示されます。
 
     選択した場合**アプリケーション ログに送信**、メッセージの表示を任意の場所からのメッセージを確認できます`System.Diagnostics.Trace`(または`ILogger`で .NET Core)、ログポイントがヒットしたときに、App Insights など。
 
@@ -69,6 +69,6 @@ Web サイト自体はまだ存在していると、エンドユーザーに影�
 
 ## <a name="dont-show-me-this-again"></a>今後このメッセージを表示しない
 
-決してスナップショット デバッガーの開始 ページを再び表示するスナップショット デバッガーを接続する場合、変更、**セッションの開始時に"Getting Started"のページを表示**オプション**ツール** >  **オプション** > **スナップショット デバッガー**します。 
+決してスナップショット デバッガーの開始 ページを再び表示するスナップショット デバッガーを接続する場合、変更、**セッションの開始時に"Getting Started"のページを表示**オプション**ツール** >  **オプション** > **スナップショット デバッガー**します。
 
 ![スナップショット デバッガー ツール オプション ページ](../media/snapshot-startpage-tools-options.png)

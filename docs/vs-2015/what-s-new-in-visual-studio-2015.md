@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b3554373d4447aa3bd503668328424b25c43348
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790734"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844140"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 の新機能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
  Visual Studio Tools for Apache Cordova は、Microsoft とオープン ソース Apache Cordova コミュニティとの密接な共同作業の成果物です。 これらのツールは、HTML、CSS、および JavaScript (または Typescript) を使用したクロス プラットフォームのモバイル開発を可能にします。 1 つのコード ベースを使用して Android、iOS、および Windows を対象とし、Visual Studio IDE に含まれる JavaScript IntelliSense、DOM Explorer、JavaScript コンソール、ブレークポイント、ウォッチ、ローカル、Just My Code などの豊富な機能を利用できます。  Visual Studio Tools for Apache Cordova では、一般的な JavaScript API を提供するプラグインによってすべてのプラットフォーム上のネイティブ デバイス機能にアプリがアクセスできるようになります。 最初に、次を参照してください。 [Visual Studio Tools for Apache Cordova の概要](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)します。
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Unity を使った C# のクロス プラットフォームのモバイル ゲーム
- Unity は、マルチプラットフォームの 2D および 3D ゲーム開発用に広く使用されているプラットフォームです。 ゲームを C# で作成し、Android、iOS、Windows Phone、その他の多くのプラットフォームでネイティブに実行できます。 Visual Studio Tools for Unity は、Unity と Visual Studio IDE を統合させる拡張機能です。 この拡張機能により、Unity 開発者用に設計された生産性機能に加えて、Visual Studio IDE のすべての機能とデバッガーが使用できるようになります。 Visual Studio Tools for Unity 2.0 Preview 2 には Visual Studio 2015 のためのサポートが追加されており、さらに [ローカル] ウィンドウや [ウォッチ] ウィンドウでのオブジェクト表示方法の改善など、数々の機能が新たに追加されています。 Microsoft は最近、Visual Studio Tools for Unity の作成元の SyntaxTree を買収しました。 Visual Studio Tools for Unity 2.0 Preview 2 のダウンロードおよび Visual Studio Tools for Unity の詳細については、「 [Visual Studio による Unity ゲームのビルド](http://Aka.ms/vstu)」を参照してください。
+ Unity は、マルチプラットフォームの 2D および 3D ゲーム開発用に広く使用されているプラットフォームです。 ゲームを C# で作成し、Android、iOS、Windows Phone、その他の多くのプラットフォームでネイティブに実行できます。 Visual Studio Tools for Unity は、Unity と Visual Studio IDE を統合させる拡張機能です。 この拡張機能により、Unity 開発者用に設計された生産性機能に加えて、Visual Studio IDE のすべての機能とデバッガーが使用できるようになります。 Visual Studio Tools for Unity 2.0 Preview 2 には Visual Studio 2015 のためのサポートが追加されており、さらに [ローカル] ウィンドウや [ウォッチ] ウィンドウでのオブジェクト表示方法の改善など、数々の機能が新たに追加されています。 Microsoft は最近、Visual Studio Tools for Unity の作成元の SyntaxTree を買収しました。 Visual Studio Tools for Unity 2.0 Preview 2 のダウンロードおよび Visual Studio Tools for Unity の詳細については、「 [Visual Studio による Unity ゲームのビルド](https://aka.ms/vstu)」を参照してください。
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>ネイティブ C++ 用のクロス プラットフォーム アプリおよびライブラリ
  C++ は、ほとんどのモバイル デバイスでネイティブに使用可能な言語です。 C++ を使用すると、複数のモバイル プラットフォーム ターゲット用にビルドできるクロス プラットフォームの共有コード ライブラリを作成できます。 モバイル アプリ全体を C++ で作成することもできます。 Visual C++ には、クロス プラットフォームのコードを編集、ビルド、配置、およびデバッグするためのツールが用意されています。 Windows アプリ用のテンプレートだけでなく、Android Native Activity アプリ用のプロジェクト、iOS アプリ用のプロジェクト、または Xamarin ハイブリッド アプリを含む複数のプラットフォーム用の共有コード ライブラリ オブジェクトも、テンプレートから作成できます。 プラットフォーム固有の IntelliSense を使用すると、API を調べて、Android ターゲット、iOS ターゲット、または Windows ターゲット用の正しいコードを生成することができます。 x86 または ARM ネイティブ プラットフォーム用のビルドを構成し、iOS シミュレーターやネットワークに接続された Mac 上の iOS デバイスにコードを配置したり、直接接続された Android デバイスにコードを配置したり、パフォーマンスの優れた Microsoft Visual Studio Emulator for Android をテストに使用したりできます。 Visual Studio デバッガーでは、ブレークポイントやウォッチ変数の設定、スタックの表示、C++ コードのステップスルー実行が可能です。 最も固有性の高いプラットフォームのコード以外のすべてのコードを複数のアプリ プラットフォームで共有し、Visual Studio の 1 つのソリューションでそれらをすべてビルドすることができます。
