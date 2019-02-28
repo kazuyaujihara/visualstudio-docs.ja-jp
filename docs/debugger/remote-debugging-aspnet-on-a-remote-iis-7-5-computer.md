@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b6bb89772cf013b27d7f7cfd512d79144ffe235d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4cefca3c40b36c24fa5c1c78c7b6bca3d2a599ba
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023955"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720032"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>リモートの IIS コンピューター上の ASP.NET のリモート デバッグ
 IIS に配置されている ASP.NET アプリケーションをデバッグするには、インストールし、アプリをデプロイしたコンピューターでリモート ツールを実行して Visual Studio から、実行中のアプリにアタッチします。
@@ -47,7 +47,7 @@ IIS に配置されている ASP.NET アプリケーションをデバッグす�
 * アプリが設定されている、展開されると、かどうかを確認するのに役立つこのトピックのすべての手順に従いますデバッグできるように、IIS で正しく実行する場合は。
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>ASP.NET 4.5.2 を作成する Visual Studio コンピューターでアプリケーション
-  
+
 1. MVC の ASP.NET アプリケーションを新規作成します。 (**ファイル > 新規 > プロジェクト**を選択し、 <strong>Visual C# > Web > ASP.NET Web アプリケーション。[ASP.NET 4.5.2 テンプレート]</strong> セクションで、 **[MVC]** を選択します。 確認します**Docker サポートを有効にする**が選択されていないことと**認証**に設定されている**認証なし**します。 プロジェクトに名前を**MyASPApp**)。
 
 2. HomeController.cs ファイルを開き、 `About()` メソッドにブレークポイントを設定します。
@@ -147,7 +147,7 @@ IIS にアプリをデプロイする必要があります問題が解決する�
 発行し、ファイル システムまたはその他のツールを使用してアプリをデプロイすることもできます。
 
 1. (ASP.NET 4.5.2)Web.config ファイルが .NET Framework の正しいバージョンを一覧表示されることを確認します。  たとえば、ASP.NET 4.5.2 を対象とする場合は、web.config にこのバージョンが表示されていることを確認すること。
-  
+
     ```xml
     <system.web>
       <compilation debug="true" targetFramework="4.5.2" />
@@ -156,7 +156,7 @@ IIS にアプリをデプロイする必要があります問題が解決する�
         <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" />
       </httpModules>
     </system.web>
-  
+
     ```
 
     たとえば、4.5.2 ではなく ASP.NET 4 をインストールする場合、バージョンは 4.0 をある必要があります。
@@ -168,7 +168,7 @@ IIS にアプリをデプロイする必要があります問題が解決する�
 このチュートリアルでは、Visual Studio 2017 を使用します。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Windows Server のリモート デバッガーを設定します。
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -184,7 +184,7 @@ IIS にアプリをデプロイする必要があります問題が解決する�
 2. Visual Studio で、次のようにクリックします。**デバッグ > プロセスにアタッチ**(Ctrl + Alt + P)。
 
     > [!TIP]
-    > Visual Studio 2017 を使用して、以前にアタッチした同じプロセスに再アタッチできる**デバッグ > プロセスに再アタッチしています.** Shift + Alt + P 
+    > Visual Studio 2017 を使用して、以前にアタッチした同じプロセスに再アタッチできる**デバッグ > プロセスに再アタッチしています.** Shift + Alt + P
 
 3. [修飾子] フィールドを「**\<リモート コンピューター名>:4022**」に設定します。
 4. **[最新の情報に更新]** をクリックします。
@@ -200,7 +200,7 @@ IIS にアプリをデプロイする必要があります問題が解決する�
 7. **[アタッチ]** をクリックします
 
 8. リモート コンピューターの Web サイトを開きます。 ブラウザーで、**http://\<リモート コンピューター名>** に移動します。
-    
+
     ASP.NET の Web ページが表示されるはずです。
 9. 実行中の ASP.NET アプリケーションでリンクをクリックして、**について**ページ。
 
@@ -211,7 +211,7 @@ IIS にアプリをデプロイする必要があります問題が解決する�
 ほとんどの設定では、ASP.NET とリモート デバッガーのインストールに必要なポートが開かれます。 ただし、ポートが開いていることを確認する必要があります。
 
 > [!NOTE]
-> Azure VM 上でポートを開く必要があります、[ネットワーク セキュリティ グループ](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic)します。 
+> Azure VM 上でポートを開く必要があります、[ネットワーク セキュリティ グループ](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic)します。
 
 必要なポート:
 
