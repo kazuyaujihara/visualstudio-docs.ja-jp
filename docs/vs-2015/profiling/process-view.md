@@ -43,7 +43,7 @@ ms.locfileid: "54802328"
 |**開始時刻**|プロファイリングの開始からプロセスまたはスレッドの開始までの時間 (ミリ秒) またはプロセッサ サイクル数。|  
 |**終了時刻**|プロファイリングの開始からプロセスまたはスレッドの終了までの時間 (ミリ秒) またはプロセッサ サイクル数。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)   
  [インストルメンテーション メソッドのデータ ビュー](../profiling/instrumentation-method-data-views.md)   
  [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)

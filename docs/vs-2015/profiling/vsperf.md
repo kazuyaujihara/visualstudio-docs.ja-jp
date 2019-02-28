@@ -69,6 +69,6 @@ ms.locfileid: "54803528"
 |**/detach**|データ収集を停止しますが、ターゲット プロセスの実行は続行します。|  
 |**/status**|プロファイラーの状態を表示します。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [コマンド ラインからのプロファイル](../profiling/using-the-profiling-tools-from-the-command-line.md)

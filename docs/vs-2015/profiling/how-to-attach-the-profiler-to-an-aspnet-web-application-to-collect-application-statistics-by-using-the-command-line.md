@@ -42,7 +42,7 @@ ms.locfileid: "54781102"
 
 2. プロファイル環境変数を初期化します。 型:  
 
-    **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
+    **VSPerfClrEnv /globalsampleon** **[/samplelineoff]**  
 
    -   **/globalsampleon** はサンプリングを有効にします。  
 
@@ -126,6 +126,6 @@ ms.locfileid: "54781102"
 
 4.  コンピューターを再起動します。  
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)

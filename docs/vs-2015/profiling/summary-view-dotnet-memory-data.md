@@ -50,6 +50,6 @@ ms.locfileid: "54803060"
 |**Name**|型の名前。|  
 |**インスタンス %**|プロファイリング実行で作成された .NET オブジェクトの合計数に対する、この型のインスタンスであったオブジェクトの割合。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [概要ビュー](../profiling/summary-view-sampling-data.md)   
  [概要 ビュー](../profiling/summary-view-instrumentation-data.md)

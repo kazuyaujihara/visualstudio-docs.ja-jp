@@ -5,12 +5,6 @@ title: Visual Studio のドキュメント | Microsoft Docs
 description: Visual Studio 2017 を使って、アプリケーション、サービス、ツールを、任意の言語で、特定のプラットフォームやデバイス向けに開発する方法について説明します。
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821358"
 ---
 <div id="main" class="v2">
     <div class="container">

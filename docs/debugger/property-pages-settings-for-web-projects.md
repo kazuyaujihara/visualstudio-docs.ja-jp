@@ -1,4 +1,4 @@
-﻿---
+---
 title: Web プロジェクトのプロパティの設定 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 809e84981bc491a89f8e031f5ac8caf497c1a6e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001970"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690527"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web プロジェクトのプロパティ ページ設定
-「[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)」で説明したように、Web サイト デバッグ構成のプロパティ設定は **[プロパティ ページ]** ダイアログ ボックスで変更できます。 次の表は、**[プロパティ ページ]** ダイアログ ボックスのデバッガー関連の設定の場所を示しています。  
-  
+「[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)」で説明したように、Web サイト デバッグ構成のプロパティ設定は **[プロパティ ページ]** ダイアログ ボックスで変更できます。 次の表は、**[プロパティ ページ]** ダイアログ ボックスのデバッガー関連の設定の場所を示しています。
+
 ### <a name="start-options-category"></a>開始オプションのカテゴリ
-  
+
 | **設定** | **説明** |
 | - | - |
 | **開始動作** | アプリケーションの起動に関するオプション グループの見出しです。 |
@@ -42,7 +42,7 @@ ms.locfileid: "55001970"
 | **コマンド ライン引数:** | 上で指定したコマンドの引数を指定します。 |
 | **作業ディレクトリ:** | デバッグするプログラムの作業ディレクトリを指定します。 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] では、作業ディレクトリはアプリケーションが起動されるディレクトリであり、既定では \bin\debug です。 |
 | **URL の開始** | デバッグする Web アプリケーションの場所を指定します。 |
-| **[ページを開かずに外部アプリケーションからの要求を待つ]** | 外部のアプリケーションからの要求を待つように指示します。 このオプションは、Internet Explorer やその他のアプリケーションを起動しません。 アプリケーションから呼び出されたときにデバッグの準備をするだけです。 |
+| **ページを開かずに外部アプリケーションからの要求を待つ** | 外部のアプリケーションからの要求を待つように指示します。 このオプションは、Internet Explorer やその他のアプリケーションを起動しません。 アプリケーションから呼び出されたときにデバッグの準備をするだけです。 |
 | **サーバー** | 使用するサーバーに関するオプション グループの見出しです。 |
 | **既定 Web サーバーを使用する** | 既定の Web サーバーを使用するように指定します。 |
 | **カスタム サーバーを使用する** | サーバーとして使用するベース URL を入力できます。 |
@@ -51,6 +51,6 @@ ms.locfileid: "55001970"
 | **ネイティブ コード デバッグ** | マネージド アプリケーションからネイティブ (アンマネージド) Win32 コードの呼び出しをデバッグできます。 |
 | **SQL Server デバッグ** | SQL Server データベース オブジェクトのデバッグを許可します。 |
 | **Silverlight デバッグ** | Silverlight コンポーネントをデバッグできます。 |
-  
+
 ## <a name="see-also"></a>関連項目
- [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)
+- [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)

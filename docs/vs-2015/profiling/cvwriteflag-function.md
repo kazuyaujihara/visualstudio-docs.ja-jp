@@ -91,5 +91,5 @@ HRESULT CvWriteFlagExVA(
   
  <strong>ANSI:</strong>CvWriteFlagExA、CvWriteFlagExVA  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)

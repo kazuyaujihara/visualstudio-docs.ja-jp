@@ -39,5 +39,5 @@ Python Tools for Visual Studio (PTVS) を使用すると、コードを管理で
  
   これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2)で視聴できます。 
  
-## <a name="see-also"></a>参照 
+## <a name="see-also"></a>関連項目 
  [Wiki ドキュメント](https://github.com/Microsoft/PTVS/wiki/Projects) [PTVS Getting Started と Deep Dive のビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

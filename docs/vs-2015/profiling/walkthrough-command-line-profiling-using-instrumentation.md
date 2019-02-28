@@ -123,7 +123,7 @@ ms.locfileid: "54755434"
   
      スプレッドシート プログラムで生成されたレポートを分析できます。または、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE を使用して、Report.vsp ファイル内のプロファイル データを分析することもできます。 詳細については、「[パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの概要](../profiling/performance-session-overview.md)   
  [コマンドラインからのプロファイル](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   

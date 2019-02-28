@@ -29,5 +29,5 @@ ms.locfileid: "54794229"
 ## <a name="in-this-section"></a>このセクションの内容  
  [コンカレンシー名前空間 (コンカレンシー ビジュアライザー)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)

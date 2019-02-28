@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76b7fa5b722851357ed7f383b3f9c8e4ad4dc95e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
+ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605992"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841747"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>チュートリアル: 既存の SharePoint サイトからアイテムをインポートします。
   アイテムを既存の SharePoint サイトからインポートする方法についても説明、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint プロジェクト。
@@ -43,7 +43,7 @@ ms.locfileid: "56605992"
 ## <a name="customize-a-sharepoint-site"></a>SharePoint サイトをカスタマイズします。
  この例では作成されを新しいサイト内の列を追加し、後で使用するための別のサブサイトを作成して SharePoint サブサイトをカスタマイズします。 後で、最初のサブサイトを .wsp ファイルにエクスポートされ、.wsp プロジェクトのインポートを使用して 2 つ目のサブサイトにカスタムのサイト内の列をインポートします。
 
-#### <a name="to-create-and-customize-a-sharepoint-site"></a>作成して SharePoint サイトをカスタマイズするには
+### <a name="to-create-and-customize-a-sharepoint-site"></a>作成して SharePoint サイトをカスタマイズするには
 
 1. Http:// などの Web ブラウザーを使用して SharePoint サイトを開きます。<em>システム名</em>/SitePages/Home.aspx します。
 
@@ -77,7 +77,7 @@ ms.locfileid: "56605992"
 > [!IMPORTANT]
 >  SharePoint サイトにアクセス権があるシステム上の手順を実行する必要が、次の手順を実行するランタイム エラーが発生した場合。
 
-#### <a name="to-export-an-existing-sharepoint-site"></a>既存の SharePoint サイトをエクスポートするには
+### <a name="to-export-an-existing-sharepoint-site"></a>既存の SharePoint サイトをエクスポートするには
 
 1.  SharePoint サイトで次のように選択します。**サイト設定**上、**サイトの操作**サイト設定 ページを表示するタブ。
 
@@ -100,7 +100,7 @@ ms.locfileid: "56605992"
 ## <a name="import-the-wsp-file"></a>.Wsp ファイルのインポート
  したので、 *.wsp* (テスト列カスタム サイト列) を再利用するには、インポートする項目を含むファイル、 *.wsp*ファイルへのアクセスします。
 
-#### <a name="to-import-a-wsp-file"></a>.Wsp ファイルをインポートするには
+### <a name="to-import-a-wsp-file"></a>.Wsp ファイルをインポートするには
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、メニュー バーで、**ファイル** > **新規** > **プロジェクト**を表示する、**新しいプロジェクト** ダイアログ ボックス。 お使いの IDE が Visual Basic 開発設定を使用して、メニュー バーに設定されている場合は、選択**ファイル** > **新しいプロジェクト**します。
 
@@ -128,7 +128,7 @@ ms.locfileid: "56605992"
 ## <a name="deploy-the-project"></a>プロジェクトを配置します。
  最後に、デプロイ**WspImportProject1** 2 番目の SharePoint にサブサイトをカスタムのサイト内の列を表示する前に作成しました。
 
-#### <a name="to-deploy-the-project"></a>プロジェクトを配置するには
+### <a name="to-deploy-the-project"></a>プロジェクトを配置するには
 
 1.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、選択、 **F5**デプロイして実行するキー、 *.wsp*プロジェクトをインポートします。
 

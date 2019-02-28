@@ -55,7 +55,7 @@ ms.locfileid: "54779227"
 |**サンプル数 (子を含む)**|この関数がコール ツリー内の親関数から呼び出されたときに、この関数で収集されたサンプルの数。 この数値には、この関数によって呼び出された関数で収集されたサンプルが含まれます。|  
 |**包括サンプル %**|この関数がコール ツリーの親関数から呼び出されたときの、プロファイル実行のすべてのサンプル数に対する、この関数およびその子関数のサンプル数の割合。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
  [コール ツリー ビュー - プロファイラー サンプリング データ](../profiling/call-tree-view-sampling-data.md)   
  [コール ツリー ビュー - サンプリング](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   

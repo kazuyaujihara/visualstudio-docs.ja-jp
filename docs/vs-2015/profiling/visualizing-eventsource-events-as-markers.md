@@ -96,5 +96,5 @@ ms.locfileid: "54801493"
 > [!NOTE]
 >  SpanID を使用してスパンを入れ子にすること、同じスレッドで部分的に重複させること、または開始と終了のスレッドを別にすることはサポートされていません。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)

@@ -85,7 +85,7 @@ ms.locfileid: "54782389"
 |**最大アプリケーション時間 (関数のみ)**|このコンテキストのこの関数の呼び出しの最大アプリケーション排他時間。|  
 |**最小アプリケーション時間 (関数のみ)**|このコンテキストのこの関数の呼び出しの最小アプリケーション排他時間。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
  [コール ツリー ビュー](../profiling/call-tree-view-sampling-data.md)   
  [コール ツリー ビュー - インストルメンテーション](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   

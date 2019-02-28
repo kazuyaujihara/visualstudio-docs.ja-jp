@@ -41,5 +41,5 @@ MSBuild は、.NET Framework の一部ではなく Visual Studio の一部とし
   
 -   `MSBuildToolsPath` と `MSBuildFrameworkToolsPath` は 32 ビット対応のプロパティであり、`MSBuildToolsPath32` と `MSBuildFrameworkToolsPath32` は、32 ビットまたは 64 ビットの MSBuild を使用しているかどうかに関係なく、常に 32 ビットの場所を指します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [MSBuild](msbuild.md)

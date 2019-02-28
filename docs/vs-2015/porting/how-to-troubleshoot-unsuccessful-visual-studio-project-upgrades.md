@@ -56,5 +56,5 @@ Visual Studio が、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の旧バージ
 
    アップグレードされた [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] バージョンでプロジェクトを実行する場合は、そのプロジェクトの参照を更新し、参照を呼び出す `Imports` ステートメントまたは `Using` ステートメントも更新する必要があります。 プロジェクトが IDE で読み込まれる場合は、**ソリューション エクスプローラー**または **[参照マネージャー]** ダイアログ ボックスを使用して参照を更新できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [/Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [ASP.NET 4 に変換する](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

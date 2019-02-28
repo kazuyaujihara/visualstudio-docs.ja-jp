@@ -27,5 +27,5 @@ ms.locfileid: "54767432"
   
  CPU 使用状況グラフまたは GPU アクティビティ グラフでは、マウス ポインターをドラッグして、強調表示する領域を作成できます。 マウスのボタンを離すと、選択した範囲が拡大されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [使用状況ビュー](../profiling/utilization-view.md)

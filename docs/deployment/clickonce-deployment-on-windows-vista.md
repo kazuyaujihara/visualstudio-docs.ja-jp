@@ -17,41 +17,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 953761232c184c3f77dea089767bfcfbb4b2ff70
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002640"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600104"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista の ClickOnce 配置
 
-Visual Studio でアプリケーションの構築 Windows Vista でユーザー アカウント制御 (UAC) は、通常、埋め込みマニフェストを生成するは、アプリケーションの実行可能ファイルに XML データをバイナリとしてにエンコードされます。  ClickOnce および Registration-free COM アプリケーションでは、Visual Studio は、埋め込みのマニフェストではなく、UAC のデータを格納しているこれらのプロジェクト ファイルを生成するために、外部のマニフェストが必要です。 Visual Studio の ClickOnce および Registration-free COM の展開という名前のファイルから情報を使用して*app.manifest*外部 UAC マニフェスト情報を生成します。 以外の場合は、Visual Studio には、アプリケーションの実行可能ファイルで、UAC のデータが埋め込まれます。 
+Visual Studio でアプリケーションの構築 Windows Vista でユーザー アカウント制御 (UAC) は、通常、埋め込みマニフェストを生成するは、アプリケーションの実行可能ファイルに XML データをバイナリとしてにエンコードされます。  ClickOnce および Registration-free COM アプリケーションでは、Visual Studio は、埋め込みのマニフェストではなく、UAC のデータを格納しているこれらのプロジェクト ファイルを生成するために、外部のマニフェストが必要です。 Visual Studio の ClickOnce および Registration-free COM の展開という名前のファイルから情報を使用して*app.manifest*外部 UAC マニフェスト情報を生成します。 以外の場合は、Visual Studio には、アプリケーションの実行可能ファイルで、UAC のデータが埋め込まれます。
 
-Visual Studio では、マニフェスト生成のため、次のオプションを提供します。  
-  
-- 埋め込みマニフェストを使用します。 アプリケーションの実行可能ファイルに UAC のデータを埋め込むし、通常のユーザーとして実行します。  
-  
-   これは、(ClickOnce を使用する) 場合を除き、既定の設定です。 この設定は、Windows Vista で Visual Studio が動作する通常の方法をサポートしている、内部と外部の両方の世代でマニフェストを使用して`AsInvoker`します。  
-  
-- 外部のマニフェストを使用します。 使用して、外部のマニフェストを生成*app.manifest*します。  
-  
-   これで情報を使用して外部マニフェストだけが生成されます*app.manifest*します。 ClickOnce または Registration-free COM を使用してアプリケーションを発行するときに Visual Studio によって追加*app.manifest*をプロジェクトにし、このオプションを追加します。  
-  
-- マニフェストを使用できません。 マニフェストを含まないアプリケーションを作成します。  
-  
-   このアプローチとも呼ばれます*virtualization*します。 Visual Studio の以前のバージョンからの既存のアプリケーションとの互換性のためには、このオプションを使用します。  
-  
-  新しいプロパティは、**アプリケーション**(Visual c# プロジェクトのみ) 用のプロジェクト デザイナーのページと、MSBuild プロジェクト ファイル形式でします。  
-  
-  Visual Studio IDE で UAC マニフェスト生成を構成するためのメソッドは、プロジェクトの種類 (Visual c# または Visual Basic) によって異なります。  
-  
-  * マニフェストの生成を Visual c# プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (c#)](../ide/reference/application-page-project-designer-csharp.md)します。  
-  
-  * マニフェストの生成を Visual Basic プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)します。  
-  
-## <a name="see-also"></a>関連項目  
- [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
- [ユーザー アクセス許可と Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
- [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [[アプリケーション] ページ (プロジェクト デザイナー)](../ide/reference/application-page-project-designer-visual-basic.md)
+Visual Studio では、マニフェスト生成のため、次のオプションを提供します。
+
+- 埋め込みマニフェストを使用します。 アプリケーションの実行可能ファイルに UAC のデータを埋め込むし、通常のユーザーとして実行します。
+
+   これは、(ClickOnce を使用する) 場合を除き、既定の設定です。 この設定は、Windows Vista で Visual Studio が動作する通常の方法をサポートしている、内部と外部の両方の世代でマニフェストを使用して`AsInvoker`します。
+
+- 外部のマニフェストを使用します。 使用して、外部のマニフェストを生成*app.manifest*します。
+
+   これで情報を使用して外部マニフェストだけが生成されます*app.manifest*します。 ClickOnce または Registration-free COM を使用してアプリケーションを発行するときに Visual Studio によって追加*app.manifest*をプロジェクトにし、このオプションを追加します。
+
+- マニフェストを使用できません。 マニフェストを含まないアプリケーションを作成します。
+
+   このアプローチとも呼ばれます*virtualization*します。 Visual Studio の以前のバージョンからの既存のアプリケーションとの互換性のためには、このオプションを使用します。
+
+  新しいプロパティは、**アプリケーション**(Visual c# プロジェクトのみ) 用のプロジェクト デザイナーのページと、MSBuild プロジェクト ファイル形式でします。
+
+  Visual Studio IDE で UAC マニフェスト生成を構成するためのメソッドは、プロジェクトの種類 (Visual c# または Visual Basic) によって異なります。
+
+  * マニフェストの生成を Visual c# プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (c#)](../ide/reference/application-page-project-designer-csharp.md)します。
+
+  * マニフェストの生成を Visual Basic プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)します。
+
+## <a name="see-also"></a>関連項目
+- [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)
+- [ユーザー アクセス許可と Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)
+- [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [[アプリケーション] ページ (プロジェクト デザイナー)](../ide/reference/application-page-project-designer-visual-basic.md)

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1056e65e769710a1092142104e87eaead37521
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: ca403045a22bb2f2aca6af537660d70c791064e3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227575"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720511"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio でコンソールを使用して JavaScript をデバッグします。
 
@@ -249,11 +249,11 @@ JavaScript コンソール ウィンドウを使用すると、1 回につき、
 `cd` コマンドを使用して実行コンテキストを切り替えることもできますが、別の実行コンテキストの名前を知っている必要があります。また、使用する参照がスコープ内になければなりません。 **[ターゲット]** リストを使用すると、別の実行コンテキストに簡単にアクセスできます。
 
 ## <a name="see-also"></a>関連項目
-[Visual Studio でのアプリのデバッグ](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[JavaScript コンソール コマンド](../debugger/javascript-console-commands.md)  
-[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[ショートカット キー](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[HTML、CSS、および JavaScript サンプル コードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)  
-[WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)  
-[製品のサポートとユーザー補助](https://visualstudio.microsoft.com/vs/support/)
+- [Visual Studio でのアプリのデバッグ](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md)
+- [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [ショートカット キー](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [HTML、CSS、および JavaScript サンプル コードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)
+- [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)
+- [製品のサポートとユーザー補助](https://visualstudio.microsoft.com/vs/support/)

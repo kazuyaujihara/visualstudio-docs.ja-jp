@@ -1,4 +1,4 @@
-﻿---
+---
 title: VB のプロジェクト設定の構成のデバッグ |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -23,21 +23,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f8315717b91a257d09b5de671698796f732543
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a2c4a2cb44e2e93f4a09f26a7aa53623542567e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004735"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720875"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Visual Basic デバッグ構成のプロジェクト設定
-「[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)」で説明されているように、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] のデバッグ構成に対するプロジェクト設定は **[プロパティ ページ]** ウィンドウで変更できます。 次の表は、**[プロパティ ページ]** ウィンドウのデバッガー関連の設定の場所を示しています。  
-  
+「[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)」で説明されているように、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] のデバッグ構成に対するプロジェクト設定は **[プロパティ ページ]** ウィンドウで変更できます。 次の表は、**[プロパティ ページ]** ウィンドウのデバッガー関連の設定の場所を示しています。
+
 > [!WARNING]
->  このトピックは UWP アプリには適用されません。 参照してください[(VB、c#、C++ および XAML) は、デバッグ セッションを開始](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
-  
-### <a name="debug-tab"></a>[デバッグ] タブ  
-  
+>  このトピックは UWP アプリには適用されません。 参照してください[(VB、c#、C++ および XAML) は、デバッグ セッションを開始](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+
+### <a name="debug-tab"></a>[デバッグ] タブ
+
 | 設定 | 説明 |
 |------------------------------| - |
 | **構成** | アプリケーションをコンパイルするためのモードを設定します。 **[Active (Debug)]\(アクティブ (デバッグ)\)**、**[デバッグ]**、**[リリース]**、**[すべての構成]** から選択します。 |
@@ -47,15 +47,15 @@ ms.locfileid: "55004735"
 | **リモート コンピューターの使用** | このチェック ボックスがオンの場合、リモート デバッグは有効です。 テキスト ボックスには、デバッグ用にアプリケーションを実行するリモート コンピューターの名前または [Msvsmon サーバー名](../debugger/remote-debugging.md)を入力できます。 リモート コンピューター上の EXE ファイルの場所は、[ビルド] タブの [出力パス] プロパティで指定します。また、EXE ファイルがリモート コンピューターの共有ディレクトリにあることも必要です。 |
 | **Unmanaged code debugging (アンマネージド コード デバッグ)** | マネージド アプリケーションからネイティブ (アンマネージド) Win32 コードの呼び出しをデバッグできます。 これは、[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] プロジェクトで [デバッガーのタイプ] に [混合] を選択するのと同じ効果があります。 |
 | **SQL Server デバッグ** | SQL Server データベース オブジェクトのデバッグを許可します。 |
-  
-### <a name="compile-tab-press-advanced-compile-options-button"></a>[コンパイル] タブ : [詳細コンパイル オプション] ボタンをクリックします。  
-  
+
+### <a name="compile-tab-press-advanced-compile-options-button"></a>[コンパイル] タブ : [詳細コンパイル オプション] ボタンをクリックします。
+
 | 設定 | 説明 |
 |---------------------------| - |
 | **最適化を有効にする** | このオプションはオフにしておくことをお勧めします。 最適化を有効にすると、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] に表示されるソース コードとは異なるコードが実行されるため、デバッグが困難になります。 コードが最適化されている場合、"マイ コードのみ" でデバッグするときに、既定でシンボルが読み込まれません。 |
 | **デバッグ情報を作成** | 既定で、デバッグ バージョンとリリース バージョンの両方に定義されます。この設定 (/debug コンパイラ オプションに相当します) に基づいて、ビルド時にデバッグ情報が作成されます。 デバッガーでは、この情報を使って変数名やその他の情報を見やすい形式でデバッグ時に表示します。 この情報を設定せずにプログラムをコンパイルすると、デバッガーの機能は制限されます。 詳細については、「[/debug](/dotnet/visual-basic/reference/command-line-compiler/debug)」を参照してください。 |
 | **定数 DEBUG の定義** | このシンボルを定義すると、[Debug クラス](/dotnet/api/system.diagnostics.debug)の出力関数の条件付きコンパイルが可能になります。 このシンボルを定義すると、Debug クラスのメソッドは[出力ウィンドウ](../ide/reference/output-window.md)に出力を生成します。 このシンボルを定義しない場合、Debug クラスのメソッドはコンパイルされず、出力も生成されません。 このシンボルは、デバッグ バージョンに定義します。リリース バージョンには定義しません。 リリース バージョンにこのシンボルを定義すると、不要なコードのためにプログラムの実行速度が低下します。 |
 | **定数 TRACE の定義** | このシンボルを定義すると、[Trace クラス](/dotnet/api/system.diagnostics.trace)の出力関数の条件付きコンパイルが可能になります。 このシンボルを定義すると、Trace クラスのメソッドは[出力ウィンドウ](../ide/reference/output-window.md)に出力を生成します。 このシンボルを定義しない場合、Trace クラスのメソッドはコンパイルされず、出力も生成されません。 このシンボルは、既定で、デバッグ バージョンとリリース バージョンの両方に定義されます。 |
-  
+
 ## <a name="see-also"></a>関連項目
- [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)
+- [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)

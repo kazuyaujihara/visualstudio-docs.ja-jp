@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 437c9a6d75df3c063a53bda0549c22fd0cbc0876
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335983"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627949"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用してライブ ASP.NET Azure Kubernetes サービスをデバッグします。
 
@@ -33,7 +33,7 @@ ms.locfileid: "56335983"
 > * スナップ ポイントを設定し、スナップショットの表示
 > * ログポイントを設定します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 * Azure Kubernetes サービスでは Visual Studio 2019 Enterprise preview の使用可能な以上でのみのスナップショットのデバッガー、 **Azure 開発ワークロード**します。 (下、**個々 のコンポーネント** タブを下にあります**デバッグとテスト** > **スナップショット デバッガー**)。
 
@@ -57,7 +57,7 @@ ms.locfileid: "56335983"
 1. スナップショット デバッガーをアタッチします。 いくつかの方法のいずれかを使用できます。
 
     * 選択**デバッグ > スナップショット デバッガーをアタッチしています.**.AKS リソースに web アプリが展開されると、Azure ストレージ アカウントを選択し、クリックして**アタッチ**します。
-  
+
       ![[デバッグ] メニューからスナップショット デバッガーを起動します。](../debugger/media/snapshot-debug-menu-attach.png)
 
     * クリックし、プロジェクトを右クリックして**発行**とでは、発行ページをクリックし、**スナップショット デバッガーのアタッチ**します。 AKS リソースに web アプリが展開されると、Azure ストレージ アカウントを選択し、クリックして**アタッチ**します。
@@ -67,7 +67,7 @@ ms.locfileid: "56335983"
     ![F5 キーを押してのドロップダウン メニューからスナップショット デバッガーを起動します。](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Cloud Explorer を使用して (**ビュー > Cloud Explorer**) に、web アプリを展開、AKS リソースと、Azure ストレージ アカウントを右クリックし、クリックして**スナップショット デバッガーのアタッチ**します。
-  
+
       ![Cloud Explorer からスナップショット デバッガーを起動します。](../debugger/media/snapshot-launch.png)
 
     > [!NOTE]

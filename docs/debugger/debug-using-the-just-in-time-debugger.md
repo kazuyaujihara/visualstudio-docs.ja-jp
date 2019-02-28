@@ -1,6 +1,6 @@
 ---
 title: Just-In-Time デバッガーを使用したデバッグ |Microsoft Docs
-ms.date: 09/24/18
+ms.date: 09/24/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a593548936b84f852015a09dd8f63f7fceb7472b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8a9661673adf6cdab2d9a880ce27197a4e53127
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921433"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796557"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual studio Just-In-Time デバッガーを使用してデバッグします。
 
@@ -24,14 +24,14 @@ ms.locfileid: "55921433"
 ジャストイン タイムのデバッグは、Windows デスクトップ アプリに対して機能します。 ユニバーサル Windows アプリ、またはビジュアライザーなどのネイティブ アプリケーションでホストされているマネージ コードは機能しません。
 
 > [!TIP]
-> 停止するを表示するには、Just-In-Time デバッガー ダイアログ ボックスがない Visual Studio がインストールされているを参照してください、たい場合[Just-In-Time デバッガーを無効にする](../debugger/just-in-time-debugging-in-visual-studio.md)します。 Visual Studio がインストールされている 1 回場合、は、する必要があります[Windows レジストリからデバッグを使用しないジャスト イン タイム](#disable-just-in-time-debugging-from-the-windows-registry)します。 
+> 停止するを表示するには、Just-In-Time デバッガー ダイアログ ボックスがない Visual Studio がインストールされているを参照してください、たい場合[Just-In-Time デバッガーを無効にする](../debugger/just-in-time-debugging-in-visual-studio.md)します。 Visual Studio がインストールされている 1 回場合、は、する必要があります[Windows レジストリからデバッグを使用しないジャスト イン タイム](#disable-just-in-time-debugging-from-the-windows-registry)します。
 
 ##  <a name="BKMK_Enabling"></a> 有効または無効にするジャスト イン タイムが Visual Studio のデバッグ
 
 >[!NOTE]
->有効または時間でのみデバッグを無効にするは、管理者として Visual Studio する実行する必要があります。 有効にするか、ジャスト イン タイムを無効にすると、レジストリ キーを設定してデバッグし、管理者特権は、そのキーを変更する必要があります。 管理者として Visual Studio を開くには、Visual Studio アプリケーションを右クリックし、選択**管理者として実行**します。 
+>有効または時間でのみデバッグを無効にするは、管理者として Visual Studio する実行する必要があります。 有効にするか、ジャスト イン タイムを無効にすると、レジストリ キーを設定してデバッグし、管理者特権は、そのキーを変更する必要があります。 管理者として Visual Studio を開くには、Visual Studio アプリケーションを右クリックし、選択**管理者として実行**します。
 
-時にだけ、Visual Studio からデバッグを構成する**ツール** > **オプション**(または**デバッグ** > **のオプション**)ダイアログ ボックス。 
+時にだけ、Visual Studio からデバッグを構成する**ツール** > **オプション**(または**デバッグ** > **のオプション**)ダイアログ ボックス。
 
 **Just-In-Time デバッグの有効/無効を切り替えるには:** 
 
@@ -40,7 +40,7 @@ ms.locfileid: "55921433"
    ![有効にするか、JIT デバッグを無効にする](../debugger/media/dbg-jit-enable-or-disable.png "を有効にするか、JIT デバッグを無効にします。")
 
 1. **コードの種類の有効にする Just-In-Time デバッグを**ボックスに、時にのみをデバッグするデバッグするコードの種類を選択:**マネージ**、**ネイティブ**、や**スクリプト**します。
-   
+
 1. **[OK]** を選択します。
 
 時にのみ有効にした場合、デバッガーが、それが開かない場合は、アプリのクラッシュやエラーを参照してください[のトラブルシューティングの Just-In-Time デバッグ](#jit_errors)します。
@@ -80,34 +80,34 @@ Visual Studio がコンピューターからアンインストールされた後
 時間で Just 標準の Windows フォーム エラーを処理ではなくデバッグを有効にするには、これらの設定を追加します。
 
 -  `system.windows.forms`のセクション、 *machine.config*または*\<アプリ名 >. exe.config*ファイル、設定、`jitDebugging`値を`true`:
-    
+
     ```xml
     <configuration>
         <system.windows.forms jitDebugging="true" />
     </configuration>
     ```
-    
+
 -  C++ Windows フォーム アプリケーションでも設定`DebuggableAttribute`に`true`で、 *.config*ファイルまたはコード。 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) を使用し、[/Og](/cpp/build/reference/og-global-optimizations) は使用しないでコンパイルすると、コンパイラによってこの属性が設定されます。 最適化されていないリリース ビルドをデバッグする場合は、ただし、する必要があります設定`DebuggableAttribute`アプリの次の行を追加することで*AssemblyInfo.cpp*ファイル。
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
    ```
-   
+
    詳細については、「<xref:System.Diagnostics.DebuggableAttribute>」を参照してください。
 
 ## <a name="BKMK_Using_JIT"></a>ジャスト イン タイムを使用して、デバッグ
  この例では、時にのみアプリがエラーをスローするときにデバッグについて説明します。
 
  - Visual Studio をインストールする次の手順が必要です。 Visual Studio を持っていない場合は、無料でダウンロードできます、 [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)します。
-   
+
  - 時間だけのことを確認のデバッグは[有効になっている](#BKMK_Enabling)で**ツール** > **オプション** > **デバッグ** > **ジャストイン タイム**します。
 
 この例では、することになります、C#をスローする Visual Studio でコンソール アプリを[NullReferenceException](/dotnet/api/system.nullreferenceexception)します。
 
 1. Visual Studio で、作成、C#コンソール アプリ (**ファイル** > **新規** > **プロジェクト** > **Visual C#**   > **コンソール アプリケーション**) という名前の*ThrowsNullException*します。 Visual Studio でプロジェクトを作成する方法の詳細については、次を参照してください。[チュートリアル: 単純なアプリケーション作成](/visualstudio/get-started/csharp/tutorial-wpf)です。
-   
+
 1. Visual Studio でプロジェクトを開いたら、開く、 *Program.cs*ファイル。 Main() メソッドをコンソールには行を表示し、NullReferenceException をスローし、次のコードに置き換えます。
-   
+
    ```csharp
    static void Main(string[] args)
    {
@@ -115,30 +115,31 @@ Visual Studio がコンピューターからアンインストールされた後
        throw new NullReferenceException("this is the exception thrown by the console app");
    }
    ```
-   
-1. ソリューションをビルドするには、いずれかを選択、**デバッグ**(既定値) または**リリース**構成、および選択**ビルド** > **ソリューションのリビルド**. 
-   
-   >[!NOTE]
-   >- 選択**デバッグ**完全なデバッグ エクスペリエンスを構成します。 
-   >- 選択した場合[リリース](../debugger/how-to-set-debug-and-release-configurations.md)構成では、オフにする必要があります[マイ コードのみ](../debugger/just-my-code.md)この手順を実行します。 **ツール** > **オプション** > **デバッグ**、選択を解除**マイ コードのみを有効にする**します。
+
+1. ソリューションをビルドするには、いずれかを選択、**デバッグ**(既定値) または**リリース**構成、および選択**ビルド** > **ソリューションのリビルド**.
+
+   > [!NOTE]
+   > - 選択**デバッグ**完全なデバッグ エクスペリエンスを構成します。
+   > - 選択した場合[リリース](../debugger/how-to-set-debug-and-release-configurations.md)構成では、オフにする必要があります[マイ コードのみ](../debugger/just-my-code.md)この手順を実行します。 **ツール** > **オプション** > **デバッグ**、選択を解除**マイ コードのみを有効にする**します。
+
    ビルド構成の詳細については、「[ビルド構成について](../ide/understanding-build-configurations.md)」を参照してください。
-   
-1. ビルドされたアプリを開いて*ThrowsNullException.exe*で、C#プロジェクト フォルダー (*...\ThrowsNullException\ThrowsNullException\bin\Debug*または *...\ThrowsNullException\ThrowsNullException\bin\Release*)。 
-   
+
+1. ビルドされたアプリを開いて*ThrowsNullException.exe*で、C#プロジェクト フォルダー (*...\ThrowsNullException\ThrowsNullException\bin\Debug*または *...\ThrowsNullException\ThrowsNullException\bin\Release*)。
+
    次のコマンド ウィンドウが表示されます。
-   
+
    ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
-   
+
 1. **Just-In-Time デバッガーの選択**ダイアログ ボックスが開きます。
-   
+
    ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
-   
-   **使用可能なデバッガー**を選択します**の新しいインスタンス\<優先 Visual Studio のバージョン/エディション >** 選択されていない場合は、します。 
-   
+
+   **使用可能なデバッガー**を選択します**の新しいインスタンス\<優先 Visual Studio のバージョン/エディション >** 選択されていない場合は、します。
+
 1. **[OK]** を選択します。
-   
+
    ThrowsNullException プロジェクトが Visual Studio の新しいインスタンスで実行が例外をスローした行で停止します。
-   
+
    ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
 
 この時点でのデバッグを開始することができます。 実際のアプリをデバッグしていた場合は、コードが例外をスローして理由を確認する必要があります。
@@ -146,29 +147,26 @@ Visual Studio がコンピューターからアンインストールされた後
 > [!CAUTION]
 > アプリに信頼できないコードが含まれている場合は、デバッグを開始するかどうかを決定する際に有効にすると、セキュリティ警告ダイアログ ボックスが表示されます。 デバッグを続行する前に、コードを信頼するかどうかを決定します。 このコードは、自分で作成したコードですか。 アプリケーションをリモート コンピューター上で実行している場合、プロセスの名前を識別できますか。 アプリはローカルで実行している場合は、コンピューターで実行されている悪意のあるコードの可能性を検討してください。 コードが信頼できる場合は、選択**OK**します。 それ以外の場合、**[キャンセル]** を選択します。
 
-## <a name="jit_errors"></a> ジャスト イン タイムのトラブルシューティングのデバッグ 
+## <a name="jit_errors"></a> ジャスト イン タイムのトラブルシューティングのデバッグ
 
 ジャスト イン タイムの場合のデバッグが開始しませんアプリがクラッシュした場合でも、Visual Studio で有効になっています。
 
-- Windows エラー報告は、コンピューターに処理エラーの上にしている可能性があります。 
-  
+- Windows エラー報告は、コンピューターに処理エラーの上にしている可能性があります。
+
   この問題を解決するには、レジストリ エディターを使用して、追加、 **DWORD 値**の**無効になっている**で**値データ**の**1**、次のレジストリ キーに。
-  
-  
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows エラーの報告**
-    
+
   - (64 ビット コンピューター) 用: **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows エラーの報告**
-  
+
   詳細については、次を参照してください。[します。WER 設定](https://docs.microsoft.com/windows/desktop/wer/wer-settings)します。
-  
-- Windows の既知の問題が原因で時間にのみデバッガーが失敗します。 
-  
+
+- Windows の既知の問題が原因で時間にのみデバッガーが失敗します。
+
   修正を追加するには、 **DWORD 値**の**自動**で**値データ**の**1**、次のレジストリ キーに。
-  
-  
+
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
-    
+
   - (64 ビット コンピューター) 用: **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 ジャスト イン タイムの中に次のエラー メッセージを表示する場合がありますのデバッグします。

@@ -54,7 +54,7 @@ ms.locfileid: "54780722"
   
 -   **レポート** - セッションに対して生成されるプロファイラー データ ファイルの名前を表示します。 **[レポート]** を右クリックし、既存のレポートの追加、または 2 つのプロファイラー データ ファイルの比較を行います。 レポート名を右クリックし、プロファイラー データ ファイルを開くか、削除するか、エクスポートします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [概要](../profiling/overviews-performance-tools.md)   
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [データ コレクションの制御](../profiling/controlling-data-collection.md)

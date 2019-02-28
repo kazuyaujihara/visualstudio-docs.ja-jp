@@ -25,7 +25,7 @@ ms.locfileid: "54805382"
 
 この棒グラフは、現在の表示時間範囲におけるアクティビティ カテゴリごとに、非表示にされていない各スレッドで費やされた時間の割合を示します。 "実行" はそのスレッドが実行中であることを示し、他のすべてのカテゴリはそのスレッドが何らかの処理の待機中であることを示します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [実行時間 (スレッド ビュー)](../profiling/execution-time-threads-view.md)   
  [I/O 時間 (スレッド ビュー)](../profiling/i-o-time-threads-view.md)   
  [メモリ管理時間](../profiling/memory-management-time.md)   

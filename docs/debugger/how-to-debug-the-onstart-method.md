@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cfd6153389bbfe9cbbd36f33f6a2e4384509297
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 2fc5e8a7e0bbc80fd7fa0aa2d242239a9be6a219
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227062"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714973"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>方法 : OnStart メソッドをデバッグする
 Windows サービスをデバッグするには、サービスを起動し、デバッガーをサービス プロセスにアタッチします。 詳細については、「 [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)」を参照してください。 ただし、Windows サービスの <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> メソッドをデバッグするには、メソッド内部からデバッガーを起動する必要があります。
@@ -44,7 +44,7 @@ Windows サービスをデバッグするには、サービスを起動し、デ
 
     ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")
 
-3.  **[はい、** service name> をデバッグします]\< を選びます。
+3. **[はい、** service name> をデバッグします]\< を選びます。
 
 4. [Just-In-Time デバッガー] ウィンドウで、デバッグに使う Visual Studio のバージョンを選びます。
 
@@ -53,5 +53,5 @@ Windows サービスをデバッグするには、サービスを起動し、デ
 5. Visual Studio の新しいインスタンスが開始し、 `Debugger.Launch()` メソッドで実行が停止します。
 
 ## <a name="see-also"></a>関連項目
-[デバッガーのセキュリティ](../debugger/debugger-security.md)  
-[マネージド コードをデバッグする](../debugger/debugging-managed-code.md)
+- [デバッガーのセキュリティ](../debugger/debugger-security.md)
+- [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)

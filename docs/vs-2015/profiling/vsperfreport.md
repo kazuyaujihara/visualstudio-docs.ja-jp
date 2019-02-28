@@ -92,5 +92,5 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**DiffColumn:**[*columnname*]|この列を使用して、値を比較します。 既定では排他サンプルのパーセント列が使用されます。|  
 |**QueryDiffTables**|指定された 2 つのレポート ファイルに関する有効なテーブルおよび列をリストします。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)

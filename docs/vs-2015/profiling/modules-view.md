@@ -33,7 +33,7 @@ ms.locfileid: "54785594"
   
  モジュール ビューに表示される列は、データの収集に使用したプロファイル方法 (サンプリングまたはインストルメンテーション)、およびプロファイル実行で .NET メモリ データを収集対象としたかどうかによって異なります。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [モジュール ビュー](../profiling/modules-view-sampling-data.md)   
  [モジュール ビュー](../profiling/modules-view-instrumentation-data.md)   
  [モジュール ビュー - インストルメンテーション](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   

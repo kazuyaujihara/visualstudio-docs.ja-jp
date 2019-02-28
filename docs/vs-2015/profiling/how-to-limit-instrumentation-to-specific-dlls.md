@@ -70,6 +70,6 @@ ms.locfileid: "54779496"
     > [!NOTE]
     >  DLL を実行する実行可能 (.exe) ファイルは指定しないでください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [データ コレクションの制御](../profiling/controlling-data-collection.md)   
  [方法: インストルメンテーションを特定の関数に制限する](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

@@ -122,5 +122,5 @@ ms.locfileid: "54764862"
   
 7.  あるターゲットが実行またはスキップされると、その後、そのターゲットを `AfterTargets` 属性に一覧表示しているターゲットが実行されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ターゲット](../msbuild/msbuild-targets.md)

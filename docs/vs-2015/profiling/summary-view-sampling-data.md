@@ -53,6 +53,6 @@ ms.locfileid: "54803086"
 |**Name**|関数の名前。|  
 |**サンプル % (関数のみ)**|この関数が関数本体のコードを実行していたときに収集された、プロファイリング実行内のすべてのサンプルの割合。 この関数から呼び出された関数が実行されていたときに収集されたサンプルは除外されます。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [概要ビュー](../profiling/summary-view-dotnet-memory-data.md)   
  [概要 ビュー](../profiling/summary-view-instrumentation-data.md)

@@ -52,5 +52,5 @@ Windows Presentation Foundation (WPF) は、このセクションで説明する
  <xref:Microsoft.Build.Tasks.Windows>  
  ビルド タスク Windows アセンブリ。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

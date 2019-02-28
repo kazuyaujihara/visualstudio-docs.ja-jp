@@ -12,41 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d06648c884a4406c6a5d28b2b33a7cbfd4f6d24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12024a3a024f2c9433e144790c0a513d4e33df12
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987467"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643744"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
-このシンボルのコンパイラ固有の型識別子の値の配列を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_typeIds (   
-   DWORD  cTypeIds,  
-   DWORD* pcTypeIds,  
-   DWORD  typeIds[]  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `cTypeIds`  
- [in]データを保持するバッファーのサイズ。  
-  
- `pcTypeIds`  
- [out]数を返します`typeIds`書き込まれると、または、`typeIds`は`NULL`、使用可能な型識別子の総数、します。  
-  
- `typeIds[]`  
- [out]型識別子を使用して格納する配列。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
-  
+このシンボルのコンパイラ固有の型識別子の値の配列を取得します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_typeIds ( 
+   DWORD  cTypeIds,
+   DWORD* pcTypeIds,
+   DWORD  typeIds[]
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `cTypeIds`
+
+[in]データを保持するバッファーのサイズ。
+
+ `pcTypeIds`
+
+[out]数を返します`typeIds`書き込まれると、または、`typeIds`は`NULL`、使用可能な型識別子の総数、します。
+
+ `typeIds[]`
+
+[out]型識別子を使用して格納する配列。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
-  
+>  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+
 ## <a name="see-also"></a>関連項目
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

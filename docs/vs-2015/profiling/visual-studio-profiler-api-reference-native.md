@@ -46,6 +46,6 @@ Visual Studio プロファイラー API を使用すると、収集データの�
   
  [PROFILE_CURRENTID](../profiling/profile-currentid.md)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [プロファイリング ツールの API](../profiling/profiling-tools-apis.md)   
  [チュートリアル : プロファイラー API の使用](../profiling/walkthrough-using-profiler-apis.md)

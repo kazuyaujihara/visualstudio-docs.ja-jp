@@ -102,7 +102,7 @@ ms.locfileid: "54766153"
   
      プロファイラーで、データ ファイルが生成され、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] メイン ウィンドウにデータの概要ビューが表示されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [概要](../profiling/overviews-performance-tools.md)   
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [インストルメンテーション データ値について](../profiling/understanding-instrumentation-data-values.md)   

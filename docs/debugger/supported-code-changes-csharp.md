@@ -1,4 +1,4 @@
----
+﻿---
 title: サポートされるコードの変更 (c# および Visual Basic) |Microsoft Docs
 ms.date: 10/11/2017
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5e5a4791b6703db72f67c9b18abcb3b0592916be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 753a3816b6432a58c5f79077c4e438db753297b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945061"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692229"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>サポートされているコード変更 (c# および Visual Basic)
 エディット コンティニュでは、メソッドの本体内で行ったほとんどの種類のコード変更を処理できます。 しかし、メソッドの本体外で行った変更の大部分やメソッドの本体内で行った一部の変更は、デバッグ時に適用できません。 このようなサポートされていない変更を適用するには、デバッグを停止し、新しいバージョンのコードを再起動する必要があります。
@@ -43,12 +43,12 @@ ms.locfileid: "54945061"
 > 文字列補間と null 条件演算子などの新しい言語機能は通常、エディット コンティニュでサポートします。 最新情報については、次を参照してください。、 [Enc サポートされている編集](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)ページ。
 
 ## <a name="unsupported-changes-to-code"></a>サポートされていないコードの変更
- デバッグ セッション中に c# および Visual Basic コードに、次の変更は適用できません。  
-  
--   現在のステートメントまたはその他のアクティブ ステートメントに対する変更。  
-  
-     アクティブ ステートメントには、現在のステートメントを取得するために呼び出される、呼び出し履歴上の関数内に存在するすべてのステートメントが含まれます。  
-  
+ デバッグ セッション中に c# および Visual Basic コードに、次の変更は適用できません。
+
+-   現在のステートメントまたはその他のアクティブ ステートメントに対する変更。
+
+     アクティブ ステートメントには、現在のステートメントを取得するために呼び出される、呼び出し履歴上の関数内に存在するすべてのステートメントが含まれます。
+
      ソース ウィンドウ内では、現在のステートメントは黄色の背景で示されます。 その他のアクティブ ステートメント (読み取り専用) は、網かけの背景で示されます。 これらの既定の色は、**[オプション]** ダイアログ ボックスで変更できます。
 
 - 次の表では、言語要素によってサポートされていないコードの変更を示します。
@@ -76,9 +76,9 @@ ms.locfileid: "54945061"
 |using ステートメント|追加|
 |非同期のメソッドとラムダ|.NET Framework 4 をターゲットとするプロジェクトで async メソッドまたはラムダを変更し、削減 (を参照してください[詳細](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 |Iterators|.NET Framework 4 をターゲットとするプロジェクトで、反復子を変更し、削減 (を参照してください[詳細](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-  
-## <a name="unsafe-code"></a>アンセーフ コード  
- アンセーフ コードを変更する場合、セーフ コードを変更するときと同じ制限に加えて、もう 1 つ追加の制限が適用されます。エディット コンティニュを含むメソッド内に存在するアンセーフ コードへの変更をサポートしません、`stackalloc`演算子。  
+
+## <a name="unsafe-code"></a>アンセーフ コード
+ アンセーフ コードを変更する場合、セーフ コードを変更するときと同じ制限に加えて、もう 1 つ追加の制限が適用されます。エディット コンティニュでは、`stackalloc` 演算子を含むメソッド内に存在するアンセーフ コードへの変更はサポートしていません。
 
 ## <a name="unsupported-app-scenarios"></a>サポートされていないアプリのシナリオ
 
@@ -86,24 +86,24 @@ ms.locfileid: "54945061"
 
 > [!NOTE]
 > サポートされているアプリでは、Windows 10、および x86 と x64 のアプリを .NET Framework 4.6 を対象とする UWP は、デスクトップまたはそれ以降のバージョン (.NET Framework は、デスクトップ バージョンのみ)。
-  
-## <a name="unsupported-scenarios"></a>サポートされていないシナリオ  
- 次のデバッグ シナリオでは、エディット コンティニュを使用できません。  
-  
--   混合モードでの (ネイティブ/マネージ) デバッグ  
-  
--   SQL デバッグ  
-  
--   ワトソン博士のダンプのデバッグ  
-  
--   埋め込まれたランタイム アプリケーションのデバッグ  
-  
--   プロセスにアタッチを使用して、アプリケーションのデバッグ (**デバッグ > プロセスにアタッチ**) を選択して、アプリケーションを実行する代わりに**開始**から、**デバッグ**メニュー。  
-  
--   最適化されたコードのデバッグ  
-  
+
+## <a name="unsupported-scenarios"></a>サポートされていないシナリオ
+ 次のデバッグ シナリオでは、エディット コンティニュを使用できません。
+
+-   混合モードでの (ネイティブ/マネージ) デバッグ
+
+-   SQL デバッグ
+
+-   ワトソン博士のダンプのデバッグ。
+
+-   埋め込まれたランタイム アプリケーションのデバッグ
+
+-   プロセスにアタッチを使用して、アプリケーションのデバッグ (**デバッグ > プロセスにアタッチ**) を選択して、アプリケーションを実行する代わりに**開始**から、**デバッグ**メニュー。
+
+-   最適化されたコードのデバッグ
+
 -   ビルド エラーによって新しいバージョンのビルドが失敗した後の旧バージョンのデバッグ
-  
-## <a name="see-also"></a>関連項目  
- [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [方法 : エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+
+## <a name="see-also"></a>参照
+- [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
+- [方法 : エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

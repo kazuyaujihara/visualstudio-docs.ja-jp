@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44a74d0c11f6d3f7265455bd8df1d481408d8e7b
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 20bd652437f0c1765686afc1d93a81bc9110236d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155826"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642132"
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
 データ ソースに含まれるさまざまなテーブルを列挙します。
@@ -31,7 +31,7 @@ IDiaEnumTables : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表は、メソッドの`IDiaEnumTables`します。
 
-|方法|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|取得、 [IEnumVARIANT インターフェイス](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)この列挙子のバージョン。|
 |[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|テーブルの数を取得します。|
@@ -41,7 +41,7 @@ IDiaEnumTables : IUnknown
 |[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|先頭に、列挙体シーケンスをリセットします。|
 |[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
 このインターフェイスを呼び出すことによって取得、 [idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)メソッド。
@@ -69,5 +69,5 @@ void ShowTableNames(IDiaSession *pSession)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>関連項目
-[インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
+- [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)

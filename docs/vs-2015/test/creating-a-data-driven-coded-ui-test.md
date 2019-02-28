@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71c08c78d67f65ec69a982ce431a64ec1c620d27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb765bebba4aaa3fe0cece4b64d33d2e810bdfb7
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755371"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796713"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>データ ドリブンのコード化された UI テストの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "54755371"
   
 4.  1 と 2 を加算し、レコーダーを一時停止し、テスト メソッドを生成します。 後で、このユーザー入力の値をデータ ファイルからの値に置換することになります。  
   
-     ![テスト メソッドを生成する](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
+     ![テスト メソッドの生成](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
      テスト ビルダーを閉じます。 メソッドがテストに追加されます。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "54755371"
     }  
     ```  
   
-5.  `AddNumbers()` メソッドを使用して、テストが実行されていることを確認します。 前に示したテスト メソッドにカーソルを置き、コンテキスト メニューを開き、**[テストの実行]** を選択します。 (キーボード ショートカット:Ctrl + r、T)。  
+5.  `AddNumbers()` メソッドを使用して、テストが実行されていることを確認します。 前に示したテスト メソッドにカーソルを置き、コンテキスト メニューを開き、**[テストの実行]** を選択します。 (キーボード ショートカット: Ctrl + R、T)。  
   
      テストの合格または失敗を示すテスト結果が、[テスト エクスプローラー] ウィンドウに表示されます。 [テスト エクスプローラー] ウィンドウを開くには、**[テスト]** メニューの **[Windows]** を選択し、**[テスト エクスプローラー]** を選択します。  
   
@@ -205,7 +205,7 @@ ms.locfileid: "54755371"
   
    **ガイダンス**  
   
-   詳細については、次を参照してください。 [Visual Studio 2012 – Chapter 2 による継続的デリバリーのためのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)と[Visual Studio 2012 – Chapter 5 による継続的デリバリーのためのテストします。システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)  
+   詳細については、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)」 (Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 2 章: 単体テスト: 内部のテスト) および「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)」 (Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 5 章: システム テストの自動化) を参照してください。  
   
 ## <a name="q--a"></a>Q & A  
   

@@ -158,7 +158,7 @@ ms.locfileid: "54754819"
   
    アプリケーションを再度実行すると、パフォーマンスが大幅に改善されたことがわかります。 ユーザーが知覚できる程度にパフォーマンスが改善された場合でも、プロファイリング セッションを再び実行することをお勧めします。 ある問題によって他の問題の存在が表面化しない場合があるため、問題を解決したら必ずデータをレビューする必要があります。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [概要](../profiling/overviews-performance-tools.md)   
  [はじめに](../profiling/getting-started-with-performance-tools.md)   
  [/Z7、/Zi、/ZI (デバッグ情報の形式)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

@@ -392,7 +392,7 @@ Visual Studio では、C++ で記述されたアンマネージ コードの単�
   
      また、最低限のコード カバレッジも要求できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [既存の C++ アプリケーションへの単体テストの追加](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [Microsoft.VisualStudio.TestTools.CppUnitTestFramework の使用](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
  [マネージ/アンマネージ コードの相互運用性の概要](http://msdn.microsoft.com/library/ms973872.aspx)   

@@ -1,4 +1,4 @@
-﻿---
+---
 title: コードの種類 ダイアログ ボックスを選択します |。Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,22 +21,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7568975ff23694e9a62f7d6b3010d1598c5bc8f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940168"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701356"
 ---
 # <a name="select-code-type-dialog-box"></a>[コードの種類の選択] ダイアログ ボックス
-このダイアログ ボックスを開くには、**[プロセスにアタッチ]** ダイアログ ボックスを開き、**[選択]** をクリックします。  
-  
- **[デバッグするコードの種類を自動的に判断する]**  
- 実行中のコードの種類に基づいて、適切なデバッガーが選択されます。  
-  
- **次のコードの種類をデバッグする:**   
- 表示される一覧から、デバッグするコードの種類を選択します。  
-  
-## <a name="see-also"></a>関連項目
- [デバッガーのセキュリティ](../debugger/debugger-security.md)   
- [実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+このダイアログ ボックスを開くには、**[プロセスにアタッチ]** ダイアログ ボックスを開き、**[選択]** をクリックします。
+
+ **デバッグするコードの種類を自動的に決定**が実行されているコードの種類に基づいて適切なデバッガーが選択されます。
+
+ **コードの種類:** 表示された一覧から、デバッグするコードの種類を選択します。
+
+## <a name="see-also"></a>参照
+- [デバッガーのセキュリティ](../debugger/debugger-security.md)
+- [実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

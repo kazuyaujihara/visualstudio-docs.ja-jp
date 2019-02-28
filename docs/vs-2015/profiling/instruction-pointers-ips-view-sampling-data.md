@@ -44,5 +44,5 @@ ms.locfileid: "54758492"
 |**サンプル数 (関数のみ)**|命令を実行していたときに収集されたサンプルの合計数です。|  
 |**サンプル % (関数のみ)**|命令を実行していたときに収集された、プロファイル実行内のすべてのサンプルの割合です。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [命令ポインター (IP) ビュー - サンプリング](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

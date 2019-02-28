@@ -44,7 +44,7 @@ ms.locfileid: "54762986"
 |**プロセス名**|プロセスの名前です。|  
 |**ソース ファイル**|この関数の定義を含むソース ファイルです。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
  [関数ビュー](../profiling/functions-view.md)   
  [関数ビュー - インストルメンテーション](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   

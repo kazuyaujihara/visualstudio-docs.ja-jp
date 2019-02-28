@@ -71,7 +71,7 @@ ms.locfileid: "54791993"
 ### <a name="testing-excel-with-the-sampletestproject"></a>SampleTestProject を使用した Excel のテスト  
  所有していない特定の Excel バージョンを使用する、提供されたテスト プロジェクトでのテストを実行できます。または、独自のテスト プロジェクトを作成して、独自のテストを記録できます。 詳細については、[「コード化された UI テストを作成する」](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   

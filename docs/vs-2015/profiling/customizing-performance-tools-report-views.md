@@ -36,5 +36,5 @@ ms.locfileid: "54763540"
  [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)  
  プロファイル データの解析に利用できるビューについて説明します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)

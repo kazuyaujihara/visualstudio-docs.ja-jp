@@ -98,6 +98,6 @@ ms.locfileid: "54762909"
   
  100 * 関数アプリケーション排他 / セッション アプリケーション包括  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス ツール データを分析する](../profiling/analyzing-performance-tools-data.md)   
  [方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)

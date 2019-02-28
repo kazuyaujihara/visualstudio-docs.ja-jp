@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d2bbe7c4133cdb6dcd77138b4d4eb398d3169a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b666aa19e574702655178790b8aa0463a0d5c2d5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030887"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625674"
 ---
 # <a name="idiasymbolgetispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
-このシンボルがメンバー関数へのポインターであるかどうかを指定します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C++  
-HRESULT get_isPointerToMemberFunction(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pRetVal`  
- [out]ポインターを`BOOL`シンボルは、メンバー関数へのポインターであるかどうかを指定します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
-  
+このシンボルがメンバー関数へのポインターであるかどうかを指定します。
+
+## <a name="syntax"></a>構文
+
+```C++
+HRESULT get_isPointerToMemberFunction(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pRetVal`
+
+[out]ポインターを`BOOL`シンボルは、メンバー関数へのポインターであるかどうかを指定します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+
 ## <a name="see-also"></a>関連項目
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

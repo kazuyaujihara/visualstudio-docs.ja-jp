@@ -267,7 +267,7 @@ public void MyTestCleanup()
   
  `UIMap.uitest` ファイルは直接編集できません。 ただし、コード化された UI ビルダーを使用してテストを変更することはできます。これにより、`UIMap.uitest` ファイルと [UIMap.Designer.cs](#UIMapDesignerFile) ファイルが自動的に変更されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   

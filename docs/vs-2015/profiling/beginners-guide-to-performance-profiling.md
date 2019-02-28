@@ -122,7 +122,7 @@ Visual Studio プロファイリング ツールを使用して、アプリケ�
   
      新しいレポート ウィンドウが開き、比較の結果が表示されます。 比較ビューの使用方法の詳細については、「[方法: パフォーマンス データ ファイルを比較する](../profiling/how-to-compare-performance-data-files.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)   
  [はじめに](../profiling/getting-started-with-performance-tools.md)   
  [概要](../profiling/overviews-performance-tools.md)

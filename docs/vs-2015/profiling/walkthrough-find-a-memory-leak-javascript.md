@@ -286,5 +286,5 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
       ![修正されたメモリ リークを示すスナップショット](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [[JavaScript メモリ]](../profiling/javascript-memory.md)

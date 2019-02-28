@@ -34,5 +34,5 @@ ms.locfileid: "54780948"
 ## <a name="related-sections"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)

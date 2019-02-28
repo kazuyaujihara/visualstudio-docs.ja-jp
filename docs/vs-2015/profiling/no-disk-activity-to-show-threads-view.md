@@ -25,5 +25,5 @@ ms.locfileid: "54785610"
 
 ディスク I/O チャネルの現在の時間範囲のディスク アクティビティを表示できません。 ズームアウトまたはスクロールすると、ディスク アクティビティが表示されることがあります。 また、非表示のディスク チャネルがないことを確認します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

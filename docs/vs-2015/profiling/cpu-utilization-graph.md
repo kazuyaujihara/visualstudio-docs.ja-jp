@@ -35,6 +35,6 @@ CPU 使用状況グラフは、時間経過に対するアプリの使用状況�
   
 -   白は、システム上の未使用の論理コアを使用できるかどうかを示します。 これらのコアは、並列処理の機会があれば、プロセスで使用できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [使用状況ビュー](../profiling/utilization-view.md)   
  [平均 CPU 使用状況](../profiling/average-cpu-utilization.md)

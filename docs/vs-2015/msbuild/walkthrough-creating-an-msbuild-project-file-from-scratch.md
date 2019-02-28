@@ -481,6 +481,6 @@ ms.locfileid: "54769433"
 ## <a name="whats-next"></a>次の内容  
  このチュートリアルで説明した作業の大半は、Visual Studio で自動的に実行できます。 Visual Studio を使用して MSBuild プロジェクト ファイルを作成、編集、ビルド、およびテストする方法については、「[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)」をご覧ください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
 [MSBuild の概要](msbuild.md)  
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)

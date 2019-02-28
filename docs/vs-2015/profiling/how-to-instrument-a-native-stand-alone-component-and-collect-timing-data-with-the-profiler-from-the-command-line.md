@@ -83,6 +83,6 @@ ms.locfileid: "54757109"
 
      **VSPerfCmd /shutdown**  
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [インストルメンテーション メソッドのデータ ビュー](../profiling/instrumentation-method-data-views.md)

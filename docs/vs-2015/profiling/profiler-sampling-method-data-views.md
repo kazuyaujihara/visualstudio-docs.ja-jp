@@ -66,5 +66,5 @@ ms.locfileid: "54800355"
  [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)  
  .NET メモリ データを含むプロファイラー データ ファイルのビューとレポートに関するリファレンス情報。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)

@@ -87,5 +87,5 @@ ms.locfileid: "54778725"
   
      トラッカー ログのディレクトリを指定します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

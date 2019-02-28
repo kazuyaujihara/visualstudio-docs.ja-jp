@@ -49,6 +49,6 @@ ms.locfileid: "54773619"
  [プロファイルと Windows Vista のセキュリティ](../profiling/profiling-and-windows-vista-security.md)  
  [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)] でのサンプリング データの収集およびセッション間のアプリケーションのプロファイリングをするのに必要な問題や手順について説明します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [はじめに](../profiling/getting-started-with-performance-tools.md)   
  [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)

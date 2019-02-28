@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e30eafdc9a01b126f2a08bb8e4395298f446069
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 704605ed2d4eb3d69b988da59ba443790ffa138d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155787"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709851"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>マルチ スレッド アプリケーションのデバッグの開始 (C#、Visual Basic、C++)
 
@@ -33,25 +33,25 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
 - 使用する、**デバッグの場所**ツールバーと**スレッド**ウィンドウを参照してください[チュートリアル: マルチ スレッド アプリケーションをデバッグ](../debugger/how-to-use-the-threads-window.md)します。
 
 - 使用するサンプルの<xref:System.Threading.Tasks.Task>(マネージ コード) を参照してください (C++)、同時実行ランタイムと[チュートリアル: 並行アプリケーションをデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)します。 最もマルチ スレッド アプリケーションの種類に適用される一般的なデバッグ ヒント、そのトピックと、この 1 つの両方を参照します。
-  
-まず、マルチ スレッド アプリケーション プロジェクトを必要があります。 以下に例を示します。  
-  
-## <a name="create-a-multithreaded-app-project"></a>マルチ スレッド アプリ プロジェクトを作成します。  
-  
-1.  **[ファイル]** メニューで、**[新規作成]** > **[プロジェクト]** の順に選択します。  
-  
-     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。  
-  
-2.  言語の選択: **Visual C#** 、 **Visual C**、または**Visual Basic**します。  
-  
-3.  **Windows デスクトップ**、選択**コンソール アプリ**します。  
-  
-4.  **名前**フィールドに、MyThreadWalkthroughApp を入力します。  
-  
-5.  **[OK]** を選択します。  
-  
-     新しいコンソール プロジェクトが表示されます。 プロジェクトを作成すると、ソース ファイルが表示されます。 選択した言語に応じて、ソース ファイルが呼び出される可能性が*Program.cs*、 *MyThreadWalkthroughApp.cpp*、または*Module1.vb*します。  
-  
+
+まず、マルチ スレッド アプリケーション プロジェクトを必要があります。 以下に例を示します。
+
+## <a name="create-a-multithreaded-app-project"></a>マルチ スレッド アプリ プロジェクトを作成します。
+
+1.  **[ファイル]** メニューで、**[新規作成]** > **[プロジェクト]** の順に選択します。
+
+     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+
+2.  言語の選択: **Visual C#** 、 **Visual C**、または**Visual Basic**します。
+
+3.  **Windows デスクトップ**、選択**コンソール アプリ**します。
+
+4.  **名前**フィールドに、MyThreadWalkthroughApp を入力します。
+
+5.  **[OK]** を選択します。
+
+     新しいコンソール プロジェクトが表示されます。 プロジェクトを作成すると、ソース ファイルが表示されます。 選択した言語に応じて、ソース ファイルが呼び出される可能性が*Program.cs*、 *MyThreadWalkthroughApp.cpp*、または*Module1.vb*します。
+
 6.  ソース ファイルに表示されるコードを削除し、以下を一覧表示する適切な例のコードに置き換えます。
 
     ```csharp
@@ -186,54 +186,54 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
         End Sub
     End Class
     ```
-  
-7.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
+
+7.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。
 
 8. (Visual Basic のみ)ソリューション エクスプ ローラー (右側のウィンドウ) でプロジェクト ノードを右クリックし、選択**プロパティ**します。 下、**アプリケーション** タブで、変更、**スタートアップ オブジェクト**に**単純**します。
-  
-## <a name="debug-the-multithreaded-app"></a>マルチ スレッド アプリをデバッグします。  
-  
-1. ソース コード エディターで次のコード スニペットのいずれかになります。 
-  
-    ```csharp  
-    Thread.Sleep(3000);  
-    Console.WriteLine();  
-    ```  
-  
-    ```C++  
+
+## <a name="debug-the-multithreaded-app"></a>マルチ スレッド アプリをデバッグします。
+
+1. ソース コード エディターで次のコード スニペットのいずれかになります。
+
+    ```csharp
+    Thread.Sleep(3000);
+    Console.WriteLine();
+    ```
+
+    ```C++
     std::this_thread::sleep_for(std::chrono::seconds(3));
-    std::cout << "The function called by the worker thread has ended." << std::endl; 
-    ```  
+    std::cout << "The function called by the worker thread has ended." << std::endl;
+    ```
 
     ```VB
     Thread.Sleep(3000)
     Console.WriteLine()
     ```
 
-1. 左側の余白で左クリックして、`Thread.Sleep`または`std::this_thread::sleep_for`新しいブレークポイントを挿入するステートメント。  
-  
-    余白は、赤い円は、この場所にブレークポイントを設定することを示します。 
-  
-2. **デバッグ**メニューの [**デバッグの開始]** (**F5**)。  
-  
-    Visual Studio ソリューションをビルド、アタッチされたデバッガーを開始してから、アプリ、アプリがブレークポイントで停止します。  
-  
+1. 左側の余白で左クリックして、`Thread.Sleep`または`std::this_thread::sleep_for`新しいブレークポイントを挿入するステートメント。
+
+    余白は、赤い円は、この場所にブレークポイントを設定することを示します。
+
+2. **デバッグ**メニューの [**デバッグの開始]** (**F5**)。
+
+    Visual Studio ソリューションをビルド、アタッチされたデバッガーを開始してから、アプリ、アプリがブレークポイントで停止します。
+
 3. ソース コード エディターでは、ブレークポイントを含む行を探します。
-  
+
 ### <a name="ShowThreadsInSource"></a>スレッド マーカーを見つける  
 
 1.  デバッグ ツールバーで、選択、**ソース スレッドを表示**ボタン![ソース スレッドを表示](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")します。
 
 2. キーを押して**F11**コード デバッガーの 1 つの行に 1 回です。
-  
+
 3.  ウィンドウ左端の余白に注目します。 この行に表示されます、*スレッド マーカー*アイコン![スレッド マーカー](../debugger/media/dbg-thread-marker.png "ThreadMarker")ツイストの 2 つのスレッドと類似しています。 スレッド マーカーは、スレッドが停止している位置を示します。
 
-    スレッド マーカーは、ブレークポイントによって部分的に非表示に可能性があります。 
-  
-4.  スレッド マーカーの上にポインターを置きます。 停止したスレッドごとの名前とスレッド ID 番号を示す、データヒントが表示されます。 名前がここでは、おそらくは`<noname>`します。 
-  
+    スレッド マーカーは、ブレークポイントによって部分的に非表示に可能性があります。
+
+4.  スレッド マーカーの上にポインターを置きます。 停止したスレッドごとの名前とスレッド ID 番号を示す、データヒントが表示されます。 名前がここでは、おそらくは`<noname>`します。
+
 5.  ショートカット メニューの 利用可能なオプションを表示するスレッド マーカーを選択します。
-    
+
 ### <a name="ParallelStacks"></a>スレッドの場所を表示します。
 
 **並列スタック** ウィンドウに切り替えることができます、タスクを確認しては、各スレッドの呼び出し履歴情報を表示できますスレッド ビューの間、(タスク ベースのプログラミング)。 このアプリでは、スレッド ビューを使用できます。
@@ -243,7 +243,7 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     ![並列スタック ウィンドウ](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
     この例では、左から右へのマネージ コードには、この情報のように表示します。
-    
+
     - メイン スレッド (左側) が停止しました`Thread.Start`停止ポイントが、スレッド マーカーのアイコンによって示されます、![スレッド マーカー](../debugger/media/dbg-thread-marker.png "ThreadMarker")します。
     - 2 つのスレッドが入力した、 `ServerClass.InstanceMethod`、うちの 1 つは、現在のスレッド (黄色の矢印) で、他のスレッドが停止中に`Thread.Sleep`します。
     - (右) で新しいスレッドが開始されてでが停止した`ThreadHelper.ThreadStart`します。
@@ -271,31 +271,31 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
 
 4. 使用可能なオプションを表示するには、ウィンドウ内の行のいずれかを右クリックします。
 
-### <a name="flag-and-unflag-threads"></a>スレッドに対するフラグの設定と設定解除を行う  
-重要なスレッドを追跡し、その他のスレッドを無視するスレッドのフラグを設定することができます。  
-  
+### <a name="flag-and-unflag-threads"></a>スレッドに対するフラグの設定と設定解除を行う
+重要なスレッドを追跡し、その他のスレッドを無視するスレッドのフラグを設定することができます。
+
 1. **並列ウォッチ**ウィンドウで、キーを押し、 **Shift**キーし、複数の行を選択します。
 
 2. 右クリックして**フラグ**します。
 
     選択したすべてのスレッドのフラグが設定されます。 ここで、フラグが設定されたスレッドのみを表示するフィルター処理することができます。
-  
-3.  **並列ウォッチ**ウィンドウで、**フラグが設定されたスレッドのみを表示する**ボタン![フラグが設定されたスレッドを表示する](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker")します。  
-  
+
+3.  **並列ウォッチ**ウィンドウで、**フラグが設定されたスレッドのみを表示する**ボタン![フラグが設定されたスレッドを表示する](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker")します。
+
     フラグが設定されたスレッドのみが一覧に表示します。
 
     > [!TIP]
     > 一部のスレッドのフラグを設定した後は、コード エディターでのコード行を右クリックし、選択**カーソルにフラグが設定されたスレッドの実行**します。 すべてのスレッドのフラグが設定するコードに到達を選択してください。 Visual Studio は、一時停止で選択した行のコードのスレッドによる実行の順序を制御しやすく[スレッドの凍結と凍結解除](#bkmk_freeze)します。
 
 4.  選択、**フラグが設定されたスレッドのみを表示する**ボタンをもう一度に切り替えます**すべてのスレッド**モード。
-    
+
 5. スレッドのフラグ解除、内の 1 つまたは複数のフラグが設定されたスレッドを右クリックし、**並列ウォッチ**ウィンドウと選択**フラグ解除**します。
 
-### <a name="bkmk_freeze"></a> 固定およびスレッドの実行を凍結解除 
+### <a name="bkmk_freeze"></a> 固定およびスレッドの実行を凍結解除
 
 > [!TIP]
 > 停止および再開することができます (中断および再開) スレッドのスレッドが作業を実行する順序を制御します。 デッドロックなどの同時実行の問題を解決し、競合状態が役立ちます。
-   
+
 1.  **並列ウォッチ**ウィンドウで、すべての行選択すると、右クリックして選択**固定**します。
 
     2 番目の列では、行ごとに一時停止アイコンが表示されます。 一時停止アイコンは、スレッドが固定されていることを示します。
@@ -336,11 +336,11 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     ブレークポイント条件は、スレッドに一意であり、デバッガーが (無効にする必要があります)、他のスレッドで、他のブレークポイントにヒットしない、限りコードをステップし、他のスレッドを切り替えずにコードにステップ インできます。
 
     > [!NOTE]
-    > デバッガーが進むと、すべてのスレッドが実行されます。 ただし、他のスレッドのいずれかのブレークポイントをヒットしない限り、デバッガーが他のスレッドでコードを中断しません。 
-  
+    > デバッガーが進むと、すべてのスレッドが実行されます。 ただし、他のスレッドのいずれかのブレークポイントをヒットしない限り、デバッガーが他のスレッドでコードを中断しません。
+
 ## <a name="see-also"></a>関連項目
 
-[マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[方法 : デバッグ中に別のスレッドに切り替える](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[方法: 並列スタック ウィンドウを使用](../debugger/using-the-parallel-stacks-window.md)  
-[方法: [並列ウォッチ] ウィンドウを使用する](../debugger/how-to-use-the-parallel-watch-window.md)  
+- [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [方法 : デバッグ中に別のスレッドに切り替える](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+- [方法: 並列スタック ウィンドウを使用](../debugger/using-the-parallel-stacks-window.md)
+- [方法: [並列ウォッチ] ウィンドウを使用する](../debugger/how-to-use-the-parallel-watch-window.md)

@@ -38,6 +38,6 @@ ms.locfileid: "54798034"
  ![コンカレンシー ビジュアライザーの集約スパン マーカー](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
 スパン集約マーカー  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)   
  [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)

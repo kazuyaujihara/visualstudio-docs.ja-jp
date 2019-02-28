@@ -42,6 +42,6 @@ ms.locfileid: "54757125"
   
 4.  インストルメントされたバイナリの場所を指定します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [VSInstr](../profiling/vsinstr.md)

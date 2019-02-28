@@ -119,7 +119,7 @@ ms.locfileid: "54792962"
 |![タイムラインの詳細リストのフィルター](../profiling/media/timeline-filter.png "TIMELINE_Filter")|選択したカテゴリまたはイベントの長さに基づいて、一覧をフィルター処理します。|  
 |![タイムラインの詳細情報のカスタマイズ](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|イベントに注釈を指定できます。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [WPF チーム ブログ: WPF アプリケーション用の新しい UI パフォーマンス分析ツール](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
  [C++、C#、または Visual Basic を使った Windows ストア アプリのパフォーマンスのベスト プラクティス](http://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [WPF アプリケーションのパフォーマンスの最適化](http://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)

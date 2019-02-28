@@ -47,5 +47,5 @@ ms.locfileid: "54785675"
  [階層相互作用のビュー](../profiling/tier-interactions-view.md)  
  階層相互作用データを含むプロファイリング データ ファイルの相互作用のビューとレポートに関するリファレンス情報。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)

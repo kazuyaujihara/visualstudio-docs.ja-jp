@@ -76,6 +76,6 @@ ms.locfileid: "54803141"
 ## <a name="generate-a-report-of-the-results"></a>結果のレポートの生成  
  パフォーマンス レポートのビューはどれも、行をメールやスプレッドシートに貼り付けることができます。1 つ以上のビューのデータを含むレポートを生成できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [概要](../profiling/overviews-performance-tools.md)   
  [チュートリアル: パフォーマンスの問題を特定する](../profiling/walkthrough-identifying-performance-problems.md)

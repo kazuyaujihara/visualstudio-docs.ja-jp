@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a2978d9248193cf554f23701c1d04a33459091a
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2e8956fb7da61519ed9d0939da087ce8a4181ac1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226610"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643809"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 アクセスは、DIA のデータ ソースに格納されているソース コードを挿入します。
@@ -31,7 +31,7 @@ IDiaInjectedSource : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
 次の表は、メソッドの`IDiaInjectedSource`します。
 
-|方法|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|ソース コードのバイト数から計算された巡回冗長検査 (CRC) を取得します。|
 |[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|コードのバイト数を取得します。|
@@ -120,7 +120,7 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>関連項目
-[インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)  
-[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)  
-[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+- [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)
+- [IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

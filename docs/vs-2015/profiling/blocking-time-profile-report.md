@@ -61,5 +61,5 @@ ms.locfileid: "54782295"
 ### <a name="ui-processing"></a>UI 処理  
  UI 処理レポートには、UI 処理ブロックでブロックしているセグメントの原因となっている呼び出しと各呼び出し履歴のブロック時間の集計が表示されます。 詳細については、「[UI 処理時間](../profiling/ui-processing-time.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

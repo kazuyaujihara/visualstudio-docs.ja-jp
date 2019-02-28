@@ -139,7 +139,7 @@ string ValueAsNumber
   
  ![HTML5 ProgressBar コントロール](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [HTML 要素](http://go.microsoft.com/fwlink/?LinkID=232441)   
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
  [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   

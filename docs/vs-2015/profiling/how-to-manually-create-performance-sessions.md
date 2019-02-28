@@ -39,6 +39,6 @@ ms.locfileid: "54800831"
   
      新しいバイナリが追加されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)   
  [はじめに](../profiling/getting-started-with-performance-tools.md)

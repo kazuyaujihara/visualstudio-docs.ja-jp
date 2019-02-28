@@ -35,5 +35,5 @@ ms.locfileid: "54763298"
   
 -   不要項目の非表示が低いしきい値に設定されていることを確認してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

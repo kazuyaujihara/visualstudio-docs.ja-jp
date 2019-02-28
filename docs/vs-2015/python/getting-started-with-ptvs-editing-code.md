@@ -66,6 +66,6 @@ def main ():
   
  これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=uZGZNEyyeKs&index=3&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)で視聴できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Wiki ドキュメント](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
  [PTVS の概要と詳細に関するビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

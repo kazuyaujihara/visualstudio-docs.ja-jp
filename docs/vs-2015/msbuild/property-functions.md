@@ -333,6 +333,6 @@ Output:
 -->  
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [MSBuild プロパティ](msbuild-properties1.md)   
 [MSBuild の概要](msbuild.md)

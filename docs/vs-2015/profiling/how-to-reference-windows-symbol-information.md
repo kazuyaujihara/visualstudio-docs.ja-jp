@@ -49,6 +49,6 @@ Visual Studio プロファイリング ツールは、シンボル (.pdb) ファ
   
      あるいは省略記号ボタン (**...**) をクリックして、**[フォルダの参照]** ダイアログ ボックスでディレクトリを選択することもできます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [方法: シンボル情報をシリアル化する](../profiling/how-to-serialize-symbol-information.md)

@@ -42,5 +42,5 @@ Event Tracing for Windows (ETW) は、プロファイラー ログ カーネル�
   
 3.  **[Select event trace provider to collect data from]** (データを収集するイベント トレース プロバイダーを選択する) 一覧で、アプリケーションのプロファイリングに使用するイベント プロバイダーを選択します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)

@@ -38,7 +38,7 @@ ms.locfileid: "54770928"
 |**ウィザードを使用しない、アプリケーションのプロファイリング:** パフォーマンス セッションのプロパティ ページを使用してパフォーマンス セッションを作成する方法を学びます。|-   [方法: パフォーマンス セッションを手動で作成する](../profiling/how-to-manually-create-performance-sessions.md)|  
 |**実習:** サンプル アプリケーションをプロファイリングして実践的に練習します。|-   [チュートリアル: パフォーマンスの問題を特定する](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax サンプル](../profiling/peopletrax-sample-profiling-tools.md)|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [概要](../profiling/overviews-performance-tools.md)   
  [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)   
  [パフォーマンス規則を使用したデータの分析](../profiling/using-performance-rules-to-analyze-data.md)   

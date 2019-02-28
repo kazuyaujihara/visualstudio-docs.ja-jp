@@ -35,5 +35,5 @@ ms.locfileid: "54801467"
   
  32 ビット アセンブリを 64 ビット コンピューターに登録するには、Wow6432 ノードを使用します (例: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\)。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Visual Studio の統合](../msbuild/visual-studio-integration-msbuild.md)

@@ -579,6 +579,6 @@ $(PropertyName)
 ## <a name="whats-next"></a>次の内容  
  簡単なプロジェクト ファイルを 1 ステップずつ作成する方法については、「[チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)」をご覧ください。  
   
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [MSBuild の概要](msbuild.md)  
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)
