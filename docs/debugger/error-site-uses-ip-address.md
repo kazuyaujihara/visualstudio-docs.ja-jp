@@ -36,5 +36,5 @@ ms.locfileid: "56696507"
 
 2.  IIS の **[Web サイトの識別]** 設定を変更します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

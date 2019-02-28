@@ -43,5 +43,5 @@ Internet Explorer では、スクリプトのデバッグは現在無効にな�
 
      新しい設定が反映されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [方法 : スクリプトにアタッチする](../debugger/how-to-attach-to-script.md)

@@ -52,7 +52,7 @@ ms.locfileid: "56642756"
 ## <a name="remarks"></a>解説
  X86 だけのスタック フレームの一覧を取得するプラットフォームを呼び出し、 [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)メソッド。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)
 - [CV_CPU_TYPE_e 列挙型](../../debugger/debug-interface-access/cv-cpu-type-e.md)
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

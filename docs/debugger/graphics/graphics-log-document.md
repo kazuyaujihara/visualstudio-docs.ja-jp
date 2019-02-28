@@ -105,6 +105,6 @@ ms.locfileid: "56714284"
 | **セッション開始時刻** | キャプチャ セッションを開始した日付と時刻。 |
 | **Size** | グラフィックス ログのドキュメントのサイズ。 |
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [チュートリアル: 頂点の網かけによるオブジェクトの不足](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [チュートリアル: 網かけによるレンダリング エラーのデバッグ](walkthrough-debugging-rendering-errors-due-to-shading.md)

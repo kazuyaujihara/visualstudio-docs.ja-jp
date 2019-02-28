@@ -46,6 +46,6 @@ HRESULT put_registerValue ( 
 ## <a name="remarks"></a>解説
  値のサイズに関係なく、実装はのみ何レジスタは、通常は保持を格納する必要があります。 たとえば、のみ、最下位 8 ビット指定された値の 8 ビット レジスタを保持します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [CV_HREG_e 列挙型](../../debugger/debug-interface-access/cv-hreg-e.md)

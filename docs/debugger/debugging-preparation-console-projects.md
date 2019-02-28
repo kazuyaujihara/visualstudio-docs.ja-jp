@@ -54,7 +54,7 @@ ms.locfileid: "56709240"
 
   Visual Studio からコンソール アプリケーションを起動すると、**[コンソール]** ウィンドウが Visual Studio ウィンドウの背後に表示される場合があります。 Visual Studio からコンソール アプリケーションを起動しようとしても、何も起こらない場合は、Visual Studio ウィンドウを移動してみてください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)
 - [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)
 - [Visual C++ プロジェクトの種類](../debugger/debugging-preparation-visual-cpp-project-types.md)

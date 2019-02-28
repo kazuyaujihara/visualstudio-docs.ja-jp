@@ -46,7 +46,7 @@ HRESULT get_thunkOrdinal ( 
 
  「サンク」は、32 ビット メモリ アドレス空間 (フラットのアドレス空間とも呼ばれます) と (セグメント化されたアドレス空間と呼ばれます)、16 ビットのアドレス空間を変換するコードです。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [THUNK_ORDINAL 列挙型](../../debugger/debug-interface-access/thunk-ordinal.md)
 - [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)

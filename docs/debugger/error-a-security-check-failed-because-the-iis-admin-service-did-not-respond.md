@@ -44,5 +44,5 @@ ms.locfileid: "56688018"
 
      詳細については、IIS のドキュメントを参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

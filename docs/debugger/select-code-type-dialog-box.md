@@ -35,6 +35,6 @@ ms.locfileid: "56701356"
 
  **コードの種類:** 表示された一覧から、デバッグするコードの種類を選択します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

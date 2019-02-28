@@ -41,6 +41,6 @@ HRESULT get_cplusplusExceptionHandling ( 
 ## <a name="remarks"></a>解説
  例外を構造化されたかを判断する処理が有効で (これは C++ 例外処理とあまり変わりは)、呼び出し、 [idiaframedata::get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)メソッド。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)

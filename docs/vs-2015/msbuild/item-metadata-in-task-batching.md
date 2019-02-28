@@ -221,7 +221,7 @@ Identity: "Item6" -- Items in ExampColl: Item6
 Items in ExampColl: Item2;Item5  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [既知の項目メタデータ](../msbuild/msbuild-well-known-item-metadata.md)   
  [Item 要素 (MSBuild)](../msbuild/item-element-msbuild.md)   
  [ItemMetadata 要素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   

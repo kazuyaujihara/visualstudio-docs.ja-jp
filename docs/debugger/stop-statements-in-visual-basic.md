@@ -57,7 +57,7 @@ Debug.Assert(false)
 Debug.Fail("a clever output string goes here")
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [C#、F#、および Visual Basic のプロジェクト](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)

@@ -49,6 +49,6 @@ ms.locfileid: "54755295"
  ![4 レベルの重要度を示す集約フラグ](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 重要度レベル別の集約フラグ  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)   
  [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)

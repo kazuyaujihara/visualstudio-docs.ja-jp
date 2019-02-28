@@ -85,6 +85,6 @@ ms.locfileid: "56699003"
 
 13. **[OK]** をクリックして、**[Temporary ASP.NET Files のプロパティ]** ダイアログ ボックスを閉じます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [ASP.NET アプリケーションをデバッグする](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [ASP.NET のデバッグ : システム要件](../debugger/aspnet-debugging-system-requirements.md)

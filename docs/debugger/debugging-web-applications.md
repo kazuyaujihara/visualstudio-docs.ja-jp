@@ -34,7 +34,7 @@ ms.locfileid: "56693127"
 ## <a name="related-sections"></a>関連項目
  [ASP.NET アプリケーションをデバッグする](../debugger/how-to-enable-debugging-for-aspnet-applications.md)のデバッグを有効にするために必要な手順について説明します[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]アプリケーション。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Web アプリケーションとスクリプトのデバッグ](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
 - [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

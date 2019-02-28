@@ -113,6 +113,6 @@ ms.locfileid: "56679516"
 
  ![頂点シェーダー ステージの結果プレビュー](media/gfx_diag_vertex_shader_preview.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [チュートリアル: 頂点の網かけによるオブジェクトの不足](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [チュートリアル: 網かけによるレンダリング エラーのデバッグ](walkthrough-debugging-rendering-errors-due-to-shading.md)

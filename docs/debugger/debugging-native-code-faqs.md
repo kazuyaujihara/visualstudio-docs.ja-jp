@@ -48,6 +48,6 @@ ms.locfileid: "56690319"
 
 -   [MFC の中で停止した場合、MFC を呼び出した関数に戻るには](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)

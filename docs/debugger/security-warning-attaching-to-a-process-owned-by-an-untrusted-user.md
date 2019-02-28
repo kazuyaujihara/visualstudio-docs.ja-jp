@@ -38,6 +38,6 @@ ms.locfileid: "56687251"
 
  プロセスに接続しないでアタッチしません。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)

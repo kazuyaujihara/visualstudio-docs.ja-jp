@@ -41,6 +41,6 @@ HRESULT get_allocatesBasePointer ( 
 ## <a name="remarks"></a>解説
  このプロパティは FPO_DATA にアクセスしていたをまたはプログラム文字列がによって返されるときにコードからのみ使用する必要があります、 [idiaframedata::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)メソッドは`NULL`します。 それ以外の場合、プログラム文字列には、前のレジスタ値を計算するために必要なすべての情報が含まれています。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

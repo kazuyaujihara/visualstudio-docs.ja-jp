@@ -80,7 +80,7 @@ ms.locfileid: "54769014"
 </Project>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Choose 要素 (MSBuild)](../msbuild/choose-element-msbuild.md)   
  [When 要素 (MSBuild)](../msbuild/when-element-msbuild.md)   
  [Otherwise 要素 (MSBuild)](../msbuild/otherwise-element-msbuild.md)   

@@ -35,7 +35,7 @@ ms.locfileid: "56703696"
 
  **見つからないソース ファイルの逆アセンブルが常に表示**を表示するには、このオプションを選択、**逆アセンブル ウィンドウ**自動的にソースが使用できない場合。 この設定は、**[オプション]** ダイアログ ボックス、**[デバッグ]** カテゴリ、**[全般]** ページで、**[ソースがない場合は逆アセンブルの表示]** をオンまたはオフにすることによっても変更できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [[デバッグ ソース ファイル] ([ソリューション プロパティ ページ] ダイアログ ボックス - [共通プロパティ])](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
 - [シンボルとソース コードの管理](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [SOS.dll (SOS デバッガー拡張)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

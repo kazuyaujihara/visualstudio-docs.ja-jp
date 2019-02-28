@@ -111,5 +111,5 @@ VSPerfCmd /Attach:MyService.exe
   
  プロファイル中に正しい環境が設定されていないと、分析時に警告が報告され、マネージド関数名は正しく解決されません。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)

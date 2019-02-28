@@ -40,7 +40,7 @@ ms.locfileid: "56637517"
 
  **任意のコンピューターからのリモート デバッグをブロック解除**ネットワーク上の任意のマシンのリモート デバッグを有効にします。 この設定では、セキュリティが最も低くなります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

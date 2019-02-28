@@ -41,6 +41,6 @@ HRESULT get_length ( 
 ## <a name="remarks"></a>解説
  このメソッドによって返される値のソース コードの長さは、同じの値によって返される、 [idiainjectedsource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)メソッド。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
 - [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)

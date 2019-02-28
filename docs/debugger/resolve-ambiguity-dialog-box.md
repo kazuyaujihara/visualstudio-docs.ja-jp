@@ -37,5 +37,5 @@ ms.locfileid: "56681077"
 
  `Module` 関数のオブジェクト コードを含むモジュール (EXE または DLL) を表示します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [デバッガー内の式](../debugger/expressions-in-the-debugger.md)

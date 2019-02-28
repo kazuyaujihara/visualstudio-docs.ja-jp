@@ -82,6 +82,6 @@ ms.locfileid: "56626311"
 
 6.  表示し、アプリでの変数を変更または」の説明に従って、コンソールのコマンドを使用して[クイック スタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)と[JavaScript Console commands](../debugger/javascript-console-commands.md)します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)

@@ -109,6 +109,6 @@ Visual Studio のグラフィックス分析に含まれるグラフィックス
 |**uint64**|64 ビットの符号なし整数値。 **u8byte** と同じです。|
 |**bool**|ブール型 (`true` または `false`) の値。 それぞれのブール値は 32 ビット値によって表されます。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [グラフィックス診断 (DirectX グラフィックスのデバッグ)](visual-studio-graphics-diagnostics.md)
 - [チュートリアル: デバイス状態によるオブジェクトの不足](walkthrough-missing-objects-due-to-device-state.md)

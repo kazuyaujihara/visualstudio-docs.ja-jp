@@ -114,5 +114,5 @@ Visual Studio 2017 およびそれ以降を含む、**リソース履歴**ウィ
 
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [チュートリアル: デバイス状態によるオブジェクトの不足](walkthrough-missing-objects-due-to-device-state.md)

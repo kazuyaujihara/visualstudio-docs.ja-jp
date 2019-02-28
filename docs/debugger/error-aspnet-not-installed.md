@@ -42,5 +42,5 @@ ms.locfileid: "56680595"
    > [!NOTE]
    >  Windows Server 2003 の場合は、コントロール パネルの **[プログラムの追加と削除]** を使って [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] をインストールできます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
