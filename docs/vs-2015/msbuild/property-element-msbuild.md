@@ -77,6 +77,6 @@ ms.locfileid: "54769197"
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [MSBuild プロパティ](msbuild-properties1.md)  
  [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
