@@ -10,32 +10,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fe1bc52f9367289d4b04e73cf2d1fffab4ee8de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707485"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954388"
 ---
 # <a name="manage-side-by-side-file-associations"></a>サイド バイ サイドでのファイルの関連付けを管理します。
+
 サイド バイ サイドでインストールを処理する方法を決定する必要があります、VSPackage では、ファイルの関連付けを提供する場合の特定のバージョン[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ファイルを呼び出す必要があります。 互換性のないファイル形式は複合問題です。
 
- ユーザーは、新しいバージョンのデータを失うことがなく、新しいバージョンで既存のファイルを読み込むことができるように、以前のバージョンと互換性がある製品を期待します。 理想的には、VSPackage 両方ロード、保存したり以前のバージョンのファイル形式。 になっていない場合は true は、ファイル形式を VSPackage の新しいバージョンにアップグレードを提供する必要があります。 このアプローチの欠点は、アップグレードされたファイルは、以前のバージョンで開くことができません。
+ユーザーは、新しいバージョンのデータを失うことがなく、新しいバージョンで既存のファイルを読み込むことができるように、以前のバージョンと互換性がある製品を期待します。 理想的には、VSPackage 両方ロード、保存したり以前のバージョンのファイル形式。 になっていない場合は true は、ファイル形式を VSPackage の新しいバージョンにアップグレードを提供する必要があります。 このアプローチの欠点は、アップグレードされたファイルは、以前のバージョンで開くことができません。
 
- この問題を回避するには、ファイル形式が互換性のないようになったときは、拡張機能を変更できます。 たとえば、VSPackage のバージョン 1 で、拡張機能を使用して *.mypkg10*とバージョン 2 は、拡張機能を使用できます *.mypkg20*します。 この違いは、特定のファイルを開き、VSPackage を識別します。 新しい Vspackage を古い拡張機能に関連付けられているプログラムの一覧に追加する場合に、ファイルを右クリックし、選択して新しい VSPackage で開きます。 その時点で、VSPackage は、ファイルを新しい形式にアップグレードまたはファイルを開くし、VSPackage の旧バージョンとの互換性を維持を提供できます。
+この問題を回避するには、ファイル形式が互換性のないようになったときは、拡張機能を変更できます。 たとえば、VSPackage のバージョン 1 で、拡張機能を使用して *.mypkg10*とバージョン 2 は、拡張機能を使用できます *.mypkg20*します。 この違いは、特定のファイルを開き、VSPackage を識別します。 新しい Vspackage を古い拡張機能に関連付けられているプログラムの一覧に追加する場合に、ファイルを右クリックし、選択して新しい VSPackage で開きます。 その時点で、VSPackage は、ファイルを新しい形式にアップグレードまたはファイルを開くし、VSPackage の旧バージョンとの互換性を維持を提供できます。
 
 > [!NOTE]
->  これらのアプローチを組み合わせることができます。 たとえば、古いファイルを読み込んで、旧バージョンとの互換性を提供しをユーザーがそれを保存すると、ファイル形式をアップグレードできることできます。
+> これらのアプローチを組み合わせることができます。 たとえば、古いファイルを読み込んで、旧バージョンとの互換性を提供しをユーザーがそれを保存すると、ファイル形式をアップグレードできることできます。
 
 ## <a name="face-the-problem"></a>問題に直面します
- バージョンを選択する必要があります、同じ拡張機能を使用する複数のサイド バイ サイドで Vspackage を実行する場合に、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]拡張機能に関連付けられています。 2 つの方法を次に示します。
+
+バージョンを選択する必要があります、同じ拡張機能を使用する複数のサイド バイ サイドで Vspackage を実行する場合に、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]拡張機能に関連付けられています。 2 つの方法を次に示します。
 
 - 最新バージョンのファイルを開く[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ユーザーのコンピューターにインストールされています。
 
    この方法では、インストーラーがの最新バージョンを判断する[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ファイルの関連付け用に記述されたレジストリ エントリでそれを含めるとします。 Windows インストーラー パッケージの最新バージョンを示すプロパティを設定するカスタム アクションを含めることができます[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。
 
   > [!NOTE]
-  >  このコンテキストで「最新」意味「最新のサポート バージョン」 これらのエントリをインストーラーがの今後のリリースを自動的に検出されない[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 内のエントリ[システム要件の検出](../extensibility/internals/detecting-system-requirements.md)し[コマンドをする必要がありますが実行後にインストール](../extensibility/internals/commands-that-must-be-run-after-installation.md)はここで示されたに似ており、その他のバージョンのサポートに必要な[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。
+  > このコンテキストで「最新」意味「最新のサポート バージョン」 これらのエントリをインストーラーがの今後のリリースを自動的に検出されない[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 内のエントリ[システム要件の検出](../extensibility/internals/detecting-system-requirements.md)し[コマンドをする必要がありますが実行後にインストール](../extensibility/internals/commands-that-must-be-run-after-installation.md)はここで示されたに似ており、その他のバージョンのサポートに必要な[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。
 
    CustomAction テーブル内の次の行が、AppSearch によって設定されたプロパティを DEVENV_EXE_LATEST プロパティを設定し、で説明した RegLocator テーブル[インストール後に実行する必要がありますコマンド](../extensibility/internals/commands-that-must-be-run-after-installation.md)します。 InstallExecuteSequence テーブル内の行では、実行シーケンスの早い段階でカスタム アクションをスケジュールします。 条件列 make ロジック作業の値:
 
@@ -47,7 +49,7 @@ ms.locfileid: "56707485"
 
     最終的な結果は、DEVENV_EXE_LATEST に最新バージョンの devenv.exe のパスが含まれています。
 
-  ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Visual Studio の最新バージョンを決定する CustomAction テーブル行
+  **Visual Studio の最新バージョンを決定する CustomAction テーブル行**
 
   |アクション|型|ソース|ターゲット|
   |------------|----------|------------|------------|
@@ -55,7 +57,7 @@ ms.locfileid: "56707485"
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
   |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|
 
-  ### <a name="installexecutesequence-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Visual Studio の最新バージョンを決定する InstallExecuteSequence テーブル行
+  **Visual Studio の最新バージョンを決定する InstallExecuteSequence テーブル行**
 
   |アクション|条件|シーケンス|
   |------------|---------------|--------------|
@@ -72,16 +74,18 @@ ms.locfileid: "56707485"
    ランチャーは、VSPackage のすべてのバージョンと共有されている Windows インストーラー コンポーネントでなければなりません。 このプロセスにより、最新のバージョンが常にインストールされているし、VSPackage のすべてのバージョンがアンインストールされるまでは削除されません。 これにより、ファイルの関連付けとランチャ コンポーネントの他のレジストリ エントリは保持される場合でも、VSPackage の 1 つのバージョンがアンインストールされます。
 
 ## <a name="uninstall-and-file-associations"></a>アンインストールして、ファイルの関連付け
- ファイルの関連付けのレジストリ エントリを書き込む VSPackage のアンインストールには、ファイルの関連付けが削除されます。 したがって、拡張機能では、関連付けられているプログラムはありません。 Windows インストーラーはありません"recover"、VSPackage のインストール時に追加されたレジストリ エントリ。 ユーザーのファイルの関連付けを修正する方法を次に示します。
 
--   前述のような共有ランチャー コンポーネントを使用します。
+ファイルの関連付けのレジストリ エントリを書き込む VSPackage のアンインストールには、ファイルの関連付けが削除されます。 したがって、拡張機能では、関連付けられているプログラムはありません。 Windows インストーラーはありません"recover"、VSPackage のインストール時に追加されたレジストリ エントリ。 ユーザーのファイルの関連付けを修正する方法を次に示します。
 
--   ユーザーがファイルの関連付けを所有する VSPackage のバージョンの修復を実行するように指示します。
+- 前述のような共有ランチャー コンポーネントを使用します。
+
+- ユーザーがファイルの関連付けを所有する VSPackage のバージョンの修復を実行するように指示します。
 
 -   適切なレジストリ エントリをリライトする独立した実行可能プログラムを提供します。
 
 -   ユーザーがファイルの関連付けを選択し、失われた関連付けを再利用できる構成オプションのページまたはダイアログ ボックスを提供します。 アンインストール後に実行するユーザーに指示します。
 
 ## <a name="see-also"></a>関連項目
+
 - [サイド バイ サイドで配置のファイル名拡張子を登録します。](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [ファイル名拡張子の動詞を登録します。](../extensibility/registering-verbs-for-file-name-extensions.md)

@@ -3,7 +3,7 @@ items:
   href: ide/index.yml
 - name: 概要
   items:
-  - name: Visual Studio 2017 について
+  - name: Visual Studio について
     href: get-started/visual-studio-ide.md
   - name: コード エディターについて
     href: get-started/tutorial-editor.md
@@ -709,7 +709,7 @@ items:
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
     - name: アクセシビリティ対応アプリのデザイン リソース
       href: ide/reference/resources-for-designing-accessible-applications.md
-- name: 参照
+- name: 関連項目
   items:
   - name: 一般的なユーザー インターフェイス要素
     items:
@@ -1135,9 +1135,9 @@ items:
   - name: ご意見
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 3d89804036f0fd71a94a2d86c38b3d32a65c6c42
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 9d2edce3ea128754c4820736f90e26be9af4c479
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796869"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954520"
