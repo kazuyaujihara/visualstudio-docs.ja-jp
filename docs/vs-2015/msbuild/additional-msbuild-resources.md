@@ -623,5 +623,5 @@ ms.locfileid: "54764909"
 ## <a name="product-support"></a>製品のサポート  
  他のリソースを参照しても問題が解決しない場合は、[Microsoft ヘルプとサポート](http://go.microsoft.com/fwlink/?linkid=1782)の Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[ご意見](../ide/talk-to-us.md)」をご覧ください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [.NET Framework を対象とするエラーのトラブルシューティング](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

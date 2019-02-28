@@ -115,6 +115,6 @@ ms.locfileid: "54769334"
 </Project>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)   
  [ターゲット](../msbuild/msbuild-targets.md)

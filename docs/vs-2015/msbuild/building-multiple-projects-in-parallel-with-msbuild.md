@@ -73,7 +73,7 @@ msbuild.exe myproj.proj /maxcpucount:3
 </MSBuild>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [複数のプロセッサを使用したプロジェクトのビルド](../msbuild/using-multiple-processors-to-build-projects.md)   
  [マルチプロセッサ対応の logger の記述](../msbuild/writing-multi-processor-aware-loggers.md)   
  [C++ での並列ビルドの調整に関するブログ](http://go.microsoft.com/fwlink/?LinkId=251457)
