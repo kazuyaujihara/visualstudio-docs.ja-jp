@@ -1,4 +1,4 @@
-﻿---
+---
 title: デバッガーの設定と準備 |Microsoft Docs
 ms.date: 08/01/2018
 ms.topic: reference
@@ -18,38 +18,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 036f6918aaeb7fc7dfc0289028e01ea64cbd6736
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 287f906ab947f549748865899a5ced52e0c53562
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942858"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693049"
 ---
 # <a name="debugger-settings-and-preparation"></a>デバッガーの設定と準備
-ここでは、デバッグに関連するプロパティ設定と、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] デバッガーを使用してプログラムをデバッグするために必要な準備について説明します。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でプロジェクト テンプレートを使ってプログラムを作成する場合、これらの設定はデバッグ構成で正しく設定されます。  
-  
- 詳細については、「[方法 :デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [デバッガーに関連するプロジェクト設定](../debugger/debugger-project-settings.md)  
- デバッガー設定の指定方法、デバッグ構成とリリース構成の設定方法、およびシンボルとソース コードの管理方法について説明します。 また、C++、C#、F#、Visual Basic のデバッグ構成、および Web プロジェクトのための適切なプロジェクト設定についても説明します。  
-  
- [DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)  
- DLL プロジェクトのデバッグに推奨されるプロジェクト設定、DLL プロジェクトからデバッグする方法、混合モードでデバッグする方法、およびマネージ コード Web コントロール ライブラリをデバッグする方法について説明します。  
-  
- [コンソール プロジェクト](../debugger/debugging-preparation-console-projects.md)  
- デバッグのためのコンソール プロジェクトの構成手順について説明します。   
-  
- [方法: Visual Studio ソリューションの一部ではない実行可能ファイルをデバッグする](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
- Visual Studio プロジェクトの一部として作成されていない実行可能ファイルをデバッグする方法について説明します。  
-  
- [64 ビット アプリケーションをデバッグする](../debugger/debug-64-bit-applications.md)  
- 64 ビット アプリケーションをデバッグする方法について説明します。  
-  
- [方法: デバッグ用の .NET Framework のバージョンを指定する](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
- レジストリ キーを設定して、使用するバージョンをデバッガーに指定する方法について説明します。  
-  
-## <a name="see-also"></a>関連項目
- [デバッガーのセキュリティ](../debugger/debugger-security.md)  
- [Visual Studio でのデバッグ](../debugger/index.md)  
- [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
+ここでは、デバッグに関連するプロパティ設定と、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] デバッガーを使用してプログラムをデバッグするために必要な準備について説明します。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でプロジェクト テンプレートを使ってプログラムを作成する場合、これらの設定はデバッグ構成で正しく設定されます。
+
+ 詳細については、「[方法: デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。
+
+## <a name="in-this-section"></a>このセクションの内容
+ [プロジェクトの設定をデバッガー](../debugger/debugger-project-settings.md)デバッガー設定を指定する方法、デバッグ設定し、リリース構成の方法とソース コードのシンボルを管理する方法について説明します。 また、C++、C#、F#、Visual Basic のデバッグ構成、および Web プロジェクトのための適切なプロジェクト設定についても説明します。
+
+ [DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)プロジェクト、DLL プロジェクトからデバッグ、混在モードでデバッグする方法、する方法、およびマネージ コード Web コントロール ライブラリをデバッグする方法について説明しますが DLL のデバッグ プロジェクトの設定を推奨します。
+
+ [コンソール プロジェクト](../debugger/debugging-preparation-console-projects.md)デバッグ コンソール プロジェクトを構成する方法を説明します。
+
+ [方法: デバッグ、実行可能ファイルに含まれない Visual Studio ソリューションを](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)Visual Studio プロジェクトの一部として作成されていない実行可能ファイルをデバッグする方法について説明します。
+
+ [64 ビット アプリケーションをデバッグする](../debugger/debug-64-bit-applications.md)64 ビット アプリケーションをデバッグする方法について説明します。
+
+ [方法: .NET Framework のバージョンのデバッグを指定](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)デバッガーに使用するバージョンを示すためにレジストリ キーを設定する方法について説明します。
+
+## <a name="see-also"></a>参照
+- [デバッガーのセキュリティ](../debugger/debugger-security.md)
+- [Visual Studio でのデバッグ](../debugger/index.md)
+- [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

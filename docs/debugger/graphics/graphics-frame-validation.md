@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b353954f56cc71922d1ec5e7aef483c7bad2f47f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991529"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694817"
 ---
 # <a name="graphics-frame-validation"></a>グラフィックス フレームの検証
 <!-- VERSIONLESS --> Visual Studio 2017 とサポートを強化、**フレームの検証**ツール。  フレームの検証のウィンドウには、エラーとイベントの一覧に関連付けられている警告が表示されます。  このウィンドウを表示するには、選択、**ビュー > フレームの検証**メニュー。
@@ -33,6 +33,6 @@ ms.locfileid: "54991529"
 | メッセージ | イベントに関連付けられているメッセージ。 |
 | event | エラーまたは警告に関連するイベントです。 |
 
-## <a name="see-also"></a>関連項目  
-[グラフィックス診断 (DirectX グラフィックスのデバッグ)](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>参照
+[グラフィックス診断 (DirectX グラフィックスのデバッグ)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

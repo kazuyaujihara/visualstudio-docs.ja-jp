@@ -117,7 +117,7 @@ Visual Studio プロジェクトでは、ご使用のプログラムに対応す
 
    コンパイラでは、実行可能ファイルまたはメイン出力ファイルと同じフォルダーにシンボル ファイルを作成します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio デバッガーでシンボル (.pdb) ファイルおよびソース ファイルを指定します。](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
 - [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)<br/>

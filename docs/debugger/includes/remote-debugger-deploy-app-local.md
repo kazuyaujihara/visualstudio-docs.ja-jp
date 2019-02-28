@@ -1,5 +1,5 @@
 ---
-title: ローカル フォルダーに配置します。
+title: ローカル フォルダーに配置する
 description: ローカル フォルダーにアプリをデプロイします。
 services: ''
 author: mikejo5000
@@ -8,16 +8,16 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: bd477fec033eb75f626401586abfd10c798601ef
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: 67ffd17c772221c356e8c25d14437c2a737fda9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38809470"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723878"
 ---
 1. **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**発行**(Web フォーム、 **Web アプリの発行**)。
 
-    以前に任意の発行プロファイルを構成する場合、**発行**ウィンドウが表示されます。 クリックして**新しいプロファイル**します。
+    以前に発行プロファイルを構成してある場合、**[発行]** ウィンドウが表示されます。 クリックして**新しいプロファイル**します。
 
 1. **発行**ダイアログ ボックスで、**フォルダー**、 をクリックして**参照**、新しいフォルダーを作成および**C:\Publish**します。
 
@@ -37,7 +37,7 @@ ms.locfileid: "38809470"
 1. **[発行]** をクリックします。
 
     ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
-    
+
     アプリケーションの発行、**デバッグ**ローカル フォルダーにプロジェクトの構成。 出力ウィンドウに進行状況を示しています。
 
 1. ASP.NET プロジェクト ディレクトリを Visual Studio コンピューターから ASP.NET アプリ用に構成されたローカル ディレクトリにコピー (この例で**C:\Publish**) Windows Server コンピューターにします。 このチュートリアルで、手動でコピーするが、PowerShell、Xcopy、Robocopy などの他のツールを使用すると仮定します。

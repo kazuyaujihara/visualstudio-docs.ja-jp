@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa637a5f403a4651541d920c6390204ee579994
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
+ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318616"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639688"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 シンボルとファイル名の検索オプションを指定します。
@@ -43,23 +43,17 @@ enum NameSearchOptions {
 ```
 
 ## <a name="elements"></a>Elements
-`nsNone`  
-オプションは指定されていません。
+`nsNone` オプションは指定されていません。
 
-`nsfCaseSensitive`  
-大文字小文字を区別する名前の一致を適用します。
+`nsfCaseSensitive` 大文字小文字を区別する名前の一致を適用します。
 
-`nsfCaseInsensitive`  
-大文字の名前の一致を適用します。
+`nsfCaseInsensitive` 大文字の名前の一致を適用します。
 
-`nsfFNameExt`  
-パスと名前を処理し、.ext という名前の一致を適用します。
+`nsfFNameExt` パスと名前を処理し、.ext という名前の一致を適用します。
 
-`nsfRegularExpression`  
-ワイルドカードとしてアスタリスク (*) や疑問符 (?) を使用して区別する名前の一致を適用します。
+`nsfRegularExpression` ワイルドカードとしてアスタリスク (*) や疑問符 (?) を使用して区別する名前の一致を適用します。
 
-`nsfUndecoratedName`  
-装飾されていないし、装飾名がシンボルにのみ適用されます。
+`nsfUndecoratedName` 装飾されていないし、装飾名がシンボルにのみ適用されます。
 
 ## <a name="remarks"></a>解説
 この列挙の値は、次のメソッドに渡されます。
@@ -74,7 +68,7 @@ enum NameSearchOptions {
 ヘッダー: dia2.h
 
 ## <a name="see-also"></a>関連項目
-[列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
-[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
+- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

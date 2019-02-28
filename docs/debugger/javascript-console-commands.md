@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f24c8d79f0b300be4e65b9a14e7675ddf2dcf195
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227408"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701954"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio での JavaScript コンソール コマンド
 
@@ -65,7 +65,7 @@ JavaScript コンソール ウィンドウでは、以下のコマンドも使�
 
 |コマンド|説明|例|
 |-------------|-----------------|-------------|
-|`$0`, `$1`, `$2`, `$3`, `$4`|指定された要素をコンソール ウィンドウに返します。 `$0` は DOM Explorer で現在選択されている要素を返し、`$1` は DOM Explorer で直前に選択されていた要素を返します。同様に、最大で 4 つ前に選択されていた要素を返します。|$3|
+|`$0`, `$1`, `$2`, `$3`, `$4`|指定された要素をコンソール ウィンドウに返します。 `$0` は DOM Explorer で現在選択されている要素を返し、`$1` は DOM Explorer で直前に選択されていた要素を返します。 同様に、最大で 4 つ前に選択されていた要素を返します。|$3|
 |`$(id)`|要素を ID で返します。 これは `document.getElementById(id)`のショートカット コマンドであり、 `id` は要素の ID を表す文字列です。|`$("contenthost")`|
 |`$$(selector)`|CSS セレクター構文を使用して、指定されたセレクターと一致する要素の配列を返します。 これは `document.querySelectorAll()`のショートカット コマンドです。|`$$(".itemlist")`|
 |`cd()`<br /><br /> `cd(window)`|式の評価のコンテキストを、既定であるページのトップレベル ウィンドウから指定したフレームのウィンドウに変更できます。 `cd()` をパラメーターの指定なしで呼び出すと、コンテキストがトップレベル ウィンドウに戻ります。|`cd();`<br /><br /> `cd(myframe);`|
@@ -103,13 +103,7 @@ console.log(user.first, user.last);
 
  次の代替パターンがサポートされています。
 
-- %s - 文字列 %i - 整数  
-  %d - 整数  
-  %f - 浮動小数  
-  %o - オブジェクト  
-  %b - バイナリ  
-  %x - 16 進数  
-  %e - 指数  
+- %s - 文字列 %i - 整数 %d - 整数 %f - 浮動小数点数 %o - オブジェクト %b - バイナリ %x - 16 進数 %e - 指数
 
   ここでは、 `console.log`で代替パターンを使った例をいくつか示します。
 
@@ -129,5 +123,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>関連項目
-[クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)  
-[クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)
+- [クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)
