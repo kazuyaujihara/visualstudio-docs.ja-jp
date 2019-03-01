@@ -43,7 +43,7 @@ ms.locfileid: "56693049"
 
  [方法: .NET Framework のバージョンのデバッグを指定](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)デバッガーに使用するバージョンを示すためにレジストリ キーを設定する方法について説明します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [Visual Studio でのデバッグ](../debugger/index.md)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
