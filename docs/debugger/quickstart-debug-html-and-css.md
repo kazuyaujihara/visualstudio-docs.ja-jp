@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 02203ba84ee2d394ca9b714d74f607480ba68460
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227814"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721057"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio で UWP アプリの HTML および CSS をデバッグします。
 
@@ -254,10 +254,10 @@ DOM Explorer を使用すると次のことができます。
 > Windows Phone エミュレーターは、マウス ポインターを置くことによる要素の強調表示を部分的にサポートします。
 
 ## <a name="see-also"></a>関連項目
-[Visual Studio でのアプリのデバッグ](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)  
-[ショートカット キー](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[JavaScript コンソール コマンド](../debugger/javascript-console-commands.md)  
-[HTML、CSS、および JavaScript サンプル コードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[製品のサポートとユーザー補助](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [Visual Studio でのアプリのデバッグ](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)
+- [ショートカット キー](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md)
+- [HTML、CSS、および JavaScript サンプル コードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [製品のサポートとユーザー補助](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
