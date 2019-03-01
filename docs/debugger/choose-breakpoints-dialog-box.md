@@ -37,6 +37,6 @@ ms.locfileid: "56637036"
 
  **None**に示されたすべてのブレークポイントをクリア、**ブレークポイント**ボックス。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ブレークポイントの使用](../debugger/using-breakpoints.md)
