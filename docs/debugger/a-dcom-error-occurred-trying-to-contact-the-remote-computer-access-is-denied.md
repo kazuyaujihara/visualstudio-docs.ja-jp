@@ -48,7 +48,7 @@ ms.locfileid: "56622840"
 
 - リモート デバッグで資格情報の入力が必要な場合は、資格情報の保存のチェック ボックスをオンにする。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Remote Debugging](../debugger/remote-debugging.md)
