@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8aa9a1f369b228b7e1c68a12381bf52d692173
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909207"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007359"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>方法: コード メトリックス データを生成します。
 
@@ -25,6 +25,8 @@ ms.locfileid: "55909207"
 さらに、インストール、 [NuGet パッケージ](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01)4 つのコード メトリックスを含む[アナライザー](roslyn-analyzers-overview.md)規則。CA1501、CA1502、CA1505、および CA1506 します。 既定では、これらの規則が無効になっていますが、それらから有効にすることができます**ソリューション エクスプ ローラー**または、[ルール セット](using-rule-sets-to-group-code-analysis-rules.md)ファイル。
 
 ## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE のコード メトリックス
+
+使用して、IDE で 1 つまたはすべての開いているプロジェクトのコード メトリックスを生成、**分析** > **コード メトリックスの計算**メニュー。
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>ソリューション全体のコード メトリックスの結果を生成します。
 
@@ -45,6 +47,16 @@ ms.locfileid: "55909207"
 1. メニュー バーから選択**分析** > **コード メトリックスの計算** > **プロジェクトの選択の**します。
 
 結果を生成し、**コード メトリックスの結果**ウィンドウが表示されます。 結果の詳細を表示するには、ツリーを展開、**階層**します。
+
+::: moniker range="vs-2017"
+
+> [!NOTE]
+> **コード メトリックスの計算**.NET Core と .NET Standard プロジェクトのコマンドは機能しません。 .NET Core または .NET Standard プロジェクトのコード メトリックスを計算するには、次のことができます。
+>
+> - コード メトリックスを計算、[コマンドライン](#command-line-code-metrics)代わりに
+> - Visual Studio 2019 へのアップグレードします。
+
+::: moniker-end
 
 ## <a name="command-line-code-metrics"></a>コマンド ライン コード メトリックス
 
