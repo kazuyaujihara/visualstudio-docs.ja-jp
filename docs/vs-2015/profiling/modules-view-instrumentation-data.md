@@ -83,7 +83,7 @@ ms.locfileid: "54787682"
 |**最大アプリケーション排他時間 (関数のみ)**|-   関数の場合、この関数の呼び出しの最大アプリケーション排他時間。<br />-   モジュールの場合、モジュール内の関数のすべての呼び出しの最大アプリケーション排他時間。|  
 |**最小アプリケーション排他時間 (関数のみ)**|-   関数の場合、このモジュールまたは関数の呼び出しの最小アプリケーション排他時間。<br />-   モジュールの場合、モジュール内の関数のすべての呼び出しの最小アプリケーション排他時間。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [モジュール ビュー](../profiling/modules-view-sampling-data.md)   
  [モジュール ビュー - インストルメンテーション](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [モジュール ビュー - サンプリング](../profiling/modules-view-dotnet-memory-sampling-data.md)

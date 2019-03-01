@@ -149,5 +149,5 @@ ms.locfileid: "54756805"
 #### <a name="disk-operations"></a>ディスク操作  
  このタブでは、現在のプロセスのために、ディスク I/O に関与したプロセスとスレッド、それによって影響を受けたファイル (読み込まれた DLL など)、読み取られたバイト数、その他の情報を示します。 このレポートを使用して、実行中にファイルへのアクセスに費やされる時間を評価できます (特に、I/O バウンドなプロセスと思われる場合に役立ちます)。 詳細については、「[ディスク操作レポート](../profiling/disk-operations-report-threads-view.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)

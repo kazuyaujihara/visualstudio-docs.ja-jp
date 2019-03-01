@@ -29,6 +29,6 @@ void CaptureCurrentFrame();
 
  フレームをキャプチャするには、キャプチャしてグラフィックス情報を記録するアプリを準備する必要があります: 呼び出したする必要があります、 [Init](init.md)のインスタンスを通じて、`VsgDbg`クラスを呼び出す前に`CaptureCurrentFrame`します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Init](init.md)
 - [BeginCapture](begincapture.md)

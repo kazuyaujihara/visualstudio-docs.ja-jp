@@ -38,5 +38,5 @@ ms.locfileid: "56702110"
 
 -   [エラー: リモート コンピューターが [リモート接続] ダイアログに表示されません](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Remote Debugging](../debugger/remote-debugging.md)

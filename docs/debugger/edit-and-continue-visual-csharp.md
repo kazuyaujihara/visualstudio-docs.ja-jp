@@ -38,6 +38,6 @@ ms.locfileid: "56685366"
 
  詳細については、次を参照してください。[方法: 使用の編集と続行 (c#)](../debugger/how-to-use-edit-and-continue-csharp.md)します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [方法 : エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [サポートされているコード変更 (c# および Visual Basic)](../debugger/supported-code-changes-csharp.md)

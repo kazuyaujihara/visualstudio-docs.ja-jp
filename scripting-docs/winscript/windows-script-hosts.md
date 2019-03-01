@@ -41,5 +41,5 @@ Microsoft Windows スクリプト ホストを実装する場合、スクリプ�
 ## <a name="remarks"></a>コメント  
  これらの制限のいずれも、フリー スレッドの [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) インターフェイスやフリー スレッドのオブジェクト モデルを実装することを選択したホストには適用されません。 このようなホストは、任意のスレッドから [IActiveScript](../winscript/reference/iactivescript.md) インターフェイスを制限なく使用できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Windows スクリプト インターフェイス](../winscript/windows-script-interfaces.md)

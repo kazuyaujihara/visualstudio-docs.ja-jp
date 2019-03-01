@@ -51,6 +51,6 @@ HRESULT Prev ( 
 ## <a name="remarks"></a>解説
  このメソッドは、フェッチされる要素の数によって、列挙子の位置を更新します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

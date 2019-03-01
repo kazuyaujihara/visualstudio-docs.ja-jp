@@ -60,6 +60,6 @@ ms.locfileid: "56684183"
 
      適用した編集がプロジェクトに取り込まれた状態でコードが実行されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [サポートされているコード変更 (c# および Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [エディット コンティニュ (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

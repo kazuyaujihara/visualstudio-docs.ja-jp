@@ -79,5 +79,5 @@ Visual Studio Graphics Analyzer を使用してレンダリングに関する問
 ## <a name="capturing-graphics-information-from-the-command-line"></a>コマンド ラインからのグラフィックス情報のキャプチャ
  コマンド ライン ツールを使用して、アプリからグラフィックス情報をキャプチャできます。 この DXCap.exe というツールでは、Visual Studio またはプログラムによるキャプチャを使用することなく、簡単にグラフィックス情報をキャプチャして再生できます。 具体的には、オートメーションを行う場合や、テスト環境で DXCap.exe を使用できます。 DXCap.exe の詳細については、「[コマンド ライン キャプチャ ツール](command-line-capture-tool.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [チュートリアル: グラフィックス情報のキャプチャ](walkthrough-capturing-graphics-information.md)

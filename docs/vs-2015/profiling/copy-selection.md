@@ -25,5 +25,5 @@ ms.locfileid: "54778942"
 
 レポート タブから呼び出し履歴全体をコピーするには、**[コピー]** をクリックします。 その後、貼り付けをサポートする任意のプログラムに呼び出し履歴を貼り付けることができます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

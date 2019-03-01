@@ -39,7 +39,7 @@ ms.locfileid: "56690349"
 
 -   [[シンボル] ([オプション] ダイアログ ボックス - [デバッグ])](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [Visual Studio でのデバッグ](../debugger/index.md)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

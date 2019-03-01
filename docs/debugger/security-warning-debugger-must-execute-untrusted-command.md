@@ -39,7 +39,7 @@ ms.locfileid: "56690355"
 
  コマンドの実行の実行を停止し、移行元サーバーからのファイルのダウンロードはありません。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [シンボルとソース コードの管理](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [ソース サーバー](/windows/desktop/Debug/source-server-and-source-indexing)

@@ -39,7 +39,7 @@ CSV で、さらに詳しい分析の Excel のようなものに貼り付ける
 
 API 統計情報ツールと同様を右クリックしてコピーすべてのデータをウィンドウとして CSV で、さらに詳しい分析の Excel のように貼り付けることができます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [グラフィックス診断 (DirectX グラフィックスのデバッグ)](visual-studio-graphics-diagnostics.md)
 - [リソース履歴](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

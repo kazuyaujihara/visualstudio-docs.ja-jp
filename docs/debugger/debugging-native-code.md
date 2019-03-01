@@ -58,5 +58,5 @@ ms.locfileid: "56685496"
 
  [デバッガーでのはじめ](../debugger/debugger-feature-tour.md)デバッグ ドキュメントの大きなセクションへのリンクを提供します。 デバッガーの新機能、設定と準備、ブレークポイント、例外の処理、エディット コンティニュ、マネージド コードのデバッグ、ネイティブ コードのデバッグ、SQL のデバッグ、ユーザー インターフェイス リファレンスなどの情報へのリンクを提供します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [デバッガーのセキュリティ](../debugger/debugger-security.md) [Visual Studio でのデバッグ](../debugger/index.md)

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27624f4b5336d91b30410303c9fd3823cc00fb88
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 442d78f494381021bd480f5649dbb6957bec5ae1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620916"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954051"
 ---
 # <a name="author-vsct-files"></a>.Vsct ファイルの作成者
 このドキュメントを作成する方法を示しています、 *.vsct* Visual Studio 統合開発環境 (IDE) にメニュー項目、ツールバー、およびその他のユーザー インターフェイス (UI) 要素を追加するファイル。 次の手順を使用していない Visual Studio パッケージ (VSPackage) を UI 要素を追加すると、 *.vsct*ファイル。

@@ -37,5 +37,5 @@ Visual Studio 2010 Premium では、自分が実装したコードのみをパ�
   
 3.  **[全般設定]** で、**[マイ コードのみを有効にする]** チェック ボックスをオフにします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [パフォーマンス ツール のレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)

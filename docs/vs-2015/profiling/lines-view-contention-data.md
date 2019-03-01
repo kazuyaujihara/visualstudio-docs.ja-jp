@@ -65,7 +65,7 @@ ms.locfileid: "54779051"
 |**ソース開始行**|ステートメントが開始されるソース ファイル内の行番号。|  
 |**ソース終了行**|ステートメントが終了するソース ファイル内の行番号。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
  [行ビュー](../profiling/lines-view.md)   
  [行ビュー - サンプリング](../profiling/lines-view-dotnet-memory-sampling-data.md)   

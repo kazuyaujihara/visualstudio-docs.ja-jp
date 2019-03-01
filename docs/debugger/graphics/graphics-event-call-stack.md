@@ -41,5 +41,5 @@ Visual Studio Graphics Analyzer のグラフィックス イベント呼び出�
 ### <a name="links-to-graphics-objects"></a>グラフィックス オブジェクトへのリンク
  選択したグラフィックス イベントについて理解するために、そのイベントが関連付けられている Direct3D オブジェクトに関する情報が必要になる場合があります。 **[グラフィックス イベント呼び出し履歴]** ウィンドウで、この情報へのリンクが提供されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [チュートリアル: 頂点の網かけによるオブジェクトの不足](walkthrough-missing-objects-due-to-vertex-shading.md)

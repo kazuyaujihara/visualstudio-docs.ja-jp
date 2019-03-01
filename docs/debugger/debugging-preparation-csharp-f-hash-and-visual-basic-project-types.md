@@ -47,5 +47,5 @@ ms.locfileid: "56686887"
 
  [マネージ コードをデバッグ](../debugger/debugging-managed-code.md)一般的な問題のデバッグとマネージ コードで記述されたアプリケーション用の手法について説明します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)

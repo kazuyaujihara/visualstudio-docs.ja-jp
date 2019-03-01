@@ -53,7 +53,7 @@ ms.locfileid: "54787666"
 |**割り当てバイト数 (関数のみ)**|コール ツリーの親関数が呼び出した、この関数のインスタンスによって割り当てられたメモリのバイト数。 この数には、子関数によって行われた割り当てが含まれません。|  
 |**割り当てバイト数 % (関数のみ)**|プロファイル実行で割り当てられたすべてのメモリのバイト数に対する、この関数の排他的割り当てであったバイト数の割合。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [コール ツリー ビュー - インストルメンテーション](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [コール ツリー ビュー](../profiling/call-tree-view-sampling-data.md)   
  [コール ツリー ビュー](../profiling/call-tree-view-instrumentation-data.md)

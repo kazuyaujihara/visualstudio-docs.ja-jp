@@ -113,7 +113,7 @@ ms.locfileid: "56697976"
 
 10. **[インターネット インフォメーション サービス (IIS) マネージャー]** ウィンドウを閉じます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft ダイジェスト認証](http://go.microsoft.com/fwlink/?LinkId=77938)
 - [IIS 7.0 で Windows Vista での Web アプリケーションと Visual Studio を実行します。](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

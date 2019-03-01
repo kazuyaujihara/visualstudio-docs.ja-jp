@@ -74,6 +74,6 @@ Visual Studio Graphics Analyzer の [ピクセル履歴] ウィンドウでは�
 ### <a name="links-to-graphics-objects"></a>グラフィックス オブジェクトへのリンク
  ピクセル履歴のグラフィック イベントについて理解するために、イベントの発生時点におけるデバイスの状態や、そのイベントで参照されている Direct3D オブジェクトに関する情報が必要になる場合があります。 **[グラフィックス ピクセル履歴]** では、ピクセル履歴内のイベントごとに、その時点のデバイスの状態と関連オブジェクトへのリンクが提供されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [チュートリアル: デバイス状態によるオブジェクトの不足](walkthrough-missing-objects-due-to-device-state.md)
 - [チュートリアル: 網かけによるレンダリング エラーのデバッグ](walkthrough-debugging-rendering-errors-due-to-shading.md)

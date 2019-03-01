@@ -30,5 +30,5 @@ ms.locfileid: "54769046"
   
  白はシステム上で利用可能な未使用の DirectX エンジンを示します。 さらに用途が見つかればプロセスで使用できるエンジンです。 一部のエンジンは、特定のタスクにしか使用できません。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [使用状況ビュー](../profiling/utilization-view.md)

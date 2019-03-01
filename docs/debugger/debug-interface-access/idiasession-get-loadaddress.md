@@ -41,6 +41,6 @@ HRESULT get_loadAddress ( 
 ## <a name="remarks"></a>解説
  返される読み込みアドレスは常に 0 しない限り、具体的には設定を使用して、 [idiasession::put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)メソッド。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)
