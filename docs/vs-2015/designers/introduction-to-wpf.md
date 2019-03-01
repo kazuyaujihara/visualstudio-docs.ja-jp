@@ -1,4 +1,4 @@
----
+﻿---
 title: WPF の概要 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -517,7 +517,7 @@ End Namespace
   
  アプリケーションを作成する際に、この概要に立ち戻って主要な機能を思い出し、ここで取り上げられている機能をより詳しく説明したページへの参照を見つけることができます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [WPF の概要](../designers/getting-started-with-wpf.md)   
  [Windows Presentation Foundation での最新のデスクトップ アプリケーションの作成](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)   
  [Windows Presentation Foundation](https://msdn.microsoft.com/library/ms754130\(v=vs.100\).aspx)

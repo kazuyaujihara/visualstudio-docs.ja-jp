@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual C# の IntelliSense | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -157,5 +157,5 @@ Visual C# の IntelliSense は、エディターでコーディングする際�
   
  次のタスクは、IntelliSense が `button1_Click` という名前のイベント ハンドラーを、`button1.Click` という名前のイベント フィールドに自動的にフックアップする方法について示しています。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Visual Studio IDE](../ide/visual-studio-ide.md)

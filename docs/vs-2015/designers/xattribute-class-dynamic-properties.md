@@ -1,4 +1,4 @@
----
+﻿---
 title: XAttribute クラスの動的プロパティ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -27,7 +27,7 @@ ms.locfileid: "54834054"
 |-----------|-----------------|  
 |[[値]](../designers/value-xattribute-dynamic-property.md)|XML 属性の値を取得または設定します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>   
  [LINQ to XML の動的プロパティ](../designers/linq-to-xml-dynamic-properties.md)   
  [XElement クラスの動的プロパティ](../designers/xelement-class-dynamic-properties.md)

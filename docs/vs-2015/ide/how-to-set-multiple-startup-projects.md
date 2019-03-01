@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : 複数のスタートアップ プロジェクトを設定する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -33,6 +33,6 @@ Visual Studio では、デバッガーの起動時に複数のプロジェクト
   
 4.  クリックして**マルチ スタートアップ プロジェクト**し適切なアクションを設定します。 詳細については、「[方法: プロジェクト プロパティおよび構成設定を変更する](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)」をご覧ください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)   
  [ソリューションとプロジェクトの作成](../ide/creating-solutions-and-projects.md)

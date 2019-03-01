@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: Surround-with コード スニペットを使用して、|Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -58,6 +58,6 @@ ms.locfileid: "54799059"
   
      または、コード スニペットの名前を入力し、Tab キーまたは Enter キーを押します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Visual C# のコード スニペット](../ide/visual-csharp-code-snippets.md)   
  [コード スニペット ピッカー](../ide/reference/code-snippet-picker.md)

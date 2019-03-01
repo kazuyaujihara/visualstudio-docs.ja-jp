@@ -1,4 +1,4 @@
----
+﻿---
 title: '[フォルダーを指定して置換] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -90,7 +90,7 @@ ms.locfileid: "54779243"
 > [!CAUTION]
 >  **[元に戻す]** は、編集のために開いた状態を維持しているファイルにのみ使用できます。 このオプションが選択されていない場合、編集のために開いていなかったファイルは開いていない状態を維持します。そのようなファイルでは、**[元に戻す]** オプションは利用できません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [テキストの検索と置換](../ide/finding-and-replacing-text.md)   
  [フォルダーを指定して検索](../ide/find-in-files.md)   
  [Visual Studio のコマンド](../ide/reference/visual-studio-commands.md)

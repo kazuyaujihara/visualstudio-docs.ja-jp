@@ -1,4 +1,4 @@
----
+﻿---
 title: '[プロジェクトおよびソリューション] の [オプション] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -64,5 +64,5 @@ ms.locfileid: "54758202"
  **ファイル名の変更時にシンボルの名前変更を求めるプロンプトを出す**  
  選択すると、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] がコード要素に対するプロジェクト内のすべての参照も名前変更するかどうかを確認する、メッセージ ボックスが表示されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

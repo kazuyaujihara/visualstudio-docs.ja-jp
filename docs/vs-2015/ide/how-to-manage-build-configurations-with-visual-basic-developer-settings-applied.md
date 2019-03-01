@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : Visual Basic 開発者設定が適用されたビルド構成を管理する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -47,6 +47,6 @@ ms.locfileid: "54784788"
   
      **[ビルド]** メニューで **[構成マネージャー]** を使用できるようになり、**[構成]** 一覧と **[プラットフォーム]** 一覧がプロジェクト デザイナーに表示されるようになります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ビルド構成について](../ide/understanding-build-configurations.md)   
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

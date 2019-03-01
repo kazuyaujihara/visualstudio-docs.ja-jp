@@ -1,4 +1,4 @@
----
+﻿---
 title: '[署名] ページ (プロジェクト デザイナー) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -89,7 +89,7 @@ ms.locfileid: "54788727"
 > [!NOTE]
 >  アセンブリに署名するときに、秘密キーへのアクセス権がない場合があります。 たとえば、組織には、開発者が日常的にアクセスしない厳重に保護されたキーのペアがある場合があります。 公開キーは使用可能ですが、秘密キーへのアクセスは少数のユーザーに限定されます。 このような場合は、*遅延*または*部分署名*を使用して公開キーを提供し、アセンブリが引き渡されるまで、秘密キーの追加を遅らせることができます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)   
  [アセンブリおよびマニフェストへの署名の管理](../../ide/managing-assembly-and-manifest-signing.md)   
  [マネージド アプリケーションの厳密な名前の署名](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   

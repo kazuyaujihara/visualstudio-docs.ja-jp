@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 型 (クラス デザイナー) の間の継承の作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -49,7 +49,7 @@ ms.locfileid: "54760238"
     >   
     >  既存のジェネリック型を視覚化できますが、新しいジェネリック型は作成できません。 また、既存のジェネリック型の型パラメーターは変更できません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [継承](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
  [継承の基本](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
  [方法: 型の間の継承を表示する (クラス デザイナー)](../ide/how-to-view-inheritance-between-types-class-designer.md)   

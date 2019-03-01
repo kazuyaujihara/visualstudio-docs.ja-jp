@@ -1,4 +1,4 @@
----
+﻿---
 title: '[オプション]、[テキスト エディター]、[JavaScript]、[IntelliSense] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -80,5 +80,5 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
  **[Add a reference to the group] (グループへの参照の追加)**  
  このオプションを使用すると、適切なファイルを参照して IntelliSense (.js) ファイルを追加できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

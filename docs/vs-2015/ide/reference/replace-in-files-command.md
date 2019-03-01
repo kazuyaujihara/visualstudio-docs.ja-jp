@@ -1,4 +1,4 @@
----
+﻿---
 title: Replace In Files コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -94,7 +94,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [テキストの検索と置換](../../ide/finding-and-replacing-text.md)   
  [フォルダーを指定して置換](../../ide/replace-in-files.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   

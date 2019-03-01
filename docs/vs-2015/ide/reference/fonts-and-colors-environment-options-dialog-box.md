@@ -1,4 +1,4 @@
----
+﻿---
 title: '[フォントおよび色] ([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -233,7 +233,7 @@ ms.locfileid: "54761628"
  **サンプル**  
  **[設定の表示]** ボックスと **[表示項目]** ボックスでの選択内容に基づいて、フォントのスタイル、サイズ、および配色のサンプルが表示されます。 さまざまな書式指定オプションを試し、このボックスでその結果をプレビューできます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)   
  [[オプション] ダイアログ ボックス](../../ide/reference/options-dialog-box-visual-studio.md)   
  [方法: フォントと色を変更する](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

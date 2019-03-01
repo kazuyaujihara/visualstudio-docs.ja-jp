@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: ビルドで環境変数を使用する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -66,7 +66,7 @@ ms.locfileid: "54780974"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
 
 [MSBuild](msbuild.md)
 

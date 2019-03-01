@@ -1,4 +1,4 @@
----
+﻿---
 title: PublicSymbol |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -46,7 +46,7 @@ ms.locfileid: "56617536"
 |[IDiaSymbol::get_undecoratedName](../../debugger/debug-interface-access/idiasymbol-get-undecoratedname.md)|`BSTR`|装飾されていないシンボルの名前。|
 |[IDiaSymbol::get_undecoratedNameEx](../../debugger/debug-interface-access/idiasymbol-get-undecoratednameex.md)|`BSTR`|一部またはすべての非装飾のシンボル名にします。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)
 - [シンボルの場所](../../debugger/debug-interface-access/symbol-locations.md)

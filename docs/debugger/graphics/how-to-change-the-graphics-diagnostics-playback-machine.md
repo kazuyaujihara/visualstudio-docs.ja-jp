@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: グラフィックス診断再生マシンを変更 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual

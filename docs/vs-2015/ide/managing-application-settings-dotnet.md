@@ -1,4 +1,4 @@
----
+﻿---
 title: アプリケーションの設定の管理 (.NET) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -93,5 +93,5 @@ Properties.Settings.Default.Save();
   
  `Settings` クラスを使用してアプリケーション設定にアクセスする方法の一般情報については、「[アプリケーション設定の概要](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)」を参照してください。 設定の反復処理については、この [フォーラム ポスト](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [アプリケーション設定へのアクセス](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : インデックスでトピックを検索する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -43,5 +43,5 @@ ms.locfileid: "54758170"
   
      指定したキーワードが 1 つのトピックだけに関連付けられている場合は、そのトピックが表示されます。 それ以外の場合は、そのキーワードに関連付けられているすべてのトピックの一覧が表示されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [インデックス検索のヒント](../ide/index-search-tips.md)

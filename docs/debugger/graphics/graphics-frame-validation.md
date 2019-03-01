@@ -1,4 +1,4 @@
----
+﻿---
 title: グラフィックス フレームの検証 |Microsoft Docs
 ms.date: 03/02/2017
 ms.topic: conceptual

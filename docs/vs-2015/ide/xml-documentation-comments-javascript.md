@@ -1,4 +1,4 @@
----
+﻿---
 title: XML ドキュメント コメント (JavaScript) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -48,5 +48,5 @@ JavaScript では、ソース コードの特別なコメント フィールド�
   
 -   [\<var>](../ide/var-javascript.md)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)

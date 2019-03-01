@@ -1,4 +1,4 @@
----
+﻿---
 title: コード スニペットの関数 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -153,6 +153,6 @@ ms.locfileid: "54790008"
 </CodeSnippets>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Function 要素 (IntelliSense コード スニペット)](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)

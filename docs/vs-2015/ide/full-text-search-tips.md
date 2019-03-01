@@ -1,4 +1,4 @@
----
+﻿---
 title: フルテキスト検索のヒント | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -60,6 +60,6 @@ ms.locfileid: "54791709"
 ### <a name="words-ignored-in-searches-stop-words"></a>検索で無視される言葉 (ストップ ワード)  
  よく使われる言葉や数字 (ストップ ワードと呼ばれることもあります) は、フルテキスト検索で自動的に無視されます。 たとえば、"pass through" という句を検索すると、"pass" という単語を含むトピックが表示され、"through" は無視されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [情報の検索](../ide/locate-information.md)   
  [検索式の論理演算子](../ide/logical-operators-in-search-expressions.md)

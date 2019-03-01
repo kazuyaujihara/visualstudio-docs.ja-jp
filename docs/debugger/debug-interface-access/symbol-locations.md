@@ -1,4 +1,4 @@
----
+﻿---
 title: シンボルの場所 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -39,7 +39,7 @@ ms.locfileid: "56607890"
 |`LocInMetaData`|[IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)|
 |`LocIsConstant`|[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)
 - [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)
 - [IDiaSymbol::get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)

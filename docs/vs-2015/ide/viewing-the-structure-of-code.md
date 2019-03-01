@@ -1,4 +1,4 @@
----
+﻿---
 title: コードの構造の表示 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -222,5 +222,5 @@ Visual Studio プロジェクトのオブジェクトとメンバー、および
 ### <a name="document-outline-window"></a>[ドキュメント アウトライン] ウィンドウ  
  **[ドキュメント アウトライン]** ウィンドウを、XAML ページのデザイナーや Windows フォーム デザイナー、または HTML ページなどのデザイナー ビューと共に使用することができます。 このウィンドウでは、要素がツリー ビューで表示されます。これにより、フォームまたはページの論理構造を表示し、組み込み位置の深いコントロールや非表示になっているコントロールを見つけることができます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン](../ide/class-view-and-object-browser-icons.md)

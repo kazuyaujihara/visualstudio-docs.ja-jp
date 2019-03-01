@@ -1,4 +1,4 @@
----
+﻿---
 title: ローカリゼーションのニュートラル リソース言語 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -41,7 +41,7 @@ ms.locfileid: "54764774"
 [assembly: NeutralResourcesLanguageAttribute("en")]  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  <xref:System.Resources.ResourceManager>   
  [.NET Framework ベースの国際対応アプリケーションの概要](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
  [ローカリゼーション用リソースの階層編成](../ide/hierarchical-organization-of-resources-for-localization.md)   

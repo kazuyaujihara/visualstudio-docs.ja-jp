@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: アプリケーション マニフェストおよび配置マニフェスト署名 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -108,7 +108,7 @@ ClickOnce 配置を使用してアプリケーションを発行しようとす�
   
 3.  アプリケーションを発行します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [厳密な名前付きアセンブリ](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
  [方法 : 公開キーと秘密キーのキー ペアを作成する](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [[署名] ページ (プロジェクト デザイナー)](../ide/reference/signing-page-project-designer.md)   

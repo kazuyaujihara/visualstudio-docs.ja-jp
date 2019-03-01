@@ -1,4 +1,4 @@
----
+﻿---
 title: XML (XElement 動的プロパティ) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -35,6 +35,6 @@ elem.Xml
 ## <a name="remarks"></a>解説  
  このプロパティは、<xref:System.Xml.Linq.XNode.ToString%28System.Xml.Linq.SaveOptions%29> パラメーターが <xref:System.Xml.Linq.XNode?displayProperty=fullName> に設定されている、`SaveOptions` クラスの <xref:System.Xml.Linq.SaveOptions> メソッドに相当します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [XElement クラスの動的プロパティ](../designers/xelement-class-dynamic-properties.md)   
  [[値]](../designers/value-xelement-dynamic-property.md)

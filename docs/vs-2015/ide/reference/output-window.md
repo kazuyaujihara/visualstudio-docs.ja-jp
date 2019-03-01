@@ -1,4 +1,4 @@
----
+﻿---
 title: '[出力] ウィンドウ | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -67,7 +67,7 @@ ms.locfileid: "54784820"
 ## <a name="scrolling-behavior"></a>スクロール動作  
  [出力] ウィンドウで自動スクロールを使用していて、マウスや方向キーを使用して移動すると、自動スクロールが停止します。 自動スクロールを再開するには、Ctrl キーを押しながら End キーを押します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [出力ウィンドウの診断メッセージ](../../debugger/diagnostic-messages-in-the-output-window.md)   
  [方法 : 出力ウィンドウを制御する](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [コードのコンパイルとビルド](../../ide/compiling-and-building-in-visual-studio.md)   

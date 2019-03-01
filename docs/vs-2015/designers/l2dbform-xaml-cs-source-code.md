@@ -1,4 +1,4 @@
----
+﻿---
 title: L2DBForm.xaml.cs ソース コード | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -137,6 +137,6 @@ namespace LinqToXmlDataBinding {
 ### <a name="comments"></a>コメント  
  これらのハンドラーに関連する XAML ソースについては、「[L2DBForm.xaml ソース コード](../designers/l2dbform-xaml-source-code.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [チュートリアル: LinqToXmlDataBinding の例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml ソース コード](../designers/l2dbform-xaml-source-code.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual C# のコード スニペット | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -75,7 +75,7 @@ ms.locfileid: "54787106"
 |使用|[using](http://msdn.microsoft.com/library/b42b8e61-5e7e-439c-bb71-370094b44ae8) ディレクティブを作成します。|名前空間 (グローバル名前空間を含む) の内部。|  
 |while|[while](http://msdn.microsoft.com/library/72a0765c-6852-4aca-b327-4a11cb7f5c59) ループを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [コード スニペットの関数](../ide/code-snippet-functions.md)   
  [コード スニペット](../ide/code-snippets.md)   
  [方法: 置換が適用された新しいスニペットを作成します。](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   

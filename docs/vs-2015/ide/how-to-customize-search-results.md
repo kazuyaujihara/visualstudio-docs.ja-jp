@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : 検索結果をカスタマイズする | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -49,5 +49,5 @@ ms.locfileid: "54799786"
   
 2.  **[すべてのナビゲーション タブおよび F1 要求に英語版コンテンツを含める]** チェック ボックスをオンにします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [フルテキスト検索のヒント](../ide/full-text-search-tips.md)

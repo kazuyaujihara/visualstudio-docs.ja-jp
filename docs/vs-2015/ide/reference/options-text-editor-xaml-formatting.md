@@ -1,4 +1,4 @@
----
+﻿---
 title: '[オプション]、[テキスト エディター]、[XAML]、[書式設定] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -126,7 +126,7 @@ XAML ドキュメント内で要素を配置する方法を制御するには、
 |-|-|
 |**ツールボックスの項目を自動取得する**|現在のソリューションのユーザー コントロールとカスタム コントロールが、ツールボックスに自動的に表示されるかどうかを指定します。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [WPF の XAML](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
 [方法: XAML ビュー設定を変更する](http://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
 [XAML とコードのチュートリアル](http://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

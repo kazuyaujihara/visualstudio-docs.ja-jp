@@ -1,4 +1,4 @@
----
+﻿---
 title: Item 要素 (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -92,7 +92,7 @@ ms.locfileid: "54797026"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [項目](../msbuild/msbuild-items.md)   
  [MSBuild プロパティ](msbuild-properties1.md)   
  [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)

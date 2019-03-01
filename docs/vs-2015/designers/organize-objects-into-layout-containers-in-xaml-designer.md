@@ -1,4 +1,4 @@
----
+﻿---
 title: XAML デザイナーでレイアウト コンテナーにオブジェクトを編成する | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -132,6 +132,6 @@ ms.locfileid: "54753952"
   
  ![](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png "f5b13c66-d918-4141-8a16-bd8f8628687a")  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)   
  [XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

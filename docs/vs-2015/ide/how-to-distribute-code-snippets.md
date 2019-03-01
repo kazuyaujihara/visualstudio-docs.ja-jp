@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: コード スニペットを配布 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -102,5 +102,5 @@ ms.locfileid: "54799033"
     Console.WriteLine("Hello, World!")  
     ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [コード スニペット](../ide/code-snippets.md)

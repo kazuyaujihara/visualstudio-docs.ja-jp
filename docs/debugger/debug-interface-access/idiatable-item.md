@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiatable::item |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -48,7 +48,7 @@ HRESULT Item ( 
 
  呼び出す方が一般的ですが、`QueryInterface`メソッドで、 [IDiaTable](../../debugger/debug-interface-access/idiatable.md)適切な列挙子インターフェイスのためのインターフェイスし、列挙子の特定のメソッドを使用してテーブルの内容にアクセスします。 参照してください、 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)例については、インターフェイスです。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 - [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

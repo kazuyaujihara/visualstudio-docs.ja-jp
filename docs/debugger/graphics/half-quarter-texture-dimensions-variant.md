@@ -1,4 +1,4 @@
----
+﻿---
 title: ハーフ/クォーター テクスチャ ディメンション バリアント |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

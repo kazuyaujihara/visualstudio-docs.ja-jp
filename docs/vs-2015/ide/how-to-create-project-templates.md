@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: プロジェクト テンプレートの作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -56,6 +56,6 @@ ms.locfileid: "54785914"
   
      [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] がインストールされている場合は、**VSIX プロジェクト** テンプレートを使うことで、完成したテンプレートを配置用に .vsix ファイルにラップすることができます。 詳しくは、「[VSIX プロジェクトのテンプレートの概要](../extensibility/getting-started-with-the-vsix-project-template.md)」をご覧ください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [方法 : 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)

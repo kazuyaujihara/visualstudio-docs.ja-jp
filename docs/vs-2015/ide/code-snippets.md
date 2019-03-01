@@ -1,4 +1,4 @@
----
+﻿---
 title: コード スニペット | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -85,7 +85,7 @@ End Property
   
  **[コード スニペット マネージャー]** ダイアログの **[追加]** と **[削除]** ボタンを使用して、スニペット ディレクトリを追加および削除することができます。 個々のコード スニペットを追加するには、**[インポート]** ボタンを使用します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [チュートリアル: コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md)   
  [方法: コード スニペットを配布する](../ide/how-to-distribute-code-snippets.md)   
  [コード スニペットを使用するためのベスト プラクティス](../ide/best-practices-for-using-code-snippets.md)   

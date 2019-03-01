@@ -1,4 +1,4 @@
----
+﻿---
 title: XAML デザイナーでの要素の操作 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -121,5 +121,5 @@ ms.locfileid: "54774166"
   
 -   [ドキュメント アウトライン] ウィンドウまたはアートボードで要素を右クリックし、**[レイアウト]**、**[*PropertyName* のリセット]** の順に選択します。ここで、*PropertyName* は、リセットするプロパティです (あるいは、要素のすべてのレイアウト プロパティをリセットするには、**[レイアウト]**、**[すべてリセット]** の順に選択します)。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

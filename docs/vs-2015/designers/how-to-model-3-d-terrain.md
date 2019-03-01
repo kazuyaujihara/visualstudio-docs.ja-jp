@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 3-D 地形をモデル化 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -70,5 +70,5 @@ ms.locfileid: "54764117"
   
    この地形モデルを使用して、「[方法: ジオメトリベースのグラデーション シェーダーを作成する](../designers/how-to-create-a-geometry-based-gradient-shader.md)」で説明するグラデーション シェーダーの効果を確認できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [モデル エディター](../designers/model-editor.md)

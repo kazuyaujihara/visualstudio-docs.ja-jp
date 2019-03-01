@@ -1,4 +1,4 @@
----
+﻿---
 title: '[オプション]、[テキスト エディター]、[C-C++]、[詳細] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -157,5 +157,5 @@ ms.locfileid: "54790098"
   
  **参照の強調表示を無効にする**  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [言語固有のエディター オプションの設定](../../ide/reference/setting-language-specific-editor-options.md)

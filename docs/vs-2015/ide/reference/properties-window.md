@@ -1,4 +1,4 @@
----
+﻿---
 title: プロパティ ウィンドウ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -85,6 +85,6 @@ ms.locfileid: "54753533"
  検索  
  デザイナーでの XAML ファイルの編集時に、プロパティとイベントを検索するための機能を提供します。 検索ボックスは単語の一部の入力に反応し、入力すると検索結果が更新されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)   
  [ウィンドウ レイアウトをカスタマイズする](../../ide/customizing-window-layouts-in-visual-studio.md)

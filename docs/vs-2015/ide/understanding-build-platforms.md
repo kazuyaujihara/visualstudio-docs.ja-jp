@@ -1,4 +1,4 @@
----
+﻿---
 title: ビルド プラットフォームについて | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -36,7 +36,7 @@ ms.locfileid: "54761947"
  [方法 : プロジェクトを構成して複数の対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-multiple-platforms.md)  
  プロジェクトを構成して複数の対象プラットフォームを設定する方法について説明します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [チュートリアル: アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)   
  [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

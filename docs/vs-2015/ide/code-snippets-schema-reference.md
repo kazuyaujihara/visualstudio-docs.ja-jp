@@ -1,4 +1,4 @@
----
+﻿---
 title: コード スニペット スキーマ リファレンス | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -658,6 +658,6 @@ is a great color. I love Blue.
   
  テキスト値が必要です。 このテキストで、参照アセンブリに関する詳細な情報の入手先 URL を指定します。 プロジェクトに参照を追加できない場合、この URL が表示されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [コード スニペット](../ide/code-snippets.md)   
  [チュートリアル: コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md)

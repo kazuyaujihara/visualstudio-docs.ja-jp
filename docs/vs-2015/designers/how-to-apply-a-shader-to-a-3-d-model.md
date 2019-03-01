@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: シェーダーを 3-D モデルに適用されます |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -42,7 +42,7 @@ ms.locfileid: "54793466"
   
    シェーダーをモデルに適用した後、それをシェーダー デザイナーで開くには、モデルを選択します。その後、**[プロパティ]** ウィンドウを開き、**効果** プロパティ グループの **(詳細設定)** プロパティで省略記号 (**...**) ボタンを選択します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [方法: 基本的な 3-D モデルを作成します。](../designers/how-to-create-a-basic-3-d-model.md)   
  [方法: 基本カラー シェーダーを作成する](../designers/how-to-create-a-basic-color-shader.md)   
  [モデル エディター](../designers/model-editor.md)   

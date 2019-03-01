@@ -1,4 +1,4 @@
----
+﻿---
 title: Blend のペン ツールの修飾キー | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -37,7 +37,7 @@ ms.locfileid: "54764185"
 |2 つのパスを結合する際に滑らかな角を作成します|2 つのパスを選択し、**ペン** ツール、一方のパスの終点の順にクリックしてから、もう一方のパスの終点をドラッグします|![](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png "bd12dfa4-112e-4f37-9765-3479e6b69894")<br /><br /> ペン結合ポインター|  
 |新しいパスを作成する|前のパスの外側を Ctrl キーを押しながらクリックして、点の追加を終了し、新しいパスを開始する場所をクリックまたはドラッグする|![](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png "69758176-5f53-465b-808c-f13fd1a0b3f2")<br /><br /> ペン開始ポインター|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [キーボード ショートカットと修飾キー](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)   
  [アートボードの修飾キー](../designers/artboard-modifier-keys-in-blend.md)   
  [[個別選択] ツールの修飾キー](../designers/direct-selection-tool-modifier-keys-in-blend.md)   

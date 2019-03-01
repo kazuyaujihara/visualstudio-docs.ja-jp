@@ -1,4 +1,4 @@
----
+﻿---
 title: CreateProperty タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -70,6 +70,6 @@ ms.locfileid: "54804454"
   
  プロジェクトの実行後、`NewFile` プロパティの値は `Module1.vb` になります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)

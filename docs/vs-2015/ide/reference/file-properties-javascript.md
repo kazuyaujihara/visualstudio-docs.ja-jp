@@ -1,4 +1,4 @@
----
+﻿---
 title: ファイルのプロパティ、JavaScript | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -96,5 +96,5 @@ ms.locfileid: "54780370"
 ### <a name="version"></a>Version  
  参照のバージョンが表示されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [NIB: プロジェクトのプロパティ (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

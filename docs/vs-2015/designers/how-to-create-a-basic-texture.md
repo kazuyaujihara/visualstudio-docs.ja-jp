@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 基本的なテクスチャの作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -90,5 +90,5 @@ ms.locfileid: "54767100"
   
     次の手順では、このテクスチャの MIP レベルを生成できます。 詳細については、「[方法: MIP レベルを作成および変更する](../designers/how-to-create-and-modify-mip-levels.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Image Editor](../designers/image-editor.md)

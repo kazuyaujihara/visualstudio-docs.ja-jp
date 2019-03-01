@@ -1,4 +1,4 @@
----
+﻿---
 title: XML コード コメントの追加 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -33,5 +33,5 @@ ms.locfileid: "54780499"
   
  C++ でコードを文書化する詳細については、「[C++ コメント](http://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514)」と「[XML に関するドキュメント](http://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [IntelliSense の使用](../ide/using-intellisense.md)

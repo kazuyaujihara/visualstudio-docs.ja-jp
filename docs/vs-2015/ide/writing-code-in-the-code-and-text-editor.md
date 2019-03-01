@@ -1,4 +1,4 @@
----
+﻿---
 title: コード エディターとテキスト エディターでのコードの作成 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -229,5 +229,5 @@ Visual Studio の [移動] コマンドは、コード ファイル、ファイ�
 
 -   [コード変更およびその他の履歴の検索](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Visual Studio IDE](../ide/visual-studio-ide.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: 拡張 SDK と比較して NuGet を使用した参照の追加 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -70,5 +70,5 @@ Visual Studio を対象とする NuGet 拡張機能、またはソフトウェ�
 |このメカニズムは、Visual Studio のすべてのエディションで使用できます。|Y|SDK では、Visual Studio Express から [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] まで、Visual Studio のすべてのエディションがサポートされています。|Y|NuGet では、Express から [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] まで、Visual Studio のすべてのエディションがサポートされています。|  
 |このメカニズムは、すべてのプロジェクトの種類で使用できます。|N|SDK では [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 以降の [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] アプリケーションがサポートされています。|N|許可されているプロジェクトの一覧をレビューできます。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [プロジェクト内の参照の管理](../ide/managing-references-in-a-project.md)

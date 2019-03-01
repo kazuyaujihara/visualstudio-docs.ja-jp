@@ -1,4 +1,4 @@
----
+﻿---
 title: サンク |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -58,7 +58,7 @@ ms.locfileid: "56619941"
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|このサンク (DIA SDK バージョン 8.0 でのみまたはそれ以降) を仮想テーブル内のオフセット。|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 場合は、サンクは、揮発性 (以降でのみ DIA SDK バージョン 8.0) としてマークされます。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)
 - [THUNK_ORDINAL 列挙型](../../debugger/debug-interface-access/thunk-ordinal.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: グラフィックス パイプライン ステージ |Microsoft Docs
 ms.date: 02/09/2017
 ms.topic: conceptual

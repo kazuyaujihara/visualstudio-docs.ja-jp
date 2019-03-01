@@ -1,4 +1,4 @@
----
+﻿---
 title: ターゲットのバッチの項目メタデータ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -69,7 +69,7 @@ ms.locfileid: "54769371"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [方法 : インクリメンタル ビルドを実行する](../msbuild/how-to-build-incrementally.md)   
  [バッチ](../msbuild/msbuild-batching.md)   
  [Target 要素 (MSBuild)](../msbuild/target-element-msbuild.md)   

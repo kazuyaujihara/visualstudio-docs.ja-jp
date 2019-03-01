@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: テンプレートのトラブルシューティング |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -62,7 +62,7 @@ ms.locfileid: "54793207"
   
 4.  テンプレート イベントをダブルクリックして、エラーを表示します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)   
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)

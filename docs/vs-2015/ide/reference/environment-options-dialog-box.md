@@ -1,4 +1,4 @@
----
+﻿---
 title: '[環境] ([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -47,5 +47,5 @@ ms.locfileid: "54753308"
 |タスクやタスク一覧のためのオプションの設定方法を調べます。|[[タスク一覧] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/task-list-environment-options-dialog-box.md)|  
 |既定の [ホーム] ページや [検索] ページの変更、システム ソース エディターの変更、および Internet Explorer のオプションの設定を行います。|[[Web ブラウザー] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/web-browser-environment-options-dialog-box.md)|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [[オプション] ダイアログ ボックス](../../ide/reference/options-dialog-box-visual-studio.md)

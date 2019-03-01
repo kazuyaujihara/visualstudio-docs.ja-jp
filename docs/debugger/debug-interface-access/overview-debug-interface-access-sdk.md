@@ -1,4 +1,4 @@
----
+﻿---
 title: 概要 (Debug Interface Access SDK) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -33,6 +33,6 @@ DIA SDK を使用して、Microsoft のデバッグ情報にアクセスしま�
 
  DIA SDK 内の各インターフェイスは、それ以外の場合に記載されている場合を除く別の COM オブジェクトを表します。 追加のインターフェイス、およびその他のオブジェクトが作成、明示的なクエリを使用してなど[idiadatasource::opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md)または[idiasession::findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)を呼び出すことではなく、`QueryInterface`で既存のインターフェイス ポインター。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: ヘルプ コンテンツ マネージャーのコマンド ライン引数 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -88,6 +88,6 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
   
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ヘルプ ビューアーの管理者ガイド](../ide/help-viewer-administrator-guide.md)   
  [ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)

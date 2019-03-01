@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : プロジェクトを構成して対象プラットフォームを設定する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -63,7 +63,7 @@ ms.locfileid: "54791411"
   
 -   [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] プロジェクトについては、「[/clr (共通言語ランタイムのコンパイル)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)」をご覧ください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ビルド プラットフォームについて](../ide/understanding-build-platforms.md)   
  [/platform (C# コンパイラ オプション)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
  [64 ビット アプリケーション](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   

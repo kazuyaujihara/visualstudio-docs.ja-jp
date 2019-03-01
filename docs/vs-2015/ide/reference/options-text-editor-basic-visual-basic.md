@@ -1,4 +1,4 @@
----
+﻿---
 title: '[オプション]、[テキスト エディター]、[基本] (Visual Basic) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -72,6 +72,6 @@ ms.locfileid: "54800712"
  **[参照とキーワードの強調表示を有効にする]**  
  テキスト エディターでは、`If..Then`、`While...End While`、`Try...Catch...Finally` などの句のシンボルのすべてのインスタンス、またはすべてのキーワードを強調表示できます。 強調表示された参照間またはキーワード間を移動するには、Ctrl キーと Shift キーを押しながら下方向キーを押すか、Ctrl キーと Shift キーを押しながら上方向キーを押します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)   
  [[オプション]、[テキスト エディター]、[すべての言語]、[タブ]](../../ide/reference/options-text-editor-all-languages-tabs.md)

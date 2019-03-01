@@ -1,4 +1,4 @@
----
+﻿---
 title: Error タスク | Microsoft ドキュメント
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -66,6 +66,6 @@ ms.locfileid: "54767485"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)

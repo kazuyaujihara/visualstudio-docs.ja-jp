@@ -1,4 +1,4 @@
----
+﻿---
 title: ツールボックス、[HTML] タブ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -253,7 +253,7 @@ ms.locfileid: "54780425"
   
  詳細については、次を参照してください。 [HTML Div コントロール](http://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995)、 [Label Web サーバー コントロールの概要](http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac)、および<xref:System.Web.UI.WebControls.Label>します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ツールボックス](../../ide/reference/toolbox.md)   
  [[標準] タブ (ツールボックス)](http://msdn.microsoft.com/library/35e9320d-fcbd-474b-8b8f-55705e9a1870)   
  [HTML コントロール](http://msdn.microsoft.com/library/83bc6f7e-a2b5-4fe9-9a34-eb34aef673be)

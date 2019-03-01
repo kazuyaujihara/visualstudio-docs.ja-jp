@@ -1,4 +1,4 @@
----
+﻿---
 title: 'チュートリアル: XAML デザイナーでのデータへのバインド |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -98,6 +98,6 @@ XAML デザイナーでは、アートボードと [プロパティ] ウィン�
   
      `TextBlock` コントロールに、既定値の 0 がテキストとして表示されるはずです。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
  [NIB: ダイアログ ボックスの値コンバーターを追加します。](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

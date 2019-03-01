@@ -1,4 +1,4 @@
----
+﻿---
 title: '[Web ブラウザー] ([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -64,7 +64,7 @@ ms.locfileid: "54755314"
 > [!NOTE]
 >  [ブラウザーの選択] ダイアログ ボックスで、別の外部 Web ブラウザーを使用して Visual Studio 内部 Web ブラウザー (Internet Explorer のいずれかのバージョン) を置き換えます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)   
  [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)   
  [HTML デザイナー](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)

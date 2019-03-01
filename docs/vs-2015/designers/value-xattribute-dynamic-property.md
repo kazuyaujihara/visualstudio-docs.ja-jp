@@ -1,4 +1,4 @@
----
+﻿---
 title: Value (XAttribute 動的プロパティ) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -43,7 +43,7 @@ attrib.Value
 ## <a name="remarks"></a>コメント  
  このプロパティは、<xref:System.Xml.Linq.XAttribute.Value%2A> クラスの <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> プロパティに相当します。ただし、この動的プロパティは変更通知もサポートします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=fullName>   
  [XAttribute クラスの動的プロパティ](../designers/xattribute-class-dynamic-properties.md)   
  [属性](../designers/attribute-xelement-dynamic-property.md)

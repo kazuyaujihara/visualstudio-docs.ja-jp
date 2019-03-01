@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: クラス デザイナーを使用して型を作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -95,7 +95,7 @@ Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクト�
   
      終了後、カスタム属性が型に適用されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [方法: 型の間の継承を作成する (クラス デザイナー)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
  [方法: 型の間の関連付けを作成する (クラス デザイナー)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [型のメンバーの作成と構成 (クラス デザイナー)](../ide/creating-and-configuring-type-members-class-designer.md)   

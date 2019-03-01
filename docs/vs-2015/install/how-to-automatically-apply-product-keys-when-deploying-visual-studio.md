@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: Visual Studio 2015 をデプロイするときに、プロダクト キーを自動的に適用 |Microsoft Docs'
 titleSuffix: ''
 ms.date: 11/15/2016

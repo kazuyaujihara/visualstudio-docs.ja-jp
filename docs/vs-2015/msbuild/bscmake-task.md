@@ -1,4 +1,4 @@
----
+﻿---
 title: BscMake タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -51,5 +51,5 @@ ms.locfileid: "54777153"
   
 ## <a name="remarks"></a>解説  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

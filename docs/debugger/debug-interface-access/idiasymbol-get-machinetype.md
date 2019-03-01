@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasymbol::get_machinetype |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -41,6 +41,6 @@ HRESULT get_machineType ( 
 > [!NOTE]
 >  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [CV_CPU_TYPE_e 列挙型](../../debugger/debug-interface-access/cv-cpu-type-e.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

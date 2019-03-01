@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 項目テンプレートを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -157,7 +157,7 @@ ms.locfileid: "54788250"
   
 8.  .zip ファイルをコピーして、ユーザーの項目テンプレートの場所に貼り付けます。 Visual Studio 2015 での既定のディレクトリは、..\Users\\<ユーザー名\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\ です。 詳細については、「方法 : プロジェクト テンプレートと項目テンプレートを配置して整理する」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [方法 : 複数ファイルの項目テンプレートを作成する](../ide/how-to-create-multi-file-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)

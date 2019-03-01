@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: ビルド ログ ファイルを表示、保存、および構成する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -56,7 +56,7 @@ Visual Studio IDE でプロジェクトをビルドしたら、**[出力]** ウ�
     > [!IMPORTANT]
     >  **[出力]** ウィンドウ (すべてのプロジェクト) と *ProjectName*.txt ファイル (C++ プロジェクトのみ) に変更を反映するには、プロジェクトをリビルドする必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

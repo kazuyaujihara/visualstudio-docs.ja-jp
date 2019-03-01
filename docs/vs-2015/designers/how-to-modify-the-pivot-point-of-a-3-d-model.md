@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 3-D モデルのピボット ポイントの変更 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -49,6 +49,6 @@ ms.locfileid: "54774102"
   
    ![変更されたピボット ポイントを含む家のモデル](../designers/media/digit-modified-model.png "Digit-Modified-Model")  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [方法: 基本的な 3-D モデルを作成します。](../designers/how-to-create-a-basic-3-d-model.md)   
  [モデル エディター](../designers/model-editor.md)

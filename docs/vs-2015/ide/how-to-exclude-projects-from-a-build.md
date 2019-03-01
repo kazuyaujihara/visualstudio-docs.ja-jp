@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: ビルドからプロジェクトを除外する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -55,7 +55,7 @@ ms.locfileid: "54780127"
   
 7.  メニュー バーから、**[ビルド]**、**[ソリューションのリビルド]** の順に選びます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ビルド構成について](../ide/understanding-build-configurations.md)   
  [方法 : 構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)   
  [方法: 複数の構成を同時にビルドする](../ide/how-to-build-multiple-configurations-simultaneously.md)

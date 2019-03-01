@@ -1,4 +1,4 @@
----
+﻿---
 title: アプリケーション プロパティ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -56,7 +56,7 @@ Visual Basic、C#、および F# アプリケーションの全般的なアプ�
 ## <a name="in-this-section"></a>このセクションの内容  
  [方法 : アプリケーション アイコンを指定する (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [プロジェクト デザイナーの概要](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   

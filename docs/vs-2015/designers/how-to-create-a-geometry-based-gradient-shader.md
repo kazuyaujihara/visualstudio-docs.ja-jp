@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: ジオメトリ ベースのグラデーション シェーダーを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -71,7 +71,7 @@ ms.locfileid: "54797538"
   
  シェーダーを 3-D モデルに適用する方法の詳細については、次を参照してください。[方法。シェーダーを 3-D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [方法: シェーダーを 3-D モデルに適用します。](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)   
  [方法: 3-D 地形をモデル](../designers/how-to-model-3-d-terrain.md)   

@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: ClickOnce アプリケーションをデバッグ アクセス許可の制限 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual

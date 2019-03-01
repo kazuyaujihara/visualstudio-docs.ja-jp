@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: Visual Studio Tools for Office ランタイム再頒布可能パッケージをインストールする方法'
 titleSuffix: ''
 ms.custom: seodec18

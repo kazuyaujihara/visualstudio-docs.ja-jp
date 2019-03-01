@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : C# リファクタリング スニペットを復元する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -56,7 +56,7 @@ C# リファクタリング操作は、次のディレクトリにあるコー�
   
 6.  **[コード スニペット ディレクトリ]** ダイアログ ボックスの **[開く]** をクリックし、コード スニペット マネージャーの **[OK]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Visual C# のコード スニペット](../ide/visual-csharp-code-snippets.md)   
  [リファクタリング (C#)](../csharp-ide/refactoring-csharp.md)   
  [コード スニペット](../ide/code-snippets.md)

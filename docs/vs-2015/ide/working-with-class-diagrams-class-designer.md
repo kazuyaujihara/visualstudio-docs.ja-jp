@@ -1,4 +1,4 @@
----
+﻿---
 title: クラス ダイアグラムの使用 (クラス デザイナー) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -66,7 +66,7 @@ ms.locfileid: "54834101"
   
  クラス ダイアグラムから図形を削除する方法について説明します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)   
  [方法: クラス ダイアグラムをカスタマイズする (クラス デザイナー)](../ide/how-to-customize-class-diagrams-class-designer.md)   
  [方法: クラス ダイアグラムから型シェイプを削除する方法 (クラス デザイナー)](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

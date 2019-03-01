@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Basic での警告の構成 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -119,7 +119,7 @@ ms.locfileid: "54763234"
   
  ID: 42029、42031  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [例外処理アシスタント ダイアログ ボックス](../debugger/exception-assistant-dialog-box.md)   
  [エラーの種類](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
  [Try...Catch...Finally ステートメント](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   

@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: エディターの Windows の管理 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -56,7 +56,7 @@ ms.locfileid: "54761641"
   
      エディターの新しいタブ付きインスタンスが追加されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [エディターのカスタマイズ](../ide/customizing-the-editor.md)   
  [コードの作成](../ide/writing-code-in-the-code-and-text-editor.md)   
  [ウィンドウ レイアウトをカスタマイズする](../ide/customizing-window-layouts-in-visual-studio.md)

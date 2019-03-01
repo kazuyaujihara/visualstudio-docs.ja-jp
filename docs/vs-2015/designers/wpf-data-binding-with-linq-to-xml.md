@@ -1,4 +1,4 @@
----
+﻿---
 title: LINQ to XML による WPF のデータ バインディング | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -36,5 +36,5 @@ ms.locfileid: "54769508"
   
  <xref:System.Xml.Linq.XAttribute>  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [高度な LINQ to XML プログラミング](http://msdn.microsoft.com/library/88c4a6ea-700b-4468-9a29-0ea18fc63dd0)

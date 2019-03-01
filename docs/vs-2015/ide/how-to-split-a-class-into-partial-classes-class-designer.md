@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 1 つのクラスを複数の部分クラスに分割する (クラス デザイナー) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -75,7 +75,7 @@ public partial class Employee
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [部分クラスと部分メソッド](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)   
  [partial (型)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)   
  [partial (メソッド) (C# リファレンス)](http://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137)   

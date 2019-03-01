@@ -1,4 +1,4 @@
----
+﻿---
 title: ユーザー インターフェイスの設計 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -28,6 +28,6 @@ Visual Studio のさまざまなツールを使用して、アプリケーショ
 |Visual Studio での DirectX アプリケーションの開発。|[ゲームとアプリケーション用の 3D アセットの操作](../designers/working-with-3-d-assets-for-games-and-apps.md)|  
 |プログラムで使用可能な標準アイコン。|[Visual Studio Image Library](../designers/the-visual-studio-image-library.md)|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [チュートリアル : 簡単なアプリケーションの作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
  [Visual Studio Image Library](../designers/the-visual-studio-image-library.md)

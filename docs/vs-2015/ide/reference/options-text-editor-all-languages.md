@@ -1,4 +1,4 @@
----
+﻿---
 title: '[オプション]、[テキスト エディター]、[すべての言語] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -96,7 +96,7 @@ ms.locfileid: "54802559"
  [ナビゲーション バー]  
  選択すると、コード エディターの上部に**ナビゲーション バー**が表示されます。 そのドロップダウンの **[オブジェクト]** 一覧と **[メンバー]** 一覧では、コードの特定のオブジェクトを選択したり、そのメンバーから選択したり、コード エディターで選択したメンバーの宣言に移動したりできます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [[オプション]、[テキスト エディター]、[すべての言語]、[タブ]](../../ide/reference/options-text-editor-all-languages-tabs.md)   
  [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)   
  [IntelliSense の使用](../../ide/using-intellisense.md)

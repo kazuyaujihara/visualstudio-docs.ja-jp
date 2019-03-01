@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasymbol::get_lexicalparent |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -46,6 +46,6 @@ HRESULT get_lexicalParent ( 
 
  親の構文が記載されているように表示される可能なシンボル[シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasymbol::get_parambasepointerregisterid |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -52,3 +52,4 @@ HRESULT get_paramBasePointerRegisterId ( 
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+  

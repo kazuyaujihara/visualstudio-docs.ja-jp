@@ -1,4 +1,4 @@
----
+﻿---
 title: イミディエイト ウィンドウ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -123,7 +123,7 @@ ms.locfileid: "54802675"
   
 2.  **[出力]** ウィンドウのテキスト領域で右クリックし、**[例外メッセージ]** をクリックして選択または選択解除します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [デバッガーでのコード間の移動](../../debugger/navigating-through-code-with-the-debugger.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [Visual Studio でのデバッグ](../../debugger/debugging-in-visual-studio.md)   

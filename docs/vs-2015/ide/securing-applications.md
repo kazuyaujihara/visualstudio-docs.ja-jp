@@ -1,4 +1,4 @@
----
+﻿---
 title: アプリケーションの保護 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -66,5 +66,5 @@ ms.locfileid: "54800767"
  [Windows フォームのセキュリティ](http://msdn.microsoft.com/library/932d438a-5285-46d8-a958-8c93d0ad6cae)  
  Windows フォームのセキュリティ実装の概要を説明します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [セキュリティ](../ide/security-in-visual-studio.md)

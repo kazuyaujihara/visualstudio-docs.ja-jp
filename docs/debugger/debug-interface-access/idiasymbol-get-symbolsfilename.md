@@ -1,4 +1,4 @@
----
+﻿---
 title: Idiasymbol::get_symbolsfilename |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

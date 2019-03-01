@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: クラス ダイアグラム (クラス デザイナー) のカスタマイズ |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -147,7 +147,7 @@ ms.locfileid: "54781051"
   
      シェイプがダイアグラムから削除され、基礎となるコードはプロジェクトから削除されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)   
  [方法: メンバー表記と関連付け表記の間で変更する (クラス デザイナー)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)   
  [方法: 既存の型を表示する (クラス デザイナー)](../ide/how-to-view-existing-types-class-designer.md)   

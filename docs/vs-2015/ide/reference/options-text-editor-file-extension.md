@@ -1,4 +1,4 @@
----
+﻿---
 title: '[オプション]、[テキスト エディター]、[ファイル拡張子] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -56,5 +56,5 @@ ms.locfileid: "54755007"
  **[拡張子のないファイルのオプション]**  
  **[エディター]** と同じ一覧を提供します。 ファイル拡張子のない文書を開く IDE のエディターまたはデザイナーを選択します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [方法 : エディター モードを管理する](../../ide/how-to-manage-editor-modes.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: VSTU によって作成されるプロジェクト ファイルのカスタマイズ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -69,5 +69,5 @@ public class ProjectFileHook
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [例: ログのコールバック](../cross-platform/share-the-unity-log-callback-with-vstu.md)

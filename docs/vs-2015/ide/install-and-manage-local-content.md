@@ -1,4 +1,4 @@
----
+﻿---
 title: ローカル コンテンツのインストールと管理 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -124,5 +124,5 @@ Microsoft ヘルプ ビューアーを使用すると、ソフトウェア開発
   
 3.  コンテンツが移動したら、**[閉じる]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

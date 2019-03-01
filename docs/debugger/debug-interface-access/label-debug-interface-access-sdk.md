@@ -1,4 +1,4 @@
----
+﻿---
 title: ラベル (Debug Interface Access SDK) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -47,7 +47,7 @@ ms.locfileid: "56616236"
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返します`SymTagFuncDebugLabel`(の 1 つ、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)値)。|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|実行可能イメージ内でこのラベルの位置。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)
 - [シンボルの場所](../../debugger/debug-interface-access/symbol-locations.md)

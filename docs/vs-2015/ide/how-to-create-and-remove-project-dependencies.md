@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : プロジェクトの依存関係を作成および削除する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -62,7 +62,7 @@ ms.locfileid: "54799773"
   
 4.  **[依存先]** フィールドで、このプロジェクトの依存関係ではなくなった他のプロジェクトの横にあるチェック ボックスをオフにします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)   
  [ビルド構成について](../ide/understanding-build-configurations.md)   

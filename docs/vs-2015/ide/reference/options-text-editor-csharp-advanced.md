@@ -1,4 +1,4 @@
----
+﻿---
 title: '[オプション]、[テキスト エディター]、[C#]、[詳細] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -79,7 +79,7 @@ ms.locfileid: "54760018"
  using を並べ替える際に、'System' ディレクティブを先頭に配置する  
  選択すると、`System` using ディレクティブが他の using ディレクティブより前に表示されます。 詳細については、「[using の並べ替え](../../misc/sort-usings.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [XML ドキュメント コメント](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [言語固有のエディター オプションの設定](../../ide/reference/setting-language-specific-editor-options.md)   
  [Visual C# の IntelliSense](../../ide/visual-csharp-intellisense.md)

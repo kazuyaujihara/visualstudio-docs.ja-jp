@@ -1,5 +1,5 @@
----
-title: '方法: Office ソリューションを開発するコンピューターを構成する方法'
+﻿---
+title: 'Office ソリューションを開発するコンピューターを構成する方法'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:

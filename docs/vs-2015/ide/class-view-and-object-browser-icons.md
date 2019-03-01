@@ -1,4 +1,4 @@
----
+﻿---
 title: '[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -61,5 +61,5 @@ ms.locfileid: "54785050"
 |![シグナル フレンド&#47;内部シンボル](../ide/media/vxsignal-icon-diamond.gif "vxSignal_Icon_Diamond")|フレンド/内部。 プロジェクトからのみアクセスできます。|  
 |![シグナル アイコン矢印](../ide/media/vxsignal-icon-arrow.gif "vxSignal_Icon_Arrow")|ショートカット。 オブジェクトへのショートカットです。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [コードの構造の表示](../ide/viewing-the-structure-of-code.md)

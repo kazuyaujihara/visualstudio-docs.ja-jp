@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : ビルド出力ディレクトリを変更する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -41,7 +41,7 @@ ms.locfileid: "54777366"
 > [!NOTE]
 >  セットアップ プロジェクトの **[出力ファイル名]** ボックスは、プロジェクト ファイルの場所ではなく、Setup.exe ファイルの場所のみを変更します。 詳細については、「 **配置プロジェクトの [プロパティ ページ] ダイアログ ボックス ([構成プロパティ] - [ビルド])**」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [[ビルド] ページ (プロジェクト デザイナー) (C#)](../ide/reference/build-page-project-designer-csharp.md)   
  [[全般] プロパティ ページ (プロジェクト)](http://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45)   
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

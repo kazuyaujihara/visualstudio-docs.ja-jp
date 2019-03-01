@@ -1,4 +1,4 @@
----
+﻿---
 title: ドメイン固有言語ツールのユーザー インターフェイスの概要 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -50,7 +50,7 @@ ms.locfileid: "54782849"
 |シェイプとコネクタ|シェイプは、DSL ダイアグラムでのモデル要素の表示方法を指定します。コネクタは、DSL ダイアグラムでリレーションシップを表示するために使用できる線を指定します。<br /><br /> シェイプまたはコネクタを作成するには、ダイアグラムの**ダイアグラム要素**の面にツールをドラッグします。|  
 |シェイプ マップ|マップのシェイプは、ドメイン モデル ダイアグラムの図形をリンクする、表示されるドメイン クラスまたは表示するドメイン リレーションシップにコネクタの線として表示されます。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ドメイン固有言語ツールの概要](../modeling/overview-of-domain-specific-language-tools.md)   
  [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [ドメイン固有言語のカスタマイズおよび拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)

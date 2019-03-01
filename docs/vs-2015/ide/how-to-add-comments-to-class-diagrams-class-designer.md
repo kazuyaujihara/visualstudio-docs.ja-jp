@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: クラス ダイアグラム (クラス デザイナー) にコメントを追加する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -37,7 +37,7 @@ ms.locfileid: "54802423"
   
 2.  ダイアグラムの新しいコメントのシェイプをクリックし、テキストを入力します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)   
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)   
  [方法: クラス ダイアグラムをカスタマイズする (クラス デザイナー)](../ide/how-to-customize-class-diagrams-class-designer.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: MSBuild の追加のリソース | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -41,7 +41,7 @@ ms.locfileid: "54752502"
  [Visual Studio MSBuild フォーラム](http://go.microsoft.com/fwlink/?LinkId=48931)  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 専用のコミュニティ フォーラム。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [MSBuild](msbuild.md)   
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)

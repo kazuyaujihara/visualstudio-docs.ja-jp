@@ -1,4 +1,4 @@
----
+﻿---
 title: QuickWatch コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -46,7 +46,7 @@ Debug.QuickWatchq [text]
 >Debug.QuickWatch  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [方法: [クイック ウォッチ] ダイアログ ボックスを使用する](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   

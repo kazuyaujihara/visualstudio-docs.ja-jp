@@ -1,4 +1,4 @@
----
+﻿---
 title: '[参照設定] ページ (プロジェクト デザイナー) (Visual Basic) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -87,7 +87,7 @@ ms.locfileid: "54795453"
   
 -   `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">` など、XML 名前空間。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [(NIB) 方法:追加または参照の追加 ダイアログ ボックスを使用して参照を削除します。](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [方法 : インポートした名前空間を追加または削除する (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
  [NIB: [Web 参照の追加] ダイアログ ボックス](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)   

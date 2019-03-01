@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 複数のプラットフォームを対象とするプロジェクトを構成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -63,7 +63,7 @@ ms.locfileid: "54785827"
   
    ソリューション レベルのプラットフォームをたとえば [!INCLUDE[vcprx64](../includes/vcprx64-md.md)] に設定し、そのソリューション内のプロジェクトでは同じプラットフォームを対象としない、といったことができます。 また、ソリューション内の複数のプロジェクトで、それぞれ異なるプラットフォームを対象とすることもできます。 いずれかの状況の場合は、混乱を避けるためにわかりやすい名前で新しい構成を作成することをお勧めします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [方法 : 構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)   
  [ビルド構成について](../ide/understanding-build-configurations.md)   
  [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
