@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51810482"
 ---
-# <a name="analyze-net-framework-memory-issues"></a>.Net Framework のメモリ分析の問題
+# <a name="analyze-net-framework-memory-issues"></a>.NET Framework のメモリ分析の問題
 Visual Studio マネージド メモリ アナライザーを使用して、.NET Framework コードでのメモリ リークおよび非効率的なメモリの使用を検出します。 対象コードの最低限の .NET Framework バージョンは .NET Framework 4.5 です。  
   
  メモリ分析ツールで情報を分析する*ダンプ ヒープ データ付きファイル*をアプリのメモリ内のオブジェクトのコピー。 ダンプ (.dmp) ファイルは、Visual Studio IDE から収集することも、その他のシステム ツールを使用して収集することもできます。  
