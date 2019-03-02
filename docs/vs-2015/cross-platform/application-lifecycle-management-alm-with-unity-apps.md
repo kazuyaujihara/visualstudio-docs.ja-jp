@@ -105,7 +105,7 @@ ms.locfileid: "54778592"
 |[コード クローン検出を使用した重複コードの検出](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|  
 |[マネージド コードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|  
 |[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|いいえ|[Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity Web サイト)。|  
-|[.Net Framework のメモリ分析の問題](../misc/analyze-dotnet-framework-memory-issues.md)|いいえ|Visual Studio ツールには、(Unity で使用するような) プロファイリング用の Mono フレームワークへのフックはありません。 [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity ドキュメント)。|  
+|[.NET Framework のメモリ分析の問題](../misc/analyze-dotnet-framework-memory-issues.md)|いいえ|Visual Studio ツールには、(Unity で使用するような) プロファイリング用の Mono フレームワークへのフックはありません。 [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity ドキュメント)。|  
   
 ## <a name="release-management"></a>リリース管理  
  参照リンク: **[リリース管理による配置の自動化](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
