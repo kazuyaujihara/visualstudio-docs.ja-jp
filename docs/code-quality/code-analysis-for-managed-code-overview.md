@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909142"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222598"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio でマネージ コード用の静的コード分析の概要
 
-Visual Studio 2017 は、2 つの方法でマネージ コードのコード分析を実行できます: で*FxCop*スタティック分析、マネージ アセンブリの詳細のモダン*Roslyn アナライザー*します。 このトピックでは、FxCop の静的コード分析について説明します。 コード アナライザーを使用してコードの分析の詳細については、次を参照してください。[概要の Roslyn アナライザー](../code-quality/roslyn-analyzers-overview.md)します。
+Visual Studio は 2 つの方法でマネージ コードのコード分析を実行することができます: で*FxCop*スタティック分析、マネージ アセンブリの詳細のモダン*Roslyn アナライザー*します。 このトピックでは、FxCop の静的コード分析について説明します。 コード アナライザーを使用してコードの分析の詳細については、次を参照してください。[概要の Roslyn アナライザー](../code-quality/roslyn-analyzers-overview.md)します。
 
 マネージド コードのコード分析を使用すると、マネージド アセンブリを分析し、Microsoft .NET Framework デザイン ガイドラインに規定されたプログラミングやデザインに関する規則違反など、アセンブリに関する情報をレポートとして得ることができます。
 
@@ -59,7 +59,7 @@ Public class MyClass
 詳細については、次を参照してください。[警告を抑制する](../code-quality/in-source-suppression-overview.md)します。
 
 > [!NOTE]
-> プロジェクトを Visual Studio 2017 に移行する場合にコード分析の警告の数が多いを突然直面する可能性があります。 場合は、警告を修正し、すぐに生産性を向上する準備ができて、*ベースライン*プロジェクトの分析の状態。 **分析**メニューの**コード分析を実行し、アクティブな懸案事項の抑制**です。
+> Visual Studio 2017 または Visual Studio 2019 にプロジェクトを移行する場合にコード分析の警告の数が多いを突然直面する可能性があります。 場合は、警告を修正し、すぐに生産性を向上する準備ができて、*ベースライン*プロジェクトの分析の状態。 **分析**メニューの**コード分析を実行し、アクティブな懸案事項の抑制**です。
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>チェックイン ポリシーの一部としてのコード分析の実行
 

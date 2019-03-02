@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30eb3183d261297295d9d6d3715f3683e4b6ee34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950228"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223703"
 ---
 # <a name="map-dependencies-with-code-maps"></a>コード マップで依存関係をマッピングします。
 
@@ -47,7 +47,7 @@ ms.locfileid: "55950228"
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>インストール コード マップやライブ依存関係検証
 
-Visual Studio 2017 では、コード マップを作成するに最初にインストール、**コード マップ**と**ライブ依存関係検証**コンポーネント。
+Visual Studio でコード マップを作成を最初インストール、**コード マップ**と**ライブ依存関係検証**コンポーネント。
 
 1. 開いている**Visual Studio インストーラー**します。 開くことができます、Windows のスタート メニューから Visual Studio 内で、選択して**ツール** > **ツールの入手と機能**します。
 

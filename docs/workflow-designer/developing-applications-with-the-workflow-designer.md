@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1b746e862385395089fe0ccf3bd2d4bfdb8d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909246"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223287"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>ワークフロー デザイナーでアプリを開発する
 
@@ -29,7 +29,7 @@ ms.locfileid: "55909246"
 
 ## <a name="install-windows-workflow-foundation"></a>Windows Workflow Foundation をインストールします。
 
-ワークフロー プロジェクトのテンプレートを使用して、Visual Studio 2017 で、最初にインストール、 **Windows Workflow Foundation**コンポーネント。
+ワークフロー プロジェクトのテンプレートを使用して、Visual Studio で、最初にインストール、 **Windows Workflow Foundation**コンポーネント。
 
 1. Visual Studio インストーラーを開きます。 簡単に開くことを選択して**ツール** > **ツールの入手と機能**Visual Studio でします。
 
@@ -37,7 +37,7 @@ ms.locfileid: "55909246"
 
 1. 下へスクロールして、**開発アクティビティ**カテゴリと選択し、 **Windows Workflow Foundation**コンポーネント。
 
-   ![Visual Studio 2017 for Windows Workflow Foundation のコンポーネント](media/windows-workflow-foundation-component.png)
+   ![Visual Studio for Windows Workflow Foundation のコンポーネント](media/windows-workflow-foundation-component.png)
 
 1. **[変更]** を選択します。
 

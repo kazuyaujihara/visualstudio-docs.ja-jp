@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6370bdcba922ec1c1b358a773e4f891ea41230e3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: cb45d8e53b1ec24dceed7845bc344822c6a6830d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318046"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223080"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 テキスト テンプレートを使用したデザイン時コード生成
 デザイン時 T4 テキスト テンプレートでは、Visual Studio プロジェクトでプログラム コードやその他のファイルを生成できます。 通常、*モデル*のデータに従って生成されるコードが異なるようにテンプレートを記述します。 モデルは、アプリケーションの要件に関する重要な情報を含むファイルまたはデータベースです。
@@ -294,7 +294,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  Visual Studio Modeling SDK をインストールする場合、すべてのテンプレートのビルドを実行するたびに自動的に変換されることができます。 そのためには、プロジェクト ファイル (.csproj または .vbproj) をテキスト エディターで編集し、ファイルの末尾付近の、他の `<import>` ステートメントよりも後に次のコード行を追加します。
 
 > [!NOTE]
-> Visual Studio 2017 では、Visual Studio の特定の機能をインストールするときに、テキスト テンプレート変換の SDK と Visual Studio Modeling SDK が自動的にインストールされます。 詳細については、[このブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)を参照してください。
+> Visual Studio の特定の機能をインストールするときに、テキスト テンプレート変換の SDK および Visual Studio Modeling SDK が自動的にインストールします。 詳細については、[このブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)を参照してください。
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />

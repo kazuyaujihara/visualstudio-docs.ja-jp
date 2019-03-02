@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 958526ccd6145813589167c639cb10550e9e8869
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7f6e43b27695e582e75b27258875f2276a558ca1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316003"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223378"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio での設計向けの新機能
 
@@ -65,7 +65,7 @@ UML デザイナー向けの重要なユーザーの場合は、UML のニーズ
 
 ## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />アーキテクチャ ツールとモデリング ツールのエディションのサポート
 
-Visual Studio 2017 は、いくつかのエディションで使用できます。 すべては、アーキテクチャとモデリング ツールのサポートを提供します。 各ツールの利用可能情報を次の表に示します。
+Visual Studio は、いくつかのエディションで使用できます。 すべては、アーキテクチャとモデリング ツールのサポートを提供します。 各ツールの利用可能情報を次の表に示します。
 
 |**機能**|**Enterprise edition**|**Professional edition**|**Community エディション**|
 |-|-|-|-|

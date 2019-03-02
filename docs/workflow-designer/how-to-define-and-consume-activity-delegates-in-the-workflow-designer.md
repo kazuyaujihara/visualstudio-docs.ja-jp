@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29475ef3b5bf25c2fca67d6aa7f4708787350cb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914777"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222884"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>方法: ワークフロー デザイナーでアクティビティ デリゲートを定義および使用する
 
@@ -26,7 +26,7 @@ ms.locfileid: "55914777"
 2. **新しいプロジェクト**ダイアログ ボックスで、**ワークフロー** 、左側のカテゴリを選び、**ワークフロー コンソール アプリケーション**プロジェクト テンプレート。 (必要な) 場合、プロジェクトの名前を指定し、をクリックして**Ok**します。
 
    > [!NOTE]
-   > 表示されない場合、**ワークフロー**カテゴリで、最初のインストール、 **Windows Workflow Foundation** Visual Studio 2017 のコンポーネント。 詳細については、次を参照してください。 [Windows Workflow Foundation のインストール](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)します。
+   > 表示されない場合、**ワークフロー**カテゴリで、最初のインストール、 **Windows Workflow Foundation** Visual Studio のコンポーネント。 詳細については、次を参照してください。 [Windows Workflow Foundation のインストール](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)します。
 
 3. プロジェクトを右クリックして**ソリューション エクスプ ローラー**選択**追加** > **新しい項目の**します。 選択、**ワークフロー**カテゴリ、および選択し、**アクティビティ**項目テンプレート。 新しいアクティビティの名前**MyForEach.xaml**選び**OK**します。
 
