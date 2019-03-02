@@ -7,18 +7,18 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d4a5b28686b2af356d1247bf9690708739fea8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 82f42ba3c984d53952bed2396ca1218883977204
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907855"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222559"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>規則セットを使用して、実行対象の C++ 規則の指定
 
 Visual Studio で作成し、カスタムの変更*ルール セット*コード分析に関連付けられている特定のプロジェクトのニーズを満たします。 既定の規則セットが格納されている`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`します。
 
-**Visual Studio 2017 バージョン 15.7**任意のテキストを使用してカスタム規則セット エディターを作成し、これらを使用しているシステムを構築するものに関係なくコマンド ライン ビルドで適用することができます。 詳細については、次を参照してください。 [/analyze: ruleset](/cpp/build/reference/analyze-code-analysis)します。
+**Visual Studio 2017 バージョン 15.7 以降**任意のテキストを使用してカスタム規則セット エディターを作成し、これらを使用しているシステムを構築するものに関係なくコマンド ライン ビルドで適用することができます。 詳細については、次を参照してください。 [/analyze: ruleset](/cpp/build/reference/analyze-code-analysis)します。
 
 Visual Studio でカスタム C++ 規則を作成するには、は、C と C++ プロジェクトが Visual Studio IDE で開く必要があります。 規則セット エディターで、標準の規則セットを開くと、追加または特定の規則を削除し、必要に応じて変更コード分析ルールに違反したことを決定するときに発生するアクション。
 

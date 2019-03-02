@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5248609ed51f82cfbc69c883063a032ab48813f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317368"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223196"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>依存関係図を使用したコードの検証
 
@@ -49,7 +49,7 @@ ms.locfileid: "56317368"
 - 依存関係図をモデリング プロジェクトを含むソリューションです。 この依存関係図を検証する c# または Visual Basic のプロジェクトの成果物にリンクする必要があります。 参照してください[コードから依存関係図を作成する](../modeling/create-layer-diagrams-from-your-code.md)します。
 
 > [!NOTE]
-> Visual Studio 2017 で .NET Core プロジェクトでは、依存関係図はサポートされていません。
+> Visual Studio で .NET Core プロジェクトでは、依存関係図はサポートされていません。
 
 この機能をサポートする Visual Studio のエディションを確認するを参照してください。 [Edition のサポート アーキテクチャとモデリング ツール](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)します。
 
@@ -235,6 +235,6 @@ Web サイト、Office ドキュメント、プレーン テキスト ファイ�
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio 2017 でのリアルタイム依存関係の検証](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
+- [Visual Studio でのリアルタイム依存関係検証](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)
 - [ビデオ:リアルタイムでアーキテクチャ依存関係を検証します。](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

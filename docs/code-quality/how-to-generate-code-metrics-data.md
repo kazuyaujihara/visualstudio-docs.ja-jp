@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007359"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223729"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>方法: コード メトリックス データを生成します。
 
@@ -206,7 +206,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 ### <a name="previous-versions"></a>以前のバージョン
 
-など、Visual Studio 2015、Visual Studio の以前のバージョンにも呼び出されたコマンド ライン コード メトリックス ツールが含まれている*Metrics.exe*します。 このツールの以前のバージョンは、アセンブリに基づく分析は、バイナリ分析を行いました。 新しいツールでは、代わりにソース コードを分析します。 結果はの以前のバージョンによって生成されたものにさまざまな新しいコマンド ライン コード メトリックス ツールは、ソース コード ベースであるため*Metrics.exe*と Visual Studio 2017 IDE 内で。
+Visual Studio 2015 にも呼び出されたコマンド ライン コード メトリックス ツールが含まれている*Metrics.exe*します。 このツールの以前のバージョンは、アセンブリに基づく分析は、バイナリ分析を行いました。 新しい*Metrics.exe*ツールが代わりにソース コードを分析します。 新しい*Metrics.exe*ツールは、ソース コードに基づく、コマンド ラインのコード メトリックスの結果は異なると以前のバージョンの Visual Studio IDE によって生成された*Metrics.exe*します。
 
 コマンド ライン コード メトリックスの新しいツールは、ソリューションとプロジェクトを読み込むことがあれば、ソース コードのエラーがある場合でも、メトリックを計算します。
 
@@ -214,7 +214,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 `LinesOfCode`メトリックが正確と新しいコマンド ライン コード メトリックス ツールで信頼性が向上します。 Codegen の違いに依存しないし、ツールセットやランタイムの変更されたときに変更されません。 新しいツールでは、空白行とコメントを含め、コードの実際の行数をカウントします。
 
-などの他のメトリック`CyclomaticComplexity`と`MaintainabilityIndex`として以前のバージョンのと同次数式を使用して*Metrics.exe*、新しいツールの数をカウントするが、 `IOperations` (論理ソース命令) 中間の代わりに言語 (IL) の手順です。 数値が以前のバージョンの若干異なる場合があります*Metrics.exe*と Visual Studio 2017 IDE のコード メトリックスの結果から。
+などの他のメトリック`CyclomaticComplexity`と`MaintainabilityIndex`として以前のバージョンのと同次数式を使用して*Metrics.exe*、新しいツールの数をカウントするが、 `IOperations` (論理ソース命令) 中間の代わりに言語 (IL) の手順です。 数値はおよび以前のバージョンの Visual Studio IDE によって生成されたものと少し異なりますなります*Metrics.exe*します。
 
 ## <a name="see-also"></a>関連項目
 

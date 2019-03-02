@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d085ca32363888e2c59748aa5fdfd19eb190d5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24567262eff261638a6004817d4d0eef51537fd6
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316796"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223508"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>ドメイン固有言語の概要
 
 このトピックを定義すると、Visual Studio Modeling SDK で作成したドメイン固有言語 (DSL) を使用して基本的な概念について説明します。
 
 > [!NOTE]
-> Visual Studio 2017 では、Visual Studio の特定の機能をインストールするときに、テキスト テンプレート変換の SDK と Visual Studio Modeling SDK が自動的にインストールされます。 詳細については、[このブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)を参照してください。
+> Visual Studio の特定の機能をインストールするときに、テキスト テンプレート変換の SDK および Visual Studio Modeling SDK が自動的にインストールします。 詳細については、[このブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)を参照してください。
 
 作業することをお勧めの Dsl に慣れていない場合、 **DSL ツール ラボ**、このサイトで入手できます。[Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
