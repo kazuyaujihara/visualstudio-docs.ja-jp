@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8fa5a78fbf1852e49da8a4cda59398c302029430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8604164a329dbccd7e93a39b97fcdb674eccd83e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909948"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796804"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>チュートリアル: C# で単純なアプリケーションを作成する
 
@@ -32,9 +32,19 @@ Visual Studio を初めて起動すると、サインインが求められます
 
 ![設定の選択ダイアログ ボックス](../media/exploreide-settings.png)
 
+::: moniker range="vs-2017"
+
 Visual Studio を起動すると、ツール ウィンドウ、メニューとツール バー、メイン ウィンドウ領域が表示されます。 ツール ウィンドウは、アプリケーション ウィンドウの左側および右側にドッキングされており、上部には **クイック起動**、メニュー バー、および標準ツール バーがあります。 アプリケーション ウィンドウの中央には、 **スタート ページ**が表示されます。 ソリューションかプロジェクトが読み込まれると、 **[スタート ページ]** がある領域にエディターとデザイナーが表示されます。 アプリケーションを開発する場合は、ほとんどの時間をこの中央の領域での作業に費やします。
 
-![全般設定が適用された IDE](../media/exploreide-idewithgeneralsettings.png)
+![全般設定が適用された Visual Studio 2017 IDE](../media/exploreide-idewithgeneralsettings.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Visual Studio を起動するときに、**[開始]** ウィンドウが最初に表示されます。 **[コードなしで続行]** を選択して、開発環境を開きます。 ツール ウィンドウ、メニューとツール バー、メイン ウィンドウ領域が表示されます。 ツール ウィンドウは、アプリケーション ウィンドウの左側および右側にドッキングされており、上部には **クイック起動**、メニュー バー、および標準ツール バーがあります。 ソリューションまたはプロジェクトを読み込むと、アプリケーション ウィンドウの中央スペースにエディターとデザイナーが表示されます。 アプリケーションを開発する場合は、ほとんどの時間をこの中央の領域での作業に費やします。
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>プロジェクトの作成
 

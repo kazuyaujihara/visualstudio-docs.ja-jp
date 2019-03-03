@@ -8,46 +8,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23522f699d6fbb15e2f626e22e990163163eab5e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7039422a6934eb4dfa007d216fdc0a70e0da32e9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940337"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636594"
 ---
 # <a name="user-vsperfcmd"></a>User (VSPerfCmd)
-**User** オプションは、プロファイリングされるプロセスを所有するアカウントのドメインとユーザー名を指定します。 このオプションは、ログオンしているユーザーとは別のユーザーがプロセスを実行している場合にのみ指定する必要があります。 プロセスの所有者は、Windows タスク マネージャーの **[プロセス]** タブの [ユーザー名] 列に表示されます。  
-  
- **User** オプションは、**Start** オプションも含むコマンド ラインでのみ指定できます。  
-  
-## <a name="syntax"></a>構文  
-  
-```cmd  
-VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `Domain`  
- ユーザーのドメインの名前。  
-  
- `UserName`  
- ユーザーの名前。  
-  
-## <a name="required-options"></a>必須オプション  
- **User** オプションは、**Start** オプションと共に指定する場合にのみ使用できます。  
-  
- **Start:** `Method`  
- 指定したプロファイル方法にプロファイラーを初期化します。  
-  
-## <a name="example"></a>例  
- **User** オプションの使用例を以下に示します。  
-  
-```cmd  
-VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /User:SYSTEM  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)
+**User** オプションは、プロファイリングされるプロセスを所有するアカウントのドメインとユーザー名を指定します。 このオプションは、ログオンしているユーザーとは別のユーザーがプロセスを実行している場合にのみ指定する必要があります。 プロセスの所有者は、Windows タスク マネージャーの **[プロセス]** タブの [ユーザー名] 列に表示されます。
+
+ **User** オプションは、**Start** オプションも含むコマンド ラインでのみ指定できます。
+
+## <a name="syntax"></a>構文
+
+```cmd
+VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
+```
+
+#### <a name="parameters"></a>パラメーター
+ `Domain` ユーザーのドメインの名前。
+
+ `UserName` ユーザーの名前。
+
+## <a name="required-options"></a>必須オプション
+ **User** オプションは、**Start** オプションと共に指定する場合にのみ使用できます。
+
+ **Start:**`Method` 指定したプロファイル方法にプロファイラーを初期化します。
+
+## <a name="example"></a>例
+ **User** オプションの使用例を以下に示します。
+
+```cmd
+VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /User:SYSTEM
+```
+
+## <a name="see-also"></a>関連項目
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)

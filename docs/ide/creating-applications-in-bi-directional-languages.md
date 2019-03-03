@@ -4,7 +4,7 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Hebrew character display, creating applications
-- bi-directional language support, about bi-directional language support
+- bidirectional language support, about bidirectional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 author: gewarren
@@ -12,25 +12,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa75ee12e09d4aa56a112a135a2e9e913b5cd39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335234"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450322"
 ---
-# <a name="create-applications-in-bi-directional-languages"></a>双方向言語のアプリケーションの作成
+# <a name="create-applications-in-bidirectional-languages"></a>双方向言語のアプリケーションの作成
 
 Visual Studio では、アラビア語やヘブライ語など、右から左に書く言語で正しくテキストが表示されるアプリケーションを作成できます。 いくつかの機能については、単にプロパティを設定するだけで済みます。 それ以外の場合は、コードで機能を実装する必要があります。
 
 > [!NOTE]
 > 双方向言語を入力したり表示したりするには、適切な言語に設定されたバージョンの Windows を使用する必要があります。 英語バージョンの Windows に適切な Language Pack をインストールする方法と、適切にローカライズされたバージョンの Windows を使用する方法があります。
 
-## <a name="types-of-applications-that-support-bi-directional-languages"></a>双方向言語をサポートするアプリケーションの種類
+## <a name="types-of-applications-that-support-bidirectional-languages"></a>双方向言語をサポートするアプリケーションの種類
 
 -  Windows アプリ
 
-   双方向テキスト、右から左への読み取り順序、およびミラー化 (ウィンドウ、メニュー、ダイアログ ボックスなどのレイアウトの反転) をサポートする、完全な双方向アプリケーションを作成できます。 ミラー化を除き、これらの機能は、既定またはプロパティ設定により使用できるようになっています。 ミラー化は、メッセージ ボックスなどいくつかの機能に対してはあらかじめサポートされています。 ただし、それ以外の場合には、ミラー化をコードで実装する必要があります。 詳しくは、「[Windows フォーム アプリケーションの双方向サポート](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)」をご覧ください。
+   双方向テキスト、右から左への読み取り順序、およびミラー化 (ウィンドウ、メニュー、ダイアログ ボックスなどのレイアウトの反転) をサポートする、完全な双方向アプリケーションを作成できます。 ミラー化を除き、これらの機能は、既定またはプロパティ設定により使用できるようになっています。 ミラー化は、メッセージ ボックスなどいくつかの機能に対してはあらかじめサポートされています。 ただし、それ以外の場合には、ミラー化をコードで実装する必要があります。 詳細については、「[Windows フォーム アプリケーションの双方向サポート](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications)」をご覧ください。
 
 -  Web アプリ
 

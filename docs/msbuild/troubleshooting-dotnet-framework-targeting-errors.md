@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c779b9f51d9b73d945d10edc2d6f80999f91536
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004489"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620292"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>.NET Framework を対象とするエラーのトラブルシューティング
 このトピックは、参照の問題が原因で発生する可能性のある MSBuild エラーと、そのエラーの解決方法について説明します。
@@ -54,4 +54,7 @@ ms.locfileid: "55004489"
 >  プロジェクトを閉じて再び開いてから、リビルドし、すべての参照が正しく解決されるようにする必要もあります。
 
 ## <a name="see-also"></a>関連項目
- [方法: .NET Framework のバージョンをターゲットにする](../ide/how-to-target-a-version-of-the-dotnet-framework.md) [.NET Framework クライアント プロファイル](/dotnet/framework/deployment/client-profile) [対象となる特定の .NET Framework バージョンの指定](../ide/visual-studio-multi-targeting-overview.md) [マルチターゲット](../msbuild/msbuild-multitargeting-overview.md)
+- [方法: .NET Framework のバージョンをターゲットにする](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [.NET Framework クライアント プロファイル](/dotnet/framework/deployment/client-profile)
+- [対象となる特定の .NET Framework バージョンの指定](../ide/visual-studio-multi-targeting-overview.md)
+- [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)

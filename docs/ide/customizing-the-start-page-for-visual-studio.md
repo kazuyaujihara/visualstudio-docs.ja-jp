@@ -1,5 +1,5 @@
 ---
-title: カスタム スタート ページのインストールまたはスタートアップ アイテムの変更
+title: スタートアップ エクスペリエンスを変更する
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,16 +13,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f367a46423c12f6e7553d81baa9229d8c7138d1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948291"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685132"
 ---
-# <a name="customize-the-start-page-for-visual-studio"></a>Visual Studio のスタート ページをカスタマイズする
+# <a name="customize-startup"></a>スタートアップをカスタマイズする
 
-Visual Studio の起動時の動作はさまざまな方法でカスタマイズでき、**[プロジェクトを開く]** ダイアログ ボックスを表示するようにしたり、最後に読み込まれたソリューションを開くようにしたりすることができます。 また、カスタム スタート ページを表示することもできます。これは、ツール ウィンドウで実行される Windows Presentation Foundation (WPF) の XAML ページで、Visual Studio 内のコマンドを実行できます。
+Visual Studio のスタートアップ エクスペリエンスは何種類かの方法でカスタマイズできます。たとえば、ご利用の最新のソリューションを開いたり、単に空の展開環境を開いたりしてそれを行います。
+
+::: moniker range="vs-2017"
+
+また、カスタム スタート ページを表示することもできます。これは、ツール ウィンドウで実行される Windows Presentation Foundation (WPF) の XAML ページで、Visual Studio 内のコマンドを実行できます。
+
+::: moniker-end
 
 ## <a name="to-change-the-startup-item"></a>スタートアップ アイテムを変更する
 
@@ -30,7 +36,19 @@ Visual Studio の起動時の動作はさまざまな方法でカスタマイズ
 
 1. **[環境]** を展開し、**[スタートアップ]** を選びます。
 
+::: moniker range="vs-2017"
+
 1. **[At startup]\(スタートアップ時\)** リストで、Visual Studio の起動後に表示するアイテムを選択します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. **[On startup, open]\(起動時に開く\)** リストで、Visual Studio の起動後に実行されるようにする動作を選択します。 **スタート ウィンドウ** (新しいプロジェクトまたは既存のプロジェクトを開くことができます)、**最新のソリューション**、または**空の環境**から選択します。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="to-show-a-custom-start-page"></a>カスタム スタート ページを表示する
 
@@ -40,15 +58,17 @@ Visual Studio SDK を使用して[独自のカスタム スタート ページ�
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>表示するカスタム スタート ページを選択する
 
-1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
+1. メニュー バーで、**[ツール]**>**[オプション]** の順に選択します。
 
 1. **[環境]** を展開し、**[スタートアップ]** を選びます。
 
 1. **[スタート ページのカスタマイズ]** の一覧で、使用するページを選択します。
 
-> [!NOTE]
+> [!TIP]
 > カスタム スタート ページのエラーによって Visual Studio がクラッシュする場合、セーフ モードで Visual Studio を起動し、既定のスタート ページを使用するように設定します。 「[/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)」をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)
+
+::: moniker-end

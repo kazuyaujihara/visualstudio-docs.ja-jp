@@ -4,24 +4,22 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Enterprise Mobility + Security の特典について説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fe6d44b64de314153d7ba00fe4540dbecf1d6ba2
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: b1d3aa39f4d3f53d10bcc692da96bfe6c50b981d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380053"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841196"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Enterprise Mobility + Security (EMS)
 
 Visual Studio Enterprise の年間クラウド サブスクリプションと標準サブスクリプションには、Enterprise Mobility + Security (EMS) が含まれます。  EMS - Azure Active Directory、Microsoft Intune、Azure Information Protection、Microsoft Advanced Threat Analytics、Microsoft Cloud App Security で ID、デバイス、アプリ、データを保護および管理できます。
 
 > [!NOTE]
-> ボリューム ライセンスを通じて複数年のサブスクリプションを購入する場合、EMS 特典は現在、最初の年にのみ利用できます。  
+> ボリューム ライセンスを通じて複数年のサブスクリプションを購入する場合、EMS 特典は現在、最初の年にのみ利用できます。
 
 ## <a name="activation-steps"></a>アクティブ化の手順
 
@@ -62,7 +60,7 @@ EMS を使うには、アカウントを設定するか、既存のアカウン�
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 | Visual Studio Dev Essentials | N/A  | 使用できません |N/A |
 
-<sup>1</sup>  *Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark が含まれます。Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services、Imagine、Microsoft Partner Network (Professional) は含まれません。*
+<sup>1</sup>  *Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark が含まれます除外:Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services、Imagine、Microsoft Partner Network (Professional) は含まれません。*
 
 <sup>2</sup>  *Microsoft Partner Network (Professional) は含まれません*
 

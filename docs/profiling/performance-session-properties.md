@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e2d85cd1417d7700841b3d035255317f2581a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959422"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624972"
 ---
 # <a name="performance-session-properties"></a>パフォーマンス セッションのプロパティ
 
@@ -38,7 +38,7 @@ ms.locfileid: "54959422"
 
 [.NET メモリの割り当てと有効期間データの収集](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [方法: パフォーマンス データ ファイル名のオプションを設定する](../profiling/how-to-set-performance-data-file-name-options.md)
+- [方法: パフォーマンス データ ファイル名のオプションを設定する](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Launch
 
@@ -111,6 +111,6 @@ ms.locfileid: "54959422"
 
 ## <a name="see-also"></a>関連項目
 
-[概要](../profiling/overviews-performance-tools.md)  
-[パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)  
+[概要](../profiling/overviews-performance-tools.md)
+[パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
 [データ収集の制御](../profiling/controlling-data-collection.md)

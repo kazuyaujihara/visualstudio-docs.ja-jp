@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad52674ce6d1c0e0c5d0dea4f1b7238bdf1e41d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 64667ef01d1b21cce8303e2f72be3f252ec4245e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910000"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56595868"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 要素 (MSBuild)
 ユーザー定義 [Item](../msbuild/item-element-msbuild.md) 要素のセットが含まれます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトで使用されるすべての項目は、`ItemGroup` 要素の子として指定する必要があります。
 
-\<Project>  
-\<ItemGroup>
+\<Project> \<ItemGroup>
 
 ## <a name="syntax"></a>構文
 
@@ -83,6 +82,6 @@ ms.locfileid: "55910000"
 ```
 
 ## <a name="see-also"></a>関連項目
-[プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)  
-[項目](../msbuild/msbuild-items.md)  
-[MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)
+- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
+- [項目](../msbuild/msbuild-items.md)
+- [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08cc8426dcc82a178bbcf042c13fa51956697702
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948824"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796351"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>ロード テストを実行するためのテスト エージェントおよびテスト コントローラーの構成
 
@@ -77,7 +77,7 @@ Visual Studio では、物理または仮想マシンを使用して、アプリ
 
 次の図は、テスト コントローラー、テスト エージェント、およびクライアント間のコネクション ポイントを示しています。 ここでは、着信および発信接続に使用されるポートに加え、これらのポートで使用されるセキュリティ要件の詳細についても説明します。
 
- ![テスト コントローラーとTest Agentのポートとセキュリティ](./media/test-controller-agent-firewall.png)
+ ![テスト コントローラーおよびテスト エージェントのポートとセキュリティ](./media/test-controller-agent-firewall.png)
 
  詳細については、「[テスト コントローラーおよびテスト エージェント用のポートの構成](../test/configure-ports-for-test-controllers-and-test-agents.md)」を参照してください。
 

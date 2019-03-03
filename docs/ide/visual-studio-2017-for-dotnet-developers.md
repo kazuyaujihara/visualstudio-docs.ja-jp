@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2abf307dd2205b556744c61c974e389179c465b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920601"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708642"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# の生産性ガイド
 
@@ -92,6 +92,8 @@ Visual Studio 2017 には、多くのリファクタリング、コード生成�
   - *Null チェックの追加*
   - *パラメーターの追加*
   - *不要な using の削除*
+  - *LINQ クエリまたは LINQ メソッドへの foreach ループ*
+  - *ダイアログ オプションによる [メンバーのプルアップ] リファクタリング*
   - [ドキュメント](https://aka.ms/refactorings)で詳細を確認してください
 - 独自のリファクタリングまたはコード修正は [Roslyn アナライザー](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix)を使用して記述します。
 - 何人かのコミュニティ メンバーが、コードの検査を追加する、次のような無料の拡張機能を作成しています。
@@ -108,7 +110,7 @@ Visual Studio 2017 には、コードベースの検索と移動に役立つ多�
 
 | 機能 | ショートカット | 詳細/機能強化 |
 |- | - | -|
-| [すべての参照の検索] | **Shift** + **F12**| 結果はプロジェクト、定義などによって、色分け表示してグループ化できます。結果を 'ロックする' こともできます。 |
+| [すべての参照の検索] | **Shift** + **F12**| 結果はプロジェクト、定義、および参照型 (読み取りまたは書き込みなど) によって、色分け表示してグループ化できます。 結果を 'ロックする' こともできます。 |
 | 実装に移動 | **Ctrl** + **F12** | オーバーライドされたメンバーに移動するには、`override` キーワードの [定義へ移動] を使用します |
 | [定義へ移動] | **F12** または **Ctrl**+**クリック**| **Ctrl** キーを押しながらクリックして定義へ移動することができます |
 | 定義をここに表示 | **Alt** + **F12** | 定義のインライン ビュー |

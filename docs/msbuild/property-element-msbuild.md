@@ -16,63 +16,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde2f9418a06b85f19027de37c242f06ad6a0868
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a2c011e700eb93293ae5fa0b08db5f486ea85ad5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920879"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604198"
 ---
 # <a name="property-element-msbuild"></a>Property 要素 (MSBuild)
-ユーザー定義のプロパティ名と値を格納します。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトで使用されるすべてのプロパティは、`PropertyGroup` 要素の子として指定する必要があります。  
+ユーザー定義のプロパティ名と値を格納します。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトで使用されるすべてのプロパティは、`PropertyGroup` 要素の子として指定する必要があります。
 
- \<Project>  
- \<PropertyGroup >  
+ \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>構文
 
-```xml  
-<Property Condition="'String A' == 'String B'">  
-    Property Value  
-</Property>  
-```  
+```xml
+<Property Condition="'String A' == 'String B'">
+    Property Value
+</Property>
+```
 
-## <a name="attributes-and-elements"></a>属性と要素  
- 以降のセクションでは、属性、子要素、および親要素について説明します。  
+## <a name="attributes-and-elements"></a>属性と要素
+ 以降のセクションでは、属性、子要素、および親要素について説明します。
 
-### <a name="attributes"></a>属性  
+### <a name="attributes"></a>属性
 
-|属性|説明|  
-|---------------|-----------------|  
-|`Condition`|省略可能な属性です。<br /><br /> 評価する条件です。 詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|  
+|属性|説明|
+|---------------|-----------------|
+|`Condition`|省略可能な属性です。<br /><br /> 評価する条件です。 詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|
 
-### <a name="child-elements"></a>子要素  
- なし。  
+### <a name="child-elements"></a>子要素
+ なし。
 
-### <a name="parent-elements"></a>親要素  
+### <a name="parent-elements"></a>親要素
 
-|要素|説明|  
-|-------------|-----------------|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|プロパティのグループ化要素です。|  
+|要素|説明|
+|-------------|-----------------|
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|プロパティのグループ化要素です。|
 
-## <a name="text-value"></a>テキスト値  
- テキスト値は省略可能です。  
+## <a name="text-value"></a>テキスト値
+ テキスト値は省略可能です。
 
- このテキストはプロパティ値を指定します。これに XML を含めることができます。  
+ このテキストはプロパティ値を指定します。これに XML を含めることができます。
 
-## <a name="remarks"></a>コメント  
- プロパティ名に使用できるのは ASCII 文字のみに制限されます。 プロパティ値は、"`$(`" と "`)`" の間にプロパティ名を入れることでプロジェクト内で参照されます。 たとえば、`builddir` プロパティの値が `build` の場合、`$(builddir)\classes` は *build\classes* に解決されます。 プロパティの詳細については、「[MSBuild プロパティ](../msbuild/msbuild-properties.md)」を参照してください。  
+## <a name="remarks"></a>解説
+ プロパティ名に使用できるのは ASCII 文字のみに制限されます。 プロパティ値は、"`$(`" と "`)`" の間にプロパティ名を入れることでプロジェクト内で参照されます。 たとえば、`builddir` プロパティの値が `build` の場合、`$(builddir)\classes` は *build\classes* に解決されます。 プロパティの詳細については、「[MSBuild プロパティ](../msbuild/msbuild-properties.md)」を参照してください。
 
-## <a name="example"></a>例  
- 次のコードは、`Optimization` プロパティを `false` に設定します。さらに、`Version` プロパティが空の場合は `DefaultVersion` プロパティを `1.0` に設定します。  
+## <a name="example"></a>例
+ 次のコードは、`Optimization` プロパティを `false` に設定します。さらに、`Version` プロパティが空の場合は `DefaultVersion` プロパティを `1.0` に設定します。
 
-```xml  
-<PropertyGroup>  
-    <Optimization>false</Optimization>  
-    <DefaultVersion Condition="'$(Version)' == ''" >1.0</DefaultVersion>  
-</PropertyGroup>  
-```  
+```xml
+<PropertyGroup>
+    <Optimization>false</Optimization>
+    <DefaultVersion Condition="'$(Version)' == ''" >1.0</DefaultVersion>
+</PropertyGroup>
+```
 
 ## <a name="see-also"></a>関連項目
-[MSBuild プロパティ](../msbuild/msbuild-properties.md)  
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild プロパティ](../msbuild/msbuild-properties.md)
+- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)

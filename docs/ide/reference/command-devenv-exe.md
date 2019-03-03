@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf8f72f0d9b0c2d847ddb2c5e7e6c3c8d4ae4467
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6daa21f9db7eef9a651577ad829d884dccf353dc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932496"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717521"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -31,13 +31,19 @@ devenv /Command CommandName
 
 ## <a name="arguments"></a>引数
 
-- *CommandName*
+*CommandName*
 
-  必須です。 Visual Studio コマンドの完全な名前またはその別名を二重引用符で囲みます。 コマンドとエイリアスの構文について詳しくは、「[Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)」をご覧ください。
+必須です。 Visual Studio コマンドの完全な名前またはその別名を二重引用符で囲みます。 コマンドとエイリアスの構文について詳しくは、「[Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)」をご覧ください。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
-起動が完了すると、指定したコマンドが IDE で実行されます。 このスイッチを使用すると、IDE の起動時に Visual Studio のスタート ページが表示されません。
+起動が完了すると、指定したコマンドが IDE で実行されます。
+
+::: moniker range="vs-2017"
+
+このスイッチを使用すると、起動時に IDE にスタート ページが表示されません。
+
+::: moniker-end
 
 アドインでコマンドが公開されている場合は、このスイッチを使ってコマンド ラインからアドインを起動できます。 詳細については、「[方法 :アドイン マネージャーを使用してアドインを制御する](/previous-versions/xwdatdwh(v=vs.140))」をご覧ください。
 

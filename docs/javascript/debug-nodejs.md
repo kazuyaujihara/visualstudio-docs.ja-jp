@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b6bc2aa2dff6a1d71428041e17bffe39c7d624e9
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 27e990c300702301fc7c701339254bbe6f385cd0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768408"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843795"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio で JavaScript アプリまたは TypeScript アプリをデバッグする
 
@@ -168,7 +168,7 @@ Visual Studio では、Chrome および Internet Explorer のみのデバッグ 
    Chrome の場合は、**[ソリューション エクスプローラー]、[スクリプト ドキュメント]、[YourPageName]** の順に移動します。
 
     > [!NOTE]
-    > Chrome を使用する場合は、"`no source is available between `<script>` tags.` This is OK, just continue debugging.
+    > Chrome を使用する場合、**\<script> タグ間に使用できるソースがない**という内容のメッセージが表示される場合があります。 これは問題ありませんので、デバッグを続けることができます。
 
    Internet Explorer の場合は、**[ソリューション エクスプローラー]、[スクリプト ドキュメント]、[Windows Internet Explorer]、[YourPageName]** の順に移動します。
 

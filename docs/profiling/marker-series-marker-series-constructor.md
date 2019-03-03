@@ -12,43 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa010c535b984eb6a00bcb8234815f3d489b87b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5178b2cebdfa4246256aef6334e026ef091fa553
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939453"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639961"
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series コンストラクター
-`marker_series` クラスの新しいインスタンスを初期化します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp  
-marker_series();  
-marker_series(  
-   _In_ LPCTSTR _SeriesName  
-);  
-marker_series(  
-   _In_ const GUID* _ProviderGuid  
-);  
-marker_series(  
-   _In_ const GUID* _ProviderGuid,  
-   _In_ LPCTSTR _SeriesName  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `_SeriesName`  
- 作成するシリーズの名前。  
-  
- `_ProviderGuid`  
- シリーズのプロバイダーの GUID。  
-  
-## <a name="requirements"></a>要件  
- **ヘッダー:** *cvmarkersobj.h*  
-  
- **名前空間:** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>関連項目  
- [marker_series クラス](../profiling/marker-series-class.md)
+`marker_series` クラスの新しいインスタンスを初期化します。
+
+## <a name="syntax"></a>構文
+
+```cpp
+marker_series();
+marker_series(
+   _In_ LPCTSTR _SeriesName
+);
+marker_series(
+   _In_ const GUID* _ProviderGuid
+);
+marker_series(
+   _In_ const GUID* _ProviderGuid,
+   _In_ LPCTSTR _SeriesName
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `_SeriesName` 作成するシリーズの名前。
+
+ `_ProviderGuid` シリーズのプロバイダーの GUID。
+
+## <a name="requirements"></a>要件
+ **ヘッダー:** *cvmarkersobj.h*
+
+ **名前空間:** Concurrency::diagnostic
+
+## <a name="see-also"></a>関連項目
+- [marker_series クラス](../profiling/marker-series-class.md)

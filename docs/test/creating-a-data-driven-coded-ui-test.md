@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e387bb9af6c1fa8cf42a606087c264a7c27c3ee9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970921"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796661"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>データ ドリブンのコード化された UI テストの作成
 
@@ -50,7 +50,7 @@ ms.locfileid: "55970921"
 
 4. 1 と 2 を加算し、レコーダーを一時停止し、テスト メソッドを生成します。 後で、このユーザー入力の値をデータ ファイルからの値に置換することになります。
 
-    ![テスト メソッドの生成](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![テスト データの生成](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
     テスト ビルダーを閉じます。 メソッドがテストに追加されます。
 

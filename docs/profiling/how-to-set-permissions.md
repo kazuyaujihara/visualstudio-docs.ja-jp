@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fb0887802d6995e790ec0e61629b478b7b26ccc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042518"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620825"
 ---
 # <a name="how-to-set-permissions"></a>方法: アクセス許可を設定する
 
@@ -121,6 +121,6 @@ Users グループのメンバーの場合は、チームの他のメンバー�
 
 ## <a name="see-also"></a>関連項目
 
-[パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)  
-[VSPerfCmd](../profiling/vsperfcmd.md)  
+[パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
+[VSPerfCmd](../profiling/vsperfcmd.md)
 [プロファイルと Windows Vista のセキュリティ](../profiling/profiling-and-windows-vista-security.md)

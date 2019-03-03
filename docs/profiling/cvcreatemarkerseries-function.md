@@ -14,49 +14,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c0371992bde7b7ac58551457fa81e2b18a8f56
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb3ef4d928aaac57f39a48e5be212c1148ef58eb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006985"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630302"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries 関数
-指定されたプロバイダーに対してマーカー系列を作成します。  
-  
-## <a name="syntax"></a>構文  
-  
-```C  
-_Check_return_ HRESULT CvCreateMarkerSeriesW(  
-    _In_ PCV_PROVIDER  pProvider,  
-    _In_ LPCWSTR pSeriesName,  
-    _Out_ PCV_MARKERSERIES* ppMarkerSeries);  
-  
-_Check_return_ HRESULT CvCreateMarkerSeriesA(  
-    _In_ PCV_PROVIDER  pProvider,  
-    _In_ LPCSTR pSeriesName,  
-    _Out_ PCV_MARKERSERIES* ppMarkerSeries);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pProvider`  
- CvInitProvider により以前に初期化されたプロバイダー オブジェクト。 Nll は指定できません。  
-  
- `pSeriesName`  
- マーカー系列名。 NULL は指定できませんが、空の文字列は指定できます。  
-  
- `ppMarkerSeries`  
- マーカー系列コンテキストを格納する出力変数のアドレス。 Nll は指定できません。  
-  
-## <a name="return-value"></a>戻り値  
- マーカー系列が作成されると S_OK を、エラーが発生した場合はエラー コードを返します。 SUCCEEDED/FAILED マクロを使用し、エラーの状態を確認します。  
-  
-## <a name="requirements"></a>要件  
- **ヘッダー:** *cvmarkers.h*  
-  
- **Unicode:** CvCreateMarkerSeriesW  
-  
- **ANSI:** CvCreateMarkerSeriesA  
-  
-## <a name="see-also"></a>関連項目  
- [C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)
+指定されたプロバイダーに対してマーカー系列を作成します。
+
+## <a name="syntax"></a>構文
+
+```C
+_Check_return_ HRESULT CvCreateMarkerSeriesW(
+    _In_ PCV_PROVIDER  pProvider,
+    _In_ LPCWSTR pSeriesName,
+    _Out_ PCV_MARKERSERIES* ppMarkerSeries);
+
+_Check_return_ HRESULT CvCreateMarkerSeriesA(
+    _In_ PCV_PROVIDER  pProvider,
+    _In_ LPCSTR pSeriesName,
+    _Out_ PCV_MARKERSERIES* ppMarkerSeries);
+```
+
+#### <a name="parameters"></a>パラメーター
+ `pProvider` CvInitProvider により以前に初期化されたプロバイダー オブジェクト。 Nll は指定できません。
+
+ `pSeriesName` マーカー系列名。 NULL は指定できませんが、空の文字列は指定できます。
+
+ `ppMarkerSeries` マーカー系列コンテキストを格納する出力変数のアドレス。 Nll は指定できません。
+
+## <a name="return-value"></a>戻り値
+ マーカー系列が作成されると S_OK を、エラーが発生した場合はエラー コードを返します。 SUCCEEDED/FAILED マクロを使用し、エラーの状態を確認します。
+
+## <a name="requirements"></a>要件
+ **ヘッダー:** *cvmarkers.h*
+
+ **Unicode:** CvCreateMarkerSeriesW
+
+ **ANSI:** CvCreateMarkerSeriesA
+
+## <a name="see-also"></a>関連項目
+- [C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)

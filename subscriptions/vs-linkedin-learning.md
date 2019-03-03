@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる LinkedIn Premium サブスクリプションに含まれる LinkedIn Learning 特典について説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fc77d1ebe0fe96c55000123e4bf040a35a37b619
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 2f1e465be1d9c81235af1bad723f827a0f04147c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380221"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841550"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの LinkedIn Learning 特典
 
@@ -102,7 +100,7 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 | Visual Studio Dev Essentials | N/A  | 3 か月 |いいえ。  新しいサブスクライバーのみが使用できます |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
 
-<sup>1</sup>  *Not for Resale (NFR)、Visual Studio Industry Partner (VSIP) が含まれます。Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
+<sup>1</sup>  *Not for Resale (NFR)、Visual Studio Industry Partner (VSIP) が含まれます除外:Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
 
 
 > [!NOTE]
@@ -113,7 +111,7 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>Q:サブスクリプションを更新すると、LinkedIn Learning 特典も更新されますか。
-A:いいえ、LinkedIn Learning プランは新規サブスクライバーのみが利用できます。
+A: いいえ、LinkedIn Learning プランは新規サブスクライバーのみが利用できます。
 
 ## <a name="support-resources"></a>サポート リソース
 -  LinkedIn Learning のヘルプが必要ですか。  以下のリソースを確認してください。

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Azure の特典をアクティブ化する方法を説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 5ef69bbaeeeed7de66e1cf206182bb83f4f42ff2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380127"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843209"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 
@@ -28,7 +26,7 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     150 ドルのクレジット/月     |                             はい                             ||
 |               Visual Studio Enterprise - 月間プラン               |        使用できません        |                                                             |
-|             Visual Studio Professional Standard              |     50 ドルのクレジット/月      |                             はい                            
+|             Visual Studio Professional Standard              |     50 ドルのクレジット/月      |                             はい
 |              Visual Studio Professional - 月間プラン              |        使用できません        |                                                             |
 |                    Visual Studio Test Pro                    |     50 ドルのクレジット/月      |                             はい                             |
 |                        MSDN Platforms                        |     100 ドルのクレジット/月     |                             はい                             |
@@ -77,7 +75,7 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
 ## <a name="faq"></a>FAQ
 
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>Q:Azure ポータル内からテクニカル サポート インシデントを送信するにはどうすればよいですか。
-A:Azure ポータルからサポート インシデントを送信するには、3 段階の手順を行います。
+A: Azure ポータルからサポート インシデントを送信するには、3 段階の手順を行います。
 1. テクニカル サポートの特典をアクティブ化し、契約 ID アクセス ID を取得します。
 2. サポート契約を Azure サブスクリプションにリンクします。
 3. サポート インシデントを送信します。
@@ -86,7 +84,7 @@ A:Azure ポータルからサポート インシデントを送信するには�
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Q:間もなく Azure にアクセスできなくなるというメッセージが届きました。  Azure の使用を続けるにはどうすればよいですか。
 
-A:Visual Studio サブスクリプションに関連付けられている Azure 特典を使用しているときに、サブスクリプションが失効するか、取り除かれるとこのメールが届きます。  Azure の使用を続ける場合、いくつかの選択肢があります。
+A: Visual Studio サブスクリプションに関連付けられている Azure 特典を使用しているときに、サブスクリプションが失効するか、取り除かれるとこのメールが届きます。  Azure の使用を続ける場合、いくつかの選択肢があります。
 
 **推奨アクション:**
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクリプションを最大限に活用する方法を説明します
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822164"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842664"
 ---
 # <a name="managing-subscriptions"></a>サブスクリプションを管理する
 
@@ -147,7 +145,7 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Q: サブスクリプションを更新しない場合、Microsoft ではどのくらいデータは保持されますか?
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Q:サブスクリプションを更新しない場合、Microsoft ではどのくらいデータは保持されますか? 
 
 A: これは購入されたチャネルによって異なります。Microsoft の顧客データの維持期間はさまざまです。
 

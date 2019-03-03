@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db8230c393ad18d72ff4d4d186d916c0e938996d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2668d5b60fba429613975cc24e751dbe07f87b7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978582"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641079"
 ---
 # <a name="understand-sampling-data-values"></a>サンプリング データ値について
 
@@ -51,5 +51,5 @@ Visual Studio プロファイリング ツールの "*サンプリング*" プ�
 
 ## <a name="see-also"></a>関連項目
 
-[方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)  
+[方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)
 [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)

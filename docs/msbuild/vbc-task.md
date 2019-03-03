@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768433"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623828"
 ---
 # <a name="vbc-task"></a>Vbc タスク
-実行可能ファイル (*.exe*)、ダイナミック リンク ライブラリ (*.dll*)、またはコード モジュール (*.netmodule*) を生成する *vbc.exe* をラップします。 *vbc.exe* の詳細については、「[Visual Basic のコマンド ライン コンパイラ](/dotnet/visual-basic/reference/command-line-compiler/index)」を参照してください。  
+実行可能ファイル (*.exe*)、ダイナミック リンク ライブラリ (*.dll*)、またはコード モジュール (*.netmodule*) を生成する *vbc.exe* をラップします。 *vbc.exe* の詳細については、「[Visual Basic のコマンド ライン コンパイラ](/dotnet/visual-basic/reference/command-line-compiler/index)」を参照してください。
 
-## <a name="parameters"></a>パラメーター  
- `Vbc` タスクのパラメーターの説明を次の表に示します。  
+## <a name="parameters"></a>パラメーター
+ `Vbc` タスクのパラメーターの説明を次の表に示します。
 
 
 | パラメーター | 説明 |
@@ -88,21 +88,21 @@ ms.locfileid: "55768433"
 | `Win32Icon` | 省略可能な `String` 型のパラメーターです。<br /><br /> **ファイル エクスプローラー**で出力ファイルを適切に表示する *.ico* ファイルをアセンブリに挿入します。 このパラメーターは、*vbc.exe* コンパイラの [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) スイッチに相当します。 |
 | `Win32Resources` | 省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース (*.res* ファイル) を出力ファイルに挿入します。 このパラメーターは、*vbc.exe* コンパイラの [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) スイッチに相当します。 |
 
-## <a name="remarks"></a>コメント  
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。  
+## <a name="remarks"></a>解説
+ 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。
 
-## <a name="example"></a>例  
- 次の例では、Visual Basic プロジェクトがコンパイルされます。  
+## <a name="example"></a>例
+ 次の例では、Visual Basic プロジェクトがコンパイルされます。
 
-```xml  
-<VBC  
-   Sources="@(sources)"  
-   Resources="strings.resources"  
-   Optimize="true"  
-   OutputAssembly="out.exe"/>  
-```  
+```xml
+<VBC
+   Sources="@(sources)"
+   Resources="strings.resources"
+   Optimize="true"
+   OutputAssembly="out.exe"/>
+```
 
-## <a name="see-also"></a>関連項目  
- [Visual Basic のコマンド ライン コンパイラ](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [タスク](../msbuild/msbuild-tasks.md)   
- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>関連項目
+- [Visual Basic のコマンド ライン コンパイラ](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [タスク](../msbuild/msbuild-tasks.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)

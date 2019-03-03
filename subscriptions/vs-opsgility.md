@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 選択した Visual Studio サブスクリプションに含まれている Opsgility トレーニング特典を利用した Skill Me Up について説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: c057eda862ffc0ef556d878a0afb3d1dd106918c
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 046dc71ff78a7458c0a524db3b643f520a41d61c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380215"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843845"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Skill Me Up - Visual Studio サブスクリプションの Opsgility トレーニング特典の利用
 
@@ -32,7 +30,7 @@ ms.locfileid: "54380215"
    > [!div class="mx-imgBorder"]
    > ![Opsgility 特典のランディング ページ](_img/vs-opsgility/vs-vse-landing-page.png)
 
-4. 必要な作業は以上です。  学習を始める準備ができました。  
+4. 必要な作業は以上です。  学習を始める準備ができました。
 
 
 ## <a name="eligibility"></a>特典を受ける条件
