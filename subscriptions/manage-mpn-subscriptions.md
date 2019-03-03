@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/11/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: MPN パートナーのために Visual Studio サブスクリプションをエンド ユーザーに割り当てる方法。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4a113d88b93b5fe7532a72956ca6129be1773ebe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949111"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842477"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) で提供されている Visual Studio サブスクリプションの管理
 
@@ -33,7 +31,7 @@ Microsoft Action Pack サブスクライバーと Visual Studio サブスクリ�
 4. 1 番目、2 番目、3 番目の**技術担当者**を選び、**保存**します。
 5. **[実績と必要要件]** を選びます。
 6. **[アクセス許可]** を選びます。
-7. **[Visual Studio サブスクリプション]** を選びます (注: 保留中の Visual Studio サブスクリプションの更新プログラム)
+7. **[Visual Studio サブスクリプション]** を選択します (注: 保留中のVisual Studio サブスクリプション更新プログラム)
 8. 目的の**個人**を選びます。
 9. **[送信]** をクリックします。
 10. 選択された個人が電子メールを受信します。

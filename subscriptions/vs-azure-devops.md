@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 09/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクライバーとして Azure DevOps を使用する方法について説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 631683b48faed4e5b967e060b66123aaf685889b
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 01f5f34210b4a562015eb030b9a23ef4d5017add
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380009"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842651"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio サブスクリプションの Azure DevOps 特典
 
@@ -54,4 +52,3 @@ Azure DevOps 機能に関する詳細情報:
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 - [Azure DevOps ドキュメント](/azure/devops/)。
-

@@ -14,25 +14,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e34640a06fb231aad0cf0a48ebc001ef7e1b597a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 89b3e7492e0f5155dd1c36f0140f6a1ad11db027
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979102"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632902"
 ---
 # <a name="modules-view"></a>モジュール ビュー
-モジュール ビューには、プロファイリング データのモジュールが一覧表示されます。 各モジュールが階層ツリーのルート ノードです。 モジュールのプロファイリングされた関数が、モジュール ノードの下に一覧表示されます。 サンプリング メソッドを使用してプロファイリング データが収集された場合、関数ノードの下には行情報が一覧表示され、行ノードの下には命令ポインター データが一覧表示されます。  
-  
- モジュール名を展開してモジュールのパフォーマンス データのビューを表示したり、モジュール名を折りたたんでこれらのビューを閉じたりします。  
-  
- 列を追加または削除するには、レポート ウィンドウ内を右クリックし、**[列の追加と削除]** を選択します。 データを並べ替えるには、列名をクリックします。 詳細については、「[方法 :レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)」を参照してください。  
-  
- モジュール ビューに表示される列は、データの収集に使用したプロファイル方法 (サンプリングまたはインストルメンテーション)、およびプロファイル実行で .NET メモリ データを収集対象としたかどうかによって異なります。  
-  
-## <a name="see-also"></a>関連項目  
- [モジュール ビュー](../profiling/modules-view-sampling-data.md)   
- [モジュール ビュー](../profiling/modules-view-instrumentation-data.md)   
- [モジュール ビュー - インストルメンテーション](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [モジュール ビュー - サンプリング](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [モジュール ビュー](../profiling/modules-view-contention-data.md)
+モジュール ビューには、プロファイリング データのモジュールが一覧表示されます。 各モジュールが階層ツリーのルート ノードです。 モジュールのプロファイリングされた関数が、モジュール ノードの下に一覧表示されます。 サンプリング メソッドを使用してプロファイリング データが収集された場合、関数ノードの下には行情報が一覧表示され、行ノードの下には命令ポインター データが一覧表示されます。
+
+ モジュール名を展開してモジュールのパフォーマンス データのビューを表示したり、モジュール名を折りたたんでこれらのビューを閉じたりします。
+
+ 列を追加または削除するには、レポート ウィンドウ内を右クリックし、**[列の追加と削除]** を選択します。 データを並べ替えるには、列名をクリックします。 詳細については、「[方法 :レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)」を参照してください。
+
+ モジュール ビューに表示される列は、データの収集に使用したプロファイル方法 (サンプリングまたはインストルメンテーション)、およびプロファイル実行で .NET メモリ データを収集対象としたかどうかによって異なります。
+
+## <a name="see-also"></a>関連項目
+- [モジュール ビュー](../profiling/modules-view-sampling-data.md)
+- [モジュール ビュー](../profiling/modules-view-instrumentation-data.md)
+- [モジュール ビュー - インストルメンテーション](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [モジュール ビュー - サンプリング](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [モジュール ビュー](../profiling/modules-view-contention-data.md)

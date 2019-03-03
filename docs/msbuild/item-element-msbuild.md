@@ -16,19 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c872f10b9a0d092cc5dc4c3904fad6c6d5a4ea94
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944768"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643770"
 ---
 # <a name="item-element-msbuild"></a>Item 要素 (MSBuild)
 ユーザー定義のアイテムおよびそのメタデータが含まれます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトで使用されるすべてのアイテムが、`ItemGroup` 要素の子として指定されている必要があります。
 
-\<Project>  
-\<ItemGroup>  
-\<Item>  
+\<Project> \<ItemGroup> \<Item>
 
 ## <a name="syntax"></a>構文
 
@@ -91,7 +89,7 @@ MSBuild 15.1 以降では、現行の属性リストと競合しない名前の�
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|アイテムの grouping 要素です。|
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 `Item` 要素はビルド システムへの入力を定義し、ユーザー定義のコレクション名に基づいてアイテム コレクションにグループ化されます。 これらのアイテム コレクションは、[タスク](../msbuild/msbuild-tasks.md)のパラメーターとして使用できます。タスクは、コレクション内の個々のアイテムを使用してビルド処理の各ステップを実行します。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。
 
 @(\<myType>) という表記を使用すると、\<myType> 型のアイテムのコレクションをセミコロン区切りの文字列リストに展開して、パラメーターに渡すことができます。 パラメーターが `string` 型の場合は、パラメーターの値がセミコロンで区切られた要素のリストになります。 パラメーターが文字列の配列の場合 (`string[]`)、各要素はセミコロンの位置に基づいて配列に挿入されます。 タスク パラメーターが <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の場合、値は、アイテム コレクションの内容と、アタッチされているすべてのメタデータになります。 セミコロン以外の文字を使用して各アイテムを区切るには、@(\<myType>, '\<separator>') という構文を使用します。
@@ -120,7 +118,7 @@ MSBuild 15.1 以降では、現行の属性リストと競合しない名前の�
 ```
 
 ## <a name="see-also"></a>関連項目
-[項目](../msbuild/msbuild-items.md)  
-[MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)  
-[MSBuild プロパティ](../msbuild/msbuild-properties.md)  
-[プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
+- [項目](../msbuild/msbuild-items.md)
+- [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)
+- [MSBuild プロパティ](../msbuild/msbuild-properties.md)
+- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)

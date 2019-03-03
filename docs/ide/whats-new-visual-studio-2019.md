@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ecca40da855daf4f49619bb62498927dc9a296
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 41582f9f27b16a41c3ef10196f3cd29323579b4b
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318395"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450257"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview の新機能
 
@@ -85,7 +85,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
-[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) は、コードベースとそのコンテキストをチームメイトと共有し、Visual Studio 内で直接、双方向のインスタント コラボレーションができるようにする開発者サービスです。 Live Share では自分が共有したプロジェクトをチームメイトがシームレスかつ安全に読み取り、移動、編集、デバッグすることができます。
+[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) は開発者向けのサービスであり、これを使用することで、コードベースとそのコンテキストをチームメイトと共有し、Visual Studio 内から直接、双方向のインスタント コラボレーションを実現できます。 Live Share では自分が共有したプロジェクトをチームメイトがシームレスかつ安全に読み取り、移動、編集、デバッグすることができます。
 
 また、Visual Studio 2019 Preview では、このサービスは既定でインストールされます。
 

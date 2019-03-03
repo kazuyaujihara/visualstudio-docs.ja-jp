@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるコンシェルジェ チャット特典について説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: a2636f2758f189de9de9a014d67bcebb1a8248fc
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380000"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843621"
 ---
 # <a name="concierge-chat"></a>コンシェルジェ チャット
 
@@ -49,7 +47,7 @@ ms.locfileid: "54380000"
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 | Visual Studio Dev Essentials | N/A  | 使用できません |N/A |
 
-<sup>1</sup>  *Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark が含まれます。FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Imagine は含まれません。*
+<sup>1</sup>  *Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark が含まれます除外:FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Imagine は含まれません。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -60,12 +58,8 @@ ms.locfileid: "54380000"
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>Q:チャット サービスは複数の言語で使用できますか。
-   A:アカウント、請求およびサブスクリプションの問題に関するアシスタンスは、複数の言語で使用できます。  製品情報とテクニカル ドキュメントの検索に関するアシスタンスは、英語で使用できます。
+   A: アカウント、請求およびサブスクリプションの問題に関するアシスタンスは、複数の言語で使用できます。  製品情報とテクニカル ドキュメントの検索に関するアシスタンスは、英語で使用できます。
 
 ## <a name="support-resources"></a>サポート リソース
 -  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 -  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
-
-
-
-

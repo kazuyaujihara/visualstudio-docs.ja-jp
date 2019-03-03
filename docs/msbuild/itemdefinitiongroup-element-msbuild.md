@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d88c8197cc93a2c898ecbf19d52127061b73604
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 130683b114c4601de209ec5f86b7b6f3e8bed027
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936578"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597245"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 要素 (MSBuild)
 `ItemDefinitionGroup` 要素を使うと、一連の項目定義を定義できます。これは、プロジェクト内のすべての項目に既定で適用されるメタデータ値です。 ItemDefinitionGroup は、[CreateItem タスク](../msbuild/createitem-task.md)および [CreateProperty タスク](../msbuild/createproperty-task.md)を使う必要性より優先されます。 詳細については、「[項目定義](../msbuild/item-definitions.md)」を参照してください。
 
-\<Project>  
-\<ItemDefinitionGroup>
+\<Project> \<ItemDefinitionGroup>
 
 ## <a name="syntax"></a>構文
 
@@ -83,5 +82,5 @@ ms.locfileid: "55936578"
 ```
 
 ## <a name="see-also"></a>関連項目
-[プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
-[項目](../msbuild/msbuild-items.md)
+- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
+- [項目](../msbuild/msbuild-items.md)

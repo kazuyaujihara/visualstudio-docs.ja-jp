@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954648"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796622"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -84,7 +84,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | サービスまたはシナリオ | DNS エンドポイント | プロトコル | ポート | 説明 |
 | - | - | - | - | - |
 | URL<br>解決 | go.microsoft.com<br><br>aka.ms | | | URL を短くするために使用されます。後で長い URL に解決されます。 |
-| スタート ページ | vsstartpage.blob.core.windows.net | | 443 | Visual Studio のスタート ページに示される開発者向けニュースを表示するために使用されます。 |
+| スタート ページ | vsstartpage.blob.core.windows.net | | 443 | スタート ページに示される開発者向けニュースを表示するために使用されます (Visual Studio 2017 のみ) |
 | 対象の<br> 通知 <br>サービス | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | 通知のグローバル リストを、特定の種類のコンピューター/使用状況シナリオにのみ適用されるリストへとフィルター処理するために使用されます。 |
 | 拡張子 <br>更新チェック | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | インストールした拡張機能の更新プログラムが利用可能になったときに通知を提供するために使用されます。 <br><br> サインインの場所として使用されます。 |
 | AI プロジェクト <br>統合 | az861674.vo.msecnd.net | | 443<br> | 登録されている Application Insights アカウントに使用状況データを送信する新しいプロジェクトを構成するために使用されます。 |

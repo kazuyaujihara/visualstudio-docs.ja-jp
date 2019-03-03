@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f46494c22a11be09efb6181340e0fb6108a17c8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c8ffa5340ceaa00adb5e86100d8e58c307f41d40
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979147"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56647034"
 ---
 # <a name="performance-explorer-window"></a>[パフォーマンス エクスプローラー] ウィンドウ
 
@@ -51,6 +51,6 @@ Visual Studio IDE の **[パフォーマンス エクスプローラー]** ウ�
 
 ## <a name="see-also"></a>関連項目
 
-[概要](../profiling/overviews-performance-tools.md)  
-[パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)  
+[概要](../profiling/overviews-performance-tools.md)
+[パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
 [データ コレクションの制御](../profiling/controlling-data-collection.md)

@@ -10,12 +10,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089267"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615547"
 ---
 # <a name="custom-native-etw-heap-events"></a>カスタム ネイティブ ETW ヒープ イベント
 
@@ -34,7 +34,7 @@ public:
 
 ...
 
-// MemoryPool is a custom managed heap, which allocates 8192 bytes 
+// MemoryPool is a custom managed heap, which allocates 8192 bytes
 // on the standard Windows Heap named "Windows NT"
 MemoryPool<Foo, 8192> mPool;
 
@@ -66,7 +66,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
-   
+
    > [!NOTE]
    > このデコレータは、この関数がアロケーターの呼び出しであることをコンパイラに通知します。  関数が呼び出されるたびに、呼び出しサイトのアドレス、呼び出し指示のサイズ、新しいオブジェクトのタイプ ID が新しい `S_HEAPALLOCSITE` 記号に出力されます。  呼び出し履歴が割り当てられると、Windows はこの情報で ETW イベントを発行します。  メモリ プロファイラー ツールは呼び出し履歴で `S_HEAPALLOCSITE` 記号に一致するリターン アドレスを探します。この記号のタイプ ID 情報を利用し、割り当てのランタイム タイプが表示されます。
    >
@@ -79,7 +79,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    ```
 
    C を使用している場合、代わりに `OpenHeapTracker` 関数を使用します。  この関数は、他の追跡関数を呼び出すときに使用するハンドルを返します。
-  
+
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
@@ -136,7 +136,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    ```
 
 ## <a name="track-memory-usage"></a>メモリ使用量を追跡する
-呼び出しが所定の場所にあるので、Visual Studio の標準**メモリ使用量**ツールを利用し、カスタム ヒープ使用量を追跡できます。  このツールの使用方法については、[メモリ使用量](../profiling/memory-usage.md)に関する文書を参照してください。 スナップショットによるヒープ プロファイリングを有効にしてください。有効にしない場合、カスタム ヒープ使用量が表示されません。 
+呼び出しが所定の場所にあるので、Visual Studio の標準**メモリ使用量**ツールを利用し、カスタム ヒープ使用量を追跡できます。  このツールの使用方法については、[メモリ使用量](../profiling/memory-usage.md)に関する文書を参照してください。 スナップショットによるヒープ プロファイリングを有効にしてください。有効にしない場合、カスタム ヒープ使用量が表示されません。
 
 ![ヒープ プロファイリングを有効にする](media/heap-enable-heap.png)
 
@@ -156,5 +156,5 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 > Visual Studio の**パフォーマンス プロファイリング** ツールセットにも**メモリ使用量**ツールがあります。これは、**[デバッグ]** > **[パフォーマンス プロファイラー]** メニュー オプション、または **Alt**+**F2** キーの組み合わせで有効にできます。  この機能にはヒープ追跡がありません。ここの説明のようにカスタム ヒープが表示されることはありません。  この機能があるのは **[診断ツール]** ウィンドウだけです。このウィンドウは、**[デバッグ]** > **[Windows]** > **[診断ツールの表示]** メニュー、または **Ctrl**+**Alt**+**F2** キーの組み合わせで有効にできます。
 
 ## <a name="see-also"></a>関連項目
-[プロファイル ツールの概要](../profiling/profiling-feature-tour.md)  
+[プロファイリング ツールの概要](../profiling/profiling-feature-tour.md)
 [メモリ使用量](../profiling/memory-usage.md)

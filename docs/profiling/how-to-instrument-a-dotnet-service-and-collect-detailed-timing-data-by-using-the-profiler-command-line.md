@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c329755c1468d0ced5ab7f85335086a2388e21c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 57cc289b64db3cd4f22fd549ea9b28046f7f652b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933284"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638986"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>方法: プロファイラーのコマンド ラインを使用して .NET サービスをインストルメントし、詳細なタイミング データを収集する
 
@@ -20,7 +20,7 @@ ms.locfileid: "54933284"
 
 > [!NOTE]
 > コンピューターの開始後にサービスを再開できない場合、インストルメンテーション メソッドを使用してサービスをプロファイルすることはできません。このようなサービスが開始されるのは、オペレーティング システムの開始時のみです。
-> 
+>
 > プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
 >
 > プロファイリングの実行に階層の相互作用データを追加するには、コマンド ライン プロファイル ツールによる特定の手順が必要です。 [階層相互作用データを収集する](../profiling/adding-tier-interaction-data-from-the-command-line.md)方法に関するページを参照してください。
@@ -76,7 +76,7 @@ ms.locfileid: "54933284"
 
 ## <a name="control-data-collection"></a>データ収集の制御
 
-サービスの実行中は、*VSPerfCmd.exe* オプションを使用して、プロファイラー データ ファイルへのデータ書き込みを開始および停止できます。 データ コレクションを制御することにより、サービスの開始、終了などの、プログラム実行の特定の部分についてのデータを収集できます。
+サービスの実行中は、*VSPerfCmd.exe* オプションを使用して、プロファイラー データ ファイルへのデータ書き込みを開始および停止できます。 データ収集を制御することにより、サービスの開始、終了などの、プログラム実行の特定の部分についてのデータを収集できます。
 
 - 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
 
@@ -108,5 +108,5 @@ ms.locfileid: "54933284"
 
 ## <a name="see-also"></a>関連項目
 
-[サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)  
+[プロファイル サービス](../profiling/command-line-profiling-of-services.md)
 [インストルメンテーション メソッドのデータ ビュー](../profiling/instrumentation-method-data-views.md)

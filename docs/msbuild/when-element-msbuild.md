@@ -18,111 +18,104 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a10831690dec436c284ff265f4402fa1e2a0ca5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31c94844e9860f1de9be92c1e23580e314ada367
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981234"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618017"
 ---
 # <a name="when-element-msbuild"></a>When 要素 (MSBuild)
-`Choose` 要素で選ぶ対象のコード ブロックを指定します。  
-  
- \<Project>  
- \<Choose>  
- \<When>  
- \<Choose>  
- ...  
- \<Otherwise>  
- \<Choose>  
- ...  
+`Choose` 要素で選ぶ対象のコード ブロックを指定します。
 
-## <a name="syntax"></a>構文  
+ \<Project> \<Choose> \<When> \<Choose> ...\<Otherwise> \<Choose> ...
 
-```xml  
-<When Condition="'StringA'=='StringB'">  
-    <PropertyGroup>... </PropertyGroup>  
-    <ItemGroup>... </ItemGroup>  
-    <Choose>... </Choose>  
-</When>  
-```  
+## <a name="syntax"></a>構文
 
-## <a name="attributes-and-elements"></a>属性と要素  
- 以降のセクションでは、属性、子要素、および親要素について説明します。  
+```xml
+<When Condition="'StringA'=='StringB'">
+    <PropertyGroup>... </PropertyGroup>
+    <ItemGroup>... </ItemGroup>
+    <Choose>... </Choose>
+</When>
+```
 
-### <a name="attributes"></a>属性  
+## <a name="attributes-and-elements"></a>属性と要素
+ 以降のセクションでは、属性、子要素、および親要素について説明します。
 
-|属性|説明|  
-|---------------|-----------------|  
-|条件|必須の属性です。<br /><br /> 評価する条件です。 詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|  
+### <a name="attributes"></a>属性
 
-### <a name="child-elements"></a>子要素  
+|属性|説明|
+|---------------|-----------------|
+|条件|必須の属性です。<br /><br /> 評価する条件です。 詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|
 
-|要素|説明|  
-|-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|省略可能な要素です。<br /><br /> 子要素を評価して、実行するコードのセクションを 1 つ選びます。 `Choose` 要素に 0 個以上の `When` 要素があります。|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|省略可能な要素です。<br /><br /> ユーザー定義 [Item](../msbuild/item-element-msbuild.md) 要素のセットが含まれます。 `ItemGroup` 要素に 0 個以上の `When` 要素があります。|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|省略可能な要素です。<br /><br /> ユーザー定義の [Property](../msbuild/property-element-msbuild.md) 要素のセットを格納します。 `PropertyGroup` 要素に 0 個以上の `When` 要素があります。|  
+### <a name="child-elements"></a>子要素
 
-### <a name="parent-elements"></a>親要素  
+|要素|説明|
+|-------------|-----------------|
+|[Choose](../msbuild/choose-element-msbuild.md)|省略可能な要素です。<br /><br /> 子要素を評価して、実行するコードのセクションを 1 つ選びます。 `Choose` 要素に 0 個以上の `When` 要素があります。|
+|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|省略可能な要素です。<br /><br /> ユーザー定義 [Item](../msbuild/item-element-msbuild.md) 要素のセットが含まれます。 `ItemGroup` 要素に 0 個以上の `When` 要素があります。|
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|省略可能な要素です。<br /><br /> ユーザー定義の [Property](../msbuild/property-element-msbuild.md) 要素のセットを格納します。 `PropertyGroup` 要素に 0 個以上の `When` 要素があります。|
 
-|要素|説明|  
-|-------------|-----------------|  
-|[Choose 要素 (MSBuild)](../msbuild/choose-element-msbuild.md)|子要素を評価して、実行するコードのセクションを 1 つ選びます。|  
+### <a name="parent-elements"></a>親要素
 
-## <a name="remarks"></a>コメント  
- `Condition` 属性が true と評価された場合、その `When` 要素の子の `ItemGroup` 要素と `PropertyGroup` 要素が実行されて、後続の `When` 要素はすべてスキップされます。  
+|要素|説明|
+|-------------|-----------------|
+|[Choose 要素 (MSBuild)](../msbuild/choose-element-msbuild.md)|子要素を評価して、実行するコードのセクションを 1 つ選びます。|
 
- `Choose`、`When`、`Otherwise` 要素を組み合わせて使って、実行される可能性のある複数のコード セクションから 1 つを選びます。 詳細については、「[条件構造](../msbuild/msbuild-conditional-constructs.md)」を参照してください。  
+## <a name="remarks"></a>解説
+ `Condition` 属性が true と評価された場合、その `When` 要素の子の `ItemGroup` 要素と `PropertyGroup` 要素が実行されて、後続の `When` 要素はすべてスキップされます。
 
-## <a name="example"></a>例  
- 次のプロジェクトでは、`Choose` 要素を使って、設定する `When` 要素のプロパティ値のセットを選んでいます。 両方の `When` 要素の `Condition` 属性が `false` と評価された場合、`Otherwise` 要素のプロパティ値が設定されます。  
+ `Choose`、`When`、`Otherwise` 要素を組み合わせて使って、実行される可能性のある複数のコード セクションから 1 つを選びます。 詳細については、「[条件構造](../msbuild/msbuild-conditional-constructs.md)」を参照してください。
 
-```xml  
-<Project  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
-    <PropertyGroup>  
-        <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>  
-        <OutputType>Exe</OutputType>  
-        <RootNamespace>ConsoleApplication1</RootNamespace>  
-        <AssemblyName>ConsoleApplication1</AssemblyName>  
-        <WarningLevel>4</WarningLevel>  
-    </PropertyGroup>  
-    <Choose>  
-        <When Condition=" '$(Configuration)'=='debug' ">  
-            <PropertyGroup>  
-                <DebugSymbols>true</DebugSymbols>  
-                <DebugType>full</DebugType>  
-                <Optimize>false</Optimize>  
-                <OutputPath>.\bin\Debug\</OutputPath>  
-                <DefineConstants>DEBUG;TRACE</DefineConstants>  
-            </PropertyGroup>  
-            <ItemGroup>  
-                <Compile Include="UnitTesting\*.cs" />  
-                <Reference Include="NUnit.dll" />  
-            </ItemGroup>  
-        </When>  
-        <When Condition=" '$(Configuration)'=='retail' ">  
-            <PropertyGroup>  
-                <DebugSymbols>false</DebugSymbols>  
-                <Optimize>true</Optimize>  
-                <OutputPath>.\bin\Release\</OutputPath>  
-                <DefineConstants>TRACE</DefineConstants>  
-            </PropertyGroup>  
-        </When>  
-        <Otherwise>  
-            <PropertyGroup>  
-                <DebugSymbols>true</DebugSymbols>  
-                <Optimize>false</Optimize>  
-                <OutputPath>.\bin\$(Configuration)\</OutputPath>  
-                <DefineConstants>DEBUG;TRACE</DefineConstants>  
-            </PropertyGroup>  
-        </Otherwise>  
-    </Choose>  
-    <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />  
-</Project>  
-```  
+## <a name="example"></a>例
+ 次のプロジェクトでは、`Choose` 要素を使って、設定する `When` 要素のプロパティ値のセットを選んでいます。 両方の `When` 要素の `Condition` 属性が `false` と評価された場合、`Otherwise` 要素のプロパティ値が設定されます。
 
-## <a name="see-also"></a>関連項目  
- [条件構造](../msbuild/msbuild-conditional-constructs.md)   
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
+```xml
+<Project
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+    <PropertyGroup>
+        <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>ConsoleApplication1</RootNamespace>
+        <AssemblyName>ConsoleApplication1</AssemblyName>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <Choose>
+        <When Condition=" '$(Configuration)'=='debug' ">
+            <PropertyGroup>
+                <DebugSymbols>true</DebugSymbols>
+                <DebugType>full</DebugType>
+                <Optimize>false</Optimize>
+                <OutputPath>.\bin\Debug\</OutputPath>
+                <DefineConstants>DEBUG;TRACE</DefineConstants>
+            </PropertyGroup>
+            <ItemGroup>
+                <Compile Include="UnitTesting\*.cs" />
+                <Reference Include="NUnit.dll" />
+            </ItemGroup>
+        </When>
+        <When Condition=" '$(Configuration)'=='retail' ">
+            <PropertyGroup>
+                <DebugSymbols>false</DebugSymbols>
+                <Optimize>true</Optimize>
+                <OutputPath>.\bin\Release\</OutputPath>
+                <DefineConstants>TRACE</DefineConstants>
+            </PropertyGroup>
+        </When>
+        <Otherwise>
+            <PropertyGroup>
+                <DebugSymbols>true</DebugSymbols>
+                <Optimize>false</Optimize>
+                <OutputPath>.\bin\$(Configuration)\</OutputPath>
+                <DefineConstants>DEBUG;TRACE</DefineConstants>
+            </PropertyGroup>
+        </Otherwise>
+    </Choose>
+    <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
+```
+
+## <a name="see-also"></a>関連項目
+- [条件構造](../msbuild/msbuild-conditional-constructs.md)
+- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)

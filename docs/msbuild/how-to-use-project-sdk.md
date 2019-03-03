@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 361b64191d10056d80ab89dd6d4254ca128dcc96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020595"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638180"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>方法: MSBuild プロジェクト SDK の使用
 
@@ -94,7 +94,7 @@ ms.locfileid: "55020595"
 インポートを評価すると、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、指定した名前とバージョンに基づいて、プロジェクト SDK へのパスが動的に解決されます。  また、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] には、登録済み SDK リゾルバーの一覧もあります。SDK リゾルバーは、マシン上にあるプロジェクト SDK の場所を特定するプラグインです。  たとえば、次のプラグインがあります。
 
 1. NuGet ベースのリゾルバー。指定した SDK の ID とバージョンに一致する、NuGet パッケージ用に構成されたパッケージ フィードのクエリを実行します。<br/>
-   このリゾルバーは、省略可能なバージョンを指定した場合にのみ有効になります。任意のカスタム プロジェクト SDK に使用できます。  
+   このリゾルバーは、省略可能なバージョンを指定した場合にのみ有効になります。任意のカスタム プロジェクト SDK に使用できます。
 2. .NET CLI リゾルバー。 .NET CLI と共にインストールされた SDK を解決します。<br/>
    このリゾルバーは、製品の一部である `Microsoft.NET.Sdk` や `Microsoft.NET.Sdk.Web` などのプロジェクト SDK の場所を特定します。
 3. 既定のリゾルバー。MSBuild と共にインストールされた SDK を解決します。
@@ -110,11 +110,11 @@ NuGet ベースの SDK リゾルバーでは、[global.json](https://docs.micros
 }
 ```
 
-ビルド中には、各プロジェクト SDK の 1 つのバージョンのみを使用できます。  同じプロジェクト SDK の 2 つの異なるバージョンを参照していると、MSBuild から警告が生成されます。  *global.json* でバージョンが指定されている場合は、プロジェクトでバージョンを指定**しない**ことをお勧めします。  
+ビルド中には、各プロジェクト SDK の 1 つのバージョンのみを使用できます。  同じプロジェクト SDK の 2 つの異なるバージョンを参照していると、MSBuild から警告が生成されます。  *global.json* でバージョンが指定されている場合は、プロジェクトでバージョンを指定**しない**ことをお勧めします。
 
 ## <a name="see-also"></a>関連項目
 
- [MSBuild の概念](../msbuild/msbuild-concepts.md)   
- [ビルドのカスタマイズ](../msbuild/customize-your-build.md)   
- [パッケージ、メタデータ、フレームワーク](/dotnet/core/packages)   
- [.NET Core の csproj 形式に追加されたもの](/dotnet/core/tools/csproj)
+- [MSBuild の概念](../msbuild/msbuild-concepts.md)
+- [ビルドのカスタマイズ](../msbuild/customize-your-build.md)
+- [パッケージ、メタデータ、フレームワーク](/dotnet/core/packages)
+- [.NET Core の csproj 形式に追加されたもの](/dotnet/core/tools/csproj)

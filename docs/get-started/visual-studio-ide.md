@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2017 の概要
 titleSuffix: ''
-ms.date: 10/26/2018
+ms.date: 2/21/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38f102dd0a61d80c383307abdc96a03b50c0d74
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f49d4e9c734d1a7f20a765a75c4dcb6b950b38f8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316822"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705506"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE へようこそ
 
@@ -62,6 +62,8 @@ Community、Professional、Enterprise という 3 つのエディションの Vi
 - [クイック起動](../ide/reference/quick-launch-environment-options-dialog-box.md)
 
    Visual Studio には非常に多くのメニュー、オプション、およびプロパティがあるため、手に負えないもののように思える場合があるかもしれません。 **クイック起動**検索ボックスは、Visual Studio で必要な情報を迅速に見つけるに役立ちます。 探しているものを表す名前の入力を開始すると、Visual Studio に結果がリストされ、目的の場所に正確に移動できます。 Visual Studio に機能を追加する必要がある場合 (追加のプログラミング言語に対するサポートを追加するなど)、**クイック起動**の結果としてワークロードまたは個々のコンポーネントをインストールする Visual Studio インストーラーが開かれます。
+
+   IDE の右上に表示される **[クイック起動]** 検索ボックスを見つけます  (または、**Ctrl**+**Q** キーを押してアクセスします)。
 
    ![Visual Studio でのクイック起動検索ボックス](media/quick-launch-nuget.png)
 

@@ -2,7 +2,7 @@
 title: 'チュートリアル: シンプルな C# コンソール アプリを作成する'
 description: Visual Studio で C# コンソール アプリを作成する方法について、ステップ バイ ステップで説明します。
 ms.custom: seodec18, get-started
-ms.date: 01/25/2019
+ms.date: 02/26/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156073"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841177"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する
 
@@ -39,7 +39,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されているコンソール アプリ (.NET Core) プロジェクト テンプレート](./media/new-project-csharp-calculator-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>ワークグループを追加する (省略可能)
+### <a name="add-a-workload-optional"></a>ワークロードを追加する (省略可能)
 
 **コンソール アプリ (.NET Core)** プロジェクト テンプレートが表示されない場合は、**.NET Core クロスプラットフォームの開発**ワークロードを追加して取得できます。 ここではその方法を説明します。
 
@@ -80,6 +80,7 @@ C# での整数計算を始めましょう。
             Console.WriteLine(c);
             Console.ReadKey();
     ```
+
 1. **[Calculator]** を選択してプログラムを実行するか、**F5** キーを押します。
 
    ![[Calculator] ボタンを選択して、ツールバーからアプリを実行する](./media/csharp-console-calculator-button.png)
@@ -151,6 +152,7 @@ C# での整数計算を始めましょう。
         }
     }
     ```
+
 1. **[Calculator]** を選択してプログラムを実行するか、**F5** キーを押します。
 
    ![[Calculator] ボタンを選択して、ツールバーからアプリを実行する](./media/csharp-console-calculator-button.png)
@@ -382,6 +384,7 @@ C# での整数計算を始めましょう。
         }
     }
     ```
+
 1. **[Calculator]** を選択してプログラムを実行するか、**F5** キーを押します。
 
 1. 画面の指示に従って、値 **42** を値 **119** で割ります。 アプリは次のようになります。

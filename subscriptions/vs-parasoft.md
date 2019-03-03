@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Parasoft Virtualize/SOA Test Professional サブスクリプションをアクティブ化する方法を説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 654a3f357f6bc8d6caf3dbaa551c7856a2154fd2
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 89b079f9f797db58eb0afc887a70cdc78c48d886
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54379954"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844114"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -83,7 +81,7 @@ ms.locfileid: "54379954"
 | Visual Studio Dev Essentials | N/A  | 使用できません|N/A |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
 
-<sup>1</sup>  *Microsoft Partner Network (Enterprise) が含まれます。Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
+<sup>1</sup>  *Microsoft Partner Network (Enterprise) が含まれます除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
 
 
 > [!NOTE]

@@ -2,7 +2,7 @@
 title: Azure 仮想マシンでの Visual Studio の使用
 titleSuffix: ''
 description: Azure 仮想マシンで Visual Studio を使用する方法を説明します
-ms.date: 09/12/2018
+ms.date: 02/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1dbda84c1e8eee48c4a442e922c1852496155ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952906"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450400"
 ---
 # <a id="top"> </a> Azure 上の Visual Studio イメージ
 
@@ -34,8 +34,8 @@ ms.locfileid: "55952906"
 
 | リリース バージョン                                              | エディション                     |     製品バージョン      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019:プレビュー (Preview 2)                   |           エンタープライズ         | バージョン 16.0.0 Preview 2 |
-| Visual Studio 2017:最新 (バージョン 15.9)                    |    Enterprise、Community     |      バージョン 15.9.4      |
+|    Visual Studio 2019:プレビュー (プレビュー 3)                   |           エンタープライズ         | バージョン 16.0.0 Preview 3 |
+| Visual Studio 2017:最新 (バージョン 15.9)                    |    Enterprise、Community     |      バージョン 15.9.7      |
 |         Visual Studio 2017:RTW                              |    Enterprise、Community     |      バージョン 15.0.20     |
 |   Visual Studio 2015:最新 (更新プログラム 3)                      |    Enterprise、Community     |  バージョン 14.0.25431.01   |
 |         Visual Studio 2015:RTW                              |             なし             | (サービス有効期限切れ)  |

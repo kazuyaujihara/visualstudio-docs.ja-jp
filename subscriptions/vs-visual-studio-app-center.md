@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Visual Studio App Center 特典について説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fd90f301abae9f0d85509a46255317282f284b9e
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 30953834e36cb88e79a800e0356ac59189165aee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380102"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843563"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Visual Studio App Center
 
@@ -51,7 +49,7 @@ Visual Studio App Center を開始するのは簡単です。
 | Visual Studio Dev Essentials | N/A  | Included                                                            |はい |
 
 
-<sup>1</sup>  *Not for Resale (NFR)、FTE、Visual Studio Industry Partner (VSIP)、Imagine、Microsoft Partner Network (MPN)、MCT Software & Services、MCT Software & Services Developer、BizSpark、Most Valuable Professional (MVP)、Regional Director (RD) が含まれます。*
+<sup>1</sup>  *内容:Not for Resale (NFR)、FTE、Visual Studio Industry Partner (VSIP)、Imagine、Microsoft Partner Network (MPN)、MCT Software & Services、MCT Software & Services Developer、BizSpark、Most Valuable Professional (MVP)、Regional Director (RD) が含まれます。*
 
 
 > [!NOTE]
@@ -63,7 +61,7 @@ Visual Studio App Center を開始するのは簡単です。
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>Q:ブラウザーがサポートされていないというエラーが表示されます。  理由
-A:App Center では、一部の古いブラウザーでは提供されていない可能性がある最新の機能を必要とします。  お使いのブラウザーがサポートされていない場合は、次の手順に従います。
+A: App Center では、一部の古いブラウザーでは提供されていない可能性がある最新の機能を必要とします。  お使いのブラウザーがサポートされていない場合は、次の手順に従います。
 1.  別のブラウザー (Microsoft Edge、または Google Chrome、Firefox、または Safari の最新のバージョンなど) を開きます。
 2.  Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) に接続し、サインインしてください。
 3.  ここで Visual Studio App Center タイルにある **[開始]** リンクをクリックします。

@@ -10,32 +10,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a654632bdd551843221e6d4777812983ad73a24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99bbb6ba880ace8b21ae6b6009ee84cffee79485
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989615"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618732"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild でのログ
-ログを使用すると、ビルドの進行状況を監視できます。 ログは、ログ ファイルにイベント、メッセージ、警告、エラーをキャプチャします。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] でのログのさまざまな面を説明します。  
-  
- [ビルド ロガー](../msbuild/build-loggers.md)  
- シングル プロセッサ ロガーの作成に必要な手順について説明します。  
-  
- [マルチプロセッサ環境でのログ](../msbuild/logging-in-a-multi-processor-environment.md)  
- マルチプロセッサ環境でのログの仕組みと、マルチプロセッサ ログの 2 つのモデルについて説明します。  
-  
- [マルチプロセッサ対応のロガーの記述](../msbuild/writing-multi-processor-aware-loggers.md)  
- マルチプロセッサ対応のロガーの作成方法および ConfigurableForwardingLogger の使用方法について説明します。  
-  
- [転送 logger の作成](../msbuild/creating-forwarding-loggers.md)  
- カスタム転送ロガーを作成する方法について説明します。  
-  
-## <a name="see-also"></a>関連項目  
- [複数プロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
- 複数のプロジェクトを並列に実行して、これらのプロジェクトをより速くビルドする方法について説明します。
+ログを使用すると、ビルドの進行状況を監視できます。 ログは、ログ ファイルにイベント、メッセージ、警告、エラーをキャプチャします。
+
+## <a name="in-this-section"></a>このセクションの内容
+- [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)
+
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] でのログのさまざまな面を説明します。
+
+- [ビルド ロガー](../msbuild/build-loggers.md)
+
+ シングル プロセッサ ロガーの作成に必要な手順について説明します。
+
+- [マルチプロセッサ環境でのログ](../msbuild/logging-in-a-multi-processor-environment.md)
+
+ マルチプロセッサ環境でのログの仕組みと、マルチプロセッサ ログの 2 つのモデルについて説明します。
+
+- [マルチプロセッサ対応のロガーの記述](../msbuild/writing-multi-processor-aware-loggers.md)
+
+ マルチプロセッサ対応のロガーの作成方法および ConfigurableForwardingLogger の使用方法について説明します。
+
+- [転送 logger の作成](../msbuild/creating-forwarding-loggers.md)
+
+ カスタム転送ロガーを作成する方法について説明します。
+
+## <a name="see-also"></a>関連項目
+- [複数プロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) 複数のプロジェクトを並列に実行して、これらのプロジェクトをより速くビルドする方法について説明します。

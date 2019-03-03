@@ -13,19 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043714"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796765"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Visual Studio で JavaScript と TypeScript のコードをソリューションまたはプロジェクトなしで開発します
 
-Visual Studio 2017 では、[プロジェクトまたはソリューションなしでコードを開発する](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)機能が導入されました。コードのフォルダーを開いたらすぐに、IntelliSense、検索、リファクタリング、デバッグなど、豊富なエディター サポートの利用を開始できます。
-これらの機能に加え、Node.js Tools for Visual Studio では、TypeScript ファイルをビルドする、npm パッケージを管理する、npm スクリプトを実行するためのサポートが追加されます。
+Visual Studio 2017 では、[プロジェクトまたはソリューションなしでコードを開発する](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)機能が導入されました。コードのフォルダーを開いたらすぐに、IntelliSense、検索、リファクタリング、デバッグなど、豊富なエディター サポートの利用を開始できます。 これらの機能に加え、Node.js Tools for Visual Studio では、TypeScript ファイルをビルドする、npm パッケージを管理する、npm スクリプトを実行するためのサポートが追加されます。
 
-まず、Visual Studio を開いたときに表示されるスタート ページで **[フォルダーを開く]** を選択するか、ツール バーで **[ファイル]**、**[開く]**、**[フォルダー]** の順に選択します。 ソリューション エクスプローラーには、フォルダーのすべてのファイルが表示されます。いずれかのファイルを開いて編集を開始できます。 バックグラウンドでは、Visual Studio によってファイルにインデックスが作成され、npm、ビルド、デバッグ機能が有効になります。
+開始するには、ツール バーで **[ファイル]** > **[開く]** > **[フォルダー]** の順に選択します。 ソリューション エクスプローラーには、フォルダーのすべてのファイルが表示されます。いずれかのファイルを開いて編集を開始できます。 バックグラウンドでは、Visual Studio によってファイルにインデックスが作成され、npm、ビルド、デバッグ機能が有効になります。
 
 > [!IMPORTANT]
 > npm 統合を含め、この記事で説明する機能の多くは、Visual Studio 2017 バージョン 15.8 を必要とします。

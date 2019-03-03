@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82385221988a0a2eb9ed562742abc16c8552f9d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967272"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639948"
 ---
 # <a name="measure-mode-onoff"></a>測定モード オン/オフ
-このツールを使用すると、タイムラインの時間の長さを正確に測定できます。 測定モードを有効にするには、測定ボタン (ルーラー アイコン付き) をクリックし、タイムラインにドラッグします。 ドラッグすると、ポインターの下の領域が黄色で強調表示され、測定された時間は、ボタンの右側にあるツール バーに表示されます。 この値は、ドラッグ時に動的に計算されるため、特定のイベントにかかる時間がすぐにわかります。 マウス ボタンを離しても、時間の値は表示されたままです。  
-  
- 測定プロセスは繰り返せますが、表示されるのは最新のものだけです。 測定ボタンをもう一度クリックし、測定モードをオフにします。  
-  
-## <a name="see-also"></a>関連項目  
- [チャネルの管理](../profiling/manage-channels.md)   
- [ズーム コントロール (スレッド ビュー)](../profiling/zoom-control-threads-view.md)   
- [スレッド ビュー](../profiling/threads-view-parallel-performance.md)
+このツールを使用すると、タイムラインの時間の長さを正確に測定できます。 測定モードを有効にするには、測定ボタン (ルーラー アイコン付き) をクリックし、タイムラインにドラッグします。 ドラッグすると、ポインターの下の領域が黄色で強調表示され、測定された時間は、ボタンの右側にあるツール バーに表示されます。 この値は、ドラッグ時に動的に計算されるため、特定のイベントにかかる時間がすぐにわかります。 マウス ボタンを離しても、時間の値は表示されたままです。
+
+ 測定プロセスは繰り返せますが、表示されるのは最新のものだけです。 測定ボタンをもう一度クリックし、測定モードをオフにします。
+
+## <a name="see-also"></a>関連項目
+- [チャネルの管理](../profiling/manage-channels.md)
+- [ズーム コントロール (スレッド ビュー)](../profiling/zoom-control-threads-view.md)
+- [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

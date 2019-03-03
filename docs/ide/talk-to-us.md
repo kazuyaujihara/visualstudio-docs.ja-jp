@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 222d96935418a46038f369c25472ed1a938215e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946078"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609437"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 製品フィードバック
 
@@ -38,12 +38,12 @@ Visual Studio を使用していて問題 &mdash; クラッシュ、パフォー
 
 Visual Studio のサポート情報については、[サポートのライフ サイクルとサービス](/visualstudio/productinfo/vs-servicing-vs)に関するページを参照してください。
 
-その他の Microsoft 製品とサービスについては、オンラインヘルプの「[Microsoft サポート](http://go.microsoft.com/fwlink/?LinkID=99019)」を参照してください。
+その他の Microsoft 製品とサービスについては、オンラインヘルプの「[Microsoft サポート](https://go.microsoft.com/fwlink/?LinkID=99019)」を参照してください。
 
 > [!NOTE]
-> 米国とカナダ以外の国でのサポートは異なる場合があります。 地域別のサポート連絡先の一覧については、[世界各国の Microsoft サイト](http://www.microsoft.com/worldwide/)に関するページを参照してください。
+> 米国とカナダ以外の国でのサポートは異なる場合があります。 地域別のサポート連絡先の一覧については、[世界各国の Microsoft サイト](https://www.microsoft.com/worldwide/)に関するページを参照してください。
 
-マイクロソフトから直接の管理サポートを必要とする大規模な組織では、さまざまなエンタープライズ レベルのサポートを契約できます。 詳細については、[Microsoft Enterprise サポート ソリューション](http://go.microsoft.com/fwlink/?LinkId=258223)に関するページを参照してください。
+マイクロソフトから直接の管理サポートを必要とする大規模な組織では、さまざまなエンタープライズ レベルのサポートを契約できます。 詳細については、[Microsoft Enterprise サポート ソリューション](https://go.microsoft.com/fwlink/?LinkId=258223)に関するページを参照してください。
 
 製品が新しいコンピューターやデバイスに最初からインストールされていた場合は、ハードウェアの製造元がこのソフトウェアの技術サポートや支援を行います。 サポートについては、製造元に直接お問い合わせください。
 
@@ -51,7 +51,7 @@ Microsoft サポート サービスは、当時最新だった価格、条項、
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>開発者コミュニティへの参加
 
-質問や回答を他の開発者と共有する場合は、[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com) サイト、[MSDN フォーラム](https://social.msdn.microsoft.com/Forums/home)、または [StackOverflow](http://stackoverflow.com/) を使用します。 「[開発者コード サンプル](https://code.msdn.microsoft.com/)」サイトで、他の開発者のコードを閲覧したり、ご自分の例を公開したりすることもできます。
+ご自分の質問や回答を他の開発者と共有する場合は、[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com) サイト、[MSDN フォーラム](https://social.msdn.microsoft.com/Forums/home)、または [StackOverflow](https://stackoverflow.com/) を使用します。 「[開発者コード サンプル](https://code.msdn.microsoft.com/)」サイトで、他の開発者のコードを閲覧したり、ご自分の例を公開したりすることもできます。
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Visual Studio ドキュメントの品質向上にご協力ください
 

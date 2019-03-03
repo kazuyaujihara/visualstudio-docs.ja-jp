@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86f1f8ea2ca9f55610c666ad5fa28fa189bb3be1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955753"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708330"
 ---
 # <a name="options-page-environment-node-properties"></a>[環境] ノード プロパティ ([オプション] ページ)
-このドキュメントでは、**[オプション]** ダイアログ ボックスの **[環境]** カテゴリ (`DTE.Properties("Environment", <Property Page>)`) に関連付けられているページ (またはプロパティ コレクション) について説明します。 各サブセクションの見出しは、Properties コレクションにアクセスするための呼び出しです。その下の表では、コレクションのプロパティを示します。
+
+この記事では、**[オプション]** ダイアログ ボックスの **[環境]** カテゴリ `DTE.Properties("Environment", <Property Page>)` に関連付けられているページ (またはプロパティ コレクション) について説明します。 各サブセクションの見出しは、Properties コレクションにアクセスするための呼び出しです。その下の表では、コレクションのプロパティを示します。
 
 ## <a name="general"></a>全般
- `DTE.Properties("Environment", "General")`
+
+`DTE.Properties("Environment", "General")`
 
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|
@@ -37,7 +39,8 @@ ms.locfileid: "55955753"
 |AutohidePinActiveTabOnly|Get/Set (Boolean)|**[自動的に隠す]** ボタンをアクティブなタブに対してのみ実行するかどうかを指定します。|
 
 ## <a name="add-inmacros-security"></a>アドイン/マクロ セキュリティ
- `DTE.Properties("Environment", "AddinMacrosSecurity")`
+
+`DTE.Properties("Environment", "AddinMacrosSecurity")`
 
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|
@@ -46,7 +49,8 @@ ms.locfileid: "55955753"
 |LoadAddinsFromTheWeb|Get/Set (Boolean)|Web 上の URL からのアドインの読み込みを許可します。|
 
 ## <a name="documents"></a>ドキュメント
- `DTE.Properties("Environment", "Documents")`
+
+`DTE.Properties("Environment", "Documents")`
 
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|
@@ -63,7 +67,8 @@ ms.locfileid: "55955753"
 |DocumentDockPreference|Get/Set (Enum)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>。 開かれたドキュメントを挿入するタブ内の位置です。|
 
 ## <a name="extension-manager"></a>拡張機能マネージャー
- `DTE.Properties("Environment", "ExtensionManager")`
+
+`DTE.Properties("Environment", "ExtensionManager")`
 
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|
@@ -72,7 +77,8 @@ ms.locfileid: "55955753"
 |AutomaticallyCheckForUpdates|Get/Set (Boolean)|インストール済みの拡張機能に対する更新プログラムがあるかどうかを自動的に確認します。|
 
 ## <a name="find-and-replace"></a>検索と置換
- `DTE.Properties("Environment", "FindAndReplace")`
+
+`DTE.Properties("Environment", "FindAndReplace")`
 
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|
@@ -82,7 +88,8 @@ ms.locfileid: "55955753"
 |HideWindowsAfterMatchFromQuickFindReplace|Get/Set (Boolean)|**クイック検索**または**クイック置換**で一致が見つかった後、**[検索と置換]** ウィンドウを表示しません。|
 
 ## <a name="import-and-export-settings"></a>設定のインポートとエクスポート
- `DTE.Properties("Environment", "Import and Export Settings")`
+
+`DTE.Properties("Environment", "Import and Export Settings")`
 
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|
@@ -91,21 +98,24 @@ ms.locfileid: "55955753"
 |AutoSaveFile|Get/Set (String)|ユーザー設定が自動的に保存されるファイルの名前です。|
 
 ## <a name="international-settings"></a>国際対応の設定
- `DTE.Properties("Environment", "International")`
+
+`DTE.Properties("Environment", "International")`
 
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|
 |言語|Get/Set (String)|Visual Studio の現在の言語の LCID 値です。|
 
 ## <a name="keyboard"></a>キーボード
- `DTE.Properties("Environment", "Keyboard")`
+
+`DTE.Properties("Environment", "Keyboard")`
 
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|
 |Scheme|Get/Set (String)|組み込みスキームを含む文字列、または読み込まれた .vsk ファイルの完全パスを含む文字列を返します。 .vsk ファイルが読み込まれていない場合は "(既定)" を返します。|
 
 ## <a name="projects-and-solution"></a>プロジェクトおよびソリューション
- `DTE.Properties("Environment", "ProjectsAndSolution")`
+
+`DTE.Properties("Environment", "ProjectsAndSolution")`
 
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|
@@ -128,7 +138,10 @@ ms.locfileid: "55955753"
 |MSBuildOutputVerbosity|Get/Set (String)|ビルド出力の詳細出力レベルを指定します。|
 
 ## <a name="startup"></a>スタートアップ
- `DTE.Properties("Environment", "Startup")`
+
+`DTE.Properties("Environment", "Startup")`
+
+::: moniker range="vs-2017"
 
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|
@@ -137,8 +150,19 @@ ms.locfileid: "55955753"
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|StartPageRefreshInterval で指定された間隔が経過するたびにスタート ページを更新します。|
 |StartPageRefreshInterval|Get/Set (Short)|スタート ページを更新する間隔 (分単位) です。|
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|プロパティ項目名|[値]|説明|
+| - |-----------|-----------------|
+|OnStartUp|Get/Set (Enum)|起動時に実行するアクションです。<xref:EnvDTE.vsStartUp> から取得されます。|
+
+::: moniker-end
+
 ## <a name="tasklist"></a>TaskList
- `DTE.Properties("Environment", "TaskList")`
+
+`DTE.Properties("Environment", "TaskList")`
 
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|
@@ -148,7 +172,8 @@ ms.locfileid: "55955753"
 |CommentTokens|SafeArray|コメント トークン値の SafeArray を返します。 各値には、`Name` (文字列) フィールドおよび `Priority` (<xref:EnvDTE.vsTaskPriority>、High、Medium、または Low) フィールドがあります。|
 
 ## <a name="web-browser"></a>Web ブラウザー
- `DTE.Properties("Environment", "WebBrowser")`
+
+`DTE.Properties("Environment", "WebBrowser")`
 
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|

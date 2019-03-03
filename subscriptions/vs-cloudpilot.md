@@ -6,19 +6,17 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CloudPilot 特典について説明します
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 90a71ec94e1fbd102cf731fef94394096b1e0ba7
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 5368bc386b7ee4ff1fa709fcc038ddb7a7a0c13d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380117"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842560"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CloudPilot 特典
 
-いくつかの簡単な手順で、アプリを Microsoft Azure に移行します。 数分で、Containers、VM、App Services、SQL Azure、SQL MI への正常な移行のためにコード変更が必要なすべてのコード行が識別されます。 次に、ASR、DMA、および DMS を活用するウィザードを使用して、アプリを Azure に移行します。 
+いくつかの簡単な手順で、アプリを Microsoft Azure に移行します。 数分で、Containers、VM、App Services、SQL Azure、SQL MI への正常な移行のためにコード変更が必要なすべてのコード行が識別されます。 次に、ASR、DMA、および DMS を活用するウィザードを使用して、アプリを Azure に移行します。
 
 UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure にすばやく簡単に移行できるようにするために設計されています。  手動による評価の何分の 1 かの時間で、CloudPilot は Azure PaaS & IaaS の移行コストを正確に判断し、詳細な推奨事項、クラウドでアプリケーションを実行するために変更が必要なコードがあるコード行を提供します。 CloudPilot は、クラウドの移行作業および開発計画の最初の評価、クラウド向けに詳細なコード レベルの変更を提供することによるリファクタリング プロセス、およびエンタープライズ テクノロジ コントロールおよびポリシーに対する最終テストを支援します。
 
@@ -30,10 +28,10 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 特典タイル](_img/vs-cloudpilot/vs-cloudpilot-tile-ent.png)
-   
+
 0. コードが正常に取得されたことを知らせるメッセージが表示されます。  **[アクティブ化]** をクリックすると、CloudPilot ページにリダイレクトされます。このページでアクティブ化プロセスを続行できます。  (今すぐアクティブ化しない場合は、サブスクリプション ポータルで CloudPilot タイルにいつでも戻ることができます。  [コードを取得] リンクが [アクティブ化] に変わり、それをクリックすると、アクティブ化プロセスの次のステップに進みます。)
 
-0. ご自分の開発作業の CloudPilot の特典を確認します。  準備ができたら、**[アクティブ化]** ボタンをクリックします。 
+0. ご自分の開発作業の CloudPilot の特典を確認します。  準備ができたら、**[アクティブ化]** ボタンをクリックします。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot のランディング ページ](_img/vs-cloudpilot/vs-cloudpilot-landing.png)
@@ -46,14 +44,14 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
    > [!NOTE]
    > CloudPilot 特典のアクティブ化は、組織あたり 10 個に制限されており、Visual Studio Enterprise または Visual Studio Professional サブスクリプションの任意の組み合わせから使用されます。  組織で 10 個のアクティブ化を既に使用している場合は、CloudPilot 特典をアクティブ化することはできず、UnifyCloud から詳細情報を含む電子メールが届きます。
 
- 0. 次に、CloudPilot を習得するために設計された製品ページが表示されます。  右上隅の **[Navigate to CloudPilot]\(CloudPilot に移動\)** をクリックして、CloudPilot ポータルに移動します。  
+ 0. 次に、CloudPilot を習得するために設計された製品ページが表示されます。  右上隅の **[Navigate to CloudPilot]\(CloudPilot に移動\)** をクリックして、CloudPilot ポータルに移動します。
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot の製品ページ](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  これで完了です。  CloudPilot ポータルが表示され、CloudPilot サブスクリプションを使用してアプリケーションを Microsoft Azure に移行を開始する準備ができます。 
+0.  これで完了です。  CloudPilot ポータルが表示され、CloudPilot サブスクリプションを使用してアプリケーションを Microsoft Azure に移行を開始する準備ができます。
 
-0.  アカウントが正常に作成されるとすぐに、アカウントが正常に作成されたことを確認する電子メールが UnifyCloud VSS Support から届きます。 
+0.  アカウントが正常に作成されるとすぐに、アカウントが正常に作成されたことを確認する電子メールが UnifyCloud VSS Support から届きます。
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot 確認メール](_img/vs-cloudpilot/vs-cloudpilot-email.png)
@@ -73,7 +71,7 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 
 
 
-<sup>1</sup>  *Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine が含まれます。*
+<sup>1</sup>  *内容:Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine が含まれます。*
 
 
 > [!NOTE]
@@ -84,7 +82,7 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 
 ## <a name="support-resources"></a>サポート リソース
 -  CloudPilot の使用に関するヘルプが必要ですか。  以下のリソースを確認してください。
-    - UnifyCloud 製品に関するご質問は、[UnifyCloud にお問い合わせください](https://www.unifycloud.com/contacts/)。 
+    - UnifyCloud 製品に関するご質問は、[UnifyCloud にお問い合わせください](https://www.unifycloud.com/contacts/)。
     - [CloudPilot ユーザー マニュアル](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [サポート要求を送信する](https://support.datacamp.com/hc/requests/new)
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: ボリューム ライセンス サービス センター管理の移行に関する FAQ
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4bc2902c819f4e677127d4c2c857ed1fb5dc015
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297547"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844101"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio サブスクリプション管理の移行
 
@@ -77,10 +75,10 @@ ms.locfileid: "36297547"
 お客様の組織が移行され、新しいポータルで管理する準備が完了したという電子メールが Visual Studio サブスクリプションから送信されるまでは、引き続き VLSC を介してサブスクリプションを管理してください。
 
 ### <a name="where-can-i-locate-my-organizations-public-customer-number-pcn-or-authorization-number"></a>組織のパブリック カスタマー番号 (PCN) または承認番号はどこで確認できますか?
-[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) にサインインし、**[サブスクリプション]** > **[Visual Studio サブスクリプション]** に移動します。 PCN は **[Agreement/Public Customer Number Results]\(契約/パブリック カスタマー番号の結果\)** の下に表示されます。 PCN を確認する手順については、こちらの[ヘルプ記事](find-pcn.md)を参照してください。
+[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) にサインインして、**[サブスクリプション]** > **[Visual Studio サブスクリプション]** に移動します。 PCN は **[Agreement/Public Customer Number Results]\(契約/パブリック カスタマー番号の結果\)** の下に表示されます。 PCN を確認する手順については、こちらの[ヘルプ記事](find-pcn.md)を参照してください。
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>主要連絡先または通知連絡先が誰かを確認するにはどうすればよいですか?
-[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) にサインインし、**[ライセンス] > [関係サマリー]** に移動し、**[ライセンス ID] > [連絡先]** の順に選択します。 主要連絡先または通知連絡先を確認する手順については、こちらの[ヘルプ記事](find-primary-contact.md)を参照してください。
+[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) にサインインして、**[ライセンス] > [関係サマリー]** に移動し、**[ライセンス ID] > [連絡先]** の順に選択します。 主要連絡先または通知連絡先を確認する手順については、こちらの[ヘルプ記事](find-primary-contact.md)を参照してください。
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>主要連絡先または通知連絡先が不在である、退職した、またはオンボードを完了できなくなった場合はどうすればよいですか?
 [サポートに連絡し](https://visualstudio.microsoft.com/subscriptions/support/#talktous)、VLSC でサブスクリプションの管理に使用していたメール アドレスを伝えていただく必要があります。 確認が完了すると、サポート担当者がオンボード プロセスのお手伝いできるようになります。

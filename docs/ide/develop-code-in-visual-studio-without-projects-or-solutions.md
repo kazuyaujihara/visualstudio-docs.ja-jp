@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45828cc73e679bdf177c212604b95820bc58011c
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155358"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718550"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する
 
-Visual Studio 2017 で、ほぼすべての種類のディレクトリ ベースのプロジェクトから、ソリューションまたはプロジェクト ファイルを使用せずに Visual Studio にコードを開くことができます。 これは、たとえば、GitHub でリポジトリを複製して、直接 Visual Studio に開き、ソリューションまたはプロジェクトを作成することなく開発を開始できることを意味します。 必要な場合は、カスタム ビルド タスクを指定し、単純な JSON ファイルからパラメーターを起動できます。
+ほぼすべての種類のディレクトリ ベースのプロジェクトから、ソリューションまたはプロジェクト ファイルを使用せずに Visual Studio にコードを開くことができます。 これは、たとえば、GitHub でリポジトリを複製して、直接 Visual Studio に開き、ソリューションまたはプロジェクトを作成することなく開発を開始できることを意味します。 必要な場合は、カスタム ビルド タスクを指定し、単純な JSON ファイルからパラメーターを起動できます。
 
 Visual Studio でコード ファイルを開いた後、**ソリューション エクスプローラー**によって、フォルダー内のすべてのファイルが表示されます。 任意のファイルをクリックして、編集を開始できます。 バックグラウンドでは、Visual Studio は、ファイルのインデックス作成を開始して、IntelliSense、ナビゲーション、およびリファクタリング機能を有効にします。 ファイルを編集、作成、移動、または削除すると、Visual Studio は自動的に変更を追跡し、IntelliSense インデックスを継続的に更新します。 コードは、構文が色付けされて表示され、多くの場合、基本的な IntelliSense ステートメント入力候補を含みます。
 
@@ -29,9 +29,19 @@ Visual Studio でコード ファイルを開いた後、**ソリューション
 次のいずれかの方法で、Visual Studio にコードを開くことができます。
 
 - Visual Studio メニュー バーで、**[ファイル]** > **[開く]** > **[フォルダー]** を選択して、コードの場所を参照します。
+
 - コードを含むフォルダーのコンテキスト (右クリック) メニューで、**[Visual Studio で開く]** コマンドを選択します。
+
+::: moniker range="vs-2017"
 - Visual Studio **スタート ページ**で **[フォルダーを開く]** を選択します。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- スタート ウィンドウで **[フォルダーを開く]** リンクを選択します。
+::: moniker-end
+
 - キーボードのユーザーの場合は、Visual Studio で **Ctrl**+**shift** +**Alt**+**O** キーを押します。
+
 - 複製された GitHub リポジトリからコードを開きます。
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>複製された GitHub リポジトリからコードを開くには
