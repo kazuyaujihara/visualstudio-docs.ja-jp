@@ -1,18 +1,12 @@
 ---
 layout: LandingPage
 title: コード分析
-description: Visual Studio 2017 を使用して、コードの品質を分析する方法について説明します。
+description: Visual Studio を使用して、コードの品質を分析する方法について説明します。
 ms.date: 12/03/2018
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99d1ab0dd6eea79380b33fec76a2ba1869559f3c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949016"
 ---
 # <a name="code-analysis-in-visual-studio"></a>Visual Studio でのコード分析
 
@@ -78,7 +72,7 @@ Visual Studio では、コードの品質の分析と向上のためのさまざ
 </ul>
 
 <hr>
-<h2>参照</h2>
+<h2>関連項目</h2>
 
 <ul class="panelContent cardsW">
     <li>

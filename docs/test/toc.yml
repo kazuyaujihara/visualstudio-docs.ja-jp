@@ -93,7 +93,7 @@ items:
       href: how-to-use-ctest-for-cpp.md
     - name: C/C++ DLL 用の単体テストの記述
       href: how-to-write-unit-tests-for-cpp-dlls.md
-    - name: 'チュートリアル: C/C++ DLL 用の単体テストの記述'
+    - name: 'チュートリアル: C++ DLL 用の単体テストの記述'
       href: walkthrough-writing-unit-tests-for-cpp-dlls.md
     - name: C++ API リファレンス用の Microsoft 単体テスト フレームワーク
       href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
@@ -121,7 +121,7 @@ items:
     href: live-unit-testing-whats-new.md
   - name: Live Unit Testing の概要
     href: live-unit-testing-start.md
-  - name: Visual Studio 2017 Enterprise Edition でライブ単体テストを使用する
+  - name: Enterprise エディションで Live Unit Testing を使用する
     href: live-unit-testing.md
   - name: Live Unit Testing に関する FAQ
     href: live-unit-testing-faq.md
@@ -201,7 +201,7 @@ items:
         items:
         - name: コマンド ライン
           href: how-to-select-a-load-test-run-setting-from-the-command-line.md
-  - name: 'チュートリアル: ロード テストの作成と実行'
+  - name: 'チュートリアル: ロード テストの作成および実行'
     href: walkthrough-create-and-run-a-load-test.md
   - name: Web パフォーマンス テスト
     items:
@@ -216,7 +216,7 @@ items:
   - name: テスト コントローラーとテスト エージェント
     href: configure-test-agents-and-controllers-for-load-tests.md
     items:
-    - name: 必要条件
+    - name: 要件
       href: test-controller-and-test-agent-requirements-for-load-testing.md
     - name: テスト コントローラーとテスト エージェントの管理
       href: manage-test-controllers-and-test-agents.md
@@ -331,7 +331,7 @@ items:
 - name: UI テスト自動化
   href: use-ui-automation-to-test-your-code.md
   items:
-  - name: 'チュートリアル: コード化された UI テストの作成、編集、管理'
+  - name: 'チュートリアル: コード化された UI テストの作成、編集、保守'
     href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
   - name: コード化された UI テストを使用して UWP アプリをテストする
     href: test-uwp-app-with-coded-ui-test.md
@@ -370,9 +370,9 @@ items:
     href: lab-management/use-build-or-rm-instead-of-lab-management.md
   - name: テスト エージェントとテスト コントローラーのインストール
     href: lab-management/install-configure-test-agents.md
-ms.openlocfilehash: 3035030458d8d0a3914952d606ca775ad33a62fc
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: c361abfb14ec9c89054b08d561c11e060d05a6af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621514"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223794"
