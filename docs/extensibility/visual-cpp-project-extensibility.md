@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9474bd1dc78dd9b2896749d92fa796a3febd1104
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692061"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223560"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio の C++ プロジェクト システムの機能拡張とツールセットの統合
 
@@ -604,7 +604,7 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 ## <a name="project-cache-and-extensibility"></a>プロジェクトのキャッシュと機能拡張
 
-Visual Studio 2017 で大規模な C++ のソリューションを使用する場合は、パフォーマンスを向上させるために、[プロジェクト キャッシュ](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-solution-load-with-vs-15/)が導入されました。 プロジェクトのデータを設定し、MSBuild または CPS プロジェクトをメモリに読み込むことがなくプロジェクトを読み込むために使用し、SQLite データベースとして実装されます。
+Visual Studio 2017 で大規模な C++ のソリューションを使用する場合は、パフォーマンスを向上させるために、[プロジェクト キャッシュ](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/)が導入されました。 プロジェクトのデータを設定し、MSBuild または CPS プロジェクトをメモリに読み込むことがなくプロジェクトを読み込むために使用し、SQLite データベースとして実装されます。
 
 CPS オブジェクトをキャッシュから読み込まれている .vcxproj プロジェクトの表示がないため、拡張機能の MEF コンポーネントをインポート`UnconfiguredProject`または`ConfiguredProject`を作成できません。 拡張機能をサポートするには、Visual Studio プロジェクトを使用して (または使用する可能性があります) MEF 拡張機能かどうかを検出すると、プロジェクトのキャッシュは使用されません。
 
