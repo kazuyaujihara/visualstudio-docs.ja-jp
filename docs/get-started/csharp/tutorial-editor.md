@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebcf76f07eadaee6402facb4fa62a3ac309ebbac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 496dbfb48b8cc8052d174ba1dd69faa3b4fc9d01
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933159"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722500"
 ---
 # <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
 
@@ -109,7 +109,7 @@ Visual Studio で提供されている便利な*コード スニペット*を使
 
 ## <a name="view-symbol-definitions"></a>シンボル定義の表示
 
-Visual Studio エディターでは、型やメソッドなどの定義の検査を容易に行うことができます。1 つの方法として、たとえば、シンボルが参照されている任意の場所で **[定義へ移動]** を選択して、定義を含むファイルに移動します。 作業中のファイルからフォーカスを移動しないより迅速な方法としては、[[定義をここに表示]](../../ide/go-to-and-peek-definition.md#peek-definition) を使用します。 `string` 型の定義を参照してみましょう。
+Visual Studio エディターでは、型やメソッドなどの定義の検査を容易に行うことができます。1 つの方法として、たとえば、シンボルが参照されている任意の場所で **[定義へ移動]** を選択するか **F12** キーを押して、定義を含むファイルに移動します。 作業中のファイルからフォーカスを移動しないより迅速な方法としては、[[定義をここに表示]](../../ide/go-to-and-peek-definition.md#peek-definition) を使用します。 `string` 型の定義を参照してみましょう。
 
 1. `string` が出現している箇所を右クリックし、コンテンツ メニューから **[定義をここに表示]** を選択します。 または、**Alt** + **F12** キーを押します。
 
