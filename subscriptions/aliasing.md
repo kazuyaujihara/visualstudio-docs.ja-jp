@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 別名またはフレンドリ名の使用でサインインに失敗する場合がある
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817439"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841628"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>別名を使用した Visual Studio サブスクリプションへのサインインが失敗する場合がある
 
@@ -150,7 +148,7 @@ Visual Studio サブスクリプションが割り当てられ、ウェルカム
 
 6. これで特典が表示されます。
 
-注: 将来、 https://my.visualstudio.com にアクセスしたときに、使用するアカウント ("職場または学校アカウント" または "個人用アカウント" など) を選択するように求められる場合があります。  上記の手順を実行したら、"個人用アカウント" オプションを利用する必要があります。
+メモ:将来、 https://my.visualstudio.com にアクセスしたときに、使用するアカウント ("職場または学校アカウント" または "個人用アカウント" など) を選択するように求められる場合があります。  上記の手順を実行したら、"個人用アカウント" オプションを利用する必要があります。
 
 問題がある場合は、サポート チームにお問い合わせください (https://visualstudio.microsoft.com/subscriptions/support/)。
 
