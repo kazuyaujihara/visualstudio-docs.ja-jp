@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023916"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323933"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft ヘルプ ビューアー SDK
 
@@ -29,7 +29,8 @@ ms.locfileid: "55023916"
 
 -   その他のリソース
 
-### <a name="creating-a-topic-f1-support"></a>(F1 サポート) トピックの作成
+## <a name="create-a-topic-f1-support"></a>作成に関するトピック (F1 サポート)
+
 このセクションでは、表示されるトピックで、トピックの要件、(F1 サポート要件を含む) のトピックと、最後に、例のトピックをその表示された結果を作成する方法の簡単な説明のコンポーネントの概要を示します。
 
 **ヘルプ ビューアーのトピックの概要**
@@ -95,13 +96,13 @@ ContosoTopic4.htm、という名前の新しい XHTML ドキュメントを作�
 
 -   この場合は、独自のブランド化パッケージを Visual Studio ヘルプ ビューアーのブランド パッケージの一種を使用します。
 
--   F1 メタデータの名前と値の追加 ("Microsoft.Help.F1"コンテンツ"ContosoTopic4"=) は、IDE のプロパティ バッグ内の指定された F1 値と一致します。  (詳細については、f1 キーのサポート セクションを参照してください)。 これは、f1 キーに一致する値、IDE で f1 キーを選択すると、このトピックを表示する IDE 内から呼び出します。
+-   F1 メタデータの名前と値の追加 ("Microsoft.Help.F1"コンテンツ"ContosoTopic4"=) は、IDE のプロパティ バッグ内の指定された F1 値と一致します。 (詳細については、f1 キーのサポート セクションを参照してください)。これは、f1 キーに一致する値、IDE で f1 キーを選択すると、このトピックを表示する IDE 内から呼び出します。
 
--   トピック ID を追加します。 このトピックにリンクするその他のトピックで使用される文字列です。  これは、このトピックではヘルプ ビューアー ID です。
+-   トピック ID を追加します。 このトピックにリンクするその他のトピックで使用される文字列です。 これは、このトピックではヘルプ ビューアー ID です。
 
 -   目次のこのトピックの目次ノードが表示される場所を定義する、このトピックの親ノードを追加します。
 
--   目次のこのトピックのノードの順序を追加します。 親ノードに子ノードの n の数が設定されているときは、このトピックの場所の子ノードの順序で定義します。 たとえば、このトピックでは、4 つの子トピックの数 4)。
+-   目次のこのトピックのノードの順序を追加します。 親ノードの場合は`n`子の数、ノードでは、このトピックの場所を子ノードの順序に定義します。 たとえば、このトピックでは、4 つの子トピックの数 4 がいます。
 
 メタデータ セクションの例:
 
@@ -124,7 +125,6 @@ ContosoTopic4.htm、という名前の新しい XHTML ドキュメントを作�
 
 </body>
 </html>
-
 ```
 
 **トピックの本文**
@@ -141,10 +141,10 @@ ContosoTopic4.htm、という名前の新しい XHTML ドキュメントを作�
 
 5.  コード言語固有のテキストを追加します。`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` なお`devLangnu=`他の言語を入力することができます。 たとえば、 `devLangnu="Fortran"` Fortran を表示するとき DisplayLanguage のコード スニペット Fortran を =
 
-6.  ページのリンクを追加します。 `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6.  ページのリンクを追加します。 `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  注: のサポートされていない新しい「表示言語」(例では、 F#、Cobol、Fortran) コードの色付け、コード スニペットでは白黒になります。
+> 注: のサポートされていない新しい「表示言語」(例では、 F#、Cobol、Fortran) コードの色付け、コード スニペットでは白黒になります。
 
 **ビューアーのヘルプ トピックを例**コードは、メタデータ、コード スニペット、折りたたみ可能な領域、および言語固有のテキストを定義する方法を示しています。
 
@@ -257,7 +257,7 @@ some F# code
 
     <div id="seeAlsoSection" class="section">
     <div class="seeAlsoStyle">
-        <a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>
+        <a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>
     </div>
  </div>
 </div>
@@ -340,9 +340,21 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 次のレジストリ キーと値を追加します。
 
-HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic ヘルプ キー。小売価格でデバッグ出力を表示します。うん
+::: moniker range="vs-2017"
 
-[ヘルプ] メニュー項目で、IDE で「ヘルプ コンテキストのデバッグ」を選択します。
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic ヘルプ**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic ヘルプ**
+
+::: moniker-end
+
+値:小売店のデータのデバッグ出力を表示する:うん
+
+IDE では、[ヘルプ] メニュー項目で、次のように選択します。**ヘルプ コンテキストのデバッグ**します。
 
 **コンテンツのメタデータ**
 
@@ -366,7 +378,8 @@ HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic ヘルプ キー�
 | \< メタ name="Microsoft.Help.TopicVersion コンテンツ ="[トピックの「バージョン番号]"/> | 複数のバージョンがカタログに存在する場合は、このバージョンのトピックを指定します。 このタグはトピックの 1 つ以上のバージョンに存在する場合、カタログ、たとえば、カタログでは、.NET Framework 3.5 とトピックのトピックを含む、.NET Framework 4 のどちらも同じマイクロときに、必要なため、一意である Microsoft.Help.Id は限りませんが、します。ソフトです。Help.Id します。 |
 | \< メタデータ名"SelfBranded"コンテンツを = =「TRUE または FALSE」/> | ここでは、ヘルプ ライブラリ マネージャーのスタートアップのブランド パッケージまたはトピックに固有のブランド パッケージかどうかを指定します。 このタグは TRUE である必要がありますまたは FALSE。 場合は、関連するトピックのブランド パッケージは、ヘルプ ライブラリ マネージャーを開始するので、その他のコンテンツのレンダリングとは異なる場合でもを意図したとおり、トピックが表示されるときに設定されているブランド パッケージをオーバーライドし、TRUE になります。 FALSE の場合は、ヘルプ ライブラリ マネージャーの開始時に設定されているブランド パッケージに従って、現在のトピックが表示されます。 既定では、ヘルプ ライブラリ マネージャー前提を false に SelfBranded 変数が TRUE であると宣言されない限り自己ブランド化そのため、宣言する必要はない\<メタ名"SelfBranded"コンテンツを = ="FALSE"/>。 |
 
-### <a name="creating-a-branding-package"></a>ブランド パッケージを作成します。
+## <a name="create-a-branding-package"></a>ブランド パッケージを作成します。
+
 Visual Studio のリリースには、Visual Studio パートナーの統合シェルと分離を含む別の Visual Studio 製品数が含まれます。  各製品には、ある程度のサポート、製品に固有のブランド化トピック ベースのヘルプ コンテンツが必要です。  たとえば、Visual Studio のトピックが必要です、一貫性のあるブランド プレゼンテーション ISO シェルをラップする SQL Studio は、独自固有のヘルプ コンテンツのブランド化の各トピックが必要です。  統合の Shell パートナーは、ブランド化、独自のトピックを維持しながら Visual Studio 製品のヘルプ コンテンツの親内に、ヘルプ トピックを必要があります。
 
 ブランド パッケージは、ヘルプ ビューアーを格納している製品によってインストールされます。  Visual Studio 製品。
@@ -432,7 +445,6 @@ Branding.xml ファイルが一貫してトピックが含まれている場合�
 注:"{n}"の先の変数は、コードの依存関係を持つ - を削除するか、これらの値を変更すると、エラーおよびアプリケーション クラッシュの原因の可能性があります。 Visual Studio ブランド パッケージには、ローカリゼーション識別子 (例 _locID="codesnippet.n") が含まれます。
 
 **Branding.xml**
-
 
 | | |
 | - | - |
@@ -603,7 +615,8 @@ Visual Studio コンテンツには、Visual Studio ロゴおよびその他の�
 |ccOn.png|キャプションのグラフィック||
 |ImageSprite.png|折りたたみ可能な領域を表示するために使用|展開または折りたたむグラフィック|
 
-### <a name="deploying-a-set-of-topics"></a>トピックのセットを展開します。
+## <a name="deploy-a-set-of-topics"></a>トピックのセットをデプロイします。
+
 これは、MSHA ファイルと cab ファイルまたはトピックを含む MSHCs のセットで構成されるヘルプ ビューアーのコンテンツ展開セットを作成するためのシンプルで簡単なチュートリアルです。 MSHA は、cab ファイルのセットを表す XML ファイルまたは MSHC ファイルです。 ヘルプ ビューアーは、(、コンテンツの一覧を取得する MSHA を読み取ることができます。CAB またはします。MSHC ファイル) のローカル インストールに使用できます。
 
 これは、非常に基本的な XML スキーマを記述する、ヘルプ ビューアー MSHA の入門書のみです。  この簡単な概要とサンプル HelpContentSetup.msha の下の実装例があります。
@@ -677,14 +690,14 @@ HelpContentSetup.msha ファイルのサンプル:(「コンテンツは、名�
 </div>
 </body>
 </html>
-
 ```
 
 **まとめ**
 
 使用して、上記の手順の拡張は、Visual Studio ヘルプ ビューアーのコンテンツのセットをデプロイする Vsp を有効になります。
 
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Visual Studio Shell (Integrated および分離プロセス) に追加のヘルプ
+### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Visual Studio Shell (Integrated および分離プロセス) にヘルプを追加します。
+
 **はじめに**
 
 このチュートリアルでは、Visual Studio Shell アプリケーションにヘルプ コンテンツを組み込むし、デプロイする方法を示します。
@@ -786,7 +799,7 @@ Visual Studio のコンテンツ ストアを作成します。 統合シェル�
 
 6. CatalogType.xml を作成し、格納されている (前の手順) のコンテンツ ストアに追加します。
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <catalogType>UserManaged</catalogType>
    ```
@@ -817,7 +830,7 @@ Visual Studio のコンテンツ ストアを作成します。 統合シェル�
 
 12. Contoso、IDE 内で f1 キー機能をテストする、F1 キーを選択します。
 
-### <a name="additional-resources"></a>その他の技術情報
+## <a name="additional-resources"></a>その他の技術情報
 
 ランタイム API では、次を参照してください。 [Windows API のヘルプ](/previous-versions/windows/desktop/helpapi/helpapi-portal)します。
 
