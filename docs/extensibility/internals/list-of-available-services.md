@@ -129,8 +129,8 @@ ms.locfileid: "56695792"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | はい | はい | 使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>代わりにサービスを提供します。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | はい | はい | 格納し、現在のソリューションの .sln ファイルから情報を取得するために VSPackage を使用できます。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | いいえ | はい | では、追加し、マネージ コード アセンブリの参照を更新します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | いいえ | [はい] | 開始およびバック グラウンド スレッドで、ダウンロード サービスを停止するための Visual Studio 2017 のスタート ページのダウンロード サービスへのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | [はい] | はい | IDE のステータス バーへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | いいえ | はい | 開始およびバック グラウンド スレッドで、ダウンロード サービスを停止するための Visual Studio 2017 のスタート ページのダウンロード サービスへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | はい | はい | IDE のステータス バーへのアクセスを提供します。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | いいえ | はい | マネージ コード アセンブリの署名で使用されるパスワードで強力なキー名とキー ファイルを作成するためのメソッドへのアクセスを提供します。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | はい | はい | 複数の形式でデータを保存するためのサポートを提供するために VSPackage を使用できます。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> | はい | はい | IDE のタスク一覧 ウィンドウへのアクセスを提供します。 |

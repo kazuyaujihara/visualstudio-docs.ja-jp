@@ -106,7 +106,7 @@ Unity を使ったバージョン管理に関する注意事項:
 |[コード クローン検出を使用した重複コードの検出](https://msdn.microsoft.com/library/hh205279.aspx)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|
 |[マネージド コードの複雑さと保守性の測定](../code-quality/code-metrics-values.md)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|
 |[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|×|[Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity Web サイト)。|
-|[.Net Framework のメモリ分析の問題](https://msdn.microsoft.com/library/dn342825.aspx)|×|Visual Studio ツールには、(Unity で使用するような) プロファイリング用の Mono フレームワークへのフックはありません。 [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity ドキュメント)。|
+|[.NET Framework のメモリ分析の問題](https://msdn.microsoft.com/library/dn342825.aspx)|×|Visual Studio ツールには、(Unity で使用するような) プロファイリング用の Mono フレームワークへのフックはありません。 [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity ドキュメント)。|
 
 ## <a name="release-management"></a>リリース管理
 
