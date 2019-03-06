@@ -1,7 +1,7 @@
 ---
 title: クイック スタート - Cookiecutter を使用して Python プロジェクトを作成する
 description: このクイック スタートでは、Cookiecutter テンプレートを使用して Python プロジェクトを作成します。
-ms.date: 12/06/2018
+ms.date: 02/25/2019
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 76aa53b88bc9c9ecd1fc95915204c070aaa7207b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c5a3170a2fa66a68fd010b616afcd24e8661776
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920159"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843105"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>クイック スタート: Cookiecutter テンプレートからプロジェクトを作成する
 
@@ -29,13 +29,13 @@ ms.locfileid: "55920159"
 
     ![Cookiecutter テンプレートを使用した新しいプロジェクト](media/projects-from-cookiecutter1.png)
 
-1. **Microsoft/python-sklearn-classifier-cookiecutter** テンプレートを選択し、**[次へ]** を選択します。 (Cookiecutter を初めて使用する場合、この手順には数分かかる場合があります。)
+1. **Microsoft/python-sklearn-classifier-cookiecutter** テンプレートを選択し、**[次へ]** を選択します。 (特定のテンプレートを初めて使用する場合はプロセスに数分かかる場合があります。これは必須の Python パッケージが Visual Studio によってインストールされるためです。)
 
-1. 次の手順では、**[Create To]\(作成先\)** フィールドに新しいプロジェクトの場所を設定し、**[作成]** を選択します。
+1. 次の手順では、**[Create To]\(作成先\)** フィールドに新しいプロジェクトの場所を設定し、**[Create and Open Project]\(プロジェクトを作成して開く\)** を選択します。
 
     ![Cookiecutter 使用の 2 番目の手順、プロジェクト プロパティの設定](media/projects-from-cookiecutter2.png)
 
-1. 手順が完了すると、"**ファイルが正常に作成されました。**" というメッセージが表示されます。 **[ソリューション エクスプローラーで開く]** のコマンドを選択し、プロジェクトを開きます。
+1. プロセスが完了すると、**テンプレートを使用してファイルが正常に作成されました** という内容のメッセージが表示されます。ソリューション エクスプローラーでプロジェクトが自動的に開きます。
 
 1. **Ctrl** + **F5** キーを押すか、**[デバッグ]** > **[デバッグなしで開始]** の順に選択し、プログラムを実行します。
 

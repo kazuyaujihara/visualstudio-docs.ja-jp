@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53f50c3a107f9796e4fbb661f303bfcabf284cc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 11a310884f9f63264157c96bafc15e8161c0239d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710098"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323842"
 ---
-# <a name="debugging-f"></a>F# のデバッグ
+# <a name="debugging-f"></a>F\# のデバッグ
 F# のデバッグは、他のマネージド言語のデバッグとほとんど同じですが、次の例外があります。
 
 -   **[自動変数]** ウィンドウに F# 変数は表示されません。

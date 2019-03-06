@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: サブスクリプションの管理者が管理ポータルにアクセスし、ボリューム ライセンス (VL) で取得したサブスクリプションを管理する方法について説明します
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6c8a68a1a25e99018e7f41fedbfc9d01b191e2e7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379541"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953261"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>ポータルへのアクセスおよび管理者の管理: ボリューム ライセンス (VL) で取得したサブスクリプションの場合
 
@@ -22,8 +20,8 @@ ms.locfileid: "39379541"
 
 2017 年 3 月 1 日の時点で、ポータル オンボードと移行プロセスの作業をまだ行っているお客様は、サブスクリプションをボリューム ライセンス サービス センター (VLSC) で管理する必要があります。
 
-VLSC でサブスクリプションを管理する方法の詳細については、次のガイドを参照してください。「[VLSC の Visual Studio サブスクリプションを理解する](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)」、「
-[Managing Visual Studio Subscriptions for VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)」 (VLSC での Visual Studio サブスクリプションの管理)
+VLSC でのサブスクリプションの管理の詳細については、次のガイドをご覧ください: [VLSC の Visual Studio サブスクリプションを理解する](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+[VLSC の Visual Studio サブスクリプションを管理する](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
 
 **Visual Studio サブスクリプションの管理ポータル** 組織の移行は済んだものの、新しいポータルにご自身がまだ設定されていない場合、組織のオンボードと管理者としてご自身を設定してもらうために、組織のボリューム ライセンス契約の主要ご担当者様および連絡先ご担当者様にいくつかの手順を実行してもらう必要があります。
 
@@ -33,7 +31,7 @@ VLSC でサブスクリプションを管理する方法の詳細については
 
 組織を Visual Studio サブスクリプション管理ポータルにオンボードする準備が完了すると、オンボーディング プロセスを完了するように依頼する電子メールが主要ご担当者様および連絡先ご担当者様に送信されます。 以下に新しいポータルにオンボードするために実行する必要がある手順について詳しく説明します。 手順を確認したい場合は、管理者向けのこのオンボーディング ビデオを確認するか、ドキュメントの次のセクションを確認してください。
 
-1.  PCN を検索してサインインする
+1. PCN を検索してサインインする
 
      a.  電子メールでは、主要ご担当者様および連絡先ご担当者様に、専用のリンク、パブリック カスタマー番号 (PCN) の最後の 3 桁が提供されます。  (主要ご担当者様および連絡先ご担当者様が、複数の電子メールを受信した場合、複数の PCN があることを意味しています。 管理者は、各電子メールで参照されている PCN の一意のリンクを使用してプロセスを完了する必要があります。)
 
@@ -43,10 +41,10 @@ VLSC でサブスクリプションを管理する方法の詳細については
 
      d. 次に、PCN を入力する必要があります。
 
-2.  管理者を設定します。  PCN を入力した後で、新しいシステムでスーパー管理者として登録され、他のスーパー管理者や管理者 (以前はサブスクリプション管理者と呼ばれていました) を追加できるようになります。 このアクセスを失わないようにするには、組織の移行の日付の前にこれを完了する必要があります。
+2. 管理者を設定します。  PCN を入力した後で、新しいシステムでスーパー管理者として登録され、他のスーパー管理者や管理者 (以前はサブスクリプション管理者と呼ばれていました) を追加できるようになります。 このアクセスを失わないようにするには、組織の移行の日付の前にこれを完了する必要があります。
 
-3.  新しいサブスクリプション管理ポータルにアクセスします。 組織が移行した後に、新しく追加されたスーパー管理者と管理者に、新しいポータルにアクセスして、サブスクリプションの管理を開始するように招待する電子メールが送信されます。
+3. 新しいサブスクリプション管理ポータルにアクセスします。 組織が移行した後に、新しく追加されたスーパー管理者と管理者に、新しいポータルにアクセスして、サブスクリプションの管理を開始するように招待する電子メールが送信されます。
 
 新しい Visual Studio サブスクリプションの管理ポータルに追加される必要があるときに、主要/通知連絡先が誰かわからない場合は、[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) にサインインした後にこの情報を見つけることができます。 VLSC で主要/通知連絡先を見つける手順については、「[主要連絡先を確認する方法](find-primary-contact.md)」トピックを参照してください。
 
-管理者として既に設定されている場合は、Visual Studio サブスクリプション[管理ポータルhttps://manage.visualstudio.com](https://manage.visualstudio.com)に直接進むことができます。
+管理者として既に設定されている場合は、Visual Studio サブスクリプション[管理ポータル https://manage.visualstudio.com](https://manage.visualstudio.com)に直接進むことができます。

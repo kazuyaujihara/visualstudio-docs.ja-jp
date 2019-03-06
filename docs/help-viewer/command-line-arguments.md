@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff769fa7625ee1798088953a04113ffb8ed74d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944261"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323466"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>ヘルプ コンテンツ マネージャーのコマンド ライン引数
 
@@ -57,7 +57,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 |/membership|Ｘ|-   **Minimum** -- /skuId スイッチで指定する SKU に基づいて、最小限のヘルプ コンテンツ セットをインストールします。 SKU とコンテンツ セットの間のマッピングは、サービス API で公開されます。<br />-   **Recommended** -- /skuId 引数で指定する SKU の推奨ブック セットをインストールします。 インストール ソースは、サービス API または *.MSHA* です。<br />-   **Full** -- /skuId 引数で指定する SKU のすべてのブック セットをインストールします。 インストール ソースは、サービス API または *.MSHA* です。|
 |/locationpath|いいえ|ローカル ヘルプ コンテンツの既定のフォルダーを指定します。 このスイッチは、コンテンツをインストールまたは移動する場合にのみ使用する必要があります。 このスイッチを指定する場合は、/silent スイッチも指定する必要があります。|
 |/silent|いいえ|ユーザーに確認せずに、または状態通知領域のアイコンなどの UI を表示せずに、ヘルプ コンテンツをインストールまたは削除します。 *%Temp%* ディレクトリ内のファイルに出力が記録されます。 **重要:** コンテンツをサイレント モードでインストールするには、*.mshc* ファイルではなく、デジタル署名された *.cab* ファイルを使用する必要があります。|
-|/launchingApp|いいえ|ヘルプ ビューアーが親アプリケーションなしで起動されるときのアプリケーションおよびカタログ コンテキストを定義します。 このスイッチの引数は、*CompanyName*、*ProductName*、および *VersionNumber* です (例: `/launchingApp Microsoft,VisualStudio,15.0`)。<br /><br /> これは、/silent パラメーター付きでコンテンツをインストールするために必要です。|
+|/launchingApp|いいえ|ヘルプ ビューアーが親アプリケーションなしで起動されるときのアプリケーションおよびカタログ コンテキストを定義します。 このスイッチの引数は、*CompanyName*、*ProductName*、および *VersionNumber* です (例: `/launchingApp Microsoft,VisualStudio,16.0`)。<br /><br /> これは、/silent パラメーター付きでコンテンツをインストールするために必要です。|
 |/wait *秒数*|いいえ|インストール、アンインストール、および更新操作を一時停止します。 操作が既にカタログに対して進行中の場合、プロセスは特定の秒数が経過するまで続行を待機します。 無期限に待機するには 0 を使用します。|
 |/?|いいえ|ヘルプ コンテンツ マネージャーのコマンド ライン ツールのスイッチとその説明を一覧表示します。|
 

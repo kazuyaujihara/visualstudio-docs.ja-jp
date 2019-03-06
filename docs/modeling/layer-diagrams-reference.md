@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baee97f08a4e6015d6c2e1d88f83f5835431578b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957914"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223014"
 ---
 # <a name="dependency-diagrams-reference"></a>依存関係図: リファレンス
 
@@ -34,7 +34,7 @@ Visual Studio で使用することができます、*依存関係図*システ�
 この機能をサポートする Visual Studio のエディションを確認するを参照してください。 [Edition のサポート アーキテクチャとモデリング ツール](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)します。
 
 > [!NOTE]
-> Visual Studio 2017 で .NET Core プロジェクトでは、依存関係図はサポートされていません。
+> Visual Studio で .NET Core プロジェクトでは、依存関係図はサポートされていません。
 
 レイヤー間の必要とされる依存関係、または既存の依存関係を指定できます。 矢印で表されるこれらの依存関係は、どのレイヤーが、他のレイヤーが表す機能を使用できるか、または現在使用しているかを示します。 システムを個別のロールおよび関数を記述するレイヤーに編成、やすく理解、再利用、およびコードを維持するための依存関係図が役立つことができます。
 

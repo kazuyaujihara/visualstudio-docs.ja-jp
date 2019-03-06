@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952828"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703254"
 ---
 # <a name="environment-options-dialog-box"></a>[環境] ([オプション] ダイアログ ボックス)
 
@@ -35,7 +35,7 @@ ms.locfileid: "55952828"
 |キーボード マッピングのオプションを設定します。|[[キーボード] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |通知を有効にするかどうかを指定します。|[[通知] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |クイック起動ウィンドウのオプションを指定します。|[[クイック起動] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|スタート ページのオプションを指定します。|[[スタートアップ] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/startup-environment-options-dialog-box.md)|
+|スタートアップ ページを指定します。|[[スタートアップ] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/startup-environment-options-dialog-box.md)|
 |コンピューター間で設定をローミングするかどうかを指定します。|[[同期された設定] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |タスクやタスク一覧のためのオプションの設定方法を調べます。|[[タスク一覧] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |既定の [ホーム] ページや [検索] ページの変更、システム ソース エディターの変更、および Internet Explorer のオプションの設定を行います。|[[Web ブラウザー] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/web-browser-environment-options-dialog-box.md)|

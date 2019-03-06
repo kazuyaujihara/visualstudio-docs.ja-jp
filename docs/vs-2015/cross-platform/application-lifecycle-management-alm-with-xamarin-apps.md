@@ -100,7 +100,7 @@ Xamarin では、Android、iOS、および Windows を対象とするクロス�
 |[コード クローン検出を使用した重複コードの検出](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|はい||  
 |[マネージド コードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|はい||  
 |[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|いいえ|代わりに、Xamarin Studio の [Xamarin プロファイラー](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) を使用します。 Xamarin プロファイラーは現在プレビュー期間中であり、Windows を対象にした場合はまだ動作しないことに注意してください。|  
-|[.Net Framework のメモリ分析の問題](../misc/analyze-dotnet-framework-memory-issues.md)|いいえ|Visual Studio ツールには、プロファイリング用の Mono フレームワークへのフックはありません。|  
+|[.NET Framework のメモリ分析の問題](../misc/analyze-dotnet-framework-memory-issues.md)|いいえ|Visual Studio ツールには、プロファイリング用の Mono フレームワークへのフックはありません。|  
   
 ## <a name="release-management"></a>リリース管理  
  参照リンク: **[リリース管理による配置の自動化](https://msdn.microsoft.com/library/vs/alm/release/overview)**  

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47693c6fbb25fb0a7c2468abbad515f8aaf63159
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6531311e00d25947a8bb5ca2e691c941a20307ba
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694986"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222349"
 ---
 # <a name="edit-and-continue-error-message"></a>エディット コンティニュのエラー メッセージ
 
@@ -37,7 +37,7 @@ ms.locfileid: "56694986"
 -   アンマネージ デバッグのみが有効にすると、マネージ コードを編集しようとしています。 エディット コンティニュを使用しない[混合モード デバッグ](../debugger/how-to-debug-in-mixed-mode.md)します。
 -   コード変更を行うと、プログラミング言語でのエディット コンティニュでできません。 詳細については、の記事をご覧ください[コードの変更がサポートされているC# ](supported-code-changes-csharp.md)、 [Visual Basic エディット コンティニュで編集をサポートされていない](/visualstudio/debugger/supported-code-changes-csharp)、および[C++コードの変更がサポートされている](supported-code-changes-cpp.md)。
 -   デバッグを開始する代わりに、接続しているアプリでコードを編集しようとして、**デバッグ**メニュー。
--   ワトソン博士のダンプ中にコードを編集しようとしています。デバッグ
+-   ワトソン博士のダンプ中にコードを編集しようとしています。デバッグ。
 -   ハンドルされない例外が発生した後にコードを編集しようとして、オプション**ハンドルされない例外でコール スタックをアンワインド**が選択されていません。
 -   埋め込まれたランタイム アプリケーションのデバッグ中にコードを編集しようとしています。
 -   64 ビット アプリのターゲットで 4.5.1 より前の .NET Framework のバージョンを使用してマネージ コードを編集しようとしています。 エディット コンティニュでを使用する .NET Framework 4.5.1 より前に、ターゲットを設定**x86**で、  **\<ProjectName >** > **プロパティ** > **コンパイル** タブで、**高度なコンパイラ**設定します。
@@ -46,6 +46,6 @@ ms.locfileid: "56694986"
 -   最新バージョンにビルド エラーがあるために、古いバージョンのアプリのデバッグを開始します。
 
 詳細については次を参照してください:
-- [C++ の編集と続行のブログを投稿します。](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)
+- [C++ の編集と続行のブログを投稿します。](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)
 - [サポートされているコード変更 (C++)](../debugger/supported-code-changes-cpp.md)
 - [エディット コンティニュ](../debugger/edit-and-continue.md)

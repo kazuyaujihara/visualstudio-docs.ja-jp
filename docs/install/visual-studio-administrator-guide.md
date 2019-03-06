@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7294040f079bf6ff5961f985f82beea112d1f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970414"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710111"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 管理者ガイド
 
@@ -28,7 +28,7 @@ ms.locfileid: "55970414"
 
 ## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>エンタープライズ環境で Visual Studio 2017 を配置する
 
-Visual Studio 2017 をクライアント ワークステーションに配置するには、インストール対象となる各コンピューターが[最小インストール要件](/visualstudio/productinfo/vs2017-system-requirements-vs)を満たしている必要があります。 System Center などのソフトウェアから配置するか、バッチ ファイルから配置するかにかかわらず、一般的に次の手順に従って進めます。
+Visual Studio 2017 をクライアント ワークステーションに配置するには、各ターゲット コンピューターが[最小インストール要件](/visualstudio/productinfo/vs2017-system-requirements-vs)を満たしている必要があります。 System Center などのソフトウェアから配置するか、バッチ ファイルから配置するかにかかわらず、一般的に次の手順に従って進めます。
 
 1. ネットワークの場所に [Visual Studio 製品ファイルを含むネットワーク共有を作成](create-a-network-installation-of-visual-studio.md)します。
 
@@ -54,7 +54,7 @@ Visual Studio 2017 をクライアント ワークステーションに配置す
 クライアント コンピューターに[インストールされている Visual Studio インスタンスを検出して管理する](tools-for-managing-visual-studio-instances.md)ために役立つ複数のツールが用意されています。
 
 > [!TIP]
-> 管理者のガイドのドキュメントに加えて、Visual Studio 2017 セットアップの情報が、「[Heath Stewart のブログ](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/)」に多く掲載されています。
+> 管理者のガイドのドキュメントに加えて、Visual Studio 2017 セットアップの情報が、[Visual Studio セットアップのアーカイブ](https://devblogs.microsoft.com/setup/tag/vs2017/)に関するブログ記事に多く掲載されています。
 
 ## <a name="specify-customer-feedback-settings"></a>顧客フィードバック設定を指定する
 

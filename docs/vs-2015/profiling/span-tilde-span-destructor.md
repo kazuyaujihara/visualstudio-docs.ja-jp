@@ -13,28 +13,31 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 049fd5b30cdb6291436b62f65aefc27321cb9544
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 978270653e3c872be522551a6a515b42d0fb1282
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784575"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953089"
 ---
 # <a name="spanspan-destructor"></a>span::~span デストラクター
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`span` オブジェクトを破棄し、そのリソースを解放します。  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-~span();  
-```  
-  
-## <a name="requirements"></a>要件  
- **ヘッダー:** cvmarkersobj.h  
-  
- **名前空間:** Concurrency::diagnostic
- 
- ## <a name="see-also"></a>関連項目
- [span クラス](../profiling/span-class.md)
+`span` オブジェクトを破棄し、そのリソースを解放します。
+
+## <a name="syntax"></a>構文
+
+```
+~span();
+```
+
+## <a name="requirements"></a>要件
+
+**ヘッダー:** cvmarkersobj.h
+
+**名前空間:** Concurrency::diagnostic
+
+## <a name="see-also"></a>関連項目
+
+[span クラス](../profiling/span-class.md)

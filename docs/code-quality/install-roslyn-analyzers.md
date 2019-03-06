@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de4818a57dc09825e6f41a635ea777a9e3f06e2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910512"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222936"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>.NET コンパイラ プラットフォームのアナライザーをインストールします。
 
-Visual Studio 2017 には、.NET コンパイラ プラットフォームのコア セットが含まれています (*Roslyn*) アナライザーです。 これらのアナライザーが常に動作します。 その他のアナライザーをインストールするには、NuGet パッケージの場合、または Visual Studio の拡張機能として*VSIX*ファイル。
+Visual Studio には、.NET コンパイラ プラットフォームのコア セットが含まれています (*Roslyn*) アナライザーです。 これらのアナライザーが常に動作します。 その他のアナライザーをインストールするには、NuGet パッケージの場合、または Visual Studio の拡張機能として*VSIX*ファイル。
 
 ## <a name="to-install-nuget-analyzer-packages"></a>NuGet アナライザー パッケージをインストールするには
 
@@ -60,7 +60,7 @@ Visual Studio 2017 には、.NET コンパイラ プラットフォームのコ�
 
 6. 選択**変更**インストールを開始します。
 
-7. しばらくすると、2 つのインストールを完了します。 選択**閉じる**します。
+7. しばらくすると、2 つのインストールを完了します。 **[閉じる]** を選択します。
 
 8. Visual Studio を再度開きます。
 

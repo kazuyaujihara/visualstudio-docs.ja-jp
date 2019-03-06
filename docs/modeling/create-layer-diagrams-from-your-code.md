@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52919bc65366afc3e0fef5d3dbca1e5a9e7e77e1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913016"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223235"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>コードからの依存関係図の作成
 
@@ -41,7 +41,7 @@ ms.locfileid: "55913016"
 ### <a name="add-a-new-dependency-diagram-to-a-modeling-project"></a>新しい依存関係図をモデリング プロジェクトに追加します。
 
 > [!NOTE]
-> Visual Studio 2017 で .NET Core プロジェクトでは、依存関係図はサポートされていません。
+> Visual Studio で .NET Core プロジェクトでは、依存関係図はサポートされていません。
 
 1.  **アーキテクチャ**] メニューの [選択**新しい依存関係図**します。
 
@@ -113,7 +113,7 @@ ms.locfileid: "55913016"
 
      **レイヤー エクスプ ローラー**選択したレイヤーの成果物のリンクが表示されます。
 
-2.  これらのリンクを管理するには、次のタスクを行います。
+2.  これらのリンクを管理するには、次の操作を行います。
 
 |**To**|**レイヤー エクスプ ローラーで**|
 |-|-|

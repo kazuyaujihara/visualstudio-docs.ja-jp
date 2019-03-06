@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de60c41cd8110a4fe9b7db89d77f16a9609292e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943144"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627689"
 ---
 # <a name="zoom-control-threads-view"></a>ズーム コントロール (スレッド ビュー)
-ズーム コントロールは、タイムラインの表示を拡大縮小するのに役立つスライダーです。このコントロールを使用して、興味のある領域を集中的に見ることができます。 このコントロールではタイムライン ビューの中央が拡大の中心点になるため、拡大する前に、対象となる領域が中央に置かれるように調整してください。  
-  
-## <a name="zoom-in-by-dragging-in-the-timeline-view"></a>タイムライン ビュー内でのドラッグによる拡大  
- タイムライン ビュー内でドラッグして拡大すると、領域が黄色で強調表示されます。 マウス ボタンを離すと、タイムライン ビューの選択した範囲が拡大されます。  
-  
-## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>マウス ホイールを使用した拡大縮小  
- タイムライン上の任意の点をクリックし (マウス フォーカスを確実に置くため)、**Ctrl** キーを押しながらマウス ホイールを移動します (拡大するには前方へ、縮小するには後方へ)。  
-  
-## <a name="see-also"></a>関連項目  
- [チャネルの管理](../profiling/manage-channels.md)   
- [測定モード オン/オフ](../profiling/measure-mode-on-off.md)   
- [スレッド ビュー](../profiling/threads-view-parallel-performance.md)   
- [使用状況ナビゲーター](../profiling/utilization-navigator.md)
+ズーム コントロールは、タイムラインの表示を拡大縮小するのに役立つスライダーです。このコントロールを使用して、興味のある領域を集中的に見ることができます。 このコントロールではタイムライン ビューの中央が拡大の中心点になるため、拡大する前に、対象となる領域が中央に置かれるように調整してください。
+
+## <a name="zoom-in-by-dragging-in-the-timeline-view"></a>タイムライン ビュー内でのドラッグによる拡大
+ タイムライン ビュー内でドラッグして拡大すると、領域が黄色で強調表示されます。 マウス ボタンを離すと、タイムライン ビューの選択した範囲が拡大されます。
+
+## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>マウス ホイールを使用した拡大縮小
+ タイムライン上の任意の点をクリックし (マウス フォーカスを確実に置くため)、**Ctrl** キーを押しながらマウス ホイールを移動します (拡大するには前方へ、縮小するには後方へ)。
+
+## <a name="see-also"></a>関連項目
+- [チャネルの管理](../profiling/manage-channels.md)
+- [測定モード オン/オフ](../profiling/measure-mode-on-off.md)
+- [スレッド ビュー](../profiling/threads-view-parallel-performance.md)
+- [使用状況ナビゲーター](../profiling/utilization-navigator.md)

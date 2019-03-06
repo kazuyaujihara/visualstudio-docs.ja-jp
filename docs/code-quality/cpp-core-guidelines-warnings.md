@@ -8,16 +8,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954308"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223495"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 
-C++ Core ガイドラインは、ガイドライン、ルール、および C++ 専門家とデザイナーで作成された C++ のコーディングについてのベスト プラクティスの移植可能なセットです。 Visual Studio では、c++ のコード分析ツールの一部としてこれらのルールのサブセットがサポートされています。 Core ガイドラインのチェッカーが Visual Studio 2017 では、既定でインストールされ[Visual Studio 2015 用の NuGet パッケージとして利用可能な](#vs2015_corecheck)します。
+C++ Core ガイドラインは、ガイドライン、ルール、および C++ 専門家とデザイナーで作成された C++ のコーディングについてのベスト プラクティスの移植可能なセットです。 Visual Studio では、c++ のコード分析ツールの一部としてこれらのルールのサブセットがサポートされています。 Core ガイドラインのチェッカーが Visual Studio 2017 と Visual Studio 2019、既定でインストールされ[Visual Studio 2015 用の NuGet パッケージとして利用可能な](#vs2015_corecheck)します。
 
 ## <a name="the-c-core-guidelines-project"></a>C++ Core ガイドラインのプロジェクト
 

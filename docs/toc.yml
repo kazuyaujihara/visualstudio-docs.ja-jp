@@ -95,25 +95,25 @@ items:
       - name: Visual Studio のワークロードとコンポーネント ID
         href: install/workload-and-component-ids.md
         items:
-        - name: Visual Studio Enterprise 2017
+        - name: Visual Studio Enterprise
           href: install/workload-component-id-vs-enterprise.md
-        - name: Visual Studio Professional 2017
+        - name: Visual Studio Professional
           href: install/workload-component-id-vs-professional.md
-        - name: Visual Studio Community 2017
+        - name: Visual Studio コミュニティ
           href: install/workload-component-id-vs-community.md
-        - name: Visual Studio Team Explorer 2017
+        - name: Visual Studio Team Explorer
           href: install/workload-component-id-vs-team-explorer.md
-        - name: Visual Studio Desktop Express 2017
+        - name: Visual Studio Desktop Express
           href: install/workload-component-id-vs-express.md
-        - name: Visual Studio Build Tools 2017
+        - name: Visual Studio Build Tools
           href: install/workload-component-id-vs-build-tools.md
-        - name: Visual Studio Test Agent 2017
+        - name: Visual Studio Test Agent
           href: install/workload-component-id-vs-test-agent.md
-        - name: Visual Studio Test Controller 2017
+        - name: Visual Studio Test Controller
           href: install/workload-component-id-vs-test-controller.md
-        - name: Visual Studio Test Professional 2017
+        - name: Visual Studio Test Professional
           href: install/workload-component-id-vs-test-professional.md
-        - name: Visual Studio Feedback Client 2017
+        - name: Visual Studio Feedback Client
           href: install/workload-component-id-vs-feedback-client.md
       - name: Visual Studio のビルド番号とリリース日
         href: install/visual-studio-build-numbers-and-release-dates.md
@@ -172,7 +172,7 @@ items:
         href: ide/creating-solutions-and-projects.md
       - name: プロジェクトの移植、移行、およびアップグレード
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-      - name: Visual Studio 2019 プレビューでのプロジェクトの移植、移行、およびアップグレード
+      - name: Visual Studio 2019 でのプロジェクトの移植、移行、およびアップグレード
         href: porting/port-migrate-upgrade-visual-studio-projects-2019.md
       - name: プロジェクトおよびソリューションのプロパティの管理
         href: ide/managing-project-and-solution-properties.md
@@ -305,12 +305,16 @@ items:
             href: ide/reference/generate-field-property-local.md
           - name: コンストラクターの生成
             href: ide/reference/generate-constructor.md
+          - name: デコンストラクターの生成
+            href: ide/reference/generate-deconstructor.md
           - name: メソッドにパラメーターを追加する
             href: ide/reference/add-parameter.md
           - name: オーバーライドの生成
             href: ide/reference/generate-override.md
           - name: Equals および GetHashCode メソッドのオーバーライドの生成
             href: ide/reference/generate-equals-gethashcode-methods.md
+          - name: 使用の生成
+            href: ide/reference/generate-usings.md
           - name: 抽象クラスの実装
             href: ide/reference/implement-abstract-class.md
           - name: インターフェイスの実装
@@ -330,6 +334,10 @@ items:
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: Get メソッドとプロパティの間で変換する
             href: ide/reference/convert-get-method-to-property.md
+          - name: ローカル関数をメソッドに変換する
+            href: ide/reference/convert-local-function-method.md
+          - name: Foreach ループを LINQ に変換する
+            href: ide/reference/convert-foreach-linq.md
           - name: LINQ クエリを foreach ステートメントに変換する
             href: ide/reference/convert-linq-to-foreach.md
           - name: フィールドのカプセル化
@@ -340,6 +348,10 @@ items:
             href: ide/reference/extract-method.md
           - name: インラインの一時変数
             href: ide/reference/inline-temporary-variable.md
+          - name: 条件式および論理演算を反転させる
+            href: ide/reference/invert-conditional-logical.md
+          - name: if ステートメントを反転させる
+            href: ide/reference/invert-if-statement.md
           - name: 参照の近くへの宣言の移動
             href: ide/reference/move-declaration-near-reference.md
           - name: 一致するファイルへの型の移動
@@ -354,6 +366,10 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: 明示的な型の使用
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: ラムダ式またはブロックの本体の使用
+            href: ide/reference/use-block-body-lambda.md
+          - name: 未使用値およびパラメーター
+            href: ide/reference/unused-values-parameters.md
           - name: ラップ、インデント、およびパラメーターの整列
             href: ide/reference/wrap-align-indent-parameters.md
         - name: 'チュートリアル: 使用法からのコードの生成'
@@ -1092,7 +1108,7 @@ items:
   items:
   - name: Visual Studio 2017 の新機能
     href: ide/whats-new-visual-studio-2017.md
-  - name: Visual Studio 2019 Preview の新機能
+  - name: Visual Studio 2019 RC の新機能
     href: ide/whats-new-visual-studio-2019.md
   - name: リリース ノートとシステム要件
     items:
@@ -1135,9 +1151,9 @@ items:
   - name: ご意見
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 9d2edce3ea128754c4820736f90e26be9af4c479
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: a54443258922e37da185b8abd7897a2ab6a525cb
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954520"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324261"

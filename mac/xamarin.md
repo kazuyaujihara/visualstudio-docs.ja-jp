@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: cae109ef815e837026bc12366a5902d7d151edcb
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56319468"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428571"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin のモバイル アプリ開発
 
@@ -28,7 +28,7 @@ Android Designer の詳細については、[Xamarin.Android Designer の概要]
 
 ## <a name="ios"></a>iOS
 
-iOS Designer は Visual Studio for Mac と完全に統合されているので、.xib およびストーリーボード ファイルを視覚的に編集し、iOS、tvOS、および watchOS の UI と遷移を作成できます。 ツールボックスとデザイン サーフェイス間でドラッグ アンド ドロップ機能を使用してユーザー インターフェイス全体を構築できるだけでなく、直感的な方法でイベントを処理できます。 iOS Designer は、[custom controls/xamarin/ios/user-interface/designer/ios-designable-controls-overview) もサポートしています。これでは、さらにデザイン時にレンダリングが行われるメリットもあります。
+iOS Designer は Visual Studio for Mac と完全に統合されているので、.xib およびストーリーボード ファイルを視覚的に編集し、iOS、tvOS、および watchOS の UI と遷移を作成できます。 ツールボックスとデザイン サーフェイス間でドラッグ アンド ドロップ機能を使用してユーザー インターフェイス全体を構築できるだけでなく、直感的な方法でイベントを処理できます。 iOS Designer は、デザイン時のレンダリングにさらに役立つ[カスタム コントロール](/xamarin/ios/user-interface/designer/ios-designable-controls-overview)もサポートしています。
 
 ![iOS Storyboard デザイナー](media/intro-image30.png)
 

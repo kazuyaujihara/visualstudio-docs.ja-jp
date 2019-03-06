@@ -3,15 +3,9 @@ layout: HubPage
 hide_bc: true
 title: Visual Studio のドキュメント | Microsoft Docs
 titleSuffix: ''
-description: Visual Studio 2017 を使って、アプリケーション、サービス、ツールを、任意の言語で、特定のプラットフォームやデバイス向けに開発する方法について説明します。
+description: Visual Studio を使って、アプリケーション、サービス、ツールを、任意の言語で、特定のプラットフォームやデバイス向けに開発する方法について説明します。
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: 9bcd261ce7d6efbd7fac50352c9dfaa17ed6c41f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316783"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -55,7 +49,7 @@ ms.locfileid: "56316783"
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/whats-new-in-visual-studio">
+                <a href="/visualstudio/ide/whats-new-visual-studio-2017">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -65,7 +59,7 @@ ms.locfileid: "56316783"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Visual Studio 2017 の新機能</h3>
+                                    <h3>Visual Studio の新機能</h3>
                                 </div>
                             </div>
                         </div>
@@ -586,7 +580,7 @@ ASP.NET Core Web アプリ</a>
                                             <div class="cardText">
                                                 <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
-                                                    <p>通常、統計的な計算とグラフィックスのために使われる、拡張可能なプログラミング言語。</p>
+                                                    <p>(Visual Studio 2017 のみ) 通常、統計的な計算とグラフィックスのために使われる、拡張可能なプログラミング言語。</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -705,7 +699,7 @@ ASP.NET Core Web アプリ</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="python/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -716,7 +710,7 @@ ASP.NET Core Web アプリ</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>データ サイエンスと分析のアプリケーション</h3>
-                                            <p>データ サイエンス アプリケーションを作成するための言語とツール (Python、R、F# が含まれます)。</p>
+                                            <p>Python と F# を含む、データ サイエンス アプリケーションを作成するための言語とツール (Visual Studio 2017 のみでの R も含まれます)。</p>
                                         </div>
                                       </div>
                                     </div>

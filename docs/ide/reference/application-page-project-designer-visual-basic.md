@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49690730b60de6c1ec0aa2f4a0776e45cca43ccb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa0b5a95a4191a977144808bfb8888e282f7fce9
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913172"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223274"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -76,7 +76,7 @@ Web アプリケーション プロジェクトでは、**[クラス ライブ�
 
 ### <a name="auto-generate-binding-redirects"></a>バインド リダイレクトの自動生成
 
-アプリまたはそのコンポーネントで同じアセンブリの複数のバージョンが参照されている場合、バインド リダイレクトがプロジェクトに追加されます。 プロジェクト ファイルにおいて手動でバインド リダイレクトを定義したい場合は、**[バインド リダイレクトの自動生成]** をオフにします。 このチェック ボックスは、Visual Studio 2017 バージョン 15.7 で導入されました。
+アプリまたはそのコンポーネントで同じアセンブリの複数のバージョンが参照されている場合、バインド リダイレクトがプロジェクトに追加されます。 プロジェクト ファイルにおいて手動でバインド リダイレクトを定義したい場合は、**[バインド リダイレクトの自動生成]** をオフにします。
 
 リダイレクトの詳細については、「[アセンブリ バージョンのリダイレクト](/dotnet/framework/configure-apps/redirect-assembly-versions)」をご覧ください。
 

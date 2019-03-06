@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 435141ce8b01c2c486dd9b856c173895237a4906
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31e9aa6bcc89f0a9fb39d2a871119a0906b4243d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954814"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637946"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーをスタンドアロンの .NET Framework アプリケーションにアタッチし、メモリ データを収集する
 
 この記事では、Visual Studio プロファイル ツールのコマンド ライン ツールを使用して、実行中の .NET Framework のスタンドアロン (クライアント) アプリケーションにプロファイラーをアタッチし、メモリ データを収集する方法について説明します。
 
 > [!NOTE]
->  プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。  
+>  プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
 
 .NET Framework アプリケーションにアタッチしてメモリ データを収集するには、対象アプリケーションを起動する前に、[VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) ツールを使用して該当する環境変数を初期化する必要があります。 プロファイラーがアプリケーションにアタッチされている場合は、*VSPerfCmd.exe* ツールを使用してデータ コレクションを一時停止して再開できます。
 
@@ -34,7 +34,7 @@ ms.locfileid: "54954814"
 
 2. プロファイル環境変数を初期化します。 型:
 
-     **VSPerfClrEnv** {**/samplegc** &#124; **/samplegclife**} [**/samplelineoff**]
+     **VSPerfClrEnv** {**/samplegc** &#124; **/samplegclife**} **[/samplelineoff]**
 
     - **/samplegc** オプションと **/samplegclife** オプションは、メモリの割り当てデータのみを収集するか、メモリの割り当てデータとオブジェクトの有効期間データの両方を収集するかを指定します。 1 つのオプションのみを指定する必要があります。
 
@@ -112,5 +112,5 @@ ms.locfileid: "54954814"
 
 ## <a name="see-also"></a>関連項目
 
-[スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)  
-[.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)
+[スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)
+[.NET メモリ データ ビュー](../profiling/dotnet-memory-data-views.md)

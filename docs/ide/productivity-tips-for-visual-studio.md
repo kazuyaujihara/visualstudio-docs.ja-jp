@@ -1,18 +1,18 @@
 ---
 title: 生産性に関するヒント
-ms.date: 11/04/2016
+ms.date: 2/21/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860583dffd4076db9c4c4660928b75419bd36218
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913029"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702721"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio の生産性に関するヒント
 
@@ -66,11 +66,13 @@ ms.locfileid: "55913029"
 
 - **対処する必要があるエラーのみを表示する**。 **[エラー一覧]** ツール バーの **[フィルター]** を選択すると、**[エラー一覧]** ウィンドウに表示されるエラーの数を減らすことができます。 エディターで開いているファイルのエラーのみ、現在のファイルのエラーのみ、または現在のプロジェクトのエラーのみを表示できます。 また、**[エラー一覧]** ウィンドウ内で検索して、特定のエラーを見つけることもできます。
 
-- **ダイアログ ボックス、メニュー コマンド、およびオプションを検索する**。 [[クイック起動]](../ide/reference/quick-launch-environment-options-dialog-box.md) ボックスに、検索対象の項目のキーワードまたは語句を入力します。 たとえば、「`new project`」と入力すると、次のオプションが表示されます。
+- **ダイアログ ボックス、メニュー コマンド、およびオプションを検索する**。 [[クイック起動]](../ide/reference/quick-launch-environment-options-dialog-box.md) 検索ボックスに、検索対象の項目のキーワードまたは語句を入力します。 たとえば、「`new project`」と入力すると、次のオプションが表示されます。
 
     !['新しいプロジェクト' のクイック起動結果](../ide/media/productivity_quicklaunch.png)
 
     **クイック起動**には、**[新しいプロジェクト]** ダイアログ ボックス、**[新しい項目の追加]** ダイアログ ボックス、**[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** ページなどへのリンクが表示されます。 また、クイック起動の結果には、プロジェクト ファイルおよびツール ウィンドウも含まれます。
+
+  IDE の右上に **[クイック起動]** 検索ボックスが表示されます  (あるいは、**Ctrl** + **Q** キーを押してそれにアクセスします)。
 
 ## <a name="debug-code"></a>コードのデバッグ
 

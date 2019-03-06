@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155878"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954362"
 ---
 # <a name="debug-your-python-code"></a>Python コードのデバッグ
 
@@ -246,7 +246,7 @@ ptvsd のインストールを管理するには
 1. 次のコマンドを入力します。
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. デバッグを開始し、問題を再現するために必要な手順をすべて実行します。 この期間中、**[デバッグ アダプターのホスト ログ]** の下の **[出力]** ウィンドウにデバッグ ログが表示されます。 次に、そのウィンドウからログをコピーし、GitHub の問題や電子メールなどに貼り付けることができます。
@@ -256,7 +256,7 @@ ptvsd のインストールを管理するには
 1. Visual Studio がハングしたり、または **[出力]** ウィンドウにアクセスできない場合は、Visual Studio を再起動してコマンド ウィンドウを開き、次のコマンドを入力します。
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. デバッグを開始し、もう一度問題を再現します。 これで、デバッガーのログが `%temp%\DebugAdapterHostLog.txt` に見つかります。

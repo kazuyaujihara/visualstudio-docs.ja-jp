@@ -10,15 +10,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde00d3e9911c8c2b125ac44aff4200037dfeb50
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0877205c906727d35073a8e280bb4700ae455b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942285"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696494"
 ---
 # <a name="startup-environment-options-dialog-box"></a>[スタートアップ] ([オプション] ダイアログ ボックス - [環境])
-このページを使用して、Visual Studio のスタート ページをカスタマイズするか、Visual Studio 起動時の別の既定のアクションを設定します。 詳細については、[スタート ページのカスタマイズ](../../ide/customizing-the-start-page-for-visual-studio.md)に関するページを参照してください。
+
+::: moniker range="vs-2017"
+
+このページを使用して、Visual Studio のスタート ページをカスタマイズするか、Visual Studio 起動時の別の既定のアクションを設定します。 詳細については、[スタートアップのカスタマイズ](../../ide/customizing-the-start-page-for-visual-studio.md)に関するページを参照してください。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+このページを使用して、Visual Studio 起動時の別の既定のアクションを設定します。 **[On startup, open]\(起動時に開く\)** リストで、**スタート ウィンドウ** (新しいプロジェクトまたは既存のプロジェクトを開くことができます)、**最新のソリューション**、または**空の環境**から選択します。
+
+::: moniker-end
 
 ## <a name="see-also"></a>関連項目
 

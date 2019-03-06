@@ -8,12 +8,13 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc1964fdb3860702818454ee4e918cc93c0156c3
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+monikerRange: vs-2017
+ms.openlocfilehash: d2d54bf83cac677c09e63da6169e39100cbb30cc
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954258"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324209"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>方法: 機能拡張プロジェクトを Visual Studio 2017 に移行します。
 
@@ -162,7 +163,7 @@ Visual Studio が開かれた最近場合は、このようなダイアログ �
 
 さらにガイダンスを提供するには、いくつかの一般的な拡張機能の種類と推奨される前提条件を特定しました。
 
-拡張機能の種類 | 表示名 | ID
+拡張機能の種類 | [表示名] | ID
 --- | --- | ---
 エディター | Visual Studio のコア エディター | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# および Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -181,7 +182,7 @@ Excel シートには、4 つの列があります。**コンポーネント名*
 
 すべての参照のため最初コア エディター (Microsoft.VisualStudio.Component.CoreEditor) コンポーネントはどれを確認します。  少なくとも、コア エディター コンポーネントをすべての拡張機能の前提条件として指定する必要があります。 内のフィルターを追加、参照のままになっているのコア エディターが含まれていない、**バイナリ/ファイル名**セクションにこれらの参照のサブセットのいずれかのコンポーネントを検索します。
 
-次に例を示します。
+次に例を示します。 
 
 * プロジェクトを参照していることを理解しているデバッガー拡張機能がある場合*VSDebugEng.dll*と*VSDebug.dll*、[フィルター] ボタンをクリックして、**バイナリ/ファイル名**ヘッダー。  "VSDebugEng.dll"を検索して選択*OK*します。  次のフィルター ボタンをクリックして、**バイナリ/ファイル名**ヘッダーをもう一度と"VSDebug.dll"を検索します。  チェック ボックスをオン**をフィルター処理の現在の選択を追加する**選択と**OK**。  なります。、**コンポーネント名**ほとんどは、コンポーネントを検索する拡張機能の種類に関連します。 この例では、Just ポイントイン タイムを選択したデバッガーし、vsixmanifest に追加します。
 * プロジェクトがデバッガー要素で処理される場合は、どのようなコンポーネントには、その名前でデバッガーが含まれている、フィルター検索ボックスに「デバッガー」を検索できます。

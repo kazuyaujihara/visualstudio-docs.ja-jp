@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio に含まれる Azure Advisory Chat 特典を活用する方法について説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e078ddd71c126cdf70b56f6b8d6a9a467a4f56d4
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: e353878d7e911bb38dce80470e77a65f3be85c88
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380036"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841014"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -40,13 +38,13 @@ Azure Advisory Chat の使用は簡単です。
 
 |                                                      サブスクリプション レベル                                                      |     チャネル      |    特長    | 更新可能かどうか |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                                      Visual Studio Enterprise (Standard)                                       | VL、Azure、リテール |   1 年    |    ○     |
-| Visual Studio Professional (Standard、月間クラウド)、Visual Studio Enterprise (月間クラウド、NFR<sup>1</sup>) |        すべて        | 使用できません |     ×     |
-|                                          Visual Studio Test Professional (標準)                                          |        すべて        | 使用できません |     ×     |
-|                                                  MSDN Platforms (標準)                                                   |        すべて        | 使用できません |     ×     |
-|                                                 Visual Studio Dev Essentials                                                 |        N/A        | 使用できません |     ×     |
+|                                      Visual Studio Enterprise (Standard)                                       | VL、Azure、リテール |   1 年    |    はい     |
+| Visual Studio Professional (Standard、月間クラウド)、Visual Studio Enterprise (月間クラウド、NFR<sup>1</sup>) |        すべて        | 使用できません |     いいえ     |
+|                                          Visual Studio Test Professional (標準)                                          |        すべて        | 使用できません |     いいえ     |
+|                                                  MSDN Platforms (標準)                                                   |        すべて        | 使用できません |     いいえ     |
+|                                                 Visual Studio Dev Essentials                                                 |        N/A        | 使用できません |     いいえ     |
 
-<sup>1</sup>  *Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、MCT が含まれます。*
+<sup>1</sup>  *内容:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、MCT が含まれます。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -57,7 +55,7 @@ Azure Advisory Chat の使用は簡単です。
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>Q:Azure Advisory Chat と Azure Advisor の違いは何ですか。
--  A:Azure Advisory Chat は、Azure に関する質問を支援するためのリアルタイムのチャット サービスです。 [Azure Advisor](/azure/advisor/advisor-overview) は、ベスト プラクティスに従ってユーザーの Azure のデプロイを最適化することを支援する、パーソナライズされたクラウド コンサルタントです。 リソースの構成と使用量テレメトリを分析し、Azure リソースの費用対効果、パフォーマンス、高可用性、およびセキュリティを向上するのに役立つソリューションを推奨します。
+-  A: Azure Advisory Chat は、Azure に関する質問を支援するためのリアルタイムのチャット サービスです。 [Azure Advisor](/azure/advisor/advisor-overview) は、ベスト プラクティスに従ってユーザーの Azure のデプロイを最適化することを支援する、パーソナライズされたクラウド コンサルタントです。 リソースの構成と使用量テレメトリを分析し、Azure リソースの費用対効果、パフォーマンス、高可用性、およびセキュリティを向上するのに役立つソリューションを推奨します。
 
 ## <a name="support-resources"></a>サポート リソース
 -  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクリプション ポータルを使用するさまざまな利点について
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6bd5e0ac308a8644f6428deb7468e00007f7c70b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859021"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843803"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>サブスクライバー ポータルの使用 - my.<span></span>visualstudio<span></span>.com
 
@@ -22,10 +20,10 @@ Visual Studio サブスクリプション ポータル ([https://my.visualstudio
 
 ポータルを使用するには、サブスクリプションに関連付けられた ID を使用してサインインする必要があります。  Microsoft アカウント (MSA)、または勤務先や学校などの組織から提供された電子メール アドレスを使用できます。  詳細については、[サインイン](signing-in.md)に関するページを参照してください。
 
-ポータルは 6 ページで構成されています。  各ページから、サブスクリプションに含まれるさまざまな製品やサービスにアクセスできます。  6 ページの内訳は、[特典]、[ダウンロード]、[プロダクト キー]、[サブスクリプション]、[サポート]、[Marketplace] です。 
+ポータルは 6 ページで構成されています。  各ページから、サブスクリプションに含まれるさまざまな製品やサービスにアクセスできます。  6 ページの内訳は、[特典]、[ダウンロード]、[プロダクト キー]、[サブスクリプション]、[サポート]、[Marketplace] です。
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[特典](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-[特典] ページには、サブスクリプションに含まれるツールとサービスが "タイル" として表示されます。  すべてのサブスクリプションに含まれない特典もあります。 タイルは、[ツール]、[プロフェッショナルな開発]、[サポート] という 3 つのカテゴリにグループ化されています。  Visual Studio Dev Essentials を使用している場合は、[おすすめ情報] というカテゴリも表示されます。このカテゴリには、他の 3 つのカテゴリから選ばれた特典も含まれることがあります。
+[特典] ページには、サブスクリプションに含まれるツールとサービスが "タイル" として表示されます。  すべてのサブスクリプションに含まれない特典もあります。 タイルは次の 3 つのカテゴリに分類されます: ツール、プロフェッショナルな開発、サポート。  Visual Studio Dev Essentials を使用している場合は、[おすすめ情報] というカテゴリも表示されます。このカテゴリには、他の 3 つのカテゴリから選ばれた特典も含まれることがあります。
 
 ### <a name="tools"></a>ツール
 [ツール] カテゴリには、Visual Studio IDE、Azure DevOps、パートナーが提供するツールなどの主要な開発ツールが含まれます。  また、Azure や Visual Studio App Center などのサービスも表示されます。

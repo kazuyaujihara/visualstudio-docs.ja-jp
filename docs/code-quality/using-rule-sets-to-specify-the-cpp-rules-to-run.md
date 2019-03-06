@@ -7,18 +7,18 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d4a5b28686b2af356d1247bf9690708739fea8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d4d7dfc1f010b860653edbe14fa7af9050bddba4
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907855"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323654"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>規則セットを使用して、実行対象の C++ 規則の指定
 
 Visual Studio で作成し、カスタムの変更*ルール セット*コード分析に関連付けられている特定のプロジェクトのニーズを満たします。 既定の規則セットが格納されている`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`します。
 
-**Visual Studio 2017 バージョン 15.7**任意のテキストを使用してカスタム規則セット エディターを作成し、これらを使用しているシステムを構築するものに関係なくコマンド ライン ビルドで適用することができます。 詳細については、次を参照してください。 [/analyze: ruleset](/cpp/build/reference/analyze-code-analysis)します。
+**Visual Studio 2017 バージョン 15.7 以降**任意のテキストを使用してカスタム規則セット エディターを作成し、これらを使用しているシステムを構築するものに関係なくコマンド ライン ビルドで適用することができます。 詳細については、次を参照してください。 [/analyze: ruleset](/cpp/build/reference/analyze-code-analysis)します。
 
 Visual Studio でカスタム C++ 規則を作成するには、は、C と C++ プロジェクトが Visual Studio IDE で開く必要があります。 規則セット エディターで、標準の規則セットを開くと、追加または特定の規則を削除し、必要に応じて変更コード分析ルールに違反したことを決定するときに発生するアクション。
 
@@ -82,8 +82,9 @@ Visual Studio でカスタム C++ 規則を作成するには、は、C と C++ 
 
 次の例では、基本的なルール セットの開始点として使用できるファイルを示しています。
 
-```xml
+::: moniker range="vs-2017"
 
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
   <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
@@ -92,3 +93,19 @@ Visual Studio でカスタム C++ 規則を作成するには、は、C と C++ 
   </Rules>
 </RuleSet>
 ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" Description=" " ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />
+    <Rule Id="C26494" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+::: moniker-end

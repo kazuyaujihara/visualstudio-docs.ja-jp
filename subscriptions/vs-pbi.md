@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Power BI Pro サブスクリプションについて説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380183"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843871"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Power BI Pro
 
@@ -94,17 +92,17 @@ Power BI Pro を使うには、アカウントを設定するか、既存のア�
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>Q:特典が無料の場合に、クレジット カード番号を入力しなければならないのはなぜですか。
-A:特典は無料ですが、アクティブ化には有料の注文を処理するために使用されているのと同じシステムが使用されています。  2 つの支払い方法があります。 
-- クレジット カード。  クレジット カード番号を入力した場合、カードに課金されることはありません。 
-- 請求書。  支払い方法に "請求書" を選択した場合、クレジット カード番号を入力する必要はありません。  期間を "年間" に設定することもできます。  これにより、請求書の準備ができたことを知らせる電子メールが 1 回送信されます。  請求金額は $0.00 になります。  
+A: 特典は無料ですが、アクティブ化には有料の注文を処理するために使用されているのと同じシステムが使用されています。  2 つの支払い方法があります。
+- クレジット カード。  クレジット カード番号を入力した場合、カードに課金されることはありません。
+- 請求書。  支払い方法に "請求書" を選択した場合、クレジット カード番号を入力する必要はありません。  期間を "年間" に設定することもできます。  これにより、請求書の準備ができたことを知らせる電子メールが 1 回送信されます。  請求金額は $0.00 になります。
 
 ### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>Q:自分のサブスクリプション ライセンスに含まれる Power BI Pro の特典を運用環境で使用することはできますか。
-A:はい。2 つの重要な注意事項はありますが、運用環境で使用することができます。
-- このオファーには、所有しているテナントへのインストールが必要です。  会社のテナント内の会社の資格情報に関連付けられた Power BI ライセンスを取得する必要がある場合は、会社の管理者に相談してライセンスを購入し、割り当ててください。 
-- Power BI Pro 特典は、政府機関向けのテナントには使用できません。  
+A: はい。2 つの重要な注意事項はありますが、運用環境で使用することができます。
+- このオファーには、所有しているテナントへのインストールが必要です。  会社のテナント内の会社の資格情報に関連付けられた Power BI ライセンスを取得する必要がある場合は、会社の管理者に相談してライセンスを購入し、割り当ててください。
+- Power BI Pro 特典は、政府機関向けのテナントには使用できません。
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Q:Power BI Pro をアクティブ化しようとすると、"You already have an account through work\(作業中に既にアカウントを登録しています\)" というメッセージが表示されます。  特典はまだ使用できますか。
-A:はい。  このメッセージは、管理者ではないアクティブな Office 365 テナントが既に含まれるドメインにログオンしていることを示しています。  Power BI Pro をテナントに追加するには、そのテナントの管理者である必要があります。  この問題を解決するには、次の手順に従って独自のテナントを作成します。
+A: はい。  このメッセージは、管理者ではないアクティブな Office 365 テナントが既に含まれるドメインにログオンしていることを示しています。  Power BI Pro をテナントに追加するには、そのテナントの管理者である必要があります。  この問題を解決するには、次の手順に従って独自のテナントを作成します。
 1.  作業中に既にアカウントを登録しているというメッセージが表示されたら、**[新しいアカウントを作成]** をクリックします。
 
 2.  次の画面で連絡先情報を入力して、**[次へ]** をクリックします。
@@ -112,12 +110,12 @@ A:はい。  このメッセージは、管理者ではないアクティブな 
 3.  ユーザー ID とパスワードを作成します。  無料プランの特典を利用するには、**. onmicrosoft.com** をドメインとして選択してください。 **[アカウントの作成]** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![Power BI Pro 特典によるプライベート テナント ユーザー ID の作成](_img/vs-pbi/vs-pbi-work-userid.png)
-    
+
 4.  プロセスの残りの手順は、記事の本文に示されている手順 6 以降と同じです。
 
 
-### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>Q:政府機関向けのテナントを使用しています。  特典を使用できますか。 
-A:いいえ。  Power BI Pro 特典は、政府機関向けのテナントには追加できません。 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>Q:政府機関向けのテナントを使用しています。  特典を使用できますか。
+A: いいえ。  Power BI Pro 特典は、政府機関向けのテナントには追加できません。
 
 ## <a name="support-resources"></a>サポート リソース
 -  Power BI Pro のヘルプが必要ですか。

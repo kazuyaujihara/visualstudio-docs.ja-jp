@@ -6,15 +6,13 @@ manager: lank
 ms.date: 10/31/2018
 ms.topic: conceptual
 description: サブスクリプションへのアクセスを喪失したときに、サブスクライバー データがどのように匿名化されるかについて説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4570ff43f946c25c50d298e22de3b0c8a261f870
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: a4249aa2520df6e9c1870fec121de2fdb2135308
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51811252"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842547"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio サブスクライバー情報の匿名化
 
@@ -36,10 +34,10 @@ ms.locfileid: "51811252"
 
 ## <a name="faq"></a>FAQ
 
-### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>Q: サブスクライバーの個人情報の匿名化により、サブスクリプションにアクセスできなくなりますか。
+### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>Q:サブスクライバーの個人情報の匿名化により、サブスクリプションにアクセスできなくなりますか。
 A: いいえ。  匿名化は、サブスクリプションへのアクセス権の喪失を引き起こすイベントへの応答で、アクセス権の不足を引き起こすことはありません。
 
-### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Q: 私は組織のサブスクリプションの管理者です。  組織内のサブスクライバーのうちの 1 人の情報が匿名化された場合、そのサブスクリプションを別のユーザーに再割り当てすることはできますか。
+### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Q:私は組織のサブスクリプションの管理者です。  組織内のサブスクライバーのうちの 1 人の情報が匿名化された場合、そのサブスクリプションを別のユーザーに再割り当てすることはできますか。
 A: はい。サブスクリプションの有効期限が切れていない限り、別のサブスクライバーに再割り当てすることができます。
 
 ## <a name="next-steps"></a>次の手順

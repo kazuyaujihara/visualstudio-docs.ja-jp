@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる DataCamp トレーニング サブスクリプションについて説明します。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380408"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841430"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの DataCamp トレーニング特典
 
@@ -33,7 +31,7 @@ DataCamp 特典の有効期間は、Visual Studio サブスクリプションに
 3. [DataCamp] ページで、新しいアカウントを作成できます。  電子メール アドレスとパスワードを入力するか、LinkedIn、Google、または Facebook から既存のアカウントを使用してサインインすることができます。  サインイン情報を指定したら、**[Get Started]\(作業の開始\)** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![DataCamp: 新しいアカウントの作成](_img/vs-datacamp/vs-datacamp-create-account.png)
-   > 
+   >
    > [!NOTE]
    > アカウントの作成を開始すると、"問題が発生しました。ご利用のプロモーション コードが無効であるか、  有効期限が切れています" という内容のエラー メッセージが表示される場合があります。  これは、作成されたプロモーション コードの有効期限が数分後に切れた場合に発生します。  このメッセージが表示された場合は、[[特典]](https://my.visualstudio.com/benefits) ページに戻り、DataCamp 特典タイルの **[アクティブ化]** リンクをクリックするだけです。
 
@@ -62,7 +60,7 @@ DataCamp 特典の有効期間は、Visual Studio サブスクリプションに
 
 任意のポイントで停止し、次のセッションでトレーニングを再開できます。  [http://www.datacamp.com](http://www.datacamp.com) にアクセスしてサインインします。  ダッシュ ボードが表示され、一時停止した箇所からトレーニングを再開できます。 **[Continue Track]\(トラックを続行\)** をクリックします。
 
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![DataCamp: トレーニングの続行](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>特典を受ける条件
@@ -79,7 +77,7 @@ DataCamp 特典の有効期間は、Visual Studio サブスクリプションに
 
 
 
-<sup>1</sup>  *Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine が含まれます。*
+<sup>1</sup>  *内容:Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine が含まれます。*
 
 
 > [!NOTE]

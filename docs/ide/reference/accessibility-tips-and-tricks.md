@@ -1,7 +1,7 @@
 ---
 title: Visual Studio のアクセシビリティのヒントとテクニック
 description: 障碍のある方も含め、あらゆる人にとって Visual Studio 統合開発環境 (IDE) が使いやすくなるヒントとテクニックを紹介します。
-ms.date: 09/15/2017
+ms.date: 02/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318553"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680933"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio のアクセシビリティのヒントとテクニック
 
 > [!TIP]
-> 最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)」をご覧ください。
+> アクセシビリティの更新の詳細については、ブログ記事「[Accessibility improvements in Visual Studio 2017 version 15.3 ](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)」 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化) をご覧ください。
 
 Visual Studio には、スクリーン リーダーやその他の支援テクノロジと互換性を持つユーザー補助機能が組み込まれています。 このトピックでは、キーボードのみを使用してタスクを実行するためによく使用されるショートカット キーの組み合わせを一覧すると共に、見やすさを改善するためのハイ コントラストのテーマの使用に関する情報を提供します。 さらに、注釈を使用してコードに関する有用な情報を表示する方法と、ビルドおよびブレークポイントのイベントに対してサウンド キューを設定する方法についても説明します。
 
@@ -64,6 +64,7 @@ Visual Studio IDE には、多くのツール ウィンドウと同様に機能�
 |ダイアログ ボックス|ダイアログ ボックスのチェック ボックス オプションをオンまたはオフにします。 <br> <br> **注:** Windows の標準的なショートカット|**Space キー**|
 |コンテキスト メニュー|(右クリックして) コンテキスト メニューを開きます。 <br> <br> **注:** Windows の標準的なショートカット|**SHIFT** + **F10**|
 |メニュー|アクセラレータ キーを使用して、メニュー項目にすばやくアクセスします。 **Alt** キーを押してからメニュー内の下線付きの文字を選択して、コマンドをアクティブにします。 たとえば、Visual Studio の [プロジェクトを開く] ダイアログ ボックスを表示するには、**ALT** + **F** + **O** + **P** キーを押します。  <br><br> **注:** Windows の標準的なショートカット|**ALT** + **[文字]**|
+|クイック起動検索ボックス| Visual Studio の検索機能を使用する|**Ctrl**  +  **Q**|
 |[ツールボックス] ウィンドウ|[ツールボックス] のタブ間を移動します。|**Ctrl** + **↑**<br /><br /> と、呼び出し<br /><br /> **Ctrl** + **↓**|
 |[ツールボックス] ウィンドウ|[ツールボックス] からフォームまたはデザイナーにコントロールを追加します。|**Enter**|
 |[キーボード]\([オプション] ダイアログ ボックス - [環境])|**[ショートカット キー]** オプションに入力されたキーの組み合わせを削除します。|**Backspace**|

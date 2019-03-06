@@ -19,40 +19,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 598e802f9868399073bba7a6f1bc1f2278af83f6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 505a05c13add7c9e4d2ee27790ef6b971ee281f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921055"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635138"
 ---
 # <a name="project-element-msbuild"></a>Project 要素 (MSBuild)
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。
 
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>構文
 
-```xml  
-<Project InitialTargets="TargetA;TargetB"  
-         DefaultTargets="TargetC;TargetD"  
-         TreatAsLocalProperty="PropertyA;PropertyB"  
+```xml
+<Project InitialTargets="TargetA;TargetB"
+         DefaultTargets="TargetC;TargetD"
+         TreatAsLocalProperty="PropertyA;PropertyB"
          ToolsVersion=<version number>
          Sdk="name[/version]"
-         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <Sdk... />
-    <Choose>... </Choose>  
-    <PropertyGroup>... </PropertyGroup>  
-    <ItemGroup>... </ItemGroup>  
-    <Target>... </Target>  
-    <UsingTask.../>  
-    <ProjectExtensions>... </ProjectExtensions>  
-    <Import... />  
-</Project>  
-```  
+    <Choose>... </Choose>
+    <PropertyGroup>... </PropertyGroup>
+    <ItemGroup>... </ItemGroup>
+    <Target>... </Target>
+    <UsingTask.../>
+    <ProjectExtensions>... </ProjectExtensions>
+    <Import... />
+</Project>
+```
 
-## <a name="attributes-and-elements"></a>属性と要素  
- 以降のセクションでは、属性、子要素、および親要素について説明します。  
+## <a name="attributes-and-elements"></a>属性と要素
+ 以降のセクションでは、属性、子要素、および親要素について説明します。
 
-### <a name="attributes"></a>属性  
+### <a name="attributes"></a>属性
 
 | 属性 | 説明 |
 |------------------------| - |
@@ -63,7 +63,7 @@ ms.locfileid: "54921055"
 | `TreatAsLocalProperty` | 省略可能な属性です。<br /><br /> グローバルとは見なされないプロパティ名。 この属性は、プロジェクトまたはターゲット ファイル、および後続のすべてのインポートに設定されているプロパティ値が特定のコマンド ライン プロパティによってオーバーライドされることを防ぎます。 複数のプロパティはセミコロン (;) で区切られます。<br /><br /> 通常、グローバル プロパティは、プロジェクト ファイルまたはターゲット ファイルで設定されたプロパティ値をオーバーライドします。 プロパティが `TreatAsLocalProperty` 値に一覧表示されている場合、グローバル プロパティ値は、そのファイルと後続のインポートに設定されているプロパティ値をオーバーライドしません。 詳細については、「[方法 :同じソース ファイルを異なるオプションでビルドする](../msbuild/how-to-build-the-same-source-files-with-different-options.md)」を参照してください。 **注:** グローバル プロパティは、コマンド プロンプトで **-property** (または **-p**) スイッチを使用して設定します。 また、複数プロジェクト ビルドの子プロジェクトのグローバル プロパティは、MSBuild タスクの `Properties` 属性を使用して設定または変更することもできます。 詳細については、「[MSBuild タスク](../msbuild/msbuild-task.md)」を参照してください。 |
 | `Xmlns` | 省略可能な属性です。<br /><br /> `xmlns` 属性には、"`http://schemas.microsoft.com/developer/msbuild/2003`" の値を指定する必要があります。 |
 
-### <a name="child-elements"></a>子要素  
+### <a name="child-elements"></a>子要素
 
 | 要素 | 説明 |
 | - | - |
@@ -78,11 +78,11 @@ ms.locfileid: "54921055"
 | [Target](../msbuild/target-element-msbuild.md) | 省略可能な要素です。<br /><br /> [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] が順次実行するタスクのセットを格納します。 タスクは [Task](../msbuild/task-element-msbuild.md) 要素を使用して指定されます。 1 つのプロジェクトに 0 個以上の `Target` 要素を含めることができます。 |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | 省略可能な要素です。<br /><br /> [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] にタスクを登録する方法を提供します。 1 つのプロジェクトに 0 個以上の `UsingTask` 要素を含めることができます。 |
 
-### <a name="parent-elements"></a>親要素  
- なし。  
+### <a name="parent-elements"></a>親要素
+ なし。
 
-## <a name="see-also"></a>関連項目  
- [方法: 最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)   
- [コマンドライン リファレンス](../msbuild/msbuild-command-line-reference.md)   
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>関連項目
+- [方法: 最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)
+- [コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)
+- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

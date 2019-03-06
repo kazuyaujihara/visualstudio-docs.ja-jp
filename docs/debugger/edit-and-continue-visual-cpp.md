@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35cc3e8336dc2f4b618be10626c014692fdfa650
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3afb55c41f48c6d5e5a153c12cd364d130129d79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694999"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222362"
 ---
 # <a name="edit-and-continue-visual-c"></a>エディット コンティニュ (Visual C++)
 Visual C++ プロジェクトではエディット コンティニュを使用できます。 参照してください[サポートされているコードの変更 (C++)](../debugger/supported-code-changes-cpp.md)エディット コンティニュの制限事項についてはします。
 
-Visual Studio 2015 Update 3 の機能強化の詳細については、次を参照してください。 [Visual Studio 2015 Update 3 で C++ のエディット コンティニュ](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)します。
+Visual Studio 2015 Update 3 の機能強化の詳細については、次を参照してください。 [Visual Studio 2015 Update 3 で C++ のエディット コンティニュ](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)します。
 
  Visual Studio 2013 Update 3 で導入された [/Zo (最適化されたデバッグ機能の強化)](/cpp/build/reference/zo-enhance-optimized-debugging) コンパイラ オプションは、[/Od (無効 (デバッグ))](https://msdn.microsoft.com/library/aafb762y.aspx) オプションなしでコンパイルされたバイナリの .pdb (シンボル) ファイルに情報を追加します。
 
@@ -37,7 +37,7 @@ Visual Studio 2015 Update 3 の機能強化の詳細については、次を参�
  現在のデバッグ セッション中に適用しないコードの編集を行う場合は、エディット コンティニュの自動起動を無効にすることもできます。 自動エディット コンティニュをもう一度有効にすることもできます。
 
 > [!IMPORTANT]
-> 必要なビルドの設定と機能の互換性に関する他の情報は、[C++ のエディット コンティニュで Visual Studio 2015 Update 3] を参照してください (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/します。
+> 必要なビルドの設定と機能の互換性に関する他の情報は、次を参照してください。 [Visual Studio 2015 Update 3 で C++ のエディット コンティニュ](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)します。
 
 1. デバッグ セッションの場合は、デバッグを停止 (**shift キーを押しながら f5 キーを押して**)。
 

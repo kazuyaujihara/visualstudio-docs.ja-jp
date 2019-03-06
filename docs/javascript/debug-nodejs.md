@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b6bc2aa2dff6a1d71428041e17bffe39c7d624e9
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768408"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223391"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio で JavaScript アプリまたは TypeScript アプリをデバッグする
 
@@ -168,8 +168,8 @@ Visual Studio では、Chrome および Internet Explorer のみのデバッグ 
    Chrome の場合は、**[ソリューション エクスプローラー]、[スクリプト ドキュメント]、[YourPageName]** の順に移動します。
 
     > [!NOTE]
-    > Chrome を使用する場合は、"`no source is available between `<script>` tags.` This is OK, just continue debugging.
+    > Chrome を使用する場合、**\<script> タグ間に使用できるソースがない**という内容のメッセージが表示される場合があります。 これは問題ありませんので、デバッグを続けることができます。
 
    Internet Explorer の場合は、**[ソリューション エクスプローラー]、[スクリプト ドキュメント]、[Windows Internet Explorer]、[YourPageName]** の順に移動します。
 
-詳細については、「[Client-side debugging of ASP.NET projects in Google Chrome](https://blogs.msdn.microsoft.com/webdev/2016/11/21/client-side-debugging-of-asp-net-projects-in-google-chrome/)」 (Google Chrome での ASP.NET プロジェクトのクライアント側デバッグ) をご覧ください。
+詳細については、「[Client-side debugging of ASP.NET projects in Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/)」 (Google Chrome での ASP.NET プロジェクトのクライアント側デバッグ) をご覧ください。

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae4b85aa39f2323ed3e4a4353b28239a015ae7f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719276"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324014"
 ---
 # <a name="how-to-use-the-activity-log"></a>方法: アクティビティ ログを使用します。
 Vspackage は、メッセージをアクティビティ ログに書き込むことができます。 この機能は、小売環境で Vspackage をデバッグするために特に便利です。
@@ -46,7 +46,9 @@ Vspackage は、メッセージをアクティビティ ログに書き込むこ
 
 1. Visual Studio での実行、 [/log](../ide/reference/log-devenv-exe.md) ActivityLog.xml をディスクに書き込むセッション中にコマンド ライン スイッチ。
 
-2. Visual Studio を閉じた後、アクティビティ ログ サブフォルダーの検索 Visual Studio データ:  <em>*%appdata%</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*します。
+2. Visual Studio を閉じた後に、Visual Studio のデータのサブフォルダーでアクティビティ ログを検索します。
+
+   <em>*%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
 
 3. 任意のテキスト エディターでは、アクティビティ ログを開きます。 一般的なエントリを次に示します。
 
@@ -55,11 +57,13 @@ Vspackage は、メッセージをアクティビティ ログに書き込むこ
    ```
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
- アクティビティ ログは、サービスであるためには、アクティビティ ログは、VSPackage のコンス トラクターで使用できません。
 
- 記述する前に、アクティビティ ログを取得する必要があります。 キャッシュしたり、将来使用するためのアクティビティ ログを保存しないでください。
+アクティビティ ログは、サービスであるためには、アクティビティ ログは、VSPackage のコンス トラクターで使用できません。
+
+記述する前に、アクティビティ ログを取得する必要があります。 キャッシュしたり、将来使用するためのアクティビティ ログを保存しないでください。
 
 ## <a name="see-also"></a>関連項目
+
 - [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>

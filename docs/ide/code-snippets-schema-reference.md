@@ -1,6 +1,6 @@
 ---
 title: コード スニペット スキーマ リファレンス
-ms.date: 11/04/2016
+ms.date: 02/25/2019
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203236c454b2047872bc9f71242e4992a1c1294f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929636"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841858"
 ---
 # <a name="code-snippets-schema-reference"></a>コード スニペット スキーマ リファレンス
 
@@ -117,6 +117,7 @@ Code 要素に使用できる属性には次の 3 つがあります。
    |`CPP`|C++ のコード スニペットであることを示します。|
    |`XML`|XML のコード スニペットであることを示します。|
    |`JavaScript`|JavaScript のコード スニペットであることを示します。|
+   |`TypeScript`|TypeScript のコード スニペットであることを示します。|
    |`SQL`|SQL のコード スニペットであることを示します。|
    |`HTML`|HTML のコード スニペットであることを示します。|
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaeaa4e27b360e10c368255367892628ed45bd5f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722487"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223677"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>マイ コードのみのユーザー コードのみのデバッグします。
 
@@ -97,7 +97,7 @@ C++ でマイ コードのみがこれらの関数にのみを考慮するコー
 - 指定された関数 *\*.natjmc*内のファイル、 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*フォルダー。
 
 > [!NOTE]
-> マイ コードのみでコードのステップ実行サポートの C++ コードをコンパイルする Visual Studio 15.8 Preview 3 以降では、MSVC コンパイラを使用して、/JMC コンパイラ スイッチを有効にする必要があります (既定では有効です)。 詳細については、次を参照してください。 [C++ のカスタマイズのコール スタックとコードのステップ実行の動作](#BKMK_CPP_Customize_call_stack_behavior)) この[ブログの投稿](https://blogs.msdn.microsoft.com/vcblog/2018/06/29/announcing-jmc-stepping-in-visual-studio/)します。 以前のコンパイラを使用してコンパイルされたコードの *.natstepfilter*ファイルは、これは、マイ コードのみの独立したステップ実行、コードをカスタマイズする唯一の方法です。 参照してください[ステップ実行の動作をカスタマイズする C++](#BKMK_CPP_Customize_stepping_behavior)します。
+> マイ コードのみでコードのステップ実行サポートの C++ コードをコンパイルする Visual Studio 15.8 Preview 3 以降では、MSVC コンパイラを使用して、/JMC コンパイラ スイッチを有効にする必要があります (既定では有効です)。 詳細については、次を参照してください。 [C++ のカスタマイズのコール スタックとコードのステップ実行の動作](#BKMK_CPP_Customize_call_stack_behavior)) この[ブログの投稿](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)します。 以前のコンパイラを使用してコンパイルされたコードの *.natstepfilter*ファイルは、これは、マイ コードのみの独立したステップ実行、コードをカスタマイズする唯一の方法です。 参照してください[ステップ実行の動作をカスタマイズする C++](#BKMK_CPP_Customize_stepping_behavior)します。
 
 <a name="BKMK_CPP_Stepping_behavior"></a> C++ のデバッグ中には
 

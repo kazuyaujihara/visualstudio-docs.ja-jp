@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: e85ca90dac30ad348dfeb91357ded153c1764a16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927816"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223087"
 ---
 # <a name="suppress-code-analysis-warnings"></a>コード分析の警告を抑制します。
 
@@ -33,7 +33,7 @@ C++/cli CLI、マクロの CA を使用して\_抑制\_メッセージまたは 
 > ソース内抑制をソース内抑制のメタデータを誤って発送を防ぐために、リリース ビルドで使用しないでください。 さらに、ソース内抑制の処理コスト、ため、アプリケーションのパフォーマンスが低下することができます。
 
 > [!NOTE]
-> プロジェクトを Visual Studio 2017 に移行する場合にコード分析の警告の数が多いを突然直面する可能性があります。 これらの警告の発信元[Roslyn アナライザー](roslyn-analyzers-overview.md)します。 警告を解決する準備ができて場合、を選択して抑制するすべてのことができます**分析** > **コード分析を実行し、アクティブな懸案事項の抑制**します。
+> Visual Studio 2017 または Visual Studio 2019 にプロジェクトを移行する場合にコード分析の警告の数が多いを突然直面する可能性があります。 これらの警告の発信元[Roslyn アナライザー](roslyn-analyzers-overview.md)します。 警告を解決する準備ができて場合、を選択して抑制するすべてのことができます**分析** > **コード分析を実行し、アクティブな懸案事項の抑制**します。
 >
 > ![コード分析を実行して、Visual Studio での問題を抑制します。](media/suppress-active-issues.png)
 
