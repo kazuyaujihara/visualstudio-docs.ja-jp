@@ -9,12 +9,12 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: 3882f52dc38364b0ff325c49964fa907ee8a26ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e5304011b27717f8967d2fc77c66c0cf0e6bc908
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927946"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953239"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Visual Studio と IntelliTrace を使用した発行済みの Azure クラウド サービスのデバッグ
 IntelliTrace を使用すると、ロール インスタンスを Azure で実行する際に広範なデバッグ情報を記録できます。 問題の原因を調べる必要がある場合は、IntelliTrace ログを使用して、コードが Azure で実行されているかのように Visual Studio から調査することができます。 実際には、IntelliTrace は Azure アプリケーションが Azure のクラウド サービスとして実行されている際にキー コードの実行および環境データを記録し、その記録されたデータを Visual Studio で再生できるようにします。
