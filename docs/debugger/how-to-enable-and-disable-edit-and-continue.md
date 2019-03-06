@@ -26,18 +26,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: cd3017768bd44891a6db91020e93ffafcedf6bdc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694609"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223586"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>方法: 有効にして、エディット コンティニュを無効にする (C#、VB、C++)
 
 無効にするか、有効にする**エディット コンティニュ**Visual Studio で**オプション**デザイン時にダイアログ ボックス。 **エディット コンティニュ**はデバッグ ビルドでのみ動作します。 詳細については、「[エディット コンティニュ](../debugger/edit-and-continue.md)」を参照してください。
 
-ネイティブの c++**エディット コンティニュ**を使用する必要があります、`/INCREMENTAL`オプション。 C++ では、機能要件の詳細については、この参照してください[ブログの投稿](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)と[エディット コンティニュ (Visual C)](../debugger/edit-and-continue-visual-cpp.md)します。
+ネイティブの c++**エディット コンティニュ**を使用する必要があります、`/INCREMENTAL`オプション。 C++ では、機能要件の詳細については、この参照してください[ブログの投稿](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)と[エディット コンティニュ (Visual C)](../debugger/edit-and-continue-visual-cpp.md)します。
 
 **有効または、エディット コンティニュを無効にします。**
 

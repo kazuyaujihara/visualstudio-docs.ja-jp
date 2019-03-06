@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb45d8e53b1ec24dceed7845bc344822c6a6830d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 0a6b8a01151e192c4c92f8e8264d45b70d1fba85
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223080"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323425"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 テキスト テンプレートを使用したデザイン時コード生成
 デザイン時 T4 テキスト テンプレートでは、Visual Studio プロジェクトでプログラム コードやその他のファイルを生成できます。 通常、*モデル*のデータに従って生成されるコードが異なるようにテンプレートを記述します。 モデルは、アプリケーションの要件に関する重要な情報を含むファイルまたはデータベースです。
@@ -284,17 +284,20 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```
 
 > [!TIP]
->  テキスト テンプレートは独自のアプリ ドメインで実行され、サービスはマーシャリングによってアクセスされます。 この状況では、GetCOMService() は GetService() よりも信頼性が高くなります。
+> テキスト テンプレートは独自のアプリ ドメインで実行され、サービスはマーシャリングによってアクセスされます。 この状況では、GetCOMService() は GetService() よりも信頼性が高くなります。
 
 ## <a name="Regenerating"></a> コードの自動再生成
- 通常、1 つの入力モデルから Visual Studio ソリューションにより複数のファイルが生成されます。 各ファイルはそれぞれ対応するテンプレートから生成されますが、すべてのテンプレートは同じモデルを参照しています。
 
- ソース モデルが変更された場合は、ソリューションのすべてのテンプレートを再度実行する必要があります。 これを手動では、次のように選択します。**すべてのテンプレートの変換**上、**ビルド**メニュー。
+通常、1 つの入力モデルから Visual Studio ソリューションにより複数のファイルが生成されます。 各ファイルはそれぞれ対応するテンプレートから生成されますが、すべてのテンプレートは同じモデルを参照しています。
 
- Visual Studio Modeling SDK をインストールする場合、すべてのテンプレートのビルドを実行するたびに自動的に変換されることができます。 そのためには、プロジェクト ファイル (.csproj または .vbproj) をテキスト エディターで編集し、ファイルの末尾付近の、他の `<import>` ステートメントよりも後に次のコード行を追加します。
+ソース モデルが変更された場合は、ソリューションのすべてのテンプレートを再度実行する必要があります。 これを手動では、次のように選択します。**すべてのテンプレートの変換**上、**ビルド**メニュー。
+
+Visual Studio Modeling SDK をインストールする場合、すべてのテンプレートのビルドを実行するたびに自動的に変換されることができます。 そのためには、プロジェクト ファイル (.csproj または .vbproj) をテキスト エディターで編集し、ファイルの末尾付近の、他の `<import>` ステートメントよりも後に次のコード行を追加します。
 
 > [!NOTE]
 > Visual Studio の特定の機能をインストールするときに、テキスト テンプレート変換の SDK および Visual Studio Modeling SDK が自動的にインストールします。 詳細については、[このブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)を参照してください。
+
+::: moniker range="vs-2017"
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -304,10 +307,25 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 </PropertyGroup>
 ```
 
- 詳細については、「[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md)」を参照してください。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
+<PropertyGroup>
+   <TransformOnBuild>true</TransformOnBuild>
+   <!-- Other properties can be inserted here -->
+</PropertyGroup>
+```
+
+::: moniker-end
+
+詳細については、「[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md)」を参照してください。
 
 ## <a name="error-reporting"></a>エラー レポート
- Visual Studio のエラー ウィンドウにエラーと警告メッセージを表示するには、これらのメソッドを使用できます。
+
+Visual Studio のエラー ウィンドウにエラーと警告メッセージを表示するには、これらのメソッドを使用できます。
 
 ```
 Error("An error message");

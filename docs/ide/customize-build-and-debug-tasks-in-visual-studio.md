@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03943f4c50785f0c02be2afc0e874c94c1021b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919054"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954174"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>"フォルダーを開く" の開発のためにビルド タスクとデバッグ タスクをカスタマイズする
 
@@ -56,6 +56,7 @@ Visual Studio で認識できないカスタム ビルド ツールをコード�
 
 *hello.cs* という単一の C# ファイルで構成されるコードベースについて考えてみましょう。 このようなコードベースの *makefile* の例を次に示します。
 
+<!-- markdownlint-disable MD010 -->
 ```makefile
 build: directory hello.exe
 
@@ -72,6 +73,7 @@ directory: bin
 bin:
     md bin
 ```
+<!-- markdownlint-enable MD010 -->
 
 ビルド、クリーン、リビルドのターゲットを含む *makefile* の場合、次の *tasks.vs.json* ファイルを定義できます。 このファイルには、NMAKE をビルド ツールとして使用してコードベースのビルド、リビルド、およびクリーンを行うための 3 つのビルド タスクが含まれています。
 

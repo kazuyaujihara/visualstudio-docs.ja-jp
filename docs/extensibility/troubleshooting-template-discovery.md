@@ -7,27 +7,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e84ff96381fb29a1728ad43df4ff558abd17243
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689839"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324001"
 ---
 # <a name="troubleshooting-template-installation"></a>テンプレートのインストールのトラブルシューティング
 
 プロジェクトまたは項目テンプレートのデプロイ時に問題が発生した場合は、診断ログを有効にできます。
 
-1. 次の内容の Common7\IDE\CommonExtensions フォルダー (例: C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef) インストールの pkgdef ファイルを作成します。
+::: moniker range="vs-2017"
+
+1. Pkgdef ファイルを作成、 *Common7\IDE\CommonExtensions*フォルダーに、インストールします。 たとえば、 *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Pkgdef ファイルを作成、 *Common7\IDE\CommonExtensions*フォルダーに、インストールします。 たとえば、 *C:\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*します。
+
+::: moniker-end
+
+2. Pkgdef ファイルには、次を追加します。
 
     ```
     [$RootKey$\VsTemplate]
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-1. Windows search の検索、インストールに"Developer Command Prompt"を開くし、実行`devenv /updateConfiguration`します。
+3. 開く、[開発者コマンド プロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs)、インストールと実行の`devenv /updateConfiguration`します。
 
-1. Visual Studio を起動し、両方のテンプレートのツリーを初期化するために、新しいプロジェクトと新しい項目のダイアログ ボックスを起動します。 テンプレートは、ログに表示されている **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (インスタンス id は、Visual Studio のインスタンスのインストール ID に対応)。 各テンプレート ツリーの初期化では、このログにエントリを追加します。
+::: moniker range="vs-2017"
+
+4. Visual Studio を起動し、両方のテンプレートのツリーを初期化するために、新しいプロジェクトと新しい項目のダイアログ ボックスを起動します。
+
+   テンプレートは、ログに表示されている **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (インスタンス id は、Visual Studio のインスタンスのインストール ID に対応)。 各テンプレート ツリーの初期化では、このログにエントリを追加します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Visual Studio を起動し、両方のテンプレートのツリーを初期化するために、新しいプロジェクトと新しい項目のダイアログ ボックスを起動します。
+
+   テンプレートは、ログに表示されている **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (インスタンス id は、Visual Studio のインスタンスのインストール ID に対応)。 各テンプレート ツリーの初期化では、このログにエントリを追加します。
+
+::: moniker-end
 
 ログ ファイルには、次の列が含まれています。
 

@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
 searchscope: VS Subscription
-ms.openlocfilehash: 59332dcc1d993df414a9c5981778767adaf155e9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841671"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953808"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
 
@@ -29,21 +29,22 @@ MPSA をご利用のお客様には、MPSA で購入した資産を管理でき�
 テナントの関連付けを完了する前に、Visual Studio サブスクリプション管理者になるために必要な要件と手順がいくつかあります。
 
 ## <a name="pre-tenant-association-managed-tenant"></a>テナントの関連付け前 (管理対象のテナント)
--   ビジネス センターの登録ユーザーである必要があります。
--   属しているテナント内の (少なくとも) ユーザー管理者またはグローバル管理者である必要があります (この要件は、会社が既に Cloud Services を使用している場合に適用されます)。 いずれのロールも Visual Studio サブスクリプション管理者である必要があります。
--   購入アカウントをテナントに関連付けるには、属しているテナントのグローバル管理者である必要があります。
--   ビジネス センターのアカウント管理者またはアカウント マネージャーである必要があります。
--   [Azure](https://portal.azure.com/) のユーザー プロファイル (および他のユーザー) の [国または地域] フィールドは、リージョン (米国、CA など) に応じて適切に設定する必要があります。
+
+- ビジネス センターの登録ユーザーである必要があります。
+- 属しているテナント内の (少なくとも) ユーザー管理者またはグローバル管理者である必要があります (この要件は、会社が既に Cloud Services を使用している場合に適用されます)。 いずれのロールも Visual Studio サブスクリプション管理者である必要があります。
+- 購入アカウントをテナントに関連付けるには、属しているテナントのグローバル管理者である必要があります。
+- ビジネス センターのアカウント管理者またはアカウント マネージャーである必要があります。
+- [Azure](https://portal.azure.com/) のユーザー プロファイル (および他のユーザー) の [国または地域] フィールドは、リージョン (米国、CA など) に応じて適切に設定する必要があります。 
 
 > [!NOTE]
 > Visual Studio サブスクリプション管理者にするすべてのユーザーは、手順 2 と 5 の条件を満たす必要があるだけなので、ビジネス センターのユーザーである必要はありません。
 
 上記の 5 つの手順の条件を満たしたら、以下の手順に従って購入アカウントをテナントに関連付けることができます。
-1.  [ビジネス センター](https://businessaccount.microsoft.com/)にログインします。
-2.  **[アカウント]** タブをクリックし、**[Associate Domains]\(ドメインの関連付け\)** を選択します。
-3.  (購入アカウントを複数持っている場合は) **[Purchasing Account]\(購入アカウント\)** を選択します。
-4.  **テナント** (つまり contoso.onmicrosoft.com) を選択します。
-5.  **[Associate Domain]\(ドメインの関連付け\)** をクリックします。
+1. [ビジネス センター](https://businessaccount.microsoft.com/)にログインします。
+2. **[アカウント]** タブをクリックし、**[Associate Domains]\(ドメインの関連付け\)** を選択します。
+3. (購入アカウントを複数持っている場合は) **[Purchasing Account]\(購入アカウント\)** を選択します。
+4. **テナント** (つまり contoso.onmicrosoft.com) を選択します。
+5. **[Associate Domain]\(ドメインの関連付け\)** をクリックします。
 
 関連付けが行われると、必要な基準を満たすすべてのユーザーは、通常は数分で Visual Studio のサブスクリプション管理者としてプロビジョニングされます。 ただし、最大 24 時間かかることもあります。 プロビジョニングが完了すると、Visual Studio サブスクリプション管理ポータルにアクセスできるようになります。 24 時間よりも長くかかる場合は、MPSA サポートにお問い合わせください。
 

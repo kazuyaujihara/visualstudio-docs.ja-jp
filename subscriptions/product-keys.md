@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Visual Studio サブスクリプションで、プロダクト キーを取得して管理する方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843721"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953902"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのプロダクト キーの使用
 
@@ -104,10 +104,10 @@ Visual Studio サブスクライバーは、[サブスクライバー ポータ�
 Windows Server 2008 R2 では、種類ごとに 5 つのキーが利用でき、各キーが 20 の接続に対応します。 Windows Server 2012 R2 では、種類ごとに 4 つのキーが利用でき、それぞれ 50 の接続に対応します。
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Windows Server への追加の接続を有効にするには:
-1.  サーバー マネージャーを開きます。
-2.  左側にあるナビゲーション ウィンドウでサーバーのリストを開きます。
-3.  ライセンス サーバーを右クリックして、[ライセンスのインストール] を選択します。
-4.  ウィザードの手順に従って操作します。  契約の種類を選択するときには [License Pack (量販店での購入)] を選択し、個人用ポータルから取得したプロダクト キーを入力します。
+1. サーバー マネージャーを開きます。
+2. 左側にあるナビゲーション ウィンドウでサーバーのリストを開きます。
+3. ライセンス サーバーを右クリックして、[ライセンスのインストール] を選択します。
+4. ウィザードの手順に従って操作します。  契約の種類を選択するときには [License Pack (量販店での購入)] を選択し、個人用ポータルから取得したプロダクト キーを入力します。
 
 次の条件が満たされている場合、エンド ユーザーは RDS を介してアプリケーションにアクセスするために接続できます。
 - ユーザーは匿名 (認証されていない状態) でなければなりません。

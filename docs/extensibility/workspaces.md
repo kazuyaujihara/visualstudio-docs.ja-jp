@@ -7,12 +7,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: da61f3f46d9737bef6c14cf69a52be1951da28fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925437"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324235"
 ---
 # <a name="workspaces"></a>ワークスペース
 
@@ -175,7 +175,19 @@ UI コンテキストは、パッケージの自動読み込みを使用でき�
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>SourceExplorerPackage パッケージは正しく読み込まれませんでした。
 
-ワークスペースの機能拡張では、大きく MEF に基づいており、合成エラーが発生する、パッケージの読み込みに失敗の開いているフォルダーをホストします。 たとえば、拡張機能を持つ型をエクスポートします`ExportFileContextProviderAttribute`、型が実装のみが、 `IWorkspaceProviderFactory<IFileContextActionProvider>`、Visual Studio でフォルダーを開こうとしたときにエラーが発生します。 エラーの詳細が記載されて _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_します。 拡張機能によって実装されている種類のエラーを解決します。
+ワークスペースの機能拡張では、大きく MEF に基づいており、合成エラーが発生する、パッケージの読み込みに失敗の開いているフォルダーをホストします。 たとえば、拡張機能を持つ型をエクスポートします`ExportFileContextProviderAttribute`、型が実装のみが、 `IWorkspaceProviderFactory<IFileContextActionProvider>`、Visual Studio でフォルダーを開こうとしたときにエラーが発生します。
+
+::: moniker range="vs-2017"
+
+エラーの詳細が記載されて _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_します。 拡張機能によって実装されている種類のエラーを解決します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+エラーの詳細が記載されて _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_します。 拡張機能によって実装されている種類のエラーを解決します。
+
+::: moniker-end
 
 ## <a name="next-steps"></a>次の手順
 

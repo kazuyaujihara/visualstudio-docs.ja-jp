@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 919eb350f655dda2b96527b1e37f0ec027dd922d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc72fdc63fefd5b60ecfc8ab001b94b87b69e481
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937410"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323803"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio Cloud Explorer で Azure アカウントに関連付けられているリソースを管理する
 
@@ -24,7 +24,7 @@ Cloud Explorer を使用すると、Azure リソースやリソース グルー�
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* **Azure ワークロード**が選択された [Visual Studio 2017](https://www.visualstudio.com/downloads/)、または [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/en-us/download/details.aspx?id=51657) を使用する以前のバージョンの Visual Studio
+* **Azure ワークロード**が選択された [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)、または [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) を使用する以前のバージョンの Visual Studio
 * Microsoft Azure アカウント - アカウントがない場合は、[無料試用版にサインアップ](http://go.microsoft.com/fwlink/?LinkId=623901)するか、[Visual Studio サブスクライバー特典を有効](http://go.microsoft.com/fwlink/?LinkId=623901)にします。
 
 > [!NOTE]

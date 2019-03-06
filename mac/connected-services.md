@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
 ms.date: 11/06/2018
-ms.openlocfilehash: ada47aa3d0cb0d9917404efc2775b843223c6e86
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 7f3cf8ce9e82310a8fe2f6ab9542d3d575a30f5b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948947"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953983"
 ---
 # <a name="connected-services-walkthrough"></a>接続済みサービスのチュートリアル
 
@@ -65,10 +65,10 @@ ms.locfileid: "51948947"
 
 新しいサービスには以下のパラメーターが必要です。
 
--   **App Service の名前**: プランに対して一意の名前/ID
--   **サブスクリプション**: サービスの支払いに使用するサブスクリプション
--   **リソース グループ**: プロジェクトでご利用のすべての Azure リソースを整理する方法。 既存のものを使用するか、新規作成するオプション。 これが初めての Azure サービスである場合、新規作成します。
--   **サービス プラン**: それが使用されるすべてのリソースの場所とコストを決定する。 既存のものを使用するか、新規作成するオプション。 これが初めての Azure サービスである場合、既定のものを使用するか、無料プラン (F1) で新規作成します。
+- **App Service の名前**: プランに対して一意の名前/ID
+- **サブスクリプション**: サービスの支払いに使用するサブスクリプション
+- **リソース グループ**: プロジェクトでご利用のすべての Azure リソースを整理する方法。 既存のものを使用するか、新規作成するオプション。 これが初めての Azure サービスである場合、新規作成します。
+- **サービス プラン**: それが使用されるすべてのリソースの場所とコストを決定する。 既存のものを使用するか、新規作成するオプション。 これが初めての Azure サービスである場合、既定のものを使用するか、無料プラン (F1) で新規作成します。
 
 詳細については、「[Mobile Apps ドキュメント](/azure/app-service-mobile/)」を参照してください。
 

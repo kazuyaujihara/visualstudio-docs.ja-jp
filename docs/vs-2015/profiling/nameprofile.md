@@ -1,4 +1,4 @@
----
+﻿---
 title: NameProfile | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -135,5 +135,5 @@ void ExerciseNameProfile()
 }  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)

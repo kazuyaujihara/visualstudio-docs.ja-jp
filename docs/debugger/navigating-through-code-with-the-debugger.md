@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8c9a2f68427cfa7c5db69dca202a619c86444c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706708"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428753"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio デバッガーでコード内を移動します。
 
@@ -133,7 +133,7 @@ Visual Studio でのブレークポイントには、条件付きブレークポ
 ![クリックで実行](../debugger/media/dbg-run-to-click.png "クリックで実行")
 
 > [!NOTE]
-> **クリックで実行**新[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]します。
+> **クリックで実行**以降で利用可能は[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]します。
 
 ### <a name="manually-break-into-code"></a>コードを手動で中断する
 

@@ -17,7 +17,7 @@ ms.author: mikejo
 manager: douge
 ms.openlocfilehash: 5b5b79e351f828f443e133f40c322ffba3f1a8b6
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51810482"

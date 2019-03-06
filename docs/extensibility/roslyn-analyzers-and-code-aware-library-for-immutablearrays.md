@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843313"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323641"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn アナライザーと ImmutableArrays 用コード認識ライブラリ
 
@@ -298,7 +298,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 これでキーを押して**f5 キーを押して**を Visual Studio の 2 番目のインスタンスでアナライザーを実行します。 前に使用したコンソール プロジェクトを開きます。 場所は、新しいオブジェクトの作成式を表示する電球を表示する必要があります`ImmutableArray<int>`します。 キーを押す場合**Ctrl**+**します。** (ピリオド)、修正、コードが表示され、light bulb UI で、自動的に生成されたコードの違いにプレビューが表示されます。 Roslyn はこれを作成します。
 
-**Pro ヒントは:** Visual Studio の 2 番目のインスタンスを起動するコード修正に電球が表示されない場合は、Visual Studio コンポーネント キャッシュをクリアする必要があります。 キャッシュをクリアする Visual Studio で Visual Studio は、最新コンポーネントを選択し、必要がありますので、コンポーネントを再度確認を強制します。 最初に、Visual Studio の 2 番目のインスタンスをシャット ダウンします。 次に、 **Windows エクスプ ローラー**に移動します *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*します。 (「15.0」に、Visual Studio であるバージョンが変わります。) サブディレクトリを削除*ComponentModelCache*します。
+**Pro ヒントは:** Visual Studio の 2 番目のインスタンスを起動するコード修正に電球が表示されない場合は、Visual Studio コンポーネント キャッシュをクリアする必要があります。 キャッシュをクリアする Visual Studio で Visual Studio は、最新コンポーネントを選択し、必要がありますので、コンポーネントを再度確認を強制します。 最初に、Visual Studio の 2 番目のインスタンスをシャット ダウンします。 次に、 **Windows エクスプ ローラー**に移動します *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*します。 (「16.0」に、Visual Studio であるバージョンが変わります)。サブディレクトリを削除*ComponentModelCache*します。
 
 ## <a name="talk-video-and-finish-code-project"></a>ビデオの説明し、コード プロジェクトの完了
 

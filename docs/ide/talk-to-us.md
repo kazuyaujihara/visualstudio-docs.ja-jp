@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609437"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953520"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 製品フィードバック
 
@@ -24,7 +24,7 @@ ms.locfileid: "56609437"
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Visual Studio に関する問題を報告する方法
 
-Visual Studio を使用していて問題 &mdash; クラッシュ、パフォーマンスの低下、予期しない動作など &mdash; が発生した場合は、**[問題を報告する]** ツールを使ってお知らせください。 Visual Studio で、**[クイック起動]** の横にあるフィードバック アイコンをクリックするか、メニュー バーで **[ヘルプ]** > **[フィードバックの送信]** > **[問題の報告]** の順に選択します。 次に、Visual Studio によって[開発者コミュニティ](https://developercommunity.visualstudio.com) ページがブラウザーで開かれます。ここにサインインして問題を報告することができます。 詳細については、「[Visual Studio 2017 で問題を報告する方法](how-to-report-a-problem-with-visual-studio-2017.md)」を参照してください。
+Visual Studio を使用していて問題 &mdash; クラッシュ、パフォーマンスの低下、予期しない動作など &mdash; が発生した場合は、**[問題を報告する]** ツールを使ってお知らせください。 Visual Studio で、**[クイック起動]** の横にあるフィードバック アイコンをクリックするか、メニュー バーで **[ヘルプ]** > **[フィードバックの送信]** > **[問題の報告]** の順に選択します。 次に、Visual Studio によって[開発者コミュニティ](https://developercommunity.visualstudio.com) ページがブラウザーで開かれます。ここにサインインして問題を報告することができます。 詳細については、「[Visual Studio で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」を参照してください。
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Visual Studio の機能に関するご提案
 
@@ -59,6 +59,6 @@ Microsoft サポート サービスは、当時最新だった価格、条項、
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 で問題を報告する方法](how-to-report-a-problem-with-visual-studio-2017.md)
+* [Visual Studio 2017 で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)
 * [Developer Community](https://developercommunity.visualstudio.com)
 * [開発者コミュニティのデータのプライバシー](developer-community-privacy.md)

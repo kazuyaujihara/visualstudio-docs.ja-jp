@@ -1,20 +1,15 @@
 ---
 title: R Tools for Visual Studio
-description: R Tools for Visual Studio (RTVS) は無料のオープンソースの拡張機能で、IntelliSense、デバッグ、リモート ワークスぺースを含む多くの言語機能を提供しています。
+description: R Tools for Visual Studio 2017 (RTVS) は無料のオープンソースの拡張機能で、IntelliSense、デバッグ、リモート ワークスぺースを含む多くの言語機能を提供しています。
 ms.date: 11/13/2017
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
-- data-science
-ms.openlocfilehash: 3fa12091493bda23c7eae52377f93b45cfe4c6e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933562"
+  - data-science
 ---
+
 # <a name="work-with-r-in-visual-studio"></a>Visual Studio での R の使用
 
 R は、高い拡張性を備えた、統計コンピューティングおよびグラフィックス用の言語であり環境です。 R は GNU General Public License に基づき無料配布されており、コミュニティの強力なサポートを受けることができます。また、数学記号と式を含むプロットを出版品質で生成できる機能で知られています。 R の詳細については、[r-project.org](https://www.r-project.org/about.html) と「[An Introduction to R (R の概要)](https://cran.r-project.org/doc/manuals/r-release/R-intro.html)」をご覧ください。
@@ -22,7 +17,7 @@ R は、高い拡張性を備えた、統計コンピューティングおよび
 R Tools for Visual Studio (RTVS) は Visual Studio 2017 と Visual Studio 2015 Update 3 以降向けの無料の[オープンソース](https://github.com/microsoft/RTVS)拡張機能であり、MIT ライセンスに基づいてリリースされています (R インタープリターのバイナリとリンクする [RHost](https://github.com/microsoft/R-Host) という名前の 2 番目のオープン ソース コンポーネントは、GNU Public License V2 に基づいてリリースされています)。
 
 > [!Note]
-> RTVS は現在、Windows 上の Visual Studio でのみサポートされています。Visual Studio for Mac ではサポートされていません。
+> RTVS は現在、Windows 上の Visual Studio 2017 でのみサポートされています。Visual Studio for Mac ではサポートされていません。 Visual Studio 2019 ではまだご利用いただけません。
 
 Visual Studio で R を使用するには、次の手順を実行します。
 

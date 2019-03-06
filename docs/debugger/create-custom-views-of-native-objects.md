@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 931200e6f921c26d23fddde4a8420f042240e32f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637856"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428805"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>デバッガーでのネイティブ オブジェクトのカスタム ビューの作成
 
@@ -99,11 +99,21 @@ Visual Studio デバッガーが読み込む *.natvis* C++ プロジェクト内
 
 1. すべて *.natvis*に埋め込まれているファイル、 *.pdb*読み込まれているプロジェクトで同じ名前のファイルが存在しない場合、デバッグしています。
 
-1. すべて *.natvis*読み込まれた C++ プロジェクトまたは最上位のソリューションに含まれるファイル。 このグループには、他の言語で、クラス ライブラリ プロジェクトではなくなど、読み込まれたすべての C++ プロジェクトが含まれています。
+2. すべて *.natvis*読み込まれた C++ プロジェクトまたは最上位のソリューションに含まれるファイル。 このグループには、他の言語で、クラス ライブラリ プロジェクトではなくなど、読み込まれたすべての C++ プロジェクトが含まれています。
 
-1.  ユーザー固有の Natvis ディレクトリ (たとえば、 *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*)。
+::: moniker range="vs-2017"
 
-1.  システム全体の Natvis ディレクトリ (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 このディレクトリに、 *.natvis* Visual Studio と共にインストールされるファイル。 管理者のアクセス許可があれば、このディレクトリにファイルを追加することができます。
+3.  ユーザー固有の Natvis ディレクトリ (たとえば、 *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*)。
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+3.  ユーザー固有の Natvis ディレクトリ (たとえば、 *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*)。
+
+::: moniker-end
+
+4.  システム全体の Natvis ディレクトリ (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 このディレクトリに、 *.natvis* Visual Studio と共にインストールされるファイル。 管理者のアクセス許可があれば、このディレクトリにファイルを追加することができます。
 
 ## <a name="modify-natvis-files-while-debugging"></a>デバッグ中に .natvis ファイルを変更します。
 

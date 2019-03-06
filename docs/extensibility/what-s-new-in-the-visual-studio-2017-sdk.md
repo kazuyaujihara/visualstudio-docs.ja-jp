@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3d149a7cec711e59909ff21944ed52e3c074113
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caa7593c85351512e683f2cf93adeb3211e3e4d8
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710176"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323920"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>どのような&#39;s、Visual Studio 2017 SDK の新機能
 
@@ -31,7 +31,7 @@ Visual Studio 2017 の新しい軽量インストールをサポートするた�
 
 これらの変更の詳細については、次のトピックを参照してください。
 
-* [2017 の拡張機能への変更](breaking-changes-2017.md)
+* [Visual Studio 2017 の拡張機能への変更](breaking-changes-2017.md)
 * [VSIX v3 での Ngen のサポート](ngen-support.md)
 * [拡張機能フォルダー外にインストールします。](set-install-root.md)
 * [よく寄せられる質問の Visual Studio 2017 の機能拡張](faq-2017.md)
