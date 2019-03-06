@@ -77,5 +77,5 @@ Microsoft Windows スクリプト エンジンを実装するには、次のイ�
   
  スクリプト サイトが単純なスレッド状態制御メソッド ([IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) メソッドなど) のコンテキスト内や [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) メソッドから呼び出されることはありません。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目
  [Windows スクリプト インターフェイス](../winscript/windows-script-interfaces.md)
