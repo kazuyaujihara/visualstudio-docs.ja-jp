@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb86929a050a61a50a7aa1dd41220f4e087ad767
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607045"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428545"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump サンプル
 
@@ -64,7 +64,7 @@ Dia2dump サンプルでは、Visual Studio と共にインストールされ、
 
 ## <a name="run-the-dia2dump-sample"></a>Dia2Dump サンプルを実行します。
 
-Msdia 依存 Dia2Dump.exe*バージョン*.dll COM サーバーのサービスを提供します。 Visual Studio 2015 と Visual Studio 2017 では、バージョンは、msdia140.dll です。 場合、msdia*バージョン*.dll COM サーバーは初期化されていません、dia2dump.exe 使用前に登録する必要があります。 DIA SDK ディレクトリの bin サブディレクトリを x86 が含まれていますが、DLL のバージョン。 バージョンを x64 のアーキテクチャのマシンは、bin\amd64 で ARM 用のバージョンであり bin\arm します。 Dll を登録するに、管理者特権での開発者コマンド プロンプト ウィンドウを開き、コンピューターのアーキテクチャのバージョンが含まれているディレクトリに変更します。 コマンドを入力して`regsvr32 msdia140.dll`COM サーバーを登録します。
+Msdia 依存 Dia2Dump.exe*バージョン*.dll COM サーバーのサービスを提供します。 Visual Studio 2015 以降、バージョンは、msdia140.dll です。 場合、msdia*バージョン*.dll COM サーバーは初期化されていません、dia2dump.exe 使用前に登録する必要があります。 DIA SDK ディレクトリの bin サブディレクトリを x86 が含まれていますが、DLL のバージョン。 バージョンを x64 のアーキテクチャのマシンは、bin\amd64 で ARM 用のバージョンであり bin\arm します。 Dll を登録するに、管理者特権での開発者コマンド プロンプト ウィンドウを開き、コンピューターのアーキテクチャのバージョンが含まれているディレクトリに変更します。 コマンドを入力して`regsvr32 msdia140.dll`COM サーバーを登録します。
 
 ### <a name="to-run-the-sample"></a>サンプルを実行するには
 

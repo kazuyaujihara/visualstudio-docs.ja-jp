@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f5f9b7e700ff21bac570cf8545207bb75fda820e
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613376"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428740"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用して、ライブの ASP.NET Azure アプリをデバッグします。
 
@@ -50,7 +50,7 @@ ms.locfileid: "56613376"
 
     > [!IMPORTANT]
     > スナップショットのデバッグを開く必要があります、*ソース コードの同じバージョン*Azure App Service に公開されています。
-::: moniker range="< vs-2019"
+::: moniker range="vs-2019"
 
 2. Cloud Explorer で (**ビュー > Cloud Explorer**) で、プロジェクトに配置する Azure App Service を右クリックし、選択**スナップショット デバッガーのアタッチ**します。
 
