@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eb372fffac9c9750f5912871e32a987b41e41b6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 45c80500e216041a444b1f6232d8c939132e413d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042401"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323372"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>チュートリアル: C# でビジュアライザーを記述する #
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>チュートリアル : C\# でビジュアライザーを記述する
 このチュートリアルでは、C# を使用して簡単なビジュアライザーを作成する方法を説明します。 このチュートリアルで作成するビジュアライザーは、Windows フォーム メッセージ ボックスを使用して文字列の内容を表示します。 この簡単な文字列ビジュアライザーは、それ自体ではそれほど役に立ちませんが、他のデータ型を表示する、より役に立つビジュアライザーを作成するために必要な基本手順として使用できます。
 
 > [!NOTE]
@@ -221,7 +221,7 @@ ms.locfileid: "55042401"
 
    テストは成功です。 これで、最初のビジュアライザーの作成とテストが完了しました。
 
-   作成したビジュアライザーをテスト ハーネスから呼び出すのではなく、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用する場合は、ビジュアライザーをインストールする必要があります。 詳細については、「[方法 :ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)」をご覧ください。
+   作成したビジュアライザーをテスト ハーネスから呼び出すのではなく、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用する場合は、ビジュアライザーをインストールする必要があります。 詳細については、次を参照してください。[方法: ビジュアライザーをインストール](../debugger/how-to-install-a-visualizer.md)します。
 
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>ビジュアライザー項目テンプレートを使用して、ビジュアライザーを作成します。
 
@@ -260,5 +260,5 @@ ms.locfileid: "55042401"
 ## <a name="see-also"></a>関連項目
 
 - [ビジュアライザーのアーキテクチャ](../debugger/visualizer-architecture.md)
-- [方法: ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)
+- [方法 : ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)
 - [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)

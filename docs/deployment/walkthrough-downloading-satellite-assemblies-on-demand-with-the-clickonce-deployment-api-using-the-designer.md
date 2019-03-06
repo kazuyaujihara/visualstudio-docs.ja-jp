@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a063a42cd3597f69d0500012d74c7be700e02138
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c70782190bbfd76f5536a68eb597dbf3d122e773
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634995"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323829"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>チュートリアル: ClickOnce 配置デザイナーを使用して API で必要に応じてサテライト アセンブリをダウンロードします。
 サテライト アセンブリを使用すると、複数のカルチャに対して Windows フォーム アプリケーションを構成できます。 *サテライト アセンブリ* とは、アプリケーションの既定のカルチャ以外のカルチャ用アプリケーション リソースを含むアセンブリのことです。
@@ -53,7 +53,7 @@ ms.locfileid: "56634995"
 
 6.  **[アプリケーション ファイル]** ダイアログ ボックスを閉じます。
 
-### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>必要に応じてサテライト アセンブリをダウンロードするには (C#)
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>必要に応じてサテライト アセンブリをダウンロードするには (C\#)
 
 1.  *Program.cs* ファイルを開きます。 このファイルがソリューション エクスプローラーに表示されない場合は、プロジェクトを選択し、**[プロジェクト]** メニューの **[すべてのファイルを表示]** をクリックします。
 
