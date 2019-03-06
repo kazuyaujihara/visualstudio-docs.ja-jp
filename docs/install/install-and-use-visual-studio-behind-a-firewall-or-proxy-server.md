@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: feb115bb3fe7114b6379e27c09279165e6ca7a7e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796622"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954349"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -133,7 +133,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 
 他のいくつかのサポート オプションを次に示します。
 
-* Visual Studio インストーラーおよび Visual Studio IDE の両方に表示される [[問題の報告]](../ide/how-to-report-a-problem-with-visual-studio-2017.md) ツールから、製品の問題を Microsoft に報告してください。
+* Visual Studio インストーラーおよび Visual Studio IDE の両方に表示される [[問題の報告]](../ide/how-to-report-a-problem-with-visual-studio.md) ツールから、製品の問題を Microsoft に報告してください。
 * [Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/)で機能の提案、製品の問題の追跡、回答の検索を行うことができます。
 * [Gitter コミュニティの Visual Studio に関するスレッド](https://gitter.im/Microsoft/VisualStudio)で、ご自分の [GitHub ](https://github.com/) アカウントを使って Microsoft や他の Visual Studio 開発者と情報を交換することもできます。
 

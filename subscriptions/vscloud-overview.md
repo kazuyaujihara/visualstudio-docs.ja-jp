@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
 searchscope: VS Subscription
-ms.openlocfilehash: 5aee20e2c96dd79455968e8aeb87b8f17ec0cf65
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842222"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953422"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
 
@@ -26,28 +26,28 @@ ms.locfileid: "56842222"
 
 ## <a name="before-you-start"></a>開始する前に
 
-*   購入に対する請求のため、[Azure サブスクリプション](https://azure.microsoft.com/pricing/purchase-options/)が必要になります。 Visual Studio Marketplace で初めて購入する前、または購入時に、[サインアップ](https://portal.azure.com)することができます。
+* 購入に対する請求のため、[Azure サブスクリプション](https://azure.microsoft.com/pricing/purchase-options/)が必要になります。 Visual Studio Marketplace で初めて購入する前、または購入時に、[サインアップ](https://portal.azure.com)することができます。
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Visual Studio クラウド サブスクリプションの購入条件
 Azure サブスクリプションに対する[所有者や共同作業者アクセス権](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0)を持っているユーザーは、だれでもクラウド サブスクリプションを購入できます。
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>クラウド サブスクリプションの購入方法
 
-1.  [[Visual Studio Marketplace]、[サブスクリプション]](https://marketplace.visualstudio.com/subscriptions) にサインインします。
+1. [[Visual Studio Marketplace]、[サブスクリプション]](https://marketplace.visualstudio.com/subscriptions) にサインインします。
 
-2.  購入するサブスクリプションを選択します (Visual Studio Professional の月額サブスクリプションなど)。
+2. 購入するサブスクリプションを選択します (Visual Studio Professional の月額サブスクリプションなど)。
 
-3.  請求に使用する Azure サブスクリプションを選択します。 お持ちでなければ、新しい Azure サブスクリプションを作成できます。
+3. 請求に使用する Azure サブスクリプションを選択します。 お持ちでなければ、新しい Azure サブスクリプションを作成できます。
     > [!div class="mx-imgBorder"]
     > ![請求に使用する Azure サブスクリプションを選択する](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
-4.  購入するサブスクリプションの数を選択します。
+4. 購入するサブスクリプションの数を選択します。
     > [!div class="mx-imgBorder"]
     > ![サブスクリプションの数を選択する](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     サブスクリプションを自分に割り当てない場合は、**[自分にこのサブスクリプションを割り当てる]** をオフにします。
 
-5.  確認して購入を完了します。 自分にサブスクリプションを割り当てる場合は、[Visual Studio サブスクライバー ポータル](https://my.visualstudio.com)にアクセスして、ソフトウェアをダウンロードし、その他のサブスクライバー特典を利用開始します。
+5. 確認して購入を完了します。 自分にサブスクリプションを割り当てる場合は、[Visual Studio サブスクライバー ポータル](https://my.visualstudio.com)にアクセスして、ソフトウェアをダウンロードし、その他のサブスクライバー特典を利用開始します。
 
 > [!div class="mx-imgBorder"]
 > ![購入を完了する](_img/buy-vs-subscriptions/buy-vs-sub-success.png)

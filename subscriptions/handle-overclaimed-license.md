@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: 管理者が過剰に要求されたサブスクリプションを解決する方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: aa80a065568cbe7b7f7c3cef1a62fd230c54e751
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6c48bbc077c3d88e1d83f7fa860f4fc6c55fdcd1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843699"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953931"
 ---
 # <a name="handling-over-claimed-subscriptions"></a>過剰に要求されたサブスクリプションに対応する
 
@@ -24,9 +24,8 @@ ms.locfileid: "56843699"
 > [!div class="mx-imgBorder"]
 > ![過剰に要求されたサブスクリプションの通知](_img/over-claimed/over-claimed-alert.png)
 
+1. 過剰に要求されたライセンスを解決するには、アラートのテキストをクリックします。 これにより、過剰に要求されたサブスクリプション レベルに割り当てられているサブスクライバーと有効期限のフィルター処理された一覧が表示されます。 
 
-1.  過剰に要求されたライセンスを解決するには、アラートのテキストをクリックします。 これにより、過剰に要求されたサブスクリプション レベルに割り当てられているサブスクライバーと有効期限のフィルター処理された一覧が表示されます。
+2. 必要に応じて、サブスクライバーを削除して、過剰に要求されたライセンスを修正します。 
 
-2.  必要に応じて、サブスクライバーを削除して、過剰に要求されたライセンスを修正します。
-
-3.  ページの左側にある概要が更新され、再度準拠していることが表示され、過剰要求に関するすべての通知が消えます。
+3. ページの左側にある概要が更新され、再度準拠していることが表示され、過剰要求に関するすべての通知が消えます。 
