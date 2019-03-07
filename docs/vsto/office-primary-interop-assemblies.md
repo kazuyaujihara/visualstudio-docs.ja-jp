@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9ef409b305901cc36e67eeadfe0000202c935b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602287"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525902"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office プライマリ相互運用機能アセンブリ
 
@@ -57,15 +57,15 @@ Visual Studio をインストールすると、ファイル システム内の�
 
 PIA のコピーを使用することで、Visual Studio は、異なるバージョンの PIA がグローバル アセンブリ キャッシュに登録されている場合に発生することのある開発上の問題を回避できます。
 
-Visual Studio は、開発用コンピューターの次の場所に、PIA のコピーをインストールします。
+Visual Studio 2017 以降、これらの Pia のコピーは、次の開発用コンピューターの共有の場所にインストールされます。
 
-- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14*
+- Office\PIA の *%ProgramFiles%\Microsoft Studio\Shared\Visual visual Studio Tools\*
 
-  (または *%programfiles (x86) %\Microsoft Visual Studio 12.0 \visual Studio Tools for office \pia\office14* 64 ビット オペレーティング システムで)
+- (または * %programfiles (x86) %\Microsoft Visual の Studio\Shared\Visual Studio Tools for Office\PIA\* 64 ビット オペレーティング システムで)
 
-- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15*
-
-  (または *%programfiles (x86) %\Microsoft Visual Studio 12.0 \visual Studio Tools for office \pia\office15* 64 ビット オペレーティング システムで)
+> [!NOTE]
+> Office\PIA フォルダーの下の Visual Studio Tools を以前のバージョンの Visual Studio では、これらの Pia がインストールする、* そのバージョンの Visual Studio の % %programfiles% フォルダー。  
+> 例: * % %programfiles (x86) %\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>グローバル アセンブリ キャッシュ内のプライマリ相互運用機能アセンブリ
 
@@ -79,7 +79,7 @@ Office PIA は、 Office ソリューションを実行するエンド ユーザ
 
 Visual Studio の各 Office プロジェクト テンプレートは、単一の Microsoft Office アプリケーションと連動するようになっています。 複数の Microsoft Office アプリケーションの機能を使用したり、Visual Studio 内にプロジェクトが含まれないアプリケーションやコンポーネントの機能を使用したりするには、必要な PIA への参照を追加しなければなりません。
 
-ほとんどの場合は、Visual Studio でインストールされる Pia への参照を追加する必要があります、`%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\`ディレクトリ。 これらのバージョンのアセンブリが表示される、 **Framework**のタブ、**参照マネージャー**  ダイアログ ボックス。 詳細については、「[方法 :Office アプリケーション プライマリ相互運用機能アセンブリを介して](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)します。
+ほとんどの場合は、Visual Studio でインストールされる Pia への参照を追加する必要があります、`%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`ディレクトリ。 これらのバージョンのアセンブリが表示される、 **Framework**のタブ、**参照マネージャー**  ダイアログ ボックス。 詳細については、「[方法 :Office アプリケーション プライマリ相互運用機能アセンブリを介して](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)します。
 
 グローバル アセンブリ キャッシュに PIA をインストールして登録すると、これらのバージョンのアセンブリは、 **[参照マネージャー]** ダイアログ ボックスの **[COM]** タブに表示されます。 これらのバージョンのアセンブリを使用すると開発上の問題が発生するため、これらのアセンブリに参照を追加することは避ける必要があります。 たとえば、異なるバージョンの PIA がグローバル アセンブリ キャッシュに登録されている場合、 **[参照マネージャー]** ダイアログ ボックスの **[COM]** タブで別のバージョンのアセンブリを指定しても、プロジェクトは最後に登録されたバージョンのアセンブリにバインドします。
 
@@ -90,7 +90,7 @@ Visual Studio の各 Office プロジェクト テンプレートは、単一の
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Microsoft Office アプリケーション プライマリ相互運用機能アセンブリ
 
-[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] と [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]で利用できるプライマリ相互運用機能アセンブリの一覧を次の表に示します。
+次の表に、使用可能なプライマリ相互運用機能アセンブリ[!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)]、[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]と[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]します。
 
 <br/>
 
