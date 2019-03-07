@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ac977be83440bfd3e0b1436635bbeb9c39c0ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24dd2c13a0d2d4d2a98d11e5154b96261d19d492
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915987"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525711"
 ---
 # <a name="xml-schema-explorer"></a>XML スキーマ エクスプローラー
 
@@ -31,7 +31,7 @@ ms.locfileid: "55915987"
 
 -   ドキュメントの順序、ドキュメントの種類、またはドキュメント名でツリーを並べ替える。 詳細については、次を参照してください。[並べ替え、フィルター処理、およびグループ化](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)します。
 
--   XML エディターを開き、XSD ファイルのコードの場所にジャンプする。 詳細については、次を参照してください。 [XML エディターとの統合](../xml-tools/integration-with-xml-editor.md)します。
+-   XML エディターを開き、XSD ファイルでコードの場所に移動します。 詳細については、次を参照してください。 [XML エディターとの統合](../xml-tools/integration-with-xml-editor.md)します。
 
 -   グローバル要素のサンプル XML を生成する。
 

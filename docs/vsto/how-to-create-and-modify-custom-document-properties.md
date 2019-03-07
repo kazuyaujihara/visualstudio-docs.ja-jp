@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5747c4c530a358b5ca25b30aaadbe57c10c000c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aefe931bf4b53f0637c4bac1216e313b7a6fb092
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600881"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526504"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>方法: 作成し、カスタム ドキュメント プロパティの変更
   上記の Microsoft Office アプリケーションは、ドキュメントで保存される組み込みのプロパティを提供します。 さらに、ドキュメントで保存する追加情報がある場合は、カスタム ドキュメント プロパティを作成し、変更することができます。
@@ -30,9 +30,7 @@ ms.locfileid: "56600881"
 
  次の例は、Excel のドキュメント レベルのカスタマイズでカスタム プロパティを追加し、値を割り当てる方法を示します。
 
- ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:アクセスし、Microsoft Word のカスタム ドキュメント プロパティを操作しますか](http://go.microsoft.com/fwlink/?LinkId=136772).
-
-## <a name="example"></a>例
+ ## <a name="example"></a>例
  [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)]
  [!code-csharp[Trin_VstcoreProgramming#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#6)]
 

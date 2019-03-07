@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603761f2886ffc64170774a2d6c460d39596454b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e6530f5f2856953041039171b2604236706bfd3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922031"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525141"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>方法: グラフ ビューを使用して設定のスキーマの概要します。
 
@@ -23,7 +23,7 @@ ms.locfileid: "55922031"
 
 1.  新しい XML スキーマ ファイルを作成し、ファイルに保存します*Relationships.xsd*します。
 
-2.  をクリックして、 **XML エディターを使用して表示および基になる XML スキーマ ファイルを編集して**スタート ビューにリンクします。
+2.  をクリックして、**使用して XML エディターを表示および基になる XML スキーマ ファイルの編集を**スタート ビューにリンクします。
 
 3.  XML スキーマのサンプル コードをコピー[サンプルの XML スキーマ: リレーションシップ](../xml-tools/sample-xsd-file-relationships.md)してそれを既定では、新しい XSD ファイルに追加されたコードに置き換えます。
 

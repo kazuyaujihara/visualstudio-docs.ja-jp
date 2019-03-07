@@ -1,5 +1,5 @@
 ---
-title: XML ツール
+title: XML エディターおよびスキーマ デザイナー
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -32,41 +32,50 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d07e7d2a1a8d96b19354ea8d1261b2e82a84d3a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a8854aee047fa961c4f0973397cfc2fe6ac6e6ad
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946895"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526569"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio での XML ツール
 
-*拡張マークアップ言語 (XML)* マークアップ言語であり、データを記述する形式を提供します。 これにより、コンテンツの宣言がより正確になり、複数のプラットフォームをまたいだ検索結果がよりわかりやすくなります。 さらに、XML では、データと表示形式とを切り離すことができます。 たとえば、HTML では、ブラウザーでの太字や斜体によるデータの表示をタグで指定します。XML では、市の名前、気温、気圧などのデータを記述する目的でのみタグを使用します。 ブラウザーでデータを表示するのにには、XML で、拡張可能なスタイル シート言語 (XSL) などのスタイル シートやカスケード スタイル シート (CSS) を使用します。 XML では、データが表示形式と処理から切り離されます。 このため、適用するスタイル シートやアプリケーションを変えることによって、データの表示や処理を思いどおりに行うことができます。
+*拡張マークアップ言語 (XML)* マークアップ言語であり、データを記述する形式を提供します。 XML データを分離して、Extensible Stylesheet Language (XSL) などのスタイル シートやカスケード スタイル シート (CSS) を使用して、プレゼンテーションが関連付けられています。 Visual Studio には、XML、XSLT、および XML スキーマの操作を容易にするツールと機能が含まれています。
 
-XML は SGML のサブセットで、Web を通じて送信するために最適化されています。 これは W3C (World Wide Web Consortium) が定義したものです。 この標準化によって、構造化データが一貫したアプリケーションやベンダーから独立してのことが保証されます。
+## <a name="xml-editor"></a>XML エディター
 
-XML では、Visual Studio および .NET Framework の多くの機能の中核です。 次の記事一覧のツールと Visual Studio および .NET Framework で提供されている XML に関連する機能を名前します。
+[XML エディター](xml-editor.md) XML ドキュメントを編集するために使用します。 完全な XML 構文チェック、入力、色分け、および IntelliSense の中に、スキーマ検証を提供します。 スキーマまたはドキュメント型定義が提供された場合は IntelliSense によって使用され、使用可能な要素と属性が一覧で示されます。
 
-詳細については、次を参照してください。、<xref:System.Xml?displayProperty=fullName>ドキュメント。
+次のような機能も含まれています。
 
-## <a name="reference"></a>参照
+- スキーマから生成されるスニペットを含めた、XML スニペットのサポート
 
-[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699)公開、 [XML エディター](http://go.microsoft.com/fwlink/?LinkId=228249)解析ツリーを[System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250)の任意の XML ドキュメント。
+- ドキュメントの要素を展開し、折りたたまれているようにをアウトライン表示
 
-[XML 標準のリファレンス](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)XML、ドキュメント型定義 (DTD)、XML スキーマ定義言語 (XSD)、および XSLT などの XML テクノロジに関する情報を提供します。
+- XSLT 変換を実行し、テキスト、XML、または HTML として結果を表示するには
 
-<xref:System.Xml?displayProperty=fullName> クラスとその他の要素を構成するについて説明します、<xref:System.Xml>名前空間と、各項目をより詳細な情報へのリンクを提供します。
+- XML インスタンス ドキュメントから XML スキーマ定義言語 (XSD) スキーマを生成する機能
 
-<xref:System.Xml.Serialization?displayProperty=fullName> クラスとその他の要素を構成するについて説明します、<xref:System.Xml.Serialization>名前空間の各項目に関する詳細情報へのリンクを提供します。
+- IntelliSense のサポートを含む、XSLT スタイル シートを編集するためのサポート
 
-## <a name="related-sections"></a>関連項目
+- XML スキーマ エクスプローラー
 
-[XML ドキュメント オブジェクト モデル (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom)方法について説明しますが、どの<xref:System.Xml.XmlDocument>とその関連クラスは、W3C ドキュメント オブジェクト モデル (Core) Level 1 およびレベル 2 の名前空間サポート仕様に準拠します。
+## <a name="xml-schema-designer"></a>XML スキーマ デザイナー
 
-[XmlReader および XmlWriter による XML データの処理](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc189001\(v\=vs.95\))
+[XML スキーマ デザイナー](xml-schema-designer.md) XML スキーマ定義言語 (XSD) スキーマを使用することを有効にするには、Visual Studio と XML エディターと統合されています。
 
-[XSLT 変換](/dotnet/standard/data/xml/xslt-transformations)方法について説明しますが、どの<xref:System.Xml.Xsl.XslCompiledTransform>クラスは、XSLT 1.0 勧告を実装します。
+## <a name="xslt-debugging"></a>XSLT のデバッグ
 
-[XPath データ モデルを使用して XML データを処理](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)方法について説明します、<xref:System.Xml.XPath.XPathNavigator>クラスに格納された XML データを処理できる、<xref:System.Xml.XPath.XPathDocument>または<xref:System.Xml.XmlDocument>オブジェクト。 <xref:System.Xml.XPath.XPathNavigator> クラスは XQuery 1.0 および XPath 2.0 のデータ モデルに基づいており、XML データの操作と編集に使用できます。
+Visual Studio では[XSLT スタイル シートをデバッグ](../xml-tools/debugging-xslt.md)します。 デバッガーを使用すると、XSLT スタイル シート内のブレークポイントの設定や、コードから XSLT スタイル シートへのステップ インなどが可能になります。
 
-[XML スキーマ オブジェクト モデル (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som)作成および提供することで、XML スキーマを操作するために使用されるクラスについて説明します、<xref:System.Xml.Schema.XmlSchema>クラスを読み込み、スキーマを編集します。
+> [!NOTE]
+> XSLT デバッガーには、Visual Studio の Enterprise edition ではできるだけです。
+
+## <a name="see-also"></a>関連項目
+
+- <xref:System.Xml?displayProperty=fullName>
+- [XSLT 変換](/dotnet/standard/data/xml/xslt-transformations)
+- [XPath データ モデルを使用して XML データの処理](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
+- [XML ドキュメント オブジェクト モデル (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom)
+- [XML スキーマ オブジェクト モデル (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som)

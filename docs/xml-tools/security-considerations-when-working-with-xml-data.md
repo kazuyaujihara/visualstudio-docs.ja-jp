@@ -8,28 +8,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebcf5769c9ca59a0772530e3551517d14c1ec0c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af91f02b6cc34fcc05b83bb6c09cfd37e8a18ef
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955844"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525467"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>XML データを使用する場合のセキュリティに関する考慮事項
 
-このトピックでは、XML エディターや XSLT デバッガーを使用する際に知っておく必要があるセキュリティの問題について説明します。
+このトピックでは、XML エディターや XSLT デバッガーを使用する際に理解する必要があるセキュリティの問題について説明します。
 
 ## <a name="xml-editor"></a>XML エディター
 
- XML エディターは、Visual Studio のテキスト エディターに基づいています。 XML エディターは通常、<xref:System.Xml> クラスと <xref:System.Xml.Xsl> クラスに依存して XML プロセスを処理します。
+ XML エディターは Visual Studio テキスト エディターに基づいています。 XML エディターは通常、<xref:System.Xml> クラスと <xref:System.Xml.Xsl> クラスに依存して XML プロセスを処理します。
 
 -   XSLT 変換は、新しいアプリケーション ドメインで実行されます。 XSLT 変換は*サンド ボックス化された*; XSLT スタイル シートがある場所に基づいて制限されたアクセス許可を決定する、コンピューターのコード アクセス セキュリティ ポリシーを使用する、します。 たとえば、インターネット上にあるスタイル シートは最も制限されたアクセス許可を持ち、ユーザーのハード ディスクにコピーされているスタイル シートは "完全な信頼" で実行されます。
 
 -   <xref:System.Xml.Xsl.XslCompiledTransform> クラスは、XSLT を Microsoft Intermediate Language (MSIL) にコンパイルし、実行時の処理速度を高めるために使用されます。
 
--   カタログ ファイルで外部の場所を指し示すスキーマは、XML エディターが最初に読み込みを行うときに自動的にダウンロードされます。 <xref:System.Xml.Schema.XmlSchemaSet> クラスは、スキーマをコンパイルするために使用されます。 XML エディターに付属するカタログ ファイルには、外部のスキーマへのリンクは記述されていません。 XML エディターでスキーマ ファイルをダウンロードする前に、ユーザーは外部スキーマへの参照を明示的に追加する必要があります。 HTTP ダウンロードを使用して無効にできる、**その他のツール オプション**ページ、XML エディターの。
+-   カタログ ファイルで外部の場所を指し示すスキーマは、XML エディターが初めて読み込まれるときに自動的にダウンロードします。 <xref:System.Xml.Schema.XmlSchemaSet> クラスは、スキーマをコンパイルするために使用されます。 XML エディターに付属するカタログ ファイルには、外部のスキーマへのリンクはありません。 ユーザーは、XML エディターでスキーマ ファイルをダウンロードする前に、外部スキーマへの参照を明示的に追加します。 HTTP ダウンロードを使用して無効にできる、**その他のツール オプション**XML エディターのページ。
 
--   XML エディターは、<xref:System.Net> クラスを使用してスキーマをダウンロードします。
+-   XML エディターを使用して、<xref:System.Net>クラス スキーマをダウンロードするには
 
 ## <a name="xslt-debugger"></a>XSLT デバッガー
 

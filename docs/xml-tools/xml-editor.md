@@ -7,16 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9126b16692e844ca6bb3dcdbd6aad250b1209011
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948161"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526192"
 ---
 # <a name="xml-editor"></a>XML エディター
 
-XML エディターは、Visual Studio テキスト エディターに基づいており、XML 言語の追加サポートが含まれています。 XML エディターには、次の機能が含まれています。
+Visual Studio の XML エディターでは、テキスト エディターに基づいており、XML 言語の追加サポートが含まれています。 Visual Studio で XML ファイルを開くと、XML エディターで開きます。
+
+XML エディターには、次の機能が含まれています。
 
 - XML 1.0 の構文チェック。
 
@@ -32,13 +34,13 @@ XML エディターは、Visual Studio テキスト エディターに基づい�
 
 - DTD または XDR (XML-Data Reduced) スキーマの XML スキーマへの変換。
 
-- XSLT 1.0 の構文チェック。
+- XSLT この構文をチェックします。
 
 - 要素の展開と折りたたみが可能なドキュメントのアウトライン表示。
 
 - 統合、 [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)します。 これにより、XML スキーマの階層を表示します。
 
-XML エディターがなどのよく知られているファイル拡張子では、呼び出された *.xml*、 *.xsd*、 *.xsl*、および *.config*します。ファイルに XML が含まれている場合は、未知のファイル拡張子についても XML エディターが呼び出されます。 使用して、XML エディターで任意のファイルを開くことができますも、**ファイルを開く**オプションと XML エディターを一覧から選択します。
+XML エディターがなどのよく知られているファイル拡張子では、呼び出された *.xml*、 *.xsd*、 *.xsl*、および *.config*します。ファイルに XML が含まれている場合は、未知のファイル拡張子についても XML エディターが呼び出されます。
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
@@ -46,7 +48,7 @@ XML エディターがなどのよく知られているファイル拡張子で�
 
 ## <a name="xslt-profiler"></a>XSLT プロファイラー
 
-[XSLT プロファイラー](../xml-tools/walkthrough-xslt-profiler.md)詳細な XSLT パフォーマンス レポートする際に役立つ計測、評価、および XSLT コード内のパフォーマンスに関連する問題を対象に作成します。 XSLT プロファイラーには、XSL および XSLT のスタイル シートの最適化に役立つヒントも含まれています。
+[XSLT プロファイラー](../xml-tools/xslt-profiler.md)詳細な XSLT パフォーマンス レポートする際に役立つ計測、評価、および XSLT コード内のパフォーマンスに関連する問題を対象に作成します。 XSLT プロファイラーには、XSL および XSLT のスタイル シートの最適化に役立つヒントも含まれています。
 
 ## <a name="xslt-hierarchy"></a>XSLT 階層
 
@@ -54,6 +56,8 @@ XML エディターがなどのよく知られているファイル拡張子で�
 
 ## <a name="see-also"></a>関連項目
 
-- [コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)テキスト エディターに関する情報を提供します。
-- [XML 標準のリファレンス](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)XML、ドキュメント型定義 (DTD)、XML スキーマ定義言語 (XSD)、および XSLT などの XML テクノロジに関する情報を提供します。
+- [XML エディターのオプションの書式設定](../ide/reference/options-text-editor-xml-formatting.md)
+- [XML エディターのオプション - その他](../ide/reference/options-text-editor-xml-miscellaneous.md)
+- [コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)
+- [XML 標準のリファレンス](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
 - [Visual Studio の XML ツール](../xml-tools/xml-tools-in-visual-studio.md)

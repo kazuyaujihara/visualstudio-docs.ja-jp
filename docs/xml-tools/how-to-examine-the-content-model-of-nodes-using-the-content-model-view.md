@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d188ef947c8c789f8de032522d43c09660f2ded
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 63edeb597c3c085df3c9c9eb15f6c051e524a476
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920913"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526000"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>方法: コンテンツ モデル ビューを使用してノードのコンテンツ モデルを調べる
 
@@ -23,11 +23,11 @@ ms.locfileid: "55920913"
 
 1.  新しい XML スキーマ ファイルを作成します。
 
-2.  をクリックして**XML エディターを使用して表示および基になる XML スキーマ ファイルを編集して**スタート ビューにします。
+2.  クリックして**使用して XML エディターを表示および基になる XML スキーマ ファイルを編集**スタート ビューにします。
 
 3.  XML スキーマのサンプル コードをコピー[サンプルの XML スキーマ: 購買発注書のスキーマ](../xml-tools/sample-xsd-file-purchase-order-schema.md)してそれを既定では、新しい XSD ファイルに追加されたコードに置き換えます。
 
-4.  選択、`purchaseOrder`を右クリックし、スキーマ エクスプ ローラー内の要素、`purchaseOrder`要素、XML エディターで選択して**XML エクスプ ローラーで表示する**。
+4.  選択、`purchaseOrder`要素を右クリックし、スキーマ エクスプ ローラーで、 `purchaseOrder` XML 内の要素エディターと選択**XML エクスプ ローラーで表示する**します。
 
 5.  右クリックし、 `purchaseOrder` XML エクスプ ローラーを選び**コンテンツ モデル ビューに表示する**します。
 

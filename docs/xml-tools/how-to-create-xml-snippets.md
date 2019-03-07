@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a17f5699ffc5bfe33e86370a9c5ef114331e90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907335"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526621"
 ---
 # <a name="how-to-create-xml-snippets"></a>方法: XML スニペットを作成します。
 
-XML エディターを使用して、新しい XML スニペットを作成することができます。 エディターには、新しい XML スニペットを作成する際の定型スニペットである、"Snippet" という名前の XML スニペットが含まれています。
+新しい XML スニペットを作成するのには、XML エディターを使用できます。 エディターには、新しい XML スニペットを作成する際の定型スニペットである、"Snippet" という名前の XML スニペットが含まれています。
 
 ## <a name="to-create-a-new-xml-snippet"></a>新しい XML スニペットを作成するには
 
@@ -80,7 +80,7 @@ XML エディターを使用して、新しい XML スニペットを作成す�
 
 - $name$ はユーザー定義変数です。 この変数によって、編集可能な値を持つ `name` 要素が作成されます。既定値は "name" です。 ユーザー定義変数は、`Literal` 要素を使用して定義されます。
 
-- $selected$ は定義済みの変数です。 この変数は、スニペットを呼び出す前に XML エディターで選択されたテキストを表します。 この変数の配置によって、選択されたテキストが、選択範囲を囲むコード スニペット内のどこに出現するかが決まります。
+- $selected$ は定義済みの変数です。 スニペットを呼び出す前に、XML エディターで選択したテキストを表します。 この変数の配置によって、選択されたテキストが、選択範囲を囲むコード スニペット内のどこに出現するかが決まります。
 
 - $end$ は定義済みの変数です。 押されたとき**Enter**キャレット (^) の移動先をこの変数にコード スニペット フィールドの編集を終了するには、決定します。
 

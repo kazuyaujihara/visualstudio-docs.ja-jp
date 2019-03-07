@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae8a554f4ce9e5c9a38f17ee4f491d7a537b3d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954687"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525870"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>チュートリアル: XML エディターの機能を使用して、
 
-このチュートリアルの手順では、新しい XML ドキュメントを作成する方法を示します。 ここでは、XML の作成に役立つ XML エディターの機能もいくつか使用します。
+このチュートリアルの手順では、新しい XML ドキュメントを作成する方法を示します。 このチュートリアルでは、いくつかの XML の作成に役立つ XML エディターの機能も使用します。
 
 > [!NOTE]
 > このチュートリアルを開始する前に保存、 *hireDate.xsd*をローカル コンピューターのファイル (このトピックで後述)。
@@ -96,9 +96,11 @@ ms.locfileid: "55954687"
 
 ## <a name="to-format-the-xml-document"></a>XML ドキュメントに書式を設定するには
 
-- 選択、**ドキュメントのフォーマット**XML エディターのツールバーからボタンをクリックします。
+- 選択、**ドキュメントのフォーマット**XML エディターのツールバー、またはキーを押してボタンを**Ctrl**+**E**、**D**します。
 
-    XML ドキュメントの書式が再設定されます。
+   ![Visual Studio で形式の XML ドキュメント ボタン](media/format-xml-document.png)
+
+   XML ドキュメントの書式が再設定されます。
 
 ## <a name="to-save-the-xml-document"></a>XML ドキュメントを保存するには
 
@@ -109,7 +111,8 @@ ms.locfileid: "55954687"
 2.  XML ドキュメントの場所とファイル名を入力し、クリックして**保存**します。
 
 ## <a name="hiredatexsd-file"></a>hireDate.xsd ファイル
- このチュートリアルでは、次のスキーマ ファイルを使用します。
+
+次のスキーマ ファイルは、このチュートリアルで使用されます。
 
 ```xml
 <?xml version="1.0"?>
