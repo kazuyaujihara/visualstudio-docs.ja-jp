@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931755"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525454"
 ---
 # <a name="how-to-edit-xml-files"></a>方法: XML ファイルを編集します。
 
-XML エディターは、XML ファイル用の新しいエディターです。 スタンドアロンの XML ファイル、または Visual Studio プロジェクトと関連付けられたファイルに対して使用できます。 XML エディターは、次のファイル拡張子に関連付けられている: *.config*、 *.dtd*、 *.xml*、 *.xsd*、 *.xdr*、 *.xsl*、 *.xslt*、および *.vssettings*します。 XML エディターは、特定のエディターが登録されておらず、XML や DTD のコンテンツを含む他のファイルの種類にも関連付けられます。
+XML エディターは、XML ファイル用の新しいエディターです。 スタンドアロンの XML ファイル、または Visual Studio プロジェクトと関連付けられたファイルに対して使用できます。 XML エディターは、次のファイル拡張子に関連付けられている: *.config*、 *.dtd*、 *.xml*、 *.xsd*、 *.xdr*、 *.xsl*、 *.xslt*、および *.vssettings*します。 XML エディターは、特定のエディターで登録されると、指定されていないと、XML や DTD のコンテンツを格納している他のファイル種類と関連付けられているもできます。
 
 > [!NOTE]
 > XHTML ドキュメントは HTML エディターによって処理されます。
@@ -34,7 +34,7 @@ XML エディターは、XML ファイル用の新しいエディターです。
 
 3.  内のファイル名を入力、**名前**フィールドとキーを押して**追加**します。
 
-     XML ファイルがプロジェクトに追加され、XML エディターによって開かれます。 ファイルには既定の XML 宣言 `<?xml version="1.0" encoding="utf-8" ?>` が含まれています。
+     XML ファイルがプロジェクトに追加し、XML エディターで開かれます。 ファイルには既定の XML 宣言 `<?xml version="1.0" encoding="utf-8" ?>` が含まれています。
 
 ## <a name="to-add-an-existing-xml-file-to-a-project"></a>既存の XML ファイルをプロジェクトに追加するには
 
@@ -64,7 +64,7 @@ XML エディターは、XML ファイル用の新しいエディターです。
 
 3.  プロジェクトに XML ファイルを追加します。
 
-     このプロジェクトに追加したスキーマは XML エディターによって検出され、このプロジェクトが開かれている間に編集する XML、スキーマ、または XSLT ファイルにおいて、検証と IntelliSense のために使用されます。
+     XML エディターでは、このプロジェクトに追加したスキーマを検索し、検証と IntelliSense の XML、スキーマ、またはこのプロジェクトが開いている間に編集する XSLT ファイルのために使用します。
 
 ## <a name="see-also"></a>関連項目
 

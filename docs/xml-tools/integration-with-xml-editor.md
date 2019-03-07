@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e06141eb6f6d7383a433a1f9b0ba29944e26a329
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: faad46c6ac2686de69fcb33f2fb482bdb0f4fe00
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930299"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525134"
 ---
 # <a name="integration-with-xml-editor"></a>XML エディターとの統合
 
-XML スキーマ デザイナーは、XML エディターと統合されています。 変更を反映する、XML エディターで XSD ファイルを変更する場合、 [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)します。 ある場合、[グラフ ビュー](../xml-tools/graph-view.md)または[コンテンツ モデル ビュー](../xml-tools/content-model-view.md)開く、変更も反映されますがあります。 次の方法を使用して XML スキーマ デザイナーと XML エディターの間を移動できます。
+XML スキーマ デザイナーは、XML エディターと統合されます。 変更を反映する XML エディターで XSD ファイルを変更する場合、 [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)します。 ある場合、[グラフ ビュー](../xml-tools/graph-view.md)または[コンテンツ モデル ビュー](../xml-tools/content-model-view.md)開く、変更も反映されますがあります。 次の方法で XML スキーマ デザイナーと XML エディター間を移動することができます。
 
 -   XML エディターでノードを右クリックし、選択**XML スキーマ エクスプ ローラーで表示する**します。
 
@@ -27,7 +27,7 @@ XML スキーマ デザイナーは、XML エディターと統合されてい�
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
-場合によっては、XML エディターとグラフィカルなデザイナーのコードを並べて表示すると便利です。 を同時に両方のファイルを表示するには、任意の場所の XML エディターでを右クリックして**ビュー デザイナー**します。 Visual Studio Windows メニューで、次のように選択します。**新しい水平 (または垂直) タブ グループ**します。
+場合によって、XML エディターとグラフィカルなデザイナーをサイド バイ サイドでコードを表示することをお勧めします。 を同時に両方のファイルを表示する、XML エディター内を右クリックし、選択**ビュー デザイナー**します。 Visual Studio Windows メニューで、次のように選択します。**新しい水平 (または垂直) タブ グループ**します。
 
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 
