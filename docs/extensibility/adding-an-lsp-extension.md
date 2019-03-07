@@ -1,4 +1,4 @@
----
+﻿---
 title: 言語サーバー プロトコルの拡張機能の追加 |Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
