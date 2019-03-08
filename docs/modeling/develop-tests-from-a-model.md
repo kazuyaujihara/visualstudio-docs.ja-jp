@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82f464e6c58c8403ffee34957f9bd49b39471114
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 289d21b4828e22877ac139f2f29b6500907cf4e0
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940283"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567316"
 ---
 # <a name="develop-tests-from-a-model"></a>モデルからテストを開発する
 システムとそのコンポーネントのテストを編成する際に、要件モデルとアーキテクチャ モデルを使用できます。 こうすることで、ユーザーやその他の利害関係者にとって重要な要求をテストしやすくなり、要求が変更された場合にすばやくテストを更新することができます。 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] を使用した場合、モデルとテストの間のリンクを維持することもできます。
@@ -59,7 +59,7 @@ ms.locfileid: "55940283"
 
 1. [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] で要求を作成し、その要求に対してテスト スイートを作成します。
 
-    作成した要求は、[!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] の作業項目になります。 Team foundation プロジェクトで使用されるプロセス テンプレートによって、ユーザー ストーリー、要件、またはユース ケース作業項目があります。 詳細については、次を参照してください。[のアジャイル ツール、アジャイル プロジェクト管理](/azure/devops/boards/backlogs/overview?view=vsts)します。
+    作成した要求は、[!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] の作業項目になります。 Team foundation プロジェクトで使用されるプロセス テンプレートによって、ユーザー ストーリー、要件、またはユース ケース作業項目があります。 詳細については、次を参照してください。[のアジャイル ツール、アジャイル プロジェクト管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)します。
 
 2. モデル内の 1 つまたは複数のユース ケースに対して、要求の作業項目をリンクします。
 
@@ -147,7 +147,7 @@ Assert (countAfter == countBefore = 1);
 
 1. [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] で要求を作成し、その要求に対してテスト スイートを作成します。
 
-    作成した要求は、[!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] の作業項目になります。 Team foundation プロジェクトで使用されるプロセス テンプレートによって、ユーザー ストーリー、要件、またはユース ケース作業項目があります。 詳細については、次を参照してください。[のアジャイル ツール、アジャイル プロジェクト管理](/azure/devops/boards/backlogs/overview?view=vsts)します。
+    作成した要求は、[!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] の作業項目になります。 Team foundation プロジェクトで使用されるプロセス テンプレートによって、ユーザー ストーリー、要件、またはユース ケース作業項目があります。 詳細については、次を参照してください。[のアジャイル ツール、アジャイル プロジェクト管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)します。
 
 2. モデル内の 1 つまたは複数の要素に対して、要求の作業項目をリンクします。
 

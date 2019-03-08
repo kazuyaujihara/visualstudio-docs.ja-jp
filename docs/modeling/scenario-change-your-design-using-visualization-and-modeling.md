@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f320c992f3bb82ee29829d8d0a8dccc230ee6eb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 41ca66c796b352113973dcf8d8158f385f49a8ec
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951606"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567371"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>シナリオ:視覚化およびモデリングを使用して設計を変更する
 
@@ -214,7 +214,7 @@ Dinner Now と Lucerne は、作業の進行に伴って、タスクに費やさ
 
 参照トピック
 
-- [アジャイル ツール、アジャイル プロジェクト管理について](/azure/devops/boards/backlogs/overview?view=vsts)
+- [アジャイル ツール、アジャイル プロジェクト管理について](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
 
 - [グラフとダッシュ ボードにウィジェット (Azure DevOps サービス)](/azure/devops/report/dashboards/overview?view=vsts)
 
@@ -454,7 +454,7 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 - [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)
 
-- [依存関係図:参照](../modeling/layer-diagrams-reference.md)
+- [依存関係図:リファレンス](../modeling/layer-diagrams-reference.md)
 
 - [依存関係図:ガイドライン](../modeling/layer-diagrams-guidelines.md)
 
