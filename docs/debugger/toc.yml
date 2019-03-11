@@ -116,6 +116,8 @@ items:
       items:
       - name: エディット コンティニュの中断モード時に編集を適用する
         href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
+    - name: 実行中の XAML コードを記述およびデバッグする
+      href: xaml-edit-and-continue.md
     - name: F# ではエディット コンティニュはサポートされません。
       href: edit-and-continue-not-supported-for-f-hash.md
   - name: デバッガー データの表示
@@ -607,7 +609,7 @@ items:
       href: dump-file-summary-extensibility-api.md
   - name: デバッガーのセキュリティ
     href: debugger-security.md
-- name: 参照
+- name: 関連項目
   items:
   - name: デバッグ用ユーザー インターフェイス リファレンス
     href: debugging-user-interface-reference.md
@@ -841,9 +843,9 @@ items:
   items:
   - name: Visual Studio のデバッガーの新機能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 703836e5453534998db5090d904aae4339993c43
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 60b141b0f9a7b00dda32a68f5f33e2bc8321dad6
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335468"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699656"
