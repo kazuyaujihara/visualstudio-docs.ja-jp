@@ -8,18 +8,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bac4ba3e929da9ad6f22666c6a6b3f71b288c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920045"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428662"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio IDE の表示の紹介
 
 この 5 - 10 分程度の Visual Studio 統合開発環境 (IDE) の紹介では、ウィンドウやメニューなどの UI 機能の一部を説明します。
 
 Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker range=">=vs-2019"
+
+## <a name="start-window"></a>スタート ウィンドウ
+
+Visual Studio を起動するとまずスタート ウィンドウが表示されます。 スタート ウィンドウは、速やかに "コードに移動" できるようなデザインになっています。 コードを閉じる/チェックアウトするオプション、既存のプロジェクトまたはソリューションを開くオプション、新しいプロジェクトを作成するオプション、いくつかのコード ファイルが含まれるフォルダーを開くためのオプションがあります。
+
+[![](media/vs-2019/start-window.png "Visual Studio 2019 のスタート ウィンドウ")](media/vs-2019/start-window.png)
+
+Visual Studio を初めて使用する場合、最近使用したプロジェクト リストは空になります。
+
+MSBuild ベースではないコードベースを使用している場合、**[ローカル フォルダーを開く]** オプションを使用し、Visual Studio でコードを開きます。 詳細については、「[プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する](develop-javascript-code-without-solutions-projects.md)」を参照してください。 そうでなければ、GitHub や Azure DevOps など、ソース プロバイダーから新しいプロジェクトを作成したり、プロジェクトを複製したりできます。
+
+**[コードなしで続行]** オプションを使用すると、特定のプロジェクトやコードが読み込まれることなく、Visual Studio 開発環境が起動します。 [Live Share](/visualstudio/liveshare/) セッションに参加したり、デバッグ目的でプロセスに接続したりするとき、このオプションを選択することがあります。 **Esc** を押してスタート ウィンドウを閉じ、IDE を開くこともできます。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="start-page"></a>スタート ページ
 
@@ -31,9 +49,27 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ![Visual Studio の [ファイル] メニュー](media/quickstart-IDE-file-menu-large.png)
 
+::: moniker-end
+
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
 Visual Studio の機能を引き続き確認するために、新しいプロジェクトを作成しましょう。
+
+::: moniker range=">=vs-2019"
+
+1. **[スタート ウィンドウ]** で **[新しいプロジェクトの作成]** を選択し、検索ボックスに「**javascript**」と入力し、プロジェクトの種類の一覧にフィルターを適用し、名前または言語タイプに "javascript" が含まれるものに絞り込みます。
+
+   Visual Studio には、すぐにコーディングを開始するのに役立つ、さまざまな種類のプロジェクト テンプレートが用意されています。 (あるいは、TypeScript の開発者であれば、その言語でプロジェクトを作成できます。 表示される UI はすべてのプログラミング言語でほぼ同じです)。
+
+   ![Visual Studio の [スタート ウィンドウ] でプロジェクト テンプレートを検索する](media/vs-2019/create-new-project.png)
+
+1. **Blank Node.js Web Application** プロジェクト テンプレートを選択し、**[次へ]** をクリックします。 
+
+1. 表示された **[新しいプロジェクトの構成]** ダイアログ ボックスで、既定のプロジェクト名をそのまま使用し、**[作成]** を選択します。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 1. **[スタート ページ]** の **[新しいプロジェクト]** の下にある検索ボックスに「**javascript**」と入力し、プロジェクトの種類の一覧にフィルターを適用し、名前または言語タイプに "javascript" が含まれるものに絞り込みます。
 
@@ -42,6 +78,7 @@ Visual Studio の機能を引き続き確認するために、新しいプロジ
    Visual Studio には、すぐにコーディングを開始するのに役立つ、さまざまな種類のプロジェクト テンプレートが用意されています。 **Blank Node.js Web Application** プロジェクト テンプレートを選択します。 (あるいは、TypeScript の開発者であれば、その言語でプロジェクトを作成できます。 表示される UI はすべてのプログラミング言語でほぼ同じです)。
 
 1. 表示された **[新しいプロジェクト]** ダイアログ ボックスで、既定のプロジェクト名をそのまま使用し、**[OK]** を選択します。
+::: moniker-end
 
    プロジェクトが作成され、*server.cs* という名前のファイルが **[エディター]** ウィンドウに開きます。 **エディター**にファイルの内容が表示されます。Visual Studio でのコード作成作業のほとんどは、このエディターで行います。
 

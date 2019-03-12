@@ -17,18 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8944117c7d4e47f36f504f9677074ad4f86e33de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d717619954981c6b8cdf900f8fb358272478264b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949058"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223430"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>チュートリアル: コード スニペットを作成する
+
 コード スニペットは、わずかな手順で作成できます。 必要な操作は、XML ファイルを作成し、適切な要素を指定して、コードを追加するだけです。 コードには、参照や置換パラメーターを追加することもできます。 Visual Studio インストールにスニペットを追加するには、**コード スニペット マネージャー** (**[ツール]** > **[コード スニペット マネージャー]**) の **[インポート]** を使用します。
 
 ## <a name="snippet-template"></a>スニペット テンプレート
- 基本的なスニペット テンプレートを次に示します。
+
+基本的なスニペット テンプレートを次に示します。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,13 +50,13 @@ ms.locfileid: "55949058"
 
 ### <a name="create-a-code-snippet"></a>コード スニペットを作成する
 
-1.  Visual Studio で新しい XML ファイルを作成し、上に示したテンプレートを追加します。
+1. Visual Studio で新しい XML ファイルを作成し、上に示したテンプレートを追加します。
 
-2.  Title 要素にスニペットのタイトルを入力します。**Title** 要素に「Hello World VB」と入力します。
+2. Title 要素にスニペットのタイトルを入力します。**Title** 要素に「Hello World VB」と入力します。
 
-3.  **Code** 要素の **Language** 属性に、スニペットの言語を指定します。 この例では、"VB" を使用します。
+3. **Code** 要素の **Language** 属性に、スニペットの言語を指定します。 この例では、"VB" を使用します。
 
-4.  **Code** 要素内の **CDATA** セクションにコードを追加します。次に例を示します。
+4. **Code** 要素内の **CDATA** セクションにコードを追加します。次に例を示します。
 
     ```xml
     <Code Language="VB">
@@ -62,33 +64,53 @@ ms.locfileid: "55949058"
     </Code>
     ```
 
-5.  *VBCodeSnippet.snippet* という名前でスニペットを保存します。
+5. *VBCodeSnippet.snippet* という名前でスニペットを保存します。
 
 ### <a name="add-a-code-snippet-to-visual-studio"></a>コード スニペットを Visual Studio に追加する
 
-1.  コード スニペット マネージャーを使用すると、独自のスニペットを Visual Studio インストールに追加できます。 **コード スニペット マネージャー**を開きます (**[ツール]** > **[コード スニペット マネージャー]**)。
+1. コード スニペット マネージャーを使用すると、独自のスニペットを Visual Studio インストールに追加できます。 **コード スニペット マネージャー**を開きます (**[ツール]** > **[コード スニペット マネージャー]**)。
 
-2.  **[インポート]** ボタンをクリックします。
+2. **[インポート]** ボタンをクリックします。
 
-3.  前の手順でコード スニペットを保存した場所に移動し、コード スニペットを選択して、**[開く]** をクリックします。
+3. 前の手順でコード スニペットを保存した場所に移動し、コード スニペットを選択して、**[開く]** をクリックします。
 
-4.  **[コード スニペットのインポート]** ダイアログが開き、右ウィンドウの選択肢からスニペットを追加するように求められます。 選択肢の 1 つに **[マイ コード スニペット]** があります。 これを選択し、**[完了]**、**[OK]** の順にクリックします。
+4. **[コード スニペットのインポート]** ダイアログが開き、右ウィンドウの選択肢からスニペットを追加するように求められます。 選択肢の 1 つに **[マイ コード スニペット]** があります。 これを選択し、**[完了]**、**[OK]** の順にクリックします。
 
-5.  スニペットが次の場所にコピーされます。
+5. スニペットが次の場所にコピーされます。
 
-     *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
+   ::: moniker range="vs-2017"
 
-6.  Visual Basic プロジェクトを開き、コード ファイルを開くことによって、スニペットをテストします。 このファイルで、右クリック メニューの **[スニペット]** > **[スニペットの挿入]** の順に選択し、**[マイ コード スニペット]** を選択します。 **[My Visual Basic Code Snippet]** (マイ Visual Basic コード スニペット) という名前のスニペットが表示されます。 これをダブルクリックします。
+   *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets*
+
+   ::: moniker-end
+
+6. Visual Basic プロジェクトを開き、コード ファイルを開くことによって、スニペットをテストします。 このファイルで、右クリック メニューの **[スニペット]** > **[スニペットの挿入]** の順に選択し、**[マイ コード スニペット]** を選択します。 **[My Visual Basic Code Snippet]** (マイ Visual Basic コード スニペット) という名前のスニペットが表示されます。 これをダブルクリックします。
 
     `Console.WriteLine("Hello, World!")` はコード ファイルに挿入されます。
 
 ### <a name="add-description-and-shortcut-fields"></a>Description フィールドと Shortcut フィールドを追加する
 
-1.  Description フィールドは、コード スニペット マネージャーに表示された際に、コード スニペットに関する詳しい情報を提供します。 ショートカットとは、スニペットを挿入するためにユーザーが入力できるタグです。 *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet* ファイルを開くことで、追加したスニペットを編集します。
+::: moniker range="vs-2017"
 
-2.  **Author** 要素と **Description** 要素を **Header** 要素に追加し、情報を入力します。
+1. Description フィールドは、コード スニペット マネージャーに表示された際に、コード スニペットに関する詳しい情報を提供します。 ショートカットとは、スニペットを挿入するためにユーザーが入力できるタグです。 *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet* ファイルを開くことで、追加したスニペットを編集します。
 
-3.  **Header** 要素は次のようになります。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Description フィールドは、コード スニペット マネージャーに表示された際に、コード スニペットに関する詳しい情報を提供します。 ショートカットとは、スニペットを挿入するためにユーザーが入力できるタグです。 *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet* ファイルを開くことで、追加したスニペットを編集します。
+
+::: moniker-end
+
+2. **Author** 要素と **Description** 要素を **Header** 要素に追加し、情報を入力します。
+
+3. **Header** 要素は次のようになります。
 
     ```xml
     <Header>
@@ -98,9 +120,9 @@ ms.locfileid: "55949058"
     </Header>
     ```
 
-4.  **コード スニペット マネージャー**を開き、コード スニペットを開きます。 右ウィンドウで、**Description** フィールドと **Author** フィールドが指定されていることを確認します。
+4. **コード スニペット マネージャー**を開き、コード スニペットを開きます。 右ウィンドウで、**Description** フィールドと **Author** フィールドが指定されていることを確認します。
 
-5.  ショートカットを追加するには、**Author** 要素および **Description** 要素と共に **Shortcut** 要素を追加します。
+5. ショートカットを追加するには、**Author** 要素および **Description** 要素と共に **Shortcut** 要素を追加します。
 
     ```xml
     <Header>
@@ -111,19 +133,19 @@ ms.locfileid: "55949058"
     </Header>
     ```
 
-6.  スニペット ファイルを再度保存します。
+6. スニペット ファイルを再度保存します。
 
-7.  ショートカットをテストするには、Visual Basic プロジェクトを開き、コード ファイルを開きます。 ファイルに「`hello`」と入力し、**Tab** キーを 2 回押します。
+7. ショートカットをテストするには、Visual Basic プロジェクトを開き、コード ファイルを開きます。 ファイルに「`hello`」と入力し、**Tab** キーを 2 回押します。
 
     スニペット コードが挿入されます。
 
 ### <a name="add-references-and-imports"></a>参照とインポートを追加する
 
-1.  **References** 要素を使用してプロジェクトに参照を追加し、**Imports** 要素を使用して Imports 宣言を追加できます。 (これは C# でも動作します。)たとえば、コード例の `Console.WriteLine` を `MessageBox.Show` に変更する場合、プロジェクトに *System.Windows.Forms.dll* アセンブリの追加が必要になる場合があります。
+1. **References** 要素を使用してプロジェクトに参照を追加し、**Imports** 要素を使用して Imports 宣言を追加できます。 (これは C# でも動作します。)たとえば、コード例の `Console.WriteLine` を `MessageBox.Show` に変更する場合、プロジェクトに *System.Windows.Forms.dll* アセンブリの追加が必要になる場合があります。
 
-2.  スニペットを開きます。
+2. スニペットを開きます。
 
-3.  **Snippet** 要素の下に **References** 要素を追加します。
+3. **Snippet** 要素の下に **References** 要素を追加します。
 
     ```xml
     <References>
@@ -133,7 +155,7 @@ ms.locfileid: "55949058"
     </References>
     ```
 
-4.  **Snippet** 要素の下に **Imports** 要素を追加します。
+4. **Snippet** 要素の下に **Imports** 要素を追加します。
 
     ```xml
     <Imports>
@@ -143,17 +165,17 @@ ms.locfileid: "55949058"
     </Imports>
     ```
 
-5.  **CDATA** セクションを次のように変更します。
+5. **CDATA** セクションを次のように変更します。
 
     ```xml
     <![CDATA[MessageBox.Show("Hello, World!")]]>
     ```
 
-6.  スニペットを保存します。
+6. スニペットを保存します。
 
-7.  Visual Basic プロジェクトを開き、スニペットを追加します。
+7. Visual Basic プロジェクトを開き、スニペットを追加します。
 
-8.  コード ファイルの先頭で、次の `Imports` ステートメントを確認できます。
+8. コード ファイルの先頭で、次の `Imports` ステートメントを確認できます。
 
     ```vb
     Imports System.Windows.Forms
@@ -163,11 +185,11 @@ ms.locfileid: "55949058"
 
 ### <a name="add-replacements"></a>置換を追加する
 
-1.  コード スニペットの一部をユーザーが置換できるように指定することができます。たとえば、変数を追加しておき、ユーザーが現在のプロジェクト内の変数に置換できるようにする場合などです。 使用できる置換には、リテラル置換とオブジェクト置換の 2 種類があります。 リテラルは、いずれかの種類 (文字列リテラル、変数名、数値の文字列形式) の文字列です。 オブジェクトは、文字列以外の型のインスタンスです。 この手順では、リテラル置換およびオブジェクト置換を宣言し、これらの置換が参照されるようにコードを変更します。
+1. コード スニペットの一部をユーザーが置換できるように指定することができます。たとえば、変数を追加しておき、ユーザーが現在のプロジェクト内の変数に置換できるようにする場合などです。 使用できる置換には、リテラル置換とオブジェクト置換の 2 種類があります。 リテラルは、いずれかの種類 (文字列リテラル、変数名、数値の文字列形式) の文字列です。 オブジェクトは、文字列以外の型のインスタンスです。 この手順では、リテラル置換およびオブジェクト置換を宣言し、これらの置換が参照されるようにコードを変更します。
 
-2.  スニペットを開きます。
+2. スニペットを開きます。
 
-3.  この例では、SQL 接続文字列を使用するため、**Imports** 要素と **References** 要素を変更して、適切な参照を追加する必要があります。
+3. この例では、SQL 接続文字列を使用するため、**Imports** 要素と **References** 要素を変更して、適切な参照を追加する必要があります。
 
     ```xml
     <References>
@@ -188,7 +210,7 @@ ms.locfileid: "55949058"
     </Imports>
     ```
 
-4.  SQL 接続文字列用のリテラル置換を宣言するには、**Declarations** 要素を **Snippet** 要素の下に追加し、その中に **Literal** 要素を追加します。さらにその中に、置換する ID、ツールヒント、および既定値を指定するためのサブ要素を追加します。
+4. SQL 接続文字列用のリテラル置換を宣言するには、**Declarations** 要素を **Snippet** 要素の下に追加し、その中に **Literal** 要素を追加します。さらにその中に、置換する ID、ツールヒント、および既定値を指定するためのサブ要素を追加します。
 
     ```xml
     <Declarations>
@@ -200,7 +222,7 @@ ms.locfileid: "55949058"
     </Declarations>
     ```
 
-5.  SQL 接続用のオブジェクト置換を宣言するには、**Object** 要素を **Declarations** 要素内に追加し、ID、オブジェクトの型、ツールヒント、および既定値を指定するためのサブ要素を追加します。 その結果、**Declarations** 要素は次のようになります。
+5. SQL 接続用のオブジェクト置換を宣言するには、**Object** 要素を **Declarations** 要素内に追加し、ID、オブジェクトの型、ツールヒント、および既定値を指定するためのサブ要素を追加します。 その結果、**Declarations** 要素は次のようになります。
 
     ```xml
     <Declarations>
@@ -218,7 +240,7 @@ ms.locfileid: "55949058"
     </Declarations>
     ```
 
-6.  Code セクションでは、置換項目を $ 記号で囲んで参照します (例: `$replacement$`)。
+6. Code セクションでは、置換項目を $ 記号で囲んで参照します (例: `$replacement$`)。
 
     ```xml
     <Code Language="VB" Kind="method body">
@@ -232,9 +254,9 @@ ms.locfileid: "55949058"
     </Code>
     ```
 
-7.  スニペットを保存します。
+7. スニペットを保存します。
 
-8.  Visual Basic プロジェクトを開き、スニペットを追加します。
+8. Visual Basic プロジェクトを開き、スニペットを追加します。
 
 9. コードは次のようになります。置換項目 `SQL connection string` と `dcConnection` は明るいオレンジ色で強調表示されます。 項目間を移動するには、**Tab** キーを選択します。
 

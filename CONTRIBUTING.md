@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324339"
+---
 # <a name="contribute-to-visual-studio-documentation"></a>Visual Studio ドキュメントへの投稿
 
 Visual Studio ドキュメントにご投稿いただき、ありがとうございます。
@@ -25,3 +33,7 @@ Visual Studio ドキュメントにご投稿いただき、ありがとうござ
 ### <a name="larger-edits"></a>より大規模な編集
 
 共同作成者ガイドで、[プル要求](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing)に関するガイダンスを確認してください。
+
+**注**
+
+`docs/vs-2015` フォルダーのファイルについては、古いバージョンである Visual Studio 2015 用であるため、積極的には取り組んでいません。 これらのファイルに対する小さな変更については、プル要求を受け付けていません。

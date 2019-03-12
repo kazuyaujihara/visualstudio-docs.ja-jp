@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 6ccf9ebad32a82f88740e4f7dc0c920d348b6d48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796531"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223001"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>手順 1: Windows フォーム アプリケーション プロジェクトの作成
 
@@ -33,7 +33,7 @@ ms.locfileid: "56796531"
 3. テンプレート リストで、**[Windows フォーム アプリケーション (.NET Framework)]** を選択します。 新しいフォームに「**PictureViewer**」という名前を付け、**[OK]** をクリックします。
 
     >[!NOTE]
-    >**[Windows フォーム アプリケーション (.NET Framework)]** テンプレートが表示されない場合は、Visual Studio インストーラーを使用して **[.NET デスクトップ開発]** ワークロードをインストールします。<br/><br/>![Visual Studio インストーラーでの [.NET デスクトップ開発] ワークロード](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> 詳細については、「[Visual Studio 2017 のインストール](../install/install-visual-studio.md)」を参照してください。
+    >**[Windows フォーム アプリケーション (.NET Framework)]** テンプレートが表示されない場合は、Visual Studio インストーラーを使用して **[.NET デスクトップ開発]** ワークロードをインストールします。<br/><br/>![Visual Studio インストーラーでの [.NET デスクトップ開発] ワークロード](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> 詳細については、「[Visual Studio のインストール](../install/install-visual-studio.md)」を参照してください。
 
      Visual Studio はプログラムのソリューションを作成します。 ソリューションは、プログラムに必要なすべてのプロジェクトとファイルのコンテナーとして機能します。 これらについては、このチュートリアルで後ほど詳しく説明します。
 

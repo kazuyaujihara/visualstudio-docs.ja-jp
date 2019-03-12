@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 52085e5ac2471c73d512252f85bd3db3e3cc0234
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e09d1cb2e57955f3177fff4e5b54c78eadcd659e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919821"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223404"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -36,7 +36,17 @@ Visual Studio の単体テストは、*.runsettings* ファイルを使用して
 
 1. Visual Studio 開発者コマンド プロンプトを起動します。
 
+   ::: moniker range="vs-2017"
+
    Windows の **[スタート]** メニューから、**[Visual Studio 2017]** > **[開発者コマンド プロンプト for VS 2017]** の順に選択します。
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   Windows の **[スタート]** メニューから、**[Visual Studio 2019]** > **[開発者コマンド プロンプト for VS 2019]** の順に選択します。
+
+   ::: moniker-end
 
 2. 次のようなコマンドを入力します。
 
@@ -85,7 +95,7 @@ Visual Studio の単体テストは、*.runsettings* ファイルを使用して
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
 
-    <!-- TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+    <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
@@ -113,7 +123,7 @@ Visual Studio の単体テストは、*.runsettings* ファイルを使用して
       </DataCollector>
 
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
-        <!--Video data collector is only available with Visual Studio 2017 version 15.5 and higher -->
+        <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
       </DataCollector>
 
     </DataCollectors>

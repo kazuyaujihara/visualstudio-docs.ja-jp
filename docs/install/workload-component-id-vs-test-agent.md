@@ -1,61 +1,46 @@
 ---
-title: Visual Studio Test Agent 2017 のワークロードとコンポーネント ID
+title: Visual Studio Test Agent のワークロードとコンポーネント ID
 titleSuffix: ''
 description: Visual Studio のワークロード ID とコンポーネント ID を使って、自動テストとロード テストをリモートで実行します
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
-ms.workload:
-- multiple
-ms.openlocfilehash: 95fad33bfe21546e0e5ecbbab4e1259505941eec
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: c6d7582a34b4e91607b076275c8b254591f0ab89
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841040"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323132"
 ---
-# <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 のコンポーネント ディレクトリ
+# <a name="visual-studio-test-agent-component-directory"></a>Visual Studio Test Agent のコンポーネント ディレクトリ
 
-このページの表では、コマンド ラインを使用して Visual Studio をインストールするか、VSIX マニフェストで依存関係として指定するために使用できる ID の一覧を示します。 Visual Studio の更新プログラムがリリースされる際には、さらにコンポーネントが追加される予定です。
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-また、このページに関して以下の点に注意してください。
+::: moniker range="vs-2017"
 
-* 各ワークロードに個別のセクションがあり、ワークロード ID と、そのワークロードで利用できるコンポーネントの表が示されています。
-* 既定では、ワークロードをインストールすると**必須**コンポーネントがインストールされます。
-* 選択した場合は、**推奨**コンポーネントと**オプション** コンポーネントもインストールできます。
-* どのワークロードにも関連付けられていない追加のコンポーネントの一覧を示したセクションも追加しました。
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-VSIX マニフェストで依存関係を設定するときは、コンポーネント ID のみを指定する必要があります。 このページの表を使用して、コンポーネントの最小の依存関係を確認してください。 シナリオによって、1 つのワークロードの 1 つのコンポーネントだけを指定する場合もあれば、 1 つのワークロードの複数のコンポーネントを指定したり、複数のワークロードの複数のコンポーネントを指定したりする場合もあります。 詳細については、「[方法: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)」 (方法: 機能拡張プロジェクトを Visual Studio 2017 に移行する) を参照してください。
+[!include[Visual Studio Test Agent 2017](includes/vs-2017/workload-component-id-vs-test-agent.md)]
 
-これらの ID の使用方法の詳細については、「[Use Command-Line Parameters to Install Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)」(コマンドライン パラメーターを使用して Visual Studio 2017 をインストールする) をご覧ください。 その他の製品のワークロードとコンポーネント ID の一覧については、「[Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md)」(Visual Studio 2017 のワークロード ID とコンポーネント ID) をご覧ください。
+::: moniker-end
 
-## <a name="test-agent"></a>Test Agent
+::: moniker range=">= vs-2019"
 
-**ID:** Microsoft.VisualStudio.Workload.TestAgent
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**説明:** 自動テストとロード テストのリモートでの実行をサポートします。
+[!include[Visual Studio Test Agent 2019](includes/vs-2019/workload-component-id-vs-test-agent.md)]
 
-### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
-
-コンポーネント ID | name | Version | 依存関係の種類
---- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent のコア機能 | 15.0.27019.1 | 必須
-
-## <a name="unaffiliated-components"></a>関連付けられていないコンポーネント
-
-以下のコンポーネントはどのワークロードにも含まれていませんが、個別のコンポーネントとして選択できます。
-
-コンポーネント ID | name | Version
---- | --- | ---
-N/A | N/A | N/A
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

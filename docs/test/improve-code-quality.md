@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cace8f9728f71648300f3dfd9a073453e74ada7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7bcb75da8a21090450c18080240f76ae17c10281
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957170"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221581"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio のテスト ツール
 
@@ -36,7 +36,7 @@ Visual Studio のテスト ツールを使用することで、チームと共�
 - [ロード テスト](../test/quickstart-create-a-load-test-project.md)では、単体テストと Web パフォーマンス テストを実行することでサーバー アプリケーションの負荷をシミュレーションします。
 
 > [!NOTE]
-> 単体テストは、Visual Studio のすべてのエディションで使用できます。 ライブ単体テスト、IntelliTest、コード化された UI テストなど、その他のテスト ツールは Visual Studio Enterprise エディションでのみ使用できます。 エディションの詳細については、「[Visual Studio 2017 IDE の比較](https://visualstudio.microsoft.com/vs/compare/)」を参照してください。
+> 単体テストは、Visual Studio のすべてのエディションで使用できます。 ライブ単体テスト、IntelliTest、コード化された UI テストなど、その他のテスト ツールは Visual Studio Enterprise エディションでのみ使用できます。 エディションの詳細については、[Visual Studio IDE の比較](https://visualstudio.microsoft.com/vs/compare/)に関するページを参照してください。
 
 ## <a name="related-scenarios"></a>関連するシナリオ
 

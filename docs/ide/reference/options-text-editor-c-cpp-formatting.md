@@ -16,20 +16,20 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 95683c93558f67457f0868a76f52d1334e7a6712
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645486"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223222"
 ---
 # <a name="options-text-editor-cc-formatting"></a>[オプション]、[テキスト エディター]、[C/C++]、[書式設定]
 
 これらのプロパティ ページを使用し、C または C++ でプログラムを記述する際のコード エディターの既定の動作を変更します。
 
-[C++ Formatting プロパティ ページ](media/cpp-formatting.png)
+![C++ Formatting プロパティ ページ](media/cpp-formatting.png)
 
- このページを表示するには、左ペインの **[オプション]** ダイアログ ボックスで、**[テキスト エディター]** フォルダー、**[C/C++]** を順に展開して、**[書式設定]** をクリックします。
+このページを表示するには、左ペインの **[オプション]** ダイアログ ボックスで、**[テキスト エディター]** フォルダー、**[C/C++]** を順に展開して、**[書式設定]** をクリックします。
 
 > [!NOTE]
 > 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
@@ -38,14 +38,25 @@ ms.locfileid: "56645486"
 
 このページには、入力したステートメントやブロックの書式を設定するためのオプションがあります。
 
-**Visual Studio 2017 バージョン 15.7 以降**:このページにも、[ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) バージョン 5.0 のサポートを構成するためのオプションがあります。 ClangFormat は、.clang-format または _clang-format ファイルで構成できる一連のルールに基づいてコードのスタイルや書式を簡単に設定できるユーティリティです。
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 バージョン 15.7 以降**:
+
+::: moniker-end
+
+このページにも、[ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) バージョン 5.0 のサポートを構成するためのオプションがあります。 ClangFormat は、.clang-format または _clang-format ファイルで構成できる一連のルールに基づいてコードのスタイルや書式を簡単に設定できるユーティリティです。
 
 ### <a name="configuring-clangformat-options"></a>ClangFormat オプションを構成する
 
-Visual Studio 2017 バージョン 15.7 以降、ClangFormat サポートは既定で有効になります。 一般的な書式設定規則であるLLVM、Google、Chromium、Mozilla、WebKit のうち、すべてのプロジェクトに適用するものを選択できます。 また、カスタム書式定義の .clang-format または _clang-format ファイルを作成できます。 そのようなファイルがプロジェクト フォルダーに置かれている場合、Visual Studio は、そのフォルダーとそのサブフォルダーのすべてのソース コード ファイルの書式設定にそのファイルを使用します。
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 バージョン 15.7 以降**:
+
+::: moniker-end
+
+ClangFormat のサポートは、既定で有効になっています。 一般的な書式設定規則であるLLVM、Google、Chromium、Mozilla、WebKit のうち、すべてのプロジェクトに適用するものを選択できます。 また、カスタム書式定義の .clang-format または _clang-format ファイルを作成できます。 そのようなファイルがプロジェクト フォルダーに置かれている場合、Visual Studio は、そのフォルダーとそのサブフォルダーのすべてのソース コード ファイルの書式設定にそのファイルを使用します。
 
 既定では、Visual Studio は clangformat.exe をバックグラウンドで実行し、ユーザーが入力すると書式設定を適用します。 書式設定コマンド **Format Document (Ctrl + K、Ctrl + D)** または **Format Selection (Ctrl + K、Ctrl + F)** を手動で呼び出す場合にのみ、clangformat.exe を実行するように指定することもできます。
-
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>インデント、改行、間隔、折り返しのページ
 

@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 56e6277b589f12563ad6dfa3912815b966db399a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946276"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222975"
 ---
 # <a name="team-explorer-reference"></a>チーム エクスプローラーのリファレンス
 
@@ -33,7 +33,7 @@ ms.locfileid: "55946276"
 
 | Git に接続されている場合の **[ホーム]** ページ | TFVC に接続されている場合の **[ホーム]** ページ |
 | - | - |
-| ![Git に接続されている場合のチーム エクスプローラー[ホーム] ページ (Visual Studio 2019)](media/team-explorer-reference/team-explorer-git.png) | ![TFVC に接続されている場合のチーム エクスプローラー[ホーム] ページ (Visual Studio 2017)](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Git に接続されている場合のチーム エクスプローラー[ホーム] ページ (Visual Studio 2019)](media/team-explorer-reference/team-explorer-git.png) | ![TFVC に接続されている場合のチーム エクスプローラー[ホーム] ページ (Visual Studio)](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>変更ページ (Git)
 
@@ -82,7 +82,7 @@ ms.locfileid: "55946276"
 ::: moniker range=">= vs-2019"
 
 > [!NOTE]
-> Visual Studio 2019 Preview 1 では[作業項目ページが新しくなりました](/azure/devops/boards/work-items/set-work-item-experience-vs)。 Visual Studio 2019 Preview 1 で作業項目を表示する方法については、[作業項目の表示および追加](/azure/devops/boards/work-items/view-add-work-items)に関するページを参照してください。
+> Visual Studio 2019 では[作業項目ページが新しくなりました](/azure/devops/boards/work-items/set-work-item-experience-vs)。 Visual Studio 2019 で作業項目を表示する方法については、[作業項目の表示および追加](/azure/devops/boards/work-items/view-add-work-items)に関するページを参照してください。
 
 ::: moniker-end
 

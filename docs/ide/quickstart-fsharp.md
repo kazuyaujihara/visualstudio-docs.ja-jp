@@ -11,14 +11,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 166ff1fae5cbc494fe287a47a2983fc52364493b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7fba20b7b01ab0c55e9bef9b4bcc62813cab895
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934667"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323278"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>クイック スタート: F# で Visual Studio を使用して初めての ASP.NET Core Web サービスを作成する
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>クイック スタート: F\# で Visual Studio を使用して初めての ASP.NET Core Web サービスを作成する
 
 この 5 - 10 分の Visual Studio での F# の概要では、F# で ASP.NET Core の Web アプリケーションを作成します。
 
@@ -28,7 +28,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 まず、ASP.NET Core Web API プロジェクトを作成します。 プロジェクトの種類は、機能的な Web サービスを構成するテンプレート ファイルにあらかじめ用意されています。
 
-1. Visual Studio 2017 を開きます。
+1. Visual Studio を開きます。
 
 2. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 

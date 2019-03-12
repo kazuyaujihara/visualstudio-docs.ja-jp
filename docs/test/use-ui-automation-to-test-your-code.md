@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5340d64087068f5da3b48c1057e3a6a8fb700a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919236"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223482"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI オートメーションを使用してコードをテストする
 
@@ -48,7 +48,7 @@ ms.locfileid: "55919236"
 
 ## <a name="install-the-coded-ui-test-component"></a>コード化された UI テストのコンポーネントをインストールする
 
-コード化された UI テストのツールとテンプレートにアクセスするには、Visual Studio 2017 の**コード化された UI テスト** コンポーネントをすべてインストールします。
+コード化された UI テストのツールとテンプレートにアクセスするには、Visual Studio の**コード化された UI テスト** コンポーネントをすべてインストールします。
 
 1. **[ツール]** > **[ツールと機能を取得]** を選択して **Visual Studio インストーラー**を起動します。
 

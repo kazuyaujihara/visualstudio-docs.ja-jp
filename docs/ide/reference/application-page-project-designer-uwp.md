@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4d2f1dc7ba69d0c9521c5ad4a1a075b3da71e3a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 416661a39f54429f24cca66a0ec1be7b6c87629d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911338"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222715"
 ---
 # <a name="application-property-page-uwp-projects"></a>アプリケーション プロパティ ページ (UWP プロジェクト)
 
@@ -44,7 +44,7 @@ ms.locfileid: "55911338"
 
 このセクションのドロップダウン リストを使用して、自分のアプリに対して Windows 10 のターゲット バージョンと最小バージョンを設定できます。 エンタープライズ アプリを開発している場合、古い最小バージョンもサポートする、最新バージョンの Windows 10 をターゲットにすることをお勧めします。 選択する Windows 10 のバージョンの詳細については、「[UWP バージョンの選択](/windows/uwp/updates-and-versions/choose-a-uwp-version)」を参照してください。
 
-Visual Studio 2017 のプラットフォーム ターゲットの詳細については、「[対象となるプラットフォーム](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting)」を参照してください。
+Visual Studio のプラットフォーム ターゲットの詳細については、「[対象となるプラットフォーム](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
