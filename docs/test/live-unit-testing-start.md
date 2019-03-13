@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4676727f70b8065aee34578f563f286bc85bcb25
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3082f2a3acaac7b874f98d675ae28d11ea0374ae
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950306"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223771"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio 2017 で Live Unit Testing の使用を開始する
 
@@ -34,13 +34,13 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-このチュートリアルでは、.NET Core 2.0 ワークロードを使用する Visual Studio 2017 Enterprise Edition バージョン 15.3 がインストールされている必要があります。
+このチュートリアルでは、.NET Core 2.0 ワークロードを使用する Visual Studio Enterprise Edition がインストールされている必要があります。
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>ソリューションとクラス ライブラリ プロジェクトを作成する
 
 単一の .NET Standard クラス ライブラリ プロジェクト `StringLibrary` から成る `UtilityLibraries` という名前の Visual Studio ソリューションを作成することから始めます。 `StringLibrary` は、C# または Visual Basic のどちらでも記述することができます。
 
-このソリューションは、1 つまたは複数のプロジェクト用のコンテナーにすぎません。 ソリューションを作成するには、Visual Studio 2017 を開き、次の手順を実行します。
+このソリューションは、1 つまたは複数のプロジェクト用のコンテナーにすぎません。 ソリューションを作成するには、Visual Studio を開き、次の手順を実行します。
 
 1. Visual Studio の最上位のメニューから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
@@ -129,7 +129,7 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
    > [!NOTE]
    > 単体テストを記述する言語は、クラス ライブラリと同じ言語でなくてもかまいません。
 
-1. 次の図に示すように、右側のウィンドウで [**単体テスト プロジェクト (.NET Core)**] テンプレートを選択し、**[名前]** テキスト ボックスに「`StringLibraryTests`」と入力します。
+1. 次の図に示すように、右側のウィンドウで **[単体テスト プロジェクト (.NET Core)]** テンプレートを選択し、**[名前]** テキスト ボックスに「`StringLibraryTests`」と入力します。
 
    ![単体テスト プロジェクトの場合の [新しいプロジェクトの追加] ダイアログ](./media/lut-start/add-unit-test-cs.png)
 
@@ -167,7 +167,7 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
    > [!NOTE]
    > 単体テストを記述する言語は、クラス ライブラリと同じ言語でなくてもかまいません。
 
-1. 次の図に示すように、右側のウィンドウで [**単体テスト プロジェクト (.NET Core)**] テンプレートを選択し、**[名前]** テキスト ボックスに「`StringLibraryTests`」と入力します。
+1. 次の図に示すように、右側のウィンドウで **[単体テスト プロジェクト (.NET Core)]** テンプレートを選択し、**[名前]** テキスト ボックスに「`StringLibraryTests`」と入力します。
 
    ![単体テストの場合の [新しいプロジェクトの追加] ダイアログ](./media/lut-start/add-unit-test-vb.png)
 

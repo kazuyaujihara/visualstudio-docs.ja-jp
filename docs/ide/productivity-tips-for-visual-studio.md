@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702721"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223144"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio の生産性に関するヒント
 
@@ -24,7 +24,7 @@ ms.locfileid: "56702721"
 
 コードをすばやく記述するには、次の機能を使用します。
 
-- **便利なコマンドを使用する**。 Visual Studio は、一般的な編集タスクを迅速に実行できるさまざまなコマンドを備えています。 たとえば、**Visual Studio 2017 バージョン 15.6** 以降では、コマンドを選択するだけで簡単にコード行を複製できます。コード行をコピーし、カーソルの位置を移動させてから貼り付ける必要はありません。 **[編集]** > **[複製]** の順に選択するか、または **Ctrl** + **E** キー、**V** キーの順に押します。 **[編集]** > **[詳細設定]** > **[選択範囲の展開]** または **[編集]** > **[詳細設定]** > **[選択範囲の縮小]** を選択すると、選択範囲のテキストをすばやく拡張したり縮小したりできます。**Shift** + **Alt** + **=** キーまたは **Shift** + **Alt** + **-** キーを押しても実行できます (**Visual Studio 2017 バージョン 15.5** 以降で使用できます)。
+- **便利なコマンドを使用する**。 Visual Studio は、一般的な編集タスクを迅速に実行できるさまざまなコマンドを備えています。 たとえば、コマンドを選択するだけで簡単にコード行を複製できます。コード行をコピーし、カーソルの位置を移動させてから貼り付ける必要はありません。 **[編集]** > **[複製]** の順に選択するか、または **Ctrl** + **E** キー、**V** キーの順に押します。 **[編集]** > **[詳細設定]** > **[選択範囲の展開]** または **[編集]** > **[詳細設定]** > **[選択範囲の縮小]** を選択すると、選択範囲のテキストをすばやく拡張したり縮小したりできます。**Shift** + **Alt** + **=** キーまたは **Shift** + **Alt** + **-** キーを押しても実行できます。
 
 - **IntelliSense を使用する**。 エディターにコードを入力すると、メンバーの一覧、パラメーター ヒント、クイック ヒント、シグネチャ ヘルプ、入力候補などの IntelliSense 情報が表示されます。 これらの機能では、テキストのあいまい一致をサポートしています。そのため、たとえば、メンバーの一覧の結果一覧には、入力した文字から始まるエントリだけでなく、その文字の組み合わせが名前に含まれているエントリも含まれます。 詳細については、[IntelliSense の使用](../ide/using-intellisense.md)に関するページを参照してください。
 
@@ -102,9 +102,19 @@ ms.locfileid: "56702721"
 
 スタート メニューまたはタスク バーに固定すると、開発者コマンド プロンプトまたは別の Visual Studio のツールにすぐにアクセスできます。
 
-1. Windows エクスプローラーで、`%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools` を参照します。
+::: moniker range="vs-2017"
 
-1. **[開発者コマンド プロンプト]** を右クリックするかコンテキスト メニューを開いて、**[スタートにピン留めする]** または **[タスク バーにピン留めする]** を選びます。
+1. Windows エクスプローラーで、*%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools* を参照します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Windows エクスプローラーで、*%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools* を参照します。
+
+::: moniker-end
+
+2. **[開発者コマンド プロンプト]** を右クリックするかコンテキスト メニューを開いて、**[スタートにピン留めする]** または **[タスク バーにピン留めする]** を選びます。
 
 ## <a name="manage-files-toolbars-and-windows"></a>ファイル、ツール バー、ウィンドウの管理
 

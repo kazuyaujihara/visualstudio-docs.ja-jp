@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,21 +14,21 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41582f9f27b16a41c3ef10196f3cd29323579b4b
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: c4475836a9d4cdd394bff78280c5c075dd960e1d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450257"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223547"
 ---
-# <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview の新機能
+# <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[Preview 3 リリース](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)の更新**
+**[リリース候補 (RC)](/visualstudio/releases/2019/release-notes/) の更新**
 
 >[!div class="button"]
->[Preview をダウンロードする](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
+>[RC のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
-Visual Studio 2019 Preview には、開発者の生産性とチーム コラボレーションを最適化する新機能と共に、多くの全般的な機能強化が含まれています。 今回初めて Visual Studio を使用する場合も、何年も使用している場合でも、開発ライフ サイクルのあらゆる面で (簡略化されたプロジェクトの作成とコードの正常性管理から、チームおよびオープン ソースのコラボレーション ワークフローまで) その機能を利用することができます。<br/><br/>
+Visual Studio 2019 には、開発者の生産性とチーム コラボレーションを最適化する新機能と共に、多くの全般的な機能強化が含まれています。 今回初めて Visual Studio を使用する場合も、何年も使用している場合でも、開発ライフ サイクルのあらゆる面で (簡略化されたプロジェクトの作成とコードの正常性管理から、チームおよびオープン ソースのコラボレーション ワークフローまで) その機能を利用することができます。<br/><br/>
 
 >[!VIDEO https://channel9.msdn.com/Events/Connect/Microsoft-Connect--2018/D190/player]
 
@@ -39,7 +39,7 @@ Visual Studio が提供する機能の基本的な概要を次に示します。
 * **[継続的なイノベーション](#continuous-innovation)**。 インテリジェントなクラウドを利用したサポートによるコード スマート。
 
 > [!NOTE]
-> Visual Studio 2019 Preview の新機能の一覧については、[リリース ノート](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)をご覧ください。
+> Visual Studio 2019 の新機能の完全なリストについては、[RC リリース ノート](/visualstudio/releases/2019/release-notes/)と[Preview 4 リリース ノート](/visualstudio/releases/2019/release-notes-preview/)をご覧ください。 これらの最新リリースの詳細については、「[Visual Studio 2019 Release Candidate now available](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-release-candidate-rc-now-available/)」(Visual Studio 2019 リリース候補の提供開始) ブログ記事を参照してください。
 
 ## <a name="personal-and-team-productivity"></a>個人およびチームの生産性
 
@@ -75,7 +75,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 #### <a name="search-within-a-watch-window-and-format-watch-values"></a>ウォッチ ウィンドウ内で検索し、ウォッチ値を書式設定する
 
-以前にも使ったことがあるかもしれませんが、値セットの中の文字列をウォッチ ウィンドウで調べます。 Visual Studio 2019 Preview では、検索するオブジェクトと値を見つけやすくするため、ウォッチ、ローカル、自動変数のウィンドウに検索が追加されました。
+以前にも使ったことがあるかもしれませんが、値セットの中の文字列をウォッチ ウィンドウで調べます。 Visual Studio 2019 では、検索するオブジェクトと値を見つけやすくするため、ウォッチ、ローカル、自動変数のウィンドウに検索が追加されました。
 
 また、ウォッチ、ローカル、自動変数のウィンドウに表示される値を書式設定することもできます。  任意のウィンドウ内でいずれかの項目をダブルクリックしてコンマ (",") を追加し、使用可能な書式指定子のドロップダウン リストにアクセスします。各書式指定子には、意図した効果の説明が含まれています。
 
@@ -87,7 +87,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) は開発者向けのサービスであり、これを使用することで、コードベースとそのコンテキストをチームメイトと共有し、Visual Studio 内から直接、双方向のインスタント コラボレーションを実現できます。 Live Share では自分が共有したプロジェクトをチームメイトがシームレスかつ安全に読み取り、移動、編集、デバッグすることができます。
 
-また、Visual Studio 2019 Preview では、このサービスは既定でインストールされます。
+また、Visual Studio 2019 では、このサービスは既定でインストールされます。
 
 ![Visual Studio 2019 の Live Share コラボレーション機能を示すアニメーション GIF ファイル](media/live-share-collaboration.gif)
 
@@ -97,7 +97,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>IDE からのプル要求 (PR) の管理
 
-ダウンロードして Visual Studio 2019 Preview で使用できる新しい拡張機能を導入しました。 この新しい拡張機能を使用すると、Visual Studio IDE [(統合開発環境)](../get-started/visual-studio-ide.md) を離れることなく、チームからのプル要求を確認、実行、さらにはデバッグすることもできます。 現在、コードは Azure Repos でサポートされていますが、GitHub までサポートを拡大しており、全体的なエクスペリエンスを向上します。
+ダウンロードして Visual Studio 2019 で使用できる新しい拡張機能を導入しました。 この新しい拡張機能を使用すると、Visual Studio IDE [(統合開発環境)](../get-started/visual-studio-ide.md) を離れることなく、チームからのプル要求を確認、実行、さらにはデバッグすることもできます。 現在、コードは Azure Repos でサポートされていますが、GitHub までサポートを拡大しており、全体的なエクスペリエンスを向上します。
 
 今すぐ作業を開始するには、[Visual Studio 用のプル要求](https://aka.ms/pr4vs)拡張機能を Visual Studio Marketplace からダウンロードします。
 
@@ -110,7 +110,7 @@ Visual Studio 2019 のプレビュー リリースでは、任意のプラット
 詳細については、次のページを参照してください。
 
 * [.NET Core 3 Preview 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) および [.NET Core 3 Preview 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md) のリリース ノート
-* [.NET Core 3 Preview 1 の発表](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)および [.NET Core 3 Preview 2 の発表](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/)に関するブログ記事
+* [.NET Core 3 Preview 1 の発表](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)および [.NET Core 3 Preview 2 の発表](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/)に関するブログ記事
 
 ## <a name="continuous-innovation"></a>継続的なイノベーション
 
@@ -118,7 +118,7 @@ Visual Studio 2019 のプレビュー リリースでは、任意のプラット
 
 異なる表示倍率で構成されているモニターを使用する場合、またはご使用のメイン デバイスとは異なる表示倍率を持つマシンにリモートで接続する場合、Visual Studio がぼやけて見えたり、間違ったスケールでレンダリングされる場合があります。
 
-Visual Studio 2019 Preview のリリースにより、Visual Studio を Per-monitor aware (PMA) アプリケーションにする一歩を踏み出しました。 使用している表示倍率に関係なく、Visual Studio が正しくレンダリングできるようにする基礎的な作業を行っています。
+Visual Studio 2019 のリリースにより、Visual Studio を Per-monitor aware (PMA) アプリケーションにする一歩を踏み出しました。 使用している表示倍率に関係なく、Visual Studio が正しくレンダリングできるようにする基礎的な作業を行っています。
 
    ![Visual Studio 2019 の Per-monitor aware (PMA) レンダリング](media/per-monitor-aware-dpi-scaling.png)
 
@@ -153,6 +153,7 @@ Visual Studio チームにフィードバックを送ることにどんな意味
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2019 リリース ノート](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Visual Studio 2019 リリース ノート](/visualstudio/releases/2019/release-notes/)
+* [Visual Studio 2019 SDK の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Microsoft Connect(); 2018 カンファレンス](https://www.microsoft.com/connectevent)
 * [Visual Studio 2017 の新機能](whats-new-visual-studio-2017.md)

@@ -1,64 +1,46 @@
 ---
-title: Visual Studio Team Explorer 2017 のワークロードとコンポーネント ID
+title: Visual Studio Team Explorer のワークロード ID とコンポーネント ID
 titleSuffix: ''
 description: Visual Studio のワークロードとコンポーネント ID を使用して、あらゆる側面からテストを行う担当者向けの統合テスト ツールを提供します
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
-ms.workload:
-- multiple
-monikerRange: vs-2017
-ms.openlocfilehash: f5b9d6b449a2f551e96132e07c0997455388fa82
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 793c35a5b0de54f87b0ac21fa1810512f089d86f
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841508"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324053"
 ---
-# <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Team Explorer 2017 のコンポーネント ディレクトリ
+# <a name="visual-studio-team-explorer-component-directory"></a>Visual Studio Team Explorer のコンポーネント ディレクトリ
 
-このページの表では、コマンド ラインを使用して Visual Studio をインストールするか、VSIX マニフェストで依存関係として指定するために使用できる ID の一覧を示します。 Visual Studio の更新プログラムがリリースされる際には、さらにコンポーネントが追加される予定です。
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-また、このページに関して以下の点に注意してください。
+::: moniker range="vs-2017"
 
-* 各ワークロードに個別のセクションがあり、ワークロード ID と、そのワークロードで利用できるコンポーネントの表が示されています。
-* 既定では、ワークロードをインストールすると**必須**コンポーネントがインストールされます。
-* 選択した場合は、**推奨**コンポーネントと**オプション** コンポーネントもインストールできます。
-* どのワークロードにも関連付けられていない追加のコンポーネントの一覧を示したセクションも追加しました。
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-VSIX マニフェストで依存関係を設定するときは、コンポーネント ID のみを指定する必要があります。 このページの表を使用して、コンポーネントの最小の依存関係を確認してください。 シナリオによって、1 つのワークロードの 1 つのコンポーネントだけを指定する場合もあれば、 1 つのワークロードの複数のコンポーネントを指定したり、複数のワークロードの複数のコンポーネントを指定したりする場合もあります。 詳細については、「[方法: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)」 (方法: 機能拡張プロジェクトを Visual Studio 2017 に移行する) を参照してください。
+[!include[Visual Studio Team Explorer 2017](includes/vs-2017/workload-component-id-vs-team-explorer.md)]
 
-これらの ID の使用方法の詳細については、「[Use Command-Line Parameters to Install Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)」(コマンドライン パラメーターを使用して Visual Studio 2017 をインストールする) をご覧ください。 その他の製品のワークロードとコンポーネント ID の一覧については、「[Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md)」(Visual Studio 2017 のワークロード ID とコンポーネント ID) をご覧ください。
+::: moniker-end
 
-## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Visual Studio のコア エディター (Visual Studio Team Explorer 2017 に付属)
+::: moniker range=">= vs-2019"
 
-**ID:** Microsoft.VisualStudio.Workload.CoreEditor
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**説明:** 構文認識コード編集機能、ソース コード管理、作業項目管理などの Visual Studio の基本的なシェル エクスペリエンス。
+[!include[Visual Studio Team Explorer 2019](includes/vs-2019/workload-component-id-vs-team-explorer.md)]
 
-### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
-
-コンポーネント ID | name | Version | 依存関係の種類
---- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Visual Studio のコア エディター | 15.8.27729.1 | 必須
-Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ ユーザー用 Visual Studio スタート ページ | 15.0.27128.1 | Optional
-
-## <a name="unaffiliated-components"></a>関連付けられていないコンポーネント
-
-以下のコンポーネントはどのワークロードにも含まれていませんが、個別のコンポーネントとして選択できます。
-
-コンポーネント ID | name | Version
---- | --- | ---
-N/A | N/A | N/A
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

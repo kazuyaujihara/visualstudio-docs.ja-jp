@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57650bbe01a9d93b9847fd42075492c158d4db59
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928310"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223612"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Visual Studio でコードを機能させる
 
@@ -74,7 +74,7 @@ Visual Studio は、プロジェクトのビルドとデバッグ ツールの�
 
 ### <a name="c-and-visual-basic-code-analysis"></a>C# と Visual Basic コードの分析
 
-Visual Studio 2017 には、入力したときに C# と Visual Basic のコードを検証する、組み込みの [.NET Compiler Platform アナライザー](../code-quality/roslyn-analyzers-overview.md)のセットが含まれます。 Visual Studio 拡張機能、または NuGet パッケージとして、追加のアナライザーをインストールできます。 規則違反が見つかった場合は、コード エディターで問題のあるコードの下に波線として報告され、**[エラー一覧]** にも報告されます。
+Visual Studio には、入力したときに C# と Visual Basic のコードを検証する、組み込みの [.NET Compiler Platform アナライザー](../code-quality/roslyn-analyzers-overview.md)のセットが含まれます。 Visual Studio 拡張機能、または NuGet パッケージとして、追加のアナライザーをインストールできます。 規則違反が見つかった場合は、コード エディターで問題のあるコードの下に波線として報告され、**[エラー一覧]** にも報告されます。
 
 ### <a name="c-code-analysis"></a>C++ コードの分析
 

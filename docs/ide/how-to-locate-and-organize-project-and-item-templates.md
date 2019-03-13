@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40abd872863231b2631830cd214fc9060da364d3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a228c882ff573b9e319d5fdbeb1ba6472cc5e3d5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952308"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221651"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>方法:プロジェクト テンプレートと項目テンプレートを配置して整理する
 
@@ -30,13 +30,29 @@ ms.locfileid: "55952308"
 
 **.vstemplate** ファイルを含む圧縮 (**.zip**) ファイルをユーザー テンプレート ディレクトリに追加すると、そのテンプレートは *[新しいプロジェクト]* ダイアログ ボックスまたは *[新しい項目の追加]* ダイアログ ボックスに表示されます。 既定では、ユーザー テンプレートは次の場所に配置されます。
 
-- *%USERPROFILE%\Documents\Visual Studio \<バージョン\>\Templates\ProjectTemplates*
+::: moniker range="vs-2017"
 
-- *%USERPROFILE%\Documents\Visual Studio \<バージョン\>\Templates\ItemTemplates*
+- *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*
 
 たとえば、次のディレクトリには C# 用のユーザー プロジェクト テンプレートがあります。
 
 - *C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*
+
+たとえば、次のディレクトリには C# 用のユーザー プロジェクト テンプレートがあります。
+
+- *C:\Users\UserName\Documents\Visual Studio 2019\Templates\ProjectTemplates\Visual C#*
+
+::: moniker-end
 
 > [!TIP]
 > ユーザー テンプレートの場所は、**[ツール]** > **[オプション]** > **[プロジェクトおよびソリューション]** > **[場所]** で設定できます。

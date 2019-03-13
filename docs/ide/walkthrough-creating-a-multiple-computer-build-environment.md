@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98c93f193a17c8581694079ce0c9d7add0341bd1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 55c4514ddcc312a6d3ae72f1fc9b5f573ac562b5
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925983"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324222"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>チュートリアル: 複数のコンピューターを使用するビルド環境の作成
 
@@ -43,7 +43,7 @@ ms.locfileid: "55925983"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-- **.NET デスクトップ開発**ワークロードがインストールされた Visual Studio。
+**.NET デスクトップ開発**ワークロードがインストールされた Visual Studio。
 
 ## <a name="install-software-on-the-computers"></a>コンピューターにソフトウェアをインストールする
 
@@ -59,13 +59,13 @@ ms.locfileid: "55925983"
 
 このセクションでは、特定のファイル、コンパイラ、ビルド ツール、MSBuild の資産、およびレジストリ設定をホスト コンピューターからビルド コンピューターにコピーする操作ついて説明します。 ここに示す手順では、Visual Studio がホスト コンピューターの既定の場所にインストールされていることを想定しています。別の場所にインストールした場合は、手順を適宜調整してください。
 
-- x86 コンピューターの既定の場所は *C:\Program Files\Microsoft Visual Studio 11.0* です
-- x64 コンピューターの既定の場所は *C:\Program Files (x86)\Microsoft Visual Studio 11.0* です
+- x86 コンピューターの既定の場所は *C:\Program Files\Microsoft Visual Studio* です
+- x64 コンピューターの既定の場所は *C:\Program Files (x86)\Microsoft Visual Studio* です
 
 *Program Files* フォルダーの名前が、インストールされているオペレーティング システムによって異なる点に注意してください。 x86 コンピューターでは *Program Files*、x64 コンピューターでは *Program Files (x86)* です。 システムのアーキテクチャに関係なく、このチュートリアルでは、*Program Files* フォルダーを *%ProgramFiles%* と示します。
 
 > [!NOTE]
-> ビルド コンピューターでは、関連するファイルをすべて同じドライブに配置する必要がありますが、そのドライブのドライブ文字は、Visual Studio がホスト コンピューターにインストールされているドライブのドライブ文字と異なってもかまいません。 いずれにしても、後でこのドキュメント内で説明するように、レジストリ エントリの作成時にファイルの場所の情報が必要になります。
+> ビルド コンピューターでは、関連するファイルをすべて同じドライブに配置する必要があります。 ただし、そのドライブのドライブ文字は、Visual Studio がホスト コンピューターにインストールされているドライブのドライブ文字と異なってもかまいません。 いずれにしても、後でこのドキュメント内で説明するように、レジストリ エントリの作成時にファイルの場所の情報が必要になります。
 
 ### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Windows SDK ファイルをビルド コンピューターにコピーする
 
@@ -85,7 +85,7 @@ ms.locfileid: "55925983"
 
    - %ProgramFiles%\Windows Kits\8.0\References\
 
-     次に示す他の Windows 8 キットもインストールされている場合: 
+   次に示す他の Windows 8 キットもインストールされている場合: 
 
    - Microsoft Windows アセスメント & デプロイメント キット
 
@@ -93,7 +93,7 @@ ms.locfileid: "55925983"
 
    - Microsoft Windows ハードウェア認定キット
 
-     これらもインストールされている場合、前の手順で示した *%ProgramFiles%\Windows Kits\8.0* フォルダーにファイルがインストールされている可能性があります。また、ライセンス条項によっては、ビルド サーバーでこれらのファイルへのアクセスが許可されない可能性があります。 インストールされているすべての Windows キットについてライセンス条項を調べて、ファイルをビルド コンピューターにコピーできるかどうかを確認します。 ライセンス条項によってビルド サーバーでのアクセスが許可されていない場合は、該当するファイルをビルド コンピューターから削除します。
+   これらもインストールされている場合、前の手順で示した *%ProgramFiles%\Windows Kits\8.0* フォルダーにファイルがインストールされている可能性があります。また、ライセンス条項によっては、ビルド サーバーでこれらのファイルへのアクセスが許可されない可能性があります。 インストールされているすべての Windows キットについてライセンス条項を調べて、ファイルをビルド コンピューターにコピーできるかどうかを確認します。 ライセンス条項によってビルド サーバーでのアクセスが許可されていない場合は、該当するファイルをビルド コンピューターから削除します。
 
 2. ホスト コンピューターからビルド コンピューターに、次のフォルダーを再帰的にコピーします。
 
@@ -101,11 +101,11 @@ ms.locfileid: "55925983"
 
     - %ProgramFiles%\Common Files\Merge Modules\
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\VC\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\ProjectComponents\
 
-    - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\
+    - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\
 
     - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\
 
@@ -113,23 +113,23 @@ ms.locfileid: "55925983"
 
 3. ホスト コンピューターからビルド コンピューターに、次のファイルをコピーします。
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\msobj110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdb110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdbcore.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdbsrv.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\msvcdis110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\makehm.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\VCVarsQueryRegistry.bat
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\vsvars32.bat
 
-4. 次に示す Visual C++ ランタイム ライブラリは、ビルド コンピューターで (たとえば自動テストの一部として) ビルド出力を実行する場合にのみ必要です。 これらのファイルは通常、システムのアーキテクチャに応じて *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86* フォルダーまたは *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64* フォルダー内のサブフォルダーに配置されます。 x86 システムの場合は、x86 バイナリを *Windows\System32* フォルダーにコピーします。 x64 システムでは、x86 バイナリを *Windows\SysWOW64* フォルダーに、x64 バイナリを *Windows\System32* フォルダーにコピーします。
+4. 次に示す Visual C++ ランタイム ライブラリは、ビルド コンピューターで (たとえば自動テストの一部として) ビルド出力を実行する場合にのみ必要です。 これらのファイルは通常、システムのアーキテクチャに応じて *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* フォルダーまたは *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64* フォルダー内のサブフォルダーに配置されます。 x86 システムの場合は、x86 バイナリを *Windows\System32* フォルダーにコピーします。 x64 システムでは、x86 バイナリを *Windows\SysWOW64* フォルダーに、x64 バイナリを *Windows\System32* フォルダーにコピーします。
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -254,7 +254,7 @@ MSBuild 用の設定を構成するには、レジストリ エントリを作�
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>vcvarsall.bat を使用して環境変数を設定する
 
-ビルド コンピューターで**コマンド プロンプト** ウィンドウを開き、*%Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat* を実行します。 使用するツールセット (x86、ネイティブ x64、x64 クロス コンパイラ) を指定するには、コマンド ライン引数を使用します。 コマンド ライン引数を指定しなかった場合は、x86 のツールセットが使用されます。
+ビルド コンピューターで**コマンド プロンプト** ウィンドウを開き、*%Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat* を実行します。 使用するツールセット (x86、ネイティブ x64、x64 クロス コンパイラ) を指定するには、コマンド ライン引数を使用します。 コマンド ライン引数を指定しなかった場合は、x86 のツールセットが使用されます。
 
 次の表では、*vcvarsall.bat* でサポートされている引数を説明しています。
 
@@ -270,7 +270,7 @@ MSBuild 用の設定を構成するには、レジストリ エントリを作�
 
 1. 手動でコマンド ライン環境を構成するには、次のパスを PATH 環境変数に追加します。
 
-    - %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE
+    - %Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE
 
 2. 必要に応じて、ソリューションのビルド時に MSBuild を使用しやすくなるように、次のパスも PATH 環境変数に追加することができます。
 
@@ -294,9 +294,9 @@ MSBuild を使用するには、ビルド コンピューターの GAC にいく
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
 2. アセンブリを GAC にインストールするには、ビルド コンピューター上で *gacutil.exe* を探します。一般的には %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ にあります。 このフォルダーが見つからない場合は、このチュートリアルの「[ホスト コンピューターからビルド コンピューターにファイルをコピーする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)」に記載されている手順を繰り返します。
 
@@ -364,7 +364,7 @@ Azure Pipelines を使用して Visual Studio プロジェクトとソリュー�
     <VCTargetsPath11>$(DepotRoot)MSBuild\Microsoft.Cpp\v4.0\v110\</VCTargetsPath11>
     <MSBuildExtensionsPath>$(DepotRoot)MSBuild</MSBuildExtensionsPath>
     <MSBuildExtensionsPath32>$(DepotRoot)MSBuild</MSBuildExtensionsPath32>
-    <VCInstallDir_110>$(DepotRoot)Microsoft Visual Studio 11.0\VC\</VCInstallDir_110>
+    <VCInstallDir_110>$(DepotRoot)Microsoft Visual Studio\2017\Enterprise\VC\</VCInstallDir_110>
     <VCInstallDir>$(VCInstallDir_110)</VCInstallDir>
     <WindowsKitRoot>$(DepotRoot)Windows Kits\</WindowsKitRoot>
     <WindowsSDK80Path>$(WindowsKitRoot)</WindowsSDK80Path>
@@ -381,13 +381,29 @@ Azure Pipelines を使用して Visual Studio プロジェクトとソリュー�
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>
     ```
 
+::: moniker range="vs-2017"
+
 6. コマンド ライン環境を次のように変更します。
 
     - Set Depot=*location of the Depot directory that you created in step 1*
 
     - Set path=%path%;*location of MSBuild on the computer*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
 
-       ネイティブ 64 ビットのビルドの場合は、64 ビットの MSBuild が指定されるように調整します。
+       ネイティブ 64 ビットのビルドの場合は、64 ビット版の MSBuild が指定されるように調整します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. コマンド ライン環境を次のように変更します。
+
+    - Set Depot=*location of the Depot directory that you created in step 1*
+
+    - Set path=%path%;*location of MSBuild on the computer*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
+
+       ネイティブ 64 ビットのビルドの場合は、64 ビット版の MSBuild が指定されるように調整します。
+
+::: moniker-end
 
 ## <a name="see-also"></a>関連項目
 
