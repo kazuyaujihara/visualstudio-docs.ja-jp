@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8101697ad225becb1fcddc5ee737fc4c6195cc7
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796583"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221542"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing の新機能
 
-このトピックでは、Visual Studio 2017 バージョン 15.3 以降の Visual Studio の各バージョンの Live Unit Testing に追加された新機能を説明します。 Live Unit Testing の使用方法の詳細については、「[Visual Studio 2017 での Live Unit Testing](live-unit-testing.md)」を参照してください。
+このトピックでは、Visual Studio 2017 バージョン 15.3 以降の Visual Studio の各バージョンの Live Unit Testing に追加された新機能を説明します。 Live Unit Testing の使用方法の詳細については、[Visual Studio での Live Unit Testing](live-unit-testing.md) に関するページを参照してください。
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>Visual Studio 2017 バージョン 15.4 の Live Unit Testing の新機能
 
@@ -45,7 +45,7 @@ Visual Studio 2017 バージョン 15.3 以降、Live Unit Testing 機能は、�
 
 - .NET Core および .NET Standard のサポート。 C# または Visual Basic のいずれかで記述された .NET Core および .NET Standard ソリューションで Live Unit Testing を使用できます。
 
--  パフォーマンスの向上。 はじめて Live Unit Testing でテストを完全ビルドして実行したときは、大幅に高速化したことに驚くでしょう。 その後、同じソリューションで Live Unit Testing をもう一度開始したときも、大幅なパフォーマンスの向上を実感できるはずです。 Live Unit Testing で生成されたデータを永続化し、最新状態チェックでは可能な限りそのデータを再利用するようにしました。
+- パフォーマンスの向上。 はじめて Live Unit Testing でテストを完全ビルドして実行したときは、大幅に高速化したことに驚くでしょう。 その後、同じソリューションで Live Unit Testing をもう一度開始したときも、大幅なパフォーマンスの向上を実感できるはずです。 Live Unit Testing で生成されたデータを永続化し、最新状態チェックでは可能な限りそのデータを再利用するようにしました。
 
 主な変更点に加え、Live Unit Testing には次のような変更点があります。
 
@@ -58,10 +58,12 @@ Visual Studio 2017 バージョン 15.3 以降、Live Unit Testing 機能は、�
 - [テスト]/[Live Unit Testing] のメニュー バーに、メニュー項目がいくつか追加されました。 **[Reset Clean]\(クリーンのリセット\)** は、永続的データを削除して再生成します。 **[オプション]** は、[ツール]/[オプション]/[Live Unit Testing]/[全般] に移動します。
 
 - 次の属性をソース コードに指定することで、対象のテスト メソッドを Live Unit Testing から除外できるようになりました。
+
    - xUnit の場合: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
    - NUnit の場合: `[Category("SkipWhenLiveUnitTesting")]`
    - MSTest の場合: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>関連項目
+
 - [Live Unit Testing の概要](live-unit-testing-intro.md)
-- [Visual Studio 2017 での Live Unit Testing](live-unit-testing.md)
+- [Visual Studio での Live Unit Testing](live-unit-testing.md)

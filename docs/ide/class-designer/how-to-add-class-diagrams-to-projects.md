@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ac40b3ae84aad689df9884ad8453860f91d971
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919717"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223742"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>方法: プロジェクトにクラス ダイアグラムを追加する
 
@@ -26,7 +26,7 @@ ms.locfileid: "55919717"
 
 ## <a name="install-the-class-designer-component"></a>クラス デザイナー コンポーネントのインストール
 
-Visual Studio 2017 を実行していて、**クラス デザイナー** コンポーネントをインストールしていない場合は、以下の手順に従ってインストールします。
+**クラス デザイナー** コンポーネントをインストールしていない場合は、以下の手順に従ってインストールします。
 
 1. **Visual Studio インストーラー**を開くには、Windows の [スタート] メニューから、または Visual Studio のメニュー バーから **[ツール]** > **[ツールと機能を取得]** を選択します。
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b423f666ed27df1723a30a0413d8388a6c5fa903
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1033eb38b10eaaf85a20eedf0a8260654a793962
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919743"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222754"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Visual Studio 拡張機能の検索と使用
 
@@ -61,9 +61,9 @@ Visual Studio 拡張機能は、Visual Studio 内で実行されるコード パ
 
 ## <a name="extension-crash-and-unresponsiveness-notifications"></a>拡張機能のクラッシュと無応答の通知
 
-**Visual Studio 2017 バージョン 15.3** の新機能では、前回のセッション中に拡張機能がクラッシュした可能性がある場合に通知されます。 Visual Studio がクラッシュすると、例外スタックが保存されます。 Visual Studio を次回起動したときに、リーフからベースの方向にスタックが調査されます Visual Studio で、フレームがインストール済みで有効な拡張機能の一部であるモジュールに属していると判断されると、通知が表示されます。
+Visual Studio では、前回のセッション中に拡張機能がクラッシュした可能性がある場合に通知されます。 Visual Studio がクラッシュすると、例外スタックが保存されます。 Visual Studio を次回起動したときに、リーフからベースの方向にスタックが調査されます Visual Studio で、フレームがインストール済みで有効な拡張機能の一部であるモジュールに属していると判断されると、通知が表示されます。
 
-**Visual Studio 2017 バージョン 15.6** の新機能として、拡張機能によって UI が無応答になった可能性がある場合にも通知が表示されます。
+また、拡張機能によって UI が無応答になった可能性がある場合にも通知が表示されます。
 
 これらの通知が表示された場合、通知を無視するか、次のいずれかの操作を実行することができます。
 

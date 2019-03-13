@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923372"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223131"
 ---
 # <a name="code-style-preferences"></a>コードのスタイル設定
 
@@ -38,11 +38,11 @@ C# プロジェクトおよび Visual Basic プロジェクトに対してコー
 
 ## <a name="format-document-command"></a>[ドキュメントのフォーマット] コマンド
 
-Visual Studio 2017 バージョン 15.8 以降では、using の削除と並べ替え、コード スタイルの基本設定の適用など、ファイルでの追加コードのクリーンアップを行うように **[ドキュメントのフォーマット]** コマンド (**[編集]** > **[詳細設定]** > **[ドキュメントのフォーマット]**) を構成することができます。 [[書式設定] オプション ページ](reference/options-text-editor-csharp-formatting.md#format-document-settings)で、**ドキュメントのフォーマット**で適用する設定を定義することができます。
+using の削除と並べ替え、コード スタイルの基本設定の適用など、ファイルでの追加コードのクリーンアップを行うように **[ドキュメントのフォーマット]** コマンド (**[編集]** > **[詳細設定]** > **[ドキュメントのフォーマット]**) を構成することができます。 [[書式設定] オプション ページ](reference/options-text-editor-csharp-formatting.md#format-document-settings)で、**ドキュメントのフォーマット**で適用する設定を定義することができます。
 
 コードのクリーンアップでは、*.editorconfig* ファイルで構成した設定が優先されます。そのルールまたはファイルがない場合は、**[ツール]** > **[オプション]** > **[テキスト エディター]** > **[C#]** > **[コード スタイル]** または **[書式設定]** の設定が優先されます。
 
-Visual Studio 2017 で初めて **[ドキュメントのフォーマット]** コマンドをトリガーするときに、黄色の情報バーが表示され、コードのクリーンアップ設定を構成するように求められます。
+Visual Studio で初めて **[ドキュメントのフォーマット]** コマンドをトリガーするときに、黄色の情報バーが表示され、コードのクリーンアップ設定を構成するように求められます。
 
 > [!TIP]
 > *.editorconfig* ファイルで **none** として構成されているルールはコードのクリーンアップに関するものではありませんが、**[クイック アクションとリファクタリング]** メニューを使用して個別に適用できます。

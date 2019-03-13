@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f68f12578ea7b5148aa018c21e14c334c33ad9a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c0f0cdb6c1807aa8ce0a30e7371fe8ad4270ca7b
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918924"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324183"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Azure App Service で Python 環境を設定する方法 (Windows)
 
@@ -76,7 +76,7 @@ Azure Resource Manager テンプレートを使用して App Service をデプ�
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Python インタープリターをポイントする web.config の設定
 
-(ポータルまたは Azure Resource Manager テンプレートのいずれかを使って) サイト拡張機能をインストールすると、次はアプリの *web.config* ファイルを Python インタープリターへポイントさせます。 *web.config* ファイルは、FastCGI または HttpPlatform のいずれかを使用して Python 要求を処理する方法を、App Service 上で実行される IIS (7 以降) の Web サーバーに指示します。
+(ポータルまたは Azure Resource Manager テンプレートのいずれかを使って) サイト拡張機能をインストールすると、次はアプリの *web.config* ファイルを Python インタープリターへポイントさせます。 *web.config* ファイルは、HttpPlatform (推奨) と FastCGI いずれかを使用して Python 要求を処理する方法を、App Service 上で実行される IIS (7 以降) の Web サーバーに指示します。
 
 サイト拡張機能の *python.exe* への完全なパスを探し、適切な *web.config* ファイルを作成および変更します。
 
@@ -97,6 +97,33 @@ App Service でパスを具体的に確認するには、[App Service] ページ
 1. [App Service] ページで、**[開発ツール]** > **[コンソール]** の順に選択します。
 1. `ls ../home` または `dir ..\home` のコマンドを入力して、*Python361x64* などの最上位レベルの拡張機能フォルダーを表示します。
 1. `ls ../home/python361x64` または `dir ..\home\python361x64` のようなコマンドを入力して、*python.exe* やその他のインタープリター ファイルが含まれていることを確認します。
+
+### <a name="configure-the-httpplatform-handler"></a>Httpplatform のハンドラーの構成
+
+HttpPlatform モジュールは、スタンドアロンの Python プロセスに直接ソケット接続を渡します。 このパススルーにより、任意の Web サーバーを実行することができますが、ローカル Web サーバーを実行するスタートアップ スクリプトが必要になります。 スクリプトは、*web.config* の `<httpPlatform>` 要素で指定します。ここで、`processPath` 属性はサイト拡張機能の Python インタープリターをポイントし、`arguments` 属性はスクリプトと指定する任意の引数をポイントします。
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
+    </handlers>
+    <httpPlatform processPath="D:\home\Python361x64\python.exe"
+                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
+                  stdoutLogEnabled="true"
+                  stdoutLogFile="D:\home\LogFiles\python.log"
+                  startupTimeLimit="60"
+                  processesPerApplication="16">
+      <environmentVariables>
+        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
+      </environmentVariables>
+    </httpPlatform>
+  </system.webServer>
+</configuration>
+```
+
+ここの `HTTP_PLATFORM_PORT` 環境変数には、ローカル サーバーが localhost からの接続をリッスンするポートが含まれています。 この例では、必要に応じて、別の環境変数 (この場合は `SERVER_PORT`) を作成する方法も示しています。
 
 ### <a name="configure-the-fastcgi-handler"></a>FastCGI ハンドラーの構成
 
@@ -128,33 +155,6 @@ FastCGI は、要求レベルで動作するインターフェイスです。 II
 - `WSGI_LOG` は省略可能ですが、アプリのデバッグのために推奨します。
 
 Bottle、Flask、および Django Web アプリ用の *web.config* コンテンツのその他の詳細については、[Azure への発行](publishing-python-web-applications-to-azure-from-visual-studio.md)に関するページをご覧ください。
-
-### <a name="configure-the-httpplatform-handler"></a>Httpplatform のハンドラーの構成
-
-HttpPlatform モジュールは、スタンドアロンの Python プロセスに直接ソケット接続を渡します。 このパススルーにより、任意の Web サーバーを実行することができますが、ローカル Web サーバーを実行するスタートアップ スクリプトが必要になります。 スクリプトは、*web.config* の `<httpPlatform>` 要素で指定します。ここで、`processPath` 属性はサイト拡張機能の Python インタープリターをポイントし、`arguments` 属性はスクリプトと指定する任意の引数をポイントします。
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <system.webServer>
-    <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
-    </handlers>
-    <httpPlatform processPath="D:\home\Python361x64\python.exe"
-                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
-                  stdoutLogEnabled="true"
-                  stdoutLogFile="D:\home\LogFiles\python.log"
-                  startupTimeLimit="60"
-                  processesPerApplication="16">
-      <environmentVariables>
-        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
-      </environmentVariables>
-    </httpPlatform>
-  </system.webServer>
-</configuration>
-```
-
-ここの `HTTP_PLATFORM_PORT` 環境変数には、ローカル サーバーが localhost からの接続をリッスンするポートが含まれています。 この例では、必要に応じて、別の環境変数 (この場合は `SERVER_PORT`) を作成する方法も示しています。
 
 ## <a name="install-packages"></a>パッケージのインストール
 

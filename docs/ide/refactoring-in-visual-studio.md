@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d76c5eb725545fd1fd8ab1a1ec2f4eaadcd39d3b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15a36378efe7b6e3151882d5e6927cd7fbfa4542
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927114"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428610"
 ---
 # <a name="refactor-code"></a>コードのリファクタリング
 
@@ -22,7 +22,11 @@ ms.locfileid: "55927114"
 
 ## <a name="programming-languages"></a>プログラミング言語
 
-Visual Studio では、多様なプログラミング言語でさまざまなリファクタリング操作を使用できます。 このセクションのトピックでは、C# と Visual Basic で使用可能なリファクタリングについて説明します。 C++ コードのリファクタリングについては、「[コードの作成とリファクタリング (C++)](/cpp/ide/writing-and-refactoring-code-cpp)」を参照してください。 F# のリファクタリングのサポートは、サード パーティ製の Visual Studio 拡張機能の [Visual F# Power Tool](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) で提供されます。
+Visual Studio では、多様なプログラミング言語でさまざまなリファクタリング操作を使用できます。
+
+- 目次のこのセクションのページでは、C# と Visual Basic で使用可能なリファクタリングについて説明します。 たとえば、[メソッドの抽出リファクタリング](reference/extract-method.md)や[一致するファイルに型を移動するリファクタリング](reference/move-type-to-matching-file.md)があります。
+- C++ コードのリファクタリングについては、「[コードの作成とリファクタリング (C++)](/cpp/ide/writing-and-refactoring-code-cpp)」を参照してください。
+- F# のリファクタリングのサポートは、サード パーティ製の Visual Studio 拡張機能の [Visual F# Power Tool](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) で提供されます。
 
 ## <a name="see-also"></a>関連項目
 

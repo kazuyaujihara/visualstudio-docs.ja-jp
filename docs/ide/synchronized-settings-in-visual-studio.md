@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6faaf37c3a1c8e67412898ca631210eb551f3331
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926048"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221880"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>複数のコンピューター間で Visual Studio 設定を同期する
 
@@ -60,20 +60,30 @@ Visual Studio の同期された設定は、既定でオンになっています
 
 ## <a name="side-by-side-synchronized-settings"></a>サイド バイ サイドで同期された設定
 
-Visual Studio 2017 バージョン 15.3 以降では、Visual Studio 2017 の異なるサイド バイ サイド インストールの間で、ツール ウィンドウ レイアウトなど、特定の設定が共有されません。 *%userprofile%\Documents\Visual Studio 2017\Settings* の *CurrentSettings.vssettings* ファイルはインストール固有フォルダーに置かれています。このフォルダーは、*%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings* のようなフォルダーになります。
+::: moniker range="vs-2017"
+
+Visual Studio の異なるサイド バイ サイド インストールの間では、ツール ウィンドウ レイアウトなどの一部の設定は共有されません。 *%userprofile%\Documents\Visual Studio 2017\Settings* の *CurrentSettings.vssettings* ファイルはインストール固有フォルダーに置かれています。このフォルダーは、*%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings* のようなフォルダーになります。
 
 > [!NOTE]
-> 新しいインストール固有設定を使用するには、新しくインストールを行います。 既存の Visual Studio 2017 インストールを最新の更新プログラムにアップグレードするとき、既存の共有フォルダーが使用されます。
+> 新しいインストール固有設定を使用するには、新しくインストールを行います。 既存の Visual Studio インストールをアップグレードすると、既存の共有の場所が使用されます。
 
-現在、Visual Studio 2017 がサイド バイ サイド インストールされているとき、新しいインストール固有設定ファイル用フォルダーを使用する場合、次の手順に従ってください。
+現在、Visual Studio がサイド バイ サイド インストールされているとき、新しいインストール固有設定ファイル用フォルダーを使用する場合、次の手順に従ってください。
 
 1. Visual Studio 2017 バージョン 15.3 以降にアップグレードします。
 
-1. **設定のインポート/エクスポート** ウィザードを利用し、すべての既存設定を *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* フォルダーから別の場所にエクスポートします。
+2. **設定のインポート/エクスポート** ウィザードを利用し、すべての既存設定を *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* フォルダーから別の場所にエクスポートします。
 
-1. アップグレードした Visual Studio で **VS 2017 用の開発者コマンド プロンプト**を開き、`devenv /resetuserdata` を実行します。
+3. **[開発者コマンド プロンプト for VS 2017]** を開き、`devenv /resetuserdata` を実行します。
 
 1. Visual Studio を起動し、エクスポートした設定ファイルから保存済みの設定をインポートします。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Visual Studio の異なるサイド バイ サイド インストールの間では、ツール ウィンドウ レイアウトなどの一部の設定は共有されません。 *%userprofile%\Documents\Visual Studio 2019\Settings* の *CurrentSettings.vssettings* ファイルはインストール固有フォルダーに置かれています。このフォルダーは、*%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings* のようなフォルダーになります。
+
+::: moniker-end
 
 ## <a name="see-also"></a>関連項目
 

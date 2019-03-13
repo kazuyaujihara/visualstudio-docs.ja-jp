@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318772"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222988"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio のパフォーマンスのヒントとテクニック
 
 Visual Studio のパフォーマンスの推奨事項は、まれなケースで発生する可能性があるメモリ不足の状況を想定したものです。 これらの状況では、使っていない可能性がある特定の Visual Studio の機能を最適化できます。 以下のヒントは一般的な推奨事項を意図したものではありません。
 
 > [!NOTE]
-> メモリの問題で製品の使用が困難な場合は、[フィードバック ツール](../ide/how-to-report-a-problem-with-visual-studio-2017.md)を使ってお知らせください。
+> メモリの問題で製品の使用が困難な場合は、[フィードバック ツール](../ide/how-to-report-a-problem-with-visual-studio.md)を使ってお知らせください。
 
 ## <a name="use-a-64-bit-os"></a>64 ビット OS を使用する
 
@@ -41,9 +41,9 @@ Visual Studio では、自動ドキュメント復元により、ソリューシ
 
 - 一般的な **[移動]** 機能の場合は、**[編集]** > **[移動]** > **[すべてに移動]** の順に選択するか、**Ctrl** + **T** キーを押します。
 
-- Visual Studio 2017 バージョン 15.8 以降では、**[編集]** > **[移動]** > **[最後の編集の場所へ移動]** を使用するか、**Ctrl** + **Shift** + **Backspace** キーを押すことで、ソリューション内の最後の編集の場所に移動することができます。
+- **[編集]** > **[移動]** > **[最後の編集の場所へ移動]** を使用するか、**Ctrl** + **Shift** + **Backspace** キーを押すことで、ソリューション内の最後の編集の場所に移動することができます。
 
-- Visual Studio 2017 バージョン 15.8 以降で、ソリューション内の最近アクセスしたファイルの一覧を表示するには、**[最近使ったファイルに移動]** を使用します。 **[編集]** > **[移動]** > **[最近使ったファイルに移動]** の順に選択するか、**Ctrl** + **1** キー、**Ctrl** + **R** キーを押します。
+- ソリューション内の最近アクセスしたファイルの一覧を表示するには、**[最近使ったファイルに移動]** を使用します。 **[編集]** > **[移動]** > **[最近使ったファイルに移動]** の順に選択するか、**Ctrl** + **1** キー、**Ctrl** + **R** キーを押します。
 
 ## <a name="configure-debugging-options"></a>デバッグ オプションを構成する
 

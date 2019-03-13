@@ -11,20 +11,26 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 535f67f7456f26d3f61820e909c3f7622eb71c85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ee70d3cf580caaea4207f1d830ef1500f18942ff
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954896"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221396"
 ---
 # <a name="options-text-editor-cc-experimental"></a>[オプション]、[テキスト エディター]、[C/C++]、[実験用]
 
-これらのオプションを変更することによって、C または C++ でプログラミングを行うときに、IntelliSense に関連する動作と参照データベースを変更できます。 これらの機能は完全に実験用であり、Visual Studio の将来のリリースでは変更または削除される可能性があります。 このトピックでは、Visual Studio 2017 のオプションについて説明します。 Visual Studio 2015 については、目次の上のセレクターで **2015** を選択してください。
+これらのオプションを変更することによって、C または C++ でプログラミングを行うときに、IntelliSense に関連する動作と参照データベースを変更できます。 これらの機能は完全に実験用であり、Visual Studio の将来のリリースでは変更または削除される可能性があります。
 
-このプロパティ ページにアクセスするには、**Control + Q** キーを押し、`Quick Launch` をアクティブ化してから「実験用」と入力します。 クイック起動では、最初の数文字に一致するページが検索されます。 **[ツール] - [オプション]** を選択して **[テキスト エディター]** を展開し、**[C/C++]**、**[実験用]** の順に選択してアクセスすることもできます。
+::: moniker range="vs-2017"
 
-これらの機能は、Visual Studio 2017 のインストールで使用できます。
+この記事では、Visual Studio 2017 のオプションについて説明します。 Visual Studio 2015 については、目次の上のセレクターで **2015** を選択してください。
+
+::: moniker-end
+
+このプロパティ ページにアクセスするには、**Control** + **Q** キーを押し、`Quick Launch` をアクティブ化してから「実験用」と入力します。 クイック起動では、最初の数文字に一致するページが検索されます。 **[ツール]** > **[オプション]** を選択して **[テキスト エディター]** を展開し、**[C/C++]**、**[実験用]** の順に選択してアクセスすることもできます。
+
+これらの機能は、Visual Studio のインストールで使用できます。
 
 > [!NOTE]
 > 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 「[Visual Studio IDE のカスタマイズ](../../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
@@ -33,10 +39,15 @@ ms.locfileid: "55954896"
 
 予測 IntelliSense は、コンテキストに関連のある結果のみが表示されるように、IntelliSense ドロップダウン リストに表示される結果の数を制限します。 たとえば、「<code>int x =</code>」と入力して IntelliSense ドロップダウン リストを呼び出すと、整数または整数を返す関数のみが表示されます。 予測 IntelliSense は既定ではオフになっています。
 
+::: moniker range="vs-2017"
+
 ## <a name="enable-faster-project-load"></a>プロジェクトの高速読み込みを有効にする
 
-**Visual Studio 2017 バージョン 15.3 およびそれ以降**:この機能は現在、**プロジェクトのキャッシュを有効にする**と呼ばれており、[[VC++ プロジェクトの設定]](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) プロパティ ページに移動しました。
+この機能は、Visual Studio 2017 バージョン 15.3 から **[プロジェクトのキャッシュを有効にする]** という名称になり、[[VC++ プロジェクトの設定]](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) プロパティ ページに移動しました。
+
 このオプションでは、Visual Studio がプロジェクト データをキャッシュすることで、次にプロジェクトを開いたときにプロジェクト ファイルから再計算せずにキャッシュされたデータを読み込めるようになります。 キャッシュされたデータを使用すると、プロジェクトの読み込み時間を大幅に短縮できます。
+
+::: moniker-end
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Visual Studio Marketplace で追加された機能
 
@@ -55,4 +66,5 @@ ms.locfileid: "55954896"
 ## <a name="see-also"></a>関連項目
 
 - [言語固有のエディター オプションの設定](../../ide/reference/setting-language-specific-editor-options.md)
-- [C++ でのリファクタリング (VC のブログ)](https://blogs.msdn.microsoft.com/vcblog/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview/)
+- [C++ でのリファクタリング (VC のブログ)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
+)
