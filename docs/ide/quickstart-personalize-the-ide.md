@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8fcde39c2e64d431848b510b5e046031b6dac2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934069"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223040"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>クイック スタート: Visual Studio IDE とエディターのカスタマイズ
 
@@ -22,7 +22,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ## <a name="set-the-color-theme"></a>配色テーマの設定
 
-Visual Studio 2017 のユーザー インターフェイスの既定の配色テーマは、**[青]** です。 このテーマを **[濃色]** に変えてみましょう。
+Visual Studio のユーザー インターフェイスの既定の配色テーマは、**[青]** です。 このテーマを **[濃色]** に変えてみましょう。
 
 1. メニュー バー (**[ファイル]** や **[編集]** などのメニューの行) で、**[ツール]** > **[オプション]** の順に選択します。
 

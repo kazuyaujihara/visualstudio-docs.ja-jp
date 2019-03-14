@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e4652bb6a0ea1ec138138e6966ab005362a45d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937524"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223248"
 ---
 # <a name="create-solutions-and-projects"></a>ソリューションとプロジェクトを作成する
 
@@ -53,7 +53,7 @@ ms.locfileid: "55937524"
    ![[新しいプロジェクト] ダイアログ ボックス](./media/vside-newproject-templates-list.png)
 
    > [!NOTE]
-   > 利用できる言語またはプロジェクト テンプレートの一覧は、実行している Visual Studio のバージョンとインストールされているワークロードに基づいて表示されます。 追加ワークロードのインストール方法については、「[ワークロードやコンポーネントを追加または削除することで Visual Studio 2017 を変更する](../install/modify-visual-studio.md)」を参照してください。
+   > 利用できる言語またはプロジェクト テンプレートの一覧は、実行している Visual Studio のバージョンとインストールされているワークロードに基づいて表示されます。 追加ワークロードのインストール方法については、「[ワークロードやコンポーネントを追加または削除することで Visual Studio を変更する](../install/modify-visual-studio.md)」を参照してください。
 
 2. 言語名の隣にある三角形を選択し、使用するプログラミング言語のテンプレート一覧を表示し、プロジェクトの種類を選択します。
 

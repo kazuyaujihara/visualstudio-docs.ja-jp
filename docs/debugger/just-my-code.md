@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 607a3d9ac015232e882d20e8514b3143b411df20
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223677"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526777"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>マイ コードのみのユーザー コードのみのデバッグします。
 
@@ -115,7 +115,7 @@ C++ でマイ コードのみがこれらの関数にのみを考慮するコー
 C++ プロジェクトでは、モジュール、ソース ファイル、および関数を指定することができます、**呼び出し履歴**でそれらを指定し、ウィンドウが非ユーザー コードとして扱います *\*.natjmc*ファイル。 このカスタマイズは、最新のコンパイラを使用している場合をステップ実行するコードにも適用されます (を参照してください[マイ コードのみを C++](#BKMK_CPP_User_and_non_user_code))。
 
 - Visual Studio コンピューターのすべてのユーザーの非ユーザー コードを指定するには、*%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* フォルダーに *.natjmc* ファイルを追加します。
-- 個人のユーザーの非ユーザー コードを指定するには、*%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* フォルダーに *.natjmc* ファイルを追加します。
+- 個々 のユーザーの非ユーザー コードを指定するには、追加、 *.natjmc*ファイルを *%USERPROFILE%\My Documents\\<Visual Studio version>\Visualizers*フォルダー。
 
 A *.natjmc*ファイルは、この構文を使用して XML ファイル。
 
@@ -165,7 +165,7 @@ A *.natjmc*ファイルは、この構文を使用して XML ファイル。
 C++ のプロジェクトでは、関数を非ユーザー コードとしてオーバーしてステップを指定できます *\*.natstepfilter*ファイル。 関数の一覧で *\*.natstepfilter*ファイルは マイ コードのみの設定に依存しません。
 
 - Visual Studio のすべてのローカル ユーザーの非ユーザー コードを指定するには、追加、 *.natstepfilter*ファイルを *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*フォルダー。
-- 個々のユーザーの非ユーザー コードを指定するには、*%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* フォルダーに *.natstepfilter* ファイルを追加します。
+- 個々 のユーザーの非ユーザー コードを指定するには、追加、 *.natstepfilter*ファイルを *%USERPROFILE%\My Documents\\<Visual Studio version>\Visualizers*フォルダー。
 
 A *.natstepfilter*ファイルは、この構文を使用して XML ファイル。
 
