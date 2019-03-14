@@ -2,7 +2,7 @@
 title: Visual Studio 2019 でのプロジェクトの移植、移行、およびアップグレード
 titleSuffix: ''
 description: 以前のバージョンの Visual Studio で作成されたプロジェクトに対する Visual Studio 2019 でのサポートと、Visual Studio がプロジェクトを移行するタイミングを決定する方法のリファレンス。
-ms.date: 12/06/2018
+ms.date: 02/26/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9c5bf46f3626f5929f615437781495cd766f6ff4
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 7447dff5d8855fb141ab66f23ab9bd9b272c3d0d
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428792"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683360"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019"></a>Visual Studio 2019 のプロジェクトの移行とアップグレードのリファレンス
 
@@ -71,7 +71,7 @@ ms.locfileid: "57428792"
 | Silverlight | Silverlight プロジェクトは Visual Studio 2019 Preview ではサポートされていません。 Silverlight アプリケーションを維持するには、引き続き Visual Studio 2015 を使用してください。 |
 | SQL - Redgate | Redgate の SQL Change Automation Core (旧称、ReadyRoll Core)、SQL Prompt Core、および SQL Search は、Visual Studio インストーラーに付属されななくなりました。<br/><br/>これらの機能には、Visual Studio 2017 を引き続き使用することができます。 Visual Studio 2019 Preview では、Redgate の SQL Toolbelt で入手可能な有料の SQL Change Automation および SQL Prompt 製品にアップグレードすることができます。|
 | SQL Server Reporting Services および SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | これらのプロジェクト タイプのサポートは、Visual Studio ギャラリーの次の 2 つの拡張機能を通じて提供されます。[Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) と [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 Visual Studio 2019 Preview のデータの保存と処理のワークロードには SSDT のサポートも含まれます。 |
-| SQL Server Integration Services (SSIS) | Visual Studio 2019 Preview のサポートは、SQL Server Data Tools (SSDT) から使用できます。 詳細については、[SQL Server Integration Services のブログ](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/)をご覧ください。 |
+| SQL Server Integration Services (SSIS) | Visual Studio 2019 Preview のサポートは近日公開予定です。 最新のニュースについては、[SSIS 公式ブログ](https://blogs.msdn.microsoft.com/ssis/)で取得してください。 |
 | テスト ウィンドウ拡張機能 | Visual Studio 2019 では、前にパブリックとしてマークされていたがドキュメントに正式に記載されたことがないいくつかのテスト ウィンドウ API が削除されました。 広く利用されていた API には、拡張機能の管理者に対して早期に警告を発するために、Visual Studio 2017 で非推奨のマークが付いていました。 Microsoft の知る限りでは、これらの API に対して依存関係を築いている拡張機能はわずかです。 詳細と更新については、[テスト関連の非推奨 API の完全一覧](https://github.com/Microsoft/vstest/issues/1830)をご覧ください。 これが自分のシナリオに影響する場合、[開発者コミュニティ](https://developercommunity.visualstudio.com)でお知らせください。 |
 | Visual C++ | Visual Studio 2019 Preview を使用して、Visual Studio 2010 以降の Visual Studio で作成されたプロジェクトを操作できます。 プロジェクトを初めて開いたときに、最新のコンパイラとツールセットにアップグレードするか、元のプロジェクトを引き続き使用するかを選択できます。 元のプロジェクトを引き続き使用することを選択した場合、Visual Studio 2019 Preview はプロジェクト ファイルを変更せず、以前の Visual Studio のインストールのツールセットを使用してプロジェクトをビルドします。 元のオプションを維持すると、必要に応じて、Visual Studio の元のバージョンでプロジェクトを開くことができます。 詳細については、「[Visual Studio でネイティブ マルチ ターゲットを利用し、古いプロジェクトを作成する](/cpp/porting/use-native-multi-targeting)」を参照してください。 |
 | Visual Studio 拡張性/VSIX | MinimumVersion 14.0 以前のプロジェクトは、MinimumVersion 15.0 を宣言するように更新されます。この宣言により、前のバージョンの Visual Studio でプロジェクトを開けなくなります。 前のバージョンでプロジェクトを開くには、MinimumVersion を `$(VisualStudioVersion)` に設定します。 「[方法: 機能拡張プロジェクトの Visual Studio 2017 への移行](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)に関するページも参照してください。 |

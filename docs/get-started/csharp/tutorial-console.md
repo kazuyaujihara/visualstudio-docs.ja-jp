@@ -2,7 +2,7 @@
 title: 'チュートリアル: シンプルな C# コンソール アプリを作成する'
 description: Visual Studio で C# コンソール アプリを作成する方法について、ステップ バイ ステップで説明します。
 ms.custom: seodec18, get-started
-ms.date: 02/26/2019
+ms.date: 03/12/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841177"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736916"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する
 
@@ -34,8 +34,9 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 1. Visual Studio 2017 を開きます。
 
 2. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+   (または、**Ctrl**+**Shift**+**N** キーを押します)。
 
-3. 左側のウィンドウの **[新しいプロジェクト]** ダイアログ ボックスで、**[C#]** を展開し、**[.NET Core]** を選択します。 中央のウィンドウで、**[Console App (.NET Core)]** を選択します。 次に、ファイルに *Calculator* という名前を付けます。
+3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[C#]** を展開し、**[.NET Core]** を選択します。 中央のウィンドウで、**[Console App (.NET Core)]** を選択します。 次に、ファイルに ***Calculator*** という名前を付けます。
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されているコンソール アプリ (.NET Core) プロジェクト テンプレート](./media/new-project-csharp-calculator-console-app.png)
 
@@ -61,9 +62,11 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ## <a name="create-the-app"></a>アプリを作成する
 
-まず、C# での基本的な整数計算を見ていきます。 次に、基本的な電卓を作成するコードを追加します。 次に、機能を追加するコードを調整します。 その後を、アプリをデバッグし、エラーを発見して修正します。 最後に、コードを改良していっそう効率的にします。
+まず、C# での基本的な整数計算を見ていきます。 次に、基本的な電卓を作成するコードを追加します。 次に。 その後を、アプリをデバッグし、エラーを発見して修正します。 最後に、コードを改良していっそう効率的にします。
 
-C# での整数計算を始めましょう。
+### <a name="explore-integer-math"></a>整数の演算の確認
+
+C# で何らかの基本的な整数計算を始めましょう。
 
 1. コード エディターで、既定の "Hello World" のコードを削除します。
 
@@ -81,15 +84,23 @@ C# での整数計算を始めましょう。
             Console.ReadKey();
     ```
 
+    それを行う場合は、Visual Studio の IntelliSense 機能によって、入力のオートコンプリート オプションが提供されることに注意してください。
+
+    ![Visual Studio IDE の IntelliSense オートコンプリート機能を示す整数計算コードのアニメーション](./media/integer-math-intellisense.gif)
+
 1. **[Calculator]** を選択してプログラムを実行するか、**F5** キーを押します。
 
    ![[Calculator] ボタンを選択して、ツールバーからアプリを実行する](./media/csharp-console-calculator-button.png)
 
-   コンソール ウィンドウが開き、42 + 119 の合計が表示されます。
+   コンソール ウィンドウが開き、42 + 119 の合計 (**161**) が表示されます。
 
-1. 今度は別の演算子 (減算の場合は `-`、乗算の場合は `*`、除算の場合は */*) を使用して、コードの `int c = a + b;` 行を変更します。
+    ![整数計算の結果を示すコンソール ウィンドウ](./media/csharp-console-integer-math.png)
 
-    演算子を変更してプログラムを実行すると、結果も変わることに注目してください。
+1. **(省略可能)** 演算子を変更することで、結果を変えることができます。 たとえば、`int c = a + b;` コード行の `+` 演算子を減算用の `-`、乗算用の `*`、または除算用の `/` に変更することができます。 次に、プログラムを実行すると、結果も変更されます。
+
+1. コンソール ウィンドウを閉じます。
+
+### <a name="add-code-to-create-a-calculator"></a>電卓を作成するコードを追加する
 
 次に、より複雑な一連の電卓コードをプロジェクトに追加してみましょう。
 
@@ -165,6 +176,10 @@ C# での整数計算を始めましょう。
 
     ![アクションを実行するプロンプトを含む、Calculator アプリが表示されているコンソール ウィンドウ](./media/csharp-console-calculator.png)
 
+### <a name="add-functionality-to-the-calculator"></a>電卓に機能を追加する
+
+コードを調整してさらに機能を追加しましよう。
+
 ### <a name="add-decimals"></a>小数を追加する
 
 現在、電卓アプリでは整数を受け取って返します。 ただし、小数に対応するコードを追加するともっと正確になります。
@@ -178,6 +193,8 @@ C# での整数計算を始めましょう。
 1. **Ctrl** + **F** キーを押して **[検索と置換]** コントロールを開きます。
 
 1. `int` 変数の各インスタンスを `float` に変更します。
+
+   **[検索と置換]** コントロールで **[大文字と小文字を区別する]** (**Alt**+**C**) と **[単語単位で検索する]** (**Alt**+**W**) の切り替えを必ず確認してください。
 
     ![int 変数を float に変更する方法を示す [検索と置換] コントロールのアニメーション](./media/find-replace-control-animation.gif)
 
@@ -536,4 +553,5 @@ namespace Calculator
 
 ## <a name="see-also"></a>関連項目
 
+* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Visual Studio での C# コードのデバッグについて理解する](tutorial-debugger.md)
