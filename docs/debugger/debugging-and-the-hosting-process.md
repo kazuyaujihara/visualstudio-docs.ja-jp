@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 109bd4ee3c54e8d468714c2a955e349ec76db2fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: af0d57e39fa8d1312032bacbbd9af95d44449ca1
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952094"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525831"
 ---
 # <a name="debugging-and-the-hosting-process"></a>プロセスのデバッグとホスト
 Visual Studio のホスト プロセスでは、デバッガーのパフォーマンスを向上させ、部分信頼のデバッグやデザイン時の式の評価など、新しいデバッガー機能が使用できるようになりました。 必要に応じてホスト プロセスを無効にすることもできます。 次のセクションでは、ホスト プロセスがある場合とない場合のデバッグの違いについて説明します。
 
 > [!NOTE]
-> Visual Studio 2017 では、ホスト プロセスを使用してデバッグするためのオプションは不要になったし、が削除されました。 詳細については、「[デバッグ」を参照してください。Visual Studio 2017 目的は、最も嫌いなジョブの処理速度に](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx)します。
+> Visual Studio 2017 以降、ホスト プロセスを使用してデバッグするためのオプションが不要し、が削除されました。 詳細については、次を参照してください。[デバッグ: Visual Studio 2017 の目的に速度を最低お気に入り職種](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx)します。
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>部分信頼のデバッグと ClickOnce のセキュリティ
- 部分信頼のデバッグにはホスト プロセスが必要です。 ホスト プロセスを無効にすると、 **[プロジェクトのプロパティ]** の **[セキュリティ]** ページで部分信頼が有効になっている場合でも、部分信頼のデバッグは機能しません。 詳細については、「[方法 :部分的に信頼されたアプリケーションをデバッグする](/visualstudio/debugger/debugger-security)。
+ 部分信頼のデバッグにはホスト プロセスが必要です。 ホスト プロセスを無効にすると、 **[プロジェクトのプロパティ]** の **[セキュリティ]** ページで部分信頼が有効になっている場合でも、部分信頼のデバッグは機能しません。 詳細については、次を参照してください。[方法: 部分信頼アプリケーションをデバッグ](/visualstudio/debugger/debugger-security)します。
 
 ## <a name="design-time-expression-evaluation"></a>デザイン時の式評価
  デザイン時の式では、常にホスト プロセスが使用されます。 **[プロジェクトのプロパティ]** でホスト プロセスを無効にすると、クラス ライブラリ プロジェクトでデザイン時の式の評価も無効になります。 他のプロジェクトの種類では、デザイン時の式の評価は無効になりません。 代わりに、Visual Studio で実際の実行可能ファイルが起動され、ホスト プロセスを使用せずにデザイン時の評価に使用されます。 この違いがあるため、結果も異なる可能性があります。
@@ -43,4 +43,4 @@ Visual Studio のホスト プロセスでは、デバッガーのパフォー�
 
 ## <a name="see-also"></a>関連項目
 
-- [方法: 部分的に信頼されたアプリケーションをデバッグする](/visualstudio/debugger/debugger-security)
+- [方法 : 部分信頼アプリケーションをデバッグする](/visualstudio/debugger/debugger-security)

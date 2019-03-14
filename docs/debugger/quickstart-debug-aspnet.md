@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7a17431fa2ad85c660164110ab005fa00053ff17
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683598"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525402"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して ASP.NET をデバッグする
 
@@ -94,7 +94,7 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 
 ## <a name="navigate-code"></a>コード間の移動
 
-続行するようにデバッガーに指示するためのさまざまなコマンドがあります。 ここでは、Visual Studio 2017 の新しい機能である便利なコード ナビゲーション コマンドを示します。
+続行するようにデバッガーに指示するためのさまざまなコマンドがあります。 ここでは、Visual Studio 2017 以降で使用できる便利なコード ナビゲーション コマンドを示します。
 
 ブレークポイントで一時停止している間に、緑色の **[クリックで実行]** ボタン ![[クリックで実行]](../debugger/media/dbg-tour-run-to-click.png) が表示されるまでステートメント `return c2` をポイントし、表示されたら **[クリックで実行]** ボタンを押します。
 

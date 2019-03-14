@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b3b9a8045fdda71df1f979aef09aa368e03749
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917806"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323054"
 ---
 # <a name="how-to-distribute-code-snippets"></a>方法: コード スニペットを配布する
 
@@ -27,7 +27,7 @@ Visual Studio 拡張機能を作成するには、Visual Studio SDK をインス
 
 ## <a name="set-up-the-extension"></a>拡張機能を設定する
 
-この手順では、「[チュートリアル: コード スニペットを作成する」で作成したのと同じ Hello World コード スニペットを使います。コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md)」を参照してください。 *.snippet* のテキストは用意されているため、前の手順に戻ってコード スニペットを作成する必要はありません。
+この手順では、「[チュートリアル: コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md)」で作成したのと同じ Hello World コード スニペットを使います。コード スニペットを作成する」を参照してください。 *.snippet* のテキストは用意されているため、前の手順に戻ってコード スニペットを作成する必要はありません。
 
 1. **TestSnippet** という新しい VSIX プロジェクトを作成します  (**[ファイル]** > **[新規作成]** > **[プロジェクト]** > **[Visual C#] (または [Visual Basic])** > **[拡張]**)。
 
@@ -67,7 +67,17 @@ Visual Studio 拡張機能を作成するには、Visual Studio SDK をインス
 
 ### <a name="add-the-pkgdef-file"></a>.pkgdef ファイルを追加する
 
+::: moniker range="vs-2017"
+
 1. *HelloWorldVB* フォルダーにテキスト ファイルを追加し、*HelloWorldVB.pkgdef* という名前を付けます。 このファイルは、レジストリにキーを追加するために使用します。 この場合は、それによって **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic** キーに新しいサブキーが追加されます。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. *HelloWorldVB* フォルダーにテキスト ファイルを追加し、*HelloWorldVB.pkgdef* という名前を付けます。 このファイルは、レジストリにキーを追加するために使用します。 この場合は、それによって **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Languages\CodeExpansions\Basic** キーに新しいサブキーが追加されます。
+
+::: moniker-end
 
 2. ファイルに次の行を追加します。
 

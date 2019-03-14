@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4ad4108e798c493ee17bf37420440acdf607b53
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24785b4f39265b71c3f1cb18b4331ded53652905
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317056"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526764"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise の IntelliTrace (C#、Visual Basic、C++)
 
@@ -39,7 +39,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
 
 IntelliTrace は Visual Studio Enterprise Edition で使用できます (Professional Edition または Community Edition の場合は使用できません)。
 
-## <a name="what-do-you-want-to-do"></a>実行する作業を選択してください。
+## <a name="what-do-you-want-to-do"></a>実行する操作
 
 |||
 |-|-|
@@ -69,7 +69,7 @@ IntelliTrace は、これらの時点で特定のイベントやデータを記�
 
 次のソースからの IntelliTrace データを保存できます。
 
-- Visual Studio 2017 Enterprise、Visual Studio 2015 Enterprise、または以前のバージョンの Visual Studio Ultimate の IntelliTrace セッション。
+- Visual Studio 2015 Enterprise または以降のバージョンまたは以前のバージョンの Visual Studio Ultimate の IntelliTrace セッション。
 
 - Microsoft Test Manager のテスト セッション
 
@@ -131,7 +131,7 @@ IntelliTrace は、これらの時点で特定のイベントやデータを記�
 
 - **SharePoint 2010 アプリケーション イベントと SharePoint 2013 アプリケーション イベント**
 
-     Visual Studio の外部で実行されている SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーションのユーザー プロファイル イベントと Unified Logging System (ULS) イベントのサブセットを記録できます。 これらのイベントを .iTrace ファイルに保存できます。 Visual Studio Enterprise 2017、Visual Studio Enterprise 2015、以前のバージョンの Visual Studio Ultimate が必要ですか[Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384)で実行されている**トレース**モード。
+     Visual Studio の外部で実行されている SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーションのユーザー プロファイル イベントと Unified Logging System (ULS) イベントのサブセットを記録できます。 これらのイベントを .iTrace ファイルに保存できます。 Visual Studio Enterprise 2015 またはそれ以降のバージョンでは、以前のバージョンの Visual Studio Ultimate が必要ですか[Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384)で実行されている**トレース**モード。
 
      .iTrace ファイルを開いたら、SharePoint 相関 ID を入力して対応する Web 要求を見つけ、記録されたイベントを表示し、特定のイベントからのデバッグを開始します。 ファイルにハンドルされない例外が含まれている場合は、相関 ID を選択して例外のデバッグを開始できます。
 

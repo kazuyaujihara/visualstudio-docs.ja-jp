@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a53d29e7d72c10b3b7b9f295cb5b7adebab45e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8f8bc5a19e3cb91634b5a61e0b3e917fb0a3f9a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949162"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736992"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>[クイック起動] ([オプション] ダイアログ ボックス - [環境])
 
@@ -36,9 +36,9 @@ Visual Studio をインストールすると、**クイック起動**は既定�
 |カテゴリ|ショートカット|ショートカットの説明|
 |--------------|--------------| - |
 |直前に使用|@mru<br /><br /> たとえば、`@mru font`|**直前に使用**した項目が最大 5 つ表示されます。|
-|メニュー|@menu<br /><br /> たとえば、`@menu font`|検索をメニュー項目に制限します。|
+|メニュー|@menu<br /><br /> たとえば、`@menu project`|検索をメニュー項目に制限します。|
 |オプション|@opt<br /><br /> たとえば、`@opt font`|検索を **[オプション]** ダイアログ ボックスの設定に制限します。|
-|ドキュメント|@doc<br /><br /> たとえば、`@doc font`|検索を検索条件の開いているドキュメントのファイル名とパスに限定しますが、ファイル内のテキストは検索されません。|
+|ドキュメント|@doc<br /><br /> たとえば、`@doc program.cs`|検索を検索条件の開いているドキュメントのファイル名とパスに限定しますが、ファイル内のテキストは検索されません。|
 
 > [!NOTE]
 > ショートカット キーは、**[オプション]** ダイアログ ボックスにある **[全般]** の **[キーボード]** ページで変更できます。

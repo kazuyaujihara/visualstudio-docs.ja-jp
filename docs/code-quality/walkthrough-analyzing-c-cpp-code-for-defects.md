@@ -12,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26635f9f6680931d02993613f96dcfcbe623af1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919678"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736929"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>チュートリアル: C/C++ コード分析による障害の検出
 
@@ -67,7 +67,7 @@ ms.locfileid: "55919678"
 
      警告 C6230:意味の異なる型の間の暗黙的なキャスト: HRESULT をブール値のコンテキストを使用しています。
 
-     コード エディターには、関数で、警告の原因となった行が表示されます。`bool``ProcessDomain()`します。 この警告は、HRESULT が使用されている 'if' ステートメントのブール型の結果が必要な場合を示します。
+     コード エディターには、関数で、警告の原因となった行が表示されます。`bool ProcessDomain()`します。 この警告は、HRESULT が使用されている 'if' ステートメントのブール型の結果が必要な場合を示します。
 
 3. SUCCEEDED マクロを使用してこの警告を解決します。 コードでは、次のコードをようになります。
 
