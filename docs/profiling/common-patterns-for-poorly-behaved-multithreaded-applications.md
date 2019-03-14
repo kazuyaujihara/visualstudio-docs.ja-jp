@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c953e4021f654d469a579a3aec5900e4ab93de7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634267"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737022"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>適切に動作しないマルチスレッド アプリケーションの一般的なパターン
 
@@ -30,7 +30,7 @@ ms.locfileid: "56634267"
 
 コンカレンシー ビジュアライザーを使用すると、次の図のように、[CPU 使用状況] ビューでこの現象を確認することもできます。[CPU 使用状況] ビューでは、複数のスレッドが存在する場合でも、1 つの論理コアのみが使用されます。
 
-詳細については、MSDN ブログ Web サイトのHazim Shafi のブログ「[Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569)」(Windows 用並列パフォーマンス ツール) の「Performance Pattern 1: Identifying Lock Contention」(パフォーマンス パターン 1: ロック競合の特定) を参照してください。
+詳細については、記事「[スレッド パフォーマンス - Visual Studio 2010 におけるリソース競合の同時実行プロファイリング](https://msdn.microsoft.com/magazine/ff714587.aspx)」の「まずは問題から」のセクションを参照してください。
 
 ![ロック競合](../profiling/media/lockcontention_2.png "LockContention_2")
 

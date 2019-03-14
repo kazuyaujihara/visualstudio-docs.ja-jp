@@ -7,12 +7,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 561b55ee961162adb37cd393cac9ecf8b78c5ade
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926789"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223054"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio で C/C++ 用の単体テストを作成する
 
@@ -30,11 +30,11 @@ Visual Studio には次の C++ テスト フレームワークが含まれてお
 
 インストールされているフレームワークに加えて、Visual Studio 内で使いたいどのようなフレームワークについても、独自のテスト アダプターを作成できます。 テスト アダプターは、単体テストを **[テスト エクスプローラー]** ウィンドウと統合できます。 [Visual Studio Marketplace](https://marketplace.visualstudio.com) では複数のサードパーティ製アダプターを利用できます。 詳細については、「[サードパーティ製の単体テスト フレームワークをインストールする](install-third-party-unit-test-frameworks.md)」をご覧ください。
 
-**Visual Studio 2017 バージョン 15.7 (Professional および Enterprise)**
+**Visual Studio 2017 バージョン 15.7 以降 (Professional および Enterprise)**
 
 C++ 単体テスト プロジェクトでは [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) がサポートされています。
 
-**Visual Studio 2017 バージョン 15.5**
+**Visual Studio 2017 バージョン 15.5 以降**
 
 - **Google Test アダプター**は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 このアダプターには、**ソリューション エクスプローラー**のソリューション ノードの **[新しいプロジェクトの追加]** 右クリック メニューでソリューションに追加できるプロジェクト テンプレートと、**[ツール]** > **[オプション]** で構成できるオプションがあります。 詳細については、「[How to: use Google Test in Visual Studio](how-to-use-google-test-for-cpp.md)」(Visual Studio で C++ 用の Google Test を使用する方法) をご覧ください。
 
@@ -117,7 +117,9 @@ TEST_METHOD(TestClassInit)
 
 ## <a name="use-codelens"></a>CodeLens を使用する
 
-**Visual Studio 2017 バージョン 15.7 Professional Edition および Enterprise Edition のみ**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) を使用すると、コード エディターを開いたままで単体テストの状態をすばやく確認できます。 次の中の任意の方法で、C++ 単体テスト プロジェクト用に CodeLens を初期化できます。
+**Visual Studio 2017 バージョン 15.7 以降 (Professional Edition および Enterprise Edition のみ)**
+
+[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) を使用すると、コード エディターを開いたままで単体テストの状態をすばやく確認できます。 次の中の任意の方法で、C++ 単体テスト プロジェクト用に CodeLens を初期化できます。
 
 - テスト プロジェクトまたはソリューションを編集してビルドします。
 - プロジェクトまたはソリューションをリビルドします。
@@ -127,10 +129,10 @@ TEST_METHOD(TestClassInit)
 
 ![C++ の CodeLens アイコン](media/cpp-test-codelens-icons.png)
 
- アイコンをクリックして詳細を表示するか、単体テストを実行またはデバッグします。
+アイコンをクリックして詳細を表示するか、単体テストを実行またはデバッグします。
 
 ![C++ の CodeLens の実行およびデバッグ](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>関連項目
 
-[コードの単体テスト](unit-test-your-code.md)
+- [コードの単体テスト](unit-test-your-code.md)

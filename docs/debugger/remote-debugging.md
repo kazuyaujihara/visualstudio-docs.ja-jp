@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fdfb851b2fc0fad6e6c394f30697dd39aa078d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2142b73dc44b16e8e7ac149b7377959ae3c5cfcc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961677"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526439"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 別のコンピューターに配置されている Visual Studio アプリケーションをデバッグすることができます。 このデバッグを行うには、Visual Studio リモート デバッガーを使用します。
@@ -57,11 +57,22 @@ ms.locfileid: "54961677"
 
 リモート デバッガーを検索することができます (*msvsmon.exe*) Visual Studio Community、Professional、または Enterprise が既にインストールされているコンピューターでします。 シナリオによっては、リモート デバッグをセットアップする最も簡単な方法では、ファイル共有からリモート デバッガー (msvsmon.exe) を実行します。 使用量の制限については、リモート デバッガーのヘルプ ページを参照してください (**ヘルプ > 使用状況**リモート デバッガーで)。
 
-1. 検索*msvsmon.exe*で Visual Studio のバージョンに一致するディレクトリ。 Visual Studio enterprise 2017。
+1. 検索*msvsmon.exe*で Visual Studio のバージョンに一致するディレクトリ。
 
-      *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+   ::: moniker range=">=vs-2019"
 
-      *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+   *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+
+   *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
 
 2. 共有、**リモート デバッガー** Visual Studio コンピューター上のフォルダー。
 
@@ -89,7 +100,7 @@ ms.locfileid: "54961677"
      既定で使用されるポート番号の一覧については、次を参照してください。 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)します。
 
      > [!WARNING]
-     >  リモート ツールを [認証なし] モードで実行することも選択できますが、このモードの使用は避けることを強く推奨します。 このモードで実行した場合、ネットワーク セキュリティはまったく提供されません。 [認証なし] モードは、ネットワークに悪意のあるコードや悪意のあるトラフィックのリスクがないことが確実である場合にのみ選択してください。
+     >  リモート ツールを認証なしモードで実行することも選択できますが、このモードの使用は避けることを強く推奨します。 このモードで実行した場合、ネットワーク セキュリティはまったく提供されません。 [認証なし] モードは、ネットワークに悪意のあるコードや悪意のあるトラフィックのリスクがないことが確実である場合にのみ選択してください。
 
 ##  <a name="bkmk_configureService"></a> (省略可能)サービスとしてリモート デバッガーを構成します。
 ASP.NET およびその他のサーバー環境でデバッグ、リモート デバッガーを管理者として実行かを常に実行する場合は、サービスとしてリモート デバッガーを実行します。

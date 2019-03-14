@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 21851bc26ec69207c95a41e988b20b5df3c70c39
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450322"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567261"
 ---
 # <a name="create-applications-in-bidirectional-languages"></a>双方向言語のアプリケーションの作成
 
@@ -30,7 +30,7 @@ Visual Studio では、アラビア語やヘブライ語など、右から左に
 
 -  Windows アプリ
 
-   双方向テキスト、右から左への読み取り順序、およびミラー化 (ウィンドウ、メニュー、ダイアログ ボックスなどのレイアウトの反転) をサポートする、完全な双方向アプリケーションを作成できます。 ミラー化を除き、これらの機能は、既定またはプロパティ設定により使用できるようになっています。 ミラー化は、メッセージ ボックスなどいくつかの機能に対してはあらかじめサポートされています。 ただし、それ以外の場合には、ミラー化をコードで実装する必要があります。 詳細については、「[Windows フォーム アプリケーションの双方向サポート](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications)」をご覧ください。
+   双方向テキスト、右から左への読み取り順序、およびミラー化 (ウィンドウ、メニュー、ダイアログ ボックスなどのレイアウトの反転) をサポートする、完全な双方向アプリケーションを作成できます。 ミラー化を除き、これらの機能は、既定またはプロパティ設定により使用できるようになっています。 ミラー化は、メッセージ ボックスなどいくつかの機能に対してはあらかじめサポートされています。 ただし、それ以外の場合には、ミラー化をコードで実装する必要があります。 詳細については、「[Windows フォーム アプリケーションの双方向サポート](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)」をご覧ください。
 
 -  Web アプリ
 

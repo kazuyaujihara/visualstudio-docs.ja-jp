@@ -1,7 +1,7 @@
 ---
 title: 'クイック スタート: Visual Studio を使用して Python Web アプリを作成する'
 description: このクイック スタートでは、Visual Studio と Flask フレームワークを使用し、Pythonで簡単な Web アプリを作成します。
-ms.date: 02/11/2019
+ms.date: 03/07/2019
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 826e0134d4798526a3ba3ae8055500808eb922a1
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 8c8be894bf80749260f44cf36255d78f3899bf35
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987432"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683386"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>クイック スタート: Visual Studio を使用して初めての Python Web アプリを作成する
 
@@ -27,21 +27,43 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 以降の手順では、アプリケーションのコンテナーとして機能する空のプロジェクトを作成します。
 
+::: moniker range="vs-2017"
 1. Visual Studio 2017 を開きます。
 
-1. 上部のメニュー バーから、**[ファイル] > [新規作成] > [プロジェクト]** の順に選択します。
+2. 上部のメニュー バーから、**[ファイル] > [新規作成] > [プロジェクト]** の順に選択します。
 
-1. **[新しいプロジェクト]** ダイアログ ボックスの右上にある検索ボックスに "Python Web Project" と入力し、真ん中の一覧にある **[Web プロジェクト]** を選択し、"HelloPython" のような名前をプロジェクトに付け、**[OK]** を選択します。
+3. **[新しいプロジェクト]** ダイアログ ボックスの右上にある検索ボックスに "Python Web Project" と入力し、真ん中の一覧にある **[Web プロジェクト]** を選択し、"HelloPython" のような名前をプロジェクトに付け、**[OK]** を選択します。
 
     ![Python Web プロジェクトが選択されている [新しいプロジェクト] ダイアログ](media/quickstart-python-00-web-project.png)
 
-    Python のプロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスを取り消し、上部のメニュー バーから **[ツール] > [ツールと機能を取得]** の順に選択して、**Visual Studio インストーラー**を開きます。 **[Python 開発]** ワークロードを選び、**[変更]** を選びます。
+    Python プロジェクト テンプレートが表示されない場合は、**Visual Studio インストーラー**を実行し、**[その他]** > **[変更]** の順に選択し、**[Python 開発]** ワークロードを選択して、**[変更]** を選択します。
 
     ![Visual Studio インストーラーの [Python 開発] ワークロード](../python/media/installation-python-workload.png)
 
-1. 右側のウィンドウの**ソリューション エクスプローラー**で、新しいプロジェクトが開きます。 この時点のプロジェクトは、他のファイルが含まれていないため空です。
+4. 右側のウィンドウの**ソリューション エクスプローラー**で、新しいプロジェクトが開きます。 この時点のプロジェクトは、他のファイルが含まれていないため空です。
 
     ![新しく作成された空のプロジェクトが表示されているソリューション エクスプローラー](media/quickstart-python-01-empty-project.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+1. Visual Studio 2019 を開きます。
+2. スタート画面で、**[新しいプロジェクトの作成]** を選択します。
+3. **[新しいプロジェクトの作成]** ダイアログ ボックスの上部にある [検索] フィールドに「Python web」と入力し、真ん中にある一覧で **[Web プロジェクト]** を選択してから、**[次へ]** を選択します。
+
+    ![Python Web プロジェクトが選択されている [新しいプロジェクトの作成] 画面](media/quickstart-python-00-web-project-2019a.png)
+
+    Python プロジェクト テンプレートが表示されない場合は、**Visual Studio インストーラー**を実行し、**[その他]** > **[変更]** の順に選択し、**[Python 開発]** ワークロードを選択して、**[変更]** を選択します。
+
+    ![Visual Studio インストーラーの [Python 開発] ワークロード](../python/media/installation-python-workload.png)
+
+4. 表示された **[新しいプロジェクトを構成します]** ダイアログで、**[プロジェクト名]** に「HelloPython」を入力し、場所を指定して、**[作成]** を選択します  (**[ソリューション名]** は **[プロジェクト名]** と一致するように自動的に設定されます)。
+
+    ![[新しいプロジェクトを構成します] ダイアログ](media/quickstart-python-00-web-project-2019b.png)
+
+5. 右側のウィンドウの**ソリューション エクスプローラー**で、新しいプロジェクトが開きます。 この時点のプロジェクトは、他のファイルが含まれていないため空です。
+
+    ![新しく作成された空のプロジェクトが表示されているソリューション エクスプローラー](media/quickstart-python-01-empty-project-2019.png)
+::: moniker-end
 
 **質問:Visual Studio で Python アプリケーション用のプロジェクトを作成する利点は何ですか。**
 
@@ -57,19 +79,37 @@ Python の Web アプリは、ほぼ常に、Web 要求のルーティングや�
 
 ここでは、次の手順で、Visual Studio によってこのプロジェクトに使用される既定の "グローバル環境" に Flask ライブラリをインストールします。
 
+::: moniker range="vs-2017"
 1. プロジェクトの **[Python 環境]** ノードを展開して、プロジェクトの既定の環境を表示します。
 
     ![既定の環境が表示されているソリューション エクスプローラー](media/quickstart-python-02-default-environment.png)
 
-1. 環境を右クリックして、**[Python パッケージのインストール]** を選択します。 このコマンドを選ぶと、**[Python 環境]** ウィンドウの **[パッケージ]** タブが開きます。
+2. 環境を右クリックして、**[Python パッケージのインストール]** を選択します。 このコマンドを選ぶと、**[Python 環境]** ウィンドウの **[パッケージ]** タブが開きます。
 
-1. 検索フィールドに "flask" と入力し、**[pip install flask from PyPI]\(PyPI から flask の pip インストール\)** を選択します。 管理者特権に関するすべてのプロンプトに同意し、Visual Studio の **[出力]** ウィンドウで進行状況を確認します。 (グローバル環境のパッケージ フォルダーが *C:\Program Files* のように保護された領域内にある場合は、昇格のプロンプトが表示されます)。
+3. 検索フィールドに "flask" と入力し、**[pip install flask from PyPI]\(PyPI から flask の pip インストール\)** を選択します。 管理者特権に関するすべてのプロンプトに同意し、Visual Studio の **[出力]** ウィンドウで進行状況を確認します。 (グローバル環境のパッケージ フォルダーが *C:\Program Files* のように保護された領域内にある場合は、昇格のプロンプトが表示されます)。
 
     ![pip インストールを使用して Flask ライブラリをインストールする](media/quickstart-python-03-install-package.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. プロジェクトの **[Python 環境]** ノードを展開して、プロジェクトの既定の環境を表示します。
 
-1. インストールが済むと、**ソリューション エクスプローラー**の環境にライブラリが表示されます。これは、Python コードでライブラリを使用できることを意味します。
+    ![既定の環境が表示されているソリューション エクスプローラー](media/quickstart-python-02-default-environment-2019.png)
 
+2. 環境を右クリックして、**[Python パッケージの管理]** を選択します。このコマンドを選ぶと、**[パッケージ (PyPI)]** タブ上に **[Python 環境]** ウィンドウが開きます。
+
+3. 検索フィールドに「flask」と入力します。 検索ボックスの下に **Flask** が表示される場合、この手順はスキップできます。 それ以外の場合、**[実行コマンド: pip install flask]** を選択します。 管理者特権に関するすべてのプロンプトに同意し、Visual Studio の **[出力]** ウィンドウで進行状況を確認します。 (グローバル環境のパッケージ フォルダーが *C:\Program Files* のように保護された領域内にある場合は、昇格のプロンプトが表示されます)。
+
+    ![pip インストールを使用して Flask ライブラリをインストールする](media/quickstart-python-03-install-package-2019.png)
+::: moniker-end
+
+4. インストールが済むと、**ソリューション エクスプローラー**の環境にライブラリが表示されます。これは、Python コードでライブラリを使用できることを意味します。
+
+    ::: moniker range="vs-2017"
     ![ソリューション エクスプローラーのスクリーンショット。Flask ライブラリがインストールされています](media/quickstart-python-04-package-installed.png)
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    ![ソリューション エクスプローラーのスクリーンショット。Flask ライブラリがインストールされています](media/quickstart-python-04-package-installed-2019.png)
+    ::: moniker-end
 
 > [!Note]
 > 開発者は通常、グローバル環境にライブラリをインストールするのではなく、特定のプロジェクトのライブラリをインストールする "仮想環境" を作成します。 Visual Studio のテンプレートによって通常、このオプションが与えられます。それについては、「[クイック スタート - Visual Studio のテンプレートから Python プロジェクトを作成する](../python/quickstart-02-python-in-visual-studio-project-from-template.md)」に説明があります。
@@ -121,7 +161,14 @@ Python の Web アプリは、ほぼ常に、Web 要求のルーティングや�
 
 1. **ソリューション エクスプローラー**で *app.py* を右クリックし、**[スタートアップ ファイルとして設定]** を選択します。 このコマンドによって、アプリの実行時、Python で起動するコード ファイルが特定されます。
 
+    ::: moniker range="vs-2017"
     ![ソリューション エクスプローラーでプロジェクトのスタートアップ ファイルを設定](media/quickstart-python-05-set-as-startup-file.png)
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    ![ソリューション エクスプローラーでプロジェクトのスタートアップ ファイルを設定](media/quickstart-python-05-set-as-startup-file-2019.png)
+    ::: moniker-end
+
+1. **ソリューション エクスプローラー**で *app.py* を右クリックし、**[スタートアップ ファイルとして設定]** を選択します。 このコマンドによって、アプリの実行時、Python で起動するコード ファイルが特定されます。
 
 2. **ソリューション エクスプローラー**でプロジェクトを右クリックして、**[プロパティ]** を選択します。 次に、**[デバッグ]** タブを選び、**[ポート番号]** プロパティを `4449` に設定します。 この手順によって、Visual Studio では、コードの `app.run` 引数に合わせ、`localhost:4449` でブラウザーが起動します。
 
