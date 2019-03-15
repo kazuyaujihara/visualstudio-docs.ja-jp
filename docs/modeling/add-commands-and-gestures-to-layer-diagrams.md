@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c595465a9791f00036fb5358c49afae808dce13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b29735eeb8b35b2d674f3574343b19665c87fa19
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932717"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983846"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>依存関係図にコマンドおよびジェスチャを追加する
 
@@ -54,7 +54,17 @@ ms.locfileid: "55932717"
 
     [ジェスチャ ハンドラーを定義する](#gesture)
 
+::: moniker range="vs-2017"
+
 6. または別のコンピューターで、Visual Studio のメイン インスタンスで、拡張機能をインストールするには、検索、 *.vsix*ファイル、 *bin*ディレクトリ。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 これをアンインストールするには、選択**拡張機能と更新**上、**ツール**メニュー。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. または別のコンピューターで、Visual Studio のメイン インスタンスで、拡張機能をインストールするには、検索、 *.vsix*ファイル、 *bin*ディレクトリ。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 これをアンインストールするには、選択**拡張機能の管理**で、**拡張**メニュー。
+
+::: moniker-end
 
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>別の VSIX にコマンドまたはジェスチャを追加する
 
@@ -104,11 +114,9 @@ ms.locfileid: "55932717"
 
      参照してください[への移動と更新プログラムは、プログラム コードでモデルをレイヤー](../modeling/navigate-and-update-layer-models-in-program-code.md)します。
 
-6.  機能をテストするには、Ctrl キーを押しながら F5 キーを押すか、または F5 キーを押します。 Visual Studio の実験用インスタンスが開きます。 このインスタンスでは、作成か依存関係図を開きます。
+6.  機能をテストするには、キーを押して**Ctrl**+**f5 キーを押して**または**f5 キーを押して**します。 Visual Studio の実験用インスタンスが開きます。 このインスタンスでは、作成か依存関係図を開きます。
 
 7.  または別のコンピューターで、Visual Studio のメイン インスタンスで、VSIX をインストールするには、検索、 **.vsix**ファイル、 **bin** VSIX プロジェクトのディレクトリ。 このファイルを、VSIX をインストールするコンピューターにコピーします。 Windows エクスプローラーで、VSIX ファイルをダブルクリックします。
-
-     拡張機能をアンインストールするには、 **[ツール]** メニューの **[拡張機能と更新プログラム]** を使用します。
 
 ##  <a name="command"></a> メニュー コマンドを定義する
 

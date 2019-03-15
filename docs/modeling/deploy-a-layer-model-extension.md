@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594f4118f8c6876857b862d6423180403f4f96c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8fe915f31181af4158bdfe7e292313886ed7d4c
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915622"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983105"
 ---
 # <a name="deploy-a-layer-model-extension"></a>レイヤー モデル拡張機能の配置
 
@@ -37,9 +37,19 @@ Visual Studio の他のユーザーは、Visual Studio を使って作成され�
 
 ### <a name="to-uninstall-the-extension"></a>拡張機能をアンインストールするには
 
-1.  Visual Studio での**ツール** メニューのをクリックして**拡張機能と更新**します。
+::: moniker range="vs-2017"
 
-2.  拡張機能の名前をクリックし、クリックして**アンインストール**します。
+1. Visual Studio で、次のように選択します。**ツール** > **拡張機能と更新**します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio で、次のように選択します。**拡張** > **拡張機能の管理**します。
+
+::: moniker-end
+
+2. 拡張機能の名前をクリックし、クリックして**アンインストール**します。
 
 ## <a name="install-an-extension-on-team-foundation-server"></a>Team Foundation Server の拡張機能をインストールします。
 
