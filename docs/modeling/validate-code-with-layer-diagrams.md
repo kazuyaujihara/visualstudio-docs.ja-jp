@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223196"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870361"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>依存関係図を使用したコードの検証
 
@@ -102,14 +102,14 @@ Web サイト、Office ドキュメント、プレーン テキスト ファイ�
     > [!NOTE]
     > 既定で、**ビルド アクション**依存関係図 (.layerdiagram) ファイルのプロパティに設定されて**検証**検証プロセスで、ダイアグラムが含まれるようにします。
 
-     **エラー一覧**ウィンドウが発生したエラーを報告します。 検証エラーに関する詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。
+     **エラー一覧**ウィンドウが発生したエラーを報告します。 検証エラーに関する詳細については、次を参照してください。[レイヤー検証に関する問題のトラブルシューティングを行う](#troubleshoot-layer-validation-issues)します。
 
 2.  各エラーのソースを表示するでエラーをダブルクリックして、**エラー一覧**ウィンドウ。
 
     > [!NOTE]
     > Visual Studio は、エラーのソースではなく、コード マップを表示する可能性があります。 これには、コードの依存関係の図に指定されていないアセンブリに依存しているか、コードの依存関係図で指定されている依存関係がないときに発生します。 コード マップまたはコードをレビューし、依存関係が必要であるかどうかを検証してください。 コード マップの詳細については、次を参照してください。[ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)します。
 
-3.  エラーを管理するには、次を参照してください。[検証エラーを管理](#ManageErrors)します。
+3.  エラーを管理するには、次を参照してください。[レイヤー検証エラーを解決する](#resolve-layer-validation-errors)します。
 
 ### <a name="validate-code-at-the-command-prompt"></a>コマンド プロンプトでコードを検証します。
 
@@ -147,7 +147,7 @@ Web サイト、Office ドキュメント、プレーン テキスト ファイ�
 
      発生したすべてのエラーが表示されます。 MSBuild の詳細については、次を参照してください。 [MSBuild](../msbuild/msbuild.md)と[MSBuild タスク](../msbuild/msbuild-task.md)します。
 
-   検証エラーに関する詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。
+   検証エラーに関する詳細については、次を参照してください。[レイヤー検証に関する問題のトラブルシューティングを行う](#troubleshoot-layer-validation-issues)します。
 
 ### <a name="manage-validation-errors"></a>検証エラーを管理する
 
@@ -195,11 +195,11 @@ Web サイト、Office ドキュメント、プレーン テキスト ファイ�
 
     これには、検証プロセスには依存関係図が含まれます。
 
-エラー一覧 ウィンドウでエラーを管理するには、次を参照してください。[検証エラーの管理](#ManageErrors)します。
+エラー一覧 ウィンドウでエラーを管理するには、次を参照してください。[レイヤー検証エラーを解決する](#resolve-layer-validation-errors)します。
 
 ## <a name="troubleshoot-layer-validation-issues"></a>レイヤー検証に関する問題のトラブルシューティング
 
-レイヤー検証に関する問題とその解決方法について、次の表で説明します。 これらの問題は、コードと設計の間の競合によって発生するエラーとは異なります。 これらのエラーの詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。
+レイヤー検証に関する問題とその解決方法について、次の表で説明します。 これらの問題は、コードと設計の間の競合によって発生するエラーとは異なります。 これらのエラーの詳細については、次を参照してください。[レイヤー検証に関する問題のトラブルシューティングを行う](#troubleshoot-layer-validation-issues)します。
 
 |**問題点**|**考えられる原因**|**解決策**|
 |-|-|-|

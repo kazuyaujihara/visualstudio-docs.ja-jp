@@ -1,5 +1,5 @@
 ---
-title: 使用して、Roslyn アナライザーを構成します。
+title: アナライザー ルールの重要度および非表示
 ms.date: 03/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924605"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873503"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>構成し、Roslyn アナライザーの規則を使用
+# <a name="use-roslyn-analyzers"></a>Roslyn アナライザーを使用して、
 
 .NET コンパイラ プラットフォーム ("Roslyn") アナライザー ルール、または*診断*、入力すると、c# または Visual Basic のコードを分析します。 各診断が、プロジェクトを上書きできる既定の重大度と抑制状態です。 この記事では、設定ルールの重要度、規則のセットを使用して、違反を抑制するについて説明します。
 
@@ -91,7 +91,7 @@ A[ルール セット](../code-quality/using-rule-sets-to-group-code-analysis-ru
 
 ### <a name="to-set-rule-severity-in-the-rule-set-file"></a>ルールの重大度がファイルを設定する規則を設定するには
 
-1. 開いている規則セット ファイルをダブルクリックして**ソリューション エクスプ ローラー**選択**オープンのアクティブなルール セット**の右クリック メニューで、**アナライザー**ノード、または選択して**オープン**上、**コード分析**プロジェクトのプロパティ ページ。
+1. 開く、[ルール セット](analyzer-rule-sets.md)ファイルをダブルクリックして**ソリューション エクスプ ローラー**選択**オープンのアクティブなルール セット**の右クリック メニューで、**アナライザー**ノード、または選択して**オープン**上、**コード分析**プロジェクトのプロパティ ページ。
 
 1. 含んでいるアセンブリを展開して、ルールを参照します。
 

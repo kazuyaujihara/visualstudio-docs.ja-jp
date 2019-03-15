@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed8f06513b240719364539a24295a403b83265f4
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693010"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873007"
 ---
 # <a name="deploy-custom-start-pages"></a>カスタム スタート ページをデプロイします。
 
@@ -29,7 +29,7 @@ Visual Studio をスタート ページ プロジェクト テンプレートを
 
 -   配置することができます、 *.vsix*ファイル、ネットワーク共有またはパブリック Web サイト。 ファイルを開く誰かと、スタート ページが自動的にインストールします。
 
--   アップロードすることができます、 *.vsix*ファイルを[Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkID=123847) Web サイトのユーザーを使用してインストールできるように**拡張機能マネージャー**します。
+-   アップロードすることができます、 *.vsix*ファイルを[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトのユーザーを使用してインストールできるように**拡張機能マネージャー**します。
 
 スタート ページ プロジェクト テンプレートは、コピーを変更して、元を保持するように Visual Studio スタート ページの既定のコピーを作成します。
 

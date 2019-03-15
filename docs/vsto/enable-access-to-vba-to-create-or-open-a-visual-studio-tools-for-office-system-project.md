@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca3810df7751245acc3f7a93372d565b88170b07
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 10dc439946cb209c9a8d8e0c5ff50a7e8cfe5363
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634826"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869319"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>作成するか、Visual Studio Tools for the Microsoft Office system プロジェクトを開き、VBA へのアクセスを有効にします。
 
@@ -40,8 +40,6 @@ ms.locfileid: "56634826"
  Visual Basic for Applications プロジェクト システムへのアクセスを禁止してもウイルスから保護されないことに注意してください。コンピューターがそれ以前に一部のマクロ ウイルスに感染していた場合にも、他の文書へのウイルス感染の防止に役立つだけです。 コンピューターに保護層を追加するこのオプションは、既定では無効になっていますが、セキュリティに関する以下のベスト プラクティスに従えば、このオプションを有効にしてもコンピューターがウイルスに感染しやすくなることはありません。
 
  最新のセキュリティ パッチとウイルス スキャナーと Office マクロ ウイルスが高、非常に高いセキュリティ レベルのマクロのみを信頼するで Office を実行することを確認、既知のソースからの最高レベルの保護。
-
- ウイルスやその他の悪意のあるコードから PC を保護する方法の詳細については、次を参照してください。 [ http://www.microsoft.com/protect](http://www.microsoft.com/protect)します。
 
  有効にするか、オプションを無効にする**Visual Basic プロジェクトへのアクセスを信頼**手動でします。
 

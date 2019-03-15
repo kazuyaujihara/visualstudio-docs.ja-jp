@@ -1,6 +1,6 @@
 ---
 title: CA1008:Enums は 0 値を含んでいなければなりません
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1008
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8d7646ddb294cef27b58b5b5e212c33b11fb46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4bb79d2944bdb49c59fd53fb30e1497c57c5c516
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955298"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868286"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008:Enums は 0 値を含んでいなければなりません
 
@@ -31,12 +31,14 @@ ms.locfileid: "55955298"
 |-|-|
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|改行しない - 追加するメッセージが表示されたら、 **None**非フラグ列挙体の値。 – 場合の名前を変更またはすべての列挙値を削除するように求められます。|
 
 ## <a name="cause"></a>原因
 
-空の列挙定数を適用した<xref:System.FlagsAttribute?displayProperty=fullName>0; が、適用する列挙体の値を持つメンバーを一切定義しません<xref:System.FlagsAttribute>メンバーを定義します。 ゼロの値を持つが、その名が 'None'、または列挙体は、複数の値が 0 を定義します。メンバー。
+空の列挙定数を適用した<xref:System.FlagsAttribute?displayProperty=fullName>0 の値を持つメンバーを一切定義しません。 または列挙型を持つ、適用された<xref:System.FlagsAttribute>メンバーを定義します。 ゼロの値を持つが、名前が 'None' ではありません。 列挙体は、複数を定義します。 または、メンバーの値が 0 です。
+
+既定では、このルールだけを確認、外部から参照できる列挙体が、これは[構成可能な](#configurability)します。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -51,6 +53,16 @@ ms.locfileid: "55955298"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 
 以前にリリース済みフラグの属性の列挙型を除く、この規則による警告を抑制しないでください。
+
+## <a name="configurability"></a>構成機能
+
+この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+
+```
+dotnet_code_quality.ca1008.api_surface = private, internal
+```
+
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
 
 ## <a name="example"></a>例
 

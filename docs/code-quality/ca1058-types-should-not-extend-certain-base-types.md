@@ -1,6 +1,6 @@
 ---
 title: CA1058:型は、一定の基本型を拡張することはできません
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - TypesShouldNotExtendCertainBaseTypes
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 831f8ad60b7cef0f172bbc4b3795d036779b2419
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5d88f08746035792913601b280a0794a9ff50bf2
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915531"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871315"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058:型は、一定の基本型を拡張することはできません
 
@@ -27,37 +27,35 @@ ms.locfileid: "55915531"
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 外部から参照可能な型では、特定の基本型が拡張されます。 現在、このルールは、次の種類から派生した型を報告します。
+
+型は、次の基本型の 1 つを拡張します。
 
 - <xref:System.ApplicationException?displayProperty=fullName>
-
 - <xref:System.Xml.XmlDocument?displayProperty=fullName>
-
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
-
 - <xref:System.Collections.DictionaryBase?displayProperty=fullName>
-
 - <xref:System.Collections.Queue?displayProperty=fullName>
-
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
 - <xref:System.Collections.SortedList?displayProperty=fullName>
-
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
-## <a name="rule-description"></a>規則の説明
- 新しい例外を派生する .NET framework バージョン 1 では、推奨された<xref:System.ApplicationException>します。 推奨設定が変更され、新しい例外の派生元<xref:System.Exception?displayProperty=fullName>またはそのサブクラス内の 1 つ、<xref:System>名前空間。
+既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
 
- サブクラスを作成しない<xref:System.Xml.XmlDocument>かどうかは、基になるオブジェクト モデルまたはデータ ソースの XML ビューを作成します。
+## <a name="rule-description"></a>規則の説明
+
+新しい例外を派生する .NET framework バージョン 1 では、推奨された<xref:System.ApplicationException>します。 推奨設定が変更され、新しい例外の派生元<xref:System.Exception?displayProperty=fullName>またはそのサブクラス内の 1 つ、<xref:System>名前空間。
+
+サブクラスを作成しない<xref:System.Xml.XmlDocument>かどうかは、基になるオブジェクト モデルまたはデータ ソースの XML ビューを作成します。
 
 ### <a name="non-generic-collections"></a>非ジェネリック コレクション
- 使用して、または可能であれば、ジェネリック コレクションを拡張します。 以前に発送した場合を除き、コードで、非ジェネリック コレクションは拡張されません。
 
- **不適切な使用方法の例**
+使用して、または可能であれば、ジェネリック コレクションを拡張します。 以前に発送した場合を除き、コードで、非ジェネリック コレクションは拡張されません。
+
+**不適切な使用方法の例**
 
 ```csharp
 public class MyCollection : CollectionBase
@@ -69,7 +67,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }
 ```
 
- **正しい使用法の例**
+**正しい使用法の例**
 
 ```csharp
 public class MyCollection : Collection<T>
@@ -82,7 +80,19 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 ```
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するのには、別の基本型またはジェネリック コレクションから型を派生します。
+
+この規則違反を修正するのには、別の基本型またはジェネリック コレクションから型を派生します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- 詳細についてはこの規則違反の警告を抑制しないでください<xref:System.ApplicationException>します。 この規則違反の警告を抑制するには、安全では<xref:System.Xml.XmlDocument>します。 コードが以前にリリースされた場合は、非ジェネリック コレクションについて警告を抑制しても安全です。
+
+詳細についてはこの規則違反の警告を抑制しないでください<xref:System.ApplicationException>します。 この規則違反の警告を抑制するには、安全では<xref:System.Xml.XmlDocument>します。 コードが以前にリリースされた場合は、非ジェネリック コレクションについて警告を抑制しても安全です。
+
+## <a name="configurability"></a>構成機能
+
+この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+
+```
+dotnet_code_quality.ca1058.api_surface = private, internal
+```
+
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。

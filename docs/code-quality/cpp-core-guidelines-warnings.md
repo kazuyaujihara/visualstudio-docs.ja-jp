@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223495"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872435"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 
@@ -187,7 +187,7 @@ Microsoft Visual C コンパイラでは、属性を非表示、GSL の制限付
 
 Microsoft.Cpp.targets ファイルをインポートする前にこれらのプロパティを追加することを確認します。 特定のルール セットを選択またはカスタム規則セットを作成またはその他の PREfast のチェックが含まれる既定の規則セットを使用できます。
 
-同じアプローチを使用して、指定したファイルにのみ、C++ Core チェックを行うことができます[前に説明した](#coreckeck_per_file)、MSBuild ファイルを使用します。 使用して、環境変数を設定することができます、`BuildMacro`項目。
+同じアプローチを使用して、指定したファイルにのみ、C++ Core チェックを行うことができます[前に説明した](#corecheck_per_file)、MSBuild ファイルを使用します。 使用して、環境変数を設定することができます、`BuildMacro`項目。
 
 ```xml
 <ItemGroup>

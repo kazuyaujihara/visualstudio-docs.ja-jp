@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567d315694ff4f55ae5e1d2df2e7963bc21902a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932015"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57866998"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn アナライザーの規則セットします。
 
-定義済みの規則セットは、いくつかの NuGet アナライザー パッケージに含まれています。 含まれている規則セットなど、 [Microsoft.CodeAnalysis.FxCopAnalyzers NuGet アナライザー パッケージ](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/)(バージョン 2.6.2 で開始) を有効または名前付け、セキュリティなどのカテゴリに基づくルールを無効にするか、パフォーマンス。 規則セットを使用して簡単にすばやく規則の特定のカテゴリに関連する規則違反のみを参照してください。
+定義済みの規則セットは、いくつかの NuGet アナライザー パッケージに含まれています。 含まれている規則セットなど、 [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (バージョン 2.6.2 以降) NuGet アナライザー パッケージを有効または名前付け、セキュリティなどのカテゴリに基づくルールを無効にするか、パフォーマンス。 規則セットを使用して簡単にすばやく規則の特定のカテゴリに関連する規則違反のみを参照してください。
 
 Roslyn アナライザーを従来の"FxCop"静的コード分析から移行する場合は、引き続き、以前に使用した同じ規則の構成を使用してこれらのルール セットが有効にします。
 
@@ -41,7 +41,7 @@ Roslyn アナライザーを従来の"FxCop"静的コード分析から移行す
 
 また、特定のパフォーマンスやセキュリティなど、パッケージ内のルールのカテゴリごとに 2 つの規則セットが使用されます。 1 つの規則セットは、カテゴリのすべての規則をでき、1 つの規則セットは、カテゴリ内の各ルールの既定の重大度と有効化の設定を優先します。
 
- [Microsoft.CodeAnalysis.FxCopAnalyzers NuGet アナライザー パッケージ](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/)従来の"FxCop"静的コード分析の使用可能なルール セットを一致するように、次のカテゴリの規則セットが含まれています。
+[Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet アナライザー パッケージに一致する、規則セットを従来の"FxCop"静的コード分析に使用できる、次のカテゴリの規則セットが含まれています。
 
 - デザイン
 - ドキュメント
@@ -54,7 +54,8 @@ Roslyn アナライザーを従来の"FxCop"静的コード分析から移行す
 
 ## <a name="see-also"></a>関連項目
 
+- [アナライザーの FAQ](analyzers-faq.md)
 - [.NET Compiler Platform アナライザーの概要](roslyn-analyzers-overview.md)
-- [.NET コンパイラ プラットフォームのアナライザーをインストールします。](install-roslyn-analyzers.md)
-- [構成し、Roslyn アナライザーの規則を使用](use-roslyn-analyzers.md)
+- [アナライザーをインストールします。](install-roslyn-analyzers.md)
+- [アナライザーを使用して、](use-roslyn-analyzers.md)
 - [コード分析規則のグループに規則を使用を設定します。](using-rule-sets-to-group-code-analysis-rules.md)

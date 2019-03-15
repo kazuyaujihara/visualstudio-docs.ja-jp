@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5495d5aaa3591a5d090b9c0324fb75d2f17d9a4a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316770"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867982"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>WPF ツールボックス コントロールを作成します。
 WPF (Windows Presentation Framework) ツールボックス コントロール テンプレートは自動的に追加する WPF コントロールを作成することができます、**ツールボックス**拡張機能がインストールされている場合。 このトピックでは、テンプレートを使用して作成する方法、**ツールボックス**コントロールを他のユーザーに配布することができます。
@@ -97,4 +97,4 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 3. アップロード、 *.vsix*ファイルは、ネットワークまたは Web サイトにします。
 
-    ファイルをアップロードする場合、 [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkID=123847) Web サイト、他のユーザーが使用できる**ツール** > **拡張機能と更新**Visual Studio でのコントロールを検索するにはオンラインし、インストールします。
+    ファイルをアップロードする場合、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイト、他のユーザーが使用できる**ツール** > **拡張機能と更新**を検索する Visual Studio で、オンラインを制御し、それをインストールします。

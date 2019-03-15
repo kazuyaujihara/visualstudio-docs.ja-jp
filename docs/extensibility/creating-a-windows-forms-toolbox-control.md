@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687888"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873008"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Windows フォーム ツールボックス コントロールを作成します。
 Visual Studio 機能拡張ツール (VS SDK) に含まれている Windows フォーム ツールボックス コントロールの項目テンプレートが自動的に追加するコントロールを作成できます。、**ツールボックス**、拡張機能がインストールされている場合。 このトピックでは、他のユーザーに配布できる単純なカウンター コントロールを作成するテンプレートを使用する方法を示します。
@@ -206,7 +206,7 @@ Windows フォーム ツールボックス コントロール テンプレート
     カウンターをリセットする**0**します。
 
 ## <a name="next-steps"></a>次の手順
-作成する場合、**ツールボックス**コントロール、Visual Studio がという名前のファイルを作成する*ProjectName.vsix*プロジェクトの \bin\debug\ フォルダーにします。 アップロードすることで、制御を展開することができます、 *.vsix*ファイルは、ネットワークまたは Web サイトにします。 ユーザーが開いたとき、 *.vsix*ファイル、コントロールがインストールされ、Visual Studio に追加**ツールボックス**ユーザーのコンピューターにします。 または、アップロード、 *.vsix*ファイルを[Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847)ユーザーがで参照して検索できるように、**ツール** >  **拡張機能と更新**ダイアログ。
+作成する場合、**ツールボックス**コントロール、Visual Studio がという名前のファイルを作成する*ProjectName.vsix*プロジェクトの \bin\debug\ フォルダーにします。 アップロードすることで、制御を展開することができます、 *.vsix*ファイルは、ネットワークまたは Web サイトにします。 ユーザーが開いたとき、 *.vsix*ファイル、コントロールがインストールされ、Visual Studio に追加**ツールボックス**ユーザーのコンピューターにします。 または、アップロード、 *.vsix*ファイルを[Visual Studio Marketplace](https://marketplace.visualstudio.com/)ユーザーがで参照して検索できるように、**ツール** >  **拡張機能と更新**ダイアログ。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio の他の部分を拡張します。](../extensibility/extending-other-parts-of-visual-studio.md)

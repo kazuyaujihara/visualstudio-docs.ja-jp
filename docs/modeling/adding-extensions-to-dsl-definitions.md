@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4be7c084bbcd1a73affa3035f1ef116d958c9a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e9f39c45382fc55144f8200c3951fb4a229b7a43
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909624"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867372"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>DSL 定義に拡張機能を追加する
 
@@ -36,4 +36,4 @@ DSL の拡張機能は、次の機能を含めることができます。
 
 ## <a name="see-also"></a>関連項目
 
-- [関連するブログの投稿](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+- [関連するブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

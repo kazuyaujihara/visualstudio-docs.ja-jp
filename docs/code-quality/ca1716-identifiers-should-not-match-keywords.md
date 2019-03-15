@@ -1,6 +1,6 @@
 ---
 title: CA1716:識別子はキーワードと同一にすることはできません
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotMatchKeywords
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb483206ba13f89f0a23667039bf5f1a9d740b73
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 279bcf3aecc2a637a7a36c2041ed63a72017a800
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910196"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867733"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716:識別子はキーワードと同一にすることはできません
 
@@ -27,12 +27,14 @@ ms.locfileid: "55910196"
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|カテゴリ|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
 
-名前空間、型、または viritual またはインターフェイス メンバーの名前では、プログラミング言語で予約済みキーワードと一致します。
+名前空間、型、または仮想またはインターフェイス メンバーのプログラミング言語で予約済みキーワードに一致します。
+
+既定では、このルールのみが検索で外部から参照できる名前空間、型、およびメンバーが、これは[構成可能な](#configurability)します。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -41,12 +43,10 @@ ms.locfileid: "55910196"
 このルールは、次の言語のキーワードを確認します。
 
 - Visual Basic
-
 - C#
-
 - C++/CLI
 
-大文字と小文字が使用される[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]他の言語キーワード、および大文字小文字の比較を使用します。
+Visual Basic のキーワードの大文字と小文字が使用され、その他の言語に大文字小文字の比較が使用されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
@@ -54,4 +54,14 @@ ms.locfileid: "55910196"
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 
-いる識別子は、API のユーザーを混同しないでおよびライブラリが .NET Framework で使用可能なすべての言語で使用できると確信している場合は、この規則による警告を抑制できます。
+識別子はありません、API のユーザーが混乱することと、ライブラリは .NET で使用可能なすべての言語で使用できることを確信している場合は、この規則による警告を抑制できます。
+
+## <a name="configurability"></a>構成機能
+
+この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+
+```
+dotnet_code_quality.ca1716.api_surface = private, internal
+```
+
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (名前付け) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。

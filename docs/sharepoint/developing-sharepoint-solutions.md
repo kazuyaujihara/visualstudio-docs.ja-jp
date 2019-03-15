@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 820eee92ef81f8821a25c8e490592cd1092e9256
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6639a52eb71d7cd826a1882e6e79cf124f2045d6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618147"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870429"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint ソリューションを開発します。
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、SharePoint サイトおよびサイト要素を作成するための SharePoint プロジェクトの種類のテンプレートがいくつか用意されています。 使用可能なプロジェクトの種類の一覧は、次を参照してください。 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)します。 次に、SharePoint プロジェクトの要素およびプロパティについて説明します。
 
- SharePoint 2013 アドインと SharePoint アドインについては、「 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 」および「 [SharePoint アドインの作成](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」を参照してください。
+ SharePoint 2013 アドインと SharePoint アドインについては、「 [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) 」および「 [SharePoint アドインの作成](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」を参照してください。
 
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint プロジェクトの要素
  SharePoint プロジェクトのノードは、 *SharePoint アイテム*と呼ばれます。 また、SharePoint アイテムには、 *SharePoint アイテム ファイル*と呼ばれる 1 つ以上のサブ ファイル ( [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 構成ファイル、.aspx フォームなど) が含まれる場合があります。
