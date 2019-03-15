@@ -1,6 +1,6 @@
 ---
 title: CA1063:IDisposable を正しく実装します
-ms.date: 02/12/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e4bc426162919f4112ffdfcc0fbeeb0fefd2f09e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945756"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868315"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:IDisposable を正しく実装します
 
@@ -29,7 +29,7 @@ ms.locfileid: "55945756"
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
@@ -52,7 +52,9 @@ ms.locfileid: "55945756"
 
 これらのパターンのいずれかの違反が警告 CA1063 をトリガーします。
 
-すべての封印されていない型を宣言および実装して、<xref:System.IDisposable>インターフェイスは、独自プロテクト仮想 void dispose (bool) メソッドを提供する必要があります。 Dispose() Dipose(true) を呼び出す必要があり、ファイナライザーが dispose (false) を呼び出す必要があります。 封印されていない型宣言および実装を作成するかどうか、<xref:System.IDisposable>インターフェイス、dispose (bool) を定義し、それを呼び出す必要があります。 詳細については、次を参照してください。 [(.NET ガイド) のアンマネージ リソースをクリーンアップする](/dotnet/standard/garbage-collection/unmanaged)と[Dispose パターン](/dotnet/standard/design-guidelines/dispose-pattern)します。
+宣言および実装しているすべての封印されていない型、<xref:System.IDisposable>インターフェイスを提供する必要があります独自`protected virtual void Dispose(bool)`メソッド。 `Dispose()` 呼び出す必要があります`Dipose(true)`、ファイナライザーを呼び出す必要がありますと`Dispose(false)`します。 封印されていない型宣言および実装を作成するかどうか、<xref:System.IDisposable>インターフェイスが定義する必要があります`Dispose(bool)`呼び出すようにします。 詳細については、次を参照してください。 [(.NET ガイド) のアンマネージ リソースをクリーンアップする](/dotnet/standard/garbage-collection/unmanaged)と[Dispose パターン](/dotnet/standard/design-guidelines/dispose-pattern)します。
+
+既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -83,6 +85,16 @@ ms.locfileid: "55945756"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 
 この規則による警告は抑制しないでください。
+
+## <a name="configurability"></a>構成機能
+
+この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+
+```
+dotnet_code_quality.ca1063.api_surface = private, internal
+```
+
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
 
 ## <a name="pseudo-code-example"></a>擬似コードの例
 

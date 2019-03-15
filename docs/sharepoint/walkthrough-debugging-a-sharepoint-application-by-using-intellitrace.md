@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad0d12560b1da99beadf2e519d2e430e8d76a45f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6cf4cd222c511d1ae9071d07f0fab517e36eb30e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875369"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868260"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>チュートリアル: IntelliTrace を使用して SharePoint アプリケーションをデバッグします。
 
@@ -33,15 +33,15 @@ IntelliTrace を使用すると、SharePoint ソリューション簡単にデ�
 
  このチュートリアルでは、次の作業について説明します。
 
-- [フィーチャー レシーバーを作成します。](#BKMK_CreateReceiver)
+- [フィーチャー レシーバーを作成します。](#create-a-feature-receiver)
 
-- [フィーチャー レシーバーにコードを追加します。](#BKMK_AddCode)
+- [フィーチャー レシーバーにコードを追加します。](#add-code-to-the-feature-receiver)
 
-- [プロジェクトをテストします。](#BKMK_Test1)
+- [プロジェクトをテストします。](#test-the-project)
 
-- [Microsoft Monitoring Agent を使用して IntelliTrace データを収集します。](#BKMK_CollectDiagnosticData)
+- [Microsoft Monitoring Agent を使用して IntelliTrace データを収集します。](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [デバッグし、SharePoint ソリューションを修正](#BKMK_DebugSolution)
+- [デバッグし、SharePoint ソリューションを修正](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -89,7 +89,8 @@ IntelliTrace を使用すると、SharePoint ソリューション簡単にデ�
     private string webUrl = "/";
     ```
 
-2. `FeatureActivated` メソッドを次のコードで置き換えます。
+2. 
+  `FeatureActivated` メソッドを次のコードで置き換えます。
 
     ```vb
     Public Overrides Sub FeatureActivated(ByVal properties As SPFeatureReceiverProperties)
@@ -155,7 +156,8 @@ IntelliTrace を使用すると、SharePoint ソリューション簡単にデ�
     }
     ```
 
-3. `FeatureDeactivating` メソッドを次のコードで置き換えます。
+3. 
+  `FeatureDeactivating` メソッドを次のコードで置き換えます。
 
     ```vb
     Public Overrides Sub FeatureDeactivating(ByVal properties As SPFeatureReceiverProperties)

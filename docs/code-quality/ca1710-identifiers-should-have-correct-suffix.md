@@ -1,6 +1,6 @@
 ---
 title: CA1710:識別子は、正しいサフィックスを含んでいなければなりません
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3c602c249c7507d516e74c32f2d4db8447b645
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65ac417476752da832e5e9ebe693f6c83a5c1cfe
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944456"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868076"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710:識別子は、正しいサフィックスを含んでいなければなりません
 
@@ -27,12 +27,14 @@ ms.locfileid: "55944456"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
-|カテゴリ|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
 
 識別子には、正しいサフィックスはありません。
+
+既定では、このルールだけを確認、外部から参照できる識別子が、これは[構成可能な](#configurability)します。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -47,14 +49,14 @@ ms.locfileid: "55944456"
 |<xref:System.Attribute?displayProperty=fullName>|属性|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|例外|
-|<xref:System.Collections.ICollection?displayProperty=fullName>|コレクション|
+|<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Dictionary|
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|コレクション|
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Queue?displayProperty=fullName>|コレクションまたはキュー|
 |<xref:System.Collections.Stack?displayProperty=fullName>|コレクションまたはスタック|
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|コレクション|
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|
-|<xref:System.Data.DataSet?displayProperty=fullName>|データセット|
+|<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|コレクションまたは DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|ストリーム|
 |<xref:System.Security.IPermission?displayProperty=fullName>|アクセス許可|
@@ -90,6 +92,16 @@ A<xref:System.Data.DataSet>オブジェクトのコレクションから成る<x
 型が拡張される可能性がある場合や、さまざまな項目の任意のセットを保持する、汎用的なデータ構造の場合は、'Collection' サフィックスを使用する警告を抑制しても安全です。 ここでは、名前、実装、パフォーマンス、またはデータ構造体の他の特性に関する有益情報を提供する必要があります (たとえば、BinaryTree)。 型が、特定の種類 (たとえば、StringCollection) のコレクションを表す場合、サフィックスを使用して、型を列挙できることを示しているためこの規則による警告を抑制しないで、`foreach`ステートメント。
 
 他のサフィックスの場合は、この規則による警告を抑制しないでください。 サフィックスは、型名から明らかにする目的の使用を許可します。
+
+## <a name="configurability"></a>構成機能
+
+この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+
+```
+dotnet_code_quality.ca1710.api_surface = private, internal
+```
+
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (名前付け) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
 
 ## <a name="related-rules"></a>関連するルール
 

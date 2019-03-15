@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3a535f1b9051835f0a26ae62ca63cc30f289ddea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612921"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867875"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint プロジェクトとプロジェクト項目テンプレート
   以下のセクションでは、SharePoint プロジェクトとプロジェクト項目の使用可能なテンプレート、およびそれらの使用方法について説明します。
@@ -74,7 +74,7 @@ ms.locfileid: "56612921"
  **アプリケーション ページ (ファーム ソリューションのみ)** 項目では、設計することができます、 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] SharePoint サイトの web ページ。 アプリケーション ページは、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、「[方法 :アプリケーション ページを作成](../sharepoint/how-to-create-an-application-page.md)と[アプリケーション _layouts ページの種類](http://go.microsoft.com/fwlink/?LinkId=179434)します。
 
 ### <a name="business-data-connectivity-model-farm-solution-only"></a>ビジネス データ接続モデル (ファーム ソリューションのみ)
- A**ビジネス データ接続モデル (ファーム ソリューションのみ)** 項目により、ビジネス データの統合を SharePoint にします。 [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)]、Siebel、Service Advertising Protocol (SAP) などのバック エンドのサーバー アプリケーションからのデータを使用できます。 ビジネス データ接続モデル (ファーム ソリューションのみ) は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、「[方法 :BDC モデルを作成](../sharepoint/how-to-create-a-bdc-model.md)、[方法。ローカライズされた名前、プロパティ、およびアクセス許可を指定するリソース ファイルを使用して](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)、および[はの新機能。Business Connectivity Services](http://go.microsoft.com/fwlink/?LinkId=179411)します。
+ A**ビジネス データ接続モデル (ファーム ソリューションのみ)** 項目により、ビジネス データの統合を SharePoint にします。 [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)]、Siebel、Service Advertising Protocol (SAP) などのバック エンドのサーバー アプリケーションからのデータを使用できます。 ビジネス データ接続モデル (ファーム ソリューションのみ) は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、「[方法 :BDC モデルを作成](../sharepoint/how-to-create-a-bdc-model.md)、[方法。ローカライズされた名前、プロパティ、およびアクセス許可を指定するリソース ファイルを使用して](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)、および[はの新機能。Business Connectivity Services](/previous-versions/office/developer/sharepoint-2010/ee534979(v=office.14))します。
 
 ### <a name="content-type"></a>コンテンツ タイプ
  *コンテンツの種類*項目では、ドキュメント、お知らせ、タスクなど既存の (基本) コンテンツ タイプに基づいて、カスタム コンテンツ タイプを作成できます。 カスタム コンテンツ タイプでは、独自に定義したサイト列 (フィールド) に加えて、ベース コンテンツ タイプと同じ属性およびフィールドを使用できます。 たとえば、SharePoint に付属している基本の Contact コンテンツ タイプを基にしてカスタムの Contact コンテンツ タイプを作成できます。 コンテンツ タイプのカスタマイズでは、基本コンテンツ タイプの既存のサイト列を変更したり、別のサイト列を追加したりできます。
@@ -109,7 +109,7 @@ ms.locfileid: "56612921"
  *モジュール*(と混同しないように[!include[vbprvb](../sharepoint/includes/vbprvb-md.md)]モジュール) イメージやメモなど、SharePoint サーバーに配置したいファイルが含まれています。 モジュール プロジェクト項目が含まれています、**モジュール**ノード。 モジュールのノードには、2 つのプロジェクト項目テンプレートが含まれています: モジュールのマニフェストとして機能する、XML 定義ファイルと*sample.txt*ファイル、プレース ホルダー ファイル。 詳細については、次を参照してください。[ソリューション内のインクルード ファイルにモジュールを使用して](../sharepoint/using-modules-to-include-files-in-the-solution.md)と[モジュール](http://go.microsoft.com/fwlink/?LinkId=179425)します。
 
 ### <a name="sequential-workflow-farm-solution-only"></a>シーケンシャル ワークフロー (ファーム ソリューションのみ)
- A*シーケンシャル ワークフロー*一連の最後の手順を完了するまで、順番に実行されるビジネス ロジック ステップです。 シーケンシャル ワークフローは、リストやドキュメントなどの SharePoint アイテムが関係するプロセスを管理する目的で使用します。 サイト レベル (グローバル) のワークフローまたはリスト レベル (ローカル) のワークフローを作成できるほか、ワークフローを自動的に開始するか、手動で開始するかを選択することもできます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、次を参照してください。[作成 SharePoint ワークフロー ソリューション](../sharepoint/creating-sharepoint-workflow-solutions.md)、 [SharePoint Server 2010 のワークフロー](http://go.microsoft.com/fwlink/?LinkId=260555)、および[新機能。ワークフローの改善](http://go.microsoft.com/fwlink/?LinkId=179418)します。
+ A*シーケンシャル ワークフロー*一連の最後の手順を完了するまで、順番に実行されるビジネス ロジック ステップです。 シーケンシャル ワークフローは、リストやドキュメントなどの SharePoint アイテムが関係するプロセスを管理する目的で使用します。 サイト レベル (グローバル) のワークフローまたはリスト レベル (ローカル) のワークフローを作成できるほか、ワークフローを自動的に開始するか、手動で開始するかを選択することもできます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、次を参照してください。[作成 SharePoint ワークフロー ソリューション](../sharepoint/creating-sharepoint-workflow-solutions.md)、 [SharePoint Server 2010 のワークフロー](http://go.microsoft.com/fwlink/?LinkId=260555)、および[新機能。ワークフローの改善](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))します。
 
 ### <a name="silverlight-web-part"></a>Silverlight web パーツ
  *Silverlight web パーツ*プロジェクト項目を有効にする web パーツの作成を Silverlight アプリケーションを表示する SharePoint の。 このプロジェクト項目ソリューションに追加するときは、新しい Silverlight アプリケーションを追加するか既存の Silverlight アプリケーションを後で参照するかを選択できます。 詳細については、次を参照してください。[の SharePoint web パーツを作成](../sharepoint/creating-web-parts-for-sharepoint.md)と[チュートリアル。SharePoint の OData を表示する Silverlight web パーツを作成する](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)します。
@@ -129,7 +129,7 @@ ms.locfileid: "56612921"
   サイト定義の追加後は、コードおよびファイルを追加して機能を導入できます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、次を参照してください。 [for SharePoint のサイト定義を作成](../sharepoint/creating-site-definitions-for-sharepoint.md)と[サイト定義と構成](http://go.microsoft.com/fwlink/?LinkId=260554)します。
 
 ### <a name="state-machine-workflow-farm-solution-only"></a>ステート マシン ワークフロー (ファーム ソリューションのみ)
- A*ステート マシン ワークフロー*ビジネス ロジックの状態、遷移、およびアクションのセットです。 ステート マシン ワークフローに含まれる各ステップは、順番に実行されるのではなく、アクションおよび状態によってトリガーされます。 シーケンシャル ワークフローと同様に、ステート マシン ワークフローは、リストやドキュメントなどの SharePoint アイテムに関連付けられます。 サイト レベル (グローバル) のワークフローまたはリスト レベル (ローカル) のワークフローを作成できることも、シーケンシャル ワークフローと同じです。 ワークフローを自動的に開始するか手動で開始するかを選択することもできます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、次を参照してください。[作成 SharePoint ワークフロー ソリューション](../sharepoint/creating-sharepoint-workflow-solutions.md)、 [SharePoint Server 2010 のワークフロー](http://go.microsoft.com/fwlink/?LinkId=260555)、および[新機能。ワークフローの改善](http://go.microsoft.com/fwlink/?LinkId=179418)します。
+ A*ステート マシン ワークフロー*ビジネス ロジックの状態、遷移、およびアクションのセットです。 ステート マシン ワークフローに含まれる各ステップは、順番に実行されるのではなく、アクションおよび状態によってトリガーされます。 シーケンシャル ワークフローと同様に、ステート マシン ワークフローは、リストやドキュメントなどの SharePoint アイテムに関連付けられます。 サイト レベル (グローバル) のワークフローまたはリスト レベル (ローカル) のワークフローを作成できることも、シーケンシャル ワークフローと同じです。 ワークフローを自動的に開始するか手動で開始するかを選択することもできます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、次を参照してください。[作成 SharePoint ワークフロー ソリューション](../sharepoint/creating-sharepoint-workflow-solutions.md)、 [SharePoint Server 2010 のワークフロー](http://go.microsoft.com/fwlink/?LinkId=260555)、および[新機能。ワークフローの改善](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))します。
 
 ### <a name="user-control-farm-solution-only"></a>ユーザー コントロール (ファーム ソリューションのみ)
  A*ユーザー コントロール*、再利用可能なカスタム コントロールが他の ASP.NET コントロールや SharePoint コントロールを追加できます。 ユーザー コントロールは、SharePoint で実行されるアプリケーション ページと Web パーツに追加できます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、次を参照してください。 [Web パーツまたはアプリケーション ページの再利用可能なコントロールを作成する](http://go.microsoft.com/fwlink/?LinkId=226841)します。

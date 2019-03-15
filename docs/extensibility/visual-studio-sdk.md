@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be0d7246af3b43d76ee4531a426dab0af63e2aff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2fe7bbce4ac214d3b18b27f610094ee31ecc2a97
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711723"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867353"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK は Visual Studio の機能を拡張することや、Visual Studio に新しい機能を追加するのに役立ちます。 Visual Studio Marketplace では、あなたが作成した拡張機能を他のユーザーへ配布することができます。 Visual Studio を拡張する方法の一部を次に示します。
@@ -54,7 +54,7 @@ Visual Studio SDK は Visual Studio の機能を拡張することや、Visual S
  [イメージ サービスとカタログ](../extensibility/image-service-and-catalog.md)を活用して優れた画像の管理や、高DPIとテーマのサポートをします。
 
 ## <a name="find-and-install-existing-visual-studio-extensions"></a>既存の Visual Studio 拡張機能の検索とインストール
- **ツール**メニューの**拡張機能と更新**ダイアログでVisual Studio 拡張機能を見つけることができます。 詳細については、"[検索と使用の Visual Studio Extensions](../ide/finding-and-using-visual-studio-extensions.md)"を参照してください。 [Visual Studio marketplace](https://marketplace.visualstudio.com/)で拡張機能を検索することもできます。
+ **ツール**メニューの**拡張機能と更新**ダイアログでVisual Studio 拡張機能を見つけることができます。 詳細については、"[検索と使用の Visual Studio Extensions](../ide/finding-and-using-visual-studio-extensions.md)"を参照してください。 拡張機能を検索することも、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
 
 ## <a name="visual-studio-sdk-reference"></a>Visual Studio SDK リファレンス
  [Visual Studio SDK リファレンス](../extensibility/visual-studio-sdk-reference.md)でVisual Studio SDK の API リファレンスを検索できます。

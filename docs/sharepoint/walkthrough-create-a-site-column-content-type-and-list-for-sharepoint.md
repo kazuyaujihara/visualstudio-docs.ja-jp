@@ -19,27 +19,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d30567186cd1f96d0df9af9493c87cbea4edd0b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607383"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870400"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>チュートリアル: For SharePoint のサイト列、コンテンツの種類、および一覧を作成します。
   次の手順は、カスタムの SharePoint サイト列を作成する方法を示します: または*フィールド*— サイト内の列を使用するコンテンツの種類とします。 新しいコンテンツ タイプを使用するリストを作成する方法も示します。
 
  このチュートリアルでは、次のタスクについて説明します。
 
-- [カスタムのサイト列を作成する](#BKMK_CreatingCustSiteCols)します。
+- [カスタムのサイト列を作成する](#create-custom-site-columns)します。
 
-- [カスタム コンテンツ タイプを作成する](#BKMK_CreateCustContType)します。
+- [カスタム コンテンツ タイプを作成](#create-a-custom-content-type)です。
 
-- [リストを作成する](#BKMK_CreateList)します。
+- [リストを作成する](#create-a-list)します。
 
-- [リストを作成する](#BKMK_CreateList)します。
-
-- [アプリケーションのテスト](#BKMK_TestApp)します。
+- [アプリケーションをテストする](#test-the-application)します。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

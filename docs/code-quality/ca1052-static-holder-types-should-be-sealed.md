@@ -1,6 +1,6 @@
 ---
 title: CA1052:スタティック ホルダー型はシールドされていなければなりません
-ms.date: 11/09/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 36bd459f2a9f7300328aadd3509530f4802e71cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46a8c9a4e22c7a54a4b2b68f95bb2b81f3a0888e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922453"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870387"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052:スタティック ホルダー型はシールドされていなければなりません
 
@@ -31,12 +31,14 @@ ms.locfileid: "55922453"
 |-|-|
 |TypeName|StaticHolderTypesShouldBeSealed|
 |CheckId|CA1052|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
 
-Public または protected で、非抽象型が静的メンバーのみが含まれていますとで宣言されていない、[シール](/dotnet/csharp/language-reference/keywords/sealed)([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) 修飾子。
+非抽象型が静的メンバーのみが含まれていますとで宣言されていない、[シール](/dotnet/csharp/language-reference/keywords/sealed)([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) 修飾子。
+
+既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -50,6 +52,16 @@ Ca 1052 のルールでは、型が派生型でオーバーライド可能な機
 
 型が継承するように設計する場合にのみ、このルールから警告を抑制します。 ない場合、`sealed`または`NotInheritable`修飾子が型が基本データ型として便利なことを示します。
 
+## <a name="configurability"></a>構成機能
+
+この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+
+```
+dotnet_code_quality.ca1052.api_surface = private, internal
+```
+
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+
 ## <a name="example-of-a-violation"></a>違反の例
 
 次の例では、規則に違反する型を示します。
@@ -60,10 +72,10 @@ Ca 1052 のルールでは、型が派生型でオーバーライド可能な機
 
 ## <a name="fix-with-the-static-modifier"></a>Static 修飾子で修正します。
 
-次の例を持つ型をマークすることでこの規則違反を修正する方法を示しています、`static`修飾子C#します。
+次の例を持つ型をマークすることでこの規則違反を修正する方法を示しています、`static`修飾子C#:
 
 [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
 
 ## <a name="related-rules"></a>関連するルール
 
-[CA 1053:スタティック ホルダー型には、コンス トラクターはありません。](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+- [CA 1053:スタティック ホルダー型には、コンス トラクターはありません。](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

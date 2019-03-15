@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 617ca350f318a8617b28d4bface3d09106b3b591
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614312"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868173"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>方法: Visual Studio での Office プロジェクトを作成します。
   使用することができます[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]VSTO アドインとドキュメント レベルの作成に Microsoft Office アプリケーション用のカスタマイズ。 これらの種類のプロジェクトの詳細については、次を参照してください。 [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)します。
@@ -85,17 +85,18 @@ ms.locfileid: "56614312"
 
 7. **[OK]** を選択します。
 
-    > [!NOTE]
-    >  アドイン プロジェクトを作成すると、必ず保存されます。 アドイン プロジェクトを一時プロジェクトとして作成することはできません。 一時プロジェクトの詳細については、次を参照してください。[一時プロジェクト](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)します。
+   ::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > アドイン プロジェクトを作成すると、必ず保存されます。 アドイン プロジェクトを一時プロジェクトとして作成することはできません。 一時プロジェクトの詳細については、次を参照してください。[一時プロジェクト](../ide/creating-solutions-and-projects.md#create-a-temporary-project)します。
+
+   ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>ドキュメント レベルのカスタマイズ プロジェクトを作成するには
 
 1. **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** の順に選択します。 Visual Basic 開発設定を使用するかどうか、IDE が設定されます、**ファイル**] メニューの [選択**新規** > **プロジェクト**します。
 
     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
-
-   > [!NOTE]
-   >  既定では、Office プロジェクトは [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] を対象とします。  詳細については、次を参照してください。 [.NET Framework クライアント プロファイル](/dotnet/framework/deployment/client-profile)します。
 
 2. 展開テンプレート ペインで、使用する言語のノードの下で**Office/sharepoint**します。
 
@@ -104,12 +105,12 @@ ms.locfileid: "56614312"
 4. プロジェクト テンプレートの一覧で、ドキュメント レベルのプロジェクト テンプレートを選択します。 使用できるドキュメント レベルのプロジェクト テンプレートの一覧は、次を参照してください。 [Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)します。
 
    > [!NOTE]
-   >  選択してもプロジェクト テンプレートが表示されない場合、 **Office アドイン**ノード、ことを確認します **.NET Framework 4**または後で、ダイアログ ボックスの上部にあるコンボ ボックスで選択されています。 Office プロジェクト テンプレートは、.NET Framework の両方のバージョンで表示されます。
+   > 選択してもプロジェクト テンプレートが表示されない場合、 **Office アドイン**ノード、ことを確認します **.NET Framework 4**または後で選択されています。
 
 5. **名前**ボックスに、プロジェクトの名前を入力します。 既定では、この名前がドキュメントにも使用されます。 IDE が Visual C# 開発設定または一般的な開発設定を使用するように設定されている場合は、場所とソリューション名も入力します。
 
    > [!NOTE]
-   >  プロジェクトの場所へのパス、またはプロジェクト名には、サロゲート文字を使用できません。 また、オフラインで使用するソリューションを配置する場合は、プロジェクト名に HTTP プロトコルの仕様に準拠した文字を使用する必要があります。
+   > プロジェクトの場所へのパス、またはプロジェクト名には、サロゲート文字を使用できません。 また、オフラインで使用するソリューションを配置する場合は、プロジェクト名に HTTP プロトコルの仕様に準拠した文字を使用する必要があります。
 
 6. **[OK]** を選択します。
 

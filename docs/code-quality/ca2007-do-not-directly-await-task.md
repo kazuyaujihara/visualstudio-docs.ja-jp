@@ -1,5 +1,5 @@
 ---
-title: CA2007:タスクを直接待機しません
+title: CA2007:タスクを直接待機しないでください
 ms.date: 03/08/2019
 ms.topic: reference
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 8e94b67d1924e2144f658cd6bcd5989751efdb85
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699681"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869290"
 ---
-# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007:タスクを直接待機しません
+# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007:タスクを直接待機しないでください
 
 |||
 |-|-|
@@ -71,6 +71,26 @@ public async Task Execute()
     await task.ConfigureAwait(false);
 }
 ```
+
+## <a name="configurability"></a>構成機能
+
+このルールから値を返さない非同期メソッドを除外するかどうかを構成することができます。 この種のメソッドを除外するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA2007.exclude_async_void_methods = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.skip_async_void_methods = true
+```
+
+この規則を適用するアセンブリの種類の出力を構成することもできます。 たとえば、のみコードにこの規則を適用するコンソール アプリケーションまたはダイナミック リンク ライブラリ (つまり、UI アプリケーションではなく、生成すると、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+
+```
+dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
+```
+
+詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
 
 ## <a name="see-also"></a>関連項目
 

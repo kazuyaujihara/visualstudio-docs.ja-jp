@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df931cf5cb9034a868f412a344e26a58e6006455
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942779"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867449"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - ドメイン固有言語
 
@@ -40,7 +40,7 @@ MSDK では、ドメイン固有言語 (DSL) の形式でモデルを迅速に�
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-[関連するブログの投稿](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+[関連するブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
 
 高度な技法とトラブルシューティングに関するガイダンスについては、次を参照してください。 [Visual Studio DSL & Modeling Tools 機能拡張フォーラム](http://go.microsoft.com/fwlink/?LinkID=186074)します。
 
@@ -69,10 +69,10 @@ MSDK では、ドメイン固有言語 (DSL) の形式でモデルを迅速に�
 
  [WPF に基づくドメイン固有言語の作成](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [方法: ドメイン固有言語デザイナーを拡張します。](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [方法: ドメイン固有言語デザイナーを拡張する](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Visualization and Modeling SDK に対してサポートされている Visual Studio のエディション](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [方法: ドメイン固有言語を新しいバージョンに移行します。](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [方法: ドメイン固有言語を新バージョンに移行する](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Modeling SDK for Visual Studio の API リファレンス](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 946dcfecb43aa5a0390f752b5e40cb5869bb1b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1194dba5069913d01a6e4858801ea2890db94224
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635203"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871605"
 ---
 # <a name="author-a-windows-installer-package"></a>Windows インストーラー パッケージを作成します。
 データ ドライブの Windows インストーラーのモデル。 にファイルをコピーし、レジストリ エントリを書き込む手続き型のスクリプトを作成するのではなくなどを作成するデータ ファイルおよびレジストリ データが含まれているデータベース テーブルの行と列。
@@ -47,7 +47,7 @@ VSPackage をインストールするには、Windows インストーラー パ�
 
    Windows インストーラー XML (WiX) ツールセットは、XML ソース ファイルからの Windows インストーラー パッケージをビルドします。 WiX ツールセットは、Microsoft のオープン ソース プロジェクトです。 ソース コードおよび実行可能ファイルをダウンロードする[Wix ツールセット](http://sourceforge.net/projects/wix)します。
 
-   商用製品に統合する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を使用して、[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]を参照してください[ http://visualstudiogallery.com](http://visualstudiogallery.com/)します。
+   商用製品に統合する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を使用して、[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]を参照してください[Visual Studio Marketplace](https://marketplace.visualstudio.com/)します。
 
 ## <a name="see-also"></a>関連項目
 - [Windows インストーラーによる Vspackage をインストールします。](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

@@ -12,17 +12,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c29c74388ed5766827ef04b378aa2d51167662d3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599838"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869916"
 ---
 # <a name="create-sharepoint-solutions"></a>SharePoint ソリューションを作成します。
   SharePoint Designer の代わりに Visual Studio で SharePoint アプリケーションを作成できます。 Visual Studio には、高度なデバッグ ツール、IntelliSense、ステートメント入力候補、プロジェクト テンプレートなど、迅速な SharePoint 開発を促進する機能が用意されています。 さらに、Visual Studio では、高度な .NET Framework ベースのツールと言語も活用されています。 SharePoint プロジェクトは Visual Basic または Visual C# を使用して開発できます。また、SharePoint 用アプリのプロジェクトは JavaScript を使用して開発できます。
 
- SharePoint 2013 アドインと SharePoint アドインについては、「 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 」および「 [SharePoint アプリの作成](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」を参照してください。
+ SharePoint 2013 アドインと SharePoint アドインについては、「 [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) 」および「 [SharePoint アプリの作成](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」を参照してください。
 
 > [!NOTE]
 >  新しい [SharePoint アドイン モデル](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) を使用してユーザーにとっての SharePoint の操作感を拡張する方法をご覧ください。 これらのアドインのフットプリントは、SharePoint ソリューションと比較して非常に小さく、その作成には、HTML5、JavaScript、CSS3、XML など、ほぼすべての Web プログラミング テクノロジを使用できます。

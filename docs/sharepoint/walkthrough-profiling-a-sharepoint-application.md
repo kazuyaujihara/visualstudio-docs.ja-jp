@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f22630a823e592e0cdc2128dfb3ab38e1b177d72
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841730"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867707"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>チュートリアル: SharePoint アプリケーションをプロファイリングします。
   このチュートリアルでは、Visual Studio のプロファイル ツールを使用し、SharePoint アプリケーションのパフォーマンスを最適化する方法について説明します。 アプリケーション例は SharePoint フィーチャー イベント レシーバーで、これにはフィーチャー イベント レシーバーのパフォーマンスを低下させるアイドル ループが含まれています。 Visual Studio プロファイラーを使用するとも呼ばれるプロジェクトの最も負荷の高い (実行する最も遅い) 部分を排除を見つけて、*ホット パス*します。
 
  このチュートリアルでは、次のタスクについて説明します。
 
-- [機能とフィーチャー イベント レシーバーを追加する](#BKMK_AddFtrandFtrEvntReceiver)します。
+- [Addg 機能とフィーチャー イベント レシーバー](#add-a-feature-and-feature-event-receiver)します。
 
-- [SharePoint アプリケーションをデプロイして構成する](#BKMK_ConfigSharePointApp)します。
+- [SharePoint アプリケーションのデプロイを構成し、](#configure-and-deploy-the-sharepoint-application)します。
 
-- [SharePoint アプリケーションを実行している](#BKMK_RunSPApp)します。
+- [SharePoint アプリケーションを実行](#run-the-sharepoint-application)します。
 
-- [表示とプロファイルの結果を解釈](#BKMK_ViewResults)します。
+- [表示し、プロファイルの結果を解釈](#view-and-interpret-the-profile-results)します。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

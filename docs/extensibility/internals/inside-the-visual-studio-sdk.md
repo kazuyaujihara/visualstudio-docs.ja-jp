@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796674"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870274"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK の内部
 ここでは、Visual Studio のアーキテクチャ、コンポーネント、サービス、スキーマ、ユーティリティ、およびなどを含む、Visual Studio 拡張機能に関する詳細な情報を示します。
@@ -90,7 +90,7 @@ ms.locfileid: "56796674"
  詳細については、次を参照してください。[プロジェクト](../../extensibility/internals/projects.md)と[ソリューション](../../extensibility/internals/solutions.md)します。
 
 ## <a name="project-and-item-templates"></a>プロジェクト テンプレートと項目テンプレート
- Visual Studio には、定義済みのプロジェクト テンプレートとプロジェクト項目テンプレートが含まれています。 また、独自のテンプレートを作成または、コミュニティからのテンプレートを取得し、Visual Studio に統合できます。 [MSDN コード ギャラリー](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio)テンプレートおよび拡張機能にアクセスする場所です。
+ Visual Studio には、定義済みのプロジェクト テンプレートとプロジェクト項目テンプレートが含まれています。 また、独自のテンプレートを作成または、コミュニティからのテンプレートを取得し、Visual Studio に統合できます。 [MSDN コード ギャラリー](https://code.msdn.microsoft.com/site/search?query=visual%20studio)テンプレートおよび拡張機能にアクセスする場所です。
 
  テンプレートには、プロジェクトの構造および特定の種類のアプリケーション、コントロール、ライブラリ、またはクラスを構築するために必要な基本的なファイルが含まれます。 テンプレートのいずれかのようなソフトウェアを開発する場合は、テンプレートに基づいているプロジェクトを作成し、そのプロジェクト内のファイルを変更します。
 
