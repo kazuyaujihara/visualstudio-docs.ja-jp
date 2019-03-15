@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: プロファイルを使用したアプリのパフォーマンスの測定 | Microsoft Docs
-description: Visual Studio 2017 を使用して、目的の言語で、アプリケーション、サービス、ツールのパフォーマンスをプロファイリングする方法について説明します。
+description: Visual Studio を使用して、目的の言語で、アプリケーション、サービス、ツールのパフォーマンスをプロファイリングする方法について説明します。
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
