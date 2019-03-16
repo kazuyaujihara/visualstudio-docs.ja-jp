@@ -10,26 +10,26 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4da90db115e001f7f06ec2e7dd33d64ef20048
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bb3daab1196e151a4fea57ae120b2ec280e2e23a
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927283"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58070218"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>方法: XML リテラルに XML スキーマ デザイナーを使用します。
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>方法: XML リテラルに XML スキーマ デザイナーを使用する
 
 このトピックでは、Visual Basic プロジェクトの XML リテラルに関連付けられたスキーマを表示する方法について説明します。
 
-## <a name="to-create-a-new-visual-basic-console-application-project"></a>新しい Visual Basic コンソール アプリケーションのプロジェクトを作成するには
+## <a name="create-a-new-visual-basic-project"></a>新しい Visual Basic プロジェクトを作成します。
 
-1.  Visual Studio を起動します。
+1.  Visual Studio を開きます。
 
-2.  **ファイル**メニューの **新規**、し、**プロジェクト**します。 **[新しいプロジェクト]** ダイアログ ボックスが表示されます。 **プロジェクトの種類**を選択します**他の言語、** 選び**Visual Basic**します。 **テンプレート**、コンソール アプリケーションを選択します。 入力`XMLLiterals`で、**名前**フィールドとプロジェクトの場所、**場所**フィールド。 **[OK]** をクリックします。
+2. 新しい Visual Basic 作成**コンソール アプリ**という名前のプロジェクト**XMLLiterals**します。
 
-     新しいプロジェクトが作成されます。 XMLLiterals プロジェクトには、1 つの Visual Basic ソース ファイルが含まれています。 *Module1.vb*します。
+     新しいプロジェクトには、1 つの Visual Basic ソース ファイルが含まれています。 *Module1.vb*します。
 
-## <a name="to-add-an-existing-xsd-file-to-the-project"></a>既存の XSD ファイルをプロジェクトに追加するには
+## <a name="add-an-existing-xsd-file"></a>既存の XSD ファイルを追加します。
 
 1.  メモ帳で新しいテキスト ファイルを開きます。 XML スキーマのサンプル コードをコピー[購買発注書のスキーマ](../xml-tools/sample-xsd-file-simple-schema.md)ファイルに貼り付けます。
 
@@ -39,7 +39,9 @@ ms.locfileid: "55927283"
 
      XMLLiterals プロジェクトには、2 つのファイルが含まれています。*Module1.vb*と*PurchaseOrderSchema.xsd*します。
 
-## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>プロジェクトに含まれる XSD ファイルに基づいて XML リテラルの Visual Basic コードを追加するには
+## <a name="add-code"></a>コードを追加します。
+
+Xml リテラルには、Visual Basic コードを追加するには、プロジェクトに含まれる XSD ファイルに基づいています。
 
 1. コードに置き換えます*Module1.vb*を次のコード ファイル。
 
@@ -72,4 +74,4 @@ ms.locfileid: "55927283"
 
 2. XML リテラルまたは XML 名前空間インポートでの任意の XML ノードを右クリックして**スキーマ エクスプ ローラーで表示する**します。
 
-    **XML スキーマ エクスプ ローラー**が XML スキーマのセットに関連付けられた XML リテラルのある Visual Basic ファイルと並んで表示されます。
+   **XML スキーマ エクスプ ローラー**が XML スキーマのセットに関連付けられた XML リテラルのある Visual Basic ファイルと並んで表示されます。
