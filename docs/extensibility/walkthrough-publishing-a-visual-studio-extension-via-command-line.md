@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aebd1cbd46eeaf80d165140dc58c5e81a0e02b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695376"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983378"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>チュートリアル: コマンドラインを使用して Visual Studio 拡張機能を公開
 
@@ -290,7 +290,7 @@ This is test extension.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>お使いのコンピューターから、拡張機能を削除するには
 
-1. Visual Studio での**ツール** メニューのをクリックして**拡張機能と更新しています.**.
+1. Visual Studio での**ツール** メニューのをクリックして**拡張機能と更新**します。
 
 2. "MyVsixExtension"を選択し、クリックして**アンインストール**します。 拡張機能は、アンインストールにスケジューリングされます。
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: a8b13e9f5ed76b61279212bfdedf33b25f694221
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270577"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983456"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>FxCop アナライザーを Visual Studio をインストールします。
 
@@ -54,12 +54,27 @@ Microsoft と呼ばれるアナライザーのセットを作成する[Microsoft
 
 Visual Studio 2017 バージョン 15.5 以降にインストールすることができます、 [Microsoft コード分析 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)拡張機能をすべてのマネージ プロジェクトの FxCop アナライザーが含まれています。
 
+::: moniker range="vs-2017"
+
 1. Visual Studio で、次のように選択します。**ツール** > **拡張機能と更新**します。
 
    **[拡張機能と更新プログラム]** ダイアログ ボックスが表示されます。
 
    > [!NOTE]
    > またはから直接、拡張機能をダウンロード[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio で、次のように選択します。**拡張** > **拡張機能の管理**します。
+
+   **拡張機能の管理** ダイアログ ボックスが表示されます。
+
+   > [!NOTE]
+   > またはから直接、拡張機能をダウンロード[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)します。
+
+::: moniker-end
 
 1. 展開**オンライン**選択し、左側のウィンドウで**Visual Studio Marketplace**します。
 
@@ -83,7 +98,17 @@ Visual Studio 2017 バージョン 15.5 以降にインストールすること�
 
 1. Visual Studio を再度開きます。
 
+::: moniker range="vs-2017"
+
 拡張機能がインストール済みになっているかどうかを確認したいかどうか**ツール** > **拡張機能と更新**します。 **拡張機能と更新**ダイアログ ボックスで、**インストール済み**左側のカテゴリ、名前で、拡張機能を検索します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+拡張機能がインストール済みになっているかどうかを確認したいかどうか**拡張** > **拡張機能の管理**します。 **拡張機能の管理**ダイアログ ボックスで、**インストール済み**左側のカテゴリ、名前で、拡張機能を検索します。
+
+::: moniker-end
 
 ## <a name="see-also"></a>関連項目
 
