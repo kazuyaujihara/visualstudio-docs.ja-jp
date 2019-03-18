@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Visual c# プロジェクトでコードを VBA から呼び出す'
+title: 'チュートリアル: Visual C# プロジェクトでコードを VBA から呼び出す'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -26,7 +26,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/21/2019
 ms.locfileid: "56644719"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>チュートリアル: Visual c# プロジェクトでコードを VBA から呼び出す
+# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>チュートリアル: Visual C# プロジェクトでコードを VBA から呼び出す
   このチュートリアルでは、ブック内の Visual Basic for Applications (VBA) コードから Microsoft Office Excel 用のドキュメント レベルのカスタマイズ内のメソッドを呼び出す方法を示します。 このプロシージャには次の 3 つの基本的な手順が含まれます。 `Sheet1` ホスト項目クラスにメソッドを追加する、ブックの VBA コードにメソッドを公開する、および、ブック内の VBA コードからメソッドを呼び出す、の 3 つです。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
