@@ -73,13 +73,13 @@ ms.locfileid: "56622879"
 
    - *FirstWorkbookCustomization*.xlsx は、プロジェクト内の Excel ブックを表します。 すべてのワークシートとグラフが含まれます。
 
-   - Sheet1 (*.vb* Visual basic のファイルまたは *.cs* Visual c# ファイル) のブック内の最初のワークシートのデザイン画面とコードを提供します。 詳細については、次を参照してください。 [Worksheet ホスト項目](../vsto/worksheet-host-item.md)します。
+   - Sheet1 (*.vb* Visual basic のファイルまたは *.cs* Visual C# ファイル) のブック内の最初のワークシートのデザイン画面とコードを提供します。 詳細については、次を参照してください。 [Worksheet ホスト項目](../vsto/worksheet-host-item.md)します。
 
-   - Sheet2 (*.vb* Visual basic のファイルまたは *.cs* Visual c# ファイル)-ブックの 2 番目のワークシートのデザイン画面とコードを提供します。
+   - Sheet2 (*.vb* Visual basic のファイルまたは *.cs* Visual C# ファイル)-ブックの 2 番目のワークシートのデザイン画面とコードを提供します。
 
-   - Sheet3 (*.vb* Visual basic のファイルまたは *.cs* Visual c# ファイル) の 3 番目のワークシートをブック内のデザイン画面とコードを提供します。
+   - Sheet3 (*.vb* Visual basic のファイルまたは *.cs* Visual C# ファイル) の 3 番目のワークシートをブック内のデザイン画面とコードを提供します。
 
-   - ThisWorkbook (*.vb* Visual basic のファイルまたは *.cs* Visual c# ファイル) のデザイン画面とブック レベルのカスタマイズのコードが含まれています。 詳細については、次を参照してください。 [Workbook ホスト項目](../vsto/workbook-host-item.md)します。
+   - ThisWorkbook (*.vb* Visual basic のファイルまたは *.cs* Visual C# ファイル) のデザイン画面とブック レベルのカスタマイズのコードが含まれています。 詳細については、次を参照してください。 [Workbook ホスト項目](../vsto/workbook-host-item.md)します。
 
      デザイナーで、Sheet1 コード ファイルが自動的に開かれます。
 
