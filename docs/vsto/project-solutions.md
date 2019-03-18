@@ -44,7 +44,7 @@ ms.locfileid: "56642197"
 ## <a name="use-the-project-object-model-documentation"></a>プロジェクト オブジェクト モデル ドキュメントを使用します。
  Project オブジェクト モデルの詳細については、Project の VBA オブジェクト モデルのリファレンスを参照してください。 VBA オブジェクト モデルのリファレンスでは、Visual Basic for Applications (VBA) コードに公開される Project オブジェクト モデルについて説明しています。 詳細については、次を参照してください。 [Project 2010 オブジェクト モデル リファレンス](http://go.microsoft.com/fwlink/?LinkId=199771)します。
 
- VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Project プライマリ相互運用機能アセンブリ (PIA) の型とメンバーに対応します。 たとえば、VBA オブジェクト モデルのリファレンスで、暦オブジェクトの対応する、 `Microsoft.Office.Interop.MSProject.Calendar` Project PIA の型。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例が用意されています、ビジュアルを使用して作成した Project VSTO アドイン プロジェクトで使用する場合を Visual Basic または Visual c# には、このリファレンス内の VBA コードを変換する必要があります。Studio。
+ VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Project プライマリ相互運用機能アセンブリ (PIA) の型とメンバーに対応します。 たとえば、VBA オブジェクト モデルのリファレンスで、暦オブジェクトの対応する、 `Microsoft.Office.Interop.MSProject.Calendar` Project PIA の型。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例が用意されています、ビジュアルを使用して作成した Project VSTO アドイン プロジェクトで使用する場合を Visual Basic または Visual C# には、このリファレンス内の VBA コードを変換する必要があります。Studio。
 
 > [!NOTE]
 >  現在のところ、Project プライマリ相互運用機能アセンブリに関するリファレンス ドキュメントは提供されていません。
