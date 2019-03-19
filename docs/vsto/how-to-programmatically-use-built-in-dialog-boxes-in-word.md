@@ -36,7 +36,7 @@ ms.locfileid: "56644940"
 ### <a name="access-dialog-box-members-that-are-available-through-late-binding"></a>遅延バインディングで使用できるダイアログ ボックスのメンバーをへのアクセス
  いくつかのプロパティと Word のダイアログ ボックスのメソッドは、遅延バインディングを介してのみ使用可能なは。 Visual basic プロジェクト where **Option Strict**に、リフレクションを使用して、これらのメンバーにアクセスする必要があります。 詳細については、次を参照してください。 [Office ソリューションの遅延バインディング](../vsto/late-binding-in-office-solutions.md)します。
 
- 次のコード例は、使用する方法を示します、**名前**のプロパティ、**ファイルを開く** ダイアログ ボックスで、Visual Basic プロジェクト where **Option Strict**オフまたは Visual c# では、プロジェクトの対象とする、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]します。 この例を使用する実行から、`ThisDocument`または`ThisAddIn`プロジェクト内のクラス。
+ 次のコード例は、使用する方法を示します、**名前**のプロパティ、**ファイルを開く** ダイアログ ボックスで、Visual Basic プロジェクト where **Option Strict**オフまたは Visual C# では、プロジェクトの対象とする、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]します。 この例を使用する実行から、`ThisDocument`または`ThisAddIn`プロジェクト内のクラス。
 
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
  [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]
