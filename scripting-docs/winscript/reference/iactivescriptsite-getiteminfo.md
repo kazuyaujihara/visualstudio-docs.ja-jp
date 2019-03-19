@@ -2,7 +2,6 @@
 title: Iactivescriptsite::getiteminfo |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4dc6515d64406870ca10f003d7cea515c49b7d8
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 997245f8e4fd43ac2162587f07e4c8711af7caac
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095889"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58148686"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
 により、スクリプト エンジンを使用して追加の項目に関する情報を取得する、 [iactivescript::addnameditem](../../winscript/reference/iactivescript-addnameditem.md)メソッド。  
@@ -48,7 +47,7 @@ HRESULT GetItemInfo(
   
 |[値]|説明|  
 |-----------|-------------|  
-|される SCRIPTINFO_IUNKNOWN|返します、`IUnknown`この項目のインターフェイス。|  
+|SCRIPTINFO_IUNKNOWN|返します、`IUnknown`この項目のインターフェイス。|  
 |SCRIPTINFO_ITYPEINFO|返します、`ITypeInfo`この項目のインターフェイス。|  
   
  `ppunkItem`  
