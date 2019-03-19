@@ -46,7 +46,7 @@ ms.locfileid: "56596478"
 
 2.  次のレジストリ キーを探します。
 
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\します。NETFramework\Security\TrustManager\PromptingLevel**
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      キーが存在しない場合は、それを作成します。
 
