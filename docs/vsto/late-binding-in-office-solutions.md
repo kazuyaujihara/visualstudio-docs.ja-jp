@@ -27,7 +27,7 @@ ms.locfileid: "56640689"
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Visual Basic プロジェクト where **Option Strict**オフし、Visual c# プロジェクトを対象とするには、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]これらの遅延バインディング機能を利用している型を直接操作できます。
+ Visual Basic プロジェクト where **Option Strict**オフし、Visual C# プロジェクトを対象とするには、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]これらの遅延バインディング機能を利用している型を直接操作できます。
 
 ## <a name="implicit-and-explicit-casting-of-object-return-values"></a>戻り値のオブジェクトの明示的および暗黙的なキャスト
  多くのメソッドとプロパティには、Microsoft Office プライマリ相互運用機能アセンブリ (Pia) を返す<xref:System.Object>値は、いくつかの異なる種類のオブジェクトを返せるためです。 など、<xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A>プロパティが返す、<xref:System.Object>その戻り値ができるので、<xref:Microsoft.Office.Interop.Excel.Worksheet>または<xref:Microsoft.Office.Interop.Excel.Chart>によってアクティブなシートは、オブジェクト。
@@ -43,16 +43,16 @@ ms.locfileid: "56640689"
 
  [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]
 
- 次のコード例は、Visual Basic プロジェクトでオブジェクトを特定の型を暗黙的にキャストする方法を示します、 **Option Strict**を対象とする Visual c# プロジェクトでは、オフ、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]します。 これらの種類のプロジェクトで、<xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A>プロパティに暗黙的にキャスト、<xref:Microsoft.Office.Interop.Excel.Range>します。 この例では、という名前のワークシート クラスを使用して Excel のドキュメント レベルのプロジェクトが必要があります`Sheet1`します。
+ 次のコード例は、Visual Basic プロジェクトでオブジェクトを特定の型を暗黙的にキャストする方法を示します、 **Option Strict**を対象とする Visual C# プロジェクトでは、オフ、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]します。 これらの種類のプロジェクトで、<xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A>プロパティに暗黙的にキャスト、<xref:Microsoft.Office.Interop.Excel.Range>します。 この例では、という名前のワークシート クラスを使用して Excel のドキュメント レベルのプロジェクトが必要があります`Sheet1`します。
 
  [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
  [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]
 
 ## <a name="access-members-that-are-available-only-through-late-binding"></a>遅延バインディングでのみ利用可能なメンバーへのアクセス
- いくつかのプロパティおよびメソッドに Office Pia は、遅延バインディングを介してのみ使用します。 Visual Basic でプロジェクトを where **Option Strict**がオフまたは Visual c# プロジェクトを対象とする、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]、遅延バインディング メンバーにアクセスするこれらの言語で遅延バインド機能を使用することができます。 Visual basic プロジェクト where **Option Strict**に、リフレクションを使用して、これらのメンバーにアクセスする必要があります。
+ いくつかのプロパティおよびメソッドに Office Pia は、遅延バインディングを介してのみ使用します。 Visual Basic でプロジェクトを where **Option Strict**がオフまたは Visual C# プロジェクトを対象とする、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]、遅延バインディング メンバーにアクセスするこれらの言語で遅延バインド機能を使用することができます。 Visual basic プロジェクト where **Option Strict**に、リフレクションを使用して、これらのメンバーにアクセスする必要があります。
 
 ### <a name="examples"></a>使用例
- 次のコード例は、Visual Basic プロジェクトで遅延バインディング メンバーにアクセスする方法を示します、 **Option Strict**を対象とする Visual c# プロジェクトでは、オフ、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]します。 この例は、遅延バインディング**名前**のプロパティ、**ファイルを開く**Word のダイアログ ボックス。 この例を使用する実行から、`ThisDocument`または`ThisAddIn`Word プロジェクトでクラス。
+ 次のコード例は、Visual Basic プロジェクトで遅延バインディング メンバーにアクセスする方法を示します、 **Option Strict**を対象とする Visual C# プロジェクトでは、オフ、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]します。 この例は、遅延バインディング**名前**のプロパティ、**ファイルを開く**Word のダイアログ ボックス。 この例を使用する実行から、`ThisDocument`または`ThisAddIn`Word プロジェクトでクラス。
 
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
  [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]
