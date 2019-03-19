@@ -29,7 +29,7 @@ ms.locfileid: "56633677"
 ## <a name="examples"></a>使用例
  次のコード例を使用する方法を示します、**ページ セットアップ**ユーザー入力なしで複数のページ設定プロパティを設定する非表示モードでのダイアログ ボックス。 例を使用して、<xref:Microsoft.Office.Interop.Word.Dialog>カスタム ページのサイズを構成するオブジェクト。 ページ設定 の上余白、下の余白などの特定の設定がの遅延バインディング プロパティとして使用できますが、<xref:Microsoft.Office.Interop.Word.Dialog>オブジェクト。 これらのプロパティは、実行時に Word によって動的に作成されます。
 
- 次の例は、Visual Basic プロジェクトでこのタスクを実行する方法を示します、 **Option Strict**オフ、および Visual c# プロジェクトを対象とするが、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]します。 これらのプロジェクトでは、Visual Basic および Visual c# コンパイラで遅延バインディングの機能を使用できます。 この例を使用する実行から、`ThisDocument`または`ThisAddIn`プロジェクト内のクラス。
+ 次の例は、Visual Basic プロジェクトでこのタスクを実行する方法を示します、 **Option Strict**オフ、および Visual C# プロジェクトを対象とするが、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]します。 これらのプロジェクトでは、Visual Basic および Visual C# コンパイラで遅延バインディングの機能を使用できます。 この例を使用する実行から、`ThisDocument`または`ThisAddIn`プロジェクト内のクラス。
 
  [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)]
  [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]
