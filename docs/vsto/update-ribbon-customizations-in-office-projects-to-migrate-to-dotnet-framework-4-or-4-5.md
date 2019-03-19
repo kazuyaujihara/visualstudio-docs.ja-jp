@@ -31,7 +31,7 @@ ms.locfileid: "56634930"
 
 -   Visual Basic プロジェクト、またはいずれかで作成した Visual c# プロジェクトで[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]または[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]リボンの分離コード ファイル内のすべての手順を実行 (*YourRibbonItem*します。Designer.cs または*YourRibbonItem*します。)。 Visual Basic プロジェクトで分離コード ファイルを表示する] をクリックして、 **[すべてのファイル**ボタン**ソリューション エクスプ ローラー**します。
 
--   Visual Studio 2008 で作成しにアップグレードする Visual c# プロジェクトで[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]、リボン コード ファイルで、最初の 2 つの手順に従います (*YourRibbonItem*.cs または*YourRibbonItem*.vb)、およびリボンの分離コード ファイルで、残りの手順を実行します。
+-   Visual Studio 2008 で作成しにアップグレードする Visual C# プロジェクトで[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]、リボン コード ファイルで、最初の 2 つの手順に従います (*YourRibbonItem*.cs または*YourRibbonItem*.vb)、およびリボンの分離コード ファイルで、残りの手順を実行します。
 
 ### <a name="to-change-the-generated-ribbon-code"></a>生成されたリボン コードを変更するには
 
