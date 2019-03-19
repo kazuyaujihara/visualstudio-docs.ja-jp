@@ -23,19 +23,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 02/21/2019
 ms.locfileid: "56604480"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>方法: Visual c# プロジェクトでのコードを VBA に公開します。
-  相互作用するコードの 2 つの種類の場合は、Visual c# プロジェクトを Visual Basic for Applications (VBA) コード内のコードを公開できます。
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>方法: Visual C# プロジェクトでのコードを VBA に公開します。
+  相互作用するコードの 2 つの種類の場合は、Visual C# プロジェクトを Visual Basic for Applications (VBA) コード内のコードを公開できます。
 
- Visual c# プロセスは、Visual Basic のプロセスからは異なります。 詳細については、「[方法 :Visual Basic プロジェクトでのコードを VBA に公開](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)します。
+ Visual C# プロセスは、Visual Basic のプロセスからは異なります。 詳細については、「[方法 :Visual Basic プロジェクトでのコードを VBA に公開](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)します。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="expose-code-in-a-visual-c-project"></a>Visual c# プロジェクトでコードが公開します。
- Visual c# プロジェクトのコードを呼び出す VBA コードを有効にするのには、COM から参照できるようにコードを変更し、設定、 **ReferenceAssemblyFromVbaProject**プロパティを**True**デザイナー。
+## <a name="expose-code-in-a-visual-c-project"></a>Visual C# プロジェクトでコードが公開します。
+ Visual C# プロジェクトのコードを呼び出す VBA コードを有効にするのには、COM から参照できるようにコードを変更し、設定、 **ReferenceAssemblyFromVbaProject**プロパティを**True**デザイナー。
 
- VBA から Visual c# プロジェクトでメソッドを呼び出す方法について説明するチュートリアルでは、次を参照してください。[チュートリアル。コードを Visual C での VBA から呼び出す&#35;プロジェクト](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)します。
+ VBA から Visual C# プロジェクトでメソッドを呼び出す方法について説明するチュートリアルでは、次を参照してください。[チュートリアル。コードを Visual C での VBA から呼び出す&#35;プロジェクト](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)します。
 
-### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>VBA に Visual c# プロジェクト内のコードを公開するには
+### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>VBA に Visual C# プロジェクト内のコードを公開するには
 
 1. 開くか、Word 文書、Excel ブックまたは Excel テンプレート、マクロをサポートして、VBA コードを既に含むに基づくドキュメント レベルのプロジェクトを作成します。
 
