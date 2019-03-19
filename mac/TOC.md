@@ -33,7 +33,7 @@
 ## [ブロック選択](block-selection.md)
 ## [エディターのテーマ](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [一般的なキーボード ショートカット](keyboard-shortcuts.md)
+## [既定のキーボード ショートカット](keyboard-shortcuts.md)
 
 # [デバッグ](debugging.md)
 ## [データの視覚化](data-visualizations.md)
