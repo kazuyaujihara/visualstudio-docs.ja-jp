@@ -2,7 +2,6 @@
 title: IWebAppDiagnosticsSetup インターフェイス |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc29282ec9d00ff79131765d2bf294c54fa347c6
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: b84fd126ebd4d311264efa5d2156f9d83961fee9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344903"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58148751"
 ---
 # <a name="iwebappdiagnosticssetup-interface"></a>IWebAppDiagnosticsSetup インターフェイス
 このインターフェイスは、PDM デバッグ アプリケーションは、デバッグ中のプロセスで COM オブジェクトを作成し、web の診断を有効にして実装されます。 PDM は、アプリケーション オブジェクトの実装をデバッグする場合[IObjectWithSite](http://go.microsoft.com/fwlink/?LinkId=232438)、Internet Explorer を呼び出す[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)が作成された後、およびパスへの参照の[IWebBrowser2](http://go.microsoft.com/fwlink/?LinkId=232449). WWA アプリケーションが呼び出す[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)とインターフェイス IWebApplicationHost の代わりに、WWA で渡します。 場合[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)は NULL 以外の値で呼び出されました[IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) true を返します。 場合は、false を返し、呼び出し[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)失敗します。  

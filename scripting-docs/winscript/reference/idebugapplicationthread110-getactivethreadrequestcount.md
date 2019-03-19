@@ -2,7 +2,6 @@
 title: IDebugApplicationThread110::GetActiveThreadRequestCount |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8bd776aedd4df61797419795afb8dcc8afeb9318
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: d9bda0cc59560d90ebc0a382d858c881e7372c15
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348192"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145071"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
 現在処理されているメカニズムを切り替え、PDM のスレッドからのスレッドの要求の数を返します。 この番号は 0 または 1 では、通常は。 ただし、数場合があります高い 1 つのスレッドの呼び出しの処理を開始がスレッドからの同期呼び出しをトリガーまたはそれ以外の場合、スレッドを中断でき、着信呼び出しを再度処理する (トリガーすることなどによって、 [IRemoteDebugApplicationEvents インターフェイス](../../winscript/reference/iremotedebugapplicationevents-interface.md)デバッガー スレッドで発行されるイベント)。  

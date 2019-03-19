@@ -2,7 +2,6 @@
 title: IActiveScriptParseProcedureOld インターフェイス |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa7ea909680afdb65004f47e458d735e82ead929
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 99fa06086bfad56b266b043716e82181aa4c97d5
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349995"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160629"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>IActiveScriptParseProcedureOld インターフェイス
 スクリプトに追加する手順については、ソース コードのテキストを使用できます。 これにより、解釈されたスクリプト言語 VBScript などの独立系のオーサリング環境がないための代替手段 (以外の`IActiveScriptParse`または`IPersist*`) 名前空間にスクリプトの手順を追加します。  
