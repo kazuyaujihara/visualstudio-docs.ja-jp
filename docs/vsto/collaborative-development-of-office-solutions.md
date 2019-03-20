@@ -28,7 +28,7 @@ ms.locfileid: "56635060"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="debug-properties-are-not-shared"></a>デバッグ プロパティは共有されません。
- デバッグ プロパティは、ソース管理で複数のユーザー間では共有されません。 Visual Basic および Visual c# プロジェクトでは、ユーザー固有のファイルのデバッグ プロパティを格納 (*ProjectName*. vbproj.user または*ProjectName*。 csproj.user)、このファイルはソース管理されません。 複数のユーザーがデバッグを実行する場合は、各自が手動でデバッグ プロパティを入力する必要があります。
+ デバッグ プロパティは、ソース管理で複数のユーザー間では共有されません。 Visual Basic および Visual C# プロジェクトでは、ユーザー固有のファイルのデバッグ プロパティを格納 (*ProjectName*. vbproj.user または*ProjectName*。 csproj.user)、このファイルはソース管理されません。 複数のユーザーがデバッグを実行する場合は、各自が手動でデバッグ プロパティを入力する必要があります。
 
  プロジェクトは、ソース管理ではなく、ネットワーク共有に格納されているが場合、ソリューションを開き、アセンブリをテストする共同開発者を有効にする追加の手順を実行する必要があります。
 
