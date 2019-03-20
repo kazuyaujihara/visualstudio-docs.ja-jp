@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8abfceedb112bb638dde2ff826182ad044573c74
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955376"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195087"
 ---
 # <a name="security-warnings"></a>セキュリティの警告
 
@@ -77,5 +77,5 @@ ms.locfileid: "55955376"
 |[CA 2153:破損状態例外の処理を回避します。](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[破損状態例外 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) は、メモリの破損がプロセス内に存在していることを示します。 プロセスをクラッシュさせるのではなくこれらの例外をキャッチすることは、攻撃者が破損したメモリ領域にセキュリティ上の弱点を見出すことができた場合に、セキュリティ上の脆弱性となる可能性があります。|
 |[CA 3075:安全ではない DTD の処理](../code-quality/ca3075-insecure-dtd-processing.md)|安全ではない DTDProcessing インスタンスを使用する場合、または外部エンティティ ソースを参照する場合、パーサーは信頼されていない入力を受け入れ、攻撃者に機密情報を漏えいしてしまう可能性があります。|
 |[CA 3076:安全ではない XSLT スクリプトの実行](../code-quality/ca3076-insecure-xslt-script-execution.md)|.NET アプリケーションで XSLT (Extensible Stylesheet Language Transformation) を安全ではない方法で実行すると、攻撃者に機密情報を漏えいする可能性のある、信頼されていない URI 参照がプロセッサにより解決されるおそれがあります。そのことは、サービス拒否攻撃やクロスサイト攻撃につながります。|
-|[CA 3077:API の設計、XML ドキュメントと XML テキスト リーダーで安全でない処理](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|XMLDocument と XMLTextReader から派生する API をデザインする場合、DtdProcessing にご注意ください。  外部エンティティ ソースを参照または解決したり、XML に安全ではない値を設定したりする場合に、安全ではない DTDProcessing インスタンスを使用すると、情報漏えいにつながる可能性があります。|
+|[CA 3077:API の設計、XML ドキュメントと XML テキスト リーダーで安全でない処理](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|XMLDocument と XMLTextReader から派生する API をデザインする場合、DtdProcessing にご注意ください。 外部エンティティ ソースを参照または解決したり、XML に安全ではない値を設定したりする場合に、安全ではない DTDProcessing インスタンスを使用すると、情報漏えいにつながる可能性があります。|
 |[CA3147:ValidateAntiForgeryToken と動詞のハンドラーをマークします。](../code-quality/ca3147-mark-verb-handlers-with-validateantiforgerytoken.md)|ASP.NET MVC のコント ローラーを設計するときは、クロスサイト リクエスト フォージェリ攻撃考慮あります。 クロスサイト リクエスト フォージェリ攻撃対象は、ASP.NET MVC コント ローラーに、認証されたユーザーから悪意のある要求を送信できます。|

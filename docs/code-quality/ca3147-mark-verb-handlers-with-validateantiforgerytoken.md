@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c8c43ceb19aa6b4407fd4639f952ced859390b1
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 0cd54f932a99ea79bf792ebe4175ddc6a031ddcb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567329"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194445"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147:ValidateAntiForgeryToken で動詞ハンドラーをマークします
 
@@ -45,7 +45,7 @@ ASP.NET MVC のコント ローラーを設計するときは、クロスサイ�
 
    HTTP GET を処理するコント ローラー アクションが要求し、有害な可能性のある副作用が伴う機密データの変更など、ASP.NET MVC があれば、アプリケーションがクロスサイト リクエスト フォージェリ攻撃に対して脆弱になります。  HTTP POST、PUT、または DELETE 要求だけが機密性の高い操作を実行するために、アプリケーションを再設計する必要があります。
 
-- HTTP POST を処理するコント ローラー アクションの ASP.NET MVC、PUT、または削除を要求する追加[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))と使用できる HTTP 動詞を指定する属性 ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)、 [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29)、 [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)、または[HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29))。 さらを呼び出す必要があります、 [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29) MVC ビューまたは Razor web ページからのメソッド。 例については、次を参照してください。[編集メソッドを調べると、ビューの編集](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)します。
+- HTTP POST を処理するコント ローラー アクションの ASP.NET MVC、PUT、または削除を要求する追加[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))と使用できる HTTP 動詞を指定する属性 ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)、 [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29)、 [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)、または[HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29))。 さらを呼び出す必要があります、 [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) MVC ビューまたは Razor web ページからのメソッド。 例については、次を参照してください。[編集メソッドを調べると、ビューの編集](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 

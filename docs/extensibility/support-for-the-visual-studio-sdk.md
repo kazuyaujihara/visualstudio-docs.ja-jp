@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873442"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193897"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK のサポート
 さまざまなサポート オプション、Visual Studio 統合開発環境 (IDE) を拡張する方法についての質問をお持ちのお客様に利用できます。
@@ -54,9 +54,9 @@ GitHub の[Visual Studio のサンプル](https://github.com/Microsoft/VSSDK-Ext
 
 ### <a name="developer-tools-support"></a>開発者ツールのサポート
 
-サポートを購入することもできます。 [開発者ツール] カテゴリで利用にはさまざまなサポート プランは[Microsoft ヘルプとサポート センター](http://go.microsoft.com/fwlink/?LinkID=82383)します。
+サポートを購入することもできます。 [開発者ツール] カテゴリで利用にはさまざまなサポート プランは[Microsoft ヘルプとサポート センター](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8)します。
 
-使用する必要があるお客様、[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]を複雑なパッケージを開発することが検討 Microsoft と Premier サポート契約を購入します。 詳細については、次を参照してください。 [Microsoft Premier サポート](https://support.microsoft.com/premier)します。 小規模企業にとって、[パートナー利用サポート](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx)従来の Premier サポート サービスに代わる魅力的な場合があります。
+使用する必要があるお客様、[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]を複雑なパッケージを開発することが検討 Microsoft と Premier サポート契約を購入します。 詳細については、次を参照してください。 [Microsoft Premier サポート](https://support.microsoft.com/premier)します。 小規模企業にとって、 [Advanced Support for Partners](https://partner.microsoft.com/support/advanced-cloud-support)従来の Premier サポート サービスに代わる魅力的な場合があります。
 
 > [!NOTE]
 > 相談やアドバイスを得る、standard サポートを使用できません。
