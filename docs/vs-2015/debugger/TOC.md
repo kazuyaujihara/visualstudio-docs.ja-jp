@@ -1,5 +1,4 @@
 # [Visual Studio でのデバッグ](debugging-in-visual-studio.md)
-# [Visual Studio 2015 のデバッガーの新機能](what’s-new-for-the-debugger-in-visual-studio-2015.md)
 # [デバッガーの基本事項](debugger-basics.md)
 ## [デバッガーの使用開始](getting-started-with-the-debugger.md)
 ## [デバッガーでのコード間の移動](navigating-through-code-with-the-debugger.md)

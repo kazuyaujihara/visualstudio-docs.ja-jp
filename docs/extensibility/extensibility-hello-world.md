@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: HT
+ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160707"
+ms.locfileid: "58194737"
 ---
 # <a name="create-your-first-extension-hello-world"></a>初めての拡張機能を作成します。Hello World
 
@@ -44,7 +44,7 @@ ms.locfileid: "58160707"
 
 ::: moniker range="vs-2017"
 
-手順 1. **ファイル**メニューの **新しいプロジェクト**します。
+手順 1. **[ファイル]** メニューで、**[新規作成]**、 > **[プロジェクト]** の順に作成します。
 
 手順 2. 右上にある検索ボックスに "vsix"を入力し、ビジュアルを選択C# **VSIX プロジェクト**します。 "HelloWorld"を入力、**名前**クリックし、ダイアログの下部にある**OK**します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "58160707"
 
 ::: moniker range=">=vs-2019"
 
-手順 1. **ファイル**メニューの **新しいプロジェクト**します。 "Vsix"を検索し、ビジュアルを選択します。 C# **VSIX プロジェクト**し**次**します。
+手順 1. **[ファイル]** メニューで、**[新規作成]**、 > **[プロジェクト]** の順に作成します。 "Vsix"を検索し、ビジュアルを選択します。 C# **VSIX プロジェクト**し**次**します。
 
 手順 2. "HelloWorld"を入力、**プロジェクト名**選択**作成**します。
 
@@ -84,7 +84,7 @@ HelloWorld プロジェクトで表示する必要があります**ソリュー�
 
 ## <a name="modify-the-source-code"></a>ソース コードの変更
 
-この時点では、コマンドとボタンのテキストは、自動生成された表示されない非常に興味深いです。 変更する場合は、VSCT ファイルと CS ファイルを変更できます。
+コマンドとボタンのテキストでの自動生成されたはこの時点では、非常に興味深いではないとします。 変更する場合は、VSCT ファイルと CS ファイルを変更できます。
 
 * VSCT ファイルはコマンドの名前の変更だけでなく、Visual Studioのコマンドシステムでの場所を定義します。 VSCT ファイルを探索するときは、VSCT コード コントロールの各セクションで説明するコメントが表示されます。
 

@@ -1,6 +1,6 @@
 ---
 title: '[プロパティ] ウィンドウにプロパティを公開する |Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], exposing in Property Browser
@@ -12,25 +12,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 215ac9c38bba922faed2f30dc042632d414e5cb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4cad9d1cb12358de57c1d64678e45cf3d75ed5de
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705048"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194912"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>[プロパティ] ウィンドウにプロパティを公開します。
+
 このチュートリアルは、オブジェクトのパブリック プロパティを公開、**プロパティ**ウィンドウ。 これらのプロパティに加えた変更に反映されます、**プロパティ**ウィンドウ。
 
 ## <a name="prerequisites"></a>必須コンポーネント
- Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 詳細については、"[Visual Studio SDK をインストール](../extensibility/installing-the-visual-studio-sdk.md)"を参照してください。
+
+Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 詳細については、"[Visual Studio SDK をインストール](../extensibility/installing-the-visual-studio-sdk.md)"を参照してください。
 
 ## <a name="expose-properties-to-the-properties-window"></a>[プロパティ] ウィンドウにプロパティを公開します。
- このセクションでカスタム ツール ウィンドウの作成し、の関連するウィンドウ ペインのオブジェクトのパブリック プロパティを表示、**プロパティ**ウィンドウ。
+
+このセクションでカスタム ツール ウィンドウの作成し、の関連するウィンドウ ペインのオブジェクトのパブリック プロパティを表示、**プロパティ**ウィンドウ。
 
 ### <a name="to-expose-properties-to-the-properties-window"></a>[プロパティ] ウィンドウにプロパティを公開するには
 
-1. すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクト`MyObjectPropertiesExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#** > **Extensibility**します。
+1. すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクト`MyObjectPropertiesExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**ダイアログで"vsix"を検索します。
 
 2. ツール ウィンドウを追加するには、という名前のカスタム ツール ウィンドウの項目テンプレートを追加`MyToolWindow`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加 ダイアログ**に移動して、 **Visual c# アイテム** > **拡張**選択**カスタム ツール ウィンドウ**。 **名前**ダイアログの下部にあるフィールドに、ファイル名を変更して*MyToolWindow.cs*します。 カスタム ツール ウィンドウを作成する方法の詳細については、次を参照してください。[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。
 
@@ -102,11 +105,12 @@ ms.locfileid: "56705048"
      MyToolWindow ウィンドウのキャプションを適宜変更します。
 
 ## <a name="expose-tool-window-properties"></a>ツール ウィンドウのプロパティを公開します。
- このセクションでは、ツール ウィンドウを追加し、そのプロパティを公開します。 プロパティに加えた変更に反映されます、**プロパティ**ウィンドウ。
+
+このセクションでは、ツール ウィンドウを追加し、そのプロパティを公開します。 プロパティに加えた変更に反映されます、**プロパティ**ウィンドウ。
 
 ### <a name="to-expose-tool-window-properties"></a>ツール ウィンドウのプロパティを公開するには
 
-1.  開いている*MyToolWindow.cs*、IsChecked のパブリックのブール型プロパティを追加する、`MyToolWindow`クラス。
+1. 開いている*MyToolWindow.cs*、IsChecked のパブリックのブール型プロパティを追加する、`MyToolWindow`クラス。
 
     ```csharp
     [Category("My Properties")]
@@ -125,7 +129,7 @@ ms.locfileid: "56705048"
 
      このプロパティは、後で作成した WPF のチェック ボックスからの状態を取得します。
 
-2.  開いている*MyToolWindowControl.xaml.cs* MyToolWindowControl コンス トラクターを次のコードに置き換えます。
+2. 開いている*MyToolWindowControl.xaml.cs* MyToolWindowControl コンス トラクターを次のコードに置き換えます。
 
     ```vb
     private MyToolWindow pane;
@@ -139,19 +143,19 @@ ms.locfileid: "56705048"
 
      これにより、`MyToolWindowControl`へのアクセス、`MyToolWindow`ウィンドウ。
 
-3.  *MyToolWindow.cs*、変更、`MyToolWindow`次のようにコンス トラクター。
+3. *MyToolWindow.cs*、変更、`MyToolWindow`次のようにコンス トラクター。
 
     ```csharp
     base.Content = new MyToolWindowControl(this);
     ```
 
-4.  MyToolWindowControl のデザイン ビューに変更します。
+4. MyToolWindowControl のデザイン ビューに変更します。
 
-5.  ボタンを削除してから、チェック ボックスを追加、**ツールボックス**左上隅にします。
+5. ボタンを削除してから、チェック ボックスを追加、**ツールボックス**左上隅にします。
 
-6.  Checked と Unchecked イベントを追加します。 デザイン ビューで、チェック ボックスを選択します。 **プロパティ**ウィンドウで、イベント ハンドラー ボタンをクリックします (上部の右、**プロパティ**ウィンドウ)。 検索**Checked**と種類**checkbox_Checked** 、テキスト ボックス内を検索し、**未チェック**と種類**checkbox_Unchecked**テキスト ボックスに。
+6. Checked と Unchecked イベントを追加します。 デザイン ビューで、チェック ボックスを選択します。 **プロパティ**ウィンドウで、イベント ハンドラー ボタンをクリックします (上部の右、**プロパティ**ウィンドウ)。 検索**Checked**と種類**checkbox_Checked** 、テキスト ボックス内を検索し、**未チェック**と種類**checkbox_Unchecked**テキスト ボックスに。
 
-7.  チェック ボックスのイベント ハンドラーを追加します。
+7. チェック ボックスのイベント ハンドラーを追加します。
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)
@@ -166,7 +170,7 @@ ms.locfileid: "56705048"
     }
     ```
 
-8.  プロジェクトをビルドし、デバッグを開始します。
+8. プロジェクトをビルドし、デバッグを開始します。
 
 9. 実験用インスタンスの開く、 **MyToolWindow**ウィンドウ。
 
@@ -175,14 +179,15 @@ ms.locfileid: "56705048"
 10. チェック ボックスをオンに、 **MyToolWindow**ウィンドウ。 **IsChecked**で、**プロパティ**にウィンドウが変更された**True**します。 チェック ボックスをオフ、 **MyToolWindow**ウィンドウ。 **IsChecked**で、**プロパティ**にウィンドウが変更された**False**します。 値を変更**IsChecked**で、**プロパティ**ウィンドウ。 チェック ボックス、 **MyToolWindow**ウィンドウが、新しい値に一致するように変更します。
 
     > [!NOTE]
-    >  かどうかに表示されるオブジェクトを破棄する必要があります、**プロパティ**ウィンドウで、呼び出し`OnSelectChange`で、`null`選択コンテナー最初。 プロパティまたはオブジェクトを破棄して、後に更新されている選択コンテナーに変更できます<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A>と<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A>を一覧表示します。
+    > かどうかに表示されるオブジェクトを破棄する必要があります、**プロパティ**ウィンドウで、呼び出し`OnSelectChange`で、`null`選択コンテナー最初。 プロパティまたはオブジェクトを破棄して、後に更新されている選択コンテナーに変更できます<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A>と<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A>を一覧表示します。
 
 ## <a name="change-selection-lists"></a>選択リストを変更します。
+
  このセクションでは、プロパティの基本クラスの選択リストを追加し、ツール ウィンドウ インターフェイスを使用して表示する選択リストを選択します。
 
 ### <a name="to-change-selection-lists"></a>選択リストを変更するには
 
-1.  開いている*MyToolWindow.cs*という名前のパブリック クラスを追加および`Simple`します。
+1. 開いている*MyToolWindow.cs*という名前のパブリック クラスを追加および`Simple`します。
 
     ```csharp
     public class Simple
@@ -207,7 +212,7 @@ ms.locfileid: "56705048"
     }
     ```
 
-2.  追加、`SimpleObject`プロパティを`MyToolWindow`を切り替える 2 つのメソッドとクラスを**プロパティ**ウィンドウ ペインの間でウィンドウの選択と`Simple`オブジェクト。
+2. 追加、`SimpleObject`プロパティを`MyToolWindow`を切り替える 2 つのメソッドとクラスを**プロパティ**ウィンドウ ペインの間でウィンドウの選択と`Simple`オブジェクト。
 
     ```csharp
     private Simple simpleObject = null;
@@ -235,7 +240,7 @@ ms.locfileid: "56705048"
     }
     ```
 
-3.  *MyToolWindowControl.cs*、チェック ボックスをオンのハンドラーを次の行のコードに置き換えます。
+3. *MyToolWindowControl.cs*、チェック ボックスをオンのハンドラーを次の行のコードに置き換えます。
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)
@@ -252,19 +257,21 @@ ms.locfileid: "56705048"
     }
     ```
 
-4.  プロジェクトをビルドし、デバッグを開始します。
+4. プロジェクトをビルドし、デバッグを開始します。
 
-5.  実験用インスタンスの開く、 **MyToolWindow**ウィンドウ。
+5. 実験用インスタンスの開く、 **MyToolWindow**ウィンドウ。
 
-6.  チェック ボックスをオン、 **MyToolWindow**ウィンドウ。 **プロパティ**ウィンドウが表示されます、`Simple`オブジェクトのプロパティ、**しれません**と**ReadOnly**します。 チェック ボックスをオフにします。 ウィンドウのパブリック プロパティに表示されます、**プロパティ**ウィンドウ。
+6. チェック ボックスをオン、 **MyToolWindow**ウィンドウ。 **プロパティ**ウィンドウが表示されます、`Simple`オブジェクトのプロパティ、**しれません**と**ReadOnly**します。 チェック ボックスをオフにします。 ウィンドウのパブリック プロパティに表示されます、**プロパティ**ウィンドウ。
 
     > [!NOTE]
-    >  表示名**しれません**は**マイ テキスト**します。
+    > 表示名**しれません**は**マイ テキスト**します。
 
 ## <a name="best-practice"></a>ベスト プラクティス
- このチュートリアルで<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>は選択可能なオブジェクトのコレクションと、選択したオブジェクトのコレクションが、同じコレクションになるように実装されます。 プロパティ ブラウザーの一覧で選択したオブジェクトのみが表示されます。 詳細な ISelectionContainer 実装、Reference.ToolWindow のサンプルを参照してください。
 
- Visual Studio のツール ウィンドウは、Visual Studio セッション間で保持します。 ツール ウィンドウの状態を永続化の詳細については、次を参照してください。<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>します。
+このチュートリアルで<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>は選択可能なオブジェクトのコレクションと、選択したオブジェクトのコレクションが、同じコレクションになるように実装されます。 プロパティ ブラウザーの一覧で選択したオブジェクトのみが表示されます。 詳細な ISelectionContainer 実装、Reference.ToolWindow のサンプルを参照してください。
+
+Visual Studio のツール ウィンドウは、Visual Studio セッション間で保持します。 ツール ウィンドウの状態を永続化の詳細については、次を参照してください。<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>します。
 
 ## <a name="see-also"></a>関連項目
+
 - [プロパティと、[プロパティ] ウィンドウを拡張します。](../extensibility/extending-properties-and-the-property-window.md)
