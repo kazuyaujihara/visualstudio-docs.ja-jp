@@ -2,7 +2,6 @@
 title: Windows スクリプト ホスト | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 486c41c54e7935bcda27ad6bea18b3180aa0371e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eec1824bd3ba1a8acb7e3c540656151cd4b11d1f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882366"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145110"
 ---
 # <a name="windows-script-hosts"></a>Windows スクリプト ホスト
 Microsoft Windows スクリプト ホストを実装する場合、スクリプト エンジンは、ホストが以下を実行する限り、基本スレッドのコンテキスト内でのみ [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) インターフェイスを呼び出すと想定して問題ありません。  
@@ -38,7 +37,7 @@ Microsoft Windows スクリプト ホストを実装する場合、スクリプ�
   
   すべてのシングル スレッド ホストはこれらの規則に自動的に従うことになります。 上記の制限モデルには、ホストが別のスレッドから [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) を呼び出してスタック スクリプトを中止するか、[IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) を使用して新しいスレッドでスクリプトを複製できるように意図的に柔軟性を持たせています。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>解説  
  これらの制限のいずれも、フリー スレッドの [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) インターフェイスやフリー スレッドのオブジェクト モデルを実装することを選択したホストには適用されません。 このようなホストは、任意のスレッドから [IActiveScript](../winscript/reference/iactivescript.md) インターフェイスを制限なく使用できます。  
   
 ## <a name="see-also"></a>関連項目  

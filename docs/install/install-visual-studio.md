@@ -18,14 +18,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf1497e79b6f41104664013efcf63adea5223f11
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607029"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983547"
 ---
-# <a name="install-visual-studio-2017"></a>Visual Studio 2017 のインストール
+# <a name="install-visual-studio"></a>Visual Studio のインストール
 
 ここでは、Visual Studio の新しいインストール方法について説明します。 このバージョンでは、必要な機能だけを簡単に選んでインストールできるようになりました。 また、Visual Studio の最小フットプリントも減らしているため、以前よりもシステムへの影響が少なくなり、より迅速にインストールできます。
 
@@ -130,9 +130,9 @@ Visual Studio のインストールをカスタマイズする際にワークロ
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 の更新](update-visual-studio.md)
-* [Visual Studio 2017 の変更](modify-visual-studio.md)
-* [Visual Studio 2017 のアンインストール](uninstall-visual-studio.md)
-* [Visual Studio 2017 のオフライン インストールを作成する](create-an-offline-installation-of-visual-studio.md)
-* [コマンド ライン パラメーターを使用して Visual Studio 2017 をインストールする](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio の更新](update-visual-studio.md)
+* [Visual Studio の変更](modify-visual-studio.md)
+* [Visual Studio のアンインストール](uninstall-visual-studio.md)
+* [Visual Studio のオフライン インストールを作成する](create-an-offline-installation-of-visual-studio.md)
+* [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio for Mac をインストールする](/visualstudio/mac/installation)

@@ -20,14 +20,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f996e5b284393be91d4e83e3e403bdbb1073e6ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de7e8468041e000f245bbc6678c67e4e6e825610
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909650"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982871"
 ---
-# <a name="remove-visual-studio-2017"></a>Visual Studio 2017 の削除
+# <a name="remove-visual-studio"></a>Visual Studio の削除
 
 致命的なエラーが発生して Visual Studio の修復またはアンインストールができない場合は、`InstallCleanup.exe` ツールを実行して Visual Studio 2017 以降のすべてのインストール済みインスタンスのインストール ファイルと製品情報を削除することができます。 このツールの実行は修復またはアンインストールに失敗した場合の最終手段として行ってください。その他の Visual Studio のインストールやその他の製品の機能がアンインストールされ、後で修復が必要になる場合があります。
 
@@ -54,7 +54,7 @@ ms.locfileid: "55909650"
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 のインストール](install-visual-studio.md)
-* [Visual Studio 2017 の更新](update-visual-studio.md)
-* [Visual Studio 2017 の変更](modify-visual-studio.md)
-* [Visual Studio 2017 のアンインストール](uninstall-visual-studio.md)
+* [Visual Studio のインストール](install-visual-studio.md)
+* [Visual Studio の更新](update-visual-studio.md)
+* [Visual Studio の変更](modify-visual-studio.md)
+* [Visual Studio のアンインストール](uninstall-visual-studio.md)

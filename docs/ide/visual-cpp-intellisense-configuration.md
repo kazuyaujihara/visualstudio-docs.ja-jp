@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222897"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194059"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense の C++ プロジェクトを構成する
 
@@ -52,7 +52,7 @@ NMake プロジェクト テンプレートに基づくメイクファイル プ
 
 ### <a name="open-folder-projects"></a>"フォルダーを開く" プロジェクト
 
-CMake プロジェクトの場合は、CMakeLists.txt ですべての構成に対して #include パスが正しく指定されていることを確認します。 その他のプロジェクトの種類では、CppProperties.json ファイルが必要になる場合があります。 詳細については、[CppProperties.json を使って IntelliSense を構成する](/cpp/ide/non-msbuild-projects#cppproperties)に関するページを参照してください。 ファイルで定義されている各構成に対するパスが正しいことを確認します。
+CMake プロジェクトの場合は、CMakeLists.txt ですべての構成に対して #include パスが正しく指定されていることを確認します。 その他のプロジェクトの種類では、CppProperties.json ファイルが必要になる場合があります。 詳細については、[CppProperties.json を使って IntelliSense を構成する](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson)に関するページを参照してください。 ファイルで定義されている各構成に対するパスが正しいことを確認します。
 
 CppProperties.json ファイルに構文エラーがある場合、影響を受けるファイル内の IntelliSense は不正になります。 Visual Studio の出力ウィンドウにエラーが表示されます。
 
@@ -72,7 +72,7 @@ Visual Studio では、この問題を明示する 2 つの一般的な方法が
 
    ![タグ パーサーにより既存の関数の定義が提案される](media/vcpp-intellisense-tag-parser-function.png)
 
-この種の問題を解決するには、**cpp.hint** という名前のファイルをソリューション ディレクトリのルートに追加します。 詳細については、「[ヒント ファイル](/cpp/ide/hint-files)」を参照してください。
+この種の問題を解決するには、**cpp.hint** という名前のファイルをソリューション ディレクトリのルートに追加します。 詳細については、「[ヒント ファイル](/cpp/build/reference/hint-files)」を参照してください。
 
 タグ パーサーのエラーは、**[エラー一覧]** ウィンドウに表示されます。
 

@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91a2bda02f62391c84ff5b39a934192eccbd6bb8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910819"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984142"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Visual Studio 2017 のエンタープライズ展開に既定値を設定する
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio のエンタープライズ展開に既定値を設定する
 
 Visual Studio の展開に影響するレジストリ ポリシーを設定することができます。 これらのポリシーは新しいインストーラーに対してグローバルであり、次に対する影響があります。
 
@@ -62,6 +62,6 @@ Visual Studio の展開に影響するレジストリ ポリシーを設定す�
 
 ## <a name="see-also"></a>関連項目
 
- * [Visual Studio のインストール](install-visual-studio.md)
- * [パッケージ キャッシュの無効化または移動](disable-or-move-the-package-cache.md)
- * [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)
+- [Visual Studio のインストール](install-visual-studio.md)
+- [パッケージ キャッシュの無効化または移動](disable-or-move-the-package-cache.md)
+- [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)

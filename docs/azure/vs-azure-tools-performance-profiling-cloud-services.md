@@ -19,11 +19,11 @@ ms.locfileid: "55946945"
 ## <a name="overview"></a>概要
 クラウド サービスのパフォーマンスは次の方法でテストすることができます。
 
-* Azure 診断を使用して、要求と接続に関する情報を収集し、顧客の観点からサービスを実行する方法を示すサイトの統計情報を確認します。 開始するには、「 [Azure Cloud Services および Virtual Machines 用の診断の構成](http://go.microsoft.com/fwlink/p/?LinkId=623009)」を参照してください。
+* Azure Diagnostics を使用して、要求と接続に関する情報を収集し、顧客の観点からサービスを実行する方法を示すサイトの統計情報を確認します。 開始するには、「 [Azure Cloud Services および Virtual Machines 用の診断の構成](http://go.microsoft.com/fwlink/p/?LinkId=623009)」を参照してください。
 * Virtual Studio のプロファイラーを使用して、サービスの実行方法について計算的側面から詳細な分析を取得します。 このトピックの説明のように、プロファイラーを使用して Azure で実行されるサービスのパフォーマンスを測定できます。 計算エミュレーターでローカルに実行されるサービスのパフォーマンスをプロファイラーで測定する方法については、「 [Visual Studio プロファイラーを使用した、Azure 計算エミュレーターでのクラウド サービスのパフォーマンスのローカルなテスト](http://go.microsoft.com/fwlink/p/?LinkId=262845)」を参照してください。
 
 ## <a name="choosing-a-performance-testing-method"></a>パフォーマンスのテスト方法を選択する
-### <a name="use-azure-diagnostics-to-collect"></a>Azure 診断を使用して収集するもの:
+### <a name="use-azure-diagnostics-to-collect"></a>Azure Diagnostics を使用して収集するもの:
 * 要求や接続などの Web ページまたはサービスの統計情報。
 * ロールの再起動の頻度などのロールの統計情報。
 * ガベージ コレクターにかかる時間の割合や実行中のロールのメモリ総量など、メモリの使用状況に関する全体的な情報。

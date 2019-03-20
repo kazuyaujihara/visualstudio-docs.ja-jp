@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e670e90f29e0ceb33fb52b4e29bf1bb917df1a8e
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 9e0c9d47968d6e120beb8815a900ff8cc0b82603
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737043"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983001"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio オフライン インストールに必要な証明書をインストールする
 
@@ -113,6 +113,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 ## <a name="checking-if-certificates-are-already-installed"></a>証明書が既にインストールされているかどうかを確認する
 
 以下の手順はインストール システムをチェックする方法の 1 つです。
+
 1. **mmc.exe** を実行します。<br/>
   a.  [ファイル] をクリックし、**[スナップインの追加と削除]** を選択します。<br/>
   b.  **[証明書]** をダブルクリックし、**[コンピューター アカウント]** を選択して、**[次へ]** をクリックします。<br/>

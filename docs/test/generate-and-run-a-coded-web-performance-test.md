@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8905470513f48bb284749a9fa0fb0e0fc73096f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914085"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869277"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>コード化された Web パフォーマンス テストの生成と実行
 
@@ -29,7 +29,7 @@ Web パフォーマンス テストは、Web アプリ内を移動すること�
 
 ## <a name="generate-a-coded-web-performance-test"></a>コード化された Web パフォーマンス テストを生成する
 
-1.  Web パフォーマンス テストを作成していない場合は、「[Record a web performance test](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts)」(Web パフォーマンス テストの記録) を参照してください。
+1.  Web パフォーマンス テストを作成していない場合は、「[Record a web performance test](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project)」(Web パフォーマンス テストの記録) を参照してください。
 
 2.  コード化されたテストを生成します。
 
