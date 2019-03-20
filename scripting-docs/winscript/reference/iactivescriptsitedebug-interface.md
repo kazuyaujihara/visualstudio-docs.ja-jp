@@ -2,7 +2,6 @@
 title: IActiveScriptSiteDebug インターフェイス |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 339325686d2a98e34c6e9f96056612769a9e110e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 3cd8043648586ed3c614cbb137e51d992d7ae29b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348309"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145779"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>IActiveScriptSiteDebug インターフェイス
 スマート ホストの実装、`IActiveScriptSiteDebug`ドキュメント管理を実行して、デバッグに参加するインターフェイス。 `IActiveScriptSite`オブジェクトは、通常の実装を提供します。、`IActiveScriptSiteDebug`インターフェイス。 この場合、呼び出し、`IActiveScriptSite::QueryInterface`メソッドを取得する、`IActiveScriptSiteDebug`インターフェイス。  

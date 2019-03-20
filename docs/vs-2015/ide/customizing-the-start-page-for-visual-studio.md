@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 895129fae06dbed8e6c0d53ac423a15adfd42365
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f043e3cfbc6d81306abfb68276f2e32cce63ed45
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760335"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869032"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Visual Studio のスタート ページのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Visual Studio のスタート ページは、既定のさまざまな方法で�
 
 1.  次のいずれかの方法でカスタム スタート ページをインストールします。
 
-    -   [Visual Studio ギャラリー](http://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=start%20page)、別の Web サイト、またはローカル イントラネットのページからインストールします。
+    -   インストールしてから、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)、別の web サイト、またはローカル イントラネットのページ。
 
         > [!NOTE]
         >  Visual Studio の旧バージョンを対象とするページの場合、Visual Studio SDK を使用してページをアップグレードできます。 「[方法: Visual Studio のカスタム スタート ページをアップグレードする](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)」を参照してください。

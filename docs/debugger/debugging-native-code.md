@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59811e522268b7a9cb3993add76d2ace8dc3aada
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5a7cf0b150c45037941010bf7e611f4bc21252c7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685496"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870416"
 ---
 # <a name="debugging-native-code"></a>ネイティブ コードのデバッグ
 ここでは、ネイティブ アプリケーションのデバッグ時に発生する一般的な問題や共通のデバッグ技術について説明します。 ここでは高レベルの手法について説明します。 Visual Studio デバッガーの使用のしくみを参照してください。[デバッガーでのはじめ](../debugger/debugger-feature-tour.md))。
@@ -59,4 +59,6 @@ ms.locfileid: "56685496"
  [デバッガーでのはじめ](../debugger/debugger-feature-tour.md)デバッグ ドキュメントの大きなセクションへのリンクを提供します。 デバッガーの新機能、設定と準備、ブレークポイント、例外の処理、エディット コンティニュ、マネージド コードのデバッグ、ネイティブ コードのデバッグ、SQL のデバッグ、ユーザー インターフェイス リファレンスなどの情報へのリンクを提供します。
 
 ## <a name="see-also"></a>関連項目
- [デバッガーのセキュリティ](../debugger/debugger-security.md) [Visual Studio でのデバッグ](../debugger/index.md)
+
+- [デバッガーのセキュリティ](../debugger/debugger-security.md)
+- [Visual Studio でのデバッグ](../debugger/index.md)

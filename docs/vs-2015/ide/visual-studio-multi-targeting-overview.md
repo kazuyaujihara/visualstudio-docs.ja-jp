@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a0964e390455b2225ec35debe79cdc79c38ed931
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768881"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194562"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio のマルチ ターゲットの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "54768881"
 >  Visual Studio Express Edition では、**[新しいプロジェクト]** ダイアログ ボックスで対象のフレームワークを設定することはできません。
 
 ## <a name="resolving-system-and-user-assembly-references"></a>システム参照およびユーザー アセンブリ参照の解決
- .NET Framework の特定のバージョンを対象にするには、最初に適切なアセンブリ参照をインストールする必要があります。 .NET Framework Version 2.0、3.0、および 3.5 に対応するアセンブリ参照は、.NET Framework 3.5 SP1 に含まれています。これは、[Microsoft ダウンロード センターの Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=227602) Web サイトからダウンロードできます。 .NET Framework 3.5 Client Profile、.NET Framework 4、.NET Framework 4 Client Profile および Silverlight に対応するアセンブリ参照も、[Visual Studio のダウンロード](http://go.microsoft.com/fwlink/?LinkId=179687) Web サイトから入手できます。
+ .NET Framework の特定のバージョンを対象にするには、最初に適切なアセンブリ参照をインストールする必要があります。 .NET Framework Version 2.0、3.0、および 3.5 に対応するアセンブリ参照は、.NET Framework 3.5 SP1 に含まれています。これは、[Microsoft ダウンロード センターの Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) Web サイトからダウンロードできます。 .NET Framework 3.5 Client Profile、.NET Framework 4、.NET Framework 4 Client Profile および Silverlight に対応するアセンブリ参照も、[Visual Studio のダウンロード](http://go.microsoft.com/fwlink/?LinkId=179687) Web サイトから入手できます。
 
 > [!NOTE]
 >  .NET Framework クライアント プロファイルは、限定されたセットのライブラリと機能を備えた .NET Framework のサブセットです。 クライアント プロファイルの詳細については、「[.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)」を参照してください。
@@ -79,4 +79,6 @@ ms.locfileid: "54768881"
  .NET Framework Version 3.5 以降を対象にする場合は、System.Core の参照と System.Linq のプロジェクトレベル インポート (Visual Basic のみ) が自動的に追加されます。 LINQ 機能を使用する場合は、[Option Infer] もオンにする必要があります (Visual Basic のみ)。 対象をそれより前のバージョンの .NET Framework に変更すると、この参照とインポートは自動的に削除されます。 詳細については、「[How to: Create a LINQ Project](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2)」(方法: LINQ プロジェクトを作成する) を参照してください。
 
 ## <a name="see-also"></a>関連項目
- [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md) [ASP.NET Web プロジェクトの .NET Framework のマルチ ターゲット](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)[プラットフォームの互換性とシステム要件](http://www.microsoft.com/visualstudio/eng/products/compatibility)
+[マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)
+[ASP.NET Web プロジェクトの .NET Framework のマルチ ターゲット](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
+[プラットフォームの互換性とシステム要件](/visualstudio/productinfo/vs2015-compatibility-vs)

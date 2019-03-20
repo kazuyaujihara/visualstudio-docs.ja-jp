@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66132724b5ece0570ead7c12949dfc5650521b29
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 14da091149f44d185d783c071f67294b7d2431e6
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567384"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195022"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio の JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ JavaScript は Visual Studio の第一級の言語です。 Visual Studio IDE �
 
 |機能|説明|
 |-------------|-----------------|
-|クラス|[クラス](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript)の宣言をサポートする新しい構文です。|
+|クラス|[クラス](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class)の宣言をサポートする新しい構文です。|
 |Promise|[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) を使用すると、より簡単で読みやすい非同期コーディングができます。 Promise コンストラクターは、`all` および `race` の各ユーティリティ メソッドと一緒にサポートされます。|
-|Iterators|反復可能なオブジェクト (配列、配列に似たオブジェクト、および反復子を含む) を使用して反復処理を行い、それぞれの別個のプロパティの値に対して実行するステートメントを伴うカスタム反復フックを呼び出すことができるようになりました。 詳細については、「[反復子とジェネレーター](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript)」を参照してください。 **注:** ジェネレーターはまだサポートされていません。|
+|Iterators|反復可能なオブジェクト (配列、配列に似たオブジェクト、および反復子を含む) を使用して反復処理を行い、それぞれの別個のプロパティの値に対して実行するステートメントを伴うカスタム反復フックを呼び出すことができるようになりました。 詳細については、「[反復子とジェネレーター](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators)」を参照してください。 **注:** ジェネレーターはまだサポートされていません。|
 |アロー関数|アロー関数 (=>) は、レキシカルな `this` によるバインドの機能を持つ `function` キーワードの略式の構文を提供します。|
 |組み込みオブジェクトの新しいメソッド|[Array オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)、[Math オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math)、[Number オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)、[Object オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)、および [String オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)の組み込みオブジェクトに、データの操作や確認に使用できる多くの新しいユーティリティ関数とプロパティが含まれています。|
-|オブジェクト リテラルの機能強化|オブジェクトにおいて、計算プロパティ、簡潔なメソッドの定義、および同じ名前の変数に値が初期化されるプロパティの略式の構文がサポートされるようになりました。 詳細については、「[オブジェクトの作成](/visualstudio/scripting-docs/javascript/creating-objects-javascript)」を参照してください。|
+|オブジェクト リテラルの機能強化|オブジェクトにおいて、計算プロパティ、簡潔なメソッドの定義、および同じ名前の変数に値が初期化されるプロパティの略式の構文がサポートされるようになりました。 詳細については、「[オブジェクトの作成](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)」を参照してください。|
 |プロキシ|[プロキシ](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy)により、オブジェクトのカスタム動作を設定できます。|
-|rest パラメーター|rest パラメーターを使用すると、関数呼び出しの連続する引数を配列に変換できます。 詳細については、「[関数](/visualstudio/scripting-docs/javascript/functions-javascript)」を参照してください。|
+|rest パラメーター|rest パラメーターを使用すると、関数呼び出しの連続する引数を配列に変換できます。 詳細については、「[関数](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)」を参照してください。|
 |spread 演算子|[spread 演算子](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) は、反復可能な式を個々の引数に展開します。 たとえば、`a.b(…array)` は `a.b.apply(a, array)` とほとんど同じです。|
 |シンボル|[Symbol](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) オブジェクトを使用して既存のオブジェクトにプロパティを追加すると、既存のオブジェクトのプロパティと干渉する可能性がなく、意図せずに可視になる可能性もなく、他のコードから整合性のない追加が実行される可能性もありません。|
 |テンプレート文字列|[テンプレート文字列](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals)では、その文字列リテラルを式として評価し、そのリテラル文字列に連結することができます。|

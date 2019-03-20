@@ -1,5 +1,5 @@
 ---
-title: チェックリスト:新しいプロジェクトの種類を作成する |Microsoft Docs
+title: 'チェックリスト: 新しいプロジェクトの種類を作成する |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c7a98a3c03f63b74cefa3ab3a4586408cfccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4fdbb093abdf0d99f17c9bd27af3623d529a31ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621007"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146345"
 ---
-# <a name="checklist-create-new-project-types"></a>チェックリスト:新しいプロジェクトの種類を作成します。
+# <a name="checklist-create-new-project-types"></a>チェックリスト: 新しいプロジェクトの種類を作成します。
 新しいプロジェクトの種類を作成するいくつかのタスクを完了する必要があります。 次のチェックリストでは、これらのタスクのガイドを提供します。
 
 1.  新しいプロジェクトの種類の機能を設計します。 詳細については、次を参照してください。[プロジェクトの種類の設計に関する決定事項](../../extensibility/internals/project-type-design-decisions.md)します。
@@ -37,7 +37,7 @@ ms.locfileid: "56621007"
 
     -   プロジェクト項目の管理、プロジェクトの追加など、**新しいプロジェクト** ダイアログ ボックス。 詳細については、次を参照してください。[プロジェクトとプロジェクト項目テンプレートを追加](../../extensibility/internals/adding-project-and-project-item-templates.md)と[プロジェクトと項目テンプレートを登録](../../extensibility/internals/registering-project-and-item-templates.md)します。
 
-    -   プロジェクトの状態、および個々 のアイテムの永続化します。 詳細については、次を参照してください。[開いているプロジェクト項目を保存および](../../extensibility/internals/opening-and-saving-project-items.md)します。 解決策の情報の永続化は、次を参照してください。[ソリューション](../../extensibility/internals/solutions.md)します。
+    -   プロジェクトの状態、および個々 のアイテムの永続化します。 詳細については、次を参照してください。[開いているプロジェクト項目を保存および](../../extensibility/internals/opening-and-saving-project-items.md)します。 解決策の情報の永続化は、次を参照してください。[ソリューション](../../extensibility/internals/solutions-overview.md)します。
 
     -   [プロパティ] ウィンドウに表示するプロパティを構成に依存しません。 詳細については、次を参照してください。[プロパティの拡張](../../extensibility/internals/extending-properties.md)します。
 

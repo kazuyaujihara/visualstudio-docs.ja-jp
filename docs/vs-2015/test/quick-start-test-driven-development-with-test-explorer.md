@@ -1,5 +1,5 @@
 ---
-title: クイック スタート:テスト エクスプ ローラーによるテスト駆動開発 |Microsoft Docs
+title: 'クイック スタート: テスト エクスプローラーによるテスト駆動開発 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9429bf3f77ec015c245eb29e6354aaf810bb895a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: af763149df8997e711677d978468a57d276cb636
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797966"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868925"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>クイック スタート: テスト エクスプローラーによるテスト駆動開発
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,10 +65,10 @@ ms.locfileid: "54797966"
 >  最新のテスト実行の結果が表示されます。 色分けされた結果バーに表示されるのは、実行されたテストの結果のみです。 たとえば、複数のテストを実行してそのいくつかに失敗し、次に成功したテストのみを実行した場合は、結果バーには緑色のみが表示されます。  
   
 > [!NOTE]
->  テストが表示されない場合は、使用するテスト フレームワークにテスト エクスプローラーを接続するためのアダプターがインストールされていることを確認してください。 詳細については、「 [テスト エクスプローラーでさまざまなテスト フレームワークを使用する](#frameworks)」を参照してください。  
+>  テストが表示されない場合は、使用するテスト フレームワークにテスト エクスプローラーを接続するためのアダプターがインストールされていることを確認してください。 詳細については、次を参照してください。[別のテスト フレームワークを使用して](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)します。  
   
 ##  <a name="walkthrough"></a> チュートリアル: 単体テストを使用してメソッドを開発する  
- このチュートリアルでは、Microsoft 単体テスト フレームワークを使用して、テスト済みメソッドを C# で開発する方法を示します。 他の言語に適合させることも、NUnit など他のテスト フレームワークを使用することも、容易です。 詳細については、「 [さまざまなテスト フレームワークを使用する](#frameworks)」を参照してください。  
+ このチュートリアルでは、Microsoft 単体テスト フレームワークを使用して、テスト済みメソッドを C# で開発する方法を示します。 他の言語に適合させることも、NUnit など他のテスト フレームワークを使用することも、容易です。 詳細については、次を参照してください。 [(米国) の別のテスト フレームワーク](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)します。  
   
 #### <a name="creating-the-test-and-method"></a>テストとメソッドを作成する  
   

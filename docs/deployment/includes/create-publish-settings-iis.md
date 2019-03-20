@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MTE95
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57874491"
+---
 
 1. IIS 管理コンソールを閉じて、もう一度開き、UI の更新された構成オプションを表示します。
 
@@ -34,6 +42,6 @@
    * (後の手順で) Visual Studio でホスト名を使用してリモート ホストに接続できない場合は、ホスト名の代わりに IP アドレスでテストします。
 
      > [!NOTE]
-     > Azure VM で実行されている IIS に発行する場合は、ネットワーク セキュリティ グループの Web 配置ポートと IIS ポートを開く必要があります。 詳細については、[IIS のインストールと実行](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic)に関するページを参照してください。
+     > Azure VM で実行されている IIS に発行する場合は、ネットワーク セキュリティ グループの Web 配置ポートと IIS ポートを開く必要があります。 詳細については、[IIS のインストールと実行](/azure/virtual-machines/windows/quick-create-portal#install-web-server)に関するページを参照してください。
 
 5. Visual Studio を実行しているコンピューターにこのファイルをコピーします。
