@@ -13,7 +13,7 @@ ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: 25b60e5e4072a0523d17082a5c5646e5bb1ade6a
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002409"
@@ -22,7 +22,7 @@ ms.locfileid: "51002409"
 ## <a name="overview"></a>概要
 次の方法では、クラウド サービスのパフォーマンスをテストできます。
 
-* Azure 診断を使用して、要求と接続に関する情報を収集し、顧客の観点からサービスを実行する方法を示すサイトの統計情報を確認します。 開始するを参照してください。 [Azure Cloud Services および Virtual Machines の診断の構成](http://go.microsoft.com/fwlink/p/?LinkId=623009)します。
+* Azure Diagnostics を使用して、要求と接続に関する情報を収集し、顧客の観点からサービスを実行する方法を示すサイトの統計情報を確認します。 開始するを参照してください。 [Azure Cloud Services および Virtual Machines の診断の構成](http://go.microsoft.com/fwlink/p/?LinkId=623009)します。
 * 計算的側面から、サービスの実行方法の詳細な分析を取得するのにには、Visual Studio プロファイラーを使用します。 このトピックの説明に従って、サービスを Azure で実行すると、パフォーマンスを測定するのにプロファイラーを使用できます。 プロファイラーを使用して、サービスがコンピューティング エミュレーターでローカル実行パフォーマンスを測定する方法については、次を参照してください[Visual Studio Profiler、コンピューティングエミュレーターを使用して、Azureクラウドサービスのローカルのパフォーマンスをテスト](http://go.microsoft.com/fwlink/p/?LinkId=262845).
 
 ## <a name="choosing-a-performance-testing-method"></a>パフォーマンスのテスト方法を選択します。
