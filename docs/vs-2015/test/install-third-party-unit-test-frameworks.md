@@ -1,4 +1,4 @@
-﻿---
+---
 title: サードパーティ製の単体テスト フレームワークをインストールする | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0901c16d4e467869768b3863a194ea524b5f9472
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787882"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868712"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>サードパーティ製の単体テスト フレームワークをインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Visual Studio テスト エクスプ ローラーは、エクスプ ローラー
 ### <a name="installing-from-the-web"></a>Web からのインストール  
  関心のあるフレームワークが分かっている場合は、  
   
-1. MSDN Web サイトの [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkId=236267)を開きます。  
+1. [Visual Studio Marketplace](https://marketplace.visualstudio.com) を開きます。  
   
 2. **[検索]** ボックスに、フレームワーク名を入力します。  
   
@@ -50,7 +50,7 @@ Visual Studio テスト エクスプ ローラーは、エクスプ ローラー
   
    フレームワークの一覧とともにその他のテスト ツールを参照するには、  
   
-4. MSDN Web サイトの [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkId=236267)を開きます。  
+4. [Visual Studio Marketplace](https://marketplace.visualstudio.com) を開きます。  
   
 5. **[参照]** をクリックします。  
   
@@ -58,5 +58,5 @@ Visual Studio テスト エクスプ ローラーは、エクスプ ローラー
   
 7. 結果の一覧でフレームワークを選択してから、ツールの Visual Studio ギャラリー ページに移動します。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [コードの単体テスト](../test/unit-test-your-code.md)

@@ -94,12 +94,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac0f1d9fe779e1d2c3109b69bc29d8067fbebb2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c660138437d9b08d49f9cf0c212e7b3612e9215
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783262"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869868"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>統合開発環境に関するエラーのトラブルシューティング情報
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ ms.locfileid: "54783262"
 ## <a name="the-developer-community"></a>開発者コミュニティ  
  フォーラムを利用すると、他の開発者や Microsoft の社員との間でさまざまな情報を交換できます。 エラーの解決策が見つからなかった場合は、問題に関する質問をフォーラムに投稿できます。 また、ニュースグループで過去に同じような問題が投稿されていないかを検索することもできます。  
   
- フォーラム、ブログ、チャットなどのリソースには、[マイクロソフト コミュニティ](http://go.microsoft.com/fwlink/?LinkID=144922) Web サイトでアクセスできます。  
+ フォーラム、ブログ、チャットなどのリソースには、[マイクロソフト コミュニティ](https://techcommunity.microsoft.com/) Web サイトでアクセスできます。  
   
 ## <a name="product-support"></a>製品のサポート  
  他のリソースを参照しても問題が解決しない場合は、[Microsoft サポート](http://go.microsoft.com/fwlink/?linkid=1782) Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[ご意見](../../ide/talk-to-us.md)」をご覧ください。

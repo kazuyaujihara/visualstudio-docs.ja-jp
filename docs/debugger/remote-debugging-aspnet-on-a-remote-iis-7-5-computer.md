@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2abc097809e05a8e7072e0dd6adfa06af23736fa
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: ee7ab155a24b52916d6b8d53f412e8c71cab8db4
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526706"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194206"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>リモートの IIS コンピューター上の ASP.NET のリモート デバッグ
 IIS に配置されている ASP.NET アプリケーションをデバッグするには、インストールし、アプリをデプロイしたコンピューターでリモート ツールを実行して Visual Studio から、実行中のアプリにアタッチします。
@@ -211,7 +211,7 @@ IIS にアプリをデプロイする必要があります問題が解決する�
 ほとんどの設定では、ASP.NET とリモート デバッガーのインストールに必要なポートが開かれます。 ただし、ポートが開いていることを確認する必要があります。
 
 > [!NOTE]
-> Azure VM 上でポートを開く必要があります、[ネットワーク セキュリティ グループ](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic)します。
+> Azure VM 上でポートを開く必要があります、[ネットワーク セキュリティ グループ](/azure/virtual-machines/windows/nsg-quickstart-portal)します。
 
 必要なポート:
 

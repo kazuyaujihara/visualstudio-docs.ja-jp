@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: deeddf541b2f0878ce2fdc20713b6d9e472b0540
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805567"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873244"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 静的コード分析によるストア アプリの C++ コード品質の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,13 +128,12 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 |                       [C6516](../code-quality/c6516.md)                        |                                          属性にプロパティがない                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       読み取り可能でないバッファーでの有効なサイズ                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     書き込み可能でないバッファーでの書き込み可能サイズ                                      |
-| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  無効な注釈です: 'NeedsRelease' プロパティは Yes または No でなければなりません                   |
 | [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        無効なサイズの文字列の逆参照                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           無効なサイズの文字列型                                            |
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         無効なサイズの文字列パラメーター                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   無効なサイズの到達不能な場所の文字列                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        無効なサイズの文字列バッファー型                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              無効な注釈。'NeedsRelease' プロパティは、void 型の値では使用できません               |
+|                       [C6527](../code-quality/c6527.md)                        |              無効な注釈です: 'NeedsRelease' プロパティは、void 型の値では使用できません               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       認識されない書式指定文字列スタイル                                        |
 |                       [C6540](../code-quality/c6540.md)                        | この関数で属性注釈を使用すると、既存の __declspec 注釈がすべて無効となります  |
 |                       [C6551](../code-quality/c6551.md)                        |                              無効なサイズ指定です: 式が解析可能ではありません                              |
@@ -194,7 +193,6 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 |                      [C28254](../code-quality/c28254.md)                       |                               dynamic_cast<>() は、注釈ではサポートされません                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    注釈での構文エラーが関数の注釈で見つかりました                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 条件付き注釈での構文エラーが、組み込みの注釈で見つかりました                 |
-| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    結果リストの値は定数である必要があります。                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    注釈での構文エラーが、関数の注釈で見つかりました。                    |
 |                      [C28272](../code-quality/c28272.md)                       |      検査中の関数とパラメーターに対する注釈に関数宣言との一貫性がありません      |
 |                      [C28273](../code-quality/c28273.md)                       |                    関数について、手がかりには関数宣言との一貫性がありません。                     |
@@ -206,7 +204,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 |                      [C28286](../code-quality/c28286.md)                       |                                    関数について、構文エラーが最後の近くにあります                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                関数について、\_At\_() 注釈 (認識されないパラメーター名) に構文エラーがあります                |
 |                      [C28288](../code-quality/c28288.md)                       |                  関数について、\_At\_() 注釈 (無効のパラメーター名) に構文エラーがあります                   |
-|                      [C28289](../code-quality/c28289.md)                       |                関数の場合。ReadableTo または WritableTo では、パラメーターとして limit-spec がなかった                |
+|                      [C28289](../code-quality/c28289.md)                       |                関数について: ReadableTo または WritableTo には、パラメーターとして limit-spec がありませんでした                |
 |                      [C28290](../code-quality/c28290.md)                       |           関数の注釈は、実際のパラメーターの数より多い外部参照を含みます            |
 |                      [C28291](../code-quality/c28291.md)                       |                        deref レベル 0 での post null/notnull は、関数に対して意味がありません。                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            演算子に対する互換性のない型の、式のオペランドです                             |

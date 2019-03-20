@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 161683697ee66286e1d43e6730584f0660bd390c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: caf4a90b55e53cb9e4887f32c0388d7b313486dd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526465"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194938"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Visual Studio 2017 での Azure での IIS で ASP.NET Core のリモート デバッグ
 
@@ -229,7 +229,7 @@ Web Deploy を使用していない場合は、発行およびファイル シ�
 
 ほとんどの設定では、ASP.NET とリモート デバッガーのインストールに必要なポートが開かれます。 ただし、デプロイに関する問題のトラブルシューティングを行うと、アプリがファイアウォールの背後にホストされている場合、は、正しいポートが開いていることを確認する必要があります。
 
-Azure VM 上でポートを開く必要があります、[ネットワーク セキュリティ グループ](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic)します。
+Azure VM 上でポートを開く必要があります、[ネットワーク セキュリティ グループ](/azure/virtual-machines/windows/nsg-quickstart-portal)します。
 
 必要なポート:
 

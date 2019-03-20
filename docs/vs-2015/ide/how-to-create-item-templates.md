@@ -1,5 +1,5 @@
 ---
-title: '方法: 項目テンプレートを作成する |Microsoft Docs'
+title: '方法 : 項目テンプレートを作成する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788250"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867926"
 ---
 # <a name="how-to-create-item-templates"></a>方法 : 項目テンプレートを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このトピックの[最初の手順](../ide/how-to-create-item-templates.md#export_template)では、**テンプレートのエクスポート** ウィザードを使って項目テンプレートを作成する方法を示します。 テンプレートを複数のファイルで構成する場合は、「[方法 : 複数ファイルの項目テンプレートを作成する](../ide/how-to-create-multi-file-item-templates.md)」をご覧ください。  
+このトピックの[最初の手順](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box)では、**テンプレートのエクスポート** ウィザードを使って項目テンプレートを作成する方法を示します。 テンプレートを複数のファイルで構成する場合は、「[方法 : 複数ファイルの項目テンプレートを作成する](../ide/how-to-create-multi-file-item-templates.md)」をご覧ください。  
   
- ウィザードはさまざまな作業を実行して基本テンプレートを作成しますが、多くの場合、テンプレートをエクスポートした後で .vstemplate ファイルを手動で変更する必要があります。 たとえば、[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ プロジェクトの **[新しい項目の追加]** ダイアログに項目を表示する場合、追加の手順をいくつか実行する必要があります。 このトピックの [2 つ目の手順](../ide/how-to-create-item-templates.md#modify_template)では、このタスクの実行方法を説明します。  
+ ウィザードはさまざまな作業を実行して基本テンプレートを作成しますが、多くの場合、テンプレートをエクスポートした後で .vstemplate ファイルを手動で変更する必要があります。 たとえば、[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ プロジェクトの **[新しい項目の追加]** ダイアログに項目を表示する場合、追加の手順をいくつか実行する必要があります。 このトピックの [2 つ目の手順](#to-enable-the-item-template-to-be-used-in-a-store-project)では、このタスクの実行方法を説明します。  
  
- 場合によっては、項目テンプレートをゼロから手動で作成する必要があります。 [3 つ目の手順](../ide/how-to-create-item-templates.md#create_template)では、この方法について説明します。  
+ 場合によっては、項目テンプレートをゼロから手動で作成する必要があります。 [3 つ目の手順](#to-enable-templates-for-specific-project-sub-types)では、この方法について説明します。  
   
  .vstemplate ファイルで使用できる要素の詳細については、「[Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」をご覧ください。  
   

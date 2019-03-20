@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8cf042ce5a0b713eccdf9c89b15dcb57cf966ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b3c9c1ac41247a4576661ed7f985fe1e5385b3dd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753901"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195113"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens によるコード変更とその他の履歴の検索
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +224,7 @@ ms.locfileid: "54753901"
   
 -   コードが TFS に格納されている場合は、 [TFS Config コマンド](../ide/codeindex-command.md) と共に [CodeIndex コマンド](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)を使用することによって、コード インデックス作成が有効になっていることを確認します。  
   
--   TFS 関連のインジケーターは、作業項目がコードにリンクされていて、リンクされた作業項目を開くアクセス許可をユーザーが持っている場合にだけ表示されます。 [チーム メンバーのアクセス許可があることを確認してください。](http://msdn.microsoft.com/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+-   TFS 関連のインジケーターは、作業項目がコードにリンクされていて、リンクされた作業項目を開くアクセス許可をユーザーが持っている場合にだけ表示されます。 [チーム メンバーのアクセス許可があることを確認してください。](/azure/devops/organizations/security/view-permissions)  
   
 -   アプリケーション コードに単体テストがない場合は、単体テスト インジケーターが表示されません。 テスト状態インジケーターは、テスト プロジェクトに自動的に表示されます。 アプリケーション コードに単体テストがあることがわかっているのに、テスト インジケーターが表示されない場合は、ソリューションのビルドを試みます (**Ctrl + Shift + B**)。  
   
