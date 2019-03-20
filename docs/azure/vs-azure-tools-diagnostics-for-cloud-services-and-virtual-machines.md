@@ -16,11 +16,11 @@ ms.lasthandoff: 02/08/2019
 ms.locfileid: "55908727"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure クラウド サービスと仮想マシンに対する診断を設定する
-Azure クラウド サービスまたは Azure 仮想マシンのトラブルシューティングを行うときは、Visual Studio を使用して Azure 診断を簡単に構成できます。 診断は、クラウド サービスを実行する仮想マシンと仮想マシン インスタンスのシステム データとログ データを取り込みます。 診断データは、選択したストレージ アカウントに転送されます。 Azure での診断ログの詳細については、「[Azure App Service の Web アプリの診断ログの有効化](/azure/app-service/web-sites-enable-diagnostic-log)」を参照してください。
+Azure クラウド サービスまたは Azure 仮想マシンのトラブルシューティングを行うときは、Visual Studio を使用して Azure Diagnostics を簡単に構成できます。 診断は、クラウド サービスを実行する仮想マシンと仮想マシン インスタンスのシステム データとログ データを取り込みます。 診断データは、選択したストレージ アカウントに転送されます。 Azure での診断ログの詳細については、「[Azure App Service の Web アプリの診断ログの有効化](/azure/app-service/web-sites-enable-diagnostic-log)」を参照してください。
 
-この記事では、Visual Studio を使用して、Azure 診断を有効にして設定する方法を示します。診断は、デプロイの前と後のどちらでも有効にできます。 Azure 仮想マシンで診断を設定する方法、収集する診断情報の種類を選択する方法、および収集された情報を表示する方法についても取り上げます。
+この記事では、Visual Studio を使用して、Azure Diagnostics を有効にして設定する方法を示します。診断は、デプロイの前と後のどちらでも有効にできます。 Azure 仮想マシンで診断を設定する方法、収集する診断情報の種類を選択する方法、および収集された情報を表示する方法についても取り上げます。
 
-Azure 診断を設定するには、次のオプションのいずれかを使用できます。
+Azure Diagnostics を設定するには、次のオプションのいずれかを使用できます。
 
 * Visual Studio の **[診断構成]** ダイアログ ボックスで、診断設定を変更します。 この設定は、diagnostics.wadcfgx という名前のファイルに保存されます (Azure SDK 2.4 以前は、このファイルは diagnostics.wadcfg という名前でした)。 構成ファイルを直接変更することもできます。 ファイルを直接更新した場合、構成の変更内容は、次回 Azure にクラウド サービスをデプロイしたとき、またはエミュレーターでサービスを実行したときに有効になります。
 * Visual Studio で Cloud Explorer またはサーバー エクスプローラーを使用して、実行中のクラウド サービスまたは仮想マシンの診断設定を変更します。
@@ -34,7 +34,7 @@ Visual Studio では、Azure SDK 2.6 以降のプロジェクトには、次の�
 接続文字列は、Azure SDK 2.6 以降と Azure SDK 2.4 以前では、いくつかの重要な点で動作が異なります。
 
 * Azure SDK 2.4 以前では、接続文字列は、診断プラグインが診断ログを転送するためのストレージ アカウント情報を取得する目的でランタイムとして使用されます。
-* Azure SDK 2.6 以降では、Visual Studio が診断接続文字列を使用して、発行時に Azure 診断拡張機能を適切なストレージ アカウント情報で設定します。 接続文字列を使用して、Visual Studio が発行時に使用するさまざまなサービス構成に対して、異なるストレージ アカウントを定義できます。 ただし、Azure SDK 2.5 以降は診断プラグインを使用できないため、.cscfg ファイルだけでは診断拡張機能を設定することはできません。 拡張機能は、Visual Studio や PowerShell などのツールを使用して、別途設定する必要があります。
+* Azure SDK 2.6 以降では、Visual Studio が診断接続文字列を使用して、発行時に Azure Diagnostics 拡張機能を適切なストレージ アカウント情報で設定します。 接続文字列を使用して、Visual Studio が発行時に使用するさまざまなサービス構成に対して、異なるストレージ アカウントを定義できます。 ただし、Azure SDK 2.5 以降は診断プラグインを使用できないため、.cscfg ファイルだけでは診断拡張機能を設定することはできません。 拡張機能は、Visual Studio や PowerShell などのツールを使用して、別途設定する必要があります。
 * PowerShell を使用した診断拡張機能の設定プロセスを単純化するために、Visual Studio からの出力パッケージには、各ロールの診断拡張機能用のパブリック構成 XML が含まれます。 Visual Studio は、診断接続文字列を使用して、パブリック構成内のストレージ アカウント情報を取り込みます。 パブリック構成ファイルは、拡張機能フォルダーに作成されます。 パブリック構成ファイルには、PaaSDiagnostics.&lt;ロール名\>.PubConfig.xml のパターンで名前が付けられます。 このパターンを PowerShell ベースのデプロイで使用すれば、各構成をロールにマップすることができます。
 * [Azure ポータル](http://go.microsoft.com/fwlink/p/?LinkID=525040)は、.cscfg ファイル内の接続文字列を使用して診断データにアクセスします。 このデータが **[監視]** タブに表示されます。ポータルで監視データを詳細出力するようにサービスを設定するには、接続文字列が必要です。
 
@@ -166,7 +166,7 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
 
 ![診断インフラストラクチャ ログ](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
-詳細については、「[Azure 診断を使用したログ データの収集](https://msdn.microsoft.com/library/azure/gg433048.aspx)」を参照してください。
+詳細については、「[Azure Diagnostics を使用したログ データの収集](https://msdn.microsoft.com/library/azure/gg433048.aspx)」を参照してください。
 
 ### <a name="log-directories"></a>[ログ ディレクトリ]
 ログ ディレクトリには、インターネット インフォメーション サービス (IIS) の要求、失敗した要求、または選択したフォルダーのログ ディレクトリから収集されたデータがあります。 ログ ディレクトリを取り込むには、**[ログ ディレクトリの転送を有効にする]** チェック ボックスをオンにします。 ストレージ アカウントへのログの転送間隔を増減するには、**[転送間隔 (分)]** の値を変更します。
@@ -206,7 +206,7 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
 
     利用可能なデータを示したレポートが表示されます。
 
-    ![Visual Studio の Microsoft Azure 診断レポート](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796666.png)
+    ![Visual Studio の Microsoft Azure Diagnostics レポート](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796666.png)
 
     最新のデータが表示されない場合は、転送間隔が経過するまで待ちます。
 

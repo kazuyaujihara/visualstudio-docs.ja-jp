@@ -124,9 +124,9 @@ BLOB をアップロードするには、コンテナーを開き、BLOB コン�
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>BLOB に転送されたログを表示するには
 
-Azure 診断を使用して Azure アプリケーションのデータをログに記録し、ログをストレージ アカウントに転送した場合、Azure によってこれらのログ用に作成されたコンテナーが表示されます。 サーバー エクスプローラーでこれらのログを表示すれば、アプリケーション、特に Azure にデプロイされたアプリケーションの問題を簡単に特定できます。
+Azure Diagnostics を使用して Azure アプリケーションのデータをログに記録し、ログをストレージ アカウントに転送した場合、Azure によってこれらのログ用に作成されたコンテナーが表示されます。 サーバー エクスプローラーでこれらのログを表示すれば、アプリケーション、特に Azure にデプロイされたアプリケーションの問題を簡単に特定できます。
 
-Azure 診断の詳細については、「 [Azure 診断を使用したログ データの収集](https://msdn.microsoft.com/library/azure/gg433048.aspx)」を参照してください。
+Azure Diagnostics の詳細については、「 [Azure Diagnostics を使用したログ データの収集](https://msdn.microsoft.com/library/azure/gg433048.aspx)」を参照してください。
 
 ### <a name="to-get-the-url-for-a-blob"></a>BLOB の URL を取得するには
 

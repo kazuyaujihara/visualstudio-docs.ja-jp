@@ -1,6 +1,6 @@
 ---
 title: デバッグなしでメモリ使用量を分析する | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51f86da8eac527ed7744e345ff811797afcd36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615919"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873455"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>デバッガーなしでメモリ使用量を分析する
 
@@ -72,7 +72,7 @@ ms.locfileid: "56615919"
 
 **[スナップショット]** ウィンドウの数値は、各スナップショットが取得されたときのメモリ内のバイトとオブジェクト、およびあるスナップショットとその前のものとの相違を示します。
 
-数値は、新しい Visual Studio ウィンドウで詳細な**メモリ使用量**レポート ビューを開くリンクになっています。 [スナップショットの詳細レポート](#snapshot-details-report)には、1 つのスナップショット内の種類とインスタンスが表示されます。 [スナップショットの相違 (diff) レポート](#snapshot-difference-diff-reports)では、2 つのスナップショット内の種類とインスタンスが比較されます。
+数値は、新しい Visual Studio ウィンドウで詳細な**メモリ使用量**レポート ビューを開くリンクになっています。 [スナップショットの詳細レポート](#snapshot-details-reports)には、1 つのスナップショット内の種類とインスタンスが表示されます。 [スナップショットの相違 (diff) レポート](#snapshot-difference-diff-reports)では、2 つのスナップショット内の種類とインスタンスが比較されます。
 
   ![スナップショット表示のリンク](../profiling/media/memuse__snapshotview_numbered.png "スナップショット表示のリンク")
 

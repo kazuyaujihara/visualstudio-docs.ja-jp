@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0170c6ed655ce54e2dbadf57341dff56616186ec
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "55140496"
+---
 > [!WARNING]
 > 既存のロールで診断を有効にすると、パッケージがデプロイされるときに、既に設定してあるすべての拡張機能が無効になります。 次の設定があります。
 >
@@ -7,7 +15,7 @@
 > * Microsoft 監視エージェント
 > * Microsoft Service Profiler Agent      
 > * Microsoft Azure ドメイン拡張機能        
-> * Microsoft Azure 診断拡張機能   
+> * Microsoft Azure Diagnostics 拡張機能   
 > * Microsoft Azure リモート デスクトップ拡張機能
 > * Microsoft Azure Log Collector
 >

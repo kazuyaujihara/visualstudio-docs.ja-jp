@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c2294ee956595eea051b9b04906c446a82b58cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628989"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870293"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
@@ -35,7 +35,7 @@ Visual Studio 内から、次のターゲットにアプリケーションを直
 - [Azure App Service](#azure-app-service)
 - [Azure Virtual Machines](#azure-virtual-machines)
 - [ファイル システム](#file-system)
-- [カスタム ターゲット (IIS、FTP など)](#custom-targets) (任意の Web サーバーをすべて含みます)
+- [カスタム ターゲット (IIS、FTP など)](#custom-targets-iis-ftp) (任意の Web サーバーをすべて含みます)
 
 **[発行]** タブでは、既存の発行プロファイルを選んだり、既存の発行プロファイルをインポートしたり、ここで説明するオプションを使って新しい発行プロファイルを作成したりできます。 IDE でのアプリの種類別の発行オプションについては、[デプロイの概要](../deployment/deploying-applications-services-and-components.md)に関する記事を参照してください。
 
