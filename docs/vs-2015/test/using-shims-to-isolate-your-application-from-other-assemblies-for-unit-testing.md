@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b5d905c16be219229b62d3f0a9a8d125874a22f0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ab2925024fdf9e4f0b4e93db34b375b89933a48
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784142"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155944"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>shim を使用して単体テストでアプリケーションを他のアセンブリから分離する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,50 +28,7 @@ Shim 型** は、テスト中のコンポーネントを環境から簡単に分
   
 - Visual Studio Enterprise  
   
-  参照してください[ビデオ (1 時間 16 分。Visual Studio 2012 で Fakes でテストされていないコードのテスト](http://go.microsoft.com/fwlink/?LinkId=261837)  
-  
-## <a name="in-this-topic"></a>このトピックの内容  
- このトピックで学習する内容は、次のとおりです。  
-  
- [例: Y2K バグ](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
-  
- [Shim の使用方法](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Fakes_requirements)  
-  
-- [Fakes アセンブリを追加する](#AddFakes)  
-  
-- [ShimsContext を使用する](#ShimsContext)  
-  
-- [shim でテストを記述する](#WriteTests)  
-  
-  [さまざまな種類のメソッドの shim](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
-  
-- [静的メソッド](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_methods)  
-  
-- [インスタンス メソッド (すべてのインスタンス用)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_all_instances_)  
-  
-- [インスタンス メソッド (1 つの実行時インスタンス用)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_one_instance_)  
-  
-- [コンストラクター](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Constructors)  
-  
-- [基本メンバー](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Base_members)  
-  
-- [静的コンストラクター](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_constructors)  
-  
-- [ファイナライザー](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Finalizers)  
-  
-- [プライベート メソッド](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Private_methods)  
-  
-- [バインド インターフェイス](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Binding_interfaces)  
-  
-  [既定の動作を変更する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Changing_the_default_behavior)  
-  
-  [環境アクセスの検出](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Detecting_environment_accesses)  
-  
-  [コンカレンシー](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
-  
-  [shim メソッドからの元のメソッドの呼び出し](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
-  
-  [制限事項](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
+  1 時間 16 分の動画「[Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)」 (Visual Studio 2012 で Fakes を利用し、テスト不可能なコードをテストする) をご覧ください。
   
 ##  <a name="BKMK_Example__The_Y2K_bug"></a> 例: Y2K バグ  
  2000 年 1 月 1 日に例外をスローするメソッドについて考えてみましょう。  
@@ -82,7 +39,7 @@ public static class Y2KChecker {
     public static void Check() {  
         if (DateTime.Now == new DateTime(2000, 1, 1))  
             throw new ApplicationException("y2kbug!");  
-    }  
+    }
 }  
   
 ```  
@@ -547,9 +504,9 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>外部リソース  
   
 ### <a name="guidance"></a>ガイダンス  
- [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>関連項目  
  [Microsoft Fakes を使用したテストでのコードの分離](../test/isolating-code-under-test-with-microsoft-fakes.md)   
  [Peter Provost のブログ: Visual Studio 2012 の shim](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
- [1 時間 16 分の動画:Visual Studio 2012 で Fakes でテストされていないコードのテスト](http://go.microsoft.com/fwlink/?LinkId=261837)
+ [1 時間 16 分の動画: Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837) (Visual Studio 2012 で Fakes を利用し、テスト不可能なコードをテストする)

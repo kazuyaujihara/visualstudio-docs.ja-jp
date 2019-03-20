@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9b12906c5a1a2f8e2473d2b0088600830a291744
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752967"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151181"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI の応答性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ ms.locfileid: "54752967"
   
     -   並べ替え方法を選択するには、 [診断セッションのタイムラインの表示](#Ruler) 」を使用して、 [分析用のコードのマーク](#ProfileMark)、アプリ ライフ サイクル イベント、これらのイベントに関連するタイムライン、他のグラフのデータのタイムラインを表示します。  
   
-    -   [CPU utilization graph](#CPUutilization) 」を使用して、CPU アクティビティと、特定の期間内にそれが処理する作業の種類についての一般的な情報を表示します。 過剰な CPU アクティビティがある期間には、応答性の問題およびフレームのドロップが発生する場合があります。  
+    -   [CPU utilization graph](#CPUUtilization) 」を使用して、CPU アクティビティと、特定の期間内にそれが処理する作業の種類についての一般的な情報を表示します。 過剰な CPU アクティビティがある期間には、応答性の問題およびフレームのドロップが発生する場合があります。  
   
     -   ゲームやリッチ メディア アプリを開発する場合は、 [ビジュアル スループット (FPS) の表示](#VisualThroughput) を使用すると、フレーム レートが低下した期間を特定できます。  
   

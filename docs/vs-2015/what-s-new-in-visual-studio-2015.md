@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844140"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195165"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 の新機能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -131,14 +131,13 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 
      デバッグ機能については、[Xamarin 開発者ガイド](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) の「 [Debugging](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) 」 (iOS) および「 [Debug on Device](http://developer.xamarin.com/guides) 」で説明されています。
 
--   **C++ / Android**。 [Visual C for Cross-platform Mobile Development](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) テンプレートを [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) などのサード パーティ製ツールとともに使用して、Windows および Android のネイティブ アプリを作成します。
+-   **C++ / Android**。 [Visual C for Cross-platform Mobile Development](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) テンプレートを [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) などのサード パーティ製ツールとともに使用して、Windows および Android のネイティブ アプリを作成します。
 
 ## <a name="debugging-and-diagnostics"></a>デバッグと診断
- デバッグの新機能については、「 [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015)」を参照してください。
 
- 診断の新機能新機能については、次を参照してください。[プロファイリング ツールの新](./profiling/what-s-new-in-profiling-tools.md)します。
+診断の新機能新機能については、次を参照してください。[プロファイリング ツールの新](./profiling/what-s-new-in-profiling-tools.md)します。
 
- 次に示すのは、コードに対して異なる種類の診断および分析を実行する新しいツールまたは機能強化されたツールです。
+次に示すのは、コードに対して異なる種類の診断および分析を実行する新しいツールまたは機能強化されたツールです。
 
 ### <a name="perftips"></a>パフォーマンスのヒント
  パフォーマンスのヒントはデバッグ中のメソッドの実行時間を表示し、プロファイラーを呼び出すことなくボトルネックをすばやく見つけることができるようになります。 開始するには、「 [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)」を参照してください

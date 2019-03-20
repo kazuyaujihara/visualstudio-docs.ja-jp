@@ -21,17 +21,17 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802315"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867923"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>高性能コンピューティング (HPC) クラスターでのプロファイリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsPreExt](../includes/vspreext-md.md)] プロファイリング ツールまたは [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] プロファイリング ツールのサンプリング メソッドを使用して、Microsoft Windows HPC クラスターの計算ノード上でプロファイリングを実行できます。 HPC の詳細については、Microsoft の Web サイトの [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) に関する記事を参照してください。  
+[!INCLUDE[vsPreExt](../includes/vspreext-md.md)] プロファイリング ツールまたは [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] プロファイリング ツールのサンプリング メソッドを使用して、Microsoft Windows HPC クラスターの計算ノード上でプロファイリングを実行できます。 HPC の詳細については、次を参照してください。 [Big Compute: HPC および Batch](https://azure.microsoft.com/solutions/big-compute/) 、Microsoft Web サイト。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  HPC 計算ノード上でプロファイリングを実行する前に、次の操作を実行する必要があります。  
@@ -55,8 +55,8 @@ ms.locfileid: "54802315"
 |||  
 |-|-|  
 |*%HeadNode%*|クラスターのヘッド ノードの名前。|  
-|*%FxPath%*|[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] インストーラーへのパス。 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]インストール メディアのパスは。WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe です。|  
-|*%ProfilerPath%*|スタンドアロン バージョンのプロファイリング ツール インストーラーへのパス。 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]インストール メディアのパスは。Standalone Profiler\x64\vs_profiler.exe です。|  
+|*%FxPath%*|[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] インストーラーへのパス。 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] インストール メディア上のパスは、WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe です。|  
+|*%ProfilerPath%*|スタンドアロン バージョンのプロファイリング ツール インストーラーへのパス。 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] インストール メディア上のパスは、Standalone Profiler\x64\vs_profiler.exe です。|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>HPC 計算ノード上でのプロファイリング  
  HPC パフォーマンス ウィザードを使用してプロファイリング セッションを構成し、HPC クラスターや対象の情報を指定します。 パフォーマンス セッションのプロパティ ページで、追加のオプションを設定できます。 プロファイリング ツールにより、必要な対象バイナリが自動的に配置され、プロファイラーと HPC アプリケーションが起動されます。  

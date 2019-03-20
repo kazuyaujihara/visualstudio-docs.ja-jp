@@ -1,4 +1,4 @@
-﻿---
+---
 title: コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 96a3a9fc38d82a2eaeb1adfbcfdd59f9ae503275
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f512ac0788128db87269407c10ae400268283f5
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775013"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873545"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ uiGridKeyboardInputEdit.Text=value;
   
 3. [Fiddler](http://www.fiddler2.com/fiddler2/)をインストールします。 これは、HTTP トラフィックをキャプチャしてログ記録するだけのツールです。  
   
-4. [fiddlerXap プロジェクト](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip)をダウンロードします。 解凍、ビルド後、"CopySLHelper.bat" スクリプトを実行して、Fiddler ツールで Silverlight Web パーツをテストするときに必要なヘルパー DLL をインストールします。  
+4. [fiddlerXap プロジェクト](https://40jajy3iyl373v772m19fybm-wpengine.netdna-ssl.com/wp-content/uploads/sites/6/2019/02/FiddlerXapProxy.zip)をダウンロードします。 解凍、ビルド後、"CopySLHelper.bat" スクリプトを実行して、Fiddler ツールで Silverlight Web パーツをテストするときに必要なヘルパー DLL をインストールします。  
   
    コンピューターのセットアップ後、Silverlight Web パーツを使用する SharePoint 2010 アプリのテストを開始するために、次の手順に従います。  
   
@@ -143,7 +143,7 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>フォーラム  
  [Visual Studio ALM + Team Foundation Server のブログ](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
  [SharePoint 2010 および 2013 アプリケーションの Web パフォーマンス テストおよびロード テスト](http://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
  [SharePoint ソリューションの作成](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24785b4f39265b71c3f1cb18b4331ded53652905
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e68e6c7258cb906ac81cb97f7d82bd5c5d9b467a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526764"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873124"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise の IntelliTrace (C#、Visual Basic、C++)
 
@@ -52,7 +52,7 @@ IntelliTrace は Visual Studio Enterprise Edition で使用できます (Profess
 
 | | |
 |---------------------| - |
-| **完全なサポート** | - .NET Framework 2.0 以降のバージョンを使用する Visual Basic および Visual c# のアプリケーション。<br/>ASP.NET、Microsoft Azure、Windows フォーム、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013、および 64 ビットのアプリを含むほとんどのアプリケーションをデバッグできます。<br/>IntelliTrace を使用した SharePoint アプリケーションをデバッグするを参照してください。[チュートリアル: IntelliTrace を使用した、SharePoint アプリケーションのデバッグ](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)します。<br/> IntelliTrace を使用した Microsoft Azure アプリをデバッグするを参照してください。 [IntelliTrace および Visual Studio で発行されたクラウド サービスのデバッグ](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)します。 |
+| **完全なサポート** | - .NET Framework 2.0 以降のバージョンを使用する Visual Basic および Visual c# のアプリケーション。<br/>ASP.NET、Microsoft Azure、Windows フォーム、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013、および 64 ビットのアプリを含むほとんどのアプリケーションをデバッグできます。<br/>IntelliTrace を使用した SharePoint アプリケーションをデバッグするを参照してください。[チュートリアル: IntelliTrace を使用した、SharePoint アプリケーションのデバッグ](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)します。<br/> IntelliTrace を使用した Microsoft Azure アプリをデバッグするを参照してください。 [IntelliTrace および Visual Studio で発行されたクラウド サービスのデバッグ](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)します。 |
 | **限定されたサポート** | IntelliTrace ステップ バックを使用してスナップショットを表示する Windows のサポートを対象とする C++ アプリ。 デバッガーおよび例外のイベントのみがサポートされています。<br />-.NET core と ASP.NET Core アプリでサポートされて特定のイベントのみ (MVC コント ローラー、ADO.NET、HTTPClient イベント) ローカル デバッグします。 スタンドアロン コレクターは、.NET Core または ASP.NET Core アプリはサポートされていません。<br />- 試用前提の F# アプリ<br />イベントについてのみサポートされている UWP アプリ |
 | **サポートされていません** | -その他の言語とスクリプト<br />- Windows サービス、Silverlight、Xbox、[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] のアプリ |
 
@@ -91,7 +91,7 @@ IntelliTrace は、これらの時点で特定のイベントやデータを記�
 
 - 展開されたアプリケーションでバグまたはクラッシュが発生しています。
 
-     Microsoft Azure ベースのアプリケーションの場合、アプリケーションを発行する前に IntelliTrace データの収集を構成できます。 アプリケーションの実行中、IntelliTrace はデータを .iTrace ファイルに保存します。 参照してください[IntelliTrace および Visual Studio で発行済みのクラウド サービスをデバッグ](http://go.microsoft.com/fwlink/?LinkID=262248)します。
+     Microsoft Azure ベースのアプリケーションの場合、アプリケーションを発行する前に IntelliTrace データの収集を構成できます。 アプリケーションの実行中、IntelliTrace はデータを .iTrace ファイルに保存します。 参照してください[IntelliTrace および Visual Studio で発行済みのクラウド サービスをデバッグ](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)します。
 
      IIS 7.0、7.5、および 8.0 でホストされる ASP.NET Web アプリ、および SharePoint 2010 アプリケーションや SharePoint 2013 アプリケーションの場合、Microsoft Monitoring Agent を単独で、または System Center 2012 と連携して使用して、IntelliTrace データを .iTrace ファイルに保存できます。
 

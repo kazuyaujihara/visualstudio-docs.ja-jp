@@ -15,17 +15,17 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49e636e223cc699aa73419bca0c41688eea2620c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798481"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867762"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Visual Studio 拡張機能の検索と使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 拡張機能は、Visual Studio 内で実行されるコード パッケージで、Visual Studio の機能が追加または強化されます。 Visual Studio の拡張機能について詳しくは次を参照してください。[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+Visual Studio 拡張機能は、Visual Studio 内で実行されるコード パッケージで、Visual Studio の機能が追加または強化されます。 Visual Studio の拡張機能について詳しくは「 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)」をご覧ください。
 
  **[拡張機能と更新プログラム]** ダイアログ ボックスを使用すると、Visual Studio の拡張機能やサンプルを Web サイトまたは他の場所から入手してインストールし、これらを有効化、無効化、更新、またはアンインストールすることができます。 **[ツール] / [拡張機能と更新プログラム]** を使用するか、 **[クイック起動]** ウィンドウに「 **拡張機能** 」と入力してください。 ダイアログ ボックスには、インストールされているサンプルと拡張機能の更新プログラムも表示されます。 また、Web サイトから拡張機能をダウンロードしたり、他の開発者から入手したりすることもできます。
 
@@ -33,7 +33,7 @@ Visual Studio 拡張機能は、Visual Studio 内で実行されるコード パ
 >  Visual Studio 2015 以降では、Visual Studio ギャラリーでホストされている拡張機能が自動的に更新されます。  この設定は、 **[拡張機能と更新プログラム]** ダイアログを使用して変更できます。  詳細については、後述の「 **拡張機能の自動更新** 」を参照してください。
 
 ## <a name="finding-visual-studio-extensions"></a>Visual Studio 拡張機能の検索
- 拡張機能は、Microsoft Web サイトの [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkID=178891) または [サンプル ギャラリー](http://go.microsoft.com/fwlink/?LinkId=245175) から入手してインストールできます。 拡張機能とは、Visual Studio に機能を追加するためのコントロール、サンプル、テンプレート、ツール、またはその他のコンポーネントです。 Visual Studio では、VSIX パッケージ形式の拡張機能がサポートされています。これには、プロジェクト テンプレート、項目テンプレート、 **ツールボックス** 項目、Managed Extension Framework (MEF) コンポーネント、VSPackages が含まれます。 MSI ベースの拡張機能をダウンロードしてインストールすることもできますが、 **[拡張機能と更新プログラム]** ダイアログ ボックスでこれらを有効化または無効化することはできません。 Visual Studio ギャラリーには、VSIX および MSI の両方の拡張機能が含まれています。
+ 拡張機能をインストールすることができます、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)または[サンプル ギャラリー](https://code.msdn.microsoft.com/vstudio) Microsoft web サイト。 拡張機能とは、Visual Studio に機能を追加するためのコントロール、サンプル、テンプレート、ツール、またはその他のコンポーネントです。 Visual Studio では、VSIX パッケージ形式の拡張機能がサポートされています。これには、プロジェクト テンプレート、項目テンプレート、 **ツールボックス** 項目、Managed Extension Framework (MEF) コンポーネント、VSPackages が含まれます。 MSI ベースの拡張機能をダウンロードしてインストールすることもできますが、 **[拡張機能と更新プログラム]** ダイアログ ボックスでこれらを有効化または無効化することはできません。 Visual Studio ギャラリーには、VSIX および MSI の両方の拡張機能が含まれています。
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Visual Studio 拡張機能のインストールまたはアンインストール
  **[拡張機能と更新プログラム]** から、インストールする拡張機能を見つけます。 (拡張の機能の名前か名前の一部がわかっている場合は、**[Visual Studio ギャラリーの検索]** ウィンドウで検索できます。)**[ダウンロード]** をクリックし、次に **[インストール]** をクリックします。 拡張機能を読み込むために Visual Studio を再起動する必要があります。
