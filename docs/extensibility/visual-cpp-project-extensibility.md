@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195178"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268724"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio の C++ プロジェクト システムの機能拡張とツールセットの統合
 
@@ -416,7 +416,7 @@ Visual C プロジェクト システムがに基づいて、 [VS プロジェ�
 
 ### <a name="project-property-pages"></a>プロジェクト プロパティ ページ
 
-一般的な設計については、次を参照してください。[プラットフォームの拡張性 - パート 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/)と[プラットフォームの拡張性 - パート 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/)します。
+一般的な設計については、次を参照してください。 [vc++ プロジェクトのフレームワークのマルチ ターゲット](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/)します。
 
 簡単に言えば、プロパティ ページを参照してください、**プロジェクトのプロパティ**C++ プロジェクトのダイアログが定めた*ルール*ファイル。 ルール ファイルには、一連のプロパティ ページでは、表示し、プロジェクトに保存する必要があり、どのファイルのプロパティを指定します。 ルール ファイルは、Xaml 形式を使用する .xml ファイルです。 シリアル化に使用する型が記載されて[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)します。 プロジェクト内のルール ファイルの使用に関する詳細については、次を参照してください。[プロパティ ページの XML ルール ファイル](/cpp/build/reference/property-page-xml-files)します。
 
