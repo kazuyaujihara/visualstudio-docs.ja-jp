@@ -46,7 +46,7 @@ ms.locfileid: "56596478"
 
 2.  次のレジストリ キーを探します。
 
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\します。NETFramework\Security\TrustManager\PromptingLevel**
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      キーが存在しない場合は、それを作成します。
 
@@ -105,7 +105,7 @@ ms.locfileid: "56596478"
 
 2.  次のレジストリ キーを探します。
 
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\します。NETFramework\Security\TrustManager\PromptingLevel**
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      キーが存在しない場合は、それを作成します。
 
@@ -164,7 +164,7 @@ ms.locfileid: "56596478"
 
 2.  これがない場合は、次のレジストリ キーを作成します。
 
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\します。NETFramework\Security\TrustManager\PromptingLevel**
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
 3.  次のサブキーとして追加**文字列値**がまだ存在しない、関連付けられている値を持つ場合は、します。
 
