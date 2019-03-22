@@ -8,17 +8,13 @@ ms.author: jasgro
 ms.topic: landing-page
 ms.technology: vs-ide-mobile
 ms.workload:
-- apexprodleads
-ms.openlocfilehash: 92314fc4151604007944541706718ec166ffdc09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955935"
+  - apexprodleads
 ---
 # <a name="mobile-development-with-c-documentation"></a>C++ ドキュメントによるモバイル開発
 
 iOS、Android、Windows デバイス用のネイティブ C++ アプリを Visual Studio で作成します。
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsF">
     <li>
@@ -81,7 +77,7 @@ iOS、Android、Windows デバイス用のネイティブ C++ アプリを Visua
 </ul>
 
 ---
-<h2>参照</h2>
+<h2>関連項目</h2>
 
 <ul class="panelContent cardsW">
     <li>

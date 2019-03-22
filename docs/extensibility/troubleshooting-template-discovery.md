@@ -7,12 +7,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: c98c13528facb08f475614a6cbca9cee3c426ef9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324001"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323108"
 ---
 # <a name="troubleshooting-template-installation"></a>テンプレートのインストールのトラブルシューティング
 
@@ -41,7 +41,7 @@ ms.locfileid: "57324001"
 
 ::: moniker range="vs-2017"
 
-4. Visual Studio を起動し、両方のテンプレートのツリーを初期化するために、新しいプロジェクトと新しい項目のダイアログ ボックスを起動します。
+4. Visual Studio を開き、両方のテンプレートのツリーを初期化するために新しいプロジェクトと新しい項目 ダイアログ ボックスを起動します。
 
    テンプレートは、ログに表示されている **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (インスタンス id は、Visual Studio のインスタンスのインストール ID に対応)。 各テンプレート ツリーの初期化では、このログにエントリを追加します。
 
@@ -49,7 +49,7 @@ ms.locfileid: "57324001"
 
 ::: moniker range=">=vs-2019"
 
-4. Visual Studio を起動し、両方のテンプレートのツリーを初期化するために、新しいプロジェクトと新しい項目のダイアログ ボックスを起動します。
+4. Visual Studio を開き、両方のテンプレートのツリーを初期化するために新しいプロジェクトと新しい項目 ダイアログ ボックスを起動します。
 
    テンプレートは、ログに表示されている **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (インスタンス id は、Visual Studio のインスタンスのインストール ID に対応)。 各テンプレート ツリーの初期化では、このログにエントリを追加します。
 

@@ -13,6 +13,8 @@ ms.workload:
 
 Visual Studio では、多くの機能拡張オプションを提供しています。 Visual Studio 自体の拡張、"Roslyn" コンパイラのソース コード アナライザーを追加、または、独自の SDK を作成できます。
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/visualstudio/extensibility/visual-studio-sdk">

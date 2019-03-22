@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bb21773a9cf5bd7ff9f34e1aabffeefb3dc00e2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2673b22bf502f019f0a10361c9d0cef9d5ac1b8c
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616490"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322533"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile 要素
   別のプロジェクトに含めるプロジェクト項目を SharePoint に配置されるときの出力を表します。
@@ -62,7 +62,7 @@ ms.locfileid: "56616490"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
 |**スキーマ名**|SharePoint プロジェクト項目のスキーマ|
 |**ファイルの検証**|ProjectItemModelSchema.xsd|
 |**空にすることができます。**|いいえ|

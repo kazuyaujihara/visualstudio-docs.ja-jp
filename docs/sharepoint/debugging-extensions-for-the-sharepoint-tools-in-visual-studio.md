@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875720"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324501"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio の SharePoint ツールの拡張機能をデバッグします。
   Visual Studio の実験用インスタンスまたは通常のインスタンスで、SharePoint ツールの拡張機能をデバッグできます。 拡張機能の動作をトラブルシューティングする必要がある場合は、レジストリ値を変更して、追加のエラー情報を表示し、Visual Studio での SharePoint コマンドの実行方法を構成することもできます。
@@ -56,7 +56,7 @@ ms.locfileid: "54875720"
 
 #### <a name="to-debug-the-extension"></a>拡張機能をデバッグするには
 
-1.  管理者特権で Visual Studio を起動し、拡張機能プロジェクトを開きます。 次の手順は、として Visual Studio のこのインスタンスを参照してください、*最初インスタンス*。
+1.  管理者特権で Visual Studio を開き、拡張機能プロジェクトを開きます。 次の手順は、として Visual Studio のこのインスタンスを参照してください、*最初インスタンス*。
 
 2.  Visual Studio の別のインスタンスを管理者特権で起動します。 次の手順は、として Visual Studio のこのインスタンスを参照してください、 *2 番目のインスタンス*します。
 

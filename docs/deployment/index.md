@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio では、アプリの配置に役立つさまざまなツールを提供しています。
 
+<!-- markdownlint-disable MD033 -->
+
 <h2>5 分間のクイック スタートで Visual Studio を配置してみる</h2>
 
 <ul class="panelContent cardsFTitle">

@@ -7,17 +7,13 @@ author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
 ms.workload:
-- data-storage
-ms.openlocfilehash: 4d92ea058830d5da769ad54ceb88e51aefa6112d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924735"
+  - data-storage
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Visual Studio でデータ ツールを使用してデータ ソリューションを開発する
 
 Visual Studio でデータ ツールを使用して、SQL Server、Azure Data Lake、または Hadoop を使用するデータ ソリューションを開発およびテストする方法を説明します。
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -114,7 +110,7 @@ Visual Studio でデータ ツールを使用して、SQL Server、Azure Data La
 
 ---
 
-<h2>参照</h2>
+<h2>関連項目</h2>
 
 <ul class="panelContent cardsW">
     <li>
@@ -123,7 +119,7 @@ Visual Studio でデータ ツールを使用して、SQL Server、Azure Data La
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Access data in Visual Studio></p>
+                        <p>Visual Studio でのデータへのアクセス</p>
                     </div>
                 </div>
             </div>

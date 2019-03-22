@@ -19,6 +19,7 @@ Visual Studio サブスクリプションは、Windows、iOS、Android、Linux �
 管理者が、[https://manage.visualstudio.com](https://manage.visualstudio.com) にサインインして、チームにサブスクリプションを割り当てます。<br>
 サブスクライバーが、[https://my.visualstudio.com](https://my.visualstudio.com) にサインインして、サブスクリプション特典にアクセスします。
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">

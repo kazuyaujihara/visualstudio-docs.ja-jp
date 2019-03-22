@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9b893ce699dd86f309a05fad83560cc42439551
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6860a91067daa6da1d4223ae5060385087ad3433
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619369"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323530"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties 要素
   SharePoint に配置されるときに、機能に含まれているプロパティ値のコレクション。 フィーチャーが配置されると、プロパティ値をコードでアクセスできます。
@@ -55,7 +55,7 @@ ms.locfileid: "56619369"
 
 |要素|説明|
 |-------------|-----------------|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
 |**スキーマ名**|SharePoint プロジェクト項目のスキーマ|
 |**ファイルの検証**|ProjectItemModelSchema.xsd|
 |**空にすることができます。**|いいえ|
