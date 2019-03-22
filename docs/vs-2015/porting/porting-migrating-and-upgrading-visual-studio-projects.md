@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805554"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194925"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Visual Studio の新しいバージョンに移行するかどうかを考慮す
 |Office 2007 VSTO|プロジェクトをアップグレードして、Office 2013 と .NET Framework 4 を対象にすると、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、または Visual Studio 2010 SP1 でこのプロジェクトを開くことができます。|
 |Office 2010 VSTO|.NET Framework 4 を対象とするプロジェクトの場合は、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、および Visual Studio 2010 SP1 でこのプロジェクトを開くことができます。 他のすべてのプロジェクトは、一方向のアップグレードが必要です。|
 |リッチ インターネット アプリケーション|プロジェクトをアップグレードした後は、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、および Visual Studio 2010 SP1 で開くことができます。|
-|SharePoint 2007|[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]でこのプロジェクトを開くことはできません。 ただし、プロジェクトを SharePoint 2010 に手動でアップグレードすると、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、および Visual Studio 2010 SP1 で開くことができます。 SharePoint 2007 をアップグレードする方法の詳細については、「[Migrating from SharePoint 2007 to SharePoint 2010 for the IT Pro](http://go.microsoft.com/fwlink/?LinkId=238224)」(IT プロフェッショナルのための SharePoint 2007 から SharePoint 2010 への移行)、「[Migrating a 2007 Workflow to Visual Studio & SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=238225)」(2007 ワークフローの Visual Studio および SharePoint 2010 への移行)、「[SharePoint Enterprise Search Migration Tool for SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=238226)」(SharePoint Server 2010 用の SharePoint エンタープライズ検索移行ツール) を参照してください。|
+|SharePoint 2007|[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]でこのプロジェクトを開くことはできません。 ただし、プロジェクトを SharePoint 2010 に手動でアップグレードすると、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、および Visual Studio 2010 SP1 で開くことができます。 SharePoint 2007 にアップグレードする方法の詳細については、次を参照してください[IT プロフェッショナル向け SharePoint 2007 から SharePoint 2010 への移行](http://go.microsoft.com/fwlink/?LinkId=238224)と[SharePoint エンタープライズ検索移行ツールの SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14))。|
 |SharePoint 2010|プロジェクトを [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、および Visual Studio 2010 SP1 で開くことができます。|
 |SketchFlow|Visual Studio でプロジェクトを WPF 4.5/Silverlight 5 にアップグレードすることを許可した場合は、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] と [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]で開くことができます。|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] データベース|プロジェクトを [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、および Visual Studio 2010 SP1 で開くことができます。 SQL Server の以前のバージョンで作成されたデータベース ファイル (.mdf) がある場合は、SQL Server Express LocalDB でファイルを使用する前に [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] にアップグレードする必要があります。ただし、そのデータベースはもう、SQL Server の以前のバージョンとの互換性がなくなります。 アップグレードしない場合は、同じコンピューターに [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] をインストールして使用することで、 [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] でデータベースを引き続き使用できます。 詳細については、次を参照してください。 [.mdf ファイルをアップグレードする](../data-tools/upgrade-dot-mdf-files.md)します。|
@@ -91,7 +91,7 @@ Visual Studio の新しいバージョンに移行するかどうかを考慮す
 
 - [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]でデスクトップ アプリのプロジェクトを開こうとすると、エラーが発生し、"このエディションの Visual Studio は、 [!INCLUDE[win81](../includes/win81-md.md)] アプリのみをサポートします。" または "このプロジェクトは、Visual Studio の現在のエディションと互換性がありません。" というメッセージが表示されます。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] は、Windows 8.1 向けに設計された Windows ストア アプリの開発、テスト、展開用に制限されています。 デスクトップ アプリ プロジェクトを開くには、そのプロジェクトの種類をサポートしている Visual Studio のエディションを使用する必要があります。
 
-   Visual Studio のエディションに関する詳細については、「 [Microsoft Visual Studio Products (Microsoft Visual Studio 製品)](http://go.microsoft.com/fwlink/?LinkId=254332)」をご覧ください。
+   Visual Studio のエディションに関する詳細については、「 [Microsoft Visual Studio Products (Microsoft Visual Studio 製品)](https://visualstudio.microsoft.com/products/)」をご覧ください。
 
 - [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop で Windows ストア アプリ プロジェクトを開こうとすると、エラーが発生します。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop を使用して Windows ストア アプリをビルドできません。 Windows ストア アプリをビルドするには、 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]をインストールします。 または、Microsoft のすべてのプラットフォームと Web 用のアプリを開発するには、Visual Studio Professional 2013 を試してください。
 

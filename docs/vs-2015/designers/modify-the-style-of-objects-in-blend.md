@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9d010b8218dca94e4d9bcbf1e7d48088758f5ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d488149302e21f6e46f1c20a32fb7aecefe8337
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781376"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869303"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Blend におけるオブジェクト スタイルの変更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54781376"
 ##  <a name="Brushes"></a> ブラシ: オブジェクトの外観を変更する  
  外観を変更する場合は、オブジェクトにブラシを適用します。  
   
- **短いビデオを見る:**![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [ブラシ エディター](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor)します。  
+ **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [ブラシ エディター](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor)  
   
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>繰り返しイメージまたはパターンでオブジェクトを塗りつぶします。  
  繰り返しイメージやパターンでオブジェクトを塗りつぶすには、*タイル ブラシ*を使用します。  
@@ -55,7 +55,7 @@ ms.locfileid: "54781376"
   
  ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **短いビデオを見る:**![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [タイル ブラシ](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes)します。  
+ **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [タイル ブラシ](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes)  
   
 ##  <a name="Styles"></a> スタイルとテンプレート: コントロール全体で一貫したルック アンド フィールを作成する  
  コントロールの外観と動作を一度にデザインし、個別に維持しなくてもよいように、そのデザインを他のコントロールにも適用することができます。  
@@ -92,9 +92,7 @@ ms.locfileid: "54781376"
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [スタイルを作成する](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95)します。  
-  
- **短いビデオを見る:**![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Expression Blend でコントロール テンプレートの作成](http://msdn.microsoft.com/expression/cc263912.aspx)です。  
+ **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [スタイルを作成する](https://www.youtube.com/watch?v=W8YdXDPeKdc)  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>コントロールにスタイルまたはテンプレートを適用する  
  [[オブジェクトとタイムライン]](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) パネルでオブジェクトを右クリックして、**[テンプレートの編集]**、**[リソースの適用]** の順に選択します。  
@@ -109,14 +107,14 @@ ms.locfileid: "54781376"
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [、WPF コントロールの状態を管理](https://www.youtube.com/watch?v=m0PlkF5i6uw)します。  
+ **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [WPF コントロールの状態を管理する](https://www.youtube.com/watch?v=m0PlkF5i6uw)  
   
 ##  <a name="Resources"></a> リソース: 色、スタイル、テンプレートを作成し、後で再利用する  
  プロジェクトにあるあらゆるものをリソースに変換できます。 リソースは、 アプリケーションのさまざまな場所で再利用できるオブジェクトです。 たとえば、1 回色を作成し、リソースにしてから、その色を複数のオブジェクトに使用することができます。 これらすべてのオブジェクトの色を変更するには、単に色リソースを変更します。  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [リソースの簡単なタッチ](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources)します。  
+ **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [リソースの簡単な説明](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources)  
   
 ## <a name="see-also"></a>関連項目
  [Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

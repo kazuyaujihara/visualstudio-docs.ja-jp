@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f53376d1cff79dd69b7fb17704c4ddae8803c46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913185"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872389"
 ---
 # <a name="improve-performance-for-code-maps"></a>コード マップのパフォーマンスを向上させる
 
 マップを初めて生成したときに、Visual Studio は、見つかったすべての依存関係のインデックスを作成します。 このプロセスは、大規模なソリューションは、特に、しばらく時間がかかる場合がありますが、後でパフォーマンスが向上します。 コードが変更された場合、Visual Studio では、更新されたコードだけにインデックスが付け直されます。 マップのレンダリングを完了するのにかかる時間を最小限に抑えるには、次の推奨事項を考慮してください。
 
-- [目的の依存関係のみをマップする。](#create-a-code-map-to-see-specific-dependencies)
+- 目的の依存関係のみをマップする。
 
 - ソリューション全体のマップを生成する前に、ソリューションのスコープを縮小する。
 

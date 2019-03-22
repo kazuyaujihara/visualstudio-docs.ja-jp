@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c2c73e4c74502c047251bd64a2f6d3550cf7fe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642834"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867565"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>パッケージ化し、SharePoint ソリューションのデプロイ
   通常、ソリューション パッケージ (.wsp) ファイルを使用して、SharePoint サーバーに SharePoint ソリューションをデプロイします。 Visual Studio を使用して機能に、SharePoint プロジェクト アイテムを整理して、SharePoint の機能を展開するパッケージを作成することができます。
 
  ここでは、次の情報について説明します。
 
--   [フィーチャーとパッケージの作成](#Creating)
+-   [フィーチャーとパッケージを作成します。](#create-features-and-packages)
 
--   [機能およびツールのサポートをパッケージ化](#Tools)
+-   [機能およびパッケージ化ツールのサポート](#feature-and-packaging-tool-support)
 
--   [SharePoint ソリューションの配置](#Deploying)
+-   [SharePoint ソリューションを配置します。](#deploy-sharepoint-solutions)
 
--   [SharePoint ソリューション内のファイルを展開します。](#DeployingFiles)
+-   [ファイルの SharePoint ソリューションをデプロイします。](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>フィーチャーとパッケージを作成します。
  Visual Studio を使用すると、グループに関連する SharePoint 要素、*機能*します。 たとえば、連絡先リスト定義の機能では、リスト インスタンスと、リスト定義を含めることができます。 配置用に 1 つの機能には、これら 2 つの要素を組み合わせることができます。 機能の詳細については、次を参照してください。[ビルディング ブロック。機能](http://go.microsoft.com/fwlink/?LinkID=169183)します。

@@ -1,5 +1,6 @@
 ---
-title: どのような&#39;ソース管理の新 |Microsoft Docs
+title: 新機能については、Visual Studio 2015 SDK のソースの管理 |Microsoft Docs
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +12,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cef16af2fabd12b7567cd9a86b60aa5fde355842
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3b667a6c6322a925b49290ab3234788a4eee3544
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603929"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867957"
 ---
-# <a name="what39s-new-in-source-control"></a>どのような&#39;s ソース管理の新機能
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]深く統合ソース制御ソリューションをソース管理 VSPackage を実装することによって行うことができます。 このセクションでは、ソース管理 Vspackage の機能について説明し、実装の手順の概要を説明します。
+# <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>新機能については、Visual Studio 2015 SDK のソース管理です。
+
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]、ソース管理 VSPackage を実装して深く統合ソース制御ソリューションを提供することができます。 このセクションでは、ソース管理 Vspackage の機能について説明し、実装の手順の概要を説明します。
 
 ## <a name="the-source-control-vspackage"></a>ソース管理 VSPackage
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ソース管理ソリューションの 2 つの種類をサポートしています。 すべてのバージョンの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、ソース管理プラグイン API ベースを統合することができますもプラグイン。 深い統合を提供するソース管理 VSPackage を作成することもできます。[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]面の知識と自律性の高いレベルを必要とするソース管理ソリューションに適したパス。
 
- VSPackage は、ほとんどの機能の種類を追加できます[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 ソース管理 VSPackage の完全なソース制御機能を提供する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、ソース管理システムとのバック エンド通信をユーザーに表示される UI から。
+Visual Studio では、ソース管理ソリューションの 2 つの種類をサポートします。 すべてのバージョンの Visual Studio では、統合することできますもソース管理プラグイン API ベース プラグイン。 深い統合、ソース管理 VSPackage を作成することもできます。[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]面の知識と自律性の高いレベルを必要とするソース管理ソリューションに適したパス。
 
- ソース管理 VSPackage の実装には、「全部かゼロか」の戦略が必要です。 ソース管理 VSPackage の作成者とインターフェイスでさまざまなソース コントロールのインターフェイスと (ダイアログ ボックス、メニューのおよびツールバー) 全体のソース管理機能をカバーする、新しい UI 要素を実装する作業量が大幅に投資する必要があります。すべてのパッケージと正常に統合するために必要な[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
+VSPackage では、Visual Studio を機能のほとんどの種類を追加できます。 ソース管理 VSPackage では、ソース管理システムとのバック エンド通信をユーザーに表示される UI から、Visual Studio の完全なソース コントロールの機能を提供します。
 
- 次の手順では、ソース管理パッケージを実装するために必要なものの概要を提供します。 詳細については、次を参照してください。[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)します。
+ソース管理 VSPackage の実装には、「全部かゼロか」の戦略が必要です。 ソース管理 VSPackage の作成者とインターフェイスでさまざまなソース コントロールのインターフェイスと (ダイアログ ボックス、メニューのおよびツールバー) 全体のソース管理機能をカバーする、新しい UI 要素を実装する作業量が大幅に投資する必要があります。Visual Studio と正常に統合するすべてのパッケージの必要です。
+
+次の手順では、ソース管理パッケージを実装するために必要なものの概要を提供します。 詳細については、次を参照してください。[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)します。
 
 1. プライベート ソース管理サービスを proffers VSPackage を作成します。
 
-2. によって提供される、ソース コントロールに関連するサービスで、インターフェイスを実装[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)](たとえば、<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>インターフェイス)。
+2. Visual Studio によって提供される、ソース コントロールに関連するサービスで、インターフェイスを実装 (たとえば、<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>インターフェイス)。
 
 3. ソース管理 VSPackage を登録します。
 
@@ -43,6 +46,7 @@ ms.locfileid: "56603929"
 6. ソース管理 VSPackage が実装するようなイベントをリッスンする必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>トラック プロジェクト ドキュメント (TPD) のイベントとインターフェイス (によって実装される、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>インターフェイス)、必要な操作をします。
 
 ## <a name="see-also"></a>関連項目
+
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>

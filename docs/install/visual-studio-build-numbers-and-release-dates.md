@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/14/2019
+ms.date: 03/07/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: fceccbc77b2999124e1d2af50a53cfd044556312
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ddba89da33d06b740978fe2972863a2c3177496f
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317992"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567410"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio のビルド番号とリリース日
 
@@ -27,6 +27,7 @@ ms.locfileid: "56317992"
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.8 | 解放 | 2019 年 3 月 5 日 | 15.9.28307.481 |
 | 15.9.7 | 解放 | 2019 年 2 月 12 日 | 15.9.28307.423 |
 | 15.0.21 | 解放 | 2019 年 2 月 12 日 | 15.0.26228.73 |
 | 15.9.6 | 解放 | 2019 年 1 月 24 日 | 15.9.28307.344 |
@@ -171,12 +172,18 @@ ms.locfileid: "56317992"
 | 15.1 Preview 1 | [プレビュー] | 2017 年 3 月 7 日 | 15.0.26304.0 |
 | 15.0.0 | 解放 | 2017 年 3 月 7 日 | 15.0.26228.4 |
 
-## <a name="visual-studio-2019-preview"></a>Visual Studio 2019 Preview
+## <a name="visual-studio-2019"></a>Visual Studio 2019
 
-次の表は、Visual Studio 2019 Preview の現在までのビルド番号およびリリース日のリストです。
+次の表は、Visual Studio 2019 の現在までのビルド番号およびリリース日のリストです。
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | リリース候補 1 Svc1 (RC.1 Svc1) | 2019 年 3 月 6 日 | 16.0.28705.295 |
+| 16.0.0 | プレビュー 4.1 Svc1 | 2019 年 3 月 6 日 | 16.0.28705.295 |
+| 16.0.0 | リリース候補 1 (RC.1) | 2019 年 3 月 5 日 | 16.0.28701.123 |
+| 16.0.0 | プレビュー 4.1 | 2019 年 3 月 5 日 | 16.0.28701.123 |
+| 16.0.0 | リリース候補 (RC) | 2019 年 2 月 27 日 | 16.0.28625.133 |
+| 16.0.0 | Preview 4 | 2019 年 2 月 27 日 | 16.0.28625.133 |
 | 16.0.0 | Preview 3 | 2019 年 2 月 13 日 | 16.0.28608.199 |
 | 16.0.0 | Preview 2.2 | 2019 年 2 月 5 日 | 16.0.28602.52 |
 | 16.0.0 | Preview 2.1 | 2019 年 1 月 31 日 | 16.0.28529.54 |

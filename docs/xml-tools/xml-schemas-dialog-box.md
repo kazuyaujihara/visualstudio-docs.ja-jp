@@ -1,19 +1,21 @@
 ---
-title: '[XML スキーマ] ダイアログ ボックス'
+title: XML スキーマ
 ms.date: 11/04/2016
 ms.topic: reference
+f1_keywords:
+- vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed45f6444eb76d89488e8d9b27d1725c217d6fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5323582bfe945bc031b9fd02fcf96bb615bcceb
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930879"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57524924"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML スキーマ ダイアログ ボックス
 
@@ -22,15 +24,16 @@ ms.locfileid: "55930879"
 アクセスできる、 **XML スキーマ** ダイアログ ボックスをクリックするか、**スキーマ**ドキュメントのプロパティ ウィンドウで、または選択してボタン**スキーマ**から**XML**メニュー。
 
 ## <a name="uielement-list"></a>UIElement の一覧
- **使用**
 
- XML スキーマの使用方法を選択します。
+**使用**
 
--   **自動**します。 このスキーマは現在のドキュメントで使用されていませんが、自動的な関連付けには使用できます。 XML ドキュメントでこのスキーマの `targetNamespace` に一致する名前空間を宣言すると、スキーマが自動的に関連付けられ、スキーマ セットに含まれます。
+XML スキーマの使用方法を選択します。
 
--   **このスキーマを使用して、** します。 このスキーマは、現在のドキュメントで使用されています。 ユーザーがこの列をクリックしてこのスキーマが使用されることを明示的に要求したか、一致する `targetNamespace` に基づいてスキーマが自動的に関連付けられたかのいずれかです。
+- **自動**します。 このスキーマは現在のドキュメントで使用されていませんが、自動的な関連付けには使用できます。 XML ドキュメントでこのスキーマの `targetNamespace` に一致する名前空間を宣言すると、スキーマが自動的に関連付けられ、スキーマ セットに含まれます。
 
--   **選択したスキーマを使用しないでください**します。 スキーマに一致する `targetNamespace` がある場合でも、このスキーマは現在のドキュメントで使用されません。 この設定は、スキーマ キャッシュまたはソリューションに同じスキーマのバージョンが複数存在する場合の競合を解決する際に役立ちます。
+- **このスキーマを使用して、** します。 このスキーマは、現在のドキュメントで使用されています。 ユーザーがこの列をクリックしてこのスキーマが使用されることを明示的に要求したか、一致する `targetNamespace` に基づいてスキーマが自動的に関連付けられたかのいずれかです。
+
+- **選択したスキーマを使用しないでください**します。 スキーマに一致する `targetNamespace` がある場合でも、このスキーマは現在のドキュメントで使用されません。 この設定は、スキーマ キャッシュまたはソリューションに同じスキーマのバージョンが複数存在する場合の競合を解決する際に役立ちます。
 
 **Target Namespace**
 
@@ -50,6 +53,5 @@ XML スキーマ ファイル名が表示されます。
 
 ## <a name="see-also"></a>関連項目
 
-- [XML エディターのコンポーネント](../xml-tools/xml-editor-components.md)
 - [方法: 使用する XML スキーマを選択します。](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [スキーマ キャッシュ](../xml-tools/schema-cache.md)

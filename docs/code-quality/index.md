@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio では、コードの品質の分析と向上のためのさまざまなツールを提供しています。
 
+<!-- markdownlint-disable MD033 -->
+
 <br />
 
 <ul class="panelContent cardsFTitle">

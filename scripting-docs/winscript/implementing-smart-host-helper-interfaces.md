@@ -1,8 +1,7 @@
-﻿---
+---
 title: スマート ホスト ヘルパー インターフェイスの実装 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aff2d43d36fd543eea12d7fc60d3c56271af641
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: d79d1a4176a10ea236d1ac91084bdcbfd5ca73d1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088349"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154596"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>スマート ホスト ヘルパー インターフェイスの実装
 [IDebugDocumentHelper インターフェイス](../winscript/reference/idebugdocumenthelper-interface.md)は、スマート ホストに必要な多くのインターフェイスの実装を提供することで、アクティブ デバッグ用のスマート ホストを作成するタスクを大幅に簡略化します。  
@@ -105,5 +104,5 @@ pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew
   
 -   ファイル システムでのドキュメントのパス名を提供します。 一部のデバッグ UI はこれを使って、ユーザーがドキュメントを編集して変更を保存できるようにします。 ドキュメントが保存された後は、ホストに通知するために [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) が呼び出されます。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [アクティブ スクリプトのデバッグの概要](../winscript/active-script-debugging-overview.md)

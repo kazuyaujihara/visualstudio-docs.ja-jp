@@ -8,18 +8,20 @@ items:
     href: docker-tools.md
   - name: 'チュートリアル: Docker Compose を使用した複数コンテナーのアプリ'
     href: tutorial-multicontainer.md
-  - name: ローカルの Docker コンテナーでアプリをデバッグする
+  - name: 'チュートリアル: Visual Studio での Kubernetes'
+    href: tutorial-kubernetes-tools.md
+  - name: ローカルの Docker コンテナーでのアプリのデバッグ
     href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: Visual Studio を使用して ASP.NET Docker コンテナーをコンテナー レジストリにデプロイする
+  - name: コンテナー レジストリに配置する
     href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: VirtualBox を使用した Docker ホストの構成
-    href: vs-azure-tools-docker-setup.md
-  - name: Docker を使用した Visual Studio 2017 開発のトラブルシューティング
+  - name: Azure App Service に配置する
+    href: docker-deploy-app-service.md
+  - name: Docker を使用した Visual Studio 開発のトラブルシューティング
     href: vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 6b2ede8520ff6919c5bbd370e320bdb661fa487e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: af94841d54c8c045af72dfc4597bae047778a5a3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223339"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160028"

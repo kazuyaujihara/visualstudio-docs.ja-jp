@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f9d984cabdb9e29ff1f5eac1734105d2a3e2f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 311503aed0787fece7985d7df1f6dc2d4ddd03b2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913955"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526244"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>方法: XML スキーマから XML スニペットを生成します。
 
-XML エディターは、XML スキーマ定義言語 (XSD) スキーマから XML スニペットを生成する機能を備えています。 たとえば、要素名の横に配置する一方、XML ファイルを作成して、キーを押して**タブ**要素にその要素のスキーマ情報から生成された XML データを格納します。
+XML エディターには、XML スキーマ定義言語 (XSD) スキーマから XML スニペットを生成する機能があります。 たとえば、要素名の横に配置する一方、XML ファイルを作成して、キーを押して**タブ**要素にその要素のスキーマ情報から生成された XML データを格納します。
 
 この機能は、要素に対してのみ使用できます。 次の規則も適用されます。
 
@@ -43,7 +43,7 @@ XML エディターは、XML スキーマ定義言語 (XSD) スキーマから X
 
 ## <a name="example"></a>例
 
- このセクションの手順では、スキーマ生成の XML スニペット機能の XML エディターを使用する方法を示します。
+ このセクションの手順では、XML エディターのスキーマから生成される XML スニペット機能を使用する方法を示します。
 
 > [!NOTE]
 > この手順を開始する前に、スキーマ ファイルをローカル コンピューターに保存してください。

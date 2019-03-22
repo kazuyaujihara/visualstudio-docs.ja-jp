@@ -28,7 +28,7 @@ ms.locfileid: "56631849"
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Visual Basic のプロセスは、Visual c# プロセスからは異なります。 詳細については、「[方法 :Visual C での vba コードに公開&#35;プロジェクト](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)します。
+ Visual Basic のプロセスは、Visual C# プロセスからは異なります。 詳細については、「[方法 :Visual C での vba コードに公開&#35;プロジェクト](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)します。
 
  他のクラス内のコードよりも、ホスト項目クラスにコードの異なるプロセス。
 

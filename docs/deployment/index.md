@@ -1,22 +1,18 @@
 ---
 layout: LandingPage
 title: アプリの配置 | Microsoft Docs
-description: Visual Studio 2017 を使用してアプリケーション、サービス、およびコンポーネントを配置する方法について説明します。
+description: Visual Studio を使ってアプリケーション、サービス、およびコンポーネントを配置する方法について説明します。
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 4f6d81af23ba5763b89b19b29cb493e6cb59c8ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947122"
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio での配置
 
 Visual Studio では、アプリの配置に役立つさまざまなツールを提供しています。
+
+<!-- markdownlint-disable MD033 -->
 
 <h2>5 分間のクイック スタートで Visual Studio を配置してみる</h2>
 

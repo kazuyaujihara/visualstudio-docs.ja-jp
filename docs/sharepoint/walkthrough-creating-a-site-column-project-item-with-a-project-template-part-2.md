@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0445e66b10ca8bfa0ae4f5d2c35246d71745788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 79c27ec92d93f9f9cd88cc1155521b04ea7c2908
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604866"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868105"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>チュートリアル: プロジェクト テンプレート、第 2 部でサイト列プロジェクト項目を作成します。
   SharePoint プロジェクト項目のカスタム種類を定義し、Visual Studio でその種類をプロジェクト テンプレートと関連付けてから、テンプレート用のウィザードを用意することもできます。 ウィザードを使用すると、ユーザーがテンプレートを使用してプロジェクト項目を含む新しいプロジェクトを作成するときに、ユーザーから情報を収集できます。 収集した情報を使用して、プロジェクト項目を初期化できます。
@@ -195,7 +195,7 @@ ms.locfileid: "56604866"
 
 - プロジェクト署名マネージャー。
 
-  これらのコンポーネントの詳細については、次を参照してください。[ウィザードのコンポーネントについて](#wizardcomponents)します。
+  これらのコンポーネントの詳細については、次を参照してください。[ウィザード コンポーネントを理解して](#understand-the-wizard-components)します。
 
 #### <a name="to-define-the-sharepoint-command-ids"></a>SharePoint コマンド ID を定義するには
 

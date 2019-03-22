@@ -29,16 +29,24 @@ items:
   items:
   - name: マネージド コードのコード分析
     items:
-    - name: FxCop アナライザーに関する FAQ
-      href: fxcop-analyzers-faq.md
-    - name: FxCop からの移行
-      href: fxcop-analyzers.yml
+    - name: FXCop アナライザー
       items:
-      - name: FxCop アナライザーのインストール
+      - name: よくあるご質問
+        href: fxcop-analyzers-faq.md
+      - name: インストール
         href: install-fxcop-analyzers.md
+      - name: を構成する。
+        href: configure-fxcop-analyzers.md
+        items:
+        - name: 構成オプション
+          href: fxcop-analyzer-options.md
+      - name: 静的コード分析からの移行
+        href: fxcop-analyzers.yml
+    - name: アナライザーに関する FAQ
+      href: analyzers-faq.md
     - name: Roslyn アナライザーのインストール
       href: install-roslyn-analyzers.md
-    - name: Roslyn アナライザーの構成と使用
+    - name: Roslyn アナライザーの使用と構成
       href: use-roslyn-analyzers.md
     - name: 自動コード分析を有効にする
       href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
@@ -119,7 +127,7 @@ items:
       href: how-to-generate-code-metrics-data.md
     - name: コード メトリックス データの操作
       href: working-with-code-metrics-data.md
-- name: 参照
+- name: 関連項目
   items:
   - name: 規則セット
     href: rule-set-reference.md
@@ -479,6 +487,8 @@ items:
         href: ca2004-remove-calls-to-gc-keepalive.md
       - name: CA2006:SafeHandle を使用して、ネイティブ リソースを要約します
         href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+      - name: CA2007:タスクを直接待機しないでください
+        href: ca2007-do-not-directly-await-task.md
     - name: セキュリティの警告
       href: security-warnings.md
       items:
@@ -671,7 +681,7 @@ items:
         href: ca2243-attribute-string-literals-should-parse-correctly.md
     - name: コード分析ポリシー エラー
       href: code-analysis-policy-errors.md
-  - name: C++ Core ガイドライン チェッカーの警告
+  - name: C++ Core Guidelines チェッカーの警告
     href: code-analysis-for-cpp-corecheck.md
     items:
     - name: C26400
@@ -828,7 +838,7 @@ items:
       href: C26497.md
     - name: C26498
       href: C26498.md
-  - name: C/C++ コードの警告に対応するコードの分析
+  - name: C/C++ のコード分析に関する警告
     href: code-analysis-for-c-cpp-warnings.md
     items:
     - name: C1250
@@ -1468,9 +1478,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd エラー
       href: fxcopcmd-errors.md
-ms.openlocfilehash: 4d6e4458e334cc1d51b65ae9ba8eaeb83fc70aa2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: daaf61f508d3e14c26044b181c478e5701afe6ed
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835151"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868123"

@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864875"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194059"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense の C++ プロジェクトを構成する
 
@@ -52,7 +52,7 @@ NMake プロジェクト テンプレートに基づくメイクファイル プ
 
 ### <a name="open-folder-projects"></a>"フォルダーを開く" プロジェクト
 
-CMake プロジェクトの場合は、CMakeLists.txt ですべての構成に対して #include パスが正しく指定されていることを確認します。 その他のプロジェクトの種類では、CppProperties.json ファイルが必要になる場合があります。 詳細については、[CppProperties.json を使って IntelliSense を構成する](/cpp/ide/non-msbuild-projects#cppproperties)に関するページを参照してください。 ファイルで定義されている各構成に対するパスが正しいことを確認します。
+CMake プロジェクトの場合は、CMakeLists.txt ですべての構成に対して #include パスが正しく指定されていることを確認します。 その他のプロジェクトの種類では、CppProperties.json ファイルが必要になる場合があります。 詳細については、[CppProperties.json を使って IntelliSense を構成する](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson)に関するページを参照してください。 ファイルで定義されている各構成に対するパスが正しいことを確認します。
 
 CppProperties.json ファイルに構文エラーがある場合、影響を受けるファイル内の IntelliSense は不正になります。 Visual Studio の出力ウィンドウにエラーが表示されます。
 
@@ -72,9 +72,9 @@ Visual Studio では、この問題を明示する 2 つの一般的な方法が
 
    ![タグ パーサーにより既存の関数の定義が提案される](media/vcpp-intellisense-tag-parser-function.png)
 
-この種の問題を解決するには、**cpp.hint** という名前のファイルをソリューション ディレクトリのルートに追加します。 詳細については、「[ヒント ファイル](/cpp/ide/hint-files)」を参照してください。
+この種の問題を解決するには、**cpp.hint** という名前のファイルをソリューション ディレクトリのルートに追加します。 詳細については、「[ヒント ファイル](/cpp/build/reference/hint-files)」を参照してください。
 
-**Visual Studio 2017 バージョン 15.7** タグ パーサーのエラーは、[エラー一覧] ウィンドウに表示されます。
+タグ パーサーのエラーは、**[エラー一覧]** ウィンドウに表示されます。
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>診断ログでプロジェクト設定を検証する
 
@@ -107,7 +107,7 @@ Visual Studio では、専用の C++ コンパイラを使用して、すべて�
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>IntelliSense のビルド エラーのトラブルシューティング
 
-IntelliSense のビルドでは、バイナリは作成されませんが、それでもエラーが発生する可能性があります。 エラーの考えられる原因の 1 つは、.props や .targets のカスタム ファイルです。 Visual Studio 2017 バージョン 15.6 では、IntelliSense 専用のビルド エラーが出力ウィンドウに記録されます。 これらを表示するには、**[出力元の表示]** を **[ソリューション]** に設定します。
+IntelliSense のビルドでは、バイナリは作成されませんが、それでもエラーが発生する可能性があります。 エラーの考えられる原因の 1 つは、.props や .targets のカスタム ファイルです。 Visual Studio 2017 バージョン 15.6 以降では、IntelliSense 専用のビルド エラーが出力ウィンドウに記録されます。 これらを表示するには、**[出力元の表示]** を **[ソリューション]** に設定します。
 
 ![ソリューション エラーの出力ウィンドウ](media/vcpp-intellisense-output-window.png)
 

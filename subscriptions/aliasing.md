@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: 別名またはフレンドリ名の使用でサインインに失敗する場合がある
 searchscope: VS Subscription
-ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841628"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195152"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>別名を使用した Visual Studio サブスクリプションへのサインインが失敗する場合がある
 
@@ -28,7 +28,7 @@ ms.locfileid: "56841628"
 
 管理者には、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) でユーザーのサインインを確実に成功させるために、次の 2 つのオプションがあります。
 - 1 番目のオプション (推奨) は、ディレクトリ アカウントをボリューム ライセンス サービス センター (VLSC) で割り当てられたアドレスとして利用することです。 詳細については、この記事の「[サブスクライバーをディレクトリ アカウントに割り当てる](#assigning-subscribers-to-a-directory-account)」セクションを参照してください。
-- 2 番目のオプション (安全性で劣る) は、サブスクライバーに自身の "職場または学校" のメール アドレスを "個人用" アカウント (別名:  Microsoft アカウント (MSA)) に関連付けることを許可することです。 詳細については、この記事の「[職場または学校アカウントを個人用アカウントとして定義する](#defining-a-work-or-school-account-as-a-personal-account )」セクションを参照してください。
+- 2 番目のオプション (安全性で劣る) は、サブスクライバーに自身の "職場または学校" のメール アドレスを "個人用" アカウント (別名:  Microsoft アカウント (MSA)) に関連付けることを許可することです。 詳細については、この記事の「[職場または学校アカウントを個人用アカウントとして定義する](#defining-a-work-or-school-account-as-a-personal-account)」セクションを参照してください。
 
 > [!NOTE]
 > 会社が新しい Visual Studio サブスクリプションの[管理ポータル](https://manage.visualstudio.com)に移行すると、ディレクトリとメール アドレスの両方をサブスクライバーのプロファイルの一部として指定できる、新しい管理エクスペリエンスが利用できるようになります。 移行の詳細については、[こちら](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)をご覧ください。

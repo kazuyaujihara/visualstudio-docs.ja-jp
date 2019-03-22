@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dee0372bc660d2246ead2ecc5340474c96230cbd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713153"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526582"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>超初心者でもわかるデバッグ方法
 
@@ -78,7 +78,7 @@ Visual Studio では、コード行の左にある余白をクリックして、
 
 1. Visual Studio をインストールし、作成するアプリの種類に応じて、**.NET デスクトップ開発**ワークロードまたは **.NET Core クロス プラットフォーム開発**ワークロードをインストールする必要があります。
 
-    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
 
     Visual Studio は既にインストールされていて、ワークロードだけをインストールする必要がある場合は、**[ツール]** > **[ツールと機能を取得]** の順にクリックします。 Visual Studio インストーラーが起動します。 **[.NET デスクトップ開発]** または **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、**[変更]** を選択します。
 

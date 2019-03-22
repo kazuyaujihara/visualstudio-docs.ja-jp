@@ -40,7 +40,7 @@ items:
     - name: Git を使用した Azure への ASP.NET Core の継続的な配置
       href: /aspnet/core/publishing/azure-continuous-deployment
     - name: Visual Studio Kubernetes ツールを使用して Kubernetes に発行する
-      href: tutorial-kubernetes-tools.md
+      href: ../containers/tutorial-kubernetes-tools.md?toc=/visualstudio/deployment/toc.json
   - name: C++
     items:
     - name: C/C++ アプリを配置する
@@ -245,7 +245,7 @@ items:
         href: strings-element-bootstrapper.md
       - name: <Schedules> 要素 (ブートストラップ)
         href: schedules-element-bootstrapper.md
-- name: 参照
+- name: 関連項目
   items:
   - name: ClickOnce に関するリファレンス
     href: clickonce-reference.md
@@ -290,9 +290,9 @@ items:
         href: customerrorreporting-element-clickonce-deployment.md
     - name: ClickOnce アンマネージ API リファレンス
       href: clickonce-unmanaged-api-reference.md
-ms.openlocfilehash: a48576850789721b47c57183babcd3dd45d3e7e3
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: ea0d78149670c3b3d180104c25f5cffa3f3cb1fa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571123"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526452"

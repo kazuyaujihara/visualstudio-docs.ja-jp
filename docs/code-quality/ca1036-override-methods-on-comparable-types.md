@@ -1,6 +1,6 @@
 ---
 title: CA1036:比較可能な型でメソッドをオーバーライドします
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1036
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab36be0233ad83c5f1ec23b3511937eda07940c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12b00c202373310b04021a46e74af2af7e10d535
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952997"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868874"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036:比較可能な型でメソッドをオーバーライドします
 
@@ -27,11 +27,14 @@ ms.locfileid: "55952997"
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
 |CheckId|CA1036|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- パブリックまたはプロテクト型を実装、<xref:System.IComparable?displayProperty=fullName>インターフェイスをオーバーライドしない<xref:System.Object.Equals%2A?displayProperty=fullName>または等しいかどうか、非等値、言語固有の演算子が小さいオーバー ロードできません- か、大きい-よりもします。 ルールは、型がインターフェイスの実装のみを継承する場合、違反を報告しません。
+
+型を実装する、<xref:System.IComparable?displayProperty=fullName>インターフェイスをオーバーライドしない<xref:System.Object.Equals%2A?displayProperty=fullName>または等しいかどうか、非等値、言語固有の演算子が小さいオーバー ロードできません- か、大きい-よりもします。 ルールは、型がインターフェイスの実装のみを継承する場合、違反を報告しません。
+
+既定では、このルールのみが検索に、パブリックおよびプロテクトの種類が、これは[構成可能な](#configurability)します。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -42,11 +45,8 @@ ms.locfileid: "55952997"
 このルールの違反を修正するには、オーバーライド<xref:System.Object.Equals%2A>します。 使用するプログラミング言語では、演算子のオーバー ロードをサポートする場合は、次の演算子を指定します。
 
 - op_Equality
-
 - op_Inequality
-
 - op_LessThan
-
 - op_GreaterThan
 
 C# でこれらの演算子を表すために使用されるトークンは次のとおりです。
@@ -59,17 +59,28 @@ C# でこれらの演算子を表すために使用されるトークンは次�
 ```
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- Ca 1036 演算子と、プログラミング言語がないために、違反が発生する場合が演算子のオーバー ロードをサポートしていません Visual Basic の場合と同様のルールから警告を抑制しても安全です。 Op_Equality 演算子を実装するいると判断した場合は、アプリケーションのコンテキストで意味を成しません以外の等値演算子を発生させるときにこの規則からの警告を抑制しても安全です。 ただしは常に op_Equality 経由で、Object.Equals をオーバーライドする場合は、演算子を = =。
 
-## <a name="example"></a>例
- 次の例には、正しく実装する型が含まれています。<xref:System.IComparable>します。 コードのコメントを関連するさまざまなルールを満たすメソッドを識別する<xref:System.Object.Equals%2A>と<xref:System.IComparable>インターフェイス。
+Ca 1036 演算子と、プログラミング言語がないために、違反が発生する場合が演算子のオーバー ロードをサポートしていません Visual Basic の場合と同様のルールから警告を抑制しても安全です。 演算子の実装は無意味でアプリのコンテキストを判断した場合にも op_Equality 以外の等値演算子を発生させるときにこの規則による警告を抑制する安全です。 、Op_Equality が常にオーバーライドする必要があります、= = をオーバーライドする場合にオペレーター<xref:System.Object.Equals%2A?displayProperty=nameWithType>します。
 
- [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
+## <a name="configurability"></a>構成機能
 
-## <a name="example"></a>例
- 次のアプリケーションの動作をテストする、<xref:System.IComparable>前に示した実装します。
+この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
- [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
+```
+dotnet_code_quality.ca1036.api_surface = private, internal
+```
+
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+
+## <a name="examples"></a>使用例
+
+次のコードには、正しく実装する型が含まれています。<xref:System.IComparable>します。 コードのコメントを関連するさまざまなルールを満たすメソッドを識別する<xref:System.Object.Equals%2A>と<xref:System.IComparable>インターフェイス。
+
+[!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
+
+次のアプリケーション コードの動作をテストする、<xref:System.IComparable>前に示した実装します。
+
+[!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 
 ## <a name="see-also"></a>関連項目
 

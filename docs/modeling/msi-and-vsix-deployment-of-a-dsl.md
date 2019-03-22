@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548a8a4ec05c0ee88e68095a5322a8831e77b9b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 664d323976692d20a3f9f9bb8a7e66c0aa4f9761
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937343"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58069607"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL の MSI および VSIX 配置
 自分のコンピューターまたは他のコンピューターでは、ドメイン固有言語をインストールできます。 Visual Studio は、ターゲット コンピューターに既にインストールする必要があります。
@@ -25,14 +25,15 @@ ms.locfileid: "55937343"
 |VSX (Visual Studio 拡張機能)|非常に簡単にデプロイします。コピーを実行、 **.vsix** DslPackage プロジェクトからのファイル。<br /><br /> 詳細については、次を参照してください。[をインストールすると、VSX を使用して DSL をアンインストール](#Installing)します。|
 |MSI (インストーラー ファイル)|-DSL のファイルをダブルクリックして Visual Studio を開くことを許可します。<br />-対象のコンピューターで DSL のファイルの種類のアイコンに関連付けます。<br />-DSL のファイルの種類 XSD (XML スキーマ) に関連付けます。 これにより、ファイルが Visual Studio に読み込まれると、警告を回避できます。<br /><br /> MSI を作成するソリューションには、セットアップ プロジェクトを追加する必要があります。<br /><br /> 詳細については、次を参照してください。 [MSI ファイルを使用して DSL を展開する](#msi)します。|
 
-## <a name="Installing"></a> インストールして、VSX を使用して DSL をアンインストールします。
- このメソッドでは、DSL をインストール、ユーザーは、Visual Studio 内から DSL ファイルを開くことができますが、Windows エクスプ ローラーからファイルを開くことができません。
+## <a name="Installing"></a> インストールし、VSX を使用して DSL をアンインストールします。
 
-#### <a name="to-install-a-dsl-by-using-the-vsx"></a>VSX を使用して DSL をインストールするには
+このメソッドでは、DSL をインストール、ユーザーは、Visual Studio 内から DSL ファイルを開くことができますが、Windows エクスプ ローラーからファイルを開くことができません。
 
-1. 自分のコンピューターでは、検索、 **.vsix** DSL パッケージ プロジェクトによってビルドされたファイル。
+### <a name="to-install-a-dsl-by-using-the-vsx"></a>VSX を使用して DSL をインストールするには
 
-   1.  **ソリューション エクスプ ローラー**を右クリックし、 **DslPackage**プロジェクトをクリックして**Windows エクスプ ローラーでフォルダーを開く**します。
+1. 検索、 **.vsix** DSL パッケージ プロジェクトによってビルドされたファイル。
+
+   1.  **ソリューション エクスプ ローラー**を右クリックし、 **DslPackage**プロジェクトをクリックして**ファイル エクスプ ローラーでフォルダーを開く**します。
 
    2.  ファイルを見つけます**bin\\\*\\**_プロジェクト_**します。DslPackage.vsix**
 
@@ -50,9 +51,9 @@ ms.locfileid: "55937343"
 
 5. DSL をテストするには、Visual Studio を使用して DSL 用に定義した拡張子を持つ新しいファイルを作成します。
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>VSX を使用して、インストールされている DSL をアンインストールするには
+### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>VSX を使用して、インストールされている DSL をアンインストールするには
 
-1. **ツール** メニューをクリックして **拡張機能マネージャー** をクリックします。
+1. **[ツール]** メニューの **[拡張機能と更新プログラム]** をクリックします。
 
 2. **[インストール済みの拡張機能]** を展開します。
 
@@ -69,7 +70,7 @@ ms.locfileid: "55937343"
 
  MSI を作成するには、Visual Studio ソリューションにセットアップ プロジェクトを追加します。 セットアップ プロジェクトを作成する最も簡単な方法からダウンロードできます CreateMsiSetupProject.tt テンプレートを使用して、 [VMSDK サイト](http://go.microsoft.com/fwlink/?LinkID=186128)します。
 
-#### <a name="to-deploy-a-dsl-in-an-msi"></a>DSL の MSI を展開するには
+### <a name="to-deploy-a-dsl-in-an-msi"></a>DSL の MSI を展開するには
 
 1. 設定`InstalledByMsi`拡張機能マニフェスト。 これにより、VSX 防止インストールされ、を除き、MSI をアンインストールできます。 これは、場合は、MSI にその他のコンポーネントを含めるが重要です。
 
@@ -127,7 +128,7 @@ ms.locfileid: "55937343"
 
     場合は、テキスト テンプレートを使用する代わりに、手動でセットアップ プロジェクトを作成できます。 この手順を含むチュートリアルの第 5 章を参照してください、 [Visualization and Modeling SDK ラボ](http://go.microsoft.com/fwlink/?LinkId=208878)します。
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>MSI からインストールされている DSL をアンインストールするには
+### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>MSI からインストールされている DSL をアンインストールするには
 
 1.  Windows を開き、**プログラムと機能**コントロール パネル。
 

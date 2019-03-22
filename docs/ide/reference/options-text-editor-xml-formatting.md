@@ -8,16 +8,16 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8452410235226b3d7a1446d7a8c5a2ee709eff6e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943546"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525070"
 ---
 # <a name="options-text-editor-xml-formatting"></a>[オプション]、[テキスト エディター]、[XML]、[書式設定]
 
-**[書式設定]** プロパティ ページでは、XML ドキュメントで要素と属性を書式設定する方法を指定します。 **[オプション]** ダイアログ ボックスを開くには、**[ツール]** メニューをクリックし、**[オプション]** をクリックします。 **[書式設定]** プロパティ ページにアクセスするには、**[テキスト エディター]** > **[XML]** > **[書式設定]** ノードを展開します。
+**[書式設定]** オプション ページでを使用して、XML ドキュメントで要素と属性を書式設定する方法を指定します。 XML 書式設定オプションにアクセスするには、**[ツール]** > **[オプション]** > **[テキスト エディター]** > **[XML]** の順に選択して、**[書式設定]** を選択します。
 
 ## <a name="attributes"></a>属性
 
@@ -66,5 +66,5 @@ ms.locfileid: "55943546"
 
 ## <a name="see-also"></a>関連項目
 
-- [方法: XML ドキュメントを作成する (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [コード生成](../code-generation-in-visual-studio.md)
+- [XML オプション - その他](options-text-editor-xml-miscellaneous.md)
+- [Visual Studio の XML ツール](../../xml-tools/xml-tools-in-visual-studio.md)

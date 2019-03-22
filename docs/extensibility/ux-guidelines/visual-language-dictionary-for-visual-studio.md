@@ -1,21 +1,20 @@
 ---
-title: Visual Studio の visual Language Dictionary |Microsoft Docs
+title: Visual 言語リファレンス
 ms.date: 08/04/2017
 ms.reviewer: Jamie.Young
 ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
-ms.author: v-brickg
+ms.author: brgeorge
 manager: jillfra
-ms.workload:
-- v-brickg
-ms.openlocfilehash: a17361536437e6ba4811a687fdc75a9b47d4c0e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b550f75731874da5581c967034cd91260674f974
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698483"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158082"
 ---
-# <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio の visual Language Dictionary
+# <a name="visual-language-dictionary"></a>Visual 言語辞書
+
 Visual Studio では、そのことは考えません、およびその他の画像のビルディング ブロックの概念を説明するために一般的な visual 言語を使用します。 新しいアイコンを設計するときは、独自のイメージで伝達する概念を識別するためにこの辞書を使用します。
 
 ## <a name="general-guidelines"></a>一般的なガイドライン
@@ -247,7 +246,7 @@ Visual Studio では、そのことは考えません、およびその他の画
 | 概念 | メイン アイコン | その他の例 | メモ |
 | --- | --- | --- | --- |
 | **Namespace** | ![Namespace アイコン](../../extensibility/ux-guidelines/media/vld_c_namespace.png "VLD_C_Namespace") | ![名前空間 アイコンを使用して削除](../../extensibility/ux-guidelines/media/vld_c_namespace_removeusingnamespace.png "VLD_C_Namespace_RemoveUsingNamespace")<br />名前空間を使用した削除します。<br />![名前空間のアイコンを使用して並べ替え](../../extensibility/ux-guidelines/media/vld_c_namespace_sortusingnamespace.png "VLD_C_Namespace_SortUsingNamespace")<br />名前空間を使用した並べ替え<br />![名前空間 アイコンを使用して追加](../../extensibility/ux-guidelines/media/vld_c_namespace_addusingnamespace.png "VLD_C_Namespace_AddUsingNamespace")<br />名前空間を使用して追加します。 ||
-| **Network**<br />接続 | ![ネットワーク アイコン](../../extensibility/ux-guidelines/media/vld_c_network.png "VLD_C_Network") | ![ネットワークのドライバー パッケージのテンプレート アイコン](../../extensibility/ux-guidelines/media/vld_c_network_networkdriverpackagetemplate.png "VLD_C_Network_NetworkDriverPackageTemplate")<br />ネットワークのドライバー パッケージのテンプレート<br />![接続のオフライン アイコン](../../extensibility/ux-guidelines/media/vld_c_network_connectionoffline.png "VLD_C_Network_ConnectionOffline")<br />オフラインの接続<br />![接続の不明なアイコン](../../extensibility/ux-guidelines/media/vld_c_network_connectionunknown.png "VLD_C_Network_ConnectionUnknown")<br />不明な接続 ||
+| **Network**<br />Connection | ![ネットワーク アイコン](../../extensibility/ux-guidelines/media/vld_c_network.png "VLD_C_Network") | ![ネットワークのドライバー パッケージのテンプレート アイコン](../../extensibility/ux-guidelines/media/vld_c_network_networkdriverpackagetemplate.png "VLD_C_Network_NetworkDriverPackageTemplate")<br />ネットワークのドライバー パッケージのテンプレート<br />![接続のオフライン アイコン](../../extensibility/ux-guidelines/media/vld_c_network_connectionoffline.png "VLD_C_Network_ConnectionOffline")<br />オフラインの接続<br />![接続の不明なアイコン](../../extensibility/ux-guidelines/media/vld_c_network_connectionunknown.png "VLD_C_Network_ConnectionUnknown")<br />不明な接続 ||
 | **ノード**<br />十字カーソル | ![[ノード] アイコン](../../extensibility/ux-guidelines/media/vld_c_node.png "VLD_C_Node") |||
 | **Nonsubstantive (非表示またはテンプレート)**<br />*「仮想」と同じ* | ![[Nonsubstantive] アイコン](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive.png "VLD_C_Nonsubstantive") | ![非表示フィールド アイコン](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfield.png "VLD_C_Nonsubstantive_HiddenField")<br />非表示フィールド<br />![非表示のフォルダー アイコン](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfolder.png "VLD_C_Nonsubstantive_HiddenFolder")<br />非表示のフォルダー<br />![動的テンプレート アイコン](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_dynamictemplate.png "VLD_C_Nonsubstantive_DynamicTemplate")<br />動的テンプレート | オブジェクトの点線のアウトラインがあることを示します**非表示またはテンプレート宣言**します。 |
 | **注:** | ![注アイコン](../../extensibility/ux-guidelines/media/vld_c_note.png "VLD_C_Note") |||

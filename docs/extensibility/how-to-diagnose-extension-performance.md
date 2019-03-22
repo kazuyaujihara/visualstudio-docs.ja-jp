@@ -8,12 +8,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 2d9337b443fdaabe713f1708b2be9051c2f02b3c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d8fb5de23cbc4664ea322a9149653598956aed7
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707069"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323686"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>スタートアップの拡張機能への影響を測定します。
 
@@ -74,11 +74,11 @@ Visual Studio 2015 から多くの機能を追加しました。 これらの機
 
 使用されるか、パッケージには、そのパッケージで提供されるサービスを初期化するためにパッケージの初期化で一般的なパターンの 1 つは`constructor`または`initialize`メソッド。 これにより、サービスがすぐに使用できますが、中にそれらのサービスがすぐに使用しない場合の読み込みをパッケージ化する不要なコストも追加できます。 代わりにこのようなサービスを初期化して、オンデマンド パッケージの初期化で実行された作業を最小限に抑える必要があります。
 
-パッケージによって提供されるグローバル サービスで使用することができます`AddService`コンポーネントによって要求される場合にのみサービスを遅延初期化関数を受け取るメソッド。 非同期 (lazy) を使用するサービスは、パッケージ内で使用される、<T>または AsyncLazy<T>サービスは、初回使用時に初期化/照会するかどうかを確認します。
+パッケージによって提供されるグローバル サービスで使用することができます`AddService`コンポーネントによって要求される場合にのみサービスを遅延初期化関数を受け取るメソッド。 パッケージ内で使用されるサービスでは、非同期 (lazy) を使用できます\<T > または AsyncLazy\<T > をサービスは、初回使用時に初期化/照会するかどうかを確認します。
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>アクティビティ ログを使用して拡張機能が読み込まれる自動の影響を測定します。
 
-Visual Studio 2017 Update 3 以降では、Visual Studio のアクティビティ ログはようになりましたエントリを含むパッケージのパフォーマンスに与える影響の起動とソリューションの読み込み中に。 これらの測定値を確認するためには、/log スイッチで Visual Studio を起動して開く必要がある*ActivityLog.xml*ファイル。
+Visual Studio 2017 Update 3 以降では、Visual Studio のアクティビティ ログはようになりましたエントリを含むパッケージのパフォーマンスに与える影響の起動とソリューションの読み込み中に。 これらの測定値を確認するためには、/log スイッチで Visual Studio を開き、開く必要がある*ActivityLog.xml*ファイル。
 
 アクティビティ ログでは、エントリは 「Visual Studio のパフォーマンスの管理」のソースになり、次の例のようになります。
 
@@ -141,7 +141,7 @@ PerfView、開きスタートアップのトレースを記録するには、拡
 
 ![perfview 収集メニュー](media/perfview-collect-menu.png)
 
-既定のオプションは、CPU 使用量を呼び出し履歴を提供するが、ブロック時間も私たちは、以降も有効にしてください**スレッド時間**スタック。 クリックすることができます、設定が整ったら**収集を開始**の記録が開始されると、Visual Studio を起動するとします。
+既定のオプションは、CPU 使用量を呼び出し履歴を提供するが、ブロック時間も私たちは、以降も有効にしてください**スレッド時間**スタック。 設定は、準備ができたら後、をクリックすることができます**コレクションの開始**し記録が開始した後、Visual Studio を開きます。
 
 コレクションを停止する前に、Visual Studio を完全に初期化、メイン ウィンドウが完全に表示されると、拡張機能に自動的に表示する任意の UI 部分がある場合も表示されるかどうかを確認します。 Visual Studio が完全に読み込まれると、拡張機能が初期化されて、トレースを分析する記録を停止できます。
 

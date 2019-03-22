@@ -5,19 +5,21 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 02/21/2019
 ms.topic: conceptual
-ms.prod: visual-studio-mac-dev16
+ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 84581fb3f6e33d22f0895b807998120ea7ca0cb7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 65b44dddfdadcb7ef38332fa35443dbaeededb5d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56724048"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152916"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>方法: 複数のスタートアップ プロジェクトを設定する
+
 Visual Studio for Mac では、ソリューションをデバッグまたは実行するときに、1 つまたは複数のプロジェクトを開始する方法を指定することができます。
 
 ## <a name="to-set-multiple-startup-projects"></a>複数のスタートアップ プロジェクトを設定するには
+
 1.  **Solution Pad** で、ソリューション (最上位ノード) を選択します。
 
 2. ソリューション ノードのコンテキスト (右クリック) メニューを選択し、**[スタートアップ プロジェクトの設定...]** を選択します。

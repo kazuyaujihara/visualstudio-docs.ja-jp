@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e9f995c8fc1107da7bc90b230eddc265e6082b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913133"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323975"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>方法:コンパイラ警告の非表示
 
 1 つまたは複数の種類のコンパイラの警告を除外して、ビルド ログをまとめることができます。 たとえば、ビルド ログの詳細さを**標準**、**詳細**、または**診断**に設定したときに生成される出力の一部だけを確認できます。 詳細さについて詳しくは、「[方法:ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# または F# の特定の警告を非表示にする #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# または F\# の特定の警告を非表示にする
 
 C# または F# プロジェクトの特定の警告を非表示にするには、**[ビルド]** プロパティ ページを使用します。
 

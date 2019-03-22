@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc410e02fe43bebd4668dd78280308e38dcc857
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623061"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737035"
 ---
 # <a name="property-functions"></a>プロパティ関数
 
@@ -166,7 +166,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |int BitwiseXor(int first, int second)|1 番目と 2 番目 (first ^ second) でビットごとの `XOR` を実行します。|
 |int BitwiseNot(int first)|ビットごとの `NOT` (~first) を実行します。|
 |bool IsOsPlatform(string platformString)|現在の OS プラットフォームが `platformString` かどうかを指定します。 `platformString` は <xref:System.Runtime.InteropServices.OSPlatform> のメンバーである必要があります。|
-|bool IsOSUnixLike|現在の OS が Unix システムの場合は true です。|
+|bool IsOSUnixLike()|現在の OS が Unix システムの場合は true です。|
 |string NormalizePath(params string[] path)|指定されたパスの正規化された完全なパスを取得し、現在のオペレーティング システムの適切なディレクトリ区切り文字が含まれていることを確認します。|
 |string NormalizeDirectory(params string[] path)|指定されたディレクトリの正規化された完全なパスを取得し、現在のオペレーティング システムの適切なディレクトリ区切り文字が含まれていて、末尾にスラッシュがあることを確認します。|
 |string EnsureTrailingSlash(string path)|指定されたパスの末尾にスラッシュがない場合は、追加します。 パスが空の文字列の場合は変更されません。|

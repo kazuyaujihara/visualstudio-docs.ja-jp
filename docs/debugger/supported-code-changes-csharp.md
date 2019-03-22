@@ -1,6 +1,6 @@
 ﻿---
 title: サポートされるコードの変更 (c# および Visual Basic) |Microsoft Docs
-ms.date: 10/11/2017
+ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 753a3816b6432a58c5f79077c4e438db753297b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692229"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526180"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>サポートされているコード変更 (c# および Visual Basic)
 エディット コンティニュでは、メソッドの本体内で行ったほとんどの種類のコード変更を処理できます。 しかし、メソッドの本体外で行った変更の大部分やメソッドの本体内で行った一部の変更は、デバッグ時に適用できません。 このようなサポートされていない変更を適用するには、デバッグを停止し、新しいバージョンのコードを再起動する必要があります。

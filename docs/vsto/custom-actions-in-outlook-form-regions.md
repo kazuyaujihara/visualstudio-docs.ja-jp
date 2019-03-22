@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea4cd33c67cfbd2d2150fceacaf0399810db0ca4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638037"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567184"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook フォーム領域のカスタム アクション
   アクションは、Microsoft Office Outlook アイテムに応答するユーザーを有効にするボタンを表示します。 たとえば、メール アイテムに応答するユーザー クリックして、**応答**、**全員へ返信**、または**フォワード**アクション ボタン。 これらの各アクションは、新しいメール アイテムを作成し、元の項目からの情報を使用して項目のフィールドを入力します。
@@ -28,7 +28,7 @@ ms.locfileid: "56638037"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>フォーム領域にカスタム アクションを追加します。
- フォーム領域には、カスタム アクションを追加するには、使用、**カスタム アクション** ダイアログ ボックス。 開くことができます、**カスタム アクション** ダイアログ ボックスで**ソリューション エクスプ ローラー**を展開して、**マニフェスト**ノードを選択すると、 **CustomActions**プロパティ、および、省略記号ボタンをクリックし (![ASP.NET モバイル デザイナー楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円"))。
+ フォーム領域には、カスタム アクションを追加するには、使用、**カスタム アクション** ダイアログ ボックス。 開くことができます、**カスタム アクション**でフォーム領域を選択してダイアログ ボックス**ソリューション エクスプ ローラー**、拡大、**マニフェスト**内のノード、**プロパティウィンドウ**選択、 **CustomActions**プロパティ、および省略記号ボタンをクリックし (![ASP.NET モバイル デザイナー楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイルデザイナー楕円"))。
 
  使用することができます、**カスタム アクション**を指定する ダイアログ ボックス、*対象フォーム*します。 ターゲット フォームは、ユーザーがカスタム アクションを実行するときに表示されるフォームです。
 

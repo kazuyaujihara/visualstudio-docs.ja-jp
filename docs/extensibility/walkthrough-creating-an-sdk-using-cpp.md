@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18627c629e428e00c719459f7a243b74b7c4f26a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da9be257587936088ee5f91c5e1723d71be11965
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689682"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325069"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>チュートリアル: C++ を使用して、SDK を作成します。
 このチュートリアルでは、ネイティブ C++ 数値演算ライブラリを SDK パッケージとして、Visual Studio Extension (VSIX)、SDK を作成し、それを使用して、アプリを作成する方法を示します。 このチュートリアルは、次の手順に分かれています。
@@ -135,7 +135,7 @@ ms.locfileid: "56689682"
 
 17. **ファイル エクスプ ローラー**に移動し、 *$SolutionRoot$ \NativeMathVSIX\bin\Debug*フォルダー、および実行します*NativeMathVSIX.vsix*インストールを開始します。
 
-18. 選択、**インストール**ボタンをクリックし、インストールを完了するまで待機し、Visual Studio を起動します。
+18. 選択、**インストール**ボタンをクリックし、インストールを完了するまで待機し、Visual Studio を開きます。
 
 ##  <a name="createSample"></a> クラス ライブラリを使用するサンプル アプリを作成するには
 

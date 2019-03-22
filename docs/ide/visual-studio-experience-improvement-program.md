@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927530"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323119"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio カスタマー エクスペリエンス向上プログラム
 
@@ -31,8 +31,7 @@ VSCEIP は既定で有効になっています。 次の手順で、オフにし
 
    **[Visual Studio エクスペリエンス向上プログラム]** ダイアログ ボックスが開きます。
 
-1. オプトアウトするには、**[いいえ、参加しません]** を選んでから、**[OK]** を選びます。
-   オプトインするには、**[参加する]** を選んでから、**[OK]** を選びます。
+1. オプトアウトするには、**[いいえ、参加しません]** を選んでから、**[OK]** を選びます。 オプトインするには、**[参加する]** を選んでから、**[OK]** を選びます。
 
    ![[Visual Studio エクスペリエンス向上プログラム] ダイアログ](media/experience-improvement-program.png)
 
@@ -42,11 +41,26 @@ VSCEIP は既定で有効になっています。 次の手順で、オフにし
 
 これに関連するレジストリ キーと設定は以下のとおりです。
 
-64 ビット OS の場合: キー = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** 32 ビット OS の場合: キー = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** グループ ポリシーが有効になっているとき: キー = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+::: moniker range="vs-2017"
+
+- 64 ビット OS の場合: キー = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
+- 32 ビット OS の場合: キー = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+- グループ ポリシーが有効になっている場合: キー = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- 64 ビット OS の場合: キー = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
+- 32 ビット OS の場合: キー = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
+- グループ ポリシーが有効になっている場合: キー = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
 
 エントリ = **OptIn**
 
 値 = (DWORD)
+
 - **0**: オプトアウト (VSCEIP をオフにする)
 - **1**: オプトイン (VSCEIP をオンにする)
 
@@ -59,6 +73,6 @@ VSCEIP によって収集、処理、または送信される情報について�
 
 * [Visual Studio によって収集される診断情報](diagnostic-data-collection.md)
 * [ご意見](../ide/talk-to-us.md)
-* [Visual Studio 2017 で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+* [Visual Studio 2017 で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/)
 * [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)

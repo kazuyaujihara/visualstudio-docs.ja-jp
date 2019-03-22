@@ -14,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52596dcc89aa1fedadf016e69fceed8549c42e57
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873211"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869019"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>開始 (SharePoint 開発の Visual Studio で)
   このセクションでは、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] および [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] を利用した SharePoint ソリューションを、これから [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]で開発しようとする方のために有益な情報を提供します。
 
- SharePoint 2013 アドインと SharePoint アドインについては、「 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 」および「 [SharePoint アドインの作成](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」を参照してください。
+ SharePoint 2013 アドインと SharePoint アドインについては、「 [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) 」および「 [SharePoint アドインの作成](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」を参照してください。
 
  SharePoint は Web ベースのコラボレーション プラットフォームを提供します。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、SharePoint サイトとコンテンツを作成するためのプロジェクト テンプレートが多数用意されています (リスト定義、ワークフロー、ビジネス データ接続モデル、サイト定義など)。 さらに、SharePoint プロジェクトとツール用の拡張機能を [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で作成することもできます。
 

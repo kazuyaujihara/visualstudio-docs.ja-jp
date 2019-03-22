@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 622887a3886eb51b148451bfaee561b7d5c7a466
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712529"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223626"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>クイック スタート: Visual Studio IDE の表示の紹介
 
@@ -114,5 +114,5 @@ Visual Studio の使用中に問題が発生した場合、または製品の改
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio IDE の概要](../get-started/visual-studio-ide.md)
-- [Visual Studio 2017 のその他の機能](../ide/advanced-feature-overview.md)
+- [Visual Studio のその他の機能](../ide/advanced-feature-overview.md)
 - [テーマとフォントの色を変更する](../ide/quickstart-personalize-the-ide.md)

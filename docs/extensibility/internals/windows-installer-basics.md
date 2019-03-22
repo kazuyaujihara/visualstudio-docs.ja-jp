@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b981824da3f5a5065cf129657158020893394749
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d2712c8d52ffd569f7d422708de612ac322045f8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631641"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872954"
 ---
 # <a name="windows-installer-basics"></a>Windows インストーラーの基本事項
 Windows インストーラーは、Windows インストーラーのコンポーネント (WICs または単なるコンポーネントとも呼ばれます) と呼ばれる単位でこれらのタスクを実行するアプリケーションやユーザーのコンピューター上のソフトウェア製品をアンインストールします。 各 WIC では、インストールと参照カウントの Windows インストーラーを使用してセットアップの基本的な単位を識別する GUID。
 
- Windows インストーラーの包括的なドキュメントについては、プラットフォーム SDK のトピックを参照してください。 [Windows インストーラー](http://msdn.microsoft.com/library/aa372866.aspx)します。
+ Windows インストーラーの包括的なドキュメントについては、プラットフォーム SDK のトピックを参照してください。 [Windows インストーラー](/previous-versions/2kt85ked(v=vs.120))します。
 
 ## <a name="authoring-a-vspackage"></a>VSPackage の作成
  Windows インストーラーは、Windows インストーラーは、インストール、アンインストール、または製品を修復し、セットアップ ユーザー インターフェイス (UI) を実行する必要がある情報が含まれるインストール パッケージを使用します。 各インストール パッケージには、インストール データベース、概要情報ストリーム、およびインストールのさまざまな部分のデータ ストリームを含む .msi ファイルが含まれています。 インストーラーを使用するには、インストールを作成する必要があります。 インストーラーでは、コンポーネントの概念にインストールを整理し、リレーショナル データベースのインストールに関する情報を格納、ため広範インストール パッケージを作成するプロセスには、次の手順が必要です。

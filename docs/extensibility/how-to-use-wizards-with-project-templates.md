@@ -1,6 +1,6 @@
 ---
 title: '方法: プロジェクト テンプレートでウィザードを使用する'
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ad50d22641d6b52d688c685fbf0f50fd0c54b31
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723709"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324642"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>方法: プロジェクト テンプレートにウィザードの使用
 
@@ -33,12 +33,12 @@ Visual Studio には、<xref:Microsoft.VisualStudio.TemplateWizard.IWizard> イ�
 
 Visual Studio SDK の一部では、プロジェクト テンプレート プロジェクトでカスタム テンプレートの作成を開始するとします。 この手順で使用します、C#プロジェクト テンプレートのプロジェクトが Visual Basic プロジェクト テンプレート プロジェクトもあります。 プロジェクト テンプレート プロジェクトを含むソリューションに、VSIX プロジェクトを追加します。
 
-1. C# プロジェクト テンプレート プロジェクトを作成 (Visual Studio で、**ファイル** > **新規** > **プロジェクト** > **Visual c#**  > **拡張** > **c# プロジェクト テンプレート**)。 名前を付けます**MyProjectTemplate**します。
+1. 作成、C#プロジェクト テンプレートのプロジェクト (Visual Studio で、次のように選択します**ファイル** > **新規** > **プロジェクト**"プロジェクト テンプレート"を検索。). 名前を付けます**MyProjectTemplate**します。
 
    > [!NOTE]
    > Visual Studio SDK をインストールするためのよく寄せられる可能性があります。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。
 
-2. 新しい VSIX プロジェクトの追加 (**ファイル** > **新規** > **プロジェクト** > **Visual C#**  > **拡張** > **VSIX プロジェクト**) プロジェクト テンプレートと同じソリューションで (で**ソリューション エクスプ ローラー**、選択、ソリューション ノードを右クリックし、**追加** > **新しいプロジェクト**)。 名前を付けます**MyProjectWizard します。**
+2. プロジェクト テンプレートと同じソリューションで新しい VSIX プロジェクトを追加 (で**ソリューション エクスプ ローラー**、選択、ソリューション ノードを右クリックし、**追加** > **新しいプロジェクト** "vsix"を検索)。 名前を付けます**MyProjectWizard します。**
 
 3. VSIX プロジェクトをスタートアップ プロジェクトとして設定します。 **ソリューション エクスプ ローラー**、選択、VSIX プロジェクト ノードを右クリックし、**スタートアップ プロジェクトとして設定**します。
 
@@ -50,7 +50,7 @@ Visual Studio SDK の一部では、プロジェクト テンプレート プロ
 
 7. ソリューションをビルドし、デバッグを開始します。 Visual Studio の 2 番目のインスタンスが表示されます。 (いくつか分をかかります。)
 
-8. Visual Studio の 2 番目のインスタンスで、新しいテンプレートを使用して新しいプロジェクトを作成してください (**ファイル** > **新規** > **プロジェクト > Visual C#**  >  **MyProject テンプレート**)。 新しいプロジェクトがという名前のクラスを表示する必要があります**Class1**します。 カスタム プロジェクト テンプレートが作成されました! デバッグを停止します。
+8. Visual Studio の 2 番目のインスタンスで、新しいテンプレートを使用して新しいプロジェクトを作成してください (**ファイル** > **新規** > **プロジェクト**、検索"myproject")。 新しいプロジェクトがという名前のクラスを表示する必要があります**Class1**します。 カスタム プロジェクト テンプレートが作成されました! デバッグを停止します。
 
 ## <a name="create-a-custom-template-wizard"></a>カスタム テンプレート ウィザードを作成します。
 
@@ -60,11 +60,11 @@ Visual Studio SDK の一部では、プロジェクト テンプレート プロ
 
 2. **ソリューション エクスプ ローラー**、VSIX プロジェクト ノードを選択します。 以下の**ソリューション エクスプ ローラー**、表示する必要があります、**プロパティ**ウィンドウ。 そうでない場合は、選択**ビュー** > **プロパティ ウィンドウ**、またはキーを押します**F4**します。 **プロパティ**ウィンドウで、次のフィールドを select `true`:
 
-   -   **IncludeAssemblyInVSIXContainer**
+   - **IncludeAssemblyInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInVSIXContainer**
+   - **IncludeDebugSymbolsInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInLocalVSIXDeployment**
+   - **IncludeDebugSymbolsInLocalVSIXDeployment**
 
 3. VSIX プロジェクトにアセットとしてのアセンブリを追加します。 開く、 *source.extension.vsixmanifest*選択ファイルを開き、**資産**タブ。**新しい資産の追加** ウィンドウの**型**選択**microsoft.visualstudio.assembly**の**ソース**選択**A現在のソリューションでプロジェクト**、および**プロジェクト**選択**MyProjectWizard**します。
 
@@ -157,7 +157,7 @@ Visual Studio SDK の一部では、プロジェクト テンプレート プロ
 
    - <xref:System.Object>パラメーターのセットを含む配列が Visual Studio によってウィザードに渡されます。
 
-     この例では、ユーザー入力フォームから <xref:System.Collections.Generic.Dictionary%602> パラメーターにパラメーター値を追加します。 プロジェクト内の `$custommessage$` パラメーターのすべてのインスタンスは、ユーザーが入力したテキストと置き換えられます。 以下のアセンブリをプロジェクトに追加する必要があります。**システム**と**System.Drawing**します。
+     この例では、ユーザー入力フォームから <xref:System.Collections.Generic.Dictionary%602> パラメーターにパラメーター値を追加します。 プロジェクト内の `$custommessage$` パラメーターのすべてのインスタンスは、ユーザーが入力したテキストと置き換えられます。 次のアセンブリをプロジェクトに追加します。**システム**と**System.Drawing**します。
 
 7. ここで作成、**されている UserInputForm**します。 *WizardImplementation.cs*ファイルを終了した後、次のコードを追加、`WizardImplementation`クラス。
 
@@ -228,7 +228,7 @@ Visual Studio SDK の一部では、プロジェクト テンプレート プロ
 
      *C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*
 
-     ツールが見つからない場合は実行してみてください **/R します。 sn.exe**コマンド ウィンドウにします。 パスをメモしてをおきます。
+     ツールが見つからない場合は実行してみてください**場所/R。 sn.exe**コマンド ウィンドウでします。 パスをメモしてをおきます。
 
 10. 公開キーを抽出、 *key.snk*ファイル。 コマンド ウィンドウで次のように入力します。
 
@@ -242,7 +242,7 @@ Visual Studio SDK の一部では、プロジェクト テンプレート プロ
 
      引用符をもう一度、忘れないでください。 このような出力に行が表示されます。
 
-     **公開キー トークンは、します。 <token>**
+     **公開キー トークンは\<トークン >**
 
      この値をメモしてをおきます。
 
@@ -297,19 +297,19 @@ namespace $safeprojectname$
 
 これで、テンプレートからプロジェクトを作成し、カスタム ウィザードを使用できるようになりました。
 
-1.  ソリューションをリビルドし、デバッグを開始します。 Visual Studio の 2 番目のインスタンスが表示されます。
+1. ソリューションをリビルドし、デバッグを開始します。 Visual Studio の 2 番目のインスタンスが表示されます。
 
-2.  新しい MyProjectTemplate プロジェクトを作成します。 (**ファイル** > **新しい** > **プロジェクト** > **Visual c#**  >  **MyProjectTemplate**)
+2. 新しい MyProjectTemplate プロジェクトを作成します。 (**ファイル** > **新しい** > **プロジェクト**)。
 
-3.  **新しいプロジェクト** ダイアログ ボックスで、テンプレートを指定の名前を入力 をクリックして**OK**します。
+3. **新しいプロジェクト** ダイアログ ボックスで、検索、テンプレートを見つけて、名を入力する をクリックするには、"myproject" **OK**します。
 
      ウィザードのユーザー入力フォームが開きます。
 
-4.  カスタム パラメーターの値を入力し、ボタンをクリックします。
+4. カスタム パラメーターの値を入力し、ボタンをクリックします。
 
      ウィザードのユーザー入力フォームが終了し、プロジェクトがテンプレートから作成されます。
 
-5.  **ソリューション エクスプ ローラー**ソース コード ファイルを右クリックし、クリックして、**コードの表示**します。
+5. **ソリューション エクスプ ローラー**ソース コード ファイルを右クリックし、クリックして、**コードの表示**します。
 
      `$custommessage$` は、ウィザードのユーザー入力フォームに入力されたテキストで置き換えられています。
 

@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c439c5bbd35f4ece7ad57302737835622409b353
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323589"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268724"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio の C++ プロジェクト システムの機能拡張とツールセットの統合
 
@@ -55,7 +55,7 @@ Visual C プロジェクト システムでは、.vcxproj ファイルを使用�
 
 これらのプロパティ値の下のフォルダー名を指定する、`$(VCTargetsPath)`ルート フォルダー。
 
-`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*アプリケーションの種類*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;<c58 > &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *プラットフォーム*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c158><spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</c252>プラットフォーム</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*アプリケーションの種類*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *プラットフォーム*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;プラットフォーム\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（Windowsデスクトッププロジェクトの場合、 `$(ApplicationType)` が空のときに使用されます） &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
 ### <a name="add-a-new-platform-toolset"></a>新しいプラットフォーム ツールセットを追加します。
 
@@ -215,7 +215,7 @@ Visual Studio は、クロス プラットフォームのサポートを実装�
 
 ## <a name="msbuild-tasks-to-use-in-toolset-targets"></a>ツールセットのターゲットで使用する MSBuild タスク
 
-実際のビルド ツールを起動するには、ターゲットを MSBuild タスクを呼び出す必要があります。 基本的ながある[Exec タスク](../msbuild/exec-task.md)を実行するコマンドラインを指定することができます。 ただし、通常、ビルド ツールでは、多くのオプション、入力があります。 インクリメンタル ビルドを追跡するため、それらに対する特別なタスクを持つ方が合理的に出力します。 たとえば、`CL`タスク CL.exe スイッチの MSBuild プロパティに変換、応答ファイルに書き込みますおよび CL.exe を呼び出します。 また、以降のインクリメンタル ビルドのすべての入力と出力ファイルを追跡します。 詳細については、次を参照してください。[インクリメンタル ビルドと最新チェック](#incremental-build-and-up-to-date-check)します。
+実際のビルド ツールを起動するには、ターゲットを MSBuild タスクを呼び出す必要があります。 基本的ながある[Exec タスク](../msbuild/exec-task.md)を実行するコマンドラインを指定することができます。 ただし、通常、ビルド ツールでは、多くのオプション、入力があります。 インクリメンタル ビルドを追跡するため、それらに対する特別なタスクを持つ方が合理的に出力します。 たとえば、`CL`タスク CL.exe スイッチの MSBuild プロパティに変換、応答ファイルに書き込みますおよび CL.exe を呼び出します。 また、以降のインクリメンタル ビルドのすべての入力と出力ファイルを追跡します。 詳細については、次を参照してください。[インクリメンタル ビルドと最新状態チェック](#incremental-builds-and-up-to-date-checks)します。
 
 Microsoft.Cpp.Common.Tasks.dll は、これらのタスクを実装します。
 
@@ -416,9 +416,9 @@ Visual C プロジェクト システムがに基づいて、 [VS プロジェ�
 
 ### <a name="project-property-pages"></a>プロジェクト プロパティ ページ
 
-一般的な設計については、次を参照してください。[プラットフォームの拡張性 - パート 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/)と[プラットフォームの拡張性 - パート 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/)します。
+一般的な設計については、次を参照してください。 [vc++ プロジェクトのフレームワークのマルチ ターゲット](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/)します。
 
-簡単に言えば、プロパティ ページを参照してください、**プロジェクトのプロパティ**C++ プロジェクトのダイアログが定めた*ルール*ファイル。 ルール ファイルには、一連のプロパティ ページでは、表示し、プロジェクトに保存する必要があり、どのファイルのプロパティを指定します。 ルール ファイルは、Xaml 形式を使用する .xml ファイルです。 シリアル化に使用する型が記載されて[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)します。 プロジェクト内のルール ファイルの使用に関する詳細については、次を参照してください。[プロパティ ページの XML ルール ファイル](/cpp/ide/property-page-xml-files)します。
+簡単に言えば、プロパティ ページを参照してください、**プロジェクトのプロパティ**C++ プロジェクトのダイアログが定めた*ルール*ファイル。 ルール ファイルには、一連のプロパティ ページでは、表示し、プロジェクトに保存する必要があり、どのファイルのプロパティを指定します。 ルール ファイルは、Xaml 形式を使用する .xml ファイルです。 シリアル化に使用する型が記載されて[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)します。 プロジェクト内のルール ファイルの使用に関する詳細については、次を参照してください。[プロパティ ページの XML ルール ファイル](/cpp/build/reference/property-page-xml-files)します。
 
 ルール ファイルに追加する必要があります、`PropertyPageSchema`項目グループ。
 
@@ -636,8 +636,8 @@ VSIX ファイルを作成する方法については、次を参照してくだ
 
 ## <a name="additional-resources"></a>その他の技術情報
 
-Microsoft ビルド システム ([MSBuild](../msbuild/msbuild.md)) ビルド エンジンと拡張可能な XML ベース形式のプロジェクト ファイルを提供します。 理解しておく必要があります basic [MSBuild の概念](../msbuild/msbuild-concepts.md)方法を使用して[Visual C の MSBuild](/cpp/build/msbuild-visual-cpp-overview)プロジェクト システムの Visual C を拡張するには動作します。
+Microsoft ビルド システム ([MSBuild](../msbuild/msbuild.md)) ビルド エンジンと拡張可能な XML ベース形式のプロジェクト ファイルを提供します。 理解しておく必要があります basic [MSBuild の概念](../msbuild/msbuild-concepts.md)方法を使用して[Visual C の MSBuild](/cpp/build/reference/msbuild-visual-cpp-overview)プロジェクト システムの Visual C を拡張するには動作します。
 
 Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 拡張機能の CPS と Visual C プロジェクト システムで使用される Api を提供します。 CPS で MEF を使用する方法の概要については、次を参照してください。 [CPS と MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)で、 [MEF の概要については VSProjectSystem](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)します。
 
-ビルド ステップまたは新しいファイルの種類を追加する既存のビルド システムをカスタマイズできます。 詳細については、次を参照してください。 [MSBuild (Visual c) の概要](/cpp/build/msbuild-visual-cpp-overview)と[プロジェクト プロパティの操作](/cpp/ide/working-with-project-properties)します。
+ビルド ステップまたは新しいファイルの種類を追加する既存のビルド システムをカスタマイズできます。 詳細については、次を参照してください。 [MSBuild (Visual c) の概要](/cpp/build/reference/msbuild-visual-cpp-overview)と[プロジェクト プロパティの操作](/cpp/build/working-with-project-properties)します。

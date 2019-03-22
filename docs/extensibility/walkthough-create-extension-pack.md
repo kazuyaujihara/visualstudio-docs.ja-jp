@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
-author: chitray
-ms.author: chitray
+author: gregvanl
+ms.author: gregvanl
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7899a096bb2a56e93ea55a4ba0a17cde272bd615
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718365"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193706"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>チュートリアル: 拡張機能パックを作成する
 
@@ -23,7 +23,7 @@ ms.locfileid: "56718365"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。
+Visual Studio SDK は Visual Studio 2015 以降では Visual Studio のセットアップのオプション機能として含まれます。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。
 
 拡張機能パックの機能は、Visual Studio 15.8 Preview 2 以降から使用できます。
 
@@ -31,9 +31,9 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 拡張機能パック項目テンプレートは、一緒にインストールすることができる拡張機能のセットを拡張機能パックを作成します。
 
-1. **新しいプロジェクト** ダイアログ ボックスで、展開**Visual c#** または**Visual Basic**順にクリックします**Extensibility**します。 **テンプレート**ペインで、 **VSIX プロジェクト**します。 **[名前]** ボックスに「 `Test Extension Pack`」と入力します。 **[OK]** をクリックします。
+1. **新しいプロジェクト**ダイアログ ボックスで、検索を選択して"vsix" **VSIX プロジェクト**します。 **プロジェクト名**、「テスト拡張機能パック」を入力します。 **[作成]** を選択します。
 
-2. **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 移動する、Visual c#**拡張**ノード**拡張パック**します。 既定のファイル名 (ExtensionPack1.cs) のままにします。
+2. **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 移動する、Visual c#**拡張**ノード**拡張パック**します。 既定のファイル名 (ExtensionPack1.cs) のままにします。
 
 3. 次のコードを含む、ExtensionPack1.vsext ファイルが追加されます。
 
@@ -69,13 +69,23 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 これで、拡張機能を公開すると、Visual Studio にインストールし、テストします。
 
-1. Visual Studio での**ツール** メニューのをクリックして**拡張機能と更新しています.**.
+::: moniker range="vs-2017"
 
-2. クリックして**オンライン**し検索`Test Extension Pack`します。
+1. Visual Studio での**ツール** メニューのをクリックして**拡張機能と更新**します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio での**拡張** メニューのをクリックして**マネージ拡張**。
+
+::: moniker-end
+
+2. クリックして**オンライン**し、「テスト拡張機能パック」を検索します。
 
 3. **[ダウンロード]** をクリックします。 拡張機能と拡張機能パックに含まれる拡張機能のリストは、インストールのスケジュールされます。
 
-4. 以下のサンプル拡張機能パック ダウンロード ビューには、**拡張機能と更新**ダイアログ。 拡張の一覧を変更するには、拡張機能パックに含まれる拡張機能の一部のみをインストールする場合は、**インストールのスケジュールされた**します。
+4. 以下のサンプル拡張機能パック ダウンロード ビューには、**拡張機能の管理**ダイアログ。 拡張の一覧を変更するには、拡張機能パックに含まれる拡張機能の一部のみをインストールする場合は、**インストールのスケジュールされた**します。
 
     ![Marketplace から拡張機能パックをダウンロードします。](media/vside-extensionpack.png)
 
@@ -85,8 +95,18 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 コンピューターから、拡張機能を削除します。
 
-1. Visual Studio での**ツール** メニューのをクリックして**拡張機能と更新しています.**.
+::: moniker range="vs-2017"
 
-2. 選択`Test Extension Pack`し**アンインストール**します。 拡張機能と拡張機能パックに含まれる拡張機能のリストは、アンインストールのスケジュールされます。
+1. Visual Studio での**ツール** メニューのをクリックして**拡張機能と更新**します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio での**拡張** メニューのをクリックして**マネージ拡張**。
+
+::: moniker-end
+
+2. 選択**テスト拡張パック** をクリックし、**アンインストール**します。 拡張機能と拡張機能パックに含まれる拡張機能のリストは、アンインストールのスケジュールされます。
 
 3. アンインストールを完了するには、Visual Studio のすべてのインスタンスを閉じます。

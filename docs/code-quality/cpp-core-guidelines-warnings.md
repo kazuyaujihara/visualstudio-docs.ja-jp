@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223495"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323452"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 
@@ -84,7 +84,7 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 
 ように、新しいルールを追加する、C++ Core ガイドライン チェッカーの既存のコードを生成する警告の数は増やすことができます。 有効にするのにルールの種類をフィルター処理するのに定義済みの規則のセットを使用することができます。 Visual Studio 2017 バージョン 15.3 の時点では、サポートされている規則セット。
 
-  - **所有者ポインターの規則**適用[所有者に関連するリソース管理を確認します<T>、C++ Core Guidelines から](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)します。
+  - **所有者ポインターの規則**適用[所有者に関連するリソース管理を確認します\<T >、C++ Core Guidelines から](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)します。
 
   - **Const ルール**適用[、C++ Core guidelines の定数に関連したチェック](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)します。
 
@@ -162,7 +162,7 @@ Microsoft Visual C コンパイラでは、属性を非表示、GSL の制限付
 重点を置いてコード分析をまだ活用、Visual Studio IDE に役立つ場合があります。 大規模なプロジェクトのビルド時間を節約して、結果をフィルター処理を容易に使用できるシナリオの例を次に示します。
 
 1. コマンド シェルで次のように設定します。、`esp.extension`と`esp.annotationbuildlevel`環境変数。
-2. これらの変数を継承するように、コマンド シェルから、Visual Studio を起動します。
+2. これらの変数を継承するように、コマンド シェルから、Visual Studio を開きます。
 3. プロジェクトを読み込むし、そのプロパティを開きます。
 4. コード分析を有効にする、適切なルール セットの選択が、コード分析の拡張機能を有効にしません。
 5. C++ Core ガイドライン チェッカーの使用の分析のプロパティを表示するファイルに移動します。
@@ -187,7 +187,7 @@ Microsoft Visual C コンパイラでは、属性を非表示、GSL の制限付
 
 Microsoft.Cpp.targets ファイルをインポートする前にこれらのプロパティを追加することを確認します。 特定のルール セットを選択またはカスタム規則セットを作成またはその他の PREfast のチェックが含まれる既定の規則セットを使用できます。
 
-同じアプローチを使用して、指定したファイルにのみ、C++ Core チェックを行うことができます[前に説明した](#coreckeck_per_file)、MSBuild ファイルを使用します。 使用して、環境変数を設定することができます、`BuildMacro`項目。
+同じアプローチを使用して、指定したファイルにのみ、C++ Core チェックを行うことができます[前に説明した](#corecheck_per_file)、MSBuild ファイルを使用します。 使用して、環境変数を設定することができます、`BuildMacro`項目。
 
 ```xml
 <ItemGroup>

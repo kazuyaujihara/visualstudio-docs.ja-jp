@@ -6,7 +6,7 @@ Manager: lank
 layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
-Description: Welcome to Visual Studio Subscriptions
+Description: Visual Studio サブスクリプションへようこそ
 Searchscope: VS Subscription
 ---
 
@@ -19,6 +19,7 @@ Visual Studio サブスクリプションは、Windows、iOS、Android、Linux �
 管理者が、[https://manage.visualstudio.com](https://manage.visualstudio.com) にサインインして、チームにサブスクリプションを割り当てます。<br>
 サブスクライバーが、[https://my.visualstudio.com](https://my.visualstudio.com) にサインインして、サブスクリプション特典にアクセスします。
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">
@@ -150,7 +151,7 @@ Visual Studio サブスクリプションは、Windows、iOS、Android、Linux �
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
-                            <li>Team Foundation Server および TFS CAL</li>
+                            <li>Azure DevOps Server と CAL</li>
                         </ul>
                     </div>
                 </div>

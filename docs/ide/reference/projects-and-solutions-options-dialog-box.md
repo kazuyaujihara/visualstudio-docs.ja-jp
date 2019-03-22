@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684c129ed104ed11b7cd6c88a7b603956acf64cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922213"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867814"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>[プロジェクトおよびソリューション] ページの [オプション] ダイアログ ボックス
 
@@ -49,9 +49,13 @@ ms.locfileid: "55922213"
 
 選択した場合、ソリューションおよびソリューションで動作するすべてのコマンドが常に IDE に表示されます。 オフの場合、すべてのプロジェクトはスタンドアロン プロジェクトとして作成され、ソリューションに 1 つのプロジェクトだけが含まれている場合、ソリューション エクスプローラー内のソリューションや、IDE 内のソリューションで動作するコマンドは表示されません。
 
+::: moniker range="vs-2017"
+
 ### <a name="save-new-projects-when-created"></a>新しいプロジェクトを作成時に保存する
 
 選択すると、**[新しいプロジェクト]** ダイアログ ボックスにプロジェクトの場所を指定できます。 オフの場合、すべての新しいプロジェクトは一時プロジェクトとして作成されます。 一時プロジェクトで作業する場合、ディスクの場所を指定しなくても、プロジェクトを作成して試してみることができます。
+
+::: moniker-end
 
 ### <a name="warn-user-when-the-project-location-is-not-trusted"></a>プロジェクトの場所が信頼されていないときにユーザーに警告
 
@@ -71,7 +75,7 @@ ms.locfileid: "55922213"
 
 ### <a name="reopen-documents-on-solution-load"></a>ソリューションの読み込み時にドキュメントを再度開く
 
-**Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の新機能**
+**Visual Studio 2017 バージョン 15.8 で導入**
 
 オンにすると、前にこのソリューションを閉じたときに開かれていたドキュメントが、ソリューションを読み込むときに自動的に開かれます。
 

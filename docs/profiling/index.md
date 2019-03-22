@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: プロファイルを使用したアプリのパフォーマンスの測定 | Microsoft Docs
-description: Visual Studio 2017 を使用して、目的の言語で、アプリケーション、サービス、ツールのパフォーマンスをプロファイリングする方法について説明します。
+description: Visual Studio を使用して、目的の言語で、アプリケーション、サービス、ツールのパフォーマンスをプロファイリングする方法について説明します。
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
@@ -11,6 +11,8 @@ manager: jillfra
 # <a name="measure-app-performance-in-visual-studio"></a>Visual Studio でアプリのパフォーマンスを測定する
 
 プロファイリングと診断のツールを利用すれば、メモリの利用状況、CPU の利用状況、その他のアプリケーション レベルの問題を診断できます。 これらのツールでは、デバッガーでアプリケーションを実行し、一定期間のデータを集めることができます (変数値、関数呼び出し、イベントなど)。 コードの実行中のさまざまな時点におけるアプリケーションの状態を表示できます。
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>

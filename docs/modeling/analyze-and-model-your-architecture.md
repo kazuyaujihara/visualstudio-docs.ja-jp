@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf7e7bf78baede7e964aeeed7484261fdab2ef7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924468"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873669"
 ---
 # <a name="analyze-and-model-your-architecture"></a>アーキテクチャを分析およびモデルする
 
@@ -88,7 +88,7 @@ ms.locfileid: "55924468"
 **参照してください。**
 
 -   [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)
--   [依存関係図:参照](../modeling/layer-diagrams-reference.md)
+-   [依存関係図:リファレンス](../modeling/layer-diagrams-reference.md)
 -   [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>ドメイン固有言語 (DSL)
@@ -109,5 +109,5 @@ DSL は、特定の目的のために設計する表記法です。 Visual Studi
 
 ## <a name="see-also"></a>関連項目
 
-- [新機能](../modeling/what-s-new-for-design-in-visual-studio.md)
+- [Visual Studio 2017 でのモデリングは新機能](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps とアプリケーション ライフサイクル管理](/azure/devops/user-guide/devops-alm-overview)

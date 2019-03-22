@@ -12,22 +12,26 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 3094d6fbfa561d995c5cc72e0a6e56fbdd47ee63
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317680"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223765"
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio のパフォーマンスの最適化
 
 この記事では、Visual Studio の動作が遅いときに試すべきことをいくつか紹介します。 パフォーマンス改善案は他にもあり、「[Visual Studio のパフォーマンスのヒントとテクニック](../ide/visual-studio-performance-tips-and-tricks.md)」でご確認いただけます。
 
-## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Visual Studio 2017 バージョン 15.6 以降にアップグレードする
+## <a name="upgrade-visual-studio"></a>Visual Studio のアップグレード
 
-Visual Studio 2015 を現在使用している場合、[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) を無料でダウンロードし、パフォーマンスの改善をご確認ください。 Visual Studio 2017 では、ソリューションの読み込みが 2 ～ 3 倍速くなります。その他の面でもパフォーマンスが改善されます。 Visual Studio 2017 と Visual Studio 2015 の間には並行互換性があるので、試しても失うものはありません。
+Visual Studio 2015 を現在使用している場合、[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) または [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) を無料でダウンロードし、パフォーマンスの改善をご確認ください。 ソリューションの読み込みが Visual Studio 2015 よりも 2 から 3 倍速くなります。その他の面でもパフォーマンスが改善されます。 Visual Studio 2017 と Visual Studio 2019 は、Visual Studio 2015 との間に並行互換性があるので、試しても失うものはありません。
 
-Visual Studio 2017 を現在使用している場合、15.6 以降のバージョンを実行していることを確認してください。 バージョン 15.6 ではソリューションの読み込みが最大 2 ～ 3 倍速くなることがデータによって示されています。 [ここから](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)ダウンロードしてください。
+::: moniker range="vs-2017"
+
+Visual Studio 2017 を既に使用している場合、15.6 以降のバージョンを実行していることを確認してください。 バージョン 15.6 ではソリューションの読み込みが最大 2 ～ 3 倍速くなることがデータによって示されています。 [ここから](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)ダウンロードしてください。
+
+::: moniker-end
 
 ## <a name="extensions-and-tool-windows"></a>拡張機能とツール ウィンドウ
 
@@ -45,7 +49,7 @@ SSD を追加する場合、最適なパフォーマンスを得るために、�
 
 ## <a name="help-us-improve"></a>改善にご協力ください
 
-お客様からのフィードバックは品質向上に役立ちます。 **問題の報告**機能を利用してトレースを “記録” し、Microsoft にご送信ください。 **[クイック起動]** の横にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]**、**[フィードバックの送信]**、**[問題の報告]** の順に選択します。 詳細については、「[Visual Studio 2017 で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2017.md)」を参照してください。
+お客様からのフィードバックは品質向上に役立ちます。 **問題の報告**機能を利用してトレースを “記録” し、Microsoft にご送信ください。 **[クイック起動]** の横にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]**、**[フィードバックの送信]**、**[問題の報告]** の順に選択します。 詳細については、「[Visual Studio で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

@@ -8,16 +8,12 @@ ms.technology: vs-ide-nodejs
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: c6987cfe4934933bc85680d7ae4d3b3cda8fa060
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920862"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio の JavaScript
 
 Visual Studio には、JavaScript または TypeScript を使用してアプリを作成するのに役立つツールがいくつか用意されています。
+
+<!-- markdownlint-disable MD033 -->
 
 <h2>5 分間のクイック スタートで、Visual Studio で JavaScript を使用する方法を学ぶ</h2>
 
@@ -156,7 +152,7 @@ Visual Studio には、JavaScript または TypeScript を使用してアプリ�
 </ul>
 
 <hr>
-<h2>参照</h2>
+<h2>関連項目</h2>
 
 <p><ul class="panelContent cardsW">
     <li>
@@ -225,5 +221,4 @@ Visual Studio には、JavaScript または TypeScript を使用してアプリ�
         </a>
     </li>
 </ul><p>
-
 ---

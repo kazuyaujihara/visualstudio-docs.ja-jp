@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 319b9a5a63313535889a3396794c9481b6fe4965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949045"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222488"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop および FxCop アナライザーに関してよく寄せられる質問
 
@@ -31,7 +31,7 @@ FxCop アナライザーは .NET Compiler Platform ("Roslyn") に基づいてい
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>[コード分析の実行] コマンドで FxCop アナライザーを実行できますか?
 
-いいえ。 Visual Studio 2017 で **[分析]** > **[コード分析の実行]** を選択すると、スタティック コード分析または従来の FxCop が実行されます。 **[コード分析の実行]** は、Roslyn ベースの FxCop アナライザーを含む Roslyn ベースのアナライザーには何の影響もありません。
+いいえ。 **[分析]** > **[コード分析の実行]** を選択すると、スタティック コード分析または従来の FxCop が実行されます。 **[コード分析の実行]** は、Roslyn ベースの FxCop アナライザーを含む Roslyn ベースのアナライザーには何の影響もありません。
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild プロジェクト プロパティはアナライザーを実行しますか?
 

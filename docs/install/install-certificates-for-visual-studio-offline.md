@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9e0c9d47968d6e120beb8815a900ff8cc0b82603
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645720"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983001"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio オフライン インストールに必要な証明書をインストールする
 
@@ -71,6 +71,16 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 
    certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+   
+   あるいは、次のコマンドによって、certutil.exe (Windows に付属している) を使用するバッチ ファイルを作成します。
+   
+      ```cmd
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+
+   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
+   ```
 
 3. バッチ ファイルをクライアントに配置します。 このコマンドは、管理者特権のプロセスから実行する必要があります。
 
@@ -103,6 +113,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 ## <a name="checking-if-certificates-are-already-installed"></a>証明書が既にインストールされているかどうかを確認する
 
 以下の手順はインストール システムをチェックする方法の 1 つです。
+
 1. **mmc.exe** を実行します。<br/>
   a.  [ファイル] をクリックし、**[スナップインの追加と削除]** を選択します。<br/>
   b.  **[証明書]** をダブルクリックし、**[コンピューター アカウント]** を選択して、**[次へ]** をクリックします。<br/>

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45d165cd25b6ef17c4603ab5c1c7c783edd85d8b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927608"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223534"
 ---
 # <a name="navigate-code"></a>コード間の移動
 
@@ -82,7 +82,7 @@ Visual Studio には、エディター内でコード間を移動するための
 
 - **[ファイルに移動]** (**Ctrl** + **1**、**Ctrl** + **F**):ソリューション内の指定したファイルに移動します。
 
-- **[最近使ったファイルに移動]** (**Ctrl** + **1**、**Ctrl** + **R**):ソリューション内の指定した、最近アクセスしたファイルに移動します (Visual Studio 2017 バージョン 15.8 の新機能)。
+- **[最近使ったファイルに移動]** (**Ctrl** + **1**、**Ctrl** + **R**):ソリューション内の指定した、最近アクセスしたファイルに移動します。
 
 - **[型に移動]** (**Ctrl** + **1**、**Ctrl** + **T**):ソリューション内の指定した型に移動します。
 
@@ -105,7 +105,7 @@ Visual Studio 2017 バージョン 15.8 以降では、次の **[移動]** ナ�
 入力 | 関数
 ------------ | ---
 **キーボード** | 型名内のどこかにテキスト カーソルを置き、**F12** キーを押します
-**マウス** | 型名を右クリックし、**[定義へ移動]** を選択するか、**Ctrl** キーを押して、型名をクリックします (Visual Studio 2017 バージョン 15.4 の新機能)。
+**マウス** | 型名を右クリックし、**[定義へ移動]** を選択するか、**Ctrl** キーを押して、型名をクリックします。
 
 ## <a name="peek-definition"></a>定義をここに表示
 

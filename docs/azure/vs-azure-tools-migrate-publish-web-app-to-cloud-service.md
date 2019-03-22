@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: bb470e245f41bc83245d8c2234753ad84c0ee8db
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa0af441071c90ca42d7aa7169c75803bebeb255
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936305"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869006"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>方法: Visual Studio から Azure クラウド サービスに Web アプリケーションの移行および発行を行う
 
@@ -30,7 +30,7 @@ Azure のホスティング サービスとスケーラビリティを利用す�
 1. Visual Studio は MVC 2、MVC 3、MVC 4、Silverlight の各ビジネス アプリケーションに必要なアセンブリの **[ローカルにコピー]** プロパティも true に設定します。 このプロパティにより、デプロイに使用されるサービス パッケージにこれらのアセンブリが追加されます。
 
    > [!Important]
-   > この Web アプリケーションに必要な他のアセンブリまたはファイルがある場合は、それらのファイルのプロパティを手動で設定する必要があります。 これらのプロパティを設定する方法については、「[Include Files in the Service Package (サービス パッケージにファイルを取り込む)](#include-files-in-the-service-package)」をご覧ください。
+   > この Web アプリケーションに必要な他のアセンブリまたはファイルがある場合は、それらのファイルのプロパティを手動で設定する必要があります。 これらのプロパティを設定する方法については、「[Include Files in the Service Package (サービス パッケージにファイルを取り込む)](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package)」をご覧ください。
 
 ### <a name="errors-and-warnings"></a>エラーと警告
 

@@ -12,20 +12,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbd581da1e2a081636c4f4cf7885241c15eff97
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876266"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868060"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio の SharePoint ツールの拡張機能をデプロイします。
 
 SharePoint ツール拡張機能を展開するには、作成、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]拡張機能のアセンブリおよび拡張機能を配布するその他のファイルを含む拡張機能 (VSIX) パッケージ。 VSIX パッケージは、Open Packaging Conventions (OPC) 標準に準拠した圧縮ファイルです。 VSIX パッケージが、 *.vsix*拡張機能。
 
-VSIX パッケージを作成した後、その他のユーザーは、拡張機能をインストールする .vsix ファイルを実行できます。 ユーザーは、拡張機能をインストールしたときに、%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions フォルダーにすべてのファイル インストールされます。 VSIX パッケージをアップロードする、拡張機能を展開する、 [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkID=123847) Web サイト、またはすることができます、パッケージ、お客様に配布のパッケージをネットワーク共有またはその他のいくつかの Web サイトをホストしているなど、他の方法でします。
+VSIX パッケージを作成した後、その他のユーザーは、拡張機能をインストールする .vsix ファイルを実行できます。 ユーザーは、拡張機能をインストールしたときに、%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions フォルダーにすべてのファイル インストールされます。 VSIX パッケージをアップロードする、拡張機能を展開する、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイト、またはすることができます、パッケージ、お客様に配布のパッケージをネットワーク共有またはその他のいくつかの Web ホスティングなど、他の方法でサイトです。
 
-VSIX パッケージの作成および展開することの詳細については、 [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkID=123847)を参照してください[Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)します。
+VSIX パッケージの作成および展開することの詳細については、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)を参照してください[Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)します。
 
  使用して VSIX パッケージを作成することができます、 **VSIX プロジェクト**には、Visual Studio は、テンプレートでは、VSIX パッケージを手動で作成することができます。
 

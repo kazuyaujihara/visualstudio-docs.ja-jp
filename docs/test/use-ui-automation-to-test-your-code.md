@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5340d64087068f5da3b48c1057e3a6a8fb700a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919236"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145227"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI オートメーションを使用してコードをテストする
 
@@ -48,7 +48,7 @@ ms.locfileid: "55919236"
 
 ## <a name="install-the-coded-ui-test-component"></a>コード化された UI テストのコンポーネントをインストールする
 
-コード化された UI テストのツールとテンプレートにアクセスするには、Visual Studio 2017 の**コード化された UI テスト** コンポーネントをすべてインストールします。
+コード化された UI テストのツールとテンプレートにアクセスするには、Visual Studio の**コード化された UI テスト** コンポーネントをすべてインストールします。
 
 1. **[ツール]** > **[ツールと機能を取得]** を選択して **Visual Studio インストーラー**を起動します。
 
@@ -140,7 +140,7 @@ ms.locfileid: "55919236"
 
 8. テストを実行します。
 
-   テスト エクスプローラーを使用するか、テスト メソッドでショートカット メニューを開き、**[テストの実行]** を選択します。 テストの実行方法の詳細については、「[テスト エクスプローラーを使用した単体テストの実行](../test/run-unit-tests-with-test-explorer.md)」と、このトピックの最後の「[次の内容](#what's-next?)」セクションの「*コード化された UI テストの実行の追加オプション*」をご覧ください。
+   テスト エクスプローラーを使用するか、テスト メソッドでショートカット メニューを開き、**[テストの実行]** を選択します。 テストの実行方法の詳細については、「[テスト エクスプローラーを使用した単体テストの実行](../test/run-unit-tests-with-test-explorer.md)」と、このトピックの最後の「[次の内容](#whats-next?)」セクションの「*コード化された UI テストの実行の追加オプション*」をご覧ください。
 
 このトピックの残りのセクションでは、このプロシージャ内の各ステップについてさらに詳しく説明します。
 

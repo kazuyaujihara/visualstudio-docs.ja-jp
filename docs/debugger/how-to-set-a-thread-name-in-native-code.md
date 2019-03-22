@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264ac57a0d159b9cdd2627d7a62372fa070e31de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715181"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526231"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>方法 : ネイティブ コードのスレッド名を設定する
 スレッド名の設定は、Visual Studio のどのエディションでも実行できます。 関心のあるスレッドを識別するために便利ですがスレッドの名前を付け、**スレッド**ウィンドウの実行中のプロセスをデバッグするときにします。 スレッドの関係という名前を持つも役に立ちますさまざまなツールを使用してキャプチャするパフォーマンスの分析とクラッシュ ダンプの検査を使用して事後分析のデバッグを実行する場合。
@@ -40,7 +40,7 @@ ms.locfileid: "56715181"
 * スレッド名などの他のツールを使用する場合にも表示、 [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)デバッガーと[Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer)パフォーマンス アナライザーです。
 
 注意事項:
-* スレッド名は、Visual Studio 2017 バージョン 15.6 で表示されている以降のみです。
+* スレッド名では、Visual Studio 2017 バージョン 15.6 以降で表示されるのみです。
 * 事後分析、クラッシュのデバッグ ダンプ ファイル、ときにスレッド名は、クラッシュは、Windows 10 バージョン 1607 を Windows Server 2016 または Windows の以降のバージョンで作成した場合は、表示のみ。
 
 *例:*

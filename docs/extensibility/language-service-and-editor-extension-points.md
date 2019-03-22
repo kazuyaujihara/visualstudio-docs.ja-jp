@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15ccf8ab1b3f2fa97faaae5b97c47ac3179a672d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c80ee3cebe003eff7248626f0d8e27b3c179453
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679386"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323806"
 ---
 # <a name="language-service-and-editor-extension-points"></a>言語サービスとエディターの拡張ポイント
 エディターでは、ほとんどの言語サービスの機能を含む、Managed Extensibility Framework (MEF) コンポーネント パーツとして拡張する拡張ポイントを提供します。 これらには、主要な拡張機能ポイントのカテゴリです。
@@ -260,7 +260,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 
   次の例では、タガー プロバイダーにエクスポート属性を示します。
 
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>次のようなタグが組み込まれています。
+\<CodeContentPlaceHolder > 8</CodeContentPlaceHolder>次のようなタグが組み込まれています。
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: に関連付けられている、<xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>します。
 

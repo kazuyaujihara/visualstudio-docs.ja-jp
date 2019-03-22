@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe76cc490523325c8334ad7ada3273f101e0bbc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be76e5af3dafd3eebb8649fa82db6a14d46bb0d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626129"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323537"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>方法: コンカレンシー ビジュアライザー マーカー SDK を使用する
 このトピックでは、コンカレンシー ビジュアライザー SDK を使用してスパンを作成し、フラグ、メッセージ、警告を記述する方法について説明します。
@@ -78,7 +78,7 @@ ms.locfileid: "56626129"
 
      ![3 つのカスタム マーカー系列があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
-### <a name="to-use-visual-basic-or-c"></a>Visual Basic または C# を使用するには #
+### <a name="to-use-visual-basic-or-c"></a>Visual Basic または C\# を使用するには
 
 1.  アプリケーションにコンカレンシー ビジュアライザー SDK サポートを追加します。 詳細については、「[コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)」を参照してください。
 

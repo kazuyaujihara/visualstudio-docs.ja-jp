@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118b8a6c8d857e626d39cf27d2767f75cd0550ee
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704814"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526091"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>デバッグ中に呼び出し履歴のビジュアル マップを作成 (C#、Visual Basic、C++、JavaScript)
 
@@ -45,7 +45,7 @@ ms.locfileid: "56704814"
 コマンドとコード マップで使用できる操作の詳細については、次を参照してください。[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)します。
 
 >[!IMPORTANT]
->作成することができますのみでコード マップを[Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)します。
+>作成することができますのみでコード マップを[Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/)します。
 
 コード マップの概要を次に示します。
 

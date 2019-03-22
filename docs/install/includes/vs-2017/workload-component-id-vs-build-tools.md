@@ -5,16 +5,16 @@ description: Visual Studio のワークロード ID とコンポーネント ID 
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: c8341f268e0e238b7dcdc13d3d79810e1f52f0d7
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 703d1595373f29926984c5380ba3167083a4318c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324402"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57554663"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 開発ビルド ツール
 
@@ -29,7 +29,7 @@ ms.locfileid: "57324402"
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必須
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | 必須
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.6.1 開発ツール | 15.8.27825.0 | 必須
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 15.8.27825.0 | 必須
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 15.9.28307.421 | 必須
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET 用 Azure ライブラリ | 15.0.26208.0 | 必須
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services ビルド ツール | 15.7.27617.1 | 必須
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | コンテナーの開発ツール - Build Tools | 15.7.27617.1 | 必須
@@ -226,7 +226,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | スタティック分�
 Microsoft.VisualStudio.Component.VC.Tools.ARM | ARM 用 Visual C++ コンパイラとライブラリ | 15.8.27825.0 | 必須
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 バージョン 15.9 v14.16 最新の v141 ツール | 15.9.28230.55 | 必須
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | ユニバーサル Windows プラットフォーム ビルドの前提条件 | 15.8.27705.0 | 必須
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | 推奨
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | 推奨
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
@@ -237,6 +237,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | デスクトップ
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | デスクトップ用 Windows 10 SDK (10.0.16299.0) C++ [ARM および ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | UWP 用 Windows 10 SDK (10.0.16299.0):C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | UWP 用 Windows 10 SDK (10.0.16299.0):C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | Optional
 
@@ -256,8 +257,8 @@ Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Visual C++ 2017 再頒布
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 バージョン 15.9 v14.16 最新の v141 ツール | 15.9.28230.55 | 必須
 Microsoft.VisualStudio.Component.Windows10SDK | Windows ユニバーサル C ランタイム | 15.6.27406.0 | 必須
 Microsoft.VisualStudio.Component.TestTools.BuildTools | ツールのコア機能のテスト - Build Tools | 15.7.27625.0 | 推奨
-Microsoft.VisualStudio.Component.VC.CMake.Project | CMake の Visual C++ ツール | 15.8.27906.1 | 推奨
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | 推奨
+Microsoft.VisualStudio.Component.VC.CMake.Project | CMake の Visual C++ ツール | 15.9.28307.102 | 推奨
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | 推奨
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 15.6.27309.0 | Optional
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Optional
@@ -278,6 +279,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | デスクトップ
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | デスクトップ用 Windows 10 SDK (10.0.16299.0) C++ [ARM および ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | UWP 用 Windows 10 SDK (10.0.16299.0):C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | UWP 用 Windows 10 SDK (10.0.16299.0):C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.WinXP | C++ に関する Windows XP サポート | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK と UCRT SDK | 15.6.27406.0 | Optional

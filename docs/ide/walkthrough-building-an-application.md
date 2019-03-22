@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31806b05dc088da2e4cb5920f28a2e4cd04f0053
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bcd805c420b636225bc12c31afd79d47c6732d28
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954128"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323946"
 ---
 # <a name="walkthrough-build-an-application"></a>チュートリアル: アプリケーションを構築する
 
@@ -192,7 +192,7 @@ ms.locfileid: "55954128"
 
      ![[ビルド] メニューの [ソリューションのビルド] コマンド](../ide/media/exploreide-buildsolution.png)
 
-### <a name="specify-a-release-build-for-c"></a>C# 用にリリース ビルドを指定する #
+### <a name="specify-a-release-build-for-c"></a>C\# 用にリリース ビルドを指定する
 
 1. **プロジェクト デザイナー**を開きます。
 

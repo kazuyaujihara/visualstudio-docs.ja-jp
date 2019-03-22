@@ -1,6 +1,6 @@
 ---
 title: CA1819:プロパティは、配列を返すことはできません
-ms.date: 09/28/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af31c925420602329eb20b803c92879210518ebd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919210"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872744"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819:プロパティは、配列を返すことはできません
 
@@ -30,12 +30,14 @@ ms.locfileid: "55919210"
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
 |CheckId|CA1819|
-|カテゴリ|Microsoft.Performance|
+|Category|Microsoft.Performance|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
 
-パブリック型の public または protected のプロパティでは、配列を返します。
+プロパティは、配列を返します。
+
+既定では、このルールだけが検索で外部から参照できるプロパティと型が、これは[構成可能な](#configurability)します。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -52,6 +54,16 @@ ms.locfileid: "55919210"
 プロパティの一部である場合、警告を抑制することができます、[データ転送オブジェクト (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10))クラス。
 
 それ以外の場合、この規則による警告を抑制しないでください。
+
+## <a name="configurability"></a>構成機能
+
+この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+
+```
+dotnet_code_quality.ca1819.api_surface = private, internal
+```
+
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (パフォーマンス) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
 
 ## <a name="example-violation"></a>例の違反
 

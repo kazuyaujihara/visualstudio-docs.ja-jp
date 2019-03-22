@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff2be60979298de7a4c10e55285f1cdedc01ba9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954466"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867749"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>方法: ドラッグ アンド ドロップ ハンドラーを追加する
 
@@ -70,7 +70,7 @@ using System.Linq;
 
      詳細については、「[方法 :シェイプまたはデコレーターに対するクリック](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)します。
 
-`IsAcceptableDropItem(e)` を定義してドラッグした項目が受け入れられるかどうかを決定し、ProcessDragDropItem(e) を定義して項目がドロップされたときにモデルを更新します。 これらのメソッドは、最初にイベント引数から項目を抽出する必要があります。 その方法については、次を参照してください。[ドラッグした項目への参照を取得する方法](#extracting)します。
+`IsAcceptableDropItem(e)` を定義してドラッグした項目が受け入れられるかどうかを決定し、ProcessDragDropItem(e) を定義して項目がドロップされたときにモデルを更新します。 これらのメソッドは、最初にイベント引数から項目を抽出する必要があります。 その方法については、次を参照してください。[ドラッグした項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)します。
 
 ## <a name="define-gesture-handlers-by-using-mef"></a>MEF の使用によるジェスチャ ハンドラーを定義します。
 
@@ -114,7 +114,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
      ドラッグしたオブジェクトの種類が複数ある場合などは、複数のジェスチャ ハンドラー コンポーネントを作成できます。
 
-3.  ターゲットの図形、コネクタ、または図クラスに対して部分クラス定義を追加し、`IsAcceptableDropItem()` メソッドおよび `ProcessDragDropItem()` メソッドを定義します。 これらのメソッドでは、最初にイベント引数からドラッグした項目を抽出する必要があります。 詳細については、次を参照してください。[ドラッグした項目への参照を取得する方法](#extracting)します。
+3.  ターゲットの図形、コネクタ、または図クラスに対して部分クラス定義を追加し、`IsAcceptableDropItem()` メソッドおよび `ProcessDragDropItem()` メソッドを定義します。 これらのメソッドでは、最初にイベント引数からドラッグした項目を抽出する必要があります。 詳細については、次を参照してください。[ドラッグした項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)します。
 
 ## <a name="how-to-decode-the-dragged-item"></a>ドラッグした項目をデコードする方法
 
@@ -132,7 +132,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、次を参照してください。[ドラッグ アンド ドロップでモデル バス参照を送信する方法](#mbr)します。
+         ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、次を参照してください。[ドラッグ アンド ドロップでモデル バス参照を送信する方法](#to-send-an-object-from-a-source-dsl)します。
 
 -   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -ユーザーが DSL または UML モデルから項目をドラッグする場合は、このプロパティを使用します。 1 つの要素グループ プロトタイプには 1 つ以上のオブジェクト、リンク、およびそれらのプロパティ値が含まれます。 これは貼り付け操作やツールボックスから要素を追加する際にも使用されます。 プロトタイプ内のオブジェクトとそれらの種類は GUID により識別されます。 たとえば、次のコードを使用して、ユーザーはクラス要素を UML 図または UML モデル エクスプローラーからドラッグできます。
 

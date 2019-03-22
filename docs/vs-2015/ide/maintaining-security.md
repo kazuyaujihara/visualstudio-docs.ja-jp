@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 72e1351d593059d83efede7676b0182cd60c9f7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752883"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872830"
 ---
 # <a name="maintaining-security"></a>セキュリティの維持
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,13 @@ ms.locfileid: "54752883"
  [セキュリティ、プライバシー、アカウント](http://go.microsoft.com/fwlink/?LinkId=72881)  
  ウイルス、パスワード、保護者による制限、ファイアウォール、ドライブの暗号化に関する情報など、セキュリティ、プライバシー、ユーザー アカウントについてのヘルプです。  
   
- [Microsoft セキュリティ情報検索](http://go.microsoft.com/fwlink/?LinkId=110396)  
+ [Microsoft セキュリティ情報検索](/security-updates/)  
  この Web ページでは、過去に発表された情報を簡単に見つけることができます。 IT 専門家を対象に、セキュリティ更新プログラムに関する詳しい情報を提供しています。  
   
- [Windows Server 2003 セキュリティ ガイド](http://go.microsoft.com/fwlink/?LinkId=65300)  
- IT 専門家を対象に、正当なユーザーによる正当なコンテンツに対する正当なアクセスだけを許可して Windows Server 2003 環境を安全に運用する方法を説明します。  
+ [Windows Server 2003 セキュリティ ガイド](/previous-versions/tn-archive/cc163140(v=technet.10) は、IT プロフェッショナル、適切なユーザーによって、適切なコンテンツを適切なアクセスを確保しながら、Windows Server 2003 環境を安全に運用するために必要なガイダンスを提供します。  
   
- [企業セキュリティのベストプラクティス](http://go.microsoft.com/fwlink/?LinkId=72879)  
+ [企業セキュリティのベストプラクティス](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29)  
  企業ネットワークのセキュリティのさまざまな側面に焦点を当てたホワイト ペーパーが集められています。  
   
- [Microsoft Baseline Security Analyzer](http://go.microsoft.com/fwlink/?LinkId=9173)  
+ [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance)  
  Microsoft Baseline Security Analyzer (MBSA) は、ホーム ユーザー、企業ユーザー、および管理者を対象とするツールです。このツールを使用すると、Windows ベースのコンピューターでよくあるセキュリティ設定の間違いを見つけることができます。

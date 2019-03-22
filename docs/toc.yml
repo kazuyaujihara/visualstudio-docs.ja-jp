@@ -1,6 +1,7 @@
 items:
 - name: Visual Studio ドキュメント
   href: ide/index.yml
+  pdf_name: Visual Studio documentation
 - name: 概要
   items:
   - name: Visual Studio について
@@ -29,6 +30,8 @@ items:
       href: install/create-an-offline-installation-of-visual-studio.md
     - name: オフライン インストールに必要な証明書をインストールする
       href: install/install-certificates-for-visual-studio-offline.md
+  - name: 複数バージョンの Visual Studio をインストールする
+    href: install/install-visual-studio-versions-side-by-side.md
   - name: インストールの場所を選択する
     href: install/change-installation-locations.md
   - name: インストールの問題をトラブルシューティングする
@@ -129,6 +132,7 @@ items:
 - name: クイックスタート
   items:
   - name: Visual Studio のオリエンテーション
+    displayName: Feature tour
     href: ide/quickstart-ide-orientation.md
   - name: 'C++: コンソール アプリを作成する'
     href: ide/getting-started-with-cpp-in-visual-studio.md
@@ -168,8 +172,12 @@ items:
     - name: ソリューションとプロジェクトの使用
       href: ide/solutions-and-projects-in-visual-studio.md
       items:
+      - name: 新しいプロジェクトを作成する
+        href: ide/create-new-project.md
       - name: ソリューションとプロジェクトを作成する
         href: ide/creating-solutions-and-projects.md
+      - name: リポジトリからプロジェクトを開く
+        href: get-started/tutorial-open-project-from-repo.md
       - name: プロジェクトの移植、移行、およびアップグレード
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
       - name: Visual Studio 2019 でのプロジェクトの移植、移行、およびアップグレード
@@ -234,12 +242,15 @@ items:
           href: ide/template-parameters.md
       - name: 64 ビット サポート
         href: ide/visual-studio-ide-64-bit-support.md
-    - name: プロジェクトまたはソリューションを使用せずに開発する ("フォルダーを開く")
+    - name: プロジェクトやソリューションなしで開発する
+      displayName: Open folder
       href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
       items:
       - name: ビルドのカスタマイズとタスクのデバッグ
+        displayName: makefile tasks.vs.json
         href: ide/customize-build-and-debug-tasks-in-visual-studio.md
     - name: プロジェクトまたはリポジトリへの接続
+      displayName: Azure DevOps VSTS GitHub
       href: ide/connect-team-project.md
     - name: エディターを使用する
       href: ide/writing-code-in-the-code-and-text-editor.md
@@ -249,6 +260,7 @@ items:
         items:
         - name: '[正規表現を使用する]'
           href: ide/using-regular-expressions-in-visual-studio.md
+          dispayName: RegEx
         - name: '[検索/コマンド] ボックス'
           href: ide/find-command-box.md
         - name: '[フォルダーを指定して検索]'
@@ -261,6 +273,7 @@ items:
         - name: エンコーディングを使用してファイルを保存および開く
           href: ide/how-to-save-and-open-files-with-encoding.md
       - name: アウトライン
+        displayName: Expand and collapse
         href: ide/outlining.md
       - name: コードを生成し、修正する
         href: ide/code-generation-in-visual-studio.md
@@ -293,6 +306,7 @@ items:
             - name: スニペットのトラブルシューティング
               href: ide/troubleshooting-snippets.md
         - name: クイック アクション
+          displayName: light bulb screwdriver suggestions
           href: ide/quick-actions.md
           items:
           - name: 共通のクイック アクション
@@ -387,6 +401,7 @@ items:
           - name: すべてのキーボード ショートカット
             href: ide/default-keyboard-shortcuts-in-visual-studio.md
         - name: .NET 開発者向けのヒント
+          displayName: ReSharper
           href: ide/visual-studio-2017-for-dotnet-developers.md
       - name: IntelliSense を使用する
         href: ide/using-intellisense.md
@@ -436,6 +451,7 @@ items:
         href: ide/code-styles-and-quick-actions.md
         items:
         - name: コード スタイルに関する EditorConfig ファイルの使用
+          displayName: Configure code style analyzers
           href: ide/create-portable-custom-editor-options.md
           items:
           - name: .NET 言語と書式の規則
@@ -533,6 +549,7 @@ items:
     - name: XML ファイルと XSLT ファイルの操作
       href: xml-tools/xml-tools-in-visual-studio.md
     - name: 国際対応のアプリの開発
+      displayName: Globalization localization world-ready
       href: ide/globalizing-and-localizing-applications.md
       items:
       - name: 双方向言語
@@ -609,8 +626,10 @@ items:
           - name: '手順 9: その他の機能を試す'
             href: ide/step-9-try-other-features.md
   - name: データへのアクセス...
+    displayName: Data connections
     href: data-tools/accessing-data-in-visual-studio.md
   - name: ユーザー インターフェイスを設計する...
+    displayName: XAML designer
     href: designers/designing-user-interfaces.md
   - name: コンパイルとビルド
     href: ide/compiling-and-building-in-visual-studio.md
@@ -657,6 +676,7 @@ items:
     - name: MSBuild...
       href: msbuild/msbuild.md
     - name: Azure Pipelines と TFS...
+      displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
       href: /azure/devops/pipelines/index?view=vsts
     - name: ビルド イベントを指定する (Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
@@ -669,14 +689,18 @@ items:
   - name: デバッグ...
     href: debugger/index.md
   - name: テスト...
+    displayName: Unit testing
     href: test/improve-code-quality.md
   - name: パフォーマンスの計測...
+    displayName: Profiling
     href: profiling/index.md
   - name: コード品質の分析...
+    displayName: Code analysis FxCop Analyzers
     href: code-quality/index.md
   - name: 配置...
     href: deployment/index.md
   - name: Visual Studio を拡張する...
+    displayName: Visual Studio SDK
     href: extensibility/visual-studio-sdk.md
   - name: アーキテクチャの分析とモデル化...
     href: modeling/analyze-and-model-your-architecture.md
@@ -698,6 +722,7 @@ items:
     - name: ソリューション エクスプローラーでのファイルの入れ子
       href: ide/file-nesting-solution-explorer.md
     - name: 起動の動作
+      displayName: Start page window
       href: ide/customizing-the-start-page-for-visual-studio.md
     - name: Visual Studio 拡張機能の検索と使用
       href: ide/finding-and-using-visual-studio-extensions.md
@@ -728,6 +753,7 @@ items:
 - name: 関連項目
   items:
   - name: 一般的なユーザー インターフェイス要素
+    displayName: Windows and dialogs
     items:
     - name: 呼び出し階層
       href: ide/reference/call-hierarchy.md
@@ -763,7 +789,7 @@ items:
           href: ide/reference/autorecover-environment-options-dialog-box.md
         - name: '[環境] - [ドキュメント]'
           href: ide/reference/documents-environment-options-dialog-box.md
-        - name: '[環境] - [拡張機能と更新プログラム]'
+        - name: '[環境] - [拡張機能]'
           href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
         - name: '[環境] - [検索と置換]'
           href: ide/reference/find-and-replace-environment-options-dialog-box.md
@@ -963,6 +989,8 @@ items:
       href: ide/reference/deploy-devenv-exe.md
     - name: -Diff (devenv.exe)
       href: ide/reference/diff.md
+    - name: -DoNotLoadProjects (devenv.exe)
+      href: ide/reference/donotloadprojects-devenv-exe.md
     - name: -Edit (devenv.exe)
       href: ide/reference/edit-devenv-exe.md
     - name: -LCID (devenv.exe)
@@ -1076,6 +1104,7 @@ items:
     href: help-viewer/overview.md
     items:
     - name: ローカル コンテンツのインストールと管理
+      displayName: Offline books docs
       href: help-viewer/install-manage-local-content.md
     - name: ヘルプ ビューアーでのトピックの検索
       items:
@@ -1112,28 +1141,40 @@ items:
     href: ide/whats-new-visual-studio-2019.md
   - name: リリース ノートとシステム要件
     items:
-    - name: 最新のリリース ノート
-      href: /visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017
-    - name: リリース ノートのプレビュー
-      href: /visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017
-    - name: リリース ノート履歴
-      href: /visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default&contextView=vs-2017
     - name: リリースのタイミング
-      href: /visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default&contextView=vs-2017
-    - name: Visual Studio のロードマップ
-      href: /visualstudio/productinfo/vs2018-roadmap?context=visualstudio/default&contextView=vs-2017
-    - name: システム要件
-      href: /visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017
-    - name: プラットフォームの互換性
-      href: /visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default&contextView=vs-2017
-    - name: ライセンス
+      href: /visualstudio/productinfo/release-rhythm/
+    - name: Visual Studio 2017
+      items:
+      - name: 最新のリリース ノート
+        href: /visualstudio/releasenotes/vs2017-relnotes/
+      - name: リリース ノートのプレビュー
+        href: /visualstudio/releasenotes/vs2017-preview-relnotes/
+      - name: リリース ノート履歴
+        href: /visualstudio/releasenotes/vs2017-relnotes-history/
+      - name: 再頒布可能コード
+        href: /visualstudio/productinfo/2017-redistribution-vs/
+      - name: プラットフォームの互換性
+        href: /visualstudio/productinfo/vs2017-compatibility-vs/
+      - name: システム要件
+        href: /visualstudio/productinfo/vs2017-system-requirements-vs/
+    - name: Visual Studio 2019
+      items:
+      - name: 最新のリリース ノート
+        href: /visualstudio/releases/2019/release-notes/
+      - name: リリース ノートのプレビュー
+        href: /visualstudio/releases/2019/release-notes-preview/
+      - name: リリース ノート履歴
+        href: /visualstudio/releases/2019/release-notes-history/
+      - name: 再頒布可能コード
+        href: /visualstudio/releases/2019/redistribution/
+      - name: プラットフォームの互換性
+        href: /visualstudio/releases/2019/compatibility/
+      - name: システム要件
+        href: /visualstudio/releases/2019/system-requirements/
+    - name: ライセンス条項
       href: https://visualstudio.microsoft.com/license-terms/
-    - name: 再頒布可能コード
-      href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default&contextView=vs-2017
     - name: サポート ライフサイクルとサービス
-      href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default&contextView=vs-2017
-    - name: 開発者コミュニティのデータのプライバシー
-      href: ide/developer-community-privacy.md
+      href: /visualstudio/productinfo/vs-servicing-vs/
   - name: Visual Studio で問題を報告する方法
     href: ide/how-to-report-a-problem-with-visual-studio.md
     items:
@@ -1141,6 +1182,8 @@ items:
       href: ide/report-a-problem.md
   - name: Visual Studio の機能を提案する
     href: ide/suggest-a-feature.md
+  - name: 開発者コミュニティのデータのプライバシー
+    href: ide/developer-community-privacy.md
   - name: カスタマー エクスペリエンス向上プログラム
     href: ide/visual-studio-experience-improvement-program.md
     items:
@@ -1149,11 +1192,12 @@ items:
   - name: IDE に関するエラーのトラブルシューティング情報
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: ご意見
+    displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: a54443258922e37da185b8abd7897a2ab6a525cb
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 9df9ac7c4440ae6d968f0925a086921bf49a309d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324261"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324040"

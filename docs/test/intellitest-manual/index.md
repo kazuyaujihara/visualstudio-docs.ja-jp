@@ -3,18 +3,12 @@ title: IntelliTest リファレンス マニュアル | Microsoft Developer Test
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- IntelliTest Reference Manual, IntelliTest
+  - 'IntelliTest Reference Manual, IntelliTest'
 ms.author: gewarren
 manager: jillfra
 ms.workload:
-- multiple
+  - multiple
 author: gewarren
-ms.openlocfilehash: 2ba7a355b5fe8e2b332928c351753a99faed6681
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948950"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest リファレンス マニュアル
 
@@ -30,11 +24,11 @@ ms.locfileid: "55948950"
     * [Language](introduction.md#language)
     * [シンボリック推論](introduction.md#symbolic-reasoning)
     * [スタック トレースの誤り](introduction.md#incorrect-stack-traces)
-  - [関連資料](introduction.md#further-reading)<p>&nbsp;</p>
+  - [関連資料](introduction.md#further-reading)
 
 * **[IntelliTest の使用を開始する](getting-started.md)**
   - [重要な属性](getting-started.md#important-attributes)
-  - [重要な静的ヘルパー クラス](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [重要な静的ヘルパー クラス](getting-started.md#helper-classes)
 
 * **[テスト生成](test-generation.md)**
   - [テスト ジェネレーター](test-generation.md#test-generators)
@@ -47,7 +41,7 @@ ms.locfileid: "55948950"
   - [事後条件](test-generation.md#postcondition)
   - [テスト不合格](test-generation.md#test-failures)
   - [セットアップと破棄](test-generation.md#setup-teardown)
-  - [関連資料](test-generation.md#further-reading)<p>&nbsp;</p>
+  - [関連資料](test-generation.md#further-reading)
 
 * **[入力生成](input-generation.md)**
   - [制約ソルバー](input-generation.md#constraint-solver)
@@ -60,7 +54,7 @@ ms.locfileid: "55948950"
   - [構造体](input-generation.md#structs)
   - [配列と文字列](input-generation.md#arrays-and-strings)
   - [追加の入力を取得する](input-generation.md#additional-inputs)
-  - [関連資料](input-generation.md#further-reading)<p>&nbsp;</p>
+  - [関連資料](input-generation.md#further-reading)
 
 * **[探索の範囲](exploration-bounds.md)**
   - [MaxConstraintSolverTime](exploration-bounds.md#maxconstraintsolvertime)
@@ -75,7 +69,7 @@ ms.locfileid: "55948950"
   - [MaxExceptions](exploration-bounds.md#maxexceptions)
   - [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded)
   - [TestEmissionFilter](exploration-bounds.md#testemissionfilter)
-  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)<p>&nbsp;</p>
+  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)
 
 * **[属性の解説](attribute-glossary.md)**
   - [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull)
@@ -90,7 +84,7 @@ ms.locfileid: "55948950"
   - [PexAllowedException](attribute-glossary.md#pexallowedexception)
   - [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly)
   - [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype)
-  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)<p>&nbsp;</p>
+  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)
 
 * **[設定ウォーターフォール](settings-waterfall.md)**
 
@@ -99,7 +93,7 @@ ms.locfileid: "55948950"
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
   - [PexObserve](static-helper-classes.md#pexobserve)
-  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)<p>&nbsp;</p>
+  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)
 
 * **[Warnings and Errors](warnings-and-errors.md)**
   - [MaxBranches を超えました](warnings-and-errors.md#maxbranches-exceeded)
@@ -121,7 +115,7 @@ ms.locfileid: "55948950"
   - [テストの容易性の問題](warnings-and-errors.md#testability-issue)
   - [制限](warnings-and-errors.md#limitation)
   - [観察された呼び出しが一致しません](warnings-and-errors.md#observed-call-mismatch)
-  - [静的フィールドに格納された値](warnings-and-errors.md#value-static-field)<p>&nbsp;</p>
+  - [静的フィールドに格納された値](warnings-and-errors.md#value-static-field)
 
 ## <a name="got-feedback"></a>フィードバックをお寄せください
 

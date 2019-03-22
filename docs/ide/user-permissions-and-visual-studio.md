@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1caf11a871cee04d4baa4b2efc750e0603f626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946066"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222859"
 ---
 # <a name="user-permissions-and-visual-studio"></a>ユーザー アクセス許可と Visual Studio
 
@@ -50,11 +50,25 @@ Visual Studio を管理者として実行する必要がある場合は、次の
 > [!NOTE]
 > ここで説明する手順は Windows 10 用です。 これらの手順は、Windows のその他のバージョンの場合と似ています。
 
+::: moniker range="vs-2017"
+
 1. **[スタート]** メニューを開き、Visual Studio 2017 にスクロールします。
 
-1. 右クリックして、つまり **Visual Studio 2017** のコンテキスト メニューから **[その他]** > **[管理者として実行]** を選択します。
+1. 右クリックして、つまり **Visual Studio 2017** のコンテキスト メニューから **[その他]**>**[管理者として実行]** を選択します。
 
    Visual Studio の起動時には、**[(管理者)]** がタイトル バーの製品名の後に表示されます。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. **[スタート]** メニューを開き、Visual Studio 2019 にスクロールします。
+
+1. 右クリックして、つまり **Visual Studio 2019** のコンテキスト メニューから **[その他]** > **[管理者として実行]** を選択します。
+
+   Visual Studio の起動時には、**[(管理者)]** がタイトル バーの製品名の後に表示されます。
+
+::: moniker-end
 
 アプリケーションのショートカットを変更して、常に管理者アクセス許可で実行することもできます。
 

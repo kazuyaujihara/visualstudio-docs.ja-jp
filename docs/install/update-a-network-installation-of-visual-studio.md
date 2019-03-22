@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 731c2ca6993ed4d71238a290f782bdd079271039
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796635"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983833"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Visual Studio 2017 のネットワーク ベース インストールを更新する
+# <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio のネットワーク ベース インストールを更新する
 
 ネットワーク インストール レイアウトを Visual Studio の最新のインストール ポイントとして使用できるように、また、クライアント ワークステーションに既に配置されているインストールを保持するために、最新の製品の更新プログラムを使って Visual Studio のネットワーク インストール レイアウトを更新できます。
 

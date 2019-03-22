@@ -13,17 +13,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 309c02abb29b599a5753a39c28d9b95314088550
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+monikerRange: vs-2017
+ms.openlocfilehash: 882465acd61f3f76d358f52ae75c9041c311dcd5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696715"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867283"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 要素 (Visual Studio テンプレート)
-プロジェクトの保存場所を使用して、ユーザーを確認するかどうかを指定します、**新しいプロジェクト**プロジェクトを作成するときに、ダイアログ ボックス。 この要素が `true` に設定されている場合、ユーザーは保存場所の入力を求められます。`false` に設定されている場合は、入力を求められません  (つまり、一時プロジェクトが作成されます)。
 
- \<VSTemplate > \<TemplateData > \<PromptForSaveOnCreation >
+プロジェクトの保存場所を使用して、ユーザーを確認するかどうかを指定します、**新しいプロジェクト**プロジェクトを作成するときに、ダイアログ ボックス。 この要素に設定されている場合`true`保存の入力を求められますが、ユーザーの場所。 場合`false`は求められませんし (つまり、一時的なプロジェクトが作成されます)。
+
+```xml
+\<VSTemplate>
+\<TemplateData>
+\<PromptForSaveOnCreation>
+```
 
 ## <a name="syntax"></a>構文
 
@@ -59,7 +65,7 @@ ms.locfileid: "56696715"
 ## <a name="example"></a>例
  `PromptForSaveOnCreation` の値を `false` に設定する方法を次に示します。この設定により、プロジェクトは一時プロジェクトとして作成されるようになります。
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +91,6 @@ ms.locfileid: "56696715"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)

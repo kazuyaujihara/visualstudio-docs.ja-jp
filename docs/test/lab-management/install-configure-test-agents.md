@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55cff84a4633b3b59d8167c0f460cbd96a98f04c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912743"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223027"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>テスト エージェントとテスト コントローラーのインストール
 
@@ -24,7 +24,7 @@ Visual Studio と Azure Test Plans または Team Foundation Server (TFS) を使
 
 ## <a name="system-requirements"></a>システム要件
 
-次の表では、Visual Studio 2017 のテスト エージェントまたはテスト コントローラーをインストールするためのシステム要件を示します。
+次の表では、Visual Studio のテスト エージェントまたはテスト コントローラーをインストールするためのシステム要件を示します。
 
 | アイテム | 要件 |
 | ---- | ------------ |
@@ -34,7 +34,7 @@ Visual Studio と Azure Test Plans または Team Foundation Server (TFS) を使
 
 ## <a name="install-the-test-controller-and-test-agents"></a>テスト コントローラーとテスト エージェントのインストール
 
-Agents for Visual Studio 2017 は [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) からダウンロードできます。 *Agents for Visual Studio 2017* を探し、*[エージェント]* または *[コントローラー]* を選択して、*[ダウンロード]* を選択します。 ダウンロードした実行可能ファイルを実行し、テスト エージェントまたはテスト コントローラーをインストールします。
+Agents for Visual Studio は [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) からダウンロードできます。 *Agents for Visual Studio 2017* を探し、*[エージェント]* または *[コントローラー]* を選択して、*[ダウンロード]* を選択します。 ダウンロードした実行可能ファイルを実行し、テスト エージェントまたはテスト コントローラーをインストールします。
 
 Visual Studio 2015 および Visual Studio 2013 用のエージェントは、[以前のバージョンのダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/) ページからダウンロードできます。
 

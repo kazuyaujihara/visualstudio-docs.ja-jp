@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d662ef0e0b838b324250da8dca4255a6237bccb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39a31a7eca86daa390ed1bb4ad32ab5e8859b2d7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969721"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873477"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>保存された IntelliTrace データを使用して (C#、Visual Basic、C++)
 
@@ -38,7 +38,7 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
     |----------------|-------------|
     |Visual Studio Enterprise Edition (ただし、Professional または Community Edition を除く) での IntelliTrace セッション|[IntelliTrace の機能](../debugger/intellitrace-features.md)|
     |Microsoft Test Manager のテスト セッション。 これにより、.iTrace ファイルが Team Foundation Server の作業項目にアタッチされます。|[手動テストでの複数の診断データの収集](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
-    |配置で実行されている ASP.NET Web アプリおよび SharePoint アプリケーションのための、単独で、または System Center 2012 R2 Operations Manager と連携して動作する Microsoft Monitoring Agent|-   [配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager の新機能](http://technet.microsoft.com/library/dn249700.aspx)|
+    |配置で実行されている ASP.NET Web アプリおよび SharePoint アプリケーションのための、単独で、または System Center 2012 R2 Operations Manager と連携して動作する Microsoft Monitoring Agent|-   [配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager の新機能](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ##  <a name="GetStarted"></a> 実行する操作
 
@@ -109,7 +109,7 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
 
 3.  その呼び出しを展開して、その時点で記録された、入れ子になったすべての呼び出しとパラメーター値を確認します。
 
-     (キーボード:キーを押すと、入れ子になった呼び出しを非表示、 **→**または**←**キーをそれぞれします。 入れ子になった呼び出しのパラメーター値を表示または非表示にするには、 **スペース** キーを押します。)
+     (キーボード: 入れ子になった呼び出しを表示または非表示にするには、 **右矢印** キーまたは **左矢印** キーをそれぞれ押します。 入れ子になった呼び出しのパラメーター値を表示または非表示にするには、 **スペース** キーを押します。)
 
      その呼び出しからデバッグを開始します。
 
@@ -206,7 +206,7 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
 
     ![IntelliTrace ログ&#45;SharePoint 未処理の例外](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   チュートリアルについては、次を参照してください。[チュートリアル。IntelliTrace を使用して SharePoint アプリケーションのデバッグ](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)します。 エージェントのレコードが表示されるデータの種類の[IntelliTrace 機能](../debugger/intellitrace-features.md)します。
+   チュートリアルについては、次を参照してください。[チュートリアル: IntelliTrace を使用した、SharePoint アプリケーションのデバッグ](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)します。 エージェントのレコードが表示されるデータの種類の[IntelliTrace 機能](../debugger/intellitrace-features.md)します。
 
 ###  <a name="ThreadsList"></a> スレッド一覧
  ターゲット プロセスで実行されたスレッドの記録を確認します。 選択されているスレッドの最初の有効な IntelliTrace イベントからデバッグを開始できます。
@@ -272,4 +272,4 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
  [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 - 第 6 章による継続的デリバリーのテスト。テスト ツールボックス](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 6 章: テスト ツールボックス](http://go.microsoft.com/fwlink/?LinkID=255203)

@@ -2,7 +2,7 @@
 title: プロファイリング ツールを使用してパフォーマンスを測定する
 description: Visual Studio で利用可能な各種診断ツールについて簡単に説明します。
 ms.custom: mvc
-ms.date: 05/18/2017
+ms.date: 05/18/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611920"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873179"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>クイック スタート: プロファイリング ツールの概要
 

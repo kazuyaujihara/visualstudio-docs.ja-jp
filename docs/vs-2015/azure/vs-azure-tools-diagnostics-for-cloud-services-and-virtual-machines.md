@@ -12,7 +12,7 @@ ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: 4448825c5d443887833a405aab14d2243a0e5216
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51003072"
@@ -22,7 +22,7 @@ Azure クラウド サービスまたは仮想マシンのトラブルシュー�
 
 この記事で紹介する Visual Studio を使用して有効にして前に、と配置後に、Azure 診断を設定する方法。 Azure virtual machines で診断を設定する方法や、収集する診断情報の種類を選択する方法、収集した情報を表示する方法について説明します。
 
-Azure 診断を設定するには、次のオプションのいずれかを使用できます。
+Azure Diagnostics を設定するには、次のオプションのいずれかを使用できます。
 
 * 診断設定を変更、**診断構成**Visual Studio でのダイアログ ボックス。 設定は、diagnostics.wadcfgx (Azure SDK 2.4 以降では、ファイルは diagnostics.wadcfg という名前) という名前のファイルに保存されます。 構成ファイルを直接変更することもできます。 ファイルを手動で更新する場合、構成の変更が適用次に、クラウドをデプロイするときはサービスを Azure にまたはエミュレーターでサービスを実行します。
 * Visual Studio で Cloud Explorer またはサーバー エクスプ ローラーを使用して、クラウド サービスまたはが実行されている仮想マシンの診断設定を変更します。
@@ -208,7 +208,7 @@ Azure SDK 2.5 を使用しているカスタム データ ソースを指定す�
    
     使用可能なデータを表示するレポートが表示されます。
    
-    ![Visual Studio の Microsoft Azure 診断レポート](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796666.png)
+    ![Visual Studio の Microsoft Azure Diagnostics レポート](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796666.png)
    
     最新のデータが表示されない場合は、転送間隔の経過を待つ必要があります。
    

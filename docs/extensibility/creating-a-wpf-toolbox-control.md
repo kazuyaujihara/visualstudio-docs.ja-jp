@@ -1,6 +1,6 @@
 ---
 title: WPF ツールボックス コントロールの作成 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -12,23 +12,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5495d5aaa3591a5d090b9c0324fb75d2f17d9a4a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316770"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194828"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>WPF ツールボックス コントロールを作成します。
-WPF (Windows Presentation Framework) ツールボックス コントロール テンプレートは自動的に追加する WPF コントロールを作成することができます、**ツールボックス**拡張機能がインストールされている場合。 このトピックでは、テンプレートを使用して作成する方法、**ツールボックス**コントロールを他のユーザーに配布することができます。
+
+WPF (Windows Presentation Framework) ツールボックス コントロール テンプレートは自動的に追加する WPF コントロールを作成することができます、**ツールボックス**拡張機能がインストールされている場合。 このチュートリアルでは、テンプレートを使用して作成する方法、**ツールボックス**コントロールを他のユーザーに配布することができます。
 
 Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 詳細については、"[Visual Studio SDK をインストール](../extensibility/installing-the-visual-studio-sdk.md)"を参照してください。
 
-## <a name="create-a-wpf-toolbox-control"></a>WPF ツールボックス コントロールを作成します。
+## <a name="create-the-toolbox-control"></a>ツールボックス コントロールを作成します。
 
 ### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>WPF ツールボックス コントロールでの拡張機能を作成します。
 
-1. という名前の VSIX プロジェクトを作成する`MyToolboxControl`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#** > **Extensibility**します。
+1. という名前の VSIX プロジェクトを作成する`MyToolboxControl`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**ダイアログで"vsix"を検索します。
 
 2. プロジェクトが開いたら、追加、 **WPF ツールボックス コントロール**という名前の項目テンプレート`MyToolboxControl`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#** > **拡張**選択**WPF ツールボックス コントロール**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*MyToolboxControl.cs*します。
 
@@ -53,6 +54,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     ```
 
 ## <a name="renaming-the-control"></a>コントロールの名前変更
+
  既定では、コントロールに表示されます、**ツールボックス**として**MyToolboxControl**という名前のグループで**MyToolboxControl.MyToolboxControl**します。 これらの名前を変更することができます、 *MyToolboxControl.xaml.cs*ファイル。
 
 1. 開いている*MyToolboxControl.xaml.cs*コード ビューで。
@@ -75,6 +77,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     ```
 
 ## <a name="build-test-and-deployment"></a>ビルド、テスト、および展開
+
  プロジェクトをデバッグするときにインストールされているコントロールを検索する必要があります、**ツールボックス**の Visual Studio の実験用インスタンス。
 
 ### <a name="to-build-and-test-the-control"></a>コントロールをビルドおよびテストするには
@@ -97,4 +100,4 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 3. アップロード、 *.vsix*ファイルは、ネットワークまたは Web サイトにします。
 
-    ファイルをアップロードする場合、 [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkID=123847) Web サイト、他のユーザーが使用できる**ツール** > **拡張機能と更新**Visual Studio でのコントロールを検索するにはオンラインし、インストールします。
+    ファイルをアップロードする場合、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイト、他のユーザーが使用できる**ツール** > **拡張機能と更新**を検索する Visual Studio で、オンラインを制御し、それをインストールします。

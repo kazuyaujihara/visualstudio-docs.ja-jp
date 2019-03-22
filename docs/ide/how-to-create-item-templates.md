@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22d0fcfe1a048b83926cbd79e9c479e2f1ec85ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935577"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222088"
 ---
 # <a name="how-to-create-item-templates"></a>方法:項目テンプレートを作成する
 
@@ -109,19 +109,29 @@ Windows、Office、Database、Web など、特定のプロジェクト サブタ
 
 1. プロジェクトとプロジェクト項目を作成します。
 
-1. プロジェクト項目を変更して、テンプレートとして保存できる状態にします。
+2. プロジェクト項目を変更して、テンプレートとして保存できる状態にします。
 
-1. 必要に応じて、コード ファイルを変更し、パラメーター置換を行う場所を示します。 パラメーター置換の詳細については、「[方法:テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」を参照してください。
+3. 必要に応じて、コード ファイルを変更し、パラメーター置換を行う場所を示します。 パラメーター置換の詳細については、「[方法:テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」を参照してください。
 
-1. XML ファイルを作成し、*.vstemplate* ファイル拡張子を使って、プロジェクトの項目ファイルと同じディレクトリに保存します。
+4. XML ファイルを作成し、*.vstemplate* ファイル拡張子を使って、プロジェクトの項目ファイルと同じディレクトリに保存します。
 
-1. 項目テンプレート メタデータを提供するための *.vstemplate* XML ファイルを編集します。 詳細については、「[Visual Studio テンプレート スキーマ参照 (機能拡張)](../extensibility/visual-studio-template-schema-reference.md)」と、前のセクションの例を参照してください。
+5. 項目テンプレート メタデータを提供するための *.vstemplate* XML ファイルを編集します。 詳細については、「[Visual Studio テンプレート スキーマ参照 (機能拡張)](../extensibility/visual-studio-template-schema-reference.md)」と、前のセクションの例を参照してください。
 
-1. *.vstemplate* ファイルを保存して閉じます。
+6. *.vstemplate* ファイルを保存して閉じます。
 
-1. **Windows エクスプローラー**で、テンプレートに含めるファイルを選択します。 選択したファイルを右クリックし、**[送る]** > **[圧縮 (zip 形式) フォルダー]** の順に選びます。 選択したファイルは *.zip* ファイルに圧縮されます。
+7. **Windows エクスプローラー**で、テンプレートに含めるファイルを選択します。 選択したファイルを右クリックし、**[送る]** > **[圧縮 (zip 形式) フォルダー]** の順に選びます。 選択したファイルは *.zip* ファイルに圧縮されます。
 
-1. *.zip* ファイルをコピーして、ユーザーの項目テンプレートの場所に貼り付けます。 Visual Studio 2017 での既定のディレクトリは、*%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates* です。 詳細については、「[方法 :プロジェクト テンプレートと項目テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+::: moniker range="vs-2017"
+
+8. *.zip* ファイルをコピーして、ユーザーの項目テンプレートの場所に貼り付けます。 既定のディレクトリは、*%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates* です。 詳細については、「[方法 :プロジェクト テンプレートと項目テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. *.zip* ファイルをコピーして、ユーザーの項目テンプレートの場所に貼り付けます。 既定のディレクトリは、*%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates* です。 詳細については、「[方法 :プロジェクト テンプレートと項目テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+
+::: moniker-end
 
 ## <a name="see-also"></a>関連項目
 

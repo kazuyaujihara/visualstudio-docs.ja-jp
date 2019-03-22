@@ -52,7 +52,7 @@ HTTPS エンドポイントを既に追加している場合は、既定で [HTT
 
 ### <a name="diagnostics"></a>診断
 
-既定では、Web ロールに対して診断が有効になっています。 Azure クラウド サービス プロジェクトとストレージ アカウントは、ローカル ストレージ エミュレーターを使用するように設定されています。 Azure にデプロイする準備ができたら、ビルダーのボタン (**[…]**) を選択すると、Azure Storage を代わりに使用できます。 要求時に、または自動的にスケジュールされた間隔で、ストレージ アカウントに診断データを転送できます。 Azure の診断の詳細については、[Azure Cloud Services および Virtual Machines での診断の有効化](/azure/cloud-services/cloud-services-dotnet-diagnostics)に関するページを参照してください。
+既定では、Web ロールに対して診断が有効になっています。 Azure クラウド サービス プロジェクトとストレージ アカウントは、ローカル ストレージ エミュレーターを使用するように設定されています。 Azure にデプロイする準備ができたら、ビルダーのボタン (**[…]**) を選択すると、Azure Storage を代わりに使用できます。 要求時に、または自動的にスケジュールされた間隔で、ストレージ アカウントに診断データを転送できます。 Azure Diagnostics の詳細については、[Azure Cloud Services および Virtual Machines での診断の有効化](/azure/cloud-services/cloud-services-dotnet-diagnostics)に関するページを参照してください。
 
 ## <a name="settings-page"></a>設定ページ
 

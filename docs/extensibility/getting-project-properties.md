@@ -1,6 +1,6 @@
 ---
 title: プロジェクト プロパティの取得 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties, displaying in tool window
@@ -11,22 +11,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7344c94f12962d34b2f4c38b86e83b0cb6a5e588
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d6708759796639886d84a46003fbb894b988a714
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684950"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194996"
 ---
 # <a name="get-project-properties"></a>プロジェクトのプロパティを取得します。
+
 このチュートリアルではツール ウィンドウでプロジェクトのプロパティを表示する方法。
 
 ## <a name="prerequisites"></a>必須コンポーネント
- Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 詳細については、"[Visual Studio SDK をインストール](../extensibility/installing-the-visual-studio-sdk.md)"を参照してください。
+
+Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 詳細については、"[Visual Studio SDK をインストール](../extensibility/installing-the-visual-studio-sdk.md)"を参照してください。
 
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>VSIX プロジェクトを作成し、ツール ウィンドウを追加するには
 
-1. すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクト`ProjectPropertiesExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#** > **Extensibility**します。
+1. すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクト`ProjectPropertiesExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**ダイアログで"vsix"を検索します。
 
 2. ツール ウィンドウを追加するには、という名前のカスタム ツール ウィンドウの項目テンプレートを追加`ProjectPropertiesToolWindow`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加 ダイアログ**に移動して、 **Visual c# アイテム** > **拡張**選択**カスタム ツール ウィンドウ**。 **名前**ダイアログの下部にあるフィールドに、ファイル名を変更して`ProjectPropertiesToolWindow.cs`します。 カスタム ツール ウィンドウを作成する方法の詳細については、次を参照してください。[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。
 
@@ -34,7 +36,7 @@ ms.locfileid: "56684950"
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>ツール ウィンドウにプロジェクトのプロパティを表示するには
 
-1.  ProjectPropertiesToolWindowCommand.cs ファイルで、次を追加ステートメントを使用します。
+1. ProjectPropertiesToolWindowCommand.cs ファイルで次の追加ステートメントを使用します。
 
     ```csharp
     using EnvDTE;
@@ -42,9 +44,9 @@ ms.locfileid: "56684950"
 
     ```
 
-2.  *ProjectPropertiesToolWindowControl.xaml*TreeView をツールボックスから追加、既存のボタンを削除します。 Click イベント ハンドラーを削除することも、 *ProjectPropertiesToolWindowControl.xaml.cs*ファイル。
+2. *ProjectPropertiesToolWindowControl.xaml*TreeView をツールボックスから追加、既存のボタンを削除します。 Click イベント ハンドラーを削除することも、 *ProjectPropertiesToolWindowControl.xaml.cs*ファイル。
 
-3.  *ProjectPropertiesToolWindowCommand.cs*を使用して、`ShowToolWindow()`メソッドをプロジェクトを開き、そのプロパティの読み取りがしプロパティをツリー ビューに追加します。 ShowToolWindow のコードは次のようになります。
+3. *ProjectPropertiesToolWindowCommand.cs*を使用して、`ShowToolWindow()`メソッドをプロジェクトを開き、そのプロパティの読み取りがしプロパティをツリー ビューに追加します。 ShowToolWindow のコードは次のようになります。
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -91,10 +93,10 @@ ms.locfileid: "56684950"
     }
     ```
 
-4.  プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
+4. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
 
-5.  実験用インスタンスでプロジェクトを開きます。
+5. この実験用インスタンスで、プロジェクトを開きます。
 
-6.  **ビュー** > **その他の Windows**クリックして**ProjectPropertiesToolWindow**します。
+6. **ビュー** > **その他の Windows**クリックして**ProjectPropertiesToolWindow**します。
 
-     最初のプロジェクトのすべてのプロジェクト プロパティの名前と共にツール ウィンドウのツリー コントロールが表示されます。
+  最初のプロジェクトのすべてのプロジェクト プロパティの名前と共にツール ウィンドウのツリー コントロールが表示されます。

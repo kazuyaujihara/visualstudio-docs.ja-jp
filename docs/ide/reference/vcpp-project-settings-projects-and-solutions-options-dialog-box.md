@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f35f9dfddeb905277084de9f20d46daf43d69f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dd44ef0a239f85078856c785ea4b5e2e6050b46e
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913864"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194886"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>[VC++ プロジェクトの設定] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])
 このダイアログ ボックスを使用すると、ログ、パフォーマンス、サポートするファイルの種類に関連する [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] のビルド設定とプロジェクト設定を定義できます。
@@ -93,5 +93,5 @@ Visual Studio がプロジェクト データをキャッシュすることで�
 
 ## <a name="see-also"></a>関連項目
 
-- [C/C++ プログラムのビルド](/cpp/build/building-c-cpp-programs)
+- [C/C++ プログラムのビルド](/cpp/build/projects-and-build-systems-cpp)
 - [C/C++ ビルドのリファレンス](/cpp/build/reference/c-cpp-building-reference)

@@ -1,6 +1,6 @@
 ---
 title: CA1024:適切な場所にプロパティを使用します
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3fba3a733381642999d7bccb5666b7db895b87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4008872a7cb96386ef702d21ba8a18d96037d83
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922304"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869258"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024:適切な場所にプロパティを使用します
 
@@ -30,12 +30,14 @@ ms.locfileid: "55922304"
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
 
-パブリックまたはプロテクト メソッドで始まる名前を持つ`Get`パラメーターは、配列でない値を返します。
+メソッドの名前で始まる名前が`Get`パラメーターは、配列でない値を返します。
+
+既定では、このルールだけが検索でパブリックおよびプロテクト メソッドが、これは[構成可能な](#configurability)します。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -69,11 +71,21 @@ ms.locfileid: "55922304"
 
 メソッドが上記の条件の少なくとも 1 つを満たしている場合は、この規則による警告を抑制します。
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>デバッガーでのプロパティの展開を制御します。
+## <a name="configurability"></a>構成機能
 
-1 つの理由がプログラマは、プロパティを使用しないようにデバッガーを自動拡張をしないためにです。 たとえば、大きなオブジェクトの割り当てや、P/invoke を呼び出し、プロパティを伴う可能性が観測可能な副作用が実際に必要がありますいません。
+この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
-デバッガーが自動拡張ようにプロパティを適用することで<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>します。 次の例では、インスタンス プロパティに適用されているこの属性を示します。
+```
+dotnet_code_quality.ca1024.api_surface = private, internal
+```
+
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+
+## <a name="control-property-expansion-in-the-debugger"></a>デバッガーでのコントロール プロパティの展開
+
+プログラマは、プロパティを使用を避ける理由の 1 つは、デバッガーをしないためですが。 たとえば、大きなオブジェクトの割り当てや、P/invoke を呼び出し、プロパティを伴う可能性が観測可能な副作用が実際に必要がありますいません。
+
+Autoexpanding プロパティからデバッガーを適用することで回避できます<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>します。 次の例では、インスタンス プロパティに適用されているこの属性を示します。
 
 ```vb
 Imports System
@@ -123,6 +135,6 @@ namespace Microsoft.Samples
 
 ## <a name="example"></a>例
 
-次の例では、いくつかの方法ですが、プロパティに変換され、フィールドのように動作しないためではなく必要がありますをいくつか含まれています。
+次の例では、いくつかのメソッドをプロパティに変換する必要があり、フィールドのように動作しないためではなく必要がありますをいくつか含まれています。
 
 [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

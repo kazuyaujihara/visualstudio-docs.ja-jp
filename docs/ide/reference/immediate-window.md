@@ -1,6 +1,6 @@
 ---
 title: イミディエイト ウィンドウ
-ms.date: 11/04/2016
+ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,24 +16,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3947c2f16be4e5c0d8054e48a46981aa22475423
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931950"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954200"
 ---
 # <a name="immediate-window"></a>イミディエイト ウィンドウ
 
-**[イミディエイト]** ウィンドウは、式のデバックと評価、ステートメントの実行、変数値の出力などのために使用します。 このモードでは、デバッグ時に、開発言語で評価または実行される式を入力できます。
+**[イミディエイト]** ウィンドウは、式のデバッグと評価、ステートメントの実行、変数値の出力のために使用します。 **[イミディエイト]** ウィンドウでは、現在選択されているプロジェクトをビルドして使用することで式を評価します。
 
 **[イミディエイト]** ウィンドウを表示するには、編集用にプロジェクトを開いて、**[デバッグ]** > **[ウィンドウ]** > **[イミディエイト]** の順に選択するか、**Ctrl**+**Alt**+**I** キーを押します。 また、**[コマンド]** ウィンドウに「**Debug.Immediate**」と入力することもできます。
 
-**[イミディエイト]** ウィンドウは、個々の Visual Studio コマンドを発行するために使用できます。 使用できるコマンドには、`EvaluateStatement` があります。このコマンドは、変数に値を割り当てるのに使用できます。 **[イミディエイト]** ウィンドウは、IntelliSense もサポートしています。
+**[イミディエイト]** ウィンドウは、IntelliSense をサポートしています。
 
 ## <a name="display-the-values-of-variables"></a>変数の値を表示する
 
-**[イミディエイト]** ウィンドウはアプリケーションをデバッグするときに特に役に立ちます。 たとえば、`varA` 変数の値を確認するには、[Print コマンド](../../ide/reference/print-command.md)を使用します。
+**[イミディエイト]** ウィンドウは、アプリをデバッグするときに特に役に立ちます。 たとえば、`varA` 変数の値を確認するには、[Print コマンド](../../ide/reference/print-command.md)を使用します。
 
 ```cmd
 >Debug.Print varA
@@ -42,13 +42,13 @@ ms.locfileid: "55931950"
 疑問符 (?) は`Debug.Print` のエイリアスであるため、このコマンドは次のように書き換えることもできます。
 
 ```cmd
->? varA
+? varA
 ```
 
 コマンドをどちらで入力した場合でも、変数 `varA` の値が返されます。
 
 > [!TIP]
-> **[イミディエイト]** ウィンドウで Visual Studio コマンドを発行するには、コマンドの先頭に大なり記号 (>) を付ける必要があります。 複数のコマンドを入力するには、**[コマンド]** ウィンドウに切り替えます。
+> **[イミディエイト]** ウィンドウで Visual Studio コマンドを発行するには、コマンドの先頭に大なり記号 (>) を付ける必要があります。 複数のコマンドを入力するには、[コマンド ウィンドウ](command-window.md)に切り替えます。
 
 ## <a name="design-time-expression-evaluation"></a>デザイン時の式評価
 
@@ -56,7 +56,7 @@ ms.locfileid: "55931950"
 
 ### <a name="execute-a-function-at-design-time"></a>デザイン時に関数を実行する
 
-1. 次のコードを [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] コンソール アプリケーションにコピーします。
+1. 次のコードを Visual Basic コンソール アプリにコピーします。
 
    ```vb
    Module Module1
@@ -72,7 +72,7 @@ ms.locfileid: "55931950"
    End Module
    ```
 
-2. **[デバッグ]** メニューの **[ウィンドウ]** をポイントし、**[イミディエイト]** をクリックします。
+2. **[デバッグ]** メニューの **[ウィンドウ]** > **[イミディエイト]** の順に選択します。
 
 3. **[イミディエイト]** ウィンドウに「`?MyFunction(2)`」と入力し、**Enter** キーを押します。
 
@@ -80,7 +80,7 @@ ms.locfileid: "55931950"
 
 関数またはサブルーチンにブレークポイントが含まれている場合、適切なポイントで実行が中断されます。 デバッガー ウィンドウを使用して、プログラムの状態を確認できます。 詳細については、「[チュートリアル:デザイン時のデバッグ](../../debugger/walkthrough-debugging-at-design-time.md)」をご覧ください。
 
-デザイン時の式の評価は、実行時環境の起動を必要とするプロジェクトの種類 ([!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)] プロジェクト、Web プロジェクト、スマート デバイス プロジェクト、SQL プロジェクトなど) には使用できません。
+デザイン時の式の評価は、実行時環境の起動を必要とするプロジェクトの種類 (Visual Studio Tools for Office プロジェクト、Web プロジェクト、スマート デバイス プロジェクト、SQL プロジェクトなど) には使用できません。
 
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>デザイン時の式の評価 (複数のプロジェクトから成るソリューションの場合)
 
@@ -88,7 +88,7 @@ ms.locfileid: "55931950"
 
 ## <a name="enter-commands"></a>コマンドを入力する
 
-**[イミディエイト]** ウィンドウで Visual Studio コマンドを発行するときは、大なり記号 (>) を入力する必要があります。 **上方向**キーおよび**下方向**キーを使用して、以前に発行したコマンドの間をスクロールします。
+**[イミディエイト]** ウィンドウで Visual Studio コマンドを発行するときは、大なり記号 (>) を入力する必要があります。 **上方向**キーおよび**下方向**キーを使用して、以前に使用したコマンドの間をスクロールします。
 
 |タスク|ソリューション|例|
 |----------|--------------|-------------|
@@ -101,25 +101,23 @@ ms.locfileid: "55931950"
 
 **[イミディエイト]** ウィンドウで、既に出力されている任意の行をクリックすると、自動的にマーク モードに切り替わります。 これにより、テキスト エディターでの操作と同じように、既に入力されたコマンドのテキストを選択、編集、およびコピーし、現在の行に貼り付けることができます。
 
-## <a name="the-equals-sign-"></a>等号 (=)
+## <a name="examples"></a>使用例
 
-`EvaluateStatement` コマンドをどのウィンドウに入力するかによって、等号 (=) を比較演算子として解釈するのか、代入演算子として解釈するのかが決まります。
-
-**[イミディエイト]** ウィンドウの場合、等号 (=) は、代入演算子と解釈されます。 したがって、たとえば次のコマンド
+次の例は、Visual Basic プロジェクトの **[イミディエイト]** ウィンドウの 4 つの式とその結果を示しています。
 
 ```cmd
->Debug.EvaluateStatement(varA=varB)
+j = 2
+Expression has been evaluated and has no value
+
+? j
+2
+
+j = DateTime.Now.Day
+Expression has been evaluated and has no value
+
+? j
+26
 ```
-
-では、変数 `varA` に変数 `varB` の値が代入されます。
-
-**[コマンド]** ウィンドウの場合、等号 (=) は、比較演算子と解釈されます。 **[コマンド]** ウィンドウでは、代入演算は使用できません。 したがって、たとえば変数 `varA` と変数 `varB` の値が異なる場合、次のコマンド
-
-```cmd
->Debug.EvaluateStatement(varA=varB)
-```
-
-この場合は値 `False` が返ります。
 
 ## <a name="first-chance-exception-notifications"></a>初回例外通知
 

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2ec13113d8b7707c404a8af9788dacc98b12bb42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921238"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868018"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Visual Studio で R コードを編集する
 
@@ -97,7 +97,7 @@ f <- function(a) { return(a + 1) }
 
 ## <a name="inserting-roxygen-comments"></a>Roxygen コメントの挿入
 
-RTVS には、関数のパラメーター名を使って [Roxygen](http://roxygen.org/) コメントを生成するためのショートカットがあります。 関数定義の前の空白行に「`###`」と入力するだけです。
+RTVS には、関数のパラメーター名を使って [Roxygen](https://cran.r-project.org/web/packages/roxygen2/index.html) コメントを生成するためのショートカットがあります。 関数定義の前の空白行に「`###`」と入力するだけです。
 
 ![Roxygen コメント挿入のアニメーション](media/editing-roxygen-comments.gif)
 

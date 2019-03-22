@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f57356cfe2d382ec0f4199555515e08e765e9486
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634930"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324683"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 または .NET Framework 4.5 に移行する Office プロジェクトのリボンのカスタマイズを更新します。
   リボンのカスタマイズを使用して作成されたが、プロジェクトに含まれているかどうか、**リボン (ビジュアル デザイナー)** プロジェクト項目、ターゲット フレームワークに変更された場合、プロジェクト コードに、次の変更を行う必要があります、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]またはあとで。
@@ -31,7 +31,7 @@ ms.locfileid: "56634930"
 
 -   Visual Basic プロジェクト、またはいずれかで作成した Visual c# プロジェクトで[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]または[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]リボンの分離コード ファイル内のすべての手順を実行 (*YourRibbonItem*します。Designer.cs または*YourRibbonItem*します。)。 Visual Basic プロジェクトで分離コード ファイルを表示する] をクリックして、 **[すべてのファイル**ボタン**ソリューション エクスプ ローラー**します。
 
--   Visual Studio 2008 で作成しにアップグレードする Visual c# プロジェクトで[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]、リボン コード ファイルで、最初の 2 つの手順に従います (*YourRibbonItem*.cs または*YourRibbonItem*.vb)、およびリボンの分離コード ファイルで、残りの手順を実行します。
+-   Visual Studio 2008 で作成しにアップグレードする Visual C# プロジェクトで[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]、リボン コード ファイルで、最初の 2 つの手順に従います (*YourRibbonItem*.cs または*YourRibbonItem*.vb)、およびリボンの分離コード ファイルで、残りの手順を実行します。
 
 ### <a name="to-change-the-generated-ribbon-code"></a>生成されたリボン コードを変更するには
 
@@ -103,9 +103,9 @@ ms.locfileid: "56634930"
 
      たとえば、.NET Framework 3.5 を対象とするプロジェクトで、<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> イベントを処理する次のコード行がファイルに含まれていると仮定します。
 
-    <CodeContentPlaceHolder>8</CodeContentPlaceHolder>を対象とするプロジェクトで、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または後で、次のコードを代わりに使用する必要があります。
+    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder>を対象とするプロジェクトで、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または後で、次のコードを代わりに使用する必要があります。
 
-    <CodeContentPlaceHolder>9</CodeContentPlaceHolder>のリボン デリゲートの一覧については、次を参照してください。[処理リボン イベント](#ribbonevents)します。
+    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder>のリボン デリゲートの一覧については、次を参照してください。[処理リボン イベント](#ribbonevents)します。
 
 5.  Visual Basic プロジェクトでは、ファイルの最後にある `ThisRibbonCollection` クラスを検索します。 このクラスが `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection` から継承されないように、クラスの宣言を変更します。
 
@@ -122,8 +122,7 @@ ms.locfileid: "56634930"
 
   次のコード例は、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降を対象とするプロジェクトのリボン クラスで <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> を作成する方法を示しています。
 
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder>次の表は、プログラムで作成できるコントロールとを対象とするプロジェクトでコントロールの作成に使用する方法、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]またはそれ以降。
+\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder>次の表は、プログラムで作成できるコントロールと、メソッドを使用して、を対象とするプロジェクトでコントロールを作成するには[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]またはそれ以降。
 
 |コントロール|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降のプロジェクトで使用する RibbonFactory メソッド|
 |-------------| - |

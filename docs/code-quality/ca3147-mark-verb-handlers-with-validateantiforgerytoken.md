@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f7b94957ed821f71b17aca9c1865d86f2fe853fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0cd54f932a99ea79bf792ebe4175ddc6a031ddcb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935317"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194445"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147:ValidateAntiForgeryToken で動詞ハンドラーをマークします
 
@@ -22,12 +22,12 @@ ms.locfileid: "55935317"
 |-|-|
 |TypeName|MarkVerbHandlersWithValidateAntiForgeryToken|
 |CheckId|CA3147|
-|カテゴリ|Microsoft.Security|
+|Category|Microsoft.Security|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
 
-ASP.NET MVC コント ローラー アクション メソッドが付いていない[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118))、またはなど、HTTP 動詞を指定する属性[HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993(v%3dvs.118))または[AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29)します。
+ASP.NET MVC コント ローラー アクション メソッドが付いていない[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))、またはなど、HTTP 動詞を指定する属性[HttpGetAttribute](/previous-versions/aspnet/ee470993(v%3dvs.118))または[AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)します。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -35,17 +35,17 @@ ASP.NET MVC のコント ローラーを設計するときは、クロスサイ�
 
 このルールは、その ASP.NET MVC コント ローラーを確認します。 アクション メソッドか。
 
-- [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108%28v%3dvs.118%29)し、HTTP GET を含まない、許可されている HTTP 動詞を指定します。
+- [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/dd492108%28v%3dvs.118%29)し、HTTP GET を含まない、許可されている HTTP 動詞を指定します。
 
 - HTTP GET を許可されている動詞として指定します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-- ASP.NET MVC コント ローラー アクションを HTTP GET 要求を処理し、有害な可能性のある副作用はありません、追加、 [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993%28v%3dvs.118%29)メソッドにします。
+- ASP.NET MVC コント ローラー アクションを HTTP GET 要求を処理し、有害な可能性のある副作用はありません、追加、 [HttpGetAttribute](/previous-versions/aspnet/ee470993%28v%3dvs.118%29)メソッドにします。
 
    HTTP GET を処理するコント ローラー アクションが要求し、有害な可能性のある副作用が伴う機密データの変更など、ASP.NET MVC があれば、アプリケーションがクロスサイト リクエスト フォージェリ攻撃に対して脆弱になります。  HTTP POST、PUT、または DELETE 要求だけが機密性の高い操作を実行するために、アプリケーションを再設計する必要があります。
 
-- HTTP POST を処理するコント ローラー アクションの ASP.NET MVC、PUT、または削除を要求する追加[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118))と使用できる HTTP 動詞を指定する属性 ([AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29)、 [HttpPostAttribute](/previous-versions/aspnet/web-frameworks/ee264023%28v%3dvs.118%29)、 [HttpPutAttribute](/previous-versions/aspnet/web-frameworks/ee470909%28v%3dvs.118%29)、または[HttpDeleteAttribute](/previous-versions/aspnet/web-frameworks/ee470917%28v%3dvs.118%29))。 さらを呼び出す必要があります、 [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29) MVC ビューまたは Razor web ページからのメソッド。 例については、次を参照してください。[編集メソッドを調べると、ビューの編集](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)します。
+- HTTP POST を処理するコント ローラー アクションの ASP.NET MVC、PUT、または削除を要求する追加[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))と使用できる HTTP 動詞を指定する属性 ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)、 [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29)、 [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)、または[HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29))。 さらを呼び出す必要があります、 [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) MVC ビューまたは Razor web ページからのメソッド。 例については、次を参照してください。[編集メソッドを調べると、ビューの編集](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 

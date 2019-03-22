@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802567"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567303"
 ---
 # <a name="devops-with-unity-apps"></a>Unity アプリを使用した DevOps
 
@@ -26,7 +26,7 @@ Visual Studio、Azure DevOps Services、Team Foundation Server は、さまざ�
 
 ## <a name="agile-tools"></a>アジャイル ツール
 
-参照リンク:[アジャイル ツールとアジャイル プロジェクト管理の概要](/azure/devops/boards/backlogs/overview?view=vsts) (Azure Boards または TFS (Team Explorer Everywhere など) を使用)
+参照リンク:[アジャイル ツールとアジャイル プロジェクト管理の概要](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (Azure Boards または TFS (Team Explorer Everywhere など) を使用)
 
 一般的なコメント: すべての計画機能と追跡機能は、プロジェクトの種類とコーディング言語には依存しません。
 
@@ -46,14 +46,14 @@ Visual Studio、Azure DevOps Services、Team Foundation Server は、さまざ�
 
 |機能|Unity でサポートされているかどうか|その他のコメント|
 |-------------|--------------------------|-------------------------|
-|シーケンス図|×||
-|依存関係グラフ|×||
-|呼び出し階層|×||
-|クラス デザイナー|×||
-|アーキテクチャ エクスプローラー|×||
-|UML 図 (ユース ケース、アクティビティ、クラス、コンポーネント、シーケンス、および DSL)|×||
-|レイヤー図|×||
-|レイヤー検証|×||
+|シーケンス図|いいえ||
+|依存関係グラフ|いいえ||
+|呼び出し階層|いいえ||
+|クラス デザイナー|いいえ||
+|アーキテクチャ エクスプローラー|いいえ||
+|UML 図 (ユース ケース、アクティビティ、クラス、コンポーネント、シーケンス、および DSL)|いいえ||
+|レイヤー図|いいえ||
+|レイヤー検証|いいえ||
 
 ## <a name="code"></a>コード
 
@@ -81,7 +81,7 @@ Unity を使ったバージョン管理に関する注意事項:
 |-------------|--------------------------|-------------------------|
 |内部設置型 Team Foundation Server (TFS)|可能|Unity プロジェクトは、Visual Studio が構築したシステムではなく、Unity の環境内で構築されています (Visual Studio Tools for Unity 内で構築すると、スクリプトはコンパイルしますが、実行可能ファイルを生成しません)。 [コマンド ラインから Unity プロジェクトをビルド](http://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity ドキュメント) できるため、Unity 自体がそのコンピューターにインストールされている場合は、TFS サーバーで MSBuild プロセスを構成して、適切な Unity コンポーネントを実行できます。<br /><br /> また、Unity は、[Unity クラウド構築](https://build.cloud.unity3d.com/landing/)も提供し、Git または SVN リポジトリを監視して、定期的なビルドを実行します。 現時点では、これは TFVC または Azure DevOps Services では機能しません。|
 |Azure DevOps Services にリンクされたオンプレミスのビルド サーバー|可能|上記と同じ状態の場合、Azure DevOps Services でトリガーされたビルドを指して、オンプレミスの TFS のコンピューターを使用することがさらに可能になります。 手順については、「[Build and release agents](/azure/devops/pipelines/agents/agents?view=vsts)」 (ビルド エージェントとリリース エージェント) を参照してください。|
-|Azure DevOps Services のホスト コントローラー サービス|×|Unity ビルドは現在サポートされていません。|
+|Azure DevOps Services のホスト コントローラー サービス|いいえ|Unity ビルドは現在サポートされていません。|
 |事前スクリプトと事後スクリプトによるビルド定義|はい|Unity のコマンドラインを使用してビルドを実行するカスタムのビルド定義は、ビルド前およびビルド後のスクリプトに対して構成することもできます。|
 |継続的な統合 (ゲート チェックインを含む)|はい|Git としての TFVC へのゲート チェックインのみ、チェックイン モデルではなく、プル要求モデルで機能します。|
 
@@ -94,7 +94,7 @@ Unity を使ったバージョン管理に関する注意事項:
 |テスト マネージャー (テストの記録と再生)|Windows デバイスと Android エミュレーターのみ||
 |コード カバレッジ|N/A|単体テストとしての該当なしは、Unity と Visual Studio で発生します。以下を参照してください。|
 |[コードの単体テスト](../test/unit-test-your-code.md)|Unity 内。Visual Studio 内ではありません。|Unity は、独自の単体テスト フレームワークを [Unity テスト ツール](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store) の一部として提供しています。 単体テストの結果は、Unity 内でレポートされ、Visual Studio 内では表示されません。|
-|[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)|×|コード化された UI テストは、アプリの UI で読み取り可能なコントロールに依存します。Unity アプリケーションは本質的にはグラフィカルであるため、コンテンツはコード化された UI テストのツールで読み取ることはありません。|
+|[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)|いいえ|コード化された UI テストは、アプリの UI で読み取り可能なコントロールに依存します。Unity アプリケーションは本質的にはグラフィカルであるため、コンテンツはコード化された UI テストのツールで読み取ることはありません。|
 
 ## <a name="improve-code-quality"></a>コード品質の向上
 
@@ -105,8 +105,8 @@ Unity を使ったバージョン管理に関する注意事項:
 |[マネージド コードの品質の分析](../code-quality/code-analysis-for-managed-code-overview.md)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|
 |[コード クローン検出を使用した重複コードの検出](https://msdn.microsoft.com/library/hh205279.aspx)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|
 |[マネージド コードの複雑さと保守性の測定](../code-quality/code-metrics-values.md)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|
-|[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|×|[Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity Web サイト)。|
-|[.NET Framework のメモリ分析の問題](https://msdn.microsoft.com/library/dn342825.aspx)|×|Visual Studio ツールには、(Unity で使用するような) プロファイリング用の Mono フレームワークへのフックはありません。 [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity ドキュメント)。|
+|[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|いいえ|[Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity Web サイト)。|
+|[.NET Framework のメモリ分析の問題](https://msdn.microsoft.com/library/dn342825.aspx)|いいえ|Visual Studio ツールには、(Unity で使用するような) プロファイリング用の Mono フレームワークへのフックはありません。 [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity ドキュメント)。|
 
 ## <a name="release-management"></a>リリース管理
 

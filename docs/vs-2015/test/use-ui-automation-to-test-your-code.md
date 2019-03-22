@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dee4518b6bc0015ec67978637d5696a25c4e04e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92d59e722b78e389bf355eeac8a1aa267979fc5b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767956"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873859"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI オートメーションを使用してコードをテストする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "54767956"
 
  コード化された UI テストの作成は簡単です。 CUIT テスト ビルダーをバックグラウンドで実行中に、テストを手動で実行します。 特定のフィールドに表示する値を指定することもできます。 CUIT テスト ビルダーは操作を記録し、それらの記録からコードを生成します。 テストの作成後、特殊なエディターでテストを編集して、操作のシーケンスを変更することができます。
 
- または、Microsoft Test Manager に記録されたテスト ケースがある場合は、それからコードを生成できます。 詳細については、「[手動テストの記録と再生](http://msdn.microsoft.com/library/9792e72f-600e-441f-9d4e-6510e5965665)」をご覧ください。
+ または、Microsoft Test Manager に記録されたテスト ケースがある場合は、それからコードを生成できます。 詳細については、「[手動テストの記録と再生](/azure/devops/test/mtm/record-play-back-manual-tests)」をご覧ください。
 
  コーディングよりテストに集中している場合でも、特殊な CUIT テスト ビルダーとエディターによって、コード化された UI テストの作成および編集が容易になります。 ただし、開発者が高度な方法でテストを拡張する場合は、コードはコピーして調整する作業がわかりやすくなるように構成されます。 たとえば、Web サイトで商品を購入するテストを記録した後、生成されたコードを編集して多数の商品を購入するループを追加する場合があります。
 
@@ -154,7 +154,7 @@ ms.locfileid: "54767956"
 
    このトピックの残りのセクションでは、このプロシージャ内の各ステップについてさらに詳しく説明します。
 
-   詳しい例については、「[チュートリアル:コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」を参照してください。 このチュートリアルでは、簡単な Windows Presentation Foundation (WPF) アプリケーションを作成して、コード化された UI テストの作成、編集、および保守を行う方法について説明します。 また、さまざまなタイミングの問題やコントロールのリファクタリングによって機能が損なわれたテストを修正するための解決策を示します。
+   さらに詳細な使用例については、「[チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」をご覧ください。 このチュートリアルでは、簡単な Windows Presentation Foundation (WPF) アプリケーションを作成して、コード化された UI テストの作成、編集、および保守を行う方法について説明します。 また、さまざまなタイミングの問題やコントロールのリファクタリングによって機能が損なわれたテストを修正するための解決策を示します。
 
 ###  <a name="starting"></a> テスト対象のアプリケーションを開始および停止する
  *テストごとに、アプリケーション、ブラウザー、またはデータベースを個別に起動および停止したくありません。どうすれば回避できますか?*
@@ -297,11 +297,11 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 -   **コード エディター:**
 
-    -   このトピックの「[UI コントロールの操作とプロパティのコーディング](#VerifyingCodeCUITActionsandProperties)」セクションで説明しているように、テストのコントロールのコードを手動で追加します。
+    -   このトピックの「[UI コントロールの操作とプロパティのコーディング](#actions)」セクションで説明しているように、テストのコントロールのコードを手動で追加します。
 
     -   コード化された UI テストを作成した後、データ ドリブンになるようにテストを変更できます。 詳細については、「[データ ドリブンのコード化された UI テストの作成](../test/creating-a-data-driven-coded-ui-test.md)」をご覧ください。
 
-    -   コード化された UI テストの再生では、テストに対して指示することで、ウィンドウの表示やプログレス バーの非表示などの特定のイベントが発生するまで待機することができます。 これを行うには、適切な UITestControl.WaitForControlXXX() メソッドを追加します。 使用できるメソッドの完全な一覧については、「[再生中に特定のイベントを待機するようにコード化された UI テストを設定](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)」をご覧ください。 WaitForControlEnabled メソッドを使用して、コントロールが有効になるまで待機するコード化された UI テストの例については、「[チュートリアル:コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」を参照してください。
+    -   コード化された UI テストの再生では、テストに対して指示することで、ウィンドウの表示やプログレス バーの非表示などの特定のイベントが発生するまで待機することができます。 これを行うには、適切な UITestControl.WaitForControlXXX() メソッドを追加します。 使用できるメソッドの完全な一覧については、「[再生中に特定のイベントを待機するようにコード化された UI テストを設定](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)」をご覧ください。 WaitForControlEnabled メソッドを使用して、コントロールが有効になるまで待機するコード化された UI テストの例については、「[チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」をご覧ください。
 
     -   コード化された UI テストには、Internet Explorer 9 と Internet Explorer 10 に含まれる HTML5 コントロールの一部のサポートが含まれます。 詳細については、「[コード化された UI テストでの HTML5 コントロールの使用](../test/using-html5-controls-in-coded-ui-tests.md)」をご覧ください。
 
@@ -449,7 +449,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Microsoft テスト マネージャーでの自動テストの実行](http://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [方法: 構成し、アプリケーションのビルド後のスケジュールされているテストの実行](http://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [方法: アプリケーションのビルド後にスケジュールされているテストを構成および実行する](http://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
 - [ビルド プロセスでのテストの実行](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
@@ -465,14 +465,14 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [コード化された UI テストと操作の記録を拡張して Microsoft Excel をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  コード化された UI テストは、手動テストを自動化するためによく使用されます。 追加のガイダンスについては、次を参照してください。 [Visual Studio 2012 – Chapter 5 による継続的デリバリーのためのテスト。システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)します。 手動テストの詳細については、「[&#91;廃版&#93; Microsoft Test Manager を使用した手動テスト ケースの作成](http://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)」をご覧ください。 自動化されたシステム テストの詳細については、「[Microsoft Test Manager を使用した自動テストの作成](http://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)」をご覧ください。
+  コード化された UI テストは、手動テストを自動化するためによく使用されます。 追加のガイダンスについては、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化)](http://go.microsoft.com/fwlink/?LinkID=255196)」をご覧ください。 手動テストの詳細については、「[&#91;廃版&#93; Microsoft Test Manager を使用した手動テスト ケースの作成](http://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)」をご覧ください。 自動化されたシステム テストの詳細については、「[Microsoft Test Manager を使用した自動テストの作成](http://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)」をご覧ください。
 
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="guidance"></a>ガイダンス
-- [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)
+- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)
 
-- [Visual Studio 2012 – Chapter 5 による継続的デリバリーのテスト。システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)
+- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>FAQ
 - [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](http://go.microsoft.com/fwlink/?LinkID=230576)

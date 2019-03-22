@@ -1,22 +1,18 @@
 ---
 layout: LandingPage
 title: アプリのデバッグ | Microsoft Docs
-description: Visual Studio 2017 を使用して、ご使用のプラットフォームとデバイス向けに任意の言語でアプリケーション、サービス、ツールをデバッグする方法について説明します。
+description: Visual Studio を使用して、ご使用のプラットフォームとデバイス向けに任意の言語でアプリケーション、サービス、ツールをデバッグする方法について説明します。
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 81ecddbfdb3f1b36a28156686e5d07ff4e6ee558
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156034"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio でのデバッグ
 
 Visual Studio デバッガーを使用すると、プログラムの実行時の動作を確認し、問題を見つけることができます。 デバッガーは、すべての Visual Studio のプログラミング言語と関連ライブラリと連携します。 デバッガーを使ってプログラムの実行を中断し、コードのチェック、変数のチェックと編集、レジスタの確認、ソース コードで作成された命令の表示、アプリケーションで使用するメモリ空間の確認などができます。
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>

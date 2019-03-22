@@ -26,11 +26,11 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56639269"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office ソリューションの省略可能なパラメーター
-  Microsoft Office アプリケーションのオブジェクト モデルに含まれるメソッドの多くは、省略可能なパラメーターを受け取ります。 Visual Studio で Visual Basic を使用して Office ソリューションを開発する場合は、省略可能なパラメーターに値を渡す必要はありません。省略したパラメーターに対しては自動的に既定値が使用されます。 ほとんどの場合、Visual c# プロジェクトで省略可能なパラメーターを省略することもできます。 オプションを省略できませんただし、 **ref**のパラメーター、`ThisDocument`ドキュメント レベルの Word プロジェクトでクラス。
+  Microsoft Office アプリケーションのオブジェクト モデルに含まれるメソッドの多くは、省略可能なパラメーターを受け取ります。 Visual Studio で Visual Basic を使用して Office ソリューションを開発する場合は、省略可能なパラメーターに値を渡す必要はありません。省略したパラメーターに対しては自動的に既定値が使用されます。 ほとんどの場合、Visual C# プロジェクトで省略可能なパラメーターを省略することもできます。 オプションを省略できませんただし、 **ref**のパラメーター、`ThisDocument`ドキュメント レベルの Word プロジェクトでクラス。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Visual c# および Visual Basic プロジェクトで省略可能なパラメーターの使用方法の詳細については、次を参照してください[名前付き引数と省略可能な引数&#40;C&#35;プログラミング ガイド&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)と[&#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)します。
+ Visual C# および Visual Basic プロジェクトで省略可能なパラメーターの使用方法の詳細については、次を参照してください[名前付き引数と省略可能な引数&#40;C&#35;プログラミング ガイド&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)と[&#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)します。
 
 > [!NOTE]
 >  旧バージョンの Visual Studio では、Visual C# プロジェクトのすべての省略可能なパラメーターに値を渡す必要があります。 便宜上、これらのプロジェクトには `missing` というグローバル変数が含まれています。パラメーターの既定値を使用する場合に、このグローバル変数を省略可能なパラメーターに渡すことができます。 Visual Studio での Office の visual c# プロジェクトがまだが含まれて、`missing`変数が通常必要はありませんでの Office ソリューションを開発するときに使用する[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]、オプションのメソッドを呼び出す場合を除く**ref**内のパラメーター、 `ThisDocument` Word のドキュメント レベル プロジェクト内のクラス。
@@ -47,8 +47,8 @@ ms.locfileid: "56639269"
  [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]
 
-## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Word 用の Visual c# ドキュメント レベルのプロジェクトの ThisDocument クラスでメソッドの省略可能なパラメーターを使用してください。
- Word オブジェクト モデルには、多くのメソッドでオプションが含まれています。 **ref**パラメーターを受け入れる<xref:System.Object>値。 オプションを省略できませんただし、 **ref** 、生成されたメソッドのパラメーターを`ThisDocument`Word 用の Visual c# ドキュメント レベル プロジェクト内のクラス。 Visual c# を使用する省略可能な省略**ref**のみインターフェイスのメソッドのパラメーターがないクラスします。 たとえば、次のコード例はコンパイルされず、コンパイル オプションを省略することはできませんので**ref**のパラメーター、<xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A>のメソッド、`ThisDocument`クラス。
+## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Word 用の Visual C# ドキュメント レベルのプロジェクトの ThisDocument クラスでメソッドの省略可能なパラメーターを使用してください。
+ Word オブジェクト モデルには、多くのメソッドでオプションが含まれています。 **ref**パラメーターを受け入れる<xref:System.Object>値。 オプションを省略できませんただし、 **ref** 、生成されたメソッドのパラメーターを`ThisDocument`Word 用の Visual C# ドキュメント レベル プロジェクト内のクラス。 Visual C# を使用する省略可能な省略**ref**のみインターフェイスのメソッドのパラメーターがないクラスします。 たとえば、次のコード例はコンパイルされず、コンパイル オプションを省略することはできませんので**ref**のパラメーター、<xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A>のメソッド、`ThisDocument`クラス。
 
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]
 

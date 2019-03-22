@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f529a3861ed6061b428818140ad90d6ca79991af
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fab823a9057c44eca9928b1b1f97ec446fb251c4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600868"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145084"
 ---
 # <a name="solution-user-options-suo-file"></a>ソリューション ユーザー オプション (.Suo) ファイル
 ソリューション ユーザー オプション (.suo) ファイルには、ユーザーごとにソリューションのオプションが含まれています。 このファイルは、ソース コード管理にないチェックする必要があります。
@@ -38,4 +38,4 @@ ms.locfileid: "56600868"
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
-- [ソリューション](../../extensibility/internals/solutions.md)
+- [ソリューション](../../extensibility/internals/solutions-overview.md)

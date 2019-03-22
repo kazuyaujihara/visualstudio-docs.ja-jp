@@ -6,6 +6,7 @@ description: Visual Studio 2017 を使って、アプリケーション、サー
 ms.topic: landing-page
 searchScope: []
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <h1>Visual Studio 製品に関するドキュメント</h1>

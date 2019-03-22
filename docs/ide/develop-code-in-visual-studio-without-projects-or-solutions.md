@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718550"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194951"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する
 
@@ -103,7 +103,7 @@ MSBuild ベース コードベースでは、**[開始]** ボタンのドロッ�
 
 ### <a name="codebases-that-contain-c-code"></a>C++ コードを含むコードベース
 
-Visual Studio のソリューションやプロジェクトを使用せずに C++ コードを開く場合の手順については、[C++ でフォルダーのプロジェクトを開く](/cpp/ide/non-msbuild-projects)方法に関するページをご覧ください。
+Visual Studio のソリューションやプロジェクトを使用せずに C++ コードを開く場合の手順については、[C++ でフォルダーのプロジェクトを開く](/cpp/build/open-folder-projects-cpp)方法に関するページをご覧ください。
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Visual Studio プロジェクトを含むコードベース
 
@@ -118,6 +118,6 @@ Visual Studio のソリューションやプロジェクトを使用せずに C+
 ## <a name="see-also"></a>関連項目
 
 - [ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [C++ でフォルダーのプロジェクトを開く](/cpp/ide/non-msbuild-projects)
-- [C++ での CMake プロジェクト](/cpp/ide/cmake-tools-for-visual-cpp)
+- [C++ でフォルダーのプロジェクトを開く](/cpp/build/open-folder-projects-cpp)
+- [C++ での CMake プロジェクト](/cpp/build/cmake-projects-in-visual-studio)
 - [コード エディターとテキスト エディターでのコードの作成](../ide/writing-code-in-the-code-and-text-editor.md)

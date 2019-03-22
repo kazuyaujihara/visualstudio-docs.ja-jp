@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4d540dad3ead24f9213cbfb5009712372a4af34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c6fdbe80238bb562fb84d540b23ade349435d91c
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934758"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194899"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>手順 5: Python 環境へのパッケージのインストール
 
@@ -26,23 +26,23 @@ Python 開発者コミュニティは、ユーザーが独自のプロジェク�
 
 1. **[表示]** > **[その他のウィンドウ]** > **[Python 環境]** メニュー コマンドを選びます。 **ソリューション エクスプローラー**へのピアとして **[Python 環境]** ウィンドウが開き、利用可能なさまざまな環境が示されます。 リストには、Visual Studio インストーラーを使用してインストールしたものと、個別にインストールした両方の環境が含まれています。 太字で示されている環境は、新しいプロジェクトに使用される既定の環境です。
 
-   ![[Python Environments (Python 環境)] ウィンドウ](media/environments-default-view-blue.png)
+   ![[Python Environments (Python 環境)] ウィンドウ](media/environments/environments-default-view-blue.png)
 
 2. 環境の **[概要]** タブからは、環境の**対話型**ウィンドウと、環境のインストール フォルダーおよびインタープリターにすばやくアクセスできます。 たとえば、**[対話型ウィンドウを開く]** を選択すると、その特定の環境の**対話型**ウィンドウが Visual Studio で表示されます。
 
 3. **[パッケージ]** タブを選択すると、環境に現在インストールされているパッケージのリストが表示されます。
 
-   ![環境にインストールされているパッケージ](media/environments-installed-packages-blue.png)
+   ![環境にインストールされているパッケージ](media/environments/environments-installed-packages-blue.png)
 
 4. 検索フィールドに `matplotlib` の名前を入力してインストールし、**pip install** を選択します。
 
-   ![環境に matplotlib をインストールする](media/environments-add-matplotlib1.png)
+   ![環境に matplotlib をインストールする](media/environments/environments-add-matplotlib1.png)
 
 5. 昇格に同意するように求められた場合は、同意します。
 
 6. パッケージがインストールされると、**[Python 環境]** ウィンドウにそのパッケージが表示されます。 アンインストールするには、パッケージの右にある **[X]** 選択します。
 
-   ![環境での matplotlib のインストール完了](media/environments-add-matplotlib2.png)
+   ![環境での matplotlib のインストール完了](media/environments/environments-add-matplotlib2.png)
 
    環境の下の小さい進行状況バーが表示され、Visual Studio が新しくインストールしたパッケージに対して、IntelliSense データベースを構築していることを示すことがあります。 **[IntelliSense]** タブにはより詳細な情報も表示されます。 データベースが完了するまで、そのパッケージのエディターでオートコンプリートや構文チェックなどの IntelliSense 機能はアクティブになりません。
 
@@ -65,7 +65,7 @@ Python 開発者コミュニティは、ユーザーが独自のプロジェク�
 
 8. プログラムをデバッガーを使用して実行 (**F5** キー) するか、デバッガーなしで実行 (**Ctrl** + **F5** キー) して、出力を確認します。
 
-   ![matplotlib の出力例](media/environments-add-matplotlib3.png)
+   ![matplotlib の出力例](media/environments/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>次のステップ
 

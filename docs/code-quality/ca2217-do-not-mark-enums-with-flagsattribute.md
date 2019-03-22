@@ -1,6 +1,6 @@
 ---
 title: CA2217:列挙型を FlagsAttribute に設定しません
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4036ef3c0c9ea177ea4225ed10ca7cfe128697
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 94666390cc49f365b9f036b076bcd97d68d4edb9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926815"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872289"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217:列挙型を FlagsAttribute に設定しません
 
@@ -31,12 +31,14 @@ ms.locfileid: "55926815"
 |-|-|
 |TypeName|DoNotMarkEnumsWithFlags|
 |CheckId|CA2217|
-|カテゴリ|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
 
-外部から参照できる列挙体が付いた<xref:System.FlagsAttribute>とが 1 つまたは 2 つ、またはその他の組み合わせの累乗でない多くの値が列挙型で値を定義します。
+列挙体が付いた<xref:System.FlagsAttribute>とが 1 つまたは 2 つ、またはその他の組み合わせの累乗でない多くの値が列挙型で値を定義します。
+
+既定では、このルールだけを確認、外部から参照できる列挙体が、これは[構成可能な](#configurability)します。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -50,17 +52,25 @@ ms.locfileid: "55926815"
 
 この規則による警告は抑制しないでください。
 
-## <a name="example-that-should-not-have-the-attribute"></a>属性のない例
+## <a name="configurability"></a>構成機能
 
-次の例では、列挙体は、 `Color`3 の値を格納します。 3 は、2、または定義済みの値のいずれかの組み合わせのべき乗ではありません。 `Color`で列挙型をマークすることはできません<xref:System.FlagsAttribute>します。
+この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+
+```
+dotnet_code_quality.ca2217.api_surface = private, internal
+```
+
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (使用) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+
+## <a name="examples"></a>使用例
+
+次のコードは、列挙体`Color`3 の値を格納します。 3 は、2、または定義済みの値のいずれかの組み合わせのべき乗ではありません。 `Color`で列挙型をマークすることはできません<xref:System.FlagsAttribute>します。
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-## <a name="example-that-should-have-the-attribute"></a>属性が持つべき例
-
-次の例では、列挙体は、`Days`でマークされているの要件を満たしている<xref:System.FlagsAttribute>します。
+次のコードは、列挙体`Days`でマークされているの要件を満たしている<xref:System.FlagsAttribute>:
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]

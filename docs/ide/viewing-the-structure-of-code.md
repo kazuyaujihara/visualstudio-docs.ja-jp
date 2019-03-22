@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e535ca76fd7b85d8267c0c002ffc8090430c5f0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926373"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323868"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>さまざまなツール ウィンドウを使用してコードの構造を表示する
 
@@ -126,7 +126,19 @@ Visual Studio Enterprise があるなら、*コード マップ*を使用して�
 
 **[オブジェクト ブラウザー]** ウィンドウは、プロジェクトのコードの説明を表示します。
 
-ウィンドウの上部にあるドロップダウン リストを使って、表示するコンポーネントをフィルター処理できます。 カスタム コンポーネントには、マネージド コードの実行可能ファイル、ライブラリのアセンブリ、タイプ ライブラリ、および *.ocx* ファイルを含めることができます。 C++ のカスタム コンポーネントを追加することはできません。 カスタム設定は Visual Studio ユーザー アプリケーション ディレクトリ (*%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*) に保存されます。
+ウィンドウの上部にあるドロップダウン リストを使って、表示するコンポーネントをフィルター処理できます。 カスタム コンポーネントには、マネージド コードの実行可能ファイル、ライブラリのアセンブリ、タイプ ライブラリ、および *.ocx* ファイルを含めることができます。 C++ のカスタム コンポーネントを追加することはできません。
+
+::: moniker range="vs-2017"
+
+カスタム設定は Visual Studio ユーザー アプリケーション ディレクトリ (*%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*) に保存されます。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+カスタム設定は Visual Studio ユーザー アプリケーション ディレクトリ (*%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*) に保存されます。
+
+::: moniker-end
 
 **オブジェクト ブラウザー**の左側のウィンドウは、アセンブリを示します。 アセンブリを展開してそこに含まれている名前空間を表示し、名前空間を展開してそこに含まれている型を表示します。 型を選択すると、メンバー (プロパティ、メソッドなど) が右ペインに一覧表示されます。 右下ペインに、選択した項目に関する詳細情報が表示されます。
 

@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: ボリューム ライセンス サービス センター管理の移行に関する FAQ
 searchscope: VS Subscription
-ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: d9f066fdb17af7e876a1fc7af611fa5cb48edba9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953945"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145266"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio サブスクリプション管理の移行
 
@@ -36,7 +36,7 @@ ms.locfileid: "56953945"
 お客様の組織が Azure AD にサインアップする必要はありませんが、いつでもサインアップすることができます。 Azure AD にオンボードする場合は、Azure AD の無料レベルを使用して無料で行うことができます。 Azure Active Directory を使用すると、高いセキュリティ、制御、長期的な信頼性で組織を保護できるようになります。 ただし、Azure AD の準備ができていない場合は、現在と同様に Microsoft アカウント (MSA) を引き続き使用することができます。
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>組織の移行時期はどうすればわかりますか?
-主要連絡先と通知連絡先には、移行される 1 週間前にオンボード プロセスを完了するように招待する電子メールが送信されます。 また、サブスクリプション マネージャーにも、主要連絡先と通知連絡先に連絡したことと、オンボードを確実に成功させる方法の詳細が記載された電子メールが送信されます。 詳細については、[組織の主要連絡先と通知連絡先の確認方法](#How-do-I-find-out-who-my-Primary-or-Notices-Contact-is?)に関するページを参照してください。
+主要連絡先と通知連絡先には、移行される 1 週間前にオンボード プロセスを完了するように招待する電子メールが送信されます。 また、サブスクリプション マネージャーにも、主要連絡先と通知連絡先に連絡したことと、オンボードを確実に成功させる方法の詳細が記載された電子メールが送信されます。 詳細については、[組織の主要連絡先と通知連絡先の確認方法](#how-do-i-find-out-who-my-primary-or-notices-contact-is?)に関するページを参照してください。
 
 ### <a name="is-onboarding-different-from-migration"></a>オンボードは移行と異なりますか?
 はい。  このプロセスには 2 つのフェーズがあります。 管理者が移行の前に組織をセットアップ (つまりオンボード) することで、作業を中断させないことができます。 組織の情報を移行すると、新しいポータルで Visual Studio サブスクリプションを管理できるようになります。 主要連絡先と通知連絡先が移行前にオンボードしない場合、サブスクリプション マネージャーはブロックされ、オンボード プロセスを完了するまでサブスクリプションを管理できなくなります。

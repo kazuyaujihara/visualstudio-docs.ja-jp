@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fd4d6366f9da97454f3b82c4f683f9e77dd447cf
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796648"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222520"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio での C++ の概要
 
@@ -26,7 +26,17 @@ ms.locfileid: "56796648"
 
 このクイックスタートを完了するために C++ について理解しておく必要はありませんが、いくつかの一般的なプログラミングの概念とデバッグの概念については理解しておく必要があります。 Visual Studio のドキュメントでは、C++ でのプログラミング方法を説明しません。 C++ の学習リソースとしては、ISO C++ Web サイトの「[Get Started](https://isocpp.org/get-started)」 (概要) をお勧めします。
 
-作業を進めるには、Visual Studio 2017 バージョン 15.3 以降のコピーと、**C++ によるデスクトップ開発**ワークロードがインストールされている必要があります。 インストールのためのファースト ガイドについては、「[Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation)」 (Visual Studio での C++ のインストール サポート) を参照してください。
+::: moniker range="vs-2017"
+
+作業を進めるには、Visual Studio 2017 のコピーと、**C++ によるデスクトップ開発**ワークロードがインストールされている必要があります。 インストールのためのファースト ガイドについては、「[Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation)」 (Visual Studio での C++ のインストール サポート) を参照してください。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+作業を進めるには、Visual Studio 2019 のコピーと、**C++ によるデスクトップ開発**ワークロードがインストールされている必要があります。 インストールのためのファースト ガイドについては、「[Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation)」 (Visual Studio での C++ のインストール サポート) を参照してください。
+
+::: moniker-end
 
 ## <a name="create-a-console-app"></a>コンソール アプリを作成する
 

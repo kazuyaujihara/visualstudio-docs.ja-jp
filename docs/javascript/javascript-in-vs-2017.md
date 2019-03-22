@@ -1,7 +1,7 @@
 ---
 title: JavaScript
 ms.date: 01/15/2019
-ms.technology: vs-nodejs
+ms.technology: vs-javascript
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-ms.openlocfilehash: faee8d414f324adce2a3e732ace301d45b13f3df
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c0eabc286cbeafc3d9b2651e5f6f2ec6c61d7e04
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844088"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870306"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 の JavaScript
 
@@ -32,7 +32,7 @@ JavaScript は Visual Studio の第一級の言語です。 Visual Studio IDE �
 
 ### <a name="what-is-ecmascript-2015"></a>ECMAScript 2015 とは
 
-JavaScript はプログラミング言語としてまだ進化しています。その更新は [TC39](http://www.ecma-international.org/memento/TC39.htm) という委員会で行われます。
+JavaScript はプログラミング言語としてまだ進化しています。その更新は [TC39](https://www.ecma-international.org/memento/tc39-m.htm) という委員会で行われます。
 ECMAScript 2015 は JavaScript 言語を更新したものであり、新しい便利な構文と機能を提供します。 ES6 機能の詳細については、[こちら](http://es6-features.org)の参照サイトで確認してください。
 
 ECMAScript 2015 のサポートに加え、Visual Studio では ECMAScript 2016 もサポートされ、今後リリースされるバージョンの ECMAScript のサポートも予定されています。 TC39 および ECMAScript の最新の変更に対応するために、[github](https://github.com/tc39) での作業をフォローしてください。
