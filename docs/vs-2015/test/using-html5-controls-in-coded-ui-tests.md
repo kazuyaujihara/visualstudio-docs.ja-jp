@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6002c3636030b67e9dca5e76c7ef57fbd93b6e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b13b8af221e317461f68a793e9b84420cd5dab48
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805077"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867901"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>コード化された UI テストでの HTML5 コントロールの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,20 +33,20 @@ ms.locfileid: "54805077"
 ## <a name="supported-html5-controls"></a>サポートされている HTML5 コントロール  
  コード化された UI テストには、次の HTML5 コントロールの記録、再生、検証のサポートが含まれます。  
   
--   [オーディオ コントロール](#UsingHTML5ControlsCodedUITestsAudio)  
+-   [オーディオ コントロール](#audio-control)  
   
--   [ビデオ コントロール](#UsingHTML5ControlsCodedUITestsVideo)  
+-   [ビデオ コントロール](#video-control)  
   
--   [スライダー](#UsingHTML5ControlsCodedUITestsSlider)  
+-   [スライダー](#slider)  
   
--   [ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)  
+-   [ProgressBar](#progressbar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> オーディオ コントロール  
+### <a name="audio-control"></a>オーディオ コントロール  
  **オーディオ コントロール:** HTML5 オーディオ コントロールに対するアクションが正しく記録され再生されます。  
   
- ![HTML5 オーディオ コントロール](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
+ ![HTML5 オーディオ コントロール](../test/media/codedui-html5-audio.png)  
   
-|操作|記録中|生成されたコード|  
+|アクション|記録中|生成されたコード|  
 |------------|---------------|--------------------|  
 |**オーディオの再生**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> オーディオを 00:00:00 の時点から再生|HtmlAudio.Play(TimeSpan)|  
 |**オーディオの特定の時点にシーク**|\<name> オーディオの 00:01:48 の時点にシーク|HtmlAudio.Seek(TimeSpan)|  
@@ -74,7 +74,6 @@ string ReadyState
 string Seeking  
 string Src  
 string Volume  
-  
 ```  
   
  **検索プロパティ:** `HtmlAudio` の検索プロパティは、`Id`、`Name`、`Title` です。  
@@ -84,12 +83,12 @@ string Volume
 > [!NOTE]
 >  Seek および Pause の時間は大きな意味を持つことがあります。 再生中、コード化された UI テストは、オーディオを一時停止する前に、`(TimeSpan)` に指定された時間まで待機します。 特殊な状況において、Pause コマンドが実行される前に指定された時間が経過したとき、例外がスローされます。  
   
-###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> ビデオ コントロール  
+### <a name="video-control"></a>ビデオ コントロール  
  **ビデオ コントロール:** HTML5 ビデオ コントロールに対するアクションが正しく記録され再生されます。  
   
- ![HTML5 ビデオ コントロール](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
+ ![HTML5 ビデオ コントロール](../test/media/codedui-html5-video.png)  
   
-|操作|記録中|生成されたコード|  
+|アクション|記録中|生成されたコード|  
 |------------|---------------|--------------------|  
 |**ビデオの再生**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> ビデオを 00:00:00 の時点から再生|HtmlVideo.Play(TimeSpan)|  
 |**ビデオの特定の時点にシーク**|\<name> ビデオの 00:01:48 の時点にシーク|HtmlVideo.Seek(TimeSpan)|  
@@ -114,12 +113,12 @@ string VideoWidth
 > [!NOTE]
 >  -30s または +30s のラベルを使用してビデオを巻き戻したり早送りしたりする場合、集計後の適切なタイミングにシークされます。  
   
-###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> スライダー  
+### <a name="slider"></a>スライダー  
  **スライダー コントロール:** HTML5 スライダー コントロールに対するアクションが正しく記録され再生されます。  
   
- ![HTML5 スライダー コントロール](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
+ ![HTML5 スライダー コントロール](../test/media/codedui-html5-slider.png)  
   
-|操作|記録中|生成されたコード|  
+|アクション|記録中|生成されたコード|  
 |------------|---------------|--------------------|  
 |**スライダーにおける位置の設定**|\<name> スライダー内の \<x> に位置を設定|HtmlSlider.ValueAsNumber=\<x>|  
   
@@ -134,14 +133,15 @@ string Step
 string ValueAsNumber  
 ```  
   
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
- **ProgreesBar コントロール:** ProgressBar は、非対話型コントロールです。 このコントロールの `Value` プロパティと `Max` プロパティでアサーションを追加できます。  
+### <a name="progressbar"></a>ProgressBar  
+ **ProgressBar コントロール:** ProgressBar は、非対話型コントロールです。 このコントロールの `Value` プロパティと `Max` プロパティでアサーションを追加できます。  
   
- ![HTML5 ProgressBar コントロール](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![HTML5 ProgressBar コントロール](../test/media/codedui-html5-progressbar.png)  
   
-## <a name="see-also"></a>関連項目  
- [HTML 要素](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
- [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [コード化された UI テストをカスタマイズする](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>関連項目
+
+- [HTML 要素](https://www.w3schools.com/HTML/html_elements.asp)   
+- [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
+- [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+- [コード化された UI テストをカスタマイズする](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
+- [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

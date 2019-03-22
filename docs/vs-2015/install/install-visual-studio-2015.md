@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ddc63faae9a23485badb57f0e50ae8d46dd94b91
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799178"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873695"
 ---
 # <a name="install-visual-studio-2015"></a>Visual Studio 2015 のインストール
 
@@ -38,11 +38,11 @@ ms.locfileid: "54799178"
 
 |||
 |------------------|----------------|
-|![Visual Studio のダウンロード](../install/media/downloads.png "ダウンロード") |**ダウンロード**Visual Studio 2015 をインストールするには、製品の実行可能ファイルからダウンロードできます、 [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) (サブスクリプションが必要) ページ、またはボックス化された製品のインストール メディアを使用します。 [現在または以前のバージョンの Visual Studio をダウンロードする方法についての詳細は](https://www.visualstudio.com/vs/older-downloads/)します。|
-|![機能の詳細について](../install/media/features.png "機能") |**機能**Visual Studio 2015 の機能に関する詳細については、リリース ノートを参照してください。 [RTM](https://www.visualstudio.com/news/vs2015-vs)、 [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs)、 [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs)、および[Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)します。|
+|![Visual Studio のダウンロード](../install/media/downloads.png "ダウンロード") |**ダウンロード**: Visual Studio 2015 をインストールするには、製品の実行可能ファイルからダウンロードできます、 [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) (サブスクリプションが必要) ページ、またはボックス化された製品のインストール メディアを使用します。 [現在または以前のバージョンの Visual Studio をダウンロードする方法についての詳細は](https://www.visualstudio.com/vs/older-downloads/)します。|
+|![機能の詳細について](../install/media/features.png "機能") |**機能**: Visual Studio 2015 の機能に関する詳細については、リリース ノートを参照してください[RTM](https://www.visualstudio.com/news/vs2015-vs)、 [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs)、 [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs)、および[。更新プログラム 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)します。|
 |![各 SKU で新機能については](../install/media/sku.png "Sku") |**SKU**: Visual Studio 2015 の各エディションで提供しているものについては、「[Visual Studio 製品の比較](http://go.microsoft.com/fwlink/?LinkID=242142)」ページを参照してください。|
 |![システム要件を表示](../install/media/system-requirements.png "システム要件") |**システム要件**: Visual Studio 2015 の各エディションのシステム要件を表示するを参照してください。、 [Visual Studio 2015 の互換性](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs)ページ。|
-|![プロダクト キーを検索](../install/media/product-keys.png "プロダクト キー") |**プロダクト キー**プロダクト キーを検索するを参照してください、[方法。Visual Studio プロダクト キーを検索](../install/how-to-locate-the-visual-studio-product-key.md)トピック。|
+|![プロダクト キーを検索](../install/media/product-keys.png "プロダクト キー") |**プロダクト キー**: プロダクト キーを検索するを参照してください、[方法: Visual Studio プロダクト キーを検索](../install/how-to-locate-the-visual-studio-product-key.md)トピック。|
 |![ライセンスをお探し](../install/media/licensing.png "ライセンス") |**ライセンス**: 個人または企業のお客様の両方のライセンス オプションについて確認するを参照してください、 [Visual Studio と MSDN のライセンス](https://www.microsoft.com/download/details.aspx?id=13350)ホワイト ペーパー。|
 
 ##  <a name="custom"></a> 既定値とカスタム セットアップ
@@ -108,7 +108,7 @@ ms.locfileid: "54799178"
 
  Hyper-V が有効であり、アクセラレータ機能を使用するグラフィックス アダプターが搭載されている Windows Server 2008 R2 を実行すると、システムの速度が低下することがあります。
 
- 詳細については、Microsoft web サイトで、次のページを参照してください。[ビデオのパフォーマンスが低下する場合、Windows Server 2008 または Windows Server 2008 の R2 ベースのコンピューターが、HYPER-V の役割を有効にし、インストールされている高速化されたディスプレイ アダプター](http://go.microsoft.com/fwlink/?LinkID=231084)します。
+ 詳細については、Microsoft Web サイトの「 [Video performance may decrease when a Windows Server 2008 or Windows Server 2008 R2 based computer has the Hyper-V role enabled and an accelerated display adapter installed (Windows Server 2008 または Windows Server 2008 R2 ベースのコンピューターで Hyper-V の役割を有効にし、アクセラレータ機能を使用するディスプレイ アダプターをインストールしたときに、ビデオ パフォーマンスが低下する場合がある)](http://go.microsoft.com/fwlink/?LinkID=231084)」を参照してください。
 
  **Hyper-V によるデバイスのエミュレート**
 
@@ -143,7 +143,7 @@ ms.locfileid: "54799178"
    インストールまたはオフラインのヘルプをデプロイする方法の詳細については、次を参照してください。、[ヘルプ ビューアーの管理者ガイド](../ide/help-viewer-administrator-guide.md)します。
 
 ##  <a name="serviceReleases"></a> サービス リリースと製品の更新プログラムのチェック
- すべての拡張機能に互換性があるわけではないので、以前のバージョンからアップグレードするときに、Visual Studio は拡張機能を自動的にアップグレードしません。 拡張機能を再インストールする必要があります、 [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkId=178891)またはソフトウェア発行者から。
+ すべての拡張機能に互換性があるわけではないので、以前のバージョンからアップグレードするときに、Visual Studio は拡張機能を自動的にアップグレードしません。 拡張機能を再インストールする必要があります、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)またはソフトウェア発行者から。
 
 #### <a name="to-automatically-check-for-service-releases"></a>サービス リリースを自動的に確認するには
 

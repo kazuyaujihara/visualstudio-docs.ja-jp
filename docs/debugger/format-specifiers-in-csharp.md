@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698990"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870521"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>C# では、Visual Studio デバッガーでの書式指定子
 値を表示する形式を変更することができます、**ウォッチ**書式指定子を使用してウィンドウ。 書式指定子を使用することもできます、**イミディ エイト**ウィンドウで、**コマンド**ウィンドウで、[トレース ポイント](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)と、ソース ウィンドウ。 これらのウィンドウで式を一時停止する場合、結果に表示されます、[データヒント](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)指定した形式の表示にします。
@@ -51,6 +51,14 @@ ms.locfileid: "56698990"
 追加、`my_var1`変数を**ウォッチ**デバッグ中にウィンドウ**デバッグ** > **Windows** > **を見る** > **ウォッチ 1**します。 次に、変数を右クリックし  **16 進数表示**します。 これで、**ウォッチ**値 0x0065 がウィンドウに表示されます。 16 進数の整数ではなく、10 進整数としてこの値を確認するには、10 進書式指定子を追加 **、d**で、**名前**変数名の後の列。 **値**列が表示されます**101**します。
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+
+::: moniker range=">= vs-2019" 
+
+表示し、コンマ (,) の値に追加することで使用可能な書式指定子の一覧から選択することができます、**ウォッチ**ウィンドウ。 
+
+![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
+
+::: moniker-end
 
 ## <a name="format-specifiers"></a>書式指定子
 次の表、 C# Visual Studio デバッガーの指定子の書式を設定します。

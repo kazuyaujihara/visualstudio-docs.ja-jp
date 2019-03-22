@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8f5f701299d08d79147a4d2d1932f3f23c011b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939165"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069867"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>データセットへの WPF コントロールのバインド
 
@@ -38,7 +38,7 @@ ms.locfileid: "55939165"
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 このチュートリアルを実行するには、次のコンポーネントが必要です。
 
@@ -56,15 +56,29 @@ ms.locfileid: "55939165"
 
 製品レコードを表示する新しい WPF プロジェクトを作成します。
 
-1. Visual Studio を起動します。
+::: moniker range="vs-2017"
+
+1. Visual Studio を開きます。
 
 2. **[ファイル]** メニューで、**[新規作成]** > **[プロジェクト]** の順に選択します。
 
 3. **[Visual Basic]** または **[Visual C#]** を展開し、**[Windows]** を選択します。
 
-4. **[WPF アプリケーション]** プロジェクト テンプレートを選択します。
+4. 選択、 **WPF アプリ**プロジェクト テンプレート。
 
 5. **名前**ボックスに、入力**AdventureWorksProductsEditor**し、 **OK**します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio を開きます。
+
+2. [開始] ウィンドウで、次のように選択します。**新しいプロジェクトを作成**です。
+
+3. 検索、 C# **WPF アプリ**プロジェクト テンプレートをプロジェクトの名前を付け、プロジェクトを作成する手順に従います**AdventureWorksProductsEditor**します。
+
+::: moniker-end
 
    Visual Studio によって AdventureWorksProductsEditor プロジェクトが作成されます。
 
