@@ -1,5 +1,5 @@
 ---
-title: '[全般]([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
+title: '[全般] ([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -27,12 +27,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752291"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868128"
 ---
 # <a name="general-environment-options-dialog-box"></a>[全般] ([オプション] ダイアログ ボックス - [環境])
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "54752291"
  **[配色テーマ]**  
  IDE の配色テーマで **[青]**、**[淡色]** または **[濃色]** を選択します。  
   
- [Visual Studio ギャラリー](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools)から **Visual Studio 2015 配色テーマ エディター**をダウンロードしてインストールすることで、追加の定義済みテーマをインストールし、カスタム テーマを作成することもできます。 このツールをインストールすると、追加の配色テーマが [配色テーマ] ボックスの一覧に表示されます。  
+ [Visual Studio Marketplace](https://marketplace.visualstudio.com) から **Visual Studio 2015 Color Theme Editor** をダウンロードしてインストールすることで、追加の定義済みテーマをインストールしたり、カスタム テーマを作成したりできます。 このツールをインストールすると、追加の配色テーマが [配色テーマ] ボックスの一覧に表示されます。  
   
  タイトルの文字スタイルをメニュー バーに適用  
  Visual Studio 2015 で、既定では、メニューは**タイトルの文字スタイル**になります。 このオプションのチェック ボックスをオフにすると、メニューが**すべて大文字**に設定されます。  

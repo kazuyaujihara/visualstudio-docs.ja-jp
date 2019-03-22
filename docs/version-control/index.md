@@ -2,7 +2,7 @@
 layout: LandingPage
 title: バージョン管理
 description: Visual Studio でバージョン コントロールを始めるためのガイド
-keywords: VSTS, TFS, バージョン コントロール
+keywords: 'VSTS, TFS, バージョン コントロール'
 author: steved0x
 ms.manager: jillfra
 ms.author: sdanie
@@ -11,13 +11,7 @@ ms.topic: landing-page
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
-- multiple
-ms.openlocfilehash: edcf47601007e3249c58dd8ad215c5ba1fd3bf83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998925"
+  - multiple
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio でのバージョン コントロール
 
@@ -27,6 +21,7 @@ ms.locfileid: "54998925"
 
 Git は現在、最も使用されているバージョン コントロール システムであり、バージョン コントロールの標準になりました。 Git は分散型バージョン コントロール システムであり、コードのローカル コピーが完全なバージョン コントロール リポジトリになります。 このように完全な機能を備えたローカル リポジトリによって、オフラインまたはリモートでの作業が容易になりました。 作業をローカルでコミットし、次にリポジトリのコピーをサーバー上のコピーに同期させます。 このパラダイムは、コードの新しいバージョンを作成する前にクライアントがコードをサーバーと同期する必要のある集中型バージョン コントロールとは異なります。
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/devops/git/what-is-git">
