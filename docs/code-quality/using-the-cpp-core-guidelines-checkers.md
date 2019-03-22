@@ -7,14 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d888204de33ba870111be08ae91bb09d09416d4
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223352"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323700"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
+# <a name="use-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 
 C++ Core ガイドラインは、ガイドライン、ルール、および C++ 専門家とデザイナーで作成された C++ のコーディングについてのベスト プラクティスの移植可能なセットです。 Visual Studio では、c++ のコード分析ツールの一部としてこれらのルールのサブセットがサポートされています。 Core ガイドラインのチェッカーが Visual Studio 2017 と Visual Studio 2019、既定でインストールされ[Visual Studio 2015 用の NuGet パッケージとして利用可能な](#vs2015_corecheck)します。
 
@@ -80,7 +80,7 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ほとんどの規則の参照トピックでは、 [Visual Studio C コア確認リファレンス](code-analysis-for-cpp-corecheck.md)します。
 
 Visual Studio 2017 バージョン 15.3 の時点では、サポートされている規則セット。
-- **所有者ポインターの規則**適用[所有者に関連するリソース管理を確認します<T>、C++ Core Guidelines から](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)します。
+- **所有者ポインターの規則**適用[所有者に関連するリソース管理を確認します\<T >、C++ Core Guidelines から](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)します。
 
 - **Const ルール**適用[、C++ Core guidelines の定数に関連したチェック](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)します。
 
@@ -153,7 +153,7 @@ Microsoft Visual C コンパイラでは、属性を非表示、GSL の制限付
 }
 ```
 
-## <a name="suppressing-analysis-by-using-command-line-options"></a>分析コマンド ライン オプションを使用して非表示にします。
+## <a name="suppress-analysis-by-using-command-line-options"></a>コマンド ライン オプションを使用して分析を抑制します。
 
 #Pragmas ではなく、プロジェクトまたはファイルを 1 つの警告を抑制するのに、ファイルのプロパティ ページでコマンド ライン オプションを使用できます。 たとえば、警告を無効にするファイルの 26400。
 
@@ -165,12 +165,12 @@ Microsoft Visual C コンパイラでは、属性を非表示、GSL の制限付
 
 コマンド ライン オプションを使用するには、ファイルのすべてのコード分析を指定することで一時的に無効に`/analyze-`します。 警告が生成されます*D9025 オーバーライド '/analyze' を '/analyze -'*、コード分析を後で再度有効にすることを通知します。
 
-## <a name="corecheck_per_file"></a> 特定のプロジェクト ファイルでは、C++ Core ガイドライン チェッカーの有効化
+## <a name="corecheck_per_file"></a> 特定のプロジェクト ファイルでは、C++ Core ガイドライン チェッカーが有効にします。
 
 重点を置いてコード分析とも、Visual Studio IDE を使用すると便利場合があります。 ビルド時間を節約し、結果をフィルター処理しやすく、大規模なプロジェクトの次のサンプル シナリオを使用できます。
 
 1. コマンド シェルで次のように設定します。、`esp.extension`と`esp.annotationbuildlevel`環境変数。
-2. これらの変数を継承するには、コマンド シェルから Visual Studio を起動します。
+2. これらの変数を継承するには、コマンド シェルから Visual Studio を開きます。
 3. プロジェクトを読み込むし、そのプロパティを開きます。
 4. コード分析を有効にする、適切なルール セットの選択が、コード分析の拡張機能を有効にしません。
 5. C++ Core ガイドライン チェッカーの使用の分析のプロパティを表示するファイルに移動します。

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cedadf6cc19794c8e1251aef0b9f24c8a54fa788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635190"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323387"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>方法: ソース管理プラグインのインストールします。
 ソース管理プラグインを作成するには、3 つの手順が含まれます。
@@ -78,7 +78,7 @@ ms.locfileid: "56635190"
 
 4. という名前のサブキーを作成**InstalledSCCProviders**下、 **SourceCodeControlProvider**サブキー、およびそのサブキーの下の 1 つのエントリを配置します。
 
-    このエントリの名前が (同じ SCCServerName エントリに指定された値)、プロバイダーのユーザーが判読できる名前と値が、もう一度、手順 1. で作成されたサブキー。 パターンは、 **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<display name>** = *ソフトウェア\\< 会社名\> \\< 製品名\>* します。
+    このエントリの名前が (同じ SCCServerName エントリに指定された値)、プロバイダーのユーザーが判読できる名前と値が、もう一度、手順 1. で作成されたサブキー。 パターンは、 **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< 表示名\>** = *ソフトウェア\\< 会社名前\>\\< 製品名\>* します。
 
     例:
 

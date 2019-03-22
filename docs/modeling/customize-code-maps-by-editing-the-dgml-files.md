@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31f26acadcbeac4aa042f7372fd4c80a9e385c54
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5394e7918c623fee3c1fed4008a952ca7a9e0f22
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937943"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323150"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML ファイルを編集してコード マップをカスタマイズする
 
@@ -47,7 +47,7 @@ ms.locfileid: "55937943"
 
     新しいグループを追加するには、`<Nodes>` セクションを見つけます。 新しい `<Node/>` 要素を追加します。
 
-3. `<Node/>` 要素に、`Group` 属性を追加して、グループを展開した状態で表示するか、折りたたんだ状態で表示するかを指定します。 例:
+3. `<Node/>` 要素に、`Group` 属性を追加して、グループを展開した状態で表示するか、折りたたんだ状態で表示するかを指定します。 例えば:
 
    ```xml
    <Nodes>
@@ -131,7 +131,7 @@ ms.locfileid: "55937943"
     Background="ColorNameOrHexadecimalValue"
     ```
 
-     アウトライン
+     外枠
 
     ```xml
     Stroke="ColorNameOrHexadecimalValue"
@@ -286,29 +286,29 @@ ms.locfileid: "55937943"
 
     この式では、次のバッカス・ナウア記法 (BNF: Backus-Naur Form) 構文を使用します。
 
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
 
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>
+    \<BinaryExpression >:: =\<式 >\<演算子 >\<式 >
 
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
+    \<UnaryExpression >:: ="!"\<式 > &#124; 「+」\<式 > &#124; "-"\<式 >
 
-    <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<演算子 >:: ="<" &#124; "\<=" &#124; 「=」 &#124; "> =" &#124; ">" &#124; "! =" &#124; 「または」 &#124; 「と」 &#124; 「+」 &#124; "*" &#124; 「/」 &#124; "-"
 
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
+    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding >"."\<MemberBinding >
 
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
+    \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet >
 
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
+    \<MethodCall >:: =\<識別子 >"(" \<MethodArgs >「")"」
 
-    <PropertyGet> : = 識別子
+    \<PropertyGet >:: = 識別子
 
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
-    <Identifier> ::= [^. ]*
+    \<識別子 >:: = [^ です。 ]*
 
-    <Literal> : = 一重または二重引用符で囲まれた文字列リテラル
+    \<リテラル >:: = 一重または二重引用符で囲まれた文字列リテラル
 
-    <Number> 省略可能な小数点 10 進数字の文字列を =
+    \<数 >:: = 小数点と桁の文字列
 
     複数を指定した`<Condition/>`要素で、すべて必要があります、スタイルを適用する場合は true。
 
@@ -373,9 +373,9 @@ ms.locfileid: "55937943"
 
  この例では、次のように記述されています。
 
-1.  `Coverage`&gt; 80 の場合、`Background` プロパティを緑色に設定します。
+1.  場合`Coverage`> 80 で設定し、`Background`プロパティを緑色にします。
 
-2.  `Coverage`&gt; 50 の場合、`Background` プロパティの値に基づいて、`Coverage` プロパティをオレンジ色の網かけに設定します。
+2.  Else if `Coverage` > 50、設定し、`Background`の値に基づいてプロパティをオレンジ色の網かけ、`Coverage`プロパティ。
 
 3.  それ以外の場合、`Background` プロパティの値に基づいて、`Coverage` プロパティを赤色の網かけに設定します。
 
@@ -489,7 +489,7 @@ ms.locfileid: "55937943"
 
 -   目的のコード要素の `<Node/>` 要素を見つけます。
 
--   `<Node/>` 要素に `Category` 属性を追加して、カテゴリの名前を指定します。 例:
+-   `<Node/>` 要素に `Category` 属性を追加して、カテゴリの名前を指定します。 例えば:
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ ms.locfileid: "55937943"
 
 2.  ソース コード要素とターゲット コード要素の両方の名前を含む `<Link/>` 要素を探します。
 
-3.  `<Link/>` 要素に `Category` 属性を追加して、カテゴリの名前を指定します。 例:
+3.  `<Link/>` 要素に `Category` 属性を追加して、カテゴリの名前を指定します。 例えば:
 
     ```xml
     <Links>

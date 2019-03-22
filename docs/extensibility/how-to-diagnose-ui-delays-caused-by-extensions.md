@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719484"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324345"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>方法: 拡張機能による診断 UI の遅延
 
@@ -43,7 +43,7 @@ UI の遅延を診断するには、まず、どのような (アクションの
 
 ## <a name="restart-vs-with-activity-logging-on"></a>アクティビティのログ記録を VS を再起動します。
 
-Visual Studio は、「アクティビティ ログ」を生成できます問題をデバッグするときに役立つ情報を提供します。 アクティビティの Visual Studio でログ記録をオンにする Visual Studio で使用を開始、`/log`コマンド ライン オプション。 Visual Studio の起動後、アクティビティ ログは、次の場所に格納されます。
+Visual Studio は、「アクティビティ ログ」を生成できます問題をデバッグするときに役立つ情報を提供します。 アクティビティ Visual Studio でログ記録をオンにする Visual Studio を開き、`/log`コマンド ライン オプション。 Visual Studio の起動後、アクティビティ ログは、次の場所に格納されます。
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml

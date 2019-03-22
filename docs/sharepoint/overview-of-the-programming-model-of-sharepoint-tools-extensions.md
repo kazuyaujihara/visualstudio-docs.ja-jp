@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bec1627af7bbef1c3fcd264f2d74aca86d1cfad4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639337"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325241"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>ツールの拡張機能を SharePoint のプログラミング モデルの概要
   Visual Studio で SharePoint ツールの拡張機能を作成する場合、SharePoint ツールによって公開される 1 つ以上の機能拡張インターフェイスを実装することから始めます。 ほとんどの場合、SharePoint ツールによって提供される他の型も使用して、拡張機能で機能を実装します。 一部のシナリオでは、Visual Studio および SharePoint によって提供される他のオブジェクト モデルに含まれる型も使用します。 これらのオブジェクト モデルのそれぞれの目的を理解し、それぞれ他の SharePoint ツールの拡張機能の作成に使用する方法を理解する必要があります。
@@ -83,7 +83,7 @@ ms.locfileid: "56639337"
 ### <a name="visual-studio-automation-object-model"></a>Visual Studio オートメーション オブジェクト モデル
  Visual Studio のオートメーション オブジェクト モデルには、Visual Studio のプロジェクトおよび IDE を自動化するために使用できる API が用意されています。 SharePoint プロジェクトに限定されないプロジェクト関連のタスクや、Visual Studio の全般的なオートメーション タスクを実行するには、Visual Studio のオブジェクト モデルを使用します。 このオブジェクト モデルは、以前から Visual Studio のアドインやマクロで使用されていましたが、SharePoint ツールの拡張機能で使用することもできます。
 
- Visual Studio オートメーション オブジェクト モデルの主要部分が定義されている、 *EnvDTE.dll*アセンブリ。 *EnvDTE\\<version>.dll*アセンブリは、Visual Studio の特定のバージョンで導入された追加の機能を提供します。 これらのアセンブリは、Visual Studio に属しています。
+ Visual Studio オートメーション オブジェクト モデルの主要部分が定義されている、 *EnvDTE.dll*アセンブリ。 *EnvDTE\\\<バージョン > .dll*アセンブリは、Visual Studio の特定のバージョンで導入された追加の機能を提供します。 これらのアセンブリは、Visual Studio に属しています。
 
  オートメーション オブジェクト モデルの詳細については、次を参照してください。 [Visual Studio SDK リファレンス](../extensibility/visual-studio-sdk-reference.md)します。
 

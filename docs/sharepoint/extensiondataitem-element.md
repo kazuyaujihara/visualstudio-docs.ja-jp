@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 969c82152c1e781da83fe4da20e49fdcf8dda375
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 658fb63227f4c4532038d537bde7cc10ca2c4f5e
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617055"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322613"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 要素
   キー/値の形式で、SharePoint プロジェクト アイテムに関連付けられているカスタム データ項目を指定します。 キーと値の両方には、文字列がある場合があります。
@@ -55,7 +55,7 @@ ms.locfileid: "56617055"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
 |**スキーマ名**|SharePoint プロジェクト項目のスキーマ|
 |**ファイルの検証**|ProjectItemModelSchema.xsd|
 |**空にすることができます。**|いいえ|

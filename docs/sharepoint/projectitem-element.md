@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fc30ff87d02013a95ea7950841e3185b2bdc69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2768a2e55b3e38158f2ef6b856a653a1a2c12dfa
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643666"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322996"
 ---
 # <a name="projectitem-element"></a>ProjectItem 要素
   SharePoint プロジェクト項目を表します。 この要素の必須のルート要素の *.spdata*ファイル。
@@ -70,7 +70,7 @@ ms.locfileid: "56643666"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
 |**スキーマ名**|SharePoint プロジェクト項目のスキーマ|
 |**ファイルの検証**|ProjectItemModelSchema.xsd|
 |**空にすることができます。**|いいえ|

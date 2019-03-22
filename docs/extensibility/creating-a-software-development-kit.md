@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cbe2e3318d01d7b50767c13d09687526c00b49f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722266"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324069"
 ---
 # <a name="create-a-software-development-kit"></a>ソフトウェア開発キットを作成します。
 ソフトウェア開発キット (SDK) は、Visual Studio での 1 つの項目として参照できる Api のコレクションです。 **参照マネージャー**  ダイアログ ボックスに、プロジェクトに関連するすべての Sdk が一覧表示されます。 SDK をプロジェクトに追加するときに、Api は Visual Studio で使用できます。
@@ -65,17 +65,17 @@ ms.locfileid: "56722266"
 ### <a name="installation"></a>インストール
  拡張機能 Sdk は、レジストリ キーを指定せず、特定のユーザーまたはすべてのユーザーに対してインストールできます。 すべてのユーザー用の SDK をインストールするには、次のパスを使用します。
 
- *%Program Files%\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs*
+ *%Program Files%\Microsoft SDKs\<target platform\>\v<platform version number\>\ExtensionSDKs*
 
  ユーザー固有のインストールでは、次のパスを使用します。
 
- *%USERPROFILE%\AppData\Local\Microsoft Sdk\<ターゲット プラットフォーム > \v<platform version number>\ExtensionSDKs*
+ *%USERPROFILE%\AppData\Local\Microsoft Sdk\<ターゲット プラットフォーム\>\v < プラットフォームのバージョン番号\>\ExtensionSDKs*
 
  別の場所を使用する場合は、次の 2 つのいずれかを行う必要があります。
 
 1.  レジストリ キーで指定します。
 
-     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
+     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number\>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
 
      値を持つ (既定値) のサブキーを追加および`<path to SDK><SDKName><SDKVersion>`します。
 

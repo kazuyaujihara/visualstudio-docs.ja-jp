@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76da5221d8f5bbdeb40f22559c6fabba727986b4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57c491c79030eea1a01024235c01aec425d5994c
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645356"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322913"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 要素
   機能の要素ファイルが SharePoint に展開するときに、プロジェクト項目に含めるなど、SharePoint のファイルを表します。
@@ -60,7 +60,7 @@ ms.locfileid: "56645356"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
 |**スキーマ名**|SharePoint プロジェクト項目のスキーマ|
 |**ファイルの検証**|ProjectItemModelSchema.xsd|
 |**空にすることができます。**|いいえ|
