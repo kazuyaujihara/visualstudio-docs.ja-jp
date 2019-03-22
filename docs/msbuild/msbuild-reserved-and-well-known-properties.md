@@ -63,16 +63,16 @@ ms.locfileid: "56632395"
 上記に加え、MSBuild 言語の要素に対応する名前を、ユーザー定義のプロパティ、項目、または項目メタデータに使うことはできません。
 
 * VisualStudioProject
-* ターゲット
+* Target
 * PropertyGroup
-* 出力
+* Output
 * ItemGroup
 * UsingTask
 * ProjectExtensions
 * OnError
 * ImportGroup
-* [保存]
-* 目的
+* Choose
+* When
 * Otherwise
 
 ## <a name="see-also"></a>関連項目
