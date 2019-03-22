@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763285"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194458"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 
 -   アクティブ ドキュメント内のすべてのスクリプト ブロックで定義された関数。 ファイル名拡張子が .aspx、.ascx、.master、.html、および .htm のファイルでは、インライン スクリプト ブロックがサポートされています。
 
--   別のスクリプト ファイルを指す `script` 属性を持つ `src` 要素。 参照先スクリプト ファイルのファイル名拡張子は .js であることが必要です。
+-   別のスクリプト ファイルを指す `src` 属性を持つ `script` 要素。 参照先スクリプト ファイルのファイル名拡張子は .js であることが必要です。
 
 -   `reference` ディレクティブを使用して別の JavaScript ファイルを参照している JavaScript ファイル。
 
@@ -122,7 +122,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
  JavaScript IntelliSense では、`body`、`form`、`div` などのダイナミック HTML (DHTML: Dynamic HTML) DOM 要素のプログラミングで参照できる一覧が表示されます。 現在のドキュメントとマスター ページに含まれる要素だけが IntelliSense によって表示されます。 `window` オブジェクトと `document` オブジェクト、およびそれらのメンバーも JavaScript IntelliSense でサポートされます。
 
 ###  <a name="IntrinsicObjects"></a> 組み込みオブジェクト
- JavaScript IntelliSense では、組み込みオブジェクトのプログラミングで参照できる一覧が表示されます。これには、`Array`、`String`、`Math`、`Date`、`Number` などがあります。 組み込みオブジェクトの詳細については、「[組み込みオブジェクト](/visualstudio/scripting-docs/javascript/intrinsic-objects-javascript)」を参照してください。
+ JavaScript IntelliSense では、組み込みオブジェクトのプログラミングで参照できる一覧が表示されます。これには、`Array`、`String`、`Math`、`Date`、`Number` などがあります。 組み込みオブジェクトの詳細については、次を参照してください。[標準のビルトイン オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects)します。
 
 ###  <a name="UserDefined"></a> ユーザー定義の変数、関数、およびオブジェクト
  JavaScript ファイルを変更すると、開かれているドキュメントと参照されているドキュメントが [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] でスキャンされ、利用できるすべてのコード リソースが確認されます。 これには、ご自分で作成した変数、関数、およびオブジェクトが含まれます。 その後、これらのリソースが JavaScript IntelliSense で利用できるようになります。

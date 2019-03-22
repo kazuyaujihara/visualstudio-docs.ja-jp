@@ -17,12 +17,12 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59605af2d0ebb7ed094602e9f300dc8dbc3b7ead
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 593db9fe2f460229cfdd4c241124ef8270448094
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799833"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194659"
 ---
 # <a name="prerequisites-dialog-box"></a>[必須コンポーネント] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "54799833"
 |**Microsoft Visual Studio 2010 Report Viewer**|Windows フォームおよび ASP.NET アプリケーションに豊富なデータ レポート機能を追加するために使用できる、レポート ビューアー コントロールをインストールします。|  
 |**Microsoft Visual Studio 2010 for Office Runtime (x86 および x64)**|Visual Studio の Office 開発ツールには、Microsoft Office と連携するカスタマイズされたビジネス ソリューションを作成するための、統合された使いやすいツールが用意されています。 Office アプリケーションをユーザー インターフェイスとして使用するマネージド スマート クライアント ソリューションを作成できます。 開発者は、これらのツールを使って、配置と保守が容易な、安全なソリューションを作成できます。<br /><br /> 詳細については、「[方法: ClickOnce を使用して Office ソリューションを発行する](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)」を参照してください。|  
 |**SQL Server 2005 Express Edition SP2 (x86)**|Microsoft SQL Server 2005 Express Edition SP2 をインストールします。これは、[!INCLUDE[sqprsqext](../../includes/sqprsqext-md.md)] に基づくデータベース アプリケーションです。 SQL Server Express は、Microsoft SQL Server Desktop Engine (MSDE) の後継製品です。 SQL Server Express は無償で提供され、契約書に従って再配布することが可能であり、クライアント データベースとしても、基本サーバー データベースとしても機能します。 SQL Server Express は、以下の相違点を除いて SQL Server 2005 と同じです。<br /><br /> -   エンタープライズ機能をサポートしません。<br />-   1 台の CPU に制限されます。<br />-   バッファー プール用メモリが 1 ギガバイト (GB) に制限されます。<br />-   データベースの最大サイズは 4 GB です。|  
-|**SQL Server 2008 Express**|Microsoft SQL Server 2008 Express をインストールします。Microsoft SQL Server 2008 Express は、Microsoft SQL Server 2008 の無償のエディションであり、小規模な Web アプリケーション、サーバー アプリケーション、またはデスクトップ アプリケーションに最適なデータベースです。 Microsoft SQL Server 2008 Express は、開発環境および運用環境で無償で使用できます。 アプリケーションと共に SQL Server 2008 Express を配布するには、無償の[登録](http://go.microsoft.com/fwlink/?LinkId=130380)が必要です。<br /><br /> ブートストラップの動作を次に示します。<br /><br /> -   コンピューターに SQL Server 2008 Express またはそれ以降が既にインストールされている場合は、SQL Server 2008 Express またはそれ以降のままです。<br />-   コンピューターに SQL Server 2008 Express またはそれ以降のいずれのバージョンもインストールされていない場合は、パッケージによって最新バージョンの SQL Server 2008 Express SP1 がインストールされます。<br /><br /> SQL Server 2008 Express の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=183586](http://go.microsoft.com/fwlink/?LinkId=183586)します。|  
+|**SQL Server 2008 Express**|Microsoft SQL Server 2008 Express をインストールします。Microsoft SQL Server 2008 Express は、Microsoft SQL Server 2008 の無償のエディションであり、小規模な Web アプリケーション、サーバー アプリケーション、またはデスクトップ アプリケーションに最適なデータベースです。 Microsoft SQL Server 2008 Express は、開発環境および運用環境で無償で使用できます。 アプリケーションと共に SQL Server 2008 Express を配布するには、無償の登録が必要です。<br /><br /> ブートストラップの動作を次に示します。<br /><br /> -   コンピューターに SQL Server 2008 Express またはそれ以降が既にインストールされている場合は、SQL Server 2008 Express またはそれ以降のままです。<br />-   コンピューターに SQL Server 2008 Express またはそれ以降のいずれのバージョンもインストールされていない場合は、パッケージによって最新バージョンの SQL Server 2008 Express SP1 がインストールされます。<br /><br /> SQL Server 2008 Express の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=183586](http://go.microsoft.com/fwlink/?LinkId=183586)します。|  
 |**Visual C++ 2010 ランタイム ライブラリ (IA64)**|Itanium アーキテクチャに対応する Visual C++ ランタイム ライブラリをインストールします。これらのライブラリは、Microsoft Windows オペレーティング システム用のプログラミング ルーチンを提供します。 これらのルーチンにより、C および C++ 言語では提供されない共通プログラミング タスクの多くを自動化できます。<br /><br /> 詳細については、「[C ランタイム ライブラリ リファレンス](http://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)」を参照してください。|  
 |**Visual C++ 2010 ランタイム ライブラリ (x64)**|x64 オペレーティング システムに対応する Visual C++ ランタイム ライブラリをインストールします。これらのライブラリは、Microsoft Windows オペレーティング システム用のプログラミング ルーチンを提供します。 これらのルーチンにより、C および C++ 言語では提供されない共通プログラミング タスクの多くを自動化できます。<br /><br /> 詳細については、「[C ランタイム ライブラリ リファレンス](http://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)」を参照してください。|  
 |**Visual C++ 2010 ランタイム ライブラリ (x86)**|x86 オペレーティング システムに対応する Visual C++ ランタイム ライブラリをインストールします。これらのライブラリは、Microsoft Windows オペレーティング システム用のプログラミング ルーチンを提供します。 これらのルーチンにより、C および C++ 言語では提供されない共通プログラミング タスクの多くを自動化できます。<br /><br /> 詳細については、「[C ランタイム ライブラリ リファレンス](http://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)」を参照してください。|  
