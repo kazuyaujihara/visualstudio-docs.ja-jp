@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b7ba2b707ea6a9d79e15891e85b66a82d3a832
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633864"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355579"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>チュートリアル: Outlook フォーム領域をデザインします。
   カスタム フォーム領域は、標準またはカスタムの Microsoft Office Outlook フォームを拡張します。 このチュートリアルでは、連絡先アイテムのインスペクター ウィンドウに新しいページとして表示するカスタム フォーム領域をデザインします。 このフォーム領域では、アドレス情報を Windows Live Local Search の Web サイトに送信することによって、連絡先に設定された個々の住所の地図を表示します。 フォーム領域については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
@@ -44,7 +44,7 @@ ms.locfileid: "56633864"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] または [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]。
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] またはそれ以降。
 
   ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")このトピックのビデオ版について、次を参照してください。[ビデオ方法。Outlook フォーム領域をデザイン](http://go.microsoft.com/fwlink/?LinkID=140824)します。
 
@@ -160,6 +160,8 @@ ms.locfileid: "56633864"
 4.  連絡先アイテムを保存して閉じます。
 
 5.  再度、 **Ann Beebe**連絡先アイテム。
+
+    Outlook がこれには、**検索**連絡先のアドレス帳を開くか、Ann Beebe を入力してグループ**人を検索する**します。
 
 6.  **表示**アイテムのリボンのグループ をクリックして**Map It** Map It フォーム領域を開きます。
 
