@@ -112,7 +112,7 @@
 ### [エラー: プロセスの ID を検査する権限がありません](error-you-do-not-have-permission-to-inspect-the-process-s-identity.md)
 ### [エラー: ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)
 ### [エラー: Web サイトのワーカー プロセスが IIS によって停止されました](error-web-site-worker-process-has-been-terminated-by-iis.md)
-### [エラー: コンピューター <name> に接続できません。ネットワーク上にコンピューターが見つかりません。](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
+### [エラー: コンピューター \<名前> に接続できません。ネットワーク上にコンピューターが見つかりません。](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 ### [エラー: 混合モード デバッグは、Microsoft .NET Framework 2.0 以上を使用している場合にのみサポートされます](error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md)
 ### [エラー: IA64 プロセスの混合モードのデバッグはサポートされていません](error-mixed-mode-debugging-for-ia64-processes-is-unsupported.md)
 ### [エラー: x64 プロセスの混合モード デバッグは、Microsoft .NET Framework 4 以上を使用している場合にのみサポートされます](error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md)
