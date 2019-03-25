@@ -1,8 +1,8 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Visual Studio のドキュメント | Microsoft Docs
-description: Visual Studio 2017 を使って、アプリケーション、サービス、ツールを、任意の言語で、特定のプラットフォームやデバイス向けに開発する方法について説明します。
+title: Visual Studio 製品 |Microsoft Docs
+description: Visual Studio ファミリ製品について説明します。
 ms.topic: landing-page
 searchScope: []
 ---
