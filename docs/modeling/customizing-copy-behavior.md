@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8572ecf95790fdc5f6e73ce0b137e5532c44bdc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911820"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416324"
 ---
 # <a name="customizing-copy-behavior"></a>コピー動作のカスタマイズ
 Visual Studio Visualization and Modeling SDK で作成された、ドメイン固有言語 (DSL)、ユーザーは、コピーし、要素を貼り付けますときの動作を変更できます。
@@ -555,8 +555,7 @@ namespace Company.MyDsl
 ## <a name="see-also"></a>関連項目
 
 - [要素作成処理および要素移動処理のカスタマイズ](../modeling/customizing-element-creation-and-movement.md)
-- [方法: ドラッグ アンド ドロップ ハンドラーを追加します。](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [削除動作のカスタマイズ](../modeling/customizing-deletion-behavior.md)
+- [方法: ドラッグ アンド ドロップ ハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [サンプル: VMSDK 回路図のサンプル](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

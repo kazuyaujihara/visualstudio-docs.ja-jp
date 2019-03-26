@@ -16,40 +16,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46dc8def91a15b8534d597f8cc0d14eb99f9002
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927881"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416423"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>方法: ドメイン固有言語を定義する
 ドメイン固有言語 (DSL) を定義するには、テンプレートから Visual Studio ソリューションを作成します。 ソリューションの主要な機能は DSL 定義図です。これは DslDefinition.dsl に保存されています。 DSL 定義は、DSL のクラスとシェイプを定義します。 これらの要素を変更および追加した後で、プログラム コードを追加して DSL を詳細にカスタマイズできます。
 
-作業することをお勧めの Dsl に慣れていない場合、 **DSL ツール ラボ**、このサイトで入手できます。[Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+作業することをお勧めの Dsl に慣れていない場合、 **DSL ツール ラボ**、このサイトで入手できます。[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> テンプレート ソリューションを選択します。
- DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。
 
+DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
-| Visual Studio Visualization and Modeling SDK | |
+- Visual Studio
+- Visual Studio 拡張機能の開発ワークロードは (Visual Studio SDK を含む)
+- Modeling SDK (Visual Studio での個々 のコンポーネントとしてインストール)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+新しいドメイン固有言語を作成するには、ドメイン固有言語のプロジェクト テンプレートを使用して、新しい Visual Studio ソリューションを作成します。
 
- 新しいドメイン固有言語を作成するには、ドメイン固有言語のプロジェクト テンプレートを使用して、新しい Visual Studio ソリューションを作成します。
+### <a name="to-create-a-dsl-solution"></a>DSL ソリューションを作成するには
 
-#### <a name="to-create-a-dsl-solution"></a>DSL ソリューションを作成するには
+1. 新規作成**ドメイン固有言語**プロジェクト。
 
-1. ソリューションを作成、**ドメイン固有言語**テンプレートで、下にあります**その他のプロジェクトの種類/機能拡張**で、**新しいプロジェクト** ダイアログ ボックス。
+   ::: moniker range="vs-2017"
 
     ![DSL ダイアログの作成](../modeling/media/create_dsldialog.png)
 
-    クリックすると**OK**、**ドメイン固有言語ウィザード**開きテンプレート DSL ソリューションの一覧が表示されます。
+   ::: moniker-end
+
+    **ドメイン固有言語ウィザード**開きテンプレート DSL ソリューションの一覧が表示されます。
 
 2. 各テンプレートをクリックして説明を参照します。 作成したい内容に最も近いソリューションを選択します。
 
@@ -606,7 +607,7 @@ ms.locfileid: "55927881"
  「[方法: ドメイン固有言語の Namespace を変更する](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)します。
 
 ## <a name="trouble"></a> トラブルシューティング
- 次の表に、DSL の設計時によく発生する問題を示し、併せて解決策を提示します。 詳細については、[視覚化 Tools Extensibililty Forum](http://go.microsoft.com/fwlink/?LinkId=186074)します。
+ 次の表に、DSL の設計時によく発生する問題を示し、併せて解決策を提示します。 詳細については、[視覚化ツール拡張性に関するフォーラム](http://go.microsoft.com/fwlink/?LinkId=186074)します。
 
 
 | 問題 | 提案される解決策 |

@@ -9,25 +9,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928284"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416020"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL コードについて
+
 ドメイン固有言語 (DSL) ソリューションには、読み取りし、Visual Studio で DSL のインスタンスの更新に使用できる API が生成されます。 この API は、DSL 定義から生成されるコード中に定義されます。 このトピックでは生成される API を説明します。
 
 ## <a name="the-example-solution-component-diagrams"></a>ソリューションの例:コンポーネント図
- このトピックの例のほとんどのソースでは、ソリューションを作成するから DSL を作成、**コンポーネント モデル**ソリューション テンプレート。 これは、新しい DSL ソリューションを作成するときに表示される標準のテンプレートの 1 つです。
+
+このトピックの例のほとんどのソースでは、ソリューションを作成するから DSL を作成、**コンポーネント モデル**ソリューション テンプレート。 これは、新しい DSL ソリューションを作成するときに表示される標準のテンプレートの 1 つです。
 
 > [!NOTE]
->  コンポーネント図 DSL テンプレートは、Visual Studio で、[アーキテクチャ] メニューを使用して作成できる UML コンポーネント図には関係ありません。 **新しいプロジェクト** ダイアログ ボックスで、展開**その他のプロジェクトの種類 \extensibility**順にクリックします**ドメイン固有言語デザイナー**します。
+> コンポーネント図 DSL テンプレートが呼び出されます**ドメイン固有言語デザイナー**します。
 
- このソリューション テンプレートに習熟していない場合は、F5 キーを押して実験します。 コンポーネントにポート ツールをドラッグすることによりポートが作成されることと、ポートを接続できることに特に注意してください。
+キーを押して**F5**試験的にこのソリューション テンプレートに慣れていない場合。 コンポーネントにポート ツールをドラッグすることによりポートが作成されることと、ポートを接続できることに特に注意してください。
 
- ![コンポーネントおよび相互接続ポート](../modeling/media/componentsample.png)
+![コンポーネントおよび相互接続ポート](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL ソリューションの構造
  **Dsl**プロジェクトは、DSL の API を定義します。 **DslPackage**プロジェクトでは、Visual Studio と統合する方法を定義します。 独自のプロジェクトを追加することも可能で、それらもモデルから生成されるコードを含みます。

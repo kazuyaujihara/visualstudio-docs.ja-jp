@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b08dab6be6a959b6a7ac37b243ff1bb94fbb4b1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939620"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415578"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF による DSL の拡張
 
@@ -117,15 +117,15 @@ MEF の詳細については、次を参照してください。 [Managed Extens
 
 DSL は、MEF-有効になっているようになりました。 MEF 拡張機能としては、メニュー コマンド、ジェスチャ ハンドラー、および検証制約を作成できます。 その他のカスタム コードと共に、DSL ソリューションでは、これらの拡張機能を記述できます。 さらに、か、他の開発者は、DSL を拡張する別の Visual Studio 拡張機能を記述できます。
 
-## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>MEF が有効な DSL の拡張機能の作成
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>MEF が有効な DSL の拡張機能を作成します。
 
 自分または他のユーザーによって作成された MEF が有効な DSL へのアクセスがあれば、その拡張機能を記述できます。 メニュー コマンド、ジェスチャ ハンドラー、または検証制約を追加する拡張機能を使用できます。 これらの拡張機能を作成するには、Visual Studio の拡張機能 (VSIX) ソリューションを使用します。 ソリューションに 2 つの部分: クラス ライブラリ プロジェクト、コード アセンブリをビルドして、アセンブリをパッケージ化した VSIX プロジェクト。
 
-#### <a name="to-create-a-dsl-extension-vsix"></a>DSL 拡張 VSIX を作成するには
+### <a name="to-create-a-dsl-extension-vsix"></a>DSL 拡張 VSIX を作成するには
 
-1. 新しいクラス ライブラリ プロジェクトを作成します。 これを実行する、**新しいプロジェクト**ダイアログ ボックスで、 **Visual Basic**または**Visual c#** 選び**クラス ライブラリ**します。
+1. 新規作成**クラス ライブラリ**プロジェクト。
 
-2. 新しいクラス ライブラリ プロジェクトでは、DSL のアセンブリへの参照を追加します。
+2. 新しいプロジェクトでは、DSL のアセンブリへの参照を追加します。
 
    - このアセンブリは通常で終わる名前を持つ"。Dsl.dll"。
 
@@ -145,9 +145,9 @@ DSL は、MEF-有効になっているようになりました。 MEF 拡張機�
 
    -   System.Windows.Forms.dll
 
-4. 同じソリューションで VSIX プロジェクトを作成します。 これを実行する、**新しいプロジェクト** ダイアログ ボックスで、展開**Visual Basic**または**Visual c#**、 をクリックして**Extensibility**、しを選択します。**VSIX プロジェクト**します。
+4. 新規作成**VSIX プロジェクト**プロジェクト。
 
-5. ソリューション エクスプ ローラーで VSIX プロジェクトを右クリックし をクリックし、**スタートアップ プロジェクトとして設定**します。
+5. **ソリューション エクスプ ローラー**で VSIX プロジェクトを右クリックし、選択**スタートアップ プロジェクトとして設定**します。
 
 6. 新しいプロジェクトで開く**source.extension.vsixmanifest**します。
 
@@ -376,5 +376,5 @@ namespace MefExtension
 
 - [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)
 - [MEF (Managed Extensibility Framework)](/dotnet/framework/mef/index)
-- [方法: ドラッグ アンド ドロップ ハンドラーを追加します。](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [方法: ドラッグ アンド ドロップ ハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)
