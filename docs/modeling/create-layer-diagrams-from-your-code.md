@@ -21,7 +21,7 @@ ms.locfileid: "57223235"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>コードからの依存関係図の作成
 
-ソフトウェア システムのおおまかな論理アーキテクチャを表示するのには、作成、*依存関係図*Visual Studio でします。 コードがこの設計で一貫性のあることを確認するには、依存関係図を使用してコードを検証します。 Visual c# および Visual Basic プロジェクトの依存関係図を作成することができます。 この機能をサポートする Visual Studio のエディションを確認するを参照してください。 [Edition のサポート アーキテクチャとモデリング ツール](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)します。
+ソフトウェア システムのおおまかな論理アーキテクチャを表示するのには、作成、*依存関係図*Visual Studio でします。 コードがこの設計で一貫性のあることを確認するには、依存関係図を使用してコードを検証します。 Visual C# および Visual Basic プロジェクトの依存関係図を作成することができます。 この機能をサポートする Visual Studio のエディションを確認するを参照してください。 [Edition のサポート アーキテクチャとモデリング ツール](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)します。
 
 ![依存関係図を作成します。](../modeling/media/layerdiagramvisualizecode.png)
 
