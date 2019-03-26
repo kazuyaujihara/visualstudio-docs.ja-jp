@@ -1,4 +1,4 @@
----
+﻿---
 title: 'チュートリアル: プロジェクト テンプレートを使用して、サイト列プロジェクト項目を作成、パート 2 |Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual

@@ -3,18 +3,18 @@ title: デコンストラクターのクイック アクションを生成する
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a609b16e0d1bc7e30dc26ef047228a6cacdb46b2
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 8887f4cd6b4dcd7f08e808f1271f5d546d6a224c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324737"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159180"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Visual Studio でデコンストラクターを生成する
 
@@ -42,7 +42,7 @@ ms.locfileid: "57324737"
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
       - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
 
-      ![デコンストラクターのコード修正の生成](media/deconstruct-codefix.png)
+      ![デコンストラクターの生成のコード修正](media/deconstruct-codefix.png)
 
 3. **[Generate method 'MyInternalClass.Deconstruct']\(メソッド 'MyInternalClass.Deconstruct' の生成\)** を選択し、デコンストラクターを生成します。
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f346e02bfc2eee1556a4f8ade3a472a36860daa
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b704386f1a1c26530cd24fc4bc2d3e355c9d7e03
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526517"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151246"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して C++ でデバッグする
 
@@ -25,17 +25,20 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 
-1. Visual Studio で、**[ファイル]、[新しいプロジェクト]** の順に選択します。
+1. Visual Studio で、**[ファイル] > [新規作成] > [プロジェクト]** の順に選択します。
 
-2. **[Visual C++]** の下で **[Windows デスクトップ]** を選択し、真ん中のウィンドウで **[Windows コンソール アプリケーション]** を選択します。
+    ::: moniker range=">=vs-2019"
+    **[新しいプロジェクトの作成]** ダイアログ ボックスが開きます。 検索ボックスに「**asp.net**」と入力して結果をフィルター処理し、**[ASP.NET Core Web アプリケーション]** を選択して、**[次へ]** をクリックします。 その後、「**MyDbgApp**」などの名前を入力して、**[作成]** を選択します。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **[新しいプロジェクト]** ダイアログ ボックスが開きます。 **[Visual C++]** の下で **[Windows デスクトップ]** を選択し、真ん中のウィンドウで **[Windows コンソール アプリケーション]** を選択します。 次に、「**MyDbgApp**」のような名前を入力し、**[OK]** をクリックします。
+    ::: moniker-end
 
-    **[Windows コンソール アプリケーション]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **[C++ によるデスクトップ開発]** ワークロード、**[変更]** の順に選択します。
-
-3. 「**MyDbgApp**」のような名前を入力し、**[OK]** をクリックします。
+    **[Windows コンソール アプリケーション]** プロジェクト テンプレートが表示されない場合は、**[ツール]** > **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 Visual Studio インストーラーが起動します。 **[C++ によるデスクトップ開発]** ワークロード、**[変更]** の順に選択します。
 
     Visual Studio によってプロジェクトが作成されます。
 
-4. MyDbgApp.cpp で次のコードを
+1. MyDbgApp.cpp で次のコードを
 
     ```c++
     int main()

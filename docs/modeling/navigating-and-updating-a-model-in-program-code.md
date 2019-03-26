@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b727f1e4de34a0bde6b4caba570840cea6e1a201
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950150"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416238"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>プログラム コードのモデル内を移動し、モデルを更新する
 
@@ -226,27 +226,28 @@ using (Transaction t =
   この方法で要素を作成するときに、図上のコネクタが自動的に作成するが既定の図形、色、およびその他の機能があります。 関連するコネクタを作成する方法を制御するを参照してください。[要素とその図形を作成する](#merge)します。
 
 ##  <a name="deleteelements"></a> 要素の削除
- 呼び出すことによって要素を削除する`Delete()`:
 
- `henry.Delete();`
+呼び出すことによって要素を削除する`Delete()`:
 
- この操作も削除されます。
+`henry.Delete();`
+
+この操作も削除されます。
 
 - 要素との間のリレーションシップ リンク。 たとえば、`edward.Parents`は含まれなく`henry`します。
 
 - 対象のロールにある要素、`PropagatesDelete`フラグが true です。 たとえば、要素を表示する図形も削除されます。
 
-  既定では、すべての埋め込みリレーションシップを持つ`PropagatesDelete`で true でターゲット ロール。 削除する`henry`は削除されません、`familyTree`が`familyTree.Delete()`すべてを削除、`Persons`します。 詳細については、次を参照してください。[削除の動作のカスタマイズ](../modeling/customizing-deletion-behavior.md)します。
+既定では、すべての埋め込みリレーションシップを持つ`PropagatesDelete`で true でターゲット ロール。 削除する`henry`は削除されません、`familyTree`が`familyTree.Delete()`すべてを削除、`Persons`します。
 
-  既定では、`PropagatesDelete`参照リレーションシップのロールには当てはまりません。
+既定では、`PropagatesDelete`参照リレーションシップのロールには当てはまりません。
 
-  オブジェクトを削除するときに、特定の伝達を省略する削除ルールが発生することができます。 これは、別の 1 つの要素を置換する場合に便利です。 1 つ以上のロールを削除する必要があります反映されませんの GUID を指定します。 GUID は、リレーションシップ クラスから取得できます。
+オブジェクトを削除するときに、特定の伝達を省略する削除ルールが発生することができます。 これは、別の 1 つの要素を置換する場合に便利です。 1 つ以上のロールを削除する必要があります反映されませんの GUID を指定します。 GUID は、リレーションシップ クラスから取得できます。
 
-  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+`henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-  (この例の場合は効果がありません、ため`PropagatesDelete`は`false`の役割、`ParentsHaveChildren`リレーションシップです)。
+(この例の場合は効果がありません、ため`PropagatesDelete`は`false`の役割、`ParentsHaveChildren`リレーションシップです)。
 
-  場合によっては、ロック、要素または伝達によって削除される要素のいずれかの存在によって削除ができません。 使用することができます`element.CanDelete()`要素を削除できるかどうかを確認します。
+場合によっては、ロック、要素または伝達によって削除される要素のいずれかの存在によって削除ができません。 使用することができます`element.CanDelete()`要素を削除できるかどうかを確認します。
 
 ##  <a name="deletelinks"></a> リレーションシップ リンクを削除します。
  リレーションシップ リンクを削除するには、ロールのプロパティから要素を削除します。
@@ -486,6 +487,6 @@ partial class MyDiagram
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)
 - [ドメイン固有言語からのコード生成](../modeling/generating-code-from-a-domain-specific-language.md)
-- [方法: トランザクションを使用してモデルを更新します。](../modeling/how-to-use-transactions-to-update-the-model.md)
+- [方法: トランザクションを使用してモデルを更新する](../modeling/how-to-use-transactions-to-update-the-model.md)
 - [Visual Studio Modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [変更内容への対応および変更内容の反映](../modeling/responding-to-and-propagating-changes.md)

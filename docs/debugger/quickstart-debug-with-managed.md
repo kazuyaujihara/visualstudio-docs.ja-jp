@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c8616ffc9adeebe5fd2b224366d05cbf5c66a2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 8dc08ce4ef3f4afd8cd7630848ef1ee67e1f2970
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525376"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152929"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して C# または Visual Basic でデバッグする
 
@@ -25,17 +25,20 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 
-1. Visual Studio で、**[ファイル]、[新しいプロジェクト]** の順に選択します。
+1. Visual Studio で、**[ファイル] > [新規作成] > [プロジェクト]** の順に選択します。
 
-2. **[Visual C#]** または **[Visual Basic]** の下で、**[.NET Core]** を選択し、中央のウィンドウで **[コンソール アプリ (.NET Core)]** を選びます。
+    ::: moniker range=">=vs-2019"
+    **[新しいプロジェクトの作成]** ダイアログ ボックスが開きます。 検索ボックスに「**.net**」と入力して結果をフィルター処理し、**[コンソール アプリ (.NET Core)]** を選択して、**[次へ]** をクリックします。 その後、「**MyDbgApp**」などの名前を入力して、**[作成]** を選択します。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **[新しいプロジェクト]** ダイアログ ボックスが表示されます。 **[Visual C#]** で、**[.NET Core]** を選択し、中央のウィンドウで **[コンソール アプリ (.NET Core)]** を選択します。 次に、「**MyDbgApp**」のような名前を入力し、**[OK]** をクリックします。
+    ::: moniker-end
 
-     **[Console App (.NET Core)]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **[.NET デスクトップ開発]** と **[.NET Core]** ワークロードを選択し、**[変更]** を選びます。
-
-3. 「**MyDbgApp**」のような名前を入力し、**[OK]** をクリックします。
+     **[コンソール アプリ (.NET Core)]** プロジェクト テンプレートが表示されない場合は、**[ツール]** > **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 **[.NET デスクトップ開発]** と **[.NET Core]** ワークロードを選択し、**[変更]** を選びます。
 
     Visual Studio によってプロジェクトが作成されます。
 
-4. *Program.cs* または *Module1.vb* で、次のコード
+1. *Program.cs* または *Module1.vb* で、次のコード
 
     ```csharp
     class Program

@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf114093c6ba3e267cab901864c5442df8e33236
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 03dbfd8140249a93dfb649894dabab1c57b203c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957300"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984002"
 ---
-# <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>ワークロードやコンポーネントを追加または削除することで Visual Studio 2017 を変更する
+# <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>ワークロードやコンポーネントを追加または削除することで Visual Studio を変更する
 
 実行する作業に合わせて Visual Studio をより簡単にパーソナライズできるようになっただけでなく、Visual Studio をより簡単にカスタマイズできるようにもなりました。 これを行うには、新しい Visual Studio インストーラーを起動して、必要な変更を加えます。
 
@@ -69,6 +69,6 @@ ms.locfileid: "55957300"
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 のインストール](install-visual-studio.md)
-* [Visual Studio 2017 の更新](update-visual-studio.md)
-* [Visual Studio 2017 のアンインストール](uninstall-visual-studio.md)
+* [Visual Studio のインストール](install-visual-studio.md)
+* [Visual Studio の更新](update-visual-studio.md)
+* [Visual Studio のアンインストール](uninstall-visual-studio.md)

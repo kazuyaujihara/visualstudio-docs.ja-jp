@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318434"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983033"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>コード化された UI テストでさまざまな Web ブラウザーを使用する
 
@@ -51,11 +51,23 @@ ms.locfileid: "56318434"
 
 ### <a name="install-selenium-components"></a>Selenium コンポーネントをインストールする
 
-1.  **[ツール]** メニューの **[拡張機能と更新プログラム]** をクリックします。
+::: moniker range="vs-2017"
 
-2.  **[拡張機能と更新プログラム]** ダイアログ ボックスで、`Selenium components for Cross Browser Testing` を検索します。
+1. **[ツール]** メニューの **[拡張機能と更新プログラム]** をクリックします。
 
-3.  拡張機能を強調表示し、**[ダウンロード]** を選択します。
+2. **[拡張機能と更新プログラム]** ダイアログ ボックスで、`Selenium components for Cross Browser Testing` を検索します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. **[拡張機能]** メニューの **[拡張機能の管理]** を選択します。
+
+2. **[拡張機能の管理]** ダイアログ ボックスで、`Selenium components for Cross Browser Testing` を検索します。
+
+::: moniker-end
+
+3. 拡張機能を強調表示し、**[ダウンロード]** を選択します。
 
     > [!TIP]
     > コード化された UI のクロス ブラウザー テスト用 Selenium コンポーネントは、[こちら](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)からもダウンロードできます。

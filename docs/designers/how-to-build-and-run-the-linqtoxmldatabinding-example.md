@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88b705a7dc64f46ba750feed1e5259f2b74c555
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951905"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069919"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>方法: LinqToXmlDataBinding という例をビルドして実行する
 
@@ -20,11 +20,9 @@ ms.locfileid: "55951905"
 
 Visual Studio の詳細については、「[Visual Studio IDE の概要](../get-started/visual-studio-ide.md)」を参照してください。
 
-## <a name="create-and-populate-the-project"></a>プロジェクトの作成および設定
+## <a name="create-the-project"></a>プロジェクトの作成
 
-### <a name="to-create-the-starting-project"></a>基本となるプロジェクトを作成するには
-
-1. Visual Studio を起動し、LinqToXmlDataBinding という名前の C# WPF アプリケーションを作成します。 プロジェクトでは、.NET Framework 3.5 (またはそれ以降) を使用する必要があります。
+1. Visual Studio を開き、**LinqToXmlDataBinding** という名前の C# **WPF アプリ**を作成します。 プロジェクトの対象は、.NET Framework 3.5 (またはそれ以降) にする必要があります。
 
 1. 次の .NET アセンブリ用のプロジェクト参照がない場合は追加します。
 
@@ -38,9 +36,9 @@ Visual Studio の詳細については、「[Visual Studio IDE の概要](../get
 
 1. **Ctrl** キーと **Shift** キーを押しながら **B** キーを押してソリューションをビルドし、**F5** キーを押してそのソリューションを実行します。 プロジェクトがエラーなくコンパイルされ、汎用 WPF アプリケーションとして実行されます。
 
-### <a name="to-add-custom-code-to-the-project"></a>プロジェクトにカスタム コードを追加するには
+## <a name="add-code-to-the-project"></a>プロジェクトにコードを追加する
 
-1. ソリューション エクスプローラーでソース ファイル **Window1.xaml** の名前を **L2XDBForm.xaml** に変更します。 依存するソース ファイル **Window1.xaml.cs** の名前が、自動的に **L2XDBForm.xaml.cs** に変更されます。
+1. **ソリューション エクスプローラー**でソース ファイルの名前を **Window1.xaml** から **L2XDBForm.xaml** に変更します。 依存するソース ファイル **Window1.xaml.cs** の名前が、自動的に **L2XDBForm.xaml.cs** に変更されます。
 
 1. ファイル **L2XDBForm.xaml** 内のソース コードを、トピック「[L2DBForm.xaml ソース コード](../designers/l2dbform-xaml-source-code.md)」のコードで置き換えます。 このファイルは XAML ソース ビューで操作します。
 
@@ -56,9 +54,7 @@ LinqToXmlDataBinding プログラムを使用すると、ユーザーは、組�
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>プログラムを実行して書籍一覧を表示するには
 
-- **F5** キー (**[デバッグ開始]**) または **Ctrl** キーを押しながら **F5** キー (**[デバッグなしで開始]**) を押して、LinqToXmlDataBinding を実行します。
-
-   **[WPF Data Binding using LINQ to XML]** というタイトルのプログラム ウィンドウが表示されます。
+**F5** キー (**[デバッグ開始]**) または **Ctrl** キーを押しながら **F5** キー (**[デバッグなしで開始]**) を押して、LinqToXmlDataBinding を実行します。 **[WPF Data Binding using LINQ to XML]** というタイトルのプログラム ウィンドウが表示されます。
 
 - UI の最上部に、書籍一覧を表す生の **XML** が表示されます。 この部分は WPF の <xref:System.Windows.Controls.TextBlock> コントロールを使って表示されており、マウスやキーボードで操作できません。
 

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843814"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069685"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio におけるクロス プラットフォーム モバイル開発
 
@@ -96,7 +96,7 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 
  ![Javascript でのマルチデバイス ハイブリッド アプリ](../cross-platform/media/multidevicehybridapps.png "Javascript でのマルチデバイス ハイブリッド アプリ")
 
- 作業を開始するには、Visual Studio 2017 をインストールして、セットアップ中に **[JavaScript によるモバイル開発]** 機能を選択します。 Cordova ツールにより、マルチプラットフォーム アプリをビルドするために必要なすべてのサード パーティのソフトウェアが自動的にインストールされます。
+ 作業を開始するには、Visual Studio をインストールして、セットアップ中に **[JavaScript によるモバイル開発]** 機能を選択します。 Cordova ツールにより、マルチプラットフォーム アプリをビルドするために必要なすべてのサード パーティのソフトウェアが自動的にインストールされます。
 
  拡張機能をインストールした後、Visual Studio を開き、**[空のアプリケーション (Apache Cordova)]** プロジェクトを作成します。 その後、JavaScript または TypeScript を使用してアプリを開発できます。 また、プラグインを追加してアプリの機能を拡張することもでき、プラグインの API はコードを記述するときに IntelliSense に表示されます。
 

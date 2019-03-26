@@ -1,8 +1,24 @@
+---
+ms.openlocfilehash: 4b5b629ecf67ebd88be2eb1bf9172fec001fb475
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58052204"
+---
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* 選択した言語に適したワークロードでインストールされた [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017):
+::: moniker range=">=vs-2019"
+
+* 選択した言語に適したワークロードでインストールされた [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/):
   * ASP.NET:**ASP.NET と Web 開発**
   * Node.js: **Node.js 開発**
+::: moniker-end
+::: moniker range="vs-2017"
+* 選択した言語に適したワークロードでインストールされた [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/):
+  * ASP.NET:**ASP.NET と Web 開発**
+  * Node.js: **Node.js 開発**
+::: moniker-end
 
 * Azure サブスクリプション。 サブスクリプションがまだない場合は、[無料でサインアップ](https://azure.microsoft.com/free/dotnet/)します。これには、30 日間の $200 のクレジットと、12 か月間の人気の無料サービスが含まれます。
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 001b0efc5beaa5f76f979070e8e73c2d59fb3e8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 140a79e3771e4097a58c6974c8e088006ae2105a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949799"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415656"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>ドメイン固有言語のカスタマイズおよび拡張
 Visual Studio のモデリングと視覚エフェクト SDK (VMSDK) は、いくつかのレベルをモデリング ツールを定義することができますを提供します。
@@ -51,17 +51,17 @@ Visual Studio のモデリングと視覚エフェクト SDK (VMSDK) は、い�
 |名前、アイコン、および DSL のモデル エクスプ ローラー内のノードの可視性を変更します。|参照してください[モデル エクスプ ローラーのカスタマイズ](../modeling/customizing-the-model-explorer.md)します。|
 |コピー、切り取りと貼り付けを有効にします。|設定、**コピー貼り付けを有効にする**のプロパティ、**エディター** DSL エクスプ ローラーでノード。|
 |要素がコピーされるたびに、参照のリンクとそのターゲットをコピーします。 たとえば、項目に添付されたコメントをコピーします。|設定、**コピーの伝達**(DSL 定義図で、ドメイン リレーションシップの一方の側にある行で表されます)、ソース ロールのプロパティ。<br /><br /> 複雑な効果を実現する ProcessOnCopy をオーバーライドするコードを記述します。<br /><br /> 参照してください[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。|
-|削除、親の変更、または要素が削除されたときに、関連する要素を再リンクします。|設定、**削除の伝達**リレーションシップ ロールの値。 複雑な効果は、オーバーライド`ShouldVisitRelationship`と`ShouldVisitRolePlayer`メソッド、`MyDslDeleteClosure`で定義されたクラス**DomainModel.cs**<br /><br /> 参照してください[削除動作のカスタマイズ](../modeling/customizing-deletion-behavior.md)|
+|削除、親の変更、または要素が削除されたときに、関連する要素を再リンクします。|設定、**削除の伝達**リレーションシップ ロールの値。 複雑な効果は、オーバーライド`ShouldVisitRelationship`と`ShouldVisitRolePlayer`メソッド、`MyDslDeleteClosure`で定義されたクラス**DomainModel.cs**します。|
 |図形のレイアウトと外観をコピーし、ドラッグ アンド ドロップが保持されます。|シェイプとコネクタを追加、コピーする`ElementGroupPrototype`します。 オーバーライドする最も便利なメソッドは `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 参照してください[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。|
 |現在のカーソル位置など、選択した場所に図形を貼り付けます。|オーバーライド`ClipboardCommandSet.ProcessOnCopy()`の場所に固有のバージョンを使用する`ElementOperations.Merge().`を参照してください[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。|
 |貼り付け時にその他のリンクを作成します。|Override ClipboardCommandSet.ProcessOnPasteCommand()|
-|ドラッグを有効にして、この図は、その他の Dsl と Windows から要素を削除します。|「[方法:ドラッグ アンド ドロップ ハンドラーを追加します。](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|ドラッグを有効にして、この図は、その他の Dsl と Windows から要素を削除します。|「[方法:ドラッグ アンド ドロップ ハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |親をドラッグした場合とは、図形やポートなどの子の図形にドラッグしたりするためのツールを許可します。|ターゲット オブジェクト クラスの親にドロップされたオブジェクトを転送するには、要素マージ ディレクティブを定義します。 参照してください[要素の作成と移動をカスタマイズする](../modeling/customizing-element-creation-and-movement.md)します。|
 |図形またはその他のリンクを図形にドラッグするツールを許可するか、作成されたオブジェクト。 たとえば、リンクすることが項目上にドロップされるコメントを許可するには、です。|ターゲット ドメイン クラスに要素マージ ディレクティブを定義し、生成するリンクを定義します。 複雑な場合は、カスタム コードを追加することができます。 参照してください[要素の作成と移動をカスタマイズする](../modeling/customizing-element-creation-and-movement.md)します。|
-|1 つのツールを使用して要素のグループを作成します。 たとえば、固定ポートのセットを持つコンポーネント。|ToolboxHelper.cs 内のツールボックスの初期化メソッドをオーバーライドします。 要素グループ プロトタイプ (EGP) が、要素とそのリレーションシップ リンクを含むを作成します。 参照してください[ツールおよびツールボックスのカスタマイズ](../modeling/customizing-tools-and-the-toolbox.md)します。<br /><br /> EGP にプリンシパルとポート図形を含めるか、EGP がインスタンス化されるときに、ポート シェイプを配置する BoundsRules を定義します。 参照してください[BoundsRules によってシェイプの位置とサイズが制限](../modeling/boundsrules-constrain-shape-location-and-size.md)します。|
+|1 つのツールを使用して要素のグループを作成します。 たとえば、固定ポートのセットを持つコンポーネント。|ToolboxHelper.cs 内のツールボックスの初期化メソッドをオーバーライドします。 要素グループ プロトタイプ (EGP) が、要素とそのリレーションシップ リンクを含むを作成します。 参照してください[ツールおよびツールボックスのカスタマイズ](../modeling/customizing-tools-and-the-toolbox.md)します。<br /><br /> EGP にプリンシパルとポート図形を含めるか、EGP がインスタンス化されるときに、ポート シェイプを配置する BoundsRules を定義します。|
 |1 つの接続ツールを使用して、複数の種類のリレーションシップのインスタンスを作成します。|リンク接続ディレクティブ (LCD) をツールによって呼び出される接続ビルダーに追加します。 Lcd では、2 つの要素の型からリレーションシップの種類を決定します。 この要素の状態に依存性を高めるには、カスタム コードを追加することができます。 参照してください[ツールおよびツールボックスのカスタマイズ](../modeling/customizing-tools-and-the-toolbox.md)します。|
 |固定ツール - ユーザーは、連続して多くの図形またはコネクタを作成する任意のツールをダブルクリックすることができます。|DSL エクスプ ローラーで選択、`Editor`ノード。 [プロパティ] ウィンドウで次のように設定します。**ツールボックス アイテムの固定を使用して**します。|
-|メニュー コマンドを定義します。|「[方法:標準メニュー コマンドを修正します。](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|メニュー コマンドを定義します。|「[方法:標準のメニュー コマンドを修正する](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
 |検証規則を使って、モデルを制限します。|参照してください[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)|
 |DSL からコード、構成ファイル、またはドキュメントを生成します。|[ドメイン固有言語からのコード生成](../modeling/generating-code-from-a-domain-specific-language.md)|
 |モデルを保存する方法をカスタマイズするファイル。|参照してください[ファイル格納処理および XML シリアル化をカスタマイズします。](../modeling/customizing-file-storage-and-xml-serialization.md)|

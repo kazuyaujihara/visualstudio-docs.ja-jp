@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315106"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982767"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>[単体テストの作成] コマンドを使用した単体テスト メソッド スタブの作成
 
@@ -38,17 +38,28 @@ Visual Studio の **[単体テストの作成]** コマンドでは、単体テ�
 
 ![[単体テストの作成] コマンドの使用](media/createunittestcommand.png)
 
-## <a name="setting-unit-test-traits"></a>単体テストの特徴の設定
+## <a name="set-unit-test-traits"></a>単体テストの特性を設定する
 
 テストの自動化プロセスの一部としてこれらのテストを実行する予定の場合は、他のテスト プロジェクト (上記ダイアログの 2 番目のオプション) でテストを作成し、単体テストにその特徴を設定することを検討してください。 そうすることで、継続的インテグレーションまたは継続的配置パイプラインの一部として、これらの特定のテストを含めたり、除外したりすることがより容易になります。 特徴は、以下に示すように、単体テストに直接メタデータを追加して設定します。
 
 ![単体テストの特徴の設定](media/createunittest.png)
 
-## <a name="using-third-party-unit-test-frameworks"></a>サード パーティの単体テスト フレームワークの使用
+## <a name="use-third-party-unit-test-frameworks"></a>サード パーティの単体テスト フレームワークを使用する
 
 Visual Studio では、任意のテスト フレームワークを使用して、単体テストを簡単に作成できます。 他のテスト フレームワークをインストールするには:
 
+::: moniker range="vs-2017"
+
 1. **[ツール]** > **[拡張機能と更新プログラム]** を選択します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. **[拡張機能]** > **[拡張機能の管理]** を選択します。
+
+::: moniker-end
+
 2. **[オンライン]** > **[Visual Studio Marketplace]** > **[ツール]** を展開し、**[テスト]** を選択します。
 
 ![サード パーティのテスト フレームワークの使用](media/createunittestfx.png)

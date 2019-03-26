@@ -10,12 +10,12 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007177"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983885"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio のフィルター処理済みソリューション
 
@@ -37,7 +37,7 @@ ms.locfileid: "57007177"
 
 1. メニュー バーから、**[ファイル]** > **[開く]** > **[プロジェクト/ソリューション]** を選択します。
 
-2. **[新しいプロジェクト]** ダイアログで、ソリューションを選択してから、**[プロジェクトを読み込まない]** を選択します。
+2. **[プロジェクトを開く]** ダイアログで、ソリューションを選択してから、**[プロジェクトを読み込まない]** を選択します。
 
    ![[プロジェクトを読み込まない] がオンになった Visual Studio の [プロジェクトを開く] ダイアログ](media/filtered-solutions/do-not-load-projects.png)
 

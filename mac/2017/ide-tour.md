@@ -6,17 +6,17 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 4f3c868edb19cc45e25d73a11e7a65ead37c0b11
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 238370c5f8de5efdb37a29fea9d3e91763a0aa18
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316731"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070036"
 ---
-# <a name="visual-studio-2017-for-mac-preview-tour"></a>Visual Studio 2017 for Mac プレビュー ツアー
+# <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac ツアー
 
 > [!NOTE]
-> Visual Studio 2019 for Mac がプレビューとして[リリース](installation.md)され、テストできるようになりました。
+> Visual Studio 2019 for Mac がプレビューとして[リリース](installation.md?view=vsmac-2019)され、テストできるようになりました。
 
 Visual Studio for Mac は、コードを編集、デバッグ、ビルドし、その後にアプリを発行できる Mac 上の .NET _統合開発環境_です。 Visual Studio for Mac には、期待されている標準エディターおよびデバッガーなどの機能に加えて、コンパイラ、コード補完ツール、グラフィック デザイナー、ソース管理など、ソフトウェア開発プロセスを容易にする機能があります。
 

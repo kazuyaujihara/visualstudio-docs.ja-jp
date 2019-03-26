@@ -4,19 +4,19 @@ author: evanwindom
 ms.author: jaunger
 manager: lank
 ms.date: 2/13/2019
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 7b0968532a1feffb667bb0cd2f3e04f1deb02bb5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: ab56754f6ef707eb619d7473cb391d415506a396
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323479"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867104"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 
-Visual Studio サブスクリプションのテクニカル サポート特典は、[サポート ライフサイクル](https://support.microsoft.com/lifecycle/search)のメインストリーム サポート フェーズにある製品の**非運用環境**で発生した障害対応の問題を解決するためのものです。 Visual Studio Enterprise の Standard および年間のクラウド サブスクリプションは、特典のアクティブ化から最長 1 年間、4 つのインシデントを受け取り、Visual Studio Professional Standard および年間のクラウド サブスクリプションが 2 つのインシデントを受け取ります。 サブスクリプションが最新である間は、特典のアクティブ化を行う必要があります。 
+Visual Studio サブスクリプションのテクニカル サポート特典は、[サポート ライフサイクル](https://support.microsoft.com/lifecycle/search)のメインストリーム サポート フェーズにある製品の**非運用環境**で発生した障害対応の問題を解決するためのものです。 Visual Studio Enterprise の Standard および年間のクラウド サブスクリプションは、特典のアクティブ化から最長 1 年間、4 つのインシデントを受け取り、Visual Studio Professional Standard および年間のクラウド サブスクリプションが 2 つのインシデントを受け取ります。 サブスクリプションが最新である間は、特典のアクティブ化を行う必要があります。
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、 https://visualstudio.microsoft.com/vs/pricing/ に移動し、Visual Studio サブスクリプションのさまざまな購入オプションを調べることをお勧めします。
@@ -27,14 +27,15 @@ Visual Studio サブスクリプションのテクニカル サポート特典�
 **特典を使用してサポート リクエストを送信するには、最初に特典をアクティブ化する必要があります。次のセクションの手順に従って、アクティブ化を完了します。**
 
 ## <a name="how-to-activate-the-benefit"></a>特典をアクティブ化する方法
-1. https://my.visualstudio.com/Benefits に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。 
+
+1. https://my.visualstudio.com/Benefits に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![テクニカル サポート特典タイル](_img/vs-tech-support/vs-tech-support-tile.png)
-2. これで担当者とのチャット セッションが開始されます。担当者は、ユーザーの**契約 ID** と**アクセス ID** を作成して、ユーザーが保存できるようにそれらをメールを通じてユーザーに提供することができます。 
+2. これで担当者とのチャット セッションが開始されます。担当者は、ユーザーの**契約 ID** と**アクセス ID** を作成して、ユーザーが保存できるようにそれらをメールを通じてユーザーに提供することができます。
 
 3. プロセスを完了するには、担当者に以下のものを提供する必要があります。
    - 国
-   - 会社名 
+   - 会社名
    - フル ネーム
    - 自分のサブスクリプションへのサインインに使用するメール アドレス
    - 電話番号
@@ -43,19 +44,18 @@ Visual Studio サブスクリプションのテクニカル サポート特典�
    > [!div class="mx-imgBorder"]
    > ![テクニカル サポート特典のサブスクリプション ID を確認する](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
-4. プロセスが完了すると、サポート インシデントを作成するときに使用する**契約 ID** と**アクセス ID** が記載されたメールが届きます。 
+4. プロセスが完了すると、サポート インシデントを作成するときに使用する**契約 ID** と**アクセス ID** が記載されたメールが届きます。
 
 > [!NOTE]
 > 英語以外の言語のサポート アカウントを有効にする場合は、お住まいの国を[このリスト](https://support.microsoft.com/help/14084/activate-support-contract)から選択してください。
-
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>特典を使用してインシデントを送信する方法
 
 **契約 ID** および**アクセス ID** を設定したら、これらを使用して、[オンライン](http://support.microsoft.com/oas/) (サインインが必要) でまたは [Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) を通じて、またはお住まいの国のテクニカル サポート番号に電話して、テクニカル サポートにインシデントを送信することができます。 オンラインでインシデントを送信する場合は、Microsoft サポート担当者にコールバックさせるオプションがあります。
 
-### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>テクニカル サポート インシデントをオンラインで送信するために、サインインに使用するアカウントと関連付けられた契約 ID とアクセス ID を既にお持ちの場合  
+### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>テクニカル サポート インシデントをオンラインで送信するために、サインインに使用するアカウントと関連付けられた契約 ID とアクセス ID を既にお持ちの場合
 
-インシデントをオンラインで送信するときに、まずサインインが求められます。 契約 ID およびアクセス ID と関連付けられているアカウントでサインインします。 アカウントに関連付けられている既存のサポート プランの特典が、サポート ワークフローの手順 3 に表示されます。 そのプランを選択し、ケースの送信を続行します。 プランに示されている上限に達するか、プランの有効期限まで (どちらか早い方)、インシデントを送信できます。 残りのインシデントが “0” になるか、プランの有効期限が切れると、アクティブではなくなります。  
+インシデントをオンラインで送信するときに、まずサインインが求められます。 契約 ID およびアクセス ID と関連付けられているアカウントでサインインします。 アカウントに関連付けられている既存のサポート プランの特典が、サポート ワークフローの手順 3 に表示されます。 そのプランを選択し、ケースの送信を続行します。 プランに示されている上限に達するか、プランの有効期限まで (どちらか早い方)、インシデントを送信できます。 残りのインシデントが “0” になるか、プランの有効期限が切れると、アクティブではなくなります。
 
    > [!div class="mx-imgBorder"]
    > ![テクニカル サポート特典のインシデント送信手順 3](_img/vs-tech-support/vs-tech-support-step3.png)
@@ -87,17 +87,16 @@ Visual Studio サブスクリプションのテクニカル サポート特典�
    > [!div class="mx-imgBorder"]
    > ![テクニカル サポート特典のインシデント送信 - 契約 ID の追加](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
 
-5. コントラクトを追加すると、上部の **[Select a support plan]\(サポート プランの選択\)** の下にそれが表示されます。 プランのタイトルには、"MSDN" という用語が含まれます。 それを選択し、下にスクロールして **[次へ]** をクリックします。 
+5. コントラクトを追加すると、上部の **[Select a support plan]\(サポート プランの選択\)** の下にそれが表示されます。 プランのタイトルには、"MSDN" という用語が含まれます。 それを選択し、下にスクロールして **[次へ]** をクリックします。
 
    > [!div class="mx-imgBorder"]
    > ![テクニカル サポート特典のインシデント送信 - プランの選択](_img/vs-tech-support/vs-tech-support-choose-plan.png)
 
-6. 残りの手順 (重要度、連絡先情報、確認) を完了します。   インシデントを送信すると、インシデントが正常に送信されたことを示す確認メッセージが表示され、ケースにファイルをアップロードすることができます。 サポート担当者がインシデントに割り当てられます。担当者はユーザーが選択した連絡方法でユーザーに連絡し、問題の解決に当たります。 
+6. 残りの手順 (重要度、連絡先情報、確認) を完了します。   インシデントを送信すると、インシデントが正常に送信されたことを示す確認メッセージが表示され、ケースにファイルをアップロードすることができます。 サポート担当者がインシデントに割り当てられます。担当者はユーザーが選択した連絡方法でユーザーに連絡し、問題の解決に当たります。
 
 #### <a name="submit-an-incident-by-phone"></a>電話でインシデントを送信する
 
 電話でサポート インシデントを作成する場合は、お住まいの国の[カスタマー サービス](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers)の電話番号を見つけてください。 電話をかける場合は、契約 ID とアクセス ID が使用可能であることをご確認ください。
-
 
 #### <a name="submit-an-incident-within-the-azure-portal"></a>Azure Portal 内でインシデントを送信する
 
@@ -118,9 +117,8 @@ Azure に関連する問題がある場合に Visual Studio サブスクリプ�
 | Visual Studio Dev Essentials | N/A | 使用できません |N/A|
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
 
-<sup>1</sup> *Imagine Premium が含まれます除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine Standard、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
+<sup>1</sup> *Imagine Premium、BizSpark。除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、Imagine Standard、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services。*
 
 <sup>2</sup> *Imagine Standard が含まれます。*
 
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
-

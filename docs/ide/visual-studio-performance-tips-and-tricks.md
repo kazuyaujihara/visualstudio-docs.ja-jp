@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222988"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868231"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio のパフォーマンスのヒントとテクニック
 
@@ -25,7 +25,7 @@ Visual Studio のパフォーマンスの推奨事項は、まれなケースで
 
 システムを Windows の 32 ビット版から 64 ビット版にアップグレードすると、Visual Studio が使用できる仮想メモリの量が 2 GB から 4 GB に増えます。 これにより、Visual Studio では、32 ビット プロセスですが非常に大きいワークロードを処理できるようになります。
 
-詳細については、[メモリの制限](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits)に関するページと、「[Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)」(64 ビット Windows での /LARGEADDRESSAWARE の使用) を参照してください。
+詳細については、[メモリの制限](/windows/desktop/Memory/memory-limits-for-windows-releases)に関するページと、「[Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)」(64 ビット Windows での /LARGEADDRESSAWARE の使用) を参照してください。
 
 ## <a name="disable-automatic-file-restore"></a>自動ファイル復元を無効にする
 
@@ -105,7 +105,17 @@ Visual Studio では、自動ドキュメント復元により、ソリューシ
 
     拡張機能は Visual Studio に追加された追加ソフトウェア コンポーネントであり、新しい機能を提供したり、既存の機能を拡張したりします。 拡張機能がメモリ リソースの問題の原因になることがよくあります。 メモリ リソースの問題が発生する場合は、一度に 1 つの拡張機能を無効にして、シナリオまたはワークフローに与える影響を確認します。
 
-    拡張機能を無効にするには、**[ツール]** > **[拡張機能と更新プログラム]** の順に選択し、特定の拡張機能を無効にします。
+   ::: moniker range="vs-2017"
+
+    拡張機能を無効にするには、**[ツール]** > **[拡張機能と更新プログラム]** の順に選び、特定の拡張機能を無効にします。
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    拡張機能を無効にするには、**[拡張機能]** > **[拡張機能の管理]** の順に選び、特定の拡張機能を無効にします。
+
+   ::: moniker-end
 
 - **XAML デザイナーを無効にする**
 

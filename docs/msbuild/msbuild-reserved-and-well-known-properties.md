@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eefff14fd2277f791b61677fb9a23894c974c353
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632395"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070140"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild の予約済みおよび既知のプロパティ
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] には、プロジェクト ファイルに関する情報と [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] のバイナリに関する情報を格納する一連の定義済みのプロパティが用意されています。 これらのプロパティは、他の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロパティと同じように評価されます。 たとえば、`MSBuildProjectFile` プロパティを使用するには、「`$(MSBuildProjectFile)`」と入力します。
@@ -57,6 +57,7 @@ ms.locfileid: "56632395"
 | `MSBuildThisFileName` | 予約されています。 | `MSBuildThisFileFullPath` のファイル名の部分 (ファイル名拡張子を除く)。 |
 | `MSBuildToolsPath` | 予約されています。 | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] の値に関連付けられている `MSBuildToolsVersion` のバージョンのインストール パス。<br /><br /> パスに最後の円記号を含めません。<br /><br /> このプロパティはオーバーライドできません。 |
 | `MSBuildToolsVersion` | 予約されています。 | プロジェクトのビルドに使用する [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ツールセットのバージョン。<br /><br /> メモ:[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ツールセットは、アプリケーションのビルドで使用するタスク、ターゲット、およびツールで構成されます。 ツールには、*csc.exe* や *vbc.exe* などのコンパイラが含まれます。 詳細については、「[ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)」と「[標準ツールセット構成とカスタム ツールセット構成](../msbuild/standard-and-custom-toolset-configurations.md)」を参照してください。 |
+| `MSBuildVersion` | 予約されています。 | プロジェクトのビルドに使用される [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] バージョン。 <br /><br/> このプロパティはオーバーライドできません。オーバーライドすると、エラー メッセージ `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` が返されます。 |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>MSBuild の要素と競合する名前
 

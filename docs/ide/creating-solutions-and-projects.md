@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223248"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867888"
 ---
 # <a name="create-solutions-and-projects"></a>ソリューションとプロジェクトを作成する
 
@@ -113,11 +113,17 @@ ms.locfileid: "57223248"
 
 前述のように、プロジェクトやソリューションがなくてもコード ファイルを開くことができます。 この方法でコードを開発する方法については、「[プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)」を参照してください。
 
-## <a name="create-a-temporary-project-c-and-visual-basic"></a>一時プロジェクト (C# および Visual Basic) を作成する
+::: moniker range="vs-2017"
+
+## <a name="create-a-temporary-project"></a>一時的なプロジェクトを作成する
+
+(C# および Visual Basic のみ)
 
 ディスクの場所を指定せずに .NET ベースのプロジェクトを作成する場合、それは一時的なプロジェクトになります。 一時的なプロジェクトでは、.NET プロジェクトで実験できます。 一時的なプロジェクトで作業しているときはいつでも、一時的なプロジェクトを保存したり、破棄したりできます。
 
 一時的なプロジェクトを作成するには、まず **[ツール]** > **[オプション]** > **[プロジェクトおよびソリューション]** > **[全般]** の順に進み、**[作成時に新しいプロジェクトを保存]** チェックボックスのチェックをオフにします。 それから、通常どおり、**[新しいプロジェクト]** ダイアログ ボックスを開きます。
+
+::: moniker-end
 
 ## <a name="delete-a-solution-project-or-item"></a>ソリューション、プロジェクト、アイテムを削除する
 

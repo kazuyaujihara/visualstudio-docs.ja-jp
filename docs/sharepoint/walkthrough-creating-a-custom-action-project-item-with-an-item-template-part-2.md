@@ -1,4 +1,4 @@
----
+﻿---
 title: 'チュートリアル: 項目テンプレートを使用したカスタム動作プロジェクト項目の作成、パート 2 |Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual

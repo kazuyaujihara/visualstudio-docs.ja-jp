@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be70da79b1edc6142be1c45464097a027f859979
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413567"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983924"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Visual Studio で発行設定をインポートしてアプリケーションを Azure App Service に発行する
 
 **[発行]** ツールを使用して、発行設定をインポートしてからアプリを配置することができます。 この記事では、Azure App Service の発行設定を使用していますが、同様の手順を使用して [IIS](../deployment/tutorial-import-publish-settings-iis.md) から発行設定をインポートすることができます。 場合によっては、Visual Studio のインストールごとにサービスへの配置を手動で構成するよりも、発行設定プロファイルを使用する方が早い場合があります。
 
-これらの手順は、Visual Studio で ASP.NET、ASP.NET Core、および .NET Core アプリケーションに適用されます。 [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) アプリ用の発行設定をインポートすることもできます。 この手順は、Visual Studio 2017 バージョン 15.6 に対応しています。
+これらの手順は、Visual Studio で ASP.NET、ASP.NET Core、および .NET Core アプリケーションに適用されます。 [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) アプリ用の発行設定をインポートすることもできます。
 
 このチュートリアルでは、次の作業を行います。
 
@@ -37,9 +37,19 @@ ms.locfileid: "56413567"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
+::: moniker range=">=vs-2019"
+
+* Visual Studio 2019 をインストールし、**ASP.NET と Web 開発**ワークロードを用意する必要があります。
+
+    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 * Visual Studio 2017 をインストールし、ASP.NET と **Web 開発**のワークロードを用意する必要があります。
 
-    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+::: moniker-end
 
 * Azure App Service を作成します。 詳細な手順については、「[Visual Studio を使用して Azure に ASP.NET Core アプリを発行する](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)」を参照してください。
 

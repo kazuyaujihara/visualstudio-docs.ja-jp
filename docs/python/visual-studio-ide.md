@@ -1,7 +1,7 @@
 ---
 title: Python 開発者向けの Visual Studio の概要
 titleSuffix: ''
-ms.date: 12/14/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316614"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983508"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE へようこそ | Python
 
@@ -28,6 +28,10 @@ Visual Studio *統合開発環境* は、コードの編集、デバッグ、テ
 
 - [**ソリューション エクスプローラー**](../ide/solutions-and-projects-in-visual-studio.md) (右上) では、コード ファイルを表示、移動、および管理できます。 **ソリューション エクスプローラー**では、ファイルを[ソリューションやプロジェクト](/visualstudio/get-started/tutorial-projects-solutions)にまとめ、コードを整理できます。
     - **ソリューション エクスプローラー**と共に [**Python 環境**](managing-python-environments-in-visual-studio.md)を使用することで、コンピューター上にインストールされているさまざまな Python インタープリターを管理することができます。
+
+    ::: moniker range=">=vs-2019"
+    - Visual Studio のプロジェクト ファイルとソリューション ファイルを作成することなく、フォルダー内の Python コードを開いて実行することもできます。 詳細については、「[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」をご覧ください。
+    ::: moniker-end
 
 - 大部分の時間を費やすことになる[エディター ウィンドウ](../ide/writing-code-in-the-code-and-text-editor.md) (中央) にはファイルの内容が表示されます。 これは、[Python コードを編集](editing-python-code-in-visual-studio.md)し、コードの構造内を移動し、デバッグ セッション中にブレークポイントを設定する場所です。 Python では、コードを選択し、Ctrl + Enter キーを押して[対話型 REPL ウィンドウ](python-interactive-repl-in-visual-studio.md)でそのコードを実行することもできます。
 
@@ -83,6 +87,12 @@ Windows には、Community、Professional、Enterprise という 3 つのエデ�
    ![コード ナビゲーション コマンド](media/tour-ide-navigation-commands.png)
 
 ## <a name="powerful-features-for-python"></a>Python 用の強力な機能
+
+::: moniker range=">=vs-2019"
+- [プロジェクトを使わないでコードを実行する](quickstart-05-python-visual-studio-open-folder.md)
+
+    Visual Studio 2019 以降では、コードに対する Visual Studio プロジェクトを作成しなくても、Python コードが含まれるフォルダーを開き、IntelliSense やデバッグなどの機能を利用することができます。
+::: moniker-end
 
 - [Python 対話型 REPL](python-interactive-repl-in-visual-studio.md)
 
