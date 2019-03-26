@@ -1,7 +1,7 @@
 ---
 title: Python のオプションと設定
 description: Visual Studio での Python コードおよびプロジェクトに関連するさまざまな設定のリファレンスです。
-ms.date: 02/11/2019
+ms.date: 03/13/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
@@ -17,18 +17,23 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 04f696325da6f9f5b08f37b3d0d0f90498aacd85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a25c7aa9404cf0a10b6c55313016c30577eef504
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702019"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151168"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio での Python のオプション
 
-Python のオプションを表示するには、**[ツール]** > **[オプション]** のメニュー コマンドを使用します。**[すべての設定を表示]** が選択されていることを確認してから、**[Python ツール]** に移動します。
+Python のオプションを表示するには、**[ツール]** > **[オプション]** のメニュー コマンドを使用します。**[すべての設定を表示]** が選択されていることを確認してから、**[Python]** に移動します。
 
+::: moniker range="vs-2017"
 ![Python オプションのダイアログ、[全般] タブ](media/options-general.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Python オプションのダイアログ、[全般] タブ](media/options-general-2019.png)
+::: moniker-end
 
 また、**[テキスト エディター]** > **[Python]** > **[詳細]** タブ、および **[テキスト エディター]** グループ内の **[環境]** > **[フォントと色]** タブにも Python 固有のその他のオプションがあります。
 
@@ -43,16 +48,36 @@ Python のオプションを表示するには、**[ツール]** > **[オプシ�
 | --- | --- | --- |
 | **仮想環境の作成時に出力ウィンドウを表示する**| オン | **出力**ウィンドウが表示されないようにするには、オフにします。 |
 | **パッケージのインストールまたは削除時に出力ウィンドウを表示する** | オン | **出力**ウィンドウが表示されないようにするには、オフにします。 |
-| **常に管理者として pip を実行する** | オフ | すべての環境で、`pip install` 操作を常に昇格します。 パッケージのインストール時に、環境が *c:\Program Files* などのファイル システムの保護領域にある場合、Visual Studio で管理者特権を求めるメッセージが表示されます。 メッセージでは、その環境のみに対して `pip install` を常に昇格するように選択できます。 [[パッケージ] タブ](python-environments-window-tab-reference.md#packages-tab)を参照してください。 |
+| **環境を作成するよう通知バーを表示する** | オン | *Visual Studio 2019 のみ。* このオプションを設定した場合、*requirements.txt* ファイルまたは *environment.yml* ファイルが含まれるプロジェクトをユーザーが開くと、Visual Studio では、既定のグローバル環境を使用する代わりに、それぞれ、仮想環境または Conda 環境を作成する提案を含む情報バーが表示されます。 |
+| **パッケージをインストールするよう通知バーを表示する** | オン | *Visual Studio 2019 のみ。* このオプションを設定した場合、*requirements.txt* ファイルが含まれる (そして、既定のグローバル環境が使われていない) プロジェクトをユーザーが開くと、Visual Studio では、ファイルの要件と現在の環境にインストールされているパッケージが比較されます。 足りないパッケージがあると、それらの依存関係のインストールを求めるメッセージが表示されます。 |
+| **常に管理者として pip を実行する** | オフ | すべての環境で、`pip install` およびそれに類似するパッケージ マネージャーの操作を、常に管理特権に昇格させます。 パッケージのインストール時に、環境が *c:\Program Files* などのファイル システムの保護領域にある場合、Visual Studio で管理者特権を求めるメッセージが表示されます。 そのメッセージでは、その 1 つの環境に対してのみ install コマンドを常に昇格させることを選択できます。 [[パッケージ] タブ](python-environments-window-tab-reference.md#packages-tab)を参照してください。 |
 | **初回使用時に完了 DB を自動的に生成する** | オン | *Visual Studio 2017 バージョン 15.5 以前、IntelliSense データベースを使用している場合はそれより後のバージョンに適用されます。* このオプションを使用するコードを記述すると、ライブラリのデータベースの入力候補が優先されます。 詳細については、[IntelliSense タブ](python-environments-window-tab-reference.md#intellisense-tab)に関するページをご覧ください。 |
 | **システム全体の PYTHONPATH 変数を無視する** | オン | 既定では PYTHONPATH は無視されます。これは、Visual Studio では環境とプロジェクトに検索パスを指定するためのより直接的な手段が提供されるためです。 詳細については、「[検索パス](search-paths.md)」を参照してください。 |
 | **リンクされたファイルの追加時に検索パスを更新する** | オン | 設定時に[リンクされたファイル](managing-python-projects-in-visual-studio.md#linked-files)をプロジェクト更新ファイルの[検索パス](search-paths.md)に追加することで、IntelliSense にその入力候補データベースのリンクされたファイルのフォルダーの内容が含まれるようになります。 そのような内容を入力候補データベースから除外するには、このオプションをオフにします。 |
 | **インポートしたモジュールが見つからない場合に警告する** | オン | インポートしたモジュールを現在使用できないが、コードの操作に影響がないことがわかっている場合は、このオプションをオフにして警告を非表示にしてください。 |
 | **不整合なインデントを次の形式で報告する** | **警告** | Python インタープリターは範囲の決定のために正しいインデントを非常に重視するため、既定では Visual Studio はコード エラーを示す可能性がある不整合なインデントを検出すると警告します。 **[エラー]** に設定してさらに厳密にすると、該当するケースでプログラムが終了します。 この動作を完全に無効にするには、**[Don't]\(しない\)** を選択します。 |
-| **アンケート/ニュースを確認する** | **1 週間に 1 回** | Python 関連のアンケートやニュースの項目 (ある場合) を含む Web ページを含むウィンドウを Visual Studio が開く頻度を設定します。 オプションは **[Never]**、**[1 日 1 回]**、**[1 週間に 1 回]**、および **[Once a month]\(1 か月に 1 回\)** です。 |
+| **アンケート/ニュースを確認する** | **1 週間に 1 回** | *Visual Studio 2017 以前。* Python 関連のアンケートやニュースの項目 (ある場合) を含む Web ページを含むウィンドウを Visual Studio が開く頻度を設定します。 オプションは **[Never]**、**[1 日 1 回]**、**[1 週間に 1 回]**、および **[Once a month]\(1 か月に 1 回\)** です。 |
 | **[永続的に表示されないすべてのダイアログをリセットする]** ボタン | N/A | ダイアログ ボックスに応じて、**[Don't show me this again]\(今後このダイアログを表示しない\)** などのオプションがあります。 これらのオプションをオフにして、ダイアログを再表示するには、このボタンを使用してください。 |
 
+::: moniker range="vs-2017"
 ![Python オプションのダイアログ、[全般] タブ](media/options-general.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Python オプションのダイアログ、[全般] タブ](media/options-general-2019.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="conda-options"></a>Conda のオプション
+
+(**[ツール]** > **[オプション]** > **[Python]** > **[Conda]** タブ。)
+
+| オプション | 既定値 | 説明 |
+| --- | --- | --- |
+| **Conda 実行可能ファイル パス** | (空白) | Python ワークロードに含まれる既定の Miniconda のインストールに頼るのではなく、*conda.exe* 実行可能ファイルの正確なパスを指定します。 ここで別のパスを指定した場合、既定のインストールおよびレジストリで指定されている他のすべての conda.exe 実行可能ファイルより、その指定が優先されます。 新しいバージョンの Anaconda または Miniconda を手動でインストールする場合、または既定の 64 ビット ディストリビューションではなく 32 ビット ディストリビューションを使用する場合に、この設定を変更することがあります。 |
+
+![Python オプションのダイアログ、[言語サーバー] タブ](media/options-conda.png)
+
+::: moniker-end
 
 ## <a name="debugging-options"></a>デバッグ オプション
 
@@ -65,8 +90,15 @@ Python のオプションを表示するには、**[ツール]** > **[オプシ�
 | **デバッグ出力ウィンドウへの tee プログラム出力** | オン | 個別のコンソール ウィンドウと Visual Studio **出力**ウィンドウの両方にプログラムを表示します。 個別のコンソール ウィンドウにのみ出力を表示する場合は、このオプションをオフにします。 |
 | **終了コード 0 の SystemExit 例外を中断する** | オフ | 設定されていると、この例外でデバッガーが停止します。 オフにすると、デバッガーは中断せずに終了します。 |
 | **Python 標準ライブラリのデバッグを有効にする** | オフ | これにより、デバッグ中に標準ライブラリのソース コードに介入できるようになりますが、デバッガーが開始するまでの時間が長くなります。|
+| **関数の戻り値を表示** | オン | *Visual Studio 2019 のみ。* 関数の戻り値を **[ローカル]** ウィンドウに表示した後、デバッガーで関数の呼びしをステップ オーバーします (F10) |
+| **レガシ デバッガーを使用** | オフ | *Visual Studio 2019 のみ。* 既定で従来のデバッガーを使用するよう Visual Studio に指示します。 詳しくは、デバッグに関する記事の「[レガシ デバッガーを使用します](debugging-python-in-visual-studio.md#use-the-legacy-debugger)」をご覧ください。 |
 
+::: moniker range="vs-2017"
 ![Python オプションのダイアログ、[デバッグ] タブ](media/options-debugging.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Python オプションのダイアログ、[デバッグ] タブ](media/options-debugging-2019.png)
+::: moniker-end
 
 ## <a name="diagnostics-options"></a>診断オプション
 
@@ -92,6 +124,20 @@ Python のオプションを表示するには、**[ツール]** > **[オプシ�
 | **スタティック分析の修正候補を非表示にする** | オフ | 設定すると、式の評価によって取得される修正候補のみが表示されます。 **完了モード**の値 **[常に式を評価しない]** と組み合わせると、**対話型**ウィンドウに有用な入力候補が表示されません。 |
 
 ![Python オプションのダイアログ、[対話型ウィンドウ] タブ](media/options-interactive-windows.png)
+
+::: moniker range=">=vs-2019"
+## <a name="language-server-options"></a>言語サーバーのオプション
+
+(**[ツール]** > **[オプション]** > **[Python]** > **[言語サーバー]** タブ。)
+
+| オプション | 既定値 | 説明 |
+| --- | --- | --- |
+| **Typeshed からの入力候補を無効にする** | オフ | Visual Studio の IntelliSense では、通常、バンドルされたバージョンの Typeshed (一連の *.pyi* ファイル) を使用して、Python 2 と Python 3 の両方に対する標準ライブラリおよびサード パーティ製ライブラリの型ヒントが検索されます。 このオプションを設定すると、バンドルされた TypeShed の動作が無効になります。 |
+| **カスタム Typeshed パス** | (空白) | 設定した場合、Visual Studio では、バンドルされたバージョンではなく、このパスにある Typeshed ファイルが使われます。 **[Typeshed からの入力候補を無効にする]** が設定されている場合は無視されます。 |
+
+![Python オプションのダイアログ、[言語サーバー] タブ](media/options-language-server.png)
+
+::: moniker-end
 
 ## <a name="advanced-python-editor-options"></a>高度な Python エディター オプション
 

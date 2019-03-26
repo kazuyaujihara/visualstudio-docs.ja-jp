@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d64f104cd7d893b48fca5fdbd454fb380dafc6ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947290"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069945"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>チュートリアル: 仮想ユーザー アクティビティ チャートを使用した問題の特定
 
@@ -36,7 +36,7 @@ ms.locfileid: "55947290"
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>前のチュートリアルで作成した ColorWebApp ソリューションを開く
 
-1.  Visual Studio を起動します。
+1.  Visual Studio を開きます。
 
 2.  *LoadTest1.loadtest* を含む **ColorWebApp** ソリューションを開きます。 これは、このトピックの最初の必要条件セクションにリストされている 3 つのチュートリアルの手順を実行して作成したロード テストです。
 

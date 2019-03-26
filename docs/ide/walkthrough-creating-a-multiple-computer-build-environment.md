@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c4514ddcc312a6d3ae72f1fc9b5f573ac562b5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324222"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870508"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>チュートリアル: 複数のコンピューターを使用するビルド環境の作成
 
@@ -264,7 +264,7 @@ MSBuild 用の設定を構成するには、レジストリ エントリを作�
 |x86_amd64|x64 クロス|x86、x64|X64|
 |amd64|x64 ネイティブ|X64|X64|
 
-*vcvarsall.bat* が正常に実行された (エラー メッセージが表示されない) 場合は、次の手順をスキップして、このドキュメントの「[ビルド コンピューターのグローバル アセンブリ キャッシュ (GAC) に MSBuild アセンブリをインストールする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)」に進むことができます。
+*vcvarsall.bat* が正常に実行された (エラー メッセージが表示されない) 場合は、次の手順をスキップして、このドキュメントの「[ビルド コンピューターのグローバル アセンブリ キャッシュ (GAC) に MSBuild アセンブリをインストールする](#install-msbuild-to-gac)」に進むことができます。
 
 ### <a name="manually-set-environment-variables"></a>手動で環境変数を設定する
 
@@ -286,7 +286,7 @@ MSBuild 用の設定を構成するには、レジストリ エントリを作�
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>ビルド コンピューターのグローバル アセンブリ キャッシュ (GAC) に MSBuild アセンブリをインストールする
+## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> ビルド コンピューターのグローバル アセンブリ キャッシュ (GAC) に MSBuild アセンブリをインストールする
 
 MSBuild を使用するには、ビルド コンピューターの GAC にいくつかの追加のアセンブリをインストールする必要があります。
 
@@ -298,7 +298,7 @@ MSBuild を使用するには、ビルド コンピューターの GAC にいく
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. アセンブリを GAC にインストールするには、ビルド コンピューター上で *gacutil.exe* を探します。一般的には %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ にあります。 このフォルダーが見つからない場合は、このチュートリアルの「[ホスト コンピューターからビルド コンピューターにファイルをコピーする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)」に記載されている手順を繰り返します。
+2. アセンブリを GAC にインストールするには、ビルド コンピューター上で *gacutil.exe* を探します。一般的には %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ にあります。 このフォルダーが見つからない場合は、このチュートリアルの「[ホスト コンピューターからビルド コンピューターにファイルをコピーする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)」に記載されている手順を繰り返します。
 
      管理者権限で**コマンド プロンプト** ウィンドウを開き、ファイルごとに次のコマンドを実行します。
 
@@ -330,7 +330,7 @@ Azure Pipelines を使用して Visual Studio プロジェクトとソリュー�
 
      ここに示す手順では、このディレクトリを %Depot% と示します。
 
-2. このチュートリアルの「[ホスト コンピューターからビルド コンピューターにファイルをコピーする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)」の説明に従って、ディレクトリとファイルをコピーします。ただし、コピー先は、先ほど作成した *%Depot%* ディレクトリ内とします。 たとえば、*%ProgramFiles%\Windows Kits\8.0\bin* からのコピー先は *%Depot%\Windows Kits\8.0\bin* になります。
+2. このチュートリアルの「[ホスト コンピューターからビルド コンピューターにファイルをコピーする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)」の説明に従って、ディレクトリとファイルをコピーします。ただし、コピー先は、先ほど作成した *%Depot%* ディレクトリ内とします。 たとえば、*%ProgramFiles%\Windows Kits\8.0\bin* からのコピー先は *%Depot%\Windows Kits\8.0\bin* になります。
 
 3. *%Depot%* にファイルを貼り付けたら、次の変更を行います。
 

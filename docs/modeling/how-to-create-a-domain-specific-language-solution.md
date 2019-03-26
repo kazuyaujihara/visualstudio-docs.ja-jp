@@ -13,51 +13,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936942"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416190"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>方法: ドメイン固有言語ソリューションを作成する
 ドメイン固有言語 (DSL) を作成するには、特殊な Visual Studio ソリューションを使用します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
- この手順を開始する前に、これらのコンポーネントをまずインストールする必要があります。
 
+この手順を開始する前に、これらのコンポーネントをインストールします。
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| Visual Studio Visualization and Modeling SDK | |
+- Visual Studio
+- Visual Studio SDK (の一部としてインストールされている、 **Visual Studio 拡張機能の開発**ワークロード)
+- Modeling SDK (Visual Studio のコンポーネントとしてインストールされます)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-
 ## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションを作成します。
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションを作成するには
+1. 新たに作成して DSL ウィザードを起動**ドメイン固有言語デザイナー**プロジェクト。
 
-1. DSL のウィザードを起動します。
+   > [!NOTE]
+   > 可能であれば、プロジェクトの選択した名前が有効な Visual をする必要がありますC#識別子のため、コードを生成するために使用可能性があります。
 
-   1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
+   ::: moniker range="vs-2017"
 
-   2. **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+   ![DSL ダイアログの作成](../modeling/media/create_dsldialog.png)
 
-   3. **プロジェクトの種類**、展開、**その他のプロジェクトの種類**ノードをクリックします**Extensibility**します。
-
-   4. クリックして**ドメイン固有言語デザイナー**します。
-
-   5. **名前**ボックスに、ソリューションの名前を入力します。 **[OK]** をクリックします。
-
-       **ドメイン固有言語デザイナー ウィザード**が表示されます。
-
-      > [!NOTE]
-      >  可能であれば、コードを生成するために使用可能性がありますので、入力した名は有効な Visual c# の識別子にする必要があります。
-
-      ![DSL ダイアログの作成](../modeling/media/create_dsldialog.png)
+   ::: moniker-end
 
 2. DSL テンプレートを選択します。
 

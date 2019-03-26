@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c328b8ed549dc4afd90ccc1e02353f292f0dfc
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 371574ad6c49d4601b571c2378c57fd399e6e715
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796843"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983076"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>コマンド ライン パラメーターを使用して Visual Studio 2017 をインストールする
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>コマンド ライン パラメーターを使用して Visual Studio をインストールする
 
-コマンド プロンプトから Visual Studio 2017 をインストールする場合、さまざまなコマンド ライン パラメーターを使用してインストールを管理またはカスタマイズすることができます。 コマンド ラインから、次の操作を行うことができます。
+コマンド プロンプトから Visual Studio をインストールする場合、さまざまなコマンド ライン パラメーターを使用してインストールを管理またはカスタマイズすることができます。 コマンド ラインから、次の操作を行うことができます。
 
 - 特定のオプションをあらかじめ選択してインストールする。
 - インストール プロセスを自動化する。
@@ -45,7 +45,7 @@ ms.locfileid: "56796843"
 (`vs_enterprise.exe` は、インストールする製品エディションに適宜置き換えてください。)
 
 >[!TIP]
-> コマンドラインを使用して Visual Studio 2017 をインストールする方法の他の例については、[コマンド ライン パラメーターの例](command-line-parameter-examples.md)に関するページをご覧ください。
+> コマンド ラインを使用して Visual Studio をインストールする方法の他の例については、[コマンド ライン パラメーターの例](command-line-parameter-examples.md)に関するページをご覧ください。
 
 | **コマンド** | **説明** |
 | ----------------------- | --------------- |
@@ -54,7 +54,7 @@ ms.locfileid: "56796843"
 | `update` | インストールされている製品を更新します。 |
 | `repair` | インストールされている製品を修復します。 |
 | `uninstall` | インストールされている製品をアンインストールします。 |
-| `export` | **15.9 の新機能**:インストールの選択をインストール構成ファイルにエクスポートします。 **注**:vs_installer.exe でのみ使用できます。 |
+| `export` | **バージョン 15.9 の新機能**:インストールの選択をインストール構成ファイルにエクスポートします。 **注**:vs_installer.exe でのみ使用できます。 |
 
 ## <a name="install-options"></a>インストール オプション
 
@@ -115,7 +115,7 @@ ms.locfileid: "56796843"
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>ワークロード ID とコンポーネント ID の一覧
 
-Visual Studio 製品ごとに並べられているワークロード ID とコンポーネント ID の一覧については、「[Visual Studio 2017 のワークロード ID とコンポーネント ID](workload-and-component-ids.md)」のページを参照してください。
+Visual Studio 製品ごとに並べられているワークロード ID とコンポーネント ID の一覧については、「[Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)」のページをご覧ください。
 
 ## <a name="list-of-language-locales"></a>言語ロケールの一覧
 
@@ -155,7 +155,7 @@ Visual Studio 製品ごとに並べられているワークロード ID とコ�
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio 2017 のインストールに使用するコマンド ライン パラメーターの例](command-line-parameter-examples.md)
-- [Visual Studio 2017 のオフライン インストールを作成する](create-an-offline-installation-of-visual-studio.md)
+- [Visual Studio のインストールに使用するコマンド ライン パラメーターの例](command-line-parameter-examples.md)
+- [Visual Studio のオフライン インストールを作成する](create-an-offline-installation-of-visual-studio.md)
 - [応答ファイルで Visual Studio インストールを自動化する](automated-installation-with-response-file.md)
-- [Visual Studio 2017 のワークロード ID とコンポーネント ID](workload-and-component-ids.md)
+- [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)

@@ -11,22 +11,32 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cd9bf3cd624439e2f4846043822305743520931
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c1273c5475fe6090648b61ca351ae3b507702708
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318668"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873260"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE へようこそ | Visual Basic
 
 Visual Studio *統合開発環境* は、コードの編集、デバッグ、ビルドを行ってから、アプリを発行するために使用できるクリエイティブなランチパッドです。 統合開発環境 (IDE) は、ソフトウェア開発の多くの側面で使用できる機能を豊富に備えたプログラムです。 大部分の IDE が備える標準的なエディターおよびデバッガーに加えて、Visual Studio ではコンパイラ、コード補完ツール、グラフィック デザイナーなど、ソフトウェア開発プロセスを容易にする多くの機能を用意しています。
 
+::: moniker range="vs-2017"
+
 ![Visual Studio IDE](../media/visual-studio-ide.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+[![](media/vs-2019/ide-overview.png "Visual Studio IDE")](media/vs-2019/ide-overview.png#lightbox)
+
+::: moniker-end
 
 これはプロジェクトを開いている Visual Studio の画像です。使用頻度が高いツール ウィンドウがいくつか開いています。
 
-- [**ソリューション エクスプローラー**](../../ide/solutions-and-projects-in-visual-studio.md) (右上) では、コード ファイルを表示、移動、および管理できます。 **ソリューション エクスプローラー**では、ファイルを[ソリューションやプロジェクト](tutorial-projects-solutions.md)にまとめ、コードを整理できます。
+- [ソリューション エクスプローラー](../../ide/solutions-and-projects-in-visual-studio.md) (右上) では、コード ファイルを表示、移動、および管理できます。 **ソリューション エクスプローラー**では、ファイルを[ソリューションやプロジェクト](tutorial-projects-solutions.md)にまとめ、コードを整理できます。
 
 - 大部分の時間を費やすことになる[エディター ウィンドウ](../../ide/writing-code-in-the-code-and-text-editor.md) (中央) にはファイルの内容が表示されます。 ここでは、コードを編集したり、ボタンやテキスト ボックスを持つウィンドウなどのユーザー インターフェイスをデザインすることができます。
 
@@ -44,66 +54,160 @@ Community、Professional、Enterprise という 3 つのエディションの Vi
 
 ソフトウェアを開発する際に、生産性を高めるために Visual Studio でよく使われる機能のいくつかを以下に示します。
 
+- 波線と[クイック アクション](../../ide/quick-actions.md)
+
+   波線は波打った下線で、コード入力時にエラーや潜在的な問題を警告します。 このような視覚的な手がかりを利用することにより、ビルド中またはプロフラム実行時にエラーが検出されるのを待たなくても問題をすぐに修正することができます。 波線の上に移動すると、エラーに関する追加情報が表示されます。 電球とエラーを修正する方法 (クイック アクションとして知られている) が左余白に表示される場合もあります。
+
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio での波線](media/squiggles-error.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio での波線](media/vs-2019/squiggles-error.png)
+
+   ::: moniker-end
+
 - [リファクタリング](../../ide/refactoring-in-visual-studio.md)
 
    リファクタリングには、変数の名前をインテリジェントに変更する、1 つまたは複数のコード行を新しいメソッドに抽出する、メソッド パラメーターを並べ替える、などの操作が含まれます。
 
-   ![Visual Studio でのリファクタリング](media/refactoring-menu.png)
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio のリファクタリング メニュー](media/refactoring-menu.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio のリファクタリング メニュー](media/vs-2019/refactorings-menu.png)
+
+   ::: moniker-end
 
 - [IntelliSense](../../ide/using-intellisense.md)
 
    IntelliSense は、コードに関する情報をエディターに直接表示したり、場合によっては、ちょっとしたコードを自動的に作成したりする機能のセットを表す用語です。 エディター内のインラインに基本ドキュメントがあるようなもので、これによって、他の場所で型情報を検索する手間が省けます。 IntelliSense 機能は言語によって異なります。 詳細については、「[C# の IntelliSense](../../ide/visual-csharp-intellisense.md)」、「[Visual C++ の IntelliSense](../../ide/visual-cpp-intellisense.md)」、「[JavaScript IntelliSense](../../ide/javascript-intellisense.md)」、および [Visual Basic IntelliSense](../../ide/visual-basic-specific-intellisense.md) に関するページを参照してください。 次の図は、IntelliSense によって型のメンバー リストがどのように表示されるかを示したものです。
 
+   ::: moniker range="vs-2017"
+
    ![Visual Studio のメンバーの一覧](media/intellisense-list-members.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio のメンバーの一覧](media/vs-2019/intellisense-list-members.png)
+
+   ::: moniker-end
 
 - [クイック起動](../../ide/reference/quick-launch-environment-options-dialog-box.md)
 
    Visual Studio には非常に多くのメニュー、オプション、およびプロパティがあるため、手に負えないもののように思える場合があるかもしれません。 **クイック起動**検索ボックスは、Visual Studio で必要な情報を迅速に見つけるに役立ちます。 探しているものを表す名前の入力を開始すると、Visual Studio に結果がリストされ、目的の場所に正確に移動できます。 Visual Studio に機能を追加する必要がある場合 (追加のプログラミング言語に対するサポートを追加するなど)、**クイック起動**の結果としてワークロードまたは個々のコンポーネントをインストールする Visual Studio インストーラーが開かれます。
 
-   ![Visual Studio でのクイック起動検索ボックス](../media/quick-launch-nuget.png)
+   > [!TIP]
+   > **クイック起動**検索ボックスのショートカットとしては、**Ctrl** + **Q** キーを押します。
 
-- 波線と[クイック アクション](../../ide/quick-actions.md)
+   ::: moniker range="vs-2017"
 
-   波線は波打った下線で、コード入力時にエラーや潜在的な問題を警告します。 このような視覚的な手がかりを利用することにより、ビルド中またはプロフラム実行時にエラーが検出されるのを待たなくても問題をすぐに修正することができます。 波線の上に移動すると、エラーに関する追加情報が表示されます。 電球とエラーを修正する方法 (クイック アクションとして知られている) が左余白に表示される場合もあります。
+   ![Visual Studio 2017 でのクイック起動検索ボックス](../media/quick-launch-nuget.png)
 
-   ![Visual Studio での波線](media/squiggles-error.png)
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio 2019 でのクイック起動検索ボックス](media/vs-2019/quick-launch.png)
+
+   ::: moniker-end
+
+- [Live Share](/visualstudio/liveshare/)
+
+   アプリの種類やプログラミング言語に関係なく、リアルタイムで他のユーザーと共同で編集やデバッグを行います。 プロジェクトをすぐに安全に共有し、必要に応じて、デバッグ セッション、ターミナルのインスタンス、localhost の Web アプリ、音声通話などを共有することができます。
 
 - [呼び出し階層](../../ide/reference/call-hierarchy.md)
 
    **[呼び出し階層]** ウィンドウには、選択したメソッドを呼び出すメソッドが表示されます。 この情報は、メソッドの変更や削除について考えるとき、またはバグの追跡を試みるときに有用です。
 
+   ::: moniker range="vs-2017"
+
    ![Visual Studio での [呼び出し階層] ウィンドウ](media/call-hierarchy.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio での [呼び出し階層] ウィンドウ](media/vs-2019/call-hierarchy.png)
+
+   ::: moniker-end
 
 - [CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)
 
    CodeLens を使用すると、コードへの参照、コードへの変更、リンクされたバグ、作業項目、コード レビュー、単体テストをすべて、エディターから離れずに楽に検索できます。
 
+   ::: moniker range="vs-2017"
+
    ![Visual Studio の CodeLens](media/codelens.png)
 
-   > [!NOTE]
-   > CodeLens は Visual Studio 2017 Community エディションでは使用できません。
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio の CodeLens](media/vs-2019/codelens.png)
+
+   ::: moniker-end
 
 - [定義に移動](../../ide/go-to-and-peek-definition.md)
 
    [定義に移動] 機能では、関数または型が定義されている場所に直接移動できます。
 
-   ![Visual Studio の [定義に移動]](media/go-to-definition-menu.png)
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio 2017 での [定義に移動]](media/go-to-definition-menu.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio 2019 での [定義に移動]](media/vs-2019/go-to-definition-menu.png)
+
+   ::: moniker-end
 
 - [定義をここに表示](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    **[ピークの定義]** ウィンドウには、実際に個々のファイルを開かなくても、メソッドまたは型の定義が表示されます。
 
+   ::: moniker range="vs-2017"
+
    ![Visual Studio の [定義のピーク]](media/peek-definition.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio の [定義のピーク]](media/vs-2019/peek-definition.png)
+
+   ::: moniker-end
 
 ## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE のインストール
 
-この概要記事では、簡単なプロジェクトを作成し、Visual Studio の機能をいくつか試します。Visual Studio では、配色テーマを変更したり、コーディング補助として [IntelliSense](../../ide/using-intellisense.md) を使用したり、アプリをデバッグしてプログラム実行中の変数の値を参照したりできます。 まず、[Visual Studio 2017 をダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)してシステムにインストールします。
+このセクションでは、簡単なプロジェクトを作成し、Visual Studio でできることをいくつか試してみます。 配色テーマを変更し、コーディング支援として [IntelliSense](../../ide/using-intellisense.md) を使用し、アプリをデバッグしてプログラムの実行中に変数の値を確認します。
 
-モジュラー インストーラーでは、*ワークロード* (好みのプログラミング言語やプラットフォームで必要な機能のグループ) を選択してインストールできます。 [プログラムの作成](#create-a-program)手順に従う場合は、インストール時に必ず、**[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+::: moniker range="vs-2017"
+
+まず、[Visual Studio をダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)してシステムにインストールします。 モジュラー インストーラーでは、*ワークロード* (好みのプログラミング言語やプラットフォームで必要な機能のグループ) を選択してインストールできます。 [プログラムの作成](#create-a-program)手順に従う場合は、インストール時に必ず、**[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+まず、[Visual Studio をダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)してシステムにインストールします。 モジュラー インストーラーでは、*ワークロード* (好みのプログラミング言語やプラットフォームで必要な機能のグループ) を選択してインストールできます。 [プログラムの作成](#create-a-program)手順に従う場合は、インストール時に必ず、**[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+
+::: moniker-end
 
 ![Visual Studio インストーラーの [.NET Core クロスプラットフォームの開発] ワークロード](../media/dotnet-core-cross-platform-workload.png)
 
-Visual Studio を初めて起動する際には、Microsoft アカウント、仕事用アカウント、または学校用アカウントを使って[サインイン](../../ide/signing-in-to-visual-studio.md)することもできます。
+Visual Studio を初めて開くときは、Microsoft アカウントや、職場または学校アカウントを使用して、[サインイン](../../ide/signing-in-to-visual-studio.md)することもできます。
 
 ## <a name="customize-visual-studio"></a>Visual Studio をカスタマイズする
 
@@ -113,15 +217,41 @@ Visual Studio を初めて起動する際には、Microsoft アカウント、�
 
 **濃色**テーマに変更するには:
 
-1. メニュー バーから **[ツール]** > **[オプション]** の順に選択して、**[オプション]** ダイアログを開きます。
+::: moniker range="vs-2017"
 
-2. **[環境]**  >  **[全般]** オプションのページで、**[配色テーマ]** の選択内容を **[濃色]** に変更して **[OK]** を選択します。
+1. Visual Studio を開きます。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio を開きます。 スタート ウィンドウで、**[コードなしで続行]** を選択します。
+
+   ![Visual Studio 2019 のスタート ウィンドウ](media/vs-2019/continue-without-code.png)
+
+   IDE が開きます。
+
+::: moniker-end
+
+2. メニュー バーから **[ツール]** > **[オプション]** の順に選択して、**[オプション]** ダイアログを開きます。
+
+3. **[環境]**  >  **[全般]** オプションのページで、**[配色テーマ]** の選択内容を **[濃色]** に変更して **[OK]** を選択します。
 
    ![Visual Studio で配色テーマを濃色に変更する](media/change-color-theme.png)
 
    IDE 全体の配色テーマが**濃色**に変更されます。
 
+   ::: moniker range="vs-2017"
+
    ![ダーク テーマでの Visual Studio](../../ide/media/quickstart-personalize-dark-theme.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![ダーク テーマでの Visual Studio](media/vs-2019/dark-theme.png)
+
+   ::: moniker-end
 
 ### <a name="select-environment-settings"></a>環境設定を選択する
 
@@ -143,11 +273,15 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 簡単なプログラムを作成してみましょう。
 
-1. Visual Studio を開きます。 メニュー バーで **[ファイル]** > **[新規プロジェクト]** を選択します。
+::: moniker range="vs-2017"
+
+1. Visual Studio メニュー バーで、**[ファイル]** > **[新しいプロジェクト]** を選択します。
 
    ![メニュー バーで [ファイル]、[新しいプロジェクト] の順に選択します。](media/file-new-project-menu.png)
 
-2. **[新しいプロジェクト]** ダイアログ ボックスには複数のプロジェクト "*テンプレート*" が表示されます。 テンプレートには、特定のプロジェクト タイプに必要な基本的なファイルと設定が含まれています。 **[Visual Basic]** で **[.NET Core]** カテゴリを選択し、**[Console App (.NET Core)]\(コンソール アプリ (.NET Core)\)** テンプレートを選択します。 **[名前]** テキスト ボックスに「**HelloWorld**」と入力し、**[OK]** ボタンを選びます。
+   **[新しいプロジェクト]** ダイアログ ボックスには複数のプロジェクト "*テンプレート*" が表示されます。 テンプレートには、特定のプロジェクト タイプに必要な基本的なファイルと設定が含まれています。
+
+1. **[Visual Basic]** で **[.NET Core]** カテゴリを選択し、**[Console App (.NET Core)]\(コンソール アプリ (.NET Core)\)** テンプレートを選択します。 **[名前]** テキスト ボックスに「**HelloWorld**」と入力し、**[OK]** ボタンを選びます。
 
    ![.NET Core アプリ テンプレート](media/overview-npd.png)
 
@@ -166,15 +300,17 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
    他にもメニューやツール ウィンドウが用意されていますが、今は次に進みましょう。
 
-3. ここで、**Ctrl**+**F5** キーを押してアプリを起動します。
+1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl** + **F5 キー**を押します。
+
+   ![[デバッグ]、[デバッグなしで開始] メニューを選択](../media/overview-start-without-debugging.png)
 
    Visual Studio でアプリがビルドされ、コンソール ウィンドウが開き、メッセージ **Hello World!** が表示されます。 これで実行中のアプリができました。
 
    ![コンソール ウィンドウ](../media/overview-console-window.png)
 
-4. コンソール ウィンドウを閉じるには、キーボードで任意のキーを押します。
+1. コンソール ウィンドウを閉じるには、キーボードで任意のキーを押します。
 
-5. 何らかの追加コードをアプリに追加しましょう。 `Console.WriteLine("Hello World!")` という行の前に次の Visual Basic コードを追加します。
+1. 何らかの追加コードをアプリに追加しましょう。 `Console.WriteLine("Hello World!")` という行の前に次の Visual Basic コードを追加します。
 
    ```vb
    Console.WriteLine("What is your name?")
@@ -183,23 +319,90 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
    このコードはコンソール ウィンドウに **What is your name?** と表示し、ユーザーがテキストを入力して **Enter** キーを押すまで待機します。
 
-6. `Console.WriteLine("Hello World!")` という行を次のコードに変更します。
+1. `Console.WriteLine("Hello World!")` という行を次のコードに変更します。
 
    ```vb
    Console.WriteLine("Hello " + name + "!")
    ```
 
-7. **Ctrl**+**F5** キーを押してプログラムを再び実行します。
+1. **Ctrl**+**F5** キーを押してプログラムを再び実行します。
 
    Visual Studio によってアプリが再度ビルドされ、コンソール ウィンドウが開き、名前を入力するように求められます。
 
-8. コンソール ウィンドウに名前を入力し、**Enter** キーを押します。
+1. コンソール ウィンドウに名前を入力し、**Enter** キーを押します。
 
-   プログラムは名前を使用してあいさつします。
+   ![コンソール ウィンドウの入力](../media/overview-console-input.png)
 
-   ![コンソール ウィンドウの入力](media/overview-console-input.png)
+1. 任意のキーを押してコンソール ウィンドウを閉じ、プログラムの実行を停止します。
 
-9. 任意のキーを押してコンソール ウィンドウを閉じ、プログラムの実行を停止します。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio メニュー バーで、**[ファイル]** > **[新しいプロジェクト]** を選択します。
+
+   ![メニュー バーで [ファイル]、[新しいプロジェクト] の順に選択します。](media/vs-2019/file-new-project.png)
+
+   **[新しいプロジェクトの作成]** ウィンドウが開き、いくつかのプロジェクト "*テンプレート*" が表示されます。 テンプレートには、特定のプロジェクト タイプに必要な基本的なファイルと設定が含まれています。
+
+1. 必要なテンプレートを検索するには、検索ボックスに「**.net core コンソール**」と入力します。 使用可能なテンプレートの一覧が、入力したキーワードに基づいて自動的にフィルター処理されます。 **[言語]** ドロップダウン リストから **[Visual Basic]** を選択して、テンプレートの結果をさらにフィルター処理できます。
+
+1. **[コンソール アプリ (.NET Core)]** テンプレートを選択し、**[次へ]** を選択します。
+
+   ![Visual Studio で新しいプロジェクトを作成する](media/vs-2019/create-new-project.png)
+
+1. **[新しいプロジェクトの構成]** ウィンドウで、**[プロジェクト名]** ボックスに「**HelloWorld**」と入力し、必要に応じてプロジェクト ファイルのディレクトリの場所を変更した後、**[作成]** を選択します。
+
+   ![Visual Studio で新しいプロジェクトを構成する](media/vs-2019/configure-new-project.png)
+
+   Visual Studio によってプロジェクトが作成されます。 これは、リテラル文字列 "Hello World!" を表示する <xref:System.Console.WriteLine?displayProperty=nameWithType> メソッドを呼び出す単純な "Hello World" アプリケーションです。 コンソール (プログラムの出力) ウィンドウでに表示されます。
+
+   すぐに次のようなグラフが表示されます。
+
+   ![Visual Studio IDE](media/overview-ide-console-app.png)
+
+   アプリの Visual Basic コードは、領域の大部分を占めるエディター ウィンドウに表示されます。 キーワードや型など、コードの異なる部分を示すようにテキストが自動的に色分けされているのに注目してください。 また、コードの縦の小さな点線は互いに一致する括弧を示し、行番号は後でコードの場所を探すのに役立ちます。 小さな四角で囲まれたマイナス記号を選択するとコード ブロックが折りたたまれ、折りたたまれている場合は展開できます。 このコードのアウトライン機能を使用すると、必要のないコードを非表示にして画面を整理できます。 プロジェクト ファイルは右側の**ソリューション エクスプローラー**と呼ばれるウィンドウに一覧表示されます。
+
+   ![赤色のボックスを持つ Visual Studio IDE](media/overview-ide-console-app-red-boxes.png)
+
+   他にもメニューやツール ウィンドウが用意されていますが、今は次に進みましょう。
+
+1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl** + **F5 キー**を押します。
+
+   ![[デバッグ]、[デバッグなしで開始] メニューを選択](media/vs-2019/start-without-debugging.png)
+
+   Visual Studio でアプリがビルドされ、コンソール ウィンドウが開き、メッセージ **Hello World!** が表示されます。 これで実行中のアプリができました。
+
+   ![コンソール ウィンドウ](../media/vs-2019/overview-console-window.png)
+
+1. コンソール ウィンドウを閉じるには、キーボードで任意のキーを押します。
+
+1. 何らかの追加コードをアプリに追加しましょう。 `Console.WriteLine("Hello World!")` という行の前に次の Visual Basic コードを追加します。
+
+   ```vb
+   Console.WriteLine("What is your name?")
+   Dim name = Console.ReadLine()
+   ```
+
+   このコードはコンソール ウィンドウに **What is your name?** と表示し、ユーザーがテキストを入力して **Enter** キーを押すまで待機します。
+
+1. `Console.WriteLine("Hello World!")` という行を次のコードに変更します。
+
+   ```vb
+   Console.WriteLine("Hello " + name + "!")
+   ```
+
+1. **Ctrl**+**F5** キーを押してプログラムを再び実行します。
+
+   Visual Studio によってアプリが再度ビルドされ、コンソール ウィンドウが開き、名前を入力するように求められます。
+
+1. コンソール ウィンドウに名前を入力し、**Enter** キーを押します。
+
+   ![コンソール ウィンドウ](../media/vs-2019/overview-console-input.png)
+
+1. 任意のキーを押してコンソール ウィンドウを閉じ、プログラムの実行を停止します。
+
+::: moniker-end
 
 ## <a name="use-refactoring-and-intellisense"></a>リファクタリングと IntelliSense の使用
 
@@ -252,9 +455,21 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 9. **[インラインの一時変数]** をクリックしてコードをリファクタリングします。
 
+::: moniker range="vs-2017"
+
 10. **Ctrl** + **F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
 
-    ![プログラムの出力が表示されたコンソール ウィンドウ](media/overview-console-final.png)
+    ![プログラムの出力が表示されたコンソール ウィンドウ](../media/overview-console-final.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+10. **Ctrl** + **F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
+
+    ![プログラムの出力が表示されたコンソール ウィンドウ](../media/vs-2019/overview-console-final.png)
+
+::: moniker-end
 
 ## <a name="debug-code"></a>コードのデバッグ
 

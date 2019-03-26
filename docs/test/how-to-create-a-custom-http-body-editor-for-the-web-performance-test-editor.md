@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbcf0ec7aa9e7d0b22458006da6f18aba4de8162
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936201"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069893"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>方法: Web パフォーマンス テスト エディターのカスタム HTTP ボディ エディターを作成する
 
@@ -31,9 +31,7 @@ ms.locfileid: "55936201"
 
 ## <a name="create-a-windows-control-library-project"></a>Windows コントロール ライブラリ プロジェクトの作成
 
-### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Windows コントロール ライブラリ プロジェクトを使用して、ユーザー コントロールを作成します。
-
-1. Visual Studio の **[ファイル]** メニューで、**[新規作成]**、**[プロジェクト]** の順に選びます。
+1. Visual Studio の **[ファイル]** メニューで、**[新規作成]** > **[プロジェクト]** の順に選択します。
 
     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
@@ -137,27 +135,27 @@ private MessageEditorControl messageEditorControl
 
  文字列ボディの編集が完了し、ユーザーがプラグイン ダイアログ ボックスで **[OK]** をクリックすると、Web テスト パフォーマンス エディターでは <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> が呼び出されて、編集済みのテキストが文字列として取得され、要求の**文字列ボディ**が更新されます。
 
-### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>クラスを作成して IStringHttpBodyEditorPlugin インターフェイス コードを実装するには
+### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>クラスを作成して IStringHttpBodyEditorPlugin インターフェイスを実装する
 
-1.  **ソリューション エクスプローラー**で、Windows フォーム コントロール ライブラリ プロジェクトを右クリックし、**[新しい項目の追加]** を選択します。
+1. **ソリューション エクスプローラー**で、Windows フォーム コントロール ライブラリ プロジェクトを右クリックし、**[新しい項目の追加]** を選択します。
 
-2.  **[新しい項目の追加]** ダイアログ ボックスが表示されます。
+   **[新しい項目の追加]** ダイアログ ボックスが表示されます。
 
-3.  **[クラス]** を選択します。
+2. **[クラス]** を選択します。
 
-4.  **[名前]** テキスト ボックスに、クラスのわかりやすい名前 (`MessageEditorPlugins` など) を入力します。
+3. **[名前]** テキスト ボックスに、クラスのわかりやすい名前 (`MessageEditorPlugins` など) を入力します。
 
-5.  **[追加]** をクリックします。
+4. **[追加]** をクリックします。
 
-     Class1 がプロジェクトに追加され、コード エディターに表示されます。
+   Class1 がプロジェクトに追加され、コード エディターに表示されます。
 
-6.  コード エディターで、次の using ステートメントを追加します。
+5. コード エディターで、次の `using` ステートメントを追加します。
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     ```
 
-7.  <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> インターフェイスから XmlMessageEditor クラスをインスタンス化し、必要なメソッドを実装するために、次のコードを記述またはコピーします。
+6. 次のコードを貼り付けて、インターフェイスを実装します。
 
     ```csharp
     /// <summary>
@@ -185,7 +183,7 @@ private MessageEditorControl messageEditorControl
         /// plugin dialog which provides OK and Cancel buttons.
         /// </summary>
         /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-        /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+        /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
         /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
         public object CreateEditor(string contentType, string initialValue)
         {
@@ -252,11 +250,11 @@ messageEditorControl インスタンスは、<xref:Microsoft.VisualStudio.TestTo
             }
 
             /// <summary>
-            /// Create a UserControl to edit the specified bytes.  This control will be hosted in the
+            /// Create a UserControl to edit the specified bytes. This control will be hosted in the
             /// plugin dialog which provides OK and Cancel buttons.
             /// </summary>
             /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-            /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+            /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
             /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
             public object CreateEditor(string contentType, byte[] initialValue)
             {
@@ -280,36 +278,32 @@ messageEditorControl インスタンスは、<xref:Microsoft.VisualStudio.TestTo
 
 ## <a name="build-and-deploy-the-plug-ins"></a>プラグインのビルドおよび配置
 
-### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>IStringHttpBodyEditorPlugin および IBinaryHttpBodyEditorPlugin について生成される dll をビルドおよび配置するには
+1. **[ビルド]** メニューの **[\<Windows フォーム コントロール ライブラリ プロジェクト名> のビルド]** を選びます。
 
-1.  **[ビルド]** メニューの **[\<Windows フォーム コントロール ライブラリ プロジェクト名> のビルド]** を選びます。
+2. Visual Studio のすべてのインスタンスを閉じます。
 
-2.  Visual Studio のすべてのインスタンスを閉じます。
+   > [!NOTE]
+   > Visual Studio を閉じて、*.dll* ファイルがコピーしようとする前にロックされていないことを確認します。
 
-    > [!NOTE]
-    > Visual Studio を閉じて、*.dll* ファイルがコピーしようとする前にロックされていないことを確認します。
+3. プロジェクトの *bin\debug* フォルダーの生成された *.dll* ファイル (*MessageEditors.dll* など) を *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins* にコピーします。
 
-3.  プロジェクトの *bin\debug* フォルダーの生成された *.dll* ファイル (*MessageEditors.dll* など) を *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins* にコピーします。
+4. Visual Studio を開きます。
 
-4.  Visual Studio を開きます。
-
-     *.dll* が Visual Studio に登録されるようになりました。
+   *.dll* が Visual Studio に登録されるようになりました。
 
 ## <a name="verify-the-plug-ins-using-a-web-performance-test"></a>Web パフォーマンス テストによるプラグインの検証
 
-### <a name="to-test-your-plug-ins"></a>プラグインをテストするには
+1. テスト プロジェクトを作成します。
 
-1.  テスト プロジェクトを作成します。
+2. Web パフォーマンス テストを作成し、ブラウザーで Web サービスへの URL を入力します。
 
-2.  Web パフォーマンス テストを作成し、ブラウザーで Web サービスへの URL を入力します。
+3. 記録が終了したら、Web パフォーマンス テスト エディターで Web サービスの要求を展開し、**[文字列ボディ]** または **[バイナリ ボディ]** を選択します。
 
-3.  記録が終了したら、Web パフォーマンス テスト エディターで Web サービスの要求を展開し、**[文字列ボディ]** または **[バイナリ ボディ]** を選択します。
+4. **[プロパティ]** ウィンドウで、[文字列ボディ] または [バイナリ ボディ] を選択し、省略記号 **[...]** を選択します。
 
-4.  プロパティ ウィンドウで、[文字列ボディ] または [バイナリ ボディ] を選択し、省略記号 **(...)** をクリックします。
+   **[HTTP ボディ データの編集]** ダイアログ ボックスが表示されます。
 
-     **[HTTP ボディ データの編集]** ダイアログ ボックスが表示されます。
-
-5.  ここでデータを編集できます。**[OK]** をクリックします。 これにより、該当する GetNewValue メソッドを起動して、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> のコンテンツを更新できます。
+5. ここでデータを編集できます。**[OK]** をクリックします。 これにより、該当する GetNewValue メソッドを起動して、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> のコンテンツを更新できます。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
 

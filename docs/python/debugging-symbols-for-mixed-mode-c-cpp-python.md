@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951344"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869364"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Python インタープリターのデバッグ シンボルをインストールする
 
@@ -54,7 +54,7 @@ Visual Studio でシンボルが必要なとき、通常は混合モードのデ
 
     ![混合モードのデバッグでのシンボルのオプション](media/mixed-mode-debugging-symbols.png)
 
-1. Visual Studio のデバッグ セッション中に、Python インタープリターのソース ファイルの場所を入力するように求められることもあります。 ソース ファイルを ([python.org/downloads](https://www.python.org/downloads) などから) ダウンロードした場合は、その場所を設定することもできます。
+1. Visual Studio のデバッグ セッション中に、Python インタープリターのソース ファイルの場所を入力するように求められることもあります。 ソース ファイルを ([python.org/downloads/](https://www.python.org/downloads/) などから) ダウンロードした場合は、その場所を設定することもできます。
 
 > [!Note]
 > ダイアログに表示されているシンボルのキャッシュ機能は、オンライン ソースから取得したシンボルのローカル キャッシュを作成するときに使用します。 Python インタープリターのシンボルの場合、既にローカルに存在するので、これらの機能は必要ありません。 いずれの場合も、詳細については、「[Specify Symbols and Source Files in the Visual Studio Debugger](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)」 (Visual Studio デバッガーでシンボルとソース ファイルを指定する) を参照してください。

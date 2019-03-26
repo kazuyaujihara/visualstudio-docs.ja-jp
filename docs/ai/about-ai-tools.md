@@ -8,15 +8,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 249db51cf178d8f1c266b9421fbfbdfbc95ef4c4
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 39d562509a62874a32e8442e18dece8e3c26fbfc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842836"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155590"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
@@ -25,7 +24,7 @@ Visual Studio Tools for AI は、ディープ ラーニング/AI ソリューシ
 [Microsoft Cognitive Toolkit (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit)、[Google TensorFlow](https://www.tensorflow.org)、または他のディープ ラーニング フレームワークを使って、すぐにディープ ラーニングを始めてください。
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>ディープ ラーニング モデルと AI ソリューションを開発、デバッグ、展開する
-Visual Studio の生産性機能を使って今日の AI 革新を高速化します。 組み込みコード エディターの構文強調表示、IntelliSense、テキスト自動書式設定などの機能を使います。 ローカル変数とモデルに対してステップ実行デバッグを使い、ローカル環境でディープ ラーニング アプリケーションを対話的にテストできます。
+Visual Studio の生産性機能を使って今日の AI 革新を高速化します。 組み込みコード エディターの構文強調表示、IntelliSense、テキスト自動書式設定などの機能を使用します。 ローカル変数とモデルに対してステップ実行デバッグを使い、ローカル環境でディープ ラーニング アプリケーションを対話的にテストできます。
 
 ![ディープ ラーニング IDE](media/about/ide.png)
 

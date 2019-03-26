@@ -2,7 +2,6 @@
 title: Microsoft スクリプト インターフェイス | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f98e60a82735ae561edf404763e0700f71b3a3d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905364"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154427"
 ---
 # <a name="windows-script-interfaces"></a>Windows スクリプト インターフェイス
 
@@ -37,7 +36,7 @@ Windows スクリプト ドキュメントは、次のセクションに分か�
 
 ## <a name="windows-script-background"></a>Windows スクリプトの背景
 
-Windows スクリプト インターフェイスは、Windows スクリプト ホストと Windows スクリプト エンジンという 2 つのカテゴリに分類されます。 ホストは、スクリプト エンジンを作成し、スクリプトを実行するためにエンジンで呼び出します。 Windows スクリプト ホストの例は次のとおりです。
+Windows スクリプト インターフェイスは、次の 2 つのカテゴリに分類されます: Windows スクリプト ホストと Windows スクリプト エンジン。 ホストは、スクリプト エンジンを作成し、スクリプトを実行するためにエンジンで呼び出します。 Windows スクリプト ホストの例は次のとおりです。
 
 - Microsoft Internet Explorer
 

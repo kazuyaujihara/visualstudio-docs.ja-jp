@@ -10,19 +10,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8888dfeef0a519aed66fc3c66be8c5bf6d215b02
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 150621514f9153b1e9d67f8e9c85a00275c27b15
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955220"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416111"
 ---
 # <a name="extend-dependency-diagrams"></a>依存関係図の拡張
+
 作成し、依存関係の図を更新し、Visual Studio での依存関係図と照らし合わせてプログラム コードの構造を検証するコードを記述することができます。 図のショートカット (コンテキスト) メニューに表示するコマンドを追加し、ドラッグ アンド ドロップ ジェスチャをカスタマイズし、テキスト テンプレートからレイヤー モデルにアクセスすることができます。 これらの拡張機能を VSIX (Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布することができます。
 
  依存関係図の詳細についてを参照してください。
 
--   [依存関係図:参照](../modeling/layer-diagrams-reference.md)
+-   [依存関係図:リファレンス](../modeling/layer-diagrams-reference.md)
 
 -   [依存関係図:ガイドライン](../modeling/layer-diagrams-guidelines.md)
 
@@ -31,7 +32,8 @@ ms.locfileid: "55955220"
 -   [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)
 
 ##  <a name="prereqs"></a> 要件
- レイヤー拡張機能を開発するコンピューターに以下の項目がインストールされている必要があります。
+
+レイヤー拡張機能を開発するコンピューターに以下の項目がインストールされている必要があります。
 
 -   Visual Studio
 
@@ -39,13 +41,11 @@ ms.locfileid: "55955220"
 
 -   Modeling SDK for Visual Studio
 
-
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+適切なバージョンの Visual Studio をレイヤー拡張機能を実行するコンピューターにインストールしておく必要があります。
 
- 適切なバージョンの Visual Studio をレイヤー拡張機能を実行するコンピューターにインストールしておく必要があります。 詳細については、次を参照してください。[レイヤー モデル拡張機能をデプロイ](../modeling/deploy-a-layer-model-extension.md)します。
-
- 依存関係図をサポートする Visual Studio のバージョンを確認するを参照してください。[アーキテクチャとモデリング ツールのバージョンのサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)します。
+依存関係図をサポートする Visual Studio のバージョンを確認するを参照してください。[アーキテクチャとモデリング ツールのバージョンのサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)します。
 
 ## <a name="in-this-section"></a>このセクションの内容
  [依存関係図にコマンドおよびジェスチャを追加する](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
@@ -54,15 +54,9 @@ ms.locfileid: "55955220"
 
  [依存関係図へのカスタム プロパティの追加](../modeling/add-custom-properties-to-layer-diagrams.md)
 
- [プログラム コードでレイヤー モデル内を移動し、レイヤー モデルを更新する](../modeling/navigate-and-update-layer-models-in-program-code.md)
-
- [レイヤー モデル拡張機能の配置](../modeling/deploy-a-layer-model-extension.md)
-
- [依存関係図の拡張機能のトラブルシューティング](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
-
 ## <a name="see-also"></a>関連項目
 
-- [依存関係図:参照](../modeling/layer-diagrams-reference.md)
+- [依存関係図:リファレンス](../modeling/layer-diagrams-reference.md)
 - [依存関係図:ガイドライン](../modeling/layer-diagrams-guidelines.md)
 - [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)
 - [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)

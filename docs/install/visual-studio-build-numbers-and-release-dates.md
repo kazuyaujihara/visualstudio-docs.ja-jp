@@ -6,20 +6,22 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/07/2019
+ms.date: 03/13/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: ddba89da33d06b740978fe2972863a2c3177496f
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: d5c5a21c83329d8c528421c2336755a5d0621be9
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567410"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194982"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio のビルド番号とリリース日
+
+::: moniker range="vs-2017"
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
@@ -27,6 +29,8 @@ ms.locfileid: "57567410"
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.9 | 解放 | 2019 年 3 月 12 日 | 15.9.28307.518 |
+| 15.0.21 | 解放 | 2019 年 3 月 12 日 | 15.0.26228.76 |
 | 15.9.8 | 解放 | 2019 年 3 月 5 日 | 15.9.28307.481 |
 | 15.9.7 | 解放 | 2019 年 2 月 12 日 | 15.9.28307.423 |
 | 15.0.21 | 解放 | 2019 年 2 月 12 日 | 15.0.26228.73 |
@@ -172,12 +176,21 @@ ms.locfileid: "57567410"
 | 15.1 Preview 1 | [プレビュー] | 2017 年 3 月 7 日 | 15.0.26304.0 |
 | 15.0.0 | 解放 | 2017 年 3 月 7 日 | 15.0.26228.4 |
 
+> [!NOTE]
+> 次のバージョンの Visual Studio のビルド番号とリリース日について詳しくは、[Visual Studio 2019 のビルド番号とリリース日](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019)に関するページをご覧ください。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
 ## <a name="visual-studio-2019"></a>Visual Studio 2019
 
 次の表は、Visual Studio 2019 の現在までのビルド番号およびリリース日のリストです。
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | リリース候補 2 (RC.2) | 2019 年 3 月 12 日 | 16.0.28711.60 |
+| 16.0.0 | Preview 4.2 | 2019 年 3 月 12 日 | 16.0.28711.60 |
 | 16.0.0 | リリース候補 1 Svc1 (RC.1 Svc1) | 2019 年 3 月 6 日 | 16.0.28705.295 |
 | 16.0.0 | プレビュー 4.1 Svc1 | 2019 年 3 月 6 日 | 16.0.28705.295 |
 | 16.0.0 | リリース候補 1 (RC.1) | 2019 年 3 月 5 日 | 16.0.28701.123 |
@@ -191,11 +204,13 @@ ms.locfileid: "57567410"
 | 16.0.0 | プレビュー 1.1 | 2018 年 12 月 10 日 | 16.0.28408.50 |
 | 16.0.0 | Preview 1 | 2018 年 12 月 4 日 | 16.0.28329.73 |
 
+::: moniker-end
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio のリリースのタイミング](/visualstudio/productinfo/release-rhythm)
-* [Visual Studio 2017 管理者ガイド](visual-studio-administrator-guide.md)
-* [コマンド ライン パラメーターを使用して Visual Studio 2017 をインストールする](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio のリリースのタイミング](/visualstudio/productinfo/release-rhythm/)
+* [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)
+* [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio インスタンスの検出および管理用のツール](tools-for-managing-visual-studio-instances.md)

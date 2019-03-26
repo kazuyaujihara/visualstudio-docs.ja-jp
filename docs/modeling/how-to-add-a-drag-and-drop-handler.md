@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 49eed907e38c79a98e5604a96380efa5d7281c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867749"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415669"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>方法: ドラッグ アンド ドロップ ハンドラーを追加する
 
@@ -128,7 +128,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
     -   diagramEventArgs.Data.GetDataFormats() - は、ドラッグされたオブジェクトをデコードする形式を示します。 たとえば、ユーザーがデスクトップからファイルをドラッグした場合、使用可能な形式にはファイル名 ("`FileNameW`") が含まれます。
 
-    -   `diagramEventArgs.Data.GetData(format)` -指定された形式でドラッグされたオブジェクトをデコードします。 オブジェクトを適切な型にキャストします。 次に例を示します。
+    -   `diagramEventArgs.Data.GetData(format)` -指定された形式でドラッグされたオブジェクトをデコードします。 オブジェクトを適切な型にキャストします。 例:
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -158,13 +158,13 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>モデル バス用の DSL プロジェクトを準備するには
 
-1.  ソース DSL が Visual Studio モデル バスによりアクセスできます。
+ソース DSL が Visual Studio モデル バスによりアクセスできます。
 
-    1.  Visual Studio モデル バス拡張機能をまだインストールしていない場合はダウンロードしてインストールします。 詳細については、次を参照してください。 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)します。
+1. Visual Studio モデル バス拡張機能をまだインストールしていない場合はダウンロードしてインストールします。 詳細については、次を参照してください。 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)します。
 
-    2.  DSL デザイナーでソース DSL の DSL 定義ファイルを開きます。 デザイン サーフェイスを右クリックし、をクリックし、 **Modelbus の有効化**します。 ダイアログ ボックスで、オプションの片方または両方を選択します。  **[OK]** をクリックします。 新しいプロジェクト "ModelBus" が DSL ソリューションに追加されます。
+2. DSL デザイナーでソース DSL の DSL 定義ファイルを開きます。 デザイン サーフェイスを右クリックし、をクリックし、 **Modelbus の有効化**します。 ダイアログ ボックスで、オプションの片方または両方を選択します。  **[OK]** をクリックします。 新しいプロジェクト "ModelBus" が DSL ソリューションに追加されます。
 
-    3.  クリックして**すべてのテンプレートの変換**ソリューションをリビルドします。
+3. クリックして**すべてのテンプレートの変換**ソリューションをリビルドします。
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>ソース DSL からオブジェクトを送信するには
 

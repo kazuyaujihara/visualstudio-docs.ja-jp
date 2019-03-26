@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d495f4f64e56981637680f8333936647fe70c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941050"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867856"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens によるコード変更とその他の履歴の検索
 
 CodeLens では、エディターを離れずにコードに関する情報を検索できるため、自分の作業に専念できます。 コードの参照、コードへの変更、リンクされたバグ、作業項目、コード レビュー、単体テストを検索できます。
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
 > CodeLens は、Visual Studio Enterprise エディションと Visual Studio Professional エディションでのみ使用できます。 Visual Studio Community エディションでは使用できません。
+
+::: moniker-end
 
 コードの各部分がソリューションのどこでどのように使用されているかをご覧ください。
 
@@ -62,7 +66,7 @@ C# コードまたは Visual Basic コードでの参照を検索することが
 
 要件:
 
-- Visual Studio Enterprise または Visual Studio Professional
+- Visual Studio 2019 (または、Visual Studio 2017 Enterprise/Professional Edition)
 
 - Team Foundation Server 2013 以降、Azure DevOps Services、または Git
 

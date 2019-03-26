@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 260510c918bc38a2555ff04e711c4a5c728066dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637790"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868212"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>チュートリアル: プロファイラー API の使用
 
@@ -30,7 +30,12 @@ ms.locfileid: "56637790"
 
  Visual Studio プロファイラーでは、データの収集を制限できます。 このチュートリアルでは、プロファイラー API を使用してデータの収集を制限する方法の例を説明します。 Visual Studio プロファイラーには、アプリケーションからのデータ収集を制御する API があります。
 
+ ::: moniker range=">=vs-2019"
+ ネイティブ コード用の Visual Studio プロファイラー API は *VSPerf.dll* にあります。 ヘッダー ファイル *VSPerf.h* とインポート ライブラリ *VSPerf.lib* は、*Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* ディレクトリにあります。  64 ビット アプリの場合、フォルダーは *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK* です
+ ::: moniker-end
+ ::: moniker range="vs-2017"
  ネイティブ コード用の Visual Studio プロファイラー API は *VSPerf.dll* にあります。 ヘッダー ファイル *VSPerf.h* とインポート ライブラリ *VSPerf.lib* は、*Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* ディレクトリにあります。  64 ビット アプリの場合、フォルダーは *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* です
+ ::: moniker-end
 
  マネージド コード用のプロファイラー API は、*Microsoft.VisualStudio.Profiler.dll* にあります。 この DLL は、*Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* ディレクトリにあります。 64 ビット アプリの場合、フォルダーは *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64* です。 詳細については、「<xref:Microsoft.VisualStudio.Profiler>」を参照してください。
 

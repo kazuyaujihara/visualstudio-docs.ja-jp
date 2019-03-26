@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce001f4ec7b036581a99e4feb8693b7220470d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487597c160a294c935f3f7670410e82927a86210
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911898"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194646"
 ---
 # <a name="learn-about-projects-and-solutions"></a>プロジェクトとソリューションについて理解する
 
@@ -35,9 +35,11 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 空のソリューションを作成するところから説明を始めます。 Visual Studio に慣れてきても、自分が空のソリューションを頻繁に作成していることにはほとんど気づかないでしょう。 Visual Studio で新しいプロジェクトを作成するとき、ソリューションがまだ開いていなければ、プロジェクトを格納するためのソリューションが自動的に作成されます。
 
+::: moniker range="vs-2017"
+
 1. Visual Studio を開きます。
 
-1. メニュー バー (**[ファイル]** や **[編集]** などのメニューの行) で、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. メニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
    **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
@@ -46,6 +48,22 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
    ![Visual Studio での空のソリューション テンプレート](media/tutorial-projects-new-solution.png)
 
    **[スタート ページ]** が閉じて、Visual Studio ウィンドウの右側にある**ソリューション エクスプローラー**にソリューションが表示されます。 多くの場合、**ソリューション エクスプローラー**を使用して、プロジェクトの内容を参照することになります。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio を開きます。
+
+2. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+
+3. **[新しいプロジェクトの作成]** ページで、検索ボックスに「**空のソリューション**」と入力し、**[空のソリューション]** テンプレートを選択して、**[次へ]** を選択します。
+
+4. ソリューションに **QuickSolution** という名前を設定して、**[作成]** を選択します。
+
+   Visual Studio ウィンドウの右側にある**ソリューション エクスプローラー**にソリューションが表示されます。 多くの場合、**ソリューション エクスプローラー**を使用して、プロジェクトの内容を参照することになります。
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>プロジェクトを追加する
 
@@ -146,7 +164,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
    End Class
    ```
 
-   コードの一部分の下に赤色の "波線" が表示されます。 テスト プロジェクトを、**QuickDate** プロジェクトに対する[フレンド アセンブリ](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies)にすることで、このエラーを修正します。
+   コードの一部分の下に赤色の "波線" が表示されます。 テスト プロジェクトを、**QuickDate** プロジェクトに対する[フレンド アセンブリ](/dotnet/standard/assembly/friend-assemblies)にすることで、このエラーを修正します。
 
 1. **QuickDate** プロジェクトに戻り、*Calendar.cs* ファイルをまだ開いていない場合は開きます。さらに、次の [using ステートメント](/dotnet/csharp/language-reference/keywords/using-statement)と <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性をファイルの先頭に追加して、テスト プロジェクトのエラーを解決します。
 

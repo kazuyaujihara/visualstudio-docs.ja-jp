@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07666efb673702e20c3c5c4a9b279de729e4c838
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cad2d1a83ed60cde4f3a410f8183e5ee6074321c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605407"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983911"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Visual Studio で発行設定をインポートしてアプリケーションを IIS に発行する
 
 **[発行]** ツールを使用して、発行設定をインポートしてからアプリを配置することができます。 この記事では、IIS の発行設定を使用していますが、同様の手順を使用して [Azure App Service](../deployment/tutorial-import-publish-settings-azure.md) の発行設定をインポートすることができます。 場合によっては、Visual Studio のインストールごとに IIS への配置を手動で構成するよりも、発行設定プロファイルを使用する方が早い場合があります。
 
-これらの手順は、Visual Studio で ASP.NET、ASP.NET Core、および .NET Core アプリケーションに適用されます。 この手順は、Visual Studio 2017 バージョン 15.6 に対応しています。
+これらの手順は、Visual Studio で ASP.NET、ASP.NET Core、および .NET Core アプリケーションに適用されます。
 
 このチュートリアルでは、次の作業を行います。
 
@@ -38,9 +38,19 @@ ms.locfileid: "56605407"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* 開発用のコンピューターに Visual Studio 2017 をインストールし、**ASP.NET と Web 開発**ワークロードを用意しておきます。
+::: moniker range=">=vs-2019"
 
-    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  ページに移動し、無料試用版をインストールしてください。
+* Visual Studio 2019 をインストールし、**ASP.NET と Web 開発**ワークロードを用意する必要があります。
+
+    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+* Visual Studio 2017 をインストールし、ASP.NET と **Web 開発**のワークロードを用意する必要があります。
+
+    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+::: moniker-end
 
 * サーバーでは Windows Server 2012 か Windows Server 2016 を実行している必要があります。また、発行設定ファイル (*\*.publishsettings*) を生成するには [IIS Web Server ロール](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)を正しく設定している必要があります。 ASP.NET 4.5 または ASP.NET Core もサーバーにインストールする必要があります。 ASP.NET 4.5 を設定する方法については、「[IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)」 (ASP.NET 3.5 および ASP.NET 4.5 を使用する IIS 8.0) を参照してください。 ASP.NET Core を設定する方法については、「[IIS を使用した Windows での ASP.NET Core のホスト](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)」を参照してください。
 

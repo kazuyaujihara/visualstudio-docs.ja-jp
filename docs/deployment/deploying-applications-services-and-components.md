@@ -1,4 +1,4 @@
-﻿---
+---
 title: 配置機能のツアー
 description: Visual Studio からアプリを配置する際の選択肢について説明します。
 ms.custom: mvc
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742457"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983859"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
@@ -91,7 +91,7 @@ Visual Studio から、Microsoft Store に配置するためのアプリ パッ�
 
 - **UWP**:アプリをパッケージ化し、メニュー項目を使用してそれを配置できます。 詳細については、[Visual Studio を使用して UWP アプリをパッケージ化する](/windows/uwp/packaging/packaging-uwp-apps)方法に関するページをご覧ください。
 
-    ![アプリ パッケージの作成](../deployment/media/feature-tour-create-app-package.jpg)
+    ![アプリケーション パッケージの作成](../deployment/media/feature-tour-create-app-package.jpg)
 
 - **Windows デスクトップ**:Visual Studio 2017 バージョン 15.4 以降では、デスクトップ ブリッジを使用して Microsoft Store に配置できます。 これを行うには、まず Windows アプリケーション パッケージ プロジェクトを作成します。 詳細については、「[Package a desktop app for Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)」(Microsoft ストアのデスクトップ アプリをパッケージ化する (デスクトップ ブリッジ)) を参照してください。
 
@@ -107,9 +107,9 @@ Visual Studio から、Microsoft Store に配置するためのアプリ パッ�
 
 - MSI ベースのインストーラー パッケージを [WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) を使用して作成できます。 これはコマンドライン ツールセットです。
 
-- MSI または EXE インストーラー パッケージは Flexera Software の [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) を使用して作成できます。 InstallShield を Visual Studio 2017 と共に使用することも場合によっては可能です (Community Edition はサポートされていません)。 InstallShield Limited Edition は現在 Visual Studio に付属しておらず、Visual Studio 2017 でサポートされていません。今後の可用性については、[Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) にお問い合わせください。
+- MSI または EXE インストーラー パッケージは Flexera Software の [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) を使用して作成できます。 InstallShield は Visual Studio 2017 以降のバージョンで使用できます (Community Edition はサポートされていません)。 InstallShield Limited Edition は Visual Studio に含まれなくなっており、Visual Studio 2017 以降のバージョンではサポートされていないことに注意してください。今後の使用可能性については、[Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) にお問い合わせください。
 
-- MSI または EXE インストーラー パッケージはセットアップ プロジェクト (vdproj) を使用して作成できます。 このオプションを使用するには、[Visual Studio 2017 Installer Projects 拡張機能](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)をインストールします。
+- MSI または EXE インストーラー パッケージはセットアップ プロジェクト (vdproj) を使用して作成できます。 このオプションを使用するには、[Visual Studio Installer Projects 拡張機能](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)をインストールします。
 
 - ブートストラップと呼ばれる汎用インストーラーを構成する方法でデスクトップ アプリケーションの必須コンポーネントをインストールすることもできます。 詳細については、「[Application Deployment Prerequisites](../deployment/application-deployment-prerequisites.md)」 (アプリケーション配置の必要条件) を参照してください。
 
@@ -123,11 +123,11 @@ Azure Pipelines を使用し、アプリの継続的配置を有効にできま�
 
 ## <a name="deployment-for-other-app-types"></a>他の種類のアプリを配置する
 
-| アプリの種類 | 配置シナリオ | リンク |
+| アプリの種類 | 配置シナリオ | Link |
 | --- | --- | --- |
 | **Office アプリ** | Visual Studio から Office 用のアドインを発行できます。 | [Office アドインを配置し、発行する](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF または OData サービス** | Web サーバーに配置した WCF RIA サービスを他のアプリケーションで使用できます。 | [WCF Data Services の開発と配置](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch は現在 Visual Studio 2017 ではサポートされていませんが、引き続き Visual Studio 2015 以前から配置できます。 | [LightSwitch アプリケーションの配置](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **LightSwitch** | LightSwitch は、Visual Studio 2017 以降ではサポートされていませんが、Visual Studio 2015 以前からは引き続き配置できます。 | [LightSwitch アプリケーションの配置](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>次の手順
 

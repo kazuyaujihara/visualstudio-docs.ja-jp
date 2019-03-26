@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0808708360db6aa35cb20ce42c75fea04f5131b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737014"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983976"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio を最新リリースに更新する
 
@@ -82,7 +82,7 @@ IDE 内から直接使用しやすくするために、インストールと更�
 
 ### <a name="use-the-visual-studio-installer"></a>Visual Studio インストーラーを使用する
 
-Visual Studio 2017 の以前のバージョンと同様に、Visual Studio インストーラーを使用して更新プログラムをインストールすることもできます。
+Visual Studio の以前のバージョンと同様に、Visual Studio インストーラーを使用して更新プログラムをインストールすることもできます。
 
 1. 作業内容を保存します。
 
@@ -150,14 +150,14 @@ Visual Studio は、Visual Studio 自体またはいずれかのコンポーネ�
 
    **[更新]** ボタンを選択して更新プログラムをインストールします。
 
-     ![Visual Studio インストーラーを使用して Visual Studio 2017 を更新する](media/update-visual-studio.png "Visual Studio インストーラーを使用して Visual Studio 2017 を更新する")
+     ![Visual Studio インストーラーを使用して Visual Studio 2017 を更新する](media/update-visual-studio.png "Visual Studio インストーラーを使用して Visual Studio を更新する")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 の変更](modify-visual-studio.md)
-* [Visual Studio 2017 のアンインストール](uninstall-visual-studio.md)
+* [Visual Studio の変更](modify-visual-studio.md)
+* [Visual Studio のアンインストール](uninstall-visual-studio.md)
 * [Visual Studio for Mac の更新](/visualstudio/mac/update)
 
 ::: moniker-end

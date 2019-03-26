@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323119"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070023"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio カスタマー エクスペリエンス向上プログラム
 
@@ -25,9 +25,7 @@ Visual Studio カスタマー エクスペリエンス向上プログラム (VSC
 
 VSCEIP は既定で有効になっています。 次の手順で、オフにしたり、もう一度でオンにしたりできます。
 
-1. Visual Studio を起動します。
-
-1. **[ヘルプ]** メニューの **[フィードバックの送信]** をポイントして、**[設定]** を選択します。
+1. Visual Studio で、**[ヘルプ]** > **[フィードバックの送信]** を選択し、**[設定]** を選択します。
 
    **[Visual Studio エクスペリエンス向上プログラム]** ダイアログ ボックスが開きます。
 

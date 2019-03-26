@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042ec56cd7d94556f1bd3c64e1746e7cd4899c7b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 87b8c1d71b3ed1ee03433fd2720a86cf0ee3e6a2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908596"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872096"
 ---
-# <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 のインストールに使用するコマンド ライン パラメーターの例
+# <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio のインストールに使用するコマンド ライン パラメーターの例
 
 [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)方法を説明するため、いくつかの例を以下に示します。例は必要に応じてカスタマイズできます。
 
@@ -60,9 +60,16 @@ ms.locfileid: "55908596"
    --includeRecommended --quiet --wait
   ```
 
-  > [!NOTE]
-  > `--wait` パラメーターはバッチ ファイル用に設計されています。 バッチ ファイルでは、インストールが完了するまで次のコマンドの実行は続行されません。 `%ERRORLEVEL%` 環境変数にはコマンドの戻り値が格納されます (「[コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)」のページを参照)。
+## <a name="using---wait"></a>--wait の使用
 
+* Visual Studio インストーラーが完了するまで待ってから次のコマンドを実行するため、バッチ ファイルまたはスクリプトで使用します。 バッチ ファイルの場合は、`%ERRORLEVEL%` 環境変数にコマンドの戻り値が格納されます (「[コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)」ページを参照)。 一部のコマンド ユーティリティでは、完了を待ってインストーラーの戻り値を取得するには、追加のパラメーターが必要です。 PowerShell スクリプト コマンド "Start-Process" で使用される追加パラメーターの例を次に示します。
+
+  ```cmd
+  $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+  ```
+  
+* 1 つ目の "--wait" は Visual Studio インストーラーによって使用され、2 つ目の "--wait" は完了を待つために "Start-Process" で使用されます。 "-PassThru" パラメーターは、戻り値としてインストーラーの終了コードを使用するために、"Start-Process" によって使用されます。
+  
 ## <a name="using---layout"></a>Using --layout
 
 * Visual Studio コア エディター (最小 Visual Studio 構成) をダウンロードします。 英語の言語パックのみを組み込みます。
@@ -171,5 +178,5 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)
 * [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio 2017 のオフライン インストールを作成する](create-an-offline-installation-of-visual-studio.md)
+* [Visual Studio のオフライン インストールを作成する](create-an-offline-installation-of-visual-studio.md)
 * [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)

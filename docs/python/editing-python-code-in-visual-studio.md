@@ -1,7 +1,7 @@
 ---
 title: Python コードの編集
 description: Python の場合、Visual Studio では、高性能 IntelliSense、コード スニペット、ナビゲーション機能、書式設定、lint、リファクタリングの機能が提供されます。
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155397"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155525"
 ---
 # <a name="edit-python-code"></a>Python コードの編集
 
@@ -109,10 +109,20 @@ commas_to_colons(1)
 
 ![型ヒントを検証する mypy の結果例](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> バージョン 3.5 より前の Python の場合、Visual Studio では、*スタブ ファイル* (*.pyi*) を使用して提供される型ヒントも表示されます。 スタブ ファイルは、コードに直接型ヒントを含めたくない場合や、型ヒントを直接使用しないライブラリ用に型ヒントを作成する場合に使用します。 詳細については、mypy プロジェクト wiki で「[Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)」 (Python モジュール用のスタブを作成する) を参照してください。
+> バージョン 3.5 より前の Python の場合、Visual Studio では、Typeshed "*スタブ ファイル*" (*.pyi*) を使用して提供される型ヒントも表示されます。 スタブ ファイルは、コードに直接型ヒントを含めたくない場合や、型ヒントを直接使用しないライブラリ用に型ヒントを作成する場合に使用します。 詳細については、mypy プロジェクト wiki で「[Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)」 (Python モジュール用のスタブを作成する) を参照してください。
 >
 > 現時点では、Visual Studio ではコメントの型ヒントはサポートされていません。
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> バージョン 3.5 より前の Python の場合、Visual Studio では、Typeshed "*スタブ ファイル*" (*.pyi*) を使用して提供される型ヒントも表示されます。 スタブ ファイルは、コードに直接型ヒントを含めたくない場合や、型ヒントを直接使用しないライブラリ用に型ヒントを作成する場合に使用します。 詳細については、mypy プロジェクト wiki で「[Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)」 (Python モジュール用のスタブを作成する) を参照してください。
+>
+> Visual Studio には、Python 2 および 3 用の Typeshed ファイルのバンドル セットが含まれているので、追加のダウンロードは必要ありません。 ただし、異なるファイルのセットを使いたい場合は、**[ツール]** > **[オプション]** > **[Python]** > **[言語サーバー]** オプションでパスを指定できます。 [言語サーバーのオプション](python-support-options-and-settings-in-visual-studio.md#language-server-options)に関する記事をご覧ください。
+>
+> 現時点では、Visual Studio ではコメントの型ヒントはサポートされていません。
+::: moniker-end
 
 ### <a name="signature-help"></a>シグネチャ ヘルプ
 

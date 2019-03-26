@@ -1,7 +1,7 @@
 ---
 title: requirements.txt ファイルでパッケージ依存関係を管理する
 description: requirements.txt ファイルは、プロジェクトの依存関係を示すものです。 requirements.txt ファイルを含むプロジェクトを受信した場合は、これらの依存関係を 1 つの手順で簡単にインストールできます。
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2026c80141c29e14ca1d7c8f1f7e1bc5cecd2e32
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88cd2ee237a92aff4ca6f641556b8003be550c3d
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924345"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194841"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>requirements.txt での必須パッケージの管理
 
@@ -25,11 +25,13 @@ ms.locfileid: "55924345"
 
 - *requirements.txt* を含むプロジェクトを読み込み、そのファイルにリストされているすべてのパッケージをインストールする場合は、**ソリューション エクスプローラー**で **[Python 環境]** ノードを展開し、環境ノードを右クリックして **[requirements.txt からインストール]** を選択します。
 
-    ![requirements.txt からインストールする](media/environments-requirements-txt-install.png)
+    ![requirements.txt からインストールする](media/environments/environments-requirements-txt-install.png)
+
+- 仮想環境に依存関係をインストールする場合は、最初にその環境を作成してアクティブ化した後、**[requirements.txt からインストール]** コマンドを使用します。 仮想環境の作成について詳しくは、「[仮想環境を使用する](selecting-a-python-environment-for-a-project.md#use-virtual-environments)」をご覧ください。
 
 - 既に必要なすべてのパッケージを環境にインストールしている場合は、**ソリューション エクスプローラー**で環境を右クリックし、**[requirements.txt を生成]** を選択することで、必要なファイルを作成できます。 ファイルが既に存在する場合、更新方法の指定を求められます。
 
-    ![requirements.txt の更新オプション](media/environments-requirements-txt-replace.png)
+    ![requirements.txt の更新オプション](media/environments/environments-requirements-txt-replace.png)
 
   - **[Replace entire file (ファイル全体を置き換える)]** は、存在するすべてのアイテム、コメント、オプションを削除します。
   - **[既存のエントリを更新]** は、パッケージの要件を検出し、現在インストールされているバージョンと一致するようにバージョン指定子を更新します。

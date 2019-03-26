@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe26bb7e0139c1521de17dab7cd7e8146aa780a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5188a46807eef84b942c3d551c938d97f372413e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907847"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982884"
 ---
-# <a name="uninstall-visual-studio-2017"></a>Visual Studio 2017 のアンインストール
+# <a name="uninstall-visual-studio"></a>Visual Studio のアンインストール
 
 このページでは、開発者向け生産性向上ツールの統合スイートである、Visual Studio のアンインストールについて説明します。
 
@@ -39,7 +39,7 @@ ms.locfileid: "55907847"
 
 2. クリックしてインストーラーを起動し、![詳細アイコン](media/vs2017uninstall-UninstallIcon.png "オプション アイコンを選択") アイコンをクリックして、**[アンインストール]** をクリックします。
 
-     ![Visual Studio 2017 の変更 (変更、起動、修復、またはアンインストール)](media/vs2017-uninstall.PNG "Visual Studio 2017 の修復またはアンインストール")
+     ![Visual Studio の変更 (変更、起動、修復、またはアンインストール)](media/vs2017-uninstall.PNG "Visual Studio 2017 の修復またはアンインストール")
 
 3. **[OK]** をクリックして選択を確定します。
 
@@ -59,6 +59,6 @@ Visual Studio 2017 と Visual Studio インストーラーを自分のマシン�
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 の変更](modify-visual-studio.md)
+* [Visual Studio の変更](modify-visual-studio.md)
 * [Visual Studio の更新](update-visual-studio.md)
 * [Visual Studio for Mac のアンインストール](/visualstudio/mac/uninstall)

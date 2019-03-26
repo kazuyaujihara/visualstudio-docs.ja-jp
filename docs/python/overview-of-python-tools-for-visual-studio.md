@@ -2,7 +2,7 @@
 title: Windows 上の Visual Studio の Python サポート
 titleSuffix: ''
 description: Windows 上で最高の Python IDE である Visual Studio の Python 機能 (Python Tools for Visual Studio (PTVS) とも呼ばれます) の概要について説明します
-ms.date: 11/19/2018
+ms.date: 03/12/2019
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -11,18 +11,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b4e257f77d29a75e0400d9dd43030fc479c04c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 411b2e918658fa786885ccebf3f6c5703ddd9eb0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711203"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195009"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows 上の Visual Studio での Python の使用
 
 Python は、信頼性と柔軟性に優れ、簡単に学ぶことができ、すべてのオペレーティング システムで自由に使える一般的なプログラミング言語であり、強力な開発者コミュニティと多くの無料ライブラリによってサポートされています。 Python は、Web アプリケーション、Web サービス、デスクトップ アプリ、スクリプト、科学技術計算などのすべての開発方法をサポートし、多くの大学、科学者、一般の開発者、プロの開発者によって同様に使われています。 この言語について詳しくは、[python.org](https://www.python.org) および「[Python for Beginners](https://www.python.org/about/gettingstarted/)」(初心者向けの Python) をご覧ください。
 
-Visual Studio は、Windows 上の強力な Python IDE です。 Visual Studio では、**Python の開発**および**データ サイエンス** ワークロードによる Python 言語の[オープンソース](https://github.com/Microsoft/ptvs) サポート (Visual Studio 2017) および無料の Python Tools for Visual Studio 拡張機能 (Visual Studio 2015 以降) が提供されています。
+Visual Studio は、Windows 上の強力な Python IDE です。 Visual Studio では、**Python の開発**および**データ サイエンス** ワークロードによる Python 言語の[オープンソース](https://github.com/Microsoft/ptvs) サポート (Visual Studio 2017 以降) および無料の Python Tools for Visual Studio 拡張機能 (Visual Studio 2015 以前) が提供されています。
 
 現在、Python は Visual Studio for Mac ではサポートされていませんが、Visual Studio Code によって Mac と Linux でも使うことができます (「[質問と回答](#questions-and-answers)」を参照)。
 
@@ -30,14 +30,24 @@ Visual Studio は、Windows 上の強力な Python IDE です。 Visual Studio �
 
 - [インストール手順](installing-python-support-in-visual-studio.md)に従って、Python ワークロードを設定します。
 - この記事の各セクションを読んで、Visual Studio の Python 機能に関する知識を深めてください。
+::: moniker range="vs-2017"
 - 1 つ以上のクイックスタートを使用して、プロジェクトを作成します。 わからない場合は、[Flask を使用して Web アプリを作成する](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)方法から始めます。
+::: moniker-end
+::: moniker range=">=vs-2019"
+- 1 つ以上のクイックスタートを使用して、プロジェクトを作成します。 わからない場合は、「[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」または「[Flask での Web アプリの作成](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)」をご覧ください。
+::: moniker-end
 - 完全なエンド ツー エンドのエクスペリエンスの場合は、[Visual Studio での Python の使用](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)のチュートリアルに従います。
 
 ## <a name="support-for-multiple-interpreters"></a>複数のインタープリターのサポート
 
 Visual Studio の **[Python 環境]** ウィンドウ (以下の図では横幅を広げて表示しています) を使用すると、グローバルな Python 環境、conda 環境、仮想環境をすべて 1 つの場所で管理できます。 Visual Studio では、標準的な場所にある Python のインストールが自動的に検出されます。また、カスタム インストールを構成することができます。 各環境では、簡単にパッケージを管理し、その環境の対話型ウィンドウを開き、環境フォルダーにアクセスできます。
 
-![[Python 環境] ウィンドウを広げた表示](media/environments-expanded-view.png)
+::: moniker range="vs-2017"
+![[Python 環境] ウィンドウを広げた表示](media/environments/environments-expanded-view.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![[Python 環境] ウィンドウを広げた表示](media/environments/environments-expanded-view-2019.png)
+::: moniker-end
 
 **[対話型ウィンドウを開く]** コマンドを使用して、Visual Studio のコンテキスト内で Python を対話的に実行します。 **[PowerShell で開く]** コマンドを使用して、選択した環境のフォルダー内に独立したコマンド ウィンドウを開きます。 そのコマンド ウィンドウから、任意の Python スクリプトを実行できます。
 
@@ -77,7 +87,12 @@ Visual Studio は、インライン プロット、.NET、Windows Presentation F
 
 ## <a name="project-system-and-project-and-item-templates"></a>プロジェクト システム、プロジェクト テンプレート、項目テンプレート
 
-Visual Studio は、時間と共に複雑になるプロジェクトを管理するために役立ちます。 プロジェクトにはフォルダー構造をはるかに超えた機能があり、各ファイルの使用方法や相互の関係などを把握できます。 Visual Studio を使用すると、アプリケーション コード、テスト コード、Web ページ、JavaScript、ビルド スクリプトなどを区別できます。また、ファイルに適した機能が有効になります。 さらに、Visual Studio ソリューションは、Python プロジェクトや C ++ 拡張プロジェクトなどの複数の関連プロジェクトを管理する場合に役立ちます。
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio 2019 では、Python コードが含まれるフォルダーを開き、Visual Studio のプロジェクトやソリューションのファイルを作成せずに、そのコードを実行することができます。 詳細については、「[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」をご覧ください。 ただし、このセクションで説明するように、プロジェクト ファイルを使用する利点があります。
+::: moniker-end
+
+Visual Studio は、時間と共に複雑になるプロジェクトを管理するために役立ちます。 "*Visual Studio プロジェクト*" には、フォルダー構造をはるかに超えた機能があります。さまざまなファイルの使用方法やそれらが相互に関係する方法に関する解釈などです。 Visual Studio を使用すると、アプリケーション コード、テスト コード、Web ページ、JavaScript、ビルド スクリプトなどを区別できます。また、ファイルに適した機能が有効になります。 さらに、Visual Studio ソリューションは、Python プロジェクトや C ++ 拡張プロジェクトなどの複数の関連プロジェクトを管理する場合に役立ちます。
 
 ![Python プロジェクトと C ++ プロジェクトの両方を含む Visual Studio ソリューション](media/projects-solution-explorer-two-projects.png)
 
@@ -99,6 +114,10 @@ Visual Studio は、時間と共に複雑になるプロジェクトを管理す
 Visual Studio の長所の 1 つは強力なデバッガーです。 特に Python 用には、Python/C++ 混合モード デバッグ、Linux 上のリモート デバッグ、**対話型**ウィンドウ内のデバッグ、Python の単体テストのデバッグが Visual Studio に含まれています。
 
 ![例外をポップアップ表示する Python 用の Visual Studio デバッガー](media/debugging-exception-popup.png)
+
+::: moniker range=">=vs-2019"
+Visual Studio 2019 では、Visual Studio のプロジェクト ファイルがなくてもコードの実行とデバッグを行うことができます。 例については、「[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」をご覧ください。
+::: moniker-end
 
 詳細情報
 
@@ -149,11 +168,14 @@ A:  この分野の主なツールとして [Qt Project](https://www.qt.io/qt-fo
 
 A:  一般的に、Python はインタープリター言語であり、Visual Studio や Web サーバーなど、適切な Python 対応環境で、オンデマンドでコードが実行されます。 現在のところ、Python のスタンドアロンの実行可能ファイル (実質的には Python インタープリターが埋め込まれたプログラム) を作成する機能は Visual Studio にありません。 ただし、[StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)で説明されているように、Python コミュニティでは、実行可能ファイルを作成するさまざまな方法が提供されています。 また、CPython はネイティブ アプリケーション内への埋め込みをサポートしています。詳細については、ブログの投稿「[Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)」(CPython の埋め込み可能な Zip ファイルの使用方法) をご覧ください。
 
-## <a name="features-matrix"></a>機能一覧
+::: moniker range="<=vs-2017"
+
+## <a name="feature-support"></a>機能のサポート
 
 [インストール ガイド](installing-python-support-in-visual-studio.md)の説明に従って、以下のエディションの Visual Studio に Python の機能をインストールできます。
 
-- [Visual Studio 2017 (全エディション)](https://visualstudio.microsoft.com/vs/)
+- [Visual Studio 2019 (全エディション)](https://visualstudio.microsoft.com/vs/)
+- Visual Studio 2017 (全エディション)
 - Visual Studio 2015 (全エディション)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express for Web Update 2 以降
@@ -167,7 +189,7 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 > [!Important]
 > 機能が完全にサポートおよび保守されるのは、Visual Studio の最新バージョンのみです。 古いバージョンでも機能を使うことはできますが、積極的には保守されません。
 
-|          Python のサポート          |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|          Python のサポート          |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |----------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |   複数のインタープリターの管理   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | 一般的なインタープリターの自動検出 | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -178,7 +200,7 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 <br/>
 
 
-|         プロジェクト システム         |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
+|         プロジェクト システム         |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
 |--------------------------------|----------|----------|-----------|--------------|----------|-----------|----------------------|---------------|
 | 既存のコードから新しいプロジェクトを作成 | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
 |         すべてのファイルを表示         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
@@ -188,7 +210,7 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 <br/>
 
 
-|           編集            |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|           編集            |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     構文の強調表示      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |        オートコンプリート         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -209,7 +231,7 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 <br/>
 
 
-|     対話型ウィンドウ     |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|     対話型ウィンドウ     |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |----------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     対話型ウィンドウ     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | インライン グラフを含む IPython | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -217,7 +239,7 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 <br/>
 
 
-|               デスクトップ               |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|               デスクトップ               |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     コンソール/Windows アプリケーション     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | IronPython WPF (XAML デザイナーを含む) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -226,7 +248,7 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 <br/>
 
 
-|         Web         |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|         Web         |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Django Web プロジェクト  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | Bottle Web プロジェクト  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -236,7 +258,7 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 <br/>
 
 
-|         Azure          |   2017   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
+|         Azure          |   2017+   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
 |------------------------|----------|----------|-----------|--------------|----------------------|----------------------|----------------------|----------------------|
 |   Web サイトへの配置   | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       |       &#10004;       | &#10004;<sup>2</sup> |
 |   Web ロールへの配置   | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
@@ -248,7 +270,7 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 <br/>
 
 
-|           Django テンプレート           |   2017   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
+|           Django テンプレート           |   2017+   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
 |--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
 |              デバッグ               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
 |            オートコンプリート             | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004;  |   &#10004;    |
@@ -257,7 +279,7 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 <br/>
 
 
-|                  デバッグ                  |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|                  デバッグ                  |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |                  デバッグ                  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |         プロジェクトを使わないデバッグ         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -271,14 +293,14 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 <a name="matrix-profiling"></a>
 
 
-| プロファイル |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| プロファイル |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-----------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | プロファイル | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
 
 
-|     テスト      |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|     テスト      |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | テスト エクスプローラー | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
 |   テストの実行    | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
@@ -286,7 +308,7 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 
 <br/>
 
-1. Visual Studio 2012 の Git サポートは、[Visual Studio ギャラリー](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit)で入手できる Visual Studio Tools for Git 拡張機能で利用可能です。
+1. Visual Studio 2012 の Git サポートは、[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit) で入手できる Visual Studio Tools for Git 拡張機能で利用可能です。
 
 1. Azure Web サイトに配置するには、[Azure SDK for .NET 2.1 - Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855) が必要です。 以降のバージョンは Visual Studio 2010 をサポートしません。
 
@@ -301,3 +323,4 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 1. Windows 8 以降が必要です。 **サーバー エクスプローラー**の **[デバッガーのアタッチ(Python)]** コマンドには、[Azure SDK for .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 以降が必要です。
 
 1. Windows 8 以降が必要です。
+::: moniker-end

@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: 移行後に Visual Studio サブスクリプションの組織を管理ポータルに正常にオンボードする方法について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 3916fd762e9a2feaaa4892e4233d08a345db44a1
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 188842272f7e4ee102829f961b29b4d5ffbf70dc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954229"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154180"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>組織を移行した後の Visual Studio サブスクリプション管理ポータルへのオンボード
 
@@ -24,9 +24,9 @@ ms.locfileid: "56954229"
 
 次のいずれかのシナリオが発生する可能性があります。
 
-1. [主要連絡先がオンボード プロセスを完了しなかった。](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup> 
-2. [主要連絡先はオンボードを完了しましたが、管理を行うユーザーを管理者として追加しませんでした。そのユーザーの資格情報は VLSC の一覧に含まれていました。](#Primary-Contact-did-not-provide-you-administrator-access) 
-3. [主要連絡先はオンボードを完了しましたが、管理を行うユーザーを管理者として追加しませんでした。そのユーザーの資格情報は VLSC の一覧に含まれていませんでした。](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
+1. [主要連絡先がオンボード プロセスを完了しませんでした。](#onboarding-not-completed-by-primary-contact)
+2. [主要連絡先はオンボードを完了しましたが、管理を行うユーザーを管理者として追加しませんでした。そのユーザーの資格情報は VLSC の一覧に含まれていました。](#primary-contact-did-not-provide-you-administrator-access)
+3. [主要連絡先はオンボードを完了しましたが、管理を行うユーザーを管理者として追加しませんでした。そのユーザーの資格情報は VLSC の一覧に含まれていませんでした。](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
 
 <sup>1</sup> 管理を行うユーザーが主要連絡先または通知連絡先で、オンボード プロセスを完了しなかった場合、そのユーザーはシナリオ 1 の手順に従って、組織を設定する必要があります。
 

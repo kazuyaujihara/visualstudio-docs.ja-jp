@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: fc72fdc63fefd5b60ecfc8ab001b94b87b69e481
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 922e13e77713e7f4ba5bd18af93507855d292537
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323803"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194694"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio Cloud Explorer で Azure アカウントに関連付けられているリソースを管理する
 
@@ -24,17 +24,17 @@ Cloud Explorer を使用すると、Azure リソースやリソース グルー�
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* **Azure ワークロード**が選択された [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)、または [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) を使用する以前のバージョンの Visual Studio
+* **Azure ワークロード**を選択した Visual Studio 2017 以降 ([Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)を参照)。 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) を含む Visual Studio の以前のバージョンを使用することもできます。
 * Microsoft Azure アカウント - アカウントがない場合は、[無料試用版にサインアップ](http://go.microsoft.com/fwlink/?LinkId=623901)するか、[Visual Studio サブスクライバー特典を有効](http://go.microsoft.com/fwlink/?LinkId=623901)にします。
 
 > [!NOTE]
-> Cloud Explorer を表示するには、メニュー バーの **[表示]** > **[Cloud Explorer]** を選択します。
+> Cloud Explorer を表示するには、**Ctrl** + **Q** キーを押して**クイック起動**を呼び出し、「**Cloud Explorer**」と入力します。
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Cloud Explorer に Azure アカウントを追加する
 
-Azure アカウントに関連付けられているリソースを表示するには、まず、Cloud Explorer にアカウントを追加する必要があります。
+Azure アカウントに関連付けられているリソースを表示するには、まず、**Cloud Explorer** にアカウントを追加する必要があります。
 
-1. **Cloud Explorer** で **[Azure アカウントの設定]** をクリックします。
+1. **Cloud Explorer** で **[アカウント管理]** ボタンを選択します。
 
    ![Cloud Explorer の [Azure アカウントの設定] アイコン](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 

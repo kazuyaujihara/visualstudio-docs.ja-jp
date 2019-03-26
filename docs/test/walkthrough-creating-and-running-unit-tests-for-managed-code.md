@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1b40fe963b6a48a6fa9848c4d9e205bae5503e9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922291"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069659"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>チュートリアル: マネージド コードの単体テストを作成し、実行する
 
@@ -35,28 +35,38 @@ ms.locfileid: "55922291"
 
 ## <a name="create-a-project-to-test"></a>テストするプロジェクトを作成する
 
+::: moniker range="vs-2017"
+
 1. Visual Studio を開きます。
 
 2. **[ファイル]** メニューで、**[新規作成]** > **[プロジェクト]** の順に選択します。
 
    **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
-3. **[インストールされているテンプレート]** の **[Visual C#]** をクリックします。
+::: moniker-end
 
-4. アプリケーションの種類の一覧の **[クラス ライブラリ]** をクリックします。
+::: moniker range=">=vs-2019"
 
-5. **[名前]** ボックスに「**Bank**」と入力し、**[OK]** をクリックします。
+1. Visual Studio を開きます。
 
-   新しい Bank プロジェクトが作成され、コード エディターに *Class1.cs* ファイルが開いた状態で**ソリューション エクスプローラー**が表示されます。
+2. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+
+::: moniker-end
+
+3. C# クラス ライブラリ プロジェクト テンプレートを選択します。
+
+4. プロジェクトに「**Bank**」という名前を設定し、**[OK]** または **[作成]** をクリックします。
+
+   Bank プロジェクトが作成され、コード エディターに *Class1.cs* ファイルが開いた状態で**ソリューション エクスプローラー**が表示されます。
 
    > [!NOTE]
    > コード エディターで *Class1.cs* が開いていない場合は、**ソリューション エクスプローラー**のファイル *Class1.cs* をダブルクリックして開きます。
 
-6. 「[単体テストを作成するサンプル プロジェクト](../test/sample-project-for-creating-unit-tests.md)」からソース コードをコピーし、*Class1.cs* の元の内容をコピーしたコードに置き換えます。
+5. 「[単体テストを作成するサンプル プロジェクト](../test/sample-project-for-creating-unit-tests.md)」からソース コードをコピーし、*Class1.cs* の元の内容をコピーしたコードに置き換えます。
 
-7. ファイルを *BankAccount.cs* という名前で保存します。
+6. ファイルを *BankAccount.cs* という名前で保存します。
 
-8. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
+7. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
 Bank という名前のプロジェクトができます。 これには、テストするソース コードとテストに使用するツールが含まれています。 Bank の BankAccountNS 名前空間には、パブリック クラス BankAccount が含まれます。そのメソッドを次の手順でテストします。
 
