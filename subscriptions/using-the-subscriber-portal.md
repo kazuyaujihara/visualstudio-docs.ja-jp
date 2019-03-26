@@ -7,12 +7,12 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプション ポータルを使用するさまざまな利点について
 searchscope: VS Subscription
-ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843803"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867592"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>サブスクライバー ポータルの使用 - my.<span></span>visualstudio<span></span>.com
 
@@ -51,4 +51,4 @@ Azure についてわからないことがあったら、  Azure コミュニテ
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
-Visual Studio クラウド サブスクリプションを更新する必要がある場合や、  Visual Studio 製品ファミリの最新の拡張機能をダウンロードしたい場合があります。  Marketplace では、Azure DevOps、Team Foundation Server、および Visual Studio Code の機能を向上させる拡張機能、ツール、サービスを見つけることができます。 公開元になり、Marketplace に独自の拡張機能を公開することもできます。
+Visual Studio クラウド サブスクリプションを更新する必要がある場合や、  Visual Studio 製品ファミリの最新の拡張機能をダウンロードしたい場合があります。  Marketplace では、Azure DevOps、Azure DevOps Server、および Visual Studio Code の機能を向上させる拡張機能、ツール、サービスを見つけることができます。 公開元になり、Marketplace に独自の拡張機能を公開することもできます。

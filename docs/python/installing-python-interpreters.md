@@ -1,7 +1,7 @@
 ---
 title: Python インタープリターの選択とインストール
 description: Visual Studio でサポートされている Python インタープリターの詳細な一覧です。インストーラーを入手できる場所についても簡単に説明します。
-ms.date: 12/06/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,16 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cafa97873c168102dff66f602d4d117269718810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8c2d96aeb24b9311998528d0360b1c3eac38e5f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921004"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194179"
 ---
 # <a name="install-python-interpreters"></a>Python インタープリターのインストール
 
-既定では、Visual Studio 2017 に Python 開発ワークロードをインストールすると、Python 3 (64 ビット) もインストールされます。 [インストール](installing-python-support-in-visual-studio.md)に関する記事で説明されているように、必要に応じて、32 ビットおよび 64 ビット バージョンの Python 2、Python 3、Anaconda 2、および Anaconda 3 のインストールも選択できます。
+既定では、Visual Studio 2017 以降に Python 開発ワークロードをインストールすると、Python 3 (64 ビット) もインストールされます。 [インストール](installing-python-support-in-visual-studio.md)に関する記事で説明されているように、必要に応じて、32 ビットおよび 64 ビット版の Python 2 および Python 3 と共に、Miniconda (Visual Studio 2019) または Anaconda 2/Anaconda 3 (Visual Studio 2017) をインストールできます。
+
+::: moniker range=">=vs-2019"
+または、標準の Python インタープリターを **[環境の追加]** ダイアログからインストールできます。 **[Python 環境]** ウィンドウまたは Python ツール バーで **[環境の追加]** コマンドを選択し、**[Python インストール]** タブを選択して、インストールするインタープリターを指定し、**[インストール]** を選択します。
+::: moniker-end
 
 以下の表のインタープリターは、Visual Studio インストーラーを使用せずに手動でインストールすることもできます。 たとえば、Visual Studio をインストールする前に Anaconda 3 がインストールされている場合、Visual Studio インストーラーでそれを再度インストールする必要はありません。 また、たとえば Visual Studio インストーラーに利用可能な新しいバージョンがまだ表示されていない場合なども、手動でインタープリターをインストールできます。
 

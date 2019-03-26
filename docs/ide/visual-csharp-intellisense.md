@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936864"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194604"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -94,7 +94,7 @@ IntelliSense は、オブジェクト名の自動補完のために、ポップ�
 
 IntelliSense の **using 追加**操作では、必須の `using` ディレクティブがコード ファイルに自動的に追加されます。 この機能によって、作成中のコードにだけ集中できるので、それ以外の部分に注意を払う必要がなくなります。
 
-**using の追加**操作を実行するには、解決できない型参照にカーソルを置きます。 たとえば、コンソール アプリケーションを作成し、`Main` メソッドの本体に `XmlTextReader` を追加すると、コードのその行に赤い波線が表示されます。型参照が解決できないためです。 **クイック アクション**で **using の追加**を呼び出すことができます。 **クイック アクション**は、バインドされていない型の上にカーソルが置かれた場合にのみ表示されます。
+**using の追加**操作を実行するには、解決できない型参照にカーソルを置きます。 たとえば、コンソール アプリケーションを作成し、`Main` メソッドの本体に `XmlReader` を追加すると、コードのその行に赤い波線が表示されます。型参照が解決できないためです。 **クイック アクション**で **using の追加**を呼び出すことができます。 **クイック アクション**は、バインドされていない型の上にカーソルが置かれた場合にのみ表示されます。
 
 ![using の追加、クイック アクションの展開イメージ](../ide/media/addusing-quickaction.png)
 

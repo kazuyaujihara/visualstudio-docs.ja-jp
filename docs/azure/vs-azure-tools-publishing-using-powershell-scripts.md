@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6d1e485e89c3455c61b1050575398cae17b4aaa1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dab9cd1600e77a480ca49c131aee2dbdcb8f0521
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941908"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194763"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行
 
@@ -24,7 +24,7 @@ Visual Studio で Web アプリケーションを作成するときに、Azure �
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Azure SDK 2.3 以降。 [Visual Studio のダウンロード](http://go.microsoft.com/fwlink/?LinkID=624384) ページをご覧ください。 (Web プロジェクトのスクリプトの生成に Azure SDK は不要です。 この機能は、クラウド サービスの Web ロールではなく、Web プロジェクトを対象としています。)
+* **Azure ワークロード**がインストールされた Visual Studio 2015 以降、または Visual Studio 2013 と Azure SDK 2.3 以降。 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ページをご覧ください。 (Web プロジェクトのスクリプトの生成に Azure SDK は不要です。 この機能は、クラウド サービスの Web ロールではなく、Web プロジェクトを対象としています。)
 * Azure PowerShell 0.7.4 以降。 「 [Azure PowerShell のインストールと構成の方法](/powershell/azure/overview)」を参照してください。
 * [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) 以降。
 
@@ -154,7 +154,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
 
    ![Web 配置パッケージの作成](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   詳細については、「[方法 :Visual Studio で Web 配置パッケージを作成する](https://msdn.microsoft.com/library/dd465323.aspx)」を参照してください。 「[Customizing and extending the publish scripts](#customizing-and-extending-publish-scripts)」 (発行スクリプトのカスタマイズと拡張) で説明するように、Web 配置パッケージの作成を自動化することもできます。
+   詳細については、「[方法 :Visual Studio で Web 配置パッケージを作成する](https://msdn.microsoft.com/library/dd465323.aspx)」を参照してください。 「[Customizing and extending the publish scripts](#customizing-and-extending-the-publish-scripts)」 (発行スクリプトのカスタマイズと拡張) で説明するように、Web 配置パッケージの作成を自動化することもできます。
 
 1. **ソリューション エクスプローラー**でスクリプトのコンテキスト メニューを開き、**[PowerShell ISE で開く]** をクリックします。
 1. このコンピューターで Windows PowerShell スクリプトを初めて実行した場合は、管理特権でコマンド プロンプト ウィンドウを開き、次のコマンドを入力します。
@@ -242,7 +242,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
     }
     ```
 
-1. `New-WebDeployPackage` を次のコードで置き換え、`$msbuildCmd` を構築している行のプレースホルダーを置き換えます。 このコードは Visual Studio 2017 用です。 Visual Studio 2015 を使用している場合は、**VisualStudioVersion** プロパティを `14.0` に変更します (Visual Studio 2013 の場合は `12.0`)。
+1. `New-WebDeployPackage` を次のコードで置き換え、`$msbuildCmd` を構築している行のプレースホルダーを置き換えます。 このコードは Visual Studio 2019 用です。 Visual Studio 2017 を使用している場合は、**VisualStudioVersion** プロパティを `15.0` に変更します (Visual Studio 2015 の場合は '14.0'、Visual Studio 2013 の場合は `12.0`)。
 
     ```powershell
     function New-WebDeployPackage
@@ -255,7 +255,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
 
-    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=15.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
+    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=16.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
 
     Write-VerboseWithTime ('Build-WebDeployPackage: ' + $msbuildCmd)
     ```

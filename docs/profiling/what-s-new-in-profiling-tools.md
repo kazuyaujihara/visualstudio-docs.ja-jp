@@ -1,5 +1,6 @@
 ---
-title: プロファイリングの新機能 | Microsoft Docs
+title: Visual Studio 2017 でのプロファイリングの新機能 | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +12,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1822ec74903c8baa75ce437b0115cecdfb911c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: 0c05595c311367ca94e3327afd28bc5fa05f7ec2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026946"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57871079"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] プロファイリング ツールの新機能
 
 診断ツールに、修正が必要なアプリの問題を識別できる新しい視覚化が追加されました。 診断ツールに ASP.NET アプリのサポートが追加されました。
 
-詳しくは、「[[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] リリース ノート](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag)」をご覧ください。
+詳しくは、「[[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] リリース ノート](/visualstudio/releasenotes/vs2017-relnotes)」をご覧ください。
 
-パフォーマンス分析の主な領域に重点を置くことができる、**概要**タブがツールに追加されました。 概要タブには発生したイベントの数が表示され、ヒープのスナップショットを作成して、CPU 使用率のデータ収集を直ちに有効にすることができます。 このビューには、[Application Insights](/azure/azure-monitor/app/visual-studio) または [UI Analysis](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis) のイベントが表示されます。 また、Visual Studio Enterprise では、ビューに IntelliTrace イベントも表示されます。
+パフォーマンス分析の主な領域に重点を置くことができる、**概要**タブがツールに追加されました。 概要タブには発生したイベントの数が表示され、ヒープのスナップショットを作成して、CPU 使用率のデータ収集を直ちに有効にすることができます。 このビューには、[Application Insights](/azure/azure-monitor/app/visual-studio) または [UI Analysis](/visualstudio/releasenotes/vs2017-relnotes) のイベントが表示されます。 また、Visual Studio Enterprise では、ビューに IntelliTrace イベントも表示されます。
 
 ![診断ツールの概要タブ](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
 

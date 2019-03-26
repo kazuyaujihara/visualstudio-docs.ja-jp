@@ -15,20 +15,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b30a104afcbadc9397cc5c7bd79fa746b0e69a9f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710111"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983820"
 ---
-# <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 管理者ガイド
+# <a name="visual-studio-administrator-guide"></a>Visual Studio 管理者ガイド
 
 エンタープライズ環境では、エンドユーザーにネットワーク共有またはシステム管理ソフトウェアを使用してインストールを配置することが、システム管理者にとって一般的です。 エンタープライズ展開をサポートするために、Visual Studio セットアップ エンジンを設計しました。これは、インストールの既定値を事前に構成し、インストール プロセス中にプロダクト キーを展開し、ロールアウトが成功した後に製品の更新プログラムを管理するために、システム管理者がネットワーク インストールの場所を作成できるようにします。 この管理者ガイドでは、ネットワーク環境でエンタープライズ展開を行うためのシナリオ ベースのガイダンスを示します。
 
-## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>エンタープライズ環境で Visual Studio 2017 を配置する
+## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>エンタープライズ環境に Visual Studio を配置する
 
-Visual Studio 2017 をクライアント ワークステーションに配置するには、各ターゲット コンピューターが[最小インストール要件](/visualstudio/productinfo/vs2017-system-requirements-vs)を満たしている必要があります。 System Center などのソフトウェアから配置するか、バッチ ファイルから配置するかにかかわらず、一般的に次の手順に従って進めます。
+Visual Studio をクライアント ワークステーションに配置するには、各ターゲット コンピューターが[最小インストール要件](/visualstudio/productinfo/vs2017-system-requirements-vs)を満たしている必要があります。 System Center などのソフトウェアから配置するか、バッチ ファイルから配置するかにかかわらず、一般的に次の手順に従って進めます。
 
 1. ネットワークの場所に [Visual Studio 製品ファイルを含むネットワーク共有を作成](create-a-network-installation-of-visual-studio.md)します。
 
@@ -47,14 +47,14 @@ Visual Studio 2017 をクライアント ワークステーションに配置す
 8. 手順 1 で使用したコマンドを定期的に実行して更新されたコンポーネントを追加し、Visual Studio の[最新の更新プログラムを適用してネットワークの場所を更新](update-a-network-installation-of-visual-studio.md)します。
 
 > [!IMPORTANT]
-> ネットワーク共有からのインストールは、出所のソースの場所を "記憶" します。 これは、クライアント マシンの修復に、クライアントのインストール元のネットワーク共有に戻る必要があることを意味します。 ネットワークの場所は、Visual Studio 2017 クライアントが組織で実行されると予想される有効期間に合わせて配置されるよう慎重に選択してください。
+> ネットワーク共有からのインストールは、出所のソースの場所を "記憶" します。 これは、クライアント マシンの修復に、クライアントのインストール元のネットワーク共有に戻る必要があることを意味します。 ネットワークの場所は、Visual Studio クライアントが組織で実行されると予想される有効期間に合わせて配置されるよう慎重に選択してください。
 
 ## <a name="use-visual-studio-tools"></a>Visual Studio Tools を使用する
 
 クライアント コンピューターに[インストールされている Visual Studio インスタンスを検出して管理する](tools-for-managing-visual-studio-instances.md)ために役立つ複数のツールが用意されています。
 
 > [!TIP]
-> 管理者のガイドのドキュメントに加えて、Visual Studio 2017 セットアップの情報が、[Visual Studio セットアップのアーカイブ](https://devblogs.microsoft.com/setup/tag/vs2017/)に関するブログ記事に多く掲載されています。
+> 管理者のガイドのドキュメントに加えて、Visual Studio セットアップの情報が、[Visual Studio セットアップのアーカイブ](https://devblogs.microsoft.com/setup/tag/vs2017/)に関するブログ記事に多く掲載されています。
 
 ## <a name="specify-customer-feedback-settings"></a>顧客フィードバック設定を指定する
 
@@ -74,8 +74,8 @@ Visual Studio 2017 をクライアント ワークステーションに配置す
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 のインストール](install-visual-studio.md)
-* [コマンド ライン パラメーターを使用して Visual Studio 2017 をインストールする](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio のインストール](install-visual-studio.md)
+* [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)
   * [コマンド ライン パラメーターの例](command-line-parameter-examples.md)
   * [ワークロードとコンポーネント ID のリファレンス](workload-and-component-ids.md)
 * [Visual Studio のネットワーク ベース インストールを作成する](create-a-network-installation-of-visual-studio.md)

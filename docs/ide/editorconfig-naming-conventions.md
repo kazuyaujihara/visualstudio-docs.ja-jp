@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908193"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983275"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig での .NET の名前付け規則
 
@@ -73,18 +73,19 @@ ms.locfileid: "55908193"
 - private
 - protected
 - protected\_internal または protected_friend
+- private\_protected
 - local
 
 > [!NOTE]
 > 対象とするシンボルの種類にアクセシビリティが適用されない場合は、アクセシビリティ レベルを名前付け規則の一部には指定しません。 たとえば、パラメーターにはアクセシビリティ レベルはありません。 パラメーターの名前付け規則にアクセシビリティ レベルを指定すると、名前付け規則は正しく機能しません。
 
-### <a name="symbol-modifiers"></a>シンボルの修飾子
+### <a name="symbol-modifiers-optional"></a>シンボルの修飾子 (省略可能)
 
 名前付け規則を適用するシンボルの修飾子を記述するには、次の形式でプロパティ名を指定します。
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-許容される値を次のリストに示します。個々の値をコンマで区切ることで複数の値を指定できます。 名前付け規則は、`required_modifiers` で指定されたすべての修飾子が含まれている署名とのみ一致します。 このプロパティを省略した場合は、既定値である空のリストが使用されます。すなわち、一致のために特定の修飾子は必要ありません。 このことは、この規則が適用されるかどうかに、シンボルの修飾子が影響を及ぼさないことを意味します。
+許容される値を次のリストに示します (複数の値はコンマで区切ります)。
 
 - `abstract` または `must_inherit`
 - `async`
@@ -95,7 +96,10 @@ ms.locfileid: "55908193"
    > [!NOTE]
    > `static` または `shared` シンボルに対する名前付け規則がある場合、それは暗黙的に静的である `const` シンボルにも適用されます。 `static` 名前付け規則を `const` シンボルに適用しない場合は、`const` シンボルに対する別の名前付け規則を作成します。
 
-`required_modifiers` は省略可能なプロパティです。 このプロパティを省略した場合、名前付け規則はすべての修飾子に適用されます。
+名前付け規則は、`required_modifiers` で指定されている "*すべて*" の修飾子が含まれるシグネチャのみと一致します。 このプロパティを省略した場合は、既定値である空のリストが使用されます。すなわち、一致のために特定の修飾子は必要ありません。 このことは、この規則が適用されるかどうかに、シンボルの修飾子が影響を及ぼさないことを意味します。
+
+> [!TIP]
+> `required_modifiers` に対しては値 `*` を指定しないでください。 代わりに、`required_modifiers` プロパティをそっくり省略すると、すべての種類の修飾子に名前付け規則が適用されます。
 
 ## <a name="style"></a>スタイル
 

@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cae8ce7856249bafced5577030150c6910a86c34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8ebece0823c42c4dd1f2faaeb894e88c06ed0bef
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911495"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983443"
 ---
 # <a name="install-build-tools-into-a-container"></a>Build Tools をコンテナーにインストールする
 
@@ -199,4 +199,4 @@ Visual Studio Build Tools さらには Visual Studio 全体では、すべての
 
 * [コンテナーの高度な例](advanced-build-tools-container.md)
 * [コンテナーの既知の問題](build-tools-container-issues.md)
-* [Visual Studio Build Tools 2017 のワークロード ID とコンポーネント ID](workload-component-id-vs-build-tools.md)
+* [Visual Studio Build Tools のワークロード ID とコンポーネント ID](workload-component-id-vs-build-tools.md)

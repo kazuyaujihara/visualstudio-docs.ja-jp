@@ -2,7 +2,7 @@
 title: 'クイック スタート: Visual Studio を使用して初めての Node.js Web アプリを作成する'
 description: このクイック スタートでは、Visual Studio で Node.js アプリを作成します
 ms.date: 06/27/2018
-ms.technology: vs-nodejs
+ms.technology: vs-javascript
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -13,16 +13,35 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 144e06450b4419b28e1ec2ad2684fd730164df48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17bd74a9c5a484d7e3539e787f4ae05d078aa80b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952373"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867013"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>クイック スタート: Visual Studio を使用して初めての Node.js Web アプリを作成する
 
-ここでは 5 分から 10 分で Visual Studio 統合開発環境 (IDE) の概要を示し、単純な Node.js Web アプリケーションを作成します。 Visual Studio 2017 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページに移動し、無料試用版をインストールしてください。
+ここでは 5 分から 10 分で Visual Studio 統合開発環境 (IDE) の概要を示し、単純な Node.js Web アプリケーションを作成します。
+
+## <a name="prerequisites"></a>必須コンポーネント
+
+* Visual Studio および Node.js 開発ワークロードをインストールしている必要があります。
+
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker-end
+
+    Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、**[ツール]** > **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、**[変更]** を選択します。
+
+    ![VS インストーラーの Node.js ワークロード](../ide/media/quickstart-nodejs-workload.png)
+
+* Node.js ランタイムをインストールしている必要があります。
+
+    インストールされていない場合は、LTS バージョンを [Node.js](https://nodejs.org/en/download/) Web サイトからインストールしてください。 一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストールされているランタイムが検出されない場合は、プロパティ ページで、インストールされているランタイムを参照するプロジェクトを構成することができます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、**[プロパティ]** を選択します)。
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
@@ -32,17 +51,21 @@ ms.locfileid: "55952373"
 
     一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストールされているランタイムが検出されない場合は、プロパティ ページで、インストールされているランタイムを参照するプロジェクトを構成することができます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、**[プロパティ]** を選択します)。
 
-1. Visual Studio 2017 を開きます。
+1. Visual Studio を開きます。
 
 1. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-1. **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[JavaScript]** を展開し、**[Node.js]** を選択します。 中央のウィンドウで、**[空白の Node.js Web アプリケーション]** を選択してから **[OK]** を選択します。
+1. 新しいプロジェクトを作成します。
 
-     **[空白の Node.js Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **[Node.js 開発]** ワークロードを選択し、**[変更]** を選択します。
+    ::: moniker range=">=vs-2019"
+    **[新しいプロジェクトの作成]** ダイアログ ボックスで検索ボックスに「**javascript**」と入力して結果をフィルター処理した後、**[空の Node.js Web アプリケーション]** を選択してから **[次へ]** を選択します。 次に、**[作成]** を選択します。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[JavaScript]** を展開し、**[Node.js]** を選択します。 中央のウィンドウで、**[空白の Node.js Web アプリケーション]** を選択してから **[OK]** を選択します。
+    ::: moniker-end
+    **[空白の Node.js Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発**ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
 
-     ![VS インストーラーの Node.js ワークロード](../ide/media/quickstart-nodejs-workload.png)
-
-    **[空の Node.js Web アプリケーション]** テンプレートを選択し、**[OK]** をクリックすると、Visual Studio は新しいソリューションを作成し、プロジェクトを開きます。 *server.js* が左側のウィンドウのエディターで開きます。
+    Visual Studio は新しいソリューションを作成し、プロジェクトを開きます。 *server.js* が左側のウィンドウのエディターで開きます。
 
 ## <a name="explore-the-ide"></a>IDE を探索する
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7538342cad63d820992fe699e65386f4f3c8e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908466"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868912"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv コマンドライン スイッチ
 
@@ -67,6 +67,7 @@ VSPackage 開発に関連するスイッチの詳細については、「[VSPack
 |[/Command](command-devenv-exe.md)|IDE を起動し、指定したコマンドを実行します。<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|C++ の実行可能ファイルをデバッガーの制御下に読み込みます。 このスイッチは、Visual Basic または C# の実行可能ファイルには使用できません。 詳細については、「[デバッガーでプロセスを自動的に開始する](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)」を参照してください。<br /><br /> `devenv /debugexe mysln.exe`|
 |[/Diff](diff.md)|2 つのファイルを比較します。 4 つのパラメーター、*SourceFile*、*TargetFile*、*SourceDisplayName* (省略可能)、*TargetDisplayName* (省略可能) を受け取ります。<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/DoNotLoadProjects](donotloadprojects-devenv-exe.md)|プロジェクトを読み込むことなく、指定したソリューションを開きます。<br /><br /> `devenv /donotloadprojects mysln.sln`|
 |[/Edit](edit-devenv-exe.md)|指定したファイルを、このアプリケーションの実行中のインスタンスで開きます。 実行中のインスタンスがない場合は、簡略化されたウィンドウ レイアウトで新しいインスタンスを起動します。<br /><br /> `devenv /edit File1 File2`|
 |[/LCID または /L](lcid-devenv-exe.md)|IDE の既定の言語を設定します。 指定した言語が Visual Studio インストールに含まれていない場合、この設定は無視されます。<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Visual Studio を起動し、ログ ファイルにすべてのアクティビティを記録します。<br /><br /> `devenv /log mylogfile.xml`|

@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af730ae4d5b358eab223e2a5a8288daaf632071
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939477"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069633"
 ---
 # <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
 
@@ -35,9 +35,21 @@ ms.locfileid: "55939477"
 
 新しいファイルを作成し、何らかのコードをそのファイルに追加することから始めます。
 
-1. Visual Studio を開き、メニュー バーの **[ファイル]** メニューから、**[新しいファイル]** を選択します。
+::: moniker range="vs-2017"
 
-1. **[新しいファイル]** ダイアログ ボックスの **[全般]** カテゴリで、**[Visual Basic クラス]** を選び、**[開く]** を選択します。
+1. Visual Studio を開きます。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio を開きます。 スタート ウィンドウで **Esc** キーを押すか、または **[コードなしで続行]** をクリックして、開発環境を開きます。
+
+::: moniker-end
+
+2. メニュー バーの **[ファイル]** メニューから、**[新しいファイル]** を選択します。
+
+3. **[新しいファイル]** ダイアログ ボックスの **[全般]** カテゴリで、**[Visual Basic クラス]** を選び、**[開く]** を選択します。
 
    エディターで新しいファイルが開かれ、Visual Basic クラスのスケルトンが表示されます  (既にお気付きのとおり、構文の強調表示など、コード エディターによって提供されるいくつかの利点を得るために、完全な Visual Studio プロジェクトを作成する必要はありません。 必要なのはコード ファイルだけです)。
 

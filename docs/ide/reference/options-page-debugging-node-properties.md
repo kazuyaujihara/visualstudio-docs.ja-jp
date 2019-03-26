@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd95c248ecec057cfb602b7f2324d680f715ed68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a41b9286ba35351a0dea91d87a4852319a94e93
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946548"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983066"
 ---
 # <a name="options-page-debugging-node-properties"></a>[デバッグ] ノード プロパティ ([オプション] ページ)
 次の表では、**[オプション]** ダイアログ ボックスの **[デバッグ]** カテゴリ (`DTE.Properties("Debugging", <Property Page>)`) に関連付けられているページ (またはプロパティ コレクション) について説明します。
@@ -84,5 +84,5 @@ ms.locfileid: "55946548"
 - [[フォントおよび色] ノード プロパティ ([オプション] ページ)](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [[テキスト エディター] ノード プロパティ ([オプション] ページ)](../../ide/reference/options-page-text-editor-node-properties.md)
 - [[全般] ([オプション] ダイアログ ボックス - [デバッグ])](../../debugger/general-debugging-options-dialog-box.md)
-- [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](../../debugger/edit-and-continue.md?view=vs-2015)
+- [エディット コンティニュのデバッグ](../../debugger/edit-and-continue.md)
 - [[Just-In-Time] ([オプション] ダイアログ ボックス - [デバッグ])](../../debugger/just-in-time-debugging-options-dialog-box.md)

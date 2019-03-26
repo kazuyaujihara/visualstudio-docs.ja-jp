@@ -1,27 +1,28 @@
 ---
-title: Live Unit Testing の新機能
+title: Visual Studio 2017 の Live Unit Testing での新機能
+titleSuffix: ''
 ms.date: 10/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing
 - Live Unit Testing What's New
 author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+monikerRange: vs-2017
+ms.openlocfilehash: 96ac53900806cc37e215342573f998be995289f8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221542"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872419"
 ---
-# <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing の新機能
+# <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Visual Studio 2017 の Live Unit Testing での新機能
 
 このトピックでは、Visual Studio 2017 バージョン 15.3 以降の Visual Studio の各バージョンの Live Unit Testing に追加された新機能を説明します。 Live Unit Testing の使用方法の詳細については、[Visual Studio での Live Unit Testing](live-unit-testing.md) に関するページを参照してください。
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>Visual Studio 2017 バージョン 15.4 の Live Unit Testing の新機能
+## <a name="version-154"></a>バージョン 15.4
 
 Visual Studio 2017 バージョン 15.4 以降の Live Unit Testing には、さまざまな領域で機能改善があります。
 
@@ -39,7 +40,7 @@ Visual Studio 2017 バージョン 15.4 以降の Live Unit Testing には、さ
 
 - **その他のユーザー インターフェイスの強化**:右クリック ジェスチャのわかりにくい **[Live Test Set – Include/Exclude]\(ライブ テスト セット – 必要/必要なし\)** オプションが **[Live Unit Testing Include/Exclude]\(Live Unit Testing 必要/必要なし\)** に名称が変更されました。 **[テスト]** > **[Live Unit Testing]** メニューの **[Reset clean]\(クリーンのリセット\)** オプションが削除されました。 これには、現在、**[ツール]** > **[オプション]** > **[Live Unit Testing]** の順に選択し、**[Delete Persisted Data]\(永続データの削除\)** を選択してアクセスできます。
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Visual Studio 2017 バージョン 15.3 の Live Unit Testing の新機能
+## <a name="version-153"></a>バージョン 15.3
 
 Visual Studio 2017 バージョン 15.3 以降、Live Unit Testing 機能は、次の 2 つの主要な領域で機能強化されています。
 
