@@ -1,4 +1,4 @@
----
+﻿---
 title: VBA とドキュメント レベルのカスタマイズを結合します。
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -69,7 +69,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ```
 
 > [!NOTE]
->  Visual C＃でオプションのパラメーターの代わりにグローバル欠損変数を使用する方法については、[Office ソリューションでコードを記述](../vsto/writing-code-in-office-solutions.md)を参照してください。
+> Visual C＃でオプションのパラメーターの代わりにグローバル欠損変数を使用する方法については、[Office ソリューションでコードを記述](../vsto/writing-code-in-office-solutions.md)を参照してください。
 
 ## <a name="call-code-in-document-level-customizations-from-vba"></a>VBA からのドキュメント レベルのカスタマイズのコードを呼び出す
  ドキュメント内の Visual Basic for Applications (VBA) コードがカスタマイズ アセンブリのコードを呼び出すことができるように、Word または Excel のドキュメント レベル プロジェクトを構成できます。 これは、次のシナリオで役立ちます。

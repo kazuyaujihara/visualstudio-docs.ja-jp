@@ -1,4 +1,4 @@
----
+﻿---
 title: 'チュートリアル: プロジェクト テンプレートを使用して、サイト列プロジェクト項目を作成、パート 2 |Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -83,7 +83,7 @@ ms.locfileid: "57868105"
 
 3.  上部にある、**新しいプロジェクトの追加** ダイアログ ボックスで、ことを確認します **.NET Framework 4.5** .NET Framework のバージョンの一覧でを選択します。
 
-4.  **Visual C#** ノードまたは **Visual Basic** ノードを展開し、 **Windows**ノードを選択します。
+4. **Visual C#** ノードまたは **Visual Basic** ノードを展開し、 **Windows**ノードを選択します。
 
 5.  プロジェクト テンプレートの一覧で選択**WPF ユーザー コントロール ライブラリ**、プロジェクトに名前を**ProjectTemplateWizard**、選択し、 **OK**ボタン。
 
@@ -97,7 +97,7 @@ ms.locfileid: "57868105"
 
 2.  上部にある、**新しいプロジェクトの追加** ダイアログ ボックスで、選択 **.NET Framework 3.5**で .NET Framework のバージョンの一覧。
 
-3.  **Visual C#** ノードまたは **Visual Basic** ノードを展開し、 **Windows**ノードを選択します。
+3. **Visual C#** ノードまたは **Visual Basic** ノードを展開し、 **Windows**ノードを選択します。
 
 4.  選択、**クラス ライブラリ**プロジェクト テンプレート、プロジェクトの名前**SharePointCommands**、選択し、 **OK**ボタン。
 
@@ -112,7 +112,7 @@ ms.locfileid: "57868105"
 
 1.  **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **ProjectTemplateWizard**プロジェクト ノードを選び、**プロパティ**します。
 
-2.  **プロジェクト デザイナー** で、Visual C＃プロジェクトの場合は **アプリケーション** タブを、Visual Basic プロジェクトの場合は **コンパイル** タブを選択します。
+2. **プロジェクト デザイナー** で、Visual C＃プロジェクトの場合は **アプリケーション** タブを、Visual Basic プロジェクトの場合は **コンパイル** タブを選択します。
 
 3.  ターゲット フレームワークが .NET Framework 4.5 Client Profile ではなく .NET Framework 4.5 に設定されていることを確認します。
 
