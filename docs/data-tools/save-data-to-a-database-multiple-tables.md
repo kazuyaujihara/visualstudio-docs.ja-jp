@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936617"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268564"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>データベースへのデータの保存 (複数テーブル)
 
@@ -31,19 +31,17 @@ ms.locfileid: "55936617"
 
 このチュートリアルでは、以下のタスクを行います。
 
--   新しい **Windows フォーム アプリケーション** プロジェクトを作成します。
+-  使用してアプリケーションでのデータ ソースの構成の作成と、[データ ソース構成ウィザード](../data-tools/media/data-source-configuration-wizard.png)します。
 
--   使用してアプリケーションでのデータ ソースの構成の作成と、[データ ソース構成ウィザード](../data-tools/media/data-source-configuration-wizard.png)します。
+-  内の項目のコントロールの設定、[データ ソース ウィンドウ](add-new-data-sources.md#data-sources-window)します。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。
 
--   内の項目のコントロールの設定、[データ ソース ウィンドウ](add-new-data-sources.md#data-sources-window)します。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。
+-  **[データ ソース]** ウィンドウからフォームに項目をドラッグして、データ バインド コントロールを作成します。
 
--   **[データ ソース]** ウィンドウからフォームに項目をドラッグして、データ バインド コントロールを作成します。
+-  データセット内の各テーブル内のいくつかのレコードを変更します。
 
--   データセット内の各テーブル内のいくつかのレコードを変更します。
+-  データセット内の更新されたデータをデータベースに返送するコードを変更します。
 
--   データセット内の更新されたデータをデータベースに返送するコードを変更します。
-
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 
@@ -63,17 +61,7 @@ ms.locfileid: "55936617"
 
 ## <a name="create-the-windows-forms-application"></a>Windows フォーム アプリケーションを作成します。
 
-作成するには、まず、 **Windows フォーム アプリケーション**します。 この手順で、省略可能ですが、プロジェクトに名前を割り当てるが名前を付けますが、ため、後で、プロジェクトを保存します。
-
-1. Visual Studio での**ファイル**メニューの **新規** > **プロジェクト**します。
-
-2. いずれかを展開**Visual c#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
-
-3. 中央のペインで選択、 **Windows フォーム アプリ**プロジェクトの種類。
-
-4. プロジェクトに名前を**UpdateMultipleTablesWalkthrough**を選び、 **OK**。
-
-     **UpdateMultipleTablesWalkthrough** プロジェクトが作成されて、**ソリューション エクスプローラー**に追加されます。
+新規作成**Windows フォーム アプリ**のいずれかのプロジェクトC#または Visual Basic です。 プロジェクトに **UpdateMultipleTablesWalkthrough** という名前を付けます。
 
 ## <a name="create-the-data-source"></a>データ ソースを作成します。
 
@@ -89,11 +77,11 @@ ms.locfileid: "55936617"
 
 4. **データ接続の選択**画面で、次のいずれかの操作を行います。
 
-    -   Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
+    - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
          - または -
 
-    -   **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを開きます。
+    - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを開きます。
 
 5. データベースにパスワードが必要な場合は、機密データを含めるしを選択するオプションを選択**次**します。
 
