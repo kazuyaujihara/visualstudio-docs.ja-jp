@@ -39,7 +39,7 @@ ms.locfileid: "57868037"
 |必要なファイル|説明|
 |-------------------|-----------------|
 |*.Spdata*ファイル|この XML ファイルには、内容とプロジェクト項目の既定の動作を指定します。 このファイルは、項目テンプレートに含める必要があります。 内容の詳細については *.spdata*ファイルを参照してください[SharePoint プロジェクト項目スキーマのリファレンス](../sharepoint/sharepoint-project-item-schema-reference.md)します。|
-|A *.vstemplate*ファイル。|このファイルにテンプレートを表示するために必要な情報を Visual Studio では、**新しい項目の追加** ダイアログ ボックスと、テンプレートからプロジェクト項目を作成します。 このファイルは、項目テンプレートに含める必要があります。 詳細については、次を参照してください。 [Visual Studio テンプレートのメタデータ ファイル](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\))します。|
+|*.vstemplate*ファイル| このファイルは、**新しい項目の追加**ダイアログボックスにテンプレートを表示し、そのテンプレートからプロジェクト項目を作成するために必要な情報を Visual Studioに提供します。 このファイルは項目テンプレートに含める必要があります。 詳細については、「Visual Studioのテンプレートメタデータファイル」を参照してください。|
 |実装する Visual Studio 拡張機能アセンブリ、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>インターフェイス。|このアセンブリは、プロジェクト項目の実行時の動作を定義します。 このアセンブリは、項目テンプレートを使用して VSIX パッケージに含める必要があります。 詳細については、次を参照してください。[カスタム SharePoint プロジェクト項目の種類を定義する](../sharepoint/defining-custom-sharepoint-project-item-types.md)と[Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。|
 
  次の表には、いくつかの項目テンプレートに含めることができる最も一般的な省略可能なファイルが一覧表示します。 プロジェクト項目の種類によっては、この一覧にないその他のファイルを必要があります。
