@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764849"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324774"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015 のデバッグの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 は、プロジェクトのビルドとデバッグ ツール
 
  開始時には、ビルド構成、プラットフォームとして**デバッグ**、**x86** だけを使用してください。 コーディングとデバッグが完了したら、構成を**リリース**に変更し、特定のプラットフォームを対象にします。 (以前のバージョンの Visual Studio では、**AnyCPU** が .Net コード プロジェクトの既定のプラットフォームとして提供されていました。)
 
- 注: プロジェクトをビルドする際、実行可能ファイルを格納するために作成されるプロジェクト ディレクトリ パスを判断するために構成の値とプラットフォームの値も使用されます。 通常、これは **\<path-to-project>\\<project-name>\\<configuration\>\\<platform\>** です。 たとえば、構成が `Debug` で、プラットフォームが `x86` のプロジェクトの場合、`Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` の下で見つかります。 これは、ビルドされたこれらの実行可能ファイルを管理する独自のツールやスクリプトがある場合に役立ちます。
+ 注: プロジェクトをビルドする際、実行可能ファイルを格納するために作成されるプロジェクト ディレクトリ パスを判断するために構成の値とプラットフォームの値も使用されます。 通常、これは **\<path-to-project>\\<project-name\>\\<configuration\>\\<platform\>** です。 たとえば、構成が `Debug` で、プラットフォームが `x86` のプロジェクトの場合、`Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` の下で見つかります。 これは、ビルドされたこれらの実行可能ファイルを管理する独自のツールやスクリプトがある場合に役立ちます。
 
 ### <a name="building-your-code"></a>コードのビルド
  ビルドを構成すると、実際にプロジェクトのビルドを開始できます。 最も簡単な方法は F7 を押す方法ですが、メイン メニューから **[ビルド]、[ソリューションのビルド]** の順に選択してビルドを開始することもできます。

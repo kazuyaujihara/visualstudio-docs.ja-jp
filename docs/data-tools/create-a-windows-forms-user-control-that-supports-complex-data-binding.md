@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9e36363743ac1509fb37c9070085656c34b91f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e9f80f55aa3059cbe5c9af3b5510915f768ea20
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936664"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268772"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>複合データ バインディングをサポートする Windows フォーム ユーザー コントロールの作成
 
-Windows アプリケーションのフォームにデータを表示する場合は、**[ツールボックス]** から既存のコントロールを選択するか、またはアプリケーションが標準コントロールでは提供できない機能を必要とする場合は、カスタム コントロールを記述できます。 このチュートリアルでは、<xref:System.ComponentModel.ComplexBindingPropertiesAttribute> を実装するコントロールを作成する方法を示します。 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> を実装するコントロールには、データにバインドできる `DataSource` プロパティと `DataMember` プロパティが含まれます。 このようなコントロールは、<xref:System.Windows.Forms.DataGridView> や <xref:System.Windows.Forms.ListBox> に似ています。
+Windows アプリケーションでフォームにデータを表示するときにから既存のコントロールを選択することができます、**ツールボックス**します。 または、アプリケーションが標準のコントロールで使用できない機能に必要な場合は、カスタム コントロールを作成できます。 このチュートリアルでは、<xref:System.ComponentModel.ComplexBindingPropertiesAttribute> を実装するコントロールを作成する方法を示します。 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> を実装するコントロールには、データにバインドできる `DataSource` プロパティと `DataMember` プロパティが含まれます。 このようなコントロールは、<xref:System.Windows.Forms.DataGridView> や <xref:System.Windows.Forms.ListBox> に似ています。
 
 コントロールの作成の詳細については、次を参照してください。 [Windows フォームの開発は、デザイン時にコントロール](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)します。
 
@@ -37,9 +37,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 このチュートリアルでは、テーブルからのデータ行を表示する複合コントロールを作成します。 この例では、Northwind サンプル データベースの `Customers` テーブルを使用します。 複合ユーザー コントロールは、カスタム コントロールの <xref:System.Windows.Forms.DataGridView> で Customers テーブルを表示します。
 
-このチュートリアルでは、次の作業を行う方法について説明します。
-
-- 新しい **Windows フォーム アプリケーション**を作成します。
+このチュートリアルで学習する方法。
 
 - 新しい**ユーザー コントロール**をプロジェクトに追加します。
 
@@ -53,7 +51,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 - **[データ ソース]** ウィンドウから **Form1** に新しいコントロールをドラッグして追加します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 
@@ -71,19 +69,9 @@ Windows アプリケーションのフォームにデータを表示する場合
 
        しばらくすると、クエリの実行が完了し、Northwind データベースを作成します。
 
-## <a name="create-a-windows-forms-application"></a>Windows フォーム アプリケーションを作成する
+## <a name="create-a-windows-forms-app-project"></a>Windows フォーム アプリ プロジェクトを作成します。
 
-作成するには、まず、 **Windows フォーム アプリケーション**:
-
-1. Visual Studio での**ファイル**メニューの **新規** > **プロジェクト**します。
-
-1. いずれかを展開**Visual c#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
-
-1. 中央のペインで選択、 **Windows フォーム アプリ**プロジェクトの種類。
-
-1. プロジェクトに名前を**ComplexControlWalkthrough**を選び、 **OK**。
-
-    **ComplexControlWalkthrough** プロジェクトが作成されて**ソリューション エクスプローラー**に追加されます。
+作成するには、まず、 **Windows フォーム アプリ**のいずれかのプロジェクトC#または Visual Basic です。 プロジェクトに **ComplexControlWalkthrough** という名前を付けます。
 
 ## <a name="add-a-user-control-to-the-project"></a>プロジェクトにユーザー コントロールを追加する
 
@@ -116,27 +104,27 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 使用して、**データ ソースの構成**データ ソースを作成するウィザードがに基づいて、 `Customers` Northwind サンプル データベース内のテーブル。
 
-1.  開くには、**データ ソース**ウィンドウで、**データ**] メニューのをクリックして **[データ ソースの**します。
+1. 開くには、**データ ソース**ウィンドウで、**データ**] メニューのをクリックして **[データ ソースの**します。
 
-2.  **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成**ウィザードを起動します。
+2. **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成**ウィザードを起動します。
 
-3.  **[データソースの種類を選択]** ページで、 **[データベース]** をクリックし、 **[次へ]** をクリックします。
+3. **[データソースの種類を選択]** ページで、 **[データベース]** をクリックし、 **[次へ]** をクリックします。
 
-4.  **[データ接続の選択]** ページで、次のいずれかの操作を行います。
+4. **[データ接続の選択]** ページで、次のいずれかの操作を行います。
 
-    - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
+   - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
-    - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
+   - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
 
-5.  データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、**[次へ]** をクリックします。
+5. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、**[次へ]** をクリックします。
 
-6.  **[アプリケーション構成ファイルに接続文字列を保存]** ページで、**[次へ]** をクリックします。
+6. **[アプリケーション構成ファイルに接続文字列を保存]** ページで、**[次へ]** をクリックします。
 
-7.  **[データベース オブジェクトの選択]** ページで、**[テーブル]** ノードを展開します。
+7. **[データベース オブジェクトの選択]** ページで、**[テーブル]** ノードを展開します。
 
-8.  `Customers` テーブルを選択し、**[完了]** をクリックします。
+8. `Customers` テーブルを選択し、**[完了]** をクリックします。
 
-    プロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウに `Customers` テーブルが表示されます。
+   プロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウに `Customers` テーブルが表示されます。
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>ComplexDataGridView コントロールを使用して Customers テーブルを設定します。
 

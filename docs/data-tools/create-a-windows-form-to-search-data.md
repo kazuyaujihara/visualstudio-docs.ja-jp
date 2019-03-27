@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c73ab24cd2b50efd26f9a5b3ac1105325345033
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945069"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268784"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>データを検索する Windows フォームを作成する
 
@@ -31,27 +31,25 @@ ms.locfileid: "55945069"
 
 このチュートリアルでは、以下のタスクを行います。
 
--   新しい **Windows フォーム アプリケーション** プロジェクトを作成します。
+- 使用してアプリケーションでのデータ ソースの構成の作成と、**データ ソースの構成**ウィザード。
 
--   使用してアプリケーションでのデータ ソースの構成の作成と、**データ ソースの構成**ウィザード。
+- 内の項目のドロップ タイプを設定、**データソース**ウィンドウ。
 
--   内の項目のドロップ タイプを設定、**データソース**ウィンドウ。
+- **[データ ソース]** ウィンドウからフォームに項目をドラッグし、データを表示するコントロールを作成します。
 
--   **[データ ソース]** ウィンドウからフォームに項目をドラッグし、データを表示するコントロールを作成します。
+- データを表示するコントロールをフォームに追加します。
 
--   データを表示するコントロールをフォームに追加します。
+- 完了、**検索条件ビルダー**  ダイアログ ボックス。
 
--   完了、**検索条件ビルダー**  ダイアログ ボックス。
+- フォームにパラメーターを入力し、パラメーター化クエリを実行します。
 
--   フォームにパラメーターを入力し、パラメーター化クエリを実行します。
-
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 
-1.  SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 **Visual Studio インストーラー**の一部として SQL Server Express LocalDB をインストールすることができます、**データ ストレージと処理**ワークロード、または個々 のコンポーネントとして。
+1. SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 **Visual Studio インストーラー**の一部として SQL Server Express LocalDB をインストールすることができます、**データ ストレージと処理**ワークロード、または個々 のコンポーネントとして。
 
-2.  次の手順に従って、Northwind サンプル データベースをインストールします。
+2. 次の手順に従って、Northwind サンプル データベースをインストールします。
 
     1. Visual Studio で開く、 **SQL Server オブジェクト エクスプ ローラー**ウィンドウ。 (SQL Server オブジェクト エクスプ ローラーがの一部としてインストールされている、**データ ストレージと処理**ワークロードで、 **Visual Studio インストーラー**)。展開、 **SQL Server**ノード。 LocalDB インスタンスを右クリックし、選択**新しいクエリ**します。
 
@@ -65,17 +63,7 @@ ms.locfileid: "55945069"
 
 ## <a name="create-the-windows-forms-application"></a>Windows フォーム アプリケーションを作成します。
 
-最初の手順では、Windows フォーム アプリを作成します。 プロジェクトに名前を割り当てるはこの手順で、省略可能ですが、名前を付けますが、ここでため、後で、プロジェクトを保存します。
-
-1. Visual Studio での**ファイル**メニューの **新規** > **プロジェクト**します。
-
-2. いずれかを展開**Visual c#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
-
-3. 中央のペインで選択、 **Windows フォーム アプリ**プロジェクトの種類。
-
-4. プロジェクトに名前を**WindowsSearchForm**を選び、 **OK**。
-
-     **WindowsSearchForm** プロジェクトが作成されて**ソリューション エクスプローラー**に追加されます。
+新規作成**Windows フォーム アプリ**のいずれかのプロジェクトC#または Visual Basic です。 プロジェクトに **WindowsSearchForm** という名前を付けます。
 
 ## <a name="create-the-data-source"></a>データ ソースを作成します。
 
@@ -89,9 +77,9 @@ ms.locfileid: "55945069"
 
 4.  **[データ接続の選択]** ページで、次のいずれかの操作を行います。
 
-    -   Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
+    - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
-    -   **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
+    - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
 
 5.  データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、**[次へ]** をクリックします。
 
@@ -153,9 +141,9 @@ WHERE 句を追加するには元のクエリを使用する、**検索条件ビ
 
 アプリケーションの要件に応じて、パラメーター付きのフォームを作成した後に、追加の操作を実行できます。 このチュートリアルで行うことができる拡張には次のものがあります。
 
--   関連するデータを表示するコントロールを追加します。 詳細については、次を参照してください。[データセットのリレーションシップ](relationships-in-datasets.md)します。
+- 関連するデータを表示するコントロールを追加します。 詳細については、次を参照してください。[データセットのリレーションシップ](relationships-in-datasets.md)します。
 
--   データセットを編集し、データベース オブジェクトの追加または削除を行います。 詳細については、[データセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)に関するページを参照してください。
+- データセットを編集し、データベース オブジェクトの追加または削除を行います。 詳細については、[データセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)に関するページを参照してください。
 
 ## <a name="see-also"></a>関連項目
 
