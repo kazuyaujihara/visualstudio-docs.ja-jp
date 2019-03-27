@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55265b24a60697b7d84940968c192b7e6a38a2f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526738"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355164"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>リモート Visual Studio で c# または Visual Basic プロジェクトのデバッグ
 別のコンピューターに展開されている Visual Studio アプリケーションをデバッグするには、インストールし、アプリをデプロイしたコンピューターでリモート ツールを実行、Visual Studio からリモート コンピューターに接続するプロジェクトを構成し、アプリを実行します。
@@ -71,7 +71,15 @@ ms.locfileid: "57526738"
 
 5. **[作業ディレクトリ]** テキスト ボックスが空であることを確認してください。
 
-6. 選択**リモート コンピューターの使用**、および種類**MJO-DL:4022**テキスト ボックスにします。 (4022 は、リモート デバッガー ウィンドウに表示されるポート番号です。 ポート番号をインクリメントで Visual Studio の各バージョン 2)。
+6. 選択**リモート コンピューターの使用**、および種類**yourmachinename:port**テキスト ボックスにします。 (リモート デバッガー ウィンドウで、ポート番号を表示します。 ポート番号をインクリメントで Visual Studio の各バージョン 2)。
+
+    この例では、次のコマンドを使用します。
+    ::: moniker range=">=vs-2019"
+    **MJO-DL:4024**で Visual Studio 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **MJO-DL:4022** Visual Studio 2017 で
+    ::: moniker-end
 
 7. **[ネイティブ コードのデバッグを有効にする]** がオフであることを確認します。
 

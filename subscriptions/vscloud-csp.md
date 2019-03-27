@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: クラウド ソリューション プロバイダーが顧客のために Visual Studio クラウド サブスクリプションを購入および管理する方法について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: b17c5bb663f364cda4a9a93d63f2583e59426bac
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 59d61e687c061fffd2cc0a2b537364ca8b966271
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842638"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323582"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>顧客用に Visual Studio クラウド サブスクリプションを購入して管理する
 
@@ -32,11 +32,12 @@ ms.locfileid: "56842638"
 [詳細を表示](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
 ## <a name="who-can-buy-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの購入条件
+
 Azure サブスクリプションに対する[所有者または共同作成者アクセス権](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0)を持っているユーザーは、だれでも Visual Studio サブスクリプションを購入できます。
 
 ## <a name="how-to-buy"></a>購入方法
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player]
 
 1. [Microsoft パートナー センター](https://partnercenter.microsoft.com)にログインします。
 0. **[Customers]\(顧客\)** を選択し、購入対象の顧客を選びます。
@@ -57,7 +58,7 @@ Azure サブスクリプションに対する[所有者または共同作成者�
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>顧客用に Visual Studio クラウド サブスクリプションを管理する方法
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player]
 
 1. [Microsoft パートナー センター](https://partnercenter.microsoft.com)にログインします。
 0. **[Customers]\(顧客\)** を選択し、顧客の名前を選びます。

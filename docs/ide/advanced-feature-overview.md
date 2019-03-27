@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221776"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268613"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio の機能
 
@@ -42,9 +42,13 @@ Visual Studio には、Microsoft Azure を使用するクラウド ファース�
 
 ![Azure 開発ワークロード](../data-tools/media/azure-development-workload.png)
 
+::: moniker range="vs-2017"
+
 **Azure 開発**ワークロードのインストール後は、**[新しいプロジェクト]** ダイアログ ボックスで、以下に示す C# 用 **[クラウド]** テンプレートを使用することができます。
 
 ![Visual Studio 用のクラウド プロジェクト テンプレート](media/cloud-project-templates.png)
+
+::: moniker-end
 
 Visual Studio の [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) では、Visual Studio 内の Azure ベースのクラウド リソースを表示および管理できます。 これらのリソースには仮想マシン、テーブル、SQL データベースなどが含まれる場合があります。 **Cloud Explorer** には、ユーザーがログインしている Azure サブスクリプションで管理されているすべてのアカウントに含まれる Azure リソースが表示されます。 特定の操作で Azure Portal が必要な場合は、**Cloud Explorer** によって提供されるリンクから Azure Portal 内の目的の場所に移動できます。
 

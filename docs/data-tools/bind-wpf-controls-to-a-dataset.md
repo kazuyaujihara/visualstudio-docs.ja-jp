@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: HT
+ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069867"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325082"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>データセットへの WPF コントロールのバインド
 
@@ -74,7 +74,7 @@ ms.locfileid: "58069867"
 
 1. Visual Studio を開きます。
 
-2. [開始] ウィンドウで、次のように選択します。**新しいプロジェクトを作成**です。
+2. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
 
 3. 検索、 C# **WPF アプリ**プロジェクト テンプレートをプロジェクトの名前を付け、プロジェクトを作成する手順に従います**AdventureWorksProductsEditor**します。
 
