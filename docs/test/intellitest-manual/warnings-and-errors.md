@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 27a35850b97a73252562ebb7dbb959bdaabf3abd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925408"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324735"
 ---
 # <a name="warnings-and-errors"></a>警告とエラー
 
@@ -27,26 +27,26 @@ ms.locfileid: "55925408"
   * [MaxCalls を超えました](#maxcalls-exceeded)
   * [MaxStack を超えました](#maxstack-exceeded)
   * [MaxRuns を超えました](#maxruns-exceeded)
-  * [MaxRunsWithoutNewTests を超えました](#maxrunswithoutnewtests-exceeded)<p />
+  * [MaxRunsWithoutNewTests を超えました](#maxrunswithoutnewtests-exceeded)
 
 * **制約の解決**
-  * [ソリューションを具体化できません](#cannot-concretize-solution)<p />
+  * [ソリューションを具体化できません](#cannot-concretize-solution)
 
 * **ドメイン**
   * [オブジェクトを構築するための情報を指定してください](#help-construct)
   * [型を見つけるための情報を指定してください](#help-types)
-  * [使用可能な型を推測しました](#usable-type-guessed)<p />
+  * [使用可能な型を推測しました](#usable-type-guessed)
 
 * **実行**
   * [探索中に予期しないエラーが発生しました](#unexpected-exploration)
-  * [TargetInvocationException](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)
 
 * **インストルメンテーション**
   * [インストルメント化されていないメソッドが呼び出されました](#uninstrumented-method-called)
   * [外部メソッドが呼び出されました](#external-method-called)
   * [インストルメント不能なメソッドが呼び出されました](#uninstrumentable-method-called)
   * [テストの容易性の問題](#testability-issue)
-  * [制限](#limitation)<p />
+  * [制限](#limitation)
 
 * **インタープリター**
   * [観察された呼び出しが一致しません](#observed-call-mismatch)

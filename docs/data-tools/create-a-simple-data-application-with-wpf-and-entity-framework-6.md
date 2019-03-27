@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e93500195ec98cf7df84a45ae52abc75ad91c59d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606863"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268791"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF と Entity Framework 6 を使用して単純なデータ アプリケーションを作成する
 
@@ -26,9 +26,9 @@ ms.locfileid: "56606863"
 
 この例では、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。 その製品の ADO.NET データ プロバイダーは、Entity Framework をサポートする場合、他の SQL データベース製品とでも動作する必要があります。
 
-1.  SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 **Visual Studio インストーラー**の一部として SQL Server Express LocalDB をインストールすることができます、 **.NET デスクトップ開発**ワークロードまたは個々 のコンポーネントとして。
+1. SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 **Visual Studio インストーラー**の一部として SQL Server Express LocalDB をインストールすることができます、 **.NET デスクトップ開発**ワークロードまたは個々 のコンポーネントとして。
 
-2.  次の手順に従って、Northwind サンプル データベースをインストールします。
+2. 次の手順に従って、Northwind サンプル データベースをインストールします。
 
     1. Visual Studio で開く、 **SQL Server オブジェクト エクスプ ローラー**ウィンドウ。 (**SQL Server オブジェクト エクスプ ローラー**がの一部としてインストールされている、**データ ストレージと処理**ワークロードで、 **Visual Studio インストーラー**)。展開、 **SQL Server**ノード。 LocalDB インスタンスを右クリックし、選択**新しいクエリ**します。
 
@@ -40,27 +40,27 @@ ms.locfileid: "56606863"
 
        しばらくすると、クエリの実行が完了し、Northwind データベースを作成します。
 
-3.  [新しい接続を追加](../data-tools/add-new-connections.md)Northwind 用です。
+3. [新しい接続を追加](../data-tools/add-new-connections.md)Northwind 用です。
 
 ## <a name="configure-the-project"></a>プロジェクトを構成する
 
-1.  Visual Studio で、次のように選択します。**ファイル** > **新規** > **プロジェクト**し、新しい c# WPF アプリケーションを作成します。
+1. Visual Studio で、作成、新しいC# **WPF アプリ**プロジェクト。
 
-2.  次に、Entity Framework 6 の NuGet パッケージを追加します。 **ソリューション エクスプ ローラー**、プロジェクト ノードを選択します。 メイン メニューで、次のように選択します。**プロジェクト** > **NuGet パッケージの管理**します。
+2. Entity Framework 6 の NuGet パッケージを追加します。 **ソリューション エクスプ ローラー**、プロジェクト ノードを選択します。 メイン メニューで、次のように選択します。**プロジェクト** > **NuGet パッケージの管理**します。
 
      ![NuGet パッケージのメニュー項目を管理します。](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
-3.  **NuGet パッケージ マネージャー**、 をクリックして、**参照**リンク。 Entity Framework は、一覧の最上位のパッケージでは可能性があります。 クリックして**インストール**右側のウィンドウで、画面の指示に従います。 出力ウィンドウでは、インストールが完了するとします。
+3. **NuGet パッケージ マネージャー**、 をクリックして、**参照**リンク。 Entity Framework は、一覧の最上位のパッケージでは可能性があります。 クリックして**インストール**右側のウィンドウで、画面の指示に従います。 出力ウィンドウでは、インストールが完了するとします。
 
      ![Entity Framework NuGet パッケージ](../data-tools/media/raddata_vs2015_nuget_ef.png)
 
-4.  今すぐ Visual Studio を使用して、Northwind データベースに基づくモデルを作成することができます。
+4. 今すぐ Visual Studio を使用して、Northwind データベースに基づくモデルを作成することができます。
 
 ## <a name="create-the-model"></a>モデルを作成する
 
 1. プロジェクト ノードを右クリックして**ソリューション エクスプ ローラー**選択**追加** > **新しい項目の**します。 [C#] ノードで、左側のウィンドウで次のように選択します。**データ**中央のペインで選択**ADO.NET Entity Data Model**します。
 
-   ![Entity Framework モデル新しいプロジェクト項目](../data-tools/media/raddata-ef-new-project-item.png)
+   ![Entity Framework モデルの新しい項目](../data-tools/media/raddata-ef-new-project-item.png)
 
 2. モデルを呼び出す`Northwind_model`選択**OK**します。 **Entity Data Model ウィザード**が開きます。 選択**データベースの EF デザイナー**順にクリックします**次**します。
 
@@ -80,11 +80,11 @@ ms.locfileid: "56606863"
 
 6. *.Tt*ファイルは、汎用と ObservableCollections を必要とする WPF データ バインドで作業することのいずれかを調整する必要があります。 **ソリューション エクスプ ローラー**、Northwind_model ノードを展開し、見つけます*Northwind_model.tt*します。 (になっていないことを確認、*します。Context.tt*すぐ下に表示されるファイルで、 *.edmx*ファイルです)。
 
-   -   2 つの箇所を置き換えます<xref:System.Collections.ICollection>で<xref:System.Collections.ObjectModel.ObservableCollection%601>します。
+   - 2 つの箇所を置き換えます<xref:System.Collections.ICollection>で<xref:System.Collections.ObjectModel.ObservableCollection%601>します。
 
-   -   最初に見つかった位置の交換<xref:System.Collections.Generic.HashSet%601>で<xref:System.Collections.ObjectModel.ObservableCollection%601>51 の行の付近です。 2 番目に出現する HashSet 置き換えないでください。
+   - 最初に見つかった位置の交換<xref:System.Collections.Generic.HashSet%601>で<xref:System.Collections.ObjectModel.ObservableCollection%601>51 の行の付近です。 2 番目に出現する HashSet 置き換えないでください。
 
-   -   唯一の一致を置き換える<xref:System.Collections.Generic>(行 431) の付近で<xref:System.Collections.ObjectModel>します。
+   - 唯一の一致を置き換える<xref:System.Collections.Generic>(行 431) の付近で<xref:System.Collections.ObjectModel>します。
 
 7. キーを押して**Ctrl**+**Shift**+**B**プロジェクトをビルドします。 ビルドが完了したら、モデル クラスは、データ ソース ウィザードに表示されます。
 
@@ -94,17 +94,17 @@ ms.locfileid: "56606863"
 
 データ バインド コードを記述することが、その Visual Studio を使用する方が簡単です。
 
-1.  メイン メニューで、次のように選択します。**プロジェクト** > **新しいデータ ソースの追加**を起動、**データ ソース構成ウィザード**します。 選択**オブジェクト**データベースではないモデル クラスにバインドしているためです。
+1. メイン メニューで、次のように選択します。**プロジェクト** > **新しいデータ ソースの追加**を起動、**データ ソース構成ウィザード**します。 選択**オブジェクト**データベースではないモデル クラスにバインドしているためです。
 
      ![オブジェクトのソースとデータ ソース構成ウィザード](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
-2.  選択**顧客**します。 (注文のソースは自動的に生成顧客の注文のナビゲーション プロパティから。)
+2. 選択**顧客**します。 (注文のソースは自動的に生成顧客の注文のナビゲーション プロパティから。)
 
      ![データ ソースとしてのエンティティ クラスを追加します。](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3.  **[完了]** をクリックします。
+3. **[完了]** をクリックします。
 
-4.  移動します*MainWindow.xaml*コード ビューで。 保持して、XAML 単純なは、この例の目的です。 わかりやすい MainWindow のタイトルを変更し、ここでは、800 600 x の高さと幅を増やします。 常に変更します。 メイン グリッドとナビゲーション ボタンの顧客の詳細については、およびその注文を表示するグリッドの 1 つの行にこれら 3 つの行の定義を追加します。
+4. 移動します*MainWindow.xaml*コード ビューで。 保持して、XAML 単純なは、この例の目的です。 わかりやすい MainWindow のタイトルを変更し、ここでは、800 600 x の高さと幅を増やします。 常に変更します。 メイン グリッドとナビゲーション ボタンの顧客の詳細については、およびその注文を表示するグリッドの 1 つの行にこれら 3 つの行の定義を追加します。
 
     ```xaml
     <Grid.RowDefinitions>
@@ -114,7 +114,7 @@ ms.locfileid: "56606863"
         </Grid.RowDefinitions>
     ```
 
-5.  今すぐ開きます*MainWindow.xaml*デザイナーで表示しているようにします。 これにより、**データソース**ウィンドウの横に、Visual Studio ウィンドウの余白のオプションとして表示、**ツールボックス**します。 ウィンドウを開くか、それ以外の場合にキーを押します タブをクリックして**Shift**+**Alt**+**D**選択または**ビュー**  > **他の Windows** > **データソース**します。 独自の個々 のテキスト ボックス内の顧客クラスに各プロパティを表示するでしょう。 最初の矢印をクリックして、**顧客**コンボ ボックス**詳細**します。 次に、中央の行に移動すると、デザイナーが認識できるようには、デザイン画面の中央部にノードをドラッグします。 これを紛失した場合は、XAML で後で手動で行を指定できます。 既定では、グリッド要素では、コントロールが垂直方向に配置されますが、この時点では、する位置に配置して、フォームのようにします。 たとえば、有意義なことに、**名前**アドレス上の上部のテキスト ボックス。 この記事のサンプル アプリケーションでは、フィールドの順序を変更し、それら 2 つの列に並べ替えます。
+5. 今すぐ開きます*MainWindow.xaml*デザイナーで表示しているようにします。 これにより、**データソース**ウィンドウの横に、Visual Studio ウィンドウの余白のオプションとして表示、**ツールボックス**します。 ウィンドウを開くか、それ以外の場合にキーを押します タブをクリックして**Shift**+**Alt**+**D**選択または**ビュー**  > **他の Windows** > **データソース**します。 独自の個々 のテキスト ボックス内の顧客クラスに各プロパティを表示するでしょう。 最初の矢印をクリックして、**顧客**コンボ ボックス**詳細**します。 次に、中央の行に移動すると、デザイナーが認識できるようには、デザイン画面の中央部にノードをドラッグします。 これを紛失した場合は、XAML で後で手動で行を指定できます。 既定では、グリッド要素では、コントロールが垂直方向に配置されますが、この時点では、する位置に配置して、フォームのようにします。 たとえば、有意義なことに、**名前**アドレス上の上部のテキスト ボックス。 この記事のサンプル アプリケーションでは、フィールドの順序を変更し、それら 2 つの列に並べ替えます。
 
      ![お客様のデータ ソースのバインドを個別のコントロール](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -124,11 +124,11 @@ ms.locfileid: "56606863"
     <Grid DataContext="{StaticResource customerViewSource}">
     ```
 
-6.  顧客がウィンドウの上部に表示されている場合は、半分の下には、その注文を参照してください。 1 つのグリッド ビュー コントロール内には、注文を表示します。 期待どおりに動作するマスター-詳細データ バインドは、Orders の個別のノードが、Customers クラスに Orders プロパティにバインドすることが重要です。 2 行目で、デザイナーに配置するため、顧客クラスの Orders プロパティをフォームの下半分にドラッグします。
+6. 顧客がウィンドウの上部に表示されている場合は、半分の下には、その注文を参照してください。 1 つのグリッド ビュー コントロール内には、注文を表示します。 期待どおりに動作するマスター-詳細データ バインドは、Orders の個別のノードが、Customers クラスに Orders プロパティにバインドすることが重要です。 2 行目で、デザイナーに配置するため、顧客クラスの Orders プロパティをフォームの下半分にドラッグします。
 
      ![グリッドとして注文クラスをドラッグします。](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
 
-7.  Visual Studio には、モデル内のイベントに UI コントロールを接続するすべてのバインド コードが生成されます。 一部のデータを確認するために必要なは、モデルを設定するコードを記述します。 まずに移動します*MainWindow.xaml.cs*データ コンテキストの MainWindow クラスにデータ メンバーを追加します。 このオブジェクトが生成されたには、変更や、モデル内のイベントを追跡するコントロールのようなものは機能します。 また、コンス トラクターの初期化ロジックを追加します。 このよう、クラスの先頭になります。
+7. Visual Studio には、モデル内のイベントに UI コントロールを接続するすべてのバインド コードが生成されます。 一部のデータを確認するために必要なは、モデルを設定するコードを記述します。 まずに移動します*MainWindow.xaml.cs*データ コンテキストの MainWindow クラスにデータ メンバーを追加します。 このオブジェクトが生成されたには、変更や、モデル内のイベントを追跡するコントロールのようなものは機能します。 また、コンス トラクターの初期化ロジックを追加します。 このよう、クラスの先頭になります。
 
      [!code-csharp[MainWindow#1](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#1)]
 
@@ -142,7 +142,7 @@ ms.locfileid: "56606863"
 
      [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
 
-8.  **F5**キーを押します。 Collectionviewsource に取得された最初の顧客の詳細を表示する必要があります。 データ グリッドで、注文も確認する必要があります。 書式設定ではありません、を修正しましょう。 その他のレコードを表示して、基本的な CRUD 操作を実行する方法を作成することもできます。
+8. **F5**キーを押します。 Collectionviewsource に取得された最初の顧客の詳細を表示する必要があります。 データ グリッドで、注文も確認する必要があります。 書式設定ではありません、を修正しましょう。 その他のレコードを表示して、基本的な CRUD 操作を実行する方法を作成することもできます。
 
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>ページのデザインを調整し、新しい顧客と注文のグリッドを追加します。
 
@@ -357,7 +357,7 @@ Windows フォーム アプリケーションでは、データベース内の�
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>XAML でのコマンド、バインディング、およびボタンを追加します。
 
-1.  コマンドを最初に、追加、 *MainWindow.xaml*ファイル内で、`Windows.Resources`要素。
+1. コマンドを最初に、追加、 *MainWindow.xaml*ファイル内で、`Windows.Resources`要素。
 
     ```xaml
     <RoutedUICommand x:Key="FirstCommand" Text="First"/>
@@ -371,7 +371,7 @@ Windows フォーム アプリケーションでは、データベース内の�
     <RoutedUICommand x:Key="CancelCommand" Text="Cancel"/>
     ```
 
-2.  CommandBinding はマップを`RoutedUICommand`分離コード内のメソッドにイベント。 この追加`CommandBindings`要素の後に、`Windows.Resources`終了タグ。
+2. CommandBinding はマップを`RoutedUICommand`分離コード内のメソッドにイベント。 この追加`CommandBindings`要素の後に、`Windows.Resources`終了タグ。
 
     ```xaml
     <Window.CommandBindings>
@@ -387,7 +387,7 @@ Windows フォーム アプリケーションでは、データベース内の�
     </Window.CommandBindings>
     ```
 
-3.  これで、追加、`StackPanel`ナビゲーションを追加、削除、およびボタンを更新します。 最初に、このスタイルを追加`Windows.Resources`:
+3. これで、追加、`StackPanel`ナビゲーションを追加、削除、およびボタンを更新します。 最初に、このスタイルを追加`Windows.Resources`:
 
     ```xaml
     <Style x:Key="NavButton" TargetType="{x:Type Button}" BasedOn="{x:Null}">

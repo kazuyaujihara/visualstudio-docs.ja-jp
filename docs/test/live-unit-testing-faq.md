@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7ac13299a8b727a3ef8e717e3d0a4c2c9f3738cf
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: aafe875ee8fe759d80f8db866a565a40ce16a054
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223065"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325267"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing についてよく寄せられる質問
 
@@ -30,28 +30,11 @@ Live Unit Testing に対して加えられた新機能と機能強化を確認�
 
 Live Unit Testing は、次の表に示されている 3 つの一般的な単体テスト フレームワークで動作します。 アダプターやフレームワークのサポートされる最小バージョンも表に示されています。 単体テスト フレームワークはすべて NuGet.org から入手できます。
 
-<table>
-<tr>
-   <th>テスト フレームワーク</th>
-   <th>Visual Studio アダプターの最小バージョン</th>
-   <th>フレームワークの最小バージョン</th>
-</tr>
-<tr>
-   <td>xUnit.net</td>
-   <td> xunit.runner.visualstudio バージョン 2.2.0-beta3-build1187</td>
-   <td>xunit 1.9.2</td>
-</tr>
-<tr>
-   <td>NUnit</td>
-   <td>NUnit3TestAdapter バージョン 3.5.1</td>
-   <td>NUnit バージョン 3.5.0</td>
-</tr>
-<tr>
-   <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-preview</td>
-   <td>MSTest.TestFramework 1.0.5-preview</td>
-</tr>
-</table>
+|テスト フレームワーク  |Visual Studio アダプターの最小バージョン  |フレームワークの最小バージョン  |
+|---------|---------|---------|
+|xUnit.net |xunit.runner.visualstudio バージョン 2.2.0-beta3-build1187 |xunit 1.9.2 |
+|NUnit |NUnit3TestAdapter バージョン 3.5.1 |NUnit バージョン 3.5.0 |
+|MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` を参照する以前の MSTest に基づくテスト プロジェクトを使用しており、新しい MSTest NuGet パッケージへの移行を希望されない場合は、Visual Studio 2017 バージョン 15.4 以降にアップグレードしてください。
 

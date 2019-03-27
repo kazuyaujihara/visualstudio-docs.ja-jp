@@ -1,5 +1,5 @@
 ---
-title: DA0010:GetHashCode の負荷が高くなっています | Microsoft Docs
+title: 'DA0010: GetHashCode の負荷が高くなっています | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,17 +14,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4576806131572c3bb7875748fead51327d3d718f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 111e3204224f1124476ab2a324df7be2b6ef2525
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804833"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354831"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010:GetHashCode の負荷が高くなっています
+# <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode の負荷が高くなっています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください[DA0010:。GetHashCode の負荷が](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode)docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください。 [DA0010: GetHashCode の負荷が](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode)docs.microsoft.com でリリースされました。  
 
   
 
