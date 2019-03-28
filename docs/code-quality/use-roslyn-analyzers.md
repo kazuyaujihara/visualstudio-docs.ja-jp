@@ -1,6 +1,6 @@
 ---
 title: アナライザー ルールの重要度および非表示
-ms.date: 03/26/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873503"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515338"
 ---
 # <a name="use-roslyn-analyzers"></a>Roslyn アナライザーを使用して、
 
@@ -46,12 +46,17 @@ ms.locfileid: "57873503"
 
 ## <a name="rule-sets"></a>規則セット
 
-A[ルール セット](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)は個々 の診断の重大度と抑制の状態を格納する XML ファイルです。 規則セットが 1 つのプロジェクトに適用され、プロジェクトは、複数の規則セットを持つことができます。 右クリックし、エディターで設定するアクティブなルールを表示する、**アナライザー**内のノード**ソリューション エクスプ ローラー**選択**オープンのアクティブなルール セット**します。 場合は、ルールにアクセスする最初の時間設定、という名前のファイル *\<projectname > .ruleset*がプロジェクトに追加されに表示されます**ソリューション エクスプ ローラー**します。
+A[ルール セット](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)は個々 の診断の重大度と抑制の状態を格納する XML ファイルです。
 
 > [!NOTE]
-> 規則セットには、(バイナリ) の静的コード分析と Roslyn アナライザーの規則の両方が含まれます。
+> 規則セットは、(バイナリ) の静的コード分析と Roslyn アナライザーの両方からの規則を含めることができます。
 
-プロジェクトの [アクティブなルールを変更することができます、**コード分析**のプロジェクトのプロパティ] タブ。 規則セットを選択して、**この規則セットを実行**ドロップダウン リスト。 規則セットから開くこともできます、**コード分析**プロパティ ページを選択して**開く**します。
+規則セット エディターで設定するアクティブなルールを編集するを右クリックし、**参照** > **アナライザー**ノード**ソリューション エクスプ ローラー** を選択します **。アクティブなルール セットを開く**します。 Visual Studio がファイルの設定、既定の規則のコピーを作成、名前を初めて規則セットを編集している場合は、  *\<projectname > .ruleset*プロジェクトに追加します。 このカスタムの規則も設定では、プロジェクトのアクティブなルールになります。
+
+プロジェクトの設定のアクティブなルールを変更するに移動、**コード分析**のプロジェクトのプロパティ タブ。 規則セットの下の一覧からを選択**この規則セットを実行**します。 規則セットを開くには、次のように選択します。**開く**します。
+
+> [!NOTE]
+> 規則のセットの .NET core と .NET Standard プロジェクトがメニュー コマンドをサポートして**ソリューション エクスプ ローラー**、たとえば、**オープンのアクティブなルール セット**します。 既定以外の規則が .NET Core または .NET Standard プロジェクトでは、手動で設定を指定する[追加、 **CodeAnalysisRuleSet**プロパティをプロジェクト ファイル](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)します。 Visual Studio で設定するルールをルール セット エディター UI 内のルールを構成することができます。
 
 ## <a name="rule-severity"></a>ルールの重要度
 
@@ -79,7 +84,7 @@ A[ルール セット](../code-quality/using-rule-sets-to-group-code-analysis-ru
 
 ![ソリューション エクスプ ローラーで、規則セット ファイル](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>ソリューション エクスプ ローラーから規則の重要度を設定するには
+### <a name="set-rule-severity-from-solution-explorer"></a>ソリューション エクスプ ローラーからのルールの重要度の設定
 
 1. **ソリューション エクスプ ローラー**、展開**参照** > **アナライザー** (**依存関係** >  **アナライザー** .NET Core プロジェクトの場合)。
 
@@ -89,7 +94,7 @@ A[ルール セット](../code-quality/using-rule-sets-to-group-code-analysis-ru
 
    ルールの重大度は、アクティブなルール セット ファイルに保存されます。
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>ルールの重大度がファイルを設定する規則を設定するには
+### <a name="set-rule-severity-in-the-rule-set-file"></a>規則セット ファイル内のルールの重要度の設定
 
 1. 開く、[ルール セット](analyzer-rule-sets.md)ファイルをダブルクリックして**ソリューション エクスプ ローラー**選択**オープンのアクティブなルール セット**の右クリック メニューで、**アナライザー**ノード、または選択して**オープン**上、**コード分析**プロジェクトのプロパティ ページ。
 
