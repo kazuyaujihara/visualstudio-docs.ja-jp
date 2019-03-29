@@ -864,7 +864,7 @@ ASP.NET Core Web アプリ</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>JavaScript でのモバイル開発</h3>
-                                                    <p>iOS、Android、Windows 向けのクロスプラットフォーム アプリケーションを、Apache Cordova フレームワークを使って構築します。</p>
+                                                    <p>(Visual Studio 2017 と Visual Studio 2015 のみ) iOS、Android、Windows 向けのクロスプラットフォーム アプリケーションを、Apache Cordova フレームワークを使って構築します。</p>
                                                 </div>
                                             </div>
                                         </div>
