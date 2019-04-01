@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f52e1cb8538204dbf0e29ccdadcc4cb2894255ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20df5476a2ca6cf8fb0ffbf22e8106e51d17128d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021872"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070309"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Node.js アプリケーションを Azure (Linux App Service) に発行する
 
@@ -36,15 +36,44 @@ Linux App Service は、Node.js アプリケーションを実行するために
 > * Azure に Linux App Service を作成する
 > * Linux にデプロイする
 
+## <a name="prerequisites"></a>必須コンポーネント
+
+* Visual Studio および Node.js 開発ワークロードをインストールしている必要があります。 
+
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker-end
+
+    Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、**[ツール]** > **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、**[変更]** を選択します。
+
+    ![VS インストーラーの Node.js ワークロード](../ide/media/quickstart-nodejs-workload.png)
+
+* Node.js ランタイムをインストールしている必要があります。
+
+    インストールされていない場合は、LTS バージョンを [Node.js](https://nodejs.org/en/download/) Web サイトからインストールしてください。 一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストールされているランタイムが検出されない場合は、プロパティ ページで、インストールされているランタイムを参照するプロジェクトを構成することができます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、**[プロパティ]** を選択します)。
+
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Azure 内で実行するための Node.js プロジェクトを作成する
 
-1. **[ファイル]** > **[新しいプロジェクト]** ダイアログ ボックスを使って、新しい TypeScript Express アプリを作成します。
+1. Visual Studio を開きます。
 
-1. **[TypeScript]** ノードで **[基本の Node.js Express 4 アプリケーション]** を選択します。
+1. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+
+1. 新しい TypeScript Express アプリを作成します。
+
+    ::: moniker range=">=vs-2019"
+    **[新しいプロジェクトの作成]** ダイアログ ボックスで、検索ボックスに「**javascript**」と入力して結果をフィルター処理した後、**[基本の Azure Node.js Express 4 アプリケーション]** を選択してから **[次へ]** を選択します。 次に、**[作成]** を選択します。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[JavaScript]** を展開し、**[Node.js]** を選択します。 真ん中のウィンドウで **[基本の Azure Node.js Express 4 アプリケーション]** を選択し、**[OK]** を選択します。
 
     ![新しい TypeScript Express アプリを作成する](../javascript/media/azure-ts-express-app.png)
+    ::: moniker-end
+    **[基本の Azure Node.js Express 4 アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発**ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
 
-1. **[OK]** をクリックして、Visual Studio にプロジェクトを作成します。
+    Visual Studio によってプロジェクトが作成され、それがソリューション エクスプローラー (右側のウィンドウ) で開かれます。
 
 1. **F5** キーを押してアプリをビルドして実行し、すべてが想定どおり実行していることを確認します。
 
@@ -82,7 +111,7 @@ Visual Studio 用に GitHub を設定するには:
 
 ## <a name="create-a-linux-app-service-in-azure"></a>Azure に Linux App Service を作成する
 
-1. [Azure Portal](https://portal.azure.com) にログインします。
+1. [Azure Portal](https://portal.azure.com) にサインインします。
 
 2. 左側のサービスの一覧から **[App Services]** を選び、**[追加]** をクリックします。
 

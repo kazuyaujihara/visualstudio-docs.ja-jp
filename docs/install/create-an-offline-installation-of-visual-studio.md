@@ -14,14 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e08e8aa639540461216b057ae80d1eb7701f6
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 0c0495d3413ba824f4976f2a7d04fb1ed0f05806
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796544"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322822"
 ---
-# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Visual Studio 2017 のオフライン インストールを作成する
+# <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio のオフライン インストールを作成する
 
 Visual Studio 2017 はさまざまなネットワークとコンピューターの構成で問題なく動作するように設計されています。 [Visual Studio Web インストーラー](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash;ファイルが小さく、最新の修正プログラムと機能がすべて含まれています&mdash;の利用をお勧めしますが、それが難しい場合もあると思います。
 
@@ -32,7 +34,7 @@ Visual Studio 2017 はさまざまなネットワークとコンピューター�
 
 ## <a name="use-the-download-all-then-install-feature"></a>"全部ダウンロードしてからインストールする" 機能を使用する
 
-[**15.8 の新機能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install):Web インストーラーをダウンロードした後、Visual Studio インストーラーから **[Download all, then install]\(全部ダウンロードしてからインストールする\)** オプションを選択します。 次に、インストールを続行します。
+[**バージョン 15.8 の新機能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install):Web インストーラーをダウンロードした後、Visual Studio インストーラーから **[Download all, then install]\(全部ダウンロードしてからインストールする\)** オプションを選択します。 次に、インストールを続行します。
 
    !["全部ダウンロードしてからインストールする" オプション](media/download-all-then-install.png)
 
@@ -143,7 +145,7 @@ c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDe
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio 2017 のネットワーク インストールを作成する](../install/create-a-network-installation-of-visual-studio.md)
+- [Visual Studio のネットワーク インストールを作成する](../install/create-a-network-installation-of-visual-studio.md)
 - [Visual Studio オフライン インストールに必要な証明書をインストールする](../install/install-certificates-for-visual-studio-offline.md)
 - [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)
-- [Visual Studio 2017 のワークロード ID とコンポーネント ID](workload-and-component-ids.md)
+- [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)

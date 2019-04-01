@@ -16,12 +16,13 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+monikerRange: vs-2017
+ms.openlocfilehash: 22276c844da259600770862327bc316243c9c239
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223313"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476073"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 の新機能
 
@@ -131,7 +132,7 @@ Visual Studio Enterprise 2017 では、ライブ単体テストを実行する�
 
 自動化されたテストの詳細については、[DevOps の 自動化テストの CI/CD パイプライン](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/)に関するブログ投稿をご覧ください。
 
-[Continuous Delivery Tools for Visual Studio (Visual Studio 用の継続的デリバリー ツール)](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 拡張の新機能の詳細については、ブログ投稿「[Commit with confidence: Commit time code quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/)」 (自信を持ってコミットする: タイム コードの品質をコミットする) をご覧ください。
+[Continuous Delivery Tools for Visual Studio (Visual Studio 用の継続的デリバリー ツール)](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 拡張の新機能の詳細については、ブログ投稿「[Commit with confidence: Commit time code quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/)」 (自信を持ってコミットする: タイム コードの品質をコミットする) をご覧ください。
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE の拡張機能
 
@@ -188,7 +189,7 @@ Visual Studio でプロジェクトを操作する際に、コードを迅速に
 
   ![Visual Studio 2017 の構造ビジュアライザー](media/vsIDE-StructureVisualizer.png)
 
-新しい生産性向上機能の詳細については、[Visual Studio 2017 での生産性向上](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/)に関する Mark Wilson-Thomas のブログ投稿を参照してください。
+新しい生産性機能について詳しくは、「[Visual Studio 2017: Productivity, Performance, and Partners (Visual Studio 2017: 生産性、パフォーマンス、およびパートナー)](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/)」ブログ投稿をご覧ください。
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -381,8 +382,8 @@ Visual Studio を向上させることができるご提案がある場合、ま
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 リリース ノート](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
-* [Visual Studio 2017 SDK の新機能](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk?view=vs-2017)
+* [Visual Studio 2017 リリース ノート](/visualstudio/releasenotes/vs2017-relnotes)
+* [Visual Studio 2017 SDK の新機能](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [Visual C++ の新機能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# の新機能](/dotnet/csharp/whats-new)
 * [Team Foundation Server の新機能](/tfs/server/whats-new?view=vsts)

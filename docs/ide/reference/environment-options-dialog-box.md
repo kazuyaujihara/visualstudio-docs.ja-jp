@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703254"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983716"
 ---
 # <a name="environment-options-dialog-box"></a>[環境] ([オプション] ダイアログ ボックス)
 
@@ -27,7 +27,7 @@ ms.locfileid: "56703254"
 |ウィンドウ、メニュー、および IDE の他の要素の外観や動作をカスタマイズします。|[[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)|
 |ファイルの自動保存および復元の設定を変更します。|[[自動バックアップ] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |[その他のファイル] の動作を含め、ドキュメントの表示や管理の設定を行います。|[[ドキュメント] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/documents-environment-options-dialog-box.md)|
-|更新プログラムの実行方法と拡張機能の管理方法をカスタマイズします。|[[拡張機能と更新プログラム] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
+|更新プログラムの実行方法と拡張機能の管理方法をカスタマイズします。|[[拡張機能] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
 |[クイック検索] または [クイック置換] を使用する際のメッセージ ボックスの表示時期および **[検索と置換]** ウィンドウの動作方法をカスタマイズします。また、[検索する文字列] の自動設定も行います。|[[検索と置換] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/find-and-replace-environment-options-dialog-box.md)|
 |特定のエディター、ダイアログ ボックス、ツール ウィンドウ、およびその他のユーザー インターフェイス (UI: User Interface) 要素のフォントや色を設定します。|[[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |ユーザー設定情報を格納する vssettings ファイルの場所をカスタマイズします。|[[設定のインポートとエクスポート] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|

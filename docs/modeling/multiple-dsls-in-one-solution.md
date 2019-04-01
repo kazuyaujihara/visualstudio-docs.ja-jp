@@ -7,39 +7,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a670c43d584fb65f014765874f23c42b5de71179
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8c894ce7466c253916794495649fa65d703e6d67
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942831"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416150"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>1 つのソリューション内の複数の DSL
+
 いくつかの DSL を単一ソリューションの一部としてパッケージ化し、同時にインストールすることができます。
 
- 複数の DSL を統合するためにいくつかの手法を使用できます。 詳細については、次を参照してください。 [Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)と[方法。ドラッグ アンド ドロップ ハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)と[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。
+複数の DSL を統合するためにいくつかの手法を使用できます。 詳細については、次を参照してください。 [Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)と[方法。ドラッグ アンド ドロップ ハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)と[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。
 
-### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>複数の DSL を同じソリューションの中にビルドするには
+## <a name="build-more-than-one-dsl-in-the-same-solution"></a>同じソリューション内の 1 つ以上の DSL をビルドします。
 
-1. 2 つ以上の DSL ソリューションと 1 つの VSIX プロジェクトを作成し、すべてのプロジェクトを単一のソリューションに追加します。
+1. 新規作成**VSIX プロジェクト**プロジェクト。
 
-   -   新しい VSIX プロジェクトを作成するには**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#**、**拡張**、 **VSIX プロジェクト**します。
+2. VSIX ソリューション ディレクトリには、2 つ以上の DSL プロジェクトを作成します。
 
-   -   VSIX ソリューション ディレクトリ内に 2 つ以上の DSL ソリューションを作成します。
+   - 各 DSL について、Visual Studio の新しいインスタンスを開きます。 新しい DSL を作成し、同じソリューション フォルダとして VSIX ソリューションを指定します。
 
-        各 DSL について、Visual Studio の新しいインスタンスを開きます。 新しい DSL を作成し、同じソリューション フォルダとして VSIX ソリューションを指定します。
+   - 各 DSL は異なるファイル拡張子名を付けて作成します。
 
-        各 DSL は異なるファイル拡張子名を付けて作成します。
+   - 名前を変更、 **Dsl**と**DslPackage**プロジェクトはすべて異なるようにします。 たとえば、`Dsl1`、`DslPackage1`、`Dsl2`、`DslPackage2` のようになります。
 
-   -   名前を変更、 **Dsl**と**DslPackage**プロジェクトはすべて異なるようにします。 たとえば、`Dsl1`、`DslPackage1`、`Dsl2`、`DslPackage2` のようになります。
+   - 各**DslPackage\*\source.extension.tt**、正しい Dsl プロジェクト名にこの行を更新します。
 
-   -   各**DslPackage\*\source.extension.tt**、正しい Dsl プロジェクト名にこの行を更新します。
+      `string dslProjectName = "Dsl2";`
 
-        `string dslProjectName = "Dsl2";`
-
-   -   VSIX ソリューションで、Dsl * と DslPackage 追加\*プロジェクト。
-
-        各ペアを独自のソリューション フォルダーに配置することを推奨します。
+   - VSIX ソリューションで、Dsl * と DslPackage 追加\*プロジェクト。 各ペアを独自のソリューション フォルダーに配置することを推奨します。
 
 2. 以下のように DSL の VSIX マニフェストを結合します。
 
@@ -60,5 +57,5 @@ ms.locfileid: "55942831"
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio Modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
-- [方法: ドラッグ アンド ドロップ ハンドラーを追加します。](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [方法: ドラッグ アンド ドロップ ハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)

@@ -12,16 +12,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: c46644b18188475bd6389a795625209f74a7d9b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f24e3460cb1298a36d0365781aa82cf55d8478d3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021989"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983326"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>C++ によるクロスプラットフォーム モバイル開発をインストールする
 
-Visual Studio で C++ を使うと、Windows デスクトップ アプリ、ユニバーサル Windows プラットフォーム (UWP) アプリ、Linux アプリ、そして今では Android および iOS 用のアプリも、ビルドできます。 **C++ によるモバイル開発**ワークロードは、Visual Studio にインストール可能なコンポーネントのセットであり、クロスプラットフォームの iOS、Android、および UWP Visual Studio テンプレートを含みます。 すぐに始めるために必要なクロスプラットフォーム ツールおよび SDK がインストールされるので、それらを自分で検索、ダウンロード、構成する必要はありません。 これらのツールを Visual Studio で使用することで、クロスプラットフォーム プロジェクトを簡単に作成、編集、デバッグ、テストできます。 このトピックでは、Visual Studio を使って C++ でクロスプラットフォーム アプリを開発するために必要なツールとサード パーティのソフトウェアをインストールする方法について説明します。 概要については、「[Visual C++ クロスプラットフォーム モバイル](https://go.microsoft.com/fwlink/p/?LinkId=536383)」を参照してください。
+Visual Studio で C++ を使うと、Windows デスクトップ アプリ、ユニバーサル Windows プラットフォーム (UWP) アプリ、Linux アプリ、そして今では Android および iOS 用のアプリも、ビルドできます。 **C++ によるモバイル開発**ワークロードは、Visual Studio にインストール可能なコンポーネントのセットであり、クロスプラットフォームの iOS、Android、および UWP Visual Studio テンプレートを含みます。 すぐに始めるために必要なクロスプラットフォーム ツールおよび SDK がインストールされるので、それらを自分で検索、ダウンロード、構成する必要はありません。 これらのツールを Visual Studio で使用することで、クロスプラットフォーム プロジェクトを簡単に作成、編集、デバッグ、テストできます。 このトピックでは、Visual Studio を使って C++ でクロスプラットフォーム アプリを開発するために必要なツールとサード パーティのソフトウェアをインストールする方法について説明します。 概要については、「[Visual C++ クロスプラットフォーム モバイル](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)」を参照してください。
 
 ## <a name="requirements"></a>要件
 
@@ -40,11 +40,11 @@ Visual Studio で C++ を使うと、Windows デスクトップ アプリ、ユ�
 
 ## <a name="get-the-tools"></a>ツールを取得する
 
-C++ でのモバイル開発は、Visual Studio の Community、Professional、Enterprise エディションで利用できます。 Visual Studio を入手するには、[Visual Studio のダウンロード](https://go.microsoft.com/fwlink/p/?linkid=517106) ページにアクセスしてください。 クロスプラットフォーム モバイル開発ツールは、Visual Studio 2015 Update 2 以降で利用できます。
+C++ でのモバイル開発は、Visual Studio の Community、Professional、Enterprise エディションで利用できます。 Visual Studio を入手するには、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページにアクセスしてください。 クロスプラットフォーム モバイル開発ツールは、Visual Studio 2015 以降で利用できます。
 
 ## <a name="install-the-tools"></a>ツールのインストール
 
-Visual Studio 2017 用の Visual Studio インストーラーには、Visual Studio での Android および iOS の開発に必要な C++ 言語ツール、テンプレート、およびコンポーネントをインストールする **C++ によるモバイル開発**ワークロードが含まれます。 Android のビルドおよびデバッグに必要な GCC および Clang ツールセット、および iOS 開発用の Mac と通信するコンポーネントがインストールされます。 また、iOS および Android アプリの開発をサポートするために必要なサードパーティ製のツールとソフトウェア開発キットもすべてインストールされます。 これらのサードパーティ製ツールのほとんどは、Android プラットフォームのサポートに必要なオープン ソースのソフトウェアです。
+Visual Studio 2017 用の Visual Studio インストーラーには、Visual Studio での Android および iOS の開発に必要な C++ 言語ツール、テンプレート、およびコンポーネントをインストールする **C++ によるモバイル開発**ワークロードが含まれます。 Android のビルドおよびデバッグに必要な GCC や Clang ツール セット、および iOS 開発用の Mac と通信するコンポーネントがインストールされます。 また、iOS および Android アプリの開発をサポートするために必要なサードパーティ製のツールとソフトウェア開発キットもすべてインストールされます。 これらのサードパーティ製ツールのほとんどは、Android プラットフォームのサポートに必要なオープン ソースのソフトウェアです。
 
 - Android Native Development Kit (NDK) は、Android プラットフォームを対象にした C++ コードをビルドする場合に必要になります。
 
@@ -52,7 +52,7 @@ Visual Studio 2017 用の Visual Studio インストーラーには、Visual Stu
 
 - Google Android Emulator および Intel Hardware Accelerated Execution Manager は、オプションですがお勧めするコンポーネントです。 Android デバイス上で直接開発およびデバッグできますが、通常、デバッグにはデスクトップでエミュレーターを使う方が簡単です。 また、Microsoft は、別途インストール可能な Visual Studio Emulator for Android も提供しています。
 
-#### <a name="to-install-the-mobile-development-with-c-workload-in-visual-studio-2017"></a>Visual Studio 2017 で C++ によるモバイル開発ワークロードをインストールするには
+### <a name="install-the-mobile-development-with-c-workload"></a>C++ によるモバイル開発ワークロードをインストールする
 
 1. **[スタート]** メニューから **Visual Studio インストーラー**を実行します。
 
@@ -71,37 +71,10 @@ Visual Studio 2017 用の Visual Studio インストーラーには、Visual Stu
    > [!IMPORTANT]
    > 確実にすべてを正しくインストールするには、再起動する必要があります。
 
-1. Visual Studio を開きます。 Visual Studio を実行するのが初めての場合は、構成してサインインするまでに時間がかかることがあります。 Visual Studio の準備ができたら、更新プログラムを確認し、それらをインストールします。
+1. Visual Studio を開きます。
 
-#### <a name="to-install-the-mobile-development-component-and-third-party-tools-in-visual-studio-2015"></a>Visual Studio 2015 でモバイル開発コンポーネントとサードパーティのツールをインストールするには
-
-Visual Studio 2015 を使っている場合、そのインストーラーには Visual C++ for Cross-Platform Mobile Development をインストールするオプションが含まれます。このオプションでは、Visual Studio 2015 において必要な C++ 言語ツール、テンプレート、およびコンポーネントがインストールされます。
-
-1. Visual Studio 2015 インストーラーを実行します。 オプションのコンポーネントをインストールするために、インストールの種類として **[カスタム]** を選びます。 **[次へ]** を選んで、インストールするオプションのコンポーネントを選びます。
-
-1. **[機能の選択]** で、**[クロスプラットフォーム モバイル開発]** を展開し、**[Visual C++ モバイル開発]** を選びます。
-
-   ![[Visual C&#43;&#43; モバイル開発] を選択する](../cross-platform/media/cppmdd_install_vcmdd.png "CPPMDD_Install_VCMDD")
-
-   既定では、**[Visual C++ モバイル開発]** を選ぶと、**[プログラミング言語]** オプションは **[Visual C++]** をインストールするように設定され、**[共通ツールおよびソフトウェア開発キット]** オプションは必要なサード パーティ製コンポーネントをインストールするように設定されます。 必要な場合、その他のコンポーネントを選択することができます。 既定では、**[Microsoft Visual Studio Emulator for Android]** も選ばれます。 既にインストールされているコンポーネントは、一覧では非アクティブとして表示されます。
-
-   ユニバーサル Windows アプリをビルドし、Android および iOS プロジェクトとの間でコードを共有するには、**[機能の選択]** で、**[Windows 開発と Web 開発]** を展開し、**[ユニバーサル Windows アプリ開発ツール]** をオンにします。 ユニバーサル Windows アプリをビルドする予定がない場合は、このオプションを省略できます。
-
-   **[次へ]** を選択して続行します。
-
-1. サードパーティ製コンポーネントには、それぞれ独自のライセンス条項があります。 ライセンス条項を表示するには、各コンポーネントの横にある **[ライセンス条項]** リンクを選びます。 **[インストール]** を選択して、コンポーネントを追加し、Visual Studio と、Visual C++ for Cross-Platform Mobile Development をインストールします。
-
-1. インストールが完了したら、インストーラーを閉じて、コンピューターを再起動します。 サード パーティ製コンポーネントの一部の設定操作は、コンピューターを再起動するまで有効になりません。
-
-   > [!IMPORTANT]
-   > 確実にすべてを正しくインストールするには、再起動する必要があります。
-
-   Microsoft Visual Studio Emulator for Android コンポーネントのインストールが失敗した場合は、お使いのコンピューターで Hyper-V が有効になっていない可能性があります。 **[Windows の機能の有効化または無効化]** コントロール パネル アプリを使って Hyper-V を有効にしてから、Visual Studio インストーラーをもう一度実行ます。
-
-   > [!NOTE]
-   > お使いのコンピューターまたは Windows のバージョンで Hyper-V がサポートされていない場合は、Microsoft Visual Studio Emulator for Android コンポーネントを使用できません。 Windows の Home エディションには、Hyper-V のサポートが含まれていません。
-
-1. Visual Studio を開きます。 Visual Studio を実行するのが初めての場合は、構成してサインインするまでに時間がかかることがあります。 Visual Studio の準備が完了したら、 **[ツール]** メニューで **[拡張機能と更新プログラム]**、 **[更新プログラム]** の順に選びます。 Visual C++ for Cross-Platform Mobile Development または Microsoft Visual Studio Emulator for Android 用の利用可能な Visual Studio の更新プログラムがある場合は、それらをインストールします。
+> [!NOTE]
+> Visual Studio 2015 を使用している場合は、「[Visual C++ for Cross-Platform Mobile Development のインストール (Visual Studio 2015)](/cross-platform/install-visual-cpp-for-cross-platform-mobile-development?view=vs-2015)」をご覧ください
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 

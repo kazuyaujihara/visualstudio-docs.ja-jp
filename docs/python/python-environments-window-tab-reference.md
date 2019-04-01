@@ -1,7 +1,7 @@
 ---
 title: '[Python 環境] ウィンドウ リファレンス'
 description: Visual Studio の [Python 環境] ウィンドウに表示される各タブの詳細について説明します。
-ms.date: 12/06/2018
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f04d8045ebafea64634b156a57bc2f50a5009b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b55b2e1a34afa78ac1e122081eca261f3dcdabc8
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909987"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195207"
 ---
 # <a name="python-environments-window-tabs-reference"></a>[Python 環境] ウィンドウ タブ リファレンス
 
@@ -26,13 +26,23 @@ ms.locfileid: "55909987"
 
 **[Python 環境]** ウィンドウを大きく広げると、これらのオプションがタブとして表示され、より操作しやすくなります。 わかりやすくするために、この記事ではタブが拡大表示されています。
 
-![[Python Environments (Python 環境)] ウィンドウを広げた表示](media/environments-expanded-view.png)
+::: moniker range="vs-2017"
+![[Python Environments (Python 環境)] ウィンドウを広げた表示](media/environments/environments-expanded-view.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![[Python Environments (Python 環境)] ウィンドウを広げた表示](media/environments/environments-expanded-view-2019.png)
+::: moniker-end
 
 ## <a name="overview-tab"></a>[Overview (概要)] タブ
 
 環境の基本的な情報とコマンドを提供します。
 
-![[Python Environments (Python 環境)] の [Overview (概要)] タブ](media/environments-overview-tab.png)
+::: moniker range="vs-2017"
+![[Python Environments (Python 環境)] の [Overview (概要)] タブ](media/environments/environments-overview-tab.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![[Python Environments (Python 環境)] の [Overview (概要)] タブ](media/environments/environments-overview-tab-2019.png)
+::: moniker-end
 
 | コマンド | 説明 |
 | --- | --- |
@@ -52,13 +62,18 @@ ms.locfileid: "55909987"
 
 1. 環境をインストールすると、Visual Studio は *Documents\Visual Studio 2017\Python Scripts\\\<environment>* フォルダーを作成します。&lt;environment&gt; は、環境の名前と同じです。 **[対話型のスクリプトを確認する]** コマンドを使って、環境固有のフォルダーに簡単に移動できます。 その環境の**対話型**ウィンドウを開始すると、このフォルダーで見つかったすべての *.py* ファイルがアルファベット順に読み込まれて実行されます。
 
-1. **[ツール]** > **[オプション]** > **[Python ツール]** > **[対話型ウィンドウ]** タブ (「[対話型ウィンドウ オプション](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)」を参照) の **[スクリプト]** コントロールでは、すべての環境で読み込まれて実行されるスタートアップ スクリプトの追加フォルダーを指定します。 ただし、この機能は現時点では機能しません。
+1. **[ツール]** > **[オプション]** > **[Python]** > **[対話型ウィンドウ]** タブ (「[対話型ウィンドウ オプション](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)」を参照) の **[スクリプト]** コントロールでは、すべての環境で読み込まれて実行されるスタートアップ スクリプトの追加フォルダーを指定します。 ただし、この機能は現時点では機能しません。
 
 ## <a name="configure-tab"></a>[Configure (構成)] タブ
 
-次の表で説明するような詳細が表示されます。 このタブが存在しない場合は、Visual Studio がすべての詳細情報を自動的に管理していることを意味します。
+使用可能な場合、**[構成]** タブには次の表で説明するような詳細が表示されます。 このタブが存在しない場合は、Visual Studio がすべての詳細情報を自動的に管理していることを意味します。
 
-![[Python Environments (Python 環境)] の [Configure (構成)] タブ](media/environments-configure-tab.png)
+::: moniker range="vs-2017"
+![[Python Environments (Python 環境)] の [Configure (構成)] タブ](media/environments/environments-configure-tab.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![[Python Environments (Python 環境)] の [Configure (構成)] タブ](media/environments/environments-configure-tab-2019.png)
+::: moniker-end
 
 | フィールド | 説明 |
 | --- | --- |
@@ -75,35 +90,50 @@ ms.locfileid: "55909987"
 
 *旧バージョンでは "pip" も表示されます。*
 
-pip を使用して環境にインストールされているパッケージを管理します。それにより、ユーザーは新しいパッケージ (すべての依存関係を含む) の検索とインストールもできるようになります。 Visual Studio 2017 バージョン 15.7 以降では、代わりに conda パッケージ マネージャーを使用する **[パッケージ (Conda)]** タブが表示されます  (その選択肢が表示されない場合は、オプション **[ツール]** > **[オプション]** > **[Python]** > **[試験段階]** >  **[Use conda package manager when available (instead of pip)]\(使用可能な場合、(pip ではなく) conda パッケージ マネージャーを使用する\)** を設定して、Visual Studio を再起動します)。
+pip (**[パッケージ (PyPI)]** タブ) または Conda (**[パッケージ (Conda)]** タブ、Visual Studio 2017 バージョン 15.7 以降の Conda 環境の場合) を使用して、環境にインストールされたパッケージを管理します。 このタブでは、新しいパッケージを検索し、その依存関係と共にインストールすることもできます。
 
 既にインストールされているパッケージには、パッケージを更新するためのコントロール (上向き矢印) とアンインストールするためのコントロール (円内の X) が表示されます。
 
-![[Python 環境] の [パッケージ] タブ](media/environments-pip-tab-controls.png)
+![[Python 環境] の [パッケージ] タブ](media/environments/environments-pip-tab-controls.png)
 
 検索用語を入力すると、インストール済みのパッケージと PyPI からインストールできるパッケージの一覧がフィルター処理されます。
 
-!["num" で検索を実行中の [Python 環境] の [パッケージ] タブ](media/environments-pip-tab.png)
+::: moniker range="vs-2017"
+!["num" で検索を実行中の [Python 環境] の [パッケージ] タブ](media/environments/environments-pip-tab.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+!["num" で検索を実行中の [Python 環境] の [パッケージ] タブ](media/environments/environments-pip-tab-2019.png)
+::: moniker-end
 
 上の図に示すように、検索結果には、検索用語と一致するパッケージが多数表示されます。ただし、一覧の最初のエントリは、**pip install \<name>** を直接実行するコマンドです。 **[パッケージ (Conda)]** タブを表示している場合、代わりに **conda install \<name>** が表示されます。
 
-![conda インストール コマンドを表示している Conda パッケージ タブ](media/environments-conda-tab-install.png)
+::: moniker range="vs-2017"
+![conda インストール コマンドを表示している Conda パッケージ タブ](media/environments/environments-conda-tab-install.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![conda インストール コマンドを表示している Conda パッケージ タブ](media/environments/environments-conda-tab-install-2019.png)
+::: moniker-end
 
 どちらの場合でも、パッケージの名前の後に、検索ボックスに引数を追加してインストールをカスタマイズできます。 引数を含めた場合、検索結果で **pip install** または **conda install** の後に、検索ボックスの内容が表示されます。
 
-![pip および conda のインストール コマンドで引数を使用する](media/environments-pip-tab-arguments.png)
+::: moniker range="vs-2017"
+![pip および conda のインストール コマンドで引数を使用する](media/environments/environments-pip-tab-arguments.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![pip および conda のインストール コマンドで引数を使用する](media/environments/environments-pip-tab-arguments-2019.png)
+::: moniker-end
 
-パッケージをインストールすると、ファイル システム上の環境の *Lib* フォルダー内にサブフォルダーが作成されます。 たとえば、*c:\Python36* に Python 3.6 をインストールした場合、パッケージは *c:\Python36\Lib* にインストールされます。*c:\Program Files\Anaconda3* に Anaconda3 をインストールした場合は、パッケージは *c:\Program Files\Anaconda3\Lib* にインストールされます。
+パッケージをインストールすると、ファイル システム上の環境の *Lib* フォルダー内にサブフォルダーが作成されます。 たとえば、*c:\Python36* に Python 3.6 をインストールした場合、パッケージは *c:\Python36\Lib* にインストールされます。*c:\Program Files\Anaconda3* に Anaconda3 をインストールした場合は、パッケージは *c:\Program Files\Anaconda3\Lib* にインストールされます。 Conda 環境では、パッケージはその環境のフォルダーにインストールされます。
 
 ### <a name="grant-administrator-privileges-for-package-install"></a>パッケージのインストールのための管理者特権を付与する
 
 *c:\Program Files\Anaconda3\Lib* など、ファイル システムの保護された領域に置かれた環境にパッケージをインストールする場合、Visual Studio は、パッケージ サブフォルダーを作成できるように、管理者特権で `pip install` を実行する必要があります。 管理者特権への昇格が必要な場合、Visual Studio により "**この環境でパッケージのインストール、更新、削除を行うには、管理者特権が必要な場合があります**" というプロンプトが表示されます。
 
-![パッケージ インストールのための昇格時のプロンプト](media/environments-pip-elevate.png)
+![パッケージ インストールのための昇格時のプロンプト](media/environments/environments-pip-elevate.png)
 
 **[今すぐ昇格]** を選ぶと、1 回の操作について pip に管理者特権が付与され、アクセス許可を求めるオペレーティング システムのプロンプトも対象になります。 **[管理者特権なしで続行]** を選ぶと、パッケージのインストールは試みられますが、pip がフォルダーを作成しようとすると、"**エラー: 'C:\Program Files\Anaconda3\Lib\site-packages\png.py' を作成できませんでした: アクセス許可が拒否されました**" のような出力で失敗します。
 
-**[パッケージのインストール時か削除時に必ず昇格]** を選ぶと、対象の環境ではダイアログが表示されなくなります。 再びダイアログが表示されるようにするには、**[ツール]** > **[オプション]** > **[Python ツール]** > **[全般]** に移動し、**[永続的に表示されないすべてのダイアログをリセットする]** ボタンを選びます。
+**[パッケージのインストール時か削除時に必ず昇格]** を選ぶと、対象の環境ではダイアログが表示されなくなります。 再びダイアログが表示されるようにするには、**[ツール]** > **[オプション]** > **[Python]** > **[全般]** に移動し、**[永続的に表示されないすべてのダイアログをリセットする]** ボタンを選択します。
 
 同じ **[オプション]** タブでは、**[常に管理者として pip を実行する]** を選んで、すべての環境でダイアログを非表示にすることもできます。 「[Options - General tab](python-support-options-and-settings-in-visual-studio.md#general-options)」([全般] タブのオプション) をご覧ください。
 
@@ -111,7 +141,7 @@ pip を使用して環境にインストールされているパッケージを�
 
 Python 2.6、3.1、3.2 を使用する場合、Visual Studio には、"**Due to security restrictions, installing from the internet may not work on this version of Python (セキュリティ上の制限により、このバージョンの Python ではインターネットからのインストールが機能しない場合があります)**" という警告が示されます。
 
-![Python の以前のバージョンでの pip インストール制限についてのメッセージ](media/environments-old-version-restriction.png)
+![Python の以前のバージョンでの pip インストール制限についてのメッセージ](media/environments/environments-old-version-restriction.png)
 
 警告の理由は、Python の以前のバージョンでは、パッケージ ソース pypi.org からパッケージをダウンロードするために必要な、トランスポート セキュリティ層 (TLS) 1.2 のサポートが `pip install` に含まれていないことです。カスタムの Python ビルドは TLS 1.2 をサポートすることがあります。その場合 `pip install` が動作する可能性があります。
 
@@ -119,11 +149,12 @@ Python 2.6、3.1、3.2 を使用する場合、Visual Studio には、"**Due to 
 
 ただし、Python 2.7 または 3.3 にアップグレードすることをお勧めします。この場合、警告が表示されません。
 
+::: moniker range="vs-2017"
 ## <a name="intellisense-tab"></a>[IntelliSense] タブ
 
 IntelliSense 入力候補データベースの現在の状態を示します。
 
-![[Python Environments (Python 環境)] の [IntelliSense] タブ](media/environments-intellisense-tab.png)
+![[Python Environments (Python 環境)] の [IntelliSense] タブ](media/environments/environments-intellisense-tab.png)
 
 - **Visual Studio 2017 バージョン 15.5** 以前は、IntelliSense による補完は、そのライブラリ用にコンパイルされているデータベースに依存しています。 データベースの構築はライブラリのインストール時にバックグラウンドで実行されますが、時間がかかる可能性があり、コードの記述の開始時には完了していないことがあります。
 - **Visual Studio 2017 バージョン 15.6** 以降は、既定ではデータベースに依存せずに完了する迅速な方法が使用されます。 このため、タブのラベルは **IntelliSense [データベース無効]** になります。 データベースを有効にするには、オプション **[ツール]** > **[オプション]** > **[Python]** >  **[試験段階]** > **[Use new style IntelliSense for environments]\(環境に対して新しいスタイル IntelliSense を使用する\)** をクリアします。
@@ -131,6 +162,8 @@ IntelliSense 入力候補データベースの現在の状態を示します。
 Visual Studio は新しい環境を検出すると (またはユーザーが追加すると)、ライブラリのソース ファイルを分析することで、データベースのコンパイルを自動的に開始します。 インストールされている内容により、この処理には 1 分から 1 時間以上かかることがあります (たとえば、Anaconda には多くのライブラリが付属しており、データベースのコンパイルに少し時間がかかります)。完了すると、詳細な IntelliSense が提供され、新しいライブラリをインストールするまでデータベースを再度更新する (**[Refresh DB]\(DB の更新\)** ボタンで) 必要はありません。
 
 データがコンパイルされていないライブラリには、**!** が表示されます。環境のデータベースが完成していない場合は、**!** も メイン環境リストのライブラリの横に表示されます。
+
+::: moniker-end
 
 ## <a name="see-also"></a>関連項目
 

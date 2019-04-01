@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f59dceabb076ebce36755c41caa6de00258be883
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160642"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355186"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Visual Studio で usings を生成する
 
@@ -22,7 +22,7 @@ ms.locfileid: "58160642"
 
 - C#
 
-**概要:****概要:** コピーして貼り付けたコードの必要なインポートまたは [using ステートメント](/dotnet/csharp/language-reference/keywords/using-statement)をすぐに追加できます。
+**概要:** コピーして貼り付けたコードの必要なインポートまたは [using ステートメント](/dotnet/csharp/language-reference/keywords/using-statement)をすぐに追加できます。
 
 **条件:** プロジェクトまたはその他のコード ソースでさまざまな場所からコードをコピーし、貼り付けることは一般的に行われます。 このクイック アクションによって、コピーして貼り付けたコードのインポートの足りない部分が分析され、追加するように求められます。
 

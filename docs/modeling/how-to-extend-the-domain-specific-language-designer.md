@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fad34e853aee65f32d87145d1d0300495e07b9c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953998"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415968"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>方法: ドメイン固有言語デザイナーを拡張する
 
@@ -26,15 +26,13 @@ DSL 定義を編集するために使用するデザイナーには、拡張機�
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>DSL デザイナーの拡張機能ソリューションを作成するには
 
-1.  クラス ライブラリ プロジェクト テンプレートを使用して新しいプロジェクトを作成します。 **新しいプロジェクト**ダイアログ ボックスで、をクリックして**Visual c#** しをクリックして、中央のウィンドウで、**クラス ライブラリ**します。
+1.  使用して新しいプロジェクトを作成、**クラス ライブラリ**プロジェクト テンプレート。 このプロジェクトには、拡張機能のコードが含まれます。
 
-     このプロジェクトには、拡張機能のコードが含まれます。
-
-2.  VSIX プロジェクト テンプレートを使用して新しいプロジェクトを作成します。 **新しいプロジェクト** ダイアログ ボックスで、展開**Visual c#**、 をクリックして**拡張**、中央のウィンドウを選択し、 **VSIX プロジェクト**します。
+2.  新規作成**VSIX プロジェクト**プロジェクト。
 
      選択**ソリューションに追加**します。
 
-     Source.extension.vsixmanifest は、VSIX マニフェスト エディターで開きます。
+     *Source.extension.vsixmanifest* VSIX マニフェスト エディターで開きます。
 
 3.  コンテンツのフィールドの上をクリックして**コンテンツの追加**します。
 

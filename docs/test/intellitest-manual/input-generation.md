@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 18848503f80000bf81c2020797a466aa43a29c9d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 8634f1852d10a1935b3ee55b6e80ad9503923fe9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316900"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323543"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>動的なシンボリック実行を使用する入力生成
 
@@ -96,11 +96,11 @@ IntelliTest は、テストを生成する際に、生成されたテストの�
 
 * **内部メンバーの可視性**
   * IntelliTest は、生成されたテストで、外部の [PexClass](attribute-glossary.md#pexclass) に表示された内部メンバーにアクセスできると見なします。
-  .NET の **InternalsVisibleToAttribute** では、他のアセンブリに内部メンバーの可視性を拡張します。<p />
+  .NET の **InternalsVisibleToAttribute** では、他のアセンブリに内部メンバーの可視性を拡張します。
 
 * **[PexClass](attribute-glossary.md#pexclass) のプライベートおよびファミリ (C# で保護されている) メンバーの可視性**
   * IntelliTest は常に、[PexClass](attribute-glossary.md#pexclass) に直接、またはサブクラスに生成されたテストを配置します。 そのため、IntelliTest は、表示されたすべてのファミリ メンバー (C# で**保護されている**) を使用できると見なします。
-  * 生成されたテストが (通常は部分クラスを使用して) [PexClass](attribute-glossary.md#pexclass) に直接配置されている場合、IntelliTest は [PexClass](attribute-glossary.md#pexclass) のすべてのプライベート メンバーも使用できると見なします。<p />
+  * 生成されたテストが (通常は部分クラスを使用して) [PexClass](attribute-glossary.md#pexclass) に直接配置されている場合、IntelliTest は [PexClass](attribute-glossary.md#pexclass) のすべてのプライベート メンバーも使用できると見なします。
 
 * **パブリック メンバーの可視性**
   * IntelliTest は、[PexClass](attribute-glossary.md#pexclass) のコンテキストで表示される、エクスポートされたすべてのメンバーを使用できると見なします。

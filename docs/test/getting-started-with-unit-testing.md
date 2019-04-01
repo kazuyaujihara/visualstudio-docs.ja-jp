@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223521"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984119"
 ---
 # <a name="get-started-with-unit-testing"></a>単体テストの概要
 
@@ -112,25 +112,39 @@ Boost、Google、NUnit など、サードパーティのテスト フレーム�
 
 サードパーティのテスト フレームワークを有効にする手順は次のとおりです。
 
-1. メニュー バーで **[ツール]** > **[拡張機能と更新プログラム]** の順に選択します。
+::: moniker range="vs-2017"
 
-1. **[拡張機能と更新プログラム]** ダイアログ ボックスで **[オンライン]** カテゴリを展開し、**[Visual Studio Marketplace]** を選択します。 **[ツール]**、 > **[テスト]** の順に選択します。
+1. メニュー バーから **[ツール]** > **[拡張機能と更新プログラム]** を選択します。
+
+2. **[拡張機能と更新プログラム]** ダイアログ ボックスで **[オンライン]** カテゴリを展開し、**[Visual Studio Marketplace]** を選択します。 **[ツール]**、 > **[テスト]** の順に選択します。
 
    ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
 
-1. インストールするフレームワークまたはアダプターを選択し、**[ダウンロード]** を選択します。
+::: moniker-end
 
-1. クラス ライブラリ プロジェクトを作成し、ソリューションに追加します。
+::: moniker range=">=vs-2019"
+
+1. メニュー バーから **[拡張機能]** > **[拡張機能の管理]** を選択します。
+
+2. **[拡張機能の管理]** ダイアログ ボックスで **[オンライン]** カテゴリを展開し、**[Visual Studio Marketplace]** を選択します。 **[ツール]**、 > **[テスト]** の順に選択します。
+
+   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+
+::: moniker-end
+
+3. インストールするフレームワークまたはアダプターを選択し、**[ダウンロード]** を選択します。
+
+4. クラス ライブラリ プロジェクトを作成し、ソリューションに追加します。
 
    ![クラス ライブラリ プロジェクトに名前を付けて追加する](media/create3rdpartyunittest3.png)
 
-1. プラグインをインストールします。 **ソリューション エクスプローラー**で、クラス ライブラリ プロジェクトを選択し、その右クリック メニューまたはコンテキスト メニューから **[NuGet パッケージの管理]** を選択します。
+5. プラグインをインストールします。 **ソリューション エクスプローラー**で、クラス ライブラリ プロジェクトを選択し、その右クリック メニューまたはコンテキスト メニューから **[NuGet パッケージの管理]** を選択します。
 
    ![プラグインをインストールするための [NuGet パッケージの管理]](media/create3rdpartyunittest3a.png)
 
    [NuGet](https://www.nuget.org/) はプロジェクトのライブラリとツールの追加および更新に使用できる Visual Studio の拡張機能です。
 
-1. **[NuGet パッケージ マネージャー]** ウィンドウで、プラグインを探して選択し、**[インストール]** を選択します。
+6. **[NuGet パッケージ マネージャー]** ウィンドウで、プラグインを探して選択し、**[インストール]** を選択します。
 
    ![サード パーティのフレームワークをインストールする](media/create3rdpartyunittest4.png)
 
@@ -138,15 +152,15 @@ Boost、Google、NUnit など、サードパーティのテスト フレーム�
 
    ![サード パーティの単体テスト フレームワークの参照がソリューションに追加されている](media/create3rdpartyunittest6.png)
 
-1. クラス ライブラリ オブジェクトの **[参照]** ノードから **[参照の追加]** を選択します。
+7. クラス ライブラリ オブジェクトの **[参照]** ノードから **[参照の追加]** を選択します。
 
    ![プロジェクトに参照を追加する](media/createunittest6.png)
 
-1. **[参照マネージャー]** ダイアログ ボックスで、テストするコードが含まれるプロジェクトを選択します。
+8. **[参照マネージャー]** ダイアログ ボックスで、テストするコードが含まれるプロジェクトを選択します。
 
    ![テストするコード プロジェクトを選択する](media/createunittest7.png)
 
-1. 単体テストのコードを作成します。
+9. 単体テストのコードを作成します。
 
    ![コードを単体テスト コード ファイルに追加する](media/create3rdpartyunittest7.png)
 

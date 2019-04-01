@@ -1,8 +1,7 @@
----
+﻿---
 title: Windows スクリプト エンジン | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16e699ee789ae10883152b5d8aa7d8ffee0ddffd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572622"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157764"
 ---
 # <a name="windows-script-engines"></a>Windows スクリプト エンジン
 Microsoft Windows スクリプト エンジンを実装するには、次のインターフェイスをサポートする OLE COM オブジェクトを作成します。  
@@ -77,5 +76,5 @@ Microsoft Windows スクリプト エンジンを実装するには、次のイ�
   
  スクリプト サイトが単純なスレッド状態制御メソッド ([IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) メソッドなど) のコンテキスト内や [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) メソッドから呼び出されることはありません。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [Windows スクリプト インターフェイス](../winscript/windows-script-interfaces.md)

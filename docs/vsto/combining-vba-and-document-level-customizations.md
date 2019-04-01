@@ -1,4 +1,4 @@
----
+﻿---
 title: VBA とドキュメント レベルのカスタマイズを結合します。
 ms.date: 02/02/2017
 ms.topic: conceptual

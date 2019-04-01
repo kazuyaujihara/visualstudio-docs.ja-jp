@@ -7,18 +7,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39a6316265b6b3747f247890d45a769ef9240387
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596026"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984041"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>既存のアプリケーションを MSBuild 15 用に更新する
 
 15.0 より前のバージョンの MSBuild では、MSBuild はグローバル アセンブリ キャッシュ (GAC) から読み込まれ、MSBuild の拡張機能はレジストリにインストールされました。 これにより、すべてのアプリケーションは同じバージョンの MSBuild を使用し、同じツールセットにアクセスできましたが、異なるバージョンの Visual Studio を side-by-side インストールすることはできませんでした。
 
-より速くて小さい side-by-side インストールをサポートするため、Visual Studio 2017 では、MSBuild は GAC に配置されず、レジストリは変更されなくなりました。 残念ながら、これは、MSBuild API を使ってプロジェクトを評価またはビルドしたいアプリケーションは、Visual Studio のインストールに暗黙的に依存できないことを意味します。
+より速くて小さい side-by-side インストールをサポートするため、Visual Studio 2017 以降のバージョンでは、MSBuild は GAC に配置されず、レジストリは変更されなくなりました。 残念ながら、これは、MSBuild API を使ってプロジェクトを評価またはビルドしたいアプリケーションは、Visual Studio のインストールに暗黙的に依存できないことを意味します。
 
 ## <a name="use-msbuild-from-visual-studio"></a>Visual Studio から MSBuild を使用する
 
@@ -42,7 +42,7 @@ MSBuild が中央の場所から確実に読み込まれるようにするには
 
 NuGet パッケージから MSBuild アセンブリを参照するようにプロジェクト ファイルを変更します。 `ExcludeAssets=runtime` を指定して、アセンブリはビルド時にのみ必要であり、出力ディレクトリにコピーしてはならないことを、NuGet に伝えます。
 
-MSBuild パッケージのメジャー バージョンとマイナー バージョンは、サポートする予定の Visual Studio の最小バージョン以下でなければなりません。 任意のバージョンの Visual Studio 2017 をサポートする場合は、パッケージ バージョン `15.1.548` を参照します。
+MSBuild パッケージのメジャー バージョンとマイナー バージョンは、サポートする予定の Visual Studio の最小バージョン以下でなければなりません。 たとえば、Visual Studio 2017 以降のバージョンをサポートする場合は、バージョン `15.1.548` のパッケージを参照します。
 
 たとえば、次の XML を使用できます。
 

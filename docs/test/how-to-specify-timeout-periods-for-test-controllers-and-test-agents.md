@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d05ed422f5d08a1a8c7d4f1b2444d9b751aafaf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929233"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416098"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>方法:テスト コントローラーおよびテスト エージェントのタイムアウト期限を指定する
 
@@ -117,5 +117,4 @@ ms.locfileid: "55929233"
 - [テスト エージェントをインストールして構成する](../test/lab-management/install-configure-test-agents.md)
 - [ロード テストのログ設定の変更](../test/modify-load-test-logging-settings.md)
 - [テスト コントローラーおよびテスト エージェント用のポートの構成](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [方法: ログ ファイルの最大サイズを指定する](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [方法: ネットワーク アダプターにテスト コントローラーまたはテスト エージェントをバインドする](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

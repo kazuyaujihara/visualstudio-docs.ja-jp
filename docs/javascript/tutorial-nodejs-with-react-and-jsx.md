@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9259b5a813dc09389c57288e13eafd5a3adb0064
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 58d8cba033fd3e43b8e54afdc7651a45df17a59a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55770571"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069984"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と React のアプリを作成する
 
@@ -57,11 +57,18 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Visual Studio 2017 および Node.js 開発ワークロードをインストールしている必要があります。
+* Visual Studio および Node.js 開発ワークロードをインストールしている必要があります。
 
-    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker-end
 
-    ワークロードをインストールする必要があるが、既に Visual Studio を所有している場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクを選択します。 Visual Studio インストーラーが起動します。 **[Node.js 開発]** ワークロードを選択し、**[変更]** を選択します。
+    Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、**[ツール]** > **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、**[変更]** を選択します。
+
+    ![VS インストーラーの Node.js ワークロード](../ide/media/quickstart-nodejs-workload.png)
 
 * Node.js ランタイムをインストールしている必要があります。
 
@@ -73,13 +80,19 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 
 まず、Node.js Web アプリケーション プロジェクトを作成します。
 
-1. Visual Studio 2017 を開きます。
+1. Visual Studio を開きます。
 
 1. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-1. **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[JavaScript]** を展開し、**[Node.js]** を選択します。 中央のウィンドウで、**[空白の Node.js Web アプリケーション]** を選択し、名前に「**NodejsWebAppBlank**」と入力してから、**[OK]** を選択します。
+1. 新しいプロジェクトを作成します。
 
-     **[空白の Node.js Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、最初に Node.js 開発ワークロードをインストールする必要があります。
+    ::: moniker range=">=vs-2019"
+    **[新しいプロジェクトの作成]** ダイアログ ボックスで検索ボックスに「**javascript**」と入力して結果をフィルター処理した後、**[空の Node.js Web アプリケーション]** を選択してから **[次へ]** を選択します。 次に、**[作成]** を選択します。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[JavaScript]** を展開し、**[Node.js]** を選択します。 中央のウィンドウで、**[空白の Node.js Web アプリケーション]** を選択し、名前に「**NodejsWebAppBlank**」と入力してから、**[OK]** を選択します。
+    ::: moniker-end
+    **[空白の Node.js Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発**ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
 
     Visual Studio は新しいソリューションを作成し、プロジェクトを開きます。
 
@@ -377,7 +390,7 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 
     ![プロセスにアタッチする](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    Visual Studio で DOM Explorer と JavaScript コンソールが開けば、デバッガーが正しくアタッチしたことがわかります。 これらのデバッグ ツールは、Chrome の開発者ツールや Edge の F12 ツールに似ています。
+    Visual Studio で DOM Explorer と JavaScript コンソールが開けば、デバッガーが正しくアタッチしたことがわかります。 これらのデバッグ ツールは、Chrome の開発者ツールや Microsoft Edge の F12 ツールに似ています。
 
     > [!NOTE]
     > デバッガーがアタッチされず、「プロセスにアタッチできません。 現在の状態での操作は無効です。」というメッセージが表示される場合、Chrome をデバッグ モードで開始する前に、タスク マネージャーを使用して Chrome のすべてのインスタンスを閉じます。 Chrome の拡張機能が実行され、フル デバッグ モードが阻止されている場合があります。

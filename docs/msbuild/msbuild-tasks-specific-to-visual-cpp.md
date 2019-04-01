@@ -1,6 +1,6 @@
 ---
 title: Visual C++ に固有の MSBuild タスク | Microsoft Docs
-ms.date: 06/27/2018
+ms.date: 03/10/2019
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,18 +15,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e676e8fc3bbd8532e5261ab2095fc67380e27ca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 243ed824ba278300a798a34b05854129e8197504
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597063"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984015"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visual C++ に固有の MSBuild タスク
 タスクでは、ビルド プロセスの間に実行するコードを指定します。 Visual C++ をインストールすると、次のタスクは [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] にインストールされたタスク以外に使用できます。 詳細については、「[MSBuild (Visual C++) の概要](/cpp/build/msbuild-visual-cpp-overview)」を参照してください。
 
  タスクごとのパラメーターのほか、すべてのタスクに以下のパラメーターがあります。
-
 
 | パラメーター | 説明 |
 |-------------------| - |
@@ -40,13 +39,22 @@ ms.locfileid: "56597063"
 |[BscMake タスク](../msbuild/bscmake-task.md)|Microsoft Browse Information Maintenance Utility ツール (*bscmake.exe*) をラップします。|
 |[CL タスク](../msbuild/cl-task.md)|Visual C++ コンパイラ ツール (*cl.exe*) をラップします。|
 |[CPPClean タスク](../msbuild/cppclean-task.md)|Visual C++ プロジェクトのビルド時に MSBuild によって作成される一時ファイルを削除します。|
+|[ClangCompile タスク](../msbuild/clangcompile-task.md)|Visual C++ コンパイラ ツール (*clang.exe*) をラップします。|
+|[CustomBuild タスク](../msbuild/custombuild-task.md)|Visual C++ コンパイラ ツール (*cmd.exe*) をラップします。|
+|[FXC タスク](../msbuild/fxc-task.md)|ビルド プロセスで HLSL シェーダー コンパイラを使用します。|
+|[GetOutOfDateItems](../msbuild/getoutofdateitems-task.md)|古い tlog を読み取り、新しい tlog 書き込んで、最新ではない項目のセットを返します。 (ヘルパー タスク)|
+|[GetOutputFileName](../msbuild/getoutputfilename-task.md)|cl や他のツールの出力ファイル名を取得します。これにより、出力ディレクトリのみを指定する、完全なファイル名を指定する、または何も指定しないことが可能になります。 (ヘルパー タスク)|
 |[LIB タスク](../msbuild/lib-task.md)|Microsoft 32-Bit Library Manager ツール (*lib.exe*) をラップします。|
 |[Link タスク](../msbuild/link-task.md)|Visual C++ リンカー ツール (*link.exe*) をラップします。|
 |[MIDL タスク](../msbuild/midl-task.md)|Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Definition Language) コンパイラ ツール (*midl.exe*) をラップします。|
 |[MT タスク](../msbuild/mt-task.md)|Microsoft マニフェスト ツール (*mt.exe*) をラップします。|
+|[MultiToolTask タスク](../msbuild/multitooltask-task.md)|説明はありません。|
+|[ParallelCustomBuild タスク](../msbuild/parallelcustombuild-task.md)|[CustomBuild タスク](../msbuild/custombuild-task.md)の並列インスタンスを実行します。|
 |[RC タスク](../msbuild/rc-task.md)|Microsoft Windows リソース コンパイラ ツール (*rc.exe*) をラップします。|
 |[SetEnv タスク](../msbuild/setenv-task.md)|指定された環境変数の値を設定または削除します。|
+|[TrackedVCToolTask 基底クラス](../msbuild/trackedvctooltask-base-class.md)|[VCToolTask](../msbuild/vctooltask-base-class.md) から継承します。|
 |[VCMessage タスク](../msbuild/vcmessage-task.md)|ビルド時の警告メッセージおよびエラー メッセージをログに記録します。 (拡張できません。 内部使用のみ。)|
+|[VCToolTask 基底クラス](../msbuild/vctooltask-base-class.md)|[ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) から継承します。|
 |[XDCMake タスク](../msbuild/xdcmake-task.md)|XML ドキュメント ツール (*xdcmake.exe*) をラップします。このツールは、XML ドキュメント コメント (*.xdc*) ファイルを *.xml* ファイルにマージします。|
 |[XSD タスク](../msbuild/xsd-task.md)|ソースからスキーマまたはクラス ファイルを生成する XML スキーマ定義ツール (*xsd.exe*) をラップします。 *下記のメモをご覧ください。*|
 |[MSBuild リファレンス](../msbuild/msbuild-reference.md)|MSBuild システムの要素について説明します。|
@@ -54,4 +62,4 @@ ms.locfileid: "56597063"
 |[タスクの作成](../msbuild/task-writing.md)|タスクを作成する方法を説明します。|
 
 > [!NOTE]
-> Visual Studio 2017 では、C++ プロジェクトの *xsd.exe* のサポートは非推奨です。 *CppCodeProvider.dll* を手動で GAC に追加して、**Microsoft.VisualC.CppCodeProvider** API を引き続き使用することができます。
+> Visual Studio 2017 以降では、C++ プロジェクトでの *xsd.exe* のサポートは非推奨です。 *CppCodeProvider.dll* を手動で GAC に追加して、**Microsoft.VisualC.CppCodeProvider** API を引き続き使用することができます。

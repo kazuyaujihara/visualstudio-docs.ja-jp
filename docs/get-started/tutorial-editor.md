@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c17fc93602f3d6f80941ca84f372d57c0cde43
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3aacddcd5cd27435b92b4689999e6d9dc5ca190b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950488"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069815"
 ---
 # <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
 
@@ -31,9 +31,21 @@ ms.locfileid: "55950488"
 
 新しいファイルを作成し、何らかのコードをそのファイルに追加することから始めます。
 
-1. Visual Studio を開き、メニュー バーの **[ファイル]** メニューから、**[新規作成]**、**[ファイル]** の順に選択します。
+::: moniker range="vs-2017"
 
-1. **[新しいファイル]** ダイアログ ボックスの **[全般]** カテゴリで、**[Visual C# クラス]** を選択し、**[開く]** を選択します。
+1. Visual Studio を開きます。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio を開きます。 スタート ウィンドウで **Esc** キーを押すか、または **[コードなしで続行]** をクリックして、開発環境を開きます。
+
+::: moniker-end
+
+2. メニュー バーの **[ファイル]** メニューから、**[新規作成]** > **[ファイル]** を選択します。
+
+3. **[新しいファイル]** ダイアログ ボックスの **[全般]** カテゴリで、**[Visual C# クラス]** を選択し、**[開く]** を選択します。
 
    エディターで新しいファイルが開かれ、C# クラスのスケルトンが表示されます。 (コード エディターによって提供される利点の一部を活用するために、完全な Visual Studio プロジェクトを作成する必要はありません。必要なのはコード ファイルだけです)
 

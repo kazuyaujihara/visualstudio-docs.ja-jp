@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952360"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325280"
 ---
 # <a name="exploration-bounds"></a>探索の範囲
 
@@ -29,17 +29,17 @@ public partial class FooTest {...}
 
 * **制約解決の範囲**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime) - [制約ソルバー](input-generation.md#constraint-solver)が、新しい別の実行パスに従うことになる入力を検出する必要がある時間 (秒単位)。
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) - [制約ソルバー](input-generation.md#constraint-solver)が入力の検出に使用できるサイズ (メガバイト単位)。<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) - [制約ソルバー](input-generation.md#constraint-solver)が入力の検出に使用できるサイズ (メガバイト単位)。
 * **探索パスの範囲**
   * [MaxBranches](#maxbranches) - 1 回の実行パス中に実行できる分岐の最大数。
   * [MaxCalls](#maxcalls) - 1 回の実行パス中に実行できる呼び出しの最大数。
   * [MaxStack](#maxstack) - 1 回の実行パス中の任意の時点でのスタックの最大サイズ。アクティブな呼び出しフレームの数として測定されます。
-  * [MaxConditions](#maxconditions) - 1 回の実行パス中に確認できる入力に対する条件の最大数。<p />
+  * [MaxConditions](#maxconditions) - 1 回の実行パス中に確認できる入力に対する条件の最大数。
 * **探索の範囲**
   * [MaxRuns](#maxruns) - 探索中に試行される実行の最大数。
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) - 新しいテストが生成されずに連続する実行の最大数。
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) - 探索中に試行される一意の実行パスでの実行の最大数。
-  * [MaxExceptions](#maxexceptions) - 検出されたすべての実行パスの組み合わせで検索できる例外の最大数。<p />
+  * [MaxExceptions](#maxexceptions) - 検出されたすべての実行パスの組み合わせで検索できる例外の最大数。
 * **テスト スイート コード生成の設定**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded) - true の場合、パスの範囲のいずれか ([MaxCalls](#maxcalls)、[MaxBranches](#maxbranches)、[MaxStack](#maxstack)、[MaxConditions](#maxconditions)) を超える実行パスは無視されます。
   * [TestEmissionFilter](#testemissionfilter) - IntelliTest がテストを生成する必要がある状況を示します。

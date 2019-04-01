@@ -1,7 +1,7 @@
 # [Visual Studio for Mac](index.yml)
-# [IDE ツアー](/visualstudio/mac/ide-tour/)
+# [IDE ツアー](ide-tour.md)
 
-# [インストール](/visualstudio/mac/installation/)
+# [インストール](installation.md)
 ## [ファイアウォールまたはプロキシの内側にインストールして使用する](install-behind-a-firewall-or-proxy-server.md)
 ## [プレビュー リリースをインストールする](install-preview.md)
 ## [更新](update.md)

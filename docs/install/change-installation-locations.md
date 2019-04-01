@@ -14,16 +14,28 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e69c42cc0d726eba7e2c3c7f9a2decc9dd89e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 842fed287a6035684534c3d735d146e1b9a0fbfb
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947823"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324975"
 ---
-# <a name="select-the-installation-locations-in-visual-studio-2017"></a>Visual Studio 2017 でインストールの場所を選択する
+# <a name="select-the-installation-locations-in-visual-studio"></a>Visual Studio でインストールの場所を選択する
 
-**15.7 の新機能**:一部のファイル用の場所を変更することで、ご利用のシステム ドライブ上の Visual Studio のインストール占有領域を減らせるようになりました。 具体的には、ダウンロード キャッシュ、共有コンポーネント、SDK、およびツールのファイルに異なる場所を使用できます。
+::: moniker range="vs-2017"
+
+**バージョン 15.7 の新機能**:一部のファイル用の場所を変更することで、ご利用のシステム ドライブ上の Visual Studio のインストール占有領域を減らせるようになりました。 具体的には、ダウンロード キャッシュ、共有コンポーネント、SDK、およびツールのファイルに異なる場所を使用できます。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+一部のファイル用の場所を変更することで、ご利用のシステム ドライブ上の Visual Studio のインストール占有領域を減らせるようになりました。 具体的には、ダウンロード キャッシュ、共有コンポーネント、SDK、およびツールのファイルに異なる場所を使用できます。
+
+::: moniker-end
 
    > [!NOTE]
    > 一部のツールと SDK では、インストールできる場所に関するルールが異なります。 これらのツールおよび SDK は、お客様が別の場所を選択した場合でも、ご利用のシステム ドライブにインストールされます。
@@ -64,7 +76,7 @@ ms.locfileid: "55947823"
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 のインストール](install-visual-studio.md)
-* [Visual Studio 2017 の更新](update-visual-studio.md)
-* [Visual Studio 2017 の変更](update-visual-studio.md)
-* [Visual Studio 2017 のアンインストール](uninstall-visual-studio.md)
+* [Visual Studio のインストール](install-visual-studio.md)
+* [Visual Studio の更新](update-visual-studio.md)
+* [Visual Studio の変更](update-visual-studio.md)
+* [Visual Studio のアンインストール](uninstall-visual-studio.md)

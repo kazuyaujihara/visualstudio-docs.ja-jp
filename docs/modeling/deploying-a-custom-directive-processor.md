@@ -1,4 +1,4 @@
-﻿---
+---
 title: カスタム ディレクティブ プロセッサの配置
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad29fbc042e9f6397dc1f09fe3fce81f20403aa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c139e2a9675bdbe204b54220709ac8cdc794e5b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932054"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416059"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>カスタム ディレクティブ プロセッサの配置
 
@@ -22,9 +22,9 @@ ms.locfileid: "55932054"
 
 次の方法があります。
 
--   [Visual Studio 拡張機能](../extensibility/shipping-visual-studio-extensions.md) これを使用すると、ディレクティブ プロセッサを自分のコンピューターと他のコンピューターの両方でインストールおよびアンインストールできます。通常は、他の機能も同じ VSIX にパッケージ化します。
+-   [Visual Studio 拡張機能](../extensibility/shipping-visual-studio-extensions.md)  これを使用すると、ディレクティブ プロセッサを自分のコンピューターと他のコンピューターの両方でインストールおよびアンインストールできます。 通常は、他の機能も同じ VSIX にパッケージ化します。
 
--   [VSPackage](../extensibility/internals/vspackages.md) ディレクティブ プロセッサ以外の機能も含む VSPackage を定義する場合は、ディレクティブ プロセッサの便利な登録方法を利用できます。
+-   [VSPackage](../extensibility/internals/vspackages.md)  ディレクティブ プロセッサ以外の機能も含む VSPackage を定義する場合は、ディレクティブ プロセッサの便利な登録方法を利用できます。
 
 -   レジストリ キーを設定する。 この方法では、ディレクティブ プロセッサのレジストリ エントリを追加します。
 
@@ -32,7 +32,7 @@ Visual Studio または MSBuild でテキスト テンプレートを変換す�
 
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>VSIX でのディレクティブ プロセッサの配置
 
-カスタム ディレクティブ プロセッサを、[Visual Studio 拡張機能 (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md) に追加することができます。 
+カスタム ディレクティブ プロセッサを、[Visual Studio 拡張機能 (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md) に追加することができます。
 
  .vsix ファイルに次の 2 つのアイテムが格納されていることを確認する必要があります。
 
@@ -46,13 +46,11 @@ Visual Studio または MSBuild でテキスト テンプレートを変換す�
 
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>VSIX プロジェクトでカスタム ディレクティブ プロセッサを作成するには
 
-1.  Visual Studio で VSIX プロジェクトを作成します。
-
-    -   **新しいプロジェクト** ダイアログ ボックスで、**Visual Basic** または **Visual C#** を展開し、次いで、**Extensibility** を展開します。 **VSIX プロジェクト**をクリックします。
+1.  新規作成**VSIX プロジェクト**プロジェクト。
 
 2.  **Source.extension.vsixmanifest** のコンテンツの種類をサポートされているエディションに設定します。
 
-    1.  VSIX マニフェスト エディターの **Assets** タブで、**New** を選択し、新しい項目のプロパティを設定します。
+    1.  VVSIX マニフェスト エディターの **Assets** タブで、**New** を選択し、新しい項目のプロパティを設定します。
 
          **Content Type** = **VSPackage**
 
@@ -115,7 +113,7 @@ Visual Studio または MSBuild でテキスト テンプレートを変換す�
 
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>カスタム ディレクティブ プロセッサをアンインストールするか、一時的に無効にするには
 
-1.  Visual Studio の **[ツール]** メニューで、**[拡張機能マネージャー]** をクリックします。
+1.  Visual Studio の **ツール** メニューで、**拡張機能マネージャー** をクリックします。
 
 2.  ディレクティブ プロセッサを含む VSIX を選択し、**[アンインストール]** または **[無効化]** をクリックします。
 
@@ -126,7 +124,7 @@ Visual Studio または MSBuild でテキスト テンプレートを変換す�
 
 -   `IsDirectiveSupported` メソッドは、`true` の名前が渡されたときに `CustomDirective` を返す必要があります。
 
--   拡張機能マネージャーで拡張機能が表示されず、システムがインストールを許可しない場合、**%localappdata%\Microsoft\VisualStudio\\\*.0\Extensions\\** から拡張機能を削除してください。
+-   拡張機能マネージャーで拡張機能が表示されず、システムがインストールを許可しない場合、**%localappdata%\Microsoft\VisualStudio\\\*.0\Extensions\\** から拡張機能を削除してください.
 
 -   .vsix ファイルを開き、そのコンテンツを調べます。 .vsix ファイルを開くには、ファイル名拡張子を .zip に変更します。 このファイルに .dll、.pkgdef、および extension.vsixmanifest の各ファイルが含まれていることを確認します。 extension.vsixmanifest ファイルには、SupportedProducts ノードに適切なリストが含まれ、かつ Content ノードに VsPackage ノードが含まれている必要があります。
 
@@ -172,7 +170,7 @@ Visual Studio または MSBuild でテキスト テンプレートを変換す�
 
 3. ディレクティブ プロセッサ クラスと同じ名前のレジストリ キーを追加します。
 
-   -   レジストリ ツリーの **DirectiveProcessors** ノードで右クリックし、**新規**をポイントし、**キー**をクリックします。
+   -   レジストリ ツリーの **DirectiveProcessors** ノードで右クリックし、**[新規]** をポイントし、**[キー]** をクリックします。
 
 4. 新しいノードで、次の表に従って Class および CodeBase または Assembly に文字列値を追加します。
 
@@ -187,7 +185,7 @@ Visual Studio または MSBuild でテキスト テンプレートを変換す�
 |名前|型|データ|
 |-|-|-|
 |(既定)|REG_SZ|(値の設定なし)|
-|クラス|REG_SZ|**\<Namespace 名>.<クラス名>**|
+|クラス|REG_SZ|**\<Namespace 名>.\<クラス名>**|
 |CodeBase|REG_SZ|**\<パス>\\<アセンブリ名\>**|
 
  アセンブリが GAC に含まれている場合は、レジストリ サブキーを次の表に従って設定します。

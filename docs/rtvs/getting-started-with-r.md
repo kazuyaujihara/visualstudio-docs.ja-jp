@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: d3ef293b4e25f85cd901c42382158bdd75742e26
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936422"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324204"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>R Tools for Visual Studio の概要
 
@@ -21,7 +21,7 @@ R Tools for Visual Studio (RTVS) をインストールすると ([インスト�
 
 ## <a name="create-an-r-project"></a>R プロジェクトの作成
 
-1. Visual Studio を起動します。
+1. Visual Studio を開きます。
 1. **[ファイル]**、**[新規作成]**、**[プロジェクト]** の順に選択します (**Ctrl**+**Shift**+**N**)。
 1. **[テンプレート]** の **[R]** から "R Project" を選択し、プロジェクトに名前と場所を指定し、**[OK]** を選択します。
 

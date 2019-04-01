@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: da816891c53d4576518102ad7438c735c415f7b4
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: a48fe46b8f46c9ea3f6c14ebe44315eafa1c56d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768386"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070322"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と Express のアプリを作成する
 
@@ -48,11 +48,18 @@ Express は Web アプリケーション フレームワークであり、Node.j
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Visual Studio 2017 および Node.js 開発ワークロードをインストールしている必要があります。
+* Visual Studio および Node.js 開発ワークロードをインストールしている必要があります。
 
-    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker-end
 
-    ワークロードをインストールする必要があるが、既に Visual Studio を所有している場合は、(**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択し) **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **[Node.js 開発]** ワークロードを選択し、**[変更]** を選択します。
+    Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、**[ツール]** > **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、**[変更]** を選択します。
+
+    ![VS インストーラーの Node.js ワークロード](../ide/media/quickstart-nodejs-workload.png)
 
 * Node.js ランタイムをインストールしている必要があります。
 
@@ -66,13 +73,19 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
 
 このチュートリアルでは、Node.js と Express アプリのコードを含む簡単なプロジェクトから開始します。
 
-1. Visual Studio 2017 を開きます。
+1. Visual Studio を開きます。
 
 1. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-1. **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[JavaScript]** を展開し、**[Node.js]** を選択します。 真ん中のウィンドウで **[基本の Azure Node.js Express 4 アプリケーション]** を選択し、**[OK]** を選択します。
+1. 新しいプロジェクトを作成します。
 
-     **[基本の Azure Node.js Express 4 アプリケーション]** プロジェクト テンプレートが表示されない場合は、最初に **Node.js 開発**ワークロードをインストールする必要があります (「必須コンポーネント」を参照してください)。
+    ::: moniker range=">=vs-2019"
+    **[新しいプロジェクトの作成]** ダイアログ ボックスで、検索ボックスに「**javascript**」と入力して結果をフィルター処理した後、**[基本の Azure Node.js Express 4 アプリケーション]** を選択してから **[次へ]** を選択します。 次に、**[作成]** を選択します。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[JavaScript]** を展開し、**[Node.js]** を選択します。 真ん中のウィンドウで **[基本の Azure Node.js Express 4 アプリケーション]** を選択し、**[OK]** を選択します。
+    ::: moniker-end
+    **[基本の Azure Node.js Express 4 アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発**ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
 
     Visual Studio は新しいソリューションを作成し、右のウィンドウでプロジェクトを開きます。 *app.js* プロジェクト ファイルがエディター (左のウィンドウ) で開きます。
 
@@ -191,7 +204,7 @@ IntelliSense は、コードの記述を支援する Visual Studio ツールで�
 
 ## <a name="run-the-application"></a>アプリケーションの実行
 
-1. デバッグ ツール バーで Microsoft Edge や Chrome などのデバッグ ターゲットを選択します。
+1. デバッグ ツール バーで、Microsoft Edge や Chrome などのデバッグ ターゲットを選択します。
 
     ![デバッグ ターゲットを選択する](../javascript/media/tutorial-nodejs-deploy-target.png)
 

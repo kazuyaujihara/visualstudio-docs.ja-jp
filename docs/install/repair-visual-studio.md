@@ -5,19 +5,21 @@ description: Visual Studio 2017 のインストールを修復する方法につ
 ms.date: 01/15/2019
 ms.custom: seodec18
 ms.topic: conceptual
-author: PoulChapman
+author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a047512b8f6434661193f088f981c52c0ad118
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 6412ec7416fa9c8e304fd70fc0a2e65262e0ef83
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939438"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322172"
 ---
-# <a name="repair-visual-studio-2017"></a>Visual Studio 2017 の修復
+# <a name="repair-visual-studio"></a>Visual Studio を修復します
 
 Visual Studio のインストールが損傷したり、破損したりすることがあります。 修復により、これを修正できます。
 
@@ -39,7 +41,7 @@ Visual Studio のインストールが損傷したり、破損したりするこ
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 のインストール](install-visual-studio.md)
-* [Visual Studio 2017 の更新](update-visual-studio.md)
-* [Visual Studio 2017 のアンインストール](uninstall-visual-studio.md)
-* [Visual Studio 2017 のインストールとアップグレードの問題のトラブルシューティング](troubleshooting-installation-issues.md)
+* [Visual Studio のインストール](install-visual-studio.md)
+* [Visual Studio の更新](update-visual-studio.md)
+* [Visual Studio のアンインストール](uninstall-visual-studio.md)
+* [Visual Studio のインストールとアップグレードの問題のトラブルシューティング](troubleshooting-installation-issues.md)

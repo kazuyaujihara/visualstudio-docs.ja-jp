@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc927a9d3f4414d8bdf769ad697e9e209ae8f5c5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 68fdb7169bc87979cac56480664bfdbeab748c51
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323197"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323478"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>C\# を使用するプロジェクトとソリューションについて理解する
 
@@ -38,9 +38,11 @@ ms.locfileid: "57323197"
 
 空のソリューションを作成するところから説明を始めます。 Visual Studio に慣れてきても、自分が空のソリューションを頻繁に作成していることにはほとんど気づかないでしょう。 Visual Studio で新しいプロジェクトを作成するとき、ソリューションがまだ開いていなければ、プロジェクトを格納するためのソリューションが自動的に作成されます。
 
+::: moniker range="vs-2017"
+
 1. Visual Studio を開きます。
 
-1. メニュー バー (**[ファイル]** や **[編集]** などのメニューの行) で、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
    **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
@@ -49,6 +51,22 @@ ms.locfileid: "57323197"
    ![Visual Studio での空のソリューション テンプレート](../media/tutorial-projects-new-solution.png)
 
    **[スタート ページ]** が閉じて、Visual Studio ウィンドウの右側にある**ソリューション エクスプローラー**にソリューションが表示されます。 多くの場合、**ソリューション エクスプローラー**を使用して、プロジェクトの内容を参照することになります。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio を開きます。
+
+2. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+
+3. **[新しいプロジェクトの作成]** ページで、検索ボックスに「**空のソリューション**」と入力し、**[空のソリューション]** テンプレートを選択して、**[次へ]** を選択します。
+
+4. ソリューションに **QuickSolution** という名前を設定して、**[作成]** を選択します。
+
+   Visual Studio ウィンドウの右側にある**ソリューション エクスプローラー**にソリューションが表示されます。 多くの場合、**ソリューション エクスプローラー**を使用して、プロジェクトの内容を参照することになります。
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>プロジェクトを追加する
 

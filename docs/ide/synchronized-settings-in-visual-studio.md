@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221880"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869045"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>複数のコンピューター間で Visual Studio 設定を同期する
 
@@ -41,7 +41,7 @@ ms.locfileid: "57221880"
 
    - **[環境]** > **[スタートアップ]** オプション ページのすべての設定。
 
-   - **[テキスト エディター]** オプション ページのすべての設定。
+   - **テキスト エディター**のオプション ページでのすべての設定。[コード スタイルのユーザー設定](code-styles-and-quick-actions.md)など。
 
    - **[XAML デザイナー]** オプション ページのすべての設定。
 
@@ -75,7 +75,7 @@ Visual Studio の異なるサイド バイ サイド インストールの間で
 
 3. **[開発者コマンド プロンプト for VS 2017]** を開き、`devenv /resetuserdata` を実行します。
 
-1. Visual Studio を起動し、エクスポートした設定ファイルから保存済みの設定をインポートします。
+1. Visual Studio を開き、エクスポートした設定ファイルから保存済みの設定をインポートします。
 
 ::: moniker-end
 

@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fb70eca0ae2f2998752ccc0f096f594e6825e4e8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 36985ab7a0ee94cb735b1954a9e5ea9c2e0d2bbf
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221945"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869097"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform アナライザーの概要
 
-Visual Studio には、入力したときに C# や Visual Basic のコードを分析する、組み込みの .NET Compiler Platform アナライザーのセットが含まれています。 アナライザーでは、コード スタイル、コードの品質と保守性、コード設計、およびその他の問題が確認されます。 Visual Studio 拡張機能として、または NuGet パッケージとしてプロジェクトごとに、追加のアナライザーをインストールできます。
+.NET Compiler Platform ("Roslyn") のアナライザーでは、コードのスタイル、品質と保守容易性、設計、その他の問題が分析されます。 Visual Studio には、ユーザーが入力した C# や Visual Basic のコードを分析する、組み込みのアナライザーのセットが含まれています。 [テキスト エディターの [オプション]](../ide/code-styles-and-quick-actions.md) ページまたは [.editorconfig ファイル](../ide/editorconfig-code-style-settings-reference.md)で、これらの組み込みアナライザーのユーザー設定を構成します。 Visual Studio 拡張機能または NuGet パッケージとして、追加のアナライザーをインストールできます。
 
-アナライザーでルール違反が見つかった場合は、コード エディターで問題のあるコードの下に*波線* として報告され、**[エラー一覧]** でも報告されます。
+アナライザーでルール違反が見つかった場合は、コード エディター (問題のあるコードの下の "*波線*" として) および **[エラー一覧]** ウィンドウで報告されます。
 
-多くのアナライザー ルール (*診断*) には、1 つ以上の*コード修正*が関連付けられており、これを適用して問題を修正できます。 Visual Studio に組み込まれているアナライザー診断には、それぞれコード修正が関連付けられています。 コード修正は電球アイコン メニューに、他の種類の*クイック アクション* と共に示されます。 これらのコード修正については、「[共通のクイック アクション](../ide/common-quick-actions.md)」を参照してください。
+多くのアナライザー ルール (*診断*) には、1 つ以上の*コード修正*が関連付けられており、これを適用して問題を修正できます。 Visual Studio に組み込まれているアナライザー診断には、それぞれコード修正が関連付けられています。 コード修正は、電球アイコン メニューに、他の種類の[クイック アクション](../ide/quick-actions.md)と共に示されます。 これらのコード修正については、「[共通のクイック アクション](../ide/common-quick-actions.md)」を参照してください。
 
 ![アナライザーの違反とクイック アクションのコード修正](../code-quality/media/built-in-analyzer-code-fix.png)
 
@@ -36,7 +36,7 @@ Visual Studio には、入力したときに C# や Visual Basic のコードを
 
 ![コード エディターの波線](media/diagnostics-severity-colors.png)
 
-有効になっている場合はスタティック コード分析と同様、Roslyn アナライザーでビルド時にコードが分析されますが、入力中もライブ状態になります。 Roslyn アナライザーではエディターで開かれていないコード ファイルを設計時に分析することもできます ([完全ソリューション解析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis)を有効にした場合)。
+有効になっている場合はスタティック コード分析と同様、Roslyn アナライザーでビルド時にコードが分析されますが、入力中もライブ状態になります。 [完全ソリューション解析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis)を有効にした場合、Roslyn アナライザーではエディターで開かれていないコード ファイルを設計時に解析することもできます。
 
 > [!NOTE]
 > Roslyn アナライザーからのビルド時のエラーと警告が表示されるのは、アナライザーが NuGet パッケージとしてインストールされている場合のみです。
@@ -80,6 +80,6 @@ Visual Studio 拡張機能としてインストールされたアナライザー
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio のクイック アクション](../ide/quick-actions.md)
+- [アナライザーに関する FAQ](analyzers-faq.md)
 - [独自の Roslyn アナライザーを作成する](../extensibility/getting-started-with-roslyn-analyzers.md)
 - [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)

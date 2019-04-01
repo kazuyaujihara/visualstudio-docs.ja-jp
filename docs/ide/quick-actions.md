@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee5e9c9872074d43e418dcbc33d11347c53ef02
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952568"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867038"
 ---
 # <a name="quick-actions"></a>クイック アクション
 
@@ -24,8 +24,11 @@ ms.locfileid: "55952568"
 クイック アクションを使用して、次の操作を実行できます。
 
 - [コード アナライザー](../code-quality/roslyn-analyzers-overview.md)の規則違反に対してコード修正を適用する
-- コード アナライザーの規則違反を[抑制する](../code-quality/use-roslyn-analyzers.md)
+
+- コード アナライザーの規則違反を[抑制する](../code-quality/use-roslyn-analyzers.md#suppress-violations)
+
 - リファクタリングを適用する (例: [一時変数をインライン化する](../ide/reference/inline-temporary-variable.md))
+
 - コードを生成する (例: [ローカル変数を導入する](../ide/reference/introduce-local-variable.md))
 
 > [!NOTE]
@@ -33,7 +36,7 @@ ms.locfileid: "55952568"
 
 クイック アクションは、電球 ![電球アイコン](media/light-bulb-icon.png) アイコンまたはねじ回し ![ねじ回しアイコン](media/screwdriver-icon.png) アイコンを使うか、適切なコード行にカーソルを置いて **Ctrl**+**.** キーを押すと 利用できます。 エラーを示す赤い波線があり、Visual Studio にそのエラーに対処するために使用可能な解決策がある場合は、エラー電球 ![エラー電球アイコン](media/error-light-bulb-icon.png) が表示されます。
 
-いずれの言語でも、サードパーティは、たとえば SDK の一部として、カスタマイズした診断や提案を表示できます。Visual Studio はそれらの規則に基づいて電球マークを表示します。
+いずれの言語でも、サードパーティは、たとえば SDK の一部として、カスタマイズした診断や提案を表示できます。Visual Studio ではそれらの規則に基づいて電球マークが表示されます。
 
 ## <a name="icons"></a>アイコン
 
@@ -41,17 +44,17 @@ ms.locfileid: "55952568"
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>電球やねじ回しを表示するには
 
-- 解決策が使用可能な場合は、エラーの場所にマウス ポインターを置くと、電球が自動的に表示されます。
+使用できる修正がある場合は、電球が表示されます。
+
+- エラーの場所をマウスでポイントしたとき
 
    ![電球でのマウス ホバー](../ide/media/vs2015_lightbulb_hover.png)
 
-- キャレットをクイック アクションが使用できるコード行に移動すると、エディターの左余白に電球とねじ回しが表示されます。
+- 該当するコード行にキャレット (カーソル) を移動したとき、エディターの左余白に
 
-- 行の任意の場所で **Ctrl**+**.** キーを押すと、 使用可能なクイック アクションとリファクタリングの一覧が表示されます。
+行のどこかで **Ctrl** + **.** キーを押しても、 使用可能なクイック アクションとリファクタリングの一覧が表示されます。
 
-## <a name="to-see-potential-fixes"></a>修正候補を表示するには
-
-電球の横の下矢印を選択するか、**[修正候補を表示する]** リンクを選択すると、使用可能なクイック アクションのリストが表示されます。
+修正候補を表示するには、電球の横の下矢印を選択するか、**[修正候補を表示する]** リンクを選択します。 使用可能なクイック アクションのリストが表示されます。
 
 ![拡大電球](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

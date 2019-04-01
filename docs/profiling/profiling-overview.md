@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09aa22660853149472ca4b581e0e3d7d346846f2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d99a6ae3d2b1a2c0acfe4aee160801181c72cbe7
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634722"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195220"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visual Studio でパフォーマンスを測定するためのツールの概要
 
@@ -25,4 +25,4 @@ ms.locfileid: "56634722"
 
 * CPU 使用率ツールで [CPU 使用率を分析し](../profiling/cpu-usage.md)、さらに詳細な情報を取得します。
 
-* [メモリ使用量を分析し](../profiling/memory-usage.md)、パフォーマンス上のボトルネックを特定します。
+* [メモリ使用量を分析し](../profiling/memory-usage.md)、パフォーマンスのボトルネックを特定します。

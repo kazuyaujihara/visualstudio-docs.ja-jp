@@ -13,19 +13,38 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ac09fa17ea550df127660a56a04d315f8f1a788f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a3bd2c65ccca172eca46eb5d935ef7735734a608
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911170"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069594"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>クイック スタート: Visual Studio を使用して初めての Vue.js アプリを作成する
 
-ここでは 5 分から 10 分で Visual Studio 統合開発環境 (IDE) の概要を示し、シンプルな Vue.js Web アプリケーションを作成して実行ます。 Visual Studio 2017 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ページに移動し、無料試用版をインストールしてください。
+ここでは 5 分から 10 分で Visual Studio 統合開発環境 (IDE) の概要を示し、シンプルな Vue.js Web アプリケーションを作成して実行ます。
 
 > [!IMPORTANT]
 > この記事には、Visual Studio 2017 バージョン 15.8 以降で使用できる Vue.js テンプレートが必要です。
+
+## <a name="prerequisites"></a>必須コンポーネント
+
+* Visual Studio および Node.js 開発ワークロードをインストールしている必要があります。
+
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker-end
+
+    Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、**[ツール]** > **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、**[変更]** を選択します。
+
+    ![VS インストーラーの Node.js ワークロード](../ide/media/quickstart-nodejs-workload.png)
+
+* Node.js ランタイムをインストールしている必要があります。
+
+    インストールされていない場合は、LTS バージョンを [Node.js](https://nodejs.org/en/download/) Web サイトからインストールしてください。 一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストールされているランタイムが検出されない場合は、プロパティ ページで、インストールされているランタイムを参照するプロジェクトを構成することができます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、**[プロパティ]** を選択します)。
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
@@ -35,21 +54,23 @@ ms.locfileid: "55911170"
 
     一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストールされているランタイムが検出されない場合は、プロパティ ページで、インストールされているランタイムを参照するプロジェクトを構成することができます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、**[プロパティ]** を選択します)。
 
-1. Visual Studio 2017 を開きます。
+1. Visual Studio を開きます。
 
 1. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-1. **[新しいプロジェクト]** ダイアログ ボックスが開いたら、**[JavaScript]** > **[Node.js]** または **[TypeScript]** > **[Node.js]** で、**[基本的な Vue.js Web アプリケーション]** を選択します。 プロジェクト名を入力し、**[OK]** をクリックします。
+1. 新しいプロジェクトを作成します。
 
-     ![Vue.js テンプレート](../javascript/media/vuejs-template.png)
+    ::: moniker range=">=vs-2019"
+    **[新しいプロジェクトの作成]** ダイアログ ボックスで、検索ボックスに「**javascript**」または「**typescript**」と入力して結果をフィルター処理した後、**[基本的な Vue.js Web アプリケーション]** を選択してから **[次へ]** を選択します。 次に、**[作成]** を選択します。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[JavaScript]** を展開し、**[Node.js]** を選択します。 中央のウィンドウで、**[基本的な Vue.js Web アプリケーション]** を選択してから **[OK]** を選択します。
+    ::: moniker-end
+    **[基本的な Vue.js Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発**ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
+
+    ![Vue.js テンプレート](../javascript/media/vuejs-template.png)
 
     Visual Studio によって新しいプロジェクトが作成されます。 ソリューション エクスプローラーで新しいプロジェクトが開きます (右ウィンドウ)。
-
-     **[基本的な Vue.js Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **[Node.js 開発]** ワークロードを選択し、**[変更]** を選択します。
-
-     ![VS インストーラーの Node.js ワークロード](../ide/media/quickstart-nodejs-workload.png)
-
-    Visual Studio は新しいソリューションを作成し、プロジェクトを開きます。
 
 1. アプリケーションに必要な npm パッケージのインストールの進捗状況は [出力] ウィンドウで確認できます (下ウィンドウ)。
 

@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f7ec6628c6cfd12a35de151689196dadd4868f83
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867926"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324761"
 ---
 # <a name="how-to-create-item-templates"></a>方法 : 項目テンプレートを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "57867926"
   
     Windows 8.1 ストア用の C++ プロジェクトでは、値として `WinRT-Native-6.3` を使用します。 Windows 10 およびその他の種類のプロジェクトの場合については、「[TemplateGroupID 要素 (Visual Studio テンプレート)](../extensibility/templategroupid-element-visual-studio-templates.md)」をご覧ください。  
   
-    次の例は、XML 行 `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` が追加された後の .vstemplate ファイルの内容全体を示しています。 この例は、C# プロジェクトに固有です。 <ProjectTpe> 要素と \<[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 要素を変更して、他の言語とプロジェクトの種類を指定することができます。  
+    次の例は、XML 行 `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` が追加された後の .vstemplate ファイルの内容全体を示しています。 この例は、C# プロジェクトに固有です。 変更することができます、 \<ProjectType > と\< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 要素を他の言語とプロジェクトの種類を指定します。  
   
    ```xml  
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  

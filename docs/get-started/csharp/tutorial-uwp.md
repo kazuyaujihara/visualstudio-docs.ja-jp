@@ -1,8 +1,9 @@
 ---
+title: Visual Studio と C# でユニバーサル Windows プラットフォーム (UWP) アプリを作成する
 description: XAML と C# を使用して Visual Studio で UWP アプリを作成する
 titleSuffix: ''
 ms.custom: seodec18, get-started
-ms.date: 04/04/2018
+ms.date: 03/11/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -13,26 +14,33 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bf52b39023209f54835d9753f4bb7a0df1e413
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a4fa325e57fcac095572c6eb666967f1ae3bf6df
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934550"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868987"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>チュートリアル: Visual Studio で XAML と C# を使用して最初のユニバーサル Windows プラットフォーム アプリを作成する
 
-ここでは 5 分から 10 分で Visual Studio 統合開発環境 (IDE) の概要を示し、任意の Windows 10 デバイスで実行できる "Hello World" アプリケーションを作成します。 これの実行には、ユニバーサル Windows プラットフォーム (UWP) のプロジェクト テンプレート、Extensible Application Markup Language (XAML) および C# のプログラミング言語を使用します。
+ここでは、Visual Studio 統合開発環境 (IDE) の概要を示し、任意の Windows 10 デバイスで実行できる "Hello World" アプリケーションを作成します。 これの実行には、ユニバーサル Windows プラットフォーム (UWP) のプロジェクト テンプレート、Extensible Application Markup Language (XAML) および C# のプログラミング言語を使用します。
 
+::: moniker range="vs-2017"
 Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページに移動し、無料試用版をインストールしてください。
+::: moniker-end
+::: moniker range="vs-2019"
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ページに移動し、無料試用版をインストールしてください。
+::: moniker-end
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
 まず、ユニバーサル Windows プラットフォーム プロジェクトを作成します。 この種類のプロジェクトには、必要となるすべてのテンプレート ファイルが付属していますので、何も追加する必要はありません。
 
-1. Visual Studio 2017 を開きます。
+1. Visual Studio を開きます。
 
-2. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+::: moniker range="vs-2017"
+
+2. 上部のメニュー バーから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
 3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開し、**[Windows ユニバーサル]** を選択します。 中央のペインで **[空のアプリ (ユニバーサル Windows)]** を選択します。 次いで、プロジェクトに「*HelloWorld*」という名前を付け、**[OK]** を選択します。
 
@@ -41,10 +49,27 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
    > [!NOTE]
    > **[空のアプリ (ユニバーサル Windows)]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual Studio インストーラーを開く]** リンクをクリックします。<br><br>![[新しいプロジェクト] ダイアログ ボックスで [Visual Studio インストーラーを開く] リンクをクリックする](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Visual Studio インストーラーが起動します。 **[ユニバーサル Windows プラットフォーム開発]** ワークロードを選択し、**[変更]** を選択します。<br><br>![Visual Studio インストーラーの [ユニバーサル Windows プラットフォーム開発] ワークロード](media/uwp-dev-workload.png)
 
-4. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログ ボックスが表示されたら、**[OK]** を選択します。
+4. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログ ボックスで、**[ターゲット バージョン]** と **[最小バージョン]** の既定の設定をそのまま使用します。
 
    ![[新しいユニバーサル Windows プラットフォーム プロジェクト] の既定のターゲット バージョンと最小バージョンの設定をそのまま使用します。](media/new-uwp-project-target-minver-dialog.png)
+::: moniker-end
 
+::: moniker range=">=vs-2019"
+
+2. Visual Studio を起動し、**[スタート]** ウィンドウで **[新しいプロジェクトの作成]** を選択します。
+
+3. **[新しいプロジェクトの作成]** 画面で、検索ボックスに「*ユニバーサル Windows*」と入力し、**[空のアプリ (ユニバーサル Windows)]** 用の C# テンプレートを選択して、**[次へ]** を選択します。
+
+   ![[新しいプロジェクトの作成] 画面のスクリーンショット](media/vs-2019/uwp-create-new-project.png)
+  
+   > [!NOTE]
+   > **[空のアプリ (ユニバーサル Windows)]** プロジェクト テンプレートが表示されない場合は、**[さらにツールと機能をインストールする]** リンクをクリックします。<br><br>![[さらにツールと機能をインストールする] リンクをクリックする](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio インストーラーが起動します。 **[ユニバーサル Windows プラットフォーム開発]** ワークロードを選択し、**[変更]** を選択します。<br><br>![Visual Studio インストーラーの [ユニバーサル Windows プラットフォーム開発] ワークロード](media/uwp-dev-workload.png)
+
+4. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログ ボックスで、**[ターゲット バージョン]** と **[最小バージョン]** の既定の設定をそのまま使用します。
+
+   ![[新しいユニバーサル Windows プラットフォーム プロジェクト] の既定のターゲット バージョンと最小バージョンの設定をそのまま使用します。](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+::: moniker-end
+   
    > [!NOTE]
    > UWP アプリを作成するために Visual Studio を初めて使用する場合、**[設定]** ダイアログ ボックスが表示されます。 **[開発者モード]**、**[はい]** の順に選択します。<br><br>
    ![UWP 設定ダイアログ ボックスで開発者モードを有効にする](media/enable-developer-mode.png)<br><br>Visual Studio では、開発者モード パッケージが追加でインストールされます。 パッケージのインストールが完了したら、**[設定]** ダイアログ ボックスを閉じます。
@@ -57,7 +82,12 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. **ソリューション エクスプローラー**で、*MainPage.xaml* をダブルクリックして分割ビューを開きます。
 
+   ::: moniker range="vs-2017"
    ![ソリューション エクスプローラーで MainPage.xaml を開く ](media/uwp-solution-explorer-MainPage-xaml.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![ソリューション エクスプローラーで MainPage.xaml を開く](media/vs-2019/uwp-solution-explorer-mainpage-xaml.png)
+   ::: moniker-end
 
    デザイン キャンバスを含む **XAML デザイナー**と、コードを追加または変更できる **XAML エディター**の 2 つのウィンドウがあります。
 
@@ -105,7 +135,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    これを次のように変更してみます。
 
-    ![新しい非同期の Button_Click イベント ハンドラー ](media/uwp-add-hello-world-async-code.png)
+   ![新しい非同期の Button_Click イベント ハンドラー ](media/uwp-add-hello-world-async-code.png)
 
    コピーして貼り付けるコードは次のとおりです。
 
@@ -128,11 +158,11 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 "Hello World" UWP アプリを、ビルド、配置、および起動して、どのように表示および読み上げがあるか確認してみましょう。 ここではその方法を説明します。
 
-1. **[ローカル マシン]** を選択してアプリケーションを起動します。
+1. 再生ボタン (表示は **[ローカル コンピューター]**) を使用して、ローカル コンピューターでアプリケーションを起動します。
 
    ![[ローカル マシン] をクリックし、UWP アプリを起動してデバッグする](media/uwp-start-or-debug.png)
 
-   (または、メニュー バーから **[デバッグ]** > **[デバッグの開始]** を選択するか、**F5** キーを押してアプリを開始します)。
+   (または、メニュー バーから **[デバッグ]** > **[デバッグの開始]** を選択するか、F5 キーを押して、アプリを起動します。)
 
 2. スプラッシュ スクリーンが消えるとすぐ表示されるアプリを確認します。 アプリは次のように表示されるはずです。
 
@@ -142,11 +172,11 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    Windows 10 デバイスにより、"Hello, World!" と文字通り読み上げられます。
 
-4. アプリを閉じるには、ツール バーで **[デバッグの停止]** ボタンをクリックします。 (または、メニュー バーから **[デバッグ]**+**[デバッグの停止]** を選択するか、**Shift** > **F5** キーを押します)。
+4. アプリを閉じるには、ツール バーで **[デバッグの停止]** ボタンをクリックします。 (または、メニュー バーから **[デバッグ]** > **[デバッグの停止]** を選択するか、Shift + F5 キーを押します。)
 
 ## <a name="next-steps"></a>次の手順
 
-このクイック スタートは完了しました。 これで UWP および Visual Studio IDE の基本を学習できたはずです。 詳細については、引き続き以下のチュートリアルをご覧ください。
+これでこのチュートリアルは完了です。 これで UWP および Visual Studio IDE の基本を学習できたはずです。 詳細については、引き続き以下のチュートリアルをご覧ください。
 
 > [!div class="nextstepaction"]
 > [ユーザー インターフェイスを作成する](/windows/uwp/design/basics/xaml-basics-ui)

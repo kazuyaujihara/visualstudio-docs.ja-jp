@@ -13,14 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 464bd3a6e4c5ed8ade1f9174ff205e2eda5c4aff
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953970"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325121"
 ---
-# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 のインストールとアップグレードの問題のトラブルシューティング
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio のインストールとアップグレードの問題のトラブルシューティング
 
 > [!IMPORTANT]
 > インストールに関する問題がある場合、 Microsoft によるサポートを受けられます。 [**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションが用意されています。
@@ -86,7 +88,7 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 セットアップ ログは、インストールに関する問題の多くをトラブルシューティングするために必要です。 Visual Studio インストーラーの [[問題の報告]](../ide/how-to-report-a-problem-with-visual-studio.md) を使用して問題を送信するとき、レポートには自動でこれらのログが含まれます。
 
-Microsoft サポートに連絡する場合、[Microsoft Visual Studio と .NET Framework ログ収集ツール](https://aka.ms/vscollect)を使用して、これらのセットアップ ログを提供する必要がある場合があります。 このログ収集ツールは、Visual Studio 2017 にインストールされている .NET Framework、Windows SDK、SQL Server などのすべてのコンポーネントからセットアップ ログを収集します。 また、コンピューター情報、Windows インストーラーのインベントリ、Visual Studio インストーラーの Windows イベント ログ情報、Windows インストーラー、システムの復元に関する情報を収集します。
+Microsoft サポートに連絡する場合、[Microsoft Visual Studio と .NET Framework ログ収集ツール](https://aka.ms/vscollect)を使用して、これらのセットアップ ログを提供する必要がある場合があります。 このログ収集ツールは、Visual Studio にインストールされている .NET Framework、Windows SDK、SQL Server などのすべてのコンポーネントからセットアップ ログを収集します。 また、コンピューター情報、Windows インストーラーのインベントリ、Visual Studio インストーラーの Windows イベント ログ情報、Windows インストーラー、システムの復元に関する情報を収集します。
 
 ログを収集するには:
 
@@ -104,7 +106,7 @@ Microsoft サポートに連絡する場合、[Microsoft Visual Studio と .NET 
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 の削除](remove-visual-studio.md)
+* [Visual Studio の削除](remove-visual-studio.md)
 * [ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio インスタンスの検出および管理用のツール](tools-for-managing-visual-studio-instances.md)
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)
