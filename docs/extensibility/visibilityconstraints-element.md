@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c567291f2b91e092afecb264c2b2e0ca1bfd108
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b5dfbeb3c45e05c93554aae9b17a42c265408bc3
+ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702578"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658880"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 要素
 VisibilityConstraints 要素は、コマンドとツールバーのグループの静的な可視性を判断します。 可視性がによって制御される最初の[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSPackage を読み込むことがなく、統合開発環境 (IDE) です。
@@ -27,9 +27,9 @@ VisibilityConstraints 要素は、コマンドとツールバーのグループ�
 
 ```xml
 <VisibilityConstraints>
-  <VisibilityConstraint>... </VisibilityConstraint>
-  <VisibilityConstraint>... </VisibilityConstraint>
-</VisibilityConstraint>
+  <VisibilityItem />
+  <VisibilityItem />
+</VisibilityConstraints>
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
@@ -39,7 +39,7 @@ VisibilityConstraints 要素は、コマンドとツールバーのグループ�
 
 |属性|説明|
 |---------------|-----------------|
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|
+|条件|省略可能です。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|
 
 ### <a name="child-elements"></a>子要素
 
