@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428662"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325293"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio IDE の表示の紹介
 
@@ -57,13 +57,13 @@ Visual Studio の機能を引き続き確認するために、新しいプロジ
 
 ::: moniker range=">=vs-2019"
 
-1. **[スタート ウィンドウ]** で **[新しいプロジェクトの作成]** を選択し、検索ボックスに「**javascript**」と入力し、プロジェクトの種類の一覧にフィルターを適用し、名前または言語タイプに "javascript" が含まれるものに絞り込みます。
+1. [スタート ウィンドウ] で **[新しいプロジェクトの作成]** を選択し、検索ボックスに「**javascript**」と入力し、プロジェクトの種類の一覧にフィルターを適用し、名前または言語タイプに "javascript" が含まれるものに絞り込みます。
 
    Visual Studio には、すぐにコーディングを開始するのに役立つ、さまざまな種類のプロジェクト テンプレートが用意されています。 (あるいは、TypeScript の開発者であれば、その言語でプロジェクトを作成できます。 表示される UI はすべてのプログラミング言語でほぼ同じです)。
 
    ![Visual Studio の [スタート ウィンドウ] でプロジェクト テンプレートを検索する](media/vs-2019/create-new-project.png)
 
-1. **Blank Node.js Web Application** プロジェクト テンプレートを選択し、**[次へ]** をクリックします。 
+1. **Blank Node.js Web Application** プロジェクト テンプレートを選択し、**[次へ]** をクリックします。
 
 1. 表示された **[新しいプロジェクトの構成]** ダイアログ ボックスで、既定のプロジェクト名をそのまま使用し、**[作成]** を選択します。
 

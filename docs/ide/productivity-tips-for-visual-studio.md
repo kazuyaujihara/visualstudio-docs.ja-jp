@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223144"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355764"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio の生産性に関するヒント
 
@@ -66,13 +66,23 @@ ms.locfileid: "57223144"
 
 - **対処する必要があるエラーのみを表示する**。 **[エラー一覧]** ツール バーの **[フィルター]** を選択すると、**[エラー一覧]** ウィンドウに表示されるエラーの数を減らすことができます。 エディターで開いているファイルのエラーのみ、現在のファイルのエラーのみ、または現在のプロジェクトのエラーのみを表示できます。 また、**[エラー一覧]** ウィンドウ内で検索して、特定のエラーを見つけることもできます。
 
-- **ダイアログ ボックス、メニュー コマンド、およびオプションを検索する**。 [[クイック起動]](../ide/reference/quick-launch-environment-options-dialog-box.md) 検索ボックスに、検索対象の項目のキーワードまたは語句を入力します。 たとえば、「`new project`」と入力すると、次のオプションが表示されます。
+- **ダイアログ ボックス、メニュー コマンド、オプションなどを検索します**。 [[クイック起動]](../ide/reference/quick-launch-environment-options-dialog-box.md) 検索ボックスに、検索対象の項目のキーワードまたは語句を入力します。 たとえば、「**新しいプロジェクト**」と入力すると、次のオプションが表示されます。
 
-    !['新しいプロジェクト' のクイック起動結果](../ide/media/productivity_quicklaunch.png)
+   ::: moniker range="vs-2017"
 
-    **クイック起動**には、**[新しいプロジェクト]** ダイアログ ボックス、**[新しい項目の追加]** ダイアログ ボックス、**[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** ページなどへのリンクが表示されます。 また、クイック起動の結果には、プロジェクト ファイルおよびツール ウィンドウも含まれます。
+   !['新しいプロジェクト' のクイック起動結果](../ide/media/productivity_quicklaunch.png)
 
-  IDE の右上に **[クイック起動]** 検索ボックスが表示されます  (あるいは、**Ctrl** + **Q** キーを押してそれにアクセスします)。
+   **クイック起動**には、新しいプロジェクトを作成するためのリンク、新しい項目をプロジェクトに追加するためのリンク、**[オプション]** ダイアログ ボックス内の **[プロジェクトおよびソリューション]** ページへのリンクなどが表示されます。 検索結果には、プロジェクト ファイルおよびツール ウィンドウも含まれる場合があります。
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   !['新しいプロジェクト' のクイック起動検索結果](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+
+   ::: moniker-end
+
+   **[クイック起動]** 検索ボックスに直接ジャンプするには、**Ctrl** + **Q** キーを押します。
 
 ## <a name="debug-code"></a>コードのデバッグ
 

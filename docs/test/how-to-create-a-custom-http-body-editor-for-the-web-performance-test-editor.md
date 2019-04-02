@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8eef7dd68ba29f4a0100dfe5207c0b6179a76410
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069893"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415071"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>方法: Web パフォーマンス テスト エディターのカスタム HTTP ボディ エディターを作成する
 
@@ -31,49 +31,35 @@ ms.locfileid: "58069893"
 
 ## <a name="create-a-windows-control-library-project"></a>Windows コントロール ライブラリ プロジェクトの作成
 
-1. Visual Studio の **[ファイル]** メニューで、**[新規作成]** > **[プロジェクト]** の順に選択します。
+1. Visual Studio で、新しい **Windows フォーム コントロール ライブラリ** プロジェクトを作成します。 プロジェクトに **MessageEditors** という名前を付けます。
 
-    **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+   プロジェクトが新しいソリューションに追加され、*UserControl1.cs* という名前の <xref:System.Windows.Forms.UserControl> がデザイナーに表示されます。
 
-2. **[インストールされたテンプレート]** で、使用するプログラミングに応じて **[Visual Basic]** または **[Visual C#]** のいずれかを選択し、**[Windows]** を選択します。
+1. **ツールボックス**の **[コモン コントロール]** カテゴリで、<xref:System.Windows.Forms.RichTextBox> を UserControl1 のサーフェイスにドラッグします。
 
-   > [!NOTE]
-   > このサンプルでは、Visual C# を使用しています。
+1. <xref:System.Windows.Forms.RichTextBox> コントロールの右上隅にあるアクション タグ グリフ (![スマート タグ グリフ](../test/media/vs_winformsmttagglyph.gif)) を選び、親コンテナーを選択して**ドッキング**します。
 
-3. テンプレートの一覧で、**[Windows フォーム コントロール ライブラリ]** を選択します。
+1. **ソリューション エクスプローラー**で、Windows フォーム ライブラリ プロジェクトを右クリックし、**[プロパティ]** を選択します。
 
-4. **[名前]** テキスト ボックスに名前 (`MessageEditors` など) を入力し、**[OK]** を選択します。
+1. **[プロパティ]** の **[アプリケーション]** タブを選択します。
 
-   > [!NOTE]
-   > このサンプルでは、MessageEditors を使用しています。
+1. **[対象とする Framework]** ドロップダウンの一覧で、**[.NET Framework 4]** を選択します。
 
-    プロジェクトが新しいソリューションに追加され、*UserControl1.cs* という名前の <xref:System.Windows.Forms.UserControl> がデザイナーに表示されます。
+1. **[ターゲット フレームワークの変更]** ダイアログ ボックスが表示されます。
 
-5. **ツールボックス**の **[コモン コントロール]** カテゴリで、<xref:System.Windows.Forms.RichTextBox> を UserControl1 のサーフェイスにドラッグします。
+1. **[はい]** をクリックします。
 
-6. <xref:System.Windows.Forms.RichTextBox> コントロールの右上隅にあるアクション タグ グリフ (![スマート タグ グリフ](../test/media/vs_winformsmttagglyph.gif)) を選び、親コンテナーを選択して**ドッキング**します。
+1. **ソリューション エクスプローラー**で、**[参照設定]** ノードを右クリックし、**[参照の追加]** を選択します。
 
-7. **ソリューション エクスプローラー**で、Windows フォーム ライブラリ プロジェクトを右クリックし、**[プロパティ]** を選択します。
+1. **[参照の追加]** ダイアログ ボックスが表示されます。
 
-8. **[プロパティ]** の **[アプリケーション]** タブを選択します。
+1. **[.NET]** タブを選びます。下にスクロールして、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択して、**[OK]** を選びます。
 
-9. **[対象とする Framework]** ドロップダウンの一覧で、**[.NET Framework 4]** を選択します。
+1. **ソリューション エクスプローラー**で**ビュー デザイナー**がまだ開いていない場合は、**UserControl1.cs** を右クリックし、**[デザイナーの表示]** を選択します。
 
-10. **[ターゲット フレームワークの変更]** ダイアログ ボックスが表示されます。
+1. デザイン サーフェイスを右クリックし、**[コードの表示]** を選択します。
 
-11. **[はい]** をクリックします。
-
-12. **ソリューション エクスプローラー**で、**[参照設定]** ノードを右クリックし、**[参照の追加]** を選択します。
-
-13. **[参照の追加]** ダイアログ ボックスが表示されます。
-
-14. **[.NET]** タブを選びます。下にスクロールして、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択して、**[OK]** を選びます。
-
-15. **ソリューション エクスプローラー**で**ビュー デザイナー**がまだ開いていない場合は、**UserControl1.cs** を右クリックし、**[デザイナーの表示]** を選択します。
-
-16. デザイン サーフェイスを右クリックし、**[コードの表示]** を選択します。
-
-17. (省略可能) クラスとコンストラクターの名前を、UserControl1 からわかりやすい名前 (MessageEditorControl など) に変更します。
+1. (省略可能) クラスとコンストラクターの名前を、UserControl1 からわかりやすい名前 (MessageEditorControl など) に変更します。
 
     > [!NOTE]
     > このサンプルでは、MessageEditorControl を使用しています。
@@ -91,7 +77,7 @@ ms.locfileid: "58069893"
     }
     ```
 
-18. 次のプロパティを追加して、RichTextBox1 のテキストを取得および設定できるようにします。 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> インターフェイスでは EditString を使用し、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> では EditByteArray を使用します。
+1. 次のプロパティを追加して、RichTextBox1 のテキストを取得および設定できるようにします。 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> インターフェイスでは EditString を使用し、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> では EditByteArray を使用します。
 
     ```csharp
     public String EditString
@@ -285,7 +271,7 @@ messageEditorControl インスタンスは、<xref:Microsoft.VisualStudio.TestTo
    > [!NOTE]
    > Visual Studio を閉じて、*.dll* ファイルがコピーしようとする前にロックされていないことを確認します。
 
-3. プロジェクトの *bin\debug* フォルダーの生成された *.dll* ファイル (*MessageEditors.dll* など) を *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins* にコピーします。
+3. プロジェクトの *bin\debug* フォルダーの生成された *.dll* ファイル (*MessageEditors.dll* など) を *%ProgramFiles%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins* にコピーします。
 
 4. Visual Studio を開きます。
 

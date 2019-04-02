@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 381f04b78e5cfc9ed61187e62e310a2d927eb0ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949435"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416137"
 ---
 # <a name="create-a-unit-test-project"></a>単体テスト プロジェクトを作成する
 
@@ -23,11 +23,23 @@ ms.locfileid: "55949435"
 
 ## <a name="to-create-a-unit-test-project"></a>単体テスト プロジェクトを作成するには
 
-1. **[ファイル]** メニューの **[新規作成]** を選択し、**[プロジェクト]** を選択します。 または、**Ctrl** + **Shift** + **N** キーを押します。
+1. **[ファイル]** メニューで、**[新規作成]** > **[プロジェクト]** の順に選択するか、または **Ctrl**+**Shift**+**N** キーを押します。
+
+::: moniker range="vs-2017"
 
 2. **[新しいプロジェクト]** ダイアログ ボックスで、**[インストール済み]** ノードを展開して、テスト プロジェクトで使用する言語を選択し、**[テスト]** をクリックします。
 
 3. Microsoft 単体テスト フレームワークの 1 つを使用するには、プロジェクト テンプレートの一覧から **[単体テスト プロジェクト]** を選択します。 それ以外の場合は、使用する単体テスト フレームワークのプロジェクト テンプレートを選択します。 プロジェクトに名前を付けて、**[OK]** を選択します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. **[新しいプロジェクトの作成]** ページで、検索ボックスに「**単体テスト**」と入力します。 **[単体テスト プロジェクト (.NET Framework)]** プロジェクト テンプレートを選択してから、**[次へ]** をクリックします。
+
+3. **[新しいプロジェクトの構成]** ページで、ご自分のプロジェクトの名前を入力して、**[作成]** をクリックします。
+
+::: moniker-end
 
 4. 単体テスト プロジェクトに、テスト対象のコードへの参照を追加します。 同じソリューション内のコード プロジェクトへの参照を追加するには:
 

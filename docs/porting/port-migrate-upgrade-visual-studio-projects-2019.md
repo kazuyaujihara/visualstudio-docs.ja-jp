@@ -2,8 +2,8 @@
 title: Visual Studio 2019 でのプロジェクトの移植、移行、およびアップグレード
 titleSuffix: ''
 description: 以前のバージョンの Visual Studio で作成されたプロジェクトに対する Visual Studio 2019 でのサポートと、Visual Studio がプロジェクトを移行するタイミングを決定する方法のリファレンス。
-ms.date: 02/26/2019
-ms.prod: visual-studio-dev16
+ms.date: 03/20/2019
+ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 7447dff5d8855fb141ab66f23ab9bd9b272c3d0d
-ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
+ms.openlocfilehash: 2350f98c5db2428bdb48f57d2dd5ed1236ee4446
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57683360"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415773"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019"></a>Visual Studio 2019 のプロジェクトの移行とアップグレードのリファレンス
 
-通常、新しいバージョンの Visual Studio はいずれも、以前の種類のプロジェクト、ファイル、その他のアセットに対応しています。 それらのオブジェクトは[これまでと同様に](../ide/solutions-and-projects-in-visual-studio.md)操作できます。新しい機能を利用していない場合でも、Visual Studio 2017、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 など、以前のバージョンとの下位互換性の維持が一般に試みられています。 (どの機能がどのバージョンに固有の機能であるかについては、[リリース ノート](/visualstudio/releases/2019/release-notes-preview)を参照してください。)
+通常、新しいバージョンの Visual Studio はいずれも、以前の種類のプロジェクト、ファイル、その他のアセットに対応しています。 それらのオブジェクトは[これまでと同様に](../ide/solutions-and-projects-in-visual-studio.md)操作できます。新しい機能を利用していない場合でも、Visual Studio 2017、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 など、以前のバージョンとの下位互換性の維持が一般に試みられています。 (どの機能がどのバージョンに固有の機能であるかについては、[Visual Studio 2019 Preview のリリース ノート](/visualstudio/releases/2019/release-notes-preview)および [Visual Studio 2019 RC のリリース ノート](/visualstudio/releases/2019/release-notes/)を参照してください。)
 
 一部の種類のプロジェクトに対するサポートは、今後変更される場合もあります。 新しいバージョンの Visual Studio では、特定のプロジェクトが一切サポートされなくなったり、下位互換性がなくったためにプロジェクトの更新が必要になったりすることがあります。 移行に関する問題の現在の状況については、[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com)を参照してください。
 
@@ -57,7 +57,7 @@ ms.locfileid: "57683360"
 | ロード テスト | Visual Studio 2019 では、Web パフォーマンスとロード テストの機能は非推奨となっています。 <br/><br/>Visual Studio 2019 は、ロード テストの最後のリリースとなります。 Apache JMeter、Akamai CloudTest、Blazemeter など、代替のロード テスト ツールを使用してください。  |
 | Microsoft Azure Tools for Visual Studio | これらの種類のプロジェクトを開くには、最初に [Azure SDK for .NET](http://azure.microsoft.com/downloads/)をインストールした後、プロジェクトを開きます。 必要に応じて、プロジェクトが更新されます。 |
 | Microsoft Test Manager | Microsoft Test Manager と Feedback Client は、Visual Studio 2019 からは Visual Studio に付属しません。 <br/><br/>手動テストまたは探索的テストの必要がある場合は、Azure Test Plans (Azure DevOps の一部) をご利用ください。 詳細については、ここを参照してください。 |
-| モデル ビュー コントローラー フレームワーク (ASP.NET MVC) | MVC バージョンと Visual Studio のサポート:<ul><li>Visual Studio 2010 SP1 は MVC 2 と MVC 3 をサポートしています。MVC 4 サポートは [ASP.NET 4 MVC 4 for Visual Studio 2010 SP1 をダウンロード](https://www.microsoft.com/download/details.aspx?id=30683)すると追加されます。</li><li>Visual Studio 2012 は MVC 3 と MVC 4 のみをサポートしています。</li><li>Visual Studio 2013 は MVC 4 と MVC 5 のみをサポートしています。</li><li>Visual Studio 2019、Visual Studio 2017、Visual Studio 2015 は MVC 4 (既存のオブジェクトを開くことはできますが、新規作成はできません) と MVC 5 をサポートしています。</li></ul><br/>MVC バージョンをアップグレードする:<ul><li>MVC 2 から MVC 3 に自動的にアップグレードする方法については、「[ASP.NET MVC 3 Application Upgrader](http://go.microsoft.com/fwlink/?LinkID=238178)」 (ASP.NET MVC 3 アプリケーション アップグレード プログラム) を参照してください。</li><li>MVC 2 から MVC 3 に手動でアップグレードする方法については、「 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update (ASP.NET MVC 2 プロジェクトから ASP.NET MVC 3 Tools Update へのアップグレード)](http://go.microsoft.com/fwlink/?linkid=238178)」を参照してください。</li><li>MVC 3 から MVC 4 に手動でアップグレードする方法については、「 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4 (ASP.NET MVC 3 プロジェクトから ASP.NET MVC 4 へのアップグレード)](http://www.asp.net/whitepapers/mvc4-release-notes)」を参照してください。 .NET Framework 3.5 SP1 を対象とするプロジェクトの場合は、.NET Framework 4 を使用するようにプロジェクトの対象を変更する必要があります。</li><li>MVC 4 から MVC 5 に手動でアップグレードする方法については、「[How to Upgrade an ASP.NET MVC 4 and Web API Project to ASP.NET MVC 5 and Web API 2](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2) (ASP.NET MVC 4 と Web API プロジェクトを ASP.NET MVC 5 と Web API 2 にアップグレードする方法)」を参照してください。</li></ul> |
+| モデル ビュー コントローラー フレームワーク (ASP.NET MVC) | MVC バージョンと Visual Studio のサポート:<ul><li>Visual Studio 2010 SP1 は MVC 2 と MVC 3 をサポートしています。MVC 4 サポートは [ASP.NET 4 MVC 4 for Visual Studio 2010 SP1 をダウンロード](https://www.microsoft.com/download/details.aspx?id=30683)すると追加されます。</li><li>Visual Studio 2012 は MVC 3 と MVC 4 のみをサポートしています。</li><li>Visual Studio 2013 は MVC 4 と MVC 5 のみをサポートしています。</li><li>Visual Studio 2019、Visual Studio 2017、Visual Studio 2015 では MVC 4 (既存のオブジェクトを開くことはできますが、新規作成はできません) と MVC 5 がサポートされています。</li></ul><br/>MVC バージョンをアップグレードする:<ul><li>MVC 2 から MVC 3 に自動的にアップグレードする方法については、「[ASP.NET MVC 3 Application Upgrader](http://go.microsoft.com/fwlink/?LinkID=238178)」 (ASP.NET MVC 3 アプリケーション アップグレード プログラム) を参照してください。</li><li>MVC 2 から MVC 3 に手動でアップグレードする方法については、「 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update (ASP.NET MVC 2 プロジェクトから ASP.NET MVC 3 Tools Update へのアップグレード)](http://go.microsoft.com/fwlink/?linkid=238178)」を参照してください。</li><li>MVC 3 から MVC 4 に手動でアップグレードする方法については、「 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4 (ASP.NET MVC 3 プロジェクトから ASP.NET MVC 4 へのアップグレード)](http://www.asp.net/whitepapers/mvc4-release-notes)」を参照してください。 .NET Framework 3.5 SP1 を対象とするプロジェクトの場合は、.NET Framework 4 を使用するようにプロジェクトの対象を変更する必要があります。</li><li>MVC 4 から MVC 5 に手動でアップグレードする方法については、「[How to Upgrade an ASP.NET MVC 4 and Web API Project to ASP.NET MVC 5 and Web API 2](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2) (ASP.NET MVC 4 と Web API プロジェクトを ASP.NET MVC 5 と Web API 2 にアップグレードする方法)」を参照してください。</li></ul> |
 | モデリング | Visual Studio でプロジェクトを自動的に更新することを許可した場合は、Visual Studio 2015、Visual Studio 2013、または Visual Studio 2012 で開くことができます。<br/><br/>モデリング プロジェクトの形式は Visual Studio 2015 以来変わっていません。プロジェクトはこれらのバージョンで開いて変更することができます。 ただし、Visual Studio 2017 と Visual Studio 2019 では動作に違いがあります。<ul><li>メニューとテンプレートで、モデリング プロジェクトの名称が "依存関係の検証" になりました。</li><li>UML 図は Visual Studio 2017 と Visual Studio 2019 ではサポートされていません。 UML ファイルは以前と同様にソリューション エクスプローラーに一覧表示されますが、XML ファイルが開きます。 UML 図を表示、作成、編集するには、Visual Studio 2015 を使用してください。</li><li>Visual Studio 2019 では、モデリング プロジェクトが構築されるとき、アーキテクチャの依存関係検証がなくなりました。 代わりに、コード プロジェクトが構築されるときに検証が実行されます。 この変更がモデリング プロジェクトに影響を与えることはありませんが、検証されるコード プロジェクトを変更する必要があります。 Visual Studio 2019 では、コード プロジェクトを必要に応じて自動的に変更できます。</li></ul> |
 | MSI セットアップ (vdproj) | InstallShield プロジェクトをご覧ください。 |
 | Office 2007 VSTO | Visual Studio 2019 への一方向のアップグレードが必要です。 |
@@ -71,8 +71,8 @@ ms.locfileid: "57683360"
 | Silverlight | Silverlight プロジェクトは Visual Studio 2019 Preview ではサポートされていません。 Silverlight アプリケーションを維持するには、引き続き Visual Studio 2015 を使用してください。 |
 | SQL - Redgate | Redgate の SQL Change Automation Core (旧称、ReadyRoll Core)、SQL Prompt Core、および SQL Search は、Visual Studio インストーラーに付属されななくなりました。<br/><br/>これらの機能には、Visual Studio 2017 を引き続き使用することができます。 Visual Studio 2019 Preview では、Redgate の SQL Toolbelt で入手可能な有料の SQL Change Automation および SQL Prompt 製品にアップグレードすることができます。|
 | SQL Server Reporting Services および SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | これらのプロジェクト タイプのサポートは、Visual Studio ギャラリーの次の 2 つの拡張機能を通じて提供されます。[Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) と [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 Visual Studio 2019 Preview のデータの保存と処理のワークロードには SSDT のサポートも含まれます。 |
-| SQL Server Integration Services (SSIS) | Visual Studio 2019 Preview のサポートは近日公開予定です。 最新のニュースについては、[SSIS 公式ブログ](https://blogs.msdn.microsoft.com/ssis/)で取得してください。 |
-| テスト ウィンドウ拡張機能 | Visual Studio 2019 では、前にパブリックとしてマークされていたがドキュメントに正式に記載されたことがないいくつかのテスト ウィンドウ API が削除されました。 広く利用されていた API には、拡張機能の管理者に対して早期に警告を発するために、Visual Studio 2017 で非推奨のマークが付いていました。 Microsoft の知る限りでは、これらの API に対して依存関係を築いている拡張機能はわずかです。 詳細と更新については、[テスト関連の非推奨 API の完全一覧](https://github.com/Microsoft/vstest/issues/1830)をご覧ください。 これが自分のシナリオに影響する場合、[開発者コミュニティ](https://developercommunity.visualstudio.com)でお知らせください。 |
+| SQL Server Integration Services (SSIS) | Visual Studio 2019 Preview のサポートは近日公開予定です。 最新ニュースについては、「[SQL Server Data Tools Team Blog](https://devblogs.microsoft.com/ssdt/)」 (SQL Server Data Tools に関するチーム ブログ) を参照してください。 |
+| テスト ウィンドウ拡張機能 | Visual Studio 2019 では、前にパブリックとしてマークされていたがドキュメントに正式に記載されたことがないいくつかのテスト ウィンドウ API が削除されました。 広く利用されていた API には、拡張機能の管理者に対して早期に警告を発するために、Visual Studio 2017 で非推奨のマークが付いていました。 Microsoft の知る限りでは、これらの API に対して依存関係を築いている拡張機能はわずかです。 詳細と更新プログラムにいては、[テスト関連の非推奨の API の完全一覧](https://github.com/Microsoft/vstest/issues/1830)に関するページを参照してください。 これが自分のシナリオに影響する場合、[開発者コミュニティ](https://developercommunity.visualstudio.com)でお知らせください。 |
 | Visual C++ | Visual Studio 2019 Preview を使用して、Visual Studio 2010 以降の Visual Studio で作成されたプロジェクトを操作できます。 プロジェクトを初めて開いたときに、最新のコンパイラとツールセットにアップグレードするか、元のプロジェクトを引き続き使用するかを選択できます。 元のプロジェクトを引き続き使用することを選択した場合、Visual Studio 2019 Preview はプロジェクト ファイルを変更せず、以前の Visual Studio のインストールのツールセットを使用してプロジェクトをビルドします。 元のオプションを維持すると、必要に応じて、Visual Studio の元のバージョンでプロジェクトを開くことができます。 詳細については、「[Visual Studio でネイティブ マルチ ターゲットを利用し、古いプロジェクトを作成する](/cpp/porting/use-native-multi-targeting)」を参照してください。 |
 | Visual Studio 拡張性/VSIX | MinimumVersion 14.0 以前のプロジェクトは、MinimumVersion 15.0 を宣言するように更新されます。この宣言により、前のバージョンの Visual Studio でプロジェクトを開けなくなります。 前のバージョンでプロジェクトを開くには、MinimumVersion を `$(VisualStudioVersion)` に設定します。 「[方法: 機能拡張プロジェクトの Visual Studio 2017 への移行](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)に関するページも参照してください。 |
 | Visual Studio Lab Management | Microsoft Test Manager または Visual Studio 2010 SP1 以降を利用し、これらのバージョンで差制された環境を開くことができます。 ただし、Visual Studio 2010 SP1 の場合、環境を作成するには、使用している Microsoft Test Manager のバージョンが Team Foundation Server のバージョンと一致する必要があります。 |
@@ -86,13 +86,13 @@ ms.locfileid: "57683360"
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Visual Studio がプロジェクトを移行するタイミングを決定する方法
 
-Visual Studio の各新規バージョンでは、一般に、バージョンが異なっても同じプロジェクトを開き、変更し、ビルドできるように、以前のバージョンとの互換性が維持されます。 ただし、時間の経過と共に、一部のプロジェクトの種類のサポート終了など、避けられない変更が発生します (Visual Studio 2019 Prevew でサポートされているプロジェクトの種類については、「[Visual Studio 2019 Preview の対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)」をご覧ください)。このような場合、新しいバージョンの Visual Studio はプロジェクトを読み込まず、移行パスを提供しません。そのようなプロジェクトは、それをサポートしている以前のバージョンの Visual Studio で管理する必要があります。
+Visual Studio の各新規バージョンでは、一般に、バージョンが異なっても同じプロジェクトを開き、変更し、ビルドできるように、以前のバージョンとの互換性が維持されます。 ただし、時間の経過と共に、一部のプロジェクトの種類のサポート終了など、避けられない変更が発生します (Visual Studio 2019 でサポートされているプロジェクトの種類については、[ターゲット プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関するページを参照してください)。このような場合、新しいバージョンの Visual Studio はプロジェクトを読み込まず、移行パスを提供しません。そのようなプロジェクトは、それをサポートしている以前のバージョンの Visual Studio で管理する必要があります。
 
 つまり、新しいバージョンの Visual Studio ではプロジェクトを開くことはできますが、以前のバージョンとの互換性がなくなる可能性がある方法でプロジェクトを更新または移行する必要があります。 Visual Studio は、複数の条件を使って、このような移行が必要かどうかを判断します。
 
 - Visual Studio 2013 RTM まで遡る、プラットフォームのターゲット バージョンとの互換性。
 
-- 以前のバージョンの Visual Studio との、デザイン時資産の互換性 (つまり、さまざまなチャネルの Visual Studio 2019、Visual Studio 2017、Visual Studio 2015 RTM & Update 3、Visual Studio 2013 RTM & Update 5、Visual Studio 2012 Update 4、Visual Studio 2010 SP 1)。Visual Studio 2019 は、以前のバージョンでプロジェクトをまだ開くことができるように、非推奨のデザイン時資産を、破壊することなく正常に失敗させます。
+- 以前のバージョンの Visual Studio との、デザイン時資産の互換性 (つまり、さまざまなチャネルの Visual Studio 2019、Visual Studio 2017、Visual Studio 2015 RTM & Update 3、Visual Studio 2013 RTM & Update 5、Visual Studio 2012 Update 4、Visual Studio 2010 SP1)。Visual Studio 2019 は、以前のバージョンでプロジェクトをまだ開くことができるように、非推奨のデザイン時資産を、破壊することなく正常に失敗させます。
 
 - 新しいデザイン時資産により、Visual Studio 2013 RTM & Update 5 までの以前のバージョンとの互換性がなくなるかどうか。
 

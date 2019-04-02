@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cae9138c881115651ebd9e862e912ff10da20d2f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955064"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416404"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>チュートリアル: コード化された UI テストの作成、編集、保守
 
@@ -22,41 +22,27 @@ ms.locfileid: "55955064"
 
 ## <a name="create-a-wpf-app"></a>WPF アプリを作成する
 
-1.  **[ファイル]** メニューの **[新規作成]** をポイントし、**[プロジェクト]** を選択します。
+1. 新しい **WPF アプリ (.NET Framework)** プロジェクトを作成し、その名前を **SimpleWPFApp** に設定します。
 
-     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+     **WPF デザイナー**が開き、プロジェクトの MainWindow が表示されます。
 
-2.  **[インストールされたテンプレート]** ペインで、**[Visual C#]** を展開し、**[Windows デスクトップ]** を選択します。
+2. ツールボックスが現在開いていない場合は開きます。 **[表示]** メニューを選択し、**[ツールボックス]** を選択します。
 
-3.  中央のペインの上にあるターゲット フレームワーク ドロップダウン リストが **[.NET Framework 4.5]** に設定されていることを確認します。
+3. **[すべての WPF コントロール]** セクションの **[Button]**、**[CheckBox]**、**[ProgressBar]** の各コントロールをデザイン サーフェイスの MainWindow にドラッグします。
 
-4.  中央のペインで、**[WPF アプリケーション]** テンプレートを選択します。
+4. **Button** コントロールを選択します。 **[プロパティ]** ウィンドウで、**[名前]** プロパティの値を \<No Name> から button1 に変更します。 次に、**[コンテンツ]** プロパティの値を Button から Start に変更します。
 
-5.  **[名前]** テキスト ボックスに「**SimpleWPFApp**」と入力します。
+5. **ProgressBar** コントロールを選択します。 **[プロパティ]** ウィンドウで、**[名前]** プロパティの値を \<No Name> から progressBar1 に変更します。 次に、**[最大値]** プロパティの値を **100** から **10000** に変更します。
 
-6.  プロジェクトの保存先のフォルダーを選択します。 **[場所]** テキスト ボックスにフォルダーの名前を入力します。
-
-7.  **[OK]** をクリックします。
-
-     **Visual Studio の WPF デザイナー**が開き、プロジェクトの MainWindow が表示されます。
-
-8.  ツールボックスが現在開いていない場合は開きます。 **[表示]** メニューを選択し、**[ツールボックス]** を選択します。
-
-9. **[すべての WPF コントロール]** セクションの **[Button]**、**[CheckBox]**、**[ProgressBar]** の各コントロールをデザイン サーフェイスの MainWindow にドラッグします。
-
-10. **Button** コントロールを選択します。 **[プロパティ]** ウィンドウで、**[名前]** プロパティの値を \<No Name> から button1 に変更します。 次に、**[コンテンツ]** プロパティの値を Button から Start に変更します。
-
-11. **ProgressBar** コントロールを選択します。 **[プロパティ]** ウィンドウで、**[名前]** プロパティの値を \<No Name> から progressBar1 に変更します。 次に、**[最大値]** プロパティの値を **100** から **10000** に変更します。
-
-12. **Checkbox** コントロールを選択します。 **[プロパティ]** ウィンドウで、**[名前]** プロパティの値を \<No Name> から checkBox1 に変更し、**[IsEnabled]** プロパティをクリアします。
+6. **Checkbox** コントロールを選択します。 **[プロパティ]** ウィンドウで、**[名前]** プロパティの値を \<No Name> から checkBox1 に変更し、**[IsEnabled]** プロパティをクリアします。
 
      ![簡単な WPF アプリケーション](../test/media/codedui_wpfapp.png)
 
-13. ボタン コントロールをダブルクリックしてクリック イベント ハンドラーを追加します。
+7. ボタン コントロールをダブルクリックしてクリック イベント ハンドラーを追加します。
 
      コード エディターに *MainWindow.xmal.cs* が表示され、新しい button1_Click メソッドにカーソルが置かれます。
 
-14. MainWindow クラスの先頭にデリゲートを追加します。 このデリゲートはプログレス バーに使用されます。 デリゲートを追加するには、次のコードを追加します。
+8. MainWindow クラスの先頭にデリゲートを追加します。 このデリゲートはプログレス バーに使用されます。 デリゲートを追加するには、次のコードを追加します。
 
     ```csharp
     public partial class MainWindow : Window
@@ -70,7 +56,7 @@ ms.locfileid: "55955064"
         }
     ```
 
-15. button1_Click メソッドに次のコードを追加します。
+9. button1_Click メソッドに次のコードを追加します。
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -95,7 +81,7 @@ ms.locfileid: "55955064"
     }
     ```
 
-16. ファイルを保存します。
+10. ファイルを保存します。
 
 ### <a name="run-the-wpf-app"></a>WPF アプリを実行する
 
@@ -120,22 +106,14 @@ ms.locfileid: "55955064"
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>SimpleWPFApp のコード化された UI テストを作成する
 
-1. **ソリューション エクスプローラー**で、ソリューションを右クリックし、**[追加]** を選択して **[新しいプロジェクト]** を選択します。
+1. **ソリューション エクスプローラー**で、ソリューション ノードを右クリックして、**[追加]** > **[新しいプロジェクト]** の順に選択します。
 
-     **[新しいプロジェクトの追加]** ダイアログ ボックスが表示されます。
-
-1. **[インストールされたテンプレート]** ペインで、**[Visual C#]** を展開し、**[テスト]** を選択します。
-
-1. 中央のペインで、**[コード化された UI テスト プロジェクト]** テンプレートを選択します。
+2. **[コード化された UI テスト プロジェクト]** プロジェクト テンプレートを検索して選択し、プロジェクトが作成されるまでの一連の手順を行います。
 
    > [!NOTE]
    > **[コード化された UI テスト プロジェクト]** テンプレートが表示されない場合は、[コード化された UI テスト コンポーネントをインストール](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)する必要があります。
 
-1. **[OK]** をクリックします。
-
-     **CodedUITestProject1** という名前の新しいコード化された UI テスト プロジェクトがソリューションに追加されます。
-
-     **[コード化された UI テストのコードの生成]** ダイアログ ボックスが表示されます。
+     **CodedUITestProject1** という名前の新しいコード化された UI テスト プロジェクトがご自分のソリューションに追加され、**[コード化された UI テストのコードの生成]** ダイアログ ボックスが表示されます。
 
 1. **[操作の記録、UI マップの編集、またはアサーションの追加]** オプションを選択し、**[OK]** を選択します。
 
@@ -355,7 +333,7 @@ ms.locfileid: "55955064"
 
 ![ビデオへのリンク](../data-tools/media/playvideo.gif) [コード化された UI テストの概要](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問
 
 [コード化された UI テストの FAQ](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 

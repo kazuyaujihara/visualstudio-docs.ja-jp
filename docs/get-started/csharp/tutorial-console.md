@@ -2,8 +2,9 @@
 title: 'チュートリアル: シンプルな C# コンソール アプリを作成する'
 description: Visual Studio で C# コンソール アプリを作成する方法について、ステップ バイ ステップで説明します。
 ms.custom: seodec18, get-started
-ms.date: 03/12/2019
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,22 +15,34 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: ccd5ff0f0e77a2f59135b2bf7950c4c6ddf58e02
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736916"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416173"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する
 
 この C# 用のチュートリアルでは、Visual Studio を使用して、コンソール アプリを作成および実行しながら、Visual Studio の統合開発環境 (IDE) の一部の機能を検討します。
 
+::: moniker range="vs-2017"
+
 Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
 始めるには、C# アプリケーション プロジェクトを作成します。 このプロジェクトの種類には、必要となるすべてのテンプレート ファイルが付属していますので、何も追加する必要はありません。
+
+::: moniker range="vs-2017"
 
 1. Visual Studio 2017 を開きます。
 
@@ -56,13 +69,48 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>オプション 2:[ツール] メニュー バーを使用する
 
-1. **[新しいプロジェクト]** ダイアログ ボックスを取り消し、上部のメニュー バーから **[ツール]** > **[ツールと機能を取得]** の順に選択します。
+1. **[新しいプロジェクト]** ダイアログ ボックスを取り消し、上部のメニュー バーから **[ツール]**>**[ツールと機能を取得]** の順に選択します。
 
 1. Visual Studio インストーラーが起動します。 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、**[変更]** を選択します。
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Visual Studio 2019 を開きます。
+
+1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+
+   ![[新しいプロジェクトの作成] ウィンドウを表示する](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[C#]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
+
+   言語およびプラットフォームのフィルターを適用してから、**[コンソール アプリ (.NET Core)]** テンプレートを選択して、**[次へ]** を選択します。
+
+   ![コンソール アプリ (.NET Framework) 用の C# テンプレートを選択する](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > **[コンソール アプリ (.NET Core)]** テンプレートが表示されない場合は、**[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、**[さらにツールと機能をインストールする]** リンクを選択します。
+   >
+   > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > 次に、Visual Studio インストーラーで、**[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+   >
+   > ![Visual Studio インストーラーの [.NET Core クロスプラットフォームの開発] ワークロード](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、**[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
+
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*電卓*」とタイプまたは入力します。 次に、**[作成]** を選択します。
+
+   ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに '電卓' という名前を付けます。](./media/vs-2019/csharp-name-your-calculator-project.png)
+
+   Visual Studio によってその新しいプロジェクトが開かれます。プロジェクトには既定で "Hello World" コードが含まれます。
+   
+::: moniker-end
+
 ## <a name="create-the-app"></a>アプリを作成する
 
-まず、C# での基本的な整数計算を見ていきます。 次に、基本的な電卓を作成するコードを追加します。 次に。 その後を、アプリをデバッグし、エラーを発見して修正します。 最後に、コードを改良していっそう効率的にします。
+まず、C# での基本的な整数計算を見ていきます。 次に、基本的な電卓を作成するコードを追加します。 その後を、アプリをデバッグし、エラーを発見して修正します。 最後に、コードを改良していっそう効率的にします。
 
 ### <a name="explore-integer-math"></a>整数の演算の確認
 
@@ -404,7 +452,7 @@ C# で何らかの基本的な整数計算を始めましょう。
 
 1. **[Calculator]** を選択してプログラムを実行するか、**F5** キーを押します。
 
-1. 画面の指示に従って、値 **42** を値 **119** で割ります。 アプリは次のようになります。
+1. 画面の指示に従って、値 **42** を値 **119** で割ります。 アプリは次のスクリーンショットのようになります。
 
     ![実行するアクションのプロンプトと正しくない入力のエラー処理を含むようにリファクタリングされた電卓アプリが示されているコンソール ウィンドウ](./media/csharp-console-calculator-refactored.png)
 

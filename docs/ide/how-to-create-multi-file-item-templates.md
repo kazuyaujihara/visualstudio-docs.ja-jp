@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1871b7270c462ea599450e48f0a86a4887ebc5ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970518"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416345"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>方法:複数ファイルの項目テンプレートを作成する
 
@@ -28,11 +28,11 @@ ms.locfileid: "55970518"
 
 複数ファイルの項目テンプレートでは、項目が作成されるときに正しいファイル拡張子が使われるようにするため、パラメーターが必要です。 **テンプレートのエクスポート ウィザード**を使って複数ファイルの項目テンプレートを作成する場合、これらのパラメーターは自動的に生成されるので、それ以上編集する必要はありません。
 
-## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>テンプレートのエクスポート ウィザードを使って複数ファイルの項目テンプレートを作成するには
+## <a name="use-the-export-template-wizard"></a>[テンプレートのエクスポート] ウィザードを使用する
 
 複数ファイルの項目テンプレートは、単一ファイルの項目テンプレートと同じ方法で作成できます。 「[方法:項目テンプレートを作成する](../ide/how-to-create-item-templates.md)」を参照してください。 ウィザードの **[エクスポートする項目の選択]** ページで、依存ファイル (Windows フォームのフォーム ファイルなど) を持つファイルを選択します。 依存ファイル (デザイナー ファイルやリソース ファイルなど) が、ウィザードによってテンプレートに自動的に追加されます。
 
-## <a name="to-manually-create-a-multi-file-item-template"></a>複数ファイルの項目テンプレートを手動で作成するには
+## <a name="manually-create-a-multi-file-item-template"></a>複数ファイルの項目テンプレートを手動で作成する
 
 1. 手動で単一ファイルの項目テンプレートを作成するのと同じように項目テンプレートを作成しますが、複数ファイルの項目を構成する各ファイルを組み込みます。
 

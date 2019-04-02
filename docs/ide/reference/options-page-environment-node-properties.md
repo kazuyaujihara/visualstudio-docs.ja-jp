@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708330"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355605"
 ---
 # <a name="options-page-environment-node-properties"></a>[環境] ノード プロパティ ([オプション] ページ)
 
@@ -120,7 +120,7 @@ ms.locfileid: "56708330"
 |プロパティ項目名|[値]|説明|
 | - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (String)|ビルドしたプロジェクトをプレビューまたは実行する前に IDE ですべての内容を保存するかどうかを指定します。|
-|ProjectsLocation|Get/Set (String)|**[プロジェクトの追加]** ダイアログ ボックスで新しいプロジェクトを保存する既定のディレクトリを指定します。|
+|ProjectsLocation|Get/Set (String)|新しいプロジェクトが保存される既定のディレクトリを決定します。|
 |ShowOutputWindowBeforeBuild|Get/Set (Boolean)|ビルドの開始時に **[出力]** ウィンドウを表示するかどうかを指定します。|
 |ShowTaskListAfterBuild|Get/Set (Boolean)|ビルド完了時に、失敗したビルド操作を **[タスク一覧]** に表示するかどうかを指定します。|
 |TrackFileSelectionInExplorer|Get/Set (Boolean)|**ソリューション エクスプローラー**の現在の項目を追跡するかどうかを指定します。|
