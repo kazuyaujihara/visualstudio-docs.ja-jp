@@ -1,6 +1,6 @@
 ---
-title: '方法: コード スニペットを配布する'
-ms.date: 11/04/2016
+title: 拡張機能としてコード スニペットを配布する
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -12,24 +12,28 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323054"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355423"
 ---
 # <a name="how-to-distribute-code-snippets"></a>方法: コード スニペットを配布する
 
-コード スニペットは友人に配布することができます。友人は**コード スニペット マネージャー**を使用して、そのスニペットを自分のコンピューターにインストールできます。 ただし、配布するスニペットが複数ある場合や、スニペットをより広範に配布する場合は、スニペット ファイルを Visual Studio 拡張機能に含めます。 Visual Studio ユーザーはこの拡張機能をインストールできます。
+コード スニペットは友人に配布することができます。友人は**コード スニペット マネージャー**を使用して、そのスニペットを自分のコンピューターにインストールできます。 ただし、配布するスニペットが複数ある場合や、スニペットをより広範に配布する場合は、スニペット ファイルを Visual Studio 拡張機能に含めることができます。 さらに、Visual Studio ユーザーはこの拡張機能をインストールしてスニペットを取得できます。
 
-Visual Studio 拡張機能を作成するには、Visual Studio SDK をインストールする必要があります。 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)で、Visual Studio のインストールと一致する VSSDK のバージョンを見つけます。
+## <a name="prerequisites"></a>必須コンポーネント
+
+**[VSIX プロジェクト]** プロジェクト テンプレートへのアクセス権を取得するために **[Visual Studio 拡張機能の開発]** ワークロードをインストールします。
+
+![Visual Studio 拡張機能の開発ワークロード](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>拡張機能を設定する
 
-この手順では、「[チュートリアル: コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md)」で作成したのと同じ Hello World コード スニペットを使います。コード スニペットを作成する」を参照してください。 *.snippet* のテキストは用意されているため、前の手順に戻ってコード スニペットを作成する必要はありません。
+この手順では、次のチュートリアルで作成したのと同じ Hello World コード スニペットを使います。「[チュートリアル: コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md)」を参照してください。 この記事ではスニペット XML を提供します。したがって、後に戻りスニペットを作成する必要はありません。
 
-1. **TestSnippet** という新しい VSIX プロジェクトを作成します  (**[ファイル]** > **[新規作成]** > **[プロジェクト]** > **[Visual C#] (または [Visual Basic])** > **[拡張]**)。
+1. **空の VSIX プロジェクト** テンプレートから新しいプロジェクトを作成して、そのプロジェクトに **TestSnippet** という名前を付けます。
 
 2. **TestSnippet** プロジェクトで新しい XML ファイルを追加し、*VBCodeSnippet.snippet* という名前を付けます。 内容を次の XML に置き換えます。
 
@@ -111,7 +115,9 @@ Visual Studio 拡張機能を作成するには、Visual Studio SDK をインス
 
 4. スニペットをテストします。 実験用インスタンスで、Visual Basic プロジェクトを開き、コード ファイルのいずれかを開きます。 コードの任意の場所にカーソルを置いて右クリックし、コンテキスト メニューで **[スニペットの挿入]** を選びます。
 
-5. フォルダーの 1 つとして *HelloWorldVB* が表示されるはずです。 これをダブルクリックします。 **[スニペットの挿入: HelloWorldVB >]** ポップアップが表示されます。ここに **[HelloWorldVB]** ドロップダウン リストが表示されます。 **[HelloWorldVB]** ドロップダウン リストをクリックします。 次の行がファイルに追加されます。
+5. フォルダーの 1 つとして *HelloWorldVB* が表示されるはずです。 これをダブルクリックします。 **[スニペットの挿入: HelloWorldVB >]** ポップアップが表示されます。ここに **[HelloWorldVB]** ドロップダウン リストが表示されます。 **[HelloWorldVB]** ドロップダウン リストをクリックします。
+
+   コード ファイルに次の行が追加されます。
 
     ```vb
     Console.WriteLine("Hello, World!")

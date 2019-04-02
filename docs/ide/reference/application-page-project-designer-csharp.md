@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba118f9b0b08b5e092fa85ccc3940cd41a7ff9c8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222533"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355342"
 ---
 # <a name="application-page-project-designer-c"></a>[アプリケーション] ページ (プロジェクト デザイナー) (C#)
 
@@ -52,7 +52,7 @@ ms.locfileid: "57222533"
 
 アプリケーションが対象とする .NET Framework のバージョンを指定します。 このオプションの値は、コンピューター上にインストールされている .NET Framework のバージョンによって異なる場合があります。
 
-既定では、この値は、**[新しいプロジェクト]** ダイアログ ボックスで選択したターゲット フレームワークと同じです。
+既定では、この値は、プロジェクトを作成したときに選択したターゲット フレームワークと同じです。
 
 > [!NOTE]
 > [[必須コンポーネント] ダイアログ ボックス](../../ide/reference/prerequisites-dialog-box.md)にリストされている必須コンポーネントのパッケージは、ダイアログ ボックスを初めて開いたときに自動的に設定されます。 その後、プロジェクトのターゲット フレームワークを変更した場合は、新しいターゲット フレームワークに合わせて必須コンポーネントを手動で選択する必要があります。
