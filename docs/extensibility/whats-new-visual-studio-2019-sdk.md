@@ -1,6 +1,6 @@
 ---
 title: 新機能については、Visual Studio 2019 SDK |Microsoft Docs
-ms.date: 02/19/2019
+ms.date: 03/29/2019
 ms.topic: conceptual
 ms.assetid: 4a07607b-0c87-4866-acd8-6d68358d6a47
 author: gregvanl
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8534a142177bdd27bf15f2fe4c0e62cbe60384e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: daa4203ccdcbce89f1eb09efdd9433210bcbc987
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844542"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856646"
 ---
 # <a name="whats-new-in-the-visual-studio-2019-sdk"></a>新機能については、Visual Studio 2019 SDK です。
 
@@ -26,3 +26,41 @@ Visual Studio SDK では、Visual Studio 2019 の次の新規および更新の�
 ## <a name="single-unified-visual-studio-sdk"></a>Visual Studio SDK を 1 つに統合
 
 1 つの NuGet パッケージを Visual Studio SDK のすべての資産を入手できるようになりました[Microsoft.VisualStudio.SDK](https://www.nuget.org/packages/microsoft.visualstudio.sdk)します。
+
+## <a name="editor-registration-enhancements"></a>エディターの登録の機能強化
+
+作成されてから、Visual Studio のカスタム エディター登録、エディターは、アフィニティは、特定の拡張子 (.xaml と .rc) を宣言できますまたは任意の拡張機能に適していますがサポートされて (. *)。 エディターの登録のサポートを広げる Visual Studio 2019 16.1 バージョン以降、います。
+
+### <a name="filenames"></a>ファイル名
+
+新しい適用することで、特定のファイル名をサポートしているエディターを登録できますに加え、または、特定のファイルの拡張機能のサポートを登録する代わりに、`ProvideEditorFilename`属性エディターのパッケージをします。
+
+たとえば、すべての .json ファイルをサポートするエディターが適用されますこの`ProvideEditorExtension`属性をそのパッケージ。
+
+```cs
+[ProvideEditorExtension(typeof(MyEditor), ".json", MyEditor.Priority)]
+```
+
+16.1、以降 MyEditor には、いくつかのよく知られている .json ファイルのみサポートしている場合、代わりに適用できるこれら`ProvideEditorFilename`そのパッケージに属性します。
+
+```cs
+[ProvideEditorFilename(typeof(MyEditor), "particular.json", MyEditor.Priority)]
+[ProvideEditorFilename(typeof(MyEditor), "special.json",    MyEditor.Priority)]
+```
+
+### <a name="uicontexts"></a>UIContexts
+
+エディターでは、有効にする場合を表す 1 つまたは複数の UIContexts を登録できます。 UIContexts が 1 つまたは複数のインスタンスを適用することで登録されている`ProvideEditorUIContextAttribute`エディターを登録するパッケージにします。
+
+場合は、エディターでは、登録済みの UIContexts があります。
+
+- 特定の拡張子を持つファイルを開いたときに、少なくとも 1 つの登録済みの UIContexts の機能がアクティブで、エディターの検索で、エディターが含まれます。
+- 登録済みの UIContexts のアクティブな場合、エディターは、エディターの検索には含まれません。
+
+エディターでは、任意の UIContexts を登録しない場合は、その拡張子のエディターの検索に常に含まれます。
+
+たとえば、ときに、エディターが使用可能なだけの場合、C#プロジェクトを開くと、適用することでこのアフィニティを宣言できますが、`ProvideEditorUIContext`属性。
+
+```cs
+[ProvideEditorUIContext(typeof(MyEditor), KnownUIContexts.CSharpProjectContext)]
+```
