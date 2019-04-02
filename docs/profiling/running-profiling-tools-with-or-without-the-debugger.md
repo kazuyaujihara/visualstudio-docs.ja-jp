@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4cf1cce3ba677b5232c86b7abb1386d4d1dc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597532"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323725"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>デバッガーを使用して、または使用せずにプロファイリング ツールを実行する
 
@@ -67,7 +67,7 @@ Visual Studio には、パフォーマンス測定とプロファイルのため
 
 ## <a name="collect-profiling-data-without-debugging"></a>デバッグなしでプロファイリング データを収集する
 
-デバッグなしでパフォーマンス データを収集するには、**パフォーマンス プロファイラー** ツールを実行できます。 一部のプロファイリング ツールを実行するには管理者権限が必要です。 管理者として Visual Studio を開始することもできますし、診断セッションを開始するときに管理者としてツールを実行することもできます。
+デバッグなしでパフォーマンス データを収集するには、**パフォーマンス プロファイラー** ツールを実行できます。 一部のプロファイリング ツールを実行するには管理者権限が必要です。 管理者として Visual Studio を開くこともできますし、診断セッションを開始するときに管理者としてツールを実行することもできます。
 
 1. Visual Studio でプロジェクトを開いている状態で、**[デバッグ]**、**[パフォーマンス プロファイラー]** の順に選択するか、**Alt**+**F2** を押します。
 

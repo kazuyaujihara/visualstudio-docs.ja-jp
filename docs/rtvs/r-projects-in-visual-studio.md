@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3fbe819a13466c3b67f34b0de9d7e60e10aaa57b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 157617ae085a5d298b1e552d0280b98f63e1fc0b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936188"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324787"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Visual Studio で R プロジェクトを作成する
 
@@ -23,9 +23,9 @@ R プロジェクト (*.rxproj* ファイル) は、プロジェクトに関連�
 
 ## <a name="creating-a-new-r-project"></a>新規 R プロジェクトを作成する
 
-1. Visual Studio を起動します。
-1. **[ファイル]、[新規]、[プロジェクト]** の順に選択します。(**Ctrl**+**Shift**+**N**)
-1. **[テンプレート]、[R]** で "R Project" を選択し、プロジェクトに名前と場所を指定し、**[OK]** を選択します。
+1. Visual Studio を開きます。
+1. **[ファイル] > [新規] > [プロジェクト]** の順に選択します (**Ctrl** + **Shift** + **N** キー)。
+1. **[テンプレート]** の **[R]** から "R Project" を選択し、プロジェクトに名前と場所を指定し、**[OK]** を選択します。
 
     ![Visual Studio 内の R (VS2017 の RTVS) の [新しいプロジェクト] ダイアログ ボックス](media/getting-started-01-new-project.png)
 

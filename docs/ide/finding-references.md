@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335273"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324748"
 ---
 # <a name="find-references-in-your-code"></a>コード内の参照の検索
 
 **[すべての参照の検索]** コマンドを使用して、コードベース全体で特定のコード要素が参照されている場所を検索することができます。 **[すべての参照の検索]** コマンドは、参照を検索する要素のコンテキスト (右クリック) メニューで使用できます。 キーボードを使用する場合は、**Shift + F12** キーを押します。
 
-結果が **<element> references** というツール ウィンドウに表示されます。ここで、*element* は検索対象の項目の名前です。 **references** ウィンドウのツール バーを使用して、次のことを行うことができます。
+結果が **\<element> references** というツール ウィンドウに表示されます。ここで、*element* は検索対象の項目の名前です。 **references** ウィンドウのツール バーを使用して、次のことを行うことができます。
 - ドロップダウン リスト ボックスで検索の範囲を変更します。 ソリューション全体で変更されたドキュメントだけを検索対象にすることができます。
 - 参照されている項目を選択し、**[コピー]** ボタンを選択してコピーします。
 - 前または次の場所に移動するボタンを一覧から選択するか、**F8** キーおよび **Shift + F8** キーを押します。
