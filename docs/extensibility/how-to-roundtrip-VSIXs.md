@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323816"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790421"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>方法: Visual Studio 2017 と Visual Studio 2015 と互換性のある拡張機能を作成します。
 
@@ -95,7 +95,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2.必須コンポーネントを追加、 *extension.vsixmanifest*ファイル
 
-必須コンポーネントは、Visual Studio 2017 からの新しい機能です。 ここでは、必須コンポーネントとして Visual Studio のコア エディターが必要です。 Visual Studio 2015 の VSIX デザイナーでは新しい `Prerequisites` セクションを処理しないため、XML コードでこの部分を 手動で編集する必要があります。 または、Visual Studio 2017 を開き、更新されたマニフェスト デザイナーを使用して必須コンポーネントを挿入することもできます。
+前提条件として、Visual Studio コア エディターが必要です。 Visual Studio を開き、更新されたマニフェスト デザイナーを使用して、前提条件を挿入します。
 
 この操作を手動で行うには、次の手順に従います。
 
@@ -112,7 +112,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 * ファイルを保存して閉じます。
 
 > [!NOTE]
-> これを実現する Visual Studio 2017 の VSIX デザイナーで選択した場合は、Visual Studio 2017 のすべてのバージョンと互換性があることを確認する前提条件のバージョンを手動で編集する必要があります。 なぜならば、デザイナーは最小バージョンをVisual Studio の現在のバージョンとして挿入するからです (例: 15.0.26208.0)。 しかし、他のユーザーがそれより前のバージョンを使用している可能性があるため、これを 15.0 に編集する必要があります。
+> Visual Studio 2017 のすべてのバージョンと互換性があることを確認する前提条件のバージョンを手動で編集する必要があります。 なぜならば、デザイナーは最小バージョンをVisual Studio の現在のバージョンとして挿入するからです (例: 15.0.26208.0)。 しかし、他のユーザーがそれより前のバージョンを使用している可能性があるため、これを 15.0 に編集する必要があります。
 
 この時点で、マニフェスト ファイルは次のようになります。
 
