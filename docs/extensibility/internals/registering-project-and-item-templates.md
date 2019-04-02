@@ -27,7 +27,7 @@ ms.locfileid: "56630523"
  テンプレートの詳細については、次を参照してください。[プロジェクトに追加するとプロジェクト項目テンプレート](../../extensibility/internals/adding-project-and-project-item-templates.md)します。
 
 ## <a name="registry-entries-for-projects"></a>プロジェクトのレジストリ エントリ
- 次の例では、hkey_local_machine \software\microsoft\visualstudio の下にレジストリ エントリ\\<*バージョン*>。 付随するテーブルでは、例で使用される要素について説明します。
+ 次の例では、HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<*バージョン*> 下のレジストリ エントリを示しています。 付随するテーブルでは、例で使用される要素について説明します。
 
 ```
 [Projects\{ProjectGUID}]
