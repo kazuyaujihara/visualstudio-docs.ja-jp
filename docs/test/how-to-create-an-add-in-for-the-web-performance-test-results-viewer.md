@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9434ac138f848442a32986d85ae816bb8d78e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946948"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416358"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>方法: Web パフォーマンス テスト結果ビューアー用に Visual Studio アドインを作成する
 
@@ -24,7 +24,7 @@ ms.locfileid: "55946948"
 
 -   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-また、*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* フォルダーにある LoadTestPackage DLL に参照を追加する必要があります。
+また、*%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\Enterprise\Common7\IDE\PrivateAssemblies* フォルダーにある LoadTestPackage DLL に参照を追加する必要があります。
 
 **Web パフォーマンス テスト結果ビューアー**の UI を拡張するには、Visual Studio アドインおよびユーザー コントロールを作成する必要があります。 次の手順では、アドインとユーザー コントロールの作成方法、および **Web パフォーマンス テスト結果ビューアー**の UI を拡張するのに必要なクラスを実装する方法について説明します。
 
@@ -51,46 +51,38 @@ ms.locfileid: "55946948"
 
 1. **ソリューション エクスプローラー**で、ソリューションを右クリックし、**[追加]** を選択して **[新しいプロジェクト]** を選択します。
 
-    **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
-
-2. **[インストールされたテンプレート]** で、**[その他のプロジェクトの種類]** を展開し、**[機能拡張]** を選択します。
-
-3. テンプレート リストで、**[Visual Studio アドイン]** を選択します。
-
-4. **[名前]** にアドインの名前を入力します。 例: **WebPerfTestResultsViewerAddin**。
-
-5. **[OK]** をクリックします。
+2. 新しい **Visual Studio アドイン** プロジェクトを作成します。
 
     Visual Studio **アドイン ウィザード**が起動します。
 
-6. **[次へ]** をクリックします。
+3. **[次へ]** をクリックします。
 
-7. **[プログラミング言語の選択]** ページで、アドインを記述するのに使用するプログラミング言語を選択します。
+4. **[プログラミング言語の選択]** ページで、アドインを記述するのに使用するプログラミング言語を選択します。
 
    > [!NOTE]
    > このトピックでは、サンプル コードの実行に Visual C# を使用します。
 
-8. **[アプリケーション ホストの選択]** ページで、**Visual Studio** のチェック ボックスをオンにし、**Visual Studio マクロ**のチェック ボックスをオフにします。
+5. **[アプリケーション ホストの選択]** ページで、**Visual Studio** のチェック ボックスをオンにし、**Visual Studio マクロ**のチェック ボックスをオフにします。
 
-9. **[次へ]** をクリックします。
+6. **[次へ]** をクリックします。
 
-10. **[名前および説明の入力]** ページで、アドインの名前および説明を入力します。
+7. **[名前および説明の入力]** ページで、アドインの名前および説明を入力します。
 
      アドインが作成されると、**アドイン マネージャー**の **[使用できるアドイン]** の一覧にアドインの名前と説明が表示されます。 アドインの機能や動作などをユーザーが理解できる説明をアドインに追加します。
 
-11. **[次へ]** をクリックします。
+8. **[次へ]** をクリックします。
 
-12. **[アドイン オプションを選択します。]** ページの **[ホスト アプリケーションの読み込み時にアドインを開始する]** を選択します。
+9. **[アドイン オプションを選択します。]** ページの **[ホスト アプリケーションの読み込み時にアドインを開始する]** を選択します。
 
-13. 残りのチェック ボックスをオフにします。
+10. 残りのチェック ボックスをオフにします。
 
-14. **[[バージョン情報] に関する情報を選択します。]** ページで、アドインについての情報を **[バージョン情報]** ダイアログ ボックスに表示するかどうかを指定できます。 情報を表示する場合は、**[[バージョン情報] ボックスの情報を指定する]** チェック ボックスをオンにします。
+11. **[[バージョン情報] に関する情報を選択します。]** ページで、アドインについての情報を **[バージョン情報]** ダイアログ ボックスに表示するかどうかを指定できます。 情報を表示する場合は、**[[バージョン情報] ボックスの情報を指定する]** チェック ボックスをオンにします。
 
      Visual Studio の **[バージョン情報]** ダイアログ ボックスに追加できる情報には、バージョン番号、サポートの詳細、ライセンスのデータなどがあります。
 
-15. **[次へ]** をクリックします。
+12. **[次へ]** をクリックします。
 
-16. 選択したオプションが **[概要]** ページに表示され、選択した内容をレビューできます。 問題がなければ、**[完了]** を選んで、アドインを作成します。 変更を加える場合は、**[戻る]** ボタンを選びます。
+13. 選択したオプションが **[概要]** ページに表示され、選択した内容をレビューできます。 問題がなければ、**[完了]** を選んで、アドインを作成します。 変更を加える場合は、**[戻る]** ボタンを選びます。
 
      新しいソリューションおよびプロジェクトが作成され、**コード エディター**に新しいアドインの *Connect.cs* ファイルが表示されます。
 
@@ -119,24 +111,11 @@ ms.locfileid: "55946948"
 
 1.  **ソリューション エクスプローラー**で、ソリューションを右クリックし、**[追加]** を選択して **[新しいプロジェクト]** を選択します。
 
-     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+2. 新しい **Windows フォーム コントロール ライブラリ** プロジェクトを作成します。
 
-2.  **[インストールされたテンプレート]** の **[Visual Basic]** または **[Visual C#]** のいずれかを展開し、**[Windows]** を選択します。
+3.  **ツールボックス**から userControl1 のサーフェイスに <xref:System.Windows.Forms.DataGridView> をドラッグします。
 
-    > [!NOTE]
-    > このトピックでは、サンプル コードの実行に Visual C# を使用します。
-
-3.  テンプレートの一覧で、**[Windows フォーム コントロール ライブラリ]** を選択します。
-
-4.  **[名前]** にアドインの名前を入力します。 例: **WebPerfTestResultsViewerControl**。
-
-5.  **[OK]** をクリックします。
-
-     Windows フォーム コントロール ライブラリ プロジェクト WebPerfTestResultsViewerControl が**ソリューション エクスプローラー**に追加され、*UserControl1.cs* がデザイン モードで表示されます。
-
-6.  **ツールボックス**から userControl1 のサーフェイスに <xref:System.Windows.Forms.DataGridView> をドラッグします。
-
-7.  <xref:System.Windows.Forms.DataGridView> の右上隅のアクション タグ グリフ (![スマート タグ グリフ](../test/media/vs_winformsmttagglyph.gif)) をクリックし、次の手順を実行します。
+4. <xref:System.Windows.Forms.DataGridView> の右上隅のアクション タグ グリフ (![スマート タグ グリフ](../test/media/vs_winformsmttagglyph.gif)) をクリックし、次の手順を実行します。
 
     1.  **[親コンテナーにドッキングする]** を選択します。
 
@@ -154,13 +133,13 @@ ms.locfileid: "55946948"
 
     7.  **[閉じる]** を選択します。
 
-8.  **[プロパティ]** ウィンドウで、<xref:System.Windows.Forms.DataGridView> の **(Name)** プロパティを **resultControlDataGridView** に変更します。
+5.  **[プロパティ]** ウィンドウで、<xref:System.Windows.Forms.DataGridView> の **(Name)** プロパティを **resultControlDataGridView** に変更します。
 
-9. デザイン サーフェイスを右クリックし、**[コードの表示]** を選択します。
+6. デザイン サーフェイスを右クリックし、**[コードの表示]** を選択します。
 
      **コード エディター**に *UserControl1.cs* ファイルが表示されます。
 
-10. インスタンス化された <xref:System.Windows.Forms.UserControl> クラスの名前を UserContro1 から resultControl に変更します。
+7. インスタンス化された <xref:System.Windows.Forms.UserControl> クラスの名前を UserContro1 から resultControl に変更します。
 
     ```csharp
     namespace WebPerfTestResultsViewerControl
@@ -178,8 +157,6 @@ ms.locfileid: "55946948"
      後で、*Connect.cs* ファイルにいくつかのコードを追加します。
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>WebPerfTestResultsViewerAddin へのコードの追加
-
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>コードを Visual Studio アドインに追加して Web テスト結果ビューアーを展開するには
 
 1.  **ソリューション エクスプローラー**で、WebPerfTestResultsViewerAddin プロジェクトの **[参照設定]** ノードを右クリックし、**[参照の追加]** を選択します。
 
@@ -276,8 +253,6 @@ ms.locfileid: "55946948"
      Visual Studio アドイン向けのコードが完成したので、Update メソッドを WebPerfTestResultsViewerControl プロジェクトの resultControl に追加する必要があります。
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>WebPerfTestResultsViewerControl にコードを追加する
-
-### <a name="to-add-code-to-the-user-control"></a>ユーザー コントロールにコードを追加するには
 
 1.  **ソリューション エクスプローラー**で、WebPerfTestResultsViewerControl プロジェクト ノードを右クリックし、**[プロパティ]** を選択します。
 

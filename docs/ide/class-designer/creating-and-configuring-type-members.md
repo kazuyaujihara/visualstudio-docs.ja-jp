@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97a7886ba57c9e4076121ec8071e52f29af784f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956858"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324241"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>クラス デザイナーでの型メンバーの作成および構成
 
@@ -205,7 +205,7 @@ ms.locfileid: "55956858"
 
 - **\<パラメーターの追加>**
 
-     メンバーの最後のパラメーター行には、**[名前]** セルに **<add parameter>** というテキストが表示されます。 このセルをクリックして、新しいパラメーターを作成できます。 詳細については、「[メソッドにパラメーターを追加するには](creating-and-configuring-type-members.md#add-parameters-to-methods)」を参照してください。
+     メンバーの最後のパラメーター行には、**[名前]** セルに **<パラメーターの追加\>** というテキストが表示されます。 このセルをクリックして、新しいパラメーターを作成できます。 詳細については、「[メソッドにパラメーターを追加するには](creating-and-configuring-type-members.md#add-parameters-to-methods)」を参照してください。
 
 **[プロパティ]** ウィンドウには、**[クラスの詳細]** ウィンドウに表示されるのと同じパラメーターのプロパティ (**[名前]**、**[型]**、**[修飾子]**、**[概要]**、**[省略可能な既定値]**) が表示されます。 ある場所でプロパティを変更すると、プロパティの値がグローバルに更新され、他の場所でのその値の表示も更新されます。
 

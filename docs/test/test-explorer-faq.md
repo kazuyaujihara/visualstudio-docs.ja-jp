@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a19a243d6bd54c62d680ff348be016c011653db7
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221893"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323569"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio テスト エクスプローラーに関する FAQ
 
@@ -120,7 +120,7 @@ Visual Studio 2019 では、前にパブリックとしてマークされてい�
 
 最近の UWP テスト プロジェクトでは、テスト アプリを識別するためのパフォーマンスを向上させるため、テスト プラットフォームのビルド プロパティを指定します。 Visual Studio バージョン 15.7 より前に初期化された UWP テスト プロジェクトがある場合は、**[出力]** > **[テスト]** でこのエラーが表示される場合があります。
 
-**System.AggregateException: 1 つまたは複数のエラーが発生しました。 ---> System.InvalidOperationException:次の TestContainer が {} Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()** で見つかりませんでした
+**System.AggregateException: 1 つまたは複数のエラーが発生しました。 ---> System.InvalidOperationException:次の TestContainer が {} Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()** で見つかりませんでした
 
 このエラーを修復するには:
 

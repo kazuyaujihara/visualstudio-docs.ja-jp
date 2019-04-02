@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3878c3817ef7df66f4e8d31562598389fd07bc29
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1a26f3bc5e47f0aac7385bb9b1197da0a72396d
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927024"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355410"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>クイック スタート: Visual Studio のテンプレートから Python プロジェクトを作成する
 
-[Visual Studio 2017 に Python のサポートをインストール](installing-python-support-in-visual-studio.md)すると、さまざまなテンプレートを使用して新しい Python プロジェクトを簡単に作成できます。 このクイック スタートでは、テンプレートを利用し、簡単な Flask アプリを作成します。 結果的に生成されるプロジェクトは、「[クイック スタート - Flask での Web アプリの作成](../ide/quickstart-python.md)」で手動で作成するプロジェクトに似ています。
+[Visual Studio に Python のサポートをインストール](installing-python-support-in-visual-studio.md)すると、さまざまなテンプレートを使用して新しい Python プロジェクトを簡単に作成できます。 このクイック スタートでは、テンプレートを利用し、簡単な Flask アプリを作成します。 結果的に生成されるプロジェクトは、「[クイック スタート - Flask での Web アプリの作成](../ide/quickstart-python.md)」で手動で作成するプロジェクトに似ています。
 
-1. Visual Studio 2017 を起動します。
+1. Visual Studio を起動します。
 
 1. 一番上にあるメニュー バーから、**[ファイル]** > **[新規]** > **[プロジェクト]** の順に選択し、**[新しいプロジェクト]** ダイアログで "blank flask" を検索し、真ん中の一覧にある **Blank Flask Web Project** テンプレートを選択します。プロジェクトに名前を付け、**[OK]** を選択します。
 

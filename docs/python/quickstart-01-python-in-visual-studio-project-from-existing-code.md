@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9e6488d21538d49a6bb33648725fb164cdd8acaf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 56660aaa920fc5813f73bfcc9c191ee0baafb113
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929948"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354925"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>クイック スタート: 既存のコードから Python プロジェクトを作成する
 
-[Visual Studio 2017 で Python サポートをインストール](installing-python-support-in-visual-studio.md)したら、Visual Studio プロジェクトに既存の Python コードを簡単に取り込むことができます。
+[Visual Studio で Python サポートをインストール](installing-python-support-in-visual-studio.md)したら、Visual Studio プロジェクトに既存の Python コードを簡単に取り込むことができます。
 
 > [!Important]
 > ここで説明するプロセスでは、元のソース ファイルの移動やコピーは行いません。 コピーで作業する場合は、まず、フォルダーを複製します。

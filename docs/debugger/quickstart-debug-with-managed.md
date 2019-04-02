@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8dc08ce4ef3f4afd8cd7630848ef1ee67e1f2970
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8762d13e1a5981f634b1b13fe08968a6b01c2b94
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152929"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475969"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して C# または Visual Basic でデバッグする
 
@@ -25,13 +25,13 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 
-1. Visual Studio で、**[ファイル] > [新規作成] > [プロジェクト]** の順に選択します。
+1. Visual Studio を起動し、新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **[新しいプロジェクトの作成]** ダイアログ ボックスが開きます。 検索ボックスに「**.net**」と入力して結果をフィルター処理し、**[コンソール アプリ (.NET Core)]** を選択して、**[次へ]** をクリックします。 その後、「**MyDbgApp**」などの名前を入力して、**[作成]** を選択します。
+    **Ctrl + Q** キーを押して検索ボックスを開き、「**コンソール**」と入力し、**[テンプレート]**、**[新しいコンソール アプリ (.NET Core) プロジェクトの作成]** の順に選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **[新しいプロジェクト]** ダイアログ ボックスが表示されます。 **[Visual C#]** で、**[.NET Core]** を選択し、中央のウィンドウで **[コンソール アプリ (.NET Core)]** を選択します。 次に、「**MyDbgApp**」のような名前を入力し、**[OK]** をクリックします。
+    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** の左側のウィンドウで、**[Visual C#]** の下にある **[.NET Core]** を選択し、次に、真ん中のウィンドウで **[コンソール アプリ (.NET Core)]** を選択します。 次に、「**MyDbgApp**」のような名前を入力し、**[OK]** をクリックします。
     ::: moniker-end
 
      **[コンソール アプリ (.NET Core)]** プロジェクト テンプレートが表示されない場合は、**[ツール]** > **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 **[.NET デスクトップ開発]** と **[.NET Core]** ワークロードを選択し、**[変更]** を選びます。

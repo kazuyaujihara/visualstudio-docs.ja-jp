@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914020"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416328"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>方法: 診断データ アダプターを作成する
 
@@ -42,27 +42,15 @@ ms.locfileid: "55914020"
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestStepEnd>|テストで各テスト ステップを終了します。|
 
 > [!NOTE]
-> 手動テストが完了すると、これ以降、データ コレクションイベントは診断データ アダプターに送信されません。 テストを再実行すると、テスト ケース識別子が新しくなります。 ユーザーがテスト中にテストをリセットするか (<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> イベントが発生します)、またはテスト ステップを変更すると、これ以降、データ コレクションイベントは診断データ アダプターに送信されません。ただし、テスト ケース識別子は変更されません。 テスト ケースがリセットされているかどうかを確認するには、診断データ アダプターでテスト ケース識別子を追跡する必要があります。
+> 手動テストが完了すると、これ以降、データ収集イベントは診断データ アダプターに送信されません。 テストを再実行すると、テスト ケース識別子が新しくなります。 ユーザーがテスト中にテストをリセットするか (<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> イベントが発生します)、またはテスト ステップを変更すると、これ以降、データ コレクションイベントは診断データ アダプターに送信されません。ただし、テスト ケース識別子は変更されません。 テスト ケースがリセットされているかどうかを確認するには、診断データ アダプターでテスト ケース識別子を追跡する必要があります。
 
 テストの設定を作成するときに構成した情報に基づいてデータ ファイルを収集する診断データ アダプターを作成するには、次の手順に従って操作します。
 
 カスタムの構成エディターを含む、診断データ アダプター プロジェクトのサンプル全体については、「[診断データ アダプター作成用のサンプル プロジェクト](../test/quickstart-create-a-load-test-project.md)」を参照してください。
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>診断データ アダプターを作成してインストールする
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>診断データ アダプターを作成してインストールする
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>診断データ アダプターを作成してインストールするには
-
-1. 新しいクラス ライブラリを作成します。
-
-   1.  **[ファイル]** メニューの **[新規作成]** をポイントし、**[新しいプロジェクト]** をクリックします。
-
-   2.  **[プロジェクトの種類]** で使用する言語をクリックします。
-
-   3.  **[Visual Studio にインストールされたテンプレート]** で **[クラス ライブラリ]** をクリックします。
-
-   4.  診断データ アダプターの名前を入力します。
-
-   5.  **[OK]** をクリックします。
+1. 新しい**クラス ライブラリ** プロジェクトを作成します。
 
 2. アセンブリ **Microsoft.VisualStudio.QualityTools.ExecutionCommon** を追加します。
 

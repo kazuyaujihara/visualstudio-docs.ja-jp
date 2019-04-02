@@ -13,12 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731c2ca6993ed4d71238a290f782bdd079271039
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983833"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475982"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio のネットワーク ベース インストールを更新する
 
@@ -100,6 +102,9 @@ layoutDir 内の vs_enterprise.exe を呼び出すことができます。
 > レイアウト オフライン キャッシュには `--verify` オプションで必要とされるいくつかの重要なメタデータ ファイルが必要です。 これらのメタデータ ファイルが見つからない場合、"--verify" が実行できず、セットアップでエラーが返されます。 このエラーが発生した場合、新しいオフライン レイアウトを別のフォルダー (または同じオフライン キャッシュ フォルダー) に再作成してください。 そのためには、初期オフライン レイアウトの作成に使用したものと同じレイアウト コマンドを実行します。 たとえば、`Vs_enterprise.exe --layout <layoutDir>` のようにします。
 
 Microsoft は定期的に Visual Studio の更新プログラムを提供しているため、作成した新しいレイアウトが初期レイアウトと同じバージョンでない可能性があります。
+
+> [!NOTE]
+> 検証は、特定のマイナー バージョンの Visual Studio の最新のバージョンに対してのみ機能します。 新しいバージョンがリリースされるとすぐに、検証は、同じマイナー バージョンの以前の修正プログラム レベル リリースに対しては機能しなくなります。
 
 ## <a name="how-to-fix-a-layout"></a>レイアウトの修正方法
 

@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14482019ceb3e7d717592923b4e6b59eacc0eba2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5b090c1e833a791593e5332b632d64b832b5cb1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957979"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354753"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter 拡張機能の使用
 
-[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) は、テンプレートの検出、テンプレート オプションの入力、プロジェクトとファイルの作成を行うためのグラフィカル ユーザー インターフェイスを提供します。 Cookiecutter は Visual Studio 2017 に付属しており、Visual Studio の以前のバージョンにも個別にインストールできます。
+[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) は、テンプレートの検出、テンプレート オプションの入力、プロジェクトとファイルの作成を行うためのグラフィカル ユーザー インターフェイスを提供します。 Cookiecutter は Visual Studio 2017 以降に付属しており、Visual Studio の以前のバージョンにも個別にインストールできます。
 
 Cookiecutter には、Python 3.3 以降 (32 ビットまたは 64 ビット) または Anaconda 3 4.2 以降 (32 ビットまたは 64 ビット) が必要です。 適切な Python インタープリターを使用できない場合、警告が Visual Studio に表示されます。 Visual Studio の実行中に Python インタープリターをインストールした場合は、Cookiecutter ツールバーの **[ホーム]** ボタンをクリックすると新しくインストールしたインタープリターが検出されます。 (環境全般の詳細については、「[Python 環境](managing-python-environments-in-visual-studio.md)」を参照してください。)
 

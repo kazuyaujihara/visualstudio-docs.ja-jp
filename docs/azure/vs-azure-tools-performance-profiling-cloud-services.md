@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 12fcc2813b36968270e0eeba968a5572f904fc1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd436a6b7e38c8f76de5d113c326e194e4011155
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946945"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323202"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>クラウド サービスのパフォーマンスのテスト
 ## <a name="overview"></a>概要
@@ -101,7 +101,7 @@ Visual Studio でのパフォーマンスのプロファイルの詳細につい
 2. Azure の計算ノードを選択し、Visual Studio から発行したときにプロファイルに選択したクラウド サービスの Azure デプロイ ノードを選択します。
 3. インスタンスのプロファイル レポートを表示するには、サービスでロールを選択し、特定のインスタンスのショートカット メニューを開いて **[プロファイル レポートの表示]** を選択します。
 
-    レポートの .vsp ファイルが Azure からダウンロードされ、ダウンロードの状態が Azure のアクティビティ ログに表示されます。 ダウンロードが完了すると、<Role name>*<Instance Number>*<identifier>.vsp という名前のプロファイル レポートが Visual Studio のエディターのタブに表示されます。 レポートの概要データが表示されます。
+    レポートの .vsp ファイルが Azure からダウンロードされ、ダウンロードの状態が Azure のアクティビティ ログに表示されます。 ダウンロードが完了すると、<Role name\>*<Instance Number\>*<identifier\>.vsp という名前のプロファイル レポートが Visual Studio のエディターのタブに表示されます。 レポートの概要データが表示されます。
 4. [現在のビュー] の一覧にレポートの異なるビューを表示するには、表示するビューの種類を選択します。 詳細については、「 [プロファイル ツールのレポート ビュー](https://msdn.microsoft.com/library/azure/bb385755.aspx)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dee0372bc660d2246ead2ecc5340474c96230cbd
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 6d846385349ad0dbcfe60bdf9b1fd7f1b5db507f
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526582"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476047"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>超初心者でもわかるデバッグ方法
 
@@ -82,17 +82,16 @@ Visual Studio では、コード行の左にある余白をクリックして、
 
     Visual Studio は既にインストールされていて、ワークロードだけをインストールする必要がある場合は、**[ツール]** > **[ツールと機能を取得]** の順にクリックします。 Visual Studio インストーラーが起動します。 **[.NET デスクトップ開発]** または **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、**[変更]** を選択します。
 
-1. Visual Studio を開いた後、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. Visual Studio を開きます。
 
-1. アプリケーション コード用のテンプレートを選択します。
+    ::: moniker range=">=vs-2019"
+    **Ctrl + Q** キーを押して検索ボックスを開き、「**コンソール**」と入力し、**[テンプレート]** を選択して、**[新しいコンソール アプリ (.NET Framework) の作成]** または **[新しいコンソール アプリ (.NET Core) の作成]** を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。 **ConsoleApp-FirstApp** のような名前を入力して、**[作成]** をクリックします。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual C#]** の下にある **[コンソール アプリ]** を選択し、次に真ん中のウィンドウで **[コンソール アプリ (.NET Framework)]** または **[コンソール アプリ (.NET Core)]** のいずれかを選択します。 **ConsoleApp-FirstApp** のような名前を入力して、**[OK]** をクリックします。
+    ::: moniker-end
 
-    .NET Framework の場合は、**[新しいプロジェクト]** ダイアログ ボックスで、**[Visual C#]** を選択し、インストール済みテンプレートのセクションから **[Windows デスクトップ]** を選択して、中央のウィンドウで **[コンソール アプリ (.NET Framework)]** を選択します。
-
-    .NET Core の場合は、**[新しいプロジェクト]** ダイアログ ボックスで、**[Visual C#]** を選択し、インストール済みテンプレートのセクションから **[.NET Core]** を選択して、中央のウィンドウで **[コンソール アプリ (.NET Core)]** を選択します。
-
-    これらのテンプレートが表示されない場合は、適切なワークロードをインストールする必要があります (前の手順を参照)。
-
-1. **[名前]** フィールドに「**ConsoleApp-FirstApp**」と入力して、**[OK]** をクリックします。
+    **[コンソール アプリ (.NET Framework)]** または **[コンソール アプリ (.NET Core)]** プロジェクト テンプレートが表示されない場合は、**[ツール]** > **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 **[.NET デスクトップ開発]** ワークロードまたは **[.NET Core クロスプラットフォームの開発]** ワークロードを選択して、**[変更]** を選択します。
 
     Visual Studio によってコンソール プロジェクトが作成され、ソリューション エクスプローラーの右側のウィンドウに表示されます。
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8bba4541f27a64f553c985f50dbe535b82440cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc7148e9ba2ad9882f42d3c2acdb067329ec4ee5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916831"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355235"
 ---
 # <a name="debug-python-and-c-together"></a>Python と C++ を同時にデバッグする
 
@@ -57,13 +57,13 @@ Visual Studio インストーラーの **Python 開発**ワークロードで **
 
     **[ネイティブ]** に加えて、またはその代わりとして他のコードの種類を選択できます。 たとえば、CPython をホストしてネイティブ拡張モジュールを使用するマネージド アプリケーションで、3 つすべてをデバッグする場合は、**[Python]**、**[ネイティブ]**、および **[マネージド]** をまとめて選択すると、結合された呼び出し履歴と 3 つすべてのランタイム間でのステップ実行を含む統合されたデバッグ エクスペリエンスを得ることができます。
 
-1. 混合モードのデバッグを初めて開始したときに、**Python シンボルが必要である**ことを示すダイアログが表示される可能性があります (「[混合モード デバッグのシンボル](debugging-symbols-for-mixed-mode-c-cpp-python.md)」をご覧ください)。 どの Python 環境でも、シンボルは 1 回だけインストールする必要があります。 Visual Studio 2017 のインストーラーで Python のサポートをインストールすると、シンボルが自動的に組み込まれます。
+1. 混合モードのデバッグを初めて開始したときに、**Python シンボルが必要である**ことを示すダイアログが表示される可能性があります (「[混合モード デバッグのシンボル](debugging-symbols-for-mixed-mode-c-cpp-python.md)」をご覧ください)。 どの Python 環境でも、シンボルは 1 回だけインストールする必要があります。 Visual Studio のインストーラーで Python のサポートをインストールすると、シンボルが自動的に組み込まれます (Visual Studio 2017 以降)。
 
 1. デバッグ中に使用できる標準的な Python 自体のソース コードを作成するには、[https://www.python.org/downloads/source/](https://www.python.org/downloads/source/) にアクセスして、ご利用のバージョンに適したアーカイブをダウンロードして、フォルダーに展開します。 要求されたら、そのフォルダーの特定のファイルを Visual Studio で参照します。
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>C/C++ プロジェクトでの混合モード デバッグの有効化
 
-Visual Studio 2017 (バージョン 15.5 以降) は、C/C++ プロジェクトの混合モード デバッグをサポートしています (たとえば、[python.org で説明されているように、別のアプリケーションに Python を埋め込む](https://docs.python.org/3/extending/embedding.html)場合など)。 混合モード デバッグを有効にするには、次のようにして、**Python/ネイティブ デバッグ**を起動するように C/C++ プロジェクトを構成します。
+Visual Studio (2017 バージョン 15.5 以降) は、C/C++ プロジェクトの混合モード デバッグをサポートしています (たとえば、[python.org で説明されているように、別のアプリケーションに Python を埋め込む](https://docs.python.org/3/extending/embedding.html)場合など)。 混合モード デバッグを有効にするには、次のようにして、**Python/ネイティブ デバッグ**を起動するように C/C++ プロジェクトを構成します。
 
 1. **ソリューション エクスプローラー**で C/C++ プロジェクトを右クリックして、**[プロパティ]** を選択します。
 1. **[デバッグ]** タブを選択し、**[起動するデバッガー]** から **[Python/ネイティブ デバッグ]** を選びます。次に、**[OK]** を選択します。

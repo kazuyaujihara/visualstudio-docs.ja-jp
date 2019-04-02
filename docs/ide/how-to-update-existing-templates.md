@@ -10,26 +10,26 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf40216393e32602139e62378f6874ff362d5ee0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952152"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355385"
 ---
 # <a name="how-to-update-existing-templates"></a>方法:既存のテンプレートを更新する
 
 テンプレートを作成し、複数のファイルを *.zip* ファイルに圧縮した後で、テンプレートを変更できます。 それには、テンプレートのファイルを手動で変更するか、テンプレートに基づいてプロジェクトから新しいテンプレートをエクスポートします。
 
-## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>テンプレートのエクスポート ウィザードの使用による既存のプロジェクト テンプレートの更新
+## <a name="use-the-export-template-wizard"></a>[テンプレートのエクスポート] ウィザードを使用する
 
 Visual Studio の**テンプレートのエクスポート ウィザード**を使って、既存のテンプレートを更新することができます。
 
-1. **[ファイル]** > **[新規]** > **[プロジェクト]** の順に選んで、**[新しいプロジェクト]** ダイアログ ボックスを開きます。
+1. メニュー バーから **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-1. 更新するテンプレートを選択し、プロジェクトの名前と場所を入力して、**[OK]** を選択します。
+1. 更新するテンプレートを選択して、新しいプロジェクトを作成する手順を続行します。
 
-1. Visual Studio でプロジェクトを変更します。
+1. Visual Studio でプロジェクトを変更します。 たとえば、出力の種類を変更するか、または新しいファイルをプロジェクトに追加します。
 
 1. **[プロジェクト]** メニューの **[テンプレートのエクスポート]** を選択します。
 
@@ -37,7 +37,7 @@ Visual Studio の**テンプレートのエクスポート ウィザード**を�
 
 1. ウィザードの指示に従って、テンプレートを *.zip* ファイルとしてエクスポートします。
 
-1. (省略可能) テンプレートを **[新しいプロジェクト]** ダイアログ ボックスに追加するには、*.zip* ファイルを *%USERPROFILE%\Documents\Visual Studio \<バージョン\>\Templates\ProjectTemplates* ディレクトリに置きます。 **テンプレートのエクスポート ウィザード**で **[テンプレートを自動的に Visual Studio にインポート]** オプションを選ばなかった場合、このステップを実行する必要があります。
+1. (省略可能) テンプレートが選択肢として表示されるようにするには、その *.zip* ファイルを次のディレクトリに置きます: *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates* **テンプレートのエクスポート ウィザード**で **[テンプレートを自動的に Visual Studio にインポート]** オプションを選ばなかった場合、このステップを実行する必要があります。
 
 1. 古いテンプレートの *.zip* ファイルを削除します。
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069971"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415487"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>クイック スタート: ロード テスト プロジェクトを作成する
 
@@ -22,13 +22,13 @@ ms.locfileid: "58069971"
 
 ## <a name="software-requirements"></a>ソフトウェア要件
 
-Web パフォーマンスとロード テスト プロジェクトは、Visual Studio Enterprise Edition でのみ利用できます。
+Web パフォーマンスとロード テスト プロジェクトは、Visual Studio **Enterprise Edition** でのみ利用できます。
 
 ## <a name="install-the-load-testing-component"></a>ロード テスト コンポーネントをインストールする
 
 Web パフォーマンスとロード テスト ツール コンポーネントをまだインストールしていない場合、Visual Studio インストーラーでインストールする必要があります。
 
-1. Windows の **[スタート]** メニューから **Visual Studio インストーラー**を開きます。 このインストーラーには Visual Studio の **[新しいプロジェクト]** ダイアログ ボックスからアクセスしたり、メニュー バーで **[ツール]** > **[ツールと機能を取得]** の順に選択してアクセスしたりすることもできます。
+1. Windows の **[スタート]** メニューから **Visual Studio インストーラー**を開きます。 このインストーラーには Visual Studio の [新しいプロジェクト] ダイアログ ボックスからアクセスしたり、メニュー バーで **[ツール]** > **[ツールと機能を取得]** の順に選択してアクセスしたりすることもできます。
 
 1. **Visual Studio インストーラー**で **[個々のコンポーネント]** タブを選択し、下にスクロールして **[デバッグとテスト]** セクションを表示します。 **[Web パフォーマンスとロード テスト ツール]** を選択します。
 
@@ -64,7 +64,7 @@ Web パフォーマンスとロード テスト ツール コンポーネント�
 
 2. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
 
-3. **[新しいプロジェクトの作成]** ダイアログ ボックスで、検索ボックスに「**Web テスト**」と入力し、C# 用の **[Web パフォーマンスとロード テストのプロジェクト \[非推奨]]** テンプレートを選択します。 **[次へ]** をクリックします。
+3. **[新しいプロジェクトの作成]** ページで、検索ボックスに「**Web テスト**」と入力し、C# 用の **[Web パフォーマンスとロード テストのプロジェクト \[非推奨]]** テンプレートを選択します。 **[次へ]** をクリックします。
 
 4. 既定の名前を使用しない場合は、プロジェクトの名前を入力し、**[作成]** を選択します。
 

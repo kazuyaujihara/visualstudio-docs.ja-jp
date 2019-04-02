@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a54909ad928cd923d7ab0d9df4cfcfdb400029
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928427"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268643"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>方法: 構成を作成および編集する
 
@@ -46,17 +46,13 @@ ms.locfileid: "55928427"
 
  必要な構成を設定したら、その構成に適したプロジェクト プロパティを設定できます。
 
-### <a name="to-set-properties-based-on-configurations"></a>構成に基づいてプロパティを設定するには
+### <a name="set-properties-based-on-configurations"></a>構成に基づいてプロパティを設定する
 
--   **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューを開き、**[プロパティ]** を選択します。
+構成に基づいてプロパティを設定するには、**ソリューション エクスプローラー**で、プロジェクトのショートカット メニューを開き、**[プロパティ]** を選択します。 構成に応じたプロパティを設定できます。 たとえば、リリース構成の場合、ソリューションのビルド時にコードを最適化することを指定できます。デバッグ構成の場合は、`DEBUG` 条件付きコンパイル シンボルを含むことを指定できます。
 
-     **[プロパティ ページ]** ウィンドウが開きます。
+プロパティ ページの設定の詳細については、「[プロジェクトおよびソリューションのプロパティの管理](../ide/managing-project-and-solution-properties.md)」を参照してください。
 
-     構成に応じたプロパティを設定できます。 たとえば、リリース構成の場合、ソリューションのビルド時にコードを最適化することを指定できます。デバッグ構成の場合は、`DEBUG` 条件付きコンパイル シンボルを含むことを指定できます。 プロパティ ページの設定の詳細については、「[プロジェクトおよびソリューションのプロパティの管理](../ide/managing-project-and-solution-properties.md)」を参照してください。
-
-## <a name="create-and-modify-project-configurations"></a>プロジェクト構成を作成および変更する
-
-### <a name="to-create-a-project-configuration"></a>プロジェクト構成を作成するには
+## <a name="create-a-project-configuration"></a>プロジェクト構成を作成する
 
 1.  **[構成マネージャー]** ダイアログ ボックスを開きます。
 
@@ -72,7 +68,7 @@ ms.locfileid: "55928427"
 
 6.  ソリューション全体の構成を同時に作成するには、**[新しいソリューション構成を作成する]** チェック ボックスをオンにします。
 
-### <a name="to-rename-a-project-configuration"></a>プロジェクト構成の名前を変更するには
+## <a name="rename-a-project-configuration"></a>プロジェクト構成の名前を変更する
 
 1.  **[構成マネージャー]** ダイアログ ボックスを開きます。
 

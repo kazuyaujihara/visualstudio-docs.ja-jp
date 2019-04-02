@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a5edfb7983de5cb794c27907abc19191be99dee
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 485516a92f2b669aa24d6da69653621e07a6c9cd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070283"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325095"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio での C++ の概要
 
@@ -52,7 +52,7 @@ Visual Studio を開くと、IDE の 3 つの基本的なパーツを確認で�
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio を開くと、**[開始]** ウィンドウが最初に表示されます。 **[コードなしで続行]** を選択して、開発環境を開きます。
+Visual Studio を開くと、スタート ウィンドウが最初に表示されます。 **[コードなしで続行]** を選択して、開発環境を開きます。
 
 IDE の 3 つの基本的なパーツを確認できます。ツール ウィンドウ、メニューとツール バー、およびメイン ウィンドウ領域です。 ツール ウィンドウは、アプリ ウィンドウの左側と右側にドッキングされます。 上部には、**クイック起動**ボックス、メニュー バー、および標準ツールバーがあります。 ソリューションまたはプロジェクトを読み込むと、アプリケーション ウィンドウの中央スペースにエディターとデザイナーが表示されます。 アプリケーションを開発する場合は、ほとんどの時間をこの中央の領域での作業に費やします。
 

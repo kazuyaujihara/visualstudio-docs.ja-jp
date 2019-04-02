@@ -7,14 +7,14 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプション ポータルを使用するさまざまな利点について
 searchscope: VS Subscription
-ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: fcf8d9c9ddd88fd6f00c0b59c92c5e51af7a6ca1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867592"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323400"
 ---
-# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>サブスクライバー ポータルの使用 - my.<span></span>visualstudio<span></span>.com
+# <a name="using-the-subscriber-portal---myvisualstudiocom"></a>サブスクライバー ポータルの使用 - my.visualstudio.com
 
 Visual Studio サブスクリプション ポータル ([https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)) は、Visual Studio サブスクリプションで提供されるあらゆる特典を利用できるオールインワン リソースです。
 

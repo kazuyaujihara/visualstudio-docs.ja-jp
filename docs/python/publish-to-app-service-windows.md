@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b5d2d878cb7f9597c0341f26fa41df8e4834a886
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 758f7549eeb1726b13da31a96b4c006194da6ee6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713543"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355316"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows 上の Azure App Service への発行
 
@@ -25,10 +25,10 @@ ms.locfileid: "56713543"
 
 Visual Studio には、Windows 上の Azure App Service に Python Web アプリを発行する機能が用意されています。 Windows 上の Azure App Service に発行することは、サーバーに必要なファイルをコピーし、アプリの起動方法を Web サーバーに指示する適切な `web.config` ファイルを設定することを意味します。
 
-発行プロセスは、Visual Studio 2017 と Visual Studio 2015 では異なります。 具体的には、Visual Studio 2015 は `web.config` の作成などの一部の操作を自動化しますが、この自動化により、長期的な柔軟性と制御が制限されます。 Visual Studio 2017 では、より多くの手動操作を必要としますが、Python 環境をより厳密に制御することができます。 ここでは、両方のオプションについて説明します。
+発行プロセスは、Visual Studio 2017 以降と Visual Studio 2015 では異なります。 具体的には、Visual Studio 2015 は `web.config` の作成などの一部の操作を自動化しますが、この自動化により、長期的な柔軟性と制御が制限されます。 Visual Studio 2017 以降では、より多くの手動操作を必要としますが、ご利用の Python 環境をより厳密に制御することができます。 ここでは、両方のオプションについて説明します。
 
 > [!Note]
-> Visual Studio 2015 と Visual Studio 2017 間の変更の詳細については、ブログ記事「[Publish to Azure in Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/)」 (Visual Studio 2017 での Azure への発行) を参照してください。
+> Visual Studio 2015 と Visual Studio 2017 以降の間の変更の詳細については、ブログ記事「[Publish to Azure in Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/)」 (Visual Studio 2017 での Azure への発行) を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
@@ -71,13 +71,13 @@ Azure への発行には、ターゲット App Service が必要です。 この
 
 ## <a name="configure-python-on-azure-app-service"></a>Azure App Service での Python の構成
 
-空の Web アプリを持つ App Service を (サブスクリプションまたは無料サイトのいずれかで) 実行したら、「[Azure App Service での Python の管理](managing-python-on-azure-app-service.md)」の説明に従って、選択した Python のバージョンをインストールします。 Visual Studio 2017 から発行するには、その記事の説明に従って、サイトの拡張機能と共にインストールされた Python インタープリターへの正確なパスを記録します。
+空の Web アプリを持つ App Service を (サブスクリプションまたは無料サイトのいずれかで) 実行したら、「[Azure App Service での Python の管理](managing-python-on-azure-app-service.md)」の説明に従って、選択した Python のバージョンをインストールします。 Visual Studio 2017 以降から発行するには、その記事の説明に従って、サイトの拡張機能と共にインストールされた Python インタープリターへの正確なパスを記録します。
 
 必要に応じて、これらの指示のプロセスを使用して、`bottle` パッケージもインストールできます。これはそのパッケージがこのチュートリアルの他のステップの一部としてインストールされるからです。
 
-## <a name="publish-to-app-service---visual-studio-2017"></a>App Service への発行 - Visual Studio 2017
+## <a name="publish-to-app-service---visual-studio-2017-and-later"></a>App Service への発行 - Visual Studio 2017 以降
 
-Visual Studio 2017 から Azure App Service に発行すると、プロジェクト内のファイルのみがサーバーにコピーされます。 したがって、必要なファイルを作成して、サーバー環境を構成する必要があります。
+Visual Studio 2017 以降から Azure App Service に発行すると、プロジェクト内のファイルのみがサーバーにコピーされます。 したがって、必要なファイルを作成して、サーバー環境を構成する必要があります。
 
 1. Visual Studio の**ソリューション エクスプローラー**で、プロジェクトを右クリックし、**[追加]、[新しい項目]** の順に選択します。表示されるダイアログ ボックスで、[Azure web.config (Fast CGI)] テンプレートを選択し、[OK] を選択します。 これによりプロジェクト ルートに `web.config` ファイルが作成されます。
 
@@ -143,11 +143,11 @@ Visual Studio 2017 から Azure App Service に発行すると、プロジェク
 
     a.  Azure サブスクリプション: **[Microsoft Azure App Service]** を選択し、**[既存のものを選択]**、**[発行]** の順に選択します。 表示されたダイアログで、適切なサブスクリプションと App Service を選択できます。 App Service が表示されない場合は、次に説明されているように、一時的な App Service のダウンロードした発行プロファイルを使用します。
 
-    ![Azure への発行手順 1、Visual Studio 2017、既存のサブスクリプション](media/tutorials-common-publish-1a-2017.png)
+    ![Azure への発行手順 1、Visual Studio 2017 以降、既存のサブスクリプション](media/tutorials-common-publish-1a-2017.png)
 
     b.  try.azurewebsites.net で一時的な App Service を使用している場合、または発行プロファイルを使用する必要がある場合は、**>** コントロールを選択して **[プロファイルのインポート]** を見つけてそのオプションを選択し、**[発行]** を選択します。 これにより、以前にダウンロードした `.publishsettings` ファイルの場所の入力が求められます。
 
-    ![Azure への発行手順 1、Visual Studio 2017、一時的な App Service](media/tutorials-common-publish-1b-2017.png)
+    ![Azure への発行手順 1、Visual Studio 2017 以降、一時的なアプリ サービス](media/tutorials-common-publish-1b-2017.png)
 
 1. Visual Studio で、[Web 発行アクティビティ] ウィンドウと [発行] ウィンドウに発行ステータスが表示されます。 発行が完了すると、サイト URL で既定のブラウザーが開きます。 URL は、[発行] ウィンドウにも表示されます。
 

@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 472cd590627a84ea0a11b9de8b533bba3a88a253
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869364"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355436"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Python インタープリターのデバッグ シンボルをインストールする
 
 完全なデバッグ エクスペリエンスを提供するため、Visual Studio の[混合モードの Python デバッガー](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)では、多数の内部データ構造を解析するために、Python インタープリターのデバッグ シンボルを使用する必要があります。 たとえば、*python27.dll* の場合、対応するシンボル ファイルは *python27.pdb* です。*python36.dll* の場合、シンボル ファイルは *python36.pdb* です。 また、各バージョンのインタープリターは、多様なモジュールに合わせてシンボル ファイルを用意しています。
 
-Visual Studio 2017 の Python 3 および Anaconda 3 インタープリターの場合、それぞれのシンボルが自動的にインストールされ、Visual Studio で自動的に検出されます。 Visual Studio 2015 以前の場合、または他のインタープリターを使用している場合は、シンボルを別にダウンロードし、**[ツール]** > **[オプション]** ダイアログにある **[デバッグ]** > **[シンボル]** タブを使用して、Visual Studio にシンボルの場所を設定する必要があります。これらの手順については、以下のセクションで詳しく説明します。
+Visual Studio 2017 以降では、Python 3 および Anaconda 3 インタープリターによってそれぞれのシンボルが自動的にインストールされ、Visual Studio で自動的に検出されます。 Visual Studio 2015 以前の場合、または他のインタープリターを使用している場合は、シンボルを別にダウンロードし、**[ツール]** > **[オプション]** ダイアログにある **[デバッグ]** > **[シンボル]** タブを使用して、Visual Studio にシンボルの場所を設定する必要があります。これらの手順については、以下のセクションで詳しく説明します。
 
 Visual Studio でシンボルが必要なとき、通常は混合モードのデバッグ セッションを開始したときに、プロンプトが表示されることがあります。 この場合、ダイアログで 2 つの選択肢が示されます。
 

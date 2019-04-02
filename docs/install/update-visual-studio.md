@@ -2,7 +2,7 @@
 title: Visual Studio 2017 を更新する
 titleSuffix: ''
 description: Visual Studio を最新のリリースに更新する詳細な手順を説明します。
-ms.date: 03/09/2019
+ms.date: 03/21/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 945250660e80353ea536986e5149f8814d1fe563
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983976"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323595"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio を最新リリースに更新する
 
@@ -172,9 +172,9 @@ Visual Studio は、Visual Studio 自体またはいずれかのコンポーネ�
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、「[Visual Studio for Mac を更新する](/visualstudio/mac/update)」を参照してください。
 
-## <a name="update-visual-studio-2019"></a>Visual Studio 2019 の更新
+ここでは、Visual&nbsp;Studio&nbsp;2019&nbsp;Preview または Visual&nbsp;Studio&nbsp;2019&nbsp;RC を更新する方法について説明します。
 
-ここでは、Visual Studio インストーラーを使用して Visual&nbsp;Studio&nbsp;2019&nbsp;Preview または Visual&nbsp;Studio&nbsp;2019&nbsp;RC を更新する方法について説明します。
+## <a name="use-the-visual-studio-installer"></a>Visual Studio インストーラーを使用する
 
 1. インストーラーを開きます。
 
@@ -188,13 +188,37 @@ Visual Studio は、Visual Studio 自体またはいずれかのコンポーネ�
 
      ![更新する Visual Studio 2019 のエディションを選択する](media/vs2019-update-visual-studio-community-rc.png "更新する Visual Studio 2019 のエディションを選択する")
 
-1. **[更新]** ボタンを選択して更新プログラムをインストールします。
+1. **[更新]** を選択して更新プログラムをインストールします。
 
     ![[更新] ボタンを選択して更新プログラムをインストールする](media/vs2019-choose-update-visual-studio-community-rc.png "[更新] ボタンを選択して更新プログラムをインストールする")
 
-1. 更新が完了したら、選択 **[起動]** を選択して Visual Studio を起動します。
+1. 更新が完了したら、**[起動]** を選択して Visual Studio を起動します。
 
     ![[起動] ボタンを選択して Visual Studio を起動する](media/vs2019-choose-launch-visual-studio-community-rc.png "[起動] ボタンを選択して Visual Studio を起動する")
+
+## <a name="use-the-ide"></a>IDE を使用する
+
+1. Visual Studio を開きます。 
+ 
+    ![Visual Studio 2019 RC を開く](media/vs2019-visual-studio-rc.png "Windows から Visual Studio 2019 を開く")
+
+1. **[作業の開始]** で、任意のオプションを選択すると、IDE が開きます。
+
+    ![Visual Studio インストーラーを開く](media/vs2019-choose-option-from-get-started.png "Visual Studio インストーラーを開く")
+
+    Visual Studio が開きます。 IDE 内に、**Visual Studio 2019 の更新プログラム**に関するメッセージが表示されます。
+
+    ![IDE 内の Visual Studio 2019 の更新プログラムに関するメッセージ](media/vs2019-update-visual-studio-ide-message.png "IDE 内の Visual Studio 2019 の更新プログラムに関するメッセージ")
+ 
+1. **Visual Studio 2019 の更新プログラム**に関するメッセージで、**[詳細の表示]** を選択します。
+
+   ![Visual Studio 2019 IDE の更新プログラムに関するメッセージ内で [詳細の表示] ボタンを選択する](media/vs2019-update-visual-studio-ide-view-details.png "Visual Studio 2019 の更新プログラムに関するメッセージ内で [詳細の表示] ボタンを選択する")
+
+1. **[更新プログラムがダウンロードされてインストールの準備完了]** ダイアログ ボックスで、**[更新]** を選択します。
+
+     ![[更新プログラムがダウンロードされてインストールの準備完了] ダイアログ ボックスで [更新] ボタンを選択する](media/vs2019-update-visual-studio-community-rc-from-ide.png "[更新プログラムがダウンロードされてインストールの準備完了] ダイアログ ボックスで [更新] ボタンを選択する")
+
+   Visual Studio が閉じられてから、再起動されます。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

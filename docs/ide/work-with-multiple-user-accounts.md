@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c910ab867be379264464650cef6bec00fc9d82f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933393"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355329"
 ---
 # <a name="work-with-multiple-user-accounts"></a>複数のユーザー アカウントを使って作業する
 
@@ -55,7 +55,7 @@ Microsoft アカウントまたは組織アカウントで、Visual Studio に�
 
 Azure Active Directory (AAD) では、ASP.NET MVC の Web アプリでのエンド ユーザー シングル サインオンや、Web API サービスでの AD 認証がサポートされています。 ドメインの認証は、個々のユーザー アカウントの認証とは異なります。 Active Directory ドメインにアクセスできるユーザーは、各自の既存の Azure AD アカウントを使用して、Web アプリケーションに接続できます。 Office 365 アプリでは、ドメイン認証も使用できます。
 
-これを実際に見るには、Web アプリケーションを作成します (**[ファイル]** > **[新しいプロジェクト]** > **[C#]** > **[クラウド]** > **[ASP.NET Web アプリケーション]**)。 **新しい ASP.NET プロジェクト**のダイアログで、**[認証の変更]** を選択します。 認証ウィザードが表示され、アプリケーションで使用する認証の種類を選択できます。
+アクション内でこれを表示するには、新しい **ASP.NET Web アプリケーション** プロジェクトを作成します。 **新しい ASP.NET プロジェクト**のダイアログで、**[認証の変更]** を選択します。 認証ウィザードが表示され、アプリケーションで使用する認証の種類を選択できます。
 
 ![ASP.NET の認証の変更ダイアログ](../ide/media/vs2015_change_authentication.png)
 

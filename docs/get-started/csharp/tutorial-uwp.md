@@ -3,7 +3,7 @@ title: Visual Studio と C# でユニバーサル Windows プラットフォー�
 description: XAML と C# を使用して Visual Studio で UWP アプリを作成する
 titleSuffix: ''
 ms.custom: seodec18, get-started
-ms.date: 03/11/2019
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a4fa325e57fcac095572c6eb666967f1ae3bf6df
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3ea8cc58e5afa6f98bbe07e2b75323449e637f25
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868987"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475943"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>チュートリアル: Visual Studio で XAML と C# を使用して最初のユニバーサル Windows プラットフォーム アプリを作成する
 
@@ -36,40 +36,38 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 まず、ユニバーサル Windows プラットフォーム プロジェクトを作成します。 この種類のプロジェクトには、必要となるすべてのテンプレート ファイルが付属していますので、何も追加する必要はありません。
 
+::: moniker range="vs-2017"
 1. Visual Studio を開きます。
 
-::: moniker range="vs-2017"
+1. 上部のメニュー バーから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-2. 上部のメニュー バーから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
-
-3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開し、**[Windows ユニバーサル]** を選択します。 中央のペインで **[空のアプリ (ユニバーサル Windows)]** を選択します。 次いで、プロジェクトに「*HelloWorld*」という名前を付け、**[OK]** を選択します。
+1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開し、**[Windows ユニバーサル]** を選択します。 中央のペインで **[空のアプリ (ユニバーサル Windows)]** を選択します。 次いで、プロジェクトに「*HelloWorld*」という名前を付け、**[OK]** を選択します。
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されている Windows ユニバーサル プロジェクト テンプレート](media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
    > **[空のアプリ (ユニバーサル Windows)]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual Studio インストーラーを開く]** リンクをクリックします。<br><br>![[新しいプロジェクト] ダイアログ ボックスで [Visual Studio インストーラーを開く] リンクをクリックする](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Visual Studio インストーラーが起動します。 **[ユニバーサル Windows プラットフォーム開発]** ワークロードを選択し、**[変更]** を選択します。<br><br>![Visual Studio インストーラーの [ユニバーサル Windows プラットフォーム開発] ワークロード](media/uwp-dev-workload.png)
 
-4. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログ ボックスで、**[ターゲット バージョン]** と **[最小バージョン]** の既定の設定をそのまま使用します。
+1. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログ ボックスで、**[ターゲット バージョン]** と **[最小バージョン]** の既定の設定をそのまま使用します。
 
    ![[新しいユニバーサル Windows プラットフォーム プロジェクト] の既定のターゲット バージョンと最小バージョンの設定をそのまま使用します。](media/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+1. Visual Studio を開き、[スタート] ウィンドウで **[新しいプロジェクトの作成]** を選択します。
 
-2. Visual Studio を起動し、**[スタート]** ウィンドウで **[新しいプロジェクトの作成]** を選択します。
-
-3. **[新しいプロジェクトの作成]** 画面で、検索ボックスに「*ユニバーサル Windows*」と入力し、**[空のアプリ (ユニバーサル Windows)]** 用の C# テンプレートを選択して、**[次へ]** を選択します。
+1. **[新しいプロジェクトの作成]** 画面で、検索ボックスに「*ユニバーサル Windows*」と入力し、**[空のアプリ (ユニバーサル Windows)]** 用の C# テンプレートを選択して、**[次へ]** を選択します。
 
    ![[新しいプロジェクトの作成] 画面のスクリーンショット](media/vs-2019/uwp-create-new-project.png)
-  
+
    > [!NOTE]
    > **[空のアプリ (ユニバーサル Windows)]** プロジェクト テンプレートが表示されない場合は、**[さらにツールと機能をインストールする]** リンクをクリックします。<br><br>![[さらにツールと機能をインストールする] リンクをクリックする](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio インストーラーが起動します。 **[ユニバーサル Windows プラットフォーム開発]** ワークロードを選択し、**[変更]** を選択します。<br><br>![Visual Studio インストーラーの [ユニバーサル Windows プラットフォーム開発] ワークロード](media/uwp-dev-workload.png)
 
-4. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログ ボックスで、**[ターゲット バージョン]** と **[最小バージョン]** の既定の設定をそのまま使用します。
+1. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログ ボックスで、**[ターゲット バージョン]** と **[最小バージョン]** の既定の設定をそのまま使用します。
 
    ![[新しいユニバーサル Windows プラットフォーム プロジェクト] の既定のターゲット バージョンと最小バージョンの設定をそのまま使用します。](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
-   
+
    > [!NOTE]
    > UWP アプリを作成するために Visual Studio を初めて使用する場合、**[設定]** ダイアログ ボックスが表示されます。 **[開発者モード]**、**[はい]** の順に選択します。<br><br>
    ![UWP 設定ダイアログ ボックスで開発者モードを有効にする](media/enable-developer-mode.png)<br><br>Visual Studio では、開発者モード パッケージが追加でインストールされます。 パッケージのインストールが完了したら、**[設定]** ダイアログ ボックスを閉じます。
@@ -93,17 +91,17 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![XAML エディターの XAML デザイナー ウィンドウ](media/uwp-xaml-editor.png)
 
-2. **[ツールボックス]** を選択して、ツールボックスのスライド アウト ウィンドウを開きます。
+1. **[ツールボックス]** を選択して、ツールボックスのスライド アウト ウィンドウを開きます。
 
    ![[ツールボックス] をクリックしてツールボックスのスライド アウト ウィンドウを開く](media/uwp-toolbox.png)
 
    (**ツールボックス**のオプションが表示されない場合は、メニュー バーから開くことができます。 これを行うには、**[ビュー]** > **[ツールバー]** の順に選択します。 または、**Ctrl**+**Alt**+**X** キーを押します)。
 
-3. **[ピン設定]** アイコンをクリックして、[ツールボックス] ウィンドウをドッキングします。
+1. **[ピン設定]** アイコンをクリックして、[ツールボックス] ウィンドウをドッキングします。
 
    ![[ピン設定] アイコンをクリックして [ツールボックス] ウィンドウをドッキングする](media/uwp-toolbox-autohide.png)
 
-4. **[ボタン]** コントロールをクリックし、デザイン キャンバスまでドラッグします。
+1. **[ボタン]** コントロールをクリックし、デザイン キャンバスまでドラッグします。
 
    ![[ボタン] コントロールをクリックしデザイン キャンバスまでドラッグする](media/uwp-toolbox-add-button-control.png)
 
@@ -117,7 +115,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![ボタンのコンテンツ値を Hello World に変更する](media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. **XAML デザイナー**のボタンも変更されることに注目してください。
+1. **XAML デザイナー**のボタンも変更されることに注目してください。
 
    ![デザイン キャンバスでボタンが Hello World に変更する](media/uwp-button-text-change-in-design-canvas.png)
 
@@ -127,7 +125,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. デザイン キャンパスでボタン コントロールをダブルクリックします。
 
-2. 分離コード ページの *MainPage.xaml.cs* でイベント ハンドラー コードを編集します。
+1. 分離コード ページの *MainPage.xaml.cs* でイベント ハンドラー コードを編集します。
 
    ポイントはここからです。 既定のイベント ハンドラーは次のようになります。
 
@@ -164,15 +162,15 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    (または、メニュー バーから **[デバッグ]** > **[デバッグの開始]** を選択するか、F5 キーを押して、アプリを起動します。)
 
-2. スプラッシュ スクリーンが消えるとすぐ表示されるアプリを確認します。 アプリは次のように表示されるはずです。
+1. スプラッシュ スクリーンが消えるとすぐ表示されるアプリを確認します。 アプリは次のように表示されるはずです。
 
    ![UWP "Hello World" アプリ](media/uwp-hello-world-app.png)
 
-3. **[Hello World]** ボタンをクリックします。
+1. **[Hello World]** ボタンをクリックします。
 
    Windows 10 デバイスにより、"Hello, World!" と文字通り読み上げられます。
 
-4. アプリを閉じるには、ツール バーで **[デバッグの停止]** ボタンをクリックします。 (または、メニュー バーから **[デバッグ]** > **[デバッグの停止]** を選択するか、Shift + F5 キーを押します。)
+1. アプリを閉じるには、ツール バーで **[デバッグの停止]** ボタンをクリックします。 (または、メニュー バーから **[デバッグ]** > **[デバッグの停止]** を選択するか、Shift + F5 キーを押します。)
 
 ## <a name="next-steps"></a>次の手順
 
