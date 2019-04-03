@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961716"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790330"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>デバッグの手法と優れたコードを作成するためのツール
 
@@ -42,7 +42,7 @@ ms.locfileid: "54961716"
 
 アプリを作成するには:
 
-1. Visual Studio を開き、選択**ファイル > 新しいプロジェクト**します。 **Visual C#** 、選択**Windows デスクトップ**または **.NET Core**、中央のペインの 、**コンソール アプリ**します。
+1. Visual Studio を開き、選択**ファイル** > **新規** > **プロジェクト**します。 **Visual C#** 、選択**Windows デスクトップ**または **.NET Core**、中央のペインの 、**コンソール アプリ**します。
 
     > [!NOTE]
     > **[コンソール アプリケーション]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **[.NET デスクトップ開発]** または **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、**[変更]** を選択します。
