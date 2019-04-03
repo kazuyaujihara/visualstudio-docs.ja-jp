@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 505a05c13add7c9e4d2ee27790ef6b971ee281f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c69d010f9a4e834f9435616747c2776786706445
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635138"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567894"
 ---
 # <a name="project-element-msbuild"></a>Project 要素 (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。
@@ -61,7 +61,7 @@ ms.locfileid: "56635138"
 | `Sdk` | 省略可能な属性です。 <br /><br /> .proj ファイルに追加される暗黙的なインポート ステートメントの作成に使用する SDK 名と省略可能なバージョン。 バージョンが指定されていない場合、MSBuild は、既定のバージョンを解決しようとします。  たとえば、`<Project Sdk="Microsoft.NET.Sdk" />` または `<Project Sdk="My.Custom.Sdk/1.0.0" />` のようにします。 |
 | `ToolsVersion` | 省略可能な属性です。<br /><br /> MSBuild が $(MSBuildBinPath) と $(MSBuildToolsPath) の値を決定するために使用するツールセットのバージョン。 |
 | `TreatAsLocalProperty` | 省略可能な属性です。<br /><br /> グローバルとは見なされないプロパティ名。 この属性は、プロジェクトまたはターゲット ファイル、および後続のすべてのインポートに設定されているプロパティ値が特定のコマンド ライン プロパティによってオーバーライドされることを防ぎます。 複数のプロパティはセミコロン (;) で区切られます。<br /><br /> 通常、グローバル プロパティは、プロジェクト ファイルまたはターゲット ファイルで設定されたプロパティ値をオーバーライドします。 プロパティが `TreatAsLocalProperty` 値に一覧表示されている場合、グローバル プロパティ値は、そのファイルと後続のインポートに設定されているプロパティ値をオーバーライドしません。 詳細については、「[方法 :同じソース ファイルを異なるオプションでビルドする](../msbuild/how-to-build-the-same-source-files-with-different-options.md)」を参照してください。 **注:** グローバル プロパティは、コマンド プロンプトで **-property** (または **-p**) スイッチを使用して設定します。 また、複数プロジェクト ビルドの子プロジェクトのグローバル プロパティは、MSBuild タスクの `Properties` 属性を使用して設定または変更することもできます。 詳細については、「[MSBuild タスク](../msbuild/msbuild-task.md)」を参照してください。 |
-| `Xmlns` | 省略可能な属性です。<br /><br /> `xmlns` 属性には、"`http://schemas.microsoft.com/developer/msbuild/2003`" の値を指定する必要があります。 |
+| `xmlns` | 省略可能な属性です。<br /><br /> `xmlns` 属性には、"`http://schemas.microsoft.com/developer/msbuild/2003`" の値を指定する必要があります。 |
 
 ### <a name="child-elements"></a>子要素
 
