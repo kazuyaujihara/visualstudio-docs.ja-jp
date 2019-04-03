@@ -9,18 +9,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4feed7e3ebdab56adc2c607ed0075c1a7fc3c620
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7cd5bd20d5840b560d5954d62e5d158eb1f6c6e6
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937982"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415916"
 ---
 # <a name="how-to-create-project-templates"></a>方法: プロジェクト テンプレートを作成する
 
 このトピックでは、**テンプレートのエクスポート ウィザード**を使ってテンプレートを作成する方法を示します。テンプレートは *.zip* ファイルにパッケージ化されます。
 
-## <a name="to-create-a-user-project-template-by-using-the-export-template-wizard"></a>テンプレートのエクスポート ウィザードを使ってユーザー プロジェクト テンプレートを作成するには
+## <a name="use-the-export-template-wizard"></a>[テンプレートのエクスポート] ウィザードを使用する
 
 1. プロジェクトを作成します。
 
@@ -35,18 +35,31 @@ ms.locfileid: "55937982"
 
 4. **[テンプレートの種類の選択]** ページで、**[プロジェクト テンプレート]** を選択します。 テンプレートにエクスポートするプロジェクトを選択し、**[次へ]** を選択します。
 
+::: moniker range="vs-2017"
+
 5. **[テンプレート オプションの選択]** ページで、テンプレートの名前および省略可能な説明、アイコン、プレビュー画像を入力します。 これらの項目は、**[新しいプロジェクト]** ダイアログ ボックスに表示されます。 **[完了]** を選択します。
 
    プロジェクトが *.zip* ファイルにエクスポートされて、指定した出力場所に置かれます。また、選択した場合は、Visual Studio にインポートされます。
 
->[!NOTE]
-> **[新しいプロジェクト]** ダイアログ ボックスでテンプレートを探すには、**[インストール済み]** を展開し、*.vstemplate* ファイルの `ProjectType` 要素に対応するカテゴリを展開します。 たとえば、`<ProjectType>CSharp</ProjectType>` を含む *.vstemplate* ファイルは、既定では **[インストール済み]** > **[Visual C#]** に表示されます。 プロジェクトの種類のディレクトリにフォルダーを作成して、テンプレートの *.zip* ファイルを格納するだけで、プロジェクトの種類のサブディレクトリにテンプレートを整理できます。 詳細については、「[方法 :テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+**[新しいプロジェクト]** ダイアログ ボックスでテンプレートを探すには、**[インストール済み]** を展開し、*.vstemplate* ファイルの `ProjectType` 要素に対応するカテゴリを展開します。 たとえば、`<ProjectType>CSharp</ProjectType>` を含む *.vstemplate* ファイルは、既定では **[インストール済み]** > **[Visual C#]** に表示されます。 プロジェクトの種類のディレクトリにフォルダーを作成して、テンプレートの *.zip* ファイルを格納するだけで、プロジェクトの種類のサブディレクトリにテンプレートを整理できます。 詳細については、「[方法 :テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+5. **[テンプレート オプションの選択]** ページで、テンプレートの名前および省略可能な説明、アイコン、プレビュー画像を入力します。 これらの項目は、新しいプロジェクトを作成する場合に、ダイアログ ボックスに表示されます。 **[完了]** を選択します。
+
+   プロジェクトが *.zip* ファイルにエクスポートされて、指定した出力場所に置かれます。また、選択した場合は、Visual Studio にインポートされます。
+
+新しいプロジェクトを作成するダイアログ ボックス内で、使用するテンプレートを見つけるには、名前で検索するか、リストをスクロールして探します。  (言語またはプロジェクトの種類に基づいたフィルター処理は、現在、ユーザー テンプレートに対しては不可能です)。
+
+::: moniker-end
 
 ## <a name="other-ways-to-create-project-templates"></a>プロジェクト テンプレートを作成する他の方法
 
 プロジェクトを構成するファイルをフォルダーにまとめ、適切なメタデータを指定して *.vstemplate* XML ファイルを作成することにより、手動でプロジェクト テンプレートを作成できます。 詳細については、「[方法 :Web テンプレートを手動で作成する](../ide/how-to-manually-create-web-templates.md)」を参照してください。
 
-Visual Studio SDK がインストールされている場合は、**VSIX プロジェクト** テンプレートを使うことで、完成したテンプレートを配置用に VSIX ファイルにラップすることができます。 詳細については、「[Getting started with the VSIX project template](../extensibility/getting-started-with-the-vsix-project-template.md)」(VSIX プロジェクト テンプレートの概要) を参照してください。
+Visual Studio SDK がインストールされている場合は、**VSIX プロジェクト** テンプレートを使うことで、完成したテンプレートを配置用に VSIX ファイルにラップすることができます。 詳細については、「[VSIX プロジェクト テンプレートの概要](../extensibility/getting-started-with-the-vsix-project-template.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

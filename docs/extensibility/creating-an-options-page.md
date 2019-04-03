@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9830178d936e912caf6ab21761f7a072c29a4d4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194419"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790161"
 ---
 # <a name="create-an-options-page"></a>オプション ページを作成します。
 
@@ -101,7 +101,7 @@ ms.locfileid: "58194419"
 
      左側のウィンドウに表示されます**My Category**します。 (オプションのカテゴリが一覧に表示をアルファベット順に一覧の下半分について表示します。)開いている**My Category**順にクリックします**マイのグリッド ページ**します。 右側のウィンドウで、オプションのグリッドが表示されます。 プロパティのカテゴリは**My Options**、プロパティ名は**マイ整数オプション**します。 プロパティの説明、**マイ整数オプション**ウィンドウの下部に表示されます。 別のものに 256 の初期値から値を変更します。 をクリックして**OK**を閉じてから開き**マイのグリッド ページ**。 新しい値が引き続き発生することを確認できます。
 
-     オプション ページも Visual Studio のクイック起動で使用できます。 IDE の右上隅の [クイック起動] ウィンドウで次のように入力します。 **My Category**とわかります**My Category に個人用のグリッド ページ]-> [** ドロップダウンに表示します。
+     オプション ページも Visual Studio の [検索] ボックスを使用できます。 IDE の上部にある検索ボックスに「 **My Category**すると**My Category 個人用のグリッド ページ]-> [** 結果に表示されます。
 
 ## <a name="create-a-tools-options-custom-page"></a>カスタム ツール オプション ページを作成します。
 

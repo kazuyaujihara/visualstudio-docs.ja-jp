@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a546f1e0d40e810d696fb37bbee29d98ab8861fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949643"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355274"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio のマルチ ターゲットの概要
 
@@ -35,13 +35,13 @@ Visual Studio では、プロジェクトの対象となる .NET Framework の�
 
 - 旧バージョンの [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] を対象とするプロジェクトを開いたときに、Visual Studio でそのプロジェクトを自動的にアップグレードするか、前のバージョンを対象とした状態を維持することができます。
 
-- プロジェクトを作成するときに、対象とする [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] のバージョンを指定できます。
+- プロジェクトを作成するときに、対象とする .NET Framework のバージョンを指定できます。
 
-- 既存のプロジェクトの対象となっている [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] のバージョンを変更できます。
+- 既存のプロジェクトの対象となっている .NET Framework のバージョンを変更できます。
 
-- 同じソリューション内にある複数のプロジェクトのそれぞれで、異なるバージョンの [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] を対象とすることができます。
+- 同じソリューション内にある複数のプロジェクトのそれぞれで、異なるバージョンの .NET Framework を対象とすることができます。
 
-- プロジェクトの対象となる [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] のバージョンを変更すると、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] では、参照ファイルおよび構成ファイルに対して必要な変更が加えられます。
+- プロジェクトの対象となる .NET Framework のバージョンを変更すると、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] では、参照ファイルおよび構成ファイルに対して必要な変更が加えられます。
 
 旧バージョンの [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] を対象とするプロジェクトで作業する場合は、Visual Studio は開発環境で次のような変更を動的に行います。
 
@@ -62,17 +62,27 @@ Visual Studio では、プロジェクトの対象となる .NET Framework の�
 
 ## <a name="select-a-target-framework-version"></a>対象フレームワークのバージョンを選択する
 
-プロジェクトを作成するときに、**[新しいプロジェクト]** ダイアログ ボックスで、対象の .NET Framework バージョンを選択します。 使用できる Framework のリストには、選択したテンプレートの種類に適用されるインストール済みの Framework バージョンが表示されます。 .NET Core テンプレートなどの .NET Framework を必要としないテンプレートの種類の場合、**[Framework]** ドロップダウン リストは表示されません。
+プロジェクトを作成するときは、プロジェクト テンプレートを選択した後で、対象の .NET Framework バージョンを選択します。 使用できる Framework のリストには、選択したテンプレートの種類に適用されるインストール済みの Framework バージョンが表示されます。 .NET Core テンプレートなどの .NET Framework を必要としないテンプレートの種類の場合、**[Framework]** ドロップダウン リストは表示されません。
 
-![[新しいプロジェクト] ダイアログ ボックスの [Framework] ドロップダウン リスト](media/vside-newproject-framework.png)
+::: moniker range="vs-2017"
 
-既存のプロジェクトでは、プロジェクトのプロパティ ダイアログ ボックス内で、対象となる [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] のバージョンを変更できます。 詳細については、「[方法 :.NET Framework のターゲット バージョンを指定する](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
+![VS 2017 でのフレームワーク ドロップダウン](media/vside-newproject-framework.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![VS 2019 でのフレームワーク ドロップダウン](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
+
+既存のプロジェクトでは、プロジェクトのプロパティ ダイアログ ボックス内で、対象となる .NET Framework のバージョンを変更できます。 詳細については、「[方法 :.NET Framework のターゲット バージョンを指定する](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
 
 ## <a name="resolve-system-and-user-assembly-references"></a>システム参照およびユーザー アセンブリ参照の解決
 
 .NET Framework の特定のバージョンを対象にするには、最初に適切なアセンブリ参照をインストールする必要があります。 [.NET ダウンロード](https://www.microsoft.com/net/download/windows) ページでさまざまなバージョンの .NET Framework の開発者向けパックをダウンロードすることができます。
 
-**[参照の追加]** ダイアログ ボックスでは、対象の [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] のバージョンに関係しないシステム アセンブリが無効にされます。その結果、それらのアセンブリをプロジェクトに誤って追加することはありません  (システム アセンブリとは、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] バージョンの一部である *.dll* ファイルのことです)。対象より新しいバージョンのフレームワークに属する参照は解決されず、そのような参照に依存するコントロールを追加することはできません。 このような参照を有効にするには、プロジェクトの対象である [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] を、その参照を含むバージョンに再設定します。  詳細については、「[方法 :.NET Framework のターゲット バージョンを指定する](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
+**[参照の追加]** ダイアログ ボックスでは、対象の .NET Framework のバージョンに関係しないシステム アセンブリが無効にされます。その結果、それらのアセンブリをプロジェクトに誤って追加することはありません  (システム アセンブリとは、.NET Framework バージョンの一部である *.dll* ファイルのことです)。対象より新しいバージョンのフレームワークに属する参照は解決されず、そのような参照に依存するコントロールを追加することはできません。 このような参照を有効にするには、プロジェクトの対象である .NET Framework を、その参照を含むバージョンに再設定します。  詳細については、「[方法 :.NET Framework のターゲット バージョンを指定する](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
 
 アセンブリ参照の詳細については、「[デザイン時のアセンブリの解決](../msbuild/resolving-assemblies-at-design-time.md)」を参照してください。
 

@@ -1816,6 +1816,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/visual-studio-2017-for-dotnet-developers.md",
+            "redirect_url": "/visualstudio/ide/csharp-developer-productivity",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/install/index.md",
             "redirect_url": "/visualstudio/install/install-visual-studio",
             "redirect_document_id": false
@@ -2199,6 +2204,11 @@
             "source_path": "docs/porting-migrating-and-upgrading-visual-studio-projects.md",
             "redirect_url": "/visualstudio/port-migrate-and-upgrade-visual-studio-projects",
             "redirect_document_id": false
+        },
+        { 
+            "source_path": "docs/porting/port-migrate-upgrade-visual-studio-projects-2019.md", 
+            "redirect_url": "/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects", 
+            "redirect_document_id": false 
         },
         {
             "source_path": "docs/profiling/analyze-cpu-usage-in-a-windows-universal-app.md",

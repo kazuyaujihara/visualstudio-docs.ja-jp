@@ -1,8 +1,10 @@
 ---
 title: C# に ASP.NET Core Web アプリを作成する
 description: Visual Studio で C# および ASP.NET Core を使用して Hello World の Web アプリを作成する方法について、段階的に説明します。
-ms.date: 02/01/2019
 ms.custom: mvc,seodec18
+ms.date: 03/23/2019
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -12,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 60f7c7bd7d0a3073f75d4ece7012601ded8eb059
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 247906426dcf57463a36ea85ce781b39aae2ffba
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957787"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475852"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>クイック スタート: Visual Studio を使用して初めての ASP.NET Core Web アプリを作成する
 
@@ -27,7 +29,17 @@ Visual Studio の使用方法を紹介する、この 5 - 10 分のクイック 
 
 ### <a name="install-visual-studio"></a>Visual Studio のインストール
 
+::: moniker range="vs-2017"
+
 Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
 
 ### <a name="choose-your-theme-optional"></a>テーマを選択する (省略可能)
 
@@ -37,9 +49,11 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 最初に、ASP.NET Core Web アプリケーション プロジェクトを作成します。 このプロジェクト タイプには、Web アプリを作成するためのすべてのテンプレート ファイルが付属しているので、何も追加する必要はありません。
 
+::: moniker range="vs-2017"
+
 1. Visual Studio 2017 を開きます。
 
-1. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. 上部のメニュー バーから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
 1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開し、**[.NET Core]** を選択します。 中央のウィンドウで、**[ASP.NET Core Web アプリケーション]** を選択ます。 <br/><br/>次に、ファイル名を「`HelloWorld`」にして、**[OK]** を選択します。
 
@@ -61,9 +75,46 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
    ![[新しい ASP.NET Core Web アプリケーション] ダイアログ ボックス](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > **[ASP.NET Core 2.1]** 以降が表示されない場合は、最新リリースの Visual Studio を実行していることを確認します。 インストールを更新する方法の詳細については、「[Visual Studio 2017 を最新リリースに更新する](../install/update-visual-studio.md)」ページを参照してください。
+   > **[ASP.NET Core 2.1]** 以降が表示されない場合は、最新リリースの Visual Studio を実行していることを確認します。 インストールを更新する方法の詳細については、「[Visual Studio を最新リリースに更新する](../install/update-visual-studio.md)」ページを参照してください。
 
 すぐに、Visual Studio でプロジェクト ファイルが開きます。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+
+   ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*ASP.NET*」と入力またはタイプします。 次に、言語のリストから **[C#]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
+
+   言語およびプラットフォームのフィルターを適用してから、**[ASP.NET Core Web アプリケーション]** テンプレートを選択して、**[次へ]** を選択します。
+
+   ![ASP.NET Core Web アプリケーション用の C# テンプレートを選択する](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+
+   > [!NOTE]
+   > **[ASP.NET Core Web アプリケーション]** テンプレートが表示されない場合は、**[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、**[さらにツールと機能をインストールする]** リンクを選択します。
+   >
+   > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > 次に、Visual Studio インストーラーで、**[ASP.NET と Web 開発]** ワークロードを選択します。
+   >
+   > ![Visual Studio インストーラーの ASP.NET Core Web アプリケーション ワークロード](../get-started/media/aspnet-core-web-dev-workload.png)
+   >
+   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、**[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
+
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*HelloWorld*」とタイプまたは入力します。 次に、**[作成]** を選択します。
+
+   ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'HelloWorld' という名前を付けます。](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
+
+1. **[新しい ASP.NET Core Web アプリケーションの作成]** ダイアログ ボックスで、上部のドロップダウン メニューに **ASP.NET Core 2.1** 以降が表示されていることを確認します。 次に、Razor Pages の例が含まれている **Web アプリケーション** を選択します。 次に、**[作成]** を選択します。
+
+   ![[新しい ASP.NET Core Web アプリケーションの作成] ウィンドウ](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+
+   Visual Studio によってその新しいプロジェクトが開かれます。
+
+::: moniker-end
 
 ## <a name="create-and-run-the-app"></a>アプリの作成と実行
 

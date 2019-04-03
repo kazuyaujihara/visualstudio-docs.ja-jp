@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b55b2e1a34afa78ac1e122081eca261f3dcdabc8
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195207"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355777"
 ---
 # <a name="python-environments-window-tabs-reference"></a>[Python 環境] ウィンドウ タブ リファレンス
 
@@ -60,7 +60,7 @@ ms.locfileid: "58195207"
 
 スタートアップ スクリプトにはインポート、関数定義、その他文字どおりどのようなコードでも含めることができ、**対話型**ウィンドウは自動的にそれを読み込んで実行します。 このようなスクリプトは、2 つの方法で参照されます。
 
-1. 環境をインストールすると、Visual Studio は *Documents\Visual Studio 2017\Python Scripts\\\<environment>* フォルダーを作成します。&lt;environment&gt; は、環境の名前と同じです。 **[対話型のスクリプトを確認する]** コマンドを使って、環境固有のフォルダーに簡単に移動できます。 その環境の**対話型**ウィンドウを開始すると、このフォルダーで見つかったすべての *.py* ファイルがアルファベット順に読み込まれて実行されます。
+1. 環境をインストールすると、Visual Studio によってフォルダー *Documents\Visual Studio <version>\Python Scripts\\\<environment>* が作成されます。ここで、&lt;version&gt; は Visual Studio バージョン (2017 または 2019 など) です。&lt;environment&gt; は環境の名前と一致します。 **[対話型のスクリプトを確認する]** コマンドを使って、環境固有のフォルダーに簡単に移動できます。 その環境の**対話型**ウィンドウを開始すると、このフォルダーで見つかったすべての *.py* ファイルがアルファベット順に読み込まれて実行されます。
 
 1. **[ツール]** > **[オプション]** > **[Python]** > **[対話型ウィンドウ]** タブ (「[対話型ウィンドウ オプション](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)」を参照) の **[スクリプト]** コントロールでは、すべての環境で読み込まれて実行されるスタートアップ スクリプトの追加フォルダーを指定します。 ただし、この機能は現時点では機能しません。
 
@@ -156,8 +156,8 @@ IntelliSense 入力候補データベースの現在の状態を示します。
 
 ![[Python Environments (Python 環境)] の [IntelliSense] タブ](media/environments/environments-intellisense-tab.png)
 
-- **Visual Studio 2017 バージョン 15.5** 以前は、IntelliSense による補完は、そのライブラリ用にコンパイルされているデータベースに依存しています。 データベースの構築はライブラリのインストール時にバックグラウンドで実行されますが、時間がかかる可能性があり、コードの記述の開始時には完了していないことがあります。
-- **Visual Studio 2017 バージョン 15.6** 以降は、既定ではデータベースに依存せずに完了する迅速な方法が使用されます。 このため、タブのラベルは **IntelliSense [データベース無効]** になります。 データベースを有効にするには、オプション **[ツール]** > **[オプション]** > **[Python]** >  **[試験段階]** > **[Use new style IntelliSense for environments]\(環境に対して新しいスタイル IntelliSense を使用する\)** をクリアします。
+- Visual Studio 2017 バージョン 15.5 以前は、IntelliSense による補完は、そのライブラリ用にコンパイルされているデータベースに依存しています。 データベースの構築はライブラリのインストール時にバックグラウンドで実行されますが、時間がかかる可能性があり、コードの記述の開始時には完了していないことがあります。
+- Visual Studio 2017 バージョン 15.6 以降は、既定ではデータベースに依存せずに完了する迅速な方法が使用されます。 このため、タブのラベルは **IntelliSense [データベース無効]** になります。 データベースを有効にするには、オプション **[ツール]** > **[オプション]** > **[Python]** >  **[試験段階]** > **[Use new style IntelliSense for environments]\(環境に対して新しいスタイル IntelliSense を使用する\)** をクリアします。
 
 Visual Studio は新しい環境を検出すると (またはユーザーが追加すると)、ライブラリのソース ファイルを分析することで、データベースのコンパイルを自動的に開始します。 インストールされている内容により、この処理には 1 分から 1 時間以上かかることがあります (たとえば、Anaconda には多くのライブラリが付属しており、データベースのコンパイルに少し時間がかかります)。完了すると、詳細な IntelliSense が提供され、新しいライブラリをインストールするまでデータベースを再度更新する (**[Refresh DB]\(DB の更新\)** ボタンで) 必要はありません。
 

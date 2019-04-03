@@ -89,7 +89,7 @@ Windows Server で、インターネット インフォメーション サービ
 |`.msp`|`application/octet-stream`|
 
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce とマップされたドライブ
- Visual Studio を使用して ClickOnce アプリケーションを発行する場合は、インストール場所として、マップされたドライブを指定できません。 ただし、マニフェスト ジェネレーターおよびエディター (Mage.exe および MageUI.exe) を使用してマップされたドライブからインストールする ClickOnce アプリケーションを変更できます。 詳細については、次を参照してください。 [Mage.exe (マニフェスト生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)と[MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)します。
+ Visual Studio を使用して ClickOnce アプリケーションを発行する場合は、インストール場所として、マップされたドライブを指定できません。 ただし、マニフェスト ジェネレーターおよびエディター (Mage.exe および MageUI.exe) を使用してマップされたドライブからインストールする ClickOnce アプリケーションを変更できます。 詳細については、次を参照してください。 [Mage.exe (マニフェスト生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)と[MageUI.exe (マニフェスト生成および編集ツールのグラフィカル クライアント)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)します。
 
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP プロトコルのアプリケーションをインストールするためにサポートされていません
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] HTTP 1.1 の Web サーバーまたはファイル サーバーからアプリケーションのインストールをサポートします。 アプリケーションをインストールするのには、FTP、ファイル転送プロトコルはサポートされていません。 アプリケーションのみを公開するのに FTP を使用することができます。 次の表は、これらの違いをまとめたものです。

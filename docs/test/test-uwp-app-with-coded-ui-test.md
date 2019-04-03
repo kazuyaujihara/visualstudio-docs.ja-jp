@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 1b07aa8559f331dd9416448f4a6b55aa8bdddb49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11fc95978690e98d496f539d4e98acf58104be3b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942259"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416124"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>UWP アプリをテストするためのコード化された UI テストの作成
 
@@ -29,7 +29,11 @@ ms.locfileid: "55942259"
 
 1. Visual Studio で、Visual C# または Visual Basic の **[空のアプリ (ユニバーサル Windows)]** テンプレートを使用して、新しいプロジェクトを作成します。
 
-     ![[空のアプリ (ユニバーサル Windows)] テンプレート](../test/media/blank-uwp-app-template.png)
+   ::: moniker range="vs-2017"
+
+   ![[空のアプリ (ユニバーサル Windows)] テンプレート](../test/media/blank-uwp-app-template.png)
+
+   ::: moniker-end
 
 1. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログで、**[OK]** を選択して既定のプラットフォーム バージョンをそのまま使用します。
 
@@ -61,16 +65,20 @@ ms.locfileid: "55942259"
 
 1. ソリューションにテスト プロジェクトを追加するには、**ソリューション エクスプローラー**でソリューションを右クリックして、**[追加]** > **[新しいプロジェクト]** の順に選択します。
 
-1. **[新しいプロジェクト]** ダイアログで、**[コード化された UI テスト プロジェクト (ユニバーサル Windows)]** テンプレートを選択します。 このテンプレートは、**[Visual C#]** または **[Visual Basic]** の下の **[Windows ユニバーサル]** カテゴリにあります。
+1. **[コード化された UI テスト プロジェクト (ユニバーサル Windows)]** テンプレートを検索して選択します。
 
-     ![新しいコード化された UI テスト プロジェクト](../test/media/coded-ui-test-project-uwp-template.png)
+   ::: moniker range="vs-2017"
+
+   ![新しいコード化された UI テスト プロジェクト](../test/media/coded-ui-test-project-uwp-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > **[コード化された UI テスト プロジェクト (ユニバーサル Windows)]** テンプレートが表示されない場合は、[コード化された UI テスト コンポーネントをインストールする](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)必要があります。
 
 1. **[コード化された UI テストのコードの生成]** ダイアログで、**[テストを手動で編集]** を選択します。
 
-     ![[コード化された UI テストのコードの生成] ダイアログ](../test/media/manually-edit-the-test.png)
+   ![[コード化された UI テストのコードの生成] ダイアログ](../test/media/manually-edit-the-test.png)
 
 1. UWP アプリがまだ実行されていない場合は、**Ctrl** + **F5** キーを押して起動します。
 

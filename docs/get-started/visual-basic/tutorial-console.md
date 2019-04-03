@@ -2,8 +2,9 @@
 title: 'チュートリアル: Visual Basic 入門'
 description: Visual Studio で Visual Basic コンソール アプリを作成する方法の詳細な手順を説明します。
 ms.custom: seodec18, get-started
-ms.date: 08/10/2018
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -13,26 +14,38 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a190a17147530fe42cd6bb9e95b313527eb16b0d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840420"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416164"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>チュートリアル: Visual Studio の Visual Basic の概要
 
 この Visual Basic (VB) に関するチュートリアルでは、Visual Studio を使用して、いくつかの異なるコンソール アプリを作成して実行しながら、[Visual Studio の統合開発環境 (IDE)](visual-studio-ide.md) の一部の機能を検討します。
 
+::: moniker range="vs-2017"
+
 Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
 まず、Visual Basic アプリケーション プロジェクトを作成します。 このプロジェクトの種類には、必要となるすべてのテンプレート ファイルが付属していますので、何も追加する必要はありません。
 
+::: moniker range="vs-2017"
+
 1. Visual Studio 2017 を開きます。
 
-2. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+2. 上部のメニュー バーから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
 3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual Basic]** を展開し、**[.NET Core]** を選択します。 中央のウィンドウで、**[Console App (.NET Core)]** を選択します。 次に、ファイルに *HelloWorld* という名前を付けます。
 
@@ -54,13 +67,53 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>オプション 2:[ツール] メニュー バーを使用する
 
-1. **[新しいプロジェクト]** ダイアログ ボックスを取り消し、上部のメニュー バーから **[ツール]** > **[ツールと機能を取得]** の順に選択します。
+1. **[新しいプロジェクト]** ダイアログ ボックスを取り消し、上部のメニュー バーから **[ツール]**>**[ツールと機能を取得]** の順に選択します。
 
 1. Visual Studio インストーラーが起動します。 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、**[変更]** を選択します。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!NOTE]
+> このチュートリアルの一部のスクリーン ショットではダーク テーマが使用されています。 ダーク テーマを使用していないが、使用したい場合は、その方法について「[Visual Studio IDE とエディターのカスタマイズ](../../ide/quickstart-personalize-the-ide.md)」ページを参照してください。
+
+1. Visual Studio 2019 を開きます。
+
+1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+
+   ![[新しいプロジェクトの作成] ウィンドウを表示する](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
+
+   言語およびプラットフォームのフィルターを適用してから、**[コンソール アプリ (.NET Core)]** テンプレートを選択して、**[次へ]** を選択します。
+
+   ![コンソール アプリ (.NET Framework) 用の Visual Basic テンプレートを選択します。](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > **[コンソール アプリ (.NET Core)]** テンプレートが表示されない場合は、**[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、**[さらにツールと機能をインストールする]** リンクを選択します。
+   >
+   > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > 次に、Visual Studio インストーラーで、**[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+   >
+   > ![Visual Studio インストーラーの [.NET Core クロスプラットフォームの開発] ワークロード](../../get-started/media/dot-net-core-xplat-dev-workload.png)
+   >
+   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、**[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
+
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*WhatIsYourName*」と入力またはタイプします。 次に、**[作成]** を選択します。
+
+   ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'WhatIsYourName' という名前を付けます。](./media/vs-2019/vb-name-your-project.-whatname.png)
+
+   Visual Studio によってその新しいプロジェクトが開かれます。
+
+::: moniker-end
 
 ## <a name="create-a-what-is-your-name-application"></a>"What Is Your Name" アプリケーションを作成する
 
 名前の入力を求めた後に、日付と時刻と共にそれを表示するアプリを作成してみましょう。 次の手順に従います。
+
+ ::: moniker range="vs-2017"
 
 1. *WhatIsYourName* プロジェクトがまだ開いていない場合は、これを開きます。
 
@@ -77,7 +130,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
     このコードでは、既存の <xref:System.Console.WriteLine%2A>、<xref:System.Console.Write%2A>、および <xref:System.Console.ReadKey%2A> ステートメントを置き換えます。
 
-   ![What Is Your Name コードが表示されているコード ウィンドウ](media/vb-codewindow-what-name.png)
+   ![What Is Your Name コードが表示されているコード ウィンドウ](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
 1. コンソール ウィンドウが開いたら、自分の名前を入力します。 コンソール ウィンドウは次のスクリーン ショットのようになります。
 
@@ -85,7 +138,36 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. 任意のキーを押して、コンソール ウィンドウを閉じます。
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. *[WhatIsYourName]* プロジェクト内で、次の Visual Basic コードを `Sub Main(args As String())` 行と `End Sub` 行の間に入力します。このコードは左かっこのすぐ後に配置します。
+
+     ```vb
+     Console.WriteLine(vbCrLf + "What is your name? ")
+     Dim name = Console.ReadLine()
+     Dim currentDate = DateTime.Now
+     Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}")
+     Console.Write(vbCrLf + "Press any key to exit... ")
+     Console.ReadKey(True)
+    ```
+
+    このコードでは、既存の <xref:System.Console.WriteLine%2A>、<xref:System.Console.Write%2A>、および <xref:System.Console.ReadKey%2A> ステートメントを置き換えます。
+
+   ![What Is Your Name コードが表示されているコード ウィンドウ](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. コンソール ウィンドウが開いたら、自分の名前を入力します。 コンソール ウィンドウは次のスクリーン ショットのようになります。
+
+   ![What Is Your Name、時刻と日付、Press any key to continue メッセージが表示されているコンソール ウィンドウ](media/vb-console-what-name.png)
+
+1. 任意のキーを押して、コンソール ウィンドウを閉じます。
+
+ ::: moniker-end
+
 ## <a name="create-a-calculate-this-application"></a>"Calculate This" アプリケーションを作成する
+
+::: moniker range="vs-2017"
 
 1. Visual Studio 2017 を開き、上部のメニュー バーから **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
@@ -110,11 +192,50 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    コード ウィンドウは次のスクリーンショットのようになります。
 
-   ![Calculate This コードが表示されているコード ウィンドウ](media/vb-codewindow-calculate-this.png)
+   ![CalculateThis コードが表示されているコード ウィンドウ](media/vb-codewindow-calculate-this.png)
 
 1. **CalculateThis** をクリックしてプログラムを実行します。 コンソール ウィンドウは次のスクリーン ショットのようになります。
 
-    ![実行するアクションに対するプロンプトを含む、CaluculateThis アプリが表示されているコンソール ウィンドウ](media/vb-console-calculate-this.png)
+    ![実行するアクションに対するプロンプトを含む、CalculateThis アプリが表示されているコンソール ウィンドウ](media/vb-console-calculate-this.png)
+
+::: moniker-end 
+
+::: moniker range="vs-2019"
+
+1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。 
+
+1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
+
+1. 言語およびプラットフォームのフィルターを適用してから、**[コンソール アプリ (.NET Core)]** テンプレートを選択して、**[次へ]** を選択します。
+
+   さらに、**[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*WhatIsYourName*」とタイプまたは入力します。 次に、**[作成]** を選択します。
+
+1. `Module Program` 行と `End Module` 行の間に次のコードを入力します。
+
+   ```vb
+   Public num1 As Integer
+   Public num2 As Integer
+   Public answer As Integer
+   Sub Main()
+       Console.WriteLine("Type a number and press Enter")
+       num1 = Console.ReadLine()
+       Console.WriteLine("Type another number to add to it and press Enter")
+       num2 = Console.ReadLine()
+       answer = num1 + num2
+       Console.WriteLine("The answer is " & answer)
+       Console.ReadLine()
+   End Sub
+   ```
+
+   コード ウィンドウは次のスクリーンショットのようになります。
+
+   ![CalculateThis コードが表示されているコード ウィンドウ](media/vb-codewindow-calculate-this.png)
+
+1. **CalculateThis** をクリックしてプログラムを実行します。 コンソール ウィンドウは次のスクリーン ショットのようになります。
+
+    ![実行するアクションに対するプロンプトを含む、CalculateThis アプリが表示されているコンソール ウィンドウ](media/vb-console-calculate-this.png)
+
+::: moniker-end
 
 ## <a name="quick-answers-faq"></a>FAQ に対する簡単な回答
 

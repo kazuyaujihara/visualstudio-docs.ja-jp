@@ -1,34 +1,66 @@
 ---
-title: テンプレートの整理
+title: テンプレートの検索
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-- Visual Studio templates, organizing
-- templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a228c882ff573b9e319d5fdbeb1ba6472cc5e3d5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221651"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415461"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>方法:プロジェクト テンプレートと項目テンプレートを配置して整理する
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>方法: プロジェクト テンプレートと項目テンプレートを配置して整理する
 
-テンプレートを **[新しいプロジェクト]** ダイアログ ボックスや **[新しい項目の追加]** ダイアログ ボックスに表示するためには、Visual Studio が認識する場所にテンプレート ファイルを配置する必要があります。 ユーザー テンプレートの場所にカスタム サブカテゴリを作成することも可能で、カテゴリは **[新しいプロジェクト]** ダイアログ ボックスと **[新しい項目の追加]** ダイアログ ボックスに表示されます。
+テンプレート ファイルは、新しいプロジェクトおよび新しい項目のダイアログ ボックスに表示されるように、既知の場所に配置する必要があります.
+
+::: moniker range="vs-2017"
+
+ユーザー テンプレートの場所にカスタム サブカテゴリを作成することも可能で、カテゴリは **[新しいプロジェクト]** ダイアログ ボックスと **[新しい項目の追加]** ダイアログ ボックスに表示されます。
+
+::: moniker-end
 
 ## <a name="locate-templates"></a>テンプレートの検索
 
 インストールされたテンプレートとユーザー テンプレートは、2 つの異なる場所に格納されます。
 
+### <a name="installed-templates"></a>インストールされたテンプレート
+
+既定では、Visual Studio でインストールされるテンプレートは次の場所にあります。
+
+::: moniker range="vs-2017"
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\\Common7\IDE\ProjectTemplates\\<Language\>\\<Locale ID\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\Common7\IDE\ItemTemplates\\<Language\>\\<Locale ID\>*
+
+たとえば、次のディレクトリには英語 (LCID 1033) 用の Visual Basic 項目テンプレートがあります。
+
+*C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\\Common7\IDE\ProjectTemplates\\<Language\>\\<Locale ID\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\Common7\IDE\ItemTemplates\\<Language\>\\<Locale ID\>*
+
+たとえば、次のディレクトリには英語 (LCID 1033) 用の Visual Basic 項目テンプレートがあります。
+
+*C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
 ### <a name="user-templates"></a>ユーザー テンプレート
 
-**.vstemplate** ファイルを含む圧縮 (**.zip**) ファイルをユーザー テンプレート ディレクトリに追加すると、そのテンプレートは *[新しいプロジェクト]* ダイアログ ボックスまたは *[新しい項目の追加]* ダイアログ ボックスに表示されます。 既定では、ユーザー テンプレートは次の場所に配置されます。
+*.vstemplate* ファイルを含む圧縮 (*.zip*) ファイルをユーザー テンプレート ディレクトリに追加すると、そのテンプレートは新しいプロジェクトのダイアログ ボックスと新しい項目のダイアログ ボックスに表示されます。 既定では、ユーザー テンプレートは次の場所に配置されます。
 
 ::: moniker range="vs-2017"
 
@@ -55,19 +87,9 @@ ms.locfileid: "57221651"
 ::: moniker-end
 
 > [!TIP]
-> ユーザー テンプレートの場所は、**[ツール]** > **[オプション]** > **[プロジェクトおよびソリューション]** > **[場所]** で設定できます。
+> ユーザー テンプレートの既知の場所は、**[ツール]** > **[オプション]** > **[プロジェクトおよびソリューション]** > **[場所]** で設定できます。
 
-### <a name="installed-templates"></a>インストールされたテンプレート
-
-既定では、Visual Studio でインストールされるテンプレートは次の場所にあります。
-
-- *\\<VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\\<プログラミング言語\>\\<Locale ID>*
-
-- *\\<VisualStudioInstallationDirectory\>\Common7\IDE\ProjectTemplates\\<プログラミング言語\>\\<Locale ID>*
-
-たとえば、次のディレクトリには英語 (LCID 1033) 用の Visual Basic 項目テンプレートがあります。
-
-- *C:\\<VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\VisualBasic\1033*
+::: moniker range="vs-2017"
 
 ## <a name="organize-templates"></a>テンプレートの整理
 
@@ -76,7 +98,7 @@ ms.locfileid: "57221651"
 > [!NOTE]
 > プログラミング言語のレベルでは、新しいカテゴリを作成できません。 新しいカテゴリは、各言語内でのみ作成できます。
 
-### <a name="to-create-new-user-project-template-categories"></a>ユーザー プロジェクト テンプレートの新しいカテゴリを作成するには
+### <a name="create-new-user-project-template-categories"></a>ユーザー プロジェクト テンプレートの新しいカテゴリを作成する
 
 1. ユーザー プロジェクト テンプレートのディレクトリのプログラミング言語フォルダーに、フォルダーを作成します。 たとえば、C# プロジェクト テンプレートに **HelloWorld** カテゴリを設定するには、次のディレクトリを作成します。
 
@@ -84,11 +106,11 @@ ms.locfileid: "57221651"
 
 1. このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。
 
-1. **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** の順に選択します。
+1. **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** の順にクリックします。
 
    **HelloWorld** カテゴリが、**[新しいプロジェクト]** ダイアログ ボックスの **[インストール済み]** > **[Visual C#]** に表示されます。
 
-### <a name="to-create-new-user-item-template-categories"></a>ユーザー項目テンプレートの新しいカテゴリを作成するには
+### <a name="create-new-user-item-template-categories"></a>ユーザー項目テンプレートの新しいカテゴリを作成する
 
 1. ユーザー項目テンプレートのディレクトリのプログラミング言語フォルダーに、フォルダーを作成します。 たとえば、C# 項目テンプレートに **HelloWorld** カテゴリを設定するには、次のディレクトリを作成します。
 
@@ -103,8 +125,6 @@ ms.locfileid: "57221651"
 ### <a name="display-templates-in-parent-categories"></a>親カテゴリでのテンプレートの表示
 
 *.vstemplate* ファイルの `NumberOfParentCategoriesToRollUp` 要素を使用して、サブカテゴリのテンプレートを親カテゴリに表示できます。 この手順は、プロジェクト テンプレートと項目テンプレートで同じです。
-
-#### <a name="to-display-templates-in-parent-categories"></a>親カテゴリにテンプレートを表示するには
 
 1. テンプレートを含む *.zip* ファイルを探します。
 
@@ -133,6 +153,8 @@ ms.locfileid: "57221651"
 1. 抽出したテンプレート ファイルと古いテンプレート *.zip* ファイルを削除します。
 
 1. 削除した *.zip* ファイルが含まれていたディレクトリに、新しい *.zip* ファイルを配置します。
+
+::: moniker-end
 
 ## <a name="see-also"></a>関連項目
 

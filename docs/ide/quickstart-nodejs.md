@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 17bd74a9c5a484d7e3539e787f4ae05d078aa80b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 79197d99ea04d95c369738af5832f70f4f7dc7e7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867013"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355300"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>クイック スタート: Visual Studio を使用して初めての Node.js Web アプリを作成する
 
@@ -53,15 +53,13 @@ ms.locfileid: "57867013"
 
 1. Visual Studio を開きます。
 
-1. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
-
 1. 新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **[新しいプロジェクトの作成]** ダイアログ ボックスで検索ボックスに「**javascript**」と入力して結果をフィルター処理した後、**[空の Node.js Web アプリケーション]** を選択してから **[次へ]** を選択します。 次に、**[作成]** を選択します。
+    **Ctrl + Q** キーを押して検索ボックスを開き、「**Node.js**」と入力してから、**[Create new Blank Node.js Web application project]\(新しい空の Node.js Web アプリケーション プロジェクトの作成\)** (JavaScript) を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[JavaScript]** を展開し、**[Node.js]** を選択します。 中央のウィンドウで、**[空白の Node.js Web アプリケーション]** を選択してから **[OK]** を選択します。
+    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[JavaScript]** を展開して、**[Node.js]** を選択します。 中央のウィンドウで、**[空白の Node.js Web アプリケーション]** を選択してから **[OK]** を選択します。
     ::: moniker-end
     **[空白の Node.js Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発**ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
 

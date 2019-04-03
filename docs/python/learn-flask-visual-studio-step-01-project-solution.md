@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cad792adaaebb6c446d071aca0edd57932605375
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 137ffe6cc89c439de2fded337349310da865e3be
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920107"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355699"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>チュートリアル:Visual Studio での Flask Web フレームワークの概要
 
@@ -40,7 +40,7 @@ Flask は、フォームの検証、データベースの抽象化、認証な�
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-- Windows 上の Visual Studio 2017 と以下のオプション:
+- Windows 用の Visual Studio 2017 以降は次のオプションを備えています。
   - **Python 開発ワークロード** (インストーラーの **[ワークロード]** タブ)。 手順については、[Visual Studio での Python サポートのインストール](installing-python-support-in-visual-studio.md)に関するページをご覧ください。
   - **Windows 向け Git** と **Visual Studio 向け GitHub 拡張** (**[個別のコンポーネント]** タブの **[コード ツール]**)。
 
@@ -60,7 +60,7 @@ Flask プロジェクト テンプレートは Python Tools for Visual Studio �
     - **場所**: Visual Studio ソリューションとプロジェクトを作成する場所を指定します。
     - **ソリューション名**: このチュートリアルでは複数プロジェクトのコンテナーとしてのソリューションに適した「**LearningFlask**」に設定します。
     - **ソリューションのディレクトリを作成**:オンのままにします (既定)。
-    - **新しい Git リポジトリを作成**:ソリューションの作成時に Visual Studio でローカルの Git リポジトリが作成されるように、このオプション (既定ではオフ) をオンにします。 このオプションが表示されない場合は、Visual Studio 2017 インストーラーを実行し、**[コード ツール]** の **[個別のコンポーネント]** タブで **Windows 用 Git** および **Visual Studio 用 GitHub 拡張機能**を追加します。
+    - **新しい Git リポジトリを作成**:ソリューションの作成時に Visual Studio でローカルの Git リポジトリが作成されるように、このオプション (既定ではオフ) をオンにします。 このオプションが表示されない場合は、Visual Studio インストーラーを実行し、**[コード ツール]** の **[個別のコンポーネント]** タブで **Windows 用 Git** および **Visual Studio 用 GitHub 拡張機能**を追加します。
 
 1. しばらくすると、Visual Studio に (次に示すように) "**このプロジェクトには外部パッケージが必要です**" というダイアログが表示されます。 テンプレートには、最新の Flask 1.x パッケージを参照する *requirements.txt* ファイルが含まれているため、このダイアログが表示されます  (正確な依存関係を確認するには **[必要なパッケージを表示]** を選択します)。
 

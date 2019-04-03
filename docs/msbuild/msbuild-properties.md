@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355618"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515208"
 ---
 # <a name="msbuild-properties"></a>MSBuild プロパティ
 プロパティはビルドを設定するための名前と値のペアです。 プロパティを使用することで、タスクに値を渡したり、条件を評価したりできるだけでなく、プロジェクト ファイルで参照する値を格納しておくこともできます。
@@ -59,7 +59,7 @@ ms.locfileid: "58355618"
  詳細については、「[方法 :ビルドで環境変数を使用する](../msbuild/how-to-use-environment-variables-in-a-build.md)」を参照してください。
 
 ## <a name="registry-properties"></a>レジストリのプロパティ
- システム レジストリ値を読み取るには、次の構文を使用します。ここで、`Hive` はレジストリ ハイブ (たとえば、**HKEY_LOCAL_MACHINE**)、`Key` はキー名、`SubKey` はサブキー名、`Value` はサブキーの値をそれぞれ表します。
+ システム レジストリ値を読み取るには、次の構文を使用します。ここで、`Hive` はレジストリ ハイブ (たとえば、**HKEY_LOCAL_MACHINE**)、`MyKey` はキー名、`MySubKey` はサブキー名、`Value` はサブキーの値をそれぞれ表します。
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)

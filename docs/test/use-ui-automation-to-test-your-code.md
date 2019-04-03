@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145227"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416267"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI オートメーションを使用してコードをテストする
 
@@ -62,9 +62,13 @@ ms.locfileid: "58145227"
 
 1. コード化された UI テストを作成します。
 
-   コード化された UI テストは、コード化された UI テスト プロジェクトに含まれている必要があります。 コード化された UI テスト プロジェクトをまだ作成していない場合は、プロジェクトを作成します。 **[ファイル]** > **[新規]** > **[プロジェクト]** の順に選んで、**[新しいプロジェクト]** ダイアログ ボックスを開きます。 左側のカテゴリ ウィンドウで **[インストール済み]** > **Visual Basic** *または* **[Visual C#]**  > **[テスト]** の順に展開します。 **[コード化された UI テスト プロジェクト]** テンプレートを選択し、**[OK]** を選択します。
+   コード化された UI テストは、コード化された UI テスト プロジェクトに含まれている必要があります。 コード化された UI テスト プロジェクトをまだ作成していない場合は、プロジェクトを作成します。 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[コード化された UI テスト プロジェクト]** プロジェクト テンプレートを検索して選択します。
+
+   ::: moniker range="vs-2017"
 
    ![[新しいプロジェクト] ダイアログのコード化された UI テスト プロジェクトのテンプレート](media/coded-ui-test-project-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > **[コード化された UI テスト プロジェクト]** テンプレートが表示されない場合は、[コード化された UI テスト コンポーネントをインストール](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)する必要があります。

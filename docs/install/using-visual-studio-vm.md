@@ -2,7 +2,7 @@
 title: Azure 仮想マシンでの Visual Studio の使用
 titleSuffix: ''
 description: Azure 仮想マシンで Visual Studio を使用する方法を説明します
-ms.date: 02/19/2019
+ms.date: 03/25/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450400"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476021"
 ---
 # <a id="top"> </a> Azure 上の Visual Studio イメージ
 
@@ -34,9 +36,9 @@ ms.locfileid: "56450400"
 
 | リリース バージョン                                              | エディション                     |     製品バージョン      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019:プレビュー (プレビュー 3)                   |           エンタープライズ         | バージョン 16.0.0 Preview 3 |
-| Visual Studio 2017:最新 (バージョン 15.9)                    |    Enterprise、Community     |      バージョン 15.9.7      |
-|         Visual Studio 2017:RTW                              |    Enterprise、Community     |      バージョン 15.0.20     |
+|       Visual Studio 2019:プレビュー (RC3)                      |           エンタープライズ         |    バージョン 16.0.0 RC3    |
+| Visual Studio 2017:最新 (バージョン 15.9)                    |    Enterprise、Community     |      バージョン 15.9.9      |
+|         Visual Studio 2017:RTW                              |    Enterprise、Community     |      バージョン 15.0.22     |
 |   Visual Studio 2015:最新 (更新プログラム 3)                      |    Enterprise、Community     |  バージョン 14.0.25431.01   |
 |         Visual Studio 2015:RTW                              |             なし             | (サービス有効期限切れ)  |
 
@@ -101,7 +103,9 @@ Visual Studio は、Azure の "ライセンス持ち込み" モデルに従い�
 
 簡単なまとめ:システム準備ツール (Sysprep) を使用して実行中の VM をシャットダウンし、Azure Portal の UI を使用して、VM をイメージとして "*キャプチャ (図 1)*" します。 Azure は、イメージを含む `.vhd` ファイルをユーザーが選んだストレージ アカウントに保存します。 その後、新しいイメージはサブスクリプションのリソース一覧にイメージ リソースとして表示されます。
 
-<img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*(図 1) Azure Portal の UI を使ってイメージをキャプチャする。*</center>
+![Azure portal の UI を使ってイメージをキャプチャする](media/capture-vm.png)
+
+*(図 1) Azure portal の UI を使ってイメージをキャプチャします。*
 
 詳細については、「[Azure で一般化された VM の管理対象イメージを作成する](/azure/virtual-machines/windows/capture-image-resource)」参照してください。
 

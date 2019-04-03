@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 790d6d866619b19a81bd0e92ecb043385736eaac
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e7cc22e4fbba012d0774a3a1e84adc0cf02e8dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983310"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355540"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows に Visual Studio の Python サポートをインストールする方法
 
@@ -50,14 +50,14 @@ Visual Studio 用の Python サポート (Python Tools for Visual Studio (PTVS) 
 
     ::: moniker range="vs-2017"
     省略可能: データ サイエンスを扱っている場合、**[データ サイエンスと分析のアプリケーション]** ワークロードも検討してください。 このワークロードには、Python、R、F# の各言語のサポートが含まれています。 詳細については、「[データ サイエンスと分析のアプリケーション](data-science-and-analytical-applications-workload.md)」を参照してください。
+
+    > [!Note]
+    > Python とデータ サイエンスのワークロードは、Visual Studio 2017 バージョン 15.2 以降でのみ利用可能です。
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
     省略可能: データ サイエンスを扱っている場合、**[データ サイエンスと分析のアプリケーション]** ワークロードも検討してください。 このワークロードには、Python 言語と F# 言語のサポートが含まれています。 詳細については、「[データ サイエンスと分析のアプリケーション](data-science-and-analytical-applications-workload.md)」を参照してください。
     ::: moniker-end
-
-    > [!Note]
-    > Python とデータ サイエンスのワークロードは、Visual Studio 2017 バージョン 15.2 以降でのみ利用可能です。
 
 1. インストーラーの右側から、必要に応じて追加のオプションを選択します。 既定のオプションを使用する場合は、この手順を省略します。
 

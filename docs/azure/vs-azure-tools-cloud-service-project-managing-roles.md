@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 2ddc50ba84a4fbe66cbcbaaff2e2eb847a8a8ced
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c982d999f3fa974db6ea409ee85e3bb7bbc57414
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953242"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323764"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Visual Studio での Azure クラウド サービスのロールの管理
 Azure クラウド サービスを作成した後、サービスに新しいロールを追加したり、サービスから既存のロールを削除したりできます。 既存のプロジェクトをインポートし、ロールに変換することもできます。 たとえば、ASP.NET Web アプリケーションをインポートし、そのアプリケーションを Web ロールとして指定できます。
@@ -46,7 +46,7 @@ Visual Studio で Azure クラウド サービス プロジェクトから Web �
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Azure クラウド サービス プロジェクトにロールを再度追加する
 クラウド サービス プロジェクトからロールを削除し、後からそのロールをプロジェクトに戻す場合は、エンドポイントや診断情報など、ロールの宣言と基本属性のみが追加されます。 `ServiceDefinition.csdef` ファイルまたは `ServiceConfiguration.cscfg` ファイルにリソースや参照は追加されません。 この情報を追加する場合は、これらのファイルに手動で情報を追加し直す必要があります。
 
-たとえば、Web サービス ロールを削除した後、このロールを再度ソリューションに追加することになったとします。 これを実行すると、エラーが発生します。 このエラーを回避するには、次の XML に示す `<LocalResources>` 要素を `ServiceDefinition.csdef` ファイルに追加し直す必要があります。 プロジェクトに追加し直した Web サービス ロールの名前を **<LocalStorage>** 要素の名前属性の一部として使用します。 次の例では、Web サービス ロールの名前は **WCFServiceWebRole1** です。
+たとえば、Web サービス ロールを削除した後、このロールを再度ソリューションに追加することになったとします。 これを実行すると、エラーが発生します。 このエラーを回避するには、次の XML に示す `<LocalResources>` 要素を `ServiceDefinition.csdef` ファイルに追加し直す必要があります。 プロジェクトに追加し直した Web サービス ロールの名前を **\<LocalStorage>** 要素の名前属性の一部として使用します。 次の例では、Web サービス ロールの名前は **WCFServiceWebRole1** です。
 
     <WebRole name="WCFServiceWebRole1">
         <Sites>

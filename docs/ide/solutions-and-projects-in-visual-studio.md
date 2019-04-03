@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8302c517f28e32c154f688bd9f282070013f812
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957823"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355145"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio のソリューションおよびプロジェクト
 
@@ -62,9 +62,9 @@ Visual Studio では、ソリューションの設定を格納するために、
 |.sln|Visual Studio ソリューション|ソリューション内のプロジェクト、プロジェクト項目、およびソリューション項目を整理します。|
 |.suo|ソリューション ユーザー オプション|ユーザー レベルの設定やブレークポイントなどのカスタマイズを格納します。|
 
-## <a name="create-new-projects"></a>プロジェクトの新規作成
+## <a name="create-new-projects"></a>新しいプロジェクトの作成
 
-新しいプロジェクトを作成する最も簡単な方法は、特定の種類のアプリケーションまたは Web サイトのプロジェクト テンプレートから始めることです。 プロジェクト テンプレートは、生成済みのコード ファイル、構成ファイル、資産、設定の基本セットで構成されます。 これらのテンプレートは、**[ファイル]** > **[新規作成]** > **[プロジェクト]** を選択して **[新しいプロジェクト]** ダイアログ ボックスに移動したときに表示されます。 詳細については、[ソリューションとプロジェクトの作成](../ide/creating-solutions-and-projects.md)に関するページを参照してください。
+新しいプロジェクトを作成する最も簡単な方法は、特定の種類のアプリケーションまたは Web サイトのプロジェクト テンプレートから始めることです。 プロジェクト テンプレートは、生成済みのコード ファイル、構成ファイル、資産、設定の基本セットで構成されます。 これらのテンプレートは、新しいプロジェクトを作成するダイアログ ボックスで利用できます (**[ファイル]** > **[新規作成]** > **[プロジェクト]**)。 詳細については、[ソリューションとプロジェクトの作成](../ide/creating-solutions-and-projects.md)に関するページを参照してください。
 
 カスタム プロジェクトや項目テンプレートを作成することもできます。 詳細については、[プロジェクト テンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)に関するページをご覧ください。
 

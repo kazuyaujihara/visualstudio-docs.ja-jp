@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867814"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355475"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>[プロジェクトおよびソリューション] ページの [オプション] ダイアログ ボックス
 
@@ -91,11 +91,11 @@ Visual Studio が新しいプロジェクトとソリューション フォル�
 
 ### <a name="user-project-templates-location"></a>ユーザー プロジェクト テンプレートの場所
 
-**[新しいプロジェクト]** ダイアログ ボックスで **[マイ テンプレート]** の一覧を作成するときに使用される既定の場所を指定します。 詳細については、「[方法 :テンプレートを配置して整理する](../../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+ユーザー作成のプロジェクト テンプレートの検索に使用される既定の場所を指定します。 詳細については、「[方法 :テンプレートを配置して整理する](../../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
 
 ### <a name="user-item-templates-location"></a>ユーザー項目テンプレートの場所
 
-**[新しい項目の追加]** ダイアログ ボックスで **[マイ テンプレート]** の一覧を作成するときに使用される既定の場所を設定します。 詳細については、「[方法 :テンプレートを配置して整理する](../../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+ユーザー作成の項目テンプレートの検索に使用される既定の場所を指定します。 詳細については、「[方法 :テンプレートを配置して整理する](../../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

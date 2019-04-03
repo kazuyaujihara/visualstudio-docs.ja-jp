@@ -11,23 +11,23 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6cf4e15ec464b1d438245cd7bfe254d9464ad2a6
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57987150"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354909"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>クイック スタート: フォルダー内の Python コードを開いて実行する
 
 [Visual Studio 2019 に Python のサポートをインストール](installing-python-support-in-visual-studio.md)した後は、Visual Studio プロジェクトを作成しなくても、Visual Studio 2019 で既存の Python コードを簡単に実行できます。
 
 > [!Note]
-> Visual Studio 2017 以前では、Python コードを実行するには Visual Studio プロジェクトを作成する必要がありましたが、組み込みのプロジェクト テンプレートを使用して簡単に行うことができます。 「[クイック スタート: 既存のコードから Python プロジェクトを作成する](quickstart-01-python-in-visual-studio-project-from-existing-code.md)」をご覧ください
+> Visual Studio 2017 以前では、Python コードを実行するには Visual Studio プロジェクトを作成する必要がありますが、組み込みのプロジェクト テンプレートを使用すれば簡単に行うことができます。 例については、「[クイック スタート:既存のコードから Python プロジェクトを作成する](quickstart-01-python-in-visual-studio-project-from-existing-code.md)」をご覧ください
 
 1. このチュートリアルでは、Python コードが含まれるフォルダーであれば好きなものを使用できます。 以下の例を進めるには、`git clone https://github.com/gregmalcolm/python_koans` コマンドを使用して、gregmalcolm/python_koans GitHub リポジトリをお使いのコンピューターの適当なフォルダーに複製します。
 
-1. Visual Studio 2019 を起動し、スタート画面で **[Get started]\(作業の開始\)** 列の下部にある **[開く]** を選択します。 または、Visual Studio を既に実行している場合は、代わりに **[ファイル]** > **[開く]** > **[フォルダー]** コマンドを選択します。
+1. Visual Studio 2019 を起動し、スタート ウィンドウで **[作業の開始]** 列の下部にある **[開く]** を選択します。 または、Visual Studio を既に実行している場合は、代わりに **[ファイル]** > **[開く]** > **[フォルダー]** コマンドを選択します。
 
     ![Visual Studio のスタートアップ画面](media/quickstart-open-folder/01-open-local-folder.png)
 

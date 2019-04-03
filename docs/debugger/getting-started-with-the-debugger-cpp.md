@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9975d0c4a62b4ae4d2695a34eeab0d43ba4a424
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 86900b525489c5f1ae487e89fdb6d848c4fc425a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428779"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355592"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>チュートリアル:Visual Studio を使用した C++ のデバッグについて理解する
 
@@ -37,32 +37,35 @@ ms.locfileid: "57428779"
 
 ::: moniker range=">=vs-2019"
 
-* Visual Studio 2019 および **C++ によるデスクトップ開発**ワークロードをインストールしている必要があります。
+Visual Studio 2019 および **C++ によるデスクトップ開発**ワークロードをインストールしている必要があります。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-* Visual Studio 2017 および **C++ によるデスクトップ開発**ワークロードをインストールしている必要があります。
+Visual Studio 2017 および **C++ によるデスクトップ開発**ワークロードをインストールしている必要があります。
 
 ::: moniker-end
 
-Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  ページに移動し、無料試用版をインストールしてください。
+Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
 
-ワークロードをインストールする必要があるが、既に Visual Studio を所有している場合は、(**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択し) **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **[C++ によるデスクトップ開発]** ワークロード、**[変更]** の順に選択します。
+Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、**[ツール]** > **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 Visual Studio インストーラーが起動します。 **[C++ によるデスクトップ開発]** ワークロード、**[変更]** の順に選択します。
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
-1. Visual Studio で、**[ファイル]、[新しいプロジェクト]** の順に選択します。
+1. Visual Studio を開きます。
 
-2. **[Visual C++]** の下で **[Windows デスクトップ]** を選択し、真ん中のウィンドウで **[Windows コンソール アプリケーション]** を選択します。
+    ::: moniker range=">=vs-2019"
+    **Ctrl + Q** キーを押して検索ボックスを開き、「**c++**」と入力し、**[テンプレート]**、**[新しいコンソール アプリ プロジェクトの作成]** の順に選択します。 表示されたダイアログ ボックスで、**get-started-debugging** のような名前を入力して、**[作成]** をクリックします。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** の左側のウィンドウで、**[Visual C++]** の下にある **[Windows デスクトップ]** を選択し、真ん中のウィンドウで **[Windows コンソール アプリケーション]** を選択します。 次に、「**MyDbgApp**」のような名前を入力し、**[OK]** をクリックします。
+    ::: moniker-end
 
-    **[Windows コンソール アプリケーション]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **[C++ によるデスクトップ開発]** ワークロード、**[変更]** の順に選択します。
-
-3. 「**get-started-debugging**」ような名前を入力し、**[OK]** をクリックします。
+    **[Windows コンソール アプリケーション]** プロジェクト テンプレートが表示されない場合は、**[ツール]** > **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 Visual Studio インストーラーが起動します。 **[C++ によるデスクトップ開発]** ワークロード、**[変更]** の順に選択します。
 
     Visual Studio によってプロジェクトが作成されます。
 
-4. *get-started-debugging.cpp* 内で、以下のコード
+1. *get-started-debugging.cpp* 内で、以下のコード
 
     ```c++
     int main()

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907686"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355673"
 ---
 # <a name="template-parameters"></a>テンプレート パラメーター
 
@@ -54,11 +54,11 @@ ms.locfileid: "55907686"
 |guid[1-10]|プロジェクト ファイルでプロジェクト GUID を置き換えるために使用される GUID。 最大 10 個の一意 GUID を指定できます (例: `guid1`)。|
 |itemname|**[新しい項目の追加]** ダイアログ ボックスでユーザーが指定した名前。|
 |machinename|現在のコンピューター名 (たとえば、Computer01)。|
-|projectname|**[新しいプロジェクト]** ダイアログ ボックスでユーザーが指定した名前。|
+|projectname|プロジェクトの作成時にユーザーが指定した名前。|
 |registeredorganization|HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization のレジストリ キー値。|
 |rootnamespace|現在のプロジェクトのルート名前空間。 このパラメーターは、項目テンプレートにのみ適用されます。|
 |safeitemname|**[新しい項目の追加]** ダイアログ ボックスでユーザーが指定した名前から、安全でないすべての文字とスペースを削除したもの。|
-|safeprojectname|**[新しいプロジェクト]** ダイアログ ボックスでユーザーが指定した名前から、安全でないすべての文字とスペースを削除したもの。|
+|safeprojectname|プロジェクトの作成時にユーザーによって指定された名前ですが、すべての安全でない文字およびスペースがすべて削除されています。|
 |時間|DD/MM/YYYY 00:00:00 の形式で表した現在の時間。|
 |SpecificSolutionName|ソリューションの名前。 [ソリューションのディレクトリを作成] がオンになっている場合は、`SpecificSolutionName` にソリューション名が指定されます。 [ソリューションのディレクトリを作成] がオフになっている場合、`SpecificSolutionName` は空白です。|
 |userdomain|現在のユーザー ドメイン。|

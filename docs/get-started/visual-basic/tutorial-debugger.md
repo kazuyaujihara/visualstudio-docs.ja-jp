@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc450217dc6b0055a14cccd02c471329870a74ac
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 9c1c05fa3d424d90bedbbd52ac66636dc1fc1dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155529"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355514"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>チュートリアル: Visual Studio を使用した Visual Basic コードのデバッグについて理解する
 
@@ -36,25 +36,37 @@ ms.locfileid: "56155529"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Visual Studio 2017 および **.NET デスクトップ開発**ワークロードをインストールしている必要があります。
+::: moniker range=">=vs-2019"
 
-    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  ページに移動し、無料試用版をインストールしてください。
+Visual Studio 2019 および **.NET デスクトップ開発**ワークロードをインストールしている必要があります。
 
-    ワークロードをインストールする必要があるが、既に Visual Studio を所有している場合は、(**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択し) **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **.NET デスクトップ開発**ワークロードを選択し、**[変更]** を選択します。
+::: moniker-end
+::: moniker range="vs-2017"
+
+Visual Studio 2017 および **.NET デスクトップ開発**ワークロードをインストールしている必要があります。
+
+::: moniker-end
+
+Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+
+Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、**[ツール]** > **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 Visual Studio インストーラーが起動します。 **.NET デスクトップ開発**ワークロードを選択し、**[変更]** を選択します。
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
-1. Visual Studio で、**[ファイル]、[新しいプロジェクト]** の順に選択します。
+1. Visual Studio を開きます。
 
-2. **[Visual Basic]** の下で **[Windows デスクトップ]** を選択し、真ん中のウィンドウで **[コンソール アプリ]** を選択します。
+    ::: moniker range=">=vs-2019"
+    **Ctrl + Q** キーを押して検索ボックスを開き、「**visual basic**」と入力し、**[テンプレート]** を選択して、**[Create new Console App (.NET Framework) project]\(新しいコンソール アプリ (.NET Framework) プロジェクトの作成\)** を選択します。 表示されたダイアログ ボックスで、**get-started-debugging** のような名前を入力して、**[作成]** をクリックします。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual Basic]** の下にある **[Windows デスクトップ]** を選択し、次に真ん中のウィンドウで **[コンソール アプリ (.NET Framework)]** を選択します。 次に、「**get-started-debugging**」ような名前を入力し、**[OK]** をクリックします。
+    ::: moniker-end
 
-    **[コンソール アプリケーション]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 *[.NET デスクトップ開発]** ワークロードを選択し、**[変更]** を選びます。
-
-3. 「**get-started-debugging**」ような名前を入力し、**[OK]** をクリックします。
+    **[コンソール アプリ (.NET Framework)]** プロジェクト テンプレートが表示されない場合は、**[ツール]** > **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 **.NET デスクトップ開発**ワークロードを選択し、**[変更]** を選択します。
 
     Visual Studio によってプロジェクトが作成されます。
 
-4. *Program.cs* で、下記のコード
+1. *Module1.vb* 内で、次のコード
 
     ```vb
     Module Module1

@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 88717998e22ffad028ce3fd7e0a2304de3e779d6
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 547c92cdb892c3a087301fb527d069dacfaccd8e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323565"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355458"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS 用に Python Web アプリを構築する
 
@@ -37,7 +37,7 @@ Web アプリを実行する場合、「[Python インタープリターのイ�
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Python インタープリターをポイントする web.config の設定
 
-ご使用のアプリの *web.config* ファイルは、HttpPlatform (推奨) または FastCGI のいずれかを使用して Python 要求を処理する方法を、Windows 上で実行される IIS (7 以降) の Web サーバーに指示します。 Visual Studio 2015 以前のバージョンでは、これらの変更は自動的に行われます。 Visual Studio 2017 を使用する場合、*web.config* は手動で変更する必要があります。
+ご使用のアプリの *web.config* ファイルは、HttpPlatform (推奨) または FastCGI のいずれかを使用して Python 要求を処理する方法を、Windows 上で実行される IIS (7 以降) の Web サーバーに指示します。 Visual Studio 2015 以前のバージョンでは、これらの変更は自動的に行われます。 Visual Studio 2017 以降を使用する場合、*web.config* は手動で変更する必要があります。
 
 ### <a name="configure-the-httpplatform-handler"></a>Httpplatform のハンドラーの構成
 

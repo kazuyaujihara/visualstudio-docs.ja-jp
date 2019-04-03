@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873179"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790811"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>クイック スタート: プロファイリング ツールの概要
 
@@ -119,6 +119,7 @@ Direct3D アプリ (Direct3D コンポーネントは C++ である必要があ�
 
 また、グラフを利用し、CPU バインドまたは GPU バインドのパフォーマンス問題があるかどうかを判断できます。
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>パフォーマンスを分析する (JavaScript UWP)
 
 UWP アプリの場合、JavaScript メモリ ツールと HTML UI 応答性ツールを利用できます。
@@ -130,6 +131,7 @@ JavaScript メモリ ツールは、その他の種類のアプリで使用で�
 UI の応答性、長い読み込み時間、UWP アプリの遅い表示更新を診断するには、HTML UI 応答性ツールを使用します。 使用方法は、他の種類のアプリのアプリケーションのタイムライン ツールに似ています。 詳細については、「[HTML UI の応答性](../profiling/html-ui-responsiveness.md)」を参照してください。
 
 ![HTML UI の応答性プロファイリング ツール](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>ネットワーク使用量を分析する (UWP)
 

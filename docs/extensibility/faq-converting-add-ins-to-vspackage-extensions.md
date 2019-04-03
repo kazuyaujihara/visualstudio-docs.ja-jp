@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e43c50dd006190935f8ce1eb3a17e3f268e14cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692828"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789531"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ:アドインを VSPackage 拡張機能に変換します。
 現在、アドインは非推奨とされます。 新しい Visual Studio 拡張機能をするためには、VSIX 拡張機能を作成する必要があります。 VSIX 拡張機能に Visual Studio アドインを変換する方法についてよく寄せられる質問に対する回答を示します。
@@ -40,26 +40,27 @@ ms.locfileid: "56692828"
 ##  <a name="BKMK_StartDeveloping"></a> VSIX 拡張機能の開発を開始する方法
  メニュー コマンドを含む VSIX を作成する方法を次に示します。
 
-#### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>メニュー コマンドを含む VSIX 拡張機能を作成するには
+### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>メニュー コマンドを含む VSIX 拡張機能を作成するには
 
-1.  VSIX プロジェクトを作成する。 (**ファイル** > **新規** > **プロジェクト**、または型**プロジェクト**で、**クイック起動**ウィンドウ)。 **新しいプロジェクト** ダイアログ ボックスで、展開**Visual c#** > **拡張**または**Visual Basic**  >  **機能拡張**選択**VSIX プロジェクト**)。プロジェクトに名前を**TestExtension**場所を指定するとします。
+1. VSIX プロジェクトを作成する。 (**ファイル** > **新規** > **プロジェクト**、または型**プロジェクト**検索ボックスに)。 **新しいプロジェクト** ダイアログ ボックスで、展開**Visual C#**   > **拡張**または**Visual Basic**  > **拡張**選択**VSIX プロジェクト**します。 プロジェクトに名前を**TestExtension**場所を指定するとします。
 
-2.  追加、**カスタム コマンド**プロジェクト項目テンプレート。 (でプロジェクト ノードを右クリックし、**ソリューション エクスプ ローラー**選択**追加** > **新しい項目の**します。 **新しいプロジェクト**Visual c# または Visual Basic では、選択のいずれかのダイアログ、**拡張**ノード**カスタム コマンド**)。
+2. 追加、**カスタム コマンド**項目テンプレート。 (でプロジェクト ノードを右クリックし、**ソリューション エクスプ ローラー**選択**追加** > **新しい項目の**します。 **新しい項目の追加**いずれかのビジュアルのダイアログC#または Visual Basic では、選択、**拡張**ノード**カスタム コマンド**.)
 
-3.  キーを押して**F5**をビルドしてデバッグ モードで、プロジェクトを実行します。
+3. キーを押して**F5**をビルドしてデバッグ モードで、プロジェクトを実行します。
 
-     Visual Studio の 2 番目のインスタンスが表示されます。 この 2 番目のインスタンスは実験用インスタンスと呼ばれます。コードの記述に使用する Visual Studio のインスタンスとは設定が異なることがあります。 実験用インスタンスを初めて実行するときには、VS Online にサインインしてテーマとプロファイルを指定するよう求められます。
+   Visual Studio の 2 番目のインスタンスが表示されます。 この 2 番目のインスタンスは実験用インスタンスと呼ばれます。コードの記述に使用する Visual Studio のインスタンスとは設定が異なることがあります。 実験用インスタンスを初めて実行するときには、VS Online にサインインしてテーマとプロファイルを指定するよう求められます。
 
-     **ツール** メニュー (に実験用インスタンス) という名前のボタンを表示する必要があります**マイ コマンド名**します。 このボタンを選択すると、メッセージが表示されます。**TestVSPackagePackage.MenuItemCallback() 内**します。
+   **ツール** メニュー (に実験用インスタンス) という名前のボタンを表示する必要があります**マイ コマンド名**します。 このボタンを選択すると、メッセージが表示されます。**TestVSPackagePackage.MenuItemCallback() 内**します。
 
 ##  <a name="BKMK_RunAddin"></a> VSPackage でアドイン コードを実行する方法はありますか
- 通常、アドイン コードは次の 2 つの方法のどちらかで実行します。
+
+通常、アドイン コードは次の 2 つの方法のどちらかで実行します。
 
 - メニュー コマンドによってトリガーされる (コードは、`IDTCommandTarget.Exec`メソッドです)。
 
 - 起動時に自動的に実行 (コードは `OnConnection` イベント ハンドラー内にあります)。
 
-  VSPackage でも同じ操作を実行できます。 コールバック メソッドにアドイン コードを追加する方法を次に示します。
+VSPackage でも同じ操作を実行できます。 コールバック メソッドにアドイン コードを追加する方法を次に示します。
 
 ### <a name="to-implement-a-menu-command-in-a-vspackage"></a>VSPackage にメニュー コマンドを実装するには
 

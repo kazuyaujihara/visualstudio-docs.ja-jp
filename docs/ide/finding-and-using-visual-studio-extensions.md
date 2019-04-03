@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8815e4cf58703efa0ab092f6030f6eeb22a813cd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983391"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268543"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Visual Studio 拡張機能の検索と使用
 
@@ -141,7 +141,7 @@ Visual Studio では、前回のセッション中に拡張機能がクラッシ
 
 オンライン サンプルをインストールすると、ソリューションは次の 2 つの場所に格納されます。
 
-- 作業コピーは、 **[新しいプロジェクト]** ダイアログ ボックスで指定した場所に格納されます。
+- 作業コピーは、プロジェクトの作成時に指定した場所に格納されます。
 
 - これとは別に、マスター コピーがコンピューター上に格納されます。
 
@@ -163,7 +163,7 @@ Visual Studio では、前回のセッション中に拡張機能がクラッシ
 
 - 特定のテクノロジまたは機能に関連するサンプルのコレクションであるサンプル パックをインストールする。
 
-- 個々のオンライン サンプルをインストールする (この操作は、 **[新しいプロジェクト]** ダイアログ ボックスでも実行できます)。
+- 個々のオンライン サンプルをインストールする
 
 - インストール済みサンプルのソース コード変更が発行されたときに更新通知を表示する。
 

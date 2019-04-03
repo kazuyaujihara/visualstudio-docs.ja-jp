@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983508"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354751"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE へようこそ | Python
 
@@ -44,7 +44,7 @@ Visual Studio *統合開発環境* は、コードの編集、デバッグ、テ
 
 Visual Studio は Windows と Mac で使用できますが、Python のサポートを利用できるのは Visual Studio for Windows でのみとなります。
 
-Windows には、Community、Professional、Enterprise という 3 つのエディションの Visual Studio 2017 があります。 各エディションでサポートされている機能については、「[Visual Studio 2017 IDE の比較](https://visualstudio.microsoft.com/vs/compare/)」を参照してください。
+Windows 向けには、Community、Professional、Enterprise という 3 つのエディションの Visual Studio 2017 があります。 各エディションでサポートされている機能については、[Visual Studio IDE の比較](https://visualstudio.microsoft.com/vs/compare/)に関するページを参照してください。
 
 ## <a name="popular-productivity-features"></a>よく使われる生産性機能
 

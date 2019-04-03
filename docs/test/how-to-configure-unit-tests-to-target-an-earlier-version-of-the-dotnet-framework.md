@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 0afa278bb7530905d4837ba06644731dcae52635
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0d77bd4fa5a1797b5e405c0b1af12cd1c24b18f7
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916701"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415942"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>方法:.NET Framework の旧バージョンを対象とした単体テストを構成する
 
@@ -46,66 +46,48 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
 
 - 以前のクライアント バージョンのフレームワークに対して、単体テストを対象にすることはできません。
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Visual Basic 単体テスト プロジェクト用に特定のバージョンの .NET Framework を再ターゲットする
+## <a name="retargeting-for-visual-basic-unit-test-projects"></a>Visual Basic 単体テスト プロジェクト用の再ターゲット
 
-1.  新しい Visual Basic 単体テスト プロジェクトを作成します。 **[ファイル]** メニューの **[新規作成]** を選択し、**[プロジェクト]** を選択します。
+1. 新しい Visual Basic **単体テスト プロジェクト** プロジェクトを作成します。
 
-     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
-
-2.  **[インストールされているテンプレート]** の **[Visual Basic]** を展開します。 **[テスト]**、**[テスト プロジェクト]** テンプレートの順に選択します。
-
-3.  **[名前]** テキスト ボックスに Visual Basic テスト プロジェクトの名前を入力し、**[OK]** をクリックします。
-
-4.  **ソリューション エクスプローラー**で、新しい Visual Basic テスト プロジェクトのショートカット メニューから **[プロパティ]** を選択します。
+2. **ソリューション エクスプローラー**で、新しい Visual Basic テスト プロジェクトの右クリック メニューから **[プロパティ]** を選択します。
 
      Visual Basic テスト プロジェクトのプロパティが表示されます。
 
-5.  次の図に示すように、**[コンパイル]** タブで **[詳細コンパイル オプション]** を選択します。
+3. 次の図に示すように、**[コンパイル]** タブで **[詳細コンパイル オプション]** を選択します。
 
      ![詳細コンパイル オプション](../test/media/howtoconfigureunittest35frameworka.png)
 
-6.  次の図の吹き出し B に示すように、**[ターゲット フレームワーク (すべての構成)]** ドロップダウン リストを使用して、ターゲット フレームワークを **.NET Framework 3.5** 以降のバージョンに変更します。 クライアント バージョンは指定しません。
+4. 次の図の吹き出し B に示すように、**[ターゲット フレームワーク (すべての構成)]** ドロップダウン リストを使用して、ターゲット フレームワークを **.NET Framework 3.5** 以降のバージョンに変更します。 クライアント バージョンは指定しません。
 
      ![[ターゲット フレームワーク] ドロップダウン リスト](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Visual C# 単体テスト プロジェクト用に特定のバージョンの .NET Framework を再ターゲットする
+## <a name="retargeting-for-c-unit-test-projects"></a>C# 単体テスト プロジェクト用の再ターゲット
 
-1.  新しい Visual C# 単体テスト プロジェクトを作成します。 **[ファイル]** メニューの **[新規作成]** を選択し、**[プロジェクト]** を選択します。
+1. 新しい C# **単体テスト プロジェクト** プロジェクトを作成します。
 
-     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+2. **ソリューション エクスプローラー**で、新しい C# テスト プロジェクトの右クリック メニューから **[プロパティ]** を選択します。
 
-2.  **[インストールされているテンプレート]** の **[Visual C#]** を展開します。 **[テスト]**、**[テスト プロジェクト]** テンプレートの順に選択します。
+   C# テスト プロジェクトのプロパティが表示されます。
 
-3.  **[名前]** テキスト ボックスに Visual C# テスト プロジェクトの名前を入力し、**[OK]** をクリックします。
+3. **[アプリケーション]** タブの **[ターゲット フレームワーク]** を選択します。 次の図に示すように、ドロップダウン リストから **[.NET Framework 3.5]** またはそれ以降のバージョンを選択します。 クライアント バージョンは指定しません。
 
-4.  **ソリューション エクスプローラー**で、新しい Visual C# テスト プロジェクトのショートカット メニューから **[プロパティ]** を選択します。
+   ![[ターゲット フレームワーク] ドロップダウン リスト](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
-     Visual C# テスト プロジェクトのプロパティが表示されます。
+## <a name="retargeting-for-ccli-unit-test-projects"></a>C++/CLI 単体テスト プロジェクト用の再ターゲット
 
-5.  **[アプリケーション]** タブの **[ターゲット フレームワーク]** を選択します。 次の図に示すように、ドロップダウン リストから **[.NET Framework 3.5]** またはそれ以降のバージョンを選択します。 クライアント バージョンは指定しません。
+1. 新しい C++ **単体テスト プロジェクト** プロジェクトを作成します。
 
-     ![[ターゲット フレームワーク] ドロップダウン リスト](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   > [!WARNING]
+   > Visual C++ に対して以前のバージョンの .NET Framework の C++/CLI 単体テストを作成するには、対応するバージョンの Visual Studio を使用する必要があります。
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>C++/CLI 単体テスト プロジェクト用に特定のバージョンの .NET Framework を再ターゲットする
+2. **ソリューション エクスプローラー**で、新しい C++ テスト プロジェクトから **[プロジェクトのアンロード]** を選択します。
 
-1.  新しい C++ 単体テスト プロジェクトを作成します。 **[ファイル]** メニューで、**[新規作成]** を選択し、**[プロジェクト]** をクリックします。
+3. **ソリューション エクスプローラー**で、アンロードされた C++ テスト プロジェクトを選択して、**[\<プロジェクト名>.vcxproj の編集]** を選択します。
 
-     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+   エディターで *.vcxproj* ファイルが開きます。
 
-    > [!WARNING]
-    > Visual C++ に対して以前のバージョンの .NET Framework の C++/CLI 単体テストを作成するには、対応するバージョンの Visual Studio を使用する必要があります。 たとえば、.NET Framework 3.5 を対象とする場合、Visual Studio 2008 と Visual Studio 2008 Service Pack 1 をインストールする必要があります。
-
-2.  **[インストールされているテンプレート]** の **[Visual C ++]** を展開します。 **[テスト]**、**[テスト プロジェクト]** テンプレートの順に選択します。
-
-3.  **[名前]** テキスト ボックスに Visual C++ テスト プロジェクトの名前を入力し、**[OK]** をクリックします。
-
-4.  **ソリューション エクスプローラー**で、新しい Visual C++ テスト プロジェクトから **[プロジェクトのアンロード]** を選択します。
-
-5.  **ソリューション エクスプローラー**で、アンロードされた Visual C++ テスト プロジェクトを選択し、**[\<プロジェクト名>.vcxproj の編集]** を選択します。
-
-     エディターで *.vcxproj* ファイルが開きます。
-
-6.  `"Globals"` というラベルが付いた `PropertyGroup` で `TargetFrameworkVersion` をバージョン 3.5 以降のバージョンに設定します。 クライアント バージョンは指定しません。
+4. `"Globals"` というラベルが付いた `PropertyGroup` で `TargetFrameworkVersion` をバージョン 3.5 以降のバージョンに設定します。 クライアント バージョンは指定しません。
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -118,9 +100,9 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
       </PropertyGroup>
     ```
 
-7.  *.vcxproj* ファイルを保存して閉じます。
+5. *.vcxproj* ファイルを保存して閉じます。
 
-8.  **ソリューション エクスプローラー**で、新しい Visual C++ テスト プロジェクトのショートカット メニューから **[プロジェクトの再読み込み]** を選択します。
+6. **ソリューション エクスプローラー**で、新しい C++ テスト プロジェクトの右クリック メニューから **[プロジェクトの再読み込み]** を選択します。
 
 ## <a name="see-also"></a>関連項目
 

@@ -4,7 +4,6 @@ ms.date: 02/06/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
-- vs.newproject
 - VS.ToolsOptionsPages.Projects.General
 - SolutionItemsProject
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867888"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268568"
 ---
 # <a name="create-solutions-and-projects"></a>ソリューションとプロジェクトを作成する
 
@@ -39,35 +38,9 @@ ms.locfileid: "57867888"
 
 ただし、Visual Studio でアプリを開発するにあたり、ソリューションとプロジェクトは必須ではありません。 また、Git からコピーしたか、他の場所からダウンロードしたコードを開くことができます。 詳細については、「[プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)」を参照してください。
 
-> [!NOTE]
-> このトピックの説明は、Visual Studio Community エディション に基づいています。 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、使用中の設定または Visual Studio のエディションによっては、この中の説明と異なる場合があります。 設定を、たとえば、**[全般]** や **[Visual C++]** に変更するには、**[ツール]**、**[設定のインポートとエクスポート]**、**[すべての設定をリセット]** の順に選択します。
+## <a name="create-a-project-from-a-project-template"></a>プロジェクト テンプレートからプロジェクトを作成する
 
-## <a name="to-create-a-project-from-a-project-template"></a>プロジェクト テンプレートからプロジェクトを作成するには
-
-1. Visual Studio では、いくつかの方法で新しいプロジェクトを作成できます。 **[スタート]** ページの **[プロジェクト テンプレートの検索]** ボックスにプロジェクト テンプレートの名前を入力するか、**[新しいプロジェクトの作成]** リンクを選択して **[新しいプロジェクト]** ダイアログ ボックスを開きます。 メニュー バーで **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択するか、ツール バーの **[新しいプロジェクト]** ボタンを選択するという方法もあります。
-
-   ![スタート ページ](./media/vside-newproject1.png)
-
-   **[新しいプロジェクト]** ダイアログ ボックスの **[テンプレート]** カテゴリの下に、利用できるプロジェクト テンプレートが一覧表示されます。 テンプレートは、Visual C#、JavaScript、Azure Data Lake など、プログラミング言語やプロジェクトの種類に基づいて整理されています。
-
-   ![[新しいプロジェクト] ダイアログ ボックス](./media/vside-newproject-templates-list.png)
-
-   > [!NOTE]
-   > 利用できる言語またはプロジェクト テンプレートの一覧は、実行している Visual Studio のバージョンとインストールされているワークロードに基づいて表示されます。 追加ワークロードのインストール方法については、「[ワークロードやコンポーネントを追加または削除することで Visual Studio を変更する](../install/modify-visual-studio.md)」を参照してください。
-
-2. 言語名の隣にある三角形を選択し、使用するプログラミング言語のテンプレート一覧を表示し、プロジェクトの種類を選択します。
-
-   Visual C# .NET Core プロジェクトで利用できるプロジェクト テンプレートの例を次に示します。
-
-   ![プロジェクト テンプレート](./media/new-project-dialog-net-core.png)
-
-3. **[名前]** ボックスに新しいプロジェクトの名前を入力します。 プロジェクトはシステムの既定の場所に保存するか、**[参照]** ボタンで別の場所を探すことができます。
-
-   必要であれば、ソリューション名を変更したり、**[ソース管理に追加]** を選択して新しいプロジェクトを Git リポジトリに追加したりできます。
-
-4. **[OK]** ボタンを選択すると、ソリューションとプロジェクトが作成されます。
-
-5. ソリューションにプロジェクトを追加する場合、**ソリューション エクスプローラー**でソリューション ノードを選択し、次にメニュー バーで、**[プロジェクト]**、**[新しい項目の追加]** の順に選択します。
+テンプレートから新しいプロジェクトを作成する方法の詳細については、「[Create a new project in Visual Studio](create-new-project.md)」(Visual Studio で新しいプロジェクトを作成する) に関するページを参照してください。
 
 ## <a name="create-a-project-from-existing-code-files"></a>既存のコード ファイルからプロジェクトを作成する
 
@@ -88,12 +61,26 @@ ms.locfileid: "57867888"
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>.NET Framework の特定のバージョンを対象とする .NET プロジェクトの作成
 
-プロジェクトを作成するとき、そのプロジェクトで使用する .NET Framework のバージョンを指定できます。 .NET Framework バージョンを指定するには、**[新しいプロジェクト]** ダイアログ ボックスの **[Framework]** ドロップダウン メニューを選択します。
+プロジェクトを作成するとき、そのプロジェクトで使用する .NET Framework のバージョンを指定できます。
+
+::: moniker range="vs-2017"
+
+.NET Framework バージョンを指定するには、**[新しいプロジェクト]** ダイアログ ボックスの **[Framework]** ドロップダウン メニューを選択します。
 
 ![[新しいプロジェクト] ダイアログ ボックスの [Framework] ドロップダウン リスト](./media/vside-newproject-framework.png)
 
 > [!NOTE]
 > 4 以前のバージョンの .NET Framework にアクセスするには、.NET Framework 3.5 がシステムにインストールされている必要があります。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+.NET Framework バージョンを指定するには、**[新しいプロジェクトの作成]** ページの **[Framework]** ドロップダウン メニューを選択します。
+
+![新しいプロジェクトの構成でのフレームワーク セレクター](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
 
 ## <a name="create-empty-solutions"></a>空のソリューションの作成
 
@@ -101,13 +88,27 @@ ms.locfileid: "57867888"
 
 ### <a name="to-create-an-empty-solution"></a>空のソリューションを作成するには
 
-1. メニューで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** を選択します。
+1. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-1. 左側のウィンドウ (**[テンプレート]**) で、**[その他のプロジェクトの種類]** > **[Visual Studio ソリューション]** (展開された一覧内) の順に選択します。
+::: moniker range="vs-2017"
 
-1. 中央のペインで、**[空のソリューション]** を選択します。
+2. 左側のウィンドウ (**[テンプレート]**) で、**[その他のプロジェクトの種類]** > 展開された一覧の **[Visual Studio ソリューション]** の順に選択します。
 
-1. ソリューションの **[名前]** と **[場所]** を入力し、**[OK]** を選択します。
+3. 中央のペインで、**[空のソリューション]** を選択します。
+
+4. 使用するソリューションの **[名前]** と **[場所]** の値を入力して、**[OK]** を選択します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. **[新しいプロジェクトの作成]** ページで、検索ボックスに「**ソリューション**」と入力します。
+
+3. **[空のソリューション]** テンプレートを選択して、**[次へ]** をクリックします。
+
+4. 使用するソリューションの **[名前]** と **[場所]** の値を入力して、**[作成]** を選択します。
+
+::: moniker-end
 
 空のソリューションの作成後、**[プロジェクト]** メニューの **[新しい項目の追加]** または **[既存項目の追加]** を選んで、新規または既存のプロジェクトや項目を追加できます。
 
@@ -132,13 +133,13 @@ ms.locfileid: "57867888"
 > [!NOTE]
 > *.suo* ファイルは隠しファイルであり、エクスプローラーの既定の設定では表示されません。 隠しファイルを表示するには、エクスプローラーの **[表示]** メニューで **[非表示項目]** チェックボックスをオンにします。
 
-### <a name="to-permanently-delete-a-solution"></a>ソリューションを完全に削除するには
+### <a name="permanently-delete-a-solution"></a>ソリューションを完全に削除する
 
 1. **ソリューション エクスプローラー**で、削除するソリューションの右クリック (コンテキスト) メニューから **[エクスプローラーでフォルダーを開く]** を選択します。
 
 1. ファイル エクスプローラーで、1 つ上の階層に移動します。
 
-1. ソリューションが含まれるフォルダーを選択し、**Del キー**を押します。
+1. ソリューションが含まれるフォルダーを選択して、**Del** キーを押します。
 
 ## <a name="see-also"></a>関連項目
 
