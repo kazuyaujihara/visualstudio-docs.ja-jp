@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 48e00519093a73c7e58fbde6b8adf771c130ddba
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647142"
 documentType: LandingData
 title: Visual Studio for Mac のドキュメント
 metadata:
@@ -16,106 +10,101 @@ metadata:
   ms.prod: visual-studio-mac
   ms.technology: vs-ide-general
 sections:
-- title: Visual Studio for Mac の概要
-  items:
-  - type: paragraph
-    text: Visual Studio for Mac 統合開発環境 (IDE) をインストールして学習します。
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+  - title: Visual Studio for Mac の概要
     items:
-    - href: installation.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: Visual Studio for Mac をインストールする
-    - href: ide-tour.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
-      title: Visual Studio for Mac を探索する
-    - href: installation.md?view=vsmac-2019
-      html: <p></p>
-      image:
-        src: media/index-2019-preview.png
-      title: 2019 プレビューをお試しください
-- title: ビルドできるアプリ
-  items:
-  - type: paragraph
-    text: Visual Studio for Mac では、ASP.NET Core を使用した Web サイトや .NET Core を使用したアプリ、Unity を使用したゲーム、Xamarin を使用した Android と iOS 向けモバイル アプリをビルドすることができます。 Azure は、すべてのアプリに組み込むことができます。
-  - type: list
-    style: icon48
+      - type: paragraph
+        text: Visual Studio for Mac 統合開発環境 (IDE) をインストールして学習します。
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: installation.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: Visual Studio for Mac をインストールする
+          - href: ide-tour.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vs-mac.svg'
+            title: Visual Studio for Mac を探索する
+  - title: ビルドできるアプリ
     items:
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
-      text: ASP.NET Core
-      href: asp-net-core.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_azure.svg
-      text: Azure
-      href: azure-workload.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_unity.svg
-      text: Unity
-      href: unity-tools.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_xamarin.svg
-      text: Xamarin
-      href: xamarin.md
-- title: 使用できる言語
-  items:
-  - type: paragraph
-    text: Visual Studio for Mac では C#、F#、Razor、HTML5、CSS、JavaScript、TypeScript、XAML、および XML で記述することができます。
-  - type: list
-    style: icon48
+      - type: paragraph
+        text: Visual Studio for Mac では、ASP.NET Core を使用した Web サイトや .NET Core を使用したアプリ、Unity を使用したゲーム、Xamarin を使用した Android と iOS 向けモバイル アプリをビルドすることができます。 Azure は、すべてのアプリに組み込むことができます。
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
+            text: ASP.NET Core
+            href: asp-net-core.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
+            text: Azure
+            href: azure-workload.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_unity.svg'
+            text: Unity
+            href: unity-tools.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_xamarin.svg'
+            text: Xamarin
+            href: xamarin.md
+  - title: 使用できる言語
     items:
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_Csharp.svg
-      text: C#
-      href: /dotnet/csharp/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_Fsharp.svg
-      text: F#
-      href: /dotnet/fsharp/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_js.svg
-      text: JavaScript
-      href: javascript.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_TS.svg
-      text: TypeScript
-      href: javascript.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_html5.svg
-      text: HTML/Razor
-      href: razor.md
-- title: Visual Studio for Mac でのコードの記述
-  items:
-  - type: paragraph
-    text: Visual Studio を使用したコードの記述、コンパイル、デバッグ、格納について説明します。
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: paragraph
+        text: 'Visual Studio for Mac では C#、F#、Razor、HTML5、CSS、JavaScript、TypeScript、XAML、および XML で記述することができます。'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Csharp.svg'
+            text: 'C#'
+            href: /dotnet/csharp/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Fsharp.svg'
+            text: 'F#'
+            href: /dotnet/fsharp/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_js.svg'
+            text: JavaScript
+            href: javascript.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_TS.svg'
+            text: TypeScript
+            href: javascript.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_html5.svg'
+            text: HTML/Razor
+            href: razor.md
+  - title: Visual Studio for Mac でのコードの記述
     items:
-    - href: source-editor.md
-      html: <p>お好みの言語で Intellisense、リファクタリング、構文の強調表示ができます。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-edit.svg
-      title: コードの記述
-    - href: compiling-and-building.md
-      html: <p>コンパイラを構成してアプリをビルドします。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: コンパイルとビルド
-    - href: debugging.md
-      html: <p>デバッガーでアプリを実行して問題を調査します。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_debug.svg
-      title: デバッグ
-    - href: version-control.md
-      html: <p>Azure DevOps、Git、Subversion のソース リポジトリにアクセスできます。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_pull-request.svg
-      title: バージョン コントロール
+      - type: paragraph
+        text: Visual Studio を使用したコードの記述、コンパイル、デバッグ、格納について説明します。
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: source-editor.md
+            html: <p>お好みの言語で Intellisense、リファクタリング、構文の強調表示ができます。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+            title: コードの記述
+          - href: compiling-and-building.md
+            html: <p>コンパイラを構成してアプリをビルドします。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: コンパイルとビルド
+          - href: debugging.md
+            html: <p>デバッガーでアプリを実行して問題を調査します。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
+            title: デバッグ
+          - href: version-control.md
+            html: <p>Azure DevOps、Git、Subversion のソース リポジトリにアクセスできます。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
+            title: バージョン コントロール
