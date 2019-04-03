@@ -13,24 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cd7ea5df54d1ef740feddaeb5fbedbc9b9a42fd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943117"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647246"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>データベースを作成し、Visual Studio でのテーブルの追加
 
 Visual Studio を使用して作成し、SQL Server Express LocalDB にローカル データベース ファイルを更新することができます。 TRANSACT-SQL ステートメントを実行することによって、データベースを作成することも、 **SQL Server オブジェクト エクスプ ローラー** Visual Studio でツール ウィンドウです。 このトピックで作成します、 *.mdf*ファイルを開き、テーブル デザイナーを使用してテーブルおよびキーを追加します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
-このチュートリアルを完了する、省略可能な必要**データ ストレージと処理**ワークロードを Visual Studio でインストールします。 これをインストールするには、開く**Visual Studio インストーラー**を選択し、**ワークロード**タブ。**Web & クラウド**、選択**データ ストレージと処理**します。 選択、**変更**ワークロードを Visual Studio に追加するボタンをクリックします。
+このチュートリアルを完了する、省略可能な必要**データ ストレージと処理**ワークロードを Visual Studio でインストールします。 これをインストールするには、開く**Visual Studio インストーラー**選択**詳細** > **変更**を変更する Visual Studio のバージョンの横にある (がある場合以上1 つインストールされているバージョン)。 **ワークロード** タブの  **Web & クラウド**、選択**データ ストレージと処理**、 をクリックし、**変更**にワークロードを追加するにはVisual Studio。
 
 ## <a name="create-a-project-and-a-local-database-file"></a>プロジェクトとローカル データベース ファイルを作成する
 
-1. **SampleDatabaseWalkthrough** という名前の Windows フォーム プロジェクトを作成します。
+1. 新規作成**Windows フォーム アプリ**プロジェクトし、名前を付けます**SampleDatabaseWalkthrough**します。
 
 2. メニュー バーで選択**プロジェクト** > **新しい項目の追加**します。
 
@@ -38,7 +38,7 @@ Visual Studio を使用して作成し、SQL Server Express LocalDB にローカ
 
      ![[アイテム テンプレート] ダイアログ ボックス](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. データベースの名前**SampleDatabase**を選び、**追加**ボタンをクリックします。
+4. データベースの名前**SampleDatabase**、 をクリックし、**追加**します。
 
 ### <a name="add-a-data-source"></a>データ ソースを追加する
 
@@ -62,9 +62,9 @@ Visual Studio を使用して作成し、SQL Server Express LocalDB にローカ
 
 接続文字列を表示することができます、 *SampleDatabase.mdf*データ接続のプロパティ ウィンドウを開いてファイル。
 
-- Visual Studio で、次のように選択します。**ビュー** > **SQL Server オブジェクト エクスプ ローラー**そのウィンドウが開いていない場合。 展開して [プロパティ] ウィンドウを開き、**データ接続**ノードのショートカット メニューを開き、 *SampleDatabase.mdf*を選択し、**プロパティ**します。
+- 選択**ビュー** > **SQL Server オブジェクト エクスプ ローラー**を開く、 **SQL Server オブジェクト エクスプ ローラー**ウィンドウ。 展開 **(localdb) \MSSQLLocalDB** > **データベース**を右クリックし、 *SampleDatabase.mdf*選択**プロパティ**.
 
-- または、選択**ビュー** > **サーバー エクスプ ローラー**、そのウィンドウが開いていない場合。 展開して [プロパティ] ウィンドウを開き、**データ接続**ノード。 ショートカット メニューを開き*SampleDatabase.mdf*、し、**プロパティ**します。
+- または、選択**ビュー** > **サーバー エクスプ ローラー**、そのウィンドウが開いていない場合。 展開して [プロパティ] ウィンドウを開き、**データ接続**ノードのショートカット メニューを開き、 *SampleDatabase.mdf*を選択し、**プロパティ**します。
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>テーブル デザイナーを使用してテーブルおよびキーを作成します。
 
@@ -72,7 +72,7 @@ Visual Studio を使用して作成し、SQL Server Express LocalDB にローカ
 
 ### <a name="create-the-customers-table"></a>Customers テーブルを作成します。
 
-1. **サーバー エクスプ ローラー**または**SQL Server オブジェクト エクスプ ローラー**、展開、**データ接続**ノードの順に展開し、 **SampleDatabase.mdf**ノード。
+1. **サーバー エクスプ ローラー**、展開、**データ接続**ノードの順に展開し、 **SampleDatabase.mdf**ノード。
 
 2. ショートカット メニューを開き**テーブル**、し、**新しいテーブルの追加**します。
 
@@ -80,7 +80,7 @@ Visual Studio を使用して作成し、SQL Server Express LocalDB にローカ
 
 3. グリッドで、次のエントリのそれぞれに行を追加します。
 
-    |列名|データ型|Null を許容|
+    |列名|データの種類|Null を許容|
     |-----------------|---------------|-----------------|
     |`CustomerID`|`nchar(5)`|false (オフ)|
     |`CompanyName`|`nvarchar(50)`|false (オフ)|
@@ -101,9 +101,9 @@ Visual Studio を使用して作成し、SQL Server Express LocalDB にローカ
 
     ![テーブル デザイナー](../data-tools/media/raddata-table-designer.png)
 
-7. 左上隅にある、**テーブル デザイナー**を選択、 **Update**ボタンをクリックします。
+7. 左上隅にある**テーブル デザイナー**、 **Update**します。
 
-8. **データベース更新のプレビュー**ダイアログ ボックスで、 **Update Database**ボタンをクリックします。
+8. **データベース更新のプレビュー**ダイアログ ボックスで、 **Update Database**します。
 
     変更はローカル データベース ファイルに保存されます。
 
@@ -111,7 +111,7 @@ Visual Studio を使用して作成し、SQL Server Express LocalDB にローカ
 
 1. 別のテーブルを追加し、次の表の各エントリの行を追加します。
 
-    |列名|データ型|Null を許容|
+    |列名|データの種類|Null を許容|
     |-----------------|---------------|-----------------|
     |`OrderID`|`int`|false (オフ)|
     |`CustomerID`|`nchar(5)`|false (オフ)|

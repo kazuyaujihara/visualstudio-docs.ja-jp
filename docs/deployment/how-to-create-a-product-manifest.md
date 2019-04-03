@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622bf6f34b2644c028886184cf42e8f994a43f71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 48bed4a357809a672b1fc80063ca6743670cbb42
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596921"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568102"
 ---
 # <a name="how-to-create-a-product-manifest"></a>方法: 製品マニフェストを作成する
 アプリケーションの必須コンポーネントを展開するには、ブートス トラップ パッケージを作成できます。 ブートス トラップ パッケージには、ロケールごとに、パッケージ マニフェストが 1 つの製品マニフェスト ファイルが含まれています。 パッケージ マニフェストには、パッケージのローカライズに固有の要素が含まれています。 これには、文字列、使用許諾契約書、および言語パックが含まれます。
 
- マニフェストの製品の詳細については、次を参照してください。[方法: パッケージ マニフェストを作成する](../deployment/how-to-create-a-package-manifest.md)します。
+ パッケージ マニフェストの詳細については、次を参照してください。[方法: パッケージ マニフェストを作成する](../deployment/how-to-create-a-package-manifest.md)します。
 
 ## <a name="create-the-product-manifest"></a>製品マニフェストを作成します。
 

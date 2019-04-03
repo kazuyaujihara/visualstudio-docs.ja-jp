@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293df62cc82295a9d2eea577df4e3f46dd14cef6
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227645"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647350"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Access データベース内のデータへの接続 (Windows フォーム)
 
 Access データベースに接続することができます (いずれか、 *.mdf*ファイルまたは *.accdb*ファイル) Visual Studio を使用します。 接続を定義すると、**[データ ソース ウィンドウ]** にデータが表示されます。 ここから、テーブルまたはビューをフォームにドラッグできます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 これらの手順を行うには、Windows フォーム アプリケーション プロジェクト、および Microsoft Access データベース ファイル (*.accdb* ファイル) または Access 2000-2003 データベース (*.mdb* ファイル) が必要です。 ファイルの種類に対応する手順に従ってください。
 
@@ -95,7 +95,7 @@ Access データベースに接続することができます (いずれか、 *
 
 8. **データベース ファイル名**の名前とパスを指定、 *.mdb*ファイルへの接続を選択する**OK**します。
 
-   ![Access データベース ファイルへの接続を追加](../data-tools/media/dataaddconnectionaccessmdb.png)
+   ![Access データベース ファイルへの接続を追加](../data-tools/media/add-connection-access-db.png)
 
 9. 選択**次**で、**データ接続の選択**ページ。
 

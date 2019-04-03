@@ -63,7 +63,7 @@ Visual Studio には、パフォーマンス測定とプロファイルのため
 
 ![診断イベント検索](../profiling/media/diagnosticseventsearch.png "診断イベント検索")
 
-詳細については、「 [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)」を参照してください。
+詳細については、次を参照してください。[検索とフィルター処理、診断ツール ウィンドウの [イベント] タブ](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)します。
 
 ## <a name="collect-profiling-data-without-debugging"></a>デバッグなしでプロファイリング データを収集する
 

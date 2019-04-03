@@ -1,6 +1,6 @@
 ---
 title: キーボード ショートカット (HTML および JavaScript) |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,18 +13,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe25da9dd687eba011bd8e3cc2701cf154e0358
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f85eee14ef026787c9b929a64e14b462397338d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697269"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789809"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>ショートカット キー (HTML および JavaScript)
 
+::: moniker range=">=vs-2019"
+ Visual Studio での Node.js アプリをデバッグするためのキーボード ショートカットを Visual Studio で、 **Node.js 開発**ワークロードをインストールします。
+::: moniker-end
+::: moniker range="vs-2017"
  HTML と JavaScript を使用して UWP アプリのデバッグを Visual Studio のキーボード ショートカット。
+::: moniker-end
+
 
 ## <a name="general-shortcuts"></a>一般ショートカット
+
  これらのショートカットは、HTML および JavaScript を使用して UWP アプリのすべてのツールで使用できます。
 
 |アクション|ショートカット|
@@ -35,6 +42,7 @@ ms.locfileid: "56697269"
 |パフォーマンスと診断ハブを開く|Alt + F2|
 
 ## <a name="javascript-console-shortcuts"></a>JavaScript コンソールのショートカット
+
  JavaScript コンソール ウィンドウでこれらのショートカットを使用します。
 
 |アクション|ショートカット|
@@ -44,6 +52,7 @@ ms.locfileid: "56697269"
 |シングル ライン モードおよびマルチ ライン モードの切り替え|Ctrl+Alt+M|
 
 ## <a name="dom-explorer-shortcuts"></a>DOM Explorer ショートカット
+
  これらのショートカットは DOM Explorer で使用します。
 
 |アクション|ショートカット|
@@ -56,5 +65,6 @@ ms.locfileid: "56697269"
 |選択した CSS 値を 1 つ減らす|↓ キー|
 
 ## <a name="see-also"></a>関連項目
-- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)
-- [クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md)
+- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

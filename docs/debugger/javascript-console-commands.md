@@ -1,7 +1,7 @@
 ---
 title: JavaScript コンソール コマンド |Microsoft Docs
-ms.custom: seodec18
-ms.date: 07/17/2017
+ms.custom: ''
+ms.date: 03/28/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -13,21 +13,28 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701954"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790772"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio での JavaScript コンソール コマンド
 
-Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 そのウィンドウを使用する方法を示す例については、次を参照してください。[クイック スタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)します。 このトピックの情報は、UWP アプリと Apache Cordova の Visual Studio Tools を使用して作成されたアプリに適用されます。 Cordova アプリでサポートされているコンソール コマンドについては、「 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)」を参照してください。 Internet Explorer F12 ツールのコンソールの使用については、 [このトピック](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))を参照してください。
+::: moniker range=">=vs-2019"
+Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 このトピックの情報を Visual Studio を使用して作成された Node.js アプリに適用されます、 **Node.js 開発**ワークロードをインストールします。
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 このウィンドウを使用する方法を示す例については、次を参照してください。[クイック スタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)します。 このトピックの情報は、Node.js アプリを UWP に適用されますアプリ、および Apache Cordova の Visual Studio Tools を使用して作成されたアプリ。 Cordova アプリでサポートされているコンソール コマンドについては、「 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)」を参照してください。
+::: moniker-end
 
 JavaScript コンソール ウィンドウが閉じられた場合開けることを選択して、Visual Studio でデバッグ中**デバッグ** > **Windows** > **JavaScriptコンソール**します。
 
 > [!NOTE]
 > デバッグ セッション中にウィンドウが使用できない場合、プロジェクトのデバッグのプロパティで、デバッガーの種類が **Script** であることを確認してください。
+
+Microsoft Edge 開発者ツールで、コンソールの使用方法の詳細については、次を参照してください。[このトピックの「](/microsoft-edge/devtools-guide)します。
 
 ## <a name="console-object-commands"></a>コンソール オブジェクト コマンド
 次の表に、JavaScript コンソール ウィンドウで使用する、またはコードからコンソールにメッセージを送信するために使用する、 `console` オブジェクトのコマンドの構文を示します。 このオブジェクトには多数の形式があるので、必要に応じて情報メッセージとエラー メッセージを区別できます。
@@ -123,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>関連項目
-- [クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)
-- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)
+- [クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
