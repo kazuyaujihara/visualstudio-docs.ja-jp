@@ -35,16 +35,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 28a35f37e298533fe3181f9325241bbef116f2d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699471"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790512"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>UWP アプリのデバッグ セッションを開始する
 
-この記事では、ユニバーサル Windows プラットフォーム (UWP) アプリの Visual Studio デバッグ セッションを開始する方法について説明します。 UWP アプリは、XAML、C++、XAML で記述することができますとC#/Visual Basic、または HTML と JavaScript です。 UWP アプリのデバッグを開始するには、デバッグ セッションを構成し、アプリの起動方法を選択します。
+この記事では、ユニバーサル Windows プラットフォーム (UWP) アプリの Visual Studio デバッグ セッションを開始する方法について説明します。 UWP アプリは、XAML、C++、XAML で記述することができますとC#/Visual Basic します。 UWP アプリのデバッグを開始するには、デバッグ セッションを構成し、アプリの起動方法を選択します。
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Visual Studio 2019 以降、HTML および JavaScript 用の UWP アプリはサポートされていません。
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017 では、コマンドとこの記事に示すオプションのほとんどにも適用されます UWP アプリの HTML および JavaScript。 コマンドは、さまざまな場所の間で管理されているし、C++ アプリで JavaScript アプリが通常は C++ の UWP アプリ用のコマンドと同じです。
+::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Visual Studio のツールバーからデバッグを開始します。
 
@@ -90,7 +98,7 @@ Visual Studio のツールバーでデバッグ ターゲットを設定でき�
 
      ![C#Visual Basic プロジェクト デバッグ プロパティ ページ](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - C++ と JavaScript アプリでは、次のように選択します。**構成プロパティ** > **デバッグ**します。
+   - C++ アプリの場合は、次のように選択します。**構成プロパティ** > **デバッグ**します。
 
      ![C++ UWP アプリのデバッグ プロパティ ページ](../debugger/media/dbg_cpp_debugpropertypage.png)
 
@@ -98,13 +106,13 @@ Visual Studio のツールバーでデバッグ ターゲットを設定でき�
 
 C#と既定では、マネージ コードを Visual Basic アプリでは、Visual Studio のデバッグ。 その他のまたは追加のコードをデバッグすることができます。 設定することも**デバッガーの種類**プロジェクトの一部である任意のバック グラウンド タスクの値。
 
-C++ アプリでの Visual Studio は既定では、ネイティブ コードをデバッグします。 JavaScript アプリの場合は、Visual Studio は既定でスクリプトをデバッグします。 特定の種類のコードの代わりに、またはだけでなく、ネイティブ コードをデバッグすることができます。
+C++ アプリでの Visual Studio は既定では、ネイティブ コードをデバッグします。 特定の種類のコードの代わりに、またはだけでなく、ネイティブ コードをデバッグすることができます。
 
 **デバッグするコードの種類を指定します。**
 
 - C# Visual Basic アプリの場合を選択してから次のデバッガーのいずれかと、**アプリケーションの種類**と**バック グラウンド処理の種類**ドロップダウン リストから **デバッガーの種類**で**デバッグ**プロパティ ページ。
 
-- C++/cli、JavaScript アプリから次のデバッガーのいずれかを選択、**デバッガーの種類**ボックスの一覧、**デバッグ**プロパティ ページ。
+- C++ アプリから次のデバッガーのいずれかを選択、**デバッガーの種類**ボックスの一覧、**デバッグ**プロパティ ページ。
 
 |||
 |-|-|
@@ -124,10 +132,10 @@ C++ アプリでの Visual Studio は既定では、ネイティブ コードを
 
 -   C# Visual Basic アプリの場合は、選択を解除し、**ローカル ネットワーク ループバックの許可**下のチェック ボックス**開始オプション**上、**デバッグ**プロパティ ページ。
 
--   Visual C と JavaScript アプリでは、次のように選択します。**いいえ**から、**ローカル ネットワーク Loopback のを許可する**ボックスの一覧、**デバッグ**プロパティ ページ。
+-   Visual C アプリの場合は、次のように選択します。**いいえ**から、**ローカル ネットワーク Loopback のを許可する**ボックスの一覧、**デバッグ**プロパティ ページ。
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> デバッグの開始時 (省略可能) アプリを再インストールします。
- インストールの問題を診断する、C#または Visual Basic アプリで、**アンインストールし、パッケージを再インストール**上、**デバッグ**プロパティ ページ。 このオプションは、デバッグを開始するときに、元のインストールを再作成されます。 このオプションは C++ および JavaScript のプロジェクトで使用できます。
+ インストールの問題を診断する、C#または Visual Basic アプリで、**アンインストールし、パッケージを再インストール**上、**デバッグ**プロパティ ページ。 このオプションは、デバッグを開始するときに、元のインストールを再作成されます。 このオプションは、C++ プロジェクトで使用できます。
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> リモート デバッグ用の認証オプションを設定します。
 
@@ -139,7 +147,7 @@ C++ アプリでの Visual Studio は既定では、ネイティブ コードを
 
 - C#と Visual Basic アプリの場合は、上、**デバッグ**プロパティ ページで、**リモート マシン**として、**ターゲット デバイス**します。 次に、選択**None**または**ユニバーサル (暗号化されていないプロトコル)** の**認証モード**します。
 
-- C++ と JavaScript アプリでは、次のように選択します。**リモート マシン****起動するデバッガー**上、**デバッグ**プロパティ ページ。 次に、選択**認証なし**または**ユニバーサル (暗号化されていないプロトコル)** の**認証の種類**します。
+- C++ アプリの場合は、次のように選択します。**リモート マシン****起動するデバッガー**上、**デバッグ**プロパティ ページ。 次に、選択**認証なし**または**ユニバーサル (暗号化されていないプロトコル)** の**認証の種類**します。
 
 > [!CAUTION]
 > リモート デバッガーを実行すると、ネットワークのセキュリティがない**None**または**ユニバーサル (暗号化されていないプロトコル)** モード。 悪意のあるコードや悪意のあるトラフィックのリスクとしている信頼されたネットワーク上でのみこれらのモードをいないことを確認を選択します。
@@ -156,7 +164,7 @@ C++ アプリでの Visual Studio は既定では、ネイティブ コードを
 
 - C#と Visual Basic アプリで、**起動しないが、開始時に、コードをデバッグ****開始オプション**上、**デバッグ**プロパティ ページ。
 
-- C++ と JavaScript アプリでは、次のように選択します。**いいえ**から、**アプリケーションの起動**ボックスの一覧、**デバッグ**プロパティ ページ。
+- C++ アプリの場合は、次のように選択します。**いいえ**から、**アプリケーションの起動**ボックスの一覧、**デバッグ**プロパティ ページ。
 
 バック グラウンド タスクのデバッグの詳細については、次を参照してください。[トリガー中断、再開、および UWP アプリ用のイベントをバック グラウンド](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)します。
 
@@ -202,10 +210,12 @@ C++ アプリでの Visual Studio は既定では、ネイティブ コードを
 
  Visual Studio によって、デバッガーがプロセスにアタッチされます。 実行は、ブレークポイントに達するか、実行が手動で中断されるか、ハンドルされない例外が発生するか、アプリが終了するまで続行されます。
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > JavaScript アプリは、*wwahost.exe* プロセスのインスタンスで実行されます。 1 つ以上の JavaScript アプリが実行されているアプリの数値型プロセス id (PID) を確認する必要があります*wwahost.exe*をアタッチするプロセス。
 >
 > JavaScript アプリにアタッチする最も簡単な方法は、その他のすべての JavaScript アプリを閉じることです。 または、実行中の Pid を記録して*wwahost.exe*プロセス Windows タスク マネージャーでは、アプリを開始する前にします。 アプリを起動するときにその*wwahost.exe* PID が以前にメモしたものとは異なるものになります。
+::: moniker-end
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio でのアプリのデバッグ](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
