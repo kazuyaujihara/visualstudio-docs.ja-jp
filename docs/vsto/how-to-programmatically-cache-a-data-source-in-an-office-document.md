@@ -30,7 +30,7 @@ ms.locfileid: "54867326"
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- 使用すると、`StartCaching`で宣言するのには、データ キャッシュ、データ オブジェクトにデータ オブジェクトを追加するメソッドは必要はありません、<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>属性。 ただし、データ オブジェクトには、データ キャッシュに追加する特定の要件を満たす必要があります。 詳細については、次を参照してください。[データ キャッシュ](../vsto/caching-data.md)します。
+ 使用すると、`StartCaching`で宣言するのには、データ キャッシュ、データ オブジェクトにデータ オブジェクトを追加するメソッドは必要はありません、<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>属性。 ただし、データ オブジェクトには、データ キャッシュに追加する特定の要件を満たす必要があります。 詳細については、[データ キャッシュ](../vsto/caching-data.md)を参照してください。
 
 ## <a name="to-programmatically-cache-a-data-object"></a>データ オブジェクトをプログラムでキャッシュするには
 
