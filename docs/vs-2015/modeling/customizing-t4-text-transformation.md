@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: dc44c1de2e0a590b73916a8496a7fe5cae7cb07e
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49200240"
@@ -40,7 +40,7 @@ ms.locfileid: "49200240"
  [カスタム ホストを使用したテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)  
  テキスト テンプレートのコードを実行すると、ホストは外部のファイルとアプリケーションの状態へのアクセスを提供します。 テキスト変換を実行するホストなど[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ソリューション エクスプ ローラーにアクセスできるようにします。 エラーは、エラー メッセージ ウィンドウにも表示されます。 別のコンテキストでテキスト変換を実行する場合は、そのコンテキストで使用可能なサービスへのアクセスを提供する、独自のホストを定義できます。  
   
- 作成する場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]拡張機能で、独自のホストを記述する代わりに、既存のテキスト変換サービスの使用を検討します。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)します。  
+ 作成する場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]拡張機能で、独自のホストを記述する代わりに、既存のテキスト変換サービスの使用を検討します。 詳細については、[VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)を参照してください。  
   
 ## <a name="reference"></a>参照  
  [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)  

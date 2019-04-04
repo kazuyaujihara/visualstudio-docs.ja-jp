@@ -18,7 +18,7 @@ caps.latest.revision: 16
 manager: douge
 ms.openlocfilehash: 2e265a342ec32abea40ab9b352b5735079462a46
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49227982"
@@ -30,7 +30,7 @@ ms.locfileid: "49227982"
   
 -   使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パッケージ プロジェクト テンプレート  
   
-     詳細については、次を参照してください。[チュートリアル: メニュー コマンドを使った作成の Visual Studio パッケージ テンプレート](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)します。  
+     詳細については、[チュートリアル: メニュー コマンドを使った作成の Visual Studio パッケージ テンプレート](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)を参照してください。  
   
 -   なし、VSPackage をビルド、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パッケージ プロジェクト テンプレート  
   

@@ -18,7 +18,7 @@ ms.locfileid: "58415669"
 
 ユーザーは、他の図から、または Visual Studio の他の部分を図の項目をドラッグできるように、DSL にドラッグ アンド ドロップのイベントのハンドラーを追加できます。 ダブルクリックなどのイベントのハンドラーを追加することもできます。 ドラッグ アンド ドロップやダブルクリック ハンドラーと呼ばれる、*ジェスチャ ハンドラー*します。
 
-このトピックでは他の図で発生するドラッグ アンド ドロップ ジェスチャを説明します。 単一の図内の移動イベントとコピー イベントについては、`ElementOperations` のサブクラスを定義するという代替策を検討してください。 詳細については、次を参照してください。[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。 DSL 定義をカスタマイズすることもできます。
+このトピックでは他の図で発生するドラッグ アンド ドロップ ジェスチャを説明します。 単一の図内の移動イベントとコピー イベントについては、`ElementOperations` のサブクラスを定義するという代替策を検討してください。 詳細については、[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)を参照してください。 DSL 定義をカスタマイズすることもできます。
 
 ## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>ShapeElement メソッドのオーバーライドによるジェスチャ ハンドラーの定義
 
@@ -70,7 +70,7 @@ using System.Linq;
 
      詳細については、「[方法 :シェイプまたはデコレーターに対するクリック](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)します。
 
-`IsAcceptableDropItem(e)` を定義してドラッグした項目が受け入れられるかどうかを決定し、ProcessDragDropItem(e) を定義して項目がドロップされたときにモデルを更新します。 これらのメソッドは、最初にイベント引数から項目を抽出する必要があります。 その方法については、次を参照してください。[ドラッグした項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)します。
+`IsAcceptableDropItem(e)` を定義してドラッグした項目が受け入れられるかどうかを決定し、ProcessDragDropItem(e) を定義して項目がドロップされたときにモデルを更新します。 これらのメソッドは、最初にイベント引数から項目を抽出する必要があります。 その方法については、[ドラッグした項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)を参照してください。
 
 ## <a name="define-gesture-handlers-by-using-mef"></a>MEF の使用によるジェスチャ ハンドラーを定義します。
 
@@ -114,7 +114,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
      ドラッグしたオブジェクトの種類が複数ある場合などは、複数のジェスチャ ハンドラー コンポーネントを作成できます。
 
-3.  ターゲットの図形、コネクタ、または図クラスに対して部分クラス定義を追加し、`IsAcceptableDropItem()` メソッドおよび `ProcessDragDropItem()` メソッドを定義します。 これらのメソッドでは、最初にイベント引数からドラッグした項目を抽出する必要があります。 詳細については、次を参照してください。[ドラッグした項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)します。
+3.  ターゲットの図形、コネクタ、または図クラスに対して部分クラス定義を追加し、`IsAcceptableDropItem()` メソッドおよび `ProcessDragDropItem()` メソッドを定義します。 これらのメソッドでは、最初にイベント引数からドラッグした項目を抽出する必要があります。 詳細については、[ドラッグした項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)を参照してください。
 
 ## <a name="how-to-decode-the-dragged-item"></a>ドラッグした項目をデコードする方法
 
@@ -132,7 +132,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、次を参照してください。[ドラッグ アンド ドロップでモデル バス参照を送信する方法](#to-send-an-object-from-a-source-dsl)します。
+         ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、[ドラッグ アンド ドロップでモデル バス参照を送信する方法](#to-send-an-object-from-a-source-dsl)を参照してください。
 
 -   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -ユーザーが DSL または UML モデルから項目をドラッグする場合は、このプロパティを使用します。 1 つの要素グループ プロトタイプには 1 つ以上のオブジェクト、リンク、およびそれらのプロパティ値が含まれます。 これは貼り付け操作やツールボックスから要素を追加する際にも使用されます。 プロトタイプ内のオブジェクトとそれらの種類は GUID により識別されます。 たとえば、次のコードを使用して、ユーザーはクラス要素を UML 図または UML モデル エクスプローラーからドラッグできます。
 
@@ -160,7 +160,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ソース DSL が Visual Studio モデル バスによりアクセスできます。
 
-1. Visual Studio モデル バス拡張機能をまだインストールしていない場合はダウンロードしてインストールします。 詳細については、次を参照してください。 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)します。
+1. Visual Studio モデル バス拡張機能をまだインストールしていない場合はダウンロードしてインストールします。 詳細については、[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)を参照してください。
 
 2. DSL デザイナーでソース DSL の DSL 定義ファイルを開きます。 デザイン サーフェイスを右クリックし、をクリックし、 **Modelbus の有効化**します。 ダイアログ ボックスで、オプションの片方または両方を選択します。  **[OK]** をクリックします。 新しいプロジェクト "ModelBus" が DSL ソリューションに追加されます。
 

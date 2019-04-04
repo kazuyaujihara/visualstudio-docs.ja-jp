@@ -61,7 +61,7 @@ ms.locfileid: "56631498"
 ## <a name="next-steps"></a>次の手順
  Word 用ドキュメント レベルのカスタマイズを作成する方法についてを参照してください。[チュートリアル。最初の Word 用ドキュメント レベルのカスタマイズを作成する](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)します。 このチュートリアルでは、Visual Studio と Word のドキュメント レベルのカスタマイズのプログラミング モデルでの Office 開発ツールについて説明します。
 
- Word プロジェクトで、一般的なタスクを解説しているトピックの一覧は、次を参照してください。 [Office プログラミングで一般的なタスク](../vsto/common-tasks-in-office-programming.md)します。
+ Word プロジェクトで、一般的なタスクを解説しているトピックの一覧は、[Office プログラミングで一般的なタスク](../vsto/common-tasks-in-office-programming.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [方法: Visual Studio での Office プロジェクトを作成します。](../vsto/how-to-create-office-projects-in-visual-studio.md)

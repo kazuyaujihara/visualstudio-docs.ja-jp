@@ -236,7 +236,7 @@ manager: ghogen
 robots: noindex,nofollow
 ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49263024"
@@ -268,7 +268,7 @@ MSDN (Microsoft Developer Network) のパブリック フォーラムでは、�
  [ADO.NET データ プロバイダーのフォーラム](http://go.microsoft.com/fwlink/?LinkId=160182)  
  さまざまな .NET Framework データ プロバイダーに関する質問や一般的な議論のためのフォーラムです。  
   
- SQL Server への接続のトラブルシューティングを行う方法については、次を参照してください。 [、SQL Server データベース エンジンへの接続のトラブルシューティングを行う方法](http://go.microsoft.com/fwlink/?LinkID=246151)します。  
+ SQL Server への接続のトラブルシューティングを行う方法については、[、SQL Server データベース エンジンへの接続のトラブルシューティングを行う方法](http://go.microsoft.com/fwlink/?LinkID=246151)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 82caaa97e4b6471e3c585fb23c49af00b2ceef0b
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49241619"
@@ -29,7 +29,7 @@ ms.locfileid: "49241619"
 
   
 重要です]
->  データベース プロジェクトの以前のバージョンに含まれていた[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で提供されるようになりました[!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)]ツール。 詳細については、次を参照してください。 [SQL Server 開発者ツール](http://go.microsoft.com/fwlink/?LinkId=228126)します。  
+>  データベース プロジェクトの以前のバージョンに含まれていた[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で提供されるようになりました[!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)]ツール。 詳細については、[SQL Server 開発者ツール](http://go.microsoft.com/fwlink/?LinkId=228126)を参照してください。  
   
  データベース プロジェクトを使用するには、新しいデータベースを作成する新しいデータ層アプリケーション (Dac) と、既存のデータベースとデータ層アプリケーションを更新します。 データベース プロジェクトと DAC プロジェクトの両方を使用すると、マネージまたはネイティブ コードには、これらの手法を適用することと同じように、データベース開発作業をバージョン管理やプロジェクト管理手法を適用できます。 作成してデータベースおよびデータベース サーバーへの変更を管理、開発チームが役立つことができます、 *DAC プロジェクト*、*データベース プロジェクト*、または*サーバー プロジェクト*し、バージョン管理します。 チームのメンバーが、構築、しに変更をテストするファイルを確認できますし、*分離開発環境*、またはそれらをチームと共有する前に、サンド ボックス。 コードの品質を確保するために、チームが完了し、運用環境に変更をデプロイする前に、データベースの特定のリリースのすべての変更をステージング環境でテストできます。  
   

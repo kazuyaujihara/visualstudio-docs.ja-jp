@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 021a4d5e527ca7a22ecd984805b9fbec547531ee
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51801668"
@@ -57,12 +57,12 @@ ms.locfileid: "51801668"
 |タスク|説明|  
 |----------|-----------------|  
 |コマンドの処理|すべての VSPackage では、コマンドを処理できます。|  
-|エディターの構築|カスタム エディターを登録することができます。 詳細については、次を参照してください。[ドキュメント Windows およびエディター](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)します。|  
+|エディターの構築|カスタム エディターを登録することができます。 詳細については、[ドキュメント Windows およびエディター](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)を参照してください。|  
 |Windows を所有しています。|新しいプロジェクトの種類を追加せず、両方のツールとドキュメント ウィンドウを作成できます。|  
 |[プロパティ] ウィンドウでプロパティを公開します。|すべてのオブジェクトには、プロパティを公開できます。|  
   
 ## <a name="create-a-project-subtype"></a>プロジェクト サブタイプを作成します。  
- プロジェクト サブタイプを使用して、新しいプロジェクトの種類を作成することがなく、マネージ プロジェクトの種類を拡張することができます。 プロジェクト サブタイプでは、COM の集計を使用して、Microsoft で記述されたマネージ プロジェクトを拡張する[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]または[!INCLUDE[csprcs](../../includes/csprcs-md.md)]します。 COM の集計を含むマネージ プロジェクト システムの実装の大部分を再利用し、集計と、インターフェイスのサポートの使用を特定のシナリオをカスタマイズできます。 プロジェクト サブタイプの詳細については、次を参照してください。[プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)します。  
+ プロジェクト サブタイプを使用して、新しいプロジェクトの種類を作成することがなく、マネージ プロジェクトの種類を拡張することができます。 プロジェクト サブタイプでは、COM の集計を使用して、Microsoft で記述されたマネージ プロジェクトを拡張する[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]または[!INCLUDE[csprcs](../../includes/csprcs-md.md)]します。 COM の集計を含むマネージ プロジェクト システムの実装の大部分を再利用し、集計と、インターフェイスのサポートの使用を特定のシナリオをカスタマイズできます。 プロジェクト サブタイプの詳細については、[プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [Windows のドキュメントおよびエディター](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)   

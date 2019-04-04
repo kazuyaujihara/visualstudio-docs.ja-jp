@@ -22,7 +22,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56611868"
 ---
 # <a name="replaceable-parameters"></a>置き換え可能パラメーター
-  置き換え可能パラメーター、または*トークン*、実際の値は、デザイン時にわかっていない SharePoint のソリューション項目の値を指定するプロジェクト ファイル内で使用できます。 標準の関数と似ています[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]テンプレート トークンです。 詳細については、次を参照してください。[テンプレート パラメーター](../ide/template-parameters.md)します。
+  置き換え可能パラメーター、または*トークン*、実際の値は、デザイン時にわかっていない SharePoint のソリューション項目の値を指定するプロジェクト ファイル内で使用できます。 標準の関数と似ています[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]テンプレート トークンです。 詳細については、[テンプレート パラメーター](../ide/template-parameters.md)を参照してください。
 
 ## <a name="token-format"></a>トークンの形式
  トークンの先頭し、ドル記号 ($) 文字で終了します。 デプロイに使用される任意のトークンが置き換え実際の値プロジェクトが SharePoint ソリューション パッケージにパッケージ化 (*.wsp*ファイル)。 たとえば、トークン **$SharePoint.Package.Name$** 「SharePoint パッケージのテスト」の文字列に解決する可能性があります。

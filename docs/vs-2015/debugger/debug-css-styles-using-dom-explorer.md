@@ -27,7 +27,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1f5a2c8ef6792403628430cb9881b24e6e279f02
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51750147"
@@ -53,7 +53,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 -   **[変更]** タブ (Windows ストア アプリおよび Windows Phone ストア アプリのみ) では、デバッグ セッション中に変更した CSS スタイルを識別して追跡できます。  
   
 > [!TIP]
->  **[スタイル]** タブと **[計算済み]** タブで行った変更は永続的ではありません。 それらは、デバッグを停止したときに失われます。 ソース コードの変更を停止してデバッガーを再起動することがなくページの再読み込みを使用して、アプリを更新、![更新の Windows アプリのボタン](../debugger/media/js-refresh.png "JS_Refresh")ボタン (**更新の Windows アプリ**) で、**デバッグ**ツールバー (Windows ストアおよび Windows Phone ストア アプリのみ)。 詳細については、次を参照してください。[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)します。  
+>  **[スタイル]** タブと **[計算済み]** タブで行った変更は永続的ではありません。 それらは、デバッグを停止したときに失われます。 ソース コードの変更を停止してデバッガーを再起動することがなくページの再読み込みを使用して、アプリを更新、![更新の Windows アプリのボタン](../debugger/media/js-refresh.png "JS_Refresh")ボタン (**更新の Windows アプリ**) で、**デバッグ**ツールバー (Windows ストアおよび Windows Phone ストア アプリのみ)。 詳細については、[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)を参照してください。  
   
 ## <a name="example-of-fixing-a-css-rule"></a>CSS 規則の修正例  
  この例では、CSS 規則を検査し、スタイルの問題をデバッグする方法を示します。 この例では、 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 分割アプリケーション テンプレートのグループ タイトルの表示に使用されるフォントの色を変更するとします。  
@@ -108,7 +108,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 6.  Visual Studio に切り替え、DOM Explorer で **[要素の選択]** をクリックします (または Ctrl + B キーを押します)。 これで選択モードが変更され、項目をクリックで選択できるようになります。同時に、アプリが前面に表示されます。 モードは、シングルクリックで元に戻ります。 **[要素の選択]** ボタンを次に示します。 ![DOM Explorer で要素のボタンを選択](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
-    >  HTML 要素は DOM Explorer で直接選択することもできます。 要素を選択する方法の詳細については、次を参照してください。[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)します。  
+    >  HTML 要素は DOM Explorer で直接選択することもできます。 要素を選択する方法の詳細については、[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)を参照してください。  
   
 7.  シミューレーターで、ホーム ページの左パネルに表示されている一覧の最初の項目のタイトル ( **[グループ タイトル: 1]**) をポイントします。 次に示すように、タイトルが反転表示されます。  
   

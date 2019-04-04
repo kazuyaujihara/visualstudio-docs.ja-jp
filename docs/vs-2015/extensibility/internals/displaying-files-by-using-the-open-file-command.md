@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 1f1a2ca2b87cadf118c83501bbd6b6bf78af761a
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51727275"
@@ -56,7 +56,7 @@ ms.locfileid: "51727275"
   
 4.  IDE は、プロジェクト ファイルを開くかを決定しますとすぐに呼び出して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>そのプロジェクトでのメソッド。  
   
-5.  プロジェクトには、プロジェクト固有のエディターまたは標準のエディターを使用してファイルを開くオプションがあります。 詳細については、次を参照してください。[方法: 開いているプロジェクト固有のエディター](../../extensibility/how-to-open-project-specific-editors.md)と[方法: 開いているエディターを標準](../../extensibility/how-to-open-standard-editors.md)、それぞれします。  
+5.  プロジェクトには、プロジェクト固有のエディターまたは標準のエディターを使用してファイルを開くオプションがあります。 詳細については、[方法: 開いているプロジェクト固有のエディター](../../extensibility/how-to-open-project-specific-editors.md)と[方法: 開いているエディターを標準](../../extensibility/how-to-open-standard-editors.md)、それぞれを参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [開く を使用してコマンド ファイルを表示します。](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   

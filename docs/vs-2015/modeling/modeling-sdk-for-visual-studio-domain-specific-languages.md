@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 1a294c9c1eaeb0c59f8c2e9c58c75a161c0d61e6
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49883329"
@@ -50,7 +50,7 @@ Modeling SDK for を使用して[!INCLUDE[vsprvs](../includes/vsprvs-md.md)](MSD
   
  [サンプル](http://go.microsoft.com/fwlink/?LinkId=186128)SDK for Visual Studio のモデリング。  
   
- 高度な技法とトラブルシューティングに関するガイダンスについては、次を参照してください。 [Visual Studio DSL & Modeling Tools 機能拡張フォーラム](http://go.microsoft.com/fwlink/?LinkID=186074)します。  
+ 高度な技法とトラブルシューティングに関するガイダンスについては、[Visual Studio DSL & Modeling Tools 機能拡張フォーラム](http://go.microsoft.com/fwlink/?LinkID=186074)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [ドメイン固有言語の概要](../modeling/getting-started-with-domain-specific-languages.md)  

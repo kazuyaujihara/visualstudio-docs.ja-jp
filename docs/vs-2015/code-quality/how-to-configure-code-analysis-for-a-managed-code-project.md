@@ -21,7 +21,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 98f3d14b73b0219d0fcec4312648bf613f37378e
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49239188"
@@ -32,7 +32,7 @@ ms.locfileid: "49239188"
 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]と[!INCLUDE[vsPro](../includes/vspro-md.md)]、コード分析の一覧から選択できる*ルール セット*マネージ コード プロジェクトに適用します。 既定の規則セットは Microsoft 最小推奨規則です。 ソリューション内の 1 つのプロジェクトまたはすべてのプロジェクトに別の規則セットを適用することもできます。  
   
 > [!NOTE]
->  ASP.NET Web アプリケーションのルール セットを構成する方法については、次を参照してください。[方法: ASP.NET Web アプリケーションのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)します。  
+>  ASP.NET Web アプリケーションのルール セットを構成する方法については、[方法: ASP.NET Web アプリケーションのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)を参照してください。  
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework プロジェクトの規則セットを構成するには  
   
@@ -57,7 +57,7 @@ ms.locfileid: "49239188"
   
     -   カスタム規則セットを定義します。  
   
-         詳細については、次を参照してください。[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)です。  
+         詳細については、[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [チュートリアル: カスタム規則セットの構成と使用](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

@@ -32,7 +32,7 @@ ms.locfileid: "56694687"
 
 1.  という名前の VSIX プロジェクトを作成する`DynamicMenuItems`します。
 
-2.  カスタム コマンドの項目テンプレートを追加し、名前、プロジェクトが開いたら、 **DynamicMenu**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
+2.  カスタム コマンドの項目テンプレートを追加し、名前、プロジェクトが開いたら、 **DynamicMenu**します。 詳細については、[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。
 
 ## <a name="setting-up-the-elements-in-the-vsct-file"></a>内の要素の設定、 *.vsct*ファイル
  ツールバーにある動的メニュー項目にメニュー コント ローラーを作成するには、次の要素を指定します。

@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49867448"
@@ -33,7 +33,7 @@ ms.locfileid: "49867448"
  高度なカスタマイズのプログラム コードを記述することもできます。  
   
 > [!NOTE]
->  特定の形式でモデルを保存する場合、そのフォームから再読み込みする必要はありませんは、カスタムのシリアル化スキームではなく、モデルからの出力を生成するテキスト テンプレートの使用を検討してください。 詳細については、次を参照してください。[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)します。  
+>  特定の形式でモデルを保存する場合、そのフォームから再読み込みする必要はありませんは、カスタムのシリアル化スキームではなく、モデルからの出力を生成するテキスト テンプレートの使用を検討してください。 詳細については、[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)を参照してください。  
   
 ## <a name="model-and-diagram-files"></a>モデルと図ファイル  
  各モデルは、通常は 2 つのファイルに保存されます。  
@@ -171,7 +171,7 @@ ms.locfileid: "49867448"
   
      あいまいさをチェックする検証を自動的に生成されたメソッドが存在します。 メソッドが含まれる、`Load`検証カテゴリ。 これにより、ファイルを再度開くできない可能性があります、そのユーザーを警告はことを確認します。  
   
-     詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。  
+     詳細については、[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)を参照してください。  
   
 ### <a name="moniker-paths-and-qualifiers"></a>モニカーのパスと修飾子  
  修飾キー モニカーは、モニカー キーで終了し、埋め込みツリー内の親のモニカーが付いています。 たとえば、アルバムのモニカーとします。  

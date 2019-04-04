@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 628c9ef34fc23776672a4252886c091a38f63b4b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51734963"
@@ -77,7 +77,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
   
  コマンド テーブルによって使用されているシンボルを格納する C スタイル ヘッダー ファイルを生成するコマンドのシンボルのオブジェクトを含む c# ファイルを生成するまたは-e スイッチを使用できます。  
   
- -D と – スイッチと同じ名前を持つ Cl.exe C プリプロセッサ フラグの構文になっています。 – D X = Y という形式になっている定義を XML ベースの拡張の使用\<定義 > 内にあるテスト`Condition`属性。 – はインクルード パスを解決するために使用\<Include >、 \<Extern > と\<ビットマップ > ファイル参照。 詳細については、次を参照してください。、 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)します。  
+ -D と – スイッチと同じ名前を持つ Cl.exe C プリプロセッサ フラグの構文になっています。 – D X = Y という形式になっている定義を XML ベースの拡張の使用\<定義 > 内にあるテスト`Condition`属性。 – はインクルード パスを解決するために使用\<Include >、 \<Extern > と\<ビットマップ > ファイル参照。 詳細については、、 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)を参照してください。  
   
  VSCT コンパイラは、以前にビルドされたバイナリ ファイルを逆もできます。 これを行うには、指定のバイナリ ファイル、 \<infile >。   バイナリ ファイル VSCT コンパイラによって生成されますが場合、は、埋め込まれているそのシンボルがされシンボリック名に出力が生成されます、\<シンボル > の出力セクション。 バイナリは、CTC コンパイラによって生成されたが、出力には、実際の Guid と Id が含まれます。 Ctc.exe の現在のバージョンによって生成される *.ctsym ファイルは、バイナリの入力ファイルと同じフォルダーには、シンボルがそのファイルから読み込まれ、出力に使用されます。  
   

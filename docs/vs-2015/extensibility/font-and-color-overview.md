@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: d849d93bdab481cecbb7d1f0f862f1db8eb3c181
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51769440"
@@ -78,7 +78,7 @@ ms.locfileid: "51769440"
   
 - 両方の機能を使用して、組み込みの表示項目から、**テキスト EditorCategory**とそれらを拡張します。  
   
-   詳細については、次を参照してください。[方法: ビルトインの配色可能な項目を使用して](../extensibility/internals/how-to-use-built-in-colorable-items.md)と[カスタム装飾が可能なアイテム](../extensibility/internals/custom-colorable-items.md)します。  
+   詳細については、[方法: ビルトインの配色可能な項目を使用して](../extensibility/internals/how-to-use-built-in-colorable-items.md)と[カスタム装飾が可能なアイテム](../extensibility/internals/custom-colorable-items.md)を参照してください。  
   
 - 現在の状態の両方の組み込みとカスタムの永続化を自動で項目を表示する、**テキスト エディター**カテゴリ。  
   

@@ -23,7 +23,7 @@ ms.locfileid: "56715636"
  エディター インポートを使用するには、フィールドまたは Managed Extensibility Framework コンポーネントの一部をエクスポートするクラスのプロパティとしてインポートします。
 
 > [!NOTE]
->  Managed Extensibility Framework の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
+>  Managed Extensibility Framework の詳細については、[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)を参照してください。
 
 ## <a name="import-syntax"></a>構文をインポートします。
  次の例では、オプションのファクトリ サービス、エディターにインポートする方法を示します。

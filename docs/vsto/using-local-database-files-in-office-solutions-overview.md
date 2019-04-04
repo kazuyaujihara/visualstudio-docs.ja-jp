@@ -35,7 +35,7 @@ ms.locfileid: "56645538"
  ソリューションをサーバーに配置して、ドキュメントをエンドユーザーに配布も手動でデータベース ファイルを配布して、ドキュメントを基準と同じ位置にインストールする必要があります。 つまり、そのユーザーは、データベース ファイルを移動もしない限り、エンド ユーザーが自分のコンピューターで、新しい場所にドキュメントを移動できないことです。
 
 ## <a name="local-database-files-and-caching-the-dataset"></a>ローカル データベース ファイルと、データセットのキャッシュ
- Microsoft Office Excel および Microsoft Office Word のドキュメント レベルのソリューションでは、属性を持つデータセットのインスタンスをマークすることで、ドキュメント内のデータセットをキャッシュできます<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>します。 追加すると、データベース ファイル、プロジェクトを使用して、**データ ソース構成ウィザード**、型指定されたデータセットが自動的にプロジェクトに追加されます。 適用する必要はありません<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>、このデータセットにデータがローカル ユーザーのコンピューターに既にあるためです。 詳細については、次を参照してください。[データ キャッシュ](../vsto/caching-data.md)します。
+ Microsoft Office Excel および Microsoft Office Word のドキュメント レベルのソリューションでは、属性を持つデータセットのインスタンスをマークすることで、ドキュメント内のデータセットをキャッシュできます<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>します。 追加すると、データベース ファイル、プロジェクトを使用して、**データ ソース構成ウィザード**、型指定されたデータセットが自動的にプロジェクトに追加されます。 適用する必要はありません<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>、このデータセットにデータがローカル ユーザーのコンピューターに既にあるためです。 詳細については、[データ キャッシュ](../vsto/caching-data.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションでのコントロールにデータをバインドします。](../vsto/binding-data-to-controls-in-office-solutions.md)

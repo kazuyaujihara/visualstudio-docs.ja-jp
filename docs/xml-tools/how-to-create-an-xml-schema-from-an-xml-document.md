@@ -27,7 +27,7 @@ XML エディターを使用して、XML ドキュメントから XML スキー�
 
 作成されるスキーマを使用し、XML ファイルに対して IntelliSense を提供します。
 
-スキーマ推論エンジンの詳細については、次を参照してください。 [XML スキーマを推論](/dotnet/standard/data/xml/inferring-an-xml-schema)します。
+スキーマ推論エンジンの詳細については、[XML スキーマを推論](/dotnet/standard/data/xml/inferring-an-xml-schema)を参照してください。
 
 ## <a name="to-create-an-xml-schema"></a>XML スキーマを作成するには
 

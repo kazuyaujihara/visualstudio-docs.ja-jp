@@ -35,7 +35,7 @@ ms.locfileid: "56689227"
 
 -   レイヤーは、その下のレイヤーだけに影響を与えます。 超える標準的なイベントが発生した上位層に影響を与えることはできません。
 
--   エディターで、非表示のテキスト、合成のテキストおよびワード ラップがレイヤーとして実装されます。 レイヤーと直接対話することがなく、非表示と代理のテキストを実装できます。 詳細については、次を参照してください。[従来の言語サービスでのアウトライン](../extensibility/internals/outlining-in-a-legacy-language-service.md)と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>します。
+-   エディターで、非表示のテキスト、合成のテキストおよびワード ラップがレイヤーとして実装されます。 レイヤーと直接対話することがなく、非表示と代理のテキストを実装できます。 詳細については、[従来の言語サービスでのアウトライン](../extensibility/internals/outlining-in-a-legacy-language-service.md)と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>を参照してください。
 
 -   各テキスト レイヤーを介して公開される、独自のローカルの座標システムが、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>インターフェイス。 行の折り返しのレイヤーなどが含まれの 2 行、基になるテキスト バッファーに 1 行のみを含めることができます。
 

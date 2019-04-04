@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: a531dadba426bc04a788d7c75516afd581d1722f
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49178894"
@@ -26,7 +26,7 @@ ms.locfileid: "49178894"
 # <a name="properties-of-geometry-shapes"></a>ジオメトリ シェイプのプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ジオメトリ シェイプを使用すると、ドメイン固有言語におけるドメイン クラスのインスタンスを表示する方法を指定します。 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。 これらのプロパティを使用する方法の詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。  
+ジオメトリ シェイプを使用すると、ドメイン固有言語におけるドメイン クラスのインスタンスを表示する方法を指定します。 詳細については、[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)を参照してください。 これらのプロパティを使用する方法の詳細については、[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)を参照してください。  
   
  ジオメトリ シェイプには、次の表に記載されているプロパティがあります。  
   
@@ -42,8 +42,8 @@ ms.locfileid: "49178894"
 |テキストの色|この図形に関連付けられているテキスト デコレーターに使用される色。|黒|  
 |アクセス修飾子|(パブリックまたは内部) クラスのアクセス修飾子。|Public|  
 |カスタム属性|この図形に対して生成されるソース コードのクラスに属性を追加するために使用します。|\<なし >|  
-|Double 型を生成します派生。|場合`True`、基底クラスと (オーバーライドによってカスタマイズをサポート) する部分クラスの両方が生成されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|False|  
-|カスタム コンス トラクターがあります。|場合`True`、カスタム コンス トラクターは、ソース コードで提供されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|False|  
+|Double 型を生成します派生。|場合`True`、基底クラスと (オーバーライドによってカスタマイズをサポート) する部分クラスの両方が生成されます。 詳細については、[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)を参照してください。|False|  
+|カスタム コンス トラクターがあります。|場合`True`、カスタム コンス トラクターは、ソース コードで提供されます。 詳細については、[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)を参照してください。|False|  
 |継承修飾子|図形から生成されるソース コードのクラスの継承の種類について説明します (`none`、`abstract`または`sealed`)。|none|  
 |基本のジオメトリ シェイプ|この図形の基本クラス。|(なし)|  
 |名前|この図形の名前。|現在の名前|  

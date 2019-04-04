@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 363ba8e38ae2de445bd18bb9378d48aa4d824298
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51769767"
@@ -34,7 +34,7 @@ ms.locfileid: "51769767"
   
  ユーザーが開いたとき、 **AddItem**子、親プロジェクトの実装のためのダイアログ ボックス、`IVsFilterAddProjectItemDlg`インターフェイスが呼び出されます。  
   
- `IVsFilterAddProjectItemDlg`インターフェイスは、カテゴリによるフィルター処理も実装できます。 詳細については、次を参照してください。[に新しい項目の追加 ダイアログ ボックスの項目の追加](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)と[登録プロジェクトと項目テンプレート](../../extensibility/internals/registering-project-and-item-templates.md)します。  
+ `IVsFilterAddProjectItemDlg`インターフェイスは、カテゴリによるフィルター処理も実装できます。 詳細については、[に新しい項目の追加 ダイアログ ボックスの項目の追加](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)と[登録プロジェクトと項目テンプレート](../../extensibility/internals/registering-project-and-item-templates.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   

@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 47fc07ade4529ab99a4c687ea62791ec083d2d0b
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49273332"
@@ -34,9 +34,9 @@ ms.locfileid: "49273332"
 
 通常、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは Web サーバーからインストールされた直後に自動的に起動します。 セキュリティ上の理由から、この動作を無効にしてからアプリケーションを起動するユーザーに通知すること可能性があります、**開始** メニューの代わりにします。 次の手順では、URL アクティベーションを無効にする方法を説明します。  
   
- この手法は、Web サーバーからユーザーのコンピューターにインストールされた [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションにのみ使用できます。 URL を使用する方法でのみ起動できるオンライン専用のアプリケーションには使用できません。 アプリケーションとインストールされているオンライン専用アプリケーションの違いの詳細については、次を参照してください。 [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)します。  
+ この手法は、Web サーバーからユーザーのコンピューターにインストールされた [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションにのみ使用できます。 URL を使用する方法でのみ起動できるオンライン専用のアプリケーションには使用できません。 アプリケーションとインストールされているオンライン専用アプリケーションの違いの詳細については、[ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)を参照してください。  
   
- この手順では、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)] ツールである MageUI.exe を使用します。 このツールの詳細については、次を参照してください。 [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)します。 この手順は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用して実行することもできます。  
+ この手順では、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)] ツールである MageUI.exe を使用します。 このツールの詳細については、[MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)を参照してください。 この手順は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用して実行することもできます。  
   
 ## <a name="procedure"></a>プロシージャ  
   

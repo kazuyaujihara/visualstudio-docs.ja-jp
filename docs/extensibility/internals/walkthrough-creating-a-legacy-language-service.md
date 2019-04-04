@@ -21,7 +21,7 @@ ms.locfileid: "56626571"
 マネージ パッケージ フレームワーク (MPF) 言語のクラスを使用してでの言語サービスを実装する[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]は簡単です。 言語サービス、言語サービス自体には、お使いの言語のパーサーをホストするために VSPackage が必要です。
 
 ## <a name="prerequisites"></a>必須コンポーネント
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../../extensibility/visual-studio-sdk.md)します。
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../../extensibility/visual-studio-sdk.md)を参照してください。
 
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio パッケージのプロジェクト テンプレートの場所
  Visual Studio パッケージ プロジェクト テンプレートは次の 3 つの異なるテンプレートの場所で見つかる、**新しいプロジェクト** ダイアログ ボックス。

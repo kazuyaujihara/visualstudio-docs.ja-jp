@@ -28,7 +28,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 26a7eabe624b75c2b9ded6d14e6bf7c92505ba2d
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51753619"
@@ -44,7 +44,7 @@ ms.locfileid: "51753619"
  **プロジェクトにアクセスする URL (ATL Server のみ)**  
  ATL Server の DLL をデバッグする場合は、プロジェクトが存在する URL を入力します。  
   
- URL を入力すると、これらの設定がプロジェクトの [プロパティ ページ] に格納されるため、後続のデバッグ セッションで設定を再入力する必要がなくなります。 設定変更が必要な場合は [プロパティ ページ] を開いて値を変更できます。 デバッグ セッションで、実行可能ファイルを指定する方法の詳細については、次を参照してください。 [Dll のデバッグ](../debugger/how-to-debug-native-dlls.md)します。  
+ URL を入力すると、これらの設定がプロジェクトの [プロパティ ページ] に格納されるため、後続のデバッグ セッションで設定を再入力する必要がなくなります。 設定変更が必要な場合は [プロパティ ページ] を開いて値を変更できます。 デバッグ セッションで、実行可能ファイルを指定する方法の詳細については、[Dll のデバッグ](../debugger/how-to-debug-native-dlls.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)

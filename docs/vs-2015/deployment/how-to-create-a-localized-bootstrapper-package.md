@@ -20,7 +20,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49304760"
@@ -72,7 +72,7 @@ ms.locfileid: "49304760"
   
 2.  ブートストラップ パッケージのソフトウェア ライセンス条項を示すファイルを作成し、新しいフォルダーに格納します。  
   
-3.  package.xml という名前のパッケージ マニフェストを作成し、新しいフォルダーに格納します。 詳細については、次を参照してください。[方法: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md)します。  
+3.  package.xml という名前のパッケージ マニフェストを作成し、新しいフォルダーに格納します。 詳細については、[方法: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md)を参照してください。  
   
 4.  パッケージ マニフェストの `<Strings>` セクションを更新して、文字列がロケールに対応する正しい言語で表示されるようにします。  
   

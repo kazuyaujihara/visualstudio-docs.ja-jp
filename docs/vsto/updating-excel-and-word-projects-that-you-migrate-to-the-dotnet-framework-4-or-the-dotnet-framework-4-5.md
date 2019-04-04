@@ -39,7 +39,7 @@ ms.locfileid: "56646110"
   削除することも必要があります、`Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute`およびへの参照、`Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy`クラスに再ターゲットされた Excel プロジェクトから、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]またはそれ以降。 Visual Studio では、この属性またはクラスの参照を削除しません。
 
 ## <a name="remove-the-excellocale1033-attribute-from-excel-projects"></a>Excel プロジェクトからの ExcelLocale1033 属性を削除します。
- `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute`の Visual Studio 2010 Tools for Office ランタイムを対象とするソリューションに使用される部分から削除されましたが、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]またはそれ以降。 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降の共通言語ランタイム (CLR) は、Excel オブジェクト モデルに対しては常にロケール ID 1033 を渡します。この動作を無効にするために、この属性を使用することはできなくなりました。 詳細については、次を参照してください。 [Excel ソリューションのグローバリゼーションとローカリゼーション](../vsto/globalization-and-localization-of-excel-solutions.md)します。
+ `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute`の Visual Studio 2010 Tools for Office ランタイムを対象とするソリューションに使用される部分から削除されましたが、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]またはそれ以降。 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降の共通言語ランタイム (CLR) は、Excel オブジェクト モデルに対しては常にロケール ID 1033 を渡します。この動作を無効にするために、この属性を使用することはできなくなりました。 詳細については、[Excel ソリューションのグローバリゼーションとローカリゼーション](../vsto/globalization-and-localization-of-excel-solutions.md)を参照してください。
 
 ### <a name="to-remove-the-excellocale1033attribute"></a>ExcelLocale1033Attribute を削除するには
 
@@ -120,7 +120,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
       Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument);
   ```
 
-  詳細については、次を参照してください。[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)します。
+  詳細については、[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)を参照してください。
 
 ##  <a name="generatedclasses"></a> ドキュメント レベルのプロジェクトで生成されたクラスのインスタンスを使用するコードを更新します。
  .NET Framework 3.5 をターゲットとするドキュメント レベルのプロジェクトでは、プロジェクト内で生成されるクラスは、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]の次のクラスから派生します。
@@ -194,7 +194,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  プロジェクトを対象とするで、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または後で、これらのメソッドは、コントロールのプロパティで使用できる拡張メソッド。 これらの拡張メソッドを使用するには、メソッドを使用するコード ファイルに、 **Controls** メソッドまたは **N:Microsoft.Office.Tools.Excel** 名前空間に対する <xref:Microsoft.Office.Tools.Excel> メソッドまたは <xref:Microsoft.Office.Tools.Word> ステートメントが必要です。 このステートメントは、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降をターゲットとする新しいプロジェクトでは、自動的に生成されます。 ただし、このステートメントは.NET Framework 3.5 をターゲットとするプロジェクトでは自動的に追加されないため、プロジェクトのターゲットを変更するときに自分で追加する必要があります。
 
- 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+ 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
 
 ##  <a name="ccevents"></a> Word コンテンツ コントロールのイベントを処理するコードを更新します。
  .NET Framework 3.5 をターゲットとするプロジェクトでは、Word コンテンツ コントロールのイベントは汎用の <xref:System.EventHandler%601> デリゲートによって処理されます。 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降をターゲットとするプロジェクトでは、これらのイベントは他のデリゲートによって処理されるようになりました。
@@ -215,14 +215,14 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降をターゲットとするプロジェクトでは、これらのクラスは <xref:Microsoft.Office.Tools.Excel.ControlSite> インターフェイスと <xref:Microsoft.Office.Tools.Word.ControlSite> インターフェイスに置き換えられました。 `Microsoft.Office.Tools.Excel.OLEObject` および `Microsoft.Office.Tools.Word.OLEControl` を参照するコードは、<xref:Microsoft.Office.Tools.Excel.ControlSite> および <xref:Microsoft.Office.Tools.Word.ControlSite> を参照するように変更する必要があります。 新しい名前になったこと以外には、これらのコントロールの動作は .NET Framework 3.5 をターゲットとするプロジェクトでの動作と同じです。
 
- 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+ 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
 
 ##  <a name="itemproperty"></a> Controls.Item(Object) プロパティを使用するコードを更新します。
  Microsoft.Office.Tools.Word.Document.Controls の Item(Object) プロパティを使用する .NET Framework 3.5 を対象とするプロジェクトでまたは`Microsoft.Office.Tools.Excel.Worksheet.Controls`文書またはワークシートに指定したコントロールがあるかどうかを確認します。
 
  プロジェクトを対象とするで、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Item(Object) プロパティがこれらのコレクションから削除された後で、または。 に文書またはワークシートに、指定したコントロールが含まれるかどうか確認するには、の Contains(System.Object) メソッドを使用して、<xref:Microsoft.Office.Tools.Word.Document.Controls%2A>または<xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A>コレクション代わりにします。
 
- 文書またはワークシートのコントロールのコレクションの詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+ 文書またはワークシートのコントロールのコレクションの詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
 
 ##  <a name="collections"></a> CollectionBase から派生するコレクションを使用するコードを更新します。
  .NET Framework 3.5 を対象とするプロジェクトでいくつかのコレクション型で、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]から派生、<xref:System.Collections.CollectionBase>クラスなど、 `Microsoft.Office.Tools.SmartTagCollection`、`Microsoft.Office.Tools.Excel.ControlCollection`と`Microsoft.Office.Tools.Word.ControlCollection`します。

@@ -25,7 +25,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: b87019a824acada616865fd65cfd6aade8aa6ec9
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49243426"
@@ -38,7 +38,7 @@ ClickOnce アプリケーションの Web を発行するときに、Web ペー�
 > [!NOTE]
 >  ページに表示される実際のリンクは、ページが表示されているコンピューターとによって異なります。 前提条件が含まれています。  
   
- Web ページの既定の名前は Publish.htm;内の名前を変更することができます、**プロジェクト デザイナー**します。 詳細については、次を参照してください。[方法: ClickOnce アプリケーションの発行ページを指定](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)します。  
+ Web ページの既定の名前は Publish.htm;内の名前を変更することができます、**プロジェクト デザイナー**します。 詳細については、[方法: ClickOnce アプリケーションの発行ページを指定](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)を参照してください。  
   
  新しいバージョンが検出された場合にのみ、Publish.htm Web ページが発行されます。  
   
@@ -47,7 +47,7 @@ ClickOnce アプリケーションの Web を発行するときに、Web ペー�
   
 ### <a name="to-customize-the-publish-web-page"></a>発行 Web ページをカスタマイズするには  
   
-1.  Web 上の場所に、ClickOnce アプリケーションを発行します。 詳細については、次を参照してください。[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)します。  
+1.  Web 上の場所に、ClickOnce アプリケーションを発行します。 詳細については、[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)を参照してください。  
   
 2.  Web サーバーでは、Visual Web Designer または別の HTML エディターで Publish.htm ファイルを開きます。  
   

@@ -150,7 +150,7 @@ ms.locfileid: "56605940"
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]
 
 ## <a name="prevent-users-from-editing-the-employee-table"></a>ユーザーが employee テーブルを編集することを妨げる
- 先ほど宣言した <xref:Microsoft.Office.Tools.Word.GroupContentControl> オブジェクトを使用して、従業員表を保護します。 表を保護した後でも、ユーザーは表内のコンテンツ コントロールを編集できます。 ただし、最初の列のテキストを編集したり、他の方法で表を変更すること (行や列を追加/削除するなど) はできません。 使用する方法についての詳細、<xref:Microsoft.Office.Tools.Word.GroupContentControl>ドキュメントの一部を保護するには、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
+ 先ほど宣言した <xref:Microsoft.Office.Tools.Word.GroupContentControl> オブジェクトを使用して、従業員表を保護します。 表を保護した後でも、ユーザーは表内のコンテンツ コントロールを編集できます。 ただし、最初の列のテキストを編集したり、他の方法で表を変更すること (行や列を追加/削除するなど) はできません。 使用する方法についての詳細、<xref:Microsoft.Office.Tools.Word.GroupContentControl>ドキュメントの一部を保護するには、[コンテンツ コントロール](../vsto/content-controls.md)を参照してください。
 
 ### <a name="to-prevent-users-from-editing-the-employee-table"></a>従業員表を保護してユーザーが編集できないようにするには
 
@@ -160,7 +160,7 @@ ms.locfileid: "56605940"
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]
 
 ## <a name="add-the-tables-to-the-building-block-collection"></a>文書パーツ コレクションにテーブルを追加します。
- 作成した表をユーザーがドキュメントに挿入できるように、テンプレート内の文書パーツ コレクションに表を追加します。 文書パーツの詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
+ 作成した表をユーザーがドキュメントに挿入できるように、テンプレート内の文書パーツ コレクションに表を追加します。 文書パーツの詳細については、[コンテンツ コントロール](../vsto/content-controls.md)を参照してください。
 
 ### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>テンプレートの文書パーツに表を追加するには
 

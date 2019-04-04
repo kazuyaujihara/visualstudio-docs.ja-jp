@@ -34,7 +34,7 @@ ms.locfileid: "56629210"
 |添付ファイルを追加します。|[方法: プログラムによって Outlook の電子メール アイテムにファイルを添付します。](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|
 |すべての未読メ ッ セージを反復処理します。|[方法: プログラムによって、受信トレイから未読メ ッ セージを取得します。](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|
 
- Outlook タスクと Outlook オブジェクト モデルの詳細については、次を参照してください。 [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)します。
+ Outlook タスクと Outlook オブジェクト モデルの詳細については、[Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [連絡先項目を操作します。](../vsto/working-with-contact-items.md)

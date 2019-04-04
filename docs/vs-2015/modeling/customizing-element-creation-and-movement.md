@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 470ff89dfd864443206c1d9131fb126d58280859
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49853832"
@@ -77,7 +77,7 @@ ms.locfileid: "49853832"
 > [!NOTE]
 >  カスタム マージのコードを記述する場合は、この EMD を使用して実行される唯一の結合に影響します。 他の入力例: 同じ種類のオブジェクトをマージする場合、または、EMD を使用せずにこれらのオブジェクトを作成する他のカスタム コードがある場合は、は受けませんマージのカスタム コード。  
 >   
->  新しい要素または新しいリレーションシップが常に処理される、カスタム コードを確認する場合は、定義することを検討してください、`AddRule`埋め込みリレーションシップに対して、`DeleteRule`要素のドメイン クラス。 詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。  
+>  新しい要素または新しいリレーションシップが常に処理される、カスタム コードを確認する場合は、定義することを検討してください、`AddRule`埋め込みリレーションシップに対して、`DeleteRule`要素のドメイン クラス。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>例: カスタム コードなし EMD を定義します。  
  次の例では、既存の図形には、ツールボックスからドラッグして、同時に要素とコネクタを作成できます。 例では、DSL 定義に EMD を追加します。 この変更では、前にユーザーは、図に、既存の図形の上にないツールをドラッグできます。  
@@ -146,7 +146,7 @@ ms.locfileid: "49853832"
   
 -   EMD は、両方の作成にツールボックスおよびも貼り付け操作に影響します。  
   
-     使用して、EMD を明示的に呼び出す場合、新しい要素を作成するカスタム コードを記述する、`ElementOperations.Merge`メソッド。 これにより、コードが、その他の操作と同様に、モデルに新しい要素をリンクすることを確認します。 詳細については、次を参照してください。[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。  
+     使用して、EMD を明示的に呼び出す場合、新しい要素を作成するカスタム コードを記述する、`ElementOperations.Merge`メソッド。 これにより、コードが、その他の操作と同様に、モデルに新しい要素をリンクすることを確認します。 詳細については、[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)を参照してください。  
   
 ## <a name="example-adding-custom-accept-code-to-an-emd"></a>例: EMD へのカスタム受け入れコードの追加  
  EMD にカスタム コードを追加することより複雑な結合の動作を定義できます。 この簡単な例では、ユーザーが要素の固定数よりも多く、ダイアグラムに追加できなくなります。 例では、既定の埋め込みリレーションシップに付属している EMD を変更します。  
@@ -195,7 +195,7 @@ ms.locfileid: "49853832"
   
     ```  
   
-     この簡単な例では、親モデルにマージできる要素の数を制限します。 さらに興味深い条件については、メソッドは、プロパティのいずれかと受信側のオブジェクトのリンクを検査できます。 伝達される結合の要素のプロパティが調べることもできます、<xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>します。 詳細については`ElementGroupPrototypes`を参照してください[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。 モデルを読み取るコードを記述する方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。  
+     この簡単な例では、親モデルにマージできる要素の数を制限します。 さらに興味深い条件については、メソッドは、プロパティのいずれかと受信側のオブジェクトのリンクを検査できます。 伝達される結合の要素のプロパティが調べることもできます、<xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>します。 詳細については`ElementGroupPrototypes`を参照してください[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。 モデルを読み取るコードを記述する方法の詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。  
   
 6.  DSL をテストします。  
   
@@ -218,7 +218,7 @@ ms.locfileid: "49853832"
   
 2. 上書き、`MergeRelate`メソッド、および必要に応じて、`MergeDisconnect`メソッド。 これを行うには、設定する必要があります、 **Double Derived の生成**ドメイン クラスのプロパティ。 コードでは、基底クラスで生成されたマージのコードを呼び出すことができます。 マージが実行された後、追加の操作を実行する場合は、このオプションを使用します。  
   
-   これらの方法では、この EMD を使用して実行されるマージのみに影響します。 定義する代わりには、マージされた要素を作成できるすべての方法に影響する場合、`AddRule`埋め込みリレーションシップに対して、`DeleteRule`マージされたドメイン クラス。 詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。  
+   これらの方法では、この EMD を使用して実行されるマージのみに影響します。 定義する代わりには、マージされた要素を作成できるすべての方法に影響する場合、`AddRule`埋め込みリレーションシップに対して、`DeleteRule`マージされたドメイン クラス。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
   
 #### <a name="to-override-mergerelate"></a>MergeRelate をオーバーライドするには  
   
@@ -277,7 +277,7 @@ ms.locfileid: "49853832"
   
 4. 別のコード ファイルの部分クラス定義でメソッドを記述します。 前に検査する例は、必要なものをお勧めします必要があります。  
   
-   カスタム マージのコードを直接オブジェクトとリレーションシップを作成するコードには影響しませんし、その他の入力例: 影響を受けません。 要素を作成する方法に関係なく、追加の変更が実装されていることを確認するには、書き込みを検討してください。、`AddRule`と`DeleteRule`代わりにします。 詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。  
+   カスタム マージのコードを直接オブジェクトとリレーションシップを作成するコードには影響しませんし、その他の入力例: 影響を受けません。 要素を作成する方法に関係なく、追加の変更が実装されていることを確認するには、書き込みを検討してください。、`AddRule`と`DeleteRule`代わりにします。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
   
 ## <a name="redirecting-a-merge-operation"></a>マージ操作をリダイレクトします。  
  転送マージ ディレクティブは、マージ操作の対象をリダイレクトします。 通常、新しいターゲットは、最初のターゲットの埋め込みの親です。  

@@ -13,7 +13,7 @@ ms.date: 03/25/2017
 ms.author: ghogen
 ms.openlocfilehash: a5b75aa5e1310e02befe162199472eef987d7cd9
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002362"
@@ -79,7 +79,7 @@ Azure リソースを表示する、いずれかを選択できます**リソー
 1. コンテキスト メニューから目的のビューを選択します。 
 
    * **リソースの種類**で使用される一般的なビューを表示、 [Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040)、web アプリ、ストレージ アカウント、および仮想マシンなどの種類によってカテゴリ化される Azure リソースに表示されます。 
-   * **リソース グループ**- 関連付けられている Azure リソース グループによって分類の Azure リソースを表示します。 リソース グループは、特定のアプリケーションで使用される通常の Azure リソースのバンドルです。 Azure リソース グループの詳細については、次を参照してください。 [Azure Resource Manager の概要](/azure/azure-resource-manager/resource-group-overview)します。
+   * **リソース グループ**- 関連付けられている Azure リソース グループによって分類の Azure リソースを表示します。 リソース グループは、特定のアプリケーションで使用される通常の Azure リソースのバンドルです。 Azure リソース グループの詳細については、[Azure Resource Manager の概要](/azure/azure-resource-manager/resource-group-overview)を参照してください。
 
    次の図は、2 つのリソース ビューの比較を示しています。
 

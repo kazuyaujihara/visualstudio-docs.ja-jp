@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 41d89e2947cbd7bf1087f8dfa0ecffdd75033171
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51752992"
@@ -43,5 +43,5 @@ ms.locfileid: "51752992"
   
 - コマンドを無視します。 現在のフィルター処理しないと、次のフィルターに渡されません。  
   
-  言語サービスを処理するコマンドの詳細については、次を参照してください。[言語サービス フィルターの重要なコマンド](../../extensibility/internals/important-commands-for-language-service-filters.md)します。
+  言語サービスを処理するコマンドの詳細については、[言語サービス フィルターの重要なコマンド](../../extensibility/internals/important-commands-for-language-service-filters.md)を参照してください。
 

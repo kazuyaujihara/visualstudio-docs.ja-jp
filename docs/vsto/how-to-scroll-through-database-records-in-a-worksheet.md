@@ -33,7 +33,7 @@ ms.locfileid: "56600247"
 
 1.  Visual Studio で Excel のアプリケーション プロジェクトを開きます。
 
-2.  開く、**データ ソース**ウィンドウと、データベースからデータ ソースを作成します。 詳細については、次を参照してください。[新しい接続を追加](../data-tools/add-new-connections.md)します。
+2.  開く、**データ ソース**ウィンドウと、データベースからデータ ソースを作成します。 詳細については、[新しい接続を追加](../data-tools/add-new-connections.md)を参照してください。
 
 3.  を表示するデータを含むテーブルを展開し、特定の列を選択します。
 
@@ -41,7 +41,7 @@ ms.locfileid: "56600247"
 
 5.  ドラッグ、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールをデータが表示されるセルにします。
 
-6.  **Windows フォーム**のタブ、**ツールボックス**、追加、<xref:System.Windows.Forms.BindingNavigator>ワークシートに制御し、使用するコントロールを設定します。 詳細については、次を参照してください。 [BindingNavigator コントロールの概要&#40;Windows フォーム&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)します。
+6.  **Windows フォーム**のタブ、**ツールボックス**、追加、<xref:System.Windows.Forms.BindingNavigator>ワークシートに制御し、使用するコントロールを設定します。 詳細については、[BindingNavigator コントロールの概要&#40;Windows フォーム&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションでのコントロールにデータをバインドします。](../vsto/binding-data-to-controls-in-office-solutions.md)

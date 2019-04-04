@@ -27,7 +27,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49174149"
@@ -48,13 +48,13 @@ ms.locfileid: "49174149"
   
 3.  WPF デザイナーを開き、デザイナーには内の項目の有効なドロップ先であるコンテナーが含まれているかどうかを確認して、**データソース**ウィンドウ。  
   
-     有効なドロップ ターゲットの詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+     有効なドロップ ターゲットの詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
   
 4.  **データソース**ウィンドウ、またはリレーションシップのオブジェクトを親テーブルを表すノードを展開します。 親テーブルまたはオブジェクトは、一対多リレーションシップの「一」側では。  
   
 5.  親ノード (または親ノードでの個別の項目) をドラッグしてから、**データ ソース**ウィンドウからデザイナーで有効なドロップ ターゲットにします。  
   
-     Visual Studio には、各アイテムをドラッグするための新しいデータ バインド コントロールを作成する XAML が生成されます。 XAML も新しく追加<xref:System.Windows.Data.CollectionViewSource>親テーブルまたはドロップ先のリソースへのオブジェクト。 一部のデータ ソースでは、Visual Studio には、親テーブルまたはオブジェクトに、データを読み込むコードも生成されます。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+     Visual Studio には、各アイテムをドラッグするための新しいデータ バインド コントロールを作成する XAML が生成されます。 XAML も新しく追加<xref:System.Windows.Data.CollectionViewSource>親テーブルまたはドロップ先のリソースへのオブジェクト。 一部のデータ ソースでは、Visual Studio には、親テーブルまたはオブジェクトに、データを読み込むコードも生成されます。 詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
   
 6.  **データソース**ウィンドウで、関連する子テーブルまたはオブジェクトを検索します。 関連する子テーブルとオブジェクトは、データの親ノードの一覧の下部にある展開可能なノードとして表示されます。  
   

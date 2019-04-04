@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 309f93658cee6663c2b5673c03c6621330e7fa39
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49276576"
@@ -102,7 +102,7 @@ ms.locfileid: "49276576"
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Property`|必須。 テストするプロパティの名前。 子でプロパティ以前おく必要があります、`InstallChecks`要素。 詳細については、次を参照してください。 [ \<InstallChecks > 要素](../deployment/installchecks-element-bootstrapper.md)します。|  
+|`Property`|必須。 テストするプロパティの名前。 子でプロパティ以前おく必要があります、`InstallChecks`要素。 詳細については、[ \<InstallChecks > 要素](../deployment/installchecks-element-bootstrapper.md)を参照してください。|  
 |`Compare`|必須。 実行する比較の種類。 次に、有効な値を示します。<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
 |`Value`|必須。 プロパティと比較する値。|  
 |`Schedule`|任意。 名前、`Schedule`このルールを評価するときに定義するタグ。|  
@@ -114,7 +114,7 @@ ms.locfileid: "49276576"
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Property`|必須。 テストするプロパティの名前。 子でプロパティ以前おく必要があります、`InstallChecks`要素。 詳細については、次を参照してください。 [ \<InstallChecks > 要素](../deployment/installchecks-element-bootstrapper.md)します。|  
+|`Property`|必須。 テストするプロパティの名前。 子でプロパティ以前おく必要があります、`InstallChecks`要素。 詳細については、[ \<InstallChecks > 要素](../deployment/installchecks-element-bootstrapper.md)を参照してください。|  
 |`Compare`|必須。 実行する比較の種類。 次に、有効な値を示します。<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
 |`Value`|必須。 プロパティと比較する値。|  
 |`String`|任意。 障害発生時にユーザーに表示するテキスト。|  

@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: e295bff2f8398765f90c3fd537ca4f546208ce4b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51768293"
@@ -60,7 +60,7 @@ ms.locfileid: "51768293"
   
   プロジェクト サブタイプの集計であるため、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>オブジェクト、これを制御するこれらのプロパティの定義をオーバーライドできます**プロパティ ページ** ダイアログ ボックスが表示されます。 プロジェクト サブタイプ内部の基本プロジェクトからこれらのプロパティを取得し、し、追加または削除できます Clsid に応じて。  
   
-  プロジェクト サブタイプによって追加された新しいプロパティ ページには、プロジェクトの基本実装からプロジェクト構成の参照オブジェクトが渡されます。 このプロジェクト構成の参照オブジェクトには、オートメーション エクステンダーがサポートしています。 AutomationExtenders の詳細については、次を参照してください。[実装とオートメーション エクステンダーを使用して](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356)します。 プロジェクト サブタイプの呼び出しによって実装されるプロパティ ページ<xref:EnvDTE.Project.Extender%2A>オブジェクトを取得する独自プロジェクト サブタイプ構成参照ベースのプロジェクトの構成の参照オブジェクトを拡張します。  
+  プロジェクト サブタイプによって追加された新しいプロパティ ページには、プロジェクトの基本実装からプロジェクト構成の参照オブジェクトが渡されます。 このプロジェクト構成の参照オブジェクトには、オートメーション エクステンダーがサポートしています。 AutomationExtenders の詳細については、[実装とオートメーション エクステンダーを使用して](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356)を参照してください。 プロジェクト サブタイプの呼び出しによって実装されるプロパティ ページ<xref:EnvDTE.Project.Extender%2A>オブジェクトを取得する独自プロジェクト サブタイプ構成参照ベースのプロジェクトの構成の参照オブジェクトを拡張します。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:EnvDTE.IFilterProperties>   

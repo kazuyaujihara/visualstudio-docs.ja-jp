@@ -27,7 +27,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: adf0a6df54c3e6bd758896ac8a836b6174e767b8
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49272468"
@@ -43,7 +43,7 @@ ms.locfileid: "49272468"
   
  1 つの場所からアプリケーションの展開を別の更新することができますも。 さまざまな更新プログラムの場所を指定します"するには」を参照してください。  
   
- 詳細については、次を参照してください。 [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)します。  
+ 詳細については、[ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)を参照してください。  
   
  管理する更新プログラムの動作、**アプリケーションの更新プログラム** ダイアログ ボックスから使用可能な**発行**のページ、**プロジェクト デザイナー。**  
   

@@ -19,7 +19,7 @@ ms.locfileid: "57868938"
 ---
 # <a name="correlateson-definition-dialog-box"></a>[CorrelatesOn の定義] ダイアログ ボックス
 
-**CorrelatesOn**  ダイアログ ボックスは、ワークフロー デザイナーで編集に使用される、<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>のプロパティを<xref:System.ServiceModel.Activities.Receive>アクティビティ。 詳細については、次を参照してください。[アクティビティ デザイナーの受信](../workflow-designer/receive-activity-designer.md)します。
+**CorrelatesOn**  ダイアログ ボックスは、ワークフロー デザイナーで編集に使用される、<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>のプロパティを<xref:System.ServiceModel.Activities.Receive>アクティビティ。 詳細については、[アクティビティ デザイナーの受信](../workflow-designer/receive-activity-designer.md)を参照してください。
 
 <xref:System.ServiceModel.Activities.Receive> アクティビティの間の相関関係によって、ワークフロー内でさまざまなサービス操作が相互に接続される方法が指定されます。
 

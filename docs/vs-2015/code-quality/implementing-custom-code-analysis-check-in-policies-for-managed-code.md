@@ -20,7 +20,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49268971"
@@ -40,7 +40,7 @@ ms.locfileid: "49268971"
  チーム プロジェクトの設定、カスタム ルールを作成する最初にフォルダーを作成する特殊なチェックイン ポリシーの規則セットの**ソース管理エクスプ ローラー**します。 規則セット ファイルを作成し、バージョン管理にファイルを追加します。 最後に、コード分析チェックイン ポリシー、チーム プロジェクトとして設定するルールを指定します。  
   
 > [!NOTE]
->  チーム プロジェクトのフォルダーを作成、最初にマップする必要、チーム プロジェクトのルート、ローカル コンピューター上の場所。 詳細については、次を参照してください。 [(古い) のワークスペースの作成と操作](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2)します。  
+>  チーム プロジェクトのフォルダーを作成、最初にマップする必要、チーム プロジェクトのルート、ローカル コンピューター上の場所。 詳細については、[(古い) のワークスペースの作成と操作](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2)を参照してください。  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>チェックイン ポリシーのルール セットのバージョン管理フォルダーを作成するには  
   
@@ -66,7 +66,7 @@ ms.locfileid: "49268971"
   
 1.  **ソース管理エクスプ ローラー**、新しいフォルダーを右クリックし、クリックして**フォルダーに項目の追加**します。  
   
-     詳細については、次を参照してください。[バージョン管理を使用して、](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)します。  
+     詳細については、[バージョン管理を使用して、](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)を参照してください。  
   
 2.  規則セットを作成したファイルをクリックおよびクリック**完了**します。  
   

@@ -49,7 +49,7 @@ ms.locfileid: "58322494"
 |[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint プロジェクト項目を表します。 この要素の必須のルート要素の *.spdata*ファイル。|
 
 ## <a name="remarks"></a>Remarks
- 安全なコントロールの詳細については、次を参照してください。[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)します。
+ 安全なコントロールの詳細については、[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)を参照してください。
 
 ## <a name="element-information"></a>要素情報
 

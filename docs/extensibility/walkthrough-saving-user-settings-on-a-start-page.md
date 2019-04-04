@@ -24,12 +24,12 @@ ms.locfileid: "56710150"
 
 設定ストアが読み取りし、書き込みに Visual Studio の実験用インスタンスで実行されている、 **HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<CollectionName >。**
 
-設定を保持する方法の詳細については、次を参照してください。 [Extending User Settings and オプション](../extensibility/extending-user-settings-and-options.md)します。
+設定を保持する方法の詳細については、[Extending User Settings and オプション](../extensibility/extending-user-settings-and-options.md)を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
 > [!NOTE]
-> このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
+> このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。
 >
 > 使用して、スタート ページ プロジェクト テンプレートをダウンロードする**拡張機能マネージャー**します。
 

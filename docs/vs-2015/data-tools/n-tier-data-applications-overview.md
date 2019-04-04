@@ -24,7 +24,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49852922"
@@ -43,7 +43,7 @@ N-レベル * データ アプリケーションは複数に区切られたデ�
   
 -   [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)個別の名前空間に DataContext とデータ クラスを生成する設定を提供します。 これにより、データ アクセス層とデータ エンティティ層の論理的な分離が可能になります。  
   
--   [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供、<xref:System.Data.Linq.Table%601.Attach%2A>メソッドすると、アプリケーションでさまざまな層から DataContext をまとめることができます。 詳細については、次を参照してください。 [N 層アプリケーションと linq to SQL のリモート アプリケーション](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)します。  
+-   [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供、<xref:System.Data.Linq.Table%601.Attach%2A>メソッドすると、アプリケーションでさまざまな層から DataContext をまとめることができます。 詳細については、[N 層アプリケーションと linq to SQL のリモート アプリケーション](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)を参照してください。  
   
 ## <a name="presentation-tier"></a>プレゼンテーション層  
  *プレゼンテーション層*はユーザーがアプリケーションと対話する層です。 多くの場合、追加のアプリケーション ロジックも含まれています。 一般的なプレゼンテーション層のコンポーネントには、次のようなものがあります。  

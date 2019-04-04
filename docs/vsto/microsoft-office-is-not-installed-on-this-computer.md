@@ -24,7 +24,7 @@ ms.locfileid: "56634592"
 
 ## <a name="to-correct-the-error"></a>このエラーを解決するには
 
-1.  プライマリ相互運用機能アセンブリを含む、プロジェクトの種類に関連付けられている Microsoft Office アプリケーションをインストールします。 Microsoft Office のサポートされているバージョンの詳細については、次を参照してください。 [Office ソリューションを開発コンピューターを構成する](../vsto/configuring-a-computer-to-develop-office-solutions.md)します。
+1.  プライマリ相互運用機能アセンブリを含む、プロジェクトの種類に関連付けられている Microsoft Office アプリケーションをインストールします。 Microsoft Office のサポートされているバージョンの詳細については、[Office ソリューションを開発コンピューターを構成する](../vsto/configuring-a-computer-to-develop-office-solutions.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションの開発コンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md)

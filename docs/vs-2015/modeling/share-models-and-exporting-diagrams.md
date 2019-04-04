@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: f59ac9d96a9f001b54c86bbf51819ecf2efb40c9
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51798457"
@@ -36,21 +36,21 @@ Visual Studio では、いくつかの方法でモデルと図を同僚と共有
   
  [!INCLUDE[esprscc](../includes/esprscc-md.md)] を使用することをお勧めします。  
   
- 詳細については、次を参照してください。[モデルおよびバージョン管理下にある図](../modeling/manage-models-and-diagrams-under-version-control.md)します。  
+ 詳細については、[モデルおよびバージョン管理下にある図](../modeling/manage-models-and-diagrams-under-version-control.md)を参照してください。  
   
- 中規模または大規模プロジェクトでモデルの整理に関するヒントについては、次を参照してください。[モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)します。  
+ 中規模または大規模プロジェクトでモデルの整理に関するヒントについては、[モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)を参照してください。  
   
 ## <a name="reading-and-reviewing-models"></a>モデルの読み取りと確認  
  (これは、モデルを作成することはできません)、Visual Studio の一部のバージョンを使用してチーム メンバーは、図、および有向グラフをモデリング、モデルを読み取ることができますが、編集はできません。  この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
  UML 図またはレイヤー図は、その図が作成されたモデル内でのみ開くことができます。 このため、図にアクセスするには、すべてのモデリング プロジェクト ファイルまたはそのコピーへのアクセスを提供する必要があります。  
   
- 詳細については、次を参照してください。[他の Visual Studio のエディションでモデルおよびダイアグラムを読み取る](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)します。  
+ 詳細については、[他の Visual Studio のエディションでモデルおよびダイアグラムを読み取る](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)を参照してください。  
   
 ## <a name="using-diagrams-in-documents-and-presentations"></a>ドキュメントとプレゼンテーションでの図の使用  
  図の一部をドキュメントやプレゼンテーションにコピーすることができます。 また、図を XPS ファイルなどに出力することもできます。  
   
- 詳細については、次を参照してください。[ダイアグラムをイメージとしてエクスポート](../modeling/export-diagrams-as-images.md)します。  
+ 詳細については、[ダイアグラムをイメージとしてエクスポート](../modeling/export-diagrams-as-images.md)を参照してください。  
   
 ## <a name="related-topics"></a>関連トピック  
   

@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49263121"
@@ -64,7 +64,7 @@ ms.locfileid: "49263121"
   
 3.  追加または規則セット エディターを使用して規則を削除します。  
   
-     詳細については、次を参照してください。[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)です。  
+     詳細については、[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)を参照してください。  
   
 4.  ローカル コンピューター上の .ruleset ファイルまたは UNC パスに設定、変更されたルールを保存します。  
   

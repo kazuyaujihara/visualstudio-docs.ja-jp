@@ -33,7 +33,7 @@ ms.locfileid: "56606339"
 
     -   拡張機能は、新しい種類の Web パーツ インスタンスを表すノードを定義します。 この新しいノードの種類は、新しい子ノードの基礎**Web パーツ ギャラリー**ノード。 新しい Web パーツのノードの種類の情報が表示されます、**プロパティ**それが表す Web パーツのウィンドウ。 ノードの種類には、Web パーツに関連するその他のタスクを実行するための開始点として使用できるカスタムのショートカット メニュー項目も含まれています。
 
--   拡張機能のアセンブリを呼び出す 2 つのカスタム SharePoint コマンドを作成します。 SharePoint コマンドは、SharePoint のサーバー オブジェクト モデルでの Api を使用する拡張機能アセンブリを呼び出すことができる方法です。 このチュートリアルでは、開発用コンピューター上のローカルの SharePoint サイトから Web パーツの情報を取得するコマンドを作成します。 詳細については、次を参照してください。[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)します。
+-   拡張機能のアセンブリを呼び出す 2 つのカスタム SharePoint コマンドを作成します。 SharePoint コマンドは、SharePoint のサーバー オブジェクト モデルでの Api を使用する拡張機能アセンブリを呼び出すことができる方法です。 このチュートリアルでは、開発用コンピューター上のローカルの SharePoint サイトから Web パーツの情報を取得するコマンドを作成します。 詳細については、[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)を参照してください。
 
 -   拡張機能をデプロイする Visual Studio Extension (VSIX) パッケージを作成します。
 
@@ -47,13 +47,13 @@ ms.locfileid: "56606339"
 
 - Windows、SharePoint、Visual Studio のエディションがサポートされています。
 
-- Visual Studio SDK。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、次を参照してください。 [Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)します。
+- Visual Studio SDK。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、[Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
   次の概念に関する知識があると役に立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
-- For SharePoint サーバー オブジェクト モデルを使用します。 詳細については、次を参照してください。 [SharePoint Foundation サーバー側オブジェクト モデルを使用して](http://go.microsoft.com/fwlink/?LinkId=177796)します。
+- For SharePoint サーバー オブジェクト モデルを使用します。 詳細については、[SharePoint Foundation サーバー側オブジェクト モデルを使用して](http://go.microsoft.com/fwlink/?LinkId=177796)を参照してください。
 
-- SharePoint ソリューションの web パーツ。 詳細については、次を参照してください。 [Web パーツの概要](http://go.microsoft.com/fwlink/?LinkId=177803)します。
+- SharePoint ソリューションの web パーツ。 詳細については、[Web パーツの概要](http://go.microsoft.com/fwlink/?LinkId=177803)を参照してください。
 
 ## <a name="create-the-projects"></a>プロジェクトを作成します。
  このチュートリアルを完了するには、3 つのプロジェクトを作成する必要があります。
@@ -275,7 +275,7 @@ ms.locfileid: "56606339"
 
 1.  **ソリューション エクスプ ローラー**、WebPartNode プロジェクトで開き、 **source.extension.vsixmanifest**マニフェスト エディターでファイル。
 
-     source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。
+     source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、[VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)を参照してください。
 
 2.  **製品名**ボックスに、入力**for サーバー エクスプ ローラー Web パーツのギャラリー ノード**します。
 
@@ -290,7 +290,7 @@ ms.locfileid: "56606339"
 6.  **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、[MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))を参照してください。
 
 7.  **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 
@@ -303,7 +303,7 @@ ms.locfileid: "56606339"
 10. **型**ボックスに、入力**SharePoint.Commands.v4**します。
 
     > [!NOTE]
-    >  この要素は、Visual Studio 拡張機能に含めるカスタム拡張機能を指定します。 詳細については、次を参照してください。[資産要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)します。
+    >  この要素は、Visual Studio 拡張機能に含めるカスタム拡張機能を指定します。 詳細については、[資産要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)を参照してください。
 
 11. **ソース**一覧で、選択、**現在のソリューションでプロジェクトを**リスト項目。
 

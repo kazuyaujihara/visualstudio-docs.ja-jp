@@ -57,7 +57,7 @@ ms.locfileid: "56954051"
 
 2. パッケージが Visual Studio によって、または他のパッケージで定義されている任意のコマンドを呼び出す場合は、追加、`UsedCommands`要素の後に、`Commands`要素。 この要素で設定を[UsedCommand](../../extensibility/usedcommand-element.md)各コマンドを呼び出すが、パッケージの一部ではないです。 設定、`guid`と`id`の属性、`UsedCommand`要素を呼び出すコマンドの GUID と ID の値。
 
-   Guid と Visual Studio の Id のコマンドを検索する方法の詳細については、次を参照してください。 [Guid と Visual Studio の Id コマンド](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)します。 他のパッケージからのコマンドを呼び出すを使用して GUID とコマンドの ID で定義されている、 *.vsct*それらのパッケージのファイル。
+   Guid と Visual Studio の Id のコマンドを検索する方法の詳細については、[Guid と Visual Studio の Id コマンド](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)を参照してください。 他のパッケージからのコマンドを呼び出すを使用して GUID とコマンドの ID で定義されている、 *.vsct*それらのパッケージのファイル。
 
 ### <a name="declare-ui-elements"></a>UI 要素を宣言します。
  内のすべての新しい UI 要素の宣言、`Symbols`のセクション、 *.vsct*ファイル。
@@ -92,7 +92,7 @@ ms.locfileid: "56954051"
 
     最初に作成する必要がある新しいコマンドのグループを追加すると、`Groups`要素を追加し、[グループ](../../extensibility/group-element.md)コマンド グループごとの要素。
 
-    設定、`guid`と`id`の各属性`Group`要素、および設定して、`priority`属性を親メニューのグループの相対位置を確立します。 詳細については、次を参照してください。[ボタンの再利用可能なグループ作成](../../extensibility/creating-reusable-groups-of-buttons.md)です。
+    設定、`guid`と`id`の各属性`Group`要素、および設定して、`priority`属性を親メニューのグループの相対位置を確立します。 詳細については、[ボタンの再利用可能なグループ作成](../../extensibility/creating-reusable-groups-of-buttons.md)を参照してください。
 
 3. IDE に新しいコマンドを追加する場合は、追加、`Buttons`要素を`Commands`要素。 次に、各コマンドでは、追加、[ボタン](../../extensibility/button-element.md)要素を`Buttons`要素。
 
@@ -108,9 +108,9 @@ ms.locfileid: "56954051"
        > [!NOTE]
        >  ツール バー ボタンのアイコンがあります。
 
-   詳細については、次を参照してください。 [Menucommand とします。OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)します。
+   詳細については、[Menucommand とを参照してください。OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)します。
 
-4. コマンドのいずれかには、アイコンが必要とする場合は、追加、[ビットマップ](../../extensibility/bitmaps-element.md)要素を`Commands`要素。 次に、各アイコンの追加、[ビットマップ](../../extensibility/bitmap-element.md)要素を`Bitmaps`要素。 これは、ビットマップ リソースの場所を指定します。 詳細については、次を参照してください。[メニュー コマンドにアイコンを追加](../../extensibility/adding-icons-to-menu-commands.md)します。
+4. コマンドのいずれかには、アイコンが必要とする場合は、追加、[ビットマップ](../../extensibility/bitmaps-element.md)要素を`Commands`要素。 次に、各アイコンの追加、[ビットマップ](../../extensibility/bitmap-element.md)要素を`Bitmaps`要素。 これは、ビットマップ リソースの場所を指定します。 詳細については、[メニュー コマンドにアイコンを追加](../../extensibility/adding-icons-to-menu-commands.md)を参照してください。
 
    ほとんどのメニューのグループ、およびコマンドを正しく配置する親子構造を利用できます。 非常に大量のコマンド セットでは、コマンドの配置を指定することをお勧め メニューのグループ、またはコマンドは、複数の場所に表示する必要があります、または。
 
@@ -122,7 +122,7 @@ ms.locfileid: "56954051"
 
    1.  設定、`guid`属性の名前を`GuidSymbol`コマンド セットを定義する要素。 ターゲット要素でない場合、パッケージの一部を使用して guid をコマンド セットの対応するで定義されている *.vsct*ファイル。
 
-   2.  設定、`id`と一致する属性、 `id` [ターゲット] メニューまたはグループの属性です。 メニューおよび Visual Studio によって公開されているグループの一覧については、次を参照してください。 [Guid と Visual Studio の Id のメニュー](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)または[Guid と Visual Studio の Id のツールバー](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)します。
+   2.  設定、`id`と一致する属性、 `id` [ターゲット] メニューまたはグループの属性です。 メニューおよび Visual Studio によって公開されているグループの一覧については、[Guid と Visual Studio の Id のメニュー](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)または[Guid と Visual Studio の Id のツールバー](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)を参照してください。
 
    IDE では、配置する UI 要素の数が多いがある場合、または複数の場所に表示される要素がある場合は、定義への配置、 [CommandPlacements](../../extensibility/commandplacements-element.md)要素は、次の手順で示すようにします。
 

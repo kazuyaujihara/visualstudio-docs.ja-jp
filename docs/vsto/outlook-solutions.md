@@ -52,7 +52,7 @@ ms.locfileid: "56606239"
 
 - Outlook フォルダー内のアイテムを検索する。
 
-  詳細については、次を参照してください。 [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)します。
+  詳細については、[Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)を参照してください。
 
 ## <a name="customize-the-user-interface-of-an-outlook-application"></a>Outlook アプリケーションのユーザー インターフェイスをカスタマイズします。
 
@@ -63,7 +63,7 @@ ms.locfileid: "56606239"
 |Outlook インスペクターに表示されるカスタム作業ウィンドウを追加する。|[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。|
 |既存の Outlook フォームを拡張または置換するフォーム領域を追加する。|[Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)|
 
- Outlook の UI およびその他の Microsoft Office アプリケーションをカスタマイズする方法の詳細については、次を参照してください。 [Office UI のカスタマイズ](../vsto/office-ui-customization.md)します。
+ Outlook の UI およびその他の Microsoft Office アプリケーションをカスタマイズする方法の詳細については、[Office UI のカスタマイズ](../vsto/office-ui-customization.md)を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 

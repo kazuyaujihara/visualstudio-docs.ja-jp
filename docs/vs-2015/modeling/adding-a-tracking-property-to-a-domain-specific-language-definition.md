@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49894379"
@@ -32,7 +32,7 @@ ms.locfileid: "49894379"
   
  たとえば、ドメイン固有言語ツール (DSL) ツールでユーザーが、ドメイン クラスの名前を使用して計算される既定値を持つドメイン クラスのプロパティの表示名デザイン時に値を変更したりできます計算値にリセットします。  
   
- このチュートリアルでは、ドメイン固有言語 (DSL) を持つモデルの既定の Namespace プロパティに基づいて既定値を持つプロパティの追跡の Namespace を作成します。 プロパティの追跡の詳細については、次を参照してください。[追跡プロパティを定義する](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be)します。  
+ このチュートリアルでは、ドメイン固有言語 (DSL) を持つモデルの既定の Namespace プロパティに基づいて既定値を持つプロパティの追跡の Namespace を作成します。 プロパティの追跡の詳細については、[追跡プロパティを定義する](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be)を参照してください。  
   
 - DSL ツール サポートは、プロパティ記述子を追跡します。 ただし、DSL デザイナーを使用して、言語にトラッキング プロパティを追加することはできません。 したがって、定義して、トラッキング プロパティを実装するカスタム コードを追加する必要があります。  
   
@@ -146,7 +146,7 @@ ms.locfileid: "49894379"
   
 1.  **ソリューション エクスプ ローラー**ツールバーで、をクリックして**すべてのテンプレートの変換**します。  
   
-2.  システムでは、ソリューションでは、コードを再生成し、DslDefinition.dsl を保存します。 定義ファイルの XML 形式の詳細については、次を参照してください。 [DslDefinition.dsl ファイル](../modeling/the-dsldefinition-dsl-file.md)します。  
+2.  システムでは、ソリューションでは、コードを再生成し、DslDefinition.dsl を保存します。 定義ファイルの XML 形式の詳細については、[DslDefinition.dsl ファイル](../modeling/the-dsldefinition-dsl-file.md)を参照してください。  
   
 ## <a name="creating-files-for-custom-code"></a>カスタム コードのファイルの作成  
  すべてのテンプレートを変換するときは、Dsl と DslPackage プロジェクトで、ドメイン固有言語を定義するソース コードが生成されます。 生成されたテキストに干渉を避けることができます、ために、生成されるコード ファイルから個別のファイルでカスタム コードを記述します。  
@@ -760,7 +760,7 @@ ms.locfileid: "49894379"
 10. ソリューションを保存し、試験的ビルドを閉じます。  
   
 ## <a name="next-steps"></a>次の手順  
- 1 つ以上の追跡のプロパティを使用して、または 1 つ以上の DSL に追跡プロパティを実装する場合は、各追跡プロパティをサポートするための一般的なコードを生成するテキスト テンプレートを作成できます。 テキスト テンプレートの詳細については、次を参照してください。[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。  
+ 1 つ以上の追跡のプロパティを使用して、または 1 つ以上の DSL に追跡プロパティを実装する場合は、各追跡プロパティをサポートするための一般的なコードを生成するテキスト テンプレートを作成できます。 テキスト テンプレートの詳細については、[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   

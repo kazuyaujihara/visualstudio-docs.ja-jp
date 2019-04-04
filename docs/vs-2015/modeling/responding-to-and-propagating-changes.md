@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 32deaa75ed09ad1a1320ec72d95d75adc92c12b2
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49280385"
@@ -48,11 +48,11 @@ ms.locfileid: "49280385"
   
  ストア イベントを使用して、ストア内の一貫性を維持するためには、ストア、および規則外のオブジェクトと、モデルを同期します。  
   
--   **カスタム ルールを作成する**抽象ルールからの派生クラスとしてカスタムの規則を作成します。 カスタム ルールに関する、フレームワークにも通知する必要があります。 詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。  
+-   **カスタム ルールを作成する**抽象ルールからの派生クラスとしてカスタムの規則を作成します。 カスタム ルールに関する、フレームワークにも通知する必要があります。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
   
--   **イベントにサブスクライブする**前に、イベントをサブスクライブすることができますが、イベント ハンドラーおよびデリゲートを作成します。 使用して、<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>プロパティ、イベントをサブスクライブします。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
+-   **イベントにサブスクライブする**前に、イベントをサブスクライブすることができますが、イベント ハンドラーおよびデリゲートを作成します。 使用して、<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>プロパティ、イベントをサブスクライブします。 詳細については、[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)を参照してください。  
   
--   **変更の取り消し**トランザクションを元に戻すと、イベントが発生しますが、規則は適用されません。 ルールは、値を変更します。 その変更を元に戻す場合は、値は、元に戻す操作中に、元の値にリセットされます。 イベントが発生したときに、元の値に戻す値を手動で変更する必要があります。 Transactons と元に戻すの詳細については、次を参照してください。[方法: モデルを更新するトランザクションを使用して](../modeling/how-to-use-transactions-to-update-the-model.md)します。  
+-   **変更の取り消し**トランザクションを元に戻すと、イベントが発生しますが、規則は適用されません。 ルールは、値を変更します。 その変更を元に戻す場合は、値は、元に戻す操作中に、元の値にリセットされます。 イベントが発生したときに、元の値に戻す値を手動で変更する必要があります。 Transactons と元に戻すの詳細については、[方法: モデルを更新するトランザクションを使用して](../modeling/how-to-use-transactions-to-update-the-model.md)を参照してください。  
   
 -   **ルールとイベントにイベント引数を渡す**両方のイベント ルールが渡されると、`EventArgs`方法に関する情報を持つパラメーター、モデルを変更します。  
   

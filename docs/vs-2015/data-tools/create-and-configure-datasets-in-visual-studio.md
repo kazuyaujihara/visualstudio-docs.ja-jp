@@ -22,7 +22,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: bea966bfde9726047ab52d10523a54be3f15c373
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49217394"
@@ -33,7 +33,7 @@ ms.locfileid: "49217394"
   
 A*データセット*一連のデータベースからデータをメモリに格納され、有効にする変更の追跡をサポートするオブジェクトは、作成、読み取り、更新および削除 (CRUD) 操作でそのデータを常に、データベースに接続する必要はありません。 データセットは、単純な用に設計された*フォーム オーバー データ*ビジネス アプリケーション。 新しいアプリケーションで、Entity Framework を使用して、保存してメモリ内のデータをモデル化を検討してください。 データセットを使用するには、データベースの概念の基本的な知識があります。  
   
- 型指定されたを作成する<xref:System.Data.DataSet>を使用してデザイン時に Visual Studio でクラス、**データ ソース構成ウィザード**します。 プログラムでデータセットを作成する方法の詳細については、次を参照してください。[データセットを作成する](http://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc)します。  
+ 型指定されたを作成する<xref:System.Data.DataSet>を使用してデザイン時に Visual Studio でクラス、**データ ソース構成ウィザード**します。 プログラムでデータセットを作成する方法の詳細については、[データセットを作成する](http://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc)を参照してください。  
   
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>データ ソース構成ウィザードを使用して、新しいデータセットを作成します。  
   
@@ -61,7 +61,7 @@ A*データセット*一連のデータベースからデータをメモリに�
   
      ![データセット デザイナー](../data-tools/media/dataset-designer.png "データセット デザイナー")  
   
-7.  テーブルを接続するリレーションシップの線は、データベースで定義されているテーブルのリレーションシップを表します。 既定では、データベース内の foreign key 制約は、更新プログラムのみ、リレーションシップとして表されを none に設定された規則を削除します。 通常、対象です。 ただし、表示する行をクリックして、**関係**ダイアログ ボックスで、階層的な更新プログラムの動作を変更することができます。 詳細については、次を参照してください。[データセットのリレーションシップ](../data-tools/relationships-in-datasets.md)と[階層更新](../data-tools/hierarchical-update.md)します。  
+7.  テーブルを接続するリレーションシップの線は、データベースで定義されているテーブルのリレーションシップを表します。 既定では、データベース内の foreign key 制約は、更新プログラムのみ、リレーションシップとして表されを none に設定された規則を削除します。 通常、対象です。 ただし、表示する行をクリックして、**関係**ダイアログ ボックスで、階層的な更新プログラムの動作を変更することができます。 詳細については、[データセットのリレーションシップ](../data-tools/relationships-in-datasets.md)と[階層更新](../data-tools/hierarchical-update.md)を参照してください。  
   
      ![Dataset リレーション ダイアログ](../data-tools/media/raddata-relation-dialog.png "raddata 関係ダイアログ")  
   
@@ -73,7 +73,7 @@ A*データセット*一連のデータベースからデータをメモリに�
   
      ![データセットのツールボックス](../data-tools/media/raddata-dataset-toolbox.png "raddata データセット ツールボックス")  
   
-10. 次に、おそらく、データセットにデータを設定する方法を指定します。 そのため、使用する、 **TableAdapter 構成ウィザード**します。 詳細については、次を参照してください。 [Tableadapter を使用してデータセットを入力](../data-tools/fill-datasets-by-using-tableadapters.md)します。  
+10. 次に、おそらく、データセットにデータを設定する方法を指定します。 そのため、使用する、 **TableAdapter 構成ウィザード**します。 詳細については、[Tableadapter を使用してデータセットを入力](../data-tools/fill-datasets-by-using-tableadapters.md)を参照してください。  
   
 ## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>既存のデータセットをデータベース テーブルまたは他のオブジェクトを追加します。  
  この手順では、まずデータセットを作成するために使用するのと同じデータベースからテーブルを追加する方法を示します。  
@@ -94,7 +94,7 @@ A*データセット*一連のデータベースからデータをメモリに�
   
 2.  ドラッグ、<xref:System.Data.DataTable>クラスから、**データセット**のタブ、**ツールボックス**上に、**データセット デザイナー**します。  
   
-3.  列を追加してデータ テーブルを定義します。 詳細については、次を参照してください。[方法: DataTable に列を追加](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)します。  
+3.  列を追加してデータ テーブルを定義します。 詳細については、[方法: DataTable に列を追加](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)を参照してください。  
   
-4.  スタンドアロン テーブルを実装する必要があります`Fill`ロジックを独立したテーブルにデータを入力するようにします。 スタンドアロンのデータ テーブルの入力方法の詳細については、次を参照してください。 [DataAdapter からの Dataset](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153)します。
+4.  スタンドアロン テーブルを実装する必要があります`Fill`ロジックを独立したテーブルにデータを入力するようにします。 スタンドアロンのデータ テーブルの入力方法の詳細については、[DataAdapter からの Dataset](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153)を参照してください。
 

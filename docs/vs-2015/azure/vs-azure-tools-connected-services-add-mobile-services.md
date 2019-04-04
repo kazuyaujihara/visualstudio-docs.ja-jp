@@ -14,7 +14,7 @@ ms.date: 12/16/2015
 ms.author: mlearned
 ms.openlocfilehash: 1679f8e20c4516ab64c4358229b4eec6ab5029ba
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002902"
@@ -65,7 +65,7 @@ Visual Studio 2015 では、Azure Mobile Services を使用してに接続でき
 6. ガイドとしてコード サンプルを使用して、開始、モバイル サービスにアクセスするコードを記述します。
 
 ## <a name="how-your-project-is-modified"></a>プロジェクトを変更する方法
-Visual Studio でプロジェクトを変更する方法は、プロジェクトの種類によって異なります。 C#クライアント アプリを参照してください[内容 –C#プロジェクト](http://go.microsoft.com/fwlink/p/?LinkId=513119)します。 JavaScript クライアント アプリでは、次を参照してください。[内容 – JavaScript プロジェクト](http://go.microsoft.com/fwlink/p/?LinkId=513120)します。 Cordova アプリでは、次を参照してください。[内容 – Cordova プロジェクト](http://go.microsoft.com/fwlink/p/?LinkId=513116)します。
+Visual Studio でプロジェクトを変更する方法は、プロジェクトの種類によって異なります。 C#クライアント アプリを参照してください[内容 –C#プロジェクト](http://go.microsoft.com/fwlink/p/?LinkId=513119)します。 JavaScript クライアント アプリでは、[内容 – JavaScript プロジェクト](http://go.microsoft.com/fwlink/p/?LinkId=513120)を参照してください。 Cordova アプリでは、[内容 – Cordova プロジェクト](http://go.microsoft.com/fwlink/p/?LinkId=513116)を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 質問してヘルプを表示します。 

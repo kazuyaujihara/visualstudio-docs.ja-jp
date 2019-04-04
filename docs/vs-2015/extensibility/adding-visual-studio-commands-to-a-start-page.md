@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 6a5a0e205d04fb219d000dd87e97735cdfd26162
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51748760"
@@ -56,7 +56,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 > [!NOTE]
 >  `x:` XAML スキーマを指すのエイリアスがすべてのコマンドの先頭に必要です。  
   
- 値を設定することができます、`Command`プロパティからアクセスできる任意のコマンドを**コマンド**ウィンドウ。 使用可能なコマンドの一覧は、次を参照してください。 [Visual Studio Command Aliases](../ide/reference/visual-studio-command-aliases.md)します。  
+ 値を設定することができます、`Command`プロパティからアクセスできる任意のコマンドを**コマンド**ウィンドウ。 使用可能なコマンドの一覧は、[Visual Studio Command Aliases](../ide/reference/visual-studio-command-aliases.md)を参照してください。  
   
  追加するコマンドには、追加のパラメーターが必要とする場合の値に追加できます、`CommandParameter`プロパティ。 次の例に示すように、スペースを使用して、コマンドから別のパラメーター。  
   
@@ -112,7 +112,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 </ListBox  
 ```  
   
- 例については、次を参照してください。[チュートリアル: [スタート] ページのユーザー設定の保存](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)します。  
+ 例については、[チュートリアル: [スタート] ページのユーザー設定の保存](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [スタート ページへのユーザー コントロールの追加](../extensibility/adding-user-control-to-the-start-page.md)

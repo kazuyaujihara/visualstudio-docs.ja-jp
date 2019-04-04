@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49845746"
@@ -86,7 +86,7 @@ ms.locfileid: "49845746"
   
 4.  新しいプロパティのパスを選択し、**プロパティ**ウィンドウで、設定**プロパティへのパス**適切なモデル要素のパスにします。  
   
-     ツリー ビュー内のパスを編集するには、このプロパティの右側の下矢印をクリックします。 ドメイン パスの詳細については、次を参照してください。[ドメイン パス構文](../modeling/domain-path-syntax.md)します。 編集したときに、パスのようになります**BookReferencesAuthor.Author/!作成者**します。  
+     ツリー ビュー内のパスを編集するには、このプロパティの右側の下矢印をクリックします。 ドメイン パスの詳細については、[ドメイン パス構文](../modeling/domain-path-syntax.md)を参照してください。 編集したときに、パスのようになります**BookReferencesAuthor.Author/!作成者**します。  
   
 5.  設定**プロパティ**を**名前**のドメイン プロパティ**作成者**します。  
   

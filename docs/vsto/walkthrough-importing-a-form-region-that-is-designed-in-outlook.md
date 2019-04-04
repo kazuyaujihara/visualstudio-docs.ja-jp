@@ -143,7 +143,7 @@ ms.locfileid: "56631563"
 
 5.  **[作成するフォーム領域の種類を選択します]** ページで **[すべて置換]** をクリックし、 **[次へ]** をクリックします。
 
-     Outlook フォーム全体が *すべて置換* フォーム領域に置き換えられます。 フォーム領域の種類の詳細については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
+     Outlook フォーム全体が *すべて置換* フォーム領域に置き換えられます。 フォーム領域の種類の詳細については、[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)を参照してください。
 
 6.  **[説明用のテキストを指定し、表示設定を選択します]** ページで **[次へ]** をクリックします。
 
@@ -247,9 +247,9 @@ ms.locfileid: "56631563"
 
 -   ビジュアル デザイナーにマネージ コントロールをドラッグしてフォーム領域の外観をデザインする方法の詳細については、次を参照してください。[チュートリアル。Outlook フォーム領域をデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)します。
 
--   Outlook アイテムのリボンをカスタマイズする方法の詳細については、次を参照してください。 [Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)します。
+-   Outlook アイテムのリボンをカスタマイズする方法の詳細については、[Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)を参照してください。
 
--   Outlook にカスタム作業ウィンドウを追加する方法の詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
+-   Outlook にカスタム作業ウィンドウを追加する方法の詳細については、[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [実行時にフォーム領域へのアクセスします。](../vsto/accessing-a-form-region-at-run-time.md)

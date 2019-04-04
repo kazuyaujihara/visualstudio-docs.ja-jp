@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: erikre
 ms.openlocfilehash: c53aefdf17e11974e5ef563cd3684e80722837c1
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49195989"
@@ -39,12 +39,12 @@ ms.locfileid: "49195989"
 |**ルール セットのプレビュー**|選択したルール セットに含まれるルールを表示します。|  
 |**わかりました**|選択したルール セットをクリックして、 **PolicyActivity**アクティビティ。|  
   
- 作成し、ルール セットを編集する方法の詳細については、次を参照してください。[ルール セット エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)します。  
+ 作成し、ルール セットを編集する方法の詳細については、[ルール セット エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)を参照してください。  
   
 > [!WARNING]
 >  [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする場合に使用される、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]のルール エディターは、複数バージョン対応機能をサポートしていません。  
   
- 条件の詳細については、次を参照してください。[ワークフロー内の条件を使用して](http://go.microsoft.com/fwlink?LinkID=65009)します。  
+ 条件の詳細については、[ワークフロー内の条件を使用して](http://go.microsoft.com/fwlink?LinkID=65009)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)   

@@ -89,7 +89,7 @@ DSL を定義するには、以下のコンポーネントをインストール�
 
 ![DSL デザイナー](../modeling/media/dsl_designer.png)
 
-このソリューションはドメイン固有言語を定義します。 詳細については、次を参照してください。[ドメイン固有言語ツールのユーザー インターフェイスの概要](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)します。
+このソリューションはドメイン固有言語を定義します。 詳細については、[ドメイン固有言語ツールのユーザー インターフェイスの概要](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)を参照してください。
 
 ## <a name="the-important-parts-of-the-dsl-solution"></a>DSL ソリューションの重要な部分
 
@@ -110,7 +110,7 @@ DSL ソリューションを作成するとすぐに実行できます。 後で
 1.  クリックして**すべてのテンプレートの変換**で、**ソリューション エクスプ ローラー**ツールバー。 これには、DslDefinition.dsl からソース コードの大部分が再生成します。
 
     > [!NOTE]
-    > 変更するたびに*DslDefinition.dsl*、クリックする必要があります**すべてのテンプレートの変換**ソリューションを再構築する前にします。 このステップは自動化できます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))します。
+    > 変更するたびに*DslDefinition.dsl*、クリックする必要があります**すべてのテンプレートの変換**ソリューションを再構築する前にします。 このステップは自動化できます。 詳細については、[すべてのテンプレートの変換を自動化する方法](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))を参照してください。
 
 2.  **F5**キーを押すか、または **[デバッグ]** メニューの **[デバッグ開始]** をクリックします。
 
@@ -181,7 +181,7 @@ DSL では、API を使用すると、読み取りし、更新は、DSL のイ�
 > [!NOTE]
 > DSL 定義を変更すると、サンプルのテキスト テンプレート コードは機能しません、更新できます。
 
-詳細については、次を参照してください。[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)と[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)します。
+詳細については、[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)と[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)を参照してください。
 
 ## <a name="customizing-the-dsl"></a>DSL のカスタマイズ
 
@@ -379,10 +379,10 @@ DSL 定義では、保存、変更のたびに次のようにクリックしま�
 
     ```
 
-     *.Tt ファイルを保存するときにユーザーと、ほとんどのリストを含む従属ファイルが作成されます。 詳細については、次を参照してください。[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)します。
+     *.Tt ファイルを保存するときにユーザーと、ほとんどのリストを含む従属ファイルが作成されます。 詳細については、[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)を参照してください。
 
 ## <a name="validation-and-commands"></a>検証とコマンド
- 検証制約を追加することで、さらに、この DSL を開発できます。 これらの制約は、モデルが適切な状態であることを確認するメソッドを定義することができます。 たとえば、定義できることを確認するための制約にお子様の生年月日はその親の場合よりも後。 検証機能では、DSL ユーザーのいずれかの制約に違反するモデルを保存しようとすると、警告が表示されます。 詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。
+ 検証制約を追加することで、さらに、この DSL を開発できます。 これらの制約は、モデルが適切な状態であることを確認するメソッドを定義することができます。 たとえば、定義できることを確認するための制約にお子様の生年月日はその親の場合よりも後。 検証機能では、DSL ユーザーのいずれかの制約に違反するモデルを保存しようとすると、警告が表示されます。 詳細については、[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)を参照してください。
 
  ユーザーが呼び出すことができるメニュー コマンドを定義することもできます。 コマンドは、モデルを変更できます。 Visual Studio での他のモデルと外部リソースも操作できます。 詳細については、「[方法 :標準メニュー コマンドを修正](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)します。
 

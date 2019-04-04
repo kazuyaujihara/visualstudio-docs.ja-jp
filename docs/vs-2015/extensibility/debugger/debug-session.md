@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 9115dbaa63a9fd0f977d2d862aa18f276c8c17d3
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51747886"
@@ -29,7 +29,7 @@ ms.locfileid: "51747886"
   
 -   すべてのセットを処理する関連または関連のないを起動または IDE の 1 つのインスタンスに接続です。  
   
--   セッション デバッグ マネージャー (SDM) によって実装されます。 詳細については、次を参照してください。[セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)します。  
+-   セッション デバッグ マネージャー (SDM) によって実装されます。 詳細については、[セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)   

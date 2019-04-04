@@ -29,7 +29,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49231545"
@@ -74,7 +74,7 @@ ms.locfileid: "49231545"
 |`minimumRequiredVersion`|任意。 このクライアントで実行できるアプリケーションの最小バージョンを指定します。 アプリケーションのバージョン番号が、配置マニフェストで指定されたバージョン番号よりも小さい場合は、アプリケーションは実行されません。 形式でバージョン番号を指定する必要があります`N.N.N.N`ここで、`N`は符号なし整数です。 場合、`install`属性が`false`、`minimumRequiredVersion`設定する必要があります。|  
 |`mapFileExtensions`|任意。 既定値は `false` です。 場合`true`展開内のすべてのファイルが .deploy 拡張子をいる必要があります。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] これらのファイルを Web サーバーからそれらをダウンロードするとすぐにこの拡張機能がストリップされます。 使用してアプリケーションを発行する場合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、すべてのファイルに自動的にこの拡張機能を追加します。 このパラメーターにより、すべてのファイルを[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]「アンセーフ」拡張子 .exe などで終わるファイルの転送をブロックする Web サーバーからダウンロードして展開します。|  
 |`disallowUrlActivation`|任意。 既定値は `false` です。 場合`true`、により、インストールされているアプリケーションから開始して、URL をクリックするか、Internet Explorer に URL を入力します。 場合、`install`属性が存在しない場合、この属性は無視されます。|  
-|`trustURLParameters`|任意。 既定値は `false` です。 場合`true`、により、アプリケーションに渡されるクエリ文字列パラメーターを格納する URL、コマンド ライン アプリケーションに渡された量などのコマンドライン引数。 詳細については、次を参照してください。[方法: オンライン ClickOnce アプリケーションでのクエリ文字列情報の取得](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)します。<br /><br /> 場合、`disallowUrlActivation`属性が`true`、`trustUrlParameters`か必要がありますが、マニフェストから除外明示的に設定`false`します。|  
+|`trustURLParameters`|任意。 既定値は `false` です。 場合`true`、により、アプリケーションに渡されるクエリ文字列パラメーターを格納する URL、コマンド ライン アプリケーションに渡された量などのコマンドライン引数。 詳細については、[方法: オンライン ClickOnce アプリケーションでのクエリ文字列情報の取得](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)を参照してください。<br /><br /> 場合、`disallowUrlActivation`属性が`true`、`trustUrlParameters`か必要がありますが、マニフェストから除外明示的に設定`false`します。|  
   
  `deployment`要素には、次の子要素も含まれています。  
   
@@ -113,7 +113,7 @@ ms.locfileid: "49231545"
   
  更新プログラムのチェックを無効にするには削除、`subscription`要素。 しない更新プログラムをスキャンする配置マニフェストで指定する場合は手動で更新を確認するを使用して、<xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A>メソッド。  
   
- DeploymentProvider 更新プログラムに関連付ける方法の詳細については、次を参照してください。 [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)します。  
+ DeploymentProvider 更新プログラムに関連付ける方法の詳細については、[ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)を参照してください。  
   
 ## <a name="examples"></a>使用例  
  次のコード例を示しています、`deployment`内の要素を[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]配置マニフェスト。 この例では、`deploymentProvider`を優先される更新プログラムの場所を示す要素。  

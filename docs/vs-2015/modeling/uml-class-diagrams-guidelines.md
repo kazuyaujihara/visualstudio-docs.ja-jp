@@ -22,7 +22,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: bfd0b13942f5faee82e284c435b7f937d3ae5094
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51726528"
@@ -82,7 +82,7 @@ Visual Studio で使用することができます、 *UML クラス図*デー�
  参照してください[UML ユース ケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。  
   
 ##  <a name="BasicSteps"></a> クラス ダイアグラムを描画するための基本的な手順  
- リファレンス UML クラス図の要素に関する情報については、次を参照してください。 [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)します。  
+ リファレンス UML クラス図の要素に関する情報については、[UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)を参照してください。  
   
 > [!NOTE]
 >  いずれかのモデリング図を作成するための詳細な手順が記載されて[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
@@ -351,7 +351,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 - **誘導可能**します。 1 つのロールに対してのみ true の場合、誘導可能な方向に矢印が表示されます。 これを使用して、ソフトウェアのリンクの誘導可能性とデータベースのリレーションシップを示すことができます。  
   
-  これらおよびその他のプロパティの完全な詳細については、次を参照してください。 [uml の関連付けのプロパティにクラス ダイアグラム](../modeling/properties-of-associations-on-uml-class-diagrams.md)します。  
+  これらおよびその他のプロパティの完全な詳細については、[uml の関連付けのプロパティにクラス ダイアグラム](../modeling/properties-of-associations-on-uml-class-diagrams.md)を参照してください。  
   
 ### <a name="navigability"></a>誘導可能性  
  関連を描画すると、関連を移動できる方向を示す矢印が片方の末尾に付きます。 これは、クラス図がソフトウェア クラスを表し、関連がポインターまたは参照を表す場合に役立ちます。 ただし、クラス図を使用してエンティティと関係またはビジネス概念を表す場合は、誘導可能性との関連性は小さくなります。 この場合は、矢印を使用しないで関連を描画することをお勧めします。 設定して行うことができます、 **Is Navigable**プロパティを True にアソシエーションの両方の end。 コード サンプルをダウンロードする、簡単に[UML ドメイン モデリング](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)します。  
@@ -473,7 +473,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 -   開いている図または要素のショートカット メニューを選択して**コードの生成**、必要なプロパティを設定します。  
   
-     これらのプロパティを設定し、指定されたテンプレートをカスタマイズする方法の詳細については、次を参照してください。 [UML クラス図からコードを生成](../modeling/generate-code-from-uml-class-diagrams.md)します。  
+     これらのプロパティを設定し、指定されたテンプレートをカスタマイズする方法の詳細については、[UML クラス図からコードを生成](../modeling/generate-code-from-uml-class-diagrams.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [UML モデルおよびダイアグラムを編集します。](../modeling/edit-uml-models-and-diagrams.md)   

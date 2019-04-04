@@ -48,7 +48,7 @@ ms.locfileid: "56700901"
 
 ## <a name="to-create-a-vsix-project"></a>VSIX プロジェクトを作成するには
 
-1.  という名前の VSIX プロジェクトを作成する`TestToolWindowSearch`というツール ウィンドウと**TestSearch**します。 この作業の説明を必要がある場合は、次を参照してください。[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。
+1.  という名前の VSIX プロジェクトを作成する`TestToolWindowSearch`というツール ウィンドウと**TestSearch**します。 この作業の説明を必要がある場合は、[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。
 
 ## <a name="to-create-a-tool-window"></a>ツール ウィンドウを作成するには
 

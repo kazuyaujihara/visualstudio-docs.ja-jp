@@ -21,7 +21,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56638921"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>方法: サーバー エクスプ ローラーでの SharePoint ノードを拡張します。
-  下のノードを拡張することができます、 **SharePoint 接続**ノード**サーバー エクスプ ローラー**します。 これは、既存のノードに新しい子ノード、ショートカット メニュー項目、またはプロパティを追加する場合に便利です。 詳細については、次を参照してください。[サーバー エクスプ ローラーで、SharePoint 接続 ノードを拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)します。
+  下のノードを拡張することができます、 **SharePoint 接続**ノード**サーバー エクスプ ローラー**します。 これは、既存のノードに新しい子ノード、ショートカット メニュー項目、またはプロパティを追加する場合に便利です。 詳細については、[サーバー エクスプ ローラーで、SharePoint 接続 ノードを拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)を参照してください。
 
 ### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>サーバー エクスプ ローラーでの SharePoint ノードを拡張するには
 
@@ -79,7 +79,7 @@ ms.locfileid: "56638921"
 -   System.Windows.Forms
 
 ## <a name="deploy-the-extension"></a>拡張機能をデプロイします。
- 展開する、**サーバー エクスプ ローラー**拡張機能、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+ 展開する、**サーバー エクスプ ローラー**拡張機能、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、[Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [方法: サーバー エクスプ ローラーにカスタム SharePoint ノードを追加します。](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)

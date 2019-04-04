@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6c82a624e5a2847da5c0f85a9e2ef4180a338a34
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51724695"
@@ -44,7 +44,7 @@ ms.locfileid: "51724695"
 |-----------------------|-----------------|  
 |**定数 DEBUG の定義**|C# および F#: チェック ボックスをオンに設定します。 これにより、アプリケーションで Debug クラスを使用できます。|  
 |**定数 TRACE の定義**|C# および F#: チェック ボックスをオンに設定します。 これにより、アプリケーションで Trace クラスを使用できます。|  
-|**コードの最適化**|C#、F#、および Visual Basic: false に設定します。 最適化されたコードは、生成された命令がソース コードと直接対応していないため、デバッグが困難です。 プログラムが最適化されたコードにだけ現れるバグを発見した場合は、この設定を有効しますが、コードに示すように、**逆アセンブル**ウィンドウが、コードに表示される内容が一致しないがあります最適化されたソースから生成されました。エディターです。 最適化されたコードをデバッグするには、オフにする必要があります[マイ コードのみ](just-my-code.md)します。<br /><br /> 詳細については、次を参照してください。 [c# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)または[Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)します。|  
+|**コードの最適化**|C#、F#、および Visual Basic: false に設定します。 最適化されたコードは、生成された命令がソース コードと直接対応していないため、デバッグが困難です。 プログラムが最適化されたコードにだけ現れるバグを発見した場合は、この設定を有効しますが、コードに示すように、**逆アセンブル**ウィンドウが、コードに表示される内容が一致しないがあります最適化されたソースから生成されました。エディターです。 最適化されたコードをデバッグするには、オフにする必要があります[マイ コードのみ](just-my-code.md)します。<br /><br /> 詳細については、[c# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)または[Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)を参照してください。|  
 |**出力パス**|Bin \debug に設定\\します。|  
 |**詳細コンパイル オプション**|Visual Basic のみ。 クリックして**詳細**次の表に記載されている高度なプロパティを設定します。|  
   

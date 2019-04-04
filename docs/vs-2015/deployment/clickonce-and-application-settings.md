@@ -22,7 +22,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 29f51960ad953318c8d9de749f28f684128e52ef
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49176987"
@@ -32,7 +32,7 @@ ms.locfileid: "49176987"
 
 Windows フォームのアプリケーション設定を簡単に作成、保存、およびカスタム アプリケーションとクライアント上のユーザー設定を管理します。 次のドキュメントでは、ClickOnce アプリケーションでのアプリケーション設定ファイルのしくみし、ユーザーが次のバージョンにアップグレードしたときに、ClickOnce が設定を移行する方法について説明します。  
   
- 以下の情報は、既定のアプリケーション設定プロバイダーにのみ適用されます、<xref:System.Configuration.LocalFileSettingsProvider>クラス。 カスタム プロバイダーを指定すると、そのデータを格納する方法と、バージョン間で設定をアップグレードする方法、そのプロバイダーが判断されます。 アプリケーション設定プロバイダーの詳細については、次を参照してください。[アプリケーション設定アーキテクチャ](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562)します。  
+ 以下の情報は、既定のアプリケーション設定プロバイダーにのみ適用されます、<xref:System.Configuration.LocalFileSettingsProvider>クラス。 カスタム プロバイダーを指定すると、そのデータを格納する方法と、バージョン間で設定をアップグレードする方法、そのプロバイダーが判断されます。 アプリケーション設定プロバイダーの詳細については、[アプリケーション設定アーキテクチャ](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562)を参照してください。  
   
 ## <a name="application-settings-files"></a>アプリケーション設定ファイル  
  アプリケーションの設定は、2 つのファイルを使用:*アプリ*. exe.config と user.config、場所*アプリ*Windows フォーム アプリケーションの名前を指定します。 user.config がアプリケーションには、ユーザー スコープの設定が格納されます。 クライアントの最初の時間に作成されます。 *アプリ*.exe.config にこれに対し、存在展開する前に既定値の設定を定義する場合。 Visual Studio は、このファイルに自動的に使用すると、**発行**コマンド。 このファイルに含まれることを確認しておく必要があります Mage.exe または MageUI.exe を使用して ClickOnce アプリケーションを作成する場合、アプリケーション マニフェストを設定するときに、アプリケーションの他のファイル。  
@@ -41,7 +41,7 @@ Windows フォームのアプリケーション設定を簡単に作成、保存
   
  アプリケーションの設定により、セーフの読み取りアクセスをアプリケーションをデプロイする方法に関係なく*アプリ*.exe.config にと user.config への安全な読み取り/書き込みアクセス。  
   
- ClickOnce アプリケーションでは、アプリケーションの設定で使用される構成ファイルのサイズは、ClickOnce キャッシュのサイズによって制限されます。 詳細については、次を参照してください。 [ClickOnce キャッシュの概要](../deployment/clickonce-cache-overview.md)します。  
+ ClickOnce アプリケーションでは、アプリケーションの設定で使用される構成ファイルのサイズは、ClickOnce キャッシュのサイズによって制限されます。 詳細については、[ClickOnce キャッシュの概要](../deployment/clickonce-cache-overview.md)を参照してください。  
   
 ## <a name="version-upgrades"></a>バージョンのアップグレード  
  ClickOnce アプリケーションの各バージョンが他のすべてのバージョンから分離されたのと同様、ClickOnce アプリケーションのアプリケーションの設定は、その他のバージョンも設定から分離されます。 ユーザーは、アプリケーションの以降のバージョンにアップグレードして、アプリケーションの設定は最も新しい (最も高い数字) バージョンの設定、更新されたバージョンとマージに新しい設定ファイルのセットの設定で指定した設定を比較します。  
@@ -58,7 +58,7 @@ Windows フォームのアプリケーション設定を簡単に作成、保存
  オーバーライドすることができます独自のアプリケーション設定ラッパー クラスを作成し、更新ロジックをカスタマイズする場合、<xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A>メソッド。  
   
 ## <a name="clickonce-and-roaming-settings"></a>ClickOnce とローミングの設定  
- ClickOnce 機能しません、ローミングの設定で、設定ファイルをネットワーク上のコンピューター間で利用できます。 ローミングの設定が必要な場合は、ネットワーク経由で設定を格納するアプリケーション設定プロバイダーを実装するか、リモート コンピューター上の設定を格納するため、独自のカスタム設定クラスを開発する必要があります。 設定プロバイダーの詳細については、次を参照してください。[アプリケーション設定アーキテクチャ](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562)します。  
+ ClickOnce 機能しません、ローミングの設定で、設定ファイルをネットワーク上のコンピューター間で利用できます。 ローミングの設定が必要な場合は、ネットワーク経由で設定を格納するアプリケーション設定プロバイダーを実装するか、リモート コンピューター上の設定を格納するため、独自のカスタム設定クラスを開発する必要があります。 設定プロバイダーの詳細については、[アプリケーション設定アーキテクチャ](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   

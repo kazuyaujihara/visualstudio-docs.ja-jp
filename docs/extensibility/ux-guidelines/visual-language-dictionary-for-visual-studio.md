@@ -25,7 +25,7 @@ Visual Studio では、そのことは考えません、およびその他の画
 
 -   各イメージでは、1 つまたは 2 つの概念を使用します。
 
--   デザイン アイコンの詳細戦略は、次を参照してください。[アイコン デザイン](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)します。
+-   デザイン アイコンの詳細戦略は、[アイコン デザイン](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)を参照してください。
 
 **セクションにジャンプします。**
 

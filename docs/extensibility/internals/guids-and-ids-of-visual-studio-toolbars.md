@@ -24,7 +24,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56643757"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>ツールバーの Guid と Visual Studio の Id
-このトピックでは、Visual Studio 統合開発環境 (IDE) に含まれているツールバーの GUID と ID の値を列挙し、含まれているグループのします。 これらの値が定義されている *.vsct* Visual Studio SDK の一部としてインストールされているファイル。 詳細については、次を参照してください。 [IDE 定義コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)します。
+このトピックでは、Visual Studio 統合開発環境 (IDE) に含まれているツールバーの GUID と ID の値を列挙し、含まれているグループのします。 これらの値が定義されている *.vsct* Visual Studio SDK の一部としてインストールされているファイル。 詳細については、[IDE 定義コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)を参照してください。
 
 > [!NOTE]
 >  Visual Studio を使用できるツールバーの多くが Visual Studio、およびその GUID によって定義されていないと、ID 値がパブリックではありません。 このトピックでは Visual Studio SDK で定義されているツールバーだけ *.vsct*ファイル。

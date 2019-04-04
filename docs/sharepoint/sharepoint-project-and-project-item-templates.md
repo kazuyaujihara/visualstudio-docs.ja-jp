@@ -33,7 +33,7 @@ ms.locfileid: "57867875"
 ## <a name="project-and-project-item-templates-overview"></a>プロジェクトとプロジェクト項目テンプレートの概要
  Visual Studio で新しい SharePoint プロジェクトを作成すると、SharePoint プロジェクトは、すべてのプロジェクトの種類で必要なプロジェクト項目と共にソリューションに追加されます。 たとえば、Silverlight Web パーツ プロジェクトを作成した場合、視覚的 Web パーツ プロジェクト項目と Silverlight アプリケーション プロジェクト項目、およびそれらのプロジェクト項目に必要なすべてのファイルを含むソリューションが作成されます。 プロジェクト項目テンプレートは、既存の SharePoint プロジェクトにプロジェクト項目 (イベント レシーバー、サイト列、リストなど) を追加する目的で使用されます。
 
- SharePoint の基礎については、次を参照してください。 [SharePoint Foundation のビルド ブロック](http://go.microsoft.com/fwlink/?LinkId=179404)します。 上級ユーザーは、プロジェクトやプロジェクト項目のテンプレートを独自に作成することもできます。 詳細については、次を参照してください。 [SharePoint プロジェクト システムを拡張](../sharepoint/extending-the-sharepoint-project-system.md)します。
+ SharePoint の基礎については、[SharePoint Foundation のビルド ブロック](http://go.microsoft.com/fwlink/?LinkId=179404)を参照してください。 上級ユーザーは、プロジェクトやプロジェクト項目のテンプレートを独自に作成することもできます。 詳細については、[SharePoint プロジェクト システムを拡張](../sharepoint/extending-the-sharepoint-project-system.md)を参照してください。
 
 ## <a name="project-templates"></a>プロジェクト テンプレート
  ここでは、それぞれの SharePoint プロジェクト テンプレートについて説明します。 Visual Studio で SharePoint プロジェクト テンプレートを表示する、**新しいプロジェクト** ダイアログ ボックスで、展開、 **SharePoint**のどちらかのノード**Visual c#** または**Visual Basic**を選び、 **2010**します。
@@ -60,7 +60,7 @@ ms.locfileid: "57867875"
  A *SharePoint 2010 視覚的 Web パーツ*プロジェクトが含まれています、 *Elements.xml*定義ファイルを**Web パーツ**項目、および**ユーザー コントロール**項目. ドラッグするか、ユーザー コントロールの画面に、Visual Studio のツールボックスからコントロールをコピーして、視覚的 web パーツの外観をデザインできます。 詳細については、「[方法 :デザイナーを使用して、SharePoint web パーツを作成する](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)と[ビルディング ブロック。Web パーツ](http://go.microsoft.com/fwlink/?LinkId=179438)します。
 
 ### <a name="import-sharepoint-2010-solution-package"></a>SharePoint 2010 ソリューション パッケージのインポート
- *SharePoint 2010 ソリューション パッケージのインポート*プロジェクトでは、SharePoint ソリューションにエクスポートする、既存の SharePoint 2010 サイトのすべてまたは一部をインポートできます (*.wsp*) ファイル、Visual Studio にします。 Visual Studio にインポートした後は、その項目をカスタマイズして再配置することができます。 詳細については、次を参照してください。[既存の SharePoint サイトからアイテムをインポート](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)します。
+ *SharePoint 2010 ソリューション パッケージのインポート*プロジェクトでは、SharePoint ソリューションにエクスポートする、既存の SharePoint 2010 サイトのすべてまたは一部をインポートできます (*.wsp*) ファイル、Visual Studio にします。 Visual Studio にインポートした後は、その項目をカスタマイズして再配置することができます。 詳細については、[既存の SharePoint サイトからアイテムをインポート](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)を参照してください。
 
 ### <a name="import-reusable-sharepoint-2010-workflow"></a>再利用可能な SharePoint 2010 ワークフローをインポートします。
  *再利用可能な SharePoint 2010 ワークフローのインポート*プロジェクトでは、Visual Studio SharePoint Designer 2010 で作成した再利用可能な宣言型ワークフローをインポートできます。 ワークフローは、SharePoint サイトからエクスポート、 *.wsp*ファイル。 Visual Studio にインポートした後は、カスタマイズしたりコードを追加したりして、SharePoint サイトに配置できます。 詳細については、「[チュートリアル:SharePoint Designer の再利用可能なワークフローを Visual Studio にインポート](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)します。
@@ -106,7 +106,7 @@ ms.locfileid: "57867875"
  リストは、再利用可能な基本の SharePoint リスト定義のインスタンスです (予定表、タスク リストなど)。 ソリューションにリストを追加した後、リスト デザイナーで、リストにサイト列を追加したり、リストのカスタム列を作成したりできます。 これにはコンテンツ タイプのサイト列が含まれます。 指定することができます、*ビュー*一覧については、一覧に表示される列が決まります。 詳細については、「[チュートリアル:For SharePoint のサイト列、コンテンツの種類、および一覧の作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)と[ビルディング ブロック。リストとドキュメント ライブラリ](http://go.microsoft.com/fwlink/?LinkId=179421)します。
 
 ### <a name="module"></a>Module
- *モジュール*(と混同しないように[!include[vbprvb](../sharepoint/includes/vbprvb-md.md)]モジュール) イメージやメモなど、SharePoint サーバーに配置したいファイルが含まれています。 モジュール プロジェクト項目が含まれています、**モジュール**ノード。 モジュールのノードには、2 つのプロジェクト項目テンプレートが含まれています: モジュールのマニフェストとして機能する、XML 定義ファイルと*sample.txt*ファイル、プレース ホルダー ファイル。 詳細については、次を参照してください。[ソリューション内のインクルード ファイルにモジュールを使用して](../sharepoint/using-modules-to-include-files-in-the-solution.md)と[モジュール](http://go.microsoft.com/fwlink/?LinkId=179425)します。
+ *モジュール*(と混同しないように[!include[vbprvb](../sharepoint/includes/vbprvb-md.md)]モジュール) イメージやメモなど、SharePoint サーバーに配置したいファイルが含まれています。 モジュール プロジェクト項目が含まれています、**モジュール**ノード。 モジュールのノードには、2 つのプロジェクト項目テンプレートが含まれています: モジュールのマニフェストとして機能する、XML 定義ファイルと*sample.txt*ファイル、プレース ホルダー ファイル。 詳細については、[ソリューション内のインクルード ファイルにモジュールを使用して](../sharepoint/using-modules-to-include-files-in-the-solution.md)と[モジュール](http://go.microsoft.com/fwlink/?LinkId=179425)を参照してください。
 
 ### <a name="sequential-workflow-farm-solution-only"></a>シーケンシャル ワークフロー (ファーム ソリューションのみ)
  A*シーケンシャル ワークフロー*一連の最後の手順を完了するまで、順番に実行されるビジネス ロジック ステップです。 シーケンシャル ワークフローは、リストやドキュメントなどの SharePoint アイテムが関係するプロセスを管理する目的で使用します。 サイト レベル (グローバル) のワークフローまたはリスト レベル (ローカル) のワークフローを作成できるほか、ワークフローを自動的に開始するか、手動で開始するかを選択することもできます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、次を参照してください。[作成 SharePoint ワークフロー ソリューション](../sharepoint/creating-sharepoint-workflow-solutions.md)、 [SharePoint Server 2010 のワークフロー](http://go.microsoft.com/fwlink/?LinkId=260555)、および[新機能。ワークフローの改善](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))します。
@@ -115,7 +115,7 @@ ms.locfileid: "57867875"
  *Silverlight web パーツ*プロジェクト項目を有効にする web パーツの作成を Silverlight アプリケーションを表示する SharePoint の。 このプロジェクト項目ソリューションに追加するときは、新しい Silverlight アプリケーションを追加するか既存の Silverlight アプリケーションを後で参照するかを選択できます。 詳細については、次を参照してください。[の SharePoint web パーツを作成](../sharepoint/creating-web-parts-for-sharepoint.md)と[チュートリアル。SharePoint の OData を表示する Silverlight web パーツを作成する](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)します。
 
 ### <a name="site-column"></a>サイト内の列
- A*サイト列*とも呼ばれる、*フィールド*、SharePoint プロジェクトに追加できる最も基本的な要素の 1 つです。 サイト列はデータの種類を表します。たとえば、連絡先一覧であれば、連絡先の電話番号、テキスト コメント、都市名などです。 詳細については、次を参照してください。 [for SharePoint のサイト列、コンテンツの種類、およびリストの作成](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)と[列](http://go.microsoft.com/fwlink/?LinkId=226840)します。
+ A*サイト列*とも呼ばれる、*フィールド*、SharePoint プロジェクトに追加できる最も基本的な要素の 1 つです。 サイト列はデータの種類を表します。たとえば、連絡先一覧であれば、連絡先の電話番号、テキスト コメント、都市名などです。 詳細については、[for SharePoint のサイト列、コンテンツの種類、およびリストの作成](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)と[列](http://go.microsoft.com/fwlink/?LinkId=226840)を参照してください。
 
 ### <a name="site-definition-farm-solution-only"></a>サイト定義 (ファーム ソリューションのみ)
  *サイト定義*プロジェクト項目には、次のファイルを含むサイト定義フォルダーが含まれています。
@@ -126,13 +126,13 @@ ms.locfileid: "57867875"
 
 - Webtemp xml ファイルに表示されるサイト定義構成を指定する、**テンプレートの選択**のセクション、**新しい SharePoint サイト**ページ。
 
-  サイト定義の追加後は、コードおよびファイルを追加して機能を導入できます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、次を参照してください。 [for SharePoint のサイト定義を作成](../sharepoint/creating-site-definitions-for-sharepoint.md)と[サイト定義と構成](http://go.microsoft.com/fwlink/?LinkId=260554)します。
+  サイト定義の追加後は、コードおよびファイルを追加して機能を導入できます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、[for SharePoint のサイト定義を作成](../sharepoint/creating-site-definitions-for-sharepoint.md)と[サイト定義と構成](http://go.microsoft.com/fwlink/?LinkId=260554)を参照してください。
 
 ### <a name="state-machine-workflow-farm-solution-only"></a>ステート マシン ワークフロー (ファーム ソリューションのみ)
  A*ステート マシン ワークフロー*ビジネス ロジックの状態、遷移、およびアクションのセットです。 ステート マシン ワークフローに含まれる各ステップは、順番に実行されるのではなく、アクションおよび状態によってトリガーされます。 シーケンシャル ワークフローと同様に、ステート マシン ワークフローは、リストやドキュメントなどの SharePoint アイテムに関連付けられます。 サイト レベル (グローバル) のワークフローまたはリスト レベル (ローカル) のワークフローを作成できることも、シーケンシャル ワークフローと同じです。 ワークフローを自動的に開始するか手動で開始するかを選択することもできます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、次を参照してください。[作成 SharePoint ワークフロー ソリューション](../sharepoint/creating-sharepoint-workflow-solutions.md)、 [SharePoint Server 2010 のワークフロー](http://go.microsoft.com/fwlink/?LinkId=260555)、および[新機能。ワークフローの改善](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))します。
 
 ### <a name="user-control-farm-solution-only"></a>ユーザー コントロール (ファーム ソリューションのみ)
- A*ユーザー コントロール*、再利用可能なカスタム コントロールが他の ASP.NET コントロールや SharePoint コントロールを追加できます。 ユーザー コントロールは、SharePoint で実行されるアプリケーション ページと Web パーツに追加できます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、次を参照してください。 [Web パーツまたはアプリケーション ページの再利用可能なコントロールを作成する](http://go.microsoft.com/fwlink/?LinkId=226841)します。
+ A*ユーザー コントロール*、再利用可能なカスタム コントロールが他の ASP.NET コントロールや SharePoint コントロールを追加できます。 ユーザー コントロールは、SharePoint で実行されるアプリケーション ページと Web パーツに追加できます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、[Web パーツまたはアプリケーション ページの再利用可能なコントロールを作成する](http://go.microsoft.com/fwlink/?LinkId=226841)を参照してください。
 
 ### <a name="visual-web-part"></a>視覚的 web パーツ
  A*視覚的 web パーツ*プロジェクト アイテムが含まれて、 *Elements.xml*定義ファイルを**Web パーツ**項目、および**ユーザー コントロール**項目。 ドラッグするか、ユーザー コントロールの画面に、Visual Studio のツールボックスからコントロールをコピーして、視覚的 web パーツの外観をデザインできます。 詳細については、「[方法 :デザイナーを使用して、SharePoint web パーツを作成する](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)と[ビルディング ブロック。Web パーツ](http://go.microsoft.com/fwlink/?LinkId=179438)します。

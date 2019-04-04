@@ -29,9 +29,9 @@ ms.locfileid: "51760143"
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio コマンドの GUID および ID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio 統合開発環境 (IDE) で含まれているコマンドの GUID と ID の値は、Visual Studio SDK の一部としてインストールされている .vsct ファイルで定義されます。 詳細については、次を参照してください。 [IDE-Defined コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)します。  
+Visual Studio 統合開発環境 (IDE) で含まれているコマンドの GUID と ID の値は、Visual Studio SDK の一部としてインストールされている .vsct ファイルで定義されます。 詳細については、[IDE-Defined コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)を参照してください。  
   
- .Vsct ファイルで定義されている IDE オブジェクトを操作する方法の詳細については、次を参照してください。[拡張メニューとコマンド](../../extensibility/extending-menus-and-commands.md)します。  
+ .Vsct ファイルで定義されている IDE オブジェクトを操作する方法の詳細については、[拡張メニューとコマンド](../../extensibility/extending-menus-and-commands.md)を参照してください。  
   
 ## <a name="finding-a-command-definition"></a>コマンド定義の検索  
  Visual Studio では、1,000 を超えるコマンドを定義するためすべてここに列挙するは実用的ではありません。 代わりに、以下の手順を実行するコマンドの定義を探します。  
@@ -54,7 +54,7 @@ Visual Studio 統合開発環境 (IDE) で含まれているコマンドの GUID
   
     `<Button>`コマンドが含まれている要素がコマンド定義。  
   
-   コマンドの定義が見つかったら、別のメニューまたはツールバーのコマンドのコピーを配置を作成して、 [CommandPlacement 要素](../../extensibility/commandplacement-element.md)を持つ同じ`guid`と`id`コマンドと値。 詳細については、次を参照してください。[ボタンの再利用可能なグループの作成](../../extensibility/creating-reusable-groups-of-buttons.md)です。  
+   コマンドの定義が見つかったら、別のメニューまたはツールバーのコマンドのコピーを配置を作成して、 [CommandPlacement 要素](../../extensibility/commandplacement-element.md)を持つ同じ`guid`と`id`コマンドと値。 詳細については、[ボタンの再利用可能なグループの作成](../../extensibility/creating-reusable-groups-of-buttons.md)を参照してください。  
   
 ### <a name="special-cases"></a>特殊なケース  
  次の場合、メニュー テキストまたはツールヒントのテキストが一致しない一致コマンド定義でです。  

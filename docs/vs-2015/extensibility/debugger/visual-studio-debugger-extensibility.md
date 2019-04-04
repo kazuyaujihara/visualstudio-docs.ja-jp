@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 8b5e9e7a3db38b5138f6392ff89f3a3bb4a13303
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51743491"
@@ -32,7 +32,7 @@ Visual Studio には、プログラムでバグを追跡するための強力で
   
  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]すべてに完全なリファレンスが含まれています[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]新しい DE の作成に必要な要素です。 さらに、あるサンプルとチュートリアルの作業を開始するのに役立つ。  
   
- デバッグのサポートと言語のプロジェクト システムのエンド ツー エンド サンプルでは、次を参照してください。、 [IronPython サンプル](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089)します。  
+ デバッグのサポートと言語のプロジェクト システムのエンド ツー エンド サンプルでは、、 [IronPython サンプル](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089)を参照してください。  
   
  次のセクションを使用して、デバッガーを拡張する方法を説明します、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]します。  
   

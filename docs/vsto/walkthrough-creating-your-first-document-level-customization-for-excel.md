@@ -73,13 +73,13 @@ ms.locfileid: "56622879"
 
    - *FirstWorkbookCustomization*.xlsx は、プロジェクト内の Excel ブックを表します。 すべてのワークシートとグラフが含まれます。
 
-   - Sheet1 (*.vb* Visual basic のファイルまたは *.cs* Visual C# ファイル) のブック内の最初のワークシートのデザイン画面とコードを提供します。 詳細については、次を参照してください。 [Worksheet ホスト項目](../vsto/worksheet-host-item.md)します。
+   - Sheet1 (*.vb* Visual basic のファイルまたは *.cs* Visual C# ファイル) のブック内の最初のワークシートのデザイン画面とコードを提供します。 詳細については、[Worksheet ホスト項目](../vsto/worksheet-host-item.md)を参照してください。
 
    - Sheet2 (*.vb* Visual basic のファイルまたは *.cs* Visual C# ファイル)-ブックの 2 番目のワークシートのデザイン画面とコードを提供します。
 
    - Sheet3 (*.vb* Visual basic のファイルまたは *.cs* Visual C# ファイル) の 3 番目のワークシートをブック内のデザイン画面とコードを提供します。
 
-   - ThisWorkbook (*.vb* Visual basic のファイルまたは *.cs* Visual C# ファイル) のデザイン画面とブック レベルのカスタマイズのコードが含まれています。 詳細については、次を参照してください。 [Workbook ホスト項目](../vsto/workbook-host-item.md)します。
+   - ThisWorkbook (*.vb* Visual basic のファイルまたは *.cs* Visual C# ファイル) のデザイン画面とブック レベルのカスタマイズのコードが含まれています。 詳細については、[Workbook ホスト項目](../vsto/workbook-host-item.md)を参照してください。
 
      デザイナーで、Sheet1 コード ファイルが自動的に開かれます。
 
@@ -97,7 +97,7 @@ ms.locfileid: "56622879"
      **ソリューション エクスプ ローラー**、ダブルクリックして、 **Sheet1**コード ファイル。
 
 ## <a name="add-text-to-a-worksheet-in-the-designer"></a>デザイナーでワークシートにテキストを追加します。
- デザイナーで開いたワークシートを変更することで、カスタマイズのユーザー インターフェイス (UI) をデザインできます。 たとえば、セルにテキストを追加したり、式を適用したり、Excel のコントロールを追加したりできます。 デザイナーを使用する方法の詳細については、次を参照してください。 [Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)します。
+ デザイナーで開いたワークシートを変更することで、カスタマイズのユーザー インターフェイス (UI) をデザインできます。 たとえば、セルにテキストを追加したり、式を適用したり、Excel のコントロールを追加したりできます。 デザイナーを使用する方法の詳細については、[Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)を参照してください。
 
 ### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>デザイナーを使用してワークシートにテキストを追加するには
 
@@ -113,7 +113,7 @@ ms.locfileid: "56622879"
 
 -   `Sheet1` クラスの部分定義。このクラスは、ワークシートのプログラミング モデルを表し、Excel のオブジェクト モデルへのアクセスを提供します。 詳細については、 [Worksheet ホスト項目](../vsto/worksheet-host-item.md)と[Word オブジェクト モデルの概要](../vsto/word-object-model-overview.md)します。 `Sheet1` クラスの残りの部分は、変更することができない非表示のコード ファイルに定義されています。
 
--   `Sheet1_Startup` および `Sheet1_Shutdown` イベント ハンドラー。 これらのイベント ハンドラーは、Excel がユーザーのカスタマイズを読み込むときとアンロードするときに呼び出されます。 これらのイベント ハンドラーを使用して、読み込まれるときにはカスタマイズを初期化し、アンロードされるときにはカスタマイズが使用したリソースをクリーンアップします。 詳細については、次を参照してください。 [Office プロジェクト内のイベント](../vsto/events-in-office-projects.md)します。
+-   `Sheet1_Startup` および `Sheet1_Shutdown` イベント ハンドラー。 これらのイベント ハンドラーは、Excel がユーザーのカスタマイズを読み込むときとアンロードするときに呼び出されます。 これらのイベント ハンドラーを使用して、読み込まれるときにはカスタマイズを初期化し、アンロードされるときにはカスタマイズが使用したリソースをクリーンアップします。 詳細については、[Office プロジェクト内のイベント](../vsto/events-in-office-projects.md)を参照してください。
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>コードを使用してワークシートに 2 行目のテキストを追加するには
 
@@ -132,7 +132,7 @@ ms.locfileid: "56622879"
 
 1.  **F5** キーを押して、プロジェクトをビルドおよび実行します。
 
-     プロジェクトをビルドすると、コードがアセンブリにコンパイルされ、ブックに関連付けられます。 Visual Studio は、ブックおよびアセンブリのコピーをプロジェクトのビルド出力フォルダーに格納し、カスタマイズを実行できるように開発用コンピューターのセキュリティ設定を行います。 詳細については、次を参照してください。[ビルドの Office ソリューション](../vsto/building-office-solutions.md)します。
+     プロジェクトをビルドすると、コードがアセンブリにコンパイルされ、ブックに関連付けられます。 Visual Studio は、ブックおよびアセンブリのコピーをプロジェクトのビルド出力フォルダーに格納し、カスタマイズを実行できるように開発用コンピューターのセキュリティ設定を行います。 詳細については、[ビルドの Office ソリューション](../vsto/building-office-solutions.md)を参照してください。
 
 2.  次のテキストがブックに表示されることを確認します。
 

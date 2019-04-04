@@ -25,7 +25,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49891480"
@@ -51,7 +51,7 @@ ms.locfileid: "49891480"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>TableAdapter.Update メソッドを使用して、データベースに新しいレコードを挿入するには  
   
-1. 新しいレコードの追加に必要な<xref:System.Data.DataTable>新しい<xref:System.Data.DataRow>に追加することと、<xref:System.Data.DataTable.Rows%2A>コレクション。 詳細については、次を参照してください。[方法: DataTable に行の追加](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf)します。  
+1. 新しいレコードの追加に必要な<xref:System.Data.DataTable>新しい<xref:System.Data.DataRow>に追加することと、<xref:System.Data.DataTable.Rows%2A>コレクション。 詳細については、[方法: DataTable に行の追加](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf)を参照してください。  
   
 2. 新しい行を追加した後、<xref:System.Data.DataTable>を呼び出し、`TableAdapter.Update`メソッド。 全体のいずれかで渡すことで更新するデータの量を制御できます<xref:System.Data.DataSet>、 <xref:System.Data.DataTable>、配列の<xref:System.Data.DataRow>、または 1 つ<xref:System.Data.DataRow>します。  
   
@@ -75,7 +75,7 @@ ms.locfileid: "49891480"
      [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  
   
 ## <a name="insert-new-records-by-using-command-objects"></a>コマンド オブジェクトを使用して新しいレコードを挿入します。  
- 次の例では、コマンド オブジェクトを使用してデータベースに直接新しいレコードを挿入します。 コマンド オブジェクトを使用して、コマンドやストアド プロシージャを実行する方法の詳細については、次を参照してください。[アプリケーションへのデータのフェッチ](../data-tools/fetching-data-into-your-application.md)します。  
+ 次の例では、コマンド オブジェクトを使用してデータベースに直接新しいレコードを挿入します。 コマンド オブジェクトを使用して、コマンドやストアド プロシージャを実行する方法の詳細については、[アプリケーションへのデータのフェッチ](../data-tools/fetching-data-into-your-application.md)を参照してください。  
   
  次の手順を使用して、`Region`例として、Northwind データベースのテーブル。  
   

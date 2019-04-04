@@ -22,7 +22,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 2b5302790d694c23da9e5385adf43c185dc66583
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49207676"
@@ -31,7 +31,7 @@ ms.locfileid: "49207676"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-機能を拡張することができます、`TableAdapter`の部分クラス ファイルを作成して、`TableAdapter`コードを追加し、(コードを追加するのではなく、 *DatasetName*します。DataSet.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、次を参照してください。[部分](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)または[partial (型)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)します。  
+機能を拡張することができます、`TableAdapter`の部分クラス ファイルを作成して、`TableAdapter`コードを追加し、(コードを追加するのではなく、 *DatasetName*します。DataSet.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、[部分](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)または[partial (型)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)を参照してください。  
   
  定義するコードを`TableAdapter`は変更されるたびに生成される、 `TableAdapter` (で、[の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md))。 構成を変更するウィザードの実行中に変更されたときに、このコードは生成も、`TableAdapter`します。 コードが再生成中に削除されないようにする、 `TableAdapter`、コードの部分クラス ファイルを追加、`TableAdapter`します。  
   
@@ -41,7 +41,7 @@ ms.locfileid: "49207676"
 >  データセットを分離する場合と`TableAdapter`s (設定して、 **DataSet プロジェクト**プロパティ)、プロジェクト内の既存のデータセット部分クラスが自動的に移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。  
   
 > [!NOTE]
->  [の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md)を生成するための機能を提供<xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.RowChanging>検証が必要なときにイベント ハンドラー。 詳細については、次を参照してください。 [n 層データセットに検証を追加](../data-tools/add-validation-to-an-n-tier-dataset.md)します。  
+>  [の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md)を生成するための機能を提供<xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.RowChanging>検証が必要なときにイベント ハンドラー。 詳細については、[n 層データセットに検証を追加](../data-tools/add-validation-to-an-n-tier-dataset.md)を参照してください。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

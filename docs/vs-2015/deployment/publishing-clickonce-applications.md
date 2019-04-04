@@ -28,7 +28,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 4282ce38671e2270c1e91d70df8968d790c54a22
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49891766"
@@ -51,7 +51,7 @@ ms.locfileid: "49891766"
   
 - 更新間隔 - 新しい更新プログラムをアプリケーションがチェックする頻度。  
   
-  詳細については、次を参照してください。[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)します。  
+  詳細については、[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)を参照してください。  
   
 ## <a name="publish-page"></a>ページの発行  
  **プロジェクト デザイナー** の **[発行]** ページは、ClickOnce 配置用のプロパティを構成する場合に使用します。 次の表にトピックを示します。  
@@ -72,10 +72,10 @@ ms.locfileid: "49891766"
  ファイルを除外するファイルをデータ ファイルや必須コンポーネントとしてマークし、Visual Studio UI で条件付きでインストールするファイルのグループを作成を参照してください[方法: 指定するファイル ClickOnce で発行される](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)します。 また、Mage.exe を使用してデータ ファイルにマークすることもできます。 詳細については、「 [方法 : ClickOnce アプリケーションにデータ ファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。  
   
 ### <a name="prerequisites-dialog-box"></a>[必須コンポーネント] ダイアログ ボックス  
- このダイアログ ボックスでは、必須コンポーネントとしてインストールするコンポーネントおよびそのインストール方法を指定します。 詳細については、次を参照してください。[方法: ClickOnce アプリケーションと共に必須コンポーネントをインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)と[Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)します。  
+ このダイアログ ボックスでは、必須コンポーネントとしてインストールするコンポーネントおよびそのインストール方法を指定します。 詳細については、[方法: ClickOnce アプリケーションと共に必須コンポーネントをインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)と[Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)を参照してください。  
   
 ### <a name="application-updates-dialog-box"></a>[アプリケーションの更新] ダイアログ ボックス  
- このダイアログ ボックスでは、アプリケーションのインストール時に更新プログラムをチェックする方法を指定します。 詳細については、次を参照してください。[方法: ClickOnce アプリケーションの更新プログラムの管理](../deployment/how-to-manage-updates-for-a-clickonce-application.md)します。  
+ このダイアログ ボックスでは、アプリケーションのインストール時に更新プログラムをチェックする方法を指定します。 詳細については、[方法: ClickOnce アプリケーションの更新プログラムの管理](../deployment/how-to-manage-updates-for-a-clickonce-application.md)を参照してください。  
   
 ### <a name="publish-options-dialog-box"></a>[発行オプション] ダイアログ ボックス  
  [発行オプション] ダイアログ ボックスでは、アプリケーションの配置オプションを指定します。  

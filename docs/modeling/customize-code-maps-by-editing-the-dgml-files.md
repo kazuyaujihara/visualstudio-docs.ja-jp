@@ -29,7 +29,7 @@ ms.locfileid: "58323150"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML ファイルを編集してコード マップをカスタマイズする
 
-コード マップをカスタマイズするには、その Directed Graph Markup Language (.dgml) ファイルを編集できます。 たとえば、要素を編集してカスタム スタイルを指定したり、コード要素とリンクにプロパティおよびカテゴリを割り当てたり、コード要素やリンクにドキュメントや URL をリンクしたりすることができます。 DGML 要素の詳細については、次を参照してください。 [Directed Graph Markup Language (DGML) リファレンス](../modeling/directed-graph-markup-language-dgml-reference.md)します。
+コード マップをカスタマイズするには、その Directed Graph Markup Language (.dgml) ファイルを編集できます。 たとえば、要素を編集してカスタム スタイルを指定したり、コード要素とリンクにプロパティおよびカテゴリを割り当てたり、コード要素やリンクにドキュメントや URL をリンクしたりすることができます。 DGML 要素の詳細については、[Directed Graph Markup Language (DGML) リファレンス](../modeling/directed-graph-markup-language-dgml-reference.md)を参照してください。
 
 テキスト エディターまたは XML エディターで、コード マップの .dgml ファイルを編集します。 マップが Visual Studio ソリューションの一部である場合でを選択します。**ソリューション エクスプ ローラー**、ショートカット メニューを開き、選択**ファイルを開く**、 **XML (テキスト) エディター**します。
 
@@ -117,7 +117,7 @@ ms.locfileid: "58323150"
 -   特定の条件に基づくコード要素およびリンクのグループ
 
 > [!TIP]
->  多くのコード要素またはリンクで繰り返し使用するスタイルがある場合は、これらのコード要素またはリンクにカテゴリを適用し、そのカテゴリにスタイルを適用することも検討できます。 詳細については、次を参照してください。[コード要素およびリンクにカテゴリを割り当てる](#AssignCategories)と[コード要素およびリンク プロパティを割り当てる](#AssignProperties)します。
+>  多くのコード要素またはリンクで繰り返し使用するスタイルがある場合は、これらのコード要素またはリンクにカテゴリを適用し、そのカテゴリにスタイルを適用することも検討できます。 詳細については、[コード要素およびリンクにカテゴリを割り当てる](#AssignCategories)と[コード要素およびリンク プロパティを割り当てる](#AssignProperties)を参照してください。
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>単一のコード要素にカスタム スタイルを適用するには
 

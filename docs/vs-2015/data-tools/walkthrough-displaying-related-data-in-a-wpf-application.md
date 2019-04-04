@@ -24,7 +24,7 @@ manager: ghogen
 robots: noindex,nofollow
 ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49913138"
@@ -53,9 +53,9 @@ ms.locfileid: "49913138"
   
   次の概念に関する知識があると役立ちますが、チュートリアルを実行するうえで必須というわけではありません。  
   
-- Entity Data Model および ADO.NET Entity Framework。 詳細については、次を参照してください。 [Entity Framework の概要](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)します。  
+- Entity Data Model および ADO.NET Entity Framework。 詳細については、[Entity Framework の概要](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)を参照してください。  
   
-- WPF デザイナーの操作。 詳細については、次を参照してください。 [WPF および Silverlight デザイナーの概要](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)します。  
+- WPF デザイナーの操作。 詳細については、[WPF および Silverlight デザイナーの概要](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)を参照してください。  
   
 - WPF データ バインディング。 詳しくは、「 [データ バインディングの概要](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。  
   
@@ -156,7 +156,7 @@ ms.locfileid: "49913138"
   
 7. **データソース**ウィンドウで、ドラッグ、 **[salesorderheaders]** ノードでのウィンドウに**WPF デザイナー**します。  
   
-    Visual Studio 内のデータにバインドされているコントロールのセットを作成する XAML の生成、 **[salesorderheaders]** エンティティ、およびデータを読み込むコード。 生成された XAML とコードの詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+    Visual Studio 内のデータにバインドされているコントロールのセットを作成する XAML の生成、 **[salesorderheaders]** エンティティ、およびデータを読み込むコード。 生成された XAML とコードの詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
   
 8. 次に、デザイナーのクリックしてコンボ ボックス、 **Sales Order ID**ラベル。  
   
@@ -206,7 +206,7 @@ ms.locfileid: "49913138"
 2.  アプリケーションを終了します。  
   
 ## <a name="next-steps"></a>次の手順  
- このチュートリアルを完了すると、使用する方法を説明します、**データ ソース**WPF のバインドを Visual Studio のウィンドウを他の種類のデータ ソースを制御します。 詳細については、次を参照してください。 [WCF data service にコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)と[データセットにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-dataset.md)します。  
+ このチュートリアルを完了すると、使用する方法を説明します、**データ ソース**WPF のバインドを Visual Studio のウィンドウを他の種類のデータ ソースを制御します。 詳細については、[WCF data service にコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)と[データセットにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-dataset.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのデータに WPF コントロールをバインドします。](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   

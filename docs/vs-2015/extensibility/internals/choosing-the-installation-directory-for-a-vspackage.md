@@ -47,7 +47,7 @@ VSPackage とそのサポート ファイルは、ユーザーのファイル �
   
  マネージ Vspackage を GAC 以外の場所にインストールする場合は、アンマネージ Vspackage 用に指定されたディレクトリ階層を選択する以前のアドバイスに従います。 Regpkg ツールの使用 **/codebase** VSPackage アセンブリのパスを指すレジストリ エントリを記述するスイッチ。  
   
- 詳細については、次を参照してください。[の登録および登録を解除する Vspackage](../../extensibility/registering-and-unregistering-vspackages.md)します。  
+ 詳細については、[の登録および登録を解除する Vspackage](../../extensibility/registering-and-unregistering-vspackages.md)を参照してください。  
   
 ## <a name="satellite-dlls"></a>サテライト Dll  
  慣例により、VSPackage がサテライト Dll: 特定のロケールのリソースを含んでいる-VSPackage のディレクトリのサブディレクトリにあります。 サブディレクトリでは、ロケール ID (LCID) の値に対応します。  

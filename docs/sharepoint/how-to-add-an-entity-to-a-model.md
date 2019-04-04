@@ -29,11 +29,11 @@ ms.locfileid: "56609658"
 
 ### <a name="to-add-an-entity-to-the-model"></a>モデルにエンティティを追加するには
 
-1.  BDC プロジェクトを作成するか、既存の BDC プロジェクトを開きます。 詳細については、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。
+1.  BDC プロジェクトを作成するか、既存の BDC プロジェクトを開きます。 詳細については、[business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)を参照してください。
 
 2.  **ツールボックス**から、 **BusinessDataCatalog**グループで、追加、**エンティティ**コントロールをデザイナーにします。
 
-     デザイナーで新しいエンティティが表示されます。 Visual Studio の追加、`<Entity>`プロジェクト内の BDC モデル ファイルの xml 要素。 エンティティ要素の属性に関する詳細については、次を参照してください。[エンティティ](http://go.microsoft.com/fwlink/?LinkId=169296)します。
+     デザイナーで新しいエンティティが表示されます。 Visual Studio の追加、`<Entity>`プロジェクト内の BDC モデル ファイルの xml 要素。 エンティティ要素の属性に関する詳細については、[エンティティ](http://go.microsoft.com/fwlink/?LinkId=169296)を参照してください。
 
 3.  デザイナーで、エンティティのショートカット メニューを開き、選択**追加**を選び、**識別子**します。
 

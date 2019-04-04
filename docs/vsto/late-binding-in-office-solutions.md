@@ -36,7 +36,7 @@ ms.locfileid: "56640689"
 
  ほとんどの場合、リファレンス ドキュメントを返すメンバーの戻り値の種類を一覧表示、<xref:System.Object>します。 オブジェクトをキャストまたは変換は、オブジェクト コード エディターで IntelliSense を使用できます。
 
- Visual Basic での変換については、次を参照してください。[暗黙的および明示的な変換&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)と[CType function &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function)します。
+ Visual Basic での変換については、[暗黙的および明示的な変換&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)と[CType function &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function)を参照してください。
 
 ### <a name="examples"></a>使用例
  次のコード例は、Visual Basic プロジェクトでオブジェクトを特定の型をキャストする方法を示します、 **Option Strict**にします。 この種類のプロジェクトでは、キャストする必要が明示的に、<xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A>プロパティを<xref:Microsoft.Office.Interop.Excel.Range>します。 この例では、という名前のワークシート クラスを使用して Excel のドキュメント レベルのプロジェクトが必要があります`Sheet1`します。

@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 321dd514e0690997cd0aab4ba2b05a7fe0898b6c
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49833422"
@@ -89,7 +89,7 @@ End Property
 1.  Visual Studio で、CustomDP という名前の C# クラス ライブラリ プロジェクトまたは Visual Basic クラス ライブラリ プロジェクトを作成します。  
 
     > [!NOTE]
-    >  複数のコンピューターにディレクティブ プロセッサをインストールする場合は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) プロジェクトを使用し、拡張機能に .pkgdef ファイルを追加することをお勧めします。 詳細については、次を参照してください。[カスタム ディレクティブ プロセッサの配置](../modeling/deploying-a-custom-directive-processor.md)します。  
+    >  複数のコンピューターにディレクティブ プロセッサをインストールする場合は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) プロジェクトを使用し、拡張機能に .pkgdef ファイルを追加することをお勧めします。 詳細については、[カスタム ディレクティブ プロセッサの配置](../modeling/deploying-a-custom-directive-processor.md)を参照してください。  
 
 2.  次のアセンブリへの参照を追加します。  
 
@@ -622,7 +622,7 @@ End Property
  テキスト テンプレートからディレクティブを呼び出す前に[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、ディレクティブ プロセッサのレジストリ キーを追加する必要があります。  
 
 > [!NOTE]
->  複数のコンピューターにディレクティブ プロセッサをインストールする場合は、アセンブリと .pkgdef ファイルを含む [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) を定義することをお勧めします。 詳細については、次を参照してください。[カスタム ディレクティブ プロセッサの配置](../modeling/deploying-a-custom-directive-processor.md)します。  
+>  複数のコンピューターにディレクティブ プロセッサをインストールする場合は、アセンブリと .pkgdef ファイルを含む [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) を定義することをお勧めします。 詳細については、[カスタム ディレクティブ プロセッサの配置](../modeling/deploying-a-custom-directive-processor.md)を参照してください。  
 
  ディレクティブ プロセッサのキーは次の場所のレジストリにあります。  
 
@@ -684,7 +684,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 ## <a name="testing-the-directive-processor"></a>ディレクティブ プロセッサのテスト  
  ディレクティブ プロセッサをテストするには、それを呼び出すテキスト テンプレートを記述する必要があります。  
 
- この例のテキスト テンプレートでは、ディレクティブを呼び出し、クラス ファイルのドキュメントを含む XML ファイルの名前を渡します。 詳細については、次を参照してください。 [XML ドキュメント コメント](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)します。  
+ この例のテキスト テンプレートでは、ディレクティブを呼び出し、クラス ファイルのドキュメントを含む XML ファイルの名前を渡します。 詳細については、[XML ドキュメント コメント](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)を参照してください。  
 
  テキスト テンプレートでは、次に、ディレクティブによって作成された <xref:System.Xml.XmlDocument> プロパティを使用して XML をナビゲートし、ドキュメントのコメントを出力します。  
 

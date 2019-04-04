@@ -38,7 +38,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 55b6ddc1d0e8e3a3caaee89547874e9e38115a17
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49194689"
@@ -47,13 +47,13 @@ ms.locfileid: "49194689"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Visual Studio には、Windows Communication Foundation (WCF) を操作するためのツールが用意されていて、 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]、分散アプリケーションを作成するための Microsoft テクノロジです。 このトピックではサービスからの概要、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パースペクティブ。 完全なドキュメントについては、次を参照してください。 [WCF データ サービスの 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)します。  
+Visual Studio には、Windows Communication Foundation (WCF) を操作するためのツールが用意されていて、 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]、分散アプリケーションを作成するための Microsoft テクノロジです。 このトピックではサービスからの概要、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パースペクティブ。 完全なドキュメントについては、[WCF データ サービスの 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)を参照してください。  
   
 ## <a name="what-is-wcf"></a>WCF とは何ですか。  
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] セキュリティで保護された、信頼性が高く、トランザクション、および相互運用可能な分散アプリケーションを作成するための統一されたフレームワークです。 ASMX Web サービス、.NET リモート処理、エンタープライズ サービス (DCOM)、および MSMQ などの以前のプロセス間通信テクノロジを置き換えます。 WCF は、統一されたプログラミング モデルでこれらすべてのテクノロジの機能です。 これは、分散アプリケーションの開発のエクスペリエンスを簡略化します。  
   
 #### <a name="what-are-wcf-data-services"></a>WCF Data Services とは  
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 標準的な Open Data (OData) プロトコルの実装です。  WCF Data Services では、表形式データなどの標準的な HTTP 動詞を使用してデータの取得を返す、投稿、配置、または削除することができます、REST Api のセットとして公開できます。 によって、サーバー側で WCF Data Services が置き換えられる[ASP.NET Web API](http://www.asp.net/web-api)新しい OData サービスを作成します。 WCF Data Services のクライアント ライブラリは Visual Studio からの .NET アプリケーションで OData サービスの使用に適して (**プロジェクト&#124;サービス参照の追加**)。 詳細については、次を参照してください。 [WCF データ サービスの 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)します。  
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 標準的な Open Data (OData) プロトコルの実装です。  WCF Data Services では、表形式データなどの標準的な HTTP 動詞を使用してデータの取得を返す、投稿、配置、または削除することができます、REST Api のセットとして公開できます。 によって、サーバー側で WCF Data Services が置き換えられる[ASP.NET Web API](http://www.asp.net/web-api)新しい OData サービスを作成します。 WCF Data Services のクライアント ライブラリは Visual Studio からの .NET アプリケーションで OData サービスの使用に適して (**プロジェクト&#124;サービス参照の追加**)。 詳細については、[WCF データ サービスの 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)を参照してください。  
   
 ### <a name="wcf-programming-model"></a>WCF プログラミング モデル  
  WCF プログラミング モデルは 2 つのエンティティ間の通信に基づく: WCF サービスと WCF クライアントです。 プログラミング モデルにカプセル化、<xref:System.ServiceModel>で名前空間、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]します。  
@@ -86,7 +86,7 @@ Visual Studio には、Windows Communication Foundation (WCF) を操作するた
  [!code-vb[WCFWalkthrough#3](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/form1.vb#3)]  
   
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio での WCF ツール  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] WCF サービスと WCF クライアントの両方を作成するためのツールを提供します。 ツールについて説明するチュートリアルでは、次を参照してください。[チュートリアル: Windows フォームにおける単純な WCF サービスを作成する](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)します。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] WCF サービスと WCF クライアントの両方を作成するためのツールを提供します。 ツールについて説明するチュートリアルでは、[チュートリアル: Windows フォームにおける単純な WCF サービスを作成する](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)を参照してください。  
   
 ### <a name="creating-and-testing-wcf-services"></a>作成して、WCF サービスのテスト  
  WCF を使用する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]独自のサービスをすばやく作成する基礎としてテンプレート。 デバッグし、テスト サービスを WCF サービスの自動ホストと WCF テスト クライアントを使用できます。 これらのツール、高速で簡単なデバッグとテストのサイクルを提供し、早い段階でホスティング モデルにコミットする必要があります。  
@@ -96,21 +96,21 @@ Visual Studio には、Windows Communication Foundation (WCF) を操作するた
   
  テンプレートを選択すると、サービス コントラクト、サービス実装、およびサービス構成ファイルが追加されます。 必要なすべての属性が既に追加、サービスの単純な"Hello World"型を作成して、コードを記述するがありませんでした。 関数と実際のサービスのメソッドを提供するコードを追加することは、もちろんが、テンプレートは、基本的な基盤を提供します。  
   
- WCF テンプレートの詳細については、次を参照してください。 [WCF Visual Studio テンプレート](http://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f)します。  
+ WCF テンプレートの詳細については、[WCF Visual Studio テンプレート](http://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f)を参照してください。  
   
 #### <a name="wcf-service-host"></a>WCF サービス ホスト  
  開始すると、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (f5 キーを押して) デバッガーの WCF サービス プロジェクトでは、WCF サービス ホストをローカルでサービスをホストするツールが自動的に起動します。 WCF サービス ホストは、WCF サービス プロジェクト内のサービスを列挙、プロジェクトの構成をロードおよび、検出された各サービスのホストをインスタンス化します。  
   
  WCF サービス ホストを使用すると、余分なコードを記述したり開発時に特定のホストにコミットすることがなく、WCF サービスをテストできます。  
   
- WCF サービス ホストの詳細については、次を参照してください。 [WCF サービス ホスト (WcfSvcHost.exe)](http://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e)します。  
+ WCF サービス ホストの詳細については、[WCF サービス ホスト (WcfSvcHost.exe)](http://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e)を参照してください。  
   
 #### <a name="wcf-test-client"></a>WCF のテスト用クライアント  
  WCF テスト クライアント ツールでは、テスト パラメーターを入力し、その WCF サービスに入力することができ、サービスが返送する応答を表示します。 WCF サービス ホストと組み合わせて使用すると、テストできる便利なサービスを提供します。 ここでは、c: ドライブにインストールされている、Visual Studio 2015 用を \Common7\IDE フォルダーにツールがあります: **C:\Program Files (x86) \Microsoft Visual Studio 14.0\Common7\IDE\\**します。  
   
  WCF サービス プロジェクトをデバッグする f5 キーを押すと、WCF テスト クライアントが開き、構成ファイルで定義されているサービス エンドポイントの一覧を表示します。 パラメーターをテスト サービスを開始し、継続的にテストして、サービスを検証するには、このプロセスを繰り返します。  
   
- WCF テスト クライアントの詳細については、次を参照してください。 [WCF テスト クライアント (WcfTestClient.exe)](http://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7)します。  
+ WCF テスト クライアントの詳細については、[WCF テスト クライアント (WcfTestClient.exe)](http://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7)を参照してください。  
   
 ### <a name="accessing-wcf-services-in-visual-studio"></a>Visual Studio での WCF サービスへのアクセス  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロキシとサービスを使用して、追加のエンドポイントを自動的に生成する、WCF クライアントを作成するタスクを簡略化、**サービス参照の追加** ダイアログ ボックス。 すべての必要な構成情報は、app.config ファイルに追加されます。 ほとんど、時間のそれを使用するためにサービスをインスタンス行う必要があることができます。  

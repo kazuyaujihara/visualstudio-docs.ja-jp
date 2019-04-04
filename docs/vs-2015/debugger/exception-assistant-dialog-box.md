@@ -30,7 +30,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: cd9750c9c88f9592158e9e8b3a8079af13b88652
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51722786"
@@ -45,7 +45,7 @@ ms.locfileid: "51722786"
   
  例外に関連するアクションを実行するには、アクション ペインに表示されたアクションのいずれかをクリックします。  
   
- 有効にするか、例外処理アシスタントを無効にする方法については、次を参照してください。 [General, Debugging, オプション ダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)します。  
+ 有効にするか、例外処理アシスタントを無効にする方法については、[General, Debugging, オプション ダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)を参照してください。  
   
 ## <a name="user-interface-element-list"></a>ユーザー インターフェイス要素一覧  
  **例外の種類**  

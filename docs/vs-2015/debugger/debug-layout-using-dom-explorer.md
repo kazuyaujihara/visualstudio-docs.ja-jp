@@ -25,7 +25,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51787757"
@@ -40,7 +40,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 > [!TIP]
 >  **[レイアウト]** タブで行った変更は永続的ではありません。 ソース コードを永続的に変更してアプリを更新するには、[デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタン (Windows ストア アプリと Windows Phone ストア アプリのみ) を使用します。 これにより、デバッガーを再起動せずに済みます。  
   
- DOM Explorer を使用して、ボックス モデルに表示されないレイアウトの側面を変更する、次を参照してください。[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)と[DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)します。  
+ DOM Explorer を使用して、ボックス モデルに表示されないレイアウトの側面を変更する、[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)と[DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)を参照してください。  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>レイアウトの問題の修正例  
  この例では、ハブ/ピボット テンプレートでリスト要素を選択し、 **[レイアウト]** タブに表示されるボックス モデルの値を解釈します。その後、プロパティ値のいずれかを変更してレイアウトの問題を修正します。  
@@ -88,7 +88,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 8.  Visual Studio に切り替え、DOM Explorer で **[要素の選択]** をクリックします (または Ctrl + B キーを押します)。 これで選択モードが変更され、項目をクリックで選択できるようになります。同時に、アプリが前面に表示されます。 モードは、シングルクリックで元に戻ります。  
   
     > [!TIP]
-    >  DOM Explorer で HTML 要素を直接選択するために、矢印キーや他のメソッドを使用することもできます。 要素を選択する方法の詳細については、次を参照してください。[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)します。  
+    >  DOM Explorer で HTML 要素を直接選択するために、矢印キーや他のメソッドを使用することもできます。 要素を選択する方法の詳細については、[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)を参照してください。  
   
 9. Phone エミュレーターまたはシミュレーターで、半分にカットされたイメージの 1 つのグレーの右半分を選択します。 Windows Phone エミュレーターに示すように、選択された要素の周囲に強調表示があります。  
   
