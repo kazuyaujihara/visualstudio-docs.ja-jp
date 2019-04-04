@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 61721d4665aa6a9c0a245c9d7fc70f0ddb0c45f8
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51725946"
@@ -66,7 +66,7 @@ ms.locfileid: "51725946"
 ##  <a name="BKMK_ProjectTemplate"></a> VSSDK によってどのようなプロジェクト テンプレートが提供されますか。  
  2 つの主な種類の拡張機能は、Vspackage および MEF 拡張機能です。 一般に、拡張機能を使用して、または、コマンド、ツール ウィンドウ、およびプロジェクトを拡張する VSPackage 拡張機能が使用されます。 MEF 拡張機能は、拡張、または Visual Studio エディターのカスタマイズに使用されます。  
   
- Visual c# および Visual Basic の拡張機能、VSSDK には、メニュー コマンド、ツール ウィンドウおよびエディターの拡張機能を作成する新しい項目テンプレートと共に使用できる空の VSIX プロジェクト テンプレートが用意されています。 詳細については、次を参照してください。 [、Visual Studio 2015 SDK の新](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)します。 その他のユーザーに配布するパッケージ プロジェクト テンプレート、コード スニペット、その他の成果物をこのテンプレートを使用することもできます。  
+ Visual c# および Visual Basic の拡張機能、VSSDK には、メニュー コマンド、ツール ウィンドウおよびエディターの拡張機能を作成する新しい項目テンプレートと共に使用できる空の VSIX プロジェクト テンプレートが用意されています。 詳細については、[、Visual Studio 2015 SDK の新](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)を参照してください。 その他のユーザーに配布するパッケージ プロジェクト テンプレート、コード スニペット、その他の成果物をこのテンプレートを使用することもできます。  
   
  C++ の場合は、VSPackage のウィザードは、メニュー コマンド、ツール ウィンドウ、およびカスタム エディターを追加するコードを提供します。  
   
@@ -93,5 +93,5 @@ ms.locfileid: "51725946"
 ## <a name="how-can-i-distribute-my-extension"></a>My 拡張を配布する方法は?  
  別のコンピューターで、拡張機能をインストールしたり、.vsix ファイルをダブルクリックしてインストールすると、友人に送信することができます。 VSIX パッケージの詳細については[Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)します。  
   
- 多数の Visual Studio の顧客を可視化、Visual Studio ギャラリーで、拡張機能を公開することもできます。 ギャラリーの拡張機能をパッケージ化の例は、次を参照してください。[チュートリアル: Visual Studio 拡張機能を公開](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)します。 ギャラリーに発行するために必要があるについての詳細については、次を参照してください。[製品と Visual Studio の拡張機能](https://visualstudiogallery.msdn.microsoft.com/)します。
+ 多数の Visual Studio の顧客を可視化、Visual Studio ギャラリーで、拡張機能を公開することもできます。 ギャラリーの拡張機能をパッケージ化の例は、[チュートリアル: Visual Studio 拡張機能を公開](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)を参照してください。 ギャラリーに発行するために必要があるについての詳細については、[製品と Visual Studio の拡張機能](https://visualstudiogallery.msdn.microsoft.com/)を参照してください。
 
