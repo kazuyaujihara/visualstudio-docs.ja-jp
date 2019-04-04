@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: eebacb3006826a90320cbc61edf7d56467e688ce
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51760217"
@@ -33,7 +33,7 @@ ms.locfileid: "51760217"
 ## <a name="project-file"></a>プロジェクト ファイル  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) では、適切なプロジェクトの種類にテンプレートをマップする方法としてプロジェクト ファイルの拡張子が必要です。 Web プロジェクトはプロジェクト ファイルがあるないために、ダミーのプロジェクト ファイルの拡張機能の .webproj はこれをサポートするために登録されます。  
   
- 言語名の文字列を追加して既定の言語を設定する Web プロジェクト システムを有効にするテンプレートに、必要に応じて、**新しい項目の追加**テンプレートに基づいて項目のダイアログ ボックス。 文字列は、ファイルの最初の行にある必要があります、Intellisense エンジンの登録に AddItemLanguageName で登録されている名前とプロジェクト Subtype(VsTemplate) 登録の名前の両方に一致する必要があります。 詳細については、次を参照してください。 [Web サイト サポート属性](../../extensibility/internals/web-site-support-attributes.md)します。  
+ 言語名の文字列を追加して既定の言語を設定する Web プロジェクト システムを有効にするテンプレートに、必要に応じて、**新しい項目の追加**テンプレートに基づいて項目のダイアログ ボックス。 文字列は、ファイルの最初の行にある必要があります、Intellisense エンジンの登録に AddItemLanguageName で登録されている名前とプロジェクト Subtype(VsTemplate) 登録の名前の両方に一致する必要があります。 詳細については、[Web サイト サポート属性](../../extensibility/internals/web-site-support-attributes.md)を参照してください。  
   
  文字列が存在しない場合、Web プロジェクト システムはプロジェクト テンプレートのテンプレートによって Web プロジェクトに追加されたページの言語の属性とファイル拡張機能に基づく既定の言語を決定しようとします。  
   

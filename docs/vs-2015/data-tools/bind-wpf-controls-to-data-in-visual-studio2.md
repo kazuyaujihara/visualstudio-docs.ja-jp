@@ -27,7 +27,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 9cd13723e1483a33e4b98dc544c6e8448dc9a980
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49208244"
@@ -61,49 +61,49 @@ ms.locfileid: "49208244"
   
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>単一のデータ フィールドにバインドされるコントロールを作成するには  
   
-1.  **データソース**ウィンドウで、テーブルまたはオブジェクトを表す項目を展開します。 バインドする列またはプロパティを表す子項目を検索します。 ビジュアルの例では、次を参照してください。[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)します。  
+1.  **データソース**ウィンドウで、テーブルまたはオブジェクトを表す項目を展開します。 バインドする列またはプロパティを表す子項目を検索します。 ビジュアルの例では、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)を参照してください。  
   
 2.  必要に応じて、作成するコントロールを選択します。 内の各項目、**データソース**ウィンドウがデザイナーに項目をドラッグするときに作成される既定のコントロール。 既定のコントロールは、項目の基になるデータ型によって異なります。  
   
-     既定以外のコントロールを選択するには、項目の横にあるドロップダウン矢印をクリックし、コントロールを選択します。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
+     既定以外のコントロールを選択するには、項目の横にあるドロップダウン矢印をクリックし、コントロールを選択します。 詳細については、[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)を参照してください。  
   
-3.  デザイナーで有効なコンテナーに項目をドラッグします。 有効なコンテナーの詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+3.  デザイナーで有効なコンテナーに項目をドラッグします。 有効なコンテナーの詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 新しいデータ バインド コントロールと適切なタイトルを作成します。<xref:System.Windows.Controls.Label>コンテナーにします。 また、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、データにコントロールをバインドするための [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] とコードが生成されます。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 新しいデータ バインド コントロールと適切なタイトルを作成します。<xref:System.Windows.Controls.Label>コンテナーにします。 また、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、データにコントロールをバインドするための [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] とコードが生成されます。 詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
   
 ##  <a name="complex"></a> 複数のデータ フィールドにバインドされているコントロールを作成します。  
  データ ソースを追加した後、**データソース**ウィンドウなど、データの複数のフィールドを表示する新しいデータ バインド コントロールを作成することができます、<xref:System.Windows.Controls.DataGrid>または<xref:System.Windows.Controls.ListView>します。  
   
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>複数のデータ フィールドにバインドされるコントロールを作成するには  
   
-1.  **データソース**ウィンドウで、テーブルまたはオブジェクトを表す項目を選択します。 ビジュアルの例では、次を参照してください。[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)します。  
+1.  **データソース**ウィンドウで、テーブルまたはオブジェクトを表す項目を選択します。 ビジュアルの例では、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)を参照してください。  
   
 2.  必要に応じて、作成するコントロールを選択します。 既定では、各項目で、**データ ソース**を作成するデータ テーブルまたはオブジェクトを表す枠が設定されて、 <xref:System.Windows.Controls.DataGrid> (プロジェクトのターゲットが .NET Framework 4) の場合または<xref:System.Windows.Controls.ListView>(の .NET Framework の以前のバージョン)。  
   
-     既定以外のコントロールを選択するには、項目の横にあるドロップダウン矢印をクリックし、コントロールを選択します。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
+     既定以外のコントロールを選択するには、項目の横にあるドロップダウン矢印をクリックし、コントロールを選択します。 詳細については、[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)を参照してください。  
   
     > [!NOTE]
     >  特定の列またはプロパティを表示しないようにする場合は、項目を展開してその子を表示します。 列またはを表示したくないプロパティの横にあるドロップダウン矢印をクリックします。 **None**します。  
   
-3.  デザイナーで、<xref:System.Windows.Controls.Grid> などの有効なコンテナーに項目をドラッグします。 有効なコンテナーの詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+3.  デザイナーで、<xref:System.Windows.Controls.Grid> などの有効なコンテナーに項目をドラッグします。 有効なコンテナーの詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、新しいデータ バインド コントロールがコンテナー内に作成されます。 また、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、データにコントロールをバインドするための [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] とコードが生成されます。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、新しいデータ バインド コントロールがコンテナー内に作成されます。 また、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、データにコントロールをバインドするための [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] とコードが生成されます。 詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
   
 ##  <a name="details"></a> 複数のデータ フィールドにバインドされているコントロールのセットを作成します。  
  データ ソースを追加した後、**データソース**ウィンドウで、データ テーブルまたはオブジェクトは、一連のコントロールにバインドすることができます。 テーブルまたはオブジェクトの列やプロパティごとに、異なるコントロールが作成されます。  
   
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>複数のデータ フィールドにバインドされるコントロール セットを作成するには  
   
-1.  **データソース**ウィンドウで、テーブルまたはオブジェクトを表す項目を選択します。 ビジュアルの例では、次を参照してください。[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)します。  
+1.  **データソース**ウィンドウで、テーブルまたはオブジェクトを表す項目を選択します。 ビジュアルの例では、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)を参照してください。  
   
 2.  クリックし、項目の横にあるドロップダウン矢印をクリックします。**詳細**します。  
   
     > [!NOTE]
     >  特定の列またはプロパティを表示しないようにする場合は、項目を展開してその子を表示します。 列またはを表示したくないプロパティの横にあるドロップダウン矢印をクリックします。 **None**します。  
   
-3.  デザイナーで、<xref:System.Windows.Controls.Grid> などの有効なコンテナーに項目をドラッグします。 有効なコンテナーの詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+3.  デザイナーで、<xref:System.Windows.Controls.Grid> などの有効なコンテナーに項目をドラッグします。 有効なコンテナーの詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、新しいデータ バインド コントロールがコンテナー内に作成されます。 各コントロールは別々の列またはプロパティにバインドされ、適切なタイトルの <xref:System.Windows.Controls.Label> コントロールが追加されます。 また、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、データにコントロールをバインドするための [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] とコードが生成されます。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、新しいデータ バインド コントロールがコンテナー内に作成されます。 各コントロールは別々の列またはプロパティにバインドされ、適切なタイトルの <xref:System.Windows.Controls.Label> コントロールが追加されます。 また、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、データにコントロールをバインドするための [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] とコードが生成されます。 詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
   
 ##  <a name="existing"></a> デザイナーで既存のコントロールに Binddata  
  データ ソースを追加した後、**データソース**ウィンドウで、データ デザイナーで既存のコントロールにバインディングを追加することができます。  
@@ -116,9 +116,9 @@ ms.locfileid: "49208244"
   
     -   <xref:System.Windows.Controls.ComboBox> や <xref:System.Windows.Controls.TextBox> など、単一のデータ フィールドを表示する既存のコントロールにデータ バインディングを追加するには、データが格納されているテーブルまたはオブジェクトを表す項目を展開し、コントロールにバインドするデータを表す項目を選択します。  
   
-2.  選択した項目をドラッグして、**データソース**デザイナーで既存のコントロールにウィンドウ。 コントロールは、有効なドロップ ターゲットである必要があります。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+2.  選択した項目をドラッグして、**データソース**デザイナーで既存のコントロールにウィンドウ。 コントロールは、有効なドロップ ターゲットである必要があります。 詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]と、データにコントロールをバインドするコードです。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]と、データにコントロールをバインドするコードです。 詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
   
     > [!NOTE]
     >  コントロールが既にデータにバインドされている場合は、コントロールのデータ バインディングが、最後にコントロールにドラッグされた項目に再設定されます。  

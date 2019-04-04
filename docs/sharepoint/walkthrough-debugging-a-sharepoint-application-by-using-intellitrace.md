@@ -279,7 +279,7 @@ IntelliTrace を使用すると、SharePoint ソリューション簡単にデ�
 SharePoint を実行しているシステムに Microsoft Monitoring Agent をインストールする場合は、IntelliTrace から返されるジェネリック情報よりも具体的であるデータを使用して SharePoint ソリューションをデバッグできます。 エージェントは、PowerShell コマンドレットを使用して Visual Studio 外で動作し、SharePoint ソリューションの実行中にデバッグ情報をキャプチャします。
 
 > [!NOTE]
-> このセクションの構成情報は、この例に固有です。 その他の構成オプションの詳細については、次を参照してください。 [IntelliTrace スタンドアロン コレクターを使用して](../debugger/using-the-intellitrace-stand-alone-collector.md)します。
+> このセクションの構成情報は、この例に固有です。 その他の構成オプションの詳細については、[IntelliTrace スタンドアロン コレクターを使用して](../debugger/using-the-intellitrace-stand-alone-collector.md)を参照してください。
 
 1. SharePoint を実行しているコンピューターで[Microsoft Monitoring Agent を設定し、ソリューションの監視を開始](../debugger/using-the-intellitrace-stand-alone-collector.md)します。
 

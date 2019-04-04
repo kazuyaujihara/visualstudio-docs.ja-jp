@@ -62,7 +62,7 @@ ms.locfileid: "58416020"
 
  DSL のインスタンスを含むファイルのスキーマ。 このファイルは、コンパイル時にコピー (**bin**) ディレクトリ。 DSL をインストールするときにこのファイルをコピーできます**\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas**モデル ファイルを検証できるようにします。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
 
- DSL エクスプローラーでオプションを設定することによりシリアル化をカスタマイズする場合、スキーマは適宜変更されます。 ただし、独自のシリアル化コードを作成する場合、このファイルは実際のスキーマを表さなくなる場合があります。 詳細については、次を参照してください。[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)します。
+ DSL エクスプローラーでオプションを設定することによりシリアル化をカスタマイズする場合、スキーマは適宜変更されます。 ただし、独自のシリアル化コードを作成する場合、このファイルは実際のスキーマを表さなくなる場合があります。 詳細については、[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)を参照してください。
 
  `ConnectionBuilders.cs`
 
@@ -102,7 +102,7 @@ ms.locfileid: "58416020"
 
  このディレクティブ プロセッサは、ユーザーが DSL のインスタンスを読み取るテキスト テンプレートを作成するのに役立ちます。 ディレクティブ プロセッサは DSL のアセンブリ (DLL) を読み込み、名前空間の `using` ステートメントを効果的に挿入します。 これにより、テキスト テンプレート内のコードは DSL 内に定義されたクラスとリレーションシップを使用できます。
 
- 詳細については、次を参照してください。[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)と[カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成](../modeling/creating-custom-t4-text-template-directive-processors.md)です。
+ 詳細については、[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)と[カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成](../modeling/creating-custom-t4-text-template-directive-processors.md)を参照してください。
 
  `DomainClasses.cs`
 
@@ -110,7 +110,7 @@ ms.locfileid: "58416020"
 
  各ドメイン クラスは以下のものを含みます。
 
-- 各ドメイン プロパティのプロパティ定義と入れ子になったハンドラー クラス。 OnValueChanging() および OnValueChanged() をオーバーライドできます。 詳細については、次を参照してください。[ドメイン プロパティ値変更ハンドラー](../modeling/domain-property-value-change-handlers.md)します。
+- 各ドメイン プロパティのプロパティ定義と入れ子になったハンドラー クラス。 OnValueChanging() および OnValueChanged() をオーバーライドできます。 詳細については、[ドメイン プロパティ値変更ハンドラー](../modeling/domain-property-value-change-handlers.md)を参照してください。
 
    DSL の例で、`Comment` クラスはプロパティ `Text` とハンドラー クラス `TextPropertyHandler` を含みます。
 
@@ -153,15 +153,15 @@ ms.locfileid: "58416020"
 
  1..1 または 1..* の多重度を指定するリレーションシップ ロールで、ユーザーにリレーションシップのインスタンスが少なくとも 1 つ必要であることを警告する必要があります。 このファイルはそれらの警告を実装する検証制約を提供します。 埋め込み親への 1..1 リンクは検証されません。
 
- これらの制約を実行する必要がありますを設定しての 1 つ、**を使用しています.** オプション、**発します**DSL エクスプ ローラーでノード。 詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。
+ これらの制約を実行する必要がありますを設定しての 1 つ、**を使用しています.** オプション、**発します**DSL エクスプ ローラーでノード。 詳細については、[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)を参照してください。
 
  `PropertiesGrid.cs`
 
- このファイルは、カスタム型記述子をドメイン プロパティにアタッチしている場合にのみ、コードを含みます。 詳細については、次を参照してください。[プロパティ ウィンドウのカスタマイズ](../modeling/customizing-the-properties-window.md)します。
+ このファイルは、カスタム型記述子をドメイン プロパティにアタッチしている場合にのみ、コードを含みます。 詳細については、[プロパティ ウィンドウのカスタマイズ](../modeling/customizing-the-properties-window.md)を参照してください。
 
  `SerializationHelper.cs`
 
-- 同じモニカーにより参照される要素は 2 つないことを確認するための検証メソッド。 詳細については、次を参照してください。[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)します。
+- 同じモニカーにより参照される要素は 2 つないことを確認するための検証メソッド。 詳細については、[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)を参照してください。
 
 - SerializationHelper class。シリアル化クラスにより共通で使用される関数を提供します。
 
@@ -173,7 +173,7 @@ ms.locfileid: "58416020"
 
   `Shapes.cs`
 
-  DSL 定義内のすべての図形クラスに対するクラス。 図形は <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> から派生します。 詳細については、次を参照してください。[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)します。
+  DSL 定義内のすべての図形クラスに対するクラス。 図形は <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> から派生します。 詳細については、[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)を参照してください。
 
   部分クラスで、独自のメソッドで生成されたメソッドをオーバーライドするには、次のように設定します。 **Double Derived の生成**DSL 定義でコネクタ。 コンス トラクターを独自のコードに置き換えて、次のように設定します。**カスタム コンス トラクターを持つ**します。
 
@@ -192,7 +192,7 @@ ms.locfileid: "58416020"
 
  `CommandSet.cs`
 
- ダイアグラムで表示される右クリック メニュー コマンド。 この設定の適用または設定への追加が可能です。 このファイルはコマンドのコードを含みます。 メニュー上のコマンドの場所は Commands.vsct ファイルにより決定されます。 詳細については、次を参照してください。[書き込みユーザー コマンドおよびユーザー アクション](../modeling/writing-user-commands-and-actions.md)します。
+ ダイアグラムで表示される右クリック メニュー コマンド。 この設定の適用または設定への追加が可能です。 このファイルはコマンドのコードを含みます。 メニュー上のコマンドの場所は Commands.vsct ファイルにより決定されます。 詳細については、[書き込みユーザー コマンドおよびユーザー アクション](../modeling/writing-user-commands-and-actions.md)を参照してください。
 
  `Constants.cs`
 
@@ -282,7 +282,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- [ダイアグラム] (コンテキスト) を右クリック メニューなど、メニュー上の標準のメニュー コマンドを検索、**編集**メニューのという具合です。 コマンドのコードは CommandSet.cs にあります。 標準コマンドを再配置または変更して、独自のコマンドを追加できます。 詳細については、次を参照してください。[書き込みユーザー コマンドおよびユーザー アクション](../modeling/writing-user-commands-and-actions.md)します。
+ [ダイアグラム] (コンテキスト) を右クリック メニューなど、メニュー上の標準のメニュー コマンドを検索、**編集**メニューのという具合です。 コマンドのコードは CommandSet.cs にあります。 標準コマンドを再配置または変更して、独自のコマンドを追加できます。 詳細については、[書き込みユーザー コマンドおよびユーザー アクション](../modeling/writing-user-commands-and-actions.md)を参照してください。
 
  `ModelExplorer.cs`
 

@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 37049ab5c3d696c992cb1d7deca857706f98df92
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49307617"
@@ -34,9 +34,9 @@ ms.locfileid: "49307617"
 
 通常、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Web サーバーからインストールした後すぐに、アプリケーションが自動的に開始されます。 セキュリティ上の理由から、この動作を無効にしてからアプリケーションを起動するユーザーに通知すること可能性があります、**開始** メニューの代わりにします。 次の手順では、URL アクティベーションを無効にする方法を説明します。  
   
- この手法は、Web サーバーからユーザーのコンピューターにインストールされた [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションにのみ使用できます。 その URL を使用してのみ開始できますオンライン専用アプリケーションを使用できません。 詳細とインストールされているオンライン専用アプリケーションの違いについては、次を参照してください。 [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)します。  
+ この手法は、Web サーバーからユーザーのコンピューターにインストールされた [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションにのみ使用できます。 その URL を使用してのみ開始できますオンライン専用アプリケーションを使用できません。 詳細とインストールされているオンライン専用アプリケーションの違いについては、[ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)を参照してください。  
   
- この手順では[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 使用してこのタスクを実行することもできます、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)]します。 詳細については、次を参照してください。[方法: ClickOnce アプリケーションの URL アクティベーションを無効にする](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)します。  
+ この手順では[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 使用してこのタスクを実行することもできます、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)]します。 詳細については、[方法: ClickOnce アプリケーションの URL アクティベーションを無効にする](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)を参照してください。  
   
 ## <a name="procedure"></a>プロシージャ  
   

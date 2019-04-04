@@ -77,7 +77,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
   
     `System.Windows.Forms`  
   
-    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – レイヤー図を拡張する場合にのみ必要になります。 詳細については、次を参照してください。[レイヤー図を拡張](../modeling/extend-layer-diagrams.md)します。  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – レイヤー図を拡張する場合にのみ必要になります。 詳細については、[レイヤー図を拡張](../modeling/extend-layer-diagrams.md)を参照してください。  
   
 3. プロジェクトにクラス ファイルを追加し、その内容を次のコードに設定します。  
   
@@ -327,7 +327,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 ### <a name="writing-the-code-of-the-methods"></a>メソッドのコードの記述  
  モデルを読み取って更新するコードの記述の詳細については、「 [Programming with the UML API](../modeling/programming-with-the-uml-api.md)」を参照してください。  
   
- ドラッグ操作でモデル情報へのアクセス方法の詳細については、次を参照してください。[取得モデル IDataObject から UML 要素](../modeling/get-uml-model-elements-from-idataobject.md)します。  
+ ドラッグ操作でモデル情報へのアクセス方法の詳細については、[取得モデル IDataObject から UML 要素](../modeling/get-uml-model-elements-from-idataobject.md)を参照してください。  
   
  シーケンス図を処理する場合も参照してください[UML API を使用して編集 UML シーケンス図](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)します。  
   
@@ -349,7 +349,7 @@ foreach (IDiagram diagram in modelStore.Diagrams) {...}
 foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}  
 ```  
   
- 詳細については、次を参照してください。 [UML モデル内を移動](../modeling/navigate-the-uml-model.md)します。  
+ 詳細については、[UML モデル内を移動](../modeling/navigate-the-uml-model.md)を参照してください。  
   
 ##  <a name="Installing"></a> インストールして、拡張機能をアンインストールします。  
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能は、自分のコンピューターと他のコンピューターの両方にインストールできます。  
@@ -389,7 +389,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
  テストするには、F5 キーを押します。 Visual Studio の実験用インスタンスが開きます。 このインスタンスで UML モデルを開き、コンポーネント図にコンポーネントを生成します。 このコンポーネントに、インターフェイスと内部コンポーネントのパートを追加します。 インターフェイスおよびパートを選択します。 次に、インターフェイスおよびパートをシーケンス図にドラッグします  (コンポーネント図からシーケンス図のタブまでドラッグし、続いてシーケンス図にドラッグします)。生存線は、インターフェイスとパートのそれぞれに表示されます。  
   
- 相互作用をシーケンス図にバインディングの詳細については、次を参照してください。 [UML API を使用して編集 UML シーケンス図](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)します。  
+ 相互作用をシーケンス図にバインディングの詳細については、[UML API を使用して編集 UML シーケンス図](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)を参照してください。  
   
 ```  
 using System.Collections.Generic;  

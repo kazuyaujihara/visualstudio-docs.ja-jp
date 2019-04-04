@@ -20,7 +20,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56639870"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>方法: SharePoint プロジェクトを配置または取り消すときに、コードを実行します。
-  SharePoint プロジェクトを配置または取り消すときに、追加のタスクを実行する場合は、Visual Studio によって生成されるイベントを処理できます。 詳細については、次を参照してください。 [SharePoint の拡張のパッケージ化と配置](../sharepoint/extending-sharepoint-packaging-and-deployment.md)します。
+  SharePoint プロジェクトを配置または取り消すときに、追加のタスクを実行する場合は、Visual Studio によって生成されるイベントを処理できます。 詳細については、[SharePoint の拡張のパッケージ化と配置](../sharepoint/extending-sharepoint-packaging-and-deployment.md)を参照してください。
 
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>SharePoint プロジェクトのコードを実行するには、配置時または取り消し
 
@@ -51,7 +51,7 @@ ms.locfileid: "56639870"
 -   System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>拡張機能をデプロイします。
- 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+ 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、[Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint のパッケージ化と配置を拡張します。](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

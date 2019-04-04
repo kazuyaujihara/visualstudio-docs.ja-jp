@@ -23,11 +23,11 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56604926"
 ---
 # <a name="secure-deployment"></a>デプロイのセキュリティ保護します。
-  Office ソリューションを作成するときに実行するプロジェクトでコードを許可する、開発用コンピューターが自動的に更新されます。 ただし、ソリューションを配置するときに、ソリューションに証明書で署名するかを使用して、信頼の決定の基になる証拠を提供する必要があります、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信頼プロンプト キー。 詳細については、次を参照してください。 [Office ソリューションに信頼を付与](../vsto/granting-trust-to-office-solutions.md)します。
+  Office ソリューションを作成するときに実行するプロジェクトでコードを許可する、開発用コンピューターが自動的に更新されます。 ただし、ソリューションを配置するときに、ソリューションに証明書で署名するかを使用して、信頼の決定の基になる証拠を提供する必要があります、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信頼プロンプト キー。 詳細については、[Office ソリューションに信頼を付与](../vsto/granting-trust-to-office-solutions.md)を参照してください。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- ドキュメント レベルのカスタマイズに、ネットワークの場所にドキュメントを配置する場合、Office アプリケーションのセキュリティ センターで信頼できる場所の一覧にドキュメントの場所を追加する必要がありますもできます。 エンドユーザーのコンピューターにドキュメントのアクセス許可を設定する方法の詳細については、次を参照してください。[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)します。
+ ドキュメント レベルのカスタマイズに、ネットワークの場所にドキュメントを配置する場合、Office アプリケーションのセキュリティ センターで信頼できる場所の一覧にドキュメントの場所を追加する必要がありますもできます。 エンドユーザーのコンピューターにドキュメントのアクセス許可を設定する方法の詳細については、[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)を参照してください。
 
 ## <a name="prevent-office-solutions-from-running-code"></a>Office ソリューションがコードを実行するを防ぐ
  管理者は、すべての Office ソリューションがコンピューターで実行されていることを防ぐために、レジストリを使用できます。 マネージ コード拡張機能を Office ソリューションが開かれた場合、Visual Studio Tools for Office ランタイム チェック エントリかどうか、名前の`Disabled`が存在するコンピューターで次のレジストリ キーのいずれかの。

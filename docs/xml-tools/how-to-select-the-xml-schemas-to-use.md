@@ -24,7 +24,7 @@ XML エディターでスキーマ キャッシュを提供する、 *%VSInstall
 指定したスキーマは (非表示) のソリューション ユーザー オプション ファイルに保存されます (.*suo*)、およびその他のすべての XML ドキュメントのプロパティ。 その結果、次回ソリューションを開き、これらの値を再入力する必要はありません。
 
 > [!NOTE]
-> エディターは、インライン スキーマまたはによって参照されるスキーマを使用して検証できます、`xsd:schemaLocation`属性。 詳細については、次を参照してください。 [XML ドキュメントの検証](../xml-tools/xml-document-validation.md)です。
+> エディターは、インライン スキーマまたはによって参照されるスキーマを使用して検証できます、`xsd:schemaLocation`属性。 詳細については、[XML ドキュメントの検証](../xml-tools/xml-document-validation.md)を参照してください。
 
 ## <a name="to-select-an-xml-schema-from-the-schema-cache"></a>スキーマ キャッシュから XML スキーマを選択するには
 

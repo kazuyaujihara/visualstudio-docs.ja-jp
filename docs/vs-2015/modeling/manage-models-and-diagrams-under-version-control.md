@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 20cb2e89a85f00782a172245dcdd8f47025ddd12
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51738044"
@@ -50,7 +50,7 @@ ms.locfileid: "51738044"
 ##  <a name="Shared"></a> 共有モデリング プロジェクトで作業します。  
  プロジェクトの異なる部分に対して同時に実行された作業間の競合を最小限に抑えるには、次の点に注意します。  
   
--   モデリング プロジェクトを異なる作業領域を表す複数のパッケージに分割します。 ルート モデル内にモデルを残さずに、モデル全体をパッケージに移動します。 詳細については、次を参照してください。[パッケージと名前空間の定義](../modeling/define-packages-and-namespaces.md)します。  
+-   モデリング プロジェクトを異なる作業領域を表す複数のパッケージに分割します。 ルート モデル内にモデルを残さずに、モデル全体をパッケージに移動します。 詳細については、[パッケージと名前空間の定義](../modeling/define-packages-and-namespaces.md)を参照してください。  
   
 -   異なるユーザーが同時に同じパッケージまたは図を操作しないようにしてください。  
   

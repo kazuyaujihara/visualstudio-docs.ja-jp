@@ -21,10 +21,10 @@ ms.locfileid: "56631394"
 使用して、拡張機能をデプロイする場合、 *.msi*ファイルが実行する必要があります**devenv/setup** Visual Studio 拡張機能を検出するために、インストールの一部として。
 
 > [!NOTE]
->  このトピックの情報が検索に適用されます*devenv.exe* Visual Studio 2008 以前のバージョンとします。 検出する方法については*devenv.exe*以降のバージョンの Visual Studio では、次を参照してください。[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)します。
+>  このトピックの情報が検索に適用されます*devenv.exe* Visual Studio 2008 以前のバージョンとします。 検出する方法については*devenv.exe*以降のバージョンの Visual Studio では、[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)を参照してください。
 
 ## <a name="find-devenvexe"></a>Devenv.exe を検索します。
- 各バージョンを見つけることができます*devenv.exe*値をレジストリから[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]インストーラーの書き込み、RegLocator テーブルおよび AppSearch テーブルを使用して、レジストリ値をプロパティとして格納します。 詳細については、次を参照してください。[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)します。
+ 各バージョンを見つけることができます*devenv.exe*値をレジストリから[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]インストーラーの書き込み、RegLocator テーブルおよび AppSearch テーブルを使用して、レジストリ値をプロパティとして格納します。 詳細については、[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)を参照してください。
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator テーブルの行から異なるバージョンの Visual Studio の devenv.exe を検索するには
 
@@ -52,7 +52,7 @@ ms.locfileid: "56631394"
 ## <a name="run-devenvexe"></a>Devenv.exe を実行します。
  AppSearch テーブル内の各プロパティが指す値を持つインストーラーの標準的なアクションを実行する AppSearch、後に、 *devenv.exe*対応するバージョンの Visual Studio 用のファイル。 指定されたレジストリ値のいずれかが存在しないかどうか、そのバージョンの Visual Studio がインストールされていないため-指定したプロパティを設定を null にします。
 
- カスタム アクションでプロパティをポイントする実行可能ファイルを実行している Windows インストーラーのサポートは、50 を入力します。 カスタム アクションは、スクリプトの実行オプションを含める必要があります`msidbCustomActionTypeInScript`(1024) と`msidbCustomActionTypeCommit`に統合する前に、VSPackage が正常にインストールされていることを確認する (512)、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 詳細については、次を参照してください。 [CustomAction テーブル](https://docs.microsoft.com/windows/desktop/msi/customaction-table)と[カスタム アクション スクリプトの実行オプション](https://docs.microsoft.com/windows/desktop/msi/custom-action-in-script-execution-options)します。
+ カスタム アクションでプロパティをポイントする実行可能ファイルを実行している Windows インストーラーのサポートは、50 を入力します。 カスタム アクションは、スクリプトの実行オプションを含める必要があります`msidbCustomActionTypeInScript`(1024) と`msidbCustomActionTypeCommit`に統合する前に、VSPackage が正常にインストールされていることを確認する (512)、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 詳細については、[CustomAction テーブル](https://docs.microsoft.com/windows/desktop/msi/customaction-table)と[カスタム アクション スクリプトの実行オプション](https://docs.microsoft.com/windows/desktop/msi/custom-action-in-script-execution-options)を参照してください。
 
  50 種類のカスタム アクションは、ソース列と対象の列でコマンドライン引数の値として、実行可能ファイルを含むプロパティを指定します。
 

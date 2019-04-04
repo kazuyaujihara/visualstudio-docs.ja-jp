@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49240553"
@@ -105,7 +105,7 @@ ms.locfileid: "49240553"
     }  
     ```  
   
-     プログラム コードでモデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。  
+     プログラム コードでモデルをカスタマイズする方法の詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [シェイプとコネクタの定義](../modeling/defining-shapes-and-connectors.md)   

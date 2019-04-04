@@ -44,7 +44,7 @@ ms.locfileid: "56620305"
 
 - ドキュメントのデータセットをキャッシュしない場合は、 **false** を選択します。
 
-  データのキャッシュの詳細については、次を参照してください。[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)します。
+  データのキャッシュの詳細については、[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)を参照してください。
 
 ## <a name="value2"></a>Value2
  **Value2** プロパティは、Excel ブック プロジェクトまたはテンプレート プロジェクトにのみ使用できます。 ワークシート デザイナーで **コントロールを選択すると、[** プロパティ **] ウィンドウの** Databindings <xref:Microsoft.Office.Tools.Excel.NamedRange> プロパティの下に表示されます。

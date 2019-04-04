@@ -32,7 +32,7 @@ ms.locfileid: "56623646"
 
  サンプル コードは説明を目的としたものであり、実際に配置されるソリューションで変更を加えずに使用することは避けてください。 特に、セキュリティには十分な注意が必要です。
 
- アプリケーションをセキュリティで保護する方法の詳細については、次を参照してください。[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)します。
+ アプリケーションをセキュリティで保護する方法の詳細については、[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)を参照してください。
 
 > [!NOTE]
 >  [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。

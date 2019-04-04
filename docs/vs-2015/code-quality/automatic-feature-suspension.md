@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: c8aee8f4ef46d3621bf569b260d943180abd7ad5
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49178179"
@@ -40,10 +40,10 @@ ms.locfileid: "49178179"
 -   Visual Studio のキャッシュがフラッシュされます。
 
 ## <a name="improve-visual-studio-performance"></a>Visual Studio のパフォーマンスを向上させる
- ヒントやテクニックが大規模なソリューションまたはメモリ不足の状態を扱うときは、Visual Studio のパフォーマンスを向上させる方法については、次を参照してください。[大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)します。
+ ヒントやテクニックが大規模なソリューションまたはメモリ不足の状態を扱うときは、Visual Studio のパフォーマンスを向上させる方法については、[大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)を参照してください。
 
 ## <a name="full-solution-analysis-suspended"></a>完全ソリューション解析を中断
- 完全ソリューション解析は既定では、Visual Basic を有効になっているし、無効になっている Visual c# 用。 ただし、メモリ不足の状態で完全ソリューション解析が自動的に無効に Visual Basic と Visual c# の両方のオプション ダイアログ ボックスで、設定に関係なく。 ただし、再有効化できます完全ソリューション解析を選択して、**再度有効にする**、情報バーが表示されたら、選択してボタン、**完全ソリューション解析を有効にする**オプション ダイアログ ボックスで、チェック ボックスVisual Studio を再起動しています。 オプション ダイアログ ボックスでは、分析の設定、現在の完全なソリューションが常に表示します。 詳細については、次を参照してください。[方法: 有効にすると、完全なソリューション分析を無効にする](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)します。
+ 完全ソリューション解析は既定では、Visual Basic を有効になっているし、無効になっている Visual c# 用。 ただし、メモリ不足の状態で完全ソリューション解析が自動的に無効に Visual Basic と Visual c# の両方のオプション ダイアログ ボックスで、設定に関係なく。 ただし、再有効化できます完全ソリューション解析を選択して、**再度有効にする**、情報バーが表示されたら、選択してボタン、**完全ソリューション解析を有効にする**オプション ダイアログ ボックスで、チェック ボックスVisual Studio を再起動しています。 オプション ダイアログ ボックスでは、分析の設定、現在の完全なソリューションが常に表示します。 詳細については、[方法: 有効にすると、完全なソリューション分析を無効にする](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)を参照してください。
 
 ## <a name="gc-low-latency-disabled"></a>GC 低待機時間無効になっています
  GC の低待機時間モードを再度有効にするには、するには、Visual Studio を再起動します。  既定では、Visual Studio GC 低待機時間モードを有効にして、入力文字列で GC のすべての操作をブロックしないことを確認するを入力するたびにします。 ただし、メモリ不足の状態では、自動の中断に関する警告を表示する Visual Studio が発生する場合は、そのセッションの GC の低待機時間モードが無効です。 Visual Studio を再起動すると、既定の GC の動作を再び有効にされます。 詳細については、「 <xref:System.Runtime.GCLatencyMode> 」を参照してください。

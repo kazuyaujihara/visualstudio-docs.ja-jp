@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 7dd25a531682c74284a74f065dc729f37ac7fb1a
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49287003"
@@ -40,10 +40,10 @@ XML エディターは、XSLT スタイル シートの編集にも使用する�
  スクリプト ブロック内のコードは XSLT デバッガーによってサポートされているので、ブレークポイントを設定してスクリプト ブロックのコードをステップ実行することができます。  
   
  **XSLT 出力の表示**  
- XSL 変換を実行し、XML エディターから出力を参照することができます。 詳細については、次を参照してください。[方法: XML エディターから XSLT 変換を実行](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)します。  
+ XSL 変換を実行し、XML エディターから出力を参照することができます。 詳細については、[方法: XML エディターから XSLT 変換を実行](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)を参照してください。  
   
  **XSLT をデバッグします。**  
- XML エディターでは、XSLT ファイルから XSLT デバッガーを起動できます。 このデバッガーは、XSLT ファイルでのブレークポイントの設定や、XSLT 実行状態の表示などをサポートしています。 XSLT 変数の上にカーソルを置くと、変数の値を示すツール ヒントが表示されます。 このデバッガーを使用すると、スタイル シートのデバッグや、他のアプリケーションから呼び出されたコンパイル済みの XSL 変換のデバッグが可能です。 詳細については、次を参照してください。 [XSLT のデバッグ](../xml-tools/debugging-xslt.md)します。  
+ XML エディターでは、XSLT ファイルから XSLT デバッガーを起動できます。 このデバッガーは、XSLT ファイルでのブレークポイントの設定や、XSLT 実行状態の表示などをサポートしています。 XSLT 変数の上にカーソルを置くと、変数の値を示すツール ヒントが表示されます。 このデバッガーを使用すると、スタイル シートのデバッグや、他のアプリケーションから呼び出されたコンパイル済みの XSL 変換のデバッグが可能です。 詳細については、[XSLT のデバッグ](../xml-tools/debugging-xslt.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [XML エディター](../xml-tools/xml-editor.md)

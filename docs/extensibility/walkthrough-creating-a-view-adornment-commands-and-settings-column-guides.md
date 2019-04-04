@@ -338,7 +338,7 @@ private const string _settingName = "Guides";
 
 最初のいくつかの関数は、設定を変更するエントリ ポイントです。 これらは、許可されているガイドの最大数などの高度な制約を確認します。  次にそれらを呼び出す`WriteSettings`、設定文字列を作成し、プロパティを設定する`GuideLinesConfiguration`します。 Visual Studio 設定ストアと起動設定値を保存しますこのプロパティを設定、`SettingsChanged`すべてを更新するイベント、`ColumnGuideAdornment`テキスト ビューに関連付けられている各オブジェクトします。
 
-など、いくつかのエントリ ポイント関数がある`CanAddGuideline`設定を変更するコマンドを実装するために使用されます。 Visual Studio には、メニューが表示されている場合は、かどうかのコマンドは、有効では、その名前が表示するコマンドの実装と具合を照会します。  次のコマンドの実装には、これらのエントリ ポイントをフックする方法について参照してください。 コマンドの詳細については、次を参照してください。[メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)します。
+など、いくつかのエントリ ポイント関数がある`CanAddGuideline`設定を変更するコマンドを実装するために使用されます。 Visual Studio には、メニューが表示されている場合は、かどうかのコマンドは、有効では、その名前が表示するコマンドの実装と具合を照会します。  次のコマンドの実装には、これらのエントリ ポイントをフックする方法について参照してください。 コマンドの詳細については、[メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)を参照してください。
 
 ## <a name="implement-the-columnguideadornment-class"></a>ColumnGuideAdornment クラスを実装します。
 `ColumnGuideAdornment`を修飾できるテキスト ビューごとにクラスをインスタンス化します。 このクラスは、ビューの変更や設定を変更すると、必要に応じて更新または再描画列ガイドに関するイベントをリッスンします。
@@ -501,7 +501,7 @@ namespace ColumnGuides
 
 これには、コマンドの実装に 3 つの部分があります。ColumnGuideCommandsPackage.cs、ColumnGuideCommandsPackage.vsct、および ColumnGuideCommands.cs です。 コマンドによって自動生成、テンプレートによって生成されるコード、**ツール**実装としてダイアログ ボックスが表示されるメニューです。 実装される方法を見て、 *.vsct*と*ColumnGuideCommands.cs*ファイルのため、これは簡単です。 これらのファイルは次のコードを置き換えるとします。
 
-パッケージのコードには、Visual Studio 拡張機能がコマンドを提供することを検出して、コマンドを配置する場所を検索するに必要な定型宣言が含まれています。 パッケージは、初期化時に、コマンドの実装クラスがインスタンス化します。 パッケージに関連するコマンドの詳細については、次を参照してください。[メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)します。
+パッケージのコードには、Visual Studio 拡張機能がコマンドを提供することを検出して、コマンドを配置する場所を検索するに必要な定型宣言が含まれています。 パッケージは、初期化時に、コマンドの実装クラスがインスタンス化します。 パッケージに関連するコマンドの詳細については、[メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)を参照してください。
 
 ### <a name="a-common-commands-pattern"></a>コマンドの一般的なパターン
 列ガイド拡張機能のコマンドは、Visual Studio での非常に一般的なパターンの例です。 グループに関連するコマンドを配置するされをそのグループ メイン メニューで、多くの場合と配置"`<CommandFlag>CommandWellOnly</CommandFlag>`"コマンドを非表示を設定します。  メイン メニューのコマンドを配置すること (など**編集**) ためには便利な名前 (など**Edit.AddColumnGuide**) は再でキー バインドを割り当てるときにコマンドを見つけるに役立ちます**ツールオプション**します。 コマンドを呼び出すときに、入力候補を取得するのに役立ちますも、**コマンド ウィンドウ**します。

@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: cd8572900e181da1b33b26638f15aa04845008e3
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49260729"
@@ -102,7 +102,7 @@ ms.locfileid: "49260729"
     > [!NOTE]
     >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]は Visual Basic プロジェクトと C# プロジェクトでサポートされています。 新しいプロジェクトはこれらの言語のどちらかで作成してください。  
   
-3.  をクリックして、 **Windows フォーム アプリケーション**テンプレートとクリック**OK**。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
+3.  をクリックして、 **Windows フォーム アプリケーション**テンプレートとクリック**OK**。 詳細については、[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)を参照してください。  
   
 4.  InheritanceWalkthrough プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。  
   

@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: ec36aa78ce5ed90098587092207806444681146a
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51734728"
@@ -25,14 +25,14 @@ ms.locfileid: "51734728"
 # <a name="navigate-and-update-layer-models-in-program-code"></a>プログラム コードでレイヤー モデル内を移動し、レイヤー モデルを更新する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このトピックでは、プログラム コードを使ってナビゲートおよび更新できるレイヤー モデルの要素と関係について説明します。 ユーザーの観点から見たレイヤー図に関する詳細については、次を参照してください。[レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)と[レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)します。  
+このトピックでは、プログラム コードを使ってナビゲートおよび更新できるレイヤー モデルの要素と関係について説明します。 ユーザーの観点から見たレイヤー図に関する詳細については、[レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)と[レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)を参照してください。  
   
  このトピックで説明される <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> モデルは、より一般的な <xref:Microsoft.VisualStudio.GraphModel> モデルの入門となります。 作成する場合、[メニュー コマンドまたはジェスチャ拡張](../modeling/add-commands-and-gestures-to-layer-diagrams.md)を使用して、`Layer`モデル。 作成する場合、[レイヤー検証拡張機能](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)を使用する方が簡単、`GraphModel`します。  
   
 ## <a name="transactions"></a>トランザクション  
  モデルを更新する場合、変更を `ILinkedUndoTransaction` で囲むことを検討します。 これにより変更が 1 つのトランザクションにグループ化されます。 いずれかの変更が失敗した場合、トランザクション全体がロールバックされます。 ユーザーが変更を元に戻した場合は、すべての変更がまとめて元に戻されます。  
   
- 詳細については、次を参照してください。[トランザクションを使用してモデルの更新をリンク UML](../modeling/link-uml-model-updates-by-using-transactions.md)します。  
+ 詳細については、[トランザクションを使用してモデルの更新をリンク UML](../modeling/link-uml-model-updates-by-using-transactions.md)を参照してください。  
   
 ```  
 using (ILinkedUndoTransaction t =  
@@ -94,7 +94,7 @@ IEnumerable<ILayerComment> comments =
 ## <a name="artifact-references"></a>成果物参照  
  成果物参照 (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) は、ファイル、クラス、フォルダーなどのプロジェクト アイテムとレイヤーとの間のリンクを表します。 ユーザーが、ソリューション エクスプローラー、クラス ビュー、またはオブジェクト ブラウザーからレイヤー図にアイテムをドラッグしてレイヤーを作成または追加すると、成果物が作成されます。 成果物参照はいくつでもレイヤーにリンクできます。  
   
- レイヤー エクスプローラーの各行には成果物参照が表示されます。 詳細については、次を参照してください。[コードからレイヤー図を作成する](../modeling/create-layer-diagrams-from-your-code.md)します。  
+ レイヤー エクスプローラーの各行には成果物参照が表示されます。 詳細については、[コードからレイヤー図を作成する](../modeling/create-layer-diagrams-from-your-code.md)を参照してください。  
   
  成果物参照に関係する主な型およびメソッドは次のとおりです。  
   
@@ -128,7 +128,7 @@ public void ... (...)
   
  ![各 ILayerElement は IShape で表示されます。](../modeling/media/layerapi-shapes.png "LayerApi_Shapes")  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> および <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> も UML モデルを表示するのに使用されます。 詳細については、次を参照してください。[図に UML モデルを表示](../modeling/display-a-uml-model-on-diagrams.md)します。  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> および <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> も UML モデルを表示するのに使用されます。 詳細については、[図に UML モデルを表示](../modeling/display-a-uml-model-on-diagrams.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [レイヤー図にコマンドおよびジェスチャを追加します。](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   

@@ -46,7 +46,7 @@ ms.locfileid: "56599208"
 
 - [VSTO アドイン プロジェクトでの実行時にコンテンツ コントロールを追加します。](#runtimeaddin)
 
-  コンテンツ コントロールについて詳しくは、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
+  コンテンツ コントロールについて詳しくは、[コンテンツ コントロール](../vsto/content-controls.md)を参照してください。
 
 ##  <a name="designtime"></a> コンテンツを追加するデザイン時コントロール
  デザイン時にドキュメント レベルのプロジェクトの文書にコンテンツ コントロールを追加する方法はいくつかあります。
@@ -81,7 +81,7 @@ ms.locfileid: "56599208"
 >  <xref:Microsoft.Office.Tools.Word.GroupContentControl> [ツールボックス] **を使用して**を追加することはできません。 のみを追加することができます、 <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word で、または実行時にします。
 
 > [!NOTE]
->  Visual Studio では、チェック ボックス コンテンツ コントロールがツールボックスで提供されていません。 文書にチェック ボックス コンテンツ コントロールを追加するには、プログラムを使用して <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
+>  Visual Studio では、チェック ボックス コンテンツ コントロールがツールボックスで提供されていません。 文書にチェック ボックス コンテンツ コントロールを追加するには、プログラムを使用して <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、[コンテンツ コントロール](../vsto/content-controls.md)を参照してください。
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>Word で文書にコンテンツ コントロールを追加するには
 
@@ -103,10 +103,10 @@ ms.locfileid: "56599208"
 
 - 文書内のネイティブなコンテンツ コントロールに基づいたコントロールを追加します。
 
-  動的に作成されたコンテンツ コントロールは、文書を閉じる際に文書に残りません。 ただし、ネイティブなコンテンツ コントロールは、文書内に残ります。 文書を次回開くときに、ネイティブのコンテンツ コントロールに基づくコンテンツ コントロールを再作成できます。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+  動的に作成されたコンテンツ コントロールは、文書を閉じる際に文書に残りません。 ただし、ネイティブなコンテンツ コントロールは、文書内に残ります。 文書を次回開くときに、ネイティブのコンテンツ コントロールに基づくコンテンツ コントロールを再作成できます。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
 
 > [!NOTE]
->  Word 2010 プロジェクトで文書にチェック ボックス コンテンツ コントロールを追加するには、 <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
+>  Word 2010 プロジェクトで文書にチェック ボックス コンテンツ コントロールを追加するには、 <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、[コンテンツ コントロール](../vsto/content-controls.md)を参照してください。
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>現在の選択項目でコンテンツ コントロールを追加するには
 
@@ -144,12 +144,12 @@ ms.locfileid: "56599208"
 
 - 文書内のネイティブなコンテンツ コントロールに基づいたコントロールを追加します。
 
-  動的に作成されたコンテンツ コントロールは、文書を閉じる際に文書に残りません。 ただし、ネイティブなコンテンツ コントロールは、文書内に残ります。 文書を次回開くときに、ネイティブのコンテンツ コントロールに基づくコンテンツ コントロールを再作成できます。 詳細については、次を参照してください。 [Office ドキュメントでのダイナミック コントロールを永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)します。
+  動的に作成されたコンテンツ コントロールは、文書を閉じる際に文書に残りません。 ただし、ネイティブなコンテンツ コントロールは、文書内に残ります。 文書を次回開くときに、ネイティブのコンテンツ コントロールに基づくコンテンツ コントロールを再作成できます。 詳細については、[Office ドキュメントでのダイナミック コントロールを永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)を参照してください。
 
-  VSTO アドイン プロジェクトでホスト項目の生成の詳細については、次を参照してください。[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)します。
+  VSTO アドイン プロジェクトでホスト項目の生成の詳細については、[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)を参照してください。
 
 > [!NOTE]
->  文書にチェック ボックス コンテンツ コントロールを追加するには、 <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
+>  文書にチェック ボックス コンテンツ コントロールを追加するには、 <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、[コンテンツ コントロール](../vsto/content-controls.md)を参照してください。
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>現在の選択項目でコンテンツ コントロールを追加するには
 

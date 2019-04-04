@@ -23,7 +23,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56605732"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>ビジネス データ接続モデルを作成します。
-  ビジネス データ接続 (BDC) モデルを作成したり、Visual Studio を使用して、既存の BDC モデルをカスタマイズすることができます。 各 SharePoint プロジェクトには、モデルの 1 つだけ含めることができます。 詳細については、次を参照してください。 [SharePoint ビジネス データを統合](../sharepoint/integrating-business-data-into-sharepoint.md)します。
+  ビジネス データ接続 (BDC) モデルを作成したり、Visual Studio を使用して、既存の BDC モデルをカスタマイズすることができます。 各 SharePoint プロジェクトには、モデルの 1 つだけ含めることができます。 詳細については、[SharePoint ビジネス データを統合](../sharepoint/integrating-business-data-into-sharepoint.md)を参照してください。
 
 ## <a name="create-a-new-model"></a>新しいモデルを作成します。
  新しいモデルを作成するには、作成、 **Business Data Connectivity モデル**プロジェクトまたは追加を**Business Data Connectivity モデル**項目を**空の SharePoint プロジェクト**します。
@@ -42,7 +42,7 @@ ms.locfileid: "56605732"
 
  エンティティのプロパティを定義するには、エンティティのコード ファイルを編集します。 詳細については、「[方法 :エンティティ モデルを追加する](../sharepoint/how-to-add-an-entity-to-a-model.md)します。
 
- 取得、更新、およびエンティティのインスタンスを削除、エンティティ サービス コード ファイルにコードを追加します。 詳細については、次を参照してください。[ビジネス データ接続モデルをデザイン](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+ 取得、更新、およびエンティティのインスタンスを削除、エンティティ サービス コード ファイルにコードを追加します。 詳細については、[ビジネス データ接続モデルをデザイン](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
  プロジェクトをコンパイルするときに、Visual Studio は、アセンブリを作成します。 プロジェクトのアセンブリにコードを追加するプロジェクトにその他の項目を追加しないことを確認します (例:**シーケンシャル ワークフロー**項目または**Web パーツ**項目)。 ソリューション パッケージがグローバル アセンブリ キャッシュにアセンブリをコピーしていないために、ソリューションをデプロイすると、そのアイテムのコードは実行されません。  ソリューション パッケージには、SharePoint で BDC データベースをのみに、アセンブリがデプロイされます。
 

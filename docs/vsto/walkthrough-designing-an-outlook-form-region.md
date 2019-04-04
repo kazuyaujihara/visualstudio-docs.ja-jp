@@ -20,7 +20,7 @@ ms.lasthandoff: 03/22/2019
 ms.locfileid: "58355579"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>チュートリアル: Outlook フォーム領域をデザインします。
-  カスタム フォーム領域は、標準またはカスタムの Microsoft Office Outlook フォームを拡張します。 このチュートリアルでは、連絡先アイテムのインスペクター ウィンドウに新しいページとして表示するカスタム フォーム領域をデザインします。 このフォーム領域では、アドレス情報を Windows Live Local Search の Web サイトに送信することによって、連絡先に設定された個々の住所の地図を表示します。 フォーム領域については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
+  カスタム フォーム領域は、標準またはカスタムの Microsoft Office Outlook フォームを拡張します。 このチュートリアルでは、連絡先アイテムのインスペクター ウィンドウに新しいページとして表示するカスタム フォーム領域をデザインします。 このフォーム領域では、アドレス情報を Windows Live Local Search の Web サイトに送信することによって、連絡先に設定された個々の住所の地図を表示します。 フォーム領域については、[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)を参照してください。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -78,7 +78,7 @@ ms.locfileid: "58355579"
 
 5.  **を作成するフォーム領域の種類を選択**] ページで [**個別**、順にクリックします **[次へ]** します。
 
-     A*個別*フォーム領域を Outlook フォームに新しいページを追加します。 フォーム領域の種類の詳細については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
+     A*個別*フォーム領域を Outlook フォームに新しいページを追加します。 フォーム領域の種類の詳細については、[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)を参照してください。
 
 6.  **わかりやすいテキストを指定し、表示設定を選択します。** ページで、入力**Map It**で、**名前**ボックス。
 
@@ -170,7 +170,7 @@ ms.locfileid: "58355579"
 ## <a name="next-steps"></a>次の手順
  Outlook アプリケーションの UI をカスタマイズする方法の詳細については、次のトピックを参照してください。
 
--   Outlook アイテムのリボンをカスタマイズする方法の詳細については、次を参照してください。 [Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)します。
+-   Outlook アイテムのリボンをカスタマイズする方法の詳細については、[Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [実行時にフォーム領域へのアクセスします。](../vsto/accessing-a-form-region-at-run-time.md)

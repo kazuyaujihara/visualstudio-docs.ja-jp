@@ -21,7 +21,7 @@ ms.locfileid: "56718184"
 # <a name="commandplacement-element"></a>CommandPlacement 要素
 CommandPlacement 要素では、ボタン、グループ、および 1 つ以上のグループまたはメニューに含まれるメニューを使用します。 CommandPlacement 要素を使用すると、ユーザー インターフェイスの外観を変更するには、これらの項目を完全に再定義する必要はありません。
 
- 詳細については、次を参照してください。[ボタンの再利用可能なグループ作成](../extensibility/creating-reusable-groups-of-buttons.md)です。
+ 詳細については、[ボタンの再利用可能なグループ作成](../extensibility/creating-reusable-groups-of-buttons.md)を参照してください。
 
 ## <a name="syntax"></a>構文
 

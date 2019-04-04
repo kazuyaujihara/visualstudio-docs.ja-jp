@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51759024"
@@ -30,7 +30,7 @@ ms.locfileid: "51759024"
  エディター インポートを使用するには、フィールドまたは Managed Extensibility Framework コンポーネントの一部をエクスポートするクラスのプロパティとしてインポートします。  
   
 > [!NOTE]
->  Managed Extensibility Framework の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)します。  
+>  Managed Extensibility Framework の詳細については、[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)を参照してください。  
   
 ## <a name="import-syntax"></a>構文をインポートします。  
  次の例では、オプションのファクトリ サービス、エディターにインポートする方法を示します。  

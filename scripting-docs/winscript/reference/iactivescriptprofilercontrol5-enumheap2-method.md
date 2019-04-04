@@ -31,7 +31,7 @@ HRESULT EnumHeap2(    [in] PROFILER_HEAP_ENUM_FLAGS enumFlags,    [out] IActiveS
   
 #### <a name="parameters"></a>パラメーター  
  enumFlags  
- オブジェクト リレーションシップ内でオブジェクトが指すものに関する補足情報を、公開するかどうかを指定する値です。 補足情報は、オブジェクトが Getter または Setter メソッドを指しているかを表す可能性があります。 詳細については、次を参照してください。 [PROFILER_HEAP_ENUM_FLAGS 列挙型](../../winscript/reference/profiler-heap-enum-flags-enumeration.md)します。  
+ オブジェクト リレーションシップ内でオブジェクトが指すものに関する補足情報を、公開するかどうかを指定する値です。 補足情報は、オブジェクトが Getter または Setter メソッドを指しているかを表す可能性があります。 詳細については、[PROFILER_HEAP_ENUM_FLAGS 列挙型](../../winscript/reference/profiler-heap-enum-flags-enumeration.md)を参照してください。  
   
  ppEnum  
  [out]返します、 [IActiveScriptProfilerHeapEnum インターフェイス](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)します。  

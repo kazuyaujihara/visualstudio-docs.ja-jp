@@ -15,7 +15,7 @@ ms.lasthandoff: 03/25/2019
 ms.locfileid: "58415526"
 ---
 # <a name="properties-of-domain-roles"></a>ドメイン ロールのプロパティ
-次の表に、プロパティは、役割をドメインに関連付けられます。 ドメイン ロールについては、次を参照してください。[理解のモデル、クラスとリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)します。 これらのプロパティを使用する方法の詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。
+次の表に、プロパティは、役割をドメインに関連付けられます。 ドメイン ロールについては、[理解のモデル、クラスとリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)を参照してください。 これらのプロパティを使用する方法の詳細については、[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)を参照してください。
 
 |プロパティ|説明|既定値|
 |-|-|-|

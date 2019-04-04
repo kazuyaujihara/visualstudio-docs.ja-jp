@@ -23,7 +23,7 @@ ms.locfileid: "56689123"
 
 ## <a name="sequences-of-methods-and-events"></a>メソッドとイベントのシーケンス
 
-1.  セッション デバッグ マネージャー (SDM) が選択することによって呼び出される、**デバッグ**メニューをクリックして**開始**します。 詳細については、次を参照してください。 [、プログラムを起動](../../extensibility/debugger/launching-a-program.md)します。
+1.  セッション デバッグ マネージャー (SDM) が選択することによって呼び出される、**デバッグ**メニューをクリックして**開始**します。 詳細については、[、プログラムを起動](../../extensibility/debugger/launching-a-program.md)を参照してください。
 
 2.  SDM コール[OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)メソッド。
 

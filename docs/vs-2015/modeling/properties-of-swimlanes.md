@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: c914703d4cbe48e516d1d4e1aa48afb20c9e1cfe
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49189937"
@@ -26,7 +26,7 @@ ms.locfileid: "49189937"
 # <a name="properties-of-swimlanes"></a>スイムレーンのプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-図にスイムレーンを追加できます。 スイムレーンは、ダイアグラムを垂直または水平方向の領域に分割します。 スイムレーン内に表示するには、他の図形を定義することができます。 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。 これらのプロパティを使用する方法の詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。  
+図にスイムレーンを追加できます。 スイムレーンは、ダイアグラムを垂直または水平方向の領域に分割します。 スイムレーン内に表示するには、他の図形を定義することができます。 詳細については、[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)を参照してください。 これらのプロパティを使用する方法の詳細については、[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)を参照してください。  
   
  スイムレーンの次の表に記載されているプロパティがあります。  
   
@@ -40,8 +40,8 @@ ms.locfileid: "49189937"
 |テキストの色|このスイムレーンに関連付けられているテキスト デコレーターに使用される色。|黒|  
 |アクセス修飾子|クラスのアクセスのレベル (`public`または`internal`)。|Public|  
 |カスタム属性|このスイムレーンから生成されるコード クラスに属性を追加するために使用します。|\<なし >|  
-|Double 型を生成します派生。|場合`True`、基底クラスと (オーバーライドによってカスタマイズをサポート) する部分クラスの両方が生成されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|False|  
-|カスタム コンス トラクターがあります。|場合`True`、カスタム コンス トラクターは、ソース コードで提供されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|False|  
+|Double 型を生成します派生。|場合`True`、基底クラスと (オーバーライドによってカスタマイズをサポート) する部分クラスの両方が生成されます。 詳細については、[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)を参照してください。|False|  
+|カスタム コンス トラクターがあります。|場合`True`、カスタム コンス トラクターは、ソース コードで提供されます。 詳細については、[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)を参照してください。|False|  
 |継承修飾子|スイムレーンから生成されるソース コードのクラスの継承の種類について説明します (`none`、`abstract`または`sealed`)。|none|  
 |ベース スイムレーン|このスイムレーンの基本クラス。|(なし)|  
 |名前|このスイムレーンの名前。|現在の名前|  

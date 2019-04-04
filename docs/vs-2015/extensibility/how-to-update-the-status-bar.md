@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: eb70e8799b74f470a2216a63aae4637fe1872681
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51768347"
@@ -47,7 +47,7 @@ ms.locfileid: "51768347"
   
 - エディターについて  
   
-  詳細については、次を参照してください。[ステータス バー](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)します。  
+  詳細については、[ステータス バー](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)を参照してください。  
   
   IDE を自動的に呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>のメソッド、<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>実装、ドキュメント ウィンドウがアクティブになります。  
   

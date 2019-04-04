@@ -16,7 +16,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4c5122cb009b3624388ff8825b34cae8ca44a546
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51728678"
@@ -38,7 +38,7 @@ ms.locfileid: "51728678"
 2.  インストール、 [Remote Debugging Tools](http://go.microsoft.com/fwlink/?LinkId=393086) ARM ベースのデバイスにします。  
   
 > [!IMPORTANT]
->  Windows Phone 8.1 のデバイスの場合は、開発用にスマートフォンを登録しなければならないことがあります。 そのためには、自身が登録されている開発者であることが必要です。 詳細については、次を参照してください。[展開および Windows Phone 8 向けアプリを実行する方法](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)します。  
+>  Windows Phone 8.1 のデバイスの場合は、開発用にスマートフォンを登録しなければならないことがあります。 そのためには、自身が登録されている開発者であることが必要です。 詳細については、[展開および Windows Phone 8 向けアプリを実行する方法](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)を参照してください。  
   
  デバイス上でリモート デバッギングを有効にしたら、デバイスをデバッグ ターゲットにしてグラフィックス診断を開始します。  
   

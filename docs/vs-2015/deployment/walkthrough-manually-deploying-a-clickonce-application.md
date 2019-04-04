@@ -28,7 +28,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 4e8874324c5e5cbfb5bc42e5c6c23666b5e14b67
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49236172"
@@ -43,7 +43,7 @@ Visual Studio を使用してデプロイすることはできませんがある
   
 -   Mage.exe および MageUI.exe をインストールします。  
   
-     Mage.exe および MageUI.exe の一部である、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)]します。 必要か、[!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]インストールされているかのバージョン、 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] Visual Studio に含まれています。 詳細については、次を参照してください。 [Windows SDK](http://go.microsoft.com/fwlink/?LinkId=158044) msdn です。  
+     Mage.exe および MageUI.exe の一部である、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)]します。 必要か、[!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]インストールされているかのバージョン、 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] Visual Studio に含まれています。 詳細については、[Windows SDK](http://go.microsoft.com/fwlink/?LinkId=158044) msdn を参照してください。  
   
 -   展開するアプリケーションを提供します。  
   

@@ -26,7 +26,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 734258871e72e6272abcd61c4efa1a00765f8a32
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49185719"
@@ -39,7 +39,7 @@ Windows フォーム アプリケーション、Windows Presentation Foundation 
  マニフェストを再署名が別のシナリオは、お客様が、アプリケーションに署名して、配置マニフェストに、独自の証明書です。  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>再署名、アプリケーションおよび配置マニフェストします。  
- この手順では、アプリケーションのマニフェスト ファイル (.manifest) に変更が既に行われたことを前提としています。 詳細については、次を参照してください。[方法: 配置プロパティを変更](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472)します。  
+ この手順では、アプリケーションのマニフェスト ファイル (.manifest) に変更が既に行われたことを前提としています。 詳細については、[方法: 配置プロパティを変更](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472)を参照してください。  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe を使用してマニフェストに、アプリケーションおよび配置を再署名するには  
   

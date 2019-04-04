@@ -27,7 +27,7 @@ ms.locfileid: "56642197"
 # <a name="project-solutions"></a>プロジェクトから成るソリューション
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] には、Microsoft Office Project の VSTO アドインを作成するために使用できるプロジェクト テンプレートが用意されています。 VSTO アドインを使用すると、Project の自動化、Project 機能の拡張、Project ユーザー インターフェイス (UI) のカスタマイズが可能です。
 
- VSTO アドインの詳細については、次を参照してください。 [VSTO アドインのプログラミングを始める](../vsto/getting-started-programming-vsto-add-ins.md)と[Architecture of VSTO アドイン](../vsto/architecture-of-vsto-add-ins.md)します。Microsoft Office を使用したプログラミングに慣れていない場合は、次を参照してください。[開始&#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)します。
+ VSTO アドインの詳細については、[VSTO アドインのプログラミングを始める](../vsto/getting-started-programming-vsto-add-ins.md)と[Architecture of VSTO アドイン](../vsto/architecture-of-vsto-add-ins.md)を参照してください。Microsoft Office を使用したプログラミングに慣れていない場合は、[開始&#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)を参照してください。
 
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
@@ -37,12 +37,12 @@ ms.locfileid: "56642197"
 ## <a name="automate-project-by-using-the-project-object-model"></a>Project オブジェクト モデルを使用して、project を自動化します。
  Project オブジェクト モデルでは、Project の自動化に使用できる型が多数公開されています。 これらの型により、プロジェクト内のタスクをプログラムによって作成したり変更したりするなど、一般的なタスクを行うコードを記述できます。
 
- VSTO アドインから Project オブジェクト モデルにアクセスするには、使用、`Application`のフィールド、`ThisAddIn`プロジェクト内のクラス。 `Application`フィールドを返します、`Microsoft.Office.Interop.MsProject.Application`プロジェクトの現在のインスタンスを表すオブジェクト。 詳細については、次を参照してください。[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)します。
+ VSTO アドインから Project オブジェクト モデルにアクセスするには、使用、`Application`のフィールド、`ThisAddIn`プロジェクト内のクラス。 `Application`フィールドを返します、`Microsoft.Office.Interop.MsProject.Application`プロジェクトの現在のインスタンスを表すオブジェクト。 詳細については、[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)を参照してください。
 
- Project オブジェクト モデルを呼び出すときには、Project のプライマリ相互運用機能アセンブリに用意された型を使用します。 プライマリ相互運用機能アセンブリは、VSTO アドインのマネージド コードと Project の COM オブジェクト モデルとの仲介役を果たします。 Project プライマリ相互運用機能アセンブリ内の型は、すべて `Microsoft.Office.Interop.MSProject` 名前空間に定義されています。 プライマリ相互運用機能アセンブリの詳細については、次を参照してください。 [Office ソリューション開発の概要&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)と[Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)します。
+ Project オブジェクト モデルを呼び出すときには、Project のプライマリ相互運用機能アセンブリに用意された型を使用します。 プライマリ相互運用機能アセンブリは、VSTO アドインのマネージド コードと Project の COM オブジェクト モデルとの仲介役を果たします。 Project プライマリ相互運用機能アセンブリ内の型は、すべて `Microsoft.Office.Interop.MSProject` 名前空間に定義されています。 プライマリ相互運用機能アセンブリの詳細については、[Office ソリューション開発の概要&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)と[Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)を参照してください。
 
 ## <a name="use-the-project-object-model-documentation"></a>プロジェクト オブジェクト モデル ドキュメントを使用します。
- Project オブジェクト モデルの詳細については、Project の VBA オブジェクト モデルのリファレンスを参照してください。 VBA オブジェクト モデルのリファレンスでは、Visual Basic for Applications (VBA) コードに公開される Project オブジェクト モデルについて説明しています。 詳細については、次を参照してください。 [Project 2010 オブジェクト モデル リファレンス](http://go.microsoft.com/fwlink/?LinkId=199771)します。
+ Project オブジェクト モデルの詳細については、Project の VBA オブジェクト モデルのリファレンスを参照してください。 VBA オブジェクト モデルのリファレンスでは、Visual Basic for Applications (VBA) コードに公開される Project オブジェクト モデルについて説明しています。 詳細については、[Project 2010 オブジェクト モデル リファレンス](http://go.microsoft.com/fwlink/?LinkId=199771)を参照してください。
 
  VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Project プライマリ相互運用機能アセンブリ (PIA) の型とメンバーに対応します。 たとえば、VBA オブジェクト モデルのリファレンスで、暦オブジェクトの対応する、 `Microsoft.Office.Interop.MSProject.Calendar` Project PIA の型。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例が用意されています、ビジュアルを使用して作成した Project VSTO アドイン プロジェクトで使用する場合を Visual Basic または Visual C# には、このリファレンス内の VBA コードを変換する必要があります。Studio。
 
@@ -52,7 +52,7 @@ ms.locfileid: "56642197"
 ### <a name="infrastructure-types-in-the-project-primary-interop-assembly"></a>Project プライマリ相互運用機能アセンブリで型のインフラストラクチャ
  Project PIA を使用するコードを作成すると、VBA リファレンスには記載されていない型が多数あることに気付きます。 そうした追加の型は、Project の COM ベースのオブジェクト モデルに含まれるオブジェクトをマネージド コードに変換する場合に役立ちますが、コード内で直接使用することを目的としたものではありません。
 
- 詳細については、次を参照してください。 [Office プライマリ相互運用機能アセンブリのクラスおよびインターフェイスの概要](http://go.microsoft.com/fwlink/?LinkId=189592)します。
+ 詳細については、[Office プライマリ相互運用機能アセンブリのクラスおよびインターフェイスの概要](http://go.microsoft.com/fwlink/?LinkId=189592)を参照してください。
 
 ## <a name="customize-the-user-interface-of-project"></a>プロジェクトのユーザー インターフェイスをカスタマイズします。
  Project の UI は次の方法でカスタマイズできます。
@@ -61,7 +61,7 @@ ms.locfileid: "56642197"
 |----------|--------------------------|
 |Project のリボンにカスタム タブを追加する。|[リボンの概要](../vsto/ribbon-overview.md)|
 
- UI のプロジェクトおよびその他の Microsoft Office アプリケーションをカスタマイズする方法の詳細については、次を参照してください。 [Office UI のカスタマイズ](../vsto/office-ui-customization.md)します。
+ UI のプロジェクトおよびその他の Microsoft Office アプリケーションをカスタマイズする方法の詳細については、[Office UI のカスタマイズ](../vsto/office-ui-customization.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [チュートリアル: 初めて VSTO アドイン プロジェクトの作成します。](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)

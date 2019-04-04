@@ -24,7 +24,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 4e48bac812f8d87b7e65b6a2a5832a7a36e4f95c
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49860358"
@@ -52,7 +52,7 @@ ms.locfileid: "49860358"
   
    - 一覧で、選択して、別のコントロールをなど 1 つのコントロールでは、すべてのデータを表示するに**DataGrid**または**一覧**WPF アプリケーション、または**DataGridView** Windows フォームでアプリケーション。  
   
-     利用可能なコントロールの一覧は、デザイナーが開いている、.NET Framework のバージョン、プロジェクトのターゲットは依存し、そのサポートへのデータ バインディングを制御するかどうかを追加したカスタム、**ツールボックス**します。 作成するコントロールが利用できるコントロールのリストに含まれている場合、コントロールをリストに追加できます。 詳細については、次を参照してください。[データ ソース ウィンドウにカスタム コントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)します。  
+     利用可能なコントロールの一覧は、デザイナーが開いている、.NET Framework のバージョン、プロジェクトのターゲットは依存し、そのサポートへのデータ バインディングを制御するかどうかを追加したカスタム、**ツールボックス**します。 作成するコントロールが利用できるコントロールのリストに含まれている場合、コントロールをリストに追加できます。 詳細については、[データ ソース ウィンドウにカスタム コントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)を参照してください。  
   
      データ テーブルまたはオブジェクトのコントロールの一覧に追加できるカスタム Windows フォーム コントロールを作成する方法については、**データ ソース**ウィンドウを参照してください[複雑なデータをサポートする Windows フォーム ユーザー コントロールの作成バインド](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)します。  
   
@@ -69,7 +69,7 @@ ms.locfileid: "49860358"
   
 4.  列またはプロパティのドロップダウン メニューをクリックし、項目をデザイナーにドラッグしたときに作成されるコントロールを選択します。  
   
-     利用可能なコントロールの一覧は、デザイナーが開いている、.NET Framework のバージョン、プロジェクトのターゲットは依存し、どのカスタム コントロールに追加したデータ バインディングをサポートする、**ツールボックス**します。 作成するコントロールが利用できるコントロールのリストに含まれている場合、コントロールをリストに追加できます。 詳細については、次を参照してください。[データ ソース ウィンドウにカスタム コントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)します。  
+     利用可能なコントロールの一覧は、デザイナーが開いている、.NET Framework のバージョン、プロジェクトのターゲットは依存し、どのカスタム コントロールに追加したデータ バインディングをサポートする、**ツールボックス**します。 作成するコントロールが利用できるコントロールのリストに含まれている場合、コントロールをリストに追加できます。 詳細については、[データ ソース ウィンドウにカスタム コントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)を参照してください。  
   
      コントロールのデータ列またはプロパティの一覧に追加できるカスタム コントロールを作成する方法について、**データソース**ウィンドウを参照してください[の単純データバインディングをサポートするWindowsフォームユーザーコントロールを作成します](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)。  
   

@@ -27,7 +27,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: d0b7e53eba21372641bad683c442e796648a4765
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49213643"
@@ -113,7 +113,7 @@ ms.locfileid: "49213643"
  Microsoft Visual Studio Web Authoring コンポーネントから公開しているコンピューターにインストールされているがあることを確認します。 Express ユーザーは、このコンポーネントは、既定ではインストールされません。 詳細については、「[http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310)」を参照してください。  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>エラー メッセージ: ファイルが見つかりませんでした ' Microsoft.Windows.Common-コントロール、バージョン 6.0.0.0、カルチャを = = *、PublicKeyToken = 6595b64144ccf1df、ProcessorArchitecture =\*型 = win32'  
- Visual スタイルが有効になっている WPF アプリケーションを発行しようとしたときに、このエラー メッセージが表示されます。 この問題を解決するには、次を参照してください。[方法: Visual スタイルが有効な WPF アプリケーションを発行](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)します。  
+ Visual スタイルが有効になっている WPF アプリケーションを発行しようとしたときに、このエラー メッセージが表示されます。 この問題を解決するには、[方法: Visual スタイルが有効な WPF アプリケーションを発行](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)を参照してください。  
   
 ## <a name="using-mage"></a>Mage を使用します。  
   

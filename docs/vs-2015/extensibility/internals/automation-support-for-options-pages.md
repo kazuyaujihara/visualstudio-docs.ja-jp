@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 6205d01547f7243234facfb43db80303c9b71c51
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51720259"
@@ -41,7 +41,7 @@ Vspackage は、ユーザー設定を提供できます**オプション** ダ�
   
 4. 各を提供する VSPackage のオートメーション オブジェクトを使用して<xref:EnvDTE.Property>によって返される<xref:EnvDTE._DTE.Properties%2A>します。  
   
-   カスタム ツール オプション ページを実装するサンプルについては、次を参照してください。 [VSSDK のサンプル](../../misc/vssdk-samples.md)します。  
+   カスタム ツール オプション ページを実装するサンプルについては、[VSSDK のサンプル](../../misc/vssdk-samples.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [プロジェクト オブジェクトの公開](../../extensibility/internals/exposing-project-objects.md)

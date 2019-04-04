@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 57e48816ede7210a268cc465da1eee3b6ff43d02
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49289589"
@@ -51,7 +51,7 @@ ms.locfileid: "49289589"
 ## <a name="file-location"></a>ファイルの場所  
  A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション マニフェストは、展開の 1 つのバージョンを特定します。 このため、保存するとは別に配置マニフェストとします。 通常は、関連付けられているバージョンにちなんだ名前のサブディレクトリ内に配置します。  
   
- アプリケーション マニフェストは、展開する前に常に署名する必要があります。 アプリケーション マニフェストを手動で変更する場合は、アプリケーション マニフェストに再署名、配置マニフェストを更新および配置マニフェストを再署名 mage.exe を使用する必要があります。 詳細については、次を参照してください。[チュートリアル: ClickOnce アプリケーションを手動で配置](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。  
+ アプリケーション マニフェストは、展開する前に常に署名する必要があります。 アプリケーション マニフェストを手動で変更する場合は、アプリケーション マニフェストに再署名、配置マニフェストを更新および配置マニフェストを再署名 mage.exe を使用する必要があります。 詳細については、[チュートリアル: ClickOnce アプリケーションを手動で配置](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)を参照してください。  
   
 ## <a name="file-name-syntax"></a>ファイル名の構文  
  名前、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション マニフェスト ファイルは、アプリケーションの拡張機能と完全な名前で識別される、`assemblyIdentity`拡張子 .manifest が続く要素。 たとえば、Example.exe アプリケーションを参照するアプリケーション マニフェストでは、次のファイル名の構文は使用。  

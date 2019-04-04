@@ -26,4 +26,4 @@ ms.locfileid: "56839920"
   
  将来の予約語は、変数、関数、またはその他のユーザー定義の識別子の名前として使用できません。  
   
- 将来の予約語に関する詳細については、次を参照してください。 [JavaScript の将来の予約語](../../javascript/reference/javascript-future-reserved-words.md)します。
+ 将来の予約語に関する詳細については、[JavaScript の将来の予約語](../../javascript/reference/javascript-future-reserved-words.md)を参照してください。

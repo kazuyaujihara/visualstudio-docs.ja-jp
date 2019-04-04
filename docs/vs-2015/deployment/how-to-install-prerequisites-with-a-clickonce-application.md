@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 47d4355fc1b5690d6c9c76fd354a5f5bd4830d8e
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49196288"
@@ -37,12 +37,12 @@ ms.locfileid: "49196288"
  パッケージ化と発行の前提条件ではなく、コンポーネントのダウンロード場所を指定することもできます。 たとえば、発行されたすべてのアプリケーションと共に必須コンポーネントを含むではなく可能性がありますを使用する一元的なファイル共有またはすべての前提条件インストーラーを含む Web 上の場所: コンポーネントのダウンロード、インストール時に、その場所からインストールします。  
   
 > [!IMPORTANT]
->  初めて発行する前に、開発用コンピューターに必須コンポーネントのインストーラー パッケージを追加する必要があります[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。 詳細については、次を参照してください。[方法: ClickOnce アプリケーションと共に必須コンポーネントを含める](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)します。  
+>  初めて発行する前に、開発用コンピューターに必須コンポーネントのインストーラー パッケージを追加する必要があります[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。 詳細については、[方法: ClickOnce アプリケーションと共に必須コンポーネントを含める](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)を参照してください。  
   
  前提条件がで管理されている、**の前提条件**からアクセスできるダイアログ ボックス、**発行**のウィンドウ、**プロジェクト デザイナー**。  
   
 > [!NOTE]
->  前提条件の定義済みの一覧だけでなく、一覧に、独自のコンポーネントを追加できます。 詳細については、次を参照してください。[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)します。  
+>  前提条件の定義済みの一覧だけでなく、一覧に、独自のコンポーネントを追加できます。 詳細については、[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)を参照してください。  
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>ClickOnce アプリケーションと共にをインストールする前提条件を指定するには  
   

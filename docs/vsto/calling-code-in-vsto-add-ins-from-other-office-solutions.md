@@ -70,7 +70,7 @@ ms.locfileid: "56619720"
 
 5. このクラスをアウト プロセス クライアントに公開する場合に、次はも必要。
 
-   -   <xref:System.Runtime.InteropServices.StandardOleMarshalObject>からクラスを派生させます。 詳細については、次を参照してください。[クラスをアウト プロセス クライアントに公開](#outofproc)します。
+   -   <xref:System.Runtime.InteropServices.StandardOleMarshalObject>からクラスを派生させます。 詳細については、[クラスをアウト プロセス クライアントに公開](#outofproc)を参照してください。
 
    -   インターフェイスを定義するプロジェクトで、 **[COM の相互運用機能に登録]** プロパティを設定します。 このプロパティは、事前バインディングを使用して VSTO アドインを呼び出せるにクライアントを有効にする場合にのみ必要です。
 
@@ -89,7 +89,7 @@ ms.locfileid: "56619720"
 
  この失敗は、Office アプリケーションのオブジェクト モデルのすべての呼び出しは、メイン UI スレッドで行う必要がありますが、アウト プロセス クライアントから、オブジェクトへの呼び出しは、任意の RPC (リモート プロシージャ コール) スレッドに到達するためです。 .NET Framework における COM マーシャリング機構はスレッドを切り替えず、メイン UI スレッドではなく、受信 RPC スレッド上のオブジェクトに呼び出しをマーシャリングすることを試みます。 オブジェクトが <xref:System.Runtime.InteropServices.StandardOleMarshalObject>から派生するクラスのインスタンスである場合、オブジェクトへの受信呼び出しは、公開されたオブジェクトが作成されたスレッド、つまりホスト アプリケーションのメイン UI スレッドに自動的にマーシャリングされます。
 
- Office ソリューションにおけるスレッドの使用に関する詳細については、次を参照してください。[のスレッドの Office でサポート](../vsto/threading-support-in-office.md)します。
+ Office ソリューションにおけるスレッドの使用に関する詳細については、[のスレッドの Office でサポート](../vsto/threading-support-in-office.md)を参照してください。
 
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>RequestComAddInAutomationService メソッドをオーバーライドします。
  次のコード例は、VSTO アドイン内の <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> クラスで `ThisAddIn` をオーバーライドする方法を示します。 この例ではという名前のクラスが定義されている`AddInUtilities`他のソリューションに公開します。 大きなチュートリアルのコンテキストでこのコードを表示するには、次を参照してください。[チュートリアル。VSTO アドイン内のコードを VBA から呼び出す](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)します。

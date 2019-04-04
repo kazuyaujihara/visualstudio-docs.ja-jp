@@ -22,10 +22,10 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 8a7f1fa0592a6136e96f33803744cd8b42c265ee
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51768381"
 ---
 # <a name="how-to-send-feedback-about-visual-studio"></a>方法: Visual Studio に関するフィードバックを送信する
-このコンテンツは、削除されました。 詳しくは、次を参照してください。[ご意見](../ide/talk-to-us.md)します。
+このコンテンツは、削除されました。 詳しくは、[ご意見](../ide/talk-to-us.md)を参照してください。

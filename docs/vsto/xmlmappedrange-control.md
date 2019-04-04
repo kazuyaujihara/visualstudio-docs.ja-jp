@@ -29,7 +29,7 @@ ms.locfileid: "56597895"
  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:Excel では、XML のマッピングを使用しますか](http://go.microsoft.com/fwlink/?LinkID=130288).
 
 ## <a name="bind-data-to-the-control"></a>データをコントロールにバインドします。
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールは、1 つのデータ フィールド (単純データ バインディング) へのバインドをサポートしています。 <xref:Microsoft.Office.Tools.Excel.ListObject>コントロールは、複合データ バインディングをサポートしているし、繰り返されるスキーマ要素がセル上にマップされている場合は自動的に作成します。 詳細については、次を参照してください。 [ListObject コントロール](../vsto/listobject-control.md)します。
+ <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールは、1 つのデータ フィールド (単純データ バインディング) へのバインドをサポートしています。 <xref:Microsoft.Office.Tools.Excel.ListObject>コントロールは、複合データ バインディングをサポートしているし、繰り返されるスキーマ要素がセル上にマップされている場合は自動的に作成します。 詳細については、[ListObject コントロール](../vsto/listobject-control.md)を参照してください。
 
  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールを使用してデータ ソースにバインドする、<xref:System.Windows.Forms.Control.DataBindings%2A>プロパティ。 ときに、 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Visual Studio は、自動的に、マップされたセルのデータからデータ セットを生成し、そのデータ セットに、コントロールをバインドにワークシートのセルに追加されます。 既定のデータ バインディング プロパティ、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>は<xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>します。
 

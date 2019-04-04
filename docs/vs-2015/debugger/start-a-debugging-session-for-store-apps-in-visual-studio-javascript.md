@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 887914eb88387e5185d30f304587a9e62c43dcca
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51748390"
@@ -83,7 +83,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
    ![Windows Phone にのみ適用されます](../debugger/media/phone-only-content.png "phone_only_content")  
 
-   Visual Studio によってアプリがビルドされ、アタッチされたデバッガーが起動します。 実行は、ブレークポイントに達するか、実行が手動で中断されるか、ハンドルされない例外が発生するか、アプリが終了するまで続行されます。 詳細については、次を参照してください。[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)します。  
+   Visual Studio によってアプリがビルドされ、アタッチされたデバッガーが起動します。 実行は、ブレークポイントに達するか、実行が手動で中断されるか、ハンドルされない例外が発生するか、アプリが終了するまで続行されます。 詳細については、[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)を参照してください。  
 
 ##  <a name="BKMK_Configure_the_debugging_session"></a> デバッグ セッションを構成する  
  スクリプトがコンパイルされていないため、ビルド構成とプラットフォーム設定は適用されません。 C++ またはマネージ コンポーネントをデバッグする場合は、設定、**構成**に**デバッグ**からターゲット プラットフォームを選択し、**構成**ダイアログ。  
@@ -173,19 +173,19 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
    アプリがデバッグ モードで起動します。 実行は、ブレークポイントに達するか、実行が手動で中断されるか、ハンドルされない例外が発生するか、アプリが終了するまで続行されます。  
 
-   . バック グラウンド タスクのデバッグの詳細については、次を参照してください。[トリガー中断、再開、およびバック グラウンド イベントを Windows ストア)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)します。  
+   . バック グラウンド タスクのデバッグの詳細については、[トリガー中断、再開、およびバック グラウンド イベントを Windows ストア)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)を参照してください。  
 
 ##  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> デバッガーでインストール済みのアプリを起動する  
  F5 キーを使用してデバッグを開始すると、Visual Studio はアプリをビルドして配置し、デバッグ モードで実行されるようにアプリを設定してから起動します。 デバイスに既にインストールされているアプリを起動するには、[インストールされているアプリケーション パッケージのデバッグ] ダイアログ ボックスを使用します。 この方法は、Windows ストアからインストールされたアプリをデバッグする必要がある場合や、アプリのソース ファイルはあってもアプリの Visual Studio プロジェクトがない場合に役立ちます。 Visual Studio プロジェクトやソリューションを使用しないカスタム ビルド システムがこれに該当します。  
 
- アプリはローカル デバイスにインストールすることも、リモート デバイスにインストールすることもできます。  アプリをすぐに起動できます。また、アプリを別のプロセスや方法で起動したときに ([スタート] メニューからの起動や、アクティブ化コントラクトによる起動など)、デバッガーで実行するようにアプリを設定することもできます。アプリを起動せずにバックグラウンド プロセスをデバッグする場合は、デバッグ モードで実行されるようにアプリを設定できます。 詳細については、次を参照してください。[トリガー中断、再開、およびバック グラウンド イベントを Windows ストア)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)します。  
+ アプリはローカル デバイスにインストールすることも、リモート デバイスにインストールすることもできます。  アプリをすぐに起動できます。また、アプリを別のプロセスや方法で起動したときに ([スタート] メニューからの起動や、アクティブ化コントラクトによる起動など)、デバッガーで実行するようにアプリを設定することもできます。アプリを起動せずにバックグラウンド プロセスをデバッグする場合は、デバッグ モードで実行されるようにアプリを設定できます。 詳細については、[トリガー中断、再開、およびバック グラウンド イベントを Windows ストア)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)を参照してください。  
 
  インストール済みのアプリがデバッグ モードで実行されるように設定するには、次の手順を実行します。  
 
 > [!NOTE]
 >  この手順は、アプリが実行されていないときに開始してください。  
 
-1. **[デバッグ]** メニューの **[デバッグ] Installed App Package**をクリックします。  
+1.  **[デバッグ]** メニューの **[デバッグ] Installed App Package**をクリックします。  
 
 2. 一覧から次のいずれかのオプションを選択します。  
 
@@ -255,7 +255,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
     **[選択]** をクリックし、次のいずれかを実行します。  
 
-   -   **[デバッグするコードの種類を自動的に判断する]** をクリックします。  
+   -    **[デバッグするコードの種類を自動的に判断する]** をクリックします。  
 
    -   **[次のコードの種類をデバッグする]** をクリックし、一覧から 1 つ以上の型を選択します。  
 

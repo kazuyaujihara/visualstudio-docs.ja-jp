@@ -301,7 +301,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
  リセットするフォントをクリックして「既定値を使用」**ツール > オプション > 環境 > フォントおよび色**します。
 
 ##  <a name="BKMK_TextStyle"></a> テキストのスタイル
- テキストのスタイルは、フォント サイズ、太さ、および大文字小文字の区別を参照します。 実装のガイダンスについては、次を参照してください。[環境フォント](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)します。
+ テキストのスタイルは、フォント サイズ、太さ、および大文字小文字の区別を参照します。 実装のガイダンスについては、[環境フォント](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)を参照してください。
 
 ### <a name="text-casing"></a>テキストの大文字小文字の区別
 

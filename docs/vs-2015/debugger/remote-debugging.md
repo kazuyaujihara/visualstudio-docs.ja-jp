@@ -26,7 +26,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51799276"
@@ -36,7 +36,7 @@ ms.locfileid: "51799276"
 
 別のコンピューターに配置されている Visual Studio アプリケーションをデバッグすることができます。  このデバッグを行うには、Visual Studio リモート デバッガーを使用します。  
   
- ここに記載された情報は、Windows デスクトップ アプリケーションと ASP.NET アプリケーションに適用されます。  Windows ストア アプリのリモート デバッグと Azure apps については、次を参照してください。 [Windows ストアと Azure アプリでのリモート デバッグ](#bkmk_winstoreAzure)します。  
+ ここに記載された情報は、Windows デスクトップ アプリケーションと ASP.NET アプリケーションに適用されます。  Windows ストア アプリのリモート デバッグと Azure apps については、[Windows ストアと Azure アプリでのリモート デバッグ](#bkmk_winstoreAzure)を参照してください。  
   
 ## <a name="get-the-remote-tools"></a>リモート ツールを入手します。  
 デバイスまたはデバッグをするかにするサーバーに直接リモート ツールは Visual Studio がインストールされていると、ホスト コンピューターからリモート ツールを入手することができますいずれかをダウンロードすることができます。
@@ -148,7 +148,7 @@ ms.locfileid: "51799276"
   
 - 認証モードまたはポート番号を変更するかリモート ツールのタイムアウト値を指定する: 選択**ツール/オプション**します。  
   
-   既定で使用されるポート番号の一覧については、次を参照してください。 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)します。  
+   既定で使用されるポート番号の一覧については、[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)を参照してください。  
   
    > [!WARNING]
   >  リモート ツールを [認証なし] モードで実行することも選択できますが、このモードの使用は避けることを強く推奨します。 このモードで実行した場合、ネットワーク セキュリティはまったく提供されません。 [認証なし] モードは、ネットワークに悪意のあるコードや悪意のあるトラフィックのリスクがないことが確実である場合にのみ選択してください。
@@ -158,7 +158,7 @@ ms.locfileid: "51799276"
   
  サービスとしてリモート デバッガーを構成するには、以下の手順を実行します。  
   
-1. **リモート デバッガー構成ウィザード** (rdbgwiz.exe) を見つけます (このアプリケーションは、リモート デバッガーとは別のアプリケーションです)。このアプリケーションは、リモート ツールをインストールした場合にのみ入手でき、 Visual Studio と共にはインストールされません。  
+1. **リモート デバッガー構成ウィザード** (rdbgwiz.exe) を見つけます  (このアプリケーションは、リモート デバッガーとは別のアプリケーションです)。このアプリケーションは、リモート ツールをインストールした場合にのみ入手でき、 Visual Studio と共にはインストールされません。  
   
 2. 構成ウィザードの実行を開始します。 最初のページが表示されたら、 **[次へ]** をクリックします。  
   
@@ -289,7 +289,7 @@ ms.locfileid: "51799276"
  詳細については、リモート デバッグのヘルプを参照してください (キーを押して**F1**リモート デバッガー ウィンドウで**ヘルプ/使用状況**)。 詳細についてを検索する[.NET リモート シンボルの読み込みの変更では、Visual Studio 2012 および 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
 ##  <a name="bkmk_winstoreAzure"></a> Windows ストアと Azure アプリでのリモート デバッグ  
- Windows ストア アプリでのリモート デバッグについては、次を参照してください。[デバッグし、Visual Studio からリモート デバイス上の Windows ストア アプリをテスト](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx)します。  
+ Windows ストア アプリでのリモート デバッグについては、[デバッグし、Visual Studio からリモート デバイス上の Windows ストア アプリをテスト](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx)を参照してください。  
   
  Azure でのデバッグ方法の詳細については、次のトピックのいずれかを参照してください。  
   

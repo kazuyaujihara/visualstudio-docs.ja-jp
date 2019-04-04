@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 84e09b4f7dcdcb21c2928ba0d80fb6ae27e90dc7
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49889569"
@@ -35,7 +35,7 @@ XML エディターを使用することで、XML ドキュメントから XML �
   
   作成されたスキーマは次に、XML ドキュメントで IntelliSense を利用できるようにするために使用されます。  
   
-  スキーマ推論エンジンの詳細については、次を参照してください。 [XML スキーマの推論](http://msdn.microsoft.com/library/b18e7ffd-3c04-482d-9934-ba2f6a59b2c9)します。  
+  スキーマ推論エンジンの詳細については、[XML スキーマの推論](http://msdn.microsoft.com/library/b18e7ffd-3c04-482d-9934-ba2f6a59b2c9)を参照してください。  
   
 ### <a name="to-create-an-xml-schema"></a>XML スキーマを作成するには  
   

@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 550fc362cf1652df48e029461a4d5fbdc6f04006
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49269544"
@@ -29,7 +29,7 @@ LINQ to SQL クラス データベース テーブルおよびビューにマッ
 ## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>データベース テーブルまたはビューにマップされる LINQ to SQL クラスの作成
  テーブルまたはビューからドラッグ**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]に加え、エンティティ クラスを作成、<xref:System.Data.Linq.DataContext>に使用されるメソッド更新プログラムを実行しています。
 
- 既定で、[!LINQ to SQL ランタイムは、更新可能なエンティティ クラスからデータベースに変更を保存するためのロジックを作成します。 このロジックは、テーブルのスキーマ (列定義と主キー情報) に基づいています。 ストアド プロシージャを使用して、挿入、更新を実行するエンティティ クラスを構成することができ、削除します既定値を使用する代わりにこの動作をしない場合は [!。LINQ to SQL ランタイムの動作です。 詳細については、次を参照してください。[方法: 更新、挿入、および削除 (O/r デザイナー) を実行するストアド プロシージャを割り当てる](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)します。
+ 既定で、[!LINQ to SQL ランタイムは、更新可能なエンティティ クラスからデータベースに変更を保存するためのロジックを作成します。 このロジックは、テーブルのスキーマ (列定義と主キー情報) に基づいています。 ストアド プロシージャを使用して、挿入、更新を実行するエンティティ クラスを構成することができ、削除します既定値を使用する代わりにこの動作をしない場合は [!。LINQ to SQL ランタイムの動作です。 詳細については、[方法: 更新、挿入、および削除 (O/r デザイナー) を実行するストアド プロシージャを割り当てる](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)を参照してください。
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

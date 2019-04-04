@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 04ecf5bd7bfc91e03f48e624d208a5b4f29b10b7
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49292527"
@@ -78,7 +78,7 @@ Windows コントロールに表示される DSL 図を埋め込むことがで�
   
 #### <a name="updating-the-form-using-store-events"></a>ストア イベントを使用してフォームを更新しています  
   
-1.  フォーム デザイナーでは追加、 **ListBox**という`listBox1`します。 これにより、モデルに要素の一覧が表示されます。 モデルを使用して synchronism で保持*イベント格納*します。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
+1.  フォーム デザイナーでは追加、 **ListBox**という`listBox1`します。 これにより、モデルに要素の一覧が表示されます。 モデルを使用して synchronism で保持*イベント格納*します。 詳細については、[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)を参照してください。  
   
 2.  カスタム コード ファイルでさらにメソッドをオーバーライド DocView クラス。  
   

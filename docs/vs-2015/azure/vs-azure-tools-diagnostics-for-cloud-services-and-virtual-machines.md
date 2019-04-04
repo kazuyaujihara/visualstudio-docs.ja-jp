@@ -110,7 +110,7 @@ Visual Studio では、Azure の仮想マシンの診断データを収集でき
     ![Azure 仮想マシン拡張機能をインストールします。](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
    
     > [!NOTE]
-   > その他の診断拡張機能仮想マシンに利用できます。 詳細については、次を参照してください。[仮想マシン拡張機能と Windows の機能](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features)します。
+   > その他の診断拡張機能仮想マシンに利用できます。 詳細については、[仮想マシン拡張機能と Windows の機能](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features)を参照してください。
    > 
    > 
 5. 拡張機能とビューを追加するその**診断構成**ダイアログ ボックスで、**追加**します。
@@ -139,7 +139,7 @@ Visual Studio では、Azure の仮想マシンの診断データを収集でき
 
   ![アプリケーション ログ](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758145.png)
 
-アプリケーション ログの詳細については、次を参照してください。 [Azure App Service で Web アプリに対して診断ログを有効にする](/azure/app-service/web-sites-enable-diagnostic-log)します。
+アプリケーション ログの詳細については、[Azure App Service で Web アプリに対して診断ログを有効にする](/azure/app-service/web-sites-enable-diagnostic-log)を参照してください。
 
 ### <a name="windows-event-logs"></a>Windows イベント ログ
 Windows イベント ログをキャプチャするには、選択、 **Windows イベント ログの転送を有効にする**チェック ボックスをオンします。 ストレージ アカウントへのイベント ログの転送間隔を増減するには、変更、**転送間隔 (分)** 値。 追跡するイベントの種類のチェック ボックスを選択します。
@@ -157,18 +157,18 @@ Azure SDK 2.5 を使用しているカスタム データ ソースを指定す�
 </WindowsEventLog>
 ```
 ### <a name="performance-counters"></a>パフォーマンス カウンター
-パフォーマンス カウンターの情報は、システムのボトルネックを見つけて、システムとアプリケーションのパフォーマンスを微調整するのに役立ちます。 詳細については、次を参照してください。 [Azure アプリケーションでパフォーマンス カウンターの作成と使用](https://msdn.microsoft.com/library/azure/hh411542.aspx)します。 パフォーマンス カウンターをキャプチャするには、選択、**パフォーマンス カウンターの転送を有効にする**チェック ボックスをオンします。 ストレージ アカウントへのイベント ログの転送間隔を増減するには、変更、**転送間隔 (分)** 値。 追跡するパフォーマンス カウンターのチェック ボックスを選択します。
+パフォーマンス カウンターの情報は、システムのボトルネックを見つけて、システムとアプリケーションのパフォーマンスを微調整するのに役立ちます。 詳細については、[Azure アプリケーションでパフォーマンス カウンターの作成と使用](https://msdn.microsoft.com/library/azure/hh411542.aspx)を参照してください。 パフォーマンス カウンターをキャプチャするには、選択、**パフォーマンス カウンターの転送を有効にする**チェック ボックスをオンします。 ストレージ アカウントへのイベント ログの転送間隔を増減するには、変更、**転送間隔 (分)** 値。 追跡するパフォーマンス カウンターのチェック ボックスを選択します。
 
 ![パフォーマンス カウンター](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-一覧にないパフォーマンス カウンターを追跡するには、推奨の構文を使用して、パフォーマンス カウンターを入力します。 選び**追加**します。 仮想マシンのオペレーティング システムでは、パフォーマンス カウンターを追跡することを決定します。構文の詳細については、次を参照してください。[カウンター パスを指定して](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx)します。
+一覧にないパフォーマンス カウンターを追跡するには、推奨の構文を使用して、パフォーマンス カウンターを入力します。 選び**追加**します。 仮想マシンのオペレーティング システムでは、パフォーマンス カウンターを追跡することを決定します。構文の詳細については、[カウンター パスを指定して](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx)を参照してください。
 
 ### <a name="infrastructure-logs"></a>インフラストラクチャ ログ
 インフラストラクチャ ログには、Azure 診断インフラストラクチャ、RemoteAccess モジュール、および RemoteForwarder モジュールに関する情報があります。 インフラストラクチャ ログに関する情報を収集するには、選択、**インフラストラクチャ ログの転送を有効にする**チェック ボックスをオンします。 インフラストラクチャ ログのストレージ アカウントへの転送間隔を増減するには、変更、**転送間隔 (分)** 値。
 
 ![診断インフラストラクチャ ログ](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
-詳細については、次を参照してください。 [Azure 診断を使用したログ データの収集](https://msdn.microsoft.com/library/azure/gg433048.aspx)します。
+詳細については、[Azure 診断を使用したログ データの収集](https://msdn.microsoft.com/library/azure/gg433048.aspx)を参照してください。
 
 ### <a name="log-directories"></a>ログ ディレクトリ
 ログ ディレクトリでは、インターネット インフォメーション サービス (IIS) の要求、失敗した要求、または選択したフォルダーのログ ディレクトリから収集されたデータがあります。 ログ ディレクトリをキャプチャするには、選択、**ログ ディレクトリの転送を有効にする**チェック ボックスをオンします。 ストレージ アカウントへのログの転送間隔を増減するには、変更、**転送間隔 (分)** 値。
@@ -186,7 +186,7 @@ Azure SDK 2.5 を使用しているカスタム データ ソースを指定す�
 
 ![ETW ログ](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766025.png)
 
-クラスによって ETW フレームワークが ASP.NET でサポートされている、 [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))名前空間。 継承し、標準の拡張 Microsoft.WindowsAzure.Diagnostics 名前空間[System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))クラスを使用できるように[System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))としてログ記録Azure 環境でフレームワーク。 詳細については、次を参照してください。 [Microsoft Azure でログ記録とトレースを制御する](https://msdn.microsoft.com/magazine/ff714589.aspx)と[Azure Cloud Services および仮想マシンで診断を有効にする](/azure/cloud-services/cloud-services-dotnet-diagnostics)します。
+クラスによって ETW フレームワークが ASP.NET でサポートされている、 [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))名前空間。 継承し、標準の拡張 Microsoft.WindowsAzure.Diagnostics 名前空間[System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))クラスを使用できるように[System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))としてログ記録Azure 環境でフレームワーク。 詳細については、[Microsoft Azure でログ記録とトレースを制御する](https://msdn.microsoft.com/magazine/ff714589.aspx)と[Azure Cloud Services および仮想マシンで診断を有効にする](/azure/cloud-services/cloud-services-dotnet-diagnostics)を参照してください。
 
 ### <a name="crash-dumps"></a>クラッシュ ダンプ
 ロール インスタンスがクラッシュしたときの情報をキャプチャするには、選択、**クラッシュ ダンプの転送を有効にする**チェック ボックスをオンします。 (ASP.NET では、ほとんどの例外を処理するため、これは一般に、ワーカー ロールに対してのみ有効です)。クラッシュ ダンプに充てるストレージ容量の割合を増減するには、変更、**ディレクトリ クォータ (%)** 値。 クラッシュ ダンプが保存されていると、キャプチャするかどうかを選択するストレージ コンテナーを変更することができます、**完全**または**ミニ**ダンプします。
@@ -195,7 +195,7 @@ Azure SDK 2.5 を使用しているカスタム データ ソースを指定す�
 
 ![クラッシュ ダンプ](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-詳細については、次を参照してください。 [Microsoft Azure でログ記録とトレースを制御する](https://msdn.microsoft.com/magazine/ff714589.aspx)と[Microsoft Azure 診断のパート 4: カスタム ログ コンポーネントと Azure 診断 1.3 の変更点](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/)します。
+詳細については、[Microsoft Azure でログ記録とトレースを制御する](https://msdn.microsoft.com/magazine/ff714589.aspx)と[Microsoft Azure 診断のパート 4: カスタム ログ コンポーネントと Azure 診断 1.3 の変更点](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/)を参照してください。
 
 ## <a name="view-the-diagnostics-data"></a>診断データを表示します。
 クラウド サービスまたは仮想マシンの診断データを収集したら、それを表示できます。
@@ -228,7 +228,7 @@ Azure SDK 2.5 を使用しているカスタム データ ソースを指定す�
    | カスタム ログ ファイル |ユーザー定義データのログ。 |指定できますコードでカスタム ログ ファイルの場所、ストレージ アカウント。 たとえば、カスタム blob コンテナーを指定できます。 |
 4. 任意の型のデータが切り捨てられる場合、そのデータのバッファーを増やすことを試すことができます、ストレージ アカウント、仮想マシンからデータの転送間隔を短くします。
 5. (省略可能)全体的な記憶域のコストを削減するには、場合によっては、ストレージ アカウントからデータを消去します。
-6. 完全なデプロイを行うと diagnostics.cscfg ファイル (Azure SDK 2.5 の場合は .wadcfgx) が Azure では、更新、クラウド サービスは、診断構成への変更を取得します。 代わりに既存のデプロイを更新する場合は、.cscfg ファイルが Azure で更新されません。 次のセクションの手順に従っても診断の設定を変更できます。 完全なデプロイを実行して、既存のデプロイの更新の詳細については、次を参照してください。 [Azure アプリケーション発行ウィザード](vs-azure-tools-publish-azure-application-wizard.md)します。
+6. 完全なデプロイを行うと diagnostics.cscfg ファイル (Azure SDK 2.5 の場合は .wadcfgx) が Azure では、更新、クラウド サービスは、診断構成への変更を取得します。 代わりに既存のデプロイを更新する場合は、.cscfg ファイルが Azure で更新されません。 次のセクションの手順に従っても診断の設定を変更できます。 完全なデプロイを実行して、既存のデプロイの更新の詳細については、[Azure アプリケーション発行ウィザード](vs-azure-tools-publish-azure-application-wizard.md)を参照してください。
 
 ### <a name="to-view-virtual-machine-diagnostics-data"></a>仮想マシンの診断データを表示するには
 1. 仮想マシンのショートカット メニューを選択**診断データの表示**します。
@@ -303,5 +303,5 @@ Azure SDK 2.5 を使用しているカスタム データ ソースを指定す�
 **プロパティ**ウィンドウで、設定、**出力ディレクトリにコピー**プロパティを**常にコピー**します。
 
 ## <a name="next-steps"></a>次の手順
-Azure でのログ記録する診断の詳細については、次を参照してください。 [Azure Cloud Services および仮想マシンで診断を有効にする](/azure/cloud-services/cloud-services-dotnet-diagnostics.md)と[Azure App Service で Web アプリに対して診断ログを有効にする](/azure/app-service/web-sites-enable-diagnostic-log)します。
+Azure でのログ記録する診断の詳細については、[Azure Cloud Services および仮想マシンで診断を有効にする](/azure/cloud-services/cloud-services-dotnet-diagnostics.md)と[Azure App Service で Web アプリに対して診断ログを有効にする](/azure/app-service/web-sites-enable-diagnostic-log)を参照してください。
 

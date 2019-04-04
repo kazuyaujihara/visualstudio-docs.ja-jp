@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 97e28347ba6985d99386647219f92aac9a221398
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49873579"
@@ -24,7 +24,7 @@ ms.locfileid: "49873579"
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のデザイン時テキスト テンプレートでは、テンプレート コードでアセンブリの型を使用できるように、`assembly` ディレクティブによってアセンブリが読み込まれます。 結果は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトでアセンブリ参照を追加した場合と同様です。  
   
- テキスト テンプレートの作成方法の一般的な概要については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)です。  
+ テキスト テンプレートの作成方法の一般的な概要については、[T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)を参照してください。  
   
 > [!NOTE]
 >  実行時 (前処理された) テキスト テンプレートでは、`assembly` ディレクティブは不要です。 代わりに必要なアセンブリを追加、**参照**の[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。  
@@ -48,7 +48,7 @@ ms.locfileid: "49873579"
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
 ```  
   
- assembly ディレクティブは、前処理されたテキスト テンプレートでは無効です。 代わりで必要な参照を含める、**参照**のセクション、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)します。  
+ assembly ディレクティブは、前処理されたテキスト テンプレートでは無効です。 代わりで必要な参照を含める、**参照**のセクション、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。 詳細については、[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)を参照してください。  
   
 ## <a name="standard-assemblies"></a>標準アセンブリ  
  次のアセンブリは自動的に読み込まれるので、これらのアセンブリのアセンブリ ディレクティブを記述する必要はありません。  

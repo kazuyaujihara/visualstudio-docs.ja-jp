@@ -47,7 +47,7 @@ ms.locfileid: "56634542"
 
 - ファイルをローカルに保存をサーバーにパブリッシュしたり、アイテムは、リモート オブジェクトへのデータ接続を表す場合に、プロジェクト項目を保存するための別のアプローチを使用してキーを押します。
 
-  永続化の詳細については、次を参照してください。[プロジェクトの永続化](../../extensibility/internals/project-persistence.md)と[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)します。
+  永続化の詳細については、[プロジェクトの永続化](../../extensibility/internals/project-persistence.md)と[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)を参照してください。
 
 ## <a name="project-commitment-model"></a>コミットメントのプロジェクト モデル
  永続化されたデータ オブジェクトが開かれるダイレクト モードまたはトランザクション モードにしますか?

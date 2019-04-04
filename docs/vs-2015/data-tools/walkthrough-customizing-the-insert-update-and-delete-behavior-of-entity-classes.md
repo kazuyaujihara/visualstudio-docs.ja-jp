@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 4d8ef69258d9c672bb5deb01b9c2e0972d4e8303
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49193545"
@@ -25,10 +25,10 @@ ms.locfileid: "49193545"
   
 [LINQ to SQL ツール Visual Studio で](../data-tools/linq-to-sql-tools-in-visual-studio2.md)の作成と編集のビジュアル デ ザイン サーフェイスを提供します。[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]データベース内のオブジェクトに基づくクラス (エンティティ クラス)。 使用して[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)、SQL データベースにアクセスする LINQ テクノロジを使用することができます。 詳細については、「[LINQ (Language-Integrated Query) (LINQ (統合言語クエリ))](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)」をご覧ください。  
   
- 既定では、更新を実行するロジックは [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] ランタイムによって提供されます。 ランタイムは、テーブルのスキーマ (列定義と主キー情報) に基づいて、既定の Insert、Update、および Delete の各ステートメントを作成します。 既定の動作を使用しない場合は、更新動作を構成し、データベースのデータの操作に必要な Insert、Update、および Delete を実行する特定のストアド プロシージャを指定できます。 この方法は、既定の動作が生成されていない場合、たとえばエンティティ クラスがビューにマップされている場合にも実行できます。 また、データベースのテーブルへのアクセスには常にストアド プロシージャを通すようにすると、既定の更新動作をオーバーライドできます。 詳細については、次を参照してください。[カスタマイズ操作ストアド プロシージャによる](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a)します。  
+ 既定では、更新を実行するロジックは [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] ランタイムによって提供されます。 ランタイムは、テーブルのスキーマ (列定義と主キー情報) に基づいて、既定の Insert、Update、および Delete の各ステートメントを作成します。 既定の動作を使用しない場合は、更新動作を構成し、データベースのデータの操作に必要な Insert、Update、および Delete を実行する特定のストアド プロシージャを指定できます。 この方法は、既定の動作が生成されていない場合、たとえばエンティティ クラスがビューにマップされている場合にも実行できます。 また、データベースのテーブルへのアクセスには常にストアド プロシージャを通すようにすると、既定の更新動作をオーバーライドできます。 詳細については、[カスタマイズ操作ストアド プロシージャによる](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a)を参照してください。  
   
 > [!NOTE]
->  このチュートリアルでは、可用性、 **InsertCustomer**、 **UpdateCustomer**、および**DeleteCustomer**のため、Northwind データベースのストアド プロシージャ。 これらのストアド プロシージャを作成する方法の詳細については、次を参照してください。[チュートリアル: Northwind の Customers テーブル用の更新ストアド プロシージャの作成](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md)です。  
+>  このチュートリアルでは、可用性、 **InsertCustomer**、 **UpdateCustomer**、および**DeleteCustomer**のため、Northwind データベースのストアド プロシージャ。 これらのストアド プロシージャを作成する方法の詳細については、[チュートリアル: Northwind の Customers テーブル用の更新ストアド プロシージャの作成](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md)を参照してください。  
   
  このチュートリアルでは、ストアド プロシージャを使用して、データベースにデータを保存する既定の LINQ to SQL ランタイムの動作をオーバーライドするために必要な手順を示します。  
   
@@ -51,9 +51,9 @@ ms.locfileid: "49193545"
 ## <a name="prerequisites"></a>必須コンポーネント  
  このチュートリアルを実行するための要件は次のとおりです。  
   
--   Northwind サンプル データベースの SQL Server バージョンにアクセスします。 詳細については、次を参照してください。[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)します。  
+-   Northwind サンプル データベースの SQL Server バージョンにアクセスします。 詳細については、[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)を参照してください。  
   
--   **InsertCustomer**、 **UpdateCustomer**、および**DeleteCustomer**のため、Northwind データベースのストアド プロシージャ。 詳細については、次を参照してください。[チュートリアル: Northwind の Customers テーブル用の更新ストアド プロシージャの作成](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md)です。  
+-   **InsertCustomer**、 **UpdateCustomer**、および**DeleteCustomer**のため、Northwind データベースのストアド プロシージャ。 詳細については、[チュートリアル: Northwind の Customers テーブル用の更新ストアド プロシージャの作成](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md)を参照してください。  
   
 ## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>アプリケーションの作成と LINQ to SQL クラスの追加  
  [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] クラスを操作してデータを Windows フォームに表示できるように、新しい Windows フォーム アプリケーションを作成し、LINQ to SQL クラス ファイルを追加します。  
@@ -69,7 +69,7 @@ ms.locfileid: "49193545"
     > [!NOTE]
     >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]は [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクトと C# プロジェクトでサポートされています。 したがって、新しいプロジェクトはこれらの言語のどちらかで作成してください。  
   
-3.  をクリックして、 **Windows フォーム アプリケーション**テンプレートとクリック**OK**。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
+3.  をクリックして、 **Windows フォーム アプリケーション**テンプレートとクリック**OK**。 詳細については、[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)を参照してください。  
   
      UpdatingwithSProcsWalkthrough プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。  
   
@@ -86,14 +86,14 @@ ms.locfileid: "49193545"
   
 #### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Customer エンティティ クラスを作成し、そのエンティティ クラスでデータ ソースを構成するには  
   
-1.  **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**、Northwind サンプル データベースの SQL Server のバージョンの Customer テーブルを探します。 詳細については、次を参照してください。[方法: Northwind データベースへの接続](../data-tools/how-to-connect-to-the-northwind-database.md)します。  
+1.  **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**、Northwind サンプル データベースの SQL Server のバージョンの Customer テーブルを探します。 詳細については、[方法: Northwind データベースへの接続](../data-tools/how-to-connect-to-the-northwind-database.md)を参照してください。  
   
 2.  ドラッグ、**顧客**ノードから**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]画面。  
   
      という名前のエンティティ クラス**顧客**が作成されます。 これには、Customers テーブルの列に対応するプロパティが含まれています。 エンティティ クラスの名前は**顧客**(いない**顧客**) Customers テーブルから単一の顧客を表すため。  
   
     > [!NOTE]
-    >  この名前の変更動作*複数形化*します。 オンまたはオフにすることができます、[オプション ダイアログ ボックス](../ide/reference/options-dialog-box-visual-studio.md)します。 詳細については、次を参照してください。[方法: 複数形化のオンとオフにする (O/r デザイナー)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)します。  
+    >  この名前の変更動作*複数形化*します。 オンまたはオフにすることができます、[オプション ダイアログ ボックス](../ide/reference/options-dialog-box-visual-studio.md)します。 詳細については、[方法: 複数形化のオンとオフにする (O/r デザイナー)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)を参照してください。  
   
 3.  **ビルド** メニューのをクリックして**updatingwithsprocswalkthrough のビルド**プロジェクトをビルドします。  
   
@@ -252,14 +252,14 @@ ms.locfileid: "49193545"
 10. F5 キーを押し、削除したレコードがデータベースから削除されていることを確認します。  
   
     > [!NOTE]
-    >  アプリケーションがの値に応じて SQL Server Express Edition を使用するかどうか、**出力ディレクトリにコピー**データベース ファイルのプロパティは、手順 10. で f5 キーを押すとき、変更が表示されません。 詳細については、次を参照してください。[方法: プロジェクトでのローカル データ ファイルの管理](../data-tools/how-to-manage-local-data-files-in-your-project.md)します。  
+    >  アプリケーションがの値に応じて SQL Server Express Edition を使用するかどうか、**出力ディレクトリにコピー**データベース ファイルのプロパティは、手順 10. で f5 キーを押すとき、変更が表示されません。 詳細については、[方法: プロジェクトでのローカル データ ファイルの管理](../data-tools/how-to-manage-local-data-files-in-your-project.md)を参照してください。  
   
 ## <a name="next-steps"></a>次の手順  
  アプリケーションの要件に応じて、[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] エンティティ クラスの作成後にいくつかの手順を実行することが必要な場合があります。 このアプリケーションで行うことができる拡張には次のものがあります。  
   
--   更新時のコンカレンシー チェックを実装します。 詳しくは、次を参照してください。[オプティミスティック同時実行制御: 概要](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694)します。  
+-   更新時のコンカレンシー チェックを実装します。 詳しくは、[オプティミスティック同時実行制御: 概要](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694)を参照してください。  
   
--   LINQ クエリを追加してデータをフィルター処理します。 詳しくは、次を参照してください。 [LINQ クエリ (c#) の概要](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)します。  
+-   LINQ クエリを追加してデータをフィルター処理します。 詳しくは、[LINQ クエリ (c#) の概要](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

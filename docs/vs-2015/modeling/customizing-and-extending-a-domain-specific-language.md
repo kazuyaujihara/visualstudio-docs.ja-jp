@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49180688"
@@ -28,11 +28,11 @@ Visual Studio のモデリングと視覚エフェクト SDK (VMSDK) は、い�
   
 1.  DSL 定義図を使用して、ドメイン固有言語 (DSL) を定義します。 図の表記法、読み取り可能な XML 形式では、コードとその他の成果物を生成するために必要な基本的なツールと DSL をすばやく作成できます。  
   
-     詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。  
+     詳細については、[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)を参照してください。  
   
 2.  DSL 定義のより高度な機能を使用して DSL を細かく調整します。 たとえば、ユーザーが要素を作成するときに表示されるその他のリンクを行うことができます。 これらの手法は、DSL 定義で実現されるほとんどの場合と、数行プログラム コードの一部が必要です。  
   
-3.  プログラム コードを使用して、モデリング ツールを拡張します。 VMSDK は特に、DSL 定義から生成されるコードにより、拡張機能を容易に統合できるようにすることを目的としています。  詳細については、次を参照してください。[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)します。  
+3.  プログラム コードを使用して、モデリング ツールを拡張します。 VMSDK は特に、DSL 定義から生成されるコードにより、拡張機能を容易に統合できるようにすることを目的としています。  詳細については、[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)を参照してください。  
   
 > [!NOTE]
 >  DSL 定義ファイルを更新したら、忘れずにクリックして**すべてのテンプレートの変換**ソリューションの再構築する前に、ソリューション エクスプ ローラーのツールバー。  
@@ -49,7 +49,7 @@ Visual Studio のモデリングと視覚エフェクト SDK (VMSDK) は、い�
 |任意の図形の背景イメージを設定します。|固定の ImageField を追加する InitializeInstanceResources() をオーバーライドします。 参照してください[ダイアグラムの外観のカスタマイズ](../modeling/customizing-presentation-on-the-diagram.md)します。|  
 |任意の深さに入れ子になったシェイプ|再帰的なツリーの埋め込みを設定します。 図形を含む BoundsRules を定義します。 参照してください[ダイアグラムの外観のカスタマイズ](../modeling/customizing-presentation-on-the-diagram.md)します。|  
 |要素の境界に固定のポイントにコネクタをアタッチします。|図上の小さなポートによって表される、埋め込みターミナル要素を定義します。 BoundsRules を使用して、場所に、ポートを修正します。 回路図のサンプルを参照してください。 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)します。|  
-|テキスト フィールドには、その他の値から派生した値が表示されます。|テキスト デコレータを計算またはカスタム ストレージ ドメイン プロパティにマップします。 詳細については、次を参照してください。[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)します。|  
+|テキスト フィールドには、その他の値から派生した値が表示されます。|テキスト デコレータを計算またはカスタム ストレージ ドメイン プロパティにマップします。 詳細については、[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)を参照してください。|  
 |モデル要素間、または図形間の変更を反映します。|参照してください[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。|  
 |など、他のリソースに変更を反映[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ストア外の拡張機能。|参照してください[イベント ハンドラーには、モデルの外部で変更が反映されるまで](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。|  
 |[プロパティ] ウィンドウには、関連する要素のプロパティが表示されます。|プロパティの転送を設定します。 参照してください[プロパティ ウィンドウのカスタマイズ](../modeling/customizing-the-properties-window.md)します。|  

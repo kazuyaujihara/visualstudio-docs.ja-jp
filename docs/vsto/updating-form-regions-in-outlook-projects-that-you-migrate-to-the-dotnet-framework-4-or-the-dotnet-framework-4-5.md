@@ -23,7 +23,7 @@ ms.locfileid: "56597648"
   フォーム領域を含む Outlook VSTO アドイン プロジェクトのターゲット フレームワークを [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更する場合は、生成されるフォーム領域コードおよび実行時に特定のフォーム領域クラスをインスタンス化するすべてのコードに対して、いくつかの変更を加える必要があります。
 
 ## <a name="update-the-generated-form-region-code"></a>生成されるフォーム領域コードを更新します。
- プロジェクトのターゲット フレームワークが [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更される場合は、生成されるフォーム領域コードを変更する必要があります。 加える変更は、Visual Studio でデザインしたフォーム領域と、Outlook からインポートしたフォーム領域とで異なります。 これらの種類のフォーム領域の間の違いの詳細については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
+ プロジェクトのターゲット フレームワークが [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更される場合は、生成されるフォーム領域コードを変更する必要があります。 加える変更は、Visual Studio でデザインしたフォーム領域と、Outlook からインポートしたフォーム領域とで異なります。 これらの種類のフォーム領域の間の違いの詳細については、[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)を参照してください。
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Visual Studio でデザインしたフォーム領域の生成されたコードを更新するには
 

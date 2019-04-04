@@ -26,7 +26,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 16686b0bf53f9e1358d96a7abcfe95f8ed6aac82
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49222769"
@@ -81,7 +81,7 @@ ms.locfileid: "49222769"
     ```  
   
 ## <a name="next-steps"></a>次の手順  
- ClickOnce アプリケーションでは、更新プロセス中に表示するカスタム ユーザー インターフェイスを含む、カスタムの更新ロジックも追加できます。 詳細については、「 <xref:System.Deployment.Application.UpdateCheckInfo> 」を参照してください。 ClickOnce アプリケーションを非表示することも標準的なスタート メニュー エントリ、ショートカット、およびプログラム追加と削除のエントリを使用して、`<customUX>`要素。 詳細については、次を参照してください。 [ \<entryPoint > 要素](../deployment/entrypoint-element-clickonce-application.md)と<xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>します。  
+ ClickOnce アプリケーションでは、更新プロセス中に表示するカスタム ユーザー インターフェイスを含む、カスタムの更新ロジックも追加できます。 詳細については、「 <xref:System.Deployment.Application.UpdateCheckInfo> 」を参照してください。 ClickOnce アプリケーションを非表示することも標準的なスタート メニュー エントリ、ショートカット、およびプログラム追加と削除のエントリを使用して、`<customUX>`要素。 詳細については、[ \<entryPoint > 要素](../deployment/entrypoint-element-clickonce-application.md)と<xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)   

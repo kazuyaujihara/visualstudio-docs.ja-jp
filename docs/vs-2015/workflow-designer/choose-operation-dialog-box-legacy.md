@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: erikre
 ms.openlocfilehash: 75b553bd79936db7b6d8aa2f8fe361650d4ef03e
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49189631"
@@ -24,7 +24,7 @@ ms.locfileid: "49189631"
 # <a name="choose-operation-dialog-box-legacy"></a>[操作の選択] ダイアログ ボックス (レガシ)
 このトピックで説明する方法を使用して、**操作の選択**  ダイアログ ボックスで、従来の[!INCLUDE[wfd1](../includes/wfd1-md.md)]します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  
   
- **操作の選択**に関連付ける操作を選択 ダイアログ ボックスを使用する<xref:System.Workflow.Activities.ReceiveActivity>アクティビティまたは<xref:System.Workflow.Activities.SendActivity>アクティビティ。 これらのアクティビティでこのダイアログ ボックスの使用に関する詳細については、次を参照してください。[方法: WCF コントラクト操作 (レガシ) 実装](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)と[方法: WCF コントラクト操作 (レガシ) を呼び出す](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)します。  
+ **操作の選択**に関連付ける操作を選択 ダイアログ ボックスを使用する<xref:System.Workflow.Activities.ReceiveActivity>アクティビティまたは<xref:System.Workflow.Activities.SendActivity>アクティビティ。 これらのアクティビティでこのダイアログ ボックスの使用に関する詳細については、[方法: WCF コントラクト操作 (レガシ) 実装](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)と[方法: WCF コントラクト操作 (レガシ) を呼び出す](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)を参照してください。  
   
  次の表に、ユーザー インターフェイス (UI) 要素の**選択操作** ダイアログ ボックス。  
   

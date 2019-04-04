@@ -36,7 +36,7 @@ ModelBus により、モデルまたはモデル内の特定の要素への一�
 
 ### <a name="expose"></a> DSL 定義をモデル バスを公開するには
 
-1. Visual Studio モデル バス拡張機能をまだインストールしていない場合はダウンロードしてインストールします。 詳細については、次を参照してください。 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)します。
+1. Visual Studio モデル バス拡張機能をまだインストールしていない場合はダウンロードしてインストールします。 詳細については、[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)を参照してください。
 
 2. DSL 定義ファイルを開きます。 デザイン サーフェイスを右クリックし、をクリックし、 **Modelbus の有効化**します。
 
@@ -44,7 +44,7 @@ ModelBus により、モデルまたはモデル内の特定の要素への一�
 
 4. **[OK]** をクリックします。 新しいプロジェクト "ModelBusAdapter" が DSL ソリューションに追加されます。
 
-5. テキスト テンプレートから DSL にアクセスする場合、新しいプロジェクトで AdapterManager.tt を変更する必要があります。 コマンドやイベント ハンドラーなどの他のコードから DSL にアクセスする場合はこの手順を省略します。 詳細については、次を参照してください。[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)します。
+5. テキスト テンプレートから DSL にアクセスする場合、新しいプロジェクトで AdapterManager.tt を変更する必要があります。 コマンドやイベント ハンドラーなどの他のコードから DSL にアクセスする場合はこの手順を省略します。 詳細については、[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)を参照してください。
 
    1. AdapterManagerBase の基底クラスを <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager> に変更します。
 
@@ -247,7 +247,7 @@ using Transaction t = this.Store.TransactionManager
 }
 ```
 
-ユーザーがこのドメイン プロパティを編集可能にするには、Editor 属性のパラメーターとして `ModelReferenceEditor` を使用します。 詳細については、次を参照してください。[の参照を編集するユーザーを許可する](#editRef)します。
+ユーザーがこのドメイン プロパティを編集可能にするには、Editor 属性のパラメーターとして `ModelReferenceEditor` を使用します。 詳細については、[の参照を編集するユーザーを許可する](#editRef)を参照してください。
 
 ### <a name="to-create-a-reference-to-an-element"></a>要素への参照を作成するには
 
@@ -259,7 +259,7 @@ ModelBusReference personReference =
   adapter.GetElementReference(person);
 ```
 
-後で `elementReference` を使用可能にする場合、外部型 `ModelBusReference` を持つドメイン プロパティに保存できます。 ユーザーがそれを編集可能にするには、Editor 属性のパラメーターとして `ModelElementReferenceEditor` を使用します。 詳細については、次を参照してください。[の参照を編集するユーザーを許可する](#editRef)します。
+後で `elementReference` を使用可能にする場合、外部型 `ModelBusReference` を持つドメイン プロパティに保存できます。 ユーザーがそれを編集可能にするには、Editor 属性のパラメーターとして `ModelElementReferenceEditor` を使用します。 詳細については、[の参照を編集するユーザーを許可する](#editRef)を参照してください。
 
 ### <a name="resolving-references"></a>参照の解決
 
@@ -303,9 +303,9 @@ using (FamilyTreeAdapter adapter =
 
 #### <a name="to-resolve-modelbus-references-in-a-text-template"></a>テキスト テンプレート内の ModelBus References を解決するには
 
-1. アクセスする DSL には、テキスト テンプレートによるアクセスのために構成された ModelBus Adapter が含まれている必要があります。 詳細については、次を参照してください。 [DSL へのアクセスを提供する](#provide)します。
+1. アクセスする DSL には、テキスト テンプレートによるアクセスのために構成された ModelBus Adapter が含まれている必要があります。 詳細については、[DSL へのアクセスを提供する](#provide)を参照してください。
 
-2. 通常、ソース DSL 内に保存されたモデル バス参照 (MBR) を使用してターゲット DSL にアクセスします。 したがって、テンプレートにはソース DSL のディレクティブに加えて、MBR を解決するためのコードが含まれています。 テキスト テンプレートの詳細については、次を参照してください。[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)します。
+2. 通常、ソース DSL 内に保存されたモデル バス参照 (MBR) を使用してターゲット DSL にアクセスします。 したがって、テンプレートにはソース DSL のディレクティブに加えて、MBR を解決するためのコードが含まれています。 テキスト テンプレートの詳細については、[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)を参照してください。
 
    ```
    <#@ template debug="true" hostspecific="true"

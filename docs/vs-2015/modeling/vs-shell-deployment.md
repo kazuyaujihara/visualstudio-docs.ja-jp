@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 323dd1242dcc598b5f30fdd24f37e305712d4d78
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49172914"
@@ -22,7 +22,7 @@ ms.locfileid: "49172914"
 # <a name="vs-shell-deployment"></a>VS Shell 配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-分離のシェルでは、Visual Studio を確認できます。 機能、ドメイン固有言語およびそのソリューションを表示する方法と対話する必要があります。 Visual Studio 分離シェルの詳細については、次を参照してください。[分離シェルのカスタマイズ](../extensibility/customizing-the-isolated-shell.md)します。 分離シェルをカスタマイズする方法の詳細を検索する[分離シェルのカスタマイズ](http://msdn.microsoft.com/en-us/d75463cd-1155-42e4-8b7a-046ed6becbbf)します。  
+分離のシェルでは、Visual Studio を確認できます。 機能、ドメイン固有言語およびそのソリューションを表示する方法と対話する必要があります。 Visual Studio 分離シェルの詳細については、[分離シェルのカスタマイズ](../extensibility/customizing-the-isolated-shell.md)を参照してください。 分離シェルをカスタマイズする方法の詳細を検索する[分離シェルのカスタマイズ](http://msdn.microsoft.com/en-us/d75463cd-1155-42e4-8b7a-046ed6becbbf)します。  
   
 ### <a name="to-set-a-visual-studio-shell-as-the-deployment-target"></a>配置ターゲットとして Visual Studio Shell を設定するには  
   

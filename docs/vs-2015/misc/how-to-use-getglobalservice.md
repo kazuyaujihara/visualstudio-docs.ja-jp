@@ -16,13 +16,13 @@ caps.latest.revision: 14
 manager: douge
 ms.openlocfilehash: 5ce0d5657fa65cd727da2b97b3dd24735a81937a
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49276130"
 ---
 # <a name="how-to-use-getglobalservice"></a>方法: GetGlobalService を使用する
-場合によっては、ツール ウィンドウからサービスを取得するサービスを認識しませんが、サービス プロバイダーをコンテナーに配置されているか、またはしない配置されているコンテナーを制御したり必要があります。 たとえば、コントロール内からアクティビティ ログに書き込む可能性があります。 これらおよびその他のシナリオの詳細については、次を参照してください。[方法: サービスのトラブルシューティングを行う](../extensibility/how-to-troubleshoot-services.md)します。  
+場合によっては、ツール ウィンドウからサービスを取得するサービスを認識しませんが、サービス プロバイダーをコンテナーに配置されているか、またはしない配置されているコンテナーを制御したり必要があります。 たとえば、コントロール内からアクティビティ ログに書き込む可能性があります。 これらおよびその他のシナリオの詳細については、[方法: サービスのトラブルシューティングを行う](../extensibility/how-to-troubleshoot-services.md)を参照してください。  
   
  ほとんどを取得できます[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]静的を呼び出すことによってサービス<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>メソッド。  
   
@@ -43,7 +43,7 @@ ms.locfileid: "49276130"
      [!code-csharp[UseGetGlobalService#1](../snippets/csharp/VS_Snippets_VSSDK/usegetglobalservice/cs/getglobalservicepackage.cs#1)]
      [!code-vb[UseGetGlobalService#1](../snippets/visualbasic/VS_Snippets_VSSDK/usegetglobalservice/vb/getglobalservicepackage.vb#1)]  
   
-     このコードは、SVsActivityLog サービスを取得しにキャスト、<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>インターフェイスで、アクティビティ ログに書き込むことができます。 例については、次を参照してください。[方法: アクティビティ ログを使用して、](../extensibility/how-to-use-the-activity-log.md)します。  
+     このコードは、SVsActivityLog サービスを取得しにキャスト、<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>インターフェイスで、アクティビティ ログに書き込むことができます。 例については、[方法: アクティビティ ログを使用して、](../extensibility/how-to-use-the-activity-log.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: サービスのトラブルシューティング](../extensibility/how-to-troubleshoot-services.md)   

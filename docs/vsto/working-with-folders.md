@@ -34,7 +34,7 @@ ms.locfileid: "56612518"
 |現在のユーザー ID を名前に持つフォルダーを作成します。|[方法: プログラムによってカスタム フォルダーのアイテムを作成します。](../vsto/how-to-programmatically-create-custom-folder-items.md)|
 |特定の条件に一致するメッセージを、指定したフォルダーに移動します。|[方法: プログラムによって Outlook でアイテムを移動します。](../vsto/how-to-programmatically-move-items-in-outlook.md)|
 
- Outlook タスクと Outlook オブジェクト モデルの詳細については、次を参照してください。 [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)します。
+ Outlook タスクと Outlook オブジェクト モデルの詳細については、[Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [連絡先項目を操作します。](../vsto/working-with-contact-items.md)

@@ -30,7 +30,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d2e9213605fb351ab44e90c0885bcb556d10b695
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51757622"
@@ -48,7 +48,7 @@ ms.locfileid: "51757622"
   
 3.  **デバッグ**フォルダー、目的のオプションのカテゴリを選択します。  
   
-     最も一般的なオプションにある、**全般**カテゴリ。 詳細については、次を参照してください。 [[全般]、デバッグ、オプションダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)です。  
+     最も一般的なオプションにある、**全般**カテゴリ。 詳細については、[[全般]、デバッグ、オプションダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)を参照してください。  
   
 4.  目的のオプションをオンまたはオフにします。 F1 キーを押すとオプションについてのヘルプが表示されます。  
   

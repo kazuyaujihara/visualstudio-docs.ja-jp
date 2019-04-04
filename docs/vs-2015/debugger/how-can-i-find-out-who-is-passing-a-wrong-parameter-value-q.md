@@ -30,7 +30,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2505d8f733554e90c14a46deafd0936682d38d66
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51729570"
@@ -57,7 +57,7 @@ ms.locfileid: "51729570"
   
 6.  そして、再びプログラムを実行します。 `Var` パラメーターの値が `3` になると、ブレークポイントによって、その関数の先頭でプログラムの実行が停止します。  
   
-7.  次に、[呼び出し履歴] ウィンドウを使用して呼び出し元の関数を見つけ、その関数のソース コードに移動します。 詳細については、次を参照してください。[方法: 呼び出し履歴 ウィンドウを使用して、](../debugger/how-to-use-the-call-stack-window.md)します。  
+7.  次に、[呼び出し履歴] ウィンドウを使用して呼び出し元の関数を見つけ、その関数のソース コードに移動します。 詳細については、[方法: 呼び出し履歴 ウィンドウを使用して、](../debugger/how-to-use-the-call-stack-window.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ネイティブ コードのデバッグに関する Faq](../debugger/debugging-native-code-faqs.md)   

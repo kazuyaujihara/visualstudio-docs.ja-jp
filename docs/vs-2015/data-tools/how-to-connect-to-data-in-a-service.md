@@ -27,7 +27,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: ce851a864dd11759c36c7ae6cb275e9e71cd11a1
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49301796"
@@ -68,7 +68,7 @@ ms.locfileid: "49301796"
   
 #### <a name="to-add-functionality-to-your-application"></a>アプリケーションに機能を追加するには  
   
--   項目を選択、**データソース**ウィンドウ バインドされたコントロールを作成するためのフォームにドラッグします。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。  
+-   項目を選択、**データソース**ウィンドウ バインドされたコントロールを作成するためのフォームにドラッグします。 詳細については、[Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [WCF データ サービスへの WPF コントロールをバインドします。](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   

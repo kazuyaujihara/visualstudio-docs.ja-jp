@@ -21,7 +21,7 @@ ms.locfileid: "56722526"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>共通言語ランタイム式エバリュエーターの書き込み
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+>  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
 
  式エバリュエーター (EE) は、構文を処理するデバッグ エンジン (DE) の一部と、デバッグ中のコードを生成したプログラミング言語のセマンティクスです。 プログラミング言語のコンテキスト内で式を評価する必要があります。 たとえば、一部の言語で式の"A + B"、"A の合計と B の" 他の言語で同じ式は「A または b.」可能性があります。 そのため、個別の EE 書き込む必要がある各プログラミング言語、Visual Studio IDE でデバッグ対象のオブジェクト コードを生成します。
 

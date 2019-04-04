@@ -15,7 +15,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 87f653a6ac745253ae86eb6bf8dfab92169ac4db
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51806062"
@@ -45,7 +45,7 @@ ms.locfileid: "51806062"
     xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"  
     ```  
   
-     これらの名前空間では、Visual Studio コマンド、制御、および UI 設定にアクセスできます。 詳細については、次を参照してください。[スタート ページを Visual Studio のコマンドを追加する](../extensibility/adding-visual-studio-commands-to-a-start-page.md)します。  
+     これらの名前空間では、Visual Studio コマンド、制御、および UI 設定にアクセスできます。 詳細については、[スタート ページを Visual Studio のコマンドを追加する](../extensibility/adding-visual-studio-commands-to-a-start-page.md)を参照してください。  
   
      次の例では、空白のスタート ページの .xaml ファイルに、マークアップを示します。 内部で任意のカスタム コンテンツを移動する必要があります<xref:System.Windows.Controls.Grid>要素。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "51806062"
     </UserControl>  
     ```  
   
-6.  空のコントロールを追加\<UserControl > カスタム スタート ページを入力する要素。 Visual Studio に固有の機能を追加する方法については、次を参照してください。[スタート ページを Visual Studio のコマンドを追加する](../extensibility/adding-visual-studio-commands-to-a-start-page.md)します。  
+6.  空のコントロールを追加\<UserControl > カスタム スタート ページを入力する要素。 Visual Studio に固有の機能を追加する方法については、[スタート ページを Visual Studio のコマンドを追加する](../extensibility/adding-visual-studio-commands-to-a-start-page.md)を参照してください。  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>カスタム スタート ページのテストと適用  
  Visual Studio がクラッシュしないことを確認するまでは、カスタム スタート ページを実行する Visual Studio のプライマリ インスタンスを設定しないでください。 代わりに、実験用インスタンスでテストします。  

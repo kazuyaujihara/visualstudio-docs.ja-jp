@@ -21,7 +21,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56633058"
 ---
 # <a name="how-to-add-a-resource-file"></a>方法: リソース ファイルを追加します。
-  リソース ファイルを追加するためのコマンドは、ソリューション エクスプ ローラー内のノードの機能、ソリューション ノードのショートカット メニューでです。 詳細については、次を参照してください。[をローカライズする SharePoint ソリューション](../sharepoint/localizing-sharepoint-solutions.md)します。
+  リソース ファイルを追加するためのコマンドは、ソリューション エクスプ ローラー内のノードの機能、ソリューション ノードのショートカット メニューでです。 詳細については、[をローカライズする SharePoint ソリューション](../sharepoint/localizing-sharepoint-solutions.md)を参照してください。
 
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>SharePoint ソリューションにグローバル リソース ファイルを追加するには
 

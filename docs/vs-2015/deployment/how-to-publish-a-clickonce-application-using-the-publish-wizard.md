@@ -25,7 +25,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: f8708658e5daf90e24a0336040ba2b766d5ae975
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49862828"
@@ -33,7 +33,7 @@ ms.locfileid: "49862828"
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ユーザーが ClickOnce アプリケーションを利用できるようにするには、アプリケーションをファイル共有やパス、FTP サーバー、またはリムーバブル メディアに発行する必要があります。 発行ウィザードを使用して、アプリケーションを発行することができます。発行に関連する追加のプロパティが 利用可能な**発行**のページ、**プロジェクト デザイナー**します。 詳細については、次を参照してください。 [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)します。  
+ユーザーが ClickOnce アプリケーションを利用できるようにするには、アプリケーションをファイル共有やパス、FTP サーバー、またはリムーバブル メディアに発行する必要があります。 発行ウィザードを使用して、アプリケーションを発行することができます。発行に関連する追加のプロパティが 利用可能な**発行**のページ、**プロジェクト デザイナー**します。 詳細については、[ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)を参照してください。  
   
  発行ウィザードを実行する前に、発行プロパティを適切に設定する必要があります。 たとえば、ClickOnce アプリケーションの署名にキーを指定する場合は、行うことができますなど、**署名**のページ、**プロジェクト デザイナー**します。 詳細については、「[ClickOnce アプリケーションの発行](../deployment/securing-clickonce-applications.md)」を参照してください。  
   

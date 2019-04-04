@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 20d84c91ef30ae549b8fa59893d439a06467ed33
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51766918"
@@ -48,7 +48,7 @@ Visual Studio では、コードを記述してレイヤー図を生成および
   
 - [Modeling SDK for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  
   
-  適切なバージョンの Visual Studio をレイヤー拡張機能を実行するコンピューターにインストールしておく必要があります。 詳細については、次を参照してください。[レイヤー モデル拡張機能をデプロイ](../modeling/deploy-a-layer-model-extension.md)します。  
+  適切なバージョンの Visual Studio をレイヤー拡張機能を実行するコンピューターにインストールしておく必要があります。 詳細については、[レイヤー モデル拡張機能をデプロイ](../modeling/deploy-a-layer-model-extension.md)を参照してください。  
   
   レイヤー図をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   

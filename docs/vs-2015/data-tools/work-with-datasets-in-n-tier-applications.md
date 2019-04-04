@@ -30,7 +30,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: d05204edfd7c3cd5daecad3a1cb21ba5ba7e60d8
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49205973"
@@ -39,7 +39,7 @@ ms.locfileid: "49205973"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-N 層データ アプリケーション * は複数の論理レイヤーに分離されるデータ中心のアプリケーション (または*層*)。 言い換えれば、n 層データ アプリケーションは、複数のプロジェクトに分離されたアプリケーションであり、データ アクセス層、ビジネス ロジック層、およびプレゼンテーション層がそれぞれ独自のプロジェクトに含まれています。 詳細については、次を参照してください。 [N 層データ アプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)します。  
+N 層データ アプリケーション * は複数の論理レイヤーに分離されるデータ中心のアプリケーション (または*層*)。 言い換えれば、n 層データ アプリケーションは、複数のプロジェクトに分離されたアプリケーションであり、データ アクセス層、ビジネス ロジック層、およびプレゼンテーション層がそれぞれ独自のプロジェクトに含まれています。 詳細については、[N 層データ アプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)を参照してください。  
   
  TableAdapter およびデータセット クラスを別々のプロジェクトに生成できるように、型指定されたデータセットが強化されました。 これにより、アプリケーション層を分離して、n 層データ アプリケーションをすばやく生成できます。  
   

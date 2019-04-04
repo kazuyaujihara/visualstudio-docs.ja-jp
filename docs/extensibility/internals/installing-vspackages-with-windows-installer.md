@@ -21,7 +21,7 @@ ms.locfileid: "56600429"
 # <a name="installing-vspackages-with-windows-installer"></a>Windows インストーラーによる VSPackage のインストール
 VSPackage の統合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]だけで複数のユーザーのコンピューターにファイルをコピーする必要があります。 VSPackage とその依存ファイルをインストールして登録し、それらを統合する必要があります VSPackage のインストーラー[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 VSPackage がのアイコンを表示するなどの統合機能の活用、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]スプラッシュ画面とダイアログ ボックスの詳細。
 
- Microsoft Windows インストーラー ファイルは、Vspackage を配布することをお勧めの方法です。 サポートされている任意の Windows オペレーティング システムで使いやすい Windows インストーラー パッケージを実行できる[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 詳細については、次を参照してください。 [Windows インストーラー](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)します。
+ Microsoft Windows インストーラー ファイルは、Vspackage を配布することをお勧めの方法です。 サポートされている任意の Windows オペレーティング システムで使いやすい Windows インストーラー パッケージを実行できる[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 詳細については、[Windows インストーラー](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [Windows インストーラーの基本事項](../../extensibility/internals/windows-installer-basics.md)

@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 8a3fffb36d7070701b99382c320e3a2d23b9a2b8
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49893404"
@@ -49,9 +49,9 @@ Entity Framework とは、.NET 開発者は、ドメイン固有オブジェク�
   > [!NOTE]
   >  Visual Studio 2010 以降で[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]ツールがサポートされていない[!INCLUDE[ss2k](../includes/ss2k-md.md)]します。  
   
-  ツールでは、生成または .edmx ファイルを変更します。 このファイルには、概念モデル、ストレージ モデル、およびそれらの間のマッピングについて説明する情報が含まれています。 詳細については、次を参照してください。 [EDMX](https://msdn.microsoft.com/data/jj650889.aspx)します。  
+  ツールでは、生成または .edmx ファイルを変更します。 このファイルには、概念モデル、ストレージ モデル、およびそれらの間のマッピングについて説明する情報が含まれています。 詳細については、[EDMX](https://msdn.microsoft.com/data/jj650889.aspx)を参照してください。  
   
-  Entity Framework Power Tools では、エンティティ データ モデルを使用するアプリケーションを構築するのに役立ちます。 ツールは、概念モデルを生成、既存のモデルの検証、概念モデルに基づくオブジェクト クラスが含まれているソース コード ファイルの生成、およびモデルを生成するビューを含むソース コード ファイルを生成することができます。 詳細については、次を参照してください。 [Pre-Generated マッピング ビュー](https://msdn.microsoft.com/data/dn469601.aspx)します。  
+  Entity Framework Power Tools では、エンティティ データ モデルを使用するアプリケーションを構築するのに役立ちます。 ツールは、概念モデルを生成、既存のモデルの検証、概念モデルに基づくオブジェクト クラスが含まれているソース コード ファイルの生成、およびモデルを生成するビューを含むソース コード ファイルを生成することができます。 詳細については、[Pre-Generated マッピング ビュー](https://msdn.microsoft.com/data/dn469601.aspx)を参照してください。  
   
 ## <a name="related-topics"></a>関連トピック  
   

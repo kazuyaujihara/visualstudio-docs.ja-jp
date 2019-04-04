@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 60ce6535375e79f7fef7fe25ef6a8381a02b0ad5
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51778385"
@@ -33,7 +33,7 @@ ms.locfileid: "51778385"
   
 3. バッグ内のコンテキストを維持します。  
   
-   これらのタスクは、次の手順で説明します。 コンテキストを提供する詳細については、次を参照してください。**堅牢なプログラミング**このトピックで後述します。  
+   これらのタスクは、次の手順で説明します。 コンテキストを提供する詳細については、**堅牢なプログラミング**このトピックで後述を参照してください。  
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>エディターまたはデザイナーのコンテキスト バッグを作成するには  
   

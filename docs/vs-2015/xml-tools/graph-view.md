@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49813623"
@@ -141,7 +141,7 @@ ms.locfileid: "49813623"
 ## <a name="xml-editor-integration"></a>XML エディターとの統合  
  ノードをクリックしたり、[コードの表示] コンテキスト メニューを使用することで、グラフ ビューと XML エディターを切り替えることができます。  
   
- XML エディターでスキーマ セットを変更すると、グラフ ビューにもその変更が同期されます。 詳細については、次を参照してください。 [XML エディターとの統合](../xml-tools/integration-with-xml-editor.md)します。  
+ XML エディターでスキーマ セットを変更すると、グラフ ビューにもその変更が同期されます。 詳細については、[XML エディターとの統合](../xml-tools/integration-with-xml-editor.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [デザイン画面](../xml-tools/xml-schema-designer-workspace.md)

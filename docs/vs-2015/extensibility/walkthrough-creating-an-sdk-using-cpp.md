@@ -32,7 +32,7 @@ ms.locfileid: "51773471"
 -   [クラス ライブラリを使用するサンプル アプリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。  
   
 ##  <a name="createClassLibrary"></a> ネイティブと Windows ランタイム ライブラリを作成するには  
   

@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 60b778ae46dbd44f85973f96baab6e474f60a1f7
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49295881"
@@ -25,7 +25,7 @@ ms.locfileid: "49295881"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Visual Basic では、つまり、Visual Basic のコードに直接 XML フラグメントを組み込むことができます、XML リテラルをサポートしています。 詳細については、次を参照してください。 [XML リテラルの概要](http://go.microsoft.com/fwlink/?LinkId=140325)します。  
+Visual Basic では、つまり、Visual Basic のコードに直接 XML フラグメントを組み込むことができます、XML リテラルをサポートしています。 詳細については、[XML リテラルの概要](http://go.microsoft.com/fwlink/?LinkId=140325)を参照してください。  
   
  Visual Basic プロジェクトの XSD ファイルに XML リテラルが含まれる場合、XML スキーマ エクスプローラーで XML スキーマ セットを表示できます。 XML リテラルに関連付けられたスキーマ セットを表示するには、XML リテラルまたは XML 名前空間インポートで XML ノードを右クリックし、選択**スキーマ エクスプ ローラーで表示する**します。  
   

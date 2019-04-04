@@ -25,9 +25,9 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56619954"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>方法: メソッドにパラメーターを追加します。
-  メソッドに情報を渡すか、メソッドから情報を返す、パラメーターを使用します。 すべてのメソッドには、少なくとも 1 つのパラメーターが必要です。 作成する方法の種類をサポートするためにパラメーターを設計する方法の詳細については、次を参照してください。[ビジネス データ接続モデルをデザイン](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+  メソッドに情報を渡すか、メソッドから情報を返す、パラメーターを使用します。 すべてのメソッドには、少なくとも 1 つのパラメーターが必要です。 作成する方法の種類をサポートするためにパラメーターを設計する方法の詳細については、[ビジネス データ接続モデルをデザイン](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
- メソッドにパラメーターを追加すると、Visual Studio は、プロジェクト内のモデル ファイルの XML にパラメーター要素を追加します。 Parameter 要素の属性に関する詳細については、次を参照してください。[パラメーター](http://go.microsoft.com/fwlink/?LinkId=169284)します。
+ メソッドにパラメーターを追加すると、Visual Studio は、プロジェクト内のモデル ファイルの XML にパラメーター要素を追加します。 Parameter 要素の属性に関する詳細については、[パラメーター](http://go.microsoft.com/fwlink/?LinkId=169284)を参照してください。
 
 ### <a name="to-add-a-parameter-to-a-method"></a>メソッドにパラメーターを追加するには
 
@@ -35,7 +35,7 @@ ms.locfileid: "56619954"
 
 2.  メニュー バーで、**ビュー** > **その他の Windows** > **BDC メソッドの詳細**します。
 
-     **BDC メソッドの詳細**ウィンドウが開きます。 詳細については、次を参照してください。 [BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)します。
+     **BDC メソッドの詳細**ウィンドウが開きます。 詳細については、[BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)を参照してください。
 
 3.  **BDC メソッドの詳細**ウィンドウは、メソッドのノードを展開し、展開、**パラメーター**ノード。
 
@@ -49,7 +49,7 @@ ms.locfileid: "56619954"
 
 7.  **BDC メソッドの詳細**ウィンドウを選択し、開き、パラメーターの方向に表示される一覧**で**、 **InOut**、 **アウト**、または**返す**します。
 
-     作成する型のメソッドを選択する方向についての詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+     作成する型のメソッドを選択する方向についての詳細については、[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
 8.  パラメーターの型記述子を変更します。 詳細については、「[方法 :パラメーターの型記述子を定義](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)します。
 

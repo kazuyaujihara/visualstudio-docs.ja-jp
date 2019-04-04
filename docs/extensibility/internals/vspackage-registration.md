@@ -24,7 +24,7 @@ Vspackage に通知する必要があります[!INCLUDE[vsprvs](../../code-quali
 > [!NOTE]
 >  自己登録を使用する VSPackage 開発時に許容されるです。 ただし、[!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)]パートナーは、セットアップの一環として自己登録を使用して製品を出荷できません。
 
- Windows インストーラー パッケージのレジストリ エントリは、レジストリの表に一般的に行われます。 レジストリの表にファイル拡張子を登録することもできます。 ただし、Windows インストーラーは、プログラム id (ProgId)、クラス、拡張機能、および動詞テーブルでの組み込みのサポートを提供します。 詳細については、次を参照してください。[データベース テーブル](/windows/desktop/Msi/database-tables)します。
+ Windows インストーラー パッケージのレジストリ エントリは、レジストリの表に一般的に行われます。 レジストリの表にファイル拡張子を登録することもできます。 ただし、Windows インストーラーは、プログラム id (ProgId)、クラス、拡張機能、および動詞テーブルでの組み込みのサポートを提供します。 詳細については、[データベース テーブル](/windows/desktop/Msi/database-tables)を参照してください。
 
  レジストリ エントリがサイド バイ サイドで選択した戦略に適切なコンポーネントに関連付けられていることを確認します。 たとえば、共有ファイルのレジストリ エントリはそのファイルの Windows インストーラー コンポーネントに関連付けられてになります。 同様に、バージョン固有のファイルのレジストリ エントリは、そのファイルのコンポーネントに関連付けられてする必要があります。 それ以外の場合、インストールまたはの 1 つのバージョンについては、VSPackage のアンインストール[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]他のバージョンで、VSPackage を中断する可能性があります。 詳細については、次を参照してください[をサポートしている複数のバージョンの Visual Studio。](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
 

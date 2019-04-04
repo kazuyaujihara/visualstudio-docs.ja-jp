@@ -58,7 +58,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: b5881542c78c5c055d1cbc26d54eb5e478a13124
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49254346"
@@ -72,7 +72,7 @@ ms.locfileid: "49254346"
   
  データセット オブジェクトは、ミニ データベースでは基本的には、メモリ内オブジェクトです。 DataTable と DataColumn の場合、DataRow オブジェクト格納し、開いている接続を管理することがなく 1 つまたは複数のデータベースからデータを変更にはが含まれています。 データセットは、更新プログラムを追跡し、アプリケーションが再接続されたときに、データベースに送信されるように、そのデータへの変更に関する情報を保持します。  
   
- データセットと関連するクラスは、.NET Framework クラス ライブラリの System.Data 名前空間で定義されます。 作成してコードで動的にデータセットを変更します。 その方法の詳細については、ADO.NET を参照してください。 このセクションのドキュメントでは、Visual Studio のデザイナーを使用してデータセットを操作する方法を示します。 1 つです: プログラムによって行われたデータセットを使用して、DataAdapter オブジェクトは、デザイナーによって行われたデータセットが、データベースと対話する TableAdapter オブジェクトを使用します。 プログラムでデータセットを作成する方法の詳細については、次を参照してください。 [Dataadapter と Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)します。  
+ データセットと関連するクラスは、.NET Framework クラス ライブラリの System.Data 名前空間で定義されます。 作成してコードで動的にデータセットを変更します。 その方法の詳細については、ADO.NET を参照してください。 このセクションのドキュメントでは、Visual Studio のデザイナーを使用してデータセットを操作する方法を示します。 1 つです: プログラムによって行われたデータセットを使用して、DataAdapter オブジェクトは、デザイナーによって行われたデータセットが、データベースと対話する TableAdapter オブジェクトを使用します。 プログラムでデータセットを作成する方法の詳細については、[Dataadapter と Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)を参照してください。  
   
  場合は、アプリケーションは、追加すると、または削除するのみ、データベースからデータを読み取るし、しない更新プログラムを実行する必要があります、汎用の List オブジェクトまたは別のコレクション オブジェクトにデータを取得する DataReader オブジェクトを使用して、通常はパフォーマンスが向上を取得できます。 データを表示する場合はデータにバインドするユーザー インターフェイスをコレクションにします。  
   
@@ -81,7 +81,7 @@ ms.locfileid: "49254346"
   
 -   使用して、**データ ソース**ウィンドウを 1 つまたは複数のデータ ソースから新しいデータセットを作成します。 使用して、**データセット デザイナー**データセットを構成し、そのプロパティを設定します。 たとえば、含めるには、データ ソースからどのテーブルとそれぞれのテーブルから列を指定する必要があります。 データセットが必要になるメモリの量を節約するために慎重に選択します。 詳細については、[データセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)に関するページを参照してください。  
   
--   外部キーが正しく処理されるように、テーブル間のリレーションシップを指定します。 詳細については、次を参照してください。 [Tableadapter を使用してデータセットを入力](../data-tools/fill-datasets-by-using-tableadapters.md)します。  
+-   外部キーが正しく処理されるように、テーブル間のリレーションシップを指定します。 詳細については、[Tableadapter を使用してデータセットを入力](../data-tools/fill-datasets-by-using-tableadapters.md)を参照してください。  
   
 -   使用して、 **TableAdapter 構成ウィザード**クエリや、データセットを作成するストアド プロシージャを指定し、どのようなデータベース操作 (更新、削除、およびなど) を実装します。 詳細については、次のトピックを参照してください。  
   
@@ -93,15 +93,15 @@ ms.locfileid: "49254346"
   
     -   [データをデータベースに保存する](../data-tools/save-data-back-to-the-database.md)  
   
--   クエリを実行し、データセットで、データを検索します。 詳細については、次を参照してください。[データセットを照会](../data-tools/query-datasets.md)します。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] により、 [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)内のデータを<xref:System.Data.DataSet>オブジェクト。 詳細については、「[LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)」を参照してください。  
+-   クエリを実行し、データセットで、データを検索します。 詳細については、[データセットを照会](../data-tools/query-datasets.md)を参照してください。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] により、 [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)内のデータを<xref:System.Data.DataSet>オブジェクト。 詳細については、「[LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)」を参照してください。  
   
--   使用して、**データソース**ウィンドウ ユーザー インターフェイス コントロールをデータセットまたはその個々 の列にバインドして、ユーザーが編集可能な列を指定します。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。  
+-   使用して、**データソース**ウィンドウ ユーザー インターフェイス コントロールをデータセットまたはその個々 の列にバインドして、ユーザーが編集可能な列を指定します。 詳細については、[Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)を参照してください。  
   
 ## <a name="datasets-and-n-tier-architecture"></a>データセットと N 層アーキテクチャ  
- N 層アプリケーションでのデータセットについては、次を参照してください。 [n 層アプリケーションでデータセットを操作](../data-tools/work-with-datasets-in-n-tier-applications.md)します。  
+ N 層アプリケーションでのデータセットについては、[n 層アプリケーションでデータセットを操作](../data-tools/work-with-datasets-in-n-tier-applications.md)を参照してください。  
   
 ## <a name="datasets-and-xml"></a>データセットおよび XML  
- XML との間に、データセットを変換する方法の詳細については、次を参照してください。[データセットにデータを読み取り XML](../data-tools/read-xml-data-into-a-dataset.md)と[データセットを XML として保存](../data-tools/save-a-dataset-as-xml.md)します。  
+ XML との間に、データセットを変換する方法の詳細については、[データセットにデータを読み取り XML](../data-tools/read-xml-data-into-a-dataset.md)と[データセットを XML として保存](../data-tools/save-a-dataset-as-xml.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)

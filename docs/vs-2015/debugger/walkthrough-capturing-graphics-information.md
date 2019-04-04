@@ -16,7 +16,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2f419e80cec27807ba3bd7ac98f7fb7108a49377
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51802136"
@@ -59,7 +59,7 @@ ms.locfileid: "51802136"
   
    アプリケーションにフォーカスを置いた状態で、 **PrintScreen**キーを押します。  
   
-  フレームに関する情報をキャプチャするたびに、グラフィックス診断は Direct3D イベントおよび関連付けられた状態を記録し、グラフィックス ログにデータを追加します。 グラフィックス ログは、グラフィックス診断のセッションごとに新しく作成されます。 グラフィックス ログについては、次を参照してください。[概要](../debugger/overview-of-visual-studio-graphics-diagnostics.md)します。  
+  フレームに関する情報をキャプチャするたびに、グラフィックス診断は Direct3D イベントおよび関連付けられた状態を記録し、グラフィックス ログにデータを追加します。 グラフィックス ログは、グラフィックス診断のセッションごとに新しく作成されます。 グラフィックス ログについては、[概要](../debugger/overview-of-visual-studio-graphics-diagnostics.md)を参照してください。  
   
 ## <a name="next-steps"></a>次の手順  
  このチュートリアルでは、手動でグラフィックス情報をキャプチャする方法を示しました。 次の手順では、次のオプションを検討します。  

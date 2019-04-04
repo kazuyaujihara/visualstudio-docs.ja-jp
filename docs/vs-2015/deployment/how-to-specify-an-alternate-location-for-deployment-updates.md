@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: c992feab2b31ffebf07dcea36bc5bd5cfddc6eab
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49228801"
@@ -34,7 +34,7 @@ ms.locfileid: "49228801"
 インストールすることができます、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] CD やファイル共有から最初にアプリケーションが、アプリケーションは、Web での定期的な更新プログラムを確認する必要があります。 その最初のインストール後に、Web からアプリケーションを更新できるように、配置マニフェストの更新プログラムの別の場所を指定できます。  
   
 > [!NOTE]
->  アプリケーションは、この機能を使用するには、ローカルにインストールするように構成する必要があります。 詳細については、次を参照してください。[チュートリアル: ClickOnce アプリケーションを手動で配置](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。 さらに、インストールする場合、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]原因別の場所を設定、ネットワークからアプリケーション[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]最初のインストールとすべての後続の更新の両方にその場所を使用します。 (たとえば、CD など) からアプリケーションをローカルでインストールすると、元のメディアを使用して、最初のインストールを実行し、すべての後続の更新が別の場所を使用しています。  
+>  アプリケーションは、この機能を使用するには、ローカルにインストールするように構成する必要があります。 詳細については、[チュートリアル: ClickOnce アプリケーションを手動で配置](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)を参照してください。 さらに、インストールする場合、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]原因別の場所を設定、ネットワークからアプリケーション[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]最初のインストールとすべての後続の更新の両方にその場所を使用します。 (たとえば、CD など) からアプリケーションをローカルでインストールすると、元のメディアを使用して、最初のインストールを実行し、すべての後続の更新が別の場所を使用しています。  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>MageUI.exe (Windows フォーム ベースのユーティリティ) を使用して更新プログラムの別の場所を指定します。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "49228801"
 3.  ファイルを保存します。  
   
     > [!NOTE]
-    >  Mage.exe を使用してファイルを再署名する必要があります。 詳細については、次を参照してください。[チュートリアル: ClickOnce アプリケーションを手動で配置](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。  
+    >  Mage.exe を使用してファイルを再署名する必要があります。 詳細については、[チュートリアル: ClickOnce アプリケーションを手動で配置](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)を参照してください。  
   
 ## <a name="net-framework-security"></a>.NET Framework セキュリティ  
  場合は、CD などのオフライン メディアから、アプリケーションをインストールして、コンピューターがオンラインで[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]で指定された URL はまず、`<deploymentProvider>`タグの最新のバージョンが更新プログラムの場所に含まれているかどうか、配置マニフェストで、アプリケーション。 その場合、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]の代わりに、最初のインストール ディレクトリから、そこから直接アプリケーションをインストールし、共通言語ランタイム (CLR) は、アプリケーションの信頼を決定します。 レベルを使用して`<deploymentProvider>`。 コンピューターがオフラインの場合、または`<deploymentProvider>`にアクセスできない[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]CD、および CLR からのインストールには、インストール ポイントに基づいて信頼が与えられます。 つまり CD インストールの場合、アプリケーションは完全な信頼を受け取ります。 すべての後続の更新では、その信頼レベルを継承します。  

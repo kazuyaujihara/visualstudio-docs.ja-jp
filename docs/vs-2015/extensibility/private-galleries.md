@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 910764df2f6a6e3069136bce64b77f267e473b9d
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51749957"
@@ -28,7 +28,7 @@ ms.locfileid: "51749957"
 
 コントロール、テンプレート、および投稿することで開発したツールを共有することができます、*プライベート ギャラリー*次のように、組織のイントラネット上。  
   
--   イントラネット上で適切に構成されている中央の場所 (リポジトリ) にフィード Atom (RSS) を作成します。 詳細については、次を参照してください。[方法: プライベート ギャラリーの Atom フィードを作成する](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)します。  
+-   イントラネット上で適切に構成されている中央の場所 (リポジトリ) にフィード Atom (RSS) を作成します。 詳細については、[方法: プライベート ギャラリーの Atom フィードを作成する](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)を参照してください。  
   
 -   プライベート ギャラリーを記述する .pkgdef ファイルを配布します。 プライベート ギャラリーを同時に多くのコンピューターに接続する管理者のためには、この構成をお勧めします。  
   
@@ -68,7 +68,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- 詳細については、次を参照してください。[方法: をプライベート ギャラリーで設定を使用してレジストリを管理](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)します。  
+ 詳細については、[方法: をプライベート ギャラリーで設定を使用してレジストリを管理](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)を参照してください。  
   
 ## <a name="installing-extensions-from-a-private-gallery"></a>プライベート ギャラリーから拡張機能のインストール  
  検索してプライベート ギャラリーから Visual Studio 拡張機能をインストールできます**拡張機能と更新**します。 次の手順を使用して、という名前のプライベート ギャラリー`My Gallery`します。  

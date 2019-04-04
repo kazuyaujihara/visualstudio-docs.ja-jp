@@ -22,7 +22,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: f18ace9a18eefd0758e581b83001b85c3f48a3da
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49244284"
@@ -35,9 +35,9 @@ Visual Studio 自体では、すべてのデータベース システムで内�
   
  SQL の開発用 Visual Studio にインストールされている SQL Server Data Tools があることを確認します。 をクリックして、**ビュー**メニュー。 SQL Server オブジェクト エクスプ ローラーが表示されない場合は、コントロール パネルに移動し、Visual Studio を変更します。 インストーラーで次のように選択します。 **Microsoft SQL Server Data Tools**します。  
   
- Azure Storage Api を使用している場合、運用環境にデプロイする準備ができるまでに料金を回避するために、ローカル コンピューターで開発中の Azure ストレージ エミュレーターをインストールします。 詳細については、次を参照してください。[開発とテストのため、Azure ストレージ エミュレーターを使用して](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/)します。  
+ Azure Storage Api を使用している場合、運用環境にデプロイする準備ができるまでに料金を回避するために、ローカル コンピューターで開発中の Azure ストレージ エミュレーターをインストールします。 詳細については、[開発とテストのため、Azure ストレージ エミュレーターを使用して](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/)を参照してください。  
   
- 次の一覧には、Visual Studio プロジェクトで使用できる最も一般的なデータベース システムの一部が含まれます。 一覧は完全ではありません。 Visual Studio のツールとの統合を有効にする ADO.NET データ プロバイダーを提供しているサード パーティ ベンダーの一覧は、次を参照してください。 [ADO.NET データ プロバイダー](https://msdn.microsoft.com/library/dd363565.aspx)します。  
+ 次の一覧には、Visual Studio プロジェクトで使用できる最も一般的なデータベース システムの一部が含まれます。 一覧は完全ではありません。 Visual Studio のツールとの統合を有効にする ADO.NET データ プロバイダーを提供しているサード パーティ ベンダーの一覧は、[ADO.NET データ プロバイダー](https://msdn.microsoft.com/library/dd363565.aspx)を参照してください。  
   
 ### <a name="microsoft-sql-server"></a>Microsoft SQL Server  
  SQL Server は、マイクロソフトの主力データベースを提供します。 SQL Server 2016 では、常識を覆すパフォーマンス、高度なセキュリティは、豊富で統合されたレポートと分析を提供します。 さまざま方法で使用できるように設計されたさまざまなエディションで出荷: 拡張性の高い、高パフォーマンスのビジネス分析は、1 台のコンピューターで使用するからです。 SQL Server Express は、再配布と埋め込み用に調整されている SQL Server の完全版です。  LocalDB は、簡略化された構成は必要ありませんし、アプリケーションのプロセスで実行している SQL Server Express のエディションです。 いずれかまたは両方の製品をダウンロードする[SQL Server Express のダウンロード ページ](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)します。    このセクションでは SQL の例の多くは、SQL Server LocalDB を使用します。 SQL Server Management Studio (SSMS) とは、Visual Studio の SQL Server Object Explorer で提供されているものより多くの機能を含むスタンドアロンのデータベース管理アプリケーションです。 SSMS は、前のリンクから取得できます。  

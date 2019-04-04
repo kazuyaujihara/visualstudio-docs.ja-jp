@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: erikre
 ms.openlocfilehash: acfbe34bc4a3d3c1139f8b1e821d9996fb8c712b
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49295738"
@@ -26,7 +26,7 @@ ms.locfileid: "49295738"
   
 -   キーを押して**F5**ワークフローのインスタンスの実行を開始するか、ブレークポイントにヒットした後に実行を続けます。  
   
--   リモート デバッグを使用します。 リモート デバッグの使用方法の詳細については、次を参照してください。[方法: リモート デバッグを有効にする](http://go.microsoft.com/fwlink/?LinkId=196257)します。  
+-   リモート デバッグを使用します。 リモート デバッグの使用方法の詳細については、[方法: リモート デバッグを有効にする](http://go.microsoft.com/fwlink/?LinkId=196257)を参照してください。  
   
     > [!NOTE]
     >  ワークフロー アプリケーションは、x86 を対象とする場合のアーキテクチャと、リモート デバッグを使用し、64 ビット オペレーティング システムを実行するマシンでホストされる[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]に変更は、ワークフロー アプリケーションは、リモート コンピューターまたはターゲットにインストール**任意の CPU**します。  

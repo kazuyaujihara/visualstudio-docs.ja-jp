@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 14fd1f950d50f2cb71e56fc8b1e75ff60f3da0ce
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49227921"
@@ -23,7 +23,7 @@ ms.locfileid: "49227921"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]で生成されたコードは、デザイナー サーフェイスでエンティティ クラスやその他のオブジェクトに変更を加えた場合に再生成されます。 このコードの再生成により、通常、生成されたコードに追加したコードは、デザイナーがコードを再生成するときに上書きされます。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]には、上書きされないコードを追加できる部分クラス ファイルの生成機能が用意されています。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]で生成されたコードに独自のコードを追加する例の 1 つとして、LINQ to SQL (エンティティ) クラスへのデータ検証の追加があります。 詳しくは、次を参照してください。[方法: エンティティ クラスに検証を追加](../data-tools/how-to-add-validation-to-entity-classes.md)します。  
+[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]で生成されたコードは、デザイナー サーフェイスでエンティティ クラスやその他のオブジェクトに変更を加えた場合に再生成されます。 このコードの再生成により、通常、生成されたコードに追加したコードは、デザイナーがコードを再生成するときに上書きされます。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]には、上書きされないコードを追加できる部分クラス ファイルの生成機能が用意されています。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]で生成されたコードに独自のコードを追加する例の 1 つとして、LINQ to SQL (エンティティ) クラスへのデータ検証の追加があります。 詳しくは、[方法: エンティティ クラスに検証を追加](../data-tools/how-to-add-validation-to-entity-classes.md)を参照してください。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

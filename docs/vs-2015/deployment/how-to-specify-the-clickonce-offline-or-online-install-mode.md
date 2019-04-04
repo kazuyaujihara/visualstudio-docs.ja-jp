@@ -26,7 +26,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: b243811f2c6c36266443cd34e0e37ddd01390f87
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49266071"
@@ -38,7 +38,7 @@ ms.locfileid: "49266071"
   
  `Install Mode`に設定することができます、**発行**のページ、**プロジェクト デザイナー**します。  
   
- **注**、`Install Mode`発行ウィザードを使用して設定できます。 詳細については、次を参照してください。[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)します。  
+ **注**、`Install Mode`発行ウィザードを使用して設定できます。 詳細については、[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)を参照してください。  
   
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>ClickOnce アプリケーションを使用できるようにするオンラインのみ  
   

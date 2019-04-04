@@ -40,7 +40,7 @@ ms.locfileid: "56621085"
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#1](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionmenu.vb#1)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#1](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionmenu.cs#1)]
 
- この例では、SharePoint プロジェクト サービスを使用して、メッセージを書き込む、**出力**ウィンドウ。 詳細については、次を参照してください。 [SharePoint プロジェクト サービスを使用して、](../sharepoint/using-the-sharepoint-project-service.md)します。
+ この例では、SharePoint プロジェクト サービスを使用して、メッセージを書き込む、**出力**ウィンドウ。 詳細については、[SharePoint プロジェクト サービスを使用して、](../sharepoint/using-the-sharepoint-project-service.md)を参照してください。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のアセンブリへの参照を含むクラス ライブラリ プロジェクトが必要です。
@@ -50,7 +50,7 @@ ms.locfileid: "56621085"
 -   System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>拡張機能をデプロイします。
- 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+ 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、[Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [方法: SharePoint プロジェクト項目の拡張機能を作成します。](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)

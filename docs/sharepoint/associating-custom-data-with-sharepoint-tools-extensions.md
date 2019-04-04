@@ -30,7 +30,7 @@ ms.locfileid: "56614078"
 
  SharePoint ツール拡張機能内のオブジェクトにカスタム データを追加すると、データは保持されません。 データは、オブジェクトの有効期間中にのみ使用できます。 オブジェクトはガベージ コレクションによって解放、後に、データが失われます。
 
- SharePoint プロジェクト システムの拡張機能は、拡張機能が読み込まれるが解決しない文字列データを保存することもできます。 詳細については、次を参照してください。 [SharePoint プロジェクト システムの拡張機能内のデータ保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)します。
+ SharePoint プロジェクト システムの拡張機能は、拡張機能が読み込まれるが解決しない文字列データを保存することもできます。 詳細については、[SharePoint プロジェクト システムの拡張機能内のデータ保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)を参照してください。
 
 ## <a name="objects-that-can-contain-custom-data"></a>カスタム データを含むことのできるオブジェクト
  カスタム データを SharePoint ツール オブジェクト モデルを実装する任意のオブジェクトを追加することができます、<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>インターフェイス。 このインターフェイスは、1 つのプロパティを定義します<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>、カスタム データ オブジェクトのコレクションです。 次の種類の実装<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:

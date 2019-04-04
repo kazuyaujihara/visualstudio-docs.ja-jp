@@ -28,7 +28,7 @@ VSPackage からには、エディターにメニュー コマンドなどの機
 ## <a name="create-an-extension-with-a-menu-command"></a>メニュー コマンドを使用して拡張機能を作成します。
  という名前のメニュー コマンドを配置する VSPackage を作成**追加 Adornment**上、**ツール**メニュー。
 
-1.  という名前の c# VSIX プロジェクトを作成する`MenuCommandTest`、カスタム コマンドの項目テンプレート名を追加および**AddAdornment**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
+1.  という名前の c# VSIX プロジェクトを作成する`MenuCommandTest`、カスタム コマンドの項目テンプレート名を追加および**AddAdornment**します。 詳細については、[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。
 
 2.  MenuCommandTest という名前のソリューションを開きます。 MenuCommandTestPackage ファイルがメニュー コマンドを作成し、に配置するコードを**ツール**メニュー。 この時点では、コマンドが発生すると、メッセージ ボックスを表示します。 後の手順では、コメントの表示要素を表示するときに変更する方法を示します。
 
@@ -52,7 +52,7 @@ VSPackage からには、エディターにメニュー コマンドなどの機
  VSPackage を MEF コンポーネントを追加するため、マニフェストで両方の種類のアセットを指定する必要があります。
 
 > [!NOTE]
->  MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
+>  MEF の詳細については、[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)を参照してください。
 
 ### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>VSPackage プロジェクトを MEF コンポーネントを参照するには
 

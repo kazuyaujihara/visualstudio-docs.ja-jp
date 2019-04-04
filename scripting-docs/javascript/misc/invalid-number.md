@@ -26,4 +26,4 @@ ms.locfileid: "56840446"
   
  JavaScript で無効な番号を使用しようとしました。  
   
- 有効な数値については、次を参照してください。 [Number オブジェクト](../../javascript/reference/number-object-javascript.md)します。
+ 有効な数値については、[Number オブジェクト](../../javascript/reference/number-object-javascript.md)を参照してください。

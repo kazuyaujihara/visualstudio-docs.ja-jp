@@ -55,7 +55,7 @@ ms.locfileid: "56633595"
 -   System.ComponentModel.Composition します。
 
 ## <a name="deploy-the-extension"></a>拡張機能をデプロイします。
- 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、次を参照してください。 [、SharePoint 用の拡張機能の展開ツールの Visual Studio で](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+ 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、[、SharePoint 用の拡張機能の展開ツールの Visual Studio で](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint のパッケージ化と配置を拡張します。](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

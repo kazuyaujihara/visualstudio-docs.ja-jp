@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: b3965e9600fa3ef6a091ae8e32439e8e4f420668
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49271714"
@@ -37,7 +37,7 @@ ms.locfileid: "49271714"
  `Publish Version`でプロパティを設定することができます、**発行**のページ、**プロジェクト デザイナー**します。  
   
 > [!NOTE]
->  自動的にインクリメントするプロジェクトのオプションがある、`Publish Version`プロパティごとにアプリケーションを発行する。 このオプションは既定で有効にします。 詳細については、次を参照してください。[方法: ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)します。  
+>  自動的にインクリメントするプロジェクトのオプションがある、`Publish Version`プロパティごとにアプリケーションを発行する。 このオプションは既定で有効にします。 詳細については、[方法: ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)を参照してください。  
   
 ### <a name="to-change-the-publish-version"></a>発行バージョンを変更するには  
   

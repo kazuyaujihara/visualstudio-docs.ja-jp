@@ -110,7 +110,7 @@ Visual Studio テンプレートを使用して (*.vstemplate*ファイル)、�
 
   次の 3 つのすべてのファイルが`ReplaceParameters`true で、パラメーター置換を有効に設定します。 *Program.cs*ファイルが`OpenInEditor`プロジェクトを作成するときに、コード エディターで開くファイルを true に設定します。
 
-  Visual Studio テンプレート スキーマの要素の詳細については、次を参照してください。、 [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)します。
+  Visual Studio テンプレート スキーマの要素の詳細については、、 [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)を参照してください。
 
 > [!NOTE]
 > プロジェクトには、複数の Visual Studio テンプレートがある場合は、すべてのテンプレートは、別のフォルダーには。 そのフォルダー内のすべてのファイルがあります、**ビルド アクション**設定**ZipProject**します。

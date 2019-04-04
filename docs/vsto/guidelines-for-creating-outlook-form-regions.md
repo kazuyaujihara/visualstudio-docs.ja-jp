@@ -33,7 +33,7 @@ ms.locfileid: "56643094"
 
 - [最適なアイコン サイズを使用して、](#UsingOptimal)します。
 
-  フォーム領域の詳細については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
+  フォーム領域の詳細については、[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)を参照してください。
 
   [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -54,9 +54,9 @@ ms.locfileid: "56643094"
 ##  <a name="ClassNames"></a> 型とメッセージ クラス名を理解します。
  Outlook アイテムの型名は、Outlook アイテムのメッセージ クラス名とは異なります。 たとえば、RSS アイテムの型名は `Microsoft.Office.Interop.Outlook.PostItem` です。 RSS アイテムのメッセージ クラス名は `IPM.Post.RSS` です。
 
- 型名は、コード内の Outlook アイテムを参照するときに使用します。 型名の一覧は、次を参照してください。[フォーム領域を Outlook メッセージ クラスに関連付ける](../vsto/associating-a-form-region-with-an-outlook-message-class.md)します。
+ 型名は、コード内の Outlook アイテムを参照するときに使用します。 型名の一覧は、[フォーム領域を Outlook メッセージ クラスに関連付ける](../vsto/associating-a-form-region-with-an-outlook-message-class.md)を参照してください。
 
- **新しい Outlook フォーム領域ウィザード** の Outlook アイテムのメッセージ クラス名は、アイテムをフォーム領域に関連付けるときに使用します。 有効なメッセージ クラス名の一覧は、次を参照してください。[フォーム領域を Outlook メッセージ クラスに関連付ける](../vsto/associating-a-form-region-with-an-outlook-message-class.md)します。
+ **新しい Outlook フォーム領域ウィザード** の Outlook アイテムのメッセージ クラス名は、アイテムをフォーム領域に関連付けるときに使用します。 有効なメッセージ クラス名の一覧は、[フォーム領域を Outlook メッセージ クラスに関連付ける](../vsto/associating-a-form-region-with-an-outlook-message-class.md)を参照してください。
 
 ##  <a name="ReadingPane"></a> 閲覧ウィンドウの隣接フォーム領域のデザイン
  Outlook の閲覧ウィンドウを使用すると、アイテムを開かずに、Outlook アイテムをプレビューできます。 閲覧ウィンドウは、読み取り専用に設計されています。 そのため、隣接フォーム領域に追加するテキスト ボックスなどの入力コントロールは、閲覧ウィンドウでアイテムとフォーム領域を開いたときに、期待どおりに動作しないことがあります。

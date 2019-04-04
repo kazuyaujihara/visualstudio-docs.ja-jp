@@ -26,7 +26,7 @@ ms.locfileid: "56614897"
 
  このプロセスの詳細については、次の手順。
 
-1. ときに、**保存**と**名前を付けて保存**コマンドが選択されている場合、環境を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービスのアクティブなドキュメント ウィンドウを確認して、どのような項目を保存するためです。 アクティブなドキュメント ウィンドウがわかったら、環境は、実行中の document テーブル内のドキュメントの階層のポインターと項目の識別子 (itemID) を検索します。 詳細については、次を参照してください。[を実行しているドキュメント テーブル](../../extensibility/internals/running-document-table.md)します。
+1. ときに、**保存**と**名前を付けて保存**コマンドが選択されている場合、環境を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービスのアクティブなドキュメント ウィンドウを確認して、どのような項目を保存するためです。 アクティブなドキュメント ウィンドウがわかったら、環境は、実行中の document テーブル内のドキュメントの階層のポインターと項目の識別子 (itemID) を検索します。 詳細については、[を実行しているドキュメント テーブル](../../extensibility/internals/running-document-table.md)を参照してください。
 
     ときに、**すべて保存**コマンドが選択されている場合、環境では、実行中の document テーブルの情報を使用して保存するすべての項目の一覧をコンパイルします。
 

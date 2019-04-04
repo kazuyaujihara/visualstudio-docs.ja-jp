@@ -15,7 +15,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 79ba397bf2dee5ae18b727830af87ae57415d885
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51738350"
@@ -36,7 +36,7 @@ ms.locfileid: "51738350"
   
 3.  プロジェクトをビルドし、デバッグを開始します。  
   
-     Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、次を参照してください。 [、実験用インスタンス](../extensibility/the-experimental-instance.md)します。  
+     Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、[、実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。  
   
 4.  実験用のインスタンスに移動**ビュー/その他の Windows**します。  
   

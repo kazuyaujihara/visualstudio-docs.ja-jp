@@ -16,7 +16,7 @@ caps.latest.revision: 12
 manager: douge
 ms.openlocfilehash: cc9bc58209fb176c20d7ad2a8a6fca565de6380e
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49260846"
@@ -26,7 +26,7 @@ VSPackage は、UI 要素、サービス、プロジェクト、エディター�
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の機能拡張アプリケーションを作成するには、まず VSPackage を作成します。 次に、メニュー コマンド、ツール ウィンドウ、ドキュメント ウィンドウ、またはその他のコードを追加して [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE を拡張できます。  
   
- VSPackage を使用するには、Visual Studio SDK をインストールする必要があります。 このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+ VSPackage を使用するには、Visual Studio SDK をインストールする必要があります。 このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [VSPackage](../extensibility/internals/vspackages.md)

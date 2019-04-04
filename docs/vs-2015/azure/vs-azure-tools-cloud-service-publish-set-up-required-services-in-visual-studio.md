@@ -13,7 +13,7 @@ ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: d7643d87f60b953b9c0928571036c7890e4d11f0
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002979"
@@ -71,7 +71,7 @@ Visual Studio を使用してから、クラウド サービスを作成した�
 
 Azure ポータルでクラウド サービスを作成した場合に同じ手順に従います[Visual Studio からストレージ アカウントの作成](#create-a-storage-account-from-visual-studio)しますが、既存のアカウントではなく新しいハブを作成します。 Visual Studio は、構成を更新します。
 
-構成する設定を手動でページを使用してプロパティ Visual Studio でクラウド サービス プロジェクトで、該当するロールの (ロールを右クリックして**プロパティ**)。 詳細については、次を参照してください。[ストレージ アカウントへの接続文字列を構成する](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account)します。
+構成する設定を手動でページを使用してプロパティ Visual Studio でクラウド サービス プロジェクトで、該当するロールの (ロールを右クリックして**プロパティ**)。 詳細については、[ストレージ アカウントへの接続文字列を構成する](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account)を参照してください。
 
 ### <a name="about-access-keys"></a>アクセス キーについて
 
@@ -81,4 +81,4 @@ Azure portal、Azure ストレージ サービスとも、アカウントのプ�
 
 ## <a name="next-steps"></a>次の手順
 
-Visual Studio から azure についての詳細については、アプリを発行しては、次を参照してください。 [Azure ツールを使用してクラウド サービスの発行](vs-azure-tools-publishing-a-cloud-service.md)します。
+Visual Studio から azure についての詳細については、アプリを発行しては、[Azure ツールを使用してクラウド サービスの発行](vs-azure-tools-publishing-a-cloud-service.md)を参照してください。

@@ -93,7 +93,7 @@ ms.locfileid: "56599481"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>複数のリボン項目をプロジェクトに追加します。
  1 つのプロジェクトに複数のリボン項目を追加することができます。 これは、次の 2 つのタスクのいずれかを実行する場合に便利です。
 
--   Outlook のリボンを作成*インスペクター*します。 詳細については、次を参照してください。 [Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)します。
+-   Outlook のリボンを作成*インスペクター*します。 詳細については、[Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)を参照してください。
 
     > [!NOTE]
     >  インスペクターは、ユーザーが電子メール メッセージを作成するなど、特定のタスクを実行するときに表示されるウィンドウです。

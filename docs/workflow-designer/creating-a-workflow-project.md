@@ -34,7 +34,7 @@ Visual Studio には、4 つの異なるワークフロー プロジェクト �
 
 - アクティビティ デザイナー ライブラリ
 
-これらのテンプレートにアクセスするには、まずインストール、 **Windows Workflow Foundation** Visual Studio のコンポーネント。 詳細については、次を参照してください。 [Windows Workflow Foundation のインストール](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)します。
+これらのテンプレートにアクセスするには、まずインストール、 **Windows Workflow Foundation** Visual Studio のコンポーネント。 詳細については、[Windows Workflow Foundation のインストール](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)を参照してください。
 
 1. インストールした後、 **Windows Workflow Foundation**コンポーネントで、**ファイル** > **新規** > **プロジェクト**.
 

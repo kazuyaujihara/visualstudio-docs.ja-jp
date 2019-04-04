@@ -17,7 +17,7 @@ caps.latest.revision: 33
 manager: douge
 ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49873423"
@@ -56,7 +56,7 @@ ms.locfileid: "49873423"
   
 - VSPackage で <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> を使用してコントロールを追加するか、<xref:System.Windows.Forms.AxHost> から派生したラッパー コントロールでコントロールをホストする必要があります。  
   
-   Visual Studio には、<xref:System.Windows.Forms.AxHost> から派生したコントロールに ActiveX コントロールを自動的にラッピングするための `Aximp.exe` ツールがあります。 詳細については、次を参照してください。 [Aximp.exe (Windows フォーム ActiveX コントロール インポーター)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0)します。  
+   Visual Studio には、<xref:System.Windows.Forms.AxHost> から派生したコントロールに ActiveX コントロールを自動的にラッピングするための `Aximp.exe` ツールがあります。 詳細については、[Aximp.exe (Windows フォーム ActiveX コントロール インポーター)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0)を参照してください。  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>、<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>、および <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> は、相互運用機能アセンブリを介して利用できる COM ベースのインターフェイスです。  
   

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56608072"
 ---
 # <a name="how-to-add-a-finder-method"></a>方法: Finder メソッドを追加します。
-  Web パーツまたは一覧内のエンティティの一覧を表示するビジネス データ接続 (BDC) サービスを有効にすることを作成する必要があります、 *Finder*メソッド。 Finder メソッドは、エンティティ インスタンスのコレクションを返す特殊なメソッドです。 詳細については、次を参照してください。[ビジネス データ接続モデルをデザイン](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+  Web パーツまたは一覧内のエンティティの一覧を表示するビジネス データ接続 (BDC) サービスを有効にすることを作成する必要があります、 *Finder*メソッド。 Finder メソッドは、エンティティ インスタンスのコレクションを返す特殊なメソッドです。 詳細については、[ビジネス データ接続モデルをデザイン](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
 ### <a name="to-create-a-finder-method"></a>Finder メソッドを作成するには
 
@@ -46,7 +46,7 @@ ms.locfileid: "56608072"
    > [!NOTE]
    >  エンティティの Specificfinder メソッドを追加した場合、この手順を実行する必要はありません。 Visual Studio では、Specificfinder メソッドで定義した型記述子を使用します。
 
-5. **ソリューション エクスプ ローラー**エンティティの場合に生成されたサービスのコード ファイルのショートカット メニューを開き、選択し、**コードの表示**します。 サービス コード ファイルの詳細については、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。
+5. **ソリューション エクスプ ローラー**エンティティの場合に生成されたサービスのコード ファイルのショートカット メニューを開き、選択し、**コードの表示**します。 サービス コード ファイルの詳細については、[business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)を参照してください。
 
 6. Finder メソッドにコードを追加します。 このコードは次のタスクを実行します。
 

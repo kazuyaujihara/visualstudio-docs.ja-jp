@@ -13,7 +13,7 @@ ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: ff8c3dd927e81b9e131242a9a6631a8297046a6e
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002872"
@@ -43,7 +43,7 @@ WCF Data Services がに基づいて、 [Open Data Protocol](http://go.microsoft
 
 * 論理演算子を使用すると、プロパティに値を比較できます。 動的な値のプロパティと比較することはできませんに注意してください。式の一方の側は、定数でなければなりません。
 * フィルター文字列のすべての部分は大文字小文字を区別します。
-* 有効な結果を返すフィルターの順序でプロパティと同じデータ型の定数値がある必要があります。 サポートされているプロパティの種類の詳細については、次を参照してください。 [Table サービス データ モデルについて](http://go.microsoft.com/fwlink/p/?LinkId=400448)します。
+* 有効な結果を返すフィルターの順序でプロパティと同じデータ型の定数値がある必要があります。 サポートされているプロパティの種類の詳細については、[Table サービス データ モデルについて](http://go.microsoft.com/fwlink/p/?LinkId=400448)を参照してください。
 
 ## <a name="filtering-on-string-properties"></a>文字列プロパティのフィルター処理
 文字列プロパティでフィルター処理するときに、文字列定数を単一引用符で囲みます。

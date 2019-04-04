@@ -16,7 +16,7 @@ caps.latest.revision: 26
 manager: douge
 ms.openlocfilehash: 5d8badf198d86e9643dbc6e98683dd3437d72f64
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49232194"
@@ -32,7 +32,7 @@ ms.locfileid: "49232194"
 > [!NOTE]
 >  <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> と <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> の各インターフェイスでは、データとビューを分離できます。 ただし、Visual Studio ではこの機能がサポートされておらず、これらのインターフェイスは、ドキュメント ビュー オブジェクトを表現するためにのみ使用されます。  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> サービスを使用するエディターでは、 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> サービスによって実装される <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> インターフェイスのメソッドを呼び出すことで、メニューとツール バーとコマンドを統合できます。 エディターでは、選択の追跡や元に戻す操作の管理など、Visual Studio の他の機能も提供できます。 詳細については、次を参照してください。[を作成するカスタム エディターとデザイナー](../extensibility/creating-custom-editors-and-designers.md)します。  
+ <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> サービスを使用するエディターでは、 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> サービスによって実装される <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> インターフェイスのメソッドを呼び出すことで、メニューとツール バーとコマンドを統合できます。 エディターでは、選択の追跡や元に戻す操作の管理など、Visual Studio の他の機能も提供できます。 詳細については、[を作成するカスタム エディターとデザイナー](../extensibility/creating-custom-editors-and-designers.md)を参照してください。  
   
 ## <a name="objects-and-interfaces-used"></a>使用されるオブジェクトとインターフェイス  
  次の図に、インプレース アクティブ化の作成に使用されるオブジェクトを示します。  
@@ -41,7 +41,7 @@ ms.locfileid: "49232194"
 インプレース アクティブ化エディター  
   
 > [!NOTE]
->  この図のオブジェクトのうち、標準エディターの作成に必要なのは `CYourEditorFactory` オブジェクトのみです。 カスタム エディターを作成する場合は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> を実装する必要はありません。エディター独自のプライベートの永続化メカニズムを備えることになる可能性があるからです。 詳細については、次を参照してください。[を作成するカスタム エディターとデザイナー](../extensibility/creating-custom-editors-and-designers.md)します。  
+>  この図のオブジェクトのうち、標準エディターの作成に必要なのは `CYourEditorFactory` オブジェクトのみです。 カスタム エディターを作成する場合は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> を実装する必要はありません。エディター独自のプライベートの永続化メカニズムを備えることになる可能性があるからです。 詳細については、[を作成するカスタム エディターとデザイナー](../extensibility/creating-custom-editors-and-designers.md)を参照してください。  
   
  インプレース アクティブ化エディターを作成するために実装されているすべてのインターフェイスが、単一の `CYourEditorDocument` オブジェクトに示されていますが、この構成ではドキュメント データを単一のビューにのみ表示できます。 ドキュメント データを複数のビューに表示する方法の詳細については、「 [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)」を参照してください。  
   

@@ -28,7 +28,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 7e84224d4ebd066891d4fdf90b4ad488a79cc0b1
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49183639"
@@ -70,7 +70,7 @@ ms.locfileid: "49183639"
 5.  **コントロールに関連付けられている**ボックスで、選択したデータの種類、使用可能にする各コントロールを選択するか、一覧から削除するすべてのコントロールの選択を解除します。  
   
     > [!NOTE]
-    >  を選択するコントロールが表示されないかどうか、**コントロールに関連付けられている**ボックスで、一覧に、コントロールを追加する必要があります。 詳細については、次を参照してください。[データ型のリストの関連付けられているコントロールにコントロールを追加](#addingcontrols)します。  
+    >  を選択するコントロールが表示されないかどうか、**コントロールに関連付けられている**ボックスで、一覧に、コントロールを追加する必要があります。 詳細については、[データ型のリストの関連付けられているコントロールにコントロールを追加](#addingcontrols)を参照してください。  
   
 6.  **[OK]** をクリックします。  
   
@@ -93,7 +93,7 @@ ms.locfileid: "49183639"
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|など、データのリスト (またはテーブル) を表示するコントロールのこの属性の実装を<xref:System.Windows.Forms.DataGridView>します。|  
     |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|などのデータが 1 つの列またはプロパティを表示する必要があるのもリスト (またはテーブル) を表示するコントロールのこの属性の実装を<xref:System.Windows.Forms.ComboBox>します。|  
   
-2.  Windows フォームでは、上、**オプション** ダイアログ ボックスで、**データ UI カスタマイズ**ページ。 または、WPF では、開く、**コントロールのバインドのカスタマイズ** ダイアログ ボックス。 詳細については、次を参照してください。[データ型のバインド可能なコントロールの一覧をカスタマイズする](#customizinglist)します。  
+2.  Windows フォームでは、上、**オプション** ダイアログ ボックスで、**データ UI カスタマイズ**ページ。 または、WPF では、開く、**コントロールのバインドのカスタマイズ** ダイアログ ボックス。 詳細については、[データ型のバインド可能なコントロールの一覧をカスタマイズする](#customizinglist)を参照してください。  
   
 3.  **コントロールに関連付けられている**ボックスに追加したコントロール、**ツールボックス**が表示されます。  
   

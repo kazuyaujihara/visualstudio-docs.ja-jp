@@ -33,7 +33,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 216a96a6702bfabc57d235144bf4a6cc05df4224
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51721141"
@@ -51,7 +51,7 @@ ms.locfileid: "51721141"
   
   ランタイム エラー チェックをカスタマイズするには、次の方法があります。  
   
-- ランタイム エラー レポート関数の記述 詳細については、次を参照してください。[方法: 実行時エラー レポート関数を記述](../debugger/how-to-write-a-run-time-error-reporting-function.md)します。  
+- ランタイム エラー レポート関数の記述 詳細については、[方法: 実行時エラー レポート関数を記述](../debugger/how-to-write-a-run-time-error-reporting-function.md)を参照してください。  
   
 - エラー メッセージ出力先のカスタマイズ  
   
@@ -63,7 +63,7 @@ ms.locfileid: "51721141"
  カスタムのレポート関数を使用している場合、エラーとレポートの種類を関連付けるには、`_RTC_SetErrorType` を使用します。  
   
 ## <a name="query-for-information-about-run-time-checks"></a>ランタイム チェック情報のクエリ  
- `_RTC_NumErrors` は、ランタイム エラー チェックで検出されたエラーの種類の数を返します。 各エラーの簡単な説明を取得するには、0 ～ `_RTC_NumErrors` の戻り値をループし、各ループで `_RTC_GetErrDesc` に反復値を渡すことができます。 詳細については、次を参照してください。 [_RTC_NumErrors](http://msdn.microsoft.com/library/7e82adae-38e2-4f8b-bc0b-37bda8109fd1)と[_RTC_GetErrDesc](http://msdn.microsoft.com/library/7994ec2b-5488-4fd4-806d-a166c9a9f927)します。  
+ `_RTC_NumErrors` は、ランタイム エラー チェックで検出されたエラーの種類の数を返します。 各エラーの簡単な説明を取得するには、0 ～ `_RTC_NumErrors` の戻り値をループし、各ループで `_RTC_GetErrDesc` に反復値を渡すことができます。 詳細については、[_RTC_NumErrors](http://msdn.microsoft.com/library/7e82adae-38e2-4f8b-bc0b-37bda8109fd1)と[_RTC_GetErrDesc](http://msdn.microsoft.com/library/7994ec2b-5488-4fd4-806d-a166c9a9f927)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: ネイティブ ランタイム チェックを使用](../debugger/how-to-use-native-run-time-checks.md)   

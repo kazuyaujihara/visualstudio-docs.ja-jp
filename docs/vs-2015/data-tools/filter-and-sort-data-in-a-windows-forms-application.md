@@ -27,7 +27,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: d1ea216e20045cd7b8cfba3c70a3126a673519be
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49175592"
@@ -41,7 +41,7 @@ ms.locfileid: "49175592"
  データを並べ替えるには、<xref:System.Windows.Forms.BindingSource.Sort%2A> プロパティに並べ替える列の名前を設定し、降順の場合は末尾に `DESC` を、昇順の場合は末尾に `ASC` を付けます。  
   
 > [!NOTE]
->  アプリケーションを使用しない場合<xref:System.Windows.Forms.BindingSource>フィルター処理できる、コンポーネントを使用してデータを並べ替えると<xref:System.Data.DataView>オブジェクト。 詳細については、次を参照してください。 [Dataview](http://msdn.microsoft.com/library/0fe5dfa2-c1cd-435f-90b6-b4dd2e3ef34b)します。  
+>  アプリケーションを使用しない場合<xref:System.Windows.Forms.BindingSource>フィルター処理できる、コンポーネントを使用してデータを並べ替えると<xref:System.Data.DataView>オブジェクト。 詳細については、[Dataview](http://msdn.microsoft.com/library/0fe5dfa2-c1cd-435f-90b6-b4dd2e3ef34b)を参照してください。  
   
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>BindingSource コンポーネントを使用してデータをフィルター処理するには  
   
