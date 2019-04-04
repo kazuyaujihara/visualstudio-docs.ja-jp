@@ -86,7 +86,7 @@ ms.locfileid: "58195152"
 
 %サブスクライバー名% 様
 
-Visual Studio サブスクリプションが割り当てられました。 https://my.visualstudio.com にアクセスして、%ディレクトリ アドレス% アドレスを使用してログインし、サブスクリプションをアクティブ化してアクセスしてください。
+Visual Studio サブスクリプションが割り当てられました。  [https://my.visualstudio.com](https://my.visualstudio.com) にアクセスして、%ディレクトリ アドレス% アドレスを使用してログインし、サブスクリプションをアクティブ化してアクセスしてください。
 
 問題がある場合は、サポート チームにお問い合わせください (https://visualstudio.microsoft.com/subscriptions/support/)。
 
