@@ -1,25 +1,20 @@
 ---
 title: 'チュートリアル: 頂点の網かけによるオブジェクトの不足 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ecff22d99eb995f0dbe70e93783460f4343d74f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745935"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977279"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>チュートリアル: 頂点の網かけによるオブジェクトの不足
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +109,7 @@ ms.locfileid: "51745935"
    > [!TIP]
    >  同時にアプリのデバッグを行っている場合、この位置にブレークポイントを設定して次のフレームが表示されるとヒットするようにできます。 これで、定数バッファーが指定されたときに `m_marbleConstantBufferData` のメンバーを調べ、 `projection` メンバーの値がすべてゼロに設定されていることを確認できます。  
   
-   定数バッファーが指定されている場所を検索し、その値が元の変数を検出した後に`m_marbleConstantBufferData`、場所を確認する次の手順では、`m_marbleConstantBufferData.projection`メンバーすべてゼロに設定されます。 **[すべての参照の検索]** を使用して、 `m_marbleConstantBufferData.projection`の値を変更するコードをすばやくスキャンできます。  
+   定数バッファーが指定されている場所を確認し、その値が変数 `m_marbleConstantBufferData` から取得されたことがわかったら、次の手順では、`m_marbleConstantBufferData.projection` メンバーがすべてゼロに設定されている場所を検索します。 **[すべての参照の検索]** を使用して、 `m_marbleConstantBufferData.projection`の値を変更するコードをすばやくスキャンできます。  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>アプリのソース コード内で projection メンバーが設定されている場所を検索するには  
   
@@ -133,6 +128,3 @@ ms.locfileid: "51745935"
    コードを修正したら、それをリビルドし、もう一度アプリを実行してレンダリングの問題が解決されたかどうかを確認します。  
   
    ![オブジェクトが現在が表示されます。](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "gfx_diag_demo_missing_object_shader_resolution")
-
-
-
