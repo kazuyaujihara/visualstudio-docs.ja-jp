@@ -1,25 +1,20 @@
 ---
 title: 0 の x-2 x-4 の msaa バリアント |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8e661823a07945c22679832dc716ad2f25f4f6aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793777"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976255"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA バリアント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51793777"
   
 - デバイスは、要求されたレンダー ターゲット形式 (D3D11_TEXTURE2D_DESC::Format member) に対して、要求された sample count (0、2、または 4) および sample quality (0) を、`ID3D11Device::CheckMultisampleQualityLevels` で定義されているとおりにサポートします。  
   
-  D3D11_TEXTURE2D_DESC::BindFlags メンバーが D3D_BIND_SHADER_RESOUCE または D3D11_BIND_UNORDERED_ACCESS フラグを設定した場合、2 つのバージョンのテクスチャが作成されます。最初のバージョンは、レンダー ターゲットとして使用するためにフラグがクリアされています。もうひとつのバージョンは非 MSAA テクスチャであり、最初のバージョンのリゾルブ バッファーとして機能するよう、フラグがそのまま保持されています。 MSAA テクスチャをシェーダー リソースとして使用すること、または非順序アクセスに対して使用することは妥当ではない (たとえば、MSAA テクスチャで機能するシェーダーは、非 MSAA テクスチャを予期しているため間違った結果が生成される) と思われるため、このしくみは必要です。 バリアントがセカンダリ非 MSAA テクスチャを作成すると、MSAA レンダー ターゲットがデバイス コンテキストから設定解除されるたびに、コンテキストが非 MSAA テクスチャに解決されます。 同様に、MSAA レンダー ターゲットをシェーダー リソースとしてバインドしなければならない場合、または非順序アクセス ビューで使用する場合は、解決された非 MSAA テクスチャが代わりにバインドされます。  
+  D3D11_TEXTURE2D_DESC::BindFlags メンバーが D3D_BIND_SHADER_RESOURCE または D3D11_BIND_UNORDERED_ACCESS フラグを設定した場合、2 つのバージョンのテクスチャが作成されます。最初のバージョンは、レンダー ターゲットとして使用するためにフラグがクリアされています。もう 1 つのバージョンは非 MSAA テクスチャであり、最初のバージョンのリゾルブ バッファーとして機能するよう、フラグがそのまま保持されています。 MSAA テクスチャをシェーダー リソースとして使用すること、または非順序アクセスに対して使用することは妥当ではない (たとえば、MSAA テクスチャで機能するシェーダーは、非 MSAA テクスチャを予期しているため間違った結果が生成される) と思われるため、このしくみは必要です。 バリアントがセカンダリ非 MSAA テクスチャを作成すると、MSAA レンダー ターゲットがデバイス コンテキストから設定解除されるたびに、コンテキストが非 MSAA テクスチャに解決されます。 同様に、MSAA レンダー ターゲットをシェーダー リソースとしてバインドしなければならない場合、または順序指定されていないアクセス ビューで使用する場合は、解決された非 MSAA テクスチャが代わりにバインドされます。  
   
   また、これらのバリアントは `IDXGIFactory::CreateSwapChain`、`IDXGIFactory2::CreateSwapChainForHwnd`、`IDXGIFactory2::CreateSwapChainForCoreWindow`、`IDXGIFactory2::CreateSwapChainForComposition`、および `ID3D11CreateDeviceAndSwapChain` を使用して作成したすべてのスワップ チェーン上の MSAA 設定をオーバーライドします。  
   
@@ -83,6 +78,3 @@ chain_description.SampleDesc.Quality = 0;
   
 // Call IDXGISwapChain::CreateSwapChain or D3D11CreateDeviceAndSwapChain, etc.  
 ```
-
-
-

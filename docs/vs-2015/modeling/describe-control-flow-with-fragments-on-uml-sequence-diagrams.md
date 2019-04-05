@@ -1,12 +1,9 @@
 ---
 title: UML シーケンス図のフラグメントを使用した制御フローを説明 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.combinedfragment.interactionoperand
 - vs.teamarch.sequencediagram.combinedfragment
@@ -19,13 +16,13 @@ ms.assetid: efcc0949-be7e-4cf4-99ef-47c36b3803ae
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4ab4c65e554e9eef75a1761719ce19f3312e07ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727646"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975322"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>UML シーケンス図のフラグメントを使用した制御フローの記述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ UML シーケンス図では、 *結合フラグメント* を使用して、ル
  結合フラグメントは、1 つまたは複数の *相互作用オペランド*で構成されます。そのそれぞれには、1 つまたは複数のメッセージ、相互作用使用、または結合フラグメントが含まれます。  
   
 > [!NOTE]
->  このトピックでは、シーケンス図におけるフラグメントについて説明します。 UML シーケンス図を読み取る方法の詳細については、[UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)を参照してください。 UML アクティビティ図を描画する方法の詳細については、「 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)」を参照してください。  
+>  このトピックでは、シーケンス図におけるフラグメントについて説明します。 UML シーケンス図を読み取る方法の詳細については、次を参照してください。 [UML シーケンス図。Reference](../modeling/uml-sequence-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。 UML シーケンス図を描画する方法の詳細については、次を参照してください。 [UML シーケンス図。ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
   
  ![結合フラグメントでは 2 つの相互作用オペランドを](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -129,14 +126,11 @@ UML シーケンス図では、 *結合フラグメント* を使用して、ル
 |フラグメントの種類|説明|  
 |-------------------|-----------------|  
 |**検討してください。**|このフラグメントで記述するメッセージのリストを指定します。 他のメッセージが実行中のシステムで発生することがありますが、この記述の目的にとっては重要ではありません。<br /><br /> **Messages** プロパティにリストを入力します。|  
-|**無視します。**|このフラグメントで記述しないメッセージの一覧。 これらのメッセージが実行中のシステムで発生することがありますが、この記述の目的にとっては重要ではありません。<br /><br /> **Messages** プロパティにリストを入力します。|  
+|**無視**|このフラグメントで記述しないメッセージの一覧。 これらのメッセージが実行中のシステムで発生することがありますが、この記述の目的にとっては重要ではありません。<br /><br /> **Messages** プロパティにリストを入力します。|  
 |**Assert**|オペランド フラグメントは、有効なシーケンスのみを指定します。 通常は、Consider フラグメントまたは Ignore フラグメント内で使用します。|  
-|**neg**|このフラグメントに示されたシーケンスが発生しないことを示します。 通常は、Consider フラグメントまたは Ignore フラグメント内で使用します。|  
+|**Neg**|このフラグメントに示されたシーケンスが発生しないことを示します。 通常は、Consider フラグメントまたは Ignore フラグメント内で使用します。|  
   
 ## <a name="see-also"></a>関連項目  
  [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)   
- [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML シーケンス図: 参照](../modeling/uml-sequence-diagrams-reference.md)   
  [UML モデルおよびダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)
-
-
-

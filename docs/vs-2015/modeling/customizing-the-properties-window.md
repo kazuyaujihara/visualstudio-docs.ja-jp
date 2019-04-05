@@ -1,25 +1,22 @@
 ---
 title: プロパティ ウィンドウのカスタマイズ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 ms.assetid: b6658de5-4e85-4628-93b2-5cc12f63d25b
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845746"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975321"
 ---
 # <a name="customizing-the-properties-window"></a>プロパティ ウィンドウのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ ms.locfileid: "49845746"
 ## <a name="names-descriptions-and-categories"></a>名前、説明、およびカテゴリ  
  **名前と表示名**します。 ドメイン プロパティの定義では、プロパティの表示名は、[プロパティ] ウィンドウで実行時に表示される名前です。 これに対し、名前は、プロパティを更新するプログラム コードを記述するときに使用されます。 名前は、適切な CLR の英数字名をする必要がありますが、表示名にスペースを含めることができます。  
   
- DSL 定義で、プロパティの名前を設定するとその表示名は自動的に名前のコピーに設定します。 "FuelGauge"など、pascal 形式の大文字と小文字名を記述する場合、表示名が自動的にスペースを含める:「燃料計」。 ただし、別の値を表示名を明示的に設定できます。  
+ DSL 定義で、プロパティの名前を設定するとその表示名は自動的に名前のコピーに設定します。 "FuelGauge"など、pascal 形式の大文字と小文字名を記述する場合、表示名は自動的にスペースを含めます。「燃料計」。 ただし、別の値を表示名を明示的に設定できます。  
   
  **説明**です。 ドメイン プロパティの説明は、2 つの場所が表示されます。  
   
@@ -46,7 +43,7 @@ ms.locfileid: "49845746"
   
  図形に公開することができます、 **FillColor**、 **OutlineColor**、 **TextColor**、 **OutlineDashStyle**、 **OutlineThickness**と**FillGradientMode**プロパティ。 コネクタで公開することができます、**色**`,`**TextColor**、 **DashStyle**、および**太さ**プロパティ。 ダイアグラムで公開することができます、 **FillColor**と**TextColor**プロパティ。  
   
-## <a name="forwarding-displaying-properties-of-related-elements"></a>転送: 関連要素のプロパティを表示します。  
+## <a name="forwarding-displaying-properties-of-related-elements"></a>転送するには。関連する要素のプロパティを表示します。  
  DSL のユーザーは、モデル内の要素を選択するときに、[プロパティ] ウィンドウでその要素のプロパティが表示されます。 ただし、指定された関連する要素のプロパティを表示することもできます。 これは、連携する要素のグループを定義している場合に便利です。 たとえば、主な要素と省略可能なプラグインの要素を定義する可能性があります。 主な要素を図形にマップされますがない場合は、すべてのプロパティを参照してくださいか 1 つの要素上にいるかのように便利です。  
   
  この効果の名前は*プロパティ転送*、いくつかのケースでは自動的に実行するとします。 それ以外の場合は、プロパティのドメイン型記述子を定義することで転送を実現できます。  
@@ -86,7 +83,7 @@ ms.locfileid: "49845746"
   
 4.  新しいプロパティのパスを選択し、**プロパティ**ウィンドウで、設定**プロパティへのパス**適切なモデル要素のパスにします。  
   
-     ツリー ビュー内のパスを編集するには、このプロパティの右側の下矢印をクリックします。 ドメイン パスの詳細については、[ドメイン パス構文](../modeling/domain-path-syntax.md)を参照してください。 編集したときに、パスのようになります**BookReferencesAuthor.Author/!作成者**します。  
+     ツリー ビュー内のパスを編集するには、このプロパティの右側の下矢印をクリックします。 ドメイン パスの詳細については、次を参照してください。[ドメイン パス構文](../modeling/domain-path-syntax.md)します。 編集したときに、パスのようになります**BookReferencesAuthor.Author/!作成者**します。  
   
 5.  設定**プロパティ**を**名前**のドメイン プロパティ**作成者**します。  
   
@@ -187,7 +184,7 @@ ms.locfileid: "49845746"
 > [!NOTE]
 >  内の別のコード ファイルにコードを追加、 **Dsl**プロジェクト。  
   
- 例えば:  
+ 例:  
   
 ```  
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor  
@@ -227,7 +224,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
   
 ```  
   
- <xref:System.ComponentModel.TypeConverter> から派生するクラスを定義します。 別のファイルにコードを追加、 **Dsl**プロジェクト。 例えば:  
+ <xref:System.ComponentModel.TypeConverter> から派生するクラスを定義します。 別のファイルにコードを追加、 **Dsl**プロジェクト。 例:  
   
 ```csharp  
 /// <summary>  
@@ -323,6 +320,3 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   
 ## <a name="see-also"></a>関連項目  
  [プログラム コードにおけるモデル内の移動およびモデルの更新](../modeling/navigating-and-updating-a-model-in-program-code.md)
-
-
-

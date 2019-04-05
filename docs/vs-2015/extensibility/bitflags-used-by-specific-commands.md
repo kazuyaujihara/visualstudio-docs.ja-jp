@@ -1,26 +1,21 @@
 ---
 title: 特定のコマンドで使用されるビットフラグ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e8ea658e62ca2bcd3ca4d423f00a94f83f2a2086
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798184"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975145"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定のコマンドで使用されるビットフラグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +25,14 @@ ms.locfileid: "51798184"
 ## <a name="checked-out-flag"></a>チェック アウト フラグ  
  いずれかのこのフラグを設定することができます、 [SccAdd](../extensibility/sccadd-function.md)または[SccCheckin](../extensibility/scccheckin-function.md)します。  
   
-|フラグ|値|説明|  
+|フラグ|[値]|説明|  
 |----------|-----------|-----------------|  
 |`SCC_KEEP_CHECKEDOUT`|0x1000|ファイルをチェック アウトしてください。|  
   
 ## <a name="add-flags"></a>フラグを追加します。  
  これらのフラグを使って、 [SccAdd](../extensibility/sccadd-function.md)します。  
   
-|フラグ|値|説明|  
+|フラグ|[値]|説明|  
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|ソース管理プラグインは、ファイルがテキストかバイナリかどうかを自動的に検出するために必要です。|  
 |`SCC_FILETYPE_TEXT`|0x01|ファイルの種類は、テキストです。|  
@@ -47,10 +42,10 @@ ms.locfileid: "51798184"
 ## <a name="diff-flags"></a>Diff フラグ  
  [SccDiff](../extensibility/sccdiff-function.md)これらのフラグを使用して、diff 操作のスコープを定義します。 `SCC_DIFF_QD_xxx`フラグが相互に排他的です。 いずれかのファイルが指定されている場合、視覚的なフィードバックはありませんを指定します。 "クイック diff"で (QD) プラグインによって決定されないファイルが異なる場合のみです。 これらのフラグを指定されていない場合、"visual diff"が行われます。詳細なファイルの相違点が計算され、表示されます。 要求された QD がサポートされていない場合、[次へ] の最適なものには、プラグインのことが移動します。 たとえば、IDE、チェックサムを要求するプラグインがサポートしていない場合は、プラグインは完全な内容を確認 (まだより速く視覚的に表示) します。  
   
-|フラグ|値|説明|  
+|フラグ|[値]|説明|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|大文字小文字の違いを無視します。|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|空白の相違を無視します。 **注:** 、`SCC_DIFF_IGNORECASE`と`SCC_DIFF_IGNORESPACE`フラグは省略可能なビットフラグします。|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|空白の相違を無視します。 **注:**`SCC_DIFF_IGNORECASE`と`SCC_DIFF_IGNORESPACE`フラグは省略可能なビットフラグします。|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|ファイルの内容全体を比較することによって QD します。|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|チェックサムによって QD します。|  
 |`SCC_DIFF_QD_TIME`|0x0040|ファイルの日付/時刻スタンプによって QD します。|  
@@ -59,7 +54,7 @@ ms.locfileid: "51798184"
 ## <a name="populatelist-flag"></a>PopulateList フラグ  
  このフラグを使用して、 [SccPopulateList](../extensibility/sccpopulatelist-function.md)で、`fOptions`パラメーター。  
   
-|フラグ|値|説明|  
+|フラグ|[値]|説明|  
 |----------|-----------|-----------------|  
 |`SCC_PL_DIR`|0x00000001L|IDE がファイルではなく、ディレクトリを渡すことです。|  
   
@@ -83,15 +78,15 @@ ms.locfileid: "51798184"
 ## <a name="get-flags"></a>フラグを取得します。  
  これらのフラグを使って、 [SccGet](../extensibility/sccget-function.md)と[SccCheckout](../extensibility/scccheckout-function.md)します。  
   
-|フラグ|値|説明|  
+|フラグ|[値]|説明|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|IDE のディレクトリを渡すことは、ファイルではありません。 これらのディレクトリ内のすべてのファイルを取得します。|  
-|`SCC_GET_RECURSIVE`|0x00000002L|IDE がディレクトリを渡す: これらのディレクトリとそのすべてのサブディレクトリを取得します。|  
+|`SCC_GET_ALL`|0x00000001L|IDE は、ディレクトリ、ファイルではなく渡すことは。これらのディレクトリ内のすべてのファイルを取得します。|  
+|`SCC_GET_RECURSIVE`|0x00000002L|IDE では、ディレクトリを渡します。これらのディレクトリとそのすべてのサブディレクトリを取得します。|  
   
 ## <a name="noption-values"></a>nOption 値  
  これらのフラグを使って、 [SccSetOption](../extensibility/sccsetoption-function.md)で、`nOption`パラメーター。  
   
-|フラグ|値|説明|  
+|フラグ|[値]|説明|  
 |----------|-----------|-----------------|  
 |`SCC_OPT_EVENTQUEUE`|0x00000001L|イベント キューの状態を設定します。|  
 |`SCC_OPT_USERDATA`|0x00000002L|ユーザーのデータを指定`SCC_OPT_NAMECHANGEPFN`します。|  
@@ -103,15 +98,14 @@ ms.locfileid: "51798184"
 ## <a name="dwval-bitflags"></a>dwVal ビットフラグ  
  これらのフラグを使って、 [SccSetOption](../extensibility/sccsetoption-function.md)で、`dwVal`パラメーター。  
   
-|フラグ|値|説明|使用される`nOption`値|  
+|フラグ|[値]|説明|使用される`nOption`値|  
 |----------|-----------|-----------------|-----------------------------|  
 |`SCC_OPT_EQ_DISABLE`|0x00L|イベント キューのアクティビティを中断します。|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_EQ_ENABLE`|0x01L|イベント キューのログ記録を有効にします。|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_HCM_NO`|0L|(既定値)[キャンセル] モードがありません。プラグインする必要があります指定が必要な場合。|`SCC_OPT_HASCANCELMODE`|  
-|`SCC_OPT_HCM_YES`|1 L|IDE では、キャンセルを処理します。|`SCC_OPT_HASCANCELMODE`|  
+|`SCC_OPT_HCM_YES`|1L|IDE では、キャンセルを処理します。|`SCC_OPT_HASCANCELMODE`|  
 |`SCC_OPT_SCO_NO`|0L|(既定値)プラグイン UI からチェック アウトするには、[ok]作業ディレクトリが設定されます。|`SCC_OPT_SCCCHECKOUTONLY`|  
-|`SCC_OPT_SCO_YES`|1 L|ないプラグイン UI チェック アウト、作業ディレクトリがありません。|`SCC_OPT_SCCCHECKOUTONLY`|  
+|`SCC_OPT_SCO_YES`|1L|ないプラグイン UI チェック アウト、作業ディレクトリがありません。|`SCC_OPT_SCCCHECKOUTONLY`|  
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
-

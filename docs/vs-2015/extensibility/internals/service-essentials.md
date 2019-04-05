@@ -1,33 +1,28 @@
 ---
 title: Essentials のサービス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90cec13c403194c70b9d44cff349b53495a0e160
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 90b16c9d7e7a762b6c1dac322ae9467b835476fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972198"
 ---
 # <a name="service-essentials"></a>サービスの基本情報
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 サービスは、2 つの Vspackage の間のコントラクトです。 1 つの VSPackage では、別の VSPackage を使用するためのインターフェイスの特定のセットを提供します。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 自体は、その他の Vspackage にサービスを提供する Vspackage のコレクションです。  
   
- たとえば、SVsActivityLog サービスを使用すると、アクティビティ ログへの書き込みに使用できる、IVsActivityLog インターフェイスを取得します。 詳細については、[方法: アクティビティ ログを使用して、](../../extensibility/how-to-use-the-activity-log.md)を参照してください。  
+ たとえば、SVsActivityLog サービスを使用すると、アクティビティ ログへの書き込みに使用できる、IVsActivityLog インターフェイスを取得します。 詳細については、「[方法 :アクティビティ ログを使用して、](../../extensibility/how-to-use-the-activity-log.md)します。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 登録されていないいくつかの組み込みサービスを提供します。 Vspackage では、サービスのオーバーライドを提供することで、組み込みやその他のサービスを置き換えることができます。 1 つのサービスのオーバーライドは、すべてのサービスに許可されます。  
   
@@ -43,7 +38,7 @@ ms.locfileid: "51776461"
   
 -   サービス、またはサービスの上書きがオンデマンドで読み込まれる、別の VSPackage に提供するサービスを要求すると、サービス プロバイダーが読み込まれます。  
   
--   サービス プロバイダーをオンデマンドの読み込みをサポートするには、グローバル サービスを登録します[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 詳細については、[サービス登録](../../misc/registering-services.md)を参照してください。  
+-   サービス プロバイダーをオンデマンドの読み込みをサポートするには、グローバル サービスを登録します[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 詳細については、次を参照してください。[サービス登録](../../misc/registering-services.md)します。  
   
 -   サービスを取得した後を使用して、 [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (アンマネージ コード) やなどの目的のインターフェイスを取得するキャスト (マネージ コード)。  
   
@@ -62,11 +57,10 @@ ms.locfileid: "51776461"
   
 -   Vspackage では、サービス プロバイダーを作成するオブジェクトを指定できます。 たとえば、フォームはへの要求を渡すことがあります、そのフレームに色サービスに対する要求を送信可能性があります[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
   
--   深く入れ子になったか、まったくが配置されていないマネージ オブジェクトを呼び出すことが<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>グローバル サービスに直接アクセスします。 詳細については、[方法: GetGlobalService を使用して](../../misc/how-to-use-getglobalservice.md)を参照してください。  
+-   深く入れ子になったか、まったくが配置されていないマネージ オブジェクトを呼び出すことが<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>グローバル サービスに直接アクセスします。 詳細については、「[方法 :GetGlobalService を使用する](../../misc/how-to-use-getglobalservice.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [利用可能なサービスの一覧](../../extensibility/internals/list-of-available-services.md)   
  [使用して、サービスを提供します。](../../extensibility/using-and-providing-services.md)   
  [キャストと型変換](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
  [キャスト](http://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)
-

@@ -1,14 +1,9 @@
 ---
-title: 'チュートリアル: カスタムの構成とルール セット |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: ルール セットの構成とカスタムの使用 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906053"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975099"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>チュートリアル: カスタム規則セットの構成と使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,14 +65,14 @@ ms.locfileid: "49906053"
   
 2. **この規則セットを実行**ドロップダウン リストで、 **Microsoft のすべてのルール**します。  
   
-    使用可能なルール セットの詳細については、[コード分析規則セットの参照](../code-quality/code-analysis-rule-set-reference.md)を参照してください。  
+    使用可能なルール セットの詳細については、次を参照してください。[コード分析規則セットの参照](../code-quality/code-analysis-rule-set-reference.md)します。  
   
     [ファイル] メニューで、次のようにクリックします。**選択した項目の保存**選択したルール セットに関する情報とその設定で、プロジェクト ファイルを更新します。  
   
    > [!TIP]
    >  コード分析の対象と問題の優先順位付けに使用することをお勧めは最初に、実際の状況で、**最小推奨規則**ルール セットと目的の問題を修正し、段階的に追加複数のルールまたはルールを検出してその他の問題を解決を設定します。  
   
-   次に、コードは、ca 1704 の違反を確認するために使用するクラス ライブラリを追加、「識別子は正しく入力されなければなりません」コード分析ルール。 詳細については、[ca 1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)を参照してください。  
+   次に、コードは、ca 1704 の違反を確認するために使用するクラス ライブラリを追加、「識別子は正しく入力されなければなりません」コード分析ルール。 詳細については、次を参照してください。 [ca 1704。識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)します。  
   
 #### <a name="add-your-own-code"></a>独自のコードを追加します。  
   
@@ -115,7 +110,7 @@ ms.locfileid: "49906053"
   
 2. エラー一覧 ウィンドウで次のようにクリックします。**警告**順にクリックします、**説明**列ヘッダーの警告を並べ替えるに並びます。  
   
-    実際のアプリケーションではこの時点では、修正する必要のルール違反を修正または必要に応じてオフにするや価値修正されなかったことを確認する場合のルールを抑制します。 詳細については、[SuppressMessage 属性使用での警告を抑制する](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)を参照してください。  
+    実際のアプリケーションではこの時点では、修正する必要のルール違反を修正または必要に応じてオフにするや価値修正されなかったことを確認する場合のルールを抑制します。 詳細については、「[SuppressMessage 属性を使用した警告の抑制](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)」を参照してください。  
   
 3. Ca 1704 警告に注意してください。 このルールでこれらの違反を示すこと検討してください"のパラメーターのわかりやすい名前を提供する" コードで問題を解決する可能性がありますか、次の手順で説明したように、ルールを無効にできます。  
   
@@ -160,6 +155,3 @@ ms.locfileid: "49906053"
 ## <a name="see-also"></a>関連項目  
  [方法: マネージ コード プロジェクトのコード分析を構成します。](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [コード分析規則セットの参照](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

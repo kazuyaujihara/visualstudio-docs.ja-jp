@@ -1,14 +1,9 @@
 ---
 title: ClickOnce アンマネージ API リファレンス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6175ae0b51e017d9f06c1e185ba1da7295d69657
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 714d7b18995bf1ad51b07e02227e440879f73c9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237556"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976707"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce アンマネージ API リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +47,8 @@ ms.locfileid: "49237556"
   
 |パラメーター|説明|型|  
 |---------------|-----------------|----------|  
-|`pcwzActivationUrl`|ポインター、`ActivationURL`します。|LPCWSTR|  
-|`pcwzPathToDeploymentManifest`|ポインター、`PathToDeploymentManifest`します。|LPCWSTR|  
+|`pcwzActivationUrl`|`ActivationURL` へのポインター。|LPCWSTR|  
+|`pcwzPathToDeploymentManifest`|`PathToDeploymentManifest` へのポインター。|LPCWSTR|  
 |`pwzApplicationIdentity`|完全なアプリケーション id が返されるを指定する NULL で終わる文字列を受け取るバッファーへのポインター。|LPWSTR|  
 |`pdwIdentityBufferLength`|長さである DWORD へのポインター、 `pwzApplicationIdentity` WCHARs でのバッファー。 これには、NULL 終端文字のための領域が含まれます。|LPDWORD|  
 |`pwzProcessorArchitecture`|マニフェストからのアプリケーションの展開のプロセッサ アーキテクチャを指定する NULL で終わる文字列を受け取るバッファーへのポインター。|LPWSTR|  
@@ -81,14 +76,11 @@ ms.locfileid: "49237556"
 |パラメーター|説明|型|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|配置マニフェストの URL を含む NULL で終わる文字列へのポインター。|LPCWSTR|  
-|`data`|将来使用するために予約されています。 NULL にする必要があります。|LPVOID|  
-|`flags`|将来使用するために予約されています。 0 を指定する必要があります。|DWORD|  
+|`data`|将来使用するために予約されています。 NULL にする必要があります|LPVOID|  
+|`flags`|将来使用するために予約されています。 0 である必要があります。|DWORD|  
   
 ### <a name="return-value"></a>戻り値  
  成功した場合、S_OK を返します。それ以外の場合、エラーを表す HRESULT を返します。 マネージ例外が発生した場合は、0x80020009 (DISP_E_EXCEPTION) を返します。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>
-
-
-

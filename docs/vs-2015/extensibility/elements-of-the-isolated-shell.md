@@ -1,26 +1,21 @@
 ---
 title: 分離シェルの要素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e567fc212b9981d925fc11e8e0ae48132b3b05bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cea41ee70001d32bb003a6ccefe033d42274f682
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816815"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976490"
 ---
 # <a name="elements-of-the-isolated-shell"></a>分離シェルの要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,25 +44,25 @@ ms.locfileid: "51816815"
   
 2. レジストリにも、エントリ ポイントと、パラメーターは、設定の値を指定し、設定の既定値を使用します。  
   
-   ユーザーは、コマンドラインからアプリケーションを起動するときに、すべてのコマンド ライン スイッチは、Visual Studio shell は、Devenv は同じ方法で扱うに渡されます。 Devenv のスイッチの詳細については、[Devenv コマンド ライン スイッチ](../ide/reference/devenv-command-line-switches.md)と[VSPackage 開発の Devenv コマンド ライン スイッチ](../extensibility/devenv-command-line-switches-for-vspackage-development.md)を参照してください。 コマンド ライン スイッチ用のパッケージを登録する方法の詳細については、[コマンド ライン スイッチを追加する](../extensibility/adding-command-line-switches.md)を参照してください。  
+   ユーザーは、コマンドラインからアプリケーションを起動するときに、すべてのコマンド ライン スイッチは、Visual Studio shell は、Devenv は同じ方法で扱うに渡されます。 Devenv のスイッチの詳細については、次を参照してください。 [Devenv コマンド ライン スイッチ](../ide/reference/devenv-command-line-switches.md)と[VSPackage 開発の Devenv コマンド ライン スイッチ](../extensibility/devenv-command-line-switches-for-vspackage-development.md)します。 コマンド ライン スイッチ用のパッケージを登録する方法の詳細については、次を参照してください。[コマンド ライン スイッチを追加する](../extensibility/adding-command-line-switches.md)します。  
   
 ## <a name="the-start-entry-point"></a>開始のエントリ ポイント  
  Appenvstub.dll ファイルには、分離シェルにアクセスするためのエントリ ポイントが含まれています。 アプリケーションの起動時に Appenvstub.dll の開始エントリ ポイントを呼び出します。  
   
- 最後の開始のエントリ ポイントに渡されるパラメーターの値を変更することで、アプリケーションの動作を変更できます。 詳細については、[分離シェル エントリ ポイントのパラメーター (C++)](../extensibility/isolated-shell-entry-point-parameters-cpp.md)を参照してください。  
+ 最後の開始のエントリ ポイントに渡されるパラメーターの値を変更することで、アプリケーションの動作を変更できます。 詳細については、次を参照してください。[分離シェル エントリ ポイントのパラメーター (C++)](../extensibility/isolated-shell-entry-point-parameters-cpp.md)します。  
   
 ## <a name="the-vsct-file"></a>します。Vsct ファイル  
- .Vsct ファイルでは、標準的な Visual Studio の UI 要素は、アプリケーションで使用可能なを指定できます。 詳細については、[を参照してください。Vsct ファイル](../extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file.md)します。  
+ .Vsct ファイルでは、標準的な Visual Studio の UI 要素は、アプリケーションで使用可能なを指定できます。 詳細については、次を参照してください。[します。Vsct ファイル](../extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file.md)します。  
   
 ## <a name="the-pkgundef-file"></a>します。Pkgundef ファイル  
- Visual Studio が既にインストールされているコンピューターで、アプリケーションがインストールされている、Visual Studio のレジストリ エントリのコピーは、アプリケーションのされます。 既定では、アプリケーションは、コンピューターに既にインストールされている Vspackage を使用します。 .Pkgundef ファイルでは、アプリケーションから、Visual Studio シェル拡張機能の特定の要素を削除するためにレジストリ エントリを除外できます。 詳細については、[を参照してください。Pkgundef ファイル](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)します。  
+ Visual Studio が既にインストールされているコンピューターで、アプリケーションがインストールされている、Visual Studio のレジストリ エントリのコピーは、アプリケーションのされます。 既定では、アプリケーションは、コンピューターに既にインストールされている Vspackage を使用します。 .Pkgundef ファイルでは、アプリケーションから、Visual Studio シェル拡張機能の特定の要素を削除するためにレジストリ エントリを除外できます。 詳細については、次を参照してください。[します。Pkgundef ファイル](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)します。  
   
- .Pkgundef ファイルでは、アプリケーションから、Visual Studio シェル拡張機能の特定の要素を削除するためにレジストリ エントリを除外できます。 詳細については、[を参照してください。Pkgundef ファイル](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)します。  
+ .Pkgundef ファイルでは、アプリケーションから、Visual Studio シェル拡張機能の特定の要素を削除するためにレジストリ エントリを除外できます。 詳細については、次を参照してください。[します。Pkgundef ファイル](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)します。  
   
  パッケージを除外することが Guid のセットは、「[パッケージ Guid の Visual Studio 機能](../extensibility/package-guids-of-visual-studio-features.md)します。  
   
 ## <a name="the-pkgdef-file"></a>します。Pkgdef ファイル  
- .Pkgdef ファイルを使用して、アプリケーションがインストールされている場合に設定されているアプリケーションのレジストリ エントリを定義できます。 .Pkgdef ファイルの説明と、Visual Studio shell を使用するレジストリ エントリの一覧は、[を参照してください。Pkgdef ファイル](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)します。  
+ .Pkgdef ファイルを使用して、アプリケーションがインストールされている場合に設定されているアプリケーションのレジストリ エントリを定義できます。 .Pkgdef ファイルの説明と、Visual Studio shell を使用するレジストリ エントリの一覧は、次を参照してください。[します。Pkgdef ファイル](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)します。  
   
 ## <a name="substitution-strings"></a>代替文字列  
  .Pkgdef と .pkgundef ファイルで使用される代替文字列は、「[で置換文字列を使用します。Pkgdef とします。Pkgundef ファイル](../extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md)します。  
@@ -82,4 +77,3 @@ ms.locfileid: "51816815"
 </dependentAssembly>  
   
 ```
-

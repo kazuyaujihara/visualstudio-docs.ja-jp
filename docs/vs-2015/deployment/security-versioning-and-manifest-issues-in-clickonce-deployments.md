@@ -1,14 +1,9 @@
 ---
 title: セキュリティ、バージョン管理、および ClickOnce 配置マニフェストの問題 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +23,13 @@ ms.assetid: d5d0c90b-ac1a-44e2-88dc-0d0ffd881624
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77685b2eb6397d1edf9a342c25838fcefac2e619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1227dea199ebff465fc2dde3ec30568bb50e9ec6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289225"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975927"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 配置でのセキュリティ、バージョン管理、およびマニフェストの問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,12 +43,12 @@ ms.locfileid: "49289225"
   
  場合によってで、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]インストーラー検出ロジックのための管理者権限で実行するアプリケーションを試みる可能性があります[!INCLUDE[windowsver](../includes/windowsver-md.md)]します。 この場合、設定することができます、`requestedExecutionLevel`属性にアプリケーション マニフェストで`asInvoker`します。 これは、結果、アプリケーション自体を昇格なしでも実行します。 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] すべてのアプリケーション マニフェストにこの属性が自動的に追加します。  
   
- アプリケーションの有効期間にわたって管理者のアクセス許可を必要とするアプリケーションを開発している場合は、代わりに Windows インストーラー (MSI) テクノロジを使用して、アプリケーションの配置を検討してください。 詳細については、[Windows インストーラーの基本事項](../extensibility/internals/windows-installer-basics.md)を参照してください。  
+ アプリケーションの有効期間にわたって管理者のアクセス許可を必要とするアプリケーションを開発している場合は、代わりに Windows インストーラー (MSI) テクノロジを使用して、アプリケーションの配置を検討してください。 詳細については、次を参照してください。 [Windows インストーラーの基本事項](../extensibility/internals/windows-installer-basics.md)します。  
   
 ## <a name="online-application-quotas-and-partial-trust-applications"></a>オンライン アプリケーションのクォータと部分信頼アプリケーション  
  場合、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションがインストールからオンラインの代わりに実行され、オンライン アプリケーション用に確保クォータ内に収まるようにする必要があります。 また、制限された一連のセキュリティのアクセス許可など、部分信頼で実行するネットワーク アプリケーションは、クォータ サイズの半分よりも大きいすることはできません。  
   
- 詳細については、および手順については、オンライン アプリケーションのクォータを変更する方法については、[ClickOnce キャッシュの概要](../deployment/clickonce-cache-overview.md)を参照してください。  
+ 詳細については、および手順については、オンライン アプリケーションのクォータを変更する方法については、次を参照してください。 [ClickOnce キャッシュの概要](../deployment/clickonce-cache-overview.md)します。  
   
 ## <a name="versioning-issues"></a>バージョン管理の問題  
  アプリケーションの更新プログラムを反映するようにアセンブリ バージョン番号をインクリメントし、アセンブリに厳密な名前を割り当てる場合、問題が発生する可能性があります。 厳密な名前のアセンブリへの参照でコンパイルされたアセンブリ自体を再コンパイルしなければ、または以前のバージョンを参照するアセンブリを試みます。 アセンブリが、バインド要求で古いバージョンの値を使用するため、このアセンブリが試行されます。  
@@ -74,7 +69,7 @@ ms.locfileid: "49289225"
   
 -   構文エラー、および行の数と文字の説明、エラーが発生した位置。  
   
--   要素またはマニフェストのスキーマの違反で使用される属性の名前。 場合は、マニフェストに XML を手動で追加した、マニフェストのスキーマに、追加機能を比較する必要があります。 詳細については、[ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)と[ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)を参照してください。  
+-   要素またはマニフェストのスキーマの違反で使用される属性の名前。 場合は、マニフェストに XML を手動で追加した、マニフェストのスキーマに、追加機能を比較する必要があります。 詳細については、次を参照してください。 [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)と[ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)します。  
   
 -   ID が競合します。 配置マニフェストとアプリケーション マニフェストで参照する依存関係は、両方で一意である必要があります、`name`と`publicKeyToken`属性。 両方の属性は、マニフェスト内で 2 つの要素間で一致、マニフェストの解析は成功しません。  
   
@@ -99,6 +94,3 @@ ms.locfileid: "49289225"
  [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)   
  [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)
-
-
-

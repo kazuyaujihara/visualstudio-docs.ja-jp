@@ -1,14 +1,9 @@
 ---
-title: 'Ca 2108: 値型で宣言型のセキュリティの確認 |Microsoft Docs'
-ms.custom: ''
+title: CA2108:値型で宣言型セキュリティを確認してください |。Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ReviewDeclarativeSecurityOnValueTypes
 - CA2108
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b437fa656c2a2d0650463fd0ab78119f67099ac7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b8bafb021e2a73b0a5bed7feba21fbb38fff8ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889667"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975608"
 ---
-# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: 値型での宣言セキュリティをレビューします
+# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108:値型での宣言セキュリティを確認します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -61,11 +56,8 @@ ms.locfileid: "49889667"
 
  この例を実行すると、次の出力が生成されます。
 
- **構造体のカスタム コンス トラクター: 要求が失敗しました。** 
+ **構造体のカスタム コンス トラクター。要求に失敗しました。** 
 **新しい値 SecuredTypeStructure 100 100**
 **SecuredTypeStructure 200 200 の新しい値**
 ## <a name="see-also"></a>関連項目
  [リンク確認要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[データとモデリング](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
-
-
-

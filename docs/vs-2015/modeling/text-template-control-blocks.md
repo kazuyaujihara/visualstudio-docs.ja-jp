@@ -1,25 +1,22 @@
 ---
 title: テキスト テンプレートのコントロール ブロック |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
 ms.assetid: bad198b9-57a4-4777-bd5b-ab6336c825f3
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7531e0ace7a6e2b40d8d17555a9b34cfa0e174fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6fb532c122bec0ff56c00a261ca464daba0a464f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221209"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975680"
 ---
 # <a name="text-template-control-blocks"></a>テキスト テンプレートのコントロール ブロック
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +66,7 @@ Found another one!
 ```  
   
 > [!WARNING]
->  {...} を常に使用します。 含む入れ子になったステートメントを区切るためにプレーン テキストに埋め込まれます。 次の例は正しく動作しません。  
+>  プレーン テキストの埋め込みを含む入れ子になったステートメントを区切るためには、 {...} を常に使用します。 次の例は正しく動作しません。  
 >   
 >  `<# if (ShouldPrint) #> Some text. -- WRONG`  
 >   
@@ -123,9 +120,9 @@ Some text.
 ```  
   
 > [!NOTE]
->  同じテンプレート ファイル内で、クラス機能コントロール ブロックの後に標準コントロール ブロックを配置することはできません。 ただし、この制限は、`<#@include#>` ディレクティブを使用した結果には適用されません。 各インクルード ファイルでは、標準ブロックの後にクラス機能ブロックを配置できます。  
+>  同じテンプレート ファイル内で、クラス機能コントロール ブロックの後に標準コントロール ブロックを配置することはできません。 ただし、この制限は、`<#@include#>` ディレクティブを使用した結果には適用されません。 各インクルード ファイルでは、標準ブロックの後にクラス機能ブロックが配置されます。  
   
- クラス機能コントロール ブロック内にテキスト ブロックと式ブロックを埋め込むことによって、出力を生成する関数を作成できます。 例えば:  
+ クラス機能コントロール ブロック内にテキスト ブロックと式ブロックを埋め込むことによって、出力を生成する関数を作成できます。 例:  
   
 ```  
 <#+  
@@ -149,11 +146,11 @@ Some text.
 ```  
   
 ## <a name="how-to-use-control-blocks"></a>コントロール ブロックの使用方法  
- 1 つのテンプレート内の標準コントロール ブロックと式コントロール ブロックのコード (インクルードされたテンプレート内のコードも含む) はすべて結合され、生成されるコードの `TransformText()` メソッドを形成します  (などの他のテキスト テンプレートの詳細については、`include`ディレクティブを参照してください[T4 テキスト テンプレート ディレクティブ](../modeling/t4-text-template-directives.md))。  
+ 1 つのテンプレート内の標準コントロール ブロックと式コントロール ブロックのコード (インクルードされたテンプレート内のコードも含む) はすべて結合され、生成されるコードの `TransformText()` メソッドを形成します。 `include`ディレクティブによる他のテキスト テンプレートをインクルードすることについての詳細は、次を参照してください。[T4 テキスト テンプレート ディレクティブ](../modeling/t4-text-template-directives.md))  
   
  コントロール ブロックの使用時には、次の考慮事項に留意してください。  
   
--   **言語。** テキスト テンプレートでは、C# または Visual Basic のコードを使用できます。 既定の言語は C# ですが、`template` ディレクティブの `language` パラメーターで Visual Basic を指定できます。 (の詳細については、`template`ディレクティブを参照してください[T4 テキスト テンプレート ディレクティブ](../modeling/t4-text-template-directives.md))。  
+-   **言語。** テキスト テンプレートでは、C# または Visual Basic のコードを使用できます。 既定の言語は C# ですが、`template` ディレクティブの `language` パラメーターで Visual Basic を指定できます。 (詳細については、`template`ディレクティブを参照してください。[T4 テキスト テンプレート ディレクティブ](../modeling/t4-text-template-directives.md))  
   
      コントロール ブロックで使用する言語は、テキスト テンプレートで生成するテキストの言語または書式とは無関係です。 Visual Basic コードを使用して C# を生成することも、C# コードを使用して Visual Basic を生成することもできます。  
   
@@ -176,6 +173,3 @@ Some text.
     ```  
   
 -   **リファクタリング。** テキスト テンプレートを簡潔で理解しやすい状態に保つために、コードの繰り返しを避けることを強くお勧めします。そのためには、再利用できるコードをクラス機能ブロックのヘルパー関数にファクタリングするか、Microsoft.VisualStudio.TextTemplating.TextTransformation クラスを継承する独自のテキスト テンプレート クラスを作成します。
-
-
-

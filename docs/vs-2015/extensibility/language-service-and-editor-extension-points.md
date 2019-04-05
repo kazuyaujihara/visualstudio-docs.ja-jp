@@ -1,26 +1,21 @@
 ---
 title: 言語サービスとエディターの拡張ポイント |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0bcbef5094bd12392b7ea79865e1d28e2934a11e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80aed463b2d8ef9d083940a8966574e778623ddd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975136"
 ---
 # <a name="language-service-and-editor-extension-points"></a>言語サービスとエディターの拡張ポイント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -283,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: 表示要素に関連付けられています。  
   
   > [!NOTE]
-  >  例については、 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>、HighlightWordTag 定義を参照してください。[チュートリアル: テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。  
+  >  例については、 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>、HighlightWordTag 定義を参照してください。[チュートリアル。テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: に関連付けられたリージョン展開またはアウトラインで折りたたまれていることができます。  
   
@@ -329,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  タグには、この形式の定義を適用するには、クラス (表示名ではなく) の name 属性で設定した名前を参照します。  
   
 > [!NOTE]
->  例については、 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>、HighlightWordFormatDefinition クラスを参照してください。[チュートリアル: テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。  
+>  例については、 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>、HighlightWordFormatDefinition クラスを参照してください。[チュートリアル。テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。  
   
 ## <a name="extending-adornments"></a>表示要素の拡張  
  修飾は、テキスト ビューに表示されるテキストを追加できるかをテキスト自体を表示する視覚効果を定義します。 任意の型として、独自の表示要素を定義する<xref:System.Windows.UIElement>します。  
@@ -338,7 +333,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 表示要素の名前。  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: その他の装飾層に対して表示要素の順序付けします。 クラスは、 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> 4 つの既定の層を定義します。 選択、アウトライン、カレット、およびテキスト。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: その他の装飾層に対して表示要素の順序付けします。 クラスは、 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> 4 つの既定の層を定義します。選択、アウトライン、カレット、およびテキスト。  
   
   次の例では、装飾層定義のエクスポート属性を示します。  
   
@@ -432,7 +427,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   9. PenData  
   
-  10. シリアル化可能です  
+  10. Serializable  
   
   11. シンボリック リンク  
   
@@ -558,9 +553,9 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  [チュートリアル: クイック ヒントの表示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [チュートリアル: シグネチャ ヘルプの表示](../extensibility/walkthrough-displaying-signature-help.md)  
+ [チュートリアル: シグニチャ ヘルプの表示](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [チュートリアル: 入力候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [チュートリアル: ステートメント入力候補を表示します。](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implementing-an-intellisense-controller"></a>IntelliSense のコント ローラーの実装  
  コント ローラーをカスタマイズすることを実装する必要があります、<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController>インターフェイス。 さらに、次の属性と共にコント ローラー プロバイダーを実装する必要があります。  
@@ -584,4 +579,3 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
  IntelliSense のコント ローラーの使用に関する詳細については、次のチュートリアルを参照してください。  
   
  [チュートリアル: クイック ヒントの表示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
-

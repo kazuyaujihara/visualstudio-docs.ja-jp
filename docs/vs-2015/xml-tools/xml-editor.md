@@ -1,25 +1,20 @@
 ---
 title: XML エディター |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 623869f3-040b-4bf4-b353-ddc2229694e4
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: caff32f582778ec03765554979abe6be5d608d26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896329"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976186"
 ---
 # <a name="xml-editor"></a>XML エディター
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,14 +75,11 @@ XML エディターは [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual S
  XML エディターのユーザー インターフェイス コンポーネントについて説明します。  
   
 ## <a name="related-sections"></a>関連項目  
- [テキスト、コード、およびマークアップの編集](http://msdn.microsoft.com/en-us/0d9c00d7-5df4-48a3-b185-2a265f055439)  
+ [テキスト、コード、およびマークアップの編集](http://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
  テキスト エディターについて説明します。  
   
- [XML 標準のリファレンス](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
+ [XML 標準のリファレンス](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  XML、DTD (Document Type Definition)、XSD (XML Schema Definition) 言語、XSLT などの XML テクノロジについて説明します。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio の XML ツール](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-
