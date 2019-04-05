@@ -1,14 +1,9 @@
 ---
 title: コマンドラインから ClickOnce アプリケーションの構築 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220018"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974764"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>ClickOnce アプリケーションのコマンド ラインからのビルド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "50220018"
   
  `/target:publish`コマンドは、発行ターゲットを呼び出すための MSBuild に指示します。 発行先は、ビルド ターゲットに依存します。 これは、発行操作は、ビルド操作のスーパー セットであることを意味します。 たとえば、Visual Basic または c# ソース ファイルのいずれかに変更を加えた場合、対応するアセンブリは自動的にして再構築、発行操作。  
   
- 完全なを生成する方法について[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]Mage.exe コマンド ライン ツールを使用して作成する展開、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]マニフェストを参照してください[チュートリアル: ClickOnce アプリケーションを手動で配置](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。  
+ 完全なを生成する方法について[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]Mage.exe コマンド ライン ツールを使用して作成する展開、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]マニフェストは、「[チュートリアル。Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」(チュートリアル: ClickOnce アプリケーションを手動で配置する) を参照してください。  
   
 ## <a name="creating-and-building-a-basic-clickonce-application-using-msbuild"></a>作成して、MSBuild を使用して基本的な ClickOnce アプリケーションの構築  
   
@@ -86,7 +81,7 @@ ms.locfileid: "50220018"
 ## <a name="publishing-properties"></a>発行プロパティ  
  上記の手順で、アプリケーションを発行するとき、次のプロパティは、発行ウィザードによって、プロジェクト ファイルに挿入されます。 これらのプロパティに直接影響を与える方法、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションが生成されます。  
   
- CmdLineDemo.vbproj で/CmdLineDemo.csproj:  
+ In CmdLineDemo.vbproj / CmdLineDemo.csproj:  
   
 ```  
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>  
@@ -168,16 +163,13 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |[URL]|説明|  
 |----------------|-----------------|  
 |`PublishURL`|Web サイトに、ClickOnce アプリケーションをパブリッシュするかどうかに必要です。|  
-|`InstallURL`|任意。 インストールのサイトが異なる場合、この URL オプションを設定、`PublishURL`します。 たとえば、設定する、`PublishURL`に、FTP パスを設定し、 `InstallURL` Web URL にします。|  
+|`InstallURL`|省略可能です。 インストールのサイトが異なる場合、この URL オプションを設定、`PublishURL`します。 たとえば、設定する、`PublishURL`に、FTP パスを設定し、 `InstallURL` Web URL にします。|  
 |`SupportURL`|任意。 サポート サイトが異なる場合は、この URL オプションを設定、`PublishURL`します。 たとえば、設定する、`SupportURL`会社の顧客のサポート Web サイトにします。|  
-|`UpdateURL`|任意。 更新プログラムの場所が異なる場合は、この URL オプションを設定、`InstallURL`します。 たとえば、設定する、`PublishURL`に、FTP パスを設定し、 `UpdateURL` Web URL にします。|  
+|`UpdateURL`|省略可能です。 更新プログラムの場所が異なる場合は、この URL オプションを設定、`InstallURL`します。 たとえば、設定する、`PublishURL`に、FTP パスを設定し、 `UpdateURL` Web URL にします。|  
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
- [チュートリアル : ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-
-
-
+ [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

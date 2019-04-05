@@ -1,26 +1,21 @@
 ---
 title: 使用した分離シェルを変更します。Vsct ファイル |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode%2C .vsct file
 ms.assetid: 6d147c2d-10e9-400e-b8ce-5566287b41ba
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0eb5b110386f4a696c228e746223d745df6b18f7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 8c106a04e809e772ac3b8a77192fb2f101161e9c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817608"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976889"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>使用した分離シェルを変更します。Vsct ファイル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Visual Studio 分離シェル プロジェクト、UI プロジェクトには�
   
 ```  
   
- 詳細な例はこれらのカスタマイズを参照してください。[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)します。  
+ 詳細な例はこれらのカスタマイズを参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
   
 ## <a name="referenced-files"></a>参照先のファイル  
  アプリケーションの既定の .vsct ファイルでは、次のファイルを参照します。 これらのファイルについては、Visual Studio SDK のインストール ディレクトリの \VisualStudioIntegration\Common\Inc\ サブディレクトリにあります。  
@@ -59,8 +54,7 @@ Visual Studio 分離シェル プロジェクト、UI プロジェクトには�
   
  AppIDCmdUsed.vsct ファイルには、アプリケーションの .vsct ファイルで定義されているシンボルに基づいて Visual Studio の UI 要素が含まれています。  
   
- 詳細については、[XML コマンド テーブルの設計 (を参照してください。Vsct) ファイル](../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)と[VSCT XML スキーマ リファレンス](../extensibility/vsct-xml-schema-reference.md)します。  
+ 詳細については、次を参照してください。 [XML コマンド テーブルの設計 (します。Vsct) ファイル](../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)と[VSCT XML スキーマ リファレンス](../extensibility/vsct-xml-schema-reference.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio の分離シェル](../extensibility/visual-studio-isolated-shell.md)
-

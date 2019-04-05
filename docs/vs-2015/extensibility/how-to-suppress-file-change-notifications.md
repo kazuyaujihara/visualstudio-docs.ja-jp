@@ -1,26 +1,21 @@
 ---
 title: '方法: ファイル変更通知を抑制する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
 ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4f82fd90d95a595d39403d2ee131285034b95d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 108910c52033af3574a004cf314be2628fd54122
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808259"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963552"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>方法: ファイル変更通知を抑制します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,4 +116,3 @@ void CSuspendFileChanges::Resume()
   
 ## <a name="robust-programming"></a>信頼性の高いプログラミング  
  ケースには、SCC の場合と同様、ファイルに複数の変更が含まれている場合は、アラート、ドキュメント データ ファイルの変更の監視を再開する前にグローバル ファイル変更通知を再開する必要があります。
-

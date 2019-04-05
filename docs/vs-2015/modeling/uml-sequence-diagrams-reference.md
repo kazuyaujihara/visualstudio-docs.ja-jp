@@ -1,12 +1,9 @@
 ---
-title: 'UML シーケンス図: リファレンス |Microsoft Docs'
-ms.custom: ''
+title: UML シーケンス図:参照 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.diagram
 - vs.teamarch.UMLModelExplorer.sequencediagram
@@ -21,15 +18,15 @@ ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 3990d43ae11db3db8eb792883ba62a030cde3a2f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962838"
 ---
-# <a name="uml-sequence-diagrams-reference"></a>UML シーケンス図: リファレンス
+# <a name="uml-sequence-diagrams-reference"></a>UML シーケンス図:参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio で、*シーケンス図*クラス、コンポーネント、サブシステム、またはアクターのインスタンス間でメッセージのシーケンスを表します相互作用を示しています。 この図は下へ行くほど時間が経過していることを示していて、1 つの参加要素から別の参加要素への制御フローを表しています。 シーケンス図を使用して、クラスとメソッドの代わりに、インスタンスとイベントを視覚化します。 この図では、同じ型の 1 つ以上のインスタンスを表示できます。 また、同じメッセージの 1 つ以上の出現も表示できます。  
@@ -57,19 +54,16 @@ Visual Studio で、*シーケンス図*クラス、コンポーネント、サ�
 |10|**消失メッセージ**|不明または指定されていない参加要素への非同期メッセージ。|  
 |11|**コメント**|生存線の任意のポイントにコメントを付けることができます。|  
 |12|**相互作用使用**|別の図で定義されているメッセージのシーケンスを囲みます。<br /><br /> 作成する、**相互作用使用**ツール をクリックしを含めたい生存線をまたぐからドラッグします。|  
-|13|**結合フラグメント**|フラグメントのコレクション。 各フラグメントは、1 つ以上のメッセージを囲むことができます。 結合フラグメントには複数の種類があります。 詳細については、[UML シーケンス図のフラグメントを使用した制御フローの記述](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)を参照してください。<br /><br /> フラグメントを作成するには、メッセージを右クリックして**ブロックの挿入**フラグメントの種類を順にクリックします。|  
+|13|**結合フラグメント**|フラグメントのコレクション。 各フラグメントは、1 つ以上のメッセージを囲むことができます。 結合フラグメントには複数の種類があります。 詳細については、次を参照してください。 [UML シーケンス図のフラグメントを使用した制御フローの記述](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)します。<br /><br /> フラグメントを作成するには、メッセージを右クリックして**ブロックの挿入**フラグメントの種類を順にクリックします。|  
 |14|**フラグメント ガード**|フラグメントが発生するかどうかに関連する条件を示すために使用できます。<br /><br /> ガードを設定するには、フラグメントを選択し、ガードを選択して、値を入力します。|  
 |**X**|**破棄イベント**|オブジェクトが削除されるか、アクセス不可能になったポイントを表します。 すべての生存線の下部に表示されます。|  
 ||**相互作用**|シーケンス図に表示されるメッセージと生存線のコレクションです。 相互作用のプロパティを表示することで選択する必要があります**UML モデル エクスプ ローラー**します。|  
-||**シーケンス図**|相互作用を表示する図。 相互作用のプロパティを表示するには、図の空白部分をクリックします。 **注:** 、表示、ダイアグラムを含むファイルが異なる場合が相互作用シーケンス図の名前。|  
+||**シーケンス図**|相互作用を表示する図。 相互作用のプロパティを表示するには、図の空白部分をクリックします。 **注:** シーケンス図の名前、この図によって表示される相互作用、およびこの図が保存されているファイルはすべて異なる場合があります。|  
   
 ## <a name="see-also"></a>関連項目  
  [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)   
  [UML モデルおよびダイアグラムを編集します。](../modeling/edit-uml-models-and-diagrams.md)   
- [UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)   
- [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)   
- [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)   
+ [UML ユース ケース図: 参照](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML クラス図: 参照](../modeling/uml-class-diagrams-reference.md)   
+ [UML コンポーネント図: 参照](../modeling/uml-component-diagrams-reference.md)   
  [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)
-
-
-

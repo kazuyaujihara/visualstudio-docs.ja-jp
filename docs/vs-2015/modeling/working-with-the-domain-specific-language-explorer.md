@@ -1,36 +1,33 @@
 ---
 title: ドメイン固有言語エクスプ ローラーの使用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
 ms.assetid: ca0e8550-bb55-4218-92e2-f79ab5308d4f
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9e6a1f4d9ef5e34b85aafbe7bacb14df85d29ac2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: d305fdfa74ff680a9d5ef0b12b1a84be10958204
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210588"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978275"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>ドメイン固有言語エクスプローラーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**DSL エクスプ ローラー**ツリー ビューで複数種類の情報を表示します。 詳細については、DSL エクスプ ローラーで項目のほとんどは、[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)を参照してください。  
+**DSL エクスプ ローラー**ツリー ビューで複数種類の情報を表示します。 詳細については、DSL エクスプ ローラーで項目のほとんどは、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。  
   
  以下のようなノードがあります。  
   
--   **接続ビルダー**します。 モデル内の接続ビルダーの一覧。 接続ビルダーの詳細については、[リンク作成のカスタマイズ - リダイレクト](../misc/customizing-link-creation-redirection.md)を参照してください。  
+-   **接続ビルダー**します。 モデル内の接続ビルダーの一覧。 接続ビルダーの詳細については、次を参照してください。[リンク作成のカスタマイズ - リダイレクト](../misc/customizing-link-creation-redirection.md)します。  
   
--   **コネクタ**します。 モデル内のコネクタ図要素の一覧。 コネクタの詳細については、[リダイレクトの種類のシェイプとコネクタ -](../misc/types-of-shapes-and-connectors-redirect.md)を参照してください。  
+-   **コネクタ**します。 モデル内のコネクタ図要素の一覧。 コネクタの詳細については、次を参照してください。[リダイレクトの種類のシェイプとコネクタ -](../misc/types-of-shapes-and-connectors-redirect.md)します。  
   
 -   **図**します。 図を定義するプロパティとコネクタ マップおよび図形マップの一覧のセット。  
   
@@ -40,16 +37,13 @@ ms.locfileid: "49210588"
   
 -   **ドメイン型**します。 モデル内で使用される組み込み型および外部型の一覧。  
   
--   **エディター**します。 一連の**ツールボックス**タブと、項目が含まれていると、モデルの検証の設定。 検証の詳細については、[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)を参照してください。  
+-   **エディター**します。 一連の**ツールボックス**タブと、項目が含まれていると、モデルの検証の設定。 検証の詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。  
   
--   **エクスプ ローラーの動作**します。 生成されたデザイナー内のエクスプローラーの動作を指定する設定。 エクスプ ローラーをカスタマイズする方法の詳細については、[モデル エクスプ ローラーのカスタマイズ](../modeling/customizing-the-model-explorer.md)を参照してください。  
+-   **エクスプ ローラーの動作**します。 生成されたデザイナー内のエクスプローラーの動作を指定する設定。 エクスプ ローラーをカスタマイズする方法の詳細については、次を参照してください。[モデル エクスプ ローラーのカスタマイズ](../modeling/customizing-the-model-explorer.md)します。  
   
 -   **図形**します。 モデル内の図形図要素の一覧。  
   
--   **Xml シリアル化動作**します。 モデルのシリアル化設定。 シリアル化の詳細については、[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)を参照してください。  
+-   **Xml シリアル化動作**します。 モデルのシリアル化設定。 シリアル化の詳細については、次を参照してください。[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)します。  
   
 ## <a name="see-also"></a>関連項目  
- [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,14 +1,9 @@
 ---
 title: 構文の色分けを実装する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30a53b1fc04bd08835ccf0ff0b0edb2e5d117fcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f068b0b442f6f358d71948ecc2a4d0d21870a6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775031"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972666"
 ---
 # <a name="implementing-syntax-coloring"></a>構文の色分け表示の実装
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51775031"
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] パーサーのインターフェイスを指定しないおよびパーサーの実装が完全にユーザーが決定できます。 ただし、既定のパーサーの実装は、Visual Studio 言語パッケージ プロジェクトで提供されます。 マネージ コード用 managed package framework (MPF) のテキストを色分け、完全なサポートが提供します。  
   
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 構文の色分けを実装する新しい方法の詳細についてを参照してください。[チュートリアル: テキストの強調表示](../../extensibility/walkthrough-highlighting-text.md)します。  
+ 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 構文の色分けを実装する新しい方法の詳細についてを参照してください。[チュートリアル。テキストの強調表示](../../extensibility/walkthrough-highlighting-text.md)します。  
   
 > [!NOTE]
 >  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
@@ -67,11 +62,10 @@ ms.locfileid: "51775031"
     4.  画面にテキストを表示するために、装飾が可能な項目の情報を使用します。  
   
 ## <a name="managed-package-framework-colorizer"></a>Managed Package Framework Colorizer  
- Managed package framework (MPF) は、colorizer を実装するために必要なすべてのクラスを提供します。 言語サービス クラスを継承する必要があります、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスし、必要なメソッドを実装します。 スキャナーとパーサーを実装することで指定する必要があります、<xref:Microsoft.VisualStudio.Package.IScanner>インターフェイスし、そのインターフェイスからのインスタンスを返す、<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>メソッド (いずれの方法で実装する必要があります、<xref:Microsoft.VisualStudio.Package.LanguageService>クラス)。 詳細については、[従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)を参照してください。  
+ Managed package framework (MPF) は、colorizer を実装するために必要なすべてのクラスを提供します。 言語サービス クラスを継承する必要があります、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスし、必要なメソッドを実装します。 スキャナーとパーサーを実装することで指定する必要があります、<xref:Microsoft.VisualStudio.Package.IScanner>インターフェイスし、そのインターフェイスからのインスタンスを返す、<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>メソッド (いずれの方法で実装する必要があります、<xref:Microsoft.VisualStudio.Package.LanguageService>クラス)。 詳細については、次を参照してください。[従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)します。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: ビルトインの配色可能な項目を使用して、](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
+ [方法: 組み込みの配色可能な項目を使用して、](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [カスタムの配色可能な項目](../../extensibility/internals/custom-colorable-items.md)   
  [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [従来の言語サービスでの構文の配色変更](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
-

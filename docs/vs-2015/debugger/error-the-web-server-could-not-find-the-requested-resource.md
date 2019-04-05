@@ -1,14 +1,9 @@
 ---
-title: 'エラー: Web サーバーが要求されたリソース見つかりません |Microsoft Docs'
-ms.custom: ''
+title: エラー :Web サーバーで要求されたリソースが見つかりませんでした |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: 1ceeaf30-918c-42bb-ace1-96944530fef3
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f490006d21f51f48cd8b2d97da262015ab170f39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 656ebd6f8b1e720afd129bca3d53712526fc914f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808298"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002655"
 ---
-# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>エラー : Web サーバーでは要求されたリソースを見つけられませんでした
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>エラー :Web サーバーでは要求されたリソースを見つけられませんでした
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 セキュリティ上の考慮から、IIS が汎用エラーを返しました。  
@@ -37,11 +32,8 @@ ms.locfileid: "51808298"
   
  このエラーには、さまざまな原因が考えられます。 最も一般的な原因には、IIS のインストールまたは構成の問題、Web サイトの構成の問題、ファイル システムのアクセス許可の問題などがあります。 ブラウザーを使用してリソースへのアクセスを試すことができます。 IIS の構成方法によっては、サーバーでローカル ブラウザーを使用したり、IIS エラー ログを検査して詳細なエラー メッセージを確認したりする必要があります。  
   
- IIS のトラブルシューティングの詳細については、[IIS Management and Administration](http://go.microsoft.com/fwlink/?LinkId=255872)を参照してください。  
+ IIS のトラブルシューティングの詳細については、「[IIS Management and Administration (IIS の管理)](http://go.microsoft.com/fwlink/?LinkId=255872)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
- [UrlScan セキュリティ ツール](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
+ [UrlScan セキュリティ ツール](https://www.iis.net/downloads/microsoft/urlscan)   
  [エラー: Web サーバーが制限され、デバッグの有効化に必要な DEBUG 動詞をブロックしています](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
-
-
-

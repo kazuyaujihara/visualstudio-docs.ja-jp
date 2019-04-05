@@ -1,11 +1,8 @@
 ---
 title: ルール条件エディター ダイアログ ボックス (レガシ) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleConditionDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: c7ca8be9-de31-4a64-939c-4d53a50d5e29
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 8237c8e29007d010cd99e4323bf8e88a23b7e9fb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838544"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58963779"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>[ルール条件エディター] ダイアログ ボックス (レガシ)
 このトピックで説明する方法を使用して、**ルール条件エディター**  ダイアログ ボックスで、従来の[!INCLUDE[wfd1](../includes/wfd1-md.md)]します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  
@@ -47,7 +44,7 @@ ms.locfileid: "49838544"
 |UI 要素|説明|  
 |----------------|-----------------|  
 |**条件:**|ルールの条件式を入力します。|  
-|**わかりました**|これをクリックすると、ルール条件が保存されます。|  
+|**[OK]**|これをクリックすると、ルール条件が保存されます。|  
   
 ## <a name="entering-condition-expressions"></a>条件式の入力  
  条件式は、テキストとして入力します。 入力**これです。** フィールド、プロパティ、およびワークフローで使用される方法を参照するエディターに、IntelliSense のようなメニューを使用します。 または、ワークフローのメンバ名を直接入力することもできます。 条件には、AND、OR、NOT といった論理演算子を追加することもできます。 述語も追加できます。 述語は、バイナリ演算子と 2 つのオペランドから成ります。 サポートされているバイナリ演算子は**==**、 **>**、 **\<**、 **>=**、 **<=** します。 サポートされているオペランドは、定数値、算術関数、スコープ付きパブリック メンバです。  
@@ -62,7 +59,7 @@ ms.locfileid: "49838544"
   
 - 算術演算子 : +、-、*、/、MOD  
   
-- 論理演算子:、& &、OR、 &#124; &#124;、NOT、!  
+- 論理演算子 : &AMP; &AMP;、OR、 &AMP;#124; &AMP;#124;、NOT、!  
   
 - ビットごとの演算子: &、&#124;  
   
@@ -82,7 +79,7 @@ ms.locfileid: "49838544"
   
   this.i == 1U (unsigned int として解決)  
   
-  条件の詳細については、[ワークフロー内の条件を使用して](http://go.microsoft.com/fwlink?LinkID=65009)を参照してください。  
+  条件の詳細については、次を参照してください。[ワークフロー内の条件を使用して](http://go.microsoft.com/fwlink?LinkID=65009)します。  
   
 ## <a name="see-also"></a>関連項目  
  [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   

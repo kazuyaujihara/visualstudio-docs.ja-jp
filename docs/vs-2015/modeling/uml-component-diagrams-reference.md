@@ -1,12 +1,9 @@
 ---
-title: 'UML コンポーネント図: リファレンス |Microsoft Docs'
-ms.custom: ''
+title: UML コンポーネント図:参照 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.componentdiagram.diagram
 - vs.teamarch.componentdiagram.toolbox
@@ -21,15 +18,15 @@ ms.assetid: 5eddff6a-892a-4c3c-9278-687ac1eccc50
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0e77008d59543b0001f97b37933ff1073e488a33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 80a4c78da4c2aaffcc35fb436dbd8219c2c6fde6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728120"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977805"
 ---
-# <a name="uml-component-diagrams-reference"></a>UML コンポーネント図: リファレンス
+# <a name="uml-component-diagrams-reference"></a>UML コンポーネント図:参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio で、*コンポーネント図*ソフトウェア システムの設計の部分を示しています。 コンポーネント図は、システムの大まかな構造と、これらのパートがインターフェイスを介して提供および使用するサービス動作を視覚化するのに役立ちます。 UML コンポーネント図を作成する、**アーキテクチャ** メニューのをクリックして**新しい UML またはレイヤー図**します。  
@@ -38,13 +35,13 @@ Visual Studio で、*コンポーネント図*ソフトウェア システムの
 
  コンポーネント図を使用して、任意の言語またはスタイルで実装されている設計を記述できます。 必要になるのは、制限された入力および出力のセットを介して設計の他のパートと対話するパートを識別することだけです。 コンポーネントは任意のスケールで記述し、任意の方法で相互接続することができます。  
 
- コンポーネント図を設計プロセスで使用する方法の詳細については、[、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)を参照してください。  
+ コンポーネント図を設計プロセスで使用する方法の詳細については、次を参照してください。 [、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)します。  
 
 > [!NOTE]
->  このトピックでは、コンポーネント図で使用できる要素について説明します。 コンポーネント図を描画する方法について詳細を参照してください。 [UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)します。 一般にモデリング図を描画する方法の詳細については、[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)を参照してください。  
+>  このトピックでは、コンポーネント図で使用できる要素について説明します。 コンポーネント図を描画する方法について詳細を参照してください。 [UML コンポーネント図。ガイドライン](../modeling/uml-component-diagrams-guidelines.md)します。 一般にモデリング図を描画する方法の詳細については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
 
 ## <a name="reading-component-diagrams"></a>コンポーネント図の解説  
- コンポーネント図で使用できる要素とその主要なプロパティを次の表に示します。 要素のプロパティの完全な一覧は、[UML コンポーネント図の要素のプロパティ](../modeling/properties-of-elements-on-uml-component-diagrams.md)を参照してください。  
+ コンポーネント図で使用できる要素とその主要なプロパティを次の表に示します。 要素のプロパティの完全な一覧は、次を参照してください。 [UML コンポーネント図の要素のプロパティ](../modeling/properties-of-elements-on-uml-component-diagrams.md)します。  
 
  ![コンポーネント図で使用される要素](../modeling/media/uml-compovreading.png "UML_CompOvReading")  
 
@@ -66,10 +63,7 @@ Visual Studio で、*コンポーネント図*ソフトウェア システムの
  [UML モデルおよびダイアグラムを編集します。](../modeling/edit-uml-models-and-diagrams.md)   
  [UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)   
  [開発中にシステムを検証します。](../modeling/validate-your-system-during-development.md)   
- [UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)   
- [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)   
- [UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)   
+ [UML ユース ケース図: 参照](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML クラス図: 参照](../modeling/uml-class-diagrams-reference.md)   
+ [UML アクティビティ図: 参照](../modeling/uml-activity-diagrams-reference.md)   
  [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)
-
-
-

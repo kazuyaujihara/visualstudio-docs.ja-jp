@@ -31,13 +31,13 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 3. プロジェクトをビルドし、デバッグを開始します。
 
-    Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、次を参照してください。[実験用インスタンス](../extensibility/the-experimental-instance.md)します。
+    Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、[実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
 
 4. 実験用インスタンスの開く、**ツール** > **拡張機能と更新**ウィンドウ。 表示する必要があります、 **FirstPackage**拡張します。 (を開いた場合**拡張機能と更新**、Visual Studio の作業用インスタンスでは表示されません**FirstPackage**)。
 
 ## <a name="load-the-vspackage"></a>VSPackage を読み込む
 
-この時点では、ロードすると、そのことはありませんので、拡張機能は読み込まれません。 (ツール ウィンドウを開き、メニュー コマンドをクリックすると、)、UI を使用した、または特定の UI コンテキストで、VSPackage を読み込む必要がありますを指定することで対話する際に一般的に、拡張機能を読み込むことができます。 Vspackage と UI のコンテキストを読み込む方法の詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。 この手順では、ソリューションが開いているときに VSPackage を読み込む方法を紹介します。
+この時点では、ロードすると、そのことはありませんので、拡張機能は読み込まれません。 (ツール ウィンドウを開き、メニュー コマンドをクリックすると、)、UI を使用した、または特定の UI コンテキストで、VSPackage を読み込む必要がありますを指定することで対話する際に一般的に、拡張機能を読み込むことができます。 Vspackage と UI のコンテキストを読み込む方法の詳細については、[Vspackage の読み込み](../extensibility/loading-vspackages.md)を参照してください。 この手順では、ソリューションが開いているときに VSPackage を読み込む方法を紹介します。
 
 1. 開く、 *FirstPackage.cs*ファイル。 宣言を探して、`FirstPackage`クラス。 既存の属性を次の属性に置き換えます。
 

@@ -1,12 +1,9 @@
 ---
-title: 'UML クラス図: リファレンス |Microsoft Docs'
-ms.custom: ''
+title: UML クラス図:参照 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.generalization.properties
 - vs.teamarch.logicalclassdiagram.toolbox
@@ -26,23 +23,23 @@ ms.assetid: b7c88be0-0d86-4d65-af74-f37e8812d20f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4f3a4fe9949236045238688a9edcd5eef911efb8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977468"
 ---
-# <a name="uml-class-diagrams-reference"></a>UML クラス図: リファレンス
+# <a name="uml-class-diagrams-reference"></a>UML クラス図:参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UML クラス図は、アプリケーションが内部的に使用したり、ユーザーとのやり取りにおいて使用したりするオブジェクトおよび情報の構造を記述するものです。 そこで情報を記述する際に、詳細な実装は考慮されません。 クラスおよび関係は、データベース テーブル、XML ノード、ソフトウェア オブジェクトの組み合わせ、といったさまざまな方法で実装できます。  
   
 > [!NOTE]
->  このトピックでは、UML クラス図について説明します。 .NET クラス図と呼ばれる別の種類のクラス図もあります。これは、プログラム コードを視覚化するために使用します。 詳細については、[を表示するクラスと型のデザインおよび](http://go.microsoft.com/fwlink/?LinkId=142231)を参照してください。  
+>  このトピックでは、UML クラス図について説明します。 .NET クラス図と呼ばれる別の種類のクラス図もあります。これは、プログラム コードを視覚化するために使用します。 詳細については、次を参照してください。[を表示するクラスと型のデザインおよび](http://go.microsoft.com/fwlink/?LinkId=142231)します。  
   
- UML クラス図を作成する、**アーキテクチャ**] メニューの [選択**新しい UML またはレイヤー図**します。 UML クラス図を描画する方法の詳細については、[UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)を参照してください。 作成し、モデリング図を描画する方法の詳細については、[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)を参照してください。  
+ UML クラス図を作成する、**アーキテクチャ**] メニューの [選択**新しい UML またはレイヤー図**します。 UML クラス図を描画する方法の詳細については、次を参照してください。 [UML クラス図。ガイドライン](../modeling/uml-class-diagrams-guidelines.md)します。 作成し、モデリング図を描画する方法の詳細については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
   
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
@@ -61,12 +58,12 @@ UML クラス図は、アプリケーションが内部的に使用したり、�
   
 | **図形** |       **要素**        |                                                                                                                                                             **説明**                                                                                                                                                              |
 |-----------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     1     |        **クラス**         |                                                           特定の構造上または動作上の特性を共有するオブジェクトの定義。 詳細については、[クラス ダイアグラムのプロパティの uml 型](../modeling/properties-of-types-on-uml-class-diagrams.md)を参照してください。                                                            |
+|     1     |        **クラス**         |                                                           特定の構造上または動作上の特性を共有するオブジェクトの定義。 詳細については、次を参照してください。[クラス ダイアグラムのプロパティの uml 型](../modeling/properties-of-types-on-uml-class-diagrams.md)します。                                                            |
 |     1     |        分類子        |                                                                                                             クラス、インターフェイス、または列挙の総称。 コンポーネント、ユース ケース、およびアクターも分類子です。                                                                                                             |
 |     2     | 折りたたみ/展開コントロール |                                                                                         分類子の詳細が表示されていない場合は、分類子の左上にあるエキスパンダーをクリックします。 場合によっては、各セグメントの [+] をクリックする必要もあります。                                                                                         |
-|     3     |      **属性**       |   分類子の各インスタンスにアタッチされている、型指定された値。<br /><br /> 属性を追加する をクリックして、**属性**セクションし、キーを押します**ENTER**します。 属性のシグネチャを入力します。 詳細については、[uml の属性のプロパティにクラス ダイアグラム](../modeling/properties-of-attributes-on-uml-class-diagrams.md)を参照してください。   |
-|     4     |      **操作**       | 分類子のインスタンスが実行できるメソッドまたは関数。 操作を追加する をクリックして、**操作**セクションし、キーを押します**ENTER**します。 操作のシグネチャを入力します。 詳細については、[UML での操作のプロパティにクラス ダイアグラム](../modeling/properties-of-operations-on-uml-class-diagrams.md)を参照してください。 |
-|     5     |     **関連付け**      |                                                                  2 つの分類子のメンバー間の関係。 詳細については、[uml の関連付けのプロパティにクラス ダイアグラム](../modeling/properties-of-associations-on-uml-class-diagrams.md)を参照してください。                                                                   |
+|     3     |      **属性**       |   分類子の各インスタンスにアタッチされている、型指定された値。<br /><br /> 属性を追加する をクリックして、**属性**セクションし、キーを押します**ENTER**します。 属性のシグネチャを入力します。 詳細については、次を参照してください。 [uml の属性のプロパティにクラス ダイアグラム](../modeling/properties-of-attributes-on-uml-class-diagrams.md)します。   |
+|     4     |      **操作**       | 分類子のインスタンスが実行できるメソッドまたは関数。 操作を追加する をクリックして、**操作**セクションし、キーを押します**ENTER**します。 操作のシグネチャを入力します。 詳細については、次を参照してください。 [UML での操作のプロパティにクラス ダイアグラム](../modeling/properties-of-operations-on-uml-class-diagrams.md)します。 |
+|     5     |     **関連付け**      |                                                                  2 つの分類子のメンバー間の関係。 詳細については、次を参照してください。 [uml の関連付けのプロパティにクラス ダイアグラム](../modeling/properties-of-associations-on-uml-class-diagrams.md)します。                                                                   |
 |    5a     |     **集計**      |                                                                                                    所有権を共有する関係を表す関連付け。 **集計**所有者ロールのプロパティに設定されて**Shared**します。                                                                                                     |
 |    5b     |     **コンポジション**      |                                                                                                      「全体 - 部分」の関係を表す関連付け。 **集計**所有者ロールのプロパティに設定されて**複合**します。                                                                                                      |
 |     6     |   **関連付けの名前**   |                                                                                                                                         関連付けの名前。 名前は空白にすることができます。                                                                                                                                          |
@@ -78,7 +75,7 @@ UML クラス図は、アプリケーションが内部的に使用したり、�
   
 |形式|要素|説明|  
 |-----------|-------------|-----------------|  
-|10|**Interface**|外部から認識できるオブジェクトの動作の一部の定義。 詳細については、[クラス ダイアグラムのプロパティの uml 型](../modeling/properties-of-types-on-uml-class-diagrams.md)を参照してください。|  
+|10|**Interface**|外部から認識できるオブジェクトの動作の一部の定義。 詳細については、次を参照してください。[クラス ダイアグラムのプロパティの uml 型](../modeling/properties-of-types-on-uml-class-diagrams.md)します。|  
 |11|**列挙型**|リテラル値のセットで構成される分類子。|  
 |12|**パッケージ**|分類子、関連付け、アクション、生存線、コンポーネント、およびパッケージのグループ。 論理クラス図は、メンバー分類子およびパッケージがパッケージ内に含まれているようすを示します。<br /><br /> 名前はパッケージ内でスコープように**Class1**内**Package1**とは異なる**Class1**パッケージの外部でします。 パッケージの名前の一部として表示されます、**修飾名**プロパティの内容。<br /><br /> 設定することができます、**リンクされたパッケージ**パッケージを参照する任意の UML 図のプロパティ。 この図に作成した要素はすべて、そのパッケージの一部となります。 パッケージの下に表示されるが**UML モデル エクスプ ローラー**します。|  
 |13|**Import**|あるパッケージが別のパッケージのすべての定義を含むことを示す、パッケージ間の関係。|  
@@ -98,6 +95,3 @@ UML クラス図は、アプリケーションが内部的に使用したり、�
  [UML クラス図の属性のプロパティ](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML クラス図の操作のプロパティ](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML クラス ダイアグラムの関連のプロパティ](../modeling/properties-of-associations-on-uml-class-diagrams.md)
-
-
-
