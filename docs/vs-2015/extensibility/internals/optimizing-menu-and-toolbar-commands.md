@@ -1,14 +1,9 @@
 ---
 title: メニューとツールバーのコマンドの最適化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], menus
 - commands [Visual Studio], toolbars
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 47a95f4152e1c0779fc3def057f49b9ec9130259
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 25a721c77269837ad8d158db186274586ad638df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736732"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977214"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>メニュー、ツール バー コマンドの最適化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,4 +36,3 @@ Vspackage とそれに対応するコマンドに追加[!INCLUDE[vsprvs](../../i
 ## <a name="related-sections"></a>関連項目  
  [コマンド、メニュー、およびツール バー](../../extensibility/internals/commands-menus-and-toolbars.md)  
  メニュー、ツール バー、およびコマンド コンボ ボックスが含まれている UI を作成する方法について説明します。
-

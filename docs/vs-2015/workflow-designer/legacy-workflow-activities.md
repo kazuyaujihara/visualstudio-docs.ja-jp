@@ -1,11 +1,8 @@
 ---
 title: 従来のワークフロー アクティビティ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activities
@@ -15,13 +12,13 @@ ms.assetid: 4af7a06b-1e82-43c8-aec8-0dc5fb63d08a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: fa5a6da8d45435fc7c755905a19e95e90a98ad57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205413"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978151"
 ---
 # <a name="legacy-workflow-activities"></a>従来のワークフロー アクティビティ
 [!INCLUDE[wf](../includes/wf-md.md)] に含まれる既定のアクティビティ セットは、制御フロー、条件、イベント処理、状態管理、アプリケーションやサービスとの通信などの機能を提供します。 ワークフローを設計するとき、[!INCLUDE[wfd1](../includes/wfd1-md.md)]に付属しているシステム標準のアクティビティを使用することも、独自のカスタム アクティビティを作成することもできます。  
@@ -62,7 +59,7 @@ ms.locfileid: "49205413"
 |[SynchronizationScopeActivity](http://go.microsoft.com/fwlink?LinkID=65057)|同期されたドメイン内に含まれるアクティビティを順次実行します。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][SynchronizationScopeActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65085)します。|  
 |[TerminateActivity](http://go.microsoft.com/fwlink?LinkID=65058)|エラー条件が発生したとき、ワークフローの実行を即座に終了できます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][TerminateActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65086)します。|  
 |[ThrowActivity](http://go.microsoft.com/fwlink?LinkID=65059)|ワークフローのプロセス メタデータの一部としてスローされた業務処理例外をキャプチャできます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][ThrowActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65087)します。|  
-|[TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093)|トランザクションと例外処理のフレームワークを提供します。 詳細については、[TransactionScopeActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65088)を参照してください。|  
+|[TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093)|トランザクションと例外処理のフレームワークを提供します。 詳細については、次を参照してください。 [TransactionScopeActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65088)します。|  
 |[WebServiceFaultActivity](http://go.microsoft.com/fwlink?LinkID=65046)|Web サービスで発生するエラーをモデル化できます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][WebServiceFaultActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65089)します。|  
 |[WebServiceInputActivity](http://go.microsoft.com/fwlink?LinkID=65047)|Web サービスからデータを取得します。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][WebServiceInputActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65090)します。|  
 |[WebServiceOutputActivity](http://go.microsoft.com/fwlink?LinkID=65048)|Web サービスからワークフローに対する要求に応答します。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][WebServiceOutputActivity アクティビティを使用して](http://go.microsoft.com/fwlink?LinkID=65092)します。|  

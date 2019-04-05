@@ -1,28 +1,25 @@
 ---
 title: '方法: ワークフロー内のブレークポイントの設定 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896225"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978202"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>方法 : ワークフロー内のブレークポイントを設定する
+# <a name="how-to-set-breakpoints-in-workflows"></a>方法: ワークフロー内のブレークポイントを設定する
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]を使用すると、Visual Basic コードまたは C# コードを使用する場合と同じように、グラフィカル ワークフローにブレークポイントを設定できます。 設定したそれぞれのブレークポイントで、ワークフローの実行が停止します。  
   
- ブレークポイントが 3 つの状態:*保留*、*バインド*、および*エラー*します。 ブレークポイントは、設定時には "保留" になり、穴のない赤いアイコンで表示されます。 特定の種類のワークフローがランタイムによって読み込まれると、ブレークポイントの状態は "バインド" になります。 不適切な形式のブレークポイントを指定した場合 (アクティビティ名が無効など) は、エラー ウィンドウが表示されます。 ブレークポイントはブレークポイント ウィンドウに追加されますが、小さな x 印が付きます。  
+ ブレークポイントでは、次の 3 つの状態があります。*保留中*、*バインド*、および*エラー*します。 ブレークポイントは、設定時には "保留" になり、穴のない赤いアイコンで表示されます。 特定の種類のワークフローがランタイムによって読み込まれると、ブレークポイントの状態は "バインド" になります。 不適切な形式のブレークポイントを指定した場合 (アクティビティ名が無効など) は、エラー ウィンドウが表示されます。 ブレークポイントはブレークポイント ウィンドウに追加されますが、小さな x 印が付きます。  
   
 > [!NOTE]
 >  呼び出されるワークフローに対してブレークポイントを設定することはできません。  
@@ -42,6 +39,6 @@ ms.locfileid: "49896225"
      または、ショートカット キーも**F9**するか、アクティビティを選択することができます、アクティビティを右クリックし、選択した後にキー**ブレークポイント**し**ブレークポイントの挿入**、コンテキスト メニュー。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: ワークフロー デバッガーを起動](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
+ [方法: ワークフロー デバッガーを起動します。](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
  [ワークフロー デザイナーでワークフローのデバッグ](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)   
  [方法: ワークフロー デザイナーを使用して XAML をデバッグする](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

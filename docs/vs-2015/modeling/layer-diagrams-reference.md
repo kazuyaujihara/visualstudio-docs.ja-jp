@@ -1,12 +1,9 @@
 ---
-title: 'レイヤー図: リファレンス |Microsoft Docs'
-ms.custom: ''
+title: レイヤー図:参照 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink.properties
@@ -24,15 +21,15 @@ ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 904b92a058b8fb50f3f2e53f093f4add3730dfbf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783221"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978276"
 ---
-# <a name="layer-diagrams-reference"></a>レイヤー図: リファレンス
+# <a name="layer-diagrams-reference"></a>レイヤー図:参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio で使用することができます、*レイヤー図*システムの高度な論理アーキテクチャを視覚化します。 レイヤー図と呼ばれる抽象的な論理グループに、システム内にある物理的な成果物に整理されます。*レイヤー*します。 これらのレイヤーは成果物が実行する主要タスクまたはシステムの主要コンポーネントについて説明します。 各レイヤーには、より詳細なタスクを示す入れ子になったレイヤーを含めることもできます。  
@@ -51,7 +48,7 @@ Visual Studio で使用することができます、*レイヤー図*システ�
   
 - チェックイン操作とビルド操作による検証を追加することによって、必要とされるアーキテクチャをコードの開発中および保守中に補強する。  
   
-  このトピックでは、レイヤー図で使用できる要素について説明します。 作成しレイヤー図を描画、表示する方法については詳細な[レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)します。 レイヤー パターンの詳細については、、 [Patterns & Practices サイト](http://go.microsoft.com/fwlink/?LinkId=145794)を参照してください。  
+  このトピックでは、レイヤー図で使用できる要素について説明します。 作成しレイヤー図を描画、表示する方法については詳細な[レイヤー図。ガイドライン](../modeling/layer-diagrams-guidelines.md)します。 レイヤー パターンの詳細については、次を参照してください。、 [Patterns & Practices サイト](http://go.microsoft.com/fwlink/?LinkId=145794)します。  
   
 ## <a name="reading-layer-diagrams"></a>レイヤー図の解説  
  ![レイヤー図の要素](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -60,7 +57,7 @@ Visual Studio で使用することができます、*レイヤー図*システ�
   
 |**図形**|**要素**|**説明**|  
 |---------------|-----------------|---------------------|  
-|1|**レイヤー**|システム内の物理的な成果物の論理グループ。 このような成果物には、名前空間、プロジェクト、クラス、メソッドなどがあります。<br /><br /> レイヤーにリンクされている成果物を表示するには、レイヤーのショートカット メニューを開きし、**ビュー リンク**を開く**レイヤー エクスプ ローラー**します。<br /><br /> 詳細については、[レイヤー エクスプ ローラー](#Explorer)を参照してください。<br /><br /> -   **Namespace の依存関係の禁止**-このレイヤーに関連付けられている成果物が、指定された名前空間に依存できないことを指定します。<br />-   **禁止された名前空間**-このレイヤーに関連付けられている成果物がする必要があります指定された名前空間に属していないことを指定します。<br />-   **名前空間に必要な**-このレイヤーに関連付けられている成果物は、指定された名前空間のいずれかに属する必要がありますを指定します。|  
+|1|**レイヤー**|システム内の物理的な成果物の論理グループ。 このような成果物には、名前空間、プロジェクト、クラス、メソッドなどがあります。<br /><br /> レイヤーにリンクされている成果物を表示するには、レイヤーのショートカット メニューを開きし、**ビュー リンク**を開く**レイヤー エクスプ ローラー**します。<br /><br /> 詳細については、次を参照してください。[レイヤー エクスプ ローラー](#Explorer)します。<br /><br /> -   **Namespace の依存関係の禁止**-このレイヤーに関連付けられている成果物が、指定された名前空間に依存できないことを指定します。<br />-   **禁止された名前空間**-このレイヤーに関連付けられている成果物がする必要があります指定された名前空間に属していないことを指定します。<br />-   **名前空間に必要な**-このレイヤーに関連付けられている成果物は、指定された名前空間のいずれかに属する必要がありますを指定します。|  
 |2|**依存関係**|あるレイヤーが別のレイヤーの機能を使用することはできても、その逆はできないことを示します。<br /><br /> -   **方向**-依存関係の方向を指定します。|  
 |3|**双方向の依存関係**|あるレイヤーが別のレイヤーの機能を使用でき、その逆もできることを示します。<br /><br /> -   **方向**-依存関係の方向を指定します。|  
 |4|**コメント**|全般的なノートを図または図の要素に追加するために使用します。|  
@@ -94,11 +91,8 @@ Visual Studio で使用することができます、*レイヤー図*システ�
     |----------------------------------|---------------------|  
     |**カテゴリ**|クラス、名前空間、ソース ファイルなどの成果物の種類|  
     |**レイヤー**|成果物にリンクしているレイヤー|  
-    |**検証をサポート**|場合**True**、レイヤー検証プロセスでは、プロジェクトがこの要素との間の依存関係に準拠していることを確認できます。<br /><br /> 場合**False**、リンクは、レイヤー検証プロセスに関与しません。<br /><br /> 詳細については、[レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)を参照してください。|  
+    |**検証をサポート**|場合**True**、レイヤー検証プロセスでは、プロジェクトがこの要素との間の依存関係に準拠していることを確認できます。<br /><br /> 場合**False**、リンクは、レイヤー検証プロセスに関与しません。<br /><br /> 詳細については、次を参照してください。[レイヤー図。ガイドライン](../modeling/layer-diagrams-guidelines.md)します。|  
     |**識別子**|リンクされた成果物への参照|  
   
 ## <a name="see-also"></a>関連項目  
  [アプリのモデルを生成する](../modeling/create-models-for-your-app.md)
-
-
-

@@ -1,30 +1,25 @@
 ---
 title: SAL の理解 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792822"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978321"
 ---
 # <a name="understanding-sal"></a>SAL について
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft ソース コード注釈言語 (SAL) では、関数がそのパラメーターや、それらについて行う想定を終了するときに行う保証を使用する方法について説明するために使用できる注釈のセットを提供します。 注釈はヘッダー ファイルで定義されている`<sal.h>`します。 C++ 用の visual Studio コード分析では、SAL 注釈を使用して、関数の分析を変更します。 Windows ドライバー開発の SAL 2.0 の詳細については、[Windows ドライバーの SAL 2.0 注釈](http://go.microsoft.com/fwlink/?LinkId=250979)を参照してください。  
+Microsoft ソース コード注釈言語 (SAL) では、関数がそのパラメーターや、それらについて行う想定を終了するときに行う保証を使用する方法について説明するために使用できる注釈のセットを提供します。 注釈はヘッダー ファイルで定義されている`<sal.h>`します。 C++ 用の visual Studio コード分析では、SAL 注釈を使用して、関数の分析を変更します。 Windows ドライバー開発の SAL 2.0 の詳細については、次を参照してください。 [Windows ドライバーの SAL 2.0 注釈](http://go.microsoft.com/fwlink/?LinkId=250979)します。  
   
  ネイティブ、C および C++ 開発者の意図と不変性が一貫して express の制限がありますのみを提供します。 SAL 注釈を使用すると、それらを使用する開発者は、その使用方法を理解できるようにより詳細で関数を記述できます。  
   
@@ -47,7 +42,7 @@ void * memcpy(
  この関数の動作とわかりますか。 関数が実装されているかと呼ばれる、特定のプロパティをプログラムの正確性を確実に維持する必要があります。 この例のなどの宣言を見るだけでは何かがわかりません。 、SAL 注釈のないドキュメントやコードのコメントに依存する必要があります。 ここでの MSDN ドキュメントは、`memcpy`といいます。  
   
 > "コピーは、src を取引先のバイト数をカウントします。 ソースとコピー先 memcpy の動作は未定義です。 Memmove を使用して、重複する領域を処理します。   
-> **セキュリティに関する注意:** サイズまたはソース バッファーより大きいコピー先のバッファーが同じであることを確認してください。 詳細についてを参照してバッファー オーバーランの回避します。"  
+> **セキュリティに関するメモ:** コピー先のバッファーが、ソース バッファーと同じサイズ、または大きいサイズであることを確認してください。 詳細についてを参照してバッファー オーバーランの回避します。"  
   
  ドキュメントには、いくつかプログラムの正確性を確実に特定のプロパティを維持するために、コードが提案する情報のビットにはが含まれています。  
   
@@ -164,7 +159,7 @@ void BadInCaller()
   
  呼び出し元が初期化されたバッファーに Null 以外のポインターを渡すことを検証でこの例を Visual Studio コード分析を使用する場合`pInt`します。 この場合、`pInt`ポインターが NULL にすることはできません。  
   
-### <a name="example-the-inopt-annotation"></a>例: \_In_opt\_注釈  
+### <a name="example-the-inopt-annotation"></a>例:\_In_opt\_注釈  
  `_In_opt_` 同じ`_In_`, 点が、入力パラメーターが NULL にできるし、この関数がそのため、確認する必要があります。  
   
 ```cpp  
@@ -219,7 +214,7 @@ void OutCaller()
   
  Visual Studio コード分析ツールの検証呼び出し元がのバッファーに NULL 以外のポインターを渡し`pInt`を返す前に、関数によってバッファーが初期化されているとします。  
   
-### <a name="example-the-outopt-annotation"></a>例: \_Out_opt\_注釈  
+### <a name="example-the-outopt-annotation"></a>例:\_Out_opt\_注釈  
  `_Out_opt_` 同じ`_Out_`, 点が、パラメーターが NULL にできるし、この関数がそのため、確認する必要があります。  
   
 ```cpp  
@@ -247,7 +242,7 @@ void OutOptCaller()
   
  Visual Studio コード分析は、この関数をチェックする前に null を検証します`pInt`が逆参照される場合に`pInt`を返す前に、関数によってバッファーが初期化されている NULL でないです。  
   
-### <a name="example-the-inout-annotation"></a>例: \_Inout\_注釈  
+### <a name="example-the-inout-annotation"></a>例:\_Inout\_注釈  
  `_Inout_` 関数によって変更されるポインター パラメーターの注釈に使用されます。 ポインターは、呼び出しの前に有効な初期化データを指す必要がありますされ、変わる場合でもが必要も有効な値を返された場合。 注釈は、関数の読み取りし、書き込みを 1 つの要素のバッファーに自由に可能性があることを指定します。 呼び出し元は、バッファーを提供し、初期化する必要があります。  
   
 > [!NOTE]
@@ -279,7 +274,7 @@ void BadInOutCaller()
   
  Visual Studio コード分析は、呼び出し元が初期化されたバッファーに NULL 以外のポインターを渡すことを検証します。 `pInt`、する前に返された場合に、`pInt`も null でないバッファーが初期化されます。  
   
-### <a name="example-the-inoutopt-annotation"></a>例: \_Inout_opt\_注釈  
+### <a name="example-the-inoutopt-annotation"></a>例:\_Inout_opt\_注釈  
  `_Inout_opt_` 同じ`_Inout_`, 点が、入力パラメーターが NULL にできるし、この関数がそのため、確認する必要があります。  
   
 ```cpp  
@@ -309,7 +304,7 @@ void InOutOptCaller()
   
  Visual Studio コード分析は、この関数は、バッファーにアクセスする前に、null チェックを検証します。`pInt`がを返す前に、関数によってバッファーが初期化されている NULL でないです。  
   
-### <a name="example-the-outptr-annotation"></a>例: \_Outptr\_注釈  
+### <a name="example-the-outptr-annotation"></a>例:\_Outptr\_注釈  
  `_Outptr_` ポインターを返すためのものがパラメーターの注釈に使用されます。  パラメーター自体が null の場合、することはできず、呼び出された関数では、NULL 以外のポインターを返しますが初期化されたデータを指すポインター。  
   
 ```cpp  
@@ -340,7 +335,7 @@ void OutPtrCaller()
   
  Visual Studio コード分析は、呼び出し元が NULL 以外のポインターを渡すことを検証します`*pInt`を返す前に、関数によってバッファーが初期化されているとします。  
   
-### <a name="example-the-outptropt-annotation"></a>例: \_Outptr_opt\_注釈  
+### <a name="example-the-outptropt-annotation"></a>例:\_Outptr_opt\_注釈  
  `_Outptr_opt_` 同じ`_Outptr_`パラメーターが省略可能なことを除いて、-、呼び出し元が NULL ポインターでパラメーターに渡すことができます。  
   
 ```cpp  
@@ -407,7 +402,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
   
 - 注釈の値の範囲の注釈を設定して、コード分析は、バッファーとポインターの安全を確保できるようにします。  
   
-- ルールのロックおよびロックの副作用の注釈を設定します。 詳細については、[ロック動作の注釈を付ける](../code-quality/annotating-locking-behavior.md)を参照してください。  
+- ルールのロックおよびロックの副作用の注釈を設定します。 詳細については、次を参照してください。[ロック動作の注釈を付ける](../code-quality/annotating-locking-behavior.md)します。  
   
 - ドライバーのプロパティとその他のドメイン固有のプロパティの注釈を設定します。  
   
@@ -424,6 +419,3 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [ロック動作に注釈を付ける](../code-quality/annotating-locking-behavior.md)   
  [注釈を適用するタイミングと場所を指定します。](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [ベスト プラクティスと例](../code-quality/best-practices-and-examples-sal.md)
-
-
-
