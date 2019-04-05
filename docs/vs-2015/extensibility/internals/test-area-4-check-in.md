@@ -1,27 +1,22 @@
 ---
 title: 'テスト領域 4: チェックイン |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
 - source control plug-ins, checking items in
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 97a610325a5165a1de2cc50fede5bbabf182ef5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 130d1b6b783a07261b9825c37e21fa2eeb008954
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973660"
 ---
 # <a name="test-area-4-check-in"></a>テスト領域 4: チェックイン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51783306"
 ## <a name="test-cases"></a>テスト ケース  
  チェックイン テスト領域の特定のテスト_ケースを次に示します。  
   
-### <a name="case-4a-modified-items"></a>ケース 4 a: 項目の変更  
+### <a name="case-4a-modified-items"></a>ケース 4 a:変更された項目  
  動作が変更されているソース管理下にあるファイルを更新するチェックインの使用について説明します。  
   
 |アクション|テスト ステップ|予想される結果を確認します|  
@@ -57,7 +52,7 @@ ms.locfileid: "51783306"
 |チェック アウトされているテキスト ファイルを変更して、ファイルのみで確認してください (**チェックイン** ダイアログ ボックス)|1.テキスト ファイルを新しいプロジェクトを作成します。<br />2.ソース管理にソリューションを追加します。<br />3.チェック アウトして、テキスト ファイルを変更します。<br />4.[チェックイン] ダイアログ ボックスを使用してチェックイン (**ファイル**、**ソース管理**、**チェックイン**)。|一般的な想定される動作です。|  
 |チェック アウトされているテキスト ファイルを変更して、ファイルのみで確認してください (**保留中のチェックイン**ウィンドウ)|1.テキスト ファイルを新しいプロジェクトを作成します。<br />2.ソース管理にソリューションを追加します。<br />3.チェック アウトして、テキスト ファイルを変更します。<br />4.使用してチェックイン、**保留中のチェックイン**ウィンドウ。|一般的な想定される動作です。|  
   
-### <a name="case-4b-adding-files"></a>ケース 4 b: ファイルを追加します。  
+### <a name="case-4b-adding-files"></a>ケース 4 b:ファイルを追加します。  
  ファイルをプロジェクトまたはソリューションに項目を追加する場合、プロジェクトまたはソリューションも変更する必要があります。 したがって親ファイルはチェック アウトと追加を完了にチェックインする必要があります。  
   
 |アクション|テスト ステップ|予想される結果を確認します|  
@@ -65,7 +60,7 @@ ms.locfileid: "51783306"
 |テキスト ファイルを追加し、すべてをチェックイン (**チェックイン** ダイアログ ボックス)|1.新しいプロジェクトを作成します。<br />2.ソース管理にソリューションを追加します。<br />3.テキスト ファイルをプロジェクトに追加します。<br />4.求められた場合は、プロジェクトのチェック アウトをそのまま使用します。<br />5.ソリューションを選択します。**ソリューション エクスプ ローラー**します。<br />6.チェックイン、**チェックイン** ダイアログ ボックス。|一般的な想定される動作です。|  
 |テキスト ファイルを追加し、すべてをチェックイン (**保留中のチェックイン**ウィンドウ)|1.新しいプロジェクトを作成します。<br />2.ソース管理にソリューションを追加します。<br />3.テキスト ファイルをプロジェクトに追加します。<br />4.求められた場合は、プロジェクトのチェック アウトをそのまま使用します。<br />5.ソリューションをチェックイン**保留中のチェックイン**ウィンドウ。|共通の想定される動作|  
   
-### <a name="case-4c-adding-projects"></a>ケース 4 c: プロジェクトの追加  
+### <a name="case-4c-adding-projects"></a>ケース 4 c:プロジェクトの追加  
  ソリューションにプロジェクトを追加するときに、ソリューションも変更する必要があります。 したがって、ソリューション ファイルもチェック アウトされ、追加を完了にチェックインする必要があります。  
   
 |アクション|テスト ステップ|予想される結果を確認します|  
@@ -75,4 +70,3 @@ ms.locfileid: "51783306"
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグイン向けのテスト ガイド](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-
