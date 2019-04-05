@@ -1,25 +1,20 @@
 ---
 title: スキーマ セットの検索 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 885797e319652aaf9573b0c171318506518f82df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c6993ce3038b395179aa5c0a667078d0ee478997
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204205"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975698"
 ---
 # <a name="searching-the-schema-set"></a>スキーマ セットの検索
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ XML スキーマ エクスプローラーでは、次の方法でスキーマ �
 -   import ステートメントの `namespace` 属性。  
   
 ## <a name="schema-specific-search"></a>スキーマ固有の検索  
- XML スキーマ エクスプローラーには、XML スキーマ エクスプローラーのコンテキスト メニューを使用してアクセスできる組み込みの検索機能もあります。 使用できるコンテキスト メニューの詳細については、[コンテキスト メニュー](../xml-tools/context-menus-xml-schema-explorer.md)を参照してください。 スタート ビューからスキーマ固有の検索を実行することもできます。詳細については、「スキーマ セットの詳細」セクションを参照してください、[スタート ビュー](../xml-tools/start-view.md)トピック。  
+ XML スキーマ エクスプローラーには、XML スキーマ エクスプローラーのコンテキスト メニューを使用してアクセスできる組み込みの検索機能もあります。 使用できるコンテキスト メニューの詳細については、次を参照してください。[コンテキスト メニュー](../xml-tools/context-menus-xml-schema-explorer.md)します。 スタート ビューからスキーマ固有の検索を実行することもできます。詳細については、「スキーマ セットの詳細」セクションを参照してください、[スタート ビュー](../xml-tools/start-view.md)トピック。  
   
 ## <a name="displaying-and-navigating-search-results"></a>検索結果の表示および移動  
  検索が終了すると、ツール バーに概要結果ペインが追加され、検索結果が表示されます。 検索結果は XML スキーマ エクスプローラーでも強調表示され、垂直スクロール バーの目盛りでマークされます。 使用して、検索結果を移動することができます、**次の検索結果に移動して**と**前の検索結果に移動して**概要結果ペインはキーボードのキーを使用して、XML スキーマ エクスプ ローラー ツールバーのボタンF3 キーおよび shift + f3;または、スクロール バーの目盛りをクリックします。  
@@ -59,6 +54,3 @@ XML スキーマ エクスプローラーでは、次の方法でスキーマ �
   
 ## <a name="see-also"></a>関連項目  
  [XML スキーマ エクスプローラー](../xml-tools/xml-schema-explorer.md)
-
-
-

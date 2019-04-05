@@ -1,23 +1,18 @@
 ---
 title: カスタム プロジェクトのバージョンの認識を行う |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833006"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973199"
 ---
 # <a name="making-custom-projects-version-aware"></a>カスタム プロジェクトでのバージョンの認識
 カスタム プロジェクト システムでは、カスタム プロジェクトを Visual Studio の複数のバージョンに読み込むことができます。 また、そのタイプのプロジェクトが、以前のバージョンの Visual Studio に読み込まれないようにすることもできます。 そのプロジェクトの修復や変換や廃止が必要になった場合に備えて、今後のバージョンでそのプロジェクト自体が識別されるようにすることもできます。  
@@ -25,21 +20,21 @@ ms.locfileid: "49833006"
 ## <a name="allowing-projects-to-load-in-multiple-versions"></a>複数のバージョンでのプロジェクトの読み込みの許可  
  SP1 以降の [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] で作成されたほとんどのプロジェクトを、複数のバージョンで動作するように変更できます。  
   
- プロジェクトを読み込む前に、Visual Studio は <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> メソッドを呼び出してプロジェクトをアップグレードできるかどうかを判別します。 プロジェクトをアップグレードできる場合、`UpgradeProject_CheckOnly` メソッドは後で <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> メソッドを呼び出してプロジェクトをアップグレードできるようにするためのフラグを設定します。 互換性のないプロジェクトはアップグレードできないため、前のセクションで説明したように、`UpgradeProject_CheckOnly` ではまずプロジェクトの互換性を確認する必要があります。  
+ プロジェクトを読み込む前に、Visual Studio は <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> メソッドを呼び出してプロジェクトをアップグレードできるかどうかを判別します。 プロジェクトをアップグレードできる場合、`UpgradeProject_CheckOnly` メソッドは後で <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> メソッドを呼び出してプロジェクトをアップグレードできるようにするためのフラグを設定します。 互換性のないプロジェクトはアップグレードできないため、前のセクションで説明したように、 `UpgradeProject_CheckOnly` ではまずプロジェクトの互換性を確認する必要があります。  
   
- プロジェクト システムの作成者として、プロジェクト システムのユーザーがアップグレードをチェックできるように `UpgradeProject_CheckOnly` を ( `IVsProjectUpgradeViaFactory4` インターフェイスから) 実装します。 ユーザーがプロジェクトを開くと、プロジェクトを読み込む前に、このメソッドが呼び出されて、プロジェクトを修復する必要があるかどうかが判別されます。 アップグレード要件の候補が `VSPUVF_REPAIRFLAGS` に列挙され、その中には次のようなものがあります。  
+ プロジェクト システムの作成者として、プロジェクト システムのユーザーがアップグレードをチェックできるように `UpgradeProject_CheckOnly` を ( `IVsProjectUpgradeViaFactory4` インターフェイスから) 実装します。 ユーザーがプロジェクトを開くと、プロジェクトを読み込む前に、このメソッドが呼び出されて、プロジェクトを修復する必要があるかどうかが判別されます。 アップグレード要件の候補が `VSPUVF_REPAIRFLAGS`に列挙され、その中には次のようなものがあります。  
   
-1.  `SPUVF_PROJECT_NOREPAIR`: 修復は不要です。  
+1.  `SPUVF_PROJECT_NOREPAIR`:修復は不要です。  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: プロジェクトと以前のバージョンとの互換性を確保します。以前のバージョンの製品で見られたような問題は発生しません。  
+2.  `VSPUVF_PROJECT_SAFEREPAIR`:により、プロジェクトは、以前のバージョンと互換性のあるせず、製品の以前のバージョンで生じる可能性のある問題が発生します。  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: プロジェクトと以前のバージョンとの互換性を確保しますが、以前のバージョンの製品で見られたような問題が発生するリスクがあります。 たとえば、プロジェクトが別の SDK バージョンに依存している場合、プロジェクトの互換性は確保できません。  
+3.  `VSPUVF_PROJECT_UNSAFEREPAIR`:により、プロジェクトは下位互換性は、製品の以前のバージョンとの遭遇した問題のいくつかリスクです。 たとえば、プロジェクトが別の SDK バージョンに依存している場合、プロジェクトには互換性がありません。  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: プロジェクトと以前のバージョンとの互換性を確保しません。  
+4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`:により、プロジェクトは、以前のバージョンと互換性がありません。  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`: 現在のバージョンがこのプロジェクトをサポートしないことを示します。  
+5.  `VSPUVF_PROJECT_INCOMPATIBLE`:現在のバージョンがこのプロジェクトをサポートしないことを示します。  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`: このプロジェクトがサポートされなくなったことを示します。  
+6.  `VSPUVF_PROJECT_DEPRECATED`:このプロジェクトのサポートが不要になったことを示します。  
   
 > [!NOTE]
 >  混乱を避けるため、これらを設定するときにアップグレード フラグを組み合わせないでください。 たとえば、 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`のようなあいまいなアップグレード状態を作成しないでください。  
@@ -63,9 +58,9 @@ ms.locfileid: "49833006"
   
 1.  コンポーネントで、グローバル サービス SVsSolution から `IVsAppCompat` インターフェイスを取得します。  
   
-     詳細については、「 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> 」を参照してください。  
+     詳細については、「<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>」を参照してください。  
   
-2.  コンポーネントで、`IVsAppCompat.AskForUserConsentToBreakAssetCompat` を呼び出して、対象のプロジェクトを表す `IVsHierarchy` インターフェイスの配列を渡します。  
+2.  コンポーネントで、 `IVsAppCompat.AskForUserConsentToBreakAssetCompat`を呼び出して、対象のプロジェクトを表す `IVsHierarchy` インターフェイスの配列を渡します。  
   
      このメソッドのシグネチャは次のとおりです。  
   
@@ -100,10 +95,10 @@ ms.locfileid: "49833006"
   
      BreakAssetCompatibility メソッドは、その後 `IVsHierarchy.SetProperty` メソッドを呼び出して、ルート `VSHPROPID_MinimumDesignTimeCompatVersion` プロパティを前の手順で取得したバージョン文字列の値に設定します。  
   
-     詳細については、「 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A> 」を参照してください。  
+     詳細については、「<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>」を参照してください。  
   
 > [!IMPORTANT]
->  プロジェクトを互換性ありまたは互換性なしとしてマークするには、`VSHPROPID_MinimumDesignTimeCompatVersion` プロパティを実装する必要があります。 たとえば、プロジェクト システムが MSBuild プロジェクト ファイルを使用している場合は、対応する `<MinimumVisualStudioVersion>` プロパティ値と等しい値を持つ `VSHPROPID_MinimumDesignTimeCompatVersion` ビルド プロパティをプロジェクト ファイルに追加します。  
+>  プロジェクトを互換性ありまたは互換性なしとしてマークするには、 `VSHPROPID_MinimumDesignTimeCompatVersion` プロパティを実装する必要があります。 たとえば、プロジェクト システムが MSBuild プロジェクト ファイルを使用している場合は、対応する `<MinimumVisualStudioVersion>` プロパティ値と等しい値を持つ `VSHPROPID_MinimumDesignTimeCompatVersion` ビルド プロパティをプロジェクト ファイルに追加します。  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>プロジェクトに互換性があるかどうかの検出  
  Visual Studio の現在のバージョンと互換性がないプロジェクトは、読み込まれないようにする必要があります。 さらに、互換性のないプロジェクトは、アップグレードしたり修復したりすることができません。 このため、プロジェクトの互換性は 2 回確認する必要があります。1 回目はプロジェクトのアップグレードや修復を検討するときで、2 回目はプロジェクトを読み込む前です。  
@@ -123,13 +118,13 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
 )  
 ```  
   
- このメソッドが `pUpgradeRequired` を TRUE に設定し、 `S_OK`を返した場合、その結果は "アップグレード" として扱われ、メソッドが値 `VSPUVF_PROJECT_ONEWAYUPGRADE`にアップグレード フラグを設定した場合と同様になります。このことについては、このトピックで後述します。 この古いメソッドを使用することで、次の戻り値がサポートされます。ただし、`pUpgradeRequired` を TRUE に設定しているときに限られます。  
+ このメソッドが `pUpgradeRequired` を TRUE に設定し、 `S_OK`を返した場合、その結果は "アップグレード" として扱われ、メソッドが値 `VSPUVF_PROJECT_ONEWAYUPGRADE`にアップグレード フラグを設定した場合と同様になります。このことについては、このトピックで後述します。 この古いメソッドを使用することで、次の戻り値がサポートされます。ただし、 `pUpgradeRequired` を TRUE に設定しているときに限られます。  
   
-1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`。 この戻り値は、`VSPUVF_PROJECT_SAFEREPAIR` (このトピックで後述) と同様、`pUpgradeRequired` 値を TRUE に変換します。  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`。 この戻り値は、 `pUpgradeRequired` (このトピックで後述) と同様、 `VSPUVF_PROJECT_SAFEREPAIR`値を TRUE に変換します。  
   
-2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`。 この戻り値は、`VSPUVF_PROJECT_UNSAFEREPAIR` (このトピックで後述) と同様、`pUpgradeRequired` 値を TRUE に変換します。  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`。 この戻り値は、 `pUpgradeRequired` (このトピックで後述) と同様、 `VSPUVF_PROJECT_UNSAFEREPAIR`値を TRUE に変換します。  
   
-3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`。 この戻り値は、`VSPUVF_PROJECT_ONEWAYUPGRADE` (このトピックで後述) と同様、`pUpgradeRequired` 値を TRUE に変換します。  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`。 この戻り値は、 `pUpgradeRequired` (このトピックで後述) と同様、 `VSPUVF_PROJECT_ONEWAYUPGRADE`値を TRUE に変換します。  
   
    `IVsProjectUpgradeViaFactory4` と `IVsProjectFlavorUpgradeViaFactory2` の新しい実装により、移行の種類をより正確に指定できます。  
   

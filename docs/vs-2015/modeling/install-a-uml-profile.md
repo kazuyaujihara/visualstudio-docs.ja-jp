@@ -1,25 +1,22 @@
 ---
 title: UML プロファイルのインストール |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, profiles
 ms.assetid: 586f9ba5-4d01-4a1d-b001-32e2efaa4f24
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0b109916689aa395f8f5684ea6c78ae2b5b3465e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 2ae3ee33f47a60a74148698424ad58397e0cb577
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729038"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976570"
 ---
 # <a name="install-a-uml-profile"></a>UML プロファイルのインストール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ UML プロファイルを使用して Visual Studio を拡張できます。 プ
   
  プロファイルを使用して生成された UML モデルを受け取った場合、同じプロファイルをインストールしていなければ、一部のプロパティは表示されません。  
   
- プロファイルは、Visual Studio 拡張機能の中で配布されます。 拡張機能には、メニュー コマンドなどの他の機能も含まれる場合があります。 詳細については、[Visual Studio 拡張機能の管理](http://go.microsoft.com/fwlink/?LinkId=160728)を参照してください。  
+ プロファイルは、Visual Studio 拡張機能の中で配布されます。 拡張機能には、メニュー コマンドなどの他の機能も含まれる場合があります。 詳細については、次を参照してください。 [Visual Studio 拡張機能の管理](http://go.microsoft.com/fwlink/?LinkId=160728)します。  
   
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>UML プロファイルをコンピューターにインストールするには  
   
@@ -51,6 +48,3 @@ UML プロファイルを使用して Visual Studio を拡張できます。 プ
 ## <a name="see-also"></a>関連項目  
  [プロファイルとステレオタイプを使用したモデルをカスタマイズします。](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [プロファイルを定義して UML を拡張する](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: コンポーネントの管理 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 626717ed559257d04cb0bbcca3c76283aac22d63
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c4667bd26db80c005605214eeca9e852a7705bdf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743296"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973006"
 ---
 # <a name="component-management"></a>コンポーネント管理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Windows インストーラーのタスクの単位は、Windows インストー�
   
  VSPackage、インストーラーを作成するいくつかの製品を使用できますが、この説明は Windows インストーラー (.msi) ファイルの使用を想定しています。 インストーラーを作成するときに、正しい参照カウントが常に発生するため、ファイルの配置正しく管理する必要があります。 その結果、製品の異なるバージョンに影響またはインストールの組み合わせで互いを中断してシナリオをアンインストールします。  
   
- Windows インストーラー、参照カウントは、コンポーネント レベルで発生します。 リソースの整理を慎重にする必要があります: ファイルやレジストリ エントリ、— コンポーネントにします。 組織の他のレベルがある-モジュール、機能、および製品など、さまざまなシナリオで役立つことができます。 詳細については、[Windows インストーラーの基本事項](../../extensibility/internals/windows-installer-basics.md)を参照してください。  
+ Windows インストーラー、参照カウントは、コンポーネント レベルで発生します。 リソースの整理を慎重にする必要があります: ファイルやレジストリ エントリ、— コンポーネントにします。 組織の他のレベルがある-モジュール、機能、および製品など、さまざまなシナリオで役立つことができます。 詳細については、次を参照してください。 [Windows インストーラーの基本事項](../../extensibility/internals/windows-installer-basics.md)します。  
   
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>サイド バイ サイドでインストールのセットアップの作成のガイドライン  
   
@@ -57,4 +52,3 @@ Windows インストーラーのタスクの単位は、Windows インストー�
 ## <a name="see-also"></a>関連項目  
  [共有およびバージョン管理 Vspackage の使い分け](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [VSPackage のセットアップ シナリオ](../../extensibility/internals/vspackage-setup-scenarios.md)
-

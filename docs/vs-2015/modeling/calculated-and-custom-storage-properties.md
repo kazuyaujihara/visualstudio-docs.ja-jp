@@ -1,25 +1,22 @@
 ---
 title: 計算およびカスタム格納プロパティ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 ms.assetid: 42b785f9-2b0f-4f13-a6b4-246e5e0d477a
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: e934d071a8b26db29f2b9450939fc895efa1e5d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972920"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算プロパティおよびカスタム格納プロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +47,7 @@ ms.locfileid: "49852857"
   
 4.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
-     次のエラー メッセージを受信する:"*YourClass* Get の定義が含まれていない*YourProperty*"。  
+     次のエラー メッセージが表示されます。"*YourClass* Get の定義が含まれていない*YourProperty*"。  
   
 5.  エラー メッセージをダブルクリックします。  
   
@@ -73,7 +70,7 @@ ms.locfileid: "49852857"
     }  }  
     ```  
   
-8.  設定した場合**種類**に**カスタム ストレージ**、提供する必要がありますも、`Set`メソッド。 例えば:  
+8.  設定した場合**種類**に**カスタム ストレージ**、提供する必要がありますも、`Set`メソッド。 例:  
   
     ```  
     void SetAgeValue(int value)  
@@ -97,7 +94,7 @@ ms.locfileid: "49852857"
   
 - ただし、データベースまたはファイルの内容、または、ストア外のオブジェクトなど、任意の外部リソースを更新にする必要があります。 これにより、ストア内の値を持つ synchronism で維持されることを確認します。  
   
-  例えば:  
+  例:  
   
 ```  
 void SetAgeValue(int value)  
@@ -112,12 +109,9 @@ void SetAgeValue(int value)
 }  
 ```  
   
- トランザクションの詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。  
+ トランザクションの詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [移動して、プログラム コードでモデルを更新しています](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [ドメインのプロパティのプロパティ](../modeling/properties-of-domain-properties.md)   
  [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)
-
-
-

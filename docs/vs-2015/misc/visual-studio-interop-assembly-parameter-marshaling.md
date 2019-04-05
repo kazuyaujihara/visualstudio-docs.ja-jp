@@ -1,30 +1,25 @@
 ---
 title: Visual Studio 相互運用機能アセンブリのパラメーター マーシャ リング |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195020"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962831"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio 相互運用機能アセンブリのパラメーター マーシャリング
-マネージ コードで記述されている Vspackage は、呼び出しまたはアンマネージ COM コードによって呼び出される必要があります。 通常、メソッドの引数が変換、または、マーシャ リングされる、自動的に相互運用マーシャラーによって。 ただし、場合によって引数は、変換できない簡単な方法でします。 その場合、相互運用機能アセンブリのメソッド プロトタイプのパラメーターは、COM 関数のパラメーターをできるだけ一致に使用されます。 詳細については、[相互運用マーシャ リング](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)を参照してください。  
+マネージ コードで記述されている Vspackage は、呼び出しまたはアンマネージ COM コードによって呼び出される必要があります。 通常、メソッドの引数が変換、または、マーシャ リングされる、自動的に相互運用マーシャラーによって。 ただし、場合によって引数は、変換できない簡単な方法でします。 その場合、相互運用機能アセンブリのメソッド プロトタイプのパラメーターは、COM 関数のパラメーターをできるだけ一致に使用されます。 詳細については、次を参照してください。[相互運用マーシャ リング](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)します。  
   
 ## <a name="general-suggestions"></a>一般的な注意点  
   
@@ -116,7 +111,7 @@ else
   
  受け取るメソッドがマネージ<xref:System.IntPtr>この型のパラメーターを使用する必要があります、<xref:System.IntPtr>結果を処理する変換演算子を入力します。 最初の変換、<xref:System.IntPtr>に`int`関連する整数の定数に対してテストします。 値が一致しない場合は、必要な型のオブジェクトに変換して、続行します。  
   
- この例については、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>を参照してください。  
+ この例については、次を参照してください。<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>します。  
   
 ### <a name="ole-return-values-passed-as-out-parameters"></a>OLE を返す値として渡される [out] パラメーター  
  持つメソッドを探して、 `retval` 、COM インターフェイスでの戻り値が、`int`戻り値と [out] 配列パラメーターを追加、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]相互運用機能アセンブリのメソッド プロトタイプ。 オフのために、これらのメソッドが特別な処理を必要とする必要がある、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]メソッド プロトタイプの相互運用機能アセンブリが COM インターフェイスのメソッドよりも 1 つのパラメーターがあります。  
@@ -128,7 +123,7 @@ else
  この型のインターフェイスを呼び出すマネージ メソッドには、[out] 配列から最初の要素をプルする必要があります。 この要素は、場合と同様に扱うことができます、`retval`対応する COM インターフェイスからの戻り値。  
   
 ## <a name="see-also"></a>関連項目  
- [相互運用マーシャリング](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [相互運用マーシャリング](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [相互運用マーシャリング](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [相互運用性のトラブルシューティング](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [マネージド VSPackage](../misc/managed-vspackages.md)

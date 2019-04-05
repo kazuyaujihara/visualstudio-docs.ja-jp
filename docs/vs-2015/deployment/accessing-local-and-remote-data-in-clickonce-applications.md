@@ -1,14 +1,9 @@
 ---
 title: ClickOnce アプリケーションにおけるローカルおよびリモート データへのアクセス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 4fe0c0b1cd7659a5887f267181ffd6fa7bb5e8d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 21e16823d664b927008e43f8bfc6972ac284eac7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218844"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963858"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>ClickOnce アプリケーションにおけるローカル データおよびリモート データへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +46,10 @@ ms.locfileid: "49218844"
 >  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションをアンインストールすると、そのアプリケーションのデータ ディレクトリも削除されます。 文書ファイルなど、エンド ユーザーが管理するデータを格納するためには、データ ディレクトリを使用しないでください。  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>ClickOnce で配布するデータ ファイルのマーク付け  
- 既存のファイルをデータ ディレクトリに格納するには、そのファイルを [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションのアプリケーション マニフェスト ファイル内でデータ ファイルとしてマークする必要があります。 詳細については、「 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。  
+ 既存のファイルをデータ ディレクトリに格納するには、そのファイルを [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションのアプリケーション マニフェスト ファイル内でデータ ファイルとしてマークする必要があります。 詳細については、「[方法 :ClickOnce アプリケーションにデータ ファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。  
   
 #### <a name="reading-from-and-writing-to-the-data-directory"></a>データ ディレクトリからの読み取りとデータ ディレクトリの書き込み  
- データ ディレクトリからデータを読み込むには、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションで読み取りアクセス許可を要求することが必要です。同じように、データ ディレクトリにデータを書き込むには、書き込みのアクセス許可が必要です。 完全な信頼を得て実行するようにアプリケーションが構成されている場合、これらのアクセス許可は自動的にアプリケーションに与えられます。 アクセス許可の昇格または信頼されたアプリケーションの配置を使用して、アプリケーションのアクセス許可の昇格の詳細については、[ClickOnce アプリケーションのセキュリティで保護する](../deployment/securing-clickonce-applications.md)を参照してください。  
+ データ ディレクトリからデータを読み込むには、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションで読み取りアクセス許可を要求することが必要です。同じように、データ ディレクトリにデータを書き込むには、書き込みのアクセス許可が必要です。 完全な信頼を得て実行するようにアプリケーションが構成されている場合、これらのアクセス許可は自動的にアプリケーションに与えられます。 アクセス許可の昇格または信頼されたアプリケーションの配置を使用して、アプリケーションのアクセス許可の昇格の詳細については、次を参照してください。 [ClickOnce アプリケーションのセキュリティで保護する](../deployment/securing-clickonce-applications.md)します。  
   
 > [!NOTE]
 >  組織が信頼されたアプリケーションの配置を使用しておらず、アクセス許可の昇格機能をオフにしている場合は、アクセス許可のアサートは失敗します。  
@@ -64,7 +59,7 @@ ms.locfileid: "49218844"
  [!code-csharp[ClickOnce.OpenDataFile#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.OpenDataFile/CS/Form1.cs#1)]
  [!code-vb[ClickOnce.OpenDataFile#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.OpenDataFile/VB/Form1.vb#1)]  
   
- 配置内のファイルをデータ ファイルとしてマークする方法の詳細については、「 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。  
+ データ ファイルとして配置内のファイルをマークする方法の詳細については、次を参照してください。[方法。ClickOnce アプリケーションにデータ ファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。  
   
  <xref:System.Windows.Forms.Application> クラスにある <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>など、関連する変数を使用してデータ ディレクトリのパスを取得することもできます。  
   
@@ -116,7 +111,4 @@ ms.locfileid: "49218844"
  ほとんどの場合、データベースに直接アクセスする必要はありません。代わりに、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] で記述された Web サーバー アプリケーションまたは XML Web サービスを経由してデータベースにアクセスします。 Web サーバーから [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを配置した場合は、この方法でデータベースにアクセスするのが、多くの場合に最良の方法です。 部分的に信頼されたサーバーに、アプリケーションのアクセス許可を昇格せずにアクセスできます。  
   
 ## <a name="see-also"></a>関連項目  
- [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
-
-
-
+ [方法: ClickOnce アプリケーションにデータ ファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

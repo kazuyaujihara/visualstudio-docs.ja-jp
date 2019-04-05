@@ -1,23 +1,20 @@
 ---
 title: 生成し、モデルからのアプリの構成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 58d7112048aba7d0c3b75e83e2b10249b200e6d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 6664bf9ed0e77b99b7d5482907fe07f155fe6162
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806361"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963269"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>モデルからアプリを生成し構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +64,7 @@ ms.locfileid: "51806361"
   
 -   **懸案事項を分離します。** 変化する側面を独立した複数の領域に分割できる場合、各領域に対して別個のモデルを使用してください。 ModelBus を使用すると、モデル、およびモデル間の制約の両方に影響する操作を定義できます。  
   
-     たとえば、1 つのモデルを使って Web ページ間の移動を定義し、次に別のモデルを使ってページのレイアウトを定義します。 詳細については、[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)を参照してください。  
+     たとえば、1 つのモデルを使って Web ページ間の移動を定義し、次に別のモデルを使ってページのレイアウトを定義します。 詳細については、次を参照してください。[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)します。  
   
 -   **ソリューションではなく、要件をモデル化します。** ユーザー要求を記述するように、DSL を設計するか、UML を適用します。 これとは対照的に、実装の可変部分に従って、表記を設計しないでください。  
   
@@ -87,6 +84,3 @@ ms.locfileid: "51806361"
  [ドメイン固有言語からコードを生成します。](../modeling/generating-code-from-a-domain-specific-language.md)   
  [方法: プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
-
-
-

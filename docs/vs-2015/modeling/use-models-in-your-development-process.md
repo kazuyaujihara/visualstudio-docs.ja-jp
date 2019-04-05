@@ -1,13 +1,8 @@
 ---
 title: モデルを使用して、開発プロセス内 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -15,31 +10,31 @@ ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56534483f8b9cda99b756524d87408efbedfe275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757700"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59002226"
 ---
 # <a name="use-models-in-your-development-process"></a>開発プロセス内でのモデルの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、システム、アプリケーション、またはコンポーネントについて理解し、変更するためのモデルを使用することができます。 モデルは、システムが動作する世界を視覚化できるようにして、ユーザーのニーズを明確化し、システムのアーキテクチャを定義し、コードを分析し、コードが要件を満たしていることを確認できるようにします。 参照してください[Channel 9 ビデオ: モデリングによるアーキテクチャの改善](http://go.microsoft.com/fwlink/?LinkID=252078)します。  
+Visual Studio では、システム、アプリケーション、またはコンポーネントについて理解し、変更するためのモデルを使用することができます。 モデルは、システムが動作する世界を視覚化できるようにして、ユーザーのニーズを明確化し、システムのアーキテクチャを定義し、コードを分析し、コードが要件を満たしていることを確認できるようにします。 参照してください[Channel 9 ビデオ。モデリングによるアーキテクチャの改善](http://go.microsoft.com/fwlink/?LinkID=252078)します。  
   
  どのバージョンの Visual Studio が各モデルの種類をサポートしているかについては、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
 ## <a name="how-to-use-models"></a>モデルの使用方法  
  モデルは、いくつかの方法で役立ちます。  
   
-- モデリング図を描画すると、要件、アーキテクチャ、および概要設計に関連する概念を明確にすることができます。 詳細については、[ユーザー要件をモデル化](../modeling/model-user-requirements.md)を参照してください。  
+- モデリング図を描画すると、要件、アーキテクチャ、および概要設計に関連する概念を明確にすることができます。 詳細については、次を参照してください。[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。  
   
 - モデルの操作は、要件の不整合を明らかにするのに役立ちます。  
   
-- モデルとの通信では、自然言語でのやり取りよりも曖昧さを残さずに、重要な概念をやり取りできます。 詳細については、[、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)を参照してください。  
+- モデルとの通信では、自然言語でのやり取りよりも曖昧さを残さずに、重要な概念をやり取りできます。 詳細については、次を参照してください。 [、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)します。  
   
-- 場合によっては、モデルを使用して、コードまたはデータベース スキーマやドキュメントなどのその他の成果物を生成できます。 たとえば、[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] のモデリング コンポーネントはモデルから生成されます。  詳細については、[生成モデルからアプリを構成および](../modeling/generate-and-configure-your-app-from-models.md)を参照してください。  
+- 場合によっては、モデルを使用して、コードまたはデータベース スキーマやドキュメントなどのその他の成果物を生成できます。 たとえば、[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] のモデリング コンポーネントはモデルから生成されます。  詳細については、次を参照してください。[生成モデルからアプリを構成および](../modeling/generate-and-configure-your-app-from-models.md)します。  
   
   モデルは、手軽なアジャイルから高度なセレモニーまで、広範囲のプロセスで使用することができます。  
   
@@ -50,7 +45,7 @@ Visual Studio では、システム、アプリケーション、またはコン
   
  プロジェクトが大規模で、世界中の各地にチームがある場合は、モデルを使用すると、テキスト形式で行うよりはるかに効果的に要件およびアーキテクチャをやり取りできます。  
   
- いずれのケースでも、モデルを作成すると、ほとんどすべての場合、不整合性やあいまいさが大幅に減少します。 さまざまな利害関係者が、システムが動作するビジネスの世界について異なる理解をすることはよくあります。また、さまざまな開発者が、システムの動作の仕方について異なる理解をすることもよくあります。 通常、ディスカッションを中心としたモデルを使用すると、これらの相違点が明らかになります。 不整合を少なくモデルを使用する方法の詳細については、[ユーザー要件をモデル化](../modeling/model-user-requirements.md)を参照してください。  
+ いずれのケースでも、モデルを作成すると、ほとんどすべての場合、不整合性やあいまいさが大幅に減少します。 さまざまな利害関係者が、システムが動作するビジネスの世界について異なる理解をすることはよくあります。また、さまざまな開発者が、システムの動作の仕方について異なる理解をすることもよくあります。 通常、ディスカッションを中心としたモデルを使用すると、これらの相違点が明らかになります。 不整合を少なくモデルを使用する方法の詳細については、次を参照してください。[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。  
   
 ### <a name="use-models-with-other-artifacts"></a>その他の成果物によるモデルの使用  
  モデルは、それ自体は要件仕様やアーキテクチャではありません。 モデルは、これらの一部の側面をより明確に表すツールですが、ソフトウェア設計時に必要な概念のすべてを表すことはできません。 そのため、モデルは、OneNote のページや段落、Microsoft Office ドキュメント、[!INCLUDE[esprfound](../includes/esprfound-md.md)] の作業項目、またはプロジェクト ルームの壁に貼られた付箋など、他のコミュニケーション手段とともに使用する必要があります。 最後の項目以外、すべてのオブジェクトの種類は、モデルの要素のパーツにリンクすることができます。  
@@ -104,14 +99,14 @@ Visual Studio では、システム、アプリケーション、またはコン
   
 -   ユース ケース。 ユース ケースは、それを実装する開発タスクにリンクできます。  
   
--   ユース ケースの拡張。 ユース ケースの 1 つの側面のみをイテレーションに実装する場合は、基本のユース ケースと 1 つ以上の拡張に分割することができます。 拡張とは、«extend» リレーションシップによって基本ケースとリンクされたユース ケースです。 ユース ケースの拡張の詳細については、[UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)を参照してください。  
+-   ユース ケースの拡張。 ユース ケースの 1 つの側面のみをイテレーションに実装する場合は、基本のユース ケースと 1 つ以上の拡張に分割することができます。 拡張とは、«extend» リレーションシップによって基本ケースとリンクされたユース ケースです。 ユース ケースの拡張の詳細については、次を参照してください。 [UML ユース ケース図。Reference](../modeling/uml-use-case-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。  
   
--   ビジネス ルールやサービスの要件の品質について記載したコメントです。 詳細については、[ユーザー要件をモデル化](../modeling/model-user-requirements.md)を参照してください。  
+-   ビジネス ルールやサービスの要件の品質について記載したコメントです。 詳細については、次を参照してください。[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。  
   
 #### <a name="link-model-to-tests"></a>モデルとテストのリンク  
  要件モデルを使用して、受け入れテストの設計をガイドします。 これらのテストは、開発作業と同時に作成します。  
   
- この手法の詳細については、[モデルからテストを開発する](../modeling/develop-tests-from-a-model.md)を参照してください。  
+ この手法の詳細については、次を参照してください。[モデルからテストを開発する](../modeling/develop-tests-from-a-model.md)します。  
   
 #### <a name="estimate-remaining-work"></a>残存作業の見積もり  
  要件モデルは、各イテレーションのサイズとの関係で、プロジェクトの合計サイズを見積もることができます。 ユース ケースとクラスの数と複雑さを評価することは、必要となる開発作業の見積もりに役立ちます。 最初のいくつかのイテレーションが完了したら、対象となる要件とまだ対象になっていない要件とを比較することで、プロジェクトの残りの費用とスコープの概算の測定値を得ることができます。  
@@ -121,7 +116,7 @@ Visual Studio では、システム、アプリケーション、またはコン
 ## <a name="levels-of-abstraction"></a>抽象化レベル  
  モデルには、ソフトウェアに関する抽象化の範囲があります。 ほとんどの具体的なモデルは直接プログラム コードを表し、ほとんどの抽象モデルはコードでは表現できない可能性があるビジネスの概念を表します。  
   
- モデルは、数種類の図で表示できます。 モデルと図については、[アプリのモデルを作成する](../modeling/create-models-for-your-app.md)を参照してください。  
+ モデルは、数種類の図で表示できます。 モデルと図については、次を参照してください。[アプリのモデルを作成する](../modeling/create-models-for-your-app.md)します。  
   
  さまざまな種類の図は、さまざまな抽象化レベルの設計を記述するのに役立ちます。 図の種類の多くは、複数のレベルで役立ちます。 次の表は、各種の図の使用方法を示しています。  
   
@@ -137,18 +132,15 @@ Visual Studio では、システム、アプリケーション、またはコン
   
 |**カテゴリ**|**リンク**|  
 |------------------|---------------|  
-|**ビデオ**|![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I ビデオ: UML モデルを使用を (Visual Studio 2010 Ultimate) の図では、作成する方法](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Visual Studio 2010 での UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I シリーズ: UML ツールと機能拡張 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
+|**ビデオ**|![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I ビデオ。作成して、UML モデルと図 (Visual Studio 2010 Ultimate) を使用する方法](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9。Visual Studio 2010 での UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I シリーズ。UML ツールと機能拡張 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化ツールとモデリング SDK (DSL ツール)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技術記事とジャーナル**|[MSDN アーキテクチャ センター](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio アーキテクチャ ツーリング ガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>関連項目  
- [アジャイル開発でのモデルの使用](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [アジャイル開発でのモデルの使用](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [アプリのモデルを作成します。](../modeling/create-models-for-your-app.md)   
  [ユーザー要件のモデリング](../modeling/model-user-requirements.md)   
  [アプリのアーキテクチャをモデル化します。](../modeling/model-your-app-s-architecture.md)   
  [モデルからテストを開発します。](../modeling/develop-tests-from-a-model.md)   
  [モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)
-
-
-

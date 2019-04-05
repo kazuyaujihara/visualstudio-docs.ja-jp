@@ -1,12 +1,9 @@
 ---
 title: データ ソース ウィンドウにカスタム コントロールを追加 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 dev_langs:
@@ -25,13 +22,13 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e84224d4ebd066891d4fdf90b4ad488a79cc0b1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a7dbfb1b0636418971b2dffb6ff67ca2de5e211d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183639"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972862"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>[データ ソース] ウィンドウにカスタム コントロールを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +39,7 @@ ms.locfileid: "49183639"
  内の項目を作成するデータ バインド コントロールの選択の詳細については、**データソース**ウィンドウを参照してください[データ ソース ウィンドウからドラッグするときに作成するコントロールを設定](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
   
 > [!NOTE]
->  使用している設定またはエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドが表示される場合があります。 設定を変更する、**ツール**メニューの **インポートおよびエクスポート設定**します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  使用している設定またはエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドが表示される場合があります。 設定を変更する、**ツール**メニューの **インポートおよびエクスポート設定**します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ##  <a name="customizinglist"></a> データ型のバインド可能なコントロールのリストをカスタマイズします。  
  追加または使用可能なコントロール内の項目の一覧からコントロールを削除する、**データ ソース**を次の手順を実行して、特定のデータ型を持つウィンドウです。  
@@ -70,7 +67,7 @@ ms.locfileid: "49183639"
 5.  **コントロールに関連付けられている**ボックスで、選択したデータの種類、使用可能にする各コントロールを選択するか、一覧から削除するすべてのコントロールの選択を解除します。  
   
     > [!NOTE]
-    >  を選択するコントロールが表示されないかどうか、**コントロールに関連付けられている**ボックスで、一覧に、コントロールを追加する必要があります。 詳細については、[データ型のリストの関連付けられているコントロールにコントロールを追加](#addingcontrols)を参照してください。  
+    >  を選択するコントロールが表示されないかどうか、**コントロールに関連付けられている**ボックスで、一覧に、コントロールを追加する必要があります。 詳細については、次を参照してください。[データ型のリストの関連付けられているコントロールにコントロールを追加](#addingcontrols)します。  
   
 6.  **[OK]** をクリックします。  
   
@@ -93,7 +90,7 @@ ms.locfileid: "49183639"
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|など、データのリスト (またはテーブル) を表示するコントロールのこの属性の実装を<xref:System.Windows.Forms.DataGridView>します。|  
     |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|などのデータが 1 つの列またはプロパティを表示する必要があるのもリスト (またはテーブル) を表示するコントロールのこの属性の実装を<xref:System.Windows.Forms.ComboBox>します。|  
   
-2.  Windows フォームでは、上、**オプション** ダイアログ ボックスで、**データ UI カスタマイズ**ページ。 または、WPF では、開く、**コントロールのバインドのカスタマイズ** ダイアログ ボックス。 詳細については、[データ型のバインド可能なコントロールの一覧をカスタマイズする](#customizinglist)を参照してください。  
+2.  Windows フォームでは、上、**オプション** ダイアログ ボックスで、**データ UI カスタマイズ**ページ。 または、WPF では、開く、**コントロールのバインドのカスタマイズ** ダイアログ ボックス。 詳細については、次を参照してください。[データ型のバインド可能なコントロールの一覧をカスタマイズする](#customizinglist)します。  
   
 3.  **コントロールに関連付けられている**ボックスに追加したコントロール、**ツールボックス**が表示されます。  
   
@@ -102,4 +99,3 @@ ms.locfileid: "49183639"
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)
-

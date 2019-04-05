@@ -1,14 +1,9 @@
 ---
 title: SccQueryInfo 関数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7093f712ab520502e36094ec571c0ee1a3ded18
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 23b0d9d77eae2052f2b9da3c236e231cc17a7e65
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785080"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972573"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ SCCRTN SccQueryInfo(
  [in]クエリを実行するファイルの名前の配列。  
   
  lpStatus  
- [入力、出力]配列をソース管理プラグインは各ファイルの状態フラグを返します。 詳細については、[ファイルの状態コード](../extensibility/file-status-code-enumerator.md)を参照してください。  
+ [入力、出力]配列をソース管理プラグインは各ファイルの状態フラグを返します。 詳細については、次を参照してください。[ファイルの状態コード](../extensibility/file-status-code-enumerator.md)します。  
   
 ## <a name="return-value"></a>戻り値  
  この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。  
@@ -66,7 +61,7 @@ SCCRTN SccQueryInfo(
 ## <a name="remarks"></a>Remarks  
  場合`lpFileName`は空の文字列を更新するステータス情報は現在ありません。 それ以外の場合、状態情報の変更を可能性がありますが、ファイルの完全なパス名になります。  
   
- 戻り値の配列は、ビットマスクの`SCC_STATUS_xxxx`ビット。 詳細については、[ファイルの状態コード](../extensibility/file-status-code-enumerator.md)を参照してください。 ソース管理システムはすべてのビットの種類をサポートしていません。 たとえば場合、`SCC_STATUS_OUTOFDATE`が提供されていない、ビットが設定されていないだけです。  
+ 戻り値の配列は、ビットマスクの`SCC_STATUS_xxxx`ビット。 詳細については、次を参照してください。[ファイルの状態コード](../extensibility/file-status-code-enumerator.md)します。 ソース管理システムはすべてのビットの種類をサポートしていません。 たとえば場合、`SCC_STATUS_OUTOFDATE`が提供されていない、ビットが設定されていないだけです。  
   
  ファイルをチェック アウトをこの関数を使用する場合は、次に注意してください`MSSCCI`状態の要件。  
   
@@ -81,4 +76,3 @@ SCCRTN SccQueryInfo(
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)   
  [ファイルの状態コード](../extensibility/file-status-code-enumerator.md)
-
