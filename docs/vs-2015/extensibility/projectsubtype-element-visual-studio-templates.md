@@ -1,14 +1,9 @@
 ---
 title: ProjectSubType 要素 (Visual Studio テンプレート) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bfc64d4f5a1de6223178321eecb3050478ed9960
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d07a62027b494242d3c25aba00fbd5f4d75df78b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807765"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975907"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,15 +60,15 @@ ms.locfileid: "51807765"
   
  `ProjectSubType`要素は、サブカテゴリを[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)要素。 この値を含めることができます。  
   
-- `SmartDevice-NETCFv1`: を指定するテンプレートの対象と、[!INCLUDE[Compact](../includes/compact-md.md)]バージョン 1.0。  
+- `SmartDevice-NETCFv1`:指定するテンプレートの対象と、[!INCLUDE[Compact](../includes/compact-md.md)]バージョン 1.0。  
   
-- `SmartDevice-NETCFv2`: 指定 tempalate ターゲット、[!INCLUDE[Compact](../includes/compact-md.md)]バージョン 2.0。  
+- `SmartDevice-NETCFv2`:指定します、tempalate ターゲット、[!INCLUDE[Compact](../includes/compact-md.md)]バージョン 2.0。  
   
   テンプレートが含まれている場合、`ProjectType`要素の値を持つ`Web`、`ProjectSubType`要素がテンプレートのプログラミング言語を指定します。 この要素は、次の値を持つことができます。  
   
-- `CSharp`: このテンプレートが作成を指定します、 [!INCLUDE[csprcs](../includes/csprcs-md.md)] Web プロジェクトまたは項目。  
+- `CSharp`:テンプレートを作成するを指定します、 [!INCLUDE[csprcs](../includes/csprcs-md.md)] Web プロジェクトまたは項目。  
   
-- `VisualBasic`: このテンプレートが作成を指定します、 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Web プロジェクトまたは項目。  
+- `VisualBasic`:テンプレートを作成するを指定します、 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Web プロジェクトまたは項目。  
   
 ## <a name="example"></a>例  
  次の例のためのプロジェクト テンプレート メタデータを[!INCLUDE[csprcs](../includes/csprcs-md.md)]デバイス アプリケーションを対象とする、[!INCLUDE[Compact](../includes/compact-md.md)]バージョン 2.0。  
@@ -107,4 +102,3 @@ ms.locfileid: "51807765"
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [ProjectType 要素 (Visual Studio テンプレート)](../extensibility/projecttype-element-visual-studio-templates.md)
-
