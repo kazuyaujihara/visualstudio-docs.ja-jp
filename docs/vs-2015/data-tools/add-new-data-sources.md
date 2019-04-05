@@ -1,12 +1,9 @@
 ---
 title: 新しいデータ ソースの追加 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 dev_langs:
@@ -21,15 +18,15 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279150"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963906"
 ---
-# <a name="add-new-data-sources"></a>新しいデータ ソースを追加します。
+# <a name="add-new-data-sources"></a>新しいデータ ソースの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -81,17 +78,17 @@ Visual Studio での .NET データ ツールのコンテキストでは、用�
   
  次の種類のサービスからデータ ソースを作成できます。  
   
--   WCF Data Services。 詳細については、[概要](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)を参照してください。  
+-   WCF Data Services。 詳細については、次を参照してください。[概要](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)します。  
   
--   WCF data services。 詳細については、[Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)を参照してください。  
+-   WCF data services。 詳細については、次を参照してください。 [Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)します。  
   
 -   Web サービス  
   
     > [!NOTE]
-    >  表示される項目、**データソース**ウィンドウは、サービスが返すデータに依存します。 一部のサービスがのに十分な情報を提供していない、**データ ソース構成ウィザード**バインド可能なオブジェクトを作成します。 などの場合は、サービスは、型指定されていないデータセットを返します、項目は表示されません、**データソース**ウィンドウ、ウィザードを完了するとします。 これは、型指定されていないデータセットからはスキーマが提供されず、したがってウィザードでデータ ソースを作成するための十分な情報が得られないためです。  
+    >  表示される項目、**データソース**ウィンドウは、サービスが返すデータに依存します。 サービスによっては、**データ ソース構成ウィザード**でバインドできるオブジェクトを作成するための十分な情報を提供しないものもあります。 などの場合は、サービスは、型指定されていないデータセットを返します、項目は表示されません、**データソース**ウィンドウ、ウィザードを完了するとします。 これは、型指定されていないデータセットからはスキーマが提供されず、したがってウィザードでデータ ソースを作成するための十分な情報が得られないためです。  
   
 ## <a name="data-source-for-an-object"></a>オブジェクトのデータ ソース  
- 実行して 1 つまたは複数のパブリック プロパティを公開する任意のオブジェクトからデータ ソースを作成することができます、**データ ソース構成ウィザード**選択し、**オブジェクト**データ ソースの種類。 オブジェクトのすべてのパブリック プロパティが表示されます、**データソース**ウィンドウ。   Entity Framework を使用している、モデルを生成した場合は、これは、アプリケーションのデータ ソースとなるエンティティ クラスを検索します。  
+ 1 つ以上のパブリック プロパティを公開する任意のオブジェクトからデータ ソースを作成できます。それには、**データ ソース構成ウィザード**を実行し、データ ソースの種類として **[オブジェクト]** を選択します。 オブジェクトのすべてのパブリック プロパティは、**[データ ソース]** ウィンドウに表示されます。   Entity Framework を使用している、モデルを生成した場合は、これは、アプリケーションのデータ ソースとなるエンティティ クラスを検索します。  
   
  **データ オブジェクトの選択** ページで、ツリー ビューにバインドするオブジェクトを検索するノードを展開します。 ツリー ビューには、ノード、プロジェクトおよびアセンブリやプロジェクトによって参照されている他のプロジェクトが含まれています。  
   
@@ -104,8 +101,7 @@ Visual Studio での .NET データ ツールのコンテキストでは、用�
 >  実装するオブジェクトにドラッグ アンド ドロップのデータ バインディングをサポートするために、<xref:System.ComponentModel.ITypedList>または<xref:System.ComponentModel.IListSource>インターフェイスは、既定のコンス トラクターをいる必要があります。 それ以外の場合、Visual Studio は、データ ソース オブジェクトをインスタンス化できないし、デザイン サーフェイスに項目をドラッグするときにエラーが表示されます。  
   
 ## <a name="data-source-for-a-sharepoint-list"></a>SharePoint リストのデータ ソース  
- SharePoint リストからを実行してデータ ソースを作成することができます、**データ ソース構成ウィザード**を選択して、 **SharePoint**データ ソースの種類。 SharePoint を使用してデータを公開する[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]ので、サービスからデータ ソースの作成と同じでは、SharePoint データ ソースを作成します。 選択すると、 **SharePoint**内の項目、**データ ソース構成ウィザード**開きます、**サービス参照の追加** ダイアログ ボックスで、SharePoint データ サービスに接続します。SharePoint サーバーをポイントします。  これには、SharePoint の SDK が必要です。  
+ **データ ソース構成ウィザード**を実行し、データ ソースの種類として **[SharePoint]** を選択すると、SharePoint リストからデータ ソースを作成できます。 SharePoint を使用してデータを公開する[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]ので、サービスからデータ ソースの作成と同じでは、SharePoint データ ソースを作成します。 **データ ソース構成ウィザード**で **[SharePoint]** 項目をクリックすると、**[サービス参照の追加]** ダイアログ ボックスが表示されます。このダイアログ ボックスで、SharePoint サーバーを指定することにより SharePoint データ サービスに接続します。  これには、SharePoint の SDK が必要です。  
   
 ## <a name="see-also"></a>関連項目  
  [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

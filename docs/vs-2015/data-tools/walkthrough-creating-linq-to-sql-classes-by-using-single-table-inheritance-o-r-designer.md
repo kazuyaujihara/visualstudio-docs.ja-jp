@@ -1,29 +1,26 @@
 ---
 title: 'チュートリアル: 単一テーブル継承 (O/R デザイナー) を使用して LINQ to SQL クラスを作成する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cd8572900e181da1b33b26638f15aa04845008e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 62b56e11f5f91485f8fb38f4b087ee2466ad43f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260729"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976246"
 ---
-# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>チュートリアル : 単一テーブル継承を使用した LINQ to SQL クラスの作成 (O/R デザイナー)
+# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>チュートリアル: 単一テーブル継承 (O/R デザイナー) を使用して LINQ to SQL クラスを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-[LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)リレーショナル システムに実装されている通常の単一テーブル継承をサポートしています。 このチュートリアルで提供される汎用的な手順、[方法: O/R デザイナーを使用して継承を構成する](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)トピックでの継承の使用を示すために、実際のデータを提供し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。  
+[LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)リレーショナル システムに実装されている通常の単一テーブル継承をサポートしています。 このチュートリアルで提供される汎用的な手順、[方法。O/R デザイナーを使用して継承を構成する](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)トピックでの継承の使用を示すために、実際のデータを提供し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。  
   
  このチュートリアルでは次のタスクを行います。  
   
@@ -59,11 +56,11 @@ ms.locfileid: "49260729"
     |**Type**|**int**|**True**|  
     |**FirstName**|**nvarchar(200)**|**False**|  
     |**LastName**|**nvarchar(200)**|**False**|  
-    |**マネージャー**|**int**|**True**|  
+    |**Manager**|**int**|**True**|  
   
 3.  ID 列を主キーとして設定します。  
   
-4.  テーブルを保存し、名前を**Person**します。  
+4.  テーブルを **Person** という名前で保存します。  
   
 ## <a name="add-data-to-the-table"></a>テーブルへのデータの追加  
  継承が正しく構成されていることを確認できるように、単一テーブル継承のテーブルの各クラスにデータを入力する必要があります。  
@@ -76,8 +73,8 @@ ms.locfileid: "49260729"
   
     ||||||  
     |-|-|-|-|-|  
-    |**ID**|**Type**|**FirstName**|**LastName**|**マネージャー**|  
-    |**1**|**1**|**Anne**|**ウォーレス**|**NULL**|  
+    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|  
+    |**1**|**1**|**Anne**|**Wallace**|**NULL**|  
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|  
     |**3**|**1**|**Yael**|**Peled**|**NULL**|  
     |**4**|**2**|**Gatis**|**Ozolins**|**1**|  
@@ -85,10 +82,10 @@ ms.locfileid: "49260729"
     |**6**|**2**|**Tiffany**|**Phuvasate**|**1**|  
     |**7**|**2**|**Alexey**|**Orekhov**|**2**|  
     |**8**|**2**|**Michał**|**Poliszkiewicz**|**2**|  
-    |**9**|**2**|**Tai**|**担当**|**2**|  
-    |**10**|**2**|**デスクトップ**|**Noriega**|**3**|  
-    |**11**|**2**|**加山**|**Martin**|**3**|  
-    |**12**|**2**|**Ken**|**Kwok の追加**|**3**|  
+    |**9**|**2**|**Tai**|**Yee**|**2**|  
+    |**10**|**2**|**Fabricio**|**Noriega**|**3**|  
+    |**11**|**2**|**Mindy**|**Martin**|**3**|  
+    |**12**|**2**|**Ken**|**Kwok**|**3**|  
   
 ## <a name="create-a-new-project"></a>新しいプロジェクトの作成  
  これでテーブルが作成されたので、新しいプロジェクトを作成して継承の構成を実際に行います。  
@@ -102,7 +99,7 @@ ms.locfileid: "49260729"
     > [!NOTE]
     >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]は Visual Basic プロジェクトと C# プロジェクトでサポートされています。 新しいプロジェクトはこれらの言語のどちらかで作成してください。  
   
-3.  をクリックして、 **Windows フォーム アプリケーション**テンプレートとクリック**OK**。 詳細については、[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)を参照してください。  
+3.  をクリックして、 **Windows フォーム アプリケーション**テンプレートとクリック**OK**。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
   
 4.  InheritanceWalkthrough プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。  
   
@@ -112,12 +109,12 @@ ms.locfileid: "49260729"
   
 1.  **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。  
   
-2.  をクリックして、 **LINQ to SQL クラス**テンプレートとクリック**追加**します。  
+2.  **LINQ to SQL クラス** テンプレートをクリックし、**[追加]** をクリックします。  
   
      プロジェクトに .dbml ファイルが追加され、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]が開きます。  
   
 ## <a name="create-the-inheritance-by-using-the-or-designer"></a>O/R デザイナーを使用した継承の作成  
- ドラッグして、継承を構成、**継承**オブジェクトから、**ツールボックス**デザイン サーフェイスにします。  
+ **ツールボックス**からデザイン サーフェイスに**継承**オブジェクトをドラッグして、継承を構成します。  
   
 #### <a name="to-create-the-inheritance"></a>継承を作成するには  
   
@@ -127,21 +124,21 @@ ms.locfileid: "49260729"
   
 3.  1 秒あたりのドラッグ**Person**テーブルを[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]し、名前に変更**従業員**します。  
   
-4.  削除、 **Manager**プロパティから、 **Person**オブジェクト。  
+4.  **Person** オブジェクトから **Manager** プロパティを削除します。  
   
-5.  削除、**型**、 **ID**、 **FirstName**、および**LastName**プロパティから、**従業員**オブジェクト。 (つまり、以外のすべてのプロパティを削除**Manager**)。  
+5.  **Employee** オブジェクトから、**Type**、**ID**、**FirstName**、および **LastName** の各プロパティを削除します。 (つまり、**Manager** 以外のプロパティをすべて削除します。)  
   
-6.  **オブジェクト リレーショナル デザイナー**のタブ、**ツールボックス**、作成、**継承**間、 **Person**と**従業員**オブジェクト。 これを行うには、をクリックして、**継承**内の項目、**ツールボックス**マウス ボタンを離します。 次に、クリックして、**従業員**オブジェクトをクリックし、 **Person**内のオブジェクト、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 継承線の矢印が指す、 **Person**オブジェクト。  
+6.  **ツールボックス**の **[オブジェクト リレーショナル デザイナー]** タブで、**Person** オブジェクトと **Employee** オブジェクトの間に**継承**を作成します。 これを作成するには、**ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放します。 次に、クリックして、**従業員**オブジェクトをクリックし、 **Person**内のオブジェクト、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 継承線の矢印が指す、 **Person**オブジェクト。  
   
-7.  をクリックして、**継承**デザイン サーフェイス上の行。  
+7.  デザイン サーフェイスで**継承**線をクリックします。  
   
-8.  設定、**識別子プロパティ**プロパティを**型**します。  
+8.  **[識別子プロパティ]** プロパティを **Type** に設定します。  
   
-9. 設定、 **Derived Class Discriminator Value**プロパティを**2**します。  
+9. **[派生クラスの識別子の値]** プロパティを **2** に設定します。  
   
-10. 設定、 **Base Class Discriminator Value**プロパティを**1**します。  
+10. **[基本クラスの識別子の値]** プロパティを **1** に設定します。  
   
-11. 設定、 **Inheritance Default**プロパティを**Person**します。  
+11. **[継承の既定値]** プロパティを **Person** に設定します。  
   
 12. プロジェクトをビルドします。  
   
@@ -188,13 +185,12 @@ ms.locfileid: "49260729"
   
 2.  [Type] 列の値が 2 のレコードのみが表示されていることを確認します。  
   
-3.  フォームを閉じます  (上、**デバッグ** メニューのをクリックして**デバッグの停止**)。  
+3.  フォームを閉じます  (**[デバッグ]** メニューの **[デバッグの停止]** をクリックします。)  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [方法: LINQ to SQL クラス (O/R デザイナー) をプロジェクトに追加](http://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
+ [方法: LINQ to SQL クラス (O/R デザイナー) をプロジェクトに追加します。](http://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
  [チュートリアル: LINQ to SQL クラス (O/R デザイナー) を作成します。](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [方法: 更新、挿入、および削除 (O/R デザイナー) を実行するストアド プロシージャを割り当てる](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [方法: Visual Basic または C# でオブジェクト モデルを生成する](http://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)
-
