@@ -1,27 +1,22 @@
 ---
 title: '方法: XPath 式を評価 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 05758034c0228f0efd7fb3ae63bd3b7e0d5e3095
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210432"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978289"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>方法 : XPath 式を評価する
+# <a name="how-to-evaluate-an-xpath-expression"></a>方法: XPath 式を評価する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 使用した XPath 式を評価することができます、 **クイック ウォッチ**  ダイアログ ボックス。 XPath 式は、W3C XPath 1.0 勧告に沿って有効である必要があります。 現在の XSLT コンテキスト:、`self::node()`内のノード、 **[ローカル]** ウィンドウ: XPath 式の評価コンテキストを提供します。  
@@ -35,7 +30,7 @@ ms.locfileid: "49210432"
 -   ユーザー定義関数はサポートされません。  
   
 > [!NOTE]
->  次の手順から belowAvg.xsl と books.xml ファイルを使用して、[チュートリアル: XSLT スタイル シートのデバッグ](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)トピック。  
+>  次の手順から belowAvg.xsl と books.xml ファイルを使用して、[チュートリアル。XSLT スタイル シートのデバッグ](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)トピック。  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>XPath 式を評価するには  
   
@@ -59,4 +54,3 @@ ms.locfileid: "49210432"
   
 ## <a name="see-also"></a>関連項目  
  [XSLT のデバッグ](../xml-tools/debugging-xslt.md)
-

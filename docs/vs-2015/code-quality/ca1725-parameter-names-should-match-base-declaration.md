@@ -1,14 +1,9 @@
 ---
-title: '1725: ca パラメーター名と基本宣言 |Microsoft Docs'
-ms.custom: ''
+title: CA1725:パラメーター名は基本宣言と一致する必要があります |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ParameterNamesShouldMatchBaseDeclaration
 - CA1725
@@ -20,21 +15,21 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0478002cc45fc0c56fc34d4c8c52217ccaaca83f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e97431b46640fb8241d6bde80d09d38084650be8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878638"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977223"
 ---
-# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: パラメーター名は基本宣言と同一でなければなりません
+# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725:パラメーター名は基本宣言と同一でなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ParameterNamesShouldMatchBaseDeclaration|
 |CheckId|CA1725|
-|カテゴリ|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
@@ -48,6 +43,3 @@ ms.locfileid: "49878638"
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  以前に出荷されたライブラリ内の COM 参照可能なメソッドを除き、この規則による警告を抑制しないでください。
-
-
-

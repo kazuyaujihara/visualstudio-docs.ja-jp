@@ -1,26 +1,21 @@
 ---
 title: Web サイトのサポート テンプレート |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eebacb3006826a90320cbc61edf7d56467e688ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: fce793b077460f2c141de0a75d612bb9254f7b3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760217"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978125"
 ---
 # <a name="web-site-support-templates"></a>Web サイト サポートのテンプレート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51760217"
 ## <a name="project-file"></a>プロジェクト ファイル  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) では、適切なプロジェクトの種類にテンプレートをマップする方法としてプロジェクト ファイルの拡張子が必要です。 Web プロジェクトはプロジェクト ファイルがあるないために、ダミーのプロジェクト ファイルの拡張機能の .webproj はこれをサポートするために登録されます。  
   
- 言語名の文字列を追加して既定の言語を設定する Web プロジェクト システムを有効にするテンプレートに、必要に応じて、**新しい項目の追加**テンプレートに基づいて項目のダイアログ ボックス。 文字列は、ファイルの最初の行にある必要があります、Intellisense エンジンの登録に AddItemLanguageName で登録されている名前とプロジェクト Subtype(VsTemplate) 登録の名前の両方に一致する必要があります。 詳細については、[Web サイト サポート属性](../../extensibility/internals/web-site-support-attributes.md)を参照してください。  
+ 言語名の文字列を追加して既定の言語を設定する Web プロジェクト システムを有効にするテンプレートに、必要に応じて、**新しい項目の追加**テンプレートに基づいて項目のダイアログ ボックス。 文字列は、ファイルの最初の行にある必要があります、Intellisense エンジンの登録に AddItemLanguageName で登録されている名前とプロジェクト Subtype(VsTemplate) 登録の名前の両方に一致する必要があります。 詳細については、次を参照してください。 [Web サイト サポート属性](../../extensibility/internals/web-site-support-attributes.md)します。  
   
  文字列が存在しない場合、Web プロジェクト システムはプロジェクト テンプレートのテンプレートによって Web プロジェクトに追加されたページの言語の属性とファイル拡張機能に基づく既定の言語を決定しようとします。  
   
@@ -193,4 +188,3 @@ ms.locfileid: "51760217"
   
 ## <a name="see-also"></a>関連項目  
  [Web サイト サポート](../../extensibility/internals/web-site-support.md)
-

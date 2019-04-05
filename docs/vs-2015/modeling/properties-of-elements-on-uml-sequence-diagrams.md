@@ -1,12 +1,9 @@
 ---
 title: シーケンス図の uml 要素のプロパティ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.combinedfragment.properties
 - vs.teamarch.sequencediagram.shapes.properties
@@ -17,13 +14,13 @@ ms.assetid: 475c10f3-a2d2-4a1e-b366-dc28997d437e
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 01d63e39967df361d87ff0182b1c85b6ecd2fdb6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c6de88572b685b5a432b4f73b125a464f125218b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793897"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978135"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>UML シーケンス図の要素のプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +28,14 @@ ms.locfileid: "51793897"
 UML シーケンス図では、図の各要素にプロパティが存在します。 要素のプロパティを表示するには、図、または要素を右クリックして**UML モデル エクスプ ローラー**し**プロパティ**します。 プロパティが表示されます、**プロパティ**ウィンドウ。  
   
 > [!NOTE]
->  このトピックでは、UML シーケンス図の要素のプロパティについて説明します。 UML シーケンス図を読み取る方法の詳細については、[UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)を参照してください。 UML アクティビティ図を描画する方法の詳細については、「 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)」を参照してください。  
+>  このトピックでは、UML シーケンス図の要素のプロパティについて説明します。 UML シーケンス図を読み取る方法の詳細については、次を参照してください。 [UML シーケンス図。Reference](../modeling/uml-sequence-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。 UML シーケンス図を描画する方法の詳細については、次を参照してください。 [UML シーケンス図。ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
   
 ## <a name="properties-of-elements"></a>要素のプロパティ  
   
 |プロパティ|既定値|要素|説明|  
 |--------------|-------------|-------------|-----------------|  
 |**Name**|既定名|すべて|要素を指定します。|  
-|**修飾名**|Package :: Name|すべて|要素を一意に識別します。 要素を格納するパッケージの修飾名が先頭につきます。|  
+|**修飾名**|パッケージ:名前|すべて|要素を一意に識別します。 要素を格納するパッケージの修飾名が先頭につきます。|  
 |**作業項目**|関連付けなし|すべて|この要素に関連付けられている作業項目の数。 作業項目に関連付けるを参照してください。[モデル要素をリンクし、作業項目](../modeling/link-model-elements-and-work-items.md)します。|  
 |**説明**|(空白)|すべて|ここに、項目に関する一般的なメモを作成できます。|  
 |**色**|(要素の型の既定値)|生存線、メッセージ|シェイプの色。 これは、図形が表示する要素ではなく、図形のプロパティです。|  
@@ -54,9 +51,6 @@ UML シーケンス図では、図の各要素にプロパティが存在しま�
 |**メッセージ**|(空)|検討し、<br /><br /> 結合フラグメントを無視します。|このフラグメント内で検討または無視するメッセージ。|  
   
 ## <a name="see-also"></a>関連項目  
- [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML シーケンス図: 参照](../modeling/uml-sequence-diagrams-reference.md)   
  [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)   
  [UML シーケンス図のフラグメントを使用した制御フローの記述](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)
-
-
-

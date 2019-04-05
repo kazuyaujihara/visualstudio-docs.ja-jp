@@ -1,12 +1,9 @@
 ---
 title: ドメイン固有言語における検証 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
@@ -14,13 +11,13 @@ ms.assetid: 65b93df8-af3c-462b-904c-60292f8ed381
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a29c9b8921d72f717aea21ed202766f0874389
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950798"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978001"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>ドメイン固有言語における検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ ms.locfileid: "49950798"
  検証はユーザーのモデルを処理するテキスト テンプレートまたは他のツールを作成する場合に特に重要です。 検証により、そうしたツールが仮定する事前条件をモデルが満たすことが保証されます。  
   
 > [!WARNING]
->  検証制約は、拡張機能メニュー コマンドおよびジェスチャ ハンドラーとともに、DSL の別個の拡張機能内で定義することもできます。 ユーザーは DSL に加えて、こうした拡張機能を選択的にインストールできます。 詳細については、[MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)を参照してください。  
+>  検証制約は、拡張機能メニュー コマンドおよびジェスチャ ハンドラーとともに、DSL の別個の拡張機能内で定義することもできます。 ユーザーは DSL に加えて、こうした拡張機能を選択的にインストールできます。 詳細については、次を参照してください。 [MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)します。  
   
 ## <a name="running-validation"></a>検証の実行  
  ユーザーがモデル、つまりドメイン固有言語のインスタンスを編集しているとき、次の操作により検証を実行できます。  
@@ -142,7 +139,7 @@ public partial class ParentsHaveChildren
   
 - LogError 呼び出しでは、ユーザーがエラー メッセージをダブルクリックしたときに選択される、モデル要素またはリレーションシップ リンクの一覧を指定できます。  
   
-- プログラム コードでモデルを読み取る方法については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。  
+- プログラム コードでモデルを読み取る方法については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。  
   
   例は次のドメイン モデルに適用されます。 ParentsHaveChildren リレーションシップは Child および Parent という名前のロールを含みます。  
   
@@ -157,7 +154,7 @@ public partial class ParentsHaveChildren
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|モデル ファイルが開くとき。|  
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|ファイルが保存されるとき。 検証エラーがある場合、ユーザーは保存操作を取り消すことができます。|  
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|ファイルが保存されるとき。 このカテゴリでメソッドからのエラーがある場合、ユーザーはファイルを再度開くことができない可能性があることを警告されます。<br /><br /> このカテゴリは、読み込みエラーを引き起こす可能性がある、複製された名前または ID、またはその他の条件をテストする検証メソッドに使用します。|  
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|ValidateCustom メソッドが呼び出されるとき。 このカテゴリの検証はプログラム コードからのみ呼び出すことができます。<br /><br /> 詳細については、[カスタム検証カテゴリ](#custom)を参照してください。|  
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|ValidateCustom メソッドが呼び出されるとき。 このカテゴリの検証はプログラム コードからのみ呼び出すことができます。<br /><br /> 詳細については、次を参照してください。[カスタム検証カテゴリ](#custom)します。|  
   
 ## <a name="where-to-place-validation-methods"></a>検証メソッドを配置する場所  
  多くの場合、異なる型に 1 つの検証メソッドを配置することで、同じ効果を得ることができます。 たとえば、次のように、ParentsHaveChildren リレーションシップの代わりに Person クラスにメソッドを追加し、リンクを通して反復することができます。  
@@ -221,7 +218,7 @@ partial class MyLanguageCommandSet
   
 ```  
   
- 詳細については、[方法: ショートカット メニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)を参照してください。  
+ 詳細については、「[方法 :ショートカット メニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)します。  
   
  別個の検証コントローラーを作成して、独自にエラーを管理することもできます。 次に例を示します。  
   
@@ -242,7 +239,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ```  
   
 ## <a name="running-validation-when-a-change-occurs"></a>変更発生時の検証実行  
- モデルが無効になった直後にユーザーへの警告を表示する場合、検証を実行するストア イベントを定義できます。 ストア イベントの詳細については、[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)を参照してください。  
+ モデルが無効になった直後にユーザーへの警告を表示する場合、検証を実行するストア イベントを定義できます。 ストア イベントの詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
   
  カスタム コード ファイルを追加、検証コードに加えて、 **DslPackage**プロジェクトは、次の例のような内容。 このコードはドキュメントにアタッチされる `ValidationController` を使用します。 このコントローラーは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] エラー一覧に検証エラーを表示します。  
   
@@ -350,6 +347,3 @@ validationController.ValidateCustom
 ## <a name="see-also"></a>関連項目  
  [移動して、プログラム コードでモデルを更新しています](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [イベント ハンドラーによって変更内容がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)
-
-
-

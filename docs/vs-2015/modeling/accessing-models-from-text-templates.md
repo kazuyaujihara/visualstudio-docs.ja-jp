@@ -1,30 +1,27 @@
 ---
 title: テキスト テンプレートからモデルへのアクセス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
 ms.assetid: cf65395a-0ca3-4826-89c7-b1869562685c
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919859"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977483"
 ---
 # <a name="accessing-models-from-text-templates"></a>テキスト テンプレートからモデルへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-テキスト テンプレートを使用すると、レポート ファイル、ソース コード ファイル、およびその他のドメイン固有言語モデルを基にテキスト ファイルを作成できます。 テキスト テンプレートの基本については、[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)を参照してください。 テキスト テンプレートは、DSL をデバッグするときは、実験モードで動作し、DSL が配置されているコンピューターにも機能します。  
+テキスト テンプレートを使用すると、レポート ファイル、ソース コード ファイル、およびその他のドメイン固有言語モデルを基にテキスト ファイルを作成できます。 テキスト テンプレートの基本については、次を参照してください。[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートは、DSL をデバッグするときは、実験モードで動作し、DSL が配置されているコンピューターにも機能します。  
   
 > [!NOTE]
 >  DSL ソリューション、サンプル テキスト テンプレートを作成するときに **\*.tt**デバッグ プロジェクトでファイルが生成されます。 ドメイン クラスの名前を変更すると、これらのテンプレートが機能しなくなります。 それにもかかわらずが、必要な基本的なディレクティブを含めるし、DSL を一致するように更新できる例を示します。  
@@ -70,7 +67,7 @@ Here is a list of elements in the model:
   
 -   テンプレートをデバッグするには、追加`debug="true"`を`template`ディレクティブ。 別のインスタンスで、テンプレートが開きます[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]例外が発生した場合。 コードの特定の時点でデバッガーを中断する場合は、insert ステートメント `System.Diagnostics.Debugger.Break();`  
   
-     詳細については、[T4 テキスト テンプレートのデバッグ](../modeling/debugging-a-t4-text-template.md)を参照してください。  
+     詳細については、次を参照してください。 [T4 テキスト テンプレートのデバッグ](../modeling/debugging-a-t4-text-template.md)します。  
   
 ## <a name="about-the-dsl-directive-processor"></a>DSL のディレクティブ プロセッサについて  
  テンプレートには、DSL 定義で定義されているドメイン クラスを使用できます。 これはの詳細については、通常は、テンプレートの先頭近くに表示される、ディレクティブになります。 前の例では、次は。  
@@ -106,7 +103,7 @@ Here is a list of elements in the model:
 ##  <a name="Multiple"></a> テキスト テンプレートから複数のモデルへのアクセス  
   
 > [!NOTE]
->  このメソッドは、同じテンプレートに複数のモデルを読み取ることができますが、ModelBus references をサポートしていません。 ModelBus 参照によって指定されたモデルを読み取り、[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)を参照してください。  
+>  このメソッドは、同じテンプレートに複数のモデルを読み取ることができますが、ModelBus references をサポートしていません。 ModelBus 参照によって指定されたモデルを読み取り、次を参照してください。[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)します。  
   
  同じテキスト テンプレートから複数のモデルにアクセスする場合は、各モデルの生成されたディレクティブ プロセッサに 1 回を呼び出す必要があります。 各モデルでのファイル名を指定する必要があります、`requires`パラメーター。 内のルート ドメイン クラスを使用する名前を指定する必要があります、`provides`パラメーター。 別の値を指定する必要があります、`provides`内の各ディレクティブの呼び出しのパラメーター。 たとえば、Library.xyz、School.xyz、および Work.xyz と呼ばれる 3 つのモデル ファイルがあることを想定しています。 同じテキスト テンプレートからそれらにアクセスするには、次のように 3 つのディレクティブの呼び出しを記述する必要があります。  
   
@@ -150,7 +147,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
  使用して、ファイルを読み込むには、最も効果的な方法は、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus します。 一般的なシナリオで、テキスト テンプレートは、通常の方法で最初のモデルを読み込む、DSL に固有のディレクティブを使用します。 そのモデルには、別のモデルへの ModelBus 参照が含まれます。 ModelBus を使用して、参照されているモデルを開き、特定の要素にアクセスすることができます。 詳細については、[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)を参照してください。  
   
- あまり一般的なシナリオでは、ファイル名のみがあるモデル ファイルを開く可能性があり、これが、現在のではない[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。 この場合で説明した手法を使用してファイルを開く[方法: プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)します。  
+ あまり一般的なシナリオでは、ファイル名のみがあるモデル ファイルを開く可能性があり、これが、現在のではない[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。 この場合で説明した手法を使用してファイルを開く[方法。プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)します。  
   
 ## <a name="generating-multiple-files-from-a-template"></a>テンプレートから複数のファイルを生成します。  
  – をいくつかのファイルを生成する場合など、モデルでは、各要素に対して個別のファイルを生成するがあるいくつかの可能なアプローチです。 既定では、1 つのファイルは、各テンプレート ファイルから生成されます。  
@@ -222,6 +219,3 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>  
   
 ```
-
-
-
