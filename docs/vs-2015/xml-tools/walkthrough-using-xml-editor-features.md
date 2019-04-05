@@ -1,27 +1,22 @@
 ---
-title: 'チュートリアル: XML エディターの機能の使用 |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: XML エディターの機能を使用して |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f965bf147454d2076445170ea6fb6748782052d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974742"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>チュートリアル: XML エディター機能の使用
+# <a name="walkthrough-using-xml-editor-features"></a>チュートリアル: XML エディターの機能を使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルの手順では、新しい XML ドキュメントを作成する方法を示します。 ここでは、XML の作成に役立つ XML エディターの機能もいくつか使用します。  
@@ -37,7 +32,7 @@ ms.locfileid: "49252291"
   
      エディターに新しいファイルが開きます。 ファイルには既定の XML 宣言 `<?xml version="1.0" encoding="utf-8">` が含まれています。  
   
-3.  ドキュメントのプロパティ ウィンドウで、参照 ボタンをクリックします (**.。**) で、**スキーマ**フィールド。  
+3.  ドキュメントのプロパティ ウィンドウで、参照 ボタンをクリックします (**...**) で、**スキーマ**フィールド。  
   
      **XSD スキーマ** ダイアログ ボックスが表示されます。  
   
@@ -77,7 +72,7 @@ ms.locfileid: "49252291"
   
 5.  「`>`」と入力してタグを閉じます。  
   
-6.  エディターによって終了タグが追加されます。 終了タグは、検証エラーを示す波下線付きで追加されます。 ツール ヒントには、次のメッセージが表示されます。"要素 'employee' に不完全な内容が含まれています。 'ID' を指定してください。"  
+6.  エディターによって終了タグが追加されます。 終了タグは、検証エラーを示す波下線付きで追加されます。 ツールヒントには、メッセージが表示されます。要素 'employee' には、不完全な内容があります。 'ID' を指定してください。"  
   
 7.  型`<`選択**ID**メンバーの一覧から。 次に、「`>`」と入力します。  
   
@@ -85,7 +80,7 @@ ms.locfileid: "49252291"
   
 8.  型**abc**します。  
   
-     **Abc**テキストに波下線します。 ツール ヒントには、次のメッセージが表示されます。"'ID' 要素はデータ型に対して無効な値です。"  
+     **Abc**テキストに波下線します。 ツールヒントには、メッセージが表示されます。'ID' 要素には、このデータ型の無効な値があります。  
   
 9. ID 要素を右クリックし、選択**定義へ移動**します。  
   
@@ -93,7 +88,7 @@ ms.locfileid: "49252291"
   
 10. XML ファイルに戻るし、置換、 **abc**テキスト**123**します。  
   
-     ID 要素の値の下にあった波下線とツール ヒントが消去されます。 今度は、employee 終了タグのツール ヒントに次のメッセージが表示されます。"要素 'employee' に不完全な内容が含まれています。 'hire-date' を指定してください。"  
+     ID 要素の値の下にあった波下線とツール ヒントが消去されます。 これで、employee 終了タグのツールヒントには、メッセージが表示されます。要素 'employee' には、不完全な内容があります。 'hire-date' を指定してください。"  
   
 11. ID 終了タグの後にカーソルを置き、「`<`」を入力します。メンバーの一覧から hire-date を選択し、「`>`」と入力します。  
   
@@ -136,4 +131,3 @@ ms.locfileid: "49252291"
   
 ## <a name="see-also"></a>関連項目  
  [XML エディター](../xml-tools/xml-editor.md)
-

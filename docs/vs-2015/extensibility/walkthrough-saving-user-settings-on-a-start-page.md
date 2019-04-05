@@ -1,40 +1,35 @@
 ---
-title: 'チュートリアル: スタート ページでユーザー設定の保存 |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: [スタート] ページのユーザー設定の保存 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bdba9506b15b0d11f2c741c8651af2098b2f9da4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: dc913e3a456e46e1f9e19102dadddb1092358e0b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763285"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977825"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>チュートリアル: スタート ページのユーザー設定の保存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 スタート ページのユーザー設定を保持できます。 このチュートリアルでは、ユーザーが、ボタンをクリックするし、開始ページが読み込まれるたびに、その設定を取得し、設定をレジストリに保存するコントロールを作成できます。 スタート ページ プロジェクト テンプレートには、カスタマイズ可能なユーザー コントロールが含まれています、既定のスタート ページの XAML は、そのコントロールを呼び出すために、スタート ページ自体を変更する必要はありません。  
   
- このチュートリアルでインスタンス化される設定ストアのインスタンスである、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore>インターフェイスでは、読み取りし、が呼び出されると、次のレジストリの場所に書き込み: HKCU\Software\Microsoft\VisualStudio\14.0\\ *CollectionName*  
+ このチュートリアルでインスタンス化される設定ストアのインスタンスである、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore>インターフェイスでは、読み取りし、が呼び出されると、次のレジストリの場所に書き込み。HKCU\Software\Microsoft\VisualStudio\14.0\\*CollectionName*  
   
  Visual Studio の実験用インスタンスで実行されている設定ストアに対して読み取りし、書き込み HKCU\Software\Microsoft\VisualStudio\14.0Exp\\*CollectionName。*  
   
- 設定を保持する方法の詳細については、[Extending User Settings and オプション](../extensibility/extending-user-settings-and-options.md)を参照してください。  
+ 設定を保持する方法の詳細については、次を参照してください。 [Extending User Settings and オプション](../extensibility/extending-user-settings-and-options.md)します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
   
 > [!NOTE]
->  このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。  
+>  このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
 >   
 >  使用して、スタート ページ プロジェクト テンプレートをダウンロードする**拡張機能マネージャー**します。  
   
@@ -210,4 +205,3 @@ ms.locfileid: "51763285"
  <xref:EnvDTE80.DTE2?displayProperty=fullName>   
  [独自のスタート ページの作成](../misc/creating-your-own-start-page.md)   
  [Visual Studio コマンドのスタート ページへの追加](../extensibility/adding-visual-studio-commands-to-a-start-page.md)
-

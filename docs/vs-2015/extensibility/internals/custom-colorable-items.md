@@ -1,27 +1,22 @@
 ---
 title: カスタムの配色可能な項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 272d16b9f5f8fb33b68c911c5e7bd27923f4c2db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: e210d8c03d3e99cf1e37608f5b65d5a4ab0656f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796949"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973780"
 ---
 # <a name="custom-colorable-items"></a>カスタムの配色可能な項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ ms.locfileid: "51796949"
 > [!CAUTION]
 >  既存の装飾が可能な項目名の競合を回避するために装飾が可能な項目名には、言語の名前を含める必要があります。 開発中に、装飾が可能な項目の 1 つの名前を変更する場合は、初めてアクセスされた装飾が可能な項目が作成されたキャッシュをリセットする必要があります。 通常は、ディレクトリで、Visual Studio SDK と共にインストールされる CreateExpInstance ツールを使用して実験的なキャッシュをリセットします。  
 >   
->  **C:\Program Files (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+>  **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
->  キャッシュをリセットするには、呼び出す`CreateExpInstance /Reset`します。 CreateExpInstance の詳細については、[CreateExpInstance ユーティリティ](../../extensibility/internals/createexpinstance-utility.md)を参照してください。  
+>  キャッシュをリセットするには、呼び出す`CreateExpInstance /Reset`します。 CreateExpInstance の詳細については、次を参照してください。 [CreateExpInstance ユーティリティ](../../extensibility/internals/createexpinstance-utility.md)します。  
   
  装飾が可能な項目の一覧の最初の項目が参照されていることはありません。 最初の項目は、0 の装飾が可能な項目のインデックスに対応し、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]は常に既定のテキストの色とその項目の属性に提供します。 この参照されていない項目の処理の最も簡単な方法では、最初の項目として一覧内のプレース ホルダーの装飾が可能な項目を指定します。  
   
@@ -76,5 +71,4 @@ ms.locfileid: "51796949"
  [構文のカスタム エディターで色分け表示](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [構文の色分け、従来の言語サービス](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [構文の色分けを実装します。](../../extensibility/internals/implementing-syntax-coloring.md)   
- [方法: ビルトインの配色可能な項目の使用](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
-
+ [方法: 組み込みの配色可能な項目を使用して、](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

@@ -1,26 +1,21 @@
 ---
 title: オプション ページの作成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9c65a91135c9346e0dfcabbe7422501ed4f02704
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1b22fb5dafb350f967829b3c7ab953d74f6dda60
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751371"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58973869"
 ---
 # <a name="creating-an-options-page"></a>オプション ページの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "51751371"
   
 1.  すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]という名前の VSIX プロジェクト`MyToolsOptionsExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#/機能拡張**します。  
   
-2.  という名前の Visual Studio パッケージ項目テンプレートを追加することで、VSPackage を追加`MyToolsOptionsPackage`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加 ダイアログ**に移動して、 **Visual c# アイテム/機能拡張**選択と**Visual Studio パッケージ**します。 **名前**ダイアログの下部にあるフィールドに、ファイル名を変更して`MyToolsOptionsPackage.cs`します。 VSPackage を作成する方法の詳細については、[VSPackage を使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-vspackage.md)を参照してください。  
+2.  という名前の Visual Studio パッケージ項目テンプレートを追加することで、VSPackage を追加`MyToolsOptionsPackage`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加 ダイアログ**に移動して、 **Visual c# アイテム/機能拡張**選択と**Visual Studio パッケージ**します。 **名前**ダイアログの下部にあるフィールドに、ファイル名を変更して`MyToolsOptionsPackage.cs`します。 VSPackage を作成する方法の詳細については、次を参照してください。 [VSPackage を使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-vspackage.md)です。  
   
 #### <a name="to-create-the-tools-options-property-grid"></a>ツール オプションのプロパティ グリッドを作成するには  
   
@@ -270,4 +265,3 @@ ms.locfileid: "51751371"
   
 ## <a name="see-also"></a>関連項目  
  [オプションとオプション ページ](../extensibility/internals/options-and-options-pages.md)
-
