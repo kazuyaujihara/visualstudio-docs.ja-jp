@@ -1,35 +1,30 @@
 ---
 title: '方法: サービスを提供 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0d0425e0e931d28157439d3d8a4174f1d4961a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 082e8db8793850319f02586ba3894da8775e6ff2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785912"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972653"
 ---
-# <a name="how-to-provide-a-service"></a>方法: サービスを提供
+# <a name="how-to-provide-a-service"></a>方法: サービスを提供する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 VSPackage では、その他の Vspackage を使用できるサービスを提供できます。 サービスを提供するには、VSPackage は Visual Studio でサービスを登録して、サービスの追加する必要があります。  
   
  <xref:Microsoft.VisualStudio.Shell.Package>両方を実装するクラス<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>と<xref:System.ComponentModel.Design.IServiceContainer>します。 <xref:System.ComponentModel.Design.IServiceContainer> オンデマンドでサービスを提供するコールバック メソッドが含まれています。  
   
- サービスの詳細については、[Service Essentials](../extensibility/internals/service-essentials.md)を参照してください。  
+ サービスの詳細については、次を参照してください。 [Service Essentials](../extensibility/internals/service-essentials.md)します。  
   
 > [!NOTE]
 >  VSPackage は、アンロードしようとしていますが、Visual Studio は、VSPackage が提供するサービスのすべての要求が配信されたまでを待機します。 これらのサービスに対する新しい要求は許可されません。 明示的に呼び出す必要がありますいない、<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>をアンロードするときに、サービスを取り消すメソッド。  
@@ -146,7 +141,6 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
      値`helloString`「こんにちは」にする必要があります。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: サービスを取得](../extensibility/how-to-get-a-service.md)   
+ [方法: サービスを取得します。](../extensibility/how-to-get-a-service.md)   
  [使用して、サービスを提供します。](../extensibility/using-and-providing-services.md)   
  [サービスの基本情報](../extensibility/internals/service-essentials.md)
-

@@ -1,12 +1,9 @@
 ---
 title: ツールおよびツールボックスのカスタマイズ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -17,13 +14,13 @@ ms.assetid: 2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 93cc5fdef5c3d91281f01db8d4946dee17394170
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847813"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976590"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>ツールおよびツールボックスのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +84,11 @@ Editor
   
 3.  設定、**ツールボックス アイコン**プロパティを 16 x 16 ビットマップを参照してください。  
   
-     新しいアイコンを定義する場合は、ソリューション エクスプ ローラーでビットマップ ファイルを作成、 **dsl \resources**フォルダー。 次のプロパティ値があります:**ビルド アクション** = **コンテンツ**;**出力ディレクトリにコピー** = **コピーしない**します。  
+     新しいアイコンを定義する場合は、ソリューション エクスプ ローラーでビットマップ ファイルを作成、 **dsl \resources**フォルダー。 ファイルには、次のプロパティ値が必要です。**ビルド アクション** = **コンテンツ**;**出力ディレクトリにコピー** = **コピーしない**します。  
   
-4.  **要素ツール:** 設定、**クラス**図形にマップされる具象ドメイン クラスを参照するツールのプロパティ。  
+4.  **要素ツール。** 設定、**クラス**図形にマップされる具象ドメイン クラスを参照するツールのプロパティ。  
   
-     **コネクタ ツール:** 設定、**接続ビルダー**ドロップダウン リストで提供されている項目のいずれかのツールのプロパティ。 接続ビルダーは、コネクタをドメイン リレーションシップにマップすると、自動的に作成されます。 最近、コネクタを作成した場合、通常、関連する接続ビルダーを選択しています。  
+     **コネクタ ツール。** 設定、**接続ビルダー**ドロップダウン リストで提供されている項目のいずれかのツールのプロパティ。 接続ビルダーは、コネクタをドメイン リレーションシップにマップすると、自動的に作成されます。 最近、コネクタを作成した場合、通常、関連する接続ビルダーを選択しています。  
   
 5.  DSL をテストするには、F5 キーまたは CTRL+F5 キーを押し、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスでサンプル モデル ファイルを開きます。 ツールボックスに新しいツールが表示されます。 それを図の上にドラッグし、新しい要素が作成されることを確認します。  
   
@@ -104,9 +101,9 @@ Editor
   
      これらのカスタマイズは、ユーザーが要素を貼り付けたりドラッグ アンド ドロップしたりするときに発生することにも影響します。  
   
-     詳細については、[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)を参照してください。  
+     詳細については、次を参照してください。[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)します。  
   
--   コードを作成して、ツールをカスタマイズし、要素のグループを作成可能にします。 ツールはオーバーライド可能な ToolboxHelper.cs 内のメソッドにより初期化されます。 詳細については、[グループの要素の作成ツールから](#groups)を参照してください。  
+-   コードを作成して、ツールをカスタマイズし、要素のグループを作成可能にします。 ツールはオーバーライド可能な ToolboxHelper.cs 内のメソッドにより初期化されます。 詳細については、次を参照してください。[グループの要素の作成ツールから](#groups)します。  
   
 ##  <a name="groups"></a> ツールからの要素のグループを作成します。  
  各要素ツールは作成する要素のプロトタイプを含みます。 既定では、各要素ツールは単一の要素を作成しますが、1 つのツールで関連するオブジェクトのグループを作成することも可能です。 そのためには、関連項目を含む <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> を使用してツールを初期化します。  
@@ -115,7 +112,7 @@ Editor
   
  このコードで定義されているメソッドをオーバーライドする**Dsl\GeneratedCode\ToolboxHelper.cs**します。  
   
- プログラム コードを使用して、モデルをカスタマイズする方法の詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。  
+ プログラム コードを使用して、モデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。  
   
 ```  
 using Microsoft.VisualStudio.Modeling;  
@@ -163,7 +160,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
  接続ツールは接続ビルダーを呼び出します。 接続ビルダーを使用して、ユーザーが生成されたデザイナー内で要素をリンク可能な方法を指定します。 接続ビルダーは、リンク可能な要素と要素間に作成されるリンクの種類を指定します。  
   
- ドメイン クラス間に参照リレーションシップを作成すると、接続ビルダーは自動的に作成されます。 接続ツールをマップするときにこの接続ビルダーを使用します。 接続ツールを作成する方法の詳細については、[ツールボックスの構成](../modeling/customizing-tools-and-the-toolbox.md)を参照してください。  
+ ドメイン クラス間に参照リレーションシップを作成すると、接続ビルダーは自動的に作成されます。 接続ツールをマップするときにこの接続ビルダーを使用します。 接続ツールを作成する方法の詳細については、次を参照してください。[ツールボックスの構成](../modeling/customizing-tools-and-the-toolbox.md)します。  
   
  既定の接続ビルダーを変更して、異なる範囲のソース型とターゲット型を扱い、異なる種類のリレーションシップを作成できます。  
   
@@ -194,7 +191,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   これらのカスタマイズを実施するためにプログラム コードを準備する必要があります。 どのようなコードを準備する必要があるのかを知るためには、これらのボックスのいずれかをチェックし、[すべてのテンプレートの変換] をクリックして、ソリューションをビルドします。 エラー レポートが生成されます。 エラー レポートをダブルクリックし、追加する必要があるコードを説明しているコメントを確認します。  
   
 > [!NOTE]
->  カスタム コードを追加するには、GeneratedCode フォルダー内のコード ファイルとは別のコード ファイルに部分クラス定義を作成します。 作業内容を失わないために、生成されたコード ファイルを編集しないでください。 詳細については、[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)を参照してください。  
+>  カスタム コードを追加するには、GeneratedCode フォルダー内のコード ファイルとは別のコード ファイルに部分クラス定義を作成します。 作業内容を失わないために、生成されたコード ファイルを編集しないでください。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。  
   
 #### <a name="creating-custom-connection-code"></a>カスタム接続コードの作成  
  各リンク接続ディレクティブで、**ソース ロール ディレクティブ** タブの定義からな型をドラッグできます。 同様に、**ターゲット ロール ディレクティブ**へのタブを定義する型をドラッグできます。 種類ごとに、さらに指定できます (そのリンク接続ディレクティブです) の接続を許可するを設定するかどうか、**カスタム受け入れ**フラグを設定し、余分なコードを指定します。  
@@ -233,14 +230,14 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     /// <summary>  
     /// Only if source is on parent of target.  
     /// </summary>  
-    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
+    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
     {  
       return sourceInPort.Component == targetInPort.Component.Parent;  
     }  
 // And similar for OutPorts…  
 ```  
   
- プログラム コードを使用して、モデルをカスタマイズする方法の詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。  
+ プログラム コードを使用して、モデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。  
   
  たとえば、同様のコードを使用して、ユーザーによる親子リンクを含むループの作成を防ぐことができます。 これらの制限は、どんな場合でもユーザーが違反することができないため、「ハード」な制約と見なされます。 ユーザーが保存できない無効な構成を作成することにより、一時的に迂回可能な「ソフト」な検証チェックを作成することもできます。  
   
@@ -254,9 +251,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="see-also"></a>関連項目  
  [要素の作成と移動をカスタマイズします。](../modeling/customizing-element-creation-and-movement.md)   
  [コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)   
- [方法: ドラッグ アンド ドロップ ハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [方法: ドラッグ アンド ドロップ ハンドラーを追加します。](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [移動して、プログラム コードでモデルを更新しています](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [回路図のサンプル DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

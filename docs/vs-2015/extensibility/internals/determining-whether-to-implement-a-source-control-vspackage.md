@@ -1,26 +1,21 @@
 ---
 title: ソース管理 VSPackage を実装するかどうかを決定する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 18b7e24a246819b42b567d06cbcd556931f3244c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b47cfde4bbc228aa31d911a9499b74e12b78250c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758011"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974314"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>ソース管理 VSPackage を実装するかどうかの決定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51758011"
 このセクションでは、適切な統合パスの選択について大まかなガイドラインをソリューションと、ソース管理を拡張するためソース管理プラグインとソース管理 Vspackage の選択を詳しく説明します。  
   
 ## <a name="small-source-control-solution-with-limited-resources"></a>限られたリソースで小さなソース制御ソリューション  
- リソースが限られているし、ソース管理パッケージの作成のオーバーヘッドに伴う負担することはできません、ソース管理プラグイン API ベースのプラグインを作成できます。ソース管理のパッケージと並行して動作することができ、ソース管理プラグインとオンデマンドのパッケージ間で切り替えることができます。 詳細については、[登録と選択](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)を参照してください。  
+ リソースが限られているし、ソース管理パッケージの作成のオーバーヘッドに伴う負担することはできません、ソース管理プラグイン API ベースのプラグインを作成できます。ソース管理のパッケージと並行して動作することができ、ソース管理プラグインとオンデマンドのパッケージ間で切り替えることができます。 詳細については、次を参照してください。[登録と選択](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)します。  
   
 ## <a name="large-source-control-solution-with-a-rich-feature-set"></a>豊富な機能セットでの大規模なソース管理ソリューション  
  ソース管理プラグイン API を使用して適切にキャプチャされていないソースの豊富なコントロール モデルを提供するソース管理ソリューションを実装する場合は、統合パスとして、ソース管理パッケージを検討できます。 これは適用されます置換ではなく、ソース コントロール アダプター パッケージ (これはソース管理プラグインと通信し、基本ソース コントロールの UI を提供します) 場合に特にを独自ソース コントロールのイベントをカスタムの方法で処理できるようにします。 満足のいくソース UI を制御およびでは、そのエクスペリエンスを維持する必要があれば[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、ソース管理パッケージのオプションを使用して、それを実行できます。 ソース管理パッケージがジェネリックでないし、のみで使用するために設計されていますが[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。  
@@ -45,4 +40,3 @@ ms.locfileid: "51758011"
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグインの作成](../../extensibility/internals/creating-a-source-control-plug-in.md)
-

@@ -1,14 +1,9 @@
 ---
 title: '方法: 従来の言語サービスでのアウトラインの拡張のサポートを提供 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
 - language services, supporting outlining
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 56d125cdfc3cbdbbc880e1e8a98136eb20e07df1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff387bb2cd029e80641e8c13b198b8f22ccabd1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774212"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977100"
 ---
-# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>方法: 従来の言語サービスでのアウトラインの拡張のサポートを提供します。
+# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>方法: 従来の言語サービスでのアウトラインの拡張サポートの提供
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 お使いの言語をサポートしている以外のアウトラインのサポートを拡張するための 2 つのオプションがある、**定義に折りたたむ**コマンド。 エディター コントロールのアウトライン領域を追加し、クライアント制御のアウトライン領域を追加できます。  
@@ -60,5 +55,4 @@ ms.locfileid: "51774212"
     > [!NOTE]
     >  呼び出すと<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>、非表示のテキストのクライアントを指定できます (つまり、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>オブジェクト)。 このクライアントに通知するときに非表示のテキストまたはアウトライン領域を展開するか、ユーザーが折りたたまれています。  
   
-4.  呼び出す<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>構造) パラメーター: の値を指定<xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE>で、`iType`のメンバー、<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>構造体を非表示の領域ではなく、アウトライン領域を作成することを示します。 クライアントが管理またはでエディター制御領域は、かどうかを指定、`dwBehavior`のメンバー、<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>構造体。 スマート アウトライン実装は、さまざまなエディターとクライアントの制御にアウトライン領域を含めることができます。 アウトライン領域が折りたたまれて、「…」などのときに表示されるバナー テキストを指定、`pszBanner`のメンバー、<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>構造体。 エディターの既定のバナー テキストを非表示の領域は、「...」です。
-
+4.  呼び出す<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>構造) パラメーター。値を指定<xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE>で、`iType`のメンバー、<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>構造体を非表示の領域ではなく、アウトライン領域を作成することを示します。 クライアントが管理またはでエディター制御領域は、かどうかを指定、`dwBehavior`のメンバー、<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>構造体。 スマート アウトライン実装は、さまざまなエディターとクライアントの制御にアウトライン領域を含めることができます。 アウトライン領域が折りたたまれて、「…」などのときに表示されるバナー テキストを指定、`pszBanner`のメンバー、<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>構造体。 エディターの既定のバナー テキストを非表示の領域は、「...」です。

@@ -1,30 +1,27 @@
 ---
 title: '方法: プログラム コード内のファイルからモデルを開く |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: d7d68697-5418-4263-bdb2-48401924ea71
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: d40becc02333a95801794bd20f2b2abd45043c08
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940867"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978272"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>方法: プログラム コード内のファイルからモデルを開く
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 任意のアプリケーションで DSL モデルを開くことができます。  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]拡張機能では、この目的のため、ModelBus を使用することができます。 ModelBus はモデルまたはモデルでは、要素を参照して、移動された場合、モデルを検索するための標準的なメカニズムを提供します。 詳細については、[Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)を参照してください。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]拡張機能では、この目的のため、ModelBus を使用することができます。 ModelBus はモデルまたはモデルでは、要素を参照して、移動された場合、モデルを検索するための標準的なメカニズムを提供します。 詳細については、次を参照してください。 [Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)します。  
   
 ## <a name="target-framework"></a>[対象とする Framework]  
  設定、**ターゲット フレームワーク**をアプリケーション プロジェクトの **.NET Framework 4**します。  
@@ -47,7 +44,7 @@ ms.locfileid: "49940867"
   
     -   表示されない場合、 **.NET**  タブで、**参照の追加**ダイアログ ボックスで、をクリックして、**参照**タブに移動して`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`します。  
   
--   DSL アセンブリ、DSL プロジェクト bin フォルダーの下で検索されます。 形式の名前は、通常: *yourcompany ' と*.*プロジェクト*`.Dsl.dll`します。  
+-   DSL アセンブリ、DSL プロジェクト bin フォルダーの下で検索されます。 その名前の形式では通常です。*Yourcompany ' と*.*プロジェクト*`.Dsl.dll`します。  
   
 ## <a name="important-classes-in-the-dsl"></a>DSL で重要なクラス  
  DSL を読み取るコードを記述する前に、一部の DSL によって生成されたクラスの名前を知っておくべきです。 DSL ソリューションで開く、 **Dsl**プロジェクトし、ファイルの場所、 **GeneratedCode**フォルダー。 または、プロジェクトで DSL のアセンブリをダブルクリック**参照**、DSL の名前空間を開くと**オブジェクト ブラウザー**します。  
@@ -141,6 +138,3 @@ try
 catch (System.IO.IOException ex)  
 { ... }  
 ```
-
-
-

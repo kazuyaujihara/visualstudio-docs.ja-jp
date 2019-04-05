@@ -1,26 +1,21 @@
 ---
 title: エディター内で |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ddca5ab4b0d7dc6aa43f3db8c641ad5fc9e583b2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 034afff7b907a8f9079242e26105a46a68e8da6d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735182"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974536"
 ---
 # <a name="inside-the-editor"></a>エディターの内部
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +92,7 @@ ms.locfileid: "51735182"
  文字のシーケンス、または行のシーケンスとしては、テキストのスナップショットの内容を表示できます。 行の文字とは、0 から始まるインデックス両方が。 空のテキストのスナップショットには、ゼロの文字と 1 つの空の行が含まれています。 行は、有効な Unicode の改行文字シーケンス、または先頭またはバッファーの末尾で区切られます。 改行文字は、テキストのスナップショットに明示的に表現し、テキスト スナップショット内の改行はすべて同じであるがします。  
   
 > [!NOTE]
->  Visual Studio エディターでの改行文字の詳細については、[エンコーディングと改行](../ide/encodings-and-line-breaks.md)を参照してください。  
+>  Visual Studio エディターでの改行文字の詳細については、次を参照してください。[エンコーディングと改行](../ide/encodings-and-line-breaks.md)します。  
   
  によって表される行のテキスト、<xref:Microsoft.VisualStudio.Text.ITextSnapshotLine>オブジェクトで、特定の行番号または特定の文字位置のテキスト スナップショットから取得できます。  
   
@@ -218,7 +213,7 @@ abXefYj
  <xref:Microsoft.VisualStudio.Text.Classification.IClassifier>は一連の分類のテキストに分割するメカニズムです。 分類器は、特定のコンテンツの種類に対して定義されているし、特定のテキスト バッファーのインスタンス化する必要があります。 クライアントを実装する必要があります<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>テキスト分類に参加します。  
   
 #### <a name="classifier-aggregators"></a>分類器のアグリゲーター  
- 分類器アグリゲーターは、分類の 1 つのセットに 1 つのテキスト バッファーのすべての分類器を結合するメカニズムです。 たとえば、c# の分類器と英語の分類子の両方は、c# ファイルにコメントを分類を作成できます。 このコメントを考慮してください。  
+ 分類器アグリゲーターは、分類の 1 つのセットに 1 つのテキスト バッファーのすべての分類器を結合するメカニズムです。 たとえば、C# の分類器と英語の分類子の両方は、C# ファイルにコメントを分類を作成できます。 このコメントを考慮してください。  
   
 ```  
 // This method produces a classifier  
@@ -295,4 +290,3 @@ P: ABCDEvwxyz
 ## <a name="see-also"></a>関連項目  
  [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)   
  [エディターのインポート](../extensibility/editor-imports.md)
-

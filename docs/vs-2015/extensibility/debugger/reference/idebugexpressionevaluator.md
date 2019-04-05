@@ -1,14 +1,9 @@
 ---
 title: IDebugExpressionEvaluator |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugExpressionEvaluator
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0636d8c3-625a-49fa-94b6-516f22b7e1bc
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1360e40ce4f9dd2a4ce393a94e17a018462a7a72
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 46502d11ff82ee8a12e0a77d38da14a85368a52d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750901"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976457"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -63,9 +58,9 @@ IDebugExpressionEvaluator : IUnknown
 ## <a name="requirements"></a>必要条件  
  ヘッダー: ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: Microsoft.VisualStudio.Debugger.Interop  
   
- アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>例  
  この例では、ソース コードでシンボル プロバイダーとアドレスを指定された式エバリュエーターをインスタンス化する方法を示します。 この例の関数の場合、`GetEEMetric`から、[デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)ライブラリ、dbgmetric.lib します。  
@@ -115,4 +110,3 @@ IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolPro
  [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-

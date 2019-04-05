@@ -1,25 +1,20 @@
 ---
 title: 'チュートリアル: 網かけによるレンダリング エラーのデバッグ |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5d65c3d2525533e5881b4626941e43fb302ce2aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733192"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974356"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>チュートリアル: 網かけによるレンダリング エラーのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +85,7 @@ ms.locfileid: "51733192"
   
 2. 頂点シェーダーの出力構造体 (ピクセル シェーダーに入力される部分) を探します。 このシナリオでは、この構造体の名前は `output`です。 頂点シェーダー コードを調べて、おそらく他のユーザーがデバッグしたことが原因で、 `color` 構造体の `output` メンバーが完全に不透明な黒に明示的に設定されていることを確認します。  
   
-3. 色のメンバーが入力構造からコピーされないことを確認します。 `output.color` 構造が返される直前に `output` の値が完全に不透明な黒に設定されているため、 `output` の値が前の行で正しく初期化されていないことを確認することをお勧めします。 `output.color` の値を観察しながら、`output.color` を黒に設定する行に達するまで頂点シェーダー コードをステップスルーします。 黒に設定されるまで `output.color` の値は初期化されないことにご注意ください。 これにより、 `output.color` を黒に設定するコードの行を削除するのではなく、修正する必要があることが確認できます。  
+3. 色のメンバーが入力構造からコピーされないことを確認します。 `output.color` 構造が返される直前に `output` の値が完全に不透明な黒に設定されているため、 `output` の値が前の行で正しく初期化されていないことを確認することをお勧めします。 `output.color` の値を観察しながら、 `output.color`を黒に設定する行に達するまで頂点シェーダー コードをステップスルーします。 黒に設定されるまで `output.color` の値は初期化されないことにご注意ください。 これにより、 `output.color` を黒に設定するコードの行を削除するのではなく、修正する必要があることが確認できます。  
   
     !["Output.color"の値は黒です。](../debugger/media/gfx-diag-demo-render-error-shader-step-7.png "gfx_diag_demo_render_error_shader_step_7")  
   
@@ -113,6 +108,3 @@ output.color = input.color;
  コードを修正したら、それをリビルドし、もう一度アプリを実行してレンダリングの問題が解決されたことを確認します。  
   
  ![オブジェクトは正しい色でレンダリングされます。](../debugger/media/gfx-diag-demo-render-error-shader-resolution.png "gfx_diag_demo_render_error_shader_resolution")
-
-
-

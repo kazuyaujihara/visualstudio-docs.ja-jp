@@ -1,27 +1,22 @@
 ---
 title: 従来の言語サービス拡張機能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - Visual Studio, language services
 ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
 caps.latest.revision: 43
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6481dfd425f549742ad208df0d2cd04dd182c82f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9346311aac4bc5833005423e90c2eb92faddcb84
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758272"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973471"
 ---
 # <a name="legacy-language-service-extensibility"></a>従来の言語サービスの機能拡張
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,4 +52,3 @@ ms.locfileid: "51758272"
   
  [デバッグのための言語サービスのサポート](../../extensibility/internals/language-service-support-for-debugging.md)  
  Visual Studio Debugging SDK を作成し、プログラムをデバッグするために使用するデバッガー コンポーネントのカスタマイズに必要な情報を含むに関する情報とリンクを提供します。
-
