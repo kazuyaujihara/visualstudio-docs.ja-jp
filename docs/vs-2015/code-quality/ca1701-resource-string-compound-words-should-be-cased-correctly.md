@@ -1,14 +1,9 @@
 ---
-title: 'CA1701: リソース文字列の複合語を正しく使い分ける |Microsoft Docs'
-ms.custom: ''
+title: CA1701:リソース文字列の複合語では、大文字と小文字が正しく区別する必要があります |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ResourceStringCompoundWordsShouldBeCasedCorrectly
 - CA1701
@@ -20,14 +15,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a7212b5b629ef6cd15901c76c755d01c0efe17e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6c71286e5aff5928717402912d99f37a49a38f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963981"
 ---
-# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません
+# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701:リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -51,17 +46,14 @@ ms.locfileid: "49921933"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  複合語の両方の部分は、スペル チェック辞書によって認識され、目的は、2 つの単語を使用する場合は、この規則による警告を抑制するのには安全です。
 
- 複合語は、スペル チェッカーのユーザー辞書に追加することもできます。 カスタム辞書で単語では、違反が発生しません。 詳細については、次を参照してください。[方法: コード分析辞書をカスタマイズ](../code-quality/how-to-customize-the-code-analysis-dictionary.md)します。
+ 複合語は、スペル チェッカーのユーザー辞書に追加することもできます。 カスタム辞書で単語では、違反が発生しません。 詳細については、「[方法 :コード分析辞書をカスタマイズ](../code-quality/how-to-customize-the-code-analysis-dictionary.md)します。
 
 ## <a name="related-rules"></a>関連規則
- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+ [CA1702:複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: 識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:識別子は、ケース以外で相違させる必要があります。](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>関連項目
  [大文字と小文字の表記規則](http://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)[名前付けのガイドライン](http://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)
-
-
-

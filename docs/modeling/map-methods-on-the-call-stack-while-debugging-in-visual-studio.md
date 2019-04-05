@@ -62,7 +62,7 @@ ms.locfileid: "55924546"
 
 - [Q &AMP; A](#QA)
 
-  コマンドとコード マップを使用する場合に使用できる操作の詳細については、次を参照してください。[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)します。
+  コマンドとコード マップを使用する場合に使用できる操作の詳細については、[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)を参照してください。
 
 ## <a name="MapStack"></a>呼び出し履歴でマップを作成する
 

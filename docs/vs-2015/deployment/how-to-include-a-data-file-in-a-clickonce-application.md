@@ -1,14 +1,9 @@
 ---
 title: '方法: ClickOnce アプリケーションにデータ ファイルを含める |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e4d5be3628cd9653bfc713caea426c91a205419
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8868ef00c9d7ffee7687970c5a09b6a044c85455
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884915"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963583"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>方法 : ClickOnce アプリケーションにデータ ファイルを含める
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>方法: ClickOnce アプリケーションにデータ ファイルを含める
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 各[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションをインストールするには、アプリケーションが独自のデータを管理できる先のコンピューターのローカル ディスク上のデータ ディレクトリが割り当てられます。 データ ファイルは、任意の種類のファイルを含めることができます。 テキスト ファイル、XML ファイル、または偶数の Microsoft Access データベース (.mdb) ファイル。 次の手順に任意の型のデータ ファイルを追加する方法を示して、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。  
@@ -42,7 +37,7 @@ ms.locfileid: "49884915"
   
 2. データ ファイルの一覧に、アプリケーション マニフェストを更新します。  
   
-    **mage-u v1.0.0.0\Application.manifest-fromdirectory v1.0.0.0**  
+    **mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0**  
   
     このタスクを実行すると、アプリケーション マニフェストでファイルの一覧を再作成しも自動的にハッシュ署名を生成します。  
   
@@ -62,9 +57,9 @@ ms.locfileid: "49884915"
   
     **mage-s アプリ マニフェストの cf cert_file-pwd パスワード**  
   
-    **mage-u 配置マニフェスト appm アプリ マニフェスト**  
+    **mage -u deployment manifest -appm app manifest**  
   
-    **mage-s 配置マニフェストは、cf certfile-pwd パスワード**  
+    **mage -s deployment manifest -cf certfile -pwd password**  
   
 6. 
   
@@ -94,6 +89,3 @@ ms.locfileid: "49884915"
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションにおけるローカル データおよびリモート データへのアクセス](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
-
-
-

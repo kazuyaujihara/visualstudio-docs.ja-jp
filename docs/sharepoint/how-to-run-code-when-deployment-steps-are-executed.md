@@ -20,7 +20,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56638934"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>方法: 配置手順の実行時にコードを実行します。
-  SharePoint プロジェクトの配置手順の追加のタスクを実行する場合は、前に、SharePoint プロジェクト アイテムと Visual Studio が各デプロイの手順を実行後に発生するイベントを処理できます。 詳細については、次を参照してください。[拡張 SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)します。
+  SharePoint プロジェクトの配置手順の追加のタスクを実行する場合は、前に、SharePoint プロジェクト アイテムと Visual Studio が各デプロイの手順を実行後に発生するイベントを処理できます。 詳細については、[拡張 SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)を参照してください。
 
 ### <a name="to-run-code-when-deployment-steps-are-executed"></a>配置手順の実行時にコードを実行するには
 
@@ -50,7 +50,7 @@ ms.locfileid: "56638934"
 -   System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>拡張機能をデプロイします。
- 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+ 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、[Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint のパッケージ化と配置を拡張します。](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

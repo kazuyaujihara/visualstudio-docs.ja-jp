@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 6be1e48917c8ad5e7035f01caa4f74b78a6fa3d0
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51792256"
@@ -31,7 +31,7 @@ ms.locfileid: "51792256"
   
 - フォームおよびコードの表示のサポート: さまざまな種類のビューを提供するエディターとして使用します。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]、たとえば、フォーム ビューとコード ビューの両方を提供します。  
   
-  詳細については、Visual Studio パッケージ テンプレートによって作成されたカスタム エディターのプロジェクトで EditorFactory.cs ファイル CreateEditorInstance プロシージャを参照してください。 このプロジェクトの詳細については、次を参照してください。[チュートリアル: カスタム エディターを作成する](../extensibility/walkthrough-creating-a-custom-editor.md)します。  
+  詳細については、Visual Studio パッケージ テンプレートによって作成されたカスタム エディターのプロジェクトで EditorFactory.cs ファイル CreateEditorInstance プロシージャを参照してください。 このプロジェクトの詳細については、[チュートリアル: カスタム エディターを作成する](../extensibility/walkthrough-creating-a-custom-editor.md)を参照してください。  
   
 ## <a name="synchronizing-views"></a>ビューの同期  
  複数のビューを実装するときに、ドキュメント データ オブジェクトは、すべてのビューと、データの同期を維持する責任を負います。 インターフェイスを処理するイベントを使用する<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>データと複数のビューを同期します。  
@@ -46,5 +46,5 @@ ms.locfileid: "51792256"
   
  独自のウィンドウ フレームに既定では、それぞれのビュー (ドキュメント ビュー オブジェクト) が含まれている (<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>)。 既に説明したように、ただし、ドキュメント データを表示できますで複数のビュー。 これを有効にするのには、Visual Studio は、対象のドキュメントがエディターで開いて既にかどうかを判断する RDT を確認します。 IDE を呼び出すと<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>でエディターを作成するには、NULL 以外の値が返される、`punkDocDataExisting`パラメーターは、ドキュメントが別のエディターで開いて既にことを示します。 詳細については、RDT 関数を参照してください[を実行しているドキュメント テーブル](../extensibility/internals/running-document-table.md)します。  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>の実装で返されるドキュメント データ オブジェクトを調べます`punkDocDataExisting`ドキュメント データが、エディターの適切なかどうかを判断します。 (たとえば、HTML のデータのみが表示されます、HTML エディターによって。)適切な場合は、エディター ファクトリは、データの 2 番目のビューを提供する必要があります。 場合、`punkDocDataExisting`パラメーターが`NULL`、ことは、ドキュメント データ オブジェクトが別のエディターで開いているか、可能性の高い、ドキュメント データが既に別のビューと同じ、エディターで開かれています。 ドキュメントのデータが、エディター ファクトリがサポートされていない別のエディターで開いている場合は、エディター ファクトリを開く Visual Studio が失敗します。 詳細については、次を参照してください。[方法: ドキュメント データへのアタッチ ビュー](../extensibility/how-to-attach-views-to-document-data.md)します。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>の実装で返されるドキュメント データ オブジェクトを調べます`punkDocDataExisting`ドキュメント データが、エディターの適切なかどうかを判断します。 (たとえば、HTML のデータのみが表示されます、HTML エディターによって。)適切な場合は、エディター ファクトリは、データの 2 番目のビューを提供する必要があります。 場合、`punkDocDataExisting`パラメーターが`NULL`、ことは、ドキュメント データ オブジェクトが別のエディターで開いているか、可能性の高い、ドキュメント データが既に別のビューと同じ、エディターで開かれています。 ドキュメントのデータが、エディター ファクトリがサポートされていない別のエディターで開いている場合は、エディター ファクトリを開く Visual Studio が失敗します。 詳細については、[方法: ドキュメント データへのアタッチ ビュー](../extensibility/how-to-attach-views-to-document-data.md)を参照してください。
 

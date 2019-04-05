@@ -1,14 +1,9 @@
 ---
 title: '方法: ClickOnce アプリケーションの更新プログラムの管理 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
 dev_langs:
@@ -24,15 +19,15 @@ ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: adf0a6df54c3e6bd758896ac8a836b6174e767b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9781745af5d65d497652002c9afcd8132058ffb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272468"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976613"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>方法 : ClickOnce アプリケーションの更新プログラムを管理する
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションの更新プログラムを管理する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、プログラムによってまたは自動的に更新プログラムを確認できます。 開発者は、多くの更新チェックを実行するタイミングと方法、更新プログラムが必須かどうか、および更新プログラム、アプリケーションがどこで確認する必要がありますを指定するときに柔軟性があります。  
@@ -43,7 +38,7 @@ ms.locfileid: "49272468"
   
  1 つの場所からアプリケーションの展開を別の更新することができますも。 さまざまな更新プログラムの場所を指定します"するには」を参照してください。  
   
- 詳細については、次を参照してください。 [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)します。  
+ 詳細については、「[ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)」を参照してください。  
   
  管理する更新プログラムの動作、**アプリケーションの更新プログラム** ダイアログ ボックスから使用可能な**発行**のページ、**プロジェクト デザイナー。**  
   
@@ -59,7 +54,7 @@ ms.locfileid: "49272468"
   
 5.  **アプリケーションの更新プログラムを確認する必要があります **セクションで、**アプリケーションを開始する前に**します。 これにより、常にネットワークに接続しているユーザーが最新の更新プログラムとアプリケーションを実行します。  
   
-### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>アプリケーションの起動後に、バック グラウンドで更新をチェックするには  
+### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>アプリケーションの起動後に、バック グラウンドで更新プログラムを確認するには  
   
 1.  **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
   
@@ -109,17 +104,14 @@ ms.locfileid: "49272468"
   
 5.  **の場所を更新**フィールドに、形式を使用して、完全修飾 URL で更新プログラムの場所を入力 http://Hostname/ApplicationName、または UNC パス形式を使用して\\\Server\ApplicationName、またはをクリックして、 **の参照**更新プログラムの場所を参照するボタンをクリックします。 更新プログラムの場所は、アプリケーションはそれ自体の更新バージョンを探します。  
   
-6.  ユーザーが更新をチェックする選択が Windows フォームにボタン、メニュー項目、またはその他のユーザー インターフェイス項目を作成します。 その項目のイベント ハンドラーからの確認し、更新プログラムをインストールするメソッドを呼び出します。 このようなメソッドの Visual Basic および Visual c# のコードの例を見つけることができます[方法: ClickOnce 配置 API をアプリケーションの更新プログラムを使用してプログラムでの確認](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)。  
+6.  ユーザーが更新をチェックする選択が Windows フォームにボタン、メニュー項目、またはその他のユーザー インターフェイス項目を作成します。 その項目のイベント ハンドラーからの確認し、更新プログラムをインストールするメソッドを呼び出します。 このようなメソッドでの Visual Basic および Visual c# のコードの例を検索できます[方法。ClickOnce 配置 API を使用してプログラムでアプリケーションの更新プログラムの確認](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)します。  
   
 7.  アプリケーションをビルドします。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [アプリケーションの更新 ダイアログ ボックス](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
+ [アプリケーションの更新 ダイアログ ボックス](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
  [ClickOnce の更新方法を選択します。](../deployment/choosing-a-clickonce-update-strategy.md)   
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
- [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [方法 : ClickOnce 配置 API を使用してアプリケーションの更新プログラムをプログラムで確認する](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
-
-
-
+ [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行します。](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [方法: ClickOnce 配置 API を使用してアプリケーションの更新プログラムをプログラムで確認する](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

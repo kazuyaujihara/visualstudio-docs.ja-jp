@@ -35,7 +35,7 @@ ms.locfileid: "56605979"
 
 - Microsoft Office PowerPoint プレゼンテーション。
 
-  詳細については、次を参照してください。[カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)します。
+  詳細については、[カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)を参照してください。
 
   **適用対象します。** このトピックの情報は、Excel、PowerPoint、および Word のアプリケーション レベルのプロジェクトに適用されます。 詳細については、「[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
 

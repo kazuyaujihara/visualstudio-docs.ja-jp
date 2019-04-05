@@ -24,7 +24,7 @@ ms.locfileid: "55944976"
 ---
 # <a name="accessibility-in-office-projects"></a>Office プロジェクトのユーザー補助機能
 
-Microsoft Visual Studio と Microsoft Office には、標準のユーザー補助の要件を満たすカスタム ソリューションを構築するための多くのユーザー補助機能が含まれます。 Microsoft では、Web 上のユーザー補助のガイドラインを公開します。 詳細については、次を参照してください。、[アクセシビリティ web サイト](http://go.microsoft.com/fwlink/?LinkID=37113)します。
+Microsoft Visual Studio と Microsoft Office には、標準のユーザー補助の要件を満たすカスタム ソリューションを構築するための多くのユーザー補助機能が含まれます。 Microsoft では、Web 上のユーザー補助のガイドラインを公開します。 詳細については、、[アクセシビリティ web サイト](http://go.microsoft.com/fwlink/?LinkID=37113)を参照してください。
 
 ほとんどの場合は、Visual Studio での Office プロジェクトには、ユーザー補助の標準や公開プロパティ、ソリューションにアクセスできるようにするために設定できますが満たしています。 ただし、ユーザー補助機能が制限されている一部の機能があります。
 
@@ -59,7 +59,7 @@ Microsoft Visual Studio と Microsoft Office には、標準のユーザー補�
 ## <a name="accessibility-at-runtime"></a>実行時に、ユーザー補助機能
 
 ### <a name="windows-forms-controls-on-office-documents"></a>Office ドキュメントでの Windows フォーム コントロール
- Windows フォーム コントロールは、スクリーン リーダーなどのユーザー補助機能するコントロールに関する情報を提供する、アクセシビリティのプロパティを公開します。 コントロールがドキュメント レベルのカスタマイズでの Office ドキュメントを上にある場合に、これらのアクセシビリティのプロパティの利用ができます。 詳細については、次を参照してください。 [Windows フォーム上のコントロールのアクセシビリティに関する情報を提供](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)します。
+ Windows フォーム コントロールは、スクリーン リーダーなどのユーザー補助機能するコントロールに関する情報を提供する、アクセシビリティのプロパティを公開します。 コントロールがドキュメント レベルのカスタマイズでの Office ドキュメントを上にある場合に、これらのアクセシビリティのプロパティの利用ができます。 詳細については、[Windows フォーム上のコントロールのアクセシビリティに関する情報を提供](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)を参照してください。
 
  ただし、ユーザー補助な制限があります実行時に Windows フォーム コントロールは、Excel ブックまたは Word 文書にホストされている場合。
 
@@ -67,12 +67,12 @@ Microsoft Visual Studio と Microsoft Office には、標準のユーザー補�
 
 - 100% 以外に、ドキュメントのズーム設定を変更すると、ドキュメント上のコントロールが無効です。
 
-  ドキュメントでの Windows フォーム コントロールの制限事項については、次を参照してください。[の制限事項の Windows フォーム コントロールの Office ドキュメント](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)します。
+  ドキュメントでの Windows フォーム コントロールの制限事項については、[の制限事項の Windows フォーム コントロールの Office ドキュメント](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)を参照してください。
 
 ### <a name="actions-panes-and-custom-task-panes"></a>操作ウィンドウやカスタム作業ウィンドウ
  操作ウィンドウまたはカスタム作業ウィンドウにフォーカスが、コントロールにアクセスする、Windows フォーム アプリケーションのコントロールと同じようです。 [操作] ウィンドウとドキュメントの間にカーソルを移動するキーを押して**F6**します。
 
- 操作ウィンドウやカスタム作業ウィンドウの詳細については、次を参照してください。[操作ウィンドウの概要](../vsto/actions-pane-overview.md)と[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
+ 操作ウィンドウやカスタム作業ウィンドウの詳細については、[操作ウィンドウの概要](../vsto/actions-pane-overview.md)と[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)を参照してください。
 
 ### <a name="display-modes"></a>表示モード
 

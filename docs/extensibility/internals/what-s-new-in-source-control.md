@@ -31,7 +31,7 @@ VSPackage では、Visual Studio を機能のほとんどの種類を追加で�
 
 ソース管理 VSPackage の実装には、「全部かゼロか」の戦略が必要です。 ソース管理 VSPackage の作成者とインターフェイスでさまざまなソース コントロールのインターフェイスと (ダイアログ ボックス、メニューのおよびツールバー) 全体のソース管理機能をカバーする、新しい UI 要素を実装する作業量が大幅に投資する必要があります。Visual Studio と正常に統合するすべてのパッケージの必要です。
 
-次の手順では、ソース管理パッケージを実装するために必要なものの概要を提供します。 詳細については、次を参照してください。[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)します。
+次の手順では、ソース管理パッケージを実装するために必要なものの概要を提供します。 詳細については、[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)を参照してください。
 
 1. プライベート ソース管理サービスを proffers VSPackage を作成します。
 

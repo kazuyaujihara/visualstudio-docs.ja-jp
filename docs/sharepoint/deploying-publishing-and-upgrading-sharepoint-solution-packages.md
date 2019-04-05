@@ -27,7 +27,7 @@ ms.locfileid: "56618407"
   Visual Studio で SharePoint ソリューションを開発した後か、そのパッケージ (.wsp) ファイルをローカル SharePoint サーバーにデプロイしたりリモートまたはローカルの SharePoint サーバーにパブリッシュできます。 ファイルを展開する場合は、パッケージ ファイル (.wsp) を展開する方法をカスタマイズできます。
 
 > [!NOTE]
->  現時点では、サンド ボックス ソリューションのみがリモートの SharePoint サーバーにパブリッシュできます。 詳細については、次を参照してください。[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)します。
+>  現時点では、サンド ボックス ソリューションのみがリモートの SharePoint サーバーにパブリッシュできます。 詳細については、[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)を参照してください。
 
 ## <a name="deploy-publish-and-upgrade"></a>配置、発行、およびアップグレード
  *展開*ローカル ホストに、Visual Studio での SharePoint プロジェクトからビルドされた SharePoint ソリューション ファイルのコピーを参照します。 デプロイ済みのソリューションでは、展開後、ソリューションのアクティブ化など、インターネット インフォメーション サービス (IIS) プールのリサイクル、展開の手順を構成してなど。 展開するには、使用、**デプロイ**コマンドを**ビルド**メニュー。 詳細については、「[方法 :SharePoint の配置構成を編集](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)と[方法。展開し、SharePoint ソリューションをローカル SharePoint サイトにパブリッシュ](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)します。

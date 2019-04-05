@@ -26,7 +26,7 @@ ms.locfileid: "56604679"
  Managed Package Framework (MPFProj) プロジェクトを作成して、新しいプロジェクト システムを管理するためのヘルパー クラスを提供します。 コードとコンパイル」の手順に従って、ソースを検索できる[- Visual Studio 2013 のプロジェクトの MPF](https://github.com/tunnelvisionlabs/MPFProj10)します。
 
 ## <a name="persistence-of-project-and-configuration-properties"></a>プロジェクトと構成プロパティの永続化
- プロジェクトと構成のプロパティは、たとえば、プロジェクトの種類に関連付けられているファイル名拡張子、.csproj、.vbproj、および .myproj を含むプロジェクト ファイルに保存されます。 通常、言語のプロジェクトは、プロジェクト ファイルを生成するのにテンプレート ファイルを使用します。 ただし、テンプレート プロジェクトの種類を関連付けるために実際にいくつかの方法はあります。 詳細については、次を参照してください。[テンプレート ディレクトリの説明 (します。Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)します。
+ プロジェクトと構成のプロパティは、たとえば、プロジェクトの種類に関連付けられているファイル名拡張子、.csproj、.vbproj、および .myproj を含むプロジェクト ファイルに保存されます。 通常、言語のプロジェクトは、プロジェクト ファイルを生成するのにテンプレート ファイルを使用します。 ただし、テンプレート プロジェクトの種類を関連付けるために実際にいくつかの方法はあります。 詳細については、[テンプレート ディレクトリの説明 (を参照してください。Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)します。
 
  プロジェクトと構成のプロパティを作成するには、テンプレート ファイルに項目を追加します。 これらのプロパティはこのテンプレートを使用するプロジェクトの種類を使用して作成されたプロジェクトを利用できます。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] プロジェクトおよび MPFProj の両方を使用して、[ビルド内にありません。MSBuild の概要](/previous-versions/visualstudio/visual-studio-2008/ms171452(v=vs.90))テンプレート ファイルのスキーマ。 これらのファイルでは、各構成の PropertyGroup セクションがあります。 プロジェクトのプロパティは、null 文字列に設定の構成引数を持つ最初の PropertyGroup セクションで通常は保持されます。
 

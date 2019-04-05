@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49192453"
@@ -49,7 +49,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  プログラムの制御下でのみ、ユーザーではなく、プロパティの変数を作成する場合など、新しいドメインのプロパティを選択**塗りつぶしの色**DSL 定義図でします。 次に、[プロパティ] ウィンドウで次のように設定します。**参照可能**に`false`設定または**は読み取り専用 UI**に`true`します。  
   
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>色、スタイル、またはモデル要素のプロパティに依存する場所を変更ルールを定義します。  
- モデルの他の部分に依存する図形の外観を更新するルールを定義することができます。 たとえば、モデル要素のプロパティに依存するそのシェイプの色を更新するモデル要素のルールの変更を定義できます。 ルールを変更の詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。  
+ モデルの他の部分に依存する図形の外観を更新するルールを定義することができます。 たとえば、モデル要素のプロパティに依存するそのシェイプの色を更新するモデル要素のルールの変更を定義できます。 ルールを変更の詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
   
  元に戻すコマンドを実行すると、規則は呼び出されませんので、ストア内に保持されるプロパティを更新するためだけのルールを使用する必要があります。 これは、図形の可視性とサイズなど、一部のグラフィカル機能には含まれません。 図形のこれらの機能を更新するを参照してください。[非ストア グラフィックの更新機能](#OnAssociatedProperty)します。  
   

@@ -27,7 +27,7 @@ ms.locfileid: "56636919"
 
 1.  SharePoint プロジェクトを作成するか開きます。
 
-     詳細については、次を参照してください。 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)します。
+     詳細については、[SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)を参照してください。
 
 2.  SharePoint プロジェクト ノードを選択**ソリューション エクスプ ローラー**選び、**プロジェクト** > **新しい項目の追加**します。
 
@@ -37,7 +37,7 @@ ms.locfileid: "56636919"
 
 5.  **名前**ボックス、web パーツの名前を指定し、選択、**追加**ボタンをクリックします。
 
-     Web パーツの表示で**ソリューション エクスプ ローラー**します。 Web パーツを含むファイルの詳細については、次を参照してください。[の SharePoint web パーツを作成](../sharepoint/creating-web-parts-for-sharepoint.md)です。
+     Web パーツの表示で**ソリューション エクスプ ローラー**します。 Web パーツを含むファイルの詳細については、[の SharePoint web パーツを作成](../sharepoint/creating-web-parts-for-sharepoint.md)を参照してください。
 
 6.  **ソリューション エクスプ ローラー**、先ほど作成した web パーツのコード ファイルを開きます。
 

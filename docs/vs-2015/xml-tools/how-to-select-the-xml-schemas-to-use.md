@@ -1,25 +1,20 @@
 ---
 title: '方法: 使用する XML スキーマの選択 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863725"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973585"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>方法: 使用する XML スキーマを選択する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ XML エディターはスキーマ キャッシュを提供します。このキ
   
 3.  スキーマ キャッシュに追加するスキーマを参照し、選択します。  
   
-4.  クリックして**オープン**します。  
+4.  **[開く]** をクリックします。  
   
      スキーマに追加するスキーマのキャッシュし、は、**使用**列の値に設定されて**このスキーマを使用して、** します。  
   
@@ -83,6 +78,3 @@ XML エディターはスキーマ キャッシュを提供します。このキ
  [スキーマ キャッシュ](../xml-tools/schema-cache.md)   
  [XML スキーマ ダイアログ ボックス](../xml-tools/xml-schemas-dialog-box.md)   
  [XML エディター](../xml-tools/xml-editor.md)
-
-
-

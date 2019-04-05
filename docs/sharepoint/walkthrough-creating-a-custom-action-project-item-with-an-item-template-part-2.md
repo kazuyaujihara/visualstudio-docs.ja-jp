@@ -43,13 +43,13 @@ ms.locfileid: "56630887"
 
 - サポート対象エディションの Windows、SharePoint、Visual Studio。
 
-- Visual Studio SDK。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、次を参照してください。 [Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)します。
+- Visual Studio SDK。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、[Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
   次の概念に関する知識があると役に立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
 - Visual Studio のプロジェクトおよび項目テンプレート用のウィザード。 詳細については、「[方法 :プロジェクト テンプレートにウィザードを使用して](../extensibility/how-to-use-wizards-with-project-templates.md)と<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>インターフェイス。
 
-- SharePoint のカスタム動作。 詳細については、次を参照してください。[カスタム アクション](http://go.microsoft.com/fwlink/?LinkId=177800)します。
+- SharePoint のカスタム動作。 詳細については、[カスタム アクション](http://go.microsoft.com/fwlink/?LinkId=177800)を参照してください。
 
 ## <a name="create-the-wizard-project"></a>ウィザード プロジェクトを作成します。
  このチュートリアルを完了する、CustomActionProjectItem ソリューションで作成したプロジェクトを追加する必要があります[チュートリアル。カスタム動作プロジェクト項目を作成、項目テンプレート、第 1 部に](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)します。 このプロジェクトで、<xref:Microsoft.VisualStudio.TemplateWizard.IWizard> インターフェイスを実装し、ウィザードの UI を定義します。
@@ -130,7 +130,7 @@ ms.locfileid: "56630887"
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    >  この XAML で作成したウィンドウがから派生、<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基本クラス。 Visual Studio にカスタムの WPF ダイアログ ボックスを追加すると、Visual Studio での他のダイアログ ボックスで一貫性のあるスタイルを設定して、モーダル ダイアログ ボックスで発生する可能性のある問題を回避するためには、このクラスから、ダイアログ ボックスを派生させることをお勧めします。 詳細については、次を参照してください。[モーダル ダイアログ ボックスの管理の作成と](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)します。
+    >  この XAML で作成したウィンドウがから派生、<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基本クラス。 Visual Studio にカスタムの WPF ダイアログ ボックスを追加すると、Visual Studio での他のダイアログ ボックスで一貫性のあるスタイルを設定して、モーダル ダイアログ ボックスで発生する可能性のある問題を回避するためには、このクラスから、ダイアログ ボックスを派生させることをお勧めします。 詳細については、[モーダル ダイアログ ボックスの管理の作成と](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)を参照してください。
 
 3.  Visual Basic プロジェクトを開発する場合は、削除、`ItemTemplateWizard`から名前空間、`WizardWindow`内のクラス名、`x:Class`の属性、`Window`要素。 この要素は XAML の 1 行目にあります。 完了したら、最初の行は、次のコードをようになります。
 
@@ -213,7 +213,7 @@ ms.locfileid: "56630887"
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>置き換え可能パラメーターを追加、 *Elements.xml*項目テンプレートのファイル
  いくつかの置き換え可能パラメーターを追加、 *Elements.xml* ItemTemplate プロジェクト ファイル。 これらのパラメーターは、前に定義した `PopulateReplacementDictionary` クラスの `CustomActionWizard` メソッドで初期化されます。 ユーザーは、カスタム動作プロジェクト項目をプロジェクトに追加で Visual Studio でこれらのパラメーターが自動的に置き換えられます、 *Elements.xml*ウィザードでユーザーが指定した値を持つ新しいプロジェクト項目内のファイル。
 
- 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 独自の置き換え可能パラメーターを定義するだけでなく、SharePoint プロジェクト システムを定義し、初期化するための組み込みパラメーターを使用できます。 詳細については、次を参照してください。[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)します。
+ 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 独自の置き換え可能パラメーターを定義するだけでなく、SharePoint プロジェクト システムを定義し、初期化するための組み込みパラメーターを使用できます。 詳細については、[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)を参照してください。
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>置き換え可能パラメーターを追加する、 *Elements.xml*ファイル
 

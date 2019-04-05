@@ -1,12 +1,9 @@
 ---
 title: Access データベース (Windows フォーム) でのデータへの接続 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,29 +19,28 @@ ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4741dedb907bb88513147a98b916831abd965576
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bb94438a17fdc718b28503c8e258b959a16a90ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207351"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973044"
 ---
-# <a name="connect-to-data-in-an-access-database-windows-forms"></a>Access データベース (Windows フォーム) のデータに接続します。
+# <a name="connect-to-data-in-an-access-database-windows-forms"></a>Access データベース内のデータへの接続 (Windows フォーム)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Visual Studio を使用して、Access データベース (.mdf ファイルまたは .accdb ファイル) に接続することができます。 接続を定義した後に、データが、**データソース**ウィンドウ。 ここから、テーブルまたはビューをフォームにドラッグできます。 参照してください、Visual Studio のプロジェクト システムがこれらのローカル データベース ファイルを管理する方法を理解したい場合[方法: プロジェクトでのローカル データ ファイルの管理](../data-tools/how-to-manage-local-data-files-in-your-project.md)します。  
+Visual Studio を使用して、Access データベース (.mdf ファイルまたは .accdb ファイル) に接続することができます。 接続を定義すると、**[データ ソース ウィンドウ]** にデータが表示されます。 ここから、テーブルまたはビューをフォームにドラッグできます。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  これらの手順を使用するには、Windows フォーム アプリケーション プロジェクト、および Access データベース (ファイル.accdb ファイル) または Access 2000-2003 データベース (.mdb ファイル) が必要です。 ファイルの種類に対応する手順に従ってください。  
   
-## <a name="creating-the-dataset-for-an-accdb-file"></a>.Accdb ファイルのデータセットの作成  
+## <a name="creating-the-dataset-for-an-accdb-file"></a>.accdb ファイルのデータセットの作成  
  次の手順を使用して、Access 2013、Office 365、Access 2010、または Access 2007 によって作成されたデータベースに接続することができます。  
   
 #### <a name="to-create-the-dataset"></a>データセットを作成するには  
   
-1.  データに接続する Windows フォーム アプリケーションを開きます。  
+1.  データの接続先となる Windows フォーム アプリケーションを開きます。  
   
 2.  **ビュー**メニューの **その他の Windows** > **データソース**します。  
   
@@ -58,7 +54,7 @@ Visual Studio を使用して、Access データベース (.mdf ファイルま�
   
 5.  選択**データセット**上、**データベース モデルの選択**ページ、し、 **次へ**。  
   
-6.  **データ接続の選択**] ページで、[**新しい接続**新しいデータ接続を構成します。  
+6.  **[データ接続の選択]** ページで、**[新しい接続]** を選択して新しいデータ接続を構成します。  
   
 7.  変更、**データソース**に **.NET Framework Data Provider for OLE DB**します。  
   
@@ -80,18 +76,18 @@ Visual Studio を使用して、Access データベース (.mdf ファイルま�
   
 11. 選択**次**で、**接続文字列をアプリケーション構成ファイルに保存**ページ。  
   
-12. 展開、**テーブル**上のノード、**データベース オブジェクトの選択**ページ。  
+12. **[データベース オブジェクトの選択]** ページの **[テーブル]** ノードを展開します。  
   
 13. 任意のテーブルまたはビュー、データセット内に指定し、選択**完了**します。  
   
-     データセットが、プロジェクトに追加され、テーブルとビューに表示されます、**データソース**ウィンドウ。  
+     プロジェクトにデータセットが追加され、テーブルとビューが **[データ ソース]** ウィンドウに表示されます。  
   
 ## <a name="creating-the-dataset-for-an-mdb-file"></a>.Mdb ファイルのデータセットの作成  
- 実行して、データセットを作成して、**データ ソース構成ウィザード**します。  
+ **データ ソース構成ウィザード**を実行して、データセットを作成します。  
   
 #### <a name="to-create-the-dataset"></a>データセットを作成するには  
   
-1.  データに接続する Windows フォーム アプリケーションを開きます。  
+1.  データの接続先となる Windows フォーム アプリケーションを開きます。  
   
 2.  **ビュー**メニューの **その他の Windows** > **データソース**します。  
   
@@ -103,7 +99,7 @@ Visual Studio を使用して、Access データベース (.mdf ファイルま�
   
 5.  選択**データセット**上、**データベース モデルの選択**ページ、し、 **次へ**。  
   
-6.  **データ接続の選択**] ページで、[**新しい接続**新しいデータ接続を構成します。  
+6.  **[データ接続の選択]** ページで、**[新しい接続]** を選択して新しいデータ接続を構成します。  
   
 7.  データ ソースがない場合**Microsoft Access データベース ファイル (OLE DB)**、**変更**を開く、**データ ソースの変更**] ダイアログ ボックスを選択します**Microsoftデータベース ファイルにアクセス**、し、[ **OK**します。  
   
@@ -115,31 +111,27 @@ Visual Studio を使用して、Access データベース (.mdf ファイルま�
   
 10. 選択**次**で、**接続文字列をアプリケーション構成ファイルに保存**ページ。  
   
-11. 展開、**テーブル**上のノード、**データベース オブジェクトの選択**ページ。  
+11. **[データベース オブジェクトの選択]** ページの **[テーブル]** ノードを展開します。  
   
 12. 任意のテーブルまたはビュー、データセット内に指定し、選択**完了**します。  
   
-     データセットが、プロジェクトに追加され、テーブルとビューに表示されます、**データソース**ウィンドウ。  
+     プロジェクトにデータセットが追加され、テーブルとビューが **[データ ソース]** ウィンドウに表示されます。  
   
 ## <a name="security"></a>セキュリティ  
  機密情報 (パスワードなど) を格納すると、アプリケーションのセキュリティに影響を及ぼすことがあります。 データベースへのアクセスを制御する方法としては、Windows 認証 (統合セキュリティとも呼ばれます) を使用する方が安全です。 詳細については、「[接続情報の保護](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4)」を参照してください。  
   
 ## <a name="next-steps"></a>次の手順  
- 先ほど作成したデータセットで提供されて、**データソース**ウィンドウ。 これで、次のタスクのいずれかを実行できます。  
+ 先ほど作成したデータセットで提供されて、**データソース**ウィンドウ。 これで、以下のタスクをどれでも実行できます。  
   
 -   内の項目を選択して、**データ ソース**ウィンドウ、フォームにドラッグし、(を参照してください[Visual Studio でのデータにコントロールを Windows フォームのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md))。  
   
--   データ ソースを開き、[データセット デザイナー](../data-tools/creating-and-editing-typed-datasets.md)データセットを構成するオブジェクトを追加または編集します。  
+-   データセットを構成するオブジェクトを追加または編集データセット デザイナーでデータ ソースを開きます。  
   
 -   検証ロジックを追加、<xref:System.Data.DataTable.ColumnChanging>または<xref:System.Data.DataTable.RowChanging>データセット内のデータ テーブルのイベント (を参照してください[データセットのデータの検証](../data-tools/validate-data-in-datasets.md))。  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio でのデータへの接続](../data-tools/connecting-to-data-in-visual-studio.md)   
- [データを受信するアプリケーションを準備します。](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [アプリケーションへのデータのフェッチ](../data-tools/fetching-data-into-your-application.md)   
- [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [アプリケーションでデータの編集](../data-tools/editing-data-in-your-application.md)   
- [データの検証](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [データの保存](../data-tools/saving-data.md)   
- [データのチュートリアル](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)
+## <a name="see-also"></a>関連項目
 
+ [アプリケーションでデータを受け取るための準備](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+ [データの検証](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [データのチュートリアル](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)

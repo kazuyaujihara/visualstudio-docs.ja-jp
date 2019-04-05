@@ -1,14 +1,9 @@
 ---
-title: 'エラー: IIS 管理サービスが応答しないために、セキュリティ チェックが失敗しました |。Microsoft Docs'
-ms.custom: ''
+title: エラー :IIS 管理サービスが応答しないために、セキュリティ チェックが失敗しました |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.iis_not_responding
 dev_langs:
@@ -22,22 +17,22 @@ ms.assetid: 6060e94e-71dc-49f2-bb59-2584216eadbf
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b6215648cba97e17ab143538afb4936a480adae4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9434ad3d67b8cf724323bdb9614d3bfdbd569882
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769021"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963781"
 ---
-# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>エラー ： IIS 管理サービスが応答しないため、セキュリティ チェックに失敗しました。
+# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>エラー :IIS 管理サービスが応答しないため、セキュリティ チェックに失敗しました
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このエラーは、IIS Admin サービスが応答しないときに発生します。 これは通常、IIS のインストールに問題があることを意味します。 最初に、を使用して、サービスが実行されていることを確認、**サービス**ツールから**管理ツール**します。  
+このエラーは、IIS Admin サービスが応答しないときに発生します。 これは通常、IIS のインストールに問題があることを意味します。 まず、**[管理ツール]** の **[サービス]** ツールを使用して、サービスが実行中であることを確認します。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   使用して IIS を再インストール、**プログラム追加と削除**コントロール パネル。  
+-   コントロール パネルの **[プログラムの追加と削除]** を使って、IIS を再インストールします。  
   
 -   - または -  
   
@@ -56,7 +51,4 @@ ms.locfileid: "51769021"
      詳細については、IIS のドキュメントを参照してください。  
   
 ## <a name="see-also"></a>関連項目  
- [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-
+ [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

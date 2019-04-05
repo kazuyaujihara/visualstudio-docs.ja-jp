@@ -1,26 +1,21 @@
 ---
 title: エディターのインポート |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759024"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975047"
 ---
 # <a name="editor-imports"></a>エディターのインポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,15 +46,15 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [チュートリアル: 余白のグリフの作成](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [チュートリアル: テキスト ビューのカスタマイズ](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [チュートリアル: テキスト ビューをカスタマイズします。](../extensibility/walkthrough-customizing-the-text-view.md)  
   
  [チュートリアル: テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)  
   
  [チュートリアル: クイック ヒントの表示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [チュートリアル: シグネチャ ヘルプの表示](../extensibility/walkthrough-displaying-signature-help.md)  
+ [チュートリアル: シグニチャ ヘルプの表示](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [チュートリアル: 入力候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [チュートリアル: ステートメント入力候補を表示します。](../extensibility/walkthrough-displaying-statement-completion.md)  
   
  [チュートリアル: スマート タグの表示](../misc/walkthrough-displaying-smarttags.md)  
   
@@ -71,7 +66,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- 参照してください[チュートリアル: エディター拡張機能から DTE オブジェクトにアクセスする](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)詳細についてはします。  
+ 「[チュートリアル:エディター拡張機能から DTE オブジェクトにアクセスする](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)詳細についてはします。  
   
 ## <a name="services"></a>Services  
  エディター サービスは、サービスを提供し、複数のコンポーネント間で共有される通常の 1 つのエンティティです。  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>関連項目  
  [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)
-

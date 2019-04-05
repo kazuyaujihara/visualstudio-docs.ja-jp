@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f50117a4101fd3c76e431891ca9a9fe20fa3959
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925229"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323871"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>方法: ビルド ログ ファイルを表示、保存、および構成する
 
@@ -53,7 +53,7 @@ MSBuild を使用して任意の種類のプロジェクトをビルドする場
      詳細については、「[[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)」および「<xref:Microsoft.Build.Framework.LoggerVerbosity>」を参照してください。
 
     > [!IMPORTANT]
-    > **[出力]** ウィンドウ (すべてのプロジェクト) と *<ProjectName>.txt* ファイル (C++ プロジェクトのみ) に変更を反映するには、プロジェクトをリビルドする必要があります。
+    > **[出力]** ウィンドウ (すべてのプロジェクト) と *\<ProjectName>.txt* ファイル (C++ プロジェクトのみ) に変更を反映するには、プロジェクトをリビルドする必要があります。
 
 ## <a name="see-also"></a>関連項目
 

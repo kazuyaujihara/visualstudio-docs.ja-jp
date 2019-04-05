@@ -1,14 +1,9 @@
 ---
 title: CRT ライブラリを使用してメモリ リークの検出 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -34,13 +29,13 @@ ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eca7af1cb572714214f264cac35b488fba993bdd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726562"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978031"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT ライブラリを使用したメモリ リークの検出
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +109,7 @@ Object dump complete.
   
 - メモリの割り当て番号 (この例では " `18` ")  
   
-- [ブロックの型](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97)(この例では " `normal` ")  
+- [ブロックの型](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97)(この例では " `normal` ")  
   
 - 16 進形式で表したメモリ位置 (この例では " `0x00780E80` ")  
   
@@ -262,7 +257,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
   
  `_CrtMemDifference` は、 `s1` と `s2` のメモリ状態を比較し、結果を`s3`に返します。これが `s1` と `s2`の相違となります。  
   
- メモリ リークを見つけるための 1 つの方法では、最初にアプリケーションの先頭と末尾で `_CrtMemCheckpoint` を呼び出し、`_CrtMemDifference` を使用して結果を比較します。 `_CrtMemDifference` によってメモリ リークが示された場合は、さらに多くの `_CrtMemCheckpoint` の呼び出しを追加して、リークの原因が特定されるまでバイナリ サーチを使用してプログラムを分割できます。  
+ メモリ リークを見つけるための 1 つの方法では、最初にアプリケーションの先頭と末尾で `_CrtMemCheckpoint` を呼び出し、 `_CrtMemDifference` を使用して結果を比較します。 `_CrtMemDifference` によってメモリ リークが示された場合は、さらに多くの `_CrtMemCheckpoint` の呼び出しを追加して、リークの原因が特定されるまでバイナリ サーチを使用してプログラムを分割できます。  
   
 ## <a name="false-positives"></a>誤検知  
  場合により、 `_CrtDumpMemoryLeaks` は実際にはメモリ リークでないにもかかわらず、メモリ リークを報告することがあります。 これは、内部的な割り当てを `_CRT_BLOCK`や `_CLIENT_BLOCK`としてマークせず、_NORMAL_BLOCK としてマークするライブラリを使用した場合に発生することがあります。 その場合、 `_CrtDumpMemoryLeaks` では、ユーザー割り当てとライブラリの内部的な割り当てを区別することができません。 ライブラリ割り当てのグローバル デストラクターが、 `_CrtDumpMemoryLeaks`の呼び出しポイント後に実行される場合、すべての内部ライブラリ割り当てがメモリ リークとして報告されます。 Visual Studio .NET より前のバージョンの標準テンプレート ライブラリは、 `_CrtDumpMemoryLeaks` が誤検出を報告する原因となっていましたが、最近のリリースでは修正されています。  
@@ -271,6 +266,3 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
  [CRT デバッグ ヒープの詳細](../debugger/crt-debug-heap-details.md)   
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)
-
-
-

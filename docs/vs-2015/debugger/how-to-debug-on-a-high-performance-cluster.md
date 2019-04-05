@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 75f2a96df18137f04b8b7637940c70378842e23d
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51747731"
@@ -32,11 +32,11 @@ ms.locfileid: "51747731"
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>方法 : 高パフォーマンス クラスター上でデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-高パフォーマンス クラスター上でのマルチプロセス プログラムのデバッグは、リモート コンピューター上での通常のプログラムのデバッグと似ています。 ただし、追加の考慮事項がいくつかあります。 一般的なリモート セットアップ要件は、次を参照してください。[リモート デバッグ](../debugger/remote-debugging.md)します。  
+高パフォーマンス クラスター上でのマルチプロセス プログラムのデバッグは、リモート コンピューター上での通常のプログラムのデバッグと似ています。 ただし、追加の考慮事項がいくつかあります。 一般的なリモート セットアップ要件は、[リモート デバッグ](../debugger/remote-debugging.md)を参照してください。  
   
  高パフォーマンス クラスター上でデバッグするときは、リモート デバッグに使用できる [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のデバッグ ウィンドウとデバッグ手法をすべて使用できます。 ただし、リモートでデバッグするため、外部のコンソール ウィンドウは使用できません。  
   
- **スレッド**ウィンドウと**プロセス**ウィンドウは並列アプリケーションのデバッグに特に便利です。 これらのウィンドウを使用する方法のヒントについては、次を参照してください。[方法: [プロセス] ウィンドウを使用して](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)と[方法: [スレッド] ウィンドウを使用して](../debugger/how-to-use-the-threads-window.md)します。  
+ **スレッド**ウィンドウと**プロセス**ウィンドウは並列アプリケーションのデバッグに特に便利です。 これらのウィンドウを使用する方法のヒントについては、[方法: [プロセス] ウィンドウを使用して](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)と[方法: [スレッド] ウィンドウを使用して](../debugger/how-to-use-the-threads-window.md)を参照してください。  
   
  以下の手順では、高パフォーマンス クラスター上でのデバッグに特に役立つ手法を示します。  
   

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d698732e1f2362fbb9a536dc4e5a8e4cc412db
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227572"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323439"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Visual Studio Enterprise で IntelliTrace を使用したイベントの表示 (C#、Visual Basic)
 
@@ -53,7 +53,7 @@ IntelliTrace イベントのみでデバッグを実行することができま�
 
 ## <a name="start-debugging-and-view-intellitrace-events"></a>デバッグを開始し、IntelliTrace イベントを表示
 
-1. 通常どおりデバッグを開始します。 (**F5** キーを押すか、**[デバッグ] > [デバッグの開始]** をクリックします。
+1. 通常どおりデバッグを開始します。 (**F5** キーを押すか、**[デバッグ] > [デバッグの開始]** をクリックします。)
 
     > [!TIP]
     > これらのウィンドウに値を表示および記録するために、デバッグ中は **[ローカル]** ウィンドウおよび **[自動変数]** ウィンドウを開いたままにします。

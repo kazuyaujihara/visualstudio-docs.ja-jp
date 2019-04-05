@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: f248bdafaf0fdd632069e6cffe367cf0ed21135f
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51741970"
@@ -74,7 +74,7 @@ ms.locfileid: "51741970"
 5.  プロジェクトをビルドします。  
   
 ## <a name="hierarchy-classes"></a>クラスの階層  
- 次の表では、プロジェクト階層をサポートしている、MPFProj でクラスを示します。 詳細については、次を参照してください。[階層と選択](../../extensibility/internals/hierarchies-and-selection.md)します。  
+ 次の表では、プロジェクト階層をサポートしている、MPFProj でクラスを示します。 詳細については、[階層と選択](../../extensibility/internals/hierarchies-and-selection.md)を参照してください。  
   
 |クラス名|  
 |----------------|  
@@ -91,7 +91,7 @@ ms.locfileid: "51741970"
 |`Microsoft.VisualStudio.Package.BuildDependency`|  
   
 ## <a name="document-handling-classes"></a>ドキュメント処理クラス  
- 次の表では、ドキュメントの処理をサポートしている MPF でクラスを示します。 詳細については、次を参照してください。[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)します。  
+ 次の表では、ドキュメントの処理をサポートしている MPF でクラスを示します。 詳細については、[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)を参照してください。  
   
 |クラス名|  
 |----------------|  
@@ -99,7 +99,7 @@ ms.locfileid: "51741970"
 |`Microsoft.VisualStudio.Package.FileDocumentManager`|  
   
 ## <a name="configuration-and-output-classes"></a>構成と出力クラス  
- 次の表では、プロジェクトの種類のデバッグとリリースでは、プロジェクト出力のコレクションなどの複数の構成をサポートできる MPF クラスを示します。 詳細については、次を参照してください。[構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)します。  
+ 次の表では、プロジェクトの種類のデバッグとリリースでは、プロジェクト出力のコレクションなどの複数の構成をサポートできる MPF クラスを示します。 詳細については、[構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)を参照してください。  
   
 |クラス名|  
 |----------------|  

@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbbad4e48aaba41672a1f795e8b3d7851f7bd5e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926256"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415902"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>方法:レコーダー プラグインを作成する
 
@@ -35,34 +35,24 @@ ms.locfileid: "55926256"
 
 1.  作成するレコーダー プラグインの対象となる Web パフォーマンス テストの Web パフォーマンスとロード テストのプロジェクトを含むソリューションを開きます。
 
-2.  **ソリューション エクスプローラー**で、ソリューションを右クリックし、**[追加]** をポイントして、**[新しいプロジェクト]** をクリックします。
+2.  新しい**クラス ライブラリ** プロジェクトをソリューションに追加します 
 
-     **[新しいプロジェクトの追加]** ダイアログ ボックスが表示されます。
-
-3.  **[インストールされているテンプレート]** の **[Visual C#]** を選択します。
-
-4.  テンプレートの一覧で、**[クラス ライブラリ]** を選択します。
-
-5.  **[名前]** ボックスにレコーダー プラグインの名前を入力します。
-
-     クラス ライブラリが**ソリューション エクスプローラー**に追加され、新しいクラスが**コード エディター**で開かれます。
-
-6.  **ソリューション エクスプローラー**の新しいクラス ライブラリ プロジェクト フォルダーで、**[参照設定]** フォルダーを右クリックし、**[参照の追加]** を選択します。
+3.  **ソリューション エクスプローラー**の新しいクラス ライブラリ プロジェクト フォルダーで、**[参照設定]** フォルダーを右クリックし、**[参照の追加]** を選択します。
 
     > [!TIP]
     > 新しいクラス ライブラリ プロジェクト フォルダーの例は、**[RecorderPlugins]** です。
 
      **[参照の追加]** ダイアログ ボックスが表示されます。
 
-7.  **[.NET]** タブを選択します。
+4.  **[.NET]** タブを選択します。
 
-8.  スクロール ダウンして、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** をクリックし、**[OK]** をクリックします。
+5.  スクロール ダウンして、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** をクリックし、**[OK]** をクリックします。
 
      **[Microsoft.VisualStudio.QualityTools.WebTestFramework]** が**ソリューション エクスプローラー**の **[参照設定]** フォルダーに追加されます。
 
-9. レコーダー プラグインのコードの記述 まず、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> クラスから派生する新しいパブリック クラスを作成します。
+6. レコーダー プラグインのコードの記述 まず、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> クラスから派生する新しいパブリック クラスを作成します。
 
-10. <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> メソッドをオーバーライドします。
+7. <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> メソッドをオーバーライドします。
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -79,11 +69,11 @@ ms.locfileid: "55926256"
     > [!NOTE]
     > Web パフォーマンス テストを変更する場合は、<xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> のように、`e.RecordedWebTestModified = true;` プロパティを true に設定する必要もあります。
 
-11. Web 記録を行った後にレコーダー プラグインで何を実行するかに応じて、コードを追加します。 たとえば、以下のサンプルで示すように、カスタムの関連付けを処理するコードを追加できます。 コメントからトランザクションへの変換、Web パフォーマンス テストへの検証規則の追加などを行うようなレコーダー プラグインを作成することもできます。
+8. Web 記録を行った後にレコーダー プラグインで何を実行するかに応じて、コードを追加します。 たとえば、以下のサンプルで示すように、カスタムの関連付けを処理するコードを追加できます。 コメントからトランザクションへの変換、Web パフォーマンス テストへの検証規則の追加などを行うようなレコーダー プラグインを作成することもできます。
 
-12. **[ビルド]** メニューの **[\<クラス ライブラリ プロジェクト名> のビルド]** をクリックします。
+9. **[ビルド]** メニューの **[\<クラス ライブラリ プロジェクト名> のビルド]** をクリックします。
 
-13. 次に、Visual Studio に登録するためにレコーダー プラグインを配置する必要があります。
+次に、Visual Studio に登録するためにレコーダー プラグインを配置します。
 
 ### <a name="deploy-the-recorder-plug-in"></a>レコーダー プラグインの配置
 
@@ -96,7 +86,7 @@ ms.locfileid: "55926256"
 > [!WARNING]
 > レコーダー プラグインを 2 つの場所の一方にコピーした後で、レコーダー プラグインを登録するために Visual Studio を再起動する必要があります。
 
-### <a name="to-execute-the-recorder-plug-in"></a>レコーダー プラグインを実行するには
+### <a name="execute-the-recorder-plug-in"></a>レコーダー プラグインの実行
 
 1.  新しい Web パフォーマンス テストを作成します。
 
@@ -123,9 +113,7 @@ ms.locfileid: "55926256"
 > [!NOTE]
 > サンプル コードの完全な一覧は、このトピックの最後にあります。
 
-**サンプル コードのレビュー**
-
-## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>ReportSession で最初のページを検索するための、結果の反復処理
+### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>ReportSession で最初のページを検索するための、結果の反復処理
 
 コード サンプルのこの部分では、記録された各オブジェクトを反復処理して、応答本体で ReportSession を検索します。
 
@@ -142,7 +130,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
              {
 ```
 
-## <a name="add-an-extraction-rule"></a>抽出規則の追加
+### <a name="add-an-extraction-rule"></a>抽出規則の追加
 
 応答が見つかったら、抽出規則を追加する必要があります。 コード サンプルのこの部分では、<xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> クラスを使用して抽出規則を作成し、抽出規則の追加先となる、Web パフォーマンス テスト内の正しい要求を検索します。 各結果オブジェクトには、DeclarativeWebTestItemId という名前の新しいプロパティが追加されており、それがコード内で Web パフォーマンス テストから正しい要求を取得するために使用されています。
 
@@ -166,7 +154,7 @@ ExtractionRuleReference ruleReference = new ExtractionRuleReference();
      }
 ```
 
-## <a name="replace-query-string-parameters"></a>クエリ文字列パラメーターの置換
+### <a name="replace-query-string-parameters"></a>クエリ文字列パラメーターの置換
 
 ここで、コード サンプルのこの部分で示されているように、名前が ReportSession であるすべてのクエリ文字列パラメーターを見つけて、値を {{SessionId}} に変更します。
 

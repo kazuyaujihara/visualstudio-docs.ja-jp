@@ -1,12 +1,9 @@
 ---
-title: 'UML クラス図: リファレンス |Microsoft Docs'
-ms.custom: ''
+title: UML クラス図:参照 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.generalization.properties
 - vs.teamarch.logicalclassdiagram.toolbox
@@ -26,15 +23,15 @@ ms.assetid: b7c88be0-0d86-4d65-af74-f37e8812d20f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4f3a4fe9949236045238688a9edcd5eef911efb8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977468"
 ---
-# <a name="uml-class-diagrams-reference"></a>UML クラス図: リファレンス
+# <a name="uml-class-diagrams-reference"></a>UML クラス図:参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UML クラス図は、アプリケーションが内部的に使用したり、ユーザーとのやり取りにおいて使用したりするオブジェクトおよび情報の構造を記述するものです。 そこで情報を記述する際に、詳細な実装は考慮されません。 クラスおよび関係は、データベース テーブル、XML ノード、ソフトウェア オブジェクトの組み合わせ、といったさまざまな方法で実装できます。  
@@ -42,7 +39,7 @@ UML クラス図は、アプリケーションが内部的に使用したり、�
 > [!NOTE]
 >  このトピックでは、UML クラス図について説明します。 .NET クラス図と呼ばれる別の種類のクラス図もあります。これは、プログラム コードを視覚化するために使用します。 詳細については、次を参照してください。[を表示するクラスと型のデザインおよび](http://go.microsoft.com/fwlink/?LinkId=142231)します。  
   
- UML クラス図を作成する、**アーキテクチャ**] メニューの [選択**新しい UML またはレイヤー図**します。 UML クラス図を描画する方法の詳細については、次を参照してください。 [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)します。 作成し、モデリング図を描画する方法の詳細については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
+ UML クラス図を作成する、**アーキテクチャ**] メニューの [選択**新しい UML またはレイヤー図**します。 UML クラス図を描画する方法の詳細については、次を参照してください。 [UML クラス図。ガイドライン](../modeling/uml-class-diagrams-guidelines.md)します。 作成し、モデリング図を描画する方法の詳細については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
   
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
@@ -98,6 +95,3 @@ UML クラス図は、アプリケーションが内部的に使用したり、�
  [UML クラス図の属性のプロパティ](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML クラス図の操作のプロパティ](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML クラス ダイアグラムの関連のプロパティ](../modeling/properties-of-associations-on-uml-class-diagrams.md)
-
-
-

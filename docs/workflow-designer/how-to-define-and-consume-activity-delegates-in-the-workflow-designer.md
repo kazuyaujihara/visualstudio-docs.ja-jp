@@ -24,7 +24,7 @@ ms.locfileid: "58415812"
 1. 新規作成**ワークフロー コンソール アプリケーション**プロジェクト。
 
    > [!NOTE]
-   > 表示されない場合、**ワークフロー**プロジェクト テンプレートは、最初のインストール、 **Windows Workflow Foundation** Visual Studio のコンポーネント。 詳細については、次を参照してください。 [Windows Workflow Foundation のインストール](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)します。
+   > 表示されない場合、**ワークフロー**プロジェクト テンプレートは、最初のインストール、 **Windows Workflow Foundation** Visual Studio のコンポーネント。 詳細については、[Windows Workflow Foundation のインストール](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)を参照してください。
 
 3. プロジェクトを右クリックして**ソリューション エクスプ ローラー**選択**追加** > **新しい項目の**します。 選択、**ワークフロー**カテゴリ、および選択し、**アクティビティ**項目テンプレート。 新しいアクティビティの名前**MyForEach.xaml**選び**OK**します。
 

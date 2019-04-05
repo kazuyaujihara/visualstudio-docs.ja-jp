@@ -55,7 +55,7 @@ ms.locfileid: "57874686"
 
 **Q**:アナライザーと静的コード分析の違いは何ですか。
 
-**A**:アナライザーは、静的コード分析は、ビルドが完了した後にバイナリ ファイルを分析し、リアルタイムでは、コンパイル時にソース コードを分析します。 詳細については、次を参照してください。[静的コード分析と Roslyn アナライザー](roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis)と[FxCop アナライザー FAQ](fxcop-analyzers-faq.md)します。
+**A**:アナライザーは、静的コード分析は、ビルドが完了した後にバイナリ ファイルを分析し、リアルタイムでは、コンパイル時にソース コードを分析します。 詳細については、[静的コード分析と Roslyn アナライザー](roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis)と[FxCop アナライザー FAQ](fxcop-analyzers-faq.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,27 +1,22 @@
 ---
 title: '方法: XML ファイルを編集 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3864b3d3a3074f9b6be2529e8f674df90532c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c836b9b8b33ce39b4e5de72d8f62659c6f607074
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974966"
 ---
-# <a name="how-to-edit-xml-files"></a>方法 : XML ファイルを編集する
+# <a name="how-to-edit-xml-files"></a>方法: XML ファイルを編集する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -60,7 +55,7 @@ XML エディターは、XML ファイル用の新しいエディターです。
   
 2.  選択**XML ファイル**; 新しい XML ファイルを作成するか、選択する**XSLT ファイル**新しい XSLT スタイル シートを作成します。  
   
-3.  クリックして**オープン**します。  
+3.  **[開く]** をクリックします。  
   
 ### <a name="to-create-a-project-for-xml-files"></a>XML ファイル用のプロジェクトを作成するには  
   
@@ -77,7 +72,4 @@ XML エディターは、XML ファイル用の新しいエディターです。
 ## <a name="see-also"></a>関連項目  
  [XML エディター](../xml-tools/xml-editor.md)   
  [XML ドキュメントのプロパティと [プロパティ] ウィンドウ](../xml-tools/xml-document-properties-properties-window.md)   
- [方法 : XML ドキュメントから XML スキーマを作成する](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
-
-
-
+ [方法: XML ドキュメントから XML スキーマを作成する](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

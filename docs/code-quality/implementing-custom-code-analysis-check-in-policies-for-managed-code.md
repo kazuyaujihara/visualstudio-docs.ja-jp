@@ -58,7 +58,7 @@ Azure DevOps プロジェクトの設定、カスタム ルールを作成する
 
 1. **ソース管理エクスプ ローラー**、新しいフォルダーを右クリックし、クリックして**フォルダーに項目の追加**します。
 
-     詳細については、次を参照してください。 [Git と Azure リポジトリ](/azure/devops/repos/git/overview?view=vsts)します。
+     詳細については、[Git と Azure リポジトリ](/azure/devops/repos/git/overview?view=vsts)を参照してください。
 
 2. 規則セットを作成したファイルをクリックおよびクリック**完了**します。
 

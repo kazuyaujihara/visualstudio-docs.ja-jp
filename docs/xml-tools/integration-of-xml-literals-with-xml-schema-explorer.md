@@ -17,7 +17,7 @@ ms.locfileid: "55928323"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML リテラル XML スキーマ エクスプ ローラーとの統合
 
-Visual Basic では、つまり、Visual Basic のコードに直接 XML フラグメントを組み込むことができます、XML リテラルをサポートしています。 詳細については、次を参照してください。 [XML リテラルの概要](http://go.microsoft.com/fwlink/?LinkId=140325)します。
+Visual Basic では、つまり、Visual Basic のコードに直接 XML フラグメントを組み込むことができます、XML リテラルをサポートしています。 詳細については、[XML リテラルの概要](http://go.microsoft.com/fwlink/?LinkId=140325)を参照してください。
 
 ## <a name="how-to"></a>方法
 

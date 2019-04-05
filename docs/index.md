@@ -6,6 +6,12 @@ titleSuffix: ''
 description: Visual Studio を使って、アプリケーション、サービス、ツールを、任意の言語で、特定のプラットフォームやデバイス向けに開発する方法について説明します。
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: f63b848481a43a9684424b31fe36c3436faff021
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515325"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -864,7 +870,7 @@ ASP.NET Core Web アプリ</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>JavaScript でのモバイル開発</h3>
-                                                    <p>iOS、Android、Windows 向けのクロスプラットフォーム アプリケーションを、Apache Cordova フレームワークを使って構築します。</p>
+                                                    <p>(Visual Studio 2017 と Visual Studio 2015 のみ) iOS、Android、Windows 向けのクロスプラットフォーム アプリケーションを、Apache Cordova フレームワークを使って構築します。</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: erikre
 ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49205413"
@@ -62,7 +62,7 @@ ms.locfileid: "49205413"
 |[SynchronizationScopeActivity](http://go.microsoft.com/fwlink?LinkID=65057)|同期されたドメイン内に含まれるアクティビティを順次実行します。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][SynchronizationScopeActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65085)します。|  
 |[TerminateActivity](http://go.microsoft.com/fwlink?LinkID=65058)|エラー条件が発生したとき、ワークフローの実行を即座に終了できます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][TerminateActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65086)します。|  
 |[ThrowActivity](http://go.microsoft.com/fwlink?LinkID=65059)|ワークフローのプロセス メタデータの一部としてスローされた業務処理例外をキャプチャできます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][ThrowActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65087)します。|  
-|[TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093)|トランザクションと例外処理のフレームワークを提供します。 詳細については、次を参照してください。 [TransactionScopeActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65088)します。|  
+|[TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093)|トランザクションと例外処理のフレームワークを提供します。 詳細については、[TransactionScopeActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65088)を参照してください。|  
 |[WebServiceFaultActivity](http://go.microsoft.com/fwlink?LinkID=65046)|Web サービスで発生するエラーをモデル化できます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][WebServiceFaultActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65089)します。|  
 |[WebServiceInputActivity](http://go.microsoft.com/fwlink?LinkID=65047)|Web サービスからデータを取得します。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][WebServiceInputActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65090)します。|  
 |[WebServiceOutputActivity](http://go.microsoft.com/fwlink?LinkID=65048)|Web サービスからワークフローに対する要求に応答します。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][WebServiceOutputActivity アクティビティを使用して](http://go.microsoft.com/fwlink?LinkID=65092)します。|  

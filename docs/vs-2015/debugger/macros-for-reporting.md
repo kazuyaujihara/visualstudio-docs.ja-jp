@@ -1,14 +1,9 @@
 ---
 title: レポート用マクロの |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.macros
 dev_langs:
@@ -28,13 +23,13 @@ ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc2a5226b3d6f512d2c2f89d9fef2a80eef34340
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4aee33d571f95e24a359fa2bc7e12ae8d64eae0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758454"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976299"
 ---
 # <a name="macros-for-reporting"></a>レポート用マクロの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +38,8 @@ ms.locfileid: "51758454"
   
 |マクロ|説明|  
 |-----------|-----------------|  
-|**_RPT0**、 **_RPT1**、 **_RPT2**、 **_RPT3**、 **_RPT4**|メッセージ文字列と、0 から 4 個の引数を出力します。 _Rpt1 **_RPT4**、メッセージ文字列は、引数の printf スタイルの書式指定文字列として機能します。|  
-|**_RPTF0**、 **_RPTF1**、 **、_RPTF2**、 **_RPTF4**|同じ **_RPTn**がこれらのマクロは、マクロが配置されているファイル名と行番号も出力します。|  
+|**_RPT0**、**_RPT1**、**_RPT2**、**_RPT3**、**_RPT4**|メッセージ文字列と、0 から 4 個の引数を出力します。 _RPT1 から **_RPT4** の場合、メッセージ文字列は、引数に対して printf 形式の書式設定文字列として機能します。|  
+|**_RPTF0**, **_RPTF1**, **,_RPTF2**, **_RPTF4**|同じ **_RPTn**がこれらのマクロは、マクロが配置されているファイル名と行番号も出力します。|  
   
  次に例を示します。  
   
@@ -57,13 +52,13 @@ ms.locfileid: "51758454"
 #endif  
 ```  
   
- このコードの値を出力する`someVar`と`otherVar`に**stdout**します。 次のように `_RPTF2` を呼び出すと、これらの値と一緒にファイル名と行番号も出力できます。  
+ このコードは、`someVar` の値と `otherVar` の値を **stdout** に出力します。 次のように `_RPTF2` を呼び出すと、これらの値と一緒にファイル名と行番号も出力できます。  
   
 ```  
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
 ```  
   
- 特定のアプリケーションでは、C ランタイム ライブラリのマクロで提供されているデバッグ レポートでは不十分な場合があります。その場合は、独自の要件を満たす専用のマクロを設計できます。 ヘッダー ファイルの 1 つなどを含めることができます、マクロを定義するには、次と呼ばれるようなコード**ALERT_IF2**:  
+ 特定のアプリケーションでは、C ランタイム ライブラリのマクロで提供されているデバッグ レポートでは不十分な場合があります。その場合は、独自の要件を満たす専用のマクロを設計できます。 たとえば、ヘッダー ファイルの 1 つに、次のような **ALERT_IF2** というマクロを定義するコードを含めることができます。  
   
 ```  
 #ifndef _DEBUG                  /* For RELEASE builds */  
@@ -90,6 +85,3 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
   
 ## <a name="see-also"></a>関連項目  
  [CRT のデバッグ技術](../debugger/crt-debugging-techniques.md)
-
-
-

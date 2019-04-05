@@ -1,25 +1,20 @@
 ---
 title: 'チュートリアル: デバイス状態によるオブジェクトの不足 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5c0ad6017dd6ff660dfbd47977e1a53346cf6c55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977372"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>チュートリアル: デバイス状態によるオブジェクトの不足
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,6 +108,3 @@ ms.locfileid: "51773731"
    深度関数の構成の誤りが原因でレンダリングの問題が発生した可能性があることを確認したら、この情報とコードの知識を使用して深度関数の設定が誤っている箇所を特定し、問題を修正します。 コードに精通していない場合は、デバッグ時に収集した手掛かりを使用して問題を探すこともできます。たとえば、このシナリオの **[深度ステンシルの説明]** に基づいて、"深度" や "GREATER" などの語をコードで探すことができます。 コードを修正したら、それをリビルドし、もう一度アプリを実行してレンダリングの問題が解決されたことを確認します。  
   
    ![アプリの問題を解決したら](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")
-
-
-

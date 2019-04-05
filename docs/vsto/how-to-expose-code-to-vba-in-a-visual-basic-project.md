@@ -41,13 +41,13 @@ ms.locfileid: "56631849"
 ##  <a name="HostItemCode"></a> ホスト項目クラスにコードを公開します。
  ホスト項目クラスの Visual Basic コードを呼び出す VBA コードを有効にするには設定、 **EnableVbaCallers**するホスト項目のプロパティ**True**します。
 
- ホスト項目クラスのメソッドを公開し、VBA から呼び出す方法について説明するチュートリアルでは、次を参照してください。[チュートリアル。Visual Basic プロジェクトでコードを VBA から呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)します。 ホスト項目の詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
+ ホスト項目クラスのメソッドを公開し、VBA から呼び出す方法について説明するチュートリアルでは、次を参照してください。[チュートリアル。Visual Basic プロジェクトでコードを VBA から呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)します。 ホスト項目の詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)を参照してください。
 
 #### <a name="to-expose-code-in-a-host-item-to-vba"></a>コードを VBA にホスト項目に公開するには
 
 1.  ドキュメント レベルの作成を開いたり[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]Word 文書、Excel ブックまたは Excel テンプレート、マクロをサポートして、VBA コードを既に含むに基づいているプロジェクト。
 
-     マクロをサポートするドキュメントのファイル形式の詳細については、次を参照してください。[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)します。
+     マクロをサポートするドキュメントのファイル形式の詳細については、[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)を参照してください。
 
     > [!NOTE]
     >  この機能は、Word テンプレート プロジェクトでは使用できません。
@@ -80,7 +80,7 @@ ms.locfileid: "56631849"
 
 1.  ドキュメント レベルの作成を開いたり[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]Word 文書、Excel ブックまたは Excel テンプレート、マクロをサポートして、VBA コードを既に含むに基づいているプロジェクト。
 
-     マクロをサポートするドキュメントのファイル形式の詳細については、次を参照してください。[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)します。
+     マクロをサポートするドキュメントのファイル形式の詳細については、[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)を参照してください。
 
     > [!NOTE]
     >  この機能は、Word テンプレート プロジェクトでは使用できません。

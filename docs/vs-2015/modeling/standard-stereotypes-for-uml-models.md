@@ -1,12 +1,9 @@
 ---
 title: UML モデルの標準ステレオタイプ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, stereotypes
 - UML diagrams, stereotypes
@@ -14,13 +11,13 @@ ms.assetid: 8a8c2321-1cae-4ba8-bb9e-23495c3404d8
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fcc876a847429c0de9600a5a727b19334819119
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763238"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973567"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>UML モデルの標準ステレオタイプ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,6 +142,3 @@ UML モデル要素にステレオタイプを追加して、リーダー、ま�
  [UML モデル要素にステレオタイプを追加します。](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [プロファイルとステレオタイプを使用したモデルをカスタマイズします。](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [プロファイルを定義して UML を拡張する](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

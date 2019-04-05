@@ -22,7 +22,7 @@ ms.locfileid: "56679477"
 属性を使用して、VSPackage の登録が、
 
 ## <a name="register-a-vspackage"></a>VSPackage を登録します。
- マネージ Vspackage の登録を制御するのに属性を使用できます。 すべての登録情報が含まれている、 *.pkgdef*ファイル。 ファイル ベースの登録の詳細については、次を参照してください。 [CreatePkgDef ユーティリティ](../extensibility/internals/createpkgdef-utility.md)します。
+ マネージ Vspackage の登録を制御するのに属性を使用できます。 すべての登録情報が含まれている、 *.pkgdef*ファイル。 ファイル ベースの登録の詳細については、[CreatePkgDef ユーティリティ](../extensibility/internals/createpkgdef-utility.md)を参照してください。
 
  次のコードでは、標準登録属性を使用して、VSPackage を登録する方法を示します。
 

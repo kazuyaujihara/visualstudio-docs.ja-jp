@@ -62,19 +62,19 @@ ms.locfileid: "56636711"
  図形を作成するには、`Microsoft.Office.Interop.Visio.Page.DrawSpline` メソッドや `Microsoft.Office.Interop.Visio.Page.DrawOval` メソッドなどのメソッドを使用できます。 さらに、ステンシルからマスターを取得し、`Microsoft.Office.Interop.Visio.Page.Drop` メソッドまたは `Microsoft.Office.Interop.Visio.Page.DropMany` メソッドを使用することにより図形をページに配置できます。
 
 ## <a name="use-the-visio-object-model-documentation"></a>Visio オブジェクト モデル ドキュメントを使用します。
- Visio オブジェクト モデルの詳細については、Visio の VBA オブジェクト モデルのリファレンスを参照してください。 VBA オブジェクト モデルのリファレンス ドキュメントでは、Visual Basic for Applications (VBA) コードに公開される Visio オブジェクト モデルについて説明しています。 詳細については、次を参照してください。 [Visio 2010 オブジェクト モデル リファレンス](http://go.microsoft.com/fwlink/?LinkId=199775)します。
+ Visio オブジェクト モデルの詳細については、Visio の VBA オブジェクト モデルのリファレンスを参照してください。 VBA オブジェクト モデルのリファレンス ドキュメントでは、Visual Basic for Applications (VBA) コードに公開される Visio オブジェクト モデルについて説明しています。 詳細については、[Visio 2010 オブジェクト モデル リファレンス](http://go.microsoft.com/fwlink/?LinkId=199775)を参照してください。
 
  VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Visio プライマリ相互運用機能アセンブリ (PIA) の型とメンバーに対応します。 たとえば、 `Document` VBA オブジェクト モデルのリファレンス内のオブジェクトが、Visio pia Microsoft.Office.Interop.Visio.Document 型に対応します。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例を紹介しています。ただし、Visual Studio を使用して作成した Visio VSTO アドイン プロジェクトでこのリファレンス内の VBA コードを使用するには、それらを Visual Basic または Visual C# に変換する必要があります。
 
 > [!NOTE]
 >  現在のところ、Visio プライマリ相互運用機能アセンブリに関するリファレンス ドキュメントは提供されていません。
 
- Visio ソリューションを作成するための他のツールと関連するコード例は、次を参照してください。 [Visio 2010 ソフトウェア開発キット](http://go.microsoft.com/fwlink/?LinkId=196501)します。
+ Visio ソリューションを作成するための他のツールと関連するコード例は、[Visio 2010 ソフトウェア開発キット](http://go.microsoft.com/fwlink/?LinkId=196501)を参照してください。
 
 ### <a name="additional-types-in-primary-interop-assemblies"></a>プライマリ相互運用機能アセンブリの追加の型
  実装の違いにより VBA には表示されないプライマリ相互運用機能アセンブリの型があります。 VBA では、直接使用できるオブジェクトとメンバーだけを含む Visio オブジェクト モデルのビューが提供されます。 プライマリ相互運用機能アセンブリは同じオブジェクト モデルを公開しますが、それには、COM オブジェクト モデルのオブジェクトをマネージド コードに変換する、その他のインターフェイス、クラス、およびメンバーも含まれています。 これらの追加の項目は、コードで直接使用するためのものではありません。
 
- 詳細については、次を参照してください。 [Office プライマリ相互運用機能アセンブリのクラスおよびインターフェイスの概要](http://go.microsoft.com/fwlink/?LinkId=189592)と[Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)します。
+ 詳細については、[Office プライマリ相互運用機能アセンブリのクラスおよびインターフェイスの概要](http://go.microsoft.com/fwlink/?LinkId=189592)と[Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Visio ソリューション](../vsto/visio-solutions.md)

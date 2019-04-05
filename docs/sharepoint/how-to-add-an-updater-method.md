@@ -25,7 +25,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56596960"
 ---
 # <a name="how-to-add-an-updater-method"></a>方法: Updater メソッドを追加します。
-  ユーザーを作成して SharePoint の外部リストのビジネス データを更新できるように、 *Updater*メソッド。 詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+  ユーザーを作成して SharePoint の外部リストのビジネス データを更新できるように、 *Updater*メソッド。 詳細については、[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
 ### <a name="to-create-an-updater-method"></a>Updater メソッドを作成するには
 
@@ -33,7 +33,7 @@ ms.locfileid: "56596960"
 
 2. メニュー バーで、**ビュー** > **その他の Windows** > **BDC メソッドの詳細**します。
 
-    BDC メソッドの詳細ウィンドウが開きます。 このウィンドウの詳細については、次を参照してください。 [BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)します。
+    BDC メソッドの詳細ウィンドウが開きます。 このウィンドウの詳細については、[BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)を参照してください。
 
 3. **メソッドを追加する**一覧で、選択**Updater メソッドの作成**です。
 
@@ -47,14 +47,14 @@ ms.locfileid: "56596960"
 
    - メソッドのメソッドのインスタンス。
 
-     詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+     詳細については、[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
    > [!NOTE]
    >  エンティティ型の識別子が自動的に生成されるデータベース テーブル内のフィールドを表している場合は、設定、 **Pre-updater フィールド**プロパティを**True**します。
 
 4. **ソリューション エクスプ ローラー**エンティティの場合に生成されたサービスのコード ファイルのショートカット メニューを開き、選択し、**コードの表示**します。
 
-    エンティティ サービス コード ファイルが開き、**コード エディター**します。 そのファイルに関する詳細については、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。
+    エンティティ サービス コード ファイルが開き、**コード エディター**します。 そのファイルに関する詳細については、[business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)を参照してください。
 
 5. データを更新する Update メソッドにコードを追加します。 次の例では、SQL Server については、AdventureWorks サンプル データベース内の連絡先の情報を更新します。
 

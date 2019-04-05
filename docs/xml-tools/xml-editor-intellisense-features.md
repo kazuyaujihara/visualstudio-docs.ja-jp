@@ -25,7 +25,7 @@ XML エディターでは、Visual Studio で提供されている他の言語�
 
 ![表示オブジェクト メンバー リスト ボタン](media/display-object-member-list-xml.png)
 
-XML ドキュメントにスキーマを関連付ける方法については、次を参照してください。 [XML ドキュメントの検証](../xml-tools/xml-document-validation.md)です。
+XML ドキュメントにスキーマを関連付ける方法については、[XML ドキュメントの検証](../xml-tools/xml-document-validation.md)を参照してください。
 
 開始タグの内部で「SPACE」と入力しても、現在の要素に追加できる属性をすべて示したドロップダウン リストを表示できます。
 

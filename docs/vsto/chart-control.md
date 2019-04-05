@@ -34,7 +34,7 @@ ms.locfileid: "56596335"
  追加することができます<xref:Microsoft.Office.Tools.Excel.Chart>コントロールを VSTO アドインで実行時にワークシートです。 詳細については、「[方法 :ワークシートに Chart コントロールを追加](../vsto/how-to-add-chart-controls-to-worksheets.md)します。
 
 > [!NOTE]
->  動的に作成されたグラフ オブジェクトは、ワークシートを閉じる際に、ホスト コントロールとしてワークシートに残りません。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+>  動的に作成されたグラフ オブジェクトは、ワークシートを閉じる際に、ホスト コントロールとしてワークシートに残りません。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
 
 ## <a name="formatting"></a>書式設定
  <xref:Microsoft.Office.Interop.Excel.Chart> に適用できるすべての書式設定は、<xref:Microsoft.Office.Tools.Excel.Chart> コントロールにも適用できます。 これには、罫線、フォント、グラフの種類、グリッド線、凡例、およびデータ ラベルが含まれます。

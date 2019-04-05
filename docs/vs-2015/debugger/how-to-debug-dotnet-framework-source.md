@@ -1,14 +1,9 @@
 ---
 title: '方法: .NET Framework のソースをデバッグ |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce5e20524040d131a655da1567606ffbb0934a80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cbc6ed2ff77a971962fa73b15d5b7aafb9ef02b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725434"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974817"
 ---
-# <a name="how-to-debug-net-framework-source"></a>方法 : .NET Framework ソースをデバッグする
+# <a name="how-to-debug-net-framework-source"></a>方法: .NET Framework のソースをデバッグします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 最新バージョンの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]向けの新機能を提供します。[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]デバッグします。 デバッグする[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]、ソース コードのデバッグ シンボルへのアクセスが必要です。 ステップ インを有効にする必要も[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]ソース。  
@@ -80,6 +75,3 @@ ms.locfileid: "51725434"
 ## <a name="see-also"></a>関連項目  
  [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)   
  [シンボルとソース コードの管理](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-

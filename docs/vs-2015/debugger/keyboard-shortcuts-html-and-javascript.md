@@ -1,14 +1,9 @@
 ---
 title: キーボード ショートカット (HTML および JavaScript) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 8d44425a-6584-477d-932e-4e10d5e79511
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7313869648a22a2c455f06b73981d788b9f678cc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807206"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977180"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>ショートカット キー (HTML および JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +53,12 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 |アクション|ショートカット|  
 |------------|--------------|  
 |要素の選択|Ctrl + B|  
-|表示とを使用する場合は、web ページ強調表示ボックスを非表示を切り替える**要素の選択**|Ctrl + Shift + I|  
-|使用して変更をコミット**HTML として編集**|Ctrl + Enter|  
-|使用して変更を破棄**HTML として編集**|Esc|  
+|**[要素の選択]** の使用時に Web ページのハイライト ボックスの表示と非表示を切り替える|Ctrl + Shift + I|  
+|**[HTML として編集]** を使用した変更の確定|Ctrl + Enter|  
+|**[HTML として編集]** を使用した変更の破棄|Esc|  
 |選択した CSS 値を 1 つ増やす|↑ キー|  
 |選択した CSS 値を 1 つ減らす|↓ キー|  
   
 ## <a name="see-also"></a>関連項目  
- [クイック スタート: HTML と CSS をデバッグします。](../debugger/quickstart-debug-html-and-css.md)   
- [クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)
-
-
-
+ [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)   
+ [クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md)

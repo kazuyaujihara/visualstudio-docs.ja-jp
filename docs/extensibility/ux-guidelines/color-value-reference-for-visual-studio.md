@@ -20,7 +20,7 @@ ms.locfileid: "57428831"
 
 このトピックでは、新しい色のトークンを作成するための参照です。 新しい UI を作成するときは、各メイン テーマの色とその要素のハイ コントラスト テーマのシステム色の名前を選択するのに既存の UI からの似た色を使用できます。
 
-新しい色のトークンを作成する方法の実装については、次を参照してください。[色のテーマのツール](../../extensibility/internals/color-theming-tools.md)します。
+新しい色のトークンを作成する方法の実装については、[色のテーマのツール](../../extensibility/internals/color-theming-tools.md)を参照してください。
 
 既存の UI を使用する色のトークンを参照してください。 [for Visual Studio の色を共有](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)します。
 

@@ -16,7 +16,7 @@ ms.locfileid: "55955675"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell 配置
 
-分離のシェルでは、Visual Studio を確認できます。 機能、ドメイン固有言語およびそのソリューションを表示する方法と対話する必要があります。 Visual Studio 分離シェルの詳細については、次を参照してください。[分離シェルのカスタマイズ](https://vspartner.com/pages/vsshells)します。
+分離のシェルでは、Visual Studio を確認できます。 機能、ドメイン固有言語およびそのソリューションを表示する方法と対話する必要があります。 Visual Studio 分離シェルの詳細については、[分離シェルのカスタマイズ](https://vspartner.com/pages/vsshells)を参照してください。
 
 Visual Studio Shell は、デプロイ ターゲットとして設定します。
 

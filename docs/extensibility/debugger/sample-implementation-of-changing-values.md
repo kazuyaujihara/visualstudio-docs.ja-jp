@@ -20,7 +20,7 @@ ms.locfileid: "56680530"
 ---
 # <a name="sample-implementation-of-changing-values"></a>値を変更するサンプルの実装
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+>  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
 
  表示されるすべてのローカル、**ローカル**ウィンドウには、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)関連付けられているオブジェクト。 これは、`IDebugProperty2`オブジェクトには、ローカルの名前、値、および種類が含まれています。 ユーザーは、ローカルの値を変更するときに Visual Studio を呼び出す[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)ローカル メモリ内の値を更新します。 この例では、ローカルで表される、`CFieldProperty`を実装するクラス、`IDebugProperty2`インターフェイス。
 

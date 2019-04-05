@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4d194ab0b308f436692be5dd0e7d1bc3315725
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867827"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354730"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>クイック スタート: Visual Studio IDE の表示の紹介
 
@@ -71,7 +71,7 @@ Visual Studio の機能を引き続き確認するために、新しいプロジ
 
 1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
 
-   **[新しいプロジェクトの作成]** ウィンドウが開きます。 このウィンドウは**新しいプロジェクト** ダイアログと呼ばれることがあり、ここではプロジェクト テンプレートを参照して選択できます。 また、最近使ったプロジェクト テンプレートの一覧が保持されています。
+   **[新しいプロジェクトの作成]** ダイアログ ボックスが開きます。 ここでは、プロジェクト テンプレートの検索、フィルター処理、選択を行うことができます。 また、ご自分で最近使ったプロジェクト テンプレートの一覧も表示されます。
 
 1. 上部にある検索ボックスに「**コンソール**」と入力し、プロジェクトの種類の一覧をフィルターして、名前に "コンソール" が含まれるものに絞り込みます。 **[言語]** ピッカーで **[C#]** (または他の適切な言語) を選択して、さらに検索の結果を絞り込みます。
 

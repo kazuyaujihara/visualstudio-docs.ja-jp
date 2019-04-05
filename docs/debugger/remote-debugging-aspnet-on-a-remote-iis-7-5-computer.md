@@ -11,27 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ee7ab155a24b52916d6b8d53f412e8c71cab8db4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 5ebc7c3c172502198f56a8e35107f37d51ef2509
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194206"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355725"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>リモートの IIS コンピューター上の ASP.NET のリモート デバッグ
 IIS に配置されている ASP.NET アプリケーションをデバッグするには、インストールし、アプリをデプロイしたコンピューターでリモート ツールを実行して Visual Studio から、実行中のアプリにアタッチします。
 
 ![リモート デバッガー コンポーネント](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-このガイドでは、設定、Visual Studio 2017 ASP.NET MVC 4.5.2 アプリケーションを構成して、IIS にデプロイ、および Visual Studio からリモート デバッガーをアタッチする方法について説明します。
+このガイドでは、設定、Visual Studio ASP.NET MVC 4.5.2 アプリケーションを構成して、IIS にデプロイ、および Visual Studio からリモート デバッガーをアタッチする方法について説明します。
 
 > [!NOTE]
 > リモートへの ASP.NET Core の代わりにデバッグを参照してください[IIS コンピューター上のリモート デバッグ ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)します。 Azure App Service は、容易に導入し、いずれかを使用して IIS の構成済みのインスタンス上でデバッグすることができます、[スナップショット デバッガー](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 が必要) または[サーバー エクスプ ローラーから、デバッガーのアタッチ](../debugger/remote-debugging-azure.md)。
 
+## <a name="prerequisites"></a>必須コンポーネント
+
+::: moniker range=">=vs-2019"
+この記事に記載の手順に従うには、visual Studio 2019 が必要です。
+::: moniker-end
+::: moniker range="vs-2017"
+この記事に記載の手順に従うには、visual Studio 2017 が必要です。
+::: moniker-end
+
 これらの手順は、これらのサーバー構成でテストされています。
 * Windows Server 2012 R2 と IIS 8 (Windows Server 2008 R2 の server 手順は異なります)
 
-## <a name="requirements"></a>要件
+## <a name="network-requirements"></a>ネットワーク要件
 
 リモート デバッガーは、Windows Server の Windows Server 2008 Service Pack 2 以降でサポートされます。 要件の完全な一覧を参照してください。[要件](../debugger/remote-debugging.md#requirements_msvsmon)します。
 
@@ -48,7 +57,14 @@ IIS に配置されている ASP.NET アプリケーションをデバッグす�
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>ASP.NET 4.5.2 を作成する Visual Studio コンピューターでアプリケーション
 
-1. MVC の ASP.NET アプリケーションを新規作成します。 (**ファイル > 新規 > プロジェクト**を選択し、 <strong>Visual C# > Web > ASP.NET Web アプリケーション。[ASP.NET 4.5.2 テンプレート]</strong> セクションで、 **[MVC]** を選択します。 確認します**Docker サポートを有効にする**が選択されていないことと**認証**に設定されている**認証なし**します。 プロジェクトに名前を**MyASPApp**)。
+1. MVC の ASP.NET アプリケーションを新規作成します。
+
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019、入力**Ctrl + Q**検索ボックスを開くには、次のように入力します**asp.net**、選択**テンプレート**、を選択し、**新しい ASP.NET Web アプリケーション (.NET の作成。フレームワーク)** します。 表示されるダイアログ ボックスで、プロジェクトに名前を**MyASPApp**を選び、**作成**。 選択**MVC**選択**作成**です。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    これは、Visual Studio 2017 では、次のように選択します。**ファイル > 新規 > プロジェクト**を選択し、 **Visual C# > Web > ASP.NET Web アプリケーション**します。 **[ASP.NET 4.5.2** テンプレート] セクションで、 **[MVC]** を選択します。 確認します**Docker サポートを有効にする**が選択されていないことと**認証**に設定されている**認証なし**します。 プロジェクトに名前を**MyASPApp**)。
+    ::: moniker-end
 
 2. HomeController.cs ファイルを開き、 `About()` メソッドにブレークポイントを設定します。
 
@@ -165,7 +181,7 @@ IIS にアプリをデプロイする必要があります問題が解決する�
 
 ## <a name="BKMK_msvsmon"></a> ダウンロードして、Windows Server のリモート ツールのインストール
 
-このチュートリアルでは、Visual Studio 2017 を使用します。
+Visual Studio のバージョンに一致する remote tools のバージョンをダウンロードします。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -186,7 +202,14 @@ IIS にアプリをデプロイする必要があります問題が解決する�
     > [!TIP]
     > Visual Studio 2017 およびそれ以降のバージョンを使用して、以前にアタッチした同じプロセスに再アタッチできる**デバッグ > プロセスに再アタッチしています.** Shift + Alt + P
 
-3. [修飾子] フィールドを「**\<リモート コンピューター名>:4022**」に設定します。
+3. 修飾子のフィールドに設定**\<リモート コンピューター名 >: ポート**します。
+
+    ::: moniker range=">=vs-2019"
+    **\<リモート コンピューター名 >: 4024**で Visual Studio 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **\<リモート コンピューター名 >: 4022** Visual Studio 2017 で
+    ::: moniker-end
 4. **[最新の情報に更新]** をクリックします。
     **[選択可能なプロセス]** ウィンドウにプロセスがいくつか表示されます。
 
@@ -215,10 +238,14 @@ IIS にアプリをデプロイする必要があります問題が解決する�
 
 必要なポート:
 
-- 80 に必要な IIS 用。
-- 8172 - (Visual Studio からアプリのデプロイへの Web 配置のために必要な省略可能)
-- 4022-Visual Studio 2017 からのリモート デバッグに必要な (を参照してください[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)の詳細。
-- UDP 3702 - (省略可能) 検出ポート使用すると、**検索**Visual Studio でリモート デバッガーをアタッチするときにボタンをクリックします。
+* 80 に必要な IIS 用。
+::: moniker range=">=vs-2019"
+* 4024-Visual Studio 2019 からのリモート デバッグに必要な (を参照してください[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)詳細については)。
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022-Visual Studio 2017 からのリモート デバッグに必要な (を参照してください[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)詳細については)。
+::: moniker-end
+* UDP 3702 - (省略可能) 検出ポート使用すると、**検索**Visual Studio でリモート デバッガーをアタッチするときにボタンをクリックします。
 
 1. Windows Server 上のポートを開くを開き、**開始**メニューで、検索**セキュリティが強化された Windows ファイアウォール**します。
 

@@ -56,7 +56,7 @@ ms.locfileid: "58322533"
 |[ファイル](../sharepoint/files-element.md)|SharePoint に配置されるときに、SharePoint プロジェクト項目に含めるファイルを指定します。|
 
 ## <a name="remarks"></a>Remarks
- 使用して、 **ProjectOutputFile**プロジェクトの出力を SharePoint プロジェクト アイテムの展開に含める要素。 別のプロジェクトまたはプロジェクト項目が含まれる同じプロジェクトを指定することができます。 詳細については、次を参照してください。[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)します。
+ 使用して、 **ProjectOutputFile**プロジェクトの出力を SharePoint プロジェクト アイテムの展開に含める要素。 別のプロジェクトまたはプロジェクト項目が含まれる同じプロジェクトを指定することができます。 詳細については、[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)を参照してください。
 
 ## <a name="element-information"></a>要素情報
 

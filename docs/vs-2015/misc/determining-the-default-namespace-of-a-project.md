@@ -16,13 +16,13 @@ caps.latest.revision: 13
 manager: douge
 ms.openlocfilehash: c37c6f69c52677c1bd029f5e6c60d15313425abc
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49950951"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>プロジェクトの既定の名前空間の決定
-[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]場合、`CustomToolNamespace`プロパティの値の入力ファイルに設定されます`CustomToolNamespace`に渡される既定の名前空間のパラメーターの値になります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>メソッド。 それ以外の場合、`wszDefaultNamespace`に渡されるパラメーター`Generate`は常にルート名前空間を等しくします。 名前空間の詳細については、次を参照してください。 [Namespace キーワード](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b)します。  
+[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]場合、`CustomToolNamespace`プロパティの値の入力ファイルに設定されます`CustomToolNamespace`に渡される既定の名前空間のパラメーターの値になります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>メソッド。 それ以外の場合、`wszDefaultNamespace`に渡されるパラメーター`Generate`は常にルート名前空間を等しくします。 名前空間の詳細については、[Namespace キーワード](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b)を参照してください。  
   
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] フォルダー ベースの名前空間を使用します。 名前空間は、ルート名前空間とカスタムのツールが含まれるフォルダーの名前で構成されます。 各フォルダー名は有効な識別子に変換され、期間は、すべての名前を区切ります。 たとえば、入力ファイルが FolderA\FolderB\FolderC\MyInput.txt、ルート名前空間が CL9 の場合、計算の既定の名前空間になります**CL9 します。FolderA.FolderB.FolderC**します。  
   

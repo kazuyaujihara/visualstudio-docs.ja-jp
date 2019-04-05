@@ -22,7 +22,7 @@ ms.locfileid: "56631186"
 # <a name="how-to-execute-a-sharepoint-command"></a>方法: SharePoint コマンドを実行します。
   SharePoint ツール拡張機能で、サーバー オブジェクト モデルを使用する場合は、カスタムを作成する必要があります*SharePoint コマンド*API を呼び出します。 コマンドを定義し、SharePoint ツール拡張機能で、デプロイ後、拡張機能は、SharePoint サーバー オブジェクト モデルを呼び出すコマンドを実行できます。 コマンドを実行するには、ExecuteCommand メソッドのいずれかの操作を使用して、<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>オブジェクト。
 
- SharePoint コマンドの目的に関する詳細については、次を参照してください。[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)します。
+ SharePoint コマンドの目的に関する詳細については、[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)を参照してください。
 
 ### <a name="to-execute-a-sharepoint-command"></a>SharePoint コマンドを実行するには
 
@@ -30,7 +30,7 @@ ms.locfileid: "56631186"
 
     -   SharePoint プロジェクト システムの拡張機能で使用して、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.SharePointConnection%2A>プロパティ。
 
-         プロジェクト システムの拡張機能の詳細については、次を参照してください。 [SharePoint プロジェクト システムを拡張](../sharepoint/extending-the-sharepoint-project-system.md)します。
+         プロジェクト システムの拡張機能の詳細については、[SharePoint プロジェクト システムを拡張](../sharepoint/extending-the-sharepoint-project-system.md)を参照してください。
 
     -   拡張機能で、 **SharePoint 接続**ノード**サーバー エクスプ ローラー**を使用して、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A>プロパティ。 取得する、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext>オブジェクトを使用して、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A>プロパティ。
 
@@ -38,7 +38,7 @@ ms.locfileid: "56631186"
 
     -   プロジェクト テンプレートのウィザードなど、SharePoint ツールの拡張機能の一部でないコードで使用して、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A>プロパティ。
 
-         プロジェクト サービスを取得する方法についての詳細については、次を参照してください。 [SharePoint プロジェクト サービスを使用して、](../sharepoint/using-the-sharepoint-project-service.md)します。
+         プロジェクト サービスを取得する方法についての詳細については、[SharePoint プロジェクト サービスを使用して、](../sharepoint/using-the-sharepoint-project-service.md)を参照してください。
 
 2.  ExecuteCommand 方法の 1 つを呼び出して、<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>オブジェクト。 ExecuteCommand メソッドの最初の引数を実行するコマンドの名前を渡します。 場合は、コマンドは、カスタム パラメーターを持ち、ExecuteCommand メソッドの 2 番目の引数は、そのパラメーターを渡します。
 

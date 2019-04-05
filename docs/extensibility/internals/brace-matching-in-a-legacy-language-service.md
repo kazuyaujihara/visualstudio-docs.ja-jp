@@ -35,7 +35,7 @@ ms.locfileid: "56606629"
 
  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドは、スキャナー、行をトークン化し、キャレットの直前にトークンが返されます。 スキャナーは、言語要素のペアがのトリガー トークンの値を設定して見つかったことを示します<xref:Microsoft.VisualStudio.Package.TokenTriggers>で現在のトークン。 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>メソッドを呼び出して、<xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A>の解析理由の値を持つメソッド<xref:Microsoft.VisualStudio.Package.ParseReason>一致する言語要素を検索します。 一致する言語要素が見つかった場合は、両方の要素が強調表示されます。
 
- 中かっこの強調表示する方法を中かっこを入力するトリガーの詳細については、次を参照してください。、*例解析操作*、記事の「[レガシ言語サービス パーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)します。
+ 中かっこの強調表示する方法を中かっこを入力するトリガーの詳細については、、*例解析操作*、記事の「[レガシ言語サービス パーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)を参照してください。
 
 ## <a name="enable-support-for-brace-matching"></a>かっこの一致のサポートを有効にします。
  <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>属性が設定できる、 **MatchBraces**、 **MatchBracesAtCaret**、および**ShowMatchingBrace**対応するプロパティを設定するレジストリ エントリ<xref:Microsoft.VisualStudio.Package.LanguagePreferences>クラス。 言語の基本設定のプロパティは、ユーザーによっても設定できます。

@@ -48,7 +48,7 @@ ms.locfileid: "56627741"
  Visual Studio では、ドキュメント レベルのカスタマイズ内の新規または既存のドキュメントまたはワークシートの背後に生成されたコードを提供します。 このコードは、2 つの異なるイベントを発生させます。**スタートアップ**と**シャット ダウン**します。
 
 ### <a name="startup-event"></a>Startup イベント
- **Startup** イベントは、ドキュメントが実行中になり、アセンブリ内の初期化コードがすべて実行された後で、ホスト項目 (ドキュメント、ブックまたはワークシート) ごとに発生します。 これは、コードが実行されているクラスのコンストラクターで最後に実行されるイベントです。 ホスト項目の詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
+ **Startup** イベントは、ドキュメントが実行中になり、アセンブリ内の初期化コードがすべて実行された後で、ホスト項目 (ドキュメント、ブックまたはワークシート) ごとに発生します。 これは、コードが実行されているクラスのコンストラクターで最後に実行されるイベントです。 ホスト項目の詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)を参照してください。
 
  ドキュメント レベルのプロジェクトを作成する場合、Visual Studio は生成されたコード ファイル内の **Startup** イベント用に次のイベント ハンドラーを作成します。
 
@@ -135,9 +135,9 @@ ms.locfileid: "56627741"
 
  `ThisAddIn_Startup` イベント ハンドラー内のコードは、VSTO アドインが <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> メソッドをオーバーライドしない限り、最初に実行されるユーザー コードです。 この場合、 `ThisAddIn_Startup` イベント ハンドラーが、 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>の後に呼び出されます。
 
- 内のコードを追加しないでください、`ThisAdd-In_Startup`イベント ハンドラーの場合は、コードがドキュメントを開く必要があります。 代わりに、ユーザーがドキュメントを作成するとき、または開くときに Office アプリケーションが発生させるイベントにそのコードを追加します。 詳細については、次を参照してください。 [Office アプリケーションの起動時にドキュメントにアクセス](../vsto/programming-vsto-add-ins.md#AccessingDocuments)します。
+ 内のコードを追加しないでください、`ThisAdd-In_Startup`イベント ハンドラーの場合は、コードがドキュメントを開く必要があります。 代わりに、ユーザーがドキュメントを作成するとき、または開くときに Office アプリケーションが発生させるイベントにそのコードを追加します。 詳細については、[Office アプリケーションの起動時にドキュメントにアクセス](../vsto/programming-vsto-add-ins.md#AccessingDocuments)を参照してください。
 
- VSTO アドインの詳細については、スタートアップ シーケンスは、次を参照してください。 [Architecture of VSTO アドイン](../vsto/architecture-of-vsto-add-ins.md)します。
+ VSTO アドインの詳細については、スタートアップ シーケンスは、[Architecture of VSTO アドイン](../vsto/architecture-of-vsto-add-ins.md)を参照してください。
 
 ### <a name="shutdown-event"></a>Shutdown イベント
  <xref:Microsoft.Office.Tools.AddInBase.Shutdown> イベントは、コードが読み込まれるアプリケーション ドメインがアンロードされるときに発生します。 このイベントは、生成されたコード ファイル内の `ThisAddIn_Shutdown` メソッドによって処理されます。 このイベント ハンドラーは、VSTO アドインがアンロードされるときに最後に実行されるユーザー コードです。
@@ -150,7 +150,7 @@ ms.locfileid: "56627741"
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> オブジェクトの <xref:Microsoft.Office.Interop.Outlook.Explorer> イベント。
 
 > [!NOTE]
->  レジストリを変更して終了する場合、Outlook が <xref:Microsoft.Office.Tools.AddInBase.Shutdown> イベントを発生させるように強制することができます。 ただし、管理者がこの設定を元に戻す場合、 `ThisAddIn_Shutdown` メソッドに追加したコードは Outlook の終了時に実行されなくなります。 詳細については、次を参照してください。 [Outlook 2010 でのシャット ダウンの変更](http://go.microsoft.com/fwlink/?LinkID=184614)します。
+>  レジストリを変更して終了する場合、Outlook が <xref:Microsoft.Office.Tools.AddInBase.Shutdown> イベントを発生させるように強制することができます。 ただし、管理者がこの設定を元に戻す場合、 `ThisAddIn_Shutdown` メソッドに追加したコードは Outlook の終了時に実行されなくなります。 詳細については、[Outlook 2010 でのシャット ダウンの変更](http://go.microsoft.com/fwlink/?LinkID=184614)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションの開発](../vsto/developing-office-solutions.md)

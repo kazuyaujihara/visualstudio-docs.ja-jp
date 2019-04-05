@@ -34,7 +34,7 @@ ms.locfileid: "56639441"
 |最近使用されたブック ファイルのコレクションを取得します。|[方法: 最近使用ブック ファイルをプログラムで一覧表示](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|
 |テキスト ファイルをブックとして開きます。|[方法: プログラムによってブックとしてテキスト ファイルを開く](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|
 
- Excel タスクおよび Excel オブジェクト モデルの詳細については、次を参照してください。 [Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)します。
+ Excel タスクおよび Excel オブジェクト モデルの詳細については、[Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)を参照してください。
 
  以下のタスクは、VSTO アドインとドキュメント レベルのカスタマイズとで実行方法が異なる場合があります。
 

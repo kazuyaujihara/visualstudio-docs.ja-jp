@@ -8,8 +8,13 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Visual Studio サブスクリプションへようこそ
 Searchscope: VS Subscription
+ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322599"
 ---
-
 # <a name="visual-studio-subscriptions"></a>Visual Studio サブスクリプション
 
 Visual Studio サブスクリプションは、Windows、iOS、Android、Linux など、お好みのプラットフォームとデバイス上で優れたアプリケーションを作成、展開、管理するための包括的なリソース セットです。  サブスクリプションの特典には、開発ツール、クラウドのサービスとソフトウェア、トレーニングの利用が含まれ、開発およびテストのサポートも含まれます。

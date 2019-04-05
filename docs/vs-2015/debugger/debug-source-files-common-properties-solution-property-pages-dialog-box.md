@@ -1,14 +1,9 @@
 ---
 title: ソース ファイル、一般的なプロパティは、ソリューション プロパティ ページ ダイアログ ボックスのデバッグ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.options.FindSource
 dev_langs:
@@ -30,30 +25,27 @@ ms.assetid: 0af11464-eeb1-4d0b-87a6-0cc96779afb1
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 84bf975065d73cd2d25994855a4c8a236f706e3b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47fb2511e39153753a2c27483dd6ac96c26c9e83
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744678"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974074"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>[デバッグ ソース ファイル] ([ソリューション プロパティ ページ] ダイアログ ボックス - [共通プロパティ])
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このプロパティ ページでは、ソリューションのデバッグ時にデバッガーによってソース ファイルが検索される場所を指定します。  
   
- アクセスする、**デバッグ ソース ファイル**プロパティ ページで、ソリューションを右クリック**ソリューション エクスプ ローラー**選択**プロパティ**ショートカット メニューから。 展開、**共通プロパティ**フォルダー、およびクリック、**デバッグ ソース ファイル**ページ。  
+ **[デバッグのソース ファイル]** プロパティ ページを開くには、**ソリューション エクスプローラー**でソリューションを右クリックし、ショートカット メニューの **[プロパティ]** をクリックします。 **[共通プロパティ]** フォルダーを展開し、**[デバッグのソース ファイル]** ページをクリックします。  
   
  **ソース コードを含んでいるディレクトリ**  
  ソリューションのデバッグ時に、デバッガーによってソース ファイルが検索されるディレクトリの一覧が表示されます。 指定されたディレクトリのサブディレクトリも検索されます。  
   
- **これらのソース ファイルを探さない**  
- デバッガーによる読み取りから除外するファイルの名前を入力できます。 デバッガーは、上で指定したディレクトリのいずれかでこれらのファイルを見つけた場合、それを無視します。 場合、**ソースの検索**をデバッグして、クリックしたときに、ダイアログ ボックスが表示**キャンセル**デバッガーはそのファイルの検索を続行しないように、探していたファイルがこの一覧に追加を取得します。  
+ **以下のソース ファイルを探さない**  
+ デバッガーによる読み取りから除外するファイルの名前を入力できます。 デバッガーは、上で指定したディレクトリのいずれかでこれらのファイルを見つけた場合、それを無視します。 デバッグ中に **[ソース ファイルの検索]** ダイアログ ボックスが表示されたときに **[キャンセル]** をクリックすると、検索中のファイルがこのリストに追加され、そのファイルの検索が中止されます。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)
-
-
-

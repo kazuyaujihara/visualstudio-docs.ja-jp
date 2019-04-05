@@ -1,27 +1,22 @@
 ---
 title: 従来の言語サービス パーサーとスキャナー |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786405"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974530"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>従来の言語サービスのパーサーとスキャナー
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ namespace MyNamespace
 |名前空間、クラス、パブリック、void、int|keyword|  
 |=|operator|  
 |{ } ( ) ;|区切り記号|  
-|MyNamespace、MyClass、MyFunction、arg1、var1|identifier|  
+|MyNamespace, MyClass, MyFunction, arg1, var1|identifier|  
 |MyNamespace|namespace|  
 |MyClass|class|  
 |MyFunction|メソッド|  
@@ -63,7 +58,7 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>パーサーの種類  
  言語サービス パーサーは、コンパイラの一部として使用されるパーサーと同じではありません。 ただし、この種のパーサーは、コンパイラのパーサーと同様に、スキャナーとパーサーの両方を使用する必要があります。  
   
-- スキャナーを使用して、トークンの種類を識別します。 この情報は、構文の強調表示し、トークンの種類など、他の操作をトリガーできるかっこの一致をすばやく識別するために使用されます。 このスキャナーがによって表される、<xref:Microsoft.VisualStudio.Package.IScanner>インターフェイス。  
+- スキャナーを使用して、トークンの種類を識別します。 この情報は、構文の強調表示に使用されたり、トークンの種類をすばやく特定して、かっこの照合のような他の操作を行うために使用されます。 このスキャナーがによって表される、<xref:Microsoft.VisualStudio.Package.IScanner>インターフェイス。  
   
 - パーサーを使用して、機能と、トークンのスコープを記述します。 この情報は、メソッド、変数、パラメーター、および宣言などの言語要素を識別するために、メンバーおよびメソッド シグネチャのコンテキストに基づいての一覧を指定して、IntelliSense の操作で使用されます。 このパーサーは、中かっこおよびかっこなどの一致する言語要素ペアを検索するも使用されます。 このパーサーは、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。  
   
@@ -120,7 +115,7 @@ namespace MyNamespace
 12. 完成です。  
   
 ### <a name="summary"></a>まとめ  
- 中かっこの一致操作では、通常、言語要素のペアを単純に制限されます。 3 要素に一致するようより複雑な要素 ("`if(…)`「,」`{`「と」`}`"、または"`else`「,」`{`「と」`}`")、単語補完操作の一環として強調表示されることができます。 たとえば、"else"という単語が完了すると、一致する"`if`"ステートメントを強調表示されます。 一連があった場合`if` / `else if`中かっこの一致するものと同じメカニズムを使用して、それらのすべてのステートメントを強調表示でした。 <xref:Microsoft.VisualStudio.Package.Source>基本クラスは、次のように、このサポート既に: スキャナーはトークンのトリガーの値を返す必要があります<xref:Microsoft.VisualStudio.Package.TokenTriggers>トリガー値と組み合わせると<xref:Microsoft.VisualStudio.Package.TokenTriggers>トークンでカーソル位置の前にします。  
+ 中かっこの一致操作では、通常、言語要素のペアを単純に制限されます。 3 要素に一致するようより複雑な要素 ("`if(…)`「,」`{`「と」`}`"、または"`else`「,」`{`「と」`}`")、単語補完操作の一環として強調表示されることができます。 たとえば、"else"という単語が完了すると、一致する"`if`"ステートメントを強調表示されます。 一連があった場合`if` / `else if`中かっこの一致するものと同じメカニズムを使用して、それらのすべてのステートメントを強調表示でした。 <xref:Microsoft.VisualStudio.Package.Source>基本クラスは、次のように、このサポート既に。スキャナーがトークンのトリガーの値を返す必要があります<xref:Microsoft.VisualStudio.Package.TokenTriggers>トリガー値と組み合わせると<xref:Microsoft.VisualStudio.Package.TokenTriggers>カーソル位置の前にあるトークンです。  
   
  詳細については、次を参照してください。[従来の言語サービスでかっこの照合](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)します。  
   
@@ -143,4 +138,3 @@ namespace MyNamespace
  [従来の言語サービスの概要](../../extensibility/internals/legacy-language-service-overview.md)   
  [従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [従来の言語サービスでのかっこの一致](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
-

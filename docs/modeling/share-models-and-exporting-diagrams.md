@@ -27,19 +27,19 @@ Visual Studio では、いくつかの方法でモデルと図を同僚と共有
 
  別のユーザーは、モデルを同時に作業できますが、別のパッケージで作業する必要があります。
 
- 中規模または大規模プロジェクトでモデルの整理に関するヒントについては、次を参照してください。[モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)します。
+ 中規模または大規模プロジェクトでモデルの整理に関するヒントについては、[モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)を参照してください。
 
 ## <a name="reading-and-reviewing-models"></a>モデルの読み取りと確認
  (これは、モデルを作成することはできません)、Visual Studio の一部のバージョンを使用してチーム メンバーは、図、および有向グラフをモデリング、モデルを読み取ることができますが、編集はできません。  この機能をサポートする Visual Studio のエディションを確認するを参照してください。 [Edition のサポート アーキテクチャとモデリング ツール](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)します。
 
  作成されたモデル内でのみ依存関係図を開くことができます。 このため、図にアクセスするには、すべてのモデリング プロジェクト ファイルまたはそのコピーへのアクセスを提供する必要があります。
 
- 詳細については、次を参照してください。[他の Visual Studio のエディションでモデルおよびダイアグラムを読み取る](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)します。
+ 詳細については、[他の Visual Studio のエディションでモデルおよびダイアグラムを読み取る](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)を参照してください。
 
 ## <a name="using-diagrams-in-documents-and-presentations"></a>ドキュメントとプレゼンテーションでの図の使用
  図の一部をドキュメントやプレゼンテーションにコピーすることができます。 また、図を XPS ファイルなどに出力することもできます。
 
- 詳細については、次を参照してください。[ダイアグラムをイメージとしてエクスポート](../modeling/export-diagrams-as-images.md)します。
+ 詳細については、[ダイアグラムをイメージとしてエクスポート](../modeling/export-diagrams-as-images.md)を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 

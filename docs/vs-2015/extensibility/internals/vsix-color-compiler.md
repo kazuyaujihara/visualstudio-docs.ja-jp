@@ -1,21 +1,17 @@
 ---
 title: VSIX カラー コンパイラ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 19ca749b3ddd2190fd667ddb6c96c2a88c557999
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788434"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977117"
 ---
 # <a name="vsix-color-compiler"></a>VSIX カラー コンパイラ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -114,7 +110,7 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|型|[必須]色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色は無効であるか設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor から Windows のシステム カラーです。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX から Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動の色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|  
+|型|[必須]色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色は、無効であるか設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor から Windows のシステム カラーです。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX から Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動の色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|  
 |ソース|[必須]16 進数で表される色の値|  
   
  型の属性のスキーマでは、__VSCOLORTYPE 列挙型によってサポートされているすべての値がサポートされています。 ただし、CT_RAW と CT_SYSCOLOR のみを使用することをお勧めします。  
@@ -146,7 +142,7 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
 |-|-|-|  
 |**スイッチ名**|**ノート**|**必須またはオプション**|  
 |名前のない (.xml ファイル)|最初の名前のないパラメーターは、これに変換する XML ファイルへのパスです。|必須|  
-|名前のない (.pkgdef ファイル)|これは 2 つ目は無名パラメーターは、生成された .pkgdef ファイルの出力パス。<br /><br /> 既定値: \<XML ファイル名 > .pkgdef|Optional|  
+|名前のない (.pkgdef ファイル)|これは 2 つ目は無名パラメーターは、生成された .pkgdef ファイルの出力パス。<br /><br /> 既定:\<XML ファイル名 > .pkgdef|Optional|  
 |/noLogo|このフラグを設定すると、印刷から製品および著作権情報が停止します。|Optional|  
 |/?|ヘルプ情報を出力します。|Optional|  
 |/help|ヘルプ情報を出力します。|Optional|  
@@ -155,7 +151,7 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
   
 -   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   VsixColorCompiler D:\xml\colors.xml/noLogo  
+-   VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>メモ  
   
@@ -173,4 +169,3 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\TreeView]  
 "Data"=hex:38,00,00,00,0b,00,00,00,01,00,00,00,8e,f0,ec,92,13,8b,f4,4c,99,e9,ae,26,92,38,21,85,01,00,00,00,0a,00,00,00,42,61,63,6b,67,72,6f,75,6e,64,01,f5,f5,f5,ff,01,1e,1e,1e,ff  
 ```
-

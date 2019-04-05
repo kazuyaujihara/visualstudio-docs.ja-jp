@@ -1,30 +1,25 @@
 ---
 title: サービスの登録 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
-manager: douge
-ms.openlocfilehash: e5d8aa9e6652aa41e59d160c5cf25aacd3390572
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219688"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974380"
 ---
 # <a name="registering-services"></a>サービスの登録
 オンデマンド読み込みをサポートするには、サービス プロバイダーはグローバル サービスを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] に登録する必要があります。  
   
- 開発時にマネージド サービス プロバイダーはパッケージのソース コードに属性を追加し、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE でパッケージを構築して、サービスとサービスのオーバーライドを登録します。 これにより、生成されたアセンブリで RegPkg.exe ユーティリティが実行され、パッケージの登録と配置の準備が行われます。 詳細については、次を参照してください。[方法: サービス登録](../misc/how-to-register-a-service.md)します。  
+ 開発時にマネージド サービス プロバイダーはパッケージのソース コードに属性を追加し、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE でパッケージを構築して、サービスとサービスのオーバーライドを登録します。 これにより、生成されたアセンブリで RegPkg.exe ユーティリティが実行され、パッケージの登録と配置の準備が行われます。 詳細については、「[方法 :サービス登録](../misc/how-to-register-a-service.md)します。  
   
  アンマネージ サービス プロバイダーは、提供するサービスをシステム レジストリのサービス セクションまたはサービス オーバーライド セクションで [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] に登録する必要があります。 次の .reg ファイル フラグメントは、SVsTextManager サービスを登録する方法を示しています。  
   

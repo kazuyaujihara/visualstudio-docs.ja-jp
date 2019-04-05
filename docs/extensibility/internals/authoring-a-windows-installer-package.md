@@ -34,7 +34,7 @@ VSPackage をインストールするには、Windows インストーラー パ�
 
 - VSPackage の統合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]呼び出して**devenv.exe/setup** (CustomAction テーブルを使用)。
 
-詳細については、次を参照してください。 [Windows インストーラー](/windows/desktop/Msi/windows-installer-portal)します。
+詳細については、[Windows インストーラー](/windows/desktop/Msi/windows-installer-portal)を参照してください。
 
 ## <a name="setup-tools"></a>セットアップ ツール
 さまざまなサードパーティ製のセットアップ ツールは、Windows インストーラー パッケージの開発環境を提供します。 次の無料ツールを使用できます。

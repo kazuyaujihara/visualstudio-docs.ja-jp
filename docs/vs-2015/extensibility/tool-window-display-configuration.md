@@ -1,27 +1,22 @@
 ---
 title: ツール ウィンドウの表示の構成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c563888424ae4825f3e5b10fc0592029a29cb84b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736960"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978329"
 ---
 # <a name="tool-window-display-configuration"></a>ツール ウィンドウの表示構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ HKEY_LOCAL_MACHINE\
 |名前|REG_SZ|「の短い名前をここに挿入」|ツール ウィンドウを説明する短い名前。 レジストリ内の参照にのみ使用します。|  
 |Float|REG_SZ|"X1, Y1, X2, Y2"|次の 4 つのコンマ区切りの値。 X1, Y1 はツール ウィンドウの左上隅の座標。 X2, Y2 は右下隅の座標。 すべての値は、画面座標でです。|  
 |スタイル|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> 「リンク先」<br /><br /> 「タブ」<br /><br /> "AlwaysFloat"|最初に指定するキーワードは、ツール ウィンドウの状態を表示します。<br /><br /> "MDI"= MDI ウィンドウとドッキングします。<br /><br /> 「フローティング」浮動小数点を = です。<br /><br /> 「リンクされた」= (ウィンドウのエントリで指定された) 別のウィンドウにリンクされています。<br /><br /> 「タブ付き」= 別のツール ウィンドウと組み合わせます。<br /><br /> "AlwaysFloat"= ドッキングことはできません。<br /><br /> 詳細については、以下のコメント セクションを参照してください。|  
-|[Window]|REG_SZ|*\<GUID &GT;*|これをツール ウィンドウのリンクやタブ付きウィンドウの GUID です。 GUID は、独自の windows のいずれかまたはで windows のいずれかに属している可能性があります、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE。|  
+|[Window]|REG_SZ|*\<GUID>*|これをツール ウィンドウのリンクやタブ付きウィンドウの GUID です。 GUID は、独自の windows のいずれかまたはで windows のいずれかに属している可能性があります、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE。|  
 |[方向]|REG_SZ|"Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Bottom"|以下のコメント セクションを参照してください。|  
 |DontForceCreate|REG_DWORD|0 または 1|このエントリが存在し、その値が 0 でない場合、ウィンドウが読み込まれましたが、すぐに表示されます。|  
   
@@ -94,7 +89,7 @@ HKEY_LOCAL_MACHINE\
 |名前|型|データ|説明|  
 |----------|----------|----------|-----------------|  
 |(既定)|REG_SZ|なし|空のままにします。|  
-|*\<GUID &GT;*|REG_DWORD または REG_SZ|0 または説明する文字列。|任意。 エントリの名前は、可視性を必要とするコマンドの GUID である必要があります。 値は、情報の文字列だけを保持します。 通常、値は、`reg_dword`を 0 に設定します。|  
+|*\<GUID>*|REG_DWORD または REG_SZ|0 または説明する文字列。|任意。 エントリの名前は、可視性を必要とするコマンドの GUID である必要があります。 値は、情報の文字列だけを保持します。 通常、値は、`reg_dword`を 0 に設定します。|  
   
 ### <a name="example"></a>例  
   
@@ -115,4 +110,3 @@ HKEY_LOCAL_MACHINE\
   
 ## <a name="see-also"></a>関連項目  
  [VSPackage の基本事項](../misc/vspackage-essentials.md)
-

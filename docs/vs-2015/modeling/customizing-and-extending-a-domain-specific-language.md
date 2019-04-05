@@ -1,25 +1,22 @@
 ---
 title: カスタマイズとドメイン固有言語を拡張 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 ms.assetid: b155eb79-4e0a-4a99-a6f2-ca4f811fb5ca
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dfa174ca228adcd404edb3e91733731f975ed732
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180688"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973195"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>ドメイン固有言語のカスタマイズおよび拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +46,7 @@ Visual Studio のモデリングと視覚エフェクト SDK (VMSDK) は、い�
 |任意の図形の背景イメージを設定します。|固定の ImageField を追加する InitializeInstanceResources() をオーバーライドします。 参照してください[ダイアグラムの外観のカスタマイズ](../modeling/customizing-presentation-on-the-diagram.md)します。|  
 |任意の深さに入れ子になったシェイプ|再帰的なツリーの埋め込みを設定します。 図形を含む BoundsRules を定義します。 参照してください[ダイアグラムの外観のカスタマイズ](../modeling/customizing-presentation-on-the-diagram.md)します。|  
 |要素の境界に固定のポイントにコネクタをアタッチします。|図上の小さなポートによって表される、埋め込みターミナル要素を定義します。 BoundsRules を使用して、場所に、ポートを修正します。 回路図のサンプルを参照してください。 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)します。|  
-|テキスト フィールドには、その他の値から派生した値が表示されます。|テキスト デコレータを計算またはカスタム ストレージ ドメイン プロパティにマップします。 詳細については、次を参照してください。[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)します。|  
+|テキスト フィールドには、その他の値から派生した値が表示されます。|テキスト デコレータを計算またはカスタム ストレージ ドメイン プロパティにマップします。 詳細については、[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)を参照してください。|  
 |モデル要素間、または図形間の変更を反映します。|参照してください[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。|  
 |など、他のリソースに変更を反映[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ストア外の拡張機能。|参照してください[イベント ハンドラーには、モデルの外部で変更が反映されるまで](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。|  
 |[プロパティ] ウィンドウには、関連する要素のプロパティが表示されます。|プロパティの転送を設定します。 参照してください[プロパティ ウィンドウのカスタマイズ](../modeling/customizing-the-properties-window.md)します。|  
@@ -62,13 +59,13 @@ Visual Studio のモデリングと視覚エフェクト SDK (VMSDK) は、い�
 |図形のレイアウトと外観をコピーし、ドラッグ アンド ドロップが保持されます。|シェイプとコネクタを追加、コピーする`ElementGroupPrototype`します。 オーバーライドする最も便利なメソッドは `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 参照してください[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。|  
 |現在のカーソル位置など、選択した場所に図形を貼り付けます。|オーバーライド`ClipboardCommandSet.ProcessOnCopy()`の場所に固有のバージョンを使用する`ElementOperations.Merge().`を参照してください[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。|  
 |貼り付け時にその他のリンクを作成します。|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
-|ドラッグを有効にして、その他の Dsl または UML 図からドロップ図とモデリング Windows 要素|参照してください[方法: ドラッグ アンド ドロップ ハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
+|ドラッグを有効にして、その他の Dsl または UML 図からドロップ図とモデリング Windows 要素|「[方法:ドラッグ アンド ドロップ ハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |親をドラッグした場合とは、図形やポートなどの子の図形にドラッグしたりするためのツールを許可します。|ターゲット オブジェクト クラスの親にドロップされたオブジェクトを転送するには、要素マージ ディレクティブを定義します。 参照してください[要素の作成と移動をカスタマイズする](../modeling/customizing-element-creation-and-movement.md)します。|  
 |図形またはその他のリンクを図形にドラッグするツールを許可するか、作成されたオブジェクト。 たとえば、リンクすることが項目上にドロップされるコメントを許可するには、です。|ターゲット ドメイン クラスに要素マージ ディレクティブを定義し、生成するリンクを定義します。 複雑な場合は、カスタム コードを追加することができます。 参照してください[要素の作成と移動をカスタマイズする](../modeling/customizing-element-creation-and-movement.md)します。|  
 |1 つのツールを使用して要素のグループを作成します。 たとえば、固定ポートのセットを持つコンポーネント。|ToolboxHelper.cs 内のツールボックスの初期化メソッドをオーバーライドします。 要素グループ プロトタイプ (EGP) が、要素とそのリレーションシップ リンクを含むを作成します。 参照してください[ツールおよびツールボックスのカスタマイズ](../modeling/customizing-tools-and-the-toolbox.md)します。<br /><br /> EGP にプリンシパルとポート図形を含めるか、EGP がインスタンス化されるときに、ポート シェイプを配置する BoundsRules を定義します。 参照してください[BoundsRules によってシェイプの位置とサイズが制限](../modeling/boundsrules-constrain-shape-location-and-size.md)します。|  
 |1 つの接続ツールを使用して、複数の種類のリレーションシップのインスタンスを作成します。|リンク接続ディレクティブ (LCD) をツールによって呼び出される接続ビルダーに追加します。 Lcd では、2 つの要素の型からリレーションシップの種類を決定します。 この要素の状態に依存性を高めるには、カスタム コードを追加することができます。 参照してください[ツールおよびツールボックスのカスタマイズ](../modeling/customizing-tools-and-the-toolbox.md)します。|  
 |固定ツール-ユーザーは、連続して多くの図形またはコネクタを作成する任意のツールをダブルクリックすることができます。|DSL エクスプ ローラーで選択、`Editor`ノード。 [プロパティ] ウィンドウで次のように設定します。**ツールボックス アイテムの固定を使用して**します。|  
-|メニュー コマンドを定義します。|参照してください[方法: 標準メニュー コマンドを修正](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
+|メニュー コマンドを定義します。|「[方法:標準のメニュー コマンドを修正する](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
 |検証規則を使って、モデルを制限します。|参照してください[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)|  
 |DSL からコード、構成ファイル、またはドキュメントを生成します。|[ドメイン固有言語からのコード生成](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |モデルを保存する方法をカスタマイズするファイル。|参照してください[ファイル格納処理および XML シリアル化をカスタマイズします。](../modeling/customizing-file-storage-and-xml-serialization.md)|  
@@ -81,6 +78,3 @@ Visual Studio のモデリングと視覚エフェクト SDK (VMSDK) は、い�
  [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)   
  [ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [Modeling SDK for Visual Studio - ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-
-

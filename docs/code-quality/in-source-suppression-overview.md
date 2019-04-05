@@ -57,7 +57,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 属性のプロパティは次のとおりです。
 
-- **カテゴリ**-ルールが定義されているカテゴリ。 コード分析ルールのカテゴリの詳細については、次を参照してください。[マネージ コードの警告](../code-quality/code-analysis-for-managed-code-warnings.md)します。
+- **カテゴリ**-ルールが定義されているカテゴリ。 コード分析ルールのカテゴリの詳細については、[マネージ コードの警告](../code-quality/code-analysis-for-managed-code-warnings.md)を参照してください。
 
 - **CheckId** -ルールの識別子。 サポートには、短期および長期のルールの識別子名の両方が含まれます。 短い名前が CAXXXX;長い名前は、CAXXXX:FriendlyTypeName です。
 

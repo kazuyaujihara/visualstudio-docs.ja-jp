@@ -28,7 +28,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 710bafe2383d95358ba06a287a300d9aea7baf66
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51729976"
@@ -66,7 +66,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  DOM Explorer ではレンダリングされるページのビューが示され、DOM Explorer を使用すると値を変更して結果をすぐに確認できます。 これにより、デバッガーを停止して再起動することなく変更をテストできます。 この方法でページと対話するときはプロジェクトのソース コードは変更されないので、必要なコード修正が見つかったら、ソース コードを変更します。  
   
 > [!TIP]
->  ソース コードを変更する際、デバッガーの停止や再起動を避けるために、[デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンを使用して (または F4 キーを押して) アプリケーションを更新できます。 詳細については、次を参照してください。[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)します。  
+>  ソース コードを変更する際、デバッガーの停止や再起動を避けるために、[デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンを使用して (または F4 キーを押して) アプリケーションを更新できます。 詳細については、[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)を参照してください。  
   
  DOM Explorer を使用すると次のことができます。  
   
@@ -179,7 +179,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
     ![デバッグ ターゲット リスト](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8. **[デバッグ]** > **Start [デバッグ]ging**の順にクリックするか、F5 キーを押して、デバッグ モードでアプリを実行します。  
+8.  **[デバッグ]** > **Start [デバッグ]ging**の順にクリックするか、F5 キーを押して、デバッグ モードでアプリを実行します。  
   
     これによりアプリはシミュレーターまたは Phone エミュレーターで実行されますが、スタイリングにはいくつかバグがあるため、画面にはほとんど何も表示されません。 最初の `FlipView` のイメージが、画面の中央の小さい四角形に表示されます。  
   
@@ -214,7 +214,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 15. `width: 100px;height: 100px;`を選択し、Del キー、Enter キーの順に押します。 デバッグ セッションを停止していなくても、Enter キーを押すとすぐに、新しい値がシミュレーターまたは Phone エミュレーターに反映されます。  
   
     > [!IMPORTANT]
-    >  DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]**、 **[計算済み]**、 **[レイアウト]** の各タブに表示される値も更新できます。 詳細については、次を参照してください。 [DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)と[DOM Explorer を使用してデバッグ レイアウト](../debugger/debug-layout-using-dom-explorer.md)します。  
+    >  DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]**、 **[計算済み]**、 **[レイアウト]** の各タブに表示される値も更新できます。 詳細については、[DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)と[DOM Explorer を使用してデバッグ レイアウト](../debugger/debug-layout-using-dom-explorer.md)を参照してください。  
   
 16. シミュレーターまたは Phone エミュレーターを選択するか、または Alt + Tab キーを使って、アプリケーションに切り替えます。  
   
@@ -262,7 +262,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
      アプリのページが再読み込みされ、シミュレーターまたは Phone エミュレーターが前面に戻ります。  
   
-     更新機能に関する詳細については、次を参照してください。[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)します。  
+     更新機能に関する詳細については、[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)を参照してください。  
   
 ##  <a name="SelectingElements"></a> Selecting elements  
  アプリケーションをデバッグするときに、次の 3 種類の方法で DOM 要素を選択できます。  
@@ -297,7 +297,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 - [!INCLUDE[win81](../includes/win81-md.md)] で実行されている Internet Explorer 11  
   
-- [!INCLUDE[win8](../includes/win8-md.md)]  
+-  [!INCLUDE[win8](../includes/win8-md.md)]  
   
   [と Visual Studio をダウンロードするには、](http://go.microsoft.com/fwlink/?LinkID=232448) ここ [!INCLUDE[win8](../includes/win8-md.md)] にアクセスしてください。  
   

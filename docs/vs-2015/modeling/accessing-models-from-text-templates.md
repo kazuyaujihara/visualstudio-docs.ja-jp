@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49919859"
@@ -24,7 +24,7 @@ ms.locfileid: "49919859"
 # <a name="accessing-models-from-text-templates"></a>テキスト テンプレートからモデルへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-テキスト テンプレートを使用すると、レポート ファイル、ソース コード ファイル、およびその他のドメイン固有言語モデルを基にテキスト ファイルを作成できます。 テキスト テンプレートの基本については、次を参照してください。[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートは、DSL をデバッグするときは、実験モードで動作し、DSL が配置されているコンピューターにも機能します。  
+テキスト テンプレートを使用すると、レポート ファイル、ソース コード ファイル、およびその他のドメイン固有言語モデルを基にテキスト ファイルを作成できます。 テキスト テンプレートの基本については、[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)を参照してください。 テキスト テンプレートは、DSL をデバッグするときは、実験モードで動作し、DSL が配置されているコンピューターにも機能します。  
   
 > [!NOTE]
 >  DSL ソリューション、サンプル テキスト テンプレートを作成するときに **\*.tt**デバッグ プロジェクトでファイルが生成されます。 ドメイン クラスの名前を変更すると、これらのテンプレートが機能しなくなります。 それにもかかわらずが、必要な基本的なディレクティブを含めるし、DSL を一致するように更新できる例を示します。  
@@ -70,7 +70,7 @@ Here is a list of elements in the model:
   
 -   テンプレートをデバッグするには、追加`debug="true"`を`template`ディレクティブ。 別のインスタンスで、テンプレートが開きます[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]例外が発生した場合。 コードの特定の時点でデバッガーを中断する場合は、insert ステートメント `System.Diagnostics.Debugger.Break();`  
   
-     詳細については、次を参照してください。 [T4 テキスト テンプレートのデバッグ](../modeling/debugging-a-t4-text-template.md)します。  
+     詳細については、[T4 テキスト テンプレートのデバッグ](../modeling/debugging-a-t4-text-template.md)を参照してください。  
   
 ## <a name="about-the-dsl-directive-processor"></a>DSL のディレクティブ プロセッサについて  
  テンプレートには、DSL 定義で定義されているドメイン クラスを使用できます。 これはの詳細については、通常は、テンプレートの先頭近くに表示される、ディレクティブになります。 前の例では、次は。  
@@ -106,7 +106,7 @@ Here is a list of elements in the model:
 ##  <a name="Multiple"></a> テキスト テンプレートから複数のモデルへのアクセス  
   
 > [!NOTE]
->  このメソッドは、同じテンプレートに複数のモデルを読み取ることができますが、ModelBus references をサポートしていません。 ModelBus 参照によって指定されたモデルを読み取り、次を参照してください。[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)します。  
+>  このメソッドは、同じテンプレートに複数のモデルを読み取ることができますが、ModelBus references をサポートしていません。 ModelBus 参照によって指定されたモデルを読み取り、[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)を参照してください。  
   
  同じテキスト テンプレートから複数のモデルにアクセスする場合は、各モデルの生成されたディレクティブ プロセッサに 1 回を呼び出す必要があります。 各モデルでのファイル名を指定する必要があります、`requires`パラメーター。 内のルート ドメイン クラスを使用する名前を指定する必要があります、`provides`パラメーター。 別の値を指定する必要があります、`provides`内の各ディレクティブの呼び出しのパラメーター。 たとえば、Library.xyz、School.xyz、および Work.xyz と呼ばれる 3 つのモデル ファイルがあることを想定しています。 同じテキスト テンプレートからそれらにアクセスするには、次のように 3 つのディレクティブの呼び出しを記述する必要があります。  
   
@@ -148,7 +148,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
  ただし、DSL に固有のディレクティブの関数の 1 つは、DSL の名前空間をインポートするテンプレート コードがその DSL で定義されているドメイン クラスを使用できるようにします。 追加する必要があります、ディレクティブを使用していないため、 **\<アセンブリ >** と**\<インポート >** ディレクティブをすべてのモデルを読み込むことがあります。 さまざまなモデルを読み込むことがありますが、同じ DSL のすべてのインスタンスである場合は簡単です。  
   
- 使用して、ファイルを読み込むには、最も効果的な方法は、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus します。 一般的なシナリオで、テキスト テンプレートは、通常の方法で最初のモデルを読み込む、DSL に固有のディレクティブを使用します。 そのモデルには、別のモデルへの ModelBus 参照が含まれます。 ModelBus を使用して、参照されているモデルを開き、特定の要素にアクセスすることができます。 詳細については、次を参照してください。[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)します。  
+ 使用して、ファイルを読み込むには、最も効果的な方法は、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus します。 一般的なシナリオで、テキスト テンプレートは、通常の方法で最初のモデルを読み込む、DSL に固有のディレクティブを使用します。 そのモデルには、別のモデルへの ModelBus 参照が含まれます。 ModelBus を使用して、参照されているモデルを開き、特定の要素にアクセスすることができます。 詳細については、[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)を参照してください。  
   
  あまり一般的なシナリオでは、ファイル名のみがあるモデル ファイルを開く可能性があり、これが、現在のではない[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。 この場合で説明した手法を使用してファイルを開く[方法: プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)します。  
   

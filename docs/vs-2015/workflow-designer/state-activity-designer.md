@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: erikre
 ms.openlocfilehash: cc6d0d13b1bb924847c52ae8e41e2b859d2e7b2b
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49184016"
@@ -25,7 +25,7 @@ ms.locfileid: "49184016"
 <xref:System.Activities.Statements.State> はステート マシンの状態を表します。  
   
 ## <a name="using-the-state-activity-designer"></a>State アクティビティ デザイナーの使用  
- 追加する、 <xref:System.Activities.Statements.State> 、ワークフローにドラッグ、**状態**からアクティビティ デザイナー、**ステート マシン**のセクション、**ツールボックス**にドロップし、 <xref:System.Activities.Statements.StateMachine>上のアクティビティ、[!INCLUDE[wfd1](../includes/wfd1-md.md)]画面。 <xref:System.Activities.Statements.State> アクティビティは、<xref:System.Activities.Statements.StateMachine> にドロップして遷移を後で追加できます。または遷移は、<xref:System.Activities.Statements.State> アクティビティをドロップしたときに作成できます。 追加する、<xref:System.Activities.Statements.State>アクティビティ ドラッグの 1 つのステップの遷移を作成し、**状態**からのアクティビティ、**ステート マシン**のセクション、**ツールボックス**別上に置きますワークフロー デザイナーでの状態。 ドラッグされている <xref:System.Activities.Statements.State> が別の <xref:System.Activities.Statements.State> の上にある場合、もう一方の <xref:System.Activities.Statements.State> の周囲に 4 つの三角形が表示されます。 <xref:System.Activities.Statements.State> を 4 つの三角形のいずれかにドロップすると、ステート マシンに追加され、遷移元の <xref:System.Activities.Statements.State> からドロップされた遷移先の <xref:System.Activities.Statements.State> に遷移が作成されます。 詳細については、次を参照してください。[遷移](../workflow-designer/transition-activity-designer.md)します。  
+ 追加する、 <xref:System.Activities.Statements.State> 、ワークフローにドラッグ、**状態**からアクティビティ デザイナー、**ステート マシン**のセクション、**ツールボックス**にドロップし、 <xref:System.Activities.Statements.StateMachine>上のアクティビティ、[!INCLUDE[wfd1](../includes/wfd1-md.md)]画面。 <xref:System.Activities.Statements.State> アクティビティは、<xref:System.Activities.Statements.StateMachine> にドロップして遷移を後で追加できます。または遷移は、<xref:System.Activities.Statements.State> アクティビティをドロップしたときに作成できます。 追加する、<xref:System.Activities.Statements.State>アクティビティ ドラッグの 1 つのステップの遷移を作成し、**状態**からのアクティビティ、**ステート マシン**のセクション、**ツールボックス**別上に置きますワークフロー デザイナーでの状態。 ドラッグされている <xref:System.Activities.Statements.State> が別の <xref:System.Activities.Statements.State> の上にある場合、もう一方の <xref:System.Activities.Statements.State> の周囲に 4 つの三角形が表示されます。 <xref:System.Activities.Statements.State> を 4 つの三角形のいずれかにドロップすると、ステート マシンに追加され、遷移元の <xref:System.Activities.Statements.State> からドロップされた遷移先の <xref:System.Activities.Statements.State> に遷移が作成されます。 詳細については、[遷移](../workflow-designer/transition-activity-designer.md)を参照してください。  
   
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>ワークフロー デザイナーでの State アクティビティのプロパティ  
  次の表に、ワークフロー デザイナーを使用して設定できる <xref:System.Activities.Statements.State> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティの中には、プロパティ グリッドで編集できるものがあります。また、その一部はデザイナー画面で編集できます。  

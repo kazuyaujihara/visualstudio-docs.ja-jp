@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e33aaded85c7931dfc3a95d653ff35f257c9137b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070257"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647467"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])
 
-**[オプション]** ダイアログ ボックスの **[フォントおよび色]** ページを使用すると、統合開発環境 (IDE) のさまざまなユーザー インターフェイス要素について、カスタムのフォントや配色を設定できます。 このダイアログ ボックスを表示するには、**[ツール]** > **[オプション]** の順にクリックし、**[環境]** > **[フォントおよび色]** の順に選択します。 このページが一覧に表示されない場合は、**[オプション]** ダイアログ ボックスの **[すべての設定を表示]** を選択します。
+**[オプション]** ダイアログ ボックスの **[フォントおよび色]** ページを使用すると、統合開発環境 (IDE) のさまざまなユーザー インターフェイス要素について、カスタムのフォントや配色を設定できます。 このダイアログ ボックスを表示するには、**[ツール]** > **[オプション]** の順にクリックし、**[環境]** > **[フォントおよび色]** の順に選択します。
 
 配色の変更は、変更を行ったセッションの間は有効になりません。 Visual Studio のインスタンスをもう 1 つ開き、変更内容が適用される条件を作成することによって、配色の変更を確認できます。
 

@@ -1,14 +1,9 @@
 ---
 title: '方法: DLL プロジェクトからデバッグ |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,20 +19,20 @@ ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61ccfc1fbf97dc36ed0625f95f998f9b154fd68c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4a9a3e7cd63e5a485063789d9f9eeaf1227d1b5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796260"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975430"
 ---
-# <a name="how-to-debug-from-a-dll-project"></a>方法 : DLL プロジェクトからデバッグする
+# <a name="how-to-debug-from-a-dll-project"></a>方法: DLL プロジェクトからデバッグします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DLL プロジェクトのデバッグを開始するには、プロジェクトのプロパティで呼び出し元のアプリケーションを指定する必要があります。 C++ のプロパティ ページは、C# と Visual Basic のプロパティ ページとレイアウトおよび内容が異なります。  
   
- マネージド DLL がネイティブ コードによって呼び出され、両方をデバッグする場合は、このプロジェクトのプロパティで指定できます。 詳細については、「 [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md)」を参照してください。  
+ マネージド DLL がネイティブ コードによって呼び出され、両方をデバッグする場合は、このプロジェクトのプロパティで指定できます。 詳細については、「[方法 :混合モードでデバッグ](../debugger/how-to-debug-in-mixed-mode.md)します。  
   
 > [!NOTE]
 >  Visual Studio の Express Edition では、外部の呼び出し元アプリケーションを指定できません。 代わりに、実行可能なプロジェクトをソリューションに追加することが必要です。次に、これをスタートアップ プロジェクトとして設定し、実行可能なプロジェクトから DLL のメソッドを呼び出します。  
@@ -46,7 +41,7 @@ DLL プロジェクトのデバッグを開始するには、プロジェクト�
   
 1.  プロジェクト ノードを右クリックし、**ソリューション エクスプ ローラー**選択**プロパティ**します。 移動して、**デバッグ**タブ。  
   
-2.  確認、**構成**にウィンドウの上部にあるフィールドが設定されている**デバッグ**します。  
+2.  ウィンドウの上部にある **[構成]** フィールドが **[デバッグ]** に設定されていることを確認します。  
   
 3.  移動して**構成プロパティ/デバッグ**します。  
   
@@ -54,7 +49,7 @@ DLL プロジェクトのデバッグを開始するには、プロジェクト�
   
 5.  **コマンド**または**リモート コマンド**ボックスで、アプリケーションの完全修飾パス名を追加します。  
   
-6.  必要なプログラム引数を追加、**コマンド引数**ボックス。  
+6.  **[コマンド引数]** ボックスに、任意の必要なプログラム引数を追加します。  
   
 ### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>C# または Visual Basic のプロジェクトで呼び出し元のアプリケーションを指定するには  
   
@@ -75,10 +70,7 @@ DLL プロジェクトのデバッグを開始するには、プロジェクト�
 2.  デバッグを開始 (f5 キーを押して、緑色の矢印をクリックしてまたはクリックして**デバッグ]/[デバッグの開始**)。  
   
 ## <a name="see-also"></a>関連項目  
- [DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)   
+ [DLL プロジェクトをデバッグする](../debugger/debugging-dll-projects.md)   
  [C# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-
-
-

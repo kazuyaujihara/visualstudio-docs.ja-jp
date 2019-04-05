@@ -1,14 +1,9 @@
 ---
 title: サポートされるコードの変更 (c#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1d028c35ea5d0f00dd8206fbfe0b086c9dbed067
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c464c63f7e5059e98cb12e4dfed06c60330160b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724664"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977692"
 ---
 # <a name="supported-code-changes-c"></a>サポートされているコード変更 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "51724664"
   
      アクティブ ステートメントには、現在のステートメントを取得するために呼び出される、呼び出し履歴上の関数内に存在するすべてのステートメントが含まれます。  
   
-     ソース ウィンドウ内では、現在のステートメントは黄色の背景で示されます。 その他のアクティブ ステートメント (読み取り専用) は、網かけの背景で示されます。 これらの既定の色を変更することができます、**オプション** ダイアログ ボックス。  
+     ソース ウィンドウ内では、現在のステートメントは黄色の背景で示されます。 その他のアクティブ ステートメント (読み取り専用) は、網かけの背景で示されます。 これらの既定の色は、**[オプション]** ダイアログ ボックスで変更できます。  
   
 -   型のシグネチャの変更  
   
@@ -52,7 +47,7 @@ ms.locfileid: "51724664"
 -   アクティブ ステートメントの周囲への `foreach`、`using`、または `lock` の追加。  
   
 ## <a name="unsafe-code"></a>アンセーフ コード  
- アンセーフ コードを変更する場合、セーフ コードを変更するときと同じ制限に加えて、もう 1 つ追加の制限が適用されます。エディット コンティニュでは、`stackalloc` 演算子を含むメソッド内に存在するアンセーフ コードへの変更はサポートしていません。  
+ アンセーフ コードを変更する場合、セーフ コードを変更するときと同じ制限に加えて、もう 1 つ追加の制限が適用されます。エディット コンティニュを含むメソッド内に存在するアンセーフ コードへの変更をサポートしません、`stackalloc`演算子。  
   
 ## <a name="exceptions"></a>例外  
  エディット コンティニュは、`catch` と `finally` ブロックへの変更をサポートしています。ただし、アクティブ ステートメントの周囲の `catch` または `finally` ブロックの追加は許可されていません。  
@@ -64,7 +59,7 @@ ms.locfileid: "51724664"
   
     -   以前にキャプチャされていない変数のキャプチャ。  
   
-    -   クエリ式の型の変更 (たとえば、select a => select new { A = a };)  
+    -   クエリ式の型を変更する (たとえば、a = を select > 新しい選択 {A = を};)  
   
     -   アクティブなステートメントを含む `where` の削除。  
   
@@ -91,8 +86,5 @@ ms.locfileid: "51724664"
 -   ビルド エラーによって新しいバージョンのビルドが失敗した後の旧バージョンのデバッグ  
   
 ## <a name="see-also"></a>関連項目  
- [エディット コンティニュ (Visual c#)](../debugger/edit-and-continue-visual-csharp.md)   
- [方法 : エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
-
-
-
+ [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [方法: エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

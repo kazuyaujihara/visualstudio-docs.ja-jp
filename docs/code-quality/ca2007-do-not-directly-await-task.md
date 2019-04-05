@@ -90,7 +90,7 @@ dotnet_code_quality.CA2007.skip_async_void_methods = true
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
 ```
 
-詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+詳細については、[構成 FxCop アナライザー](configure-fxcop-analyzers.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

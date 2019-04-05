@@ -1,14 +1,9 @@
 ---
 title: ClickOnce 配置で特定のエラーのトラブルシューティング |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: troubleshooting
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -24,13 +19,13 @@ ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d0b7e53eba21372641bad683c442e796648a4765
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213643"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973485"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 配置の固有のエラーのトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,9 +59,9 @@ ms.locfileid: "49213643"
   
  設定することも必要があります、コンテンツの種類 (MIME の種類とも呼ばれます) は、適切の .application、.manifest、および .deploy ファイル。 詳細については、Web サーバーのマニュアルを参照してください。  
   
- 詳細については、「Windows Server 2003:: ロックダウンされたコンテンツの種類」を参照してください[サーバーおよびクライアント構成の問題では、ClickOnce 配置](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)します。  
+ 詳細については、次を参照してください。"Windows Server 2003。ロックされたコンテンツの種類"[サーバーおよびクライアント構成の問題では、ClickOnce 配置](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)します。  
   
-#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>エラー メッセージ:「アプリケーションの形式が正しくありません」。ログ ファイルには、「XML 署名が無効です」が含まれています。  
+#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>エラー メッセージ「アプリケーションの形式が正しくありません」。ログ ファイルには、「XML 署名が無効です」が含まれています。  
  マニフェスト ファイルを更新して、再度署名されたことを確認してください。 使用して、アプリケーションを再発行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]または Mage を使用して、もう一度アプリケーションに署名します。  
   
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>サーバーで、アプリケーションの更新が、クライアントは、更新プログラムをダウンロードしていません。  
@@ -78,13 +73,13 @@ ms.locfileid: "49213643"
   
 -   [スタート] メニューにアプリケーションをもう一度起動してみてください。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] バック グラウンドで更新を検出した可能性がありますが、次回の起動時に、bits をインストールするように求められます。  
   
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>更新中に次のログ エントリを持つエラーが発生する:「デプロイメント内の参照は、アプリケーション マニフェストで定義されている id に一致しない」  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>更新中には、次のログ エントリがあるエラーが表示されます。「デプロイメント内の参照は、アプリケーション マニフェストで定義されている id に一致しない」  
  展開およびアプリケーション マニフェストでは、手動で編集し、両者を同期するように 1 つのマニフェストにアセンブリの id の説明が原因となったために、このエラーが発生する可能性があります。 アセンブリの id は、その名前、バージョン、カルチャ、および公開キー トークンで構成されます。 マニフェストの identity の説明を確認し、任意の相違点を修正します。  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>最初にローカル ディスクまたは CD-ROM からのアクティブ化は成功しますが、[スタート] メニューからの後続のアクティベーションが成功しなかった  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 配置プロバイダーの URL を使用して、アプリケーションの更新プログラムを受信します。 URL を指している場所が正しいことを確認します。  
   
-#### <a name="error-cannot-start-the-application"></a>エラー:「アプリケーションを起動できません」  
+#### <a name="error-cannot-start-the-application"></a>エラー :「アプリケーションを起動できません」  
  このエラー メッセージが通常にこのアプリケーションのインストールに問題があることを示して、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]を格納します。 アプリケーション エラーがあるか、ストアが破損しています。 ログ ファイルわかる場合がありますエラーが発生しました。  
   
  次の操作を行う必要があります。  
@@ -109,11 +104,11 @@ ms.locfileid: "49213643"
   
  URL を使用してパブリッシュする場合は、セットアップ先のコンピューターに有効になっている FrontPage Server Extensions を確認します。  
   
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>エラー メッセージ: Web サイトを作成できません。 '\<サイト >'。 FrontPage Server Extensions と通信するためのコンポーネントがインストールされていません。  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>エラー メッセージ:Web サイトを作成できません。 '\<サイト >'。 FrontPage Server Extensions と通信するためのコンポーネントがインストールされていません。  
  Microsoft Visual Studio Web Authoring コンポーネントから公開しているコンピューターにインストールされているがあることを確認します。 Express ユーザーは、このコンポーネントは、既定ではインストールされません。 詳細については、「[http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310)」を参照してください。  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>エラー メッセージ: ファイルが見つかりませんでした ' Microsoft.Windows.Common-コントロール、バージョン 6.0.0.0、カルチャを = = *、PublicKeyToken = 6595b64144ccf1df、ProcessorArchitecture =\*型 = win32'  
- Visual スタイルが有効になっている WPF アプリケーションを発行しようとしたときに、このエラー メッセージが表示されます。 この問題を解決するには、次を参照してください。[方法: Visual スタイルが有効な WPF アプリケーションを発行](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)します。  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>エラー メッセージ:ファイルが見つかりませんでした ' Microsoft.Windows.Common-コントロール、バージョン 6.0.0.0、カルチャを = = *、PublicKeyToken = 6595b64144ccf1df、ProcessorArchitecture =\*型 = win32'  
+ Visual スタイルが有効になっている WPF アプリケーションを発行しようとしたときに、このエラー メッセージが表示されます。 この問題を解決するには、次を参照してください。[方法。Visual スタイルが有効になっている WPF アプリケーションを発行](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)します。  
   
 ## <a name="using-mage"></a>Mage を使用します。  
   
@@ -134,7 +129,7 @@ ms.locfileid: "49213643"
 |-------------------|-----------------|  
 |アプリケーションを開始できません。 アプリケーションの発行元にお問い合わせください。<br /><br /> アプリケーションを起動することはできません。 について、アプリケーション ベンダーに問い合わせてください。|これらは、アプリケーションを起動することはできませんし、その他の特定の理由が見つからないときに発生する一般的なエラー メッセージです。 または、アプリケーションが何らかの理由で破損しているこの手段頻繁に、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]ストアが破損しています。|  
 |続行できません。 アプリケーションは形式が正しくありません。 については、アプリケーションの発行元にお問い合わせください。<br /><br /> アプリケーションの検証は成功しませんでした。 続行できません。<br /><br /> アプリケーション ファイルを取得できません。 展開では、ファイルが壊れています。|展開内のマニフェスト ファイルの 1 つは構文が無効ですが、または対応するファイルと一致することはできませんが、ハッシュが含まれています。 このエラーは、アセンブリに埋め込まれたマニフェストが破損していることもある可能性があります。 配置を再作成し、アプリケーションを再コンパイルまたは検索し、マニフェストに手動でのエラーを修正します。|  
-|アプリケーションを取得することはできません。 認証エラー。<br /><br /> アプリケーションのインストールは成功しませんでした。 サーバー上のアプリケーション ファイルを見つけることはできません。 についてアプリケーションの発行元または管理者に問い合わせてください。|展開内の 1 つまたは複数のファイルは、それらにアクセスする権限があるないために、ダウンロードできません。 拡張子が保護されたファイルとして扱う Web サーバーは、配置内のファイルのいずれかが終了した場合に発生する可能性があります Web サーバーによって返される 403 Forbidden エラーの可能性があります。 また、1 つまたは複数のアプリケーションのファイルを格納するディレクトリを必要がありますユーザー名とパスワードにアクセスするためにします。|  
+|アプリケーションを取得することはできません。 認証エラーです。<br /><br /> アプリケーションのインストールは成功しませんでした。 サーバー上のアプリケーション ファイルを見つけることはできません。 についてアプリケーションの発行元または管理者に問い合わせてください。|展開内の 1 つまたは複数のファイルは、それらにアクセスする権限があるないために、ダウンロードできません。 拡張子が保護されたファイルとして扱う Web サーバーは、配置内のファイルのいずれかが終了した場合に発生する可能性があります Web サーバーによって返される 403 Forbidden エラーの可能性があります。 また、1 つまたは複数のアプリケーションのファイルを格納するディレクトリを必要がありますユーザー名とパスワードにアクセスするためにします。|  
 |アプリケーションをダウンロードすることはできません。 アプリケーションには、必要なファイルがありません。 について、アプリケーション ベンダーまたはシステム管理者に問い合わせてください。|1 つ以上のアプリケーション マニフェストに示されているファイルがサーバー上に見つかりません。 配置のすべての依存ファイルをアップロードし、もう一度お試しことを確認します。|  
 |アプリケーションのダウンロードは成功しませんでした。 ネットワーク接続を確認するか、システム管理者またはネットワーク サービス プロバイダーにお問い合わせください。|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] サーバーへのネットワーク接続を確立することはできません。 サーバーの可用性とネットワークの状態を確認します。|  
 |URLDownloadToCacheFile HRESULT により失敗しました '\<数 >'。 ダウンロードしようとしてエラーが発生しました '\<ファイル >'。|"ユーザーが Internet Explorer の高度なセキュリティ オプション セキュリティで保護された間を変更する場合は、警告と設定モードをセキュリティで保護"展開対象のコンピューターにし、保護されていないからセキュリティで保護されたサイトにインストールされる ClickOnce アプリケーションのセットアップの URL がリダイレクトされる場合 (または逆に)、Internet Explorer の警告が発生してそのため、インストールは失敗します。<br /><br /> これを解決するには、次のいずれかの操作を行います。<br /><br /> -セキュリティ オプションをオフにします。<br />-セットアップ URL がセキュリティ モードを変更するようにリダイレクトされないことを確認します。<br />リダイレクトを完全に削除し、実際のセットアップの URL をポイントします。|  
@@ -147,6 +142,3 @@ ms.locfileid: "49213643"
 ## <a name="see-also"></a>関連項目  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)
-
-
-

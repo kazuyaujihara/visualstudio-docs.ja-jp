@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: ed0728eb0daa5c1ff0f322db42f66373181f3e23
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49184718"
@@ -26,7 +26,7 @@ ms.locfileid: "49184718"
 
 Microsoft 基本デザイン ガイドライン規則ルールのセット、コードを簡単に理解して使用することを目的に使用できます。 この規則セットは、プロジェクトにライブラリ コードが含まれている場合、またはコードが簡単に維持するためのベスト プラクティスを適用する場合を含める必要があります。  
   
- 基本のデザイン ガイドライン規則には、Microsoft 最小推奨規則のルール セット内のすべての規則が含まれます。 最小の規則の一覧は、次を参照してください。[マネージ推奨規則ルールセットのマネージ コードの](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)します。  
+ 基本のデザイン ガイドライン規則には、Microsoft 最小推奨規則のルール セット内のすべての規則が含まれます。 最小の規則の一覧は、[マネージ推奨規則ルールセットのマネージ コードの](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)を参照してください。  
   
  次の表では、すべての Microsoft 基本デザイン ガイドライン規則のルール セット内の規則について説明します。  
   

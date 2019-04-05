@@ -1,14 +1,9 @@
 ---
 title: 開くと、プロジェクト項目の保存 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], file persistence
 - files [Visual Studio], opening and saving
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 043b8545c583295fd11c04329b305e125c3efbac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726718"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973082"
 ---
 # <a name="opening-and-saving-project-items"></a>プロジェクト項目のオープンと保存
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,13 +31,13 @@ ms.locfileid: "51726718"
  [プログラムから開くコマンドを使用したファイルの表示](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
  IDE を処理する方法の詳細な手順を説明します、**プログラムから開く**コマンド、標準のエディターのいくつかの選択肢を含むファイルを開くを確認します。  
   
- [方法: プロジェクト固有のエディターを開く](../../extensibility/how-to-open-project-specific-editors.md)  
+ [方法: 開いているプロジェクト固有のエディター](../../extensibility/how-to-open-project-specific-editors.md)  
  プロジェクトに固有のエディターを使用して、プロジェクト内の特定の種類のファイルが開かれることを指定するための手順について説明します。  
   
  [方法: 標準のエディターを開く](../../extensibility/how-to-open-standard-editors.md)  
  プロジェクトの種類のファイルの標準のエディターを開く IDE を有効にする方法を指定するための手順について説明します。  
   
- [方法: 開いているドキュメントのエディターを開く](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ [方法: 開いているエディターを開いているドキュメントの](../../extensibility/how-to-open-editors-for-open-documents.md)  
  開いているファイルのプロジェクトに固有のエディターを開く手順について説明します。  
   
  [標準ドキュメントの保存](../../extensibility/internals/saving-a-standard-document.md)  
@@ -60,4 +55,3 @@ ms.locfileid: "51726718"
   
  [プロジェクト タイプ](../../extensibility/internals/project-types.md)  
  プロジェクトでコードをコンパイルおよびビルドする方法を制御する方法、エディターを開く方法、およびプロジェクト アイテムの書式設定方法について説明します。
-

@@ -29,7 +29,7 @@ Windows インストーラー パッケージ (MSI) を使用して、VSIX パ�
 
 2.  VSIX マニフェスト、コード エディターで開きます。
 
-3.  設定、 `InstalledByMsi` VSIX マニフェストの要素`true`します。 VSIX マニフェストの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)します。
+3.  設定、 `InstalledByMsi` VSIX マニフェストの要素`true`します。 VSIX マニフェストの詳細については、[VSIX 拡張機能スキーマ 2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)を参照してください。
 
      これは、VSIX インストーラーが、コンポーネントをインストールしようとすることを防ぎます。
 

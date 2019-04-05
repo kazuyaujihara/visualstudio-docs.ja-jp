@@ -1,25 +1,22 @@
 ---
 title: モデリング図にメニュー コマンドを定義 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809104"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962544"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>モデリング図にメニュー コマンドを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,7 +220,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開始します。  
 
-     **トラブルシューティング**: 新しい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が起動しない場合:  
+     **トラブルシューティング**:場合、新しい[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]は開始されません。  
 
     -   複数のプロジェクトがある場合は、VSIX プロジェクトがソリューションのスタートアップ プロジェクトとして設定されていることを確認してください。  
 
@@ -235,7 +232,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3.  図の任意の場所でショートカット メニューを開きます。 コマンドがメニューに表示されます。  
 
-     **トラブルシューティング**: コマンドがメニューに表示されない場合は、次の点について確認してください。  
+     **トラブルシューティング**:場合は、メニュー コマンドが表示されないことを確認します。  
 
     -   メニュー コマンド プロジェクトは、VSIX プロジェクトの **source.extensions.manifest** の **[アセット]** タブに MEF コンポーネントとして表示される。  
 
@@ -276,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、以下の場所からファイルを削除して、拡張機能を削除します。  
 
-   *%Localappdata%* **\Local\Microsoft\VisualStudio\\[バージョン] \Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
 
 ##  <a name="MenuExample"></a> 「例」  
  クラス図の 2 つの要素の名前を入れ替えるメニュー コマンドのコードを次の例に示します。 このコードは、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能プロジェクト内でビルドし、前のセクションで説明した手順に従ってインストールする必要があります。  
@@ -375,7 +372,4 @@ namespace SwapClassNames
  [UML モデルの検証制約を定義します。](../modeling/define-validation-constraints-for-uml-models.md)   
  [UML API を使用して UML シーケンス図を編集します。](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
  [UML API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)   
- [UML 図で図形を整理するコマンドの例:](http://go.microsoft.com/fwlink/?LinkID=213809)
-
-
-
+ [サンプル: UML 図で図形を整理するコマンド](http://go.microsoft.com/fwlink/?LinkID=213809)

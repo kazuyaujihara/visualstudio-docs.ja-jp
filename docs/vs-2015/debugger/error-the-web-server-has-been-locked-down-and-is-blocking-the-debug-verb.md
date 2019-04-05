@@ -1,14 +1,9 @@
 ---
-title: 'エラー: Web サーバーはロックダウンされているし、DEBUG 動詞をブロックして |Microsoft Docs'
-ms.custom: ''
+title: エラー :Web サーバーがロックダウンされているし、DEBUG の動詞をブロックして |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 9c8c4812-17db-484d-9c1b-ffd9e3bfef5a
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60fffd146516bca57497bfdaaabe0f51407063b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64527c784cf61c02ad3031e9ba922ebf707e7e6f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973736"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>エラー ： Web サーバーが制限され、デバッグの有効化に必要な DEBUG 動詞をブロックしています。
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>エラー : Web サーバーが制限され、デバッグの有効化に必要な DEBUG 動詞をブロックしています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 IIS Lockdown ツールが実行され、URLScan がインストールされてアクティブになっているため、Web アプリケーションまたは XML Web サービスのステップ インに失敗しました。 この条件によって、IIS は DEBUG の動詞を受け取ることができません。  
@@ -45,7 +40,7 @@ IIS Lockdown ツールが実行され、URLScan がインストールされて�
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  ファイルのコピーを作成し、名前**Urlscan.old**します。  
+2.  このファイルのコピーを作成し、**Urlscan.old** という名前を付けます。  
   
 3.  メモ帳または任意のテキスト エディターを使って、元の Urlscan.ini ファイルを開きます。  
   
@@ -58,8 +53,5 @@ IIS Lockdown ツールが実行され、URLScan がインストールされて�
 7.  サーバーまたは IIS を再起動します。  
   
 ## <a name="see-also"></a>関連項目  
- [Web アプリケーションのデバッグ: エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [エラー : Web サーバーでは要求されたリソースを見つけられませんでした](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
-
-
-
+ [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [エラー: Web サーバーでは要求されたリソースを見つけられませんでした](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

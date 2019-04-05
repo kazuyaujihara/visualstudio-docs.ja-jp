@@ -57,7 +57,7 @@ ms.locfileid: "56638609"
 
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 用の Office 拡張機能は、Office と共にインストールされます。 エンド ユーザーは、Windows Update をインストールすることで [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 用の Office 拡張機能を取得できます。
 
- ユーザーは、アプリケーションを使用するために必要な拡張機能であることを確認するには、するには、Visual Studio 2010 Tools for Office ランタイムが、ソリューションの前提条件として再頒布可能パッケージの最新バージョンを含めます。 前提条件の詳細については、次を参照してください。[展開 Office ソリューションの前提条件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)します。
+ ユーザーは、アプリケーションを使用するために必要な拡張機能であることを確認するには、するには、Visual Studio 2010 Tools for Office ランタイムが、ソリューションの前提条件として再頒布可能パッケージの最新バージョンを含めます。 前提条件の詳細については、[展開 Office ソリューションの前提条件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)を参照してください。
 
 ### <a name="install-the-runtime-by-using-the-runtime-redistributable"></a>再頒布可能パッケージのランタイムを使用して、ランタイムをインストールします。
  または、Office ソリューションを展開するときに、前提条件として再頒布可能パッケージを含めることによって、Visual Studio 2010 Tools for Office ランタイム再頒布可能パッケージを手動で実行してランタイムをインストールすることができます。

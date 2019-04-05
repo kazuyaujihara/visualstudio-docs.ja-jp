@@ -54,7 +54,7 @@ ms.locfileid: "56601129"
 
  SharePoint では、ユーザー コントロールを含むアプリケーション ページを開きます。 ユーザー コントロールが Web パーツに含まれる場合は、sharepoint Web パーツ ページに Web パーツを追加します。
 
- SharePoint プロジェクトのデバッグの詳細については、次を参照してください。[のトラブルシューティングを行う SharePoint ソリューション](../sharepoint/troubleshooting-sharepoint-solutions.md)します。
+ SharePoint プロジェクトのデバッグの詳細については、[のトラブルシューティングを行う SharePoint ソリューション](../sharepoint/troubleshooting-sharepoint-solutions.md)を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 

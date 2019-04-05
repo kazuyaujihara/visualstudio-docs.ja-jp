@@ -36,4 +36,4 @@ ms.locfileid: "56614910"
 
 - コマンドを無視します。 現在のフィルター処理しないと、次のフィルターに渡されません。
 
-  言語サービスを処理するコマンドの詳細については、次を参照してください。[言語サービス フィルターの重要なコマンド](../../extensibility/internals/important-commands-for-language-service-filters.md)します。
+  言語サービスを処理するコマンドの詳細については、[言語サービス フィルターの重要なコマンド](../../extensibility/internals/important-commands-for-language-service-filters.md)を参照してください。

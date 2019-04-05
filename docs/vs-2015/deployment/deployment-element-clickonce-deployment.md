@@ -1,14 +1,9 @@
 ---
 title: '&lt;deployment&gt;要素 (ClickOnce 配置) |Microsoft ドキュメント'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
 - urn:schemas-microsoft-com:asm.v2#beforeApplicationStartup
@@ -26,13 +21,13 @@ ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a55b5519d5abb7b40aeca23fed1bc2f8ea2cc33d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231545"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962614"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;deployment&gt;要素 (ClickOnce 配置)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,25 +38,25 @@ ms.locfileid: "49231545"
   
 ```  
   
-      <deployment   
+      <deployment   
    install  
    minimumRequiredVersion  
    mapFileExtensions  
    disallowUrlActivation  
    trustUrlParameters  
->   
-   <subscription>   
-         <update>   
-            <beforeApplicationStartup/>   
+>   
+   <subscription>   
+         <update>   
+            <beforeApplicationStartup/>   
             <expiration  
                maximumAge  
                unit  
             />  
-         </update>    
-   </subscription>   
-   <deploymentProvider   
-      codebase   
-   />   
+         </update>    
+   </subscription>   
+   <deploymentProvider   
+      codebase   
+   />   
 </deployment>  
 ```  
   
@@ -74,7 +69,7 @@ ms.locfileid: "49231545"
 |`minimumRequiredVersion`|任意。 このクライアントで実行できるアプリケーションの最小バージョンを指定します。 アプリケーションのバージョン番号が、配置マニフェストで指定されたバージョン番号よりも小さい場合は、アプリケーションは実行されません。 形式でバージョン番号を指定する必要があります`N.N.N.N`ここで、`N`は符号なし整数です。 場合、`install`属性が`false`、`minimumRequiredVersion`設定する必要があります。|  
 |`mapFileExtensions`|任意。 既定値は `false` です。 場合`true`展開内のすべてのファイルが .deploy 拡張子をいる必要があります。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] これらのファイルを Web サーバーからそれらをダウンロードするとすぐにこの拡張機能がストリップされます。 使用してアプリケーションを発行する場合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、すべてのファイルに自動的にこの拡張機能を追加します。 このパラメーターにより、すべてのファイルを[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]「アンセーフ」拡張子 .exe などで終わるファイルの転送をブロックする Web サーバーからダウンロードして展開します。|  
 |`disallowUrlActivation`|任意。 既定値は `false` です。 場合`true`、により、インストールされているアプリケーションから開始して、URL をクリックするか、Internet Explorer に URL を入力します。 場合、`install`属性が存在しない場合、この属性は無視されます。|  
-|`trustURLParameters`|任意。 既定値は `false` です。 場合`true`、により、アプリケーションに渡されるクエリ文字列パラメーターを格納する URL、コマンド ライン アプリケーションに渡された量などのコマンドライン引数。 詳細については、次を参照してください。[方法: オンライン ClickOnce アプリケーションでのクエリ文字列情報の取得](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)します。<br /><br /> 場合、`disallowUrlActivation`属性が`true`、`trustUrlParameters`か必要がありますが、マニフェストから除外明示的に設定`false`します。|  
+|`trustURLParameters`|任意。 既定値は `false` です。 場合`true`、により、アプリケーションに渡されるクエリ文字列パラメーターを格納する URL、コマンド ライン アプリケーションに渡された量などのコマンドライン引数。 詳細については、「[方法 :オンライン ClickOnce アプリケーションでクエリ文字列の情報を取得する](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)」を参照してください。<br /><br /> 場合、`disallowUrlActivation`属性が`true`、`trustUrlParameters`か必要がありますが、マニフェストから除外明示的に設定`false`します。|  
   
  `deployment`要素には、次の子要素も含まれています。  
   
@@ -131,6 +126,3 @@ ms.locfileid: "49231545"
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce 配置マニフェス](../deployment/clickonce-deployment-manifest.md)
-
-
-

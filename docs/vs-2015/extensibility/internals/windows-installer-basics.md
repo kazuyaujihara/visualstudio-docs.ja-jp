@@ -1,34 +1,29 @@
 ---
 title: Windows インストーラーの基本事項 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b3756f8e9c8b22b9e6a7da52e076364024fe49d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747651"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002591"
 ---
 # <a name="windows-installer-basics"></a>Windows インストーラーの基本事項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Windows インストーラーは、Windows インストーラーのコンポーネント (WICs または単なるコンポーネントとも呼ばれます) と呼ばれる単位でこれらのタスクを実行するアプリケーションやユーザーのコンピューター上のソフトウェア製品をアンインストールします。 各 WIC では、インストールと参照カウントの Windows インストーラーを使用してセットアップの基本的な単位を識別する GUID。  
   
- Windows インストーラーの包括的なドキュメントについては、プラットフォーム SDK のトピックを参照してください。 [Windows インストーラー](http://msdn.microsoft.com/library/aa372866.aspx)します。  
+ Windows インストーラーの包括的なドキュメントについては、プラットフォーム SDK のトピックを参照してください。 [Windows インストーラー](/previous-versions/2kt85ked(v=vs.120))します。  
   
 ## <a name="authoring-a-vspackage"></a>VSPackage の作成  
  Windows インストーラーは、Windows インストーラーは、インストール、アンインストール、または製品を修復し、セットアップ ユーザー インターフェイス (UI) を実行する必要がある情報が含まれるインストール パッケージを使用します。 各インストール パッケージには、インストール データベース、概要情報ストリーム、およびインストールのさまざまな部分のデータ ストリームを含む .msi ファイルが含まれています。 インストーラーを使用するには、インストールを作成する必要があります。 インストーラーでは、コンポーネントの概念にインストールを整理し、リレーショナル データベースのインストールに関する情報を格納、ため広範インストール パッケージを作成するプロセスには、次の手順が必要です。  
@@ -80,4 +75,3 @@ Windows インストーラーは、Windows インストーラーのコンポー�
   
 ## <a name="see-also"></a>関連項目  
  [コンポーネントのルールが破損するいるとどうなりますか。](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
-

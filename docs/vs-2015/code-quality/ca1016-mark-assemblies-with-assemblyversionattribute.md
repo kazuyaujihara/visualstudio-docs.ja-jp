@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1016: マーク アセンブリに assemblyversionattribute を設定します |Microsoft Docs'
-ms.custom: ''
+title: CA1016:アセンブリに assemblyversionattribute を設定します |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkAssembliesWithAssemblyVersion
 - CA1016
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cb3cb13484d427bb5389a0ec89573231376efdf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fbe2ef81dbb1dd5be15b6a0ac4b8cc1df96206a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811142"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964045"
 ---
-# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: アセンブリに AssemblyVersionAttribute を設定します
+# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016:アセンブリに AssemblyVersionAttribute を設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -47,7 +42,7 @@ ms.locfileid: "49811142"
 
 - バージョン番号
 
-- culture
+- カルチャ
 
 - (厳密な名前付きアセンブリの場合) の公開キー。
 
@@ -67,7 +62,4 @@ ms.locfileid: "49811142"
  [!code-vb[FxCop.Design.AssembliesVersion#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/vb/FxCop.Design.AssembliesVersion.vb#1)]
 
 ## <a name="see-also"></a>関連項目
- [アセンブリのバージョン管理](http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903)[方法: 発行者ポリシーを作成](http://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)
-
-
-
+ [アセンブリのバージョン管理](http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903)[方法。発行者ポリシーを作成します。](http://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)

@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ceed13cc320e2c98d413e6694acb2b473ad72eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780276"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355371"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio の起動時間の最適化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Visual Studio は常に、可能な限り迅速に起動することが理想的
 
 ## <a name="control-startup-behavior"></a>起動の動作の制御
 
-起動時間が長くならないように、Visual Studio 2017 は、要求に応じて読み込む方法を使用して、起動時に拡張機能が読み込まれないようにします。 これは、Visual Studio の起動後すぐに拡張機能を開くのではなく、起動後、必要に応じて非同期に開くことを意味します。 また、前の Visual Studio セッションでツール ウィンドウが開いたままである場合、スタートアップ時間が長くなる可能性があるため、Visual Studio は起動時間に影響しないようにより合理的な方法でツール ウィンドウを開きます。
+Visual Studio 2017 の起動時間が長くならないようにし、後で、要求に応じた-読み込みのアプローチを使用して、起動時に拡張機能の読み込みを回避します。 これは、Visual Studio の起動後すぐに拡張機能を開くのではなく、起動後、必要に応じて非同期に開くことを意味します。 また、前の Visual Studio セッションでツール ウィンドウが開いたままである場合、スタートアップ時間が長くなる可能性があるため、Visual Studio は起動時間に影響しないようにより合理的な方法でツール ウィンドウを開きます。
 
 Visual Studio で起動の遅延が検出されると、ポップアップ メッセージが表示され、拡張機能またはツール ウィンドウが原因で遅延が発生していることを警告します。 メッセージには **[Visual Studio のパフォーマンスの管理]** ダイアログ ボックスへのリンクも示されます。ダイアログ ボックスには、起動のパフォーマンスに影響している拡張機能とツール ウィンドウがリストされます。 このダイアログ ボックスでは、起動時のパフォーマンスを向上させるために拡張機能とツール ウィンドウの設定を変更することができます。
 

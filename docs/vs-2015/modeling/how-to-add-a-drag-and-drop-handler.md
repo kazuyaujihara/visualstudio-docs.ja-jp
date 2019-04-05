@@ -1,23 +1,20 @@
 ---
 title: '方法: ドラッグ アンド ドロップ ハンドラーを追加する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 39ee88a0-85c3-485e-8c0a-d9644c6b25d9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 47a5cab022da3d6cfc048191de116af3165401cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848983"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974443"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>方法: ドラッグ アンド ドロップ ハンドラーを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +35,7 @@ ms.locfileid: "49848983"
   
 -   [元を取得する方法は、項目をドラッグ](#getOriginal)します。 ドラッグした項目が DSL 要素の場合、ソース モデルを開き、その要素にアクセスできます。  
   
--   [マウス アクションの使用: コンパートメント項目のドラッグ](#mouseActions)します。 このサンプルは図形のフィールド上でマウス アクションを受け取る下位ハンドラーを示しています。 この例でユーザーはマウスを使用してドラッグすることで、コンパートメント内の項目を並べ替えることができます。  
+-   [マウス アクションの使用。コンパートメント項目のドラッグ](#mouseActions)します。 このサンプルは図形のフィールド上でマウス アクションを受け取る下位ハンドラーを示しています。 この例でユーザーはマウスを使用してドラッグすることで、コンパートメント内の項目を並べ替えることができます。  
   
 ##  <a name="overrideShapeElement"></a> ShapeElement メソッドのオーバーライドによるジェスチャ ハンドラーの定義  
  新しいコード ファイルを DSL プロジェクトに追加します。 ジェスチャ ハンドラーに対して、通常、少なくとも次の `using` ステートメントを含める必要があります。  
@@ -87,7 +84,7 @@ using System.Linq;
   
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – このメソッドは、ユーザーが図形または図をダブルクリックすると呼び出されます。  
   
-   詳細については、次を参照してください。[方法: シェイプまたはデコレーターに対するクリック](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)します。  
+   詳細については、「[方法 :シェイプまたはデコレーターに対するクリック](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)します。  
   
   `IsAcceptableDropItem(e)` を定義してドラッグした項目が受け入れられるかどうかを決定し、ProcessDragDropItem(e) を定義して項目がドロップされたときにモデルを更新します。 これらのメソッドは、最初にイベント引数から項目を抽出する必要があります。 その方法については、次を参照してください。[ドラッグした項目への参照を取得する方法](#extracting)します。  
   
@@ -173,7 +170,7 @@ using System.Linq;
   
 1.  以下の操作を実行して、ソース DSL が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] モデル バスによりアクセス可能にします。  
   
-    1.  Visual Studio モデル バス拡張機能をまだインストールしていない場合はダウンロードしてインストールします。 詳細については、次を参照してください。 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)します。  
+    1.  Visual Studio モデル バス拡張機能をまだインストールしていない場合はダウンロードしてインストールします。 詳細については、[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)を参照してください。  
   
     2.  DSL デザイナーでソース DSL の DSL 定義ファイルを開きます。 デザイン サーフェイスを右クリックし、をクリックし、 **Modelbus の有効化**します。 ダイアログ ボックスで、オプションの片方または両方を選択します。  **[OK]** をクリックします。 新しいプロジェクト "ModelBus" が DSL ソリューションに追加されます。  
   
@@ -339,7 +336,7 @@ using System.Linq;
   
     ```  
   
-##  <a name="mouseActions"></a> マウス アクションの使用: コンパートメント項目のドラッグ  
+##  <a name="mouseActions"></a> マウス アクションの使用。コンパートメント項目のドラッグ  
  図形のフィールドでマウス アクションを受け取るハンドラーを作成できます。 次の例でユーザーはマウスを使用してドラッグすることで、コンパートメント内の項目を並べ替えることができます。  
   
  この例を作成するを使用して、ソリューションを作成、**クラス ダイアグラム**ソリューション テンプレート。 コード ファイルを追加し、次のコードを追加します。 名前空間を調整して独自の名前空間と同じにします。  
@@ -593,6 +590,3 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>関連項目  
  [コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)   
  [ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)
-
-
-

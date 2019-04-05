@@ -1,14 +1,9 @@
 ---
 title: 'チュートリアル: ClickOnce アプリケーションを手動で展開する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,15 +20,15 @@ ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
 caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 4e8874324c5e5cbfb5bc42e5c6c23666b5e14b67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b9086edb3dd70946bb988bda7b933b010c045da3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236172"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972249"
 ---
-# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>チュートリアル : ClickOnce アプリケーションを手動で配置する
+# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションを手動で展開します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio を使用してデプロイすることはできませんがある場合、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション、または高度な展開の機能を使用する必要があります。 信頼されたアプリケーションの配置などを作成するコマンド ライン ツール Mage.exe を使用する必要があります、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]マニフェスト。 このチュートリアルを作成する方法について説明する[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]コマンド ライン バージョン (Mage.exe) またはマニフェストの生成および編集ツールのグラフィカル バージョン (MageUI.exe) を使用して展開します。  
@@ -51,7 +46,7 @@ Visual Studio を使用してデプロイすることはできませんがある
   
 -   展開の分散方法を決定します。  
   
-     分布オプションを含める: Web、ファイル共有、または CD。 詳細については、「 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)」を参照してください。  
+     ディストリビューション オプションは次のとおりです。Web、ファイル共有、または CD。 詳細については、「 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)」を参照してください。  
   
 -   アプリケーションに管理者特権でのレベルの信頼が必要かどうかを決定します。  
   
@@ -216,6 +211,3 @@ Visual Studio を使用してデプロイすることはできませんがある
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

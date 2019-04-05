@@ -1,21 +1,17 @@
 ---
 title: コードへのマニフェスト |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758221"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976248"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,22 +29,22 @@ ms.locfileid: "51758221"
 |-|-|-|  
 |**スイッチ名**|**ノート**|**必須またはオプション**|  
 |/manifest|作成または更新コード ラッパーを使用するイメージ マニフェストへのパス。|必須|  
-|/language|コードのラッパーを生成する言語。<br /><br /> 有効な値: 値は大文字、CPP、C++、CS、CSharp、c#、VB、または VSCT します。<br /><br /> VSCT 言語のオプション、/monikerClass、/classAccess、および/namespace オプションは無視されます。|必須|  
-|/imageIdClass|ImageIdClass と、ツールによって作成された関連付けられているファイルの名前。 C++ 言語のオプションでのみである .h ファイルが生成されます。<br /><br /> 既定値:\<マニフェスト パス > \MyImageIds\< 。Lang Ext >|Optional|  
-|/monikerClass|MonikerClass と、ツールによって作成された関連付けられているファイルの名前。 C++ 言語のオプションでのみである .h ファイルが生成されます。 VSCT 言語これは無視されます。<br /><br /> 既定値:\<マニフェスト パス > \MyMonikers\< 。Lang Ext >|Optional|  
-|/classAccess|ImageIdClass、および、monikerClass アクセス修飾子。 アクセス修飾子が指定された言語の有効なことを確認します。 これは、VSCT language オプションは無視されます。<br /><br /> 既定: パブリック|Optional|  
-|/namespace|コードのラッパーで定義されている名前空間。 これは、VSCT language オプションは無視されます。 いずれか '.' または ':: ' は、選択した言語のオプションに関係なく、有効な名前空間の区切り記号。<br /><br /> 既定: MyImages|Optional|  
+|/language|コードのラッパーを生成する言語。<br /><br /> 有効な値:CPP、C++、CS、CSharp、c#、VB、または VSCT 値が区別されます。<br /><br /> VSCT 言語のオプション、/monikerClass、/classAccess、および/namespace オプションは無視されます。|必須|  
+|/imageIdClass|ImageIdClass と、ツールによって作成された関連付けられているファイルの名前。 C++ 言語のオプションでのみである .h ファイルが生成されます。<br /><br /> 既定:\<マニフェスト パス > \MyImageIds します。\<Lang Ext >|Optional|  
+|/monikerClass|MonikerClass と、ツールによって作成された関連付けられているファイルの名前。 C++ 言語のオプションでのみである .h ファイルが生成されます。 VSCT 言語これは無視されます。<br /><br /> 既定:\<マニフェスト パス > \MyMonikers します。\<Lang Ext >|Optional|  
+|/classAccess|ImageIdClass、および、monikerClass アクセス修飾子。 アクセス修飾子が指定された言語の有効なことを確認します。 これは、VSCT language オプションは無視されます。<br /><br /> 既定:Public|Optional|  
+|/namespace|コードのラッパーで定義されている名前空間。 これは、VSCT language オプションは無視されます。 いずれか '.' または ':: ' は、選択した言語のオプションに関係なく、有効な名前空間の区切り記号。<br /><br /> 既定:MyImages|Optional|  
 |/noLogo|このフラグを設定すると、印刷から製品および著作権情報が停止します。|Optional|  
 |/?|ヘルプ情報を出力します。|Optional|  
 |/help|ヘルプ情報を出力します。|Optional|  
   
  **例**  
   
--   ManifestToCode/manifest:D:\MyManifest.imagemanifest/language:CSharp  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   ManifestToCode/manifest:D:\MyManifest.imagemanifest/language:C++/namespace: :: Namespace/imageIdClass:MyImageIds/monikerClass:MyMonikers/classAccess:friend  
   
--   ManifestToCode/manifest:D:\MyManifest.imagemanifest/language:VSCT/imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>メモ  
   
@@ -236,4 +232,3 @@ End Namespace
   </Symbols>  
 </CommandTable>  
 ```
-

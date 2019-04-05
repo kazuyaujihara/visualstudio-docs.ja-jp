@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49860306"
@@ -119,7 +119,7 @@ ms.locfileid: "49860306"
 ## <a name="xml-editor-integration"></a>XML エディターとの統合  
  コンテキスト メニューを使用することで、XSD デザイナーと XML エディターを切り替えることができます。  
   
- XML エディターでスキーマ セットを変更すると、コンテンツ モデル ビューにもその変更が同期されます。 詳細については、次を参照してください。 [XML エディターとの統合](../xml-tools/integration-with-xml-editor.md)します。  
+ XML エディターでスキーマ セットを変更すると、コンテンツ モデル ビューにもその変更が同期されます。 詳細については、[XML エディターとの統合](../xml-tools/integration-with-xml-editor.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)

@@ -22,8 +22,8 @@ ms.locfileid: "58069607"
 
 |メソッド|利点|
 |-|-|
-|VSX (Visual Studio 拡張機能)|非常に簡単にデプロイします。コピーを実行、 **.vsix** DslPackage プロジェクトからのファイル。<br /><br /> 詳細については、次を参照してください。[をインストールすると、VSX を使用して DSL をアンインストール](#Installing)します。|
-|MSI (インストーラー ファイル)|-DSL のファイルをダブルクリックして Visual Studio を開くことを許可します。<br />-対象のコンピューターで DSL のファイルの種類のアイコンに関連付けます。<br />-DSL のファイルの種類 XSD (XML スキーマ) に関連付けます。 これにより、ファイルが Visual Studio に読み込まれると、警告を回避できます。<br /><br /> MSI を作成するソリューションには、セットアップ プロジェクトを追加する必要があります。<br /><br /> 詳細については、次を参照してください。 [MSI ファイルを使用して DSL を展開する](#msi)します。|
+|VSX (Visual Studio 拡張機能)|非常に簡単にデプロイします。コピーを実行、 **.vsix** DslPackage プロジェクトからのファイル。<br /><br /> 詳細については、[をインストールすると、VSX を使用して DSL をアンインストール](#Installing)を参照してください。|
+|MSI (インストーラー ファイル)|-DSL のファイルをダブルクリックして Visual Studio を開くことを許可します。<br />-対象のコンピューターで DSL のファイルの種類のアイコンに関連付けます。<br />-DSL のファイルの種類 XSD (XML スキーマ) に関連付けます。 これにより、ファイルが Visual Studio に読み込まれると、警告を回避できます。<br /><br /> MSI を作成するソリューションには、セットアップ プロジェクトを追加する必要があります。<br /><br /> 詳細については、[MSI ファイルを使用して DSL を展開する](#msi)を参照してください。|
 
 ## <a name="Installing"></a> インストールし、VSX を使用して DSL をアンインストールします。
 
@@ -39,7 +39,7 @@ ms.locfileid: "58069607"
 
 2. コピー、 **.vsix**ファイルを DSL をインストールするターゲット コンピューターにします。 自分のコンピューターでも別のコンピューターでもかまいません。
 
-   - ターゲット コンピューターには、各エディションのいずれかが必要[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]実行時に Dsl をサポートします。 詳細については、次を参照してください。[視覚化 & Modeling SDK for Visual Studio のエディションをサポートされている](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)します。
+   - ターゲット コンピューターには、各エディションのいずれかが必要[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]実行時に Dsl をサポートします。 詳細については、[視覚化 & Modeling SDK for Visual Studio のエディションをサポートされている](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)を参照してください。
 
    - ターゲット コンピューターで指定された Visual Studio のエディションのいずれかが必要**DslPackage\source.extensions.manifest**します。
 
@@ -66,7 +66,7 @@ ms.locfileid: "58069607"
 ## <a name="msi"></a> DSL の MSI を展開します。
  DSL の MSI (Windows インストーラー) ファイルを定義すると、ユーザーが Windows エクスプ ローラーから DSL のファイルを開くことができます。 アイコンと簡単な説明も、ファイル名拡張子を関連付けることができます。 さらに、MSI は、DSL のファイルの検証に使用できる XSD をインストールできます。 する場合は、同時にインストールされる MSI にその他のコンポーネントを追加できます。
 
- MSI ファイルとその他のデプロイ オプションの詳細については、次を参照してください。[アプリケーションの配置、サービス、およびコンポーネント](../deployment/deploying-applications-services-and-components.md)します。
+ MSI ファイルとその他のデプロイ オプションの詳細については、[アプリケーションの配置、サービス、およびコンポーネント](../deployment/deploying-applications-services-and-components.md)を参照してください。
 
  MSI を作成するには、Visual Studio ソリューションにセットアップ プロジェクトを追加します。 セットアップ プロジェクトを作成する最も簡単な方法からダウンロードできます CreateMsiSetupProject.tt テンプレートを使用して、 [VMSDK サイト](http://go.microsoft.com/fwlink/?LinkID=186128)します。
 

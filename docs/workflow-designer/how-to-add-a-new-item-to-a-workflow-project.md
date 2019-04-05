@@ -24,7 +24,7 @@ ms.locfileid: "57222335"
 
 | 名前 | 説明 |
 |-| - |
-| アクティビティ | 他のアクティビティで構成されるアクティビティ。 この項目を選択を選択するときに取得される、プロジェクトに同じ XAML ファイルを追加、**アクティビティ ライブラリ**新しいプロジェクトのテンプレート。 この手順の詳細については、次を参照してください。[ワークフロー プロジェクトを作成する](creating-a-workflow-project.md)します。 |
+| アクティビティ | 他のアクティビティで構成されるアクティビティ。 この項目を選択を選択するときに取得される、プロジェクトに同じ XAML ファイルを追加、**アクティビティ ライブラリ**新しいプロジェクトのテンプレート。 この手順の詳細については、[ワークフロー プロジェクトを作成する](creating-a-workflow-project.md)を参照してください。 |
 | アクティビティ デザイナー | アクティビティのデザイン時の操作をカスタマイズするデザイナー。 この項目を選択を選択するときに取得される、プロジェクトに同じファイルを追加、**アクティビティ デザイナー ライブラリ**新しいプロジェクトのテンプレート。 |
 | Code アクティビティ | コードに記述される実行ロジックを含むアクティビティ。 <xref:System.Activities.CodeActivity.Execute%2A> メソッドのオーバーライドを含むソース コード ファイルは既に自動的に生成されています。 |
 | WCF ワークフロー サービス | ワークフロー アクティビティを使用して作成された [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] サービス。 この項目を選択を選択するときに取得される、プロジェクトに同じファイルを追加、 **WCF ワークフロー サービス アプリケーション**新しいプロジェクトのテンプレート。 この手順の詳細については、次を参照してください。[方法。WCF ワークフロー サービス アプリケーションの作成](/visualstudio/workflow-designer/creating-a-workflow-project)です。 |
@@ -38,7 +38,7 @@ ms.locfileid: "57222335"
 1. 左側のウィンドウで、選択、**ワークフロー**カテゴリ、およびワークフローの項目テンプレートを選択します。
 
    > [!NOTE]
-   > 表示されない場合、**ワークフロー**カテゴリで、最初のインストール、 **Windows Workflow Foundation** Visual Studio のコンポーネント。 詳細については、次を参照してください。 [Windows Workflow Foundation のインストール](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)します。
+   > 表示されない場合、**ワークフロー**カテゴリで、最初のインストール、 **Windows Workflow Foundation** Visual Studio のコンポーネント。 詳細については、[Windows Workflow Foundation のインストール](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)を参照してください。
 
 1. 内の項目の名前を入力、**名前** ダイアログ ボックスの下部にあるボックス。
 

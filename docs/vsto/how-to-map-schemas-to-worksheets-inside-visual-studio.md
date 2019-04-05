@@ -63,7 +63,7 @@ ms.locfileid: "56637374"
 
      Office プロジェクトで生成される非繰り返しスキーマ要素をドラッグする場合、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>に自動的にバインドされているコントロール、<xref:System.Windows.Forms.BindingSource>します。
 
-     Office プロジェクトで生成される繰り返しスキーマ要素をドラッグする場合、<xref:Microsoft.Office.Tools.Excel.ListObject>データ ソースに自動的にバインドされていないコントロール。 詳細については、次を参照してください。 [XML スキーマとデータをドキュメント レベルのカスタマイズ](../vsto/xml-schemas-and-data-in-document-level-customizations.md)します。
+     Office プロジェクトで生成される繰り返しスキーマ要素をドラッグする場合、<xref:Microsoft.Office.Tools.Excel.ListObject>データ ソースに自動的にバインドされていないコントロール。 詳細については、[XML スキーマとデータをドキュメント レベルのカスタマイズ](../vsto/xml-schemas-and-data-in-document-level-customizations.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [方法: Visual Studio 内で Word 文書にスキーマを割り当てる](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)

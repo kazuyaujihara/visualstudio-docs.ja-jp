@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671af69cf31ad1b8b5adafa413e4f20a8761d5ce
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526039"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790252"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>マルチ スレッド アプリケーションのデバッグの開始 (C#、Visual Basic、C++)
 
@@ -38,21 +38,33 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
 
 ## <a name="create-a-multithreaded-app-project"></a>マルチ スレッド アプリ プロジェクトを作成します。
 
-1.  **[ファイル]** メニューで、**[新規作成]** > **[プロジェクト]** の順に選択します。
+1. Visual Studio を起動し、新しいプロジェクトを作成します。
 
-     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+    ::: moniker range=">=vs-2019"
+    キーを押して**Esc**開始 ウィンドウを閉じます。 型**Ctrl + Q**を検索ボックスを開き、「**コンソール**(または**c++**)、選択**テンプレート**、し。
 
-2.  言語の選択: **Visual C#** 、 **Visual C**、または**Visual Basic**します。
+    - C#または Visual Basic では、選択**新しいコンソール アプリ (.NET Framework) プロジェクトの作成**いずれかのC#または Visual Basic です。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    - C++ では、選択**新しいコンソール アプリ プロジェクトの作成**c++ です。 表示されたダイアログ ボックスで、**[作成]** を選択します。
 
-3.  **Windows デスクトップ**、選択**コンソール アプリ**します。
+    などの名前を入力し、 **MyThreadWalkthroughApp**クリック**作成**します。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 左側のウィンドウで、**新しいプロジェクト** ダイアログ ボックスで、次を選択します。
 
-4.  **名前**フィールドに、MyThreadWalkthroughApp を入力します。
+    - C#アプリ  **Visual C#** 、選択**Windows デスクトップ**、中央のペインの **コンソール アプリ (.NET Framework)** します。
+    - Visual Basic アプリでは、 **Visual Basic**、選択**Windows デスクトップ**、中央のペインの **コンソール アプリ (.NET Framework)** します。
+    - C++ アプリでは、 **Visual C**、選択**Windows デスクトップ**、および選び、 **Windows コンソール アプリケーション**します。
 
-5.  **[OK]** を選択します。
+    などの名前を入力し、 **MyThreadWalkthroughApp**  をクリック**OK**します。
+    ::: moniker-end
 
-     新しいコンソール プロジェクトが表示されます。 プロジェクトを作成すると、ソース ファイルが表示されます。 選択した言語に応じて、ソース ファイルが呼び出される可能性が*Program.cs*、 *MyThreadWalkthroughApp.cpp*、または*Module1.vb*します。
+    **[コンソール アプリ]** プロジェクト テンプレートが表示されない場合は、**[ツール]** > **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 **[.NET デスクトップ開発]** ワークロードまたは **[C++ によるデスクトップ開発]** ワークロードを選択し、**[変更]** を選択します。
 
-6.  ソース ファイルに表示されるコードを削除し、以下を一覧表示する適切な例のコードに置き換えます。
+1. **[OK]** を選択します。
+
+    新しいコンソール プロジェクトが表示されます。 プロジェクトを作成すると、ソース ファイルが表示されます。 選択した言語に応じて、ソース ファイルが呼び出される可能性が*Program.cs*、 *MyThreadWalkthroughApp.cpp*、または*Module1.vb*します。
+
+1. ソース ファイルに表示されるコードを削除し、以下を一覧表示する適切な例のコードに置き換えます。
 
     ```csharp
     using System;
@@ -187,9 +199,9 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     End Class
     ```
 
-7.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。
+1. **[ファイル]** メニューの **[すべてを保存]** をクリックします。
 
-8. (Visual Basic のみ)ソリューション エクスプ ローラー (右側のウィンドウ) でプロジェクト ノードを右クリックし、選択**プロパティ**します。 下、**アプリケーション** タブで、変更、**スタートアップ オブジェクト**に**単純**します。
+1. (Visual Basic のみ)ソリューション エクスプ ローラー (右側のウィンドウ) でプロジェクト ノードを右クリックし、選択**プロパティ**します。 下、**アプリケーション** タブで、変更、**スタートアップ オブジェクト**に**単純**します。
 
 ## <a name="debug-the-multithreaded-app"></a>マルチ スレッド アプリをデバッグします。
 

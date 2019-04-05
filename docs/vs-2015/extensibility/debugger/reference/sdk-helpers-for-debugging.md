@@ -1,14 +1,9 @@
 ---
 title: デバッグ用の SDK ヘルパー |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 904ac14433bf6b7b839a4fe634175a7f583e27ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16a4fca95380ad00338b2708f48f13f105a86da0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772184"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972414"
 ---
 # <a name="sdk-helpers-for-debugging"></a>デバッグ用の SDK ヘルパー
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -164,7 +159,7 @@ HRESULT EnumMetricSections(
 ## <a name="metric-definitions"></a>メトリック定義  
  これらの定義は、定義済みのメトリック名は使用できます。 名前はさまざまなレジストリ キーと値の名前とワイド文字の文字列として定義されているがすべてに対応します。 たとえば、 `extern LPCWSTR metrictypeEngine`。  
   
-|定義済みのメトリックの種類|説明: の基本キー.|  
+|定義済みのメトリックの種類|説明:基本のキーをしています.|  
 |-----------------------------|---------------------------------------|  
 |metrictypeEngine|すべてのデバッグ エンジンのメトリック。|  
 |metrictypePortSupplier|すべてのポート サプライヤー メトリック。|  
@@ -183,7 +178,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|データの変更のブレークポイントの設定のサポートを示す 0 以外の値に設定します。|  
 |metricDisassembly|[逆アセンブル] 一覧の運用環境のサポートを示すために 0 以外の値を設定します。|  
 |metricDumpWriting|ダンプの書き込み (ダンプの出力デバイスへのメモリ) のサポートを示す 0 以外の値に設定します。|  
-|metricENC|エディット コンティニュのサポートを示すために 0 以外の値を設定します。 **注:** カスタム デバッグ エンジンはこれを設定する必要がありますしないまたは 0 に設定常にする必要があります。|  
+|metricENC|エディット コンティニュのサポートを示すために 0 以外の値を設定します。 **注:** カスタム デバッグ エンジンでは、これを設定する必要がありますしないか、0 に設定常にする必要があります。|  
 |metricExceptions|例外のサポートを示す 0 以外の値に設定します。|  
 |metricFunctionBP|名前付きブレークポイント (を特定の関数名が呼び出されたときに中断するブレークポイント) のサポートを示す 0 以外の値に設定します。|  
 |metricHitCountBP|「ポイントをヒット」ブレークポイント (一定回数がヒットされている後にのみトリガーされるブレークポイント) の設定のサポートを示す 0 以外の値に設定します。|  
@@ -198,7 +193,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|0 以外にすることを示すプログラム プロバイダーは常に読み込まれたローカルに設定します。|  
 |metricEngineCanWatchProcess|これを設定を示すプログラム プロバイダーではなくプロセス イベント デバッグ エンジンの監視は、0 以外の値。|  
 |metricRemoteDebugging|これ 0 以外に設定をリモート デバッグのサポートを示します。|  
-|metricEncUseNativeBuilder|この設定を示す、編集と続行マネージャー使用すること、デバッグ エンジンの encbuild.dll エディット コンティニュ用にビルドするには 0 以外の値。 **注:** カスタム デバッグ エンジンはこれを設定する必要がありますしないまたは 0 に設定常にする必要があります。|  
+|metricEncUseNativeBuilder|この設定を示す、編集と続行マネージャー使用すること、デバッグ エンジンの encbuild.dll エディット コンティニュ用にビルドするには 0 以外の値。 **注:** カスタム デバッグ エンジンでは、これを設定する必要がありますしないか、0 に設定常にする必要があります。|  
 |metricLoadUnderWOW64|これ 0 以外に設定を示す、64 ビット プロセスをデバッグするときに、WOW の下で、デバッグ対象プロセスで、デバッグ エンジンを読み込む必要があります。それ以外の場合、デバッグ エンジンは、(WOW64 の下で実行されている) を Visual Studio のプロセスに読み込まれます。|  
 |metricLoadProgramProviderUnderWOW64|これ 0 以外に設定; WOW の下で、64 ビット プロセスをデバッグするときに、プログラムのプロバイダーがデバッグ対象プロセスに読み込まれたをするにはそれ以外の場合、Visual Studio のプロセスで読み込まれます。|  
 |metricStopOnExceptionCrossingManagedBoundary|これ 0 以外に設定を示すマネージ/アンマネージ コードの境界を越えて、未処理の例外がスローされた場合、プロセスを停止します。|  
@@ -270,7 +265,7 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[レジストリ キー]*|`HKEY_CURRENT_USER` または `HKEY_LOCAL_MACHINE`。|  
 |*[バージョン root]*|Visual Studio のバージョン (たとえば、 `7.0`、 `7.1`、または`8.0`)。 ただし、このルート変更することもを使用して、 **/rootsuffix**に切り替える**devenv.exe**します。 VSIP、この修飾子は通常**Exp**バージョン ルートである場合は、たとえば 8.0Exp のため、します。|  
-|*[メトリックの root]*|いずれかになります`AD7Metrics`または`AD7Metrics(Debug)`dbgmetric.lib のデバッグ バージョンを使用するかどうかに応じて、します。 **注:** デバッグとリリースの違いがある場合、この名前付け規則に従う必要があります dbgmetric.lib を使用すると、かどうかのバージョンをレジストリに反映する必要があります。|  
+|*[メトリックの root]*|いずれかになります`AD7Metrics`または`AD7Metrics(Debug)`dbgmetric.lib のデバッグ バージョンを使用するかどうかに応じて、します。 **注:** この名前付け規則をデバッグとリリースの違いがある場合に従う必要があります dbgmetric.lib を使用すると、かどうかのバージョンをレジストリに反映する必要があります。|  
 |*[メトリックの種類]*|書き込まれるメトリックの種類: `Engine`、 `ExpressionEvaluator`、`SymbolProvider`など。これらすべてとして dbgmetric.h のように定義されます`metricTypeXXXX`ここで、`XXXX`は特定の種類の名前です。|  
 |*[メトリック]*|メトリックを設定するには値を代入するエントリの名前。 メトリックの実際の組織は、メトリックの種類によって異なります。|  
 |*[メトリックの値]*|メトリックに割り当てられた値。 型の値 (文字列、数値など) が必要では、メトリックに依存します。|  
@@ -406,13 +401,13 @@ HRESULT EnumMetricSections(
   
  *[例外の種類]*\  
   
- *[例外]*\  
+ *[exception]*\  
   
  *[メトリック] = [メトリックの値]*  
   
  *[メトリック] = [メトリックの値]*  
   
- *[例外]*\  
+ *[exception]*\  
   
  *[メトリック] = [メトリックの値]*  
   
@@ -422,15 +417,14 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[デバッグ エンジンの guid]*|例外をサポートするデバッグ エンジンの GUID です。|  
 |*[例外の種類]*|処理できる例外のクラスを識別するサブキーの一般的なタイトルです。 一般的な名前は**C++ 例外**、 **Win32 例外**、 **Common Language Runtime Exceptions**、および**ネイティブ ランタイム チェック**します。 これらの名前は、ユーザーに例外の特定のクラスを識別するためにも使用されます。|  
-|*[例外]*|例外の名前。 たとえば、 **_com_error**または**コントロール ブレーク**します。 これらの名前は、ユーザーに特定の例外を識別するためにも使用されます。|  
+|*[exception]*|例外の名前。 たとえば、 **_com_error**または**コントロール ブレーク**します。 これらの名前は、ユーザーに特定の例外を識別するためにも使用されます。|  
   
 ## <a name="requirements"></a>必要条件  
  これらのファイルにある、 [!INCLUDE[vs_dev10_ext](../../../includes/vs-dev10-ext-md.md)] SDK のインストール ディレクトリ (既定では、 *[ドライブ]* \Program Files\Microsoft Visual Studio 2010 SDK\\)。  
   
  ヘッダー: includes\dbgmetric.h  
   
- ライブラリ: libs\ad2de.lib、libs\dbgmetric.lib  
+ Library: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>関連項目  
  [API リファレンス](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-

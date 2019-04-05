@@ -1,25 +1,20 @@
 ---
 title: コンテキスト メニュー (XML スキーマ エクスプ ローラー) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 854ea473f2f606b28052b093978253372b4fec59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5398cea07863e17a8e430e7f827aac0b4e217355
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294622"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963094"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>コンテキスト メニュー (XML スキーマ エクスプローラー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ ms.locfileid: "49294622"
   
 次のコンテキスト メニュー項目は、スキーマ固有の検索やその他の操作を実行するために使用します。  
   
-## <a name="node-type-schema-set"></a>ノード型: スキーマ セット  
+## <a name="node-type-schema-set"></a>ノードの種類:スキーマ セット  
  スキーマ セット ノードに使用できるオプションを次の表に示します。  
   
 |オプション|説明|  
@@ -37,7 +32,7 @@ ms.locfileid: "49294622"
 |**グローバル要素を表示します。**|スキーマ セット内のすべてのグローバル要素を検索して強調表示します。|  
 |**[プロパティ] ウィンドウ**|開く、**プロパティ**ウィンドウ (は既に開かれていない) 場合。 このウィンドウには、ノードに関する情報が表示されます。|  
   
-## <a name="node-type-namespace"></a>ノード型: 名前空間  
+## <a name="node-type-namespace"></a>ノードの種類:名前空間  
  名前空間ノードに使用できるオプションを次の表に示します。  
   
 |オプション|説明|  
@@ -48,7 +43,7 @@ ms.locfileid: "49294622"
 |**グローバル要素を表示します。**|選択した名前空間内のすべてのグローバル要素を検索して強調表示します。|  
 |**[プロパティ] ウィンドウ**|開く、**プロパティ**ウィンドウ (は既に開かれていない) 場合。 このウィンドウには、ノードに関する情報が表示されます。|  
   
-## <a name="node-type-file"></a>ノード型: ファイル  
+## <a name="node-type-file"></a>ノードの種類:ファイル  
  ファイル ノードに使用できるオプションを次の表に示します。  
   
 |オプション|説明|  
@@ -70,7 +65,7 @@ ms.locfileid: "49294622"
 |**[コードの表示]**|選択したノードを含むファイルが XML エディターで開きます。 XML エディターには、XML スキーマ エクスプローラーで選択されている項目も表示されます。|  
 |**[プロパティ] ウィンドウ**|開く、**プロパティ**ウィンドウ (は既に開かれていない) 場合。 このウィンドウには、ノードに関する情報が表示されます。|  
   
-## <a name="node-type-element"></a>ノード型: 要素  
+## <a name="node-type-element"></a>ノードの種類:要素  
  要素ノードのコンテキスト メニューには、前述のグローバル ノード オプションに加えて、次のオプションがあります。  
   
 |オプション|説明|  
@@ -82,7 +77,7 @@ ms.locfileid: "49294622"
 |**表示する代替グループの先頭**|代替グループのメンバーであるグローバル要素について、選択した要素の直接および間接の先頭をすべて検索して強調表示します。たとえば、次のようなものが含まれます。<br /><br /> -代替グループの先頭、選択した要素で指定します。<br />-代替グループの先頭の head 要素で指定します。|  
 |**サンプル XML を生成します。**|グローバル要素でのみ使用できます。 グローバル要素のサンプル XML ファイルを生成します。|  
   
-## <a name="node-type-global-types"></a>ノード型: グローバル型  
+## <a name="node-type-global-types"></a>ノードの種類:グローバル型  
  グローバル型ノードのコンテキスト メニューには、前述のグローバル ノード オプションに加えて、次のオプションがあります。  
   
 |オプション|説明|  
@@ -92,7 +87,7 @@ ms.locfileid: "49294622"
 |**すべての派生型の表示**|選択した型から直接または間接的に派生したすべての型を検索して強調表示します。|  
 |**すべての先祖を表示します。**|親の型 (基本型) をすべて表示します。|  
   
-## <a name="node-type-attribute"></a>ノード型: 属性  
+## <a name="node-type-attribute"></a>ノードの種類:属性  
  属性ノードのコンテキスト メニューには、前述のグローバル ノード オプションに加えて、次のオプションがあります。  
   
 |オプション|説明|  
@@ -101,7 +96,7 @@ ms.locfileid: "49294622"
 |**元の属性へ移動します。**|属性の参照のために、属性の実際の定義に移動します。|  
 |**すべての参照を表示します。**|グローバル属性について、選択した属性への参照 (`ref="selectedAttribute"` が指定された他の属性) をすべて検索して強調表示します。|  
   
-## <a name="node-type-attribute-group"></a>ノード型: 属性グループ  
+## <a name="node-type-attribute-group"></a>ノードの種類:属性グループ  
  属性グループ ノードのコンテキスト メニューには、前述のグローバル ノード オプションに加えて、次のオプションがあります。  
   
 |オプション|説明|  
@@ -110,7 +105,7 @@ ms.locfileid: "49294622"
 |**すべてのメンバーを表示します。**|属性グループのすべてのメンバーを検索して強調表示します。|  
 |**すべての参照を表示します。**|選択した属性グループへの参照 (`ref="selectedAttributeGroup"` が指定された属性グループ) をすべて検索して強調表示します。|  
   
-## <a name="node-type-named-group"></a>ノード型: 名前付きグループ  
+## <a name="node-type-named-group"></a>ノードの種類:名前付きグループ  
  名前付きグループ ノードのコンテキスト メニューには、前述のグローバル ノード オプションに加えて、次のオプションがあります。  
   
 |オプション|説明|  
@@ -122,6 +117,3 @@ ms.locfileid: "49294622"
 ## <a name="see-also"></a>関連項目  
  [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)   
  [スキーマ セットの検索](../xml-tools/searching-the-schema-set.md)
-
-
-

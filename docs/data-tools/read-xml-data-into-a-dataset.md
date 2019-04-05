@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b603979424c3593a673cf11db81ca2fc1c6a03bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934147"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268531"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML データのデータセットへの読み込み
 
@@ -33,17 +33,7 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 
-この手順では、Visual Basic または Visual c# プロジェクトを作成します。
-
-1. Visual Studio での**ファイル**メニューの **新規** > **プロジェクト**します。
-
-2. いずれかを展開**Visual c#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
-
-3. 中央のペインで選択、 **Windows フォーム アプリ**プロジェクトの種類。
-
-4. プロジェクトに名前を**ReadingXML**を選び、 **OK**。
-
-   **ReadingXML**プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。
+新規作成**Windows フォーム アプリ**のいずれかのプロジェクトC#または Visual Basic です。 プロジェクトに名前を**ReadingXML**します。
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>データセットに読み込まれる XML ファイルを生成します。
 
@@ -123,15 +113,15 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
 
 このアプリケーションのユーザー インターフェイスを次の構成します。
 
--   A<xref:System.Windows.Forms.DataGridView>データとして XML ファイルの内容を表示するコントロール。
+- A<xref:System.Windows.Forms.DataGridView>データとして XML ファイルの内容を表示するコントロール。
 
--   A <xref:System.Windows.Forms.TextBox> XML ファイルの XML スキーマを表示するコントロール。
+- A <xref:System.Windows.Forms.TextBox> XML ファイルの XML スキーマを表示するコントロール。
 
--   2 つ<xref:System.Windows.Forms.Button>コントロール。
+- 2 つ<xref:System.Windows.Forms.Button>コントロール。
 
-    -   1 つのボタンを選択し、XML ファイルをデータセットに読み込みますで表示、<xref:System.Windows.Forms.DataGridView>コントロール。
+    - 1 つのボタンを選択し、XML ファイルをデータセットに読み込みますで表示、<xref:System.Windows.Forms.DataGridView>コントロール。
 
-    -   2 番目のボタンと、データセットからスキーマを抽出し、<xref:System.IO.StringWriter>で表示、<xref:System.Windows.Forms.TextBox>コントロール。
+    - 2 番目のボタンと、データセットからスキーマを抽出し、<xref:System.IO.StringWriter>で表示、<xref:System.Windows.Forms.TextBox>コントロール。
 
 ### <a name="to-add-controls-to-the-form"></a>フォームにコントロールを追加するには
 
@@ -139,11 +129,11 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
 
 2.  **ツールボックス**、次のコントロールをフォームにドラッグします。
 
-    -   1 つ<xref:System.Windows.Forms.DataGridView>コントロール
+    - 1 つ<xref:System.Windows.Forms.DataGridView>コントロール
 
-    -   1 つ<xref:System.Windows.Forms.TextBox>コントロール
+    - 1 つ<xref:System.Windows.Forms.TextBox>コントロール
 
-    -   2 つ<xref:System.Windows.Forms.Button>コントロール
+    - 2 つ<xref:System.Windows.Forms.Button>コントロール
 
 3.  次のプロパティを設定します。
 
@@ -220,9 +210,9 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
 
 このチュートリアルでは、データセット、XML ファイルを読み取るだけでなく XML ファイルの内容に基づくスキーマの作成の基本を説明します。 次に実行する可能性のあるいくつかのタスクを次に示します。
 
--   データセットと書き戻せる XML としてデータを編集します。 詳細については、「<xref:System.Data.DataSet.WriteXml%2A>」を参照してください。
+- データセットと書き戻せる XML としてデータを編集します。 詳細については、「<xref:System.Data.DataSet.WriteXml%2A>」を参照してください。
 
--   データセット内のデータを編集し、データベースに書き込みます。
+- データセット内のデータを編集し、データベースに書き込みます。
 
 ## <a name="see-also"></a>関連項目
 

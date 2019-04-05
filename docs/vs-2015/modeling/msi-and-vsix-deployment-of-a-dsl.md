@@ -1,23 +1,20 @@
 ---
 title: MSI および VSIX 配置 DSL の |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6ce16f06-1978-4e19-8cdc-441ee65a3fb2
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 81b027e9834fccadcc572cad8fae4d721be9dd56
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bf826a45fbb7f5fc23ffad36dc2adba0442cd3a1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922043"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974234"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL の MSI および VSIX 配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ ms.locfileid: "49922043"
   
 |メソッド|利点|  
 |------------|--------------|  
-|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)]拡張機能)|非常に簡単にデプロイ: コピーし、実行、 **.vsix** DslPackage プロジェクトからのファイル。<br /><br /> 詳細については、次を参照してください。[をインストールすると、VSX を使用して DSL をアンインストール](#Installing)します。|  
+|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)]拡張機能)|非常に簡単にデプロイします。コピーを実行、 **.vsix** DslPackage プロジェクトからのファイル。<br /><br /> 詳細については、次を参照してください。[をインストールすると、VSX を使用して DSL をアンインストール](#Installing)します。|  
 |MSI (インストーラー ファイル)|-ユーザーを開くことを許可する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]DSL のファイルをダブルクリックします。<br />-対象のコンピューターで DSL のファイルの種類のアイコンに関連付けます。<br />-DSL のファイルの種類 XSD (XML スキーマ) に関連付けます。 ファイルが読み込まれるときに警告を回避できますこの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。<br /><br /> MSI を作成するソリューションには、セットアップ プロジェクトを追加する必要があります。<br /><br /> 詳細については、次を参照してください。 [MSI ファイルを使用して DSL を展開する](#msi)します。|  
   
 ##  <a name="Installing"></a> インストールして、VSX を使用して DSL をアンインストールします。  
@@ -59,7 +56,7 @@ ms.locfileid: "49922043"
   
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>VSX を使用して、インストールされている DSL をアンインストールするには  
   
-1. **ツール** メニューのをクリックして**拡張機能マネージャー**します。  
+1. **ツール** メニューをクリックして **拡張機能マネージャー** をクリックします。  
   
 2. **[インストール済みの拡張機能]** を展開します。  
   
@@ -141,6 +138,3 @@ ms.locfileid: "49922043"
 2.  DSL をアンインストールします。  
   
 3.  Visual Studio を再起動します。
-
-
-

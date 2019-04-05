@@ -1,14 +1,9 @@
 ---
-title: '1710: 識別子は正しいサフィックスをいなければなりません |Microsoft Docs'
-ms.custom: ''
+title: CA1710:識別子は正しいサフィックスを含むこと |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1710
 - IdentifiersShouldHaveCorrectSuffix
@@ -20,21 +15,21 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2256e3f20dfdb4ddb8efa28d7ecdd203a139bcc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5b0336e1f503d3f540fb8129beab57891564ce0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940165"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973534"
 ---
-# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: 識別子は、正しいサフィックスを含んでいなければなりません
+# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710:識別子は、正しいサフィックスを含んでいなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
-|カテゴリ|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
@@ -52,14 +47,14 @@ ms.locfileid: "49940165"
 |<xref:System.Attribute?displayProperty=fullName>|属性|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|例外|
-|<xref:System.Collections.ICollection?displayProperty=fullName>|コレクション|
+|<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Dictionary|
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|コレクション|
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Queue?displayProperty=fullName>|コレクションまたはキュー|
 |<xref:System.Collections.Stack?displayProperty=fullName>|コレクションまたはスタック|
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|コレクション|
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|
-|<xref:System.Data.DataSet?displayProperty=fullName>|データセット|
+|<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|コレクションまたは DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|ストリーム|
 |<xref:System.Security.IPermission?displayProperty=fullName>|アクセス許可|
@@ -95,10 +90,7 @@ foreach(SomeType x in SomeDictionary.Values) { }
  他のサフィックスの場合は、この規則による警告を抑制しないでください。 サフィックスは、型名から明らかにする目的の使用を許可します。
 
 ## <a name="related-rules"></a>関連規則
- [CA1711: 識別子は、不適切なサフィックスを含むことはできません](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+ [CA1711:識別子には、不適切なサフィックスはありません。](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>関連項目
- [属性](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: イベントとデリゲート](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)
-
-
-
+ [属性](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB:イベントとデリゲート](http://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

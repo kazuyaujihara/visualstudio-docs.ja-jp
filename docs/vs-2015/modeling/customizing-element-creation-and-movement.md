@@ -1,12 +1,9 @@
 ---
 title: 要素の作成と移動のカスタマイズ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 470ff89dfd864443206c1d9131fb126d58280859
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853832"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973209"
 ---
 # <a name="customizing-element-creation-and-movement"></a>要素作成処理および要素移動処理のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +41,7 @@ ms.locfileid: "49853832"
   
   EMD の責任では、オブジェクトまたはオブジェクトのグループをモデルの特定の場所にマージする必要がある方法を決定します。 具体的には、モデルにマージされたグループをリンクするどのようなリレーションシップをインスタンス化する必要がありますを決定します。 プロパティを設定して、その他のオブジェクトを作成することをカスタマイズすることもできます。  
   
-  ![DSL&#45;EMD&#95;マージ](../modeling/media/dsl-emd-merge.png "DSL EMD_Merge")  
+  ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge")  
   要素マージ ディレクティブの役割  
   
   EMD は、埋め込みリレーションシップを定義するときに自動的に生成されます。 この既定 EMD は、ユーザーが親に子の新しいインスタンスを追加するときに、リレーションシップのインスタンスを作成します。 カスタム コードを追加してたとえば既定入力例: でこれらを変更できます。  
@@ -54,7 +51,7 @@ ms.locfileid: "49853832"
 ## <a name="defining-an-element-merge-directive"></a>要素マージ ディレクティブを定義します。  
  要素マージ ディレクティブは、ドメイン クラス、ドメイン リレーションシップ、図形、コネクタ、およびダイアグラムを追加できます。 追加したり、受信側のドメイン クラスの下の DSL エクスプ ローラーで確認できます。 受信側のクラスは、モデルでは、新規またはコピーした要素をマージするのには、既に要素のドメイン クラス。  
   
- ![DSL&#45;EMD&#95;詳細](../modeling/media/dsl-emd-details.png "DSL EMD_Details")  
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd-details.png "DSL-EMD_Details")  
   
  **クラスのインデックス作成**受信側のクラスのメンバーにマージできる要素のドメイン クラスです。 設定していない場合も、インデックス作成クラスのサブクラスのインスタンスを結合によって、この EMD は**サブクラスに適用**を False にします。  
   
@@ -77,9 +74,9 @@ ms.locfileid: "49853832"
 > [!NOTE]
 >  カスタム マージのコードを記述する場合は、この EMD を使用して実行される唯一の結合に影響します。 他の入力例: 同じ種類のオブジェクトをマージする場合、または、EMD を使用せずにこれらのオブジェクトを作成する他のカスタム コードがある場合は、は受けませんマージのカスタム コード。  
 >   
->  新しい要素または新しいリレーションシップが常に処理される、カスタム コードを確認する場合は、定義することを検討してください、`AddRule`埋め込みリレーションシップに対して、`DeleteRule`要素のドメイン クラス。 詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。  
+>  新しい要素または新しいリレーションシップが常に処理される、カスタム コードを確認する場合は、定義することを検討してください、`AddRule`埋め込みリレーションシップに対して、`DeleteRule`要素のドメイン クラス。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
   
-## <a name="example-defining-an-emd-without-custom-code"></a>例: カスタム コードなし EMD を定義します。  
+## <a name="example-defining-an-emd-without-custom-code"></a>例:カスタム コードなし EMD を定義します。  
  次の例では、既存の図形には、ツールボックスからドラッグして、同時に要素とコネクタを作成できます。 例では、DSL 定義に EMD を追加します。 この変更では、前にユーザーは、図に、既存の図形の上にないツールをドラッグできます。  
   
  ユーザーは、その他の要素の上に要素を貼り付けることができますも。  
@@ -94,7 +91,7 @@ ms.locfileid: "49853832"
   
    1.  **DSL エクスプ ローラー**、展開**ドメイン クラス**します。 右クリックして`ExampleElement` をクリックし、**新しい要素マージ ディレクティブの追加**します。  
   
-   2.  必ず、 **DSL の詳細**新しい EMD の詳細を表示することは、ウィンドウが開いて。 (メニュー:**ビュー**、**他の Windows**、 **DSL の詳細**)。  
+   2.  必ず、 **DSL の詳細**新しい EMD の詳細を表示することは、ウィンドウが開いて。 (メニュー。**表示**、**他の Windows**、 **DSL の詳細**)。  
   
 3. 設定、**クラスのインデックス作成**DSL 詳細 ウィンドウの上にマージできる要素のクラスを定義する`ExampleElement`オブジェクト。  
   
@@ -148,7 +145,7 @@ ms.locfileid: "49853832"
   
      使用して、EMD を明示的に呼び出す場合、新しい要素を作成するカスタム コードを記述する、`ElementOperations.Merge`メソッド。 これにより、コードが、その他の操作と同様に、モデルに新しい要素をリンクすることを確認します。 詳細については、次を参照してください。[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。  
   
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>例: EMD へのカスタム受け入れコードの追加  
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>例:EMD にカスタム受け入れコードを追加します。  
  EMD にカスタム コードを追加することより複雑な結合の動作を定義できます。 この簡単な例では、ユーザーが要素の固定数よりも多く、ダイアグラムに追加できなくなります。 例では、既定の埋め込みリレーションシップに付属している EMD を変更します。  
   
 #### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>カスタム受け入れをユーザーの追加を制限するコードを記述するには  
@@ -163,7 +160,7 @@ ms.locfileid: "49853832"
   
 4.  ソリューションをリビルドします。 生成されたコードは、モデルから更新されるため、通常よりも長くかかります。  
   
-     報告されるのと同様に、ビルド エラーが表示されます:「Company.ElementMergeSample.ExampleElement は定義を含んでいない CanMergeExampleElement の...」  
+     報告されるのと同様に、ビルド エラーになります。「Company.ElementMergeSample.ExampleElement は定義を含んでいない CanMergeExampleElement の...」  
   
      メソッドを実装する必要があります`CanMergeExampleElement`します。  
   
@@ -211,14 +208,14 @@ ms.locfileid: "49853832"
   
     3.  モデルに複数の 4 つの要素を追加する方法はこれらのいずれか使用できないことを確認します。 これは、要素マージ ディレクティブを使用するためです。  
   
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>例: EMD にカスタムのマージのコードを追加します。  
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>例:EMD にカスタムのマージのコードを追加します。  
  カスタム マージのコードでは、ユーザーがツールをドラッグまたは要素に貼り付けますときの動作を定義できます。 カスタム マージを定義する 2 つの方法はあります。  
   
 1. 設定**を使用してカスタム マージ**し、必要なコードを指定します。 生成されたマージのコードをコードに置き換えます。 マージが何を完全に再定義する場合は、このオプションを使用します。  
   
 2. 上書き、`MergeRelate`メソッド、および必要に応じて、`MergeDisconnect`メソッド。 これを行うには、設定する必要があります、 **Double Derived の生成**ドメイン クラスのプロパティ。 コードでは、基底クラスで生成されたマージのコードを呼び出すことができます。 マージが実行された後、追加の操作を実行する場合は、このオプションを使用します。  
   
-   これらの方法では、この EMD を使用して実行されるマージのみに影響します。 定義する代わりには、マージされた要素を作成できるすべての方法に影響する場合、`AddRule`埋め込みリレーションシップに対して、`DeleteRule`マージされたドメイン クラス。 詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。  
+   これらの方法では、この EMD を使用して実行されるマージのみに影響します。 定義する代わりには、マージされた要素を作成できるすべての方法に影響する場合、`AddRule`埋め込みリレーションシップに対して、`DeleteRule`マージされたドメイン クラス。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
   
 #### <a name="to-override-mergerelate"></a>MergeRelate をオーバーライドするには  
   
@@ -234,7 +231,7 @@ ms.locfileid: "49853832"
   
 5.  内容を調べる**Dsl\Generated Files\DomainClasses.cs**します。 という名前のメソッドを検索`MergeRelate`の内容を調べる。 独自のバージョンを作成するのに役立ちます。  
   
-6.  新しいコード ファイルでは、受信側のクラスの部分クラスを記述し、オーバーライド、`MergeRelate`メソッド。 基本メソッドを呼び出してに注意してください。 例えば:  
+6.  新しいコード ファイルでは、受信側のクラスの部分クラスを記述し、オーバーライド、`MergeRelate`メソッド。 基本メソッドを呼び出してに注意してください。 例:  
   
     ```csharp  
     partial class ExampleModel  
@@ -277,7 +274,7 @@ ms.locfileid: "49853832"
   
 4. 別のコード ファイルの部分クラス定義でメソッドを記述します。 前に検査する例は、必要なものをお勧めします必要があります。  
   
-   カスタム マージのコードを直接オブジェクトとリレーションシップを作成するコードには影響しませんし、その他の入力例: 影響を受けません。 要素を作成する方法に関係なく、追加の変更が実装されていることを確認するには、書き込みを検討してください。、`AddRule`と`DeleteRule`代わりにします。 詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。  
+   カスタム マージのコードを直接オブジェクトとリレーションシップを作成するコードには影響しませんし、その他の入力例: 影響を受けません。 要素を作成する方法に関係なく、追加の変更が実装されていることを確認するには、書き込みを検討してください。、`AddRule`と`DeleteRule`代わりにします。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
   
 ## <a name="redirecting-a-merge-operation"></a>マージ操作をリダイレクトします。  
  転送マージ ディレクティブは、マージ操作の対象をリダイレクトします。 通常、新しいターゲットは、最初のターゲットの埋め込みの親です。  
@@ -324,6 +321,3 @@ ms.locfileid: "49853832"
  [移動して、プログラム コードでモデルを更新しています](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [ツールおよびツールボックスのカスタマイズ](../modeling/customizing-tools-and-the-toolbox.md)   
  [回路図のサンプル DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

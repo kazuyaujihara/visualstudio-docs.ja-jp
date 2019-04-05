@@ -1,25 +1,22 @@
 ---
 title: DslDefinition.dsl ファイル |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7f61ceef7248c143fd904751da58d32f75dfc0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937652"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978003"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl ファイル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +38,7 @@ ms.locfileid: "49937652"
  関係  
  このセクションでは、モデル内の各リレーションシップを定義します。 ソース とターゲットは、リレーションシップの両側を表します。  
   
- 型  
+ 種類  
  このセクションでは、各型とその名前空間を定義します。 ドメイン プロパティには 2 つの型があります。 `DomainEnumerations` はモデルで定義され、DomainModel.cs に型を生成します。 `ExternalTypes` は、それ以外の場所で定義されている型 (`String` や `Int32` など) を参照するだけであり、何も生成しません。  
   
  図形  
@@ -65,7 +62,7 @@ ms.locfileid: "49937652"
  Designer  
  このセクションで定義を集めてデザイナー (エディター)、**ツールボックス**検証の設定、図、およびシリアル化スキーム。 Designer セクションでは、モデルのルート クラスも定義されます。これは通常、図のルート クラスでもあります。  
   
- エクスプローラー  
+ Explorer  
  このセクションで、 **DSL エクスプ ローラー** (XmlSerializationBehavior セクションで定義されている) 動作します。  
   
 ## <a name="monikers-in-the-dsldefinitiondsl-file"></a>DslDefinition.dsl ファイルのモニカー  
@@ -90,9 +87,9 @@ ms.locfileid: "49937652"
   
  モニカー システムでは、XML ツリー内で兄弟関係にあるクラスには、識別可能な名前を使用する必要があります。 このため、たとえば同名のクラスが 2 つ含まれているドメイン固有言語定義を保存しようとすると、検証エラーが発生します。 後で DslDefinition.dsl ファイルを正しく再読み込みできるようにするため、DslDefinition.dsl ファイルを保存する前に必ず重複名エラーなどを訂正してください。  
   
- それぞれの型に固有のモニカーがあります (DomainClassMoniker、DomainRelationshipMoniker など)。  
+ それぞれの種類は、モニカーの独自の型を持ちます。DomainClassMoniker、DomainRelationshipMoniker、しにします。  
   
-## <a name="types"></a>型  
+## <a name="types"></a>種類  
  Types セクションでは、DslDefinition.dsl ファイルにプロパティの型として含まれているすべての型が指定されます。 これらの型は、外部型 (System.String など) と列挙型に分類されます。  
   
 ### <a name="external-types"></a>外部型  
@@ -108,7 +105,7 @@ ms.locfileid: "49937652"
   
  外部型は、標準ライブラリの型に制限されていません。  
   
-### <a name="enumerations"></a>列挙型  
+### <a name="enumerations"></a>列挙  
  標準的な列挙型の指定は次の例のようになります。  
   
 ```  
@@ -206,7 +203,7 @@ ms.locfileid: "49937652"
   
 -   **カテゴリ**ヘッダーでプロパティを表示するには、**プロパティ**ウィンドウ。  
   
-## <a name="relationships"></a>リレーションシップ  
+## <a name="relationships"></a>関係  
  `Relationships` セクションには、ドメイン固有言語のすべてのリレーションシップがリストされます。 すべての `Domain Relationship` はバイナリで有向性があり、ソース クラスのメンバーとターゲット クラスのメンバーをリンクします。 ソース クラスとターゲット クラスは通常はドメイン クラスですが、その他のリレーションシップとのリレーションシップも使用できます。  
   
  たとえば Connection リレーションシップは OutPort クラスのメンバーを InPort クラスのメンバーにリンクします。 このリレーションシップの各リンク インスタンスは、OutPort インスタンスを InPort インスタンスに接続します。 リレーションシップは多対多であるため、各 OutPort インスタンスにはそのインスタンスをソースとする Connection リンクを複数作成でき、各 InPort インスタンスにはそのインスタンスをターゲットとする Connection リンクを複数作成できます。  
@@ -214,7 +211,7 @@ ms.locfileid: "49937652"
 ### <a name="source-and-target-roles"></a>ソース ロールとターゲット ロール  
  各リレーションシップにはソース ロールとターゲット ロールが含まれています。これらのロールの属性を次に示します。  
   
--   `RolePlayer` 属性は、リンクされたインスタンス (ソースは OutPort、ターゲットは InPort) のドメイン クラスを参照します。  
+-   `RolePlayer`属性は、リンクされたインスタンスのドメイン クラスを参照します。ソース、ターゲットの InPort outPort します。  
   
 -   `Multiplicity` 属性には、ZeroMany、ZeroOne、One、および OneMany という 4 つの値を指定できます。 この属性は、1 つのロール プレーヤーに関連付けることができるこのリレーションシップのリンクの数を示します。  
   
@@ -281,7 +278,7 @@ ms.locfileid: "49937652"
  このモデルに対して c# を記述する場合に関連するクラスの各リレーションシップを生成するプロパティを使用して、1 つの手順でリンク経由でジャンプできます。  
   
 ```  
-     InPort port; ...  Component c = port.Component;  
+     InPort port; ...  Component c = port.Component;  
 ```  
   
  ただし、両方のホップは明示的にパス構文で行う必要があります。 この要件から、中間リンクへのアクセスが容易になります。 リンクから Component へのホップを実行するコードを次に示します。  
@@ -445,7 +442,7 @@ ms.locfileid: "49937652"
   
  (Connection リレーションシップには、要素と属性の名前を指定する独自の XML クラス データがあります。)  
   
- 場合、 **OmitElement**属性の設定を true に、リレーションシップ ロール名を省略すると、2 つのクラスは、複数のリレーションシップを持つ場合は、あいまいでないし、シリアル化されたファイルで省略しています。 例えば:  
+ 場合、 **OmitElement**属性の設定を true に、リレーションシップ ロール名を省略すると、2 つのクラスは、複数のリレーションシップを持つ場合は、あいまいでないし、シリアル化されたファイルで省略しています。 例:  
   
 ```  
 <component name="Component3">  
@@ -552,9 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  コネクタ マップにはデコレータ マップを含めることもできます。  
   
 ## <a name="see-also"></a>関連項目  
- [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)   
  [モデル、クラス、およびリレーションシップについて](../modeling/understanding-models-classes-and-relationships.md)
-
-
-

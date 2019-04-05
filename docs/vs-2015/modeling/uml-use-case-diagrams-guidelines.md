@@ -1,12 +1,9 @@
 ---
-title: 'UML ユース ケース図: ガイドライン |Microsoft Docs'
-ms.custom: ''
+title: UML ユース ケース図:ガイドライン |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - diagrams - modeling, use case
 - UML, use case diagrams
@@ -17,15 +14,15 @@ ms.assetid: b1ae8ed0-d00b-4f9b-8e23-733e09e81e9b
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b4a4bc02202f8ec1f41052dcdea63d97bbcb9671
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b69a06f0dff7347e5f24899552f25721e71ee818
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793088"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975118"
 ---
-# <a name="uml-use-case-diagrams-guidelines"></a>UML ユース ケース図: ガイドライン
+# <a name="uml-use-case-diagrams-guidelines"></a>UML ユース ケース図:ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio で描画することができます、*ユース ケース図*すると、アプリケーションまたはシステムを使用するユーザーとそれに何ができる、要約します。 UML ユース ケース図を作成する、**アーキテクチャ** メニューのをクリックして**新しい UML またはレイヤー図**します。  
@@ -44,7 +41,7 @@ Visual Studio で描画することができます、*ユース ケース図*す
   
   ユース ケース図には、ユース ケースの詳細は示されません。ユース ケース、アクター、およびシステムの間のいくつかの関係を要約したものにすぎません。 特に、この図では、それぞれのユース ケースの目的を達成するために実行される各ステップの順序は示されません。 これらの詳細は、各ユース ケースにリンクできる他の図やドキュメントに記述できます。 詳細については、次を参照してください。[ユース ケースの詳細な記述](#Details)このトピックの「します。  
   
-  ユース ケースの記述では、システムが運用されるドメインに関連するいくつかの用語 ("販売"、"メニュー"、"顧客" など) を使用します。 これらの用語とその関係を明確に定義することが重要になりますが、これは、UML クラス図を利用することで可能になります。 詳細については、次を参照してください。 [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)します。  
+  ユース ケースの記述では、システムが運用されるドメインに関連するいくつかの用語 ("販売"、"メニュー"、"顧客" など) を使用します。 これらの用語とその関係を明確に定義することが重要になりますが、これは、UML クラス図を利用することで可能になります。 詳細については、「[UML Class Diagrams:ガイドライン](../modeling/uml-class-diagrams-guidelines.md)します。  
   
   ユース ケースでは、システムの機能要求のみを扱います。 ビジネス ルール、サービス品質要求、および制約の実装などの他の要求は別途記述する必要があります。 アーキテクチャと内部の詳細も、別途記述する必要があります。 ユーザーの要件を定義する方法の詳細については、次を参照してください。[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。  
   
@@ -91,13 +88,13 @@ Visual Studio で描画することができます、*ユース ケース図*す
   
     -   アクターは、このシステムと対話するユーザー、組織、および外部システムのクラスを表します。  
   
-    -   各アクターの名前を変更します。 例:**顧客、レストラン、クレジット_カード会社です。**  
+    -   各アクターの名前を変更します。 例:**お客様は、レストラン、クレジット_カード会社です。**  
   
 3.  ドラッグ**ユース ケース**ツールボックスから適切なシステムにします。  
   
     -   ユース ケースは、アクターがこのシステムを利用して実行するアクティビティを表します。  
   
-    -   各アクティビティの名前を、アクターが理解できるタイトルに変更します。 コードに関係するタイトルは使用しないでください。 例:**料理の注文、Pay for Meal、料理の配信**します。  
+    -   各アクティビティの名前を、アクターが理解できるタイトルに変更します。 コードに関係するタイトルは使用しないでください。 例えば:**料理の支払い、料理の配信、料理を注文**します。  
   
     -   などの主要なトランザクションで始まる**料理の注文**など、細かいやり取りは後までにしたまま、**メニュー項目の選択**します。  
   
@@ -145,7 +142,7 @@ Visual Studio で描画することができます、*ユース ケース図*す
   
 1.  アクターを右クリックし、をクリックし、**プロパティ**します。  
   
-     **プロパティ**ウィンドウが表示されます。  
+     **[プロパティ]** ウィンドウが表示されます。  
   
 2.  設定、**イメージ パス**プロパティをイメージ ファイルの場所。  
   
@@ -233,9 +230,9 @@ Visual Studio で描画することができます、*ユース ケース図*す
   
 - ユース ケースをプロジェクト内の別の図 (1 つまたは複数) にリンクする。  
   
-  -   アクティビティ図は、ループ、分岐、および並列スレッドを含むより複雑なプロセスを説明するのに便利です。 プロセスの個々の部分の間のデータ フローを示すこともできます。 詳細については、次を参照してください。 [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。  
+  -   アクティビティ図は、ループ、分岐、および並列スレッドを含むより複雑なプロセスを説明するのに便利です。 プロセスの個々の部分の間のデータ フローを示すこともできます。 詳細については、次を参照してください。 [UML アクティビティ図。ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。  
   
-  -   シーケンス図は、さまざまなアクター間で行われる一連の複雑な対話を説明するのに便利です。 シーケンス図を使用して、各ユース ケースに対してシステム内部で発生する処理を示すこともできます。 詳細については、次を参照してください。 [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
+  -   シーケンス図は、さまざまなアクター間で行われる一連の複雑な対話を説明するのに便利です。 シーケンス図を使用して、各ユース ケースに対してシステム内部で発生する処理を示すこともできます。 詳細については、次を参照してください。 [UML シーケンス図。ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
   
 - ユース ケースを詳細に記述した OneNote のページ、セクション、または段落にユース ケースをリンクする。  
   
@@ -337,7 +334,7 @@ Visual Studio で描画することができます、*ユース ケース図*す
   
 - アクティビティ図内のアクションに、包含される側のユース ケースと同じ名前が付いている。  
   
-  詳細については、次を参照してください。 [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。  
+  詳細については、次を参照してください。 [UML アクティビティ図。ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。  
   
   ![リンクされたアクティビティ図に示すように、ケースのステップを使用して、](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
@@ -447,11 +444,8 @@ Visual Studio で描画することができます、*ユース ケース図*す
  [ユーザー要件のモデリング](../modeling/model-user-requirements.md)   
  [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)   
  [UML モデルおよびダイアグラムを編集します。](../modeling/edit-uml-models-and-diagrams.md)   
- [UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)   
- [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)   
- [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)   
+ [UML ユース ケース図: 参照](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML クラス図: 参照](../modeling/uml-class-diagrams-reference.md)   
+ [UML コンポーネント図: 参照](../modeling/uml-component-diagrams-reference.md)   
  [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)   
- [ビデオ: ユース ケースに機能を整理します。](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
-
-
-
+ [ビデオ:機能をユース ケースにまとめる](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)

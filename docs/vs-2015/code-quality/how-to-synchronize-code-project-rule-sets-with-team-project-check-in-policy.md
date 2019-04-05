@@ -1,14 +1,9 @@
 ---
-title: '方法: チーム プロジェクト チェックイン ポリシーとコード プロジェクト規則セットを同期 |Microsoft Docs'
-ms.custom: ''
+title: '方法: チーム プロジェクト チェックイン ポリシーとコード プロジェクト規則セットの同期 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -16,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f79b8baf3740fdbd57828552a192746e839578c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263121"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973782"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>方法: コード プロジェクト規則セットをチーム プロジェクトのチェックイン ポリシーと同期させる
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ ms.locfileid: "49263121"
   
 1.  プロジェクトの設定 ダイアログ ボックスの コード分析 ページで、チーム プロジェクトのチェックイン ポリシーを選択するには、このトピックの前の手順のいずれかに従います。  
   
-2.  クリックして**オープン**します。  
+2.  **[開く]** をクリックします。  
   
 3.  追加または規則セット エディターを使用して規則を削除します。  
   
@@ -73,6 +68,3 @@ ms.locfileid: "49263121"
 6.  **この規則セットを実行**一覧で、  **\<参照... >** します。  
   
 7.  **オープン** ダイアログ ボックスで、規則セット ファイルを指定します。
-
-
-

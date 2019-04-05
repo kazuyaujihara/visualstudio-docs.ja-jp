@@ -1,14 +1,9 @@
 ---
 title: サーバーと ClickOnce 配置でのクライアント構成の問題 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948942"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974510"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 配置でのサーバーおよびクライアント構成の問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Windows Server で、インターネット インフォメーション サービ
   
 - .deploy  
   
-  オフにすると、このオプションを無効にするただし、 **".deploy"ファイル拡張子を使用して、** オプションを[Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)、その場合、すべてのファイル拡張子のブロックを解除する Web サーバーを構成する必要がありますアプリケーションで使用されます。  
+  オフにすると、このオプションを無効にするただし、 **".deploy"ファイル拡張子を使用して、** オプションを[Publish Options Dialog Box](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)、その場合、すべてのファイル拡張子のブロックを解除する Web サーバーを構成する必要がありますアプリケーションで使用されます。  
   
   IIS をインストールしていないを使用している場合、.manifest、.application、および .deploy、たとえば、構成する必要が、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]、または別の Web サーバー (Apache など) を使用している場合。  
   
@@ -88,7 +83,7 @@ Windows Server で、インターネット インフォメーション サービ
 ## <a name="using-third-party-web-servers"></a>サード パーティの Web サーバーを使用します。  
  展開する場合、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] IIS 以外の Web サーバーからアプリケーションが問題が発生したサーバーがキーの不適切なコンテンツの種類を返す場合[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]など、配置マニフェストとアプリケーション マニフェスト ファイル。 この問題を解決するには、Web サーバーのヘルプが設定されているサーバーに新しいコンテンツ タイプを追加し、すべてのファイル名拡張子マッピングを次の表に表示されていることを確認する方法に関するドキュメントを参照してください。  
   
-|ファイル名拡張子|コンテンツの種類|  
+|ファイル名の拡張子|コンテンツ タイプ|  
 |-------------------------|------------------|  
 |`.application`|`application/x-ms-application`|  
 |`.manifest`|`application/x-ms-manifest`|  
@@ -97,7 +92,7 @@ Windows Server で、インターネット インフォメーション サービ
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce とマップされたドライブ  
- Visual Studio を使用して ClickOnce アプリケーションを発行する場合は、インストール場所として、マップされたドライブを指定できません。 ただし、マニフェスト ジェネレーターおよびエディター (Mage.exe および MageUI.exe) を使用してマップされたドライブからインストールする ClickOnce アプリケーションを変更できます。 詳細については、次を参照してください。 [Mage.exe (マニフェスト生成および編集ツール)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)と[MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)します。  
+ Visual Studio を使用して ClickOnce アプリケーションを発行する場合は、インストール場所として、マップされたドライブを指定できません。 ただし、マニフェスト ジェネレーターおよびエディター (Mage.exe および MageUI.exe) を使用してマップされたドライブからインストールする ClickOnce アプリケーションを変更できます。 詳細については、次を参照してください。 [Mage.exe (マニフェスト生成および編集ツール)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)と[MageUI.exe (マニフェスト生成および編集ツールのグラフィカル クライアント)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)します。  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>アプリケーションをインストールする FTP プロトコルがサポートされていません  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] HTTP 1.1 の Web サーバーまたはファイル サーバーからアプリケーションのインストールをサポートします。 アプリケーションをインストールするのには、FTP、ファイル転送プロトコルはサポートされていません。 アプリケーションのみを公開するのに FTP を使用することができます。 次の表は、これらの違いをまとめたものです。  
@@ -109,15 +104,15 @@ Windows Server で、インターネット インフォメーション サービ
 |https://|インストールすることができます、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]このプロトコルを使用してアプリケーション。|  
 |file://|インストールすることができます、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]このプロトコルを使用してアプリケーション。|  
   
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP sp 2: Windows ファイアウォール  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows ファイアウォール  
  既定では、Windows XP SP2、Windows ファイアウォールが可能です。 発行および実行する場合は Windows XP がインストールされているコンピューター上でアプリケーションを開発している場合[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]IIS を実行しているローカル サーバーからのアプリケーション。 ただし、Windows ファイアウォールを開く場合を除き、別のコンピューターから IIS を実行するサーバーはアクセスできません。 Windows ファイアウォールを管理する手順については、Windows のヘルプを参照してください。  
   
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server:、FrontPage server extensions が有効にします。  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server:FrontPage server extensions を有効にします。  
  Microsoft の FrontPage Server Extensions は、HTTP を使用する Windows の Web サーバーにアプリケーションの発行に必要です。  
   
  既定では、Windows Server にインストールされている FrontPage Server Extensions はありません。 使用する場合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]FrontPage Server Extensions で HTTP を使用する Windows Server の Web サーバーで発行する必要があります最初にインストールする FrontPage Server Extensions。 インストールを実行するには、Windows Server のサーバーの管理の管理ツールを使用します。  
   
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: ロックされたコンテンツの種類  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server:ロックされたコンテンツの種類  
  上の IIS[!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)]特定既知のコンテンツ タイプ (たとえば、.htm、.html、.txt、およびなど) を除くすべてのファイルの種類をロックします。 展開を有効にする[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションがこのサーバーを使用して、型の .application、.manifest、およびアプリケーションで使用されるその他のカスタム ファイルの種類のファイルをダウンロードできるように IIS 設定を変更する必要があります。  
   
  IIS サーバーを使用してを展開する場合は、inetmgr.exe を実行し、既定の Web ページの新しいファイルの種類を追加します。  
@@ -144,6 +139,3 @@ Windows Server で、インターネット インフォメーション サービ
  [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)   
  [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)
-
-
-

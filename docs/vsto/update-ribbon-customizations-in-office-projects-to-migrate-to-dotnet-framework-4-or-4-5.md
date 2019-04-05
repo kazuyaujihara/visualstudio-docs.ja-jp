@@ -97,7 +97,7 @@ ms.locfileid: "58324683"
     this.button1 = this.Factory.CreateRibbonButton();
     ```
 
-     リボン コントロールのヘルパー メソッドの一覧については、次を参照してください。[リボンのインスタンス化を制御](#ribboncontrols)します。
+     リボン コントロールのヘルパー メソッドの一覧については、[リボンのインスタンス化を制御](#ribboncontrols)を参照してください。
 
 4.  Visual C# プロジェクトでは、代わりに特定のリボン デリゲートが使用されるように、`InitializeComponent` デリゲートを使用する <xref:System.EventHandler%601> メソッドのコード行を変更します。
 
@@ -105,7 +105,7 @@ ms.locfileid: "58324683"
 
     \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder>を対象とするプロジェクトで、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または後で、次のコードを代わりに使用する必要があります。
 
-    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder>のリボン デリゲートの一覧については、次を参照してください。[処理リボン イベント](#ribbonevents)します。
+    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder>のリボン デリゲートの一覧については、[処理リボン イベント](#ribbonevents)を参照してください。
 
 5.  Visual Basic プロジェクトでは、ファイルの最後にある `ThisRibbonCollection` クラスを検索します。 このクラスが `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection` から継承されないように、クラスの宣言を変更します。
 
@@ -118,7 +118,7 @@ ms.locfileid: "58324683"
 - リボンの工場出荷時のプロパティを使用して次のようにクラスです。 この方法は、リボン クラス内のコードから使用します。
 
 - 
-  `Globals.Factory.GetRibbonFactory` メソッドの使用。 この方法は、リボン クラス外のコードから使用します。 Globals クラスの詳細については、次を参照してください。 [Office プロジェクト内のオブジェクトへのアクセスをグローバル](../vsto/global-access-to-objects-in-office-projects.md)します。
+  `Globals.Factory.GetRibbonFactory` メソッドの使用。 この方法は、リボン クラス外のコードから使用します。 Globals クラスの詳細については、[Office プロジェクト内のオブジェクトへのアクセスをグローバル](../vsto/global-access-to-objects-in-office-projects.md)を参照してください。
 
   次のコード例は、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降を対象とするプロジェクトのリボン クラスで <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> を作成する方法を示しています。
 
@@ -164,7 +164,7 @@ ms.locfileid: "58324683"
 - リボン クラスの `Factory` プロパティの使用。 この方法は、リボン クラス内のコードから使用します。
 
 - 
-  `Globals.Factory.GetRibbonFactory` メソッドの使用。 この方法は、リボン クラス外のコードから使用します。 Globals クラスの詳細については、次を参照してください。 [Office プロジェクト内のオブジェクトへのアクセスをグローバル](../vsto/global-access-to-objects-in-office-projects.md)します。
+  `Globals.Factory.GetRibbonFactory` メソッドの使用。 この方法は、リボン クラス外のコードから使用します。 Globals クラスの詳細については、[Office プロジェクト内のオブジェクトへのアクセスをグローバル](../vsto/global-access-to-objects-in-office-projects.md)を参照してください。
 
   次のコード例は、.NET Framework 3.5 を対象とするプロジェクトでリボン クラスのタブの `Position` プロパティを設定する方法を示しています。
 

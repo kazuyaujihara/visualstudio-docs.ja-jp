@@ -1,13 +1,8 @@
 ---
 title: モデルを使用して、開発プロセス内 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -15,18 +10,18 @@ ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56534483f8b9cda99b756524d87408efbedfe275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757700"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59002226"
 ---
 # <a name="use-models-in-your-development-process"></a>開発プロセス内でのモデルの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、システム、アプリケーション、またはコンポーネントについて理解し、変更するためのモデルを使用することができます。 モデルは、システムが動作する世界を視覚化できるようにして、ユーザーのニーズを明確化し、システムのアーキテクチャを定義し、コードを分析し、コードが要件を満たしていることを確認できるようにします。 参照してください[Channel 9 ビデオ: モデリングによるアーキテクチャの改善](http://go.microsoft.com/fwlink/?LinkID=252078)します。  
+Visual Studio では、システム、アプリケーション、またはコンポーネントについて理解し、変更するためのモデルを使用することができます。 モデルは、システムが動作する世界を視覚化できるようにして、ユーザーのニーズを明確化し、システムのアーキテクチャを定義し、コードを分析し、コードが要件を満たしていることを確認できるようにします。 参照してください[Channel 9 ビデオ。モデリングによるアーキテクチャの改善](http://go.microsoft.com/fwlink/?LinkID=252078)します。  
   
  どのバージョンの Visual Studio が各モデルの種類をサポートしているかについては、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
@@ -104,7 +99,7 @@ Visual Studio では、システム、アプリケーション、またはコン
   
 -   ユース ケース。 ユース ケースは、それを実装する開発タスクにリンクできます。  
   
--   ユース ケースの拡張。 ユース ケースの 1 つの側面のみをイテレーションに実装する場合は、基本のユース ケースと 1 つ以上の拡張に分割することができます。 拡張とは、«extend» リレーションシップによって基本ケースとリンクされたユース ケースです。 ユース ケースの拡張の詳細については、次を参照してください。 [UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)します。  
+-   ユース ケースの拡張。 ユース ケースの 1 つの側面のみをイテレーションに実装する場合は、基本のユース ケースと 1 つ以上の拡張に分割することができます。 拡張とは、«extend» リレーションシップによって基本ケースとリンクされたユース ケースです。 ユース ケースの拡張の詳細については、次を参照してください。 [UML ユース ケース図。Reference](../modeling/uml-use-case-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。  
   
 -   ビジネス ルールやサービスの要件の品質について記載したコメントです。 詳細については、次を参照してください。[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。  
   
@@ -137,18 +132,15 @@ Visual Studio では、システム、アプリケーション、またはコン
   
 |**カテゴリ**|**リンク**|  
 |------------------|---------------|  
-|**ビデオ**|![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I ビデオ: UML モデルを使用を (Visual Studio 2010 Ultimate) の図では、作成する方法](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Visual Studio 2010 での UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I シリーズ: UML ツールと機能拡張 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
+|**ビデオ**|![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I ビデオ。作成して、UML モデルと図 (Visual Studio 2010 Ultimate) を使用する方法](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9。Visual Studio 2010 での UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I シリーズ。UML ツールと機能拡張 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化ツールとモデリング SDK (DSL ツール)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技術記事とジャーナル**|[MSDN アーキテクチャ センター](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio アーキテクチャ ツーリング ガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>関連項目  
- [アジャイル開発でのモデルの使用](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [アジャイル開発でのモデルの使用](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [アプリのモデルを作成します。](../modeling/create-models-for-your-app.md)   
  [ユーザー要件のモデリング](../modeling/model-user-requirements.md)   
  [アプリのアーキテクチャをモデル化します。](../modeling/model-your-app-s-architecture.md)   
  [モデルからテストを開発します。](../modeling/develop-tests-from-a-model.md)   
  [モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)
-
-
-

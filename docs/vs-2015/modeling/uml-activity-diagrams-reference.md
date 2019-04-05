@@ -1,12 +1,9 @@
 ---
-title: 'UML アクティビティ図: リファレンス |Microsoft Docs'
-ms.custom: ''
+title: UML アクティビティ図:参照 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.activitydiagram.diagram
 - vs.teamarch.activitydiagram.toolbox
@@ -22,15 +19,15 @@ ms.assetid: 07efcd17-2a96-4052-9957-6dcccbb725ee
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2dcfa13a7ac97a5afd3e315fcef13a706c5f4bce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810469"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978229"
 ---
-# <a name="uml-activity-diagrams-reference"></a>UML アクティビティ図: リファレンス
+# <a name="uml-activity-diagrams-reference"></a>UML アクティビティ図:参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 *アクティビティ図*の一連のアクションをワークフローとして、ビジネス プロセスまたはソフトウェア プロセスが表示されます。 ユーザー、ソフトウェア コンポーネント、またはコンピューターが、これらのアクションを実行できます。  
@@ -39,13 +36,13 @@ ms.locfileid: "51810469"
   
 - ビジネス プロセス、またはユーザーとシステム間のワーク フロー。 詳細については、次を参照してください。[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。  
   
-- ユース ケースで実行された手順。 詳細については、次を参照してください。 [UML ユース ケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。  
+- ユース ケースで実行された手順。 詳細については、次を参照してください。 [UML ユース ケース図。ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。  
   
 - ソフトウェア プロトコル (コンポーネント間の相互作用の許可されたシーケンス)。  
   
 - ソフトウェア アルゴリズム。  
   
-  このトピックでは、アクティビティ図で使用できる要素について説明します。 詳細はアクティビティの描画の図を参照してください[UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。 UML アクティビティ図を作成する、**アーキテクチャ** メニューのをクリックして**新しい UML またはレイヤー図**します。 一般にモデリング図を描画する方法の詳細については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
+  このトピックでは、アクティビティ図で使用できる要素について説明します。 詳細はアクティビティの描画の図を参照してください[UML アクティビティ図。ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。 UML アクティビティ図を作成する、**アーキテクチャ** メニューのをクリックして**新しい UML またはレイヤー図**します。 一般にモデリング図を描画する方法の詳細については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
   
 ## <a name="reading-activity-diagrams"></a>アクティビティ図の読み取り  
  次のセクションの表では、アクティビティ図とその主要なプロパティに対して使用できる要素について説明します。 要素のプロパティの完全な一覧は、次を参照してください。 [UML アクティビティ図の要素のプロパティ](../modeling/properties-of-elements-on-uml-activity-diagrams.md)します。  
@@ -55,7 +52,7 @@ ms.locfileid: "51810469"
  図を読み取るには、トークン、つまりコントロールのスレッドが、コネクターが 1 つのアクションから別のアクションへコネクターに沿って受け渡されると想定します。  
   
 ### <a name="simple-control-flows"></a>シンプルな制御フロー  
- 分岐とループを使って、一連のアクションを表示できます。 ここで説明する要素を使用する方法の詳細については、トピックの制御フローの記述」セクションを参照してください。 [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。  
+ 分岐とループを使って、一連のアクションを表示できます。 ここで説明する要素を使用する方法の詳細については、トピックの制御フローの記述」セクションを参照してください。 [UML アクティビティ図。ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。  
   
  ![単純な制御フロー](../modeling/media/uml-actovsimple.png "UML_ActOvSimple")  
   
@@ -73,7 +70,7 @@ ms.locfileid: "51810469"
 |9|**振る舞い呼び出しアクション**|別のアクティビティ図に関する詳細を定義するアクション。<br /><br /> -   **IsSynchronous** - 場合は、アクティビティが終了するまで、アクションは true、待機します。<br />-   **動作**-呼び出されるアクティビティ。|  
 |(表示されていません)|**操作のアクションを呼び出します。**|クラスのインスタンスに関する操作を呼び出すアクション。|  
 ||**アクティビティ**|アクティビティ図で表されるワーク フロー。 アクティビティのプロパティを表示することで選択する必要があります**UML モデル エクスプ ローラー**します。<br /><br /> -   **読み取り専用**- 場合は true、アクティビティが任意のオブジェクトの状態を変更しないでください。<br />-   **Is Single Execution** - true の場合、ある場合に最も一度にこの図の 1 つ実行します。|  
-||**UML アクティビティ図**|アクティビティを表示する図。 このアクティビティのプロパティを表示するには、図の空白部分をクリックします。 **注:** アクティビティ図の名前を図と図によって表示されるアクティビティを含むファイルが異なる場合がします。|  
+||**UML アクティビティ図**|アクティビティを表示する図。 このアクティビティのプロパティを表示するには、図の空白部分をクリックします。 **注:** アクティビティ図の名前、この図が保存されているファイル、およびこの図によって表示されるアクティビティはすべて異なる場合があります。|  
   
 ### <a name="concurrent-flows"></a>同時実行フロー  
  同時に実行されるアクションのシーケンスを記述することができます。 詳細については、「同時実行フローの描画」を参照してください。  
@@ -105,6 +102,3 @@ ms.locfileid: "51810469"
 ## <a name="see-also"></a>関連項目  
  [UML モデルおよびダイアグラムを編集します。](../modeling/edit-uml-models-and-diagrams.md)   
  [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)
-
-
-

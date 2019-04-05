@@ -1,14 +1,9 @@
 ---
 title: Visual Basic でサポートされていない編集エディット コンティニュ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc6e7a5d1d72464849bff20be066ea70e8264623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b22f4cdc9fa4bf3816b1b5644eee34279e20da1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787901"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58978467"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Visual Basic エディット コンティニュでサポートされていない編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ ms.locfileid: "51787901"
  サポートされていない変更を行う必要がある場合は、デバッグを停止し、変更を加えた後で新しいデバッグ セッションを開始します。  
   
 ###  <a name="BKMK_MethodandPropertyBodyEdits"></a> メソッドおよびプロパティ本体の編集  
- **静的ローカル変数への変更がサポートされていない**: 追加や、ローカル変数を更新して、コンパイル エラーが発生する場合は、静的ローカル変数を削除します。  
+ **静的ローカル変数への変更がサポートされていない**:追加や、ローカル変数を更新または静的ローカル変数を削除する場合は、そのコンパイル エラーが発生します。  
   
- **サポートされていないジェネリック変更**: ジェネリック メソッド自体またはジェネリック メソッドの本体の変更はサポートされていません。 ただし、ジェネリック型のインスタンス化や既存のジェネリック メソッドへの呼び出しは追加、削除、または変更できます。  
+ **サポートされていないジェネリック変更**:ジェネリック メソッド自体、つまりジェネリック メソッドの本体の変更はサポートされていません。 ただし、ジェネリック型のインスタンス化や既存のジェネリック メソッドへの呼び出しは追加、削除、または変更できます。  
   
  **サポートされていないその他の変更**  
   
@@ -223,8 +218,5 @@ ms.locfileid: "51787901"
 -   フィールドの種類の変更  
   
 ## <a name="see-also"></a>関連項目  
- [方法: エディット中断モードで編集を適用して続行](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+ [方法: 編集と中断モードで編集を適用して続行](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [エディット コンティニュ (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

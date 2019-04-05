@@ -23,7 +23,7 @@ ms.locfileid: "54865620"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>方法: データベースからデータをワークシートに読み込む
 
-Windows フォーム プロジェクトでのデータにアクセスするのと同じ方法でドキュメント レベルの Office プロジェクトでのデータにアクセスすることができます。 同じツールとコードを使用してソリューションにデータを取り込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 さらに、利用では、ホスト コントロールは、イベントとデータ バインディング機能による機能強化された Microsoft Office Excel でのネイティブのオブジェクトと呼ばれるようです。 詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
+Windows フォーム プロジェクトでのデータにアクセスするのと同じ方法でドキュメント レベルの Office プロジェクトでのデータにアクセスすることができます。 同じツールとコードを使用してソリューションにデータを取り込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 さらに、利用では、ホスト コントロールは、イベントとデータ バインディング機能による機能強化された Microsoft Office Excel でのネイティブのオブジェクトと呼ばれるようです。 詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)を参照してください。
 
 [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -37,15 +37,15 @@ Windows フォーム プロジェクトでのデータにアクセスするの�
 
 1.  デザイナーでワークシートを開き、Visual Studio で、Excel のドキュメント レベルのプロジェクトを開きます。
 
-2.  **[データ ソース]** ウィンドウを開いて、プロジェクトのデータ ソースを作成します。 詳細については、次を参照してください。[新しい接続を追加](../data-tools/add-new-connections.md)します。
+2.  **[データ ソース]** ウィンドウを開いて、プロジェクトのデータ ソースを作成します。 詳細については、[新しい接続を追加](../data-tools/add-new-connections.md)を参照してください。
 
 3.  フィールドまたはから使用テーブルをドラッグして、**データソース**をワークシートにウィンドウ。
 
 次のコントロールの 1 つは、ワークシートに作成されます。
 
--   フィールドをドラッグする場合、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールがワークシートに作成します。 詳細については、次を参照してください。 [NamedRange コントロール](../vsto/namedrange-control.md)します。
+-   フィールドをドラッグする場合、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールがワークシートに作成します。 詳細については、[NamedRange コントロール](../vsto/namedrange-control.md)を参照してください。
 
--   テーブルをドラッグする場合、<xref:Microsoft.Office.Tools.Excel.ListObject>コントロールがワークシートに作成します。 詳細については、次を参照してください。 [ListObject コントロール](../vsto/listobject-control.md)します。
+-   テーブルをドラッグする場合、<xref:Microsoft.Office.Tools.Excel.ListObject>コントロールがワークシートに作成します。 詳細については、[ListObject コントロール](../vsto/listobject-control.md)を参照してください。
 
 テーブルを選択して、別のコントロールを追加したり、フィールドに、**データソース**ウィンドウとドロップダウン リストから別のコントロールを選択します。
 
@@ -53,13 +53,13 @@ Windows フォーム プロジェクトでのデータにアクセスするの�
 
 プロジェクトには、コントロールに加えて、データに関連する以下のオブジェクトも自動的に追加されます。
 
--   データベース内の接続したデータ テーブルをカプセル化する型指定されたデータセット。 詳細については、次を参照してください。 [Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)します。
+-   データベース内の接続したデータ テーブルをカプセル化する型指定されたデータセット。 詳細については、[Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)を参照してください。
 
--   コントロールを型指定されたデータセットに接続する <xref:System.Windows.Forms.BindingSource>。 詳細については、次を参照してください。 [BindingSource コンポーネントの概要](/dotnet/framework/winforms/controls/bindingsource-component-overview)します。
+-   コントロールを型指定されたデータセットに接続する <xref:System.Windows.Forms.BindingSource>。 詳細については、[BindingSource コンポーネントの概要](/dotnet/framework/winforms/controls/bindingsource-component-overview)を参照してください。
 
--   型指定されたデータセットをデータベースに接続する TableAdapter。 詳細については、次を参照してください。 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)します。
+-   型指定されたデータセットをデータベースに接続する TableAdapter。 詳細については、[TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)を参照してください。
 
--   階層更新を有効にするデータセット内のテーブル アダプターを調整するために使用 TableAdapterManager します。 詳細については、次を参照してください。[階層更新](../data-tools/hierarchical-update.md)と[TableAdapterManager 参照](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)します。
+-   階層更新を有効にするデータセット内のテーブル アダプターを調整するために使用 TableAdapterManager します。 詳細については、[階層更新](../data-tools/hierarchical-update.md)と[TableAdapterManager 参照](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)を参照してください。
 
 プロジェクトを実行すると、データ ソースの先頭のレコードがコントロールに表示されます。 <xref:System.Windows.Forms.BindingSource> を使用すると、ユーザーがレコードをスクロールできるようになります。
 

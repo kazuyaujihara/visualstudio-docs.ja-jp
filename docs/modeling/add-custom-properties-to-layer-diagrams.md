@@ -46,7 +46,7 @@ ms.locfileid: "58415825"
 
 **コードが VSIX プロジェクトで確認します。**
 
-プロパティがコマンド、ジェスチャ、または検証プロジェクトの一部の場合は、何も追加する必要はありません。 カスタム プロパティのコードは、MEF コンポーネントとして定義された Visual Studio 機能拡張プロジェクトで定義する必要があります。 詳細については、次を参照してください。[依存関係図にコマンドおよびジェスチャを追加](../modeling/add-commands-and-gestures-to-layer-diagrams.md)または[依存関係図へのカスタム アーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)します。
+プロパティがコマンド、ジェスチャ、または検証プロジェクトの一部の場合は、何も追加する必要はありません。 カスタム プロパティのコードは、MEF コンポーネントとして定義された Visual Studio 機能拡張プロジェクトで定義する必要があります。 詳細については、[依存関係図にコマンドおよびジェスチャを追加](../modeling/add-commands-and-gestures-to-layer-diagrams.md)または[依存関係図へのカスタム アーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)を参照してください。
 
 **カスタム プロパティを定義します。**
 

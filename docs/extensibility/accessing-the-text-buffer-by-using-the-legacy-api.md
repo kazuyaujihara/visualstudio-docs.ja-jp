@@ -27,7 +27,7 @@ ms.locfileid: "56722448"
 
  テキスト バッファーのいずれかの座標システム動作しますが、2 次元座標を使用する最適化されています。 1 次元座標系では、パフォーマンスのオーバーヘッドを作成できます。 そのため、可能な場合は、2 次元座標システムを使用します。
 
- テキスト バッファーの 2 つ目の責任は、ファイルの永続化します。 テキスト バッファー オブジェクトを実装するのには、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>プロジェクト項目のドキュメント データ オブジェクトのコンポーネントと永続化に関連するその他の環境コンポーネントとして機能します。 詳細については、次を参照してください。[とプロジェクト項目の保存](../extensibility/internals/opening-and-saving-project-items.md)します。
+ テキスト バッファーの 2 つ目の責任は、ファイルの永続化します。 テキスト バッファー オブジェクトを実装するのには、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>プロジェクト項目のドキュメント データ オブジェクトのコンポーネントと永続化に関連するその他の環境コンポーネントとして機能します。 詳細については、[とプロジェクト項目の保存](../extensibility/internals/opening-and-saving-project-items.md)を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [従来の API を使用して、表示設定を変更](../extensibility/changing-view-settings-by-using-the-legacy-api.md)レガシ API を使用してビューの設定を変更する方法について説明します。

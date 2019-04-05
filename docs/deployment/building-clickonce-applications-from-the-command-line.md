@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576a6d219a27ad51c096ee3ddb177b656b0552e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636958"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567842"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>ClickOnce アプリケーションのコマンド ラインからのビルド
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]、統合開発環境 (IDE) で作成される場合でも、コマンドラインからプロジェクトをビルドできます。 実際で作成されたプロジェクトを再構築する[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]のみを持つ別のコンピューターで、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]をインストールします。 自動化されたプロセスを使用してビルドを再現することができます、たとえば、中央のビルド ラボまたはを使用して高度なスクリプティング プロジェクト自体のビルドの範囲外の手法です。
@@ -41,21 +41,21 @@ ms.locfileid: "56636958"
 
 #### <a name="to-create-and-publish-a-clickonce-project"></a>作成して、ClickOnce プロジェクトを発行するには
 
-1. クリックして**新しいプロジェクト**から、**ファイル**メニュー。 **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+1. Visual Studio を起動し、新しいプロジェクトを作成します。
 
-2. 選択**Windows アプリケーション**名前を付けます`CmdLineDemo`します。
+    選択、 **Windows デスクトップ アプリケーション**プロジェクト テンプレートをプロジェクトに名前を`CmdLineDemo`します。
 
-3. **ビルド** メニューのをクリックして、**発行**コマンド。
+1. **ビルド** メニューのをクリックして、**発行**コマンド。
 
     この手順により、プロジェクトが生成するために正しく構成されている、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションの展開。
 
     発行ウィザードが表示されます。
 
-4. 発行ウィザードで、**完了**します。
+1. 発行ウィザードで、**完了**します。
 
     Visual Studio を生成すると呼ばれる既定の Web ページを表示*Publish.htm*します。
 
-5. プロジェクトを保存しが格納されているフォルダーの場所をメモしておきます。
+1. プロジェクトを保存しが格納されているフォルダーの場所をメモしておきます。
 
    上記の手順では、作成、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]プロジェクトは、最初に公開されています。 IDE の外部でビルドを再現できます。
 

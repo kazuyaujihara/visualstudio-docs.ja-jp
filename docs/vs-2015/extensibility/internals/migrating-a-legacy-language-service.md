@@ -1,26 +1,21 @@
 ---
 title: 従来の言語サービスの移行 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 826a27fd3e3041e99f34acce0474a8e71837c69d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4739565408a16ecaeee668264595ec48620ec847
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807609"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963637"
 ---
 # <a name="migrating-a-legacy-language-service"></a>従来の言語サービスの移行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -100,9 +95,9 @@ ms.locfileid: "51807609"
   
     -   次のフィールドを変更します。  
   
-    -   **ID**: RegExLangServ  
+    -   **ID**:RegExLangServ  
   
-    -   **製品名**: RegExLangServ  
+    -   **製品名**:RegExLangServ  
   
     -   **説明**: 正規表現の言語サービス。  
   
@@ -116,4 +111,3 @@ ms.locfileid: "51807609"
   
 ## <a name="see-also"></a>関連項目  
  [従来の言語サービスの機能拡張](../../extensibility/internals/legacy-language-service-extensibility.md)
-

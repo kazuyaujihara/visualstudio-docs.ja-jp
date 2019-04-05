@@ -1,23 +1,20 @@
 ---
 title: ドメイン固有言語からコードを生成する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e3706cc9-2afd-456a-a879-68425a248ebc
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5edc6e267957f08837399ae5c2e56bce3cc26cce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 63e1b48a7582294c200b1e30147d85a9b26165d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231999"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975887"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>ドメイン固有言語からのコード生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,6 +67,3 @@ Microsoft[!INCLUDE[dsl](../includes/dsl-md.md)]モデルで表されたデータ
  [ビルド処理でのコード生成](../modeling/code-generation-in-a-build-process.md)  
   
  ビルド サーバーでの DSL からファイルを生成している場合は、このトピックを読みます。
-
-
-

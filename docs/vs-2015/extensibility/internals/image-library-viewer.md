@@ -1,21 +1,17 @@
 ---
 title: イメージ ライブラリ ビューアー |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c0e277a123fe24da9824fae94b13eee686f5663
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778021"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976233"
 ---
 # <a name="image-library-viewer"></a>イメージ ライブラリ ビューア
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +72,7 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
 |-|-|  
 |**サブ要素**|**定義**|  
 |インポート|現在のマニフェストで使用するための指定されたマニフェスト ファイルのシンボルをインポートします。|  
-|GUID|シンボルは、GUID を表し、GUID の書式設定と一致する必要があります。|  
+|Guid|シンボルは、GUID を表し、GUID の書式設定と一致する必要があります。|  
 |ID|シンボルは、ID を表し、負でない整数でなければなりません。|  
 |String|シンボルは、任意の文字列値を表します。|  
   
@@ -117,7 +113,7 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|GUID|[必須]イメージのモニカーの GUID 部分|  
+|Guid|[必須]イメージのモニカーの GUID 部分|  
 |ID|[必須]イメージのモニカーの ID 部分|  
 |AllowColorInversion|[省略可能、既定値は true]イメージが黒っぽい背景で使用されるときに反転されるプログラムでの色を持つかどうかを示します。|  
   
@@ -135,7 +131,7 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
 |-|-|  
 |**属性**|**定義**|  
 |URI|[必須]イメージを読み込むことを定義する URI。 次のいずれかを指定できます。<br /><br /> は、 [Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)アプリケーションを使用して:///オーソリティ<br /><br /> -絶対コンポーネント リソース参照<br /><br /> -ネイティブ リソースを含むファイルへのパス|  
-|背景|[省略可能]背景が使用するものでは、ソースの種類にどのようなことを示します。<br /><br /> 次のいずれかを指定できます。<br /><br /> - *Light*: 明るい背景では、ソースを使用できます。<br /><br /> - *濃い*: ソースは、暗い背景で使用できます。<br /><br /> - *ハイコントラスト*: ハイ コントラスト モードで任意のバック グラウンドでは、ソースを使用できます。<br /><br /> - *HighContrastLight*: ハイ コントラスト モードのライト バック グラウンドでは、ソースを使用できます。<br /><br /> -*HighContrastDark*: ソースは、ハイ コントラスト モードで暗い背景で使用できます。<br /><br /> 場合、**バック グラウンド**属性を省略すると、ソースは、任意の背景で使用できます。<br /><br /> 場合**バック グラウンド**は*Light*、*濃い*、 *HighContrastLight*、または*HighContrastDark*、ソースの色を反転ことはありません。 場合**バック グラウンド**を省略するかに設定*ハイコントラスト*、ソースの色の反転は、イメージのによって制御される**AllowColorInversion**属性。|  
+|背景|[省略可能]背景が使用するものでは、ソースの種類にどのようなことを示します。<br /><br /> 次のいずれかを指定できます。<br /><br /> - *Light*:ソースは、明るい背景で使用できます。<br /><br /> - *濃い*:ソースは、暗い背景で使用できます。<br /><br /> - *ハイコントラスト*:ソースは、ハイ コントラスト モードで、色の背景で使用できます。<br /><br /> - *HighContrastLight*:ソースは、ハイ コントラスト モードで明るい背景で使用できます。<br /><br /> -*HighContrastDark*:ソースは、ハイ コントラスト モードで暗い背景で使用できます。<br /><br /> 場合、**バック グラウンド**属性を省略すると、ソースは、任意の背景で使用できます。<br /><br /> 場合**バック グラウンド**は*Light*、*濃い*、 *HighContrastLight*、または*HighContrastDark*、ソースの色を反転ことはありません。 場合**バック グラウンド**を省略するかに設定*ハイコントラスト*、ソースの色の反転は、イメージのによって制御される**AllowColorInversion**属性。|  
   
  A\<ソース > 要素は省略可能な次のサブ要素の 1 つだけであることができます。  
   
@@ -173,7 +169,7 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|GUID|[必須]イメージのモニカーの GUID 部分|  
+|Guid|[必須]イメージのモニカーの GUID 部分|  
 |ID|[必須]イメージのモニカーの ID 部分|  
 |外部|[省略可能、既定値は false]イメージ モニカーが現在のマニフェストでイメージを参照するかどうかを示します。|  
   
@@ -228,10 +224,9 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
   
 ## <a name="notes"></a>メモ  
   
--   既定では、このツールは Visual Studio のインストール ディレクトリに存在するいくつかのイメージのマニフェストにプルします。 モニカーをパブリックに使用できるは 1 つだけが、 **Microsoft.VisualStudio.ImageCatalog**マニフェストします。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (は**いない**カスタム マニフェストにこの GUID を上書き) の種類: KnownMonikers  
+-   既定では、このツールは Visual Studio のインストール ディレクトリに存在するいくつかのイメージのマニフェストにプルします。 モニカーをパブリックに使用できるは 1 つだけが、 **Microsoft.VisualStudio.ImageCatalog**マニフェストします。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (は**いない**カスタム マニフェストにこの GUID を上書き) の種類。KnownMonikers  
   
 -   ツールは、アプリケーションが、実際に表示するのに数秒がかかる場合がありますのでが見つかると、すべてのイメージ マニフェストを読み込むの起動時にしようとします。 低速または応答も、マニフェストの読み込み中にられます可能性があります。  
   
 ## <a name="sample-output"></a>出力例  
  このツールは、任意の出力を生成しません。
-

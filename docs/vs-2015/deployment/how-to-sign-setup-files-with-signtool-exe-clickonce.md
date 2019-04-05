@@ -1,14 +1,9 @@
 ---
-title: '方法: SignTool.exe (ClickOnce) を持つファイルを使用してセットアップ |Microsoft Docs'
-ms.custom: ''
+title: '方法: セットアップ ファイルに SignTool.exe (ClickOnce) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f6975fb9c3c3e1abeeaebe23b4a85f41833e421e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fbbc745ae2d0a20ab14b3960e34182d7f4ed1865
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973913"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>方法: SignTool.exe を使用してセットアップ ファイルに署名する (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,23 +41,23 @@ SignTool.exe を使用して、セットアップ プログラム (setup.exe) �
   
 2.  **ソリューション エクスプローラー**でプロジェクトを選択します。  
   
-3.  **プロジェクト** メニューのをクリックして*ProjectName* **プロパティ**します。  
+3.  **[プロジェクト]** メニューの *ProjectName* の **[プロパティ]** をクリックします。  
   
-4.  **署名** ページでクリア**ClickOnce マニフェストに署名**します。  
+4.  **[署名]** ページの **[ClickOnce マニフェストに署名する]** をオフにします。  
   
-5.  **発行**] ページで [**の前提条件**します。  
+5.  **[発行]** ページで、**[必須コンポーネント]** をクリックします。  
   
-6.  すべての前提条件が選択されていることを確認し、をクリックして**OK**します。  
+6.  すべての必須コンポーネントが選択されていることを確認し、**[OK]** をクリックします。  
   
-7.  **発行**ページで発行設定を確認し、をクリックし、**今すぐ発行**します。  
+7.  **[発行]** ページで発行設定を確認して、**[今すぐ発行]** をクリックします。  
   
      ソリューションは、未署名のアプリケーション マニフェスト、未署名の配置マニフェスト、バージョン固有のファイル、および未署名のセットアップ プログラムを発行フォルダーに発行します。  
   
-8.  **発行**] ページで [**の前提条件**します。  
+8.  **[発行]** ページで、**[必須コンポーネント]** をクリックします。  
   
-9. **の前提条件**、ダイアログ ボックスをオフ**必須コンポーネントをインストールするセットアップ プログラムを作成**です。  
+9. **[必須コンポーネント]** ダイアログ ボックスで、**[必須コンポーネントをインストールするセットアップ プログラムを作成する]** をオフにします。  
   
-10. **発行**ページで発行設定を確認し、をクリックし、**今すぐ発行**します。  
+10. **[発行]** ページで発行設定を確認して、**[今すぐ発行]** をクリックします。  
   
      ソリューションは、署名済みのアプリケーション マニフェスト、署名済みの配置マニフェスト、およびバージョン固有のファイルを発行フォルダーに発行します。 未署名のセットアップ プログラムは発行プロセスで上書きされません。  
   
@@ -85,7 +80,4 @@ SignTool.exe を使用して、セットアップ プログラム (setup.exe) �
     ```  
   
 ## <a name="see-also"></a>関連項目  
- [方法: アプリケーション マニフェストおよび配置マニフェストに再署名する](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-
+ [方法: アプリケーション マニフェストと配置マニフェストの再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

@@ -1,14 +1,9 @@
 ---
 title: Windows ストア アプリの実行、ローカル コンピューターの |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,18 +13,18 @@ ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 40fafcbdacac8a63a4aba70526a473d091b35de8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766841"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962609"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>ローカル コンピューターでの Windows ストア アプリの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows にのみ適用されます] (../Image/windows_only_content.png"windows_only_content")  
+Applies to Windows only](../Image/windows_only_content.png "windows_only_content")  
   
  Windows ストア アプリのパフォーマンス分析のデバッグ、テスト、実行を行う場合、Visual Studio をホストする同じコンピューター上でアプリを実行することができます。 デバイスのディスプレイがタッチ対応である場合は、アプリの全機能を実施できますが、そうでない場合の操作はマウスとキーボードに限定されます。  
   
@@ -63,6 +58,3 @@ Windows にのみ適用されます] (../Image/windows_only_content.png"windows_
  **Windows ストア アプリの実行中のインスタンスから Visual Studio に切り替え**  
   
  ローカル コンピューターで Windows ストア アプリを実行する際に 1 つのモニターだけを使用する場合は、アプリを実行したまま Visual Studio へ切り替えるといいでしょう。 たとえば、イベント待ちだったり長いループや無限ループにトラップされるなど、アプリがブレークポイントに到達できない状態にある可能性があります。 Visual Studio に戻るには、Alt + Tab キーを押します。
-
-
-

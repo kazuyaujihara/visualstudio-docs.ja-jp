@@ -31,7 +31,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56608722"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint プロジェクト項目スキーマのリファレンス
-  Visual Studio の内容を検証する SharePoint プロジェクト項目のスキーマを使用して *.spdata*ファイル。 *.Spdata*ファイルは、SharePoint プロジェクト項目の動作とコンテンツを指定します。 SharePoint プロジェクト アイテムの内容に関する詳細については、次を参照してください。[項目テンプレートとの SharePoint プロジェクト アイテムのプロジェクト テンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)します。
+  Visual Studio の内容を検証する SharePoint プロジェクト項目のスキーマを使用して *.spdata*ファイル。 *.Spdata*ファイルは、SharePoint プロジェクト項目の動作とコンテンツを指定します。 SharePoint プロジェクト アイテムの内容に関する詳細については、[項目テンプレートとの SharePoint プロジェクト アイテムのプロジェクト テンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)を参照してください。
 
  SharePoint プロジェクト項目スキーマ ProjectItemModelSchema.xsd という名前が既定では、%program files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas インストールされています。
 

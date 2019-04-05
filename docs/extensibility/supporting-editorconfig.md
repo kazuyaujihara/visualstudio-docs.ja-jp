@@ -19,7 +19,7 @@ ms.locfileid: "56696975"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>EditorConfig 言語サービスのサポート
 
-[EditorConfig](http://editorconfig.org/)ファイルを使用すると、プロジェクトごとに、インデント サイズなどの一般的なテキスト エディター オプションについて説明します。 EditorConfig ファイルの Visual Studio のサポートについての詳細については、次を参照してください。 [EditorConfig を使用して移植可能なエディターの設定を作成する](../ide/create-portable-custom-editor-options.md)します。
+[EditorConfig](http://editorconfig.org/)ファイルを使用すると、プロジェクトごとに、インデント サイズなどの一般的なテキスト エディター オプションについて説明します。 EditorConfig ファイルの Visual Studio のサポートについての詳細については、[EditorConfig を使用して移植可能なエディターの設定を作成する](../ide/create-portable-custom-editor-options.md)を参照してください。
 
 ほとんどの場合、Visual Studio 言語サービスを実装するとき、EditorConfig ユニバーサル プロパティをサポートするための追加の作業は必要ありません。 ユーザーがファイルを開くと、コア エディターが .editorconfig ファイルを自動的に検出して読み込み、適切なテキスト バッファーとビュー オプションを設定します。 ただし、タブやスペースなどの編集、一部の言語サービスはグローバル設定を使用するのではなく、適切なコンテキストに基づいてテキストの表示 オプションを使用して選択します。 そのような場合は、EditorConfig ファイルをサポートするように言語サービスを更新する必要があります。
 

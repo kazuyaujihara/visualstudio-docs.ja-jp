@@ -26,7 +26,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 2941000e9fa2c6f1d9fd4835c9fd0b8fa1fd1b4f
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49182430"
@@ -36,7 +36,7 @@ ms.locfileid: "49182430"
 
 アプリケーションの必須コンポーネントを展開するには、ブートス トラップ パッケージを使用できます。 ブートス トラップ パッケージには、ロケールごとに、パッケージ マニフェストが 1 つの製品マニフェスト ファイルが含まれています。 別のローカライズされたバージョン間で共有機能は、製品マニフェストに移動してください。  
   
- パッケージ マニフェストの詳細については、次を参照してください。[方法: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md)します。  
+ パッケージ マニフェストの詳細については、[方法: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md)を参照してください。  
   
 ## <a name="creating-the-package-manifest"></a>パッケージ マニフェストの作成  
   

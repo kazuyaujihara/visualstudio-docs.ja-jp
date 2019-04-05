@@ -21,12 +21,12 @@ ms.lasthandoff: 02/08/2019
 ms.locfileid: "55926854"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>サーバー上のドキュメントのデータにアクセス
-  Microsoft Office Word または Microsoft Office Excel のオブジェクト モデルを使用することがなく、ドキュメント レベル カスタマイズ内のデータに対してプログラミングできます。 つまり、Excel がインストールされてまたは Word がないサーバー上のドキュメントに含まれているデータにアクセスすることができます。 サーバーのコード例については、(たとえば、[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]ページ)、ドキュメント内のデータをカスタマイズおよびカスタマイズされたドキュメントをエンドユーザーに送信できます。 エンド ユーザーでは、文書が開いたら、ソリューション アセンブリにデータ バインド コードは、ドキュメントにカスタマイズされたデータをバインドします。 ユーザー インターフェイスから、ドキュメント内のデータが区切られたため、可能です。 詳細については、次を参照してください。[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)します。
+  Microsoft Office Word または Microsoft Office Excel のオブジェクト モデルを使用することがなく、ドキュメント レベル カスタマイズ内のデータに対してプログラミングできます。 つまり、Excel がインストールされてまたは Word がないサーバー上のドキュメントに含まれているデータにアクセスすることができます。 サーバーのコード例については、(たとえば、[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]ページ)、ドキュメント内のデータをカスタマイズおよびカスタマイズされたドキュメントをエンドユーザーに送信できます。 エンド ユーザーでは、文書が開いたら、ソリューション アセンブリにデータ バインド コードは、ドキュメントにカスタマイズされたデータをバインドします。 ユーザー インターフェイスから、ドキュメント内のデータが区切られたため、可能です。 詳細については、[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)を参照してください。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="cache-data-for-use-on-a-server"></a>サーバーで使用するためのデータをキャッシュします。
- ドキュメント内のデータ オブジェクトをキャッシュするでをマーク、 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 、デザイン時に属性またはを使用して、`StartCaching`メソッドの実行時にホスト項目。 ドキュメント内のデータ オブジェクトをキャッシュするときに、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]ドキュメントに格納されている XML 文字列にオブジェクトをシリアル化します。 オブジェクトは、キャッシュの対象にする特定の要件を満たす必要があります。 詳細については、次を参照してください。[データ キャッシュ](../vsto/caching-data.md)します。
+ ドキュメント内のデータ オブジェクトをキャッシュするでをマーク、 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 、デザイン時に属性またはを使用して、`StartCaching`メソッドの実行時にホスト項目。 ドキュメント内のデータ オブジェクトをキャッシュするときに、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]ドキュメントに格納されている XML 文字列にオブジェクトをシリアル化します。 オブジェクトは、キャッシュの対象にする特定の要件を満たす必要があります。 詳細については、[データ キャッシュ](../vsto/caching-data.md)を参照してください。
 
  サーバー側コードでは、データ キャッシュ内の任意のデータ オブジェクトを操作できます。 キャッシュされたデータのインスタンスにバインドされているコントロールは、データに行われたサーバー側の変更は、クライアントのドキュメントを開いたときに自動的に表示されるように、ユーザー インターフェイスと同期されます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "55926854"
 -   ソリューションをビルドする場合**null**を使用してこれらのオブジェクトを初期化するために必要なデータ キャッシュ内のオブジェクト、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>ドキュメントの前にクラスを初めて開くと、すべてのオブジェクトを初期化することを確認する必要がありますデータ キャッシュします。 一部のオブジェクトを初期化すると、このすべてのオブジェクトを設定する**null**ドキュメントが開かれ、ドキュメントを保存して閉じられたときに、すべてのデータ キャッシュがクリアします。
 
 ## <a name="access-typed-datasets-in-the-cache"></a>アクセス、キャッシュに型指定されたデータセット
- Office ソリューションと、Windows フォーム アプリケーションなどのオフィス外部からアプリケーションの両方に型指定されたデータセット内のデータをアクセスするかどうか、または[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]プロジェクトでは、両方で参照されている別のアセンブリに型指定されたデータセットを定義する必要がありますプロジェクト。 使用して、各プロジェクトに型指定されたデータセットを追加するかどうか、**データ ソースの構成**ウィザードまたは**データセット デザイナー**、.NET Framework はさまざまな種類として 2 つのプロジェクトで型指定されたデータセットを扱う. 型指定されたデータセットを作成する方法の詳細については、次を参照してください。[作成し、Visual Studio でのデータセットを構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)します。
+ Office ソリューションと、Windows フォーム アプリケーションなどのオフィス外部からアプリケーションの両方に型指定されたデータセット内のデータをアクセスするかどうか、または[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]プロジェクトでは、両方で参照されている別のアセンブリに型指定されたデータセットを定義する必要がありますプロジェクト。 使用して、各プロジェクトに型指定されたデータセットを追加するかどうか、**データ ソースの構成**ウィザードまたは**データセット デザイナー**、.NET Framework はさまざまな種類として 2 つのプロジェクトで型指定されたデータセットを扱う. 型指定されたデータセットを作成する方法の詳細については、[作成し、Visual Studio でのデータセットを構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,14 +1,9 @@
 ---
 title: '方法: スクリプトにアタッチする |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,61 +18,58 @@ ms.assetid: 82013e9a-ef53-4fd2-b451-a6891cdc6307
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c71364905e121ab32c9f5108717acdca32e1354e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 76418913aa725a7858f292d625cb7584b62694e5
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790059"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002642"
 ---
-# <a name="how-to-attach-to-script"></a>方法 : スクリプトにアタッチする
+# <a name="how-to-attach-to-script"></a>方法: スクリプトにアタッチする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このトピックでは、デバッグを目的として Visual Studio デバッガーを手動でスクリプト ファイルにアタッチする方法について説明します。  
   
 ### <a name="to-attach-to-a-running-process"></a>実行中のプロセスにアタッチするには  
   
-1. **[デバッグ]** メニューの **[プロセスにアタッチ]** をクリックします (プロジェクトが開いていない場合は、選択**プロセスにアタッチ**上、**ツール**メニュー)。  
+1. **[デバッグ]** メニューの **[プロセスにアタッチ]** をクリックします (開いているプロジェクトがない場合は、**[ツール]** メニューの **[プロセスにアタッチ]** を選択します。)  
   
-2. **プロセスにアタッチ** ダイアログ ボックスで、見て、**選択可能なプロセス**に添付する ボックスの一覧と、スクリプト プロセスを検索します。 スクリプト プロセスを見て識別できます、**型**列。  
+2. **[プロセスにアタッチ]** ダイアログ ボックスの **[選択可能なプロセス]** リストで、アタッチするスクリプト プロセスを探します。 **[型]** 列を参照することで、スクリプト プロセスを識別できます。  
   
-   1.  デバッグするプロセスが別のコンピューターで実行中の場合は、最初にリモート コンピューターを選択する必要があります。 詳細については、次を参照してください。[方法: リモート コンピューターを選択して](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)します。  
+   1.  デバッグするプロセスが別のコンピューターで実行中の場合は、最初にリモート コンピューターを選択する必要があります。 詳細については、「[方法 :リモート コンピューターを選択する](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)」を参照してください。  
   
    2.  プロセスが別のユーザー アカウントで実行されている場合は、 **[すべてのユーザーからのプロセスを表示する]** チェック ボックスをオンにします。  
   
-   3.  経由で接続している場合**リモート デスクトップ接続**を選択、**すべてのセッションのプロセスを表示**チェック ボックスをオンします。  
+   3.  **リモート デスクトップ接続**経由で接続している場合は、**[すべてのセッションのプロセスを表示する]** チェック ボックスをオンにします。  
   
 3. アタッチするプロセスをクリックします。  
   
-4. **にアタッチ**ボックスを表示する必要があります**スクリプト コード**または**自動: スクリプト コード**します。 何も表示されない場合は、次の手順に従います。  
+4. **にアタッチ**ボックスを表示する必要があります**スクリプト コード**または**自動。スクリプト コード**します。 何も表示されない場合は、次の手順に従います。  
   
    1.  **[選択]** をクリックします。  
   
-   2.  **コードの種類の選択**ダイアログ ボックスで、をクリックして**コードの種類をデバッグ**を選択し、**スクリプト**します。  
+   2.  **[コードの種類の選択]** ダイアログ ボックスの **[次のコードの種類をデバッグする]** をクリックし、**[スクリプト]** を選択します。  
   
    3.  **[OK]** をクリックします。  
   
 5. **[アタッチ]** をクリックします。  
   
-    このとき、スクリプトのデバッグが Internet Explorer で無効になっていることを知らせる警告が表示されることがあります。 その場合を参照してください。[警告: スクリプト デバッグが無効](../debugger/warning-script-debugging-disabled.md)します。  
+    このとき、スクリプトのデバッグが Internet Explorer で無効になっていることを知らせる警告が表示されることがあります。 その場合を参照してください。[警告。スクリプト デバッグが無効](../debugger/warning-script-debugging-disabled.md)します。  
   
-   **[プロセス]** ダイアログ ボックスを開くと、 **[選択可能なプロセス]** ボックスが自動的に表示されます。 このダイアログ ボックスが開いている間に、プロセスをバックグラウンドで開始および停止できます。 このため、表示内容に現在の状態が反映されていないこともあります。 リストを更新するにはキーを押してプロセスの現在の一覧を表示するには、いつでも、**更新**ボタンをクリックします。  
+   **[プロセス]** ダイアログ ボックスを開くと、 **[選択可能なプロセス]** ボックスが自動的に表示されます。 このダイアログ ボックスが開いている間に、プロセスをバックグラウンドで開始および停止できます。 このため、表示内容に現在の状態が反映されていないこともあります。 **[更新]** を押すと、いつでもリストを更新して、現在のプロセス一覧を確認できます。  
   
-   デバッグ中には複数のプログラムにアタッチできますが、デバッガーでアクティブになっているプログラムは常に 1 つだけです。 アクティブなプログラムは、[デバッグの場所] ツール バーで設定できます。 詳細については、次を参照してください。[方法: 現在のプロセスを設定](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)します。  
+   デバッグ中には複数のプログラムにアタッチできますが、デバッガーでアクティブになっているプログラムは常に 1 つだけです。 アクティブなプログラムは、[デバッグの場所] ツール バーで設定できます。 詳細については、「[方法 :現在のプロセスを設定](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)します。  
   
-   すべて**デバッグ**実行コマンドをメニューがアクティブなプログラムに影響します。 プロセス ダイアログ ボックスから、デバッグ対象のプログラムを中断できます。参照してください[ブレークポイントを使用して](../debugger/using-breakpoints.md)します。  
+   **[デバッグ]** メニューのすべての実行コマンドは、アクティブ プログラムに影響します。 プロセス ダイアログ ボックスから、デバッグ対象のプログラムを中断できます。参照してください[ブレークポイントを使用して](../debugger/using-breakpoints.md)します。  
   
 > [!NOTE]
->  信頼関係のないユーザー アカウントによって所有されているプロセスにアタッチしようとすると、セキュリティ警告の確認ダイアログ ボックスが表示されます。 詳細については、次を参照してください。[セキュリティ警告: 信頼されていないユーザーによって所有されているプロセスにアタッチするのは危険です。次の情報に関して疑わしい、または不明ながこのプロセスにアタッチしない](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)します。  
+>  信頼関係のないユーザー アカウントによって所有されているプロセスにアタッチしようとすると、セキュリティ警告の確認ダイアログ ボックスが表示されます。 詳細については、次を参照してください。[セキュリティ警告。信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。次の情報に関して疑わしい、または不明ながこのプロセスにアタッチしない](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)します。  
   
- ターミナル サービス (リモート デスクトップ) セッションでのデバッグ時には、[選択可能なプロセス] ボックスに、使用可能なプロセスのすべてが表示されない場合があります。 [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] 以降のバージョンでは、Visual Studio を制限付きユーザーとして実行している場合、[選択可能なプロセス] ボックスには、セッション 0 で実行しているプロセスは表示されません。セッション 0 は、サービスおよび w3wp.exe を含むその他のサーバー プロセス用に使用されます。 この問題を解決するには、管理者アカウントで Visual Studio を実行するか、ターミナル サービス セッションではなくサーバー コンソールから Visual Studio を実行します。 Vsjitdebugger.exe を入力して、プロセスにアタッチする 3 番目のオプションは、どちらの方法が可能な場合は、Windows コマンドラインで p-プロセス Id。 プロセス ID は tlist.exe を使用して確認できます。 Tlist.exe を入手するをダウンロードしてインストールのデバッグ ツールの Windows で使用可能な[Windows Hardware Developer Central](http://go.microsoft.com/fwlink/?linkid=1651)します。  
+ ターミナル サービス (リモート デスクトップ) セッションでのデバッグ時には、[選択可能なプロセス] ボックスに、使用可能なプロセスのすべてが表示されない場合があります。 [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] 以降のバージョンでは、Visual Studio を制限付きユーザーとして実行している場合、[選択可能なプロセス] ボックスには、セッション 0 で実行しているプロセスは表示されません。セッション 0 は、サービスおよび w3wp.exe を含むその他のサーバー プロセス用に使用されます。 この問題を解決するには、管理者アカウントで Visual Studio を実行するか、ターミナル サービス セッションではなくサーバー コンソールから Visual Studio を実行します。 どちらの回避策も実行できない場合、3 つ目のオプションとして、Windows コマンド ラインで「vsjitdebugger.exe -p ProcessId」と入力することで、プロセスにアタッチできます。 プロセス ID は tlist.exe を使用して確認できます。 tlist.exe を入手するには、[Windows Hardware Developer Central](https://developer.microsoft.com/windows/hardware) で Windows 対応のデバッグ ツールをダウンロードし、インストールします。  
   
 ## <a name="see-also"></a>関連項目  
  [クライアント側スクリプトのデバッグ](../debugger/client-side-script-debugging.md)   
- [実行中のプロセスをアタッチします。](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [セキュリティ警告: 信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。次の情報に関して疑わしい、または不明ながこのプロセスにアタッチできません。](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
+ [実行中のプロセスにアタッチする](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [セキュリティ警告: 信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。以下の情報に関して疑わしい点がある場合や、不明な場合は、このプロセスにアタッチしないでください](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)   
  [デバッガーのセキュリティ](../debugger/debugger-security.md)
-
-
-

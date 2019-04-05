@@ -39,7 +39,7 @@ ms.locfileid: "56632018"
 
 5. **[追加]** をクリックします。
 
-6. アプリケーション構成ファイルのスキーマに従って、構成ファイルを作成します。 詳細については、次を参照してください。 [、.NET Framework の構成ファイル スキーマ](/dotnet/framework/configure-apps/file-schema/index)します。
+6. アプリケーション構成ファイルのスキーマに従って、構成ファイルを作成します。 詳細については、[、.NET Framework の構成ファイル スキーマ](/dotnet/framework/configure-apps/file-schema/index)を参照してください。
 
    Office プロジェクトを構成ファイルを使用するための特別な考慮事項はありません。
 

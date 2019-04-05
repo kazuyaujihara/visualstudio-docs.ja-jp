@@ -43,7 +43,7 @@ ms.locfileid: "56335650"
 
 - プロジェクトのオートメーション プロパティのコレクション。
 
-プロジェクト サブタイプによって拡張機能の詳細については、次を参照してください。[プロパティとメソッドは、プロジェクト サブタイプによって拡張](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)します。
+プロジェクト サブタイプによって拡張機能の詳細については、[プロパティとメソッドは、プロジェクト サブタイプによって拡張](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)を参照してください。
 
 ### <a name="policy-files"></a>ポリシー ファイル
 
@@ -61,7 +61,7 @@ ms.locfileid: "56335650"
 
 ### <a name="deployment-mechanisms"></a>展開メカニズム
 
-基本プロジェクト システムの多くは、プロジェクト サブタイプによって拡張機能は、展開の機構です。 プロジェクト サブタイプ構成インターフェイスを実装することによって展開メカニズムに影響を与えます (など<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) の QueryInterface を呼び出すことによって取得される<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>します。 ベースのプロジェクトを呼び出すシナリオでは、プロジェクトのサブタイプと高度なプロジェクト サブタイプの両方が別の構成の実装を追加する場所、`QueryInterface`で高度なプロジェクト サブタイプの`IUnknown`します。 内部のプロジェクト サブタイプに基本プロジェクトが求める構成の実装が含まれている場合、高度なプロジェクトのサブタイプは内部のプロジェクト サブタイプによって提供される実装に委任されます。 プロジェクト サブタイプのすべてのレベルの実装として 1 つの集計レベルから別の状態を維持するためのメカニズム、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>非ビルドを保持するプロジェクト ファイルに XML データに関連します。 詳細については、次を参照してください。 [MSBuild プロジェクト ファイル内のデータの永続化](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)します。 <xref:EnvDTE80.IInternalExtenderProvider> プロジェクト サブタイプからオートメーション エクステンダーを取得するためのメカニズムとして実装されます。
+基本プロジェクト システムの多くは、プロジェクト サブタイプによって拡張機能は、展開の機構です。 プロジェクト サブタイプ構成インターフェイスを実装することによって展開メカニズムに影響を与えます (など<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) の QueryInterface を呼び出すことによって取得される<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>します。 ベースのプロジェクトを呼び出すシナリオでは、プロジェクトのサブタイプと高度なプロジェクト サブタイプの両方が別の構成の実装を追加する場所、`QueryInterface`で高度なプロジェクト サブタイプの`IUnknown`します。 内部のプロジェクト サブタイプに基本プロジェクトが求める構成の実装が含まれている場合、高度なプロジェクトのサブタイプは内部のプロジェクト サブタイプによって提供される実装に委任されます。 プロジェクト サブタイプのすべてのレベルの実装として 1 つの集計レベルから別の状態を維持するためのメカニズム、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>非ビルドを保持するプロジェクト ファイルに XML データに関連します。 詳細については、[MSBuild プロジェクト ファイル内のデータの永続化](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)を参照してください。 <xref:EnvDTE80.IInternalExtenderProvider> プロジェクト サブタイプからオートメーション エクステンダーを取得するためのメカニズムとして実装されます。
 
 次の図について重点的にオートメーション エクステンダーの実装、プロジェクト構成の参照オブジェクト具体的には、プロジェクトのサブタイプ基本プロジェクト システムを拡張するために使用します。
 

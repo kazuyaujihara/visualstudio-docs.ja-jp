@@ -1,14 +1,9 @@
 ---
 title: '方法: ビジュアライザーを記述する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,15 +20,15 @@ ms.assetid: 625a0d4f-abcc-43f2-9f8c-31c131a4378e
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2c7f1fa96bba40e5e56ca7f054b683b3243de65b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2421121e343fabbe3f2ec7d88ec087c6b84c8709
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724898"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972934"
 ---
-# <a name="how-to-write-a-visualizer"></a>方法 : ビジュアライザーを記述する
+# <a name="how-to-write-a-visualizer"></a>方法: ビジュアライザーを記述します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 <xref:System.Object> および <xref:System.Array> を除く任意のマネージド クラスのオブジェクトのカスタム ビジュアライザーを記述できます。  
@@ -43,9 +38,9 @@ ms.locfileid: "51724898"
   
  デバッガー ビジュアライザーのアーキテクチャには、次の 2 つの部分があります。  
   
-- *デバッガー側*Visual Studio デバッガー内で実行します。 デバッガー側のコードは、ビジュアライザーのユーザー インターフェイスを作成し、表示します。  
+- "*デバッガー側*" - Visual Studio デバッガー内で動作します。 デバッガー側のコードは、ビジュアライザーのユーザー インターフェイスを作成し、表示します。  
   
-- *デバッグ対象側*Visual Studio がデバッグ プロセス内で実行 (、*デバッグ対象*)。  
+- "*デバッグ対象側*" - Visual Studio がデバッグしているプロセス (*デバッグ対象*) 内で動作します。  
   
   視覚化するデータ オブジェクト (String オブジェクトなど) は、デバッグ対象プロセスに存在します。 このためデバッグ対象側では、そのデータ オブジェクトをデバッガー側に送る必要があります。これによって、デバッガー側では、作成したユーザー インターフェイスを使ってデータ オブジェクトを表示できるようになります。  
   
@@ -63,7 +58,7 @@ ms.locfileid: "51724898"
   
   カスタムのビジュアライザーでは、セキュリティについての配慮が必要な場合があります。 参照してください[ビジュアライザーのセキュリティに関する考慮事項](../debugger/visualizer-security-considerations.md)します。  
   
-  以下の手順は、ビジュアライザーの作成に必要な作業の概要を示したものです。 詳細については、次を参照してください。[チュートリアル: c# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)します。  
+  以下の手順は、ビジュアライザーの作成に必要な作業の概要を示したものです。 詳細については、次を参照してください。[チュートリアル。C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)します。  
   
 ### <a name="to-create-the-debugger-side"></a>デバッガー側を作成するには  
   
@@ -82,10 +77,7 @@ ms.locfileid: "51724898"
 2.  ビジュアライザーでデータ オブジェクトを表示するだけでなく、編集できるようにする場合は、`TransferData` の `CreateReplacementObject` メソッドまたは <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> メソッドをオーバーライドする必要があります。  
   
 ## <a name="see-also"></a>関連項目  
- [カスタム ビジュアライザーを作成します。](../debugger/create-custom-visualizers-of-data.md)   
- [方法: ビジュアライザーをインストール](../debugger/how-to-install-a-visualizer.md)   
- [方法: テストし、デバッグのビジュアライザー](../debugger/how-to-test-and-debug-a-visualizer.md)   
+ [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)   
+ [方法: ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)   
+ [方法: テストおよびデバッグのビジュアライザー](../debugger/how-to-test-and-debug-a-visualizer.md)   
  [ビジュアライザーのセキュリティに関する考慮事項](../debugger/visualizer-security-considerations.md)
-
-
-

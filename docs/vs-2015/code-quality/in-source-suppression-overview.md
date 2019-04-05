@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49209041"
@@ -34,7 +34,7 @@ ms.locfileid: "49209041"
  ソース内抑制のメタデータを誤って発送を防ぐために、リリース ビルドのソース内抑制を使用する必要がありますできません。 ソース内抑制の処理コスト、ために、ソース内抑制のメタデータを含めることによって、アプリケーションのパフォーマンスを低下する可能性もします。  
   
 > [!NOTE]
->  コードがない渡すためにこれらの属性自分でします。 詳細については、次を参照してください。[方法: メニュー項目を使用して警告を抑制する](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)します。 メニュー項目は、C++ コードのご利用いただけません。  
+>  コードがない渡すためにこれらの属性自分でします。 詳細については、[方法: メニュー項目を使用して警告を抑制する](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)を参照してください。 メニュー項目は、C++ コードのご利用いただけません。  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 属性  
  コード分析警告を右クリックすると、**エラー一覧**順にクリックします**メッセージの抑制**、 **SuppressMessage**属性が、コード内、またはに追加しますプロジェクトのグローバル抑制ファイルです。  
@@ -59,7 +59,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  この場合、  
   
--   **ルール カテゴリ**-ルールが定義されているカテゴリ。 コード分析ルールのカテゴリの詳細については、次を参照してください。[マネージ コードの警告のコード分析](../code-quality/code-analysis-for-managed-code-warnings.md)します。  
+-   **ルール カテゴリ**-ルールが定義されているカテゴリ。 コード分析ルールのカテゴリの詳細については、[マネージ コードの警告のコード分析](../code-quality/code-analysis-for-managed-code-warnings.md)を参照してください。  
   
 -   **規則 Id** -ルールの識別子。 サポートには、短期および長期のルールの識別子名の両方が含まれます。 短い名前が CAXXXX;長い名前は、CAXXXX:FriendlyTypeName です。  
   
@@ -104,7 +104,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="generated-code"></a>生成されたコード  
  マネージ コード コンパイラと一部のサード パーティ製ツールは、迅速なコードの開発を促進するためのコードを生成します。 ソース ファイルに表示されるコンパイラによって生成されたコードがでマークされたは、通常、 **GeneratedCodeAttribute**属性。  
   
- コード分析の警告と生成されたコードのエラーを抑制するかどうかを選択できます。 このような警告とエラーを抑制する方法については、次を参照してください。[方法: 生成されたコードの警告を抑制する](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)します。  
+ コード分析の警告と生成されたコードのエラーを抑制するかどうかを選択できます。 このような警告とエラーを抑制する方法については、[方法: 生成されたコードの警告を抑制する](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)を参照してください。  
   
  コード分析を無視する注**GeneratedCodeAttribute**アセンブリ全体または 1 つのパラメーターのいずれかに適用されます。 このような状況はほとんど発生しません。  
   
@@ -126,7 +126,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 >  常に、ターゲットには、項目の完全修飾名が含まれています。  
   
 ## <a name="global-suppression-file"></a>グローバル抑制ファイル  
- グローバル抑制はグローバル レベルの抑制またはターゲットが指定されていない抑制の抑制が保持されます。 たとえば、アセンブリ レベルの違反の抑制は、このファイルに格納されます。 さらに、いくつかの ASP.NET の抑制は、プロジェクト レベルの設定は、フォームのコードを利用できないために、このファイルに格納されます。 グローバル抑制は作成され、選択した初めてのプロジェクトに追加、**プロジェクト抑制ファイル内**のオプション、**メッセージの抑制**エラー一覧 ウィンドウでコマンド。 詳細については、次を参照してください。[方法: メニュー項目を使用して警告を抑制する](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)します。  
+ グローバル抑制はグローバル レベルの抑制またはターゲットが指定されていない抑制の抑制が保持されます。 たとえば、アセンブリ レベルの違反の抑制は、このファイルに格納されます。 さらに、いくつかの ASP.NET の抑制は、プロジェクト レベルの設定は、フォームのコードを利用できないために、このファイルに格納されます。 グローバル抑制は作成され、選択した初めてのプロジェクトに追加、**プロジェクト抑制ファイル内**のオプション、**メッセージの抑制**エラー一覧 ウィンドウでコマンド。 詳細については、[方法: メニュー項目を使用して警告を抑制する](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:System.Diagnostics.CodeAnalysis>

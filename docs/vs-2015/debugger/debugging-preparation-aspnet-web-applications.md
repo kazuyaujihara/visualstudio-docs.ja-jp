@@ -26,7 +26,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 59f4f3e1db92c5f7b46a9bb9e1e164fc25b01010
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51730689"
@@ -52,7 +52,7 @@ ms.locfileid: "51730689"
   
 2.  ブレークポイントに達したら、関数内のコードをステップ実行します。 問題が特定されるまでコードの実行を確認します。  
   
-     詳細については、次を参照してください。[ステッピング](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)と[Web アプリケーションのデバッグとスクリプト](../debugger/debugging-web-applications-and-script.md)します。  
+     詳細については、[ステッピング](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)と[Web アプリケーションのデバッグとスクリプト](../debugger/debugging-web-applications-and-script.md)を参照してください。  
   
 ## <a name="changing-default-configurations"></a>既定の構成の変更  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で作成された既定のデバッグ構成とリリース構成を変更する必要がある場合は、構成を変更できます。 詳細については、「[方法: デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。  
@@ -67,7 +67,7 @@ ms.locfileid: "51730689"
   
 4.  **デバッガー**、ことを確認します**ASP.NET デバッグ**が選択されています。  
   
-     詳細については、次を参照してください。 [Web プロジェクトのプロパティ ページ設定](../debugger/property-pages-settings-for-web-projects.md)します。  
+     詳細については、[Web プロジェクトのプロパティ ページ設定](../debugger/property-pages-settings-for-web-projects.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)   

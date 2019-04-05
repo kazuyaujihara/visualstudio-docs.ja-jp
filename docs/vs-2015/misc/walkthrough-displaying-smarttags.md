@@ -1,28 +1,23 @@
 ---
 title: 'チュートリアル: スマート タグの表示 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939099"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975488"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>チュートリアル: スマート タグの表示
-スマート タグは非推奨とされており、代わって電球が使用されるようになりました。 「 [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)」を参照してください。  
+スマート タグは非推奨とされており、代わって電球が使用されるようになりました。 「[チュートリアル:Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)します。  
   
  スマート タグは、一連の操作を表示するために展開されるテキスト上のタグです。 たとえば、Visual Basic や Visual C# のプロジェクトでは、変数名などの識別子の名前を変更すると、赤い線が単語の下に表示されます。 下線の上にポインターを移動すると、ポインターの近くにボタンが表示されます。 ボタンをクリックすると、 **"IsRead の名前を IsReady に変更する"** などの、提案されるアクションが表示されます。 操作をクリックすると、プロジェクトでの **IsRead** へのすべての参照が **IsReady**という名前に変更されます。  
   
@@ -31,7 +26,7 @@ ms.locfileid: "49939099"
 > [!NOTE]
 >  その他のタグも、同様の方法で実装できます。  
   
- 次のチュートリアルでは、現在の単語の上に表示され、 **Convert to upper case** と **Convert to lower case**の 2 つのアクションを提案するスマート タグを作成する方法を示します。  
+ 次のチュートリアルが、現在の単語に表示され、2 つの推奨されるアクションが設定されているスマート タグを作成する方法を示します。**大文字に変換**と**小文字に変換**します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
@@ -185,7 +180,7 @@ ms.locfileid: "49939099"
   
      ポインターの近くにボタンが表示されます。  
   
-5.  ボタンをクリックすると、 **Convert to upper case** と **Convert to lower case**という 2 つの提案されるアクションが表示されます。 最初の操作をクリックすると、現在の単語内のすべてのテキストが大文字に変換されます。 2 つ目の操作をクリックすると、すべてのテキストが小文字に変換されます。  
+5.  ボタンをクリックすると、2 つの推奨されるアクションが表示されます。**大文字に変換**と**小文字に変換**します。 最初の操作をクリックすると、現在の単語内のすべてのテキストが大文字に変換されます。 2 つ目の操作をクリックすると、すべてのテキストが小文字に変換されます。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

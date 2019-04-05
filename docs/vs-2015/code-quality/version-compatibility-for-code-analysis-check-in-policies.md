@@ -1,14 +1,9 @@
 ---
 title: コード分析チェックイン ポリシーのバージョンの互換性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
 - check-in policies, version compatibility for code analysis
@@ -17,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 840a12e7f4c0e3853e885a803dea5a92e05a5a27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1cd449446c66b2f37df9993786477734a78e10a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261483"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962974"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>コード分析を用いたチェックイン ポリシーに関するバージョンの互換性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,6 +43,3 @@ ms.locfileid: "49261483"
 -   両方に適用されるルールの設定でコード分析チェックイン ポリシーを作成する[!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]と[!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]のポリシーを作成する必要があります[!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]、必要に応じて、すべての変更を行うし、ポリシーを保存します。 規則に対する変更にのみ存在する場合[!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]、変更のポリシーを保存して[!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]します。  
   
      後でポリシーを保存する[!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]、内に存在する規則の設定を変更できなく[!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]のみです。
-
-
-

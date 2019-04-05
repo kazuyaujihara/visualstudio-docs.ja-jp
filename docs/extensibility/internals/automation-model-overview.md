@@ -26,7 +26,7 @@ ms.locfileid: "56641170"
 
  ![Visual Studio オートメーション オブジェクト チャート](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")
 
- 詳細については、次を参照してください。 [Visual Studio 環境の拡張](https://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)します。
+ 詳細については、[Visual Studio 環境の拡張](https://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)を参照してください。
 
  環境では、さまざまな機能領域のモデルを提供します。 たとえば、コードで検索するさまざまな要素のコード モデルがあります。 さまざまなドキュメントの要素のドキュメントのモデルがあります。 1 つの領域では、プロジェクトの領域では、VSPackage のプロバイダーにとって特に重要です。 新しいプロジェクトの種類と同様に、オートメーション モデルに貢献する多くの場合は[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]と[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]オートメーション モデルに貢献します。 プロセスが記載されている[Vspackage 自動化](../../extensibility/internals/providing-automation-for-vspackages.md)します。
 
@@ -41,7 +41,7 @@ ms.locfileid: "56641170"
 -   ビルド
 
 
-Automation の詳細については、次を参照してください。[オートメーションおよび for Visual Studio 機能拡張](../extensibility-in-visual-studio.md)します。 このドキュメントおよびドキュメントに、意思決定、VSPackage のオートメーションを提供する方法に関する役立つリンクを提供します。
+Automation の詳細については、[オートメーションおよび for Visual Studio 機能拡張](../extensibility-in-visual-studio.md)を参照してください。 このドキュメントおよびドキュメントに、意思決定、VSPackage のオートメーションを提供する方法に関する役立つリンクを提供します。
 
 ## <a name="see-also"></a>関連項目
 - [方法: アドインを作成します。](https://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

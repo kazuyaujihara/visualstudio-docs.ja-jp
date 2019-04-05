@@ -28,7 +28,7 @@ ms.locfileid: "56635658"
 
  ユーザーは、信頼できるソースからのみ Vspackage をインストールすることを確認してください。 VSPackages を開発する企業の名前を指定し、それらに署名する必要があります厳密に、ユーザーのため、その改ざんを防止します。 企業の VSPackages を開発するには、web サービスを評価し、セキュリティの問題の修正のリモート インストールなど、外部依存関係を調べる必要があります。
 
- 詳細については、次を参照してください。[コーディングのガイドラインを .NET Framework のセキュリティで保護された](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))します。
+ 詳細については、[コーディングのガイドラインを .NET Framework のセキュリティで保護された](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [追加のセキュリティ](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)

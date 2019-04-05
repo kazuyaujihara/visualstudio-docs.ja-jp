@@ -1,23 +1,18 @@
 ---
 title: 色の共有 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
-ms.author: v-brickg
-ms.openlocfilehash: fa4d2235660ecd7cc61998aa0e4ba568f0f28593
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.author: brgeorge
+ms.openlocfilehash: 124c175aa75e7a75b137254afdff24539164cdfd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805516"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002922"
 ---
 # <a name="shared-colors"></a>共有の色
 ここにイントロダクションを挿入します。  
@@ -66,9 +61,9 @@ ms.locfileid: "51805516"
   
 - 指定以外の背景と前景の組み合わせ。  
   
-  **既定値**  
+  **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![既定のメニュー タイトル](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **メニュー タイトル**|背景|なし|  
 |![既定のメニュー タイトル](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **メニュー タイトル**|前景 (テキスト)|`Environment.CommandBarTextActive`|  
@@ -77,7 +72,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ホバー メニュー タイトル](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")<br /><br /> **メニュー タイトル**|背景|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![ホバー メニュー タイトル](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")<br /><br /> **メニュー タイトル**|前景 (テキスト)|`Environment.CommandBarTextHover`|  
@@ -86,7 +81,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![押されたメニュー タイトル](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")<br /><br /> **メニュー タイトル**|背景|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![押されたメニュー タイトル](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")<br /><br /> **メニュー タイトル**|前景 (テキスト)|`Environment.CommandBarTextActive`|  
@@ -95,7 +90,7 @@ ms.locfileid: "51805516"
   
  **無効**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![無効時のグリフのメニュー タイトル](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **グリフのメニュー タイトル**|背景|なし|  
 |![無効時のグリフのメニュー タイトル](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **グリフのメニュー タイトル**|前景 (テキスト)|`Environment.CommandBarTextInactive`|  
@@ -115,9 +110,9 @@ ms.locfileid: "51805516"
   
 - 指定以外の背景と前景の組み合わせ。  
   
-  **既定値**  
+  **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![メニューの既定値](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|背景|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![メニューの既定値](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|前景 (テキスト)|`Environment.CommandBarTextActive`|  
@@ -133,7 +128,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![メニュー ホバー](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")<br /><br /> **メニュー項目**|背景|`Environment.CommandBarMenuItemMouseOver`|  
 |![メニュー ホバー](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")<br /><br /> **メニュー項目**|前景 (テキスト)|`Environment.CommandBarMenuItemMouseOver`|  
@@ -145,7 +140,7 @@ ms.locfileid: "51805516"
   
  **無効**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![メニューの無効化](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")<br /><br /> メニュー項目|前景 (テキスト)|`Environment.CommandBarTextInactive`|  
 |![メニューの無効化](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")<br /><br /> メニュー項目|前景 (サブメニュー グリフ)|`Environment.CommandBarMenuSubmenuGlyph`|  
@@ -184,7 +179,7 @@ ms.locfileid: "51805516"
   
   **既定** (他の状態はありません)  
   
-|要素|トークン名: Category.color|  
+|要素|トークン名:Category.color|  
 |-------------|--------------------------------|  
 |背景|`Environment.CommandBarGradientBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |境界線|`Environment.CommandBarToolBarBorder`|  
@@ -204,20 +199,20 @@ ms.locfileid: "51805516"
   
 - 指定以外の背景と前景の組み合わせ。  
   
-  **既定値**  
+  **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
-|![アイコンの既定値をコマンド](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **既定値**|背景|該当なし (コマンド バーの背景から継承)|  
-|![アイコンの既定値をコマンド](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **既定値**|前景 (テキスト)|`Environment.CommandBarTextActive`|  
-|![アイコンの既定値をコマンド](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **既定値**|境界線|N/A|  
+|![アイコンの既定値をコマンド](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|背景|該当なし (コマンド バーの背景から継承)|  
+|![アイコンの既定値をコマンド](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|前景 (テキスト)|`Environment.CommandBarTextActive`|  
+|![アイコンの既定値をコマンド](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|境界線|N/A|  
 |![コマンド アイコンの既定値が選択されている](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br /><br /> **選択されています。**|背景|`Environment.CommandBarSelected`|  
 |![コマンド アイコンの既定値が選択されている](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br /><br /> **選択されています。**|前景 (テキスト)|`Environment.CommandBarTextSelected`|  
 |![コマンド アイコンの既定値が選択されている](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br /><br /> **選択されています。**|境界線|`Environment.CommandBarSelectedBorder`|  
   
  **ホバー時とキーボード フォーカス**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![コマンド アイコン ホバー](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")<br /><br /> **ポインターを合わせると標準**|背景|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![コマンド アイコン ホバー](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")<br /><br /> **ポインターを合わせると標準**|前景 (テキスト)|`Environment.CommandBarTextHover`|  
@@ -228,7 +223,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![押されたコマンド アイコン](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")<br /><br /> **押されたコマンド アイコン**|背景|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![押されたコマンド アイコン](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")<br /><br /> **押されたコマンド アイコン**|前景 (テキスト)|`Environment.CommandBarTextMouseDown`|  
@@ -236,7 +231,7 @@ ms.locfileid: "51805516"
   
  **無効**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![無効になっているコマンド アイコン](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **無効になっているコマンド アイコン**|背景|該当なし (コマンド バーの背景から継承)|  
 |![無効になっているコマンド アイコン](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **無効になっているコマンド アイコン**|前景 (テキスト)|`Environment.CommandBarTextInactive`|  
@@ -259,9 +254,9 @@ ms.locfileid: "51805516"
   
 - スタイル設定されたコンボ ボックスにアクセスできる場合。  
   
-  **既定値**  
+  **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![コンボ ボックスの入力フィールド](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")<br /><br /> **入力フィールド**|背景|`Environment.ComboBoxBackground`|  
 |![コンボ ボックスの入力フィールド](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")<br /><br /> **入力フィールド**|前景 (テキスト)|`Environment.ComboBoxText`|  
@@ -275,7 +270,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ポインターを合わせると、コンボ ボックスの入力フィールド](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")<br /><br /> **入力フィールド**|背景|`Environment.ComboBoxMouseOverBackgroundBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![ポインターを合わせると、コンボ ボックスの入力フィールド](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")<br /><br /> **入力フィールド**|前景 (テキスト)|`Environment.ComboBoxMouseOverText`|  
@@ -289,7 +284,7 @@ ms.locfileid: "51805516"
   
  **重点を置いています**  
   
-|コンポーネント|要素|トークン名: Color.category|  
+|コンポーネント|要素|トークン名:Color.category|  
 |---------------|-------------|--------------------------------|  
 |![フォーカスされたコンボ ボックス入力フィールド](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")<br /><br /> **入力フィールド**|背景|`Environment.ComboBoxFocusedBackground`|  
 |![フォーカスされたコンボ ボックス入力フィールド](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")<br /><br /> **入力フィールド**|前景 (テキスト)|`Environment.ComboBoxFocusedText`|  
@@ -300,7 +295,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Color.category|  
+|コンポーネント|要素|トークン名:Color.category|  
 |---------------|-------------|--------------------------------|  
 |![コンボ ボックスの入力フィールドが押された](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")<br /><br /> **入力フィールド**|背景|`Environment.ComboBoxMouseDownBackground`|  
 |![コンボ ボックスの入力フィールドが押された](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")<br /><br /> **入力フィールド**|前景 (テキスト)|`Environment.ComboBoxMouseDownText`|  
@@ -311,7 +306,7 @@ ms.locfileid: "51805516"
   
  **無効**  
   
-|コンポーネント|要素|トークン名: Color.category|  
+|コンポーネント|要素|トークン名:Color.category|  
 |---------------|-------------|--------------------------------|  
 |![コンボ ボックスの入力フィールドが無効になっている](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br /><br /> **入力フィールド**|背景|`Environment.ComboBoxDisabledBackground`|  
 |![コンボ ボックスの入力フィールドが無効になっている](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br /><br /> **入力フィールド**|前景 (テキスト)|`Environment.ComboBoxDisabledText`|  
@@ -335,9 +330,9 @@ ms.locfileid: "51805516"
   
 - コンボ ボックスまたは分割ボタン。  
   
-  **既定値**  
+  **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;選択フィールド ダウン](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **選択フィールド**|背景|`Environment.DropDownBackground`|  
 |![Drop&#45;選択フィールド ダウン](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **選択フィールド**|前景 (テキスト)|`DropDownText`|  
@@ -352,7 +347,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;下の選択フィールドにポインターを合わせると](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")<br /><br /> **選択フィールド**|背景|`Environment.DropDownMouseOverBackgroundBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![Drop&#45;下の選択フィールドにポインターを合わせると](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")<br /><br /> **選択フィールド**|前景 (テキスト)|`Environment.DropDownMouseOverText`|  
@@ -366,7 +361,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;押された選択フィールド ダウン](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br /><br /> **選択フィールド**|背景|`Environment.DropDownMouseDownBackground`|  
 |![Drop&#45;押された選択フィールド ダウン](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br /><br /> **選択フィールド**|前景 (テキスト)|`Environment.DropDownMouseDownText`|  
@@ -377,7 +372,7 @@ ms.locfileid: "51805516"
   
  **無効**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;下の選択フィールドに無効になっている](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|背景|`Environment.DropDownDisabledBackground`|  
 |![Drop&#45;下の選択フィールドに無効になっている](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|前景 (テキスト)|`Environment.DropDownDisabledText`|  
@@ -399,9 +394,9 @@ ms.locfileid: "51805516"
   
 - 指定以外の背景と前景の組み合わせ。  
   
-  **既定値**  
+  **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![分割ボタン](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **分割ボタン (既定値)**|背景|なし|  
 |![分割ボタン](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **分割ボタン (既定値)**|前景 (テキスト)|`Environment.CommandBarTextActive`|  
@@ -411,7 +406,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ポインターを合わせると、分割ボタン](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")<br /><br /> **分割ボタン (ホバー時)**|背景|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![ポインターを合わせると、分割ボタン](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")<br /><br /> **分割ボタン (ホバー時)**|前景 (テキスト)|`Environment.CommandBarTextHover`|  
@@ -421,7 +416,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![分割ボタンが押された](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")<br /><br /> **(押されている) 分割ボタン**|背景|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![分割ボタンが押された](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")<br /><br /> **(押されている) 分割ボタン**|前景 (テキスト)|`Environment.CommandBarTextMouseDown`|  
@@ -431,7 +426,7 @@ ms.locfileid: "51805516"
   
  **無効**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![分割ボタンが無効になっている](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **分割ボタン (無効)**|背景|N/A|  
 |![分割ボタンが無効になっている](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **分割ボタン (無効)**|前景 (テキスト)|`Environment.ComboBoxItemTextInactive`|  
@@ -450,9 +445,9 @@ ms.locfileid: "51805516"
  使用しないケース  
  [その他のオプション] または [オーバーフロー] ボタンと同様の機能を持たないボタン。  
   
- **既定値**  
+ **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![その他のオプション](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 059_MoreOptions")<br /><br /> **その他のオプション**|背景|`Environment.CommandBarOptionsBackground`|  
 |![その他のオプション](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 059_MoreOptions")<br /><br /> **その他のオプション**|前景 (グリフ)|`Environment.CommandBarOptionsGlyph`|  
@@ -461,7 +456,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ポインターを合わせると、その他のオプション](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 061_MoreOptionsHover")<br /><br /> **その他のオプション**|背景|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![ポインターを合わせると、その他のオプション](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 061_MoreOptionsHover")<br /><br /> **その他のオプション**|前景 (グリフ)|`Environment.CommandBarOptionsMouseDownGlyph`|  
@@ -470,7 +465,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![その他のオプションが押された](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 063_MoreOptionsPressed")<br /><br /> **その他のオプション**|背景|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![その他のオプションが押された](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 063_MoreOptionsPressed")<br /><br /> **その他のオプション**|前景 (グリフ)|`Environment.CommandBarOptionsMouseDownGlyph`|  
@@ -499,9 +494,9 @@ ms.locfileid: "51805516"
  使用しないケース  
  シェルにテーマの更新がある場合に自動的に変更しない UI。  
   
- **既定値**  
+ **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |ドキュメント: ドッキングまたはフローティング|背景|ドキュメントの種類によって異なります|  
 |ドキュメント: ドッキングまたはフローティング|前景 (テキスト)|ドキュメントの種類によって異なります|  
@@ -519,7 +514,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ポインターを合わせるとフォーカスされたフレーム](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")<br /><br /> **フォーカスされたフレーム: フローティング、**|背景 (グリフ)|`Environment.RaftedWindowButtonHoverActive`|  
 |![ポインターを合わせるとフォーカスされたフレーム](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")<br /><br /> **フォーカスされたフレーム: フローティング、**|前景 (グリフ)|`Environment.RaftedWindowButtonHoverActiveGlyph`|  
@@ -530,7 +525,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![押されたフォーカスされたフレーム](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")<br /><br /> **フォーカスされたフレーム: フローティング、**|背景 (グリフ)|`Environment.RaftedWindowButtonDown`|  
 |![押されたフォーカスされたフレーム](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")<br /><br /> **フォーカスされたフレーム: フローティング、**|前景 (グリフ)|`Environment.RaftedWindowButtonDownGlyph`|  
@@ -567,7 +562,7 @@ ms.locfileid: "51805516"
 ##### <a name="selected-tab"></a>選択されているタブ  
  **重点を置いています**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![重点を置いて選択されているタブ](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")<br /><br /> **選択されているドキュメント タブ、重点を置いています**|背景|`Environment.FileTabSelectedGradientTop`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![重点を置いて選択されているタブ](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")<br /><br /> **選択されているドキュメント タブ、重点を置いています**|前景 (テキスト)|`Environment.FileTabSelectedText`|  
@@ -576,7 +571,7 @@ ms.locfileid: "51805516"
   
  **フォーカスされていません。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![フォーカスされていないが選択されているタブ](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **選択されているドキュメント タブ、フォーカスされていません。**|背景|`Environment.FileTabInactiveGradientTop`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![フォーカスされていないが選択されているタブ](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **選択されているドキュメント タブ、フォーカスされていません。**|前景 (テキスト)|`Environment.FileTabInactiveText`|  
@@ -584,9 +579,9 @@ ms.locfileid: "51805516"
 |![フォーカスされていないが選択されているタブ](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **選択されているドキュメント タブ、フォーカスされていません。**|ドキュメントの境界線|`Environment.FileTabInactiveDocumentBorderBackground`|  
   
 ##### <a name="background-tab"></a>背景タブ  
- **既定値**  
+ **Default**  
   
-|コンポーネント|要素|トークン名: Color.category|  
+|コンポーネント|要素|トークン名:Color.category|  
 |---------------|-------------|--------------------------------|  
 |![背景タブ](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 076_BackgroundTab")<br /><br /> **背景タブ既定**|背景|`Environment.FileTabBackground`|  
 |![背景タブ](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 076_BackgroundTab")<br /><br /> **背景タブ既定**|前景 (テキスト)|`Environment.FileTabText`|  
@@ -594,7 +589,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Color.category|  
+|コンポーネント|要素|トークン名:Color.category|  
 |---------------|-------------|--------------------------------|  
 |![ホバー時の背景タブ](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 077_BackgroundTabHover")<br /><br /> **ホバー時の背景タブ**|背景|`Environment.FileTabHotGradientTop`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![ホバー時の背景タブ](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 077_BackgroundTabHover")<br /><br /> **ホバー時の背景タブ**|前景 (テキスト)|`Environment.FileTabHotText`|  
@@ -613,35 +608,35 @@ ms.locfileid: "51805516"
   
 - シェルにテーマの更新がある場合に自動的に変更しない UI。  
   
-  **選択されたプレビュー タブ: フォーカス**  
+  **選択されたプレビュー タブ:重点を置いています**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![フォーカスされたプレビュー タブ](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **フォーカスされたプレビュー タブ**|背景|`Environment.FileTabProvisionalSelectedActive`|  
 |![フォーカスされたプレビュー タブ](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **フォーカスされたプレビュー タブ**|前景 (テキスト)|`Environment.FileTabProvisionalSelectedActiveForeground`|  
 |![フォーカスされたプレビュー タブ](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **フォーカスされたプレビュー タブ**|境界線|`Environment.FileTabProvisionalSelectedActiveBorder`<br /><br /> 背景と同じ色に設定されます。|  
 |![フォーカスされたプレビュー タブ](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **フォーカスされたプレビュー タブ**|ドキュメントの境界線|`Environment.FileTabProvisionalSelectedActiveBorder`|  
   
- **選択されたプレビュー タブ: フォーカスされていません。**  
+ **選択されたプレビュー タブ:フォーカスされていません。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![フォーカスされていないプレビュー タブ](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **フォーカスされていない [プレビュー] タブ**|背景|`Environment.FileTabProvisionalSelectedInactive`|  
 |![フォーカスされていないプレビュー タブ](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **フォーカスされていない [プレビュー] タブ**|前景 (テキスト)|`Environment.FileTabProvisionalSelectedInactiveForeground`|  
 |![フォーカスされていないプレビュー タブ](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **フォーカスされていない [プレビュー] タブ**|境界線|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
 |![フォーカスされていないプレビュー タブ](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **フォーカスされていない [プレビュー] タブ**|ドキュメントの境界線|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
   
- **背景プレビュー タブ: 既定**  
+ **背景プレビュー タブ:既定値**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![プレビューの背景タブ](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br /><br /> **プレビュー タブ背景タブ**|背景|`Environment.FileTabProvisionalInactive`|  
 |![プレビューの背景タブ](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br /><br /> **プレビュー タブ背景タブ**|前景 (テキスト)|`Environment.FileTabProvisionalInactiveForeground`|  
 |![プレビューの背景タブ](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br /><br /> **プレビュー タブ背景タブ**|境界線|`Environment.FileTabProvisionalInactiveBorder`<br /><br /> 背景と同じ色に設定されます。|  
   
- **背景プレビュー タブ: ホバー**  
+ **背景プレビュー タブ:マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ポインターを合わせるとプレビューの背景タブ](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")<br /><br /> **ポインターを合わせると、プレビュー タブ背景タブ**|背景|`Environment.FileTabProvisionalHover`|  
 |![ポインターを合わせるとプレビューの背景タブ](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")<br /><br /> **ポインターを合わせると、プレビュー タブ背景タブ**|前景 (テキスト)|`Environment.FileTabProvisionalHoverForeground`|  
@@ -660,9 +655,9 @@ ms.locfileid: "51805516"
   
 - コマンド バー オーバーフロー ボタン。  
   
-  **既定値**  
+  **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")<br /><br /> **ドキュメント オーバーフロー ボタン**|背景|`Environment.DocWellOverflowButtonBackground`|  
 |![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")<br /><br /> **ドキュメント オーバーフロー ボタン**|前景 (グリフ)|`Environment.DocWellOverflowButtonGlyph`|  
@@ -670,7 +665,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ポインターを合わせるとオーバーフロー](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")<br /><br /> **ポインターを合わせると、ドキュメント オーバーフロー ボタン**|背景|`Environment.DocWellOverflowButtonMouseOverBackground`|  
 |![ポインターを合わせるとオーバーフロー](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")<br /><br /> **ポインターを合わせると、ドキュメント オーバーフロー ボタン**|前景 (グリフ)|`Environment.DocWellOverflowButtonMouseOverGlyph`|  
@@ -678,7 +673,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![押されたオーバーフロー](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")<br /><br /> **ドキュメント オーバーフロー ボタンが押されました。**|背景|`Environment.DocWellOverflowButtonMouseDownBackground`|  
 |![押されたオーバーフロー](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")<br /><br /> **ドキュメント オーバーフロー ボタンが押されました。**|前景 (グリフ)|`Environment.DocWellOverflowButtonMouseDownGlyph`|  
@@ -708,21 +703,21 @@ ms.locfileid: "51805516"
   
  **ドッキング**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ツール ウィンドウとドッキング](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 089_ToolWindowDocked")|背景|`Environment.ToolWindowBackground`|  
 |![ツール ウィンドウとドッキング](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 089_ToolWindowDocked")|境界線|`Environment.ToolWindowBorder`|  
   
  **フローティング: フォーカス**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![フォーカスされたツール ウィンドウ](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 090_ToolWindowFocused")|背景|`Environment.ToolWindowBackground`|  
 |![フォーカスされたツール ウィンドウ](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 090_ToolWindowFocused")|境界線|`Environment.MainWindowActiveDefaultBorder`|  
   
  **フローティング: フォーカスされていません。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ツール ウィンドウのフォーカスされていない](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 091_ToolWindowUnfocused")|背景|`Environment.ToolWindowBackground`|  
 |![ツール ウィンドウのフォーカスされていない](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 091_ToolWindowUnfocused")|境界線|`Environment.MainWindowInactiveBorder`|  
@@ -740,7 +735,7 @@ ms.locfileid: "51805516"
   
  **重点を置いています**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![タイトル バーに重点を置いて](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")<br /><br /> **フォーカスされたタイトル バー**|背景|`Environment.TitleBarActiveGradientBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![タイトル バーに重点を置いて](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")<br /><br /> **フォーカスされたタイトル バー**|前景 (テキスト)|`Environment.TitleBarActiveText`|  
@@ -749,7 +744,7 @@ ms.locfileid: "51805516"
   
  **フォーカスされていません。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![フォーカスされていないタイトル バー](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **フォーカスされていないタイトル バー**|背景|`Environment.TitleBarInactiveGradientBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![フォーカスされていないタイトル バー](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **フォーカスされていないタイトル バー**|前景 (テキスト)|`Environment.TitleBarInactiveText`|  
@@ -767,9 +762,9 @@ ms.locfileid: "51805516"
   
 - 指定以外の背景と前景の組み合わせ。  
   
-  **既定値**  
+  **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![タイトル バーのフォーカスされたボタン](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **重点を置いています**|背景|N/A|  
 |![タイトル バーのフォーカスされたボタン](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **重点を置いています**|前景 (グリフ)|`Environment.ToolWindowButtonActiveGlyph`|  
@@ -780,7 +775,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ポインターを合わせるとフォーカスされたタイトル バー ボタン](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **重点を置いています**|背景|`Environment.ToolWindowButtonHoverActive`|  
 |![ポインターを合わせるとフォーカスされたタイトル バー ボタン](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **重点を置いています**|前景 (グリフ)|`Environment.ToolWindowButtonHoverActiveGlyph`|  
@@ -791,7 +786,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![タイトル バー ボタンのフォーカスおよび押された](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **重点を置いています**|背景|`Environment.ToolWindowButtonDown`|  
 |![タイトル バー ボタンのフォーカスおよび押された](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **重点を置いています**|前景 (グリフ)|`Environment.ToolWindowButtonDownActiveGlyph`|  
@@ -811,13 +806,13 @@ ms.locfileid: "51805516"
   
  **選択されているタブ**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ツール ウィンドウ タブに重点を置いて](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br /><br /> **選択された状態でフォーカスのあるツール ウィンドウ タブ**|背景|`Environment.ToolWindowTabSelectedTab`|  
 |![ツール ウィンドウ タブに重点を置いて](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br /><br /> **選択された状態でフォーカスのあるツール ウィンドウ タブ**|前景 (テキスト)|`Environment.ToolWindowTabSelectedActiveText`|  
 |![ツール ウィンドウ タブに重点を置いて](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br /><br /> **選択された状態でフォーカスのあるツール ウィンドウ タブ**|境界線|`Environment.ToolWindowTabSelectedBorder`<br /><br /> 背景と同じ色に設定されます。|  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![フォーカスされていないツール ウィンドウのタブ](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")<br /><br /> **選択された状態でフォーカスされていないツール ウィンドウ タブ**|背景|`Environment.ToolWindowTabSelectedTab`|  
 |![フォーカスされていないツール ウィンドウのタブ](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")<br /><br /> **選択された状態でフォーカスされていないツール ウィンドウ タブ**|前景 (テキスト)|`Environment.ToolWindowTabSelectedText`|  
@@ -825,13 +820,13 @@ ms.locfileid: "51805516"
   
  **[背景] タブ**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ツール ウィンドウの背景タブ](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br /><br /> **背景ツール ウィンドウ タブ**|背景|`Environment.ToolWindowTabGradientBegin`<br /><br /> グラデーション境界は、Visual Studio 2013 で同じ色の値に設定されます。<br /><br /> `Environment.ToolWindowTabGradientEnd`<br /><br /> グラデーション境界は、Visual Studio 2013 で同じ色の値に設定されます。|  
 |![ツール ウィンドウの背景タブ](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br /><br /> **背景ツール ウィンドウ タブ**|前景 (テキスト)|`Environment.ToolWindowTabText`|  
 |![ツール ウィンドウの背景タブ](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br /><br /> **背景ツール ウィンドウ タブ**|境界線|`Environment.ToolWindowTabBorder`|  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ポインターを合わせると、ツール ウィンドウの背景タブ](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")<br /><br /> **ポインターを合わせると、背景ツール ウィンドウ タブ**|背景|`Environment.ToolWindowTabMouseOverBackgroundBegin`<br /><br /> グラデーション境界は、Visual Studio 2013 で同じ色の値に設定されます。<br /><br /> `Environment.ToolWindowTabMouseOverBackgroundEnd`<br /><br /> グラデーション境界は、Visual Studio 2013 で同じ色の値に設定されます。|  
 |![ポインターを合わせると、ツール ウィンドウの背景タブ](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")<br /><br /> **ポインターを合わせると、背景ツール ウィンドウ タブ**|前景 (テキスト)|`Environment.ToolWindowTabMouseOverText`|  
@@ -846,9 +841,9 @@ ms.locfileid: "51805516"
  使用しないケース  
  シェルにテーマの更新がある場合に自動的に変更しない UI。  
   
- **既定値**  
+ **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![自動&#45; タブを非表示に](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")<br /><br /> **既定の自動非表示タブ**|背景|`Environment.AutoHideTabBackgroundBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![自動&#45; タブを非表示に](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")<br /><br /> **既定の自動非表示タブ**|前景 (テキスト)|`Environment.AutoHideTabText`|  
@@ -856,7 +851,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![自動&#45;ホバー タブを非表示に](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")<br /><br /> **ポインターを合わせると、自動的に隠す タブ**|背景|`Environment.AutoHideTabMouseOverBackgroundBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![自動&#45;ホバー タブを非表示に](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")<br /><br /> **ポインターを合わせると、自動的に隠す タブ**|前景 (テキスト)|`Environment.AutoHideTabMouseOverText`|  
@@ -890,7 +885,7 @@ ms.locfileid: "51805516"
   
   **重点を置いています**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![フォーカスされた検索入力フィールド](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **入力フィールド**|背景|`SearchControl.FocusedBackground`|  
 |![フォーカスされた検索入力フィールド](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **入力フィールド**|前景 (テキスト)|`SearchControl.FocusedBackground`|  
@@ -907,7 +902,7 @@ ms.locfileid: "51805516"
   
  **フォーカスされていません。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![検索入力フィールドのフォーカスされていない](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")<br /><br /> **アクティブな入力フィールド**|背景|`SearchControl.SearchActiveBackground`|  
 |![検索入力フィールドのフォーカスされていない](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")<br /><br /> **アクティブな入力フィールド**|前景 (テキスト)|`SearchControl.SearchActiveBackground`|  
@@ -928,7 +923,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![検索操作ボタンが押された](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **アクション ボタン**|背景|`SearchControl.ActionButtonMouseDown`|  
 |![検索操作ボタンが押された](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **アクション ボタン**|前景 (グリフ)|`SearchControl.ActionButtonMouseDownGlyph`|  
@@ -939,7 +934,7 @@ ms.locfileid: "51805516"
   
  **強調表示されている (テキストのみ)**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![検索入力フィールドの強調表示](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **テキストが強調表示の入力フィールド**|背景|`SearchControl.Selection`|  
 |![検索入力フィールドの強調表示](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **テキストが強調表示の入力フィールド**|前景 (テキスト)|`SearchControl.FocusedBackground`|  
@@ -948,7 +943,7 @@ ms.locfileid: "51805516"
   
  **無効**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![無効にされた検索入力フィールド](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **入力フィールド**|背景|`SearchControl.Disabled`|  
 |![無効にされた検索入力フィールド](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **入力フィールド**|前景 (テキスト)|`SearchControl.Disabled`|  
@@ -978,15 +973,15 @@ ms.locfileid: "51805516"
   
   **既定 (他の状態はありません)**  
   
-|要素|トークン名: Category.color|  
+|要素|トークン名:Category.color|  
 |-------------|--------------------------------|  
 |境界線|`SearchControl.PopupBorder`|  
 |区切り記号|`SearchControl.PopupSectionHeaderSeparator`|  
 |影|`Environment.DropShadowBackground`|  
   
- **既定値**  
+ **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![推奨される検索](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")<br /><br /> **提案される検索**|背景|`SearchControl.PopupItemsListBackgroundGradientBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![推奨される検索](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")<br /><br /> **提案される検索**|前景 (テキスト)|`SearchControl.PopupItemText`|  
@@ -1003,7 +998,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ポインターを合わせると推奨される検索](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")<br /><br /> **提案される検索**|背景|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![ポインターを合わせると推奨される検索](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")<br /><br /> **提案される検索**|前景 (テキスト)|`SearchControl.PopupMouseOverItemText`|  
@@ -1019,7 +1014,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![押された推奨される検索](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")<br /><br /> **提案される検索 (チェック ボックス)**|チェック ボックスの背景|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
 |![押されたオプションの検索](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")<br /><br /> **検索オプション**|チェック ボックスの背景|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> 最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。|  
@@ -1043,27 +1038,27 @@ ms.locfileid: "51805516"
  使用しないケース  
  ハイパーリンク以外のすべてのもの。  
   
- **既定値**  
+ **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ハイパーリンクの既定値](../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303 134_Hyperlink")|前景 (テキスト)|`Environment.PanelHyperlink`|  
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ポインターを合わせるとハイパーリンク](../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303 135_HyperlinkHover")|前景 (テキスト)|`Environment.PanelHyperlinkHover`|  
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![押されたハイパーリンク](../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303 136_HyperlinkPressed")|前景 (テキスト)|`Environment.PanelHyperlinkPressed`|  
   
  **無効**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![無効にされたハイパーリンク](../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303 137_HyperlinkDisabled")|前景 (テキスト)|`Environment.PanelHyperlinkDisabled`|  
   
@@ -1078,7 +1073,7 @@ ms.locfileid: "51805516"
  使用しないケース  
  情報バーに類似していない UI 要素。  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![情報バー](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **情報バー**|背景|`Environment.InfoBackground`|  
 |![情報バー](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **情報バー**|前景 (テキスト)|`Environment.InfoText`|  
@@ -1095,9 +1090,9 @@ ms.locfileid: "51805516"
  使用しないケース  
  スクロール バーの UI と常に一致させるわけではないすべてのもの。  
   
- **既定値**  
+ **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![スクロール バー](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 141_Scrollbar")<br /><br /> **スクロール バー**|スクロール バー|`Environment.ScrollBarBackground`|  
 |![スクロール バー](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 141_Scrollbar")<br /><br /> **スクロール バー**|前景 (つまみ)|`Environment.ScrollBarThumbBackground`|  
@@ -1106,7 +1101,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ポインターを合わせるとスクロール バー](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 143_ScrollbarHover")<br /><br /> **スクロール バー**|スクロール バー|`Environment.ScrollBarBackground`|  
 |![ポインターを合わせるとスクロール バー](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 143_ScrollbarHover")<br /><br /> **スクロール バー**|前景 (つまみ)|`Environment.ScrollBarThumbMouseOverBackground`|  
@@ -1115,7 +1110,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![スクロール バーが押された](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 145_ScrollbarPressed")<br /><br /> **スクロール バー**|スクロール バー|`Environment.ScrollBarBackground`|  
 |![スクロール バーが押された](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 145_ScrollbarPressed")<br /><br /> **スクロール バー**|前景 (つまみ)|`Environment.ScrollBarThumbPressedBackground`|  
@@ -1125,7 +1120,7 @@ ms.locfileid: "51805516"
 ####  <a name="BKMK_TreeView"></a> ツリー ビュー  
  ソリューション エクスプローラー、サーバー エクスプローラー、クラス ビューなど、いくつかのツール ウィンドウでは、色が TreeView カテゴリの色の名前によって制御される階層組織スキームが実装されます。 ツリー ビューのすべての項目に背景色とテキスト色があります。 入れ子にされた子要素がある項目には、項目が展開されているか折りたたまれているかを示すグリフもあります。  
   
- ![ツリー ビューの赤線](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")  
+ ![Tree view redline](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")  
   
  使用するケース  
  階層組織ビューを実装する必要があるすべての場所。  
@@ -1135,9 +1130,9 @@ ms.locfileid: "51805516"
   
 - 指定以外の背景と前景の組み合わせ。  
   
-  **既定値**  
+  **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ツリー ビュー](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")|背景|`TreeView.Background`|  
 |![ツリー ビュー](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")|前景 (テキスト)|`TreeView.Background`|  
@@ -1146,7 +1141,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ツリー ビューのホバー](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")|背景|`TreeView.Background`|  
 |![ツリー ビューのホバー](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")|前景 (テキスト)|`TreeView.Background`|  
@@ -1155,7 +1150,7 @@ ms.locfileid: "51805516"
   
  **上にドラッグします。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ドラッグされたツリー ビュー](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")|背景|`TreeView.DragOverItem`|  
 |![ドラッグされたツリー ビュー](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")|前景 (テキスト)|`TreeView.DragOverItem`|  
@@ -1164,7 +1159,7 @@ ms.locfileid: "51805516"
   
  **選択されています。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ツリー ビューに重点を置いた](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **重点を置いています**|背景|`TreeView.SelectedItemActive`|  
 |![ツリー ビューに重点を置いた](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **重点を置いています**|前景 (テキスト)|`TreeView.SelectedItemActive`|  
@@ -1177,7 +1172,7 @@ ms.locfileid: "51805516"
   
  **マウスの選択**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ツリー ビュー ポイントしたときに重点を置いて](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **重点を置いています**|背景|`TreeView.SelectedItemActive`|  
 |![ツリー ビュー ポイントしたときに重点を置いて](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **重点を置いています**|前景 (テキスト)|`TreeView.SelectedItemActive`|  
@@ -1197,37 +1192,37 @@ ms.locfileid: "51805516"
  使用しないケース  
  Visual Studio のテーマの一部でないカスタム背景に対して表示されるボタン。  
   
- **既定値**  
+ **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ボタン](../extensibility/ux-guidelines/media/0303-156-button.png "0303 156_Button")|ボタン|`CommonControls.Button`|  
 |![ボタン](../extensibility/ux-guidelines/media/0303-156-button.png "0303 156_Button")|ボタンの境界線|`CommonControls.ButtonBorder`|  
   
  **無効**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ボタンを無効になっている](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 157_ButtonDisabled")|ボタン|`CommonControls.ButtonDisabled`|  
 |![ボタンを無効になっている](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 157_ButtonDisabled")|ボタンの境界線|`CommonControls.ButtonBorderDisabled`|  
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ホバー時ボタン](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 158_ButtonHover")|ボタン|`CommonControls.ButtonHover`|  
 |![ホバー時ボタン](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 158_ButtonHover")|ボタンの境界線|`CommonControls.ButtonBorderHover`|  
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ボタンが押された](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 159_ButtonPressed")|ボタン|`CommonControls.ButtonPressed`|  
 |![ボタンが押された](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 159_ButtonPressed")|ボタンの境界線|`CommonControls.ButtonBorderPressed`|  
   
  **重点を置いています**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![フォーカスされたボタン](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 160_ButtonFocused")|ボタン|`CommonControls.ButtonFocused`|  
 |![フォーカスされたボタン](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 160_ButtonFocused")|ボタンの境界線|`CommonControls.ButtonBorderFocused`|  
@@ -1241,9 +1236,9 @@ ms.locfileid: "51805516"
  使用しないケース  
  チェック ボックス コントロールでない UI。  
   
- **既定値**  
+ **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![チェック ボックスをオン](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")|背景|`CommonControls.CheckBoxBackground`|  
 |![チェック ボックスをオン](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")|境界線|`CommonControls.CheckBoxBorder`|  
@@ -1252,7 +1247,7 @@ ms.locfileid: "51805516"
   
  **無効**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![チェック ボックスを無効になっている](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")|背景|`CommonControls.CheckBoxBackgroundDisabled`|  
 |![チェック ボックスを無効になっている](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")|境界線|`CommonControls.CheckBoxBorderDisabled`|  
@@ -1261,7 +1256,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![チェック ボックスをホバー](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")|背景|`CommonControls.CheckBoxBackgroundHover`|  
 |![チェック ボックスをホバー](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")|境界線|`CommonControls.CheckBoxBorderHover`|  
@@ -1270,7 +1265,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![押されたチェック ボックス](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")|背景|`CommonControls.CheckBoxBackgroundPressed`|  
 |![押されたチェック ボックス](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")|境界線|`CommonControls.CheckBoxBorderPressed`|  
@@ -1279,7 +1274,7 @@ ms.locfileid: "51805516"
   
  **重点を置いています**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![フォーカスされたチェック ボックス](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")|背景|`CommonControls.CheckBoxBackgroundFocused`|  
 |![フォーカスされたチェック ボックス](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")|境界線|`CommonControls.CheckBoxBorderFocused`|  
@@ -1297,9 +1292,9 @@ ms.locfileid: "51805516"
   
 - コマンド バーの [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) または [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) 。  
   
-  **既定値**  
+  **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;ダウン&#47;コンボ ボックス](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|背景|`CommonControls.ComboBoxBackground`|  
 |![Drop&#45;ダウン&#47;コンボ ボックス](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|境界線|`CommonControls.ComboBoxBorder`|  
@@ -1310,7 +1305,7 @@ ms.locfileid: "51805516"
   
  **無効**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;ダウン&#47;無効にされたコンボ ボックス](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|背景|`CommonControls.ComboBoxBackgroundDisabled`|  
 |![Drop&#45;ダウン&#47;無効にされたコンボ ボックス](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|境界線|`CommonControls.ComboBoxBorderDisabled`|  
@@ -1321,7 +1316,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;ダウン&#47;ポインターを合わせると、コンボ ボックス](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")|背景|`CommonControls.ComboBoxBackgroundHover`|  
 |![Drop&#45;ダウン&#47;ポインターを合わせると、コンボ ボックス](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")|境界線|`CommonControls.ComboBoxBorderHover`|  
@@ -1332,7 +1327,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;ダウン&#47;押されたコンボ ボックス](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|背景|`CommonControls.ComboBoxBackgroundPressed`|  
 |![Drop&#45;ダウン&#47;押されたコンボ ボックス](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|境界線|`CommonControls.ComboBoxBorderPressed`|  
@@ -1343,7 +1338,7 @@ ms.locfileid: "51805516"
   
  **重点を置いています**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;ダウン&#47;フォーカスされたコンボ ボックス](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|背景|`CommonControls.ComboBoxBackgroundFocused`|  
 |![Drop&#45;ダウン&#47;フォーカスされたコンボ ボックス](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|境界線|`CommonControls.ComboBoxBorderFocused`|  
@@ -1354,13 +1349,13 @@ ms.locfileid: "51805516"
   
  **テキスト入力の選択**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;ダウン&#47;コンボ ボックスのテキスト入力](../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")|ハイライト|`CommonControls.ComboBoxTextInputSelection`|  
   
  **押されている-リスト項目ビュー**  
   
-|コンポーネント|要素|トークン名: Color.category|  
+|コンポーネント|要素|トークン名:Color.category|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;ダウン&#47;コンボ ボックスのリスト ビュー](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|背景|`CommonControls.ComboBoxListBackground`|  
 |![Drop&#45;ダウン&#47;コンボ ボックスのリスト ビュー](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|背景|`CommonControls.ComboBoxListBackgroundHover`|  
@@ -1390,7 +1385,7 @@ ms.locfileid: "51805516"
 ##### <a name="column-headers"></a>列ヘッダー  
  列ヘッダーは、背景、境界線、タイトル テキスト、およびグリッドがその列で並べ替えられたときに通常使用されるオプションのグリフで構成されます。  
   
-|状態|要素|トークン名: Category.color|  
+|状態|要素|トークン名:Category.color|  
 |-----------|-------------|--------------------------------|  
 |既定値|背景|`Header.Default`|  
 |既定値|前景 (テキスト)|`Environment.CommandBarTextActive`|  
@@ -1408,7 +1403,7 @@ ms.locfileid: "51805516"
 ##### <a name="list-view-items"></a>リスト ビュー項目  
  リスト ビュー項目は、背景とコンテンツで構成されます。 コンテンツは、テキスト、アイコン、またはその両方の場合があります。  
   
-|状態|要素|トークン名: Category.color|  
+|状態|要素|トークン名:Category.color|  
 |-----------|-------------|--------------------------------|  
 |既定値|背景|透明|  
 |既定値|前景 (テキスト)|`Environment.CommandBarTextActive`|  
@@ -1435,7 +1430,7 @@ ms.locfileid: "51805516"
   
 - マニフェスト デザイナーのように構造化されていないすべての UI。  
   
-|状態|コンポーネント|要素|トークン名: Category.color|  
+|状態|コンポーネント|要素|トークン名:Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
 |既定 (選択済み)|タブ|背景|`ManifestDesigner.TabActive`|  
 |既定 (選択済み)|タブ|境界線|なし|  
@@ -1448,7 +1443,7 @@ ms.locfileid: "51805516"
 ### <a name="tagging"></a>タグ付け  
  Visual Studio は、タグ付けをサポートしています。タグ付けにより、ユーザーは追跡のために検索可能なキーワードを宣言できます。 たとえば、プロジェクト マネージャーと開発者は、Team Foundation Server (TFS) を使用して作業項目にタグを付けることができます。 次の表に、タグ自体と、ホバー時および選択済み状態で表示される "アイコンを閉じる" グリフの両方の色の名前を示します。  
   
- ![タグ付けの赤線](../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303 176_TaggingRedline")  
+ ![Tagging redline](../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303-176_TaggingRedline")  
   
  使用するケース  
  タグ付けをサポートする UI。  
@@ -1458,10 +1453,10 @@ ms.locfileid: "51805516"
   
 #### <a name="tag"></a>タグ  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
-|![タグ](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **既定値**|背景|`Tag.Background`|  
-|![タグ](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **既定値**|前景 (テキスト)|`Tag.Background`|  
+|![タグ](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Default**|背景|`Tag.Background`|  
+|![タグ](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Default**|前景 (テキスト)|`Tag.Background`|  
 |![ポインターを合わせるとタグ付け](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")<br /><br /> **マウス ポインターを移動します。**|背景|`Tag.HoverBackground`|  
 |![ポインターを合わせるとタグ付け](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")<br /><br /> **マウス ポインターを移動します。**|前景 (テキスト)|`Tag.HoverBackgroundText`|  
 |![押されたタグ](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303 179_TagPressed")<br /><br /> **押されました。**|背景|`Tag.PressedBackground`|  
@@ -1470,16 +1465,16 @@ ms.locfileid: "51805516"
 |![選択されたタグ](../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303 180_TagSelected")<br /><br /> **選択されています。**|前景 (テキスト)|`Tag.SelectedBackgroundText`|  
   
 #### <a name="glyph-close-icon"></a>グリフ (アイコンを閉じる)  
- **既定値**  
+ **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![タグ&#40;グリフ&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **既定 (既定タグ)**|背景|N/A|  
 |![タグ&#40;グリフ&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **既定 (既定タグ)**|前景 (グリフ)|`Tag.TagHoverGlyph`|  
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![タグ&#40;グリフ&#41;ホバー](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")<br /><br /> **ホバー (既定タグ)**|背景|`Tag.TagHoverGlyphHoverBackground`|  
 |![タグ&#40;グリフ&#41;ホバー](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")<br /><br /> **ホバー (既定タグ)**|前景 (グリフ)|`Tag.TagHoverGlyphHover`|  
@@ -1487,7 +1482,7 @@ ms.locfileid: "51805516"
   
  **押されました。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![タグ&#40;グリフ&#41;押された](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")<br /><br /> **(既定タグ) を押す**|背景|`Tag.TagHoverGlyphPressedBackground`|  
 |![タグ&#40;グリフ&#41;押された](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")<br /><br /> **(既定タグ) を押す**|前景 (グリフ)|`Tag.TagHoverGlyphPressed`|  
@@ -1495,14 +1490,14 @@ ms.locfileid: "51805516"
   
  **タグ/グリフが選択されている既定値**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![選択されたタグ](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **既定 (選択されたタグ)**|背景|N/A|  
 |![選択されたタグ](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **既定 (選択されたタグ)**|前景 (グリフ)|`Tag.TagSelectedGlyph`|  
   
  **タグの選択/グリフ ホバー**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ポインターを合わせると選択されたタグ](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")<br /><br /> **ホバー (選択されたタグ)**|背景|`Tag.TagSelectedGlyphHoverBackground`|  
 |![ポインターを合わせると選択されたタグ](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")<br /><br /> **ホバー (選択されたタグ)**|前景 (グリフ)|`Tag.TagSelectedGlyphHover`|  
@@ -1510,7 +1505,7 @@ ms.locfileid: "51805516"
   
  **タグを選択/押されているグリフ**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![選択されたタグ押された](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")<br /><br /> **押された (タグの選択)**|背景|`Tag.TagSelectedGlyphPressedBackground`|  
 |![選択されたタグ押された](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")<br /><br /> **押された (タグの選択)**|前景 (グリフ)|`Tag.TagSelectedGlyphPressed`|  
@@ -1531,11 +1526,11 @@ ms.locfileid: "51805516"
   
 -   前景要素を配置する背景。  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |下部レイヤー|背景|`Environment.EnvironmentBackground`|  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |上部レイヤー|背景<br /><br /> *グラデーションは、Visual Studio 2013 のライトとダーク テーマで同じ色の値に設定を停止します。*|`Environment.EnvironmentBackgroundGradientBegin`|  
 |上部レイヤー|背景<br /><br /> *グラデーションは、Visual Studio 2013 のライトとダーク テーマで同じ色の値に設定を停止します。*|`Environment.EnvironmentBackgroundGradientEnd`|  
@@ -1555,7 +1550,7 @@ ms.locfileid: "51805516"
   使用しないケース  
   コマンド シェルフに類似していない領域。  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |メニュー バー|背景<br /><br /> *グラデーションは、Visual Studio 2013 のライトとダーク テーマで同じ色の値に設定を停止します。*|`Environment.CommandShelfHighlightGradientBegin`|  
 |メニュー バー|背景<br /><br /> *グラデーションは、Visual Studio 2013 のライトとダーク テーマで同じ色の値に設定を停止します。*|`Environment.CommandShelfHighlightGradientMiddle`|  
@@ -1575,9 +1570,9 @@ ms.locfileid: "51805516"
  使用しないケース  
  ツールボックス UI と類似していないすべてのもの、またはシェル ツールボックスの色を変更した場合に UI に問題が発生するかどうか不明な場合。  
   
- **既定値**  
+ **Default**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ツールボックスの親ノード](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **親ノード**|背景|`Environment.ToolboxContent`<br /><br /> 見出し<br /><br /> `Environment.ToolWindowBackground`<br /><br /> 個々の項目、または利用可能なコントロールがない場合はウィンドウ全体|  
 |![ツールボックスの子ノード](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **子ノード**|背景|`Environment.ToolboxContent`<br /><br /> 見出し<br /><br /> `Environment.ToolWindowBackground`<br /><br /> 個々の項目、または利用可能なコントロールがない場合はウィンドウ全体|  
@@ -1590,7 +1585,7 @@ ms.locfileid: "51805516"
   
  **マウス ポインターを移動します。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ツールボックスの子ノードのホバー](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **子ノードにホバー時のツールボックス**|背景|`Environment.ToolboxContentMouseOver`<br /><br /> 個々の項目のみ|  
 |![ツールボックスの子ノードのホバー](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **子ノードにホバー時のツールボックス**|境界線|なし|  
@@ -1598,7 +1593,7 @@ ms.locfileid: "51805516"
   
  **選択されています。**  
   
-|コンポーネント|要素|トークン名: Category.color|  
+|コンポーネント|要素|トークン名:Category.color|  
 |---------------|-------------|--------------------------------|  
 |![ツールボックスの親ノードに重点を置いて](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **フォーカスされた親ノード**|背景|`TreeView.SelectedItemActive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) カテゴリから|  
 |![ツールボックスの子ノードに重点を置いて](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **フォーカスされた子ノード**|背景|`TreeView.SelectedItemActive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) カテゴリから|  

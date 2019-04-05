@@ -21,13 +21,13 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56646539"
 ---
 # <a name="how-to-create-an-application-page"></a>方法: アプリケーション ページを作成します。
-  1 つまたは複数の SharePoint サイトの ASP.NET web ページを作成することができます。 SharePoint では、これらのページに、アプリケーション ページは呼び出されます。 サイトのページとは異なり、アプリケーション ページには、ページの背後で実行されるコードが含まれています。 詳細については、次を参照してください。[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)です。
+  1 つまたは複数の SharePoint サイトの ASP.NET web ページを作成することができます。 SharePoint では、これらのページに、アプリケーション ページは呼び出されます。 サイトのページとは異なり、アプリケーション ページには、ページの背後で実行されるコードが含まれています。 詳細については、[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)を参照してください。
 
 ### <a name="to-create-an-application-page"></a>アプリケーション ページを作成するには
 
 1.  Visual Studio で、SharePoint プロジェクトを開くか作成します。
 
-     詳細については、次を参照してください。 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)します。
+     詳細については、[SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)を参照してください。
 
 2.  **ソリューション エクスプローラー**で、プロジェクト ノードを選択します。
 
@@ -39,9 +39,9 @@ ms.locfileid: "56646539"
 
 6.  **名前**ボックス、アプリケーションのページでの名前を指定し、選択、**追加**ボタンをクリックします。
 
-     複数のフォルダーとファイルがプロジェクトに追加されます。 これらのファイルの詳細については、次を参照してください。[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)です。
+     複数のフォルダーとファイルがプロジェクトに追加されます。 これらのファイルの詳細については、[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)を参照してください。
 
-     **ソース**ASP.NET ページファイル、Visual Web Developer デザイナーのビューが表示されます。 コントロールを追加して、ページを設計することができます、**ツールボックス**コンテンツ プレース ホルダーに配置することです。 詳細については、次を参照してください。[ソース ビュー、Web ページ デザイナー](/previous-versions/aspnet/ms178154\(v\=vs.100\))します。
+     **ソース**ASP.NET ページファイル、Visual Web Developer デザイナーのビューが表示されます。 コントロールを追加して、ページを設計することができます、**ツールボックス**コンテンツ プレース ホルダーに配置することです。 詳細については、[ソース ビュー、Web ページ デザイナー](/previous-versions/aspnet/ms178154\(v\=vs.100\))を参照してください。
 
 7.  コントロールのイベントを処理する場合は、アプリケーション ページのコード ファイルにコードを追加します。
 

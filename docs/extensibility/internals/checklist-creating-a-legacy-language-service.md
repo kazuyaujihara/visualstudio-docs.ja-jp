@@ -19,7 +19,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56629197"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>チェックリスト:従来の言語サービスを作成します。
-基本的な手順の言語サービスを作成するために行う必要がありますが、次のチェックリストにまとめたものです、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]のコア エディター。 言語サービスに統合する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグの式エバリュエーターを作成する必要があります。 詳細については、次を参照してください。 [CLR の式エバリュエーターの書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)で、 [Visual Studio デバッガーの拡張性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)します。
+基本的な手順の言語サービスを作成するために行う必要がありますが、次のチェックリストにまとめたものです、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]のコア エディター。 言語サービスに統合する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグの式エバリュエーターを作成する必要があります。 詳細については、[CLR の式エバリュエーターの書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)で、 [Visual Studio デバッガーの拡張性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)を参照してください。
 
 ## <a name="steps-to-create-a-language-service"></a>言語サービスを作成する手順
 
@@ -40,7 +40,7 @@ ms.locfileid: "56629197"
 
      <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> インターフェイスを実装します。 このインターフェイスの実装では、パーサーについては、適切な色の情報を返す必要があります。
 
-     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>メソッドが返す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>インターフェイス。 実装する必要があるため各テキスト バッファーの個別 colorizer インスタンスが作成された、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>インターフェイスとは別にします。 詳細については、次を参照してください。[構文の色分け、従来の言語サービス](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)します。
+     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>メソッドが返す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>インターフェイス。 実装する必要があるため各テキスト バッファーの個別 colorizer インスタンスが作成された、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>インターフェイスとは別にします。 詳細については、[構文の色分け、従来の言語サービス](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)を参照してください。
 
 -   コード ウィンドウ
 
@@ -58,7 +58,7 @@ ms.locfileid: "56629197"
 
     -   呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.RemoveCommandFilter%2A>メソッドいるため、これらのコマンドに渡す不要になったビューからデタッチするとします。
 
-    処理する必要がありますコマンドは、提供されているサービスによって異なります。 詳細については、次を参照してください。[言語の重要なコマンド サービス フィルター](../../extensibility/internals/important-commands-for-language-service-filters.md)します。
+    処理する必要がありますコマンドは、提供されているサービスによって異なります。 詳細については、[言語の重要なコマンド サービス フィルター](../../extensibility/internals/important-commands-for-language-service-filters.md)を参照してください。
 
     > [!NOTE]
     >  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>と同じオブジェクトでインターフェイスを実装する必要があります、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイス。
@@ -67,13 +67,13 @@ ms.locfileid: "56629197"
 
      <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> インターフェイスを実装します。
 
-     ステートメント入力候補のコマンドをサポートして (つまり、 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>) を呼び出すと、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>メソッドで、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>渡すインターフェイス、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>インターフェイス。 詳細については、次を参照してください。[従来の言語サービスで入力候補](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)します。
+     ステートメント入力候補のコマンドをサポートして (つまり、 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>) を呼び出すと、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>メソッドで、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>渡すインターフェイス、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>インターフェイス。 詳細については、[従来の言語サービスで入力候補](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)を参照してください。
 
 -   メソッドのヒント
 
      実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>メソッドのヒント ウィンドウのデータを提供するインターフェイス。
 
-     メソッドのデータ ヒント ウィンドウを表示するタイミングを把握するようにコマンドを適切に処理するために、テキスト ビューのフィルターをインストールします。 詳細については、次を参照してください。[従来の言語サービスのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)します。
+     メソッドのデータ ヒント ウィンドウを表示するタイミングを把握するようにコマンドを適切に処理するために、テキスト ビューのフィルターをインストールします。 詳細については、[従来の言語サービスのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)を参照してください。
 
 -   エラーのマーカー
 
@@ -113,7 +113,7 @@ ms.locfileid: "56629197"
 
 -   言語サービスの登録
 
-     言語サービスを登録する方法の詳細については、次を参照してください。[従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service2.md)と[管理 Vspackage](../../extensibility/managing-vspackages.md)します。
+     言語サービスを登録する方法の詳細については、[従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service2.md)と[管理 Vspackage](../../extensibility/managing-vspackages.md)を参照してください。
 
 -   状況依存のヘルプ
 

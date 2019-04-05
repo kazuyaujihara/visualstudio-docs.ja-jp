@@ -25,7 +25,7 @@ ms.locfileid: "57874700"
 - 以降のバージョン 2.6.3、 [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)を通じて NuGet がパッケージ化、 [.editorconfig ファイル](#editorconfig-file)します。 [構成可能なオプション](fxcop-analyzer-options.md)let のどの部分を絞り込む、コードベースを分析します。
 
 > [!TIP]
-> FxCop 静的コード分析と FxCop アナライザーの違いについては、次を参照してください。 [FxCop アナライザー FAQ](fxcop-analyzers-faq.md)します。
+> FxCop 静的コード分析と FxCop アナライザーの違いについては、[FxCop アナライザー FAQ](fxcop-analyzers-faq.md)を参照してください。
 
 ## <a name="fxcop-analyzer-rule-sets"></a>FxCop アナライザーの規則セット
 
@@ -42,7 +42,7 @@ FxCop アナライザーの NuGet パッケージには、次の規則のカテ�
 - セキュリティ
 - 使い方
 
-詳細については、次を参照してください。 [Roslyn アナライザーの規則セット](analyzer-rule-sets.md)します。
+詳細については、[Roslyn アナライザーの規則セット](analyzer-rule-sets.md)を参照してください。
 
 ## <a name="editorconfig-file"></a>EditorConfig ファイル
 

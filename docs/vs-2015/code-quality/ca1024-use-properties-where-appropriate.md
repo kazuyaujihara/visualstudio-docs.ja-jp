@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1024: 適切な場所のプロパティを使用して、|Microsoft Docs'
-ms.custom: ''
+title: CA1024:適切な場所のプロパティを使用します |。Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
 - CA1024
@@ -20,21 +15,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f7d5b5e459d80c69f856860a9b2aa0302191a968
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43487aa97afcd41a5375bacc26efba705cbaa76c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858928"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963461"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: 適切な場所にプロパティを使用します
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024:適切な場所にプロパティを使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
@@ -125,6 +120,3 @@ namespace Microsoft.Samples
  次の例では、いくつかの方法ですが、プロパティに変換され、フィールドのように動作しないためではなく必要がありますをいくつか含まれています。
 
  [!code-csharp[FxCop.Design.MethodsProperties#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.MethodsProperties/cs/FxCop.Design.MethodsProperties.cs#1)]
-
-
-

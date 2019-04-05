@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49906053"
@@ -70,14 +70,14 @@ ms.locfileid: "49906053"
   
 2. **この規則セットを実行**ドロップダウン リストで、 **Microsoft のすべてのルール**します。  
   
-    使用可能なルール セットの詳細については、次を参照してください。[コード分析規則セットの参照](../code-quality/code-analysis-rule-set-reference.md)します。  
+    使用可能なルール セットの詳細については、[コード分析規則セットの参照](../code-quality/code-analysis-rule-set-reference.md)を参照してください。  
   
     [ファイル] メニューで、次のようにクリックします。**選択した項目の保存**選択したルール セットに関する情報とその設定で、プロジェクト ファイルを更新します。  
   
    > [!TIP]
    >  コード分析の対象と問題の優先順位付けに使用することをお勧めは最初に、実際の状況で、**最小推奨規則**ルール セットと目的の問題を修正し、段階的に追加複数のルールまたはルールを検出してその他の問題を解決を設定します。  
   
-   次に、コードは、ca 1704 の違反を確認するために使用するクラス ライブラリを追加、「識別子は正しく入力されなければなりません」コード分析ルール。 詳細については、次を参照してください。 [ca 1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)します。  
+   次に、コードは、ca 1704 の違反を確認するために使用するクラス ライブラリを追加、「識別子は正しく入力されなければなりません」コード分析ルール。 詳細については、[ca 1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)を参照してください。  
   
 #### <a name="add-your-own-code"></a>独自のコードを追加します。  
   
@@ -115,7 +115,7 @@ ms.locfileid: "49906053"
   
 2. エラー一覧 ウィンドウで次のようにクリックします。**警告**順にクリックします、**説明**列ヘッダーの警告を並べ替えるに並びます。  
   
-    実際のアプリケーションではこの時点では、修正する必要のルール違反を修正または必要に応じてオフにするや価値修正されなかったことを確認する場合のルールを抑制します。 詳細については、次を参照してください。 [SuppressMessage 属性使用での警告を抑制する](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)します。  
+    実際のアプリケーションではこの時点では、修正する必要のルール違反を修正または必要に応じてオフにするや価値修正されなかったことを確認する場合のルールを抑制します。 詳細については、[SuppressMessage 属性使用での警告を抑制する](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)を参照してください。  
   
 3. Ca 1704 警告に注意してください。 このルールでこれらの違反を示すこと検討してください"のパラメーターのわかりやすい名前を提供する" コードで問題を解決する可能性がありますか、次の手順で説明したように、ルールを無効にできます。  
   

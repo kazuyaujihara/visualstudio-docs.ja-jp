@@ -33,7 +33,7 @@ ms.locfileid: "56631030"
 |メール アドレスに特定のドメインが含まれている連絡先を検索します。|[方法: プログラムによって連絡先から電子メール アドレスを検索します。](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)|
 |指定した名前のある連絡先を削除します。|[方法: プログラムによって Outlook の連絡先を削除します。](../vsto/how-to-programmatically-delete-outlook-contacts.md)|
 
- Outlook タスクと Outlook オブジェクト モデルの詳細については、次を参照してください。 [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)します。
+ Outlook タスクと Outlook オブジェクト モデルの詳細については、[Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [メールの項目を操作します。](../vsto/working-with-mail-items.md)

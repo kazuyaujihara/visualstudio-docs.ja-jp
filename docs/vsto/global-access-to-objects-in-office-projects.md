@@ -51,9 +51,9 @@ ms.locfileid: "57525198"
 
 - `ThisAddIn` VSTO アドイン プロジェクト内のクラス。 このオブジェクトには、 `Globals.ThisAddIn` プロパティを使用してアクセスすることができます。
 
-- リボン デザイナーを使用してカスタマイズした、プロジェクト内のすべてのリボン。 リボンには、 `Globals.Ribbons` プロパティを使用してアクセスすることができます。 詳細については、次を参照してください。[実行時にリボンをアクセス](../vsto/accessing-the-ribbon-at-run-time.md)します。
+- リボン デザイナーを使用してカスタマイズした、プロジェクト内のすべてのリボン。 リボンには、 `Globals.Ribbons` プロパティを使用してアクセスすることができます。 詳細については、[実行時にリボンをアクセス](../vsto/accessing-the-ribbon-at-run-time.md)を参照してください。
 
-- Outlook VSTO アドイン プロジェクトのすべての Outlook フォーム領域。 フォーム領域には、 `Globals.FormRegions` プロパティを使用してアクセスすることができます。 詳細については、次を参照してください。[実行時にフォーム領域へのアクセス](../vsto/accessing-a-form-region-at-run-time.md)します。
+- Outlook VSTO アドイン プロジェクトのすべての Outlook フォーム領域。 フォーム領域には、 `Globals.FormRegions` プロパティを使用してアクセスすることができます。 詳細については、[実行時にフォーム領域へのアクセス](../vsto/accessing-a-form-region-at-run-time.md)を参照してください。
 
 - [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]をターゲットとするプロジェクトで実行時にリボン コントロールおよびホスト項目を作成できるようにするファクトリ オブジェクト。 このオブジェクトには、 `Globals.Factory` プロパティを使用してアクセスすることができます。 このオブジェクトは、次のいずれかのインターフェイスを実装するクラスのインスタンスです。
 

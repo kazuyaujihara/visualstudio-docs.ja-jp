@@ -33,7 +33,7 @@ ms.locfileid: "56619486"
 
 3. ヘルパー UI を作成し、ソース コントロール アダプターのパッケージが表示されたときに表示 (、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ソース管理プラグインをソース管理機能を扱うコンポーネントです)。
 
-   詳細については、次を参照してください。[をソース管理プラグインを作成する](../../extensibility/internals/creating-a-source-control-plug-in.md)します。
+   詳細については、[をソース管理プラグインを作成する](../../extensibility/internals/creating-a-source-control-plug-in.md)を参照してください。
 
 ## <a name="source-control-vspackage"></a>ソース管理 VSPackage
  ソース管理 VSPackage 実装では、カスタマイズされた代替を作成できる、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ソース UI コントロールです。 このアプローチは、ソース管理の統合を完全に制御を提供する UI 要素を提供し、それ以外の場合、プラグインのアプローチの下に指定するソース コントロールのインターフェイスを実装する必要しますが、あります。
@@ -48,7 +48,7 @@ ms.locfileid: "56619486"
 
 4. ように、クエリを編集し、クエリの保存のイベントを処理[クエリ編集のクエリの保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)します。
 
-   詳細については、次を参照してください。[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)します。
+   詳細については、[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [概要](../../extensibility/internals/source-control-integration-overview.md)

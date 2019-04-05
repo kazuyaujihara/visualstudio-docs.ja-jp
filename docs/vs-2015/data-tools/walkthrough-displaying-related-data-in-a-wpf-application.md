@@ -1,12 +1,9 @@
 ---
 title: 'チュートリアル: WPF アプリケーションで関連データの表示 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +17,16 @@ ms.assetid: 5c48f188-e9c4-40a6-97d9-67cdb2f90127
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913138"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964329"
 ---
-# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>チュートリアル: WPF アプリケーションでの関連データの表示
+# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>チュートリアル: WPF アプリケーションで関連データの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、親/子リレーションシップを持つデータベース テーブルからデータを表示する WPF アプリケーションを作成します。 データは、エンティティ データ モデル内のエンティティにカプセル化します。 親エンティティには、一連の注文の概要情報が含まれています。 このエンティティの各プロパティは、アプリケーションで別のコントロールにバインドされます。 子エンティティには、各注文の詳細が含まれています。 この一連のデータにバインドする<xref:System.Windows.Controls.DataGrid>コントロール。  
@@ -55,7 +52,7 @@ ms.locfileid: "49913138"
   
 - Entity Data Model および ADO.NET Entity Framework。 詳細については、次を参照してください。 [Entity Framework の概要](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)します。  
   
-- WPF デザイナーの操作。 詳細については、次を参照してください。 [WPF および Silverlight デザイナーの概要](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)します。  
+- WPF デザイナーの操作。 詳細については、次を参照してください。 [WPF および Silverlight デザイナーの概要](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)します。  
   
 - WPF データ バインディング。 詳しくは、「 [データ バインディングの概要](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。  
   
@@ -72,7 +69,7 @@ ms.locfileid: "49913138"
   
 4.  確認します **.NET Framework 4**  ダイアログ ボックスの上部にあるコンボ ボックスで選択されています。 <xref:System.Windows.Controls.DataGrid>このチュートリアルで使用するコントロールは、.NET Framework 4 でのみ使用できます。  
   
-5.  選択、 **WPF アプリケーション**プロジェクト テンプレート。  
+5.  **[WPF アプリケーション]** プロジェクト テンプレートを選択します。  
   
 6.  **[名前]** ボックスに「 `AdventureWorksOrdersViewer`」と入力します。  
   
@@ -81,7 +78,7 @@ ms.locfileid: "49913138"
      Visual Studio によって作成、`AdventureWorksOrdersViewer`プロジェクト。  
   
 ## <a name="creating-an-entity-data-model-for-the-application"></a>アプリケーションのエンティティ データ モデルの作成  
- アプリケーションのデータ モデルを定義および追加する必要がありますデータ バインド コントロールを作成する前に、**データソース**ウィンドウ。 このチュートリアルでは、データ モデルは、Entity Data Model は。  
+ データ バインド コントロールを作成するには、まず、アプリケーション用のデータ モデルを定義し、**[データ ソース]** ウィンドウに追加する必要があります。 このチュートリアルでは、データ モデルは、Entity Data Model は。  
   
 #### <a name="to-create-an-entity-data-model"></a>Entity Data Model を作成するには  
   
@@ -126,7 +123,7 @@ ms.locfileid: "49913138"
   
 3. **データ ソース**ウィンドウで、ドロップダウン メニューをクリックして、 **[salesorderheaders]** ノード**詳細**します。  
   
-4. 展開、 **[salesorderheaders]** ノード。  
+4. **[SalesOrderHeaders]** ノードを展開します。  
   
 5. 横にドロップダウン メニューをクリックして**SalesOrderID**選択**ComboBox**します。  
   
@@ -160,7 +157,7 @@ ms.locfileid: "49913138"
   
 8. 次に、デザイナーのクリックしてコンボ ボックス、 **Sales Order ID**ラベル。  
   
-9. **プロパティ**ウィンドウで、横にあるチェック ボックスを選択、 **IsReadOnly**プロパティ。  
+9. **[プロパティ]** ウィンドウで、**IsReadOnly** プロパティの横のチェック ボックスをオンにします。  
   
 ## <a name="creating-a-datagrid-that-displays-the-order-details"></a>注文の詳細を表示する DataGrid を作成します。  
  作成、<xref:System.Windows.Controls.DataGrid>をドラッグして、注文の詳細を表示するコントロールを`SalesOrderDetails`からエンティティを**データソース**WPF デザイナーにウィンドウ。  

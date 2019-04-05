@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: a5732db4ab36a7e198ee6ebdce185294d3b5bc31
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51722480"
@@ -31,7 +31,7 @@ ms.locfileid: "51722480"
 ## <a name="generating-the-solution-files"></a>ソリューション ファイルを生成します。  
  アプリケーション テンプレートを選択するように指示[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]を解凍して、対応する .vstemplate ファイルを開くと、このファイル内の XML コマンドを解釈するためのテンプレートを起動します。 これらのコマンドは、新規または既存のソリューションでプロジェクトとプロジェクト項目を作成します。  
   
- テンプレートは、.vstemplate ファイルを保持する同じ .zip フォルダーから項目のテンプレートと呼ばれる、ソース ファイルをアンパックします。 テンプレートは、それに応じてカスタマイズして、新しいプロジェクトにこれらのファイルをコピーします。 プロジェクトと項目テンプレートの概要については、次を参照してください。 [NIB: Visual Studio テンプレート](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)します。  
+ テンプレートは、.vstemplate ファイルを保持する同じ .zip フォルダーから項目のテンプレートと呼ばれる、ソース ファイルをアンパックします。 テンプレートは、それに応じてカスタマイズして、新しいプロジェクトにこれらのファイルをコピーします。 プロジェクトと項目テンプレートの概要については、[NIB: Visual Studio テンプレート](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)を参照してください。  
   
 ### <a name="template-parameter-replacement"></a>テンプレート パラメーターの置換  
  テンプレートは、新しいプロジェクトに項目テンプレートをコピー、ファイルをカスタマイズする文字列を含むテンプレートのパラメーターが置き換えられます。 テンプレート パラメーターは特殊なトークンを前後にドル記号では、たとえばは、$date$ です。  

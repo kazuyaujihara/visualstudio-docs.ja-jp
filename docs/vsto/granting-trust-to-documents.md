@@ -30,7 +30,7 @@ ms.locfileid: "56599663"
 ## <a name="trusted-locations"></a>信頼できる場所
  アプリケーションで[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]Office 2010 がセンターのユーザーが信頼できる場所などのセキュリティとプライバシーの設定を構成できます。 Office ソリューションでは、ローカル コンピューターが信頼できる場所と見なされます。 ただし、ディレクトリの中には、リスクが高めであるために信頼できないものもあります (システム、各ユーザー、Internet Explorer 用の一時フォルダーなど)。
 
- セキュリティ センターの詳細については、次を参照してください。[セキュリティ ポリシーと Office 2010 で設定](http://go.microsoft.com/fwlink/?LinkId=89202)します。 作成、管理、削除、および信頼されているフォルダーを構成する方法の詳細については、次を参照してください[、2007 Office system で信頼できる場所および信頼された発行元の設定を構成する](http://go.microsoft.com/fwlink/?LinkId=89203)と[作成、削除、または変更します。ファイルの場所を信頼された](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)します。
+ セキュリティ センターの詳細については、[セキュリティ ポリシーと Office 2010 で設定](http://go.microsoft.com/fwlink/?LinkId=89202)を参照してください。 作成、管理、削除、および信頼されているフォルダーを構成する方法の詳細については、次を参照してください[、2007 Office system で信頼できる場所および信頼された発行元の設定を構成する](http://go.microsoft.com/fwlink/?LinkId=89203)と[作成、削除、または変更します。ファイルの場所を信頼された](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)します。
 
 ## <a name="security-considerations-for-office-solutions"></a>Office ソリューションのセキュリティに関する考慮事項
  どのフォルダーを信頼できる場所に追加するかを検討するときには、以下のセキュリティ上の問題に留意する必要があります。

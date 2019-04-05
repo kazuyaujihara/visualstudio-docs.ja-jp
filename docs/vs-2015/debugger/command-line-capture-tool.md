@@ -1,25 +1,20 @@
 ---
 title: コマンド ライン キャプチャ ツール |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770684"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976850"
 ---
 # <a name="command-line-capture-tool"></a>コマンド ライン キャプチャ ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +96,7 @@ DXCap.exe –info
  `-info`  
  コンピューターとキャプチャの DLL に関する情報を表示します。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
  DXCap.exe は 3 つのモードで動作します。  
   
  キャプチャ モード (-c)  
@@ -121,7 +116,7 @@ DXCap.exe –info
  情報関数 (`-info)`  
  コンピューターとキャプチャの DLL の詳細を表示します。  
   
-## <a name="examples"></a>例  
+## <a name="examples"></a>使用例  
   
 ### <a name="capture-graphics-information-from-a-desktop-app"></a>デスクトップ アプリからのグラフィックス情報のキャプチャ  
  使用`–c`グラフィックス情報をキャプチャするアプリを指定します。  
@@ -142,10 +137,10 @@ DXCap.exe –file regression_test_12.vsglog –c BasicHLSL11.exe
 DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- 上記の例のコマンドでは、3-D コンテンツのレンダリングに WebGL API を使用する www.fishgl.com にある web ページの表示中に Internet Explorer のデスクトップ バージョンからグラフィックス情報をキャプチャします。  
+ 上記の例のコマンドでは、WebGL API を使用して 3-D コンテンツをレンダリングする、www.fishgl.com にある Web ページの表示中に、Internet Explorer のデスクトップ バージョンからグラフィックス情報をキャプチャします。  
   
 > [!NOTE]
->  これには、後、アプリに表示されるコマンドライン引数が渡される、ためには、DXCap.exe を使用する前に対象としています引数を指定する必要があります、`–c`オプション。  
+>  アプリの後に指定したコマンド ライン引数はアプリに渡されるため、`–c` オプションを使用する前に、DXCap.exe の引数を指定する必要があります。  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>Windows ストア アプリからグラフィックス情報をキャプチャします。  
  Windows ストア アプリからグラフィックス情報をキャプチャできます。  
@@ -168,18 +163,18 @@ DXCap.exe –e map
   
  上記のコマンドでは、"map" に一致する Windows ストア アプリが列挙されます。出力を次に示します。  
   
- **パッケージ"Microsoft.BingMaps":**  
- **検出: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **名前: Microsoft.BingMaps**  
- **発行者: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = u. s.**  
- **バージョン: 2.1.2914.1734**  
- **起動可能なアプリケーションの場合:**  
- **Id: AppexMaps**  
- **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA: いいえ**  
- **(起動) を AppSpec: DXCap.exe の-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**列挙された各アプリの出力の最後の行からグラフィックス情報をキャプチャする際のコマンドを表示します。  
+ **パッケージ "Microsoft.BingMaps":**  
+ **検出:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName:Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **名:Microsoft.BingMaps**  
+ **発行元:CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = u. s.**  
+ **バージョン          : 2.1.2914.1734**  
+ **起動可能なアプリケーション:**   
+ **Id:AppexMaps**  
+ **実行可能ファイル:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **IsWWA:違います**  
+ **(起動) を AppSpec:DXCap.exe の-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**列挙された各アプリの出力の最後の行からグラフィックス情報をキャプチャする際のコマンドを表示します。  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>特定のフレームまたは特定の期間のフレームのキャプチャ  
  使用`–frame`コンマおよび範囲を使用してキャプチャするフレームを指定します。  
@@ -302,6 +297,3 @@ DXCap.exe –p regression_test_12.vsglog –toXML temp.xml
 ```  
   
 ## <a name="requirements"></a>必要条件
-
-
-

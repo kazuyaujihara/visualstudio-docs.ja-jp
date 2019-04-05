@@ -31,7 +31,7 @@ MSBuild では、ビルド、ビルド タスク、および構成をビルド�
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>
 ```
 
- 条件付き属性の詳細については、次を参照してください。[条件構造](../../msbuild/msbuild-conditional-constructs.md)します。
+ 条件付き属性の詳細については、[条件構造](../../msbuild/msbuild-conditional-constructs.md)を参照してください。
 
 ### <a name="extending-msbuild-for-your-project-type"></a>種類のプロジェクトの MSBuild の拡張
  MSBuild のインターフェイスと Api は、の将来のバージョンで変更される可能性は[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 そのため、変更からシールドを提供するために、マネージ パッケージ フレームワーク (MPF) クラスを使用することをお勧めします。
@@ -51,7 +51,7 @@ MSBuild では、ビルド、ビルド タスク、および構成をビルド�
  `Microsoft.VisualStudio.Package.ProjectElement` クラスは、MSBuild 項目用のラッパーです。
 
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>単一ファイル ジェネレーターの vs します。MSBuild タスク
- 単一ファイル ジェネレーターは、デザイン時のみにアクセスできるが、デザイン時およびビルド時に MSBuild タスクを使用できます。 最大限の柔軟性の変換し、コードを生成する MSBuild タスクを使用してそのため。 詳細については、次を参照してください。[カスタム ツール](../../extensibility/internals/custom-tools.md)します。
+ 単一ファイル ジェネレーターは、デザイン時のみにアクセスできるが、デザイン時およびビルド時に MSBuild タスクを使用できます。 最大限の柔軟性の変換し、コードを生成する MSBuild タスクを使用してそのため。 詳細については、[カスタム ツール](../../extensibility/internals/custom-tools.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [MSBuild リファレンス](../../msbuild/msbuild-reference.md)

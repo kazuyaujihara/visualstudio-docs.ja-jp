@@ -23,7 +23,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56618836"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO アドインのプログラミングを始める
-  VSTO アドインを使用することにより、Microsoft Office アプリケーションを自動化し、アプリケーションの機能を拡張できるほか、アプリケーションのユーザー インターフェイス (UI) をカスタマイズすることもできます。 Visual Studio を使用して作成できる他の種類の Office ソリューションに VSTO アドインの比較については、次を参照してください。 [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)します。
+  VSTO アドインを使用することにより、Microsoft Office アプリケーションを自動化し、アプリケーションの機能を拡張できるほか、アプリケーションのユーザー インターフェイス (UI) をカスタマイズすることもできます。 Visual Studio を使用して作成できる他の種類の Office ソリューションに VSTO アドインの比較については、[Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)を参照してください。
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
@@ -33,10 +33,10 @@ ms.locfileid: "56618836"
  VSTO アドイン プロジェクトを作成する方法の詳細については、次を参照してください。[方法。Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。 プロジェクト テンプレートの詳細については、「[Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)」を参照してください。
 
 ## <a name="develop-vsto-add-in-projects"></a>VSTO アドイン プロジェクトを開発します。
- VSTO アドイン プロジェクトを作成すると、Visual Studio は自動的に作成、 *ThisAddIn.vb* (で[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) または*ThisAddIn.cs*コード ファイル (で C# の場合)。 このファイルが含まれています、`ThisAddIn`クラスを VSTO アドインの基盤を提供します。 このクラスのメンバーを使用して、VSTO アドインが読み込まれたとき、またはアンロードされたときにコードを実行したり、ホスト アプリケーションのオブジェクト モデルにアクセスしたりすることができます。また、アプリケーションの機能を拡張することも可能です。 詳細については、次を参照してください。[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)します。
+ VSTO アドイン プロジェクトを作成すると、Visual Studio は自動的に作成、 *ThisAddIn.vb* (で[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) または*ThisAddIn.cs*コード ファイル (で C# の場合)。 このファイルが含まれています、`ThisAddIn`クラスを VSTO アドインの基盤を提供します。 このクラスのメンバーを使用して、VSTO アドインが読み込まれたとき、またはアンロードされたときにコードを実行したり、ホスト アプリケーションのオブジェクト モデルにアクセスしたりすることができます。また、アプリケーションの機能を拡張することも可能です。 詳細については、[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)を参照してください。
 
 ## <a name="automate-applications-by-using-the-object-models"></a>オブジェクト モデルを使用してアプリケーションを自動化します。
- Microsoft Office アプリケーションのオブジェクト モデルは、VSTO アドインでプログラミングに使用できる多くの型を公開します。 それらの型を使用してアプリケーションを自動化できます。 たとえば、Outlook でプログラムによって電子メールを作成および送信することもできれば、Word で文書を開き、コンテンツを追加することも可能です。 コードでは、ホスト アプリケーションのオブジェクト モデルにアクセスする方法の詳細については、次を参照してください。[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)します。
+ Microsoft Office アプリケーションのオブジェクト モデルは、VSTO アドインでプログラミングに使用できる多くの型を公開します。 それらの型を使用してアプリケーションを自動化できます。 たとえば、Outlook でプログラムによって電子メールを作成および送信することもできれば、Word で文書を開き、コンテンツを追加することも可能です。 コードでは、ホスト アプリケーションのオブジェクト モデルにアクセスする方法の詳細については、[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)を参照してください。
 
  特定の Microsoft Office アプリケーションのオブジェクト モデルの詳細については、以下のトピックを参照してください。
 
@@ -57,17 +57,17 @@ ms.locfileid: "56618836"
 ## <a name="customize-the-user-interface-of-applications"></a>アプリケーションのユーザー インターフェイスをカスタマイズします。
  VSTO アドインを使用して、ホスト アプリケーションの UI をカスタマイズするいくつかのさまざまな方法はあります。
 
-- Excel や Word の場合、ドキュメントにマネージド コントロールを追加できます。 詳細については、次を参照してください。[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)します。
+- Excel や Word の場合、ドキュメントにマネージド コントロールを追加できます。 詳細については、[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)を参照してください。
 
-- アプリケーションでサポートされている場合は、リボンをカスタマイズできます。 詳細については、次を参照してください。[リボンの概要](../vsto/ribbon-overview.md)します。
+- アプリケーションでサポートされている場合は、リボンをカスタマイズできます。 詳細については、[リボンの概要](../vsto/ribbon-overview.md)を参照してください。
 
-- アプリケーションでサポートされている場合は、カスタム作業ウィンドウを作成できます。 詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
+- アプリケーションでサポートされている場合は、カスタム作業ウィンドウを作成できます。 詳細については、[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)を参照してください。
 
-- Outlook では、カスタム フォーム領域を作成できます。 詳細については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
+- Outlook では、カスタム フォーム領域を作成できます。 詳細については、[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)を参照してください。
 
 - すべての Microsoft Office アプリケーションで、VSTO アドインに Windows フォームを表示できます。
 
-  Microsoft Office の UI アプリケーションをカスタマイズする方法の詳細については、次を参照してください。 [Office UI のカスタマイズ](../vsto/office-ui-customization.md)します。
+  Microsoft Office の UI アプリケーションをカスタマイズする方法の詳細については、[Office UI のカスタマイズ](../vsto/office-ui-customization.md)を参照してください。
 
 ## <a name="next-steps"></a>次の手順
  VSTO アドインの作成方法については、次のチュートリアルを参照してください。
@@ -84,7 +84,7 @@ ms.locfileid: "56618836"
 
   これらのチュートリアルでは、Visual Studio の Office 開発ツール、および VSTO アドインのプログラミング モデルを紹介します。
 
-  Office プロジェクトで、一般的なタスクを解説しているトピックの一覧は、次を参照してください。 [Office プログラミングで一般的なタスク](../vsto/common-tasks-in-office-programming.md)します。
+  Office プロジェクトで、一般的なタスクを解説しているトピックの一覧は、[Office プログラミングで一般的なタスク](../vsto/common-tasks-in-office-programming.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [方法: Visual Studio での Office プロジェクトを作成します。](../vsto/how-to-create-office-projects-in-visual-studio.md)

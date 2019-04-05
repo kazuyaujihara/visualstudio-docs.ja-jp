@@ -27,7 +27,7 @@ ms.locfileid: "56722250"
 
 1.  C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `HighlightWordTest`の名前を指定します。
 
-2.  エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)します。
+2.  エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)を参照してください。
 
 3.  既存のクラス ファイルを削除します。
 
@@ -351,7 +351,7 @@ ms.locfileid: "56722250"
  実装する必要があります、タガーを作成する、<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>します。 このクラスを MEF コンポーネント パーツはため、この拡張機能が認識されるように、適切な属性を設定する必要があります。
 
 > [!NOTE]
->  MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
+>  MEF の詳細については、[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)を参照してください。
 
 ### <a name="to-create-a-tagger-provider"></a>タガー プロバイダーを作成するには
 

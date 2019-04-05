@@ -1,11 +1,8 @@
 ---
 title: 従来のワークフローのデバッグ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, debugging
@@ -15,13 +12,13 @@ ms.assetid: e6097b47-760a-4b30-a92c-ae70cdbda49f
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 5d835ddc84fae24130035f0664d446a73b7ac3f4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7585d824ea6abf7df0aab5dc07c88abe9ff97081
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897709"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972865"
 ---
 # <a name="debugging-legacy-workflows"></a>従来のワークフローのデバッグ
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] の従来の [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)]を使用して、.NET Framework 3.0 または 3.5 を対象とする [!INCLUDE[wf](../includes/wf-md.md)] アプリケーションを作成する場合は、ブレークポイントの設定、プロセスへのアタッチ、スレッドと呼び出しスタックの検査を実行して、他のプログラムと同じようにワークフローをデバッグできます。 また、リモート デバッグを実行することもできます。  
@@ -38,11 +35,11 @@ ms.locfileid: "49897709"
   
  [!INCLUDE[wf2](../includes/wf2-md.md)] は、次のような標準の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッグ ウィンドウに統合されています。  
   
-- **ブレークポイント**: 想定どおりに機能するが、関数名のアクティビティを指定します。  
+- **ブレークポイント**:想定どおりに動作し、関数名のアクティビティを指定します。  
   
-- **呼び出し履歴**: ワークフロー インスタンス内で実行されたアクティビティの概要を提供するよう変更します。 内のエントリ、**呼び出し履歴**ウィンドウが実行されるアクティビティの深さ優先検索します。 エントリをダブルクリックすると、選択したアクティビティにフォーカスを設定できます。  
+- **呼び出し履歴**:ワークフロー インスタンス内で実行されたアクティビティのアウトラインを提供するように変更します。 内のエントリ、**呼び出し履歴**ウィンドウが実行されるアクティビティの深さ優先検索します。 エントリをダブルクリックすると、選択したアクティビティにフォーカスを設定できます。  
   
-- **スレッド**: デバッグ中にワークフロー インスタンスのインスタンス ID を提供します。  
+- **スレッド**:デバッグ中にワークフロー インスタンスのインスタンス ID を提供します。  
   
   Visual Studio for Windows Workflow Foundation は、次のデバッグ機能をサポートしません。  
   

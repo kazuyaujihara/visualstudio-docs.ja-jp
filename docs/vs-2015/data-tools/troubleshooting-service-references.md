@@ -22,7 +22,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49223965"
@@ -79,7 +79,7 @@ ms.locfileid: "49223965"
 
 3.  確認します、**ビルド構成の詳細を表示** チェック ボックスが選択されているし、クリックして**OK**。
 
-4.  WCF サービス プロジェクトを読み込みます。 詳細については、次を参照してください。 [NIB How to: マルチ プロジェクト ソリューションの作成](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)です。
+4.  WCF サービス プロジェクトを読み込みます。 詳細については、[NIB How to: マルチ プロジェクト ソリューションの作成](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)を参照してください。
 
 5.  **Configuration Manager**ダイアログ ボックスで、セット、**アクティブ ソリューション構成**に**デバッグ**します。 詳細については、「[How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md)」(方法 : 構成を作成および編集する) を参照してください。
 

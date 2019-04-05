@@ -25,7 +25,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 113356a664d94fdd2e8d3e53fae6025d8ef22e60
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49213006"
@@ -39,7 +39,7 @@ ms.locfileid: "49213006"
   
  `Installation URL`でプロパティを設定することができます、**発行**のページ、**プロジェクト デザイナー**します。  
   
- **注**、`Installation URL`を使用してプロパティを設定することも、**発行ウィザード**します。 詳細については、次を参照してください。[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)します。  
+ **注**、`Installation URL`を使用してプロパティを設定することも、**発行ウィザード**します。 詳細については、[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)を参照してください。  
   
 ### <a name="to-specify-an-installation-url"></a>インストール URL を指定するには  
   

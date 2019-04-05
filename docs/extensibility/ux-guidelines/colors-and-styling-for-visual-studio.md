@@ -57,7 +57,7 @@ Visual Studio 機能の 3 つの異なる配色テーマ: 明色、暗色、青�
 
 ユーザーは、Visual Studio の最初の使用時にテーマを選択するように求められますに移動して、後でテーマを切り替えができるように**ツール&gt;オプション&gt;環境&gt;全般**から新しいテーマを選択して"配色テーマ ドロップダウン メニュー。
 
-ユーザーはコントロール パネルを使用してもいくつかのハイ コントラスト テーマの 1 つに、システム全体を切り替えます。 ユーザーは、ハイ コントラストのテーマを選択する場合 Visual Studio の色のテーマ セレクターに影響しません Visual Studio での色が、ハイ コントラスト モードを終了するときに、テーマの変更が保存されます。 ハイ コントラスト モードの詳細については、次を参照してください。[ハイ コントラストの選択色](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors)します。
+ユーザーはコントロール パネルを使用してもいくつかのハイ コントラスト テーマの 1 つに、システム全体を切り替えます。 ユーザーは、ハイ コントラストのテーマを選択する場合 Visual Studio の色のテーマ セレクターに影響しません Visual Studio での色が、ハイ コントラスト モードを終了するときに、テーマの変更が保存されます。 ハイ コントラスト モードの詳細については、[ハイ コントラストの選択色](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors)を参照してください。
 
 ### <a name="the-vscolor-service"></a>VSColor service
 
@@ -341,7 +341,7 @@ Ui、色のセットを制限するこれを適用するときに *「標準」�
 
 VSPackage では、フォントと色カスタム カテゴリを制御でき、[フォントおよび色のプロパティ] ページの項目を表示することができます。 このメカニズムを使用して、Vspackage を実装する必要があります、 [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider)インターフェイスとその関連するインターフェイス。
 
-原則として、既存のすべての表示項目およびそれらが含まれているカテゴリを変更するこのメカニズムを使用できます。 ただし、その使わないでテキスト エディターのカテゴリまたはその表示項目を変更します。 テキスト エディターのカテゴリの詳細については、次を参照してください。[フォントと色の概要](../font-and-color-overview.md)します。
+原則として、既存のすべての表示項目およびそれらが含まれているカテゴリを変更するこのメカニズムを使用できます。 ただし、その使わないでテキスト エディターのカテゴリまたはその表示項目を変更します。 テキスト エディターのカテゴリの詳細については、[フォントと色の概要](../font-and-color-overview.md)を参照してください。
 
 カスタム カテゴリを実装または項目を表示、VSPackage では次の必要があります。
 

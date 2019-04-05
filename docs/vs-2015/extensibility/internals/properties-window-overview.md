@@ -1,26 +1,21 @@
 ---
 title: プロパティ ウィンドウの概要 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b733a6845a61a71f15d8574666b345dedbf6f50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 224fb081f21701433a84121985f90351225036e5
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752095"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58963838"
 ---
 # <a name="properties-window-overview"></a>プロパティ ウィンドウの概要
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "51752095"
 |インターフェイス名|説明|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|カテゴリの一覧を示します、**プロパティ**ウィンドウの各プロパティをカテゴリにマップされます。|  
-|[IDispatch インターフェイス](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|オブジェクトのメソッドとプロパティ プログラミング ツールとオートメーションをサポートする他のアプリケーションを公開します。|  
+|[IDispatch インターフェイス](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|オブジェクトのメソッドとプロパティ プログラミング ツールとオートメーションをサポートする他のアプリケーションを公開します。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|省略記号 (...) ボタンが呼び出されます*ビルダー*オブジェクト自体によって実装されたモーダル ダイアログ ウィンドウを開くです。 値を簡単に型指定されていないテキスト フィールド内のユーザーによって場合、使用されます。 たとえばの RGB 値を決定するカラー ピッカーを開きます使用可能性があります。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|表示される情報の更新に使用されるオブジェクトにアクセスできるように、**プロパティ**ウィンドウ。 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 各ウィンドウを表示する関連のプロパティで選択可能オブジェクトを含む Vspackage によって実装されます。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|インターフェイスと構造体のフィールドのメソッドなどのオブジェクトの種類について説明します。|  
@@ -58,4 +53,3 @@ ms.locfileid: "51752095"
 ## <a name="see-also"></a>関連項目  
  [プロパティの拡張](../../extensibility/internals/extending-properties.md)   
  [プロパティ ウィンドウのフィールドとインターフェイス](../../extensibility/internals/properties-window-fields-and-interfaces.md)
-

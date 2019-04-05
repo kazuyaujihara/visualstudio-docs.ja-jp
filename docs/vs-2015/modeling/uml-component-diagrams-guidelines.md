@@ -20,7 +20,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51801475"
@@ -28,7 +28,7 @@ ms.locfileid: "51801475"
 # <a name="uml-component-diagrams-guidelines"></a>UML コンポーネント図: ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio で描画することができます、*コンポーネント図*ソフトウェア システムの構造を表示します。 ビデオ デモについては、次を参照してください。[コンポーネント図を使用して Designing the Physical Structure](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)します。  
+Visual Studio で描画することができます、*コンポーネント図*ソフトウェア システムの構造を表示します。 ビデオ デモについては、[コンポーネント図を使用して Designing the Physical Structure](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)を参照してください。  
   
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
@@ -49,15 +49,15 @@ Visual Studio で描画することができます、*コンポーネント図*�
   
 |図の種類|確認できる設計の側面|  
 |-------------------|--------------------------------------------------------------------|  
-|UML シーケンス図|-システムのコンポーネント間の相互作用<br />-相互作用とコンポーネント内のパート間。<br /><br /> 詳細については、次を参照してください。 [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。|  
-|UML クラス図|コンポーネントのインターフェイスです。 クラス図を使用すると、インターフェイスのメソッドを詳しく示すことができます。<br />-パラメーターでコンポーネントのインターフェイスを介して送信されるデータ。<br /><br /> 詳細については、次を参照してください。 [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)します。|  
-|アクティビティ図|-内部の処理は、受信メッセージに対する応答としてコンポーネントによって実行されます。<br /><br /> 詳細については、次を参照してください。 [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。|  
-|レイヤー図|お使いのコンポーネントの論理アーキテクチャ層。<br /><br /> 詳細については、次を参照してください。[レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)します。|  
+|UML シーケンス図|-システムのコンポーネント間の相互作用<br />-相互作用とコンポーネント内のパート間。<br /><br /> 詳細については、[UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)を参照してください。|  
+|UML クラス図|コンポーネントのインターフェイスです。 クラス図を使用すると、インターフェイスのメソッドを詳しく示すことができます。<br />-パラメーターでコンポーネントのインターフェイスを介して送信されるデータ。<br /><br /> 詳細については、[UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)を参照してください。|  
+|アクティビティ図|-内部の処理は、受信メッセージに対する応答としてコンポーネントによって実行されます。<br /><br /> 詳細については、[UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)を参照してください。|  
+|レイヤー図|お使いのコンポーネントの論理アーキテクチャ層。<br /><br /> 詳細については、[レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)を参照してください。|  
   
 ##  <a name="Basics"></a> コンポーネント図を描画するための基本的な手順  
- リファレンス コンポーネント図の要素に関する情報については、次を参照してください。 [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)します。  
+ リファレンス コンポーネント図の要素に関する情報については、[UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)を参照してください。  
   
- コンポーネント図を設計プロセスで使用する方法の詳細については、次を参照してください。 [、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)します。  
+ コンポーネント図を設計プロセスで使用する方法の詳細については、[、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)を参照してください。  
   
 > [!NOTE]
 >  いずれかのモデリング図を作成するための詳細な手順が記載されて[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
@@ -279,7 +279,7 @@ Visual Studio で描画することができます、*コンポーネント図*�
   
 1.  新しいシーケンス図を生成します。  
   
-     詳細については、次を参照してください。 [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
+     詳細については、[UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)を参照してください。  
   
 2.  このコンポーネントにメッセージを送信する外部コンポーネント、ユーザー、デバイス、またはその他のアクター (1) の生存線を生成します。  
   
@@ -301,7 +301,7 @@ Visual Studio で描画することができます、*コンポーネント図*�
  設定して、モデルで指定できます、 **Is Indirectly Instantiated**コンポーネントのプロパティ。 この場合、すべてのコンポーネントのインターフェイスがポート上にあり、内部パートへの委譲が設定されている必要があります。  
   
 ### <a name="describing-the-process-inside-each-part"></a>各パート内のプロセスの記述  
- アクティビティ図を使用すると、コンポーネントがそれぞれの受信メッセージをどのように処理するかを示すことができます。 詳細については、次を参照してください。 [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。  
+ アクティビティ図を使用すると、コンポーネントがそれぞれの受信メッセージをどのように処理するかを示すことができます。 詳細については、[UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)を参照してください。  
   
  ![データ バッファーと共にアクティビティ図](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")  
   

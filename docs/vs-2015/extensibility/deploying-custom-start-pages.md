@@ -1,27 +1,22 @@
 ---
 title: カスタム スタート ページを展開する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795116"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002434"
 ---
 # <a name="deploying-custom-start-pages"></a>カスタム スタート ページのデプロイ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ VSIX 配置を使用するか、ターゲット コンピューター上の適�
   
 - ネットワーク共有またはパブリック Web サイトでは、.vsix ファイルを配置できます。 ファイルを開く誰かと、スタート ページが自動的にインストールします。  
   
-- .Vsix ファイルをアップロードすることができます、 [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkID=123847) Web サイトのユーザーを使用してインストールできるように**拡張機能マネージャー**します。  
+- .Vsix ファイルをアップロードすることができます、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトのユーザーを使用してインストールできるように**拡張機能マネージャー**します。  
   
   スタート ページ プロジェクト テンプレートは、コピーを変更して、元を保持するように Visual Studio スタート ページの既定のコピーを作成します。  
   
@@ -46,9 +41,9 @@ VSIX 配置を使用するか、ターゲット コンピューター上の適�
   
 - によって、カスタム スタート ページにファイルを空の VSIX プロジェクトに追加します。 詳細については、次を参照してください。 [VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)します。  
   
-- .Vsix ファイルを手動で作成します。 詳細については、次を参照してください。[方法: 拡張機能 (VSIX 配置) を手動でパッケージ化](../misc/how-to-manually-package-an-extension-vsix-deployment.md)します。  
+- .Vsix ファイルを手動で作成します。 詳細については、「[方法 :拡張機能 (VSIX 配置) を手動でパッケージ化](../misc/how-to-manually-package-an-extension-vsix-deployment.md)します。  
   
-  Visual studio がスタート ページでは、認識、 `Content Element` VSIX マニフェストの含める必要があります、`CustomExtension Element`を持つ、`Type`属性に設定`"StartPage"`。 VSIX 配置を使用して、インストールされているスタート ページの拡張機能が表示されます、**スタート ページのカスタマイズ**ボックスの一覧、**スタートアップ**オプションのページとして **[インストールされている拡張機能]***拡張機能名*します。  
+  Visual studio がスタート ページでは、認識、 `Content Element` VSIX マニフェストの含める必要があります、`CustomExtension Element`を持つ、`Type`属性に設定`"StartPage"`。 VSIX 配置を使用して、インストールされているスタート ページの拡張機能が表示されます、**スタート ページのカスタマイズ**ボックスの一覧、**スタートアップ**オプションのページとして **[インストールされている拡張機能]** *拡張機能名*します。  
   
   スタート ページのパッケージには、アセンブリが含まれている場合、Visual Studio の起動時に使用可能なものには、パスの登録をバインディングを追加する必要があります。 これを行うには、パッケージが次の情報を持つ .pkgdef ファイルが含まれることを確認します。  
   
@@ -76,9 +71,9 @@ VSIX 配置を使用するか、ターゲット コンピューター上の適�
   
 4.  変更を次を追加することで hklm の既定のスタート ページを設定する .pkgdef、 *MyStartPage.xaml*のスタート ページを含む .xaml ファイルの名前を指定します。  
   
-     [$RootKey$ \StartPage\Default]  
+     [$RootKey$\StartPage\Default]  
   
-     "Uri「=」$PackageFolder$\\*MyStartPage.xaml*"  
+     "Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
   
      これは、新しいスタート ページの場所を検索する Visual 立ったを指示します。  
   
@@ -98,4 +93,3 @@ VSIX 配置を使用するか、ターゲット コンピューター上の適�
 ## <a name="see-also"></a>関連項目  
  [スタート ページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)   
  [スタート ページへのユーザー コントロールの追加](../extensibility/adding-user-control-to-the-start-page.md)
-

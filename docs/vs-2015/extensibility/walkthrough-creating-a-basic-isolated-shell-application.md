@@ -1,14 +1,9 @@
 ---
-title: 'チュートリアル: 基本的な作成分離シェル アプリケーション |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: 分離シェル アプリケーションの基本的な作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, walkthroughs
 - Shell [Visual Studio], walkthroughs
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 901bbf12c9c1d153b84b3ed74f6ae8e97ebb2c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777319"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974465"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>チュートリアル: 基本的な分離シェル アプリケーションの作成
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>チュートリアル: 基本的な分離シェル アプリケーションを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、分離シェルのソリューションを作成し、バージョン情報 ツール ウィンドウをカスタマイズして、分離シェルをインストールするセットアップ プログラムを作成する方法を示します。  
@@ -120,7 +115,7 @@ ms.locfileid: "51777319"
   
 2.  次の行をコメント解除します。  
   
-     [$RootKey$ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3.  ソリューションをリビルドし、分離シェルのデバッグを開始します。 たとえば、\MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct、XML ファイルを開きます。 ファイル内の XML のキーワードの色づけされたいないことを確認し、その入力"<"行にも表示されません XML ツールヒント。  
   
@@ -265,4 +260,3 @@ ms.locfileid: "51777319"
   
 ## <a name="testing-the-installation-program"></a>インストール プログラムをテストします。  
  セットアップをテストするには、別のコンピューターに、setup.exe ファイルをコピーし、セットアップ実行可能ファイルを実行します。 分離シェル アプリケーションを実行する必要があります。
-

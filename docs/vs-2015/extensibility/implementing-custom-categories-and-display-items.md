@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 394f8f99539ab49c1201fa61ce612aee22ff2064
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51769126"
@@ -32,7 +32,7 @@ VSPackage は、そのテキストの色とフォントの制御を提供でき�
   
  このメカニズムを使用して、Vspackage を実装する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>インターフェイスとその関連するインターフェイス。  
   
- 原則として、このメカニズムを使用して既存のすべてを変更する**項目を表示**と**カテゴリ**を含めることができます。 ただし、この属性は変更することできません使用する必要があります、**テキスト EditorCategory**またはその**表示項目**します。 詳細については、次を参照してください。[フォントと色の概要](../extensibility/font-and-color-overview.md)します。  
+ 原則として、このメカニズムを使用して既存のすべてを変更する**項目を表示**と**カテゴリ**を含めることができます。 ただし、この属性は変更することできません使用する必要があります、**テキスト EditorCategory**またはその**表示項目**します。 詳細については、[フォントと色の概要](../extensibility/font-and-color-overview.md)を参照してください。  
   
  ユーザー設定を実装する**カテゴリ**または**項目を表示**VSPackage にする必要があります。  
   
@@ -48,7 +48,7 @@ VSPackage は、そのテキストの色とフォントの制御を提供でき�
   
 - フォントと色の変更を処理します。  
   
-  詳しくは、次を参照してください。[にアクセスする格納されているフォントと色の設定](../extensibility/accessing-stored-font-and-color-settings.md)します。  
+  詳しくは、[にアクセスする格納されているフォントと色の設定](../extensibility/accessing-stored-font-and-color-settings.md)を参照してください。  
   
 ## <a name="to-create-or-identify-categories"></a>作成またはカテゴリを識別するには  
   
@@ -124,7 +124,7 @@ VSPackage は、そのテキストの色とフォントの制御を提供でき�
   
 -   IDE の変更をポーリングします。  
   
-     これは、システムによって実装されるを通して実行<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。 主に、永続化のサポートには、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>のフォントと色の情報を取得するメソッドを使用できる**項目を表示**します。 詳細については、次を参照してください。[にアクセスする格納されているフォントと色の設定](../extensibility/accessing-stored-font-and-color-settings.md)します。  
+     これは、システムによって実装されるを通して実行<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。 主に、永続化のサポートには、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>のフォントと色の情報を取得するメソッドを使用できる**項目を表示**します。 詳細については、[にアクセスする格納されているフォントと色の設定](../extensibility/accessing-stored-font-and-color-settings.md)を参照してください。  
   
     > [!NOTE]
     >  ポーリングによって得られた結果が正しいことに、使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>インターフェイスの取得メソッドを呼び出す前に、キャッシュのフラッシュと更新プログラムが必要なかどうかを決定する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。  

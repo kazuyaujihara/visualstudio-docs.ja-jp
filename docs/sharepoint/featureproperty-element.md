@@ -49,7 +49,7 @@ ms.locfileid: "58322771"
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|SharePoint に配置されるときに、機能に含まれているプロパティ値のコレクションを表します。|
 
 ## <a name="remarks"></a>Remarks
- 機能プロパティの詳細については、次を参照してください。[プロジェクト項目でのパッケージと展開の情報を提供する](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)します。
+ 機能プロパティの詳細については、[プロジェクト項目でのパッケージと展開の情報を提供する](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)を参照してください。
 
 ## <a name="element-information"></a>要素情報
 

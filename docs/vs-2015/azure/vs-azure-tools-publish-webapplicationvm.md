@@ -1,8 +1,8 @@
 ---
-title: Publish-webapplicationvm |Microsoft Docs
-description: 仮想マシンに web アプリケーションをデプロイする方法について説明します。 このスクリプトでは、存在していない場合に、Azure サブスクリプションに必要なリソースを作成します。
+title: Publish-WebApplicationVM | Microsoft Docs
+description: 仮想マシンに Web アプリケーションをデプロイする方法を学習します。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,15 +11,15 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: c2383e6d7b14d801a391a725f0482736fb926cd1
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e35f5decee2a908a9d1075ff3f6365a1d358c7b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003002"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973711"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell スクリプト)
-仮想マシンへの web アプリケーションをデプロイします。 スクリプトが存在しない場合に、Azure サブスクリプションで、必要なリソースを作成します。
+仮想マシンに Web アプリケーションをデプロイします。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
 
 ```
 Publish-WebApplicationVM
@@ -33,15 +33,15 @@ Publish-WebApplicationVM
 ```
 
 ### <a name="configuration"></a>構成
-展開の詳細を記述する JSON 構成ファイルへのパス。
+デプロイの詳細が記述されている JSON 構成ファイルへのパス。
 
 | Aliases | none |
 | --- | --- |
 | 必須? |true |
 | 位置 |名前付き |
 | 既定値 |none |
-| パイプラインの入力をそのまま使用しますか。 |False |
-| ワイルドカード文字を使用しますか。 |False |
+| パイプライン入力を許可する |False |
+| ワイルドカード文字を許可する |False |
 
 ### <a name="subscriptionname"></a>SubscriptionName
 仮想マシンを作成する Azure サブスクリプションの名前。
@@ -50,69 +50,69 @@ Publish-WebApplicationVM
 | --- | --- |
 | 必須? |False |
 | 位置 |名前付き |
-| 既定値 |サブスクリプション ファイルでは、最初のサブスクリプション |
-| パイプラインの入力をそのまま使用しますか。 |False |
-| ワイルドカード文字を使用しますか。 |False |
+| 既定値 |サブスクリプション ファイルで最初のサブスクリプションを使用する |
+| パイプライン入力を許可する |False |
+| ワイルドカード文字を許可する |False |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-仮想マシンに発行する web デプロイ パッケージへのパス。 このパッケージを作成するには、Visual Studio で Web の発行ウィザードを使用します。 参照してください[方法: Visual Studio で Web 配置パッケージを作成する](https://msdn.microsoft.com/library/dd465323.aspx)します。
+仮想マシンに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 「[方法:Visual Studio で Web 配置パッケージを作成する](https://msdn.microsoft.com/library/dd465323.aspx)」を参照してください。
 
 | Aliases | none |
 | --- | --- |
 | 必須? |False |
 | 位置 |名前付き |
 | 既定値 |none |
-| パイプラインの入力をそのまま使用しますか。 |False |
-| ワイルドカード文字を使用しますか。 |False |
+| パイプライン入力を許可する |False |
+| ワイルドカード文字を許可する |False |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
-True の場合は、信頼されたルート機関によって署名されていない証明書の使用を許可します。
+True の場合は、信頼されたルート証明機関によって署名されていない証明書の使用が許可されます。
 
 | Aliases | none |
 | --- | --- |
 | 必須? |False |
 | 位置 |名前付き |
 | 既定値 |False |
-| パイプラインの入力をそのまま使用しますか。 |False |
-| ワイルドカード文字を使用しますか。 |False |
+| パイプライン入力を許可する |False |
+| ワイルドカード文字を許可する |False |
 
 ### <a name="vmpassword"></a>VMPassword
-仮想マシン アカウントの資格情報。 例:-vmpassword @{Name ="admin";パスワード ="password"}
+仮想マシンアカウントの資格情報。 例: -VMPassword @{Name = "admin"; Password = "password"}
 
 | Aliases | none |
 | --- | --- |
 | 必須? |False |
 | 位置 |名前付き |
 | 既定値 |none |
-| パイプラインの入力をそのまま使用しますか。 |False |
-| ワイルドカード文字を使用しますか。 |False |
+| パイプライン入力を許可する |False |
+| ワイルドカード文字を許可する |False |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
-Azure SQL database の資格情報。 例:-databaseserverpassword @{Name ="admin";パスワード ="password"}
+Azure での SQL Database の資格情報。 例: -DatabaseServerPassword @{Name = "admin"; Password = "password"}
 
 | Aliases | none |
 | --- | --- |
 | 必須? |False |
 | 位置 |名前付き |
 | 既定値 |none |
-| パイプラインの入力をそのまま使用しますか。 |False |
-| ワイルドカード文字を使用しますか。 |False |
+| パイプライン入力を許可する |False |
+| ワイルドカード文字を許可する |False |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
-True の場合、印刷がスクリプトから出力ストリームにメッセージします。
+true の場合、スクリプトからのメッセージは出力ストリームに出力されます。
 
 | Aliases | none |
 | --- | --- |
 | 必須? |False |
 | 位置 |名前付き |
 | 既定値 |False |
-| パイプラインの入力をそのまま使用しますか。 |False |
-| ワイルドカード文字を使用しますか。 |False |
+| パイプライン入力を許可する |False |
+| ワイルドカード文字を許可する |False |
 
 ## <a name="remarks"></a>Remarks
-詳細については、スクリプトを使用して作成する方法の開発およびテスト環境を参照してください[開発環境およびテスト環境に発行する Windows PowerShell スクリプトを使用した](vs-azure-tools-publishing-using-powershell-scripts.md)します。
+スクリプトを使用して開発とテストの環境を作成する方法の詳細については、「 [Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行](vs-azure-tools-publishing-using-powershell-scripts.md)」をご覧ください。
 
-JSON 構成ファイルには、展開する新機能の詳細を指定します。 これには、名前、アフィニティ グループ、VHD イメージ、および仮想マシンのサイズなど、プロジェクトの作成時に指定した情報が含まれます。 また、存在する場合、仮想マシンをプロビジョニングするデータベースのエンドポイントが含まれていて、web デプロイメント パラメーター。 次のコードは、JSON 構成ファイルの例を示しています。
+JSON 構成ファイルではデプロイ対象の詳細が指定されます。 これには、仮想マシンの名前、アフィニティ グループ、VHD イメージ、およびサイズなど、プロジェクトを作成したときに指定した情報が含まれています。 また、仮想マシン上のエンドポイント、プロビジョニングするデータベース (該当する場合)、Web デプロイメント パラメーターも含まれています。 次のコードは JSON 構成ファイルの例を示しています。
 
 ```
 {
@@ -181,5 +181,4 @@ JSON 構成ファイルには、展開する新機能の詳細を指定します
 }
 ```
 
-プロビジョニングされる内容を変更する JSON 構成ファイルを編集することができます。 仮想マシンとクラウド サービスが必要ですが、データベースのセクションは省略可能です。
-
+プロビジョニング対象が変更されるように JSON 構成ファイルを編集できます。 仮想マシンとクラウド サービスは必須ですが、データベースのセクションは省略可能です。

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155525"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355553"
 ---
 # <a name="edit-python-code"></a>Python コードの編集
 
@@ -31,9 +31,9 @@ Visual Studio でのコードの編集に関する全般的な説明について
 
 IntelliSense により、[入力候補](#completions)、[シグネチャ ヘルプ](#signature-help)、[クイック ヒント](#quick-info)、[コードの色分け表示](#code-coloring)が提供されます。 Visual Studio 2017 バージョン 15.7 以降では、[型ヒント](#type-hints)もサポートされています。
 
-パフォーマンスを向上するために、**Visual Studio 2017 version 15.5** 以前の IntelliSense は、プロジェクト内の各 Python 環境用に生成される入力候補データベースに依存しています。 パッケージを追加、削除、更新した場合はデータベースの更新が必要になる可能性があります。 データベースの状態は、**[IntelliSense]** タブの **[Python 環境]** ウィンドウ (**ソリューション エクスプローラー**の兄弟ウィンドウ) に表示されます (「[環境ウィンドウ リファレンス](python-environments-window-tab-reference.md#intellisense-tab)」を参照)。
+パフォーマンスを向上するために、Visual Studio 2017 バージョン 15.5 以前の IntelliSense は、プロジェクト内の各 Python 環境用に生成される入力候補データベースに依存しています。 パッケージを追加、削除、更新した場合はデータベースの更新が必要になる可能性があります。 データベースの状態は、**[IntelliSense]** タブの **[Python 環境]** ウィンドウ (**ソリューション エクスプローラー**の兄弟ウィンドウ) に表示されます (「[環境ウィンドウ リファレンス](python-environments-window-tab-reference.md#intellisense-tab)」を参照)。
 
-**Visual Studio 2017 バージョン 15.6** 以降では、別の手段を使用して、データベースに依存しない IntelliSense 入力候補が提供されています。
+Visual Studio 2017 バージョン 15.6 以降では、別の手段を使用して、データベースに依存しない IntelliSense 入力候補が提供されています。
 
 ### <a name="completions"></a>入力候補
 

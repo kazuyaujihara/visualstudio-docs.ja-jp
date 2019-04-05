@@ -1,22 +1,20 @@
 ---
 title: C++ Core ガイドライン チェッカーの使用 |Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-code-analysis
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 1153f7a32c26946fafb1230699c4afcae976cd9e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799562"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976744"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,32 +79,29 @@ int main()
   
  この例では、C++ Core Check の規則を検索する警告のいくつかを示します。  
   
-- C26494 はルール Type.5: 常にオブジェクトを初期化します。  
+- C26494 は、規則 Type.5 です。常にオブジェクトを初期化します。  
   
-- C26485 はルール Bounds.3: 配列からポインターへの減退しません。  
+- C26485 は、規則 Bounds.3 です。配列とポインター減退がありません。  
   
-- C26481 はルール Bounds.1: ポインター演算を使用しないでください。 代わりに、`span` を使用してください。  
+- C26481 は、規則 Bounds.1 です。ポインターの算術演算を使用しないでください。 代わりに、`span` を使用してください。  
   
   C++ Core Check のコード分析ルールセットはインストールされている、このコードをコンパイルすると、最初の 2 つの警告は、出力が、3 つ目の抑制を有効になっている場合。 コード例からのビルド出力を次に示します。  
   
-  **1 >---ビルド開始: プロジェクト: CoreCheckExample、構成: デバッグ Win32--**  
+  **1 >---ビルド開始。プロジェクト:CoreCheckExample、構成:Win32--のデバッグします。**  
 **----**  
 **1 > CoreCheckExample.cpp**  
-**1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P を ->**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P を ->**  
-**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (完全な PDB)**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6): C26494 の警告: 変数 'arr' は uninitializ**  
+**ckexample\corecheckexample.cpp(6): C26494 を警告します。変数 'arr' は uninitializ**  
 **編集上は、常にオブジェクトを初期化します。(type.5: http://go.microsoft.com/fwlink/p/?Link**  
 **ID = 620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): 警告 C26485: 式 'arr': 配列からなし**  
+**ckexample\corecheckexample.cpp(7): C26485 を警告します。式 'arr':配列からなし**  
  **ポインターへの減退します。(bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
-**ステージのビルド: 1 正常終了、解像度 0 の失敗、0 が最新の状態、0 スキップ ステージ**より、安全なコードを記述するために、C++ Core ガイドラインはあります。 ただし、場所、ルール、またはプロファイルを適用しないインスタンスがある場合を簡単に、コード内で直接非表示になります。 使用することができます、`gsl::suppress`を検出して、次のコード ブロックの規則の違反をレポートから C++ Core Check を保持する属性。 特定のルールを抑制する個々 のステートメントをマークすることができます。 記述することで、全体の bounds プロファイルを抑制することができますも`[[gsl::suppress(bounds)]]`含めず、特定のルールの数。  
+**ステージのビルド:1 正常終了、0 失敗、0 の最新の状態、0 スキップ ステージ**より、安全なコードを記述するために、C++ Core ガイドラインはあります。 ただし、場所、ルール、またはプロファイルを適用しないインスタンスがある場合を簡単に、コード内で直接非表示になります。 使用することができます、`gsl::suppress`を検出して、次のコード ブロックの規則の違反をレポートから C++ Core Check を保持する属性。 特定のルールを抑制する個々 のステートメントをマークすることができます。 記述することで、全体の bounds プロファイルを抑制することができますも`[[gsl::suppress(bounds)]]`含めず、特定のルールの数。  
   
 ## <a name="use-the-guideline-support-library"></a>ガイドライン サポート ライブラリを使用します。  
  Microsoft.CppCoreCheck NuGet パッケージには、Microsoft の実装のガイドライン サポート ライブラリ (GSL) を含むパッケージもインストールされます。 あるスタンドアロンのフォームで使用できる、GSL も[ http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)します。 このライブラリは、コアのガイドラインに従う場合に便利です。 GSL より安全な代替手段でエラーが発生しやすい構成要素を置き換えますできる定義が含まれます。 などに置き換えることができます、`T*, length`パラメーターのペア、`span<T>`型。 ライブラリのソースがコメントの追加、またはドキュメントに投稿を見てしたい場合は、GSL、オープン ソースのプロジェクトにある[ https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)します。
-
-
-

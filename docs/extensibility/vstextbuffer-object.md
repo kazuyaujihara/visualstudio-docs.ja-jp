@@ -41,7 +41,7 @@ ms.locfileid: "56721928"
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|イベントのコネクション ポイントをサポートしています。|
 
 ## <a name="remarks"></a>Remarks
- `VSTextBuffer`で見つかることが、`QueryInterface`で呼び出す`IVsTextBuffer`します。 詳細については、次を参照してください。[テキスト バッファー](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)します。
+ `VSTextBuffer`で見つかることが、`QueryInterface`で呼び出す`IVsTextBuffer`します。 詳細については、[テキスト バッファー](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>

@@ -1,14 +1,9 @@
 ---
 title: '&lt;RelatedProducts&gt;要素 (ブートス トラップ) |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
 - MSBuild.GenerateBootstrapper.DuplicateItems
@@ -26,13 +21,13 @@ ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c78aa559bf64b110909134426c676f302ca5fe04
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 70afe724be5b782bc90e162fd65f83ad1b0d0d23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976809"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;要素 (ブートス トラップ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +86,4 @@ ms.locfileid: "49296297"
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [\<製品 > 要素](../deployment/product-element-bootstrapper.md)
-
-
-
+ [\<Product> 要素](../deployment/product-element-bootstrapper.md)

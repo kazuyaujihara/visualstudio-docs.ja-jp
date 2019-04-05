@@ -19,7 +19,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56631368"
 ---
 # <a name="command-routing-algorithm"></a>コマンド ルーティング アルゴリズム
-Visual Studio でのコマンドは、さまざまなコンポーネントによって処理されます。 コマンドは、現在の選択に基づいて、最も内側のコンテキストから最も外側の (グローバルとも呼ばれます) のコンテキストにルーティングされます。 詳細については、次を参照してください。[コマンド可用性](../../extensibility/internals/command-availability.md)します。
+Visual Studio でのコマンドは、さまざまなコンポーネントによって処理されます。 コマンドは、現在の選択に基づいて、最も内側のコンテキストから最も外側の (グローバルとも呼ばれます) のコンテキストにルーティングされます。 詳細については、[コマンド可用性](../../extensibility/internals/command-availability.md)を参照してください。
 
 ## <a name="order-of-command-resolution"></a>コマンドの解像度の順序
  コマンドは、レベルは次のコマンド コンテキストを介して渡されます。

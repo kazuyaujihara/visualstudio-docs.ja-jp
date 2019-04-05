@@ -55,7 +55,7 @@ ms.locfileid: "58416238"
 
  `henry.Name = "Henry VIII";`
 
- 場合は、DSL 定義で、プロパティの**種類**は**Calculated**を設定することはできません。 詳細については、次を参照してください。[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)します。
+ 場合は、DSL 定義で、プロパティの**種類**は**Calculated**を設定することはできません。 詳細については、[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)を参照してください。
 
 ### <a name="relationships"></a>リレーションシップ
  DSL 定義で定義したドメイン リレーションシップでは、プロパティ、リレーションシップの両端にあるクラスの 1 つのペアになります。 プロパティの名前は、リレーションシップの両側にあるロールのラベルとして DslDefinition ダイアグラムに表示されます。 によって、ロールの多重度は、プロパティの型は、リレーションシップのもう一方の端にあるクラスまたはそのクラスのコレクションのいずれか。
@@ -288,7 +288,7 @@ using (Transaction t =
 ##  <a name="locks"></a> ロック
  ロックによって、変更ができない可能性があります。 個々 の要素、パーティション、およびストアのロックを設定できます。 変更の種類を防止するロックをこれらのレベルのいずれかにある場合、例外がスローされるときに実行しようとします。 要素を使用してロックを設定するかどうかを検出できます。名前空間で定義されている拡張メソッドである、GetLocks()<xref:Microsoft.VisualStudio.Modeling.Immutability>します。
 
- 詳細については、次を参照してください。[読み取り専用セグメントを作成するロックのポリシーを定義する](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)します。
+ 詳細については、[読み取り専用セグメントを作成するロックのポリシーを定義する](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)を参照してください。
 
 ##  <a name="copy"></a> コピーと貼り付け
  要素または要素のグループにコピーすることができます、 <xref:System.Windows.Forms.IDataObject>:
@@ -410,7 +410,7 @@ FamilyTreeDiagram diagram =
  --------- *YourConnector*
 
 ###  <a name="shapeProperties"></a> シェイプおよびコネクタのプロパティ
- ほとんどの場合は、図形に明示的な変更を加える必要はありません。 モデル要素を変更したときに、「修正」ルールは、図形とコネクタを更新します。 詳細については、次を参照してください。[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)します。
+ ほとんどの場合は、図形に明示的な変更を加える必要はありません。 モデル要素を変更したときに、「修正」ルールは、図形とコネクタを更新します。 詳細については、[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)を参照してください。
 
  ただし、図形には、モデル要素に依存しないプロパティを明示的ないくつか変更するのには便利です。 たとえば、これらのプロパティを変更する可能性があります。
 

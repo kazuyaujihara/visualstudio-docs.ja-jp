@@ -32,7 +32,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 67f9307f2f5fece64ee2ee11dd48863b9a951180
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51760918"
@@ -79,7 +79,7 @@ ms.locfileid: "51760918"
   
      左マージンの黄色の矢印は、現在の実行ポイントの位置を示します。 ネイティブ コードの場合、これは CPU のプログラム カウンターに対応します。 この位置は、プログラム内で次に実行される命令を示します。  
   
-     詳細については、次を参照してください。[上下インメモリ](../debugger/how-to-page-up-or-down-in-memory.md)します。  
+     詳細については、[上下インメモリ](../debugger/how-to-page-up-or-down-in-memory.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーでのデータの表示](../debugger/viewing-data-in-the-debugger.md)   

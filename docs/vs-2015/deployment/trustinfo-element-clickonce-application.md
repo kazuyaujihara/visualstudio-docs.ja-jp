@@ -30,7 +30,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 77915ddfe59361623aa5aee3048c6411c6c0c02c
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49175566"
@@ -169,7 +169,7 @@ ms.locfileid: "49175566"
   
  配置マニフェストに有効な信頼ライセンスがある場合には、 `defaultAssemblyRequest` や `assemblyRequest` を使用して要求されるすべてのアクセス許可は、ユーザーに確認することなく与えられます。  
   
- アクセス許可の昇格の詳細については、次を参照してください。 [ClickOnce アプリケーションのセキュリティで保護する](../deployment/securing-clickonce-applications.md)します。 ポリシー配置の詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
+ アクセス許可の昇格の詳細については、[ClickOnce アプリケーションのセキュリティで保護する](../deployment/securing-clickonce-applications.md)を参照してください。 ポリシー配置の詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
   
 ## <a name="examples"></a>使用例  
  次の 3 つのコード例では、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] による配置のアプリケーション マニフェストで使用する、既定の名前付きセキュリティ ゾーン (Internet、LocalIntranet、および FullTrust) に対応する `trustInfo` 要素を示しています。  

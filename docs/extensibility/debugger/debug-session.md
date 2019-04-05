@@ -22,7 +22,7 @@ ms.locfileid: "56710865"
 
 -   すべてのセットを処理する関連または関連のないを起動または IDE の 1 つのインスタンスに接続です。
 
--   セッション デバッグ マネージャー (SDM) によって実装されます。 詳細については、次を参照してください。[セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)します。
+-   セッション デバッグ マネージャー (SDM) によって実装されます。 詳細については、[セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)

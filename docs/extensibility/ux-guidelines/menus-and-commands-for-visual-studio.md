@@ -229,11 +229,11 @@ ms.locfileid: "57870479"
 
 #### <a name="when-naming-commands"></a>ときに名前を付けるコマンド。
 
--   簡単にローカライズされるようにテキストを構築します。 詳細テキストのローカライズについては、次を参照してください。[ローカライズのベスト プラクティス](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices)します。
+-   簡単にローカライズされるようにテキストを構築します。 詳細テキストのローカライズについては、[ローカライズのベスト プラクティス](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices)を参照してください。
 
 -   簡潔にします。 コマンドは、以下の 3 つの単語を使用する必要があります。
 
--   タイトル文字の大文字と小文字を使用します。 各単語の最初の文字が大文字で入力する必要があります。 Visual Studio でのテキスト書式の詳細については、次を参照してください。[テキストのスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)します。
+-   タイトル文字の大文字と小文字を使用します。 各単語の最初の文字が大文字で入力する必要があります。 Visual Studio でのテキスト書式の詳細については、[テキストのスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)を参照してください。
 
 -   コマンドを配置する場所を考慮に入れる。 最上位のメニューまたはフライアウトのですか。 などとポップアップで、最上位レベルのコマンドの配置コマンドをグループ化する必要があります「配置」とフライアウトのコマンドする必要があります"Justify""Left""Right"、"Center、"なり具合です。 フライアウト コマンド「左揃え」または"Align Right です"という名前に重複します。
 

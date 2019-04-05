@@ -25,7 +25,7 @@ ms.locfileid: "56706211"
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>[出力] ペインを使用する拡張機能を作成します。
  [出力] ウィンドウのさまざまな側面を実行する拡張機能を行うことができます。
 
-1.  という名前の VSIX プロジェクトを作成する`TestOutput`メニュー コマンドを使用して名前付き**TestOutput**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
+1.  という名前の VSIX プロジェクトを作成する`TestOutput`メニュー コマンドを使用して名前付き**TestOutput**します。 詳細については、[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。
 
 2.  次の参照を追加します。
 

@@ -21,7 +21,7 @@ ms.lasthandoff: 03/19/2019
 ms.locfileid: "58154466"
 ---
 # <a name="idebugcookie-interface"></a>IDebugCookie インターフェイス
-使用するために、設定するデバッグ cookie を許可、`IMachineDebugManagerCookie`インターフェイス。 詳細については、次を参照してください。 [IMachineDebugManagerCookie インターフェイス](../../winscript/reference/imachinedebugmanagercookie-interface.md)します。 このインターフェイスはプロセス デバッグ マネージャー (PDM) によって実装され、スクリプト デバッガーによって使用されます。  
+使用するために、設定するデバッグ cookie を許可、`IMachineDebugManagerCookie`インターフェイス。 詳細については、[IMachineDebugManagerCookie インターフェイス](../../winscript/reference/imachinedebugmanagercookie-interface.md)を参照してください。 このインターフェイスはプロセス デバッグ マネージャー (PDM) によって実装され、スクリプト デバッガーによって使用されます。  
   
 ## <a name="methods"></a>メソッド  
  継承されたメソッドだけでなく`IUnknown`、`IDebugCookie`インターフェイスは、次のメソッドを公開します。  

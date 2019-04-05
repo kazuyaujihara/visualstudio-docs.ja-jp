@@ -1,14 +1,9 @@
 ---
 title: コード分析ツールを使用したアプリケーション品質の分析 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.analysisresults
 helpviewer_keywords:
@@ -20,12 +15,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e2dd66668efcba5264cc3a3646b627ec9be99e63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83fbe8b372d021e0cec4faccfd0b22fcaa8af30d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216697"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002431"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>コード分析ツールを使用したアプリケーション品質の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,8 +44,8 @@ ms.locfileid: "49216697"
 ### <a name="code-analysis-for-drivers"></a>ドライバーのコード分析  
  コード分析ツールでドライバーのソース コードを系統的に分析することにより、ドライバーの安定性と信頼性を向上させることができます。  
   
- [コード分析ツールを使用したドライバー品質の分析](http://go.microsoft.com/fwlink/?LinkId=227618)  
- ドライバーのコード分析は、C および C++ プログラムの基本的なコーディング エラーを検出するコンパイル時の静的検証ツールで、主にカーネル モードのドライバー コードのエラーを検出するように設計された特殊なモジュールが含まれます。 静的ドライバー検証ツール (SDV) は、Windows カーネル モードのドライバーのソース コードを系統的に分析する静的検証ツールです。 SDV は、ドライバーが Windows オペレーティング システムのカーネルと適切にやり取りしているかどうかを判定します。  
+ [コード分析ツールを使用したドライバー品質の分析](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)  
+ コード Analysis for Drivers は、基本的なコーディング C および C++ プログラムでエラーを検出するコンパイル時の静的検証ツールし、カーネル モード ドライバーのコード (主に) でエラーを検出するように設計された特殊なモジュールが含まれています。 静的ドライバー検証ツール (SDV) は、Windows カーネル モードのドライバーのソース コードを系統的に分析する静的検証ツールです。 SDV は、ドライバーが Windows オペレーティング システムのカーネルと適切にやり取りしているかどうかを判定します。  
   
  [Code Analysis for Drivers の警告](http://go.microsoft.com/fwlink/?LinkId=225920)  
  ドライバーのコード分析でドライバー コードに潜在的なエラーが検出されたときにレポートされる警告ついて説明します。  
@@ -61,6 +56,3 @@ ms.locfileid: "49216697"
   
  [コードの単体テスト](../test/unit-test-your-code.md)  
  ここに説明を挿入します。
-
-
-

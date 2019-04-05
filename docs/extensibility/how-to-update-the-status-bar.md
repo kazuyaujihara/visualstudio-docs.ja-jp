@@ -40,7 +40,7 @@ ms.locfileid: "56681856"
 
 - エディターについて
 
-  詳細については、次を参照してください。[ステータス バー](/cpp/mfc/status-bars)します。
+  詳細については、[ステータス バー](/cpp/mfc/status-bars)を参照してください。
 
   IDE を自動的に呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>のメソッド、<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>実装、ドキュメント ウィンドウがアクティブになります。
 

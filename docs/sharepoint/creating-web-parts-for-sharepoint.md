@@ -59,7 +59,7 @@ ms.locfileid: "56628404"
 
 |コントロール名|説明|
 |------------------|-----------------|
-|[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|ASP メニューを挿入します。 詳細については、次を参照してください。[メニュー コントロールの概要](http://go.microsoft.com/fwlink/?LinkId=235316)します。|
+|[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|ASP メニューを挿入します。 詳細については、[メニュー コントロールの概要](http://go.microsoft.com/fwlink/?LinkId=235316)を参照してください。|
 |[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|挿入、**リンク**に要素を *.aspx*ページし、によって定義された 1 つまたは複数の外部スタイル シートを適用**CssRegistration**します。|
 |[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|DateTime コントロールを挿入、 *.aspx*ページ。|
 |[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|セキュリティ検証を挿入、 *.aspx*ページ|
@@ -74,12 +74,12 @@ ms.locfileid: "56628404"
 
  コードのデバッグを開始するには、SharePoint で Web パーツ ページに Web パーツを追加します。
 
- SharePoint プロジェクトをデバッグする方法の詳細については、次を参照してください。[のトラブルシューティングを行う SharePoint ソリューション](../sharepoint/troubleshooting-sharepoint-solutions.md)します。
+ SharePoint プロジェクトをデバッグする方法の詳細については、[のトラブルシューティングを行う SharePoint ソリューション](../sharepoint/troubleshooting-sharepoint-solutions.md)を参照してください。
 
 ## <a name="visual-web-part-limitations"></a>視覚的 web パーツの制限
  Visual Studio では、SharePoint のサンドボックス ソリューションおよびファーム ソリューションに視覚的 Web パーツを追加できます。 ただし、視覚的 Web パーツには次のような制限があります。
 
-- 視覚的 web パーツには、置き換え可能パラメーターをサポートされていません。 詳細については、次を参照してください。[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)します。
+- 視覚的 web パーツには、置き換え可能パラメーターをサポートされていません。 詳細については、[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)を参照してください。
 
 - ユーザー コントロールと視覚的 Web パーツは、視覚的 Web パーツ上にドラッグ アンド ドロップしたり、コピーしたりできません。 これらの操作を実行するとビルド エラーが発生します。
 
@@ -97,14 +97,14 @@ ms.locfileid: "56628404"
 
 - SharePoint の Web コントロールと一部の [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] コントロールは、SharePoint サンドボックス環境でサポートされていません。 サンドボックス ソリューションの視覚的 web パーツでサポート対象外のコントロールを使用すると、"型または名前空間の名前 'Theme' は名前空間 'Microsoft.SharePoint.WebControls' に存在しません" というエラーが表示されます。
 
-  サンド ボックス ソリューションの詳細については、次を参照してください。[サンド ボックスの相違点とファーム ソリューション](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)します。
+  サンド ボックス ソリューションの詳細については、[サンド ボックスの相違点とファーム ソリューション](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)を参照してください。
 
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>古いスタイルの SharePoint ベースの web パーツを作成します。
  Visual Studio のテンプレートを使用すると、SharePoint 用の独自の [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web パーツを作成できます。 [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web パーツは [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Web パーツのインフラストラクチャ上にビルドされるので、新しいプロジェクトに適しています。
 
  ごくまれに、古い形式の SharePoint に対応する Web パーツを使用して Web パーツを作成しなければならない場合があります。 こうした Web パーツも Visual Studio で作成できますが、Visual Studio にはその際に役立つテンプレートがありません。
 
- 詳細については、古い形式の SharePoint ベースの web パーツを作成する場合、次を参照してください。 [Windows SharePoint services Web パーツ インフラストラクチャ](http://go.microsoft.com/fwlink/?LinkId=169290)します。 古い形式の SharePoint ベースの web パーツを使用して web パーツを作成する方法の詳細については、次を参照してください。[基本的な SharePoint Web パーツの作成チュートリアル](http://go.microsoft.com/fwlink/?LinkId=169288)します。
+ 詳細については、古い形式の SharePoint ベースの web パーツを作成する場合、[Windows SharePoint services Web パーツ インフラストラクチャ](http://go.microsoft.com/fwlink/?LinkId=169290)を参照してください。 古い形式の SharePoint ベースの web パーツを使用して web パーツを作成する方法の詳細については、[基本的な SharePoint Web パーツの作成チュートリアル](http://go.microsoft.com/fwlink/?LinkId=169288)を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 

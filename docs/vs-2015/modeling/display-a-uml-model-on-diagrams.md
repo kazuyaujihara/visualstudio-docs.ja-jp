@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51757307"
@@ -78,7 +78,7 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
 |`anIShape.Move(x, y, [width], [height])`|図形を移動またはサイズ変更します。|  
 |`IDiagram.EnsureVisible( IEnumerable<IShape> shapes, bool zoomToFit = false)`|ウィンドウをアクティブ化し、所定のすべての図形が図に表示されるようにスクロールします。 すべての図形が図に配置されている必要があります。 `zoomToFit` が True の場合、すべての図形が表示されるように、必要に応じて図が拡大縮小されます。|  
   
- 例については、次を参照してください。[配置コマンドを定義する](#AlignCommand)します。  
+ 例については、[配置コマンドを定義する](#AlignCommand)を参照してください。  
   
 ##  <a name="Removing"></a> ダイアグラムから図形を削除するには  
  一部の種類の要素の図形は、要素を削除せずに削除できます。  
@@ -107,7 +107,7 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
 > [!NOTE]
 >  `IDiagram` のインスタンス (および、`IClassDiagram` など、そのサブタイプ) は、処理中のコマンド内でのみ有効です。 ユーザーにコントロールが戻されている間は、持続する変数に `IDiagram` オブジェクトを保持することは推奨されません。  
   
- 詳細については、次を参照してください。[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  
+ 詳細については、[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)を参照してください。  
   
 ### <a name="to-obtain-a-list-of-open-diagrams"></a>開いている図の一覧を取得するには  
  プロジェクトで現在開いている図の一覧:  
@@ -168,7 +168,7 @@ IModelStore modelStore = (project as IModelingProject).Store;
 ##  <a name="AlignCommand"></a> 図形の整列のコマンドの例:  
  次のコードは、図形を適切に揃えるメニュー コマンドを実装します。 ユーザーはまず、2 つ以上の図形を、垂直方向または水平方向のおよその場所に配置する必要があります。 その後、整列のコマンドを使用して中心を揃えることができます。  
   
- このコマンドを使用できるようにするには、このコードをメニュー コマンド プロジェクトに追加し、結果として得られる拡張機能をユーザーに配置します。 詳細については、次を参照してください。[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  
+ このコマンドを使用できるようにするには、このコードをメニュー コマンド プロジェクトに追加し、結果として得られる拡張機能をユーザーに配置します。 詳細については、[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)を参照してください。  
   
 ```csharp  
 using System;  

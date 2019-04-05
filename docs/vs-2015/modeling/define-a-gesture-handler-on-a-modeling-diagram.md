@@ -1,12 +1,9 @@
 ---
 title: モデリング図にジェスチャ ハンドラーを定義 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, double-click
 - UML - extending, drag and drop
@@ -14,13 +11,13 @@ ms.assetid: e5e1d70a-3539-4321-a3b1-89e86e4d6430
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3e448b14a2a24994b9f03a569b0bb568d538bc69
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974922"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>モデリング図にジェスチャ ハンドラーを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +239,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
   
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開始します。  
   
-    **トラブルシューティング**: 新しい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が起動しない場合:  
+    **トラブルシューティング**:場合、新しい[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]は開始されません。  
   
    -   複数のプロジェクトがある場合は、VSIX プロジェクトがソリューションのスタートアップ プロジェクトとして設定されていることを確認してください。  
   
@@ -256,7 +253,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
   
 4. UML エクスプローラーから図上へ要素をドラッグします。 ドラッグ ハンドラーが呼び出されます。  
   
-   **トラブルシューティング**: ジェスチャ ハンドラーが動作しない場合は、次の点について確認してください。  
+   **トラブルシューティング**:ジェスチャ ハンドラーが機能しない場合ことを確認します。  
   
 -   ジェスチャ ハンドラー プロジェクトは、VSIX プロジェクトの **source.extensions.manifest** の **[アセット]** タブに MEF コンポーネントとして表示される。  
   
@@ -382,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、以下の場所からファイルを削除して、拡張機能を削除します。  
   
-   *%Localappdata%* **\Local\Microsoft\VisualStudio\\[バージョン] \Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="DragExample"></a> 「例」  
  コンポーネント図からドラッグされたコンポーネントのパートおよびポートに基づいて、シーケンス図に生存線を生成する方法を次の例に示します。  
@@ -528,6 +525,3 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
  [モデリング図にメニュー コマンドを定義します。](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML モデルの検証制約を定義します。](../modeling/define-validation-constraints-for-uml-models.md)   
  [UML API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: '方法: XML スニペットを使用する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: ec1b206bffa5ea49a17bd76487cdc398395c1f48
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219615"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977733"
 ---
-# <a name="how-to-use-xml-snippets"></a>方法 : XML スニペットを使用する
+# <a name="how-to-use-xml-snippets"></a>方法: XML スニペットを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -113,12 +108,9 @@ XML エディターのショートカット メニューにある次の 2 つの
   
  Enter キーまたは Esc キーを押すと、フィールドの編集をキャンセルしてエディターを通常の状態に戻します。  
   
- コード スニペット フィールドの設定を変更することで編集可能なコード スニペット フィールドの既定の色を変更することができます、**フォントおよび色**のウィンドウ、**オプション** ダイアログ ボックス。 詳細については、次を参照してください。[方法: エディターで変更のフォントと色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)します。  
+ コード スニペット フィールドの設定を変更することで編集可能なコード スニペット フィールドの既定の色を変更することができます、**フォントおよび色**のウィンドウ、**オプション** ダイアログ ボックス。 詳細については、「[方法 :Change fonts and colors in the editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)」 (方法: エディターのフォントと色を変更する) を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [XML スニペット](../xml-tools/xml-snippets.md)   
- [方法: XML スキーマから XML スニペットを生成](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
- [方法 : XML スニペットを作成する](../xml-tools/how-to-create-xml-snippets.md)
-
-
-
+ [方法: XML スキーマから XML スニペットを生成します。](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
+ [方法: XML スニペットを作成する](../xml-tools/how-to-create-xml-snippets.md)

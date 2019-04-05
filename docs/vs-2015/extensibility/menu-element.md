@@ -1,32 +1,27 @@
 ---
 title: Menu 要素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: ce0560f3-b4c9-4ab2-a99c-d4e10f37b9e0
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 99eb70f0b8377c1dfd1be2d365298637d0be28ae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 79a8fafc748274015dac7f8f0938bba37ba5a8bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774350"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975444"
 ---
 # <a name="menu-element"></a>Menu 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-1 つのメニュー項目を定義します。 これらは、メニューの 6 つの種類: コンテキスト、メニューの MenuController、MenuControllerLatched、ツールバー、および ToolWindowToolbar します。  
+1 つのメニュー項目を定義します。 これらは、メニューの 6 つの種類です。コンテキスト、メニューの MenuController、MenuControllerLatched、ツールバー、および ToolWindowToolbar します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -57,7 +52,7 @@ ms.locfileid: "51774350"
 |要素|説明|  
 |-------------|-----------------|  
 |親|任意。 メニュー項目の親要素。|  
-|CommandFlag|必須。 参照してください[コマンド フラグ要素](../extensibility/command-flag-element.md)します。 メニューの有効な CommandFlag 値は次のとおりです。<br /><br /> -   **通常**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -このフラグでは、ツールバーの表示には影響しません。<br />-   **DontCache**<br />-   **DynamicVisibility** -このフラグでは、ツールバーの表示には影響しません。<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **テキスト**<br />-   **TextIsAnchorCommand**|  
+|CommandFlag|必須。 参照してください[コマンド フラグ要素](../extensibility/command-flag-element.md)します。 メニューの有効な CommandFlag 値は次のとおりです。<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -このフラグでは、ツールバーの表示には影響しません。<br />-   **DontCache**<br />-   **DynamicVisibility** -このフラグでは、ツールバーの表示には影響しません。<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **テキスト**<br />-   **TextIsAnchorCommand**|  
 |文字列|必須。 参照してください[要素の文字列](../extensibility/strings-element.md)します。 子`ButtonText`要素を定義する必要があります。|  
 |注釈|省略可能なコメント。|  
   

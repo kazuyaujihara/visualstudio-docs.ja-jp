@@ -55,9 +55,9 @@ ms.locfileid: "50219797"
   
   次の概念に関する知識があると役立ちますが、チュートリアルを実行するうえで必須というわけではありません。  
   
-- データセットおよび TableAdapter。 詳細については、次を参照してください。 [Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)と[TableAdapter の概要](../data-tools/tableadapter-overview.md)します。  
+- データセットおよび TableAdapter。 詳細については、[Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)と[TableAdapter の概要](../data-tools/tableadapter-overview.md)を参照してください。  
   
-- WPF デザイナーの操作。 詳細については、次を参照してください。 [WPF および Silverlight デザイナーの概要](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)します。  
+- WPF デザイナーの操作。 詳細については、[WPF および Silverlight デザイナーの概要](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)を参照してください。  
   
 - WPF データ バインディング。 詳しくは、「 [データ バインディングの概要](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。  
   
@@ -183,7 +183,7 @@ ms.locfileid: "50219797"
   
 5.  **データ ソース**ウィンドウで、ドラッグ、**製品**ノード下のボタンを含む行のグリッド行にします。  
   
-     Visual Studio でのデータにバインドされているコントロールのセットを定義する XAML の生成、**製品**テーブル。 また、データを読み込むコードも生成されます。 生成された XAML とコードの詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+     Visual Studio でのデータにバインドされているコントロールのセットを定義する XAML の生成、**製品**テーブル。 また、データを読み込むコードも生成されます。 生成された XAML とコードの詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
   
 6.  横に、デザイナーでは、クリックして、テキスト ボックス、**製品 ID**ラベル。  
   
@@ -230,7 +230,7 @@ ms.locfileid: "50219797"
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]  
   
     > [!NOTE]
-    >  この例では、`Save` の `TableAdapter` メソッドを使用して変更を保存します。 このチュートリアルでは、データ テーブルが 1 つのみ変更されるため、この方法が適しています。 複数のデータ テーブルへの変更を保存する必要がある場合は、Visual Studio によってデータセットと共に生成される `UpdateAll` の `TableAdapterManager` メソッドを使用することもできます。 詳細については、次を参照してください。 [TableAdapterManager の概要](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)します。  
+    >  この例では、`Save` の `TableAdapter` メソッドを使用して変更を保存します。 このチュートリアルでは、データ テーブルが 1 つのみ変更されるため、この方法が適しています。 複数のデータ テーブルへの変更を保存する必要がある場合は、Visual Studio によってデータセットと共に生成される `UpdateAll` の `TableAdapterManager` メソッドを使用することもできます。 詳細については、[TableAdapterManager の概要](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)を参照してください。  
   
 ## <a name="test-the-application"></a>アプリケーションをテストする  
  アプリケーションをビルドして実行します。 製品レコードを表示および更新できることを確認します。  
@@ -256,9 +256,9 @@ ms.locfileid: "50219797"
 ## <a name="next-steps"></a>次の手順  
  このチュートリアルを完了した後、関連する次のタスクを実行できます。  
   
--   使用する方法について説明します、**データソース**WPF のバインドを Visual Studio のウィンドウを他の種類のデータ ソースを制御します。 詳細については、次を参照してください。 [WCF data service にコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)します。  
+-   使用する方法について説明します、**データソース**WPF のバインドを Visual Studio のウィンドウを他の種類のデータ ソースを制御します。 詳細については、[WCF data service にコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)を参照してください。  
   
--   使用する方法について説明します、**データソース**Visual Studio で WPF コントロールに関連するデータ (つまり、親子リレーションシップ内のデータ) を表示するウィンドウ。 詳細については、次を参照してください。[チュートリアル: WPF アプリケーションで関連データを表示する](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)します。  
+-   使用する方法について説明します、**データソース**Visual Studio で WPF コントロールに関連するデータ (つまり、親子リレーションシップ内のデータ) を表示するウィンドウ。 詳細については、[チュートリアル: WPF アプリケーションで関連データを表示する](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのデータに WPF コントロールをバインドします。](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   

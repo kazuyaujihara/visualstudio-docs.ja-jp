@@ -92,7 +92,7 @@ DSL を定義した場合は、自分のコンピューターにインストー�
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]がホストされている Visual Studio で、多くの Visual Studio ウィンドウとコントロールを拡張します。 メニュー コマンド、ツールボックス項目、およびユーザー インターフェイスの他の要素の動作をカスタマイズすることもできます。
 
-ドメイン固有言語、モデル バス アダプターを作成することもできます。 このアダプターには、モデルの参照と、モデルとコードを記述することがアクセスでき、DSL のインスタンスを更新できます内の要素ができます。 強力なモデル バス メカニズムを使用すると、複数のモデルを使用する Visual Studio 拡張機能を記述することができます。 モデルを使用するスタンドアロン アプリケーションを記述することもできます。 詳細については、次を参照してください。 [Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)します。
+ドメイン固有言語、モデル バス アダプターを作成することもできます。 このアダプターには、モデルの参照と、モデルとコードを記述することがアクセスでき、DSL のインスタンスを更新できます内の要素ができます。 強力なモデル バス メカニズムを使用すると、複数のモデルを使用する Visual Studio 拡張機能を記述することができます。 モデルを使用するスタンドアロン アプリケーションを記述することもできます。 詳細については、[Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)を参照してください。
 
 ## <a name="benefits-of-domain-specific-development"></a>ドメイン固有の開発の利点
 

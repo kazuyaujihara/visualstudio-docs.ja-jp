@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 80507633538e28650ed53e74794ddda173382878
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 496ca9b5a0c7501cd9493e06233b1473e8526ed6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195139"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355686"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio で Python 環境を作成および管理する方法
 
@@ -123,7 +123,7 @@ Visual Studio には、仮想環境から *requirements.txt* ファイルを生�
 
 #### <a name="conda-environments"></a>conda 環境
 
-conda 環境は `conda` ツールを使用して作成される環境です。Visual Studio 2017 バージョン 15.7 以降では、統合 conda 管理が使用されます  (Anaconda または Miniconda が必要です。Anaconda は Visual Studio インストーラーを通して利用できるようになります。[インストール](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017)に関するページを参照してください)。
+conda 環境は `conda` ツールを使用して作成される環境です。Visual Studio 2017 バージョン 15.7 以降では、統合 conda 管理が使用されます  (Anaconda または Miniconda が必要です。これらは Visual Studio インストーラーを通して利用できるようになります。[インストール](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017)に関するページを参照してください)。
 
 ::: moniker range="vs-2017"
 

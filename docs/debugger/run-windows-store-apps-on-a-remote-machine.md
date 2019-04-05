@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0fa9749a06c568f7fab55cd6c7a862fa616ecf6d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708703"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789901"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Visual Studio からリモート コンピューター上の UWP アプリをデバッグします。
 
@@ -55,15 +55,15 @@ Visual Studio からリモート デバイスで UWP アプリをデバッグし
 
     ![リモート デバッグ用のプロジェクトのプロパティを管理](../debugger/media/vsrun_managed_projprop_remote.png "デバッグ マネージ プロジェクトのプロパティ")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> リモート デバッグ用の JavaScript または C++ プロジェクトを構成します。
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> リモート デバッグ用の C++ プロジェクトを構成します。
 
-1.  Visual Studio で C++ または JavaScript プロジェクトを選択**ソリューション エクスプ ローラー**を選択し、**プロパティ**アイコン、キーを押して**Alt**+**」と入力**、または右クリックし、選択**プロパティ**します。
+1.  Visual Studio で C++ プロジェクトを選択**ソリューション エクスプ ローラー**を選択し、**プロパティ**アイコン、キーを押して**Alt**+**Enter**、または右クリックし、選択**プロパティ**します。
 
 1.  選択、**デバッグ**タブ。
 
 3.  **起動するデバッガー**を選択します**リモート マシン**リモート コンピューターの場合、または**デバイス**の直接接続されている 10 の Windows Mobile デバイス。
 
-1.  リモート マシンでは、次のように入力しますまたは、ネットワーク名または IP アドレスを選択して、**マシン名**フィールド、またはドロップ ダウンして**検索**でデバイスを検索する、[リモート接続 ダイアログ ボックス](#remote-connections).
+1.  リモート マシンでは、次のように入力しますまたは、ネットワーク名または IP アドレスを選択して、**マシン名**フィールド、またはドロップ ダウンして**検索**でデバイスを検索する、[リモート接続 ダイアログ ボックス](#remote-connections)。
 
     ![リモート デバッグ用の C++ プロジェクト プロパティ](../debugger/media/vsrun_cpp_projprop_remote.png "C++ のデバッグ プロジェクト プロパティ")
 

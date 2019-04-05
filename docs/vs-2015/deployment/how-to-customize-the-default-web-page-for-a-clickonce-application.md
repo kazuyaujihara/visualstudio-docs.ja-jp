@@ -1,14 +1,9 @@
 ---
 title: '方法: ClickOnce アプリケーションの既定の Web ページをカスタマイズする |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,15 +17,15 @@ ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b87019a824acada616865fd65cfd6aade8aa6ec9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a8fc28666a7b0c1d44ad36fabffa19974fea5956
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973604"
 ---
-# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>方法 : ClickOnce アプリケーションの既定の Web ページをカスタマイズする
+# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションの既定の Web ページをカスタマイズする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ClickOnce アプリケーションの Web を発行するときに、Web ページが自動的に生成され、アプリケーションと共に発行します。 既定のページには、アプリケーションとアプリケーションのインストール、インストールの前提条件、または MSDN のヘルプにアクセスするリンクの名前が含まれています。  
@@ -38,7 +33,7 @@ ClickOnce アプリケーションの Web を発行するときに、Web ペー�
 > [!NOTE]
 >  ページに表示される実際のリンクは、ページが表示されているコンピューターとによって異なります。 前提条件が含まれています。  
   
- Web ページの既定の名前は Publish.htm;内の名前を変更することができます、**プロジェクト デザイナー**します。 詳細については、次を参照してください。[方法: ClickOnce アプリケーションの発行ページを指定](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)します。  
+ Web ページの既定の名前は Publish.htm;内の名前を変更することができます、**プロジェクト デザイナー**します。 詳細については、「[方法 :ClickOnce アプリケーションの発行ページ指定](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)します。  
   
  新しいバージョンが検出された場合にのみ、Publish.htm Web ページが発行されます。  
   
@@ -47,7 +42,7 @@ ClickOnce アプリケーションの Web を発行するときに、Web ペー�
   
 ### <a name="to-customize-the-publish-web-page"></a>発行 Web ページをカスタマイズするには  
   
-1.  Web 上の場所に、ClickOnce アプリケーションを発行します。 詳細については、次を参照してください。[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)します。  
+1.  Web 上の場所に、ClickOnce アプリケーションを発行します。 詳細については、「[方法 :発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)」を参照してください。  
   
 2.  Web サーバーでは、Visual Web Designer または別の HTML エディターで Publish.htm ファイルを開きます。  
   
@@ -58,8 +53,5 @@ ClickOnce アプリケーションの Web を発行するときに、Web ペー�
 ## <a name="see-also"></a>関連項目  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
- [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールします。](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [方法: ClickOnce アプリケーションの発行ページを指定する](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
-
-
-

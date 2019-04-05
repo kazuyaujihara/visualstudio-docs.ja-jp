@@ -1,26 +1,21 @@
 ---
 title: レガシ API を使用したテキスト マーカーの使用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 600e9635fb0ee5ea78226277860ac41e183f47b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745907"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963769"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>レガシ API を使用したテキスト マーカーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,14 +29,14 @@ ms.locfileid: "51745907"
   
 ## <a name="related-topics"></a>関連トピック  
   
-|Title|説明|  
+|タイトル|説明|  
 |-----------|-----------------|  
-|[方法: 標準のテキスト マーカーを追加する](../extensibility/how-to-add-standard-text-markers.md)|によって提供される標準のテキスト マーカーの種類を追加する方法について説明します、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]テキスト ビューにコア エディター。|  
-|[方法: エラー マーカーを実装する](../extensibility/how-to-implement-error-markers.md)|インスタンスを実装する方法について説明します、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]赤い波線を使用してエラーを示すために使用されるマーカー。|  
-|[方法: カスタム テキスト マーカーを作成する](../extensibility/how-to-create-custom-text-markers.md)|作成し、テキスト ビューに、カスタム テキスト マーカーの種類を追加する方法について説明します。|  
-|[方法: テキスト マーカーを使用する](../extensibility/how-to-use-text-markers.md)|テキスト マーカーを追加する方法について説明します。|  
+|[方法: 標準のテキスト マーカーを追加します。](../extensibility/how-to-add-standard-text-markers.md)|によって提供される標準のテキスト マーカーの種類を追加する方法について説明します、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]テキスト ビューにコア エディター。|  
+|[方法: エラーのマーカーを実装します。](../extensibility/how-to-implement-error-markers.md)|インスタンスを実装する方法について説明します、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]赤い波線を使用してエラーを示すために使用されるマーカー。|  
+|[方法: カスタム テキスト マーカーを作成します。](../extensibility/how-to-create-custom-text-markers.md)|作成し、テキスト ビューに、カスタム テキスト マーカーの種類を追加する方法について説明します。|  
+|[方法: テキスト マーカーを使用します。](../extensibility/how-to-use-text-markers.md)|テキスト マーカーを追加する方法について説明します。|  
 |[コア エディターの内部](../extensibility/inside-the-core-editor.md)|コア エディターの機能について説明し、コア エディターをカスタマイズする方法について詳しく説明します。|  
-|[エディターの機能](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|使用できる機能について説明します、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のコア エディター。|  
+|[エディターの機能](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|使用できる機能について説明します、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のコア エディター。|  
   
 ## <a name="reference"></a>参照  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
@@ -76,4 +71,3 @@ ms.locfileid: "51745907"
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
  アクセスを提供し、1 次元の座標を使用してテキスト バッファー内のテキスト マーカーの位置を調整します。 可能である場合、このインターフェイスを使用することはしません。
-

@@ -1,25 +1,22 @@
 ---
 title: その他の Visual Studio のエディションでモデルおよびダイアグラムを読み取る |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972910"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Visual Studio の他のエディションでモデルおよびダイアグラムを読み取る
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +57,7 @@ ms.locfileid: "51757365"
   
 ##  <a name="RelatedTopics"></a> 関連トピック  
   
-|Title|説明|  
+|タイトル|説明|  
 |-----------|-----------------|  
 |[レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)|レイヤー図には、既存のアーキテクチャまたは提案されるアーキテクチャの構造が示されます。 コードを記述する際に、レイヤー図と照らし合わせて自動的に検証されるようにできます。|  
 |[UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)|アクティビティ図には、業務処理またはソフトウェアのワーク フローが示されます。|  
@@ -71,6 +68,3 @@ ms.locfileid: "51757365"
   
 ## <a name="see-also"></a>関連項目  
  [アプリのモデルを生成する](../modeling/create-models-for-your-app.md)
-
-
-

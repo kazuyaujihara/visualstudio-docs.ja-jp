@@ -1,25 +1,22 @@
 ---
 title: '方法: アクティビティ デザイナー ライブラリを作成 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 5b62e092-63b3-462d-9d77-fb112482f45d
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6802f92f349d15d48935f4e7c3db85abf7c12535
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 69d68fdc0a34ffa680ec2306a087cd29002eb185
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258272"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977311"
 ---
-# <a name="how-to-create-an-activity-designer-library"></a>アクティビティ デザイナー ライブラリを作成する方法
+# <a name="how-to-create-an-activity-designer-library"></a>方法: アクティビティ デザイナー ライブラリを作成する
 カスタム アクティビティ デザイナーを使用して、標準アクティビティやカスタム アクティビティのためのユーザー インターフェイスを作成できます。 ユーザー インターフェイスが複雑にならないようにして、1 つのアクティビティに対応するアクティビティ デザイナーを複数作成することができます。 このシナリオでは、複数の対象に対応したデザイナーを作成できます。  
   
 ### <a name="to-create-an-activity-designer-library"></a>アクティビティ デザイナー ライブラリを作成するには  
@@ -43,7 +40,7 @@ ms.locfileid: "49258272"
   
 8.  プロジェクト テンプレートにより、アクティビティ デザイナー定義が XAML で作成され、ソース コード内に分離コード実装ファイルが作成されます。 [!INCLUDE[wfd1](../includes/wfd1-md.md)]で、アクティビティ デザイナー用のキャンバスが開かれて表示されます。  
   
-9. ドラッグ[!INCLUDE[avalon1](../includes/avalon1-md.md)]コントロールを**ツールボックス**カスタム アクティビティ デザイナーで使用するデザイン サーフェイスにします。  カスタム アクティビティ デザイナーを実装する方法の例は、次を参照してください。[方法: カスタム アクティビティ デザイナーを作成](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31)です。  
+9. ドラッグ[!INCLUDE[avalon1](../includes/avalon1-md.md)]コントロールを**ツールボックス**カスタム アクティビティ デザイナーで使用するデザイン サーフェイスにします。  カスタム アクティビティ デザイナーを実装する方法の例は、次を参照してください。[方法。カスタム アクティビティ デザイナーを作成](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31)です。  
   
     > [!WARNING]
     >  カスタム アクティビティも既定のカスタム アクティビティ デザイナーを使用できる[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]アクティビティ。  

@@ -1,8 +1,8 @@
 ---
-title: Cloud Explorer で Azure リソースの管理 |Microsoft Docs
-description: Cloud Explorer を使用して参照し、Visual Studio 内での Azure リソースを管理する方法について説明します。
+title: クラウド エクスプローラーを使用した Azure リソースの管理 | Microsoft Docs
+description: クラウド エクスプローラーを使用し、Visual Studio 内で Azure リソースを参照および管理する方法について説明します。
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,100 +11,100 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: a5b75aa5e1310e02befe162199472eef987d7cd9
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 25995eacc961474fcb6486668c918d2e5be5ba76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51002362"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975010"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio Cloud Explorer で Azure アカウントに関連付けられているリソースを管理する
 
-Cloud Explorer では、Azure リソースとリソース グループを表示、それらのプロパティを検査および Visual Studio 内から開発者が重要な診断操作を実行することができます。 
+Cloud Explorer を使用すると、Azure リソースやリソース グループを表示し、そのプロパティを調べることができます。また、開発者は Visual Studio 内から重要な診断操作を実行できます。
 
-ように、 [Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040)、Cloud Explorer は、Azure Resource Manager スタック上に構築します。 そのため、クラウド エクスプ ローラーは、Azure リソース グループなどのリソースと Logic apps や API apps などの Azure サービスを理解し、サポート[ロール ベース access control](/azure/role-based-access-control/role-assignments-portal.md) (RBAC)。 
+[Azure Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040) と同様に、Cloud Explorer は Azure Resource Manager スタックを基盤としています。 そのため、Cloud Explorer はリソース (Azure リソース グループなど) と Azure サービス (Logic Apps や API Apps など) を認識し、[ロールベースのアクセス制御](/azure/role-based-access-control/role-assignments-portal) (RBAC) をサポートします。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Visual Studio 2015 with、 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/en-us/download/details.aspx?id=51657)します。
-* Microsoft Azure アカウントの場合は、アカウントを持っていない[無料試用版にサインアップ](http://go.microsoft.com/fwlink/?LinkId=623901)または[Visual Studio サブスクリプション会員の特典をアクティブ化](http://go.microsoft.com/fwlink/?LinkId=623901)します。
+* Visual Studio 2015 with、 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657)します。
+* Microsoft Azure アカウント - アカウントがない場合は、[無料試用版にサインアップ](http://go.microsoft.com/fwlink/?LinkId=623901)するか、[Visual Studio サブスクライバー特典を有効](http://go.microsoft.com/fwlink/?LinkId=623901)にします。
 
 > [!NOTE]
-> クラウド エクスプ ローラーを表示する選択**ビュー** > **Cloud Explorer**メニュー バーでします。
+> Cloud Explorer を表示するには、メニュー バーの **[表示]** > **[Cloud Explorer]** を選択します。
 
-## <a name="add-an-azure-account-to-cloud-explorer"></a>追加の Azure アカウントをクラウド エクスプ ローラー
+## <a name="add-an-azure-account-to-cloud-explorer"></a>Cloud Explorer に Azure アカウントを追加する
 
-Azure アカウントに関連付けられているリソースを表示するには、は、まずクラウド エクスプ ローラーに、アカウントを追加する必要があります。 
+Azure アカウントに関連付けられているリソースを表示するには、まず、Cloud Explorer にアカウントを追加する必要があります。
 
-1. **Cloud Explorer**、 **Azure アカウントの設定**します。
+1. **Cloud Explorer** で **[Azure アカウントの設定]** をクリックします。
 
-   ![クラウド エクスプ ローラーの Azure アカウントの設定 アイコン](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
+   ![Cloud Explorer の [Azure アカウントの設定] アイコン](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. 選択**アカウントを管理する**します。 
+1. **[アカウントの管理]** を選択します。
 
-   ![クラウド エクスプ ローラーのアカウントの追加リンク](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
+   ![Cloud Explorer のアカウントの追加リンク](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
 
-1. 参照する必要があるリソース Azure アカウントにログインします。 
+1. 参照するリソースが関連付けられている Azure アカウントにログインします。
 
-1. Azure アカウントにログインするとそのアカウントに関連付けられているサブスクリプションを表示します。 参照して選択し、必要なアカウントのサブスクリプションのチェック ボックスをオン**適用**します。 
+1. Azure アカウントにログインすると、そのアカウントに関連付けられているサブスクリプションが表示されます。 参照するアカウント サブスクリプションのチェック ボックスをオンにし、**[適用]** をクリックします。
 
-   ![Cloud Explorer: 表示する Azure サブスクリプションを選択します](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
+   ![Cloud Explorer: 表示する Azure サブスクリプションを選択する](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
-1. 参照するリソースを含むサブスクリプションを選択すると、それらのサブスクリプションとリソースをクラウド エクスプ ローラーで表示します。
+1. 参照するリソースを含むサブスクリプションを選択すると、Cloud Explorer にそれらのサブスクリプションとリソースが表示されます。
 
-   ![クラウド エクスプ ローラーのリソースに対する Azure のアカウントを表示します。](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
+   ![Cloud Explorer に一覧表示された Azure アカウントのリソース](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
 
-## <a name="remove-an-azure-account-from-cloud-explorer"></a>Cloud Explorer から Azure アカウントを削除します。 
+## <a name="remove-an-azure-account-from-cloud-explorer"></a>Cloud Explorer から Azure アカウントを削除する
 
-1. **Cloud Explorer**、**アカウント管理**します。
+1. **Cloud Explorer** で **[アカウント管理]** を選択します。
 
-   ![クラウド エクスプ ローラーの Azure アカウントの設定 アイコン](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
+   ![Cloud Explorer の [Azure アカウントの設定] アイコン](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. 削除するアカウントの横にある次のように選択します。 **Manage Accounts**します。
+1. 削除するアカウントの横にある **[アカウントの管理]** をクリックします。
 
-   ![クラウド エクスプ ローラーの Azure アカウントの設定 アイコン](./media/vs-azure-tools-resources-managing-with-cloud-explorer/remove-account.png)
+   ![Cloud Explorer の [Azure アカウントの設定] アイコン](./media/vs-azure-tools-resources-managing-with-cloud-explorer/remove-account.png)
 
-1. 選択**削除**アカウントを削除します。
+1. **[削除]** を選択してアカウントを削除します。
 
-    ![クラウド エクスプ ローラーの管理アカウント ダイアログ ボックス](./media/vs-azure-tools-resources-managing-with-cloud-explorer/accountmanage.PNG)
+    ![Cloud Explorer の [アカウントの管理] ダイアログ ボックス](./media/vs-azure-tools-resources-managing-with-cloud-explorer/accountmanage.PNG)
 
-## <a name="view-resource-types-or-resource-groups"></a>リソースの種類またはリソース グループを表示します。
+## <a name="view-resource-types-or-resource-groups"></a>リソースの種類またはリソース グループを表示する
 
-Azure リソースを表示する、いずれかを選択できます**リソースの種類**または**リソース グループ**ビュー。
+Azure リソースを表示するには、**[リソースの種類]** ビューまたは **[リソース グループ]** ビューを選択します。
 
-1. **Cloud Explorer**、リソース ビュー ドロップダウンを選択します。
+1. **Cloud Explorer** で、リソース ビュー ドロップダウンをクリックします。
 
-   ![クラウド エクスプ ローラーのドロップダウン リストに目的のリソース ビューを選択します。](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-view-dropdown.png)
+   ![Cloud Explorer のドロップダウン リストで目的のリソース ビューを選択する](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-view-dropdown.png)
 
-1. コンテキスト メニューから目的のビューを選択します。 
+1. コンテキスト メニューで目的のビューを選択します。
 
-   * **リソースの種類**で使用される一般的なビューを表示、 [Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040)、web アプリ、ストレージ アカウント、および仮想マシンなどの種類によってカテゴリ化される Azure リソースに表示されます。 
-   * **リソース グループ**- 関連付けられている Azure リソース グループによって分類の Azure リソースを表示します。 リソース グループは、特定のアプリケーションで使用される通常の Azure リソースのバンドルです。 Azure リソース グループの詳細については、次を参照してください。 [Azure Resource Manager の概要](/azure/azure-resource-manager/resource-group-overview)します。
+   * **[リソースの種類]** ビュー - [Azure Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040) で使用される一般的なビュー。Web アプリ、ストレージ アカウント、仮想マシンなどの Azure リソースが種類ごとに表示されます。
+   * **[リソース グループ]** ビュー - Azure リソースが、関連付けられている Azure リソース グループで分類されます。 リソース グループとは Azure リソースの集まりで、通常は特定のアプリケーションで使用されます。 Azure リソース グループについて詳しくは、「[Azure リソース マネージャーの概要](/azure/azure-resource-manager/resource-group-overview)」をご覧ください。
 
-   次の図は、2 つのリソース ビューの比較を示しています。
+   次の図では、2 つのリソース ビューを比較しています。
 
-   ![クラウド エクスプ ローラーのリソース ビューの比較](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resource-views-comparison.png)
+   ![Cloud Explorer のリソース ビューの比較](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resource-views-comparison.png)
 
-## <a name="view-and-navigate-resources-in-cloud-explorer"></a>表示し、クラウド エクスプ ローラーでリソースを移動します
+## <a name="view-and-navigate-resources-in-cloud-explorer"></a>Cloud Explorer でリソースを表示し、リソースに移動する
 
-Azure のリソースに移動し、クラウド エクスプ ローラーでその情報を表示、項目の種類または関連付けられているリソース グループを展開し、リソースを選択します。 リソースを選択する - 2 つのタブに情報が表示されます。**アクション**と**プロパティ**- クラウド エクスプ ローラーの下部にあります。
+Cloud Explorer で Azure リソースに移動してその情報を表示するには、項目の種類または関連付けられているリソース グループを展開し、リソースを選択します。 リソースを選択すると、Cloud Explorer の下部にある 2 つのタブ (**[アクション]** と **[プロパティ]**) に情報が表示されます。
 
-* **アクション** タブ - 選択したリソースに対して Cloud Explorer で実行できるアクションを一覧表示されます。 コンテキスト メニューを表示するリソースを右クリックして、これらのオプションを表示することもできます。
+* **[アクション]** タブ - 選択したリソースに対して Cloud Explorer で実行できるアクションが表示されます。 リソースを右クリックしてコンテキスト メニューを表示することで、これらのオプションを表示することもできます。
 
-* **プロパティ**タブ - その種類、ロケール、およびリソース グループが関連付けられているなど、リソースのプロパティを示しています。
+* **[プロパティ]** タブ - リソースのプロパティ (種類、ロケール、関連付けられているリソース グループなど) が表示されます。
 
-次の図は、表示される内容の各タブで、App Service の比較の例を示しています。
+次の図は、App Service の各タブに表示される内容の比較の例を示しています。
 
-  ![Cloud Explorer のスクリーン ショット](./media/vs-azure-tools-resources-managing-with-cloud-explorer/actions-and-properties.png)
+  ![Cloud Explorer のスクリーンショット](./media/vs-azure-tools-resources-managing-with-cloud-explorer/actions-and-properties.png)
 
-すべてのリソースにアクション**ポータルで開く**します。 クラウド エクスプ ローラーで選択したリソースを表示このアクションを選択すると、 [Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040)します。 **ポータルで開く**機能は、深く入れ子になったリソースに移動するのに便利です。
+すべてのリソースには、 **[ポータルで開く]** というアクションがあります。 このアクションを選択すると、選択したリソースが [Azure ポータル](http://go.microsoft.com/fwlink/p/?LinkID=525040)で表示されます。 **[ポータルで開く]** 機能は、深く入れ子になったリソースに移動する場合に便利です。
 
-追加のアクションとプロパティの値が Azure のリソースに基づいても可能性があります表示。 たとえば、web apps と logic apps もあるアクション**ブラウザーで開く**と**デバッガーをアタッチ**に加えて**ポータルで開く**します。 エディターを開くアクションは、ストレージ アカウントの blob、キュー、またはテーブルを選択すると表示されます。 Azure アプリが**URL**と**状態**記憶域リソースがキーと接続文字列プロパティのプロパティ。
+その他のアクションやプロパティ値も、Azure リソースに基づいて表示される場合があります。 たとえば、Web Apps と Logic Apps には、**[ポータルで開く]** に加えて、**[ブラウザーで開く]** と **[デバッガーのアタッチ]** というアクションもあります。 エディターを開くアクションは、ストレージ アカウントの BLOB、キュー、またはテーブルを選択すると表示されます。 Azure アプリには **URL** と**状態**プロパティがあるのに対し、ストレージ リソースにはキーと接続文字列のプロパティがあります。
 
-## <a name="find-resources-in-cloud-explorer"></a>Cloud Explorer でリソースを検索します。
+## <a name="find-resources-in-cloud-explorer"></a>Cloud Explorer でリソースを検索する
 
-Azure アカウントのサブスクリプションで特定の名前のリソースを検索するには、内の名前を入力します。、**検索**クラウド エクスプ ローラーでボックス。
+Azure アカウント サブスクリプションで特定の名前のリソースを検索するには、Cloud Explorer の**検索**ボックスに名前を入力します。
 
-  ![Cloud Explorer でのリソースの検索](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
+  ![Finding resources in Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
-内の文字を入力すると、**検索**がリソース ツリーにボックスで、その文字に一致するリソースのみが表示されます。
+**検索**ボックスに文字を入力すると、その文字に一致するリソースだけがリソース ツリーに表示されます。

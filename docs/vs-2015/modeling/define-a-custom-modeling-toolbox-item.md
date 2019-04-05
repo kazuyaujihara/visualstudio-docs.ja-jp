@@ -1,25 +1,22 @@
 ---
 title: 定義のカスタム モデリング ツールボックス アイテム |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, customizing the toolbox
 ms.assetid: a2463606-1100-40ac-97f3-5ba22ca47b7c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb562eb76e13b5dcb16532ed808b2447de0d6c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973570"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>カスタム モデリング ツールボックス アイテムを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +161,7 @@ ms.locfileid: "51778411"
   
 4.  プロジェクトにツールボックスの定義を追加します。 含める、 **.tbxinfo**ファイル、図ファイル、ビットマップ ファイル、およびリソース ファイル、およびそれらが VSIX に含まれているかどうかを確認します。  
   
-    -   ソリューション エクスプ ローラーで、VSIX プロジェクトのショートカット メニューの 選択**追加**、**既存項目の**します。 ダイアログ ボックスで、次のように設定します。**オブジェクトの型: すべてのファイル**します。 ファイルを検索し、すべてを選択し、**追加**します。  
+    -   ソリューション エクスプ ローラーで、VSIX プロジェクトのショートカット メニューの 選択**追加**、**既存項目の**します。 ダイアログ ボックスで、次のように設定します。**オブジェクトの種類。すべてのファイル**します。 ファイルを検索し、すべてを選択し、**追加**します。  
   
         > [!NOTE]
         >  このプロジェクトでは、図ファイルをモデル エディターで開くことができません。  
@@ -200,7 +197,7 @@ ms.locfileid: "51778411"
   
      実験用のインスタンスで、関連する型の UML 図を作成するか開きます。 新しいツールがツールボックスに表示されることと、正しく要素が作成されることを確認します。  
   
-10. **デプロイ用の VSIX ファイルを取得する:** Windows エクスプ ローラーでフォルダーを開きます **.\bin\Debug**または **.\bin\Release**を検索する、 **.vsix**ファイル。 これは [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張ファイルです。 このファイルは、自分のコンピューターにインストールできるほか、他の Visual Studio ユーザーに送信することもできます。  
+10. **デプロイ用の VSIX ファイルを入手するには**Windows エクスプ ローラーでフォルダーを開きます **.\bin\Debug**または **.\bin\Release**を検索する、 **.vsix**ファイル。 これは [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張ファイルです。 このファイルは、自分のコンピューターにインストールできるほか、他の Visual Studio ユーザーに送信することもできます。  
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Visual Studio 拡張機能からカスタム ツールをインストールするには  
   
@@ -241,6 +238,3 @@ ms.locfileid: "51778411"
  [プロファイルを定義すると、UML を拡張](../modeling/define-a-profile-to-extend-uml.md)   
  [モデリング図にメニュー コマンドを定義します。](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML モデルの検証制約を定義する](../modeling/define-validation-constraints-for-uml-models.md)
-
-
-

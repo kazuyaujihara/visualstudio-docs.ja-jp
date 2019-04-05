@@ -19,12 +19,12 @@ ms.lasthandoff: 02/22/2019
 ms.locfileid: "56718964"
 ---
 # <a name="launch-based-attachment"></a>起動ベースの添付ファイル
-プログラムを起動ベースの添付ファイルは自動です。 によって、SDM をプログラムをホストするプロセスを起動すると起動ベースの添付ファイルは手動の添付ファイルのメソッドのようなパスに従います。 詳しくは、次を参照してください。[プログラムにアタッチ](../../extensibility/debugger/attaching-to-the-program.md)します。
+プログラムを起動ベースの添付ファイルは自動です。 によって、SDM をプログラムをホストするプロセスを起動すると起動ベースの添付ファイルは手動の添付ファイルのメソッドのようなパスに従います。 詳しくは、[プログラムにアタッチ](../../extensibility/debugger/attaching-to-the-program.md)を参照してください。
 
 ## <a name="the-attaching-process"></a>プロセスを接続します。
  主な違いは、次のイベントのシーケンス、**アタッチ**呼び出すと、次のようにします。
 
-1.  送信、 **IDebugEngineCreateEvent2** SDM にイベント オブジェクト。 詳細については、次を参照してください。[イベントを送信する](../../extensibility/debugger/sending-events.md)します。
+1.  送信、 **IDebugEngineCreateEvent2** SDM にイベント オブジェクト。 詳細については、[イベントを送信する](../../extensibility/debugger/sending-events.md)を参照してください。
 
 2.  呼び出す、`IDebugProgram2::GetProgramId`メソッドを**IDebugProgram2**に渡されたインターフェイス、**アタッチ**メソッド。
 

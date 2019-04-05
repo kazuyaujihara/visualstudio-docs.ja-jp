@@ -35,7 +35,7 @@ ms.locfileid: "56635060"
 ## <a name="source-control-requires-checking-out-all-files"></a>ソース管理では、すべてのファイルをチェック アウトが必要です。
  プロジェクトをソース管理を使用する場合、これをチェック アウトのすべてのファイル内のコード ファイルでする必要があります**ソリューション エクスプ ローラー** (など、 *ThisDocument*、 *ThisWorkbook*、または*ThisAddIn*コード ファイル)、コード ファイルを変更するたびにもファイルを既定では表示されません。 最上位のコード ファイルのみをチェックする場合、変更は失われます。
 
- 変更を行った後でバックアップのすべてのファイルを確認してください。 プロジェクト内の非表示コード ファイルの詳細については、次を参照してください。 [Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)します。
+ 変更を行った後でバックアップのすべてのファイルを確認してください。 プロジェクト内の非表示コード ファイルの詳細については、[Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)を参照してください。
 
 ## <a name="security-for-informal-collaboration-on-a-network"></a>ネットワーク上の共同のセキュリティ
  ネットワーク上の場所 (\\ \\ *Servername*\\*Sharename* など)にあるすべてのドキュメントレベルのソリューションでは、作業している Microsoft Office アプリケーションの信頼できるフォルダの一覧に完全修飾場所を追加する必要があります。 メインフォルダーの下にサブディレクトリを含めるか、デバッグフォルダとビルドフォルダを信頼できるフォルダリストに追加するかを選択します。 これを行う方法の詳細については、[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)を参照してください。

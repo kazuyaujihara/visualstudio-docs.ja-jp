@@ -318,7 +318,7 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 
  ただし、このコードは、新しい項目の既定の名前を設定できません。 定義した任意のカスタマイズされたマージは実行されません、**要素マージ ディレクティブ**DSL の定義されているコードのカスタムのマージは実行されません。
 
- 使用すること勧めそのため<xref:Microsoft.VisualStudio.Modeling.ElementOperations>新しい要素を作成します。 詳細については、次を参照してください。[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)します。
+ 使用すること勧めそのため<xref:Microsoft.VisualStudio.Modeling.ElementOperations>新しい要素を作成します。 詳細については、[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

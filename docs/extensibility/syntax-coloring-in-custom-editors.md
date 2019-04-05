@@ -52,7 +52,7 @@ Visual Studio 環境の SDK エディターなどのコア エディターは、
 3.  によって返される色づけの情報を使用して<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>を再描画し、そのテキストが表示されます。
 
 > [!NOTE]
-> 言語サービスの colorizer だけでなく、VSPackage は、汎用的な Visual Studio 環境の SDK のテキストの色指定メカニズムを使用してが選択できます。 このメカニズムの詳細については、次を参照してください。[を使用してフォントおよび色](../extensibility/using-fonts-and-colors.md)します。
+> 言語サービスの colorizer だけでなく、VSPackage は、汎用的な Visual Studio 環境の SDK のテキストの色指定メカニズムを使用してが選択できます。 このメカニズムの詳細については、[を使用してフォントおよび色](../extensibility/using-fonts-and-colors.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

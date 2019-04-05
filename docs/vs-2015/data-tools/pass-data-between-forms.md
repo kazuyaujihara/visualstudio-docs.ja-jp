@@ -1,12 +1,9 @@
 ---
 title: フォーム間でデータを渡す |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a9f28902673018a4ae90fbb2ed83e741be99fbfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d2546266d1b050de6a08e7ba8e2f1526acc0291b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204829"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975486"
 ---
 # <a name="pass-data-between-forms"></a>フォーム間でデータを渡す
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +42,9 @@ ms.locfileid: "49204829"
   
 -   作成と構成を含むデータセット、[データ ソース構成ウィザード](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)します。  
   
--   項目をドラッグしたときに、フォームに作成するコントロールを選択すると、**データソース**ウィンドウ。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
+-   **[データ ソース]** ウィンドウから項目をドラッグしたときにフォーム上に作成するコントロールを選択します。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
   
--   項目をドラッグして、データ バインド コントロールを作成、**データソース**ウィンドウからフォームにします。  
+-   **[データ ソース]** ウィンドウからフォームに項目をドラッグして、データ バインド コントロールを作成します。  
   
 -   データを表示するグリッドのある 2 番目のフォームを作成します。  
   
@@ -58,7 +55,7 @@ ms.locfileid: "49204829"
 ## <a name="prerequisites"></a>必須コンポーネント  
  このチュートリアルを完了するための要件は次のとおりです。  
   
--   Northwind サンプル データベースにアクセスします。 詳細については、次を参照してください。[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)します。  
+-   Northwind サンプル データベースにアクセスします。
   
 ## <a name="create-the-windows-application"></a>Windows アプリケーションを作成します。  
   
@@ -70,7 +67,7 @@ ms.locfileid: "49204829"
   
 3.  選択**Windows フォーム アプリケーション**、 をクリック**OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
   
-     **PassingDataBetweenForms**プロジェクトを作成するとに追加**ソリューション エクスプ ローラー**します。  
+     **PassingDataBetweenForms** プロジェクトが作成され、**ソリューション エクスプローラー**に追加されます。  
   
 ## <a name="create-the-data-source"></a>データ ソースを作成します。  
   
@@ -78,36 +75,36 @@ ms.locfileid: "49204829"
   
 1.  **[データ]** メニューの **[データ ソースの表示]** をクリックします。  
   
-2.  **データソース**ウィンドウで、**新しいデータ ソースの追加**を開始する、**データ ソースの構成**ウィザード。  
+2.  **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成**ウィザードを起動します。  
   
 3.  **[データソースの種類を選択]** ページで、 **[データベース]** をクリックし、 **[次へ]** をクリックします。  
   
-4.  **データベース モデルの選択**ことを確認します ページで、**データセット**が指定され、をクリックし、 **次へ**します。  
+4.  **[データベース モデルの選択]** ページで、**[データセット]** が指定されていることを確認し、**[次へ]** をクリックします。  
   
-5.  **データ接続の選択** ページで、次のいずれかを実行します。  
+5.  **[データ接続の選択]** ページで、次のいずれかの操作を行います。  
   
     -   Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。  
   
-    -   選択**新しい接続**を起動する、**接続の追加/変更** ダイアログ ボックス。  
+    -   **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。  
   
-6.  オプションを選択し、をクリックし、データベースには、パスワードが必要ですし、機密データを含めるためのオプションが有効になっている場合は、**次**します。  
+6.  データベースにパスワードが必要であり、重要情報を含めるオプションを有効にする場合は、このオプションを選択し、**[次へ]** をクリックします。  
   
-7.  **接続文字列をアプリケーション構成ファイルに保存**] ページで [**次**します。  
+7.  **[アプリケーション構成ファイルに接続文字列を保存]** ページで、**[次へ]** をクリックします。  
   
-8.  **データベース オブジェクトの選択** ページで、展開、**テーブル**ノード。  
+8.  **[データベース オブジェクトの選択]** ページで、**[テーブル]** ノードを展開します。  
   
-9. 選択、**顧客**と**注文**テーブル、およびクリック**完了**。  
+9. **Customers** テーブルと **Orders** テーブルを選択し、**[完了]** をクリックします。  
   
-     **NorthwindDataSet**がプロジェクトに追加、**顧客**と**注文**に表示されるテーブル、**データ ソース**ウィンドウ。  
+     プロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウに **Customers** テーブルと **Orders** テーブルが表示されます。  
   
 ## <a name="create-the-first-form-form1"></a>最初のフォーム (Form1) を作成します。  
- データ バインド グリッドを作成することができます (、<xref:System.Windows.Forms.DataGridView>コントロール)、ドラッグして、**顧客**ノードから、**データ ソース**ウィンドウから、フォームにします。  
+ **[データ ソース]** ウィンドウから **Customers** ノードをフォームにドラッグして、データ バインド グリッド (<xref:System.Windows.Forms.DataGridView> コントロール) を作成します。  
   
 #### <a name="to-create-a-data-bound-grid-on-the-form"></a>フォームにデータ バインド グリッドを作成するには  
   
--   メインのドラッグ**顧客**ノードから、**データ ソース**ウィンドウ**Form1**。  
+-   **[データ ソース]** ウィンドウから **Form1** にメインの **[Customers]** ノードをドラッグします。  
   
-     A<xref:System.Windows.Forms.DataGridView>とツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) レコードを移動するために表示されます。 **Form1**します。 A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、 [CustomersTableAdapter](../data-tools/tableadapter-overview.md)、 <xref:System.Windows.Forms.BindingSource>、および<xref:System.Windows.Forms.BindingNavigator>コンポーネント トレイに表示されます。  
+     <xref:System.Windows.Forms.DataGridView> と、レコード間を移動するためのツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) が **Form1** 上に表示されます。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource>、<xref:System.Windows.Forms.BindingNavigator> がコンポーネント トレイに表示されます。  
   
 ## <a name="create-the-second-form-form2"></a>2 番目のフォーム (Form2) を作成します。  
   
@@ -115,29 +112,29 @@ ms.locfileid: "49204829"
   
 1.  **[プロジェクト]** メニューの **[Windows フォームの追加]** を選択します。  
   
-2.  既定の名前をそのまま**Form2**、 をクリック**追加**します。  
+2.  名前を既定の **Form2** のままにして、**[追加]** をクリックします。  
   
-3.  メインのドラッグ**注文**ノードから、**データ ソース**ウィンドウ**Form2**。  
+3.  **[データ ソース]** ウィンドウから **Form2** にメインの **[Orders]** ノードをドラッグします。  
   
-     A<xref:System.Windows.Forms.DataGridView>とツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) レコードを移動するために表示されます。 **Form2**します。 A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、 [CustomersTableAdapter](../data-tools/tableadapter-overview.md)、 <xref:System.Windows.Forms.BindingSource>、および<xref:System.Windows.Forms.BindingNavigator>コンポーネント トレイに表示されます。  
+     <xref:System.Windows.Forms.DataGridView> と、レコード間を移動するためのツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) が **Form2** 上に表示されます。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource>、<xref:System.Windows.Forms.BindingNavigator> がコンポーネント トレイに表示されます。  
   
-4.  削除、 **OrdersBindingNavigator**コンポーネント トレイから。  
+4.  コンポーネント トレイから **OrdersBindingNavigator** を削除します。  
   
-     **OrdersBindingNavigator**から消えます**Form2**します。  
+     **Form2** から **OrdersBindingNavigator** が消えます。  
   
 ## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>Form2 を Form1 で選択した顧客の注文を読み込む TableAdapter クエリを追加します。  
   
 #### <a name="to-create-a-tableadapter-query"></a>TableAdapter クエリを作成するには  
   
-1.  ダブルクリックして、 **NorthwindDataSet.xsd**ファイル**ソリューション エクスプ ローラー**します。  
+1.  **ソリューション エクスプローラー**で、**NorthwindDataSet.xsd** ファイルをダブルクリックします。  
   
-2.  右クリックし、 **OrdersTableAdapter**、選び**クエリの追加**します。  
+2.  **[OrdersTableAdapter]** を右クリックし、**[クエリの追加]** を選択します。  
   
-3.  既定のオプションのまま**SQL ステートメントを使用**、 をクリックし、**次**。  
+3.  **[SQL ステートメントを使用する]** を既定のオプションのままにして、**[次へ]** をクリックします。  
   
-4.  既定のオプションのまま**を行を返す SELECT**、順にクリックします**次**します。  
+4.  **[複数行を返す SELECT]** を既定のオプションのままにして、**[次へ]** をクリックします。  
   
-5.  返すクエリに WHERE 句を追加`Orders`に基づいて、`CustomerID`します。 クエリは次のようになります。  
+5.  `CustomerID` に基づいて `Orders` を返すために、クエリに WHERE 句を追加します。 クエリは次のようになります。  
   
     ```  
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry  
@@ -152,7 +149,7 @@ ms.locfileid: "49204829"
   
 7.  **DataTableMethod 名前を入力**、型`FillByCustomerID`します。  
   
-8.  クリア、 **DataTable を返す**オプションをクリックして**次**します。  
+8.  **[DataTable を返す]** オプションをオフにして、**[次へ]** をクリックします。  
   
 9. **[完了]** をクリックします。  
   
@@ -160,9 +157,9 @@ ms.locfileid: "49204829"
   
 #### <a name="to-create-a-method-to-pass-data-to"></a>データの渡し先となるメソッドを作成するには  
   
-1.  右クリック**Form2**、選択と**コードの表示**を開く**Form2**で、**コード エディター**します。  
+1.  **Form2** を右クリックし、**[コードの表示]** を選択して**コード エディター**で **Form2** を開きます。  
   
-2.  次のコードを追加**Form2**後、`Form2_Load`メソッド。  
+2.  **Form2** の `Form2_Load` メソッドの後に次のコードを追加します。  
   
      [!code-csharp[VbRaddataDisplaying#1](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form2.cs#1)]
      [!code-vb[VbRaddataDisplaying#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form2.vb#1)]  
@@ -171,11 +168,11 @@ ms.locfileid: "49204829"
   
 #### <a name="to-create-a-method-to-pass-data-to-form2"></a>Form2 にデータを渡すメソッドを作成するには  
   
-1.  **Form1**、顧客データ グリッドを右クリックし、クリックして**プロパティ**します。  
+1.  **Form1** の Customer データ グリッドを右クリックし、**[プロパティ]** をクリックします。  
   
-2.  **プロパティ**ウィンドウで、をクリックして**イベント**します。  
+2.  **[プロパティ]** ウィンドウで、**[イベント]** をクリックします。  
   
-3.  ダブルクリックして、 **CellDoubleClick**イベント。  
+3.  **CellDoubleClick** イベントをダブルクリックします。  
   
      コード エディターが表示されます。  
   
@@ -190,7 +187,7 @@ ms.locfileid: "49204829"
   
 -   F5 キーを押してアプリケーションを実行します。  
   
--   顧客レコードをダブルクリックして**Form1**を開く**Form2**その顧客の注文とします。  
+-   **Form1** で顧客レコードをダブルクリックして、その顧客の注文を表示する **Form2** を開きます。  
   
 ## <a name="next-steps"></a>次の手順  
  フォーム間でデータを渡した後に、アプリケーションの要件に応じてさらに操作を追加して実行できます。 このチュートリアルで行うことができる拡張には次のものがあります。  
@@ -201,4 +198,3 @@ ms.locfileid: "49204829"
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのデータへの Windows フォーム コントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

@@ -1,14 +1,9 @@
 ---
 title: エディット コンティニュ (Visual Basic) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 caps.latest.revision: 43
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 383e3418135857b0bded3bbefaace0e8d5832ce6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750630"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977255"
 ---
 # <a name="edit-and-continue-visual-basic"></a>エディット コンティニュ (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +39,12 @@ ms.locfileid: "51750630"
   
  エディット コンティニュは、.NET Framework 4.5.1 を対象にする 64 ビット プロジェクトでサポートされています。  
   
- 使用してデバッグを開始するときにエディット コンティニュがサポートされていません**プロセスにアタッチ**します。 エディット コンティニュは、最適化されたコード、マネージド コードとネイティブ コードの混合コード、または Compact Framework (スマート デバイス) プロジェクトではサポートされていません。  
+ **[プロセスにアタッチ]** を使用してデバッグを開始した場合は、エディット コンティニュはサポートされません。 エディット コンティニュは、最適化されたコード、マネージド コードとネイティブ コードの混合コード、または Compact Framework (スマート デバイス) プロジェクトではサポートされていません。  
   
  このセクションの各トピックでは、この機能の使用方法と許可されない種類の変更について詳しく説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [方法 : エディット コンティニュの中断モード時に編集を適用する](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [方法: エディット コンティニュの中断モード時に編集を適用する](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  中断モードにおいてコードの編集を適用する方法について説明します。  
   
  [Visual Basic エディット コンティニュでサポートされていない編集](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  
@@ -58,6 +53,3 @@ ms.locfileid: "51750630"
 ## <a name="related-sections"></a>関連項目  
  [エディット コンティニュ](../debugger/edit-and-continue.md)  
  エディット コンティニュに関するトピックの一覧を提供します。
-
-
-

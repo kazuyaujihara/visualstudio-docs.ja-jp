@@ -21,7 +21,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d126afed3d8f164eebdec5e81d6cf60232305734
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51740111"
@@ -31,7 +31,7 @@ ms.locfileid: "51740111"
 
 Visual Studio デバッガーでは、Windows ストア アプリのデバッグを完全にサポートを提供します。  
   
- Windows ユニバーサル アプリのデバッグについては、次を参照してください。[の展開と Windows ユニバーサル プラットフォーム アプリのデバッグ](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx)します。  
+ Windows ユニバーサル アプリのデバッグについては、[の展開と Windows ユニバーサル プラットフォーム アプリのデバッグ](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx)を参照してください。  
   
  Windows Phone アプリをデバッグするを参照してください。 [for Windows Phone 8 アプリのデバッグ](https://msdn.microsoft.com/library/windows/apps/ff402572\(v=vs.105\).aspx)します。  
   

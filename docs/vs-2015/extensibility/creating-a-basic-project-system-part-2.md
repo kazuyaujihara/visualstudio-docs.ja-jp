@@ -1,14 +1,9 @@
 ---
 title: 基本的なプロジェクト システムの作成、パート 2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962863"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>基本的なプロジェクト システムの作成、パート 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -191,9 +186,9 @@ ZipProjects:
   
 1. Visual Studio SDK 実験用インスタンスをリセットします。  
   
-    [!INCLUDE[win7](../includes/win7-md.md)]: [スタート] メニューで、検索、 **Microsoft Visual Studio または Microsoft Visual Studio SDK/Tools**フォルダー、および選択 **、Microsoft Visual Studio 実験用インスタンスをリセット**。  
+    [!INCLUDE[win7](../includes/win7-md.md)]:[スタート] メニューで、検索、 **Microsoft Visual Studio または Microsoft Visual Studio SDK/Tools**フォルダー、および選択 **、Microsoft Visual Studio 実験用インスタンスをリセット**します。  
   
-    以降のバージョンの Windows で: [スタート] 画面で、「 **Microsoft Visual Studio をリセット\<バージョン > 実験用インスタンス**します。  
+    以降のバージョンの Windows では。[Start] 画面で、次のように入力します。 **Microsoft Visual Studio をリセット\<バージョン > 実験用インスタンス**します。  
   
 2. コマンド プロンプト ウィンドウが表示されます。 単語が表示されたら`Press any key to continue`、enter キーを押します。 ウィンドウを閉じた後は、Visual Studio を開きます。  
   
@@ -286,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ がユーザーによって指定された名前、**新しいプロジェクト** ダイアログ ボックスで、すべての安全でない文字とスペースを削除するように変更します。  
   
-  テンプレート パラメーターの完全な一覧については、「[テンプレート パラメーター](../ide/template-parameters.md)」をご覧ください。  独自のカスタム テンプレート パラメーターを作成する場合を参照してください。 [NIB: 方法: カスタムのパラメーターをテンプレートに渡す](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)します。  
+  テンプレート パラメーターの完全な一覧については、「[テンプレート パラメーター](../ide/template-parameters.md)」をご覧ください。  独自のカスタム テンプレート パラメーターを作成する場合を参照してください[NIB:。方法: テンプレートにカスタム パラメーターを渡す](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)します。  
   
 #### <a name="to-substitute-project-template-parameters"></a>プロジェクト テンプレートのパラメーター値  
   
@@ -500,4 +495,3 @@ ZipProjects:
 8. Visual Studio の実験用インスタンスを終了します。  
   
    ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
-

@@ -38,7 +38,7 @@ ms.locfileid: "56614962"
 
  使用する場合、**リボン (ビジュアル デザイナー)** 項目をクリックして、 **ribbontype**でリボンのプロパティ、**プロパティ**ウィンドウと 1 つ以上のリボンからの Id値のリスト。
 
- 1 つのプロジェクトに複数のリボンを追加することができます。 複数のリボンで 1 つのリボン ID を共有する場合は、プロジェクトの `ThisAddin` クラスの `CreateRibbonExtensibilityObject` メソッドをオーバーライドし、実行時に表示するリボンを指定します。 詳細については、次を参照してください。[リボンの概要](../vsto/ribbon-overview.md)します。 リボンの各種類に関する詳細については、技術記事を参照してください。 [Outlook 2007 でリボンをカスタマイズ](/previous-versions/office/developer/office-2007/bb226712(v=office.12))します。
+ 1 つのプロジェクトに複数のリボンを追加することができます。 複数のリボンで 1 つのリボン ID を共有する場合は、プロジェクトの `ThisAddin` クラスの `CreateRibbonExtensibilityObject` メソッドをオーバーライドし、実行時に表示するリボンを指定します。 詳細については、[リボンの概要](../vsto/ribbon-overview.md)を参照してください。 リボンの各種類に関する詳細については、技術記事を参照してください。 [Outlook 2007 でリボンをカスタマイズ](/previous-versions/office/developer/office-2007/bb226712(v=office.12))します。
 
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>リボン XML を使用して、リボンの種類を指定します。
  使用する場合、**リボン (XML)** 項目の値を確認してください、 *ribbonID*パラメーター、<xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>メソッドと、適切なリボンを戻り値。

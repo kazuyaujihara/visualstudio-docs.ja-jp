@@ -1,25 +1,20 @@
 ---
 title: XSLT の既定のテンプレート |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 773dd34e-67d3-4997-8df9-b71e7f880d88
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a26349a60c40552d350f156bf1109544a03d411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 10937ed9c3ade13bf553ba4d3a2a9c551597949e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181351"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977307"
 ---
 # <a name="xslt-default-templates"></a>XSLT の既定のテンプレート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,4 +25,3 @@ XSLT 処理中、一致する明示的なテンプレート規則がスタイル
   
 ## <a name="see-also"></a>関連項目  
  [XSLT のデバッグ](../xml-tools/debugging-xslt.md)
-

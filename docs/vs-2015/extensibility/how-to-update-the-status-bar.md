@@ -1,28 +1,23 @@
 ---
 title: '方法: ステータス バーの更新 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - update status bar
 ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eb70e8799b74f470a2216a63aae4637fe1872681
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ea04eceba8d42f9be6fc1dabf91b21a21744a7ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768347"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963707"
 ---
-# <a name="how-to-update-the-status-bar"></a>方法: ステータス バーの更新
+# <a name="how-to-update-the-status-bar"></a>方法: ステータス バーを更新します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **ステータス バー**状態テキストの行または評価指標の 1 つまたは複数を含む多くのアプリケーション ウィンドウの下部にあるコントロール バーがあります。  
@@ -55,4 +50,3 @@ ms.locfileid: "51768347"
   
 ## <a name="see-also"></a>関連項目  
  [ステータス バー](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)
-

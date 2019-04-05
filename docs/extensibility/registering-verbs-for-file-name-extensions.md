@@ -20,7 +20,7 @@ ms.locfileid: "56681024"
 # <a name="register-verbs-for-file-name-extensions"></a>ファイル名拡張子の動詞を登録します。
 アプリケーションとファイル名拡張子の関連付けは、通常、ユーザーがファイルをダブルクリックしたときに発生する推奨アクションを持っています。 これは、アクションは、動詞、たとえばオープン操作に対応するにリンクさせます (推奨)。
 
- シェルのキーを使用して拡張機能があるのプログラム識別子 (ProgID) に関連付けられている動詞を登録する**HKEY_CLASSES_ROOT\{progid} \shell**します。 詳細については、次を参照してください。[ファイルの種類](/windows/desktop/shell/fa-file-types)します。
+ シェルのキーを使用して拡張機能があるのプログラム識別子 (ProgID) に関連付けられている動詞を登録する**HKEY_CLASSES_ROOT\{progid} \shell**します。 詳細については、[ファイルの種類](/windows/desktop/shell/fa-file-types)を参照してください。
 
 ## <a name="register-standard-verbs"></a>標準的な動詞を登録します。
  オペレーティング システムでは、次の標準的な動詞を認識します。

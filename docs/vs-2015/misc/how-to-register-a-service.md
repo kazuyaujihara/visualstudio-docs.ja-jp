@@ -1,27 +1,22 @@
 ---
-title: '方法: サービス登録 |Microsoft Docs'
-ms.custom: ''
+title: '方法: サービスの登録 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: a1f8026a648b2a0809af17664d4399f815c329be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0ec69fa123775cb477195d4022fb439fb990f415
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206259"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002818"
 ---
-# <a name="how-to-register-a-service"></a>方法: サービスを登録する
+# <a name="how-to-register-a-service"></a>方法: サービスを登録します。
 Managed Package Framework (MPF) は、管理するサービスの登録を制御する属性を提供します。 RegPkg ユーティリティでは、これらの属性を使用して、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]にサービスを登録します。  
   
 ## <a name="example"></a>例  
@@ -46,5 +41,5 @@ Managed Package Framework (MPF) は、管理するサービスの登録を制御
 >  サービスとインターフェイスの両方に同じ型または GUID を使用できますが、サービスが異なるインターフェイスを公開できるようにするために、2 つを分離することをお勧めします。  
   
 ## <a name="see-also"></a>関連項目  
- [Vspackage の登録](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Vspackage の登録](../extensibility/internals/registering-vspackages.md)   
  [サービスの基本情報](../extensibility/internals/service-essentials.md)

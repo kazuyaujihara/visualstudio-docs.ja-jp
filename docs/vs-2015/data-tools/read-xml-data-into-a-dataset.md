@@ -1,12 +1,9 @@
 ---
 title: データセットにデータを読み取り XML |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219732"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962814"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML データのデータセットへの読み込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +49,7 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
 5.  XML ファイルに基づく XML スキーマを表示するコードを追加する、<xref:System.Windows.Forms.TextBox>コントロール  
   
 > [!NOTE]
->  ダイアログ ボックスとメニュー コマンド、アクティブな設定またはエディションによって、ヘルプの記載を異なる場合がありますを表示するを使用しています。 設定を変更する、**ツール**メニューの **インポートおよびエクスポート設定**します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  ダイアログ ボックスとメニュー コマンド、アクティブな設定またはエディションによって、ヘルプの記載を異なる場合がありますを表示するを使用しています。 設定を変更する、**ツール**メニューの **インポートおよびエクスポート設定**します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する  
  この手順では、このチュートリアルを含む Visual Basic または Visual c# プロジェクトを作成します。  
@@ -228,9 +225,8 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
   
 ## <a name="test-the-form"></a>フォームをテストします。  
- フォームをテストして、期待どおりに動作することを確認します。  
-  
-#### <a name="to-test-the-form"></a>フォームをテストするには  
+
+フォームをテストして、期待どおりに動作することを確認します。
   
 1.  選択**F5**アプリケーションを実行します。  
   
@@ -243,15 +239,15 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
      テキスト ボックスには、XML ファイルの XML スキーマが表示されます。  
   
 ## <a name="next-steps"></a>次の手順  
- このチュートリアルでは、データセット、XML ファイルを読み取るだけでなく XML ファイルの内容に基づくスキーマの作成の基本を説明します。 次に実行する可能性のあるいくつかのタスクを次に示します。  
+
+このチュートリアルでは、データセット、XML ファイルを読み取るだけでなく XML ファイルの内容に基づくスキーマの作成の基本を説明します。 次に実行する可能性のあるいくつかのタスクを次に示します。  
   
 -   データセットと書き戻せる XML としてデータを編集します。 詳細については、「 <xref:System.Data.DataSet.WriteXml%2A> 」を参照してください。  
   
--   データセット内のデータを編集し、データベースに書き込みます。 詳細については、次を参照してください。[データの保存](../data-tools/saving-data.md)します。  
+-   データセット内のデータを編集し、データベースに書き込みます。
   
 ## <a name="see-also"></a>関連項目  
- [データのチュートリアル](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [データに関するチュートリアル](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Visual Studio でのデータへのアクセス](../data-tools/accessing-data-in-visual-studio.md)   
- [データを受信するアプリケーションを準備します。](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [アプリケーションでデータを受け取るための準備](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Visual Studio の XML ツール](../xml-tools/xml-tools-in-visual-studio.md)
-

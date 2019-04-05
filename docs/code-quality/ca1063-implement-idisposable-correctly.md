@@ -52,7 +52,7 @@ ms.locfileid: "57868315"
 
 これらのパターンのいずれかの違反が警告 CA1063 をトリガーします。
 
-宣言および実装しているすべての封印されていない型、<xref:System.IDisposable>インターフェイスを提供する必要があります独自`protected virtual void Dispose(bool)`メソッド。 `Dispose()` 呼び出す必要があります`Dipose(true)`、ファイナライザーを呼び出す必要がありますと`Dispose(false)`します。 封印されていない型宣言および実装を作成するかどうか、<xref:System.IDisposable>インターフェイスが定義する必要があります`Dispose(bool)`呼び出すようにします。 詳細については、次を参照してください。 [(.NET ガイド) のアンマネージ リソースをクリーンアップする](/dotnet/standard/garbage-collection/unmanaged)と[Dispose パターン](/dotnet/standard/design-guidelines/dispose-pattern)します。
+宣言および実装しているすべての封印されていない型、<xref:System.IDisposable>インターフェイスを提供する必要があります独自`protected virtual void Dispose(bool)`メソッド。 `Dispose()` 呼び出す必要があります`Dipose(true)`、ファイナライザーを呼び出す必要がありますと`Dispose(false)`します。 封印されていない型宣言および実装を作成するかどうか、<xref:System.IDisposable>インターフェイスが定義する必要があります`Dispose(bool)`呼び出すようにします。 詳細については、[(.NET ガイド) のアンマネージ リソースをクリーンアップする](/dotnet/standard/garbage-collection/unmanaged)と[Dispose パターン](/dotnet/standard/design-guidelines/dispose-pattern)を参照してください。
 
 既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
 
@@ -94,7 +94,7 @@ ms.locfileid: "57868315"
 dotnet_code_quality.ca1063.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、[構成 FxCop アナライザー](configure-fxcop-analyzers.md)を参照してください。
 
 ## <a name="pseudo-code-example"></a>擬似コードの例
 

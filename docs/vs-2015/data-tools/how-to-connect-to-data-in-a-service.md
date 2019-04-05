@@ -1,12 +1,9 @@
 ---
 title: '方法: データ サービスに接続する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ce851a864dd11759c36c7ae6cb275e9e71cd11a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 741200100e705777520ea585ce02439a3a3c26c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301796"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976184"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>方法: サービスのデータに接続する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +38,7 @@ ms.locfileid: "49301796"
  ウィザードの完了したら、サービス参照をプロジェクトに追加されですぐに使用できるは、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)します。  
   
 > [!NOTE]
->  表示される項目、**データソース**ウィンドウは、サービスが返す情報に依存します。 一部のサービスがのに十分な情報を提供していない、**データ ソース構成ウィザード**バインド可能なオブジェクトを作成します。 たとえば、サービスには、データセットが返された場合その項目に表示できません、**データ ソース ウィンドウ**ウィザードを完了するとします。 これは、ウィザードには、データ ソースを作成するのに十分な情報がないため、型指定されていないデータセットがスキーマで提供されないためにです。  
+>  **[データ ソース]** ウィンドウに表示される項目は、サービスから返される情報に応じて異なります。 サービスによっては、**データ ソース構成ウィザード**でバインドできるオブジェクトを作成するための十分な情報を提供しないものもあります。 たとえば、サービスには、データセットが返された場合その項目に表示できません、**データ ソース ウィンドウ**ウィザードを完了するとします。 これは、ウィザードには、データ ソースを作成するのに十分な情報がないため、型指定されていないデータセットがスキーマで提供されないためにです。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -62,7 +59,7 @@ ms.locfileid: "49301796"
   
 6.  **[完了]** をクリックします。  
   
-     データ ソースを追加、**データソース**ウィンドウ。  
+     **[データ ソース]** ウィンドウに、データ ソースが追加されます。  
   
 ## <a name="next-steps"></a>次の手順  
   
@@ -73,4 +70,3 @@ ms.locfileid: "49301796"
 ## <a name="see-also"></a>関連項目  
  [WCF データ サービスへの WPF コントロールをバインドします。](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
  [Visual Studio での Windows Communication Foundation サービスと WCF データ サービス](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-

@@ -29,7 +29,7 @@ ms.locfileid: "56641729"
  このページにアクセスするには、 **[ツール]** メニューの **[オプション]** をクリックします。 **[Office ツール]** フォルダーを展開し、 **[プロジェクトのアップグレード]** をクリックします。
 
 ## <a name="uielement-list"></a>UIElement の一覧
- **常に Office のインストールされているバージョンにアップグレード**のこのオプションが無効になっている[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]内の Office プロジェクトのため[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]のみを対象にできる[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]または Microsoft[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]アプリケーション。 詳細については、次を参照してください。[アップグレードし、Office ソリューションの移行](../vsto/upgrading-and-migrating-office-solutions.md)します。
+ **常に Office のインストールされているバージョンにアップグレード**のこのオプションが無効になっている[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]内の Office プロジェクトのため[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]のみを対象にできる[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]または Microsoft[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]アプリケーション。 詳細については、[アップグレードし、Office ソリューションの移行](../vsto/upgrading-and-migrating-office-solutions.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションのアップグレードと移行](../vsto/upgrading-and-migrating-office-solutions.md)

@@ -1,14 +1,9 @@
 ---
 title: デバッグ エラーと警告のダイアログ ボックス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.AccessRequiredDialog
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 094d7fa8e47cb718ee63ec5abb075db20ec1b66c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2d5fbd50ec56173d0871aa1096825eabf87cf42e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972951"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>デバッグ エラーと警告関連のダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,34 +43,31 @@ ms.locfileid: "51743284"
   
  [[デバッグ セッションで実行可能] ダイアログ ボックス](../debugger/executable-for-debugging-session-dialog-box.md)  
   
- [コードの変更 ダイアログ ボックスの適用に失敗しました](../debugger/edit-and-continue-dialog-box-cpp.md)  
+ [[コード変更適用の失敗] ダイアログ ボックス](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
  [[Microsoft Visual Studio デバッガー (例外がスローされました)] ダイアログ ボックス](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
- [現在の場所 ダイアログ ボックスのソース コードはありません。](../debugger/no-source-available.md)  
+ [[現在の場所のソース コードを表示できません] ダイアログ ボックス](../debugger/no-source-available.md)  
   
- [なしのシンボリック情報 ダイアログ ボックス](http://msdn.microsoft.com/en-us/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [[シンボル情報なし] ダイアログ ボックス](http://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [[あいまいさの解決] ダイアログ ボックス](../debugger/resolve-ambiguity-dialog-box.md)  
   
  [[古いコードの警告] ダイアログ ボックス](../debugger/stale-code-warning-dialog-box.md)  
   
- [マシンに接続できません。](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
+ [コンピューターに接続できません](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
   
- [エラー : "Debugging Isn't Possible Because a Kernel Debugger is Enabled on the System"](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [エラー: システム上でカーネル デバッガーが有効になっているため、デバッグできません](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>関連項目  
- [スクリプトと Web のデバッグ: エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [スクリプトと Web のデバッグ。エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
  [リモート デバッグ エラー](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [アタッチ エラー](http://msdn.microsoft.com/en-us/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [アタッチ エラー](http://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   
- [SQL デバッグ セットアップのトラブルシューティング](http://msdn.microsoft.com/en-us/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [SQL デバッグ セットアップのトラブルシューティング](http://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
   
- [Visual C のデバッグに関する Faq](../debugger/debugging-native-code-faqs.md)  
+ [Visual C++ のデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)  
   
  [デバッガーのセキュリティ](../debugger/debugger-security.md)
-
-
-

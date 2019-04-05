@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: f68cf87a7f45b906c6de43e0a837d49132b7a3e0
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51725557"
@@ -28,7 +28,7 @@ ms.locfileid: "51725557"
   
  API の詳細については、「<xref:Microsoft.VisualStudio.Uml.Interactions?displayProperty=fullName>」を参照してください。  
   
- コマンドおよびジェスチャ ハンドラーの UML 図を作成する一般的な概要については、次を参照してください。[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  
+ コマンドおよびジェスチャ ハンドラーの UML 図を作成する一般的な概要については、[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)を参照してください。  
   
 ## <a name="basic-code"></a>基本コード  
   
@@ -55,7 +55,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
    // for diagrams and context  
 ```  
   
- 詳細については、次を参照してください。[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  
+ 詳細については、[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)を参照してください。  
   
 ### <a name="getting-the-context"></a>コンテキストの取得  
  相互作用を、シーケンス図のコマンドまたはジェスチャ ハンドラーの一部として編集している場合、コンテキストへの参照を取得できます。 例:  
@@ -144,7 +144,7 @@ using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("
 [Import] ILinkedUndoContext LinkedUndoContext { get; set; }  
 ```  
   
- 詳細については、次を参照してください。[トランザクションを使用してモデルの更新をリンク UML](../modeling/link-uml-model-updates-by-using-transactions.md)します。  
+ 詳細については、[トランザクションを使用してモデルの更新をリンク UML](../modeling/link-uml-model-updates-by-using-transactions.md)を参照してください。  
   
 ## <a name="building-an-interaction"></a>相互作用の構築  
   

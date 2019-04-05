@@ -45,7 +45,7 @@ ms.locfileid: "55944430"
 |---------------|-----------------|
 |**application**|必須。 Microsoft Office アプリケーションを指定します。 値は次のいずれかになります。Excel、InfoPath、Outlook、PowerPoint、Project、Visio、または Word。|
 |**LoadBehavior**|任意。 既定で、 **loadBehavior**はこの値を設定で有効にします。 デバッグする場合は、この値を 2 に設定して VSTO アドインを無効にできます。 詳細については、LoadBehavior の値」というタイトルの表を参照してください。 [VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)します。|
-|**keyName**|必須。 この値は、アプリケーションが VSTO アドインを読み込むのに使用するレジストリ キーの名前です。 詳細については、次を参照してください。 [VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)します。|
+|**keyName**|必須。 この値は、アプリケーションが VSTO アドインを読み込むのに使用するレジストリ キーの名前です。 詳細については、[VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)を参照してください。|
 
  **AppAddin**要素には、次の子要素。
 

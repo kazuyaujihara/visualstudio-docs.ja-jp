@@ -45,7 +45,7 @@ ms.locfileid: "56621553"
 
 6.  ローカライズされた名前、プロパティ、および BDC モデルを適用するアクセス許可を定義する XML を追加します。
 
-     これらの要素を定義する方法については、次を参照してください。[モデル ファイルとリソース ファイル](http://go.microsoft.com/fwlink/?LinkID=169283)します。
+     これらの要素を定義する方法については、[モデル ファイルとリソース ファイル](http://go.microsoft.com/fwlink/?LinkID=169283)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [方法: SharePoint プロジェクトに既存の BDC モデル ファイルを追加します。](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)

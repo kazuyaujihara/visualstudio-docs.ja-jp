@@ -1,12 +1,9 @@
 ---
-title: 'UML クラス図: ガイドライン |Microsoft Docs'
-ms.custom: ''
+title: UML クラス図:ガイドライン |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.overrideoperationsdialog
 helpviewer_keywords:
@@ -19,15 +16,15 @@ ms.assetid: 94dbfd55-b300-4b49-9049-0831ed849486
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bfd0b13942f5faee82e284c435b7f937d3ae5094
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974003"
 ---
-# <a name="uml-class-diagrams-guidelines"></a>UML クラス図: ガイドライン
+# <a name="uml-class-diagrams-guidelines"></a>UML クラス図:ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio で使用することができます、 *UML クラス図*データ型と実装から個別にそれらの関係を記述します。 図は、実装ではなく、クラスの論理的な側面に注目するために使用されます。  
@@ -59,7 +56,7 @@ Visual Studio で使用することができます、 *UML クラス図*デー�
   
  入力ピン、出力ピン、およびアクティビティ パラメーター ノードの種類。  
   
- 参照してください[UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。  
+ 参照してください[UML アクティビティ図。ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。  
   
  シーケンス図  
   
@@ -67,22 +64,22 @@ Visual Studio で使用することができます、 *UML クラス図*デー�
   
  生存線の種類。 生存線のクラスには、受信できるすべてのメッセージの操作が含まれている必要があります。  
   
- 参照してください[UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
+ 参照してください[UML シーケンス図。ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
   
  コンポーネント図  
   
  コンポーネントのインターフェイスとその操作。  
   
- 参照してください[UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)します。  
+ 参照してください[UML コンポーネント図。ガイドライン](../modeling/uml-component-diagrams-guidelines.md)します。  
   
  ユース ケース図  
   
  ユース ケースの目標と手順の説明で言及されている型。  
   
- 参照してください[UML ユース ケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。  
+ 参照してください[UML ユース ケース図。ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。  
   
 ##  <a name="BasicSteps"></a> クラス ダイアグラムを描画するための基本的な手順  
- リファレンス UML クラス図の要素に関する情報については、次を参照してください。 [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)します。  
+ リファレンス UML クラス図の要素に関する情報については、次を参照してください。 [UML クラス図。Reference](../modeling/uml-class-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。  
   
 > [!NOTE]
 >  いずれかのモデリング図を作成するための詳細な手順が記載されて[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
@@ -149,13 +146,13 @@ Visual Studio で使用することができます、 *UML クラス図*デー�
   
  コンポーネント図のコンポーネントでインターフェイスを定義している場合からインターフェイスをドラッグできます**UML モデル エクスプ ローラー**クラス ダイアグラムにします。 クラス図で、インターフェイスに含まれるメソッドを定義できます。  
   
- 参照してください[UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)します。  
+ 参照してください[UML コンポーネント図。ガイドライン](../modeling/uml-component-diagrams-guidelines.md)します。  
   
  UML シーケンス図  
   
  シーケンス図の生存線からクラスとインターフェイスを作成してからクラスをドラッグし、 **UML モデル エクスプ ローラー** UML クラス図にします。 シーケンス図における各生存線は、オブジェクト、コンポーネント、またはアクターのインスタンスを表します。  
   
- 生存線からクラスを作成する、生存線のショートカット メニューを開きし、**クラスを作成**または**インターフェイス**します。 参照してください[UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
+ 生存線からクラスを作成する、生存線のショートカット メニューを開きし、**クラスを作成**または**インターフェイス**します。 参照してください[UML シーケンス図。ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
   
 ##  <a name="AttributesAndOperations"></a> 属性と操作  
  属性 (4) は、型のすべてのインスタンスが持つことができる名前付きの値です。 属性にアクセスしても、インスタンスの状態は変更されません。  
@@ -477,12 +474,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ## <a name="see-also"></a>関連項目  
  [UML モデルおよびダイアグラムを編集します。](../modeling/edit-uml-models-and-diagrams.md)   
- [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)   
+ [UML クラス図: 参照](../modeling/uml-class-diagrams-reference.md)   
  [ユーザー要件のモデリング](../modeling/model-user-requirements.md)   
- [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)   
- [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)   
- [UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML コンポーネント図: 参照](../modeling/uml-component-diagrams-reference.md)   
+ [UML シーケンス図: 参照](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML ユース ケース図: 参照](../modeling/uml-use-case-diagrams-reference.md)   
  [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)
-
-
-

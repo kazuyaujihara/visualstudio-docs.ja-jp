@@ -102,7 +102,7 @@ ms.locfileid: "56597999"
 ##  <a name="runtimedoclevel"></a> ドキュメント レベルのプロジェクトでの実行時にコントロールを追加します。
  プログラムで、実行時にドキュメントに Windows フォーム コントロールを追加することができます。 Word では、`ThisDocument` クラスの <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> プロパティのメソッドを使用します。 Excel でのメソッドを使用して、<xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A>のプロパティを`Sheet` *n*クラス。 各メソッドにはいくつかのオーバーロードがあり、それらを使用してさまざまな方法でコントロールの場所を指定できます。
 
- 実行時にドキュメントに Windows フォーム コントロールを追加するときに ドキュメントが閉じられたときに、ドキュメント コントロールは保持されません。 次にドキュメントを開くときに、コントロールを再作成できます。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+ 実行時にドキュメントに Windows フォーム コントロールを追加するときに ドキュメントが閉じられたときに、ドキュメント コントロールは保持されません。 次にドキュメントを開くときに、コントロールを再作成できます。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
 
 ### <a name="to-add-a-windows-forms-control-at-runtime"></a>実行時に Windows フォーム コントロールを追加するには
 
@@ -116,9 +116,9 @@ ms.locfileid: "56597999"
 ##  <a name="runtimeaddin"></a> VSTO アドインにおける実行時にコントロールを追加します。
  実行時に開いている文書をプログラムで Windows フォーム コントロールを追加できます。 まず、開いているドキュメントかワークシートに基づいたホスト項目を生成します。 次に、Word では、新しいホスト項目の <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> プロパティのメソッドを使用します。 Excel では、新しいホスト項目の <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> プロパティのメソッドを使用します。 各メソッドにはいくつかのオーバーロードがあり、それらを使用してさまざまな方法でコントロールの場所を指定できます。
 
- 実行時にドキュメントに Windows フォーム コントロールを追加するときに ドキュメントが閉じられたときに、ドキュメント コントロールは保持されません。 次にドキュメントを開くときに、コントロールを再作成できます。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+ 実行時にドキュメントに Windows フォーム コントロールを追加するときに ドキュメントが閉じられたときに、ドキュメント コントロールは保持されません。 次にドキュメントを開くときに、コントロールを再作成できます。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
 
- VSTO アドイン プロジェクトでホスト項目の生成の詳細については、次を参照してください。[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)します。
+ VSTO アドイン プロジェクトでホスト項目の生成の詳細については、[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)を参照してください。
 
 ### <a name="to-add-a-windows-forms-control-at-runtime"></a>実行時に Windows フォーム コントロールを追加するには
 

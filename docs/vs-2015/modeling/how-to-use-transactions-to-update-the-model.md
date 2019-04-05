@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 50f9d491ed52098edb8a8ccd1a7b2f9c8834447e
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49236861"
@@ -75,12 +75,12 @@ catch (Exception ex)
 ## <a name="transactions-do-not-affect-non-store-objects"></a>トランザクションは、Store 以外のオブジェクトには影響しません  
  トランザクションには、ストアの状態のみによって制御されます。 ファイル、データベース、または DSL 定義の外部の通常の型で宣言されているオブジェクトなどの外部のアイテムに対する部分の変更が元に戻すことはできません。  
   
- 場合は、例外がこのような変更をストアと一貫性のないは、例外ハンドラーでその可能性を処理する必要があります。 外部リソースが、オブジェクトの保存と同期を保つことを確認する方法の 1 つでは、ストア内の要素にイベント ハンドラーを使用して各外部オブジェクトを結合します。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
+ 場合は、例外がこのような変更をストアと一貫性のないは、例外ハンドラーでその可能性を処理する必要があります。 外部リソースが、オブジェクトの保存と同期を保つことを確認する方法の 1 つでは、ストア内の要素にイベント ハンドラーを使用して各外部オブジェクトを結合します。 詳細については、[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)を参照してください。  
   
 ## <a name="rules-fire-at-the-end-of-a-transaction"></a>トランザクションの最後にルールの起動  
  トランザクションの最後に、トランザクションが破棄される前に、ストア内の要素に適用される規則が発生します。 各ルールは、変更されたモデル要素に適用される方法です。 たとえば、「修正」のモデル要素が変更されたときに、図形の状態を更新する規則があるし、モデル要素が作成されるときに図形を作成します。 指定された起動順序はありません。 ルールによって行われた変更は、別のルールを起動できます。  
   
- 独自のルールを定義することができます。 ルールの詳細については、次を参照してください。[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)します。  
+ 独自のルールを定義することができます。 ルールの詳細については、[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)を参照してください。  
   
  ルールは、元に戻す、やり直し操作、または rollback コマンドの後に起動されません。  
   

@@ -1,25 +1,20 @@
 ---
 title: XML スキーマ デザイナーのワークスペース |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ae20cd6a2eb8a4e3d8c1869cc4a0c707ccdf6de2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f65312776f56fc2c96f2da7b528cc8cc9d339fb2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240956"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962542"
 ---
 # <a name="xml-schema-designer-workspace"></a>XML スキーマ デザイナーのワークスペース
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ XML スキーマ デザイナー (XSD デザイナー) は、XML スキーマを
   
 -   スタート ビューのウォーターマークか、空白のコンテンツ モデル ビューまたはグラフ ビューのウォーターマーク。  
   
--   ホット キー: スタート ビューに切り替えるには Ctrl + 1、グラフ ビューに切り替えるには Ctrl + 2、およびコンテンツ モデル ビューに切り替えるには Ctrl + 3。  
+-   ホット キー:CTRL + スタート ビュー、CTRL +、グラフ ビューおよび ctrl キーを 2 + 3 コンテンツ モデル ビューの 1。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -58,6 +53,3 @@ XML スキーマ デザイナー (XSD デザイナー) は、XML スキーマを
 -   [グラフ ビュー](../xml-tools/graph-view.md)  
   
 -   [コンテンツ モデル ビュー](../xml-tools/content-model-view.md)
-
-
-

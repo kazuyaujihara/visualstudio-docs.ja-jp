@@ -242,7 +242,7 @@ ms.locfileid: "56683143"
 #### <a name="color-and-accessibility"></a>色とアクセシビリティ
  Visual Studio のコンプライアンス ガイドラインでは、製品のすべてのアイコンの色とコントラストのアクセシビリティ要件に合格する必要があります。 これはアイコンの反転によって実現しをデザインするときに注意する必要が製品のプログラムで反転されますある。
 
- Visual Studio のアイコンの色の使用に関する詳細については、次を参照してください。[イメージの色を使用して](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages)します。
+ Visual Studio のアイコンの色の使用に関する詳細については、[イメージの色を使用して](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages)を参照してください。
 
 ##  <a name="BKMK_UsingColorInImages"></a> イメージの色を使用してください。
 

@@ -1,25 +1,20 @@
 ---
 title: 'チュートリアル: XSLT Profiler |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229451"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963153"
 ---
 # <a name="walkthrough-xslt-profiler"></a>チュートリアル: XSLT プロファイラー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,11 +77,11 @@ XSLT プロファイラーは、詳細な XSLT パフォーマンス レポー�
   
 2.  **呼び出し元/呼び出し先**ビューには、次の 3 つの部分。  
   
-    -   **関数を呼び出した**: 特定の関数を呼び出したすべての関数は、ビューの最上部に一覧表示されます。  
+    -   **関数を呼び出した**:特定の関数を呼び出したすべての関数は、ビューの最上部に一覧表示されます。  
   
-    -   **現在の関数**: 呼び出された特定の関数がビューの中央部分に記載されています。  
+    -   **現在の関数**:呼び出された特定の関数は、ビューの中央部に表示されます。  
   
-    -   **関数によって呼び出された**: 特定の関数によって呼び出されたすべての関数は、ビューの下部に一覧表示されます。  
+    -   **関数によって呼び出された**:特定の関数によって呼び出されたすべての関数は、ビューの下部に一覧表示されます。  
   
 3.  `SyncToNavigator` という関数がビューの中央部に表示されている場合、`SyncToNavigator` を呼び出したすべての関数がビューの最上部に表示され、`SyncToNavigator` によって呼び出されたすべての関数がビューの最下部に表示されます。  
   
@@ -116,6 +111,3 @@ XSLT プロファイラーは、詳細な XSLT パフォーマンス レポー�
   
 ## <a name="see-also"></a>関連項目  
  [チュートリアル: XSLT 階層の使用](../xml-tools/walkthrough-using-xslt-hierarchy.md)
-
-
-

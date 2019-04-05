@@ -29,7 +29,7 @@ ms.locfileid: "55913380"
 
 3. [CommandSet クラスにメソッドを記述](#CommandSet)コマンドを表示して、定義を実行するコマンドにします。
 
-   サンプルについては、次を参照してください。、 [Visualization and Modeling SDK の web サイト](http://go.microsoft.com/fwlink/?LinkID=185579)します。
+   サンプルについては、、 [Visualization and Modeling SDK の web サイト](http://go.microsoft.com/fwlink/?LinkID=185579)を参照してください。
 
 > [!NOTE]
 > [切り取り]、[貼り付け]、[すべて選択]、[印刷] など、既存の一部のコマンドの動作を変更することもできます。このためには、CommandSet.cs でメソッドをオーバーライドします。 詳細については、「[方法 :標準メニュー コマンドを修正](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)します。
@@ -48,14 +48,14 @@ Managed Extension Framework (MEF) には、図のメニューのメニュー コ
 
 4. コマンドを 1 つだけ定義する。
 
-   上記に該当しない場合は、MEF 手法を使用してコマンドを定義することを検討してください。 詳細については、次を参照してください。 [MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)します。
+   上記に該当しない場合は、MEF 手法を使用してコマンドを定義することを検討してください。 詳細については、[MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)を参照してください。
 
 ##  <a name="VSCT"></a> Commands.Vsct でコマンドを宣言します。
  メニュー コマンドは、DslPackage\Commands.vsct で宣言されます。 これらの定義では、メニュー項目のラベルと、メニューでのメニュー項目の表示位置が指定されます。
 
  編集するファイル Commands.vsct は、ディレクトリ内にある複数の .h ファイルから定義をインポートする*Visual Studio SDK インストール パス*\VisualStudioIntegration\Common\Inc します。また、DSL 定義から生成される GeneratedVsct.vsct をインクルードします。
 
- .Vsct ファイルの詳細については、次を参照してください。 [Visual Studio Command Table (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
+ .Vsct ファイルの詳細については、[Visual Studio Command Table (を参照してください。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
 
 ### <a name="to-add-the-command"></a>コマンドを追加するには
 
@@ -90,7 +90,7 @@ Managed Extension Framework (MEF) には、図のメニューのメニュー コ
     > [!NOTE]
     > 各ボタンとグループは、GUID と整数の ID によって識別されます。 同じ GUID を使用して複数のグループとボタンを作成できます。 ただし、それぞれに異なる ID が必要です。 GUID 名と ID 名は、実際の Guid と数値 Id に変換されます、`<Symbols>`ノード。
 
-3.  ドメイン固有言語のコンテキストでのみコマンドが読み込まれるようにするため、コマンドに表示制限を追加します。 詳細については、次を参照してください。 [VisibilityConstraints 要素](../extensibility/visibilityconstraints-element.md)します。
+3.  ドメイン固有言語のコンテキストでのみコマンドが読み込まれるようにするため、コマンドに表示制限を追加します。 詳細については、[VisibilityConstraints 要素](../extensibility/visibilityconstraints-element.md)を参照してください。
 
      このためには、`CommandTable` 要素内で `Commands` 要素の後に以下の要素を追加します。
 

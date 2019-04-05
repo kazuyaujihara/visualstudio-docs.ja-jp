@@ -23,9 +23,9 @@ ms.locfileid: "58324501"
   Visual Studio の実験用インスタンスまたは通常のインスタンスで、SharePoint ツールの拡張機能をデバッグできます。 拡張機能の動作をトラブルシューティングする必要がある場合は、レジストリ値を変更して、追加のエラー情報を表示し、Visual Studio での SharePoint コマンドの実行方法を構成することもできます。
 
 ## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>Visual Studio の実験用インスタンスで拡張機能をデバッグします。
- Visual Studio SDK と呼ばれる他の Visual Studio インスタンスを提供するテストされていない拡張機能によって不慮の破損から Visual Studio 開発環境を保護するために、*実験用インスタンス*、使用できます。インストールし、拡張機能をテストします。 新しい拡張機能は Visual Studio の通常のインスタンスを使用して開発しますが、デバッグと実行は実験用インスタンスで行います。 詳細については、次を参照してください。 [、実験用インスタンス](../extensibility/the-experimental-instance.md)します。
+ Visual Studio SDK と呼ばれる他の Visual Studio インスタンスを提供するテストされていない拡張機能によって不慮の破損から Visual Studio 開発環境を保護するために、*実験用インスタンス*、使用できます。インストールし、拡張機能をテストします。 新しい拡張機能は Visual Studio の通常のインスタンスを使用して開発しますが、デバッグと実行は実験用インスタンスで行います。 詳細については、[、実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
 
- VSIX プロジェクトを使用して拡張機能を配置し、その VSIX プロジェクトをソリューションのスタートアップ プロジェクトにする場合は、ソリューションをデバッグするときに、実験用インスタンスで拡張機能が自動的にインストールされて実行されます。 スタートアップ プロジェクトとは、複数のプロジェクトを含むソリューションをデバッグするときに開始されるプロジェクトです。 VSIX プロジェクトを使用して、拡張機能をデプロイする方法の詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+ VSIX プロジェクトを使用して拡張機能を配置し、その VSIX プロジェクトをソリューションのスタートアップ プロジェクトにする場合は、ソリューションをデバッグするときに、実験用インスタンスで拡張機能が自動的にインストールされて実行されます。 スタートアップ プロジェクトとは、複数のプロジェクトを含むソリューションをデバッグするときに開始されるプロジェクトです。 VSIX プロジェクトを使用して、拡張機能をデプロイする方法の詳細については、[Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
  Visual Studio の実験用インスタンスでさまざまな種類の拡張機能をデバッグする方法を示す例については、次のチュートリアルを参照してください。
 
@@ -115,7 +115,7 @@ ms.locfileid: "58324501"
 
 |[値]|説明|
 |-----------|-----------------|
-|EnableDiagnostics|診断メッセージが表示されるかどうかを指定する REG_DWORD、**出力**ウィンドウ。<br /><br /> 診断メッセージを表示する場合は、この値を 1 に設定します。 メッセージを表示しないようにするには、この値を 0 に設定するか、または削除します。<br /><br /> メッセージ ログを書き込む、**出力**ウィンドウ、SharePoint からツールの拡張機能、SharePoint プロジェクト サービスを使用します。 詳細については、次を参照してください。 [SharePoint プロジェクト サービスを使用して、](../sharepoint/using-the-sharepoint-project-service.md)します。|
+|EnableDiagnostics|診断メッセージが表示されるかどうかを指定する REG_DWORD、**出力**ウィンドウ。<br /><br /> 診断メッセージを表示する場合は、この値を 1 に設定します。 メッセージを表示しないようにするには、この値を 0 に設定するか、または削除します。<br /><br /> メッセージ ログを書き込む、**出力**ウィンドウ、SharePoint からツールの拡張機能、SharePoint プロジェクト サービスを使用します。 詳細については、[SharePoint プロジェクト サービスを使用して、](../sharepoint/using-the-sharepoint-project-service.md)を参照してください。|
 
  拡張機能に SharePoint コマンドが含まれる場合は、コマンドのトラブルシューティングに役立つ追加の値を作成して設定できます。 それらの値を次の表に示します。
 

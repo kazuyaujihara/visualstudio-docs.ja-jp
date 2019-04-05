@@ -1,14 +1,9 @@
 ---
 title: '方法: メニュー項目を使用した警告の抑制 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - warnings, suppressing
 - code analysis, suppressing warnings
@@ -17,17 +12,17 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c756a5ab6516d78f5370622555898c98658e8b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83fd93d2e1e2e5d99f7ea8eca9f5de4ce1b4c7f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211788"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963350"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>方法: メニュー項目を使用して警告を抑制する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-注]
+注意]
 >  ソース内抑制は web サイト プロジェクトのサポートされていません。  
   
  コード分析 ウィンドウを使用して、コード分析の警告を抑制することができます。 警告の抑制は、無効にすることと同じではありません。 警告を抑制する場合は、違反の特定のインスタンスにのみ適用されます。 エラー一覧 ウィンドウで同じ警告の他の違反も報告されます。  
@@ -48,6 +43,3 @@ ms.locfileid: "49211788"
   
 > [!NOTE]
 >  グローバル抑制ファイル内のターゲットがない抑制が表示されます。
-
-
-

@@ -26,7 +26,7 @@ ms.locfileid: "56683104"
 
 ### <a name="create-a-visual-studio-package-project"></a>Visual Studio パッケージ プロジェクトを作成します。
 
-1.  という名前の VSIX プロジェクトを作成する`FileFilter`します。 という名前のカスタム コマンド項目テンプレートを追加**FileFilter**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
+1.  という名前の VSIX プロジェクトを作成する`FileFilter`します。 という名前のカスタム コマンド項目テンプレートを追加**FileFilter**します。 詳細については、[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。
 
 2.  参照を追加`System.ComponentModel.Composition`と`Microsoft.VisualStudio.Utilities`します。
 

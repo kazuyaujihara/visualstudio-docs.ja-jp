@@ -1,4 +1,4 @@
-﻿---
+---
 title: 自動機能の中断
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -37,7 +37,7 @@ Visual Studio では、メモリ不足の状態を検出すると、安定性を
 
 ## <a name="improve-visual-studio-performance"></a>Visual Studio のパフォーマンスを向上させる
 
-ヒントやテクニックが大規模なソリューションまたはメモリ不足の状態を扱うときは、Visual Studio のパフォーマンスを向上させる方法については、次を参照してください。[大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)します。
+ヒントやテクニックが大規模なソリューションまたはメモリ不足の状態を扱うときは、Visual Studio のパフォーマンスを向上させる方法については、[大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)を参照してください。
 
 ## <a name="full-solution-analysis-suspended"></a>完全ソリューション解析を中断
 

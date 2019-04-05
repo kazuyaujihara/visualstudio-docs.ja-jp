@@ -15,7 +15,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 9e5546b07ef9917590daa573efd99377339412c7
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51793556"
@@ -58,7 +58,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>コマンドラインから Visual Studio SDK をインストールします。  
- 使用して、コマンドラインから VSSDK をインストールすることができます、 **/InstallSelectableItems** Visual Studio インストーラーに切り替えます。 インストーラーでのコマンド ライン パラメーターの使用に関する詳細については、次を参照してください。 [Visual Studio 2015 をインストールする](../install/install-visual-studio-2015.md)します。  
+ 使用して、コマンドラインから VSSDK をインストールすることができます、 **/InstallSelectableItems** Visual Studio インストーラーに切り替えます。 インストーラーでのコマンド ライン パラメーターの使用に関する詳細については、[Visual Studio 2015 をインストールする](../install/install-visual-studio-2015.md)を参照してください。  
   
  Visual Studio 2015 Community インストーラーをサイレント モードで使用する VSSDK のインストール方法を次に示します。  
   

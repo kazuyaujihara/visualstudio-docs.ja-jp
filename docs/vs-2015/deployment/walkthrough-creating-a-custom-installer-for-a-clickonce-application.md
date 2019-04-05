@@ -1,14 +1,9 @@
 ---
-title: 'チュートリアル: ClickOnce アプリケーションのカスタム インストーラーの作成 |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: ClickOnce アプリケーションのカスタム インストーラーを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 16686b0bf53f9e1358d96a7abcfe95f8ed6aac82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 11ce31ce0a128114e3751dd412d7c3a0ea36df25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977267"
 ---
-# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションのカスタム インストーラーの作成
+# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションのカスタム インストーラーを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 .Exe ファイルに基づく ClickOnce アプリケーションをサイレント モードでインストールされ、カスタム インストーラーによって更新できます。 カスタム インストーラーは、セキュリティとメンテナンス操作のためのカスタム ダイアログ ボックスを含め、インストール中に、カスタムのユーザー エクスペリエンスを実装できます。 インストール操作を実行するカスタム インストーラーを使用して、<xref:System.Deployment.Application.InPlaceHostingManager>クラス。 このチュートリアルでは、ClickOnce アプリケーションをサイレント インストールするカスタム インストーラーを作成する方法を示します。  
@@ -42,7 +37,7 @@ ms.locfileid: "49222769"
   
 1.  ClickOnce アプリケーションでは、System.Deployment および System.Windows.Forms への参照を追加します。  
   
-2.  アプリケーションに新しいクラスを追加し、任意の名前を指定します。 このチュートリアルでは、名前`MyInstaller`します。  
+2.  アプリケーションに新しいクラスを追加し、任意の名前を指定します。 このチュートリアルでは、名前 `MyInstaller` を使用します。  
   
 3.  次の追加`Imports`または`using`ステートメントを新しいクラスの先頭にします。  
   
@@ -85,7 +80,4 @@ ms.locfileid: "49222769"
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)   
- [\<entryPoint > 要素](../deployment/entrypoint-element-clickonce-application.md)
-
-
-
+ [\<entryPoint> 要素](../deployment/entrypoint-element-clickonce-application.md)

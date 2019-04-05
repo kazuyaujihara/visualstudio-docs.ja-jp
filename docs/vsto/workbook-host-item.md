@@ -35,7 +35,7 @@ ms.locfileid: "56625260"
  ドキュメント レベルのプロジェクトには、プロジェクト内のブックを表す既定の <xref:Microsoft.Office.Tools.Excel.Workbook> ホスト項目があります。 VSTO アドイン プロジェクトで生成できる<xref:Microsoft.Office.Tools.Excel.Workbook>実行時に項目をホストします。
 
 ## <a name="understand-the-workbook-host-item-in-document-level-projects"></a>ドキュメント レベルのプロジェクトでの workbook ホスト項目を理解します。
- プロジェクトのブックにアクセスするには、 `ThisWorkbook` クラスを使用します。 `ThisWorkbook` クラスによって、 <xref:Microsoft.Office.Tools.Excel.Workbook> ホスト項目のメンバーにアクセスし、ブックが開かれたり閉じられたりしたときにコードを実行するなど、カスタマイズの基本的なタスクを実行できます。 詳細については、次を参照してください。[ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)します。
+ プロジェクトのブックにアクセスするには、 `ThisWorkbook` クラスを使用します。 `ThisWorkbook` クラスによって、 <xref:Microsoft.Office.Tools.Excel.Workbook> ホスト項目のメンバーにアクセスし、ブックが開かれたり閉じられたりしたときにコードを実行するなど、カスタマイズの基本的なタスクを実行できます。 詳細については、[ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)を参照してください。
 
  `ThisWorkbook` クラスには、プロジェクトでコードの記述を開始できる場所が用意されています。 このクラスには、Excel のプライマリ相互運用機能アセンブリの <xref:Microsoft.Office.Interop.Excel.Workbook> オブジェクトと同じプロパティ、メソッド、イベントがすべて用意されているため、 `ThisWorkbook` を使用して Excel のオブジェクト モデルにアクセスすることもできます。 詳細については、次の [Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)を参照してください。
 
@@ -52,7 +52,7 @@ ms.locfileid: "56625260"
 >  Visual Studio の Office 開発ツールでは、共有ブックはサポートされません。
 
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>VSTO アドイン プロジェクトでのブック ホスト項目を理解します。
- VSTO アドイン プロジェクトで生成することができます、<xref:Microsoft.Office.Tools.Excel.Workbook>は Excel で開いているすべてのブックの実行時にホスト項目。 <xref:Microsoft.Office.Tools.Excel.Workbook> ホスト項目を生成するには、`GetVstoObject` メソッドを使用します。 詳細については、次を参照してください。[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)します。
+ VSTO アドイン プロジェクトで生成することができます、<xref:Microsoft.Office.Tools.Excel.Workbook>は Excel で開いているすべてのブックの実行時にホスト項目。 <xref:Microsoft.Office.Tools.Excel.Workbook> ホスト項目を生成するには、`GetVstoObject` メソッドを使用します。 詳細については、[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)

@@ -30,7 +30,7 @@ ms.locfileid: "56602261"
 >  [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは、VSTO アドインとソリューションに比べて小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML といった、ほぼすべての Web プログラミング テクノロジを使用して、それらをビルドすることができます。
 
 ## <a name="office-solutions-programming-model"></a>Office ソリューションのプログラミング モデル
- Office オブジェクト モデルは、プログラミングできるさまざまなオブジェクトを公開します。 ユーザーはマネージド コードを使用して Office ソリューションをプログラミングするたびに、Office プライマリ相互運用機能アセンブリの型を使用するコードを記述します。 また、Visual Studio の Office プロジェクト テンプレートを使用して作成したソリューションでは、プロジェクトに生成されたクラスに直接コードを記述します。 詳細については、次を参照してください。 [Office ソリューションでコードを記述](../vsto/writing-code-in-office-solutions.md)します。
+ Office オブジェクト モデルは、プログラミングできるさまざまなオブジェクトを公開します。 ユーザーはマネージド コードを使用して Office ソリューションをプログラミングするたびに、Office プライマリ相互運用機能アセンブリの型を使用するコードを記述します。 また、Visual Studio の Office プロジェクト テンプレートを使用して作成したソリューションでは、プロジェクトに生成されたクラスに直接コードを記述します。 詳細については、[Office ソリューションでコードを記述](../vsto/writing-code-in-office-solutions.md)を参照してください。
 
 ## <a name="program-different-types-of-office-solutions"></a>Office ソリューションのさまざまな種類のプログラム
  作成しているソリューションの種類は、プロジェクトで使用できる機能を決定します。 たとえば、デザイン時に Visual Studio の *[ツールボックス]* から項目をドラッグして、Windows フォーム コントロールおよび拡張された Office コントロール ( **ホスト コントロール** という名前) をドキュメント レベルのカスタマイズに追加することができます。 ただし、VSTO アドインを開発している場合は、コードを記述することで、これらのコントロールのみを実行時にドキュメントに追加できます。
@@ -43,7 +43,7 @@ ms.locfileid: "56602261"
 
 - [Office UI のカスタマイズ](../vsto/office-ui-customization.md)します。
 
-  Office ソリューションとプロジェクトを作成するための手順を計画に役立つ背景情報は、次を参照してください。[デザイン Office ソリューションの作成と](../vsto/designing-and-creating-office-solutions.md)します。
+  Office ソリューションとプロジェクトを作成するための手順を計画に役立つ背景情報は、[デザイン Office ソリューションの作成と](../vsto/designing-and-creating-office-solutions.md)を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 

@@ -1,14 +1,9 @@
 ---
 title: 使用の並列スタック ウィンドウ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 602fdd683ecb1b3244289c305e4fc850d337b03e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977325"
 ---
 # <a name="using-the-parallel-stacks-window"></a>[並列スタック] ウィンドウの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +86,7 @@ ms.locfileid: "51792035"
 |[ソース コードへ移動]|ユーザーが右クリックしたスタック フレームに対応するソース コード内の位置に移動します。|  
 |[フレームに切り替え]|[呼び出し履歴] ウィンドウの対応するメニュー コマンドと同じです。 ただし、[並列スタック] では、複数のフレームが 1 つのメソッドのコンテキストに対応する場合があります。 そのため、このメニュー項目には、それぞれ特定のスタック フレームを表すサブメニューがあります。 現在のスレッドのスタック フレームが 1 つだけの場合は、そのスタック フレームに対応するメニューが選択されます。|  
 |[逆アセンブルを表示]|ユーザーが右クリックしたスタック フレームに対応する逆アセンブル ウィンドウ内の位置に移動します。|  
-|外部コードの表示|外部コードの表示と非表示を切り替えます。|  
+|[外部コードの表示]|外部コードの表示と非表示を切り替えます。|  
 |[16 進数で表示]|10 進数と 16 進数の表示を切り替えます。|  
 |シンボルの読み込み情報|対応するダイアログ ボックスを表示します。|  
 |[シンボルの設定]|対応するダイアログ ボックスを表示します。|  
@@ -123,13 +118,10 @@ ms.locfileid: "51792035"
  新しいスタック フレームに切り替えると、そのメソッドが現在のメソッドになり、新しいメソッドのすべての呼び出し元と呼び出し先がウィンドウに表示されます。 これにより、そのメソッドが呼び出し履歴に含まれているかどうかに応じて、一部のスレッドの表示と非表示が切り替わる場合があります。 スタック ビューに戻るには、ツール バーの [メソッド ビュー] ボタンをもう一度クリックします。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: 並行アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [チュートリアル: 並列アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [デバッガーの基本事項](../debugger/debugger-basics.md)   
  [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)   
  [並列プログラミング](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [タスク ウィンドウを使用します。](../debugger/using-the-tasks-window.md)   
- [チュートリアル: 並行アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [チュートリアル: 並列アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task クラス](../extensibility/debugger/task-class-internal-members.md)
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: 応答ファイルでインストールを自動化する
 description: Visual Studio のインストールの自動化に役立つ JSON 応答ファイルを作成する方法について説明します
-ms.date: 08/14/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7547a6bb4670640733a64e7a60bfc92076df1460
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: eb822a275f55b8c0f833f0c284aba2fd663a27fd
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982975"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790577"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>応答ファイルの設定を定義する方法
 
@@ -48,6 +50,8 @@ Visual Studio セットアップをレイアウト フォルダーから実行�
 
 レイアウトの基本 `response.json` ファイルは、次の例のようになります。ただし、インストールする製品とチャネルの値は異なります。
 
+::: moniker range="vs-2017"
+
 ```json
 {
   "installChannelUri": ".\\ChannelManifest.json",
@@ -58,11 +62,29 @@ Visual Studio セットアップをレイアウト フォルダーから実行�
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise"
+}
+```
+
+::: moniker-end
+
 レイアウトを作成または更新すると、response.template.json ファイルも作成されます。  このファイルには、使用できるワークロード、コンポーネント、言語 ID がすべて含まれています。  このファイルは、カスタム インストールに含められるものすべてのテンプレートとして提供されます。  管理者は、このファイルを元にカスタム応答ファイルを作成できます。  インストール対象でないものの ID を削除して、自分の応答ファイルに保存するだけです。  response.template.json をカスタマイズしないでください。レイアウトが更新されるたびに変更内容が失われます。
 
 ## <a name="example-layout-response-file-content"></a>レイアウト応答ファイルの内容の例
 
 次の例では、Visual Studio Enterprise、6 つの共通ワークロード、コンポーネントがインストールされます。UI 言語として英語とフランス語の両方がインストールされます。 これをテンプレートとして利用できます。ワークロードとコンポーネントを自分がインストールするものに変更してください。
+
+::: moniker range="vs-2017"
 
 ```json
 {
@@ -94,6 +116,43 @@ Visual Studio セットアップをレイアウト フォルダーから実行�
     ]
 }
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+  "installPath": "C:\\VS2019",
+  "quiet": false,
+  "passive": false,
+  "includeRecommended": true,
+  "norestart": false,
+
+  "addProductLang": [
+    "en-US",
+    "fr-FR"
+    ],
+
+    "add": [
+        "Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "Microsoft.VisualStudio.Workload.Data",
+        "Microsoft.VisualStudio.Workload.NativeDesktop",
+        "Microsoft.VisualStudio.Workload.NetWeb",
+        "Microsoft.VisualStudio.Workload.Office",
+        "Microsoft.VisualStudio.Workload.Universal",
+        "Component.GitHub.VisualStudio"
+    ]
+}
+```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

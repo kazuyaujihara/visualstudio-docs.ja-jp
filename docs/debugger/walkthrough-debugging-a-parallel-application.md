@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ecb3d7658cc89207551af7df875eba0b2c1e4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e9a214234d2382fe9cb950ed294bf8aa807b69da
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709409"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790707"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>チュートリアル: Visual Studio での並列アプリケーションのデバッグ (C#、Visual Basic、C++)
 
@@ -62,23 +62,39 @@ ms.locfileid: "56709409"
 
 #### <a name="to-create-the-sample-project"></a>サンプル プロジェクトを作成するには
 
-1. Visual Studio で、**[ファイル]** メニューの **[新規作成]** をポイントし、**[プロジェクト]** をクリックします。
+1. Visual Studio を起動し、新しいプロジェクトを作成します。
 
-2. いずれかを選択**Visual c#**、 **Visual Basic**、または**Visual C**します。 マネージド言語については、フレームワークのボックスに [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] が表示されていることを確認します。
+    ::: moniker range=">=vs-2019"
+    キーを押して**Esc**開始 ウィンドウを閉じます。 型**Ctrl + Q**を検索ボックスを開き、「**コンソール**(または**c++**)、選択**テンプレート**、し。
 
-3. **Windows デスクトップ**、選択**コンソール アプリケーション**順にクリックします**OK**します。 既定のデバッグ構成をそのまま使用します。
+    - C#または Visual Basic では、選択**新しいコンソール アプリ (.NET Framework) プロジェクトの作成**いずれかのC#または Visual Basic です。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    - C++ では、選択**新しいコンソール アプリ プロジェクトの作成**c++ です。 表示されたダイアログ ボックスで、**[作成]** を選択します。
 
-4. プロジェクトで .cpp、.cs、または .vb コード ファイルを開きます。 その内容を削除して、空のコード ファイルを作成します。
+    次に、名前を入力または既定の名前を使用し、 をクリックして**作成**です。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 左側のウィンドウで、**新しいプロジェクト** ダイアログ ボックスで、次を選択します。
 
-5. 空のコード ファイルに、選択した言語の次のコードを貼り付けます。
+    - C#アプリ  **Visual C#** 、選択**Windows デスクトップ**、中央のペインの **コンソール アプリ (.NET Framework)** します。
+    - Visual Basic アプリでは、 **Visual Basic**、選択**Windows デスクトップ**、中央のペインの **コンソール アプリ (.NET Framework)** します。
+    - C++ アプリでは、 **Visual C**、選択**Windows デスクトップ**、および選び、 **Windows コンソール アプリケーション**します。
+
+    次に、名前を入力または既定の名前を使用し、 をクリックして**OK**します。
+    ::: moniker-end
+
+    **[コンソール アプリ]** プロジェクト テンプレートが表示されない場合は、**[ツール]** > **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 **[.NET デスクトップ開発]** ワークロードまたは **[C++ によるデスクトップ開発]** ワークロードを選択し、**[変更]** を選択します。
+
+1. プロジェクトで .cpp、.cs、または .vb コード ファイルを開きます。 その内容を削除して、空のコード ファイルを作成します。
+
+1. 空のコード ファイルに、選択した言語の次のコードを貼り付けます。
 
    [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-6. **[ファイル]** メニューの **[すべてを保存]** をクリックします。
+1. **[ファイル]** メニューの **[すべてを保存]** をクリックします。
 
-7. **[ビルド]** メニューで、**[ソリューションのリビルド]** をクリックします。
+1. **[ビルド]** メニューで、**[ソリューションのリビルド]** をクリックします。
 
     このコードには、`Debugger.Break` の呼び出しが 4 つあります (C++ サンプルの場合は `DebugBreak`)。したがって、ブレークポイントを挿入する必要はありません。そのまま実行するだけで、デバッガーでアプリケーションの実行が 4 回中断されます。
 

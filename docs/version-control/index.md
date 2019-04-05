@@ -2,7 +2,7 @@
 layout: LandingPage
 title: バージョン管理
 description: Visual Studio でバージョン コントロールを始めるためのガイド
-keywords: 'VSTS, TFS, バージョン コントロール'
+keywords: VSTS, TFS, バージョン コントロール
 author: steved0x
 ms.manager: jillfra
 ms.author: sdanie
@@ -11,7 +11,13 @@ ms.topic: landing-page
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
-  - multiple
+- multiple
+ms.openlocfilehash: 97facaed877030dca4a6a2257147c4d92201ab55
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322705"
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio でのバージョン コントロール
 

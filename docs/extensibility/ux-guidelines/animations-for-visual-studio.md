@@ -65,7 +65,7 @@ Visual Studio IDE 間の一貫性とわかりやすいアニメーションの�
 
 -   点滅の停止にするために点滅通知に応答するユーザーを強制するように、状態をリセットするユーザーの介入を必要とするアニメーションを使用しないでください。 任意の方法で操作するには、それらを無視するための十分な必要があります。
 
-これらのベスト プラクティスのアプリケーションの詳細については、次を参照してください。[アニメーション パターン](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns)します。
+これらのベスト プラクティスのアプリケーションの詳細については、[アニメーション パターン](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns)を参照してください。
 
 ### <a name="animation-metrics"></a>アニメーションのメトリック
 

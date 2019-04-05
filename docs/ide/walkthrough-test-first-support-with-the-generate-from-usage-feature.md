@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943039"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355631"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>チュートリアル: 使用法から生成機能のテスト ファースト開発
 
@@ -34,15 +34,19 @@ ms.locfileid: "55943039"
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Windows クラス ライブラリ プロジェクトとテスト プロジェクトを作成する
 
-1. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] または [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] で、新しい **Windows クラス ライブラリ** プロジェクトを作成します。 使用している言語に応じて `GFUDemo_VB` または `GFUDemo_CS`という名前を付けます。
+1. C# または Visual Basic で、新しい **Windows クラス ライブラリ** プロジェクトを作成します。 使用している言語に応じて `GFUDemo_VB` または `GFUDemo_CS`という名前を付けます。
 
-2. **ソリューション エクスプローラー**の上部にあるソリューション アイコンを右クリックし、**[追加]** を選択してから **[新しいプロジェクト]** を選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左ペインで、**[テスト]** を選択します。
+2. **ソリューション エクスプローラー**の上部にあるソリューション アイコンを右クリックし、**[追加]** > **[新しいプロジェクト]** の順に選択します。
 
-3. 中央のペインで、**[単体テスト プロジェクト]** を選択し、`UnitTestProject1` の既定の名前をそのまま使用します。 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] で表示されるダイアログ ボックスを次の図に示します。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] のダイアログ ボックスも同様です。
+3. 新しい**単体テスト プロジェクト (.NET Framework)** プロジェクトを作成します。
 
-    ![[新しいテスト プロジェクト] ダイアログ](../ide/media/newproject_test.png)
+   ::: moniker range="vs-2017"
 
-4. **[OK]** を選択して、**[新しいプロジェクト]** ダイアログ ボックスを閉じます。
+   次の図では、C# テンプレート用の **[新しいプロジェクト]** ダイアログ ボックスを示しています。
+
+   ![[単体テスト プロジェクト] テンプレート](../ide/media/newproject_test.png)
+
+   ::: moniker-end
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>クラス ライブラリ プロジェクトに参照を追加する
 

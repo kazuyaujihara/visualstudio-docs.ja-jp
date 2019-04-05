@@ -1,25 +1,20 @@
 ---
 title: グラフィックス診断例 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f9c4a5f3396992b8bca2756b33b9b6f920d54733
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 52c1c2cc7304828e9ace7e9b5072d262a5395a1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776123"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974264"
 ---
 # <a name="graphics-diagnostics-examples"></a>グラフィックス診断例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,15 +24,15 @@ ms.locfileid: "51776123"
 ## <a name="capturing-graphics-information"></a>グラフィックス情報をキャプチャする  
  グラフィックス診断を使用してアプリケーションのレンダリングの問題を診断するには、まず実行中のアプリケーションからグラフィックス情報を取得する必要があります。 グラフィックス情報は、ローカルに実行しているアプリケーション、またはリモート コンピューターや他のデバイス上で実行しているアプリケーションからキャプチャできます。 これらのチュートリアルでは、アプリケーションから手動で、またはプログラムを使用してグラフィックス情報をキャプチャする方法を示しています。  
   
--   [チュートリアル: グラフィックス情報のキャプチャ](../debugger/walkthrough-capturing-graphics-information.md)  
+-   [チュートリアル: グラフィックス情報をキャプチャする](../debugger/walkthrough-capturing-graphics-information.md)  
   
 -   [チュートリアル: プログラムによるグラフィックス情報のキャプチャ](../debugger/walkthrough-capturing-graphics-information-programmatically.md)  
   
 ## <a name="use-graphics-diagnostics-with-an-arm-based-device"></a>ARM ベースのデバイスでのグラフィックス診断の使用  
- グラフィックス診断を使用すると、リモート デバッギングを使用することによって、ARM ベースのデバイス上で Direct3D アプリケーションをデバッグできます。 詳細については、次を参照してください。[方法: ARM デバイスでグラフィックス診断を使用して](../debugger/how-to-use-graphics-diagnostics-with-an-arm-device.md)します。  
+ グラフィックス診断を使用すると、リモート デバッギングを使用することによって、ARM ベースのデバイス上で Direct3D アプリケーションをデバッグできます。 詳細については、「[方法: ARM デバイスでグラフィックス診断を使用する](../debugger/how-to-use-graphics-diagnostics-with-an-arm-device.md)  
   
 ## <a name="playing-back-graphics-information"></a>グラフィックス情報を再生する  
- 実行中のアプリからグラフィックス情報をキャプチャした後、キャプチャしたイベントを再生してレンダリングの問題を診断することができます。 再生するには、開発用コンピューターを使用するか、接続されているリモート コンピューターまたはリモート デバイスを使用できます。 詳細については、次を参照してください。[方法: グラフィックス診断再生マシンを変更](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)します。  
+ 実行中のアプリからグラフィックス情報をキャプチャした後、キャプチャしたイベントを再生してレンダリングの問題を診断することができます。 再生するには、開発用コンピューターを使用するか、接続されているリモート コンピューターまたはリモート デバイスを使用できます。 詳細については、「[方法 :グラフィックス診断再生マシンを変更する](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)」を参照してください。  
   
 ## <a name="debugging-missing-objects"></a>不足しているオブジェクトをデバッグする  
  1 つ以上のオブジェクトの不足は、グラフィックス開発者が経験する最も一般的なレンダリングの問題の 1 つです。 さまざまな種類のエラーが原因でオブジェクトが見かけ上消滅する可能性があるため、このような問題の診断は困難な場合があります。 オブジェクトが欠落する一般的な原因としては、デバイス状態の誤った構成、オブジェクトのジオメトリ変換の問題、グラフィックス パイプラインの誤った構成が挙げられます。  
@@ -60,7 +55,4 @@ ms.locfileid: "51776123"
 ## <a name="debugging-compute-shaders"></a>計算シェーダーをデバッグする  
  グラフィックス診断を使用して、正しくない結果を生成する DirectCompute 計算シェーダー カーネルをデバッグできます。 DirectCompute を使用すると、GPU 計算能力を使用して、多数のデータ要素に対して並列に計算を実行できます。 問題の種類によっては、GPU を利用することにより、適切に最適化された CPU コードの何倍も高速に実行できる場合があります。 ただし、従来のデバッガーでは、GPU で実行されるコードを検出できません。 この種のコードをデバッグするには、多くの場合販売元固有の専用ツールが必要であり、Visual Studio と密接に統合されない場合があります。 計算シェーダーのデバッグを、さまざまな GPU にまたがってより一貫したものにするために、グラフィックス診断は、Direct3D レンダリング イベントに加えて DirectCompute の Dispatch イベントをキャプチャし、使い慣れたツールを使用して計算シェーダー コードの問題をデバッグできるようにします。  
   
- 計算シェーダーのバグによって引き起こされるシミュレーションの問題をデバッグする方法については、シナリオでは、次を参照してください。[チュートリアル: 計算シェーダーをデバッグするグラフィックス診断を使用して](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)します。
-
-
-
+ 計算シェーダーのバグによって引き起こされるシミュレーションの問題をデバッグする方法については、シナリオでは、次を参照してください。[チュートリアル。グラフィックス診断を使用して計算シェーダーをデバッグする](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)します。

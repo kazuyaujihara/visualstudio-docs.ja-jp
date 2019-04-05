@@ -25,7 +25,7 @@ ms.locfileid: "55929181"
 
 ## <a name="cause"></a>原因
 
-.NET アプリケーションで XSLT (Extensible Stylesheet Language Transformation) を安全ではない方法で実行すると、攻撃者に機密情報を漏えいする可能性のある、信頼されていない URI 参照がプロセッサにより解決されるおそれがあります。そのことは、サービス拒否攻撃やクロスサイト攻撃につながります。 詳細については、次を参照してください。 [XSLT セキュリティ Considerations(.NET Guide)](/dotnet/standard/data/xml/xslt-security-considerations)します。
+.NET アプリケーションで XSLT (Extensible Stylesheet Language Transformation) を安全ではない方法で実行すると、攻撃者に機密情報を漏えいする可能性のある、信頼されていない URI 参照がプロセッサにより解決されるおそれがあります。そのことは、サービス拒否攻撃やクロスサイト攻撃につながります。 詳細については、[XSLT セキュリティ Considerations(.NET Guide)](/dotnet/standard/data/xml/xslt-security-considerations)を参照してください。
 
 ## <a name="rule-description"></a>規則の説明
 

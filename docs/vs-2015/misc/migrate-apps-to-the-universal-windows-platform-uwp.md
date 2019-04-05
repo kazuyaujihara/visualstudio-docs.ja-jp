@@ -1,25 +1,20 @@
 ---
 title: アプリ、ユニバーサル Windows プラットフォーム (UWP) を移行する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791749"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972929"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>アプリを Universal Windows Platform (UWP) へ移行する
 Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows Phone 8.1 アプリ、またはユニバーサル Windows アプリ用の既存のプロジェクト ファイルに必要な変更を手動で加え、Visual Studio 2015 RTM で使用できるようにします。 (Windows アプリのプロジェクトと Windows Phone プロジェクトの両方を備えた Windows 8.1 ユニバーサル アプリがある場合、各プロジェクトを移行するための手順に従う必要があります。)  
@@ -36,7 +31,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
   これらのすべての変更を加えない場合は、新しいユニバーサル Windows プロジェクトに [既存のアプリを移植する方法](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) を参照してください。  
   
-##  <a name="MigrateCSharp"></a> ユニバーサル Windows プラットフォームを使用して C #/vb Windows ストア 8.1 または Windows Phone 8.1 アプリを移行します。  
+##  <a name="MigrateCSharp"></a> 移行、C#または VB Windows ストア 8.1 または Windows Phone 8.1 アプリ、ユニバーサル Windows プラットフォームを使用するには  
   
 #### <a name="migrate-your-cvb-project-files"></a>C#/VB プロジェクト ファイルを移行する  
   
@@ -93,11 +88,11 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
     1.  値を設定、 \<Platform > 要素を: **x86**します。  
   
-    2.  追加、 \<TargetPlatformIdentifier > 要素に値を設定および: **UAP**します。  
+    2.  追加、 \<TargetPlatformIdentifier > 要素その値を設定します。**UAP**します。  
   
     3.  既存の値の変更、 \<TargetPlatformVersion > 要素をインストールしたユニバーサル Windows プラットフォームのバージョンの値になります。 追加も、 \<TargetPlatformMinVersion > 要素と同じ値を指定します。  
   
-    4.  値を変更、 \<MinimumVisualStudioVersion > 要素を: **14**します。  
+    4.  値を変更、 \<MinimumVisualStudioVersion > 要素。**14**.  
   
     5.  置換、 \<ProjectTypeGuids > 要素の下に示すようにします。  
   
@@ -273,7 +268,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
     2.  ApplicationTypeRevision 要素の値を 8.1 から 10.0 に更新します。  
   
-    3.  値を変更、 \<MinimumVisualStudioVersion > 要素を: 14 です。  
+    3.  値を変更、 \<MinimumVisualStudioVersion > 要素。14.  
   
     4.  追加、 \<EnableDotNetNativeCompatibleProfile > 要素その値を設定する: true。  
   
@@ -337,7 +332,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
 2. 更新する必要がある、\<パッケージ > 既存のプロジェクトの種類に基づいて、新しいスキーマを持つ要素。 最初に、Windows ストアまたは Windows Phone プロジェクトがあるかどうかに基づいて、以下のスキーマを削除します。  
   
-    **Windows ストア プロジェクトの古い:** 、\<パッケージ > 要素は次のようになります。  
+    **Windows ストア プロジェクトを旧:**\<パッケージ > 要素は次のようになります。  
   
    ```xml  
    <Package  
@@ -346,7 +341,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
    ```  
   
-    **Windows Phone プロジェクトの古い:** 、\<パッケージ > 要素は次のようになります。  
+    **Windows Phone プロジェクトの古い:**\<パッケージ > 要素は次のようになります。  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **ユニバーサル Windows プラットフォームの新機能:** 以下のスキーマを追加、\<パッケージ > 要素。 削除したスキーマの要素から、関連した名前空間の識別子のプレフィックスを削除します。 IgnorableNamespaces プロパティを uap mp に更新します。 新しい\<パッケージ > 要素がこのような検索する必要があります。  
+    **新規のユニバーサル Windows プラットフォーム。** 次のスキーマを追加、\<パッケージ > 要素。 削除したスキーマの要素から、関連した名前空間の識別子のプレフィックスを削除します。 IgnorableNamespaces プロパティを uap mp に更新します。 新しい\<パッケージ > 要素がこのような検索する必要があります。  
   
    ```xml  
    <Package  
@@ -367,7 +362,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
    ```  
   
-3. 追加、\<依存関係 > 子要素の\<パッケージ > 要素。 追加し、 \<TargetDeviceFamily > 子要素のこの\<依存関係 > Name、MinVersion、および MaxVersionTested 属性を持つ要素。 Name 属性の値に Windows.Universal を指定します。 MinVersion と MaxVersionTested に、インストールしたユニバーサル Windows プラットフォームのバージョンの値を指定します。 この要素は次のようになります。  
+3. 追加、\<依存関係 > 子要素の\<パッケージ > 要素。 追加し、 \<TargetDeviceFamily > 子要素のこの\<依存関係 > Name、MinVersion、および MaxVersionTested 属性を持つ要素。 Name 属性の値を指定します。Windows.Universal します。 MinVersion と MaxVersionTested に、インストールしたユニバーサル Windows プラットフォームのバージョンの値を指定します。 この要素は次のようになります。  
   
    ```xml  
    <Dependencies>  
@@ -375,7 +370,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
    </Dependencies>  
    ```  
   
-4. **Windows ストアのみの:** を追加する必要がある、 \<mp:PhoneIdentity > 子要素の\<パッケージ > 要素。 PhoneProductId 属性と PhonePublisherId 属性を追加します。 内の Name 属性として同じ値を持つ PhoneProductId の設定、 \<Identity > 要素。 PhonePublishedId の値を 00000000-0000-0000-0000-000000000000 に設定します。 以下に例を示します。  
+4. **Windows ストアの場合のみ。** 追加する必要がある、 \<mp:PhoneIdentity > 子要素の\<パッケージ > 要素。 PhoneProductId 属性と PhonePublisherId 属性を追加します。 内の Name 属性として同じ値を持つ PhoneProductId の設定、 \<Identity > 要素。 PhonePublishedId 値を設定します。00000000-0000-0000-0000-000000000000. 以下に例を示します。  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -384,7 +379,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
 5. 検索、\<の前提条件 > 要素と、この要素と任意の子要素を削除します。  
   
-6. 追加、 **uap** 、次の名前空間\<リソース > の要素: DXFeatureLevel、スケールします。 例えば:  
+6. 追加、 **uap** 、次の名前空間\<リソース > 要素。DXFeatureLevel 小数点以下桁数。 例えば:  
   
    ```xml  
    <Resources>  
@@ -419,7 +414,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
    ```  
   
-    **Windows ストアにのみ適用されます:** タイル サイズの名前が変更されました。 内の属性を変更、 \<VisualElements > 新しいを反映するように要素がタイルのサイズを集約します。 70x70 は 71x71 になり、30x30 は 44x44 になります。  
+    **Windows ストアにのみ適用されます。** タイル サイズの名前が変更されました。 内の属性を変更、 \<VisualElements > 新しいを反映するように要素がタイルのサイズを集約します。 70x70 は 71x71 になり、30x30 は 44x44 になります。  
   
     **OLD:** タイル サイズの名前  
   
@@ -459,7 +454,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
     ```  
   
-10. 追加、 **uap** 、次の名前空間\<拡張機能 > 要素とそのすべての子要素: windows.accountPictureProvide、windows.alarm、windows.appointmentsProvider windows.autoPlayContent、 windows.autoPlayDevice、windows.cachedFileUpdate、windows.cameraSettings、windows.fileOpenPicker、windows.fileTypeAssociation、windows.fileSavePicke、windows.lockScreenCall、windows.printTaskSettings、windows.protocol、windows.search、windows.shareTarget します。 例えば:  
+10. 追加、 **uap** 、次の名前空間\<拡張機能 > 要素とそのすべての子要素: windows.accountPictureProvide、windows.alarm、windows.appointmentsProvider windows.autoPlayContent、 windows.autoPlayDevice、windows.cachedFileUpdate、windows.cameraSettings、windows.fileOpenPicker、windows.fileTypeAssociation、windows.fileSavePicke、windows.lockScreenCall、windows.printTaskSettings、windows.protocol、windows.search、windows.shareTarget します。 例:  
   
     ```xml  
     <Extensions>  
@@ -474,7 +469,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
     ```  
   
-11. **uap** 名前空間をタイプ chatMessageNotification のバックグラウンド タスクに追加します。 例えば:  
+11. **uap** 名前空間をタイプ chatMessageNotification のバックグラウンド タスクに追加します。 例:  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -487,7 +482,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
 12. フレームワークの依存関係を変更します。 すべてパブリッシャー名を追加\<PackageDependency > 要素では、指定されていない場合、MinVersion を指定します。  
   
-     **旧:** \<PackageDependency > 要素  
+     **古い。**\<PackageDependency > 要素  
   
     ```xml  
     <Dependencies>  
@@ -496,7 +491,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
     ```  
   
-     **新規:** \<PackageDependency > 要素  
+     **新機能：**\<PackageDependency > 要素  
   
     ```xml  
     <Dependencies>  
@@ -510,7 +505,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
      使用している実際のフレームワークのための適切な Publisher 値と MinVersion 値を使用します。 Windows 10 では、これらの名前が変更される可能性があることに注意してください。  
   
-13. gattCharacteristicNotification と rfcommConnection バック グラウンド タイプ タスクを Bluetooth タイプ タスクに置き換えます。 例えば:  
+13. gattCharacteristicNotification と rfcommConnection バック グラウンド タイプ タスクを Bluetooth タイプ タスクに置き換えます。 例:  
   
      **古い。**  
   
@@ -523,7 +518,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
     </Extension>  
     ```  
   
-     **NEW:** Bluetooth タイプ タスクを使用します。  
+     **新機能：** Bluetooth タイプ タスク。  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -533,7 +528,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
     </Extension>  
     ```  
   
-14. Bluetooth デバイス機能の bluetooth.rfcomm と bluetooth.genericAttributeProfile を汎用の Bluetooth 機能に置き換えます。 例えば:  
+14. Bluetooth デバイス機能の bluetooth.rfcomm と bluetooth.genericAttributeProfile を汎用の Bluetooth 機能に置き換えます。 例:  
   
      **古い。**  
   
@@ -552,7 +547,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
     </Capabilities>  
     ```  
   
-     **NEW:** 汎用の Bluetooth 機能に置き換えられています。  
+     **新機能：** 汎用の Bluetooth 機能に置き換えられます。  
   
     ```xml  
     <Capabilities>  
@@ -565,13 +560,13 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
     1. これらの属性を\<VisualElements > は非推奨とされ、削除する必要があります。  
   
-       - \<VisualElements > 属性: ForegroundText、ToastCapable  
+       - \<VisualElements > 属性。ForegroundText、ToastCapable  
   
        - \<DefaultTile > 属性 DefaultSize  
   
        - \<ApplicationView > 要素  
   
-         例えば:  
+         例:  
   
        ```xml  
        <m2:VisualElements  
@@ -601,11 +596,11 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 ##  <a name="PreviousVersions"></a> Visual Studio 2015 RC で作成された既存のユニバーサル Windows アプリの必要な変更  
  Visual Studio 2015 RC で Windows 10 ユニバーサル アプリを作成した場合は、Visual Studio 2015 の最新版のリリースでインストールされたユニバーサル Windows プラットフォームのバージョンを使用するように、プロジェクトを再ターゲットする必要があります。 以前のバージョンはサポートされていません。 必要な変更は、アプリの作成に使用した言語によって異なります。  
   
--   [C #/vb アプリ](#RCUpdate10CSharp)  
+-   [C#または VB のアプリ](#RCUpdate10CSharp)  
   
 -   [C++ アプリ](#RCUpdate10CPlusPlus)  
   
-###  <a name="RCUpdate10CSharp"></a> 最新のユニバーサル Windows プラットフォームを使用する C #/vb プロジェクトを更新します。  
+###  <a name="RCUpdate10CSharp"></a> 更新プログラム、C#または VB プロジェクトは、最新のユニバーサル Windows プラットフォームの使用  
  既存のアプリのソリューションを開くと、アプリを更新する必要があることが表示されます。  
   
  ![ソリューション エクスプ ローラーでプロジェクトを表示](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")  
@@ -676,7 +671,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
    ```  
   
-6. 検索、\<ターゲット > 値を含む name 属性を持つ要素: EnsureNuGetPackageBuildImports します。 この要素とそのすべての子要素を削除します。  
+6. 検索、\<ターゲット > 値を含む name 属性を持つ要素。EnsureNuGetPackageBuildImports します。 この要素とそのすべての子要素を削除します。  
   
    ```xml  
    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
@@ -820,13 +815,13 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 ##  <a name="MigrateUnitTest"></a> Visual Studio 2015 RC で作成されたユニバーサル Windows アプリの単体テスト プロジェクトを既存の必要な変更  
  Visual Studio 2015 RC で Windows 10 ユニバーサル アプリの単体テスト プロジェクトを作成した場合、これらの追加の変更をプロジェクト ファイルに行い、Visual Studio 2015 の最新版のリリースでこれらのテスト プロジェクトを使用するようにしなければなりません。 必要な変更は、アプリの作成に使用した言語によって異なります。  
   
--   [C #/vb アプリ](#UnitTestRCUpdate10CSharp)  
+-   [C#または VB のアプリ](#UnitTestRCUpdate10CSharp)  
   
 -   [C++ アプリ](#UnitTestRCUpdate10CPlusPlus)  
   
-###  <a name="UnitTestRCUpdate10CSharp"></a> C #/vb 単体テスト プロジェクトを更新します。  
+###  <a name="UnitTestRCUpdate10CSharp"></a> 更新プログラム、C#または VB の単体テスト プロジェクト  
   
-1. Visual Studio を使用して、C#/VB 単体テスト プロジェクトを含むソリューションを開きます。 値を変更、 \<OuttputType > 要素を: AppContainerExe します。  
+1. Visual Studio を使用して、C#/VB 単体テスト プロジェクトを含むソリューションを開きます。 値を変更、 \<OuttputType > 要素。AppContainerExe します。  
   
    ```xml  
   

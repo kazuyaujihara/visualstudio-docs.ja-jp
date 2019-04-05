@@ -7,24 +7,26 @@ assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 03/21/2017
+ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 2ef17bab90ae1f2c9df66a85a6a78b1494bd5c3d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 900e677ce670c49036ea6d76596ff509129ce979
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926967"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323819"
 ---
-# <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio での Azure クラウド サービス プロジェクトの作成
+# <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio での Azure クラウド サービス プロジェクトの作成
+
 Azure Tools for Visual Studio には、シンプルな汎用 Azure サービスである [Azure クラウド サービス](/azure/cloud-services/cloud-services-choose-me)を作成できるプロジェクト テンプレートが用意されています。 プロジェクトを作成したら、Visual Studio でクラウド サービスを構成し、デバッグして、Azure にデプロイできます。
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Visual Studio で Azure クラウド サービス プロジェクトを作成する手順
 このセクションでは、Visual Studio で 1 つ以上の Web ロールを追加して Azure クラウド サービス プロジェクトを作成する手順について説明します。
 
-1. 管理者として Visual Studio を起動します。
+::: moniker range="vs-2017"
+1. Visual Studio を管理者として開きます。
 
-1. メイン メニューで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** を選択します。
+1. メイン メニューで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
 1. Visual C# または Visual Basic プロジェクト テンプレート ノードで **[クラウド]** を選択し、テンプレートの一覧から **[Azure クラウド サービス]** を選択します。
 
@@ -35,6 +37,18 @@ Azure Tools for Visual Studio には、シンプルな汎用 Azure サービス�
 1. プロジェクトの名前と場所、およびソリューションの名前を入力します。
 
 1. **[OK]** を選択します。
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+
+1. 検索ボックスに、「*クラウド*」と入力して、**[Azure クラウド サービス]** を選択します。
+
+   ![新しい Azure クラウド サービス](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service.png)
+
+1. プロジェクト名を設定し、**[作成]** を選択します。
+
+   ![プロジェクト名を設定します。](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service-2.png)
+::: moniker-end
 
 1. **[新しい Microsoft Azure クラウド サービス]** ダイアログで、追加するロールを選択し、右矢印ボタンをクリックしてロールをソリューションに追加します。
 

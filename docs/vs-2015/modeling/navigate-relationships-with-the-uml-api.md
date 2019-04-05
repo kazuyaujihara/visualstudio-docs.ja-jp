@@ -1,25 +1,22 @@
 ---
 title: UML API を使用したリレーションシップの移動 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: a4d11d45-b8c0-40f9-a597-363f07659610
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0f8d1392bebf4d2591bbd7e4dc7bd8755c09f2c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb2a02ba27f06ef027001c2de07308c153b21c2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740539"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975122"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>UML API を使用して関係をナビゲートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```  
   
 ## <a name="enumerating-relationships"></a>リレーションシップの列挙  
- 複数の値を返す UML モデルのすべてのプロパティは、IEnumerable <> インターフェイスに準拠します。 つまり、使用[Linq クエリ式](http://go.microsoft.com/fwlink/?LinkId=168834)で定義されている拡張メソッドと、 **System.Linq**名前空間。  
+ 複数の値を返す UML モデルのすべてのプロパティは、IEnumerable <> インターフェイスに準拠しています。 つまり、使用[Linq クエリ式](http://go.microsoft.com/fwlink/?LinkId=168834)で定義されている拡張メソッドと、 **System.Linq**名前空間。  
   
  例えば:  
   
@@ -169,6 +166,3 @@ select shape.Element
 ## <a name="see-also"></a>関連項目  
  [UML モデルと図を拡張します。](../modeling/extend-uml-models-and-diagrams.md)   
  [UML モデル内を移動する](../modeling/navigate-the-uml-model.md)
-
-
-

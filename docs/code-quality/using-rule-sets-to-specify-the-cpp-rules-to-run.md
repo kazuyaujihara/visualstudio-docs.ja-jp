@@ -18,7 +18,7 @@ ms.locfileid: "57323654"
 
 Visual Studio で作成し、カスタムの変更*ルール セット*コード分析に関連付けられている特定のプロジェクトのニーズを満たします。 既定の規則セットが格納されている`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`します。
 
-**Visual Studio 2017 バージョン 15.7 以降**任意のテキストを使用してカスタム規則セット エディターを作成し、これらを使用しているシステムを構築するものに関係なくコマンド ライン ビルドで適用することができます。 詳細については、次を参照してください。 [/analyze: ruleset](/cpp/build/reference/analyze-code-analysis)します。
+**Visual Studio 2017 バージョン 15.7 以降**任意のテキストを使用してカスタム規則セット エディターを作成し、これらを使用しているシステムを構築するものに関係なくコマンド ライン ビルドで適用することができます。 詳細については、[/analyze: ruleset](/cpp/build/reference/analyze-code-analysis)を参照してください。
 
 Visual Studio でカスタム C++ 規則を作成するには、は、C と C++ プロジェクトが Visual Studio IDE で開く必要があります。 規則セット エディターで、標準の規則セットを開くと、追加または特定の規則を削除し、必要に応じて変更コード分析ルールに違反したことを決定するときに発生するアクション。
 

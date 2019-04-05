@@ -1,14 +1,9 @@
 ---
 title: UML モデルと図の拡張 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -16,13 +11,13 @@ ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c13d30b1657917d55e5d3218c70aa8f2a69ec67
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794765"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59002263"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML モデルと図の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51794765"
   
  Fabrikam 社のツール チームは、一連の拡張機能を作成して開発チームを支援します。 以降のセクションでは、定義可能なさまざまな拡張機能について説明します。 これらの手法のいくつかを 1 つの Visual Studio 拡張機能に結合できます。  
   
- 詳細については、このビデオをご覧ください:![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How Do I シリーズ: UML ツールと機能拡張](http://go.microsoft.com/fwlink/?LinkId=214467)します。  
+ 詳細については、このビデオをご覧ください:![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How Do I シリーズ。UML ツールと機能拡張](http://go.microsoft.com/fwlink/?LinkId=214467)します。  
   
 ##  <a name="Requirements"></a> 要件  
   
@@ -81,7 +76,7 @@ ms.locfileid: "51794765"
   
  Fabrikam 社の開発者は、要素の色をそのステレオタイプに応じて自動的に設定するコードを作成します。 これにより、ユーザーはモデル内の要素のそれぞれ異なる役割を簡単に区別できるようになります。  
   
- 詳細については、次を参照してください。[方法: UML モデルの変更に応答](../misc/how-to-respond-to-changes-in-a-uml-model.md)します。  
+ 詳細については、「[方法 :UML モデルの変更に応答](../misc/how-to-respond-to-changes-in-a-uml-model.md)します。  
   
 ## <a name="model-bus"></a>モデル バス  
  モデル バスを使用すると、別の図または別の [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能から図またはモデルにアクセスできます。 特に、複数のモデルに情報を伝達することができるため、結合されたモデルで複数の人が同時に作業できます。  
@@ -118,7 +113,7 @@ ms.locfileid: "51794765"
   
 |**カテゴリ**|**リンク**|  
 |------------------|---------------|  
-|**ビデオ**|![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I シリーズ: UML ツールと機能拡張](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Visual Studio での UML](http://go.microsoft.com/fwlink/?LinkId=199957)|  
+|**ビデオ**|![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I シリーズ。UML ツールと機能拡張](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9。Visual Studio での UML](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化ツールとモデリング SDK (DSL ツール)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技術記事とジャーナル**|[MSDN アーキテクチャ センター](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -126,6 +121,3 @@ ms.locfileid: "51794765"
 ## <a name="see-also"></a>関連項目  
  [アプリのモデルを作成します。](../modeling/create-models-for-your-app.md)   
  [UML モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

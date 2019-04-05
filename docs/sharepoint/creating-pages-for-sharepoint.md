@@ -46,19 +46,19 @@ ms.locfileid: "56628365"
 ## <a name="create-application-pages"></a>アプリケーション ページを作成します。
  Visual Studio でアプリケーション ページを作成するには追加することで、**アプリケーション ページ**を SharePoint プロジェクト項目。 ページにコントロールを追加し、コードを追加してコントロールのイベントを処理できます。
 
- ページのコード ファイルにブレークポイントを設定、デバッガーを起動し、追加の構成手順を実行せずにローカル SharePoint サイトのページをテストできます。 詳細については、次を参照してください。 [for SharePoint アプリケーション ページを作成する](../sharepoint/creating-application-pages-for-sharepoint.md)します。
+ ページのコード ファイルにブレークポイントを設定、デバッガーを起動し、追加の構成手順を実行せずにローカル SharePoint サイトのページをテストできます。 詳細については、[for SharePoint アプリケーション ページを作成する](../sharepoint/creating-application-pages-for-sharepoint.md)を参照してください。
 
 ## <a name="create-site-pages-master-pages-and-page-layouts"></a>サイトのページ、マスター ページ、およびページ レイアウトを作成します。
- SharePoint デザイナーを使用して、サイトのページ、マスター ページ、およびページ レイアウトを作成できます。 次に、これらのページを Visual Studio にインポートできます。 展開または Visual Studio で使用可能なソース管理機能を活用する場合は、ページをインポートします。 詳細については、次を参照してください。[既存の SharePoint サイトからインポートする項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)します。
+ SharePoint デザイナーを使用して、サイトのページ、マスター ページ、およびページ レイアウトを作成できます。 次に、これらのページを Visual Studio にインポートできます。 展開または Visual Studio で使用可能なソース管理機能を活用する場合は、ページをインポートします。 詳細については、[既存の SharePoint サイトからインポートする項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)を参照してください。
 
  インポートした後、これらのページを変更するのには難しいので、それらをインポートする前に、これらのページを設計する必要があります。
 
 ## <a name="create-cascading-style-sheets-ecmascript-and-themes"></a>カスケード スタイル シート、ECMAScript、およびテーマを作成します。
  Visual Studio では、開発のカスケード スタイル シート (CSS)、ECMAScript (JavaScript、JScript)、または SharePoint サイトのテーマ ファイルのテンプレートは提供されません。 SharePoint SDK で使用できるガイダンスを使用するか、SharePoint Designer などのツールを使用して、これらのファイルを作成できます。
 
- これらのファイルを直接をソリューションに追加することができます。 またはインポートすることができます。 いずれの場合も、追加する各項目に対して適切なマップされたフォルダーを作成する必要があります。 マップされたフォルダーを作成する方法の詳細については、次を参照してください。[方法: 追加すると、マップされたフォルダーを削除する](../sharepoint/how-to-add-and-remove-mapped-folders.md)します。
+ これらのファイルを直接をソリューションに追加することができます。 またはインポートすることができます。 いずれの場合も、追加する各項目に対して適切なマップされたフォルダーを作成する必要があります。 マップされたフォルダーを作成する方法の詳細については、[方法: 追加すると、マップされたフォルダーを削除する](../sharepoint/how-to-add-and-remove-mapped-folders.md)を参照してください。
 
- カスケード スタイル シートの作成の詳細については、次を参照してください。[カスケード スタイル シート クラスでの使用状況 SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098)します。 SharePoint ソリューションの JavaScript および JScript ファイルを作成する方法の詳細については、次を参照してください。[設定を、基本的な ASPX ページの ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099)します。 テーマの詳細については、次を参照してください。[ビルディング ブロック。ページとユーザー インターフェイス](http://go.microsoft.com/fwlink/?LinkID=182095)します。
+ カスケード スタイル シートの作成の詳細については、[カスケード スタイル シート クラスでの使用状況 SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098)を参照してください。 SharePoint ソリューションの JavaScript および JScript ファイルを作成する方法の詳細については、[設定を、基本的な ASPX ページの ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099)を参照してください。 テーマの詳細については、次を参照してください。[ビルディング ブロック。ページとユーザー インターフェイス](http://go.microsoft.com/fwlink/?LinkID=182095)します。
 
 ## <a name="related-topics"></a>関連トピック
 

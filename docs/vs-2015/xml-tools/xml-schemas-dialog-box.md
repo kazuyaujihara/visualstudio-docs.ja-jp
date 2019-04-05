@@ -1,25 +1,20 @@
 ---
 title: XML スキーマ ダイアログ ボックス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f97bfca4623a826130e68a5399cc2ab86f784cbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: da0c73655c5c08da993fdf72bffdfeca0eb4b304
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899592"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973360"
 ---
 # <a name="xml-schemas-dialog-box"></a>[XML スキーマ] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49899592"
  **使用**  
  XML スキーマの使用方法を選択します。  
   
-- **自動**します。 このスキーマは現在のドキュメントで使用されていませんが、自動的な関連付けには使用できます。 XML ドキュメントでこのスキーマの `targetNamespace` に一致する名前空間を宣言すると、スキーマが自動的に関連付けられ、スキーマ セットに含まれます。  
+- **[自動]**。 このスキーマは現在のドキュメントで使用されていませんが、自動的な関連付けには使用できます。 XML ドキュメントでこのスキーマの `targetNamespace` に一致する名前空間を宣言すると、スキーマが自動的に関連付けられ、スキーマ セットに含まれます。  
   
 - **このスキーマを使用して、** します。 このスキーマは、現在のドキュメントで使用されています。 ユーザーがこの列をクリックしてこのスキーマが使用されることを明示的に要求したか、一致する `targetNamespace` に基づいてスキーマが自動的に関連付けられたかのいずれかです。  
   
@@ -42,7 +37,7 @@ ms.locfileid: "49899592"
   **Target Namespace**  
   XML スキーマに関連付けられているターゲット名前空間が表示されます。  
   
-  **ファイル名**  
+  **[ファイル名]**  
   XML スキーマ ファイル名が表示されます。  
   
   **[追加]**  
@@ -55,6 +50,3 @@ ms.locfileid: "49899592"
  [XML エディターのコンポーネント](../xml-tools/xml-editor-components.md)   
  [方法: 使用する XML スキーマを選択します。](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
  [スキーマ キャッシュ](../xml-tools/schema-cache.md)
-
-
-

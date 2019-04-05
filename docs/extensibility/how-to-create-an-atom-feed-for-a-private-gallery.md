@@ -19,7 +19,7 @@ ms.lasthandoff: 02/22/2019
 ms.locfileid: "56722409"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>方法: Atom プライベート ギャラリーのフィードの作成します。
-Atom (RSS) フィードを拡張機能を含みにフィードを追加するイントラネット上の場所を作成する**拡張機能と更新**をプライベート ギャラリーとして。 詳細については、次を参照してください。[プライベート ギャラリー](../extensibility/private-galleries.md)します。
+Atom (RSS) フィードを拡張機能を含みにフィードを追加するイントラネット上の場所を作成する**拡張機能と更新**をプライベート ギャラリーとして。 詳細については、[プライベート ギャラリー](../extensibility/private-galleries.md)を参照してください。
 
 ## <a name="create-an-atom-feed"></a>Atom フィードを作成します。
  Atom をプライベート ギャラリーとしてフィードを作成するを収集して、拡張機能 (*.vsix*ファイル) のフォルダーにします。 場合は、サブフォルダーにそれらを編成できます。 次のリソースも必要になります。

@@ -1,14 +1,9 @@
 ---
 title: 基本的なプロジェクト システムを作成するには、パート 1 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9bc0be22f0a5f975f616bfcce942d59399a36ad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ed2f8975f24404c00f81d86d0d1d6a6933b3d8ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792555"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976732"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>基本的なプロジェクト システムの作成、パート 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
   
 #### <a name="to-create-a-basic-project-template"></a>基本的なプロジェクト テンプレートを作成するには  
   
-1. 3 つのフォルダーを他のいずれかと、プロジェクトに追加: **Templates\Projects\SimpleProject**します。 (で**ソリューション エクスプ ローラー**を右クリックし、 **SimpleProject**プロジェクト ノードをポイントして、**追加**、 をクリックし、**新しいフォルダー**します。 フォルダーに「 `Templates`で行うことができます。 **テンプレート**フォルダー、という名前のフォルダーを追加`Projects`します。 **プロジェクト**フォルダー、という名前のフォルダーを追加`SimpleProject`)。  
+1. 3 つのフォルダーを他のいずれかと、プロジェクトに追加します。**Templates\Projects\SimpleProject**します。 (で**ソリューション エクスプ ローラー**を右クリックし、 **SimpleProject**プロジェクト ノードをポイントして、**追加**、 をクリックし、**新しいフォルダー**します。 フォルダーに「 `Templates`で行うことができます。 **テンプレート**フォルダー、という名前のフォルダーを追加`Projects`します。 **プロジェクト**フォルダー、という名前のフォルダーを追加`SimpleProject`)。  
   
 2. **Projects\SimpleProject**という名前のアイコン ファイルをフォルダーに追加`SimpleProject.ico`します。 クリックすると**追加**、アイコン エディターが開きます。  
   
@@ -280,7 +275,7 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
   
     4.  次のアセンブリへの参照を追加します。  
   
-        -   Microsoft.VisualStudio.Designer.Interfaces (で\<VSSDK インストール > \VisualStudioIntegration\Common\Assemblies\v2.0)  
+        -   Microsoft.VisualStudio.Designer.Interfaces (in \<VSSDK install>\VisualStudioIntegration\Common\Assemblies\v2.0)  
   
         -   WindowsBase  
   
@@ -577,7 +572,7 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
      $NameSpace$ と $className$ のテンプレート パラメーターに新しい値がないことに注意してください。 次のセクションで、テンプレート パラメーターの置換を実装する方法を学習します。  
   
 ## <a name="substituting-template-parameters"></a>テンプレート パラメーターの置換  
- 前のセクションで登録したプロジェクト テンプレートで Visual Studio を使用して、`ProvideProjectFactory`属性。 テンプレート フォルダーのパスをこの方法で登録をオーバーライドし、展開する基本的なテンプレート パラメーターの置換を有効にすることができます、`ProjectNode.AddFileFromTemplate`クラス。 詳細については、次を参照してください。[新しいプロジェクトの生成: 内部、パート 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)します。  
+ 前のセクションで登録したプロジェクト テンプレートで Visual Studio を使用して、`ProvideProjectFactory`属性。 テンプレート フォルダーのパスをこの方法で登録をオーバーライドし、展開する基本的なテンプレート パラメーターの置換を有効にすることができます、`ProjectNode.AddFileFromTemplate`クラス。 詳細については、次を参照してください。[新しいプロジェクトの生成。内部的には、2 つのパート](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)します。  
   
  交換用のコードを追加、`AddFileFromTemplate`クラス。  
   
@@ -658,4 +653,3 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
     ![単純なプロジェクト コマンド](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
    おめでとうございます! マネージ プロジェクトは、基本的なシステムを実装しました。
-

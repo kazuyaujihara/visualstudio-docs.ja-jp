@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1704: 識別子は正しく入力 |Microsoft Docs'
-ms.custom: ''
+title: CA1704:識別子は正しく入力されなければなりません |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1704
 - IdentifiersShouldBeSpelledCorrectly
@@ -20,14 +15,14 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c1e31917356e3d55a7db38ba7aabc9258af1deb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d77e5ffcb7cc6688ea07cd99760e79e8f92aeb43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975057"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: 識別子は正しく入力されなければなりません
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704:識別子は正しく入力されなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,13 +51,13 @@ ms.locfileid: "49827546"
   既定では、スペル チェックの英語 (en) バージョンが使用されます。 他の言語辞書は、現時点ではありません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、単語のスペルを訂正または CustomDictionary.xml という名前のユーザー辞書に単語を追加します。 プロジェクトのディレクトリは、ツールのインストール ディレクトリまたはユーザーのプロファイル ツールに関連付けられているディレクトリには、ディクショナリを配置 (%USERPROFILE%\Application Data\\...)。プロジェクトにカスタム辞書を追加する方法について[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を参照してください[方法: コード分析辞書をカスタマイズします。](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ このルールの違反を修正するには、単語のスペルを訂正または CustomDictionary.xml という名前のユーザー辞書に単語を追加します。 プロジェクトのディレクトリは、ツールのインストール ディレクトリまたはユーザーのプロファイル ツールに関連付けられているディレクトリには、ディクショナリを配置 (%USERPROFILE%\Application Data\\...)。プロジェクトにカスタム辞書を追加する方法について[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を参照してください[方法。コード分析辞書をカスタマイズします。](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 - 認識単語/辞書/パスの下の違反が発生する必要がありますの単語を追加します。
 
 - 認識できないワード/辞書/パスの下に違反が発生する単語を追加します。
 
-- 非推奨の単語/辞書/パスで不使用とフラグ必要がある単語を追加します。 関連のトピックを参照してください。 [ca 1726 適切な: 適切な用語を使用して、](../code-quality/ca1726-use-preferred-terms.md)詳細についてはします。
+- 非推奨の単語/辞書/パスで不使用とフラグ必要がある単語を追加します。 関連のトピックを参照してください。 [ca 1726 適切な。適切な用語を使用して、](../code-quality/ca1726-use-preferred-terms.md)詳細についてはします。
 
 - CasingExceptions 頭字語/辞書/パスに略語の大文字小文字の規則には、例外を追加します。
 
@@ -95,20 +90,17 @@ ms.locfileid: "49827546"
  意図的にスペル ミスの単語と、限られた、ライブラリに適用している場合にのみは、この規則による警告を抑制します。 正しくスペルの単語は、新しいソフトウェア ライブラリに必要な学習曲線を削減します。
 
 ## <a name="related-rules"></a>関連規則
- [CA2204: リテラルは正しく入力されていなければなりません](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204:リテラルは正しく入力されなければなりません](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA 1703:リソース文字列を正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: 識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:識別子は、ケース以外で相違させる必要があります。](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: 識別子はアンダースコアを含むことはできません](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA 1707:識別子はアンダー スコアを含めることはできません。](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1726: 適切な用語を使用します](../code-quality/ca1726-use-preferred-terms.md)
+ [CA 1726: 適切な。用語を使用します](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>関連項目
- [方法 : コード分析辞書をカスタマイズする](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
-
-
-
+ [方法: コード分析辞書をカスタマイズします。](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

@@ -1,14 +1,9 @@
 ---
 title: '方法: COM クライアントおよびサーバーの RPC デバッグを使用したデバッグ |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -30,15 +25,15 @@ ms.assetid: 3e8526c8-43b5-4b87-8e0d-b22c24f0a3ea
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 78a4c85d24ea382e5946000ac2225588c5deceed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1235abfc6e8a2c384b02fd1d48a859063c058d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786803"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972959"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>方法 : RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>方法: RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 リモート プロシージャ コール (RPC: Remote Procedure Call) デバッグを使用して、COM クライアント/サーバー アプリケーションをデバッグできます。 このデバッグを行うには、あらかじめ RPC デバッグを有効にする必要があります。 RPC デバッグを有効にすると、ステップ実行でクライアントからサーバーを呼び出すときに、デバッガーがサーバーにアタッチし、コードのデバッグができるようになります。 デバッガーをアタッチすることにより、クライアントおよびサーバーのどちらのプロセスでも、デバッガーのすべての機能を使用できます。  
@@ -47,11 +42,11 @@ ms.locfileid: "51786803"
   
 1.  **[ツール]** メニューの **[オプション]** をクリックします。  
   
-2.  **オプション**ダイアログ ボックスで、をクリックして、**デバッグ**フォルダー。  
+2.  **[オプション]** ダイアログ ボックスで、**[デバッグ]** フォルダーをクリックします。  
   
-3.  をクリックして、**ネイティブ**ページ。  
+3.  **[ネイティブ]** ページをクリックします。  
   
-4.  選択、 **RPC デバッグ**チェック ボックスをオンします。  
+4.  **[RPC デバッグ]** チェック ボックスをオンにします。  
   
     > [!NOTE]
     >  RPC 呼び出しをデバッグするには、管理者またはパワー ユーザーの権限が必要です。  
@@ -60,8 +55,5 @@ ms.locfileid: "51786803"
     >  Microsoft Windows Vista が実行されているリモート サーバーへの RPC ステップ実行は、そのリモート サーバーにネイティブ デバッガーがアタッチされている場合のみ機能します。 それ以外の場合、エラー メッセージが表示されることなく RPC 呼び出しが失敗します。 何らかの方法で RPC 呼び出しに成功したとしても、RPC 呼び出しへのステップ インは正常に機能しません。  
   
 ## <a name="see-also"></a>関連項目  
- [COM サーバーおよびコンテナーのデバッグ](../debugger/com-server-and-container-debugging.md)   
+ [COM サーバーおよび COM コンテナーのデバッグ](../debugger/com-server-and-container-debugging.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)
-
-
-

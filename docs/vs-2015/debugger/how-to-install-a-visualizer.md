@@ -1,14 +1,9 @@
 ---
 title: '方法: ビジュアライザーをインストール |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,15 +20,15 @@ ms.assetid: 3310ef43-515c-4d97-b0f9-51047247d3da
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5b2c77bd5f9d32b3bb4a0954017b7abdee1947c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a75386844e3653a4dbf791980737f8d339072c4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963106"
 ---
-# <a name="how-to-install-a-visualizer"></a>方法 : ビジュアライザーをインストールする
+# <a name="how-to-install-a-visualizer"></a>方法: ビジュアライザーをインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 作成したビジュアライザーは、インストールして初めて [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で使用できるようになります。 ビジュアライザーのインストールは簡単です。  
@@ -56,8 +51,5 @@ ms.locfileid: "51731467"
 4.  デバッグ セッションを再開します。  
   
 ## <a name="see-also"></a>関連項目  
- [カスタム ビジュアライザーを作成します。](../debugger/create-custom-visualizers-of-data.md)   
- [方法 : ビジュアライザーを記述する](../debugger/how-to-write-a-visualizer.md)
-
-
-
+ [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)   
+ [方法: ビジュアライザーを記述する](../debugger/how-to-write-a-visualizer.md)

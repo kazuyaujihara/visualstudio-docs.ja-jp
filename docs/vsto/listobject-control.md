@@ -34,7 +34,7 @@ ms.locfileid: "56609385"
  ドキュメント レベルのプロジェクトでは、デザイン時または実行時に、ワークシートに <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールを追加できます。 VSTO アドイン プロジェクトに追加することができます<xref:Microsoft.Office.Tools.Excel.ListObject>実行時にのみのワークシートにコントロール。 詳細については、「[方法 :ワークシートに ListObject コントロールを追加](../vsto/how-to-add-listobject-controls-to-worksheets.md)します。
 
 > [!NOTE]
->  既定では、動的に作成されたリスト オブジェクトは、ワークシートを閉じる際に、ホスト コントロールとしてワークシートに残りません。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+>  既定では、動的に作成されたリスト オブジェクトは、ワークシートを閉じる際に、ホスト コントロールとしてワークシートに残りません。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
 
 ## <a name="bind-data-to-the-control"></a>データをコントロールにバインドします。
  <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールでは、単純または複雑なデータ バインディングがサポートされます。 <xref:Microsoft.Office.Tools.Excel.ListObject>コントロールを使用して、データ ソースにバインドすることができます、<xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A>と<xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A>デザイン時プロパティまたは<xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A>メソッド実行時にします。

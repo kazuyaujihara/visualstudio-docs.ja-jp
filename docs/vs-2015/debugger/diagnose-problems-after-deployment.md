@@ -1,25 +1,20 @@
 ---
 title: 配置後の問題の診断 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 caps.latest.revision: 66
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e6c4c60265fda66f7506fe6d886fa671527c1587
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 50db0acab74df71be7185acc076724837d41512a
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785457"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58973905"
 ---
 # <a name="diagnose-problems-after-deployment"></a>配置後の問題の診断
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
  ![コード、ビルド、リリース、監視、診断、修正](../debugger/media/ffr-cycle.png "FFR_Cycle")  
   
- **必要があります。**  
+ **要件:**   
   
 -   ビルドを設定するための Visual Studio 2015 または Team Foundation Server 2015、2013、2012、2010  
   
@@ -38,10 +33,10 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
 -   診断データを確認して IntelliTrace でコードをデバッグするための Visual Studio Enterprise (ただし、Professional および Community Edition を除く)  
   
-##  <a name="SetUpBuild"></a> 手順 1: 含めるビルドをリリース情報  
+##  <a name="SetUpBuild">手順 1:</a> リリースのビルド情報が含まれます  
  ビルド プロセスを設定して Web プロジェクトのビルド マニフェスト (BuildInfo.config ファイル) を作成し、このマニフェストをリリースに含めます。 このマニフェストには、特定のビルドを作成するために使用されたプロジェクト、ソース管理、およびビルド システムに関する情報が含まれます。 この情報は、IntelliTrace ログを開いて記録されたイベントを確認した後に、Visual Studio が対応するソースとシンボルを見つけるのに役立ちます。  
   
-###  <a name="AutomatedBuild"></a> Team Foundation Server を使用して自動化されたビルドのビルド マニフェストを作成します。  
+###  <a name="AutomatedBuild"></a>Team Foundation Server を使用して自動ビルドのビルド マニフェストを作成する  
  Team Foundation バージョン管理と Git のいずれを使用するにしても、これらの手順に従います。  
   
 ####  <a name="TFS2013"></a> Team Foundation Server 2013  
@@ -65,13 +60,13 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
 4. この MSBuild 引数を追加して、TFS とシンボルの場所をビルド マニフェスト ファイルに含めます。  
   
-    **/p:IncludeServerNameInBuildInfo = true**  
+    **/p:IncludeServerNameInBuildInfo=True**  
   
     Web サーバーにアクセスできるすべてのユーザーが、ビルド マニフェスト内のこれらの場所を確認できます。 ソース サーバーがセキュリティで保護されていることを確認してください。  
   
 5. カスタム テンプレートを使用する場合は、この MSBuild 引数を追加して、シンボル ファイルを保存する場所を指定します。  
   
-    **/p:BuildSymbolStorePath =**\<*シンボルへのパス*>  
+    **/p:BuildSymbolStorePath=**\<*シンボルへのパス*>  
   
     ![ビルド定義の TFS 2013 ビルド サーバーの情報を含める](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
   
@@ -85,7 +80,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
 6. 新しいビルドを実行します。  
   
-   **手順 2:** [手順 2: Release your app](#DeployRelease)  
+   **手順 2:**[手順 2:アプリをリリースします。](#DeployRelease)  
   
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 または 2010  
  プロジェクトのビルド マニフェスト (BuildInfo.config ファイル) を自動的に作成し、プロジェクトの出力フォルダーに配置するには、次の手順を実行します。 このファイルは出力フォルダーで "*ProjectName*.BuildInfo.config" と表示されますが、アプリの発行後に配置フォルダーで "BuildInfo.config" という名前に変更されます。  
@@ -98,21 +93,21 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
 3. 次の MSBuild 引数を、ビルド定義に追加します。  
   
-   -   **/p:VisualStudioVersion 12.0 を =**  
+   -   **/p:VisualStudioVersion=12.0**  
   
-   -   **/p:MSBuildAssemblyVersion 12.0 を =**  
+   -   **/p:MSBuildAssemblyVersion=12.0**  
   
    -   **/tv:12.0**  
   
-   -   **/p:IncludeServerNameInBuildInfo = true**  
+   -   **/p:IncludeServerNameInBuildInfo=True**  
   
-   -   **/p:BuildSymbolStorePath =**\<*シンボルへのパス*>  
+   -   **/p:BuildSymbolStorePath=**\<*シンボルへのパス*>  
   
 4. 新しいビルドを実行します。  
   
-   **手順 2:** [手順 2: Release your app](#DeployRelease)  
+   **手順 2:**[手順 2:アプリをリリースします。](#DeployRelease)  
   
-###  <a name="ManualBuild"></a> Visual Studio を使用して手動ビルドのビルド マニフェストを作成します。  
+###  <a name="ManualBuild"></a>Visual Studio を使用して手動ビルドのビルド マニフェストを作成する  
  プロジェクトのビルド マニフェスト (BuildInfo.config ファイル) を自動的に作成し、プロジェクトの出力フォルダーに配置するには、次の手順を実行します。 このファイルは出力フォルダーで "*ProjectName*.BuildInfo.config" と表示されますが、アプリの発行後に配置フォルダーで "BuildInfo.config" という名前に変更されます。  
   
 1. **[ソリューション エクスプローラー]** で、Web プロジェクトをアンロードします。  
@@ -137,33 +132,33 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
 4. 新しいビルドを実行します。  
   
-   **手順 2:** [手順 2: Release your app](#DeployRelease)  
+   **手順 2:**[手順 2:アプリをリリースします。](#DeployRelease)  
   
-###  <a name="MSBuild"></a> MSBuild.exe を使用して手動ビルドのビルド マニフェストを作成します。  
+###  <a name="MSBuild"></a>MSBuild.exe を使用して手動ビルドのビルド マニフェストを作成する  
  ビルドの実行時に次のビルド引数を追加します。  
   
- **/p:GenerateBuildInfoConfigFile = true**  
+ **/p:GenerateBuildInfoConfigFile=True**  
   
- **/p:IncludeServerNameInBuildInfo = true**  
+ **/p:IncludeServerNameInBuildInfo=True**  
   
- **/p:BuildSymbolStorePath =**\<*シンボルへのパス*>  
+ **/p:BuildSymbolStorePath=**\<*シンボルへのパス*>  
   
-##  <a name="DeployRelease"></a> 手順 2: アプリをリリースします。  
+##  <a name="DeployRelease"></a>手順 2: アプリをリリースします。  
  アプリを配置するためのビルド プロセスにより作成された [Web.Deploy パッケージ](http://msdn.microsoft.com/library/dd394698.aspx) を使用する場合、ビルド マニフェストの名前は "*ProjectName*.BuildInfo.config" から "BuildInfo.config" へ自動的に変更され、Web サーバー上にあるアプリの Web.config ファイルと同じフォルダーに配置されます。  
   
  他の方法を使用してアプリを配置する場合は、ビルド マニフェストの名前が "*ProjectName*.BuildInfo.config" から "BuildInfo.config" へ変更され、Web サーバー上にあるアプリの Web.config ファイルと同じフォルダーに配置されていることを確認します。  
   
-## <a name="step-3-monitor-your-app"></a>手順 3: アプリを監視する  
+## <a name="step-3-monitor-your-app"></a>手順 3: アプリを監視します。  
  Web サーバー上でアプリケーション パフォーマンスの監視を設定して、アプリの問題の監視、診断イベントの記録、および IntelliTrace ログ ファイルへのイベントの保存ができるようにします。 「 [Monitor your release for deployment problems (配置の問題に関するリリースの監視)](../debugger/using-the-intellitrace-stand-alone-collector.md)」を参照してください。  
   
-##  <a name="InvestigateEvents"></a> 手順 4: 問題を見つける  
+##  <a name="InvestigateEvents"></a> 手順 4:問題を見つける  
  記録されたイベントを確認し、IntelliTrace を使用してコードをデバッグするには、開発用コンピューターまたは別のコンピューターに Visual Studio Enterprise がインストールされている必要があります。 問題の診断に役立つ CodeLens、デバッガー マップ、コード マップなどのツールを使用することもできます。  
   
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>IntelliTrace ログと対応するソリューションを開く  
   
 1.  IntelliTrace ログ (.iTrace ファイル) を Visual Studio Enterprise から開きます。 同じコンピューターに Visual Studio Enterprise がある場合は、ファイルをダブルクリックするだけです。  
   
-2.  **[ソリューションを開く]** を選ぶと、対応するソリューションまたはプロジェクトが自動的に開きます (そのプロジェクトがソリューションの一部として組み込まれていない場合)。 [Q: IntelliTrace ログには、配置したアプリに関する情報がありません。なぜこのようなことが起きたのですか。どうしたらよいですか。](#InvalidConfigFile)  
+2.  **[ソリューションを開く]** を選ぶと、対応するソリューションまたはプロジェクトが自動的に開きます (そのプロジェクトがソリューションの一部として組み込まれていない場合)。 [Q: 配置したアプリに関する情報が IntelliTrace ログ内にありません。なぜこのようなことが起きたのですか。どうしたらよいですか。](#InvalidConfigFile)  
   
      Visual Studio では、対応するソリューションまたはプロジェクトが開くと、保留中のすべての変更が自動的にシェルブされます。 このシェルブセットの詳細情報を取得するには、 **[出力]** ウィンドウまたは **チーム エクスプローラー**を確認します。  
   
@@ -181,9 +176,9 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
      特定のマッピングを備えたワークスペースや、コンピューターとは名前が異なるワークスペースを作成するには、 **[管理]** を選択します。  
   
-     [Q: Visual Studio は選択したワークスペースが対象となるをなぜように言ってするのでしょうか。](#IneligibleWorkspace)  
+     [Q: 選択したワークスペースが適切でないというメッセージが Visual Studio によって表示されるのはなぜですか。](#IneligibleWorkspace)  
   
-     [Q: チーム コレクションまたは別のコレクションを選択するまでを続行できないのはなぜでしょうか。](#ChooseTeamProject)  
+     [Q: チーム コレクションまたは別のコレクションを選択するまで続行できないのはなぜですか。](#ChooseTeamProject)  
   
 ### <a name="diagnose-a-performance-problem"></a>パフォーマンスの問題を診断する  
   
@@ -221,9 +216,9 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
      ![例外イベントからアプリケーション コードに移動して](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
-     これで、他の記録された値、つまり呼び出し履歴を確認したり、 **IntelliTrace** ウィンドウを使用して、 [記録されたその他のイベント間を "時間内に" 前後に移動したりできます](../debugger/intellitrace.md)。また、関連するコードや、その時点で記録された値の間も前後に移動できます。 [他すべてのイベントと、IntelliTrace ログ内の情報とは](../debugger/using-saved-intellitrace-data.md)  
+     これで、他の記録された値、つまり呼び出し履歴を確認したり、 **IntelliTrace** ウィンドウを使用して、 [記録されたその他のイベント間を "時間内に" 前後に移動したりできます](../debugger/intellitrace.md)。また、関連するコードや、その時点で記録された値の間も前後に移動できます。 [IntelliTrace ログ内の他のイベントと情報について](../debugger/using-saved-intellitrace-data.md)  
   
-###  <a name="WhatElse"></a> ここからすれば他に何をしますか。  
+###  <a name="WhatElse"></a>ここでは他に何ができますか。  
   
 -   [このコードのさらに詳細な情報を入手します](../ide/find-code-changes-and-other-history-with-codelens.md)。 エディターから離れずに、このコードの参照、変更履歴、関連するバグ、作業項目、コード レビュー、または単体テストを検索するには、エディターの CodeLens インジケーターを使用します。  
   
@@ -231,18 +226,18 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
      ![CodeLens&#45;変更このコードの履歴の表示](../debugger/media/ffr-itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
   
--   [デバッグ中に、コード内の位置をマップします。](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) デバッグ セッション中に呼び出されたメソッドを視覚的に追跡するには、呼び出し履歴を割り当てます。  
+-   [デバッグ中にコード内の位置を割り当てます。](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) デバッグ セッション中に呼び出されたメソッドを視覚的に追跡するには、呼び出し履歴を割り当てます。  
   
      ![デバッグ中に呼び出し履歴でマップ](../debugger/media/ffr-itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
   
 ###  <a name="FAQ"></a> Q & A  
   
-####  <a name="WhyInclude"></a> Q: 自分のプロジェクト、ソース管理、ビルド、およびリリースを使用したシンボルに関する情報を含めますか。  
+####  <a name="WhyInclude"></a> Q:プロジェクト、ソース管理、ビルド、およびシンボルに関する情報をリリースに含めるのはなぜですか。  
  Visual Studio はこの情報を使用して、デバッグしようとするリリースに対応するソリューションやソースを検索します。 IntelliTrace ログを開き、イベントを選択してデバッグを開始した後に、Visual Studio はシンボルを使用して検索を実行し、イベントが発生したコードを表示します。 それから、記録された値を確認し、実行中のコード内を前後に移動できます。  
   
  TFS を使用しており、この情報がビルド マニフェスト (BuildInfo.config ファイル) ではない場合、Visual Studio は対応するソースとシンボルを現在接続されている TFS 上で検索します。 Visual Studio が適切な TFS または対応するソースを見つけられない場合、他の TFS を選択するように求めるプロンプトが表示されます。  
   
-####  <a name="InvalidConfigFile"></a> Q: IntelliTrace ログには、配置したアプリに関する情報がありません。 なぜこのようなことが起きたのですか。 どうしたらよいですか。  
+####  <a name="InvalidConfigFile"></a> Q:配置したアプリに関する情報が IntelliTrace ログ内にありません。 なぜこのようなことが起きたのですか。 どうしたらよいですか。  
  この問題は、開発用コンピューターから配置した場合や配置中に TFS に接続していない場合に発生する可能性があります。  
   
 1.  プロジェクトの配置フォルダーに移動します。  
@@ -253,23 +248,23 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
 - **ProjectName**  
   
-   Visual Studio 内のプロジェクトの名前。 例えば:  
+   Visual Studio 内のプロジェクトの名前。 例:  
   
   ```  
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
   ```  
   
-- **発生しました。 SourceControl**  
+- **SourceControl**  
   
 - ソース管理システムに関する情報と以下の必須プロパティ:  
   
   - **TFS**  
   
-    - **ProjectCollectionUri**: Team Foundation Server およびプロジェクト コレクションの URI  
+    - **ProjectCollectionUri**:Team Foundation Server およびプロジェクト コレクションの URI  
   
-    - **ProjectItemSpec**: アプリのプロジェクト ファイル (.csproj または .vbproj) へのパス  
+    - **ProjectItemSpec**:アプリのプロジェクト ファイル (.csproj または .vbproj) へのパス  
   
-    - **ProjectVersionSpec**: プロジェクトのバージョン  
+    - **ProjectVersionSpec**:プロジェクトのバージョン  
   
       例えば:  
   
@@ -285,15 +280,15 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
   - **Git**  
   
-    - **GitSourceControl**: **GitSourceControl** スキーマの場所  
+    - **GitSourceControl**:場所、 **GitSourceControl**スキーマ  
   
-    - **RepositoryUrl**: Team Foundation Server、プロジェクト コレクション、および Git リポジトリの URI  
+    - **RepositoryUrl**:Team Foundation Server、プロジェクト コレクション、および Git リポジトリの URI  
   
-    - **ProjectPath**: アプリのプロジェクト ファイル (.csproj or .vbproj) へのパス  
+    - **ProjectPath**:アプリのプロジェクト ファイル (.csproj または .vbproj) へのパス  
   
-    - **CommitId**: コミットの ID  
+    - **CommitId**:コミットの id  
   
-      例えば:  
+      例:  
   
     ```  
     <SourceControl type="Git">   
@@ -309,15 +304,15 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
    ビルド システムに関する情報 ( `"TeamBuild"` または `"MSBuild"`) と以下の必須プロパティ:  
   
-  - **BuildLabel** (TeamBuild の場合): ビルドの名前と番号。 このラベルは配置イベントの名前としても使用されます。 ビルド番号について詳しくは、「 [完了したビルドにわかりやすい名前を付けるためにビルド番号を使用](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)」をご覧ください。  
+  - **BuildLabel** (teambuild の場合)。ビルドの名前と番号。 このラベルは配置イベントの名前としても使用されます。 ビルド番号について詳しくは、「 [完了したビルドにわかりやすい名前を付けるためにビルド番号を使用](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)」をご覧ください。  
   
-  - **SymbolPath** (推奨): セミコロンで区切ったシンボル (PDB ファイル) の場所に関する URI の一覧。 これらの URI は、URL または UNC のいずれかです。 これにより、Visual Studio は対応するシンボルを容易に検索でき、デバッグに役立ちます。  
+  - **SymbolPath** (推奨)。セミコロンで区切ったシンボル (PDB ファイル) の場所の Uri の一覧です。 これらの URI は、URL または UNC のいずれかです。 これにより、Visual Studio は対応するシンボルを容易に検索でき、デバッグに役立ちます。  
   
-  - **BuildReportUrl** (TeamBuild の場合): TFS でのビルド レポートの場所  
+  - **BuildReportUrl** (teambuild の場合)。TFS でのビルド レポートの場所  
   
-  - **BuildId** (TeamBuild の場合): TFS でのビルドの詳細の URI。 この URI は配置イベントの ID としても使用されます。 TeamBuild を使用していない場合は、この ID は一意である必要があります。  
+  - **BuildId** (teambuild の場合)。TFS でビルドの詳細の URI。 この URI は配置イベントの ID としても使用されます。 TeamBuild を使用していない場合は、この ID は一意である必要があります。  
   
-  - **BuiltSolution**: 対応するソリューションを検索して開くために Visual Studio が使用するソリューション ファイルへのパス。 これは、 **SolutionPath** MsBuild プロパティの内容です。  
+  - **BuiltSolution**:ソリューション ファイルへのパスを検索して、対応するソリューションを開く Visual Studio を使用します。 これは、 **SolutionPath** MsBuild プロパティの内容です。  
   
     例えば:  
   
@@ -346,12 +341,12 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
     </Build>  
     ```  
   
-####  <a name="IneligibleWorkspace"></a> Q: Visual Studio は選択したワークスペースが対象となるをなぜように言ってするのでしょうか。  
+####  <a name="IneligibleWorkspace"></a> Q:選択したワークスペースが適切でないというメッセージが Visual Studio によって表示されるのはなぜですか。  
  **A:** 選択したワークスペースのソース コントロール フォルダーとローカル フォルダーの間にマッピングがありません。 このワークスペースのマッピングを作成するには、 **[管理]** を選択します。 それ以外の場合は、既に割り当てられているワークスペースを選択するか、新しいワークスペースを作成します。  
   
  ![マップされたワークスペースとソース管理から開く](../debugger/media/ffr-openprojectfromsourcecontrol-notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
   
-####  <a name="ChooseTeamProject"></a> Q: チーム コレクションまたは別のコレクションを選択するまでを続行できないのはなぜでしょうか。  
+####  <a name="ChooseTeamProject"></a> Q:チーム コレクションまたは別のコレクションを選択するまで続行できないのはなぜですか。  
  **A:** これは次の理由によって発生する場合があります。  
   
 -   Visual Studio が TFS に接続されていない。  
@@ -360,23 +355,18 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
 -   Visual Studio が、現在のチーム コレクションでソリューションまたはプロジェクトを見つけられなかった。  
   
-     ビルド マニフェスト ファイル (\<*ProjectName*>。BuildInfo.config) が Visual Studio が対応するソースを検索する場所を指定していない Visual Studio では、現在接続されている TFS を使用して、、対応するソリューションまたはプロジェクトを検索します。 対応するソースが現在のチーム コレクションにない場合、Visual Studio は、別のチーム コレクションに接続するように求めるメッセージを表示します。  
+     対応するソースを Visual Studio で検索できる場所がビルド マニフェスト ファイル (\<*ProjectName*>.BuildInfo.config) によって指定されていない場合、Visual Studio では現在接続されている TFS を使用して、対応するソリューションまたはプロジェクトが検索されます。 対応するソースが現在のチーム コレクションにない場合、Visual Studio は、別のチーム コレクションに接続するように求めるメッセージを表示します。  
   
--   Visual Studio ビルド マニフェスト ファイルで指定されたコレクションでソリューションまたはプロジェクトが見つかりませんでした (\<*ProjectName*>。BuildInfo.config)。  
+-   Visual Studio が、ビルド マニフェスト ファイル (\<*ProjectName*>.BuildInfo.config) で指定されたコレクションでソリューションまたはプロジェクトを見つけられなかった。  
   
      新しい TFS に移行したため、対応するソースが指定 TFS にない、あるいは TFS 自体が存在しない可能性があります。 指定された TFS が存在しない場合、Visual Studio は 約 1 分後にタイムアウトになり、別のコレクションに接続するように求めるメッセージが表示される可能性があります。 操作を続行するには、正しい TFS サーバーに接続します。  
   
      ![ソース管理から開く&#45;移行](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
-####  <a name="WhatWorkspace"></a> Q: ワークスペースとは?  
- **A:** [ワークスペースにはソースのコピーが格納](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) されるので、作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。  
+####  <a name="WhatWorkspace"></a> Q:ワークスペースとは何ですか。  
+ **A:** ご利用の[ワークスペースにはソースのコピーが格納](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)されるので、ご自分の作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。  
   
-####  <a name="UntrustedSymbols"></a> 信頼されていないシンボルに関するメッセージを取得する q はありますか  
+####  <a name="UntrustedSymbols"></a> Q:信頼されていないシンボルに関する次のメッセージが表示されるのはなぜですか。  
  ![信頼されていないシンボル パスでデバッグしますか。](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
   
- **A:** このメッセージを表示するときに、ビルド マニフェスト ファイルでシンボル パス (\<*ProjectName*>。BuildInfo.config) が、信頼されたシンボル パスの一覧に含まれていません。 このパスをシンボル パスの一覧に追加するには、デバッガー オプションを使用します。
-
-
-
-
-
+ **A:** このメッセージは、ビルド マニフェスト ファイル (\<*ProjectName*>.BuildInfo.config) のシンボル パスが、信頼されたシンボル パスの一覧に含まれない場合に表示されます。 このパスをシンボル パスの一覧に追加するには、デバッガー オプションを使用します。

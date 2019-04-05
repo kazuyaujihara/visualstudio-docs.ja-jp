@@ -1,14 +1,9 @@
 ---
 title: '方法: ClickOnce で発行されるファイルの指定 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f80dc31d2b572d54d0973d98f85f8538b1a805ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268321"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974501"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>方法: ClickOnce で発行されるファイルを指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "49268321"
   
 -   SQL データベース (.mdf ファイルおよび .mdb) ファイルと XML ファイルなどのデータ ファイルは、既定では、データ ファイルとしてマークされます。  
   
--   参照を追加するとき、アセンブリ (.dll ファイル) への参照が次のように指定されます: 場合**ローカル コピー**は**False**、既定では、前提条件となるアセンブリとしてマークされている (**(前提条件自動)**) アプリケーションをインストールする前に、GAC に存在している必要があります。 場合**ローカル コピー**は**True**、アセンブリは既定では、アプリケーション アセンブリとしてマークされます (**含める (自動)**)、インストール時にアプリケーション フォルダーにコピーされます。 COM の参照が表示されます、**アプリケーション ファイル** ダイアログ ボックス (.ocx ファイル) として場合にのみその**Isolated**プロパティに設定されて**True**します。 既定では、含まれることです。  
+-   アセンブリ (.dll ファイル) への参照は、参照を追加するときに、次のように指定されます。場合**ローカル コピー**は**False**、既定では、前提条件となるアセンブリとしてマークされている (**前提条件 (自動)**) アプリケーションをインストールする前に、GAC に存在している必要があります。 場合**ローカル コピー**は**True**、アセンブリは既定では、アプリケーション アセンブリとしてマークされます (**含める (自動)**)、インストール時にアプリケーション フォルダーにコピーされます。 COM の参照が表示されます、**アプリケーション ファイル** ダイアログ ボックス (.ocx ファイル) として場合にのみその**Isolated**プロパティに設定されて**True**します。 既定では、含まれることです。  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>アプリケーション ファイル ダイアログ ボックスにファイルを追加するには  
   
@@ -124,6 +119,3 @@ ms.locfileid: "49268321"
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
  [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

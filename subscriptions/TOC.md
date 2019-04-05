@@ -68,6 +68,7 @@
 #### [サブスクリプションを検索する](search-license.md)
 #### [サブスクリプションのインポート](exporting-subscriptions.md)
 #### [超過](handle-overclaimed-license.md)
+#### [最大使用量](maximum-usage.md)
 #### [有効期限が切れたサブスクリプション](handle-expired-license.md)
 #### [個人用電子メール サインインを持つサブスクライバー](personal-email-sign-ins.md)
 ## Visual Studio サブスクリプションを取得する

@@ -29,7 +29,7 @@ ms.locfileid: "56682545"
 
 1.  エディター分類子プロジェクトを作成します。 ソリューション `BraceMatchingTest`の名前を指定します。
 
-2.  エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)します。
+2.  エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)を参照してください。
 
 3.  既存のクラス ファイルを削除します。
 

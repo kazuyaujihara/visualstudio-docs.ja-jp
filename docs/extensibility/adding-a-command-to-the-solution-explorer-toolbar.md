@@ -27,13 +27,13 @@ ms.locfileid: "56717794"
  メニュー、ツールバーのコマンドの詳細については、 *.vsct*ファイルを参照してください[コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。
 
 > [!NOTE]
->  XML コマンド テーブルの使用 (*.vsct*) コマンド テーブル構成ではなくファイル (*.ctc*) ファイルを Vspackage でのメニューとコマンドの表示方法を定義します。 詳細については、次を参照してください。 [Visual Studio Command Table (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
+>  XML コマンド テーブルの使用 (*.vsct*) コマンド テーブル構成ではなくファイル (*.ctc*) ファイルを Vspackage でのメニューとコマンドの表示方法を定義します。 詳細については、[Visual Studio Command Table (を参照してください。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。
 
 ## <a name="create-an-extension-with-a-menu-command"></a>メニュー コマンドを使用して拡張機能を作成します。
- という名前の VSIX プロジェクトを作成する`SolutionToolbar`します。 という名前のメニュー コマンド項目テンプレートを追加**ツールバー ・ ボタン**します。 これを行う方法については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
+ という名前の VSIX プロジェクトを作成する`SolutionToolbar`します。 という名前のメニュー コマンド項目テンプレートを追加**ツールバー ・ ボタン**します。 これを行う方法については、[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。
 
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>ソリューション エクスプ ローラーのツールバーにボタンを追加します。
  このチュートリアルのこのセクションでは、ボタンを追加する方法を示しています。、**ソリューション エクスプ ローラー**ツールバー。 このボタンをクリックすると、コールバック メソッドでコードが実行されます。
@@ -114,7 +114,7 @@ ms.locfileid: "56717794"
 
 5. **ファイル** メニューのをクリックして**ソリューションを閉じる**します。 ツールバーのボタンが表示されなくなります。
 
-   ボタンの可視性がによって制御される[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSPackage が読み込まれるまでです。 VSPackage が読み込まれた後、ボタンの可視性は、VSPackage によって制御されます。  詳細については、次を参照してください。 [Menucommand とします。OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)します。
+   ボタンの可視性がによって制御される[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSPackage が読み込まれるまでです。 VSPackage が読み込まれた後、ボタンの可視性は、VSPackage によって制御されます。  詳細については、[Menucommand とを参照してください。OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)

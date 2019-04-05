@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1001: 破棄可能なフィールドを所有する型は、破棄可能でなければなりません。Microsoft Docs'
-ms.custom: ''
+title: CA1001:破棄可能なフィールドは破棄可能にする必要がありますを所有する型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1001
 - TypesThatOwnDisposableFieldsShouldBeDisposable
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a4bde7f20d1e7c93aec7a4a1a3abf44c21659b6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 98be3bafb582e4d48560108625be911e53acf664
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176450"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975842"
 ---
-# <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: 破棄可能なフィールドを所有する型は、破棄可能でなければなりません
+# <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001:破棄可能なフィールドを所有する型は、破棄可能でなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -58,9 +53,8 @@ ms.locfileid: "49176450"
 ## <a name="related-rules"></a>関連規則  
  [CA2213: 破棄可能なフィールドは破棄されなければなりません](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2216: 破棄できる型ではファイナライザーを宣言します](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
+ [CA 2216:破棄可能な型はファイナライザーを宣言する必要があります。](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
   
- [CA2215: Dispose メソッドから基本クラスの破棄を呼び出します](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)  
+ [CA2215:Dispose メソッドが基底クラス dispose を呼び出す必要があります。](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)  
   
- [CA1049: ネイティブ リソースを所有する型は、破棄可能でなければなりません](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
-
+ [CA 1049:ネイティブ リソースを所有する型は、破棄可能でなければなりません](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)

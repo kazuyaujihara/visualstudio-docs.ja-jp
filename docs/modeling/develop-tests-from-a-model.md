@@ -33,7 +33,7 @@ ms.locfileid: "57567316"
  サブシステムのテストでは、システムの主要コンポーネントに同じ原則が適用されます。 各コンポーネントは、他のコンポーネントとは別個にテストされます。 サブシステムのテストでは、コンポーネントのユーザー インターフェイスまたは API で確認できる動作を集中的にテストします。
 
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>要求モデルからシステム テストを派生させる
- システム テストと要求モデル間の関係を作成して、それを維持することができます。 この関係を確立するには、要求モデルの主要な要素に対応するテストを作成します。 Visual Studio を使用すると、テストとモデルの部分間のリンクを作成することで、その関係を維持できます。 要件モデルの詳細については、次を参照してください。[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。
+ システム テストと要求モデル間の関係を作成して、それを維持することができます。 この関係を確立するには、要求モデルの主要な要素に対応するテストを作成します。 Visual Studio を使用すると、テストとモデルの部分間のリンクを作成することで、その関係を維持できます。 要件モデルの詳細については、[ユーザー要件をモデル化](../modeling/model-user-requirements.md)を参照してください。
 
 ### <a name="write-tests-for-each-use-case"></a>各ユース ケースのテストの作成
  [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] を使用している場合、要求モデル内で定義した各ユース ケースに対して、一連のテストを作成することができます。 たとえば、Create Order および Add Item to Order を含んでいる Order a Meal というユース ケースがある場合、全体に対するテストと、これらのユース ケースの細部に対する両方のテストを作成できます。
@@ -59,7 +59,7 @@ ms.locfileid: "57567316"
 
 1. [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] で要求を作成し、その要求に対してテスト スイートを作成します。
 
-    作成した要求は、[!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] の作業項目になります。 Team foundation プロジェクトで使用されるプロセス テンプレートによって、ユーザー ストーリー、要件、またはユース ケース作業項目があります。 詳細については、次を参照してください。[のアジャイル ツール、アジャイル プロジェクト管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)します。
+    作成した要求は、[!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] の作業項目になります。 Team foundation プロジェクトで使用されるプロセス テンプレートによって、ユーザー ストーリー、要件、またはユース ケース作業項目があります。 詳細については、[のアジャイル ツール、アジャイル プロジェクト管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)を参照してください。
 
 2. モデル内の 1 つまたは複数のユース ケースに対して、要求の作業項目をリンクします。
 
@@ -110,7 +110,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="deriving-subsystem-tests-from-models"></a>モデルからサブシステム テストを派生させる
  大規模システムのハイレベル設計では、コンポーネントまたはサブシステムを特定できます。 これらは、個別に設計可能なパーツ、別のコンピューターに配置できるパーツ、さまざまな方法で再結合できる再利用可能モジュールなどを表しています。
 
- システム全体に対して使用した原則と同じ原則が、各主要コンポーネントに対しても適用できます。 大規模なプロジェクトでは、各コンポーネントは、独自の要求モデルを持つことができます。 小さいプロジェクトでは、アーキテクチャ モデルやハイレベル設計を作成して、主要コンポーネントとその相互作用を表わすことができます。 詳細については、次を参照してください。 [、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)します。
+ システム全体に対して使用した原則と同じ原則が、各主要コンポーネントに対しても適用できます。 大規模なプロジェクトでは、各コンポーネントは、独自の要求モデルを持つことができます。 小さいプロジェクトでは、アーキテクチャ モデルやハイレベル設計を作成して、主要コンポーネントとその相互作用を表わすことができます。 詳細については、[、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)を参照してください。
 
  いずれの場合でも、要求モデルとシステム テスト間と同じ方法で、モデル要素とサブシステム テスト間の関係を確立することができます。
 
@@ -147,7 +147,7 @@ Assert (countAfter == countBefore = 1);
 
 1. [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] で要求を作成し、その要求に対してテスト スイートを作成します。
 
-    作成した要求は、[!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] の作業項目になります。 Team foundation プロジェクトで使用されるプロセス テンプレートによって、ユーザー ストーリー、要件、またはユース ケース作業項目があります。 詳細については、次を参照してください。[のアジャイル ツール、アジャイル プロジェクト管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)します。
+    作成した要求は、[!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] の作業項目になります。 Team foundation プロジェクトで使用されるプロセス テンプレートによって、ユーザー ストーリー、要件、またはユース ケース作業項目があります。 詳細については、[のアジャイル ツール、アジャイル プロジェクト管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)を参照してください。
 
 2. モデル内の 1 つまたは複数の要素に対して、要求の作業項目をリンクします。
 

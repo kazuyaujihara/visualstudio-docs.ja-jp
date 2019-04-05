@@ -20,7 +20,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 62d1a0e78aebd39c1f305c3480d6a418b382b4fd
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51781791"
@@ -35,7 +35,7 @@ ms.locfileid: "51781791"
   
  プロジェクト内の項目は、ファイル、または、インターネット経由でデータベースのリポジトリまたはデータ接続内のオブジェクトより抽象的オブジェクトができます。 項目がファイルの場合は、プロジェクト参照に基づくまたはディレクトリ ベースのプロジェクトのいずれかにすることができます。  
   
- 参照ベースのプロジェクトでは、項目が 1 つ以上のプロジェクトに表示できます。 ただし、項目が表す実際のファイルは、1 つのディレクトリのみであります。 ディレクトリ ベースのプロジェクトでは、すべてのプロジェクト項目は、ディレクトリ構造に存在します。 詳細については、次を参照してください。[プロジェクトにおける NIB: 項目の管理](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)します。  
+ 参照ベースのプロジェクトでは、項目が 1 つ以上のプロジェクトに表示できます。 ただし、項目が表す実際のファイルは、1 つのディレクトリのみであります。 ディレクトリ ベースのプロジェクトでは、すべてのプロジェクト項目は、ディレクトリ構造に存在します。 詳細については、[プロジェクトにおける NIB: 項目の管理](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)を参照してください。  
   
  ローカル項目は、アプリケーションがインストールされている同じコンピューターに格納されます。 リモートの項目は、ローカル ネットワークでは、別のサーバーまたは別の場所はインターネット上に格納できます。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "51781791"
   
 - ファイルをローカルに保存をサーバーにパブリッシュしたり、アイテムは、リモート オブジェクトへのデータ接続を表す場合に、プロジェクト項目を保存するための別のアプローチを使用してキーを押します。  
   
-  永続化の詳細については、次を参照してください。[プロジェクトの永続化](../../extensibility/internals/project-persistence.md)と[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)します。  
+  永続化の詳細については、[プロジェクトの永続化](../../extensibility/internals/project-persistence.md)と[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)を参照してください。  
   
 ## <a name="project-commitment-model"></a>コミットメントのプロジェクト モデル  
  永続化されたデータ オブジェクトが開かれるダイレクト モードまたはトランザクション モードにしますか?  

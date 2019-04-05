@@ -1,33 +1,28 @@
 ---
 title: アダプターのエディターで新しいまたは変更された動作 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cac26a6aeca6985546bcd21aec6cf45d72164e8a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 79f0a700b64abffe93d79d284ce2f45a76b3e6a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817400"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963323"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>エディターのアダプターを搭載した新規または変更された動作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 以前のバージョンの Visual Studio コア エディターと照らして記述されたコードを更新する、新しい API を使用するのではなく、エディターのアダプター (または shim) を使用する場合は、エディターのアダプターの動作に次の相違点の注意する必要があります。に関しては、前のコア エディター。  
   
-## <a name="features"></a>フィーチャー  
+## <a name="features"></a>機能  
   
 #### <a name="using-setsite"></a>SetSite() を使用します。  
  呼び出す必要があります<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A>テキスト バッファーのテキストのビューを作成し、それらの他の操作を実行する前に、コード ウィンドウ。 ただし、これを使用する場合は必要はありません、<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>このサービスの Create() メソッド自体を呼び出すために、それを作成する<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A>します。  
@@ -48,7 +43,7 @@ ms.locfileid: "51817400"
  WPF のモードは、2 つの方法で Win32 モードによって異なります。 まず、テキスト ビューは、WPF のコンテキストでホストできます。 キャストすることによって、WPF ウィンドウを表示できます、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>に<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane>を呼び出すと<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>します。 2 番目、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A>も返しますが、HWND がこの HWND の位置を確認し、フォーカスの設定にのみ使用できます。 エディターで、ウィンドウを描画する方法には影響があるため、WM_PAINT メッセージに応答するこの HWND を使用する必要がありますできません。 この HWND では、アダプターを使用して新しいエディター コードへの移行を容易にするためにのみ存在します。 使用する必要がありますしないことを強くお勧め`VIF_NO_HWND_SUPPORT`コンポーネントから返される HWND の制限のため、操作する HWND を必要とする場合`GetWindowHandle`このモードでいます。  
   
 #### <a name="passing-arrays-as-parameters-in-native-code"></a>ネイティブ コードで配列をパラメーターとして渡す  
- 配列とその数を含むパラメーターを持つ API のレガシのエディターで多くの方法はあります。 例を示します。  
+ 配列とその数を含むパラメーターを持つ API のレガシのエディターで多くの方法はあります。 以下に例を示します。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>  
   
@@ -62,7 +57,7 @@ ms.locfileid: "51817400"
  バッファーのアダプターは、UI スレッドから常に呼び出す必要があります。 バッファーのアダプターは、マネージ オブジェクト、つまり、呼び出しが自動的にマーシャ リングできない、UI スレッドへとマネージ コードからそれを呼び出すことは COM マーシャ リングをバイパスします。  使用する必要があります、バック グラウンド スレッドからバッファー アダプターを呼び出す場合<xref:System.Windows.Threading.Dispatcher.Invoke%2A>または同様のメソッド。  
   
 #### <a name="lockbuffer-methods"></a>LockBuffer メソッド  
- すべての LockBuffer() メソッドが非推奨とされます。 例を示します。  
+ すべての LockBuffer() メソッドが非推奨とされます。 以下に例を示します。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.LockBuffer%2A>  
   
@@ -150,4 +145,3 @@ ms.locfileid: "51817400"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.AfterCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.BeforeCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetContextLocation%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetServiceProvider%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.ReplaceSubjectTextSpan%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateSmartTagWindow%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> アウトラインの UI では無視されるが、アダプターに実装されます。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> アウトラインの UI では無視されるが、アダプターに実装されます。|
-

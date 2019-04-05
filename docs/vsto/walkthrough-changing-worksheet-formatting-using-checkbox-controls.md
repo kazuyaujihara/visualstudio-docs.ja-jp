@@ -157,7 +157,7 @@ ms.locfileid: "56624660"
 ## <a name="next-steps"></a>次の手順
  このチュートリアルでは、チェック ボックスを使用して、Excel ワークシート上でテキストの書式設定の基本を説明します。 ここでは、次のタスクを行います。
 
--   プロジェクトを配置します。 詳細については、次を参照してください。 [ClickOnce を使用して Office ソリューションを配置](../vsto/deploying-an-office-solution-by-using-clickonce.md)します。
+-   プロジェクトを配置します。 詳細については、[ClickOnce を使用して Office ソリューションを配置](../vsto/deploying-an-office-solution-by-using-clickonce.md)を参照してください。
 -   ボタンを使用してテキスト ボックスへデータを挿入する。 詳細については、「[チュートリアル:ボタンを使用してワークシート内のテキスト ボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)します。
 
 ## <a name="see-also"></a>関連項目

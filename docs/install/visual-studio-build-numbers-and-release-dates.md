@@ -1,23 +1,25 @@
 ---
 title: Visual Studio のビルド番号とリリース日
 titleSuffix: ''
-description: Visual Studio 2017 以降のリリース済みバージョンおよびビルド番号のリリース日順の一覧。
+description: Visual Studio の現在までのリリース済みバージョンおよびビルド番号のリリース日順の一覧。
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c5a21c83329d8c528421c2336755a5d0621be9
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 3e88054d497bda068585b7bc58787ee3058bcb71
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194982"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476086"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio のビルド番号とリリース日
 
@@ -29,6 +31,7 @@ ms.locfileid: "58194982"
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.10 | 解放 | 2019 年 3 月 25 日 | 15.9.28307.557 |
 | 15.9.9 | 解放 | 2019 年 3 月 12 日 | 15.9.28307.518 |
 | 15.0.21 | 解放 | 2019 年 3 月 12 日 | 15.0.26228.76 |
 | 15.9.8 | 解放 | 2019 年 3 月 5 日 | 15.9.28307.481 |
@@ -189,6 +192,8 @@ ms.locfileid: "58194982"
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | リリース候補 3 (RC.3) | 2019 年 3 月 19 日 | 16.0.28714.193 |
+| 16.0.0 | プレビュー 4.3 | 2019 年 3 月 19 日 | 16.0.28714.193 |
 | 16.0.0 | リリース候補 2 (RC.2) | 2019 年 3 月 12 日 | 16.0.28711.60 |
 | 16.0.0 | Preview 4.2 | 2019 年 3 月 12 日 | 16.0.28711.60 |
 | 16.0.0 | リリース候補 1 Svc1 (RC.1 Svc1) | 2019 年 3 月 6 日 | 16.0.28705.295 |
