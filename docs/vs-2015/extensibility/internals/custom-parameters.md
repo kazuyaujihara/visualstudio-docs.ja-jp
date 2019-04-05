@@ -1,34 +1,29 @@
 ---
 title: カスタム パラメーター |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - wizards, custom parameters
 - custom parameters
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8bb8a1861d6162e73906d74250f738ff96b9a505
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1a595861be835ec1aaa7079b3e3fe1962d5055e9
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757906"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58973851"
 ---
 # <a name="custom-parameters"></a>カスタム パラメーター
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 カスタム パラメーターは、ウィザードが開始した後に、ウィザードの操作を制御します。 関連の .vsz ファイルは、統合開発環境 (IDE) によってパッケージ化され、ウィザードが開始されると、文字列の配列として、ウィザードに渡されますユーザー定義のパラメーターの配列を提供します。 ウィザードは、文字列の配列を解析し、情報を使用して、ウィザードの実際の操作を制御します。 この方法で、ウィザードは、.vsz ファイルの内容に応じて機能をカスタマイズできます。  
   
- コンテキストのパラメーターは、ウィザードの開始時にその一方で、プロジェクトの状態を定義します。 詳細については、[コンテキスト パラメーター](../../extensibility/internals/context-parameters.md)を参照してください。  
+ コンテキストのパラメーターは、ウィザードの開始時にその一方で、プロジェクトの状態を定義します。 詳細については、次を参照してください。[コンテキスト パラメーター](../../extensibility/internals/context-parameters.md)します。  
   
  カスタム パラメーターを持つ .vsz ファイルの例を次に示します。  
   
@@ -46,11 +41,10 @@ Param="PROJECT_TYPE = CSPROJ"
   
  ウィザードは、文字列の配列を解析し、文字列に対して適切に機能する責任を負います。 カスタム パラメーターを実装することで、この方法でさまざまな機能を実行する 1 つのウィザードを作成できます。 つまり、1 つのウィザードでは、3 つの異なる .vsz ファイルを可能性があります。 各ファイルは、異なるさまざまな状況で、ウィザードの動作を制御するカスタムのパラメーターのセットを渡します。  
   
- 詳細については、[ウィザード (を参照してください。Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)します。  
+ 詳細については、次を参照してください。[ウィザード (します。Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
  [コンテキスト パラメーター](../../extensibility/internals/context-parameters.md)   
  [ウィザード](../../extensibility/internals/wizards.md)   
  [ウィザード (.Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)
-

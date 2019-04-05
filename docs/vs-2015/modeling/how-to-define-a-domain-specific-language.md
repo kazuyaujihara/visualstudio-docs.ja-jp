@@ -1,12 +1,9 @@
 ---
 title: ドメイン固有言語を定義する方法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.domainrelationship
 - vs.dsltools.dsldesigner.domainclass
@@ -20,20 +17,20 @@ ms.assetid: d1772463-0eb1-40a5-b7c0-9a008bc76760
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b3c83ded60359bff2f84d35aec41eb387227022a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4a03c8901eba94c7c96e200a38a6619ae7df3e70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880742"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977209"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>方法: ドメイン固有言語を定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ドメイン固有言語 (DSL) を定義するには、テンプレートから [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。 ソリューションの主要な機能は DSL 定義図です。これは DslDefinition.dsl に保存されています。 DSL 定義は、DSL のクラスとシェイプを定義します。 これらの要素を変更および追加した後で、プログラム コードを追加して DSL を詳細にカスタマイズできます。  
   
- 作業することをお勧めの Dsl に慣れていない場合、 **DSL ツール ラボ**、このサイトで入手できます: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ 作業することをお勧めの Dsl に慣れていない場合、 **DSL ツール ラボ**、このサイトで入手できます。[Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ##  <a name="templates"></a> テンプレート ソリューションを選択します。  
  DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。  
@@ -69,7 +66,7 @@ ms.locfileid: "49880742"
    -   選択**最小言語**それ以外の場合、または不明な場合。  
   
        > [!NOTE]
-       >  クラス図またはコンポーネント図を作成する場合は、UML モデルの使用を検討してください。 UML モデリング ツールには、1 つのモデルの周りで統合される図のセットが用意されています。 これらの図は拡張可能であり、ModelBus を使用して DSL と統合できます。 詳細については、[アプリのモデルを作成する](../modeling/create-models-for-your-app.md)を参照してください。  
+       >  クラス図またはコンポーネント図を作成する場合は、UML モデルの使用を検討してください。 UML モデリング ツールには、1 つのモデルの周りで統合される図のセットが用意されています。 これらの図は拡張可能であり、ModelBus を使用して DSL と統合できます。 詳細については、次を参照してください。[アプリのモデルを作成する](../modeling/create-models-for-your-app.md)します。  
   
    -   選択**最小 WinForm デザイナー**または**最小 WPF デザイナー** Windows Forms または WPF サーフェイスに表示されている DSL を作成します。 エディターを定義するコードを記述する必要があります。 詳細については、次のトピックを参照してください。  
   
@@ -93,7 +90,7 @@ ms.locfileid: "49880742"
   
    ![dsl designer](../modeling/media/dsl-designer.png "dsl_designer")  
   
-   このソリューションはドメイン固有言語を定義します。 詳細については、[ドメイン固有言語ツールのユーザー インターフェイスの概要](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)を参照してください。  
+   このソリューションはドメイン固有言語を定義します。 詳細については、次を参照してください。[ドメイン固有言語ツールのユーザー インターフェイスの概要](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)します。  
   
 ### <a name="test-the-solution"></a>ソリューションのテスト  
  テンプレート ソリューションは、機能する DSL を提供します。この DSL を変更するか、またはそのまま使用できます。  
@@ -158,7 +155,7 @@ ms.locfileid: "49880742"
   
  ドメイン クラスを作成するにはからドラッグすることができます、**という名前のドメイン クラス**ダイアグラムをツールし、クラスの名前を変更します。  
   
- 詳細については、[ドメイン クラスのプロパティの](../modeling/properties-of-domain-classes.md)を参照してください。  
+ 詳細については、次を参照してください。[ドメイン クラスのプロパティの](../modeling/properties-of-domain-classes.md)します。  
   
 ### <a name="create-an-embedding-relationship-for-each-domain-class"></a>ドメイン クラスごとに埋め込みリレーションシップを作成します。  
  ルート クラス以外のすべてのドメイン クラスは、1 つ以上の埋め込みリレーションシップのターゲットであるか、または埋め込みリレーションシップのターゲットであるクラスから継承しているクラスである必要があります。  
@@ -173,9 +170,9 @@ ms.locfileid: "49880742"
   
 |要素の表示方法|親 (埋め込み) クラス|DSL ソリューション テンプレートの例|  
 |------------------------------|--------------------------------|--------------------------------------|  
-|図のシェイプ。<br /><br /> スイムレーン。|DSL のルート クラス。|最小言語。<br /><br /> タスク フロー: Actor クラス。|  
-|スイムレーンのシェイプ。|スイムレーンとして表示される要素のドメイン クラス。|タスク フロー: Task クラス。|  
-|シェイプ内のリストの項目。コンテナーが削除されると、項目も削除されます。<br /><br /> シェイプの境界上のポート。|コンテナー シェイプにマップされるドメイン クラス。|クラス図: Attribute クラス。<br /><br /> コンポーネント図: Port クラス。|  
+|図のシェイプ。<br /><br /> スイムレーン。|DSL のルート クラス。|最小言語。<br /><br /> タスク フロー:Actor クラス。|  
+|スイムレーンのシェイプ。|スイムレーンとして表示される要素のドメイン クラス。|タスク フロー:Task クラス。|  
+|シェイプ内のリストの項目。コンテナーが削除されると、項目も削除されます。<br /><br /> シェイプの境界上のポート。|コンテナー シェイプにマップされるドメイン クラス。|クラス ダイアグラム:属性クラス。<br /><br /> コンポーネント図に示します。ポート クラスです。|  
 |リストの項目。コンテナーが削除されても、項目は削除されません。|DSL のルート クラス。<br /><br /> リストには参照リンクが表示されます。||  
 |直接表示されません。|パーツを構成するクラス。||  
   
@@ -185,13 +182,13 @@ ms.locfileid: "49880742"
   
  埋め込みリレーションシップの名前とそのロールは、クラス名を自動的に追跡するため、通常はこれらの名前とロールを調整する必要はありません。  
   
- 詳細については、[ドメイン リレーションシップのプロパティ](../modeling/properties-of-domain-relationships.md)と[ドメイン ロールのプロパティの](../modeling/properties-of-domain-roles.md)を参照してください。  
+ 詳細については、次を参照してください。[ドメイン リレーションシップのプロパティ](../modeling/properties-of-domain-relationships.md)と[ドメイン ロールのプロパティの](../modeling/properties-of-domain-roles.md)します。  
   
 > [!NOTE]
 >  埋め込みは継承とは異なります。 埋め込みリレーションシップの子は、親の機能を継承しません。  
   
 ### <a name="add-domain-properties-to-each-domain-class"></a>各ドメイン クラスへのドメイン プロパティの追加  
- ドメイン プロパティには値が格納されます。 例えば、Name、Title、Publication Date などです。  
+ ドメイン プロパティには値が格納されます。 以下に例を示します。名前、タイトル、発行日。  
   
  クリックして**ドメイン プロパティ**クラスで、ENTER キーを押すし、プロパティの名前を入力します。 ドメイン プロパティの既定の型は String です。 ドメイン プロパティを選択し、設定の種類を変更する場合、**型**で、**プロパティ**ウィンドウ。 必要な型がドロップダウン リストにない場合を参照してください。[プロパティの型を追加する](#addTypes)します。  
   
@@ -217,7 +214,7 @@ ms.locfileid: "49880742"
   
 ##### <a name="to-test-the-new-domain-classes"></a>新しいドメイン クラスをテストするには  
   
-1.  **すべてのテンプレートの変換をクリックします。** DSL デザイナー コードを生成する、ソリューション エクスプ ローラーのツールバー。 このステップは自動化できます。 詳細については、[すべてのテンプレートの変換を自動化する方法](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)を参照してください。  
+1.  **すべてのテンプレートの変換をクリックします。** DSL デザイナー コードを生成する、ソリューション エクスプ ローラーのツールバー。 このステップは自動化できます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)します。  
   
 2.  **ビルドして、DSL を実行します。** 新しいインスタンスを実行するには、f5 キーまたは ctrl キーを押しながら f5 キーを押して[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]実験モードでします。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスで、DSL のファイル名拡張子が付いているファイルを開くかまたは作成します。  
   
@@ -244,7 +241,7 @@ ms.locfileid: "49880742"
   
    -   クラスの親はルート クラスである必要があります。 つまり、ルート クラスと新しいドメイン クラスの間に埋め込みリレーションシップが存在している必要があります。  
   
-   -   図にスイムレーンがある場合は、スイムレーンにマップされるドメイン クラスを親にすることができます。 この手順を進める前に、[スイムレーンを持つ DSL を定義する](#swimlanes)を参照してください。  
+   -   図にスイムレーンがある場合は、スイムレーンにマップされるドメイン クラスを親にすることができます。 この手順を進める前に、次を参照してください。[スイムレーンを持つ DSL を定義する](#swimlanes)します。  
   
 2. **シェイプ クラスを追加**モデル図の要素を表します。 次のいずれかのツールから DSL 定義図にドラッグします。  
   
@@ -311,7 +308,7 @@ ms.locfileid: "49880742"
   
         DSL 定義図に戻り、ツールを選択し、[プロパティ] ウィンドウで次のようにクリックします **[...]。** で**ツールボックス アイコン**します。 **ビットマップの選択**ダイアログ ボックスで、します。ドロップダウン メニューから BMP ファイルです。  
   
-   詳細については、[ジオメトリ シェイプのプロパティ](../modeling/properties-of-geometry-shapes.md)と[イメージ シェイプのプロパティの](../modeling/properties-of-image-shapes.md)を参照してください。  
+   詳細については、次を参照してください。[ジオメトリ シェイプのプロパティ](../modeling/properties-of-geometry-shapes.md)と[イメージ シェイプのプロパティの](../modeling/properties-of-image-shapes.md)します。  
   
 #### <a name="to-test-shapes"></a>シェイプをテストするには  
   
@@ -329,7 +326,7 @@ ms.locfileid: "49880742"
   
    2.  [プロパティ] ウィンドウまたはデコレータでプロパティを編集すると、他のビューが更新される。  
   
-   シェイプを初めてテストした後に、シェイプのプロパティをいくつか調整し、拡張機能を追加する必要がある場合があります。 詳細については、[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)を参照してください。  
+   シェイプを初めてテストした後に、シェイプのプロパティをいくつか調整し、拡張機能を追加する必要がある場合があります。 詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。  
   
 ##  <a name="references"></a> 参照リレーションシップの定義  
  ソース ドメイン クラスとターゲット ドメイン クラスの間に参照リレーションシップを定義できます。 通常、参照リレーションシップは図ではコネクタ (シェイプ間の線) として表示されます。  
@@ -355,7 +352,7 @@ ms.locfileid: "49880742"
   
  ![コネクタのマップの図形](../modeling/media/music-connector.png "Music_Connector")  
   
- 詳細については、[ドメイン リレーションシップのプロパティ](../modeling/properties-of-domain-relationships.md)と[ドメイン ロールのプロパティの](../modeling/properties-of-domain-roles.md)を参照してください。  
+ 詳細については、次を参照してください。[ドメイン リレーションシップのプロパティ](../modeling/properties-of-domain-relationships.md)と[ドメイン ロールのプロパティの](../modeling/properties-of-domain-roles.md)します。  
   
 ### <a name="define-a-connector-to-display-the-relationship"></a>リレーションシップを表示するコネクタの定義  
  コネクタは、モデル図の 2 つのシェイプを結ぶ線を表示します。  
@@ -411,9 +408,9 @@ ms.locfileid: "49880742"
   
    2.  [プロパティ] ウィンドウまたはデコレータでプロパティを編集すると、他のビューが更新される。  
   
-   コネクタを初めてテストした後に、コネクタのプロパティをいくつか調整し、拡張機能を追加する必要がある場合があります。 詳細については、[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)を参照してください。  
+   コネクタを初めてテストした後に、コネクタのプロパティをいくつか調整し、拡張機能を追加する必要がある場合があります。 詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。  
   
-##  <a name="compartments"></a> 定義リストを含むシェイプ: コンパートメント シェイプ  
+##  <a name="compartments"></a> リストを含むシェイプを定義するには。コンパートメント シェイプ  
  コンパートメント シェイプには、1 つ以上の項目リストが含まれています。 たとえば Music Library DSL では、コンパートメント シェイプを使用して Album (音楽) を表すことができます。 各 Album には Song のリストがあります。  
   
  ![コンパートメント シェイプ](../modeling/media/compartmentshape.png "CompartmentShape")  
@@ -422,7 +419,7 @@ ms.locfileid: "49880742"
   
  ![マップのシェイプ](../modeling/media/music-mapcomp.png "Music_MapComp")  
   
- 詳細については、[コンパートメント シェイプのプロパティの](../modeling/properties-of-compartment-shapes.md)を参照してください。  
+ 詳細については、次を参照してください。[コンパートメント シェイプのプロパティの](../modeling/properties-of-compartment-shapes.md)します。  
   
 #### <a name="to-define-a-compartment-shape"></a>コンパートメント シェイプを定義するには  
   
@@ -512,7 +509,7 @@ ms.locfileid: "49880742"
   
    ![DSL のエクスプ ローラーが生成された](../modeling/media/music-explorer.png "Music_Explorer")  
   
-   コンパートメント シェイプを初めてテストした後に、シェイプのプロパティをいくつか調整し、拡張機能を追加したい場合があります。 詳細については、[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)を参照してください。  
+   コンパートメント シェイプを初めてテストした後に、シェイプのプロパティをいくつか調整し、拡張機能を追加したい場合があります。 詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。  
   
 ### <a name="displaying-a-reference-link-in-a-compartment"></a>コンパートメント内の参照リンクの表示  
  通常、コンパートメントに表示する要素は、コンパートメント シェイプで表される要素の子です。 ただし場合によっては、参照リレーションシップによってリンクされている要素を表示することがあります。  
@@ -552,17 +549,17 @@ ms.locfileid: "49880742"
   
 - ポートを表すドメイン クラスがあります。 この例では `ComponentPort` です。  
   
-- コンテナー ドメイン クラスからポート ドメイン クラスへの埋め込みリレーションシップがあります。 詳細については、[ドメイン クラスを定義する](#classes)を参照してください。  
+- コンテナー ドメイン クラスからポート ドメイン クラスへの埋め込みリレーションシップがあります。 詳細については、次を参照してください。[ドメイン クラスを定義する](#classes)します。  
   
 - 同一コンテナーに異なる種類のポートを混在させる場合は、ポート ドメイン クラスのサブクラスを作成できます。 この例では、`InPort` と `OutPort` は `ComponentPort` を継承します。  
   
-- コンテナー ドメイン クラスは任意の種類のシェイプにマップできます。 この例では `ComponentShape` が該当します。 詳細については、[シェイプの定義](#shapes)を参照してください。  
+- コンテナー ドメイン クラスは任意の種類のシェイプにマップできます。 この例では `ComponentShape` が該当します。 詳細については、次を参照してください。[シェイプの定義](#shapes)します。  
   
 - ポート ドメイン クラスはポート シェイプにマップされます。 派生クラスを個別のポート シェイプ クラスにマップするか、または基底クラスを 1 つのポート シェイプ クラスにマップできます。  
   
   その他の点では、ポート図形の動作」の説明に従って[シェイプの定義](#shapes)します。  
   
-  詳細については、[ポート シェイプのプロパティの](../modeling/properties-of-port-shapes.md)を参照してください。  
+  詳細については、次を参照してください。[ポート シェイプのプロパティの](../modeling/properties-of-port-shapes.md)します。  
   
 ##  <a name="swimlanes"></a> スイムレーンを持つ DSL を定義します。  
  スイムレーンとは、図の垂直方向または水平方向のパーティションです。 各スイムレーンはモデル要素に対応しています。 DSL 定義では、スイムレーン要素に対して 1つのドメイン クラスが必要です。  
@@ -573,7 +570,7 @@ ms.locfileid: "49880742"
   
  スイムレーンとは関係なくシェイプとして表示するクラスを追加するには、ルート クラスと新しいクラスの間に埋め込みリレーションシップを作成します。 ユーザーは図上の任意の位置 （スイムレーンの境界上、スイムレーン外部を含む） に、これらのシェイプを配置できます。 タスク フローのソリューション テンプレートでは、Comment がルート クラスの子です。  
   
- 詳細については、[プロパティのスイムレーン](../modeling/properties-of-swimlanes.md)を参照してください。  
+ 詳細については、次を参照してください。[プロパティのスイムレーン](../modeling/properties-of-swimlanes.md)します。  
   
 ##  <a name="addTypes"></a> プロパティの型を追加します。  
   
@@ -598,9 +595,9 @@ ms.locfileid: "49880742"
   
 1.  DSL 定義のさまざまな機能を使用して DSL を細かく調整する。 たとえば、複数の種類のコネクタを作成できるコネクタ ツールを 1 つ作成し、1 つの要素を削除すると関連要素も削除されるという規則を制御できます。 ほとんどの場合この手法は、DSL 定義で値を設定することで実現しますが、場合によってはプログラム コードを数行記述する必要があります。  
   
-     詳細については、[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)を参照してください。  
+     詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。  
   
-2.  より高度な効果を実現するプログラム コードを使用して、モデリング ツールを拡張する。 たとえば、モデルを変更できるメニュー コマンドを作成し、2 つ以上の DSL を統合するツールを作成することができます。 VMSDK は特に、DSL 定義から生成されるコードにより、拡張機能を容易に統合できるようにすることを目的としています。  詳細については、[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)を参照してください。  
+2.  より高度な効果を実現するプログラム コードを使用して、モデリング ツールを拡張する。 たとえば、モデルを変更できるメニュー コマンドを作成し、2 つ以上の DSL を統合するツールを作成することができます。 VMSDK は特に、DSL 定義から生成されるコードにより、拡張機能を容易に統合できるようにすることを目的としています。  詳細については、次を参照してください。[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)します。  
   
 ### <a name="changing-the-dsl-definition"></a>DSL 定義の変更  
  DSL 定義で項目を作成すると、多くの既定値が自動的に設定されます。 設定された既定値は変更できます。 これにより DSL の開発が簡素化され、かつ強力なカスタマイズが可能となります。  
@@ -609,7 +606,7 @@ ms.locfileid: "49880742"
   
  したがって、DSL 定義で一部のリレーションシップを変更するときには、定義の保存時またはすべてのテンプレートの変換時に、エラーが報告されることがよくある点に注意してください。 ほとんどのエラーは容易に修正できます。 エラーの発生場所を確認するには、エラー レポートをダブルクリックします。  
   
- 参照してください[方法: ドメイン固有言語の Namespace を変更する](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)します。  
+ 「[方法: ドメイン固有言語の Namespace を変更する](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)します。  
   
 ##  <a name="trouble"></a> トラブルシューティング  
  次の表に、DSL の設計時によく発生する問題を示し、併せて解決策を提示します。 詳細については、[視覚化 Tools Extensibililty Forum](http://go.microsoft.com/fwlink/?LinkId=186074)します。  
@@ -617,18 +614,15 @@ ms.locfileid: "49880742"
 |問題|提案される解決策|  
 |-------------|----------------|  
 |DSL 定義ファイルで行った変更が反映されない。|クリックして**すべてのテンプレートの変換**ソリューション エクスプ ローラーと、ソリューションをリビルド上にあるツールバーでします。|  
-|シェイプにプロパティ値ではなくデコレータ名が表示される。|デコレータ マッピングを設定します。 DSL 定義図で図要素マップをクリックします。図要素マップは、ドメイン クラスとシェイプ クラスの間に表示される灰色の線です。<br /><br /> 開く、 **DSL の詳細**ウィンドウ。 表示 メニュー、表示することはできない場合をポイント**その他の Windows**、 をクリックし、 **DSL の詳細**します。<br /><br /> をクリックして、**デコレーター マップ**タブ。デコレータの名前を選択します。 その横のボックスがオンになっていることを確認します。 **プロパティの表示**、ドメイン プロパティの名前を選択します。<br /><br /> 詳細については、[ダイアグラムの図形](#shapes)を参照してください。|  
+|シェイプにプロパティ値ではなくデコレータ名が表示される。|デコレータ マッピングを設定します。 DSL 定義図で図要素マップをクリックします。図要素マップは、ドメイン クラスとシェイプ クラスの間に表示される灰色の線です。<br /><br /> 開く、 **DSL の詳細**ウィンドウ。 表示 メニュー、表示することはできない場合をポイント**その他の Windows**、 をクリックし、 **DSL の詳細**します。<br /><br /> をクリックして、**デコレーター マップ**タブ。デコレータの名前を選択します。 その横のボックスがオンになっていることを確認します。 **プロパティの表示**、ドメイン プロパティの名前を選択します。<br /><br /> 詳細については、次を参照してください。[ダイアグラムの図形](#shapes)します。|  
 |DSL Explorer (DSL エクスプローラー) でコレクションに追加できない。 たとえば、［ツール］ を右クリックしてもメニューに ［Add Tool］ (ツールの追加) コマンドが表示されない。<br /><br /> DSL のエクスプローラーで要素をリストに追加できない。|追加するノードの上にある項目を右クリックします。 リストに追加する場合、［追加］ コマンドはリスト ノードではなくその所有者に表示されます。|  
 |ドメイン クラスを作成したが、言語エクスプローラーでインスタンスを作成できない。|ルートを除くすべてのドメイン クラスは、埋め込みリレーションシップのターゲットである必要があります。|  
 |DSL のエクスプローラーで、要素がその型の名前でのみ表示される。|DSL 定義でクラスのドメイン プロパティを選択し、プロパティ ウィンドウで、設定**は要素名**を true にします。|  
 |DSL が常に XML エディタで開かれる。|これは、ファイルの読み取り中に発生したエラーが原因で起こります。 ただし、そのエラーを修正した後でも、エディターを DSL デザイナーに明示的にリセットする必要があります。<br /><br /> プロジェクト項目を右クリックし、をクリックして**プログラムから開く**選択_YourLanguage_**デザイナー (既定値)** します。|  
-|アセンブリ名を変更した後に、DSL のツールボックスが表示されない。|検査し、更新**DslPackage\GeneratedCode\Package.tt**詳細については、[方法: ドメイン固有言語の Namespace を変更する](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)を参照してください。|  
+|アセンブリ名を変更した後に、DSL のツールボックスが表示されない。|検査し、更新**DslPackage\GeneratedCode\Package.tt**詳細については、次を参照してください。[方法。ドメイン固有言語の Namespace を変更する](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)します。|  
 |アセンブリ名を変更していないのに、DSL のツールボックスが表示されない。<br /><br /> あるいは、拡張機能の読み込みに失敗したことを示すメッセージ ボックスが表示される。|実験用インスタンスをリセットして、ソリューションをリビルドします。<br /><br /> 1.[スタート] メニューの Windows で**すべてのプログラム**、展開[!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]、し**ツール**、順にクリックします**Microsoft Visual Studio の実験用インスタンスをリセット**します。<br />2.[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**ビルド** メニューのをクリックして**ソリューションのリビルド**します。|  
   
 ## <a name="see-also"></a>関連項目  
  [ドメイン固有言語の概要](../modeling/getting-started-with-domain-specific-languages.md)   
  [Windows フォームに基づくドメイン固有言語の作成](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [WPF に基づくドメイン固有言語の作成](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
-
-

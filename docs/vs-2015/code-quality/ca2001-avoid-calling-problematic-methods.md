@@ -1,14 +1,9 @@
 ---
-title: 'Ca 2001: 問題のあるメソッドは呼び出しません |Microsoft Docs'
-ms.custom: ''
+title: CA2001:問題のあるメソッドは呼び出しません |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2001
 - AvoidCallingProblematicMethods
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ddc96857cf0c3c54472eded5545ca0f328eba213
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26f50580c8d29e24b25a9dad520a81d22a3dfc0c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902790"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974895"
 ---
-# <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: 問題が発生する可能性のあるメソッドは呼び出しません
+# <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001:問題が発生する可能性のあるメソッドは呼び出しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -61,6 +56,3 @@ ms.locfileid: "49902790"
 
 ## <a name="see-also"></a>関連項目
  [信頼性の警告](../code-quality/reliability-warnings.md)
-
-
-

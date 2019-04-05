@@ -1,27 +1,22 @@
 ---
 title: グラフィックス フレーム分析 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 59cd0006f375335d9cf3e714689bead6615b395d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770369"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975143"
 ---
 # <a name="graphics-frame-analysis"></a>グラフィックス フレーム分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,14 +42,14 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
   アプリのフレーム分析が実行できる操作のデモンストレーションを表示するには、見ることができます、 [Visual Studio のグラフィックス フレーム分析](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool)Channel 9 のビデオ。  
   
 ## <a name="using-frame-analysis"></a>フレーム分析の使用  
- フレーム分析を使用する前に、他の Graphics Analyzer ツールを使用する場合と同様に、アプリ実行時のグラフィックス情報をキャプチャする必要があります。 次に、グラフィックス ログのドキュメント (.vsglog) ウィンドウで、選択、**フレーム分析**タブ。  
+ フレーム分析を使用する前に、他の Graphics Analyzer ツールを使用する場合と同様に、アプリ実行時のグラフィックス情報をキャプチャする必要があります。 次に、グラフィックス ログのドキュメント (.vsglog) のウィンドウで、**[フレーム分析]** タブを選択します。  
   
  ![フレーム分析 タブを選択します](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab。")  
   
  分析が完了すると、結果が表示されます。 [フレーム分析] タブの上部には、タイムラインとサマリー テーブルが表示されます。 下部には、詳細テーブルが表示されます。 再生中にエラーまたは警告が生成された場合は、タイムラインの上に概要が示されます。そこからリンクに従って、エラーおよび警告の詳細を見ることができます。  
   
 ### <a name="interpreting-results"></a>結果の解釈  
- 各バリアントの結果を解釈することで、アプリケーションのレンダリング パフォーマンスおよび動作についての有用な情報を推測できます。 レンダリング バリアントの詳細については、[バリアント](#Variants)この記事で後述を参照してください。  
+ 各バリアントの結果を解釈することで、アプリケーションのレンダリング パフォーマンスおよび動作についての有用な情報を推測できます。 レンダリング バリアントの詳細については、このドキュメントの後述の「[バリアント](#Variants)」を参照してください。  
   
  次の結果は、バリアントがレンダリング パフォーマンスにどのように影響しているかを直接示しています。  
   
@@ -74,7 +69,7 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
   
 - Half/Quarter Texture Dimensions バリアントでパフォーマンスが著しく向上している場合、テクスチャで占有しているメモリが多すぎる、使用している帯域幅が多すぎる、またはテクスチャ キャッシュの使用効率が悪いことが考えられます。 このバリアントでパフォーマンスが向上していない場合は、パフォーマンスを低下させずに、より大きく細かいテクスチャを使用することができます。  
   
-  ハードウェア カウンターが使用できる場合は、それらを使用して、アプリケーションのレンダリング パフォーマンスが向上しない原因について詳細な情報を収集できます。 すべての機能レベル 9.2 以降のデバイス サポートの深さの occlusion (**オクルー ジョン ピクセル**カウンター) とタイムスタンプ。 ドライバーの中に GPU メーカーがハードウェア カウンターを実装し、それらを公開しているかどうかによって、他のハードウェア カウンターを使用できる場合があります。 これらのカウンターを使用してサマリー テーブルに示された結果の正確な原因を確認できます。たとえば、深さのテストによってオクルージョンされたピクセルの割合を調べて、描画の大きさが問題かどうかを判断できます。  
+  ハードウェア カウンターが使用できる場合は、それらを使用して、アプリケーションのレンダリング パフォーマンスが向上しない原因について詳細な情報を収集できます。 機能レベル 9.2 以降のすべてのデバイスでは、深さの occlusion query (**pixels occluded** カウンター) とタイムスタンプがサポートされます。 ドライバーの中に GPU メーカーがハードウェア カウンターを実装し、それらを公開しているかどうかによって、他のハードウェア カウンターを使用できる場合があります。 これらのカウンターを使用してサマリー テーブルに示された結果の正確な原因を確認できます。たとえば、深さのテストによってオクルージョンされたピクセルの割合を調べて、描画の大きさが問題かどうかを判断できます。  
   
 ### <a name="timeline-and-summary-table"></a>タイムラインおよびサマリー テーブル  
  既定では、タイムラインおよびサマリー テーブルが表示され、他のセクションは折りたたまれています。  
@@ -103,12 +98,12 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
 #### <a name="statistical-significance"></a>統計的な有意性  
  最も高い関連性を持つレンダリング バリエーションを目立たせるために、フレーム分析は、各レンダリング バリアントの統計的な有意性を決定し、重要なものを太字で示します。 パフォーマンスが向上しているものは緑で、パフォーマンスが低下しているものは赤で示されます。 統計的に重要な意味を持たない結果は、通常の書体で示されます。  
   
- ![描画呼び出しバリアントの統計的関係](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
+ ![描画呼び出しバリアントの統計的な関連性](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
   
  フレーム分析では、統計的な関連性を決定するには、[スチューデントの t 検定](http://www.wikipedia.org/wiki/Student%27s_t-test)します。  
   
 ### <a name="details-table"></a>詳細テーブル  
- 詳細テーブルはサマリー テーブルの下にあり、最初の状態では折りたたまれています。 詳細テーブルの内容は、再生コンピューター.のハードウェア プラットフォームによって異なります。 サポートされているハードウェア プラットフォームの詳細については、[ハードウェア サポート](#HardwareSupport)を参照してください。  
+ 詳細テーブルはサマリー テーブルの下にあり、最初の状態では折りたたまれています。 詳細テーブルの内容は、再生コンピューター.のハードウェア プラットフォームによって異なります。 サポートされているハードウェア プラットフォームの詳細については、「[ハードウェア サポート](#HardwareSupport)」を参照してください。  
   
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>ハードウェア カウンターをサポートしていないプラットフォーム  
  ほとんどのプラットフォームは、ハードウェア GPU カウンター (Intel、AMD、nVidia から現在提供されているすべての GPU) を完全にサポートしているわけではありません。 収集するハードウェア カウンターがない場合は、詳細テーブルのみが表示され、すべてのバリアントのタイミングの絶対値の平均が示されます。  
@@ -144,7 +139,7 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
   
  フレーム分析は、再試行を 10 回に制限しています。 プラットフォームに積極的な電源管理またはクロックゲーティングの機能がある場合、これらの機能が再試行の制限を超えたために、フレーム分析が失敗してエラーをレポートする原因となることがあります。 この問題は、プラットフォームの電源管理をリセットすること、およびプラットフォームで可能な場合はクロック速度の調整を少し遅くすることによって、改善できます。  
   
-##  <a name="HardwareSupport"></a> ハードウェアのサポート  
+##  <a name="HardwareSupport"></a> ハードウェア サポート  
   
 ### <a name="timestamps-and-occlusion-queries"></a>タイムスタンプおよび occlusion querｙ  
  タイムスタンプは、フレーム分析をサポートしているすべてのプラットフォームでサポートされています。 (Pixels Occluded カウンターで必要な) 深さの occlusion query は、機能レベル 9.2 以降をサポートしているプラットフォームでサポートされます。  
@@ -188,25 +183,22 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
 >  これは、機能レベルではなく、使用している Direct3D API 呼び出しに対してのみ適用されます。 Direct3D 11、Direct3D 11.1、または Direct3D 11.2 API を使用している場合は、任意の機能レベルを使用してもフレーム分析は機能します。  
   
 ##  <a name="Variants"></a> バリアント  
- 再生中に、フレームのレンダリング方法に対してフレーム分析がそれぞれの変更と呼ばれる、*バリアント*します。 フレーム分析が調査するバリアントは、レンダリング パフォーマンスまたはアプリケーションの表示品質を改善しようとして行った、一般的で比較的簡単な変更に対応します。たとえば、テクスチャのサイズを小さくする、テクスチャの圧縮を使用する、違う種類のアンチエイリアス処理を有効にする、などの変更です。 バリアントは、通常のレンダリング コンテキストおよびアプリケーションのパラメーターを上書きします。 次に概要を示します。  
+ 再生中に、フレームがレンダリングされる方法に対してフレーム分析が加える変更のことを*バリアント*といいます。 フレーム分析が調査するバリアントは、レンダリング パフォーマンスまたはアプリケーションの表示品質を改善しようとして行った、一般的で比較的簡単な変更に対応します。たとえば、テクスチャのサイズを小さくする、テクスチャの圧縮を使用する、違う種類のアンチエイリアス処理を有効にする、などの変更です。 バリアントは、通常のレンダリング コンテキストおよびアプリケーションのパラメーターを上書きします。 次に概要を示します。  
   
 |バリアント|説明|  
 |-------------|-----------------|  
-|**1 x 1 ビューポート サイズ**|すべてのレンダー ターゲットでビューポートのディメンションを 1x1 ピクセルに減らします。<br /><br /> 詳細については、次を参照してください[1 x 1 ビューポート サイズ バリアント。](../debugger/1x1-viewport-size-variant.md)|  
-|**0x MSAA**|すべてのレンダー ターゲット上で multi-sample anti-aliasing (MSAA) を無効にします。<br /><br /> 詳細については、次を参照してください[0 x/2 x/4 msaa バリアント。](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**2 x MSAA**|すべてのレンダー ターゲット上で 2x multi-sample anti-aliasing (MSAA) を有効にします。<br /><br /> 詳細については、次を参照してください[0 x/2 x/4 msaa バリアント。](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**4x MSAA**|すべてのレンダー ターゲット上で 4x multi-sample anti-aliasing (MSAA) を有効にします。<br /><br /> 詳細については、次を参照してください[0 x/2 x/4 msaa バリアント。](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**ポイント テクスチャ フィルタ リング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_MIN_MAG_MIP_POINT` (point texture filtering) に設定します。<br /><br /> 詳細については、[ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)を参照してください。|  
-|**バイリニア テクスチャ フィルタ リング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (bilinear texture filtering) に設定します。<br /><br /> 詳細については、[ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)を参照してください。|  
-|**トリリニア テクスチャ フィルタ リング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilinear texture filtering) に設定します。<br /><br /> 詳細については、[ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)を参照してください。|  
-|**アニソトロ ピック テクスチャ フィルタ リング**|フィルターのモードに設定`DXD11_FILTER_ANISOTROPIC`と`MaxAnisotropy`に`16`(16 x アニソトロ ピック テクスチャ フィルタ リング) すべての適切なテクスチャ サンプルに対して。<br /><br /> 詳細については、[ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)を参照してください。|  
-|**16 bpp レンダリング ターゲット フォーマット**|すべてのレンダー ターゲットおよびバックバッファーに対して、ピクセル形式を `DXGI_FORMAT_B5G6R5_UNORM` (16bpp、565 形式) に設定します。<br /><br /> 詳細については、次を参照してください[16 bpp レンダリング ターゲット フォーマット バリアント。](../debugger/16bpp-render-target-format-variant.md)|  
-|**Mip マップの生成**|レンダー ターゲットではないすべてのテクスチャで MIP マップを有効にします。<br /><br /> 詳細については、[ミップマップ生成バリアント](../debugger/mip-map-generation-variant.md)を参照してください。|  
-|**半分のテクスチャのディメンション**|レンダー ターゲットではないすべてのテクスチャで、テクスチャのディメンションを、各ディメンションの元のサイズの半分に減らします。 たとえば、256x128 のテクスチャは 128x64 テクセルになります。<br /><br /> 詳細については、[ハーフ/クォーター テクスチャ ディメンション バリアント](../debugger/half-quarter-texture-dimensions-variant.md)を参照してください。|  
-|**四半期のテクスチャのディメンション**|レンダー ターゲットではないすべてのテクスチャで、テクスチャのディメンションを、各ディメンションの元のサイズの 4 分の 1 に減らします。 たとえば、256x128 のテクスチャは 64x32 テクセルになります。<br /><br /> 詳細については、[ハーフ/クォーター テクスチャ ディメンション バリアント](../debugger/half-quarter-texture-dimensions-variant.md)を参照してください。|  
-|**BC テクスチャ圧縮**|B8G8R8X8、B8G8R8A8、または R8G8B8A8 ピクセル形式のバリアントを持つすべてのテクスチャで、ブロック圧縮を有効にします。 B8G8R8X8 形式のバリアントは BC1 を使用して圧縮されます。B8G8R8A8 および R8G8B8A8 形式のバリアントは BC3 を使用して圧縮されます。<br /><br /> 詳細については、[BC テクスチャ圧縮バリアント](../debugger/bc-texture-compression-variant.md)を参照してください。|  
+|**1x1 ビューポート サイズ**|すべてのレンダー ターゲットでビューポートのディメンションを 1x1 ピクセルに減らします。<br /><br /> 詳細については、「[1x1 ビューポート サイズ バリアント](../debugger/1x1-viewport-size-variant.md)」を参照してください。|  
+|**0x MSAA**|すべてのレンダー ターゲット上で multi-sample anti-aliasing (MSAA) を無効にします。<br /><br /> 詳細については、「[0x/2x/4x MSAA バリアント](../debugger/0x-2x-4x-msaa-variants.md)」を参照してください。|  
+|**2x MSAA**|すべてのレンダー ターゲット上で 2x multi-sample anti-aliasing (MSAA) を有効にします。<br /><br /> 詳細については、「[0x/2x/4x MSAA バリアント](../debugger/0x-2x-4x-msaa-variants.md)」を参照してください。|  
+|**4x MSAA**|すべてのレンダー ターゲット上で 4x multi-sample anti-aliasing (MSAA) を有効にします。<br /><br /> 詳細については、「[0x/2x/4x MSAA バリアント](../debugger/0x-2x-4x-msaa-variants.md)」を参照してください。|  
+|**ポイント テクスチャ フィルタリング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_MIN_MAG_MIP_POINT` (point texture filtering) に設定します。<br /><br /> 詳細については、次を参照してください。[ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)します。|  
+|**バイリニア テクスチャ フィルタリング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (bilinear texture filtering) に設定します。<br /><br /> 詳細については、次を参照してください。[ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)します。|  
+|**トリリニア テクスチャ フィルタリング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilinear texture filtering) に設定します。<br /><br /> 詳細については、次を参照してください。[ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)します。|  
+|**アニソトロピック テクスチャ フィルタリング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_ANISOTROPIC` に設定し、`MaxAnisotropy` を `16` (16x アニソトロピック テクスチャ フィルタリング) に設定します。<br /><br /> 詳細については、次を参照してください。[ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)します。|  
+|**16bpp レンダリング ターゲット フォーマット**|すべてのレンダー ターゲットおよびバックバッファーに対して、ピクセル形式を `DXGI_FORMAT_B5G6R5_UNORM` (16bpp、565 形式) に設定します。<br /><br /> 詳細については、「[16bpp レンダリング ターゲット フォーマット バリアント](../debugger/16bpp-render-target-format-variant.md)」を参照してください。|  
+|**ミップマップ生成**|レンダー ターゲットではないすべてのテクスチャで MIP マップを有効にします。<br /><br /> 詳細については、「[ミップマップ生成バリアント](../debugger/mip-map-generation-variant.md)」を参照してください。|  
+|**ハーフ テクスチャ ディメンション**|レンダー ターゲットではないすべてのテクスチャで、テクスチャのディメンションを、各ディメンションの元のサイズの半分に減らします。 たとえば、256x128 のテクスチャは 128x64 テクセルになります。<br /><br /> 詳細については、「[ハーフ/クォーター テクスチャ ディメンション バリアント](../debugger/half-quarter-texture-dimensions-variant.md)」を参照してください。|  
+|**クォーター テクスチャ ディメンション**|レンダー ターゲットではないすべてのテクスチャで、テクスチャのディメンションを、各ディメンションの元のサイズの 4 分の 1 に減らします。 たとえば、256x128 のテクスチャは 64x32 テクセルになります。<br /><br /> 詳細については、「[ハーフ/クォーター テクスチャ ディメンション バリアント](../debugger/half-quarter-texture-dimensions-variant.md)」を参照してください。|  
+|**BC テクスチャ圧縮**|B8G8R8X8、B8G8R8A8、または R8G8B8A8 ピクセル形式のバリアントを持つすべてのテクスチャで、ブロック圧縮を有効にします。 B8G8R8X8 形式のバリアントは BC1 を使用して圧縮されます。B8G8R8A8 および R8G8B8A8 形式のバリアントは BC3 を使用して圧縮されます。<br /><br /> 詳細については、「[BC テクスチャ圧縮バリアント](../debugger/bc-texture-compression-variant.md)」を参照してください。|  
   
- ほとんどのバリアントの結果は、「テクスチャ サイズを半分にすると 25 % 高速になる」、「2x MSAA を有効にしても 2% しか遅くならない」のように規範的なものです。 その他のバリアントでは、より詳しい解釈が必要な場合もあります。たとえば、ビューポートのディメンションを 1x1 に変更したバリアントでパフォーマンスが著しく向上した場合、フィルレートが低いことによりレンダリングがボトルネックになっていた可能性を表します。また、パフォーマンスに目立った変化がない場合は、頂点の処理によりレンダリングがボトルネックになっていた可能性を表します。
-
-
-
+ ほとんどのバリアントの結果は、規範となります。「を半分に削減のテクスチャ サイズは 25% 高速化」または"の有効化 2 x MSAA は 2% しか遅く"します。 その他のバリアントでは、より詳しい解釈が必要な場合もあります。たとえば、ビューポートのディメンションを 1x1 に変更したバリアントでパフォーマンスが著しく向上した場合、フィルレートが低いことによりレンダリングがボトルネックになっていた可能性を表します。また、パフォーマンスに目立った変化がない場合は、頂点の処理によりレンダリングがボトルネックになっていた可能性を表します。

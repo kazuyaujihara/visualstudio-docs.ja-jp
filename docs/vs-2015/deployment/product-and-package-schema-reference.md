@@ -1,14 +1,9 @@
 ---
 title: 製品およびパッケージ スキーマ リファレンス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -30,13 +25,13 @@ ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974358"
 ---
 # <a name="product-and-package-schema-reference"></a>製品およびパッケージ スキーマ リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,13 +42,13 @@ A*製品ファイル*で必要な外部の依存関係のすべてを記述す�
   
 |要素|説明|属性|  
 |-------------|-----------------|----------------|  
-|[\<製品 > 要素](../deployment/product-element-bootstrapper.md)|製品ファイルの最上位の要素が必要です。|なし|  
-|[\<パッケージ > 要素](../deployment/package-element-bootstrapper.md)|パッケージ ファイルの最上位の要素が必要です。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > 要素](../deployment/relatedproducts-element-bootstrapper.md)|製品ファイルの省略可能な要素です。 その他の製品をこの製品はインストールかによって異なります。|なし|  
-|[\<InstallChecks > 要素](../deployment/installchecks-element-bootstrapper.md)|必須の要素です。 リストのインストール時に、ローカル コンピューターで実行する依存関係を確認します。|なし|  
-|[\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)|必須の要素です。  によって記述されたは、1 つまたは複数のインストールのチェックを実行します。 `InstallChecks`、、をインストールすると、パッケージには、チェックする必要がありますを表します失敗します。|なし|  
-|[\<PackageFiles > 要素](../deployment/packagefiles-element-bootstrapper.md)|必須の要素です。 このインストール プロセスがインストールされているパッケージを一覧表示します。|なし|  
-|[\<文字列 > 要素](../deployment/strings-element-bootstrapper.md)|必須の要素です。 ストアはローカライズ版の製品の名前およびエラーの文字列です。|なし|  
+|[\<Product> 要素](../deployment/product-element-bootstrapper.md)|製品ファイルの最上位の要素が必要です。|なし|  
+|[\<Package> 要素](../deployment/package-element-bootstrapper.md)|パッケージ ファイルの最上位の要素が必要です。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts> 要素](../deployment/relatedproducts-element-bootstrapper.md)|製品ファイルの省略可能な要素です。 その他の製品をこの製品はインストールかによって異なります。|なし|  
+|[\<InstallChecks> 要素](../deployment/installchecks-element-bootstrapper.md)|必須の要素です。 リストのインストール時に、ローカル コンピューターで実行する依存関係を確認します。|なし|  
+|[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)|必須の要素です。  によって記述されたは、1 つまたは複数のインストールのチェックを実行します。 `InstallChecks`、、をインストールすると、パッケージには、チェックする必要がありますを表します失敗します。|なし|  
+|[\<PackageFiles> 要素](../deployment/packagefiles-element-bootstrapper.md)|必須の要素です。 このインストール プロセスがインストールされているパッケージを一覧表示します。|なし|  
+|[\<Strings> 要素](../deployment/strings-element-bootstrapper.md)|必須の要素です。 ストアはローカライズ版の製品の名前およびエラーの文字列です。|なし|  
   
 ## <a name="remarks"></a>Remarks  
  パッケージのスキーマは、Setup.exe、独自のほとんどのハード コーディングされたロジックを含む MS ビルドのブートス トラップ タスクによって生成されたスタブ プログラムで使用されます。 スキーマは、インストール プロセスのすべての側面をドライブします。  
@@ -168,6 +163,3 @@ A*製品ファイル*で必要な外部の依存関係のすべてを記述す�
 ## <a name="see-also"></a>関連項目  
  [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

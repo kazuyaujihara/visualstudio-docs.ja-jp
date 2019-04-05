@@ -1,25 +1,22 @@
 ---
 title: UML モデルの検証制約の定義 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, validation constraints
 ms.assetid: 87b3b0da-122d-4121-9318-200c38ff49d0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6647d37636ed0e79d817113e388ae5df23a88a29
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975117"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML モデルの検証制約を定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,7 @@ ms.locfileid: "51782415"
   
  検証エラーは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] エラー ウィンドウに報告されるので、エラーをダブルクリックすると、エラーが発生しているモデル要素を選択することができます。  
   
- 検証を適用する方法についての詳細については、[UML モデルの検証](../modeling/validate-your-uml-model.md)を参照してください。  
+ 検証を適用する方法についての詳細については、次を参照してください。 [UML モデルの検証](../modeling/validate-your-uml-model.md)です。  
   
 ## <a name="defining-a-validation-extension"></a>検証拡張機能の定義  
  UML デザイナーの検証拡張機能を作成するには、検証制約を定義するクラスを生成し、そのクラスを Visual Studio Integration Extension (VSIX) に埋め込む必要があります。 VSIX は、制約をインストールできるコンテナーとして機能します。 検証拡張機能を定義する方法は 2 つあります。  
@@ -190,7 +187,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開始します。  
   
-     **トラブルシューティング**: 新しい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が起動しない場合:  
+     **トラブルシューティング**:場合、新しい[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]は開始されません。  
   
     -   複数のプロジェクトがある場合は、VSIX プロジェクトがソリューションのスタートアップ プロジェクトとして設定されていることを確認してください。  
   
@@ -212,7 +209,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 6.  エラー報告をダブルクリックします。 この報告にある要素が画面に表示された場合は、強調表示されます。  
   
-     **トラブルシューティング**: **[検証]** コマンドがメニューに表示されない場合は、次の点について確認してください。  
+     **トラブルシューティング**:場合、**検証**コマンドが表示されないメニューで、ことを確認します。  
   
     -   検証プロジェクトが、VSIX プロジェクトの **source.extensions.manifest** の **[アセット]** タブに MEF コンポーネントとして表示される。  
   
@@ -397,7 +394,7 @@ context.LogError(... , usecase);
   
    拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 次の場所からファイルを削除することによって、拡張機能を削除する場合、場所 *%localappdata%* は通常*DriveName*: \Users\\*ユーザー名*\AppData\Local:  
   
-   *%Localappdata%* **\Microsoft\VisualStudio\\[バージョン] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="Example"></a> 「例」  
  この例は、要素間の依存関係におけるループを検索します。  
@@ -479,6 +476,3 @@ private bool NoDependencyLoops(ValidationContext context,
 ## <a name="see-also"></a>関連項目  
  [定義およびモデリング拡張機能のインストール](../modeling/define-and-install-a-modeling-extension.md)   
  [UML API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)
-
-
-

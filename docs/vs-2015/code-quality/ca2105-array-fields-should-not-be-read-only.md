@@ -1,14 +1,9 @@
 ---
-title: 'Ca 2105: 配列フィールドを読み取ることができませんのみ |Microsoft Docs'
-ms.custom: ''
+title: CA2105:配列フィールドを読み取ることができませんのみ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2105
 - ArrayFieldsShouldNotBeReadOnly
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 51878d18deb56c77ebbef0d0aa84b399ef2fa722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 4741b30d1429a1a179328c8fb4b150fc4f920612
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894977"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975874"
 ---
-# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: 配列フィールドは読み取り専用にできません
+# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105:配列フィールドを読み取り専用にすることはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,7 +38,7 @@ ms.locfileid: "49894977"
 ## <a name="rule-description"></a>規則の説明
  適用すると、 `readonly` (`ReadOnly`で[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) 修飾子を配列フィールドを含むフィールドを変更して、別の配列を参照してくださいことはできません。 ただし、読み取り専用フィールドに格納された配列の要素は変更できます。 判断したり、パブリックにアクセスできる読み取り専用配列の要素に基づく操作を実行するコードには、悪用可能なセキュリティの脆弱性が含まれます。
 
- メモをパブリック フィールドを持つデザイン規則に違反しても[ca 1051: 参照できるインスタンス フィールドを宣言しません](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)します。
+ メモをパブリック フィールドを持つデザイン規則に違反しても[ca 1051。インスタンス フィールドを宣言しない](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  このルールで識別されるセキュリティの脆弱性を修正するのに依存しないパブリックにアクセスできる読み取り専用配列の内容。 次の手順のいずれかを使用することを強くお勧めします。
@@ -52,7 +47,7 @@ ms.locfileid: "49894977"
 
 - プライベート配列の複製を返すメソッドでは、パブリック フィールドを置き換えます。 コードが、複製に依存しないためにありません危険要素が変更された場合です。
 
-  2 番目の方法を選択した場合、フィールドと置き換えないでプロパティ悪影響を与える、配列を返すプロパティは、パフォーマンスに影響します。 詳細については、[ca 1819: プロパティは、配列を返す必要がありますいない](../code-quality/ca1819-properties-should-not-return-arrays.md)を参照してください。
+  2 番目の方法を選択した場合、フィールドと置き換えないでプロパティ悪影響を与える、配列を返すプロパティは、パフォーマンスに影響します。 詳細については、次を参照してください。 [ca 1819。プロパティは、配列を返す必要がありますいない](../code-quality/ca1819-properties-should-not-return-arrays.md)します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告の除外はお勧めします。 読み取り専用フィールドの内容が重要ではない場合はほとんどありませんが発生します。 シナリオの場合は場合、削除、`readonly`修飾子の代わりに、メッセージを除外します。
@@ -71,10 +66,7 @@ ms.locfileid: "49894977"
 
  この例の出力は次のとおりです。
 
- **改ざんする前に: 成績: 90, 90、90 プライベート成績: 90, 90、90 をセキュリティで保護の成績、90、90、90**
-**改ざん後: 成績: 90、555、90 プライベート成績: 90、555、90 をセキュリティで保護の成績、90、90、90**
+ **前に、改ざん。採点内容:90, 90、90 プライベート採点内容。90, 90、90 をセキュリティで保護の成績、90、90、90**
+**改ざん後。採点内容:90、555、90 プライベート採点内容。90、555、90 90, 90, 90 の成績をセキュリティで保護**
 ## <a name="see-also"></a>関連項目
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
-
-

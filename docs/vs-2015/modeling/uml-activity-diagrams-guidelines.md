@@ -1,12 +1,9 @@
 ---
-title: 'UML アクティビティ図: ガイドライン |Microsoft Docs'
-ms.custom: ''
+title: UML アクティビティ図:ガイドライン |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, activity
 - diagrams - modeling, activity
@@ -17,18 +14,18 @@ ms.assetid: fe5dbe96-79ab-483a-b9bc-44d0d1d3efc2
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a13db375305e96c4657e007f9cd8bfffbf34f990
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 66ca625d0c9c6f2442576e997928b7b42760936a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975681"
 ---
-# <a name="uml-activity-diagrams-guidelines"></a>UML アクティビティ図: ガイドライン
+# <a name="uml-activity-diagrams-guidelines"></a>UML アクティビティ図:ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、アクティビティ図を描画することによって、ビジネス プロセスやソフトウェア アルゴリズムを一連のアクションのワークフローとして表すことができます。 ユーザー、ソフトウェア コンポーネント、またはデバイスが、これらのアクションを実行できます。 ビデオ デモについてを参照してください: [Capture Business Workflows by using Activity Diagrams](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)します。  
+Visual Studio では、アクティビティ図を描画することによって、ビジネス プロセスやソフトウェア アルゴリズムを一連のアクションのワークフローとして表すことができます。 ユーザー、ソフトウェア コンポーネント、またはデバイスが、これらのアクションを実行できます。 ビデオ デモについては、次を参照してください。[アクティビティ図を使用して、ビジネス ワークフローをキャプチャ](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)します。  
   
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
@@ -36,15 +33,15 @@ Visual Studio では、アクティビティ図を描画することによって
   
  アクティビティ図は、以下のようなさまざまな目的に使用できます。  
   
-- ビジネス プロセス、またはユーザーとシステム間のワークフローを示す。 詳細については、[ユーザー要件をモデル化](../modeling/model-user-requirements.md)を参照してください。  
+- ビジネス プロセス、またはユーザーとシステム間のワークフローを示す。 詳細については、次を参照してください。[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。  
   
-- ユース ケースで実行される手順を示す。 詳細については、[UML ユース ケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)を参照してください。  
+- ユース ケースで実行される手順を示す。 詳細については、次を参照してください。 [UML ユース ケース図。ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。  
   
-- ソフトウェアでのメソッド、関数、または操作を示す。 詳細については、[、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)を参照してください。  
+- ソフトウェアでのメソッド、関数、または操作を示す。 詳細については、次を参照してください。 [、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)します。  
   
   アクティビティ図を描画することは、プロセスの改善につながります。 既存のプロセスの図が非常に複雑であることが分かったら、どのようにすればプロセスを単純化できるかを検討してください。  
   
-  リファレンス アクティビティ図の要素に関する情報については、[UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)を参照してください。  
+  リファレンス アクティビティ図の要素に関する情報については、次を参照してください。 [UML アクティビティ図。Reference](../modeling/uml-activity-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。  
   
 ##  <a name="Relationships"></a> 他の図の関係  
  ビジネス プロセス、またはユーザーがシステムを使用する方法を表すアクティビティ図を描画する場合は、ユース ケース図を描画することにより、同じ情報を異なる観点で示すことができます。 ユース ケース図では、アクションをユース ケースとして描画します。 ユース ケースには、対応するアクションと同じ名前を付けます。 ユース ケース ビューのメリットは、次の操作ができることです。  
@@ -57,7 +54,7 @@ Visual Studio では、アクティビティ図を描画することによって
   
   アクティビティ図を描画することにより、ソフトウェア操作の詳細設計を示すこともできます。  
   
-  アクティビティ図では、アクション間で渡されるデータのフローを示すことができます。 参照してください[データ フローの記述](#DataFlows)します。 ただし、アクティビティ図はデータの構造を表すわけではありません。 そのためには、UML クラス図を描画します。 については、[UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)を参照してください。  
+  アクティビティ図では、アクション間で渡されるデータのフローを示すことができます。 参照してください[データ フローの記述](#DataFlows)します。 ただし、アクティビティ図はデータの構造を表すわけではありません。 そのためには、UML クラス図を描画します。 については、次を参照してください。 [UML クラス図。ガイドライン](../modeling/uml-class-diagrams-guidelines.md)します。  
   
 ##  <a name="BasicSteps"></a> アクティビティ図を描画するための基本的な手順  
  いずれかのモデリング図を作成するための詳細な手順が記載されて[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
@@ -136,7 +133,7 @@ Visual Studio では、アクティビティ図を描画することによって
 -   使用して、**マージ ノード**を分岐にある 2 つ以上の代替フローをまとめる (5)、**デシジョン ノード**します。  
   
     > [!NOTE]
-    >  使用する必要があります、**マージ ノード**をアクションにフローを統合することではなく、代替フローをまとめます。 例では、これは正しくありませんデシジョン ノードから接続する直接**メニュー項目の選択**します。 アクションが開始されるのは、その受信コネクタに制御のスレッドが到着してからになるためです。 そのため、アクションでまとめるのは、同時実行フローのみにする必要があります。 詳細については、[同時実行フロー](#Concurrent)を参照してください。  
+    >  使用する必要があります、**マージ ノード**をアクションにフローを統合することではなく、代替フローをまとめます。 例では、これは正しくありませんデシジョン ノードから接続する直接**メニュー項目の選択**します。 アクションが開始されるのは、その受信コネクタに制御のスレッドが到着してからになるためです。 そのため、アクションでまとめるのは、同時実行フローのみにする必要があります。 詳細については、次を参照してください。[同時実行フロー](#Concurrent)します。  
   
 -   例に示すように、分岐を使用してループを表します。  
   
@@ -185,7 +182,7 @@ Visual Studio では、アクティビティ図を描画することによって
 -   使用して、**暗証番号 (pin) を出力**と**入力ピン**します。 この方法を使用すると、あるアクションからの出力と別のアクションへの入力を別々に記述できます。 ピンはプログラムにおけるパラメーターのようなものです。 ピンは、オブジェクトがアクションに出入りできるポートを表します。  
   
     > [!NOTE]
-    >  このセクションで使用される要素の概要については、データ フローのセクションのトピックを参照してくださいを参照してください。 [UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)します。  
+    >  このセクションで使用される要素の概要については、データ フローのセクションのトピックを参照してくださいを参照してください。 [UML アクティビティ図。Reference](../modeling/uml-activity-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>オブジェクト ノードを使用したデータ フローの記述  
  ほとんどの制御フローはデータを運びます。 たとえば、"Customer provides details" アクションからの出力フローは、出荷先住所への参照を運びます。  
@@ -198,7 +195,7 @@ Visual Studio では、アクティビティ図を描画することによって
   
  アクション間を流れるオブジェクトのコンジットまたはバッファーとしてのノードのロールを反映した名前を、オブジェクト ノードに付けます。  
   
- 設定することができます、**型**のプロパティ ウィンドウで、オブジェクト ノード。 型としては、整数などのプリミティブ型、またはクラス図で定義したクラス、インターフェイス、列挙を使用できます。 たとえば、Street Address、City などの属性を持つ Shipment Address というクラスを、Customer という名前の別のクラスへの関連付けと一緒に作成することもできます。 詳細については、[UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)を参照してください。  
+ 設定することができます、**型**のプロパティ ウィンドウで、オブジェクト ノード。 型としては、整数などのプリミティブ型、またはクラス図で定義したクラス、インターフェイス、列挙を使用できます。 たとえば、Street Address、City などの属性を持つ Shipment Address というクラスを、Customer という名前の別のクラスへの関連付けと一緒に作成することもできます。 詳細については、「[UML Class Diagrams:ガイドライン](../modeling/uml-class-diagrams-guidelines.md)します。  
   
 > [!NOTE]
 >  項目を下に追加が定義されていない型の名前を入力する場合**未指定の型**UML モデル エクスプ ローラー。 その名前の型を後でクラス図で定義する場合は、新しい型を参照するようにオブジェクト ノードの型を再設定する必要があります。  
@@ -246,7 +243,7 @@ Visual Studio では、アクティビティ図を描画することによって
   
 -   アクションを振る舞い呼び出しアクションに置き換え、その詳細な振る舞いを別個のアクティビティ図内で記述する。 参照してください[振る舞い呼び出しアクションとサブアクティビティを記述する](#Subactivities)します。  
   
--   設定アクションの**ローカル事後条件**と**ローカル事前条件**より具体的詳細で、その結果を記述するプロパティ。 詳細については、[事後条件の定義と事前条件](#Postcondition)を参照してください。  
+-   設定アクションの**ローカル事後条件**と**ローカル事前条件**より具体的詳細で、その結果を記述するプロパティ。 詳細については、次を参照してください。[事後条件の定義と事前条件](#Postcondition)します。  
   
 ###  <a name="Subactivities"></a> 振る舞い呼び出しアクションとサブアクティビティの記述  
  別個のアクティビティ図を使用して、アクションの詳細な振る舞いを記述できます。 呼び出される振る舞いは、振る舞い呼び出しアクションによってメイン アクティビティ図に表されるアクティビティ図です。 振る舞い呼び出しアクションを使用して、異なるアクティビティ間で共有される振る舞いを記述することもできます。これにより、サブアクティビティを複数回描画する必要がなくなります。  
@@ -343,7 +340,7 @@ Visual Studio では、アクティビティ図を描画することによって
   
 -   返された情報にプロセスがどのように応答するかを、シグナル送信アクションを使用して記述することはできません。 そうするには、別個のイベント受理アクションを使用します。  
   
--   シグナル送信アクションへの入力データ フローを使用して、送信メッセージとともに送信できるデータを示すことができます。 詳細については、[データ フローの記述](#DataFlows)を参照してください。  
+-   シグナル送信アクションへの入力データ フローを使用して、送信メッセージとともに送信できるデータを示すことができます。 詳細については、次を参照してください。[データ フローの記述](#DataFlows)します。  
   
 #### <a name="waiting-for-a-signal-or-event"></a>シグナルまたはイベントの待機  
  このアクティビティが何らかの外部イベントまたは受信メッセージを待機することを示すには、イベント受理アクション (4) を使用します。 アクションが待機するイベントの種類を示すには、アクションの名前を使用します。  
@@ -354,7 +351,7 @@ Visual Studio では、アクティビティ図を描画することによって
   
 -   シグナルの送信側に返される値を、イベント受理アクションを使用して記述することはできません。 そのためには、別個のシグナル送信アクションを使用します。  
   
--   アクションからの出力データ フローを示すことにより、シグナルで受信されたデータをアクティビティがどのように処理するかを示すことができます。 設定する必要がありますで 1 つ以上の出力フローを表示する場合、**アンマーシャル**プロパティの受理イベント アクション、アクションが別々 のコンポーネントに受信の信号を解析することを示します。 詳細については、[データ フローの記述](#DataFlows)を参照してください。  
+-   アクションからの出力データ フローを示すことにより、シグナルで受信されたデータをアクティビティがどのように処理するかを示すことができます。 設定する必要がありますで 1 つ以上の出力フローを表示する場合、**アンマーシャル**プロパティの受理イベント アクション、アクションが別々 のコンポーネントに受信の信号を解析することを示します。 詳細については、次を参照してください。[データ フローの記述](#DataFlows)します。  
   
 ### <a name="describing-multiple-data-flows"></a>複数のデータ フローの記述  
  アクションから出てくる制御フローまたはオブジェクト フローを複数描画することにより、アクションが終了すると複数のスレッドが出現することを示すことができます。 この効果はフォークに似ていますが、制御フローとオブジェクト フローの組み合わせを使用することができます。  
@@ -363,7 +360,7 @@ Visual Studio では、アクティビティ図を描画することによって
   
  ![並列オブジェクト フロー](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")  
   
- "Customer provides details" アクションが完了すると、"Shipment address" と "Credit card details" の 2 つのオブジェクトが生成されます。 この 2 つのオブジェクトは、それぞれ異なるアクションによる処理に進みます。  
+ "Customer provides details"アクションが完了したら、2 つのオブジェクトが生成されます。"Shipment address"と"Credit card details"。 この 2 つのオブジェクトは、それぞれ異なるアクションによる処理に進みます。  
   
  アクションの開始のためにはそのすべての入力がそろっていることが必要であるため、最後のアクションは、それにつながるすべてのアクションが完了するまで開始されません。  
   
@@ -431,12 +428,9 @@ Visual Studio では、アクティビティ図を描画することによって
   
 ## <a name="see-also"></a>関連項目  
  [UML モデルおよびダイアグラムを編集します。](../modeling/edit-uml-models-and-diagrams.md)   
- [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)   
- [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)   
- [UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)   
- [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)   
- [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)   
- [ビデオ: アクティビティ図を使用して、ビジネス ワークフローをキャプチャします。](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
-
-
-
+ [UML シーケンス図: 参照](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML コンポーネント図: 参照](../modeling/uml-component-diagrams-reference.md)   
+ [UML ユース ケース図: 参照](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML クラス図: 参照](../modeling/uml-class-diagrams-reference.md)   
+ [UML コンポーネント図: 参照](../modeling/uml-component-diagrams-reference.md)   
+ [ビデオ:アクティビティ図を使用して、ビジネス ワークフローを取得します。](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)

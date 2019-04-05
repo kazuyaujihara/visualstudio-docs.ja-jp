@@ -1,23 +1,20 @@
 ---
 title: Windows フォームでのダイアグラムの埋め込み |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa6cd040-7c88-4329-b9c3-2a80b312610f
 caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 04ecf5bd7bfc91e03f48e624d208a5b4f29b10b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 6bd4117f3cce8a5a8a708da4b7941e224260ea15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975888"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Windows フォームでのダイアグラムの埋め込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +75,7 @@ Windows コントロールに表示される DSL 図を埋め込むことがで�
   
 #### <a name="updating-the-form-using-store-events"></a>ストア イベントを使用してフォームを更新しています  
   
-1.  フォーム デザイナーでは追加、 **ListBox**という`listBox1`します。 これにより、モデルに要素の一覧が表示されます。 モデルを使用して synchronism で保持*イベント格納*します。 詳細については、[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)を参照してください。  
+1.  フォーム デザイナーでは追加、 **ListBox**という`listBox1`します。 これにより、モデルに要素の一覧が表示されます。 モデルを使用して synchronism で保持*イベント格納*します。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
   
 2.  カスタム コード ファイルでさらにメソッドをオーバーライド DocView クラス。  
   
@@ -159,4 +156,3 @@ Windows コントロールに表示される DSL 図を埋め込むことがで�
 ## <a name="see-also"></a>関連項目  
  [移動して、プログラム コードでモデルを更新しています](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-

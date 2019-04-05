@@ -1,14 +1,9 @@
 ---
 title: メモリ Windows |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -31,13 +26,13 @@ ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 704c0ff20dbd11b4640b2d81670a4cdeaf3f1ea0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724250"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58977651"
 ---
 # <a name="memory-windows"></a>[メモリ] ウィンドウ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ ms.locfileid: "51724250"
 2.  入力するかを参照してください。 キーを押しますするアドレスを貼り付けます**ENTER**します。  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>[メモリ] ウィンドウでの情報の表示方法の変更  
- 方法をカスタマイズすることができます、**メモリ**ウィンドウには、メモリの内容が表示されます。 既定では、メモリの内容は 16 進形式の 1 バイトの整数として表示され、列数は現在のウィンドウ幅によって自動的に決定されます。  
+ **[メモリ]** ウィンドウでのメモリの内容の表示方法をカスタマイズできます。 既定では、メモリの内容は 16 進形式の 1 バイトの整数として表示され、列数は現在のウィンドウ幅によって自動的に決定されます。  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>メモリの内容の表示形式を変更するには  
   
@@ -105,7 +100,7 @@ ms.locfileid: "51724250"
   
     ライブ評価がオンになっている場合は、このオプションがオンになっており、クリックするとオフに切り替わります。 ライブ評価がオフになっている場合は、このオプションがオフになっており、クリックするとオンに切り替わります。  
   
-   非表示にしたり、上部のツールバーを表示、**メモリ**ウィンドウ。 ツール バーが非表示になっている間は、[アドレス] ボックスや他のツールにはアクセスできません。  
+   **[メモリ]** ウィンドウの上部にあるツール バーの表示/非表示を切り替えることができます。 ツール バーが非表示になっている間は、[アドレス] ボックスや他のツールにはアクセスできません。  
   
 #### <a name="to-toggle-the-toolbar"></a>ツール バーを切り替えるには  
   
@@ -128,8 +123,3 @@ ms.locfileid: "51724250"
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)
-
-
-
-
-

@@ -1,12 +1,9 @@
 ---
-title: 'UML ユース ケース図: 参照 |Microsoft Docs'
-ms.custom: ''
+title: UML ユース ケース図:参照 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.usecasediagram.toolbox
 - vs.teamarch.usecasediagram.diagram
@@ -21,28 +18,28 @@ ms.assetid: aa15772b-eb67-4366-b145-b559112817df
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 64eece28fc46fce799eff01e7ed1e7302e939dbc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974691"
 ---
-# <a name="uml-use-case-diagrams-reference"></a>UML ユース ケース図: リファレンス
+# <a name="uml-use-case-diagrams-reference"></a>UML ユース ケース図:参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio で、*ユース ケース図*アプリケーションまたはシステムを使用するユーザーとそれに何ができる概要について説明します。 UML ユース ケース図を作成する、**アーキテクチャ** メニューのをクリックして**新しい UML またはレイヤー図**します。  
   
- ユース ケース図は、ユーザー要件の説明の焦点として機能します。 これは、要求、ユーザー、および主要なコンポーネントの間のリレーションシップについて説明します。 ただし、要求の詳細については説明しません。それらは個別の図または各ユース ケースにリンク可能なドキュメントで説明できます。 ユース ケース図をヘルプ理解、話し合い、ユーザーのニーズを通信する方法については、[ユーザー要件をモデル化](../modeling/model-user-requirements.md)を参照してください。  
+ ユース ケース図は、ユーザー要件の説明の焦点として機能します。 これは、要求、ユーザー、および主要なコンポーネントの間のリレーションシップについて説明します。 ただし、要求の詳細については説明しません。それらは個別の図または各ユース ケースにリンク可能なドキュメントで説明できます。 ユース ケース図をヘルプ理解、話し合い、ユーザーのニーズを通信する方法については、次を参照してください。[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。  
   
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
 > [!NOTE]
->  このトピックでは、ユース ケース図で使用可能な要素について説明します。 ユース ケース図を描画する方法の詳細については、[UML ユース ケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)を参照してください。 作成し、モデリング図を描画する方法の詳細については、[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)を参照してください。  
+>  このトピックでは、ユース ケース図で使用可能な要素について説明します。 ユース ケース図を描画する方法の詳細については、次を参照してください。 [UML ユース ケース図。ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。 作成し、モデリング図を描画する方法の詳細については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
   
 ## <a name="reading-use-case-diagrams"></a>ユース ケース図の解説  
- 次のセクションの表では、ユース ケース図で使用できる要素と、それらの主要なプロパティについて説明します。 プロパティの一覧については、[UML 要素のプロパティのユース ケース図](../modeling/properties-of-elements-on-uml-use-case-diagrams.md)を参照してください。  
+ 次のセクションの表では、ユース ケース図で使用できる要素と、それらの主要なプロパティについて説明します。 プロパティの一覧については、次を参照してください。 [UML 要素のプロパティのユース ケース図](../modeling/properties-of-elements-on-uml-use-case-diagrams.md)します。  
   
 ### <a name="actors-use-cases-and-subsystems"></a>アクター、ユース ケース、およびサブシステム  
  ![ユース ケース図内の要素](../modeling/media/uml-ucovactor.png "UML_UCOvActor")  
@@ -65,15 +62,12 @@ Visual Studio で、*ユース ケース図*アプリケーションまたはシ
 |8|**依存関係**|ソースの設計が、ターゲットの設計に依存していることを示します。|  
 |9|**コメント**|図に一般的な注記を追加するために使用します。|  
 |10|**成果物**|成果物は、別の図またはドキュメントへのリンクを提供します。 これは、ソリューション エクスプ ローラーからファイルをドラッグして作成することができます。 また、図上の他の要素への依存関係とリンクできます。 成果物は通常、ユース ケースを詳細に説明するシーケンス図、OneNote ページ、Word 文書や PowerPoint プレゼンテーションにユース ケースをリンクさせるために使用します。 ドキュメントは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューション内の項目でも、SharePoint サイトなどの共有の場所にあるドキュメントでも可能です。<br /><br /> -   **ハイパーリンク**します。 図またはドキュメントの URL またはファイルのパス。<br /><br /> 成果物をダブルクリックすると、リンク先のファイルまたは Web ページが開きます。|  
-|11 (非表示)|**パッケージ**|パッケージ内には、ユース ケース、アクター、およびサブシステムを格納できます。 パッケージの図形は、ダイアグラムには表示されませんが、設定、 **LinkedPackage**ダイアグラムのプロパティ。 図に後に作成する要素は、パッケージ内に配置されます。 詳細については、[パッケージと名前空間の定義](../modeling/define-packages-and-namespaces.md)を参照してください。|  
+|11 (非表示)|**パッケージ**|パッケージ内には、ユース ケース、アクター、およびサブシステムを格納できます。 パッケージの図形は、ダイアグラムには表示されませんが、設定、 **LinkedPackage**ダイアグラムのプロパティ。 図に後に作成する要素は、パッケージ内に配置されます。 詳細については、次を参照してください。[パッケージと名前空間の定義](../modeling/define-packages-and-namespaces.md)します。|  
   
 ## <a name="see-also"></a>関連項目  
  [UML ユース ケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)   
  [UML モデルおよびダイアグラムを編集します。](../modeling/edit-uml-models-and-diagrams.md)   
- [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)   
- [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)   
- [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)   
+ [UML シーケンス図: 参照](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML クラス図: 参照](../modeling/uml-class-diagrams-reference.md)   
+ [UML コンポーネント図: 参照](../modeling/uml-component-diagrams-reference.md)   
  [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)
-
-
-

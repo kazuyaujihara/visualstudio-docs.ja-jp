@@ -1,27 +1,22 @@
 ---
 title: ツール ウィンドウの追加 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 887466c588bf76c10e3fbf0487eb0da590121ec5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 749a78528c305ffd9797c47b82d120597859ed3a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784839"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973621"
 ---
 # <a name="adding-a-tool-window"></a>ツール ウィンドウの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51784839"
 1.  という名前のプロジェクトを作成する**FirstToolWin** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**FirstToolWindow**します。  
   
     > [!NOTE]
-    >  ツール ウィンドウで拡張機能の作成の詳細については、[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。  
+    >  ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。  
   
 ## <a name="add-a-control-to-the-tool-window"></a>ツール ウィンドウにコントロールを追加します。  
   
@@ -269,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      最初の名前付きパラメーターは`Style`、値は`Tabbed`ウィンドウは、既存のウィンドウ タブにあることを意味します。 ドッキング位置がで指定された、`Window`パラメーターでは、この場合は、n の GUID、**ソリューション エクスプ ローラー**します。  
   
     > [!NOTE]
-    >  IDE のウィンドウの種類の詳細については、<xref:EnvDTE.vsWindowType>を参照してください。  
+    >  IDE のウィンドウの種類の詳細については、次を参照してください。<xref:EnvDTE.vsWindowType>します。  
   
 ## <a name="testing-the-tool-window"></a>ツール ウィンドウのテスト  
   
@@ -285,4 +280,3 @@ public System.Windows.Controls.MediaElement MediaPlayer
   
 ## <a name="see-also"></a>関連項目  
  [コマンド、メニュー、およびツール バー](../extensibility/internals/commands-menus-and-toolbars.md)
-
