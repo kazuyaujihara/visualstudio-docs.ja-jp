@@ -1,14 +1,9 @@
 ---
 title: '方法: プロセス ビューでプロセスを検索 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Processes view
 - processes, searching for
@@ -16,13 +11,13 @@ ms.assetid: 7cb97b37-4a95-4f1b-9eee-4910aa9c115b
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c187089c8aeec3b2c0409adbab1f262893720d87
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735604"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972721"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>方法: プロセス ビューでプロセスを検索する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +44,3 @@ ms.locfileid: "51735604"
 6. **[OK]** をクリックします。  
   
    強調表示されて、一致するプロセスが見つかった場合、**プロセス ビュー**ウィンドウ。
-
-
-

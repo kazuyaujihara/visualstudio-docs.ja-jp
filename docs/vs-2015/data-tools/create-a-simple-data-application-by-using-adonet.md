@@ -1,12 +1,9 @@
 ---
 title: ADO.NET を使用して単純なデータ アプリケーションの作成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +13,15 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824283"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58973889"
 ---
-# <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用して単純なデータ アプリケーションを作成します。
+# <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用した単純なデータ アプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -54,7 +51,7 @@ ms.locfileid: "49824283"
   
 - Visual Studio Community エディション。  
   
-- SQL Server Express LocalDB です。  
+- SQL Server Express LocalDB。  
   
 - 次の手順で作成したサンプルの小さなデータベース[スクリプトを使用して SQL database を作成する](../data-tools/create-a-sql-database-by-using-a-script.md)します。  
   
@@ -71,7 +68,7 @@ ms.locfileid: "49824283"
   
     Visual Studio は、Form1 という名前の空の Windows フォームを含めた、いくつかのファイルとプロジェクトを作成します。  
   
-2. 3 つの形式を持つように、2 つの Windows フォームをプロジェクトに追加し、次の名前を付けるし。  
+2. 2 つの Windows フォームをプロジェクトに追加し、合計 3 つのフォームに次の名前を付けます。  
   
    -   ナビゲーション  
   
@@ -227,7 +224,7 @@ ms.locfileid: "49824283"
  このセクションには、各フォームの動作を簡単な概要と、フォームを作成するコードがあります。 番号付きコメントは、コードのセクションを識別します。  
   
 ### <a name="navigation-form"></a>Navigation フォーム  
- Navigation フォームはアプリケーションを実行すると開きます。 **アカウントを追加**NewCustomer フォームを開きます。 **Fill またはキャンセル オーダー** FillOrCancel フォームを開きます。 **終了**ボタンは、アプリケーションを閉じます。  
+ Navigation フォームはアプリケーションを実行すると開きます。 **[Add an account]** ボタンは NewCustomer フォームを開きます。 **[Fill or cancel orders]** ボタンは FillOrCancel フォームを開きます。 **[Exit]** ボタンは、アプリケーションを閉じます。  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>Navigation フォームをスタートアップ フォームに設定  
  C# を使用している場合**ソリューション エクスプ ローラー**Program.cs を開き、変更、`Application.Run`この行。 `Application.Run(new Navigation());`  
@@ -1145,4 +1142,3 @@ End Namespace
   
 ##  <a name="BKMK_testyourapplication"></a> アプリケーションをテストします。  
  ビルドし、各クリック イベント ハンドラーのコードを記述した後、アプリケーションをテストするには、F5 キーを選択し、コーディングを完了した後、します。
-

@@ -1,26 +1,21 @@
 ---
 title: 実行の制御 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f4fe5259d49424fa1d46ea1ef33c0808dfc7b7be
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: d3ce9f3fc810a1f2fd37166d4272b7c57c07927c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776370"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973141"
 ---
 # <a name="control-of-execution"></a>実行の制御
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51776370"
   
 - 読み込み完了イベントを既に実行されているプログラムにアタッチする場合  
   
-  これら両方のイベントは、イベント、つまり、DE が IDE を使用して、ユーザーからの応答を待機する停止しています。 詳細については、[操作モード](../../extensibility/debugger/operational-modes.md)を参照してください。  
+  これら両方のイベントは、イベント、つまり、DE が IDE を使用して、ユーザーからの応答を待機する停止しています。 詳細については、次を参照してください。[操作モード](../../extensibility/debugger/operational-modes.md)します。  
   
 ## <a name="stopping-event"></a>イベントを停止しています  
  ときに、デバッグ セッションを停止イベントが送信されます。  
@@ -68,4 +63,3 @@ ms.locfileid: "51776370"
   
 ## <a name="see-also"></a>関連項目  
  [タスクのデバッグ](../../extensibility/debugger/debugging-tasks.md)
-

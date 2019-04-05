@@ -1,23 +1,20 @@
 ---
 title: アイコンまたはデコレーターの可視性の制御 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2697fd5d-b936-4b6b-b87b-be64825dc7a4
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4befc49fab1d1b53d70f1b79ee1a2bbe96be11f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cbfffc3983c8270058591edcca6d6188c9791102
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972923"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>アイコンまたはデコレーターの可視性の制御
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +22,7 @@ ms.locfileid: "49913411"
 A*デコレーター*がアイコンか、ドメイン固有言語 (DSL) 内の図形に表示されるテキストの行。 デコレーターの表示を作成でき、モデル内のプロパティの状態によって非表示になります。 など、人を表す図形、個人の性別、子供の数に応じて表示されると、さまざまなアイコンがある可能性があります。  
   
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>アイコンまたはデコレーターの可視性を制御します。  
- 次の手順では、既に定義した図形、およびそのマッピングをドメイン クラスを前提としています。 詳細については、[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)を参照してください。  
+ 次の手順では、既に定義した図形、およびそのマッピングをドメイン クラスを前提としています。 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。  
   
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>アイコンやテキスト デコレーターの可視性を制御するには  
   
@@ -89,7 +86,7 @@ A*デコレーター*がアイコンか、ドメイン固有言語 (DSL) 内の�
   
 4.  クリックして**ソリューションのビルド**上、**ビルド**メニュー。  
   
-5.  エラー レポートが表示されていたをダブルクリックします。"*YourClass*は定義を含んでいない GetDecoratorControlValue の..."。  
+5.  エラー レポートが表示されていたをダブルクリックします。"*YourClass*は定義を含んでいない GetDecoratorControlValue の..."です。  
   
      テキスト エディターは、Dsl\GeneratedCode\DomainClasses.cs でが開きます。 上記の強調表示されたエラーは、メソッドを追加することを要求するコメントです。  
   
@@ -106,7 +103,7 @@ A*デコレーター*がアイコンか、ドメイン固有言語 (DSL) 内の�
     } } }  
     ```  
   
-     プログラム コードでモデルをカスタマイズする方法の詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。  
+     プログラム コードでモデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。  
   
 8.  再構築し、ソリューションを実行します。  
   
@@ -115,6 +112,3 @@ A*デコレーター*がアイコンか、ドメイン固有言語 (DSL) 内の�
  [図の背景イメージの設定](../modeling/setting-a-background-image-on-a-diagram.md)   
  [移動して、プログラム コードでモデルを更新しています](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

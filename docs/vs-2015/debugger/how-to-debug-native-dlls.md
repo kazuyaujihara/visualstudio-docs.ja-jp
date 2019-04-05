@@ -1,14 +1,9 @@
 ---
 title: '方法: ネイティブ Dll のデバッグ |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dll
 dev_langs:
@@ -27,19 +22,19 @@ ms.assetid: 76b34d15-a66d-4963-842e-c8b955c81696
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6577395d33d9004d8f17d91f273e3a53e7a3897d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ffc4f0b58bacdc71439a89dce711575a103c71cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964334"
 ---
-# <a name="how-to-debug-native-dlls"></a>方法: ネイティブ DLL サーバーをデバッグする
+# <a name="how-to-debug-native-dlls"></a>方法: ネイティブ Dll をデバッグします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
  DLL をデバッグするときには、次のプロジェクトからデバッグを開始できます。  
   
@@ -49,7 +44,7 @@ ms.locfileid: "51757474"
   
 - DLL 自身を作成するのに使用したプロジェクト  
   
-  実行可能ファイルの作成に使用したプロジェクトがある場合は、そのプロジェクトからデバッグを開始します。 実行可能ファイルの作成に使用したプロジェクトに含まれていない DLL でも、そのソース ファイルを開いてブレークポイントを設定できます。 詳細については、[ブレークポイント](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)を参照してください。  
+  実行可能ファイルの作成に使用したプロジェクトがある場合は、そのプロジェクトからデバッグを開始します。 実行可能ファイルの作成に使用したプロジェクトに含まれていない DLL でも、そのソース ファイルを開いてブレークポイントを設定できます。 詳細については、[ブレークポイント](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)に関するページを参照してください。  
   
   DLL を作成したプロジェクトからデバッグを開始する場合は、DLL のデバッグに使用する実行可能ファイルを指定する必要があります。  
   
@@ -70,6 +65,3 @@ ms.locfileid: "51757474"
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)
-
-
-

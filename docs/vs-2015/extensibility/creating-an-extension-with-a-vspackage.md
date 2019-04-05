@@ -1,24 +1,19 @@
 ---
 title: VSPackage を使用した拡張機能の作成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 945ae5b3cf6cd8769795c31a10a4f51e1f7eccb6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0077c891a300d81f05aec32930cb1ffda82c8d5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773302"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974180"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>VSPackage を使用した拡張機能の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +31,12 @@ ms.locfileid: "51773302"
   
 3.  プロジェクトをビルドし、デバッグを開始します。  
   
-     Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、[、実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。  
+     Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、次を参照してください。 [、実験用インスタンス](../extensibility/the-experimental-instance.md)します。  
   
 4.  実験用インスタンスの開く、**ツール/拡張機能と更新**ウィンドウ。 表示する必要があります、 **FirstPackage**拡張します。 (を開いた場合**拡張機能と更新**、Visual Studio の作業用インスタンスでは表示されません**FirstPackage**)。  
   
 ## <a name="loading-the-vspackage"></a>VSPackage の読み込み  
- この時点で、拡張機能は、ために読み込めませんをロードすると、そのことはありません。 (ツール ウィンドウを開き、メニュー コマンドをクリックすると、)、UI を使用した、または特定の UI コンテキストで、VSPackage を読み込む必要がありますを指定することで対話する際に一般的に、拡張機能を読み込むことができます。 Vspackage と UI のコンテキストを読み込む方法の詳細については、[Vspackage の読み込み](../extensibility/loading-vspackages.md)を参照してください。 この手順では、ソリューションが開いているときに VSPackage を読み込む方法を紹介します。  
+ この時点で、拡張機能は、ために読み込めませんをロードすると、そのことはありません。 (ツール ウィンドウを開き、メニュー コマンドをクリックすると、)、UI を使用した、または特定の UI コンテキストで、VSPackage を読み込む必要がありますを指定することで対話する際に一般的に、拡張機能を読み込むことができます。 Vspackage と UI のコンテキストを読み込む方法の詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。 この手順では、ソリューションが開いているときに VSPackage を読み込む方法を紹介します。  
   
 1.  FirstPackage.cs ファイルを開きます。 FirstPackage クラスの宣言を探します。 既存の属性を次に置き換えます。  
   
@@ -53,7 +48,7 @@ ms.locfileid: "51773302"
     public sealed class FirstPackage : Package  
     ```  
   
-2.  VSPackage が読み込まれていることを知らせるメッセージを追加してみましょう。 メソッドを使用して、VSPackage の Initialize()、これを行うため、VSPackage が配置された後にのみ、Visual Studio サービスを取得できます。 (サービスの取得の詳細については、次を参照してください[方法: サービスを取得](../extensibility/how-to-get-a-service.md)。)。FirstPackage の Initialize() メソッドを取得するコードで置き換える、<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>サービスを取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>インターフェイス、および呼び出しの<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A>メソッド。  
+2.  VSPackage が読み込まれていることを知らせるメッセージを追加してみましょう。 メソッドを使用して、VSPackage の Initialize()、これを行うため、VSPackage が配置された後にのみ、Visual Studio サービスを取得できます。 (サービスの取得の詳細については、次を参照してください。[方法。サービスを取得](../extensibility/how-to-get-a-service.md))。FirstPackage の Initialize() メソッドを取得するコードで置き換える、<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>サービスを取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>インターフェイス、および呼び出しの<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A>メソッド。  
   
     ```csharp  
     protected override void Initialize()  
@@ -81,4 +76,3 @@ ms.locfileid: "51773302"
 3.  プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。  
   
 4.  実験用インスタンスでは、ソリューションを開きます。 示すメッセージ ボックスを表示する必要があります**最初のパッケージ内で Initialize()** します。
-

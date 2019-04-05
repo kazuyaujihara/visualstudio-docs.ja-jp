@@ -1,14 +1,9 @@
 ---
-title: ': Ca 1812 インスタンス化されていない内部クラス |Microsoft Docs'
-ms.custom: ''
+title: CA1812:インスタンス化されていない内部クラスの回避 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1812
 - AvoidUninstantiatedInternalClasses
@@ -20,14 +15,14 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5236fd2dd4635b88ce82b993ebbc15a25e767df1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c2066e1c3ae3975536735290c34932f347c15693
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899787"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964150"
 ---
-# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: インスタンス化されていない内部クラスを使用しないでください
+# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:インスタンス化されていない内部クラスを使用しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -99,11 +94,8 @@ ms.locfileid: "49899787"
   このような場合は、この警告を抑制することをお勧めします。
 
 ## <a name="related-rules"></a>関連規則
- [CA1811: 呼び出されていないプライベート コードを使用しません](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811:呼び出されていないプライベート コードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1801: 使用されていないパラメーターをレビューします](../code-quality/ca1801-review-unused-parameters.md)
+ [CA 1801:未使用のパラメーターをレビューします](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: 使用されていないローカルを削除します](../code-quality/ca1804-remove-unused-locals.md)
-
-
-
+ [CA 1804:使用されていないローカルを削除します](../code-quality/ca1804-remove-unused-locals.md)

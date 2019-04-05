@@ -1,27 +1,22 @@
 ---
 title: ツールバーの追加 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding to IDE
 - IDE, adding toolbars
 ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 038b8e8503a89dd0ec565d3d1b5acf20e6437600
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 12c57f83e992750ddc12c50fafb2065345022f80
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787953"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973609"
 ---
 # <a name="adding-a-toolbar"></a>ツール バーの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +27,13 @@ ms.locfileid: "51787953"
   
  ユーザーがさらに、ツールバーにコマンドを追加またはを使用してから、削除、**カスタマイズ** ダイアログ ボックス。 通常、Vspackage では、ツールバーは、ユーザーがカスタマイズできます。 IDE がカスタマイズをすべてを処理し、VSPackage がコマンドに応答します。 VSPackage は、コマンドが物理的に配置されている場所を認識する必要はありません。  
   
- メニューの詳細については、[コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)を参照してください。  
+ メニューの詳細については、次を参照してください。[コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
   
 ## <a name="creating-an-extension-with-a-toolbar"></a>ツールバーと拡張機能の作成  
- という名前の VSIX プロジェクトを作成する`IDEToolbar`します。 という名前のメニュー コマンド項目テンプレートを追加**ToolbarTestCommand**します。 これを行う方法については、[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。  
+ という名前の VSIX プロジェクトを作成する`IDEToolbar`します。 という名前のメニュー コマンド項目テンプレートを追加**ToolbarTestCommand**します。 これを行う方法については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
   
 ## <a name="creating-a-toolbar-for-the-ide"></a>IDE のツールバーの作成  
   
@@ -94,8 +89,7 @@ ms.locfileid: "51787953"
   
 6.  ツールバーの一覧を取得する Visual Studio のメニュー バーを右クリックします。 選択**テスト ツールバー**します。  
   
-7.  ファイル アイコンには、検索の右側にアイコンとして、ツールバーがわかります。 示すメッセージ ボックスが表示アイコンをクリックすると**ToolbarTestCommandPackage します。IDEToolbar.ToolbarTestCommand.MenuItemCallback() 内**します。  
+7.  ファイル アイコンには、検索の右側にアイコンとして、ツールバーがわかります。 示すメッセージ ボックスが表示アイコンをクリックすると**ToolbarTestCommandPackage します。Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
   
 ## <a name="see-also"></a>関連項目  
  [コマンド、メニュー、およびツール バー](../extensibility/internals/commands-menus-and-toolbars.md)
-

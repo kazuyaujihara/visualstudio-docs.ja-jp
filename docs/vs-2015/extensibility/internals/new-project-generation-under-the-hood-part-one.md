@@ -1,29 +1,24 @@
 ---
-title: '新しいプロジェクトの生成: 内部、パート 1 |Microsoft Docs'
-ms.custom: ''
+title: '新しいプロジェクトの生成: 内部的には、パート 1 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974726"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>新しいプロジェクトの生成: 内部、パート 1
+# <a name="new-project-generation-under-the-hood-part-one"></a>新しいプロジェクトの生成: 内部的な処理、パート 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 独自のプロジェクトの種類を作成する方法と考えるでしょうか。 新しいプロジェクトを作成すると実際にはどうなりますか不思議に思うでしょうか。 内部的には時間をかけてを実際に起こっているを確認しましょう。  
@@ -97,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  このサブキーが存在する場合、ルート ノードの位置は、開発者の設定 ダイアログ ボックスによって制御されます。 例えば以下のようにします。  
   
- DeveloperActivity REG_SZ VC #  
+ DeveloperActivity REG_SZVC#  
   
  されることを示します (Visual C#) はルート ノードの Visual Studio が設定されている場合[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]開発します。 それ以外の場合の子ノードであることが**他の言語**します。  
   
@@ -128,7 +123,7 @@ devenv /installvstemplates
 -   並べ替え順序を変更することができます。  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>プロジェクトの種類のルート ノードの検索  
- Visual Studio では、ProjectTemplates フォルダーはスキャン、ときに、すべての .zip ファイルを開き、.vstemplate ファイルを抽出します。 .Vstemplate ファイルでは、XML を使用して、アプリケーション テンプレートについて説明します。 詳細については、[新しいプロジェクトの生成: 内部、パート 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)を参照してください。  
+ Visual Studio では、ProjectTemplates フォルダーはスキャン、ときに、すべての .zip ファイルを開き、.vstemplate ファイルを抽出します。 .Vstemplate ファイルでは、XML を使用して、アプリケーション テンプレートについて説明します。 詳細については、次を参照してください。[新しいプロジェクトの生成。内部的には、2 つのパート](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)します。  
   
  \<ProjectType > タグは、アプリケーションのプロジェクトの種類を決定します。 たとえば、\CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip ファイルには、このタグを含む EmptyProject.vstemplate ファイルが含まれています。  
   
@@ -220,5 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** Visual c# の Windows ノードのすぐ下に子ノードとして表示されます。  
   
 ## <a name="see-also"></a>関連項目  
- [新しいプロジェクトの生成: 内部、パート 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-
+ [新しいプロジェクトの生成:内部的には、パート 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

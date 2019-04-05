@@ -1,26 +1,21 @@
 ---
 title: .NET Framework のメモリに関する問題の分析 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnostics.managedmemoryanalysis
 ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 5b5b79e351f828f443e133f40c322ffba3f1a8b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973328"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>.NET Framework のメモリ分析の問題
 Visual Studio マネージド メモリ アナライザーを使用して、.NET Framework コードでのメモリ リークおよび非効率的なメモリの使用を検出します。 対象コードの最低限の .NET Framework バージョンは .NET Framework 4.5 です。  
@@ -31,7 +26,7 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
   
 - 比較することもできます (*diff*) が原因で、メモリ、コードの領域を見つけるためのアプリの 2 つのスナップショットを使用して、時間と共に増加します。  
   
-  マネージ メモリ アナライザーのチュートリアルは、[Visual Studio 2013 に実稼働環境での .NET メモリ問題の診断を使用して](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)、Visual Studio ALM と Team Foundation Server のブログにを参照してください。  
+  マネージ メモリ アナライザーのチュートリアルは、次を参照してください。 [Visual Studio 2013 に実稼働環境での .NET メモリ問題の診断を使用して](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)、Visual Studio ALM と Team Foundation Server のブログにします。  
   
 ##  <a name="BKMK_Contents"></a> 目次  
  [.NET Framework アプリでメモリの使用](#BKMK_Memory_use_in__NET_Framework_apps)  
@@ -189,6 +184,6 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
    ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
 ## <a name="see-also"></a>関連項目  
- [VS ALM TFS ブログ: Visual Studio 2013 を使用して実稼働環境での .NET メモリ問題を診断するには](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   
+ [VS ALM TFS ブログ:Visual Studio 2013 を使用して実稼働環境での .NET メモリ問題を診断するには](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   
  [Channel 9 &#124; Visual Studio TV&#124;マネージ メモリ分析](http://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)   
  [Channel 9 &#124; Visual Studio ツールボックス&#124;マネージ Visual Studio 2013 でのメモリ分析](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)

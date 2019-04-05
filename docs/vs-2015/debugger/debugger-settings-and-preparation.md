@@ -1,14 +1,9 @@
 ---
 title: デバッガーの設定と準備 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -23,20 +18,20 @@ ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d670470158c86fa62c860571779ec701f65a11f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766277"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972952"
 ---
 # <a name="debugger-settings-and-preparation"></a>デバッガーの設定と準備
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、デバッグに関連するプロパティ設定と、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッガーを使用してプログラムをデバッグするために必要な準備について説明します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でプロジェクト テンプレートを使ってプログラムを作成する場合、これらの設定はデバッグ構成で正しく設定されます。  
   
- 詳細については、「[方法: デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。  
+ 詳細については、「[方法 :デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [デバッガーに関連するプロジェクト設定](../debugger/debugger-project-settings.md)  
@@ -51,7 +46,7 @@ ms.locfileid: "51766277"
  [ASP.NET Web アプリケーション](../debugger/debugging-preparation-aspnet-web-applications.md)  
  ASP.NET Web アプリケーションを構成する方法について説明します。  
   
- [方法 : Visual Studio ソリューションに含まれていない実行可能ファイルをデバッグする](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [方法: Visual Studio ソリューションの一部ではない実行可能ファイルをデバッグする](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Visual Studio プロジェクトの一部として作成されていない実行可能ファイルをデバッグする方法について説明します。  
   
  [方法: Code Center Premium ソースをデバッグする](../debugger/how-to-debug-with-code-center-premium-source.md)  
@@ -63,12 +58,9 @@ ms.locfileid: "51766277"
  [プロセスのデバッグとホスト](../debugger/debugging-and-the-hosting-process.md)  
  ホスト プロセスのさまざまな側面について説明します。  
   
- [方法 : デバッグで .NET Framework のバージョンを指定する](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
+ [方法: デバッグ用の .NET Framework のバージョンを指定する](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  レジストリ キーを設定して、使用するバージョンをデバッガーに指定する方法について説明します。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)
-
-
-

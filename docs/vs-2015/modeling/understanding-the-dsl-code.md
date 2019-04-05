@@ -1,32 +1,29 @@
 ---
 title: DSL コードについて |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
 ms.assetid: 8e5c10e4-6323-433e-b88a-5d3d92639030
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: afe6a273716ab5e531781634be959c80d30a9e26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834022"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974699"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL コードについて
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ドメイン固有言語 (DSL) ソリューションは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内で DSL のインスタンスの読み取りと更新に使用可能な API を生成します。 この API は、DSL 定義から生成されるコード中に定義されます。 このトピックでは生成される API を説明します。  
   
-## <a name="the-example-solution-component-diagrams"></a>ソリューション例: コンポーネント図  
+## <a name="the-example-solution-component-diagrams"></a>ソリューションの例:コンポーネント図  
  このトピックの例のほとんどのソースでは、ソリューションを作成するから DSL を作成、**コンポーネント モデル**ソリューション テンプレート。 これは、新しい DSL ソリューションを作成するときに表示される標準のテンプレートの 1 つです。  
   
 > [!NOTE]
@@ -65,13 +62,13 @@ ms.locfileid: "49834022"
   
  *YourDsl* `Schema.xsd`  
   
- DSL のインスタンスを含むファイルのスキーマ。 このファイルは、コンパイル時にコピー (**bin**) ディレクトリ。 DSL をインストールするときにこのファイルをコピーできます**\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas**モデル ファイルを検証できるようにします。 詳細については、[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)を参照してください。  
+ DSL のインスタンスを含むファイルのスキーマ。 このファイルは、コンパイル時にコピー (**bin**) ディレクトリ。 DSL をインストールするときにこのファイルをコピーできます**\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas**モデル ファイルを検証できるようにします。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。  
   
- DSL エクスプローラーでオプションを設定することによりシリアル化をカスタマイズする場合、スキーマは適宜変更されます。 ただし、独自のシリアル化コードを作成する場合、このファイルは実際のスキーマを表さなくなる場合があります。 詳細については、[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)を参照してください。  
+ DSL エクスプローラーでオプションを設定することによりシリアル化をカスタマイズする場合、スキーマは適宜変更されます。 ただし、独自のシリアル化コードを作成する場合、このファイルは実際のスキーマを表さなくなる場合があります。 詳細については、次を参照してください。[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)します。  
   
  `ConnectionBuilders.cs`  
   
- 接続ビルダーはリレーションシップを作成するクラスです。 これは接続ツールの裏にあるコードです。 このファイルは各接続ツールに対するクラスのペアを含みます。 名前は、ドメイン リレーションシップと接続ツールの名前から派生されます:*リレーションシップ*ビルダー、および*ConnectorTool*ConnectAction します。  
+ 接続ビルダーはリレーションシップを作成するクラスです。 これは接続ツールの裏にあるコードです。 このファイルは各接続ツールに対するクラスのペアを含みます。 名前は、ドメイン リレーションシップと接続ツールの名前から派生されます。*リレーションシップ*ビルダー、および*ConnectorTool*ConnectAction します。  
   
  (コンポーネント ソリューションの例で、接続ビルダーの 1 つは ConnectionBuilder という名前ですが、ドメイン リレーションシップは Connection という名前なので、これは偶然の一致です)  
   
@@ -107,7 +104,7 @@ ms.locfileid: "49834022"
   
  このディレクティブ プロセッサは、ユーザーが DSL のインスタンスを読み取るテキスト テンプレートを作成するのに役立ちます。 ディレクティブ プロセッサは DSL のアセンブリ (DLL) を読み込み、名前空間の `using` ステートメントを効果的に挿入します。 これにより、テキスト テンプレート内のコードは DSL 内に定義されたクラスとリレーションシップを使用できます。  
   
- 詳細については、[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)と[カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成](../modeling/creating-custom-t4-text-template-directive-processors.md)を参照してください。  
+ 詳細については、次を参照してください。[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)と[カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成](../modeling/creating-custom-t4-text-template-directive-processors.md)です。  
   
  `DomainClasses.cs`  
   
@@ -115,7 +112,7 @@ ms.locfileid: "49834022"
   
  各ドメイン クラスは以下のものを含みます。  
   
-- 各ドメイン プロパティのプロパティ定義と入れ子になったハンドラー クラス。 OnValueChanging() および OnValueChanged() をオーバーライドできます。 詳細については、[ドメイン プロパティ値変更ハンドラー](../modeling/domain-property-value-change-handlers.md)を参照してください。  
+- 各ドメイン プロパティのプロパティ定義と入れ子になったハンドラー クラス。 OnValueChanging() および OnValueChanged() をオーバーライドできます。 詳細については、次を参照してください。[ドメイン プロパティ値変更ハンドラー](../modeling/domain-property-value-change-handlers.md)します。  
   
    DSL の例で、`Comment` クラスはプロパティ `Text` とハンドラー クラス `TextPropertyHandler` を含みます。  
   
@@ -138,13 +135,13 @@ ms.locfileid: "49834022"
 > [!NOTE]
 >  これはモデルのルート クラスと同じではありません。  
   
- コピー クロージャと削除クロージャは、要素がコピーまたは削除されるときに含まれる必要のある他の要素を定義します。 設定してこの動作を制御することができます、**コピーの伝達**と**削除の伝達**すべてのリレーションシップの両端のロールのプロパティ。 値を動的に決定する場合は、コードを作成して、クロージャ クラスのメソッドをオーバーライドできます。 詳細については、[方法: プログラムのコピーと貼り付け動作 - リダイレクト](../misc/how-to-program-copy-and-paste-behavior-redirect.md)を参照してください。  
+ コピー クロージャと削除クロージャは、要素がコピーまたは削除されるときに含まれる必要のある他の要素を定義します。 設定してこの動作を制御することができます、**コピーの伝達**と**削除の伝達**すべてのリレーションシップの両端のロールのプロパティ。 値を動的に決定する場合は、コードを作成して、クロージャ クラスのメソッドをオーバーライドできます。 詳細については、「[方法: プログラムのコピーと貼り付け動作 - リダイレクト](../misc/how-to-program-copy-and-paste-behavior-redirect.md)します。  
   
  `DomainModelResx.resx`  
   
  これには、ドメイン クラスとプロパティの説明、プロパティ名、ツールボックス ラベル、標準エラー メッセージ、およびユーザーに表示可能な他の文字列などの文字列が含まれます。 また、ツール アイコンおよび画像図形用の画像も含みます。  
   
- このファイルはビルドされたアセンブリにバインドされ、これらのリソースの既定値を提供します。 リソースのローカライズ版を含む	サテライト アセンブリを作成することにより、DSL をローカライズできます。 その版は、DSL がローカライズされたリソースに一致するカルチャにインストールされるときに使用されます。 詳細については、[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)を参照してください。  
+ このファイルはビルドされたアセンブリにバインドされ、これらのリソースの既定値を提供します。 リソースのローカライズ版を含む	サテライト アセンブリを作成することにより、DSL をローカライズできます。 その版は、DSL がローカライズされたリソースに一致するカルチャにインストールされるときに使用されます。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。  
   
  `DomainRelationships.cs`  
   
@@ -158,15 +155,15 @@ ms.locfileid: "49834022"
   
  1..1 または 1..* の多重度を指定するリレーションシップ ロールで、ユーザーにリレーションシップのインスタンスが少なくとも 1 つ必要であることを警告する必要があります。 このファイルはそれらの警告を実装する検証制約を提供します。 埋め込み親への 1..1 リンクは検証されません。  
   
- これらの制約を実行する必要がありますを設定しての 1 つ、**を使用しています.** オプション、**発します**DSL エクスプ ローラーでノード。 詳細については、[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)を参照してください。  
+ これらの制約を実行する必要がありますを設定しての 1 つ、**を使用しています.** オプション、**発します**DSL エクスプ ローラーでノード。 詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。  
   
  `PropertiesGrid.cs`  
   
- このファイルは、カスタム型記述子をドメイン プロパティにアタッチしている場合にのみ、コードを含みます。 詳細については、[プロパティ ウィンドウのカスタマイズ](../modeling/customizing-the-properties-window.md)を参照してください。  
+ このファイルは、カスタム型記述子をドメイン プロパティにアタッチしている場合にのみ、コードを含みます。 詳細については、次を参照してください。[プロパティ ウィンドウのカスタマイズ](../modeling/customizing-the-properties-window.md)します。  
   
  `SerializationHelper.cs`  
   
-- 同じモニカーにより参照される要素は 2 つないことを確認するための検証メソッド。 詳細については、[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)を参照してください。  
+- 同じモニカーにより参照される要素は 2 つないことを確認するための検証メソッド。 詳細については、次を参照してください。[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)します。  
   
 - SerializationHelper class。シリアル化クラスにより共通で使用される関数を提供します。  
   
@@ -178,7 +175,7 @@ ms.locfileid: "49834022"
   
   `Shapes.cs`  
   
-  DSL 定義内のすべての図形クラスに対するクラス。 図形は <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> から派生します。 詳細については、[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)を参照してください。  
+  DSL 定義内のすべての図形クラスに対するクラス。 図形は <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> から派生します。 詳細については、次を参照してください。[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)します。  
   
   部分クラスで、独自のメソッドで生成されたメソッドをオーバーライドするには、次のように設定します。 **Double Derived の生成**DSL 定義でコネクタ。 コンス トラクターを独自のコードに置き換えて、次のように設定します。**カスタム コンス トラクターを持つ**します。  
   
@@ -197,7 +194,7 @@ ms.locfileid: "49834022"
   
  `CommandSet.cs`  
   
- 図の上に表示されるコンテキスト メニュー コマンド。 この設定の適用または設定への追加が可能です。 このファイルはコマンドのコードを含みます。 メニュー上のコマンドの場所は Commands.vsct ファイルにより決定されます。 詳細については、[書き込みユーザー コマンドおよびユーザー アクション](../modeling/writing-user-commands-and-actions.md)を参照してください。  
+ 図の上に表示されるコンテキスト メニュー コマンド。 この設定の適用または設定への追加が可能です。 このファイルはコマンドのコードを含みます。 メニュー上のコマンドの場所は Commands.vsct ファイルにより決定されます。 詳細については、次を参照してください。[書き込みユーザー コマンドおよびユーザー アクション](../modeling/writing-user-commands-and-actions.md)します。  
   
  `Constants.cs`  
   
@@ -288,7 +285,7 @@ namespace Company.EmbedInForm
   
  `GeneratedVSCT.vsct`  
   
- [ダイアグラム] コンテキスト メニューなど、メニュー上の標準のメニュー コマンドを検索、**編集**メニューのという具合です。 コマンドのコードは CommandSet.cs にあります。 標準コマンドを再配置または変更して、独自のコマンドを追加できます。 詳細については、[書き込みユーザー コマンドおよびユーザー アクション](../modeling/writing-user-commands-and-actions.md)を参照してください。  
+ [ダイアグラム] コンテキスト メニューなど、メニュー上の標準のメニュー コマンドを検索、**編集**メニューのという具合です。 コマンドのコードは CommandSet.cs にあります。 標準コマンドを再配置または変更して、独自のコマンドを追加できます。 詳細については、次を参照してください。[書き込みユーザー コマンドおよびユーザー アクション](../modeling/writing-user-commands-and-actions.md)します。  
   
  `ModelExplorer.cs`  
   
@@ -349,13 +346,10 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 > [!WARNING]
 >  .tt ファイルを編集してアイコンまたは画像などのリソースを含める場合は、リソースが VSIX ビルドに含まれていることを確認してください。 ソリューション エクスプ ローラーでファイルを選択し、ことを確認、 **VSIX に含める**プロパティは`True`します。  
   
- このファイルは、DSL が Visual Studio Integration Extension (VSIX) にパッケージ化される方法を制御します。 詳細については、[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)を参照してください。  
+ このファイルは、DSL が Visual Studio Integration Extension (VSIX) にパッケージ化される方法を制御します。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)   
  [理解のモデル、クラスとリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)   
  [カスタマイズとドメイン固有言語の拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)   
  [ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

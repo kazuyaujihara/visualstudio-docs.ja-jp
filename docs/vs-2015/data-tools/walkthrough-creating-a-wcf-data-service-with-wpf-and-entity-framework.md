@@ -1,12 +1,9 @@
 ---
-title: 'チュートリアル: WPF と Entity Framework を使用する WCF Data Service の作成 |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: WPF と Entity Framework と WCF データ サービスを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 helpviewer_keywords:
 - data services in Visual Studio
 - WCF Data Services, Visual Studio
@@ -16,15 +13,15 @@ ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3d115c7ea7b2739f49492fb28fe855e2638d972c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 2be6c030cf8602f053472971a98508043b253e43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889595"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974816"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>チュートリアル: WPF と Entity Framework を使用する WCF Data Service の作成
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -49,7 +46,7 @@ ms.locfileid: "49889595"
   
 -   Northwind サンプル データベース。  
   
-     開発用コンピューターにこのデータベースがない場合は、 [Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkID=98088)からダウンロードできます。 手順については、[サンプル データベースのダウンロード](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)を参照してください。  
+     開発用コンピューターにこのデータベースがない場合は、 [Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkID=98088)からダウンロードできます。 手順については、次を参照してください。[サンプル データベースのダウンロード](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)します。  
   
 ## <a name="creating-the-service"></a>サービスの作成  
  [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] を作成するには、Web プロジェクトを追加し、[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]を作成した後、そのモデルからサービスを作成します。  
@@ -62,11 +59,11 @@ ms.locfileid: "49889595"
   
 1. メニュー バーで、**ファイル**、**新規**、**プロジェクト**します。  
   
-2. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual Basic**または**Visual c#** と**Web**ノードを選択し、 **ASP します。NET Web アプリケーション**テンプレート。  
+2. **[新しいプロジェクト]** ダイアログ ボックスの **[Visual Basic]** または **[Visual C#]** ノードを展開して、**[Web]** ノードをクリックし、**[ASP.NET Web アプリケーション]** テンプレートをクリックします。  
   
-3. **名前**テキスト ボックスに、入力 **「northwindweb」と**、選択し、 **OK**ボタン。  
+3. **[名前]** ボックスに「**NorthwindWeb**」と入力し、**[OK]** をクリックします。  
   
-4. **新しい ASP.NET プロジェクト** ダイアログ ボックスで、**テンプレートを選択**一覧で、選択**空**、選択し、 **ok**ボタンをクリックします。  
+4. **[新しい ASP.NET プロジェクト]** ダイアログ ボックスの **[テンプレートの選択]** リストで **[なし]** を選択し、**[OK]** ボタンをクリックします。  
   
    この手順では、Northwind データベースにある Customers テーブルを表す[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]を作成します。  
   
@@ -74,13 +71,13 @@ ms.locfileid: "49889595"
   
 1. メニュー バーで、**プロジェクト**、**新しい項目の追加**します。  
   
-2. **新しい項目の追加** ダイアログ ボックスで、選択、**データ**ノードを選択し、 **ADO.NET Entity Data Model**項目。  
+2. **[新しい項目の追加]** ダイアログ ボックスで **[データ]** ノードを選択し、**[ADO.NET エンティティ データ モデル]** 項目を選択します。  
   
 3. **名前**テキスト ボックスに、入力`NorthwindModel`、選択し、**追加**ボタンをクリックします。  
   
     Entity Data Model ウィザードが表示されます。  
   
-4. Entity Data Model ウィザードでの**モデルのコンテンツの選択**ページで、選択、**データベースの EF デザイナー**項目を選び、 **[次へ]** ボタンをクリックします。  
+4. エンティティ データ モデル ウィザードの **[モデルのコンテンツの選択]** ページで、**[データベースから EF デザイナー]** 項目を選択してから **[次へ]** ボタンを選択します。  
   
 5. **[データ接続の選択]** ページで、次のいずれかの操作を行います。  
   
@@ -88,19 +85,19 @@ ms.locfileid: "49889595"
   
         - または -  
   
-   -   選択、**新しい接続**新しいデータ接続を構成するボタンをクリックします。 詳細については、[新しい接続を追加](../data-tools/add-new-connections.md)を参照してください。  
+   -   **[新しい接続]** を選択して、新しいデータ接続を構成します。 詳細については、次を参照してください。[新しい接続を追加](../data-tools/add-new-connections.md)します。  
   
-6. データベースは、パスワードを必要とする場合は、選択、**はい、機密データの接続文字列に含める**オプション ボタンをクリックして、**次**ボタン。  
+6. データベースにパスワードが必要な場合は、**[はい、重要情報を接続文字列に含めます。]** を選択し、**[次へ]** をクリックします。  
   
    > [!NOTE]
-   >  ダイアログ ボックスが表示される選択**はい**をプロジェクトにファイルを保存します。  
+   >  ダイアログ ボックスが表示された場合は、**[はい]** をクリックしてファイルをプロジェクトに保存します。  
   
-7. **バージョンの選択**ページで、選択、 **Entity Framework 5.0**オプション ボタンをクリックして、 **[次へ]** ボタンをクリックします。  
+7. **[バージョンの選択]** ページで **[Entity Framework 5.0]** オプション ボタンを選択し、**[次へ]** をクリックします。  
   
    > [!NOTE]
    >  WCF サービス で Entity Framework 6 の最新バージョンを使用するには、WCF Data Services Entity Framework Provider NuGet パッケージのインストールが必要になります。 参照してください[Services 5.6.0 with Entity Framework 6 + の WCF Data を使用して](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx)します。  
   
-8. **データベース オブジェクトの選択** ページで、展開、**テーブル**ノードを選択、**顧客**チェック ボックスをオンにして、**完了**ボタンをクリックします。  
+8. **[データベース オブジェクトの選択]** ページで、**[テーブル]** ノードを展開し、**[Customers]** チェック ボックスをオンにして **[完了]** をクリックします。  
   
     エンティティ モデル ダイアグラムが表示され、プロジェクトに NorthwindModel.edmx ファイルが追加されます。  
   
@@ -110,13 +107,13 @@ ms.locfileid: "49889595"
   
 1. メニュー バーで、**プロジェクト**、**新しい項目の追加**します。  
   
-2. **新しい項目の追加** ダイアログ ボックスで、選択、 **Web**ノードを選択し、 **WCF Data Service 5.6**項目。  
+2. **[新しい項目の追加]** ダイアログ ボックスで **[Web]** ノードを選択し、**[WCF Data Service 5.6]** 項目を選択します。  
   
 3. **名前**テキスト ボックスに、入力`NorthwindCustomers`、選択し、**追加**ボタンをクリックします。  
   
     NorthwindCustomers.svc ファイルに表示されます、**コード エディター**します。  
   
-4. **コード エディター**、最初の検索`TODO:`コメントし、次のコードに置き換えます。  
+4. **コード エディター**で、最初の `TODO:` コメントを探して、コードを次のコードに置き換えます。  
   
     [!code-csharp[WCFDataServiceWalkthrough#1](../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs#1)]
     [!code-vb[WCFDataServiceWalkthrough#1](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb#1)]  
@@ -133,7 +130,7 @@ ms.locfileid: "49889595"
     Customers テーブル内のデータの XML 表現が表示されます。  
   
    > [!NOTE]
-   >  Internet Explorer がデータを誤って RSS フィードとして解釈する場合があります。 RSS フィードを表示するオプションが無効になっていることを確認してください。 詳細については、[サービス参照のトラブルシューティング](../data-tools/troubleshooting-service-references.md)を参照してください。  
+   >  Internet Explorer がデータを誤って RSS フィードとして解釈する場合があります。 RSS フィードを表示するオプションが無効になっていることを確認してください。 詳細については、次を参照してください。[サービス参照のトラブルシューティング](../data-tools/troubleshooting-service-references.md)します。  
   
 8. ブラウザー ウィンドウを閉じます。  
   
@@ -152,9 +149,9 @@ ms.locfileid: "49889595"
   
 3. **[名前]** ボックスに「`NorthwindClient`」と入力して、**[OK]** を選択します。  
   
-4. **ソリューション エクスプ ローラー**、選択、 **NorthwindClient**プロジェクト ノード。  
+4. **ソリューション エクスプローラー**で、**[NorthwindClient]** プロジェクト ノードをクリックします。  
   
-5. メニュー バーで、**プロジェクト**、**スタートアップ プロジェクトとして設定**します。  
+5. メニュー バーで、**[プロジェクト]**、**[スタートアップ プロジェクトに設定]** の順に選択します。  
   
    この手順では、Web プロジェクト内の [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] へのサービス参照を追加します。  
   
@@ -162,11 +159,11 @@ ms.locfileid: "49889595"
   
 1. メニュー バーで、**プロジェクト**、**サービス参照の追加**します。  
   
-2. **サービス参照の追加** ダイアログ ボックスで、選択、 **Discover**ボタンをクリックします。  
+2. **[サービス参照の追加]** ダイアログ ボックスで、**[探索]** をクリックします。  
   
-    NorthwindCustomers サービスの URL に表示されます、**アドレス**フィールド。  
+    NorthwindCustomers サービスの URL が **[アドレス]** フィールドに表示されます。  
   
-3. 選択、 **OK**サービス参照を追加するボタンをクリックします。  
+3. **[OK]** をクリックして、サービス参照を追加します。  
   
    この手順では、データ ソースを構成して、サービスへのデータ バインディングを有効にします。  
   
@@ -174,25 +171,25 @@ ms.locfileid: "49889595"
   
 1. メニュー バーで、**ビュー**、**その他の Windows**、**データソース**します。  
   
-2. **データ ソース**ウィンドウで、選択、**新しいデータ ソースの追加**ボタンをクリックします。  
+2. **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックします。  
   
-3. **データ ソースの種類を選択**のページ、**データ ソース構成ウィザード**、選択**オブジェクト**、選択し、**次**ボタン.  
+3. **データ ソースの構成ウィザード**の **[データ ソースの種類を選択]** ページで、**[オブジェクト]** をクリックし、**[次へ]** をクリックします。  
   
-4. **データ オブジェクトの選択** ページで、展開、 **NorthwindClient**ノードの順に展開し、 **NorthwindClient.ServiceReference1**ノード。  
+4. **[データ オブジェクトの選択]** ページで、**NorthwindClient** ノードを展開し、さらに **NorthwindClient.ServiceReference1** ノードを展開します。  
   
-5. 選択**顧客**チェック ボックスをオンにして、**完了**ボタンをクリックします。  
+5. **[Customer]** チェック ボックスをオンにし、**[完了]** をクリックします。  
   
    この手順では、サービスから取得したデータを表示するユーザー インターフェイスを作成します。  
   
 #### <a name="to-create-the-user-interface"></a>ユーザー インターフェイスを作成するには  
   
-1. **データソース**ウィンドウで、ショートカット メニューを開き、**顧客**ノード選択**コピー**。  
+1. **[データ ソース]** ウィンドウで、**[Customers]** ノードのショートカット メニューを開き、**[コピー]** をクリックします。  
   
-2. **Form1.vb**または**Form1.cs**フォーム デザイナー、ショートカット メニューを開き、選択**貼り付け**します。  
+2. **[Form1.vb]** または **[Form1.cs]** フォーム デザイナーで、ショートカット メニューを開き、**[貼り付け]** をクリックします。  
   
     <xref:System.Windows.Forms.DataGridView> コントロール、<xref:System.Windows.Forms.BindingSource> コンポーネント、および <xref:System.Windows.Forms.BindingNavigator> コンポーネントがフォームに追加されます。  
   
-3. 選択、 **CustomersDataGridView**コントロール、し、**プロパティ**ウィンドウのセット、**ドッキング**プロパティを**入力**します。  
+3. **[CustomersDataGridView]** コントロールを選択してから、**[プロパティ]** ウィンドウで **[Dock]** プロパティを **[Fill]** に設定します。  
   
 4. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **Form1**ノード選択**コードの表示**をコード エディターを開き、次の Imports または Using ステートメントでの追加、ファイルの先頭:  
   
@@ -240,9 +237,9 @@ ms.locfileid: "49889595"
   
 #### <a name="to-add-filtering-by-city"></a>都市によるフィルター処理を追加するには  
   
-1.  **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **Form1.vb**または**Form1.cs**ノード選択**開く**します。  
+1.  **ソリューション エクスプローラー**で、**[Form1.vb]** または **[Form1.cs]** ノードのショートカット メニューを開き、**[開く]** をクリックします。  
   
-2.  追加、<xref:System.Windows.Forms.TextBox>コントロールと<xref:System.Windows.Forms.Button>コントロールから、**ツールボックス**をフォームにします。  
+2.  **[ツールボックス]** から、<xref:System.Windows.Forms.TextBox> コントロールと <xref:System.Windows.Forms.Button> コントロールをフォームに追加します。  
   
 3.  ショートカット メニューを開き、<xref:System.Windows.Forms.Button>制御、および選択**コードの表示**、し、次のコードを追加、`Button1_Click`イベント ハンドラー。  
   
@@ -277,9 +274,8 @@ ms.locfileid: "49889595"
   
 5.  メニュー バーで、**デバッグ**、**デバッグの開始**アプリケーションを実行します。  
   
-6.  テキスト ボックスで、次のように入力します。**ロンドン**、ボタンを選択するとします。 ロンドンの顧客だけが表示されます。  
+6.  テキスト ボックスに「**London**」と入力し、ボタンをクリックします。 ロンドンの顧客だけが表示されます。  
   
 ## <a name="see-also"></a>関連項目  
  [Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
  [方法: WCF データ サービス参照を追加、更新、または削除する](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
-
