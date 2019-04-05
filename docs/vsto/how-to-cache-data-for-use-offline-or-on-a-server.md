@@ -29,7 +29,7 @@ ms.locfileid: "56636516"
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- データ項目が、コードで宣言されている、または、使用する場合にキャッシュされるデータ項目をマークすることができます、<xref:System.Data.DataSet>のプロパティを設定して、**プロパティ**ウィンドウ。 ないデータ項目をキャッシュするかどうか、<xref:System.Data.DataSet>または<xref:System.Data.DataTable>ドキュメント内にキャッシュされているための条件を満たしていることを確認します。 詳細については、次を参照してください。[データ キャッシュ](../vsto/caching-data.md)します。
+ データ項目が、コードで宣言されている、または、使用する場合にキャッシュされるデータ項目をマークすることができます、<xref:System.Data.DataSet>のプロパティを設定して、**プロパティ**ウィンドウ。 ないデータ項目をキャッシュするかどうか、<xref:System.Data.DataSet>または<xref:System.Data.DataTable>ドキュメント内にキャッシュされているための条件を満たしていることを確認します。 詳細については、[データ キャッシュ](../vsto/caching-data.md)を参照してください。
 
 > [!NOTE]
 >  としてマークされている Visual Basic を使用して作成されたデータセット**キャッシュ**と**WithEvents** (はからドラッグされたデータセットを含む、**データソース**ウィンドウまたは**ツールボックス**がある、 **CacheInDocument**プロパティに設定**True**)、キャッシュ内の名前にプレフィックスとしてアンダー スコアがあります。 たとえば、データセットを作成し、名前を付けます**顧客**、<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem>名前になります **_Customers**キャッシュします。 使用すると<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>このキャッシュされた項目にアクセスすることを指定する必要があります **_Customers**の代わりに**顧客**します。
@@ -55,7 +55,7 @@ ms.locfileid: "56636516"
 
 3.  **プロパティ**ウィンドウで、設定、 **CacheInDocument**プロパティを**True**します。
 
-     詳細については、次を参照してください。 [Properties in Office Projects](../vsto/properties-in-office-projects.md)します。
+     詳細については、[Properties in Office Projects](../vsto/properties-in-office-projects.md)を参照してください。
 
 4.  **プロパティ**ウィンドウで、設定、**修飾子**プロパティを**パブリック**(既定では、**内部**)。
 

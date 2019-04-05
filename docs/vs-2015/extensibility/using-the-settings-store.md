@@ -1,26 +1,21 @@
 ---
 title: 設定ストアの使用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 421ae479d2c25fc6b01ae63083f18c2b1c55c69d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8de2772f4281616837ca96b5911409f6316d5bb0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749911"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972541"
 ---
 # <a name="using-the-settings-store"></a>設定ストアの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,5 +86,4 @@ ms.locfileid: "51749911"
     > [!NOTE]
     >  \14.0Exp_Config\ といない \14.0_Config を含むキーを検索するかどうかを確認\\します。 Visual Studio の実験用インスタンスを実行すると、構成設定はレジストリ ハイブ"14.0Exp_Config"です。  
   
-3.  \Installed Products\ ノードを展開します。 前の手順でメッセージがある場合**Microsoft Windows Phone 開発者ツール インストール: True**、\Installed Products\ 場合に、Microsoft Windows Phone Developer Tools ノードが含まれている必要があります。 メッセージが場合**Microsoft Windows Phone 開発者ツール インストール: False**\Installed Products\ は Microsoft Windows Phone Developer Tools ノードを含めることはできませんし、します。
-
+3.  \Installed Products\ ノードを展開します。 前の手順でメッセージがある場合**Microsoft Windows Phone 開発者ツールをインストールします。True**、\Installed Products\ 場合に、Microsoft Windows Phone Developer Tools ノードが含まれている必要があります。 メッセージが場合**Microsoft Windows Phone 開発者ツールをインストールします。False**、し \Installed Products\ は Microsoft Windows Phone Developer Tools ノードを含めることはできません。

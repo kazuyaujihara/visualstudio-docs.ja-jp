@@ -29,7 +29,7 @@ ms.locfileid: "51792555"
 
 Visual Studio では、プロジェクトは、開発者は、ソース コード ファイルおよびその他の資産の分類に使用するコンテナーです。 プロジェクトがソリューション内の子として表示されます、**ソリューション エクスプ ローラー**します。 プロジェクトでは、整理、ビルド、デバッグ、およびソース コードをデプロイおよび Web サービス、データベース、およびその他のリソースへの参照を作成できます。  
   
- プロジェクトは、たとえば Visual c# プロジェクトの .csproj ファイルをプロジェクト ファイルで定義されます。 独自のプロジェクト ファイル名拡張子を持つ独自のプロジェクトの種類を作成することができます。 プロジェクトの種類の詳細については、次を参照してください。[プロジェクトの種類](../extensibility/internals/project-types.md)します。  
+ プロジェクトは、たとえば Visual c# プロジェクトの .csproj ファイルをプロジェクト ファイルで定義されます。 独自のプロジェクト ファイル名拡張子を持つ独自のプロジェクトの種類を作成することができます。 プロジェクトの種類の詳細については、[プロジェクトの種類](../extensibility/internals/project-types.md)を参照してください。  
   
 > [!NOTE]
 >  カスタムのプロジェクトの種類の Visual Studio を拡張する必要がある場合強くお勧めしますを活用すること、 [Visual Studio プロジェクト システム](https://github.com/Microsoft/VSProjectSystem)はさまざまなプロジェクト システムを一から構築に比べて利点があります。  
@@ -577,7 +577,7 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
      $NameSpace$ と $className$ のテンプレート パラメーターに新しい値がないことに注意してください。 次のセクションで、テンプレート パラメーターの置換を実装する方法を学習します。  
   
 ## <a name="substituting-template-parameters"></a>テンプレート パラメーターの置換  
- 前のセクションで登録したプロジェクト テンプレートで Visual Studio を使用して、`ProvideProjectFactory`属性。 テンプレート フォルダーのパスをこの方法で登録をオーバーライドし、展開する基本的なテンプレート パラメーターの置換を有効にすることができます、`ProjectNode.AddFileFromTemplate`クラス。 詳細については、次を参照してください。[新しいプロジェクトの生成: 内部、パート 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)します。  
+ 前のセクションで登録したプロジェクト テンプレートで Visual Studio を使用して、`ProvideProjectFactory`属性。 テンプレート フォルダーのパスをこの方法で登録をオーバーライドし、展開する基本的なテンプレート パラメーターの置換を有効にすることができます、`ProjectNode.AddFileFromTemplate`クラス。 詳細については、[新しいプロジェクトの生成: 内部、パート 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)を参照してください。  
   
  交換用のコードを追加、`AddFileFromTemplate`クラス。  
   

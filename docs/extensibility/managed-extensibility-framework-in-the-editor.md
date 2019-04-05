@@ -25,7 +25,7 @@ ms.locfileid: "56702045"
 
  MEF が .NET Framework version 4 に含まれている*System.ComponentModel.Composition.dll*アセンブリ。
 
- MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
+ MEF の詳細については、[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)を参照してください。
 
 ### <a name="component-parts-and-composition-containers"></a>コンポーネントの部分と合成コンテナー
  コンポーネントの一部は、クラス、または、次のいずれか (または両方) を実行できるクラスのメンバーには。

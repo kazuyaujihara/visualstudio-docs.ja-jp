@@ -35,7 +35,7 @@ ms.locfileid: "56616457"
 
  ![出力グループ グラフィック](../../extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")出力グループ
 
- 主な用途、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg>インターフェイスが構築、デプロイ、管理オブジェクトをデバッグおよびプロジェクト グループの出力に自由に許可するへのアクセスを提供することです。 このインターフェイスの使用に関する詳細については、次を参照してください。[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)します。
+ 主な用途、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg>インターフェイスが構築、デプロイ、管理オブジェクトをデバッグおよびプロジェクト グループの出力に自由に許可するへのアクセスを提供することです。 このインターフェイスの使用に関する詳細については、[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)を参照してください。
 
  前の図でグループが構築されたため (bD.exe または b.exe) の構成で出力キーを持つユーザーは組み込みにショートカットを作成し、ショートカットが展開された構成に関係なく動作するかを確認します。 グループ ソースには、出力のキーはありませんので、ユーザーへのショートカットを作成できません。 キーの出力を持つグループのデバッグ ビルド小売グループ作成されない場合は、不適切な実装の場合は。 \Inboxes\smsbkup.box\smsbkup.ctl、する場合は、構成では、出力が含まれていないグループと、結果として、キー ファイルがない、し、そのグループに出力が含まれて他の構成キー ファイルことはできません。 インストーラー エディターでは、前提としていますが正規名と、グループの表示名とキーのファイルが存在する変更されない構成に基づく。
 

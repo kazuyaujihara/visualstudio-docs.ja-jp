@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51786405"
@@ -122,7 +122,7 @@ namespace MyNamespace
 ### <a name="summary"></a>まとめ  
  中かっこの一致操作では、通常、言語要素のペアを単純に制限されます。 3 要素に一致するようより複雑な要素 ("`if(…)`「,」`{`「と」`}`"、または"`else`「,」`{`「と」`}`")、単語補完操作の一環として強調表示されることができます。 たとえば、"else"という単語が完了すると、一致する"`if`"ステートメントを強調表示されます。 一連があった場合`if` / `else if`中かっこの一致するものと同じメカニズムを使用して、それらのすべてのステートメントを強調表示でした。 <xref:Microsoft.VisualStudio.Package.Source>基本クラスは、次のように、このサポート既に: スキャナーはトークンのトリガーの値を返す必要があります<xref:Microsoft.VisualStudio.Package.TokenTriggers>トリガー値と組み合わせると<xref:Microsoft.VisualStudio.Package.TokenTriggers>トークンでカーソル位置の前にします。  
   
- 詳細については、次を参照してください。[従来の言語サービスでかっこの照合](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)します。  
+ 詳細については、[従来の言語サービスでかっこの照合](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)を参照してください。  
   
 ## <a name="parsing-for-colorization"></a>色づけの解析  
  ソース コードの色分けは簡単です、その型に関する情報をトークンと戻り値の色の種類を識別するだけです。 <xref:Microsoft.VisualStudio.Package.Colorizer>クラスは、エディターとスキャナーの色のすべてのトークン情報を提供する間の仲介役として機能します。 <xref:Microsoft.VisualStudio.Package.Colorizer>クラスで使用、<xref:Microsoft.VisualStudio.Package.IScanner>オブジェクトのヘルプで、行の色分けし、ソース ファイル内のすべての行の状態情報を収集します。 MPF の言語サービス クラスで、<xref:Microsoft.VisualStudio.Package.Colorizer>クラスは、スキャナーと通信するためにオーバーライドする必要はありませんを通してのみ、<xref:Microsoft.VisualStudio.Package.IScanner>インターフェイス。 実装するオブジェクトを指定する、<xref:Microsoft.VisualStudio.Package.IScanner>インターフェイスをオーバーライドすることで、<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>メソッドを<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。  
@@ -131,7 +131,7 @@ namespace MyNamespace
   
  <xref:Microsoft.VisualStudio.Package.Colorizer>クラスは、トークンのトリガーを識別するためにも使用します。 これらのトリガーは、特定のトークンが単語補完などのより複雑な操作を開始できること、MPF を指示または中かっこの一致します。 このようなトリガーを識別すると、高速である必要があるあり、任意の場所で行う必要があります、ため、スキャナーはこのタスクに最適です。  
   
- 詳細については、次を参照してください。[従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)します。  
+ 詳細については、[従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)を参照してください。  
   
 ## <a name="parsing-for-functionality-and-scope"></a>機能とスコープの解析  
  機能とスコープの解析中には、多くの労力が発生したトークンの種類を識別するだけが必要です。 パーサーは、トークンの種類だけでなく、トークンが使用されている機能を識別する必要があります。 たとえば、識別子は名だけですが、言語、識別子のクラス、名前空間、メソッド、または、コンテキストに応じて、変数の名前可能性があります。 トークンの一般的な種類の識別子、可能性がありますが、識別子には何によって異なりますしが定義されているその他の意味があります。 この id は、パーサーが解析される言語に関するより広範な知識が必要です。 これは、ような場合、<xref:Microsoft.VisualStudio.Package.AuthoringSink>クラスを受信します。 <xref:Microsoft.VisualStudio.Package.AuthoringSink>クラスは、識別子、メソッド、(中かっこやかっこを使用)、一致する言語および言語の 3 要素に関する情報を収集します (たとえば、3 つの部分があること以外の言語の組み合わせに似ています"`foreach()`""`{`「と」`}`")。 さらに、オーバーライドすることができます、<xref:Microsoft.VisualStudio.Package.AuthoringSink>デバッガーが読み込まれる必要があるないように、ブレークポイントの事前検証に使用される、コードの識別をサポートするクラスと **[自動変数]** デバッグ ウィンドウで、ローカルの表示変数とパラメーターに自動的にプログラムがデバッグ中と適切なローカル変数と、デバッガーの表示に加えてパラメーターを識別するために、パーサーが必要です。  

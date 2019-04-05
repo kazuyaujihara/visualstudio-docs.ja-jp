@@ -30,7 +30,7 @@ ms.locfileid: "56697040"
 
 1.  という名前のプロジェクトを作成する**RDTExplorer** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**RDTExplorerWindow**します。
 
-     ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。
+     ツール ウィンドウで拡張機能の作成の詳細については、[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。
 
 #### <a name="to-subscribe-to-rdt-events"></a>RDT のイベントをサブスクライブするには
 

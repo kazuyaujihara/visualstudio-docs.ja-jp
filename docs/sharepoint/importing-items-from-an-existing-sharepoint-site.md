@@ -84,7 +84,7 @@ ms.locfileid: "56645148"
 
  フィーチャーは、SharePoint アイテムのコンテナーになります。 各フィーチャーは、その中に含まれているコンテンツ タイプやリスト定義などの各アイテムへの参照を保持します。 ソリューションをインポートすると、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] はインポートされた要素のすべてのフィーチャーを設定して、ファイルのフィーチャーと要素との関係を維持しようと試みます。 参照を解決できないファイルがあれば、 **[その他のインポートされたファイル]** フォルダーに配置されます。
 
- 機能の詳細については、次を参照してください。 [SharePoint の開発ソリューション](../sharepoint/developing-sharepoint-solutions.md)と[機能を扱う](http://go.microsoft.com/fwlink/?LinkID=147704)します。
+ 機能の詳細については、[SharePoint の開発ソリューション](../sharepoint/developing-sharepoint-solutions.md)と[機能を扱う](http://go.microsoft.com/fwlink/?LinkID=147704)を参照してください。
 
 ### <a name="handle-special-cases"></a>特殊なケースを処理します。
  Visual Studio はアイテムとその依存ファイルの調整ができない場合があります。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] が解決できないファイルは **[その他のインポートされたファイル]** フォルダーに表示されます。 また、その **DeploymentType** プロパティは **NoDeployment** に設定されるので、それらのファイルがソリューションと一緒に配置されることはありません。

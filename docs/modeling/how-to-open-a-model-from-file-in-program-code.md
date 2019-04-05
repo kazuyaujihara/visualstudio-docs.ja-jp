@@ -17,7 +17,7 @@ ms.locfileid: "55945288"
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>方法: プログラム コード内のファイルからモデルを開く
 任意のアプリケーションで DSL モデルを開くことができます。
 
- Visual Studio 拡張機能では、この目的の ModelBus を使用できます。 ModelBus はモデルまたはモデルでは、要素を参照して、移動された場合、モデルを検索するための標準的なメカニズムを提供します。 詳細については、次を参照してください。 [Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)します。
+ Visual Studio 拡張機能では、この目的の ModelBus を使用できます。 ModelBus はモデルまたはモデルでは、要素を参照して、移動された場合、モデルを検索するための標準的なメカニズムを提供します。 詳細については、[Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)を参照してください。
 
 ## <a name="target-framework"></a>[対象とする Framework]
  設定、**ターゲット フレームワーク**をアプリケーション プロジェクトの **.NET Framework 4**します。

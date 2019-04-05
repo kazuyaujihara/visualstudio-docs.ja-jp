@@ -27,7 +27,7 @@ ms.locfileid: "56635151"
 
 1.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を作成または SharePoint プロジェクトを開きます。
 
-     SharePoint プロジェクトを作成する方法については、次を参照してください。 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)します。
+     SharePoint プロジェクトを作成する方法については、[SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)を参照してください。
 
 2.  メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
 

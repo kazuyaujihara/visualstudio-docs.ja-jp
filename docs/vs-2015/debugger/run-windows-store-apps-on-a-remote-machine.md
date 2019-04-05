@@ -21,7 +21,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3a3be715f58d3ed80122dfdd3aaf879c7db8aebd
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51784547"
@@ -173,7 +173,7 @@ Windows にのみ適用されます] (../Image/windows_only_content.png"windows_
 ##  <a name="BKMK_RunRemoteDebug"></a> リモート デバッグ セッションの実行  
  リモート デバッグ セッションは、ローカル セッションと同じ方法で開始、停止、および移動します。 デバッグを開始する前に、リモート デバッグ モニターがリモート デバイスで実行されていることを確認します。  
   
- **[デバッグ]** メニューの **[デバッグの開始]** をクリックします (キーボードの場合: F5 キーを押します)。 プロジェクトが再コンパイルされた後、リモート デバイスに配置され、開始されます。 デバッガーはブレークポイントで実行を中断するので、その時点でコードをステップ イン、ステップ オーバー、およびステップ アウトできます。 デバッグ セッションを終了し、リモート アプリケーションを閉じるには、 **[デバッグの停止]** をクリックします。 詳細については、次を参照してください。 [Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)します。  
+ **[デバッグ]** メニューの **[デバッグの開始]** をクリックします (キーボードの場合: F5 キーを押します)。 プロジェクトが再コンパイルされた後、リモート デバイスに配置され、開始されます。 デバッガーはブレークポイントで実行を中断するので、その時点でコードをステップ イン、ステップ オーバー、およびステップ アウトできます。 デバッグ セッションを終了し、リモート アプリケーションを閉じるには、 **[デバッグの停止]** をクリックします。 詳細については、[Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのストア アプリのテスト](../test/testing-store-apps-with-visual-studio.md)   

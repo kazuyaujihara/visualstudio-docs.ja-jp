@@ -23,7 +23,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: b3cc4319699316df1166372b43e7db1aa1b4f496
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51807550"
@@ -31,12 +31,12 @@ ms.locfileid: "51807550"
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio ツール バーの GUID および ID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-このトピックでは、Visual Studio 統合開発環境 (IDE) に含まれているツールバーの GUID と ID の値を列挙し、含まれているグループのします。 これらの値は、Visual Studio SDK の一部としてインストールされている .vsct ファイルで定義されます。 詳細については、次を参照してください。 [IDE-Defined コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)します。  
+このトピックでは、Visual Studio 統合開発環境 (IDE) に含まれているツールバーの GUID と ID の値を列挙し、含まれているグループのします。 これらの値は、Visual Studio SDK の一部としてインストールされている .vsct ファイルで定義されます。 詳細については、[IDE-Defined コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)を参照してください。  
   
 > [!NOTE]
 >  Visual Studio を使用できるツールバーの多くが Visual Studio、およびその GUID によって定義されていないと、ID 値がパブリックではありません。 このトピックでは、Visual Studio SDK .vsct ファイルで定義されているツールバーだけを使用します。  
   
- .Vsct ファイルで定義されている IDE オブジェクトを操作する方法の詳細については、次を参照してください。[拡張メニューとコマンド](../../extensibility/extending-menus-and-commands.md)します。  
+ .Vsct ファイルで定義されている IDE オブジェクトを操作する方法の詳細については、[拡張メニューとコマンド](../../extensibility/extending-menus-and-commands.md)を参照してください。  
   
  Visual Studio IDE によって提供される既定のツールバーは、GUID を使用して`guidSHLMainMenu`GUID:ID の構文を使用して、それ以外の場合に指定されている場合を除きします。  
   

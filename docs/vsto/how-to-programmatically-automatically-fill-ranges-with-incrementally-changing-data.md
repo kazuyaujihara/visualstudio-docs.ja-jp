@@ -34,7 +34,7 @@ ms.locfileid: "56638531"
 -   パラメーターとして渡される範囲を入力する、<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>メソッド。 この変換先の範囲は、初期値を含む範囲を含める必要があります。
 
     > [!NOTE]
-    >  渡すことはできません、<xref:Microsoft.Office.Tools.Excel.NamedRange>制御の代わりに、<xref:Microsoft.Office.Interop.Excel.Range>します。 詳細については、次を参照してください。[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)します。
+    >  渡すことはできません、<xref:Microsoft.Office.Tools.Excel.NamedRange>制御の代わりに、<xref:Microsoft.Office.Interop.Excel.Range>します。 詳細については、[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)を参照してください。
 
 ## <a name="example"></a>例
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]

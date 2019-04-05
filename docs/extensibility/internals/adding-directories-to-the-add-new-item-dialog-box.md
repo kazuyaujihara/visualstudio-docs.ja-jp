@@ -52,7 +52,7 @@ NoRemove Projects
 ## <a name="add-items-to-an-existing-project"></a>既存のプロジェクトに項目を追加します。
  既存のプロジェクトに項目を追加することもできます。 たとえば、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]プロジェクトに項目を追加することができます、 *\<ルート > \Program Files\Microsoft Visual Studio\VC #\CSharpProjectItems\LocalProjectItems*フォルダー。 この場合、`%GUID_Project%`は c# プロジェクト ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}) の GUID です。
 
- プロジェクト サブタイプをプログラミングによって既存のプロジェクトを拡張することもできます。 プロジェクト サブタイプの場合は、新しいプロジェクトの種類を記述することがなくプロジェクトを拡張できます。 プロジェクト サブタイプの詳細については、次を参照してください。[プロジェクトのサブタイプ](../../extensibility/internals/project-subtypes.md)します。
+ プロジェクト サブタイプをプログラミングによって既存のプロジェクトを拡張することもできます。 プロジェクト サブタイプの場合は、新しいプロジェクトの種類を記述することがなくプロジェクトを拡張できます。 プロジェクト サブタイプの詳細については、[プロジェクトのサブタイプ](../../extensibility/internals/project-subtypes.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [プロジェクトと項目テンプレートを登録します。](../../extensibility/internals/registering-project-and-item-templates.md)

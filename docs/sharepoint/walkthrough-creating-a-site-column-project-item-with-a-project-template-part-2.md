@@ -29,7 +29,7 @@ ms.locfileid: "57868105"
 
 -   Visual Studio の SharePoint プロジェクト用の組み込みウィザードと似たカスタム ウィザードの UI を定義します。
 
--   2 つ作成*SharePoint コマンド*ウィザードの実行中にローカル SharePoint サイトへの呼び出しに使用します。 SharePoint コマンドは、SharePoint サーバー オブジェクト モデルの API を呼び出すために Visual Studio 拡張機能で使用できるメソッドです。 詳細については、次を参照してください。 [SharePoint オブジェクト モデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)します。
+-   2 つ作成*SharePoint コマンド*ウィザードの実行中にローカル SharePoint サイトへの呼び出しに使用します。 SharePoint コマンドは、SharePoint サーバー オブジェクト モデルの API を呼び出すために Visual Studio 拡張機能で使用できるメソッドです。 詳細については、[SharePoint オブジェクト モデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)を参照してください。
 
 -   置き換え可能パラメーターを使用して、ウィザードで収集したデータで SharePoint プロジェクト ファイルを初期化します。
 
@@ -38,7 +38,7 @@ ms.locfileid: "57868105"
 -   ウィザードをデバッグおよびテストします。
 
 > [!NOTE]
-> 一連のサンプル ワークフローは、次を参照してください。 [SharePoint workflow のサンプル](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)します。
+> 一連のサンプル ワークフローは、[SharePoint workflow のサンプル](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行する必要がありますまず SiteColumnProjectItem ソリューション実行して作成した[チュートリアル。プロジェクト テンプレートを使用して、サイト列プロジェクト項目を作成、パート 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)します。
@@ -47,13 +47,13 @@ ms.locfileid: "57868105"
 
 - サポート対象エディションの Windows、SharePoint、Visual Studio。
 
-- Visual Studio SDK。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、次を参照してください。 [Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)します。
+- Visual Studio SDK。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、[Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
   次の概念に関する知識があると役に立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
 - Visual Studio のプロジェクトおよび項目テンプレート用のウィザード。 詳細については、「[方法 :プロジェクト テンプレートにウィザードを使用して](../extensibility/how-to-use-wizards-with-project-templates.md)と<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>インターフェイス。
 
-- SharePoint のサイト内の列。 詳細については、次を参照してください。[列](http://go.microsoft.com/fwlink/?LinkId=183547)します。
+- SharePoint のサイト内の列。 詳細については、[列](http://go.microsoft.com/fwlink/?LinkId=183547)を参照してください。
 
 ## <a name="understand-the-wizard-components"></a>ウィザードのコンポーネントを理解します。
  このチュートリアルで説明されているウィザードには、いくつかのコンポーネントが含まれています。 次の表は、これらのコンポーネントについての説明です。
@@ -195,7 +195,7 @@ ms.locfileid: "57868105"
 
 - プロジェクト署名マネージャー。
 
-  これらのコンポーネントの詳細については、次を参照してください。[ウィザード コンポーネントを理解して](#understand-the-wizard-components)します。
+  これらのコンポーネントの詳細については、[ウィザード コンポーネントを理解して](#understand-the-wizard-components)を参照してください。
 
 #### <a name="to-define-the-sharepoint-command-ids"></a>SharePoint コマンド ID を定義するには
 
@@ -233,7 +233,7 @@ ms.locfileid: "57868105"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    >  この XAML で作成したウィンドウがから派生、<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基本クラス。 カスタムの WPF ダイアログ ボックスを Visual Studio に追加する場合は、ダイアログ ボックスをこのクラスから派生し、スタイルを他の Visual Studio ダイアログ ボックスと一貫させ、発生する可能性のあるモーダル ダイアログの問題を回避することをお勧めします。 詳細については、次を参照してください。[モーダル ダイアログ ボックスの管理の作成と](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)します。
+    >  この XAML で作成したウィンドウがから派生、<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基本クラス。 カスタムの WPF ダイアログ ボックスを Visual Studio に追加する場合は、ダイアログ ボックスをこのクラスから派生し、スタイルを他の Visual Studio ダイアログ ボックスと一貫させ、発生する可能性のあるモーダル ダイアログの問題を回避することをお勧めします。 詳細については、[モーダル ダイアログ ボックスの管理の作成と](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)を参照してください。
 
 3.  Visual Basic プロジェクトを開発する場合は、削除、`ProjectTemplateWizard`から名前空間、`WizardWindow`内のクラス名、`x:Class`の属性、`Window`要素。 この要素は XAML の 1 行目にあります。 完了したら、最初の行は次の例のようになります。
 
@@ -410,7 +410,7 @@ ms.locfileid: "57868105"
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>プロジェクト テンプレートの Elements.xml ファイルに置き換え可能パラメーターを追加します。
  いくつかの置き換え可能パラメーターを追加、 *Elements.xml* SiteColumnProjectTemplate プロジェクトでのファイル。 これらのパラメーターは、前に定義した `RunStarted` クラスの `SiteColumnProjectWizard` メソッドで初期化されます。 Visual Studio によって自動的にこれらのパラメーターで置き換えられますユーザーが Site Column プロジェクトを作成するとき、 *Elements.xml*ウィザードでユーザーが指定した値を持つ新しいプロジェクトのファイル。
 
- 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 独自の置き換え可能パラメーターを定義するだけでなく、SharePoint プロジェクト システムによって定義されて初期化される組み込みパラメーターを使用することもできます。 詳細については、次を参照してください。[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)します。
+ 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 独自の置き換え可能パラメーターを定義するだけでなく、SharePoint プロジェクト システムによって定義されて初期化される組み込みパラメーターを使用することもできます。 詳細については、[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)を参照してください。
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>置き換え可能パラメーターを Elements.xml ファイルに追加するには
 

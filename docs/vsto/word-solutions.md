@@ -52,9 +52,9 @@ ms.locfileid: "56612648"
 -   [Word のユーザー インターフェイスをカスタマイズ](#UI)します。
 
 ##  <a name="automating"></a> Word を自動化します。
- Word オブジェクト モデルでは、Word の自動化に使用できる型が多数公開されています。 たとえば、プログラムを使用して、表の作成、文書の書式設定、範囲内や段落内でのテキストの設定などを行うことができます。 詳細については、次を参照してください。 [Word オブジェクト モデルの概要](../vsto/word-object-model-overview.md)します。
+ Word オブジェクト モデルでは、Word の自動化に使用できる型が多数公開されています。 たとえば、プログラムを使用して、表の作成、文書の書式設定、範囲内や段落内でのテキストの設定などを行うことができます。 詳細については、[Word オブジェクト モデルの概要](../vsto/word-object-model-overview.md)を参照してください。
 
- Visual Studio で Word ソリューションを開発するときには、ソリューションの *ホスト項目* および *ホスト コントロール* を使用することもできます。 Word オブジェクト モデルには、 <xref:Microsoft.Office.Interop.Word.Document> や <xref:Microsoft.Office.Interop.Word.ContentControl> などのよく使用される特定のオブジェクトを拡張したオブジェクトがあります。 これらの拡張オブジェクトは、基になる Word オブジェクトと同じように動作しますが、基のオブジェクトにはないイベントとデータ バインディング機能が追加されています。 詳細については、次を参照してください。[拡張オブジェクトを使用して Word の自動化](../vsto/automating-word-by-using-extended-objects.md)します。
+ Visual Studio で Word ソリューションを開発するときには、ソリューションの *ホスト項目* および *ホスト コントロール* を使用することもできます。 Word オブジェクト モデルには、 <xref:Microsoft.Office.Interop.Word.Document> や <xref:Microsoft.Office.Interop.Word.ContentControl> などのよく使用される特定のオブジェクトを拡張したオブジェクトがあります。 これらの拡張オブジェクトは、基になる Word オブジェクトと同じように動作しますが、基のオブジェクトにはないイベントとデータ バインディング機能が追加されています。 詳細については、[拡張オブジェクトを使用して Word の自動化](../vsto/automating-word-by-using-extended-objects.md)を参照してください。
 
 ##  <a name="doclevel"></a> Word 用ドキュメント レベル カスタマイズを開発します。
  Microsoft Office Word のドキュメント レベルのカスタマイズは、特定の文書に関連付けられたアセンブリで構成されます。 このアセンブリは、一般には UI のカスタマイズと Word の自動化によってドキュメントの機能を拡張します。 Word 自体と関連付けられる VSTO アドインとは異なり、カスタマイズに実装した機能は、関連付けられた文書が Word で開かれている場合にのみ利用できます。

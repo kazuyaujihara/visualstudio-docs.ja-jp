@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6c86e5a193348a8f90e4888e0df3472d102beb08
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51800875"
@@ -41,7 +41,7 @@ ms.locfileid: "51800875"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1.  ローカル コンピューターの Windows ファイアウォールが有効にされている場合は、次を参照してください。[設定 Up the Remote Tools のデバイスで](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)ローカル デバッグのファイアウォールを構成する方法についてはします。  
+1.  ローカル コンピューターの Windows ファイアウォールが有効にされている場合は、[設定 Up the Remote Tools のデバイスで](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)ローカル デバッグのファイアウォールを構成する方法についてはを参照してください。  
   
 2.  リモート サーバーからローカル コンピューターのファイル共有を開いてみて Windows 認証をテストします。  
   

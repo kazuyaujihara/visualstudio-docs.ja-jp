@@ -33,7 +33,7 @@ ms.locfileid: "56706991"
 
 1. VSPackage が、通常は実験用のレジストリ ルートを実行する登録されているレジストリ ルートを使用していることを確認します。
 
-    詳細については、次を参照してください。 [、実験用インスタンス](../extensibility/the-experimental-instance.md)します。
+    詳細については、[、実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
 
 2. VSPackage の実験用のレジストリ ルートで実行するターゲットが場合の実験的なバージョンを実行していること確認[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。
 
@@ -41,7 +41,7 @@ ms.locfileid: "56706991"
 
 3. VSPackage のレジストリ エントリを確認します。
 
-    詳細については、次を参照してください。 [Vspackage の登録](registering-and-unregistering-vspackages.md)と[管理 Vspackage](../extensibility/managing-vspackages.md)します。
+    詳細については、[Vspackage の登録](registering-and-unregistering-vspackages.md)と[管理 Vspackage](../extensibility/managing-vspackages.md)を参照してください。
 
 4. 開く、**出力**ウィンドウのインスタンスの[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]が VSPackage の読み込みに失敗します。 VSPackage の読み込みが失敗した理由に関する情報は、そのウィンドウに表示可能性があります。
 

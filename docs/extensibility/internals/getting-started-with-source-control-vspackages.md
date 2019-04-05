@@ -20,7 +20,7 @@ ms.locfileid: "57872059"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>ソース管理 Vspackage を概要します。
 
-ソース管理 VSPackage は、ソース管理プラグインをより高度な代替です。 ソース管理プラグインの詳細については、次を参照してください。[ソース管理プラグインを作成する](../../extensibility/internals/creating-a-source-control-plug-in.md)します。 ソース管理 VSPackage は、ソース管理モデル、機能、およびユーザー インターフェイス (UI) を完全に制御を有効にしに統合される、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage として環境。
+ソース管理 VSPackage は、ソース管理プラグインをより高度な代替です。 ソース管理プラグインの詳細については、[ソース管理プラグインを作成する](../../extensibility/internals/creating-a-source-control-plug-in.md)を参照してください。 ソース管理 VSPackage は、ソース管理モデル、機能、およびユーザー インターフェイス (UI) を完全に制御を有効にしに統合される、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage として環境。
 
 ## <a name="in-this-section"></a>このセクションの内容
 

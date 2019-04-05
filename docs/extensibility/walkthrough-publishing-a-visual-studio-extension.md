@@ -30,7 +30,7 @@ ms.locfileid: "57983521"
 
 この記事では、既定の VSPackage 拡張機能を使用してが、手順は拡張機能のすべての種類に対して無効です。
 
-1. C# という名前の VSPackage を作成`TestPublish`を持つメニュー コマンド。 詳細については、次を参照してください。[初めての拡張機能を作成します。Hello World](../extensibility/extensibility-hello-world.md)します。
+1. C# という名前の VSPackage を作成`TestPublish`を持つメニュー コマンド。 詳細については、[初めての拡張機能を作成を参照してください。Hello World](../extensibility/extensibility-hello-world.md)します。
 
 ## <a name="package-your-extension"></a>拡張機能をパッケージ化します。
 

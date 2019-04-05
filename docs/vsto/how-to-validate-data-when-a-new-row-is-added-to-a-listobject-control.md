@@ -30,7 +30,7 @@ ms.locfileid: "56615859"
  データにバインドされている <xref:Microsoft.Office.Tools.Excel.ListObject> に行が追加されるたびに、 <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> イベントが発生します。 このイベントを処理することで、データの検証を実行できます。 たとえば、データ ソースに 18 歳と 65 の従業員のみを追加することができます、アプリケーションに必要な場合は、行を追加する前に入力された年齢がその範囲内にあることを確認します。
 
 > [!NOTE]
->  常に、クライアントだけでなく、サーバー上のユーザー入力も確認する必要があります。 詳細については、次を参照してください。[クライアント アプリケーションをセキュリティで保護された](/dotnet/framework/data/adonet/secure-client-applications)します。
+>  常に、クライアントだけでなく、サーバー上のユーザー入力も確認する必要があります。 詳細については、[クライアント アプリケーションをセキュリティで保護された](/dotnet/framework/data/adonet/secure-client-applications)を参照してください。
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>データ バインドされた ListObject に新規行が追加された場合にデータを検証するには
 

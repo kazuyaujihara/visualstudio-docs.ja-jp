@@ -20,7 +20,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 22c42cb215999fcc4415f4d7541b8f4b95ac2d29
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51782961"
@@ -49,7 +49,7 @@ ms.locfileid: "51782961"
 ## <a name="anonymous-methods"></a>匿名メソッド  
  *匿名メソッド*名前を持たないメソッドだけです。 匿名メソッドは、コード ブロックをデリゲート パラメーターとして渡すを最も頻繁に使用されます。 メソッドまたはアクセサーなどのメンバーで宣言されている匿名メソッドのメトリックスの結果は、メソッドを宣言するメンバーに関連付けられます。 メソッドを呼び出すメンバーに関連付けられていません。  
   
- コード メトリックスが匿名メソッドを処理する方法の詳細については、次を参照してください。[匿名メソッドとコード分析](../code-quality/anonymous-methods-and-code-analysis.md)します。  
+ コード メトリックスが匿名メソッドを処理する方法の詳細については、[匿名メソッドとコード分析](../code-quality/anonymous-methods-and-code-analysis.md)を参照してください。  
   
 ## <a name="generated-code"></a>生成されたコード  
  一部のソフトウェア ツールとコンパイラは、プロジェクトに追加されると、プロジェクトの開発者は表示されないかを変更しないでくださいコードを生成します。 ほとんどの場合、コード メトリックスは、メトリック値を計算するときに生成されたコードを無視します。 これにより、どのような開発者を表示および変更を反映するように、メトリック値です。  

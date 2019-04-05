@@ -133,7 +133,7 @@ ms.locfileid: "56634748"
     |**Text**|**[挿入]**|
 
 ## <a name="add-code-to-insert-text-into-the-document"></a>文書にテキストを挿入するコードを追加します。
- 操作ウィンドウで、適切なにテキスト ボックスからテキストを挿入するコードを記述<xref:Microsoft.Office.Tools.Word.Bookmark>ドキュメント内のコントロール。 使用することができます、`Globals`操作ウィンドウ上のコントロールから、ドキュメント上のコントロールにアクセスするクラス。 詳細については、次を参照してください。 [Office プロジェクト内のオブジェクトへのアクセスをグローバル](../vsto/global-access-to-objects-in-office-projects.md)します。
+ 操作ウィンドウで、適切なにテキスト ボックスからテキストを挿入するコードを記述<xref:Microsoft.Office.Tools.Word.Bookmark>ドキュメント内のコントロール。 使用することができます、`Globals`操作ウィンドウ上のコントロールから、ドキュメント上のコントロールにアクセスするクラス。 詳細については、[Office プロジェクト内のオブジェクトへのアクセスをグローバル](../vsto/global-access-to-objects-in-office-projects.md)を参照してください。
 
 ### <a name="to-insert-text-from-the-actions-pane-in-a-bookmark-in-the-document"></a>ドキュメント内のブックマークの [操作] ウィンドウからテキストを挿入するには
 

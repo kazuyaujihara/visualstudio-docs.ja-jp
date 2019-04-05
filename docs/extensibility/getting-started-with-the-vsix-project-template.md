@@ -23,7 +23,7 @@ ms.locfileid: "58194322"
 
  VSIX プロジェクト テンプレートは構成だけを*source.extension.vsixmanifest*ファイルで、出荷、拡張機能と、資産に関する情報が含まれます。
 
- VSIX プロジェクト テンプレートを検索するには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
+ VSIX プロジェクト テンプレートを検索するには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。
 
 ## <a name="deploy-a-custom-project-template-using-the-vsix-project-template"></a>VSIX プロジェクト テンプレートを使用してカスタム プロジェクト テンプレートのデプロイします。
 

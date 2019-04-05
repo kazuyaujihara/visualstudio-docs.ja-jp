@@ -33,7 +33,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
 1.  という名前のプロジェクトを作成する**TodoList** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**TodoWindow**します。
 
     > [!NOTE]
-    >  ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。
+    >  ツール ウィンドウで拡張機能の作成の詳細については、[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。
 
 ## <a name="set-up-the-tool-window"></a>ツール ウィンドウを設定します。
  新しい ToDo 項目をリストに新しい項目を追加するためのボタンと、リストに項目を表示するリスト ボックスに入力するためのテキスト ボックスを追加します。

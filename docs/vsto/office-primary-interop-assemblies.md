@@ -35,7 +35,7 @@ Office プロジェクトから Microsoft Office アプリケーションの機�
 
 - [Microsoft Office アプリケーション プライマリ相互運用機能アセンブリの完全な一覧](#pialist)
 
-プライマリ相互運用機能アセンブリの詳細については、次を参照してください。[プライマリ相互運用機能アセンブリ](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))します。
+プライマリ相互運用機能アセンブリの詳細については、[プライマリ相互運用機能アセンブリ](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))を参照してください。
 
 <a name="separateassemblies"></a>
 

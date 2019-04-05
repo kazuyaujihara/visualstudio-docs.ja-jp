@@ -20,7 +20,7 @@ Managed Extensibility Framework (MEF) を使用して、ドメイン固有言語
 
 さらに、DSL で MEF を有効にするとできます簡単に、DSL の機能の一部を記述する場合でも、すべて DSL と共に構築されます。
 
-MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
+MEF の詳細については、[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)を参照してください。
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>MEF で拡張する DSL を有効にするには
 
@@ -323,7 +323,7 @@ namespace MefExtension
 
 検証メソッドがによってマークされている、 `ValidationExtension` 、DSL ともによって生成される属性<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>します。 メソッドは、属性でマークされていないすべてのクラスで表示できます。
 
-詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。
+詳細については、[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)を参照してください。
 
 ```csharp
 using Company.MyDsl;

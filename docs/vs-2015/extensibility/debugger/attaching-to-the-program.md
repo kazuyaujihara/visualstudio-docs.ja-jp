@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 8c16c13b4dec412fa44be5cbfbbdd8494b805545
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51777943"
@@ -50,7 +50,7 @@ ms.locfileid: "51777943"
   
   後に、`IDebugEngine2::Attach`メソッドが呼び出されるの実装で次の手順に従って、`IDebugEngine2::Attach`メソッド。  
   
-1.  送信、 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM にイベント オブジェクト。 詳細については、次を参照してください。[イベントの送信](../../extensibility/debugger/sending-events.md)します。  
+1.  送信、 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM にイベント オブジェクト。 詳細については、[イベントの送信](../../extensibility/debugger/sending-events.md)を参照してください。  
   
 2.  呼び出す、 [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)メソッドを[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)に渡されたオブジェクト、`IDebugEngine2::Attach`メソッド。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "51777943"
     > [!NOTE]
     >  実装する場合、`IDebugProgramNodeAttach2`インターフェイス、プログラムの`GUID`に渡される、`IDebugProgramNodeAttach2::OnAttach`メソッド。 これは、`GUID`プログラムの使用は`GUID`によって返される、`IDebugProgram2::GetProgramId`メソッド。  
   
-3.  送信、 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 、SDM を通知するイベント オブジェクトをローカル`IDebugProgram2`DE にプログラムを表現するオブジェクトが作成されました。 詳細については、次を参照してください。[イベントの送信](../../extensibility/debugger/sending-events.md)します。  
+3.  送信、 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 、SDM を通知するイベント オブジェクトをローカル`IDebugProgram2`DE にプログラムを表現するオブジェクトが作成されました。 詳細については、[イベントの送信](../../extensibility/debugger/sending-events.md)を参照してください。  
   
     > [!NOTE]
     >  これは、同じ`IDebugProgram2`に渡されたオブジェクト、`IDebugEngine2::Attach`メソッド。 渡された以前`IDebugProgram2`オブジェクトは、ポートのみによって認識され、独立したオブジェクトします。  
