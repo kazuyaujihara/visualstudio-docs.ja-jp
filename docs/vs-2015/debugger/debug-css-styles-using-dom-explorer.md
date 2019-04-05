@@ -1,14 +1,9 @@
 ---
 title: DOM Explorer を使用して CSS スタイルのデバッグ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2dfef7c6-7db2-4550-b694-783b0e535cea
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f5a2c8ef6792403628430cb9881b24e6e279f02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750147"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975072"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>DOM Explorer を使用した CSS スタイルのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 -   **[変更]** タブ (Windows ストア アプリおよび Windows Phone ストア アプリのみ) では、デバッグ セッション中に変更した CSS スタイルを識別して追跡できます。  
   
 > [!TIP]
->  **[スタイル]** タブと **[計算済み]** タブで行った変更は永続的ではありません。 それらは、デバッグを停止したときに失われます。 ソース コードの変更を停止してデバッガーを再起動することがなくページの再読み込みを使用して、アプリを更新、![更新の Windows アプリのボタン](../debugger/media/js-refresh.png "JS_Refresh")ボタン (**更新の Windows アプリ**) で、**デバッグ**ツールバー (Windows ストアおよび Windows Phone ストア アプリのみ)。 詳細については、[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)を参照してください。  
+>  **[スタイル]** タブと **[計算済み]** タブで行った変更は永続的ではありません。 それらは、デバッグを停止したときに失われます。 ソース コードの変更を停止してデバッガーを再起動することがなくページの再読み込みを使用して、アプリを更新、![更新の Windows アプリのボタン](../debugger/media/js-refresh.png "JS_Refresh")ボタン (**更新の Windows アプリ**) で、**デバッグ**ツールバー (Windows ストアおよび Windows Phone ストア アプリのみ)。 詳細については、次を参照してください。[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)します。  
   
 ## <a name="example-of-fixing-a-css-rule"></a>CSS 規則の修正例  
  この例では、CSS 規則を検査し、スタイルの問題をデバッグする方法を示します。 この例では、 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 分割アプリケーション テンプレートのグループ タイトルの表示に使用されるフォントの色を変更するとします。  
@@ -100,7 +95,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 5.  F5 キーを押して、アプリをデバッグ モードで実行します。  
   
-     アプリケーションの読み込みが完了したら、 **[グループ タイトル: 1]** のようなリスト項目の見出しを確認します。 色は変更されていないため、タイトルにオレンジ色を適用するという変更は機能しませんでした。 何がうまくいかなかったのか確認し、DOM Explorer で CSS のタブを使用して修正します。  
+     ときに、アプリ読み込みが完了したら、検索、リスト項目の見出しなど**グループ タイトル。1**. 色は変更されていないため、タイトルにオレンジ色を適用するという変更は機能しませんでした。 何がうまくいかなかったのか確認し、DOM Explorer で CSS のタブを使用して修正します。  
   
     > [!TIP]
     >  アプリがシミュレーターに表示されたら、Visual Studio ウィンドウの真横にシミュレーターを配置します。こうすると CSS のスタイルに加えた変更と選択した結果をすぐに確認できます。  
@@ -108,9 +103,9 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 6.  Visual Studio に切り替え、DOM Explorer で **[要素の選択]** をクリックします (または Ctrl + B キーを押します)。 これで選択モードが変更され、項目をクリックで選択できるようになります。同時に、アプリが前面に表示されます。 モードは、シングルクリックで元に戻ります。 **[要素の選択]** ボタンを次に示します。 ![DOM Explorer で要素のボタンを選択](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
-    >  HTML 要素は DOM Explorer で直接選択することもできます。 要素を選択する方法の詳細については、[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)を参照してください。  
+    >  HTML 要素は DOM Explorer で直接選択することもできます。 要素を選択する方法の詳細については、次を参照してください。[クイック スタート。HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)します。  
   
-7.  シミューレーターで、ホーム ページの左パネルに表示されている一覧の最初の項目のタイトル ( **[グループ タイトル: 1]**) をポイントします。 次に示すように、タイトルが反転表示されます。  
+7.  一覧で、最初の項目のタイトルをポイントし、シミュレーターで**グループ タイトル。1**、ホーム ページの左側のパネルでします。 次に示すように、タイトルが反転表示されます。  
   
      ![要素の選択ボタンを使用して](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
@@ -162,10 +157,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 16. ソースの CSS ファイルに変更を加えるには、 **[スタイル]** タブの **[items.css]** リンクをクリックします。これにより items.css が開き、アプリケーション コードの `color` スタイルの値を変更できます。 を停止してデバッガーを再起動することがなく、アプリを更新する をクリックして、![更新の Windows アプリのボタン](../debugger/media/js-refresh.png "JS_Refresh") (**更新の Windows アプリ**) ボタンを、 **デバッグ**ツールバー。  
   
 ## <a name="see-also"></a>関連項目  
- [クイック スタート: HTML と CSS をデバッグします。](../debugger/quickstart-debug-html-and-css.md)   
+ [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)   
  [DOM Explorer を使用してレイアウトをデバッグします。](../debugger/debug-layout-using-dom-explorer.md)   
  [DOM イベント リスナーの表示](../debugger/view-dom-event-listeners.md)   
  [製品のサポートとユーザー補助](http://go.microsoft.com/fwlink/?LinkId=253502)
-
-
-

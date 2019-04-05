@@ -1,12 +1,9 @@
 ---
 title: プロファイルとステレオタイプを使用したモデルのカスタマイズ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, profiles
 - UML model, stereotypes
@@ -15,13 +12,13 @@ ms.assetid: fd607157-0d3a-4583-a84e-427a4b2a5acb
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 33e887764c535083c2449a7d333868b2ccd9c4c5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727703"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963994"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>プロファイルとステレオタイプを使用したモデルのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +38,7 @@ Visual Studio では、クラスやコンポーネントなどの標準の UML �
   
 ## <a name="related-topics"></a>関連トピック  
   
-|Title|説明|  
+|タイトル|説明|  
 |-----------|-----------------|  
 |[UML モデル要素にステレオタイプを追加する](../modeling/add-stereotypes-to-uml-model-elements.md)|モデル要素をパッケージ内に配置して、パッケージをプロファイルにリンクし、ステレオタイプを要素に適用します。|  
 |[UML モデルの標準ステレオタイプ](../modeling/standard-stereotypes-for-uml-models.md)|Visual Studio をインストールするときに、UML 標準プロファイル L2 および L3 がインストールされます。既定では、すべてのモデルがこれらのプロファイルにリンクされます。 これらのプロファイルによって、モデルに注釈を付けるために使用できるステレオタイプが提供されます。<br /><br /> たとえば、«specification» ステレオタイプをクラスに適用して、クラスの使用目的が、そのインスタンスの外部から見える動作の定義のみであることを示すことができます。|  
@@ -49,6 +46,3 @@ Visual Studio では、クラスやコンポーネントなどの標準の UML �
 |[UML プロファイルのインストール](../modeling/install-a-uml-profile.md)|他のユーザーから UML プロファイルを受け取った場合、それを自分のコンピューターにインストールできます。|  
 |[カスタム モデリング ツールボックス アイテムを定義する](../modeling/define-a-custom-modeling-toolbox-item.md)|カスタム ツールボックス項目を使用すると、新しい要素にステレオタイプを繰り返し設定する手間を省くことができます。|  
 |[ステレオタイプにより UML クラスの色](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|このサンプル コードは、UML 図を拡張します。 要素のステレオタイプに従って、UML シェイプの色を自動的に設定します。|
-
-
-

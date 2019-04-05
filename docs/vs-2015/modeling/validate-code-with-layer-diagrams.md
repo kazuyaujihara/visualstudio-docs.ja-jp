@@ -26,7 +26,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51792165"
@@ -97,14 +97,14 @@ ms.locfileid: "51792165"
     > [!NOTE]
     >  既定で、**ビルド アクション**、レイヤー図 (.layerdiagram) ファイルのプロパティに設定されて**検証**検証プロセスで、ダイアグラムが含まれるようにします。  
   
-     **エラー一覧**ウィンドウが発生したエラーを報告します。 検証エラーに関する詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。  
+     **エラー一覧**ウィンドウが発生したエラーを報告します。 検証エラーに関する詳細については、[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)を参照してください。  
   
 2.  各エラーのソースを表示するでエラーをダブルクリックして、**エラー一覧**ウィンドウ。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、エラーのソースの代わりにコード マップが表示されることがあります。 これは、レイヤー図で指定されていないアセンブリ上にコードの依存関係があるか、レイヤー図で指定された依存関係がコードにない場合に起こります。 コード マップまたはコードをレビューし、依存関係が必要であるかどうかを検証してください。 コード マップの詳細については、次を参照してください。[ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)します。  
+    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、エラーのソースの代わりにコード マップが表示されることがあります。 これは、レイヤー図で指定されていないアセンブリ上にコードの依存関係があるか、レイヤー図で指定された依存関係がコードにない場合に起こります。 コード マップまたはコードをレビューし、依存関係が必要であるかどうかを検証してください。 コード マップの詳細については、[ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)を参照してください。  
   
-3.  エラーを管理するには、次を参照してください。[検証エラーを管理](#ManageErrors)します。  
+3.  エラーを管理するには、[検証エラーを管理](#ManageErrors)を参照してください。  
   
 #### <a name="to-validate-code-at-the-command-prompt"></a>コマンド プロンプトでコードを検証するには  
   
@@ -142,7 +142,7 @@ ms.locfileid: "51792165"
   
      発生したすべてのエラーが表示されます。 詳細については[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]を参照してください[MSBuild](../msbuild/msbuild.md)と[MSBuild タスク](../msbuild/msbuild-task.md)します。  
   
-   検証エラーに関する詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。  
+   検証エラーに関する詳細については、[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)を参照してください。  
   
 ###  <a name="ManageErrors"></a> 検証エラーを管理します。  
  開発プロセスの実行中は、検証時に報告される一部の競合を抑制できます。 たとえば、既に解決したエラーや特定のシナリオに関連しないエラーを抑制できます。 エラーを抑制した場合は、[!INCLUDE[esprfound](../includes/esprfound-md.md)] で作業項目をログに記録することをお勧めします。  
@@ -188,7 +188,7 @@ ms.locfileid: "51792165"
   
     これには、検証プロセス内のレイヤー図が含まれます。  
   
-   エラー一覧 ウィンドウでエラーを管理するには、次を参照してください。[検証エラーの管理](#ManageErrors)します。  
+   エラー一覧 ウィンドウでエラーを管理するには、[検証エラーの管理](#ManageErrors)を参照してください。  
   
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Team Foundation ビルド時にコードを自動的に検証するには  
   
@@ -198,7 +198,7 @@ ms.locfileid: "51792165"
   
     `/p:ValidateArchitecture=true`  
   
-   検証エラーに関する詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] の詳細については、以下のトピックを参照してください。  
+   検証エラーに関する詳細については、[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)を参照してください。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] の詳細については、以下のトピックを参照してください。  
   
 -   [アプリケーションのビルド](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
@@ -211,7 +211,7 @@ ms.locfileid: "51792165"
 -   [実行中のビルドの進行状況の監視](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
 ##  <a name="TroubleshootingValidation"></a> レイヤー検証に関する問題をトラブルシューティングします。  
- レイヤー検証に関する問題とその解決方法について、次の表で説明します。 これらの問題は、コードと設計の間の競合によって発生するエラーとは異なります。 これらのエラーの詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。  
+ レイヤー検証に関する問題とその解決方法について、次の表で説明します。 これらの問題は、コードと設計の間の競合によって発生するエラーとは異なります。 これらのエラーの詳細については、[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)を参照してください。  
   
 |**問題点**|**考えられる原因**|**解決策**|  
 |---------------|------------------------|--------------------|  

@@ -1,24 +1,19 @@
 ---
 title: SDKReference 要素 (Visual Studio テンプレート) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4462e42eb0810c3ab988610149395fd4a52fce78
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 606c6595f83003c463d218cf7253407ae2e925d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964170"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,4 +66,3 @@ ms.locfileid: "51731027"
  [Reference 要素 (Visual Studio テンプレート)](../extensibility/reference-element-visual-studio-templates.md)   
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
-

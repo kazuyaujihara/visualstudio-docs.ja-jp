@@ -153,7 +153,7 @@ ms.locfileid: "56633240"
 ## <a name="next-steps"></a>次の手順
  このチュートリアルでのイベントのプログラミングの基礎を<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロール。 次のタスクを次に示します。
 
--   プロジェクトを配置します。 詳細については、次を参照してください。 [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
+-   プロジェクトを配置します。 詳細については、[Office ソリューションを配置](../vsto/deploying-an-office-solution.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)

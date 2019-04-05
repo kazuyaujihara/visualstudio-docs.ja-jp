@@ -26,7 +26,7 @@ ms.locfileid: "56614423"
 ---
 # <a name="custom-document-properties-overview"></a>カスタム ドキュメント プロパティの概要
 
-ドキュメント レベルのプロジェクトをビルドするときに Visual Studio には、プロジェクト内のドキュメントに 2 つのカスタム プロパティが追加されます。\_AssemblyLocation と\_AssemblyName。 文書を開くと、これらのカスタム ドキュメント プロパティを Microsoft Office アプリケーションによって確認されます。 ドキュメントに存在する場合、アプリケーションの読み込み、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]カスタマイズを開始します。 詳細については、次を参照してください。 [Visual Studio での Office のアーキテクチャ ソリューション](../vsto/architecture-of-office-solutions-in-visual-studio.md)します。
+ドキュメント レベルのプロジェクトをビルドするときに Visual Studio には、プロジェクト内のドキュメントに 2 つのカスタム プロパティが追加されます。\_AssemblyLocation と\_AssemblyName。 文書を開くと、これらのカスタム ドキュメント プロパティを Microsoft Office アプリケーションによって確認されます。 ドキュメントに存在する場合、アプリケーションの読み込み、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]カスタマイズを開始します。 詳細については、[Visual Studio での Office のアーキテクチャ ソリューション](../vsto/architecture-of-office-solutions-in-visual-studio.md)を参照してください。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "56614423"
 
 ## <a name="assemblylocation"></a>\_AssemblyLocation
 
-このプロパティには、カスタマイズの詳細については、配置マニフェストを提供する文字列が含まれています。 マニフェストの詳細については、次を参照してください。 [Office ソリューションでのアプリケーションと展開マニフェスト](../vsto/application-and-deployment-manifests-in-office-solutions.md)します。
+このプロパティには、カスタマイズの詳細については、配置マニフェストを提供する文字列が含まれています。 マニフェストの詳細については、[Office ソリューションでのアプリケーションと展開マニフェスト](../vsto/application-and-deployment-manifests-in-office-solutions.md)を参照してください。
 
  \_AssemblyLocation プロパティの値は、ソリューションの展開方法に応じて、異なる形式を持つことができます。
 

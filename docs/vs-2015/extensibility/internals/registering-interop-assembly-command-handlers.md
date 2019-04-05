@@ -1,27 +1,22 @@
 ---
 title: 相互運用機能アセンブリ コマンド ハンドラーの登録 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a087b5952b930145cd9f620a0eebeeee5d947149
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5d768a8024755fcee10413495c48da9e20456751
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778593"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977446"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>相互運用機能アセンブリ コマンド ハンドラーの登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ VSPackage に登録する必要があります[!INCLUDE[vsprvs](../../includes/v
   
  管理パッケージ フレームワーク (MPF) は、この機能によって、<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>クラス。  
   
- [コマンドの表形式のリファレンス](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f)アンマネージ サテライト dll の UI ではリソースがあります。  
+ [コマンドの表形式のリファレンス](http://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f)アンマネージ サテライト dll の UI ではリソースがあります。  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage のコマンド ハンドラーの登録  
  ユーザー インターフェイス (UI) のハンドラーとして機能する VSPackage-ベースのコマンドは、VSPackage にちなんだ名前のレジストリ エントリを必要と`GUID`します。 このレジストリ エントリには、VSPackage の UI のリソース ファイルとそのファイル内でメニュー リソースの場所を指定します。 Hkey_local_machine \software\microsoft\visualstudio の下にレジストリ エントリ自体も\\*\<バージョン >* \Menus、場所*\<バージョン >* バージョンである[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]たとえば 9.0、します。  
@@ -76,4 +71,3 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
 ## <a name="see-also"></a>関連項目  
  [Vspackage がユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [相互運用機能アセンブリを使用するコマンドとメニュー](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
-

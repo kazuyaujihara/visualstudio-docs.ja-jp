@@ -89,7 +89,7 @@ int LaunchSuspended( 
 ## <a name="remarks"></a>Remarks
  このメソッドは、その it が中断されているため、プロセスと、コードが実行されていないを起動する必要があります。 [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)メソッドが呼び出され、プロセスを再開します。
 
- プログラムは、デバッグ エンジンからも起動できます。 詳細については、次を参照してください。[プログラムの起動](../../../extensibility/debugger/launching-a-program.md)します。
+ プログラムは、デバッグ エンジンからも起動できます。 詳細については、[プログラムの起動](../../../extensibility/debugger/launching-a-program.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

@@ -1,24 +1,19 @@
 ---
 title: CA5351 破られた暗号アルゴリズムを使用しないでください |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 483f51b3-e186-4433-b48e-5ca24a9a9c94
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0b8129b4ff946658c5e1b4f24c57ca77cb50e14a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976053"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 破られた暗号アルゴリズムを使用しないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49889816"
 ## <a name="how-to-fix-violations"></a>違反の修正方法  
  暗号強度の高いオプションを使用します。  
   
--   MD5 の場合は、 [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) ファミリ ( <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>など) のハッシュを使用します。  
+-   MD5 の場合は、 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) ファミリ ( <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>など) のハッシュを使用します。  
   
 -   DES と RC2 の場合は、 <xref:System.Security.Cryptography.Aes> 暗号を使用します。  
   

@@ -19,7 +19,7 @@ ms.lasthandoff: 02/22/2019
 ms.locfileid: "56696156"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler クラスの内部メンバー
-この記事の内部メンバーを説明します、<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>する際に役立つクラスがカスタムのデバッガーを実装します。 このクラスの詳細については、次を参照してください。、<xref:System.Threading.Tasks.TaskScheduler>参照資料です。
+この記事の内部メンバーを説明します、<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>する際に役立つクラスがカスタムのデバッガーを実装します。 このクラスの詳細については、、<xref:System.Threading.Tasks.TaskScheduler>参照資料を参照してください。
 
  **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
 

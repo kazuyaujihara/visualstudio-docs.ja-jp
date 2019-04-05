@@ -25,9 +25,9 @@ Visual Studio ModelBus 参照を含むモデルを読み取るテキスト テ�
 - テンプレートを継承する必要があります<xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>します。
 
 > [!NOTE]
-> ModelBus references を含まない DSL モデルを確認するには、DSL プロジェクトで生成されたディレクティブ プロセッサを使用することができます。 詳細については、次を参照してください。[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)します。
+> ModelBus references を含まない DSL モデルを確認するには、DSL プロジェクトで生成されたディレクティブ プロセッサを使用することができます。 詳細については、[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)を参照してください。
 
-テキスト テンプレートの詳細については、次を参照してください。 [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)します。
+テキスト テンプレートの詳細については、[T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)を参照してください。
 
 ## <a name="create-a-model-bus-adapter-for-access-from-text-templates"></a>テキスト テンプレートからのアクセス用モデル バス アダプターを作成します。
 
@@ -35,7 +35,7 @@ Visual Studio ModelBus 参照を含むモデルを読み取るテキスト テ�
 
 1.  ターゲット DSL ソリューションがあるない場合、 **ModelBusAdapter**プロジェクト、Modelbus 拡張機能のウィザードを使用して 1 つを作成します。
 
-    1.  ダウンロードして Visual Studio ModelBus 拡張機能をインストールしていない場合。 詳細については、次を参照してください。 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)します。
+    1.  ダウンロードして Visual Studio ModelBus 拡張機能をインストールしていない場合。 詳細については、[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)を参照してください。
 
     2.  DSL 定義ファイルを開きます。 デザイン サーフェイスを右クリックし、をクリックし、 **Modelbus の有効化**します。
 

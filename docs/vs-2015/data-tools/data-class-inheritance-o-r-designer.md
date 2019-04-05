@@ -1,23 +1,20 @@
 ---
 title: データ クラスの継承 (O/R デザイナー) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ae36d6aac3ea9a4ff4de73dea57207b6f03abc72
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cb78a5c1962d855a2e191d16487a52d5f94c9567
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180519"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974073"
 ---
 # <a name="data-class-inheritance-or-designer"></a>データ クラスの継承 (O/R デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +24,7 @@ ms.locfileid: "49180519"
   
  単一テーブル継承では、基本クラスと派生クラスの両方の列が入った単一データベース テーブルが関係します。 リレーショナル データでは、識別子の列に、特定のレコードが属するクラスを決定する値が含まれます。 たとえば、会社に採用されたすべての人を含む Persons テーブルについて考えます。 従業員の人もいれば、管理者の人もいます。 Persons テーブルには、Type という列があり、この列の値は管理者は 1、従業員は 2 です。 Type 列は識別子の列です。 このシナリオでは、従業員のサブクラスを作成して、そのクラスには Type の値が 2 であるレコードだけを入れるようにすることができます。  
   
- 構成するときの継承エンティティ クラスを使用して、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]、2 回、デザイナーに、継承データを含む 1 つのテーブルをドラッグします。 継承階層内の各クラスに 1 回です。 デザイナーにテーブルを追加した後に接続から継承項目、**オブジェクト リレーショナル デザイナー**ツールボックスし、4 つのセットの継承プロパティで、**プロパティ**ウィンドウ。  
+ [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] を使用してエンティティ クラスでの継承を構成する場合、継承データを含んだ単一テーブルをデザイナーに、継承階層のクラスごとに 1 回、計 2 回ドラッグします。 デザイナーにテーブルを追加した後、**[オブジェクト リレーショナル デザイナー]** ツールボックスでそれらのテーブルを継承項目に接続して、**[プロパティ]** ウィンドウで 4 つの継承プロパティを設定します。  
   
 ## <a name="inheritance-properties"></a>継承プロパティ  
  継承プロパティとその説明については、次の表を参照してください。  
@@ -51,4 +48,3 @@ ms.locfileid: "49180519"
  [チュートリアル: LINQ to SQL クラス (O/R デザイナー) を作成します。](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [チュートリアル: 単一テーブル継承 (O/R デザイナー) を使用して LINQ to SQL クラスを作成します。](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
  [はじめに](http://msdn.microsoft.com/library/db8a557a-fef8-4f4f-bb91-8cff7250ee25)
-

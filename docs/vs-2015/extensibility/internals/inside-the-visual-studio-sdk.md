@@ -1,14 +1,9 @@
 ---
 title: Visual Studio SDK の内部 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b7a7642d8cd33d53bb7d6d2a472a0690713e25d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ded1741c9364ca9fa706441b5cfa313ce6e58569
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795831"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002866"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK の内部
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Visual Studio のアーキテクチャの汎用化されたビュー
  Visual Studio shell は、基本的な機能を提供し、そのコンポーネント Vspackage および MEF 拡張機能間の相互通信をサポートします。 詳細については、次を参照してください。 [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md)します。  
   
 ## <a name="user-experience-guidelines"></a>ユーザー エクスペリエンス ガイドライン  
- Visual Studio の新機能の設計を計画している場合は、デザインと使いやすさのヒントについては、次のガイドラインを参照してくださいを行う必要があります: [Visual Studio ユーザー エクスペリエンス ガイドライン](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)します。  
+ Visual Studio の新機能の設計を計画している場合は、デザインと使いやすさのヒントについては、次のガイドラインを参照してくださいを行う必要があります。[Visual Studio ユーザー エクスペリエンス ガイドライン](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)します。  
   
 ## <a name="commands"></a>コマンド  
  コマンドは、ドキュメントの印刷、ビューの更新、ファイルの新規作成などのタスクを実行する関数です。  
@@ -95,10 +90,10 @@ Visual Studio のアーキテクチャの汎用化されたビュー
   
  プロジェクトは、ソリューション、連携してアプリケーションを作成する 1 つまたは複数のプロジェクトのグループ化にも収集できます。 ソリューションに関連するプロジェクトとステータスの情報は、2 つのソリューション ファイル、テキスト ベースのソリューション (.sln) ファイルおよびバイナリ ソリューション ユーザー オプション (.suo) ファイルに格納されます。 これらのファイルは以前のバージョンので使用されていたグループ (.vbg) ファイルと同様に[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]、し、ワークスペース (.dsw) とユーザーのオプション (.opt) ファイルの以前のバージョンで使用されていた[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]します。  
   
- 詳細については、次を参照してください。[プロジェクト](../../extensibility/internals/projects.md)と[ソリューション](../../extensibility/internals/solutions.md)します。  
+ 詳細については、次を参照してください。[プロジェクト](../../extensibility/internals/projects.md)と[ソリューション](../../extensibility/internals/solutions-overview.md)します。  
   
 ## <a name="project-and-item-templates"></a>プロジェクト テンプレートと項目テンプレート  
- Visual Studio には、定義済みのプロジェクト テンプレートとプロジェクト項目テンプレートが含まれています。 また、独自のテンプレートを作成または、コミュニティからのテンプレートを取得し、Visual Studio に統合できます。 [MSDN コード ギャラリー](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio)テンプレートおよび拡張機能にアクセスする場所です。  
+ Visual Studio には、定義済みのプロジェクト テンプレートとプロジェクト項目テンプレートが含まれています。 また、独自のテンプレートを作成または、コミュニティからのテンプレートを取得し、Visual Studio に統合できます。 [MSDN コード ギャラリー](https://code.msdn.microsoft.com/site/search?query=visual%20studio)テンプレートおよび拡張機能にアクセスする場所です。  
   
  テンプレートには、プロジェクトの構造および特定の種類のアプリケーション、コントロール、ライブラリ、またはクラスを構築するために必要な基本的なファイルが含まれます。 テンプレートのいずれかのようなソフトウェアを開発する場合は、テンプレートに基づいているプロジェクトを作成し、そのプロジェクト内のファイルを変更します。  
   
@@ -108,7 +103,7 @@ Visual Studio のアーキテクチャの汎用化されたビュー
  詳細については、次を参照してください。[プロジェクトに追加するとプロジェクト項目テンプレート](../../extensibility/internals/adding-project-and-project-item-templates.md)します。  
   
 ## <a name="properties-and-options"></a>プロパティとオプション  
- **プロパティ**ウィンドウには、1 つまたは複数選択した項目のプロパティが表示されます:[拡張プロパティ](../../extensibility/internals/extending-properties.md)オプション ページなど、特定のコンポーネントに関連するオプションのセットを含めることが、プログラミング言語または VSPackage:[オプションとオプション ページ](../../extensibility/internals/options-and-options-pages.md)します。 設定は、通常、UI 関連機能をインポートおよびエクスポートすることができます:[ユーザー設定のサポート](../../extensibility/internals/support-for-user-settings.md)します。  
+ **プロパティ**ウィンドウが 1 つまたは複数選択した項目のプロパティを表示します。[プロパティの拡張](../../extensibility/internals/extending-properties.md)オプション ページには、プログラミング言語や VSPackage など、特定のコンポーネントに関連するオプションのセットが含まれています。[オプションとオプション ページ](../../extensibility/internals/options-and-options-pages.md)します。 設定は、通常、UI 関連機能をインポートおよびエクスポートすることができます。[ユーザー設定のサポート](../../extensibility/internals/support-for-user-settings.md)します。  
   
 ## <a name="visual-studio-services"></a>Visual Studio サービス  
  サービスは、特定のコンポーネントを使用するインターフェイスのセットを提供します。 Visual Studio では、一連の拡張機能を含め、すべてのコンポーネントで使用できるサービスを提供します。 たとえば、Visual Studio services には、ツール ウィンドウを表示または非表示に動的に、ヘルプ、ステータス バー、または UI イベントへのアクセスを有効にするが有効にします。 Visual Studio エディターには、エディターの拡張機能によってインポートできるサービスも提供します。 詳細については、次を参照してください。[を使用すると、サービスを提供する](../../extensibility/using-and-providing-services.md)します。  
@@ -133,4 +128,3 @@ Visual Studio のアーキテクチャの汎用化されたビュー
   
 ## <a name="help-viewer"></a>ヘルプ ビューアー  
  ヘルプ ビューアーには、独自のヘルプと F1 ページを統合できます。 詳細については、次を参照してください。 [Microsoft ヘルプ ビューアー SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md)します。
-

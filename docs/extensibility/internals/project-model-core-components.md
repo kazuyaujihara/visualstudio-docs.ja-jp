@@ -21,7 +21,7 @@ ms.locfileid: "56636152"
 # <a name="project-model-core-components"></a>プロジェクト モデルのコア コンポーネント
 次の表は、プロジェクト モデルを展開します。 テーブルは、インターフェイスと、モデルとインターフェイス、および特定のオブジェクトに関連付けられているサービスで識別されたサービスの簡単な説明を提示します。 さらに、テーブルには、プロジェクトの作成と、特定のプロジェクトの種類の要件に応じて保守で省略可能なその他のインターフェイスについて詳しく説明します。
 
- 詳細については、次を参照してください。[をサポートしているシンボル参照ツール](../../extensibility/internals/supporting-symbol-browsing-tools.md)します。
+ 詳細については、[をサポートしているシンボル参照ツール](../../extensibility/internals/supporting-symbol-browsing-tools.md)を参照してください。
 
 ### <a name="package-object"></a>パッケージ オブジェクト
 

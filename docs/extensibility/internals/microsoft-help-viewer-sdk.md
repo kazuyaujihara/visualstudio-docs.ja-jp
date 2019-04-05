@@ -832,8 +832,8 @@ Visual Studio のコンテンツ ストアを作成します。 統合シェル�
 
 ## <a name="additional-resources"></a>その他の技術情報
 
-ランタイム API では、次を参照してください。 [Windows API のヘルプ](/previous-versions/windows/desktop/helpapi/helpapi-portal)します。
+ランタイム API では、[Windows API のヘルプ](/previous-versions/windows/desktop/helpapi/helpapi-portal)を参照してください。
 
-API のヘルプを活用する方法の詳細については、次を参照してください。[ヘルプ ビューアーのコード例](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)します。
+API のヘルプを活用する方法の詳細については、[ヘルプ ビューアーのコード例](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)を参照してください。
 
 機能に関する提案を送信する[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)します。

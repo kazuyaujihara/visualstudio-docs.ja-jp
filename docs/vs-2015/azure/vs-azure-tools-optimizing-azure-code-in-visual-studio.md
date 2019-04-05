@@ -13,7 +13,7 @@ ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: d1d0f5a69015a6c6596e1a2b7ee85b12f4116d6b
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002519"
@@ -130,7 +130,7 @@ AP2002
 呼び出す場合**受信**せず、その既定値を使用することを確認して、 *ServerWaitTime*値は 1 分以上。 設定*ServerWaitTime*は、メッセージが完全に受信される前に、タイムアウトにより、サーバー 1 分以上にします。
 
 ### <a name="solution"></a>ソリューション
-推奨される使用状況を次のコード例を参照してください。 詳細については、次を参照してください。 [QueueClient.OnMessage メソッド (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx)と[QueueClient.Receive メソッド (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx)します。
+推奨される使用状況を次のコード例を参照してください。 詳細については、[QueueClient.OnMessage メソッド (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx)と[QueueClient.Receive メソッド (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx)を参照してください。
 
 Azure のメッセージング インフラストラクチャのパフォーマンスを向上させる、設計パターンを参照してください。[非同期メッセージングの基本](https://msdn.microsoft.com/library/dn589781.aspx)します。
 
@@ -243,7 +243,7 @@ AP2004
 アイデアやフィードバックを共有してください[Azure コード分析のフィードバック](http://go.microsoft.com/fwlink/?LinkId=403771)します。
 
 ### <a name="reason"></a>理由
-Service Bus キューおよびトピックをパーティション分割すると、パーティション分割されたキューまたはトピックの全体的なスループットは 1 つのメッセージ ブローカーまたはメッセージング ストアのパフォーマンスによって制限されなくパフォーマンスのスループットとサービスの可用性が向上します。 さらに、メッセージング ストアが一時的に停止しないパーティション分割されたキューまたはトピックで使用できないようにします。 詳細については、次を参照してください。[メッセージング エンティティのパーティション分割](https://msdn.microsoft.com/library/azure/dn520246.aspx)します。
+Service Bus キューおよびトピックをパーティション分割すると、パーティション分割されたキューまたはトピックの全体的なスループットは 1 つのメッセージ ブローカーまたはメッセージング ストアのパフォーマンスによって制限されなくパフォーマンスのスループットとサービスの可用性が向上します。 さらに、メッセージング ストアが一時的に停止しないパーティション分割されたキューまたはトピックで使用できないようにします。 詳細については、[メッセージング エンティティのパーティション分割](https://msdn.microsoft.com/library/azure/dn520246.aspx)を参照してください。
 
 ### <a name="solution"></a>ソリューション
 次のコード スニペットでは、メッセージング エンティティをパーティション分割する方法を示します。
@@ -270,7 +270,7 @@ AP3001
 ### <a name="reason"></a>理由
 クロックの同期には、データ センター間でわずかな時間差が発生します。 たとえば、論理的と思われる DateTime.Now を使用して、現在の時刻としてストレージの SAS ポリシーの開始時刻を設定または同様のメソッドは、SAS ポリシーをすぐに有効になります。 ただし、データ センター間でわずかな時間の相違点であっても、データ センターも進んで他のユーザーの中に、開始時刻よりもわずかに遅れて場合がありますので、この問題が発生できます。 すぐに (またはすぐに)、SAS ポリシーが有効期限が切れるため、ポリシーの有効期間が短すぎる場合。
 
-Shared Access Signature を使用して Azure storage の詳細については、次を参照してください。 [Introducing Table SAS (Shared Access Signature)、キュー SAS および Blob SAS - Microsoft Azure Storage チーム ブログ - 更新サイトのホーム - MSDN ブログ](http://blogs.msdn.com/b/windowsazurestorage/archive/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas.aspx)します。
+Shared Access Signature を使用して Azure storage の詳細については、[Introducing Table SAS (Shared Access Signature)、キュー SAS および Blob SAS - Microsoft Azure Storage チーム ブログ - 更新サイトのホーム - MSDN ブログ](http://blogs.msdn.com/b/windowsazurestorage/archive/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas.aspx)を参照してください。
 
 ### <a name="solution"></a>ソリューション
 共有アクセス ポリシーの開始時刻を設定するステートメントを削除します。 Azure コード分析ツールは、この問題の修正プログラムを提供します。 セキュリティ管理の詳細については、デザイン パターンを参照してください[バレット キー パターン](https://msdn.microsoft.com/library/dn568102.aspx)します。
@@ -302,7 +302,7 @@ AP3002
 ### <a name="reason"></a>理由
 世界各地の異なる場所にあるデータ センターは、クロック信号によって同期されます。 別の場所に移動するクロック信号の時間がかかるため、あります異なる地理的な場所にあるデータ センター間で時間の差異が、すべてが同期されていると思われる。 この時間差は、共有アクセス ポリシーの開始時刻と有効期限間隔に影響を与えます。 そのため、共有アクセス ポリシーは直ちに有効ことを確認するには、開始時刻を指定しないでください。 さらに、有効期限が早期タイムアウトを防ぐために 5 分以上を確認します。
 
-Azure storage での Shared Access Signature の使用に関する詳細については、次を参照してください。 [Introducing Table SAS (Shared Access Signature)、キュー SAS および Blob SAS - Microsoft Azure Storage チーム ブログ - 更新サイトのホーム - MSDN ブログ](http://blogs.msdn.com/b/windowsazurestorage/archive/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas.aspx)します。
+Azure storage での Shared Access Signature の使用に関する詳細については、[Introducing Table SAS (Shared Access Signature)、キュー SAS および Blob SAS - Microsoft Azure Storage チーム ブログ - 更新サイトのホーム - MSDN ブログ](http://blogs.msdn.com/b/windowsazurestorage/archive/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas.aspx)を参照してください。
 
 ### <a name="solution"></a>ソリューション
 セキュリティ管理の詳細については、デザイン パターンを参照してください。[バレット キー パターン](https://msdn.microsoft.com/library/dn568102.aspx)します。
@@ -338,7 +338,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 });
 ```
 
-詳細については、次を参照してください。[を作成し、Shared Access Signature を使用して、](https://msdn.microsoft.com/library/azure/jj721951.aspx)します。
+詳細については、[を作成し、Shared Access Signature を使用して、](https://msdn.microsoft.com/library/azure/jj721951.aspx)を参照してください。
 
 ## <a name="use-cloudconfigurationmanager"></a>CloudConfigurationManager を使用します。
 ### <a name="id"></a>ID
@@ -396,7 +396,7 @@ AP4001
 * 、IIS でホストされる web アプリケーションの web.config を使用して、接続文字列を格納します。
 * ASP.NET vNext アプリケーションでは、configuration.json を使用して、接続文字列を格納します。
 
-Web.config または app.config などの構成ファイルを使用する方法の詳細については、次を参照してください。 [ASP.NET Web 構成のガイドライン](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx)します。 Azure の環境変数の機能については、次を参照してください。 [Azure Web サイト: アプリケーション文字列と接続文字列が機能](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)します。 ソース管理に接続文字列を格納する方法の詳細については、次を参照してください。[ソース コード リポジトリに格納されているファイルで接続文字列などの機密情報を入れない](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)します。
+Web.config または app.config などの構成ファイルを使用する方法の詳細については、[ASP.NET Web 構成のガイドライン](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx)を参照してください。 Azure の環境変数の機能については、[Azure Web サイト: アプリケーション文字列と接続文字列が機能](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)を参照してください。 ソース管理に接続文字列を格納する方法の詳細については、[ソース コード リポジトリに格納されているファイルで接続文字列などの機密情報を入れない](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)を参照してください。
 
 ## <a name="use-diagnostics-configuration-file"></a>診断構成ファイルを使用します。
 ### <a name="id"></a>ID
@@ -463,4 +463,4 @@ public class BlogsController : Controller
 ```
 
 ## <a name="next-steps"></a>次の手順
-詳細についてを最適化する Azure アプリケーションとトラブルシューティングについては、次を参照してください。 [Visual Studio を使用して Azure App Service で web アプリのトラブルシューティング](/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio)します。
+詳細についてを最適化する Azure アプリケーションとトラブルシューティングについては、[Visual Studio を使用して Azure App Service で web アプリのトラブルシューティング](/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio)を参照してください。

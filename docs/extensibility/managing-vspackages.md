@@ -27,10 +27,10 @@ ms.locfileid: "56694713"
  実験用インスタンスの詳細についてを参照してください。[実験用インスタンス](../extensibility/the-experimental-instance.md)します。
 
 ## <a name="register-and-unregister-vspackages"></a>登録して、Vspackage の登録解除
- 登録し、Vspackage とその他の種類の拡張機能の登録を解除する方法については、次を参照してください。[登録し、Vspackage の登録解除](../extensibility/registering-and-unregistering-vspackages.md)します。
+ 登録し、Vspackage とその他の種類の拡張機能の登録を解除する方法については、[登録し、Vspackage の登録解除](../extensibility/registering-and-unregistering-vspackages.md)を参照してください。
 
 ## <a name="load-a-vspackage"></a>VSPackage を読み込む
- Vspackage は、autoload 特定 CMDUICONTEXT GUID の電源がオンに設定できます。 詳細については、次を参照してください。[ロード Vspackage](../extensibility/loading-vspackages.md)します。
+ Vspackage は、autoload 特定 CMDUICONTEXT GUID の電源がオンに設定できます。 詳細については、[ロード Vspackage](../extensibility/loading-vspackages.md)を参照してください。
 
 ## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>AsyncPackage を使用して、バック グラウンドで Vspackage を読み込む
  `AsyncPackage`クラスは、Visual Studio での UI の応答性の向上のバック グラウンド スレッドでのパッケージの読み込みを使用できます。 詳細については、「[方法 :AsyncPackage を使用して、バック グラウンドで Vspackage を読み込む](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)します。

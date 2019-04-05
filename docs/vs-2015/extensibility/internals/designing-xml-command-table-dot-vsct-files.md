@@ -1,26 +1,21 @@
 ---
 title: XML コマンド テーブルのデザイン (します。Vsct) ファイル |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762815"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972202"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>XML コマンド テーブルのデザイン (します。Vsct) ファイル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ XML コマンド テーブル (.vsct) ファイルには、VSPackage のコマ�
   
  実行して新しい VSPackage を作成する場合、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]パッケージ テンプレートでは、メニュー コマンド、ツール ウィンドウ、または、選択内容に応じて、カスタム エディターに必要な要素の .vsct ファイルが生成されます。 この .vsct ファイルは、特定の VSPackage の要件に合わせて変更できます。 .Vsct ファイルを変更する方法の例については、例を参照してください。[拡張メニューとコマンド](../../extensibility/extending-menus-and-commands.md)します。  
   
- 新しい、空白の .vsct ファイルを作成するを参照してください。[方法: を作成します。Vsct ファイル](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)します。 作成されると、ファイルに、コマンドの項目のレイアウトを記述する XML 要素、属性、および値を追加します。 詳細な XML スキーマでは、次を参照してください。、 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)します。  
+ 新しい、空白の .vsct ファイルを作成するを参照してください。[方法。作成します。Vsct ファイル](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)します。 作成されると、ファイルに、コマンドの項目のレイアウトを記述する XML 要素、属性、および値を追加します。 詳細な XML スキーマでは、次を参照してください。、 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)します。  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc と .vsct ファイルの間の相違点  
  現在、将来の .ctc ファイル形式が非推奨として、.vsct ファイル内の XML タグの意味は同じですが、その実装は少し異なります。  
@@ -71,7 +66,7 @@ XML コマンド テーブル (.vsct) ファイルには、VSPackage のコマ�
   
   新しいコンパイラ、vsct.exe、.ctc と .vsct ファイルをコンパイルします。 古い ctc.exe コンパイラ、ただしは認識も .vsct ファイルをコンパイルします。  
   
-  Vsct.exe コンパイラを使用して、.vsct ファイルを既存の .cto ファイルに変換することができます。 詳細については、次を参照してください。[方法: を作成します。既存の Vsct ファイルです。Cto ファイル](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)します。  
+  Vsct.exe コンパイラを使用して、.vsct ファイルを既存の .cto ファイルに変換することができます。 詳細については、次を参照してください。[方法。作成します。既存の Vsct ファイルです。Cto ファイル](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)します。  
   
 ## <a name="the-vsct-file-elements"></a>.Vsct ファイルの要素  
  コマンド テーブルには、次の階層と要素があります。  
@@ -130,4 +125,3 @@ XML コマンド テーブル (.vsct) ファイルには、VSPackage のコマ�
   
 ## <a name="see-also"></a>関連項目  
  [メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)
-

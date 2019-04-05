@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1720: 識別子が型名含めることはできません |Microsoft Docs'
-ms.custom: ''
+title: CA1720:識別子は型名を含めることはできません |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1720
 - IdentifiersShouldNotContainTypeNames
@@ -20,21 +15,21 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862340"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975781"
 ---
-# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: 識別子には型名を含めないでください
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720:識別子には型名を含めないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
-|カテゴリ|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
@@ -131,7 +126,7 @@ ms.locfileid: "49862340"
 
 - Decimal (10 進数型)
 
-- GUID
+- Guid
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  **場合は、パラメーターに対して起動します。**
@@ -146,13 +141,10 @@ ms.locfileid: "49862340"
  型に基づくパラメーターおよびメンバーの名前は、適切な可能性があります。 ただし、新規の開発、されていないシナリオが発生する、この規則による警告を抑制する必要があります。 ライブラリが以前のリリースでは、この規則による警告を抑制する必要があります。
 
 ## <a name="related-rules"></a>関連規則
- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: 識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:識別子は、ケース以外で相違させる必要があります。](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: 識別子はアンダースコアを含むことはできません](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA 1707:識別子はアンダー スコアを含めることはできません。](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1719: パラメーター名はメンバー名と同一にすることはできません](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
-
-
-
+ [CA1719:パラメーター名は、メンバー名と一致する必要があります。](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

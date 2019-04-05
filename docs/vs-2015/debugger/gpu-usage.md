@@ -1,25 +1,20 @@
 ---
 title: GPU 使用率 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817504"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973739"
 ---
 # <a name="gpu-usage"></a>GPU 使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
   
 #### <a name="to-start-the-gpu-usage-tool"></a>GPU 使用率ツールを開始するには:  
   
-1. メイン メニューで、**[デバッグ]**、**[パフォーマンスと診断]** を選びます (キーボード: Alt + F2 キーを押します)。  
+1. メイン メニューで、**[デバッグ]**、**[パフォーマンスと診断]** を選びます (キーボード:Alt + F2 キーを押します)。  
   
 2. [パフォーマンスと診断] ハブで、**[GPU 使用率]** の横にあるチェック ボックスをオンにします。 必要に応じて、調査するその他のツールの横のチェック ボックスをオンにします。 複数の [パフォーマンスと診断] ツールを同時に実行して、アプリのパフォーマンスをさらに多面的に把握することもできます。  
   
@@ -99,7 +94,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
 |--------------------|-----------------|  
 |**Process**|調査対象のプロセスの名前。 診断セッション中に GPU を使用したすべてのプロセスが、このドロップダウン リストに含まれます。 このドロップダウンでプロセスに関連付けられている色は、下のタイムラインでのスレッドのアクティビティの色です。|  
 |**スレッド**|調査対象のスレッド ID。 マルチ スレッド アプリケーションでは、これを使用して、調査対象のプロセスに属するスレッドを分離できます。 各タイムラインで、選択されたスレッドに関連付けられたイベントが強調表示されます。|  
-|**表示**|リフレッシュ レートを表示するディスプレイの番号。**注:** 一部のドライバーでは、複数の物理ディスプレイが 1 つの大きな仮想ディスプレイを表すように構成することができます。 コンピューターに複数のディスプレイが接続されている場合でも、一覧に表示されるディスプレイが 1 つだけのことがあります。|  
+|**表示**|リフレッシュ レートを表示するディスプレイの番号。**注意:** 一部のドライバーでは、複数の物理ディスプレイが 1 つの大きな仮想ディスプレイを表すように構成することができます。 コンピューターに複数のディスプレイが接続されている場合でも、一覧に表示されるディスプレイが 1 つだけのことがあります。|  
 |**フィルター**|調査対象のキーワード。 レポートの下部に、このキーワードが全体または一部と一致するイベントだけが表示されます。 複数のキーワードを指定するには、セミコロン (;) で区切ります。|  
 |**階層的に並べ替え**|イベントの階層 (ユーザー マーカーを使用して定義される) を保持するか無視するかを指定するチェック ボックスです。|  
   
@@ -122,7 +117,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>プロファイリングをアプリケーションの開始時から延期するには:  
   
-1.  メイン メニューで、**[デバッグ]**、**[パフォーマンスと診断]** を選びます (キーボード: Alt + F2 キーを押します)。  
+1.  メイン メニューで、**[デバッグ]**、**[パフォーマンスと診断]** を選びます (キーボード:Alt + F2 キーを押します)。  
   
 2.  [パフォーマンスと診断] ハブで、**[GPU 使用率]** の横にある **[設定]** リンクに従います。  
   
@@ -155,6 +150,3 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
 -   [Visual Studio 2013 Update 4 CTP1 での GPU 使用率ツール (ブログ)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
 -   [Visual Studio での DirectX の GPU 使用率 (ブログ)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
-
-
-

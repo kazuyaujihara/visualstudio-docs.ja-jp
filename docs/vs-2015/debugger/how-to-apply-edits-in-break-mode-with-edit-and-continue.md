@@ -31,7 +31,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5f6024d0c00e492110d7d34172cf225e4712f213
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51807503"
@@ -77,7 +77,7 @@ ms.locfileid: "51807503"
   
 2.  必要かつ有効なコード変更を行います。  
   
-     詳細については、次を参照してください。 [Visual Basic エディット コンティニュでサポートされていない編集](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)します。  
+     詳細については、[Visual Basic エディット コンティニュでサポートされていない編集](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)を参照してください。  
   
     > [!NOTE]
     >  エディット コンティニュで許可されないコード変更を行おうとすると、編集部分の下に紫の波線が表示され、タスク一覧にタスクが表示されます。 この場合、無効なコード変更を元に戻さない限り、コードの実行を続行できません。  

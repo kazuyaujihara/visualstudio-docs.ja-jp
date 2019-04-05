@@ -1,14 +1,9 @@
 ---
 title: レガシ言語の Service2 の登録 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c9077ca36a560c51ec8f8455cc04fb2fe9ba09eb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 07d70bb1d77dc3022b06c4036317e31692307f98
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803657"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975175"
 ---
 # <a name="registering-a-legacy-language-service"></a>従来の言語サービスを登録します。
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,9 +31,9 @@ ms.locfileid: "51803657"
   
 |名前|型|範囲|説明|  
 |----------|----------|-----------|-----------------|  
-|(既定)|REG_SZ|*\<GUID &GT;*|言語サービスの GUID です。|  
+|(既定)|REG_SZ|*\<GUID>*|言語サービスの GUID です。|  
 |LangResID|REG_DWORD|0x0-0 xffff|言語のローカライズされたテキストの名前のリソース識別子 (ResID) の文字列を指定します。|  
-|Package|REG_SZ|*\<GUID &GT;*|VSPackage の GUID です。|  
+|Package|REG_SZ|*\<GUID>*|VSPackage の GUID です。|  
 |ShowCompletion|REG_DWORD|0-1|指定するかどうか、**ステートメント入力候補**オプション、**オプション** ダイアログ ボックスが有効にします。|  
 |ShowSmartIndent|REG_DWORD|0-1|指定するかどうかを選択するオプション**スマート**でインデント、**オプション** ダイアログ ボックスが有効にします。|  
 |RequestStockColors|REG_DWORD|0-1|指定しますカスタムかどうか、またはキーワードに色を既定の色を使用します。|  
@@ -147,8 +142,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|エディターがアクティブな場合は既定値に、[ツールボックス] タブの名前です。|  
 |DisplayName|REG_SZ|resID|表示される名前、**プログラムから開く** ダイアログ ボックス。 名前は、標準形式で文字列リソース ID または名前。|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|使用、**プログラムから開く**メニュー コマンド。 特定のファイルの種類に対して使用可能なエディターの一覧で、既定のテキスト エディターを一覧表示したくない場合は、この値を 1 に設定します。|  
-|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|コード ページのサポート ファイルを開くことができる任意の言語サービスに使用されます。 たとえば、ファイルを開くと、.txt を使用して、**ファイルを開く**コマンド、オプションが、エンコードなしでは、ソース コード エディターを使用するために用意されています。 します。<br /><br /> サブキーの名前を指定の GUID がコード ページ エディター ファクトリです。この特定のレジストリ エントリで指定されたリンクの GUID は、正規表現エディター ファクトリです。 このエントリの目的は、IDE で、既定のエディターを使用して、ファイルが表示されない場合、IDE は、一覧で、[次へ] エディターを使用してください。 このエディターのファクトリは基本的に失敗したエディター ファクトリと同じであるために、この次のエディターはコード ページ エディターのファクトリをしないでください。|  
-|Package|REG_SZ|*\<GUID &GT;*|表示名の ResID の VSPackage の GUID です。|  
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|コード ページのサポート ファイルを開くことができる任意の言語サービスに使用されます。 たとえば、ファイルを開くと、.txt を使用して、**ファイルを開く**コマンド、オプションが、エンコードなしでは、ソース コード エディターを使用するために用意されています。 します。<br /><br /> サブキーの名前を指定の GUID がコード ページ エディター ファクトリです。この特定のレジストリ エントリで指定されたリンクの GUID は、正規表現エディター ファクトリです。 このエントリの目的は、IDE で、既定のエディターを使用して、ファイルが表示されない場合、IDE は、一覧で、[次へ] エディターを使用してください。 このエディターのファクトリは基本的に失敗したエディター ファクトリと同じであるために、この次のエディターはコード ページ エディターのファクトリをしないでください。|  
+|Package|REG_SZ|*\<GUID>*|表示名の ResID の VSPackage の GUID です。|  
   
 ### <a name="example"></a>例  
   
@@ -169,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |名前|型|範囲|説明|  
 |----------|----------|-----------|-----------------|  
 |(既定)|REG_SZ||使用されません。|  
-|*\<GUID &GT;*|REG_SZ|""|サポートされる論理ビューへのキー。 必要に応じて、これらの多くができます。 レジストリ エントリの名前は、重要な値ではなく、空の文字列では常にします。|  
+|*\<GUID>*|REG_SZ|""|サポートされる論理ビューへのキー。 必要に応じて、これらの多くができます。 レジストリ エントリの名前は、重要な値ではなく、空の文字列では常にします。|  
   
 ### <a name="example"></a>例  
   
@@ -191,7 +186,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |名前|型|範囲|説明|  
 |----------|----------|-----------|-----------------|  
 |(既定)|REG_SZ||使用されません。|  
-|*\<ext >*|REG_DWORD|0-0 xffffffff|拡張機能の相対的な優先順位。 2 つまたは複数の言語では、同じ拡張機能を共有する場合は、優先順位の高い言語が選択されます。|  
+|*\<ext>*|REG_DWORD|0-0 xffffffff|拡張機能の相対的な優先順位。 2 つまたは複数の言語では、同じ拡張機能を共有する場合は、優先順位の高い言語が選択されます。|  
   
  さらに、エディターの現在のユーザーの既定の選択は hkey_current_user \software\microsoft\visualstudio\\*X.Y*\Default エディター\\*ext*します。選択した言語サービスの GUID は、カスタム エントリでです。 これは、現在のユーザーの優先します。  
   
@@ -246,4 +241,3 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 ## <a name="see-also"></a>関連項目  
  [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)
-

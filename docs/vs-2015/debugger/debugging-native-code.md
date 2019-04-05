@@ -1,14 +1,9 @@
 ---
 title: ネイティブ コードのデバッグ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a8c81efece10fe55dc1cf228a3d0c23e7f5a64af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730552"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974067"
 ---
 # <a name="debugging-native-code"></a>ネイティブ コードのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51730552"
 ここでは、ネイティブ アプリケーションのデバッグ時に発生する一般的な問題や共通のデバッグ技術について説明します。 ここでは高レベルの手法について説明します。 Visual Studio デバッガーの使用のしくみを参照してください。[デバッガーのロードマップ](../debugger/debugger-basics.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [方法 : 最適化されたコードをデバッグする](../debugger/how-to-debug-optimized-code.md)  
+ [方法: 最適化されたコードをデバッグする](../debugger/how-to-debug-optimized-code.md)  
  最適化されたコードのデバッグに関するヒント、特に、最適化する前のプログラムをデバッグするのが望ましい理由、デバッグ構成とリリース構成の既定の最適化設定、および最適化されたコードにだけ現れるバグを検出するためのヒント (デバッグ ビルド構成で最適化をオンにする) を示します。  
   
  [DebugBreak と __debugbreak](../debugger/debugbreak-and-debugbreak.md)  
@@ -49,7 +44,7 @@ ms.locfileid: "51730552"
  [C/C++ アサーション](../debugger/c-cpp-assertions.md)  
  アサート ステートメントとそのしくみや利点 (論理エラーのキャッチ、演算結果のチェック、およびエラー条件のテスト)、`_DEBUG` との相互作用、および [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でサポートされるアサーションの種類について説明します。  
   
- [方法 :インライン アセンブラー コードをデバッグする](../debugger/how-to-debug-inline-assembly-code.md)  
+ [方法: インライン アセンブラー コードをデバッグする](../debugger/how-to-debug-inline-assembly-code.md)  
  [逆アセンブリ] ウィンドウを使ってアセンブリ命令を表示する方法および [レジスタ] ウィンドウを使ってレジスタの内容を表示する方法について簡単に説明し、これらのウィンドウに関するトピックへのリンクを提供します。  
   
  [MFC のデバッグ技術](../debugger/mfc-debugging-techniques.md)  
@@ -64,14 +59,14 @@ ms.locfileid: "51730552"
  [COM および ActiveX のデバッグ](../debugger/com-and-activex-debugging.md)  
  COM や ActiveX のデバッグに使用できるツールなど、COM アプリケーションや ActiveX アプリケーションのデバッグに関連した情報を提供します。  
   
- [方法: ネイティブ DLL サーバーをデバッグする](../debugger/how-to-debug-native-dlls.md)  
+ [方法: ネイティブ DLL をデバッグする](../debugger/how-to-debug-native-dlls.md)  
  ネイティブ コードから DLL をデバッグする方法について説明します。  
   
- [方法 : 挿入されたコードをデバッグする](../debugger/how-to-debug-injected-code.md)  
+ [方法: 挿入されたコードをデバッグする](../debugger/how-to-debug-injected-code.md)  
  属性を使用するコードのデバッグについてのガイダンスを提供します。 ソースの注釈を表示する方法、挿入されたコードを表示する方法、現在の実行ポイントにある逆アセンブリ コードを表示する方法などを説明します。  
   
- [チュートリアル: 並行アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 使用する方法について説明します、**並列タスク**と**並列スタック**ツール ウィンドウを並行アプリケーションをデバッグします。  
+ [チュートリアル: 並列アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ **[並列タスク]** ツール ウィンドウと **[並列スタック]** ツール ウィンドウを使用して並行アプリケーションをデバッグする方法について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
  [Visual C++ プロジェクトの種類](../debugger/debugging-preparation-visual-cpp-project-types.md)  
@@ -83,6 +78,3 @@ ms.locfileid: "51730552"
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)
-
-
-

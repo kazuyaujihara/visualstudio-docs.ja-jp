@@ -1,29 +1,26 @@
 ---
-title: '方法: エンティティ クラスへの検証の追加 |Microsoft Docs'
-ms.custom: ''
+title: '方法: 検証エンティティ クラスを追加する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 91600821b3d68c04382028e469a4e1a54a5d191c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812755"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973868"
 ---
-# <a name="how-to-add-validation-to-entity-classes"></a>方法: エンティティ クラスに検証を追加
+# <a name="how-to-add-validation-to-entity-classes"></a>方法: エンティティ クラスに検証を追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-*検証*エンティティ クラスは、データ オブジェクトに入力された値がオブジェクトのスキーマ、およびアプリケーションの設定された規則の制約に準拠することを確認するプロセス。 基になるデータベースに更新を送信する前にデータを検証すると、エラーを減らすことができます。 アプリケーションとデータベースの間で生じる可能性のあるラウンド トリップの回数も減ります。  
+エンティティ クラスの "*検証*" とは、データ オブジェクトに入力された値が、アプリケーションに対して設定された規則に従っていること、およびオブジェクトのスキーマ内の制約に従っていることを確認するプロセスです。 基になるデータベースに更新を送信する前にデータを検証すると、エラーを減らすことができます。 アプリケーションとデータベースの間で生じる可能性のあるラウンド トリップの回数も減ります。  
   
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)挿入、更新、中に実行し、完全なエンティティとも中と後の個々 の列を削除します。 デザイナーで生成されたコードを拡張するユーザーを有効にする部分メソッドを提供します。変更します。  
   
@@ -37,7 +34,7 @@ ms.locfileid: "49812755"
   
 #### <a name="to-validate-data-during-a-columns-value-change"></a>列の値の変更時にデータを検証するには  
   
-1. 開くか、新しい LINQ to SQL クラス ファイルの作成 (**.dbml**ファイル) で、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。 (ダブルクリックして、 **.dbml**ファイル**ソリューション エクスプ ローラー**)。  
+1. 開くか、新しい LINQ to SQL クラス ファイルの作成 (**.dbml**ファイル) で、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)  
   
 2. O/R デザイナーをクリックして検証を追加するクラスを右クリックして**コードの表示**します。  
   
@@ -47,7 +44,7 @@ ms.locfileid: "49812755"
   
 4. Visual Basic プロジェクトの場合は、次の操作を行います。  
   
-   1. 展開、**メソッド名**一覧。  
+   1. **[メソッド名]** の一覧を展開します。  
   
    2. 検索、**で**_COLUMNNAME_**Changing**検証を追加する列のメソッド。  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49812755"
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>エンティティ クラスの更新時にデータを検証するには  
   
-1. 開くか、新しい LINQ to SQL クラス ファイルの作成 (**.dbml**ファイル) で、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。 (ダブルクリックして、 **.dbml**ファイル**ソリューション エクスプ ローラー**)。  
+1. 開くか、新しい LINQ to SQL クラス ファイルの作成 (**.dbml**ファイル) で、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)  
   
 2. O/R デザイナーの空の領域を右クリックし、をクリックして**コードの表示**します。  
   
@@ -96,7 +93,7 @@ ms.locfileid: "49812755"
   
 4. Visual Basic プロジェクトの場合は、次の操作を行います。  
   
-   1. 展開、**メソッド名**一覧。  
+   1. **[メソッド名]** の一覧を展開します。  
   
    2. クリックして**Update**_ENTITYCLASSNAME_します。  
   
@@ -132,4 +129,3 @@ ms.locfileid: "49812755"
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [データの検証](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)
-

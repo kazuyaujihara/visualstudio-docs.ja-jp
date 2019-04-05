@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 3e4dd15f4cbb36ef1f81d3b7ca345a6a06bdaff4
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51736194"
@@ -33,11 +33,11 @@ ms.locfileid: "51736194"
   
 1. 赤い波線を配置するテキストを選択します。  
   
-2. 型のマーカーを作成`MARKER_CODESENSE_ERROR`です。 詳細については、次を参照してください。[方法: 標準のテキスト マーカーの追加](../extensibility/how-to-add-standard-text-markers.md)します。  
+2. 型のマーカーを作成`MARKER_CODESENSE_ERROR`です。 詳細については、[方法: 標準のテキスト マーカーの追加](../extensibility/how-to-add-standard-text-markers.md)を参照してください。  
   
 3. その後、渡す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>インターフェイス ポインター。  
   
-   このプロセスでは、特定のマーカーにツールヒントのテキストまたは特別なコンテキスト メニューを作成することもできます。 詳細については、次を参照してください。[方法: 標準のテキスト マーカーの追加](../extensibility/how-to-add-standard-text-markers.md)します。  
+   このプロセスでは、特定のマーカーにツールヒントのテキストまたは特別なコンテキスト メニューを作成することもできます。 詳細については、[方法: 標準のテキスト マーカーの追加](../extensibility/how-to-add-standard-text-markers.md)を参照してください。  
   
    エラーのマーカーを表示する前に、次のオブジェクトが必要です。  
   

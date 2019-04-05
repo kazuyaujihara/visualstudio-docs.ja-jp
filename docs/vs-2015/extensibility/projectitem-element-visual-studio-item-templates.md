@@ -1,14 +1,9 @@
 ---
 title: ProjectItem 要素 (Visual Studio 項目テンプレート) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44fe6613288cac93034dd32a3203f1bb73004f83
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29b65f5cff9e2ffbed3c66c29c61f0a7e9e50f20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747950"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977715"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 要素 (Visual Studio 項目テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51747950"
   
  \<VSTemplate>  
  \<TemplateContent >  
- \<ProjectItem >  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>構文  
   
@@ -86,7 +81,7 @@ ms.locfileid: "51747950"
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- ファイル名はで、ユーザーが入力した名前に基づいて、このテンプレートから項目が作成されると、**新しい項目の追加** ダイアログ ボックス。 これは、機能は、複数ファイルの項目テンプレートを作成するときに便利です。 詳細については、次を参照してください。[方法: 複数ファイル項目テンプレートを作成](../ide/how-to-create-multi-file-item-templates.md)と[テンプレート パラメーター](../ide/template-parameters.md)します。  
+ ファイル名はで、ユーザーが入力した名前に基づいて、このテンプレートから項目が作成されると、**新しい項目の追加** ダイアログ ボックス。 これは、機能は、複数ファイルの項目テンプレートを作成するときに便利です。 詳細については、「[方法 :複数ファイルの項目テンプレートを作成する](../ide/how-to-create-multi-file-item-templates.md)と[テンプレート パラメーター](../ide/template-parameters.md)します。  
   
 ## <a name="example"></a>例  
  次の例では、用の標準的な項目テンプレートのメタデータを[!INCLUDE[csprcs](../includes/csprcs-md.md)]クラス。  
@@ -110,6 +105,5 @@ ms.locfileid: "51747950"
 ## <a name="see-also"></a>関連項目  
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
- [方法 : 複数ファイルの項目テンプレートを作成する](../ide/how-to-create-multi-file-item-templates.md)   
+ [方法: 複数ファイルの項目テンプレートを作成します。](../ide/how-to-create-multi-file-item-templates.md)   
  [テンプレート パラメーター](../ide/template-parameters.md)
-

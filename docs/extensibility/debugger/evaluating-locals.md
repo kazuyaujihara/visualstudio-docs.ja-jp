@@ -20,7 +20,7 @@ ms.locfileid: "56710904"
 ---
 # <a name="evaluate-locals"></a>ローカル変数を評価します。
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
 
 [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)を呼び出して、ローカルだけでなく、ローカルの名前と型の値を取得します。 ローカルの値は、プログラムの現在の状態に依存するので、メモリから、ローカルの値を取得する必要があります。 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)オブジェクトを使用してバインドする、 [IDebugField](../../extensibility/debugger/reference/idebugfield.md)値を含むメモリ内の適切な場所へのローカルを表すオブジェクト。 メモリ内のこの場所は、によって表される、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。
 

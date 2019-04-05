@@ -42,7 +42,7 @@ ms.locfileid: "56598857"
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
 ## <a name="use-windows-forms-controls"></a>Windows フォーム コントロールを使用します。
- Windows フォーム コントロールをドキュメントに、あるいは操作ウィンドウ、カスタム作業ウィンドウ、Windows フォームなどのカスタマイズ可能なユーザー インターフェイス (UI) 要素に追加できます。 Windows フォーム コントロールの動作は、ドキュメント上でも上述のその他の UI 要素上でも通常は同じですが、いくつかの相違点が存在します。 詳しくは、次を参照してください。[の制限事項の Windows フォーム コントロールの Office ドキュメント](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)します。
+ Windows フォーム コントロールをドキュメントに、あるいは操作ウィンドウ、カスタム作業ウィンドウ、Windows フォームなどのカスタマイズ可能なユーザー インターフェイス (UI) 要素に追加できます。 Windows フォーム コントロールの動作は、ドキュメント上でも上述のその他の UI 要素上でも通常は同じですが、いくつかの相違点が存在します。 詳しくは、[の制限事項の Windows フォーム コントロールの Office ドキュメント](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)を参照してください。
 
  Windows フォーム コントロールをドキュメントに追加するか、その他の UI 要素に追加するかは、いくつかの要因を考慮して決定します。 ソリューションの UI を設計する場合は、次の表の説明に従って Windows フォーム コントロールの使用をご検討ください。
 
@@ -72,7 +72,7 @@ ms.locfileid: "56598857"
 ## <a name="add-windows-forms-controls-programmatically"></a>Windows フォーム コントロールをプログラムで追加します。
  Word 文書や実行時に Excel ワークシートには、Windows フォーム コントロールを追加できます。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は最も一般的な Windows フォーム コントロールを追加するためのヘルパー メソッドを提供します。 これらのヘルパー メソッドを使用すると、コントロールを Office ドキュメントにすばやく追加して、Windows フォーム コントロールの機能とこれらのコントロールの Office 関連機能とを組み合わせたものにアクセスできます。
 
- 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+ 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
 
 ## <a name="use-windows-forms-controls-in-document-level-projects"></a>ドキュメント レベルのプロジェクトでの Windows フォーム コントロールを使用します。
  ドキュメントでの Windows フォーム コントロールの使用方法のいくつかは、ドキュメント レベルのプロジェクトに固有です。これらにより、Visual Studio デザイナーを使用してドキュメントの UI をデザインできます。
@@ -113,7 +113,7 @@ ms.locfileid: "56598857"
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>古いデータが読み込み中に Excel ブックに表示するを防ぐ
  デザイン時にドキュメントやワークシートに Windows フォーム コントロールを追加すると、ユーザーがドキュメントを閉じても、コントロールはドキュメント内に残ります。 デザイン時に追加されたコントロールは、 *スタティック コントロール*とも呼ばれます。
 
- スタティック コントロールが格納されている Excel ブックを開くと、カスタマイズ コードが実行されて実際のコントロールが読み込まれるまで、ブックでは ActiveX コントロールにコントロールのビットマップが表示されます。 Excel はこのビットマップを作成し、ブックが保存されるたびに、このブックにそのビットマップを格納します。 ビットマップには、ブックを最後に保存したときの状態でコントロールが表示され、コントロールに表示されていたすべてのデータも一緒に含められます。 Windows フォーム コントロールとビットマップを含んだ ActiveX コントロールの詳細については、次を参照してください。[の制限事項の Windows フォーム コントロールの Office ドキュメント](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)します。
+ スタティック コントロールが格納されている Excel ブックを開くと、カスタマイズ コードが実行されて実際のコントロールが読み込まれるまで、ブックでは ActiveX コントロールにコントロールのビットマップが表示されます。 Excel はこのビットマップを作成し、ブックが保存されるたびに、このブックにそのビットマップを格納します。 ビットマップには、ブックを最後に保存したときの状態でコントロールが表示され、コントロールに表示されていたすべてのデータも一緒に含められます。 Windows フォーム コントロールとビットマップを含んだ ActiveX コントロールの詳細については、[の制限事項の Windows フォーム コントロールの Office ドキュメント](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)を参照してください。
 
  ユーザーがデザイン モードでブックを開くとなど特定の条件では、コードは読み込まれず、ビットマップのみが表示されます。 また、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] がインストールされていないコンピューターでユーザーがブックを開く場合、コントロールを読み込むためのカスタマイズは実行できず、コントロールのビットマップのみが表示されます。 個人情報が誤って公開されないようにするため、ブックを保存して別のユーザーに送信する前に、必ず個人情報をブックのコントロールから削除する必要があります。
 
@@ -135,7 +135,7 @@ ms.locfileid: "56598857"
 
 - 固定されていない図形としてコントロールを追加するには、コントロールの左と上の座標を受け入れるオーバーロードを使用します。
 
-  詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+  詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
 
   Visual Studio デザイナーで Word テンプレートを開く場合、Visual Studio でテンプレートが **標準** 表示で開かれるために、テンプレートのインラインでないコントロールを表示できない可能性があります。 コントロールを表示するには、表示を **印刷レイアウト**に変更します。
 

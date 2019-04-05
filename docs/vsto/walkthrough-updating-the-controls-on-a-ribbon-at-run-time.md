@@ -289,11 +289,11 @@ ms.locfileid: "54875915"
 
 Office UI をカスタマイズする方法の詳細については、次のトピックで説明します。
 
--   ドキュメント レベルのカスタマイズにコンテキスト ベースの UI を追加する。 詳細については、次を参照してください。[操作ウィンドウの概要](../vsto/actions-pane-overview.md)します。
+-   ドキュメント レベルのカスタマイズにコンテキスト ベースの UI を追加する。 詳細については、[操作ウィンドウの概要](../vsto/actions-pane-overview.md)を参照してください。
 
 -   標準またはカスタムの Microsoft Office Outlook フォームを拡張する。 詳細については、「[チュートリアル:Outlook フォーム領域をデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)します。
 
--   Outlook にカスタム作業ウィンドウを追加する。 詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
+-   Outlook にカスタム作業ウィンドウを追加する。 詳細については、[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

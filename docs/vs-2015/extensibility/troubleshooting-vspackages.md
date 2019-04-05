@@ -1,27 +1,22 @@
 ---
 title: Vspackage のトラブルシューティング |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16988915c9e8353cfc26f32e7d83c556c7f4957d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764007"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002615"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "51764007"
   
 3.  VSPackage のレジストリ エントリを確認します。  
   
-     詳細については、次を参照してください。 [Vspackage の登録](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)と[管理 Vspackage](../extensibility/managing-vspackages.md)します。  
+     詳細については、次を参照してください。 [Vspackage の登録](internals/registering-vspackages.md)と[管理 Vspackage](../extensibility/managing-vspackages.md)します。  
   
 4.  開く、**出力**ウィンドウのインスタンスの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]が VSPackage の読み込みに失敗します。 VSPackage の読み込みが失敗した理由に関する情報は、そのウィンドウに表示可能性があります。  
   
@@ -57,7 +52,7 @@ ms.locfileid: "51764007"
   
 5.  アクティビティ ログを調べます。  
   
-     詳細については、次を参照してください。[方法: アクティビティ ログを使用して、](../extensibility/how-to-use-the-activity-log.md)します。  
+     詳細については、「[方法 :アクティビティ ログを使用して、](../extensibility/how-to-use-the-activity-log.md)します。  
   
 6.  IDE によってスローされた例外の詳細についてをクリックして**例外**で、**デバッグ**メニュー、例外を有効にします。 **例外** ダイアログ ボックスに関する詳細情報を表示する例外の種類を選択します。  
   
@@ -96,7 +91,7 @@ ms.locfileid: "51764007"
   
 2.  アクティビティ ログを使用します。  
   
-     重要な点でアクティビティ ログに情報を記述することで、VSPackage の動作をトレースします。 この手法は、小売環境で VSPackage を実行するときに特に便利です。 詳細については、次を参照してください。[方法: アクティビティ ログを使用して、](../extensibility/how-to-use-the-activity-log.md)します。  
+     重要な点でアクティビティ ログに情報を記述することで、VSPackage の動作をトレースします。 この手法は、小売環境で VSPackage を実行するときに特に便利です。 詳細については、「[方法 :アクティビティ ログを使用して、](../extensibility/how-to-use-the-activity-log.md)します。  
   
 3.  パブリック シンボルを使用します。  
   
@@ -132,4 +127,3 @@ ms.locfileid: "51764007"
   
 ## <a name="see-also"></a>関連項目  
  [VSPackage](../extensibility/internals/vspackages.md)
-

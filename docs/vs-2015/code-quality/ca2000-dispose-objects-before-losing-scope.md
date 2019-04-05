@@ -1,14 +1,9 @@
 ---
-title: 'Ca 2000: スコープが失われる前にオブジェクトを破棄 |Microsoft Docs'
-ms.custom: ''
+title: CA2000:スコープが失われる前にオブジェクトを破棄します |。Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2000
 - Dispose objects before losing scope
@@ -21,14 +16,14 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3456ec773b233da3ef2be1dfa7731460bdf6b44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857862"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964053"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: スコープが失われる前にオブジェクトを破棄します
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:スコープを失う前にオブジェクトを破棄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -72,7 +67,7 @@ ms.locfileid: "49857862"
 ## <a name="related-rules"></a>関連規則  
  [CA2213: 破棄可能なフィールドは破棄されなければなりません](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2202: オブジェクトを複数回破棄しません](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
+ [CA 2202:オブジェクトを複数回破棄しません](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
   
 ## <a name="example"></a>例  
  破棄可能なオブジェクトを返すメソッドを実装している場合は、catch ブロックのない try/finally ブロックを使用して、そのオブジェクトが確実に破棄されるようにします。 try/finally ブロックを使用することによって、障害点での例外の発生が可能になり、そのオブジェクトが確実に破棄されます。  

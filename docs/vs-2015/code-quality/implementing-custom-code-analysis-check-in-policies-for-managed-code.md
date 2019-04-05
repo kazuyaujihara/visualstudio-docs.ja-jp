@@ -1,14 +1,9 @@
 ---
 title: マネージ コードをカスタム コード分析チェックイン ポリシーの実装 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
 - vs.code.analysis.browsefortfsruleset
@@ -18,17 +13,17 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+ms.openlocfilehash: 20bfe541204d302699c37129f95476fb43541797
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268971"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962399"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>マネージド コード用のカスタム コード分析チェックイン ポリシーの実装
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-コード分析チェックイン ポリシーを一連のルールをバージョン管理にチェックインする前に、チーム プロジェクトのメンバーがソース コードに対して実行する必要がありますを指定します。 標準のセットを提供する Microsoft*ルール セット*そのグループのコード分析ルール機能領域に挿入します。 *カスタム チェックイン ポリシーの規則セット*チーム プロジェクトに固有のコード分析規則のセットを指定します。 規則セットは、.ruleset ファイルに格納されます。  
+コード分析チェックイン ポリシーを一連のルールをバージョン管理にチェックインする前に、チーム プロジェクトのメンバーがソース コードに対して実行する必要がありますを指定します。 標準のセットを提供する Microsoft*ルール セット*をそのグループのコード分析ルール機能領域に挿入します。 *カスタム チェックイン ポリシーの規則セット*チーム プロジェクトに固有のコード分析規則のセットを指定します。 規則セットは、.ruleset ファイルに格納されます。  
   
  チェックイン ポリシーは、チーム プロジェクト レベルで設定し、バージョン コントロール ツリーの .ruleset ファイルの場所で指定されました。 チームのポリシーのカスタム規則セットのバージョン管理の場所に制限はありません。  
   
@@ -40,7 +35,7 @@ ms.locfileid: "49268971"
  チーム プロジェクトの設定、カスタム ルールを作成する最初にフォルダーを作成する特殊なチェックイン ポリシーの規則セットの**ソース管理エクスプ ローラー**します。 規則セット ファイルを作成し、バージョン管理にファイルを追加します。 最後に、コード分析チェックイン ポリシー、チーム プロジェクトとして設定するルールを指定します。  
   
 > [!NOTE]
->  チーム プロジェクトのフォルダーを作成、最初にマップする必要、チーム プロジェクトのルート、ローカル コンピューター上の場所。 詳細については、[(古い) のワークスペースの作成と操作](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2)を参照してください。  
+>  チーム プロジェクトのフォルダーを作成、最初にマップする必要、チーム プロジェクトのルート、ローカル コンピューター上の場所。 詳細については、次を参照してください。 [(古い) のワークスペースの作成と操作](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2)します。  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>チェックイン ポリシーのルール セットのバージョン管理フォルダーを作成するには  
   
@@ -66,7 +61,7 @@ ms.locfileid: "49268971"
   
 1.  **ソース管理エクスプ ローラー**、新しいフォルダーを右クリックし、クリックして**フォルダーに項目の追加**します。  
   
-     詳細については、[バージョン管理を使用して、](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)を参照してください。  
+     詳細については、次を参照してください。[バージョン管理を使用して、](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)します。  
   
 2.  規則セットを作成したファイルをクリックおよびクリック**完了**します。  
   
@@ -124,6 +119,3 @@ ms.locfileid: "49268971"
 7.  **この規則セットを実行**一覧で、  **\<参照... >** します。  
   
 8.  チェックイン ポリシーの規則セット ファイルのローカル バージョンを指定します。
-
-
-

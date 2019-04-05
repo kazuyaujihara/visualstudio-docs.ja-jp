@@ -1,25 +1,20 @@
 ---
 title: ASP.NET のリモートの IIS 7.5 でリモート デバッグ コンピューター |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764074"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972938"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>ASP.NET のリモート IIS コンピューター上でリモート デバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ ASP.NET アプリケーションのリモート デバッグを行うには、�
 
     ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg-iis-aspnet-45.png "RemoteDBG_IIS_AspNet_45")
 
-    Windows Server 2008 R2 では、代わりにこのコマンドを使用して ASP.NET 4 をインストール: **C:\Windows\Microsoft.NET\Framework (64) の \v4.0.30319\aspnet_regiis.exe ir**
+    Windows Server 2008 R2 では、代わりにこのコマンドを使用して ASP.NET 4 をインストールします。 **C:\Windows\Microsoft.NET\Framework(64)\v4.0.30319\aspnet_regiis.exe -ir**
 1. ASP.NET プロジェクト ディレクトリを Visual Studio コンピューターから Windows Server コンピューター上のローカル ディレクトリ (ここでは、 **C:\Publish**と呼びます) にコピーします。 プロジェクトを手動でコピー、Xcopy、Web Deploy、Robocopy、Powershell、またはその他のオプションを使用できます。
 
     > [!CAUTION]
@@ -93,7 +88,7 @@ ASP.NET アプリケーションのリモート デバッグを行うには、�
 1. Visual Studio コンピューターで、 **MyMVC** ソリューションを開きます。
 1. Visual Studio で、次のようにクリックします。**デバッグ]/[プロセスにアタッチ**(**Ctrl + Alt + P**)。
 1. 修飾子のフィールドに設定**\<リモート コンピューター名 >: 4020**します。
-1. クリックして**更新**します。
+1. **[最新の情報に更新]** をクリックします。
     **[選択可能なプロセス]** ウィンドウにプロセスがいくつか表示されます。
 
     すべてのプロセスが表示されない場合は、(ポートが必要です)、リモート コンピューター名ではなく IP アドレスを使用してください。 使用`ipconfig`IPv4 アドレスを取得するコマンド ラインでします。
@@ -107,12 +102,9 @@ ASP.NET アプリケーションのリモート デバッグを行うには、�
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. リモート コンピューターの Web サイトを開きます。 ブラウザーに移動します。 **http://\<リモート コンピューター名 >** します。
+1. リモート コンピューターの Web サイトを開きます。 ブラウザーで、**http://\<リモート コンピューター名>** に移動します。
     
     ASP.NET の Web ページが表示されるはずです。
 1. ASP.NET web ページで、リンクをクリックして、**について**ページ。
 
     Visual Studio で、ブレークポイントにヒットするはずです。
-
-
-

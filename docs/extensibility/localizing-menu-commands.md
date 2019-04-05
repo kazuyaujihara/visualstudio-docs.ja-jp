@@ -25,7 +25,7 @@ ms.locfileid: "56679269"
 # <a name="localize-menu-commands"></a>メニュー コマンドをローカライズします。
 ローカライズされたを作成してメニューやツールバーのローカライズされたテキストを行うことができます *.vsct*ファイルし、ローカライズ *.resx*に組み込むこと、VSPackage とし、プロジェクト ファイルの更新ファイル、変更します。
 
- インストール エクスペリエンスをローカライズする方法については、次を参照してください。[ローカライズ VSIX パッケージ](../extensibility/localizing-vsix-packages.md)します。
+ インストール エクスペリエンスをローカライズする方法については、[ローカライズ VSIX パッケージ](../extensibility/localizing-vsix-packages.md)を参照してください。
 
 ## <a name="localize-command-names"></a>コマンド名をローカライズします。
  Vspackage では、メニュー コマンドやツールバーのボタンがで定義されて、 *.vsct*ファイル。
@@ -34,7 +34,7 @@ ms.locfileid: "56679269"
 
 2. コピーを作成*filename.en US.vsct*各ローカライズ言語。
 
-    各コピーを名前*ファイル名 {。ロケール} .vsct*ここで、 *{ロケール}* は特定のカルチャの名前です。 カルチャ名の値の一覧は、次を参照してください。 [Microsoft によって割り当てられたロケール Id](/windows/uwp/publish/supported-languages)します。
+    各コピーを名前*ファイル名 {。ロケール} .vsct*ここで、 *{ロケール}* は特定のカルチャの名前です。 カルチャ名の値の一覧は、[Microsoft によって割り当てられたロケール Id](/windows/uwp/publish/supported-languages)を参照してください。
 
     これら*ファイル名。Locale.vsct*ファイル、パッケージのローカライズされたメニュー テキストが含まれます。
 

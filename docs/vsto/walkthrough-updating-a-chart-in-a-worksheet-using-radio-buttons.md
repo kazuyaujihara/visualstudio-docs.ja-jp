@@ -249,7 +249,7 @@ ms.locfileid: "56602066"
 ## <a name="next-steps"></a>次の手順
  このチュートリアルでは、オプション ボタンやグラフのスタイルを使用してワークシート上の基本を説明します。 ここでは、次のタスクを行います。
 
--   プロジェクトを配置します。 詳細については、次を参照してください。 [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
+-   プロジェクトを配置します。 詳細については、[Office ソリューションを配置](../vsto/deploying-an-office-solution.md)を参照してください。
 
 -   ボタンを使用してテキスト ボックスへデータを挿入する。 詳細については、「[チュートリアル:ボタンを使用してワークシート内のテキスト ボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)します。
 

@@ -1,14 +1,9 @@
 ---
 title: WPF ツールボックス コントロールの作成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ad3edfa84ee64425a7a9fbc6b0dfc5098396907
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84ab9dd82f6867135c136f903c6c0050132b1b05
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786029"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002610"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>WPF ツールボックス コントロールの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,5 +99,4 @@ WPF (Windows Presentation Framework) ツールボックス コントロール �
   
 3.  .vsix ファイルをネットワークまたは Web サイトにアップロードします。  
   
-     ファイルをアップロードする場合、 [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkID=123847) Web サイト、他のユーザーが使用できる**ツール/拡張機能と更新**で Visual Studio online のコントロールを検索してインストールします。
-
+     ファイルをアップロードする場合、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイト、他のユーザーが使用できる**ツール/拡張機能と更新**で Visual Studio online のコントロールを検索してインストールします。

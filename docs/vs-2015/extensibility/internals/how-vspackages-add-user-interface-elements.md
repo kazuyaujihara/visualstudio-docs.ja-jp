@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 88b1a71964ddae67241025dd32c1a1384c79765f
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51753368"
@@ -289,7 +289,7 @@ priority="0x0100" type="Menu">
 -   ユーザーは、コマンドをクリックするに記載されている手順に従ってなります[ルーティング アルゴリズム](../../extensibility/internals/command-routing-algorithm.md)します。  
   
 ## <a name="calling-pre-defined-commands"></a>定義済みのコマンドを呼び出す  
- [UsedCommands 要素](../../extensibility/usedcommands-element.md)または IDE で他の Vspackage によって提供されるコマンドにアクセスする Vspackage を使用します。 これを行うには、作成、 [UsedCommand 要素](../../extensibility/usedcommand-element.md)GUID とコマンドの使用の ID を持ちます。 こう現在の Visual Studio の構成の一部ではない場合でも、Visual Studio によって、コマンドが読み込まれます。 詳細については、次を参照してください。 [UsedCommand 要素](../../extensibility/usedcommand-element.md)します。  
+ [UsedCommands 要素](../../extensibility/usedcommands-element.md)または IDE で他の Vspackage によって提供されるコマンドにアクセスする Vspackage を使用します。 これを行うには、作成、 [UsedCommand 要素](../../extensibility/usedcommand-element.md)GUID とコマンドの使用の ID を持ちます。 こう現在の Visual Studio の構成の一部ではない場合でも、Visual Studio によって、コマンドが読み込まれます。 詳細については、[UsedCommand 要素](../../extensibility/usedcommand-element.md)を参照してください。  
   
 ## <a name="interface-element-appearance"></a>インターフェイス要素の外観  
  選択して、コマンド要素の配置に関する考慮事項は次のとおりです。  

@@ -1,12 +1,9 @@
 ---
 title: '方法: 有効にして、マネージ コードの完全ソリューション解析を無効にする |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 ms.assetid: 04315147-5792-47f0-8b5f-9ac8413c6a57
@@ -14,17 +11,17 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221872"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962935"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>方法: 有効にして、マネージ コードの完全ソリューション解析を無効にします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-注]
+注意]
 >  このトピックでは、Visual Studio 2015 Update 3 RC にのみ以降に適用されます。  
   
  *完全ソリューション解析*は Visual Studio の機能で開いている Visual c# または Visual Basic ファイルのみ、ソリューションまたはオープンおよびクローズされた両方 Visual c# または Visual Basic ファイル、ソリューション内のコード分析の問題が発生するかどうかを選択することができます。  
@@ -59,6 +56,3 @@ ms.locfileid: "49221872"
  完全ソリューション解析は既定では、Visual Basic を有効になっているし、無効になっている Visual c# 用。  
   
  Visual Studio Update 3 RC には、メモリ使用量が少なくなり、完全ソリューション解析が有効になっている場合でもアイドル、CPU 時間を減少が大幅に強化されたコード アナライザー診断 v2 エンジンが含まれています。
-
-
-

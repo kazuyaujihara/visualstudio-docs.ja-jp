@@ -23,7 +23,7 @@ ms.locfileid: "56618329"
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Visual Studio の比較で VBA および Office ソリューション
   Microsoft Visual Basic for Applications (VBA) は、Office アプリケーションと密接に連携されているアンマネージ コードを使用しています。 Visual Studio を使用して作成した Microsoft Office プロジェクトでは、.NET Framework および Visual Studio デザイン ツールを利用できます。
 
- Visual Studio を使用して作成できる Office ソリューションの種類については、次を参照してください。 [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)します。
+ Visual Studio を使用して作成できる Office ソリューションの種類については、[Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)を参照してください。
 
 ## <a name="comparison"></a>条件式
  Visual Studio での VBA ソリューションと Office ソリューションの基本的な比較を次の表に示します。
@@ -43,7 +43,7 @@ ms.locfileid: "56618329"
 -   マクロの記録。
 
 ## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>VBA ソリューションと Visual Studio を使用して作成された Office ソリューションを組み合わせる
- Visual Studio を使用して作成された Office ソリューションから VBA コードを呼び出すことができます。また、VBA から Visual Studio を使用して作成された Office ソリューションのコードを呼び出すこともできます。 具体的な手法は、Office ソリューションが VSTO アドインか、ドキュメントレベルのカスタマイズかどうかによって異なります。 詳細については、次を参照してください。[他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)と[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)します。
+ Visual Studio を使用して作成された Office ソリューションから VBA コードを呼び出すことができます。また、VBA から Visual Studio を使用して作成された Office ソリューションのコードを呼び出すこともできます。 具体的な手法は、Office ソリューションが VSTO アドインか、ドキュメントレベルのカスタマイズかどうかによって異なります。 詳細については、[他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)と[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

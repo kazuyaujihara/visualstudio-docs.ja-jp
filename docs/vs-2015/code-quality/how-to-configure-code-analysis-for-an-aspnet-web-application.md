@@ -1,14 +1,9 @@
 ---
 title: '方法: ASP.NET Web アプリケーションのコード分析の構成 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.asp
 ms.assetid: b3000b31-fd9d-489e-81a2-a4bee49453ba
@@ -16,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bf7450341dd166977d67639f4f3762fae6ef89c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+ms.openlocfilehash: 67cfc63c74755b10d7b3d274c0925d83b9a2d24c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283908"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972234"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>方法: ASP.NET Web アプリケーション用にコード分析を構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,4 @@ ms.locfileid: "49283908"
   
     -   選択**\<参照 >** を既存のカスタム規則セットを指定されていないリスト。  
   
-    -   カスタム規則セットを定義します。 詳細については、[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)を参照してください。
-
-
-
+    -   カスタム規則セットを定義します。 詳細については、次を参照してください。[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)です。

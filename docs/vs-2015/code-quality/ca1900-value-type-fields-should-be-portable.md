@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1900: 値型フィールドはポータブルでなければなりません。Microsoft Docs'
-ms.custom: ''
+title: CA1900:値型フィールドはポータブルでなければなりません。Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1900
 - ValueTypeFieldsShouldBePortable
@@ -20,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d8794fc1e30e2afb70c6816b6d10feb8d69a5d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 35bdef10d63f79c3d1ff649a486a708c34b28078
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236302"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59003074"
 ---
-# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: 値型フィールドはポータブルでなければなりません
+# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900:値型フィールドはポータブルでなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。 [ca 1900: 値型フィールドはポータブルでなければなりません](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable)docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください。 [ca 1900。値型フィールドはポータブルでなければなりません](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable)docs.microsoft.com でリリースされました。  
   
 |||  
 |-|-|  
@@ -50,4 +45,3 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
   
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況  
  エラーが発生した場合にのみ、この警告を抑制する必要があります。
-

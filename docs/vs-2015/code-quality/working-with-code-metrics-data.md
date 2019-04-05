@@ -1,14 +1,9 @@
 ---
 title: コード メトリックス データの操作 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codemetrics.output
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 988193ec-b4a3-4e11-b5a1-7334979807d5
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca9d384b8c7b6d49e44826c65a156d715baa0786
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fd746ca463808ddc3ab70d795af88f6dff53f860
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962486"
 ---
 # <a name="working-with-code-metrics-data"></a>コード メトリックス データの操作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51775889"
   
 |Column|説明|  
 |------------|-----------------|  
-|**階層**|**階層**列には展開したり折りたたんだりする詳細のレベルを表示するコードの階層構造のツリー ビューが含まれています。 その他の列は、計算結果を表示します。 非表示にしたり、必要に応じて、結果の列を配置できます。|  
+|**Hierarchy**|**階層**列には展開したり折りたたんだりする詳細のレベルを表示するコードの階層構造のツリー ビューが含まれています。 その他の列は、計算結果を表示します。 非表示にしたり、必要に応じて、結果の列を配置できます。|  
 |**保守容易性**|**保守容易性**列にはだけでなく、数値の結果アイコンが含まれています。 緑色のアイコンには、保守容易性が比較的高いことを示します。 黄色のアイコンでは、中程度の保守容易性を示します。 赤のアイコンは、低の保守容易性と潜在的な問題がスポットを示します。 これらのカラー インジケーターは、FxCop ルール AvoidUnmaintainableCode によって使用される重要度カテゴリに対応します。 このルールでは、保守容易性指数が 10、インデックスがインデックスが 20 より大きい場合に 10、20 とどちらも、エラー、警告の場合、警告を下回る場合、エラーが発生します。 保守容易性指数は、3 つのメトリックの合成: サイクロマティック複雑度、コード、および計算の複雑さの行。 ユニットでは、その値は表されません。|  
   
 ##  <a name="BKMK_DisplayingCodeMetricsResults"></a> コード メトリックスの結果を表示します。  
@@ -129,7 +124,7 @@ ms.locfileid: "51775889"
 ##  <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> コード メトリックの結果に基づいて作業項目を作成します。  
  作成することができます、[!INCLUDE[esprfound](../includes/esprfound-md.md)]に基づいている作業項目の結果、**コード メトリックスの結果**ウィンドウ。 作業項目が作成されると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]にタイトルを自動的に入力、**タイトル**フィールドとコード メトリック データの下で、**履歴** タブ。  
   
- 作業項目を作成する方法の詳細については、次を参照してください。[作業項目を作成&#91;リダイレクト&#93;](http://msdn.microsoft.com/en-us/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b)します。  
+ 作業項目を作成する方法の詳細については、次を参照してください。[作業項目を作成&#91;リダイレクト&#93;](http://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b)します。  
   
 #### <a name="to-create-a-work-item-based-on-a-result"></a>結果に基づく作業項目を作成するには  
   
@@ -153,7 +148,4 @@ ms.locfileid: "51775889"
   
 ## <a name="see-also"></a>関連項目  
  [複雑さとマネージ コードの保守性を測定します。](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)   
- [方法 : コード メトリックス データを生成する](../code-quality/how-to-generate-code-metrics-data.md)
-
-
-
+ [方法: コード メトリックス データを生成します。](../code-quality/how-to-generate-code-metrics-data.md)

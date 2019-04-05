@@ -23,7 +23,7 @@ ms.locfileid: "56609398"
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>チュートリアル: SharePoint プロジェクトのカスタム配置手順を作成します。
   SharePoint プロジェクトを展開するときに、Visual Studio は、特定の順序で一連の展開の手順を実行します。 Visual Studio には、多くの組み込みの配置手順が含まれていますが、独自に作成することもできます。
 
- このチュートリアルでは、SharePoint を実行しているサーバー上でソリューションをアップグレードするカスタムの配置手順を作成します。 Visual Studio には、多くのタスク、そのような取り消しまたは、ソリューションの追加の組み込みの配置手順が含まれていますが、ソリューションのアップグレードの配置手順は含まれません。 既定では、SharePoint ソリューションを展開するときに Visual Studio 最初、ソリューションを取り消します (既にデプロイされて) の場合と、ソリューション全体を再デプロイします。 組み込みの配置手順の詳細については、次を参照してください。[デプロイ、発行、および SharePoint ソリューション パッケージをアップグレード](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)します。
+ このチュートリアルでは、SharePoint を実行しているサーバー上でソリューションをアップグレードするカスタムの配置手順を作成します。 Visual Studio には、多くのタスク、そのような取り消しまたは、ソリューションの追加の組み込みの配置手順が含まれていますが、ソリューションのアップグレードの配置手順は含まれません。 既定では、SharePoint ソリューションを展開するときに Visual Studio 最初、ソリューションを取り消します (既にデプロイされて) の場合と、ソリューション全体を再デプロイします。 組み込みの配置手順の詳細については、[デプロイ、発行、および SharePoint ソリューション パッケージをアップグレード](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)を参照してください。
 
  このチュートリアルでは、次のタスクについて説明します。
 
@@ -33,7 +33,7 @@ ms.locfileid: "56609398"
 
     -   拡張機能は、特定のプロジェクトに対して実行される配置手順のセットである新しい配置構成を定義するプロジェクトの拡張機能を作成します。 新しい展開の構成には、カスタムの配置手順といくつかの組み込みの配置手順が含まれています。
 
--   拡張機能のアセンブリを呼び出す 2 つのカスタム SharePoint コマンドを作成します。 SharePoint コマンドは、SharePoint のサーバー オブジェクト モデルでの Api を使用する拡張機能アセンブリを呼び出すことができる方法です。 詳細については、次を参照してください。[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)します。
+-   拡張機能のアセンブリを呼び出す 2 つのカスタム SharePoint コマンドを作成します。 SharePoint コマンドは、SharePoint のサーバー オブジェクト モデルでの Api を使用する拡張機能アセンブリを呼び出すことができる方法です。 詳細については、[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)を参照してください。
 
 -   アセンブリの両方を配置するための Visual Studio Extension (VSIX) パッケージを構築します。
 
@@ -44,15 +44,15 @@ ms.locfileid: "56609398"
 
 - サポート対象エディションの Windows、SharePoint、Visual Studio。
 
-- Visual Studio SDK。 このチュートリアルでは、 **VSIX プロジェクト**sdk、拡張機能を配置するための VSIX パッケージを作成するテンプレート。 詳細については、次を参照してください。 [Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)します。
+- Visual Studio SDK。 このチュートリアルでは、 **VSIX プロジェクト**sdk、拡張機能を配置するための VSIX パッケージを作成するテンプレート。 詳細については、[Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
   次の概念に関する知識があると役に立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
-- For SharePoint サーバー オブジェクト モデルを使用します。 詳細については、次を参照してください。 [SharePoint Foundation サーバー側オブジェクト モデルを使用して](http://go.microsoft.com/fwlink/?LinkId=177796)します。
+- For SharePoint サーバー オブジェクト モデルを使用します。 詳細については、[SharePoint Foundation サーバー側オブジェクト モデルを使用して](http://go.microsoft.com/fwlink/?LinkId=177796)を参照してください。
 
-- SharePoint ソリューション。 詳細については、次を参照してください。[ソリューションの概要](http://go.microsoft.com/fwlink/?LinkId=169422)します。
+- SharePoint ソリューション。 詳細については、[ソリューションの概要](http://go.microsoft.com/fwlink/?LinkId=169422)を参照してください。
 
-- SharePoint ソリューションをアップグレードします。 詳細については、次を参照してください。[ソリューションをアップグレード](http://go.microsoft.com/fwlink/?LinkId=177802)します。
+- SharePoint ソリューションをアップグレードします。 詳細については、[ソリューションをアップグレード](http://go.microsoft.com/fwlink/?LinkId=177802)を参照してください。
 
 ## <a name="create-the-projects"></a>プロジェクトを作成します。
  このチュートリアルを完了するには、3 つのプロジェクトを作成する必要があります。
@@ -190,7 +190,7 @@ ms.locfileid: "56609398"
 
 1.  **ソリューション エクスプ ローラー**下で、 **UpgradeDeploymentStep**プロジェクトで、ショートカット メニューを開き、 **source.extension.vsixmanifest**ファイルを選び、 **開いている**します。
 
-     Visual Studio によってマニフェスト エディターでファイルが開きます。 source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。
+     Visual Studio によってマニフェスト エディターでファイルが開きます。 source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、[VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)を参照してください。
 
 2.  **製品名**ボックスに、入力**SharePoint プロジェクトの配置のアップグレード手順**します。
 
@@ -205,7 +205,7 @@ ms.locfileid: "56609398"
 6.  **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、[MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))を参照してください。
 
 7.  **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 
@@ -218,7 +218,7 @@ ms.locfileid: "56609398"
 10. **型**一覧で、入力**SharePoint.Commands.v4**します。
 
     > [!NOTE]
-    >  この要素は、Visual Studio 拡張機能に含めるカスタム拡張機能を指定します。 詳細については、次を参照してください。[資産要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)します。
+    >  この要素は、Visual Studio 拡張機能に含めるカスタム拡張機能を指定します。 詳細については、[資産要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)を参照してください。
 
 11. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 

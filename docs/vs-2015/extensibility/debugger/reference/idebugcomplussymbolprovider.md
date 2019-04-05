@@ -1,26 +1,21 @@
 ---
 title: IDebugComPlusSymbolProvider |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider interface
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 036d545b6bc8f2b59b76fdbc777680d0307f6972
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b70701aa9c4b339749554601e2a565c17697c6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721982"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975158"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 ```  
   
 ## <a name="notes-for-implementers"></a>実装についてのメモ  
- 分離は、式エバリュエーター (EE) に便利なインターフェイスとデバッグ エンジン (DE) で使用されることを意図したものはありませんが、次の方法がおそらく DE 開発者だけを目的: AreSymbolsLoaded、GetAddressesInModuleFromPosition、GetEntryPoint、GetFunctionLineOffset、GetLocalVariableLayout、IsFunctionStale、LoadSymbols、LoadSymbolsFromStream、ReplaceSymbols、UnloadSymbols、および UpdateSymbols します。  
+ 式エバリュエーター (EE) に利用できるインターフェイスとデバッグ エンジン (DE) で使用されることを意図したものに区別はありませんが、次のメソッドは DE 開発者だけをおそらく有用です。AreSymbolsLoaded、GetAddressesInModuleFromPosition、GetEntryPoint、GetFunctionLineOffset、GetLocalVariableLayout、IsFunctionStale、LoadSymbols、LoadSymbolsFromStream、ReplaceSymbols、UnloadSymbols、および UpdateSymbols します。  
   
 ## <a name="methods"></a>メソッド  
  メソッドだけでなく、 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)インターフェイスでは、このインターフェイスは、次のメソッドを実装します。  
@@ -65,9 +60,8 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 |[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|指定したデータ ストリームとメモリのデバッグ シンボルを更新します。|  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー: Sh.h  
+ ヘッダー:Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: Microsoft.VisualStudio.Debugger.Interop  
   
- アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
-
+ アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll

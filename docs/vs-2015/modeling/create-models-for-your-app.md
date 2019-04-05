@@ -1,14 +1,9 @@
 ---
 title: アプリのモデルの作成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
 - vs.teamarch.UMLModelExplorer.dependency
@@ -41,20 +36,20 @@ ms.assetid: b69d9d91-c7e7-4dee-8eb6-706076eecb85
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9e3aa389441914121493148ecb8fa45b9f86beed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: feb0c1a5f486654844c592b6b946dedc9e2e02c0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745124"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59002194"
 ---
 # <a name="create-models-for-your-app"></a>アプリのモデルを生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 モデリング図を使用すると、コードや、ソフトウェア システムで対応する必要があるユーザー要求について、効果的に理解して明確にし、アイデアを伝え合うことができます。 たとえば、ユーザー要求を記述して伝えるために、UML (Unified Modeling Language: 統一モデリング言語) のユース ケース図、アクティビティ図、クラス図、およびシーケンス図を使用できます。 システムの機能を記述して伝えるために、UML のコンポーネント図、クラス図、アクティビティ図、およびシーケンス図を使用できます。  
   
- 参照してください[Channel 9 ビデオ: モデリングによるアーキテクチャの改善](http://go.microsoft.com/fwlink/?LinkID=252078)します。  
+ 参照してください[Channel 9 ビデオ。モデリングによるアーキテクチャの改善](http://go.microsoft.com/fwlink/?LinkID=252078)します。  
   
  このリリースでは、次の UML 図を作成できます。  
   
@@ -76,7 +71,7 @@ ms.locfileid: "51745124"
 |コード マップ<br /><br /> [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [コード マップ アナライザーを使用して潜在的な問題を検索する](../modeling/find-potential-problems-using-code-map-analyzers.md)|既存のコード内の依存関係とその他の関係|  
 |コードで生成されたクラス図<br /><br /> [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)|.NET コード内の型とその関係|  
   
-## <a name="common-tasks"></a>一般的なタスク  
+## <a name="common-tasks"></a>よく使う機能  
   
 |**トピック**|**Task**|  
 |---------------|--------------|  
@@ -96,14 +91,11 @@ ms.locfileid: "51745124"
 |[ユーザー要件のモデリング](../modeling/model-user-requirements.md)|モデルを使用して、ユーザーのニーズを明確にして伝えます。|  
 |[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|モデルを使用して、システムの全体的な構造と動作を記述し、確実にユーザーのニーズを満たせるようにします。|  
 |[開発時のシステムの検証](../modeling/validate-your-system-during-development.md)|ソフトウェアがユーザーのニーズ、およびシステムのアーキテクチャ全体と一致していることを確認します。|  
-|[開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)<br /><br /> [アジャイル開発でのモデルを使用します。](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|モデルを使用すると、システムの開発中に効果的にシステムを理解して変更することができます。|  
+|[開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)<br /><br /> [アジャイル開発でのモデルを使用します。](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|モデルを使用すると、システムの開発中に効果的にシステムを理解して変更することができます。|  
 |[モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)|大規模または中規模のプロジェクトでモデルを整理します。|  
   
 ## <a name="external-resources"></a>外部リソース  
   
 |**カテゴリ**|**Links**|  
 |------------------|---------------|  
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-
-
-
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化ツールとモデリング SDK (DSL ツール)](http://go.microsoft.com/fwlink/?LinkId=184721)|

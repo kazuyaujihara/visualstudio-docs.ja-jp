@@ -1,14 +1,9 @@
 ---
 title: '&lt;InstallChecks&gt;要素 (ブートス トラップ) |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 03f489c22c8912e332f7d01e6ec4ac48aacda30b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d6156b729835d16d2e83cc76507ad096528994d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891077"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974507"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;要素 (ブートス トラップ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -174,8 +169,8 @@ ms.locfileid: "49891077"
   
 |プロパティ|メモ|使用できる値|  
 |--------------|-----------|---------------------|  
-|`Version9X`|Windows 9 X オペレーティング システムのバージョン番号。|4.10 Windows 98 を =|  
-|`VersionNT`|Windows NT ベースのオペレーティング システムのバージョン番号。|Major.minor.servicepack です。<br /><br /> 5.0 Windows 2000 を =<br /><br /> 5.1.0 が Windows XP を =<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
+|`Version9X`|Windows 9 X オペレーティング システムのバージョン番号。|4.10 = Windows 98|  
+|`VersionNT`|Windows NT ベースのオペレーティング システムのバージョン番号。|Major.minor.servicepack です。<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 が Windows XP を =<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
 |`VersionNT64`|64 ビット Windows NT ベースのオペレーティング システムのバージョン番号。|前に示したのと同じです。|  
 |`VersionMsi`|Windows インストーラー サービスのバージョン番号。|2.0 Windows インストーラー 2.0 を =|  
 |`AdminUser`|ユーザーが Windows NT ベースのオペレーティング システムの管理者特権を持つかどうかを指定します。|0 = 管理者特権なし<br /><br /> 1 = 管理者の権限|  
@@ -190,6 +185,3 @@ ms.locfileid: "49891077"
 ## <a name="see-also"></a>関連項目  
  [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)   
  [製品およびパッケージ スキーマ リファレンス](../deployment/product-and-package-schema-reference.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Ca 2234: System.Uri オブジェクトを渡します文字列ではなく |Microsoft Docs'
-ms.custom: ''
+title: CA2234:文字列の代わりに System.Uri オブジェクトを渡す |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - PassSystemUriObjectsInsteadOfStrings
 - CA2234
@@ -20,21 +15,21 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83490f93368da777f35544ba09e40bdb5a929f99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce0ed8a2600d52d3a8f6649a528b6c809895f3fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964050"
 ---
-# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: 文字列の代わりに System.Uri オブジェクトを渡します
+# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234:文字列の代わりに System.Uri オブジェクトを渡します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
 |CheckId|CA2234|
-|カテゴリ|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
@@ -57,13 +52,10 @@ ms.locfileid: "49813974"
  [!code-vb[FxCop.Usage.PassUri#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.PassUri/vb/FxCop.Usage.PassUri.vb#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA1057: 文字列 URI オーバーロードが、System.Uri オーバーロードを呼び出します](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+ [CA 1057:文字列 URI オーバー ロードは、System.Uri オーバー ロードを呼び出す](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
 
- [CA1056: URI プロパティを文字列にすることはできません](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+ [CA 1056:URI のプロパティには、文字列がすることはできません。](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 
- [CA1054: URI パラメーターを文字列にすることはできません](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+ [CA 1054:URI パラメーターは文字列をすることはできません。](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
- [CA1055: URI 戻り値を文字列にすることはできません](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-
-
-
+ [CA 1055:URI 戻り値は文字列をすることはできません。](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

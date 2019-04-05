@@ -42,7 +42,7 @@ Visual Studio 2017 の機能拡張プロジェクトと独自の VSIX マニフ�
 
 ## <a name="custom-project-and-item-templates"></a>カスタム プロジェクトと項目テンプレート
 
-Visual Studio 2017 以降、カスタム プロジェクトと項目テンプレートのスキャンは不要になった実行されます。 代わりに、拡張機能では、これらのテンプレートのインストール場所を記述するテンプレート マニフェスト ファイルを提供する必要があります。 Visual Studio 2017 を使用して、VSIX 拡張機能を更新することができます。 MSI を使用して、拡張機能をデプロイする場合は、手動でテンプレート マニフェスト ファイルを生成する必要があります。 詳細については、次を参照してください。[カスタム プロジェクトと項目テンプレートを Visual Studio 2017 のアップグレード](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)します。 テンプレート マニフェスト スキーマについては[Visual Studio テンプレート マニフェスト スキーマ参照](../extensibility/visual-studio-template-manifest-schema-reference.md)します。
+Visual Studio 2017 以降、カスタム プロジェクトと項目テンプレートのスキャンは不要になった実行されます。 代わりに、拡張機能では、これらのテンプレートのインストール場所を記述するテンプレート マニフェスト ファイルを提供する必要があります。 Visual Studio 2017 を使用して、VSIX 拡張機能を更新することができます。 MSI を使用して、拡張機能をデプロイする場合は、手動でテンプレート マニフェスト ファイルを生成する必要があります。 詳細については、[カスタム プロジェクトと項目テンプレートを Visual Studio 2017 のアップグレード](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)を参照してください。 テンプレート マニフェスト スキーマについては[Visual Studio テンプレート マニフェスト スキーマ参照](../extensibility/visual-studio-template-manifest-schema-reference.md)します。
 
 ## <a name="updated-extension-performance-guidelines"></a>更新された拡張機能のパフォーマンスに関するガイドライン
 

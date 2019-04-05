@@ -25,7 +25,7 @@ XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマン
 
  実行して新しい VSPackage を作成する場合、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]パッケージのテンプレートがテンプレートによって生成、 *.vsct*メニュー コマンド、ツール ウィンドウ、または、選択内容に応じて、カスタム エディターの必要な要素を持つファイル。 これは、 *.vsct*ファイルは、特定の VSPackage の要件を満たす、変更できます。 変更する方法の例については、 *.vsct*ファイルを参照してください[メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)します。
 
- 新しいを作成するには、空白 *.vsct*ファイルを参照してください[方法。作成、 *.vsct*ファイル](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)します。 作成されると、ファイルに、コマンドの項目のレイアウトを記述する XML 要素、属性、および値を追加します。 詳細な XML スキーマでは、次を参照してください。、 [VSCT XML スキーマ リファレンス](../../extensibility/vsct-xml-schema-reference.md)します。
+ 新しいを作成するには、空白 *.vsct*ファイルを参照してください[方法。作成、 *.vsct*ファイル](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)します。 作成されると、ファイルに、コマンドの項目のレイアウトを記述する XML 要素、属性、および値を追加します。 詳細な XML スキーマでは、、 [VSCT XML スキーマ リファレンス](../../extensibility/vsct-xml-schema-reference.md)を参照してください。
 
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc と .vsct ファイルの間の相違点
  XML の背後にある意味でタグの中に、 *.vsct*ファイルは、現在は非推奨では、そのタグと同じ *.ctc*ファイル形式では、その実装は少し異なります。
@@ -40,7 +40,7 @@ XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマン
 
 - 値は、項目の属性として格納されます。
 
-- コマンドのフラグを個別に格納されているまたは積み上げことができます。  積み上げコマンド フラグでただし、IntelliSense は機能しません。 コマンドのフラグの詳細については、次を参照してください。、 [CommandFlag 要素](../../extensibility/command-flag-element.md)します。
+- コマンドのフラグを個別に格納されているまたは積み上げことができます。  積み上げコマンド フラグでただし、IntelliSense は機能しません。 コマンドのフラグの詳細については、、 [CommandFlag 要素](../../extensibility/command-flag-element.md)を参照してください。
 
 - 分割のドロップダウン リストから、combos など、複数の種類を指定することができます。
 

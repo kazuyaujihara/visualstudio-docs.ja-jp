@@ -22,10 +22,10 @@ ms.locfileid: "56599676"
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>SharePoint プロジェクト システムの拡張機能でデータを保存します。
   SharePoint プロジェクト システムを拡張するときは、SharePoint プロジェクトを閉じた後に保持される文字列データを保存できます。 データは、通常、またはプロジェクト自体と特定のプロジェクト項目と関連付けられています。
 
- 実装する SharePoint ツールのオブジェクト モデル内のオブジェクトにデータを追加するには永続化する必要のないデータがあれば、<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>インターフェイス。 詳細については、次を参照してください。[ツールの拡張機能を SharePoint でカスタム データを関連付ける](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)します。
+ 実装する SharePoint ツールのオブジェクト モデル内のオブジェクトにデータを追加するには永続化する必要のないデータがあれば、<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>インターフェイス。 詳細については、[ツールの拡張機能を SharePoint でカスタム データを関連付ける](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)を参照してください。
 
 ## <a name="save-data-that-is-associated-with-a-project-item"></a>プロジェクト項目に関連付けられているデータを保存します。
- データを保存するには、プロジェクト項目に追加するプロパティの値など、特定の SharePoint プロジェクト アイテムに関連付けられているデータがある場合、 *.spdata*プロジェクト項目のファイル。 これを行うには、使用、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>のプロパティ、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>オブジェクト。 このプロパティを追加するデータの保存、 **ExtensionData**内の要素、 *.spdata*プロジェクト項目のファイル。 詳細については、次を参照してください。 [ExtensionData 要素](../sharepoint/extensiondata-element.md)します。
+ データを保存するには、プロジェクト項目に追加するプロパティの値など、特定の SharePoint プロジェクト アイテムに関連付けられているデータがある場合、 *.spdata*プロジェクト項目のファイル。 これを行うには、使用、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>のプロパティ、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>オブジェクト。 このプロパティを追加するデータの保存、 **ExtensionData**内の要素、 *.spdata*プロジェクト項目のファイル。 詳細については、[ExtensionData 要素](../sharepoint/extensiondata-element.md)を参照してください。
 
  次のコード例は、使用する方法を示します、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>プロパティをカスタム SharePoint プロジェクト項目の種類で定義されている文字列プロパティの値を保存します。 例のコンテキストでは、この例を確認するには、次を参照してください。[方法。カスタム SharePoint プロジェクト項目の種類にプロパティを追加](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)します。
 

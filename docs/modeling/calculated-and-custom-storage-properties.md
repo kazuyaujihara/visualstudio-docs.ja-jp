@@ -105,7 +105,7 @@ void SetAgeValue(int value)
 }
 ```
 
- トランザクションの詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。
+ トランザクションの詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

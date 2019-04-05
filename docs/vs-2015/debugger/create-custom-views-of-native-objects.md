@@ -1,14 +1,9 @@
 ---
 title: ネイティブ オブジェクトのカスタム ビューの作成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a863c0b393da0934c0f3ceb3b36084b953a81f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963047"
 ---
 # <a name="create-custom-views-of-native-objects"></a>ネイティブ オブジェクトのカスタム ビューを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +348,7 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]**、 **
 -   `Expand` ノードで下位に子ノードを指定しない場合、型はデバッガー ウィンドウで展開されません。  
 
 ####  <a name="BKMK_Item_expansion"></a> Item の展開  
- `Item` 要素は、 `Expand` ノードに使用される最も基本的で一般的な要素です。 `Item` は 1 つの子要素を定義します。 たとえば、`CRect` クラスに `top`、`left`、`right`、および `bottom` フィールドがあり、次の視覚化エントリがあるとします。  
+ `Item` 要素は、 `Expand` ノードに使用される最も基本的で一般的な要素です。 `Item` は 1 つの子要素を定義します。 たとえば、 `CRect` クラスに `top`、 `left`、 `right`、および `bottom` フィールドがあり、次の視覚化エントリがあるとします。  
 
 ```xml  
 <Type Name="CRect">  
@@ -432,7 +427,7 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]**、 **
  ![ArrayItems の展開を含む 2 次元配列](../debugger/media/dbg-natvis-expand-arrayitems-2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
 
 ####  <a name="BKMK_IndexListItems_expansion"></a> IndexListItems の展開  
- 配列要素が連続してメモリに配置されている場合にのみ、 `ArrayItems` 展開を使用することができます。 デバッガーは、次の要素を取得するために、ポインターを現在の要素までインクリメントするだけです。 値ノードのインデックスを操作する必要がある場合に対応するには、`IndexListItems` ノードを使用できます。 ここでは、 `IndexListItems` ノードを使用した視覚化を示しています。  
+ 配列要素が連続してメモリに配置されている場合にのみ、 `ArrayItems` 展開を使用することができます。 デバッガーは、次の要素を取得するために、ポインターを現在の要素までインクリメントするだけです。 値ノードのインデックスを操作する必要がある場合に対応するには、 `IndexListItems` ノードを使用できます。 ここでは、 `IndexListItems` ノードを使用した視覚化を示しています。  
 
 ```xml  
 <Type Name="Concurrency::multi_link_registry&lt;*&gt;">  
@@ -473,7 +468,7 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]**、 **
 
  `Size` 要素はリストの長さを参照します。 `HeadPointer` は最初の要素を参照し、 `NextPointer` は次の要素を参照し、 `ValueNode` は項目の値を参照します。  
 
--   `NextPointer` および `ValueNode` 式は、親リストの型ではなく、リンク リスト ノード要素のコンテキストで評価されます。 前の例で、`CAtlList` の `CNode` クラス (`atlcoll.h` 内) はリンク リストのノードを表しています。 `m_pNext` と `m_element` は、 `CNode` クラスではなく `CAtlList` クラスのフィールドです。  
+-   `NextPointer` および `ValueNode` 式は、親リストの型ではなく、リンク リスト ノード要素のコンテキストで評価されます。 前の例で、 `CAtlList` の `CNode` クラス ( `atlcoll.h`内) はリンク リストのノードを表しています。 `m_pNext` と `m_element` は、 `CNode` クラスではなく `CAtlList` クラスのフィールドです。  
 
 -   `ValueNode` は、空にするか `this` を指定すると、リンク リスト ノード自体を参照できます。  
 
@@ -632,12 +627,9 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]**、 **
 </Type>  
 ```  
 
- メモリ内のビットマップの表示に使用するイメージ ウォッチ拡張機能の UIVisualizer の例については、「 [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)」をご覧ください。  
+ メモリ内のビットマップを表示するために使用するイメージ ウォッチ拡張機能の UIVisualizer の例を確認できます。[ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
 
 ### <a name="customvisualizer-element"></a>CustomVisualizer 要素  
  `CustomVisualizer` は、Visual Studio で実行されるコードの中で、視覚エフェクトを制御するために書くことができる VSIX 拡張機能を指定する機能拡張ポイントです。 VSIX 拡張機能の記述方法について詳しくは、「 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)」をご覧ください。 カスタム ビジュアライザーの記述は、XML natvis 定義の記述よりもはるかに多く作業が必要になりますが、natvis がサポートする事柄としない事柄についての制約がありません。 カスタム ビジュアライザーを使用すると、デバッガーの拡張性 API の全セットにアクセスできます。これらの API は、デバッグ対象のプロセスの照会および変更、または Visual Studio の他の部分との通信に使用できます。  
 
  CustomVisualizer 要素で `Condition`、 `IncludeView`、および `ExcludeView` 属性を使用できます。
-
-
-

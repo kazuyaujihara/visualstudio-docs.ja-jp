@@ -31,7 +31,7 @@ ms.locfileid: "55934888"
 
 **エディターでカーソルが表示されます。、緑色の矢印が表示されます。**
 
-コマンドとコード マップを使用する場合に使用できる操作の詳細については、次を参照してください。[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)します。
+コマンドとコード マップを使用する場合に使用できる操作の詳細については、[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)を参照してください。
 
 > [!NOTE]
 > を作成およびコード マップを編集するには、Visual Studio Enterprise edition が必要です。 Visual Studio Community、Professional エディションでは、Enterprise edition で生成されたダイアグラムを開くことができますが、編集することはできません。

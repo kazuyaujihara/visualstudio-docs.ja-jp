@@ -56,7 +56,7 @@ ms.locfileid: "57873605"
 
 ## <a name="configurability"></a>構成機能
 
-このルールからを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、このルールを分析し、コードのどの部分を構成することができます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このルールからを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、このルールを分析し、コードのどの部分を構成することができます。 詳細については、[構成 FxCop アナライザー](configure-fxcop-analyzers.md)を参照してください。
 
 ### <a name="single-character-type-parameters"></a>単一の文字の型パラメーター
 

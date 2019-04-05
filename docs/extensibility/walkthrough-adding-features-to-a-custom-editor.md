@@ -30,15 +30,15 @@ ms.locfileid: "56716416"
 
      サポートしている、**新しいウィンドウ**コマンド、またはフォーム ビューとコード ビューには、個別のドキュメント データ オブジェクトとドキュメント ビュー オブジェクトが必要です。 1 つのビューのみをサポートするエディターで、ドキュメント データ オブジェクトと、ドキュメント ビュー オブジェクトを同じオブジェクトで実装することができます。
 
-     複数のビューの例は、次を参照してください。[ドキュメントの複数のビューをサポートして](../extensibility/supporting-multiple-document-views.md)します。
+     複数のビューの例は、[ドキュメントの複数のビューをサポートして](../extensibility/supporting-multiple-document-views.md)を参照してください。
 
 3.  設定することで、エディター ファクトリの実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>インターフェイス。
 
-     詳細については、次を参照してください。[エディター ファクトリ](../extensibility/editor-factories.md)します。
+     詳細については、[エディター ファクトリ](../extensibility/editor-factories.md)を参照してください。
 
 4.  インプレース アクティブ化を使用するエディターで、または、簡略化された埋め込みドキュメント ビュー オブジェクト ウィンドウを管理するかどうかを決定します。
 
-     ActiveX コントロールまたはそのドキュメントのビューとその他のアクティブなオブジェクトをホストする、インプレース アクティブ化エディター ウィンドウ中に、簡略化された埋め込みエディター ウィンドウは、標準のドキュメント ビューをホストします。 詳細については、次を参照してください。[簡略化された埋め込み](../extensibility/simplified-embedding.md)と[インプレース アクティブ化](../extensibility/in-place-activation.md)します。
+     ActiveX コントロールまたはそのドキュメントのビューとその他のアクティブなオブジェクトをホストする、インプレース アクティブ化エディター ウィンドウ中に、簡略化された埋め込みエディター ウィンドウは、標準のドキュメント ビューをホストします。 詳細については、[簡略化された埋め込み](../extensibility/simplified-embedding.md)と[インプレース アクティブ化](../extensibility/in-place-activation.md)を参照してください。
 
 5.  実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コマンドを処理するインターフェイス。
 
@@ -123,7 +123,7 @@ ms.locfileid: "56716416"
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
 
-- IDE を呼び出すと、エディター インスタンスが作成された、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>メソッド。 エディターは、複数のビューをサポートしている場合`CreateEditorInstance`ドキュメント データとドキュメント ビュー オブジェクトの両方を作成します。 ドキュメント データ オブジェクトが既にある場合を開く、null でない`punkDocDataExisting`に値が渡される`IVsEditorFactory::CreateEditorInstance`します。 エディター ファクトリの実装に適切なインターフェイスを照会して、既存のドキュメント データ オブジェクトが互換性のあるかどうかを判断する必要があります。 詳細については、次を参照してください。 [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)します。
+- IDE を呼び出すと、エディター インスタンスが作成された、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>メソッド。 エディターは、複数のビューをサポートしている場合`CreateEditorInstance`ドキュメント データとドキュメント ビュー オブジェクトの両方を作成します。 ドキュメント データ オブジェクトが既にある場合を開く、null でない`punkDocDataExisting`に値が渡される`IVsEditorFactory::CreateEditorInstance`します。 エディター ファクトリの実装に適切なインターフェイスを照会して、既存のドキュメント データ オブジェクトが互換性のあるかどうかを判断する必要があります。 詳細については、[Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)を参照してください。
 
 - 簡略化された埋め込み方法を使用する場合は、実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>インターフェイス。
 

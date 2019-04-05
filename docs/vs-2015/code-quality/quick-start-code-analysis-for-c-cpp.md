@@ -1,14 +1,9 @@
 ---
-title: 'クイック スタート: C/C++ のコード分析 |Microsoft Docs'
-ms.custom: ''
+title: クイック スタート:C/C++ のコードの分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
@@ -16,15 +11,15 @@ ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
 caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 56f14abab372a6a6e533675b070d420a4dfc7a5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 83b793f694c1965f5ded6b0fd136d672280d59cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758192"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976533"
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>クイック スタート: C/C++ のコード分析
+# <a name="quick-start-code-analysis-for-cc"></a>クイック スタート:C/C++ のコード分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 C または C++ コードのコード分析を定期的に実行することで、アプリケーションの品質を向上できます。 これにより、一般的な問題、優れたプログラミング手法からの逸脱、テストで見つけることが難しい不具合を検出できます。 コード分析の警告は、コンパイラ エラーや警告とは異なり、有効でありながらも、コードを使用するユーザーにとって問題を引き起こす可能性のある特定のコード パターンが検索されます。  
@@ -130,11 +125,8 @@ C または C++ コードのコード分析を定期的に実行することで�
 ##  <a name="BKMK_Search"></a> コード分析結果の検索とフィルター処理  
  警告メッセージの長い一覧の検索と、複数のプロジェクトから成るソリューションの警告をフィルター処理できます。  
   
-1.  **タイトルまたは警告 id でフィルターの警告を**: でキーワードを入力して、**フィルター**テキスト ボックス。  
+1.  **タイトルまたは警告 id でフィルターの警告を**:キーワードを入力して、**フィルター**テキスト ボックス。  
   
-2.  **プロジェクトで警告をフィルターする**: マルチ プロジェクト ソリューションでは、上部にある一覧で 1 つまたは複数のプロジェクトを選択して、コード分析 ウィンドウの右。 すべての警告を表示するには、ソリューション名を選択します。  
+2.  **プロジェクトで警告をフィルターする**:マルチ プロジェクト ソリューションでは、上部にある一覧で 1 つまたは複数のプロジェクトを選択して、コード分析 ウィンドウの右。 すべての警告を表示するには、ソリューション名を選択します。  
   
-3.  **重要度別にフィルター警告を**: コード分析のメッセージには既定での重大度が割り当てられます**警告**します。 として 1 つまたは複数のメッセージの重大度を割り当てることができます**エラー**では、カスタム ルールを設定します。 いずれかを選択**警告**または**エラー**それぞれの重大度が割り当てられているメッセージのみを表示します。 選択**すべて**すべてのメッセージを表示します。
-
-
-
+3.  **重要度別にフィルター警告を**:コード分析のメッセージには既定での重大度が割り当てられます**警告**します。 として 1 つまたは複数のメッセージの重大度を割り当てることができます**エラー**では、カスタム ルールを設定します。 いずれかを選択**警告**または**エラー**それぞれの重大度が割り当てられているメッセージのみを表示します。 選択**すべて**すべてのメッセージを表示します。

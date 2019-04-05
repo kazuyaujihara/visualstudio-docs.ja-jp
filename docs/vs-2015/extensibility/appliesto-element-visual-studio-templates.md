@@ -1,24 +1,19 @@
 ---
 title: AppliesTo 要素 (Visual Studio テンプレート) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6f789a574b7db1c30dceea32e5d2c0d4ef9afb7f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788564"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975148"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +22,11 @@ ms.locfileid: "51788564"
   
  この要素は省略可能です。 テンプレート ファイルには、最大で 1 つのインスタンスがあります。 この要素は、現在選択されているアクティブなプロジェクトの機能に基づいて、項目テンプレートを適用可能として利用できるようにするだけです。 項目テンプレートを適用不可にするためには使用できません。 `AppliesTo` が存在しない場合、または式を正常に利用できない場合は、製品の以前のバージョンの場合と同様に、テンプレートを適用可能にするために `TemplateID` または `TemplateGroupID` が使用されます。  
   
- Visual Studio 2013 更新プログラム 2 で導入されました。 正しいバージョンを参照するを参照してください。[を参照する、Visual Studio 2013 SDK の更新プログラム 2 で提供されるアセンブリ](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb)します。  
+ Visual Studio 2013 更新プログラム 2 で導入されました。 正しいバージョンを参照するを参照してください。[を参照する、Visual Studio 2013 SDK の更新プログラム 2 で提供されるアセンブリ](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb)します。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<AppliesTo >  
+ \<AppliesTo>  
   
 ## <a name="syntax"></a>構文  
   
@@ -63,7 +58,7 @@ ms.locfileid: "51788564"
   
 -   "&#124;"は OR 演算子です。  
   
--   "&" および "+" 文字は、どちらも AND 演算子です。  
+-   "&"と「+」文字は、どちらも AND 演算子。  
   
 -   "!" 文字は NOT 演算子です。  
   
@@ -106,4 +101,3 @@ ms.locfileid: "51788564"
 ## <a name="see-also"></a>関連項目  
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
-

@@ -23,7 +23,7 @@ ms.lasthandoff: 02/26/2019
 ms.locfileid: "56843165"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>方法: パラメーターの型記述子を定義します。
-  型記述子には、パラメーターのデータ型を表すプロパティが含まれています。 型記述子では、フィールド、エンティティ、またはエンティティのコレクションを定義できます。 詳細については、次を参照してください。 [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))します。
+  型記述子には、パラメーターのデータ型を表すプロパティが含まれています。 型記述子では、フィールド、エンティティ、またはエンティティのコレクションを定義できます。 詳細については、[TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))を参照してください。
 
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>パラメーターの型記述子を定義するには
 
@@ -41,7 +41,7 @@ ms.locfileid: "56843165"
 
 2.  横のリストで、 **TypeName**プロパティ、適切なデータ型を選択して (たとえば、 **Int32**)。
 
-     その他の省略可能なパラメーターについては、次を参照してください。 [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))します。
+     その他の省略可能なパラメーターについては、[TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))を参照してください。
 
 ### <a name="to-define-an-entity"></a>エンティティを定義するには
 

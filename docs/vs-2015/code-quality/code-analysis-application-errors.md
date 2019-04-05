@@ -1,14 +1,9 @@
 ---
-title: コード分析のアプリケーション エラー |Microsoft Docs
-ms.custom: ''
+title: コード分析のアプリケーション エラー
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
 - code analysis, errors
@@ -18,13 +13,13 @@ ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 66d611903c71cc526c01c1062c85ceef2e7975f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 25ee5a4e9a84201f93783bcef64f92ec74206fc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225018"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976035"
 ---
 # <a name="code-analysis-application-errors"></a>コード分析のアプリケーション エラー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "49225018"
 |[CA0062](ca0062.md)|ルール '*RuleId*'規則セットで参照されている'*RuleSetName*' は見つかりませんでした。|
 |[CA0063](ca0063.md)|規則セット ファイルまたはその依存ルール セット ファイルのいずれかの読み込みに失敗しました。|
 |[CA0064](ca0064.md)|指定された規則セットに FxCop ルールが含まれていないために、分析は実行されません。|
-|[CA0065](ca0065.md)|サポートされていないメタデータ構造: 型 '*TypeName*'プロパティと同じ名前のフィールドの両方を含む'*PropertyFieldName*'|
+|[CA0065](ca0065.md)|サポートされていないメタデータ構造:型 '*TypeName*'プロパティと同じ名前のフィールドの両方を含む'*PropertyFieldName*'|
 |[CA0066](ca0066.md)|値 '*VersionID*' に提供される、 **/targetframeworkversion**認識されているバージョンではありません。|
 |[CA0067](ca0067.md)|ディレクトリが見つかりません。|
 |[CA0068](ca0068.md)|デバッグ ターゲット アセンブリの情報が見つかりませんでした *'AssemblyName'* します。|
@@ -57,14 +52,13 @@ ms.locfileid: "49225018"
 |[CA0070](ca0070.md)|アセンブリまたはセキュリティのアクセス許可のための型を読み込むことができません。|
 |[CA0501](ca0501.md)|レポート出力を読み取ることができません。|
 |[CA0502](ca0502.md)|サポートされていない言語です。|
-|[CA0503](ca0503.md))|プロパティは、推奨されていません。 優先するプロパティを使用します。|
+|[CA0503](ca0503.md)|プロパティが非推奨とされます。 優先するプロパティを使用します。|
 |[CA0504](ca0504.md)|存在しないために、ルールのディレクトリは無視されました|
-|[CA0505](ca0505.md)|プロパティは、推奨されていません。 優先するプロパティを使用します。|
+|[CA0505](ca0505.md)|プロパティが非推奨とされます。 優先するプロパティを使用します。|
 |[FxCopCmd エラー](fxcopcmd-errors.md)|マネージ コード分析エラー。|
-|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|コード分析チェックイン ポリシー エラーです。|
 
 ## <a name="related-sections"></a>関連項目
 
-- [セキュリティで保護されたコードの記述に関するガイドライン](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
+- [セキュリティで保護されたコードの記述に関するガイドライン](http://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [マネージド コードの品質の分析](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
 - [アプリケーション ライフ サイクル管理ツールのエラーのトラブルシューティングに関するリソース](http://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

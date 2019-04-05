@@ -30,7 +30,7 @@ XML エディターは、ソリューション内のスキーマを検索する�
 | *msbuild.xsd* | MSBuild の make ファイルのスキーマ"<http://schemas.microsoft.com/developer/msbuild/2003>"。 |
 | *msdata.xsd* | <xref:System.Data.DataSet> クラスによって追加される XSD 注釈用のスキーマ (urn:schemas-microsoft-com:xml-msdata) です。 |
 | *msxsl.xsd* | Microsoft XSLT スクリプト ブロック拡張用のスキーマ (urn:schemas-microsoft-com:xslt) です。 |
-| *SnippetFormat.xsd* | コード スニペットの XML ファイルのスキーマです。 例については、次を参照してください。 *%VSInstallDir%\VC#\Expansions*します。 |
+| *SnippetFormat.xsd* | コード スニペットの XML ファイルのスキーマです。 例については、*%VSInstallDir%\VC#\Expansions*を参照してください。 |
 | *Soap1.1.xsd* | 簡易オブジェクト アクセス プロトコル (SOAP) 1.1 でのスキーマ http://schemas.xmlsoap.org/soap/envelope/します。 |
 | *Soap1.2.xsd* | 簡易オブジェクト アクセス プロトコル 1.2 のスキーマです。 |
 | *SiteMapSchema.xsd* | ASP.NET サイト マップ XML ファイルのスキーマ"<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>"。 |

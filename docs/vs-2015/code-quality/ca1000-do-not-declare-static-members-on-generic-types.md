@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1000: ジェネリック型で静的メンバーを宣言しません |Microsoft Docs'
-ms.custom: ''
+title: CA1000:ジェネリック型で静的メンバーを宣言しません |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1000
 - DoNotDeclareStaticMembersOnGenericTypes
@@ -20,21 +15,21 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 202befcad3dfcdfecb2c6fea5ba1362a105f904c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 127a8cf5382e4822ae2a6b52e03b74682f53e2d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819538"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973030"
 ---
-# <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: ジェネリック型の静的メンバーを宣言しません
+# <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000:ジェネリック型の静的メンバーを宣言しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotDeclareStaticMembersOnGenericTypes|
 |CheckId|CA1000|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
@@ -59,7 +54,7 @@ GenericType<int>.StaticMethod();
 someObject.GenericMethod<int>();
 ```
 
- 一般に、型引数が、メンバーを呼び出すときに指定する必要があるないように、この両方の以前の宣言を回避する必要があります。 これにより、構文での非ジェネリックの構文の違いもなく、ジェネリック型のメンバーを呼び出すことです。 詳細については、次を参照してください。 [ca 1004: ジェネリック メソッドは、型パラメーターを指定する必要があります](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)します。
+ 一般に、型引数が、メンバーを呼び出すときに指定する必要があるないように、この両方の以前の宣言を回避する必要があります。 これにより、構文での非ジェネリックの構文の違いもなく、ジェネリック型のメンバーを呼び出すことです。 詳細については、次を参照してください。 [ca 1004。ジェネリック メソッドは、型パラメーターを指定する必要があります](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、静的メンバーを削除またはインスタンス メンバーを変更します。
@@ -68,22 +63,19 @@ someObject.GenericMethod<int>();
  この規則による警告は抑制しないでください。 ジェネリックでは簡単に理解して使用する構文を提供するには、習得に必要なされ、新しいライブラリの導入速度を向上する時間が短縮されます。
 
 ## <a name="related-rules"></a>関連規則
- [CA1005: ジェネリック型でパラメーターを使用しすぎないでください](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+ [CA1005:ジェネリック型で過剰なパラメーターを回避します。](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1010: コレクションは、ジェネリック インターフェイスを実装しなければなりません](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+ [CA 1010:コレクションは、ジェネリック インターフェイスを実装する必要があります。](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1002: ジェネリック リストを公開しません](../code-quality/ca1002-do-not-expose-generic-lists.md)
+ [CA 1002:ジェネリック リストを公開しません](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
- [CA1006: ジェネリック型をメンバー シグネチャ内で入れ子にしません](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+ [CA 1006:ジェネリック型メンバー シグネチャ内で入れ子にしません](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004: ジェネリック メソッドは型パラメーターを指定しなければなりません](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+ [CA 1004:ジェネリック メソッドは、型パラメーターを指定する必要があります。](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
- [CA1003: 汎用イベント ハンドラーのインスタンスを使用します](../code-quality/ca1003-use-generic-event-handler-instances.md)
+ [CA 1003:汎用イベント ハンドラーのインスタンスを使用して、](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007: 適切な場所にジェネリックを使用します](../code-quality/ca1007-use-generics-where-appropriate.md)
+ [CA 1007:適切な場所にジェネリックを使用します。](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>関連項目
  [ジェネリック](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
-
-
-

@@ -1,13 +1,8 @@
 ---
 title: デバッガーでコード間の移動 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -25,13 +20,13 @@ ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a38d078356acf4e78aeeb97687126616d027351f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750578"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973680"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>デバッガーでのコード間の移動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +38,13 @@ ms.locfileid: "51750578"
   
  緑色の矢印もデバッガーを起動 (同じ**F5**)。  
   
- ![DBG&#95;基本&#95;開始&#95;デバッグ](../debugger/media/dbg-basics-start-debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg-basics-start-debugging.png "DBG_Basics_Start_Debugging")  
   
  アタッチされたデバッガーでアプリを開始するには、その他のいくつかの方法があります**F11** ([コードにステップ イン](#BKMK_Step_into__over__or_out_of_the_code))、 **F10** ([ステップ オーバー](#BKMK_Step_over_Step_out))、または使用して**カーソルまで実行**します。  これらのオプションの機能には、情報は、このトピックの他のセクションを参照してください。  
   
  デバッグすると、黄色の行に次に実行されるコードが示します。  
   
- ![DBG&#95;基本&#95;中断&#95;モード](../debugger/media/dbg-basics-break-mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg-basics-break-mode.png "DBG_Basics_Break_Mode")  
   
  デバッグ中などのコマンドの間で切り替えることができます**f5 キーを押して**、 **F11**を簡単に確認するコードを取得 (ブレークポイント) など、このトピックで説明されているその他の機能を使用しています。  
   
@@ -111,7 +106,7 @@ ms.locfileid: "51750578"
   
 -   **コードを手動で中断する**  
   
-     実行中のアプリで次に実行されるコード行で実行を中断するには、 **[デバッグ]**、 **[すべて中断]** の順にクリックします (キーボード: **Ctrl+Alt+Break**)。  
+     実行中のアプリのコードの使用可能な次の行を分割するには、**デバッグ**、**すべて中断**(キーボード。**Ctrl + Alt + Break**)。  
   
      対応付けられたソースまたはシンボル (.pdb) ファイルがないため、コードの実行が中断された場合は、デバッガーによって **[ソース ファイルが見つかりません]** または **[シンボルが見つかりません]** ページが表示され、該当するファイルを見つけるために役立ちます。 [シンボル (.pdb) ファイルとソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)に関する記事をご覧ください。 それらのサポート ファイルにアクセスできない場合は、[逆アセンブル] ウィンドウでアセンブリ命令をデバッグできます。  
   
@@ -181,7 +176,7 @@ ms.locfileid: "51750578"
   
  デバッグ中に特定のシステム コンポーネントのシンボルを読み込むには:  
   
-1.  [モジュール] ウィンドウを開きます (キーボード: **Ctrl+Alt+U**)。  
+1.  [モジュール] ウィンドウを開きます (キーボード。**Ctrl + Alt + U**)。  
   
 2.  シンボルを読み込むモジュールを選択します。  
   
@@ -191,8 +186,3 @@ ms.locfileid: "51750578"
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> マネージド コード内のプロパティと演算子にステップ インする  
  デバッガーは既定ではマネージド コード内のプロパティと演算子をステップ オーバーします。 ほとんどの場合、これにより正しくデバッグを実行できます。 プロパティや演算子にステップ インを有効にするには、**デバッグ** / **オプション**します。 **[デバッグ]** / **[全般]** ページで、 **[プロパティおよび演算子をステップ オーバーする (マネージドのみ)]** チェック ボックスをオフにします。
-
-
-
-
-

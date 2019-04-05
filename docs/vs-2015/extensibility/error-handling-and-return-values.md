@@ -1,14 +1,9 @@
 ---
 title: エラー処理と戻り値 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Studio SDK], handling
 - error handling
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d55dea94e55e676a1ca37b46bcaa35a2a7a508e1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b45a903e9982ec4bbc6c567601e43d6156397d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728169"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972197"
 ---
 # <a name="error-handling-and-return-values"></a>エラー処理と戻り値
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +57,6 @@ Vspackage と COM のエラーと同じアーキテクチャを使用します�
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [SetErrorInfo (コンポーネント オートメーション)](http://msdn.microsoft.com/en-us/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
- [GetErrorInfo](http://msdn.microsoft.com/en-us/03317526-8c4f-4173-bc10-110c8112676a)   
- [ISupportErrorInfo インターフェイス](http://msdn.microsoft.com/en-us/42d33066-36b4-4a5b-aa5d-46682e560f32)
-
+ [SetErrorInfo (コンポーネント オートメーション)](http://msdn.microsoft.com/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
+ [GetErrorInfo](http://msdn.microsoft.com/03317526-8c4f-4173-bc10-110c8112676a)   
+ [ISupportErrorInfo インターフェイス](http://msdn.microsoft.com/42d33066-36b4-4a5b-aa5d-46682e560f32)

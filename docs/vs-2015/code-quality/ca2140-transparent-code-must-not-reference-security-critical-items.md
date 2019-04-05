@@ -1,14 +1,9 @@
 ---
-title: 'Ca 2140: 透過的コードはセキュリティ上重要な項目を参照する必要がありますされません |Microsoft Docs'
-ms.custom: ''
+title: CA2140:透過的なコードは、セキュリティ上重要な項目を参照する必要があります |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2129
 - SecurityTransparentCodeShouldNotReferenceNonpublicSecurityCriticalCode
@@ -22,14 +17,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb6c01fc281384aec28ae46dbb1466686626df8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 82b58cc0287644a4ca21bf6333bf791b3c02e924
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892117"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975859"
 ---
-# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: 透過的コードは、セキュリティ上重要な項目を参照してはならない
+# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140:透過的コードは、セキュリティ上重要な項目を参照してはならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -83,6 +78,3 @@ ms.locfileid: "49892117"
  <xref:System.Security.SecurityTransparentAttribute>
  <xref:System.Security.SecurityTreatAsSafeAttribute>
  <xref:System.Security?displayProperty=fullName>
-
-
-

@@ -19,7 +19,7 @@ ms.locfileid: "57526013"
 
 この記事では、デバッガーのウィンドウとダイアログ ボックスについて説明します。 XSLT に固有のデバッグ動作を持つユーザー インターフェイス部分についてのみ説明します。
 
-詳細については、次を参照してください。、[デバッグ用ユーザー インターフェイス リファレンス](../debugger/debugging-user-interface-reference.md)します。
+詳細については、、[デバッグ用ユーザー インターフェイス リファレンス](../debugger/debugging-user-interface-reference.md)を参照してください。
 
 ## <a name="locals-window"></a>[ローカル] ウィンドウ
 

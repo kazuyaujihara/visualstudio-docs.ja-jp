@@ -14,19 +14,19 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05842c274c27165a7065cb90fda60dd75da2a659
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: da8eb2f21cbe7ef611aaba863e853a2fe7a71753
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840339"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018312"
 ---
-# <a name="expected-"></a>'@' が必要です。
+# <a name="expected-"></a>予想 '\@'
 使用して条件付きコンパイル ステートメントで使用する変数を作成しようとしています。、`@set`ステートメントでは、配置しませんでしたが、アット マーク"**@**"変数名の前にします。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   追加するアット"**@**"変数名の直前。 例:  
+-   追加するアット"**@**"変数名の直前。 例えば:  
   
     ```JavaScript  
     @set @myvar = 1  

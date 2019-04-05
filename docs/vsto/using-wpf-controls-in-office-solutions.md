@@ -21,7 +21,7 @@ ms.locfileid: "54869763"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Office ソリューションで WPF コントロールを使用します。
 
-Visual Studio の Office 開発ツールを使用して作成されたソリューションは、Windows フォーム コントロールを使用して直接操作することを前提としていますが、ソリューションで WPF コントロールを使用することもできます。 Windows Presentation Foundation (WPF) は、ユーザー インターフェイスをデザインするときに Windows フォームの代わりとして使用できます。 WPF では、UI、メディア、および文書を取り込むための新しい手法として、Extensible Application Markup Language (XAML) というマークアップ言語を使用します。 詳細については、次を参照してください。 [WPF の概要](../designers/introduction-to-wpf.md)します。
+Visual Studio の Office 開発ツールを使用して作成されたソリューションは、Windows フォーム コントロールを使用して直接操作することを前提としていますが、ソリューションで WPF コントロールを使用することもできます。 Windows Presentation Foundation (WPF) は、ユーザー インターフェイスをデザインするときに Windows フォームの代わりとして使用できます。 WPF では、UI、メディア、および文書を取り込むための新しい手法として、Extensible Application Markup Language (XAML) というマークアップ言語を使用します。 詳細については、[WPF の概要](../designers/introduction-to-wpf.md)を参照してください。
 
 [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -83,7 +83,7 @@ Office ソリューションの UI 要素に WPF コントロールを直接追�
 
      Windows フォーム ユーザー コントロール内の WPF ユーザー コントロールをホストする <xref:System.Windows.Forms.Integration.ElementHost> オブジェクトが自動的に作成されます。
 
-8.  Windows フォーム ユーザー コントロールを文書またはブックにプログラムで追加するコードを作成します。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+8.  Windows フォーム ユーザー コントロールを文書またはブックにプログラムで追加するコードを作成します。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
 
     > [!NOTE]
     > Windows フォーム ユーザー コントロールをデザイナー上の文書またはワークシートにドラッグすることはできません。

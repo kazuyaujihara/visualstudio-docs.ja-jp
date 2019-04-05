@@ -21,13 +21,13 @@ ms.locfileid: "56718310"
 Vspackage では、呼び出すことによって、DTE オブジェクトを取得できます、 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> DTE オブジェクトの型を持つメソッド。 Managed Extensibility Framework (MEF) 拡張機能でインポートできる<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>を呼び出して、<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>メソッドの型を持つ<xref:EnvDTE.DTE>します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。
 
 ## <a name="getting-the-dte-object"></a>DTE オブジェクトを取得します。
 
 ### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>DTE オブジェクトをサービス プロバイダーから取得するには
 
-1.  という名前の c# VSIX プロジェクトを作成する`DTETest`します。 エディター分類子の項目テンプレートを追加し、名前`DTETest`します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)します。
+1.  という名前の c# VSIX プロジェクトを作成する`DTETest`します。 エディター分類子の項目テンプレートを追加し、名前`DTETest`します。 詳細については、[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)を参照してください。
 
 2.  プロジェクトには、次のアセンブリ参照を追加します。
 

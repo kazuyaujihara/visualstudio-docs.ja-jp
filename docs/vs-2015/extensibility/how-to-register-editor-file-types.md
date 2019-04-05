@@ -1,28 +1,23 @@
 ---
-title: '方法: エディター ファイルの種類の登録 |Microsoft Docs'
-ms.custom: ''
+title: '方法: エディターのファイルの種類の登録 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
 ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 39b1cde8dec71df9cb85bf737c23c883fbdcd615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777263"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978109"
 ---
-# <a name="how-to-register-editor-file-types"></a>方法: エディター ファイルの種類の登録
+# <a name="how-to-register-editor-file-types"></a>方法: エディターのファイルの種類を登録します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 エディターのファイルの種類を登録する最も簡単な方法は、の一部として提供されている登録属性を使用して、 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] managed package framework (MPF) クラス。 パッケージをネイティブで実装している場合[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]、エディターなど、関連する拡張機能を登録するレジストリ スクリプトを記述することもできます。  
@@ -133,4 +128,3 @@ ms.locfileid: "51777263"
     ```  
   
      GUID の文字列は、Resource.h ファイルの BscEdit プロジェクトで定義されます。
-

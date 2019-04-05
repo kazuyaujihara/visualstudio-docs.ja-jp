@@ -1,12 +1,9 @@
 ---
 title: '方法: 追加、更新、または WCF データ サービス参照の削除 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 helpviewer_keywords:
 - service references [Visual Studio]
 - WCF Data Service reference
@@ -17,13 +14,13 @@ ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b14a83b195809dff89fa89bb6fcf91050e2f8a0c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8bc4ebbb8ae22604d7ec803fd4234839a17694de
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192258"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974459"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>方法: WCF データ サービス参照を追加、更新、または削除する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,4 +96,3 @@ A *service リファレンス*アクセスを 1 つまたは複数のプロジ�
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio での Windows Communication Foundation サービスと WCF データ サービス](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-

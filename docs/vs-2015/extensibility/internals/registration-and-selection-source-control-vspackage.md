@@ -1,27 +1,22 @@
 ---
 title: 登録と選択 (ソース管理 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 636e70357c23059a505d657af0078653de413976
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 692f2a9f34edd41839179f7229e079ec8e791800
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976643"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>登録と選択 (ソース管理 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,19 +33,19 @@ ms.locfileid: "51764456"
 ### <a name="registry-entries"></a>レジストリ エントリ  
  ソース管理のパッケージには、次の 3 つのプライベート Guid が必要があります。  
   
-- パッケージ GUID: これは、メイン ソース コントロールの実装 (このセクションでは ID_Package と呼ばれます) を含むパッケージの GUID です。  
+- パッケージ GUID:これは、メイン ソース コントロールの実装 (このセクションでは ID_Package と呼ばれます) を含むパッケージの GUID です。  
   
-- ソース コントロールの GUID。 これにソース管理 VSPackage の使用、Visual Studio のソース コントロールのスタブを登録する guid し、コマンド UI コンテキスト GUID としても使用されます。 ソース管理サービスの GUID は GUID のソース管理下で登録されています。 例では、ソース コントロールの GUID は ID_SccProvider と呼ばれます。  
+- ソース コントロールの GUID。ソース管理 VSPackage の使用、Visual Studio のソース コントロールのスタブを登録する GUID は、このコマンド UI コンテキスト GUID としても使用されます。 ソース管理サービスの GUID は GUID のソース管理下で登録されています。 例では、ソース コントロールの GUID は ID_SccProvider と呼ばれます。  
   
-- ソース コントロール サービス GUID: これは、プライベート サービス (このセクションでは SID_SccPkgService と呼ばれます)、Visual Studio で使用される GUID。 さらに、ソース管理パッケージは、Vspackage、ツール ウィンドウの他の Guid を定義する必要があります。  
+- ソース管理サービス GUID:これは、プライベート サービス (このセクションでは SID_SccPkgService と呼ばれます)、Visual Studio で使用される GUID です。 さらに、ソース管理パッケージは、Vspackage、ツール ウィンドウの他の Guid を定義する必要があります。  
   
   次のレジストリ エントリは、ソース管理 VSPackage によって行う必要があります。  
   
 |キー名|エントリ|  
 |--------------|-------------|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(既定値) = 対応する rg_sz: {ID_SccProvider}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(default) = rg_sz:{ID_SccProvider}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(既定値) = 対応する rg_sz:\<パッケージのフレンドリ名 ><br /><br /> サービス = 対応する rg_sz: {SID_SccPkgService}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(既定値) = 対応する rg_sz: #\<ローカライズされた名前のリソース ID ><br /><br /> パッケージ = 対応する rg_sz: {ID_Package}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(既定値) = 対応する rg_sz: #\<ローカライズされた名前のリソース ID ><br /><br /> Package = rg_sz:{ID_Package}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (なおキー名、`SourceCodeControl`で既に使用されて[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]を選択肢としてご利用いただけませんと\<PackageName >.)|(既定値) = 対応する rg_sz: {ID_Package}|  
   
 ## <a name="selecting-a-source-control-package"></a>ソース管理パッケージを選択します。  
@@ -91,4 +86,3 @@ ms.locfileid: "51764456"
  [機能](../../extensibility/internals/source-control-vspackage-features.md)   
  [ソース管理プラグインの作成](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [VSPackage](../../extensibility/internals/vspackages.md)
-

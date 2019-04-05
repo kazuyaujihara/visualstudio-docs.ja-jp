@@ -1,29 +1,25 @@
 ---
-title: 'エラー: 関数の評価&#39;関数&#39;がタイムアウトし、安全でない方法で中止されるために必要な |Microsoft Docs'
-ms.custom: ''
+title: エラー :関数の評価&#39;関数&#39;がタイムアウトし、安全でない方法で中止されるために必要な |Microsoft Docs
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 ms.assetid: 0a9f70ed-21ad-4a10-8535-b9c5885ad8f4
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: abf50ba94992a599fbb2e64aa9b1e551dde3cbdf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5d5a992751e31f21a7875091b4c8b1be9bd0bd0a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766496"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976594"
 ---
-# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>エラー: 関数の評価&#39;関数&#39;タイムアウトしたため、安全でない方法で中止する必要があります。
+# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>エラー :関数の評価&#39;関数&#39;タイムアウトしたため、安全でない方法で中止する必要があります。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-メッセージの全文: 関数 'function' の評価がタイムアウトし、安全でない方法で中止する必要があります。 これがターゲット プロセスを壊れている可能性があります。 
+完全なメッセージ テキスト:関数 'function' を評価すると、タイムアウトし、安全でない方法で中止する必要があります。 これがターゲット プロセスを壊れている可能性があります。 
 
 .NET オブジェクトの状態を検査しやすいように、デバッガーは (通常はプロパティの getter メソッドと ToString 関数) の追加のコードを実行するデバッグ対象のプロセスを自動的に強制されます。 ほとんどすべてのシナリオでは、これらの関数は、すぐに完了し、非常に簡単にデバッグします。 ただし、デバッガーは、サンド ボックスで、アプリケーションを実行しません。 その結果、プロパティ get アクセス操作子またはハングするネイティブ関数を呼び出す ToString メソッドは回復可能なことができない可能性がある、タイムアウトが長につながります。 このエラー メッセージが発生した場合は、この問題が発生します。
  
@@ -33,7 +29,7 @@ ms.locfileid: "51766496"
  
 この問題を次の 3 つの考えられる解決策があります。
  
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>解決方法 1: プロパティの get アクセス操作子または ToString メソッドの呼び出しからデバッガーを防止します。
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>解決方法 1:デバッガーのプロパティの get アクセス操作子または ToString メソッドの呼び出しを防ぐ
  
 エラー メッセージでは、デバッガーを呼び出すしようとしました。 関数の名前を確認します。 この関数を変更する場合は、プロパティ get アクセス操作子または ToString メソッドの呼び出しからデバッガーを回避できます。 次のいずれかの操作を行います。
  
@@ -43,18 +39,10 @@ ms.locfileid: "51766496"
     - または -
 * (のプロパティ ゲッター)配置、`[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]`プロパティの属性。 API の互換性の理由から、プロパティを維持する必要があるメソッドがある場合に役立ちます。 が、メソッドが本当に必要です。
  
-### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>解決方法 2: 評価を中止するデバッガーを求める対象のコードがあります。
+### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>解決方法 2:評価を中止するデバッガーを求める対象のコードがあります。
  
 エラー メッセージでは、デバッガーを呼び出すしようとしました。 関数の名前を確認します。 かどうかは、プロパティ get アクセス操作子または ToString メソッドが正常に実行することがあります失敗し、特に状況では、問題を別のスレッドのコードを実行するコードする必要があります実装関数を呼び出すことができます`System.Diagnostics.Debugger.NotifyOfCrossThreadDependency`関数を中止するデバッガーを依頼するには。評価します。 このソリューションでは、明示的に、これらの関数を評価することも可能ですが、既定の動作は NotifyOfCrossThreadDependency 呼び出しが発生したときに実行を停止します。
  
-### <a name="solution-3-disable-all-implicit-evaluation"></a>解決方法 3: すべての暗黙的な評価を無効にします。
+### <a name="solution-3-disable-all-implicit-evaluation"></a>解決方法 3:すべての暗黙的な評価を無効にします。
  
 以前のソリューションで問題が解決しない場合に移動*ツール* / *オプション*、設定をオフにし、*デバッグ* /  *一般的な* / *プロパティの評価とその他の暗黙的な関数呼び出しを有効にする*します。 これは、ほとんどの暗黙的な関数の評価版ソフトウェアを無効にし、問題を解決する必要があります。
-
-
-
-  
-
-
-
-

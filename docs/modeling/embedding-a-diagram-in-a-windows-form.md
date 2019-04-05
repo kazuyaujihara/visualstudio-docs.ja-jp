@@ -67,7 +67,7 @@ DSL 図は、Visual Studio ウィンドウに表示される、Windows のコン
 
 ## <a name="update-the-form-using-store-events"></a>ストア イベントを使用してフォームを更新します。
 
-1.  フォーム デザイナーでは追加、 **ListBox**という`listBox1`します。 これにより、モデルに要素の一覧が表示されます。 使用して、モデルと同期されている*イベント格納*します。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。
+1.  フォーム デザイナーでは追加、 **ListBox**という`listBox1`します。 これにより、モデルに要素の一覧が表示されます。 使用して、モデルと同期されている*イベント格納*します。 詳細については、[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)を参照してください。
 
 2.  カスタム コード ファイルでさらにメソッドをオーバーライド DocView クラス。
 

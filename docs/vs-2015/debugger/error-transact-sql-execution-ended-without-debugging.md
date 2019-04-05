@@ -1,14 +1,9 @@
 ---
-title: 'エラー: TRANSACT-SQL の実行、デバッグされないで終了 |Microsoft Docs'
-ms.custom: ''
+title: エラー :Transact SQL の実行、デバッグされないで終了 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.sqlde_sql_executed_but_not_debugged
 dev_langs:
@@ -21,15 +16,15 @@ ms.assetid: 7a4d4999-3973-4339-ba6a-f0d19bcb1d4a
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b67900f02a81a6a28279268c3fe6fa067bcdaedc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 910b84e7a024547208ea2e7ae1d6a6897cf60893
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787641"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58978442"
 ---
-# <a name="error-transact-sql-execution-ended-without-debugging"></a>Transact-SQL の実行は、デバッグされないで終了しました。
+# <a name="error-transact-sql-execution-ended-without-debugging"></a>エラー :Transact-SQL の実行は、デバッグされないで終了しました
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このエラーは、Transact-SQL プロシージャまたは SQLCLR プロシージャをデバッグしようとしたときに、デバッガーが SQL Server からデバッグ メッセージを受信しなかった場合に発生します。  
@@ -48,17 +43,14 @@ ms.locfileid: "51787641"
   
   このエラーを解決するには、次の手順を行う必要があります。  
   
-- アクセス許可の設定を確認します。 詳細については、次を参照してください。[方法: デバッグの SQL Server のアクセス許可設定](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)します。  
+- アクセス許可の設定を確認します。 詳細については、「[方法 :デバッグ用の SQL Server のアクセス許可の設定](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)します。  
   
 - SQL デバッグが正しく設定されていることを確認します。  
   
 - ネットワーク管理者またはデータベース管理者に問い合わせます。  
   
 ## <a name="see-also"></a>関連項目  
- [SQL デバッグの設定](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [方法: デバッグ用の SQL Server のアクセス許可の設定](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [SQL デバッグの設定](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [方法: デバッグ用の SQL Server のアクセス許可を設定します。](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)   
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

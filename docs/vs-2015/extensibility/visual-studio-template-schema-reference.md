@@ -1,14 +1,9 @@
 ---
 title: Visual Studio テンプレート スキーマ参照 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - VSTEMPLATE files
 - Visual Studio templates, schema
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b49b15047d11e8d09690c90dd3011700481fcef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a15a08dc674940897bf465946efd2ec350cc7c42
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964278"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio テンプレート スキーマ参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51817426"
 |[フォルダー](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> フォルダー|名前|  
 ||[非推奨]|--|  
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|  
-|[非表示](../extensibility/hidden-element-visual-studio-templates.md)|--|--|  
+|[[非表示]](../extensibility/hidden-element-visual-studio-templates.md)|--|--|  
 |[アイコン](../extensibility/icon-element-visual-studio-templates.md)|--|Package<br /><br /> ID|  
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|  
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|  
@@ -78,7 +73,7 @@ ms.locfileid: "51817426"
 |[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|--|--|  
 |[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|  
 |[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|RequiredPlatformVersion|--|  
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> プロジェクト<br /><br /> 参照<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|  
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Project<br /><br /> 参照<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|名前<br /><br /> 説明<br /><br /> アイコン<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> 非表示<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|  
 |[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|--|--|  
 |[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|--|--|  
@@ -88,4 +83,4 @@ ms.locfileid: "51817426"
   
 ## <a name="see-also"></a>関連項目  
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
- [方法 : スタート キットを作成する](../ide/how-to-create-starter-kits.md)
+ [方法: スタート キットを作成する](../ide/how-to-create-starter-kits.md)

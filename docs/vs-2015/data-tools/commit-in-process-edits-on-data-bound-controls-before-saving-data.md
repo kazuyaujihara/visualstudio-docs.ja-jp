@@ -1,35 +1,32 @@
 ---
 title: データを保存する前にデータ バインド コントロールの中の編集をコミット |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 - C++
 - aspx
 helpviewer_keywords:
-- commiting edited records
+- committing edited records
 - data-bound controls, in-process edits
-- DataBinding class, commiting edited records
-- hierarchical update, commiting edited records
-- BindingSource class, commiting edited records
+- DataBinding class, committing edited records
+- hierarchical update, committing edited records
+- BindingSource class, committing edited records
 - EndEdit method
 ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3af1534e6436eec2eac1f294be8c2428c949ce9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d703ef271dfec09b277db2c2702679b8087b4b88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296036"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974322"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>データの保存前にデータ バインド コントロールで実行中の編集をコミットする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +34,7 @@ ms.locfileid: "49296036"
   
 データ バインド コントロール内の値を編集するには、ユーザーを更新された値に、コントロールがバインドされている基になるデータ ソースにコミットする現在のレコードを移動する必要があります。 項目をドラッグすると、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)を削除する最初の項目のフォームへにコードが生成されます、**保存**ボタン クリックしてイベントの<xref:System.Windows.Forms.BindingNavigator>します。 このコードは、<xref:System.Windows.Forms.BindingSource.EndEdit%2A>のメソッド、<xref:System.Windows.Forms.BindingSource>します。 呼び出しでは、そのため、<xref:System.Windows.Forms.BindingSource.EndEdit%2A>メソッドは、最初にのみ生成<xref:System.Windows.Forms.BindingSource>フォームに追加されています。  
   
- <xref:System.Windows.Forms.BindingSource.EndEdit%2A>呼び出しは、現在編集中のデータ バインド コントロールの処理の変更をコミットします。 そのため、データ バインド コントロールがまだ場合フォーカスをクリックして、**保存**ボタン、保留中のすべての編集コントロールは、実際の保存の前にコミットされたことで (、`TableAdapterManager.UpdateAll`メソッド)。  
+ <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼び出しは、現在編集中のデータ バインド コントロールで実行されている変更をコミットします。 したがって、あるデータ バインド コントロールにフォーカスがある状態で **[保存]** ボタンをクリックすると、実際の保存 (`TableAdapterManager.UpdateAll` メソッド) が実行される前に、そのコントロール内のすべての保留中の編集がコミットされます。  
   
  自動的に変更をコミットするアプリケーションを構成するには、ユーザーが、保存の一部として変更をコミットせずにデータを保存しようとしています。 場合でもプロセス。  
   
@@ -61,4 +58,3 @@ ms.locfileid: "49296036"
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのデータへの Windows フォーム コントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [階層更新](../data-tools/hierarchical-update.md)
-

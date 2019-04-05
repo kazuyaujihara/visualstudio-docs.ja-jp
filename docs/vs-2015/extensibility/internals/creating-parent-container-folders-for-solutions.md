@@ -1,27 +1,22 @@
 ---
 title: ソリューションの親コンテナーのフォルダーを作成する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0a65595b7dabc28a6851820141a71460d84a4b73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b756da118943dd94bfd3bc5220dfc398c60e2a9e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762547"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58975379"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>ソリューションの親コンテナー フォルダーの作成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ ms.locfileid: "51762547"
 |機能|tSource コントロール プラグイン API バージョン 1.1|ソース管理プラグイン API バージョン 1.2|  
 |-------------|----------------------------------------------|---------------------------------------------|  
 |ソース コード管理にソリューションを追加します。|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|ソース管理対象のソリューションにプロジェクトを追加します。|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()**注:** Visual Studio では、ソリューションが、SUR. の直接の子であります。|  
+|ソース管理対象のソリューションにプロジェクトを追加します。|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()**に注意してください。** Visual Studio では、ソリューションが、SUR. の直接の子であります。|  
   
 ## <a name="examples"></a>使用例  
  次の表では、2 つの例を示します。 どちらの場合で、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]までソース管理下にあるソリューションの保存先のユーザーの入力を求め、 *user_choice*変換先として指定されます。User_choice を指定すると、ソース コントロールの変換先のユーザーに確認しないで、ソリューションと 2 つのプロジェクトが追加されます。  
@@ -63,7 +58,7 @@ ms.locfileid: "51762547"
 |ソリューションが含まれています|ディスク上の場所に|データベースの既定の構造|  
 |-----------------------|-----------------------|--------------------------------|  
 |sln1.sln<br /><br /> Web1<br /><br /> Web2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*user_choice*/sln1<br /><br /> $/*user_choice*  /C/Web1<br /><br /> $/*user_choice*/Web2|  
-|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*user_choice*web1/D<br /><br /> $/*user_choice*  /sln1 win1|  
+|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*user_choice*web1/D<br /><br /> $/*user_choice*/sln1/win1|  
   
  操作が取り消されたまたはエラーのため失敗にかかわらず、サー フォルダーとサブフォルダーが作成されます。 キャンセルまたはエラー状態で自動的に削除されません。  
   
@@ -73,4 +68,3 @@ ms.locfileid: "51762547"
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグイン API バージョン 1.2 の新機能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
-

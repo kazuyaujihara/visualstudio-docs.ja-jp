@@ -1,14 +1,9 @@
 ---
-title: 'チュートリアル: C/C++ コードを分析による障害の |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: C/C++ コードの分析による障害の |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, walkthroughs
@@ -18,15 +13,15 @@ ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e82444513c4e8e766cb7c3201f54089aee3c817
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962804"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>チュートリアル : C/C++ コード分析による障害の検出
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>チュートリアル: C/C++ コード分析による障害の検出
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、C/C++ コードのコード分析ツールを使用して潜在的なコードの欠陥の C/C++ コードを分析する方法を示します。  
@@ -57,7 +52,7 @@ ms.locfileid: "51782311"
   
      デモ ソリューションを今すぐ設定**ソリューション エクスプ ローラー**します。  
   
-2.  **ビルド** メニューのをクリックして**ソリューションのリビルド**します。  
+2.  **[ビルド]** メニューで、**[ソリューションのリビルド]** をクリックします。  
   
      ソリューションは、エラーまたは警告なしでビルドします。  
   
@@ -83,7 +78,7 @@ ms.locfileid: "51782311"
   
 2.  **エラー一覧**、次の警告をダブルクリックします。  
   
-     警告 C6230: 意味の異なる型の間の暗黙的なキャスト: HRESULT をブール値のコンテキストを使用しています。  
+     警告 C6230:意味の異なる型の間の暗黙的なキャスト: HRESULT をブール値のコンテキストを使用しています。  
   
      コード エディターには、関数で、警告の原因となった行が表示されます。`bool``ProcessDomain()`します。 この警告は、HRESULT が使用されている 'if' ステートメントのブール型の結果が必要な場合を示します。  
   
@@ -95,7 +90,7 @@ ms.locfileid: "51782311"
   
 4.  **エラー一覧**、次の警告をダブルクリックします。  
   
-     警告 C6282: 不適切な演算子: テストのコンテキストの定数を代入します。 対象の = =」でしょうか。  
+     警告 C6282:不適切な演算子: テストのコンテキストの定数を代入します。 対象の = =」でしょうか。  
   
 5.  等しいかどうかをテストして、この警告を解決します。 コードは次のコードのようになります。  
   
@@ -137,7 +132,7 @@ ms.locfileid: "51782311"
   
 6.  **エラー一覧**、次の警告をダブルクリックします。  
   
-     警告 C6011: NULL ポインター 'newNode' を逆参照します。  
+     警告 C6011:NULL ポインター 'newNode' を逆参照します。  
   
      この警告は、戻り値を確認する呼び出し元でエラーを示します。 この場合の呼び出しで**AllocateNode** NULL 値を返す可能性があります (AllocateNode 関数の宣言の annotations.h ヘッダー ファイルを参照してください)。  
   
@@ -179,7 +174,7 @@ ms.locfileid: "51782311"
   
 3.  **エラー一覧**、次の警告をダブルクリックします。  
   
-     警告 C6011: NULL ポインター 'node' を逆参照します。  
+     警告 C6011:'Node' の NULL ポインターの逆参照します。  
   
      この警告は、関数に渡されたノードが、null であることを示し、警告が発生した行番号を示します。  
   
@@ -201,6 +196,3 @@ ms.locfileid: "51782311"
   
 ## <a name="see-also"></a>関連項目  
  [チュートリアル: マネージド コードの分析によるコード障害の検出](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-

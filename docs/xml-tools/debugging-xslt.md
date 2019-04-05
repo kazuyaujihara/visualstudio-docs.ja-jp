@@ -88,7 +88,7 @@ namespace ConsoleApplication
 
 ## <a name="xslt-profiler"></a>XSLT プロファイラー
 
-[XSLT プロファイラー](../xml-tools/xslt-profiler.md)はにより、開発者は、計測、評価、および詳細な XSLT パフォーマンス レポートを作成して XSLT コード内のパフォーマンスに関連する問題を特定するツールです。 詳細については、次を参照してください。 [XSLT プロファイラー](../xml-tools/xslt-profiler.md)します。
+[XSLT プロファイラー](../xml-tools/xslt-profiler.md)はにより、開発者は、計測、評価、および詳細な XSLT パフォーマンス レポートを作成して XSLT コード内のパフォーマンスに関連する問題を特定するツールです。 詳細については、[XSLT プロファイラー](../xml-tools/xslt-profiler.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

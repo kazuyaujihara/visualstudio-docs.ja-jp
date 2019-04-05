@@ -29,7 +29,7 @@ ms.locfileid: "56637595"
 
 2. メモリ内データ ソースで変更されたデータを使用して、データベースを更新します。 これは、データ ソースが SQL Server や Microsoft Office Access データベースなどのバックエンド データベースに接続されている場合にのみ有効です。
 
-   ホスト コントロールとデータ バインディングの詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)と[Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)します。
+   ホスト コントロールとデータ バインディングの詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)と[Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)を参照してください。
 
    [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -90,13 +90,13 @@ ms.locfileid: "56637595"
 6.  **[フォーマットと詳細バインド]** ダイアログ ボックスを閉じます。
 
 ## <a name="update-the-database"></a>データベースを更新する
- メモリ内データ ソースがデータベースに関連付けられている場合、データ ソースへの変更内容を使用して、データベースを更新する必要があります。 データベースの更新の詳細については、次を参照してください。[データをデータベースに保存](../data-tools/save-data-back-to-the-database.md)と[TableAdapter を使用してデータ更新](../data-tools/update-data-by-using-a-tableadapter.md)します。
+ メモリ内データ ソースがデータベースに関連付けられている場合、データ ソースへの変更内容を使用して、データベースを更新する必要があります。 データベースの更新の詳細については、[データをデータベースに保存](../data-tools/save-data-back-to-the-database.md)と[TableAdapter を使用してデータ更新](../data-tools/update-data-by-using-a-tableadapter.md)を参照してください。
 
 ### <a name="to-update-the-database"></a>データベースを更新するには
 
 1.  コントロールの <xref:System.Windows.Forms.BindingSource.EndEdit%2A> の <xref:System.Windows.Forms.BindingSource> メソッドを呼び出します。
 
-     デザイン時に文書またはブックにデータ バインド コントロールを追加すると、 <xref:System.Windows.Forms.BindingSource> が自動的に生成されます。 <xref:System.Windows.Forms.BindingSource> によって、コントロールはプロジェクト内の型指定されたデータセットに接続されます。 詳細については、次を参照してください。 [BindingSource コンポーネントの概要](/dotnet/framework/winforms/controls/bindingsource-component-overview)します。
+     デザイン時に文書またはブックにデータ バインド コントロールを追加すると、 <xref:System.Windows.Forms.BindingSource> が自動的に生成されます。 <xref:System.Windows.Forms.BindingSource> によって、コントロールはプロジェクト内の型指定されたデータセットに接続されます。 詳細については、[BindingSource コンポーネントの概要](/dotnet/framework/winforms/controls/bindingsource-component-overview)を参照してください。
 
      次のコード例は、プロジェクトに <xref:System.Windows.Forms.BindingSource> という名前の `customersBindingSource`が含まれていることを前提としています。
 
@@ -105,7 +105,7 @@ ms.locfileid: "56637595"
 
 2.  呼び出す、`Update`プロジェクトで生成された TableAdapter のメソッド。
 
-     デザイン時にドキュメントまたはブックにデータ バインド コントロールを追加すると、TableAdapter は自動的に生成されます。 TableAdapter では、プロジェクト内の型指定されたデータセットをデータベースに接続します。 詳細については、次を参照してください。 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)します。
+     デザイン時にドキュメントまたはブックにデータ バインド コントロールを追加すると、TableAdapter は自動的に生成されます。 TableAdapter では、プロジェクト内の型指定されたデータセットをデータベースに接続します。 詳細については、[TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)を参照してください。
 
      次のコード例は、Northwind データベースの Customers テーブルへの接続があるか、という名前の TableAdapter がプロジェクトに含まれている`customersTableAdapter`という名前の型指定されたデータセットと`northwindDataSet`します。
 

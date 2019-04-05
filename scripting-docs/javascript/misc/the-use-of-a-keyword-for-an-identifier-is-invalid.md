@@ -26,4 +26,4 @@ ms.locfileid: "56843884"
   
  キーワードは、変数、関数、またはその他のユーザー定義の識別子の名前として使用できません。  
   
- キーワードの詳細については、次を参照してください。 [JavaScript の予約語](../../javascript/reference/javascript-reserved-words.md)と[JavaScript の将来の予約語](../../javascript/reference/javascript-future-reserved-words.md)します。
+ キーワードの詳細については、[JavaScript の予約語](../../javascript/reference/javascript-reserved-words.md)と[JavaScript の将来の予約語](../../javascript/reference/javascript-future-reserved-words.md)を参照してください。

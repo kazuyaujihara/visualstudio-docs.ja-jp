@@ -21,7 +21,7 @@ ms.lasthandoff: 02/22/2019
 ms.locfileid: "56711086"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager オブジェクト
-言語サービスは、コード ウィンドウ マネージャーを実装し、表示要素 (たとえば、ドロップダウン バー) を管理する責任を負います。 詳細については、次を参照してください。[レガシ API を使用してコードの Windows をカスタマイズする](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)します。
+言語サービスは、コード ウィンドウ マネージャーを実装し、表示要素 (たとえば、ドロップダウン バー) を管理する責任を負います。 詳細については、[レガシ API を使用してコードの Windows をカスタマイズする](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)を参照してください。
 
  次の表は、インターフェイス、`VSCodeWindowManager`オブジェクト。
 

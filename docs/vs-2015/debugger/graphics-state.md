@@ -1,27 +1,22 @@
 ---
 title: グラフィックスの状態 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c5100f32a7a706f0d61e3b0ac006c8168e1ee553
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750368"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963977"
 ---
 # <a name="graphics-state"></a>グラフィックスの状態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,21 +39,21 @@ Visual Studio のグラフィックス診断の [状態] ウィンドウでは�
   
 -   [状態] ウィンドウ左上のタイトル バーのすぐ下で、使用する状態ビューのスタイルに対応するボタンを選択します。  
   
-    -   **API 入力状態ビューを表示します。**  
+    -   **API 入力状態ビューの表示**  
   
-    -   **論理状態ビューを表示します。**  
+    -   **論理状態ビューの表示**  
   
-    -   **固定状態ビューを表示します。**  
+    -   **固定状態ビューの表示**  
   
 > [!IMPORTANT]
->  状態をピン留めする必要があります、**表示 API 入力状態**または**表示論理状態**ビューに表示されることを**固定表示する状態ビュー**します。  
+>  **[固定状態ビューの表示]** で状態を表示するには、**[API 入力状態ビューの表示]** または **[論理状態ビューの表示]** で状態を固定する必要があります。  
   
 ### <a name="state-table-format"></a>状態テーブルの形式  
  情報のいくつかの列を [状態] ウィンドウに表示します。  
   
 |Column|説明|  
 |------------|-----------------|  
-|名前|状態の項目の名前。 この項目が状態のバンドルを表している場合は、項目を展開して表示できます。<br /><br /> **API 入力状態ビュー**と**論理状態ビュー**状態、状態間の階層関係を表示する名前はインデントされます。<br /><br /> **固定状態ビュー**状態では、完全修飾名は、単純なリストに表示されます。|  
+|名前|状態の項目の名前。 この項目が状態のバンドルを表している場合は、項目を展開して表示できます。<br /><br /> **API 入力状態ビュー**と**論理状態ビュー**の状態では、状態の間の階層関係を表すよう名前がインデントされます。<br /><br /> **固定状態ビュー**の状態では、完全修飾名がフラット リストで表示されます。|  
 |[値]|状態の項目の値。|  
 |型|状態の項目の種類。|  
   
@@ -77,6 +72,3 @@ Visual Studio のグラフィックス診断の [状態] ウィンドウでは�
 2.  該当する状態の上にカーソルを置きます。 状態の項目の左側に、[固定] アイコンが表示されます。  
   
 3.  [固定] アイコンをクリックして、状態の項目を固定します。
-
-
-

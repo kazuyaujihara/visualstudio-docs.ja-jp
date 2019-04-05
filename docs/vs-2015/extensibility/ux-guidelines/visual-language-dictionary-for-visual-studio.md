@@ -15,7 +15,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: bc8bb227eec32ebd6b0fbe9135334655a69b8a9b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51785119"
@@ -33,7 +33,7 @@ Visual Studio では、そのことは考えません、およびその他の画
   
 - 各イメージでは、1 つまたは 2 つの概念を使用します。  
   
-- デザイン アイコンの詳細戦略は、次を参照してください。[アイコン デザイン](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)します。  
+- デザイン アイコンの詳細戦略は、[アイコン デザイン](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)を参照してください。  
   
   **セクションにジャンプします。**  
   

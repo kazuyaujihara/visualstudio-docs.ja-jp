@@ -15,7 +15,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: a88bb3a0ffd0e372f5e15adedb39f1a6d2cab8d7
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51803111"
@@ -72,7 +72,7 @@ ms.locfileid: "51803111"
   
 - 強制的に点滅の停止にするために点滅通知に応答するユーザーなど、状態をリセットするユーザーの介入を必要とするアニメーションを使用します。 任意の方法で操作するには、それらを無視するための十分な必要があります。  
   
-  これらのベスト プラクティスのアプリケーションの詳細については、次を参照してください。[アニメーション パターン](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns)します。  
+  これらのベスト プラクティスのアプリケーションの詳細については、[アニメーション パターン](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns)を参照してください。  
   
 ### <a name="animation-metrics"></a>アニメーションのメトリック  
   

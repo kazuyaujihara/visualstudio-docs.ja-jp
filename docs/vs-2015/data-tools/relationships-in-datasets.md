@@ -1,12 +1,9 @@
 ---
 title: データセットのリレーションシップ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -23,13 +20,13 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962852"
 ---
 # <a name="relationships-in-datasets"></a>データセットのリレーションシップ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +67,7 @@ ms.locfileid: "49935407"
 |外部キー制約の規則|アクション|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule>|親レコードに加えられた変更 (更新または削除) は、子テーブル内の関連レコードでも作成します。|  
-|<xref:System.Data.Rule>|子レコードは削除されませんが、子レコードの外部キーに設定されて<xref:System.DBNull>します。 この設定では、子レコードを「孤立」のまま残してかまいません: 親レコードとの関係あるありませんは、します。 **注:** 子テーブルに無効なデータによりこの規則を使用します。|  
+|<xref:System.Data.Rule>|子レコードは削除されませんが、子レコードの外部キーに設定されて<xref:System.DBNull>します。 この設定では、子レコードを「孤立」のまま残してかまいません: 親レコードとの関係あるありませんは、します。 **注:** このルールを使用すると、子テーブル内の無効なデータがあります。|  
 |<xref:System.Data.Rule>|関連する子レコードの外部キーが既定値に設定 (列のによって確立されると、<xref:System.Data.DataColumn.DefaultValue%2A>プロパティ)。|  
 |<xref:System.Data.Rule>|関連する子レコードは変更されません。 この設定では、子レコードが無効な親レコードへの参照を含めることができます。|  
   
@@ -88,7 +85,7 @@ ms.locfileid: "49935407"
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>2 つのデータ テーブル間のリレーションシップを作成するには  
   
-1.  データセットを開き、**データセット デザイナー**します。 詳細については、次を参照してください。[方法: データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
+1.  **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
   
 2.  ドラッグ、**関係**オブジェクトから、**データセット**ツールボックス リレーションシップの子のデータ テーブル。  
   
@@ -112,7 +109,6 @@ ms.locfileid: "49935407"
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>データセット デザイナーでリレーションシップ名を表示するには  
   
-1.  データセットを開き、**データセット デザイナー**します。 詳細については、次を参照してください。[方法: データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
+1.  **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
   
 2.  **データ**メニューの 、**リレーションシップ ラベルを表示する**リレーションシップ名を表示するコマンド。 リレーションシップ名を非表示にするには、そのコマンドをオフにします。
-

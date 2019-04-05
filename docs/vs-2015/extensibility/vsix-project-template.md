@@ -1,37 +1,32 @@
 ---
 title: VSIX プロジェクト テンプレート |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c2b06582e1de7939e34f8fa49aa1cc9435010789
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733860"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002815"
 ---
 # <a name="vsix-project-template"></a>VSIX プロジェクト テンプレート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSIX プロジェクトでは、1 つまたは複数の Visual Studio 拡張機能をラップする VSIX プロジェクト テンプレートを使用してでパッケージを公開、 [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkID=123847) Web サイト。  
+VSIX プロジェクトでは、1 つまたは複数の Visual Studio 拡張機能をラップする VSIX プロジェクト テンプレートを使用してでパッケージを公開、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイト。  
   
  VSIX 配置には、Vspackage、アセンブリ、MEF コンポーネント、プロジェクト テンプレート、項目テンプレート、ツールボックス コントロール、およびカスタム拡張機能の種類がサポートしています。  
   
 > [!NOTE]
->  VSIX プロジェクトを使用するには、Visual Studio SDK をインストールする必要があります。 Visual Studio SDK の詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。  
+>  VSIX プロジェクトを使用するには、Visual Studio SDK をインストールする必要があります。 Visual Studio SDK の詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>VSIX プロジェクト テンプレートの検索場所  
  VSIX プロジェクト テンプレートが表示されます、**新しいプロジェクト** ダイアログ ボックス。 いずれかを展開、 **Visual Basic**ノードまたは**Visual c#** ノードを選び、**拡張**します。  
@@ -90,4 +85,3 @@ VSIX プロジェクトでは、1 つまたは複数の Visual Studio 拡張機�
 ## <a name="see-also"></a>関連項目  
  [VSIX 拡張機能スキーマ 2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)
-

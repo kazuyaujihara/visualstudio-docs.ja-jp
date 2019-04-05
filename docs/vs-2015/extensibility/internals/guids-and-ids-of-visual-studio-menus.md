@@ -22,7 +22,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 72ba04f5f33b3b9ef5030326fddb69d83e0a8f9d
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51762693"
@@ -30,9 +30,9 @@ ms.locfileid: "51762693"
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio メニューの GUID および ID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-このトピックでは、メニューおよび Visual Studio のメニュー バーでのグループの GUID と ID の値を列挙します。 これらの値は、Visual Studio SDK の一部としてインストールされている .vsct ファイルで定義されます。 詳細については、次を参照してください。 [IDE-Defined コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)します。  
+このトピックでは、メニューおよび Visual Studio のメニュー バーでのグループの GUID と ID の値を列挙します。 これらの値は、Visual Studio SDK の一部としてインストールされている .vsct ファイルで定義されます。 詳細については、[IDE-Defined コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)を参照してください。  
   
- .Vsct ファイルで定義されている統合開発環境 (IDE) のオブジェクトを操作する方法の詳細については、次を参照してください。[拡張メニューとコマンド](../../extensibility/extending-menus-and-commands.md)します。  
+ .Vsct ファイルで定義されている統合開発環境 (IDE) のオブジェクトを操作する方法の詳細については、[拡張メニューとコマンド](../../extensibility/extending-menus-and-commands.md)を参照してください。  
   
  メニューおよび Visual Studio のメニュー バーでのグループは、GUID を使用して`guidSHLMainMenu`します。 メニュー バー自体の ID を持つ`IDM_VS_TOOL_MAINMENU`します。  
   
@@ -182,7 +182,7 @@ ms.locfileid: "51762693"
 |バージョン情報|IDG_VS_HELP_ABOUT|  
   
 ## <a name="submenus-of-visual-studio-menus"></a>Visual Studio のメニューのサブメニュー  
- 次の階層には、Visual Studio のメニュー バーのメニューに関連付けられているサブメニューが表示されます。 グループのみがその親としてのメニューを持てないためすべてサブメニューで開く必要があります降下グループから、メニューの代わりに、メニューから直接。 メニューのグループ、およびサブメニューの間のリレーションシップの詳細については、次を参照してください。[サブメニューのメニューに追加](../../extensibility/adding-a-submenu-to-a-menu.md)します。  
+ 次の階層には、Visual Studio のメニュー バーのメニューに関連付けられているサブメニューが表示されます。 グループのみがその親としてのメニューを持てないためすべてサブメニューで開く必要があります降下グループから、メニューの代わりに、メニューから直接。 メニューのグループ、およびサブメニューの間のリレーションシップの詳細については、[サブメニューのメニューに追加](../../extensibility/adding-a-submenu-to-a-menu.md)を参照してください。  
   
 > [!NOTE]
 >  Visual Studio のメニュー バーのメニューの名前は個別に表示されませんこの階層では次のように IDE では、グループの名前付け規則から推論できるため、: IDG_VS_*メニュー名*_*のグループ名*.  

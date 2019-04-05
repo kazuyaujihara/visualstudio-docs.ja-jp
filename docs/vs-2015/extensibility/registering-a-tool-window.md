@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 9c9e8a6a86fb858b5c0e85aafc21095bd579b396
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51786172"
@@ -40,5 +40,5 @@ public class PackageToolWindow : Package
 {  
 ```  
   
- 上記のコードで、 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> PersistedWindowPane と DynamicWindowPane ツール ウィンドウを Visual Studio を登録します。 永続化されたツール ウィンドウをドッキングされをタブ付き**ソリューション エクスプ ローラー**と動的のウィンドウで、既定の開始位置とサイズを指定します。 動的なウィンドウが作成された一時的なもので起動時に作成されていないことを示します。 これは、システム レジストリ内の ToolWindows キー DontForceCreate 値を書き込みます。 詳細については、次を参照してください。[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)します。
+ 上記のコードで、 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> PersistedWindowPane と DynamicWindowPane ツール ウィンドウを Visual Studio を登録します。 永続化されたツール ウィンドウをドッキングされをタブ付き**ソリューション エクスプ ローラー**と動的のウィンドウで、既定の開始位置とサイズを指定します。 動的なウィンドウが作成された一時的なもので起動時に作成されていないことを示します。 これは、システム レジストリ内の ToolWindows キー DontForceCreate 値を書き込みます。 詳細については、[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)を参照してください。
 

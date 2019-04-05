@@ -25,13 +25,13 @@ ms.locfileid: "57525711"
 
 -   ツリーを参照して移動する。
 
--   キーワード検索とスキーマ固有の検索を実行する。 詳細については、次を参照してください。[スキーマ セットの検索](../xml-tools/searching-the-schema-set.md)します。
+-   キーワード検索とスキーマ固有の検索を実行する。 詳細については、[スキーマ セットの検索](../xml-tools/searching-the-schema-set.md)を参照してください。
 
 -   検索結果をグラフ ビューまたはコンテンツ モデル ビューに追加します。
 
--   ドキュメントの順序、ドキュメントの種類、またはドキュメント名でツリーを並べ替える。 詳細については、次を参照してください。[並べ替え、フィルター処理、およびグループ化](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)します。
+-   ドキュメントの順序、ドキュメントの種類、またはドキュメント名でツリーを並べ替える。 詳細については、[並べ替え、フィルター処理、およびグループ化](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)を参照してください。
 
--   XML エディターを開き、XSD ファイルでコードの場所に移動します。 詳細については、次を参照してください。 [XML エディターとの統合](../xml-tools/integration-with-xml-editor.md)します。
+-   XML エディターを開き、XSD ファイルでコードの場所に移動します。 詳細については、[XML エディターとの統合](../xml-tools/integration-with-xml-editor.md)を参照してください。
 
 -   グローバル要素のサンプル XML を生成する。
 
@@ -43,7 +43,7 @@ ms.locfileid: "57525711"
 
 -   選択することも、 **XML スキーマ エクスプ ローラー**から、**ビュー**メニュー。
 
--   アクセスできる、 **XML スキーマ エクスプ ローラー**から、 *.vb*に関連付けられている Visual Basic XML リテラルを含むファイル、 *.xsd*ファイル。 設定をスキーマの確認、 **XML スキーマ エクスプ ローラー**を XML リテラルまたは XML 名前空間インポートで XML ノードを右クリックし、**スキーマ エクスプ ローラーで表示する**コマンド。 詳細については、次を参照してください。[統合の XML リテラルと XML スキーマ エクスプ ローラー](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)します。
+-   アクセスできる、 **XML スキーマ エクスプ ローラー**から、 *.vb*に関連付けられている Visual Basic XML リテラルを含むファイル、 *.xsd*ファイル。 設定をスキーマの確認、 **XML スキーマ エクスプ ローラー**を XML リテラルまたは XML 名前空間インポートで XML ノードを右クリックし、**スキーマ エクスプ ローラーで表示する**コマンド。 詳細については、[統合の XML リテラルと XML スキーマ エクスプ ローラー](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)を参照してください。
 
 ## <a name="tree-view"></a>ツリー ビュー
  **XML スキーマ エクスプ ローラー**表示はコンパイル済みのスキーマがツリー構造で情報を設定します。 ツリー構造は、次のように構成されます。

@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 99082388534e39d02731e065bf586d6d221c67aa
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51784066"
@@ -67,7 +67,7 @@ ms.locfileid: "51784066"
     3.  によって返される色づけの情報を使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>メソッドを選択したテキストを表示します。  
   
 > [!NOTE]
->  使用だけでなく、言語サービス colorizer、VSPackage は、汎用的な[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]テキストを色分け表示メカニズム。 このメカニズムの詳細については、次を参照してください。[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)します。  
+>  使用だけでなく、言語サービス colorizer、VSPackage は、汎用的な[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]テキストを色分け表示メカニズム。 このメカニズムの詳細については、[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [構文の色分け表示の実装](../../extensibility/internals/implementing-syntax-coloring.md)  

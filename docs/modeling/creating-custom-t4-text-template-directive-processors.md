@@ -18,7 +18,7 @@ ms.locfileid: "55940894"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成
 
-*テキスト テンプレート変換プロセス*は、*テキスト テンプレート*ファイルとして入力し、テキスト ファイルを出力として生成します。 *テキスト テンプレート変換エンジン*コントロール、プロセスと、エンジンは、テキスト テンプレート変換ホストおよび 1 つまたは複数のテキスト テンプレートと対話する*ディレクティブ プロセッサ*を完了する、プロセスです。 詳細については、次を参照してください。 [テキスト テンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)です。
+*テキスト テンプレート変換プロセス*は、*テキスト テンプレート*ファイルとして入力し、テキスト ファイルを出力として生成します。 *テキスト テンプレート変換エンジン*コントロール、プロセスと、エンジンは、テキスト テンプレート変換ホストおよび 1 つまたは複数のテキスト テンプレートと対話する*ディレクティブ プロセッサ*を完了する、プロセスです。 詳細については、[テキスト テンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)を参照してください。
 
 カスタム ディレクティブ プロセッサを作成するには、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> または <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> を継承するクラスを作成します。
 
@@ -26,7 +26,7 @@ ms.locfileid: "55940894"
 
 Visual Studio でテキスト テンプレートからカスタム ディレクティブ プロセッサを呼び出すと、前に登録する必要があります。
 
-レジストリ キーを追加する方法の詳細については、次を参照してください。[カスタム ディレクティブ プロセッサの配置](../modeling/deploying-a-custom-directive-processor.md)します。
+レジストリ キーを追加する方法の詳細については、[カスタム ディレクティブ プロセッサの配置](../modeling/deploying-a-custom-directive-processor.md)を参照してください。
 
 ## <a name="custom-directives"></a>カスタム ディレクティブ
 

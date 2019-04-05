@@ -1,27 +1,22 @@
 ---
 title: 'チュートリアル: カスタム XAML をスタート ページに追加する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - custom start page
 - xaml start page
 ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58c7441a4f910a1da35bc464e12ddba3bd5583bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 193cea35fb7aa852b996aead6a26fd4e26b7b331
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802526"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002842"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>チュートリアル: カスタム XAML をスタート ページに追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,9 +88,8 @@ ms.locfileid: "51802526"
 1.  **ツール/オプション/環境**、**スタートアップ**します。 **スタート ページのカスタマイズ**一覧で、.xaml ファイルを選択してクリックして**OK**。  
   
 ## <a name="next-steps"></a>次の手順  
- これで、Visual Studio スタート ページには、Web ブラウザーのタブと [MyButton] タブを表示するタブが含まれています。使用してその他の機能を持つカスタム スタート ページを作成することができます、*コード ビハインド*ように、カスタムの .dll を追加するモデル[スタート ページにユーザー コントロールの追加](../extensibility/adding-user-control-to-the-start-page.md)します。 他のユーザーとカスタム スタート ページを共有するには、結果として得られる .vsix ファイルを発行することによって、 [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkID=123847) Web サイト、または別の Web サイトやネットワーク共有です。 詳細については、「 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)」を参照してください。  
+ これで、Visual Studio スタート ページには、Web ブラウザーのタブと [MyButton] タブを表示するタブが含まれています。使用してその他の機能を持つカスタム スタート ページを作成することができます、*コード ビハインド*ように、カスタムの .dll を追加するモデル[スタート ページにユーザー コントロールの追加](../extensibility/adding-user-control-to-the-start-page.md)します。 他のユーザーとカスタム スタート ページを共有するには、結果として得られる .vsix ファイルを発行することによって、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイト、または別の Web サイトやネットワーク共有です。 詳細については、「 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [スタート ページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)   
- [コンテナーの WPF コントロール](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)
-
+ [コンテナーの WPF コントロール](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)

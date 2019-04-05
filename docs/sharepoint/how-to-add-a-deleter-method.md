@@ -27,7 +27,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56644394"
 ---
 # <a name="how-to-add-a-deleter-method"></a>方法: Deleter メソッドを追加します。
-  SharePoint サイト上の外部リストから、モデルに Deleter メソッドを追加してデータ レコードを削除するには、エンドユーザーを有効にすることができます。 詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+  SharePoint サイト上の外部リストから、モデルに Deleter メソッドを追加してデータ レコードを削除するには、エンドユーザーを有効にすることができます。 詳細については、[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
 ### <a name="to-create-a-deleter-method"></a>Deleter メソッドを作成するには
 
@@ -35,7 +35,7 @@ ms.locfileid: "56644394"
 
 2. メニュー バーで、**ビュー** > **その他の Windows** > **BDC メソッドの詳細**します。
 
-    **BDC メソッドの詳細**ウィンドウが開きます。 このウィンドウの詳細については、次を参照してください。 [BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)します。
+    **BDC メソッドの詳細**ウィンドウが開きます。 このウィンドウの詳細については、[BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)を参照してください。
 
 3. **メソッドを追加する**一覧で、選択**Deleter メソッドを作成する**します。
 
@@ -49,11 +49,11 @@ ms.locfileid: "56644394"
 
    - メソッドのメソッドのインスタンス。
 
-     詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+     詳細については、[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
 4. **ソリューション エクスプ ローラー**エンティティの場合に生成されたサービスのコード ファイルのショートカット メニューを開き、選択し、**コードの表示**します。
 
-    エンティティ サービス コード ファイルがコード エディターで開きます。 詳細については、エンティティ サービス コード ファイルは、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。
+    エンティティ サービス コード ファイルがコード エディターで開きます。 詳細については、エンティティ サービス コード ファイルは、[business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)を参照してください。
 
 5. レコードを削除する Deleter メソッドにコードを追加します。 次の例では、SQL Server の AdventureWorks サンプル データベースを使用して販売注文から品目を削除します。
 

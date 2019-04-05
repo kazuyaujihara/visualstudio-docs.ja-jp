@@ -1,24 +1,19 @@
 ---
 title: 'チュートリアル: コード スニペットの実装 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84ac1787e4905859eb3539c04dee3125a14e0617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964121"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>チュートリアル: コード スニペットの実装
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ ms.locfileid: "51752059"
   
  コード スニペットは、コードまたはその他のファイルに組み込むことのできるテキストの一部です。 特定のプログラミング言語では、登録されているすべてのスニペットを表示する、**ツール** メニューのをクリックして**コード スニペット マネージャー**します。 スニペットは、先を右クリックして、ファイルのスニペットを挿入する次のようにクリックします。**スニペットの挿入**または**ブロックの挿入**、スニペットを見つけて、ダブルクリックします。 スニペットの関連する部分を変更し、そのまま使用するには、」と入力または esc キーを押しますのタブまたは shift キーを押しながら TAB キーを押します。 詳細については、「[Code Snippets](../ide/code-snippets.md)」を参照してください。  
   
- コード スニペットは、.snippet ファイル名拡張子を持つ XML ファイルに含まれています。 スニペットは、ユーザーが検索され、それらを変更できるように、スニペットの挿入後に強調表示されているフィールドを含めることができます。 スニペット ファイルの情報も提供する、**コード スニペット マネージャー**適切なカテゴリでスニペット名を表示できるようにします。 スニペットのスキーマについては、[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)を参照してください。  
+ コード スニペットは、.snippet ファイル名拡張子を持つ XML ファイルに含まれています。 スニペットは、ユーザーが検索され、それらを変更できるように、スニペットの挿入後に強調表示されているフィールドを含めることができます。 スニペット ファイルの情報も提供する、**コード スニペット マネージャー**適切なカテゴリでスニペット名を表示できるようにします。 スニペットのスキーマについては、次を参照してください。[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)します。  
   
  このチュートリアルでは、これらのタスクを実行する方法について説明します。  
   
@@ -37,7 +32,7 @@ ms.locfileid: "51752059"
   
 3. スニペットの展開を実装します。  
   
-   このチュートリアルに基づいて[チュートリアル: 候補を表示する](../extensibility/walkthrough-displaying-statement-completion.md)します。  
+   このチュートリアルに基づいて[チュートリアル。ステートメント入力候補を表示する](../extensibility/walkthrough-displaying-statement-completion.md)します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
@@ -116,7 +111,7 @@ ms.locfileid: "51752059"
   
 #### <a name="to-register-code-snippets-for-a-specific-guid"></a>特定の GUID のコード スニペットを登録するには  
   
-1.  開く、 **CompletionTest**プロジェクト。 このプロジェクトを作成する方法については、[チュートリアル: 候補を表示する](../extensibility/walkthrough-displaying-statement-completion.md)を参照してください。  
+1.  開く、 **CompletionTest**プロジェクト。 このプロジェクトを作成する方法については、次を参照してください。[チュートリアル。ステートメント入力候補を表示する](../extensibility/walkthrough-displaying-statement-completion.md)します。  
   
 2.  プロジェクトで、次のアセンブリへの参照を追加します。  
   
@@ -254,4 +249,3 @@ ms.locfileid: "51752059"
 7.  テキストの部分によって異なる、"test"を入力し、し、TAB キーを押します。 "Test"は、コード スニペットのショートカットであるため、スニペットを再び挿入する必要があります。  
   
 ## <a name="next-steps"></a>次の手順
-

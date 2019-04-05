@@ -1,14 +1,9 @@
 ---
 title: エミュレーターにおける Windows Phone アプリの実行 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739986"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963861"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>エミュレーターにおける Windows Phone アプリの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Phone エミュレーターにより仮想化された環境が提供されます。物理デバイスがなくても、そこでコンピューター上の Windows Phone アプリのデバッグとテストが行えます。 一般的なタッチと回転イベントのシミュレーションや、エミュレートしたい物理的な画面サイズと解像度の選択が可能です。 位置、ネットワーク、通知、センサー、加速度計、およびオプションの SD カードなど、一般的に使用される多数の機能をテストすることもできます。  
   
- エミュレーターでテストできる機能についての詳細については、次を参照してください。 [Windows Phone エミュレーターでアプリの機能をテスト](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)します。  
+ エミュレーターでテストできる機能についての詳細については、次を参照してください。 [Windows Phone エミュレーターでアプリの機能をテスト](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)します。  
   
  Visual Studio と連携して、エミュレーターは、Windows Phone アプリを設計、開発、デバッグ、およびテストできる完全な環境を提供します。  
   
@@ -225,6 +220,3 @@ Windows Phone エミュレーターにより仮想化された環境が提供さ
 -   Visual Studio でのリリース ビルドを指定します。 リリース ビルドを指定した後、アプリの起動を選択して、**デプロイ _[アプリ名]_** リンクを**ビルド**メニュー。  
   
 -   `EnableFrameRateCounter` の値を `true` に設定する app.xaml.cs または app.xaml.vb ファイル内のコード行をコメント アウトすることもできます。
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: PromptForSaveOnCreation 要素 (Visual Studio テンプレート) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#PromptForSaveOnCreation
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6d6480df4d51e91f6953fcbb5c5c00542dac2d8e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9e9e6ece0d683d08521a76286671c944e57206c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975044"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ ms.locfileid: "51725892"
 ## <a name="remarks"></a>Remarks  
  `PromptForSaveOnCreation` は、省略可能な要素です。 既定値は `false` です。  
   
- 一時プロジェクトは、プロジェクトの内容を保存しないで作成および変更できるプロジェクトです。 詳細については、次を参照してください。 [NIB 一時プロジェクト](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b)します。  
+ 一時プロジェクトは、プロジェクトの内容を保存しないで作成および変更できるプロジェクトです。 詳細については、次を参照してください。 [NIB 一時プロジェクト](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)します。  
   
 ## <a name="example"></a>例  
  `PromptForSaveOnCreation` の値を `false` に設定する方法を次に示します。この設定により、プロジェクトは一時プロジェクトとして作成されるようになります。  
@@ -95,4 +90,3 @@ ms.locfileid: "51725892"
 ## <a name="see-also"></a>関連項目  
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
-

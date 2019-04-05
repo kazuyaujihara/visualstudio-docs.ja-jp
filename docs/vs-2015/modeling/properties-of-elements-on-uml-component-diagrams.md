@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: fb99ea1efb070c3e79b294bd5d06eedf131623f0
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51790085"
@@ -30,7 +30,7 @@ ms.locfileid: "51790085"
 UML コンポーネント図の各要素には、プロパティがあります。 要素のプロパティを表示するには、図、または要素を右クリックして**UML モデル エクスプ ローラー**し**プロパティ**します。 プロパティが表示されます、**プロパティ**ウィンドウ。  
   
 > [!NOTE]
->  このトピックでは、UML コンポーネント図の要素のプロパティについて説明します。 UML コンポーネント図を読み取る方法の詳細については、次を参照してください。 [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)します。 UML コンポーネント図を描画する方法の詳細については、次を参照してください。 [UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)します。  
+>  このトピックでは、UML コンポーネント図の要素のプロパティについて説明します。 UML コンポーネント図を読み取る方法の詳細については、[UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)を参照してください。 UML コンポーネント図を描画する方法の詳細については、[UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)を参照してください。  
   
 ## <a name="properties-of-elements"></a>要素のプロパティ  
   

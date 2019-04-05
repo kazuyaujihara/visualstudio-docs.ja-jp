@@ -1,14 +1,9 @@
 ---
 title: プロパティ ウィンドウの選択の追跡の発表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], property pages support
 - property pages, tracking selection
@@ -17,13 +12,13 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], Properties window support
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
-manager: douge
-ms.openlocfilehash: 9639e0347689fc99e0b43c4b69394b522af984da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1ef6984a21099bfad013ef97534d9984fa81d10d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973129"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>プロパティ ウィンドウの選択の追跡の発表
 使用する場合、**プロパティ**ウィンドウまたは**プロパティ**フォーム、テキスト、またはするプロパティを表示する方法の完全な知識が必要し、選択などページします。選択範囲を調整します。 たとえば、選択範囲の 1 つまたは複数の選択肢があるかどうかを認識する必要があります。 選択範囲の種類 (1 つまたは複数) を使用して、IDE を発表する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>インターフェイス。 このインターフェイスで必要な情報を提供する、**プロパティ**ウィンドウ。  

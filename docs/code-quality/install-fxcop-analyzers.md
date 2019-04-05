@@ -20,7 +20,7 @@ ms.locfileid: "58658854"
 
 Microsoft と呼ばれるアナライザーのセットを作成する[Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)、静的コード分析、Roslyn アナライザーへの変換から最も重要な"FxCop"ルールを格納しています。 これらのアナライザーは、セキュリティ、パフォーマンス、およびその他の設計上の問題のコードを確認します。
 
-これらの FxCop アナライザーを NuGet パッケージとして、または Visual Studio に VSIX 拡張機能としてインストールできます。 長所と短所をそれぞれの詳細については、次を参照してください。 [NuGet パッケージとします。VSIX 拡張機能](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension)します。
+これらの FxCop アナライザーを NuGet パッケージとして、または Visual Studio に VSIX 拡張機能としてインストールできます。 長所と短所をそれぞれの詳細については、[NuGet パッケージとを参照してください。VSIX 拡張機能](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension)します。
 
 ## <a name="to-install-fxcop-analyzers-as-a-nuget-package"></a>FxCop アナライザーを NuGet パッケージとしてインストールするには
 

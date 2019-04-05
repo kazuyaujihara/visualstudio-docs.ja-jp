@@ -15,7 +15,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 27228131c1e955a394e666ac05f0ddd68c879be0
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51758774"
@@ -33,8 +33,8 @@ ms.locfileid: "51758774"
 |Microsoft Visual Studio 分離シェルの再頒布可能パッケージ|再頒布可能ファイル、Visual Studio のツール環境をビルドするときに、セットアップ プログラムに含めることは分離シェルです。 分離シェルの再頒布可能パッケージには、.NET Framework 4.5 が含まれています。|  
   
 ## <a name="creating-an-installation-program-for-the-application"></a>アプリケーションのインストール プログラムを作成します。  
- 統合または分離シェル アプリケーションの特殊なインストール プログラムを作成する必要があります。 詳細については、次を参照してください。[分離シェル アプリケーションをインストールする](../extensibility/installing-an-isolated-shell-application.md)します。  
+ 統合または分離シェル アプリケーションの特殊なインストール プログラムを作成する必要があります。 詳細については、[分離シェル アプリケーションをインストールする](../extensibility/installing-an-isolated-shell-application.md)を参照してください。  
   
 ## <a name="allowing-for-updates-to-your-application"></a>アプリケーションを更新することができます。  
- インストール プログラム、アプリケーションが更新されること、Microsoft 更新プログラムまたは会社の更新プログラムのいずれか可能性を考慮する必要があります。 更新プログラムの詳細については、次を参照してください。[分離シェル アプリケーションのサービスのガイドライン](../extensibility/servicing-guidelines-for-isolated-shell-applications.md)します。
+ インストール プログラム、アプリケーションが更新されること、Microsoft 更新プログラムまたは会社の更新プログラムのいずれか可能性を考慮する必要があります。 更新プログラムの詳細については、[分離シェル アプリケーションのサービスのガイドライン](../extensibility/servicing-guidelines-for-isolated-shell-applications.md)を参照してください。
 

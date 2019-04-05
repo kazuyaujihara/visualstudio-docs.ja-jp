@@ -1,14 +1,9 @@
 ---
 title: コード生成と T4 テキスト テンプレート |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 74a0a748-5b11-4999-8bea-49572967827d
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9967b0cb47bd397b7b0fa752eb2fff2518865b14
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229827"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59002199"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>コード生成と T4 テキスト テンプレート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ string webResponseText = new MyTemplate().TransformText();
   
  実行時テンプレートを作成するには、 **前処理されたテキスト テンプレート** ファイルをプロジェクトに追加します。 または、プレーンテキスト ファイルを追加し、 **[カスタム ツール]** プロパティを **TextTemplatingFilePreprocessor**に設定することもできます。  
   
- 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)します。 テンプレートの構文の詳細については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)です。  
+ 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md) テンプレートの構文の詳細については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)  
   
  **デザイン時 T4 テキスト テンプレート** は、アプリケーションのソース コードや他のリソースの一部を定義するために、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で実行されます。  
  通常は、複数のテンプレートを使用して 1 つの入力ファイルまたはデータベースのデータを読み込み、一部の `.cs`ファイル、 `.vb`ファイル、または他のソース ファイルを生成します。 テンプレートごとに 1 つのファイルが生成されます。 テンプレートは、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] または [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]内で実行されます。  
@@ -95,7 +90,7 @@ namespace Fabrikam.FirstJob
   
  デザイン時テンプレートを作成するには、 **テキスト テンプレート** ファイルをプロジェクトに追加します。 または、プレーンテキスト ファイルを追加し、 **[カスタム ツール]** プロパティを **TextTemplatingFileGenerator**に設定することもできます。  
   
- 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)します。 テンプレートの構文の詳細については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)です。  
+ 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md) テンプレートの構文の詳細については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)  
   
 > [!NOTE]
 >  1 つ以上のテンプレートで読み込まれるデータを示す際に、 *モデル* という用語を使用する場合があります。 モデルはどのような形式でもかまいません。あらゆる種類のファイルまたはデータベースを使用できます。 必ずしも UML モデルやドメイン固有言語モデルである必要はありません。 'モデル' は、コードのようなものではなく、ビジネス概念の観点でデータを定義できることを示します。  
@@ -130,6 +125,3 @@ namespace Fabrikam.FirstJob
 ## <a name="see-also"></a>関連項目  
  [UML モデルからファイルを生成します。](../modeling/generate-files-from-a-uml-model.md)   
  [ドメイン固有言語からのコード生成](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

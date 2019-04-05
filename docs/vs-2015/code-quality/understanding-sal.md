@@ -16,7 +16,7 @@ ms.author: mblome
 manager: ghogen
 ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51792822"
@@ -24,7 +24,7 @@ ms.locfileid: "51792822"
 # <a name="understanding-sal"></a>SAL について
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft ソース コード注釈言語 (SAL) では、関数がそのパラメーターや、それらについて行う想定を終了するときに行う保証を使用する方法について説明するために使用できる注釈のセットを提供します。 注釈はヘッダー ファイルで定義されている`<sal.h>`します。 C++ 用の visual Studio コード分析では、SAL 注釈を使用して、関数の分析を変更します。 Windows ドライバー開発の SAL 2.0 の詳細については、次を参照してください。 [Windows ドライバーの SAL 2.0 注釈](http://go.microsoft.com/fwlink/?LinkId=250979)します。  
+Microsoft ソース コード注釈言語 (SAL) では、関数がそのパラメーターや、それらについて行う想定を終了するときに行う保証を使用する方法について説明するために使用できる注釈のセットを提供します。 注釈はヘッダー ファイルで定義されている`<sal.h>`します。 C++ 用の visual Studio コード分析では、SAL 注釈を使用して、関数の分析を変更します。 Windows ドライバー開発の SAL 2.0 の詳細については、[Windows ドライバーの SAL 2.0 注釈](http://go.microsoft.com/fwlink/?LinkId=250979)を参照してください。  
   
  ネイティブ、C および C++ 開発者の意図と不変性が一貫して express の制限がありますのみを提供します。 SAL 注釈を使用すると、それらを使用する開発者は、その使用方法を理解できるようにより詳細で関数を記述できます。  
   
@@ -407,7 +407,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
   
 - 注釈の値の範囲の注釈を設定して、コード分析は、バッファーとポインターの安全を確保できるようにします。  
   
-- ルールのロックおよびロックの副作用の注釈を設定します。 詳細については、次を参照してください。[ロック動作の注釈を付ける](../code-quality/annotating-locking-behavior.md)します。  
+- ルールのロックおよびロックの副作用の注釈を設定します。 詳細については、[ロック動作の注釈を付ける](../code-quality/annotating-locking-behavior.md)を参照してください。  
   
 - ドライバーのプロパティとその他のドメイン固有のプロパティの注釈を設定します。  
   

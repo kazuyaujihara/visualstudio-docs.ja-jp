@@ -1,14 +1,9 @@
 ---
 title: 64 ビット アプリケーションをデバッグする |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e4d195c3f0b07636f0a131cc4dca0298deef1041
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 600166699a40ac91d403d7b76948ac924b4a35c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758828"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976541"
 ---
 # <a name="debug-64-bit-applications"></a>64 ビット アプリケーションをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,14 +42,14 @@ ms.locfileid: "51758828"
   
 1.  C# コンソール アプリケーションなど、Visual Studio ソリューションを作成します。  
   
-2.  構成マネージャーを使用して、構成を 64 ビットに設定します。 詳細については、「 [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md)」を参照してください。  
+2.  構成マネージャーを使用して、構成を 64 ビットに設定します。 詳細については、「[方法 :プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)  
   
 3.  この時点で、64 ビット バージョンのリモート デバッガー (msvsmon.exe) が起動します。 64 ビット構成のソリューションが開いている限り、これが実行されます。  
   
 4.  デバッグを開始します。 操作は 32 ビット構成と変わりません。 エラーが発生した場合は、以下のトラブルシューティング セクションをご覧ください。  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>トラブルシューティング (64 ビット デバッグ)  
- "64 ビット デバッグ操作に予想以上に時間がかかっています" というエラーが表示されることがあります。 この場合、Visual Studio は 64 ビット バージョンの msvsmon.exe に要求を送信し、その要求の結果が返されるまでに長い時間がかかっています。  
+ エラーが表示することがあります。"64 ビット デバッグ操作が予想より時間。" この場合、Visual Studio は 64 ビット バージョンの msvsmon.exe に要求を送信し、その要求の結果が返されるまでに長い時間がかかっています。  
   
  このエラーの主な原因として次の 2 つがあります。  
   
@@ -68,9 +63,3 @@ ms.locfileid: "51758828"
  [Visual Studio IDE の 64 ビット サポート](../ide/visual-studio-ide-64-bit-support.md)   
  [ダンプ ファイルの使用](../debugger/using-dump-files.md)   
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-
-
-
-

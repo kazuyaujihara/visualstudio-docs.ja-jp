@@ -26,9 +26,9 @@ ms.locfileid: "56639922"
 ---
 # <a name="localize-sharepoint-solutions"></a>SharePoint ソリューションをローカライズします。
 
-  アプリケーションを世界中で使用できるように準備するプロセスをローカライズと呼びます。 ローカライズでは、リソースを特定のカルチャに翻訳します。 詳細については、次を参照してください。 [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)します。 このトピックでは、SharePoint ソリューションをローカライズする方法の概要について説明します。
+  アプリケーションを世界中で使用できるように準備するプロセスをローカライズと呼びます。 ローカライズでは、リソースを特定のカルチャに翻訳します。 詳細については、[Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)を参照してください。 このトピックでは、SharePoint ソリューションをローカライズする方法の概要について説明します。
 
- ソリューションをローカライズするには、ハードコーディングされた文字列をコードから削除してリソース ファイルに抽出します。 リソース ファイルとは、 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-ベースのファイルで、 *.resx*拡張機能。 リソース ファイルには、ソリューションで使用される文字列の翻訳されたバージョンが含まれています。 詳細については、次を参照してください。[アプリケーションのリソース](http://go.microsoft.com/fwlink/?LinkID=155844)します。
+ ソリューションをローカライズするには、ハードコーディングされた文字列をコードから削除してリソース ファイルに抽出します。 リソース ファイルとは、 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-ベースのファイルで、 *.resx*拡張機能。 リソース ファイルには、ソリューションで使用される文字列の翻訳されたバージョンが含まれています。 詳細については、[アプリケーションのリソース](http://go.microsoft.com/fwlink/?LinkID=155844)を参照してください。
 
 > [!NOTE]
 >  SharePoint ソリューションのリソース ファイルに追加するのは文字列リソースだけです。 リソース エディターでは文字列以外のリソースも追加できますが、文字列以外のリソースは SharePoint に配置されません。
@@ -42,7 +42,7 @@ ms.locfileid: "56639922"
 |言語に依存しないリソース ファイル|特定の言語にはローカライズされているが特定のカルチャにはローカライズされていない文字列を含むリソース ファイル  (たとえば、フランス語の場合は "fr")。|
 |言語固有のリソース ファイル|特定の言語とカルチャにローカライズされた文字列を含むリソース ファイル  (たとえば、フランス語 (カナダ) の場合は "fr-CA")。|
 
- 詳細については、次を参照してください。[ローカリゼーション用リソースの階層編成](http://go.microsoft.com/fwlink/?LinkId=178360)します。
+ 詳細については、[ローカリゼーション用リソースの階層編成](http://go.microsoft.com/fwlink/?LinkId=178360)を参照してください。
 
  開発する SharePoint プロジェクトで既定のリソース ファイルを指定する[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、選択**インバリアント言語 (国のインバリアント)** カルチャの一覧で、**リソースの追加** ダイアログ ボックスの場合にします。リソース ファイルを追加します。
 

@@ -1,12 +1,9 @@
 ---
 title: 'チュートリアル: 生成済みディレクティブ プロセッサをホストに接続する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
@@ -14,23 +11,23 @@ ms.assetid: 254540d9-90d6-42de-8c1c-068affd56e83
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 00baf3697347f208c5bd6cd2aa1abfe02b6fa2cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817874"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58978468"
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>チュートリアル: 生成済みディレクティブ プロセッサへのホストの接続
+# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>チュートリアル: 生成済みディレクティブ プロセッサをホストに接続します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-テキスト テンプレートを処理する、独自のホストを記述することができます。 基本的なカスタム ホストの説明については、[チュートリアル: カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)です。 複数の出力ファイルを生成するなどの関数を追加するには、そのホストを拡張できます。  
+テキスト テンプレートを処理する、独自のホストを記述することができます。 基本的なカスタム ホストの説明については、[チュートリアル。カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)です。 複数の出力ファイルを生成するなどの関数を追加するには、そのホストを拡張できます。  
   
  このチュートリアルでは、テキスト テンプレート ディレクティブ プロセッサの呼び出しをサポートするように、そのカスタム ホストを展開します。 ドメイン固有言語を定義するときに生成、*ディレクティブ プロセッサ*ドメイン モデルです。 ディレクティブ プロセッサによって、ユーザー アセンブリを記述し、テンプレートのディレクティブをインポートする必要が少なくなり、モデルにアクセスするためのテンプレートを作成するために簡単にできます。  
   
 > [!WARNING]
->  このチュートリアル[チュートリアル: カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)です。 このチュートリアルを最初に実行します。  
+>  このチュートリアル[チュートリアル。カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)です。 このチュートリアルを最初に実行します。  
   
  このチュートリアルでは、次のタスクについて説明します。  
   
@@ -49,7 +46,7 @@ ms.locfileid: "49817874"
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|  
   
- さらで作成したカスタム テキスト テンプレート変換が必要[チュートリアル: カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)です。  
+ さらで作成したカスタム テキスト テンプレート変換が必要[チュートリアル。カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)です。  
   
 ## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>ドメイン固有言語ツールを使用して、ディレクティブ プロセッサを生成するには  
  このチュートリアルでは、ドメイン固有言語デザイナー ウィザードを使用してソリューション DSLMinimalTest のドメイン固有言語を作成します。  
@@ -58,15 +55,15 @@ ms.locfileid: "49817874"
   
 1. 次の特性を持つドメイン固有言語ソリューションを作成します。  
   
-   - 名前: DSLMinimalTest  
+   - 名前:DSLMinimalTest  
   
-   - ソリューション テンプレート: 最小言語  
+   - ソリューション テンプレート:最小言語  
   
    - ファイル拡張子: min  
   
-   - 会社名: Fabrikam  
+   - 会社名:Fabrikam Fiber Web サイト  
   
-     ドメイン固有言語ソリューションを作成する方法の詳細については、次を参照してください。[方法: ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)です。  
+     ドメイン固有言語ソリューションを作成する方法の詳細については、次を参照してください。[方法。ドメイン固有言語ソリューションを作成する](../modeling/how-to-create-a-domain-specific-language-solution.md)」を参照してください。  
   
 2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49817874"
 6. ソリューションを保存し、ドメイン固有言語デザイナーを閉じます。  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>ディレクティブ プロセッサへのカスタム テキスト テンプレート ホストの接続  
- 作成したカスタム テキスト テンプレート ホスト、ディレクティブ プロセッサを接続するディレクティブ プロセッサを生成した後[チュートリアル: カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)です。  
+ 作成したカスタム テキスト テンプレート ホスト、ディレクティブ プロセッサを接続するディレクティブ プロセッサを生成した後[チュートリアル。カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)です。  
   
 #### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>生成されたディレクティブ プロセッサへのカスタム テキスト テンプレート ホストを接続するには  
   
@@ -230,7 +227,7 @@ ms.locfileid: "49817874"
             }  
     ```  
   
-7.  **ファイル** メニューのをクリックして**すべて保存**します。  
+7.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
 8.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
@@ -239,7 +236,7 @@ ms.locfileid: "49817874"
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>テキスト テンプレートを作成してカスタム ホストをテストするには  
   
-1.  テキスト ファイルを作成し、名前`TestTemplateWithDP.tt`します。 メモ帳などの任意のテキスト エディターを使用して、ファイルを作成することができます。  
+1.  テキスト ファイルを作成し、名前を `TestTemplateWithDP.tt` にします。 メモ帳などの任意のテキスト エディターを使用して、ファイルを作成することができます。  
   
 2.  次の内容をテキスト ファイルに追加します。  
   
@@ -363,6 +360,3 @@ ms.locfileid: "49817874"
   
 ## <a name="see-also"></a>関連項目  
  [チュートリアル: カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)
-
-
-

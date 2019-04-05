@@ -1,14 +1,9 @@
 ---
 title: '&lt;entryPoint&gt;要素 (ClickOnce アプリケーション) |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
 - urn:schemas-microsoft-com:asm.v2#entryPoint
@@ -23,13 +18,13 @@ ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: da308de644dfc73d9364b65e21e820d6fc6c2a8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255317"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976714"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt;要素 (ClickOnce アプリケーション)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +69,7 @@ ms.locfileid: "49255317"
   
  `processorArchitecture`この要素の属性と`processorArchitecture`属性で定義されている、`assemblyIdentity`別の場所、アプリケーション マニフェストと一致しなければなりません。  
   
-## <a name="commandline"></a>コマンドライン  
+## <a name="commandline"></a>CommandLine  
  必須。 子である必要があります、`entryPoint`要素。 子要素が存在しないと、次の属性があります。  
   
 |属性|説明|  
@@ -96,12 +91,12 @@ ms.locfileid: "49255317"
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  
 ```  
   
- CustomUX 要素が含まれているアプリケーションは、カスタム インストーラーを提供する必要がありますを使用して、<xref:System.Deployment.Application.InPlaceHostingManager>を実行するクラスは、操作をインストールします。 この要素を持つアプリケーションは、そのマニフェストまたは setup.exe 前提条件となるブートス トラップをダブルクリックしてインストールできません。 カスタム インストーラーには、スタート メニュー エントリ、ショートカット、およびプログラム追加と削除のエントリを作成できます。 によって提供されたサブスクリプション識別子を格納する必要があります、カスタム インストーラーが追加または削除するプログラムのエントリを作成できない場合、<xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A>プロパティと呼び出すことによって後でアプリケーションをアンインストールするユーザーの有効化、<xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A>メソッド。 詳細については、[チュートリアル: ClickOnce アプリケーションのカスタム インストーラーを作成する](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)を参照してください。  
+ CustomUX 要素が含まれているアプリケーションは、カスタム インストーラーを提供する必要がありますを使用して、<xref:System.Deployment.Application.InPlaceHostingManager>を実行するクラスは、操作をインストールします。 この要素を持つアプリケーションは、そのマニフェストまたは setup.exe 前提条件となるブートス トラップをダブルクリックしてインストールできません。 カスタム インストーラーには、スタート メニュー エントリ、ショートカット、およびプログラム追加と削除のエントリを作成できます。 によって提供されたサブスクリプション識別子を格納する必要があります、カスタム インストーラーが追加または削除するプログラムのエントリを作成できない場合、<xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A>プロパティと呼び出すことによって後でアプリケーションをアンインストールするユーザーの有効化、<xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A>メソッド。 詳細については、「[チュートリアル:ClickOnce アプリケーションのカスタム インストーラーの作成](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)」を参照してください。  
   
 ## <a name="remarks"></a>Remarks  
  この要素のアセンブリとエントリ ポイントを識別する、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。  
   
- 使用することはできません`commandLine`パラメーターを実行時に、アプリケーションに渡します。 クエリ文字列パラメーターにアクセスすることができます、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]からアプリケーションのデプロイを<xref:System.AppDomain>します。 詳細については、[方法: オンライン ClickOnce アプリケーションでのクエリ文字列情報の取得](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)を参照してください。  
+ 使用することはできません`commandLine`パラメーターを実行時に、アプリケーションに渡します。 クエリ文字列パラメーターにアクセスすることができます、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]からアプリケーションのデプロイを<xref:System.AppDomain>します。 詳細については、「[方法 :オンライン ClickOnce アプリケーションでクエリ文字列の情報を取得する](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)」を参照してください。  
   
 ## <a name="example"></a>例  
  次のコード例を示しています、`entryPoint`に対するアプリケーション マニフェスト内の要素を[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。 このコード例が示されている例の一部、 [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)トピック。  
@@ -121,6 +116,3 @@ ms.locfileid: "49255317"
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

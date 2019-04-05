@@ -86,7 +86,7 @@ ms.locfileid: "54866010"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>クラス ライブラリ プロジェクトでデータセットを定義します。
  SQL Server 2005 用の AdventureWorksLT データベースからデータを含む型指定されたデータセットを定義します。 このチュートリアルの後半では、Excel ブック プロジェクトと、コンソール アプリケーション プロジェクトからこのデータセットを参照します。
 
- データセットが、*型指定された dataset* AdventureWorksLT データベースの Product テーブル内のデータを表します。 型指定されたデータセットの詳細については、次を参照してください。 [Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)します。
+ データセットが、*型指定された dataset* AdventureWorksLT データベースの Product テーブル内のデータを表します。 型指定されたデータセットの詳細については、[Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)を参照してください。
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>クラス ライブラリ プロジェクトで指定されたデータセットを定義するには
 
@@ -100,7 +100,7 @@ ms.locfileid: "54866010"
 
 5. AdventureWorksLT データベースに既存の接続があれば、この接続を選択し、をクリックして**次**します。
 
-    それ以外の場合は、 **[新しい接続]** をクリックし、 **[接続の追加]** ダイアログ ボックスを使用して新しい接続を作成します。 詳細については、次を参照してください。[新しい接続を追加](../data-tools/add-new-connections.md)します。
+    それ以外の場合は、 **[新しい接続]** をクリックし、 **[接続の追加]** ダイアログ ボックスを使用して新しい接続を作成します。 詳細については、[新しい接続を追加](../data-tools/add-new-connections.md)を参照してください。
 
 6. **[アプリケーション構成ファイルへの接続文字列を保存]** ページで、 **[次へ]** をクリックします。
 
@@ -112,7 +112,7 @@ ms.locfileid: "54866010"
 
    - `AdventureWorksLTDataSet`という名前の型指定されたデータセット。 このデータセットは、AdventureWorksLT データベースの Product テーブルの内容を表します。
 
-   - という名前の TableAdapter`ProductTableAdapter`します。 この TableAdapter データを読み書きするために使用できます、`AdventureWorksLTDataSet`します。 詳細については、次を参照してください。 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)します。
+   - という名前の TableAdapter`ProductTableAdapter`します。 この TableAdapter データを読み書きするために使用できます、`AdventureWorksLTDataSet`します。 詳細については、[TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)を参照してください。
 
      これらのオブジェクトは、どちらもこのチュートリアルの後半で使用します。
 
@@ -167,7 +167,7 @@ ms.locfileid: "54866010"
      **データソース**ウィンドウが開いたら、および**AdventureWorksLTDataSet**データ ソースの一覧に追加されます。
 
 ## <a name="create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>データセットのインスタンスにバインドされた listobject コントロールを作成します。
- ブックでは、データセットを表示するには、作成、<xref:Microsoft.Office.Tools.Excel.ListObject>データセットのインスタンスにバインドされています。 データ バインド コントロールの詳細については、次を参照してください。 [Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)します。
+ ブックでは、データセットを表示するには、作成、<xref:Microsoft.Office.Tools.Excel.ListObject>データセットのインスタンスにバインドされています。 データ バインド コントロールの詳細については、[Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)を参照してください。
 
 ### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>データセットのインスタンスにバインドされた listobject コントロールを作成するには
 
@@ -182,7 +182,7 @@ ms.locfileid: "54866010"
      A<xref:Microsoft.Office.Tools.Excel.ListObject>という名前のコントロール`productListObject`セル A1 から始まる、ワークシート上に作成されます。 同時に、 `adventureWorksLTDataSet` という名前のデータセット オブジェクトと、 <xref:System.Windows.Forms.BindingSource> という名前の `productBindingSource` がプロジェクトに追加されます。 <xref:Microsoft.Office.Tools.Excel.ListObject> が <xref:System.Windows.Forms.BindingSource>にバインドされ、さらにこれがデータセット オブジェクトにバインドされます。
 
 ## <a name="add-the-dataset-to-the-data-cache"></a>データ キャッシュにデータセットを追加します。
- ブック内のデータセットにアクセスする Excel ブック プロジェクトの外側のコードを有効にするには、データ キャッシュにデータセットを追加する必要があります。 データ キャッシュの詳細については、次を参照してください。[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)と[データ キャッシュ](../vsto/caching-data.md)します。
+ ブック内のデータセットにアクセスする Excel ブック プロジェクトの外側のコードを有効にするには、データ キャッシュにデータセットを追加する必要があります。 データ キャッシュの詳細については、[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)と[データ キャッシュ](../vsto/caching-data.md)を参照してください。
 
 ### <a name="to-add-the-dataset-to-the-data-cache"></a>データ キャッシュにデータセットを追加するには
 

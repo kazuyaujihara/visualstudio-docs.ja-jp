@@ -1,14 +1,9 @@
 ---
 title: Idiasymbol::get_backendbuild |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 423af497-9294-438e-92b4-456c6f56dc56
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 465f23523d5f2f8f2a9f3dc5ca5d240b18e647f7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 28d4f9f7f54a518b7dcb85f48003e3681df4b1c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724524"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975246"
 ---
 # <a name="idiasymbolgetbackendbuild"></a>IDiaSymbol::get_backEndBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ HRESULT get_backEndBuild ( 
 ## <a name="remarks"></a>Remarks  
  コンパイラは通常の 2 つの主な要素で構成されます。 中間形式を解析してソース コードを処理するフロント エンド (パーサー) と、バック エンド (コード ジェネレーター) アセンブリに中間形式を変換します。 これは、フロント エンド、バックエンドとは異なるバージョンが珍しくありません。  
   
- フロント エンドまたはバックエンドのバージョン番号は 3 つの部分で構成されます:\<メジャー >.\<マイナー >。\<ビルド > ここで、\<主要な >、メジャー バージョン番号は、\<マイナー > はマイナー バージョン番号、および\<ビルド > ビルド番号です。 たとえば、13.10.3077 です。  
+ フロント エンドまたはバックエンドのバージョン番号は 3 つの部分で構成されます:\<メジャー >.\<マイナー >。\<ビルド > ここで、\<主要な >、メジャー バージョン番号は、\<マイナー > はマイナー バージョン番号、および\<ビルド > ビルド番号です。 例: 13.10.3077。  
   
 ## <a name="requirements"></a>必要条件  
   
@@ -62,6 +57,3 @@ HRESULT get_backEndBuild ( 
   
 ## <a name="see-also"></a>関連項目  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

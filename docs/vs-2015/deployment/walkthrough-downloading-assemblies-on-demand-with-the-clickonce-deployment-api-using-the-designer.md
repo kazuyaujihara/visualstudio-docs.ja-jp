@@ -1,14 +1,9 @@
 ---
-title: 'チュートリアル: ClickOnce 配置デザイナーを使用して API で必要に応じてアセンブリをダウンロードする |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: ClickOnce 配置デザイナーを使用して API で必要に応じてアセンブリをダウンロード |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,24 +17,24 @@ ms.assetid: 59a0dd5f-1cab-4f2f-b780-0ab7399905d5
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 923951196487c9dc3f08b61879271fc71be373e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9c65ca67b54396935f52aaa8168d802f0179afd2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245064"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962710"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>チュートリアル : デザイナーを使用し、ClickOnce 配置 API で必要に応じてアセンブリをダウンロードする
+# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>チュートリアル: ClickOnce 配置デザイナーを使用して API で必要に応じてアセンブリをダウンロード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-既定では、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションに含まれるすべてのアセンブリが、アプリケーションを初めて実行したときにダウンロードされます。 ただし、アプリケーションには少数のユーザーにしか使われない部分が含まれることがあります。 その場合は、そのような型を作成するときにだけアセンブリをダウンロードすることができます。 以下のチュートリアルでは、アプリケーション内の特定のアセンブリに "オプション" マークを付ける方法、および共通言語ランタイムでそのアセンブリが必要なときに <xref:System.Deployment.Application> 名前空間にあるクラスを使用してアセンブリをダウンロードする方法について説明します。  
+既定では、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションに含まれるすべてのアセンブリが、アプリケーションを初めて実行したときにダウンロードされます。 ただし、アプリケーションには少数のユーザーにしか使われない部分が含まれることがあります。 その場合は、そのような型を作成するときにだけアセンブリをダウンロードすることができます。 以下のチュートリアルでは、アプリケーション内の特定のアセンブリに "オプション" マークを付ける方法、および共通言語ランタイムでそのアセンブリが必要なときに <xref:System.Deployment.Application> 名前空間にあるクラスを使用してアセンブリをダウンロードする方法について説明します。  
   
 > [!NOTE]
 >  これを行うには、アプリケーションが完全な信頼で実行する必要があります。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="creating-the-projects"></a>プロジェクトの作成  
   
@@ -87,11 +82,11 @@ ms.locfileid: "49245064"
   
 4.  **[グループ]** ドロップダウン ボックスを展開し、 **[新規]** を選択します。 新しいグループ名として「 `ClickOnceLibrary` 」と入力します。  
   
-5.  」の説明に従って、アプリケーションの発行を続行[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)します。  
+5.  」の説明に従って、アプリケーションの発行を続行[方法。発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)」を参照してください。  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>マニフェストの生成および編集ツールを使用して ClickOnce アプリケーションでアセンブリをオプションとしてマークするには — グラフィカル クライアント (MageUI.exe)  
   
-1.  作成、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 」の説明に従ってマニフェスト[チュートリアル: ClickOnce アプリケーションを手動で配置](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。  
+1.  作成、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 」の説明に従ってマニフェスト[チュートリアル。Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」(チュートリアル: ClickOnce アプリケーションを手動で配置する) を参照してください。  
   
 2.  MageUI.exe を終了する前に、配置のアプリケーション マニフェストを含むタブを選択し、そのタブで **[ファイル]** タブを選択します。  
   
@@ -101,12 +96,9 @@ ms.locfileid: "49245064"
   
 #### <a name="to-test-your-on-demand-assembly"></a>オンデマンド アセンブリをテストするには  
   
-1.  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] で配置されたアプリケーションを起動します。  
+1.  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]で配置されたアプリケーションを起動します。  
   
 2.  メイン フォームが表示されたら、 <xref:System.Windows.Forms.Button>をクリックします。 メッセージ ボックスに "Hello, World!" と表示されます。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:System.Deployment.Application.ApplicationDeployment>
-
-
-

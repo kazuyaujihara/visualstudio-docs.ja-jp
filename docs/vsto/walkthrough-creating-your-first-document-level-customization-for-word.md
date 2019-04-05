@@ -85,7 +85,7 @@ ms.locfileid: "56608150"
      **ソリューション エクスプ ローラー**、ダブルクリックして、 **ThisDocument**コード ファイル。
 
 ## <a name="add-text-to-the-document-in-the-designer"></a>デザイナーで文書にテキストを追加します。
- デザイナーで開いたドキュメントを変更することで、カスタマイズのユーザー インターフェイス (UI) をデザインできます。 たとえば、テキスト、テーブル、または Word コントロールを追加できます。 デザイナーを使用する方法の詳細については、次を参照してください。 [Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)します。
+ デザイナーで開いたドキュメントを変更することで、カスタマイズのユーザー インターフェイス (UI) をデザインできます。 たとえば、テキスト、テーブル、または Word コントロールを追加できます。 デザイナーを使用する方法の詳細については、[Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)を参照してください。
 
 ### <a name="to-add-text-to-your-document-by-using-the-designer"></a>デザイナーを使用してドキュメントにテキストを追加するには
 
@@ -96,9 +96,9 @@ ms.locfileid: "56608150"
 ## <a name="add-text-to-the-document-programmatically"></a>プログラムによって文書にテキストを追加します。
  次に、ThisDocument コード ファイルにコードを追加します。 この新しいコードでは、Word のオブジェクト モデルを使用して、ドキュメントに 2 番目のテキスト段落を追加します。 ThisDocument コード ファイルには、既定で次の生成済みコードが含まれています。
 
--   `ThisDocument` クラスの部分定義。このクラスは、ドキュメントのプログラミング モデルを表し、Word のオブジェクト モデルへのアクセスを提供します。 詳細については、次を参照してください。 [Document ホスト項目](../vsto/document-host-item.md)と[Word オブジェクト モデルの概要](../vsto/word-object-model-overview.md)します。 `ThisDocument` クラスの残りの部分は、変更することができない非表示のコード ファイルに定義されています。
+-   `ThisDocument` クラスの部分定義。このクラスは、ドキュメントのプログラミング モデルを表し、Word のオブジェクト モデルへのアクセスを提供します。 詳細については、[Document ホスト項目](../vsto/document-host-item.md)と[Word オブジェクト モデルの概要](../vsto/word-object-model-overview.md)を参照してください。 `ThisDocument` クラスの残りの部分は、変更することができない非表示のコード ファイルに定義されています。
 
--   `ThisDocument_Startup` および `ThisDocument_Shutdown` イベント ハンドラー。 これらのイベント ハンドラーは、ドキュメントが開いたとき、および閉じたときに呼び出されます。 これらのイベント ハンドラーを使用して、ドキュメントが開いたときにカスタマイズを初期化し、ドキュメントが閉じたときにカスタマイズが使用したリソースをクリーンアップします。 詳細については、次を参照してください。 [Office プロジェクト内のイベント](../vsto/events-in-office-projects.md)します。
+-   `ThisDocument_Startup` および `ThisDocument_Shutdown` イベント ハンドラー。 これらのイベント ハンドラーは、ドキュメントが開いたとき、および閉じたときに呼び出されます。 これらのイベント ハンドラーを使用して、ドキュメントが開いたときにカスタマイズを初期化し、ドキュメントが閉じたときにカスタマイズが使用したリソースをクリーンアップします。 詳細については、[Office プロジェクト内のイベント](../vsto/events-in-office-projects.md)を参照してください。
 
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>コードを使用してドキュメントに 2 番目のテキスト段落を追加するには
 
@@ -112,7 +112,7 @@ ms.locfileid: "56608150"
      [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]
 
     > [!NOTE]
-    >  このコードでは、インデックス値 1 を使用して <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> プロパティ内の最初の段落にアクセスします。 Visual Basic および Visual C# ではインデックスが 0 から始まる配列が使用されますが、Word オブジェクト モデルのほとんどのコレクションでは配列の下限のインデックスが 1 から始まります。 詳細については、次を参照してください。 [Office ソリューションでコードを記述](../vsto/writing-code-in-office-solutions.md)します。
+    >  このコードでは、インデックス値 1 を使用して <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> プロパティ内の最初の段落にアクセスします。 Visual Basic および Visual C# ではインデックスが 0 から始まる配列が使用されますが、Word オブジェクト モデルのほとんどのコレクションでは配列の下限のインデックスが 1 から始まります。 詳細については、[Office ソリューションでコードを記述](../vsto/writing-code-in-office-solutions.md)を参照してください。
 
 ## <a name="test-the-project"></a>プロジェクトをテストします。
 
@@ -120,7 +120,7 @@ ms.locfileid: "56608150"
 
 1.  **F5** キーを押して、プロジェクトをビルドおよび実行します。
 
-     プロジェクトをビルドすると、コードがアセンブリにコンパイルされ、ドキュメントに関連付けられます。 Visual Studio は、ドキュメントとアセンブリのコピーをプロジェクトのビルド出力フォルダーに格納し、カスタマイズを実行できるように開発用コンピューターのセキュリティ設定を行います。 詳細については、次を参照してください。[ビルドの Office ソリューション](../vsto/building-office-solutions.md)します。
+     プロジェクトをビルドすると、コードがアセンブリにコンパイルされ、ドキュメントに関連付けられます。 Visual Studio は、ドキュメントとアセンブリのコピーをプロジェクトのビルド出力フォルダーに格納し、カスタマイズを実行できるように開発用コンピューターのセキュリティ設定を行います。 詳細については、[ビルドの Office ソリューション](../vsto/building-office-solutions.md)を参照してください。
 
 2.  次のテキストがドキュメントに表示されることを確認します。
 

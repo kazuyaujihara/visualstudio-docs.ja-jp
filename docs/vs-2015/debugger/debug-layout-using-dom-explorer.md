@@ -1,14 +1,9 @@
 ---
 title: DOM Explorer を使用してレイアウトのデバッグ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787757"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964325"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>DOM Explorer を使用したレイアウトのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 > [!TIP]
 >  **[レイアウト]** タブで行った変更は永続的ではありません。 ソース コードを永続的に変更してアプリを更新するには、[デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタン (Windows ストア アプリと Windows Phone ストア アプリのみ) を使用します。 これにより、デバッガーを再起動せずに済みます。  
   
- DOM Explorer を使用して、ボックス モデルに表示されないレイアウトの側面を変更する、[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)と[DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)を参照してください。  
+ DOM Explorer を使用して、ボックス モデルに表示されないレイアウトの側面を変更する、次を参照してください。[クイック スタート。HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)と[DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)します。  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>レイアウトの問題の修正例  
  この例では、ハブ/ピボット テンプレートでリスト要素を選択し、 **[レイアウト]** タブに表示されるボックス モデルの値を解釈します。その後、プロパティ値のいずれかを変更してレイアウトの問題を修正します。  
@@ -88,7 +83,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 8.  Visual Studio に切り替え、DOM Explorer で **[要素の選択]** をクリックします (または Ctrl + B キーを押します)。 これで選択モードが変更され、項目をクリックで選択できるようになります。同時に、アプリが前面に表示されます。 モードは、シングルクリックで元に戻ります。  
   
     > [!TIP]
-    >  DOM Explorer で HTML 要素を直接選択するために、矢印キーや他のメソッドを使用することもできます。 要素を選択する方法の詳細については、[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)を参照してください。  
+    >  DOM Explorer で HTML 要素を直接選択するために、矢印キーや他のメソッドを使用することもできます。 要素を選択する方法の詳細については、次を参照してください。[クイック スタート。HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)します。  
   
 9. Phone エミュレーターまたはシミュレーターで、半分にカットされたイメージの 1 つのグレーの右半分を選択します。 Windows Phone エミュレーターに示すように、選択された要素の周囲に強調表示があります。  
   
@@ -132,9 +127,6 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 15. Phone エミュレーターまたはシミュレーターに切り替えます。 更新された左余白の値がセクション 4 のイメージに適用されています。 これらの値は、margin-left 規則の **[計算済み]** タブでも更新されます。  
   
 ## <a name="see-also"></a>関連項目  
- [クイック スタート: HTML と CSS をデバッグします。](../debugger/quickstart-debug-html-and-css.md)   
+ [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)   
  [DOM Explorer を使用して CSS スタイルをデバッグします。](../debugger/debug-css-styles-using-dom-explorer.md)   
  [DOM イベント リスナーの表示](../debugger/view-dom-event-listeners.md)
-
-
-

@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: d88ebe84ec3ec5efb1d7c4ac04ebaee50ac65b97
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51796494"
@@ -39,7 +39,7 @@ ms.locfileid: "51796494"
  ステートメント入力候補を実装するには、お使いの言語のステートメント入力候補トリガー、解析できる必要があります。 たとえば、[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]ドット (.) 演算子を使用して中に[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]矢印を使用して (->) 演算子。 言語サービスは、1 つ以上のトリガーを使用して、ステートメント入力候補を開始できます。 これらのトリガーは、コマンドのフィルターでプログラムを作成します。  
   
 ## <a name="command-filters-and-triggers"></a>コマンドのフィルターとトリガー  
- コマンドのフィルターは、トリガーやトリガーの発生をインターセプトします。 ビューには、コマンドのフィルターを追加するには、実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイスを呼び出すことによって、ビューにアタッチ、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>メソッド。 同じコマンド フィルターを使用することができます (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) のステートメント入力候補、エラー マーカー、およびメソッドのヒントなど、言語サービスのすべての側面です。 詳細については、次を参照してください。[レガシ言語サービス コマンドのインターセプト](../../extensibility/internals/intercepting-legacy-language-service-commands.md)します。  
+ コマンドのフィルターは、トリガーやトリガーの発生をインターセプトします。 ビューには、コマンドのフィルターを追加するには、実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイスを呼び出すことによって、ビューにアタッチ、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>メソッド。 同じコマンド フィルターを使用することができます (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) のステートメント入力候補、エラー マーカー、およびメソッドのヒントなど、言語サービスのすべての側面です。 詳細については、[レガシ言語サービス コマンドのインターセプト](../../extensibility/internals/intercepting-legacy-language-service-commands.md)を参照してください。  
   
  トリガーが、エディターに入力された場合、テキスト バッファーでは具体的には、-、言語サービスを呼び出して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>メソッド。 これにより、ステートメント入力候補の候補として、ユーザーが選択できるように、UI を起動するエディターです。 このメソッドでは、実装する必要があります<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>と<xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags>パラメーターとしてフラグします。 スクロール リスト ボックスに入力候補の項目の一覧が表示されます。 ユーザーは、入力は引き続き、最新の文字に最も近い一致が型指定を反映するように、リスト ボックス内の選択範囲が更新されます。 コア エディターには、ステートメント入力候補の UI が実装されていますが、言語サービスを実装する必要があります、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>一連のステートメント候補入力候補の項目を定義するインターフェイス。  
   

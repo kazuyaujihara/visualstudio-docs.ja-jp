@@ -60,7 +60,7 @@ Visual Studio では、言語の要素を特定し、エディターで指定し
     3.  によって返される色づけの情報を使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>メソッドを選択したテキストを表示します。
 
 > [!NOTE]
->  言語サービスの colorizer を使用するだけでなく、VSPackage は、汎用的な Visual Studio テキストが色分け表示メカニズムにも使用できます。 このメカニズムの詳細については、次を参照してください。[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)します。
+>  言語サービスの colorizer を使用するだけでなく、VSPackage は、汎用的な Visual Studio テキストが色分け表示メカニズムにも使用できます。 このメカニズムの詳細については、[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [構文の色分け表示の実装](../../extensibility/internals/implementing-syntax-coloring.md)

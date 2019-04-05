@@ -42,7 +42,7 @@ MSDK では、ドメイン固有言語 (DSL) の形式でモデルを迅速に�
 
 [関連するブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
 
-高度な技法とトラブルシューティングに関するガイダンスについては、次を参照してください。 [Visual Studio DSL & Modeling Tools 機能拡張フォーラム](http://go.microsoft.com/fwlink/?LinkID=186074)します。
+高度な技法とトラブルシューティングに関するガイダンスについては、[Visual Studio DSL & Modeling Tools 機能拡張フォーラム](http://go.microsoft.com/fwlink/?LinkID=186074)を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
  [ドメイン固有言語の概要](../modeling/getting-started-with-domain-specific-languages.md)

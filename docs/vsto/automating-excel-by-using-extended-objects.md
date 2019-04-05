@@ -32,20 +32,20 @@ ms.locfileid: "56600855"
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- ホスト項目とホスト コントロールは、VSTO アドインとドキュメント レベルのカスタマイズの両方で使用できます。ただし、使用できるコンテキストはそれおぞれのソリューションの種類で異なります。 詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
+ ホスト項目とホスト コントロールは、VSTO アドインとドキュメント レベルのカスタマイズの両方で使用できます。ただし、使用できるコンテキストはそれおぞれのソリューションの種類で異なります。 詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)を参照してください。
 
 ## <a name="excel-host-items"></a>Excel ホスト項目
  Excel プロジェクトでは、次のホスト項目にアクセスできます。
 
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>。 このホスト項目が含まれ、プロジェクトのワークシートを表します。 また、ホスト コントロールや Windows フォーム コントロールなどのマネージド コントロールを格納するコンテナーの役割も果たし、画面のコントロールに関する情報を保持します。 詳細については、次を参照してください。 [Worksheet ホスト項目](../vsto/worksheet-host-item.md)します。
+-   <xref:Microsoft.Office.Tools.Excel.Worksheet>。 このホスト項目が含まれ、プロジェクトのワークシートを表します。 また、ホスト コントロールや Windows フォーム コントロールなどのマネージド コントロールを格納するコンテナーの役割も果たし、画面のコントロールに関する情報を保持します。 詳細については、[Worksheet ホスト項目](../vsto/worksheet-host-item.md)を参照してください。
 
--   <xref:Microsoft.Office.Tools.Excel.Workbook>。 このホスト項目はプロジェクトのブックを表し、ブック内のすべてのワークシートで共有されるコンポーネントを格納するコンテナーとして動作します。 詳細については、次を参照してください。 [Workbook ホスト項目](../vsto/workbook-host-item.md)します。
+-   <xref:Microsoft.Office.Tools.Excel.Workbook>。 このホスト項目はプロジェクトのブックを表し、ブック内のすべてのワークシートで共有されるコンポーネントを格納するコンテナーとして動作します。 詳細については、[Workbook ホスト項目](../vsto/workbook-host-item.md)を参照してください。
 
 -   <xref:Microsoft.Office.Tools.Excel.ChartSheet>。 このホスト項目はグラフのみを含む Excel ワークシートを表し、イベントを公開します。
 
      Microsoft Office Excel のドキュメント レベルのカスタマイズ プロジェクトで、デザイン時に新しいシートとしてグラフ シートを追加した場合、Visual Studio によって自動的に <xref:Microsoft.Office.Tools.Excel.ChartSheet> ホスト項目が作成されます。
 
-     <xref:Microsoft.Office.Tools.Excel.ChartSheet> ホスト項目は Excel のワークシートですが、このグラフ シートにはコントロールを追加できません。 グラフを含むワークシート上に他のコントロールを追加する場合は、グラフ シートを使用しないでください。 代わりに、 <xref:Microsoft.Office.Tools.Excel.Chart> ホスト コントロールを使用して、ワークシート上の埋め込みオブジェクトとしてグラフを配置できます。 詳細については、次を参照してください。[グラフ コントロール](../vsto/chart-control.md)します。
+     <xref:Microsoft.Office.Tools.Excel.ChartSheet> ホスト項目は Excel のワークシートですが、このグラフ シートにはコントロールを追加できません。 グラフを含むワークシート上に他のコントロールを追加する場合は、グラフ シートを使用しないでください。 代わりに、 <xref:Microsoft.Office.Tools.Excel.Chart> ホスト コントロールを使用して、ワークシート上の埋め込みオブジェクトとしてグラフを配置できます。 詳細については、[グラフ コントロール](../vsto/chart-control.md)を参照してください。
 
 ## <a name="excel-host-controls"></a>Excel ホスト コントロール
  Excel には、ブックやワークシートの作成、整理、および自動化に役立つホスト コントロールがいくつかあります。 これらのホスト コントロールには、Excel のネイティブ オブジェクト モデルの対応するコントロールにはないイベントやデータ バインディング機能が用意されています。

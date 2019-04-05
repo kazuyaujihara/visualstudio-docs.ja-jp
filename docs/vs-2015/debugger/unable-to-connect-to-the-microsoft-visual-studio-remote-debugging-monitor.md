@@ -1,14 +1,9 @@
 ---
 title: Microsoft Visual Studio リモート デバッグ モニターに接続できません |。Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.remote_debug
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: a1d959fc-3817-491c-831b-e6b768a3877a
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 139c650ac61b9312b069cc2e19fa66d3673ca30f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e5e011ccd047551e7ea6cf1426b4118c3ad879f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733011"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974568"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio リモート デバッグ モニターに接続できません。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ ms.locfileid: "51733011"
   
 -   リモート デバッガーを停止し、ローカル コンピューターで使用しているアカウントで再起動します。  
   
--   使用してコマンドラインからリモート デバッガーを開始することができます、 **/allow\<ユーザー名 >** パラメーター。 `msvsmon /allow <username@computer>`  
+-   コマンド ラインで **/allow \<ユーザー名>** パラメーターに `msvsmon /allow <username@computer>` を指定してリモート デバッガーを開始します。  
   
 -   リモート デバッガーのアクセス許可に該当ユーザーを追加します (リモート デバッガーのウィンドウで **[ツール] / [アクセス許可]** を選択)。  
   
@@ -90,6 +85,3 @@ ms.locfileid: "51733011"
   
 ## <a name="see-also"></a>関連項目  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

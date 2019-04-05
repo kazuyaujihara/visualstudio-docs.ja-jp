@@ -1,26 +1,21 @@
 ---
-title: 'チュートリアル: カスタム エディターの機能の追加 |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: カスタム エディター機能の追加 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2379a488d042ab8905844c9c536f79ecb4b03268
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8e6395f279af8b48d9f74981f61cceb431a1d00a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737040"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978396"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>チュートリアル: カスタム エディターに機能を追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51737040"
   
 1.  カスタム エディターを作成するには、Visual Studio パッケージ プロジェクト テンプレートを使用します。  
   
-     詳細については、次を参照してください。[チュートリアル: カスタム エディターを作成する](../extensibility/walkthrough-creating-a-custom-editor.md)します。  
+     詳細については、「[チュートリアル:カスタム エディターを作成する](../extensibility/walkthrough-creating-a-custom-editor.md)します。  
   
 2.  エディター ビューを 1 つまたは複数のビューをサポートするかどうかを決定します。  
   
@@ -122,7 +117,7 @@ ms.locfileid: "51737040"
   
 12. 状況依存のヘルプのサポートを実装します。  
   
-     これにより、エディター内の項目の F1 ヘルプおよびダイナミック ヘルプ ウィンドウのサポートを提供することができます。 詳細については、これは、次を参照してください。[方法: エディターのコンテキストを提供](../extensibility/how-to-provide-context-for-editors.md)します。  
+     これにより、エディター内の項目の F1 ヘルプおよびダイナミック ヘルプ ウィンドウのサポートを提供することができます。 詳細については、これは、次を参照してください。[方法。エディターのコンテキストを提供](../extensibility/how-to-provide-context-for-editors.md)します。  
   
 13. 実装することで、エディターからのオートメーション オブジェクト モデルを公開、`IDispatch`インターフェイス。  
   
@@ -161,5 +156,4 @@ ms.locfileid: "51737040"
   
 ## <a name="see-also"></a>関連項目  
  [オートメーション モデルに貢献します。](../extensibility/internals/contributing-to-the-automation-model.md)   
- [方法: エディター用のコンテキストを提供する](../extensibility/how-to-provide-context-for-editors.md)
-
+ [方法: エディターのコンテキストを提供します。](../extensibility/how-to-provide-context-for-editors.md)

@@ -38,7 +38,7 @@ ms.locfileid: "57526707"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  カスタム作業ウィンドウは、操作ウィンドウとは異なります。 操作ウィンドウは、Microsoft Office Word および Microsoft Office Excel のドキュメント レベルのカスタマイズの一部です。 詳細については、次を参照してください。[操作ウィンドウの概要](../vsto/actions-pane-overview.md)します。
+>  カスタム作業ウィンドウは、操作ウィンドウとは異なります。 操作ウィンドウは、Microsoft Office Word および Microsoft Office Excel のドキュメント レベルのカスタマイズの一部です。 詳細については、[操作ウィンドウの概要](../vsto/actions-pane-overview.md)を参照してください。
 
 ## <a name="benefits-of-custom-task-panes"></a>カスタム作業ウィンドウの利点があります。
  カスタム作業ウィンドウでは、使用する機能を使い慣れたユーザー インターフェイスに取り込むことができます。 Visual Studio のツールを使用して、カスタム作業ウィンドウをすばやく作成できます。
@@ -78,7 +78,7 @@ ms.locfileid: "57526707"
 
 - 指定したウィンドウでホストされているドキュメントに作業ウィンドウを関連付けるには、<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> メソッドを使用します。
 
-  一部の Office アプリケーションでは、複数のウィンドウが開いているときに作業ウィンドウを作成する、または表示するタイミングについて、明示的な命令が必要です。 その場合、作業ウィンドウがアプリケーションで確実に適切なドキュメントや項目に表示されるようにするために、カスタム作業ウィンドウをコードのどこでインスタンス化するかを検討することが重要になります。 詳細については、次を参照してください。[アプリケーション ウィンドウでカスタム作業ウィンドウを管理](#Managing)します。
+  一部の Office アプリケーションでは、複数のウィンドウが開いているときに作業ウィンドウを作成する、または表示するタイミングについて、明示的な命令が必要です。 その場合、作業ウィンドウがアプリケーションで確実に適切なドキュメントや項目に表示されるようにするために、カスタム作業ウィンドウをコードのどこでインスタンス化するかを検討することが重要になります。 詳細については、[アプリケーション ウィンドウでカスタム作業ウィンドウを管理](#Managing)を参照してください。
 
 ## <a name="access-the-application-from-the-task-pane"></a>作業ウィンドウからアプリケーションへのアクセスします。
  ユーザー コントロールからアプリケーションを自動化する場合、コード内の `Globals.ThisAddIn.Application` を使用して、オブジェクト モデルに直接アクセスできます。 静的な `Globals` クラスは、`ThisAddIn` オブジェクトへのアクセスを提供します。 このオブジェクトの `Application` フィールドは、アプリケーションのオブジェクト モデルへのエントリ ポイントです。
@@ -142,7 +142,7 @@ ms.locfileid: "57526707"
 
  複数のエクスプ ローラーやインスペクターのウィンドウでカスタム作業ウィンドウを表示する場合は、エクスプ ローラーまたはインスペクター ウィンドウが開いたときに、カスタム作業ウィンドウの新しいインスタンスを作成する必要があります。 そのためには、エクスプ ローラーまたはインスペクター ウィンドウが作成されるときに発生するイベントを処理し、次に、イベント ハンドラーで作業ウィンドウを作成します。 どのウィンドウを表示させるかに応じて、作業ウィンドウを非表示にしたり表示させたりするように、エクスプ ローラーおよびインスペクターのイベントを処理することもできます。
 
- 作業ウィンドウを特定のエクスプ ローラーまたはインスペクターに関連付けるを使用して、<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>メソッドは、作業ウィンドウを作成して渡す、<xref:Microsoft.Office.Interop.Outlook.Explorer>または<xref:Microsoft.Office.Interop.Outlook.Inspector>オブジェクトを*ウィンドウ*パラメーター。 カスタム作業ウィンドウを作成する方法の詳細については、次を参照してください。[カスタム作業ウィンドウの概要](../vsto/custom-task-panes.md)します。
+ 作業ウィンドウを特定のエクスプ ローラーまたはインスペクターに関連付けるを使用して、<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>メソッドは、作業ウィンドウを作成して渡す、<xref:Microsoft.Office.Interop.Outlook.Explorer>または<xref:Microsoft.Office.Interop.Outlook.Inspector>オブジェクトを*ウィンドウ*パラメーター。 カスタム作業ウィンドウを作成する方法の詳細については、[カスタム作業ウィンドウの概要](../vsto/custom-task-panes.md)を参照してください。
 
 - <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>
 

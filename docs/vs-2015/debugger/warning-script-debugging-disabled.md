@@ -1,14 +1,9 @@
 ---
-title: '警告: スクリプト デバッグが無効 |Microsoft Docs'
-ms.custom: ''
+title: 警告 :スクリプト デバッグが無効 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.scriptdisabled
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: 323d2b1d-52a4-42f7-b4ad-96b4b0c23b8d
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 505f93056de1d5212856d32152a91a26d5f2a250
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b44c260e00ae5ef8b0d23e7aede139563ff22d98
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805958"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975026"
 ---
-# <a name="warning-script-debugging-disabled"></a>警告 : スクリプト デバッグが無効
+# <a name="warning-script-debugging-disabled"></a>警告 :スクリプト デバッグが無効
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Internet Explorer では、スクリプトのデバッグは現在無効になっています。  
@@ -37,13 +32,13 @@ Internet Explorer では、スクリプトのデバッグは現在無効にな�
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Internet Explorer でスクリプトのデバッグを有効にするには  
   
-1.  Internet Explorer で**ツール**] メニューの [選択**インターネット オプション**します。  
+1.  Internet Explorer で、**[ツール]** メニューの **[インターネット オプション]** を選択します。  
   
 2.  **[インターネット オプション]** ダイアログ ボックスで、 **[詳細設定]** タブをクリックします。  
   
-3.  **詳細** タブで、ファイルの場所、**設定**ボックスで、**ブラウズ**カテゴリ。  
+3.  **[詳細設定]** タブの **[設定]** で **[参照]** カテゴリを表示します。  
   
-4.  クリア**スクリプトのデバッグ (Internet Explorer) を無効にする**します。  
+4.  **[スクリプトのデバッグを使用しない (Internet Explorer)]** チェック ボックスをオフにします。  
   
 5.  **[OK]** をクリックします。  
   
@@ -52,7 +47,4 @@ Internet Explorer では、スクリプトのデバッグは現在無効にな�
      新しい設定が反映されます。  
   
 ## <a name="see-also"></a>関連項目  
- [方法 : スクリプトにアタッチする](../debugger/how-to-attach-to-script.md)
-
-
-
+ [方法: ](../debugger/how-to-attach-to-script.md)スクリプトにアタッチする

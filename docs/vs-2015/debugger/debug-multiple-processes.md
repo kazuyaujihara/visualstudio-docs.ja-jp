@@ -1,14 +1,9 @@
 ---
 title: 複数のプロセスのデバッグ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
 - vs.debug.processes.attaching
@@ -24,13 +19,13 @@ ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56982a3b5c0a0d8a5cb0b682ab67b6f5eb133dd1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1d0986e1780cb9fea061132b5985972cf9635c8b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793049"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962403"
 ---
 # <a name="debug-multiple-processes"></a>複数プロセスをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,10 +52,10 @@ ms.locfileid: "51793049"
   
    ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> ソースとシンボル (.pdb) ファイルを検索します。  
+##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> ソースとシンボル (.pdb) ファイルを検索する  
  プロセスのソース コードを処理するために、デバッガーにはプロセスのソース ファイルとシンボル ファイルへのアクセスが必要になります。 [シンボル (.pdb) ファイルとソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)に関する記事をご覧ください。  
   
- プロセスのこれらのファイルにアクセスできない場合は、[逆アセンブル] ウィンドウを使用してそれらのファイルを検索できます。 参照してください[方法: [逆アセンブル] ウィンドウの使用](../debugger/how-to-use-the-disassembly-window.md)  
+ プロセスのこれらのファイルにアクセスできない場合は、[逆アセンブル] ウィンドウを使用してそれらのファイルを検索できます。 「[方法:[逆アセンブル] ウィンドウを使用する](../debugger/how-to-use-the-disassembly-window.md)  
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
@@ -103,7 +98,7 @@ ms.locfileid: "51793049"
   
    ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-###  <a name="BKMK_Attach_to_a_process"></a> プロセスにアタッチします。  
+###  <a name="BKMK_Attach_to_a_process"></a> プロセスにアタッチする  
  デバッガーのことにも*アタッチ*リモート デバイスで実行されているプログラムを含む、Visual Studio の外部プロセスで実行されているプログラム。 プログラムにアタッチした後、デバッガーの実行コマンドを使用したり、プログラムの状態をチェックしたりできます。 プログラムのチェック機能は、デバッグ情報付きでビルドされたプログラムかどうか、プログラムのソース コードにアクセスできるかどうか、および共通言語ランタイムの JIT コンパイラがデバッグ情報を追跡しているかどうかによって限定される場合があります。  
   
  参照してください[実行中のプロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)詳細についてはします。  
@@ -145,7 +140,7 @@ ms.locfileid: "51793049"
   
 -   [プロセス間を切り替える](#BKMK_Switch_between_processes)•[中断、ステップ実行、および再開の各コマンド](#BKMK_Break__step__and_continue_commands)  
   
-###  <a name="BKMK_Switch_between_processes"></a> プロセス間の切り替え  
+###  <a name="BKMK_Switch_between_processes"></a> プロセスの切り替え  
  デバッグ中には複数のプロセスにアタッチできますが、デバッガーでアクティブになっているプロセスは常に 1 つだけです。 アクティブなを設定するまたは*現在*やデバッグの場所 ツールバーで、プロセス、**プロセス**ウィンドウ。 プロセス間で切り替えるには、両方のプロセスが中断モードであることが必要です。  
   
  **現在のプロセスを設定するには**  
@@ -168,7 +163,7 @@ ms.locfileid: "51793049"
   
   ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-###  <a name="BKMK_Break__step__and_continue_commands"></a> 中断、ステップ、および続行のコマンド  
+###  <a name="BKMK_Break__step__and_continue_commands"></a> 中断、ステップ実行、続行のコマンド  
   
 > [!NOTE]
 >  既定では、中断、続行、ステップ実行のコマンドはデバッグ中のすべてのプロセスに影響を与えます。 この動作を変更するを参照してください[複数のプロセスの実行動作を構成します。](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
@@ -218,18 +213,15 @@ ms.locfileid: "51793049"
 |**デバッグ**メニュー。<br /><br /> -   **すべてデタッチします。**|すべてのプロセスからデバッガーがデタッチされます。|  
 |**プロセス**ウィンドウ コンテキスト メニュー。<br /><br /> -   **デタッチ (プロセス)**|選択したプロセスからデバッガーがデタッチされます。<br /><br /> 他のプロセスの既存の状態 (一時停止中または実行中) が維持されます。|  
 |**プロセス**ウィンドウ コンテキスト メニュー。<br /><br /> -   **プロセスが終了します。**|選択したプロセスが終了します。<br /><br /> 他のプロセスの既存の状態 (一時停止中または実行中) が維持されます。|  
-|**プロセス**ウィンドウ コンテキスト メニュー。<br /><br /> -   **デバッグの停止時にデタッチします。**|動作を切り替えます**デバッグ**、**デバッグの停止**選択したプロセス。<br /><br /> デバッガーがチェック: プロセスからデタッチされます。<br />-オフ: プロセスが終了します。|  
+|**プロセス**ウィンドウ コンテキスト メニュー。<br /><br /> -   **デバッグの停止時にデタッチします。**|動作を切り替えます**デバッグ**、**デバッグの停止**選択したプロセス。<br /><br /> -チェックされます。デバッガーはプロセスからデタッチされます。<br />-オフ。プロセスは終了しました。|  
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [デバッグを停止、終了、またはプロセスからデタッチします。](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
 ## <a name="see-also"></a>関連項目  
- [シンボル (.pdb) を指定し、ソース ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [実行中のプロセスをアタッチします。](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [シンボル (.pdb) とソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [実行中のプロセスにアタッチする](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)   
  [ジャストイン タイムのデバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-
-
-

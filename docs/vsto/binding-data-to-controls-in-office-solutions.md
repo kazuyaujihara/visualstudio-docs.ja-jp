@@ -30,9 +30,9 @@ ms.locfileid: "56605719"
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- ホスト コントロールは、Word や Excel のオブジェクト モデルにあるオブジェクトを拡張します。たとえば、Word のコンテンツ コントロールや Excel の名前付き範囲が挙げられます。 詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
+ ホスト コントロールは、Word や Excel のオブジェクト モデルにあるオブジェクトを拡張します。たとえば、Word のコンテンツ コントロールや Excel の名前付き範囲が挙げられます。 詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)を参照してください。
 
- Windows フォーム コントロールとホスト コントロールはいずれも Windows フォームのデータ バインディング モデルを使用します。このモデルでは、データセットやデータ テーブルなどのデータ ソースに対して *単純データ バインディング* と *複合データ バインディング* の両方がサポートされます。 Windows フォームでのデータ バインディング モデルについては、次を参照してください。[データ連結と Windows フォーム](/dotnet/framework/winforms/data-binding-and-windows-forms)します。
+ Windows フォーム コントロールとホスト コントロールはいずれも Windows フォームのデータ バインディング モデルを使用します。このモデルでは、データセットやデータ テーブルなどのデータ ソースに対して *単純データ バインディング* と *複合データ バインディング* の両方がサポートされます。 Windows フォームでのデータ バインディング モデルについては、[データ連結と Windows フォーム](/dotnet/framework/winforms/data-binding-and-windows-forms)を参照してください。
 
  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:Excel でデータベースのデータを使用しますか](http://go.microsoft.com/fwlink/?LinkID=130287).
 
@@ -51,7 +51,7 @@ ms.locfileid: "56605719"
 ## <a name="complex-data-binding"></a>複合データ バインディング
  複合データ バインディングは、コントロール プロパティが、データ テーブル内の複数の列など、複数のデータ要素にバインドされる場合に存在します。 Excel の <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールは、複合データ バインディングをサポートする唯一のホスト コントロールです。 ただし、複合データ バインディングをサポートする Windows フォーム コントロールが数多くあります ( <xref:System.Windows.Forms.DataGridView> コントロールなど)。
 
- 複合データ バインディングを実行するには、コントロールの `DataSource` プロパティを、複合データ バインディングでサポートされるデータ ソース オブジェクトに設定します。 たとえば、 <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> コントロールの <xref:Microsoft.Office.Tools.Excel.ListObject> プロパティは、データ テーブル内の複数の列にバインドできます。 データ テーブル内のすべてのデータは <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールに表示され、データ テーブル内のデータが変更されると、 <xref:Microsoft.Office.Tools.Excel.ListObject> も変更されます。 複合データ バインディングに使用できるデータ ソースの一覧では、次を参照してください。 [Windows フォームでサポートされるデータ ソース](/dotnet/framework/winforms/data-sources-supported-by-windows-forms)します。
+ 複合データ バインディングを実行するには、コントロールの `DataSource` プロパティを、複合データ バインディングでサポートされるデータ ソース オブジェクトに設定します。 たとえば、 <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> コントロールの <xref:Microsoft.Office.Tools.Excel.ListObject> プロパティは、データ テーブル内の複数の列にバインドできます。 データ テーブル内のすべてのデータは <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールに表示され、データ テーブル内のデータが変更されると、 <xref:Microsoft.Office.Tools.Excel.ListObject> も変更されます。 複合データ バインディングに使用できるデータ ソースの一覧では、[Windows フォームでサポートされるデータ ソース](/dotnet/framework/winforms/data-sources-supported-by-windows-forms)を参照してください。
 
  次のコード例は、2 つの <xref:System.Data.DataSet> オブジェクトを持つ <xref:System.Data.DataTable> を作成し、そのうち 1 つのテーブルにデータを入力します。 次に、コードはデータを含むテーブルに <xref:Microsoft.Office.Tools.Excel.ListObject> をバインドします。 これは、Excel のドキュメント レベルのプロジェクト用の例です。
 

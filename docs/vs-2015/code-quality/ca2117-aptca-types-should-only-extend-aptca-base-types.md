@@ -1,14 +1,9 @@
 ---
-title: '2117: APTCA 型は APTCA 基本型を拡張するのみ |Microsoft Docs'
-ms.custom: ''
+title: CA2117:APTCA 型は APTCA 基本型のみを拡張する必要があります |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2117
 - AptcaTypesShouldOnlyExtendAptcaBaseTypes
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4b069674827ab266b4a4b7a99f81e039d487f6da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922654"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976031"
 ---
-# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: APTCA 型は APTCA 基本型のみを拡張することができます
+# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117:APTCA 型は APTCA 基本型のみを拡張することができます
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -41,7 +36,7 @@ ms.locfileid: "49922654"
  パブリックまたはプロテクト型を持つアセンブリ、<xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName>属性は、属性を持たないアセンブリで宣言された型から継承します。
 
 ## <a name="rule-description"></a>規則の説明
- 既定では、厳密な名前付きアセンブリのパブリックまたはプロテクト型は暗黙的にによって保護、[継承確認要求](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)完全な信頼。 アセンブリの厳密な名前が付いて、 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) 属性には、この保護はありません。 属性には、継承確認要求が無効にします。 これにより、完全な信頼がない型で公開されている型継承可能なアセンブリで宣言します。
+ 既定では、厳密な名前付きアセンブリのパブリックまたはプロテクト型は暗黙的にによって保護、[継承確認要求](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)完全な信頼。 アセンブリの厳密な名前が付いて、 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) 属性には、この保護はありません。 属性には、継承確認要求が無効にします。 これにより、完全な信頼がない型で公開されている型継承可能なアセンブリで宣言します。
 
  APTCA 属性が完全に信頼されたアセンブリにあり、アセンブリの型が部分的に信頼された呼び出し元が許可されない型から継承、セキュリティ上の弱点になります。 2 つの型の場合`T1`と`T2`次の条件を満たしている、悪意のある呼び出し元は、型を使用できる`T1`を保護する完全な信頼の暗黙的な継承確認要求をバイパスする`T2`:
 
@@ -86,11 +81,7 @@ ms.locfileid: "49922654"
 **からテスト: sunny meadow**
 **sunny meadow で 2003 年 2 月 22 12時 00分: 00 AM です。**
 ## <a name="related-rules"></a>関連規則
- [CA2116: APTCA メソッドは APTCA メソッドのみを呼び出すことができます](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
+ [CA2116:APTCA メソッドは APTCA メソッドのみを呼び出す必要があります。](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>関連項目
- [安全なコーディングのガイドライン](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework アセンブリから呼び出すことで部分的に信頼されているコード](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)[からライブラリを使用して部分的に信頼されているコード](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74)[継承確認要求](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
-
-
-
-
+ [安全なコーディングのガイドライン](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework アセンブリから呼び出すことで部分的に信頼されているコード](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d)[からライブラリを使用して部分的に信頼されているコード](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74)[継承確認要求](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

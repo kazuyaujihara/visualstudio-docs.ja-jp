@@ -1,12 +1,9 @@
 ---
 title: ユーザーの要件をモデル化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
@@ -15,18 +12,18 @@ ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab92a08aa7359aa4393b3356384a4ccc352afb27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776487"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002727"
 ---
 # <a name="model-user-requirements"></a>ユーザー要件のモデリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio を使用すると、ユーザーの目標達成を支援する際に、彼らのアクティビティやシステムが果たしている役割に関する図を描画することで、ユーザー ニーズを理解し、検討し、やり取りすることができます。 要求モデルとはこのような一連の図のことで、それぞれの図では、ユーザー ニーズの異なる側面に注目しています。 ビデオ デモについては、「 [ビジネス ドメインのモデリング](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)」を参照してください。  
+Visual Studio を使用すると、ユーザーの目標達成を支援する際に、彼らのアクティビティやシステムが果たしている役割に関する図を描画することで、ユーザー ニーズを理解し、検討し、やり取りすることができます。 要求モデルとはこのような一連の図のことで、それぞれの図では、ユーザー ニーズの異なる側面に注目しています。 ビデオ デモについては、次を参照してください。[ビジネス ドメインのモデリング](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)します。  
   
  どのバージョンの Visual Studio が各モデルの種類をサポートしているかについては、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
@@ -141,7 +138,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 |概念クラス図の要素|[UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)|  
 |概念クラスからコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|  
   
- 概念クラス図では通常、移動方向を表すために、関連付けに矢印を配置しても役に立ちません。 これは、図が実装を表していないためです。 関連付けは、現実世界のオブジェクト間の関係を表します。 次の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能では、方向性を示さない矢印が既定の設定になります: [サンプル: UML ドメイン モデリング機能](http://go.microsoft.com/fwlink/?LinkId=213849)  
+ 概念クラス図では通常、移動方向を表すために、関連付けに矢印を配置しても役に立ちません。 これは、図が実装を表していないためです。 関連付けは、現実世界のオブジェクト間の関係を表します。 次[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]して矢印の方向性のない、既定の拡張機能。[サンプル:UML ドメイン モデリング機能](http://go.microsoft.com/fwlink/?LinkId=213849)します。  
   
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  ビジネス ルールとは、特定のユース ケースに関連付けられておらず、システム全体で認められる要求です。  
@@ -185,7 +182,6 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
   
 |詳細|読み取り|  
 |--------------------|----------|  
-|サービス品質要求の記録に関する詳細|[サービス品質要求を定義するためのガイドライン](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |ユース ケースへの追加ドキュメントのアタッチ|[ユース ケースをドキュメントおよび図にリンクする](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |サービス品質要求に準拠しているコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|  
   
@@ -223,7 +219,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
   
 |詳細|読み取り|  
 |--------------------|----------|  
-|相互作用の定義方法の詳細|[UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|相互作用の定義方法の詳細|[UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |シーケンス図の要素|[UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)|  
 |シーケンス図からコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|  
   
@@ -247,11 +243,8 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
  [モデルからテストを開発します。](../modeling/develop-tests-from-a-model.md)   
  [開発プロセスでモデルを使用します。](../modeling/use-models-in-your-development-process.md)   
  [アプリのアーキテクチャをモデル化します。](../modeling/model-your-app-s-architecture.md)   
- [サンプル VS 拡張機能: UML ドメイン モデリング機能](http://go.microsoft.com/fwlink/?LinkId=213849)   
- [サンプル VS 拡張機能: ステレオタイプにより UML 要素に色](http://go.microsoft.com/fwlink/?LinkID=213841)   
- [サンプル VS 拡張機能: ダイアグラム、ファイル、およびその他の要素を UML 要素のリンク](http://go.microsoft.com/fwlink/?LinkID=213813)   
- [サンプル VS 拡張機能: UML 図で図形を整理します。](http://go.microsoft.com/fwlink/?LinkID=213809)   
- [ビデオ: ビジネス ドメインのモデリング](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
-
-
-
+ [サンプル VS 拡張機能:UML ドメイン モデリング機能](http://go.microsoft.com/fwlink/?LinkId=213849)   
+ [サンプル VS 拡張機能:ステレオタイプにより UML 要素の色](http://go.microsoft.com/fwlink/?LinkID=213841)   
+ [サンプル VS 拡張機能:図、ファイル、およびその他の要素を UML 要素をリンク](http://go.microsoft.com/fwlink/?LinkID=213813)   
+ [サンプル VS 拡張機能:UML 図で図形を整理します。](http://go.microsoft.com/fwlink/?LinkID=213809)   
+ [ビデオ:ビジネス ドメインのモデリング](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)

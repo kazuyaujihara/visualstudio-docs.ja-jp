@@ -1,14 +1,9 @@
 ---
 title: ダンプ ファイルの使用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c117e0aa7922c70f919a7b16fa6d40a447f2ce2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761133"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002562"
 ---
 # <a name="using-dump-files"></a>ダンプ ファイルの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,13 +78,13 @@ ms.locfileid: "51761133"
   
 - デバッグする[カーネル モード](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)ダンプ ファイルを Visual Studio 2013 では、ダウンロード、 [Windows 8.1 のバージョンのデバッグ ツールの Windows](http://msdn.microsoft.com/windows/hardware/gg463009)します。 参照してください[Visual Studio でのカーネル デバッグ](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx)します。  
   
-- Visual Studio と呼ばれる以前のダンプ形式で保存されたダンプ ファイルをデバッグできません、[フル ユーザー モード ダンプ](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx)します。 フル ユーザー モード ダンプがヒープ情報ありのダンプとは異なることに注意してください。  
+- Visual Studio と呼ばれる以前のダンプ形式で保存されたダンプ ファイルをデバッグできません、[フル ユーザー モード ダンプ](/windows-hardware/drivers/debugger/user-mode-dump-files#full)します。 フル ユーザー モード ダンプがヒープ情報ありのダンプとは異なることに注意してください。  
   
-- デバッグする、 [SOS.dll (SOS デバッガー拡張)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) Visual Studio で、デバッグ ツールの Windows、Windows Driver Kit (WDK) の一部であるをインストールする必要があります。 参照してください[Windows 8.1 Preview: キットとツールをダウンロード](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)します。  
+- デバッグする、 [SOS.dll (SOS デバッガー拡張)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) Visual Studio で、デバッグ ツールの Windows、Windows Driver Kit (WDK) の一部であるをインストールする必要があります。 参照してください[Windows 8.1 Preview:キットとツールをダウンロード](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)します。  
   
   ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_Create_a_dump_file"></a> ダンプ ファイルを作成します。  
+##  <a name="BKMK_Create_a_dump_file"></a> ダンプ ファイルを作成する  
  Visual Studio でダンプ ファイルを作成するには:   
   
 - Visual Studio でのプロセスのデバッグ中、デバッガーが例外またはブレークポイントで停止するときに、ダンプ ファイルを保存できます。 選択**としてダンプを保存**、**デバッグ**します。 **ダンプを保存** ダイアログ ボックスで、**型として保存** ボックスの一覧を選択できます**ミニダンプ**または**ヒープ付きミニダンプ**(既定)。  
@@ -104,7 +99,7 @@ ms.locfileid: "51761133"
   
 1.  Visual Studio で、次のように選択します。**ファイル**、**オープン**、**ファイル**します。  
   
-2.  **ファイルを開く** ダイアログ ボックスを検索して、ダンプ ファイルを選択します。 通常は拡張子 .dmp が付いています。 クリックして**OK**します。  
+2.  **[ファイルを開く]** ダイアログ ボックスで、ダンプ ファイルを探して選択します。 通常は拡張子 .dmp が付いています。 クリックして**OK**します。  
   
 3.  **ダンプ ファイルの概要**ウィンドウが表示されます。 このウィンドウでは、ダンプ ファイルのデバッグに関する概要情報を確認し、シンボル パスを設定したりデバッグを開始したりすることができます。概要情報をクリップボードにコピーすることもできます。  
   
@@ -145,6 +140,5 @@ ms.locfileid: "51761133"
   
 ## <a name="see-also"></a>関連項目  
  [ジャストイン タイムのデバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [シンボル (.pdb) を指定し、ソース ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [シンボル (.pdb) とソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)
-

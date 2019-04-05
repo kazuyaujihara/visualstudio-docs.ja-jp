@@ -1,14 +1,9 @@
 ---
 title: ClickOnce 配置マニフェスト |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 8457e615-e3b6-4990-8dcf-11bc590e4e9b
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 96ce7d873c20b8c29e5586a54c577a5d744b0caa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a5d1fe2191dadd0972dcde6f38b9697e29f05ab8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306788"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976699"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 配置マニフェスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +36,11 @@ ms.locfileid: "49306788"
 |[\<assemblyIdentity> 要素](../deployment/assemblyidentity-element-clickonce-deployment.md)|必須。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションのアプリケーション マニフェストを指定します。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
 |[\<description> 要素](../deployment/description-element-clickonce-deployment.md)|必須。 シェルに表示を作成するためのアプリケーション情報を識別し、**プログラム追加と削除**コントロール パネル内の項目。|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
 |[\<deployment> 要素](../deployment/deployment-element-clickonce-deployment.md)|任意。 更新プログラムの配置とシステムへの公開に使用される属性を指定します。|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
-|[\<compatibleFrameworks > 要素](../deployment/compatibleframeworks-element-clickonce-deployment.md)|必須。 このアプリケーションをインストールして実行できる .NET Framework のバージョンを指定します。|`SupportUrl`|  
+|[\<compatibleFrameworks> 要素](../deployment/compatibleframeworks-element-clickonce-deployment.md)|必須。 このアプリケーションをインストールして実行できる .NET Framework のバージョンを指定します。|`SupportUrl`|  
 |[\<dependency> 要素](../deployment/dependency-element-clickonce-deployment.md)|必須。 配置でインストールするアプリケーションのバージョンおよびアプリケーション マニフェストの場所を指定します。|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
-|[\<publisherIdentity > 要素](../deployment/publisheridentity-element-clickonce-deployment.md)|署名されたマニフェストに対しては必ず指定します。 この配置マニフェストに署名した発行元についての情報が含まれます。|`Name`<br /><br /> `issuerKeyHash`|  
+|[\<publisherIdentity> 要素](../deployment/publisheridentity-element-clickonce-deployment.md)|署名されたマニフェストに対しては必ず指定します。 この配置マニフェストに署名した発行元についての情報が含まれます。|`Name`<br /><br /> `issuerKeyHash`|  
 |[\<Signature> 要素](../deployment/signature-element-clickonce-deployment.md)|任意。 この配置マニフェストにデジタル署名するために必要な情報が含まれます。|なし|  
-|[\<customErrorReporting > 要素](../deployment/customerrorreporting-element-clickonce-deployment.md)|任意。 エラー発生時に表示する URI を指定します。|URI|  
+|[\<customErrorReporting> 要素](../deployment/customerrorreporting-element-clickonce-deployment.md)|任意。 エラー発生時に表示する URI を指定します。|URI|  
   
 ## <a name="remarks"></a>Remarks  
  配置マニフェスト ファイルには、現在のバージョンや配置に関するその他の設定など、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションの配置に関する情報を指定します。 配置マニフェストでは、アプリケーション マニフェストを参照します。アプリケーション マニフェストには、アプリケーションの現在のバージョンおよび配置に含められるすべてのファイルが記述されています。  
@@ -127,6 +122,3 @@ ms.locfileid: "49306788"
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)
-
-
-

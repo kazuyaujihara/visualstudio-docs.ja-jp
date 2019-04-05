@@ -1,14 +1,9 @@
 ---
 title: '&lt;依存関係&gt;要素 (ClickOnce アプリケーション) |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -31,13 +26,13 @@ ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233858"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972606"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;依存関係&gt;要素 (ClickOnce アプリケーション)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,14 +95,14 @@ ms.locfileid: "49233858"
  `dependency`要素、属性を持っていないと、次の子要素が含まれています。  
   
 ### <a name="dependentos"></a>dependentOS  
- 任意。 `osVersionInfo`要素を含んでいます。 `dependentOS`と`dependentAssembly`要素は相互に排他的: のいずれか 1 つが存在する必要があります、`dependency`両方ではなく、要素。  
+ 省略可能です。 `osVersionInfo`要素を含んでいます。 `dependentOS`と`dependentAssembly`要素は相互に排他的: のいずれか 1 つが存在する必要があります、`dependency`両方ではなく、要素。  
   
  `dependentOS` 次の属性をサポートしています。  
   
 |属性|説明|  
 |---------------|-----------------|  
-|`supportUrl`|任意。 依存するプラットフォームのサポート URL を指定します。 この URL は、必要なプラットフォームが見つかった場合、ユーザーに表示されます。|  
-|`description`|任意。 説明されているオペレーティング システムを人間が判読できる形式は、説明、`dependentOS`要素。|  
+|`supportUrl`|省略可能です。 依存するプラットフォームのサポート URL を指定します。 この URL は、必要なプラットフォームが見つかった場合、ユーザーに表示されます。|  
+|`description`|省略可能です。 説明されているオペレーティング システムを人間が判読できる形式は、説明、`dependentOS`要素。|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
  必須。 この要素は `dependentOS` 要素の子であり、 `os` 要素を含んでいます。 この要素には属性はありません。  
@@ -121,12 +116,12 @@ ms.locfileid: "49233858"
 |`minorVersion`|必須。 OS のマイナー バージョン番号を指定します。|  
 |`buildNumber`|必須。 OS のビルド番号を指定します。|  
 |`servicePackMajor`|必須。 OS のサービス パックのメジャー番号を指定します。|  
-|`servicePackMinor`|任意。 OS のサービス パックのマイナー番号を指定します。|  
-|`productType`|任意。 製品の種類の値を識別します。 有効な値は `server`、`workstation`、`domainController` です。 たとえば、Windows 2000 professional では、この属性値は`workstation`します。|  
-|`suiteType`|任意。 システムまたはシステムの構成の種類で使用可能な製品スイートを識別します。 有効な値は`backoffice`、 `blade`、 `datacenter`、 `enterprise`、 `home`、 `professional`、 `smallbusiness`、 `smallbusinessRestricted`、および`terminal`します。 たとえば、Windows 2000 professional では、この属性値は`professional`します。|  
+|`servicePackMinor`|省略可能です。 OS のサービス パックのマイナー番号を指定します。|  
+|`productType`|省略可能です。 製品の種類の値を識別します。 有効な値は `server`、`workstation`、`domainController` です。 たとえば、Windows 2000 professional では、この属性値は`workstation`します。|  
+|`suiteType`|任意。 システムまたはシステムの構成の種類で使用可能な製品スイートを識別します。 有効な値は、`backoffice`、`blade`、`datacenter`、`enterprise`、`home`、`professional`、`smallbusiness`、`smallbusinessRestricted`、および `terminal` です。 たとえば、Windows 2000 professional では、この属性値は`professional`します。|  
   
 ### <a name="dependentassembly"></a>dependentAssembly  
- 任意。 `assemblyIdentity`要素を含んでいます。 `dependentOS`と`dependentAssembly`要素は相互に排他的: のいずれか 1 つが存在する必要があります、`dependency`両方ではなく、要素。  
+ 省略可能です。 `assemblyIdentity`要素を含んでいます。 `dependentOS`と`dependentAssembly`要素は相互に排他的: のいずれか 1 つが存在する必要があります、`dependency`両方ではなく、要素。  
   
  `dependentAssembly` 次の属性があります。  
   
@@ -134,7 +129,7 @@ ms.locfileid: "49233858"
 |---------------|-----------------|  
 |`dependencyType`|必須。 依存関係の種類を指定します。 有効値は `preprequisite` または `install` です。 `install`アセンブリがの一部としてインストールされている、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。 A`prerequisite`アセンブリは、前にグローバル アセンブリ キャッシュ (GAC) に存在する必要があります、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションをインストールできます。|  
 |`allowDelayedBinding`|必須。 実行時にプログラムによって読み込むアセンブリことができるかどうかを指定します。|  
-|`group`|任意。 場合、`dependencyType`属性に設定されて`install`オンデマンドでインストールするのみのアセンブリの名前付きグループを指定します。 詳細については、「[チュートリアル : デザイナーを使用し、ClickOnce 配置 API で必要に応じてアセンブリをダウンロードする](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)」を参照してください。<br /><br /> 場合に設定`framework`と`dependencyType`属性に設定されて`prerequisite`、.NET Framework の一部として、アセンブリを指定します。 インストールする場合、このアセンブリをグローバル アセンブリ キャッシュ (GAC) がチェックされません[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]以降のバージョン。|  
+|`group`|任意。 場合、`dependencyType`属性に設定されて`install`オンデマンドでインストールするのみのアセンブリの名前付きグループを指定します。 詳細については、「[チュートリアル:デザイナーを使用して必要に応じて ClickOnce 配置 API でアセンブリをダウンロードする](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)」を参照してください。<br /><br /> 場合に設定`framework`と`dependencyType`属性に設定されて`prerequisite`、.NET Framework の一部として、アセンブリを指定します。 インストールする場合、このアセンブリをグローバル アセンブリ キャッシュ (GAC) がチェックされません[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]以降のバージョン。|  
 |`codeBase`|必要なときに、`dependencyType`属性に設定されて`install`します。 依存アセンブリへのパス。 可能性があります絶対パス、または、マニフェストのコードからの相対パスのいずれかベース。 このパスは有効であるアセンブリ マニフェストの順序で、有効な URI である必要があります。|  
 |`size`|必要なときに、`dependencyType`属性に設定されて`install`します。 (バイト単位) の依存アセンブリのサイズ。|  
   
@@ -147,7 +142,7 @@ ms.locfileid: "49233858"
 |`version`|必須。 次の形式で、アプリケーションのバージョン番号を指定します。 `major.minor.build.revision`|  
 |`publicKeyToken`|任意。 最後の 8 バイトを表す 16 文字の 16 進文字列を指定します、`SHA-1`アプリケーションまたはアセンブリに署名するとき、公開キーのハッシュ値。 カタログに署名するために使用する公開キーは、2048 ビット以上である必要があります。|  
 |`processorArchitecture`|任意。 プロセッサを指定します。 有効な値は`x86`32 ビット Windows 用と`I64`の 64 ビット Windows です。|  
-|`language`|任意。 アセンブリの EN-US など、2 部構成の言語コードを識別します。|  
+|`language`|省略可能です。 アセンブリの EN-US など、2 部構成の言語コードを識別します。|  
   
 ### <a name="hash"></a>hash  
  `hash`要素のオプションの子では、`assemblyIdentity`要素。 `hash`要素に属性がありません。  
@@ -171,7 +166,7 @@ ms.locfileid: "49233858"
 |---------------|-----------------|  
 |`Algorithm`|このファイルのダイジェストを計算するために使用するアルゴリズム。 現在、唯一の値で使用される[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]は`http://www.w3.org/2000/09/xmldsig#sha1`します。|  
   
-### <a name="dsigdigestvalue"></a>目的  
+### <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue`要素の必須の子では、`hash`要素。 `dsig:DigestValue`要素に属性がありません。 テキスト値は、指定したファイルの計算されたハッシュです。  
   
 ## <a name="remarks"></a>Remarks  
@@ -227,6 +222,3 @@ ms.locfileid: "49233858"
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)   
  [\<dependency> 要素](../deployment/dependency-element-clickonce-deployment.md)
-
-
-

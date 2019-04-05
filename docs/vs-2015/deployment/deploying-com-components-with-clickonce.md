@@ -1,14 +1,9 @@
 ---
 title: ClickOnce での COM コンポーネントの配置 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820292"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002759"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce での COM コンポーネントの配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49820292"
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .NET アプリケーションをデプロイするための簡単で安全なメカニズムを提供します。 ただし、アプリケーションでは、従来の COM コンポーネントを使用する場合は、それらを展開するための追加の手順を実行する必要があります。 このトピックでは、分離された COM コンポーネントをデプロイして (たとえば、Visual Basic 6.0 または Visual C) からのネイティブ コンポーネントを参照する方法について説明します。  
   
- 分離された COM コンポーネントの配置の詳細については、次を参照してください。"とアプリの展開を単純化[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]および Registration-free COM"で[ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)します。  
+ 分離された COM コンポーネントの配置の詳細については、次を参照してください。"とアプリの展開を単純化[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]および Registration-free COM"で[ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx)します。  
   
 ## <a name="registration-free-com"></a>Registration-free COM  
  登録を必要としない COM は、展開および分離 COM コンポーネントをアクティブ化するための新しいテクノロジです。 でも、すべてのコンポーネントのタイプ ライブラリと、マニフェストと呼ばれる XML ファイルに、システム レジストリに通常インストールされている登録情報を配置することで、アプリケーションと同じフォルダーに格納されています。  
@@ -116,7 +111,7 @@ ms.locfileid: "49820292"
    End Sub  
    ```  
   
-9. アプリケーションを実行します。 **デバッグ** メニューのをクリックして**デバッグの開始**します。  
+9. アプリケーションを実行します。 **[デバッグ]** メニューの **[デバッグ開始]** をクリックします。  
   
    次に、コントロールを分離する必要があります。 アプリケーションで使用される各 COM コンポーネントは、COM 参照としてプロジェクトで表されます。 この参照は、下に表示される、**参照**内のノード、**ソリューション エクスプ ローラー**ウィンドウ。 (追加することに注意を参照して直接を使用して、**参照の追加**コマンドを**プロジェクト**] メニューの [ActiveX コントロールをフォームにドラッグして、直接またはします)。  
   
@@ -145,7 +140,7 @@ ms.locfileid: "49820292"
   
 2. 発行ウィザードでは、ローカル コンピューターのディスクにアクセスして、発行されたファイルを調査できますの場所を指定します。  
   
-3. クリックして**完了**アプリケーションを発行します。  
+3. **[完了]** をクリックして、アプリケーションを発行します。  
   
    発行されたファイルを確認することは sysmon.ocx ファイルが含まれることがわかります。 コントロールがエンドユーザーのコンピューターに、コントロールのさまざまなバージョンを使用して別のアプリケーションがある場合でも、このアプリケーションに干渉ことはできませんが、つまり、このアプリケーションに完全に分離されています。  
   
@@ -171,7 +166,7 @@ ms.locfileid: "49820292"
   
 - コンポーネントは、システムでは、印刷スプーラのデバイス ドライバーなどの物理または仮想デバイスを管理します。  
   
-- コンポーネントは、再頒布可能パッケージのデータ アクセスです。 データ アプリケーションでは、別のデータへのアクセスを再頒布可能パッケージを実行する前にインストールする一般的に必要です。 Microsoft ADO データ コントロール、Microsoft OLE DB、または Microsoft Data Access Components (MDAC) などのコンポーネントを分離しようとする必要があります。 代わりに、アプリケーションでは、MDAC または SQL Server Express を使用する場合として設定の前提条件参照してください[方法: ClickOnce アプリケーションと共に必須コンポーネントをインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)します。  
+- コンポーネントは、再頒布可能パッケージのデータ アクセスです。 データ アプリケーションでは、別のデータへのアクセスを再頒布可能パッケージを実行する前にインストールする一般的に必要です。 Microsoft ADO データ コントロール、Microsoft OLE DB、または Microsoft Data Access Components (MDAC) などのコンポーネントを分離しようとする必要があります。 代わりに、アプリケーションでは、MDAC または SQL Server Express を使用する場合として設定の前提条件参照してください[方法。ClickOnce アプリケーションと共に必須コンポーネントをインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)します。  
   
   場合によっては、コンポーネントの開発者に登録を必要としない COM の再設計可能な場合があります。 それができない場合でもビルドし、ブートス トラップを使用して標準の登録スキームを通じてそれらに依存するアプリケーションを発行します。 詳細については、次を参照してください。[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)します。  
   
@@ -181,6 +176,3 @@ ms.locfileid: "49820292"
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)
-
-
-

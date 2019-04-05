@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1032: 標準例外コンス トラクターを実装する |Microsoft Docs'
-ms.custom: ''
+title: CA1032:標準例外コンス トラクターの実装 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1032
 - ImplementStandardExceptionConstructors
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: efef441e84c4f1d51c633e3fdcb2da8d1ba3e963
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c59da56304a5d1d8f2cca7eaf886fd5ebc37f8ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868613"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973406"
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: 標準例外コンストラクターを実装します
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032:標準例外コンストラクターを実装します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -51,7 +46,7 @@ ms.locfileid: "49868613"
 
 - 保護されたまたはプライベート NewException (SerializationInfo, StreamingContext)
 
-  コンストラクターを完全に宣言していないと、例外を正しく処理するのが困難になります。 シグネチャを持つコンス トラクターなど`NewException(string, Exception)`他の例外によって引き起こされる例外を作成するために使用します。 このコンス トラクターのない作成して、インスタンスの内部の (入れ子になった) 例外を含む独自の例外をスローすることはできません、どのようなマネージ コードは、このような状況で行う必要がありますです。 最初の 3 つの例外のコンス トラクターでは、規則でパブリックです。 4 番目のコンス トラクターが封印されていないクラスで保護されているシール クラスではプライベートです。 詳細については、次を参照してください[ca 2229: シリアル化コンス トラクターの実装。](../code-quality/ca2229-implement-serialization-constructors.md)
+  コンストラクターを完全に宣言していないと、例外を正しく処理するのが困難になります。 シグネチャを持つコンス トラクターなど`NewException(string, Exception)`他の例外によって引き起こされる例外を作成するために使用します。 このコンス トラクターのない作成して、インスタンスの内部の (入れ子になった) 例外を含む独自の例外をスローすることはできません、どのようなマネージ コードは、このような状況で行う必要がありますです。 最初の 3 つの例外のコンス トラクターでは、規則でパブリックです。 4 番目のコンス トラクターが封印されていないクラスで保護されているシール クラスではプライベートです。 詳細については、次を参照してください。 [ca 2229。シリアル化コンストラクターを実装します](../code-quality/ca2229-implement-serialization-constructors.md)
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  このルールの違反を修正するには、例外に不足しているコンス トラクターを追加し、適切なアクセシビリティであるかどうかを確認します。
@@ -63,6 +58,3 @@ ms.locfileid: "49868613"
  次の例には、この規則に違反する例外の種類と例外の種類が正しく実装されているが含まれています。
 
  [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExceptionMultipleCtors/cs/FxCop.Design.ExceptionMultipleCtors.cs#1)]
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'デバッグの準備: C#、 F#、および Visual Basic プロジェクトの種類 |Microsoft Docs'
-ms.custom: ''
+title: デバッグの準備:C#、 F#、および Visual Basic プロジェクトの種類 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,15 +22,15 @@ ms.assetid: 7a0535f6-1cd4-4b51-ad34-f4a45b9f1ce3
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 721d1571052c9e3acbf13e68e90bbfe3413b1b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1bf57ae0d8d2b9b499897baadc7f2c4450086bf2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800238"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964318"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>デバッグの準備: プロジェクトの種類が C#、F#、および Visual Basic のプロジェクト
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>デバッグの準備:C#、F#、および Visual Basic のプロジェクト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクト テンプレートで作成した C#、F#、および [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のプロジェクトをデバッグする方法について説明します。  
@@ -64,6 +59,3 @@ ms.locfileid: "51800238"
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)
-
-
-

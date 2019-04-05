@@ -25,7 +25,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: a0b8b4b5cff478a2dbe03f3f72115da3c0696c4e
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49852062"
@@ -51,9 +51,9 @@ Visual Studio でアプリケーションの構築 Windows Vista でユーザー
   
   プロジェクトの種類 (Visual c# および Visual Basic) に応じて、Visual Studio IDE で UAC マニフェスト生成の構成方法が異なることに注意してください。  
   
-  マニフェストの生成を Visual c# プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (c#)](../ide/reference/application-page-project-designer-csharp.md)します。  
+  マニフェストの生成を Visual c# プロジェクトを構成する方法については、[アプリケーション ページで、プロジェクト デザイナー (c#)](../ide/reference/application-page-project-designer-csharp.md)を参照してください。  
   
-  マニフェストの生成を Visual Basic プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)します。  
+  マニフェストの生成を Visual Basic プロジェクトを構成する方法については、[アプリケーション ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   

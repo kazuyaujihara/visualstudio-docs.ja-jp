@@ -1,14 +1,9 @@
 ---
-title: '1700 ca: いない名前列挙型値&#39;占有&#39;|Microsoft Docs'
-ms.custom: ''
+title: CA1700:列挙型の値を指定していない&#39;占有&#39;|Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1700
 - DoNotNameEnumValuesReserved
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5446d21b51f57b4a614e8931b154654bee99cd2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897993"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975458"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>1700 ca: いない名前列挙型値&#39;予約済み&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700:列挙型の値を指定していない&#39;予約済み&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -60,15 +55,12 @@ ms.locfileid: "49897993"
  現在使用されているメンバーのまたはが以前に出荷されたライブラリのこの規則による警告を抑制しても安全です。
 
 ## <a name="related-rules"></a>関連規則
- [CA2217: enums を FlagsAttribute に設定しません](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217:FlagsAttribute で列挙をマークしないでください。](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
- [CA1712: enum 値を型名のプレフィックスにしません](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+ [CA 1712:列挙型の値を型名のプレフィックスにしません](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
- [CA1028: 列挙ストレージは Int32 でなければなりません](../code-quality/ca1028-enum-storage-should-be-int32.md)
+ [CA 1028:列挙ストレージは Int32 でなければなりません](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
- [CA1008: Enums は 0 値を含んでいなければなりません](../code-quality/ca1008-enums-should-have-zero-value.md)
+ [CA1008:列挙がゼロの値](../code-quality/ca1008-enums-should-have-zero-value.md)
 
- [CA1027: FlagsAttribute で列挙値をマークします](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-
-
-
+ [CA1027:FlagsAttribute で列挙をマークします。](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

@@ -21,7 +21,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56596504"
 ---
 # <a name="how-to-create-a-bdc-model"></a>方法: BDC モデルを作成します。
-  ビジネス データ接続 (BDC: Business Data Connectivity) モデルを作成するには、アイテムの種類に対応するテンプレートを使用し、モデルを任意の SharePoint プロジェクトに追加します。 詳細については、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。 モデルを設計する方法の詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+  ビジネス データ接続 (BDC: Business Data Connectivity) モデルを作成するには、アイテムの種類に対応するテンプレートを使用し、モデルを任意の SharePoint プロジェクトに追加します。 詳細については、[business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)を参照してください。 モデルを設計する方法の詳細については、[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
 ### <a name="to-create-a-bdc-project"></a>BDC プロジェクトを作成するには
 
@@ -55,7 +55,7 @@ ms.locfileid: "56596504"
 
 8.  **名前**ボックス、BDC モデルの名前を指定し、選択、**追加**ボタンをクリックします。
 
-     A **Business Data Connectivity モデル**項目がプロジェクトに追加します。 既定で、BDC デザイナーにモデルが表示されます。 詳細については、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。
+     A **Business Data Connectivity モデル**項目がプロジェクトに追加します。 既定で、BDC デザイナーにモデルが表示されます。 詳細については、[business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [ビジネス データ接続モデルを作成します。](../sharepoint/creating-a-business-data-connectivity-model.md)

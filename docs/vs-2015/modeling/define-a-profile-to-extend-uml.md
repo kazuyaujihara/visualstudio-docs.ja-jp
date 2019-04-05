@@ -1,12 +1,9 @@
 ---
 title: プロファイルを定義すると、UML を拡張 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - profiles, UML
 - stereotypes, UML
@@ -18,13 +15,13 @@ ms.assetid: 776589cb-f89d-48d5-aafa-04a4c074b0d6
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 832b7b148e73e8d21d56dea6b676910019294e13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973569"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>プロファイルを定義して UML を拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,9 +220,9 @@ ms.locfileid: "51730314"
 7.  前のセクションで説明したように、拡張機能プロジェクトをビルドするか、またはすべてのファイルを圧縮して、Visual Studio 拡張機能を生成します。  
   
 ##  <a name="Schema"></a> プロファイルの構造  
- 次の例で UML プロファイルの XSD ファイルが見つかりません: [Setting Stereotypes and Profiles XSD](http://go.microsoft.com/fwlink/?LinkID=213811)します。 プロファイル ファイルを編集しやすいように、次の場所に `.xsd` ファイルをインストールします。  
+ UML プロファイルの XSD ファイルは、次の例ではあります。[ステレオタイプおよびプロファイル XSD の設定](http://go.microsoft.com/fwlink/?LinkID=213811)します。 プロファイル ファイルを編集しやすいように、次の場所に `.xsd` ファイルをインストールします。  
   
- **%ProgramFiles%\Microsoft visual Studio [バージョン] \Xml\Schemas**  
+ **%ProgramFiles%\Microsoft Visual Studio [version]\Xml\Schemas**  
   
  ここでは、例として C# プロファイルを使用します。 完全なプロファイル定義については、次のファイルを参照してください。  
   
@@ -345,7 +342,7 @@ ms.locfileid: "51730314"
  ステレオタイプが UML モデルに表示されません。  
  パッケージまたはモデルでプロファイルを選択する必要があります。 これで、ステレオタイプはパッケージまたはモデル内の要素上に表示されます。 詳細については、次を参照してください。[モデル要素を UML にステレオタイプを追加](../modeling/add-stereotypes-to-uml-model-elements.md)します。  
   
- UML モデルを開くときに、次のエラーが表示されます: **VS1707: シリアル化エラーが発生したため、次のプロファイルを読み込むことができません: MyProfile.profile**  
+ UML モデルを開くと、次のエラーが表示されます。**VS1707:シリアル化エラーが発生したため、次のプロファイルを読み込むことができません。MyProfile.profile**  
  1.  .profile の基本的な XML 構文が正しいことを確認してください。  
   
 2. 各モニカー名の形式が /profileName/nodeName であることを確認してください。 profileName とは、ルート プロファイル ノードの名前属性の値です。 nodeName とは、メタクラス externalType または enumerationType の名前属性の値です。  
@@ -358,7 +355,7 @@ ms.locfileid: "51730314"
   
 5. VSIX ファイルをリビルドし、Windows エクスプローラーで開いて再インストールします。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を再起動します。  
   
-   拡張機能に拡張機能マネージャーに表示されませんが、再インストールしようとすると、次のメッセージが表示されます:**拡張機能がすべて該当する製品を既にインストールされています。**  
+   拡張機能に拡張機能マネージャーに表示されませんが、再インストールしようとすると、次のメッセージが表示されます。**拡張機能はすべての該当する製品を既にインストールされています。**  
    1.  拡張機能ファイルのサブフォルダーから削除*LocalAppData*\Microsoft\VisualStudio\\[バージョン] \Extensions\  
   
    -   表示する*LocalAppData*、Windows エクスプ ローラーのフォルダー オプションの表示] タブで、[非表示のファイルとフォルダーを設定する必要があります。  
@@ -371,8 +368,5 @@ ms.locfileid: "51730314"
  [UML モデル要素にステレオタイプを追加します。](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [プロファイルとステレオタイプを使用したモデルをカスタマイズします。](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [UML モデルの標準ステレオタイプ](../modeling/standard-stereotypes-for-uml-models.md)   
- [サンプル: ステレオタイプにより UML 要素に色](http://go.microsoft.com/fwlink/?LinkID=213841)   
- [サンプル: ステレオタイプを設定、プロファイルの XSD](http://go.microsoft.com/fwlink/?LinkID=213811)
-
-
-
+ [サンプル: ステレオタイプにより UML 要素の色](http://go.microsoft.com/fwlink/?LinkID=213841)   
+ [サンプル: XSD をプロファイルのステレオタイプを設定するには、](http://go.microsoft.com/fwlink/?LinkID=213811)

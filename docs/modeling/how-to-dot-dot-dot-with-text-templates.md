@@ -1,4 +1,4 @@
-﻿---
+---
 title: テキスト テンプレートでどうやって ... をする
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -28,7 +28,8 @@ Visual Studio のテキスト テンプレートは、あらゆる種類のテ�
 
 -   テキスト テンプレートから、コード ファイルの一部を生成します。 詳細については、[T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)と[テンプレートの作成を開始する最善の方法は何ですか?](#starting)を参照してください。
 
-### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>テンプレートにデータを渡して、実行時にファイルを生成する。
+### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>テンプレートにデータを渡して、実行時にファイルを生成する
+ 実行時に、アプリケーションは、標準のテキストとデータの組み合わせを含むレポートなどのテキスト ファイルを生成します。 何百もの `write` ステートメントを書くことを回避したいです。
 
 -   ランタイム テキスト テンプレートをプロジェクトに追加します。 このテンプレートは、あなたのコードでインスタンス化しテキストを生成することができるクラスを作成します。 データは、コンストラクターのパラメーターから渡すことができます。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
@@ -63,7 +64,7 @@ Visual Studio のテキスト テンプレートは、あらゆる種類のテ�
 - 別のアセンブリ (クラス ライブラリ) で、メソッドを記述し、テンプレートから呼び出します。 `<#@assembly#>` ディレクティブを使用してアセンブリを読み込み、`<#@import#>` を使用して名前空間のコンテキストを設定します。 デバッグによりアセンブリを再構築するには、Visual Studio を停止し再起動する必要があることに注意してください。 詳細については、次を参照してください。 [T4 テキスト テンプレート ディレクティブ](../modeling/t4-text-template-directives.md)
 
 ### <a name="generate-many-files-from-one-model-schema"></a>1 つのモデル スキーマからの多数のファイル生成
- ファイルを生成するには、同じ XML またはデータベース スキーマを持つモデルからしばしばファイルを生成する場合:
+ 同じXMLまたはデータベース スキーマを持つモデルからファイルをしばしば生成する場合:
 
 -   ディレクティブ プロセッサを記述することを検討します。 これにより、アセンブリの複数のステートメントを置換して、単一のカスタム ディレクティブを持つ各テンプレート内でステートメントをインポートすることができます。 ディレクティブ プロセッサはモデル ファイルを読み込み、解析できます。 詳細については、次を参照してください。[カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成](../modeling/creating-custom-t4-text-template-directive-processors.md)
 
@@ -117,7 +118,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ### <a name="what-best-practices-are-there-for-text-templates"></a>テキスト テンプレートには、どのような「ベスト プラクティス」がありますか?
 
--   詳細については、次を参照してください。 [T4 テキスト テンプレートの記述に関するガイドライン](../modeling/guidelines-for-writing-t4-text-templates.md)
+-   詳細については、[T4 テキスト テンプレートの記述に関するガイドライン](../modeling/guidelines-for-writing-t4-text-templates.md)を参照してください。
 
 ### <a name="what-is-t4"></a>"T4"とは何ですか?
 

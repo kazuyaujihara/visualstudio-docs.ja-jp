@@ -38,7 +38,7 @@ ms.locfileid: "50220187"
 > [!NOTE]
 >  このレジストリ キーは、作成するまでには存在しません。  
   
- スマート キャプションは、正規表現の値に入力によって制御されます、 **SmartCaptionExpression**値。 追加、**データ デザイナー**レジストリ キーには、ラベルのキャプションを制御する既定の正規表現がよりも優先されます。 正規表現の詳細については、次を参照してください。 [Visual Studio で正規表現を使用して](../ide/using-regular-expressions-in-visual-studio.md)します。  
+ スマート キャプションは、正規表現の値に入力によって制御されます、 **SmartCaptionExpression**値。 追加、**データ デザイナー**レジストリ キーには、ラベルのキャプションを制御する既定の正規表現がよりも優先されます。 正規表現の詳細については、[Visual Studio で正規表現を使用して](../ide/using-regular-expressions-in-visual-studio.md)を参照してください。  
   
  次の表では、図表番号のラベルを制御するレジストリ値について説明します。  
   

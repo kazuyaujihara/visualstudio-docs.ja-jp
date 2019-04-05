@@ -1,12 +1,9 @@
 ---
 title: クラス ダイアグラムの uml 型のプロパティ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 6e1ef2d0-d67a-401a-bd64-d5e034decd2c
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8baad41658cc6144f08d0b6b4d415aa4ff6e499
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750111"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978232"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML クラス ダイアグラムの型のプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,10 +43,10 @@ UML クラス図で、*型*がクラス、インターフェイス、または�
   
  型のプロパティを表示するには、ダイアグラムまたは型を右クリックして**UML モデル エクスプ ローラー**、 をクリックし、**プロパティ**します。 プロパティが表示されます、**プロパティ**ウィンドウ。  
   
-|**Property**|**既定値**|表示の対象|説明|  
+|**Property**|**Default**|表示の対象|説明|  
 |------------------|-----------------|----------------|-----------------|  
 |**Name**|既定名|すべての要素|要素を指定します。|  
-|**修飾名**|格納元のパッケージ :: 型名|すべての要素|要素を一意に識別します。 要素を格納するパッケージの修飾名が先頭につきます。|  
+|**修飾名**|パッケージを含みます。型の名前|すべての要素|要素を一意に識別します。 要素を格納するパッケージの修飾名が先頭につきます。|  
 |**色**|型の種類の既定値|すべての要素|この図形の色。 他のプロパティとは異なり、これは基になるモデル要素のプロパティではありません。 同じ型の異なるビューで異なる色を表示できます。|  
 |**抽象型**|False|クラス|true の場合、クラスはインスタンス化できず、基本クラスとして使用されることになります。|  
 |**リーフには**|False|クラス、インターフェイス|true の場合、型は派生型を持たないことになります。|  
@@ -65,6 +62,3 @@ UML クラス図で、*型*がクラス、インターフェイス、または�
  [UML クラス図の操作のプロパティ](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML クラス図の関連付けのプロパティ](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
  [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

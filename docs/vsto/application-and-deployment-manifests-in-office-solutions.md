@@ -30,7 +30,7 @@ ms.locfileid: "55949565"
 ## <a name="manifest-structure-for-office-solutions"></a>マニフェストの Office ソリューションの構造
  Visual Studio で Office 開発ツールを使用して作成された Microsoft Office ソリューションの場合、すべてのマニフェストは、標準の ClickOnce スキーマに基づいています。 Office ソリューションを配置すると、ドキュメントレベルと VSTO アドイン プロジェクトの両方のアプリケーション マニフェストは、ClickOnce キャッシュに保存されます。 配置マニフェストは、クライアント コンピューターにコピーされません。
 
- アプリケーションと Office プロジェクトの配置マニフェストの内容については、次を参照してください。 [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)と[Office ソリューション用配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)します。
+ アプリケーションと Office プロジェクトの配置マニフェストの内容については、[Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)と[Office ソリューション用配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)を参照してください。
 
 ## <a name="create-application-and-deployment-manifests"></a>アプリケーション マニフェストと配置マニフェストを作成します。
  アプリケーション マニフェストは、ビルド プロセスの一環として自動的に作成されます。 ドキュメントレベルのプロジェクトをビルドするたびに、配置マニフェストの場所はカスタム ドキュメント プロパティとしてドキュメントに埋め込まれます。 VSTO アドインの場合、配置マニフェストの場所はレジストリに格納されます。

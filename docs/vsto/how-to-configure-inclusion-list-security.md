@@ -21,7 +21,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56596478"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>方法: 信頼のリストのセキュリティを構成します。
-  管理者のアクセス許可があればを構成できます、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信頼プロンプトのコントロールにエンドユーザーが信頼のリストに、信頼の決定を保存することによって、Office ソリューションをインストールするオプションを指定されたかどうか。 信頼のリストについては、次を参照してください。[リストによる Office のセキュリティ ソリューション](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)します。
+  管理者のアクセス許可があればを構成できます、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信頼プロンプトのコントロールにエンドユーザーが信頼のリストに、信頼の決定を保存することによって、Office ソリューションをインストールするオプションを指定されたかどうか。 信頼のリストについては、[リストによる Office のセキュリティ ソリューション](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)を参照してください。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 

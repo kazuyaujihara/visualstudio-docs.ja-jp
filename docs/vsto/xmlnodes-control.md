@@ -30,7 +30,7 @@ ms.locfileid: "56604146"
  Visual Studio では、XML ノードのコレクションが作成された後、Word オブジェクト モデルを走査することがなく直接コントロールに対してプログラミングできます。 <xref:Microsoft.Office.Tools.Word.XMLNodes>コントロールをドキュメントから要素のマッピングを削除することによってのみ削除できます。
 
 > [!NOTE]
->  子要素にアクセスする場合、<xref:Microsoft.Office.Tools.Word.XMLNodes>を介して制御、<xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A>プロパティを取得、<xref:Microsoft.Office.Interop.Word.XMLNode>オブジェクトではなく<xref:Microsoft.Office.Tools.Word.XMLNode>コントロール。 詳細については、次を参照してください。[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)します。
+>  子要素にアクセスする場合、<xref:Microsoft.Office.Tools.Word.XMLNodes>を介して制御、<xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A>プロパティを取得、<xref:Microsoft.Office.Interop.Word.XMLNode>オブジェクトではなく<xref:Microsoft.Office.Tools.Word.XMLNode>コントロール。 詳細については、[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)を参照してください。
 
 ## <a name="bind-data-to-the-control"></a>データをコントロールにバインドします。
  <xref:Microsoft.Office.Tools.Word.XMLNodes>コントロールがデータ バインディングをサポートしていません。 これは、ため、<xref:Microsoft.Office.Tools.Word.XMLNodes>コントロールにバインディング機能、複雑なデータがないと、単純データ バインディングを表すことはできません繰り返しデータ。

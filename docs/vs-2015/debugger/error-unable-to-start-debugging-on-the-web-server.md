@@ -1,14 +1,9 @@
 ---
-title: 'エラー: Web サーバーでデバッグを開始できません |。Microsoft Docs'
-ms.custom: ''
+title: エラー :Web サーバーでデバッグを開始できません |。Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -32,18 +27,18 @@ ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 168aaff6e7165c0566b198dab22174b14dad9949
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 15e65b85490c2cc65a6f965a37bd28b9a241b428
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779295"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972956"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>エラー ： Web サーバーでデバッグを開始できません
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>エラー :Web サーバー上でデバッグを開始できません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Web サーバーで実行されている ASP.NET アプリケーションをデバッグしようとする場合、次のエラー メッセージが表示されることがあります。Web サーバーでデバッグを開始できません。
+Web サーバーで実行されている ASP.NET アプリケーションをデバッグしようとすると、このエラー メッセージが表示することがあります。Web サーバーでデバッグを開始できません。
   
 多くの場合、IIS が正しく構成されていないためにこのエラーが発生します。
 
@@ -96,7 +91,4 @@ Web サーバーで実行されている ASP.NET アプリケーションをデ�
    
   
 ## <a name="see-also"></a>関連項目  
- [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-
+ [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

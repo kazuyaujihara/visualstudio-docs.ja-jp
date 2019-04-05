@@ -36,7 +36,7 @@ ms.locfileid: "56623100"
 
   ![Visual Studio プロジェクト モデル グラフィック](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")プロジェクト モデル
 
-  インターフェイスと、前の図に表示されるサービスと、ダイアグラムに含まれていないその他の省略可能なインターフェイスの詳細については、次を参照してください。[プロジェクト モデルのコア コンポーネント](../../extensibility/internals/project-model-core-components.md)します。
+  インターフェイスと、前の図に表示されるサービスと、ダイアグラムに含まれていないその他の省略可能なインターフェイスの詳細については、[プロジェクト モデルのコア コンポーネント](../../extensibility/internals/project-model-core-components.md)を参照してください。
 
   プロジェクトのコマンドをサポートし、したがってを実装する必要があります、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コマンド コンテキスト Guid によるコマンドのルーティングに参加するインターフェイス。
 

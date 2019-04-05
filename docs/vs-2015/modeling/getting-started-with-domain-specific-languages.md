@@ -1,30 +1,27 @@
 ---
 title: ドメイン固有言語の概要 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3ac51765fd89324c3d4098a4aa92afc9e5bbc1bf
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877771"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002471"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>ドメイン固有言語の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このトピックを定義すると、Visual Studio Modeling SDK で作成したドメイン固有言語 (DSL) を使用して基本的な概念について説明します。  
   
- 作業することをお勧めの Dsl に慣れていない場合、 **DSL ツール ラボ**、このサイトで入手できます: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ 作業することをお勧めの Dsl に慣れていない場合、 **DSL ツール ラボ**、このサイトで入手できます。[Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>ドメイン固有言語では、何をことができますか。  
  ドメイン固有言語は、表記、通常はグラフィックが特定の目的で使用するように設計です。 これに対し、UML などの言語は汎用です。 DSL モデル要素とその関係および画面に表示するかの種類を定義できます。  
@@ -46,7 +43,7 @@ ms.locfileid: "49877771"
 |-|-|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
-|Modeling SDK for Visual Studio|[MSDK をダウンロードします。](http://www.microsoft.com/download/details.aspx?id=40754)|  
+|Modeling SDK for Visual Studio|[MSDK をダウンロードします。](https://www.microsoft.com/download/details.aspx?id=48148)|  
   
 ## <a name="creating-a-dsl-solution"></a>DSL ソリューションを作成します。  
  新しいドメイン固有言語を作成する新規に作成する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ドメイン固有言語のプロジェクト テンプレートを使用してソリューション。  
@@ -107,7 +104,7 @@ ms.locfileid: "49877771"
 1. クリックして**すべてのテンプレートの変換**ソリューション エクスプ ローラーのツールバー。 これには、DslDefinition.dsl からソース コードの大部分が再生成します。  
   
    > [!NOTE]
-   >  クリックする必要があります DslDefinition.dsl を変更するたびに**すべてのテンプレートの変換**ソリューションを再構築する前にします。 このステップは自動化できます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)します。  
+   >  クリックする必要があります DslDefinition.dsl を変更するたびに**すべてのテンプレートの変換**ソリューションを再構築する前にします。 このステップは自動化できます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)します。  
   
 2. F5 キーを押すか、または、**デバッグ** メニューのをクリックして**デバッグの開始**します。  
   
@@ -147,7 +144,7 @@ ms.locfileid: "49877771"
  デバッグ インスタンスで、エクスプ ローラーを表示できないかどうか[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の**ビュー**  メニューをポイント**その他の Windows**、 をクリックし、  *\<Your 言語 >***エクスプ ローラー**します。  
   
 ### <a name="the-api-of-your-dsl"></a>DSL の API  
- DSL では、API を使用すると、読み取りし、更新は、DSL のインスタンスであるモデルを生成します。 API の 1 つのアプリケーションでは、モデルからテキスト ファイルを生成します。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)します。  
+ DSL では、API を使用すると、読み取りし、更新は、DSL のインスタンスであるモデルを生成します。 API の 1 つのアプリケーションでは、モデルからテキスト ファイルを生成します。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md) テンプレートの構文の詳細については、次を参照してください。  
   
  デバッグのソリューションでは、拡張子が".tt"テンプレート ファイルを開きます。 これらのサンプルでは、モデルからテキストを生成し、DSL の API をテストできるようにする方法を示します。 記述された、サンプルの 1 つ[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]でその他の[!INCLUDE[csprcs](../includes/csprcs-md.md)]します。  
   
@@ -377,7 +374,7 @@ ms.locfileid: "49877771"
 ## <a name="validation-and-commands"></a>検証とコマンド  
  検証制約を追加することで、さらに、この DSL を開発できます。 これらの制約は、モデルが適切な状態であることを確認するメソッドを定義することができます。 たとえば、定義できることを確認するための制約にお子様の生年月日はその親の場合よりも後。 検証機能では、DSL ユーザーのいずれかの制約に違反するモデルを保存しようとすると、警告が表示されます。 詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。  
   
- ユーザーが呼び出すことができるメニュー コマンドを定義することもできます。 コマンドは、モデルを変更できます。 内の他のモデルとやり取りできますも[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]外部のリソースと通信します。 詳細については、次を参照してください。[方法: 標準メニュー コマンドを変更](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)します。  
+ ユーザーが呼び出すことができるメニュー コマンドを定義することもできます。 コマンドは、モデルを変更できます。 内の他のモデルとやり取りできますも[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]外部のリソースと通信します。 詳細については、「[方法 :標準メニュー コマンドを修正](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)します。  
   
 ## <a name="deploying-the-dsl"></a>DSL を展開します。  
  配布するドメイン固有言語を使用するには、他のユーザーを許可する、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) ファイル。 DSL ソリューションをビルドするときに作成されます。  
@@ -386,7 +383,7 @@ ms.locfileid: "49877771"
   
  実験用インスタンスを使用する必要はありませんので、自分のコンピューターに、DSL をインストールする同じ手順を使用する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
   
- 詳細については、次を参照してください。[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)します。  
+ 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。  
   
 ##  <a name="Reset"></a> 以前の実験的な Dsl を削除します。  
  実験的な Dsl を作成した場合は、不要なリセットすることで、コンピューターから削除できます、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]実験用インスタンス。  
@@ -405,6 +402,3 @@ ms.locfileid: "49877771"
  [理解のモデル、クラスとリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)   
  [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)   
  [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
-
-
-

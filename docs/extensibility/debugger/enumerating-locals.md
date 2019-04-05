@@ -20,7 +20,7 @@ ms.locfileid: "56695259"
 ---
 # <a name="enumerate-locals"></a>ローカル変数を列挙します。
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
 
 Visual Studio の設定の準備完了、**ローカル**ウィンドウ、呼び出し[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)上、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)から返されるオブジェクト[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) (を参照してください[GetMethodProperty の実装](../../extensibility/debugger/implementing-getmethodproperty.md))。 `IDebugProperty2::EnumChildren` 返します、 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)オブジェクト。
 

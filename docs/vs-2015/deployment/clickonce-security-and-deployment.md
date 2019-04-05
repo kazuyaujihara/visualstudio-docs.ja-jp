@@ -1,14 +1,9 @@
 ---
 title: ClickOnce のセキュリティと展開 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 50654574dea18df98f8f4ecef8d606cccec93f14
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 835bab46a9537a3a54d0155d9835ab11eaa4c834
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898175"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962616"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce のセキュリティと配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,9 +43,9 @@ ms.locfileid: "49898175"
 ## <a name="what-is-a-clickonce-application"></a>ClickOnce アプリケーションとは何ですか。  
  A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションには、Windows Presentation Foundation (.xbap)、Windows フォーム (.exe)、コンソール アプリケーション (.exe)、または Office ソリューション (.dll) を使用してパブリッシュ[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]テクノロジ。 発行することができます、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 3 つの異なる方法でアプリケーション: Web ページから、ネットワーク ファイル共有の場合、または CD-ROM などのメディアから。 A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションをエンドユーザーのコンピューターにインストールされているし、コンピューターがオフライン、またはエンドユーザーのコンピューターにインストールせず、オンライン専用モードで実行できる場合でもローカルで実行できます。 詳細については、「[ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)」を参照してください。  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、自己更新できます。使用可能になるし、自動的に更新済みのファイルを置き換える新しいバージョンが確認できます。 開発者は、更新プログラムの動作を指定できます。ネットワーク管理者が制御できますも更新方法、たとえば、更新を必須としてマークします。 また、エンドユーザーまたは管理者によって更新プログラムを以前のバージョンにロールバックすることもします。 詳細については、次を参照してください。 [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)します。  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、自己更新できます。使用可能になるし、自動的に更新済みのファイルを置き換える新しいバージョンが確認できます。 開発者は、更新動作を指定できます。また、ネットワーク管理者は、更新を必須としてマークするなど、更新方法を制御することもできます。 また、エンドユーザーまたは管理者によって更新プログラムを以前のバージョンにロールバックすることもします。 詳細については、「[ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)」を参照してください。  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションは、分離性、インストールや実行、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションは、既存のアプリケーションを中断できません。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは自己完結型です。各[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションにインストールされ、セキュリティで保護されたユーザー、アプリケーションごとのキャッシュから実行します。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、インターネットまたはイントラネット セキュリティ ゾーンで実行されます。 必要に応じて、アプリケーションは、管理者特権でのセキュリティのアクセス許可を要求できます。 詳細については、「[ClickOnce アプリケーションの発行](../deployment/securing-clickonce-applications.md)」を参照してください。  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションは、分離性、インストールや実行、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションは、既存のアプリケーションを中断できません。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは自己完結型です。各[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションにインストールされ、セキュリティで保護されたユーザー、アプリケーションごとのキャッシュから実行します。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、インターネットまたはイントラネット セキュリティ ゾーンで実行されます。 必要であれば、アプリケーションから昇格されたセキュリティ アクセス許可を要求できます。 詳細については、「[ClickOnce アプリケーションの発行](../deployment/securing-clickonce-applications.md)」を参照してください。  
   
 ## <a name="how-clickonce-security-works"></a>ClickOnce のセキュリティのしくみ  
  コア[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]セキュリティ証明書、コード アクセス セキュリティ ポリシー、および ClickOnce 信頼プロンプトに基づきます。  
@@ -62,21 +57,21 @@ ms.locfileid: "49898175"
  コード アクセス セキュリティにより、コードの保護されたリソースにアクセス権を制限します。 ほとんどの場合は、アクセス許可を制限するインターネットまたはローカル イントラネット ゾーンを選択できます。 使用して、**セキュリティ**ページで、 **ProjectDesigner**アプリケーションの適切なゾーンを要求します。 エンド ユーザー エクスペリエンスをエミュレートするために、制限されたアクセス許可を持つアプリケーションをデバッグすることもできます。 詳細については、「[ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)」を参照してください。  
   
 ### <a name="clickonce-trust-prompt"></a>ClickOnce 信頼プロンプト  
- アプリケーションでは、ゾーン以上のアクセス許可を要求している場合、エンドユーザーが信頼の決定を行うメッセージが表示できます。 Windows フォーム アプリケーション、Windows Presentation Foundation アプリケーション、コンソール アプリケーション、XAML ブラウザー アプリケーション、および Office ソリューションなどの ClickOnce アプリケーションが信頼して実行できるかどうか、エンドユーザーを決定できます。 詳細については、次を参照してください。[方法: ClickOnce 信頼プロンプト動作を構成する](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)します。  
+ アプリケーションでは、ゾーン以上のアクセス許可を要求している場合、エンドユーザーが信頼の決定を行うメッセージが表示できます。 Windows フォーム アプリケーション、Windows Presentation Foundation アプリケーション、コンソール アプリケーション、XAML ブラウザー アプリケーション、および Office ソリューションなどの ClickOnce アプリケーションが信頼して実行できるかどうか、エンドユーザーを決定できます。 詳細については、「[方法 :ClickOnce 信頼プロンプトの動作を構成する](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)します。  
   
 ## <a name="how-clickonce-deployment-works"></a>ClickOnce 配置の動作  
  コア[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]展開アーキテクチャは 2 つの XML マニフェスト ファイルに基づいて: アプリケーション マニフェストと配置マニフェスト。 ファイルは、記述から ClickOnce アプリケーションがインストールされている、更新方法、および更新されたときに使用されます。  
   
 ### <a name="publishing-clickonce-applications"></a>ClickOnce アプリケーションの発行  
- アプリケーション マニフェストには、アプリケーション自体がについて説明します。 これには、アセンブリ、依存関係と、アプリケーション、必要なアクセス許可、および更新プログラムを利用できる場所を構成するファイルが含まれます。 アプリケーション開発者は Visual Studio またはマニフェストの生成および編集ツール (Mage.exe) で発行ウィザードを使用して、アプリケーション マニフェストを作成、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)]します。 詳細については、次を参照してください。[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)します。  
+ アプリケーション マニフェストには、アプリケーション自体がについて説明します。 これには、アセンブリ、依存関係と、アプリケーション、必要なアクセス許可、および更新プログラムを利用できる場所を構成するファイルが含まれます。 アプリケーション開発者は Visual Studio またはマニフェストの生成および編集ツール (Mage.exe) で発行ウィザードを使用して、アプリケーション マニフェストを作成、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)]します。 詳細については、「[方法 :発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)」を参照してください。  
   
- 配置マニフェストでは、アプリケーションを展開する方法について説明します。 これには、アプリケーション マニフェストの場所とクライアントで実行するアプリケーションのバージョンが含まれます。  
+ 配置マニフェストでは、アプリケーションの配置方法を示します。 これには、アプリケーション マニフェストの場所とクライアントで実行するアプリケーションのバージョンが含まれます。  
   
 ### <a name="deploying-clickonce-applications"></a>ClickOnce アプリケーションを展開します。  
- 作成した後、配置マニフェストは、配置場所にコピーされます。 Web サーバー、ネットワーク ファイル共有、または CD などのメディアを使用できます。 アプリケーション マニフェストとアプリケーションのすべてのファイルも、配置マニフェストで指定されている配置場所にコピーします。 これは、配置場所として同じであることができますか、別の場所であることができます。 使用する場合、**発行ウィザード**Visual Studio で、コピー操作は自動的に実行します。  
+ 配置マニフェストを作成したら、それを配置場所にコピーします。 配置場所は、Web サーバー、ネットワーク ファイル共有、CD などのメディアのいずれでもかまいません。 アプリケーション マニフェストとアプリケーションのすべてのファイルも、配置マニフェストで指定されている配置場所にコピーします。 これは、配置場所と同じ場所でも、別の場所でもかまいません。 使用する場合、**発行ウィザード**Visual Studio で、コピー操作は自動的に実行します。  
   
 ### <a name="installing-clickonce-applications"></a>ClickOnce アプリケーションをインストールします。  
- 配置場所にデプロイすると、後に、エンドユーザーはダウンロードして、Web ページまたはフォルダーに配置マニフェスト ファイルを表すアイコンをクリックして、アプリケーションをインストールできます。 ほとんどの場合、どのインストールが進行し、その他の介入なしにアプリケーションを起動した後、インストールを確認するユーザーに確認する簡単なダイアログ ボックスで、エンドユーザーが表示されます。 高度な権限、またはアプリケーションが信頼された証明書によって署名されていないかどうか、アプリケーションが必要な場合、ダイアログ ボックスは、インストールを続行する前に、アクセス許可を付与するユーザーも確認します。 ClickOnce のインストールには、ユーザー数は、管理者特権が必要な前提条件がある場合は、アクセス許可の昇格が必要あります。 管理者特権でのアクセス許可の詳細については、次を参照してください。 [ClickOnce アプリケーションのセキュリティで保護する](../deployment/securing-clickonce-applications.md)します。  
+ 配置場所に配置されたら、エンド ユーザーは Web ページ上またはフォルダー内の配置マニフェスト ファイルを表すアイコンをクリックすることで、アプリケーションをダウンロードしてインストールできます。 ほとんどの場合、どのインストールが進行し、その他の介入なしにアプリケーションを起動した後、インストールを確認するユーザーに確認する簡単なダイアログ ボックスで、エンドユーザーが表示されます。 高度な権限、またはアプリケーションが信頼された証明書によって署名されていないかどうか、アプリケーションが必要な場合、ダイアログ ボックスは、インストールを続行する前に、アクセス許可を付与するユーザーも確認します。 ClickOnce のインストールには、ユーザー数は、管理者特権が必要な前提条件がある場合は、アクセス許可の昇格が必要あります。 管理者特権でのアクセス許可の詳細については、次を参照してください。 [ClickOnce アプリケーションのセキュリティで保護する](../deployment/securing-clickonce-applications.md)します。  
   
  証明書信頼できる、マシンまたはエンタープライズ レベルで信頼された証明書で署名された ClickOnce アプリケーションをサイレント モードでインストールできるようにします。 信頼された証明書の詳細については、次を参照してください。[信頼されたアプリケーション展開の概要](../deployment/trusted-application-deployment-overview.md)します。  
   
@@ -86,12 +81,12 @@ ms.locfileid: "49898175"
 >  アプリケーションに追加されるを防止することも、**開始**メニューと**プログラム追加と削除**グループ、Web アプリケーションのように動作可能になります。 詳細については、「[ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)」を参照してください。  
   
 ### <a name="updating-clickonce-applications"></a>ClickOnce アプリケーションの更新  
- 新しいアプリケーション マニフェストを生成し、配置場所にファイルをコピー アプリケーション開発者は、アプリケーションの更新バージョンを作成するときに、通常は、元のアプリケーションの展開フォルダーの兄弟フォルダー。 管理者は、アプリケーションの新しいバージョンの場所を指す配置マニフェストを更新します。  
+ 新しいアプリケーション マニフェストを生成し、配置場所にファイルをコピー アプリケーション開発者は、アプリケーションの更新バージョンを作成するときに、通常は、元のアプリケーションの展開フォルダーの兄弟フォルダー。 管理者は、アプリケーションの新しいバージョンの場所を示すために配置マニフェストを更新します。  
   
 > [!NOTE]
 >  **発行ウィザード**Visual Studio では、次の手順を使用できます。  
   
- 配置マニフェストには、配置場所だけでなく、アプリケーションが更新されたバージョンをチェックする更新場所 (Web ページまたはネットワーク ファイル共有) も含まれます。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **発行**プロパティを使用して、アプリケーションの更新プログラムを確認するタイミングと頻度を指定します。 配置マニフェストで更新プログラムの動作を指定するかをして、アプリケーションのユーザー インターフェイスにユーザーの選択肢として提示する、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Api。 さらに、**発行**または以前のバージョンにロールバックする更新プログラムを必須にするのには、プロパティを採用されていることができます。 詳細については、次を参照してください。 [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)します。  
+ 配置マニフェストには、配置場所だけでなく、アプリケーションで最新バージョンをチェックする更新場所 (Web ページまたはネットワーク ファイル共有) も含まれます。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **発行**プロパティを使用して、アプリケーションの更新プログラムを確認するタイミングと頻度を指定します。 配置マニフェストで更新プログラムの動作を指定するかをして、アプリケーションのユーザー インターフェイスにユーザーの選択肢として提示する、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Api。 さらに、**[発行]** プロパティを使用して、更新を必須にしたり、以前のバージョンにロールバックしたりすることもできます。 詳細については、「[ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)」を参照してください。  
   
 ### <a name="third-party-installers"></a>サード パーティ製のインストーラー  
  アプリケーションとサード パーティ製のコンポーネントをインストールする、ClickOnce インストーラーをカスタマイズできます。 再頒布可能パッケージ (.exe または .msi ファイル) があるし、言語に依存しない製品マニフェスト、言語固有のパッケージ マニフェストとパッケージを記述する必要があります。 詳細については、次を参照してください。[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)します。  
@@ -114,8 +109,8 @@ ms.locfileid: "49898175"
   
 |ブラウザー|.NET Framework のバージョン|  
 |-------------|----------------------------|  
-|Internet Explorer|2.0、3.0、3.5、4、3.5 SP1|  
-|Firefox|2.0 SP1 では、3.5 SP1 では、4|  
+|Internet Explorer|2.0、3.0、3.5、3.5 SP1、4|  
+|Firefox|2.0 SP1、3.5 SP1、4|  
   
 ## <a name="see-also"></a>関連項目  
  [Windows Vista の ClickOnce 配置](../deployment/clickonce-deployment-on-windows-vista.md)   
@@ -124,6 +119,3 @@ ms.locfileid: "49898175"
  [ClickOnce での COM コンポーネントの配置](../deployment/deploying-com-components-with-clickonce.md)   
  [ClickOnce アプリケーションのコマンド ラインからのビルド](../deployment/building-clickonce-applications-from-the-command-line.md)   
  [System.Deployment.Application を使用する ClickOnce アプリケーションのデバッグ](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
-
-
-

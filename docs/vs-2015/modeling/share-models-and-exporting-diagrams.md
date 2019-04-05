@@ -1,12 +1,9 @@
 ---
 title: モデルおよびエクスポート ダイアグラムの共有 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
@@ -14,13 +11,13 @@ ms.assetid: 22e47b4d-c185-478c-9535-56d292b45984
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f59ac9d96a9f001b54c86bbf51819ecf2efb40c9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4d2fd2af8a68ee72ec26b52a4c26a829d94376ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976796"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>モデルおよびエクスポート ダイアグラムの共有
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,25 +33,25 @@ Visual Studio では、いくつかの方法でモデルと図を同僚と共有
   
  [!INCLUDE[esprscc](../includes/esprscc-md.md)] を使用することをお勧めします。  
   
- 詳細については、[モデルおよびバージョン管理下にある図](../modeling/manage-models-and-diagrams-under-version-control.md)を参照してください。  
+ 詳細については、次を参照してください。[モデルおよびバージョン管理下にある図](../modeling/manage-models-and-diagrams-under-version-control.md)します。  
   
- 中規模または大規模プロジェクトでモデルの整理に関するヒントについては、[モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)を参照してください。  
+ 中規模または大規模プロジェクトでモデルの整理に関するヒントについては、次を参照してください。[モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)します。  
   
 ## <a name="reading-and-reviewing-models"></a>モデルの読み取りと確認  
  (これは、モデルを作成することはできません)、Visual Studio の一部のバージョンを使用してチーム メンバーは、図、および有向グラフをモデリング、モデルを読み取ることができますが、編集はできません。  この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
  UML 図またはレイヤー図は、その図が作成されたモデル内でのみ開くことができます。 このため、図にアクセスするには、すべてのモデリング プロジェクト ファイルまたはそのコピーへのアクセスを提供する必要があります。  
   
- 詳細については、[他の Visual Studio のエディションでモデルおよびダイアグラムを読み取る](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)を参照してください。  
+ 詳細については、次を参照してください。[他の Visual Studio のエディションでモデルおよびダイアグラムを読み取る](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)します。  
   
 ## <a name="using-diagrams-in-documents-and-presentations"></a>ドキュメントとプレゼンテーションでの図の使用  
  図の一部をドキュメントやプレゼンテーションにコピーすることができます。 また、図を XPS ファイルなどに出力することもできます。  
   
- 詳細については、[ダイアグラムをイメージとしてエクスポート](../modeling/export-diagrams-as-images.md)を参照してください。  
+ 詳細については、次を参照してください。[ダイアグラムをイメージとしてエクスポート](../modeling/export-diagrams-as-images.md)します。  
   
 ## <a name="related-topics"></a>関連トピック  
   
-|Title|説明|  
+|タイトル|説明|  
 |-----------|-----------------|  
 |[モデルおよび図のバージョン管理](../modeling/manage-models-and-diagrams-under-version-control.md)|Visual Studio のユーザーは、共有モデルで作業できます。|  
 |[モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)|大規模または中規模のプロジェクトでモデルを共有します。|  
@@ -66,6 +63,3 @@ Visual Studio では、いくつかの方法でモデルと図を同僚と共有
 ## <a name="see-also"></a>関連項目  
  [アプリのモデルを作成します。](../modeling/create-models-for-your-app.md)   
  [開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)
-
-
-

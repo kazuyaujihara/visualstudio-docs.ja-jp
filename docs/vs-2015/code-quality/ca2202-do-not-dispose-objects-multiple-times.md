@@ -1,14 +1,9 @@
 ---
-title: 'Ca 2202: オブジェクトを破棄しません複数回 |Microsoft Docs'
-ms.custom: ''
+title: CA2202:オブジェクトを複数回破棄しません |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2202
 - Do not dispose objects multiple times
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: de3bc29e6d843532e4c15db1e33673d4f63c5179
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b5968c0ba577893bae87e67dee3aa0e8a178e41
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830718"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972454"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: オブジェクトを複数回破棄しません
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202:オブジェクトを複数回破棄しない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -44,7 +39,7 @@ ms.locfileid: "49830718"
  正しく実装する<xref:System.IDisposable.Dispose%2A>メソッドは、例外をスローせず複数回呼び出すことができます。 ただし、これは保証されませんが生成されないようにして、<xref:System.ObjectDisposedException?displayProperty=fullName>呼び出す必要はありません<xref:System.IDisposable.Dispose%2A>オブジェクトの 1 つ以上の時間。
 
 ## <a name="related-rules"></a>関連規則
- [CA2000: スコープが失われる前にオブジェクトを破棄します](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+ [CA 2000:スコープが失われる前にオブジェクトを破棄します。](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を解決するには、コード パスのことに関係なく実装を変更する<xref:System.IDisposable.Dispose%2A>オブジェクトの 1 つだけの時間と呼びます。
@@ -90,6 +85,3 @@ finally
 
 ## <a name="see-also"></a>関連項目
  <xref:System.IDisposable?displayProperty=fullName> [Dispose パターン](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-

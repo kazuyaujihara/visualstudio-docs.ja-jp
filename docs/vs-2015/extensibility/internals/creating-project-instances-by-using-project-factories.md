@@ -1,27 +1,22 @@
 ---
 title: プロジェクト ファクトリを使用してプロジェクト インスタンスを作成する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 358c13bdc8bc312a479b9c316fa516ad68b10630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b33d5d1a09425a18f0c9489b15147e3355e45c99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736263"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973909"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>プロジェクト ファクトリを使用したプロジェクト インスタンスの作成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51736263"
   
  実装することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>プロジェクト内のクラスのインターフェイス。 通常、独自のモジュールに存在します。  
   
- 実装の例については、`IVsProjectFactory`インターフェイスに含まれている PrjFac.cpp を参照してください、[基本的なプロジェクト](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36)サンプル ディレクトリ。  
+ 実装の例については、`IVsProjectFactory`インターフェイスに含まれている PrjFac.cpp を参照してください、[基本的なプロジェクト](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36)サンプル ディレクトリ。  
   
  所有者によって集計をサポートするプロジェクトは、プロジェクト ファイルで、所有者のキーを保持する必要があります。 ときに、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> 、所有者キー プロジェクトでメソッドを呼び出すと、所有しているプロジェクトは、その所有者のキーを GUID を呼び出してプロジェクト ファクトリに変換します、`CreateProject`を実際の作成を行うには、このプロジェクト ファクトリ メソッド。  
   
@@ -57,5 +52,4 @@ ms.locfileid: "51736263"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
- [チェック リスト: 新しいプロジェクト タイプの作成](../../extensibility/internals/checklist-creating-new-project-types.md)
-
+ [チェックリスト:新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)

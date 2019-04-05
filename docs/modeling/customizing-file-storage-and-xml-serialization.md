@@ -27,7 +27,7 @@ ms.locfileid: "55944937"
 高度なカスタマイズのプログラム コードを記述することもできます。
 
 > [!NOTE]
-> 特定の形式でモデルを保存する場合、そのフォームから再読み込みする必要はありませんは、カスタムのシリアル化スキームではなく、モデルからの出力を生成するテキスト テンプレートの使用を検討してください。 詳細については、次を参照してください。[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)します。
+> 特定の形式でモデルを保存する場合、そのフォームから再読み込みする必要はありませんは、カスタムのシリアル化スキームではなく、モデルからの出力を生成するテキスト テンプレートの使用を検討してください。 詳細については、[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)を参照してください。
 
 ## <a name="model-and-diagram-files"></a>モデルと図ファイル
 
@@ -166,7 +166,7 @@ ms.locfileid: "55944937"
 
      あいまいさをチェックする自動的に生成された検証メソッドが存在します。 メソッドが含まれる、`Load`検証カテゴリ。 これにより、ファイルを再度開くできない可能性があります、そのユーザーを警告はことを確認します。
 
-     詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。
+     詳細については、[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)を参照してください。
 
 ### <a name="moniker-paths-and-qualifiers"></a>モニカーのパスと修飾子
 

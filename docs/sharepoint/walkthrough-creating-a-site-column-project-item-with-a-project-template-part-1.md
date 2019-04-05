@@ -38,18 +38,18 @@ ms.locfileid: "54864606"
   これは、独立したチュートリアルです。 このチュートリアルを完了すると、プロジェクト テンプレートにウィザードを追加してプロジェクト項目を拡張できるようになります。 詳細については、「[チュートリアル:プロジェクト テンプレート、第 2 部でサイト列プロジェクト項目を作成する](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)します。
 
 > [!NOTE]
-> 一連のサンプル ワークフローは、次を参照してください。 [SharePoint workflow のサンプル](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)します。
+> 一連のサンプル ワークフローは、[SharePoint workflow のサンプル](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、開発コンピューターに次のコンポーネントが必要です。
 
 - サポート対象エディションの Microsoft Windows および [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、次を参照してください。 [Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)します。
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、[Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
   次の概念に関する知識があると役に立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
-- SharePoint のサイト内の列。 詳細については、次を参照してください。[列](http://go.microsoft.com/fwlink/?LinkId=183547)します。
+- SharePoint のサイト内の列。 詳細については、[列](http://go.microsoft.com/fwlink/?LinkId=183547)を参照してください。
 
 - Visual Studio のプロジェクト テンプレート。 詳細については、「[Creating Project and Item Templates](../ide/creating-project-and-item-templates.md)」 (プロジェクトと項目テンプレートの作成) をご覧ください。
 
@@ -151,7 +151,7 @@ ms.locfileid: "54864606"
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]
 
 ## <a name="create-a-visual-studio-project-template"></a>Visual Studio プロジェクト テンプレートを作成します。
- プロジェクト テンプレートを作成することにより、サイト内の列プロジェクト項目が含まれる SharePoint プロジェクトを他の開発者が作成できるようになります。 SharePoint プロジェクト テンプレートにはなど、Visual Studio のすべてのプロジェクトに必要なファイルが含まれています *.csproj*または *.vbproj*と *.vstemplate*ファイル、およびファイルSharePoint プロジェクトに固有です。 詳細については、次を参照してください。[項目テンプレートとの SharePoint プロジェクト アイテムのプロジェクト テンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)します。
+ プロジェクト テンプレートを作成することにより、サイト内の列プロジェクト項目が含まれる SharePoint プロジェクトを他の開発者が作成できるようになります。 SharePoint プロジェクト テンプレートにはなど、Visual Studio のすべてのプロジェクトに必要なファイルが含まれています *.csproj*または *.vbproj*と *.vstemplate*ファイル、およびファイルSharePoint プロジェクトに固有です。 詳細については、[項目テンプレートとの SharePoint プロジェクト アイテムのプロジェクト テンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)を参照してください。
 
  この手順では、SharePoint プロジェクトに固有のファイルを生成する空の SharePoint プロジェクトを作成します。 次に、これらのファイルが SiteColumnProjectTemplate プロジェクトから生成されるテンプレートに含まれるように、このプロジェクトに追加します。 プロジェクト テンプレートを表示する場所を指定する SiteColumnProjectTemplate プロジェクト ファイルを構成することも、**新しいプロジェクト** ダイアログ ボックス。
 
@@ -191,7 +191,7 @@ ms.locfileid: "54864606"
 
    - *\Package\Package.Template.xml*
 
-     これらのファイルは SiteColumnProjectTemplate プロジェクトに直接追加します。プロジェクト内に Field1、Features、または Package の各サブフォルダーを再作成しないでください。 これらのファイルの詳細については、次を参照してください。[項目テンプレートとの SharePoint プロジェクト アイテムのプロジェクト テンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)します。
+     これらのファイルは SiteColumnProjectTemplate プロジェクトに直接追加します。プロジェクト内に Field1、Features、または Package の各サブフォルダーを再作成しないでください。 これらのファイルの詳細については、[項目テンプレートとの SharePoint プロジェクト アイテムのプロジェクト テンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)を参照してください。
 
 #### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>[新しいプロジェクト] ダイアログ ボックスでのプロジェクト テンプレートの表示方法を構成するには
 
@@ -236,7 +236,7 @@ ms.locfileid: "54864606"
 
 - *ProjectTemplate.csproj*または*ProjectTemplate.vbproj*
 
-  次の手順では、これらのファイルのいくつかに置き換え可能パラメーターを追加します。 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 ユーザーがこのプロジェクト テンプレートを使用してプロジェクトを作成するときに、Visual Studio によって自動的に新しいプロジェクト内のこれらのパラメーターが特定の値で置き換えられます。 詳細については、次を参照してください。[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)します。
+  次の手順では、これらのファイルのいくつかに置き換え可能パラメーターを追加します。 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 ユーザーがこのプロジェクト テンプレートを使用してプロジェクトを作成するときに、Visual Studio によって自動的に新しいプロジェクト内のこれらのパラメーターが特定の値で置き換えられます。 詳細については、[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)を参照してください。
 
 #### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>AssemblyInfo.cs ファイルまたは AssemblyInfo.vb ファイルを編集するには
 
@@ -270,7 +270,7 @@ ms.locfileid: "54864606"
     </Elements>
     ```
 
-     新しい XML により、サイト内の列の名前、その基本型、およびギャラリーでサイト内の列が表示されるグループを定義する `Field` 要素が追加されます。 このファイルの内容に関する詳細については、次を参照してください。[フィールド定義スキーマ](http://go.microsoft.com/fwlink/?LinkId=184290)します。
+     新しい XML により、サイト内の列の名前、その基本型、およびギャラリーでサイト内の列が表示されるグループを定義する `Field` 要素が追加されます。 このファイルの内容に関する詳細については、[フィールド定義スキーマ](http://go.microsoft.com/fwlink/?LinkId=184290)を参照してください。
 
 2.  ファイルを保存して閉じます。
 
@@ -639,7 +639,7 @@ ms.locfileid: "54864606"
 
 1.  **ソリューション エクスプ ローラー**の**SiteColumnProjectItem**プロジェクトで、マニフェスト エディターで source.extension.vsixmanifest ファイルを開きます。
 
-     source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。
+     source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、[VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)を参照してください。
 
 2.  **製品名**ボックスに、入力**Site Column**します。
 
@@ -654,7 +654,7 @@ ms.locfileid: "54864606"
 6.  **型**一覧で、選択**Microsoft.VisualStudio.ProjectTemplate**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `ProjectTemplate` 要素に対応します。 この要素は、プロジェクト テンプレートを格納する VSIX パッケージ内のサブフォルダーを示します。 詳細については、次を参照してください。 [ProjectTemplate 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))します。
+    >  この値は、extension.vsixmanifest ファイル内の `ProjectTemplate` 要素に対応します。 この要素は、プロジェクト テンプレートを格納する VSIX パッケージ内のサブフォルダーを示します。 詳細については、[ProjectTemplate 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))を参照してください。
 
 7.  **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 
@@ -667,7 +667,7 @@ ms.locfileid: "54864606"
 10. **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、[MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))を参照してください。
 
 11. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 

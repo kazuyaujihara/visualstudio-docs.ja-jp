@@ -1,27 +1,22 @@
 ---
 title: コマンドの設計 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aed86eef616702363a661ece0ab565a768f2f75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a6e9eaf69be62b38a880b07fd8eb51cfc9c256a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750116"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978111"
 ---
 # <a name="command-design"></a>コマンド デザイン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,7 +62,7 @@ VSPackage にコマンドを追加するときに表示されるが、可能な�
   
 ## <a name="related-topics"></a>関連トピック  
   
-|Title|説明|  
+|タイトル|説明|  
 |-----------|-----------------|  
 |[実装](../../extensibility/internals/command-implementation.md)|コマンドを VSPackage に実装する方法について説明します。|  
 |[利用可能性](../../extensibility/internals/command-availability.md)|Visual Studio のコンテキストがどのコマンドは、使用を決定する方法について説明します。|  
@@ -77,4 +72,3 @@ VSPackage にコマンドを追加するときに表示されるが、可能な�
 |[既定のコマンド、グループ、およびツール バーの配置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Vspackage によって Visual Studio に含まれているコマンドが最適なように使用する方法について説明します。|  
 |[VSPackage の管理](../../extensibility/managing-vspackages.md)|Visual Studio が Vspackage を読み込む方法について説明します。|  
 |[Visual Studio Command Table (.Vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|レイアウトと外観の Vspackage のコマンドの記述に使用すると、XML ベースの .vsct ファイルに関する情報を提供します。|
-

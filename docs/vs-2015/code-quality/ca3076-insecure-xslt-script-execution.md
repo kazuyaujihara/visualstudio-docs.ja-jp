@@ -1,26 +1,21 @@
 ---
-title: 'Ca 3076: 安全ではない XSLT スクリプトの実行 |Microsoft Docs'
-ms.custom: ''
+title: CA3076:安全ではない XSLT スクリプトの実行 |Microsoft Docs
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 53cb7a46-c564-488f-bc51-0e210a7853c9
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 39aebc0e7681b139e021c48c12a87d4b060cc7af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d82414b94caee2f1ccbb823e94d9168e5502df8c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962522"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: 安全ではない XSLT スクリプトの実行
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076:安全ではない XSLT スクリプトの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -31,10 +26,10 @@ ms.locfileid: "49911474"
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- .NET アプリケーションで [XSLT (Extensible Stylesheet Language Transformation)](https://support.microsoft.com/en-us/kb/313997) を安全ではない方法で実行すると、攻撃者に機密情報を漏えいする可能性のある、 [信頼されていない URI 参照がプロセッサにより解決される](http://msdn.microsoft.com/en-us/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) おそれがあります。そのことは、サービス拒否攻撃やクロスサイト攻撃につながります。
+ .NET アプリケーションで [XSLT (Extensible Stylesheet Language Transformation)](https://support.microsoft.com/kb/313997) を安全ではない方法で実行すると、攻撃者に機密情報を漏えいする可能性のある、 [信頼されていない URI 参照がプロセッサにより解決される](http://msdn.microsoft.com/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) おそれがあります。そのことは、サービス拒否攻撃やクロスサイト攻撃につながります。
 
 ## <a name="rule-description"></a>規則の説明
- [XSLT](http://msdn.microsoft.com/en-us/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) は、XML データを変換するための W3C (World Wide Web Consortium) 規格です。 通常 XSLT は、XML データを他の形式 (HTML、固定長のテキスト、コンマ区切りのテキスト、または別の XML 形式など) に変換するために、スタイル シートを書き込むのに使用します。 既定では禁止になっていますが、プロジェクトに応じて有効にもできます。
+ [XSLT](http://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) は、XML データを変換するための W3C (World Wide Web Consortium) 規格です。 通常 XSLT は、XML データを他の形式 (HTML、固定長のテキスト、コンマ区切りのテキスト、または別の XML 形式など) に変換するために、スタイル シートを書き込むのに使用します。 既定では禁止になっていますが、プロジェクトに応じて有効にもできます。
 
  攻撃にさらされないように、このルールはたびにトリガー、XslCompiledTransform します。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> インスタンスを安全でない組み合わせを受け取る<xref:System.Xml.Xsl.XsltSettings>と<xref:System.Xml.XmlResolver>、悪意のあるスクリプトの処理をことができます。
 
@@ -142,6 +137,3 @@ namespace TestNamespace
     }
 }
 ```
-
-
-

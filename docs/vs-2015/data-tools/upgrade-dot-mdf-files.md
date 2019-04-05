@@ -1,12 +1,9 @@
 ---
 title: .Mdf ファイルのアップグレード |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,14 +20,14 @@ ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d71b38fe0d4aef412860a9dc65002c9b8d98c79c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812635"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972373"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf ファイルのアップグレード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,15 +73,15 @@ ms.locfileid: "49812635"
   
    -   **データ ソース**: `Microsoft SQL Server (SqlClient)`  
   
-   -   **サーバー名**:  
+   -   **サーバー名**:   
   
        -   既定のバージョンを使用する:`(localdb)\MSSQLLocalDB`します。  これを指定 ProjectV12 または ProjectV13 のいずれかによっては、Visual Studio のバージョンがインストールされているし、最初の LocalDB インスタンスの作成時にします。 **MSSQLLocalDB**ノード**SQL Server オブジェクト エクスプ ローラー**ポイントにバージョンを示しています。  
   
        -   特定のバージョンを使用する:`(localdb)\ProjectsV12`または`(localdb)\ProjectsV13`V12 は LocalDB 2014、V13 は LocalDB 2016。  
   
-   -   **データベース ファイルを添付**: プライマリ .mdf ファイルの物理パス。  
+   -   **データベース ファイルを添付**:プライマリ .mdf ファイルの物理パス。  
   
-   -   **論理名**: ファイルで使用する名前。  
+   -   **論理名**:ファイルで使用する名前です。  
   
 3. **[OK]** ボタンを選択します。  
   
@@ -123,8 +120,3 @@ ms.locfileid: "49812635"
 4. **[OK]** ボタンを選択します。  
   
    SQL Server Express をアプリケーションの既定のデータベース エンジンとなります。  
-  
-## <a name="see-also"></a>関連項目  
- [ローカル データの概要](../data-tools/local-data-overview.md)   
- [チュートリアル: ローカル データベース ファイル内のデータへの接続 (Windows フォーム)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)
-

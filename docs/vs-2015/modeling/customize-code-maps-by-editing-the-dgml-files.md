@@ -1,12 +1,9 @@
 ---
 title: DGML ファイルを編集してコード マップをカスタマイズ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency graphs, creating path aliases
 - dependency graphs, linking items to nodes
@@ -24,13 +21,13 @@ ms.assetid: a2e141f4-4fd8-4611-b236-6b9e7bc54fc1
 caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e370e805df8e3a6ee253e3560738e882a247d2de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98d754bfc5f68acf693f37f98347c8c60075beaa
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817460"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59003026"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML ファイルを編集してコード マップをカスタマイズする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -292,29 +289,29 @@ ms.locfileid: "51817460"
   
     この式では、次のバッカス・ナウア記法 (BNF: Backus-Naur Form) 構文を使用します。  
   
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>  
   
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>  
+    \<BinaryExpression >:: =\<式 >\<演算子 >\<式 >  
   
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
+    \<UnaryExpression >:: ="!"\<式 > &#124; 「+」\<式 > &#124; "-"\<式 >  
   
-    <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+    \<演算子 >:: ="<" &#124; "\<=" &#124; 「=」 &#124; "> =" &#124; ">" &#124; "! =" &#124; 「または」 &#124; 「と」 &#124; 「+」 &#124; "*" &#124; 「/」 &#124; "-"  
   
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
+    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding >"."\<MemberBinding >  
   
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
+    \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet >  
   
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
+    \<MethodCall >:: =\<識別子 >"(" \<MethodArgs >「")"」  
   
-    <PropertyGet> : = 識別子  
+    \<PropertyGet >:: = 識別子  
   
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>  
   
-    <Identifier> ::= [^. ]*  
+    \<識別子 >:: = [^ です。 ]*  
   
-    <Literal> : = 一重または二重引用符で囲まれた文字列リテラル  
+    \<リテラル >:: = 一重または二重引用符で囲まれた文字列リテラル  
   
-    <Number> 省略可能な小数点 10 進数字の文字列を =  
+    \<数 >:: = 小数点と桁の文字列  
   
     複数を指定した`<Condition/>`要素で、すべて必要があります、スタイルを適用する場合は true。  
   

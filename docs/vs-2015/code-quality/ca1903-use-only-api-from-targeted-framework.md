@@ -1,14 +1,9 @@
 ---
-title: '1903: ca 対象のフレームワークから API のみ使用 |Microsoft Docs'
-ms.custom: ''
+title: CA1903:対象のフレームワークから API のみを使用して、|Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
 - CA1903
@@ -20,17 +15,17 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c23b25029775cd3abca84e695c50b5a0fdf68cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e0382ab59745fccde53d09f88222b64d36a9bd6d
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191577"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59003050"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: 対象のフレームワークから API のみを使用します
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:対象のフレームワークから API のみを使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。 [CA1903: 対象のフレームワークから API のみを使用して、](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください[CA1903:。対象のフレームワークから API のみを使用して、](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) docs.microsoft.com でリリースされました。  
   
 |||  
 |-|-|  
@@ -76,4 +71,3 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 ## <a name="see-also"></a>関連項目  
  [移植性に関する警告](../code-quality/portability-warnings.md)   
  [対象となる特定の .NET Framework バージョンの指定](../ide/targeting-a-specific-dotnet-framework-version.md)
-

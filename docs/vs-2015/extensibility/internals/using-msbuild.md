@@ -1,14 +1,9 @@
 ---
-title: MSBuild の使用 |Microsoft Docs
-ms.custom: ''
+title: MSBuild の使用 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, compiling with MSBuild
 - MSBuild, extensibility
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dba9feb50ddab868d81eb61565c34a8c694c2a69
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a4338649885c75a81fdd08d5d4dd0ca4d00158ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768184"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972851"
 ---
 # <a name="using-msbuild"></a>MSBuild の使用
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ MSBuild では、ビルド、ビルド タスク、および構成をビルド�
 ## <a name="general-msbuild-considerations"></a>MSBuild の一般的な考慮事項  
  MSBuild プロジェクト ファイル、たとえば、 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] .csproj および[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]、.vbproj ファイルには、ビルド時に使用されますが、デザイン時に使用されるデータを含めることができますもデータが含まれています。 などの MSBuild のプリミティブを使用して、ビルド時のデータが格納された[Item 要素 (MSBuild)](../../msbuild/item-element-msbuild.md)と[Property 要素 (MSBuild)](../../msbuild/property-element-msbuild.md)します。 プロジェクトの種類との関連プロジェクト サブタイプに固有のデータである、デザイン時のデータは、自由形式の XML 用に予約に格納されます。  
   
- MSBuild では、構成オブジェクトのネイティブ サポートはありませんが、構成に固有のデータを指定するための条件付き属性は提供します。 例えば:  
+ MSBuild では、構成オブジェクトのネイティブ サポートはありませんが、構成に固有のデータを指定するための条件付き属性は提供します。 例:  
   
 ```  
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>  
@@ -64,6 +59,5 @@ MSBuild では、ビルド、ビルド タスク、および構成をビルド�
   
 ## <a name="see-also"></a>関連項目  
  [MSBuild リファレンス](../../msbuild/msbuild-reference.md)   
- [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)   
+ [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)   
  [カスタム ツール](../../extensibility/internals/custom-tools.md)
-

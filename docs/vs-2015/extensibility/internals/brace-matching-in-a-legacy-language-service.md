@@ -1,27 +1,22 @@
 ---
 title: 従来の言語サービスにおけるかっこの一致 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 70ad3062a4cbbce8ef46c3afe8851382949fe3f3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03420aa0638fcf12fa36fb871b4a14d2695f0377
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976982"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>従来の言語サービスでのかっこの一致
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51753213"
   
  2 つまたは 3 つに同時発生と呼ばれる要素のペアと 3 要素を照合することができます。 3 要素は、次の 3 つの同時発生要素のセットです。 C# の場合は、たとえばで、`foreach`ステートメントは、3 つの要素をフォーム:"`foreach()`「,」`{`"、および"`}`"。 右中かっこを入力すると、次の 3 つのすべての要素が強調表示されます。  
   
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 かっこの一致を実装する新しい方法の詳細についてを参照してください。[チュートリアル: 対応する中かっこを表示する](../../extensibility/walkthrough-displaying-matching-braces.md)します。  
+ 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 かっこの一致を実装する新しい方法の詳細についてを参照してください。[チュートリアル。中かっこの一致を表示する](../../extensibility/walkthrough-displaying-matching-braces.md)します。  
   
 > [!NOTE]
 >  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
@@ -145,4 +140,3 @@ namespace TestLanguagePackage
 ## <a name="see-also"></a>関連項目  
  [従来の言語サービスの機能](../../extensibility/internals/legacy-language-service-features1.md)   
  [従来の言語サービスのパーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
-

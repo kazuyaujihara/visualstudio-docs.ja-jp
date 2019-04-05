@@ -1,4 +1,4 @@
-﻿---
+---
 title: TextTransform ユーティリティを使用したファイルの生成
 ms.date: 03/22/2018
 ms.topic: conceptual
@@ -19,10 +19,10 @@ ms.locfileid: "55939504"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>TextTransform ユーティリティを使用したファイルの生成
 
-TextTransform.exe は、テキスト テンプレートを変換するために使用できるコマンド ライン ツールです。 TextTransform.exe を呼び出すときに、引数として、テキスト テンプレート ファイルの名前を指定します。 TextTransform.exe では、テキスト変換エンジンを呼び出し、テキスト テンプレートを処理します。 TextTransform.exe は通常、スクリプトから呼び出されます。ただし、Visual Studio あるいは、ビルド プロセスの中で、テキスト変換が実行されるため、通常、必須ではありません。
+TextTransform.exe は、テキスト テンプレートを変換するために使用できるコマンド ライン ツールです。 TextTransform.exe を呼び出すときに、引数として、テキスト テンプレート ファイルの名前を指定します。 TextTransform.exe では、テキスト変換エンジンを呼び出し、テキスト テンプレートを処理します。 TextTransform.exe は通常、スクリプトから呼び出されます。 ただし、Visual Studio あるいは、ビルド プロセスの中で、テキスト変換が実行されるため、通常、必須ではありません。
 
 > [!NOTE]
-> ビルド プロセスの一部としてテキスト変換を実行する場合は、MSBuild のテキスト変換タスクの使用を検討してください。 詳細については、次を参照してください。[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md)  Visual Studio がインストールされているコンピューターでは、テキスト テンプレートを変換するアプリケーションあるいは Visual Studio 拡張機能を作成することもできます。 詳細については、次を参照してください。[カスタム ホストを使用してテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)します。
+> ビルド プロセスの一部としてテキスト変換を実行する場合は、MSBuild のテキスト変換タスクの使用を検討してください。 詳細については、次を参照してください。[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md)  Visual Studio がインストールされているコンピューターでは、テキスト テンプレートを変換するアプリケーションあるいは Visual Studio 拡張機能を作成することもできます。 詳細については、[カスタム ホストを使用してテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)を参照してください。
 
  TextTransform.exe は、次のディレクトリにあります。
 
@@ -60,6 +60,7 @@ TextTransform [<options>] <templateName>
 |**-I** \<includedirectory>|テキスト テンプレートでインクルードすることが指定されたテキスト テンプレートが含まれるディレクトリ。|
 |**-P** \<referencepath>|テキスト テンプレート内、あるいは、 **-r** オプションで指定されたアセンブリを検索するディレクトリ。<br /><br /> たとえば、Visual Studio API を使用するアセンブリを含めるためには次のようにします。<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|テキスト テンプレートの中でカスタム ディレクティブの処理に使用できるディレクティブ プロセッサの名前、完全な型の名前、および、アセンブリ。|
+|**-** [processorName] [。directiveName]。\<parameterName >!\<parameterValue >|ディレクティブ プロセッサのパラメーター値を指定します。 パラメーター名と値のみを指定したパラメーターはすべてのディレクティブ プロセッサで利用できます。 ディレクティブ プロセッサを指定した場合、パラメーターが指定したプロセッサのみが使用できます。 ディレクティブの名前を指定する場合、パラメーターの値は、指定されたディレクティブが処理されている場合にのみ使用です。<br /><br /> ディレクティブ プロセッサまたはテキスト テンプレートからパラメーター値にアクセスするには、[ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\))を使用します。 テキスト テンプレート中に、`hostspecific` template ディレクティブを含め、`this.Host` 上のメッセージを呼び出します。 例えば:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`。<br /><br /> 入力省略可能なプロセッサとディレクティブの名前を省略した場合でも、'!'マークは常にタイプします。  例えば:<br /><br /> `-a !!param!value`|
 |**-h**|ヘルプを提供します。|
 
 ## <a name="related-topics"></a>関連トピック

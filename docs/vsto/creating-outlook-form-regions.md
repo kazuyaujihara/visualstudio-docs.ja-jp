@@ -57,7 +57,7 @@ ms.locfileid: "56621371"
 
 - 閲覧ペインとインスペクターにカスタム UI を表示する。
 
-  詳細については、次を参照してください。[のフォーム ページおよびフォーム領域をカスタマイズ](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions)します。
+  詳細については、[のフォーム ページおよびフォーム領域をカスタマイズ](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions)を参照してください。
 
 ##  <a name="Adding"></a> Outlook フォーム領域をプロジェクトに追加します。
  使用することができます、**新しい Outlook フォーム領域**新しいフォーム領域をデザインまたは Outlook でデザインしたフォーム領域をインポートするウィザード。 また、別の Outlook VSTO アドイン プロジェクトで使用したフォーム領域がある場合は、既存のフォーム領域を再利用できます。
@@ -65,7 +65,7 @@ ms.locfileid: "56621371"
 ###  <a name="CreatingFormRegion"></a> ウィザードを使用して新しいフォーム領域を作成します。
  フォーム領域を作成するには、追加、 **Outlook フォーム領域**項目を Outlook VSTO アドイン プロジェクト。 起動、**新しい Outlook フォーム領域**ウィザード。
 
- このウィザードでは、新しいフォーム領域をデザインするか、Outlook でデザインしたフォーム領域をインポートするかを指定します。 新しいフォーム領域のデザインの詳細については、次を参照してください。[フォーム領域デザイナーを使用して、](#UsingFormRegionDesigner)します。 Outlook でデザインしたフォーム領域の使用に関する詳細については、次を参照してください。 [Outlook でデザインしたフォーム領域をインポート](#UsingFormRegionDesignedOutlook)します。
+ このウィザードでは、新しいフォーム領域をデザインするか、Outlook でデザインしたフォーム領域をインポートするかを指定します。 新しいフォーム領域のデザインの詳細については、[フォーム領域デザイナーを使用して、](#UsingFormRegionDesigner)を参照してください。 Outlook でデザインしたフォーム領域の使用に関する詳細については、[Outlook でデザインしたフォーム領域をインポート](#UsingFormRegionDesignedOutlook)を参照してください。
 
  このウィザードでは、作成するフォーム領域の種類を指定します。 フォーム領域の種類について、次の表で説明します。
 
@@ -99,7 +99,7 @@ ms.locfileid: "56621371"
 
  **新しい Outlook フォーム領域**ウィザードは、フォーム領域の内部名を指定するこのクラスとフォーム領域を表示するメッセージ クラスに属性を追加します。 これらの属性は、ファイルがプロジェクトに追加された後、手動で変更できます。
 
- フォーム領域ファクトリ クラスの大部分は、フォーム領域デザイナー ファイルに実装されます。 ただし、`FormRegionInitializing` イベント ハンドラーはフォーム領域コード ファイルに公開されます。 このイベント ハンドラーを使用して、Outlook がフォーム領域を表示するかどうかを指定できます。 詳細については、次を参照してください。[フォーム領域イベントを処理](#HandlingFormRegionEvents)します。
+ フォーム領域ファクトリ クラスの大部分は、フォーム領域デザイナー ファイルに実装されます。 ただし、`FormRegionInitializing` イベント ハンドラーはフォーム領域コード ファイルに公開されます。 このイベント ハンドラーを使用して、Outlook がフォーム領域を表示するかどうかを指定できます。 詳細については、[フォーム領域イベントを処理](#HandlingFormRegionEvents)を参照してください。
 
 ###  <a name="AddingExistingFormRegion"></a> 既存のフォーム領域をプロジェクトに追加します。
  別の Outlook プロジェクトで使用した Outlook フォーム領域がある場合は、 **[既存項目の追加]** ダイアログ ボックスを使用して、そのフォーム領域を現在の Outlook VSTO アドイン プロジェクトで再利用できます。
@@ -146,7 +146,7 @@ ms.locfileid: "56621371"
 ##  <a name="AddingCustomCode"></a> カスタム コードをフォーム領域に追加します。
  <xref:Microsoft.Office.Tools.Outlook> 名前空間では、フォーム領域、フォーム領域を表示する Outlook アイテム、およびその他の役に立つアイテムを表すクラスにアクセスできます。 **Outlook フォーム領域**項目に自動的にプロジェクトでこのアセンブリへの参照を追加し、挿入、適切な**を使用して**または**Imports**の上部にあるステートメント、フォーム領域コード ファイル。
 
- `Microsoft.Office.Interop.Outlook` 名前空間のクラス、メソッド、およびプロパティを使用して、ほとんどの Outlook プログラミング タスクを実行できます。 Outlook オブジェクト モデルの詳細については、次を参照してください。 [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)します。 参照してください、Outlook オブジェクト モデルを使用する一般的なタスクの例については[Outlook ソリューション](../vsto/outlook-solutions.md)します。
+ `Microsoft.Office.Interop.Outlook` 名前空間のクラス、メソッド、およびプロパティを使用して、ほとんどの Outlook プログラミング タスクを実行できます。 Outlook オブジェクト モデルの詳細については、[Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)を参照してください。 参照してください、Outlook オブジェクト モデルを使用する一般的なタスクの例については[Outlook ソリューション](../vsto/outlook-solutions.md)します。
 
 ###  <a name="HandlingFormRegionEvents"></a> フォーム領域イベントを処理します。
  **Outlook フォーム領域**項目、フォーム領域コード ファイルに次の 3 つのイベント ハンドラーを自動的に追加します。
@@ -172,7 +172,7 @@ ms.locfileid: "56621371"
  フォーム領域を表示するには、対応する Outlook アイテムを開く必要があります。 たとえば、隣接フォーム領域をメール アイテムの下部に追加する場合は、メール アイテムを開きます。
 
 ##  <a name="Deploying"></a> フォーム領域を配置します。
- フォーム領域は、関連付けられた Outlook VSTO アドインと共に自動的に配置されます。 したがって、フォーム領域を配置するための特別なタスクを実行する必要はありません。 VSTO アドインの展開に関する詳細については、次を参照してください。 [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
+ フォーム領域は、関連付けられた Outlook VSTO アドインと共に自動的に配置されます。 したがって、フォーム領域を配置するための特別なタスクを実行する必要はありません。 VSTO アドインの展開に関する詳細については、[Office ソリューションを配置](../vsto/deploying-an-office-solution.md)を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 

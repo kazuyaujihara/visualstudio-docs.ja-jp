@@ -1,12 +1,9 @@
 ---
 title: '方法: ドメイン固有言語ソリューションの作成 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -17,13 +14,13 @@ ms.assetid: e585b63b-34d2-405a-8d81-39ea22317975
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3f675b40f250505e654b287fcaa86e70aca4cdd0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908940"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977456"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>方法: ドメイン固有言語ソリューションを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +69,7 @@ ms.locfileid: "49908940"
   
    -   完全にインストールされていない以前の実験的な Dsl で、ファイル名拡張子を使用した場合ことができますをオフにすることを使用して、**実験用インスタンスをリセット**では、ツール、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK メニュー。  
   
-   -   もう 1 つ場合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]このファイルの拡張機能を使用する拡張機能は完全にコンピューターにインストールされたをアンインストールすることを検討してください。 **ツール** メニューのをクリックして**拡張機能マネージャー**します。  
+   -   もう 1 つ場合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]このファイルの拡張機能を使用する拡張機能は完全にコンピューターにインストールされたをアンインストールすることを検討してください。 **ツール** メニューをクリックして **拡張機能マネージャー** をクリックします。  
   
 4. 検査、および必要に応じて調整、ウィザードの残りのページのフィールド。 設定に満足したら、クリックして**完了**します。 設定の詳細については、次を参照してください。 [DSL デザイナーのウィザード ページ](#settings)します。  
   
@@ -109,7 +106,7 @@ ms.locfileid: "49908940"
   
      \- または -  
   
--   場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]このファイルの拡張機能を使用する拡張機能がコンピューターに完全にインストールされて、それをアンインストールします。 **ツール** メニューのをクリックして**拡張機能マネージャー**します。  
+-   場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]このファイルの拡張機能を使用する拡張機能がコンピューターに完全にインストールされて、それをアンインストールします。 **ツール** メニューをクリックして **拡張機能マネージャー** をクリックします。  
   
 ### <a name="product-settings-page"></a>製品の設定 ページ  
  **新しいドメイン固有言語が含まれている製品の名前は何ですか。**  
@@ -136,7 +133,4 @@ ms.locfileid: "49908940"
   
 ## <a name="see-also"></a>関連項目  
  [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)   
- [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -41,13 +41,13 @@ ms.locfileid: "56620526"
 
 - サポート対象エディションの Microsoft Windows、SharePoint、および Visual Studio。
 
-- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、次を参照してください。 [Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)します。
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、[Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
   次の概念に関する知識があると役に立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
-- [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] の BDC サービス。 詳細については、次を参照してください。 [BDC アーキテクチャ](http://go.microsoft.com/fwlink/?LinkId=177798)します。
+- [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] の BDC サービス。 詳細については、[BDC アーキテクチャ](http://go.microsoft.com/fwlink/?LinkId=177798)を参照してください。
 
-- BDC モデルの XML スキーマ。 詳細については、次を参照してください。 [BDC モデル インフラストラクチャ](http://go.microsoft.com/fwlink/?LinkId=177799)します。
+- BDC モデルの XML スキーマ。 詳細については、[BDC モデル インフラストラクチャ](http://go.microsoft.com/fwlink/?LinkId=177799)を参照してください。
 
 ## <a name="create-the-projects"></a>プロジェクトを作成します。
  このチュートリアルを完了するには、2 つのプロジェクトを作成する必要があります。
@@ -161,7 +161,7 @@ ms.locfileid: "56620526"
 
 1.  **ソリューション エクスプ ローラー**、GenerateExternalDataLists プロジェクトの source.extension.vsixmanifest ファイルのショートカット メニューを開き、選択し、**開く**します。
 
-     Visual Studio によってマニフェスト エディターでファイルが開きます。 source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要とされる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。
+     Visual Studio によってマニフェスト エディターでファイルが開きます。 source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要とされる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、[VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)を参照してください。
 
 2.  **製品名**ボックスに、入力**External Data List Generator**します。
 
@@ -176,7 +176,7 @@ ms.locfileid: "56620526"
 6.  **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、[MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))を参照してください。
 
 7.  **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 

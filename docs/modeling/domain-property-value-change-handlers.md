@@ -60,7 +60,7 @@ public partial class Comment
 
 -   変更ハンドラーを使用して新しい値を変更することはできません。 たとえば、値を特定の範囲に制限する場合などは、`ChangeRule` を定義します。
 
--   リレーションシップのロールを表すプロパティに変更ハンドラーを追加することはできません。 その代わり、リレーションシップ クラス上で `AddRule` および `DeleteRule` を定義します。 これらの規則は、リンクが作成または変更されるとトリガーされます。 詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。
+-   リレーションシップのロールを表すプロパティに変更ハンドラーを追加することはできません。 その代わり、リレーションシップ クラス上で `AddRule` および `DeleteRule` を定義します。 これらの規則は、リンクが作成または変更されるとトリガーされます。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。
 
 ### <a name="changes-in-and-out-of-the-store"></a>ストア内外の変更
 
@@ -97,7 +97,7 @@ if (newValue > 10)
 
 前述の例は OnValueChanged() を使用して、あるドメイン プロパティから別のドメイン プロパティへ値を伝達する方法を示しています。 各プロパティは独自の格納値を持っています。
 
-代わりに、派生したプロパティを Calculated property として定義することを検討できます。 その場合、プロパティは独自のストレージを持たず、値が必要になるときに常に関数が評価されることを定義しています。 詳細については、次を参照してください。[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)します。
+代わりに、派生したプロパティを Calculated property として定義することを検討できます。 その場合、プロパティは独自のストレージを持たず、値が必要になるときに常に関数が評価されることを定義しています。 詳細については、[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)を参照してください。
 
 設定することが、前の例ではなく、**種類**フィールド`TextLengthCount`する**Calculated** DSL 定義で。 独自に提供するよう**取得**このドメイン プロパティのメソッド。 **取得**メソッドは現在の長さを返します、`Text`文字列。
 
@@ -105,7 +105,7 @@ if (newValue > 10)
 
 ### <a name="alternative-technique-change-rules"></a>代替手法:ルールを変更
 
-ChangeRule を定義する場合は、プロパティの値が変化するトランザクションの最後に実行されます。  詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。
+ChangeRule を定義する場合は、プロパティの値が変化するトランザクションの最後に実行されます。  詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。
 
 1 つのトランザクション内で複数の変更があった場合、ChangeRule はそれらすべてが完了したときに実行されます。 一方、的に、OnValue. メソッドは一部の変更が行われないときに実行されます。 目的に応じて、ChangeRule が適切である場合があります。
 

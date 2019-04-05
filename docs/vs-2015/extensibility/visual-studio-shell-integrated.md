@@ -1,27 +1,22 @@
 ---
 title: Visual Studio Shell (Integrated) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, integrated mode features
 - Shell [Visual Studio], integrated mode features
 ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3eb0c8dd0588e1af9b3aad500c8bc9f899b44513
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765274"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "59003146"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Visual Studio の統合シェルには、統合開発環境 (IDE)、デバッガ
 |プロジェクト システムとプロジェクトの種類|-ソリューションとソリューション フォルダー<br />ソリューション構成マネージャー<br />-項目の管理<br />単一のプロジェクトおよびマルチ プロジェクト ソリューション<br />アプリケーション デザイナー (簡略化されたプロジェクトのプロパティ)<br />-Web 参照を追加します。<br />-サービス参照を追加します。<br />単一のプロジェクト<br />Web サイト プロジェクトの種類<br />-Web アプリケーション プロジェクト|  
 |ビルド|の IDE でカスタム ビルド ステップ<br />-知的財産 (IP) 保護のプリコンパイル<br />コード署名<br />     MSBuild|  
 |エディター|コードの参照ツール (統合検索、ソースの定義、継承)<br />コード ナビゲーション<br />IntelliSense<br />スマート タグ<br />リファクタリング<br />-再フォーマットの一覧<br />IntelliSense のフィルター処理<br />-   **コード定義**ウィンドウ|  
-|Designer|-Windows Presentation Foundation デザイナー<br />-Windows フォーム デザイナー<br />-Web デザイナーと HTML エディター|  
+|Designer|-   Windows Presentation Foundation Designer<br />-Windows フォーム デザイナー<br />-Web デザイナーと HTML エディター|  
 |データ|-   **サーバー エクスプ ローラー** (簡体字: データのみ)。 注 1 を参照してください。<br />-   **データ ソース**ウィンドウ<br />データ コントロールの完全なセット<br />XML エディター<br />データがローカル データ ソースにバインド (します。MDF またはします。MDB)<br />オブジェクトへのデータ バインド<br />Web サービスにデータをバインドします。<br />-データをバインドするローカル データベース サーバー<br />リモート データベース サーバーにデータ バインドします。<br />リモート データの DDL ツール<br />-   **サーバー エクスプ ローラー**機能拡張 ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]サンプル)|  
 |デバッガー|-ローカル デバッグします。 注 2 を参照してください。<br />マネージ デバッグ<br />-ローカル デバッグ<br />-ローカルのプロセスにアタッチします。<br />-リモート プロセスにアタッチします。<br />匿名デリゲート<br />アプリケーション ドメイン<br />ASPX のデバッグ<br />-属性<br />-Func eval の中に中断します。<br />-ブレークポイント<br />ブレークポイント制約<br />-呼び出し履歴<br />-   **コマンド**ウィンドウ<br />-クロス スレッドのデバッグ<br />-データのヒント<br />データ ビジュアライザー<br />マネージ デバッグ アシスタント (Mda) のデバッガー サポート<br />型フォワーダーのデバッガー サポート<br />-DTEEvents OTB のサポート<br />-JMC ステッパ<br />-デバッガー AppID テスト (DBGCLR)<br />デバッガーのプロファイル<br />-デバッガー ツールとオプション<br />反復子のデバッグ<br />デザイン時の式の評価<br />-C# の式エバリュエーター<br />-逆アセンブリ<br />エディット コンティニュ<br />式エバリュエーター windows (ウォッチ、[ローカル]、[自動変数])<br />-例外ヘルパー<br />-例外<br />-実行<br />- ジェネリック<br />-適切なソースを取得します。<br />HPC/クラスター デバッガー<br />-複数言語のデバッグを統合します。<br />-相互運用機能デバッグ<br />--Just-in-time デバッグ<br />-ローカル デバッグ<br />マネージ デバッグ<br />-手動で制御 ([プロセス] ウィンドウ)<br />メモリ<br />のミニダンプ サポート<br />-モジュール<br />-マルチ プロセス デバッグ<br />ネイティブのデバッグ<br />新しいデバッグ エンジンのサポート<br />-最適化されたコードのデバッグ<br />-出力 windows フィルタ リング<br />-プロセスをホストしているマネージ デバッグのため<br />-プロセス<br />-[クイック ウォッチ]<br />登録<br />Stack の登録<br />-リモート デバッグ<br />戻り値<br />スクリプトのデバッグ<br />ソース サービスのサポート<br />-セキュリティ<br />--サイド<br />-SQL<br />シンボル サーバー<br />トレース ポイント<br />-スレッド<br />-視覚エフェクト<br />-Extensible Stylesheet Language Transformations (XSLT) デバッガー|  
 |64 ビット サポート|-64 ビットのマネージ コードとネイティブ コード、すべての言語のデバッグ<br />-x64 のネイティブ サポート|  
@@ -75,7 +70,7 @@ Visual Studio の統合シェルには、統合開発環境 (IDE)、デバッガ
   
 -   クラス デザイナー  
   
--   プリエンプティブな DotFuscator  
+-   PreEmptive Protection - Dotfuscator  
   
 -   言語機能  
   

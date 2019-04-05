@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 2ed97cecb01a8e42a01a3e358ecc953857ca55b6
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49191348"
@@ -42,7 +42,7 @@ ms.locfileid: "49191348"
 >  アプリケーションの更新には、ネットワーク接続が必要です。 ネットワーク接続されていない場合、選択した更新方法に関係なく、アプリケーションは更新プログラムをチェックせずに実行されます。  
   
 > [!NOTE]
->  .NET Framework 2.0 および .NET Framework 3.0 で、アプリケーションの起動の前後または <xref:System.Deployment.Application> の API を使用する前後に更新プログラムがあるかどうかをチェックする場合は、配置マニフェストで `deploymentProvider` を設定する必要があります。 `deploymentProvider`要素は、対応する Visual Studio で、**の場所を更新**フィールドに、**更新**のダイアログ ボックス、**発行**タブ。この規則は .NET Framework 3.5 で緩和されています。 詳細については、次を参照してください。 [ClickOnce アプリケーションのテストの展開および Resigning なしの実稼働サーバー](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)します。  
+>  .NET Framework 2.0 および .NET Framework 3.0 で、アプリケーションの起動の前後または <xref:System.Deployment.Application> の API を使用する前後に更新プログラムがあるかどうかをチェックする場合は、配置マニフェストで `deploymentProvider` を設定する必要があります。 `deploymentProvider`要素は、対応する Visual Studio で、**の場所を更新**フィールドに、**更新**のダイアログ ボックス、**発行**タブ。この規則は .NET Framework 3.5 で緩和されています。 詳細については、[ClickOnce アプリケーションのテストの展開および Resigning なしの実稼働サーバー](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)を参照してください。  
   
 ## <a name="checking-for-updates-after-application-startup"></a>アプリケーション起動後の更新プログラムのチェック  
  この方法を使用した場合、アプリケーションは、実行中にバックグラウンドで配置マニフェスト ファイルの検索と読み取りを試みます。 更新が利用可能な場合は、ユーザーが次回アプリケーションを実行したときに、更新プログラムをダウンロードしてインストールするかどうかを確認するプロンプトが表示されます。  

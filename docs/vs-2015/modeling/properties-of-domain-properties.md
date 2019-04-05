@@ -1,25 +1,22 @@
 ---
 title: ドメイン プロパティの |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain properties
 ms.assetid: a9471562-d6f2-46bf-9872-e0d66ba03150
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 977594493279d52154de3cb5ef7bce56d4d8f985
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ca7f4e44f1d40256e821091609752b48d8f204d0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836841"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963566"
 ---
 # <a name="properties-of-domain-properties"></a>ドメイン プロパティのプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,22 +38,19 @@ A*ドメイン プロパティ*値を保持できるモデル要素の機能で�
   
 |プロパティ|説明|既定値|  
 |--------------|-----------------|-------------------|  
-|**説明**|生成されたデザイナーのユーザー インターフェイス (UI) についてのドキュメントとして使用される説明。|\<なし >|  
-|**表示名**|生成されたデザイナーで、このドメイン プロパティ向けに表示される名前。 空白および句読点を含むことがあります。たとえば、"Song Title" など。|\<なし >|  
-|**要素名プロバイダー**|これは `Is Element Name` を `true` に設定した場合のみ適用されます。 ドメイン クラスの新しい要素の名前を指定するコードを作成し、既定の動作をオーバーライドすることができます。<br /><br /> DSL プロジェクト内のコード ファイルで、<xref:Microsoft.VisualStudio.Modeling.ElementNameProvider> から派生するクラスを作成します。<br /><br /> 次に、DSL エクスプローラーで、DSL のルートを右クリックし、[外部型の追加] をクリックします。 クラスの名前を入力します。<br /><br /> 再度このドメイン プロパティを選択し、ドロップダウン リストからクラスの名前を選択します。|\<なし >|  
+|**説明**|生成されたデザイナーのユーザー インターフェイス (UI) についてのドキュメントとして使用される説明。|\<none>|  
+|**表示名**|生成されたデザイナーで、このドメイン プロパティ向けに表示される名前。 空白および句読点を含むことがあります。たとえば、"Song Title" など。|\<none>|  
+|**要素名プロバイダー**|これは `Is Element Name` を `true` に設定した場合のみ適用されます。 ドメイン クラスの新しい要素の名前を指定するコードを作成し、既定の動作をオーバーライドすることができます。<br /><br /> DSL プロジェクト内のコード ファイルで、<xref:Microsoft.VisualStudio.Modeling.ElementNameProvider> から派生するクラスを作成します。<br /><br /> 次に、DSL エクスプローラーで、DSL のルートを右クリックし、[外部型の追加] をクリックします。 クラスの名前を入力します。<br /><br /> 再度このドメイン プロパティを選択し、ドロップダウン リストからクラスの名前を選択します。|\<none>|  
 |**ゲッター アクセス修飾子**|ドメイン クラスのアクセスのレベル (`public` または `internal`)。 これはプログラム コードがプロパティをアクセスできる範囲を制御します。|`public`|  
-|**ヘルプ キーワード**|このドメイン プロパティに対して、F1 ヘルプのインデックスを作成するために使用される、オプションのキーワード。|\<なし >|  
+|**ヘルプ キーワード**|このドメイン プロパティに対して、F1 ヘルプのインデックスを作成するために使用される、オプションのキーワード。|\<none>|  
 |**参照可能**|`True` の場合、ドメイン プロパティは、DSL のモデルが開いているときに、プロパティ ウィンドウに表示されます。<br /><br /> `False` の場合、ドメイン プロパティは UI で非表示になります。<br /><br /> 表示しながら、読み取り専用ドメイン プロパティを作成する場合は、設定**読み取り専用**します。|`True`|  
 |**要素名は、します。**|`True` の場合、このドメイン プロパティは、DSL エクスプローラーで、モデル要素の名前として表示されます。<br /><br /> 新しいモデル要素はこのプロパティに対して一意の既定値を受け取ります。 これらの値を生成する方法を制御する場合は、設定**要素名プロバイダー**します。|`False`|  
 |**読み取り専用**|`True` の場合、ドメイン プロパティの値は UI を使用して変更できません。 ただし、プログラムにより設定可能で、[プロパティ] ウィンドウに表示されます。<br /><br /> ユーザーからのドメイン プロパティを非表示にする場合は、設定**参照可能**します。 プログラムでアクセスを制御する場合は、設定**Setter アクセス修飾子**します。|`False`|  
-|**種類**|ドメイン プロパティの種類 (`Normal`、`Calculated`、または `CustomStorage`)。 詳細については、次を参照してください。[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)します。|`Normal`|  
-|**Name**|このドメイン プロパティの名前。 有効な識別子をたとえばあります**songtitle など**します。|\<なし >|  
-|**ノート**|このドメイン プロパティに関連付けられる非公式な注釈。|\<なし >|  
+|**種類**|ドメイン プロパティの種類 (`Normal`、`Calculated`、または `CustomStorage`)。 詳細については、[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)を参照してください。|`Normal`|  
+|**Name**|このドメイン プロパティの名前。 有効な識別子をたとえばあります**songtitle など**します。|\<none>|  
+|**ノート**|このドメイン プロパティに関連付けられる非公式な注釈。|\<none>|  
 |**Setter アクセス修飾子**|Setter 用のアクセス修飾子。 これはプログラム コードがプロパティを設定できる範囲を制御します。|`public`|  
 |**Type**|プロパティの種類。 使用可能な種類の一覧に追加するに DSL エクスプ ローラーで DSL のルートを右クリックし、をクリックして**外部型の追加**します。|`String`|  
   
 ## <a name="see-also"></a>関連項目  
- [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

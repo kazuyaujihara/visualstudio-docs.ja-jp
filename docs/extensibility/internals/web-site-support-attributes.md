@@ -30,7 +30,7 @@ IronPython Studio サンプルには、web サイトのサポートが含まれ�
 public class PythonProjectPackage : ProjectPackage
 ```
 
- この属性は、またテンプレート フォルダーをポイントするテンプレートのパスを設定します。 テンプレート フォルダーの場所の詳細については、次を参照してください。 [Web サイトのサポート テンプレート](../../extensibility/internals/web-site-support-templates.md)します。
+ この属性は、またテンプレート フォルダーをポイントするテンプレートのパスを設定します。 テンプレート フォルダーの場所の詳細については、[Web サイトのサポート テンプレート](../../extensibility/internals/web-site-support-templates.md)を参照してください。
 
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute
  この属性は、言語のプロジェクトに配置されます。 別のファイルの種類 (プライマリ) (関連) 1 つのファイルの種類を入れ子にする Web サイト プロジェクトのできる、**ソリューション エクスプ ローラー**します。

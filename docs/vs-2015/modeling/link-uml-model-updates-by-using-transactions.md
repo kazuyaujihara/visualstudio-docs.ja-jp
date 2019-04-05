@@ -1,25 +1,22 @@
 ---
 title: トランザクションを使用して UML モデルの更新をリンク |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, transactions
 ms.assetid: a1df6c38-a3d1-4a3f-82bc-c8f363ab916e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb8bb5dfd5238871324b786f120d618d70f14b43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978231"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>トランザクションを使用して UML モデルの更新をリンクする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,6 +112,3 @@ Visual Studio で UML デザイナー向けに拡張機能を定義するとき�
  [UML API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)   
  [モデリング図にメニュー コマンドを定義します。](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

@@ -1,28 +1,23 @@
 ---
 title: '方法: 標準のテキスト マーカーの追加 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
 ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 54dcfc9a1952dc0cd816c2ce7ad83cd8355f0066
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7e771acfa44c1b32dfcc33b2ef1cbcaef879b9f
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779477"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58973884"
 ---
-# <a name="how-to-add-standard-text-markers"></a>方法: 標準のテキスト マーカーの追加
+# <a name="how-to-add-standard-text-markers"></a>方法: 標準のテキスト マーカーを追加します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 次の手順を使用して、提供される既定のテキスト マーカーの種類のいずれかを作成する、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のコア エディター。  
@@ -55,7 +50,6 @@ ms.locfileid: "51779477"
   
 ## <a name="see-also"></a>関連項目  
  [レガシ API を使用したテキスト マーカーの使用](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [方法: エラーのマーカーの実装](../extensibility/how-to-implement-error-markers.md)   
- [方法: カスタム テキスト マーカーの作成](../extensibility/how-to-create-custom-text-markers.md)   
- [方法: テキスト マーカーを使用する](../extensibility/how-to-use-text-markers.md)
-
+ [方法: エラーのマーカーを実装します。](../extensibility/how-to-implement-error-markers.md)   
+ [方法: カスタム テキスト マーカーを作成します。](../extensibility/how-to-create-custom-text-markers.md)   
+ [方法: テキスト マーカーを使用します。](../extensibility/how-to-use-text-markers.md)

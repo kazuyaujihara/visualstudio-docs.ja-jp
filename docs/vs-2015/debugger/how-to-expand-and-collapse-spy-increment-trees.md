@@ -1,27 +1,22 @@
 ---
-title: '方法: spy++ ツリーを閉じたり |Microsoft Docs'
-ms.custom: ''
+title: '方法: 展開し、spy++ ツリーを折りたたむ |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Expanding and Collapsing Spy++ Trees
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ab7b31dcfbaaf7ba101d7dea426fd95bb6f397de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 037d6100c7137784de3896771dd62c766b4505e3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754839"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964194"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>方法: Spy++ ツリーの展開と折りたたみを行う
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,10 +27,10 @@ ms.locfileid: "51754839"
   
 |メニュー コマンド|説明|  
 |------------------|-----------------|  
-|**1 レベルを展開します。**|次のレベルには、現在選択されている項目を展開します。|  
+|**1 レベル展開**|次のレベルには、現在選択されている項目を展開します。|  
 |**ブランチを展開します。**|現在選択されている項目を完全に展開します。|  
-|**[すべて展開] します。**|ウィンドウ内のすべての項目を完全に展開します。|  
-|**折りたたみ**|現在選択されている項目を完全に折りたたみます。|  
+|**すべて展開**|ウィンドウ内のすべての項目を完全に展開します。|  
+|**折りたたむ**|現在選択されている項目を完全に折りたたみます。|  
   
 > [!TIP]
 >  プロセスを展開する場合、プロセスを所有するすべてのスレッドを参照してください。 スレッドを展開する場合、所有するすべてのウィンドウのリストを参照してください。  
@@ -50,6 +45,3 @@ ms.locfileid: "51754839"
  [Spy++ の使用](../debugger/using-spy-increment.md)   
  [Spy++ ビュー](../debugger/spy-increment-views.md)   
  [Spy++ リファレンス](../debugger/spy-increment-reference.md)
-
-
-

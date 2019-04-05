@@ -1,25 +1,22 @@
 ---
 title: WPF と Entity Framework 6 で単純なデータ アプリケーションを作成する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922199"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002698"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF と Entity Framework 6 で単純なデータ アプリケーションを作成します。
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF と Entity Framework 6 を使用して単純なデータ アプリケーションを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -30,9 +27,9 @@ ms.locfileid: "49922199"
 ## <a name="install-and-connect-to-northwind"></a>インストールし、Northwind に接続  
  この例では、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。 機能の他の SQL データベース製品でもその製品の ADO.NET データ プロバイダーは、Entity Framework をサポートしている場合。  
   
-1.  SQL Server 2014 LocalDB Express 32 ビットからをインストールしていない場合、 [SQL Server のエディションのダウンロード ページ](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)します。  
+1.  SQL Server 2014 LocalDB Express 32 ビットからをインストールしていない場合、 [SQL Server のエディションのダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)します。  
   
-2.  次の手順は、ここで、Northwind サンプル データベースをインストール:[サンプル データベースの SQL Server のインストール](../data-tools/install-sql-server-sample-databases.md)します。  
+2.  次の手順は、ここで、Northwind サンプル データベースをインストールします。[SQL Server サンプル データベースをインストール](../data-tools/install-sql-server-sample-databases.md)します。  
   
 3.  [新しい接続を追加](../data-tools/add-new-connections.md)Northwind 用です。  
   
@@ -393,7 +390,7 @@ ms.locfileid: "49922199"
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>移動、追加、更新、および削除するボタンを追加します。  
  Windows フォーム アプリケーションでは、データベース内の行を移動したりする基本的な CRUD 操作を行うのためのボタンを持つ BindingNavigator オブジェクトを取得します。 WPF には、BindingNavigator は示しませんが、簡単に作成できます。 ページのグリッドの一番下の行で水平方向の StackPanel 内のボタンを持つよいですし、ボタンの背後にあるコード内のメソッドにバインドされているコマンドに関連付けられたします。  
   
- コマンド ロジックを 4 つの部分があります: (1)、コマンド、(2)、バインド、(3)、ボタン、および分離コードでは、(4)、コマンド ハンドラー。  
+ これには、コマンド ロジックを 4 つの部分があります。(1)、コマンド、(2)、バインド、(3)、ボタン、および分離コードでは、(4)、コマンド ハンドラー。  
   
 #### <a name="add-commands-bindings-and-buttons-in-xaml"></a>XAML でのコマンド、バインディング、およびボタンを追加します。  
   
@@ -709,4 +706,3 @@ ms.locfileid: "49922199"
   
 ## <a name="see-also"></a>関連項目  
  [.NET 用の visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md) [Entity Framework ドキュメント](https://msdn.microsoft.com/data/ee712907.aspx)
-

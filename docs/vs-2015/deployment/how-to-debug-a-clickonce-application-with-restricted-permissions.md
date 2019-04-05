@@ -1,14 +1,9 @@
 ---
-title: '方法: ClickOnce アプリケーションをデバッグ アクセス許可の制限 |Microsoft Docs'
-ms.custom: ''
+title: '方法: 制限されたアクセス許可を使用して ClickOnce アプリケーションのデバッグ |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: 6991ea91-5253-451b-923d-22273a3d38b1
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d01cf2be1bef794f5aeb74b86d041408fa40ce4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 535ae11811db3117448bf619c0391b852bd65c67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209535"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977367"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>方法 : アクセス許可が制限された ClickOnce アプリケーションをデバッグする
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>方法: アクセス許可が制限された ClickOnce アプリケーションをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 通常、開発用コンピューターは完全信頼アクセス許可で実行するので、ClickOnce アプリケーションのデバッグ時には、エンド ユーザーが制限されたアクセス許可でアプリケーションを実行したときと同じセキュリティ例外は発生しません。  
@@ -67,10 +62,7 @@ ms.locfileid: "49209535"
 6.  **[このアプリケーションが次の URL からダウンロードされたと仮定してデバッグする]** テキスト ボックスに、URL またはネットワーク パスを入力します。  
   
 ## <a name="see-also"></a>関連項目  
- [方法 : ClickOnce アプリケーションのカスタム アクセス許可を設定する](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [方法: ClickOnce アプリケーションのカスタム アクセス許可の設定](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   
  [ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)
-
-
-

@@ -1,14 +1,9 @@
----
+﻿---
 title: RDT_ReadLock の使用法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - RDT_ReadLock
 - visible
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 337fa34bce713f743b8962f41a6889335b54b722
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c818023d50b733a4818c87e67d0b49abde518ad2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817452"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972836"
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock の使用法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,10 +35,8 @@ ms.locfileid: "51817452"
  ユーザーが UI では、ドキュメントを開いたときに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>ドキュメントの所有者を確立する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>フラグを設定する必要があります。 ない場合は<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>所有者が確立されると、その後、ユーザーがクリックしたときに、ドキュメントは保存されません**すべて保存**または IDE を終了します。 かどうか、ドキュメントが開いていない視覚的、メモリ内で変更されていて、ユーザーがシャット ダウン時にドキュメントを保存するように求めまたは保存つまり**すべて保存**を選択した場合、`RDT_ReadLock`は使用できません。 代わりに、使用する必要があります、`RDT_EditLock`を登録し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>ときに、<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER>フラグ。  
   
 ## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock とドキュメントの変更  
-
-前述のフラグは、ドキュメントがユーザーによって表示されている **DocumentWindow** に開かれたときに、ドキュメントの不可視のオープンによって `RDT_EditLock` が生成されることを示しています。 この問題が発生すると、表示されている **DocumentWindow** が閉じられたときに **保存** プロンプトが表示されます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> サービスを使用する `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` 実装は、最初は `RDT_ReadLock` のみが取得されたとき（つまり、情報を解析するためにドキュメントが表示されないように開かれたとき）に機能します。 後で、ドキュメントを変更する必要がある場合は、ロックは弱い `RDT_EditLock` にアップグレードされます。 ユーザーが表示されている **DocumentWindow** でドキュメントを開くと、`CodeModel` の弱い 弱い `RDT_EditLock` は解放されます。
+ 前に説明されているフラグは、ドキュメントの非表示の開始を生成することを示します、`RDT_EditLock`ドキュメントが開かれた場合、ユーザーに表示されている**ドキュメント ウィンドウ**します。 この問題が発生すると、ユーザーがで表示されます。 を**保存**求めるときに、表示可能な**ドキュメント ウィンドウ**が閉じられました。 Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel 実装を使用する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager>のみに最初に、サービスが動作を`RDT_ReadLock`は (つまり、ドキュメントを開いたときにない視覚的情報を解析する) を取得します。 後で、ドキュメントを変更する必要があります、ロックにアップグレード、弱**RDT_EditLock**します。 ユーザーが表示されているでし、ドキュメントを開く場合**ドキュメント ウィンドウ**、`CodeModel`の弱い`RDT_EditLock`解放されます。  
 
 ユーザーが終了した場合、**ドキュメント ウィンドウ**選択**いいえ**、開いているドキュメントを保存するように求められたら、`CodeModel`実装は、ドキュメント内のすべての情報を破棄し、再度開かれます、ディスクの詳細については、ドキュメントに必要な次の時間目に見えない形からドキュメントです。 この動作の細部は、ユーザーが開いたインスタンス、**ドキュメント ウィンドウ**、非表示の開いているドキュメントの変更が閉じるし、選択**いいえ**文書を保存するように求められたらします。 この場合は、ドキュメントがある場合、`RDT_ReadLock`ドキュメントは実際に閉じられましていないおよび文書を保存していないユーザーが選択した場合でもに、変更したドキュメントがメモリを目に見えない形で開いたままです。  
   
  ドキュメントの非表示の開始、弱を使用している場合`RDT_EditLock`、ユーザーが文書がはっきりと他のロックが保持されていないときにそのロックを得られます。 ユーザーが閉じたとき、**ドキュメント ウィンドウ**選択**いいえ**ドキュメントの保存を求められたら、ドキュメント閉じる必要がありますメモリから。 つまり、非表示のクライアントは、この状況の発生を追跡するために RDT イベントをリッスンする必要があります。 ドキュメントが必要になる、次に、ドキュメントを再開する必要があります。
-

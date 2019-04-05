@@ -1,12 +1,9 @@
 ---
 title: UML モデリング プロジェクトおよびダイアグラムの作成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.addnewdiagramdialog
 - vs.teamarch.createnewmodelingprojectdialog
@@ -27,13 +24,13 @@ ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972525"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>UML モデリング プロジェクトおよびダイアグラムを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +129,7 @@ UML モデルは、ソフトウェア システムを理解したり設計した
     > [!NOTE]
     >  モデリング プロジェクトには、という名前のモデル定義フォルダーが含まれている**ModelDefinition**します。  
   
-2.  **プロジェクト** メニューのをクリックして**既存項目の追加**します。  
+2.  **[プロジェクト]** メニューの **[既存項目の追加]** をクリックします。  
   
 3.  **既存項目の追加**ダイアグラム ファイルを検索、ファイルを選択、および順にクリックします ダイアログ ボックスで、**追加**します。  
   
@@ -155,12 +152,9 @@ UML モデルは、ソフトウェア システムを理解したり設計した
   
 |**問題点**|**エラーの原因**|**解決策**|  
 |---------------|----------------|--------------------|  
-|モデリング プロジェクトを開くことも、ソリューションに読み込むこともできません。<br /><br /> 次のメッセージが表示されます。<br /><br /> "ソリューション内の 1 つ以上のプロジェクトが正しく読み込まれていません。 詳細については、出力ウィンドウを確認してください。"<br /><br /> [出力] ウィンドウに次のメッセージが表示されます。<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: エラー: 認識されない Guid 形式です"。|モデリング プロジェクトに、同じソリューション内にある同じ名前のプロジェクトへの参照が含まれています。<br /><br /> たとえば、同じソリューション内にある同じ名前のプロジェクトにレイヤーがリンクされています。|テキスト エディターを使用してモデリング プロジェクト ファイルを開き、参照を削除して、モデリング プロジェクトを再度開きます。<br /><br /> この問題を回避するには、同じ名前のプロジェクトへの参照を追加しないようにします。 プロジェクト名が一意であることを確認します。|  
+|モデリング プロジェクトを開くことも、ソリューションに読み込むこともできません。<br /><br /> 次のメッセージが表示されます。<br /><br /> "ソリューション内の 1 つ以上のプロジェクトが正しく読み込まれていません。 詳細については、出力ウィンドウを確認してください。"<br /><br /> [出力] ウィンドウに次のメッセージが表示されます。<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: エラー。認識されない Guid 形式です。"|モデリング プロジェクトに、同じソリューション内にある同じ名前のプロジェクトへの参照が含まれています。<br /><br /> たとえば、同じソリューション内にある同じ名前のプロジェクトにレイヤーがリンクされています。|テキスト エディターを使用してモデリング プロジェクト ファイルを開き、参照を削除して、モデリング プロジェクトを再度開きます。<br /><br /> この問題を回避するには、同じ名前のプロジェクトへの参照を追加しないようにします。 プロジェクト名が一意であることを確認します。|  
 |他のモデリング プロジェクト、またはソリューション内の他の場所に図を追加、コピー、ドラッグすると、その図の要素がなくなります。<br /><br /> または<br /><br /> 図を開こうとすると、次のメッセージが表示されます。<br /><br /> -"一部のシェイプまたはコネクタを図には不足しているその定義は、このプロジェクトには存在しないためです。 図を閉じている間に定義がモデルから削除されたか、これらの定義を含まない別のプロジェクトに図がコピーされました。"<br /><br /> または<br /><br /> -「このドキュメントは別のプロジェクトで開かれています」。|モデリング プロジェクトから別のモデリング プロジェクトまたはソリューション内の別の場所に、図のファイルが追加、ドラッグ、またはコピーされました。|図のファイルをコピーするには、新しい図を作成し、コピー元の図から新しい図に要素をコピーします。|  
   
 ## <a name="see-also"></a>関連項目  
  [UML モデルおよびダイアグラムを編集します。](../modeling/edit-uml-models-and-diagrams.md)   
  [モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)
-
-
-

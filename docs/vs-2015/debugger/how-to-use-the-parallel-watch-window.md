@@ -1,14 +1,9 @@
 ---
 title: '方法: 並列ウォッチ ウィンドウを使用して、|Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelwatch
 dev_langs:
@@ -22,18 +17,18 @@ ms.assetid: 28004d9b-420c-48f7-b80e-ab1519802558
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43783ad2b7d0f08aace55ff3b974d64301a38db2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baa5381013e955dcf4b8e301bba52a28e39bfc18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753127"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975027"
 ---
-# <a name="how-to-use-the-parallel-watch-window"></a>方法: 並列ウォッチ ウィンドウを使用する
+# <a name="how-to-use-the-parallel-watch-window"></a>方法: 並列ウォッチ ウィンドウを使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[並列ウォッチ] ウィンドウには、複数のスレッドで 1 つの式が保持している値を同時に表示できます。 各行は、1 つのアプリケーションで実行中のスレッドを表しますが、スレッドは複数の行に表示される場合があります。 具体的には、各行は関数シグネチャが現在のスタック フレーム上の関数に一致する関数呼び出しを表します。 列内の項目の並べ替え、順序変更、削除、およびグループ化を行うことができます。 スレッドのフラグ設定、フラグ解除、凍結 (中断)、および凍結解除 (再開) を実行できます。 次の列が表示されます、**並列ウォッチ**ウィンドウ。  
+[並列ウォッチ] ウィンドウには、複数のスレッドで 1 つの式が保持している値を同時に表示できます。 各行は、1 つのアプリケーションで実行中のスレッドを表しますが、スレッドは複数の行に表示される場合があります。 具体的には、各行は関数シグネチャが現在のスタック フレーム上の関数に一致する関数呼び出しを表します。 列内の項目の並べ替え、順序変更、削除、およびグループ化を行うことができます。 スレッドのフラグ設定、フラグ解除、凍結 (中断)、および凍結解除 (再開) を実行できます。 **[並列ウォッチ]** ウィンドウには次の列が表示されます。  
   
 - フラグ列。特に注意する必要のあるスレッドをマークできます。  
   
@@ -54,7 +49,7 @@ ms.locfileid: "51753127"
   
 2.  メニュー バーで、**[デバッグ]**、**[デバッグ開始]** の順に選択します。 アプリケーションがブレークポイントに到達するを待機します。  
   
-3.  メニュー バーで、**デバッグ**、 **Windows**、**並列ウォッチ**、ウォッチ ウィンドウを選択します。 最大で 4 つのウィンドウを開くことができます。  
+3.  メニュー バーで、**[デバッグ]**、**[ウィンドウ]**、**[並列ウォッチ]** の順にクリックして、ウォッチ ウィンドウを選択します。 最大で 4 つのウィンドウを開くことができます。  
   
 ### <a name="to-add-a-watch-expression"></a>ウォッチ式を追加するには  
   
@@ -70,7 +65,7 @@ ms.locfileid: "51753127"
   
 ### <a name="to-switch-frames"></a>フレームを切り替えるには  
   
--   フレーム列をダブルクリックします  (キーボード: 行を選択し、Enter キーを押します)。  
+-   フレーム列をダブルクリックします  (キーボード:行を選択し、Enter キーを押します。)  
   
 ### <a name="to-sort-a-column"></a>列を並べ替えるには  
   
@@ -78,24 +73,21 @@ ms.locfileid: "51753127"
   
 ### <a name="to-group-threads"></a>スレッドをグループ化するには  
   
--   並列ウォッチ ウィンドウのショートカット メニューを開き、選択**Group By**、適切なサブメニュー項目を選択します。  
+-   [並列ウォッチ] ウィンドウのショートカット メニューを開いて **[グループ化]** をクリックし、適切なサブメニュー項目を選択します。  
   
 ### <a name="to-freeze-or-thaw-threads"></a>スレッドを凍結/凍結解除するには  
   
--   行のショートカット メニューを開いて**固定**または**凍結解除**します。  
+-   行のショートカット メニューを開き、**[凍結]** または **[凍結解除]** をクリックします。  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>[並列ウォッチ] ウィンドウ内のデータをエクスポートするには  
   
--   選択、 **Excel で開く**ボタンをクリックし、 **Excel で開く**または**CSV にエクスポート**します。  
+-   **[Excel で開く]** ボタンを選択して、**[Excel で開く]** または **[CSV にエクスポート]** を選択します。  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>ブール式でフィルター処理するには  
   
--   ブール式を入力してください、**ブール式でフィルター**ボックス。 デバッガーは、スレッド コンテキストの式を評価します。 値が `true` である行だけが表示されます。  
+-   **[ブール式でフィルター]** ボックスにブール式を入力します。 デバッガーは、スレッド コンテキストの式を評価します。 値が `true` である行だけが表示されます。  
   
 ## <a name="see-also"></a>関連項目  
- [マルチ スレッド アプリケーションをデバッグします。](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [方法: GPU スレッド ウィンドウを使用](../debugger/how-to-use-the-gpu-threads-window.md)   
+ [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [方法: [GPU スレッド] ウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)   
  [チュートリアル: C++ AMP アプリケーションのデバッグ](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
-
-
-

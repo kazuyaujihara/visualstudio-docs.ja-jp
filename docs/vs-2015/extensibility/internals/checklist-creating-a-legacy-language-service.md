@@ -1,29 +1,24 @@
 ---
 title: 'チェックリスト: 従来の言語サービスを作成する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782987"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963142"
 ---
-# <a name="checklist-creating-a-legacy-language-service"></a>チェック リスト: 従来の言語サービスの作成
+# <a name="checklist-creating-a-legacy-language-service"></a>チェックリスト: 従来の言語サービスの作成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 基本的な手順の言語サービスを作成するために行う必要がありますが、次のチェックリストにまとめたものです、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]のコア エディター。 言語サービスに統合する[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッグの式エバリュエーターを作成する必要があります。 詳細については、次を参照してください。 [CLR の式エバリュエーターの書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)で、 [Visual Studio デバッガーの拡張性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)します。  
@@ -116,7 +111,7 @@ ms.locfileid: "51782987"
   
 - アウトライン  
   
-   アウトライン表示をサポートするためのいくつかのオプションがあります。 たとえば、サポート、**定義に折りたたむ**コマンド、エディター コントロールのアウトライン領域、またはクライアントによって制御された領域をサポートします。 詳細については、次を参照してください。[方法: 従来の言語サービスでのアウトラインの拡張サポートを提供](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)します。  
+   アウトライン表示をサポートするためのいくつかのオプションがあります。 たとえば、サポート、**定義に折りたたむ**コマンド、エディター コントロールのアウトライン領域、またはクライアントによって制御された領域をサポートします。 詳細については、「[方法 :従来の言語サービスでのアウトラインの拡張のサポートを提供](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)します。  
   
 - 言語サービスの登録  
   
@@ -133,4 +128,3 @@ ms.locfileid: "51782987"
 ## <a name="see-also"></a>関連項目  
  [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [CLR 式エバリュエーターの書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

@@ -1,14 +1,9 @@
 ---
-title: ': 演算子のオーバー ロードが 2225 代替 |Microsoft Docs'
-ms.custom: ''
+title: CA2225:演算子のオーバー ロード名前付けされた代替が |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
 - CA2225
@@ -20,21 +15,21 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 427bd7756e1bf7a9e1b7056a84dd90c29bf504fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860254"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976049"
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: 演算子オーバーロードには名前付けされた代替が存在します
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225:演算子オーバーロードには名前付けされた代替が存在します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
-|カテゴリ|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
@@ -49,20 +44,20 @@ ms.locfileid: "49860254"
 |---------|------------------|-----------|--------------------|
 |+ (バイナリ)|+|+ (バイナリ)|追加|
 |+=|+=|+=|追加|
-|&|および|&|BitwiseAnd|
+|&|と|&|BitwiseAnd|
 |&=|および =|&=|BitwiseAnd|
 |&#124;|または|&#124;|BitwiseOr|
 |&#124;=|または =|&#124;=|BitwiseOr|
 |--|N/A|--|Decrement|
 |/|/|/|除算|
 |/=|/=|/=|除算|
-|==|=|==|次の値に等しい|
+|==|=|==|Equals|
 |^|Xor|^|Xor|
 |^=|Xor =|^=|Xor|
 |>|>|>|比較|
 |>=|>=|>=|比較|
 |++|N/A|++|インクリメント|
-|<>|!=|次の値に等しい|
+|<>|!=|Equals|
 |<<|<<|<<|プロパティ|
 |<<=|<<=|<<=|プロパティ|
 |<|<|<|比較|
@@ -72,8 +67,8 @@ ms.locfileid: "49860254"
 |!|N/A|!|LogicalNot|
 |%|Mod|%|Mod または残りの部分|
 |%=|N/A|%=|Mod|
-|* (バイナリ)|*|*|乗算記号|
-|*=|N/A|*=|乗算記号|
+|* (バイナリ)|*|*|乗算|
+|*=|N/A|*=|乗算|
 |~|Not|~|OnesComplement|
 |>>|>>|>>|プロパティ|
 =|N/A|>>=|プロパティ|
@@ -102,15 +97,12 @@ ms.locfileid: "49860254"
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorOverloadsHaveNamedAlternates/cs/FxCop.Usage.OperatorOverloadsHaveNamedAlternates.cs#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA1046: 参照型で、演算子 equals をオーバーロードしないでください](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046:参照型で、演算子 equals をオーバー ロードしません。](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2226: 演算子は対称型オーバーロードを含まなければなりません](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226:演算子は対称型オーバー ロードである必要があります。](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: オーバーロードする演算子 equals で Equals をオーバーライドします](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224:オーバー ロードする演算子 equals で equals をオーバーライド](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218: オーバーライドする Equals で GetHashCode をオーバーライドします](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218:Equals をオーバーライドの GetHashCode をオーバーライドします。](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231: ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-
-
-

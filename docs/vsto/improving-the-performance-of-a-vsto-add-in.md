@@ -28,7 +28,7 @@ ms.locfileid: "54867469"
 
 - [負荷の高い操作を単独の実行スレッドで実行](#Perform)。
 
-  Outlook VSTO アドインを最適化する方法の詳細については、次を参照してください。[を有効になっている VSTO アドインのパフォーマンス条件](http://go.microsoft.com/fwlink/?LinkID=266503)します。
+  Outlook VSTO アドインを最適化する方法の詳細については、[を有効になっている VSTO アドインのパフォーマンス条件](http://go.microsoft.com/fwlink/?LinkID=266503)を参照してください。
 
 ##  <a name="Load"></a> 必要に応じた VSTO アドインの読み込み
  次の状況でのみ読み込まれるように VSTO アドインを構成できます。
@@ -53,7 +53,7 @@ ms.locfileid: "54867469"
 
 1.  レジストリで、設定、`LoadBehavior`のエントリ、 **_ルート_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _アドイン ID_** キー **0x10**します。
 
-     詳細については、次を参照してください。 [VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)します。
+     詳細については、[VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)を参照してください。
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>ソリューションのデバッグ中に必要に応じて VSTO アドインを読み込むようにソリューションを構成するには
 
@@ -95,7 +95,7 @@ ms.locfileid: "54867469"
   > [!NOTE]
   >  このアプローチは、ユーザーのコンピューター上のセキュリティで保護された場所に、VSTO アドインを展開する場合は必要ありません。
 
-  詳細については、次を参照してください。 [Windows インストーラーを使用して Office ソリューションを配置](../vsto/deploying-an-office-solution-by-using-windows-installer.md)します。
+  詳細については、[Windows インストーラーを使用して Office ソリューションを配置](../vsto/deploying-an-office-solution-by-using-windows-installer.md)を参照してください。
 
 ##  <a name="Bypass"></a> リボン リフレクションをバイパスします。
  使用してソリューションをビルドする場合[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]ソリューションを展開するときに、ユーザーが、Visual Studio 2010 Tools for Office ランタイムの最新バージョンをインストールがあることを確認します。 リボンのカスタマイズを検索するアセンブリをソリューションに、そのランタイムの以前のバージョンが反映されます。 このプロセスを実行すると、VSTO アドインの読み込み速度がさらに低下する可能性があります。
@@ -108,7 +108,7 @@ ms.locfileid: "54867469"
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]
 
 ##  <a name="Perform"></a> 個別の実行スレッドで高価な操作を実行します。
- 時間を要するタスク (長時間実行されるタスク、データベース接続、または他の種類のネットワークの呼び出しなど) を単独のスレッドで実行することを検討してください。 詳細については、次を参照してください。[のスレッドの Office でサポート](../vsto/threading-support-in-office.md)します。
+ 時間を要するタスク (長時間実行されるタスク、データベース接続、または他の種類のネットワークの呼び出しなど) を単独のスレッドで実行することを検討してください。 詳細については、[のスレッドの Office でサポート](../vsto/threading-support-in-office.md)を参照してください。
 
 > [!NOTE]
 >  Office オブジェクト モデルを呼び出すすべてのコードは、メイン スレッドで実行する必要があります。

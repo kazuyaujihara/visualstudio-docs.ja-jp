@@ -1,8 +1,8 @@
 ---
-title: Azure のコマンド ライン ビルド |Microsoft Docs
+title: Azure のコマンド ライン ビルド | Microsoft Docs
 description: Azure のコマンド ライン ビルド
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,27 +11,27 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: fce752d91ebaa765e18efef117a3b6efe750119c
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: HT
+ms.openlocfilehash: 8c96713a06c66fe34e34417e9e8595ba07e50485
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51002939"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974189"
 ---
-# <a name="building-azure-projects-from-the-command-line"></a>コマンドラインからの Azure プロジェクトのビルド
-Microsoft Build Engine (MSBuild) を使用して、Visual Studio がインストールされていないビルド ラボ環境で製品を構築できます。 MSBuild の拡張可能な Microsoft によって完全にサポートされているプロジェクト ファイルの XML 形式を使用します。 MSBuild ファイル形式を使用して記述できます項目のために必要な 1 つまたは複数のプラットフォームや構成用にビルドされました。
+# <a name="building-azure-projects-from-the-command-line"></a>コマンド ラインからの Azure プロジェクトのビルド
+Microsoft Build Engine (MSBuild) を使用すると、Visual Studio がインストールされていないビルド ラボ環境で製品のビルドを構築できます。 MSBuild は、拡張可能で Microsoft が完全にサポートしている XML 形式をプロジェクト ファイルに使用します。 MSBuild ファイル形式を使用すると、1 つまたは複数のプラットフォームや構成でビルドが必要な項目を記述できます。
 
-、コマンドラインで MSBuild を実行することもでき、このトピックでは、その方法を説明します。 コマンドラインでプロパティを設定して、プロジェクトの特定の構成を構築できます。 同様に、MSBuild でビルドするターゲットを定義することもできます。 コマンド ライン パラメーターおよび MSBuild の詳細については、[MSBuild コマンド ライン リファレンス](https://msdn.microsoft.com/library/ms164311.aspx)を参照してください。
+MSBuild はコマンド ラインで実行することもできます。このトピックでは、その方法について説明します。 コマンド ラインでプロパティを設定すると、プロジェクトの特定の構成を作成できます。 同様に、MSBuild がビルドするターゲットを定義することもできます。 コマンド ライン パラメーターおよび MSBuild の詳細については、「[MSBuild Command Line Reference (MSBuild コマンド ライン リファレンス)](https://msdn.microsoft.com/library/ms164311.aspx)」を参照してください。
 
 ## <a name="msbuild-parameters"></a>MSBuild パラメーター
-パッケージを作成する最も簡単な方法が MSBuild を実行するには、`/t:Publish`オプション。 既定では、このディレクトリが作成されます、プロジェクトのルート フォルダーなど`<ProjectDirectory>\bin\Configuration\app.publish\`します。 Azure プロジェクトをビルドすると 2 つのファイルが生成されます。 パッケージ ファイル自体と付随する構成ファイル。
+パッケージを作成する最も簡単な方法は、 `/t:Publish` オプションを指定して MSBuild を実行することです。 既定では、プロジェクトのルート フォルダーに対して ディレクトリが作成されます (たとえば、`<ProjectDirectory>\bin\Configuration\app.publish\`)。 Azure プロジェクトをビルドすると、パッケージ ファイルとそれに対応する構成ファイルの 2 つのファイルが生成されます。
 
 * パッケージ ファイル (`project.cspkg`)
 * 構成ファイル (`ServiceConfiguration.TargetProfile.cscfg`)
 
-既定では、各 Azure プロジェクトには、ローカル (デバッグ) ビルド用の 1 つのサービス構成ファイルとクラウド (ステージングまたは運用) ビルドが含まれています。 ただし、追加したり、必要に応じてサービス構成ファイルを削除できます。 Visual Studio 内でパッケージをビルドするときに、パッケージに含めるサービス構成ファイルを指定を求められます。 MSBuild を使用してパッケージをビルドするときに、既定では、ローカル サービス構成ファイルが含まれています。 別のサービス構成ファイルを含めるには設定、 `TargetProfile` MSBuild コマンドのプロパティ (`MSBuild /t:Publish /p:TargetProfile=ProfileName`)。
+既定では、各 Azure プロジェクトにはローカル (デバッグ) ビルド用に 1 つ、クラウド (ステージングまたは運用) ビルド用に 1 つのサービス構成ファイルが含まれています。 サービス構成ファイルは必要に応じて追加または削除できます。 Visual Studio 内でパッケージをビルドするときは、パッケージに含めるサービス構成ファイルを指定するよう求められます。 MSBuild を使用してパッケージをビルドする場合、既定でローカル サービス構成ファイルが含められます。 別のサービス構成ファイルを含めるには、MSBuild コマンドの `TargetProfile` プロパティ を設定します (`MSBuild /t:Publish /p:TargetProfile=ProfileName`)。
 
-格納されたパッケージと構成ファイルの別のディレクトリを使用する場合は、パスを設定を使用して、`/p:PublishDir=Directory\`オプションで、末尾にバック スラッシュ区切り記号。
+パッケージと構成ファイルの格納に別のディレクトリを使用する場合は、`/p:PublishDir=Directory\` オプションを使用してパスを設定します。その際、末尾に円記号の区切り記号を含めます。
 
 ## <a name="next-steps"></a>次の手順
-パッケージをビルドすると後、は、Azure にデプロイすることができます。
+パッケージは、ビルド後に Azure にデプロイできます。

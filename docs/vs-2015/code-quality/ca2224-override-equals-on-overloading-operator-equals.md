@@ -1,14 +1,9 @@
 ---
-title: '2224: オーバー ロードする演算子 equals で equals をオーバーライド |Microsoft Docs'
-ms.custom: ''
+title: CA2224:オーバー ロードする演算子 equals で equals をオーバーライド |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2224
 - OverrideEqualsOnOverloadingOperatorEquals
@@ -21,14 +16,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 66f4b4bcc7c2c1d359f5d8fa91227fb51a27adc4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4c16ed5858f18456af59c4cc26f2e0d56e6006a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815235"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963712"
 ---
-# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: オーバーロードする演算子 equals で Equals をオーバーライドします
+# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224:オーバーロードする演算子 equals で Equals をオーバーライドします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -118,15 +113,12 @@ ms.locfileid: "49815235"
  [!code-csharp[FxCop.Usage.OverrideEqualsStructFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsStructFixed/cs/FxCop.Usage.OverrideEqualsStructFixed.cs#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA1046: 参照型で、演算子 equals をオーバーロードしないでください](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046:参照型で、演算子 equals をオーバー ロードしません。](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: 演算子オーバーロードには名前付けされた代替が存在します](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225:演算子のオーバー ロード名前付けされた代替](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226: 演算子は対称型オーバーロードを含まなければなりません](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226:演算子は対称型オーバー ロードである必要があります。](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2218: オーバーライドする Equals で GetHashCode をオーバーライドします](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218:Equals をオーバーライドの GetHashCode をオーバーライドします。](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231: ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-
-
-

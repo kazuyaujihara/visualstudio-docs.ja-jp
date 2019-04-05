@@ -1,12 +1,9 @@
 ---
 title: クラス ダイアグラムの uml 属性のプロパティ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.attribute.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: ba01e064-7424-4e72-98fa-42fa1c30e153
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0129242593596ea7e3875db2a748045c50863c4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817361"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964106"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>UML クラス図の属性のプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +42,7 @@ UML クラス図では、クラスとインターフェイスに *属性* を追
 
  型を持たない属性の場合、`: TypeName` は省略されます。  
 
- `[*]` は、多重度を表します。 複数要素の接続性が 1 の場合は省略されます。  
+ `[*]` は、複数要素の接続性を表します。 多重度が 1 の場合は省略されます。  
 
 ## <a name="properties"></a>プロパティ  
  UML クラス図のクラスまたはインターフェイスの属性のプロパティを次の表に示します。  
@@ -55,7 +52,7 @@ UML クラス図では、クラスとインターフェイスに *属性* を追
  属性のプロパティを表示するには、属性を右クリックし、 **[プロパティ]** をクリックします。  
 
 
-|   **Property**    | **既定値**  |                                                                                                                                                                                                         説明                                                                                                                                                                                                          |
+|   **Property**    | **Default**  |                                                                                                                                                                                                         説明                                                                                                                                                                                                          |
 |-------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **既定値** |   (空)    |                                                                                                                                                                               分類子がインスタンス化されるときの属性の値。                                                                                                                                                                                |
 | **読み取り専用**  |    False     |                                                                                                                                                                                    true の場合、属性の値は変更できません。                                                                                                                                                                                    |
@@ -72,11 +69,8 @@ UML クラス図では、クラスとインターフェイスに *属性* を追
 |   **一意では**   |    False     |                                                                                                                                                                true の場合、コレクション内に重複値は存在しません。 **複数要素の接続性** が 1 より大きい場合。                                                                                                                                                                |
 
 ## <a name="see-also"></a>関連項目  
- [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)   
+ [UML クラス図: 参照](../modeling/uml-class-diagrams-reference.md)   
  [UML クラス ダイアグラムで型のプロパティ](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [UML クラス図の操作のプロパティ](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)   
  [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

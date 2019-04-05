@@ -1,26 +1,21 @@
 ---
 title: 作成します。Vsct ファイル |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 50dc50aee377a4685527e57dc2af5d9946639946
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bf3d9acd493cd10a8d014b4479684a0107cb8740
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772171"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59002319"
 ---
 # <a name="authoring-vsct-files"></a>作成します。Vsct ファイル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,14 +25,14 @@ ms.locfileid: "51772171"
  新しいプロジェクトの場合、メニュー コマンド、ツール ウィンドウ、またはカスタム エディターの必須の要素が既に選択内容に応じて .vsct ファイルを生成するためには、Visual Studio パッケージ テンプレートを使用することをお勧めします。 VSPackage の要件を満たすには、この .vsct ファイルを変更することができます。 .Vsct ファイルを変更する方法の詳細については、例を参照してください。[拡張メニューとコマンド](../../extensibility/extending-menus-and-commands.md)します。  
   
 ## <a name="authoring-the-file"></a>ファイルの作成  
- 次のフェーズで .vsct ファイルを作成します。 ファイルとリソースの構造を作成、UI 要素を宣言、IDE では、UI 要素を配置、および任意の特殊な動作を追加します。  
+ 次のフェーズで .vsct ファイルを作成します。ファイルとリソースの構造を作成、UI 要素を宣言、IDE では、UI 要素を配置、および任意の特殊な動作を追加します。  
   
 ### <a name="file-structure"></a>ファイルの構造  
  .Vsct ファイルの基本的な構造は、 [CommandTable](../../extensibility/commandtable-element.md)ルート要素を含む、[コマンド](../../extensibility/commands-element.md)要素と[シンボル](../../extensibility/symbols-element.md)要素。  
   
 ##### <a name="to-create-the-file-structure"></a>ファイル構造を作成するには  
   
-1.  次の手順に従って、プロジェクトに .vsct ファイルを追加[方法: を作成します。Vsct ファイル](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)します。  
+1.  次の手順に従って、プロジェクトに .vsct ファイルを追加[方法。作成します。Vsct ファイル](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)します。  
   
 2.  必要な名前空間を追加、`CommandTable`要素は、次の例に示すようにします。  
   
@@ -244,4 +239,3 @@ ms.locfileid: "51772171"
  [拡張メニューとコマンド](../../extensibility/extending-menus-and-commands.md)   
  [Visual Studio コマンド テーブル (します。Vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML スキーマ リファレンス](../../extensibility/vsct-xml-schema-reference.md)
-

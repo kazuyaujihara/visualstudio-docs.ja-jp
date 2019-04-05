@@ -47,7 +47,7 @@ Dispose が非同期に呼び出す必要があります、ワークスペース
 
 ## <a name="workspace-settings"></a>ワークスペースの設定
 
-ワークスペースが、<xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager>をワークスペースに単純ながらも強力な制御サービス。 設定の基本的な概要については、次を参照してください。[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)します。
+ワークスペースが、<xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager>をワークスペースに単純ながらも強力な制御サービス。 設定の基本的な概要については、[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)を参照してください。
 
 ほとんどの設定`SettingsType`型は _.json_ファイルなど、 _VSWorkspaceSettings.json_と_tasks.vs.json_します。
 

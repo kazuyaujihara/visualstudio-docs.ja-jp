@@ -1,24 +1,19 @@
 ---
 title: 要素 (VSIX 言語パックのスキーマ) のライセンス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b390c9d390a23a8a5030d06acdb0f2470a946fde
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a3a46e772849646a82d70ce9a68491d0b388b6c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740325"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964242"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>ライセンス要素 (VSIX 言語パックのスキーマ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,5 +65,4 @@ ms.locfileid: "51740325"
 ## <a name="see-also"></a>関連項目  
  [VSX 言語パックのスキーマ リファレンス](../extensibility/vsx-language-pack-schema-reference.md)   
  [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)   
- [VSIX 拡張機能スキーマ 1.0 リファレンス](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-
+ [VSIX 拡張機能スキーマ 1.0 リファレンス](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

@@ -1,25 +1,22 @@
 ---
 title: UML モデル内を移動 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727766"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974241"
 ---
 # <a name="navigate-the-uml-model"></a>UML モデル内を移動する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ ms.locfileid: "51727766"
   
  モデルの要素を削除すると、その要素が参加する関係が自動的に削除され、もう一方の端のプロパティが更新されます。  
   
- UML 仕様で 0..1 の多重度がプロパティに割り当てられている場合、その値は `null` になることがあります。 1 は、.NET プロパティが、型を持つことを意味するよりも大きい最大多重度: `IEnumerable<`*型*`>`します。  
+ UML 仕様で 0..1 の多重度がプロパティに割り当てられている場合、その値は `null` になることがあります。 1 は、.NET プロパティが、型を持つことを意味するよりも大きい最大多重度。`IEnumerable<`*型*`>`します。  
   
  関係の走査の詳細については、次を参照してください。 [UML API を使用したリレーションシップをナビゲート](../modeling/navigate-relationships-with-the-uml-api.md)します。  
   
@@ -61,7 +58,7 @@ ms.locfileid: "51727766"
   
  すべてのモデル要素には、作成時に Owner を指定します。 詳細については、次を参照してください。[で UML モデル要素および関係を作成する](../modeling/create-elements-and-relationships-in-uml-models.md)します。  
   
- ![クラス ダイアグラム: モデル、図、図形、および要素](../modeling/media/uml-mm1.png "UML_MM1")  
+ ![クラス図に示します。モデル、図、図形、および要素](../modeling/media/uml-mm1.png "UML_MM1")  
   
 ## <a name="shapes-and-diagrams"></a>図形と図  
  UML モデル内の要素を図で表示することができます。 IElement のサブタイプをそれぞれ異なる種類の図に表示できます。  
@@ -134,6 +131,3 @@ foreach (IShape<IInterface> in
 ## <a name="see-also"></a>関連項目  
  [UML モデルと図を拡張します。](../modeling/extend-uml-models-and-diagrams.md)   
  [UML API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)
-
-
-

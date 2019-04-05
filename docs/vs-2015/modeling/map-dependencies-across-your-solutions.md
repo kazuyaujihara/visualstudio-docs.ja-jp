@@ -1,11 +1,8 @@
 ---
 title: ソリューション間の依存関係のマップ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740049"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976861"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>ソリューション間の依存関係をマップする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +54,9 @@ ms.locfileid: "51740049"
 ##  <a name="GetStarted"></a> コード マップの概要  
  **コード マップを使用するには、次のいずれかが必要です**。  
   
--   Visual Studio Enterprise: コード エディター、ソリューション エクスプローラー、クラス ビュー、またはオブジェクト ブラウザーからコード マップを生成できます。  
+-   Visual Studio Enterprise:コード エディター、ソリューション エクスプ ローラー、クラス ビュー、またはオブジェクト ブラウザーからコード マップを作成します。  
   
--   Visual Studio Professional: コード マップを開き、制限付きの編集を行い、コード内を移動できます。  
+-   Visual Studio Professional:コード マップを開き、限定的な編集、およびコード内を移動します。  
   
 > [!WARNING]
 >  Visual Studio Professional を使用する他のユーザーと Visual Studio Enterprise で生成されたマップを共有する前に、非表示の項目、展開されたグループ、グループ間リンクなど、マップのすべての項目が表示されることを確認してください。  
@@ -72,7 +69,7 @@ ms.locfileid: "51740049"
   
 - Microsoft Dynamics AX の .NET モジュールから作られた X++ プロジェクトおよびアセンブリ  
   
-  **注:** C# または Visual Basic .NET 以外のプロジェクトの場合、コード マップを開始したり、既存のコード マップに項目を追加したりするためのオプションは少なくなります。 たとえば、C++ プロジェクトのテキスト エディター内のオブジェクトを右クリックすることも、コード マップにそのオブジェクト追加することもできません。 ただし、ソリューション エクスプローラー、クラス ビュー、およびオブジェクト ブラウザーから、個々のコード要素またはファイルをドラッグ アンド ドロップできます。  
+  **注:** プロジェクト c# または Visual Basic .NET 以外の場合は、コード マップを開始または既存のコード マップに項目を追加するためのオプションが減ります。 たとえば、C++ プロジェクトのテキスト エディター内のオブジェクトを右クリックすることも、コード マップにそのオブジェクト追加することもできません。 ただし、ソリューション エクスプローラー、クラス ビュー、およびオブジェクト ブラウザーから、個々のコード要素またはファイルをドラッグ アンド ドロップできます。  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>ソリューション内の全体的な依存関係を表示するには  
   
@@ -289,7 +286,7 @@ ms.locfileid: "51740049"
 ##  <a name="SeeSourceHeader"></a> C および C++ のソース ファイルとヘッダー ファイルの間の依存関係の表示  
  C++ プロジェクトのより完全なマップを作成する場合は、そのプロジェクトに対してブラウザー情報のコンパイラ オプション (**/FR**) を設定します。 「 [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)」を参照してください。 設定されていない場合は、メッセージが表示され、このオプションを設定することが求められます。 **[OK]** を選択した場合、このオプションは現在のマップに対してのみ設定されます。 以後のすべてのマップについて、メッセージを非表示にするように選択できます。 このメッセージを非表示にしても、再び表示されるようにできます。 次のレジストリ キーを `0` に設定するか、削除します。  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider :AutoEnableSbr**  
   
  Visual C++ のプロジェクトを含むソリューションを開くときは、IntelliSense データベースの更新に時間がかかる場合があります。 この間は、IntelliSense データベースの更新が終了するまで、ヘッダー (.h または `#include`) ファイルのコード マップを生成できない場合があります。 更新の進行状況は、Visual Studio のステータス バーで監視できます。 IntelliSense の特定の設定が無効になっているために表示されるメッセージまたは問題を解決するには、「 [C および C++ コードのマップのトラブルシューティング](#Troubleshooting)」を参照してください。  
   
@@ -319,7 +316,7 @@ ms.locfileid: "51740049"
 ||プログラム データベース (.pdb) ファイルがビルドされていない可能性があります。<br /><br /> .pdb ファイルには、型、メソッド、ソース ファイル情報などのデバッグ情報が格納されます。|リンカーで **/DEBUG** オプションをオンにします。<br /><br /> 「 [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)」を参照してください。|  
 ||予想される場所で .pdb ファイルを開くことができないか、ファイルが見つかりません。|.pdb ファイルが予想される場所にあることを確認します。|  
 ||デバッグ情報が .pdb ファイルから取り除かれています。|**/PDBSTRIPPED** オプションをリンカーで使用した場合は、代わりに完全な .pdb ファイルを使用します。<br /><br /> 「 [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)」を参照してください。|  
-||呼び出し元が関数ではなく、バイナリ ファイル内のサンクまたはデータ セクション内のポインターです。|呼び出し元がサンクの場合は、`_declspec(dllimport)` を使用してサンクの回避を試みます。<br /><br /> 参照トピック<br /><br /> -   [一般的な規則と制限事項](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [使用して関数呼び出しのインポート](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport、dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
+||呼び出し元が関数ではなく、バイナリ ファイル内のサンクまたはデータ セクション内のポインターです。|呼び出し元がサンクの場合は、 `_declspec(dllimport)` を使用してサンクの回避を試みます。<br /><br /> 参照トピック<br /><br /> -   [一般的な規則と制限事項](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [使用して関数呼び出しのインポート](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ##  <a name="RenderMoreQuickly"></a> コード マップをよりすばやく表示する  
  マップを初めて生成したときに、Visual Studio は、見つかったすべての依存関係のインデックスを作成します。 このプロセスには、特に大規模なソリューションの場合に時間がかかることがありますが、以降のパフォーマンスは向上します。 コードを変更すると、Visual Studio は、更新されたコードのインデックスだけを再作成します。 マップの表示にかかる時間を最小限に抑えたい場合は、次の作業を検討してください。  
@@ -389,6 +386,3 @@ ms.locfileid: "51740049"
 -   [コード マップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [DGML ファイルを編集してコード マップをカスタマイズする](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-

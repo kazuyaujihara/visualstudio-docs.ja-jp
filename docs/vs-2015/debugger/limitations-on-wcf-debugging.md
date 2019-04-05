@@ -82,7 +82,7 @@ WCF サービスのデバッグを開始するには、次の 3 つの方法が�
     ```  
   
 ## <a name="self-hosting"></a>セルフホスト  
- A*自己ホスト型サービス*WCF サービス、WCF サービス ホストを IIS 内で実行していない、または[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]開発サーバーです。 自己ホスト型サービスをデバッグする方法については、次を参照してください。[方法: 自己ホスト型 WCF サービスをデバッグ](../debugger/how-to-debug-a-self-hosted-wcf-service.md)します。  
+ A*自己ホスト型サービス*WCF サービス、WCF サービス ホストを IIS 内で実行していない、または[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]開発サーバーです。 自己ホスト型サービスをデバッグする方法については、[方法: 自己ホスト型 WCF サービスをデバッグ](../debugger/how-to-debug-a-self-hosted-wcf-service.md)を参照してください。  
   
 ## <a name="self-hosting"></a>セルフホスト  
  デバッグを有効にする[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]3.0 または 3.5 アプリケーションでは、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 または 3.5 をインストールする前にする必要がある[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]がインストールされています。 場合[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]する前にインストールされている[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]をデバッグするときにエラーが発生した 3.0 または 3.5 を[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]3.0 または 3.5 アプリケーションです。 エラー メッセージは、「サーバーに自動的にステップ インできません。」です。 この問題を解決する、Windows を使用して、**コントロール パネルの **、**プログラムと機能**を修復する、[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]インストールします。  

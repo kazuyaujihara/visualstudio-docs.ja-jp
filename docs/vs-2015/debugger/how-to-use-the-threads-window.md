@@ -1,14 +1,9 @@
 ---
 title: '方法: [スレッド] ウィンドウを使用して、|Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
 dev_langs:
@@ -28,22 +23,22 @@ ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cc137465e89dd283cb4536965faf54aee44b2e00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963159"
 ---
-# <a name="how-to-use-the-threads-window"></a>方法 : [スレッド] ウィンドウを使用する
+# <a name="how-to-use-the-threads-window"></a>方法: [スレッド] ウィンドウを使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **スレッド**ウィンドウを確認してデバッグしているアプリケーションのスレッドを使用します。  
   
  **スレッド**ウィンドウには、各行が、アプリケーション内のスレッドを表すテーブルが含まれています。 既定では、このテーブルにはアプリケーション内のすべてのスレッドが表示されますが、目的のスレッドのみを表示するように一覧にフィルターをかけることができます。 各列には、さまざまな種類の情報が表示されます。 一部の列は非表示にすることもできます。 すべての列を表示する場合、次の情報が左から右へ表示されます。  
   
--   フラグ列。特に注意する必要のあるスレッドをマークすることができます。 スレッドにフラグを設定する方法については、次を参照してください。[方法: フラグとスレッドのフラグを解除](../debugger/how-to-flag-and-unflag-threads.md)します。  
+-   フラグ列。特に注意する必要のあるスレッドをマークすることができます。 スレッドにフラグを設定する方法については、次を参照してください。[方法。フラグを設定し、スレッドのフラグ解除](../debugger/how-to-flag-and-unflag-threads.md)します。  
   
 -   アクティブ スレッド列。黄色の矢印によってアクティブ スレッドであることが示されます。 矢印のアウトラインは、実行がデバッガーに割り込んだスレッドを示します。  
   
@@ -119,7 +114,7 @@ ms.locfileid: "51791698"
   
 #### <a name="to-search-for-specific-threads"></a>特定のスレッドを検索するには  
   
--   上部のツールバーで、**スレッド**ウィンドウに移動して、**検索**ボックスと いずれか。  
+-   **[スレッド]** ウィンドウの上部にあるツール バーで、**[検索]** ボックスに移動し、次のどちらかの操作を実行します。  
   
     -   検索文字列を入力し、Enter キーを押します。  
   
@@ -127,7 +122,7 @@ ms.locfileid: "51791698"
   
     -   次のドロップダウン リストをクリックして、**検索**ボックスし、前回の検索からの検索文字列を選択します。  
   
--   (省略可能)完全なコール スタックを検索に含めるには、選択**呼び出し履歴の検索**します。  
+-   (省略可能) 呼び出し履歴全体を検索の対象にするには、**[呼び出し履歴の検索]** をクリックします。  
   
 ## <a name="freezing-and-thawing-threads"></a>スレッドの凍結と凍結解除  
  スレッドを凍結すると、利用できるリソースがあっても、そのスレッドの実行は開始されません。  
@@ -143,17 +138,17 @@ ms.locfileid: "51791698"
   
 -   上部のツールバーで、**スレッド**ウィンドウで、をクリックして**スレッドの凍結**または**スレッドの凍結解除**します。  
   
-     このアクションで選択されているスレッドのみに影響、**スレッド**ウィンドウ。  
+     この操作は、**[スレッド]** ウィンドウで選択されているスレッドのみに影響します。  
   
 ## <a name="displaying-flagged-threads"></a>フラグが設定されたスレッドの表示  
- アイコンでマークすることによって、特に注目するスレッドのフラグを設定することができます、**スレッド**ウィンドウ。 詳細については、次を参照してください。[方法: フラグとスレッドのフラグを解除](../debugger/how-to-flag-and-unflag-threads.md)します。 [スレッド] ウィンドウでは、すべてのスレッドを表示するか、フラグが設定されたスレッドのみ表示するかを選択できます。  
+ **[スレッド]** ウィンドウでスレッドをアイコンでマークすることによって、特に注目するスレッドにフラグを設定できます。 詳細については、「[方法 :フラグを設定し、スレッドのフラグ解除](../debugger/how-to-flag-and-unflag-threads.md)します。 [スレッド] ウィンドウでは、すべてのスレッドを表示するか、フラグが設定されたスレッドのみ表示するかを選択できます。  
   
 #### <a name="to-display-only-flagged-threads"></a>フラグが設定されたスレッドのみ表示するには  
   
 -   左上隅にあるフラグ ボタンを選択、**スレッド**ウィンドウ。  
   
 ## <a name="displaying-thread-call-stacks-and-switching-between-frames"></a>スレッドの呼び出し履歴の表示とフレームの切り替え  
- マルチスレッド プログラムでは、各スレッドに専用の呼び出し履歴があります。 **スレッド**ウィンドウがこれらの呼び出し履歴を表示する便利な手段を提供します。  
+ マルチスレッド プログラムでは、各スレッドに専用の呼び出し履歴があります。 **[スレッド]** ウィンドウには、これらの呼び出し履歴を表示する便利な手段が用意されています。  
   
 #### <a name="to-view-the-call-stack-of-a-thread"></a>スレッドの呼び出し履歴を表示するには  
   
@@ -166,8 +161,5 @@ ms.locfileid: "51791698"
 -   上部のツールバーで、**スレッド**ウィンドウで、をクリックして**呼び出し履歴の**または**呼び出し履歴の折りたたみ**します。  
   
 ## <a name="see-also"></a>関連項目  
- [マルチ スレッド アプリケーションをデバッグします。](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [チュートリアル : マルチスレッド アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-multithreaded-application.md)
-
-
-
+ [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [チュートリアル: マルチスレッド アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-multithreaded-application.md)

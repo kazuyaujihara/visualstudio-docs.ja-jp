@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- 上記のコードで、<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>登録、`PersistedWindowPane`と`DynamicWindowPane`ツール ウィンドウが Visual Studio を使用します。 永続化されたツール ウィンドウをドッキングされをタブ付き**ソリューション エクスプ ローラー**と動的のウィンドウで、既定の開始位置とサイズを指定します。 動的なウィンドウが作成された一時的なもので起動時に作成されていないことを示します。 これを書き込みます、`DontForceCreate`値、`ToolWindows`システム レジストリのキー。 詳細については、次を参照してください。[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)します。
+ 上記のコードで、<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>登録、`PersistedWindowPane`と`DynamicWindowPane`ツール ウィンドウが Visual Studio を使用します。 永続化されたツール ウィンドウをドッキングされをタブ付き**ソリューション エクスプ ローラー**と動的のウィンドウで、既定の開始位置とサイズを指定します。 動的なウィンドウが作成された一時的なもので起動時に作成されていないことを示します。 これを書き込みます、`DontForceCreate`値、`ToolWindows`システム レジストリのキー。 詳細については、[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)を参照してください。

@@ -1,12 +1,9 @@
 ---
 title: データのトラブルシューティングの他のリソースへのアクセス エラー |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
 - vbdata.ParameterizeFormDialog_NoDataSource
@@ -232,14 +229,14 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+ms.openlocfilehash: 8a71d18beaf1c77c16479c914a43cdf45793b685
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263024"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974332"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>データ アクセス エラーのトラブルシューティングに関する追加リソース
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -268,8 +265,7 @@ MSDN (Microsoft Developer Network) のパブリック フォーラムでは、�
  [ADO.NET データ プロバイダーのフォーラム](http://go.microsoft.com/fwlink/?LinkId=160182)  
  さまざまな .NET Framework データ プロバイダーに関する質問や一般的な議論のためのフォーラムです。  
   
- SQL Server への接続のトラブルシューティングを行う方法については、[、SQL Server データベース エンジンへの接続のトラブルシューティングを行う方法](http://go.microsoft.com/fwlink/?LinkID=246151)を参照してください。  
+ SQL Server への接続のトラブルシューティングを行う方法については、次を参照してください。 [、SQL Server データベース エンジンへの接続のトラブルシューティングを行う方法](http://go.microsoft.com/fwlink/?LinkID=246151)します。  
   
 ## <a name="see-also"></a>関連項目  
  [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

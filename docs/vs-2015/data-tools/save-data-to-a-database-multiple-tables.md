@@ -46,7 +46,7 @@ ms.locfileid: "50218419"
   
 -   使用してアプリケーションでのデータ ソースの構成の作成と、[データ ソース構成ウィザード](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)します。  
   
--   内の項目のコントロールの設定、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)します。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
+-   内の項目のコントロールの設定、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)します。 詳細については、[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)を参照してください。  
   
 -   項目をドラッグしてデータ バインド コントロールを作成、**データソース**ウィンドウから、フォームにします。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "50218419"
 ## <a name="prerequisites"></a>必須コンポーネント  
  このチュートリアルを完了するための要件は次のとおりです。  
   
--   Northwind サンプル データベースにアクセスします。  詳細については、次を参照してください。[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)します。  
+-   Northwind サンプル データベースにアクセスします。  詳細については、[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)を参照してください。  
   
 ## <a name="create-the-windows-application"></a>Windows アプリケーションを作成します。  
  作成するには、まず、 **Windows アプリケーション**します。 この手順で、省略可能ですが、プロジェクトに名前を割り当てるが名前を付けますが、後で保存することを計画していますので。  
@@ -68,12 +68,12 @@ ms.locfileid: "50218419"
   
 2.  プロジェクトに `UpdateMultipleTablesWalkthrough` という名前を付けます。  
   
-3.  選択**Windows アプリケーション**、し、 **OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
+3.  選択**Windows アプリケーション**、し、 **OK**します。 詳細については、[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)を参照してください。  
   
      **UpdateMultipleTablesWalkthrough**プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。  
   
 ## <a name="create-the-data-source"></a>データ ソースを作成します。  
- この手順では、使用して、Northwind データベースからデータ ソースを作成、**データ ソース構成ウィザード**します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースの設定の詳細については、次を参照してください。[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)します。  
+ この手順では、使用して、Northwind データベースからデータ ソースを作成、**データ ソース構成ウィザード**します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースの設定の詳細については、[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)を参照してください。  
   
 #### <a name="to-create-the-data-source"></a>データ ソースを作成するには  
   
@@ -108,7 +108,7 @@ ms.locfileid: "50218419"
   
 1.  **データソース**ウィンドウで、展開、**顧客**ノード。  
   
-2.  **顧客**ノードの **詳細**のコントロールを変更するコントロール リストから、**顧客**個々 のコントロールをテーブル。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
+2.  **顧客**ノードの **詳細**のコントロールを変更するコントロール リストから、**顧客**個々 のコントロールをテーブル。 詳細については、[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)を参照してください。  
   
 ## <a name="create-the-data-bound-form"></a>データ バインド フォームを作成します。  
  項目をドラッグして、データ バインド コントロールを作成することができます、**データソース**ウィンドウから、フォームにします。  
@@ -130,7 +130,7 @@ ms.locfileid: "50218419"
  データベースを更新するには呼び出すことによって、`Update`のメソッド、**顧客**と**注文**Tableadapter。 既定では、イベント ハンドラーを**保存**のボタン、<xref:System.Windows.Forms.BindingNavigator>データベースに更新を送信するためのフォームのコードに追加されます。 この手順は、正しい順序で更新プログラムを送信するコードを変更します。これにより、参照整合性エラーが発生する可能性がなくなります。 また、Update 呼び出しを try-catch ブロックにラップして、エラー処理も実装します。 アプリケーションの要件に適合するようにコードを変更できます。  
   
 > [!NOTE]
->  わかりやすくするため、このチュートリアルでは、トランザクションは使用しません。ただし、2 つを更新する、またはその他の関連テーブルには、トランザクション内ですべての更新ロジックが含まれます。 トランザクションは、すべての変更がコミットされるまでデータベースに関連するすべての変更が成功したことを保証するプロセスです。 詳細については、次を参照してください。[トランザクションと同時実行](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)します。  
+>  わかりやすくするため、このチュートリアルでは、トランザクションは使用しません。ただし、2 つを更新する、またはその他の関連テーブルには、トランザクション内ですべての更新ロジックが含まれます。 トランザクションは、すべての変更がコミットされるまでデータベースに関連するすべての変更が成功したことを保証するプロセスです。 詳細については、[トランザクションと同時実行](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)を参照してください。  
   
 #### <a name="to-add-update-logic-to-the-application"></a>アプリケーションに更新ロジックを追加するには  
   
@@ -156,9 +156,9 @@ ms.locfileid: "50218419"
 ## <a name="next-steps"></a>次の手順  
  アプリケーションの要件によっては、Windows アプリケーションでデータ バインド フォームを作成後に実行する場合があります。 このチュートリアルで行うことができる拡張には次のものがあります。  
   
--   フォームに検索機能を追加します。 詳細については、次を参照してください。[方法: Windows フォーム アプリケーションにパラメーター化クエリを追加](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416)します。  
+-   フォームに検索機能を追加します。 詳細については、[方法: Windows フォーム アプリケーションにパラメーター化クエリを追加](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416)を参照してください。  
   
--   データ ソースを編集し、データベース オブジェクトの追加または削除を行います。 詳細については、次を参照してください。[方法: データセットを編集する](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3)します。  
+-   データ ソースを編集し、データベース オブジェクトの追加または削除を行います。 詳細については、[方法: データセットを編集する](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [データをデータベースに保存する](../data-tools/save-data-back-to-the-database.md)

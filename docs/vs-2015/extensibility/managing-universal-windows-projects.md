@@ -1,24 +1,19 @@
 ---
 title: ユニバーサル Windows プロジェクトの管理 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c10232b917e8343ace8d1a31fcd3609ecdfb95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783780"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973603"
 ---
 # <a name="managing-universal-windows-projects"></a>ユニバーサル Windows プロジェクトの管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -578,4 +573,3 @@ ms.locfileid: "51783780"
     ```  
   
 13. プロジェクトをビルドして実行します。 実験用インスタンスで c# ユニバーサル プロジェクトを作成に移動、**ツール**メニューをクリックします**呼び出す TestUniversalProject**、一般的な出力ペインのテキストを確認します。 プラットフォーム プロジェクトにファイルの名前を変更した後、両方を表示する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>イベントおよび<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>イベント。 変更した後、ファイルの原因となったなし、変更するには、その他のファイルと、プラットフォーム プロジェクト内の項目への変更を任意の場所に反映取得はありません、ため 1 つしかない各これらのイベント。
-

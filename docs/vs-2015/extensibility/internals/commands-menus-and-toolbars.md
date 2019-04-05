@@ -1,14 +1,9 @@
 ---
 title: コマンド、メニューのおよびツールバー |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - commands [Visual Studio]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5c9641f788951e79efb392927371bb55b49ec294
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 337bc4de9171d2f98bf0be0068b298b7f600b979
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975032"
 ---
 # <a name="commands-menus-and-toolbars"></a>コマンド、メニュー、およびツール バー
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51752584"
   
 - コマンドを作成するときは、コマンド用のイベント ハンドラーも作成する必要があります。 イベント ハンドラーでは、コマンドをいつ表示または有効にするかを決定し、コマンドのテキストを変更し、アクティブ化したときにコマンドが適切に応答する (「ルーティングする」) ようにすることができます。 ほとんどの場合、IDE では <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> インターフェイスを使用してコマンドを処理します。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ではコマンドは階層形式でルーティングし、ローカルの選択に基づいて最も内側のコマンド コンテキストから開始し、グローバルの選択に基づいて最も外側のコンテキストに進みます。 メイン メニューに追加したコマンドは、すぐにスクリプトに利用できます。 詳細については、次を参照してください。 [Menucommand とします。OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)と[コンテキスト オブジェクトの選択](../../extensibility/internals/selection-context-objects.md)します。  
   
-  新しいメニューやツール バーを定義するには、それらを Visual Studio コマンド テーブル (.vsct) ファイルで記述する必要があります。 Visual Studio パッケージ テンプレートでは、このファイルが、テンプレートで選択したすべてのコマンド、ツール バー、エディターをサポートするために必要な要素と共に作成されます。 または、「 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)」で説明されている XML スキーマを使用して、独自の .vsct ファイルを作成することもできます。  
+  新しいメニューやツール バーを定義するには、それらを Visual Studio コマンド テーブル (.vsct) ファイルで記述する必要があります。 Visual Studio パッケージ テンプレートでは、このファイルが、テンプレートで選択したすべてのコマンド、ツール バー、エディターをサポートするために必要な要素と共に作成されます。 または、独自の .vsct ファイルを記述する、ここで説明されている xml スキーマを使用しています。[VSCT XML スキーマ リファレンス](../../extensibility/vsct-xml-schema-reference.md)します。  
   
   .Vsct ファイルの使用の詳細については、次を参照してください。 [Visual Studio Command Table (します。Vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。  
   
@@ -69,4 +64,3 @@ ms.locfileid: "51752584"
 ## <a name="related-sections"></a>関連項目  
  [Vspackage のコマンド ルーティング](../../extensibility/internals/command-routing-in-vspackages.md)  
  Vspackage でのコマンド ルーティングについて説明します。
-

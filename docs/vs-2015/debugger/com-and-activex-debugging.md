@@ -1,14 +1,9 @@
 ---
 title: COM および ActiveX のデバッグ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1c71aa59e62d9ac8530f34f42e15737a52b0fad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ec2230511b9a058f1c35ce0c34dbe93a69317f4f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972889"
 ---
 # <a name="com-and-activex-debugging"></a>COM および ActiveX のデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "51771500"
  [COM サーバーおよび COM コンテナーのデバッグ](../debugger/com-server-and-container-debugging.md)  
  COM アプリケーションをデバッグするときに特に考慮が必要な事項を説明します。 同じソリューション内の 2 つのプロジェクトを使った COM サーバーおよびコンテナーのデバッグ、プロセス間をまたぐ呼び出しのトレース、コールバック関数でのブレークポイントの設定、コンテナーとサーバー間のステップ実行などの問題を扱います。  
   
- [方法 : ActiveX コントロールをデバッグする](../debugger/how-to-debug-an-activex-control.md)  
+ [方法: ActiveX コントロールをデバッグする](../debugger/how-to-debug-an-activex-control.md)  
  ActiveX コントロールのデバッグについて説明します。 デバッグ セッションでコンテナーを指定して ActiveX コントロール内のコードの実行状況を見る方法、データ連結 ActiveX コントロールのデバッグ、特定のコンテナーのシミュレート、コンテナーのコードのステップ実行などを扱います。  
   
  [COM 用のデバッグ ツール](../debugger/com-debugging-tools.md)  
@@ -58,6 +53,3 @@ ms.locfileid: "51771500"
  [COM の概要](http://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
  [ActiveX コントロール](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
  [SDI サーバー アプリケーション](../debugger/sdi-server-applications.md)
-
-
-

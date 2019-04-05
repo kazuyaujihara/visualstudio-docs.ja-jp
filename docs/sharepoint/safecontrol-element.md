@@ -40,7 +40,7 @@ ms.locfileid: "58324566"
 
 |属性|説明|
 |---------------|-----------------|
-|**Assembly**|省略可能な**xs:string**属性。<br /><br /> ASPX コントロールまたは Web パーツが定義されているアセンブリの名前。 既定では、この属性を使用して、 **$SharePoint.Project.AssemblyFullName$** アセンブリ名の置き換え可能パラメーター。 詳細については、次を参照してください。[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)します。|
+|**Assembly**|省略可能な**xs:string**属性。<br /><br /> ASPX コントロールまたは Web パーツが定義されているアセンブリの名前。 既定では、この属性を使用して、 **$SharePoint.Project.AssemblyFullName$** アセンブリ名の置き換え可能パラメーター。 詳細については、[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)を参照してください。|
 |**IsSafe**|省略可能な**xs:boolean**属性。<br /><br /> ASPX コントロールまたは Web パーツが信頼されていないユーザーにアクセスするセキュリティで保護されたかどうかを指定します。|
 |**IsSafeAgainstScript**|省略可能な**xs:boolean**属性。<br /><br /> 信頼されていないユーザーを表示したり、ASPX コントロールまたは Web パーツのプロパティの編集にかどうかを指定します。|
 |**Name**|省略可能な**xs:string**属性。<br /><br /> このコレクション内の安全なコントロール エントリの名前。|
@@ -57,7 +57,7 @@ ms.locfileid: "58324566"
 |[SafeControls](../sharepoint/safecontrols-element.md)|ASPX コントロールと、SharePoint サイト上のいずれかの ASPX ページにアクセスするすべてのユーザーに対してセキュリティで保護されたとして指定されている Web パーツのコレクションを表します。|
 
 ## <a name="remarks"></a>Remarks
- 安全なコントロールの詳細については、次を参照してください。[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)します。
+ 安全なコントロールの詳細については、[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)を参照してください。
 
 ## <a name="element-information"></a>要素情報
 

@@ -24,7 +24,7 @@ ms.locfileid: "56723540"
 # <a name="extend-properties-and-the-property-window"></a>プロパティと、[プロパティ] ウィンドウを拡張します。
 **プロパティ**ウィンドウは、デザイン時のプロパティとイベントを選択したオブジェクトの表示および編集に使用します。
 
- 内のオブジェクトを選択すると[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、そのオブジェクトのパブリック プロパティに表示されます、**プロパティ**ウィンドウ。 詳細については、次を参照してください。[プロパティ ウィンドウの概要](../extensibility/internals/properties-window-overview.md)します。
+ 内のオブジェクトを選択すると[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、そのオブジェクトのパブリック プロパティに表示されます、**プロパティ**ウィンドウ。 詳細については、[プロパティ ウィンドウの概要](../extensibility/internals/properties-window-overview.md)を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [[プロパティ] ウィンドウにプロパティを公開](../extensibility/exposing-properties-to-the-properties-window.md)プロパティ ウィンドウに表示される、カスタム プロパティのある方法について説明します。

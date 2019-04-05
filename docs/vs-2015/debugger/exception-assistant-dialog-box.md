@@ -1,14 +1,9 @@
 ---
 title: 例外処理アシスタント ダイアログ ボックス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debugger.exceptionassistant
 - vs.exceptionhelper.exceptiondetail
@@ -27,13 +22,13 @@ ms.assetid: 57999577-0129-47ca-8b87-77b80fdc317a
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd9750c9c88f9592158e9e8b3a8079af13b88652
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b4075340f87b46fd8316b5e30317e9d90108b914
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722786"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975020"
 ---
 # <a name="exception-assistant-dialog-box"></a>例外処理アシスタント ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "51722786"
   
  例外に関連するアクションを実行するには、アクション ペインに表示されたアクションのいずれかをクリックします。  
   
- 有効にするか、例外処理アシスタントを無効にする方法については、[General, Debugging, オプション ダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)を参照してください。  
+ 有効にするか、例外処理アシスタントを無効にする方法については、次を参照してください。 [General, Debugging, オプション ダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)します。  
   
 ## <a name="user-interface-element-list"></a>ユーザー インターフェイス要素一覧  
  **例外の種類**  
@@ -66,8 +61,5 @@ ms.locfileid: "51722786"
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [例外処理アシスタントを使用して、](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
- [方法: 例外処理アシスタントを実行時エラーを修正](http://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
+ [方法: 例外処理アシスタントを実行時エラーを修正します。](http://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
  [エラーの種類](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: '1027: FlagsAttribute で列挙をマークする |Microsoft Docs'
-ms.custom: ''
+title: CA1027:FlagsAttribute で列挙をマーク |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkEnumsWithFlags
 - CA1027
@@ -20,21 +15,21 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b8cebc05fa58c589f07beed70ab222d31bc8553a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6603e0869a9eb7947735c52a4c438b39d64b9140
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879221"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972221"
 ---
-# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: FlagsAttribute で列挙値をマークします
+# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027:列挙型を FlagsAttribute に設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MarkEnumsWithFlags|
 |CheckId|CA1027|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
@@ -52,15 +47,12 @@ ms.locfileid: "49879221"
  列挙値を結合できるしたくない場合は、この規則による警告を抑制します。
 
 ## <a name="example"></a>例
- 次の例では、`DaysEnumNeedsFlags`が列挙体を使用するための要件を満たす<xref:System.FlagsAttribute>、ことはありません。 `ColorEnumShouldNotHaveFlag`列挙体が 2 の累乗である値はありませんが、正しくないを指定します<xref:System.FlagsAttribute>します。 ルールに違反する[CA2217: FlagsAttribute で列挙をマークしない](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)します。
+ 次の例では、`DaysEnumNeedsFlags`が列挙体を使用するための要件を満たす<xref:System.FlagsAttribute>、ことはありません。 `ColorEnumShouldNotHaveFlag`列挙体が 2 の累乗である値はありませんが、正しくないを指定します<xref:System.FlagsAttribute>します。 ルールに違反する[CA2217:FlagsAttribute で列挙をマークしない](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)します。
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumFlags/cs/FxCop.Design.EnumFlags.cs#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA2217: enums を FlagsAttribute に設定しません](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217:FlagsAttribute で列挙をマークしないでください。](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>関連項目
  <xref:System.FlagsAttribute?displayProperty=fullName>
-
-
-

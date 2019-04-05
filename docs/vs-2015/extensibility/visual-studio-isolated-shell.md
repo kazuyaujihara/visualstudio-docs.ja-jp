@@ -1,14 +1,9 @@
 ---
 title: Visual Studio 分離シェル |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], shell-based applications%2C isolated mode
 - Visual Studio shell, isolated mode
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d7fcb0a838f2849ab74d202785709164ec5af6d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740652"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975700"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio 分離シェル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Visual Studio 分離シェルでは、サイド バイ サイドで実行する�
 >  分離シェルの再頒布可能パッケージにアクセスする前にお客様の簡単なアンケートに記入してになります。  アンケートに記入した後は、するは再頒布可能パッケージのダウンロード リンクを含む Visual Studio の Connect ページに移動します。  Visual Studio の Connect サイトにアクセスする際に、ダウンロード リンクを見つけることができます、**プログラム&#124;VISUAL STUDIO 2015 統合と分離シェル**タブ。  
   
 > [!NOTE]
->  分離シェルベースのアプリケーションをデプロイする方法の詳細については、次を参照してください。[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)します。  
+>  分離シェルベースのアプリケーションをデプロイする方法の詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
   
 ## <a name="working-with-the-isolated-shell"></a>分離シェルの操作  
  Visual Studio 分離シェル アプリケーションは、Visual Studio services へのフル アクセスを備え、特別なカスタマイズとブランド化をサポートしています。 分離シェル アプリケーションをカスタマイズするいくつかの方法はあります。  
@@ -70,4 +65,3 @@ Visual Studio 分離シェルでは、サイド バイ サイドで実行する�
   
 ## <a name="see-also"></a>関連項目  
  [シェル (分離または統合)](../extensibility/shell-isolated-or-integrated.md)
-

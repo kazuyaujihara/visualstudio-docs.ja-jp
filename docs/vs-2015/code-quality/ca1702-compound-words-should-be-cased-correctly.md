@@ -1,14 +1,9 @@
 ---
-title: 'CA1702: 複合語を正しく使い分ける |Microsoft Docs'
-ms.custom: ''
+title: CA1702:複合語では、大文字と小文字が正しく区別する必要があります |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1702
 - CompoundWordsShouldBeCasedCorrectly
@@ -20,17 +15,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cfc723e94b8be2f427be7b42d676218b0d9aa68d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f4844431215d952f03ab9acc3f11ab57644abde
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201137"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59003082"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702:複合語では、大文字と小文字が正しく区別されなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。 [CA1702: 複合語では、大文字と小文字が正しく区別する必要があります](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください[CA1702:。複合語では、大文字と小文字が正しく区別する必要があります](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)docs.microsoft.com でリリースされました。  
   
 |||  
 |-|-|  
@@ -54,13 +49,12 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
  複合語の両方の部分は、スペル チェック辞書によって認識され、目的は、2 つの単語を使用する場合は、この規則による警告を抑制するのには安全です。  
   
 ## <a name="related-rules"></a>関連規則  
- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+ [CA1701:リソース文字列の複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+ [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
- [CA1708: 識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
+ [CA1708:識別子は、ケース以外で相違させる必要があります。](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
 ## <a name="see-also"></a>関連項目  
  [名前付けのガイドライン](http://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)   
  [大文字の使用規則](http://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)
-

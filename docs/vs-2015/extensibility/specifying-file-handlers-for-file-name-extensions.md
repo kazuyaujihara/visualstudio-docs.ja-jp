@@ -1,26 +1,21 @@
 ---
 title: ファイル名拡張子のファイル ハンドラーを指定する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d0a4f0547da10a4d519d315000a0f35a19a56287
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: dd999fe10da48f91482976ade56681ee53346802
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726245"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974246"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>ファイル名拡張子のファイル ハンドラーを指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HKEY_CLASSES_ROOT\
  OpenWithList キーを追加すると、別のアプリケーション拡張機能の所有権を取得する場合でも、アプリケーションがファイルの拡張機能をサポートしているを宣言します。 これは、アプリケーションまたは別のアプリケーションの将来のバージョン。  
   
 ## <a name="openwithprogids"></a>OpenWithProgIDs  
- プログラム識別子 (Progid) とは、Classid バージョンのアプリケーションや COM オブジェクトを識別するわかりやすいバージョンです。 すべての共同作成可能なオブジェクトには、独自の ProgID が必要です。 たとえば、VisualStudio.DTE.7.1 は Visual Studio .NET 2003 を開始の VisualStudio.DTE.10.0 の起動中に[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 プロジェクトの種類またはプロジェクト項目の種類の所有者は、ファイル拡張機能のバージョンに固有の ProgID を作成する必要があります。 この Progid は、1 つ以上の ProgID が同じアプリケーションを開始点で冗長な可能性があります。 詳細については、[ファイル名拡張子の動詞を登録する](../extensibility/registering-verbs-for-file-name-extensions.md)を参照してください。  
+ プログラム識別子 (Progid) とは、Classid バージョンのアプリケーションや COM オブジェクトを識別するわかりやすいバージョンです。 すべての共同作成可能なオブジェクトには、独自の ProgID が必要です。 たとえば、VisualStudio.DTE.7.1 は Visual Studio .NET 2003 を開始の VisualStudio.DTE.10.0 の起動中に[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 プロジェクトの種類またはプロジェクト項目の種類の所有者は、ファイル拡張機能のバージョンに固有の ProgID を作成する必要があります。 この Progid は、1 つ以上の ProgID が同じアプリケーションを開始点で冗長な可能性があります。 詳細については、次を参照してください。[ファイル名拡張子の動詞を登録する](../extensibility/registering-verbs-for-file-name-extensions.md)します。  
   
  バージョン管理されたファイルの Progid の他のベンダーからの登録での重複を避けるために、次の名前付け規則を使用します。  
   
@@ -82,9 +77,8 @@ HKEY_CLASSES_ROOT\
          VisualStudio.vcproj.14.0 //new progid  
 ```  
   
- 古い ProgID がそれに関連付けられている動詞としている場合、これらの動詞はでも表示されます**プログラムから開く***製品名*ショートカット メニュー。  
+ 古い ProgID がそれに関連付けられている動詞としている場合、これらの動詞はでも表示されます **プログラムから開く** *製品名* ショートカット メニュー。  
   
 ## <a name="see-also"></a>関連項目  
  [ファイル名拡張子について](../extensibility/about-file-name-extensions.md)   
  [ファイル名拡張子の動詞を登録する](../extensibility/registering-verbs-for-file-name-extensions.md)
-

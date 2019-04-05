@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 677824142f2e7e497888627041cfe7a82487d342
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51735516"
@@ -27,7 +27,7 @@ ms.locfileid: "51735516"
 
 テキスト バッファー オブジェクトは、さまざまな状況に対応するためのいくつかのイベントを出力します。  
   
- 従来の API を使用しているときに、テキスト バッファーへの変更の通知を受信するには、次のインターフェイスを実装する必要があります。 テキスト バッファーを使用するインターフェイスを公開、`IConnectionPointContainer`バッファーから行の通知を受け取るテキスト バッファーのインターフェイスを変更します。 詳細については、次を参照してください。[方法: テキスト バッファー イベント、レガシ API の登録](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)します。 場合に`IVsTextStreamEvents`または`IVsTextLinesEvents`インターフェイス、変更が返されるいずれか 1 つまたは 2 次元座標で、それぞれします。  
+ 従来の API を使用しているときに、テキスト バッファーへの変更の通知を受信するには、次のインターフェイスを実装する必要があります。 テキスト バッファーを使用するインターフェイスを公開、`IConnectionPointContainer`バッファーから行の通知を受け取るテキスト バッファーのインターフェイスを変更します。 詳細については、[方法: テキスト バッファー イベント、レガシ API の登録](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)を参照してください。 場合に`IVsTextStreamEvents`または`IVsTextLinesEvents`インターフェイス、変更が返されるいずれか 1 つまたは 2 次元座標で、それぞれします。  
   
 ## <a name="text-buffer-interfaces"></a>テキスト バッファー インターフェイス  
  テキスト バッファー オブジェクトによって実装されるインターフェイスを次に示します。  

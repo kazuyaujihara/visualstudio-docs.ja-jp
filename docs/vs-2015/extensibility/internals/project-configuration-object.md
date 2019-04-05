@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 27b64e6b11e6a8d01cd06886d902c8032f8605d2
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51735278"
@@ -49,11 +49,11 @@ ms.locfileid: "51735278"
   
  `IVsProjectCfg2` 主にビルド、デバッグへのアクセスと管理の展開オブジェクトを提供しを自由にグループの出力を使用するには、プロジェクト。 メソッド`IVsProjectCfg`と`IVsProjectCfg2`を実装するために使用できる<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>ビルド処理を管理して<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup>構成の出力グループのポインター。  
   
- プロジェクトには、同じグループ内に含まれる出力の数は構成で異なる場合がありますもサポートしている構成ごとにグループ数を返す必要があります。 グループも必要 (正規名、表示名、およびグループ情報) は、同じ識別子情報構成からプロジェクト内です。 詳細については、次を参照してください。[出力用のプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)します。  
+ プロジェクトには、同じグループ内に含まれる出力の数は構成で異なる場合がありますもサポートしている構成ごとにグループ数を返す必要があります。 グループも必要 (正規名、表示名、およびグループ情報) は、同じ識別子情報構成からプロジェクト内です。 詳細については、[出力用のプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)を参照してください。  
   
  デバッグを有効にする、構成を実装する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>します。 `IVsDebuggableProjectCfg` プロジェクトの構成を起動するデバッガーによって実装される、省略可能なインターフェイスは、構成オブジェクトが実装されている`IVsCfg`と`IVsProjectCfg`します。 F5 キーを押してデバッガーを起動するときに、環境を呼び出します。  
   
- `ISpecifyPropertyPages` `IDispatch`を取得し、構成に依存する情報をユーザーに表示するプロパティ ページと組み合わせて使用されます。 詳細については、次を参照してください。[プロパティ ページ](../../extensibility/internals/property-pages.md)します。  
+ `ISpecifyPropertyPages` `IDispatch`を取得し、構成に依存する情報をユーザーに表示するプロパティ ページと組み合わせて使用されます。 詳細については、[プロパティ ページ](../../extensibility/internals/property-pages.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)   

@@ -1,14 +1,9 @@
 ---
 title: '[プロパティ] ウィンドウにプロパティを公開する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], exposing in Property Browser
 - properties [Visual Studio SDK]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 026e7de7d56cb907682be52db2dbd32782822d9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4194ed3bac4d027b2bbf3cadd574f67343c0ae80
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756907"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976399"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>プロパティ ウィンドウへのプロパティの公開
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "51756907"
   
 1.  すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]という名前の VSIX プロジェクト`MyObjectPropertiesExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#/機能拡張**します。  
   
-2.  ツール ウィンドウを追加するには、という名前のカスタム ツール ウィンドウの項目テンプレートを追加`MyToolWindow`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加 ダイアログ**に移動して、 **Visual c# アイテム/機能拡張**選択と**カスタム ツール ウィンドウ**します。 **名前**ダイアログの下部にあるフィールドに、ファイル名を変更して`MyToolWindow.cs`します。 カスタム ツール ウィンドウを作成する方法の詳細については、[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。  
+2.  ツール ウィンドウを追加するには、という名前のカスタム ツール ウィンドウの項目テンプレートを追加`MyToolWindow`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加 ダイアログ**に移動して、 **Visual c# アイテム/機能拡張**選択と**カスタム ツール ウィンドウ**します。 **名前**ダイアログの下部にあるフィールドに、ファイル名を変更して`MyToolWindow.cs`します。 カスタム ツール ウィンドウを作成する方法の詳細については、次を参照してください。[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。  
   
 3.  MyToolWindow.cs を開き、次を追加するステートメントを使用します。  
   
@@ -268,11 +263,10 @@ ms.locfileid: "51756907"
     > [!NOTE]
     >  表示名**しれません**は**マイ テキスト**します。  
   
-## <a name="best-practice"></a>ベスト プラクティス  
+## <a name="best-practice"></a>推奨事項  
  このチュートリアルで<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>は選択可能なオブジェクトのコレクションと、選択したオブジェクトのコレクションが、同じコレクションになるように実装されます。 プロパティ ブラウザーの一覧で選択したオブジェクトのみが表示されます。 詳細な ISelectionContainer 実装、Reference.ToolWindow のサンプルを参照してください。  
   
- Visual Studio のツール ウィンドウは、Visual Studio セッション間で保持します。 ツール ウィンドウの状態を永続化の詳細については、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>を参照してください。  
+ Visual Studio のツール ウィンドウは、Visual Studio セッション間で保持します。 ツール ウィンドウの状態を永続化の詳細については、次を参照してください。<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>します。  
   
 ## <a name="see-also"></a>関連項目  
  [プロパティとプロパティ ウィンドウの拡張](../extensibility/extending-properties-and-the-property-window.md)
-

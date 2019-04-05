@@ -1,23 +1,20 @@
 ---
 title: O/R デザイナーのメッセージ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c055321c3936f92c21d5bff6ac63ecbeb7c982e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7c43a8c6c306fd33dd7cb975dee9a7d89128d7cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972385"
 ---
 # <a name="or-designer-messages"></a>O/R デザイナーのメッセージ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +23,13 @@ ms.locfileid: "49217648"
 このトピックでは、O/R デザイナーを使用しているときに表示される可能性のあるメッセージの一覧を示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [関連付けを作成できません\<アソシエーション名 >-プロパティが 2 回一覧表示](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
+ [関連付け \<association name> を作成できません - プロパティが複数リストされています](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
   
- [関連付けを作成できません\<アソシエーション名 >-プロパティの型が一致しません](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
+ [関連付け \<association name> を作成できません - プロパティの型が一致しません](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
   
  [DataContext メソッドの戻り値の型を変更すると、元に戻せなくなります。](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)  
   
- [データベース オブジェクトのスキーマ情報を取得できませんでした\<オブジェクト名 >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
+ [データベース オブジェクト \<object name> のスキーマ情報を取得できませんでした](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
   
  [1 つ以上の選択されたデータベース オブジェクトがターゲット データ クラスのスキーマに一致しないスキーマを返しました。](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
   
@@ -44,9 +41,9 @@ ms.locfileid: "49217648"
   
  [デザイナーに追加する対象のオブジェクトは、デザイナーが現在使用しているのとは異なるデータ接続を使用しています。](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
   
- [プロパティ\<プロパティ名 > を削除できません](../data-tools/the-property-property-name-cannot-be-deleted.md)  
+ [\<property name> プロパティを削除できません](../data-tools/the-property-property-name-cannot-be-deleted.md)  
   
- [プロパティ\<プロパティ名 > の関連付けに関与しているために削除できません\<アソシエーション名 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
+ [プロパティ \<property name> は関連付け \<association name> に関与しているため、削除できません](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
   
  [選択したクラスは、1 つ以上の DataContext メソッドで戻り値の型として使用されているため、削除できません](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
   
@@ -65,4 +62,3 @@ ms.locfileid: "49217648"
  [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
-

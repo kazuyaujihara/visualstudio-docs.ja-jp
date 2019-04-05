@@ -1,29 +1,24 @@
 ---
 title: 設定カテゴリのサポート |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - settings, supporting with Visual Studio SDK
 - Visual Studio SDK, supporting settings
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
-manager: douge
-ms.openlocfilehash: 53abd3c9f35f16c2f2ae62e2c4f339a86477a8b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244934"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972918"
 ---
 # <a name="support-for-settings-categories"></a>設定カテゴリのサポート
-設定カテゴリは統合開発環境 (IDE) をカスタマイズするためのグループで構成されます。 たとえば設定により、メニューの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のウィンドウとコンテンツのレイアウトを制御できます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+設定カテゴリは統合開発環境 (IDE) をカスタマイズするためのグループで構成されます。 たとえば設定により、メニューの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のウィンドウとコンテンツのレイアウトを制御できます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
  **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックし、 **設定のインポートとエクスポート ウィザード**を開始します。 ウィザードには、設定のエクスポート、インポート、リセットという 3 つの選択肢があります。 たとえば、エクスポートを選択すると、ウィザードの **[エクスポートする設定の選択]** ページが表示されます。  
   
@@ -61,7 +56,7 @@ ms.locfileid: "49244934"
  [!code-csharp[VSSDKSupportForSettingsCategories#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforsettingscategories/cs/vssdksupportforsettingscategoriespackage.cs#1)]
  [!code-vb[VSSDKSupportForSettingsCategories#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforsettingscategories/vb/vssdksupportforsettingscategoriespackage.vb#1)]  
   
- リソース ID 106 は "My Category" に、107 は "My Settings" に、108 は "Various Options" にマッピングされます。 これは、`MyPackage` がカテゴリ My Category_My Settings を提供するという宣言です。 カテゴリは `OptionsPageGeneral` クラスから提供されます。この場合、<xref:Microsoft.VisualStudio.Shell.IProfileManager> を実装する必要があります。 このカテゴリの設定は、 `OptionsPageGeneral` クラスのパブリック プロパティです。  
+ リソース ID 106 は "My Category" に、107 は "My Settings" に、108 は "Various Options" にマッピングされます。 これは、 `MyPackage` がカテゴリ My Category_My Settings を提供するという宣言です。 カテゴリは `OptionsPageGeneral` クラスから提供されます。この場合、<xref:Microsoft.VisualStudio.Shell.IProfileManager> を実装する必要があります。 このカテゴリの設定は、 `OptionsPageGeneral` クラスのパブリック プロパティです。  
   
  **設定のインポートとエクスポート ウィザード**で、設定ポイントの名前は "My Settings" です。 設定ポイントを選択すると、" **さまざまなオプション**" という説明が表示されます。 設定ポイント名と説明は、ローカライズされた文字列リソースから取得されます。  
   
@@ -69,4 +64,4 @@ ms.locfileid: "49244934"
  [オプション ページの作成](../extensibility/creating-an-options-page.md)   
  [VSSDK のサンプル](../misc/vssdk-samples.md)   
  [VSPackage の状態](../misc/vspackage-state.md)   
- [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

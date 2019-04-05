@@ -30,7 +30,7 @@ Visual Studio でレイヤー図のコンテキスト メニュー コマンド�
  必要に応じて、複数のコマンドおよびジェスチャ ハンドラーを同じ Visual Studio プロジェクトで定義できます。 また、複数のプロジェクトを組み合わせて 1 つの VSIX に含めることもできます。 たとえば、レイヤー コマンド、特定領域言語、および UML 図用のコマンドを含む単一の VSIX を定義できます。  
   
 > [!NOTE]
->  ユーザーのソース コードをレイヤー図と比較する、アーキテクチャの検証をカスタマイズすることもできます。 アーキテクチャの検証は、別の Visual Studio プロジェクトで定義する必要があります。 それを他の拡張機能と同じ VSIX に追加できます。 詳細については、次を参照してください。[レイヤー図へのカスタム アーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)します。  
+>  ユーザーのソース コードをレイヤー図と比較する、アーキテクチャの検証をカスタマイズすることもできます。 アーキテクチャの検証は、別の Visual Studio プロジェクトで定義する必要があります。 それを他の拡張機能と同じ VSIX に追加できます。 詳細については、[レイヤー図へのカスタム アーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)を参照してください。  
   
 ## <a name="requirements"></a>必要条件  
  「 [要件](../modeling/extend-layer-diagrams.md#prereqs)」を参照してください。  
@@ -50,7 +50,7 @@ Visual Studio でレイヤー図のコンテキスト メニュー コマンド�
   
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開始します。 このインスタンスで、レイヤー図を作成します。 独自のコマンドまたはジェスチャ拡張機能が、この図で動作します。  
   
-4. 実験用のインスタンスを閉じて、サンプル コードを変更します。 詳細については、次を参照してください。[への移動と更新プログラムは、プログラム コードでモデルをレイヤー](../modeling/navigate-and-update-layer-models-in-program-code.md)します。  
+4. 実験用のインスタンスを閉じて、サンプル コードを変更します。 詳細については、[への移動と更新プログラムは、プログラム コードでモデルをレイヤー](../modeling/navigate-and-update-layer-models-in-program-code.md)を参照してください。  
   
 5. 同じプロジェクトに、さらにコマンドまたはジェスチャ ハンドラーを追加できます。 詳細については、以下のセクションを参照してください。  
   
@@ -61,7 +61,7 @@ Visual Studio でレイヤー図のコンテキスト メニュー コマンド�
 6. メイン インスタンスで、拡張機能をインストールする[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、または別のコンピューターでは、検索、 **.vsix**ファイル*bin\\*します。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 拡張機能をアンインストールするには、 **[ツール]** メニューの **[拡張機能と更新プログラム]** を使用します。  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>別の VSIX にコマンドまたはジェスチャを追加する  
- コマンド、レイヤー検証コントロール、および他の拡張機能を含む 1 つの VSIX を作成する場合は、VSIX を定義するプロジェクトとハンドラー用のプロジェクトを分けることをお勧めします。 モデリング拡張機能の他の種類については、次を参照してください。 [UML を拡張モデルと図](../modeling/extend-uml-models-and-diagrams.md)します。  
+ コマンド、レイヤー検証コントロール、および他の拡張機能を含む 1 つの VSIX を作成する場合は、VSIX を定義するプロジェクトとハンドラー用のプロジェクトを分けることをお勧めします。 モデリング拡張機能の他の種類については、[UML を拡張モデルと図](../modeling/extend-uml-models-and-diagrams.md)を参照してください。  
   
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>レイヤー拡張機能を別の VSIX に追加するには  
   
@@ -144,7 +144,7 @@ Visual Studio でレイヤー図のコンテキスト メニュー コマンド�
   
    `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
-  詳細については、次を参照してください。[への移動と更新プログラムは、プログラム コードでモデルをレイヤー](../modeling/navigate-and-update-layer-models-in-program-code.md)します。  
+  詳細については、[への移動と更新プログラムは、プログラム コードでモデルをレイヤー](../modeling/navigate-and-update-layer-models-in-program-code.md)を参照してください。  
   
   新しいコマンドを追加するには、以下のサンプルを含む新しいコード ファイルを作成します。 その後、テストして編集します。  
   
@@ -265,7 +265,7 @@ namespace MyLayerExtensions // change to your preference
   
 - ドラッグされるアイテムの種類によっては、ハンドラーが既に定義されています。 たとえば、ユーザーはソリューション エクスプローラーからレイヤー図にアイテムをドラッグできます。 このような種類のアイテムに対しては、ドラッグ ハンドラーを定義できません。 その場合、 `DragDrop` メソッドは呼び出されません。  
   
-  ダイアグラムにドラッグされるときに、その他のアイテムをデコードする方法の詳細については、次を参照してください。[モデリング図にジェスチャ ハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)します。  
+  ダイアグラムにドラッグされるときに、その他のアイテムをデコードする方法の詳細については、[モデリング図にジェスチャ ハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [移動し、プログラム コードでレイヤー モデルの更新](../modeling/navigate-and-update-layer-models-in-program-code.md)   

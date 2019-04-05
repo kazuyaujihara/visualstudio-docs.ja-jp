@@ -19,7 +19,7 @@ ms.lasthandoff: 02/22/2019
 ms.locfileid: "56706640"
 ---
 # <a name="define-element"></a>要素を定義します。
-シンボルの名前と値のペアを定義します。 このシンボルは、条件付き属性によって評価されることができます。 詳細については、次を参照してください。[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。 参照してください、 [Symbols 要素](../extensibility/symbols-element.md)します。
+シンボルの名前と値のペアを定義します。 このシンボルは、条件付き属性によって評価されることができます。 詳細については、[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。 参照してください、 [Symbols 要素](../extensibility/symbols-element.md)します。
 
 ## <a name="syntax"></a>構文
 
@@ -36,7 +36,7 @@ ms.locfileid: "56706640"
 |---------------|-----------------|
 |name|必須。 シンボルの名前。<br /><br /> 名前 =「モード」|
 |値|必須。 シンボルの値です。<br /><br /> 値 ="Standard"|
-|条件|任意。 詳細については、次を参照してください。[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|
+|条件|任意。 詳細については、[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。|
 
 ### <a name="child-elements"></a>子要素
  なし。

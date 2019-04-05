@@ -1,14 +1,9 @@
 ---
-title: '1724: ca 型名と名前空間 |Microsoft Docs'
-ms.custom: ''
+title: CA1724:型名が名前空間と一致する必要があります |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - TypeNamesShouldNotMatchNamespaces
 - CA1724
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5331a32db054b1cb3939bbfd3ba088ab5da33f96
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fe95e08d2265baf06c6da265996ffcd579f0d1f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903180"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974334"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: 型名は名前空間と同一にすることはできません
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724:型名は名前空間と同一にすることはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -48,6 +43,3 @@ ms.locfileid: "49903180"
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  新たに開発されていないシナリオが発生する、この規則による警告を抑制する必要があります。 警告を抑制する前に一致する名前で、ライブラリのユーザーを混乱する可能性がある方法慎重に検討してください。 ライブラリを配布するには、この規則による警告を抑制する必要があります。
-
-
-

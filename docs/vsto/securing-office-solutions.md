@@ -45,16 +45,16 @@ ms.locfileid: "54871183"
 
 - 配置マニフェストの URL
 
-  詳細については、次を参照してください。 [Office ソリューションに信頼を付与](../vsto/granting-trust-to-office-solutions.md)します。
+  詳細については、[Office ソリューションに信頼を付与](../vsto/granting-trust-to-office-solutions.md)を参照してください。
 
 ##  <a name="GrantingTrustToDocuments"></a> ドキュメントに信頼を付与
- ドキュメント レベルのカスタマイズでは、ドキュメントを信頼できる場所として指定されたディレクトリに置く必要があります。  詳細については、次を参照してください。[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)します。
+ ドキュメント レベルのカスタマイズでは、ドキュメントを信頼できる場所として指定されたディレクトリに置く必要があります。  詳細については、[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)を参照してください。
 
 ##  <a name="GrantingTrustWindowsInstaller"></a> Windows インストーラーを使用する場合は、信頼を付与します。
  Windows インストーラーを使用して Program Files ディレクトリに Office ソリューションをインストールする MSI ファイルを作成できますが、これには管理者権限が必要です。 Program Files ディレクトリでの Office ソリューションで、Visual Studio 2010 Tools for Office ランタイムは信頼されるようにこれらの Office ソリューションを検討し、ClickOnce 信頼プロンプトは表示されません。
 
 ##  <a name="Security"></a> Office ソリューションの特定のセキュリティに関する考慮事項
- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]、[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] および Microsoft Office に用意されているセキュリティ機能は、Office ソリューションのさまざまなセキュリティ上の脅威に対する保護に役立てることができます。 詳細については、次を参照してください。 [Office ソリューションの特定のセキュリティに関する考慮事項](../vsto/specific-security-considerations-for-office-solutions.md)します。
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]、[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] および Microsoft Office に用意されているセキュリティ機能は、Office ソリューションのさまざまなセキュリティ上の脅威に対する保護に役立てることができます。 詳細については、[Office ソリューションの特定のセキュリティに関する考慮事項](../vsto/specific-security-considerations-for-office-solutions.md)を参照してください。
 
 ##  <a name="SecurityDuringDeployment"></a> 開発中のセキュリティ
  Visual Studio では、開発プロセスを容易にするために、プロジェクトをビルドするたびにソリューションの実行およびデバッグに必要なセキュリティ ポリシーが設定されます。 場合によっては、プロジェクトの開発に追加のセキュリティ手順が必要になります。
@@ -86,7 +86,7 @@ ms.locfileid: "54871183"
 
  4 つの方法のいずれかでインストール プロセスを開始することができます。 セットアップ プログラムを実行して、配置マニフェストを開くことで、Microsoft Office アプリケーション ホストを開くことでまたはを実行して*VSTOInstaller.exe*します。
 
- 最初のセキュリティ チェックはドキュメント レベルのソリューションのみが対象となります。 ドキュメント レベルのソリューションのドキュメントは、信頼できる場所に置く必要があります。 ドキュメントがリモート ネットワーク ファイル共有にあるか、場合、 *.doc*または *.docm*ファイル名拡張子をドキュメントの場所は、信頼できる場所の一覧に追加する必要があります。 詳細については、次を参照してください。[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)します。
+ 最初のセキュリティ チェックはドキュメント レベルのソリューションのみが対象となります。 ドキュメント レベルのソリューションのドキュメントは、信頼できる場所に置く必要があります。 ドキュメントがリモート ネットワーク ファイル共有にあるか、場合、 *.doc*または *.docm*ファイル名拡張子をドキュメントの場所は、信頼できる場所の一覧に追加する必要があります。 詳細については、[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)を参照してください。
 
  ![VSTO セキュリティ - Microsoft Office からインストール](../vsto/media/host-install.png "VSTO セキュリティ - Microsoft Office からのインストール")
 
@@ -96,7 +96,7 @@ ms.locfileid: "54871183"
 
  場合、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信頼プロンプトが許可されていると、ソリューションがまだ許可されていない信頼、信頼の決定、エンドユーザーが行うことができます。 ユーザーがソリューションに信頼を付与すると、そのユーザーの信頼のリストにエントリが追加されます。 ユーザーの信頼のリストに追加されたソリューションは、完全に信頼されているため、インストールおよび実行が可能です。
 
- Visual Studio 2010 以降では、Windows インストーラー (MSI) を使用して Office ソリューションを Program Files ディレクトリにインストールすると、信頼のリストがバイパスされます。 詳細については、次を参照してください。[リストによる Office のセキュリティ ソリューション](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)します。
+ Visual Studio 2010 以降では、Windows インストーラー (MSI) を使用して Office ソリューションを Program Files ディレクトリにインストールすると、信頼のリストがバイパスされます。 詳細については、[リストによる Office のセキュリティ ソリューション](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)を参照してください。
 
  ![VSTO セキュリティ - セットアップ プログラムを使用してインストールする](../vsto/media/setup-vstoinstaller.png "VSTO セキュリティ - セットアップ プログラムを使用してインストールするには")
 

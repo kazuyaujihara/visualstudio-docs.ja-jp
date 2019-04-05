@@ -1,26 +1,21 @@
 ---
 title: レガシ API を使用して、コア エディターをインスタンス化する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
 ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d092994ad66d96a3fe7141cb898c7ef9b811eaf5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765783"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973357"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>レガシ API を使用して、コア エディターをインスタンス化します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,10 +64,9 @@ ms.locfileid: "51765783"
   
  場合、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>メソッドは、テキスト エディターと同じコマンドの GUID を返します、コア エディターのインスタンスがショートカット キーに自動的に既定値に取得します。  
   
- 一般的な情報は、次を参照してください。[チュートリアル: コア エディターを作成してエディター ファイルの種類を登録する](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)します。  
+ 一般的な情報は、次を参照してください。[チュートリアル。コア エディターを作成してエディター ファイルの種類を登録する](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [コア エディター内で](../extensibility/inside-the-core-editor.md)   
  [開くと、プロジェクト項目の保存](../extensibility/internals/opening-and-saving-project-items.md)   
- [チュートリアル: コア エディターの作成とエディター ファイルの種類の登録](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
-
+ [チュートリアル: コア エディターを作成してエディター ファイルの種類を登録します。](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

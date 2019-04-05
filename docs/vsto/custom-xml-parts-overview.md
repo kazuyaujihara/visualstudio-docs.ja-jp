@@ -38,7 +38,7 @@ ms.locfileid: "56616223"
  **適用対象します。** このトピックの情報は、Excel、PowerPoint、および Word のドキュメント レベルのプロジェクトおよび VSTO アドイン プロジェクトに適用されます。 詳細については、「[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
 
 > [!NOTE]
->  Visual Studio では、ドキュメント レベルのカスタマイズ内のデータ オブジェクトをキャッシュすることもできます。 いくつかの類似点はありますが、この機能はカスタム XML 部分とは異なります。 詳細については、次を参照してください。[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)します。
+>  Visual Studio では、ドキュメント レベルのカスタマイズ内のデータ オブジェクトをキャッシュすることもできます。 いくつかの類似点はありますが、この機能はカスタム XML 部分とは異なります。 詳細については、[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)を参照してください。
 
 ## <a name="understand-custom-xml-parts"></a>カスタム XML 部分を理解します。
  カスタム XML 部分は、2007 Microsoft Office system で Open XML 形式とともに導入されました。 これらの形式は、Excel、PowerPoint、および Word の新しい XML ベースのファイル形式を含める (など *.xlsx*、 *.pptx*、および *.docx*)。 これらの形式でドキュメントが XML ファイルで構成されます (とも呼ばれます*XML パーツ*) ZIP アーカイブ内のフォルダーに編成されます。 XML 部分のほとんどは、ドキュメントの構造と状態を定義するのに役立つ組み込みの部分です。 ただし、ドキュメントにはカスタム XML 部分を含めることができ、ユーザーはこれを使用して、ドキュメントに任意の XML データを格納できます。
@@ -73,10 +73,10 @@ ms.locfileid: "56616223"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Office アプリケーションを起動せずに XML 部分を変更します。
  Excel、PowerPoint、または Word を起動しないでカスタム XML 部分を変更できます。 これは、Microsoft Office アプリケーションがインストールされていないサーバーなどのコンピューターで、ドキュメント内の XML データを使用する場合に便利です。
 
- Microsoft Office を起動せずにカスタム XML 部分を追加するには Open XML SDK のクラスを使用します。 これらのクラスは、Office ドキュメントに固有の Open XML コンテンツにアクセスするために設計されています。 使用する Excel ブックにカスタム XML 部分を追加するなど、<xref:DocumentFormat.OpenXml.Packaging.OpenXmlPartContainer.AddNewPart%2A>のメソッドを<xref:DocumentFormat.OpenXml.Packaging.WorkbookPart>オブジェクト。 詳細については、次を参照してください。 [Open XML 用 SDK](/office/open-xml/open-xml-sdk)します。
+ Microsoft Office を起動せずにカスタム XML 部分を追加するには Open XML SDK のクラスを使用します。 これらのクラスは、Office ドキュメントに固有の Open XML コンテンツにアクセスするために設計されています。 使用する Excel ブックにカスタム XML 部分を追加するなど、<xref:DocumentFormat.OpenXml.Packaging.OpenXmlPartContainer.AddNewPart%2A>のメソッドを<xref:DocumentFormat.OpenXml.Packaging.WorkbookPart>オブジェクト。 詳細については、[Open XML 用 SDK](/office/open-xml/open-xml-sdk)を参照してください。
 
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>カスタム XML 部分を Word コンテンツ コントロールにバインドします。
- Word ソリューションのコンテンツ コントロールをカスタム XML 部分の要素にバインドできます。 カスタム XML 部分にコンテンツ コントロールがバインドされると、カスタム XML 部分のデータがコンテンツ コントロールのユーザー インターフェイス (UI) に表示されます。 ユーザーがコントロール内のテキストを編集すると、対応する XML 要素が自動的に更新されます。 同様に、カスタム XML 部分の要素の値が変更されると、その XML 要素にバインドされているコンテンツ コントロールに新しいデータが表示されます。 詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
+ Word ソリューションのコンテンツ コントロールをカスタム XML 部分の要素にバインドできます。 カスタム XML 部分にコンテンツ コントロールがバインドされると、カスタム XML 部分のデータがコンテンツ コントロールのユーザー インターフェイス (UI) に表示されます。 ユーザーがコントロール内のテキストを編集すると、対応する XML 要素が自動的に更新されます。 同様に、カスタム XML 部分の要素の値が変更されると、その XML 要素にバインドされているコンテンツ コントロールに新しいデータが表示されます。 詳細については、[コンテンツ コントロール](../vsto/content-controls.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [ドキュメント レベルのカスタマイズにおける XML スキーマとデータ](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

@@ -41,7 +41,7 @@ ms.locfileid: "56643575"
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Office の使用状況を 32 ビットと 64 ビットの両方を有効にします。
 既定の build ターゲットは、ソリューションは、特定のビット数でのみ使用するライブラリに依存していない限り 32 ビット (x86) と 64 ビット (x64) の両方をサポートする必要があります。 Office の 64 ビット版は特にビッグ データ環境での導入に増加します。 32 ビットと 64 ビットの両方のサポートやすく、ユーザーが Office の 32 ビットおよび 64 ビットのバージョン間の遷移です。
 
-VBA コードを記述するとき使用して 64 ビットの安全は declare ステートメントし、適切な変数を変換します。 さらに、各ビット数のコードを提供することで、32 ビットまたは 64 ビット バージョンの Office を実行しているユーザーの間でドキュメントを共有できることを確認します。 詳細については、次を参照してください。 [64 ビットの Visual Basic アプリケーションの概要の](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview)します。
+VBA コードを記述するとき使用して 64 ビットの安全は declare ステートメントし、適切な変数を変換します。 さらに、各ビット数のコードを提供することで、32 ビットまたは 64 ビット バージョンの Office を実行しているユーザーの間でドキュメントを共有できることを確認します。 詳細については、[64 ビットの Visual Basic アプリケーションの概要の](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview)を参照してください。
 
 ## <a name="support-restricted-environments"></a>制限された環境をサポートします。
 ソリューションでは、ユーザー アカウントの昇格または管理者特権は必要ありません必要があります。 さらに、設定または変更するのには、ソリューションが依存する必要があります。

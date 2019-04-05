@@ -1,14 +1,9 @@
 ---
-title: '1715: 識別子は正しいプレフィックスをいなければなりません |Microsoft Docs'
-ms.custom: ''
+title: CA1715:識別子は正しいプレフィックスを含むこと |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1715
 - IdentifiersShouldHaveCorrectPrefix
@@ -20,23 +15,23 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e0e3d1290f95872c176447fb834c09bef036e784
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cece70c942b62390e0ba3e96c57c1c46c4dd46fa
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205908"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59003066"
 ---
-# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: 識別子は正しいプレフィックスを含んでいなければなりません
+# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715:識別子は正しいプレフィックスを含んでいなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。 [CA1715: 識別子は正しいプレフィックスを含むこと](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix)docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください[CA1715:。識別子は正しいプレフィックスを含むこと](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix)docs.microsoft.com でリリースされました。  
   
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldHaveCorrectPrefix|  
 |CheckId|CA1715|  
-|カテゴリ|Microsoft.Naming|  
+|Category|Microsoft.Naming|  
 |互換性に影響する変更点|– インターフェイスで発生した場合。<br /><br /> 改行のジェネリック型パラメーターで発生したときにします。|  
   
 ## <a name="cause"></a>原因  
@@ -90,5 +85,4 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4.vb#1)]  
   
 ## <a name="related-rules"></a>関連規則  
- [CA1722: 識別子は不適切なプレフィックスを含むことはできません。](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
-
+ [CA1722:識別子には、不適切なプレフィックスはありません。](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

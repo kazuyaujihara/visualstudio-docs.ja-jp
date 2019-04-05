@@ -21,7 +21,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56616782"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>方法: アプリケーションにカスタム作業ウィンドウを追加します。
-  VSTO アドインを使用して、上記にリストしたアプリケーションにカスタム作業ウィンドウを追加できます。 詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
+  VSTO アドインを使用して、上記にリストしたアプリケーションにカスタム作業ウィンドウを追加できます。 詳細については、[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)を参照してください。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -55,7 +55,7 @@ ms.locfileid: "56616782"
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]
 
     > [!NOTE]
-    >  このコードは、カスタム作業ウィンドウをアプリケーションのアクティブ ウィンドウに関連付けます。 一部のアプリケーションでは、他のドキュメントやアプリケーションのアイテムで作業ウィンドウが表示されるように、このコードを変更する場合があります。 詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
+    >  このコードは、カスタム作業ウィンドウをアプリケーションのアクティブ ウィンドウに関連付けます。 一部のアプリケーションでは、他のドキュメントやアプリケーションのアイテムで作業ウィンドウが表示されるように、このコードを変更する場合があります。 詳細については、[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Office UI のカスタマイズ](../vsto/office-ui-customization.md)

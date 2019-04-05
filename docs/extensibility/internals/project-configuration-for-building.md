@@ -53,7 +53,7 @@ ms.locfileid: "56636783"
 
  プロジェクトの依存関係を実装したら、オートメーション モデルでの依存関係をプログラムで操作できます。 呼び出す<xref:EnvDTE.SolutionBuild.BuildDependencies%2A>オートメーション モデル。 ソリューションのビルド マネージャーの構成とそのプロパティの直接操作できる使用可能な API レベルの VSIP インターフェイスはありません。
 
- さらに、プロジェクトの依存関係 ウィンドウのグリッドを行うことができます。 詳細については、次を参照してください。[プロパティ表示グリッド](../../extensibility/internals/properties-display-grid.md)します。
+ さらに、プロジェクトの依存関係 ウィンドウのグリッドを行うことができます。 詳細については、[プロパティ表示グリッド](../../extensibility/internals/properties-display-grid.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)

@@ -1,11 +1,8 @@
 ---
 title: '方法: 引数デザイナーを使用して |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
@@ -14,15 +11,15 @@ ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 81b24b8c0344cc6a8cf1559126a4faf0bc2b6f4e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9844745951be9c29bc9dd624db47991ab2437692
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206623"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976585"
 ---
-# <a name="how-to-use-the-argument-designer"></a>引数デザイナーを使用する方法
+# <a name="how-to-use-the-argument-designer"></a>方法: 引数デザイナーを使用する
 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] の以前のバージョンと比べ、引数デザイナーを使用した場合は、アクティビティとの間のデータの受け渡しを簡単に実行できます。 デザイナーにアクセスする をクリックして、**引数**デザイン キャンバスの左下隅のボタンをクリックします。 デザイナーには、表形式で表示され、以外の各列見出しで並べ替えることができますを引数のリストが含まれています、**既定値**列。 各引数には、名前、方向 (入力、出力、入力/出力、またはプロパティ)、型、および既定の式の値 (存在する場合) が含まれます。 名前および既定の式の値は編集可能なテキスト フィールドで、型および方向はドロップダウンです。 [!INCLUDE[crabout](../includes/crabout-md.md)] 引数を参照してください[変数と引数](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)します。  
   
 ### <a name="to-create-a-new-argument"></a>新しい引数を作成するには  

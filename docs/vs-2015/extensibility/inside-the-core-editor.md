@@ -1,26 +1,21 @@
 ---
 title: コア エディター内で |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61484c9d01022b9f3b860f0c7b78dd3aedc045f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798548"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977200"
 ---
 # <a name="inside-the-core-editor"></a>コア エディター内で
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51798548"
  [レガシ API のテキスト バッファー イベント](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  テキスト バッファー イベントの通知に使用されるインターフェイスの一覧を示します。  
   
- [方法: レガシ API でテキスト バッファー イベントを登録する](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [方法: テキスト バッファー イベント、レガシ API の登録します。](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  テキスト バッファー イベントのことをお勧めする方法について説明します。  
   
  [グローバル設定を監視するためのテキスト マネージャーの使用](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -70,7 +65,7 @@ ms.locfileid: "51798548"
  制御コード文字装飾を言語サービスのインスタンス化について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
- [チュートリアル: コア エディターの作成とエディター ファイルの種類の登録](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [チュートリアル: コア エディターを作成してエディター ファイルの種類を登録します。](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  マネージ コードからのコア エディターを起動する方法についての詳細な手順について説明します。  
   
  [ドロップダウン バー](../extensibility/drop-down-bar.md)  
@@ -79,9 +74,8 @@ ms.locfileid: "51798548"
  [レガシ API でのテキスト マーカーの使用](../extensibility/using-text-markers-with-the-legacy-api.md)  
  テキスト マーカーとそのコア エディターでの使用方法の概念について説明し、アクセスし、テキスト マーカーの管理に使用されるインターフェイスを一覧表示します。  
   
- [方法: 標準のテキスト マーカーを追加する](../extensibility/how-to-add-standard-text-markers.md)  
+ [方法: 標準のテキスト マーカーを追加します。](../extensibility/how-to-add-standard-text-markers.md)  
  テキスト マーカーを作成する方法と、ショートカット メニューにカスタム コマンドを追加する方法に関する手順について説明します。  
   
- [方法: カスタム テキスト マーカーを作成する](../extensibility/how-to-create-custom-text-markers.md)  
+ [方法: カスタム テキスト マーカーを作成します。](../extensibility/how-to-create-custom-text-markers.md)  
  サービスとしてのマーカーの種類を指定する方法とカスタム テキスト マーカーを作成する方法の詳細手順について説明します。
-

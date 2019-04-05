@@ -1,12 +1,9 @@
 ---
 title: 作成し、Tableadapter の構成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24f53af16bcab0e3ff631a7c264f139f94d92232
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917649"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962819"
 ---
 # <a name="create-and-configure-tableadapters"></a>Tableadapter の作成および構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ TableAdapter を使用すると、アプリケーションとデータベース�
   
  新しい TableAdapter をツールボックスからドラッグした場合と、**データセット デザイナー**にフォーカスをウィザードの指示、TableAdapter に接続する必要があるデータ ソースを指定してどのような種類のコマンドは、通信に使用する必要がありますが、データベース、SQL ステートメントまたはストアド プロシージャ。 これは、既にデータ ソースに関連付けられた TableAdapter を構成する場合は表示されなくなります。  
   
--   使用して、**データベースに直接更新を送信するためのメソッドを作成する**オプションは設定に相当、`GenerateDBDirectMethods`プロパティを true にします。 元の SQL ステートメントが十分な情報を提供していないか、クエリは更新可能なクエリではない場合は、オプションは使用できません。 この状態が発生する、たとえば、**参加**クエリと 1 つの (スカラー) 値を返すクエリです。  
+-   使用して、**データベースに直接更新を送信するためのメソッドを作成する**オプションは設定に相当、`GenerateDBDirectMethods`プロパティを true にします。 元の SQL ステートメントに十分な情報が含まれていないか、クエリが更新可能なクエリではない場合、このオプションは使用できません。 この状態が発生する、たとえば、**参加**クエリと 1 つの (スカラー) 値を返すクエリです。  
   
 -   データベースの適切なアクセス許可がある場合、基になるデータベースで、新しいストアド プロシージャを作成するオプションがあります。 これらのアクセス許可を持っていない場合は、このオプションはできません。  
   
@@ -79,7 +76,7 @@ TableAdapter を使用すると、アプリケーションとデータベース�
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>新しいクエリを使用して、TableAdapter クエリ構成ウィザードを開始するには  
   
-1.  データセットを開き、**データセット デザイナー**します。  
+1.  **データセット デザイナー**でご自分のデータセットを開きます。  
   
 2.  新しいクエリを作成する場合は、ドラッグ、**クエリ**オブジェクトから、**データセット**のタブ、**ツールボックス**上に、 <xref:System.Data.DataTable>、または選択**クエリの追加**TableAdapter のショートカット メニューから。 ドラッグすることも、**クエリ**オブジェクトの空の領域に、**データセット デザイナー**、関連付けられていない TableAdapter を作成する<xref:System.Data.DataTable>します。 これらのクエリを返す単一の (スカラー) 値または実行 UPDATE、INSERT、または、データベースに対するコマンドの削除のみできます。  
   
@@ -116,4 +113,3 @@ TableAdapter を使用すると、アプリケーションとデータベース�
   
 ## <a name="see-also"></a>関連項目  
  [TableAdapters を使用してデータセットを入力する](../data-tools/fill-datasets-by-using-tableadapters.md)
-

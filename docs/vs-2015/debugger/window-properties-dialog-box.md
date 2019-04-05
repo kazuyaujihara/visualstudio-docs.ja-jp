@@ -1,27 +1,22 @@
 ---
 title: ウィンドウのプロパティ ダイアログ ボックス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b10fb130e5f2f584369a363491c5317e83aaf80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9eb07b20c08945b6a9f253d0ab634dca1c767d59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773965"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973606"
 ---
 # <a name="window-properties-dialog-box"></a>[ウィンドウ プロパティ] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +24,19 @@ ms.locfileid: "51773965"
 特定のウィンドウの詳細を確認するには、このダイアログ ボックスを使用します。 このダイアログ ボックスを表示するには、フォーカスを移動、 [Windows ビュー](../debugger/windows-view.md)ウィンドウ。 ツリーで、ウィンドウの任意のノードを選択し、**プロパティ**から、**ビュー**メニュー。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [[全般 タブ。ウィンドウのプロパティ] ダイアログ ボックス](../debugger/general-tab-window-properties-dialog-box.md)  
+ [[全般] タブ、[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/general-tab-window-properties-dialog-box.md)  
  選択したウィンドウに関する情報が表示されます。  
   
- [スタイルタブウィンドウのプロパティ ダイアログ ボックス](../debugger/styles-tab-window-properties-dialog-box.md)  
+ [スタイルタブ[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/styles-tab-window-properties-dialog-box.md)  
  選択したウィンドウに適用されるスタイルを示しています。  
   
- [Windows タブ。ウィンドウのプロパティ ダイアログ ボックス](../debugger/windows-tab-window-properties-dialog-box.md)  
+ [[Windows] タブ、[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/windows-tab-window-properties-dialog-box.md)  
  選択したウィンドウに関連する windows 上の情報を表示します。  
   
- [[クラス タブウィンドウのプロパティ] ダイアログ ボックス](../debugger/class-tab-window-properties-dialog-box.md)  
+ [[クラス] タブ、[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/class-tab-window-properties-dialog-box.md)  
  選択したウィンドウのクラスに情報が表示されます。  
   
- [[プロセス タブ。ウィンドウのプロパティ] ダイアログ ボックス](../debugger/process-tab-window-properties-dialog-box.md)  
+ [[プロセス] タブ、[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/process-tab-window-properties-dialog-box.md)  
  選択したウィンドウのプロセスを識別します。  
   
 ## <a name="related-sections"></a>関連項目  
@@ -65,6 +60,3 @@ ms.locfileid: "51773965"
   
  [Spy++ の使用](../debugger/using-spy-increment.md)  
  Spy++ ツールを紹介し、使用方法について説明します。
-
-
-

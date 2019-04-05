@@ -1,27 +1,22 @@
 ---
 title: 相互運用機能アセンブリを使用してコマンドのステータスの特定 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, determining command status
 - command handling with interop assemblies, status
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1983f66158c00e5812823bbbf36eeea3aa139ea8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc67123e082258932ab5df6613941f869d6049a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789305"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977700"
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>相互運用機能アセンブリを使用したコマンドのステータスの特定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ VSPackage をする必要がありますの追跡を処理できるコマンド�
 ## <a name="see-also"></a>関連項目  
  [Vspackage がユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [実装](../../extensibility/internals/command-implementation.md)
-

@@ -1,31 +1,28 @@
 ---
 title: 関連付けを作成できません&lt;アソシエーション名&gt;-プロパティの型が一致しない |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 674a7de3bf3b4988bfd92390305a03c968d1dbe2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1a4a8a8dfdbf34a52e48a47d691436188cca9c70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268516"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976204"
 ---
-# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>関連付けを作成できません&lt;アソシエーション名&gt;-プロパティの型が一致しません
+# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>関連付け &lt;association name&gt; を作成できません - プロパティの型が一致しません。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-関連付けを作成できません\<アソシエーション名 >-プロパティの型が一致しません。 プロパティに一致する型がありません:\<プロパティ名 >。  
+関連付け \<association name> を作成できません - プロパティの型が一致しません。 プロパティに一致する型がありません: \<property names>。  
   
- アソシエーションが定義されている選択した**関連プロパティ**で、**関連付けエディター**  ダイアログ ボックス。 関連付けの両側のプロパティは、同じデータ型である必要があります。  
+ 関連付けは、**[関連付けエディター]** ダイアログ ボックスで選択された **[関連付けのプロパティ]** によって定義されます。 関連付けの両側のプロパティは、同じデータ型である必要があります。  
   
  メッセージに示されているプロパティが同じデータ型ではありません。  
   
@@ -33,14 +30,13 @@ ms.locfileid: "49268516"
   
 1.  メッセージを確認し、メッセージで示されているプロパティに注目します。  
   
-2.  クリックして**OK**ダイアログ ボックスを閉じます。  
+2.  **[OK]** をクリックしてダイアログ ボックスを閉じます。  
   
-3.  検査、**関連プロパティ**同じデータ型のプロパティを選択します。  
+3.  **[関連付けのプロパティ]** を調べ、同じデータ型のプロパティを選択します。  
   
 4.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: LINQ to SQL クラス (O/R デザイナー) の間の関連付け (リレーションシップ) の作成](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
+ [方法: LINQ to SQL クラス (O/R デザイナー) 間の関連付け (リレーションシップ) を作成します。](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
  [チュートリアル: LINQ to SQL クラス (O/R デザイナー) を作成します。](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
-

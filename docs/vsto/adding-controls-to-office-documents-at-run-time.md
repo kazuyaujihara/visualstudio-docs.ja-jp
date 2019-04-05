@@ -49,11 +49,11 @@ ms.locfileid: "56600842"
 
  これらのオブジェクトにアクセスする方法は、開発しているプロジェクトの種類によって異なります。
 
--   Excel のドキュメント レベルのプロジェクトでは、 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> クラス、 `Sheet1`クラス、および `Sheet2`クラスの `Sheet3` プロパティを使用します。 これらのクラスの詳細については、次を参照してください。 [Worksheet ホスト項目](../vsto/worksheet-host-item.md)します。
+-   Excel のドキュメント レベルのプロジェクトでは、 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> クラス、 `Sheet1`クラス、および `Sheet2`クラスの `Sheet3` プロパティを使用します。 これらのクラスの詳細については、[Worksheet ホスト項目](../vsto/worksheet-host-item.md)を参照してください。
 
--   Word のドキュメント レベルのプロジェクトでは、 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> クラスの `ThisDocument` プロパティを使用します。 このクラスの詳細については、次を参照してください。 [Document ホスト項目](../vsto/document-host-item.md)します。
+-   Word のドキュメント レベルのプロジェクトでは、 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> クラスの `ThisDocument` プロパティを使用します。 このクラスの詳細については、[Document ホスト項目](../vsto/document-host-item.md)を参照してください。
 
--   Excel または Word の VSTO アドイン プロジェクトで使用して、`Controls`のプロパティを<xref:Microsoft.Office.Tools.Excel.Worksheet>または<xref:Microsoft.Office.Tools.Word.Document>実行時に生成します。 実行時にこれらのオブジェクトを生成する詳細については、次を参照してください。[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)します。
+-   Excel または Word の VSTO アドイン プロジェクトで使用して、`Controls`のプロパティを<xref:Microsoft.Office.Tools.Excel.Worksheet>または<xref:Microsoft.Office.Tools.Word.Document>実行時に生成します。 実行時にこれらのオブジェクトを生成する詳細については、[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)を参照してください。
 
 ### <a name="add-controls"></a>コントロールを追加します。
  <xref:Microsoft.Office.Tools.Excel.ControlCollection> 型と <xref:Microsoft.Office.Tools.Word.ControlCollection> 型には、ドキュメントとワークシートにホスト コントロールや Windows フォームのコモン コントロールを追加するために使用できるヘルパー メソッドが含まれています。 各メソッドの名前は、 `Add`*コントロール クラス*という形式になっています。ここで、 *コントロール クラス* は、追加するコントロールのクラス名です。 たとえば、ドキュメントに <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを追加するには、 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> メソッドを使用します。
@@ -90,9 +90,9 @@ ms.locfileid: "56600842"
 
 - [方法: Word 文書に Bookmark コントロールを追加します。](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 
-ホスト コントロールの詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
+ホスト コントロールの詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)を参照してください。
 
-ドキュメントを保存して閉じると、動的に作成したすべてのホスト コントロールはそれぞれイベントから切断され、データ バインディング機能も失われます。 ソリューションにコードを追加すれば、ドキュメントが再び開かれる時点でホスト コントロールを再作成するようにできます。 詳細については、次を参照してください。 [Office ドキュメントでのダイナミック コントロールを永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)します。
+ドキュメントを保存して閉じると、動的に作成したすべてのホスト コントロールはそれぞれイベントから切断され、データ バインディング機能も失われます。 ソリューションにコードを追加すれば、ドキュメントが再び開かれる時点でホスト コントロールを再作成するようにできます。 詳細については、[Office ドキュメントでのダイナミック コントロールを永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)を参照してください。
 
 > [!NOTE]
 > <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>、 <xref:Microsoft.Office.Tools.Word.XMLNode>、および <xref:Microsoft.Office.Tools.Word.XMLNodes>の各ホスト コントロールは、プログラムでドキュメントに追加することができないため、ヘルパー メソッドは用意されていません。
@@ -100,7 +100,7 @@ ms.locfileid: "56600842"
 ##  <a name="WindowsForms"></a> Windows フォーム コントロールをドキュメントに追加します。
  Windows フォーム コントロールをプログラムでドキュメントに追加する場合は、コントロールの場所とコントロールを一意に識別する名前を指定する必要があります。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] が、各コントロールのヘルパー メソッドを提供します。 これらのメソッドはオーバーロードされているため、コントロールの場所として範囲または特定の座標のいずれかを渡すことができます。
 
- ドキュメントを保存して閉じると、動的に作成されたすべての Windows フォーム コントロールはドキュメントから削除されます。 ソリューションにコードを追加すれば、ドキュメントが再び開かれる時点でコントロールを再作成するようにできます。 VSTO アドインを使用してダイナミック Windows フォーム コントロールを作成する場合は、コントロールの ActiveX ラッパーがドキュメントに残されます。 詳細については、次を参照してください。 [Office ドキュメントでのダイナミック コントロールを永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)します。
+ ドキュメントを保存して閉じると、動的に作成されたすべての Windows フォーム コントロールはドキュメントから削除されます。 ソリューションにコードを追加すれば、ドキュメントが再び開かれる時点でコントロールを再作成するようにできます。 VSTO アドインを使用してダイナミック Windows フォーム コントロールを作成する場合は、コントロールの ActiveX ラッパーがドキュメントに残されます。 詳細については、[Office ドキュメントでのダイナミック コントロールを永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)を参照してください。
 
 > [!NOTE]
 >  Windows フォーム コントロールは、保護されているドキュメントにはプログラムで追加できません。 コントロールを追加するために、Word 文書または Excel ワークシートの保護をプログラムで解除する場合は、ドキュメントを閉じるときにコントロールの ActiveX ラッパーを削除するコードを追加で記述する必要があります。 コントロールの ActiveX ラッパーは、保護されたドキュメントから自動的には削除されません。

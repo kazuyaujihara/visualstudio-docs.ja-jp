@@ -1,24 +1,19 @@
 ---
 title: 'チュートリアル: Displaying Light Bulb Suggestions |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7e5bf7ad795615e70e990dd29c05f5efe3a1c78
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1e13ce65888ace73ca58bfbc5690330fd8265ad8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963375"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>チュートリアル: 電球アイコンによる提案の表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +22,9 @@ ms.locfileid: "51781102"
   
  Visual c# および Visual Basic のエディターで記述して、自動的に電球を表示するアクションを含む独自のコード アナライザーをパッケージ化する .NET コンパイラ プラットフォーム ("Roslyn") を使用することもできます。 詳細については次を参照してください:  
   
-- [方法: c# 診断とコード修正を書き込む](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [方法: C# の診断とコード修正を記述します。](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
-- [方法: Visual Basic の診断とコード修正を書き込む](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [方法: Visual Basic の診断とコード修正を記述します。](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
   C++ などの他の言語では、その関数のスタブ実装を作成する提案など、いくつかのクイック アクションの電球も提供します。  
   
@@ -41,7 +36,7 @@ ms.locfileid: "51781102"
   
   ![電球のプレビュー](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
-  電球を使用して、独自の推奨されるアクションを提供することができます。 たとえば、新しい行に中かっこを開くを移動または前の行の末尾に移動するアクションを提供できます。 次のチュートリアルでは、現在の単語の上に表示される電球を作成する方法と、2 つのアクションを提案が:**大文字に変換**と**小文字に変換**します。  
+  電球を使用して、独自の推奨されるアクションを提供することができます。 たとえば、新しい行に中かっこを開くを移動または前の行の末尾に移動するアクションを提供できます。 次のチュートリアルでは、現在の単語の上に表示される電球を作成する方法とが 2 つのアクションを提案します。**大文字に変換**と**小文字に変換**します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
@@ -370,4 +365,3 @@ ms.locfileid: "51781102"
      ![拡大電球のテスト](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  最初の操作をクリックすると、現在の単語内のすべてのテキストが大文字に変換されます。 2 つ目の操作をクリックすると、すべてのテキストが小文字に変換されます。
-

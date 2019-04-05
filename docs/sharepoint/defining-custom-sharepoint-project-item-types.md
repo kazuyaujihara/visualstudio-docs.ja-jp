@@ -33,7 +33,7 @@ ms.locfileid: "56604824"
 
 - プロジェクト項目にカスタム プロパティを追加します。 プロパティを表示する、**プロパティ**ウィンドウで、プロジェクト項目を選択すると**ソリューション エクスプ ローラー**します。 詳細については、「[方法 :カスタム SharePoint プロジェクト項目の種類にプロパティを追加](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)します。
 
-  Visual Studio で、プロジェクト項目を使用するには、他の開発者が有効にする、.spdata ファイルを作成し、プロジェクト項目に関連付けられているプロジェクト テンプレートまたは項目テンプレートを作成します。 詳細については、次を参照してください。[項目テンプレートとの SharePoint プロジェクト アイテムのプロジェクト テンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)します。
+  Visual Studio で、プロジェクト項目を使用するには、他の開発者が有効にする、.spdata ファイルを作成し、プロジェクト項目に関連付けられているプロジェクト テンプレートまたは項目テンプレートを作成します。 詳細については、[項目テンプレートとの SharePoint プロジェクト アイテムのプロジェクト テンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)を参照してください。
 
 ## <a name="understand-the-relationship-between-project-item-types-and-project-item-instances"></a>プロジェクト項目の種類とプロジェクト項目のインスタンス間のリレーションシップを理解します。
  SharePoint プロジェクト項目の種類を定義するときに、Visual Studio は、SharePoint プロジェクトに関連付けられている型のプロジェクト項目が追加されたときに、拡張機能を読み込みます。 例では、新しいを定義する場合の**カスタム アクション**プロジェクト項目の種類、ユーザーを追加するときに、Visual Studio が拡張機能を読み込む、**カスタム アクション**プロジェクトにプロジェクト項目。 Visual Studio では、関連付けられているプロジェクト項目の種類のすべてのインスタンス拡張機能の同じインスタンスを使用します。 ユーザーが 2 つ目を追加する場合、前の例で**カスタム アクション**プロジェクト項目をプロジェクトには、2 つ目のプロジェクト項目をカスタマイズする、拡張機能の同じインスタンスを使用します。

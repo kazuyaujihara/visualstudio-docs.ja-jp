@@ -1,12 +1,9 @@
 ---
 title: コンパートメント シェイプのプロパティ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.dsltools.dsldesigner.compartmentshape
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 9a9e112d-210d-413b-a44f-0e976a4a78bc
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bb5730093a9eda6464bd6b67fa09976a4e9cd2f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 69fac0b8ef5c17a8d66d32730e189f2813aa1158
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216386"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963579"
 ---
 # <a name="properties-of-compartment-shapes"></a>コンパートメント シェイプのプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +31,7 @@ ms.locfileid: "49216386"
   
 |プロパティ|説明|既定値|  
 |--------------|-----------------|-------------|  
-|既定値は、折りたたみの状態を展開します。|場合`Expanded`コンパートメントは作成時に表示されます。 場合`Collapsed`、いません。|展開済み|  
+|既定値は、折りたたみの状態を展開します。|場合`Expanded`コンパートメントは作成時に表示されます。 場合`Collapsed`、いません。|[展開済み]|  
 |[塗りつぶしの色]|この図形の塗りつぶしの色。|白|  
 |塗りつぶしのグラデーション モード|この図形の塗りつぶしのグラデーション モード。|[水平方向]|  
 |geometry|この図形 (四角形または角丸長方形) のジオメトリ。|四角形|  
@@ -45,7 +42,7 @@ ms.locfileid: "49216386"
 |外枠の太さ|この図形のアウトラインの太さです。|0.03125|  
 |テキストの色|この図形に関連付けられているテキスト デコレーターに使用する色。|黒|  
 |アクセス修飾子|コンパートメント シェイプへのアクセスのレベル (`public`または`internal`)。|Public|  
-|カスタム属性|このコンパートメント シェイプから生成されるソース コードのクラスに属性を追加するために使用|\<なし >|  
+|カスタム属性|このコンパートメント シェイプから生成されるソース コードのクラスに属性を追加するために使用|\<none>|  
 |Double 型を生成します派生。|場合`True`、基底クラスと (オーバーライドによってカスタマイズをサポート) する部分クラスの両方が生成されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|False|  
 |カスタム コンス トラクターがあります。|場合`True`、カスタム コンス トラクターは、ソース コードで提供されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|False|  
 |継承修飾子|コンパートメント シェイプから生成されるソース コードのクラスの継承の種類について説明します (`none`、`abstract`または`sealed`)。|なし|  
@@ -53,17 +50,14 @@ ms.locfileid: "49216386"
 |名前|この図形の名前。|現在の名前|  
 |名前空間|この図形に関連付ける名前空間。|現在の名前空間|  
 |ツールヒントの種類|(固定、変数、またはなし)、ツールヒントを定義する方法。 、しの値を固定する場合、`Fixed Tooltip Text`プロパティ、ツール ヒントとして使用されます。 変数の場合、ツールヒントがカスタム コードで定義します。|none|  
-|メモ|この図形に関連付けられている非公式のメモ。|\<なし >|  
+|メモ|この図形に関連付けられている非公式のメモ。|\<none>|  
 |初期の高さ|インチ単位で、この図形の初期の高さ。 コンパートメント図形の場合は、これは、ヘッダー セクションのみの高さとサイズを変更できません。|1|  
 |初期の幅|インチ単位で、この図形の初期の幅。|1.5|  
 |プロパティとして公開されている塗りつぶしの色<br /><br /> 公開された塗りつぶしのグラデーション モード<br /><br /> アウトラインの色をプロパティとして公開<br /><br /> 輪郭の実線/点線スタイルをプロパティとして公開<br /><br /> アウトラインの太さのプロパティとして公開されています。<br /><br /> テキストの色を公開します。|場合`True`図形の規定されたプロパティを設定できます。 この設定は、シェイプの定義を右クリックし、クリックして**公開追加**します。|False|  
-|説明|生成されたデザイナーを文書化するために使用します。|\<なし >|  
-|表示名|この図形に生成されたデザイナーに表示される名前です。|\<なし >|  
-|固定のツールヒント テキスト|固定のツールヒントに使用されるテキスト。|\<なし >|  
-|ヘルプ キーワード|この図形の F1 ヘルプのインデックスを作成するために使用するキーワードです。|\<なし >|  
+|説明|生成されたデザイナーを文書化するために使用します。|\<none>|  
+|表示名|この図形に生成されたデザイナーに表示される名前です。|\<none>|  
+|固定のツールヒント テキスト|固定のツールヒントに使用されるテキスト。|\<none>|  
+|ヘルプ キーワード|この図形の F1 ヘルプのインデックスを作成するために使用するキーワードです。|\<none>|  
   
 ## <a name="see-also"></a>関連項目  
- [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

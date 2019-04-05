@@ -1,23 +1,20 @@
 ---
 title: 制御フロー アクティビティ デザイナー |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e852bfa5b392c6ffa758678fa83dabd8a8c97f54
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 25f8db1f6d14692538fe7f61ed2f9dbd37e0bd29
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303616"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002775"
 ---
 # <a name="control-flow-activity-designers"></a>制御フロー アクティビティ デザイナー
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]には、システムによって提供されるさまざまなアクティビティが用意されており、これらを、ワークフローの構築時に使用できます。 このセクションでは、ワークフロー内のフローの制御を目的とした、システムによって提供されるアクティビティを紹介します。 次のトピックでは、これらのアクティビティについて説明し、その使用方法についてのガイドラインを示します。  
@@ -26,7 +23,7 @@ ms.locfileid: "49303616"
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  指定した条件が評価されるまでに本体内に 1 回以上含まれるアクティビティを実行します。 **true**します。  
   
- [ForEach\<T >](http://msdn.microsoft.com/en-us/a680cddd-2760-497a-b27b-c023fcbc6f33)  
+ [ForEach\<T>](foreach-t-activity-designer.md)  
  指定したコレクション内の各項目に対して、本文に含まれるアクティビティを実行します。  
   
  [If](../workflow-designer/if-activity-designer.md)  
@@ -47,7 +44,7 @@ ms.locfileid: "49303616"
  [Sequence](../workflow-designer/sequence-activity-designer.md)  
  順番に実行される、子アクティビティの順序付きコレクションが含まれます。  
   
- [スイッチ\<T >](http://msdn.microsoft.com/en-us/ce1aa634-c4db-4475-a1c8-a88478a57212)  
+ [Switch\<T>](switch-t-activity-designer.md)  
  指定した式を評価し、その評価から得られた値と一致する関連付けられたキーを持つアクティビティのコレクションから、特定のアクティビティを実行します。  
   
  [While](../workflow-designer/while-activity-designer.md)  

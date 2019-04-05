@@ -21,7 +21,7 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 Visual Studio のバージョンによっては、DGML 機能のサブセットのみをサポートしてを参照してください[アーキテクチャとモデリング ツールのバージョンのサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)します。
 
 > [!NOTE]
-> .dgml ファイルを編集するときは、各要素とその値に使用できる属性が IntelliSense によって識別されます。 属性で色を指定するには、一般的な色の名前 ("Blue" など) または ARGB 16 進値 ("#ffa0b1c3" など) を使用してください。 DGML では、WPF (Windows Presentation Foundation) 色定義形式の小さいサブセットを使用します。 詳細については、次を参照してください。 [Colors クラス](http://go.microsoft.com/fwlink/?LinkId=182345)します。
+> .dgml ファイルを編集するときは、各要素とその値に使用できる属性が IntelliSense によって識別されます。 属性で色を指定するには、一般的な色の名前 ("Blue" など) または ARGB 16 進値 ("#ffa0b1c3" など) を使用してください。 DGML では、WPF (Windows Presentation Foundation) 色定義形式の小さいサブセットを使用します。 詳細については、[Colors クラス](http://go.microsoft.com/fwlink/?LinkId=182345)を参照してください。
 
 ##  <a name="DGML"></a> DGML の構文
 

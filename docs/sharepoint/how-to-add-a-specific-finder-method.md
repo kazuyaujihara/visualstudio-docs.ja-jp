@@ -25,7 +25,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56615287"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>方法: 特定の Finder メソッドを追加します。
-  作成して、1 つのエンティティ インスタンスを返すことができます、 *Specificfinder*メソッド。 ビジネス データ接続 (BDC) サービスは、ユーザーがビジネス データ web パーツまたは外部の一覧でエンティティを選択すると Specificfinder メソッドを実行します。 詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+  作成して、1 つのエンティティ インスタンスを返すことができます、 *Specificfinder*メソッド。 ビジネス データ接続 (BDC) サービスは、ユーザーがビジネス データ web パーツまたは外部の一覧でエンティティを選択すると Specificfinder メソッドを実行します。 詳細については、[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
 ### <a name="to-create-a-specific-finder-method"></a>特定の Finder メソッドを作成するには
 
@@ -35,7 +35,7 @@ ms.locfileid: "56615287"
 
 2. メニュー バーで、**ビュー** > **その他の Windows**、 **BDC メソッドの詳細**します。
 
-    **BDC メソッドの詳細**ウィンドウが開きます。 そのウィンドウの詳細については、次を参照してください。 [BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)します。
+    **BDC メソッドの詳細**ウィンドウが開きます。 そのウィンドウの詳細については、[BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)を参照してください。
 
 3. **メソッドを追加する**一覧で、選択**特定 Finder メソッドの作成**です。
 
@@ -51,7 +51,7 @@ ms.locfileid: "56615287"
 
    - メソッドのメソッドのインスタンス。
 
-     詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+     詳細については、[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
 4. Visual Studio を開き**プロパティ**ウィンドウ。
 
@@ -65,11 +65,11 @@ ms.locfileid: "56615287"
 
 6. **メソッドの詳細**ウィンドウで、メソッドのメソッドのインスタンスを選択します。
 
-7. **プロパティ ウィンドウ**、設定、**パラメーター名を返す**プロパティ、メソッドの戻り値パラメーターの名前をします。 メソッド インスタンスのプロパティの詳細については、次を参照してください。 [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)します。
+7. **プロパティ ウィンドウ**、設定、**パラメーター名を返す**プロパティ、メソッドの戻り値パラメーターの名前をします。 メソッド インスタンスのプロパティの詳細については、[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)を参照してください。
 
 8. **ソリューション エクスプ ローラー**エンティティの場合に生成されたサービスのコード ファイルのショートカット メニューを開き、選択し、**コードの表示**します。
 
-    エンティティ サービス コード ファイルがコード エディターで開きます。 詳細については、エンティティ サービス コード ファイルは、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。
+    エンティティ サービス コード ファイルがコード エディターで開きます。 詳細については、エンティティ サービス コード ファイルは、[business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)を参照してください。
 
 9. Specific Finder メソッドにコードを追加します。 このコードは次のタスクを実行します。
 

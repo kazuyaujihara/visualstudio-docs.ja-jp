@@ -1,14 +1,9 @@
 ---
-title: '方法: ClickOnce 配置で個々 の前提条件のサポート URL を指定する |Microsoft Docs'
-ms.custom: ''
+title: '方法: サポート URL を指定の ClickOnce 配置で個々 の前提条件 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: bdd366cb8ac86f20e7457178f63aa553a0814158
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831576"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973924"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>方法 : ClickOnce 配置で個々の必要条件にサポート URL を指定する
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>方法: ClickOnce 配置で個々 の前提条件のサポートの URL を指定します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]数のクライアント コンピューターで使用する必要がある前提条件の展開をテストできます、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションを実行します。 必要な最小バージョンが含まれます、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]のバージョン、オペレーティング システムとすべてのアセンブリをグローバル アセンブリ キャッシュ (GAC) にプレインストールする必要があります。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]、ただし、インストールできませんこれらの前提条件のいずれか。前提条件が存在しない場合、インストールを中止し、インストールが失敗した理由を説明するダイアログ ボックスが表示されます。  
@@ -67,7 +62,7 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]数のクライアント 
   
     ```  
       <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
+        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
           <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
         </dependentAssembly>  
       </dependency>  
@@ -84,17 +79,14 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]数のクライアント 
     </compatibleFrameworks>  
     ```  
   
-7.  アプリケーション マニフェストを手動で変更した後、デジタル証明書を使用してアプリケーション マニフェストに再署名更新にも、配置マニフェストに再署名をする必要があります。 Mage.exe を使用する必要がありますまたは MageUI.exe SDK ツールを使用してこれらのファイルを再生成すると、このタスクを実行する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]手動で変更を消去します。 Mage.exe を使用してマニフェストに再署名する詳細については、次を参照してください。[方法: re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)します。  
+7.  アプリケーション マニフェストを手動で変更した後、デジタル証明書を使用してアプリケーション マニフェストに再署名更新にも、配置マニフェストに再署名をする必要があります。 Mage.exe を使用する必要がありますまたは MageUI.exe SDK ツールを使用してこれらのファイルを再生成すると、このタスクを実行する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]手動で変更を消去します。 Mage.exe を使用してマニフェストに再署名する詳細については、次を参照してください。[方法。アプリケーション マニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)します。  
   
 ## <a name="net-framework-security"></a>.NET Framework セキュリティ  
  サポート URL は、部分信頼で実行するアプリケーションがマークされている場合、ダイアログ ボックスでは表示されません。  
   
 ## <a name="see-also"></a>関連項目  
  [Mage.exe (マニフェストの生成および編集ツール)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [チュートリアル : ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [チュートリアル: ClickOnce アプリケーションを手動で展開します。](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [\<compatibleFrameworks > 要素](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)   
  [アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)
-
-
-

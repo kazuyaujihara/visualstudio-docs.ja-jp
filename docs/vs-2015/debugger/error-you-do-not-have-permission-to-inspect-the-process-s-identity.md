@@ -1,14 +1,9 @@
 ---
-title: 'エラー: 必要はありません、プロセスを検査するアクセス許可&#39;id |Microsoft Docs'
-ms.custom: ''
+title: エラー :プロセスを検査するアクセス許可がありません&#39;id |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -18,15 +13,15 @@ ms.assetid: 6233d060-85b8-42be-ae5f-bde7e1d0f241
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0974e38f9a0a901c97ca5dc3c9473d027095d67c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f173be87987cbc8bcfb3390dfdaaf5eab7501bb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809390"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974481"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>エラー: 必要はありません、プロセスを検査するアクセス許可&#39;id
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>エラー :プロセスを検査するアクセス許可がありません&#39;id
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 プロセスの ID を検査する権限がありません。 これは、システムの混が原因である可鉢があります。  
@@ -37,17 +32,17 @@ ms.locfileid: "51809390"
   
 1.  をクリックして**開始**を選択し**コントロール パネルの**です。  
   
-2.  コントロール パネルで、次のように選択します。**クラシック表示に切り替える**、必要に応じて、し、ダブルクリック**管理ツール**します。  
+2.  コントロール パネルで必要に応じて **[クラシック表示に切り替える]** を選択し、**[管理ツール]** をダブルクリックします。  
   
-3.  **管理ツール**ウィンドウで、ダブルクリックして**コンピュータの管理**します。  
+3.  **[管理ツール]** ウィンドウで、**[コンピューターの管理]** をダブルクリックします。  
   
-4.  コンピューターの管理 ウィンドウで、**サービスとアプリケーション**ノード。  
+4.  [コンピューターの管理] ウィンドウで、**[サービスとアプリケーション]** ノードを展開します。  
   
-5.  で、**サービスとアプリケーション**、 をクリックして**サービス**します。  
+5.  **[サービスとアプリケーション]** の **[サービス]** をクリックします。  
   
      右側のパネルにサービスの一覧が表示されます。  
   
-6.  **サービス**一覧で、右クリックして**ターミナル サービス**選び、**プロパティ**します。  
+6.  **[サービス]** 一覧の **[Terminal Services]** を右クリックして、**[プロパティ]** をクリックします。  
   
 7.  **ターミナル サービスのプロパティ**ウィンドウに移動して、**全般** タブで設定し、**スタートアップの種類**に**手動**。  
   
@@ -59,20 +54,17 @@ ms.locfileid: "51809390"
   
 ### <a name="to-enable-remote-desktop"></a>リモート デスクトップを有効にするには  
   
-1.  をクリックして**開始**し、右クリックし、**マイ コンピューター**します。  
+1.  **[スタート]** ボタンをクリックして、**[マイ コンピューター]** を右クリックします。  
   
 2.  **[プロパティ]** を選択します。  
   
-     **システム プロパティ**ウィンドウが表示されます。  
+     **[システムのプロパティ]** ウィンドウが表示されます。  
   
-3.  クリックして**リモート**します。  
+3.  **[リモート]** をクリックします。  
   
-4.  **リモート デスクトップ**、**ユーザーがこのコンピューターにリモート接続を許可する**。  
+4.  **[リモート デスクトップ]** の **[このコンピューターにユーザーがリモートで接続することを許可する]** をオンにします。  
   
 5.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>関連項目  
  [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

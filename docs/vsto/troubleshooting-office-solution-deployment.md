@@ -27,7 +27,7 @@ ms.locfileid: "54872262"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="troubleshoot-office-solutions-by-using-the-event-viewer"></a>イベント ビューアーを使用して Office ソリューションをトラブルシューティングします。
- Windows のイベント ビューアーを使用すると、Office ソリューションのインストール時またはアンインストール時に [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] でキャプチャされるエラー メッセージを表示できます。 イベント ロガーからのこれらのメッセージを使用して、インストールと配置の問題を解決できます。 詳細については、次を参照してください。 [Office ソリューションのイベント ログ](../vsto/event-logging-for-office-solutions.md)します。
+ Windows のイベント ビューアーを使用すると、Office ソリューションのインストール時またはアンインストール時に [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] でキャプチャされるエラー メッセージを表示できます。 イベント ロガーからのこれらのメッセージを使用して、インストールと配置の問題を解決できます。 詳細については、[Office ソリューションのイベント ログ](../vsto/event-logging-for-office-solutions.md)を参照してください。
 
 ## <a name="change-the-assembly-name-causes-conflicts"></a>アセンブリの名前を変更して競合を原因します。
  変更する場合、**アセンブリ名**値、**アプリケーション**のページ、**プロジェクト デザイナー**ソリューションを既にデプロイした後に、発行ツールを変更します1 つのセットアップ パッケージ*Setup.exe*ファイルと 2 つの配置マニフェスト。 2 つのマニフェスト ファイルを配置すると、次のような状況が発生する場合があります。
@@ -118,7 +118,7 @@ ms.locfileid: "54872262"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>Web から配置マニフェストを開くことで、ClickOnce ソリューションをインストールすることはできません。
  ユーザーは、Web で配置マニフェストを開くことにより、Office ソリューションをインストールできます。 ただし、インターネット インフォメーション サービス (IIS) のいくつかのインストールはブロック、 *.vsto*ファイル名拡張子。 Office ソリューションを配置するために使用する前に、IIS で MIME の種類を定義する必要があります。
 
- IIS 7 で MIME の種類を定義する方法については、次を参照してください。 [MIME の種類 (IIS7) 追加](http://technet.microsoft.com/library/cc725608(WS.10).aspx)します。
+ IIS 7 で MIME の種類を定義する方法については、[MIME の種類 (IIS7) 追加](http://technet.microsoft.com/library/cc725608(WS.10).aspx)を参照してください。
 
  拡張子を **.vsto** に、MIME の種類を " **application/x-ms-vsto**" に設定します。
 

@@ -31,7 +31,7 @@ ms.lasthandoff: 03/14/2019
 ms.locfileid: "57868173"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>方法: Visual Studio での Office プロジェクトを作成します。
-  使用することができます[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]VSTO アドインとドキュメント レベルの作成に Microsoft Office アプリケーション用のカスタマイズ。 これらの種類のプロジェクトの詳細については、次を参照してください。 [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)します。
+  使用することができます[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]VSTO アドインとドキュメント レベルの作成に Microsoft Office アプリケーション用のカスタマイズ。 これらの種類のプロジェクトの詳細については、[Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)を参照してください。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -44,13 +44,13 @@ ms.locfileid: "57868173"
     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
    > [!NOTE]
-   >  既定では、Office プロジェクトは [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] を対象とします。 詳細については、次を参照してください。 [.NET Framework クライアント プロファイル](/dotnet/framework/deployment/client-profile)します。
+   >  既定では、Office プロジェクトは [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] を対象とします。 詳細については、[.NET Framework クライアント プロファイル](/dotnet/framework/deployment/client-profile)を参照してください。
 
 2. 展開テンプレート ペインで、使用する言語のノードの下で**Office/sharepoint**します。
 
 3. 選択、 **Office アドイン**ノード。
 
-4. プロジェクト テンプレートの一覧で、VSTO アドイン プロジェクト テンプレートを選択します。 使用可能な VSTO アドイン プロジェクト テンプレートの一覧は、次を参照してください。 [Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)します。
+4. プロジェクト テンプレートの一覧で、VSTO アドイン プロジェクト テンプレートを選択します。 使用可能な VSTO アドイン プロジェクト テンプレートの一覧は、[Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)を参照してください。
 
    > [!NOTE]
    >  選択してもプロジェクト テンプレートが表示されない場合、 **Office アドイン**ノード、ことを確認します **.NET Framework 4**または後で、ダイアログ ボックスの上部にあるコンボ ボックスで選択されています。 Office プロジェクト テンプレートは、.NET Framework の両方のバージョンで表示されます。
@@ -88,7 +88,7 @@ ms.locfileid: "57868173"
    ::: moniker range="vs-2017"
 
    > [!NOTE]
-   > アドイン プロジェクトを作成すると、必ず保存されます。 アドイン プロジェクトを一時プロジェクトとして作成することはできません。 一時プロジェクトの詳細については、次を参照してください。[一時プロジェクト](../ide/creating-solutions-and-projects.md#create-a-temporary-project)します。
+   > アドイン プロジェクトを作成すると、必ず保存されます。 アドイン プロジェクトを一時プロジェクトとして作成することはできません。 一時プロジェクトの詳細については、[一時プロジェクト](../ide/creating-solutions-and-projects.md#create-a-temporary-project)を参照してください。
 
    ::: moniker-end
 
@@ -102,7 +102,7 @@ ms.locfileid: "57868173"
 
 3. **[Office アドイン]** ノードを選択します。
 
-4. プロジェクト テンプレートの一覧で、ドキュメント レベルのプロジェクト テンプレートを選択します。 使用できるドキュメント レベルのプロジェクト テンプレートの一覧は、次を参照してください。 [Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)します。
+4. プロジェクト テンプレートの一覧で、ドキュメント レベルのプロジェクト テンプレートを選択します。 使用できるドキュメント レベルのプロジェクト テンプレートの一覧は、[Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)を参照してください。
 
    > [!NOTE]
    > 選択してもプロジェクト テンプレートが表示されない場合、 **Office アドイン**ノード、ことを確認します **.NET Framework 4**または後で選択されています。
@@ -118,7 +118,7 @@ ms.locfileid: "57868173"
 
 7. 選択**新しい文書を作成**ソリューションでは、新しいドキュメントを作成または選択するかどうか**既存のドキュメントをコピー**を既存のドキュメントをカスタマイズする場合。
 
-    新しいドキュメントを作成する場合は、内の名前を指定、**名前**ボックスし、ドキュメントの形式を使用して、**形式**ボックス。 使用可能な形式の詳細については、次を参照してください。[のドキュメント レベル カスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)します。
+    新しいドキュメントを作成する場合は、内の名前を指定、**名前**ボックスし、ドキュメントの形式を使用して、**形式**ボックス。 使用可能な形式の詳細については、[のドキュメント レベル カスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)を参照してください。
 
     既存のドキュメントを使用する場合は、ドキュメントの場所を指定、 **、既存のドキュメントの完全なパス**ボックス。 使用できるパスは、絶対パスと UNC パスです。 ドキュメントへの HTTP パス、FTP パス、または他のプロトコル パスは使用しないでください。
 

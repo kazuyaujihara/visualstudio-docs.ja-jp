@@ -1,11 +1,8 @@
 ---
 title: ワークフロー デザイナーを使用したアプリケーションの開発 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - DefaultWorkflowDesigner
@@ -19,13 +16,13 @@ ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 71cde900802543a21a20bc02e95bcfedc50d5541
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ffefb9f6542bbbb44d732116a348045660cf78b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975128"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>ワークフロー デザイナーを使用したアプリケーションの開発
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]は、[!INCLUDE[wf](../includes/wf-md.md)] 開発環境内でホストされる [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] 内の [!INCLUDE[vs2010](../includes/vs2010-md.md)] アプリケーションをグラフィカルに作成してデバッグするためのビジュアルなデザイナーおよびデバッガーです。 テンプレートおよびアクティビティ デザイナーを使用して、複合ワークフロー アプリケーション、アクティビティ ライブラリ、または [!INCLUDE[indigo1](../includes/indigo1-md.md)] サービスを作成できます。 [!INCLUDE[crabout](../includes/crabout-md.md)] ワークフローを参照してください、 [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)します。  
@@ -42,7 +39,7 @@ ms.locfileid: "49259156"
   
 -   [!INCLUDE[vs2010](../includes/vs2010-md.md)] では、[!INCLUDE[wfd2](../includes/wfd2-md.md)] ワークフロー内で Visual Basic 式を作成するときに、[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]で IntelliSense の機能をすべて利用できます。  
   
--   デバッグ用の機能が XAML にも拡張されているため、XAML ワークフロー定義にブレークポイントを設定して、実行時に XAML コードにステップ インすることができます。ここでは、マネージ コードを扱う場合と同じように操作できます。  
+-   デバッグ用の機能が XAML にも拡張されているため、XAML ワークフロー定義にブレークポイントを設定して、実行時に XAML コードにステップ インすることができます。ここでは、マネージド コードを扱う場合と同じように操作できます。  
   
 -   [!INCLUDE[wfd2](../includes/wfd2-md.md)] の外側での[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の再ホストが、以前のバージョンに比べて大幅に簡略化され、数行のコードのみになりました。  
   

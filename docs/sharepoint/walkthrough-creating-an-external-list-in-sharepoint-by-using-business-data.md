@@ -46,7 +46,7 @@ ms.locfileid: "56600299"
 
 - サポート対象エディションの Windows と SharePoint
 
-- AdventureWorks サンプル データベースへのアクセス。 AdventureWorks データベースをインストールする方法の詳細については、次を参照してください。 [SQL Server サンプル データベース](http://go.microsoft.com/fwlink/?LinkID=117483)します。
+- AdventureWorks サンプル データベースへのアクセス。 AdventureWorks データベースをインストールする方法の詳細については、[SQL Server サンプル データベース](http://go.microsoft.com/fwlink/?LinkID=117483)を参照してください。
 
 ## <a name="create-a-project-that-contains-a-bdc-model"></a>BDC モデルを含むプロジェクトを作成します。
 
@@ -80,7 +80,7 @@ ms.locfileid: "56600299"
 
 2. SQL Server の AdventureWorks サンプル データベースへの接続を追加します。
 
-     詳細については、次を参照してください。[接続接続の追加/変更 (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)します。
+     詳細については、[接続接続の追加/変更 (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)を参照してください。
 
 3. **ソリューション エクスプローラー**で、プロジェクト ノードを選択します。
 
@@ -242,7 +242,7 @@ ms.locfileid: "56600299"
 プロジェクトを実行するときに、SharePoint サイトが表示され、Visual Studio は、ビジネス データ接続サービスにモデルを追加します。 Contact エンティティを参照する SharePoint の外部リストを作成します。 一覧で、AdventureWorks データベースで連絡先データが表示されます。
 
 > [!NOTE]
-> ソリューションをデバッグする前に、SharePoint のセキュリティ設定を変更する必要があります。 詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+> ソリューションをデバッグする前に、SharePoint のセキュリティ設定を変更する必要があります。 詳細については、[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
 1. **F5** キーを押します。
 

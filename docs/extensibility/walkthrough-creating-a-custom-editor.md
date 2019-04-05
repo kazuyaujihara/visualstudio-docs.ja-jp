@@ -18,7 +18,7 @@ ms.lasthandoff: 02/22/2019
 ms.locfileid: "56705386"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>チュートリアル: カスタム エディターを作成する
-VSPackage プロジェクト テンプレートは、C++ では、単純なカスタム エディターを作成できます。 VSPackage プロジェクト テンプレートは、c# または Visual Basic のプロジェクトをサポートしていません。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
+VSPackage プロジェクト テンプレートは、C++ では、単純なカスタム エディターを作成できます。 VSPackage プロジェクト テンプレートは、c# または Visual Basic のプロジェクトをサポートしていません。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、"[Visual Studio SDK をインストール](../extensibility/installing-the-visual-studio-sdk.md)"を参照してください。

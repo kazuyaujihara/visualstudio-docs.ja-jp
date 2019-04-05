@@ -66,7 +66,7 @@ ms.locfileid: "56620331"
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]
 
- 詳細については、次を参照してください。[マネージ スレッド処理のベスト プラクティス](/dotnet/standard/threading/managed-threading-best-practices)します。
+ 詳細については、[マネージ スレッド処理のベスト プラクティス](/dotnet/standard/threading/managed-threading-best-practices)を参照してください。
 
 ## <a name="modeless-forms"></a>モードレス フォーム
  モードレス フォームでは、フォームが表示されている間に何らかの種類のアプリケーションとの対話ができます。 ユーザーが、フォームとやり取りし、フォームが閉じることがなくアプリケーションを操作します。 Office オブジェクト モデルには、管理対象のモードレス フォーム; がサポートされていますただしが使用できない場合がバック グラウンド スレッドでします。

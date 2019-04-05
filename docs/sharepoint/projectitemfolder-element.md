@@ -52,7 +52,7 @@ ms.locfileid: "58322831"
 |[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint プロジェクト項目を表します。 この要素は、必要なルート要素の *.spdata*ファイル。|
 
 ## <a name="remarks"></a>Remarks
- マップされたフォルダーの詳細については、次を参照してください。[方法: 追加すると、マップされたフォルダーを削除する](../sharepoint/how-to-add-and-remove-mapped-folders.md)します。
+ マップされたフォルダーの詳細については、[方法: 追加すると、マップされたフォルダーを削除する](../sharepoint/how-to-add-and-remove-mapped-folders.md)を参照してください。
 
 ## <a name="element-information"></a>要素情報
 

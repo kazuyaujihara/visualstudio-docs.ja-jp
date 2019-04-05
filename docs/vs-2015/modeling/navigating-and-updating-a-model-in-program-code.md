@@ -1,25 +1,22 @@
 ---
 title: プログラム コードの移動およびモデルの更新 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1b9f53f1c2e28ce84cc59afa1d1db205da61e735
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863166"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963059"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>プログラム コードにおけるモデル内の移動およびモデルの更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ ms.locfileid: "49863166"
   
  [DocView と DocData](#docdata)  
   
- 図形、コネクタ、図、およびそれらの関係をモデル要素には、個別のトピックで説明します。 詳細については、次を参照してください。[方法: 移動し、図を更新](../misc/how-to-navigate-and-update-a-diagram.md)します。  
+ 図形、コネクタ、図、およびそれらの関係をモデル要素には、個別のトピックで説明します。 詳細については、「[方法 :移動し、図を更新](../misc/how-to-navigate-and-update-a-diagram.md)します。  
   
 ##  <a name="example"></a> DSL 定義の例  
  これは、このトピックの例については、DslDefinition.dsl の主要部分です。  
@@ -94,7 +91,7 @@ ms.locfileid: "49863166"
   
  `henry.Name = "Henry VIII";`  
   
- 場合は、DSL 定義で、プロパティの**種類**は**Calculated**を設定することはできません。 詳細については、次を参照してください。[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)します。  
+ 場合は、DSL 定義で、プロパティの**種類**は**Calculated**を設定することはできません。 詳細については、[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)を参照してください。  
   
 ### <a name="relationships"></a>リレーションシップ  
  DSL 定義で定義したドメイン リレーションシップでは、プロパティ、リレーションシップの両端にあるクラスの 1 つのペアになります。 プロパティの名前は、リレーションシップの両側にあるロールのラベルとして DslDefinition ダイアグラムに表示されます。 によって、ロールの多重度は、プロパティの型は、リレーションシップのもう一方の端にあるクラスまたはそのクラスのコレクションのいずれか。  
@@ -123,7 +120,7 @@ ms.locfileid: "49863166"
   
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`  
   
- リンクにアクセスするためには、その他の方法もあります。 例えば:  
+ リンクにアクセスするためには、その他の方法もあります。 例:  
   
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`  
   
@@ -147,7 +144,7 @@ ms.locfileid: "49863166"
  `store.ElementDirectory.GetElement(elementId);`  
   
 ##  <a name="metadata"></a> クラス情報にアクセスします。  
- クラス、リレーションシップ、および DSL 定義の他の側面についての情報を取得することができます。 例えば:  
+ クラス、リレーションシップ、および DSL 定義の他の側面についての情報を取得することができます。 例:  
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
   
@@ -229,7 +226,7 @@ using (Transaction t =
   
 - 対象のプロパティでは特に、新しい要素のプロパティを設定`IsName`DslDefinition に当てはまります。 このフラグは、その所有者内で一意に要素を識別するプロパティをマークします。 この場合、名前プロパティには、そのフラグがあります。  
   
-- この DSL の DSL 定義は、ストアに読み込まれている必要があります。 メニュー コマンドなどの拡張機能を記述する場合は、通常これは既に true です。 その他の場合は、明示的に、ストアに、モデルを読み込むまたはを使用することができます<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>を読み込みます。 詳細については、次を参照してください。[方法: プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)します。  
+- この DSL の DSL 定義は、ストアに読み込まれている必要があります。 メニュー コマンドなどの拡張機能を記述する場合は、通常これは既に true です。 その他の場合は、明示的に、ストアに、モデルを読み込むまたはを使用することができます<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>を読み込みます。 詳細については、「[方法 :プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)します。  
   
   この方法で要素を作成するときに (DSL に図がある場合)、図形が自動的に作成します。 既定の図形、色、およびその他の機能と、自動的に割り当てられている場所に表示されます。 参照してください、関連付けられた図形が表示される場所と方法を制御する場合[要素とその図形を作成する](#merge)します。  
   
@@ -238,13 +235,13 @@ using (Transaction t =
   
  リレーションシップのインスタンスを作成できる 3 つの方法はあります。 これら 3 つのメソッドのそれぞれは、同じ効果があります。  
   
-- ソース ロール プレーヤーのプロパティを設定します。 例えば:  
+- ソース ロール プレーヤーのプロパティを設定します。 例:  
   
   -   `familyTree.People.Add(edward);`  
   
   -   `edward.Parents.Add(henry);`  
   
-- ターゲット ロール プレーヤーのプロパティを設定します。 例えば:  
+- ターゲット ロール プレーヤーのプロパティを設定します。 例:  
   
   -   `edward.familyTreeModel = familyTree;`  
   
@@ -254,7 +251,7 @@ using (Transaction t =
   
        このロールの多重度が`0..*`ので、コレクションに追加します。  
   
-- リレーションシップのインスタンスを明示的に作成します。 例えば:  
+- リレーションシップのインスタンスを明示的に作成します。 例:  
   
   -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
@@ -513,7 +510,7 @@ partial class MyDiagram
  色と、このメソッドを使用したコネクタの公開されている他のプロパティを設定することもできます。  
   
 ### <a name="use-transactions"></a>トランザクションを使用します。  
- 図形、コネクタと図のサブタイプは<xref:Microsoft.VisualStudio.Modeling.ModelElement>とストアでライブします。 トランザクション内でのみに変更を行う必要がありますので。 詳細については、次を参照してください。[方法: モデルを更新するトランザクションを使用して](../modeling/how-to-use-transactions-to-update-the-model.md)します。  
+ 図形、コネクタと図のサブタイプは<xref:Microsoft.VisualStudio.Modeling.ModelElement>とストアでライブします。 トランザクション内でのみに変更を行う必要がありますので。 詳細については、「[方法 :モデルを更新するトランザクションを使用して](../modeling/how-to-use-transactions-to-update-the-model.md)します。  
   
 ##  <a name="docdata"></a> ドキュメント ビューとドキュメント データ  
  ![標準の図の種類のクラス ダイアグラム](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
@@ -528,6 +525,3 @@ partial class MyDiagram
  [方法: トランザクションを使用してモデルを更新します。](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [変更内容への対応および変更内容の反映](../modeling/responding-to-and-propagating-changes.md)
-
-
-

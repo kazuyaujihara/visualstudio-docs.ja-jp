@@ -1,22 +1,20 @@
 ---
 title: データセットのクエリ |Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890570"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973719"
 ---
 # <a name="query-datasets"></a>データセットのクエリ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +61,7 @@ ms.locfileid: "49890570"
      [!code-csharp[VbRaddataEditing#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#20)]
      [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]  
   
-## <a name="accessrelated-records"></a>Accessrelated レコード  
+## <a name="access-related-records"></a>関連するレコードのアクセス  
  データセット内のテーブルが関係するときに、<xref:System.Data.DataRelation>オブジェクトは、関連するレコードで使用できるように別のテーブル。 など、データセットを含む`Customers`と`Orders`テーブルを利用します。  
   
  使用することができます、<xref:System.Data.DataRelation>呼び出すことによって、関連レコードを検索するオブジェクト、<xref:System.Data.DataRow.GetChildRows%2A>のメソッド、<xref:System.Data.DataRow>親テーブルでします。このメソッドは、関連する子レコードの配列を返します。 呼び出すか、または、<xref:System.Data.DataRow.GetParentRow%2A>のメソッド、<xref:System.Data.DataRow>子テーブルにします。このメソッドは、1 つを返します<xref:System.Data.DataRow>親テーブルから。  
@@ -71,7 +69,7 @@ ms.locfileid: "49890570"
  このページは、型指定されたデータセットを使用した例を示します。 型指定されていないデータセットのリレーションシップを移動する方法の詳細については、次を参照してください。 [Datarelation の移動](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)します。  
   
 > [!NOTE]
->  Windows フォーム アプリケーションで作業しているし、データ バインド機能を使用してデータを表示する、デザイナーで生成されたフォームは、アプリケーションのための十分な機能を提供可能性があります。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。 具体的を参照してください[方法: Windows フォーム アプリケーションで関連データを表示](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md)と[チュートリアル: Windows フォーム上で関連データを表示する](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md)します。  
+> Windows フォーム アプリケーションで作業しているし、データ バインド機能を使用してデータを表示する、デザイナーで生成されたフォームは、アプリケーションのための十分な機能を提供可能性があります。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。  
   
  次のコード例では、型指定されたデータセットのリレーションシップを上下に移動する方法を示します。 型指定されたコードの例として使用<xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) され、生成された`FindBy` *PrimaryKey* (`FindByCustomerID`) を目的の行を見つけて、関連レコードを返すメソッド。 例では、正しくコンパイルして実行した場合にのみ。  
   
@@ -81,7 +79,7 @@ ms.locfileid: "49890570"
   
 - という名前のリレーションシップ`FK_Orders_Customers`使用可能な 2 つのテーブルに関連する、コードのスコープ  
   
-  さらに、両方のテーブルは、返されるレコードにデータを格納する必要があります。  
+さらに、両方のテーブルは、返されるレコードにデータを格納する必要があります。  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>選択した親レコードのレコードの子を取得するには  
   
@@ -96,4 +94,3 @@ ms.locfileid: "49890570"
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]
-

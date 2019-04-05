@@ -1,26 +1,21 @@
 ---
 title: 'チュートリアル: 候補の表示 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097cb671e15b75edd7e61f7860cf3a0c03123c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 06377a3bc8bd192a7c3f66d359350148fe912239
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733039"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974252"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>チュートリアル: 入力候補の表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -209,5 +204,4 @@ ms.locfileid: "51733039"
 4.  を入力すると最初に、"a"と"d"、"addition"と「適応」を含む一覧が表示されます。 加算が選択されていることに注意してください。 別の"d"を入力すると、一覧は、のみ"addition"、現在選択されているを含める必要があります。 Space キー、タブ、または Enter キーを押す"addition"をコミットまたは esc キーまたはその他の任意のキーを入力して、一覧を無視できます。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

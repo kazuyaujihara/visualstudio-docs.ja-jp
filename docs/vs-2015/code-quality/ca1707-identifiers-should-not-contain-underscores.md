@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1707: 識別子はアンダー スコアを含むされません |Microsoft Docs'
-ms.custom: ''
+title: CA1707:識別子はアンダー スコアを含めることはできません |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotContainUnderscores
 - CA1707
@@ -20,17 +15,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0aeea5c113ebebe33d4c371fed1a5c46da4e735e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ae59f396115f10a858c5bc31d8bcdbf967d1d80
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211069"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59003090"
 ---
-# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: 識別子はアンダースコアを含むことはできません
+# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707:識別子はアンダースコアを含むことはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。 [ca 1707: 識別子はアンダー スコアを含めることはできません](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores)docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください。 [ca 1707。識別子はアンダー スコアを含めることはできません](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores)docs.microsoft.com でリリースされました。  
   
 |||  
 |-|-|  
@@ -54,7 +49,6 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
  この規則による警告は抑制しないでください。  
   
 ## <a name="related-rules"></a>関連規則  
- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+ [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
- [CA1708: 識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-
+ [CA1708:識別子は、ケース以外で相違させる必要があります。](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

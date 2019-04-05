@@ -1,14 +1,9 @@
 ---
 title: '方法: 従来の言語サービスでのアウトラインのサポート |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
 - language services, supporting Collapse to Definitions command
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb596c8fbc7ab3c354b5b8d3e2a116ee752f06a4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2177ad8080f549f8f1de2736c34103979d8828f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973995"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>方法: 従来の言語サービスでのアウトラインのサポート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 アウトライン表示は、展開または折りたたむテキストの異なるリージョンに使用されます。 使用方法のアウトラインはさまざまな言語によって別々 に定義できます。 詳細については、「[アウトライン](../../ide/outlining.md)」を参照してください。  
   
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 アウトライン表示を実装する新しい方法の詳細についてを参照してください。[チュートリアル: アウトライン](../../extensibility/walkthrough-outlining.md)します。  
+ 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 アウトライン表示を実装する新しい方法の詳細についてを参照してください。[チュートリアル。アウトライン](../../extensibility/walkthrough-outlining.md)」を参照してください。  
   
 > [!NOTE]
 >  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
@@ -54,5 +49,4 @@ ms.locfileid: "51724132"
   
 ## <a name="see-also"></a>関連項目  
  [方法: 従来の言語サービスでの非表示のテキストのサポートを提供します。](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [方法: 従来の言語サービスでのアウトラインの拡張サポートの提供](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
-
+ [方法: 従来の言語サービスでのアウトラインの拡張のサポートを提供します。](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

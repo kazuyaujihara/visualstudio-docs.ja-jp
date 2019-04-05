@@ -1,33 +1,28 @@
 ---
 title: 言語サービスのコンテキストを提供するレガシ API を使用して |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 322dc704524a5b0172797c9351e7beb60d778ab4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4471b71b612008ba7d0733c92286415cd3c3f6b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781934"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978133"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>レガシ API を使用して、言語サービスのコンテキストを提供します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 2 つのオプションを使用してユーザー コンテキストを提供する言語サービスがある、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のコア エディター: テキスト マーカーのコンテキストを指定するか、すべてのユーザー コンテキストを提供します。 それぞれの違いが記載されています。  
   
- 独自のエディターに接続されている言語サービスにコンテキストを提供する詳細については、次を参照してください。[方法: エディターのコンテキストを提供](../extensibility/how-to-provide-context-for-editors.md)します。  
+ 独自のエディターに接続されている言語サービスにコンテキストを提供する詳細については、次を参照してください。[方法。エディターのコンテキストを提供](../extensibility/how-to-provide-context-for-editors.md)します。  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>エディターにテキスト マーカー コンテキストを提供します。  
  テキスト マーカーで示されるコンパイラ エラーのコンテキストを提供する、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]コア エディターには、実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>インターフェイス。 このシナリオでは、言語サービスは、カーソルがテキスト マーカーに場合にのみにコンテキストを提供します。 これにより、エディターでカーソルをキーワードを提供する、**ダイナミック ヘルプ**属性を持たないウィンドウ。  
@@ -56,4 +51,3 @@ ms.locfileid: "51781934"
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>エディターとデザイナーのコンテキストのガイドライン  
  デザイナーおよびエディターには、エディターまたはデザイナー ウィンドウの一般的なキーワードを指定する必要があります。 これは、ユーザーが f1 キーを押したときに、デザイナーまたはエディターのジェネリックでは、適切なヘルプ トピックが表示されるように実行されます。 エディター、する必要があります。 さらに、カーソル位置の現在のキーワードを指定または現在の選択に基づく、重要な用語を指定します。 これは、ユーザーが f1 キーを押したときに表示を選択したテキストまたは UI 要素のヘルプ トピックを指していることを確認します。 デザイナーでは、フォーム上のボタンなどのデザイナーで選択した項目のコンテキストを提供します。 エディターとデザイナーする必要がありますもサービスに接続する言語」の説明に従って[レガシ言語サービスの基本情報](../extensibility/internals/legacy-language-service-essentials.md)します。
-

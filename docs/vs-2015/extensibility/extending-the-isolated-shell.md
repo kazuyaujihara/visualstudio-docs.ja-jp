@@ -1,26 +1,21 @@
 ---
 title: 分離シェルの拡張 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dc700e0a1b8753a26067eff90df9ff58765de8d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af64fa948754350eb1beb0f70dbac33981b595f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792022"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976633"
 ---
 # <a name="extending-the-isolated-shell"></a>分離シェルの拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51792022"
 VSPackage、Managed Extensibility Framework (MEF) コンポーネント パーツ、または汎用的な VSIX プロジェクトを分離シェル アプリケーションに追加することで、Visual Studio 分離シェルを拡張できます。  
   
 > [!NOTE]
->  次の手順では、Visual Studio 分離シェル プロジェクト テンプレートを使用して基本的な分離シェル アプリケーションを作成したことを前提とします。 このプロジェクト テンプレートの詳細については、次を参照してください。[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)します。  
+>  次の手順では、Visual Studio 分離シェル プロジェクト テンプレートを使用して基本的な分離シェル アプリケーションを作成したことを前提とします。 このプロジェクト テンプレートの詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio パッケージのプロジェクト テンプレートの場所  
  Visual Studio パッケージのプロジェクト テンプレートは、 **[新しいプロジェクト]** ダイアログの次の 3 つの場所にあります。  
@@ -126,5 +121,4 @@ VSPackage、Managed Extensibility Framework (MEF) コンポーネント パー�
 8.  ソリューションをビルドして実行します。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-
+ [チュートリアル: 基本的な分離シェル アプリケーションを作成します。](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

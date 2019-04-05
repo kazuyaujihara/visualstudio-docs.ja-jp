@@ -1,26 +1,21 @@
 ---
 title: '方法: 開いているドキュメントのエディターを開く |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4bb21def7e9d283c287c375bd9b8b4cc6bd30c3c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8238ce632f8552b36ccb259af683636732b469
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750979"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976343"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>方法: 開いているドキュメントのエディターを開く
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,10 +52,9 @@ ms.locfileid: "51750979"
   
      このメソッドが最初に、ドキュメントがまだ開いていない呼び出してを検証します<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>します。 ドキュメントが既に開いている場合、エディター ウィンドウが示されます。  
   
-2.  ドキュメントが開いていない場合、その後の手順を完了[方法: 標準のエディターを開く](../extensibility/how-to-open-standard-editors.md)します。  
+2.  ドキュメントが開いていない場合、その後の手順を完了[方法。標準のエディターを開く](../extensibility/how-to-open-standard-editors.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [開くと、プロジェクト項目の保存](../extensibility/internals/opening-and-saving-project-items.md)   
- [方法: プロジェクトに固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)   
+ [方法: 開いているプロジェクト固有のエディター](../extensibility/how-to-open-project-specific-editors.md)   
  [方法: 標準のエディターを開く](../extensibility/how-to-open-standard-editors.md)
-

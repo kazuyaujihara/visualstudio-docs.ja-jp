@@ -33,7 +33,7 @@ ms.locfileid: "56715493"
 
 -   [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)
 
-     プログラム ノードの作成と破棄のことを通知にこのポートのコンテキスト内で実行されるプログラム メカニズムを提供します。 詳細については、次を参照してください。[プログラム ノード](../../extensibility/debugger/program-nodes.md)します。
+     プログラム ノードの作成と破棄のことを通知にこのポートのコンテキスト内で実行されるプログラム メカニズムを提供します。 詳細については、[プログラム ノード](../../extensibility/debugger/program-nodes.md)を参照してください。
 
 -   `IConnectionPointContainer`
 

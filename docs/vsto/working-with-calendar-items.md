@@ -35,7 +35,7 @@ ms.locfileid: "56612570"
 |予定表フォルダを作成して予定アイテムを追加します。|[方法: カスタムの予定表をプログラムで作成します。](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
 |会議出席依頼を作成して送信します。|[方法: プログラムによって会議出席依頼を作成します。](../vsto/how-to-programmatically-create-a-meeting-request.md)|
 
- Outlook タスクと Outlook オブジェクト モデルの詳細については、次を参照してください。 [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)します。
+ Outlook タスクと Outlook オブジェクト モデルの詳細については、[Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [連絡先項目を操作します。](../vsto/working-with-contact-items.md)

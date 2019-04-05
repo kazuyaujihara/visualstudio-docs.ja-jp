@@ -1,14 +1,9 @@
 ---
 title: エディット コンティニュ (Visual C) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6e1dc97af70f575632629a13ea67e905f2ad0815
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b1f82c9e79957b12dba36eaa70a94cb6fff84ff7
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748348"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58963806"
 ---
 # <a name="edit-and-continue-visual-c"></a>エディット コンティニュ (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +34,9 @@ Visual C++ プロジェクトでエディット コンティニュを使用で�
   
  Update 1 のその他の機能強化としては、ファイルがエディット コンティニュをサポートしていない場合にキャンセルできる待機のダイアログと通知が新たに含まれるようになりました。 Update 1 の機能強化の詳細については、次を参照してください。 [Visual Studio 2015 Update 1 で C++ のエディット コンティニュの機能強化](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx)します。  
   
- [(デバッグ機能の強化に最適化された)/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)なしでコンパイルされたバイナリのシンボル (.pdb) ファイルに追加します追加情報を Visual Studio 2013 Update 3 で導入されたコンパイラ オプション、 [/Od (無効 (デバッグ))](http://msdn.microsoft.com/library/aafb762y.aspx)オプション。  
+ Visual Studio 2013 Update 3 で導入された [/Zo (最適化されたデバッグ機能の強化)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) コンパイラ オプションは、[/Od (無効 (デバッグ))](http://msdn.microsoft.com/library/aafb762y.aspx) オプションなしでコンパイルされたバイナリの .pdb (シンボル) ファイルに情報を追加します。  
   
- **/Zo**エディット コンティニュを無効にします。 参照してください[方法: 最適化されたコードをデバッグ](../debugger/how-to-debug-optimized-code.md)します。  
+ **/Zo**エディット コンティニュを無効にします。 「[方法:最適化されたコードをデバッグする](../debugger/how-to-debug-optimized-code.md)」を参照してください。  
   
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> エディット コンティニュを有効または無効にする  
  現在のデバッグ セッション中に適用しないコードの編集を行う場合は、エディット コンティニュの自動起動を無効にすることもできます。 自動エディット コンティニュをもう一度有効にすることもできます。  
@@ -84,6 +79,3 @@ Visual C++ プロジェクトでエディット コンティニュを使用で�
   
 ## <a name="see-also"></a>関連項目  
  [サポートされているコード変更 (C++)](../debugger/supported-code-changes-cpp.md)
-
-
-

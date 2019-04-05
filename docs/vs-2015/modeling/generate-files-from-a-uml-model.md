@@ -1,25 +1,22 @@
 ---
 title: UML モデルからファイルを生成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, generating files
 ms.assetid: 4e28b0e6-ce8f-45ee-9e3a-e4d600a0ad81
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: afbb81a67d8d5f8f587979ab8adca4251562072a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03b2cf5b03ea7f2cfc2d8fa90346ac47c1e4ae84
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804548"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962837"
 ---
 # <a name="generate-files-from-a-uml-model"></a>UML モデルからファイルを生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -192,13 +189,13 @@ Type Class2 ::
   
 3. C# または Visual Basic プロジェクトにプレーンテキスト ファイルを追加します。 このファイルには、複数のテキスト テンプレートを記述するときに共有されるコードを含めます。  
   
-   - ソリューション エクスプ ローラーでプロジェクトを右クリックして**追加**、 をクリックし、**新しい項目の**します。 選択**テキスト ファイル**します。  
+   - ソリューション エクスプローラーで、プロジェクトを右クリックして **[追加]** をポイントし、**[新しい項目]** をクリックします。 選択**テキスト ファイル**します。  
   
      次のセクションに示すテキストを挿入します。  
   
 4. C# または Visual Basic プロジェクトにテキスト テンプレート ファイルを追加します。  
   
-   - ソリューション エクスプ ローラーでプロジェクトを右クリックして**追加**、 をクリックし、**新しい項目の**します。 選択**テキスト テンプレート**します。  
+   - ソリューション エクスプローラーで、プロジェクトを右クリックして **[追加]** をポイントし、**[新しい項目]** をクリックします。 選択**テキスト テンプレート**します。  
   
      下に示すコードを、テキスト テンプレート ファイルに挿入します。  
   
@@ -336,6 +333,3 @@ namespace Test{
 -   **個別のアセンブリにコードを移動**します。 テンプレートに含めるコードの本体は、大きくしすぎないでください。 生成されたコンテンツは、計算とは別にしておいてください。テキスト テンプレートでのコードの編集は、完全にはサポートされていません。  
   
      代わりに、多くの計算を実行してテキストを生成する必要がある場合は、これらの関数を別のアセンブリに構築し、テンプレートからメソッドを呼び出します。
-
-
-

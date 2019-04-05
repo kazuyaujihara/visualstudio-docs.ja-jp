@@ -1,14 +1,9 @@
 ---
-title: 'Web アプリケーションのデバッグ: エラーおよびトラブルシューティング |Microsoft Docs'
-ms.custom: ''
+title: Web アプリケーションのデバッグ:エラーとトラブルシューティング |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 dev_langs:
 - FSharp
 - VB
@@ -31,40 +26,37 @@ ms.assetid: 63f2742e-2031-48a8-9773-d9b547c62230
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ecab26f0a5b4a4cbe0a3918fadeb11a974bc9561
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7b10bb975d03ee317c23831ad72e9f5ac0ee6659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768206"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973735"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Web アプリケーションのデバッグ : エラーおよびトラブルシューティング
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Web アプリケーションのデバッグ:エラーとトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Web アプリケーションのデバッグを試行した場合に、次のエラーが発生することがあります。  
   
 -   [トラブルシューティング](../debugger/debugging-web-applications-troubleshooting.md)  
   
--   [エラー : サイトは IP アドレスを使用しています](../debugger/error-site-uses-ip-address.md)  
+-   [エラー: サイトは IP アドレスを使用しています](../debugger/error-site-uses-ip-address.md)  
   
--   [エラー: IIS 管理サービスが応答しないため、セキュリティ チェックに失敗しました。](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
+-   [エラー: IIS 管理サービスが応答しないため、セキュリティ チェックに失敗しました](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
--   [エラー: ASP .NET がインストールされていません。](../debugger/error-aspnet-not-installed.md)  
+-   [エラー: ASP.NET がインストールされていません](../debugger/error-aspnet-not-installed.md)  
   
--   [エラー: Windows 統合認証が無効になっているため、デバッグに失敗しました。](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
+-   [エラー: Windows 統合認証が無効になっているため、デバッグに失敗しました](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
--   [エラー : Web サーバーは正しく構成されていません](../debugger/error-the-web-server-is-not-configured-correctly.md)  
+-   [エラー: Web サーバーは正しく構成されていません](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
 -   [エラー: Web サーバーが制限され、デバッグの有効化に必要な DEBUG 動詞をブロックしています](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
--   [エラー: Web サービスのデバッグ中にタイムアウトになりました。](../debugger/error-timeout-while-debugging-web-services.md)  
+-   [エラー: Web サービスのデバッグ中にタイムアウトになりました](../debugger/error-timeout-while-debugging-web-services.md)  
   
 -   [エラー: Web サーバーでデバッグを開始できません](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [Web アプリケーションとスクリプトのデバッグ](../debugger/debugging-web-applications-and-script.md)
-
-
-

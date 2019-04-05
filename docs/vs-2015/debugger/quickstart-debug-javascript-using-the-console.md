@@ -27,7 +27,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 61f36594b4158c95621ec240fd7a883accd259a8
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51802602"
@@ -66,7 +66,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 > [!TIP]
 >  閉じた JavaScript コンソール ウィンドウを再び開くには、 **[デバッグ]**>**[ウィンドウ]** > **JavaScript コンソール** の順に選びます。 このウィンドウは、スクリプトのデバッグ セッション中にのみ表示されます。  
   
- JavaScript コンソール ウィンドウを使用すると、デバッガーを停止/再起動することなくアプリと対話することができます。 詳細については、次を参照してください。[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)します。 その他の JavaScript のデバッグ、DOM Explorer を使用して、ブレークポイントの設定などの機能の詳細についてを参照してください。[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)と[Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)します。  
+ JavaScript コンソール ウィンドウを使用すると、デバッガーを停止/再起動することなくアプリと対話することができます。 詳細については、[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)を参照してください。 その他の JavaScript のデバッグ、DOM Explorer を使用して、ブレークポイントの設定などの機能の詳細についてを参照してください。[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)と[Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)します。  
   
 ##  <a name="InteractiveConsole"></a> JavaScript コンソール ウィンドウを使用したデバッグ  
  次の手順では、 `FlipView` アプリを作成し、JavaScript のコード エラーを対話的にデバッグする方法を示します。  
@@ -210,7 +210,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 17. DOM Explorer では、更新された DIV 要素を確認でき、サブツリーに移動すると予期される IMG 要素が表示されます。  
   
-18. **[デバッグ]** > **Stop [デバッグ]ging** の順にクリックするか、または Shift + F5 キーを押してデバッグを停止し、ソース コードを修正します。  
+18.  **[デバッグ]** > **Stop [デバッグ]ging** の順にクリックするか、または Shift + F5 キーを押してデバッグを停止し、ソース コードを修正します。  
   
      サンプル コードを修正、含む default.html ページ全体を参照してください[デバッグ HTML、CSS、および JavaScript サンプル コード](../debugger/debug-html-css-and-javascript-sample-code.md)します。  
   
@@ -225,7 +225,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 2.  **[デバッグ]** ツール バーの **[デバッグの開始]** ボタンの横にあるドロップダウン リストの **[ローカル コンピューター]** または **[エミュレーター 8.1 WVGA 4 インチ 512 MB]** をクリックします。  
   
-3.  **[デバッグ]** > **Start [デバッグ]ging**の順にクリックするか、または F5 キーを押します。  
+3.   **[デバッグ]** > **Start [デバッグ]ging**の順にクリックするか、または F5 キーを押します。  
   
      実行が `updateImages()` 関数に達するとアプリは中断モードになり、プログラム実行の現在行が黄色で強調表示されます。  
   
@@ -278,7 +278,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 -   [!INCLUDE[win81](../includes/win81-md.md)] で実行されている Internet Explorer 11  
   
--   [!INCLUDE[win8](../includes/win8-md.md)]  
+-    [!INCLUDE[win8](../includes/win8-md.md)]  
   
 ## <a name="see-also"></a>関連項目  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

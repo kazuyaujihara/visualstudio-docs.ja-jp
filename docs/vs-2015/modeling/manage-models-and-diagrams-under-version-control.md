@@ -1,25 +1,22 @@
 ---
 title: モデルと図のバージョン管理の管理 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, version control
 ms.assetid: ca6443e3-6d11-4da8-aae7-ca7dcc410076
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20cb2e89a85f00782a172245dcdd8f47025ddd12
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c8ad8861e2c838de283b7971d7e985fe8a4c591a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738044"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977079"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>モデルおよび図のバージョン管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +47,7 @@ ms.locfileid: "51738044"
 ##  <a name="Shared"></a> 共有モデリング プロジェクトで作業します。  
  プロジェクトの異なる部分に対して同時に実行された作業間の競合を最小限に抑えるには、次の点に注意します。  
   
--   モデリング プロジェクトを異なる作業領域を表す複数のパッケージに分割します。 ルート モデル内にモデルを残さずに、モデル全体をパッケージに移動します。 詳細については、[パッケージと名前空間の定義](../modeling/define-packages-and-namespaces.md)を参照してください。  
+-   モデリング プロジェクトを異なる作業領域を表す複数のパッケージに分割します。 ルート モデル内にモデルを残さずに、モデル全体をパッケージに移動します。 詳細については、次を参照してください。[パッケージと名前空間の定義](../modeling/define-packages-and-namespaces.md)します。  
   
 -   異なるユーザーが同時に同じパッケージまたは図を操作しないようにしてください。  
   
@@ -113,6 +110,3 @@ ms.locfileid: "51738044"
 ## <a name="see-also"></a>関連項目  
  [分析およびアーキテクチャのモデリング](../modeling/analyze-and-model-your-architecture.md)   
  [モデルおよびエクスポート ダイアグラムの共有](../modeling/share-models-and-exporting-diagrams.md)
-
-
-

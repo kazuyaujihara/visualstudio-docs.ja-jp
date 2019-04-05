@@ -21,7 +21,7 @@ ms.locfileid: "56695168"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>[ウォッチ] ウィンドウの式を評価します。
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+>  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
 
  実行が一時停止したときに、Visual Studio はデバッグ エンジンのウォッチ リスト内の各式の現在の値を確認するには、(DE) を呼び出します。 デは、式エバリュエーター (EE) を使用して各式を評価し、Visual Studio では、その値が表示されます、**ウォッチ**ウィンドウ。
 

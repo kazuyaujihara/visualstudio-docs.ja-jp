@@ -36,7 +36,7 @@ ms.locfileid: "54871378"
 
  一時的な証明書が作成され、デバッグしながらソリューションを実行するために、ビルド時に信頼を付与します。 一時的な証明書で署名されたソリューションを発行する場合、エンドユーザーは信頼の決定を求めます。
 
- 既知の信頼された証明書を使用して、ソリューションに署名する場合、ソリューションは信頼の決定にエンド ユーザーに確認しないで自動的にインストールされます。 署名証明書を取得する方法の詳細については、次を参照してください。 [ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)します。 証明書を取得した後、信頼された発行元一覧に追加して、証明書を明示的に信頼する必要があります。 詳細については、「[方法 :ClickOnce アプリケーションのクライアント コンピューターに信頼された発行元を追加](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)します。
+ 既知の信頼された証明書を使用して、ソリューションに署名する場合、ソリューションは信頼の決定にエンド ユーザーに確認しないで自動的にインストールされます。 署名証明書を取得する方法の詳細については、[ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)を参照してください。 証明書を取得した後、信頼された発行元一覧に追加して、証明書を明示的に信頼する必要があります。 詳細については、「[方法 :ClickOnce アプリケーションのクライアント コンピューターに信頼された発行元を追加](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)します。
 
  場合は、開発者が一時的な証明書を使用して、ソリューションと、管理者が再署名既知の信頼された証明書を使用したカスタマイズ マニフェストの生成および編集ツールを使用して (*mage.exe*) のいずれかである、Microsoft .NET Framework のツールです。 ソリューションの署名の詳細については、次を参照してください。[方法。Office ソリューションに署名](../vsto/how-to-sign-office-solutions.md)と[方法。アプリケーション マニフェストおよび配置マニフェストに署名する](../ide/how-to-sign-application-and-deployment-manifests.md)」を参照してください。
 

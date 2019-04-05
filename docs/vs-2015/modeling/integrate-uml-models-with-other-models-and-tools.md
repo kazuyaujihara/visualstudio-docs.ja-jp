@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: d1cc5a26a9c2febb0dd1dff3c0d14ba3786dde9f
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51764135"
@@ -41,39 +41,39 @@ UML モデルは、他のモデルやドメイン固有の言語に統合する�
   
    この拡張機能を配置するには、プロファイル定義と拡張機能のコードを 1 つの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能にパッケージ化します。  
   
-   詳細については、次を参照してください。 [UML を拡張するプロファイルを定義して](../modeling/define-a-profile-to-extend-uml.md)します。  
+   詳細については、[UML を拡張するプロファイルを定義して](../modeling/define-a-profile-to-extend-uml.md)を参照してください。  
   
-   プロファイルがメニュー コマンドやジェスチャ ハンドラーと共にデプロイされているサンプル プロジェクトでは、次を参照してください。[サンプル: UML プロファイル](http://go.microsoft.com/fwlink/?LinkID=213811)します。  
+   プロファイルがメニュー コマンドやジェスチャ ハンドラーと共にデプロイされているサンプル プロジェクトでは、[サンプル: UML プロファイル](http://go.microsoft.com/fwlink/?LinkID=213811)を参照してください。  
   
 - **参照。** 一連の文字列を任意の UML 要素にアタッチできます。 ファイル名や別の要素の GUID などの情報を格納するコードを記述することもできます。 これは、追加の定義を行わなくても行えます。 参照は、ユーザーには直接表示されません。  
   
-   詳細については、次を参照してください。[モデル要素を UML に参照文字列をアタッチ](../modeling/attach-reference-strings-to-uml-model-elements.md)します。 サンプルについては、次を参照してください。[リンクの UML 要素を図または他のファイルに](http://go.microsoft.com/fwlink/?LinkId=213813)します。  
+   詳細については、[モデル要素を UML に参照文字列をアタッチ](../modeling/attach-reference-strings-to-uml-model-elements.md)を参照してください。 サンプルについては、[リンクの UML 要素を図または他のファイルに](http://go.microsoft.com/fwlink/?LinkId=213813)を参照してください。  
   
   参照をモデル要素にエンコードするには次の 2 つの方法があります。  
   
 - **GUID とファイル名**のターゲットのモデル要素とそれを含むモデルまたはそれを表示する特定のダイアグラム。  
   
-   例については、次を参照してください。[リンクの UML 要素を図または他のファイルに](http://go.microsoft.com/fwlink/?LinkId=213813)します。  
+   例については、[リンクの UML 要素を図または他のファイルに](http://go.microsoft.com/fwlink/?LinkId=213813)を参照してください。  
   
 - **ModelBus 参照。** ModelBus は、モデル間の参照を作成および解決するためのフレームワークです。 これには、モデル内の要素をユーザーが選択できるようにする ModelBus ピッカーが含まれます。 これは、対象のモデルに変更があったために失われた参照をユーザーが解決するのにも役立ちます。  
   
-   詳細については、次を参照してください。 [Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)します。  
+   詳細については、[Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)を参照してください。  
   
   1 つのモデルから別のモデルに変更を反映します。  
   たとえば、1 つの要素の名前をリンクされた図の名前と同期させると、一方がユーザーによって変更されると他方も変更されるようになります。 これを行うための次の 2 つのメカニズムがあります。  
   
 1. **VMSDK ルール**同じモデル内で変更を反映するために使用できます。  
   
-    例については、次を参照してください。[リンクの UML 要素を図または他のファイルに](http://go.microsoft.com/fwlink/?LinkId=213813)します。  
+    例については、[リンクの UML 要素を図または他のファイルに](http://go.microsoft.com/fwlink/?LinkId=213813)を参照してください。  
   
 2. **VMSDK イベント**など、モデルの外部の変更を反映する、リンクされたドキュメントのファイル名を変更する、または別のモデル内の要素を変更するために使用できます。  
   
-   これら両方のメカニズムについては、次を参照してください。[方法: UML モデルの変更に応答](../misc/how-to-respond-to-changes-in-a-uml-model.md)します。  
+   これら両方のメカニズムについては、[方法: UML モデルの変更に応答](../misc/how-to-respond-to-changes-in-a-uml-model.md)を参照してください。  
   
    1 つのモデルから別のモデルに要素をドラッグしてコピーする  
    UML 図に項目をドラッグすることによって要素を作成できる機能をユーザーに提供することができます。 作成した要素は、オリジナルのコピーである必要はありません。 たとえば、ソリューション エクスプローラーからアクティビティ図を別のアクティビティ図にドラッグして新しいアクションを作成する機能をユーザーに提供することができます。  
   
-   詳細については、次を参照してください。[モデリング図にジェスチャ ハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)と[方法: ドラッグ アンド ドロップ ハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)します。  
+   詳細については、[モデリング図にジェスチャ ハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)と[方法: ドラッグ アンド ドロップ ハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)を参照してください。  
   
 ## <a name="samples"></a>サンプル  
  コード サンプルを参照してください[リンクの UML 要素を図または他のファイルに](http://go.microsoft.com/fwlink/?LinkId=213813)します。 このサンプルを使用すると、ユーザーは任意の UML 要素にファイルをドラッグし、後でその要素をダブルクリックしてファイルを開くことができます。 たとえば、アクティビティ図を、ユースケース要素にリンクすることができます。 リンクが設定されている要素はアイコンで示されます。  
@@ -84,7 +84,7 @@ UML モデルは、他のモデルやドメイン固有の言語に統合する�
   
    このサンプル コードは、要素に関連付けられている参照文字列にファイル パスと要素 GUID を格納します。  
   
-- UML 要素にデコレータを追加する方法。 デコレータの全般については、次を参照してください。[をカスタマイズするテキストおよびイメージ フィールド](../modeling/customizing-text-and-image-fields.md)します。  
+- UML 要素にデコレータを追加する方法。 デコレータの全般については、[をカスタマイズするテキストおよびイメージ フィールド](../modeling/customizing-text-and-image-fields.md)を参照してください。  
   
    サンプルは、UML 図形にイメージのデコレータを追加します。  
   

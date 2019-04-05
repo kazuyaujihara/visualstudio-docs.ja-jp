@@ -95,7 +95,7 @@ Visual Studio 2017 バージョン 15.3 の時点では、サポートされて�
 **Visual Studio 2017 バージョン 15.5**:
 
 - **ルール クラス**特殊なメンバー関数と仮想の仕様の適切な使用に焦点をいくつかの規則。 これは、チェックの推奨のサブセット[クラスおよびクラスの階層構造](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class)します。
-- **同時実行規則**guard の宣言が正しくないオブジェクトをキャッチする 1 つの規則。 詳細については、次を参照してください。[ガイドラインは、同時実行に関連する](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency)します。
+- **同時実行規則**guard の宣言が正しくないオブジェクトをキャッチする 1 つの規則。 詳細については、[ガイドラインは、同時実行に関連する](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency)を参照してください。
 - **宣言の規則**から規則のいくつか、[インターフェイス ガイドライン](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces)グローバル変数に重点を置いたが宣言されます。
 - **機能ルール**の導入に役立つ 2 つのチェック、`noexcept`指定子。 ためのガイドラインの一部であるこの[関数の設計と実装をオフに](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)します。
 - **共有ポインターの規則**の一部として[リソース管理](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource)共有ポインターに固有のいくつかの規則が関数に渡されるか、ローカルで使用されるを追加しましたガイドラインの強制を適用します。
@@ -105,7 +105,7 @@ Visual Studio 2017 バージョン 15.3 の時点では、サポートされて�
 
 - **算術規則**算術演算子を検出する規則を[オーバーフロー](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow)、[操作の符号付き-符号なし](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned)と[ビット操作](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative)します。
 
-警告を 1 つだけ、またはグループの数を制限することができます。 **ネイティブ最小**と**ネイティブ推奨**ルール セットには、その他の PREfast のチェックだけでなく C++ Core Check の規則が含まれます。 確認には、使用可能なルール セット、プロジェクトのプロパティ ダイアログを開き、次のように選択します**コード Analysis\General**、にあるボックスを開き、**規則セット**コンボ ボックス、および選択**複数の規則セットの選択**。 Visual Studio でのルール セットの使用に関する詳細については、次を参照してください。[ルール セットのコード分析規則のグループを使用して](using-rule-sets-to-group-code-analysis-rules.md)します。
+警告を 1 つだけ、またはグループの数を制限することができます。 **ネイティブ最小**と**ネイティブ推奨**ルール セットには、その他の PREfast のチェックだけでなく C++ Core Check の規則が含まれます。 確認には、使用可能なルール セット、プロジェクトのプロパティ ダイアログを開き、次のように選択します**コード Analysis\General**、にあるボックスを開き、**規則セット**コンボ ボックス、および選択**複数の規則セットの選択**。 Visual Studio でのルール セットの使用に関する詳細については、[ルール セットのコード分析規則のグループを使用して](using-rule-sets-to-group-code-analysis-rules.md)を参照してください。
 
 ## <a name="macros"></a>[マクロ]
 

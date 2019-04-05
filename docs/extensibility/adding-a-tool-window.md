@@ -39,7 +39,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 1. という名前のプロジェクトを作成する**FirstToolWin** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**FirstToolWindow**します。
 
     > [!NOTE]
-    > ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。
+    > ツール ウィンドウで拡張機能の作成の詳細については、[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。
 
 ## <a name="add-a-control-to-the-tool-window"></a>ツール ウィンドウにコントロールを追加します。
 
@@ -262,7 +262,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
     最初の名前付きパラメーターは`Style`、値は`Tabbed`ウィンドウは、既存のウィンドウ タブにあることを意味します。 ドッキング位置がで指定された、`Window`パラメーターでは、この場合は、n の GUID、**ソリューション エクスプ ローラー**します。
 
     > [!NOTE]
-    > IDE のウィンドウの種類の詳細については、次を参照してください。<xref:EnvDTE.vsWindowType>します。
+    > IDE のウィンドウの種類の詳細については、<xref:EnvDTE.vsWindowType>を参照してください。
 
 ## <a name="test-the-tool-window"></a>テスト ツール ウィンドウ
 

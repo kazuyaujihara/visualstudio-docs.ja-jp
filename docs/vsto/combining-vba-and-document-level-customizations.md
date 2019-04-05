@@ -78,7 +78,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - ドキュメントで VBA コードを記述することによって、ドキュメント レベル カスタマイズ内で開発したサービスに、エンド ユーザーがアクセスできるようにする場合。
 
-  Visual Studio の Office 開発ツールは、VSTO アドインに同様の機能を提供します。VSTO アドインを開発する場合、VSTO アドイン内のコードを他の Microsoft Office ソリューションから呼び出すことができます。 詳細については、次を参照してください。[他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)します。
+  Visual Studio の Office 開発ツールは、VSTO アドインに同様の機能を提供します。VSTO アドインを開発する場合、VSTO アドイン内のコードを他の Microsoft Office ソリューションから呼び出すことができます。 詳細については、[他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)を参照してください。
 
 > [!NOTE]
 >  この機能は、Word テンプレート プロジェクトでは使用できません。 Word 文書、Excel ブック、または Excel テンプレートの各プロジェクトでのみ使用できます。
@@ -98,7 +98,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 -   Office プロジェクトは、ユーザーが VBA に公開した 1 つ以上のパブリック メンバーを含むパブリック クラスを、1 つ以上含んでいる必要があります。
 
-     メソッド、プロパティ、およびイベントを VBA に公開できます。 公開できるクラスは、ホスト項目クラス (Word の `ThisDocument` 、Excel の `ThisWorkbook` や `Sheet1` など) またはプロジェクト内で定義されている別のクラスです。 ホスト項目の詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
+     メソッド、プロパティ、およびイベントを VBA に公開できます。 公開できるクラスは、ホスト項目クラス (Word の `ThisDocument` 、Excel の `ThisWorkbook` や `Sheet1` など) またはプロジェクト内で定義されている別のクラスです。 ホスト項目の詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)を参照してください。
 
 ## <a name="enable-vba-code-to-call-into-the-customization-assembly"></a>カスタマイズ アセンブリを呼び出す VBA コードを有効にします。
  ドキュメント内の VBA コードにカスタマイズ アセンブリ内のメンバーを公開するには 2 つの方法があります。
@@ -117,7 +117,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
   詳細については、次を参照してください。[方法。Visual Basic プロジェクトでのコードを VBA に公開](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)と[方法。Visual C での vba コードに公開&#35;プロジェクト](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)します。
 
-  **EnableVbaCallers** および **ReferenceAssemblyFromVbaProject** プロパティは、設計時にのみ **[プロパティ]** ウィンドウで使用できます。実行時には使用できません。 プロパティを表示するには、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]でホスト項目のデザイナーを開きます。 これらのプロパティを設定すると、Visual Studio が実行される具体的なタスクの詳細については、次を参照してください。[ホスト項目プロパティによって実行されるタスク](#PropertyTasks)します。
+  **EnableVbaCallers** および **ReferenceAssemblyFromVbaProject** プロパティは、設計時にのみ **[プロパティ]** ウィンドウで使用できます。実行時には使用できません。 プロパティを表示するには、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]でホスト項目のデザイナーを開きます。 これらのプロパティを設定すると、Visual Studio が実行される具体的なタスクの詳細については、[ホスト項目プロパティによって実行されるタスク](#PropertyTasks)を参照してください。
 
 > [!NOTE]
 >  ブックまたはドキュメントに VBA コードがまだ含まれていない場合、またはドキュメント内の VBA コードの実行が信頼されていない場合は、 **EnableVbaCallers** または **ReferenceAssemblyFromVbaProject** プロパティを **True**に設定するとエラー メッセージが表示されます。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
@@ -132,7 +132,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   プロジェクトの VBA コードに公開したクラスのパブリック メンバーには、 `CallVSTOAssembly` プロパティまたは `GetManagedClass` メソッドを使用してアクセスできます。
 
 > [!NOTE]
->  ソリューションを開発および配置するとき、ドキュメントの複数の異なるコピーに VBA コードを追加できます。 詳細については、次を参照してください。[ドキュメントに VBA の追加に関するガイドラインがコード](#Guidelines)します。
+>  ソリューションを開発および配置するとき、ドキュメントの複数の異なるコピーに VBA コードを追加できます。 詳細については、[ドキュメントに VBA の追加に関するガイドラインがコード](#Guidelines)を参照してください。
 
 ### <a name="use-the-callvstoassembly-property-in-a-visual-basic-project"></a>Visual Basic プロジェクトでの CallVSTOAssembly プロパティを使用します。
  ホスト項目クラスに追加したパブリック メンバーにアクセスするには、 `CallVSTOAssembly` プロパティを使用します。 たとえば、次の VBA マクロは、Excel ブック プロジェクトの `MyVSTOMethod` クラスで定義されている `Sheet1` という名前のメソッドを呼び出します。
@@ -179,7 +179,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
  ソリューションの開発およびテスト時には、Visual Studio でのプロジェクトのデバッグまたは実行中に開かれるドキュメント (つまり、ビルド出力フォルダー内のドキュメント) に VBA コードを記述できます。 ただし、Visual Studio はビルド出力フォルダー内のドキュメントをメイン プロジェクト フォルダーからのドキュメントのコピーで置き換えるので、このドキュメントに追加したすべての VBA は次にプロジェクトをビルドすると上書きされます。
 
- ソリューションのデバッグまたは実行の間にドキュメントに追加した VBA コードを保存する必要がある場合は、プロジェクト フォルダーのドキュメントに VBA コードをコピーします。 ビルド プロセスに関する詳細については、次を参照してください。 [office ソリューションの構築](../vsto/building-office-solutions.md)します。
+ ソリューションのデバッグまたは実行の間にドキュメントに追加した VBA コードを保存する必要がある場合は、プロジェクト フォルダーのドキュメントに VBA コードをコピーします。 ビルド プロセスに関する詳細については、[office ソリューションの構築](../vsto/building-office-solutions.md)を参照してください。
 
  ソリューションを配置する準備ができたら、主に次の 3 つの場所のドキュメントに VBA コードを追加できます。
 

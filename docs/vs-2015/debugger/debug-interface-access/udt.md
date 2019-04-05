@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7be6e104403a2de47960fb9af35f3e70b5092dd1
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51729178"
@@ -56,7 +56,7 @@ ms.locfileid: "51729178"
 |[IDiaSymbol::get_scoped](../../debugger/debug-interface-access/idiasymbol-get-scoped.md)|`BOOL`|`TRUE` 場合は、UDT は、非グローバルな構文のスコープに表示されます。|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|シンボルのインデックス ID。|  
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返します`SymTagUDT`(の 1 つ、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)値)。|  
-|[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)|`DWORD`|構造体、クラス、または共用体であるかどうかを示します詳細については、次を参照してください。 [UdtKind 列挙型](../../debugger/debug-interface-access/udtkind.md)します。|  
+|[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)|`DWORD`|構造体、クラス、または共用体であるかどうかを示します詳細については、[UdtKind 列挙型](../../debugger/debug-interface-access/udtkind.md)を参照してください。|  
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` 場合は、UDT は、配置ではありません。|  
 |[IDiaSymbol::get_virtualTableShape](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshape.md)|`IDiaSymbol*`|仮想テーブルの型。|  
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|仮想テーブルの図形のシンボルの ID。|  

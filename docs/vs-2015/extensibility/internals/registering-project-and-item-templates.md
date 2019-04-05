@@ -1,14 +1,9 @@
 ---
 title: プロジェクトと項目テンプレートの登録 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -18,20 +13,20 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 06a9840680c76103373cde00ac37310bb6138095
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764293"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973657"
 ---
 # <a name="registering-project-and-item-templates"></a>プロジェクトと項目テンプレートの登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 プロジェクトの種類には、そのプロジェクトとプロジェクト項目テンプレートが配置されるディレクトリを登録する必要があります。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 表示するものを決定する、プロジェクトの種類に関連付けられている登録情報を使用して、**新しいプロジェクトの追加**と**新しい項目の追加** ダイアログ ボックス。  
   
- テンプレートの詳細については、[プロジェクトに追加するとプロジェクト項目テンプレート](../../extensibility/internals/adding-project-and-project-item-templates.md)を参照してください。  
+ テンプレートの詳細については、次を参照してください。[プロジェクトに追加するとプロジェクト項目テンプレート](../../extensibility/internals/adding-project-and-project-item-templates.md)します。  
   
 ## <a name="registry-entries-for-projects"></a>プロジェクトのレジストリ エントリ  
  次の例では、hkey_local_machine \software\microsoft\visualstudio の下にレジストリ エントリ\\<*バージョン*>。 付随するテーブルでは、例で使用される要素について説明します。  
@@ -117,7 +112,7 @@ ms.locfileid: "51764293"
   
  \Form  
   
- \Web ページ  
+ \Web Page  
   
  \HelperFiles (複数のファイル プロジェクト項目で使用されるファイルが含まれています)  
   
@@ -128,4 +123,3 @@ ms.locfileid: "51764293"
  [ウィザード](../../extensibility/internals/wizards.md)   
  [アプリケーションのローカライズ](../../ide/localizing-applications.md)   
  [プロジェクトの拡張に通常使用されるオブジェクトの CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-

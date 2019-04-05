@@ -27,7 +27,7 @@ ms.locfileid: "56618355"
 ## <a name="support-for-options-pages"></a>[オプション] ページのサポート
  <xref:Microsoft.VisualStudio.Shell.Package>クラスは、[オプション] ページとオプションのカテゴリを作成するためのサポートを提供します。 <xref:Microsoft.VisualStudio.Shell.DialogPage>クラスは、[オプション] ページを実装します。
 
- 既定の実装<xref:Microsoft.VisualStudio.Shell.DialogPage>プロパティの汎用のグリッド内のユーザーにそのパブリック プロパティを提供しています。 独自のユーザー インターフェイス (UI) を持つカスタム オプション ページを作成するページのさまざまなメソッドをオーバーライドすることで、この動作をカスタマイズできます。 詳細については、次を参照してください。[オプション ページの作成](../../extensibility/creating-an-options-page.md)です。
+ 既定の実装<xref:Microsoft.VisualStudio.Shell.DialogPage>プロパティの汎用のグリッド内のユーザーにそのパブリック プロパティを提供しています。 独自のユーザー インターフェイス (UI) を持つカスタム オプション ページを作成するページのさまざまなメソッドをオーバーライドすることで、この動作をカスタマイズできます。 詳細については、[オプション ページの作成](../../extensibility/creating-an-options-page.md)を参照してください。
 
  <xref:Microsoft.VisualStudio.Shell.DialogPage>クラスが実装する<xref:Microsoft.VisualStudio.Shell.IProfileManager>、[オプション] ページとユーザー設定の永続化を提供します。 既定の実装、<xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A>と<xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A>と文字列の間に、プロパティを変換できる場合、メソッドは、レジストリのユーザー セクションにプロパティの変更を保持します。
 

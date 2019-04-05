@@ -1,14 +1,9 @@
 ---
 title: '&lt;assembly&gt;要素 (ClickOnce 配置) |Microsoft ドキュメント'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 5fa45d64956fe1347477abb533e45565f27996f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3b77cfacf3dca2c2cc20d674f79929e9958a16d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259949"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972969"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly&gt;要素 (ClickOnce 配置)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49259949"
   
 ```  
   
-      <assembly    
+      <assembly    
    manifestVersion  
 />  
 ```  
@@ -73,6 +68,3 @@ ms.locfileid: "49259949"
 ## <a name="see-also"></a>関連項目  
  [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)   
  [\<assembly> 要素](../deployment/assembly-element-clickonce-application.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: '&lt;コマンド&gt;要素 (ブートス トラップ) |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 309f93658cee6663c2b5673c03c6621330e7fa39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: af10c9e0b26a6ef2c8e7a98bc345b8e86017682b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276576"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974779"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;コマンド&gt;要素 (ブートス トラップ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,7 +97,7 @@ ms.locfileid: "49276576"
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Property`|必須。 テストするプロパティの名前。 子でプロパティ以前おく必要があります、`InstallChecks`要素。 詳細については、[ \<InstallChecks > 要素](../deployment/installchecks-element-bootstrapper.md)を参照してください。|  
+|`Property`|必須。 テストするプロパティの名前。 子でプロパティ以前おく必要があります、`InstallChecks`要素。 詳細については、次を参照してください。 [ \<InstallChecks > 要素](../deployment/installchecks-element-bootstrapper.md)します。|  
 |`Compare`|必須。 実行する比較の種類。 次に、有効な値を示します。<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
 |`Value`|必須。 プロパティと比較する値。|  
 |`Schedule`|任意。 名前、`Schedule`このルールを評価するときに定義するタグ。|  
@@ -114,14 +109,14 @@ ms.locfileid: "49276576"
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Property`|必須。 テストするプロパティの名前。 子でプロパティ以前おく必要があります、`InstallChecks`要素。 詳細については、[ \<InstallChecks > 要素](../deployment/installchecks-element-bootstrapper.md)を参照してください。|  
+|`Property`|必須。 テストするプロパティの名前。 子でプロパティ以前おく必要があります、`InstallChecks`要素。 詳細については、次を参照してください。 [ \<InstallChecks > 要素](../deployment/installchecks-element-bootstrapper.md)します。|  
 |`Compare`|必須。 実行する比較の種類。 次に、有効な値を示します。<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
 |`Value`|必須。 プロパティと比較する値。|  
 |`String`|任意。 障害発生時にユーザーに表示するテキスト。|  
 |`Schedule`|任意。 名前、`Schedule`このルールを評価するときに定義するタグ。|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- `ExitCodes`要素の子である、`Command`要素。 `ExitCodes`要素は、1 つ以上含まれています。`ExitCode`要素で、インストールが終了コードをパッケージからの応答で行う必要がありますを決定します。 1 つできます省略可能な`ExitCode`下にある要素を`Command`要素。 `ExitCodes` 属性はありません。  
+ `ExitCodes`要素の子である、`Command`要素。 `ExitCodes`要素は、1 つ以上含まれています。`ExitCode`要素で、インストールが終了コードをパッケージからの応答で行う必要がありますを決定します。 1 つできます省略可能な`ExitCode`下にある要素を`Command`要素。 `ExitCodes` に属性はありません。  
   
 ## <a name="exitcode"></a>ExitCode  
  `ExitCode`要素の子である、`ExitCodes`要素。 `ExitCode`要素は、インストールが終了コードをパッケージからの応答で行う必要がありますを決定します。 `ExitCode` 子要素が含まれていない、次の属性です。  
@@ -213,7 +208,4 @@ ms.locfileid: "49276576"
   
 ## <a name="see-also"></a>関連項目  
  [製品およびパッケージ スキーマ リファレンス](../deployment/product-and-package-schema-reference.md)   
- [\<InstallChecks > 要素](../deployment/installchecks-element-bootstrapper.md)
-
-
-
+ [\<InstallChecks> 要素](../deployment/installchecks-element-bootstrapper.md)

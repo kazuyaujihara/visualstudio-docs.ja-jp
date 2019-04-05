@@ -1,14 +1,9 @@
 ---
 title: '方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 47d4355fc1b5690d6c9c76fd354a5f5bd4830d8e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0a3619e911ffcf730012ee26d26783b6a7596704
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196288"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975720"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>方法 : ClickOnce アプリケーションと共に必須コンポーネントをインストールする
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 すべて[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションでは、実行する前に、.NET Framework の正しいバージョンがコンピューターにインストールされている必要があります。 多くのアプリケーションもその他の前提条件があります。 発行するときに、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション、アプリケーションと共にパッケージ化する前提条件コンポーネントのセットを選択できます。 かどうかは既に存在するかを判断する各前提条件のインストール時に、チェックが実行されます。インストールする前にインストールされていない場合、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。  
@@ -37,12 +32,12 @@ ms.locfileid: "49196288"
  パッケージ化と発行の前提条件ではなく、コンポーネントのダウンロード場所を指定することもできます。 たとえば、発行されたすべてのアプリケーションと共に必須コンポーネントを含むではなく可能性がありますを使用する一元的なファイル共有またはすべての前提条件インストーラーを含む Web 上の場所: コンポーネントのダウンロード、インストール時に、その場所からインストールします。  
   
 > [!IMPORTANT]
->  初めて発行する前に、開発用コンピューターに必須コンポーネントのインストーラー パッケージを追加する必要があります[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。 詳細については、[方法: ClickOnce アプリケーションと共に必須コンポーネントを含める](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)を参照してください。  
+>  初めて発行する前に、開発用コンピューターに必須コンポーネントのインストーラー パッケージを追加する必要があります[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。 詳細については、「[方法 :ClickOnce アプリケーションと共に必須コンポーネントを含める](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)」を参照してください。  
   
  前提条件がで管理されている、**の前提条件**からアクセスできるダイアログ ボックス、**発行**のウィンドウ、**プロジェクト デザイナー**。  
   
 > [!NOTE]
->  前提条件の定義済みの一覧だけでなく、一覧に、独自のコンポーネントを追加できます。 詳細については、[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)を参照してください。  
+>  前提条件の定義済みの一覧だけでなく、一覧に、独自のコンポーネントを追加できます。 詳細については、次を参照してください。[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)します。  
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>ClickOnce アプリケーションと共にをインストールする前提条件を指定するには  
   
@@ -78,6 +73,3 @@ ms.locfileid: "49196288"
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
  [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

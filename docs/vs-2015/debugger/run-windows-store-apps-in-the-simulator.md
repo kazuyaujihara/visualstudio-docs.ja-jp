@@ -1,14 +1,9 @@
 ---
 title: Windows ストア アプリの実行、シミュレーターで |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 504a63d0f99a1a96d1192a1666d45dafde037253
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9ceda4b04d5a029066d5594cac7e0a0701b1b4ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775109"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972939"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>シミュレーターでの Windows ストア アプリの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +112,7 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
      ![設定のコンテキスト メニューのスクリーン ショット](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> ネットワーク接続のプロパティをシミュレートする  
- アプリケーションのユーザーがネットワーク接続コストやデータ プランの状態の変化を認識し、アプリケーションがその情報を使用して、ローミングや指定されたデータ転送の制限の超過による追加コストの発生を避けることにより、アプリケーションのユーザーが従量制課金接続のコストを管理できるようにします。 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API を使用すると、 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) および署名を行うイベント [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) に応答できます。 「 [従量制課金接続のコスト制約を管理する方法 (HTML)](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)」をご覧ください。  
+ アプリケーションのユーザーがネットワーク接続コストやデータ プランの状態の変化を認識し、アプリケーションがその情報を使用して、ローミングや指定されたデータ転送の制限の超過による追加コストの発生を避けることにより、アプリケーションのユーザーが従量制課金接続のコストを管理できるようにします。 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API を使用すると、 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) および署名を行うイベント [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) に応答できます。 例については、「[クイック スタート:従量制ネットワーク接続のコスト制約を管理する](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)します。  
   
  ネットワーク コストを認識するコードをデバッグまたはテストするには、シミュレーターを使って、 [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) によって返される [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)オブジェクトを通じて公開されるネットワークのプロパティを模倣します。  
   
@@ -141,7 +136,7 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
   
    **ネットワーク接続の管理の詳細について**  
   
-   [従量制課金接続のコスト制約を管理する方法 (HTML)](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [クイック スタート:従量制ネットワーク接続管理のコスト制約](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [ネットワーク情報のサンプル](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
@@ -149,7 +144,7 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
   
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
-   [バックグラウンド タスクでシステム イベントに応答する方法](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [バックグラウンド タスクでシステム イベントに応答する方法](http://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
    [Windows ストア アプリの中断イベント、再開イベント、およびバックグラウンド イベントをトリガーする方法](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
@@ -160,6 +155,3 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio からアプリを実行](../debugger/run-store-apps-from-visual-studio.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: ツールおよびツールボックスのカスタマイズ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -17,13 +14,13 @@ ms.assetid: 2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93cc5fdef5c3d91281f01db8d4946dee17394170
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847813"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976590"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>ツールおよびツールボックスのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +84,11 @@ Editor
   
 3.  設定、**ツールボックス アイコン**プロパティを 16 x 16 ビットマップを参照してください。  
   
-     新しいアイコンを定義する場合は、ソリューション エクスプ ローラーでビットマップ ファイルを作成、 **dsl \resources**フォルダー。 次のプロパティ値があります:**ビルド アクション** = **コンテンツ**;**出力ディレクトリにコピー** = **コピーしない**します。  
+     新しいアイコンを定義する場合は、ソリューション エクスプ ローラーでビットマップ ファイルを作成、 **dsl \resources**フォルダー。 ファイルには、次のプロパティ値が必要です。**ビルド アクション** = **コンテンツ**;**出力ディレクトリにコピー** = **コピーしない**します。  
   
-4.  **要素ツール:** 設定、**クラス**図形にマップされる具象ドメイン クラスを参照するツールのプロパティ。  
+4.  **要素ツール。** 設定、**クラス**図形にマップされる具象ドメイン クラスを参照するツールのプロパティ。  
   
-     **コネクタ ツール:** 設定、**接続ビルダー**ドロップダウン リストで提供されている項目のいずれかのツールのプロパティ。 接続ビルダーは、コネクタをドメイン リレーションシップにマップすると、自動的に作成されます。 最近、コネクタを作成した場合、通常、関連する接続ビルダーを選択しています。  
+     **コネクタ ツール。** 設定、**接続ビルダー**ドロップダウン リストで提供されている項目のいずれかのツールのプロパティ。 接続ビルダーは、コネクタをドメイン リレーションシップにマップすると、自動的に作成されます。 最近、コネクタを作成した場合、通常、関連する接続ビルダーを選択しています。  
   
 5.  DSL をテストするには、F5 キーまたは CTRL+F5 キーを押し、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスでサンプル モデル ファイルを開きます。 ツールボックスに新しいツールが表示されます。 それを図の上にドラッグし、新しい要素が作成されることを確認します。  
   
@@ -233,7 +230,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     /// <summary>  
     /// Only if source is on parent of target.  
     /// </summary>  
-    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
+    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
     {  
       return sourceInPort.Component == targetInPort.Component.Parent;  
     }  
@@ -254,9 +251,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="see-also"></a>関連項目  
  [要素の作成と移動をカスタマイズします。](../modeling/customizing-element-creation-and-movement.md)   
  [コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)   
- [方法: ドラッグ アンド ドロップ ハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [方法: ドラッグ アンド ドロップ ハンドラーを追加します。](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [移動して、プログラム コードでモデルを更新しています](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [回路図のサンプル DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

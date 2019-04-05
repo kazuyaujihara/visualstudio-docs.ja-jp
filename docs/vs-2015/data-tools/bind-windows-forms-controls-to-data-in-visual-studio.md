@@ -28,7 +28,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: e63d20bc226abe0c0bdf4c77179a94b0d0e6212c
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49293671"
@@ -41,7 +41,7 @@ ms.locfileid: "49293671"
   
  ![データ ソースはドラッグ操作](../data-tools/media/raddata-data-source-drag-operation.png "raddata データ ソースはドラッグ操作")  
   
- Visual Studio でのデータ バインド コントロールを作成する方法については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。 Windows フォームでのデータ バインディングの詳細については、次を参照してください。 [Windows フォーム データ バインディング](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)します。  
+ Visual Studio でのデータ バインド コントロールを作成する方法については、[Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)を参照してください。 Windows フォームでのデータ バインディングの詳細については、[Windows フォーム データ バインディング](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -78,7 +78,7 @@ ms.locfileid: "49293671"
  このコンポーネントには、Windows アプリケーションによって表示されるデータを移動するためのユーザー インターフェイスが用意されています。 詳細については、「[BindingNavigator コントロール](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)」を参照してください。  
   
 ## <a name="datagridview-control"></a>DataGridView コントロール  
- 表示し、さまざまな種類のデータ ソースから表形式のデータを編集、使用、<xref:System.Windows.Forms.DataGridView>コントロール。 <xref:System.Windows.Forms.DataGridView> にデータをバインドするには、<xref:System.Windows.Forms.DataGridView.DataSource%2A> プロパティを使用します。 詳細については、次を参照してください。 [DataGridView コントロールの概要](http://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488)します。  
+ 表示し、さまざまな種類のデータ ソースから表形式のデータを編集、使用、<xref:System.Windows.Forms.DataGridView>コントロール。 <xref:System.Windows.Forms.DataGridView> にデータをバインドするには、<xref:System.Windows.Forms.DataGridView.DataSource%2A> プロパティを使用します。 詳細については、[DataGridView コントロールの概要](http://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)

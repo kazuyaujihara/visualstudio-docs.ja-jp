@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 0751229e778e13375698f591d789edfd318b3ffc
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49298625"
@@ -85,7 +85,7 @@ string result = t4.ProcessTemplate("",
 ## <a name="error-reporting-and-the-output-directive"></a>エラー報告と出力ディレクティブ  
  処理中にエラーが発生すると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のエラー ウィンドウに表示されます。 また、<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback> を実装したコールバックを指定することにより、エラーの通知を受けることもできます。  
   
- 結果の文字列をファイルに書き込む場合は、テンプレートの `<#@output#>` ディレクティブで指定されているファイル拡張子とエンコードを確認できます。 この情報は、コールバックにも渡されます。 詳細については、次を参照してください。 [T4 出力ディレクティブ](../modeling/t4-output-directive.md)します。  
+ 結果の文字列をファイルに書き込む場合は、テンプレートの `<#@output#>` ディレクティブで指定されているファイル拡張子とエンコードを確認できます。 この情報は、コールバックにも渡されます。 詳細については、[T4 出力ディレクティブ](../modeling/t4-output-directive.md)を参照してください。  
   
 ```csharp  
 void ProcessMyTemplate(string MyTemplateFile)  
@@ -144,10 +144,10 @@ Sample text.
   
 ## <a name="related-topics"></a>関連トピック  
  前処理されたテキスト テンプレートからテキストを生成するには  
- 生成されたクラスの `TransformText()` メソッドを呼び出します。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)します。  
+ 生成されたクラスの `TransformText()` メソッドを呼び出します。 詳細については、[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)を参照してください。  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能の範囲外でテキストを生成するには  
- カスタム ホストを定義します。 詳細については、次を参照してください。[カスタム ホストを使用してテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)します。  
+ カスタム ホストを定義します。 詳細については、[カスタム ホストを使用してテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)を参照してください。  
   
  後でコンパイルして実行できるソース コードを生成するには  
  `t4.PreprocessTemplate()` の <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> メソッドを呼び出します。

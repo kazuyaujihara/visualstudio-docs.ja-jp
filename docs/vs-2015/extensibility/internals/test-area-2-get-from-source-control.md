@@ -1,29 +1,24 @@
 ---
-title: 'テスト領域 2: は、ソース管理から取得 |Microsoft Docs'
-ms.custom: ''
+title: 'テスト領域 2: ソース管理から取得 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting items from source control
 - source control [Visual Studio SDK], getting items from
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96b00cfc9965b6006fa51b3cd313566658d604bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 78ecbcb50effc133487f03ffd2f2edee3cbd8d4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786159"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974190"
 ---
-# <a name="test-area-2-get-from-source-control"></a>テスト領域 2: ソース管理からの取得
+# <a name="test-area-2-get-from-source-control"></a>テスト領域 2: ソース管理から取得
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 このテストの領域では、Get コマンドを使用して、バージョン ストアから項目を取得するためのテスト_ケースについて説明します。 これらのテスト_ケースは、両方のローカルにし、Web プロジェクトに適用できます。  
@@ -39,7 +34,7 @@ ms.locfileid: "51786159"
   
 -   ショートカット メニューの **最新バージョンの取得**します。  
   
--   Get:**ファイル**、**ソース管理**、**取得**します。  
+-   取得：**ファイル**、**ソース管理**、**取得**します。  
   
 ## <a name="expected-behavior"></a>想定される動作  
   
@@ -62,4 +57,3 @@ ms.locfileid: "51786159"
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグイン向けのテスト ガイド](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

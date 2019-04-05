@@ -1,34 +1,29 @@
 ---
 title: どのような&#39;ソース新プラグイン API バージョン 1.2 の制御 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, what's new in API v1.2
 - what's new [Visual Studio SDK], source control plug-ins
 ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ffaaef58ce9cf35126098558292ddde1deff5808
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7c3b06c9517110cf7d5d6b8a1310e88d419da126
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976011"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>どのような&#39;ソース新プラグイン API バージョン 1.2 の制御
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 このセクションには、ソース管理プラグイン API バージョン 1.2 での高度なソース コード管理機能が強調表示されます。 バージョン 1.2 の新機能を次に示します。  
   
-## <a name="changes"></a>変更  
+## <a name="changes"></a>変更内容  
  [~SAK ファイルの削除](../../extensibility/internals/elimination-of-tilde-sak-files.md)  
  ソース管理プラグイン API 1.2 が一時ファイルをやり取りする方法について説明します。  
   
@@ -45,5 +40,4 @@ ms.locfileid: "51749211"
  ソース管理プラグイン API バージョン 1.2 がプロジェクトとソリューションに関する情報を格納する方法について説明します。  
   
 ## <a name="see-also"></a>関連項目  
- [はじめに](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
-
+ [作業の開始](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

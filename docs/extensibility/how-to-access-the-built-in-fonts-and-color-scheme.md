@@ -43,7 +43,7 @@ Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウ�
 
 2.  カテゴリの名前は、VSPackage のリソース内の文字列テーブルに追加する必要があります (*.rc*) ファイルを IDE に表示するときに、必要に応じてローカライズできるようにします。
 
-     詳細については、次を参照してください。[を追加または削除する文字列](/cpp/windows/adding-or-deleting-a-string)します。
+     詳細については、[を追加または削除する文字列](/cpp/windows/adding-or-deleting-a-string)を参照してください。
 
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>組み込みのフォントと色を使用してカテゴリを登録するには
 

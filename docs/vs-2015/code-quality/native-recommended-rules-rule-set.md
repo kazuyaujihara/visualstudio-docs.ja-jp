@@ -1,25 +1,20 @@
 ---
 title: ルール セットをネイティブ推奨規則 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 8d845b5a-1b75-4e9d-861a-7c59cb7752af
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a84a72046ece48fce16734cf9be838fa1f042478
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24772233f80332ec88030af0d7862b00e5d61655
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891168"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002495"
 ---
 # <a name="native-recommended-rules-rule-set"></a>"ネイティブ推奨規則" 規則セット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +117,7 @@ ms.locfileid: "49891168"
 |                       [C6504](../code-quality/c6504.md)                        |                                                         非ポインターでの Null                                                         |
 |                       [C6505](../code-quality/c6505.md)                        |                                                          Void での MustCheck                                                          |
 |                       [C6506](../code-quality/c6506.md)                        |                                                 非ポインターまたは配列でのバッファー サイズ                                                 |
-| [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  逆参照ゼロでの Null 不一致                                                  |
+| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  逆参照ゼロでの Null 不一致                                                  |
 |                       [C6508](../code-quality/c6508.md)                        |                                                      定数での書き込みアクセス                                                       |
 |                       [C6509](../code-quality/c6509.md)                        |                                                     前提条件で使用される Return                                                     |
 |                       [C6510](../code-quality/c6510.md)                        |                                                   非ポインターでの Null 終了                                                    |
@@ -133,13 +128,12 @@ ms.locfileid: "49891168"
 |                       [C6516](../code-quality/c6516.md)                        |                                                     属性にプロパティがない                                                      |
 |                       [C6517](../code-quality/c6517.md)                        |                                                  読み取り可能でないバッファーでの有効なサイズ                                                  |
 |                       [C6518](../code-quality/c6518.md)                        |                                                書き込み可能でないバッファーでの書き込み可能サイズ                                                 |
-| [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)  |                             無効な注釈です: 'NeedsRelease' プロパティは Yes または No でなければなりません                              |
-| [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   無効なサイズの文字列の逆参照                                                   |
+| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   無効なサイズの文字列の逆参照                                                   |
 |                       [C6522](../code-quality/c6522.md)                        |                                                      無効なサイズの文字列型                                                       |
-| [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    無効なサイズの文字列パラメーター                                                    |
+| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    無効なサイズの文字列パラメーター                                                    |
 |                       [C6525](../code-quality/c6525.md)                        |                                              無効なサイズの到達不能な場所の文字列                                               |
-| [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   無効なサイズの文字列バッファー型                                                   |
-|                       [C6527](../code-quality/c6527.md)                        |                         無効な注釈です: 'NeedsRelease' プロパティは、void 型の値では使用できません                          |
+| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   無効なサイズの文字列バッファー型                                                   |
+|                       [C6527](../code-quality/c6527.md)                        |                         無効な注釈。'NeedsRelease' プロパティを void 型の値に対して使用することはできません。                          |
 |                       [C6530](../code-quality/c6530.md)                        |                                                  認識されない書式指定文字列スタイル                                                   |
 |                       [C6540](../code-quality/c6540.md)                        |            この関数で属性注釈を使用すると、既存の __declspec 注釈がすべて無効となります             |
 |                       [C6551](../code-quality/c6551.md)                        |                                         無効なサイズ指定です: 式が解析可能ではありません                                         |
@@ -181,19 +175,19 @@ ms.locfileid: "49891168"
 |                      [C28196](../code-quality/c28196.md)                       |                            要件が満たされていません。 (式は true に評価されません)                            |
 |                      [C28202](../code-quality/c28202.md)                       |                                               静的でないメンバーへの参照が正しくありません                                                |
 |                      [C28203](../code-quality/c28203.md)                       |                                                クラス メンバーへのあいまいな参照です。                                                 |
-|                      [C28205](../code-quality/c28205.md)                       |                                      \_成功\_または\_On_failure\_が無効なコンテキストで使用されます。                                       |
+|                      [C28205](../code-quality/c28205.md)                       |                                      \_Success\_ または \_On_failure\_ が無効なコンテキスト内で使用されています                                       |
 |                      [C28206](../code-quality/c28206.md)                       |                                              左側のオペランドは構造体をポイントするため、'-> ' を使用します                                              |
 |                      [C28207](../code-quality/c28207.md)                       |                                                  左側のオペランドは構造体であるため、'.' を使用します                                                  |
 |                      [C28209](../code-quality/c28209.md)                       |                                      シンボルの宣言が競合する宣言                                       |
 |                      [C28210](../code-quality/c28210.md)                       |                            __on_failure コンテキストの注釈を明示的なプリ コンテキストに含めることはできません                             |
 |                      [C28211](../code-quality/c28211.md)                       |                                            SAL_context には静的コンテキスト名が必要です                                             |
 |                      [C28212](../code-quality/c28212.md)                       |                                             注釈にはポインター式が必要です                                              |
-|                      [C28213](../code-quality/c28213.md)                       |            \_Use_decl_annotations\_先行する宣言を変更しない限り、参照に注釈を使用する必要があります。            |
+|                      [C28213](../code-quality/c28213.md)                       |            \_Use_decl_annotations\_ 注釈は、変更、先行する宣言なしで、参照に使用される必要があります。            |
 |                      [C28214](../code-quality/c28214.md)                       |                                              属性パラメーター名は、p1...p9 である必要があります                                              |
 |                      [C28215](../code-quality/c28215.md)                       |                               typefix は、既に typefix のあるパラメーターには適用できません                               |
 |                      [C28216](../code-quality/c28216.md)                       |                   checkReturn 注釈は、特定の関数パラメーターの事後条件にのみ適用されます。                    |
 |                      [C28217](../code-quality/c28217.md)                       |                       関数について、注釈へのパラメーター数がファイルで検出されたものと一致しません                        |
-|                      [C28218](../code-quality/c28218.md)                       |                        関数パラメーターについて、注釈のパラメーターがファイルで検出されたものと一致しません                         |
+|                      [C28218](../code-quality/c28218.md)                       |                        関数のパラメーターの注釈のパラメーターと一致しませんファイルで検出されました。                         |
 |                      [C28219](../code-quality/c28219.md)                       |                            注釈 (注釈のパラメーター) には列挙型のメンバーが必要です                            |
 |                      [C28220](../code-quality/c28220.md)                       |                             注釈 (注釈のパラメーター) には整数式が必要です                              |
 |                      [C28221](../code-quality/c28221.md)                       |                                   注釈のパラメーターには文字列式が必要です                                    |
@@ -228,29 +222,27 @@ ms.locfileid: "49891168"
 |                      [C28254](../code-quality/c28254.md)                       |                                          dynamic_cast<>() は、注釈ではサポートされません                                           |
 |                      [C28262](../code-quality/c28262.md)                       |                               注釈での構文エラーが関数の注釈で見つかりました                                |
 |                      [C28263](../code-quality/c28263.md)                       |                            条件付き注釈での構文エラーが、組み込みの注釈で見つかりました                            |
-| [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                               結果リストの値は定数である必要があります。                                                |
 |                      [C28267](../code-quality/c28267.md)                       |                               注釈での構文エラーが、関数の注釈で見つかりました。                               |
 |                      [C28272](../code-quality/c28272.md)                       |                 検査中の関数とパラメーターに対する注釈に関数宣言との一貫性がありません                 |
 |                      [C28273](../code-quality/c28273.md)                       |                               関数について、手がかりには関数宣言との一貫性がありません。                                |
-|                      [C28275](../code-quality/c28275.md)                       |                                              パラメーターを\_Macro_value\_が null                                               |
+|                      [C28275](../code-quality/c28275.md)                       |                                              \_Macro_value\_ のパラメーターは null です                                               |
 |                      [C28279](../code-quality/c28279.md)                       |                                      シンボルについて、'begin' はありましたが、対応する 'end' がありません                                       |
 |                      [C28280](../code-quality/c28280.md)                       |                                      シンボルについて、'end' はありましたが、対応する 'begin' がありません                                      |
 |                      [C28282](../code-quality/c28282.md)                       |                                               書式指定文字列は、前提条件の中に存在する必要があります                                               |
 |                      [C28285](../code-quality/c28285.md)                       |                                               関数について、パラメーターに構文エラーがあります                                               |
 |                      [C28286](../code-quality/c28286.md)                       |                                               関数について、構文エラーが最後の近くにあります                                               |
-|                      [C28287](../code-quality/c28287.md)                       |                           関数について、構文エラーで\_で\_() 注釈 (認識できないパラメーター名)                           |
-|                      [C28288](../code-quality/c28288.md)                       |                             関数について、構文エラーで\_で\_() 注釈 (無効なパラメーター名)                              |
-|                      [C28289](../code-quality/c28289.md)                       |                           関数について: ReadableTo または WritableTo には、パラメーターとして limit-spec がありませんでした                           |
+|                      [C28287](../code-quality/c28287.md)                       |                           関数について、\_At\_() 注釈 (認識されないパラメーター名) に構文エラーがあります                           |
+|                      [C28288](../code-quality/c28288.md)                       |                             関数について、\_At\_() 注釈 (無効のパラメーター名) に構文エラーがあります                              |
+|                      [C28289](../code-quality/c28289.md)                       |                           関数の場合。ReadableTo または WritableTo では、パラメーターとして limit-spec がなかった                           |
 |                      [C28290](../code-quality/c28290.md)                       |                      関数の注釈は、実際のパラメーターの数より多い外部参照を含みます                       |
 |                      [C28291](../code-quality/c28291.md)                       |                                   deref レベル 0 での post null/notnull は、関数に対して意味がありません。                                   |
 |                      [C28300](../code-quality/c28300.md)                       |                                       演算子に対する互換性のない型の、式のオペランドです                                        |
 |                      [C28301](../code-quality/c28301.md)                       |                                          関数の最初の宣言に対して注釈がありません。                                          |
-|                      [C28302](../code-quality/c28302.md)                       |                                        余分な\_Deref\_演算子が注釈に見つかりました。                                         |
-|                      [C28303](../code-quality/c28303.md)                       |                                      あいまいな\_Deref\_演算子が注釈に見つかりました。                                       |
-|                      [C28304](../code-quality/c28304.md)                       |                                不適切に\_Notref\_トークンに適用される演算子が見つかりました。                                 |
+|                      [C28302](../code-quality/c28302.md)                       |                                        余分な \_Deref\_ 演算子が注釈に見つかりました。                                         |
+|                      [C28303](../code-quality/c28303.md)                       |                                      あいまいな \_Deref\_ 演算子が注釈に見つかりました。                                       |
+|                      [C28304](../code-quality/c28304.md)                       |                                不適切に設定された \_Notref\_ 演算子がトークンに適用されました。                                 |
 |                      [C28305](../code-quality/c28305.md)                       |                                           トークンの解析中にエラーが発生しました。                                            |
 |                      [C28306](../code-quality/c28306.md)                       |                                             パラメーターの注釈には使用されなくなりました                                              |
 |                      [C28307](../code-quality/c28307.md)                       |                                             パラメーターの注釈には使用されなくなりました                                              |
 |                      [C28350](../code-quality/c28350.md)                       |                             注釈には、条件付きで適用できない状況の説明が表示されます。                              |
 |                      [C28351](../code-quality/c28351.md)                       |                    注釈には、動的な値 (変数) が使用できない条件が記述されています。                     |
-

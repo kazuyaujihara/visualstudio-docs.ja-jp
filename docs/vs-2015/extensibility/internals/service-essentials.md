@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 90cec13c403194c70b9d44cff349b53495a0e160
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51776461"
@@ -27,7 +27,7 @@ ms.locfileid: "51776461"
 
 サービスは、2 つの Vspackage の間のコントラクトです。 1 つの VSPackage では、別の VSPackage を使用するためのインターフェイスの特定のセットを提供します。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 自体は、その他の Vspackage にサービスを提供する Vspackage のコレクションです。  
   
- たとえば、SVsActivityLog サービスを使用すると、アクティビティ ログへの書き込みに使用できる、IVsActivityLog インターフェイスを取得します。 詳細については、次を参照してください。[方法: アクティビティ ログを使用して、](../../extensibility/how-to-use-the-activity-log.md)します。  
+ たとえば、SVsActivityLog サービスを使用すると、アクティビティ ログへの書き込みに使用できる、IVsActivityLog インターフェイスを取得します。 詳細については、[方法: アクティビティ ログを使用して、](../../extensibility/how-to-use-the-activity-log.md)を参照してください。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 登録されていないいくつかの組み込みサービスを提供します。 Vspackage では、サービスのオーバーライドを提供することで、組み込みやその他のサービスを置き換えることができます。 1 つのサービスのオーバーライドは、すべてのサービスに許可されます。  
   
@@ -43,7 +43,7 @@ ms.locfileid: "51776461"
   
 -   サービス、またはサービスの上書きがオンデマンドで読み込まれる、別の VSPackage に提供するサービスを要求すると、サービス プロバイダーが読み込まれます。  
   
--   サービス プロバイダーをオンデマンドの読み込みをサポートするには、グローバル サービスを登録します[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 詳細については、次を参照してください。[サービス登録](../../misc/registering-services.md)します。  
+-   サービス プロバイダーをオンデマンドの読み込みをサポートするには、グローバル サービスを登録します[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 詳細については、[サービス登録](../../misc/registering-services.md)を参照してください。  
   
 -   サービスを取得した後を使用して、 [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (アンマネージ コード) やなどの目的のインターフェイスを取得するキャスト (マネージ コード)。  
   
@@ -62,7 +62,7 @@ ms.locfileid: "51776461"
   
 -   Vspackage では、サービス プロバイダーを作成するオブジェクトを指定できます。 たとえば、フォームはへの要求を渡すことがあります、そのフレームに色サービスに対する要求を送信可能性があります[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
   
--   深く入れ子になったか、まったくが配置されていないマネージ オブジェクトを呼び出すことが<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>グローバル サービスに直接アクセスします。 詳細については、次を参照してください。[方法: GetGlobalService を使用して](../../misc/how-to-use-getglobalservice.md)します。  
+-   深く入れ子になったか、まったくが配置されていないマネージ オブジェクトを呼び出すことが<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>グローバル サービスに直接アクセスします。 詳細については、[方法: GetGlobalService を使用して](../../misc/how-to-use-getglobalservice.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [利用可能なサービスの一覧](../../extensibility/internals/list-of-available-services.md)   

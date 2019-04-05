@@ -1,25 +1,20 @@
 ---
 title: '[その他、XML、テキスト エディター オプション] ダイアログ ボックス |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a58ef682ec269ebf83cb72bfbd7801da1fc17c64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0181609f083aada564edb585f64ccdaaf104ed15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194507"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963149"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>[その他] ([オプション] ダイアログ ボックス - [テキスト エディター] - [XML])
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "49194507"
   
 ## <a name="auto-insert"></a>自動挿入  
  **終了タグ**  
- オートコンプリート設定がオンのときに、タグが既に閉じられていない場合には、開始タグを閉じるためにユーザーが右山かっこ (>) を入力すると、エディターによって自動的に終了タグが追加されます。 これが既定の動作です。  
+ オートコンプリートの設定をオンにした場合、エディターで、タグが既に閉じられていない場合、開始タグを閉じるに右の山かっこ (>) を入力すると、終了タグが自動的に追加されます。 これが既定の動作です。  
   
  空の要素の完了は、オートコンプリート設定に依存するわけではありません。 バックスラッシュ (/) を入力することで、いつでも空の要素をオートコンプリートできます。  
   
@@ -52,7 +47,7 @@ ms.locfileid: "49194507"
  既定でオンになっています。  
   
 ## <a name="network"></a>ネットワーク  
- **Dtd とスキーマを自動的にダウンロードします。**  
+ **DTD とスキーマを自動的にダウンロードする**  
  HTTP の場所から、スキーマやドキュメント型定義 (DTD) を自動的にダウンロードします。 この機能は、プロキシ サーバーの自動検出を有効にした System.Net を使用します。  
   
  既定でオンになっています。  
@@ -70,6 +65,3 @@ ms.locfileid: "49194507"
 ## <a name="see-also"></a>関連項目  
  [XML ドキュメントのプロパティと [プロパティ] ウィンドウ](../xml-tools/xml-document-properties-properties-window.md)   
  [XML エディターのコンポーネント](../xml-tools/xml-editor-components.md)
-
-
-

@@ -98,7 +98,7 @@ Visual Studio Visualization and Modeling SDK でカスタム コードを使用�
     }
     ```
 
-     プログラム コードでモデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。
+     プログラム コードでモデルをカスタマイズする方法の詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

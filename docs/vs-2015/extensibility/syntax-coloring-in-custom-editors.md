@@ -1,26 +1,21 @@
 ---
 title: 構文のカスタム エディターで色分け |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - syntax coloring
 ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cc4d7f01a813332665a753a8a2aad54bea8a6980
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: d690afae8d546b4597159bfd094a7a21d2528780
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778671"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977616"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>カスタム エディターでの構文の色分け表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,11 +54,10 @@ Visual Studio 環境の SDK エディターなどのコア エディターは、
 3.  によって返される色づけの情報を使用して<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>を再描画し、そのテキストが表示されます。  
   
 > [!NOTE]
->  言語サービスの colorizer だけでなく、VSPackage は、汎用的な Visual Studio 環境の SDK のテキストの色指定メカニズムを使用してが選択できます。 このメカニズムの詳細については、[を使用してフォントおよび色](../extensibility/using-fonts-and-colors.md)を参照してください。  
+>  言語サービスの colorizer だけでなく、VSPackage は、汎用的な Visual Studio 環境の SDK のテキストの色指定メカニズムを使用してが選択できます。 このメカニズムの詳細については、次を参照してください。[を使用してフォントおよび色](../extensibility/using-fonts-and-colors.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [構文の色分け、従来の言語サービス](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [構文の色分けを実装します。](../extensibility/internals/implementing-syntax-coloring.md)   
- [方法: ビルトインの配色可能な項目を使用して、](../extensibility/internals/how-to-use-built-in-colorable-items.md)   
+ [方法: 組み込みの配色可能な項目を使用して、](../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [カスタムの配色可能な項目](../extensibility/internals/custom-colorable-items.md)
-

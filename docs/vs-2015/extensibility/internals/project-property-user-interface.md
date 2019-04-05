@@ -1,14 +1,9 @@
 ---
 title: プロジェクトのプロパティのユーザー インターフェイス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties [Visual Studio], user interface
 - projects [Visual Studio SDK], properties UI
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e295bff2f8398765f90c3fd537ca4f546208ce4b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a7650fc8a2ba297ccd3bc2a87be72a3f70062a18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768293"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975335"
 ---
 # <a name="project-property-user-interface"></a>プロジェクト プロパティのユーザー インターフェイス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,9 +55,8 @@ ms.locfileid: "51768293"
   
   プロジェクト サブタイプの集計であるため、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>オブジェクト、これを制御するこれらのプロパティの定義をオーバーライドできます**プロパティ ページ** ダイアログ ボックスが表示されます。 プロジェクト サブタイプ内部の基本プロジェクトからこれらのプロパティを取得し、し、追加または削除できます Clsid に応じて。  
   
-  プロジェクト サブタイプによって追加された新しいプロパティ ページには、プロジェクトの基本実装からプロジェクト構成の参照オブジェクトが渡されます。 このプロジェクト構成の参照オブジェクトには、オートメーション エクステンダーがサポートしています。 AutomationExtenders の詳細については、[実装とオートメーション エクステンダーを使用して](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356)を参照してください。 プロジェクト サブタイプの呼び出しによって実装されるプロパティ ページ<xref:EnvDTE.Project.Extender%2A>オブジェクトを取得する独自プロジェクト サブタイプ構成参照ベースのプロジェクトの構成の参照オブジェクトを拡張します。  
+  プロジェクト サブタイプによって追加された新しいプロパティ ページには、プロジェクトの基本実装からプロジェクト構成の参照オブジェクトが渡されます。 このプロジェクト構成の参照オブジェクトには、オートメーション エクステンダーがサポートしています。 AutomationExtenders の詳細については、次を参照してください。[実装とオートメーション エクステンダーを使用して](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356)します。 プロジェクト サブタイプの呼び出しによって実装されるプロパティ ページ<xref:EnvDTE.Project.Extender%2A>オブジェクトを取得する独自プロジェクト サブタイプ構成参照ベースのプロジェクトの構成の参照オブジェクトを拡張します。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:EnvDTE.IFilterProperties>   
- [プロパティ ページ ダイアログ ボックス](http://msdn.microsoft.com/en-us/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)
-
+ [プロパティ ページ ダイアログ ボックス](http://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)

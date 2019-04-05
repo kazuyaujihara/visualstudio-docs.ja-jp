@@ -1,14 +1,9 @@
 ---
-title: '2132: 既定のコンス トラクターは、少なくとも基本型の既定のコンス トラクターと同程度に重要でことが必要 |Microsoft Docs'
-ms.custom: ''
+title: CA2132:既定のコンス トラクターは、少なくとも基本型の既定のコンス トラクターと同程度に重要である必要があります |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2132
 ms.assetid: e758afa1-8bde-442a-8a0a-bd1ea7b0ce4d
@@ -16,14 +11,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f8452ac1c8d75c684a0f8e7a83c8ae3436e5c2b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48b02bb3cbcb3b3837d2d7050fb9c286581e6cdc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811155"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973121"
 ---
-# <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: 既定のコンストラクターは、基本型の既定コンストラクターと同程度以上、重要であることが必要
+# <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132:既定のコンストラクターは、基本型の既定コンストラクターと同程度以上、重要であることが必要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -54,6 +49,3 @@ ms.locfileid: "49811155"
  [!code-csharp[FxCop.Security.CA2132.DefaultConstructorsMustHaveConsistentTransparency#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2132.defaultconstructorsmusthaveconsistenttransparency/cs/ca2132 - defaultconstructorsmusthaveconsistenttransparency.cs#1)]
 
 ### <a name="comments"></a>コメント
-
-
-

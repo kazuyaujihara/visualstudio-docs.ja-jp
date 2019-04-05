@@ -1,14 +1,9 @@
 ---
 title: '方法: レジスタ値を編集 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.register.edit
 dev_langs:
@@ -27,22 +22,22 @@ ms.assetid: e27b6bd8-e6d4-4f1d-8a86-9f4047bb1167
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c41b54ea075415dac7114413f9cdc15cc6a07a12
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7566d3a89ff27cc473b9352c7e0f02492dc736d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764757"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977688"
 ---
-# <a name="how-to-edit-a-register-value"></a>方法 : レジスタ値を編集する
+# <a name="how-to-edit-a-register-value"></a>方法: レジスタ値を編集します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[レジスタ] ウィンドウにアドレス レベルのデバッグが有効な場合にのみ使用できますが、**オプション**ダイアログ ボックスで、**デバッグ**ノード。  
+[レジスタ] ウィンドウは、**[オプション]** ダイアログ ボックス、**[デバッグ]** ノードで、アドレスレベルのデバッグが有効になっている場合にのみ、使用できます。  
   
 ### <a name="to-change-the-value-of-a-register"></a>レジスタ値を変更するには  
   
-1.  **登録**ウィンドウで、TAB キーまたはマウス カーソルを移動するポイント値を変更して使用します。 入力するときは、上書きする値の直前の位置にカーソルを置く必要があります。  
+1.  **[レジスタ]** ウィンドウで、Tab キーまたはマウスを使用して、変更する値にカーソルを置きます。 入力するときは、上書きする値の直前の位置にカーソルを置く必要があります。  
   
 2.  新しい値を入力します。  
   
@@ -54,8 +49,3 @@ ms.locfileid: "51764757"
   
 ## <a name="see-also"></a>関連項目  
  [方法: [レジスタ] ウィンドウを使用する](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-

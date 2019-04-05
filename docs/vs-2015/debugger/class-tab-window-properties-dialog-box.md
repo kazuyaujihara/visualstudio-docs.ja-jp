@@ -1,27 +1,22 @@
 ---
 title: クラス タブ、ウィンドウのプロパティ ダイアログ ボックス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, Class Tab
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6eba6a12714c1b4f58ae9d6bb17f696c3c452411
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9a7f81a100b2c2311444732434df0f5c5599742a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973938"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>[クラス] タブ ([ウィンドウ プロパティ] ダイアログ ボックス)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +28,13 @@ ms.locfileid: "51749326"
 |入力|説明|  
 |-----------|-----------------|  
 |**クラス名**|このウィンドウ クラスの名前 (または序数)。|  
-|**クラスのスタイル**|クラス スタイルのコードの組み合わせ。|  
+|**クラス スタイル**|クラス スタイルのコードの組み合わせ。|  
 |**クラス バイト数**|このウィンドウ クラスに関連付けられたアプリケーション固有のデータ。|  
 |**クラス アトム**|によって返されるクラスを atom、 **RegisterClass**呼び出します。|  
 |**インスタンス ハンドル**|クラスを登録したモジュールのインスタンス ハンドル。 インスタンス ハンドルが一意でないです。|  
 |**ウィンドウ バイト数**|このクラスの各ウィンドウに関連付けられている追加のバイト数。 これらのバイトの意味は、アプリケーションによって決定されます。 DWORD 形式のバイト値を表示するリスト ボックスを展開します。|  
 |**ウィンドウ プロシージャ**|現在のアドレス、 **WndProc**このクラスの windows の関数。 これに対し**ウィンドウ プロシージャ**上、**全般** タブ、ウィンドウをサブクラス化する場合。|  
 |**メニュー名**|このクラス (メニューがない場合は「なし」) の windows に関連付けられているメイン メニューの名前。|  
-|**アイコン ハンドル**|このクラス (アイコンがない場合は「なし」) の windows に関連付けられているアイコンのハンドル。|  
+|**アイコンハンドル**|このクラス (アイコンがない場合は「なし」) の windows に関連付けられているアイコンのハンドル。|  
 |**カーソル ハンドル**|このクラス (カーソルがない場合は「なし」) の windows に関連付けられているカーソルのハンドル。|  
 |**背景ブラシ**|このクラスは、または (ブラシがない場合は「なし」) ウィンドウの背景を描画する定義済みの色など * 色のいずれかの windows に関連付けられている背景ブラシのハンドル。|
-
-
-
