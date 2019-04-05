@@ -1,14 +1,9 @@
 ---
 title: '方法: [逆アセンブル] ウィンドウを使用して |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -29,22 +24,22 @@ ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67f9307f2f5fece64ee2ee11dd48863b9a951180
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760918"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978218"
 ---
-# <a name="how-to-use-the-disassembly-window"></a>方法 : [逆アセンブル] ウィンドウを使用する
+# <a name="how-to-use-the-disassembly-window"></a>方法: 逆アセンブル ウィンドウを使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 この機能は、アドレス レベルのデバッグが有効になっている場合にのみ使用可能な**オプション**ダイアログ ボックスで、**デバッグ**ノード。 スクリプトまたは SQL のデバッグには使用できません。  
   
- **逆アセンブル**ウィンドウには、コンパイラによって作成された命令に対応するアセンブリ コードが表示されます。 マネージド コードをデバッグする場合、これらのアセンブリ命令は、Visual Studio コンパイラが生成した Microsoft Intermediate Language (MSIL) ではなく、Just-In-Time (JIT) コンパイラが作成したネイティブ コードに対応しています。  
+ **[逆アセンブル]** ウィンドウには、コンパイラによって作成された命令に対応するアセンブリ コードが表示されます。 マネージド コードをデバッグする場合、これらのアセンブリ命令は、Visual Studio コンパイラが生成した Microsoft Intermediate Language (MSIL) ではなく、Just-In-Time (JIT) コンパイラが作成したネイティブ コードに対応しています。  
   
- アセンブリの命令だけでなく、**逆アセンブリ**ウィンドウは、次の省略可能な情報を表示できます。  
+ **[逆アセンブル]** ウィンドウでは、アセンブリ命令だけでなく、必要に応じて以下の情報も表示できます。  
   
 - 各命令が配置されているメモリ アドレス。 ネイティブ アプリケーションの場合は、実際のメモリ アドレスです。 Visual Basic、C#、またはマネージド コードの場合は、関数の先頭からのオフセットです。  
   
@@ -65,7 +60,7 @@ ms.locfileid: "51760918"
   ほとんどの場合、アセンブリ言語ではなく生の数値の形式でマシン語コード命令を表示する必要はありません。 ただし、必要に応じて、[メモリ] ウィンドウを使用するか、[逆アセンブル] ウィンドウのショートカット メニューの [コード バイトの表示] を選択すると表示できます。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ### <a name="to-display-the-disassembly-window"></a>[逆アセンブル] ウィンドウを表示するには  
   
@@ -79,13 +74,8 @@ ms.locfileid: "51760918"
   
      左マージンの黄色の矢印は、現在の実行ポイントの位置を示します。 ネイティブ コードの場合、これは CPU のプログラム カウンターに対応します。 この位置は、プログラム内で次に実行される命令を示します。  
   
-     詳細については、[上下インメモリ](../debugger/how-to-page-up-or-down-in-memory.md)を参照してください。  
+     詳細については、次を参照してください。[上下インメモリ](../debugger/how-to-page-up-or-down-in-memory.md)します。  
   
 ## <a name="see-also"></a>関連項目  
- [デバッガーでのデータの表示](../debugger/viewing-data-in-the-debugger.md)   
+ [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)   
  [方法: [レジスタ] ウィンドウを使用する](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-

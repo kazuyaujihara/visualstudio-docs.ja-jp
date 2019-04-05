@@ -1,25 +1,22 @@
 ---
 title: 図に UML モデルの表示 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: adf1f1f2-2ad9-4ade-82de-c6a5194ab471
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757307"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973563"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>図に UML モデルを表示する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +34,7 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
   
 -   [開くと、図を作成します。](#Opening)  
   
--   [図形の整列のコマンドの例:](#AlignCommand)  
+-   [例:図形の整列のコマンド](#AlignCommand)  
   
 ##  <a name="Display"></a> 図の要素を表示するには  
  ユース ケースやアクションなどの要素を作成すると、ユーザーはそれらを UML モデル エクスプ ローラーで表示できるようになりますが、いつも自動的に図に表示されるわけではありません。 場合によっては、それを表示するコードを記述する必要があります。 次の表に代替手段を示します。  
@@ -78,7 +75,7 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
 |`anIShape.Move(x, y, [width], [height])`|図形を移動またはサイズ変更します。|  
 |`IDiagram.EnsureVisible( IEnumerable<IShape> shapes, bool zoomToFit = false)`|ウィンドウをアクティブ化し、所定のすべての図形が図に表示されるようにスクロールします。 すべての図形が図に配置されている必要があります。 `zoomToFit` が True の場合、すべての図形が表示されるように、必要に応じて図が拡大縮小されます。|  
   
- 例については、[配置コマンドを定義する](#AlignCommand)を参照してください。  
+ 例については、次を参照してください。[配置コマンドを定義する](#AlignCommand)します。  
   
 ##  <a name="Removing"></a> ダイアグラムから図形を削除するには  
  一部の種類の要素の図形は、要素を削除せずに削除できます。  
@@ -107,7 +104,7 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
 > [!NOTE]
 >  `IDiagram` のインスタンス (および、`IClassDiagram` など、そのサブタイプ) は、処理中のコマンド内でのみ有効です。 ユーザーにコントロールが戻されている間は、持続する変数に `IDiagram` オブジェクトを保持することは推奨されません。  
   
- 詳細については、[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)を参照してください。  
+ 詳細については、次を参照してください。[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  
   
 ### <a name="to-obtain-a-list-of-open-diagrams"></a>開いている図の一覧を取得するには  
  プロジェクトで現在開いている図の一覧:  
@@ -165,10 +162,10 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;  
 ```  
   
-##  <a name="AlignCommand"></a> 図形の整列のコマンドの例:  
+##  <a name="AlignCommand"></a> 例:図形の整列のコマンド  
  次のコードは、図形を適切に揃えるメニュー コマンドを実装します。 ユーザーはまず、2 つ以上の図形を、垂直方向または水平方向のおよその場所に配置する必要があります。 その後、整列のコマンドを使用して中心を揃えることができます。  
   
- このコマンドを使用できるようにするには、このコードをメニュー コマンド プロジェクトに追加し、結果として得られる拡張機能をユーザーに配置します。 詳細については、[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)を参照してください。  
+ このコマンドを使用できるようにするには、このコードをメニュー コマンド プロジェクトに追加し、結果として得られる拡張機能をユーザーに配置します。 詳細については、次を参照してください。[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  
   
 ```csharp  
 using System;  
@@ -384,8 +381,5 @@ namespace AlignCommand
 ## <a name="see-also"></a>関連項目  
  [UML モデルと図を拡張します。](../modeling/extend-uml-models-and-diagrams.md)   
  [UML モデル内を移動します。](../modeling/navigate-the-uml-model.md)   
- [サンプル: ダイアグラム メニュー コマンドの図形を整列します。](http://go.microsoft.com/fwlink/?LinkId=213809)   
- [サンプル: ステレオタイプの要素、および図形を作成します。](http://go.microsoft.com/fwlink/?LinkId=213811)
-
-
-
+ [サンプル: ダイアグラム メニュー コマンドに図形を整理します。](http://go.microsoft.com/fwlink/?LinkId=213809)   
+ [サンプル: 要素、図形のステレオタイプの作成](http://go.microsoft.com/fwlink/?LinkId=213811)

@@ -1,30 +1,27 @@
 ---
 title: T4 インポート ディレクティブ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 713ca975-b9aa-4210-bf6d-b7660f5b193b
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6fa8f027fbb3418fff47b0459628afb691c8a05a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 00033640ec7810f97785b38437795906500a7866
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893677"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977815"
 ---
 # <a name="t4-import-directive"></a>T4 インポート ディレクティブ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の T4 テキスト テンプレートのコード ブロックでは、`import` ディレクティブを使用することにより、完全修飾名を指定しなくても別の名前空間の要素を参照できます。 このディレクティブは、C# の `using` または `imports` の [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)] に相当します。  
   
- T4 テキスト テンプレートの作成方法の一般的な概要については、[T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)を参照してください。  
+ T4 テキスト テンプレートの作成方法の一般的な概要については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)  
   
 ## <a name="using-the-import-directive"></a>import ディレクティブの使用  
   
@@ -57,6 +54,3 @@ The file contains: <#=  fileContent #>
   
 ## <a name="see-also"></a>関連項目  
  [T4 アセンブリ ディレクティブ](../modeling/t4-assembly-directive.md)
-
-
-

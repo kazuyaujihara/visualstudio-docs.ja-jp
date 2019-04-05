@@ -1,12 +1,9 @@
 ---
 title: '方法: ドメイン固有言語における標準のメニュー コマンドの変更 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
@@ -14,13 +11,13 @@ ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837567"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974449"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>方法: ドメイン固有言語における標準のメニュー コマンドを修正する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +35,7 @@ DSL で自動的に定義される標準コマンドのいくつかの動作を�
    このトピックではこの手順を説明します。  
   
 > [!NOTE]
->  独自のメニュー コマンドを作成する場合を参照してください。[方法: ショートカット メニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)します。  
+>  独自のメニュー コマンドを作成する場合を参照してください。[方法。ショートカット メニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)します。  
   
 ##  <a name="what"></a> どのようなコマンドを変更できますか。  
   
@@ -70,7 +67,7 @@ DSL で自動的に定義される標準コマンドのいくつかの動作を�
   
 2.  **DslPackage**、という名前のフォルダーを作成する**カスタム コード**します。 このフォルダーの作成という名前の新しいクラス ファイル`CommandSet.cs`します。  
   
-3.  新しいファイル内に、生成された部分クラスと同じ名前空間および名前を持つ部分宣言を記述します。 例えば:  
+3.  新しいファイル内に、生成された部分クラスと同じ名前空間および名前を持つ部分宣言を記述します。 例:  
   
     ```  
     using System;  
@@ -83,7 +80,7 @@ DSL で自動的に定義される標準コマンドのいくつかの動作を�
      **注**クラス ファイル テンプレートを使用して、新しいファイルを作成した場合は、名前空間とクラス名の両方を修正する必要があります。  
   
 ##  <a name="override"></a> コマンド メソッドをオーバーライドします。  
- ほとんどのコマンドは、2 つの関連付けられているメソッドを持つ: などの名前を持つメソッド`ProcessOnStatus`... コマンドを表示して有効にするかどうかを決定します。 このメソッドはユーザーが図を右クリックするたびに呼び出され、すばやく実行し、何の変更も生じません。 `ProcessOnMenu`... ユーザーが、コマンドをクリックし、コマンドの関数を実行するときに呼び出されます。 これらのメソッドの一方または両方をオーバーライドする場合があります。  
+ ほとんどのコマンドでは、2 つの関連付けられているメソッドがあります。などの名前を持つメソッド`ProcessOnStatus`... コマンドを表示して有効にするかどうかを決定します。 このメソッドはユーザーが図を右クリックするたびに呼び出され、すばやく実行し、何の変更も生じません。 `ProcessOnMenu`... ユーザーが、コマンドをクリックし、コマンドの関数を実行するときに呼び出されます。 これらのメソッドの一方または両方をオーバーライドする場合があります。  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>メニュー上にコマンドが表示されるタイミングを変更するには  
  Processonstatus. メソッド。 このメソッドは、パラメーター MenuCommand の Visible プロパティおよび Enabled プロパティを設定します。 通常、コマンドは this.CurrentSelection を見て、コマンドが選択された要素に適用されるかどうかを判断し、それらのプロパティを見て、コマンドが現在の状態で適用可能かどうかを判断します。  
@@ -134,7 +131,7 @@ protected override void ProcessOnMenuDeleteCommand()
 }  
 ```  
   
- 要素またはリンクの作成、削除、または更新など、コードがストアに対して変更を加える場合、トランザクション内でそれを実行する必要があります。 詳細については、[モデル要素を作成し、更新する方法](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)を参照してください。  
+ 要素またはリンクの作成、削除、または更新など、コードがストアに対して変更を加える場合、トランザクション内でそれを実行する必要があります。 詳細については、次を参照してください。[モデル要素を作成し、更新する方法](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)します。  
   
 ### <a name="writing-the-code-of-the-methods"></a>メソッドのコードの記述  
  次のコード片はこれらのメソッド内で頻繁に役立ちます。  
@@ -151,18 +148,15 @@ protected override void ProcessOnMenuDeleteCommand()
   
 - `shape.ModelElement as MyLanguageElement` - 図形により表されるモデル要素。  
   
-  要素間を移動する方法およびオブジェクトとリンクを作成する方法についての詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。  
+  要素間を移動する方法およびオブジェクトとリンクを作成する方法についての詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:System.ComponentModel.Design.MenuCommand>   
  [ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [方法: ショートカット メニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
+ [方法: ショートカット メニューにコマンドを追加します。](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
  [チュートリアル: 選択されたリンクからの情報の取得](../misc/walkthrough-getting-information-from-a-selected-link.md)   
  [Vspackage がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Visual Studio コマンド テーブル (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML スキーマ リファレンス](../extensibility/vsct-xml-schema-reference.md)   
  [VMSDK – 回路図のサンプルです。広範な DSL のカスタマイズ](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
- [サンプル コード: 回路図](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [サンプル コード:回路図](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

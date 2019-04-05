@@ -1,14 +1,9 @@
 ---
 title: 移植性に関する警告 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.PortabilityRules
 helpviewer_keywords:
@@ -20,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3b7c38f8380fc8e52707b9c4817880b1ce86b4b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7c8f195f2219cfa2c81b24a3e04ddc559dc98a06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173083"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975064"
 ---
 # <a name="portability-warnings"></a>移植性に関する警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,6 @@ ms.locfileid: "49173083"
   
 |ルール|説明|  
 |----------|-----------------|  
-|[CA1900: 値型フィールドはポータブルでなければなりません](../code-quality/ca1900-value-type-fields-should-be-portable.md)|このルールは、明示的なレイアウト属性を使用して宣言された構造体が、64 ビット オペレーティング システムのアンマネージ コードにマーシャ リングするときに、適切にアライメントされるかを確認します。|  
-|[CA1901: P/Invoke 宣言はポータブルでなければなりません](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|このルールでは、各パラメーターのサイズと、P/invoke の戻り値が評価され、サイズが 32 ビットと 64 ビットのオペレーティング システムのアンマネージ コードにマーシャ リングするときに正しいことを確認します。|  
-|[CA1903: 対象のフレームワークから API のみを使用します](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|メンバーまたは型が、プロジェクトの対象のフレームワークに含まれていない Service Pack で導入されたメンバーまたは型を使用しています。|
-
-
-
+|[CA 1900:値型フィールドはポータブルでなければなりません](../code-quality/ca1900-value-type-fields-should-be-portable.md)|このルールは、明示的なレイアウト属性を使用して宣言された構造体が、64 ビット オペレーティング システムのアンマネージ コードにマーシャ リングするときに、適切にアライメントされるかを確認します。|  
+|[CA1901:P/invoke 宣言はポータブルでなければなりません](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|このルールでは、各パラメーターのサイズと、P/invoke の戻り値が評価され、サイズが 32 ビットと 64 ビットのオペレーティング システムのアンマネージ コードにマーシャ リングするときに正しいことを確認します。|  
+|[CA1903:対象のフレームワークから API のみを使用します。](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|メンバーまたは型が、プロジェクトの対象のフレームワークに含まれていない Service Pack で導入されたメンバーまたは型を使用しています。|

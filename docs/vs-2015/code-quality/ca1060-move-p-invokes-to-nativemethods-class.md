@@ -1,14 +1,9 @@
 ---
-title: 'CA1060: 移動 P/invoke を NativeMethods クラスに |Microsoft Docs'
-ms.custom: ''
+title: CA1060:P/invoke を NativeMethods クラスに移動 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
 - CA1060
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f47fa4326da9914171e5014decbd6d6923c2f02e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913866"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975876"
 ---
-# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invoke を NativeMethods クラスに移動します
+# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060:P/Invoke を NativeMethods クラスに移動します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -94,7 +89,7 @@ ms.locfileid: "49913866"
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods の例
 
 ### <a name="description"></a>説明
- という名前のクラスでは P/invoke メソッドを安全に呼び出すし、副作用を引き起こす可能性を含める必要があります**UnsafeNativeMethods**します。 これらのメソッドは、これらは、ユーザーに意図せずになっていることを確認する厳密にチェックする必要があります。 ルール[CA2118: レビュー SuppressUnmanagedCodeSecurityAttribute の使用法](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)これを支援できます。 代わりに要求されるもう 1 つのアクセスを許可するメソッドが代わりに、あります**UnmanagedCode**に使用するとします。
+ という名前のクラスでは P/invoke メソッドを安全に呼び出すし、副作用を引き起こす可能性を含める必要があります**UnsafeNativeMethods**します。 これらのメソッドは、これらは、ユーザーに意図せずになっていることを確認する厳密にチェックする必要があります。 ルール[CA2118:SuppressUnmanagedCodeSecurityAttribute の使用法の確認](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)これを支援できます。 代わりに要求されるもう 1 つのアクセスを許可するメソッドが代わりに、あります**UnmanagedCode**に使用するとします。
 
  次の例は、 **Cursor.Hide**をラップするメソッド、 **ShowCursor** user32.dll から関数。
 
@@ -104,6 +99,3 @@ ms.locfileid: "49913866"
 
 ## <a name="see-also"></a>関連項目
  [デザインの警告](../code-quality/design-warnings.md)
-
-
-

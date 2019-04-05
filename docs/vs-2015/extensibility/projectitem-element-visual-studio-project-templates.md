@@ -1,14 +1,9 @@
 ---
 title: ProjectItem 要素 (Visual Studio プロジェクト テンプレート) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bca26cba66169758aa882535c07846cfa451d172
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 6e08d08e8ec68e684ced1972f277af9b04805c3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737073"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978017"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 要素 (Visual Studio プロジェクト テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51737073"
  \<VSTemplate>  
  \<TemplateContent >  
  \<Project>  
- \<ProjectItem >  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>構文  
   
@@ -115,7 +110,7 @@ ms.locfileid: "51737073"
     <Compile Include="$safeprojectname$.vb">  
     ```  
   
-     ファイル名はで、ユーザーが入力した名前に基づいて、このテンプレートからプロジェクトが作成されると、**新しいプロジェクト** ダイアログ ボックスのすべての安全でない文字とスペースを削除します。 詳細については、[テンプレート パラメーター](../ide/template-parameters.md)を参照してください。  
+     ファイル名はで、ユーザーが入力した名前に基づいて、このテンプレートからプロジェクトが作成されると、**新しいプロジェクト** ダイアログ ボックスのすべての安全でない文字とスペースを削除します。 詳細については、次を参照してください。[テンプレート パラメーター](../ide/template-parameters.md)します。  
   
 ## <a name="example"></a>例  
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] アプリケーションでのプロジェクト テンプレートのメタデータの例を次に示します。  
@@ -149,4 +144,3 @@ ms.locfileid: "51737073"
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [テンプレート パラメーター](../ide/template-parameters.md)   
  [ProjectItem 要素 (Visual Studio 項目テンプレート)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-

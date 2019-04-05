@@ -1,12 +1,9 @@
 ---
 title: WPF アプリケーションでルックアップ テーブルを作成する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,15 +21,15 @@ ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303343"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58977643"
 ---
-# <a name="create-lookup-tables-in-wpf-applications"></a>WPF アプリケーションでルックアップ テーブルを作成します。
+# <a name="create-lookup-tables-in-wpf-applications"></a>WPF アプリケーションでルックアップ テーブルを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -44,20 +41,20 @@ ms.locfileid: "49303343"
   
 1.  プロジェクトに関連するデータを使用してデータ ソースの種類は、次のいずれかを追加します。  
   
-    -   データセットまたはエンティティ データ モデル。 詳細については、「 [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md)」を参照してください。  
+    -   データセットまたはエンティティ データ モデル。
+
+    -   WCF データ サービス、WCF サービスまたは Web サービス。 詳細については、「[方法 :サービスのデータに接続する](../data-tools/how-to-connect-to-data-in-a-service.md)  
   
-    -   WCF データ サービス、WCF サービスまたは Web サービス。 詳細については、[方法: データ サービスに接続する](../data-tools/how-to-connect-to-data-in-a-service.md)を参照してください。  
-  
-    -   オブジェクト。 詳細については、[方法: データ オブジェクトに接続する](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)を参照してください。  
+    -   オブジェクト。 詳細については、「[方法 :データ オブジェクトに接続する](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)します。  
   
     > [!NOTE]
     >  ルックアップ テーブルを作成するには、2 つの関連するテーブルまたはオブジェクトがプロジェクトのデータ ソースとして存在する必要があります。  
   
 2.  開く、**WPF デザイナー**、デザイナーには内の項目の有効なドロップ先であるコンテナーが含まれているかどうかを確認して、**データソース**ウィンドウ。  
   
-     有効なドロップ ターゲットの詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
+     有効なドロップ ターゲットの詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
   
-3.  **データ**] メニューのをクリックして **[データ ソースの**を開く、**データ ソース**ウィンドウ。  
+3.  **[データ]** メニューの **[データ ソースの表示]** をクリックして **[データ ソース]** ウィンドウを開きます。  
   
 4.  内のノードを展開し、**データソース**ウィンドウで、親テーブルまたはオブジェクトと関連する子テーブルまたはオブジェクトが見つかるまで。  
   
@@ -77,7 +74,7 @@ ms.locfileid: "49303343"
     -   **ListView**  
   
         > [!NOTE]
-        >  場合、 **ListBox**または**ListView**コントロールは表示されません一覧で、一覧にこれらのコントロールを追加することができます。 詳しくは、[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)を参照してください。  
+        >  場合、 **ListBox**または**ListView**コントロールは表示されません一覧で、一覧にこれらのコントロールを追加することができます。 詳しくは、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
   
     -   派生した任意のカスタム コントロール<xref:System.Windows.Controls.Primitives.Selector>します。  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49303343"
   
 8.  子ノードをドラッグして、**データソース**ウィンドウから WPF デザイナーでのコンテナーにします。 (前の例では、子ノードは、**注文**ノードです)。  
   
-     Visual Studio には、ドラッグした項目ごとに新しいデータ バインド コントロールを作成する XAML が生成されます。 XAML も新しく追加<xref:System.Windows.Data.CollectionViewSource>子テーブルまたはドロップ先のリソースへのオブジェクト。 Visual Studio には、一部のデータ ソースのテーブルまたはオブジェクトにデータを読み込むコードも生成されます。 詳細については、[Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)を参照してください。  
+     Visual Studio には、ドラッグした項目ごとに新しいデータ バインド コントロールを作成する XAML が生成されます。 XAML も新しく追加<xref:System.Windows.Data.CollectionViewSource>子テーブルまたはドロップ先のリソースへのオブジェクト。 Visual Studio には、一部のデータ ソースのテーブルまたはオブジェクトにデータを読み込むコードも生成されます。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
   
 9. 親ノードをドラッグして、**データ ソース**先ほど作成した検索バインド コントロールにウィンドウ。 (前の例では、親ノードが、**顧客**ノード)。  
   
@@ -103,5 +100,4 @@ ms.locfileid: "49303343"
  [Visual Studio でのデータに WPF コントロールをバインドします。](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Visual Studio でのデータに WPF コントロールをバインドします。](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [WPF アプリケーションで関連するデータを表示します。](../data-tools/display-related-data-in-wpf-applications.md)   
- [チュートリアル: WPF アプリケーションでの関連データの表示](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [チュートリアル: WPF アプリケーションで関連データの表示](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

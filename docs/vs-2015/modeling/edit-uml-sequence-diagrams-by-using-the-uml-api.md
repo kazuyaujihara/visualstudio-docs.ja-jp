@@ -1,25 +1,22 @@
 ---
 title: UML API を使用して UML シーケンス図を編集する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f68cf87a7f45b906c6de43e0a837d49132b7a3e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977481"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>UML API を使用して UML シーケンス図を編集する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ ms.locfileid: "51725557"
   
  API の詳細については、「<xref:Microsoft.VisualStudio.Uml.Interactions?displayProperty=fullName>」を参照してください。  
   
- コマンドおよびジェスチャ ハンドラーの UML 図を作成する一般的な概要については、[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)を参照してください。  
+ コマンドおよびジェスチャ ハンドラーの UML 図を作成する一般的な概要については、次を参照してください。[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  
   
 ## <a name="basic-code"></a>基本コード  
   
@@ -55,7 +52,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
    // for diagrams and context  
 ```  
   
- 詳細については、[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)を参照してください。  
+ 詳細については、次を参照してください。[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  
   
 ### <a name="getting-the-context"></a>コンテキストの取得  
  相互作用を、シーケンス図のコマンドまたはジェスチャ ハンドラーの一部として編集している場合、コンテキストへの参照を取得できます。 例:  
@@ -144,7 +141,7 @@ using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("
 [Import] ILinkedUndoContext LinkedUndoContext { get; set; }  
 ```  
   
- 詳細については、[トランザクションを使用してモデルの更新をリンク UML](../modeling/link-uml-model-updates-by-using-transactions.md)を参照してください。  
+ 詳細については、次を参照してください。[トランザクションを使用してモデルの更新をリンク UML](../modeling/link-uml-model-updates-by-using-transactions.md)します。  
   
 ## <a name="building-an-interaction"></a>相互作用の構築  
   
@@ -256,6 +253,3 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
  [定義のカスタム モデリング ツールボックス アイテム](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [UML モデルの検証制約を定義します。](../modeling/define-validation-constraints-for-uml-models.md)   
  [UML API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)
-
-
-

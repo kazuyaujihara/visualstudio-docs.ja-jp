@@ -1,23 +1,20 @@
 ---
 title: モデルへの反映には、図形とコネクタの更新 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192453"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977808"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>シェイプおよびコネクタの更新とモデルへの反映
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>デコレーターの可視性を制御するマップのシェイプのプロパティを設定  
  DSL 定義で、図形とドメイン クラス間のマッピングを構成することによって、プログラム コードを記述することがなく、デコレーターの可視性を制御できます。 詳細については、次のトピックを参照してください。  
   
--   [方法: デコレーターの可視性を制御する - リダイレクト](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+-   [方法: デコレーターの可視性を制御する-リダイレクト](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
 -   [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)  
   
@@ -49,7 +46,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  プログラムの制御下でのみ、ユーザーではなく、プロパティの変数を作成する場合など、新しいドメインのプロパティを選択**塗りつぶしの色**DSL 定義図でします。 次に、[プロパティ] ウィンドウで次のように設定します。**参照可能**に`false`設定または**は読み取り専用 UI**に`true`します。  
   
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>色、スタイル、またはモデル要素のプロパティに依存する場所を変更ルールを定義します。  
- モデルの他の部分に依存する図形の外観を更新するルールを定義することができます。 たとえば、モデル要素のプロパティに依存するそのシェイプの色を更新するモデル要素のルールの変更を定義できます。 ルールを変更の詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
+ モデルの他の部分に依存する図形の外観を更新するルールを定義することができます。 たとえば、モデル要素のプロパティに依存するそのシェイプの色を更新するモデル要素のルールの変更を定義できます。 ルールを変更の詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。  
   
  元に戻すコマンドを実行すると、規則は呼び出されませんので、ストア内に保持されるプロパティを更新するためだけのルールを使用する必要があります。 これは、図形の可視性とサイズなど、一部のグラフィカル機能には含まれません。 図形のこれらの機能を更新するを参照してください。[非ストア グラフィックの更新機能](#OnAssociatedProperty)します。  
   
@@ -165,6 +162,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()` 登録する各ドメイン プロパティに 1 回呼び出すは、必要があります。 指定したプロパティに変更が呼び出しは呼び出された後`OnAssociatedPropertyChanged()`プロパティのモデル要素を表示する任意の図形。  
   
  呼び出す必要はありません`AssociateValueWith()`インスタンスごとにします。 InitializeResources はインスタンス メソッドが、各図形クラスに対して 1 回だけ呼び出されます。
-
-
-

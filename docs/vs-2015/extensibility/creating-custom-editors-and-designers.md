@@ -1,27 +1,22 @@
 ---
 title: カスタム エディターとデザイナーを作成する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 324284a6cac44c995d652cce2f2e82a4c13702c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 8dd9b637571bfd7d2480992c7a2fef74a0d5b393
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974708"
 ---
 # <a name="creating-custom-editors-and-designers"></a>カスタム エディターとデザイナーの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Visual Studio 統合開発環境 (IDE) では、さまざまな種類のエデ�
   次の情報を使用する必要があるエディターの種類を選択できます。  
   
 ## <a name="types-of-editor"></a>エディターの種類  
- Visual Studio のコア エディターについては、[エディターと言語サービス拡張](../extensibility/extending-the-editor-and-language-services.md)を参照してください。  
+ Visual Studio のコア エディターについては、次を参照してください。[エディターと言語サービス拡張](../extensibility/extending-the-editor-and-language-services.md)します。  
   
 ##### <a name="custom-editors"></a>カスタム エディター  
  カスタム エディターでは、特殊な状況で動作するように設計された 1 つです。 たとえばの機能は、Microsoft Exchange server などの特定のリポジトリにデータを読み書きするエディターを作成します。 プロジェクトの種類のみで動作するエディターまたは特定のいくつかのコマンドのみを持つエディターが必要な場合は、カスタム エディターを選択します。 ただし、ユーザーはいないできるカスタム エディターを使用して、標準を編集する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。  
@@ -68,7 +63,7 @@ Visual Studio 統合開発環境 (IDE) では、さまざまな種類のエデ�
   
 -   エディターは、複数のビューをサポートしますか。 既定のエディターと同時に表示される、エディターのビューの場合は、複数のビューをサポートする必要があります。  
   
-     が複数のビューをサポートするために、エディターが必要な場合、ドキュメント データと、エディターのドキュメント ビュー オブジェクトは個別のオブジェクトになる可能性があります。 詳細については、[Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)を参照してください。  
+     が複数のビューをサポートするために、エディターが必要な場合、ドキュメント データと、エディターのドキュメント ビュー オブジェクトは個別のオブジェクトになる可能性があります。 詳細については、次を参照してください。 [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)します。  
   
      エディターでは、複数のビューをサポートする場合を使用して行う、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]コア エディターのテキスト バッファーの実装 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>オブジェクト)、ドキュメント データ オブジェクトのでしょうか。 エディター ビュー - サイドでをサポートする、つまり、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のコア エディターか? これを行う機能は、フォーム デザイナーの基になる.  
   
@@ -77,10 +72,10 @@ Visual Studio 統合開発環境 (IDE) では、さまざまな種類のエデ�
      埋め込むことができる場合、外部のエディターのホスト ウィンドウを作成し、呼び出して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>メソッドとセット、<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列挙値を`DP_External`します。 エディターを埋め込むことができない、すると、別のウィンドウが自動的を作成します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [チュートリアル: カスタム エディターを作成する](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [チュートリアル: カスタム エディターを作成します。](../extensibility/walkthrough-creating-a-custom-editor.md)  
  カスタム エディターを作成する方法について説明します。  
   
- [チュートリアル: カスタム エディターに機能を追加する](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [チュートリアル: カスタム エディターの機能を追加](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  カスタム エディターに機能を追加する方法について説明します。  
   
  [デザイナーの初期化とメタデータの構成](../extensibility/designer-initialization-and-metadata-configuration.md)  
@@ -107,4 +102,3 @@ Visual Studio 統合開発環境 (IDE) では、さまざまな種類のエデ�
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>
-

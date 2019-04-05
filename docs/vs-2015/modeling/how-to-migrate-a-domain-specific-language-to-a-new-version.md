@@ -1,23 +1,20 @@
 ---
 title: '方法: ドメイン固有言語を新しいバージョンに移行する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 52d8cb794b205631e7cc455241f48bcc78b879b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844472"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975673"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>方法: ドメイン固有言語を新バージョンに移行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ ms.locfileid: "49844472"
   
  移行ツールを明示的に実行する必要があります: ことがない自動的に起動でソリューションを開くときに[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 ツールおよび詳細なガイダンスのドキュメントは、このパスで見つかんだことができます。  
   
- **% プログラム Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>DSL プロジェクトを移行する前に  
  移行ツールを変更します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト ファイル (**.csproj**) とソリューション ファイル (**.sln**)。  
@@ -81,7 +78,7 @@ ms.locfileid: "49844472"
    2.  をクリックして、**すべてのテンプレートの変換**ソリューション エクスプ ローラーのヘッダーにボタンをクリックします。  
   
        > [!NOTE]
-       >  この手順を不要なことできます。 詳細については、[すべてのテンプレートの変換を自動化する方法](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)を参照してください。  
+       >  この手順を不要なことできます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)します。  
   
 6. 変換後のプロジェクトでのカスタム コードを更新します。  
   
@@ -91,6 +88,3 @@ ms.locfileid: "49844472"
   
 ## <a name="see-also"></a>関連項目  
  [Visualization and Modeling SDK の新機能](../misc/what-s-new-in-visualization-and-modeling-sdk.md)
-
-
-

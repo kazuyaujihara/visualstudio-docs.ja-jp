@@ -1,26 +1,21 @@
 ---
 title: コントロールのプログラム |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a833c8ba19ef71d7bf09e304b49853dd0b90274
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9a2898bb5736e6731d200fd4a05e84aeae8adb42
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759241"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973622"
 ---
 # <a name="program-control"></a>プログラムの制御
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ Visual Studio でデバッグする場合に、次のステップ実行のすべ
   
 ## <a name="see-also"></a>関連項目  
  [実行の制御と状態の評価](../../extensibility/debugger/execution-control-and-state-evaluation.md)
-

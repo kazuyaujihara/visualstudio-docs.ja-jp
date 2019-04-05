@@ -1,24 +1,19 @@
 ---
 title: Visual Studio SDK のインストール |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- visual-studio-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: visual-studio-sdk
+ms.topic: conceptual
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9e5546b07ef9917590daa573efd99377339412c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 796d5f3f233310157b0784e213b81237e767055b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793556"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975958"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Visual Studio SDK をインストールします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>コマンドラインから Visual Studio SDK をインストールします。  
- 使用して、コマンドラインから VSSDK をインストールすることができます、 **/InstallSelectableItems** Visual Studio インストーラーに切り替えます。 インストーラーでのコマンド ライン パラメーターの使用に関する詳細については、[Visual Studio 2015 をインストールする](../install/install-visual-studio-2015.md)を参照してください。  
+ 使用して、コマンドラインから VSSDK をインストールすることができます、 **/InstallSelectableItems** Visual Studio インストーラーに切り替えます。 インストーラーでのコマンド ライン パラメーターの使用に関する詳細については、次を参照してください。 [Visual Studio 2015 をインストールする](../install/install-visual-studio-2015.md)します。  
   
  Visual Studio 2015 Community インストーラーをサイレント モードで使用する VSSDK のインストール方法を次に示します。  
   
@@ -66,11 +61,4 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 vs_community.exe /s /installSelectableItems VS_SDK_GROUPV1  
 ```  
   
- Visual Studio のインストールされているバージョンに一致する Visual Studio インストーラーを使用する必要がありますに注意してください。 たとえば、Visual Studio Enterprise がコンピューターにインストールした場合は、Visual Studio Enterprise インストーラー (vs_enterprise.exe) を実行する必要があります。
-
-
-
-
-
-
-
+ インストールされているVisual Studio のバージョンに一致する Visual Studio インストーラーを使用する必要があることに注意してください。 たとえば、Visual Studio Enterprise がコンピューターにインストールした場合は、Visual Studio Enterprise インストーラー (vs_enterprise.exe) を実行する必要があります。

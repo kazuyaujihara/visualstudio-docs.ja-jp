@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1810: 参照型の静的フィールド インラインで初期化 |Microsoft Docs'
-ms.custom: ''
+title: CA1810:参照型の静的フィールドのインラインを初期化します |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InitializeReferenceTypeStaticFieldsInline
 - CA1810
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4d7ffbe4fc821ffd70b0bb299b2a4738d63873b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2722286af0d4c95fec30593047bedf1fe0ba4d2d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975860"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: 参照型の静的フィールドをインラインで初期化します
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810:参照型の静的フィールドをインラインで初期化します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -72,7 +67,4 @@ ms.locfileid: "49862685"
  **{**
  **}/終了/NoStaticConstructor クラスの**
 ## <a name="related-rules"></a>関連規則
- [CA2207: 値型の静的フィールドのインラインを初期化します](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
-
-
-
+ [CA2207:値型の静的フィールドのインラインを初期化します](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
