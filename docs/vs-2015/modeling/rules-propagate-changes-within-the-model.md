@@ -1,12 +1,9 @@
 ---
 title: ルールには、モデル内の変更が反映されるまで |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
@@ -14,20 +11,20 @@ ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 265d04306b4747a4e5bc04b879b9635e81ed8102
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831199"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977998"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則によって変更内容がモデル内に反映される
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 1 つの要素から Visualization and Modeling SDK (VMSDK) の間の変更を伝達するストア ルールを作成することができます。 ストア内の任意の要素を変更する場合は、ルールは、通常、最も外側のトランザクションがコミットされたときに実行される予定です。 要素の追加や削除などのイベントのさまざまな種類のルールの種類があります。 ルールは、特定の種類の要素、図形、またはダイアグラムをアタッチできます。 多くの組み込み機能がルールによって定義されます。 など、規則では、モデルが変更されたときに、ダイアグラムが更新されることを確認します。 独自のルールを追加することで、ドメイン固有言語をカスタマイズできます。  
 
- ストアの規則は、プロパティをモデル要素、リレーションシップ、図形またはコネクタ、およびそのドメインに変更は、– ストア内の変更の反映に特に便利です。 ルールは、ユーザーが元に戻す/やり直しコマンドを呼び出したときに実行されません。 代わりに、トランザクション マネージャーにより、ストアの内容が正しい状態に復元されることを確認します。 ストアの外部リソースへの変更を反映する場合は、イベントの格納を使用します。 詳細については、[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)を参照してください。  
+ ストアの規則は、プロパティをモデル要素、リレーションシップ、図形またはコネクタ、およびそのドメインに変更は、– ストア内の変更の反映に特に便利です。 ルールは、ユーザーが元に戻す/やり直しコマンドを呼び出したときに実行されません。 代わりに、トランザクション マネージャーにより、ストアの内容が正しい状態に復元されることを確認します。 ストアの外部リソースへの変更を反映する場合は、イベントの格納を使用します。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
 
  たとえば、ユーザー (またはコード) は、型 ExampleDomainClass の新しい要素を作成するたびに、モデルの別の部分に、別の型の別の要素が作成されるかを指定するとします。 AddRule を記述して ExampleDomainClass に関連付けます。 その他の要素を作成するルールでコードを記述します。  
 
@@ -140,7 +137,7 @@ namespace ExampleNamespace
   |                             基底クラス                              |                                                                                                                                                                                                                                                                                                                                                                              トリガー                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        要素、リンク、または図形が追加されます。<br /><br /> これを使用して、新しい要素だけでなく、新しいリレーションシップを検出します。                                                                                                                                                                                                                                                                                                                        |
-  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | ドメイン プロパティの値を変更します。 このメソッドの引数は、新旧の値を提供します。<br /><br /> 図形は、このルールがトリガーされたときに、組み込み`AbsoluteBounds`プロパティの変更、図形が移動された場合。<br /><br /> 多くの場合、オーバーライドする方が便利です`OnValueChanged`または`OnValueChanging`プロパティ ハンドラーでします。 変更の前後にすぐに、これらのメソッドは呼び出されます。 これに対し、ルールは、トランザクションの最後に通常実行されます。 詳細については、[ドメイン プロパティ値変更ハンドラー](../modeling/domain-property-value-change-handlers.md)を参照してください。 **注:** のリンクを作成または削除されたときは、このルールはトリガーされません。 代わりに、書き込み、`AddRule`と`DeleteRule`ドメイン リレーションシップ。 |
+  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | ドメイン プロパティの値を変更します。 このメソッドの引数は、新旧の値を提供します。<br /><br /> 図形は、このルールがトリガーされたときに、組み込み`AbsoluteBounds`プロパティの変更、図形が移動された場合。<br /><br /> 多くの場合、オーバーライドする方が便利です`OnValueChanged`または`OnValueChanging`プロパティ ハンドラーでします。 変更の前後にすぐに、これらのメソッドは呼び出されます。 これに対し、ルールは、トランザクションの最後に通常実行されます。 詳細については、次を参照してください。[ドメイン プロパティ値変更ハンドラー](../modeling/domain-property-value-change-handlers.md)します。 **注:** このルールは、リンクを作成または削除されたときに発生しません。 代わりに、書き込み、`AddRule`と`DeleteRule`ドメイン リレーションシップ。 |
   |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             要素またはリンクが削除しようとトリガーされます。 ModelElement.IsDeleting プロパティは、トランザクションが終了するまでは。                                                                                                                                                                                                                                                                                                              |
   |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       要素またはリンクが削除されたときに実行されます。 その他のすべてのルールが実行されたら、DeletingRules を含むルールが実行されます。 ModelElement.IsDeleting が false になり、ModelElement.IsDeleted は true。 後続の元に戻すには、要素は、実際に削除されませんをメモリからが Store.ElementDirectory から削除されます。                                                                                                                                                                                                       |
   |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           要素は、別に 1 つのストアのパーティションから移動されます。<br /><br /> (図形の位置をグラフィカルにこの関係はしないことに注意してください)。                                                                                                                                                                                                                                                                                                            |
@@ -159,7 +156,7 @@ namespace ExampleNamespace
 
 2.  ルールは、トランザクション内で常に実行されます。 そのため、変更を加えるには新しいトランザクションを作成することはありません。  
 
-3.  トランザクションがロールバックされるとき、または元に戻す/やり直し操作を実行すると、ルールは実行されません。 これらの操作は、以前の状態のストアのすべての内容をリセットします。 そのため、ルールには、ストアの外部の状態が変更された場合、可能性があります保持されません synchronism をストアとのコンテンツ。 を、ストア外の状態を更新するには、イベントを使用することをお勧めします。 詳細については、[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)を参照してください。  
+3.  トランザクションがロールバックされるとき、または元に戻す/やり直し操作を実行すると、ルールは実行されません。 これらの操作は、以前の状態のストアのすべての内容をリセットします。 そのため、ルールには、ストアの外部の状態が変更された場合、可能性があります保持されません synchronism をストアとのコンテンツ。 を、ストア外の状態を更新するには、イベントを使用することをお勧めします。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
 
 4.  モデルがファイルから読み込まれるときに、いくつかのルールが実行されます。 読み込みまたは保存が進行中かどうかを調べるには`store.TransactionManager.CurrentTransaction.IsSerializing`します。  
 
@@ -167,7 +164,7 @@ namespace ExampleNamespace
 
 6.  内の情報を格納する、規則との情報を渡すため、`TransactionContext`します。 これは、トランザクション中に保持されている辞書だけです。 トランザクションが終了すると、破棄されます。 各ルールのイベント引数は、それへのアクセスを提供します。 ルールが予測可能な順序でない実行されることに注意してください。  
 
-7.  その他の代替手段を検討した後の規則を使用します。 たとえば、値が変更されたときにプロパティを更新する場合は、計算されるプロパティを使用して検討してください。 サイズまたは図形の場所を制限する場合は、使用、`BoundsRule`します。 プロパティ値の変更に応答する場合は、追加、`OnValueChanged`プロパティ ハンドラー。 詳細については、[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)を参照してください。  
+7.  その他の代替手段を検討した後の規則を使用します。 たとえば、値が変更されたときにプロパティを更新する場合は、計算されるプロパティを使用して検討してください。 サイズまたは図形の場所を制限する場合は、使用、`BoundsRule`します。 プロパティ値の変更に応答する場合は、追加、`OnValueChanged`プロパティ ハンドラー。 詳細については、次を参照してください。[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)します。  
 
 ## <a name="example"></a>例  
  次の例は、2 つの要素をリンクするドメイン リレーションシップがインスタンス化されるときに、プロパティを更新します。 このルールがだけでなくユーザーを作成とリンクを図もプログラム コードのリンクを作成する場合にトリガーされます。  
@@ -221,6 +218,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>関連項目  
  [イベント ハンドラーには、モデルの外部で変更が反映されるまでください。](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [BoundsRules によってシェイプの位置とサイズが制限される](../modeling/boundsrules-constrain-shape-location-and-size.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
-title: 'チュートリアル: カスタム エディターの機能の追加 |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: カスタム エディター機能の追加 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2379a488d042ab8905844c9c536f79ecb4b03268
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 8e6395f279af8b48d9f74981f61cceb431a1d00a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737040"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978396"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>チュートリアル: カスタム エディターに機能を追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +26,21 @@ ms.locfileid: "51737040"
   
 1.  カスタム エディターを作成するには、Visual Studio パッケージ プロジェクト テンプレートを使用します。  
   
-     詳細については、[チュートリアル: カスタム エディターを作成する](../extensibility/walkthrough-creating-a-custom-editor.md)を参照してください。  
+     詳細については、「[チュートリアル:カスタム エディターを作成する](../extensibility/walkthrough-creating-a-custom-editor.md)します。  
   
 2.  エディター ビューを 1 つまたは複数のビューをサポートするかどうかを決定します。  
   
      サポートしている、**新しいウィンドウ**コマンド、またはフォーム ビューとコード ビューには、個別のドキュメント データ オブジェクトとドキュメント ビュー オブジェクトが必要です。 1 つのビューのみをサポートするエディターでドキュメントのデータ オブジェクトとドキュメント ビュー オブジェクトを同じオブジェクトで実装することができます。  
   
-     複数のビューの例は、[Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)を参照してください。  
+     複数のビューの例は、次を参照してください。 [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)します。  
   
 3.  実装することで、エディター ファクトリの実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>インターフェイス。  
   
-     詳細については、[エディター ファクトリ](../extensibility/editor-factories.md)を参照してください。  
+     詳細については、次を参照してください。[エディター ファクトリ](../extensibility/editor-factories.md)します。  
   
 4.  インプレース アクティブ化を使用するエディターで、または、簡略化された埋め込みドキュメント ビュー オブジェクト ウィンドウを管理するかどうかを決定します。  
   
-     ActiveX コントロールまたはそのドキュメントのビューとその他のアクティブなオブジェクトをホストする、インプレース アクティブ化エディター ウィンドウ中に、簡略化された埋め込みエディター ウィンドウは、標準のドキュメント ビューをホストします。 詳細については、[簡略化された埋め込み](../extensibility/simplified-embedding.md)と[インプレース アクティブ化](../misc/in-place-activation.md)を参照してください。  
+     ActiveX コントロールまたはそのドキュメントのビューとその他のアクティブなオブジェクトをホストする、インプレース アクティブ化エディター ウィンドウ中に、簡略化された埋め込みエディター ウィンドウは、標準のドキュメント ビューをホストします。 詳細については、次を参照してください。[簡略化された埋め込み](../extensibility/simplified-embedding.md)と[インプレース アクティブ化](../misc/in-place-activation.md)します。  
   
 5.  実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コマンドを処理するインターフェイス。  
   
@@ -122,7 +117,7 @@ ms.locfileid: "51737040"
   
 12. 状況依存のヘルプのサポートを実装します。  
   
-     これにより、エディター内の項目の F1 ヘルプおよびダイナミック ヘルプ ウィンドウのサポートを提供することができます。 詳細については、これは、[方法: エディターのコンテキストを提供](../extensibility/how-to-provide-context-for-editors.md)を参照してください。  
+     これにより、エディター内の項目の F1 ヘルプおよびダイナミック ヘルプ ウィンドウのサポートを提供することができます。 詳細については、これは、次を参照してください。[方法。エディターのコンテキストを提供](../extensibility/how-to-provide-context-for-editors.md)します。  
   
 13. 実装することで、エディターからのオートメーション オブジェクト モデルを公開、`IDispatch`インターフェイス。  
   
@@ -130,7 +125,7 @@ ms.locfileid: "51737040"
   
 ## <a name="robust-programming"></a>信頼性の高いプログラミング  
   
--   IDE を呼び出すと、エディター インスタンスが作成された、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>メソッド。 エディターは、複数のビューをサポートしている場合`CreateEditorInstance`ドキュメント データとドキュメント ビュー オブジェクトの両方を作成します。 ドキュメント データ オブジェクトが既にある場合を開く、null でない`punkDocDataExisting`に値が渡される`IVsEditorFactory::CreateEditorInstance`します。 エディター ファクトリの実装に適切なインターフェイスを照会して、既存のドキュメント データ オブジェクトが互換性のあるかどうかを判断する必要があります。 詳細については、[Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)を参照してください。  
+-   IDE を呼び出すと、エディター インスタンスが作成された、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>メソッド。 エディターは、複数のビューをサポートしている場合`CreateEditorInstance`ドキュメント データとドキュメント ビュー オブジェクトの両方を作成します。 ドキュメント データ オブジェクトが既にある場合を開く、null でない`punkDocDataExisting`に値が渡される`IVsEditorFactory::CreateEditorInstance`します。 エディター ファクトリの実装に適切なインターフェイスを照会して、既存のドキュメント データ オブジェクトが互換性のあるかどうかを判断する必要があります。 詳細については、次を参照してください。 [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)します。  
   
 -   簡略化された埋め込み方法を使用する場合は、実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>インターフェイス。  
   
@@ -161,5 +156,4 @@ ms.locfileid: "51737040"
   
 ## <a name="see-also"></a>関連項目  
  [オートメーション モデルに貢献します。](../extensibility/internals/contributing-to-the-automation-model.md)   
- [方法: エディター用のコンテキストを提供する](../extensibility/how-to-provide-context-for-editors.md)
-
+ [方法: エディターのコンテキストを提供します。](../extensibility/how-to-provide-context-for-editors.md)

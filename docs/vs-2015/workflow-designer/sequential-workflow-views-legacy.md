@@ -1,11 +1,8 @@
 ---
 title: シーケンシャル ワークフロー ビュー (レガシ) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - sequential workflow views
@@ -14,13 +11,13 @@ ms.assetid: 135f24b9-1b37-442b-9ef8-f0f2108a3212
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 1ac9d10ddb687063de8c45296bc879854a0979a4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 97d13a86e8bade0855c60326996a192a0d0331b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248730"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977866"
 ---
 # <a name="sequential-workflow-views-legacy"></a>シーケンシャル ワークフロー ビュー (レガシ)
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] は従来の [!INCLUDE[wfd1](../includes/wfd1-md.md)] を備えており、これを使用すると、[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] を対象とすることができます。  
@@ -37,7 +34,7 @@ ms.locfileid: "49248730"
 |**キャンセル ハンドラーの表示**|デザイン サーフェスと選択を右クリックし、 **キャンセル ハンドラーの**、コンテキスト メニューを表示するオプション、**シーケンシャル ワークフロー**表示、表示する、 [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050)ワークフローに関連付けられているアクティビティ。 選択または**キャンセル ハンドラーの**から、**ワークフロー**メニュー。|  
 |**エラー ハンドラー**|デザイン サーフェスと選択を右クリックし、 **エラー ハンドラー** 、コンテキスト メニューを表示するオプション、**エラー**表示、表示する、 [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055)ワークフローに関連付けられているアクティビティ。 選択または**エラー ハンドラー**から、**ワークフロー**メニュー。|  
   
- 同様のビューについての詳細については、[アクティビティ ビュー (レガシ)](../workflow-designer/activity-views-legacy.md)を参照してください。  
+ 同様のビューについての詳細については、次を参照してください。[アクティビティ ビュー (レガシ)](../workflow-designer/activity-views-legacy.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [アクティビティ ビュー (レガシ)](../workflow-designer/activity-views-legacy.md)   
