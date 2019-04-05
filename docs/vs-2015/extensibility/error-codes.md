@@ -1,14 +1,9 @@
 ---
 title: エラー コード |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - error codes, source control plug-ins
 - source control plug-ins, error codes
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bb27b2b64df0d7f8c0aefb5975844126363fe31d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: fef596fdfa9bb29fac38c72890392c33a86b31d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808351"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963166"
 ---
 # <a name="error-codes"></a>エラー コード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +26,13 @@ ms.locfileid: "51808351"
   
 |エラー コード|[値]|説明|  
 |----------------|-----------|-----------------|  
-|`SCC_I_SHARESUBPROJOK`|7|プラグインのサポートが 2 つの手順でソース管理からファイルを追加します。 詳細については、[SccSetOption](../extensibility/sccsetoption-function.md)を参照してください。|  
+|`SCC_I_SHARESUBPROJOK`|7|プラグインのサポートが 2 つの手順でソース管理からファイルを追加します。 詳細については、次を参照してください。 [SccSetOption](../extensibility/sccsetoption-function.md)します。|  
 |`SCC_I_FILEDIFFERS`|6|ローカル ファイルはソース管理データベース内のファイルから異なる (たとえば、 [SccDiff](../extensibility/sccdiff-function.md)この値を返す可能性があります)。|  
 |`SCC_I_RELOADFILE`|5|ローカル ファイルがソース管理の操作中に変更されましたIDE、ファイルの可能な場合は再読み込みする必要があります。|  
 |`SCC_I_FILENOTAFFECTED`|4|ファイルが影響を受けません。|  
 |`SCC_I_PROJECTCREATED`|3|ソース管理操作中に、プロジェクトの作成 (への呼び出し中など、 [SccOpenProject](../extensibility/sccopenproject-function.md)とき`SCC_OP_CREATEIFNEW`フラグが指定されて)。|  
 |`SCC_I_OPERATIONCANCELED`|2|操作が取り消されました。|  
-|`SCC_I_ADV_SUPPORT`|1|プラグインは、指定されたコマンドの詳細オプションをサポートします。 詳細については、[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)を参照してください。|  
+|`SCC_I_ADV_SUPPORT`|1|プラグインは、指定されたコマンドの詳細オプションをサポートします。 詳細については、次を参照してください。 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)します。|  
 |`SCC_OK`|0|成功。|  
 |`SCC_E_INITIALIZEFAILED`|-1|エラー: 初期化に失敗しました。|  
 |`SCC_E_UNKNOWNPROJECT`|-2|エラー: プロジェクトは不明です。|  
@@ -88,4 +83,3 @@ IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
-

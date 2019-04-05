@@ -1,29 +1,25 @@
 ---
-title: どのような&#39;ソース管理の新 |Microsoft Docs
-ms.custom: ''
+title: ソース管理の新機能
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a108acb2ae32b64292cd819c75de4726f067a00
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 27623c22664e9d3c6b651615465e6abe812ea408
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752466"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002607"
 ---
-# <a name="what39s-new-in-source-control"></a>どのような&#39;s ソース管理の新機能
+# <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>どのような&#39;s New in Visual Studio 2015 におけるソース管理
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]深く統合ソース制御ソリューションをソース管理 VSPackage を実装することによって行うことができます。 このセクションでは、ソース管理 Vspackage の機能について説明し、実装の手順の概要を説明します。  
@@ -35,7 +31,7 @@ ms.locfileid: "51752466"
   
  ソース管理 VSPackage の実装には、「全部かゼロか」の戦略が必要です。 ソース管理 VSPackage の作成者とインターフェイスでさまざまなソース コントロールのインターフェイスと (ダイアログ ボックス、メニューのおよびツールバー) 全体のソース管理機能をカバーする、新しい UI 要素を実装する作業量が大幅に投資する必要があります。すべてのパッケージと正常に統合するために必要な[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
   
- 次の手順では、ソース管理パッケージを実装するために必要なものの概要を提供します。 詳細については、[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)を参照してください。  
+ 次の手順では、ソース管理パッケージを実装するために必要なものの概要を提供します。 詳細については、次を参照してください。[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)します。  
   
 1.  プライベート ソース管理サービスを proffers VSPackage を作成します。  
   
@@ -56,4 +52,3 @@ ms.locfileid: "51752466"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
  [概要](../../extensibility/internals/source-control-integration-overview.md)   
  [ソース管理 VSPackage の作成](../../extensibility/internals/creating-a-source-control-vspackage.md)
-

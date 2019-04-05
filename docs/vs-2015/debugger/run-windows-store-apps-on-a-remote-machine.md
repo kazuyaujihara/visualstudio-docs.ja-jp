@@ -1,14 +1,9 @@
 ---
 title: Windows ストア アプリの実行をリモート コンピューターで |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,18 +13,18 @@ ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a3be715f58d3ed80122dfdd3aaf879c7db8aebd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 262391145b5cfc3889b2eea32df4e0955ed71b1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784547"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963105"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>リモート コンピューターでの Windows ストア アプリの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows にのみ適用されます] (../Image/windows_only_content.png"windows_only_content")  
+Applies to Windows only](../Image/windows_only_content.png "windows_only_content")  
   
  Visual Studio リモート ツール アプリケーションを使用すると、Visual Studio を実行中のコンピューターから、他のデバイスで実行中の Windows ストア アプリを実行、デバッグ、プロファイリング、およびテストできます。 リモート デバイスでの実行は、Visual Studio コンピューターが Windows ストア アプリ固有の機能 (タッチ、位置情報、物理的な方向など) をサポートしていない場合に特に有効です。 このトピックでは、リモート セッションを構成および開始する手順について説明します。  
   
@@ -173,11 +168,8 @@ Windows にのみ適用されます] (../Image/windows_only_content.png"windows_
 ##  <a name="BKMK_RunRemoteDebug"></a> リモート デバッグ セッションの実行  
  リモート デバッグ セッションは、ローカル セッションと同じ方法で開始、停止、および移動します。 デバッグを開始する前に、リモート デバッグ モニターがリモート デバイスで実行されていることを確認します。  
   
- **[デバッグ]** メニューの **[デバッグの開始]** をクリックします (キーボードの場合: F5 キーを押します)。 プロジェクトが再コンパイルされた後、リモート デバイスに配置され、開始されます。 デバッガーはブレークポイントで実行を中断するので、その時点でコードをステップ イン、ステップ オーバー、およびステップ アウトできます。 デバッグ セッションを終了し、リモート アプリケーションを閉じるには、 **[デバッグの停止]** をクリックします。 詳細については、[Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)を参照してください。  
+ クリックして**デバッグの開始**上、**デバッグ**メニュー (キーボード。F5 キー)。 プロジェクトが再コンパイルされた後、リモート デバイスに配置され、開始されます。 デバッガーはブレークポイントで実行を中断するので、その時点でコードをステップ イン、ステップ オーバー、およびステップ アウトできます。 デバッグ セッションを終了し、リモート アプリケーションを閉じるには、 **[デバッグの停止]** をクリックします。 詳細については、次を参照してください。 [Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのストア アプリのテスト](../test/testing-store-apps-with-visual-studio.md)   
  [Visual Studio でのアプリのデバッグ](../debugger/debug-store-apps-in-visual-studio.md)
-
-
-

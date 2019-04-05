@@ -1,14 +1,9 @@
 ---
 title: 共有およびバージョン管理 Vspackage の選択 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - SxS
 - side-by-side installation
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9fcae5b736310424f220d08aefa4e061e1f6c860
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 49b5e5b7c36b09e08932fcb414478849a12a7c7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756824"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962624"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>共有 VSPackage とバージョン管理 VSPackage の選択
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +37,15 @@ ms.locfileid: "51756824"
   
     -   プログラムのバージョンに適応するために VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]が実行されています。 次に、新しいサービスのクエリが失敗した場合、VSPackage を提供できますの旧バージョンでサポートされている他のサービス[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
   
--   VSPackage を適切に登録します。 詳細については、[VSPackage の登録](../extensibility/internals/vspackage-registration.md)と[マネージ VSPackage の登録](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)を参照してください。  
+-   VSPackage を適切に登録します。 詳細については、次を参照してください。 [VSPackage の登録](../extensibility/internals/vspackage-registration.md)と[マネージ VSPackage の登録](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)します。  
   
--   ファイルの拡張機能を適切に登録します。 詳細については、[サイド バイ サイドで配置のファイル名拡張子を登録する](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)を参照してください。  
+-   ファイルの拡張機能を適切に登録します。 詳細については、次を参照してください。[サイド バイ サイドで配置のファイル名拡張子を登録する](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)します。  
   
--   VSPackage の適切なバージョンをデプロイするインストーラーを作成[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]です。 詳細については、[Windows インストーラーで Vspackage をインストールする](../extensibility/internals/installing-vspackages-with-windows-installer.md)と[コンポーネント管理](../extensibility/internals/component-management.md)を参照してください。  
+-   VSPackage の適切なバージョンをデプロイするインストーラーを作成[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]です。 詳細については、次を参照してください。 [Windows インストーラーで Vspackage をインストールする](../extensibility/internals/installing-vspackages-with-windows-installer.md)と[コンポーネント管理](../extensibility/internals/component-management.md)します。  
   
--   登録の競合の問題に対処します。 詳細については、[VSPackage の登録](../extensibility/internals/vspackage-registration.md)を参照してください。  
+-   登録の競合の問題に対処します。 詳細については、次を参照してください。 [VSPackage の登録](../extensibility/internals/vspackage-registration.md)します。  
   
--   共有およびバージョン管理の両方のファイルが参照カウントの複数のバージョンの安全なインストールと削除を許可するを考慮することを確認します。 詳細については、[コンポーネント管理](../extensibility/internals/component-management.md)を参照してください。  
+-   共有およびバージョン管理の両方のファイルが参照カウントの複数のバージョンの安全なインストールと削除を許可するを考慮することを確認します。 詳細については、次を参照してください。[コンポーネント管理](../extensibility/internals/component-management.md)します。  
   
 ## <a name="versioned-vspackages"></a>Vspackage のバージョン管理  
  バージョン管理 VSPackage 戦略では、下のバージョンごとに 1 つの VSPackage を作成する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]サポートしています。 これは、以降のバージョンのによって提供されるサービスの利用を行うには適切な[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、VSPackage ごとが、他の影響を与えずに進化させることができます。 それにもかかわらず、1 つのコード ベースから、または複数の独立したコード ベースから複数のバイナリの作成のバージョン管理戦略では、共有戦略よりも多くの初期開発が必要になる可能性があります。 また、追加のセットアップ作業がいずれかのバージョンごとに別々 にセットアップまたはのバージョンを検出する 1 つのセットアップを作成する必要がありますので、必要と[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]にインストールされていると、VSPackage をサポートしています。  
@@ -66,9 +61,8 @@ ms.locfileid: "51756824"
   
   バージョンを使用して、マネージ Vspackage をビルドする必要があります[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]と[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]のターゲット バージョンに一致する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
   
-  だけでなく、VSPackage のバイナリのバイナリの互換性の計画、するもする必要がありますソリューションを検討してプロジェクト ファイル形式。 VSPackage では、新しいプロジェクトの種類を作成する場合、または複数のバージョンの 1 つのバージョンで実行できるかどうかを決定する必要があります[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 詳細については、[カスタム プロジェクトのアップグレード](../misc/upgrading-custom-projects.md)を参照してください。  
+  だけでなく、VSPackage のバイナリのバイナリの互換性の計画、するもする必要がありますソリューションを検討してプロジェクト ファイル形式。 VSPackage では、新しいプロジェクトの種類を作成する場合、または複数のバージョンの 1 つのバージョンで実行できるかどうかを決定する必要があります[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 詳細については、次を参照してください。[カスタム プロジェクトのアップグレード](../misc/upgrading-custom-projects.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [Windows インストーラーによる Vspackage のインストール](../extensibility/internals/installing-vspackages-with-windows-installer.md)   
  [コンポーネント管理](../extensibility/internals/component-management.md)
-

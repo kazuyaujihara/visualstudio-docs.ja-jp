@@ -1,27 +1,22 @@
 ---
 title: Spy++ の使用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Using Spy++
 ms.assetid: 02769bfa-5679-4ee2-8c6b-27876edb4e8c
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 205c99d4278c1421a98373f22374add81d0f9ac7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e12ebef8d6c06c6c5c3c227c5534488970d78ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750292"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963685"
 ---
 # <a name="using-spy"></a>Spy++ の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Spy++ (SPYXX します。EXE) は、システムのプロセス、スレッド�
  [Spy++ の概要](../debugger/introducing-spy-increment.md)  
  Spy++ ツールを使用して表示する情報の種類について説明します。  
   
- [方法: Spy++ を起動する](../debugger/how-to-start-spy-increment.md)  
+ [方法: Spy++ の起動](../debugger/how-to-start-spy-increment.md)  
  [ツール] メニューから spy++ を起動する方法について説明します。  
   
  [Spy++ ツール バー](../debugger/spy-increment-toolbar.md)  
@@ -41,7 +36,7 @@ Spy++ (SPYXX します。EXE) は、システムのプロセス、スレッド�
  [方法: Spy++ ビューを表示する](../debugger/how-to-display-spy-increment-views.md)  
  Windows の表示、メッセージ ビュー、プロセス ビュー、およびスレッド ビューを表示する方法。  
   
- [方法: ビューを更新する](../debugger/how-to-refresh-the-view.md)  
+ [方法: ビューの更新](../debugger/how-to-refresh-the-view.md)  
  Refresh コマンドをについて説明します。  
   
  [方法: フォントを変更する](../debugger/how-to-change-fonts.md)  
@@ -56,6 +51,3 @@ Spy++ (SPYXX します。EXE) は、システムのプロセス、スレッド�
   
  [Spy++ リファレンス](../debugger/spy-increment-reference.md)  
  各 spy++ メニューおよびダイアログ ボックスについて説明するセクションが含まれています。
-
-
-

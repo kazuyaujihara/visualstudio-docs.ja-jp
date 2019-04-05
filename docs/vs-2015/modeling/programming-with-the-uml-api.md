@@ -1,12 +1,9 @@
 ---
 title: UML API を使用したプログラミング |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, API
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: c5937139-49d0-4439-8a9f-89f5e0474618
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d5670b0c0806d59119e1a1af87bae5642255c5a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24f4f21c984f70ca10236de7bf15d0187fd12d71
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793179"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963276"
 ---
 # <a name="programming-with-the-uml-api"></a>UML API を使用したプログラミング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +28,7 @@ UML API の Visual Studio を使用して、作成、読み取り、および UM
   
 |トピック|説明されている型およびメソッドの例|説明されている機能|  
 |-----------|-----------------------------------------|------------------------|  
-|[UML API を使用して関係をナビゲートする](../modeling/navigate-relationships-with-the-uml-api.md)|UML 要素とそのプロパティおよび関連。 たとえば、IElement とその子孫である IClass、IActivity、IUseCase、IComponent、IInteraction、IModel、IPackage。|Visual Studio で UML モデルは、UML 仕様バージョン 2.1.2 になり、入手できるに準拠している、 [UML リソース ページ](http://go.microsoft.com/fwlink/?LinkId=160796)します。 それぞれの型は、プレフィックスとして "I" が付けられた、UML 型と同じ名前のインターフェイスです。|  
+|[UML API を使用して関係をナビゲートする](../modeling/navigate-relationships-with-the-uml-api.md)|UML 要素とそのプロパティおよび関連。 たとえば、IElement とその子孫:IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|Visual Studio で UML モデルは、UML 仕様バージョン 2.1.2 になり、入手できるに準拠している、 [UML リソース ページ](http://go.microsoft.com/fwlink/?LinkId=160796)します。 それぞれの型は、プレフィックスとして "I" が付けられた、UML 型と同じ名前のインターフェイスです。|  
 |[UML モデル内に要素および関係を生成する](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|それぞれの要素型は、子を生成するためのメソッドを持ちます。|  
 |[図に UML モデルを表示する](../modeling/display-a-uml-model-on-diagrams.md)|IShape、IDiagram<br /><br /> IShape.Move()|モデルのそれぞれの要素は、図においてシェイプとして表すことができます。 場合によっては、それぞれのオブジェクトに対して新しいシェイプを生成できます。 これらのシェイプについては、移動、サイズ変更、色の設定、および折りたたみ/展開を行うことができます。|  
 |[UML モデル内を移動する](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|モデル ストアは、モデルを格納します。<br /><br /> 図コンテキストは、現在の図およびストアへのアクセスを提供します。|  
@@ -54,7 +51,7 @@ UML API の Visual Studio を使用して、作成、読み取り、および UM
 ## <a name="the-api-assemblies"></a>API アセンブリ  
  この表は、UML ツールに機能拡張をもたらすアセンブリと、推奨される名前空間を示します。  
   
-|アセンブリ|名前空間|アクセス先|  
+|Assembly|名前空間|アクセス先|  
 |--------------|----------------|-------------------------|  
 |Microsoft.VisualStudio.Uml.Interfaces|(すべて)|UML の種類|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml>|[作成方法](../modeling/create-elements-and-relationships-in-uml-models.md)|  
@@ -74,6 +71,3 @@ UML API の Visual Studio を使用して、作成、読み取り、および UM
 ## <a name="see-also"></a>関連項目  
  [UML モデルと図を拡張します。](../modeling/extend-uml-models-and-diagrams.md)   
  [UML モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

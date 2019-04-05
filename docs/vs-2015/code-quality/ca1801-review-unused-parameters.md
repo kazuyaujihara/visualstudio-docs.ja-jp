@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1801: 使用されていないパラメーターの確認 |Microsoft Docs'
-ms.custom: ''
+title: CA1801:未使用のパラメーターの確認 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUnusedParameters
 - CA1801
@@ -21,17 +16,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b0946e315aef0c333207d49eb14820d287a9b361
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269686"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59003071"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801: 使用されていないパラメーターをレビューします
+# <a name="ca1801-review-unused-parameters"></a>CA1801:使用されていないパラメーターの確認
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。 [ca 1801: 使用されていないパラメーターを確認して](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください。 [ca 1801。未使用のパラメーターをレビュー](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) docs.microsoft.com でリリースされました。  
   
 |||  
 |-|-|  
@@ -72,9 +67,8 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]  
   
 ## <a name="related-rules"></a>関連規則  
- [CA1811: 呼び出されていないプライベート コードを使用しません](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+ [CA1811:呼び出されていないプライベート コードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
- [CA1812: インスタンス化されていない内部クラスを使用しないでください](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
+ [CA1812:インスタンス化されていない内部クラスを回避します。](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1804: 使用されていないローカルを削除します](../code-quality/ca1804-remove-unused-locals.md)
-
+ [CA 1804:使用されていないローカルを削除します](../code-quality/ca1804-remove-unused-locals.md)

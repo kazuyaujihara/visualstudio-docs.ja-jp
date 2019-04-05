@@ -1,14 +1,9 @@
 ---
 title: '方法: 特定のロケールがあるプロジェクトの発行 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +20,13 @@ ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: a08c7cc22129a783e692c437724114b3f44888a3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5f090fef8fd4a146cf036ebbb5f8d06b120afb3d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607784"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962611"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>方法: 特定のロケールを持つプロジェクトを発行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,15 +34,15 @@ ms.locfileid: "51607784"
 1 つのアプリケーションに、ロケールの異なる複数のコンポーネントが含まれることも少なくありません。 その場合、複数のプロジェクトを持つソリューションを作成し、ロケールごとに個別のプロジェクトを発行することになります。 以降の手順では、マクロを使用して、ソリューションの 1 つ目のプロジェクトを 'en' ロケールを使用して発行する方法について説明しています。 この手順を 'en' 以外のロケールで実行する場合は、マクロ内の `localeString` を、使用するロケール ('de' や 'de-DE' など) に設定してください。  
   
 > [!NOTE]
->  このマクロを使用するには、[発行場所] に有効な URL または UNC (Universal Naming Convention) 共有を指定する必要があります。 また、コンピューターにインターネット インフォメーション サービス (IIS: Internet Information Service) がインストールされている必要があります。 IIS をインストールする、**開始**] メニューのをクリックして**コントロール パネルの [** します。 ダブルクリック**を追加または削除プログラム**します。 **プログラム追加と削除**、 をクリックして**Windows コンポーネントの追加/削除**します。 **Windows コンポーネント ウィザード**を選択、**インターネット インフォメーション サービス (IIS)**  チェック ボックス、**コンポーネント**一覧。 をクリックし、**完了**ウィザードを閉じます。  
+>  このマクロを使用するには、[発行場所] に有効な URL または UNC (Universal Naming Convention) 共有を指定する必要があります。 また、コンピューターにインターネット インフォメーション サービス (IIS: Internet Information Service) がインストールされている必要があります。 IIS をインストールするには、**[スタート]** メニューの **[コントロール パネル]** をクリックします。 **[プログラムの追加と削除]** をダブルクリックします。 **[プログラムの追加と削除]** で **[Windows コンポーネントの追加と削除]** をクリックします。 **Windows コンポーネント ウィザード**の **[コンポーネント]** リストで、**[インターネット インフォメーション サービス (IIS)]** チェック ボックスをオンにします。 次に、**[完了]** をクリックして、ウィザードを閉じます。  
   
 ### <a name="to-create-the-publishing-macro"></a>発行マクロを作成するには  
   
-1.  マクロ エクスプ ローラーを開く、**ツール**メニューで、**マクロ**、 をクリックし、**マクロ エクスプ ローラー**。  
+1.  マクロ エクスプローラーを開くには、**[ツール]** メニューの **[マクロ]** をポイントし、**[マクロ エクスプローラー]** をクリックします。  
   
-2.  新しいマクロ モジュールを作成します。 マクロ エクスプ ローラーで選択 **[mymacros]** します。 **ツール**メニューで、**マクロ**、 をクリックし、**新しいマクロ モジュール**します。 モジュールの名前を付けます**PublishSpecificCulture**します。  
+2.  新しいマクロ モジュールを作成します。 マクロ エクスプローラーで **[MyMacros]** を選択します。 **[ツール]** メニューの **[マクロ]** をポイントし、**[新しいマクロ モジュール]** をクリックします。 モジュールに "**PublishSpecificCulture**" という名前を付けます。  
   
-3.  マクロ エクスプ ローラーで、 **mymacros**ノード、および順に開いて、 **PublishAllProjects**モジュールをダブルクリックして (またはから、**ツール**に**マクロ**、 をクリックし、**マクロ IDE**)。  
+3.  マクロ エクスプローラーで **[MyMacros]** ノードを展開し、**[PublishAllProjects]** モジュールをダブルクリックして開きます。(または、**[ツール]** メニューの **[マクロ]** をポイントし、**[マクロ IDE]** をクリックします。)  
   
 4.  マクロ IDE で、モジュールの `Import` ステートメントに続けて次のコードを追加します。  
   
@@ -147,17 +142,17 @@ ms.locfileid: "51607784"
   
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>特定のロケールのプロジェクトを発行するには  
   
-1.  Visual Basic Windows アプリケーション プロジェクトを作成する、**ファイル**メニューで、**新規**、 をクリックし、**プロジェクト**します。  
+1.  Visual Basic Windows アプリケーション プロジェクトを作成するには、**[ファイル]** メニューの **[新規作成]** をポイントし、**[プロジェクト]** をクリックします。  
   
-2.  **新しいプロジェクト**ダイアログ ボックスで、 **Windows アプリケーション**から、 **Visual Basic**ノード。 プロジェクトに名前を**PublishLocales**します。  
+2.  **[新しいプロジェクト]** ダイアログ ボックスの **[Visual Basic]** ノードで、**[Windows アプリケーション]** を選択します。 プロジェクトに "**PublishLocales**" という名前を付けます。  
   
-3.  Form1 をクリックします。 **プロパティ**ウィンドウで、**デザイン**、変更、**言語**プロパティから **(既定)** に**英語**. 変更、**テキスト**プロパティをフォームの**MyForm**します。  
+3.  Form1 をクリックします。 **[プロパティ]** ウィンドウの **[デザイン]** で、**[Language]** プロパティを **[(既定値)]** から **[英語]** に変更します。 フォームの **[Text]** プロパティを **MyForm** に変更します。  
   
      ローカライズされたリソース DLL は必要になるまで作成されません。 たとえば、新しいロケールを指定した後で、フォームやそのコントロールのテキストを変更した場合などに作成されます。  
   
 4.  Visual Studio IDE を使用して、PublishLocales を発行します。  
   
-     **ソリューション エクスプ ローラー**PublishLocales を選択します。 **プロジェクト**メニューの **プロパティ**します。 プロジェクト デザイナーで、**発行**の発行場所の指定 ページで、 **http://localhost/PublishLocales**、順にクリックします**今すぐ発行**します。  
+     **ソリューション エクスプ ローラー**PublishLocales を選択します。 **[プロジェクト]** メニューの **[プロパティ]** を選択します。 プロジェクト デザイナーで、**発行**の発行場所の指定 ページで、 **http://localhost/PublishLocales**、順にクリックします**今すぐ発行**します。  
   
      発行 Web ページが表示されたら、そのページを終了します。 (この手順では、プロジェクトを発行するだけで、インストールする必要はありません。)  
   
@@ -165,15 +160,12 @@ ms.locfileid: "51607784"
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6.  発行プロセスが正常に完了すると、"PublishLocales\PublishLocales.vbproj の発行は成功しました。 発行の言語は 'en' です。" というメッセージが表示されます。クリックして**OK**メッセージ ボックスにします。 発行 Web ページが表示されたら、クリックして**インストール**します。  
+6.  発行プロセスが正常に完了すると、"PublishLocales\PublishLocales.vbproj の発行は成功しました。 発行の言語は 'en' です。" というメッセージが表示されます。メッセージ ボックスの **[OK]** をクリックします。 発行 Web ページが表示されたら、**[インストール]** をクリックします。  
   
 7.  C:\Inetpub\wwwroot\PublishLocales\en にアクセスします。 ローカライズされたリソース DLL のほかに、マニフェスト、setup.exe、発行 Web ページ ファイルなどのインストールされたファイルがあるはずです。 (既定では、ClickOnce は EXE ファイルおよび DLL ファイルに .deploy という拡張子を追加します。この拡張子は展開後に削除できます。)  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
- [開発環境のマクロ](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [マクロ エクスプ ローラー ウィンドウ](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [方法: 編集およびマクロをプログラムで作成](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
-
-
-
+ [開発環境のマクロ](http://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [マクロ エクスプ ローラー ウィンドウ](http://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [方法: 編集およびマクロをプログラムで作成](http://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

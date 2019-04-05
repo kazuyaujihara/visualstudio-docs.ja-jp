@@ -1,14 +1,9 @@
 ---
 title: ClickOnce アプリケーションのローカライズ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,13 +21,13 @@ ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962854"
 ---
 # <a name="localizing-clickonce-applications"></a>ClickOnce アプリケーションのローカライズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,23 +54,23 @@ ms.locfileid: "49261470"
  この方法の利点は、単一の配置が作成されるので、配置のローカライズが簡素化されることです。 実行時に、ユーザーが使用する Windows オペレーティング システムの既定のカルチャに応じて、適切なサテライト アセンブリが使用されます。 この方法の欠点は、クライアント コンピューターでアプリケーションをインストールまたは更新するたびに、すべてのサテライト アセンブリがダウンロードされることです。 このため、アプリケーションに大量の文字列が含まれている場合や顧客が使用するネットワーク接続の速度が遅い場合は、このプロセスがアプリケーション更新時のパフォーマンスに影響を与える可能性があります。  
   
 > [!NOTE]
->  この方法では、それぞれのカルチャで異なるテキスト文字列のサイズに対応するために、コントロールの高さ、幅、および位置をアプリケーションが自動的に調整することを前提としています。 Windows フォームには、容易にローカライズできるフォームをデザインするためのさまざまなコントロールとテクノロジが用意されています。これには、<xref:System.Windows.Forms.FlowLayoutPanel> コントロールと <xref:System.Windows.Forms.TableLayoutPanel> コントロール、および <xref:System.Windows.Forms.Control.AutoSize%2A> プロパティが含まれます。  参照してください[方法: Windows フォームを使用して AutoSize と TableLayoutPanel コントロールでサポート ローカリゼーション](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\))します。  
+>  この方法では、それぞれのカルチャで異なるテキスト文字列のサイズに対応するために、コントロールの高さ、幅、および位置をアプリケーションが自動的に調整することを前提としています。 Windows フォームには、容易にローカライズできるフォームをデザインするためのさまざまなコントロールとテクノロジが用意されています。これには、<xref:System.Windows.Forms.FlowLayoutPanel> コントロールと <xref:System.Windows.Forms.TableLayoutPanel> コントロール、および <xref:System.Windows.Forms.Control.AutoSize%2A> プロパティが含まれます。  参照してください[方法。AutoSize と TableLayoutPanel コントロールを使用して Windows フォームのローカリゼーションをサポートする](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\))します。  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>カルチャごとに 1 つの配置を生成する  
  この配置ストラテジでは、複数の配置を生成します。 各配置には特定のカルチャに必要なサテライト アセンブリのみを含め、その配置をそのカルチャ固有としてマークします。  
   
- このメソッドを使用する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、設定、**発行の言語**プロパティを**発行**目的の地域にタブ。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] は、選択した地域に必要なサテライト アセンブリを自動的に組み込み、それ以外のすべてのサテライト アセンブリを配置から除外します。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でこのメソッドを使用するには、**[発行]** タブの **[発行の言語]** プロパティを目的の地域に設定します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] は、選択した地域に必要なサテライト アセンブリを自動的に組み込み、それ以外のすべてのサテライト アセンブリを配置から除外します。  
   
  この作業は、Microsoft [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] の MageUI.exe ツールを使用して実行することもできます。 使用して、 **Populate**のボタンでは、**ファイル**アプリケーション ディレクトリで、その他のすべてのサテライト アセンブリを除外し、設定、アプリケーション マニフェストのタブ、**カルチャ**フィールドに、**名前**MageUI.exe で配置マニフェスト タブ。 この手順によって、正しいサテライト アセンブリが組み込まれるだけでなく、配置マニフェストに含まれる `assemblyIdentity` 要素の `language` 属性が、対応するカルチャに設定されます。  
   
- アプリケーションを発行した後、アプリケーションがサポートする追加のカルチャごとにこの手順を繰り返す必要があります。 発行するようにして別の Web サーバーのディレクトリまたはファイルの共有ディレクトリに常に、各アプリケーション マニフェストは、さまざまなサテライト アセンブリを参照し、各配置マニフェスト、に別の値になりますので、行う必要があります`language`属性。  
+ アプリケーションを発行した後、アプリケーションがサポートする追加のカルチャごとにこの手順を繰り返す必要があります。 毎回、異なる Web サーバー ディレクトリまたはファイル共有ディレクトリに発行するようにする必要があります。これは、各アプリケーション マニフェストで異なるサテライト アセンブリを参照し、各配置マニフェストで `language` 属性に異なる値を使用するためです。  
   
 ## <a name="downloading-satellite-assemblies-on-demand"></a>サテライト アセンブリを必要に応じてダウンロードする  
  すべてのサテライト アセンブリを 1 つの配置に含める場合は、オンデマンド ダウンロードを使用し、サテライト アセンブリをオプションとしてマークすることにより、パフォーマンスを高めることができます。 マークしたアセンブリは、アプリケーションがインストールまたは更新されるときにはダウンロードされません。 これらのアセンブリは、必要になったときに <xref:System.Deployment.Application.ApplicationDeployment> クラスの <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> メソッドを呼び出すことでインストールできます。  
   
- サテライト アセンブリを必要に応じてダウンロードする処理は、その他の種類のアセンブリを必要に応じてダウンロードする処理と若干異なります。 情報とコードの例を使用してこのシナリオを有効にする方法について、[!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]用ツールの[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]を参照してください[チュートリアル: ClickOnce 配置 API で必要に応じてサテライト アセンブリをダウンロード](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)します。  
+ サテライト アセンブリを必要に応じてダウンロードする処理は、その他の種類のアセンブリを必要に応じてダウンロードする処理と若干異なります。 このシナリオを使用して有効にする方法の詳細情報とコード例を[!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]用ツールの[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]を参照してください[チュートリアル。ClickOnce 配置 API で必要に応じてサテライト アセンブリをダウンロード](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)します。  
   
- このシナリオは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で有効にすることもできます。  「 [チュートリアル: デザイナーを使用し、ClickOnce 配置 API で必要に応じてサテライト アセンブリをダウンロードする](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) 」または「 [チュートリアル: デザイナーを使用し、ClickOnce 配置 API で必要に応じてサテライト アセンブリをダウンロードする](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))」もご覧ください。  
+ このシナリオは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で有効にすることもできます。  参照してください[チュートリアル。ClickOnce 配置デザイナーを使用して API で必要に応じてサテライト アセンブリをダウンロード](http://msdn.microsoft.com/library/ms366788\(v=vs.110\))または[チュートリアル。ClickOnce 配置デザイナーを使用して API で必要に応じてサテライト アセンブリをダウンロード](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))します。  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>ローカライズされた ClickOnce アプリケーションを配置前にテストする  
  サテライト アセンブリが Windows フォーム アプリケーションに使用されるのは、アプリケーションのメイン スレッドの <xref:System.Threading.Thread.CurrentUICulture%2A> プロパティがそのサテライト アセンブリのカルチャに設定されている場合に限られます。 各地域の顧客は Windows のローカライズ版を既に実行していると考えられるため、カルチャも該当する既定値に設定されているはずです。  
@@ -90,6 +85,3 @@ ms.locfileid: "49261470"
  [\<assemblyIdentity > 要素](../deployment/assemblyidentity-element-clickonce-deployment.md)   
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
  [Windows フォームのグローバル化](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)
-
-
-

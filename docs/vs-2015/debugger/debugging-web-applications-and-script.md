@@ -1,14 +1,9 @@
 ---
 title: Web アプリケーションとスクリプトのデバッグ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,30 +21,30 @@ ms.assetid: 6968625d-9783-4ad6-8bf5-eb85b548844c
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0f44dc85d6378f4a8303fac846ad32528081b54b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797768"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963672"
 ---
 # <a name="debugging-web-applications-and-script"></a>Web アプリケーションとスクリプトのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 表の凡例 :   
   
- ここでは、Web アプリケーションの一般的なデバッグ テクニックについて説明します。 詳細については、[デバッガーの基本事項](../debugger/debugger-basics.md)を参照してください。  
+ ここでは、Web アプリケーションの一般的なデバッグ テクニックについて説明します。 詳細については、次を参照してください。[デバッガーの基本事項](../debugger/debugger-basics.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [ASP.NET アプリケーションおよび AJAX アプリケーションのデバッグ](../debugger/debugging-aspnet-and-ajax-applications.md)  
  開発時と配置後に [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションをデバッグするための要件と手順について説明します。  
   
- [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Web アプリケーションのデバッグ中に発生するエラーとその対処方法を示します。  
   
- [チュートリアル: 並行アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 使用する方法について説明します、**並列タスク**と**並列スタック**ツール ウィンドウを並行アプリケーションをデバッグします。  
+ [チュートリアル: 並列アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ **[並列タスク]** ツール ウィンドウと **[並列スタック]** ツール ウィンドウを使用して並行アプリケーションをデバッグする方法について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
  [ASP.NET Web アプリケーション](../debugger/debugging-preparation-aspnet-web-applications.md)  
@@ -67,6 +62,3 @@ ms.locfileid: "51797768"
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)
-
-
-

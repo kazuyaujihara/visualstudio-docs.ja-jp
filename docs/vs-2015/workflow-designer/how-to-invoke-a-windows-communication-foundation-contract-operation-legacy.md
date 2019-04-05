@@ -1,23 +1,20 @@
 ---
 title: '方法: Windows Communication Foundation コントラクト操作 (レガシ) を呼び出す |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: a9058345-708f-4fcf-8739-2a43e5285b7a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 5e59d5ed9617d4be71a0542e35dd509d9035ae33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b6cdd551a0cf8ee085359f5545dd16dfac163c4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181845"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963777"
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>方法: Windows Communication Foundation コントラクト操作を呼び出す (レガシ)
 このトピックでは、[!INCLUDE[indigo1](../includes/indigo1-md.md)] または [!INCLUDE[wfd1](../includes/wfd1-md.md)] を対象とする従来の [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]を使用して [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] コントラクト操作を呼び出す方法について説明します。  
@@ -48,9 +45,9 @@ ms.locfileid: "49181845"
   
 3.  チャネル トークン ノードを展開し、<xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> フィールドで使用するクライアント エンドポイントの名前を指定します。 構成ファイル内の同名のエンドポイント構成が、チャネルの構成に使用されます。  
   
-4.  構成ファイル内にエンドポイント構成が存在しない場合は、エンドポイント構成を作成します。 クライアントの構成の詳細については、[WCF Client Overview](http://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d)を参照してください。  
+4.  構成ファイル内にエンドポイント構成が存在しない場合は、エンドポイント構成を作成します。 クライアントの構成の詳細については、次を参照してください。 [WCF Client Overview](http://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d)します。  
   
 ## <a name="see-also"></a>関連項目  
  [選択操作 ダイアログ ボックス (レガシ)](../workflow-designer/choose-operation-dialog-box-legacy.md)   
- [方法: WCF コントラクト操作 (レガシ) 実装](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
+ [方法: WCF コントラクト操作 (レガシ) 実装します。](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
  [従来のワークフロー アクティビティ](../workflow-designer/legacy-workflow-activities.md)

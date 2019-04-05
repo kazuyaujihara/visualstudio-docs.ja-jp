@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1726: 適切な用語を使用します |。Microsoft Docs'
-ms.custom: ''
+title: CA1726:用語を使用します |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220520"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59003079"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726: 適切な用語を使用します
+# <a name="ca1726-use-preferred-terms"></a>CA1726:適切な用語を使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。 [ca 1726 適切な: 適切な用語を使用して、](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください。 [ca 1726 適切な。適切な用語を使用して、](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) docs.microsoft.com でリリースされました。  
   
 |||  
 |-|-|  
@@ -53,7 +48,7 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 |できませんでした。|でした|  
 |Didnt|DidNot|  
 |セーフモード|含まれていません|  
-|不要|せず|  
+|不要|DoNot|  
 |フラグまたはフラグ|置換用語はありません。 使用しないでください。|  
 |ですか?|HadNot|  
 |していません。|妥当|  
@@ -79,4 +74,3 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
   
 ## <a name="related-rules"></a>関連規則  
  [名前付けに関する警告](../code-quality/naming-warnings.md)
-

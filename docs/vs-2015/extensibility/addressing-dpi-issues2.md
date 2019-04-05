@@ -1,21 +1,17 @@
 ---
 title: DPI Issues2 をアドレス指定 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 542676de0efabcfa58945fc1572fc5539f52c209
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752531"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963426"
 ---
 # <a name="addressing-dpi-issues"></a>DPI 問題への対応
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +28,7 @@ ms.locfileid: "51752531"
   
 - Windows は 280 ppi (時点で、Windows 8.1 S14) を超える新しいデバイスによっては 250% にコンテンツを自動的にスケールできます。  
   
-  Windows は、増加のピクセル数を活用するためにスケール アップ UI を扱うのことです。 アプリケーションを「システム DPI 認識」を宣言すること自体でこのシステムの選択します。 これを行わないアプリケーションには、システムによってをスケール アップします。 これは、結果、アプリケーション全体が一様に分布のピクセル拡大は「あいまい」のユーザー エクスペリエンス。 例えば:  
+  Windows は、増加のピクセル数を活用するためにスケール アップ UI を扱うのことです。 アプリケーションを「システム DPI 認識」を宣言すること自体でこのシステムの選択します。 これを行わないアプリケーションには、システムによってをスケール アップします。 これは、結果、アプリケーション全体が一様に分布のピクセル拡大は「あいまい」のユーザー エクスペリエンス。 例:  
   
   ![DPI 問題あいまい](../extensibility/media/dpi-issues-fuzzy.png "DPI 問題あいまい")  
   
@@ -98,7 +94,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
 - LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (関数が X でスケーリングを使用すると Y 軸)  
   
-- int 領域 = DpiHelper.LogicalToDeviceUnitsX (10)。  
+- int space = DpiHelper.LogicalToDeviceUnitsX (10);  
   
 - int 高さ VsUI::DpiHelper::LogicalToDeviceUnitsY(5); を =  
   
@@ -132,7 +128,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 -   プロジェクトへの参照に含まれることを確認**System.Windows.Forms**、 **PresentationCore**、および**PresentationUI**します。  
   
--   コードでは、使用、 **Microsoft.VisualStudio.PlatformUI** DpiHelper クラスの静的関数を名前空間を呼び出します。 (ポイント、サイズ、四角形、およびなど) のサポートされている型は、拡張機能を返す新しい関数オブジェクトを拡大縮小提供にがあります。 例えば:  
+-   コードでは、使用、 **Microsoft.VisualStudio.PlatformUI** DpiHelper クラスの静的関数を名前空間を呼び出します。 (ポイント、サイズ、四角形、およびなど) のサポートされている型は、拡張機能を返す新しい関数オブジェクトを拡大縮小提供にがあります。 例:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -151,7 +147,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 - メニュー項目とアイコンのイメージの<xref:System.Windows.Media.BitmapScalingMode>が原因で他のゆがみ成果物 (200% で 300%) の許容を排除するときに使用する必要があります。  
   
-- • 大規模なズーム レベルをあいまい、色あせた UI での双三次結果を使用したことは考えませんイメージのスケーリング (たとえば、250% または 350%)、100% の倍数ではありません。 最初の 100% (200% または 300% など) の最大の倍数に NearestNeighbor でイメージをスケーリングとそこから双三次によるスケールでより良い結果が取得されます。 特殊なケースを参照してください。 詳細情報のレベルの大規模な DPI の場合、WPF のイメージを prescaling します。  
+- • 大規模なズーム レベルをあいまい、色あせた UI での双三次結果を使用したことは考えませんイメージのスケーリング (たとえば、250% または 350%)、100% の倍数ではありません。 最初に、最大 100% (200% または 300% など) の倍数に NearestNeighbor でイメージをスケーリングしてより良い結果が取得されます。そこから双三次でスケーリングします。 特殊なケースを参照してください。 詳細情報のレベルの大規模な DPI の場合、WPF のイメージを prescaling します。  
   
   Microsoft.VisualStudio.PlatformUI 名前空間で DpiHelper クラス メンバーを提供する<xref:System.Windows.Media.BitmapScalingMode>をバインドに使用できます。 Visual Studio シェルは、ビットマップ スケーリング モード、製品内で一様に、DPI のスケール ファクターによって制御できるようになります。  
   
@@ -169,7 +165,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
  いくつかの UI は、WPF ベースのデザイナー (WPF デスクトップと Windows ストア)、Visual Studio テキスト エディターなど、システム設定の DPI ズーム レベルとは無関係にスケーリングできます。 このような場合は、DpiHelper.BitmapScalingMode を使用しない必要があります。 エディターでこの問題を解決するには、カスタム プロパティを作成した IDE チーム タイトル RenderOptions.BitmapScalingMode になります。 システムと、UI の組み合わせのズーム レベルに応じて HighQuality または NearestNeighbor にそのプロパティ値を設定します。  
   
 ## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>特殊なケース: prescaling WPF イメージの大規模な DPI レベル  
- 100% (たとえば、250%、350% など) の倍数ではない非常に大きなズーム レベルの場合は、あいまい、色あせた ui 双三次結果を使用したことは考えませんイメージをスケーリングします。 錯覚のように鮮明なテキストの横のこれらのイメージのような印象がほぼです。 テキスト関連のフォーカスの内外の目に近い位置に、画像が表示されます。 この拡大されたサイズにスケーリングの結果は、最初、最大 100% (200% または 300% など) の倍数に NearestNeighbor でイメージをスケーリングと残りの部分 (さらに 50%) に双三次スケーリングによって向上できます。  
+ 100% (たとえば、250%、350% など) の倍数ではない非常に大きなズーム レベルの場合は、あいまい、色あせた ui 双三次結果を使用したことは考えませんイメージをスケーリングします。 錯覚のように鮮明なテキストの横のこれらのイメージのような印象がほぼです。 テキスト関連のフォーカスの内外の目に近い位置に、画像が表示されます。 最初に、最大 100% (200% または 300% など) の倍数に NearestNeighbor でイメージをスケーリングによって向上する可能性が拡大されたこのサイズにスケーリングの結果残りの部分 (さらに 50%) に双三次スケーリングします。  
   
  次に、結果の違いの例の最初のイメージが拡大/縮小 200%]-> [100% 向上倍スケーリング アルゴリズムでは、250%]-> [および双三次 100% と同様に、2 つ目に 250%]-> [です。  
   
@@ -177,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  この二重スケール、XAML マークアップを使用して、各イメージ要素を表示するために UI を有効にするためには、変更する必要があります。 次の例では、DpiHelper ライブラリと Shell.12/14 を使用して Visual Studio での WPF での二重スケールを使用する方法を示します。  
   
- 手順 1: は、300%、200% にイメージを Prescale し、NearestNeighbor を使用するようにします。  
+ 手順 1: 200%、300%、NearestNeighbor を使用するようにイメージを prescale します。  
   
  バインディング、または XAML マークアップ拡張機能の適用にコンバーターを使用してイメージを prescale します。 例えば:  
   
@@ -207,7 +203,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- 手順 2: は、最終的なサイズが現在の DPI の正しいことを確認します。  
+ 手順 2: 最終的なサイズが現在の DPI の正しいことを確認します。  
   
  WPF には、UIElement に設定 BitmapScalingMode プロパティを使用して、現在 DPI の UI は拡大縮小、ため、ソースに 2 ~ 3 倍よりも大きくなります prescaled イメージを使用して、イメージ コントロールする必要があります。 以下は、この特殊効果のカウンターの値に、いくつかの方法です。  
   
@@ -366,4 +362,3 @@ public int GetHostInfo(DOCHOSTUIINFO info)
                        ref commandOutput);  
     }  
     ```
-
