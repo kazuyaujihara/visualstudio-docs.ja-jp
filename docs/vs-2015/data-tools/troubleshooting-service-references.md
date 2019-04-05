@@ -1,12 +1,9 @@
 ---
 title: サービス参照のトラブルシューティング |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -19,13 +16,13 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223965"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978317"
 ---
 # <a name="troubleshooting-service-references"></a>サービス参照のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ ms.locfileid: "49223965"
 -   **ソリューション エクスプ ローラー**WCF サービス ライブラリ プロジェクトを右クリックし、クリックして、**ビルド**します。
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>リモート デスクトップ経由でサービスへのアクセス エラー
- ユーザーがアクセスするときに、リモート デスクトップ接続と、ユーザーを Web でホストされる WCF サービスには、管理者のアクセス許可がありません、NTLM 認証が使用されます。 ユーザーが次のエラー メッセージを受け取ることがあります、ユーザーは、管理者のアクセス許可を持っていない場合:"HTTP 要求はクライアントの認証方式 'Anonymous' で承認されていません。 サーバーから受信した認証ヘッダーが 'NTLM'。"
+ ユーザーがアクセスするときに、リモート デスクトップ接続と、ユーザーを Web でホストされる WCF サービスには、管理者のアクセス許可がありません、NTLM 認証が使用されます。 ユーザーが管理者のアクセス許可を持たない場合、ユーザーは、次のエラー メッセージを受信可能性があります。"HTTP 要求はクライアントの認証方式 'Anonymous' で承認されていません。 サーバーから受信した認証ヘッダーが 'NTLM'。"
 
  このエラーを修復するには:
 
@@ -79,9 +76,9 @@ ms.locfileid: "49223965"
 
 3.  確認します、**ビルド構成の詳細を表示** チェック ボックスが選択されているし、クリックして**OK**。
 
-4.  WCF サービス プロジェクトを読み込みます。 詳細については、[NIB How to: マルチ プロジェクト ソリューションの作成](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)を参照してください。
+4.  WCF サービス プロジェクトを読み込みます。 詳細については、次を参照してください。[に NIB 方法。マルチ プロジェクト ソリューションを作成する](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)します。
 
-5.  **Configuration Manager**ダイアログ ボックスで、セット、**アクティブ ソリューション構成**に**デバッグ**します。 詳細については、「[How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md)」(方法 : 構成を作成および編集する) を参照してください。
+5.  **Configuration Manager**ダイアログ ボックスで、セット、**アクティブ ソリューション構成**に**デバッグ**します。 詳細については、「[方法 :構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)」を参照してください。
 
 6.  **ソリューション エクスプ ローラー**、WCF サービス プロジェクトを選択します。
 
@@ -92,7 +89,7 @@ ms.locfileid: "49223965"
 
  このエラーを修正するのには、RSS フィードを無効にします。
 
-1.  Internet Explorer で、上、**ツール** メニューのをクリックして**インターネット オプション**します。
+1.  Internet Explorer で、**[ツール]** メニューの **[インターネット オプション]** をクリックします。
 
 2.  **コンテンツ**] タブで、**フィード**セクションで、[**設定**します。
 

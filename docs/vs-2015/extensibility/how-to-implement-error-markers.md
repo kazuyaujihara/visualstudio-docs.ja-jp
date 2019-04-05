@@ -1,28 +1,23 @@
 ---
 title: '方法: エラーのマーカーの実装 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e4dd15f4cbb36ef1f81d3b7ca345a6a06bdaff4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a9d0836d9633b070a9f48a6bd2b80d1f012f52cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974993"
 ---
-# <a name="how-to-implement-error-markers"></a>方法: エラーのマーカーの実装
+# <a name="how-to-implement-error-markers"></a>方法: エラーのマーカーを実装します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 エラーのマーカー (または赤色の波下線) は、テキスト エディターのカスタマイズを実装するが最も難しいです。 ただし、VSPackage のユーザーに提供する利点は、提供するコストを上回るまでことができます。 エラーのマーカーは、微妙、言語のパーサーが波線または波状の赤い線で正しくないと判断されるテキストをマークします。 このインジケーターには、不適切なコードを視覚的に表示することでプログラマが役立ちます。  
@@ -33,11 +28,11 @@ ms.locfileid: "51736194"
   
 1. 赤い波線を配置するテキストを選択します。  
   
-2. 型のマーカーを作成`MARKER_CODESENSE_ERROR`です。 詳細については、[方法: 標準のテキスト マーカーの追加](../extensibility/how-to-add-standard-text-markers.md)を参照してください。  
+2. 型のマーカーを作成`MARKER_CODESENSE_ERROR`です。 詳細については、「[方法 :標準のテキスト マーカーを追加](../extensibility/how-to-add-standard-text-markers.md)します。  
   
 3. その後、渡す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>インターフェイス ポインター。  
   
-   このプロセスでは、特定のマーカーにツールヒントのテキストまたは特別なコンテキスト メニューを作成することもできます。 詳細については、[方法: 標準のテキスト マーカーの追加](../extensibility/how-to-add-standard-text-markers.md)を参照してください。  
+   このプロセスでは、特定のマーカーにツールヒントのテキストまたは特別なコンテキスト メニューを作成することもできます。 詳細については、「[方法 :標準のテキスト マーカーを追加](../extensibility/how-to-add-standard-text-markers.md)します。  
   
    エラーのマーカーを表示する前に、次のオブジェクトが必要です。  
   
@@ -62,7 +57,6 @@ ms.locfileid: "51736194"
   
 ## <a name="see-also"></a>関連項目  
  [レガシ API を使用したテキスト マーカーの使用](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [方法: 標準のテキスト マーカーの追加](../extensibility/how-to-add-standard-text-markers.md)   
- [方法: カスタム テキスト マーカーの作成](../extensibility/how-to-create-custom-text-markers.md)   
- [方法: テキスト マーカーを使用する](../extensibility/how-to-use-text-markers.md)
-
+ [方法: 標準のテキスト マーカーを追加します。](../extensibility/how-to-add-standard-text-markers.md)   
+ [方法: カスタム テキスト マーカーを作成します。](../extensibility/how-to-create-custom-text-markers.md)   
+ [方法: テキスト マーカーを使用します。](../extensibility/how-to-use-text-markers.md)

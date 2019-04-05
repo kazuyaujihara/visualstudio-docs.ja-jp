@@ -1,27 +1,22 @@
 ---
 title: VSCT XML スキーマ リファレンス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
 - VSCT XML schema elements
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bff3fb766c11987b84ba88b5c86ab3c8d24dbc94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755874"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977511"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML スキーマ リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51755874"
 >  VSCT コンパイラでは、.vsct ファイルでプリプロセッサを実行できます。 これは通常は、C プリプロセッサを定義することに含まれる C++ ファイルで使用されているのと同じ構文をあるマクロ、します。 これの例を示しますが、.vsct で提供されているファイルを**新しいプロジェクト**ウィザードは、VSPackage プロジェクトを作成します。  
   
 ## <a name="optional-elements"></a>省略可能な要素  
- 一部の VSCT 要素は省略可能です。 場合、`Parent`引数が指定されていない、Group_Undefined:0 を暗黙的に指定されます。 場合、`Icon`引数が指定されていない、guidOfficeIcon:msotcidNoIcon を暗黙的に指定されます。 ショートカット キーが定義されている場合は、エミュレーションでは、通常使用されていないは省略可能です。  
+ 一部の VSCT 要素は省略可能です。 場合、`Parent`引数が指定されていない Group_Undefined:0暗示します。 場合、`Icon`引数が指定されていない、guidOfficeIcon:msotcidNoIcon を暗黙的に指定されます。 ショートカット キーが定義されている場合は、エミュレーションでは、通常使用されていないは省略可能です。  
   
  ビットマップ ストリップの場所を指定して、コンパイル時にビットマップの項目を埋め込むことができます、`href`引数。 ビットマップ ストリップを DLL のリソースから抽出されたなくにマージ中にコピーされます。 ときに、`href`引数が指定されて、`usedList`引数が省略可能、およびビットマップ ストリップ内のすべてのスロットが使用されると見なされます。  
   
@@ -42,7 +37,7 @@ ms.locfileid: "51755874"
   
 - {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
-- {0x6d484634、0xe53d、0x4a2c、{0xad、0xcb、0x55、0x14、0x5c、0x93、数 0x62、0xc8}}  
+- { 0x6d484634, 0xe53d, 0x4a2c, { 0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8 } }  
   
   XML コメントを使用する可能性がありますが、ラウンド トリップのグラフィカル ユーザー インターフェイス (GUI) ツールが破棄可能性があります。 内容\<注釈 > 要素の形式に関係なく保持することが保証されます。  
   
@@ -82,4 +77,3 @@ ms.locfileid: "51755874"
 ## <a name="see-also"></a>関連項目  
  [Vspackage がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Vspackage のコマンド ルーティング](../extensibility/internals/command-routing-in-vspackages.md)
-

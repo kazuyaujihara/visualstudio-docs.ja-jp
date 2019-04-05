@@ -1,12 +1,9 @@
 ---
 title: レイヤー図を使用したコードの検証 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, validating
 - validation, layer diagrams
@@ -23,13 +20,13 @@ ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792165"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976949"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>レイヤー図を使用したコードの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ ms.locfileid: "51792165"
   
   この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
-  Visual Studio で開いているレイヤー図から、またはコマンド プロンプトから、コードを手動で検証できます。 ローカル ビルドまたは Team Foundation ビルドの実行時に、コードを自動的に検証することもできます。 参照してください[Channel 9 ビデオ: デザインとレイヤー図の使用によるアーキテクチャの検証](http://go.microsoft.com/fwlink/?LinkID=252073)です。  
+  Visual Studio で開いているレイヤー図から、またはコマンド プロンプトから、コードを手動で検証できます。 ローカル ビルドまたは Team Foundation ビルドの実行時に、コードを自動的に検証することもできます。 参照してください[Channel 9 ビデオ。設計し、レイヤー図の使用によるアーキテクチャの検証](http://go.microsoft.com/fwlink/?LinkID=252073)です。  
   
 > [!IMPORTANT]
 >  Team Foundation ビルドを使用してレイヤー検証を実行する場合は、ビルド サーバーに同じバージョンの Visual Studio をインストールすることも必要です。  
@@ -97,14 +94,14 @@ ms.locfileid: "51792165"
     > [!NOTE]
     >  既定で、**ビルド アクション**、レイヤー図 (.layerdiagram) ファイルのプロパティに設定されて**検証**検証プロセスで、ダイアグラムが含まれるようにします。  
   
-     **エラー一覧**ウィンドウが発生したエラーを報告します。 検証エラーに関する詳細については、[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)を参照してください。  
+     **エラー一覧**ウィンドウが発生したエラーを報告します。 検証エラーに関する詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。  
   
 2.  各エラーのソースを表示するでエラーをダブルクリックして、**エラー一覧**ウィンドウ。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、エラーのソースの代わりにコード マップが表示されることがあります。 これは、レイヤー図で指定されていないアセンブリ上にコードの依存関係があるか、レイヤー図で指定された依存関係がコードにない場合に起こります。 コード マップまたはコードをレビューし、依存関係が必要であるかどうかを検証してください。 コード マップの詳細については、[ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)を参照してください。  
+    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、エラーのソースの代わりにコード マップが表示されることがあります。 これは、レイヤー図で指定されていないアセンブリ上にコードの依存関係があるか、レイヤー図で指定された依存関係がコードにない場合に起こります。 コード マップまたはコードをレビューし、依存関係が必要であるかどうかを検証してください。 コード マップの詳細については、次を参照してください。[ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)します。  
   
-3.  エラーを管理するには、[検証エラーを管理](#ManageErrors)を参照してください。  
+3.  エラーを管理するには、次を参照してください。[検証エラーを管理](#ManageErrors)します。  
   
 #### <a name="to-validate-code-at-the-command-prompt"></a>コマンド プロンプトでコードを検証するには  
   
@@ -142,7 +139,7 @@ ms.locfileid: "51792165"
   
      発生したすべてのエラーが表示されます。 詳細については[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]を参照してください[MSBuild](../msbuild/msbuild.md)と[MSBuild タスク](../msbuild/msbuild-task.md)します。  
   
-   検証エラーに関する詳細については、[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)を参照してください。  
+   検証エラーに関する詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。  
   
 ###  <a name="ManageErrors"></a> 検証エラーを管理します。  
  開発プロセスの実行中は、検証時に報告される一部の競合を抑制できます。 たとえば、既に解決したエラーや特定のシナリオに関連しないエラーを抑制できます。 エラーを抑制した場合は、[!INCLUDE[esprfound](../includes/esprfound-md.md)] で作業項目をログに記録することをお勧めします。  
@@ -188,7 +185,7 @@ ms.locfileid: "51792165"
   
     これには、検証プロセス内のレイヤー図が含まれます。  
   
-   エラー一覧 ウィンドウでエラーを管理するには、[検証エラーの管理](#ManageErrors)を参照してください。  
+   エラー一覧 ウィンドウでエラーを管理するには、次を参照してください。[検証エラーの管理](#ManageErrors)します。  
   
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Team Foundation ビルド時にコードを自動的に検証するには  
   
@@ -198,7 +195,7 @@ ms.locfileid: "51792165"
   
     `/p:ValidateArchitecture=true`  
   
-   検証エラーに関する詳細については、[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)を参照してください。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] の詳細については、以下のトピックを参照してください。  
+   検証エラーに関する詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] の詳細については、以下のトピックを参照してください。  
   
 -   [アプリケーションのビルド](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
@@ -211,7 +208,7 @@ ms.locfileid: "51792165"
 -   [実行中のビルドの進行状況の監視](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
 ##  <a name="TroubleshootingValidation"></a> レイヤー検証に関する問題をトラブルシューティングします。  
- レイヤー検証に関する問題とその解決方法について、次の表で説明します。 これらの問題は、コードと設計の間の競合によって発生するエラーとは異なります。 これらのエラーの詳細については、[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)を参照してください。  
+ レイヤー検証に関する問題とその解決方法について、次の表で説明します。 これらの問題は、コードと設計の間の競合によって発生するエラーとは異なります。 これらのエラーの詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。  
   
 |**問題点**|**考えられる原因**|**解決策**|  
 |---------------|------------------------|--------------------|  
@@ -237,17 +234,14 @@ ms.locfileid: "51792165"
   
 |**エラーの構文**|**エラーの説明**|  
 |----------------------|---------------------------|  
-|Av 0001: 無効な依存関係: *Artifact1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> レイヤー: *LayerName1*、 *LayerName2* &#124;依存関係: *DependencyType*|*アイテム 1*で*LayerName1*依存関係のない*Artifact2*で*LayerName2*ため*LayerName1*直接の依存関係を持たない*LayerName2*します。|  
-|Av 1001: 無効な Namespace:*成果物*<br /><br /> レイヤー: *LayerName* &#124; Namespace に必要な: *NamespaceName1* &#124;現在 Namespace: *NamespaceName2*|*LayerName* 、関連する成果物がする必要がありますに属していることが必要です。 *NamespaceName1*します。 *成果物*に*NamespaceName2*ではなく、 *NamespaceName1*します。|  
-|AV1002: 禁止された Namespace によって異なります*Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)。<br /><br /> レイヤー: *LayerName* &#124; Namespace は禁止されています: *NamespaceName* &#124;依存関係: *DependencyType*|*LayerName*に、関連する成果物が依存する必要がありますしないことが必要です。 *NamespaceName*します。 *アイテム 1*に依存できない*Artifact2*ため*Artifact2*に*NamespaceName*します。|  
-|AV1003: で禁止されている Namespace:*成果物*(*ArtifactType*)<br /><br /> レイヤー: *LayerName* &#124; Namespace は禁止されています: *NamespaceName*|*LayerName* 、関連する成果物できませんに属していることが必要です。 *NamespaceName*します。 *成果物*に属している*NamespaceName*します。|  
-|Av 3001: 不足しているリンク: のレイヤー '*LayerName*'へのリンク'*成果物*' が見つかりません。 アセンブリ参照が存在することを確認してください。|*LayerName*見つけることのできない成果物へのリンク。 たとえば、モデリング プロジェクトでクラスを含むアセンブリへの参照が欠落しているために、クラスへのリンクが欠落している場合があります。|  
-|AV9001: アーキテクチャの検証で内部エラーが検出されました。 結果が不完全である可能性があります。 詳細については、ビルド イベント ログの詳細または出力ウィンドウを参照してください。|詳細については、ビルド イベント ログまたは出力ウィンドウを参照してください。|  
+|AV0001:無効な依存関係:*Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> レイヤー:*LayerName1*、 *LayerName2* &#124;依存関係。*DependencyType*|*アイテム 1*で*LayerName1*依存関係のない*Artifact2*で*LayerName2*ため*LayerName1*直接の依存関係を持たない*LayerName2*します。|  
+|AV1001:無効な Namespace:*成果物*<br /><br /> レイヤー:*LayerName* &#124; Namespace が必要です。*NamespaceName1* &#124;現在 Namespace:*NamespaceName2*|*LayerName* 、関連する成果物がする必要がありますに属していることが必要です。 *NamespaceName1*します。 *成果物*に*NamespaceName2*ではなく、 *NamespaceName1*します。|  
+|AV1002:禁止された Namespace によって異なります。*Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> レイヤー:*LayerName* &#124; Namespace は禁止されています。*NamespaceName* &#124;依存関係。*DependencyType*|*LayerName*に、関連する成果物が依存する必要がありますしないことが必要です。 *NamespaceName*します。 *アイテム 1*に依存できない*Artifact2*ため*Artifact2*に*NamespaceName*します。|  
+|AV1003:で禁止されている Namespace:*成果物*(*ArtifactType*)<br /><br /> レイヤー:*LayerName* &#124; Namespace は禁止されています。*NamespaceName*|*LayerName* 、関連する成果物できませんに属していることが必要です。 *NamespaceName*します。 *成果物*に属している*NamespaceName*します。|  
+|AV3001:不足しているリンク:レイヤー '*LayerName*'へのリンク'*成果物*' が見つかりません。 アセンブリ参照が存在することを確認してください。|*LayerName*見つけることのできない成果物へのリンク。 たとえば、モデリング プロジェクトでクラスを含むアセンブリへの参照が欠落しているために、クラスへのリンクが欠落している場合があります。|  
+|AV9001:アーキテクチャの分析には、内部エラーが検出されました。 結果が不完全である可能性があります。 詳細については、ビルド イベント ログの詳細または出力ウィンドウを参照してください。|詳細については、ビルド イベント ログまたは出力ウィンドウを参照してください。|  
   
 ## <a name="security"></a>セキュリティ  
   
 ## <a name="see-also"></a>関連項目  
  [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)
-
-
-

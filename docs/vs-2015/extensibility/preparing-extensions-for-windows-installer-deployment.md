@@ -1,26 +1,21 @@
 ---
 title: Windows インストーラーの配置の拡張機能の準備 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - vsix msi
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90dc7fb0ca361e6c1994cfd7108b171cda2ad1f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 9576b220ed3624ee1ee5dbf83630affc38041231
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755104"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978295"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Windows インストーラーの配置に関する拡張機能を準備する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Windows インストーラー パッケージ (MSI) を使用して、VSIX パ�
   
 2.  VSIX マニフェスト、コード エディターで開きます。  
   
-3.  VSIX マニフェストの InstalledByMsi 要素設定`true`します。 VSIX マニフェストの詳細については、[VSIX 拡張機能スキーマ 2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)を参照してください。  
+3.  VSIX マニフェストの InstalledByMsi 要素設定`true`します。 VSIX マニフェストの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)します。  
   
      これは、VSIX インストーラーが、コンポーネントをインストールしようとすることを防ぎます。  
   
@@ -62,6 +57,5 @@ Windows インストーラー パッケージ (MSI) を使用して、VSIX パ�
 5.  セットアップ プロジェクトに、残りのファイルを追加します。  
   
 ## <a name="see-also"></a>関連項目  
- [Visual Studio インストーラーの配置](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [チュートリアル: カスタム アクションの作成](http://msdn.microsoft.com/en-us/4bd4b63a-2b91-431e-839c-5752443f0eaf)
-
+ [Visual Studio インストーラーの配置](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   
+ [チュートリアル: カスタム アクションを作成します。](http://msdn.microsoft.com/4bd4b63a-2b91-431e-839c-5752443f0eaf)

@@ -1,25 +1,22 @@
 ---
 title: テキスト テンプレート変換プロセス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
 ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203776"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977493"
 ---
 # <a name="the-text-template-transformation-process"></a>テキスト テンプレート変換プロセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,6 +65,3 @@ ms.locfileid: "49203776"
  `<#@ import namespace="System.Text" #>`  
   
  標準のディレクティブ プロセッサでは、これに変換します、`using`生成された変換クラス内のステートメント。 使用することができますし、`StringBuilder`として修飾しなくても、テンプレート コードの残りの部分でクラス`System.Text.StringBuilder`します。
-
-
-

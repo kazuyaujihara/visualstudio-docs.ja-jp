@@ -1,26 +1,21 @@
 ---
 title: ソース管理の統合の概要 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2c4961f7c67fe8d135b97cbcb137d32b2de44214
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 808d7538e8b30e346464cdbeff3b80ae4d387612
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977112"
 ---
 # <a name="source-control-integration-overview"></a>ソース管理の統合の概要
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "51761525"
   
 1. 指定された関数を実装する DLL を作成する[ソース管理プラグイン](../../extensibility/source-control-plug-ins.md)します。  
   
-2. DLL を登録するには、適切なレジストリ エントリを作成する (で説明されている[方法: ソース管理のプラグインをインストール](../../extensibility/internals/how-to-install-a-source-control-plug-in.md))。  
+2. DLL を登録するには、適切なレジストリ エントリを作成する (で説明されている[方法。ソース管理プラグインをインストール](../../extensibility/internals/how-to-install-a-source-control-plug-in.md))。  
   
 3. UI と表示のソース管理アダプター パッケージ (ソース管理プラグインを使用してソース管理機能を処理する Visual Studio コンポーネント) のメッセージが表示されたら、ヘルパーを作成します。  
   
@@ -85,4 +80,3 @@ ms.locfileid: "51761525"
  [ソース管理プラグインの作成](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [ソース管理 VSPackage を作成します。](../../extensibility/internals/creating-a-source-control-vspackage.md)   
  [ソース管理の新機能](../../extensibility/internals/what-s-new-in-source-control.md)
-

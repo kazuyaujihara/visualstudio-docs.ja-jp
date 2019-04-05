@@ -1,24 +1,19 @@
 ---
 title: VSIXLanguagePack 要素 (VSIX 言語パックのスキーマ) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 556b701f0a1dbc348fef53273379586f7a0dba2c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7b4ba4e98b8b2d42485a7594d5bab658e1bd6ccb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744183"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975913"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>VSIXLanguagePack 要素 (VSIX 言語パックのスキーマ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ ms.locfileid: "51744183"
 |[LocalizedName 要素](../extensibility/localizedname-element-vsix-language-pack-schema.md)|必須。 拡張機能のインストールのローカライズされた名前。|  
 |[LocalizedDescription 要素](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|必須。 拡張機能のインストールのローカライズされた説明。|  
 |[MoreInfoURL 要素](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|任意。 拡張機能のローカライズされた情報へのリンク。|  
-|[License 要素](../extensibility/license-element-vsix-language-pack-schema.md)|任意。 ローカライズされたバージョンの拡張機能のライセンス ファイルのパス。|  
+|[License 要素](../extensibility/license-element-vsix-language-pack-schema.md)|省略可能です。 ローカライズされたバージョンの拡張機能のライセンス ファイルのパス。|  
   
 ### <a name="parent-elements"></a>親要素  
   
@@ -78,5 +73,4 @@ ms.locfileid: "51744183"
 ## <a name="see-also"></a>関連項目  
  [VSX 言語パックのスキーマ リファレンス](../extensibility/vsx-language-pack-schema-reference.md)   
  [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)   
- [VSIX 拡張機能スキーマ 1.0 リファレンス](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-
+ [VSIX 拡張機能スキーマ 1.0 リファレンス](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
