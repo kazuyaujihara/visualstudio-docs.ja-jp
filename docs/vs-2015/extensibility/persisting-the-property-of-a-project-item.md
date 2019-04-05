@@ -1,27 +1,22 @@
 ---
 title: プロジェクト項目のプロパティを永続化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 149ffa4fd0f4847cffbba915fc1d2714234ce792
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ccb468c5eca88207594a66d956717caf260666db
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745265"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973843"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>プロジェクト項目のプロパティの保存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,7 +126,7 @@ ms.locfileid: "51745265"
 3.  ブレークポイントを使用して、またはそれ以外の場合、VSPackage が読み込まれていると、SetItemAttribute が実行されることを確認します。  
   
     > [!NOTE]
-    >  UI のコンテキストで VSPackage を自動読み込みを実行できます<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>します。 詳細については、[Vspackage の読み込み](../extensibility/loading-vspackages.md)を参照してください。  
+    >  UI のコンテキストで VSPackage を自動読み込みを実行できます<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>します。 詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。  
   
 4.  閉じる[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]し、メモ帳でプロジェクト ファイルを開きます。 表示する必要があります、\<作成者 > 次のように、値は、Tom タグします。  
   
@@ -143,4 +138,3 @@ ms.locfileid: "51745265"
   
 ## <a name="see-also"></a>関連項目  
  [カスタム ツール](../extensibility/internals/custom-tools.md)
-

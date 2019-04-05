@@ -1,14 +1,9 @@
 ---
-title: '1058: 型は一定の基本型を拡張するありません |Microsoft Docs'
-ms.custom: ''
+title: CA1058:種類は一定の基本型を拡張する必要がありません |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - TypesShouldNotExtendCertainBaseTypes
 - CA1058
@@ -20,21 +15,21 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0a4ffbe3b359f2c58f8e301b9176981a2037c17f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c5bb40bdf552e78ecae49bfa0b78c6aa403160d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912436"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973524"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: 型は、一定の基本型を拡張することはできません
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058:型は、一定の基本型を拡張することはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
@@ -93,6 +88,3 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  詳細についてはこの規則違反の警告を抑制しないでください<xref:System.ApplicationException>します。 この規則違反の警告を抑制するには、安全では<xref:System.Xml.XmlDocument>します。 コードが以前にリリースされた場合は、非ジェネリック コレクションについて警告を抑制しても安全です。
-
-
-

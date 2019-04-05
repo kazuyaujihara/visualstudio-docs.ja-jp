@@ -1,25 +1,22 @@
 ---
 title: ドメイン プロパティ値変更ハンドラー |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 ms.assetid: 96d8f392-045e-4bc5-b165-fbaa470a3e16
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7b79220a82ce2afc3cbafebedfbfea0c9caa649f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ad8cc11947bdaa99fa7d3ee1d48576896859e598
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232727"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59001038"
 ---
 # <a name="domain-property-value-change-handlers"></a>ドメイン プロパティ値変更ハンドラー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +94,7 @@ if (newValue > 10)
   
 ```  
   
-### <a name="alternative-technique-calculated-properties"></a>代替手法: 計算されるプロパティ  
+### <a name="alternative-technique-calculated-properties"></a>代替手法:計算のプロパティ  
  前述の例は OnValueChanged() を使用して、あるドメイン プロパティから別のドメイン プロパティへ値を伝達する方法を示しています。 各プロパティは独自の格納値を持っています。  
   
  代わりに、派生したプロパティを Calculated property として定義することを検討できます。 その場合、プロパティは独自のストレージを持たず、値が必要になるときに常に関数が評価されることを定義しています。 詳細については、[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)を参照してください。  
@@ -106,7 +103,7 @@ if (newValue > 10)
   
  ただし、計算されるプロパティの潜在的な欠点は、値が使用されるたびに式が評価されるため、パフォーマンスの問題が生じる可能性があることです。 また、計算されるプロパティに OnValueChanging() および OnValueChanged() はありません。  
   
-### <a name="alternative-technique-change-rules"></a>代替手法: 変更規則  
+### <a name="alternative-technique-change-rules"></a>代替手法:ルールを変更  
  ChangeRule を定義した場合、プロパティの値が変更されるトランザクションの最後に実行されます。  詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
   
  1 つのトランザクション内で複数の変更があった場合、ChangeRule はそれらすべてが完了したときに実行されます。 一方、的に、OnValue. メソッドは一部の変更が行われないときに実行されます。 目的に応じて、ChangeRule が適切である場合があります。  
@@ -177,6 +174,3 @@ namespace msft.FieldChangeSample
   }  
 }  
 ```  
-  
-
-
