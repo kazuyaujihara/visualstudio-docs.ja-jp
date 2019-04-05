@@ -1,14 +1,9 @@
 ---
 title: '方法: Visual Studio ソリューションの一環いない実行可能ファイルのデバッグ |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,20 +21,20 @@ ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a7fb9b0a31f078ce197851bccb1f4c85f24408a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798665"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974562"
 ---
-# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>方法 : Visual Studio ソリューションに含まれていない実行可能ファイルをデバッグする
+# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>方法: Visual Studio ソリューションの一環いない実行可能ファイルのデバッグします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトに含まれない実行可能ファイルをデバッグすることが必要な場合もあります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の外部で作成された実行可能ファイルや、他の人から受け取った実行可能ファイルなどがその例です。  
   
- この問題を解決するには、通常、Visual Studio 外部の実行可能ファイルを起動して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッガーを使用してそのファイルにアタッチします。 詳細については、[実行中のプロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)を参照してください。  
+ この問題を解決するには、通常、Visual Studio 外部の実行可能ファイルを起動して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッガーを使用してそのファイルにアタッチします。 詳細については、次を参照してください。[実行中のプロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)します。  
   
  アプリケーションへのアタッチは、一部を手動で実行する必要があります。この処理には数秒かかります。 アプリケーションの起動時に発生する問題をデバッグする場合は、このわずかな遅延のため、アタッチが役に立ちません。 また、ユーザー入力を待たず、すぐに終了するプログラムをデバッグする場合は、アタッチしている時間がないこともあります。 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] がインストールされている場合は、このようなプログラムの EXE プロジェクトを作成できます。  
   
@@ -73,7 +68,4 @@ ms.locfileid: "51798665"
 ## <a name="see-also"></a>関連項目  
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)   
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
- [DBG ファイル](http://msdn.microsoft.com/en-us/91e449e9-8b65-4123-960f-2107cd1f1cfd)
-
-
-
+ [DBG ファイル](http://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)

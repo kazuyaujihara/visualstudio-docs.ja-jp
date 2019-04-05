@@ -1,14 +1,9 @@
 ---
 title: インターフェイスの抽出リファクタリング (c#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
 dev_langs:
@@ -20,20 +15,20 @@ ms.assetid: 7d0aa225-3b33-4331-9652-5a67cac6f3d0
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: e7c3af675155cf3d47d82457aadbfb6327895d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: e59864cabf638f4525165ed4f31c42fff748bf26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279904"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974133"
 ---
 # <a name="extract-interface-refactoring-c"></a>インターフェイスの抽出リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 インターフェイスの抽出は、既存のクラス、構造体、またはインターフェイスから発信されたメンバーを持つ新しいインターフェイスを作成する簡単な方法を提供するリファクタリング操作です。  
   
- いくつかのクライアントが同じクラス、構造体、またはインターフェイス メンバーのサブセットを使用する場合、または複数のクラス、構造体、またはインターフェイス メンバーのサブセットを共通のあるときに、インターフェイス内のメンバーのサブセットを具現化すると便利ですができます。 詳細については、インターフェイスを使用して、[インターフェイス](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)を参照してください。  
+ いくつかのクライアントが同じクラス、構造体、またはインターフェイス メンバーのサブセットを使用する場合、または複数のクラス、構造体、またはインターフェイス メンバーのサブセットを共通のあるときに、インターフェイス内のメンバーのサブセットを具現化すると便利ですができます。 詳細については、インターフェイスを使用して、次を参照してください。[インターフェイス](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)します。  
   
  インターフェイスの抽出では、新しいファイルにインターフェイスが生成され、新しいファイルの先頭にカーソルを位置付けます。 新しいインターフェイスや、新しいインターフェイスでの名前を使用して、生成されたファイルの名前を抽出するメンバーを指定することができます、**インターフェイスの抽出** ダイアログ ボックス。  
   

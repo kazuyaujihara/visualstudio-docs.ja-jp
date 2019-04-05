@@ -1,26 +1,21 @@
 ---
 title: 'チュートリアル: 対応するかっこの表示 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9795cd3c40eeff714d55f4bb95f78cf1f7f8aea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745887"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977304"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>チュートリアル: 対応するかっこの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51745887"
   
 1.  エディター分類子プロジェクトを作成します。 ソリューション `BraceMatchingTest`の名前を指定します。  
   
-2.  エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、[エディターの項目テンプレートを使用した拡張機能の作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)を参照してください。  
+2.  エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能の作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)です。  
   
 3.  既存のクラス ファイルを削除します。  
   
@@ -130,5 +125,4 @@ ms.locfileid: "51745887"
 4.  始め中かっこの前にキャレットを配置すると、その中かっこと一致する、閉じるかっこの両方を強調する必要があります。 閉じる中かっこの直後後にカーソルを配置すると、その中かっこと一致する始めかっこの両方を強調する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

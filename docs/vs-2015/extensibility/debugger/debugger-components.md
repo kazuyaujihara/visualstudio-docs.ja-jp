@@ -1,14 +1,9 @@
 ---
 title: デバッガーのコンポーネント |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], components
 - components [Visual Studio SDK], debugging
@@ -16,30 +11,30 @@ helpviewer_keywords:
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: aabd6311212b866b9171758c8bec39e3beebbfea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 12f865e7d4c44cfa4002b330ed85ec95f95a8ef9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977653"
 ---
 # <a name="debugger-components"></a>デバッガーのコンポーネント
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッガーは、VSPackage として実装され、全体のデバッグ セッションを管理します。 デバッグ セッションには、次の要素が構成されています。  
   
-- **パッケージのデバッグ:** 、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッガーがデバッグ中に関係なく同じユーザー インターフェイスを提供します。  
+- **パッケージをデバッグするには。**[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッガーがデバッグ中に関係なく同じユーザー インターフェイスを提供します。  
   
-- **セッション デバッグ マネージャー (SDM):** に一貫性のあるプログラム インターフェイスを提供、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]さまざまなデバッグ エンジンの管理用のデバッガーです。 によって実装されている[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
+- **セッション デバッグ マネージャー (SDM):** 一貫性のあるプログラム インターフェイスを提供します、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]さまざまなデバッグ エンジンの管理用のデバッガーです。 によって実装されている[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
   
-- **プロセス デバッグ マネージャー (PDM):** 管理、実行中のすべてのインスタンスの[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、またはデバッグ中のすべてのプログラムの一覧。 によって実装されている[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
+- **プロセス デバッグ マネージャー (PDM):** 実行中のすべてのインスタンスの管理、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、またはデバッグ中のすべてのプログラムの一覧。 によって実装されている[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
   
-- **デバッグ エンジン (DE):** のデバッグ中のプログラムを監視、SDM を PDM は、実行中のプログラムの状態との相互作用のリアルタイム分析を提供するには、式エバリュエーターとシンボル プロバイダー、プログラムのメモリと変数の状態。 によって実装されます[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](の対応言語) と、独自のランタイムをサポートするサード パーティ ベンダー。  
+- **デバッグ エンジン (DE)。** デバッグ中のプログラムの監視を担当、SDM を PDM は、実行中のプログラムの状態を通信し、プログラムの実行用メモリの状態のリアルタイム分析を提供するには、式エバリュエーターとシンボル プロバイダーとの対話と変数。 によって実装されます[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](の対応言語) と、独自のランタイムをサポートするサード パーティ ベンダー。  
   
 - **式エバリュエーター (EE):** 変数と、プログラムが特定の時点で停止したときに、ユーザーが指定した式を動的に評価するためのサポートを提供します。 によって実装されます[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](の対応言語) とは自分の言語をサポートするサード パーティ ベンダー。  
   
-- **シンボル プロバイダー (SP):** とも呼ばれるシンボル ハンドラーでは、プログラムのデバッグ シンボルにマップ、プログラムの実行中のインスタンス (ソース コード レベルのデバッグ、式の評価) など意味のある情報を提供できるようにします。 によって実装されている[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](共通言語ランタイム [CLR] のシンボルと [PDB] プログラム データベース シンボル ファイルの形式)、デバッグ情報を保存する独自の専用メソッドを持つサード パーティ ベンダー。  
+- **シンボル プロバイダー (SP):** 呼ばれますシンボル ハンドラーでは、マップ、プログラムのデバッグ シンボル、プログラムの実行中のインスタンス (ソース コード レベルのデバッグや式の評価) 意味のある情報を提供できるようにします。 によって実装されている[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](共通言語ランタイム [CLR] のシンボルと [PDB] プログラム データベース シンボル ファイルの形式)、デバッグ情報を保存する独自の専用メソッドを持つサード パーティ ベンダー。  
   
   次の図は、Visual Studio デバッガーのこれらの要素間の関係を示します。  
   
@@ -81,5 +76,4 @@ ms.locfileid: "51797495"
  プログラムを起動して、式の評価などのさまざまなデバッグ タスクへのリンクが含まれています。  
   
 ## <a name="see-also"></a>関連項目  
- [はじめに](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
-
+ [作業の開始](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

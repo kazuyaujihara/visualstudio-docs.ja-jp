@@ -1,26 +1,21 @@
 ---
 title: ソリューションの構成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53d8e3d33a81e20d553e6a5c97eb6e6f33339079
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: eb14a2031b89f2a7deeb7d98cc483e90125b1905
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801610"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975167"
 ---
 # <a name="solution-configuration"></a>ソリューション構成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +25,11 @@ ms.locfileid: "51801610"
  標準の Visual Studio ツールバーには、[スタート] ボタンとソリューション構成ドロップダウンを [スタート] ボタンの右側が含まれています。 この一覧では、f5 キーが押されたときに開始する構成を選択して、独自のソリューション構成を作成または既存の構成を編集することができます。  
   
 > [!NOTE]
->  機能拡張インターフェイスを作成またはソリューション構成を編集することはありません。 使用する必要があります`DTE.SolutionBuilder`します。 ただし、ソリューションのビルドを管理するの拡張性 Api があります。 詳細については、「 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2> 」を参照してください。  
+>  機能拡張インターフェイスを作成またはソリューション構成を編集することはありません。 使用する必要があります`DTE.SolutionBuilder`します。 ただし、ソリューションのビルドを管理するの拡張性 Api があります。 詳細については、「<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>」を参照してください。  
   
  次に、プロジェクトの種類でサポートされるソリューション構成を実装する方法を示します。  
   
-- プロジェクト  
+- Project  
   
    現在のソリューションに存在するプロジェクトの名前が表示されます。  
   
@@ -56,7 +51,7 @@ ms.locfileid: "51801610"
   
    現在のソリューション構成でプロジェクトをビルドするかどうかを指定します。 プロジェクトの依存関係が含まれているにもかかわらず、ソリューション レベルのビルド コマンドを呼び出すときに、選択されていないプロジェクトはビルドされません。 プロジェクトをビルドするのには選択されていないはまだデバッグ、実行、パッケージ化、およびソリューションの展開に含まれます。  
   
-- 配置  
+- デプロイ  
   
    選択したソリューションのビルド構成とスタートまたは Deploy コマンドを使う場合にプロジェクトを配置するかどうかを指定します。 このフィールドのチェック ボックスを使用できるは、プロジェクトは、実装することによって展開をサポートしている場合になります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>インターフェイスをその<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>オブジェクト。  
   
@@ -66,4 +61,3 @@ ms.locfileid: "51801610"
  [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)   
  [ビルドするためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)   
  [プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)
-

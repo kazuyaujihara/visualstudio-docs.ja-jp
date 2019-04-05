@@ -1,28 +1,23 @@
 ---
 title: '方法: エディターのコンテキストを提供 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - provide context
 ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 60ce6535375e79f7fef7fe25ef6a8381a02b0ad5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 8a74acbcf3da16d7b8e2ac68e761719a6192a2b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778385"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963837"
 ---
-# <a name="how-to-provide-context-for-editors"></a>方法: エディターのコンテキストを提供
+# <a name="how-to-provide-context-for-editors"></a>方法: エディターのコンテキストを提供します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 エディターのコンテキストは、エディターにフォーカスがあるか、ツール ウィンドウにフォーカスが移動された直前にフォーカスがあった場合にのみアクティブです。 次の手順に従って、エディターのコンテキストを行うことができます。  
@@ -33,7 +28,7 @@ ms.locfileid: "51778385"
   
 3. バッグ内のコンテキストを維持します。  
   
-   これらのタスクは、次の手順で説明します。 コンテキストを提供する詳細については、**堅牢なプログラミング**このトピックで後述を参照してください。  
+   これらのタスクは、次の手順で説明します。 コンテキストを提供する詳細については、次を参照してください。**堅牢なプログラミング**このトピックで後述します。  
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>エディターまたはデザイナーのコンテキスト バッグを作成するには  
   
@@ -98,4 +93,3 @@ ms.locfileid: "51778385"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx>
-

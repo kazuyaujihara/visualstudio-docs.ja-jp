@@ -1,14 +1,9 @@
 ---
 title: '方法: 混合モードでデバッグ |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,15 +18,15 @@ ms.assetid: 2859067d-7fcc-46b0-a4df-8c2101500977
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b6ee85e5822d4792046c755c85d699dd6a9a5d26
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 9939c3eef0c2037e02c23573e246dd12d8934a3c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976607"
 ---
-# <a name="how-to-debug-in-mixed-mode"></a>方法 : 混合モードでデバッグする
+# <a name="how-to-debug-in-mixed-mode"></a>方法: 混合モードでデバッグします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、マネージド コードとネイティブ コードの両方をデバッグする方法について説明します。これは、混合モード デバッグとも呼ばれます。 DLL またはアプリケーションがネイティブ コードで記述されているかどうかによって、2 つのデバッグ シナリオがあります。  
@@ -41,20 +36,17 @@ ms.locfileid: "51737158"
 -   DLL を呼び出す呼び出し元のアプリケーションがマネージド コードで記述され、DLL がネイティブ コードで記述されている。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ### <a name="to-enable-mixed-mode-debugging"></a>混合モードのデバッグを有効にするには  
   
 1.  **ソリューション エクスプ ローラー**プロジェクトを選択します。  
   
-2.  **ビュー**  メニューのをクリックして**プロパティ ページ**します。  
+2.  **[表示]** メニューの **[プロパティ ページ]** をクリックします。  
   
 3.  **\<プロジェクト > プロパティ ページ** ダイアログ ボックスで、展開、**構成プロパティ**ノードをクリックして**デバッグ**します。  
   
-4.  設定**デバッガーの種類**に**混合**または**自動**します。  
+4.  **[デバッガーの種類]** を **[混合]** または **[自動]** に設定します。  
   
 ## <a name="see-also"></a>関連項目  
- [方法 : DLL プロジェクトからデバッグする](../debugger/how-to-debug-from-a-dll-project.md)
-
-
-
+ [方法: DLL プロジェクトからデバッグする](../debugger/how-to-debug-from-a-dll-project.md)

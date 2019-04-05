@@ -1,14 +1,9 @@
 ---
 title: ツール ウィンドウのショートカット メニューを追加する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
 - menus, context menus
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 179a103475a47be95cbf45f88640b8a635a7ff34
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5587c559615bcf6ae17a445490951c32741086c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796221"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977560"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>ツール ウィンドウへのショートカット メニューの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,14 +29,14 @@ ms.locfileid: "51796221"
   
  このチュートリアルでは、Visual Studio のメニューとして、.vsct ファイルでのメニュー項目を宣言し、ツール ウィンドウを定義するクラスで実装する Managed Package Framework を使用してショートカット メニューを作成する方法を示します。 このアプローチには、Visual Studio コマンド、UI 要素、およびオートメーション オブジェクト モデルへのアクセスが容易になります。  
   
- また場合、ショートカット メニューでは、Visual Studio の機能はアクセスできませんが、使用できます、<xref:System.Windows.FrameworkElement.ContextMenu%2A>ユーザー コントロール内の XAML 要素のプロパティ。 詳細については、[ContextMenu](http://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d)を参照してください。  
+ また場合、ショートカット メニューでは、Visual Studio の機能はアクセスできませんが、使用できます、<xref:System.Windows.FrameworkElement.ContextMenu%2A>ユーザー コントロール内の XAML 要素のプロパティ。 詳細については、次を参照してください。 [ContextMenu](http://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d)します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
   
 ## <a name="creating-the-tool-window-shortcut-menu-package"></a>ツール ウィンドウのショートカット メニューのパッケージを作成します。  
   
-1.  という名前の VSIX プロジェクトを作成する`TWShortcutMenu`というツール ウィンドウのテンプレートを追加および**ショートカット メニュー**にします。 ツール ウィンドウの作成の詳細については、[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。  
+1.  という名前の VSIX プロジェクトを作成する`TWShortcutMenu`というツール ウィンドウのテンプレートを追加および**ショートカット メニュー**にします。 ツール ウィンドウの作成の詳細については、次を参照してください。[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。  
   
 ## <a name="specifying-the-shortcut-menu"></a>ショートカット メニューを指定します。  
  このチュートリアルで示すように、ユーザーができるようになどのショートカット メニューは、ツール ウィンドウの背景の塗りつぶしに使用される色の一覧から選択します。  
@@ -286,4 +281,3 @@ ms.locfileid: "51796221"
 ## <a name="see-also"></a>関連項目  
  [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)   
  [サービスの使用と提供](../extensibility/using-and-providing-services.md)
-

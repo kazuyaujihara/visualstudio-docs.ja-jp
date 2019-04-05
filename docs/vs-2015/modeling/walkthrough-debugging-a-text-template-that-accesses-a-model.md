@@ -1,23 +1,20 @@
 ---
 title: 'チュートリアル: モデルにアクセスするテキスト テンプレートのデバッグ |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: af46a7fe-6b98-4d3d-b816-0bbf8e81e220
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976843"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>チュートリアル: モデルにアクセスするテキスト テンプレートのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,20 +22,20 @@ ms.locfileid: "49924890"
 変更またはドメイン固有言語ソリューションでテキスト テンプレートを追加するときに、エンジンのソース コードに、または、生成されたコードをコンパイル時にテンプレートを変換するときにエラーが発生する可能性があります。 次のチュートリアルでは、テキスト テンプレートをデバッグすることの一部を示します。  
   
 > [!NOTE]
->  を一般に、テンプレート文字列の詳細についてを参照してください[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートのデバッグの詳細については、[チュートリアル: テキスト テンプレートのデバッグ](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)を参照してください。  
+>  を一般に、テンプレート文字列の詳細についてを参照してください[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートのデバッグの詳細については、次を参照してください。[チュートリアル。テキスト テンプレートのデバッグ](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)します。  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションを作成します。  
  この手順では、次の特性を持つドメイン固有言語ソリューションを作成します。  
   
-- 名前: DebuggingTestLanguage  
+- 名前:DebuggingTestLanguage  
   
-- ソリューション テンプレート: 最小言語  
+- ソリューション テンプレート:最小言語  
   
 - ファイル拡張子: .ddd  
   
-- 会社名: Fabrikam  
+- 会社名:Fabrikam Fiber Web サイト  
   
-  ドメイン固有言語ソリューションを作成する方法の詳細については、[方法: ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)を参照してください。  
+  ドメイン固有言語ソリューションを作成する方法の詳細については、次を参照してください。[方法。ドメイン固有言語ソリューションを作成する](../modeling/how-to-create-a-domain-specific-language-solution.md)」を参照してください。  
   
 ## <a name="creating-a-text-template"></a>テキスト テンプレートの作成  
  テキスト テンプレートをソリューションに追加します。  
@@ -164,11 +161,11 @@ ms.locfileid: "49924890"
   
      (C#)  
   
-     **変換をコンパイルして: Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation' 'ExampleModel' の定義が含まれていません**  
+     **変換をコンパイルします。Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation' 'ExampleModel' の定義が含まれていません**  
   
      (Visual Basic)  
   
-     **変換をコンパイルして: 'ExampleModel' のメンバーでない ' Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation'。**  
+     **変換をコンパイルします。'ExampleModel' のメンバーでない ' Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation'。**  
   
      ここでは、テキスト テンプレート コードには、正しくないプロパティ名が含まれています。 指定した`ExampleModel`名には、プロパティの名前が、適切なプロパティとして`LibraryModel`します。 適切なプロパティの名前を検索する、次のコードに示すように、パラメーターを提供します。  
   
@@ -216,6 +213,3 @@ ms.locfileid: "49924890"
 5.  **ソリューション エクスプ ローラー**DebugTest.tt を右クリックし、クリックして**カスタム ツールの実行**します。  
   
      これで、システムでは、テキスト テンプレート変換し、対応する出力ファイルを生成します。 内のエラーが表示されませんが、**エラー一覧**ウィンドウ。
-
-
-

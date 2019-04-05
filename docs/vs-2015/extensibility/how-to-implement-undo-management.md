@@ -1,28 +1,23 @@
 ---
 title: '方法: 元に戻す管理の実装 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
 ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f7eb3e3a1bbda905b2f5c5819835b10513d444fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 267cd5d5487bfb5f861143e3767c066330bff81e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806101"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974518"
 ---
-# <a name="how-to-implement-undo-management"></a>方法: 元に戻す管理の実装
+# <a name="how-to-implement-undo-management"></a>方法: 元に戻す管理を実装
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 元に戻すの管理に使用される主要なインターフェイスは<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>、環境によって実装されます。 元に戻す管理をサポートするには、実装元に戻す単位 (つまり、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>、複数の個々 のステップを含むことができます。  
@@ -87,5 +82,4 @@ ms.locfileid: "51806101"
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [方法: 元に戻すスタックをクリアする](../extensibility/how-to-clear-the-undo-stack.md)
-
+ [方法: 元に戻すスタックをクリアします。](../extensibility/how-to-clear-the-undo-stack.md)

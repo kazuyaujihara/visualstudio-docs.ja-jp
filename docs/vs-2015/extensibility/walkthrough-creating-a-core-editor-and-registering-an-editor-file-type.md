@@ -1,34 +1,29 @@
 ---
-title: 'チュートリアル: コア エディターを作成して、エディター ファイルの種類を登録する |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: コア エディターを作成してエディター ファイルの種類を登録する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1573709c7ef42e51454ca65103a6faeda78dcc1b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 9e900fa7d7bb65d5f55faab00c779247114278eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778710"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974915"
 ---
-# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>チュートリアル: コア エディターを作成して、エディター ファイルの種類を登録します。
+# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>チュートリアル: コア エディターを作成してエディター ファイルの種類を登録します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルを開始する VSPackage を作成する方法について説明、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .myext ファイル名拡張子を持つファイルがいつのコア エディターが読み込まれます。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。  
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio パッケージ プロジェクト テンプレートの場所  
  Visual Studio パッケージのプロジェクト テンプレートは、 **[新しいプロジェクト]** ダイアログの次の 3 つの場所にあります。  
@@ -41,7 +36,7 @@ ms.locfileid: "51778710"
   
 ### <a name="to-create-the-vspackage"></a>VSPackage を作成するには  
   
--   開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を作成し、[!INCLUDE[csprcs](../includes/csprcs-md.md)]という名前の VSPackage `MyPackage`」の説明に従って、[チュートリアル: メニュー コマンドの VSPackage を作成する](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32)します。  
+-   開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を作成し、[!INCLUDE[csprcs](../includes/csprcs-md.md)]という名前の VSPackage `MyPackage`」の説明に従って、[チュートリアル。メニュー コマンドの VSPackage を作成する](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32)します。  
   
 ### <a name="to-add-the-editor-factory"></a>エディター ファクトリを追加するには  
   
@@ -398,9 +393,8 @@ ms.locfileid: "51778710"
   
  VSPackage が呼び出すことができます、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]エディター ファクトリを指定することによって、コア エディター。 このエディターのファクトリは、それに関連付けられているファイルが読み込まれるたびに使用されます。 ファイルがプロジェクトの一部である場合は、し、コア エディターが自動的に起動、VSPackage によってオーバーライドされない限り、します。 ただし、プロジェクトの外側で、ファイルを読み込んだ場合、コア エディターする必要があります明示的に呼び出す、VSPackage によって。  
   
- コア エディターの詳細については、[のコア エディター内で](../extensibility/inside-the-core-editor.md)を参照してください。  
+ コア エディターの詳細については、次を参照してください。[のコア エディター内で](../extensibility/inside-the-core-editor.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [コア エディター内で](../extensibility/inside-the-core-editor.md)   
  [レガシ API を使用するコア エディターのインスタンス化](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)
-

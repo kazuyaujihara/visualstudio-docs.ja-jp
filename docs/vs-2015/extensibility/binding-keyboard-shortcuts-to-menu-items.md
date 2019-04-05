@@ -1,14 +1,9 @@
 ---
 title: メニュー項目にバインドのキーボード ショートカット |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - keyboard command
 - keyboards
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5fd5ab9b09956c41620947ad1bcf529550db4aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c799d2733c4deca07cdcbe087b1b694f9d1725e6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752903"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976655"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>キーボード ショートカットのメニュー項目へのバインド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ ms.locfileid: "51752903"
 2. 空の作成`<KeyBindings>`セクションの後に、`<Commands>`が存在しない場合。  
   
    > [!WARNING]
-   >  キー バインドの詳細については、[Keybinding](../extensibility/keybinding-element.md)を参照してください。  
+   >  キー バインドの詳細については、次を参照してください。 [Keybinding](../extensibility/keybinding-element.md)します。  
   
     `<KeyBindings>`セクションで、作成、`<KeyBinding>`エントリ。  
   
@@ -82,7 +77,7 @@ ms.locfileid: "51752903"
   
    ほとんどの状況で**Shift**文字の大文字または記号を入力するほとんどの英数字キー既にキーを押すと、ために、2 つ目の修飾子を指定せず使用できません必要があります。  
   
-   仮想キー コードに、たとえば、ファンクション キーに関連付けられている文字がない特殊なキーにアクセスできるように、 **BACKSPACE**キー。 詳細については、[仮想キー コード](http://go.microsoft.com/fwlink/?LinkID=105932)を参照してください。  
+   仮想キー コードに、たとえば、ファンクション キーに関連付けられている文字がない特殊なキーにアクセスできるように、 **BACKSPACE**キー。 詳細については、次を参照してください。[仮想キー コード](http://go.microsoft.com/fwlink/?LinkID=105932)します。  
   
    コマンドで使用できるように、Visual studio エディターの設定、`editor`属性を`guidVSStd97`します。  
   
@@ -114,4 +109,3 @@ ms.locfileid: "51752903"
   
 ## <a name="see-also"></a>関連項目  
  [メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)
-

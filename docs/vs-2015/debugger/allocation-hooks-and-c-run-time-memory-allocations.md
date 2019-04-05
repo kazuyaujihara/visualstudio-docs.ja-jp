@@ -1,14 +1,9 @@
 ---
 title: 割り当てフック関数と C ランタイムのメモリの割り当て |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9e123e74597ced9ef08860c5369f75ddda2f6e25
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9faacefd4fc0817f5dd5cae31392017458ede49e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780686"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976524"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>割り当てフック関数と C ランタイムのメモリ割り当て
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +41,8 @@ if ( nBlockUse == _CRT_BLOCK )
   
  割り当て用のフック関数で `_CRT_BLOCK` 型のブロックを無視しないと、このフック関数から C ランタイム ライブラリ関数を呼び出した場合に、プログラムが無限ループに陥ることがあります。 たとえば、`printf` は内部的にメモリを割り当てます。 フック、コードから呼び出す場合`printf`、呼び出しは、もう一度呼び出すフック関数と、その結果の割り当てし、 **printf** 、もう一度まで、スタック オーバーフローが発生します。 `_CRT_BLOCK` 型の割り当て処理をレポートする必要がある場合は、この制限事項を回避するために、C ランタイム関数ではなく Windows API 関数を使用して書式設定や出力を行う方法があります。 Windows API は C ランタイム ライブラリのヒープを使用しないため、割り当て用のフック関数を使用しても無限ループに陥る心配はありません。  
   
- ランタイム ライブラリのソース ファイルを調べると場合、表示されます、既定の割り当てフック関数を**CrtDefaultAllocHook** (単に返す**TRUE**)、独自の個別のファイルにあります。DBGHOOK します。C. 割り当てフック関数、アプリケーションの前に実行されるランタイム スタートアップ コードで行われた割り当ての場合でも呼び出す場合**メイン**関数の代わりに、独自のいずれかでこの既定の関数を置き換えることができます使用して[_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d)します。  
+ ランタイム ライブラリのソース ファイルを調べる場合、既定の割り当て用のフック関数 **CrtDefaultAllocHook** (これは単に **TRUE** を返します) が独自の個別のファイル (DBGHOOK.C) の中にあることがわかります。 アプリケーションの **main** 関数の前に実行されるランタイムのスタートアップ コードによる割り当て時にも割り当てのフックが呼び出されるようにするには、[_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) を使用する代わりに、この既定の関数を独自の関数に置き換えることができます。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッグ用フック関数の作成](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 サンプル](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)
-
-
-
+ [crt_dbg2 サンプル](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

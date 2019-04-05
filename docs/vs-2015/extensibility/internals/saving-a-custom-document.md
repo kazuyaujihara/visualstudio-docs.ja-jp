@@ -1,14 +1,9 @@
 ---
 title: カスタム ドキュメントの保存 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - persistence, saving custom documents
 - projects [Visual Studio SDK], saving custom documents
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5d292cc60b782f8036367c72bf0e59e8b83d5191
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 020fdd0f2b315b876790e86b0e16c047cfd44db2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764252"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963635"
 ---
 # <a name="saving-a-custom-document"></a>カスタム ドキュメントの保存
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51764252"
   
  このプロセスの詳細については、次の手順。  
   
-1.  **保存**と**名前を付けて保存**、環境を使用して、コマンド、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービスのアクティブなドキュメント ウィンドウを確認して、どのような項目を保存するためです。 アクティブなドキュメント ウィンドウがわかったら、環境は、実行中の document テーブル内のドキュメントの階層のポインターと項目の識別子 (itemID) を検索します。 詳細については、[を実行しているドキュメント テーブル](../../extensibility/internals/running-document-table.md)を参照してください。  
+1.  **保存**と**名前を付けて保存**、環境を使用して、コマンド、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービスのアクティブなドキュメント ウィンドウを確認して、どのような項目を保存するためです。 アクティブなドキュメント ウィンドウがわかったら、環境は、実行中の document テーブル内のドキュメントの階層のポインターと項目の識別子 (itemID) を検索します。 詳細については、次を参照してください。[を実行しているドキュメント テーブル](../../extensibility/internals/running-document-table.md)します。  
   
      すべて保存 コマンドは、環境は、保存するのにすべての項目の一覧をコンパイルするのに、実行中の document テーブルの情報を使用します。  
   
@@ -52,4 +47,3 @@ ms.locfileid: "51764252"
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [プロジェクト項目のオープンと保存](../../extensibility/internals/opening-and-saving-project-items.md)
-

@@ -1,14 +1,9 @@
 ---
 title: '&lt;依存関係&gt;要素 (ClickOnce 配置) |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -30,13 +25,13 @@ ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: af4b3fc79118e25fb5631de1a4ea4d5897355bf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f191b11dfce5b3877d0a31e260e092000a556a5a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974288"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;依存関係&gt;要素 (ClickOnce 配置)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,11 +83,11 @@ ms.locfileid: "49214929"
   
 |属性|説明|  
 |---------------|-----------------|  
-|`preRequisite`|任意。 このアセンブリが GAC に既に存在する必要があるを指定します。 有効値は `true` または `false` です。 場合`true`を実行するアプリケーションが失敗した、指定したアセンブリが GAC に存在しません。|  
-|`visible`|任意。 依存関係を含む、最上位のアプリケーション id を識別します。 によって内部的に使用される[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション記憶域とアクティブ化を管理します。|  
+|`preRequisite`|省略可能です。 このアセンブリが GAC に既に存在する必要があるを指定します。 有効値は `true` または `false` です。 場合`true`を実行するアプリケーションが失敗した、指定したアセンブリが GAC に存在しません。|  
+|`visible`|省略可能です。 依存関係を含む、最上位のアプリケーション id を識別します。 によって内部的に使用される[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション記憶域とアクティブ化を管理します。|  
 |`dependencyType`|必須。 この依存関係とアプリケーション間のリレーションシップ。 次の値を指定できます。<br /><br /> -   `install`。 コンポーネントは、現在のアプリケーションから別のインストールを表します。<br />-   `preRequisite`。 コンポーネントは、現在のアプリケーションで必要です。|  
-|`codebase`|任意。 アプリケーション マニフェストの完全パスです。|  
-|`size`|任意。 (バイト単位)、アプリケーション マニフェストのサイズ。|  
+|`codebase`|省略可能です。 アプリケーション マニフェストの完全パスです。|  
+|`size`|省略可能です。 (バイト単位)、アプリケーション マニフェストのサイズ。|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
  必須。 この要素は `dependentAssembly` 要素の子です。 コンテンツ`assemblyIdentity`で説明されているものと同じである必要があります、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション マニフェスト。 次の表の属性を示します、`assemblyIdentity`要素。  
@@ -103,7 +98,7 @@ ms.locfileid: "49214929"
 |`Version`|必須。 次の形式で、アプリケーションのバージョン番号を指定します。 `major.minor.build.revision`|  
 |`publicKeyToken`|必須。 アプリケーションまたはアセンブリに署名するとき、公開キーの sha-1 ハッシュの最後の 8 バイトを表す 16 文字の 16 進文字列を指定します。 署名に使用される公開キーは 2048 ビットである必要がありますまたはそれ以上。|  
 |`processorArchitecture`|必須。 マイクロプロセッサを指定します。 有効な値は`x86`32 ビット Windows 用と`IA64`の 64 ビット Windows です。|  
-|`Language`|任意。 アセンブリの 2 部構成の言語コードを識別します。 たとえば、EN-US、英語 (米国) を意味します。 既定値は `neutral` です。 この要素は、`asmv2`名前空間。|  
+|`Language`|省略可能です。 アセンブリの 2 部構成の言語コードを識別します。 たとえば、EN-US、英語 (米国) を意味します。 既定値は `neutral` です。 この要素は、`asmv2`名前空間。|  
 |`type`|任意。 Windows によって並列との互換性が旧バージョンとテクノロジをインストールします。 唯一の許容値は`win32`します。|  
   
 ## <a name="hash"></a>hash  
@@ -128,7 +123,7 @@ ms.locfileid: "49214929"
 |---------------|-----------------|  
 |`Algorithm`|このファイルのダイジェストを計算するために使用するアルゴリズム。 現在、唯一の値で使用される[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]は`http://www.w3.org/2000/09/xmldsig#sha1`します。|  
   
-## <a name="dsigdigestvalue"></a>目的  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue`要素の必須の子では、`hash`要素。 `dsig:DigestValue`要素に属性がありません。 テキスト値は、指定したファイルの計算されたハッシュです。  
   
 ## <a name="remarks"></a>Remarks  
@@ -191,6 +186,3 @@ ms.locfileid: "49214929"
 ## <a name="see-also"></a>関連項目  
  [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)   
  [\<dependency> 要素](../deployment/dependency-element-clickonce-application.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: ポインターがメモリ アドレスを破壊しているかどうか見つけるには | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,13 +21,13 @@ ms.assetid: a147c939-4fb1-415c-8410-cf303781e9e8
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 013b88bcaa0d0cf9dc8ff308f43f3191ed2d0334
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 8da16e806b8c4bb9bb29251184a5a45c566e9f25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734240"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978403"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>ポインターがメモリ アドレスを破壊しているかどうか見つけるには
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +43,10 @@ ms.locfileid: "51734240"
   
 #### <a name="to-find-where-the-memory-address-is-modified"></a>メモリ アドレスの変更箇所を見つけるには  
   
-1.  0x00408000 にデータ ブレークポイントを設定します。 参照してください[データ変更ブレークポイントを設定 (ネイティブ C++ のみ)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only)します。  
+1.  0x00408000 にデータ ブレークポイントを設定します。 「[データ変更ブレークポイントを設定する (ネイティブ C++ のみ)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only)」を参照してください。  
   
-2.  ブレークポイントがヒットしたらを使用して、**メモリ**0x00408000 から始まるメモリを表示するウィンドウの内容します。 詳細については、[メモリ Windows](../debugger/memory-windows.md)を参照してください。  
+2.  ブレークポイントにヒットしたら、**[メモリ]** ウィンドウを使用して、0x00408000 から始まるメモリの内容を表示します。 詳細については、次を参照してください。[メモリ Windows](../debugger/memory-windows.md)します。  
   
 ## <a name="see-also"></a>関連項目  
- [ネイティブ コードのデバッグに関する Faq](../debugger/debugging-native-code-faqs.md)   
+ [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)   
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)
-
-
-

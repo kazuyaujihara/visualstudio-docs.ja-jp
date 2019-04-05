@@ -1,27 +1,22 @@
 ---
 title: コマンドの設計 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aed86eef616702363a661ece0ab565a768f2f75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a6e9eaf69be62b38a880b07fd8eb51cfc9c256a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750116"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978111"
 ---
 # <a name="command-design"></a>コマンド デザイン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,17 +26,17 @@ VSPackage にコマンドを追加するときに表示されるが、可能な�
 ## <a name="defining-commands"></a>コマンドを定義します。  
  新しいコマンドを定義するには、VSPackage プロジェクトで Visual Studio Command Table (.vsct) ファイルが含まれます。 Visual Studio パッケージ テンプレートを使用して VSPackage を作成した場合、プロジェクトには、これらのファイルのいずれかが含まれます。 詳細については、「 [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。  
   
- Visual Studio では、コマンドを表示できるように検出されたすべての .vsct ファイルをマージします。 これらのファイルはバイナリの VSPackage から個別であるために、Visual Studio は、コマンドを検索するパッケージを読み込むにはありません。 詳細については、[方法 VSPackages に追加のユーザー インターフェイス要素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)を参照してください。  
+ Visual Studio では、コマンドを表示できるように検出されたすべての .vsct ファイルをマージします。 これらのファイルはバイナリの VSPackage から個別であるために、Visual Studio は、コマンドを検索するパッケージを読み込むにはありません。 詳細については、次を参照してください。[方法 VSPackages に追加のユーザー インターフェイス要素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)します。  
   
- Visual Studio を使用して、<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>メニュー リソースとコマンドを定義する属性を登録します。 詳細については、[実装](../../extensibility/internals/command-implementation.md)を参照してください。  
+ Visual Studio を使用して、<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>メニュー リソースとコマンドを定義する属性を登録します。 詳細については、次を参照してください。[実装](../../extensibility/internals/command-implementation.md)します。  
   
- コマンドは、実行時に多数の異なる方法で変更できます。 ことができますを表示または非表示に、有効または無効にします。 別のテキストまたはアイコンを表示したり、異なる値を格納することができます。 Visual Studio には、VSPackage が読み込まれる前に、さまざまなカスタマイズを実行する可能性があります。 詳細については、[方法 VSPackages に追加のユーザー インターフェイス要素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)を参照してください。  
+ コマンドは、実行時に多数の異なる方法で変更できます。 ことができますを表示または非表示に、有効または無効にします。 別のテキストまたはアイコンを表示したり、異なる値を格納することができます。 Visual Studio には、VSPackage が読み込まれる前に、さまざまなカスタマイズを実行する可能性があります。 詳細については、次を参照してください。[方法 VSPackages に追加のユーザー インターフェイス要素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)します。  
   
 ## <a name="command-handlers"></a>コマンド ハンドラー  
- コマンドを作成するときに、コマンドを実行するイベント ハンドラーを提供する必要があります。 ユーザーは、コマンドを選択する場合にする必要があります適切にルーティングされます。 コマンドのルーティングを有効にするまたは無効にすること、非表示または表示、およびそのためには、ユーザーが選択した場合は、それを実行する正しい VSPackage に送信することを意味します。 詳細については、[ルーティング アルゴリズム](../../extensibility/internals/command-routing-algorithm.md)を参照してください。  
+ コマンドを作成するときに、コマンドを実行するイベント ハンドラーを提供する必要があります。 ユーザーは、コマンドを選択する場合にする必要があります適切にルーティングされます。 コマンドのルーティングを有効にするまたは無効にすること、非表示または表示、およびそのためには、ユーザーが選択した場合は、それを実行する正しい VSPackage に送信することを意味します。 詳細については、次を参照してください。[ルーティング アルゴリズム](../../extensibility/internals/command-routing-algorithm.md)します。  
   
 ## <a name="the-visual-studio-command-environment"></a>Visual Studio コマンドの環境  
- Visual Studio には、Vspackage の任意の数をホストし、それぞれ独自のコマンド セットを投稿することができます。 環境では、現在のタスクに適切なコマンドのみが表示されます。 詳細については、[可用性](../../extensibility/internals/command-availability.md)と[コンテキスト オブジェクトの選択](../../extensibility/internals/selection-context-objects.md)を参照してください。  
+ Visual Studio には、Vspackage の任意の数をホストし、それぞれ独自のコマンド セットを投稿することができます。 環境では、現在のタスクに適切なコマンドのみが表示されます。 詳細については、次を参照してください。[可用性](../../extensibility/internals/command-availability.md)と[コンテキスト オブジェクトの選択](../../extensibility/internals/selection-context-objects.md)します。  
   
  新しいコマンド、メニューのツールバー、またはショートカット メニューを定義する VSPackage は、ネイティブまたはマネージ アセンブリにリソースを参照するレジストリ エントリでは、インストール時、Visual Studio にそのコマンドの情報を提供します。 各リソースは、Visual Studio Command Table (.vsct) ファイルをコンパイルするときに生成されるバイナリ データ (.cto) のリソース ファイルを参照します。 これにより、Visual Studio をすべてインストールされている VSPackage を読み込むことがなくマージされたコマンド セット、メニュー、ツールバーを提供することができます。  
   
@@ -54,20 +49,20 @@ VSPackage にコマンドを追加するときに表示されるが、可能な�
   
 - メニューは、グループのコンテナーとして機能します。  
   
-  環境はいくつかのコマンド、グループ、およびメニューが組み込まれています。 詳細については、[コマンドの既定の、グループ、およびツールバーの配置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)を参照してください。  
+  環境はいくつかのコマンド、グループ、およびメニューが組み込まれています。 詳細については、次を参照してください。[コマンドの既定の、グループ、およびツールバーの配置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)します。  
   
-  コマンドは、プライマリ グループに割り当てることができます。 プライマリ グループは、メインのメニュー構造とコマンドの位置を制御、**カスタマイズ** ダイアログ ボックス。 コマンドは、複数のグループに表示できます。たとえば、コマンドには、メイン メニューのショートカット メニューおよびツールバーができます。 詳細については、[方法 VSPackages に追加のユーザー インターフェイス要素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)を参照してください。  
+  コマンドは、プライマリ グループに割り当てることができます。 プライマリ グループは、メインのメニュー構造とコマンドの位置を制御、**カスタマイズ** ダイアログ ボックス。 コマンドは、複数のグループに表示できます。たとえば、コマンドには、メイン メニューのショートカット メニューおよびツールバーができます。 詳細については、次を参照してください。[方法 VSPackages に追加のユーザー インターフェイス要素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)します。  
   
 ### <a name="command-routing"></a>コマンド ルーティング  
  呼び出すと、Vspackage 用コマンドのルーティングのプロセスは、オブジェクトのインスタンスに対してメソッドを呼び出してのプロセスによって異なります。  
   
- 環境では、現在の選択に基づいて、最も内側の (ローカル) コマンド コンテキストから順番に (グローバル) の最も外側のコンテキストにコマンドをルーティングします。 コマンドを実行することが最初のコンテキストは、処理を行います。 詳細については、[ルーティング アルゴリズム](../../extensibility/internals/command-routing-algorithm.md)を参照してください。  
+ 環境では、現在の選択に基づいて、最も内側の (ローカル) コマンド コンテキストから順番に (グローバル) の最も外側のコンテキストにコマンドをルーティングします。 コマンドを実行することが最初のコンテキストは、処理を行います。 詳細については、次を参照してください。[ルーティング アルゴリズム](../../extensibility/internals/command-routing-algorithm.md)します。  
   
  ほとんどの場合、環境を使用してコマンドを処理、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイス。 コマンド ルーティング スキームにより、多数の異なるオブジェクトのコマンドを処理するため、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>任意の数のオブジェクトによって実装されることができますこれらは、Microsoft ActiveX コントロール、ウィンドウ ビューの実装、ドキュメント オブジェクト、プロジェクトの階層。VSPackage 用とオブジェクト自体 (グローバル コマンド)。 いくつかの特殊化された場合、階層では、たとえば、コマンドのルーティング、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>インターフェイスを実装する必要があります。  
   
 ## <a name="related-topics"></a>関連トピック  
   
-|Title|説明|  
+|タイトル|説明|  
 |-----------|-----------------|  
 |[実装](../../extensibility/internals/command-implementation.md)|コマンドを VSPackage に実装する方法について説明します。|  
 |[利用可能性](../../extensibility/internals/command-availability.md)|Visual Studio のコンテキストがどのコマンドは、使用を決定する方法について説明します。|  
@@ -77,4 +72,3 @@ VSPackage にコマンドを追加するときに表示されるが、可能な�
 |[既定のコマンド、グループ、およびツール バーの配置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Vspackage によって Visual Studio に含まれているコマンドが最適なように使用する方法について説明します。|  
 |[VSPackage の管理](../../extensibility/managing-vspackages.md)|Visual Studio が Vspackage を読み込む方法について説明します。|  
 |[Visual Studio Command Table (.Vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|レイアウトと外観の Vspackage のコマンドの記述に使用すると、XML ベースの .vsct ファイルに関する情報を提供します。|
-

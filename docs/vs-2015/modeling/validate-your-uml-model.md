@@ -1,12 +1,9 @@
 ---
 title: UML モデルの検証 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, constraints
 - UML, validation
@@ -14,20 +11,20 @@ ms.assetid: deed5092-c11d-4431-a801-1e866a103075
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fea958a20e5eee78f79f324ad19ef646f7920951
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0c805c842832ac99c527ea382169775d8b6b2529
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739970"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975326"
 ---
 # <a name="validate-your-uml-model"></a>UML モデルの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio で描画できる UML モデルの一部が、プロジェクトでは無効と見なされる場合があります。 たとえば、ユース ケースのアクターを表す生存線のあるシーケンス図には必ずユース ケースをリンクするように求める場合があります。 インストールするか、定義*制約*このような要件に準拠するようにチームを支援します。 制約は、ユーザーがモデルを保存するときまたは開くときに適用することが可能で、メニュー コマンドで呼び出すことができます。  
   
- 制約は、チームが UML モデルをどのように解釈して使用するかによって異なるため、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] には制約は付属していません。 しかし、独自の制約を定義したり、他のユーザーが定義した制約をインストールしたりすることはできます。 制約を定義し、配布用にパッケージ化する方法については、[UML モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)を参照してください。  
+ 制約は、チームが UML モデルをどのように解釈して使用するかによって異なるため、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] には制約は付属していません。 しかし、独自の制約を定義したり、他のユーザーが定義した制約をインストールしたりすることはできます。 制約を定義し、配布用にパッケージ化する方法については、次を参照してください。 [UML モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)します。  
   
 ## <a name="invoking-validation"></a>検証の呼び出し  
  検証拡張機能のインストールが完了している場合、それによって提供される制約は、次のケースで適用できます。 一部の制約は、これらのケースの一部でのみ適用されるように設定されています。  
@@ -41,7 +38,7 @@ Visual Studio で描画できる UML モデルの一部が、プロジェクト�
   
    エラーがある場合は、モデルを保存するかどうかを確認するメッセージが表示されます。 エラーを修正するか、またはモデルをそのまま保存するかを選択することができます。  
   
-- **モデルを開くとき。** モデルを開くときに、検証メソッドを適用して、モデルを保存したときに存在していたエラー メッセージを復元できます。 エラーは、1 つのモデルの異なる部分で作業していた複数のユーザーによって加えられた変更の間の不整合が原因で発生する場合もあります。 詳細については、[モデルおよびエクスポート ダイアグラムの共有](../modeling/share-models-and-exporting-diagrams.md)を参照してください。  
+- **モデルを開くとき。** モデルを開くときに、検証メソッドを適用して、モデルを保存したときに存在していたエラー メッセージを復元できます。 エラーは、1 つのモデルの異なる部分で作業していた複数のユーザーによって加えられた変更の間の不整合が原因で発生する場合もあります。 詳細については、次を参照してください。[モデルおよびエクスポート ダイアグラムの共有](../modeling/share-models-and-exporting-diagrams.md)します。  
   
   検証エラーは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] エラー ウィンドウで報告されます。  
   
@@ -75,6 +72,3 @@ Visual Studio で描画できる UML モデルの一部が、プロジェクト�
  [UML モデルの検証制約を定義します。](../modeling/define-validation-constraints-for-uml-models.md)   
  [アプリのモデルを作成します。](../modeling/create-models-for-your-app.md)   
  [開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)
-
-
-

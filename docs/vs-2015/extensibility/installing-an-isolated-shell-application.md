@@ -1,27 +1,22 @@
 ---
 title: 分離シェル アプリケーションをインストールする |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], deploying shell-based applications
 - Visual Studio shell, deploying shell-based applications
 ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ecec7963b66c20ef08d1e5f3f0917a66f885aa0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796312"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974526"
 ---
 # <a name="installing-an-isolated-shell-application"></a>分離シェル アプリケーションをインストールします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +159,7 @@ ms.locfileid: "51796312"
         ```  
   
     > [!NOTE]
-    >  Shell (Isolated) アプリケーションの依存関係が必要です: DebuggerProxy、MasterPkgDef、リソース (特に .winprf ファイル)、アプリケーション、および PkgDefs します。  
+    >  Shell (Isolated) アプリケーションに必要な依存関係は次のとおりです。DebuggerProxy、MasterPkgDef、リソース (特に .winprf ファイル)、アプリケーション、および PkgDefs します。  
   
 ### <a name="registry-entries"></a>レジストリ エントリ  
  Shell (Isolated) のプロジェクト テンプレートが含まれています、 *ProjectName*インストールでマージするレジストリ キーの .reg ファイル。 これらのレジストリ エントリは、インストールとクリーンアップのための両方の MSI の一部である必要があります。 ApplicationRegistry.wxs で一致するレジストリのブロックを作成することも必要があります。  
@@ -183,8 +178,8 @@ ms.locfileid: "51796312"
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[Hkey_classes_root \clsid\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @「PhotoStudio DTE オブジェクト」を =|\<RegistryKey Id = 'DteClsidRegKey' Root 'HKCR' キーを = =' $(var 関数DteClsidRegKey)' アクション = 'createAndRemoveOnUninstall' ><br /><br /> \<RegistryValue 型 = 'string' Name =' @' 値 =' $(var 関数ShortProductName) DTE オブジェクト"/><br /><br /> \</RegistryKey >|  
-    |[Hkey_classes_root \clsid\\{bb431796-a179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id = 'DteLocSrv32RegKey' Root 'HKCR' キーを = =' $(var 関数DteClsidRegKey) \LocalServer32' アクション = 'createAndRemoveOnUninstall' ><br /><br /> \<RegistryValue 型 = 'string' Name =' @' 値 ='[INSTALLDIR] $(var 関数ShortProductName) .exe"/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @「PhotoStudio DTE オブジェクト」を =|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
   
      この例では、Var.DteClsidRegKey は一番上の行で、レジストリ キーに解決されます。 解決される Var.ShortProductName`PhotoStudio`します。  
   
@@ -374,5 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-
+ [チュートリアル: 基本的な分離シェル アプリケーションを作成します。](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

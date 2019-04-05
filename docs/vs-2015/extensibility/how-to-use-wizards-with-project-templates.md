@@ -1,14 +1,9 @@
 ---
-title: '方法: プロジェクト テンプレートにウィザードを使用して |Microsoft Docs'
-ms.custom: ''
+title: '方法: ウィザードを使用して、プロジェクト テンプレート |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
 - Visual Studio templates, wizards
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 650b9c360013d06216e607269f77afd24f3cc22c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 801f6f02c94b60b95949d41cb1c762516d2c58b5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783760"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59003042"
 ---
-# <a name="how-to-use-wizards-with-project-templates"></a>方法 : プロジェクト テンプレートを組み合わせたウィザードを使用する
+# <a name="how-to-use-wizards-with-project-templates"></a>方法: プロジェクト テンプレートでウィザードを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio には、<xref:Microsoft.VisualStudio.TemplateWizard.IWizard> インターフェイスが用意されています。このインターフェイスを実装すると、ユーザーがテンプレートからプロジェクトを作成する際にカスタム コードを実行できるようになります。  
@@ -155,7 +150,7 @@ Visual Studio には、<xref:Microsoft.VisualStudio.TemplateWizard.IWizard> イ�
   
    - <xref:System.Object> パラメーター。プロジェクトをカスタマイズできるように、ルートの <xref:EnvDTE._DTE> オブジェクトにキャストできます。  
   
-   - <xref:System.Collections.Generic.Dictionary%602> パラメーター。テンプレートで定義済みのすべてのパラメーターのコレクションが含まれます。 テンプレート パラメーターの詳細については、[テンプレート パラメーター](../ide/template-parameters.md)を参照してください。  
+   - <xref:System.Collections.Generic.Dictionary%602> パラメーター。テンプレートで定義済みのすべてのパラメーターのコレクションが含まれます。 テンプレート パラメーターの詳細については、次を参照してください。[テンプレート パラメーター](../ide/template-parameters.md)します。  
   
    - <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> パラメーター。使用されているテンプレートの種類に関する情報が含まれます。  
   
@@ -228,23 +223,23 @@ Visual Studio には、<xref:Microsoft.VisualStudio.TemplateWizard.IWizard> イ�
   
 9. 検索、 **sn.exe**署名ツール。 たとえば、Windows 10 64 ビットのオペレーティング システムで一般的なパス、次のようになります  
   
-     **C:\Program Files (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
+     **C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
   
      ツールが見つからない場合は実行してみてください **/R します。 sn.exe**コマンド ウィンドウにします。 パスをメモしてをおきます。  
   
 10. Key.snk ファイルから公開キーを抽出します。 コマンド ウィンドウで次のように入力します。  
   
-     **\<sn.exe の場所 > \sn.exe - p key.snk outfile.key します。**  
+     **\<location of sn.exe>\sn.exe - p key.snk outfile.key.**  
   
      ディレクトリ名にスペースがある場合は、引用符で sn.exe のパスを囲むようにご注意ください。  
   
 11. 出力ファイルから公開キー トークンを取得します。  
   
-     **\<sn.exe の場所 > \sn.exe - t outfile.key します。**  
+     **\<location of sn.exe>\sn.exe - t outfile.key.**  
   
      引用符をもう一度、忘れないでください。 このような出力に行が表示されます。  
   
-     **公開キー トークンは、します。 <token>**  
+     **公開キー トークンは\<トークン >**  
   
      この値をメモしてをおきます。  
   

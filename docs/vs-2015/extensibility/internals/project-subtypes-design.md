@@ -1,26 +1,21 @@
 ---
 title: プロジェクト サブタイプの設計 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96ab44df6512b4288cf01f4c1f99d435a9c24bd5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 78b768ae63fcf03912d4f81820e80706f8a46a98
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806127"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974545"
 ---
 # <a name="project-subtypes-design"></a>プロジェクト サブタイプのデザイン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "51806127"
   
 - プロジェクトのオートメーション プロパティのコレクション。  
   
-  プロジェクト サブタイプによって拡張機能の詳細については、[プロパティとメソッドは、プロジェクト サブタイプによって拡張](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)を参照してください。  
+  プロジェクト サブタイプによって拡張機能の詳細については、次を参照してください。[プロパティとメソッドは、プロジェクト サブタイプによって拡張](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)します。  
   
 ##### <a name="policy-files"></a>ポリシー ファイル  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]環境は、ポリシー ファイルの実装でのプロジェクト サブタイプに基本プロジェクト システムの拡張の例を示します。 ポリシー ファイルは、の構造化、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]のソリューション エクスプ ローラーで、機能を管理することで環境**プロジェクトの追加**ダイアログ ボックスで、**新しい項目の追加** ダイアログ ボックスおよび**プロパティ** ダイアログ ボックス。 ポリシーのサブタイプをオーバーライドし、これらの機能を強化<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>、`IOleCommandTarget`と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>実装します。  
@@ -64,7 +59,7 @@ ms.locfileid: "51806127"
  複数レベルのプロジェクト サブタイプの集計は、基本プロジェクトのプロジェクト サブタイプの場合は、によって集計し、さらに、高度なプロジェクト サブタイプによって集計される、3 つのレベルで構成されます。 一部として提供されるサポート インターフェイスの一部に焦点を当てています、図、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]プロジェクト サブタイプのアーキテクチャ。  
   
 ##### <a name="deployment-mechanisms"></a>展開メカニズム  
- 基本プロジェクト システムの多くは、プロジェクト サブタイプによって拡張機能は、展開の機構です。 プロジェクト サブタイプ構成インターフェイスを実装することによって展開メカニズムに影響を与えます (など<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) の QueryInterface を呼び出すことによって取得される<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>します。 ベースのプロジェクトを呼び出すシナリオでは、プロジェクトのサブタイプと高度なプロジェクト サブタイプの両方が別の構成の実装を追加する場所、`QueryInterface`で高度なプロジェクト サブタイプの`IUnknown`します。 内部のプロジェクト サブタイプに基本プロジェクトが求める構成の実装が含まれている場合、高度なプロジェクトのサブタイプは内部のプロジェクト サブタイプによって提供される実装に委任されます。 プロジェクト サブタイプのすべてのレベルの実装として 1 つの集計レベルから別の状態を維持するためのメカニズム、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>非ビルドを保持するプロジェクト ファイルに XML データに関連します。 詳細については、[MSBuild プロジェクト ファイル内のデータの永続化](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)を参照してください。 <xref:EnvDTE80.IInternalExtenderProvider> プロジェクト サブタイプからオートメーション エクステンダーを取得するためのメカニズムとして実装されます。  
+ 基本プロジェクト システムの多くは、プロジェクト サブタイプによって拡張機能は、展開の機構です。 プロジェクト サブタイプ構成インターフェイスを実装することによって展開メカニズムに影響を与えます (など<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) の QueryInterface を呼び出すことによって取得される<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>します。 ベースのプロジェクトを呼び出すシナリオでは、プロジェクトのサブタイプと高度なプロジェクト サブタイプの両方が別の構成の実装を追加する場所、`QueryInterface`で高度なプロジェクト サブタイプの`IUnknown`します。 内部のプロジェクト サブタイプに基本プロジェクトが求める構成の実装が含まれている場合、高度なプロジェクトのサブタイプは内部のプロジェクト サブタイプによって提供される実装に委任されます。 プロジェクト サブタイプのすべてのレベルの実装として 1 つの集計レベルから別の状態を維持するためのメカニズム、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>非ビルドを保持するプロジェクト ファイルに XML データに関連します。 詳細については、次を参照してください。 [MSBuild プロジェクト ファイル内のデータの永続化](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)します。 <xref:EnvDTE80.IInternalExtenderProvider> プロジェクト サブタイプからオートメーション エクステンダーを取得するためのメカニズムとして実装されます。  
   
  次の図について重点的にオートメーション エクステンダーの実装、プロジェクト構成の参照オブジェクト具体的には、プロジェクトのサブタイプ基本プロジェクト システムを拡張するために使用します。  
   
@@ -97,4 +92,3 @@ ms.locfileid: "51806127"
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>
-

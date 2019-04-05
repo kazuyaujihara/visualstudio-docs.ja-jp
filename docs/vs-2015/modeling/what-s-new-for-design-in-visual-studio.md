@@ -1,31 +1,26 @@
 ---
-title: どのような&#39;s Visual Studio での設計の新機能 |Microsoft Docs
-ms.custom: ''
+title: どのような&#39;s デザインの新機能
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
+- what's new [VIsual Studio], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee504d0054c52649d48676451168e7dea171b6af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84b5ed45bfa7117eec4cbaa86ad9ca4533339d62
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771282"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002882"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio での設計向けの新機能
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Visual Studio 2015 の Visual Studio でデザインする場合は新機能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 このリリースの Visual Studio では、コードの理解と設計の向上に役立つ次のような機能が強化されています。
 
@@ -61,7 +56,7 @@ ms.locfileid: "51771282"
 
   「 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)」を参照してください。
 
-  **その他の設計とモデリングこのリリースで変更します。**
+  **このリリースでの設計とモデリングに関する他の変更:**
 
 - **レイヤー図**。 クラス ビューとオブジェクト ブラウザーを使用してこれらの図を更新できます。 ソフトウェア設計要件を満たすには、レイヤー図を使用してソフトウェアの必要な依存関係を記述します。 これらの制約を満たしていないコードを探し、この基準で将来のコードを検証することにより、コードをこの設計と一致させます。
 
@@ -77,8 +72,8 @@ Visual Studio 2015 は、いくつかのエディションで使用できます�
 |-----------------|--------------------|----------------------|-------------------|-----------------|
 |**コード マップ**|はい|読み取りとコード マップをフィルター処理、新しいジェネリック ノードを追加および選択範囲から新しいの有向グラフの作成にのみサポートします。|-|-|
 |**UML クラス図**|はい|-|-|-|
-|**UML シーケンス図**|はい|-|-|-|
-|**UML ユース ケース図**|はい|-|-|-|
+|**UML シーケンス図**|[はい]|-|-|-|
+|**UML ユース ケース図**|[はい]|-|-|-|
 |**UML アクティビティ図**|はい|-|-|-|
 |**UML コンポーネント図**|はい|-|-|-|
 |**レイヤー図**|はい|-|-|-|

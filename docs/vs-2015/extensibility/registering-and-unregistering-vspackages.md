@@ -1,27 +1,22 @@
 ---
 title: 登録と Vspackage を登録解除 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e14422b7430dc0429954bf11c77b30619fb7f7da
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1f6bc85fb00c15831dcf1a9f64e4b886272df218
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763423"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976257"
 ---
 # <a name="registering-and-unregistering-vspackages"></a>VSPackage の登録と登録解除
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51763423"
 属性を使用して、VSPackage の登録が、  
   
 ## <a name="registering-a-vspackage"></a>VSPackage を登録します。  
- マネージ Vspackage の登録を制御するのに属性を使用できます。 すべての登録情報は、.pkgdef ファイルに含まれます。 ファイル ベースの登録の詳細については、[CreatePkgDef ユーティリティ](../extensibility/internals/createpkgdef-utility.md)を参照してください。  
+ マネージ Vspackage の登録を制御するのに属性を使用できます。 すべての登録情報は、.pkgdef ファイルに含まれます。 ファイル ベースの登録の詳細については、次を参照してください。 [CreatePkgDef ユーティリティ](../extensibility/internals/createpkgdef-utility.md)します。  
   
  次のコードでは、標準登録属性を使用して、VSPackage を登録する方法を示します。  
   
@@ -57,4 +52,3 @@ public sealed class BasicPackage : Package
   
 ## <a name="see-also"></a>関連項目  
  [VSPackage](../extensibility/internals/vspackages.md)
-

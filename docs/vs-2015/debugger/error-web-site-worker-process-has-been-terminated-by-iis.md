@@ -1,14 +1,9 @@
 ---
-title: 'エラー: Web サイトのワーカー プロセスが IIS によって停止されましたが |Microsoft Docs'
-ms.custom: ''
+title: エラー :Web サイトのワーカー プロセスが IIS によって停止されました |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.web_server_process_terminated
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: 5707b972-71a6-4cc6-ab99-c7c00ca8628c
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 93271bcba524054a2289b078b0e92fde115eaf23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 97b6b7a798483000916ee8c99a8000fd45b9cc00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789058"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977962"
 ---
-# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>エラー : Web サイトのワーカー プロセスが IIS によって停止されました
+# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>エラー :Web サイトのワーカー プロセスが IIS によって停止されました
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 デバッガーが Web サイト上のコードの実行を停止しました。 このため、インターネット インフォメーション サービス (IIS: Internet Information Services) はワーカー プロセスが応答を停止したと見なしました。 したがって、IIS がワーカー プロセスを終了しました。  
@@ -37,36 +32,33 @@ ms.locfileid: "51789058"
   
 ### <a name="to-configure-iis-7-to-allow-the-worker-process-to-continue"></a>ワーカー プロセスを継続できるように IIS 7 を構成するには  
   
-1. 開く、**管理ツール**ウィンドウ。  
+1. **[管理ツール]** ウィンドウを開きます。  
   
    1.  をクリックして**開始**を選択し**コントロール パネルの**です。  
   
-   2.  **コントロール パネル**、選択**クラシック ビューに切り替えます**、必要に応じて、し、ダブルクリック**管理ツール**します。  
+   2.  **コントロール パネル**で必要に応じて **[クラシック表示に切り替える]** を選択し、**[管理ツール]** をダブルクリックします。  
   
-2. **管理ツール**ウィンドウで、ダブルクリックして**インターネット インフォメーション サービス (IIS) マネージャー**します。  
+2. **[管理ツール]** ウィンドウで、**[インターネット インフォメーション サービス (IIS) マネージャー]** をダブルクリックします。  
   
     IIS マネージャーが開きます。  
   
-3. **接続**ウィンドウで、展開、\<コンピューター名 > ノードが必要な場合。  
+3. **[接続]** ウィンドウで、必要に応じて [\<computer name>] ノードを展開します。  
   
-4. [\<コンピューター名 >] ノードをクリックして**アプリケーション プール**。  
+4. [\<computer name>] ノードの下にある **[アプリケーション プール]** をクリックします。  
   
-5. **アプリケーション プール**ボックスの一覧でアプリケーションを実行するプールの名前を右クリックし、順にクリックします**詳細設定**します。  
+5. **[アプリケーション プール]** ボックスの一覧で、アプリケーションが実行されているプールの名前を右クリックし、**[詳細設定]** をクリックします。  
   
-6. **詳細設定** ダイアログ ボックスで、検索、**プロセス モデル**セクションし、次の操作のいずれかを実行します。  
+6. **[詳細設定]** ダイアログ ボックスの **[プロセス モデル]** セクションで、以下のいずれかを実行します。  
   
-   - 設定**Ping の有効化**に**False**します。  
+   - **[Ping の有効化]** を **[False]** に設定します。  
   
-   - 設定**Ping 最大応答時間**90 秒よりも大きい値にします。  
+   - **[Ping 最大応答時間]** を 90 秒より大きな値に設定します。  
   
-     設定**Ping の有効化**に**False**ワーカー プロセスは引き続き実行され、デバッグ対象プロセスを停止するまでは、ワーカー プロセスを維持するかどうかをチェックから IIS を停止します。 設定**Ping 最大応答時間**大きな値には、IIS ワーカー プロセスの監視を継続します。  
+     **[Ping の有効化]** を **[False]** に設定すると、IIS でワーカー プロセスがまだ実行されているかどうかのチェックが中止され、デバッグされているプロセスを停止するまでワーカー プロセスは有効な状態を保ちます。 **[Ping 最大応答時間]** を大きな値に設定すると、IIS はワーカー プロセスの監視を継続できます。  
   
-7. をクリックして**OK**を閉じる、**詳細設定** ダイアログ ボックス。  
+7. **[OK]** をクリックして **[詳細設定]** ダイアログ ボックスを閉じます。  
   
-8. IIS マネージャーを閉じると、**管理ツール**ウィンドウ。  
+8. IIS マネージャーと **[管理ツール]** ウィンドウを閉じます。  
   
 ## <a name="see-also"></a>関連項目  
  [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-
