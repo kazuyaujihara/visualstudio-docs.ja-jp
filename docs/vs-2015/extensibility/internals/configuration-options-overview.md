@@ -1,27 +1,22 @@
 ---
 title: 構成オプションの概要 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44c5f424ec36d3c04403f62547920f59622208a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747984"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975193"
 ---
 # <a name="configuration-options-overview"></a>構成オプションの概要
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,11 +42,11 @@ ms.locfileid: "51747984"
   
  ソリューションのアクティブな構成の変更は、そのソリューションにビルド、実行、デバッグまたは配置するプロジェクト構成のセットを選択します。 たとえば、リリースからデバッグするアクティブなソリューション構成を変更する場合、ソリューションのデバッグ構成に示されているプロジェクトの構成ではそのソリューション内のすべてのプロジェクトはビルド自動的に。 プロジェクトの構成は、します通常はも名前付きのデバッグ、ユーザーが手動で変更を環境の Configuration Manager で行った場合を除き。  
   
- 格納されている各プロジェクトのソリューション構成のプロパティには、プロジェクト名、プロジェクト構成名、フラグを示すかどうかを構築するかを展開してプラットフォーム名が含まれます。 詳細については、[ソリューション構成](../../extensibility/internals/solution-configuration.md)を参照してください。  
+ 格納されている各プロジェクトのソリューション構成のプロパティには、プロジェクト名、プロジェクト構成名、フラグを示すかどうかを構築するかを展開してプラットフォーム名が含まれます。 詳細については、次を参照してください。[ソリューション構成](../../extensibility/internals/solution-configuration.md)します。  
   
  ユーザーは、表示し、階層 (ソリューション エクスプ ローラー) で、ソリューションを選択し、プロパティ ページを開くソリューションの構成パラメーターを設定できます。 同様に、表示し、ソリューション エクスプ ローラーでプロジェクトを選択し、そのプロジェクトのプロパティ ページを開くプロジェクトの構成パラメーターを設定することができます。  
   
- ユーザーは、必要な場合に、デバッグ構成の設定でリリースの構成設定とすべての rest を使用する 1 つのプロジェクトをビルドもできます。 詳細については、[構築するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)を参照してください。  
+ ユーザーは、必要な場合に、デバッグ構成の設定でリリースの構成設定とすべての rest を使用する 1 つのプロジェクトをビルドもできます。 詳細については、次を参照してください。[構築するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)します。  
   
  次の図は、ソリューションとプロジェクト構成をサポートするインターフェイスを実装する方法を示しています。  
   
@@ -74,10 +69,9 @@ ms.locfileid: "51747984"
   
 - 特定のオブジェクトは、個別に実装されます。 たとえば、プロジェクトとソリューションの構築とビルドの構成を記述するオブジェクトからビルド生活がどれほどを個別に管理するオブジェクトの個別のスレッドの発生します。  
   
-  構成オブジェクトのインターフェイスと、前の図での構成プロバイダー オブジェクトのインターフェイスについては、[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)を参照してください。 さらに、[構築するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)構成ビルダーとビルドの依存関係オブジェクトのインターフェイスについて詳しく説明しますと[展開を管理するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-managing-deployment.md)さらに、構成を配置するユーザーと展開の依存関係オブジェクトにアタッチされているインターフェイスについて説明します。 最後に、[出力用のプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)出力グループと出力オブジェクトのインターフェイスと、表示し、構成に依存するプロパティを設定するプロパティ ページの使用について説明します。  
+  構成オブジェクトのインターフェイスと、前の図での構成プロバイダー オブジェクトのインターフェイスについては、次を参照してください。[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)します。 さらに、[構築するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)構成ビルダーとビルドの依存関係オブジェクトのインターフェイスについて詳しく説明しますと[展開を管理するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-managing-deployment.md)さらに、構成を配置するユーザーと展開の依存関係オブジェクトにアタッチされているインターフェイスについて説明します。 最後に、[出力用のプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)出力グループと出力オブジェクトのインターフェイスと、表示し、構成に依存するプロパティを設定するプロパティ ページの使用について説明します。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   
  [ビルドするためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)   
  [ソリューション構成](../../extensibility/internals/solution-configuration.md)
-

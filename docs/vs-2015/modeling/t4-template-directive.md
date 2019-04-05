@@ -1,30 +1,27 @@
 ---
 title: T4 テンプレート ディレクティブ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcd11416bc067acaab8855b51969c7e1068e2c97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248225"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974693"
 ---
 # <a name="t4-template-directive"></a>T4 テンプレート ディレクティブ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 通常、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の T4 テキスト テンプレートは、テンプレートの処理方法を指定する `template` ディレクティブで始まります。 テキスト テンプレートおよびそれに含まれるファイルには、template ディレクティブを 1 つしか含めることができません。  
   
- テキスト テンプレートの作成方法の一般的な概要については、[T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)を参照してください。  
+ テキスト テンプレートの作成方法の一般的な概要については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)  
   
 ## <a name="using-the-template-directive"></a>template ディレクティブの使用  
   
@@ -39,7 +36,7 @@ ms.locfileid: "49248225"
  `compilerOptions="optimize+"`  
   
  有効な値:  
- 有効なコンパイラ オプション。 詳細については、[c# Compiler Options Listed by Category](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83)と[Visual Basic Compiler Options Listed by Category](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3)を参照してください。  
+ 有効なコンパイラ オプション。 詳細については、次を参照してください。 [c# Compiler Options Listed by Category](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83)と[Visual Basic Compiler Options Listed by Category](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3)します。  
   
  実行時 (前処理された) テンプレートでは無視されます。  
   
@@ -67,9 +64,9 @@ debug="true"
   
  `debug` 属性が `true` の場合、デバッガーでテンプレート内の中断または例外の発生位置を正確に特定できるようにする情報が中間コード ファイルに出力されるようになります。  
   
- デザイン時テンプレートの中間コード ファイルが書き込まれる、 **%temp%** ディレクトリ。  
+ デザイン時テンプレートの中間コード ファイルが書き込まれる、 **%TEMP%** ディレクトリ。  
   
- をデバッガーでデザイン時テンプレートを実行する、テキスト テンプレートを保存し、ソリューション エクスプ ローラーで、テキスト テンプレートのショートカット メニューを開き、選択**T4 テンプレートのデバッグ**します。  
+ デバッガー中でデザイン時テンプレートを実行するには、テキスト テンプレートを保存し、ソリューション エクスプローラーで、テキスト テンプレートのショートカット メニューを開き、**T4 テンプレートのデバッグ**を選択します。  
   
 ## <a name="hostspecific-attribute"></a>hostspecific 属性  
  例:  
@@ -140,7 +137,7 @@ Squares of numbers:
  テンプレートのプログラム コードを別のクラスから継承できることを指定できます。クラスは、テキスト テンプレートから生成することもできます。  
   
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>実行時 (前処理された) テキスト テンプレートでの継承  
- 実行時テキスト テンプレート間で継承を使用して、複数の派生バリアントを含む基本テンプレートを作成できます。 実行時テンプレートが指定されている、**カスタム ツール**プロパティに設定**TextTemplatingFilePreprocessor**します。 実行時テンプレートでは、そのテンプレートに定義されているテキストを作成するために、アプリケーションで呼び出すことができるコードが生成されます。 詳細については、[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)を参照してください。  
+ 実行時テキスト テンプレート間で継承を使用して、複数の派生バリアントを含む基本テンプレートを作成できます。 実行時テンプレートが指定されている、**カスタム ツール** プロパティに **TextTemplatingFilePreprocessor** を設定します。 実行時テンプレートでは、そのテンプレートに定義されているテキストを作成するために、アプリケーションで呼び出すことができるコードが生成されます。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)  
   
  `inherits` 属性を指定しない場合は、テキスト テンプレートから基底クラスと派生クラスが生成されます。 `inherits` 属性を指定すると、派生クラスだけが生成されます。 基底クラスは手動で作成できますが、派生クラスで使用するメソッドを提供する必要があります。  
   
@@ -212,11 +209,11 @@ This is the common footer.
 >  `inherits` 属性と `hostspecific` 属性を一緒に使用する場合は、派生クラスで hostspecific="trueFromBase"、基底クラスで host="true" を指定します。 これで、生成されるコードで `Host` プロパティの定義が重複することを回避できます。  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>デザイン時テキスト テンプレートでの継承  
- デザイン時テキスト テンプレートは、対象のファイル**カスタム ツール**に設定されている**TextTemplatingFileGenerator**します。 このテンプレートでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトの一部となるコードまたはテキストの出力ファイルが生成されます。 出力ファイルを生成するために、テンプレートは、まず中間プログラム コード ファイルに変換されます。通常、このファイルは表示されません。 `inherits` 属性では、この中間コードの基底クラスを指定します。  
+ デザイン時テキスト テンプレートは、対象のファイルの **カスタム ツール** を **TextTemplatingFileGenerator** に設定します。 このテンプレートでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトの一部となるコードまたはテキストの出力ファイルが生成されます。 出力ファイルを生成するために、テンプレートは、まず中間プログラム コード ファイルに変換されます。通常、このファイルは表示されません。 `inherits` 属性では、この中間コードの基底クラスを指定します。  
   
  デザイン時テキスト テンプレートの場合、<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> から派生した基底クラスを指定できます。 `<#@assembly#>` ディレクティブを使用して、基底クラスを含むアセンブリまたはプロジェクトを読み込みます。  
   
- 詳細については、["継承でテキスト テンプレート"Gareth Jones のブログで](http://go.microsoft.com/fwlink/?LinkId=208373)を参照してください。  
+ 詳細については、次を参照してください。 ["継承でテキスト テンプレート"Gareth Jones のブログで](http://go.microsoft.com/fwlink/?LinkId=208373)します。  
   
 ## <a name="linepragmas-attribute"></a>LinePragmas 属性  
  例:  
@@ -241,6 +238,3 @@ This is the common footer.
  `internal`  
   
  実行時テキスト テンプレートでは、これは生成されたクラスの可視性属性を設定します。 既定では、クラスはコードのパブリック API の一部ですが、`visibility="internal"` を設定すると、自分のコードだけがそのテキスト生成クラスを使用するようにできます。
-
-
-

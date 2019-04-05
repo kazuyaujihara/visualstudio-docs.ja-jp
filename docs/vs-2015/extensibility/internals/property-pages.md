@@ -1,14 +1,9 @@
 ---
 title: プロパティ ページ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 74da0df2939b08615f3a659dfca70b1cea0e495d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a45e4a98326fe829b8f87a4ecfce669118cd9d0e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759862"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976392"
 ---
 # <a name="property-pages"></a>プロパティ ページ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51759862"
 ## <a name="using-property-pages"></a>プロパティ ページの使用  
  プロパティ ページがまだ表示されている (たとえば、プロジェクトをソリューション) から選択が変更された場合は、情報のページで、新しい選択範囲のプロパティを表示する変更表示されます。 プロパティ ページをサポートするオブジェクトのプロパティがない場合は、プロパティ ページが空です。  
   
- 複数のオブジェクトが選択されている場合、プロパティ ページには、選択したすべてのアイテムのプロパティの積集合が表示されます。 選択した項目に構成に依存するプロパティが含まれていないかどうか、**プロパティ ページ**ソリューション エクスプ ローラー ツールバーのボタンがクリックされると、[プロパティ] ウィンドウにフォーカスが変更されます。 [プロパティ] ウィンドウと選択範囲に関連する詳細については、[拡張プロパティ](../../extensibility/internals/extending-properties.md)を参照してください。  
+ 複数のオブジェクトが選択されている場合、プロパティ ページには、選択したすべてのアイテムのプロパティの積集合が表示されます。 選択した項目に構成に依存するプロパティが含まれていないかどうか、**プロパティ ページ**ソリューション エクスプ ローラー ツールバーのボタンがクリックされると、[プロパティ] ウィンドウにフォーカスが変更されます。 [プロパティ] ウィンドウと選択範囲に関連する詳細については、次を参照してください。[拡張プロパティ](../../extensibility/internals/extending-properties.md)します。  
   
  複数のオブジェクトのプロパティが表示されますが、[プロパティ] ページの値を変更して場合、が最初に異なると、個々 のオブジェクトのプロパティが表示されていたときに、ページが空白場合でも、新しい値に設定のすべてのオブジェクトの値は。  
   
@@ -76,11 +71,11 @@ ms.locfileid: "51759862"
   
    ユーザーは、f5 キーを押すか、ビルド メニューから実行を選択するときに開始されるソリューションのプロパティ ページからプロジェクトを指定できます。 これは、ソリューション エクスプ ローラーで太字のフォントでその名前が表示されることの意味では、古いアクティブなプロジェクトと同様の方法で機能します。  
   
-   オートメーション モデルのプロパティとしてスタートアップ プロジェクトを取得するには呼び出すことによって`DTE.Solution.SolutionBuild.StartupProjects`します。 呼び出すことで、VSPackage、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>メソッド。 `IVsSolutionBuildManager` サービスとして利用できます`QueryService`SID_SVsSolutionBuildManager にします。 詳細については、[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)と[ソリューション構成](../../extensibility/internals/solution-configuration.md)を参照してください。  
+   オートメーション モデルのプロパティとしてスタートアップ プロジェクトを取得するには呼び出すことによって`DTE.Solution.SolutionBuild.StartupProjects`します。 呼び出すことで、VSPackage、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>メソッド。 `IVsSolutionBuildManager` サービスとして利用できます`QueryService`SID_SVsSolutionBuildManager にします。 詳細については、次を参照してください。[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)と[ソリューション構成](../../extensibility/internals/solution-configuration.md)します。  
   
 - アクティブなソリューションのビルド構成  
   
-   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] アクティブ ソリューション構成を実装して、オートメーション モデルで使用できるは`DTE.Solution.SolutionBuild.ActiveConfiguration`します。 ソリューション構成では、(各プロジェクトは複数の構成を異なる名前で、複数のプラットフォーム上に持つことができます)、ソリューション内の各プロジェクトの 1 つのプロジェクト構成を含むコレクションです。 ソリューションのプロパティ ページに関連する詳細については、[ソリューション構成](../../extensibility/internals/solution-configuration.md)を参照してください。  
+   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] アクティブ ソリューション構成を実装して、オートメーション モデルで使用できるは`DTE.Solution.SolutionBuild.ActiveConfiguration`します。 ソリューション構成では、(各プロジェクトは複数の構成を異なる名前で、複数のプラットフォーム上に持つことができます)、ソリューション内の各プロジェクトの 1 つのプロジェクト構成を含むコレクションです。 ソリューションのプロパティ ページに関連する詳細については、次を参照してください。[ソリューション構成](../../extensibility/internals/solution-configuration.md)します。  
   
 - 現在選択されているプロジェクト  
   
@@ -91,4 +86,3 @@ ms.locfileid: "51759862"
  [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)   
  [プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)   
  [ソリューション構成](../../extensibility/internals/solution-configuration.md)
-

@@ -1,27 +1,22 @@
 ---
 title: KeyBinding 要素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 32dafc1b16282657db40531e34d1eccb02841481
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974722"
 ---
 # <a name="keybinding-element"></a>KeyBinding 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +42,10 @@ KeyBinding 要素には、コマンドのキーボード ショートカット�
 |ID|必須。|  
 |エディター|必須。 エディターの GUID では、このショートカット キーがアクティブになる編集コンテキストを示します。 バインドのグローバル スコープの値は、"guidVSStd97 です"。|  
 |key1|必須。 有効な値は、すべて判読の英数字と、2 桁の 16 進数値 0 x と VK_constants で前にします。|  
-|mod1|任意。 Ctrl キー、ALT、およびスペースで区切られたシフトの任意の組み合わせ。|  
-|key2|任意。 有効な値は、すべて判読の英数字と、2 桁の 16 進数値 0 x と VK_constants で前にします。|  
-|mod2|任意。 Ctrl キー、ALT、およびスペースで区切られたシフトの任意の組み合わせ。|  
-|エミュレーター|任意。|  
+|mod1|省略可能です。 Ctrl キー、ALT、およびスペースで区切られたシフトの任意の組み合わせ。|  
+|key2|省略可能です。 有効な値は、すべて判読の英数字と、2 桁の 16 進数値 0 x と VK_constants で前にします。|  
+|mod2|省略可能です。 Ctrl キー、ALT、およびスペースで区切られたシフトの任意の組み合わせ。|  
+|エミュレーター|省略可能です。|  
 |条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
   
 ### <a name="child-elements"></a>子要素  
@@ -80,4 +75,3 @@ KeyBinding 要素には、コマンドのキーボード ショートカット�
 ## <a name="see-also"></a>関連項目  
  [KeyBindings 要素](../extensibility/keybindings-element.md)   
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

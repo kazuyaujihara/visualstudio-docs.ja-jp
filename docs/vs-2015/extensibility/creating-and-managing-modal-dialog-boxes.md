@@ -1,31 +1,26 @@
 ---
 title: 作成して、モーダル ダイアログ ボックスの管理 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4ef32fa43a1242ce8220f9e6454dbac03f0f5ad7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 20710f60a06c02391d467981b01627085c04a336
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736622"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974290"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>モーダル ダイアログ ボックスの作成と管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 内でのモーダル ダイアログ ボックスを作成するときにダイアログ ボックスが表示されますが、ダイアログ ボックスの親ウィンドウが無効になっていることを確認し、ダイアログ ボックスが閉じられた後に、親ウィンドウを再度有効にする必要があります。 これを行わないと、エラーが表示される可能性があります:"Microsoft Visual Studio をシャット ダウンできないモーダル ダイアログがアクティブになっているためです。 アクティブなダイアログを閉じてもう一度やり直してください。"  
+Visual Studio 内でのモーダル ダイアログ ボックスを作成するときにダイアログ ボックスが表示されますが、ダイアログ ボックスの親ウィンドウが無効になっていることを確認し、ダイアログ ボックスが閉じられた後に、親ウィンドウを再度有効にする必要があります。 これを行わないと、エラーが発生する可能性があります。"Microsoft Visual Studio をシャット ダウンできないモーダル ダイアログがアクティブになっているためです。 アクティブなダイアログを閉じてもう一度やり直してください。"  
   
  これを行う 2 つの方法はあります。 推奨される方法、WPF ダイアログ ボックスがある場合から派生させます<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>を呼び出して<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A>ダイアログ ボックスを表示します。 これを行う場合は、親ウィンドウのモーダル状態を管理する必要はありません。  
   
@@ -33,7 +28,7 @@ Visual Studio 内でのモーダル ダイアログ ボックスを作成する�
   
 ## <a name="creating-a-dialog-box-derived-from-dialogwindow"></a>ダイアログ ウィンドウから派生したダイアログ ボックスの作成  
   
-1.  という名前の VSIX プロジェクトを作成する**OpenDialogTest**という名前のメニュー コマンドを追加および**ダイアログ**します。 これを行う方法の詳細については、[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。  
+1.  という名前の VSIX プロジェクトを作成する**OpenDialogTest**という名前のメニュー コマンドを追加および**ダイアログ**します。 これを行う方法の詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
   
 2.  使用する、<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>クラスでは、次のアセンブリへの参照を追加する必要があります (の Framework タブで、**参照の追加** ダイアログ ボックス)。  
   
@@ -133,4 +128,3 @@ Visual Studio 内でのモーダル ダイアログ ボックスを作成する�
     ```  
   
 7.  アプリケーションをビルドして実行します。 **ツール**メニューという名前のコマンドを表示する必要があります**呼び出すダイアログ**します。 このコマンドをクリックすると、ダイアログ ウィンドウが表示されます。
-

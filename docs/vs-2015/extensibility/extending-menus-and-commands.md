@@ -1,14 +1,9 @@
 ---
 title: メニューとコマンドの拡張 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus, common tasks
 - VSPackages, menu tasks
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 36dcc3742b745f8933f340b8df966b1f621d6998
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 83d9dc45863f1ed1b5e11c17b9e922b62b0186dc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793153"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978221"
 ---
 # <a name="extending-menus-and-commands"></a>メニューとコマンドの拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-コマンドは、アクションとプロセスを Visual Studio に追加する方法です。 ほとんどの場合は、コマンドがメニューやツールバーに表示されます。 VSPackage プロジェクト テンプレートは、非常に基本的なコマンドを実装する方法を示します。 若干時間ですがまだ基本的な実装では、[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。  
+コマンドは、アクションとプロセスを Visual Studio に追加する方法です。 ほとんどの場合は、コマンドがメニューやツールバーに表示されます。 VSPackage プロジェクト テンプレートは、非常に基本的なコマンドを実装する方法を示します。 若干時間ですがまだ基本的な実装では、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
   
- Visual Studio コマンド、メニューおよびツールバーの詳細については、[コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)を参照してください。  
+ Visual Studio コマンド、メニューおよびツールバーの詳細については、次を参照してください。[コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。  
   
  コマンド、メニューのおよびツールバーは、VSPackage プロジェクトの一部である .vsct ファイルで定義されます。 Visual Studio IDE およびで .vsct ファイルに関する情報を検索する[方法 VSPackages に追加のユーザー インターフェイス要素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)します。  
   
@@ -67,4 +62,3 @@ ms.locfileid: "51793153"
  メニュー コマンドをローカライズする方法について説明します。  
   
 ## <a name="related-sections"></a>関連項目
-

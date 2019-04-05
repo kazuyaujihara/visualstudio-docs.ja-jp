@@ -1,23 +1,20 @@
 ---
 title: T4 出力ディレクティブ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 03a14993-47ad-4f2e-8032-57db28d5842a
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2e2d30c5d1dee578da14608a4e272fea09184a76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 9262ec994ec847c38ec8d5c1ad95010a929cc4ba
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198524"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58977660"
 ---
 # <a name="t4-output-directive"></a>T4 出力ディレクティブ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +27,7 @@ ms.locfileid: "49198524"
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]という名前のファイルが生成されます**MyTemplate.cs**  
   
- `output` ディレクティブは、実行時 (前処理済み) のテキスト テンプレートには必要ありません。 その代わりに、アプリケーションは `TextTransform()` を呼び出して、生成済みの文字列を取得します。 詳細については、[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)を参照してください。  
+ `output` ディレクティブは、実行時 (前処理済み) のテキスト テンプレートには必要ありません。 その代わりに、アプリケーションは `TextTransform()` を呼び出して、生成済みの文字列を取得します。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)  
   
 ## <a name="using-the-output-directive"></a>出力ディレクティブの使用  
   
@@ -40,10 +37,10 @@ ms.locfileid: "49198524"
   
  各テキスト テンプレートには複数の `output` ディレクティブを含めてはいけません。  
   
-## <a name="extension-attribute"></a>拡張属性  
+## <a name="extension-attribute"></a>extension 属性  
  生成されたテキスト出力ファイルのファイル名の拡張子を指定します。  
   
- 既定値は **.cs**  
+ 既定値は **.cs** です。  
   
  次に例を示します。  
  `<#@ output extension=".txt" #>`  
@@ -80,6 +77,3 @@ ms.locfileid: "49198524"
  `0` (システムの既定値)  
   
  一般に、<xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName> が返す任意のエンコードの WebName 文字列または CodePage 数値を使用できます。
-
-
-

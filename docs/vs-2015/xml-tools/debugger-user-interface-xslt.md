@@ -1,32 +1,27 @@
 ---
 title: デバッガー ユーザー インターフェイス (XSLT) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978340"
 ---
 # <a name="debugger-user-interface-xslt"></a>デバッガー ユーザー インターフェイス (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このトピックでは、デバッガーのウィンドウとダイアログ ボックスについて説明します。 ここでは、XSLT 固有のデバッグ動作を行うユーザー インターフェイスについてのみ説明します。  
   
- 詳細については、、[デバッグ ユーザー インターフェイス リファレンス](../debugger/debugging-user-interface-reference.md)を参照してください。  
+ 詳細については、次を参照してください。、[デバッグ ユーザー インターフェイス リファレンス](../debugger/debugging-user-interface-reference.md)します。  
   
 ## <a name="locals-window"></a>ローカル ウィンドウ  
  [ローカル] ウィンドウには、スタイル シートで定義されているすべての変数に関する情報が表示されます。 [ローカル] ウィンドウには、次の 3 列の情報が含まれています。  
@@ -48,7 +43,7 @@ ms.locfileid: "49891857"
 |`position()`|コンテキスト サイズを基準としたコンテキスト ノードの位置、つまりインデックス番号です。|  
 |`self::node()`|コンテキスト ノードの値です。|  
   
- 詳細については、[方法: デバッガー コンテキストを変更](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)を参照してください。  
+ 詳細については、「[方法 :デバッガー コンテキストを変更](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)します。  
   
 ## <a name="output-window"></a>[出力] ウィンドウ  
  [出力] ウィンドウには、デバッグ中に発生したエラー メッセージやセキュリティ例外がすべて表示されます。  
@@ -96,15 +91,14 @@ ms.locfileid: "49891857"
   
 - ユーザー定義関数は使用できません。  
   
-  詳細については、[方法: XPath 式を評価](../xml-tools/how-to-evaluate-an-xpath-expression.md)を参照してください。  
+  詳細については、「[方法 :XPath 式を評価](../xml-tools/how-to-evaluate-an-xpath-expression.md)します。  
   
 ## <a name="disassembly-window"></a>逆アセンブリ ウィンドウ  
  逆アセンブリ ウィンドウには、XSLT コンパイラによって生成されたアセンブリ コードが表示されます。 このウィンドウは、Visual Studio に備わる他の逆アセンブリ ウィンドウすべてと同じ方法で使用できます。  
   
- 詳細については、[方法: [逆アセンブル] ウィンドウを使用して](../debugger/how-to-use-the-disassembly-window.md)します。  
+ 詳細については、[方法。[逆アセンブル] ウィンドウを使用して](../debugger/how-to-use-the-disassembly-window.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [XSLT のデバッグ](../xml-tools/debugging-xslt.md)   
  [デバッガーの基本事項](../debugger/debugger-basics.md)   
- [変数 Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
+ [[変数] ウィンドウ](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

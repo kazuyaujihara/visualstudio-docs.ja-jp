@@ -1,25 +1,22 @@
 ---
 title: 定義のカスタム モデリング ツールボックス アイテム |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, customizing the toolbox
 ms.assetid: a2463606-1100-40ac-97f3-5ba22ca47b7c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb562eb76e13b5dcb16532ed808b2447de0d6c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973570"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>カスタム モデリング ツールボックス アイテムを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +139,7 @@ ms.locfileid: "51778411"
 >  図ファイルを単独で使用して試した後に .tbxinfo ファイルを使用し始めた場合、ツールボックスには、ツールボックス アイテムの古いバージョンと新しいバージョンの両方が含まれる場合があります。 これは、.tbxinfo ファイルで図ファイルの名前が間違っている場合にも発生します。 この場合、選択して、ツールボックスのショートカット メニューの [**ツールボックスのリセット]** します。 カスタム ツールボックス アイテムが表示されなくなります。 Visual Studio を再起動すると、正しいカスタム アイテムが表示されます。  
   
 ##  <a name="Extension"></a> Visual Studio 拡張機能内のツールボックス項目を配布する方法  
- 他のツールボックス項目を配布する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を Visual Studio Extension (VSIX) パッケージ化してユーザー。 コマンド、プロファイルなどの拡張機能を同じ VSIX ファイルにパッケージ化できます。 詳細については、[Visual Studio 拡張機能の配置](http://go.microsoft.com/fwlink/?LinkId=160780)を参照してください。  
+ 他のツールボックス項目を配布する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を Visual Studio Extension (VSIX) パッケージ化してユーザー。 コマンド、プロファイルなどの拡張機能を同じ VSIX ファイルにパッケージ化できます。 詳細については、次を参照してください。 [Visual Studio 拡張機能の配置](http://go.microsoft.com/fwlink/?LinkId=160780)します。  
   
  Visual Studio 拡張機能をビルドするには、通常は VSIX プロジェクトのテンプレートを使用します。 これを行うには、[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] をインストールしておく必要があります。  
   
@@ -164,7 +161,7 @@ ms.locfileid: "51778411"
   
 4.  プロジェクトにツールボックスの定義を追加します。 含める、 **.tbxinfo**ファイル、図ファイル、ビットマップ ファイル、およびリソース ファイル、およびそれらが VSIX に含まれているかどうかを確認します。  
   
-    -   ソリューション エクスプ ローラーで、VSIX プロジェクトのショートカット メニューの 選択**追加**、**既存項目の**します。 ダイアログ ボックスで、次のように設定します。**オブジェクトの型: すべてのファイル**します。 ファイルを検索し、すべてを選択し、**追加**します。  
+    -   ソリューション エクスプ ローラーで、VSIX プロジェクトのショートカット メニューの 選択**追加**、**既存項目の**します。 ダイアログ ボックスで、次のように設定します。**オブジェクトの種類。すべてのファイル**します。 ファイルを検索し、すべてを選択し、**追加**します。  
   
         > [!NOTE]
         >  このプロジェクトでは、図ファイルをモデル エディターで開くことができません。  
@@ -200,7 +197,7 @@ ms.locfileid: "51778411"
   
      実験用のインスタンスで、関連する型の UML 図を作成するか開きます。 新しいツールがツールボックスに表示されることと、正しく要素が作成されることを確認します。  
   
-10. **デプロイ用の VSIX ファイルを取得する:** Windows エクスプ ローラーでフォルダーを開きます **.\bin\Debug**または **.\bin\Release**を検索する、 **.vsix**ファイル。 これは [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張ファイルです。 このファイルは、自分のコンピューターにインストールできるほか、他の Visual Studio ユーザーに送信することもできます。  
+10. **デプロイ用の VSIX ファイルを入手するには**Windows エクスプ ローラーでフォルダーを開きます **.\bin\Debug**または **.\bin\Release**を検索する、 **.vsix**ファイル。 これは [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張ファイルです。 このファイルは、自分のコンピューターにインストールできるほか、他の Visual Studio ユーザーに送信することもできます。  
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Visual Studio 拡張機能からカスタム ツールをインストールするには  
   
@@ -223,7 +220,7 @@ ms.locfileid: "51778411"
   
 3. 言語のカルチャ コードを名前にしたフォルダーに、追加のアセンブリをそれぞれ配置します。 たとえば、フランス語バージョンのアセンブリをという名前のフォルダー内に配置**fr**します。  
   
-4. `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャ コードの詳細については、[CultureInfo.GetCultures メソッド](http://go.microsoft.com/fwlink/?LinkId=160782)、カルチャ コードの完全な一覧を提供を参照してください。  
+4. `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャ コードの詳細については、次を参照してください。 [CultureInfo.GetCultures メソッド](http://go.microsoft.com/fwlink/?LinkId=160782)、カルチャ コードの完全な一覧を提供します。  
   
 5. Visual Studio 拡張機能をビルドして配布します。  
   
@@ -241,6 +238,3 @@ ms.locfileid: "51778411"
  [プロファイルを定義すると、UML を拡張](../modeling/define-a-profile-to-extend-uml.md)   
  [モデリング図にメニュー コマンドを定義します。](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML モデルの検証制約を定義する](../modeling/define-validation-constraints-for-uml-models.md)
-
-
-

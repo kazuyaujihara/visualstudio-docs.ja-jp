@@ -1,27 +1,22 @@
 ---
 title: ウィンドウ検索 ダイアログ ボックス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Search
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c2f32bf9800bc2ce08039fffcec26f965cbab444
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 72405ced4348228432bc7cf75d135e317a3fd833
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748078"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977824"
 ---
 # <a name="window-search-dialog-box"></a>[ウィンドウ検索] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,6 +66,3 @@ ms.locfileid: "51748078"
   
  [Spy++ リファレンス](../debugger/spy-increment-reference.md)  
  各 spy++ メニューおよびダイアログ ボックスについて説明するセクションが含まれています。
-
-
-

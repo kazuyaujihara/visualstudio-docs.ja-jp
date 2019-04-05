@@ -1,27 +1,22 @@
 ---
 title: IDebugCustomAttributeQuery::GetCustomAttributeByName |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 75afbb8e965a9304b87af1bc80752a32891b65e4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff58df26391c3c3fe312f9268f905b4f4f15b858
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977766"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ int GetCustomAttributeByName(
  [out]長のバイト単位、`ppBlob`パラメーター。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`します。 カスタム属性が存在しない場合は、返す`S_FALSE`します。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 カスタム属性が存在しない場合は、返す`S_FALSE`します。 それ以外の場合はエラー コードを返します。  
   
 ## <a name="example"></a>例  
  次の例では、このメソッドを実装する方法を示しています、 **CDebugClassFieldSymbol**を公開するオブジェクト、 [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)インターフェイス。  
@@ -99,4 +94,3 @@ Error:
   
 ## <a name="see-also"></a>関連項目  
  [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
-

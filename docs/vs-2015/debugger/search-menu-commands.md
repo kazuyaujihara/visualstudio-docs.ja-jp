@@ -1,27 +1,22 @@
 ---
 title: メニュー コマンドの検索 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Search menu commands
 ms.assetid: f36dff9a-49ef-46ce-8c9a-76246458c0d0
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5e674130cb2779c9a5e76aeaa0942a748d02f1ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 96fae66c85af80bf45b81a768a858eb696021c5c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756672"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978398"
 ---
 # <a name="search-menu-commands"></a>[検索] メニューのコマンド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +26,8 @@ ms.locfileid: "51756672"
  **ウィンドウ、プロセス、スレッド/メッセージを検索します。**  
  開く、**ウィンドウ**/**プロセス**/**スレッド**/**検索**ダイアログ ボックスで、使用することができます、**いずれ**または検索条件を指定します。  
   
- **次を検索します。**  
+ **次を検索**  
  次の一致するウィンドウ、プロセス、スレッド、またはメッセージの現在のビューを検索します。 このメニュー項目 (および関連ツール バー ボタン) は一意でない有効な検索結果がある場合にのみ使用できます。  
   
  **前を検索**  
  前の一致するウィンドウ、プロセス、スレッド、またはメッセージの現在のビューを検索します。 このメニュー項目 (および関連ツール バー ボタン) は一意でない有効な検索結果がある場合にのみ使用できます。
-
-
-

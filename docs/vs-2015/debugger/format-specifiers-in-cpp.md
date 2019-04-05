@@ -1,13 +1,8 @@
 ---
 title: Format Specifiers in C++ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -32,13 +27,13 @@ ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810521"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973388"
 ---
 # <a name="format-specifiers-in-c"></a>C++ の書式指定子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ int main() {
   
 |指定子|形式|元の [ウォッチ] の値|表示される値|  
 |---------------|------------|--------------------------|---------------------|  
-|日|10 進整数|0x00000066|102|  
+|d|10 進整数|0x00000066|102|  
 |o|符号なし 8 進整数。|0x00000066|000000000146|  
 |x<br /><br /> **h**|16 進整数|102|0xcccccccc|  
 |x<br /><br /> **H**|16 進整数|102|0xcccccccc|  
@@ -82,19 +77,19 @@ int main() {
 |**sb**|const char* 文字列|\<場所 >"hello world"|hello world|  
 |s8|const char* 文字列|\<場所 >"hello world"|"hello world"|  
 |**s8b**|const char* 文字列|\<場所 >"hello world"|"hello world"|  
-|su|const wchar_t * 定数<br /><br /> char16_t\*文字列|\<位置 > L"hello world"|L"hello world"<br /><br /> u"hello world"|  
-|sub|const wchar_t * 定数<br /><br /> char16_t\*文字列|\<位置 > L"hello world"|hello world|  
-|bstr|BSTR 文字列|\<位置 > L"hello world"|L”hello world”|  
-|**s32**|UTF-32 文字列|\<位置 > U"hello world"|U”hello world”|  
-|**s32b**|UTF-32 文字列 (引用符なし)|\<位置 > U"hello world"|hello world|  
+|su|const wchar_t*  const<br /><br /> char16_t\*文字列|\<location> L”hello world”|L"hello world"<br /><br /> u"hello world"|  
+|sub|const wchar_t*  const<br /><br /> char16_t\*文字列|\<location> L”hello world”|hello world|  
+|bstr|BSTR 文字列|\<location> L”hello world”|L”hello world”|  
+|**s32**|UTF-32 文字列|\<location> U”hello world”|U”hello world”|  
+|**s32b**|UTF-32 文字列 (引用符なし)|\<location> U”hello world”|hello world|  
 |**en**|enum|Saturday(6)|土曜日|  
-|**hv**|ポインター型。検査されるポインター値が配列のヒープ割り当ての結果であることを意味します (たとえば、 `new int[3]`)。|\<location>{\<first member>}|\<位置 > {\<最初のメンバー >、 \<2 番目のメンバー >,…}|  
+|**hv**|ポインター型。検査されるポインター値が配列のヒープ割り当ての結果であることを意味します (たとえば、 `new int[3]`)。|\<位置>{\<最初のメンバー>}|\<位置 > {\<最初のメンバー >、 \<2 番目のメンバー >,…}|  
 |**na**|オブジェクトのポインターのメモリ アドレスを非表示にします。|\<場所 >、{メンバー = value…}|{member=value…}|  
 |**nd**|基底クラスの情報だけを表示し、派生クラスは無視します。|`(Shape*) square` には基底クラスおよび派生クラスの情報が含まれます。|基底クラスの情報だけを表示します。|  
 |hr|HRESULT または Win32 エラー コード。 デバッガーが HRESULT を自動的にデコードする場合、この指定子は不要です。|S_OK|S_OK|  
 |wc|Windows クラス フラグ|0x0010|WC_DEFAULTCHAR|  
 |wm|Windows メッセージ番号|16|WM_CLOSE|  
-|!|データ型の表示カスタマイズをすべて無視した、未処理の書式。|\<表現にカスタマイズ >|4|  
+|!|データ型の表示カスタマイズをすべて無視した、未処理の書式。|\<カスタマイズされた表現>|4|  
   
 > [!NOTE]
 >  **hv** 書式指定子が存在する場合、デバッガーはバッファーの長さを判断して適切な数の要素を表示しようと試みます。 デバッガーは配列の正確なバッファー サイズを常に判断できるとは限らないため、可能な場合には必ずサイズ指定子 `(pBuffer,[bufferSize])` を使用してください。 **hv** 書式指定子は、バッファー サイズをすぐに入手できないシナリオ用に意図されています。  
@@ -106,7 +101,7 @@ int main() {
 |---------------|------------|---------------------------|---------------------|  
 |n|10 進数または **16 進数** の整数|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|`pBuffer` を 32 要素の配列として表示します。|  
 |**[exp]**|整数に評価される有効な C++ 式|pBuffer,[bufferSize]|pBuffer を `bufferSize` 要素の配列として表示します。|  
-|**expand(n)**|整数に評価される有効な C++ 式|pBuffer, expand(2)| `pBuffer`|  
+|**expand(n)**|整数に評価される有効な C++ 式|pBuffer, expand(2)|`pBuffer` の 3 番目の要素を表示します。|  
   
 ##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> C++/CLI での相互運用機能デバッグ用の書式指定子  
  **太字** で示されている指定子は、ネイティブおよび C++/CLI コードをデバッグする場合にのみサポートされます。  
@@ -121,15 +116,15 @@ int main() {
 |**f**|符号付き浮動小数点数値。|(3./2.), f|1.500000|  
 |**e**|符号付き指数表記。|(3.0/2.0)|1.500000e+000|  
 |**g**|符号付き浮動小数点数値または符号付き指数表記の短い方。|(3.0/2.0)|1.5|  
-|c|単一文字|\<場所 >|101 'e'|  
-|s|const char*|\<場所 >|"hello world"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<場所 >|L"hello world"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<場所 >|hello world|  
-|s8|const char*|\<場所 >|"hello world"|  
+|c|単一文字|\<location>|101 'e'|  
+|s|const char*|\<location>|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hello world|  
+|s8|const char*|\<location>|"hello world"|  
 |hr|HRESULT または Win32 エラー コード。 デバッガーが HRESULT を自動的にデコードする場合、この指定子は不要です。|S_OK|S_OK|  
 |wc|Windows クラス フラグ。|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Windows メッセージ番号|0x0010|WM_CLOSE|  
-|!|データ型の表示カスタマイズをすべて無視した、未処理の書式。|\<表現にカスタマイズ >|4|  
+|!|データ型の表示カスタマイズをすべて無視した、未処理の書式。|\<カスタマイズされた表現>|4|  
   
 ###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> C++/CLI での相互運用機能デバッグでのメモリ位置の書式指定子  
  メモリ位置を表すために使われる書式シンボルを次の表に示します。 メモリ位置指定子は、任意の値、または位置を評価する式に使用できます。  
@@ -147,11 +142,6 @@ int main() {
 ###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> C++/CLI での相互運用機能デバッグでの配列としてのポインターのサイズ指定子  
  オブジェクトに対するポインターを配列として表示する場合、整数で配列要素数を指定できます。  
   
-|指定子|形式|式|表示される値|  
+|指定子|形式|正規表現|表示される値|  
 |---------------|------------|----------------|---------------------|  
-|いいえ|10 進整数|pBuffer[32]|`pBuffer` を 32 要素の配列として表示します。|
-
-
-
-
-
+|n|10 進整数|pBuffer[32]|`pBuffer` を 32 要素の配列として表示します。|

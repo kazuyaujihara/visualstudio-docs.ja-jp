@@ -1,26 +1,21 @@
 ---
-title: 'Ca 3075: 安全ではない DTD の処理 |Microsoft Docs'
-ms.custom: ''
+title: CA3075:安全ではない DTD の処理 |Microsoft Docs
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8284f065a829ac7ecc29330fb8a9dad74e92690e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850182"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975783"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: 安全ではない DTD の処理
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075:安全ではない DTD の処理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -64,7 +59,7 @@ ms.locfileid: "49850182"
 
 - 設定によって信頼されていないソースを扱う場合は、DTD 処理を無効にする、 <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>プロパティを **true**します。
 
-- XmlTextReader クラスには、完全信頼の継承確認要求があります。 参照してください [継承確認要求](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)詳細についてはします。
+- XmlTextReader クラスには、完全信頼の継承確認要求があります。 参照してください [継承確認要求](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)詳細についてはします。
 
   .NET 4 以降
 
@@ -387,6 +382,3 @@ namespace TestNamespace
     }
 }
 ```
-
-
-

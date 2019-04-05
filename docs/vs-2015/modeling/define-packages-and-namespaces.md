@@ -1,12 +1,9 @@
 ---
 title: パッケージと名前空間の定義 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, namespaces
 - UML, namespaces
@@ -16,13 +13,13 @@ ms.assetid: 79147068-02d5-4b70-933d-f647c1da3829
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b9295b5af83270069df11e6460ee85dfe0fd9c73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a949d72783f3d8ac1c2f0338e4ad7057f74653aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741907"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972928"
 ---
 # <a name="define-packages-and-namespaces"></a>パッケージと名前空間の定義
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -213,12 +210,12 @@ Visual Studio で、*パッケージ*はクラス、ユース ケース、コン
 |--------------|-------------------|-----------------|  
 |**Name**|(新しい名前)|パッケージ名。 図上、もしくはプロパティ ウィンドウ内で変更できます。|  
 |**修飾名**|*コンテナー* ::*パッケージ名*|完全名。このパッケージを含むパッケージまたはモデルの名前がプレフィックスとして付けられます。 詳細については、「[名前空間](#Namespaces)」を参照してください。|  
-|**プロファイル**|(空)|このパッケージにリンクされているプロファイルの一覧。 これらのプロファイルは、パッケージ内の要素に適用できるステレオタイプを提供します。 詳細については、[プロファイルとステレオタイプを使用してモデルをカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)を参照してください。|  
+|**プロファイル**|(空)|このパッケージにリンクされているプロファイルの一覧。 これらのプロファイルは、パッケージ内の要素に適用できるステレオタイプを提供します。 詳細については、次を参照してください。[プロファイルとステレオタイプを使用してモデルをカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)します。|  
 |**可視性**|**Public**|親パッケージ外でのパッケージの可視性。|  
-|**作業項目**|(空)|リンクされた作業項目の一覧。 詳細については、[モデル要素をリンクし、作業項目](../modeling/link-model-elements-and-work-items.md)を参照してください。|  
+|**作業項目**|(空)|リンクされた作業項目の一覧。 詳細については、[モデル要素と作業項目とのリンク](../modeling/link-model-elements-and-work-items.md)を参照してください。|  
 |**定義の場所**|(名前)|パッケージの詳細が格納されているファイルの名前。 ファイルは、 **ModelDefinition**プロジェクト フォルダーです。 この情報は、ソース管理の際に役立ちます。|  
 |**説明**|(空)|パッケージの説明。|  
-|**ステレオタイプ**|(空)|このパッケージに適用されるステレオタイプ。 使用できる一連のステレオタイプは、このパッケージと、このパッケージを含むパッケージ用に選択したプロファイルによって決まります。 詳細については、[プロファイルとステレオタイプを使用してモデルをカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)を参照してください。|  
+|**ステレオタイプ**|(空)|このパッケージに適用されるステレオタイプ。 使用できる一連のステレオタイプは、このパッケージと、このパッケージを含むパッケージ用に選択したプロファイルによって決まります。 詳細については、次を参照してください。[プロファイルとステレオタイプを使用してモデルをカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)します。|  
   
 ## <a name="how-packages-are-stored"></a>パッケージを格納する方法  
  新しいパッケージを作成するときに、新しい **.uml**にファイルが作成、 **ModelDefinition**プロジェクト フォルダーです。 これは、パッケージではまた、ルート モデルにも格納されて、 **.uml**ファイル。  
@@ -227,9 +224,6 @@ Visual Studio で、*パッケージ*はクラス、ユース ケース、コン
   
 ## <a name="see-also"></a>関連項目  
  [UML モデルおよびダイアグラムを編集します。](../modeling/edit-uml-models-and-diagrams.md)   
- [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)   
+ [UML クラス図: 参照](../modeling/uml-class-diagrams-reference.md)   
  [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)   
  [モデルおよび図のバージョン管理](../modeling/manage-models-and-diagrams-under-version-control.md)
-
-
-

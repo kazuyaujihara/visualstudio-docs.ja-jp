@@ -1,14 +1,9 @@
 ---
 title: '方法: C/C++ プロジェクトのコード分析プロパティを設定 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native
 - VC.Project.VCCLCompilerTool.EnablePrefast
@@ -23,13 +18,13 @@ ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
 caps.latest.revision: 19
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 447bb9dfedc93594c6af014b830bfabc1b7ecf39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ebed266924861dac4bfc9e316a56907dbd11534
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752656"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972854"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>方法: C/C++ プロジェクトのコード分析プロパティを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,6 +55,3 @@ ms.locfileid: "51752656"
 ## <a name="see-also"></a>関連項目  
  [マネージド コードの品質の分析](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [C/C++ コードの警告に対応するコードの分析](../code-quality/code-analysis-for-c-cpp-warnings.md)
-
-
-

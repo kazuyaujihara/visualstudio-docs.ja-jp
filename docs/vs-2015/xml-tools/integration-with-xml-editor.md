@@ -1,25 +1,20 @@
 ---
 title: XML エディターとの統合 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 81cf6b3cb58ceeb118b6e3cc181d417104c40cb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3024f9a8b33f27797c186b06b7ce89a7c18d844
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895406"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978167"
 ---
 # <a name="integration-with-xml-editor"></a>XML エディターとの統合
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ XML スキーマ デザイナーは、XML エディターと統合されてい�
   
 ## <a name="see-also"></a>関連項目  
  [XML スキーマ エクスプローラー](../xml-tools/xml-schema-explorer.md)
-
-
-

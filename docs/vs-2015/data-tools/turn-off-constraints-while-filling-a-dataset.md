@@ -1,12 +1,9 @@
 ---
 title: データセットの読み込み中に制約を無効にする |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - DataRow.BeginEdit
 - DataRow.EndEdit
@@ -25,19 +22,19 @@ ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c47d3cb5e02117cb75ab86579b0cb3b166bd510
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f39d506585398a766ba8b74bb974ec6fef7ca3a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972402"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>データセットの読み込み中に制約をオフにする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-データセットに制約 (外部キー制約) などが含まれている場合、theycan は、データセットに対して実行される操作の順序に関連するエラーを発生します。 たとえば、loadingrelated 親レコードの前に子レコードを読み込むことができます制約に違反する、エラーが発生します。 子レコードを読み込むとすぐに制約は、関連する親レコードをチェックし、エラーを発生させます。  
+データセットに制約 (外部キー制約) などが含まれている場合、theycan は、データセットに対して実行される操作の順序に関連するエラーを発生します。 たとえば、loadingrelated 親レコードの前に子レコードを読み込むことができます制約に違反する、エラーが発生します。 子レコードを読み込んだ直後に、関連する親があるかどうかが制約でチェックされ、エラーが生成されます。  
   
  一時的に制約を中断する機構がない場合は、レコードを子テーブルに読み込もうとするたびにエラーが生成されます。 データセットのすべての制約を中断する別の方法として、<xref:System.Data.DataRow.BeginEdit%2A> プロパティおよび <xref:System.Data.DataRow.EndEdit%2A> プロパティを使用できます。  
   
@@ -53,11 +50,10 @@ ms.locfileid: "49259910"
   
 ### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>データセット デザイナーを使って更新制約を中断するには  
   
-1.  データセットを開き、[の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md)します。 詳細については、[方法: データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)を参照してください。  
+1.  データセット デザイナーでデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
   
 2.  **[プロパティ]** ウィンドウで、 <xref:System.Data.DataSet.EnforceConstraints%2A> プロパティを `false`に設定します。  
   
 ## <a name="see-also"></a>関連項目  
  [Tableadapter を使用してデータセットを入力します。](../data-tools/fill-datasets-by-using-tableadapters.md)   
  [データセットのリレーションシップ](../data-tools/relationships-in-datasets.md)
-
