@@ -1,12 +1,9 @@
 ---
 title: 同時実行例外の処理 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220418"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963249"
 ---
 # <a name="handle-a-concurrency-exception"></a>コンカレンシー例外を処理する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ ms.locfileid: "50220418"
   
 4.  Northwind データベースの `Customers` テーブルからデータセットにデータを読み込みます。  
   
-5.  使用して、 [Visual Database Tools](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1)に直接アクセスする Visual Studio で、`Customers`データ テーブルし、レコードを変更します。  
+5.  使用して、 [Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1)に直接アクセスする Visual Studio で、`Customers`データ テーブルし、レコードを変更します。  
   
 6.  別の値に同じレコードを変更、データセットを更新および発生している同時実行エラーが発生すると、データベースへの変更の書き込みを試行します。  
   
@@ -56,10 +53,10 @@ ms.locfileid: "50220418"
 ## <a name="prerequisites"></a>必須コンポーネント  
  このチュートリアルを完了するための要件は次のとおりです。  
   
--   Northwind サンプル データベースにアクセスして更新を実行するためのアクセス許可。 詳細については、[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)を参照してください。  
+-   Northwind サンプル データベースにアクセスして更新を実行するためのアクセス許可。
   
 > [!NOTE]
->  アクティブな設定または使用しているエディションによって、ヘルプの説明から、ダイアログ ボックスとメニュー コマンドが表示が異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+>  アクティブな設定または使用しているエディションによって、ヘルプの説明から、ダイアログ ボックスとメニュー コマンドが表示が異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する  
  新しい Windows アプリケーションの作成からチュートリアルを開始します。  
@@ -129,13 +126,13 @@ ms.locfileid: "50220418"
   
  次の 3 つのバージョンのレコードを持つユーザーの applicationpresents:  
   
-- データベースの現在のレコード  
+- データベース内の現在のレコード  
   
 - データセットに読み込まれた元のレコード  
   
-- データセットの変更の提案  
+- データセット内の提案された変更  
   
-  ユーザーに提案されたバージョンでは、データベースを上書きするか、または更新をキャンセルし、データベースから新しい値でデータセットを更新できます。  
+  ユーザーは、提案されたバージョンでデータベースを上書きするか、更新をキャンセルし、データベースから新しい値をデータセットに再読み込むことができます。  
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>コンカレンシー エラーを処理できるようにするには  
   
@@ -172,12 +169,12 @@ ms.locfileid: "50220418"
   
 ##### <a name="to-create-the-message-to-display-to-the-user"></a>ユーザーに表示するメッセージを作成するには  
   
--   次のコードを追加して、メッセージを作成、**コード エディター**します。 このコードは、`UpdateDatabase` メソッドの下に入力します。  
+-   **コード エディター**に次のコードを追加して、メッセージを作成します。 このコードは、`UpdateDatabase` メソッドの下に入力します。  
   
      [!code-csharp[VbRaddataConcurrency#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConcurrency/CS/Form1.cs#4)]
      [!code-vb[VbRaddataConcurrency#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConcurrency/VB/Form1.vb#4)]  
   
-### <a name="process-the-users-response"></a>ユーザーの応答を処理します。  
+### <a name="process-the-users-response"></a>ユーザーの応答の処理  
  メッセージ ボックスに、ユーザーの応答を処理するコードも必要です。 、提案された変更で、データベースの現在のレコードを上書きまたはローカルの変更を破棄し、現在、データベース内にあるレコードをデータ テーブルを更新することもできます。 ユーザーが [はい] を選択した場合、<xref:System.Data.DataTable.Merge%2A>メソッドを呼び出すと、 *preserveChanges*引数に設定`true`します。 これにより、レコードの元のバージョンがデータベース内のレコードと一致するように成功すると、ある更新の試行です。  
   
 ##### <a name="to-process-the-user-input-from-the-message-box"></a>メッセージ ボックスからのユーザーの入力を処理するには  
@@ -198,7 +195,7 @@ ms.locfileid: "50220418"
   
 3.  **ビュー** ] メニューの [選択**サーバー エクスプ ローラー**します。  
   
-4.  **サーバー エクスプ ローラー**、接続、アプリケーションを使用して、順に展開を展開、**テーブル**ノード。  
+4.  **サーバー エクスプローラー**で、アプリケーションで使用する接続を展開し、次に **[テーブル]** ノードを展開します。  
   
 5.  右クリックし、**顧客**テーブルし、**テーブル データの表示**します。  
   
@@ -211,7 +208,7 @@ ms.locfileid: "50220418"
   
 8.  フォームの最初のレコードで (`ALFKI`)、変更`ContactName`に`Maria Anders1`します。  
   
-9. 選択、**保存**ボタンをクリックします。  
+9. **[保存]** ボタンを選択します。  
   
      コンカレンシー エラーが発生し、メッセージ ボックスが表示されます。  
   

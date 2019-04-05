@@ -1,13 +1,8 @@
 ---
 title: デバッガー内の式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -31,13 +26,13 @@ ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf75965a9be7c8e2a9a09cc43fa6eec632d6bf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a284fc35a5a792171e5102518bcfa553337dd15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722222"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963687"
 ---
 # <a name="expressions-in-the-debugger"></a>デバッガー内の式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,8 +219,3 @@ int main()
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C# の書式指定子](../debugger/format-specifiers-in-csharp.md)   
  [擬似変数](../debugger/pseudovariables.md)
-
-
-
-
-

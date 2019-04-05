@@ -1,25 +1,22 @@
 ---
 title: プログラム コードで UML モデルを読み取る |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, reading models
 ms.assetid: 0f63105e-6079-498a-94f1-318c0f5f9621
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 62355c8b934b152aae8d3a4102432d2eb0553473
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 8e90b66288d15abdaf85c519bd89deb6262e4363
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721243"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963274"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>プログラム コードで UML モデルを読み取る
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,9 +66,9 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 ```  
   
 ## <a name="alternative-methods"></a>その他の方法  
- 多くのアプリケーション、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modelbus では参照モデル内の要素を保全性とこのトピックで説明する方法よりも高い柔軟性をできます。 同じモデル、または別のモデル内の任意の要素をリンクするための、標準的な方法を使用できます。 詳細については、[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)を参照してください。  
+ 多くのアプリケーション、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modelbus では参照モデル内の要素を保全性とこのトピックで説明する方法よりも高い柔軟性をできます。 同じモデル、または別のモデル内の任意の要素をリンクするための、標準的な方法を使用できます。 詳細については、次を参照してください。[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)します。  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API を使用して、ユーザー インターフェイスでモデルおよび図を開くこともできます。 詳細については、[Visual Studio API を使用して UML モデルを開く](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)を参照してください。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API を使用して、ユーザー インターフェイスでモデルおよび図を開くこともできます。 詳細については、次を参照してください。 [Visual Studio API を使用して UML モデルを開く](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)します。  
   
 ##  <a name="Standalone"></a> スタンドアロン アプリケーション  
  前のセクションの例は、Visual Studio 拡張機能で動作します。 スタンドアロン アプリーションでモデルを読み込むこともできますが、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトにいくつかの参照を追加する必要があります。  
@@ -110,6 +107,3 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 ## <a name="see-also"></a>関連項目  
  [UML API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)   
  [UML モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

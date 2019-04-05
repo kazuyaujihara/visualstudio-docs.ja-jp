@@ -1,26 +1,21 @@
 ---
 title: 'チュートリアル: エディター拡張機能でシェル コマンドの使用 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64d50dcd56f1421e4ffe1ab33b5396c436eeeda
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b898273defe7da4cf8d082b01089c8d6476e8357
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962668"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でシェル コマンドを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ VSPackage からには、エディターにメニュー コマンドなどの機
 ## <a name="creating-an-extension-with-a-menu-command"></a>メニュー コマンドを使用した拡張機能の作成  
  という名前のメニュー コマンドを配置する VSPackage を作成**追加 Adornment**上、**ツール**メニュー。  
   
-1.  という名前の c# VSIX プロジェクトを作成する`MenuCommandTest`、カスタム コマンドの項目テンプレート名を追加および**AddAdornment**します。 詳細については、[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。  
+1.  という名前の c# VSIX プロジェクトを作成する`MenuCommandTest`、カスタム コマンドの項目テンプレート名を追加および**AddAdornment**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
   
 2.  MenuCommandTest という名前のソリューションが開かれます。 MenuCommandTestPackage ファイルがメニュー コマンドを作成し、に配置するコードを**ツール**メニュー。 この時点では、コマンドが発生すると、メッセージ ボックスを表示します。 後の手順では、コメントの表示要素を表示するときに変更する方法を紹介します。  
   
@@ -59,7 +54,7 @@ VSPackage からには、エディターにメニュー コマンドなどの機
  VSPackage を MEF コンポーネントを追加するため、マニフェストで両方の種類のアセットを指定する必要があります。  
   
 > [!NOTE]
->  MEF の詳細については、[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)を参照してください。  
+>  MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)します。  
   
 #### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>VSPackage プロジェクトを MEF コンポーネントを参照するには  
   
@@ -729,5 +724,4 @@ VSPackage からには、エディターにメニュー コマンドなどの機
      Fourscore.  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

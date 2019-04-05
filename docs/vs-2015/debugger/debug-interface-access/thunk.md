@@ -1,14 +1,9 @@
 ---
 title: サンク |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 01abb95f-d89a-465c-a4eb-8e8509598c95
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 82710f597d37146617b64ec89a1d59b056f941dd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 68e5542f3257ead72c13d454affbd0713325a7b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741144"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972714"
 ---
 # <a name="thunk"></a>サンク
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,8 +32,8 @@ ms.locfileid: "51741144"
 |プロパティ|データの種類|説明|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|いずれかのアクセス修飾子 属性、 [CV_access_e 列挙型](../../debugger/debug-interface-access/cv-access-e.md)(DIA SDK バージョン 8.0 でのみまたはそれ以降) の値。|  
-|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|場所のオフセットの部分詳細については、、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)を参照してください。|  
-|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|`DWORD`|場所のセクションの一部詳細については、、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)を参照してください。|  
+|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|場所のオフセットの部分詳細については、次を参照してください。、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)します。|  
+|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|`DWORD`|場所のセクションの一部詳細については、次を参照してください。、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)します。|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|(DIA SDK バージョン 8.0 の下でのみまたはそれ以降) が存在する場合は、クラスの親を囲みます。|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|それを囲むクラス親シンボル (DIA SDK バージョン 8.0 でのみまたはそれ以降) の ID。|  
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|サンクが (DIA SDK バージョン 8.0 でのみまたはそれ以降) の定数としてマークされている場合は TRUE。|  
@@ -70,6 +65,3 @@ ms.locfileid: "51741144"
  [シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)   
  [THUNK_ORDINAL 列挙型](../../debugger/debug-interface-access/thunk-ordinal.md)
-
-
-

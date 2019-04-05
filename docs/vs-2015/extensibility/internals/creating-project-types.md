@@ -1,27 +1,22 @@
 ---
 title: プロジェクトの種類を作成する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58b31e363d78af7902e6174c9683b7e794031263
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bbe65d1615603e4dc7546dbfe3530093c62528e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756205"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978115"
 ---
 # <a name="creating-project-types"></a>プロジェクト タイプの作成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51756205"
  [プロジェクト タイプのデザインの方針](../../extensibility/internals/project-type-design-decisions.md)  
  項目、プロジェクト ファイルの永続化、および新しいプロジェクトの種類を作成する前に作成する必要があるコミットメント メカニック設計上の決定について説明します。  
   
- [チェック リスト: 新しいプロジェクト タイプの作成](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ [チェックリスト:新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)  
  コードの編集しコンパイル、ビルド、デバッグ、およびプロジェクト内のアプリケーションの配置のプログラミング タスクをサポートする新しいプロジェクトの種類を作成する場合の手順の概要を示します。  
   
  [プロジェクト ファクトリを使用したプロジェクト インスタンスの作成](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  
@@ -65,4 +60,3 @@ ms.locfileid: "51756205"
   
  [プロジェクト タイプ](../../extensibility/internals/project-types.md)  
  プロジェクトを使用してコードを変更、コンパイルしコード、ビルドし実行、コードをデバッグする方法について説明し、プロジェクトの種類を作成する方法についての詳細なトピックへのリンクを提供します。
-

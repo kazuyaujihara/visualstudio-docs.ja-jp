@@ -1,26 +1,21 @@
 ---
 title: エディター ファクトリ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - editor factories
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 74ea8d296db643e74654f9016c1f5bff4f34c6d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: fbf30d1fdb4fcce1e28a3c10c9949f1a11eae529
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809455"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58973901"
 ---
 # <a name="editor-factories"></a>エディター ファクトリ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51809455"
  [!code-csharp[VSSDKEditorFactories#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkeditorfactories/cs/vssdkeditorfactoriespackage.cs#1)]
  [!code-vb[VSSDKEditorFactories#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkeditorfactories/vb/vssdkeditorfactoriespackage.vb#1)]  
   
- エディターは、そのエディターによって処理されるファイルの種類を開くことが最初に読み込まれます。 特定のエディターまたは既定のエディターを開くことができます。 既定のエディターを選択すると、統合開発環境 (IDE) は正しいエディターを開くための決定し、開かれます。 詳細については、[プロジェクトでファイルを開くエディターを決定する](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)を参照してください。  
+ エディターは、そのエディターによって処理されるファイルの種類を開くことが最初に読み込まれます。 特定のエディターまたは既定のエディターを開くことができます。 既定のエディターを選択すると、統合開発環境 (IDE) は正しいエディターを開くための決定し、開かれます。 詳細については、次を参照してください。[プロジェクトでファイルを開くエディターを決定する](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)します。  
   
 ## <a name="registering-editor-factories"></a>エディター ファクトリの登録  
  作成したエディターを使用する前に処理できるファイル拡張子を含めて、についてはまず登録する必要があります。  
@@ -61,4 +56,3 @@ ms.locfileid: "51809455"
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
  [ドキュメント テーブルの実行](../extensibility/internals/running-document-table.md)
-

@@ -1,14 +1,9 @@
 ---
 title: '方法: 組み込みのフォントおよび色スキームへのアクセス |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
 - font and color control [Visual Studio SDK], categories
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b96cb16182447ca636ee363a2cf62a33dcd6823
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962592"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>方法: 組み込みのフォントおよび色スキームへのアクセス
+# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>方法: 組み込みのフォントおよび色スキームへをアクセスします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウに関連付けられているフォントおよび色のスキームがあります。 このスキームを通じてアクセスできる、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>インターフェイス。  
@@ -50,7 +45,7 @@ Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウ�
   
 2. カテゴリの名前は、IDE に表示するときに、必要に応じてローカライズできるように、VSPackage のリソース (.rc) ファイル内の文字列テーブルに追加する必要があります。  
   
-    詳細については、[を追加または削除する文字列](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab)を参照してください。  
+    詳細については、次を参照してください。[を追加または削除する文字列](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab)します。  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>組み込みのフォントと色を使用してカテゴリを登録するには  
   
@@ -65,7 +60,7 @@ Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウ�
     |名前|型|データ|説明|  
     |----------|----------|----------|-----------------|  
     |カテゴリ|REG_SZ|GUID|ストック フォントおよびカラー スキームを格納しているカテゴリを識別する任意の GUID。|  
-    |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> この GUID は、既定のフォントと色の構成を使用して、すべての Vspackage によって使用されます。|  
+    |パッケージ|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> この GUID は、既定のフォントと色の構成を使用して、すべての Vspackage によって使用されます。|  
     |NameID|REG_DWORD|ID|VSPackage のローカライズ可能なカテゴリ名のリソース ID。|  
     |ToolWindowPackage|REG_SZ|GUID|VSPackage の実装の GUID、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>インターフェイス。|  
   
@@ -107,4 +102,3 @@ if (spPropCatContainer != NULL){
  [フォントと色づけのテキストの色の情報を取得します。](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [ストアドのフォントと色の設定にアクセスします。](../extensibility/accessing-stored-font-and-color-settings.md)   
  [フォントと色の概要](../extensibility/font-and-color-overview.md)
-

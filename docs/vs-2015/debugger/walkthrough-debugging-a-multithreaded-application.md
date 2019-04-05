@@ -1,14 +1,9 @@
 ---
 title: 'チュートリアル: マルチ スレッド アプリケーションのデバッグ |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5dd742411710698cb2dd626e211cb0e73b8379e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8fead0386d1ba820be21e65009c78791c7368bcd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798637"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978062"
 ---
-# <a name="walkthrough-debugging-a-multithreaded-application"></a>チュートリアル : マルチスレッド アプリケーションのデバッグ
+# <a name="walkthrough-debugging-a-multithreaded-application"></a>チュートリアル: マルチ スレッド アプリケーションのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] では、改良された**スレッド**ウィンドウとその他のユーザー インターフェイスのマルチ スレッド アプリケーションをデバッグするが簡単に強化します。 このチュートリアルにはあまり時間がかかりませんが、これを完了することで、マルチスレッド アプリケーションのデバッグに使用する新しいインターフェイスを理解できます。  
@@ -42,7 +37,7 @@ ms.locfileid: "51798637"
   
      **[新しいプロジェクト]** ダイアログ ボックスが表示されます。  
   
-2.  **プロジェクトの種類**s ボックスに、好みの言語をクリックします。 **Visual Basic**、 **Visual c#**、または**Visual c**します。  
+2.  **プロジェクトの種類**s ボックスに、好みの言語をクリックします。**Visual Basic**、 **Visual c#**、または**Visual C**します。  
   
 3.  **テンプレート**ボックスで、選択**コンソール アプリケーション**または**CLR コンソール アプリケーション**します。  
   
@@ -54,7 +49,7 @@ ms.locfileid: "51798637"
   
 6.  ソース ファイルに表示されるコードを削除し、トピックのスレッドの作成」セクションに表示される例のコードに置き換えます[スレッドの作成と開始時にデータを渡す](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d)します。  
   
-7.  **ファイル** メニューのをクリックして**すべて保存**します。  
+7.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
 #### <a name="to-begin-the-walkthrough"></a>チュートリアルを開始するには  
   
@@ -129,7 +124,7 @@ Thread::Sleep(3000);
 2.  移動して、**デバッグの場所**ツールバーをクリックして、**スレッド**一覧。  
   
     > [!NOTE]
-    >  著名な 3 つのリストで、このツールバーを識別できます。**プロセス**、**スレッド**、および**スタック フレーム**します。  
+    >  このツールバーは、著名な 3 つのリストで識別できます。**プロセス**、**スレッド**、および**のスタック フレーム**します。  
   
 3.  ボックスに表示されているスレッド数に注目します。  
   
@@ -143,7 +138,7 @@ Thread::Sleep(3000);
   
 7.  フラグ アイコンの上にポインターを置きます。  
   
-     ポップアップが表示されます。 このポップアップはどのようなモード、**スレッド**リスト:**フラグが設定されたスレッドのみを表示する**します。  
+     ポップアップが表示されます。 このポップアップはどのようなモード、**スレッド**リストします。**表示するには、スレッドのみフラグが設定された**します。  
   
 8.  切り替わりますフラグ ボタンをクリックして**すべてのスレッド**モード。  
   
@@ -151,7 +146,7 @@ Thread::Sleep(3000);
   
 10. 切り替わりますフラグ ボタンをクリックして**フラグが設定されたスレッドのみを表示する**します。  
   
-11. **デバッグ**メニューで、 **Windows**  をクリックし、**スレッド**します。  
+11. **[デバッグ]** メニューの **[ウィンドウ]** をポイントし、**[スレッド]** をクリックします。  
   
      **スレッド**ウィンドウが表示されます。 1 つのスレッドに、目立つ色のフラグ アイコンが割り当てられています。  
   
@@ -245,7 +240,7 @@ Thread::Sleep(3000);
   
      3 つのアクティブなスレッドを変更する方法を確認できました: を使用して、**スレッド**ウィンドウで、**スレッド**ボックスに、**デバッグの場所**ツールバー、およびスレッド インジケーターで、ソース ウィンドウです。  
   
-     スレッド インジケーターを使用すると、特定の場所で停止されたスレッドのみを切り替えることができます。 使用して、**スレッド**ウィンドウと**デバッグの場所**ツールバーで、他のスレッドに切り替えることができます。  
+     スレッド インジケーターを使用すると、特定の場所で停止されたスレッドのみを切り替えることができます。 **[スレッド]** ウィンドウと **[デバッグの場所]** ツール バーを使用すると、任意のスレッドに切り替えることができます。  
   
 ## <a name="freezing-and-thawing-thread-execution"></a>スレッド実行の凍結と凍結解除  
   
@@ -262,8 +257,5 @@ Thread::Sleep(3000);
      アクティブ スレッド列と**Suspend**列の変更。  
   
 ## <a name="see-also"></a>関連項目  
- [マルチ スレッド アプリケーションをデバッグします。](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [方法 : デバッグ中に別のスレッドに切り替える](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-
-
-
+ [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [方法: デバッグ中に別のスレッドに切り替える](../debugger/how-to-switch-to-another-thread-while-debugging.md)

@@ -1,12 +1,9 @@
 ---
 title: ファイル格納処理および XML シリアル化のカスタマイズ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 7aae4ee1006a7a329bc8ad5ca9f93b756e309458
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867448"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963584"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>ファイル格納処理および XML シリアル化処理のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +30,7 @@ ms.locfileid: "49867448"
  高度なカスタマイズのプログラム コードを記述することもできます。  
   
 > [!NOTE]
->  特定の形式でモデルを保存する場合、そのフォームから再読み込みする必要はありませんは、カスタムのシリアル化スキームではなく、モデルからの出力を生成するテキスト テンプレートの使用を検討してください。 詳細については、[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)を参照してください。  
+>  特定の形式でモデルを保存する場合、そのフォームから再読み込みする必要はありませんは、カスタムのシリアル化スキームではなく、モデルからの出力を生成するテキスト テンプレートの使用を検討してください。 詳細については、次を参照してください。[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)します。  
   
 ## <a name="model-and-diagram-files"></a>モデルと図ファイル  
  各モデルは、通常は 2 つのファイルに保存されます。  
@@ -171,7 +168,7 @@ ms.locfileid: "49867448"
   
      あいまいさをチェックする検証を自動的に生成されたメソッドが存在します。 メソッドが含まれる、`Load`検証カテゴリ。 これにより、ファイルを再度開くできない可能性があります、そのユーザーを警告はことを確認します。  
   
-     詳細については、[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)を参照してください。  
+     詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。  
   
 ### <a name="moniker-paths-and-qualifiers"></a>モニカーのパスと修飾子  
  修飾キー モニカーは、モニカー キーで終了し、埋め込みツリー内の親のモニカーが付いています。 たとえば、アルバムのモニカーとします。  
@@ -313,6 +310,3 @@ ms.locfileid: "49867448"
 ## <a name="see-also"></a>関連項目  
  [移動して、プログラム コードでモデルを更新しています](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [ドメイン固有言語からのコード生成](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

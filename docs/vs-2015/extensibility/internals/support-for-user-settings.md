@@ -1,14 +1,9 @@
 ---
 title: ユーザー設定のサポート |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Custom Settings Points
 - user settings [Visual Studio SDK], registering persistence support
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 445f95b1c52b5ada41918cf0f7d8120d912c209f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 8057aa7f2e69d88f6e9cbdf20f9d13105aa031c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759899"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963917"
 ---
 # <a name="support-for-user-settings"></a>ユーザー設定のサポート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,24 +33,24 @@ VSPackage は、ユーザーが選択したときに永続化状態変数のグ�
      単一 VSPackage は、いくつかのカスタム設定ポイントをサポートしている場合は、各カスタム設定ポイントが別のクラスによって実装されるの一意のインスタンスで登録されますが、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラス。 そのため、クラスの実装設定では、1 つ以上のカテゴリの設定をサポートできます。  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>カスタム設定ポイントのレジストリ エントリの詳細  
- 次の場所にレジストリ エントリでのカスタム設定ポイントが作成されます: hklm \software\microsoft\visualstudio\\*\<バージョン >* \UserSettings\\`<CSPName>`ここで、`<CSPName>` VSPackage のサポートは、カスタム設定ポイントの名前と*\<バージョン >* のバージョンは、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]8.0 などの。  
+ 次の場所にレジストリ エントリでは、カスタム設定ポイントが作成されます。Hklm \software\microsoft\visualstudio\\*\<バージョン >* \UserSettings\\`<CSPName>`ここで、 `<CSPName>` VSPackage がサポートをカスタム設定ポイントの名前には*\<バージョン >* のバージョンである[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]8.0 などの。  
   
 > [!NOTE]
->  Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)を参照してください。  
+>  Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、次を参照してください。[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)します。  
   
  レジストリ エントリの構造は、次に示します。  
   
- Hklm \software\microsoft\visualstudio\\*\<バージョン >* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
   
- `<CSPName`> = '#12345' s  
+ `<CSPName`>= s '#12345'  
   
- パッケージ ' {XXXXXX XXXX XXXX XXXX XXXXXXXXX}' を =  
+ Package = '{XXXXXX XXXX XXXX XXXX XXXXXXXXX}'  
   
- カテゴリ ' {YYYYYY YYYY YYYY YYYY YYYYYYYYY}' を =  
+ Category = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}'  
   
- ResourcePackage ' {ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}' を =  
+ ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
   
- AlternateParent CategoryName を =  
+ AlternateParent = CategoryName  
   
 |名前|型|データ|説明|  
 |----------|----------|----------|-----------------|  
@@ -64,4 +59,3 @@ VSPackage は、ユーザーが選択したときに永続化状態変数のグ�
 |カテゴリ|REG_SZ|GUID|設定カテゴリを識別する GUID。<br /><br /> 相互運用機能アセンブリに基づく実装では、この値は任意に選択したは、GUID を[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE に渡します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A>メソッド。 これら 2 つのメソッドのすべての実装では、その GUID 引数を確認してください。<br /><br /> MPF に基づいた実装では、この GUID を取得するので、<xref:System.Type>実装するクラスの[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]設定メカニズム。|  
 |ResourcePackage|REG_SZ|GUID|任意。<br /><br /> サテライト DLL を含むへのパスでは、実装する VSPackage がそれらを指定しない場合、文字列がローカライズされました。<br /><br /> MPF リフレクションを使用して、適切なリソース、VSPackage を取得するため、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラスは、この引数を設定しません。|  
 |AlternateParent|REG_SZ|このカスタム設定ポイントを格納しているツール オプション ページの下のフォルダーの名前です。|任意。<br /><br /> 設定の実装をサポートしている場合にのみ、この値を設定する必要があります**ツール オプション**で永続化メカニズムを使用するページ、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]オートメーション モデルの状態を保存するメカニズムではなく。<br /><br /> AlternateParent キーの値は、このような場合、`topic`のセクション、`topic.sub-topic`特定を識別するために使用される文字列**制御**ページ。 たとえば、**制御**ページ`"TextEditor.Basic"`AlternateParent の値になります。`"TextEditor"`します。<br /><br /> ときに<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>カスタム設定ポイントを生成します。 これは、カテゴリ名と同じです。|
-

@@ -1,14 +1,9 @@
 ---
 title: '方法: OnStart メソッドをデバッグ |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,18 +19,18 @@ ms.assetid: b06b5d65-424b-490f-bf58-97583cd7006a
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37ea2118c11eaebd0619a3845fc0177741cf34de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d77d06e720ebe9146f907d8868c46c94addd5d99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974569"
 ---
-# <a name="how-to-debug-the-onstart-method"></a>方法 : OnStart メソッドをデバッグする
+# <a name="how-to-debug-the-onstart-method"></a>方法: OnStart メソッドをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows サービスをデバッグするには、サービスを起動し、デバッガーをサービス プロセスにアタッチします。 詳細については、「 [How to: Debug Windows Service Applications](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)」を参照してください。 ただし、Windows サービスの <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> メソッドをデバッグするには、メソッド内部からデバッガーを起動する必要があります。  
+Windows サービスをデバッグするには、サービスを起動し、デバッガーをサービス プロセスにアタッチします。 詳細については、「[方法 :Windows サービス アプリケーションをデバッグする](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2) ただし、Windows サービスの <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> メソッドをデバッグするには、メソッド内部からデバッガーを起動する必要があります。  
   
 1.  <xref:System.Diagnostics.Debugger.Launch%2A> メソッドの始めに、呼び出しを `OnStart()`に追加します。  
   
@@ -52,7 +47,7 @@ Windows サービスをデバッグするには、サービスを起動し、デ
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3.  選択**はい、デバッグ\<サービス名 >。**  
+3.  **[はい、** service name> をデバッグします]\< を選びます。  
   
 4.  [Just-In-Time デバッガー] ウィンドウで、デバッグに使う Visual Studio のバージョンを選びます。  
   
@@ -63,6 +58,3 @@ Windows サービスをデバッグするには、サービスを起動し、デ
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)
-
-
-
