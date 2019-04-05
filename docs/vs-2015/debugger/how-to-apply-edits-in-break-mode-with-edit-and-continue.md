@@ -1,14 +1,9 @@
 ---
-title: '方法: エディット中断モードで編集を適用して続行 |Microsoft Docs'
-ms.custom: ''
+title: '方法: 編集と中断モードで編集を適用して続行 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -28,15 +23,15 @@ ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5f6024d0c00e492110d7d34172cf225e4712f213
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: bd247cd50566130504110bd37c4b87f9e4783ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977132"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>方法 : エディット コンティニュの中断モード時に編集を適用する
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>方法: 編集と中断モードで編集を適用して続行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 エディット コンティニュを使用すると、中断モードでコードを編集した後、コードを停止したり再起動したりせずにデバッグを継続できます。  
@@ -65,11 +60,11 @@ ms.locfileid: "51807503"
   
 1.  以下のいずれかの操作を行って中断モードに入ります。  
   
-    -   コードでブレークポイントを設定し、選択**デバッグの開始**から、**デバッグ**メニューとアプリケーション、ブレークポイントにヒットするまで待ちます。  
+    -   コードにブレークポイントを設定した後、**[デバッグ]** メニューの **[デバッグ開始]** をクリックし、アプリケーションがブレークポイントにヒットするのを待ちます。  
   
          または  
   
-    -   デバッグを開始し、**すべて中断**から、**デバッグ**メニュー。  
+    -   デバッグを開始し、**[デバッグ]** メニューの **[すべて中断]** をクリックします。  
   
          または  
   
@@ -77,18 +72,15 @@ ms.locfileid: "51807503"
   
 2.  必要かつ有効なコード変更を行います。  
   
-     詳細については、[Visual Basic エディット コンティニュでサポートされていない編集](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)を参照してください。  
+     詳細については、次を参照してください。 [Visual Basic エディット コンティニュでサポートされていない編集](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)します。  
   
     > [!NOTE]
     >  エディット コンティニュで許可されないコード変更を行おうとすると、編集部分の下に紫の波線が表示され、タスク一覧にタスクが表示されます。 この場合、無効なコード変更を元に戻さない限り、コードの実行を続行できません。  
   
-3.  **デバッグ** メニューのをクリックして**続行**実行を再開します。  
+3.  **[デバッグ]** メニューの **[続行]** をクリックして、コードの実行を再開します。  
   
      適用した編集がプロジェクトに取り込まれた状態でコードが実行されます。  
   
 ## <a name="see-also"></a>関連項目  
  [エディット コンティニュを Visual Basic でサポートされていない編集](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
  [エディット コンティニュ (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: 分離シェル アプリケーションのサービスのためのガイドライン |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Shell integrated mode, serviceability
 - Shell integrated mode [Visual Studio], serviceability
 ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a795e5dc71183550e660f8ce7d67f1a41bddbcf4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975542"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>ガイドライン分離シェル アプリケーションの提供
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +42,3 @@ Visual Studio 分離シェル アプリケーションを配布するときに�
 -   共有ファイルを更新すると、1 つのアプリケーションの更新プログラムが更新されていない 2 つ目のアプリケーションによって使用されるファイルのバージョンを変更するためにアプリケーション互換性の問題が発生することができます。 ファイルを共有する製品のインストーラーは、共有ファイルへの参照をカウントします。 そのため、製品をアンインストールしても、共有ファイルのインストール済みのインスタンスのカウントをデクリメントする操作以外には影響しません。  
   
 -   Quick Fix Engineering (QFE) インストーラーには、QFE インストーラー サービスを提供する製品のバージョンのファイルのバージョンが元に戻します。 このプロセスは、可能性のある更新された共有ファイルが提供するアプリケーションを中断します。
-

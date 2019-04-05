@@ -1,11 +1,8 @@
 ---
 title: ワークフロー デザイナーのシェルの機能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDShellFeatures.UI
@@ -13,13 +10,13 @@ ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0f75d545055a4657ed4cefdbafe211ea2f34680f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6b432dd6dd0a19f6509ad1ff133424fcbc387fb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275302"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976592"
 ---
 # <a name="workflow-designer-shell-features"></a>ワークフロー デザイナーのシェルの機能
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]は、デザイナー画面、その上の階層リンク バー、およびその下のシェルという 3 つの主要な UI 領域で構成されています。 階層リンク バーは画面の上部に位置し、現在のルート アクティビティの先祖の一覧を表示するために使用されます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][方法: 階層リンク ナビゲーションを使用して、](../workflow-designer/how-to-use-breadcrumb-navigation.md)します。 デザイナー画面は画面の中央に位置し、ワークフローを作成するために使用されます。 シェルは画面の下部に位置しており、ここには、現在のビューを管理するためのさまざまなボタンが含まれています。  
@@ -38,5 +35,5 @@ ms.locfileid: "49275302"
   
  にイメージとしてコピーする内を右クリックし、デザイナー**イメージとしてコピー**します。 イメージとして保存する、内を右クリックし、デザイナー**イメージとして保存**します。 ワークフローは、JPG、PNG、GIF、および XPS の各形式のいずれかで保存できます。 形式を選択、**名前を付けて保存** ダイアログ ボックスで、**ファイルの種類:** ウィンドウの下部にあるリスト ボックスの一覧します。  
   
-## <a name="fonts-and-colors"></a>フォントと色  
+## <a name="fonts-and-colors"></a>フォントおよび色  
  [!INCLUDE[wfd2](../includes/wfd2-md.md)] 内の[!INCLUDE[vs2010](../includes/vs2010-md.md)]で使用する色は、環境フォントにより制御されます。 オペレーティング システムのテーマにハイコントラストの配色を使用している場合は、[!INCLUDE[wfd2](../includes/wfd2-md.md)]で表示される色が変わります。 フォントまたは色の設定の変更後に[!INCLUDE[vs2010](../includes/vs2010-md.md)]で変更を有効にするには、[!INCLUDE[wfd2](../includes/wfd2-md.md)] を再起動する必要があります。

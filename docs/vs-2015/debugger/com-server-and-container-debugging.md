@@ -1,14 +1,9 @@
 ---
 title: COM サーバーおよびコンテナーのデバッグ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: b7ce8696-ebb8-4354-a767-f76b8ada4ac1
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a495b90f68d0a12d9fb34babf28aca073580f2aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7fe876b9205d7efede2f5c1085c082f7b0ec6fd2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974141"
 ---
 # <a name="com-server-and-container-debugging"></a>COM サーバーおよび COM コンテナーのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ COM アプリケーションは、プログラマが直接コントロールで�
   
  Visual Studio のデバッガーは、コンテナーやサーバー間のステップやステップ インをサポートしています。 この機能には、リモート プロシージャ コール (RPC) 間のステップも含まれます。  
   
-##  <a name="BKMK_COMServerandContainerintheSameSolution"></a> COM サーバーと同じソリューション内のコンテナーのデバッグ  
+##  <a name="BKMK_COMServerandContainerintheSameSolution"></a> 同じソリューション内の COM サーバーおよび COM コンテナーのデバッグ  
  同じソリューションで 2 つのプロジェクトを使用して、COM サーバーおよび COM コンテナーをデバッグできます。 それぞれのプロジェクトに適切なブレークポイントを設定してデバッグを行います。 ブレークポイントが設定されているサーバーをコンテナーが呼び出すと、サーバーのコードに戻るまで、つまりデバッグが終了するまで、コンテナーは待機しています。  
   
  COM コンテナーのデバッグは、標準的なプログラムのデバッグによく似ています。 違いがあるのは、コンテナー アプリケーションにデータをドラッグするなど、コールバックを生成するイベントをデバッグする場合です。 この場合は、ブレークポイントをコールバック関数の中に設定する必要があります。  
@@ -55,15 +50,12 @@ COM アプリケーションは、プログラマが直接コントロールで�
   
 3.  コンテナー アプリケーションを起動します。  
   
-##  <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> サーバーおよびドメインの分離 (SDI) アプリケーションのデバッグ  
- かどうかは、SDI サーバー アプリケーションをデバッグしている、指定する必要あります`/Embedding`または`/Automation`で、**コマンドライン引数**プロパティ、*プロジェクト*C と C++、c# のプロパティ ページ ダイアログ ボックスまたはVisual Basic のプロジェクト。  
+##  <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> サーバーとドメインの分離 (SDI) アプリケーションのデバッグ  
+ SDI サーバー アプリケーションをデバッグする場合は、C/C++、C#、または Visual Basic のプロジェクトの [*プロジェクト* プロパティ ページ] ダイアログ ボックスで、**[コマンド ライン引数]** プロパティに `/Embedding` または `/Automation` を指定する必要があります。  
   
  デバッガーはこれらのコマンド ライン引数を利用して、コンテナーから起動されたようにサーバー アプリケーションを起動できます。 次に、プログラム マネージャーまたはファイル マネージャーからコンテナーを起動すると、コンテナーはデバッガー中で起動されたサーバーのインスタンスを使用できます。  
   
- アクセスする、*プロジェクト*プロパティ ページ ダイアログ ボックスでは、ソリューション エクスプ ローラーでプロジェクトを右クリックし、ショートカット メニューからプロパティを選択します。 [コマンド ライン引数] プロパティを表示するには、[構成プロパティ] カテゴリを展開し、[デバッグ] ページをクリックします。  
+ [*プロジェクト* プロパティ ページ] ダイアログ ボックスにアクセスするには、ソリューション エクスプローラーでプロジェクトを右クリックし、ショートカット メニューの [プロパティ] を選びます。 [コマンド ライン引数] プロパティを表示するには、[構成プロパティ] カテゴリを展開し、[デバッグ] ページをクリックします。  
   
 ## <a name="see-also"></a>関連項目  
  [COM および ActiveX のデバッグ](../debugger/com-and-activex-debugging.md)
-
-
-

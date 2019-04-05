@@ -1,27 +1,22 @@
 ---
 title: 構文の色分け、従来の言語サービス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring
 - language services, syntax coloring
 ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 99082388534e39d02731e065bf586d6d221c67aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b80659e1a61cca27adcc92b4b47c7ff0b4e02e0a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784066"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976849"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>従来の言語サービスでの構文の色分け表示
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,13 +62,13 @@ ms.locfileid: "51784066"
     3.  によって返される色づけの情報を使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>メソッドを選択したテキストを表示します。  
   
 > [!NOTE]
->  使用だけでなく、言語サービス colorizer、VSPackage は、汎用的な[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]テキストを色分け表示メカニズム。 このメカニズムの詳細については、[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)を参照してください。  
+>  使用だけでなく、言語サービス colorizer、VSPackage は、汎用的な[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]テキストを色分け表示メカニズム。 このメカニズムの詳細については、次を参照してください。[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [構文の色分け表示の実装](../../extensibility/internals/implementing-syntax-coloring.md)  
  言語サービスの構文の色分け表示と構文をサポートするために実装の色分けする必要があります、言語サービスはどのようなエディターにアクセスする方法について説明します。  
   
- [方法: ビルトインの配色可能な項目の使用](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
+ [方法: 組み込みの配色可能な項目を使用して、](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
  言語サービスからの組み込みの配色可能な項目を使用する方法を示します。  
   
  [カスタムの配色可能な項目](../../extensibility/internals/custom-colorable-items.md)  
@@ -81,4 +76,3 @@ ms.locfileid: "51784066"
   
 ## <a name="see-also"></a>関連項目  
  [フォントと色の使用](../../extensibility/using-fonts-and-colors.md)
-

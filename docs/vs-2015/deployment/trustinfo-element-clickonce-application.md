@@ -1,14 +1,9 @@
 ---
 title: '&lt;trustInfo&gt;要素 (ClickOnce アプリケーション) |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
 - urn:schemas-microsoft-com:asm.v2#PermissionSet
@@ -27,13 +22,13 @@ ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77915ddfe59361623aa5aee3048c6411c6c0c02c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175566"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973478"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;要素 (ClickOnce アプリケーション)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -169,7 +164,7 @@ ms.locfileid: "49175566"
   
  配置マニフェストに有効な信頼ライセンスがある場合には、 `defaultAssemblyRequest` や `assemblyRequest` を使用して要求されるすべてのアクセス許可は、ユーザーに確認することなく与えられます。  
   
- アクセス許可の昇格の詳細については、[ClickOnce アプリケーションのセキュリティで保護する](../deployment/securing-clickonce-applications.md)を参照してください。 ポリシー配置の詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
+ アクセス許可の昇格の詳細については、次を参照してください。 [ClickOnce アプリケーションのセキュリティで保護する](../deployment/securing-clickonce-applications.md)します。 ポリシー配置の詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
   
 ## <a name="examples"></a>使用例  
  次の 3 つのコード例では、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] による配置のアプリケーション マニフェストで使用する、既定の名前付きセキュリティ ゾーン (Internet、LocalIntranet、および FullTrust) に対応する `trustInfo` 要素を示しています。  
@@ -278,6 +273,3 @@ ms.locfileid: "49175566"
 ## <a name="see-also"></a>関連項目  
  [信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1043: インデクサーには整数または文字列引数を使用して、|Microsoft Docs'
-ms.custom: ''
+title: CA1043:インデクサーは整数または文字列引数を使用して、|Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1043
 - UseIntegralOrStringArgumentForIndexers
@@ -20,21 +15,21 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: db2b365626efc1a5735adf986d1b49ac52c2c72b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 643d91ad51e9511bbd4440d2f84fbd441c768a53
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951562"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976118"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: インデクサーには整数または文字列引数を使用します
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043:インデクサーには整数または文字列引数を使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|UseIntegralOrStringArgumentForIndexers|
 |CheckId|CA1043|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
@@ -57,9 +52,6 @@ ms.locfileid: "49951562"
  [!code-vb[FxCop.Design.IntegralOrStringIndexers#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.IntegralOrStringIndexers/vb/FxCop.Design.IntegralOrStringIndexers.vb#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA1023: インデクサーを多次元にすることはできません](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
+ [CA 1023:インデクサーを多次元することはできません。](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
 
- [CA1024: 適切な場所にプロパティを使用します](../code-quality/ca1024-use-properties-where-appropriate.md)
-
-
-
+ [CA 1024:適切な場所のプロパティを使用します。](../code-quality/ca1024-use-properties-where-appropriate.md)

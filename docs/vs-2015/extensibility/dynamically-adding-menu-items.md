@@ -1,14 +1,9 @@
 ---
 title: 動的メニュー項目の追加 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - DYNAMICITEMSTART
 - menu items, adding dynamically
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c8f188c71cb1e25364cee34c6a97c87b3a265ee7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 6b9daa77b6819a6e67156af402a211eb4f10bf3a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809754"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976004"
 ---
 # <a name="dynamically-adding-menu-items"></a>メニュー項目の動的な追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +28,13 @@ ms.locfileid: "51809754"
   
  このチュートリアルでコマンドを使用して Visual Studio ソリューションのスタートアップ プロジェクトを設定する方法を示しています、**ソリューション エクスプ ローラー**ツールバー。 アクティブなソリューションで、プロジェクトの動的なドロップダウン リストを持つメニュー コント ローラーを使用します。 ソリューションがない場合にこのコマンドを保持するが開いてまたはソリューションに複数のプロジェクトがある場合にのみ、開いているソリューションに 1 つしかプロジェクトがある場合、VSPackage が読み込まれます。  
   
- .Vsct ファイルの詳細については、[Visual Studio Command Table (を参照してください。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。  
+ .Vsct ファイルの詳細については、次を参照してください。 [Visual Studio Command Table (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。  
   
 ## <a name="creating-an-extension-with-a-menu-command"></a>メニュー コマンドを使用した拡張機能の作成  
   
 1.  という名前の VSIX プロジェクトを作成する`DynamicMenuItems`します。  
   
-2.  カスタム コマンドの項目テンプレートを追加し、名前、プロジェクトが開いたら、 **DynamicMenu**します。 詳細については、[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。  
+2.  カスタム コマンドの項目テンプレートを追加し、名前、プロジェクトが開いたら、 **DynamicMenu**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
   
 ## <a name="setting-up-the-elements-in-the-vsct-file"></a>.Vsct ファイル内の要素の設定  
  ツールバーにある動的メニュー項目にメニュー コント ローラーを作成するには、次の要素を指定します。  
@@ -366,4 +361,3 @@ public sealed class DynamicMenuItemsPackage : Package
 ## <a name="see-also"></a>関連項目  
  [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)   
  [VSPackage でユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

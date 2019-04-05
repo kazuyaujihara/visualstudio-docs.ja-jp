@@ -1,26 +1,21 @@
 ---
 title: ソリューション内のプロジェクトの読み込みを管理する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, managing project loading
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 041c5ab52a7a0e8be89ef1abe6db4d1aed51ecfc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0ce2f80aa50c3222797d925a888e5c004b21512d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781765"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973598"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>ソリューションでのプロジェクトの読み込みの管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +65,7 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
  ソリューション読み込みのマネージャーは、一般に読み込みソリューションを管理するものでは場合、は、VSPackage の一部として実装することができます。 パッケージを追加することで autoload に設定する必要があります、<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>の値は、VSPackage に<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>します。 ソリューション ロードのマネージャーをアクティブにできるし、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。  
   
 > [!NOTE]
->  自動読み込みパッケージの詳細については、[Vspackage の読み込み](../extensibility/loading-vspackages.md)を参照してください。  
+>  自動読み込みパッケージの詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。  
   
  Visual Studio で認識、前回ソリューション ロード マネージャーのみを有効にするため負荷マネージャーの全般的なソリューションは自身のアクティブ化する前に既存のロード マネージャーがあるかどうか検出は常に。 ソリューションのサービスに対する GetProperty() を呼び出す場合<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>返します`null`、負荷マネージャーのアクティブなソリューションはありません。 これが null を返さない場合は、オブジェクトは、ソリューション ロードのマネージャーと同じかどうかを確認します。  
   
@@ -85,17 +80,17 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="handling-solution-load-events"></a>ソリューションの読み込みイベントの処理  
  ソリューション読み込みのイベントをサブスクライブする<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A>上司ソリューション ロードをアクティブにする場合。 実装する場合<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>、読み込みの優先度別のプロジェクトに関連するイベントに応答できます。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: これは、ソリューションが開かれる前に発生します。 ソリューション内のプロジェクトの優先順位を読み込み、プロジェクトを変更するのにには、これを使用できます。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>:これは、ソリューションが開かれる前に発生します。 ソリューション内のプロジェクトの優先順位を読み込み、プロジェクトを変更するのにには、これを使用できます。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: これは、ソリューションが完全に読み込まれたですが、バック グラウンドの前にプロジェクトの読み込みをもう一度開始後に発生します。 などのロード優先度が LoadIfNeeded、プロジェクトにアクセスしたユーザーまたはソリューション ロード マネージャーは、BackgroundLoad で、そのプロジェクトのバック グラウンド読み込みを開始するようにプロジェクトの読み込みの優先順位変更可能性があります。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>:これは、ソリューションが完全に読み込まれたですが、バック グラウンドの前にプロジェクトの読み込みをもう一度開始後に発生します。 などのロード優先度が LoadIfNeeded、プロジェクトにアクセスしたユーザーまたはソリューション ロード マネージャーは、BackgroundLoad で、そのプロジェクトのバック グラウンド読み込みを開始するようにプロジェクトの読み込みの優先順位変更可能性があります。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: これが発生した、ソリューションが最初に完全に読み込まれた後ソリューション ロードのマネージャーがあるかどうか。 これは、ソリューションが完全に読み込まれるたびに、バック グラウンド負荷または需要が読み込まれた後も発生します。 同時に、<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid>が再アクティブ化します。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>:これが発生した、ソリューションが最初に完全に読み込まれた後ソリューション ロードのマネージャーがあるかどうか。 これは、ソリューションが完全に読み込まれるたびに、バック グラウンド負荷または需要が読み込まれた後も発生します。 同時に、<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid>が再アクティブ化します。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: これは、プロジェクト (またはプロジェクト) の読み込み前に発生します。 プロジェクトが読み込まれる前に、その他のバック グラウンド プロセスが完了したことを確認するには設定`pfShouldDelayLoadToNextIdle`に**true**します。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>:これは、プロジェクト (またはプロジェクト) の読み込み前に発生します。 プロジェクトが読み込まれる前に、その他のバック グラウンド プロセスが完了したことを確認するには設定`pfShouldDelayLoadToNextIdle`に**true**します。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: これは、プロジェクトのバッチが読み込まれるときに発生します。 場合`fIsBackgroundIdleBatch`が true の場合、プロジェクトが読み込まれる。 バック グラウンドで場合`fIsBackgroundIdleBatch`が false の場合、プロジェクトが読み込まれる、ユーザーの要求の結果として同期的になど、ユーザーがソリューション エクスプ ローラーでの保留中のプロジェクトを展開する場合は。 これで実行する必要がありますそれ以外の場合のコストの作業を行うを実装する<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>します。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>:これは、プロジェクトのバッチが読み込まれるときに発生します。 場合`fIsBackgroundIdleBatch`が true の場合、プロジェクトが読み込まれる。 バック グラウンドで場合`fIsBackgroundIdleBatch`が false の場合、プロジェクトが読み込まれる、ユーザーの要求の結果として同期的になど、ユーザーがソリューション エクスプ ローラーでの保留中のプロジェクトを展開する場合は。 これで実行する必要がありますそれ以外の場合のコストの作業を行うを実装する<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>します。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: これは、プロジェクトのバッチが読み込まれた後に発生します。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>:これは、ような状況は、プロジェクトのバッチが読み込まれた後に発生します。  
   
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>検出および管理ソリューションとプロジェクトの読み込み  
  プロジェクトとソリューションの読み込み状態を検出するために呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A>次の値。  
@@ -120,4 +115,3 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
   
 > [!NOTE]
 >  . 既定では、必要に応じて、プロジェクトのみを読み込むし、場合は、バック グラウンド読み込みの優先順位が読み込まれて、<xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS>フラグ メソッドに渡されるを明示的に読み込むとマークされているもの以外のすべてのプロジェクトが読み込まれます。
-

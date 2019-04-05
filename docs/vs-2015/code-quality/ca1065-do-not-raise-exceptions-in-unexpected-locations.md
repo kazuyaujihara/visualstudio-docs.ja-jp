@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1065: 予期しない場所での例外を発生させないで |Microsoft Docs'
-ms.custom: ''
+title: CA1065:予期しない場所で例外を発生させないで |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1065
 - DoNotRaiseExceptionsInUnexpectedLocations
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08c91b7a1f649340c3b0c9bece6b8b1b94c74324
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887608"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974018"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: 予期しない場所に例外を発生させません
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065:予期しない場所に例外を発生させません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -138,10 +133,7 @@ ms.locfileid: "49887608"
  スローされた例外ではなく例外宣言、違反が発生した場合、この規則による警告を抑制する安全です。
 
 ## <a name="related-rules"></a>関連規則
- [CA2219: exception 句に例外を発生させないでください](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+ [CA2219:Exception 句に例外を発生させません](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
 ## <a name="see-also"></a>関連項目
  [デザインの警告](../code-quality/design-warnings.md)
-
-
-

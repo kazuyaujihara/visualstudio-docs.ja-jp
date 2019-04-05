@@ -1,31 +1,26 @@
 ---
 title: Creating a Settings Category |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30d7b4c95a02d841723a4ddf1dcf51dd0ef011b4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d73acf8f46966cd0de9eb779acb5a5c53ad4e329
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730361"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976996"
 ---
 # <a name="creating-a-settings-category"></a>設定カテゴリの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このチュートリアルでは、Visual Studio の設定のカテゴリを作成し、使用する値を保存し、値の設定ファイルから復元します。 設定のカテゴリは「カスタム設定ポイント」; として表示される関連するプロパティのグループです。つまりのチェック ボックスと、**インポートおよびエクスポート設定**ウィザード。 (で検索することができます、**ツール**メニュー)。設定の保存や、カテゴリとして復元し、個々 の設定は、ウィザードに表示されません。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+このチュートリアルでは、Visual Studio の設定のカテゴリを作成し、使用する値を保存し、値の設定ファイルから復元します。 設定のカテゴリは「カスタム設定ポイント」; として表示される関連するプロパティのグループです。つまりのチェック ボックスと、**インポートおよびエクスポート設定**ウィザード。 (で検索することができます、**ツール**メニュー)。設定の保存や、カテゴリとして復元し、個々 の設定は、ウィザードに表示されません。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
  派生することによって設定のカテゴリを作成する、<xref:Microsoft.VisualStudio.Shell.DialogPage>クラス。  
   
@@ -104,7 +99,7 @@ ms.locfileid: "51730361"
   
 4.  値を変更**OptionFloat** 3.1416 へと**OptionInteger** 12 にします。 **[OK]** をクリックします。  
   
-5.  **ツール** メニューのをクリックして**インポートおよびエクスポート設定**します。  
+5.  **[ツール]** メニューの **[設定のインポートとエクスポート]** を選択します。  
   
      **インポートおよびエクスポート設定**ウィザードが表示されます。  
   
@@ -124,7 +119,7 @@ ms.locfileid: "51730361"
   
      **エクスポートの完了**の設定が正常にエクスポートされたページに表示します。  
   
-10. **ファイル**メニューで、**オープン**、 をクリックし、**ファイル**。 検索`MySettings.vssettings`を開きます。  
+10. **ファイル**メニューで、**オープン**、をクリックし、**ファイル**。 検索`MySettings.vssettings`を開きます。  
   
      (、Guid は異なります)、ファイルの次のセクションでエクスポートしたプロパティのカテゴリが表示されます。  
   
@@ -160,4 +155,3 @@ ms.locfileid: "51730361"
 16. 確認します**My Settings**が選択されているし、をクリックし、**完了**します。 ときに、**インポートの完了**ページが表示されたら、をクリックして**閉じる**します。  
   
 17. **ツール** メニューのをクリックして**オプション**、展開**My Category**、 をクリックして**マイのグリッド ページ**プロパティ カテゴリの値があることを確認します復元されました。
-

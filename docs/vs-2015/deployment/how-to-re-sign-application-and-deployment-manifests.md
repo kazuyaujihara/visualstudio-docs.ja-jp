@@ -1,14 +1,9 @@
 ---
 title: '方法: アプリケーション マニフェストおよび配置マニフェストに再署名 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,23 +18,23 @@ ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 734258871e72e6272abcd61c4efa1a00765f8a32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185719"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975719"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>方法: アプリケーション マニフェストおよび配置マニフェストに再署名する
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>方法: アプリケーション マニフェストと配置マニフェストの再署名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows フォーム アプリケーション、Windows Presentation Foundation アプリケーション (xbap)、Office ソリューション用アプリケーション マニフェストの配置プロパティを変更したら、両方のアプリケーションを再署名する必要があり、配置マニフェストに、証明書。 このプロセスにより、エンドユーザーのコンピューターに改ざんされたファイルがインストールされていないことを確認します。  
+Windows フォーム アプリケーション、Windows Presentation Foundation アプリケーション (xbap)、Office ソリューション用アプリケーション マニフェストの配置プロパティを変更したら、両方のアプリケーションを再署名する必要があり、配置マニフェストに、証明書。 このプロセスによって、改ざんされたファイルがエンド ユーザーのコンピューターにインストールされないようにすることができます。  
   
  マニフェストを再署名が別のシナリオは、お客様が、アプリケーションに署名して、配置マニフェストに、独自の証明書です。  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>再署名、アプリケーションおよび配置マニフェストします。  
- この手順では、アプリケーションのマニフェスト ファイル (.manifest) に変更が既に行われたことを前提としています。 詳細については、[方法: 配置プロパティを変更](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472)を参照してください。  
+ この手順では、アプリケーションのマニフェスト ファイル (.manifest) に変更が既に行われたことを前提としています。 詳細については、「[方法 :展開のプロパティを変更する](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472)します。  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe を使用してマニフェストに、アプリケーションおよび配置を再署名するには  
   
@@ -125,12 +120,9 @@ Windows フォーム アプリケーション、Windows Presentation Foundation 
  [ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)   
  [信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)   
- [方法 : ClickOnce のセキュリティ設定を有効にする](../deployment/how-to-enable-clickonce-security-settings.md)   
- [方法 : ClickOnce アプリケーションのセキュリティ ゾーンを設定する](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [方法 : ClickOnce アプリケーションのカスタム アクセス許可を設定する](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [方法 : アクセス許可が制限された ClickOnce アプリケーションをデバッグする](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [方法: ClickOnce アプリケーション用の信頼された発行者をクライアント コンピューターに追加する](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [方法: ClickOnce のセキュリティ設定を有効にします。](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [方法: ClickOnce アプリケーションのセキュリティ ゾーンを設定します。](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [方法: ClickOnce アプリケーションのカスタム アクセス許可の設定](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [方法: 制限されたアクセス許可を使用して ClickOnce アプリケーションをデバッグします。](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [方法: ClickOnce アプリケーション用のクライアント コンピューターに信頼された発行元を追加します。](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [方法: ClickOnce 信頼プロンプトの動作を構成する](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
-
-
-

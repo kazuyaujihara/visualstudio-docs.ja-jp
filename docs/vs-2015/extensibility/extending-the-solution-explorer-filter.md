@@ -1,27 +1,22 @@
 ---
 title: ソリューション エクスプ ローラーのフィルターを拡張 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d218744a4fcfcb498054105e48019bf2b0ce66b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 27812d10c720d0507309513bd908498d9abcf92a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750185"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977010"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>ソリューション エクスプ ローラーのフィルターの拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51750185"
   
 ### <a name="create-a-visual-studio-package-project"></a>Visual Studio パッケージ プロジェクトを作成します。  
   
-1.  という名前の VSIX プロジェクトを作成する`FileFilter`します。 という名前のカスタム コマンド項目テンプレートを追加**FileFilter**します。 詳細については、[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。  
+1.  という名前の VSIX プロジェクトを作成する`FileFilter`します。 という名前のカスタム コマンド項目テンプレートを追加**FileFilter**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
   
 2.  参照を追加`System.ComponentModel.Composition`と`Microsoft.VisualStudio.Utilities`します。  
   
@@ -200,4 +195,3 @@ ms.locfileid: "51750185"
 3.  ソリューション エクスプ ローラーのツールバーに追加したボタンを探します。 左から 4 番目のボタンが必要です。  
   
 4.  ボタンをクリックすると、すべてのファイル フィルターで除外される必要があり。、「すべての項目フィルターが適用されたビューから」を参照する必要があります。 ソリューション エクスプ ローラー。
-

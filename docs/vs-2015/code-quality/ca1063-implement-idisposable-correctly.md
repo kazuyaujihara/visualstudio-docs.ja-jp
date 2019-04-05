@@ -1,14 +1,9 @@
 ---
-title: 'CA1063: 実装 IDisposable 正しく |Microsoft Docs'
-ms.custom: ''
+title: CA1063:IDisposable を正しく実装します |。Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
 - CA1063
@@ -20,21 +15,21 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52e77762900a321cf547709d98d9856088580789
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975881"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable を正しく実装します
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063:IDisposable を正しく実装します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
@@ -129,6 +124,3 @@ public class Resource : IDisposable
     }
 }
 ```
-
-
-

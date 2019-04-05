@@ -1,14 +1,9 @@
 ---
 title: Managed Package Framework クラス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - managed package framework, helper classes
 - managed package helper classes
@@ -16,13 +11,13 @@ helpviewer_keywords:
 - classes [Visual Studio SDK], managed package framework
 ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: 931e73af72d2239ec04ac248b9fa426fe24f249a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d8e2bbf51aa6266411558e91f3c17905d0c8605c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188995"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975906"
 ---
 # <a name="managed-package-framework-classes"></a>Managed Package Framework クラス
 Managed Package Framework (MPF) クラスを使用して、マネージド コードを使用する VSPackages を作成できます。 このクラスには多くの VSPackage インターフェイス用の既定の実装が備わっています。 MPF は実装の詳細と複雑さを隠すため、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 統合製品を最小限のコードで作成できます。  

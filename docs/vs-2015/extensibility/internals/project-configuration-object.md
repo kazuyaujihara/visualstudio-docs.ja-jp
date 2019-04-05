@@ -1,27 +1,22 @@
 ---
 title: プロジェクト構成オブジェクト |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, object
 - objects, project configuration
 ms.assetid: 877756c9-4261-43d9-9f32-51bf06b4219f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 27b64e6b11e6a8d01cd06886d902c8032f8605d2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1d84dd905c09b0bcc19833198b925f66dea245b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735278"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975004"
 ---
 # <a name="project-configuration-object"></a>プロジェクト構成オブジェクト
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,11 +44,11 @@ ms.locfileid: "51735278"
   
  `IVsProjectCfg2` 主にビルド、デバッグへのアクセスと管理の展開オブジェクトを提供しを自由にグループの出力を使用するには、プロジェクト。 メソッド`IVsProjectCfg`と`IVsProjectCfg2`を実装するために使用できる<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>ビルド処理を管理して<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup>構成の出力グループのポインター。  
   
- プロジェクトには、同じグループ内に含まれる出力の数は構成で異なる場合がありますもサポートしている構成ごとにグループ数を返す必要があります。 グループも必要 (正規名、表示名、およびグループ情報) は、同じ識別子情報構成からプロジェクト内です。 詳細については、[出力用のプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)を参照してください。  
+ プロジェクトには、同じグループ内に含まれる出力の数は構成で異なる場合がありますもサポートしている構成ごとにグループ数を返す必要があります。 グループも必要 (正規名、表示名、およびグループ情報) は、同じ識別子情報構成からプロジェクト内です。 詳細については、次を参照してください。[出力用のプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)します。  
   
  デバッグを有効にする、構成を実装する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>します。 `IVsDebuggableProjectCfg` プロジェクトの構成を起動するデバッガーによって実装される、省略可能なインターフェイスは、構成オブジェクトが実装されている`IVsCfg`と`IVsProjectCfg`します。 F5 キーを押してデバッガーを起動するときに、環境を呼び出します。  
   
- `ISpecifyPropertyPages` `IDispatch`を取得し、構成に依存する情報をユーザーに表示するプロパティ ページと組み合わせて使用されます。 詳細については、[プロパティ ページ](../../extensibility/internals/property-pages.md)を参照してください。  
+ `ISpecifyPropertyPages` `IDispatch`を取得し、構成に依存する情報をユーザーに表示するプロパティ ページと組み合わせて使用されます。 詳細については、次を参照してください。[プロパティ ページ](../../extensibility/internals/property-pages.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)   
@@ -61,4 +56,3 @@ ms.locfileid: "51735278"
  [出力のプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)   
  [プロパティ ページ](../../extensibility/internals/property-pages.md)   
  [ソリューション構成](../../extensibility/internals/solution-configuration.md)
-

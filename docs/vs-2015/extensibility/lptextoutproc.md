@@ -1,14 +1,9 @@
 ---
 title: LPTEXTOUTPROC |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 28a48c0d2dbc89295d6c1f8e900ce6219e2c9313
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5006fb95b2afbe67fd4420caff5885322067eacd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750859"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974932"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|メッセージ文字列なしで送信されます。|  
 |`SCC_MSG_STARTCANCEL`|表示の開始、**キャンセル**ボタンをクリックします。|  
 |`SCC_MSG_STOPCANCEL`|表示を停止、**キャンセル**ボタンをクリックします。|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|バック グラウンド操作をキャンセルできるが IDE の確認: IDE を返します`SCC_MSG_RTN_CANCEL`操作がキャンセルされた場合を返しますそれ以外の場合、`SCC_MSG_RTN_OK`します。 `display_string`としてパラメーターをキャストする[SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled)構造体は、ソース管理プラグインによって提供されます。|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|バック グラウンド操作がキャンセルかどうかは IDE に求められます。IDE を返します`SCC_MSG_RTN_CANCEL`操作がキャンセルされた場合を返しますそれ以外の場合、`SCC_MSG_RTN_OK`します。 `display_string`としてパラメーターをキャストする[SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled)構造体は、ソース管理プラグインによって提供されます。|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|バージョン コントロールから取得される前に、ファイルについて、IDE を指示します。 `display_string`としてパラメーターをキャストする[SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile)構造体は、ソース管理プラグインによって提供されます。|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|バージョン コントロールから取得された後、ファイルについて、IDE を指示します。 `display_string`としてパラメーターをキャストする[SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile)構造体は、ソース管理プラグインによって提供されます。|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|バック グラウンド操作の現在の状態の IDE に指示します。 `display_string`としてパラメーターをキャストする[SccMsgDataOnMessage](#LinkSccMsgDataOnMessage)構造体は、ソース管理プラグインによって提供されます。|  
@@ -147,4 +142,3 @@ LONG SendStatusMessage(
 ## <a name="see-also"></a>関連項目  
  [IDE によって実装されるコールバック関数](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
-

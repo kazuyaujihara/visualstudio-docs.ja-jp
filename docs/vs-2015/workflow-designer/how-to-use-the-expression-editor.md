@@ -1,11 +1,8 @@
 ---
 title: '方法: 式エディターを使用して |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
@@ -13,18 +10,18 @@ ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0c41de63b4163f1fd259ffa4adcef63cad92e351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 728241c4f8cf8609c453f83f0237d2bdc8410f35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181721"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977995"
 ---
-# <a name="how-to-use-the-expression-editor"></a>式エディターを使用する方法
+# <a name="how-to-use-the-expression-editor"></a>方法: 式エディターを使用する
 式エディターは、式を入力および評価する手段として、多くのワークフロー アクティビティで使用される[!INCLUDE[wfd1](../includes/wfd1-md.md)] コントロールです。 式エディターには、IntelliSense、色付け、パラメーター情報、エラーを示す波線などの、本格的な IDE 編集機能が用意されています。 入力した式はコンパイラによって検証されます。 式が無効な場合は、エラー アイコンが表示されます。 として、エディターを開くことも、**式エディター**  ダイアログ ボックス。  
   
- 式は、引数またはプロパティにバインドされたリテラル値または [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] コードです。 式には、新しい値を生成するための操作と組み合わされた値要素 (変数、定数、リテラル、プロパティなど) が含まれます。 アプリケーションが C# を使用したプログラムに含まれている場合でも、式の記述には VB.NET 構文が使用されます。 つまり、大文字小文字は区別されませんを使用して比較を実行、単一の等号 (「=」) 記号 (「= =」) ではなく、ブール演算子は、単語「と」とシンボルではなく「または」"(& a) (& a)"と"&#124;&#124;"、および**Nothing**の代わりに使用が**null**します。 詳細については、式と演算子、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]といくつかのサンプルでは、[Visual Basic の演算子よぶ式](http://go.microsoft.com/fwlink/?LinkId=186818)を参照してください。  
+ 式は、引数またはプロパティにバインドされたリテラル値または [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] コードです。 式には、新しい値を生成するための操作と組み合わされた値要素 (変数、定数、リテラル、プロパティなど) が含まれます。 アプリケーションが C# を使用したプログラムに含まれている場合でも、式の記述には VB.NET 構文が使用されます。 つまり、大文字小文字は区別されませんを使用して比較を実行、単一の等号 (「=」) 記号 (「= =」) ではなく、ブール演算子は、単語「と」とシンボルではなく「または」"(& a) (& a)"と"&#124;&#124;"、および**Nothing**の代わりに使用が**null**します。 詳細については、式と演算子、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]といくつかのサンプルでは、次を参照してください。 [Visual Basic の演算子よぶ式](http://go.microsoft.com/fwlink/?LinkId=186818)します。  
   
  **式エディター**ように動作します。  
   

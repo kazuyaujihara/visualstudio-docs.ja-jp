@@ -1,14 +1,9 @@
 ---
-title: '方法: ClickOnce の発行設定のバージョン |Microsoft Docs'
-ms.custom: ''
+title: '方法: 発行バージョンを設定、ClickOnce |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 06f15504-6385-40a6-b01d-cd90ca36dc73
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b3965e9600fa3ef6a091ae8e32439e8e4f420668
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b082e92ffac43e48725285bc9fa9052dd82cfd92
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271714"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975985"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>方法: ClickOnce の発行バージョンを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "49271714"
  `Publish Version`でプロパティを設定することができます、**発行**のページ、**プロジェクト デザイナー**します。  
   
 > [!NOTE]
->  自動的にインクリメントするプロジェクトのオプションがある、`Publish Version`プロパティごとにアプリケーションを発行する。 このオプションは既定で有効にします。 詳細については、[方法: ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)を参照してください。  
+>  自動的にインクリメントするプロジェクトのオプションがある、`Publish Version`プロパティごとにアプリケーションを発行する。 このオプションは既定で有効にします。 詳細については、「[方法 :ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)」を参照してください。  
   
 ### <a name="to-change-the-publish-version"></a>発行バージョンを変更するには  
   
@@ -52,9 +47,6 @@ ms.locfileid: "49271714"
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce の更新方法を選択します。](../deployment/choosing-a-clickonce-update-strategy.md)   
- [方法: ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
+ [方法: 発行のバージョンに自動的にインクリメント、ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
  [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

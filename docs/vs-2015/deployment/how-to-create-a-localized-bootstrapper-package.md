@@ -1,14 +1,9 @@
 ---
 title: '方法: ローカライズされたブートス トラップ パッケージを作成する |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
@@ -17,15 +12,15 @@ ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b47b1b1a776d27c2a75c9303c34255aff8622eb7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304760"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976713"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>方法: ローカライズされたブートストラップ パッケージを作成する
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>方法: ローカライズされたブートス トラップ パッケージを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ブートストラップ パッケージを作成したら、さらに 2 つのファイルをロケールごとに作成して、ローカライズ版のブートストラップ パッケージを作成できます。2 つのファイルとは、ソフトウェア ライセンス条項ファイル (eula.rtf など) とパッケージ マニフェスト (package.xml) です。  
@@ -39,7 +34,7 @@ ms.locfileid: "49304760"
 3.  package.xml という名前のパッケージ マニフェストを作成し、文字列とカルチャを更新して、そのファイルを新しいフォルダーに格納します。 Visual Studio のブートストラップを対象言語で既に作成している場合は、Visual Studio の package.xml ファイルをコピーして、このステップで変更することができます。  
   
 > [!NOTE]
->  変更することで、アプリケーションをローカライズするにはアプリケーションを展開するセットアップ プロジェクトを使用する場合、**ローカリゼーション**プロパティ。  
+>  セットアップ プロジェクトを使用してアプリケーションを配置する場合は、**Localization** プロパティを変更してアプリケーションをローカライズできます。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -72,7 +67,7 @@ ms.locfileid: "49304760"
   
 2.  ブートストラップ パッケージのソフトウェア ライセンス条項を示すファイルを作成し、新しいフォルダーに格納します。  
   
-3.  package.xml という名前のパッケージ マニフェストを作成し、新しいフォルダーに格納します。 詳細については、[方法: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md)を参照してください。  
+3.  package.xml という名前のパッケージ マニフェストを作成し、新しいフォルダーに格納します。 詳細については、「[方法 :パッケージ マニフェストを作成する](../deployment/how-to-create-a-package-manifest.md)します。  
   
 4.  パッケージ マニフェストの `<Strings>` セクションを更新して、文字列がロケールに対応する正しい言語で表示されるようにします。  
   
@@ -102,6 +97,3 @@ ms.locfileid: "49304760"
  [ブートストラップ パッケージの作成](../deployment/creating-bootstrapper-packages.md)   
  [アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)   
  [方法: パッケージ マニフェストを作成する](../deployment/how-to-create-a-package-manifest.md)
-
-
-
