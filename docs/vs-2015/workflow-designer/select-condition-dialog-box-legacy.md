@@ -1,11 +1,8 @@
 ---
 title: 選択条件 ダイアログ ボックス (レガシ) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 8ac5600f22239a751bddde528664eac052b82565
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897772"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976583"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>[条件の選択] ダイアログ ボックス (レガシ)
 このトピックで説明する方法を使用して、**条件の選択** ダイアログ ボックスで、従来の[!INCLUDE[wfd1](../includes/wfd1-md.md)]します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  
@@ -36,7 +33,7 @@ ms.locfileid: "49897772"
   
 - [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
-  アクセスする方法については、**条件の選択**ダイアログ ボックスを参照してください[方法: 宣言型ルール条件 (レガシ) 作成](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)です。  
+  アクセスする方法については、**条件の選択**ダイアログ ボックスを参照してください[方法。宣言的ルール条件 (レガシ) を作成する](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)します。  
   
   次の表に、ユーザー インターフェイス (UI) 要素の**条件の選択** ダイアログ ボックス。  
   
@@ -47,11 +44,11 @@ ms.locfileid: "49897772"
 |**名前を変更してください.**|これをクリックすると、選択したルール条件の名前を変更するためのダイアログ ボックスが表示されます。|  
 |**削除**|これをクリックすると、選択したルール条件が削除されます。|  
 |**条件のプレビュー**|選択したルール条件の条件式が表示されます。|  
-|**わかりました**|これをクリックすると、選択したルール条件がアクティビティの条件に割り当てられます。|  
+|**[OK]**|これをクリックすると、選択したルール条件がアクティビティの条件に割り当てられます。|  
   
- 作成して、ルールの条件の編集の詳細については、[ルール条件エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)を参照してください。  
+ 作成して、ルールの条件の編集の詳細については、次を参照してください。[ルール条件エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)します。  
   
- 条件の詳細については、[ワークフロー内の条件を使用して](http://go.microsoft.com/fwlink?LinkID=65009)を参照してください。  
+ 条件の詳細については、次を参照してください。[ワークフロー内の条件を使用して](http://go.microsoft.com/fwlink?LinkID=65009)します。  
   
 ## <a name="see-also"></a>関連項目  
  [ルール条件エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   

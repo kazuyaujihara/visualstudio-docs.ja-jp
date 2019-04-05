@@ -1,27 +1,22 @@
 ---
 title: '方法: XML スキーマから XML スニペットを生成 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ec2d14a03649b63a068d2e0a95877ccd03ddf97a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951471"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962604"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>方法 : XML スキーマから XML スニペットを生成する
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>方法: XML スキーマから XML スニペットを生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -45,7 +40,7 @@ XML エディターは、XML スキーマ定義言語 (XSD) スキーマから X
   
   既定値が生成され、編集可能な値として示されます。 スキーマで既定値が指定されている場合は、その既定値が使用されます。 ただし、スキーマの既定値が空の文字列である場合、エディターでは次の方法で既定値が生成されます。  
   
-- union 型のいずれかのメンバーによって、スキーマ型に enumeration ファセットが直接または間接的に含まれている場合は、スキーマ オブジェクト モデルで最初に見つかった列挙値が既定値として使用されます。  
+- 共用体型のいずれかのメンバーによって、スキーマ型に enumeration ファセットが直接または間接的に含まれている場合は、スキーマ オブジェクト モデルで最初に見つかった列挙値が既定値として使用されます。  
   
 - スキーマ型が atomic 型である場合、エディターは atomic 型を取得し、atomic 型名を挿入します。 派生した単純型の場合、基本の単純型が使用されます。 list 型の場合、atomic 型は `itemType` になります。 union 型の場合、atomic 型は最初の `memberType` の atomic 型になります。  
   
@@ -145,7 +140,7 @@ XML エディターは、XML スキーマ定義言語 (XSD) スキーマから X
 </xs:schema>  
 ```  
   
-### <a name="output"></a>出力  
+### <a name="output"></a>Output  
  `Contact` 要素に関連付けられているスキーマ情報に基づいて生成された XML データを次に示します。 としてマークされた項目`bold`の XML スニペットの編集可能なフィールドを指定します。  
   
 ```  
@@ -161,7 +156,4 @@ XML エディターは、XML スキーマ定義言語 (XSD) スキーマから X
   
 ## <a name="see-also"></a>関連項目  
  [XML スニペット](../xml-tools/xml-snippets.md)   
- [方法 : XML スニペットを使用する](../xml-tools/how-to-use-xml-snippets.md)
-
-
-
+ [方法: XML スニペットを使用する](../xml-tools/how-to-use-xml-snippets.md)
