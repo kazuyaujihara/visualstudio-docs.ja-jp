@@ -21,7 +21,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 5fd5ab9b09956c41620947ad1bcf529550db4aca
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51752903"
@@ -60,7 +60,7 @@ ms.locfileid: "51752903"
 2. 空の作成`<KeyBindings>`セクションの後に、`<Commands>`が存在しない場合。  
   
    > [!WARNING]
-   >  キー バインドの詳細については、次を参照してください。 [Keybinding](../extensibility/keybinding-element.md)します。  
+   >  キー バインドの詳細については、[Keybinding](../extensibility/keybinding-element.md)を参照してください。  
   
     `<KeyBindings>`セクションで、作成、`<KeyBinding>`エントリ。  
   
@@ -82,7 +82,7 @@ ms.locfileid: "51752903"
   
    ほとんどの状況で**Shift**文字の大文字または記号を入力するほとんどの英数字キー既にキーを押すと、ために、2 つ目の修飾子を指定せず使用できません必要があります。  
   
-   仮想キー コードに、たとえば、ファンクション キーに関連付けられている文字がない特殊なキーにアクセスできるように、 **BACKSPACE**キー。 詳細については、次を参照してください。[仮想キー コード](http://go.microsoft.com/fwlink/?LinkID=105932)します。  
+   仮想キー コードに、たとえば、ファンクション キーに関連付けられている文字がない特殊なキーにアクセスできるように、 **BACKSPACE**キー。 詳細については、[仮想キー コード](http://go.microsoft.com/fwlink/?LinkID=105932)を参照してください。  
   
    コマンドで使用できるように、Visual studio エディターの設定、`editor`属性を`guidVSStd97`します。  
   

@@ -20,7 +20,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a099254acd572b3fcbb437f8933c81f3d6bd45b9
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51799835"
@@ -84,9 +84,9 @@ Visual Studio Graphics Analyzer を使用してレンダリングに関する問
 ## <a name="capturing-graphics-information-remotely"></a>グラフィックス情報をリモートでキャプチャする  
  グラフィックス情報は、ローカル コンピューターか、リモート コンピューターまたはリモート デバイスで実行されているアプリからキャプチャできます。 リモート キャプチャは、[!INCLUDE[winblue_client_2](../includes/winblue-client-2-md.md)] コンピューターと [!INCLUDE[winblue_winrt_2](../includes/winblue-winrt-2-md.md)] デバイスでサポートされています。 リモートで実行されているアプリからグラフィックス情報をキャプチャするには、リモート デバッグ用にプロジェクトを構成し、既に説明したように、グラフィックス診断の下でアプリを実行します。 アプリがリモート コンピューターで実行され、キャプチャされたグラフィックス情報が開発用コンピューターに記録されます。  
   
- プロジェクトをリモート デバッグ用に構成する方法は、開発中のアプリの種類と、使用しているプログラミング言語によって異なります。 Windows ストア アプリ用のリモート デバッグを構成する方法については、次を参照してください。 [Windows ストア アプリの実行をリモート コンピューターで](../debugger/run-windows-store-apps-on-a-remote-machine.md)します。 Windows デスクトップ アプリ用のリモート デバッグを構成する方法については、次を参照してください。 [Visual Studio プロジェクトには、リモートのデバッグの設定](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a)します。  
+ プロジェクトをリモート デバッグ用に構成する方法は、開発中のアプリの種類と、使用しているプログラミング言語によって異なります。 Windows ストア アプリ用のリモート デバッグを構成する方法については、[Windows ストア アプリの実行をリモート コンピューターで](../debugger/run-windows-store-apps-on-a-remote-machine.md)を参照してください。 Windows デスクトップ アプリ用のリモート デバッグを構成する方法については、[Visual Studio プロジェクトには、リモートのデバッグの設定](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a)を参照してください。  
   
- 後で、情報をキャプチャした場所にかかわらず、リモート コンピューターまたはリモート デバイスを使用してグラフィックス情報を再生できます。 詳細については、次を参照してください。[方法: グラフィックス診断再生マシンを変更](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)します。  
+ 後で、情報をキャプチャした場所にかかわらず、リモート コンピューターまたはリモート デバイスを使用してグラフィックス情報を再生できます。 詳細については、[方法: グラフィックス診断再生マシンを変更](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)を参照してください。  
   
 ## <a name="capturing-graphics-information-from-the-command-line"></a>コマンド ラインからのグラフィックス情報のキャプチャ  
  コマンド ライン ツールを使用して、アプリからグラフィックス情報をキャプチャできます。 この DXCap.exe というツールでは、Visual Studio またはプログラムによるキャプチャを使用することなく、簡単にグラフィックス情報をキャプチャして再生できます。 具体的には、オートメーションを行う場合や、テスト環境で DXCap.exe を使用できます。 DXCap.exe の詳細については、次を参照してください[コマンド ライン キャプチャ ツール。](../debugger/command-line-capture-tool.md)  

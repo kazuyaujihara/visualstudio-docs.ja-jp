@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 7cb71263ec8c375ce7263b0b0ebf393cccde99be
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49211576"
@@ -25,7 +25,7 @@ ms.locfileid: "49211576"
 Visual Studio Visualization and Modeling SDK が、ドメイン固有言語 (DSL) と、UML ツールが構築されたプラットフォームを提供します。  
   
 > [!NOTE]
->  UML モデリング API については、次を参照してください。 [UML モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)します。 テキスト変換については、次を参照してください。 [T4 テキスト変換のカスタマイズ](../modeling/customizing-t4-text-transformation.md)します。  
+>  UML モデリング API については、[UML モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)を参照してください。 テキスト変換については、[T4 テキスト変換のカスタマイズ](../modeling/customizing-t4-text-transformation.md)を参照してください。  
   
  このセクションには、"Microsoft.VisualStudio.Modeling"で始まる名前を持つ名前空間のリファレンスが含まれています。  
   

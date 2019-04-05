@@ -132,7 +132,7 @@ ms.locfileid: "51788655"
   
  このセクションの目的で、c# コンソール アプリで行うをスローする Visual Studio、<xref:System.NullReferenceException>します。  
   
- Visual Studio で c# コンソール アプリを作成します (**ファイル/新しい/プロジェクト/Visual c#/コンソール アプリケーション**) という名前の**ThrowsNullException**します。 Visual Studio でプロジェクトを作成する方法の詳細については、次を参照してください。[チュートリアル: 単純なアプリケーション作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)です。  
+ Visual Studio で c# コンソール アプリを作成します (**ファイル/新しい/プロジェクト/Visual c#/コンソール アプリケーション**) という名前の**ThrowsNullException**します。 Visual Studio でプロジェクトを作成する方法の詳細については、[チュートリアル: 単純なアプリケーション作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)を参照してください。  
   
  Visual Studio でプロジェクトを開いたら、Program.cs ファイルを開きます。 Main() メソッドをコンソールには行を表示し、NullReferenceException をスローし、次のコードに置き換えます。  
   
@@ -179,7 +179,7 @@ static void Main(string[] args)
  この時点でのデバッグを開始することができます。 これが実際のアプリケーションの場合、コードが例外をスローして理由を確認する必要があります。  
   
 ## <a name="just-in-time-debugging-errors"></a>Just-In-Time デバッグのエラー  
- プログラムがクラッシュすると、ダイアログ ボックスが表示されない、コンピューターに Windows エラー報告の設定のためこの可能性があります。 詳細については、次を参照してください。[します。WER 設定](https://msdn.microsoft.com/library/windows/desktop/bb513638\(v=vs.85\).aspx)します。  
+ プログラムがクラッシュすると、ダイアログ ボックスが表示されない、コンピューターに Windows エラー報告の設定のためこの可能性があります。 詳細については、[を参照してください。WER 設定](https://msdn.microsoft.com/library/windows/desktop/bb513638\(v=vs.85\).aspx)します。  
   
  Just-In-Time デバッグに関連して次のエラー メッセージが表示されることがあります。  
   

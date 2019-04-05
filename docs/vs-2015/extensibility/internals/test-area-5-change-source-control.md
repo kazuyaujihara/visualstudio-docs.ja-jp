@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: d117d3ad85d46bfeeb896892508ba90efb33e702
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51746595"
@@ -40,7 +40,7 @@ ms.locfileid: "51746595"
   
 - **接続/切断します。**  
   
-  領域の 3 については、コントロールのソリューションの接続またはオフラインの状態を表示を切り替えます。 詳細については、次を参照してください。[テスト領域の 3: チェック アウト/チェック アウトを元に戻す](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)します。  
+  領域の 3 については、コントロールのソリューションの接続またはオフラインの状態を表示を切り替えます。 詳細については、[テスト領域の 3: チェック アウト/チェック アウトを元に戻す](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)を参照してください。  
   
 ## <a name="command-menu-access"></a>コマンド メニューへのアクセス  
  次[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]テスト_ケースで統合開発環境のメニューのパスを使用します。  

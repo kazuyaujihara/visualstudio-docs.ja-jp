@@ -32,7 +32,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bf560bcde09b9d2e3c2bee689c92c9900c6e2af5
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51760596"
@@ -48,7 +48,7 @@ ms.locfileid: "51760596"
   
   ときに **_DEBUG**が定義されている場合、コンパイラはコンパイルで囲まれたコードのセクション **#ifdef _DEBUG**と`#endif`します。  
   
-  MFC プログラムのデバッグ構成は、MFC ライブラリのデバッグ バージョンとリンクする必要があります。 MFC ヘッダー ファイルを決定など、定義済みのシンボルに基づいて正しいバージョンとリンクする MFC ライブラリの **_DEBUG**と **_UNICODE**します。 詳細については、次を参照してください。 [MFC ライブラリのバージョン](http://msdn.microsoft.com/library/3d7a8ae1-e276-4cf8-ba63-360c2f85ad0e)します。  
+  MFC プログラムのデバッグ構成は、MFC ライブラリのデバッグ バージョンとリンクする必要があります。 MFC ヘッダー ファイルを決定など、定義済みのシンボルに基づいて正しいバージョンとリンクする MFC ライブラリの **_DEBUG**と **_UNICODE**します。 詳細については、[MFC ライブラリのバージョン](http://msdn.microsoft.com/library/3d7a8ae1-e276-4cf8-ba63-360c2f85ad0e)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)   

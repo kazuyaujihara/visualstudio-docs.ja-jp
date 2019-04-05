@@ -24,7 +24,7 @@ ms.lasthandoff: 01/24/2019
 ms.locfileid: "54870624"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint ソリューションをトラブルシューティングします。
-  以下の問題または警告は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーを使用して SharePoint ソリューションをデバッグするときに発生することがあります。 詳細については、次を参照してください。 [SharePoint 2007 ワークフロー ソリューションのデバッグ](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)します。
+  以下の問題または警告は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーを使用して SharePoint ソリューションをデバッグするときに発生することがあります。 詳細については、[SharePoint 2007 ワークフロー ソリューションのデバッグ](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)を参照してください。
 
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>サンド ボックス視覚的 web パーツでトークンの制限
  サンドボックス ソリューションの視覚的 Web パーツは、SharePoint ランタイムでサポートされる $SPUrl などの標準トークンを処理できません。 そのため、URL は解決されず、次の例のように、スクリプト要素でこのトークンを直接参照する場合、視覚的 Web パーツ デザイナーのデザイン ビューでコンテンツをプレビューできません。
@@ -102,7 +102,7 @@ ms.locfileid: "54870624"
  なし。
 
 ### <a name="resolution"></a>解像度
- 値が不適切なため、この問題が発生します、**パス**webtemp サイト定義の構成のプロパティ ファイルなど、 *webtemp_SiteDefinitionProject1.xml*します。 **パス**の下にある、webtemp ファイルのプロパティ、**配置場所**、1033 を適切なロケールに変更[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]します。 たとえば、使用する日本語のロケール値に変更 1041。 詳細については、次を参照してください。 [Microsoft によるロケール Id 割り当て](http://go.microsoft.com/fwlink/?LinkID=165561)します。
+ 値が不適切なため、この問題が発生します、**パス**webtemp サイト定義の構成のプロパティ ファイルなど、 *webtemp_SiteDefinitionProject1.xml*します。 **パス**の下にある、webtemp ファイルのプロパティ、**配置場所**、1033 を適切なロケールに変更[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]します。 たとえば、使用する日本語のロケール値に変更 1041。 詳細については、[Microsoft によるロケール Id 割り当て](http://go.microsoft.com/fwlink/?LinkID=165561)を参照してください。
 
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>ワークフロー プロジェクトがクリーン システムにデプロイした場合、エラーが表示されます。
  この問題は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] のワークフロー プロジェクトをクリーン システムに配置した場合に発生します。 クリーン システムとは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] と SharePoint の新しいインストールが含まれているが、ワークフロー プロジェクトは配置されていないコンピューターです。
@@ -133,7 +133,7 @@ ms.locfileid: "54870624"
 
 -   [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]をインストールします。
 
--   SharePoint Web サイトに対する管理者の権限があることを確認します。 詳細については、次を参照してください。、[!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)]オンライン記事[割り当てまたは SharePoint サーバーのサービス アプリケーションの管理者を削除](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)します。
+-   SharePoint Web サイトに対する管理者の権限があることを確認します。 詳細については、、[!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)]オンライン記事[割り当てまたは SharePoint サーバーのサービス アプリケーションの管理者を削除](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)を参照してください。
 
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>イベント レシーバー プロジェクトでサイト削除 web イベントは発生しません
  イベント レシーバー プロジェクトを作成し、"サイトが削除されています" などの特定の Web イベントを選択すると、イベントは発生しません。
@@ -275,7 +275,7 @@ ms.locfileid: "54870624"
  Web.config 構成ファイルを読み込むことができませんでした。 ファイルをチェックして、形式が正しくない XML 要素を修正した後、再試行してください。 以下のエラーが発生しました。指定したキーがディクショナリに存在しました。
 
 ### <a name="resolution"></a>解像度
- この問題を解決するには、Visual Studio 内の SharePoint プロジェクトの [サイト URL] プロパティの値が、Web アプリケーションの代替アクセス マッピング用の既定のゾーンに割り当てられた URL と一致することを確認します。 URL でイントラネットなどの他のゾーンを使用すると、エラーは解消されません。 プロジェクトのサイト URL と既定のゾーンの URL は一致している必要があります。 代替アクセス マッピングにアクセスするには、SharePoint 2010 サーバーの全体管理ユーティリティを開き、**アプリケーション管理**リンクし、 **Web アプリケーション**、選択、 **代替アクセス マッピングを構成する**リンク。 詳細については、次を参照してください。 [Web アプリケーションのゾーンを作成する](http://go.microsoft.com/fwlink/?LinkId=192274)します。
+ この問題を解決するには、Visual Studio 内の SharePoint プロジェクトの [サイト URL] プロパティの値が、Web アプリケーションの代替アクセス マッピング用の既定のゾーンに割り当てられた URL と一致することを確認します。 URL でイントラネットなどの他のゾーンを使用すると、エラーは解消されません。 プロジェクトのサイト URL と既定のゾーンの URL は一致している必要があります。 代替アクセス マッピングにアクセスするには、SharePoint 2010 サーバーの全体管理ユーティリティを開き、**アプリケーション管理**リンクし、 **Web アプリケーション**、選択、 **代替アクセス マッピングを構成する**リンク。 詳細については、[Web アプリケーションのゾーンを作成する](http://go.microsoft.com/fwlink/?LinkId=192274)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

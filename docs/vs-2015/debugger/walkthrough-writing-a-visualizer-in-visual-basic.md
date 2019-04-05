@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 549e1ce240808a3947b2780f5c96485439e44ecc
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51794900"
@@ -230,7 +230,7 @@ ms.locfileid: "51794900"
   
    テストは成功です。 これで、最初のビジュアライザーの作成とテストが完了しました。  
   
-   作成したビジュアライザーをテスト ハーネスから呼び出すのではなく、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で使用する場合は、ビジュアライザーをインストールする必要があります。 詳細については、次を参照してください。[方法: ビジュアライザーをインストール](../debugger/how-to-install-a-visualizer.md)します。  
+   作成したビジュアライザーをテスト ハーネスから呼び出すのではなく、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で使用する場合は、ビジュアライザーをインストールする必要があります。 詳細については、[方法: ビジュアライザーをインストール](../debugger/how-to-install-a-visualizer.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ビジュアライザーのアーキテクチャ](../debugger/visualizer-architecture.md)   

@@ -22,7 +22,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49859279"
@@ -90,7 +90,7 @@ ms.locfileid: "49859279"
   
 - **ソリューション エクスプ ローラー**、いずれかのショートカット メニューを選択して、ファイル**カスタム ツールの実行**します。 この方法は、複数のテンプレートを選択して変換する場合に使用します。  
   
-  読み取り先のデータ ファイルが変更されたときにテンプレートが実行されるよう、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトを設定することもできます。 詳細については、次を参照してください。[コードを自動的に再生成](#Regenerating)します。  
+  読み取り先のデータ ファイルが変更されたときにテンプレートが実行されるよう、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトを設定することもできます。 詳細については、[コードを自動的に再生成](#Regenerating)を参照してください。  
   
 ## <a name="generating-variable-text"></a>可変テキストを生成する  
  テキスト テンプレートから生成されるファイルのコンテンツは、プログラム コードを使用して変化させることができます。  
@@ -126,7 +126,7 @@ ms.locfileid: "49859279"
   
 2. .tt ファイルを保存し、生成された .txt ファイルを再度確認します。 0 から 10 の数値を 2 乗した値が一覧表示されます。  
   
-   複数のステートメントは `<#...#>` で囲まれており、単一の式は `<#=...#>` で囲まれていることに注意してください。 詳細については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)です。  
+   複数のステートメントは `<#...#>` で囲まれており、単一の式は `<#=...#>` で囲まれていることに注意してください。 詳細については、[T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)を参照してください。  
   
    [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] で生成コードを記述する場合は、`template` ディレクティブに `language="VB"` を含める必要があります。 `"C#"` が既定値です。  
   
@@ -313,7 +313,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 </PropertyGroup>  
 ```  
   
- 詳細については、次を参照してください。[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md)します。  
+ 詳細については、[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md)を参照してください。  
   
 ## <a name="error-reporting"></a>エラー レポート  
  エラー メッセージおよび警告メッセージを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のエラー ウィンドウに表示するには、次のメソッドを使用します。  

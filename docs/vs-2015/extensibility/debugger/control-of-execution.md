@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: f4fe5259d49424fa1d46ea1ef33c0808dfc7b7be
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51776370"
@@ -31,7 +31,7 @@ ms.locfileid: "51776370"
   
 - 読み込み完了イベントを既に実行されているプログラムにアタッチする場合  
   
-  これら両方のイベントは、イベント、つまり、DE が IDE を使用して、ユーザーからの応答を待機する停止しています。 詳細については、次を参照してください。[操作モード](../../extensibility/debugger/operational-modes.md)します。  
+  これら両方のイベントは、イベント、つまり、DE が IDE を使用して、ユーザーからの応答を待機する停止しています。 詳細については、[操作モード](../../extensibility/debugger/operational-modes.md)を参照してください。  
   
 ## <a name="stopping-event"></a>イベントを停止しています  
  ときに、デバッグ セッションを停止イベントが送信されます。  

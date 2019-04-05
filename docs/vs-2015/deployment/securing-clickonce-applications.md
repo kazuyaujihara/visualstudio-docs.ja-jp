@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: ae5bd70a675798d971cb184038a7e036d04fc95a
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49247222"
@@ -86,7 +86,7 @@ ms.locfileid: "49247222"
   
 1.  Dotfuscator を使用して難読化を実行します。  
   
-2.  Mage.exe または MageUI.exe を使用して、ClickOnce マニフェストを生成し、それらに署名します。 詳細については、次を参照してください。 [Mage.exe (マニフェスト生成および編集ツール)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)と[MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)します。  
+2.  Mage.exe または MageUI.exe を使用して、ClickOnce マニフェストを生成し、それらに署名します。 詳細については、[Mage.exe (マニフェスト生成および編集ツール)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)と[MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)を参照してください。  
   
 3.  配置元の場所 (Web サーバー、UNC 共有、または CD-ROM) から手動でファイルを発行 (コピー) します。  
   

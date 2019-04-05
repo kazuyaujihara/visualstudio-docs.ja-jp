@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: a6ef4e4e019406d9c317ccd90eabcb89e25a6f36
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49220104"
@@ -25,7 +25,7 @@ ms.locfileid: "49220104"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-このトピックでは、ノードを追加する方法を説明します、 [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)XML スキーマ エクスプ ローラーから。 これは、XML スキーマ エクスプローラーから XSD デザイナーのビューにノードをドラッグ アンド ドロップするか、XML スキーマ エクスプローラーのコンテキスト メニューを使用することによって行うことができます。 さらに、XML スキーマ エクスプローラーの検索結果で強調表示されたノードを追加することができます。 詳細については、次を参照してください。[方法: スキーマ セット検索結果ノードを追加するワークスペース](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)します。  
+このトピックでは、ノードを追加する方法を説明します、 [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)XML スキーマ エクスプ ローラーから。 これは、XML スキーマ エクスプローラーから XSD デザイナーのビューにノードをドラッグ アンド ドロップするか、XML スキーマ エクスプローラーのコンテキスト メニューを使用することによって行うことができます。 さらに、XML スキーマ エクスプローラーの検索結果で強調表示されたノードを追加することができます。 詳細については、[方法: スキーマ セット検索結果ノードを追加するワークスペース](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)を参照してください。  
   
 > [!NOTE]
 >  グローバル ノードだけを追加することができます、 [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)します。  

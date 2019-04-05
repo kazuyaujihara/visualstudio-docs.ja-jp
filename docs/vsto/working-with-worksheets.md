@@ -43,7 +43,7 @@ ms.locfileid: "56612505"
 |ワークシートでスペル チェックを行う。|[方法: プログラムによってワークシートでスペルをチェックします。](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)|
 |名前付き範囲およびリスト オブジェクト内のデータを並べ替える。|[方法: プログラムによってワークシートのデータを並べ替え](../vsto/how-to-programmatically-sort-data-in-worksheets.md)|
 
- Excel タスクおよび Excel オブジェクト モデルの詳細については、次を参照してください。 [Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)します。
+ Excel タスクおよび Excel オブジェクト モデルの詳細については、[Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)を参照してください。
 
  以下のタスクは、VSTO アドインとドキュメント レベルのカスタマイズとで実行方法が異なる場合があります。
 

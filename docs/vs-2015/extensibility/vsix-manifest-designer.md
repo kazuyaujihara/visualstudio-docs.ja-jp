@@ -21,7 +21,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 72639c3fbef6b8e297d9e81a7383b2ee8220d896
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51796442"
@@ -31,7 +31,7 @@ ms.locfileid: "51796442"
 
 VSIX パッケージ マニフェスト ファイルを Visual Studio 拡張機能のインストールの動作の設定を変更します。  
   
- **VSIX マニフェスト デザイナー**基になる VSIX スキーマにマップされます。 スキーマ内のすべての要素は、デザイナーでの対応するコントロールを使用して設定できます。 スキーマの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)します。  
+ **VSIX マニフェスト デザイナー**基になる VSIX スキーマにマップされます。 スキーマ内のすべての要素は、デザイナーでの対応するコントロールを使用して設定できます。 スキーマの詳細については、[VSIX 拡張機能スキーマ 2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)を参照してください。  
   
  開くには、 **VSIX マニフェスト デザイナー**で source.extension.vsixmanifest ファイルを見つけます**ソリューション エクスプ ローラー**、し、ファイルを開きます。 ファイルに有効な XML が含まれていない場合、マニフェスト デザイナーは開きません。  
   

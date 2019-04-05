@@ -24,7 +24,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49279150"
@@ -81,9 +81,9 @@ Visual Studio での .NET データ ツールのコンテキストでは、用�
   
  次の種類のサービスからデータ ソースを作成できます。  
   
--   WCF Data Services。 詳細については、次を参照してください。[概要](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)します。  
+-   WCF Data Services。 詳細については、[概要](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)を参照してください。  
   
--   WCF data services。 詳細については、次を参照してください。 [Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)します。  
+-   WCF data services。 詳細については、[Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)を参照してください。  
   
 -   Web サービス  
   

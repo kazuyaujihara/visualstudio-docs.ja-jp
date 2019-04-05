@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 90dc7fb0ca361e6c1994cfd7108b171cda2ad1f9
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51755104"
@@ -36,7 +36,7 @@ Windows インストーラー パッケージ (MSI) を使用して、VSIX パ�
   
 2.  VSIX マニフェスト、コード エディターで開きます。  
   
-3.  VSIX マニフェストの InstalledByMsi 要素設定`true`します。 VSIX マニフェストの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)します。  
+3.  VSIX マニフェストの InstalledByMsi 要素設定`true`します。 VSIX マニフェストの詳細については、[VSIX 拡張機能スキーマ 2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)を参照してください。  
   
      これは、VSIX インストーラーが、コンポーネントをインストールしようとすることを防ぎます。  
   

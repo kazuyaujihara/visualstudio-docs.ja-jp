@@ -51,11 +51,11 @@ ms.locfileid: "54876019"
 
 - サポート対象エディションの Microsoft Windows、SharePoint、および Visual Studio。
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、次を参照してください。 [Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)します。
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、[Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
   次の概念に関する知識があると役に立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
-- SharePoint のカスタム動作。 詳細については、次を参照してください。[カスタム アクション](http://go.microsoft.com/fwlink/?LinkId=177800)します。
+- SharePoint のカスタム動作。 詳細については、[カスタム アクション](http://go.microsoft.com/fwlink/?LinkId=177800)を参照してください。
 
 - Visual Studio の項目テンプレート。 詳細については、「[Creating Project and Item Templates](../ide/creating-project-and-item-templates.md)」 (プロジェクトと項目テンプレートの作成) をご覧ください。
 
@@ -218,7 +218,7 @@ ms.locfileid: "54876019"
     </VSTemplate>
     ```
 
-     このファイルには、項目テンプレートの内容と動作が定義されています。 このファイルの内容に関する詳細については、次を参照してください。 [Visual Studio テンプレート スキーマ参照](/visualstudio/extensibility/visual-studio-template-schema-reference)します。
+     このファイルには、項目テンプレートの内容と動作が定義されています。 このファイルの内容に関する詳細については、[Visual Studio テンプレート スキーマ参照](/visualstudio/extensibility/visual-studio-template-schema-reference)を参照してください。
 
 4.  **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **ItemTemplate**プロジェクトで、選択**追加**を選び、**新しい項目の**。
 
@@ -262,7 +262,7 @@ ms.locfileid: "54876019"
     </Elements>
     ```
 
-     このファイルにメニュー項目を作成する既定のカスタム アクションを定義する、**サイトの操作**SharePoint サイトのメニュー。 ユーザーがメニュー項目をクリックすると、`UrlAction` 要素に指定された URL が Web ブラウザーに表示されます。 カスタム アクションを定義に使用できる XML 要素の詳細については、次を参照してください。[カスタム アクション定義](http://go.microsoft.com/fwlink/?LinkId=177801)します。
+     このファイルにメニュー項目を作成する既定のカスタム アクションを定義する、**サイトの操作**SharePoint サイトのメニュー。 ユーザーがメニュー項目をクリックすると、`UrlAction` 要素に指定された URL が Web ブラウザーに表示されます。 カスタム アクションを定義に使用できる XML 要素の詳細については、[カスタム アクション定義](http://go.microsoft.com/fwlink/?LinkId=177801)を参照してください。
 
 12. 必要に応じて、開く、 *ItemTemplate.ico*ファイルし、認識できるデザインするように変更します。 プロジェクト項目の横にあるこのアイコンが表示されます、**新しい項目の追加** ダイアログ ボックス。
 
@@ -295,7 +295,7 @@ ms.locfileid: "54876019"
 
 1.  **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **source.extension.vsixmanifest**ファイル、CustomActionProjectItem プロジェクトを選び、**開く**します。
 
-     Visual Studio によってマニフェスト エディターでファイルが開きます。 source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。
+     Visual Studio によってマニフェスト エディターでファイルが開きます。 source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、[VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)を参照してください。
 
 2.  **製品名**ボックスに、入力**Custom Action Project Item**します。
 
@@ -310,7 +310,7 @@ ms.locfileid: "54876019"
 6.  **型**一覧で、選択 **[microsoft.visualstudio.itemtemplate]** します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `ItemTemplate` 要素に対応します。 プロジェクト項目テンプレートが格納される VSIX パッケージ内のサブフォルダーは、この要素によって指定されます。 詳細については、次を参照してください。 [ItemTemplate の要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))します。
+    >  この値は、extension.vsixmanifest ファイル内の `ItemTemplate` 要素に対応します。 プロジェクト項目テンプレートが格納される VSIX パッケージ内のサブフォルダーは、この要素によって指定されます。 詳細については、[ItemTemplate の要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))を参照してください。
 
 7.  **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 
@@ -323,7 +323,7 @@ ms.locfileid: "54876019"
 10. **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、[MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))を参照してください。
 
 11. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 

@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 1983f66158c00e5812823bbbf36eeea3aa139ea8
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51789305"
@@ -35,7 +35,7 @@ VSPackage をする必要がありますの追跡を処理できるコマンド�
   
 - 場合、VSPackage は、環境が現在のユーザー インターフェイス (UI) を更新することを要求します。 などで、ユーザーに現在表示されているコマンドとこれが発生した、**切り取り**、**コピー**、および**貼り付け**[標準] ツールバーをグループ化、有効になっているなりで無効になっていますコンテキストやユーザー操作に対する応答です。  
   
-  シェルは、複数の Vspackage をホストするため、シェルのパフォーマンスは許容範囲を超えるが低下する場合は、コマンドの状態を確認するには、各 VSPackage をポーリングする必要があります。 代わりに、変更時に、UI が変更されたときに、VSPackage は、環境を通知アクティブにする必要があります。 更新の通知の詳細については、次を参照してください。[ユーザー インターフェイスの更新](../../extensibility/updating-the-user-interface.md)します。  
+  シェルは、複数の Vspackage をホストするため、シェルのパフォーマンスは許容範囲を超えるが低下する場合は、コマンドの状態を確認するには、各 VSPackage をポーリングする必要があります。 代わりに、変更時に、UI が変更されたときに、VSPackage は、環境を通知アクティブにする必要があります。 更新の通知の詳細については、[ユーザー インターフェイスの更新](../../extensibility/updating-the-user-interface.md)を参照してください。  
   
 ## <a name="status-notification-failure"></a>エラーの通知状態  
  コマンドの状態変更の環境に通知する、VSPackage のエラーは、一貫性のない状態で UI を配置できます。 メニューまたはコンテキスト メニュー コマンドのいずれかのことができますに配置すること、ツールバーのユーザーが注意してください。 そのため、メニューまたはコンテキスト メニューを開いたときにのみ、UI の更新は不十分です。  

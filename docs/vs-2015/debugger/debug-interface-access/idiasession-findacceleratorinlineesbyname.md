@@ -18,7 +18,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b547d38779578ca4fc2fba44effc9b5a6037f4fe
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51761840"
@@ -43,7 +43,7 @@ HRESULT findAcceleratorInlineeLinesByName ( 
  [in]検索するインライン関数の名前。  
   
  `option`  
- [in]対応しているフレームのインラインの検索時に使用される名前の検索オプション`name`します。 詳細については、次を参照してください。 [NameSearchOptions 列挙型](../../debugger/debug-interface-access/namesearchoptions.md)します。  
+ [in]対応しているフレームのインラインの検索時に使用される名前の検索オプション`name`します。 詳細については、[NameSearchOptions 列挙型](../../debugger/debug-interface-access/namesearchoptions.md)を参照してください。  
   
  `ppResult`  
  [out]ポインター、`IDiaEnumSymbols`インターフェイス ポインターでは、結果を使用して初期化します。  

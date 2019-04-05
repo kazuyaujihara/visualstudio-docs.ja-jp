@@ -49,7 +49,7 @@ Web プロジェクトでは、Web アプリケーションを作成します。
 
 - プロジェクトと項目テンプレートと登録を追加して Web サイト プロジェクト システムを実装、[!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)]プロジェクト。
 
-- WAP システムは、プロジェクト フレーバーとも呼ばれる、プロジェクトのサブタイプとして実装されます。 [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)]プロジェクトは、WAP システムを作成する WAP サブタイプによってフレーバーします。 プロジェクト サブタイプの詳細については、次を参照してください。[プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)します。
+- WAP システムは、プロジェクト フレーバーとも呼ばれる、プロジェクトのサブタイプとして実装されます。 [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)]プロジェクトは、WAP システムを作成する WAP サブタイプによってフレーバーします。 プロジェクト サブタイプの詳細については、[プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)を参照してください。
 
 - スマート Web ページは、サーバー側のプログラミング言語と HTML を結合します。 サーバー側の言語には、含まれている言語が呼び出されます。 含まれている言語をサポートするために、Web プロジェクト システムを実装する必要があります、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>インターフェイスのファミリです。
 

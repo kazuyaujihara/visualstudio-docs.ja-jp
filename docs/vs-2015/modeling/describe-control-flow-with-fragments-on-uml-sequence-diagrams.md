@@ -22,7 +22,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 4ab4c65e554e9eef75a1761719ce19f3312e07ce
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51727646"
@@ -35,7 +35,7 @@ UML シーケンス図では、 *結合フラグメント* を使用して、ル
  結合フラグメントは、1 つまたは複数の *相互作用オペランド*で構成されます。そのそれぞれには、1 つまたは複数のメッセージ、相互作用使用、または結合フラグメントが含まれます。  
   
 > [!NOTE]
->  このトピックでは、シーケンス図におけるフラグメントについて説明します。 UML シーケンス図を読み取る方法の詳細については、次を参照してください。 [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)します。 UML アクティビティ図を描画する方法の詳細については、「 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)」を参照してください。  
+>  このトピックでは、シーケンス図におけるフラグメントについて説明します。 UML シーケンス図を読み取る方法の詳細については、[UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)を参照してください。 UML アクティビティ図を描画する方法の詳細については、「 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)」を参照してください。  
   
  ![結合フラグメントでは 2 つの相互作用オペランドを](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   

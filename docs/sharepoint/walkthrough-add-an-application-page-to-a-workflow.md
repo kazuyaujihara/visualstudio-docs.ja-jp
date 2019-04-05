@@ -339,7 +339,7 @@ ms.locfileid: "54865831"
      経費レポートの概要 ページには、すべてを割り当てられている量を超えた経費報告書の値を超えている金額とすべてのレポートの合計金額が表示されます。
 
 ## <a name="next-steps"></a>次の手順
- SharePoint アプリケーション ページの詳細については、次を参照してください。[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)です。
+ SharePoint アプリケーション ページの詳細については、[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)を参照してください。
 
  これらのトピックから Visual Studio で Visual Web Designer を使用して、SharePoint ページの内容を設計する方法について詳細ことができます。
 

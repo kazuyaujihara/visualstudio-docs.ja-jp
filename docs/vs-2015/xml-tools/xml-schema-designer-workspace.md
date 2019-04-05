@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: ae20cd6a2eb8a4e3d8c1869cc4a0c707ccdf6de2
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49240956"
@@ -36,9 +36,9 @@ XML スキーマ デザイナー (XSD デザイナー) は、XML スキーマを
   
 -   XML スキーマ エクスプローラーからは、3 つのどのビューにでもグローバル ノード、ファイル ノード、および名前空間ノードをドラッグ アンド ドロップすることができます。 詳細については、「ノードをドラッグすること、および削除」のセクションを参照してください。 [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)します。  
   
--   XML スキーマ エクスプローラーのコンテキスト メニューを使用します。 詳細については、次を参照してください。[コンテキスト メニュー](../xml-tools/context-menus-xml-schema-explorer.md)します。  
+-   XML スキーマ エクスプローラーのコンテキスト メニューを使用します。 詳細については、[コンテキスト メニュー](../xml-tools/context-menus-xml-schema-explorer.md)を参照してください。  
   
--   XSD エクスプ ローラーで検索を実行し、**強調表示されたノードをワークスペースに追加**概要結果ペインでボタンをクリックします。 詳細については、次を参照してください。[スキーマ セットの検索](../xml-tools/searching-the-schema-set.md)します。  
+-   XSD エクスプ ローラーで検索を実行し、**強調表示されたノードをワークスペースに追加**概要結果ペインでボタンをクリックします。 詳細については、[スキーマ セットの検索](../xml-tools/searching-the-schema-set.md)を参照してください。  
   
 ## <a name="view-switching"></a>ビューの切り替え  
  ビューを切り替えるには、次のいずれかを使用します。  

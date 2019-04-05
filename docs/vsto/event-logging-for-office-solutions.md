@@ -74,7 +74,7 @@ ms.locfileid: "56628885"
 
   Office ソリューションをアンインストールしても、例外メッセージはイベント ログに残ります。
 
-  Office ソリューションを実行するときに例外メッセージをログと表示を切り替えるには、次を参照してください。 [Office のデバッグ プロジェクト](../vsto/debugging-office-projects.md)と[デバッグ Office プロジェクト](../vsto/debugging-office-projects.md)します。
+  Office ソリューションを実行するときに例外メッセージをログと表示を切り替えるには、[Office のデバッグ プロジェクト](../vsto/debugging-office-projects.md)と[デバッグ Office プロジェクト](../vsto/debugging-office-projects.md)を参照してください。
 
 ### <a name="localization"></a>ローカリゼーション
  例外メッセージの言語は、Office ランタイム言語の Visual Studio Tools によって決まります。 たとえば、エンドユーザーのコンピューターにインストールされている、日本語の言語パックがある場合は、例外メッセージは日本語でイベント ログに書き込まれます。

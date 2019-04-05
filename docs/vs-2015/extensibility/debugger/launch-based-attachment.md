@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 1c3d361d9e8b99467e0a8a131e9d30be5db30b9d
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51792451"
@@ -26,12 +26,12 @@ ms.locfileid: "51792451"
 # <a name="launch-based-attachment"></a>起動ベースのアタッチ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-プログラムを起動ベースの添付ファイルは自動です。 によって、SDM をプログラムをホストするプロセスを起動すると起動ベースの添付ファイルは手動の添付ファイルのメソッドのようなパスに従います。 詳しくは、次を参照してください。[プログラムへのアタッチ](../../extensibility/debugger/attaching-to-the-program.md)します。  
+プログラムを起動ベースの添付ファイルは自動です。 によって、SDM をプログラムをホストするプロセスを起動すると起動ベースの添付ファイルは手動の添付ファイルのメソッドのようなパスに従います。 詳しくは、[プログラムへのアタッチ](../../extensibility/debugger/attaching-to-the-program.md)を参照してください。  
   
 ## <a name="the-attaching-process"></a>プロセスを接続します。  
  主な違いは、次のイベントのシーケンス、**アタッチ**呼び出すと、次のようにします。  
   
-1.  送信、 **IDebugEngineCreateEvent2** SDM にイベント オブジェクト。 詳細については、次を参照してください。[イベントの送信](../../extensibility/debugger/sending-events.md)します。  
+1.  送信、 **IDebugEngineCreateEvent2** SDM にイベント オブジェクト。 詳細については、[イベントの送信](../../extensibility/debugger/sending-events.md)を参照してください。  
   
 2.  呼び出す、`IDebugProgram2::GetProgramId`メソッドを**IDebugProgram2**に渡されたインターフェイス、**アタッチ**メソッド。  
   

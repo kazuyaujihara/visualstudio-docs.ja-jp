@@ -138,7 +138,7 @@ ms.locfileid: "51777475"
      そうです：  
      「どのような価格オプションは、Windows Azure Mobile Services の使用可能な」でしょうか。  
   
--   ヘルプ リンクの正しい書き込みスタイルの詳細については、次を参照してください。、[ヘルプについては、Windows デスクトップ](https://msdn.microsoft.com/library/windows/desktop/dn742494\(v=vs.85\).aspx)します。  
+-   ヘルプ リンクの正しい書き込みスタイルの詳細については、、[ヘルプについては、Windows デスクトップ](https://msdn.microsoft.com/library/windows/desktop/dn742494\(v=vs.85\).aspx)を参照してください。  
   
 #### <a name="hint-text"></a>ヒント テキスト  
  コントロール内で、またはコントロールの下のレベルのウォーターマークとしてヒント テキストが表示されます。 適切な VSColors トークンを使用してによって適用される正しい書式`Environment.GrayText`します。  

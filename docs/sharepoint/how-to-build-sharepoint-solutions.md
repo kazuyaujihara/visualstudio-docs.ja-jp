@@ -23,13 +23,13 @@ ms.locfileid: "54867132"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>方法: SharePoint ソリューションをビルドします。
 
-ビルド、SharePoint ソリューションが Visual Studio での他のアプリケーションを構築すると同じです。 アプリケーションの構築に関する詳細については、次を参照してください。[コンパイルし、Visual Studio でビルド](../ide/compiling-and-building-in-visual-studio.md)します。 SharePoint ソリューションに固有のいくつかの考慮事項の詳細については、次を参照してください。[方法。展開し、SharePoint ソリューションをローカル SharePoint サイトにパブリッシュ](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)します。
+ビルド、SharePoint ソリューションが Visual Studio での他のアプリケーションを構築すると同じです。 アプリケーションの構築に関する詳細については、[コンパイルし、Visual Studio でビルド](../ide/compiling-and-building-in-visual-studio.md)を参照してください。 SharePoint ソリューションに固有のいくつかの考慮事項の詳細については、次を参照してください。[方法。展開し、SharePoint ソリューションをローカル SharePoint サイトにパブリッシュ](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)します。
 
 ## <a name="to-build-sharepoint-solutions"></a>SharePoint ソリューションを構築するには
 
-1.  デバッグとリリース ビルドを作成するかどうかを決定します。 詳細については、次を参照してください。[デバッガー プロジェクト設定](../debugger/debugger-project-settings.md)します。
+1.  デバッグとリリース ビルドを作成するかどうかを決定します。 詳細については、[デバッガー プロジェクト設定](../debugger/debugger-project-settings.md)を参照してください。
 
-2.  構築や、ソリューションまたはプロジェクトを再構築に適したオプションを選択します。 詳細については、次を参照してください。[のコンパイルと Visual Studio でビルド](../ide/compiling-and-building-in-visual-studio.md)します。
+2.  構築や、ソリューションまたはプロジェクトを再構築に適したオプションを選択します。 詳細については、[のコンパイルと Visual Studio でビルド](../ide/compiling-and-building-in-visual-studio.md)を参照してください。
 
 3.  メニュー バーで、**[ビルド]** > **[ソリューションのビルド]** の順にクリックします。
 

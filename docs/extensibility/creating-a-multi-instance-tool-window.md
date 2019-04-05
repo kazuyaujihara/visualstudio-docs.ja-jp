@@ -28,7 +28,7 @@ ms.locfileid: "56317485"
 1. という名前のプロジェクトを作成する**MultiInstanceToolWindow** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**MIToolWindow**します。
 
     > [!NOTE]
-    > ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。
+    > ツール ウィンドウで拡張機能の作成の詳細については、[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。
 
 ## <a name="make-a-tool-window-multi-instance"></a>ツール ウィンドウの複数インスタンスを作成します。
 

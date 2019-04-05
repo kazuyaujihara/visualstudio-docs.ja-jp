@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 995192b372b9c1909ad3a7f164474cfaf63f07bc
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51784456"
@@ -91,7 +91,7 @@ ms.locfileid: "51784456"
   
       この方法を使用すると、各レイヤーの設計要素から、レイヤーの設定要素と、そのレイヤーが依存している共通アーキテクチャを直接参照することができます。  
   
-      複数のパッケージに対する同時作業では競合が発生することがありますが、パッケージは個別ファイルに保存されるため、競合を非常に簡単に管理できます。 依存パッケージから参照されている要素を削除した場合には、大きな問題が発生します。 詳細については、次を参照してください。[モデルおよびバージョン管理下にある図](../modeling/manage-models-and-diagrams-under-version-control.md)します。  
+      複数のパッケージに対する同時作業では競合が発生することがありますが、パッケージは個別ファイルに保存されるため、競合を非常に簡単に管理できます。 依存パッケージから参照されている要素を削除した場合には、大きな問題が発生します。 詳細については、[モデルおよびバージョン管理下にある図](../modeling/manage-models-and-diagrams-under-version-control.md)を参照してください。  
   
 ## <a name="creating-architecture-templates"></a>アーキテクチャ テンプレートの作成  
  実際は、すべての Visual Studio ソリューションを同時に作成することはありませんが、プロジェクトが進行するにつれて、ソリューションが追加されます。 将来のプロジェクトで、同じソリューションの構造が使われる可能性もあります。  新しいソリューションを短時間で作成しやすくするため、ソリューションまたはプロジェクトのテンプレートを作成できます。 簡単に他のコンピューターに配布してインストールできるようにするため、Visual Studio Integration Extension (VSIX) でテンプレートをキャプチャすることができます。  

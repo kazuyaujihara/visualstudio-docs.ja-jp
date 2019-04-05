@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 428a2faf85180b9239f128dde5a9dadca04139af
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51786446"
@@ -48,7 +48,7 @@ Param="WIZARDUI = FALSE"
 |ウィザード|このフィールドには、OLE の ProgID ウィザード、または、IDE によって一緒はウィザードの CLSID の GUID の文字列表現が含まれています。|  
 |Param|これらの部分は省略可能です。 必要な数だけ追加できます。|  
   
- パラメーターには、ウィザードに追加のカスタム パラメーターを渡す .vsz ファイルが有効にします。 各値は、variant の配列内の文字列要素としてウィザードに渡されます。 詳細については、次を参照してください。[カスタム パラメーター](../../extensibility/internals/custom-parameters.md)します。 開発のカスタム ウィザードの .vsz ファイルを使用する方法については、次を参照してください。[します。Vsz ファイル (プロジェクト コントロール)](http://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
+ パラメーターには、ウィザードに追加のカスタム パラメーターを渡す .vsz ファイルが有効にします。 各値は、variant の配列内の文字列要素としてウィザードに渡されます。 詳細については、[カスタム パラメーター](../../extensibility/internals/custom-parameters.md)を参照してください。 開発のカスタム ウィザードの .vsz ファイルを使用する方法については、[を参照してください。Vsz ファイル (プロジェクト コントロール)](http://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
   
  .Vsz ファイルには、既定のロケール ID を追加するには、指定`FALLBACK_LCID`= xxxx, ここで xxxx は、ロケール ID を英語の場合は 1033 など。 ときに`FALLBACK_LCID`パラメーターが定義されている場合、ウィザードは、現在の ID が見つからない場合に指定されたフォールバック ロケール ID を使用します。  
   

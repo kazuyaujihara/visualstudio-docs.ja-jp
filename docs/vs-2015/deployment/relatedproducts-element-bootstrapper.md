@@ -29,7 +29,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: c78aa559bf64b110909134426c676f302ca5fe04
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49296297"
@@ -67,7 +67,7 @@ ms.locfileid: "49296297"
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Code`|指定したとおり、含まれる製品のコードの名前、`ProductCode`の属性、`Product`要素。 詳細については、次を参照してください。 [\<製品 > 要素](../deployment/product-element-bootstrapper.md)します。|  
+|`Code`|指定したとおり、含まれる製品のコードの名前、`ProductCode`の属性、`Product`要素。 詳細については、[\<製品 > 要素](../deployment/product-element-bootstrapper.md)を参照してください。|  
   
 ## <a name="eitherproducts"></a>EitherProducts  
  `EitherProducts`要素は、0 個以上を定義します。`DependsOnProduct`要素、属性を持っていません。 少なくとも 1 つ`DependsOnProduct`このセットでは、現在の製品する前にインストールする必要があります。 A `RelatedProducts` 0 個以上の要素を持つことができます`EitherProducts`要素。  
@@ -79,7 +79,7 @@ ms.locfileid: "49296297"
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Code`|指定したとおり、含まれる製品のコードの名前、`ProductCode`の属性、`Product`要素。 詳細については、次を参照してください。 [\<製品 > 要素](../deployment/product-element-bootstrapper.md)します。|  
+|`Code`|指定したとおり、含まれる製品のコードの名前、`ProductCode`の属性、`Product`要素。 詳細については、[\<製品 > 要素](../deployment/product-element-bootstrapper.md)を参照してください。|  
   
 ## <a name="example"></a>例  
  次のコード例で、Microsoft インストーラーがインストールされていることを指定します、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]、ため、個別のインストールは必要ありません。  

@@ -21,7 +21,7 @@ ms.locfileid: "56720680"
 ---
 # <a name="expression-evaluator-architecture"></a>式エバリュエーターのアーキテクチャ
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+>  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
 
  パッケージのデバッグは、Visual Studio に独自の言語を統合すると、必要な式エバリュエーター (EE) のインターフェイスを設定し、共通言語ランタイムのシンボル プロバイダー (SP) とバインダー インターフェイスを呼び出す必要があります。 現在の実行のアドレスと共に、SP とバインダー オブジェクトは、式が評価されるコンテキストです。 これらのインターフェイスの生成および消費する情報は、EE のアーキテクチャの主な概念を表します。
 

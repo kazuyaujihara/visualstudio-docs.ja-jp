@@ -20,7 +20,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: e5786eb21813125237a35ed185542b5f73bdc839
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51777891"
@@ -32,7 +32,7 @@ ms.locfileid: "51777891"
   
  プロジェクトでは、どのエディターを使用するは、ユーザーがプロジェクト項目を開いたときに決定する際の重要な役割を果たします。 プロジェクトを設計すると、プロジェクト固有のエディターまたは標準のエディターを使用して特定のファイルを開きます。  
   
- プロジェクト固有のエディターは、通常、ユーザーが特別な知識があるか、プロジェクトからの特別なインターフェイスを使用する必要があります。 詳細については、次を参照してください。[方法: 開いているプロジェクト固有のエディター](../../extensibility/how-to-open-project-specific-editors.md)します。  
+ プロジェクト固有のエディターは、通常、ユーザーが特別な知識があるか、プロジェクトからの特別なインターフェイスを使用する必要があります。 詳細については、[方法: 開いているプロジェクト固有のエディター](../../extensibility/how-to-open-project-specific-editors.md)を参照してください。  
   
  標準エディターでは、すべてのプロジェクトで特定の拡張機能の任意のファイルを開くことができます。 ユーザーがなど、一部の標準エディターをカスタマイズすることができます、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]プロジェクト用のテキスト エディターは、パブリックの文字を保持します。 標準のエディターを使用して作成された、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>メソッド。  
   

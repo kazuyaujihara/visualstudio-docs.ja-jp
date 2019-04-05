@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 44fc431f008c59a7d4ceff2d9b9ec14d85091daf
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51728004"
@@ -26,7 +26,7 @@ ms.locfileid: "51728004"
 # <a name="command-routing-algorithm"></a>コマンド ルーティング アルゴリズム
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio でのコマンドは、さまざまなコンポーネントによって処理されます。 コマンドは、現在の選択に基づいて、最も内側のコンテキストから最も外側の (グローバルとも呼ばれます) のコンテキストにルーティングされます。 詳細については、次を参照してください。[可用性](../../extensibility/internals/command-availability.md)します。  
+Visual Studio でのコマンドは、さまざまなコンポーネントによって処理されます。 コマンドは、現在の選択に基づいて、最も内側のコンテキストから最も外側の (グローバルとも呼ばれます) のコンテキストにルーティングされます。 詳細については、[可用性](../../extensibility/internals/command-availability.md)を参照してください。  
   
 ## <a name="order-of-command-resolution"></a>コマンドの解像度の順序  
  コマンドは、レベルは次のコマンド コンテキストを介して渡されます。  

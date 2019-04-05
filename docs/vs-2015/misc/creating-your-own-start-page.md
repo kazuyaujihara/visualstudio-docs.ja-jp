@@ -18,7 +18,7 @@ caps.latest.revision: 22
 manager: douge
 ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49815040"
@@ -36,7 +36,7 @@ ms.locfileid: "49815040"
 1.  Visual Studio ギャラリーから [スタート ページのプロジェクト テンプレート](http://go.microsoft.com/fwlink/?LinkId=186204) をダウンロードしてインストールします。  
   
     > [!WARNING]
-    >  この時点では、Visual Studio 2010 のスタート ページのプロジェクト テンプレートはアップグレードされていません。 このテンプレートをアップグレードする方法については、次を参照してください。[方法: Visual Studio カスタム スタート ページをアップグレード](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)します。  
+    >  この時点では、Visual Studio 2010 のスタート ページのプロジェクト テンプレートはアップグレードされていません。 このテンプレートをアップグレードする方法については、[方法: Visual Studio カスタム スタート ページをアップグレード](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)を参照してください。  
   
 2.  テンプレートをインストールした後、それを使用して新しいスタート ページ プロジェクトを作成します。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "49815040"
   
     配置する .vsix ファイルと .pkgdef ファイルは残してください。  
   
-   または、Visual Studio によって認識される適切なタグ構造を持つ XAML ファイルを作成することで、空白のスタート ページを作成することもできます。 その後、マークアップと分離コードを追加して、必要な外観と機能を取得できます。 詳細については、次を参照してください。[カスタム スタート ページを作成する](../extensibility/creating-a-custom-start-page.md)します。  
+   または、Visual Studio によって認識される適切なタグ構造を持つ XAML ファイルを作成することで、空白のスタート ページを作成することもできます。 その後、マークアップと分離コードを追加して、必要な外観と機能を取得できます。 詳細については、[カスタム スタート ページを作成する](../extensibility/creating-a-custom-start-page.md)を参照してください。  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>カスタム スタート ページのテストと適用  
  クラッシュしないことを確認するまでは、プライマリ インスタンスを設定してカスタム スタート ページを実行しないでください。 テストしたカスタム スタート ページは、Visual Studio のプライマリ インスタンスでこの手順の最後の 3 つの手順を繰り返して、システムに適用できます。  

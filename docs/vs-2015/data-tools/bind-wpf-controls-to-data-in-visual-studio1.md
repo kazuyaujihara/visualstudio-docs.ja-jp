@@ -90,7 +90,7 @@ ms.locfileid: "49914685"
 - コントロールを格納する <xref:System.Windows.FrameworkElement.Loaded> 要素の [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] イベント ハンドラーを作成する。 イベント ハンドラーは、Get を呼び出して*EntityName*Query メソッドを取得、データ エンティティを読み込み、<xref:System.Windows.Data.CollectionViewSource>からコンテナーのリソース、し、最初のデータ項目の現在の項目。 場合、<xref:System.Windows.FrameworkElement.Loaded>イベント ハンドラーが既に存在する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]既存のイベント ハンドラーに次のコードを追加します。  
   
 ### <a name="services"></a>Services  
- サービス オブジェクトまたはプロパティからドラッグすると、**データ ソース**、デザイナーにウィンドウ[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]をデータ バインド コントロールを作成します (または、オブジェクトまたはプロパティに既存のコントロールをバインドします)。 ただし、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はプロキシ サービス オブジェクトにデータを読み込むコードを生成しません。 このコードは、ユーザーが手動で記述する必要があります。 これを行う方法については、例では、次を参照してください。 [WCF data service にコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)します。  
+ サービス オブジェクトまたはプロパティからドラッグすると、**データ ソース**、デザイナーにウィンドウ[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]をデータ バインド コントロールを作成します (または、オブジェクトまたはプロパティに既存のコントロールをバインドします)。 ただし、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はプロキシ サービス オブジェクトにデータを読み込むコードを生成しません。 このコードは、ユーザーが手動で記述する必要があります。 これを行う方法については、例では、[WCF data service にコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)を参照してください。  
   
  Visual Studio は、次の処理を行う XAML を生成します。  
   
@@ -102,7 +102,7 @@ ms.locfileid: "49914685"
  オブジェクトまたはからプロパティをドラッグすると、**データ ソース**、デザイナーにウィンドウ[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]をデータ バインド コントロールを作成します (または、オブジェクトまたはプロパティに既存のコントロールをバインドします)。 ただし、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はオブジェクトにデータを読み込むコードを生成しません。 このコードは、ユーザーが手動で記述する必要があります。  
   
 > [!NOTE]
->  カスタム クラス パブリックであり、既定では、パラメーターなしのコンス トラクターを持ちます。 それらをそれぞれの構文で「ドット」を持つ入れ子になった can'tbe クラス。 詳細については、次を参照してください。 [XAML とカスタム クラスの WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a)します。  
+>  カスタム クラス パブリックであり、既定では、パラメーターなしのコンス トラクターを持ちます。 それらをそれぞれの構文で「ドット」を持つ入れ子になった can'tbe クラス。 詳細については、[XAML とカスタム クラスの WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a)を参照してください。  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]は次を実行します。  
   

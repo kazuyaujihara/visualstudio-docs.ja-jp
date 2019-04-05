@@ -66,7 +66,7 @@ C または C++ コードのコード分析を定期的に実行することで�
   
     -   カスタム規則セットを定義します。  
   
-         詳細については、次を参照してください。[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)です。  
+         詳細については、[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)を参照してください。  
   
 ### <a name="standard-cc-rule-sets"></a>標準の C/C++ 規則セット  
  Visual Studio には、ネイティブ コードの規則として 2 つの標準セットが含まれています。  

@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 53a60949cdda6d026525dcc8be5bab8f82a0fb73
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51741546"
@@ -28,7 +28,7 @@ ms.locfileid: "51741546"
 
 CommandPlacement 要素では、ボタン、グループ、および 1 つ以上のグループまたはメニューに含まれるメニューを使用します。 CommandPlacement 要素を使用すると、ユーザー インターフェイスの外観を変更するには、これらの項目を完全に再定義する必要はありません。  
   
- 詳細については、次を参照してください。[ボタンの再利用可能なグループの作成](../extensibility/creating-reusable-groups-of-buttons.md)です。  
+ 詳細については、[ボタンの再利用可能なグループの作成](../extensibility/creating-reusable-groups-of-buttons.md)を参照してください。  
   
 ## <a name="syntax"></a>構文  
   

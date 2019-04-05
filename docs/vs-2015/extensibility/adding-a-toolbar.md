@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 038b8e8503a89dd0ec565d3d1b5acf20e6437600
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51787953"
@@ -32,13 +32,13 @@ ms.locfileid: "51787953"
   
  ユーザーがさらに、ツールバーにコマンドを追加またはを使用してから、削除、**カスタマイズ** ダイアログ ボックス。 通常、Vspackage では、ツールバーは、ユーザーがカスタマイズできます。 IDE がカスタマイズをすべてを処理し、VSPackage がコマンドに応答します。 VSPackage は、コマンドが物理的に配置されている場所を認識する必要はありません。  
   
- メニューの詳細については、次を参照してください。[コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。  
+ メニューの詳細については、[コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)を参照してください。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
   
 ## <a name="creating-an-extension-with-a-toolbar"></a>ツールバーと拡張機能の作成  
- という名前の VSIX プロジェクトを作成する`IDEToolbar`します。 という名前のメニュー コマンド項目テンプレートを追加**ToolbarTestCommand**します。 これを行う方法については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
+ という名前の VSIX プロジェクトを作成する`IDEToolbar`します。 という名前のメニュー コマンド項目テンプレートを追加**ToolbarTestCommand**します。 これを行う方法については、[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。  
   
 ## <a name="creating-a-toolbar-for-the-ide"></a>IDE のツールバーの作成  
   

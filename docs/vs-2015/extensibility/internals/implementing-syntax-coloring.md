@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 30a53b1fc04bd08835ccf0ff0b0edb2e5d117fcb
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51775031"
@@ -67,7 +67,7 @@ ms.locfileid: "51775031"
     4.  画面にテキストを表示するために、装飾が可能な項目の情報を使用します。  
   
 ## <a name="managed-package-framework-colorizer"></a>Managed Package Framework Colorizer  
- Managed package framework (MPF) は、colorizer を実装するために必要なすべてのクラスを提供します。 言語サービス クラスを継承する必要があります、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスし、必要なメソッドを実装します。 スキャナーとパーサーを実装することで指定する必要があります、<xref:Microsoft.VisualStudio.Package.IScanner>インターフェイスし、そのインターフェイスからのインスタンスを返す、<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>メソッド (いずれの方法で実装する必要があります、<xref:Microsoft.VisualStudio.Package.LanguageService>クラス)。 詳細については、次を参照してください。[従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)します。  
+ Managed package framework (MPF) は、colorizer を実装するために必要なすべてのクラスを提供します。 言語サービス クラスを継承する必要があります、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスし、必要なメソッドを実装します。 スキャナーとパーサーを実装することで指定する必要があります、<xref:Microsoft.VisualStudio.Package.IScanner>インターフェイスし、そのインターフェイスからのインスタンスを返す、<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>メソッド (いずれの方法で実装する必要があります、<xref:Microsoft.VisualStudio.Package.LanguageService>クラス)。 詳細については、[従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: ビルトインの配色可能な項目を使用して、](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   

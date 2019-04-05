@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 8b9e7705af131bdc8c81b6cbeeac3ed4dda80aa4
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51721040"
@@ -42,13 +42,13 @@ ms.locfileid: "51721040"
   
 5. 環境のメソッドを呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>に基づいてオブジェクトを取得、`IDispatch`インターフェイスを埋めるために、**プロパティ**ウィンドウ。  
   
-   内の値、**プロパティ**ウィンドウが変更には、Vspackage 実装`IVsTrackSelectionEx::OnElementValueChangeEx`と`IVsTrackSelectionEx::OnSelectionChangeEx`要素の値に変更を報告します。 環境が呼び出され、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>または<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>に表示される情報を保持する、**プロパティ**ウィンドウは、プロパティの値と同期します。 詳細については、次を参照してください。[プロパティ ウィンドウでプロパティ値を更新](../../misc/updating-property-values-in-the-properties-window.md)します。  
+   内の値、**プロパティ**ウィンドウが変更には、Vspackage 実装`IVsTrackSelectionEx::OnElementValueChangeEx`と`IVsTrackSelectionEx::OnSelectionChangeEx`要素の値に変更を報告します。 環境が呼び出され、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>または<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>に表示される情報を保持する、**プロパティ**ウィンドウは、プロパティの値と同期します。 詳細については、[プロパティ ウィンドウでプロパティ値を更新](../../misc/updating-property-values-in-the-properties-window.md)を参照してください。  
   
-   別の選択をするだけでなくプロジェクト項目で**ソリューション エクスプ ローラー**その項目に関連するプロパティを表示するで使用可能なドロップダウン リストを使用して、フォームまたはドキュメント ウィンドウ内から別のオブジェクトも選択できます、**プロパティ**ウィンドウ。 詳細については、次を参照してください。[プロパティ ウィンドウのオブジェクト一覧](../../extensibility/internals/properties-window-object-list.md)します。  
+   別の選択をするだけでなくプロジェクト項目で**ソリューション エクスプ ローラー**その項目に関連するプロパティを表示するで使用可能なドロップダウン リストを使用して、フォームまたはドキュメント ウィンドウ内から別のオブジェクトも選択できます、**プロパティ**ウィンドウ。 詳細については、[プロパティ ウィンドウのオブジェクト一覧](../../extensibility/internals/properties-window-object-list.md)を参照してください。  
   
-   情報の表示方法を変更することができます、**プロパティ**からアルファベット順をカテゴリ別のウィンドウのグリッドまた、、で適切なボタンをクリックして、選択したオブジェクトのプロパティページを開くことも、使用可能な場合。**プロパティ**ウィンドウ。 詳細については、次を参照してください。[プロパティ ウィンドウのボタン](../../extensibility/internals/properties-window-buttons.md)と[プロパティ ページ](../../extensibility/internals/property-pages.md)します。  
+   情報の表示方法を変更することができます、**プロパティ**からアルファベット順をカテゴリ別のウィンドウのグリッドまた、、で適切なボタンをクリックして、選択したオブジェクトのプロパティページを開くことも、使用可能な場合。**プロパティ**ウィンドウ。 詳細については、[プロパティ ウィンドウのボタン](../../extensibility/internals/properties-window-buttons.md)と[プロパティ ページ](../../extensibility/internals/property-pages.md)を参照してください。  
   
-   最後に、下部にある、**プロパティ**ウィンドウで選択したフィールドの説明も含まれています、**プロパティ** ウィンドウのグリッド。 詳細については、次を参照してください。[プロパティ ウィンドウからフィールドの説明を取得する](../../misc/getting-field-descriptions-from-the-properties-window.md)します。  
+   最後に、下部にある、**プロパティ**ウィンドウで選択したフィールドの説明も含まれています、**プロパティ** ウィンドウのグリッド。 詳細については、[プロパティ ウィンドウからフィールドの説明を取得する](../../misc/getting-field-descriptions-from-the-properties-window.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [プロパティの拡張](../../extensibility/internals/extending-properties.md)

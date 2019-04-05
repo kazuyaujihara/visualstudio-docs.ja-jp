@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: e1534c13c6c09a95fab21582ba0016153d1a6992
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51806985"
@@ -35,7 +35,7 @@ VSIX パッケージは、分類、拡張機能をインストールして Visua
 >  VSIX パッケージに含まれるファイルの名前は、スペースを含める必要がありますいないもとして Uniform Resource Identifier (URI) 内に予約されている文字の下で定義された[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)します。  
   
 ## <a name="the-vsix-manifest"></a>VSIX マニフェスト  
- VSIX マニフェストには、拡張機能のインストール、および次のように、VSX スキーマに関する情報が含まれています。 詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。 VSIX マニフェストの例を次を参照してください。 [PackageManifest Element (Root Element, VSX Schema)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)します。  
+ VSIX マニフェストには、拡張機能のインストール、および次のように、VSX スキーマに関する情報が含まれています。 詳細については、[VSIX 拡張機能スキーマ 1.0 リファレンス](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)を参照してください。 VSIX マニフェストの例を[PackageManifest Element (Root Element, VSX Schema)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)を参照してください。  
   
  VSIX マニフェストを指定する必要があります`extension.vsixmanifest`.vsix ファイルに含まれています。  
   
@@ -43,7 +43,7 @@ VSIX パッケージは、分類、拡張機能をインストールして Visua
  VSIX パッケージには、テンプレート、ツールボックス項目、Vspackage、またはその他の種類の Visual Studio でサポートされている拡張機能を含めることができます。  
   
 ## <a name="language-packs"></a>言語パック  
- VSIX パッケージには、1 回またはインストール中にローカライズされたテキストを提供する以上の Extension.vsixlangpack ファイルを含めることができます。 詳細については、次を参照してください。 [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)します。  
+ VSIX パッケージには、1 回またはインストール中にローカライズされたテキストを提供する以上の Extension.vsixlangpack ファイルを含めることができます。 詳細については、[VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)を参照してください。  
   
 ## <a name="dependencies-and-references"></a>依存関係および参照  
  VSIX パッケージでは、参照として他の VSIX パッケージを含めることができます。 独自の VSIX マニフェストの他の各パッケージがあります。  
@@ -62,7 +62,7 @@ VSIX パッケージは、分類、拡張機能をインストールして Visua
  インストールは、既定では、%localappdata% がユーザー固有のディレクトリであるために、現在のユーザーにのみ適用されます。 ただし、設定した場合、 [AllUsers](http://msdn.microsoft.com/en-us/ac817f50-3276-4ddb-b467-8bbb1432455b)するマニフェストの要素`True`で、拡張機能がインストールされます.\\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions コンピューターのすべてのユーザーに利用可能になります。  
   
 ## <a name="contenttypesxml"></a>[Content_Types] .xml  
- [Content_Types] .xml ファイルは .vsix 展開ファイルのファイルの種類を識別します。 Visual Studio は、パッケージのインストール中にこのファイルを使用しますが、ファイル自体ではインストールされません。 このファイルの詳細については、次を参照してください。 [、Content_types の構造\].xml ファイル](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)します。  
+ [Content_Types] .xml ファイルは .vsix 展開ファイルのファイルの種類を識別します。 Visual Studio は、パッケージのインストール中にこのファイルを使用しますが、ファイル自体ではインストールされません。 このファイルの詳細については、[、Content_types の構造\].xml ファイル](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)を参照してください。  
   
  [Content_Types] .xml ファイルで、Open Packaging Conventions (OPC) 標準が必要です。 OPC の詳細については、次を参照してください。 [OPC: A 新しい標準のパッケージ化、データ](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN Web サイト。
 

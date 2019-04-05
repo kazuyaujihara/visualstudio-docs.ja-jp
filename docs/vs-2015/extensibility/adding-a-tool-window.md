@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 887466c588bf76c10e3fbf0487eb0da590121ec5
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51784839"
@@ -46,7 +46,7 @@ ms.locfileid: "51784839"
 1.  という名前のプロジェクトを作成する**FirstToolWin** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**FirstToolWindow**します。  
   
     > [!NOTE]
-    >  ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。  
+    >  ツール ウィンドウで拡張機能の作成の詳細については、[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。  
   
 ## <a name="add-a-control-to-the-tool-window"></a>ツール ウィンドウにコントロールを追加します。  
   
@@ -269,7 +269,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      最初の名前付きパラメーターは`Style`、値は`Tabbed`ウィンドウは、既存のウィンドウ タブにあることを意味します。 ドッキング位置がで指定された、`Window`パラメーターでは、この場合は、n の GUID、**ソリューション エクスプ ローラー**します。  
   
     > [!NOTE]
-    >  IDE のウィンドウの種類の詳細については、次を参照してください。<xref:EnvDTE.vsWindowType>します。  
+    >  IDE のウィンドウの種類の詳細については、<xref:EnvDTE.vsWindowType>を参照してください。  
   
 ## <a name="testing-the-tool-window"></a>ツール ウィンドウのテスト  
   

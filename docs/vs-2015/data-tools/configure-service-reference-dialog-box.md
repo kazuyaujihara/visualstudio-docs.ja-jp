@@ -20,7 +20,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 24da338378739afca6ad228582a29069aebde9f5
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49266982"
@@ -61,7 +61,7 @@ ms.locfileid: "49266982"
  WCF クライアント クラスのコード アクセス レベルを特定します。  
   
 > [!NOTE]
->  Web サイト プロジェクトの場合、このオプションは常に `Public` に設定され、変更できません。 詳細については、次を参照してください。[サービス参照のトラブルシューティング](../data-tools/troubleshooting-service-references.md)します。  
+>  Web サイト プロジェクトの場合、このオプションは常に `Public` に設定され、変更できません。 詳細については、[サービス参照のトラブルシューティング](../data-tools/troubleshooting-service-references.md)を参照してください。  
   
  **非同期操作を生成します。**  
  WCF サービス メソッドの呼び出しが同期 (既定) または非同期のどちらであるかを指定します。  
@@ -70,7 +70,7 @@ ms.locfileid: "49266982"
  非同期コードを作成する場合、このオプションにより、.Net 4 で導入されたタスク並列ライブラリ (TPL) を利用できます。 参照してください[タスク並列ライブラリ (TPL)](http://msdn.microsoft.com/library/dd460717.aspx)します。  
   
  **メッセージ コントラクトを常に生成します。**  
- WCF クライアント向けにメッセージ コントラクト型が生成されるかどうかを指定します。 メッセージ コントラクトの詳細については、次を参照してください。 [Using Message Contracts](http://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249)します。  
+ WCF クライアント向けにメッセージ コントラクト型が生成されるかどうかを指定します。 メッセージ コントラクトの詳細については、[Using Message Contracts](http://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249)を参照してください。  
   
  **コレクション型**  
  WCF クライアントのリスト コレクション型を指定します。 既定の型は <xref:System.Array> です。  

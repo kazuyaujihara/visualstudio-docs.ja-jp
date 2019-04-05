@@ -18,13 +18,13 @@ caps.latest.revision: 24
 manager: douge
 ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49195020"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio 相互運用機能アセンブリのパラメーター マーシャリング
-マネージ コードで記述されている Vspackage は、呼び出しまたはアンマネージ COM コードによって呼び出される必要があります。 通常、メソッドの引数が変換、または、マーシャ リングされる、自動的に相互運用マーシャラーによって。 ただし、場合によって引数は、変換できない簡単な方法でします。 その場合、相互運用機能アセンブリのメソッド プロトタイプのパラメーターは、COM 関数のパラメーターをできるだけ一致に使用されます。 詳細については、次を参照してください。[相互運用マーシャ リング](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)します。  
+マネージ コードで記述されている Vspackage は、呼び出しまたはアンマネージ COM コードによって呼び出される必要があります。 通常、メソッドの引数が変換、または、マーシャ リングされる、自動的に相互運用マーシャラーによって。 ただし、場合によって引数は、変換できない簡単な方法でします。 その場合、相互運用機能アセンブリのメソッド プロトタイプのパラメーターは、COM 関数のパラメーターをできるだけ一致に使用されます。 詳細については、[相互運用マーシャ リング](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)を参照してください。  
   
 ## <a name="general-suggestions"></a>一般的な注意点  
   
@@ -116,7 +116,7 @@ else
   
  受け取るメソッドがマネージ<xref:System.IntPtr>この型のパラメーターを使用する必要があります、<xref:System.IntPtr>結果を処理する変換演算子を入力します。 最初の変換、<xref:System.IntPtr>に`int`関連する整数の定数に対してテストします。 値が一致しない場合は、必要な型のオブジェクトに変換して、続行します。  
   
- この例については、次を参照してください。<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>します。  
+ この例については、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>を参照してください。  
   
 ### <a name="ole-return-values-passed-as-out-parameters"></a>OLE を返す値として渡される [out] パラメーター  
  持つメソッドを探して、 `retval` 、COM インターフェイスでの戻り値が、`int`戻り値と [out] 配列パラメーターを追加、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]相互運用機能アセンブリのメソッド プロトタイプ。 オフのために、これらのメソッドが特別な処理を必要とする必要がある、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]メソッド プロトタイプの相互運用機能アセンブリが COM インターフェイスのメソッドよりも 1 つのパラメーターがあります。  

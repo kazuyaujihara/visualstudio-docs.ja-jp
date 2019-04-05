@@ -22,7 +22,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 334acba1e70545f1f8be758e34c8fc4843878406
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49223894"
@@ -49,7 +49,7 @@ ms.locfileid: "49223894"
     > [!NOTE]
     >  子テーブルのノードは、展開可能な子ノードとして親テーブルに表示されます。  
   
-3.  子テーブルのドロップ タイプを変更する**詳細**を選択して**詳細**子テーブルのノード上のコントロール リストから。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
+3.  子テーブルのドロップ タイプを変更する**詳細**を選択して**詳細**子テーブルのノード上のコントロール リストから。 詳細については、[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)を参照してください。  
   
 4.  2 つのテーブルの関連ノードを見つけます (、`CustomerID`前の例でのノード)。ドロップ型を変更、<xref:System.Windows.Forms.ComboBox>を選択して**ComboBox**コントロール リストから。  
   

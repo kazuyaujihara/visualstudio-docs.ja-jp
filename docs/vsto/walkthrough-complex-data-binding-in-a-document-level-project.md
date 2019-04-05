@@ -219,7 +219,7 @@ ms.locfileid: "56643107"
 
 -   データをキャッシュにオフラインで使用できるようにします。 詳細については、「[方法 :オフラインか、サーバーで使用するデータをキャッシュ](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)します。
 
--   ソリューションをデプロイします。 詳細については、次を参照してください。 [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
+-   ソリューションをデプロイします。 詳細については、[Office ソリューションを配置](../vsto/deploying-an-office-solution.md)を参照してください。
 
 -   フィールドとテーブル間のマスター/詳細関係を作成します。 詳細については、「[チュートリアル:キャッシュされたデータセットを使用してマスター/詳細関係を作成して](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)します。
 

@@ -55,7 +55,7 @@ Visual Studio コマンド テーブルの XML ベースの構成 (.vsct) ファ
   
      これには、基本的な .vsct ファイルが作成されます。  
   
-8.  従い、追加する XML ファイルの要素を入力、 [VSCT スキーマ](../../extensibility/vsct-xml-schema-reference.md)します。 詳細については、次を参照してください。[作成します。Vsct ファイル](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8.  従い、追加する XML ファイルの要素を入力、 [VSCT スキーマ](../../extensibility/vsct-xml-schema-reference.md)します。 詳細については、[作成を参照してください。Vsct ファイル](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 ## <a name="compiling-the-code"></a>コードのコンパイル  
  .Vsct ファイルをプロジェクトに追加することだけは発生しませんコンパイルすること。 ビルド プロセスでは、それを組み込む必要があります。  

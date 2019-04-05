@@ -22,7 +22,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56599507"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Excel ワークシート上で Windows フォーム コントロールを使用します。
-  Windows フォームにコントロールを追加することと同じ方法で、Microsoft Office Excel ブックへの Windows フォーム コントロールを追加できます。 概要ドキュメントのコントロールの操作については、次を参照してください。 [Windows フォーム コントロールの Office ドキュメントの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)します。
+  Windows フォームにコントロールを追加することと同じ方法で、Microsoft Office Excel ブックへの Windows フォーム コントロールを追加できます。 概要ドキュメントのコントロールの操作については、[Windows フォーム コントロールの Office ドキュメントの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)を参照してください。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 

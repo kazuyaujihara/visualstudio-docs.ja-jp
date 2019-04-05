@@ -25,7 +25,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fa59e1e57750c9c2075c10c76ab5c518ed0e8686
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51793907"
@@ -35,9 +35,9 @@ ms.locfileid: "51793907"
 
 **タスク**ウィンドウに似ています、**スレッド**ウィンドウには、it に関する情報が表示されます<xref:System.Threading.Tasks.Task?displayProperty=fullName>、 [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)、または[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)各スレッドではなくオブジェクト。 スレッドと同様、タスクは、同時に実行できる非同期操作を表します。ただし、複数のタスクが同じスレッドで実行される場合もあります。 参照してください[JavaScript (Windows ストア アプリ) での非同期プログラミング](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx)詳細についてはします。  
   
- マネージ コードで使用することができます、**タスク**を操作するときにウィンドウ<xref:System.Threading.Tasks.Task?displayProperty=fullName>オブジェクト、または、 **await**と**非同期**キーワード (**のAwait**と**Async** visual Basic で)。 マネージ コードでタスクの詳細については、次を参照してください。[並列プログラミング](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)します。  
+ マネージ コードで使用することができます、**タスク**を操作するときにウィンドウ<xref:System.Threading.Tasks.Task?displayProperty=fullName>オブジェクト、または、 **await**と**非同期**キーワード (**のAwait**と**Async** visual Basic で)。 マネージ コードでタスクの詳細については、[並列プログラミング](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)を参照してください。  
   
- ネイティブ コードで使用することができます、**タスク**を操作するときにウィンドウ[タスク グループ](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)、[並列アルゴリズム](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)、[非同期エージェント](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)と[軽量タスク](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)します。 ネイティブ コードでタスクの詳細については、次を参照してください。[同時実行ランタイム](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)します。  
+ ネイティブ コードで使用することができます、**タスク**を操作するときにウィンドウ[タスク グループ](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)、[並列アルゴリズム](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)、[非同期エージェント](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)と[軽量タスク](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)します。 ネイティブ コードでタスクの詳細については、[同時実行ランタイム](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)を参照してください。  
   
  JavaScript では、promise.then コードを操作するときに [タスク] ウィンドウを使用できます。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "51793907"
 |**フラグ**|どのタスクにフラグが設定されているかを示します。タスクのフラグを設定または解除することができます。|  
 |**アイコン**|黄色の矢印は現在のタスクを示します。 現在のタスクは、現在のスレッドの最上位のタスクです。<br /><br /> 白い矢印は中断しているタスク、つまりデバッガーを呼び出したときに現在のタスクだったタスクを示します。<br /><br /> 一時停止アイコンはユーザーによって凍結されているタスクを示します。 一覧でタスクを右クリックして、タスクを凍結したり凍結解除したりすることができます。|  
 |**ID**|タスクに対してシステムで指定された番号です。 ネイティブ コードでは、タスクのアドレスになります。|  
-|**状態**|タスクの現在の状態 (スケジュール、アクティブ、デッドロック、待機中、または完了) です。 スケジュール状態のタスクは、まだ実行されていないため、まだ呼び出し履歴、割り当てられたスレッド、関連情報がないタスクです。<br /><br /> アクティブなタスクは、デバッガーを中断する前にコードを実行していたタスクです。<br /><br /> 待機中のタスクは、イベントがシグナル状態になるか、ロックが解放されるか、別のタスクが終了するのを待機しているためにブロックされているタスクです。<br /><br /> デッドロック状態のタスクは、スレッドが別のスレッドでデッドロックされた待機中のタスクです。<br /><br /> ポインターを合わせる、**状態**ブロックに関する詳細を表示、デッドロックや待機中タスクのセル。 **警告:** 、**タスク**ウィンドウのみ待機チェーン トラバーサル (WCT) でサポートされる同期プリミティブを使用するブロックされているタスクのデッドロックが報告されます。 デッドロック状態の例では、<xref:System.Threading.Tasks.Task>オブジェクトで、デバッガーの報告、WCT を使用して**待機中デッドロック**します。 WCT を使用しない、同時実行ランタイムによって管理されるデッドロック状態のタスクについて、デバッガーの報告**待機している**します。 WCT の詳細については、次を参照してください。 [Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx)します。|  
+|**状態**|タスクの現在の状態 (スケジュール、アクティブ、デッドロック、待機中、または完了) です。 スケジュール状態のタスクは、まだ実行されていないため、まだ呼び出し履歴、割り当てられたスレッド、関連情報がないタスクです。<br /><br /> アクティブなタスクは、デバッガーを中断する前にコードを実行していたタスクです。<br /><br /> 待機中のタスクは、イベントがシグナル状態になるか、ロックが解放されるか、別のタスクが終了するのを待機しているためにブロックされているタスクです。<br /><br /> デッドロック状態のタスクは、スレッドが別のスレッドでデッドロックされた待機中のタスクです。<br /><br /> ポインターを合わせる、**状態**ブロックに関する詳細を表示、デッドロックや待機中タスクのセル。 **警告:** 、**タスク**ウィンドウのみ待機チェーン トラバーサル (WCT) でサポートされる同期プリミティブを使用するブロックされているタスクのデッドロックが報告されます。 デッドロック状態の例では、<xref:System.Threading.Tasks.Task>オブジェクトで、デバッガーの報告、WCT を使用して**待機中デッドロック**します。 WCT を使用しない、同時実行ランタイムによって管理されるデッドロック状態のタスクについて、デバッガーの報告**待機している**します。 WCT の詳細については、[Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx)を参照してください。|  
 |**開始時刻**|タスクがアクティブになった時間です。|  
 |**期間**|タスクがアクティブになっている秒数です。|  
 |**完了時刻**|タスクが完了した時間です。|  

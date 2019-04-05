@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49894522"
@@ -90,7 +90,7 @@ C# または UML などの汎用言語とは異なり、ドメイン固有言語
 ### <a name="integration-with-visual-studio"></a>Visual Studio との統合  
  [!INCLUDE[dsl](../includes/dsl-md.md)]でホストされている[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、拡張多く[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ウィンドウとコントロール。 メニュー コマンド、ツールボックス項目、およびユーザー インターフェイスの他の要素の動作をカスタマイズすることもできます。  
   
- ドメイン固有言語、モデル バス アダプターを作成することもできます。 このアダプターには、モデルの参照と、モデルとコードを記述することがアクセスでき、DSL のインスタンスを更新できます内の要素ができます。 強力なモデル バス メカニズムを使用して記述できます[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]複数のモデルを使用する拡張機能。 モデルを使用するスタンドアロン アプリケーションを記述することもできます。 詳細については、次を参照してください。 [Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)します。  
+ ドメイン固有言語、モデル バス アダプターを作成することもできます。 このアダプターには、モデルの参照と、モデルとコードを記述することがアクセスでき、DSL のインスタンスを更新できます内の要素ができます。 強力なモデル バス メカニズムを使用して記述できます[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]複数のモデルを使用する拡張機能。 モデルを使用するスタンドアロン アプリケーションを記述することもできます。 詳細については、[Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)を参照してください。  
   
 ## <a name="benefits-of-domain-specific-development"></a>ドメイン固有の開発の利点  
  ドメイン固有言語には、次の利点があります。  

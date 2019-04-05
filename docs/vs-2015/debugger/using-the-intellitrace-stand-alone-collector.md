@@ -20,7 +20,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c2e2fc006874316974dc92ea45b112399f6f5aad
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51792894"
@@ -386,7 +386,7 @@ ms.locfileid: "51792894"
   
 ##  <a name="WhereElse"></a> IntelliTrace データを取得できるその他の場所  
   
--   IntelliTrace デバッグ セッションを Visual Studio Enterprise から次を参照してください。 [IntelliTrace 機能](../debugger/intellitrace-features.md)します。  
+-   IntelliTrace デバッグ セッションを Visual Studio Enterprise から[IntelliTrace 機能](../debugger/intellitrace-features.md)を参照してください。  
   
 -   Microsoft Test Manager のテスト セッションからの場合は、「 [方法: 困難な問題をデバッグするのに役立つ IntelliTrace データを収集する](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)」を参照します。  
   

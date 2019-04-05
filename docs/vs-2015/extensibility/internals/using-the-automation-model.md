@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: ea911dd70ae3a5ca0e53888b47ed2a8d859827c4
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51789136"
@@ -28,7 +28,7 @@ ms.locfileid: "51789136"
 プロパティとメソッドを入手して、VSPackage を automation に接続した後、<xref:EnvDTE.DTEClass.GetObject%2A>メソッドを<xref:EnvDTE._DTE>オブジェクトを取得するオブジェクトを表す文字列を渡します。  
   
 ## <a name="obtaining-project-objects"></a>プロジェクト オブジェクトを取得します。  
- 取得する方法、コンシューマーをオートメーション プロジェクト オートメーション オブジェクトを示す 2 つのコード例を次に示します。 DTE オブジェクトを取得する方法については、次を参照してください。[方法: DTE と DTE2 オブジェクトへの参照の取得](http://msdn.microsoft.com/library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)します。  
+ 取得する方法、コンシューマーをオートメーション プロジェクト オートメーション オブジェクトを示す 2 つのコード例を次に示します。 DTE オブジェクトを取得する方法については、[方法: DTE と DTE2 オブジェクトへの参照の取得](http://msdn.microsoft.com/library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)を参照してください。  
   
 ```vb  
 Sub DoAutomation()  

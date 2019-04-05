@@ -43,7 +43,7 @@ ms.locfileid: "57526621"
 
 ## <a name="snippet-description"></a>スニペットの説明
 
- このセクションでは、定型スニペットの主な要素について説明します。 XML スニペットで使用されるスキーマ要素の詳細については、次を参照してください。[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)します。
+ このセクションでは、定型スニペットの主な要素について説明します。 XML スニペットで使用されるスキーマ要素の詳細については、[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)を参照してください。
 
 ### <a name="snippettype-element"></a>SnippetType 要素
 

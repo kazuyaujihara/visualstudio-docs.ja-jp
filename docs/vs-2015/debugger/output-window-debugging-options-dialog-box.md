@@ -25,7 +25,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a146404a4f4d396cc7afc56218850d758a608bde
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51754973"
@@ -41,7 +41,7 @@ ms.locfileid: "51754973"
  **WPF トレース設定**  
  このカテゴリに表示される WPF トレース メッセージのレベルを決定するコントロールが含まれています、**出力**ウィンドウ。 メッセージの各種類が表示されまでのレベルを指定するかどうかを指定する**重大**に**すべて**します。  
   
- 詳細については、次を参照してください。[方法: WPF トレース情報を表示](../debugger/how-to-display-wpf-trace-information.md)します。  
+ 詳細については、[方法: WPF トレース情報を表示](../debugger/how-to-display-wpf-trace-information.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッグ オプション ダイアログ ボックス](../debugger/debugging-options-dialog-box.md)   

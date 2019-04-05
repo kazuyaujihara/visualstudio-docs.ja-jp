@@ -21,7 +21,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: ed118f63210e5d26a46383fe6de3f3b690f62d42
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51734916"
@@ -31,7 +31,7 @@ ms.locfileid: "51734916"
 
 **プロパティ**ウィンドウは、デザイン時のプロパティとイベントを選択したオブジェクトの表示および編集に使用します。  
   
- 内のオブジェクトを選択すると[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、そのオブジェクトのパブリック プロパティに表示されます、**プロパティ**ウィンドウ。 詳細については、次を参照してください。[プロパティ ウィンドウの概要](../extensibility/internals/properties-window-overview.md)します。  
+ 内のオブジェクトを選択すると[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、そのオブジェクトのパブリック プロパティに表示されます、**プロパティ**ウィンドウ。 詳細については、[プロパティ ウィンドウの概要](../extensibility/internals/properties-window-overview.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [プロパティ ウィンドウへのプロパティの公開](../extensibility/exposing-properties-to-the-properties-window.md)  

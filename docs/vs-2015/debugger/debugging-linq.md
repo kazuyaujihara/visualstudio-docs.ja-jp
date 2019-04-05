@@ -27,7 +27,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 081c97bffc062bf2bbc9d24feed13e5e512b8c74
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51755604"
@@ -40,7 +40,7 @@ ms.locfileid: "51755604"
 ##  <a name="BKMK_ViewingLINQResults"></a> LINQ の結果を表示します。  
  LINQ ステートメントの結果を表示するには、DataTip、[ウォッチ] ウィンドウ、および [クイック ウォッチ] ダイアログ ボックスを使用します。 ソース ウィンドウを使用すると、ソース ウィンドウ内のクエリ上でポインターを停止し、DataTip を表示することができます。 LINQ 変数をコピーし、[ウォッチ] ウィンドウや [クイック ウォッチ] ダイアログ ボックスに貼り付けることができます。  
   
- LINQ では、クエリは作成または宣言の時点では評価されず、実行時にのみ評価されます。 したがって、評価の時点までクエリには値がありません。 クエリを作成および評価の詳細については、次を参照してください。 [LINQ クエリ (c#) の概要](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)または[書き込みで初めて Your の LINQ クエリ](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe)します。  
+ LINQ では、クエリは作成または宣言の時点では評価されず、実行時にのみ評価されます。 したがって、評価の時点までクエリには値がありません。 クエリを作成および評価の詳細については、[LINQ クエリ (c#) の概要](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)または[書き込みで初めて Your の LINQ クエリ](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe)を参照してください。  
   
  クエリの結果を表示するためには、デバッガーがクエリを評価する必要があります。 そのため、LINQ クエリの結果をデバッガーで表示するときには、クエリが評価されることにより、次のような影響が生じます。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "51755604"
  LINQ to SQL クエリでは、述語コードがデバッガーによる処理の対象外となります。 そのため、述語コードにステップ インすることはできません。 式ツリーにコンパイルされるクエリは、デバッガーによる処理の対象とならないコードを生成します。  
   
 ### <a name="stepping-in-visual-basic"></a>Visual Basic でのステップ実行  
- Visual Basic プログラムをステップ実行し、デバッガーがクエリ宣言を検出すると、デバッガーはその宣言にはステップ インせず、宣言全体を 1 つのステートメントとして強調表示します。 この動作が発生するのは、クエリが呼び出されるまで評価されないためです。 詳細については、次を参照してください。 [Visual Basic における LINQ の概要](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)します。  
+ Visual Basic プログラムをステップ実行し、デバッガーがクエリ宣言を検出すると、デバッガーはその宣言にはステップ インせず、宣言全体を 1 つのステートメントとして強調表示します。 この動作が発生するのは、クエリが呼び出されるまで評価されないためです。 詳細については、[Visual Basic における LINQ の概要](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)を参照してください。  
   
  次のようなコードをステップ実行すると、クエリを作成するクエリ宣言が 1 つのステートメントとして強調表示されます。  
   

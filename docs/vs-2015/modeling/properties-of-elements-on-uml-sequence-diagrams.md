@@ -20,7 +20,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 01d63e39967df361d87ff0182b1c85b6ecd2fdb6
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51793897"
@@ -31,7 +31,7 @@ ms.locfileid: "51793897"
 UML シーケンス図では、図の各要素にプロパティが存在します。 要素のプロパティを表示するには、図、または要素を右クリックして**UML モデル エクスプ ローラー**し**プロパティ**します。 プロパティが表示されます、**プロパティ**ウィンドウ。  
   
 > [!NOTE]
->  このトピックでは、UML シーケンス図の要素のプロパティについて説明します。 UML シーケンス図を読み取る方法の詳細については、次を参照してください。 [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)します。 UML アクティビティ図を描画する方法の詳細については、「 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)」を参照してください。  
+>  このトピックでは、UML シーケンス図の要素のプロパティについて説明します。 UML シーケンス図を読み取る方法の詳細については、[UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)を参照してください。 UML アクティビティ図を描画する方法の詳細については、「 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)」を参照してください。  
   
 ## <a name="properties-of-elements"></a>要素のプロパティ  
   

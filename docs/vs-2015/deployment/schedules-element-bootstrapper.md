@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: ba556d1f9ab7dfefd5502ee150354d4f664d6710
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49250992"
@@ -57,7 +57,7 @@ ms.locfileid: "49250992"
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Name`|必須。 スケジュール アイテムの名前。 これに対応して、`ScheduleName`のプロパティ、`Command`要素。 ときに、`Command`名前付きのスケジュールを参照するによって示される時にのみ実行されます`Schedule`要素。 また関連付けられるスケジュール、`FailIf`と`BypassIf`要素を指定したスケジュールで実行中にこれらの条件付きテストを制限します。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|  
+|`Name`|必須。 スケジュール アイテムの名前。 これに対応して、`ScheduleName`のプロパティ、`Command`要素。 ときに、`Command`名前付きのスケジュールを参照するによって示される時にのみ実行されます`Schedule`要素。 また関連付けられるスケジュール、`FailIf`と`BypassIf`要素を指定したスケジュールで実行中にこれらの条件付きテストを制限します。 詳細については、[\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)を参照してください。|  
   
  指定された`Schedule`要素には、次の子の 1 つだけ必要があります。  
   

@@ -31,7 +31,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 607844200ad2ccc7f50cea834c24da3adea14413
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51808467"
@@ -47,7 +47,7 @@ Visual Studio でデバッガーの変数ウィンドウにデータ型を表示
  [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] コードでは、Visual Basic は DebuggerBrowsable 属性をサポートしません。 この制限は、.NET Framework の新しいバージョンで解除されています。  
   
 ## <a name="visualizers"></a>ビジュアライザー  
- マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、次を参照してください。[方法: ビジュアライザーを記述する](../debugger/how-to-write-a-visualizer.md)します。  
+ マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、[方法: ビジュアライザーを記述する](../debugger/how-to-write-a-visualizer.md)を参照してください。  
   
 ## <a name="native-code"></a>ネイティブ コード  
  ネイティブ コードの場合、カスタム データ型の展開を autoexp.dat ファイルに追加します。autoexp.dat は、Program Files\Microsoft Visual Studio 11.0\Common7\Packages\Debugger ディレクトリにあります。 `autoexp` 規則の記述手順は、このファイルに含まれています。  
@@ -55,7 +55,7 @@ Visual Studio でデバッガーの変数ウィンドウにデータ型を表示
 > [!CAUTION]
 >  このファイルの構造と自動展開規則の構文は、Visual Studio のリリースごとに異なる可能性があります。  
   
- また、ネイティブ型の表示は、式エバリュエーター アドインを記述してカスタマイズできます。 詳細については、次を参照してください。 [EEAddIn サンプル: デバッグ式エバリュエーター アドイン](http://msdn.microsoft.com/en-us/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)します。  
+ また、ネイティブ型の表示は、式エバリュエーター アドインを記述してカスタマイズできます。 詳細については、[EEAddIn サンプル: デバッグ式エバリュエーター アドイン](http://msdn.microsoft.com/en-us/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)   

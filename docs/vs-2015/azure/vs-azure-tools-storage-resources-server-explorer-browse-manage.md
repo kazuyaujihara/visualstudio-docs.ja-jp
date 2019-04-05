@@ -13,7 +13,7 @@ ms.date: 8/24/2017
 ms.author: ghogen
 ms.openlocfilehash: 00229cd88ddcab4d2d59ae40202620c374415e4b
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51003049"
@@ -28,7 +28,7 @@ Azure Tools for Microsoft Visual Studio をインストールした場合は、A
 
 メニュー バーで、Visual Studio で、サーバー エクスプ ローラーを表示する選択**ビュー** > **サーバー エクスプ ローラー**します。 **ストレージ**ノードには、各 Azure サブスクリプションまたはに接続している証明書の下に存在するストレージ アカウントのすべてが表示されます。 ストレージ アカウントが表示されない場合は、次の手順で追加できます[この記事で後述](#add-storage-accounts-by-using-server-explorer)します。
 
-Azure SDK 2.7 以降、Azure リソースの管理を表示したり Cloud Explorer を使用することができますも。 詳細については、次を参照してください。[クラウド エクスプ ローラーで管理する Azure リソース](vs-azure-tools-resources-managing-with-cloud-explorer.md)します。
+Azure SDK 2.7 以降、Azure リソースの管理を表示したり Cloud Explorer を使用することができますも。 詳細については、[クラウド エクスプ ローラーで管理する Azure リソース](vs-azure-tools-resources-managing-with-cloud-explorer.md)を参照してください。
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>表示し、Visual Studio での記憶域リソースの管理
 
@@ -40,7 +40,7 @@ Azure SDK 2.7 以降、Azure リソースの管理を表示したり Cloud Explo
 
 ## <a name="work-with-blob-resources"></a>Blob リソースを操作します。
 
-**Blob**ノードが選択したストレージ アカウントのコンテナーの一覧を表示します。 Blob コンテナーには、blob のファイルが含まれているし、フォルダーおよびサブフォルダーに、これらの blob を整理することができます。 詳細については、次を参照してください。 [.NET から Blob ストレージを使用する方法](/azure/storage/blobs/storage-dotnet-how-to-use-blobs)します。
+**Blob**ノードが選択したストレージ アカウントのコンテナーの一覧を表示します。 Blob コンテナーには、blob のファイルが含まれているし、フォルダーおよびサブフォルダーに、これらの blob を整理することができます。 詳細については、[.NET から Blob ストレージを使用する方法](/azure/storage/blobs/storage-dotnet-how-to-use-blobs)を参照してください。
 
 ### <a name="to-create-a-blob-container"></a>Blob コンテナーを作成するには
 
@@ -122,13 +122,13 @@ Blob データはローカルにキャッシュし、Azure Blob storage 内の b
 
 Blob をアップロードするには、選択、 **Blob のアップロード** ボタン、コンテナーを開き、blob コンテナー ビューに表示する場合。
 
-1 つまたは複数のファイルをアップロードすることができ、任意の種類のファイルをアップロードすることができます。 **Azure アクティビティ ログ**ウィンドウには、アップロードの進行状況が表示されます。 Blob データを操作する方法の詳細については、次を参照してください。 [.NET で Azure Blob storage を使用する方法](http://go.microsoft.com/fwlink/p/?LinkId=267911)します。
+1 つまたは複数のファイルをアップロードすることができ、任意の種類のファイルをアップロードすることができます。 **Azure アクティビティ ログ**ウィンドウには、アップロードの進行状況が表示されます。 Blob データを操作する方法の詳細については、[.NET で Azure Blob storage を使用する方法](http://go.microsoft.com/fwlink/p/?LinkId=267911)を参照してください。
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Blob に転送されたログを表示するには
 
 Azure 診断を使用して、Azure アプリケーションからデータをログには、ストレージ アカウントにログを転送した場合は、Azure がこれらのログ用に作成されたコンテナーが表示されます。 サーバー エクスプ ローラーでこれらのログを表示するという問題は、特に Azure にデプロイされた場合のアプリケーションの問題を識別するために簡単です。
 
-Azure 診断の詳細については、次を参照してください。 [Azure 診断を使用してログ データの収集](https://msdn.microsoft.com/library/azure/gg433048.aspx)します。
+Azure 診断の詳細については、[Azure 診断を使用してログ データの収集](https://msdn.microsoft.com/library/azure/gg433048.aspx)を参照してください。
 
 ### <a name="to-get-the-url-for-a-blob"></a>Blob の URL を取得するには
 
@@ -157,10 +157,10 @@ Blob を選択し、選択、 **Blob を開く**ボタンをクリックしま�
 
 ![キューの表示](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-ストレージの詳細については、キュー サービスを参照してください。 [.NET を使用して Azure Queue storage の概要](http://go.microsoft.com/fwlink/?LinkID=264702)します。 Web サービスに関する情報の記憶域サービスのキューを参照してください[キュー サービスの概念](http://go.microsoft.com/fwlink/?LinkId=264788)します。 Visual Studio を使用して、記憶域サービスのキューにメッセージを送信する方法については、次を参照してください。[記憶域サービスのキューにメッセージを送信する](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)します。
+ストレージの詳細については、キュー サービスを参照してください。 [.NET を使用して Azure Queue storage の概要](http://go.microsoft.com/fwlink/?LinkID=264702)します。 Web サービスに関する情報の記憶域サービスのキューを参照してください[キュー サービスの概念](http://go.microsoft.com/fwlink/?LinkId=264788)します。 Visual Studio を使用して、記憶域サービスのキューにメッセージを送信する方法については、[記憶域サービスのキューにメッセージを送信する](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)を参照してください。
 
 > [!NOTE]
-> ストレージ サービスのキューは、Azure Service Bus キューとは異なります。 Service Bus キューの詳細については、次を参照してください。 [Service Bus キュー、トピック、およびサブスクリプション](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)します。
+> ストレージ サービスのキューは、Azure Service Bus キューとは異なります。 Service Bus キューの詳細については、[Service Bus キュー、トピック、およびサブスクリプション](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)を参照してください。
 
 ## <a name="work-with-table-resources"></a>テーブル リソースを操作します。
 
@@ -219,7 +219,7 @@ Azure Table storage は、大量の構造化データを格納します。 サ�
 1. 完了したら、クエリの作成 ダイアログ ボックスを閉じます。 クエリの結果として得られるテキストの形式は、WCF Data Services フィルターとしてテキスト ボックスに表示されます。
 1. クエリを実行するには、緑の三角形アイコンを選択します。
 
-表示されるエンティティ データ テーブル デザイナーで入力した場合、フィルター テキスト ボックスに直接 WCF Data Services フィルター文字列をフィルターすることもできます。 この種の文字列は、SQL の WHERE 句に似ていますが、HTTP 要求としてサーバーに送信されます。 フィルター文字列を作成する方法については、次を参照してください。[テーブル デザイナー用のフィルター文字列の作成](https://docs.microsoft.com/azure/vs-azure-tools-table-designer-construct-filter-strings)です。
+表示されるエンティティ データ テーブル デザイナーで入力した場合、フィルター テキスト ボックスに直接 WCF Data Services フィルター文字列をフィルターすることもできます。 この種の文字列は、SQL の WHERE 句に似ていますが、HTTP 要求としてサーバーに送信されます。 フィルター文字列を作成する方法については、[テーブル デザイナー用のフィルター文字列の作成](https://docs.microsoft.com/azure/vs-azure-tools-table-designer-construct-filter-strings)を参照してください。
 
 次の図は、有効なフィルター文字列の例を示します。
 
@@ -277,7 +277,7 @@ Azure Table storage は、大量の構造化データを格納します。 サ�
 
    * アタッチする既存のストレージ アカウントの名前。
    * 選択したストレージ アカウントのキー。 この値は、ストレージ アカウントを選択するときに通常が提供されます。 Visual Studio に、ストレージ アカウント キーを記憶する場合は、選択、**アカウント キーを記憶**チェック ボックスをオンします。
-   * HTTP、HTTPS、またはカスタム エンドポイントなど、ストレージ アカウントへの接続に使用するプロトコル。 カスタム エンドポイントの詳細については、次を参照してください。[接続文字列を構成する方法](https://msdn.microsoft.com/library/azure/ee758697.aspx)します。
+   * HTTP、HTTPS、またはカスタム エンドポイントなど、ストレージ アカウントへの接続に使用するプロトコル。 カスタム エンドポイントの詳細については、[接続文字列を構成する方法](https://msdn.microsoft.com/library/azure/ee758697.aspx)を参照してください。
 
 ### <a name="to-view-the-secondary-endpoints"></a>セカンダリ エンドポイントを表示するには
 
@@ -295,4 +295,4 @@ Azure Table storage は、大量の構造化データを格納します。 サ�
 
 ## <a name="next-steps"></a>次の手順
 
-Azure storage サービスを使用する方法の詳細については、次を参照してください。 [、Azure ストレージ サービスにアクセスする](https://msdn.microsoft.com/library/azure/ee405490.aspx)します。
+Azure storage サービスを使用する方法の詳細については、[、Azure ストレージ サービスにアクセスする](https://msdn.microsoft.com/library/azure/ee405490.aspx)を参照してください。

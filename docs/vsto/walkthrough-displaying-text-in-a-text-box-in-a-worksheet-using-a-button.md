@@ -106,7 +106,7 @@ ms.locfileid: "56598155"
 ## <a name="next-steps"></a>次の手順
  このチュートリアルでは、Excel ワークシートでボタンやテキスト ボックスを使用するの基本を説明します。 ここでは、次のタスクを行います。
 
--   プロジェクトを配置します。 詳細については、次を参照してください。 [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
+-   プロジェクトを配置します。 詳細については、[Office ソリューションを配置](../vsto/deploying-an-office-solution.md)を参照してください。
 
 -   書式を変更するのにには、チェック ボックスを使用します。 詳細については、「[チュートリアル:CheckBox コントロールを使用して書式設定の変更ワークシート](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)します。
 

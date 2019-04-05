@@ -22,7 +22,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 6b16771e4d47416f09774ce2f4765de9d6023e94
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51753889"
@@ -32,7 +32,7 @@ ms.locfileid: "51753889"
 
 メニューのローカライズされたテキストを行うことができ、ツールバーのコマンドのローカライズされた .vsct ファイルを作成して、変更を反映する、VSPackage とし、プロジェクト ファイルの更新のローカライズされた .resx ファイル。  
   
- インストール エクスペリエンスをローカライズする方法については、次を参照してください。 [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)します。  
+ インストール エクスペリエンスをローカライズする方法については、[VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)を参照してください。  
   
 ## <a name="localizing-command-names"></a>コマンド名のローカライズ  
  Vspackage では、メニュー コマンドやツールバーのボタンは、.vsct ファイルで定義されます。  
@@ -41,7 +41,7 @@ ms.locfileid: "51753889"
   
 2. コピーを作成*filename*.en-US.vsct 各ローカライズ言語。  
   
-    各コピーを名前*filename*.*ロケール*.vsct、場所*ロケール*は特定のカルチャの名前です。 カルチャ名の値の一覧は、次を参照してください。 [Microsoft によるロケール Id 割り当て](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx)します。  
+    各コピーを名前*filename*.*ロケール*.vsct、場所*ロケール*は特定のカルチャの名前です。 カルチャ名の値の一覧は、[Microsoft によるロケール Id 割り当て](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx)を参照してください。  
   
     これら*filename*.*ロケール*.vsct ファイル、パッケージのローカライズされたメニュー テキストが含まれます。  
   

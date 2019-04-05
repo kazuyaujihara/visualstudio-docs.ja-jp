@@ -28,7 +28,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: fbaca836cb5b620c596b72bc991e91c1cfc2312c
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49189502"
@@ -55,7 +55,7 @@ ms.locfileid: "49189502"
   
     -   Windows フォーム デザイナーが開いている場合は、選択**PictureBox**します。  
   
-    -   または、データ バインディングをサポートし、かつイメージを表示できる、別のコントロールを選択することもできます。 使用するコントロールが利用可能なコントロールの一覧にない場合は、一覧に追加し、それを選択します。 詳細については、次を参照してください。[データ ソース ウィンドウにカスタム コントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)します。  
+    -   または、データ バインディングをサポートし、かつイメージを表示できる、別のコントロールを選択することもできます。 使用するコントロールが利用可能なコントロールの一覧にない場合は、一覧に追加し、それを選択します。 詳細については、[データ ソース ウィンドウにカスタム コントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でデータに WPF コントロールをバインドする](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)

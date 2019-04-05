@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 0b109916689aa395f8f5684ea6c78ae2b5b3465e
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51729038"
@@ -28,7 +28,7 @@ UML プロファイルを使用して Visual Studio を拡張できます。 プ
   
  プロファイルを使用して生成された UML モデルを受け取った場合、同じプロファイルをインストールしていなければ、一部のプロパティは表示されません。  
   
- プロファイルは、Visual Studio 拡張機能の中で配布されます。 拡張機能には、メニュー コマンドなどの他の機能も含まれる場合があります。 詳細については、次を参照してください。 [Visual Studio 拡張機能の管理](http://go.microsoft.com/fwlink/?LinkId=160728)します。  
+ プロファイルは、Visual Studio 拡張機能の中で配布されます。 拡張機能には、メニュー コマンドなどの他の機能も含まれる場合があります。 詳細については、[Visual Studio 拡張機能の管理](http://go.microsoft.com/fwlink/?LinkId=160728)を参照してください。  
   
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>UML プロファイルをコンピューターにインストールするには  
   

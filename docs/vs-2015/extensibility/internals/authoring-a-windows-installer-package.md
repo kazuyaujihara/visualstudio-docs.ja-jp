@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: c51696cd41083e81fb1561eb8707c4f4844b32d5
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51742651"
@@ -41,7 +41,7 @@ ms.locfileid: "51742651"
   
 - VSPackage の統合[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]呼び出して**devenv.exe/setup** (CustomAction テーブルを使用)。  
   
-  詳細については、次を参照してください。 [Windows インストーラー](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)します。  
+  詳細については、[Windows インストーラー](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)を参照してください。  
   
 ## <a name="setup-tools"></a>セットアップ ツール  
  さまざまなサードパーティ製のセットアップ ツールは、Windows インストーラー パッケージの開発環境を提供します。 2 つの無償ツール、次に示します。  

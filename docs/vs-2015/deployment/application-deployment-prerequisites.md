@@ -27,7 +27,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49890998"
@@ -37,9 +37,9 @@ ms.locfileid: "49890998"
 
 アプリケーションが正常にインストールされ、実行されるようにするには、アプリケーションが依存しているすべてのコンポーネントがターゲット コンピューターに既にインストールされていることを最初に確認する必要があります。 たとえば、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用して作成されたほとんどのアプリケーションは、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] に依存します。アプリケーションをインストールする前に、共通言語ランタイムの適切なバージョンが、ターゲット コンピューター上に存在している必要があります。  
   
- これらの前提条件を選択することができます、 **Prerequisites Dialog Box**し、インストールの一部として、.NET Framework およびその他の再頒布可能パッケージをインストールします。 この実習と呼ばれます*ブートス トラップ*します。 次に、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]とも呼ばれる、Setup.exe をという名前の Windows 実行可能プログラムを生成、*ブートス トラップ*します。 ブートストラップは、アプリケーションが実行される前にこれらの必須コンポーネントをインストールします。 これらの前提条件を選択する方法についての詳細については、次を参照してください。 [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)します。  
+ これらの前提条件を選択することができます、 **Prerequisites Dialog Box**し、インストールの一部として、.NET Framework およびその他の再頒布可能パッケージをインストールします。 この実習と呼ばれます*ブートス トラップ*します。 次に、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]とも呼ばれる、Setup.exe をという名前の Windows 実行可能プログラムを生成、*ブートス トラップ*します。 ブートストラップは、アプリケーションが実行される前にこれらの必須コンポーネントをインストールします。 これらの前提条件を選択する方法についての詳細については、[Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)を参照してください。  
   
- 各必須コンポーネントはブートストラップ パッケージです。 ブートストラップ パッケージは、必須コンポーネントのインストール方法を記述するマニフェスト ファイルを含むディレクトリおよびファイルのグループです。 アプリケーションの前提条件が記載されていない場合、**前提条件 ダイアログ ボックス**、カスタム ブートス トラップ パッケージを作成し、Visual Studio に追加することができます。 前提条件を選択できるよう、 **Prerequisites Dialog Box**します。 詳細については、次を参照してください。[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)します。  
+ 各必須コンポーネントはブートストラップ パッケージです。 ブートストラップ パッケージは、必須コンポーネントのインストール方法を記述するマニフェスト ファイルを含むディレクトリおよびファイルのグループです。 アプリケーションの前提条件が記載されていない場合、**前提条件 ダイアログ ボックス**、カスタム ブートス トラップ パッケージを作成し、Visual Studio に追加することができます。 前提条件を選択できるよう、 **Prerequisites Dialog Box**します。 詳細については、[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)を参照してください。  
   
  既定では、ブートストラップは ClickOnce の配置で有効です。 ClickOnce の配置に生成されるブートストラップは署名付きです。 ブートストラップは任意のコンポーネントに対して無効にできますが、これは、該当するコンポーネントの正しいバージョンが既にすべてのターゲット コンピューターにインストールされていることを確認した場合のみに限定してください。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "49890998"
   
 - グローバル アセンブリ キャッシュ (GAC) にプレインストールされる必要があるすべてのアセンブリの最小バージョン。これは、アセンブリ マニフェストでアセンブリ依存関係の宣言によって指定されます。  
   
-  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 不足している前提条件を検出できるし、ブートス トラップを使用して、前提条件をインストールすることができます。 詳細については、次を参照してください。[方法: ClickOnce アプリケーションと共に必須コンポーネントをインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)します。  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 不足している前提条件を検出できるし、ブートス トラップを使用して、前提条件をインストールすることができます。 詳細については、[方法: ClickOnce アプリケーションと共に必須コンポーネントをインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)を参照してください。  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] や MageUI.exe などのツールによって生成されたマニフェスト内の値を変更するには、アプリケーション マニフェストをテキスト エディターで編集した後に、アプリケーション マニフェストと配置マニフェストの両方に再署名する必要があります。 詳細については、「 [方法: アプリケーション マニフェストおよび配置マニフェストに再署名する](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。  
@@ -69,7 +69,7 @@ ms.locfileid: "49890998"
  ClickOnce 発行ウィザードまたは Visual Studio の [発行] ページを使用してブートストラップを生成する場合、Setup.exe は自動的に署名されます。 ただし、顧客の証明書を使用してブートストラップに署名する場合は、後でファイルに署名できます。  
   
 ## <a name="bootstrapping-and-msbuild"></a>ブートストラップと MSBuild  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用せず、アプリケーションをコマンド ラインでコンパイルする場合は、Microsoft Build Engine (MSBuild) タスクを使用して [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ブートストラップ アプリケーションを作成できます。 詳細については、次を参照してください。 [GenerateBootstrapper タスク](../msbuild/generatebootstrapper-task.md)します。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用せず、アプリケーションをコマンド ラインでコンパイルする場合は、Microsoft Build Engine (MSBuild) タスクを使用して [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ブートストラップ アプリケーションを作成できます。 詳細については、[GenerateBootstrapper タスク](../msbuild/generatebootstrapper-task.md)を参照してください。  
   
  ブートストラップの代わりに、Microsoft SMS (Systems Management Server) などの電子ソフトウェア配布システムを使用して、コンポーネントを事前に配置することもできます。  
   

@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 2ac99d6022344089c40abb9ae36e94d825db4e3c
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51768484"
@@ -33,7 +33,7 @@ ms.locfileid: "51768484"
   
 - [中断モード](#vsconoperationalmodesanchor3)  
   
-  移行方法を理解する必要がある実装の意思決定は、これらのモードの間で、カスタム デバッグ エンジン (DE) がどのように遷移します。 デは、これらのモードを直接実装しない場合があります。 これらのモードは、デバッグ パッケージ モードを切り替えるユーザーによる操作や、DE からのイベントに基づいてでは実際には。 たとえば、中断モードに実行モードからの移行が、DE から停止イベントによって依存します。 モードまたはモードの手順を実行するか中断からの移行は、ステップ実行などの操作を実行するユーザーに依存します。 DE 遷移の詳細については、次を参照してください。[実行の制御](../../extensibility/debugger/control-of-execution.md)します。  
+  移行方法を理解する必要がある実装の意思決定は、これらのモードの間で、カスタム デバッグ エンジン (DE) がどのように遷移します。 デは、これらのモードを直接実装しない場合があります。 これらのモードは、デバッグ パッケージ モードを切り替えるユーザーによる操作や、DE からのイベントに基づいてでは実際には。 たとえば、中断モードに実行モードからの移行が、DE から停止イベントによって依存します。 モードまたはモードの手順を実行するか中断からの移行は、ステップ実行などの操作を実行するユーザーに依存します。 DE 遷移の詳細については、[実行の制御](../../extensibility/debugger/control-of-execution.md)を参照してください。  
   
 ##  <a name="vsconoperationalmodesanchor1"></a> デザイン モード  
  デザイン モードは、その間機能をアプリケーションでのデバッグを設定できますの Visual Studio のデバッグ、nonrunning 状態です。  

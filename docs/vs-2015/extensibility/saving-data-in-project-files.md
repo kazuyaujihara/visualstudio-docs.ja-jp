@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 87d858d675fb1b2fb60280321a319b24684d9d83
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51755826"
@@ -33,7 +33,7 @@ ms.locfileid: "51755826"
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>自由形式の XML でないビルド関連のデータを保持するために使用します。 によって提供されるメソッド<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>によって呼び出される[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]たびに[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]非ビルド プロジェクト ファイルに関連するデータを保持する必要があります。  
   
-  ビルドと非ビルド関連のデータを維持する方法の詳細については、次を参照してください。 [MSBuild プロジェクト ファイル内のデータの永続化](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)します。  
+  ビルドと非ビルド関連のデータを維持する方法の詳細については、[MSBuild プロジェクト ファイル内のデータの永続化](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)を参照してください。  
   
 ## <a name="saving-and-retrieving-build-related-data"></a>関連するデータの保存とビルドの取得  
   

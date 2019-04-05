@@ -16,7 +16,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5f6b6bbb10113ab6bd97767f41991219e014d39a
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51725573"
@@ -40,7 +40,7 @@ ms.locfileid: "51725573"
 ### <a name="windows-10-prerequisites"></a>Windows の 10 の前提条件  
  省略可能な Windows 機能*グラフィックス ツール*Windows 10 でグラフィックス診断に必要なキャプチャと再生のインフラストラクチャを提供します。  
   
- グラフィックス ツールのインストール方法の詳細については、次を参照してください。[グラフィックス ツールの Windows 10 にインストール](#InstallGraphicsTools)します。  
+ グラフィックス ツールのインストール方法の詳細については、[グラフィックス ツールの Windows 10 にインストール](#InstallGraphicsTools)を参照してください。  
   
 ### <a name="windows-81-prerequisites"></a>Windows 8.1 の前提条件  
  Windows 8.1 の Windows Software Development Kit (SDK) は、Windows 8.1 のグラフィックス診断に必要なキャプチャと再生のインフラストラクチャを提供し、Windows 8.1 と Windows 8 用の開発をサポートします。  
@@ -107,7 +107,7 @@ ms.locfileid: "51725573"
   
  診断セッション ウィンドウで間違ったフレームを選択した場合や、別のフレームを確認する場合は、Graphics Analyzer から新しいフレームを選択できます。 **レンダー ターゲット**グラフィックス ログ ウィンドウのレンダー ターゲットのイメージの下のタブを展開、**フレーム一覧**を確認する別のフレームを選択します。  
   
- Graphics Analyzer ツールを一緒に使用する方法の詳細については、次を参照してください。、[例](../debugger/graphics-diagnostics-examples.md)します。  
+ Graphics Analyzer ツールを一緒に使用する方法の詳細については、、[例](../debugger/graphics-diagnostics-examples.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [Direct3D 12 のグラフィックス](http://msdn.microsoft.com/en-us/52094ae3-3b44-4689-9ee7-1ba1b3a779cb)

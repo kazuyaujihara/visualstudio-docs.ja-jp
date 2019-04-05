@@ -24,7 +24,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
 ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/29/2018
 ms.locfileid: "50219719"
@@ -41,7 +41,7 @@ ms.locfileid: "50219719"
   
 -   作成し、構成を含むデータセット、[データ ソース構成ウィザード](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)します。  
   
--   コントロールを選択してから項目をドラッグしたときにフォーム上に作成する、**データソース**ウィンドウ。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
+-   コントロールを選択してから項目をドラッグしたときにフォーム上に作成する、**データソース**ウィンドウ。 詳細については、[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)を参照してください。  
   
 -   項目をドラッグして、データ バインド フォームを作成、**データソース**ウィンドウから、フォームにします。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "50219719"
 ## <a name="prerequisites"></a>必須コンポーネント  
  このチュートリアルを完了するための要件は次のとおりです。  
   
--   Northwind サンプル データベースにアクセスします。 詳細については、次を参照してください。[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)します。  
+-   Northwind サンプル データベースにアクセスします。 詳細については、[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)を参照してください。  
   
 ## <a name="create-a-windows-application"></a>Windows アプリケーションを作成します。  
  作成するには、まず、 **Windows アプリケーション**します。  
@@ -61,12 +61,12 @@ ms.locfileid: "50219719"
   
 2.  プロジェクトに名前を**TableAdapterDbDirectMethodsWalkthrough**します。  
   
-3.  選択**Windows アプリケーション**、し、 **OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
+3.  選択**Windows アプリケーション**、し、 **OK**します。 詳細については、[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)を参照してください。  
   
      **TableAdapterDbDirectMethodsWalkthrough**プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。  
   
 ## <a name="create-a-data-source-from-your-database"></a>データベースからデータ ソースを作成します。  
- このステップでは、**データ ソース構成ウィザード**に基づいてデータ ソースを作成する、 `Region` Northwind サンプル データベース内のテーブル。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースの設定の詳細については、次を参照してください。[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)します。  
+ このステップでは、**データ ソース構成ウィザード**に基づいてデータ ソースを作成する、 `Region` Northwind サンプル データベース内のテーブル。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースの設定の詳細については、[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)を参照してください。  
   
 #### <a name="to-create-the-data-source"></a>データ ソースを作成するには  
   
@@ -157,7 +157,7 @@ ms.locfileid: "50219719"
 ## <a name="next-steps"></a>次の手順  
  アプリケーションの要件によっては、データ バインド フォームの作成後に実行する場合があります。 このチュートリアルで行うことができる拡張には次のものがあります。  
   
--   フォームに検索機能を追加します。 詳細については、次を参照してください。[方法: Windows フォーム アプリケーションにパラメーター化クエリを追加](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416)します。  
+-   フォームに検索機能を追加します。 詳細については、[方法: Windows フォーム アプリケーションにパラメーター化クエリを追加](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416)を参照してください。  
   
 -   データセットにテーブルを選択して追加**ウィザードで DataSet を構成**内から、**データソース**ウィンドウ。 関連するコードをフォームにドラッグすることによって、関連するデータを表示するコントロールを追加できます。 詳細については、「[方法: 関連するデータを Windows フォーム アプリケーションに表示する](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md)」を参照してください。  
   

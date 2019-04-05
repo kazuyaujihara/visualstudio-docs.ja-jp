@@ -37,7 +37,7 @@ HRESULT OnFunctionExitByName(
  [in]スクリプト エンジンが実行を終了したこと、関数の名前。  
   
  `scriptType`  
- [in]関数の型。 有効な値の説明については、次を参照してください。 [PROFILER_SCRIPT_TYPE 列挙型](../../winscript/reference/profiler-script-type-enumeration.md)します。  
+ [in]関数の型。 有効な値の説明については、[PROFILER_SCRIPT_TYPE 列挙型](../../winscript/reference/profiler-script-type-enumeration.md)を参照してください。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドの戻り値は、スクリプト エンジンによって無視されます。  

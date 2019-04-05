@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49817874"
@@ -66,7 +66,7 @@ ms.locfileid: "49817874"
   
    - 会社名: Fabrikam  
   
-     ドメイン固有言語ソリューションを作成する方法の詳細については、次を参照してください。[方法: ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)です。  
+     ドメイン固有言語ソリューションを作成する方法の詳細については、[方法: ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)を参照してください。  
   
 2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   

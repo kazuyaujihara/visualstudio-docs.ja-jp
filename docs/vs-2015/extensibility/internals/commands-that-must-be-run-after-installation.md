@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 90ce272270ffd511ee3b0efe8a711730ccdb92b5
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51724199"
@@ -28,10 +28,10 @@ ms.locfileid: "51724199"
 実行する必要があります、.msi ファイルから拡張機能をデプロイする場合`devenv /setup`Visual Studio 拡張機能を検出するために、インストールの一部として。  
   
 > [!NOTE]
->  このトピックの情報は、Visual Studio 2008 以前のバージョンと DevEnv の検索に適用されます。 以降のバージョンの Visual Studio を DevEnv を検出する方法については、次を参照してください。[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)します。  
+>  このトピックの情報は、Visual Studio 2008 以前のバージョンと DevEnv の検索に適用されます。 以降のバージョンの Visual Studio を DevEnv を検出する方法については、[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)を参照してください。  
   
 ## <a name="finding-devenvexe"></a>Devenv.exe の検索  
- 各バージョンを見つけることができます値をレジストリから devenv.exe を[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]インストーラーの書き込み、RegLocator テーブルおよび AppSearch テーブルを使用して、レジストリ値をプロパティとして格納します。 詳細については、次を参照してください。[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)します。  
+ 各バージョンを見つけることができます値をレジストリから devenv.exe を[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]インストーラーの書き込み、RegLocator テーブルおよび AppSearch テーブルを使用して、レジストリ値をプロパティとして格納します。 詳細については、[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)を参照してください。  
   
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator テーブルの行から異なるバージョンの Visual Studio の devenv.exe を検索するには  
   

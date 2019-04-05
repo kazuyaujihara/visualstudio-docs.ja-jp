@@ -37,7 +37,7 @@ ms.locfileid: "56608011"
 
 3.  メニュー バーで、**ビュー** > **プロパティ ウィンドウ**します。
 
-4.  **プロパティ**ウィンドウ、メソッドのインスタンスのプロパティを設定します。 各プロパティの詳細については、次を参照してください。 [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)します。
+4.  **プロパティ**ウィンドウ、メソッドのインスタンスのプロパティを設定します。 各プロパティの詳細については、[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)

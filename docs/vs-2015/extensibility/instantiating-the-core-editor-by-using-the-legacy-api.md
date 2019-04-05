@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: d092994ad66d96a3fe7141cb898c7ef9b811eaf5
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51765783"
@@ -69,7 +69,7 @@ ms.locfileid: "51765783"
   
  場合、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>メソッドは、テキスト エディターと同じコマンドの GUID を返します、コア エディターのインスタンスがショートカット キーに自動的に既定値に取得します。  
   
- 一般的な情報は、次を参照してください。[チュートリアル: コア エディターを作成してエディター ファイルの種類を登録する](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)します。  
+ 一般的な情報は、[チュートリアル: コア エディターを作成してエディター ファイルの種類を登録する](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [コア エディター内で](../extensibility/inside-the-core-editor.md)   

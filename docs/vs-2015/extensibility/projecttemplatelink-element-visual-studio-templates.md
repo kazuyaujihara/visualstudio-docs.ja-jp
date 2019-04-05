@@ -20,7 +20,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 792c89b7c4a804a91a0c6e07ed4e9a1f2244ba7d
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51738845"
@@ -75,7 +75,7 @@ ms.locfileid: "51738845"
  これは、テンプレートの .vstemplate ファイルのパスを示します。  
   
 ## <a name="remarks"></a>Remarks  
- 複数プロジェクトのテンプレートは、2 つ以上のプロジェクトのコンテナーとして機能します。 `ProjectTemplateLink` 要素は、テンプレート内にあるプロジェクトの .vstemplate ファイルの場所を指定するために使用します。 複数プロジェクトのテンプレートの .vstemplate ファイルには、1 プロジェクトにつき 1 つの `ProjectTemplateLink` 要素があります。 複数プロジェクトのテンプレートの詳細については、次を参照してください。[方法: 複数プロジェクトのテンプレートの作成](../ide/how-to-create-multi-project-templates.md)です。  
+ 複数プロジェクトのテンプレートは、2 つ以上のプロジェクトのコンテナーとして機能します。 `ProjectTemplateLink` 要素は、テンプレート内にあるプロジェクトの .vstemplate ファイルの場所を指定するために使用します。 複数プロジェクトのテンプレートの .vstemplate ファイルには、1 プロジェクトにつき 1 つの `ProjectTemplateLink` 要素があります。 複数プロジェクトのテンプレートの詳細については、[方法: 複数プロジェクトのテンプレートの作成](../ide/how-to-create-multi-project-templates.md)を参照してください。  
   
 ## <a name="example"></a>例  
  簡単なマルチプロジェクトのルート .vstemplate ファイルの例を次に示します。 この例では、テンプレートには `My Windows Application` と `My Class Library` の 2 つのプロジェクトが含まれています。 `ProjectName` 要素の `ProjectTemplateLink` 属性は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] がこのプロジェクトに割り当てる名前を設定します。 `ProjectName` 属性が存在しない場合、.vstemplate ファイルの名前がプロジェクト名として使用されます。  

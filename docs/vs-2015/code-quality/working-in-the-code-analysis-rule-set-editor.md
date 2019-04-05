@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: cd107f2ac0c377765fda2f62f175d7285eb01bb6
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49269647"
@@ -68,7 +68,7 @@ ms.locfileid: "49269647"
 |フィールド|説明|  
 |-----------|-----------------|  
 |**ID**|ルールの識別子。|  
-|**カテゴリ**|規則セットのメンバーシップ、に加えてコード分析規則もカテゴリでグループ化されます。 詳細については、次を参照してください。[マネージ コードの警告のコード分析](../code-quality/code-analysis-for-managed-code-warnings.md)します。|  
+|**カテゴリ**|規則セットのメンバーシップ、に加えてコード分析規則もカテゴリでグループ化されます。 詳細については、[マネージ コードの警告のコード分析](../code-quality/code-analysis-for-managed-code-warnings.md)を参照してください。|  
 |**Name**|ルールのタイトル。|  
 |**名前空間**|ルールの名前空間。|  
 |**ターゲットの種類**|ルールについて、ネイティブが、管理、またはデータベースのコードでかどうかを示します。|  

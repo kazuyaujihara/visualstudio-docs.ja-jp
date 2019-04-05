@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 2a5da4b7c25ab97356798fe8c2db184982fc885d
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51739311"
@@ -36,7 +36,7 @@ ms.locfileid: "51739311"
 3.  呼び出す<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A>を展開するすべての 1 つとして、リンク元に戻す単位のバックアップを作成します。  
   
     > [!NOTE]
-    >  エディターでリンクされた undo 管理を実装するには、元に戻す管理を追加します。 リンク元に戻す管理の実装の詳細については、次を参照してください。[方法: 管理を元に戻す実装](../extensibility/how-to-implement-undo-management.md)します。  
+    >  エディターでリンクされた undo 管理を実装するには、元に戻す管理を追加します。 リンク元に戻す管理の実装の詳細については、[方法: 管理を元に戻す実装](../extensibility/how-to-implement-undo-management.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   

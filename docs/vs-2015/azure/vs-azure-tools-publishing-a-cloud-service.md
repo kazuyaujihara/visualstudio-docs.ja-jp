@@ -13,7 +13,7 @@ ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: cf29e1cdde71d2e8ef7caa9bc91bc31c30c7bc41
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002859"
@@ -35,7 +35,7 @@ Azure アプリケーションを発行するときに、次のタスクのい�
 
 - サービス パッケージを作成します。 からデプロイ環境にアプリケーションを発行する、このパッケージとサービス構成ファイルを使用することができます、 [Azure portal](https://portal.azure.com)します。
 
-- Visual Studio から Azure プロジェクトを発行します。 Azure に直接アプリケーションを発行するには、発行ウィザードを使用します。 詳しくは、次を参照してください。 [Azure アプリケーション発行ウィザード](vs-azure-tools-publish-azure-application-wizard.md)します。
+- Visual Studio から Azure プロジェクトを発行します。 Azure に直接アプリケーションを発行するには、発行ウィザードを使用します。 詳しくは、[Azure アプリケーション発行ウィザード](vs-azure-tools-publish-azure-application-wizard.md)を参照してください。
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Visual Studio からサービス パッケージを作成するには
 
@@ -47,7 +47,7 @@ Azure アプリケーションを発行するときに、次のタスクのい�
 
    b.  **Azure アプリケーションのパッケージ**ダイアログ ボックスで、パッケージを作成するサービス構成を選択し、ビルド構成を選択します。
 
-   c. (省略可能)オンにするリモート デスクトップ、クラウド サービスの発行した後、次のように選択します。**すべてのロールのリモート デスクトップを有効にする**、し、**設定**リモート デスクトップ資格情報を構成します。 詳細については、次を参照してください。 [Visual Studio を使用して Azure Cloud services ロールのリモート デスクトップ接続を有効にする](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)します。
+   c. (省略可能)オンにするリモート デスクトップ、クラウド サービスの発行した後、次のように選択します。**すべてのロールのリモート デスクトップを有効にする**、し、**設定**リモート デスクトップ資格情報を構成します。 詳細については、[Visual Studio を使用して Azure Cloud services ロールのリモート デスクトップ接続を有効にする](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)を参照してください。
 
       パブリッシュした後は、クラウド サービスをデバッグする場合を選択して、リモート デバッグを有効にする**すべてのロールのリモート デバッガーを有効にする**します。
 
@@ -85,7 +85,7 @@ Azure アプリケーションを発行するときに、次のタスクのい�
 
 1. アプリケーション内のすべての web ロールの Web Deploy を有効にするに**すべての web ロールの Web Deploy を有効にする**します。
 
-    警告の黄色い三角形が表示されます。 Web Deploy は、機密データをアップロードするのには使用しないで、既定で信頼されていない自己署名証明書を使用します。 このプロセスの機微なデータを保護する必要がある場合は、Web Deploy の接続に使用する SSL 証明書を追加できます。 この証明書を信頼された証明書が必要です。 詳細については、次を参照してください。 [web 配置のセキュリティを確保](#make-web-deploy-secure)します。
+    警告の黄色い三角形が表示されます。 Web Deploy は、機密データをアップロードするのには使用しないで、既定で信頼されていない自己署名証明書を使用します。 このプロセスの機微なデータを保護する必要がある場合は、Web Deploy の接続に使用する SSL 証明書を追加できます。 この証明書を信頼された証明書が必要です。 詳細については、[web 配置のセキュリティを確保](#make-web-deploy-secure)を参照してください。
 
 1. 選択 **[次へ]** を表示する、**概要**画面を選び、**発行**クラウド サービスをデプロイします。
 
@@ -120,9 +120,9 @@ Azure アプリケーションを発行するときに、次のタスクのい�
 
 1. IIS のリモート接続を使用するには、信頼された SSL 証明書を追加するには、次の手順を実行します。
 
-   a.  Web ロールを実行している仮想マシンに接続するには、web ロールのインスタンスを選択します**Cloud Explorer**または**サーバー エクスプ ローラー**を選択し、**リモート デスクトップを使用して接続。** コマンド。 仮想マシンに接続する方法の詳細については、次を参照してください。 [Visual Studio を使用して Azure Cloud services ロールのリモート デスクトップ接続を有効にする](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)します。 お使いのブラウザーでは、ダウンロードするように求め、`.rdp`ファイル。
+   a.  Web ロールを実行している仮想マシンに接続するには、web ロールのインスタンスを選択します**Cloud Explorer**または**サーバー エクスプ ローラー**を選択し、**リモート デスクトップを使用して接続。** コマンド。 仮想マシンに接続する方法の詳細については、[Visual Studio を使用して Azure Cloud services ロールのリモート デスクトップ接続を有効にする](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)を参照してください。 お使いのブラウザーでは、ダウンロードするように求め、`.rdp`ファイル。
 
-   b.  SSL 証明書を追加するには、IIS マネージャーで管理サービスを開きます。 IIS マネージャーで、開くことで SSL を有効にする、**バインド**のリンクを**アクション**ウィンドウ。 **サイト バインドの追加** ダイアログ ボックスが表示されます。 選択**追加**で HTTPS を選択し、**型**ドロップダウン リスト。 **SSL 証明書**一覧で、CA による署名済み、および Azure portal にアップロードした SSL 証明書を選択します。 詳細については、次を参照してください。[管理サービスの接続設定の構成](http://go.microsoft.com/fwlink/?LinkId=215824)します。
+   b.  SSL 証明書を追加するには、IIS マネージャーで管理サービスを開きます。 IIS マネージャーで、開くことで SSL を有効にする、**バインド**のリンクを**アクション**ウィンドウ。 **サイト バインドの追加** ダイアログ ボックスが表示されます。 選択**追加**で HTTPS を選択し、**型**ドロップダウン リスト。 **SSL 証明書**一覧で、CA による署名済み、および Azure portal にアップロードした SSL 証明書を選択します。 詳細については、[管理サービスの接続設定の構成](http://go.microsoft.com/fwlink/?LinkId=215824)を参照してください。
 
       > [!NOTE]
       > 黄色の三角形の警告が表示されない場合、信頼された SSL 証明書を追加する、**発行ウィザード**します。
@@ -157,4 +157,4 @@ Azure アプリケーションを発行するときに、次のタスクのい�
 
 ## <a name="next-steps"></a>次の手順
 
-Azure への発行の詳細を Visual Studio からについて、次を参照してください。 [Azure アプリケーション発行ウィザード](vs-azure-tools-publish-azure-application-wizard.md)します。
+Azure への発行の詳細を Visual Studio からについて、[Azure アプリケーション発行ウィザード](vs-azure-tools-publish-azure-application-wizard.md)を参照してください。

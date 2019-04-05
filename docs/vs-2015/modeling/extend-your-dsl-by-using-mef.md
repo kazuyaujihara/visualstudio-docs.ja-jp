@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49930643"
@@ -26,7 +26,7 @@ Managed Extensibility Framework (MEF) を使用して、ドメイン固有言語
   
  さらに、DSL で MEF を有効にするとできます簡単に、DSL の機能の一部を記述する場合でも、すべて DSL と共に構築されます。  
   
- MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)します。  
+ MEF の詳細については、[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)を参照してください。  
   
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>MEF で拡張する DSL を有効にするには  
   
@@ -250,7 +250,7 @@ namespace MyMefExtension
 ### <a name="gesture-handlers"></a>ジェスチャ ハンドラー  
  ジェスチャ ハンドラーは、内部または外部から任意の場所をダイアグラムにドラッグするオブジェクトを扱うことができる[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 次の例は、Windows エクスプ ローラーから対象のファイルを図にドラッグできますを示しています。 ファイル名を格納している要素を作成します。  
   
- 他の DSL モデルおよび UML モデルからの障壁に対処するためのハンドラーを記述することができます。 詳細については、次を参照してください。[方法: ドラッグ アンド ドロップ ハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)します。  
+ 他の DSL モデルおよび UML モデルからの障壁に対処するためのハンドラーを記述することができます。 詳細については、[方法: ドラッグ アンド ドロップ ハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)を参照してください。  
   
 ```  
   
@@ -327,7 +327,7 @@ namespace MefExtension
 ### <a name="validation-constraints"></a>検証制約  
  検証メソッドがによってマークされている、 `ValidationExtension` 、DSL ともによって生成される属性<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>します。 メソッドは、属性でマークされていないすべてのクラスで表示できます。  
   
- 詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。  
+ 詳細については、[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)を参照してください。  
   
 ```  
 using Company.MyDsl;  

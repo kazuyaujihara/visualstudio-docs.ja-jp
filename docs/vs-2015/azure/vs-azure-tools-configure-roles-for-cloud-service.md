@@ -13,7 +13,7 @@ ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: ce2259debb55c4792c2998f0e67df69dbc8cb7f9
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51003079"
@@ -56,7 +56,7 @@ Visual Studio で Azure クラウド サービスを作成するときに 2 つ�
     ![Azure クラウド サービスのサービス構成の一覧](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
 ## <a name="change-the-number-of-role-instances"></a>ロール インスタンスの数を変更します。
-クラウド サービスのパフォーマンスを向上させるのには、ユーザーまたは特定のロールに必要な負荷の数に基づいて、実行されているロールのインスタンスの数を変更できます。 Azure でクラウド サービスが実行されるロールのインスタンスごとに個別の仮想マシンが作成されます。 これは、このクラウド サービスのデプロイの課金に影響します。 課金の詳細については、次を参照してください。 [Microsoft Azure の課金内容](/azure/billing/billing-understand-your-bill)します。
+クラウド サービスのパフォーマンスを向上させるのには、ユーザーまたは特定のロールに必要な負荷の数に基づいて、実行されているロールのインスタンスの数を変更できます。 Azure でクラウド サービスが実行されるロールのインスタンスごとに個別の仮想マシンが作成されます。 これは、このクラウド サービスのデプロイの課金に影響します。 課金の詳細については、[Microsoft Azure の課金内容](/azure/billing/billing-understand-your-bill)を参照してください。
 
 1. 作成または Visual Studio で Azure クラウド サービス プロジェクトを開きます。
 

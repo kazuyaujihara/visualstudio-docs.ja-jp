@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 52d1fda1c3a1c2e8aac116c52afc8bf6738e23ea
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51817673"
@@ -29,14 +29,14 @@ ms.locfileid: "51817673"
 
 プロジェクトで開かれている項目のファイルは本質的に、そのプロジェクトの特定のエディターにバインドする場合、プロジェクトは、プロジェクトに固有のエディターを使用してファイルを開く必要があります。 ファイルは、エディターを選択するため、IDE のメカニズムには委任できません。 たとえば、標準のビットマップ エディターを使用する代わりには、プロジェクトに一意のファイルの情報を認識する特定のビットマップ エディターを指定するのにこのプロジェクト固有のエディター オプションを使用できます。  
   
- IDE の呼び出し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>メソッドによって、特定のプロジェクト ファイルを開く必要がありますかを決定します。 詳細については、次を参照してください。 [Open File コマンドを使用してファイルを表示する](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)します。 次のガイドラインを使用して実装する、`OpenItem`メソッドに、プロジェクトをプロジェクトに固有のエディターを使用してファイルを開きます。  
+ IDE の呼び出し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>メソッドによって、特定のプロジェクト ファイルを開く必要がありますかを決定します。 詳細については、[Open File コマンドを使用してファイルを表示する](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)を参照してください。 次のガイドラインを使用して実装する、`OpenItem`メソッドに、プロジェクトをプロジェクトに固有のエディターを使用してファイルを開きます。  
   
 ### <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>プロジェクト固有のエディターで OpenItem メソッドを実装するには  
   
 1.  呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>ファイル (ドキュメント データ オブジェクト) が既に開いているかどうかを判断するメソッド (RDT_EditLock)。  
   
     > [!NOTE]
-    >  ドキュメント データとドキュメント ビュー オブジェクトの詳細については、次を参照してください。[ドキュメント データとカスタム エディターでドキュメント ビュー](../extensibility/document-data-and-document-view-in-custom-editors.md)します。  
+    >  ドキュメント データとドキュメント ビュー オブジェクトの詳細については、[ドキュメント データとカスタム エディターでドキュメント ビュー](../extensibility/document-data-and-document-view-in-custom-editors.md)を参照してください。  
   
 2.  ファイルが既に開いている場合は、呼び出すことによって、ファイルを再び表面化、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>メソッドとの IDO_ActivateIfOpen の値を指定する、`grfIDO`パラメーター。  
   

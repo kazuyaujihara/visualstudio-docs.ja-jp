@@ -32,7 +32,7 @@ ms.locfileid: "56643718"
 
 - [.NET Framework 4 または .NET Framework 4.5 に移行する Outlook プロジェクトのフォーム領域の更新](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
-  Office プロジェクトのターゲット フレームワークは、そのプロジェクトを旧バージョンの Visual Studio からアップグレードすると変更されます。 詳細については、次を参照してください。[アップグレードし、Office ソリューションの移行](../vsto/upgrading-and-migrating-office-solutions.md)します。
+  Office プロジェクトのターゲット フレームワークは、そのプロジェクトを旧バージョンの Visual Studio からアップグレードすると変更されます。 詳細については、[アップグレードし、Office ソリューションの移行](../vsto/upgrading-and-migrating-office-solutions.md)を参照してください。
 
   Office プロジェクトの一部の機能が対象とする場合、さまざまなプログラミング モデルをある理由の詳細については、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]後を参照してくださいまたは[を .NET Framework 4 または .NET Framework 4.5を対象とするOfficeプロジェクトの設計変更。](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)と[Visual Studio Tools for Office runtime の概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)します。
 

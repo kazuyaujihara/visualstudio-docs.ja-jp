@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: ab4a3aaa63f0b06b247547abcdd6abb504c2f02b
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49876413"
@@ -31,9 +31,9 @@ ms.locfileid: "49876413"
 -   テンプレートを継承する必要があります<xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>します。  
   
 > [!NOTE]
->  ModelBus references を含まない DSL モデルを確認するには、DSL プロジェクトで生成されたディレクティブ プロセッサを使用することができます。 詳細については、次を参照してください。[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)します。  
+>  ModelBus references を含まない DSL モデルを確認するには、DSL プロジェクトで生成されたディレクティブ プロセッサを使用することができます。 詳細については、[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)を参照してください。  
   
- テキスト テンプレートの詳細については、次を参照してください。 [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)します。  
+ テキスト テンプレートの詳細については、[T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)を参照してください。  
   
 ## <a name="creating-a-model-bus-adapter-for-access-from-text-templates"></a>テキスト テンプレートからアクセスするため、モデル バス アダプターを作成します。  
  テキスト テンプレート内の ModelBus 参照を解決するには、ターゲット DSL の互換性のあるアダプターが必要です。 テキスト テンプレートの実行から別の AppDomain で、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]エディターを文書化し、アダプターの DTE を通じてアクセスすることではなく、モデルを読み込むためにします。  
@@ -42,7 +42,7 @@ ms.locfileid: "49876413"
   
 1.  ターゲット DSL ソリューションがあるない場合、 **ModelBusAdapter**プロジェクト、Modelbus 拡張機能のウィザードを使用して 1 つを作成します。  
   
-    1.  ダウンロードしてインストール、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 拡張機能、していない場合。 詳細については、次を参照してください。 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)します。  
+    1.  ダウンロードしてインストール、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 拡張機能、していない場合。 詳細については、[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)を参照してください。  
   
     2.  DSL 定義ファイルを開きます。 デザイン サーフェイスを右クリックし、をクリックし、 **Modelbus の有効化**します。  
   

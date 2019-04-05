@@ -36,7 +36,7 @@ ms.locfileid: "56606396"
 |Excel の計算をプログラムで実行します。|[方法: Excel の計算をプログラムで実行します。](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|
 |セルに文字列を表示します。|[方法: プログラムによってワークシートのセルに文字列を表示します。](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md)|
 
- Excel タスクおよび Excel オブジェクト モデルの詳細については、次を参照してください。 [Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)します。
+ Excel タスクおよび Excel オブジェクト モデルの詳細については、[Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)を参照してください。
 
  以下のタスクは、VSTO アドインとドキュメント レベルのカスタマイズとで実行方法が異なる場合があります。
 

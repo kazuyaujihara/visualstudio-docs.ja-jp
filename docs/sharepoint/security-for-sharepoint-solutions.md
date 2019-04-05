@@ -26,12 +26,12 @@ ms.locfileid: "54862943"
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint アプリケーションのセキュリティを強化するために、次の機能が組み込まれています。
 
 ## <a name="safe-control-entries"></a>安全なコントロール エントリ
- 作成したすべての SharePoint プロジェクト項目[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]が、**安全なコントロール エントリ**を安全な場所を表すプロパティがコレクションを制御します。 その**セーフ**サブプロパティでは、セキュリティで保護されたと見なされるコントロールを指定することができます。 詳細については、次を参照してください。[プロジェクト項目でのパッケージと展開の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)と[安全な Web パーツを指定する](http://go.microsoft.com/fwlink/?LinkId=177521)します。
+ 作成したすべての SharePoint プロジェクト項目[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]が、**安全なコントロール エントリ**を安全な場所を表すプロパティがコレクションを制御します。 その**セーフ**サブプロパティでは、セキュリティで保護されたと見なされるコントロールを指定することができます。 詳細については、[プロジェクト項目でのパッケージと展開の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)と[安全な Web パーツを指定する](http://go.microsoft.com/fwlink/?LinkId=177521)を参照してください。
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers 属性
  既定では、ランタイム コード アクセス セキュリティ (CAS) システムによって完全に信頼されている唯一のアプリケーションは、共有マネージ コード アセンブリをアクセスできます。 AllowPartiallyTrustedCallers 属性を持つ完全に信頼されたアセンブリをマークするには、部分的に信頼されたアセンブリへのアクセスが使用できます。
 
- AllowPartiallyTrustedCallers 属性は、システムのグローバル アセンブリ キャッシュに展開されていないすべての SharePoint ソリューションに追加されます ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 これには、サンド ボックス ソリューションまたは SharePoint アプリケーションの Bin ディレクトリにデプロイされたソリューションが含まれます。 詳細については、次を参照してください。 [Microsoft .NET Framework のバージョン 1 のセキュリティ変更](http://go.microsoft.com/fwlink/?LinkId=177515)と[SharePoint Foundation の Web パーツを配置する](http://go.microsoft.com/fwlink/?LinkId=177509)します。
+ AllowPartiallyTrustedCallers 属性は、システムのグローバル アセンブリ キャッシュに展開されていないすべての SharePoint ソリューションに追加されます ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 これには、サンド ボックス ソリューションまたは SharePoint アプリケーションの Bin ディレクトリにデプロイされたソリューションが含まれます。 詳細については、[Microsoft .NET Framework のバージョン 1 のセキュリティ変更](http://go.microsoft.com/fwlink/?LinkId=177515)と[SharePoint Foundation の Web パーツを配置する](http://go.microsoft.com/fwlink/?LinkId=177509)を参照してください。
 
 ## <a name="safe-against-script-property"></a>[スクリプト] プロパティに対して安全
  *スクリプト インジェクション*がコントロールまたは Web ページに悪意のあるコードを挿入します。 スクリプト インジェクションから SharePoint 2010 サイトを保護するため、共同作成者は表示または既定の Web パーツまたはそれらのプロパティを編集することはできません。 この動作は、SafeAgainstScript と呼ばれる SafeControl 属性によって制御されます。 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]、この属性を設定して、プロジェクト項目の**安全なコントロール エントリ**サブプロパティ**スクリプトに対して安全**します。 詳細については、次を参照してください。[プロジェクト項目でのパッケージと展開の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)と[方法。安全なコントロールとしてマークが制御](../sharepoint/how-to-mark-controls-as-safe-controls.md)します。
@@ -41,7 +41,7 @@ ms.locfileid: "54862943"
 
  構成する、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を常に管理者として実行、ショートカット メニューを開き、選択ショートカット**プロパティ**、選択、 **[詳細設定]** ボタン、**プロパティ**ダイアログ ボックスで、クリックして、**管理者として実行**チェック ボックスをオンします。
 
- 詳細については、次を参照してください。 [Windows Vista のユーザー アカウント制御を構成すると理解](http://go.microsoft.com/fwlink/?LinkID=156476)します。 [Windows 7 ユーザー アカウント制御](http://go.microsoft.com/fwlink/?LinkId=177523)します。
+ 詳細については、[Windows Vista のユーザー アカウント制御を構成すると理解](http://go.microsoft.com/fwlink/?LinkID=156476)を参照してください。 [Windows 7 ユーザー アカウント制御](http://go.microsoft.com/fwlink/?LinkId=177523)します。
 
 ## <a name="sharepoint-permissions-considerations"></a>SharePoint の権限に関する考慮事項
  SharePoint ソリューションを開発するには、SharePoint ソリューションを実行し、デバッグするために十分な権限が必要です。 SharePoint ソリューションをテストする前に、次の手順に従って必要な権限を取得してください。

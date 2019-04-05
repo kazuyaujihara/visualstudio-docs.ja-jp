@@ -15,7 +15,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: bdba9506b15b0d11f2c741c8651af2098b2f9da4
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51763285"
@@ -29,12 +29,12 @@ ms.locfileid: "51763285"
   
  Visual Studio の実験用インスタンスで実行されている設定ストアに対して読み取りし、書き込み HKCU\Software\Microsoft\VisualStudio\14.0Exp\\*CollectionName。*  
   
- 設定を保持する方法の詳細については、次を参照してください。 [Extending User Settings and オプション](../extensibility/extending-user-settings-and-options.md)します。  
+ 設定を保持する方法の詳細については、[Extending User Settings and オプション](../extensibility/extending-user-settings-and-options.md)を参照してください。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
   
 > [!NOTE]
->  このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+>  このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。  
 >   
 >  使用して、スタート ページ プロジェクト テンプレートをダウンロードする**拡張機能マネージャー**します。  
   

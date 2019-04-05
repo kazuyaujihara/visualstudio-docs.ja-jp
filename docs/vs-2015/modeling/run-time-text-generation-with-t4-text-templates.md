@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49920132"
@@ -144,7 +144,7 @@ This report is Company Confidential.
   
 ```  
   
- 間、ステートメントが挿入されることに注意してください。`<# ... #>`式に挿入されますと`<#= ... #>`します。 詳細については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)です。  
+ 間、ステートメントが挿入されることに注意してください。`<# ... #>`式に挿入されますと`<#= ... #>`します。 詳細については、[T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)を参照してください。  
   
 ## <a name="using-the-template"></a>テンプレートの使用  
   

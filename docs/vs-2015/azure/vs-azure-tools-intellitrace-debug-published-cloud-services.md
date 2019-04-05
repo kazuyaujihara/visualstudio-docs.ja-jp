@@ -13,7 +13,7 @@ ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: 865642bb7c8e41f81ff4b44ce628082e19b63a56
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002949"
@@ -30,7 +30,7 @@ Visual Studio Enterprise がインストールされている場合に IntelliTr
 > 
 
 ## <a name="configure-an-azure-application-for-intellitrace"></a>IntelliTrace の Azure アプリケーションを構成します。
-Azure アプリケーションで IntelliTrace を有効にするには作成する必要があり、Visual Studio Azure プロジェクトからアプリケーションを発行します。 Azure に発行する前に、Azure アプリケーションの IntelliTrace を構成する必要があります。 IntelliTrace を構成せずにアプリケーションを発行する場合は、プロジェクトを再発行する必要があります。 詳細については、次を参照してください。 [services Visual Studio を使用してプロジェクトを Azure のクラウドを発行](http://go.microsoft.com/fwlink/p/?LinkId=623012)します。
+Azure アプリケーションで IntelliTrace を有効にするには作成する必要があり、Visual Studio Azure プロジェクトからアプリケーションを発行します。 Azure に発行する前に、Azure アプリケーションの IntelliTrace を構成する必要があります。 IntelliTrace を構成せずにアプリケーションを発行する場合は、プロジェクトを再発行する必要があります。 詳細については、[services Visual Studio を使用してプロジェクトを Azure のクラウドを発行](http://go.microsoft.com/fwlink/p/?LinkId=623012)を参照してください。
 
 1. Azure アプリケーションをデプロイする準備ができたら、プロジェクトのビルド ターゲットに設定されていることを確認**デバッグ**します。
 
@@ -46,7 +46,7 @@ Azure アプリケーションで IntelliTrace を有効にするには作成す
 
     ![IntelliTrace の設定 リンク](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/intellitrace-settings-link.png)
    
-1. **IntelliTrace 設定**ダイアログ ボックスで、どのイベント ログ、呼び出し情報を収集するかどうか、どのモジュールと収集するプロセスは、ログおよび記録に割り当てる領域の量を指定できます。 IntelliTrace の詳細については、次を参照してください。 [IntelliTrace によるデバッグ](http://go.microsoft.com/fwlink/?LinkId=214468)します。
+1. **IntelliTrace 設定**ダイアログ ボックスで、どのイベント ログ、呼び出し情報を収集するかどうか、どのモジュールと収集するプロセスは、ログおよび記録に割り当てる領域の量を指定できます。 IntelliTrace の詳細については、[IntelliTrace によるデバッグ](http://go.microsoft.com/fwlink/?LinkId=214468)を参照してください。
    
     ![IntelliTrace の設定](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/IC519063.png)
 

@@ -47,7 +47,7 @@ ms.locfileid: "56628391"
 ## <a name="run-command-line-operations-before-or-after-a-project-is-deployed"></a>前に、またはプロジェクトを配置後コマンドライン操作を実行します。
  SharePoint ソリューションの配置時にコマンド ライン操作を実行する場合、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> オブジェクトの <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.PreDeploymentCommand%2A> プロパティと <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.PostDeploymentCommand%2A> プロパティを設定することができます。 これらのコマンドは、プロジェクトが配置される前と後に Visual Studio によって実行されます。
 
- 場合によっては、配置の競合が発生することがあります。 競合を解決する方法はいくつかあります。 詳細については、次を参照してください。[のトラブルシューティングを行う SharePoint のパッケージ化と配置](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)します。
+ 場合によっては、配置の競合が発生することがあります。 競合を解決する方法はいくつかあります。 詳細については、[のトラブルシューティングを行う SharePoint のパッケージ化と配置](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)を参照してください。
 
 ## <a name="customize-validation-rules"></a>検証規則をカスタマイズします。
  ソリューション パッケージ (.wsp) を配置する前に、フィーチャーまたはパッケージが有効であることを検証するために、カスタムのフィーチャー検証規則およびパッケージ検証規則を作成できます。 たとえば、検証に関する問題の修正に役立つように、情報、警告、またはエラーを開発者に報告できます。 詳細については、「[方法 :SharePoint ソリューションの検証規則を使用したカスタムのフィーチャーとパッケージの作成](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)です。

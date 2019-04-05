@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: erikre
 ms.openlocfilehash: 1ac9d10ddb687063de8c45296bc879854a0979a4
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49248730"
@@ -37,7 +37,7 @@ ms.locfileid: "49248730"
 |**キャンセル ハンドラーの表示**|デザイン サーフェスと選択を右クリックし、 **キャンセル ハンドラーの**、コンテキスト メニューを表示するオプション、**シーケンシャル ワークフロー**表示、表示する、 [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050)ワークフローに関連付けられているアクティビティ。 選択または**キャンセル ハンドラーの**から、**ワークフロー**メニュー。|  
 |**エラー ハンドラー**|デザイン サーフェスと選択を右クリックし、 **エラー ハンドラー** 、コンテキスト メニューを表示するオプション、**エラー**表示、表示する、 [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055)ワークフローに関連付けられているアクティビティ。 選択または**エラー ハンドラー**から、**ワークフロー**メニュー。|  
   
- 同様のビューについての詳細については、次を参照してください。[アクティビティ ビュー (レガシ)](../workflow-designer/activity-views-legacy.md)します。  
+ 同様のビューについての詳細については、[アクティビティ ビュー (レガシ)](../workflow-designer/activity-views-legacy.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [アクティビティ ビュー (レガシ)](../workflow-designer/activity-views-legacy.md)   

@@ -29,7 +29,7 @@ ms.locfileid: "56625466"
 
  デザイン時に、コントロールを追加する場合は、各コントロールに配置オプションを設定する必要があります。
 
- Windows フォーム コントロールをプログラムで追加して、引数を範囲指定、コントロールに自動的に、範囲内のセルのサイズが変更されたときにサイズ変更します。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+ Windows フォーム コントロールをプログラムで追加して、引数を範囲指定、コントロールに自動的に、範囲内のセルのサイズが変更されたときにサイズ変更します。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
 
 ## <a name="resize-controls-at-design-time"></a>デザイン時にコントロールをサイズ変更します。
 

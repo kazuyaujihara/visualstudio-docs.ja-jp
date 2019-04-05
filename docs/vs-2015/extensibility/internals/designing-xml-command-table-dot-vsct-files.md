@@ -32,7 +32,7 @@ XML コマンド テーブル (.vsct) ファイルには、VSPackage のコマ�
   
  実行して新しい VSPackage を作成する場合、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]パッケージ テンプレートでは、メニュー コマンド、ツール ウィンドウ、または、選択内容に応じて、カスタム エディターに必要な要素の .vsct ファイルが生成されます。 この .vsct ファイルは、特定の VSPackage の要件に合わせて変更できます。 .Vsct ファイルを変更する方法の例については、例を参照してください。[拡張メニューとコマンド](../../extensibility/extending-menus-and-commands.md)します。  
   
- 新しい、空白の .vsct ファイルを作成するを参照してください。[方法: を作成します。Vsct ファイル](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)します。 作成されると、ファイルに、コマンドの項目のレイアウトを記述する XML 要素、属性、および値を追加します。 詳細な XML スキーマでは、次を参照してください。、 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)します。  
+ 新しい、空白の .vsct ファイルを作成するを参照してください。[方法: を作成します。Vsct ファイル](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)します。 作成されると、ファイルに、コマンドの項目のレイアウトを記述する XML 要素、属性、および値を追加します。 詳細な XML スキーマでは、、 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)を参照してください。  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc と .vsct ファイルの間の相違点  
  現在、将来の .ctc ファイル形式が非推奨として、.vsct ファイル内の XML タグの意味は同じですが、その実装は少し異なります。  
@@ -47,7 +47,7 @@ XML コマンド テーブル (.vsct) ファイルには、VSPackage のコマ�
   
 - 値は、項目の属性として格納されます。  
   
-- コマンドのフラグを個別に格納されているまたは積み上げことができます。  積み上げコマンド フラグでただし、Intellisense は機能しません。 コマンドのフラグの詳細については、次を参照してください。、 [Command Flag 要素](../../extensibility/command-flag-element.md)します。  
+- コマンドのフラグを個別に格納されているまたは積み上げことができます。  積み上げコマンド フラグでただし、Intellisense は機能しません。 コマンドのフラグの詳細については、、 [Command Flag 要素](../../extensibility/command-flag-element.md)を参照してください。  
   
 - 分割のドロップダウン リストから、combos など、複数の種類を指定することができます。  
   
@@ -71,7 +71,7 @@ XML コマンド テーブル (.vsct) ファイルには、VSPackage のコマ�
   
   新しいコンパイラ、vsct.exe、.ctc と .vsct ファイルをコンパイルします。 古い ctc.exe コンパイラ、ただしは認識も .vsct ファイルをコンパイルします。  
   
-  Vsct.exe コンパイラを使用して、.vsct ファイルを既存の .cto ファイルに変換することができます。 詳細については、次を参照してください。[方法: を作成します。既存の Vsct ファイルです。Cto ファイル](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)します。  
+  Vsct.exe コンパイラを使用して、.vsct ファイルを既存の .cto ファイルに変換することができます。 詳細については、[方法: を作成を参照してください。既存の Vsct ファイルです。Cto ファイル](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)します。  
   
 ## <a name="the-vsct-file-elements"></a>.Vsct ファイルの要素  
  コマンド テーブルには、次の階層と要素があります。  

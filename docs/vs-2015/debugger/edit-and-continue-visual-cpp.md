@@ -25,7 +25,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6e1dc97af70f575632629a13ea67e905f2ad0815
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51748348"
@@ -37,7 +37,7 @@ Visual C++ プロジェクトでエディット コンティニュを使用で�
   
  Visual Studio 2015 Update 1 以降、使えるようになりましたエディット コンティニュでは、Windows ストア C++ アプリと DirectX アプリで現在サポートされているため、 **/ZI**コンパイラ スイッチと **/bigobj**スイッチします。 コンパイルされたバイナリと、エディット コンティニュを使用することも、 **/FASTLINK**スイッチします。  
   
- Update 1 のその他の機能強化としては、ファイルがエディット コンティニュをサポートしていない場合にキャンセルできる待機のダイアログと通知が新たに含まれるようになりました。 Update 1 の機能強化の詳細については、次を参照してください。 [Visual Studio 2015 Update 1 で C++ のエディット コンティニュの機能強化](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx)します。  
+ Update 1 のその他の機能強化としては、ファイルがエディット コンティニュをサポートしていない場合にキャンセルできる待機のダイアログと通知が新たに含まれるようになりました。 Update 1 の機能強化の詳細については、[Visual Studio 2015 Update 1 で C++ のエディット コンティニュの機能強化](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx)を参照してください。  
   
  [(デバッグ機能の強化に最適化された)/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)なしでコンパイルされたバイナリのシンボル (.pdb) ファイルに追加します追加情報を Visual Studio 2013 Update 3 で導入されたコンパイラ オプション、 [/Od (無効 (デバッグ))](http://msdn.microsoft.com/library/aafb762y.aspx)オプション。  
   

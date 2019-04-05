@@ -26,7 +26,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d2a5110a6801aafb6eaf98cb4fb4164b045b2408
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51793634"
@@ -44,7 +44,7 @@ ms.locfileid: "51793634"
   
 -   アプリケーションの構成ファイル (Web.config) をデバッグ モードに設定する必要があります。 デバッグ モードの [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] では、動的に生成されたファイル用のシンボルが生成され、デバッガーの [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションへのアタッチが可能になります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、プロジェクトを Web プロジェクト テンプレートから作成した場合は、デバッグ開始時にこの処理が自動的に実行されます。  
   
--   詳細については、次を参照してください。[方法: ASP.NET アプリケーションのデバッグを有効にする](../debugger/how-to-enable-debugging-for-aspnet-applications.md)します。  
+-   詳細については、[方法: ASP.NET アプリケーションのデバッグを有効にする](../debugger/how-to-enable-debugging-for-aspnet-applications.md)を参照してください。  
   
 ### <a name="to-debug-a-web-application-during-development"></a>開発時に Web アプリケーションをデバッグするには  
   
@@ -54,7 +54,7 @@ ms.locfileid: "51793634"
   
 2.  デバッガーを使用して、ほかのアプリケーションの場合と同様に、ブレークポイントの設定と解除、ステップの実行、およびその他のデバッグ処理を行います。  
   
-     詳細については、次を参照してください。[デバッガーの基本事項](../debugger/debugger-basics.md)します。  
+     詳細については、[デバッガーの基本事項](../debugger/debugger-basics.md)を参照してください。  
   
 3.  **デバッグ** メニューのをクリックして**デバッグの停止** 、デバッグ セッションを終了または上、**ファイル**Internet Explorer で、メニューのをクリックして**閉じる**します。  
   

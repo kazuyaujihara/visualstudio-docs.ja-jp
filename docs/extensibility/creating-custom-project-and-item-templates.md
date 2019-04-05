@@ -21,12 +21,12 @@ Visual Studio SDK には、カスタム プロジェクト テンプレートと
 
 テンプレートの作成テンプレートを使用してより大きな拡張機能でテンプレートを追加できます。 これにより、ソース ファイルでバージョン管理を実装し、1 つの VSIX パッケージ プロジェクト テンプレートのグループを作成できます。
 
-NuGet パッケージをインストールするためのテンプレートを構成することもできます。 詳細については、次を参照してください。 [Visual Studio テンプレートの NuGet パッケージ](/nuget/visual-studio-extensibility/visual-studio-templates)します。
+NuGet パッケージをインストールするためのテンプレートを構成することもできます。 詳細については、[Visual Studio テンプレートの NuGet パッケージ](/nuget/visual-studio-extensibility/visual-studio-templates)を参照してください。
 
-基本的なテンプレートの作成シナリオで使用する必要があります、**テンプレートのエクスポート**ウィザードで、圧縮されたファイルに出力します。 基本的なテンプレートの作成の詳細については、次を参照してください。[プロジェクトと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)します。
+基本的なテンプレートの作成シナリオで使用する必要があります、**テンプレートのエクスポート**ウィザードで、圧縮されたファイルに出力します。 基本的なテンプレートの作成の詳細については、[プロジェクトと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)を参照してください。
 
 > [!NOTE]
-> Visual Studio 2017 以降、カスタム プロジェクトと項目テンプレートのスキャンは不要になった実行されます。 代わりに、拡張機能では、これらのテンプレートのインストール場所を記述するテンプレート マニフェスト ファイルを提供する必要があります。 Visual Studio 2017 を使用して、VSIX 拡張機能を更新することができます。 MSI を使用して、拡張機能をデプロイする場合は、手動でテンプレート マニフェスト ファイルを生成する必要があります。 詳細については、次を参照してください。[カスタム プロジェクトと項目テンプレートを Visual Studio 2017 のアップグレード](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)します。 テンプレート マニフェスト スキーマについては[Visual Studio テンプレート マニフェスト スキーマ参照](../extensibility/visual-studio-template-manifest-schema-reference.md)します。
+> Visual Studio 2017 以降、カスタム プロジェクトと項目テンプレートのスキャンは不要になった実行されます。 代わりに、拡張機能では、これらのテンプレートのインストール場所を記述するテンプレート マニフェスト ファイルを提供する必要があります。 Visual Studio 2017 を使用して、VSIX 拡張機能を更新することができます。 MSI を使用して、拡張機能をデプロイする場合は、手動でテンプレート マニフェスト ファイルを生成する必要があります。 詳細については、[カスタム プロジェクトと項目テンプレートを Visual Studio 2017 のアップグレード](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)を参照してください。 テンプレート マニフェスト スキーマについては[Visual Studio テンプレート マニフェスト スキーマ参照](../extensibility/visual-studio-template-manifest-schema-reference.md)します。
 
 ## <a name="create-a-project-template"></a>プロジェクト テンプレートを作成します。
 
@@ -68,7 +68,7 @@ NuGet パッケージをインストールするためのテンプレートを�
 
 ### <a name="to-deploy-the-project-or-item-template"></a>プロジェクトまたは項目テンプレートをデプロイするには
 
-1. VSIX プロジェクトを作成する。 詳細については、次を参照してください。 [VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)します。
+1. VSIX プロジェクトを作成する。 詳細については、[VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)を参照してください。
 
 2. VSIX プロジェクトをスタートアップ プロジェクトとして設定します。 **ソリューション エクスプ ローラー**、選択、VSIX プロジェクト ノードを右クリックし、**スタートアップ プロジェクトとして設定**します。
 

@@ -37,7 +37,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c6bba5b9c1b9d65c867176ac72c0641fac4cd286
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51817647"
@@ -54,7 +54,7 @@ C ランタイム ライブラリには、広範なデバッグ支援機能が�
   
  Visual C++ をインストールするときに、C ランタイム ライブラリのソース コードをハード ディスクにインストールするかどうかを選択できます。 ソース コードをインストールしない場合は、CRT 関数をステップ実行するときに CD-ROM が必要になります。  
   
- 使用できるさまざまなランタイム ライブラリの詳細については、次を参照してください。 [C ランタイム ライブラリ](http://msdn.microsoft.com/library/a889fd39-807d-48f2-807f-81492612463f)します。  
+ 使用できるさまざまなランタイム ライブラリの詳細については、[C ランタイム ライブラリ](http://msdn.microsoft.com/library/a889fd39-807d-48f2-807f-81492612463f)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [CRT のデバッグ技術](../debugger/crt-debugging-techniques.md)   

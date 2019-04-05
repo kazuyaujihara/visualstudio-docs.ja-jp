@@ -101,7 +101,7 @@ ms.locfileid: "56602638"
 
 6.  **デバッグのサイトとセキュリティのレベルを指定**ページで、選択、**ファーム ソリューションとして配置**オプション ボタンをクリックして、 **[完了]** ボタンをクリックします信頼レベルと既定のサイトです。
 
-     この手順では、ファーム ソリューションでは、ワークフロー プロジェクトでのみ利用可能なオプションとして、ソリューションの信頼レベルを設定します。 詳細については、次を参照してください。[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)します。
+     この手順では、ファーム ソリューションでは、ワークフロー プロジェクトでのみ利用可能なオプションとして、ソリューションの信頼レベルを設定します。 詳細については、[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)を参照してください。
 
 7.  **ソリューション エクスプ ローラー**をプロジェクト ノードを選択し、メニュー バーで、次のように選択します。**プロジェクト** > **新しい項目の追加**します。
 
@@ -283,9 +283,9 @@ ms.locfileid: "56602638"
 ## <a name="next-steps"></a>次の手順
  これらのトピックからワークフロー テンプレートを作成する方法の詳細を確認できます。
 
--   SharePoint ワークフロー アクティビティの詳細については、次を参照してください。 [SharePoint Foundation のワークフロー アクティビティ](http://go.microsoft.com/fwlink/?LinkId=178992)します。
+-   SharePoint ワークフロー アクティビティの詳細については、[SharePoint Foundation のワークフロー アクティビティ](http://go.microsoft.com/fwlink/?LinkId=178992)を参照してください。
 
--   Windows Workflow Foundation アクティビティの詳細については、次を参照してください。 [System.Workflow.Activities Namespace](http://go.microsoft.com/fwlink/?LinkId=178993)します。
+-   Windows Workflow Foundation アクティビティの詳細については、[System.Workflow.Activities Namespace](http://go.microsoft.com/fwlink/?LinkId=178993)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint ワークフロー ソリューションを作成します。](../sharepoint/creating-sharepoint-workflow-solutions.md)

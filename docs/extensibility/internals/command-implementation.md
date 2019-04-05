@@ -20,7 +20,7 @@ ms.locfileid: "56335624"
 # <a name="command-implementation"></a>コマンドの実装
 VSPackage のコマンドを実装するには、次のタスクを実行する必要があります。
 
-1.  *.Vsct*ファイルおよびコマンド グループをセットアップし、コマンドを追加します。 詳細については、次を参照してください。 [Visual Studio コマンド テーブル (.vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
+1.  *.Vsct*ファイルおよびコマンド グループをセットアップし、コマンドを追加します。 詳細については、[Visual Studio コマンド テーブル (.vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)を参照してください。
 
 2.  Visual Studio でのコマンドを登録します。
 

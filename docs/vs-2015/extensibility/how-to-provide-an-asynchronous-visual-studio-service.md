@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 4833fcef561bcc7c81a8c19fd5c4a1fcb2f7ccea
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51767631"
@@ -22,7 +22,7 @@ ms.locfileid: "51767631"
 
 UI スレッドをブロックすることがなくサービスを取得する場合は、非同期のサービスを作成し、バック グラウンド スレッドでパッケージを読み込みます。 この目的に使用することができます、<xref:Microsoft.VisualStudio.Shell.AsyncPackage>なく<xref:Microsoft.VisualStudio.Shell.Package>と非同期のパッケージの特殊な非同期メソッドでサービスの追加  
   
- Visual Studio の同期サービスを提供する方法の詳細については、次を参照してください。[方法: サービスを提供](../extensibility/how-to-provide-a-service.md)します。  
+ Visual Studio の同期サービスを提供する方法の詳細については、[方法: サービスを提供](../extensibility/how-to-provide-a-service.md)を参照してください。  
   
 ## <a name="implementing-an-asynchronous-service"></a>非同期のサービスを実装します。  
   
@@ -89,9 +89,9 @@ UI スレッドをブロックすることがなくサービスを取得する�
 ## <a name="registering-a-service"></a>サービスを登録します。  
  サービスを登録するには、追加、<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>サービスを提供するパッケージにします。 同期サービスの登録から 2 つの違いがあります。  
   
-- 自動読み込みする場合は、パッケージを追加する必要がある、 <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> BackgroundLoad 属性の値。 自動読み込みの Vspackage の詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。  
+- 自動読み込みする場合は、パッケージを追加する必要がある、 <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> BackgroundLoad 属性の値。 自動読み込みの Vspackage の詳細については、[Vspackage の読み込み](../extensibility/loading-vspackages.md)を参照してください。  
   
-- 追加する必要があります、 **AllowsBackgroundLoading = true**フィールドを<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>します。 PackageRegistrationAttribute の詳細については、次を参照してください。[の登録および登録を解除する Vspackage](../extensibility/registering-and-unregistering-vspackages.md)します。  
+- 追加する必要があります、 **AllowsBackgroundLoading = true**フィールドを<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>します。 PackageRegistrationAttribute の詳細については、[の登録および登録を解除する Vspackage](../extensibility/registering-and-unregistering-vspackages.md)を参照してください。  
   
   非同期のサービスの登録、asyncpackage からの例を次に示します。  
   

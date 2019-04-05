@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 1573709c7ef42e51454ca65103a6faeda78dcc1b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51778710"
@@ -28,7 +28,7 @@ ms.locfileid: "51778710"
 このチュートリアルを開始する VSPackage を作成する方法について説明、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .myext ファイル名拡張子を持つファイルがいつのコア エディターが読み込まれます。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio パッケージ プロジェクト テンプレートの場所  
  Visual Studio パッケージのプロジェクト テンプレートは、 **[新しいプロジェクト]** ダイアログの次の 3 つの場所にあります。  
@@ -398,7 +398,7 @@ ms.locfileid: "51778710"
   
  VSPackage が呼び出すことができます、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]エディター ファクトリを指定することによって、コア エディター。 このエディターのファクトリは、それに関連付けられているファイルが読み込まれるたびに使用されます。 ファイルがプロジェクトの一部である場合は、し、コア エディターが自動的に起動、VSPackage によってオーバーライドされない限り、します。 ただし、プロジェクトの外側で、ファイルを読み込んだ場合、コア エディターする必要があります明示的に呼び出す、VSPackage によって。  
   
- コア エディターの詳細については、次を参照してください。[のコア エディター内で](../extensibility/inside-the-core-editor.md)します。  
+ コア エディターの詳細については、[のコア エディター内で](../extensibility/inside-the-core-editor.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [コア エディター内で](../extensibility/inside-the-core-editor.md)   

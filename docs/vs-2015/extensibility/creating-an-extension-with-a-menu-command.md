@@ -20,7 +20,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: fb99149a7b617d8e48e036d9e706e5e1c0a6169b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51779308"
@@ -41,7 +41,7 @@ ms.locfileid: "51779308"
   
 3.  プロジェクトをビルドし、デバッグを開始します。  
   
-     Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、次を参照してください。 [、実験用インスタンス](../extensibility/the-experimental-instance.md)します。  
+     Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、[、実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。  
   
 4.  実験用インスタンスの開く、**ツール/拡張機能と更新**ウィンドウ。 表示する必要があります、 **FirstMenuCommand**拡張します。 (を開いた場合**拡張機能と更新**、Visual Studio の作業用インスタンスでは表示されません**FirstMenuCommand**)。  
   

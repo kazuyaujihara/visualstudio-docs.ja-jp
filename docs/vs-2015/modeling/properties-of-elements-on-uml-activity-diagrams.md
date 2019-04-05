@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 5a3233d073a4b54c7c52b4b725f0d15833f5a51f
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51803059"
@@ -30,7 +30,7 @@ ms.locfileid: "51803059"
 UML アクティビティ図の各要素には、プロパティがあります。 要素のプロパティを表示するには、図、または要素を右クリックして**UML モデル エクスプ ローラー**し**プロパティ**します。 プロパティが表示されます、**プロパティ**ウィンドウ。  
   
 > [!NOTE]
->  このトピックでは、UML アクティビティ図の要素のプロパティについて説明します。 UML アクティビティ図を読み取る方法については、次を参照してください。 [UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)します。 UML アクティビティ図を描画する方法の詳細については、次を参照してください。 [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。  
+>  このトピックでは、UML アクティビティ図の要素のプロパティについて説明します。 UML アクティビティ図を読み取る方法については、[UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)を参照してください。 UML アクティビティ図を描画する方法の詳細については、[UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)を参照してください。  
   
 ## <a name="properties-of-elements"></a>要素のプロパティ  
   

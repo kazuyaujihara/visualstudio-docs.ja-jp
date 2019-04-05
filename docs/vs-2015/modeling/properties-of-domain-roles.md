@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 51149979544c19b0a887ad77e80a26284051778b
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49244089"
@@ -22,7 +22,7 @@ ms.locfileid: "49244089"
 # <a name="properties-of-domain-roles"></a>ドメイン ロールのプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-次の表に、プロパティは、役割をドメインに関連付けられます。 ドメイン ロールについては、次を参照してください。[理解のモデル、クラスとリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)します。 これらのプロパティを使用する方法の詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。  
+次の表に、プロパティは、役割をドメインに関連付けられます。 ドメイン ロールについては、[理解のモデル、クラスとリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)を参照してください。 これらのプロパティを使用する方法の詳細については、[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)を参照してください。  
   
 |プロパティ|説明|既定値|  
 |--------------|-----------------|-------------|  
@@ -35,7 +35,7 @@ ms.locfileid: "49244089"
 |複数要素の接続性|逆の役割を果たすことができるモデル要素の数 (`0..1`、 `1..1`、 `0..*`、または`1..*`)。 多重度が場合`0..*`または`1..*`、生成されたプロパティは、コレクションを表します。 それ以外の場合、生成されたプロパティが 1 つのモデル要素を表します。|リレーションシップの種類に依存し、これがリレーションシップのソースまたはターゲット ロールかどうか。|  
 |名前|ドメイン ロールの名前。 このプロパティには、空白文字が含まれていないことができます。|このロールのロール プレーヤーのドメイン クラスの名前。|  
 |コピーを伝達します。|`DoNotPropagateCopy` -コピーされたロール プレーヤーには、このリンクのコピーはありません。<br /><br /> `PropagateCopyToLinkOnly` -コピーのリンクは、既存の反対のロール プレーヤーを指します。<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -コピーのリンクは、反対のロール プレーヤーのコピーを指します。|`PropagateCopyToLinkAndOppositeRolePlayer` 埋め込みのソース ロール。<br /><br /> `DoNotPropagateCopy` その他のロール。<br /><br /> 詳細については、次を参照してください[コピー動作のカスタマイズ。](../modeling/customizing-copy-behavior.md)|  
-|削除を伝達します。|`True` 関連のリンクが削除されたときにこの役割を果たす要素を削除します。|`True` 埋め込みのロールのターゲット。<br /><br /> `False` その他のロール。<br /><br /> 詳細については、次を参照してください。[削除の動作のカスタマイズ](../modeling/customizing-deletion-behavior.md)します。|  
+|削除を伝達します。|`True` 関連のリンクが削除されたときにこの役割を果たす要素を削除します。|`True` 埋め込みのロールのターゲット。<br /><br /> `False` その他のロール。<br /><br /> 詳細については、[削除の動作のカスタマイズ](../modeling/customizing-deletion-behavior.md)を参照してください。|  
 |プロパティ名|ロール プレーヤーのコードで生成されるプロパティの名前。 この名前は、空白を含めることはできません。|このロールの 0 対 1 の場合は、反対のロールの名前または一対一の多重度。それ以外の場合、反対のロールの複数形の名前。|  
 |ロール プレーヤー|リレーションシップでこの役割を果たすことができます、要素のドメイン クラス。 このプロパティは読み取り専用です。|このロールのロール プレーヤーのドメイン クラス。|  
 |メモ|ドメインの役割に関連付けられている非公式のメモ。|\<なし >|  

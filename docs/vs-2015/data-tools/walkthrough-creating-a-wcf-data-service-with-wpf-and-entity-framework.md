@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3d115c7ea7b2739f49492fb28fe855e2638d972c
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49889595"
@@ -49,7 +49,7 @@ ms.locfileid: "49889595"
   
 -   Northwind サンプル データベース。  
   
-     開発用コンピューターにこのデータベースがない場合は、 [Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkID=98088)からダウンロードできます。 手順については、次を参照してください。[サンプル データベースのダウンロード](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)します。  
+     開発用コンピューターにこのデータベースがない場合は、 [Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkID=98088)からダウンロードできます。 手順については、[サンプル データベースのダウンロード](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)を参照してください。  
   
 ## <a name="creating-the-service"></a>サービスの作成  
  [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] を作成するには、Web プロジェクトを追加し、[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]を作成した後、そのモデルからサービスを作成します。  
@@ -88,7 +88,7 @@ ms.locfileid: "49889595"
   
         - または -  
   
-   -   選択、**新しい接続**新しいデータ接続を構成するボタンをクリックします。 詳細については、次を参照してください。[新しい接続を追加](../data-tools/add-new-connections.md)します。  
+   -   選択、**新しい接続**新しいデータ接続を構成するボタンをクリックします。 詳細については、[新しい接続を追加](../data-tools/add-new-connections.md)を参照してください。  
   
 6. データベースは、パスワードを必要とする場合は、選択、**はい、機密データの接続文字列に含める**オプション ボタンをクリックして、**次**ボタン。  
   
@@ -133,7 +133,7 @@ ms.locfileid: "49889595"
     Customers テーブル内のデータの XML 表現が表示されます。  
   
    > [!NOTE]
-   >  Internet Explorer がデータを誤って RSS フィードとして解釈する場合があります。 RSS フィードを表示するオプションが無効になっていることを確認してください。 詳細については、次を参照してください。[サービス参照のトラブルシューティング](../data-tools/troubleshooting-service-references.md)します。  
+   >  Internet Explorer がデータを誤って RSS フィードとして解釈する場合があります。 RSS フィードを表示するオプションが無効になっていることを確認してください。 詳細については、[サービス参照のトラブルシューティング](../data-tools/troubleshooting-service-references.md)を参照してください。  
   
 8. ブラウザー ウィンドウを閉じます。  
   

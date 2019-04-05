@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 6b96cb16182447ca636ee363a2cf62a33dcd6823
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51752933"
@@ -50,7 +50,7 @@ Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウ�
   
 2. カテゴリの名前は、IDE に表示するときに、必要に応じてローカライズできるように、VSPackage のリソース (.rc) ファイル内の文字列テーブルに追加する必要があります。  
   
-    詳細については、次を参照してください。[を追加または削除する文字列](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab)します。  
+    詳細については、[を追加または削除する文字列](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab)を参照してください。  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>組み込みのフォントと色を使用してカテゴリを登録するには  
   

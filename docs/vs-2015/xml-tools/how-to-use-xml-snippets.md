@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
 ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/29/2018
 ms.locfileid: "50219615"
@@ -113,7 +113,7 @@ XML エディターのショートカット メニューにある次の 2 つの
   
  Enter キーまたは Esc キーを押すと、フィールドの編集をキャンセルしてエディターを通常の状態に戻します。  
   
- コード スニペット フィールドの設定を変更することで編集可能なコード スニペット フィールドの既定の色を変更することができます、**フォントおよび色**のウィンドウ、**オプション** ダイアログ ボックス。 詳細については、次を参照してください。[方法: エディターで変更のフォントと色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)します。  
+ コード スニペット フィールドの設定を変更することで編集可能なコード スニペット フィールドの既定の色を変更することができます、**フォントおよび色**のウィンドウ、**オプション** ダイアログ ボックス。 詳細については、[方法: エディターで変更のフォントと色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [XML スニペット](../xml-tools/xml-snippets.md)   

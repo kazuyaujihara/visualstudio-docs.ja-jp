@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49897798"
@@ -50,7 +50,7 @@ ms.locfileid: "49897798"
 <#@ output extension=".txt" #>  
 ```  
   
- ディレクティブの詳細については、次を参照してください。 [T4 テキスト テンプレート ディレクティブ](../modeling/t4-text-template-directives.md)します。  
+ ディレクティブの詳細については、[T4 テキスト テンプレート ディレクティブ](../modeling/t4-text-template-directives.md)を参照してください。  
   
 ## <a name="text-blocks"></a>テキスト ブロック  
  テキスト ブロックのテキストは、出力ファイルに直接挿入されます。 テキスト ブロックに特別な書式指定はありません。 たとえば、次のテキスト テンプレートからは、"Hello" という単語を含むテキスト ファイルが生成されます。  
@@ -161,7 +161,7 @@ private int Square(int i)
   
  クラス機能は、それを記述するファイルの末尾に配置する必要があります。 ただし、`<#@include#>` を使用すると、`include` ディレクティブの後ろに標準ブロックとテキストが続く場合でも、クラス機能を含むファイルをインクルードすることができます。  
   
- コントロール ブロックの詳細については、次を参照してください。[テキスト テンプレートのコントロール ブロック](../modeling/text-template-control-blocks.md)します。  
+ コントロール ブロックの詳細については、[テキスト テンプレートのコントロール ブロック](../modeling/text-template-control-blocks.md)を参照してください。  
   
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>クラス機能ブロックにはテキスト ブロックを含めることができる  
  テキストを生成するメソッドを記述できます。 次に例を示します。  
@@ -200,11 +200,11 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
 ```  
   
- マクロの一覧は、次を参照してください。[のビルドのコマンドとプロパティの共通マクロ](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)します。  
+ マクロの一覧は、[のビルドのコマンドとプロパティの共通マクロ](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)を参照してください。  
   
  Assembly ディレクティブ効果はありません、[前処理されたテキスト テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)します。  
   
- 詳細については、次を参照してください。 [T4 アセンブリ ディレクティブ](../modeling/t4-assembly-directive.md)します。  
+ 詳細については、[T4 アセンブリ ディレクティブ](../modeling/t4-assembly-directive.md)を参照してください。  
   
 ### <a name="namespaces"></a>名前空間  
  import ディレクティブは、C# での `using` 句または Visual Basic での `imports` 句と同じ働きをします。 これを使用すると、完全修飾名を使用せずにコードで型を参照できます。  
@@ -215,7 +215,7 @@ private void WriteSquareLine(int i)
   
  `assembly` ディレクティブと `import` ディレクティブは、必要に応じていくつでも使用できます。 これらのディレクティブは、テキスト ブロックとコントロール ブロックの前に配置する必要があります。  
   
- 詳細については、次を参照してください。 [T4 インポート ディレクティブ](../modeling/t4-import-directive.md)します。  
+ 詳細については、[T4 インポート ディレクティブ](../modeling/t4-import-directive.md)を参照してください。  
   
 ###  <a name="Include"></a> コードとテキストを含む  
  `include` ディレクティブを使用すると、別のテンプレート ファイルのテキストを挿入できます。 たとえば、次のディレクティブでは、`test.txt` のコンテンツが挿入されます。  
@@ -224,14 +224,14 @@ private void WriteSquareLine(int i)
   
  インクルードされたコンテンツは、インクルード先のテキスト テンプレートに元から含まれていた場合とほとんど同じように処理されます。 ただし、include ディレクティブの後に通常のテキスト ブロックと標準コントロール ブロックが続く場合でも、クラス機能ブロック (`<#+...#>`) を含むファイルをインクルードすることができます。  
   
- 詳細については、次を参照してください。 [T4 Include ディレクティブ](../modeling/t4-include-directive.md)します。  
+ 詳細については、[T4 Include ディレクティブ](../modeling/t4-include-directive.md)を参照してください。  
   
 ### <a name="utility-methods"></a>ユーティリティ メソッド  
  `Write()` をはじめ、コントロール ブロックでいつでも使用できるメソッドがいくつかあります。 これには、出力のインデントに役立つメソッドや、エラーの報告に役立つメソッドが含まれます。  
   
  独自のユーティリティ メソッドのセットを記述することもできます。  
   
- 詳細については、次を参照してください。[テキスト テンプレートのユーティリティ メソッド](../modeling/text-template-utility-methods.md)します。  
+ 詳細については、[テキスト テンプレートのユーティリティ メソッド](../modeling/text-template-utility-methods.md)を参照してください。  
   
 ## <a name="transforming-data-and-models"></a>データとモデルの変換  
  テキスト テンプレートが最も役に立つのは、モデル、データベース、データ ファイルなどのソースのコンテンツに基づいてマテリアルを生成する場合です。 テンプレートによってデータが抽出され、その書式が再設定されます。 テンプレートのコレクションでは、このようなソースを複数のファイルに変換できます。  
@@ -247,9 +247,9 @@ private void WriteSquareLine(int i)
   
  **ナビゲート可能なモデルとしてファイルを読み込む**します。 より効果的な方法は、テキスト テンプレート コードでナビゲートできるモデルとしてデータを読み取ることです。 たとえば、XML ファイルを読み込み、XPath 式でそのファイル内をナビゲートできます。 使用することも[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) XML データを読み取ることが可能クラスのセットを作成します。  
   
- **図またはフォームでモデル ファイルを編集します。** [!INCLUDE[dsl](../includes/dsl-md.md)] 図または Windows フォームとして、モデルを編集するためのツールを提供します。 このため、生成されたアプリケーションのユーザーと、モデルについて効率的に話し合うことができます。 [!INCLUDE[dsl](../includes/dsl-md.md)]では、モデルの構造を反映した、厳密に型指定されたクラスのセットも作成できます。 詳細については、次を参照してください。[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)します。  
+ **図またはフォームでモデル ファイルを編集します。** [!INCLUDE[dsl](../includes/dsl-md.md)] 図または Windows フォームとして、モデルを編集するためのツールを提供します。 このため、生成されたアプリケーションのユーザーと、モデルについて効率的に話し合うことができます。 [!INCLUDE[dsl](../includes/dsl-md.md)]では、モデルの構造を反映した、厳密に型指定されたクラスのセットも作成できます。 詳細については、[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)を参照してください。  
   
- **UML モデルを使用して**します。 UML モデルからコードを生成できます。 これには、使い慣れた表記法を使用して、モデルを図として編集できるという利点があります。 また、図をデザインする必要もありません。 詳細については、次を参照してください。 [UML モデルからファイルを生成](../modeling/generate-files-from-a-uml-model.md)します。  
+ **UML モデルを使用して**します。 UML モデルからコードを生成できます。 これには、使い慣れた表記法を使用して、モデルを図として編集できるという利点があります。 また、図をデザインする必要もありません。 詳細については、[UML モデルからファイルを生成](../modeling/generate-files-from-a-uml-model.md)を参照してください。  
   
 ### <a name="relative-file-paths-in-design-time-templates"></a>デザイン時テンプレートの相対ファイル パス  
  [デザイン時テキスト テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)を使用して、テキスト テンプレートを基準とする場所でファイルを参照する場合は、`this.Host.ResolvePath()`します。 また、`hostspecific="true"` ディレクティブで `template` を設定する必要もあります。  
@@ -267,7 +267,7 @@ Content of MyFile.txt is:
   
 ```  
   
- ホストから提供される他のサービスを取得することもできます。 詳細については、次を参照してください。[にアクセスする Visual Studio またはテンプレートからのその他のホスト](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)します。  
+ ホストから提供される他のサービスを取得することもできます。 詳細については、[にアクセスする Visual Studio またはテンプレートからのその他のホスト](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)を参照してください。  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>別の AppDomain で実行されるデザイン時テキスト テンプレート  
  認識しておく必要がある、[デザイン時テキスト テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)はメインのアプリケーションから分離した AppDomain で実行されます。 ほとんどの場合、これは重要ではありませんが、一部の複雑な状況で制限が生じることがあります。 たとえば、別のサービスからテンプレート内またはテンプレート外のデータを渡す場合、そのサービスでシリアル化可能な API を提供する必要があります。  

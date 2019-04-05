@@ -21,7 +21,7 @@ ms.locfileid: "56721793"
 このチュートリアルを開始する VSPackage を作成する方法について説明、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]コア エディターでファイルがいつ、 *.myext*ファイル名拡張子が読み込まれます。
 
 ## <a name="prerequisites"></a>必須コンポーネント
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。
 
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio パッケージ プロジェクト テンプレートの場所
  Visual Studio パッケージのプロジェクト テンプレートは、 **[新しいプロジェクト]** ダイアログの次の 3 つの場所にあります。
@@ -394,7 +394,7 @@ ms.locfileid: "56721793"
 
  VSPackage が呼び出すことができます、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]エディター ファクトリを指定することによって、コア エディター。 このエディターのファクトリは、それに関連付けられているファイルが読み込まれるたびに使用されます。 ファイルがプロジェクトの一部である場合は、VSPackage によってオーバーライドされない限り、コア エディターが自動的に起動します。 ただし、プロジェクトの外側で、ファイルを読み込んだ場合、コア エディターする必要があります明示的に呼び出す、VSPackage によって。
 
- コア エディターの詳細については、次を参照してください。[コア エディター内で](../extensibility/inside-the-core-editor.md)します。
+ コア エディターの詳細については、[コア エディター内で](../extensibility/inside-the-core-editor.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [コア エディター](../extensibility/inside-the-core-editor.md)

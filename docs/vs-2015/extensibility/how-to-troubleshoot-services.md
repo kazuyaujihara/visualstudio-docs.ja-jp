@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 8df01dcc2c8e15144f6049148286012bda6ac3f5
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51798210"
@@ -45,7 +45,7 @@ if (log == null) return;
   
 ### <a name="to-troubleshoot-a-service"></a>サービスをトラブルシューティングするには  
   
-1.  システム レジストリにサービスが正しく登録されているかどうかを確認します。 詳細については、次を参照してください。[サービス登録](../misc/registering-services.md)します。  
+1.  システム レジストリにサービスが正しく登録されているかどうかを確認します。 詳細については、[サービス登録](../misc/registering-services.md)を参照してください。  
   
      次の .reg ファイル フラグメントは、SVsTextManager サービスを登録する方法を示しています。  
   

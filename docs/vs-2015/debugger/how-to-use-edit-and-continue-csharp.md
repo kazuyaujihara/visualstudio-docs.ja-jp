@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4106a8bcaec8890192fdc33b9db0d66c12d8b07d
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51789168"
@@ -44,7 +44,7 @@ C# のエディット コンティニュを使用すると、デバッグ中に�
   
 2.  **デバッグ** メニューのをクリックして**続行**、**手順**、または**次のステートメントの設定**か、デバッガー ウィンドウで関数を評価します。  
   
-     新しいコードがコンパイルされ、その新しいコードでデバッグが続行されます。 エディット コンティニュでサポートされない変更もあります。 詳細については、次を参照してください。[サポートされているコード変更 (c#)](../debugger/supported-code-changes-csharp.md)します。  
+     新しいコードがコンパイルされ、その新しいコードでデバッグが続行されます。 エディット コンティニュでサポートされない変更もあります。 詳細については、[サポートされているコード変更 (c#)](../debugger/supported-code-changes-csharp.md)を参照してください。  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>[エディット コンティニュ] を有効または無効にするには  
   

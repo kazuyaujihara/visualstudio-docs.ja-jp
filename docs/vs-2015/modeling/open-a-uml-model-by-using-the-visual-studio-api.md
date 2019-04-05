@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 62b8700e85ccab271dbfdc4f9bac504ee64197a6
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51779620"
@@ -28,9 +28,9 @@ API を使って、Visual Studio のユーザー インターフェイスでモ�
   
  モデルをユーザーに表示せずに、プログラム コードでモデルの読み込みのみを行う場合は、次の方法を使用できます。  
   
--   Visual Studio モデル バスでは、モデルおよびモデル内の要素にアクセスすることができ、あるモデルと別のモデル間のリンクを生成する標準的な方法が提供されます。 詳細については、次を参照してください。[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)します。  
+-   Visual Studio モデル バスでは、モデルおよびモデル内の要素にアクセスすることができ、あるモデルと別のモデル間のリンクを生成する標準的な方法が提供されます。 詳細については、[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)を参照してください。  
   
--   読み取り専用モードでモデルを開くことができます。 詳細については、次を参照してください。[プログラム コードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)します。  
+-   読み取り専用モードでモデルを開くことができます。 詳細については、[プログラム コードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)を参照してください。  
   
 ##  <a name="Showing"></a> Visual Studio でモデルおよびダイアグラムを開く  
  ユーザー インターフェイスでモデルを開くには、標準の Visual Studio API `EnvDTE.DTE` を使用します。 モデリング プロジェクト項目に対して実行できる便利なキャストが 2 つあります。  

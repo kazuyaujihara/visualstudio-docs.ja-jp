@@ -27,7 +27,7 @@ manager: ghogen
 robots: noindex,nofollow
 ms.openlocfilehash: eacf075a0ba8689ff0cb5ca822d5cc8ca2f7ad1e
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49233910"
@@ -71,19 +71,19 @@ Visual Studio では、事実上すべてのデータベース製品またはサ
   
  その他  
   
- 多くのデータベース ベンダーやサード パーティは、NuGet パッケージによって Visual Studio の統合をサポートします。 Nuget.org または Visual Studio で NuGet パッケージ マネージャーを通じて、オファリングを調べることができます (**ツール** > **NuGet パッケージ マネージャー** > **NuGet の管理ソリューションのパッケージの**)。 他のデータベース製品は、拡張機能として、Visual Studio と統合します。   移動して、Visual Studio ギャラリーでこれらの製品を参照する**ツール** > **拡張機能と更新プログラム**し選択**オンライン**左にあります。ダイアログ ボックスのウィンドウです。  詳細については、次を参照してください。[データベース システム、ツール、およびサンプルをインストールする](../data-tools/installing-database-systems-tools-and-samples.md)します。  
+ 多くのデータベース ベンダーやサード パーティは、NuGet パッケージによって Visual Studio の統合をサポートします。 Nuget.org または Visual Studio で NuGet パッケージ マネージャーを通じて、オファリングを調べることができます (**ツール** > **NuGet パッケージ マネージャー** > **NuGet の管理ソリューションのパッケージの**)。 他のデータベース製品は、拡張機能として、Visual Studio と統合します。   移動して、Visual Studio ギャラリーでこれらの製品を参照する**ツール** > **拡張機能と更新プログラム**し選択**オンライン**左にあります。ダイアログ ボックスのウィンドウです。  詳細については、[データベース システム、ツール、およびサンプルをインストールする](../data-tools/installing-database-systems-tools-and-samples.md)を参照してください。  
   
 > [!NOTE]
->  SQL Server 2005 の延長サポートは 2016 年 4 月 12 日に終了しました。   データ ツールの Visual Studio 2015 以降では引き続きこの日付より後の SQL Server 2005 で機能する保証はありません。 詳細については、次を参照してください。、 [for SQL Server 2005 サポート終了のお知らせ](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2005/)します。  
+>  SQL Server 2005 の延長サポートは 2016 年 4 月 12 日に終了しました。   データ ツールの Visual Studio 2015 以降では引き続きこの日付より後の SQL Server 2005 で機能する保証はありません。 詳細については、、 [for SQL Server 2005 サポート終了のお知らせ](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2005/)を参照してください。  
   
 ### <a name="net-languages"></a>.NET 言語  
  .NET Core で含む、すべての .NET データ アクセスは、ADO.NET、任意の種類のデータ ソース、リレーショナルと非リレーショナルの両方にアクセスするためのインターフェイスを定義する一連のクラスに基づきます。 Visual Studio がいくつかのツールと、データベースに接続するための ADO.NET を使用するデザイナーがデータを操作およびユーザーにデータを表示します。 このセクションのドキュメントでは、これらのツールを使用する方法について説明します。 コマンドの ADO.NET オブジェクトに対して直接プログラムすることもできます。 ADO.NET の Api を直接呼び出すことの詳細については、次を参照してください。 [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) 、MSDN ライブラリ。  
   
- データ アクセスのドキュメントが ASP.NET に関連する具体的には、次を参照してください。[データを扱う](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET サイト。 ASP.NET MVC で Entity Framework の使用に関するチュートリアルについては、次を参照してください。 [Entity Framework 6 Code First MVC 5 の使用の概要](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)します。  
+ データ アクセスのドキュメントが ASP.NET に関連する具体的には、次を参照してください。[データを扱う](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET サイト。 ASP.NET MVC で Entity Framework の使用に関するチュートリアルについては、[Entity Framework 6 Code First MVC 5 の使用の概要](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)を参照してください。  
   
  C# または Visual Basic でのユニバーサル Windows プラットフォーム (UWP) アプリでは、Microsoft Azure SDK for .NET を使用して、Azure Storage と他の Azure サービスにアクセスします。 Windows.Web.HttpClient クラスは、任意の RESTful サービスとの通信を使用できます。 詳細については、次を参照してください[Windows.Web.Http を使用して HTTP サーバーに接続する方法。](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx.)  
   
- ローカル コンピューター上のデータ ストレージ、アプリと同じプロセスで実行される、SQLite を使用することをお勧めします。 オブジェクト リレーショナル マッピング (ORM) 層が必要な場合は、Entity Framework を使用することができます。 詳細については、次を参照してください。[データ アクセス](https://msdn.microsoft.com/windows/uwp/data-access/index)、Windows デベロッパー センターでします。  
+ ローカル コンピューター上のデータ ストレージ、アプリと同じプロセスで実行される、SQLite を使用することをお勧めします。 オブジェクト リレーショナル マッピング (ORM) 層が必要な場合は、Entity Framework を使用することができます。 詳細については、[データ アクセス](https://msdn.microsoft.com/windows/uwp/data-access/index)、Windows デベロッパー センターでを参照してください。  
   
  Azure サービスに接続する場合は、最新バージョンをダウンロードすることを確認する[Azure SDK tools](https://azure.microsoft.com/en-us/downloads/)します。  
   
@@ -105,7 +105,7 @@ Visual Studio では、事実上すべてのデータベース製品またはサ
  これらのテクノロジのいずれかを使用する必要はありません。 一部のシナリオでパフォーマンスが重要で、特にできる単にオブジェクトを使用する DataReader をデータベースから読み取ってリストなどのコレクション オブジェクトに必要な値をコピーする\<T >。  
   
 ### <a name="native-c"></a>ネイティブ C++  
- SQL Server に接続する C++ アプリケーションを使用する必要があります、 [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)します。 使用して他のデータベースにアクセスできます[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) OLE DB ドライバーを直接またはします。 ODBC は、現在の標準的なデータベースのインターフェイスが、ほとんどのデータベース システムは、ODBC インターフェイス経由でアクセスできないカスタムの機能を提供します。  OLE DB は、レガシ COM データ アクセス テクノロジが引き続きサポートされますが、新しいアプリケーションをお勧めしません。  詳細については、次を参照してください。[データ アクセス](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)します。  
+ SQL Server に接続する C++ アプリケーションを使用する必要があります、 [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)します。 使用して他のデータベースにアクセスできます[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) OLE DB ドライバーを直接またはします。 ODBC は、現在の標準的なデータベースのインターフェイスが、ほとんどのデータベース システムは、ODBC インターフェイス経由でアクセスできないカスタムの機能を提供します。  OLE DB は、レガシ COM データ アクセス テクノロジが引き続きサポートされますが、新しいアプリケーションをお勧めしません。  詳細については、[データ アクセス](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)を参照してください。  
   
  REST サービスを使用する C++ プログラムで使用できる、 [C++ REST SDK](https://github.com/Microsoft/cpprestsdk)します。  
   

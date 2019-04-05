@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f490006d21f51f48cd8b2d97da262015ab170f39
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51808298"
@@ -37,7 +37,7 @@ ms.locfileid: "51808298"
   
  このエラーには、さまざまな原因が考えられます。 最も一般的な原因には、IIS のインストールまたは構成の問題、Web サイトの構成の問題、ファイル システムのアクセス許可の問題などがあります。 ブラウザーを使用してリソースへのアクセスを試すことができます。 IIS の構成方法によっては、サーバーでローカル ブラウザーを使用したり、IIS エラー ログを検査して詳細なエラー メッセージを確認したりする必要があります。  
   
- IIS のトラブルシューティングの詳細については、次を参照してください。 [IIS Management and Administration](http://go.microsoft.com/fwlink/?LinkId=255872)します。  
+ IIS のトラブルシューティングの詳細については、[IIS Management and Administration](http://go.microsoft.com/fwlink/?LinkId=255872)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [UrlScan セキュリティ ツール](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   

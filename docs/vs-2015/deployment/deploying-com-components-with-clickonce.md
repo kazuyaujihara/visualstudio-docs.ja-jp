@@ -26,7 +26,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49820292"
@@ -38,7 +38,7 @@ ms.locfileid: "49820292"
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .NET アプリケーションをデプロイするための簡単で安全なメカニズムを提供します。 ただし、アプリケーションでは、従来の COM コンポーネントを使用する場合は、それらを展開するための追加の手順を実行する必要があります。 このトピックでは、分離された COM コンポーネントをデプロイして (たとえば、Visual Basic 6.0 または Visual C) からのネイティブ コンポーネントを参照する方法について説明します。  
   
- 分離された COM コンポーネントの配置の詳細については、次を参照してください。"とアプリの展開を単純化[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]および Registration-free COM"で[ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)します。  
+ 分離された COM コンポーネントの配置の詳細については、"とアプリの展開を単純化[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]および Registration-free COM"で[ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)を参照してください。  
   
 ## <a name="registration-free-com"></a>Registration-free COM  
  登録を必要としない COM は、展開および分離 COM コンポーネントをアクティブ化するための新しいテクノロジです。 でも、すべてのコンポーネントのタイプ ライブラリと、マニフェストと呼ばれる XML ファイルに、システム レジストリに通常インストールされている登録情報を配置することで、アプリケーションと同じフォルダーに格納されています。  
@@ -50,7 +50,7 @@ ms.locfileid: "49820292"
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>ClickOnce を使用して Registration-free COM コンポーネントを展開します。  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 配置テクノロジが、分離された COM コンポーネントを展開するために最適ですが両方[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]登録を必要としない COM コンポーネントがある展開するには、マニフェストを必要とします。  
   
- 通常、コンポーネントの作成者は、マニフェストを提供する必要があります。 それ以外の場合は、ただし、Visual Studio は自動的に COM コンポーネントのマニフェストを生成できます。 マニフェストの生成の実行中に、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]発行プロセス。 詳細については、次を参照してください。 [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)します。 この機能では、Visual Basic 6.0 などの以前の開発環境で作成されたレガシ コンポーネントを活用することもできます。  
+ 通常、コンポーネントの作成者は、マニフェストを提供する必要があります。 それ以外の場合は、ただし、Visual Studio は自動的に COM コンポーネントのマニフェストを生成できます。 マニフェストの生成の実行中に、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]発行プロセス。 詳細については、[ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)を参照してください。 この機能では、Visual Basic 6.0 などの以前の開発環境で作成されたレガシ コンポーネントを活用することもできます。  
   
  2 つの方法を[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]COM コンポーネントを展開します。  
   
@@ -173,7 +173,7 @@ ms.locfileid: "49820292"
   
 - コンポーネントは、再頒布可能パッケージのデータ アクセスです。 データ アプリケーションでは、別のデータへのアクセスを再頒布可能パッケージを実行する前にインストールする一般的に必要です。 Microsoft ADO データ コントロール、Microsoft OLE DB、または Microsoft Data Access Components (MDAC) などのコンポーネントを分離しようとする必要があります。 代わりに、アプリケーションでは、MDAC または SQL Server Express を使用する場合として設定の前提条件参照してください[方法: ClickOnce アプリケーションと共に必須コンポーネントをインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)します。  
   
-  場合によっては、コンポーネントの開発者に登録を必要としない COM の再設計可能な場合があります。 それができない場合でもビルドし、ブートス トラップを使用して標準の登録スキームを通じてそれらに依存するアプリケーションを発行します。 詳細については、次を参照してください。[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)します。  
+  場合によっては、コンポーネントの開発者に登録を必要としない COM の再設計可能な場合があります。 それができない場合でもビルドし、ブートス トラップを使用して標準の登録スキームを通じてそれらに依存するアプリケーションを発行します。 詳細については、[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)を参照してください。  
   
   COM コンポーネントはアプリケーションごとに 1 回分けできるだけです。 たとえばから 2 つの異なる同じ COM コンポーネントを分離することはできません**クラス ライブラリ**プロジェクトは、同じアプリケーションの一部であります。 これによりビルドの警告が発生し、アプリケーションの実行時に読み込みが失敗します。 この問題を回避するには、1 つのクラス ライブラリ内の COM コンポーネントをカプセル化することをお勧めします。  
   

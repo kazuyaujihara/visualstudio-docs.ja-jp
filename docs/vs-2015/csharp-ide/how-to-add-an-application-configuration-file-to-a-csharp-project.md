@@ -20,7 +20,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 43245704a2393b298f0f1d948d8a8829a4ef9bc4
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49204790"
@@ -28,7 +28,7 @@ ms.locfileid: "49204790"
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>方法: C# プロジェクトにアプリケーション構成ファイルを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-アプリケーション構成ファイル (app.config ファイル) を C# プロジェクトに追加すると、共通言語ランタイムがアセンブリ ファイルを検索し読み込む方法をカスタマイズできます。 アプリケーション構成ファイルの詳細については、次を参照してください。[ランタイムがアセンブリを検索する方法](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)します。  
+アプリケーション構成ファイル (app.config ファイル) を C# プロジェクトに追加すると、共通言語ランタイムがアセンブリ ファイルを検索し読み込む方法をカスタマイズできます。 アプリケーション構成ファイルの詳細については、[ランタイムがアセンブリを検索する方法](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)を参照してください。  
   
 > [!NOTE]
 >  Windows ストアをサポートしていない<xref:System.Configuration>します。 その結果、ストア アプリには、app.config テンプレートが含まれていません。  

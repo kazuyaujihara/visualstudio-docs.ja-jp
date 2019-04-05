@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 9c47b709d38a9acf84810de7154b270e2b4557ea
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51794648"
@@ -126,7 +126,7 @@ else
   
  受け取るメソッドがマネージ<xref:System.IntPtr>この型のパラメーターを使用する必要があります、<xref:System.IntPtr>結果を処理する変換演算子を入力します。 最初の変換、<xref:System.IntPtr>に`int`関連する整数の定数に対してテストします。 値が一致しない場合は、必要な型のオブジェクトに変換して、続行します。  
   
- この例については、次を参照してください。<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>します。  
+ この例については、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>を参照してください。  
   
 ## <a name="ole-return-values-passed-as-out-parameters"></a>OLE を返す値として渡される [out] パラメーター  
  持つメソッドを探して、 `retval` 、COM インターフェイスでの戻り値が、`int`戻り値と [out] 配列パラメーターを追加、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]相互運用機能アセンブリのメソッド プロトタイプ。 オフのために、これらのメソッドが特別な処理を必要とする必要がある、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]メソッド プロトタイプの相互運用機能アセンブリが COM インターフェイスのメソッドよりも 1 つのパラメーターがあります。  

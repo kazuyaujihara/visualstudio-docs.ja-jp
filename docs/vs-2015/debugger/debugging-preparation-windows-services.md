@@ -26,7 +26,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c27748e15b45538f826d681a1780f87c515d7641
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51780205"
@@ -34,7 +34,7 @@ ms.locfileid: "51780205"
 # <a name="debugging-preparation-windows-services"></a>デバッグの準備 : Windows サービス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows サービスは、Microsoft Windows のバックグラウンドで実行されるプログラムです。 Windows サービスには、Telnet サービスや、コンピューターに表示される時計を更新する Windows タイム サービスなどがあります。 Windows サービスは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内から実行できないため、サービス コントロール マネージャーのコンテキストで実行する必要があります。 詳細については、次を参照してください。 [Windows サービスの作成](http://msdn.microsoft.com/library/0f5e2cbb-d95d-477c-b2b5-4b990e6b86ff)、 [Windows サービス アプリケーションのデバッグ](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)、および[Windows サービス アプリケーション](http://msdn.microsoft.com/library/ba72d648-9553-4849-b829-069ad5ea014b)します。  
+Windows サービスは、Microsoft Windows のバックグラウンドで実行されるプログラムです。 Windows サービスには、Telnet サービスや、コンピューターに表示される時計を更新する Windows タイム サービスなどがあります。 Windows サービスは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内から実行できないため、サービス コントロール マネージャーのコンテキストで実行する必要があります。 詳細については、[Windows サービスの作成](http://msdn.microsoft.com/library/0f5e2cbb-d95d-477c-b2b5-4b990e6b86ff)、 [Windows サービス アプリケーションのデバッグ](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)、および[Windows サービス アプリケーション](http://msdn.microsoft.com/library/ba72d648-9553-4849-b829-069ad5ea014b)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)   

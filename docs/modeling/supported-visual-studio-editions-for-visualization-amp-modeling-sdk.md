@@ -46,7 +46,7 @@ DSL を定義するには、以下のコンポーネントをインストール�
 -   Visual Studio Shell (分離モード) 再頒布可能パッケージ
 
 > [!NOTE]
-> DSL を Shell 製品上で実行可能にするには、設定する必要があります、**サポートされている VS エディション**フィールドに、拡張機能マニフェストします。 詳細については、次を参照してください。[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)します。
+> DSL を Shell 製品上で実行可能にするには、設定する必要があります、**サポートされている VS エディション**フィールドに、拡張機能マニフェストします。 詳細については、[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

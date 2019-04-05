@@ -122,7 +122,7 @@ protected override void ProcessOnMenuDeleteCommand()
 }
 ```
 
-要素またはリンクの作成、削除、または更新など、コードがストアに対して変更を加える場合、トランザクション内でそれを実行する必要があります。 詳細については、次を参照してください。[モデル要素を作成し、更新する方法](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)します。
+要素またはリンクの作成、削除、または更新など、コードがストアに対して変更を加える場合、トランザクション内でそれを実行する必要があります。 詳細については、[モデル要素を作成し、更新する方法](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)を参照してください。
 
 ### <a name="write-the-code-of-the-methods"></a>メソッドのコードを記述します。
 
@@ -140,7 +140,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 -   `shape.ModelElement as MyLanguageElement` - 図形により表されるモデル要素。
 
-要素間を移動する方法およびオブジェクトとリンクを作成する方法についての詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。
+要素間を移動する方法およびオブジェクトとリンクを作成する方法についての詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

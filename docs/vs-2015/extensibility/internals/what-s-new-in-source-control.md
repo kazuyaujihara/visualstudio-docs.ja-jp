@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 9a108acb2ae32b64292cd819c75de4726f067a00
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51752466"
@@ -35,7 +35,7 @@ ms.locfileid: "51752466"
   
  ソース管理 VSPackage の実装には、「全部かゼロか」の戦略が必要です。 ソース管理 VSPackage の作成者とインターフェイスでさまざまなソース コントロールのインターフェイスと (ダイアログ ボックス、メニューのおよびツールバー) 全体のソース管理機能をカバーする、新しい UI 要素を実装する作業量が大幅に投資する必要があります。すべてのパッケージと正常に統合するために必要な[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
   
- 次の手順では、ソース管理パッケージを実装するために必要なものの概要を提供します。 詳細については、次を参照してください。[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)します。  
+ 次の手順では、ソース管理パッケージを実装するために必要なものの概要を提供します。 詳細については、[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)を参照してください。  
   
 1.  プライベート ソース管理サービスを proffers VSPackage を作成します。  
   

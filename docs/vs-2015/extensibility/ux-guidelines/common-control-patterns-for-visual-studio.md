@@ -186,7 +186,7 @@ ms.locfileid: "51817530"
 ##### <a name="formatting"></a>書式設定  
  説明のテキストには、環境フォント、(テーマではない) 標準のコントロールのテキスト必要があります。 参照してください[Visual Studio のフォントと書式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)します。  
   
- 説明のテキストの記述について詳しくは、次を参照してください。 [UI テキストと用語](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)します。  
+ 説明のテキストの記述について詳しくは、[UI テキストと用語](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)を参照してください。  
   
  ![説明のテキストの書式設定](../../extensibility/ux-guidelines/media/070702-02-instructionaltextformatting.png "070702 02_InstructionalTextFormatting")  
   

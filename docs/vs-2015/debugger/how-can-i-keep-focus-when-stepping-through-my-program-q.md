@@ -29,7 +29,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 253d331003373138a66fbe1263e6cb71eb126bc0
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51792438"
@@ -41,7 +41,7 @@ ms.locfileid: "51792438"
  プログラムで、ウィンドウのアクティブ化が正しく動作しません。 デバッガーでプログラムをステップ実行すると、プログラムがフォーカスを保持できないため、問題を再現できなくなります。 どのようにすればフォーカスを保持できますか。  
   
 ## <a name="solution"></a>ソリューション  
- コンピューターがもう 1 台ある場合は、リモート デバッグを行います。 リモート コンピューター上でプログラムを操作し、ホスト上でデバッガーを実行します。 詳細については、次を参照してください。[方法: リモート コンピューターを選択して](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)します。  
+ コンピューターがもう 1 台ある場合は、リモート デバッグを行います。 リモート コンピューター上でプログラムを操作し、ホスト上でデバッガーを実行します。 詳細については、[方法: リモート コンピューターを選択して](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ネイティブ コードのデバッグに関する Faq](../debugger/debugging-native-code-faqs.md)   

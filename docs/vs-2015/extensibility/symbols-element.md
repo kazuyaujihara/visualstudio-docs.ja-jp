@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 6b9bccb3874d5b85a8a69288e2bf44adb14b5b3f
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51783247"
@@ -28,7 +28,7 @@ ms.locfileid: "51783247"
 
 Guid およびその他の VSCT 要素で使用される Id を定義します。 アンマネージ コードは、この情報通常は、ヘッダー ファイルで指定されている[Extern 要素](../extensibility/extern-element.md)します。 マネージ コードがこの情報を定義するシンボルの要素の子要素。  
   
- 既存の .cto ファイルから .vsct ファイルを作成する場合、シンボルがシンボル要素の子として生成されます。 詳細については、次を参照してください。[方法: を作成します。既存の Vsct ファイルです。Cto ファイル](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)します。  
+ 既存の .cto ファイルから .vsct ファイルを作成する場合、シンボルがシンボル要素の子として生成されます。 詳細については、[方法: を作成を参照してください。既存の Vsct ファイルです。Cto ファイル](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)します。  
   
  Symbols 要素と混同しないで、[定義要素](../extensibility/define-element.md)、プリプロセッサによって使用される名前と値のペアを定義します。  
   

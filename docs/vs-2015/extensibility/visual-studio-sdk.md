@@ -21,7 +21,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: e64506ca544dd3811864358f9c928f6893dc8448
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51758969"
@@ -51,7 +51,7 @@ Visual Studio SDK を使用して、Visual Studio の機能を拡張するかを
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
   
 ## <a name="whats-new-in-the-visual-studio-2015-sdk"></a>新機能については、Visual Studio 2015 SDK です。  
- Visual Studio SDK には、電球メニュー コマンド、ツール ウィンドウ、およびエディターの拡張機能の VSIX パッケージを使用して作成するための新しいプロジェクト項目など、一部の新機能があります。 詳細については、次を参照してください。 [、Visual Studio 2015 SDK の新](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)します。  
+ Visual Studio SDK には、電球メニュー コマンド、ツール ウィンドウ、およびエディターの拡張機能の VSIX パッケージを使用して作成するための新しいプロジェクト項目など、一部の新機能があります。 詳細については、[、Visual Studio 2015 SDK の新](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)を参照してください。  
   
 ## <a name="visual-studio-user-experience-guidelines"></a>Visual Studio ユーザー エクスペリエンス ガイドライン  
  拡張機能の UI を設計するための便利なヒントを取得[Visual Studio ユーザー エクスペリエンス ガイドライン](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)します。  

@@ -44,7 +44,7 @@ ms.locfileid: "51807609"
   
 #### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>以降のバージョンの Visual Studio 2008 の言語サービスに移行するには  
   
-1.  Visual Studio と Visual Studio SDK の新しいバージョンをインストールします。 SDK をインストールする方法の詳細については、次を参照してください。 [Visual Studio SDK をインストールする](../../extensibility/installing-the-visual-studio-sdk.md)します。  
+1.  Visual Studio と Visual Studio SDK の新しいバージョンをインストールします。 SDK をインストールする方法の詳細については、[Visual Studio SDK をインストールする](../../extensibility/installing-the-visual-studio-sdk.md)を参照してください。  
   
 2.  (Visual Studio に読み込んでなし、RegExLangServ.csproj ファイルを編集します。  
   

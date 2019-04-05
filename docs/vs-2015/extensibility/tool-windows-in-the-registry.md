@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: f24c51b3cf1a4930fa0cc496e12ffd31170389b0
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51781908"
@@ -27,7 +27,7 @@ ms.locfileid: "51781908"
 
 ツール ウィンドウを提供する Vspackage に登録する必要があります[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]同様のツール ウィンドウのプロバイダー。 Visual Studio パッケージ テンプレートを使用して作成されたツール ウィンドウは、既定でこれを実行します。 ツール ウィンドウのプロバイダーでは、既定のツール ウィンドウのサイズと場所、ツール ウィンドウのウィンドウとドッキング スタイルとして機能するウィンドウの GUID などの可視性属性を指定するシステムのレジストリ キーがあります。  
   
- 開発中は、管理されているツール ウィンドウのプロバイダーは、ソース コードに属性を追加し、生成されたアセンブリで RegPkg.exe ユーティリティを実行してツール ウィンドウを登録します。 詳細については、次を参照してください。[ツール ウィンドウの登録](../extensibility/registering-a-tool-window.md)します。  
+ 開発中は、管理されているツール ウィンドウのプロバイダーは、ソース コードに属性を追加し、生成されたアセンブリで RegPkg.exe ユーティリティを実行してツール ウィンドウを登録します。 詳細については、[ツール ウィンドウの登録](../extensibility/registering-a-tool-window.md)を参照してください。  
   
 ## <a name="registering-unmanaged-tool-window-providers"></a>管理されていないツール ウィンドウのプロバイダーを登録します。  
  管理されていないツール ウィンドウのプロバイダーに登録する必要があります[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]システム レジストリの ToolWindows セクションでします。 次の .reg ファイル フラグメントは、動的なツール ウィンドウを登録する方法を示しています。  
@@ -43,9 +43,9 @@ ms.locfileid: "51781908"
 "{f1536ef8-92ec-443c-9ed7-fdadf150da82}"=dword:00000000  
 ```  
   
- 上記の例では、最初のキー、バージョン番号は、バージョンの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]7.1 や 8.0、サブキー {f0e1e9a1-9860-484d-ad5d-367d79aabf55} は、ツール ウィンドウ ペイン (DynamicWindowPane) と既定値の {の GUID など、01069cdd-95ce-4620-ac21-ddff6c57f012} は、ツール ウィンドウを提供する VSPackage の GUID です。 Float 型および DontForceCreate サブキーの詳細については、次を参照してください。[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)します。  
+ 上記の例では、最初のキー、バージョン番号は、バージョンの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]7.1 や 8.0、サブキー {f0e1e9a1-9860-484d-ad5d-367d79aabf55} は、ツール ウィンドウ ペイン (DynamicWindowPane) と既定値の {の GUID など、01069cdd-95ce-4620-ac21-ddff6c57f012} は、ツール ウィンドウを提供する VSPackage の GUID です。 Float 型および DontForceCreate サブキーの詳細については、[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)を参照してください。  
   
- 2 番目の省略可能なキーである ToolWindows\Visibility には、表示するようにするツール ウィンドウを必要とするコマンドの Guid を指定します。 この場合、指定されたコマンドではありません。 詳細については、次を参照してください。[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)します。  
+ 2 番目の省略可能なキーである ToolWindows\Visibility には、表示するようにするツール ウィンドウを必要とするコマンドの Guid を指定します。 この場合、指定されたコマンドではありません。 詳細については、[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [VSPackage の基本事項](../misc/vspackage-essentials.md)

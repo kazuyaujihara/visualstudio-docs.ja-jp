@@ -13,7 +13,7 @@ ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: c9c4104d4d07cab7486038a8787ed0c7759abd60
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002969"
@@ -23,7 +23,7 @@ ms.locfileid: "51002969"
 使用してそのアプリケーションを Azure クラウド サービスを発行するには Visual Studio で web アプリケーションを開発した後、 **Azure アプリケーションの発行**ウィザード。
 
 > [!Note]
-> この記事ではなくクラウド サービス、web サイトに展開する方法です。 Web サイトへのデプロイについては、次を参照してください。 [Azure の Web サイトをデプロイする方法](https://social.msdn.microsoft.com/Search/windowsazure?query=How%20to%20Deploy%20an%20Azure%20Web%20Site&Refinement=138&ac=4#refinementChanges=117&pageNumber=1&showMore=false)します。
+> この記事ではなくクラウド サービス、web サイトに展開する方法です。 Web サイトへのデプロイについては、[Azure の Web サイトをデプロイする方法](https://social.msdn.microsoft.com/Search/windowsazure?query=How%20to%20Deploy%20an%20Azure%20Web%20Site&Refinement=138&ac=4#refinementChanges=117&pageNumber=1&showMore=false)を参照してください。
 
 ## <a name="accessing-the-publish-azure-application-wizard"></a>Azure アプリケーションの発行ウィザードへのアクセス
 
@@ -63,9 +63,9 @@ Visual Studio プロジェクトの種類に応じて 2 つの方法で Azure �
 
 **サービス構成**-いずれかを選択**クラウド**または**ローカル**します。
 
-**すべてのロールのリモート デスクトップを有効にする**-リモート サービスに接続する場合は、このオプションを選択します。 このオプションは主のトラブルシューティングに使用します。 詳細については、次を参照してください。 [Visual Studio を使用して Azure Cloud services ロールのリモート デスクトップ接続を有効にする](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)します。
+**すべてのロールのリモート デスクトップを有効にする**-リモート サービスに接続する場合は、このオプションを選択します。 このオプションは主のトラブルシューティングに使用します。 詳細については、[Visual Studio を使用して Azure Cloud services ロールのリモート デスクトップ接続を有効にする](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)を参照してください。
 
-**すべての web ロール、Web Deploy を有効に**-サービスの web 配置を有効にするには、このオプションを選択します。 選択することも必要があります、**すべてのロールのリモート デスクトップを有効にする**この機能を使用するオプション。 詳細については、次を参照してください。 [Visual Studio を使用してクラウド サービスの発行](vs-azure-tools-publishing-a-cloud-service.md)します。
+**すべての web ロール、Web Deploy を有効に**-サービスの web 配置を有効にするには、このオプションを選択します。 選択することも必要があります、**すべてのロールのリモート デスクトップを有効にする**この機能を使用するオプション。 詳細については、[Visual Studio を使用してクラウド サービスの発行](vs-azure-tools-publishing-a-cloud-service.md)を参照してください。
 
 ## <a name="settings-page---advanced-settings-tab"></a>設定ページ - [詳細設定] タブ
 
@@ -85,17 +85,17 @@ Azure ストレージ アカウントは、アプリケーション展開のパ�
 
 ![展開の設定](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
-**IntelliTrace を有効にする**-IntelliTrace を有効にするかを指定します。 Azure で実行時に、IntelliTrace を使用したロール インスタンスの広範なデバッグ情報を記録できます。 問題の原因を見つける必要がある場合は、Azure で実行されている場合に、Visual Studio からコードをステップに IntelliTrace ログを使用できます。 IntelliTrace の使用に関する詳細については、次を参照してください。[発行済みの Azure クラウド サービスに Visual Studio と IntelliTrace のデバッグ](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)します。
+**IntelliTrace を有効にする**-IntelliTrace を有効にするかを指定します。 Azure で実行時に、IntelliTrace を使用したロール インスタンスの広範なデバッグ情報を記録できます。 問題の原因を見つける必要がある場合は、Azure で実行されている場合に、Visual Studio からコードをステップに IntelliTrace ログを使用できます。 IntelliTrace の使用に関する詳細については、[発行済みの Azure クラウド サービスに Visual Studio と IntelliTrace のデバッグ](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)を参照してください。
 
-**プロファイリングを有効にする**-パフォーマンスのプロファイリングを有効にするかどうかを指定します。 Visual Studio プロファイラーでは、計算的側面からクラウド サービスの実行方法の詳細な分析を取得することができます。 Visual Studio プロファイラーの使用に関する詳細については、次を参照してください。 [Azure クラウド サービスのパフォーマンスをテスト](./vs-azure-tools-performance-profiling-cloud-services.md)します。
+**プロファイリングを有効にする**-パフォーマンスのプロファイリングを有効にするかどうかを指定します。 Visual Studio プロファイラーでは、計算的側面からクラウド サービスの実行方法の詳細な分析を取得することができます。 Visual Studio プロファイラーの使用に関する詳細については、[Azure クラウド サービスのパフォーマンスをテスト](./vs-azure-tools-performance-profiling-cloud-services.md)を参照してください。
 
-**すべてのロールのリモート デバッガーを有効にする**-リモート デバッグを有効にするかどうかを指定します。 Visual Studio を使用して cloud services のデバッグの詳細については、次を参照してください。 [Azure クラウド サービスまたは Visual Studio での仮想マシンのデバッグ](./vs-azure-tools-debug-cloud-services-virtual-machines.md)します。
+**すべてのロールのリモート デバッガーを有効にする**-リモート デバッグを有効にするかどうかを指定します。 Visual Studio を使用して cloud services のデバッグの詳細については、[Azure クラウド サービスまたは Visual Studio での仮想マシンのデバッグ](./vs-azure-tools-debug-cloud-services-virtual-machines.md)を参照してください。
 
 ## <a name="diagnostics-settings-page"></a>診断設定 ページ
 
 ![診断設定](./media/vs-azure-tools-publish-azure-application-wizard/diagnostic-settings.png)
 
-診断を使用すると、Azure クラウド サービス (または Azure 仮想マシン) のトラブルシューティングを行うことができます。 診断についての詳細については、次を参照してください。 [Azure Cloud Services および Virtual Machines 向けの診断の構成](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)します。 Application Insights の詳細については、次を参照してください。 [Application Insights とは何ですか?](/azure/application-insights/app-insights-overview.md)します。
+診断を使用すると、Azure クラウド サービス (または Azure 仮想マシン) のトラブルシューティングを行うことができます。 診断についての詳細については、[Azure Cloud Services および Virtual Machines 向けの診断の構成](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)を参照してください。 Application Insights の詳細については、[Application Insights とは何ですか?](/azure/application-insights/app-insights-overview.md)を参照してください。
 
 ## <a name="summary-page"></a>[概要] ページ
 

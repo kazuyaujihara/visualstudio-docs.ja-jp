@@ -23,7 +23,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
 ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/29/2018
 ms.locfileid: "50220535"
@@ -34,7 +34,7 @@ ms.locfileid: "50220535"
   
 n 層ソリューションに分離されたデータセットへの検証の追加は、単一ファイルのデータセット (1 つのプロジェクト内のデータセット) に検証を追加するのと基本的には同じです。 データで検証を実行する位置として推奨されるのは、データ テーブルの <xref:System.Data.DataTable.ColumnChanging> イベントや <xref:System.Data.DataTable.RowChanging> イベントの発生時です。  
   
- [の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md)する列のユーザー コードを追加することができます、部分クラスを作成する機能を提供します-行し、データセット内のデータ テーブルのイベントを変更します。 N 層ソリューション内のデータセットにコードを追加する方法の詳細については、次を参照してください。 [n 層アプリケーションでのデータセットにコードを追加](../data-tools/add-code-to-datasets-in-n-tier-applications.md)、および[n 層アプリケーションの TableAdapters にコードを追加](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)します。 部分クラスの詳細については、次を参照してください。[方法: クラスを部分クラス (クラス デザイナー) に分割](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)または[部分クラスとメソッド](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)します。  
+ [の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md)する列のユーザー コードを追加することができます、部分クラスを作成する機能を提供します-行し、データセット内のデータ テーブルのイベントを変更します。 N 層ソリューション内のデータセットにコードを追加する方法の詳細については、[n 層アプリケーションでのデータセットにコードを追加](../data-tools/add-code-to-datasets-in-n-tier-applications.md)、および[n 層アプリケーションの TableAdapters にコードを追加](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)を参照してください。 部分クラスの詳細については、[方法: クラスを部分クラス (クラス デザイナー) に分割](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)または[部分クラスとメソッド](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)を参照してください。  
   
 > [!NOTE]
 >  データセットを Tableadapter から分離する場合 (設定して、 **DataSet プロジェクト**プロパティ)、プロジェクト内の既存のデータセット部分クラスが自動的に移動しません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。  
@@ -62,7 +62,7 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>個々の列値の変更時に検証を追加するには  
   
-1.  データセットを開き、[の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md)をダブルクリックして、 **.xsd**ファイル**ソリューション エクスプ ローラー**します。 詳細については、次を参照してください。[方法: データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
+1.  データセットを開き、[の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md)をダブルクリックして、 **.xsd**ファイル**ソリューション エクスプ ローラー**します。 詳細については、[方法: データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)を参照してください。  
   
 2.  検証する列をダブルクリックします。 この操作によって <xref:System.Data.DataTable.ColumnChanging> イベント ハンドラーが作成されます。  
   
@@ -121,7 +121,7 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>行全体の変更時に検証を追加するには  
   
-1.  データセットを開き、[の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md)をダブルクリックして、 **.xsd**ファイル**ソリューション エクスプ ローラー**します。 詳細については、次を参照してください。[方法: データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
+1.  データセットを開き、[の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md)をダブルクリックして、 **.xsd**ファイル**ソリューション エクスプ ローラー**します。 詳細については、[方法: データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)を参照してください。  
   
 2.  デザイナーでデータ テーブルのタイトル バーをダブルクリックします。  
   

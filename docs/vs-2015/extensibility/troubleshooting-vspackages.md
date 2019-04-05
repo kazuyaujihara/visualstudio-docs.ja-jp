@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51764007"
@@ -40,7 +40,7 @@ ms.locfileid: "51764007"
   
 1.  VSPackage が、通常は実験用のレジストリ ルートを実行する登録されているレジストリ ルートを使用していることを確認します。  
   
-     詳細については、次を参照してください。 [、実験用インスタンス](../extensibility/the-experimental-instance.md)します。  
+     詳細については、[、実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。  
   
 2.  VSPackage の実験用のレジストリ ルートで実行するターゲットが場合の実験的なバージョンを実行していること確認[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "51764007"
   
 3.  VSPackage のレジストリ エントリを確認します。  
   
-     詳細については、次を参照してください。 [Vspackage の登録](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)と[管理 Vspackage](../extensibility/managing-vspackages.md)します。  
+     詳細については、[Vspackage の登録](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)と[管理 Vspackage](../extensibility/managing-vspackages.md)を参照してください。  
   
 4.  開く、**出力**ウィンドウのインスタンスの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]が VSPackage の読み込みに失敗します。 VSPackage の読み込みが失敗した理由に関する情報は、そのウィンドウに表示可能性があります。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "51764007"
   
 5.  アクティビティ ログを調べます。  
   
-     詳細については、次を参照してください。[方法: アクティビティ ログを使用して、](../extensibility/how-to-use-the-activity-log.md)します。  
+     詳細については、[方法: アクティビティ ログを使用して、](../extensibility/how-to-use-the-activity-log.md)を参照してください。  
   
 6.  IDE によってスローされた例外の詳細についてをクリックして**例外**で、**デバッグ**メニュー、例外を有効にします。 **例外** ダイアログ ボックスに関する詳細情報を表示する例外の種類を選択します。  
   
@@ -96,7 +96,7 @@ ms.locfileid: "51764007"
   
 2.  アクティビティ ログを使用します。  
   
-     重要な点でアクティビティ ログに情報を記述することで、VSPackage の動作をトレースします。 この手法は、小売環境で VSPackage を実行するときに特に便利です。 詳細については、次を参照してください。[方法: アクティビティ ログを使用して、](../extensibility/how-to-use-the-activity-log.md)します。  
+     重要な点でアクティビティ ログに情報を記述することで、VSPackage の動作をトレースします。 この手法は、小売環境で VSPackage を実行するときに特に便利です。 詳細については、[方法: アクティビティ ログを使用して、](../extensibility/how-to-use-the-activity-log.md)を参照してください。  
   
 3.  パブリック シンボルを使用します。  
   

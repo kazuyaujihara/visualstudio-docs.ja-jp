@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 485c295e7258f09aaf4114d5945f8136057447e6
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51782805"
@@ -40,7 +40,7 @@ ms.locfileid: "51782805"
   
 -   [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)  
   
-     プログラム ノードの作成と破棄のことを通知にこのポートのコンテキスト内で実行されるプログラム メカニズムを提供します。 詳細については、次を参照してください。[プログラム ノード](../../extensibility/debugger/program-nodes.md)します。  
+     プログラム ノードの作成と破棄のことを通知にこのポートのコンテキスト内で実行されるプログラム メカニズムを提供します。 詳細については、[プログラム ノード](../../extensibility/debugger/program-nodes.md)を参照してください。  
   
 -   `IConnectionPointContainer`  
   

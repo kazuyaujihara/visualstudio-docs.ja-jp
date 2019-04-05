@@ -28,7 +28,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2c7f1fa96bba40e5e56ca7f054b683b3243de65b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51724898"
@@ -59,11 +59,11 @@ ms.locfileid: "51724898"
   
   <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> を使用すると、Windows フォーム、ダイアログ、およびコントロールをビジュアライザーによって表示できます。  
   
-  ジェネリック型のサポートは制限されています。 ジェネリック型がオープン型の場合にのみ、そのジェネリック型のビジュアライザーを記述できます。 この制限は、`DebuggerTypeProxy` 属性を使用する場合の制限と同じです。 詳細については、次を参照してください。 [DebuggerTypeProxy 属性を使用して](../debugger/using-debuggertypeproxy-attribute.md)します。  
+  ジェネリック型のサポートは制限されています。 ジェネリック型がオープン型の場合にのみ、そのジェネリック型のビジュアライザーを記述できます。 この制限は、`DebuggerTypeProxy` 属性を使用する場合の制限と同じです。 詳細については、[DebuggerTypeProxy 属性を使用して](../debugger/using-debuggertypeproxy-attribute.md)を参照してください。  
   
   カスタムのビジュアライザーでは、セキュリティについての配慮が必要な場合があります。 参照してください[ビジュアライザーのセキュリティに関する考慮事項](../debugger/visualizer-security-considerations.md)します。  
   
-  以下の手順は、ビジュアライザーの作成に必要な作業の概要を示したものです。 詳細については、次を参照してください。[チュートリアル: c# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)します。  
+  以下の手順は、ビジュアライザーの作成に必要な作業の概要を示したものです。 詳細については、[チュートリアル: c# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)を参照してください。  
   
 ### <a name="to-create-the-debugger-side"></a>デバッガー側を作成するには  
   

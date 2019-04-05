@@ -75,7 +75,7 @@ ms.locfileid: "52281798"
      **WindowsSearchForm**プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。  
   
 ## <a name="create-the-data-source"></a>データ ソースを作成します。  
- この手順を使用してデータベースからのデータ ソースの作成、**データ ソースの構成**ウィザード。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースのセットアップについては、次を参照してください。[サンプル データベースの SQL Server のインストール](../data-tools/install-sql-server-sample-databases.md)します。  
+ この手順を使用してデータベースからのデータ ソースの作成、**データ ソースの構成**ウィザード。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースのセットアップについては、[サンプル データベースの SQL Server のインストール](../data-tools/install-sql-server-sample-databases.md)を参照してください。  
   
 #### <a name="to-create-the-data-source"></a>データ ソースを作成するには  
   

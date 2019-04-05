@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 41d5768c8cfddc3474616d7a2eee16b84cd24d56
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51754700"
@@ -32,7 +32,7 @@ ms.locfileid: "51754700"
   
  MEF は、.NET Framework version 4 の System.ComponentModel.Composition.dll アセンブリに含まれます。  
   
- MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)します。  
+ MEF の詳細については、[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)を参照してください。  
   
 ### <a name="component-parts-and-composition-containers"></a>コンポーネントの部分と合成コンテナー  
  コンポーネントの一部は、クラス、または、次のいずれか (または両方) を実行できるクラスのメンバーには。  

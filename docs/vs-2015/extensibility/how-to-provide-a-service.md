@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 3e0d0425e0e931d28157439d3d8a4174f1d4961a
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51785912"
@@ -29,7 +29,7 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
   
  <xref:Microsoft.VisualStudio.Shell.Package>両方を実装するクラス<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>と<xref:System.ComponentModel.Design.IServiceContainer>します。 <xref:System.ComponentModel.Design.IServiceContainer> オンデマンドでサービスを提供するコールバック メソッドが含まれています。  
   
- サービスの詳細については、次を参照してください。 [Service Essentials](../extensibility/internals/service-essentials.md)します。  
+ サービスの詳細については、[Service Essentials](../extensibility/internals/service-essentials.md)を参照してください。  
   
 > [!NOTE]
 >  VSPackage は、アンロードしようとしていますが、Visual Studio は、VSPackage が提供するサービスのすべての要求が配信されたまでを待機します。 これらのサービスに対する新しい要求は許可されません。 明示的に呼び出す必要がありますいない、<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>をアンロードするときに、サービスを取り消すメソッド。  

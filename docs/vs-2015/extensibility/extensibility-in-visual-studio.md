@@ -13,7 +13,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 9f0c5af270ec6ec3236c679dccb72bf1f0bf562b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51756703"
@@ -24,7 +24,7 @@ ms.locfileid: "51756703"
 Visual Studio では、多くの機能拡張オプションを提供しています。 独自の Sdk を作成、使用して、Windows、Windows Phone、および Azure Sdk (これは、Visual Studio の一部としてインストールされます)、および Visual Studio 自体を拡張できます。  
   
 ## <a name="extend-visual-studio"></a>Visual Studio を拡張する  
- Visual Studio SDK を使用すると、Visual Studio のほぼすべての部分を拡張することができます。 コマンド、メニュー、windows、エディター、およびプロジェクト。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+ Visual Studio SDK を使用すると、Visual Studio のほぼすべての部分を拡張することができます。 コマンド、メニュー、windows、エディター、およびプロジェクト。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。  
   
 ## <a name="create-your-own-sdks"></a>独自の Sdk を作成します。  
  作成、パッケージ化、および、独自のプラットフォームと拡張機能 Sdk をデプロイする方法について:[ソフトウェア開発キットを作成する](../extensibility/creating-a-software-development-kit.md)します。  

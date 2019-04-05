@@ -13,18 +13,18 @@ ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: e74cc5b9bbbfea92d2dea2c00ee5b0f98dc02f21
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002899"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Azure クラウド サービスの固定仮想 IP アドレスを保持する方法
-Azure でホストされているクラウド サービスを更新するときに、サービスの仮想 IP アドレス (VIP) が変更されないようにする必要があります。 ドメイン管理サービスの多くは、ドメイン名を登録するためのドメイン ネーム システム (DNS) を使用します。 DNS は、VIP が同じ場合にのみ機能します。 使用することができます、**発行ウィザード**クラウド サービスの VIP が変更されないときにようにする Azure Tools で更新します。 クラウド サービスの DNS ドメインの管理を使用する方法の詳細については、次を参照してください。 [Azure クラウド サービスのカスタム ドメイン名を構成する](/azure/cloud-services/cloud-services-custom-domain-name-portal)します。
+Azure でホストされているクラウド サービスを更新するときに、サービスの仮想 IP アドレス (VIP) が変更されないようにする必要があります。 ドメイン管理サービスの多くは、ドメイン名を登録するためのドメイン ネーム システム (DNS) を使用します。 DNS は、VIP が同じ場合にのみ機能します。 使用することができます、**発行ウィザード**クラウド サービスの VIP が変更されないときにようにする Azure Tools で更新します。 クラウド サービスの DNS ドメインの管理を使用する方法の詳細については、[Azure クラウド サービスのカスタム ドメイン名を構成する](/azure/cloud-services/cloud-services-custom-domain-name-portal)を参照してください。
 
 ## <a name="publish-a-cloud-service-without-changing-its-vip"></a>VIP を変更せずにクラウド サービスを発行します。
 ときに、まず、Azure にデプロイする運用環境など、特定の環境では、クラウド サービスの VIP が割り当てられます。 VIP は、デプロイを明示的に削除するか、展開は、デプロイの更新プロセスによって暗黙的に削除している場合にのみ変更します。 VIP を保持する、デプロイを削除する必要がありますしないと、Visual Studio が、デプロイを自動的に削除されないことを確認する必要があります。 
 
-展開設定を指定することができます、**発行ウィザード**、いくつかの展開オプションをサポートしています。 デプロイとして新規と、増分または同時更新プログラムの展開を指定することができます。 両方の種類の更新プログラムの展開では、VIP を保持します。 これらのさまざまな種類の展開の定義は、次を参照してください。 [Azure アプリケーション発行ウィザード](vs-azure-tools-publish-azure-application-wizard.md)します。 さらに、エラーが発生した場合、クラウド サービスの以前のデプロイが削除されたかどうかを制御できます。 そのオプションを正しく設定しない場合、VIP が予期せず変更可能性があります。
+展開設定を指定することができます、**発行ウィザード**、いくつかの展開オプションをサポートしています。 デプロイとして新規と、増分または同時更新プログラムの展開を指定することができます。 両方の種類の更新プログラムの展開では、VIP を保持します。 これらのさまざまな種類の展開の定義は、[Azure アプリケーション発行ウィザード](vs-azure-tools-publish-azure-application-wizard.md)を参照してください。 さらに、エラーが発生した場合、クラウド サービスの以前のデプロイが削除されたかどうかを制御できます。 そのオプションを正しく設定しない場合、VIP が予期せず変更可能性があります。
 
 ## <a name="update-a-cloud-service-without-changing-its-vip"></a>VIP を変更することがなくクラウド サービスを更新します。
 1. 作成または Visual Studio で Azure クラウド サービス プロジェクトを開きます。 

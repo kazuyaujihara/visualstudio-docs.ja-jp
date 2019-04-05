@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 284cae38309938d51f6ad5c58a89fc0297d8a10a
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51735238"
@@ -49,7 +49,7 @@ IDebugQueryEngine2 : IUnknown
 |[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|カスタム デバッグ エンジン (DE) のインターフェイスを取得します。|  
   
 ## <a name="remarks"></a>Remarks  
- このインターフェイスは、通常を実装するオブジェクトの実装、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイス関数をステップ実行因果関係の順序付けられているつまり、関数から、デバッガーがステップ実行をサポートするために、。次の関数を実行できない可能性があります、スタックで、前の関数が別のスレッド内の関数全体。 「因果関係」の定義では、次を参照してください。、 [Visual Studio デバッガーの用語集](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)します。  
+ このインターフェイスは、通常を実装するオブジェクトの実装、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイス関数をステップ実行因果関係の順序付けられているつまり、関数から、デバッガーがステップ実行をサポートするために、。次の関数を実行できない可能性があります、スタックで、前の関数が別のスレッド内の関数全体。 「因果関係」の定義では、、 [Visual Studio デバッガーの用語集](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)を参照してください。  
   
 ## <a name="requirements"></a>必要条件  
  ヘッダー: msdbg.h  

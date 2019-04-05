@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b67900f02a81a6a28279268c3fe6fa067bcdaedc
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51787641"
@@ -48,7 +48,7 @@ ms.locfileid: "51787641"
   
   このエラーを解決するには、次の手順を行う必要があります。  
   
-- アクセス許可の設定を確認します。 詳細については、次を参照してください。[方法: デバッグの SQL Server のアクセス許可設定](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)します。  
+- アクセス許可の設定を確認します。 詳細については、[方法: デバッグの SQL Server のアクセス許可設定](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)を参照してください。  
   
 - SQL デバッグが正しく設定されていることを確認します。  
   

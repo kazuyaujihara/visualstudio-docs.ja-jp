@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49848983"
@@ -24,7 +24,7 @@ ms.locfileid: "49848983"
 
 ドラッグ アンド ドロップ イベントのハンドラーを DSL に追加し、ユーザーが他の図または [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の他の部分から項目を図の上にドラッグ可能にすることができます。 ダブルクリックなどのイベントのハンドラーを追加することもできます。 ドラッグ アンド ドロップやダブルクリック ハンドラーと呼ばれる、*ジェスチャ ハンドラー*します。  
   
- このトピックでは他の図で発生するドラッグ アンド ドロップ ジェスチャを説明します。 単一の図内の移動イベントとコピー イベントについては、`ElementOperations` のサブクラスを定義するという代替策を検討してください。 詳細については、次を参照してください。[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。 DSL 定義をカスタマイズすることもできます。  
+ このトピックでは他の図で発生するドラッグ アンド ドロップ ジェスチャを説明します。 単一の図内の移動イベントとコピー イベントについては、`ElementOperations` のサブクラスを定義するという代替策を検討してください。 詳細については、[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)を参照してください。 DSL 定義をカスタマイズすることもできます。  
   
 ## <a name="in-this-topic"></a>このトピックの内容  
   
@@ -87,9 +87,9 @@ using System.Linq;
   
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – このメソッドは、ユーザーが図形または図をダブルクリックすると呼び出されます。  
   
-   詳細については、次を参照してください。[方法: シェイプまたはデコレーターに対するクリック](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)します。  
+   詳細については、[方法: シェイプまたはデコレーターに対するクリック](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)を参照してください。  
   
-  `IsAcceptableDropItem(e)` を定義してドラッグした項目が受け入れられるかどうかを決定し、ProcessDragDropItem(e) を定義して項目がドロップされたときにモデルを更新します。 これらのメソッドは、最初にイベント引数から項目を抽出する必要があります。 その方法については、次を参照してください。[ドラッグした項目への参照を取得する方法](#extracting)します。  
+  `IsAcceptableDropItem(e)` を定義してドラッグした項目が受け入れられるかどうかを決定し、ProcessDragDropItem(e) を定義して項目がドロップされたときにモデルを更新します。 これらのメソッドは、最初にイベント引数から項目を抽出する必要があります。 その方法については、[ドラッグした項目への参照を取得する方法](#extracting)を参照してください。  
   
 ##  <a name="MEF"></a> MEF の使用によるジェスチャ ハンドラーの定義  
  MEF (Managed Extensibility Framework) を使用して、最小構成でインストール可能なコンポーネントを定義できます。 詳しくは、「[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)」を参照してください。  
@@ -132,7 +132,7 @@ using System.Linq;
   
      ドラッグしたオブジェクトの種類が複数ある場合などは、複数のジェスチャ ハンドラー コンポーネントを作成できます。  
   
-3.  ターゲットの図形、コネクタ、または図クラスに対して部分クラス定義を追加し、`IsAcceptableDropItem()` メソッドおよび `ProcessDragDropItem()` メソッドを定義します。 これらのメソッドでは、最初にイベント引数からドラッグした項目を抽出する必要があります。 詳細については、次を参照してください。[ドラッグした項目への参照を取得する方法](#extracting)します。  
+3.  ターゲットの図形、コネクタ、または図クラスに対して部分クラス定義を追加し、`IsAcceptableDropItem()` メソッドおよび `ProcessDragDropItem()` メソッドを定義します。 これらのメソッドでは、最初にイベント引数からドラッグした項目を抽出する必要があります。 詳細については、[ドラッグした項目への参照を取得する方法](#extracting)を参照してください。  
   
 ##  <a name="extracting"></a> ドラッグした項目をデコードする方法  
  ユーザーが項目を図にドラッグしたり、図のある部分から別の部分にドラッグしたりするとき、ドラッグしている項目に関する情報は `DiagramDragEventArgs` で使用可能です。 ドラッグ操作は画面上の任意のオブジェクトで始まる可能性があるので、データはさまざまな形式で使用できます。 作成するコードは処理可能な形式を認識する必要があります。  
@@ -147,7 +147,7 @@ using System.Linq;
   
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
-       ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、次を参照してください。[ドラッグ アンド ドロップでモデル バス参照を送信する方法](#mbr)します。  
+       ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、[ドラッグ アンド ドロップでモデル バス参照を送信する方法](#mbr)を参照してください。  
   
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` – ユーザーが DSL または UML モデルから項目をドラッグする場合は、このプロパティを使用します。 1 つの要素グループ プロトタイプには 1 つ以上のオブジェクト、リンク、およびそれらのプロパティ値が含まれます。 これは貼り付け操作やツールボックスから要素を追加する際にも使用されます。 プロトタイプ内のオブジェクトとそれらの種類は GUID により識別されます。 たとえば、次のコードを使用して、ユーザーはクラス要素を UML 図または UML モデル エクスプローラーからドラッグできます。  
   
@@ -173,7 +173,7 @@ using System.Linq;
   
 1.  以下の操作を実行して、ソース DSL が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] モデル バスによりアクセス可能にします。  
   
-    1.  Visual Studio モデル バス拡張機能をまだインストールしていない場合はダウンロードしてインストールします。 詳細については、次を参照してください。 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)します。  
+    1.  Visual Studio モデル バス拡張機能をまだインストールしていない場合はダウンロードしてインストールします。 詳細については、[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)を参照してください。  
   
     2.  DSL デザイナーでソース DSL の DSL 定義ファイルを開きます。 デザイン サーフェイスを右クリックし、をクリックし、 **Modelbus の有効化**します。 ダイアログ ボックスで、オプションの片方または両方を選択します。  **[OK]** をクリックします。 新しいプロジェクト "ModelBus" が DSL ソリューションに追加されます。  
   

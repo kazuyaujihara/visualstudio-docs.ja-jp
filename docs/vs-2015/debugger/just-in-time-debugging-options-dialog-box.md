@@ -31,7 +31,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 06fdd9d12003053ea6d992aa1d7d0fe9ed7144d9
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51788135"
@@ -39,7 +39,7 @@ ms.locfileid: "51788135"
 # <a name="just-in-time-debugging-options-dialog-box"></a>[Just-In-Time] ([オプション] ダイアログ ボックス - [デバッグ])
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-アクセスする、**ジャスト イン タイム** ページに移動して、**ツール**メニューをクリックします**オプション**します。 **オプション** ダイアログ ボックスで、展開、**デバッグ**ノード**ジャスト イン タイム**します。 このページでは、マネージド コード、ネイティブ コード、およびスクリプトでの Just-In-Time デバッグを有効にできます。 詳細については、次を参照してください。 [Just-In-Time デバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)します。  
+アクセスする、**ジャスト イン タイム** ページに移動して、**ツール**メニューをクリックします**オプション**します。 **オプション** ダイアログ ボックスで、展開、**デバッグ**ノード**ジャスト イン タイム**します。 このページでは、マネージド コード、ネイティブ コード、およびスクリプトでの Just-In-Time デバッグを有効にできます。 詳細については、[Just-In-Time デバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)を参照してください。  
   
  Just-In-Time デバッグは次のプログラムの種類で有効です。  
   

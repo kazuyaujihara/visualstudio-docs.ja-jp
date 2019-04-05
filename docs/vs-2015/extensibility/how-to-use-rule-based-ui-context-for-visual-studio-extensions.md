@@ -11,7 +11,7 @@ caps.latest.revision: 8
 ms.author: gregvanl
 ms.openlocfilehash: 1c7f1bf5aa80316e0b663f247ce905060f6029fa
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51784326"
@@ -19,7 +19,7 @@ ms.locfileid: "51784326"
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>方法: Visual Studio 拡張機能のルール ベースの UI コンテキストを使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio と特定の Vspackage の読み込みを許可するよく知られている<xref:Microsoft.VisualStudio.Shell.UIContext>s がアクティブ化されます。 しかし、これらの UI コンテキストが非常に細かく、拡張機能の作成者を選択しないまま、ポイントの前にアクティブにする使用可能な UI コンテキストを選択する本当に望んで、VSPackage を読み込みます。 よく知られている UI コンテキストの一覧は、次を参照してください。<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>します。  
+Visual Studio と特定の Vspackage の読み込みを許可するよく知られている<xref:Microsoft.VisualStudio.Shell.UIContext>s がアクティブ化されます。 しかし、これらの UI コンテキストが非常に細かく、拡張機能の作成者を選択しないまま、ポイントの前にアクティブにする使用可能な UI コンテキストを選択する本当に望んで、VSPackage を読み込みます。 よく知られている UI コンテキストの一覧は、<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>を参照してください。  
   
  パッケージを読み込むと、パフォーマンスに影響する可能性があり、読み込むことが必要なよりも早くは、そのベスト プラクティスではありません。 Visual Studio 2015 には、規則に基づいた UI コンテキスト、する UI コンテキストがアクティブになるし、関連付けられている Vspackage が読み込まれる正確な条件を定義する拡張機能の作成者をできるようにするメカニズムの概念が導入されました。  
   

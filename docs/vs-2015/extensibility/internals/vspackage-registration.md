@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 30da9208df8c5b9b7c3368ef10fc85e55a994baa
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51782025"
@@ -31,7 +31,7 @@ Vspackage に通知する必要があります[!INCLUDE[vsprvs](../../includes/v
 > [!NOTE]
 >  自己登録を使用する VSPackage 開発時に許容されるです。 ただし、[!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)]パートナーは、セットアップの一環として自己登録を使用して製品を出荷できません。  
   
- Windows インストーラー パッケージのレジストリ エントリは、レジストリの表に一般的に行われます。 レジストリの表にファイル拡張子を登録することもできます。 ただし、Windows インストーラーは、プログラム id (ProgId)、クラス、拡張機能、および動詞テーブルでの組み込みのサポートを提供します。 詳細については、次を参照してください。[データベース テーブル](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx)します。  
+ Windows インストーラー パッケージのレジストリ エントリは、レジストリの表に一般的に行われます。 レジストリの表にファイル拡張子を登録することもできます。 ただし、Windows インストーラーは、プログラム id (ProgId)、クラス、拡張機能、および動詞テーブルでの組み込みのサポートを提供します。 詳細については、[データベース テーブル](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx)を参照してください。  
   
  レジストリ エントリがサイド バイ サイドで選択した戦略に適切なコンポーネントに関連付けられていることを確認します。 たとえば、共有ファイルのレジストリ エントリはそのファイルの Windows インストーラー コンポーネントに関連付けられてになります。 同様に、バージョン固有のファイルのレジストリ エントリは、そのファイルのコンポーネントに関連付けられてする必要があります。 それ以外の場合、インストールまたはの 1 つのバージョンについては、VSPackage のアンインストール[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]他のバージョンで、VSPackage を中断する可能性があります。 詳細については、次を参照してください[をサポートしている複数のバージョンの Visual Studio。](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   

@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: ca9ae7d9e4f0ffc031d2dc8db3e940c9b844c57e
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51778554"
@@ -55,7 +55,7 @@ ms.locfileid: "51778554"
   
  通常、このフォルダーは、テンプレート HTML または .cpp ファイルなど、プロジェクトのテンプレート ファイルとウィザードを起動する .vsz ファイルに格納されます。 アイテムの表示方法を制御するには、ディレクトリ名とアイコンのローカライズ .vsdir ファイルも含めることができます。 ローカライズされた文字列は、この新しい項目の追加 ダイアログのツリー ノードを表す ダイアログ ボックスに表示されるキャプションです。  
   
- ただし、1 つの .vsdir ファイルにすべてのものがある必要はありません。 ディレクトリ内のすべての項目の 1 つの .vsdir ファイルがあることができます。 詳細については、次を参照してください。[ウィザード (します。Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)と[テンプレート ディレクトリの説明 (します。Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)します。  
+ ただし、1 つの .vsdir ファイルにすべてのものがある必要はありません。 ディレクトリ内のすべての項目の 1 つの .vsdir ファイルがあることができます。 詳細については、[ウィザード (を参照してください。Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)と[テンプレート ディレクトリの説明 (します。Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)します。  
   
 > [!NOTE]
 >  テンプレートのディレクトリに .vsdir ファイルは省略可能です。 プロジェクト要素をディレクトリに置きで表示したい場合、**新しい項目の追加**ダイアログ ボックスで、TemplatesDir ステートメントで指定されたテンプレートのディレクトリでそのファイルを配置することができます。 ファイルは、の右側のウィンドウに表示されますが、**新しい項目の追加**そのプロジェクトのダイアログ ボックス。 ただし、ファイルまたはアイコンのローカライズされたキャプションを表示する場合は、テンプレート ディレクトリに .vsdir ファイルを 1 つ以上を含める必要があります。  

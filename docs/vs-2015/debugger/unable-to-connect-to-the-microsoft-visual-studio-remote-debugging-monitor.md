@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 139c650ac61b9312b069cc2e19fa66d3673ca30f
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51733011"
@@ -43,7 +43,7 @@ ms.locfileid: "51733011"
   
 ## <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   Visual Studio リモート デバッグ モニターがリモート コンピューターにインストールされ、実行されていることを確認します。 リモート デバッガーおよびそのインストール方法については、次を参照してください。[リモート デバッグ](../debugger/remote-debugging.md)します。  
+-   Visual Studio リモート デバッグ モニターがリモート コンピューターにインストールされ、実行されていることを確認します。 リモート デバッガーおよびそのインストール方法については、[リモート デバッグ](../debugger/remote-debugging.md)を参照してください。  
   
 -   Visual Studio で、プロジェクトのプロパティ (**プロジェクト/プロパティ/デバッグ**) を確認します。 **[リモート サーバー名]** が正しいことを確認します。  
   

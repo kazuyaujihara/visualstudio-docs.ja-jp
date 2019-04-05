@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: dc700e0a1b8753a26067eff90df9ff58765de8d1
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51792022"
@@ -28,7 +28,7 @@ ms.locfileid: "51792022"
 VSPackage、Managed Extensibility Framework (MEF) コンポーネント パーツ、または汎用的な VSIX プロジェクトを分離シェル アプリケーションに追加することで、Visual Studio 分離シェルを拡張できます。  
   
 > [!NOTE]
->  次の手順では、Visual Studio 分離シェル プロジェクト テンプレートを使用して基本的な分離シェル アプリケーションを作成したことを前提とします。 このプロジェクト テンプレートの詳細については、次を参照してください。[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)します。  
+>  次の手順では、Visual Studio 分離シェル プロジェクト テンプレートを使用して基本的な分離シェル アプリケーションを作成したことを前提とします。 このプロジェクト テンプレートの詳細については、[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)を参照してください。  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio パッケージのプロジェクト テンプレートの場所  
  Visual Studio パッケージのプロジェクト テンプレートは、 **[新しいプロジェクト]** ダイアログの次の 3 つの場所にあります。  

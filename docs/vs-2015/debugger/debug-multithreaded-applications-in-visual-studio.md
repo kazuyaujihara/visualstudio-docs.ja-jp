@@ -29,7 +29,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f5b9ff27a8a864d648b5e9c545cee72ee64a4901
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51758438"
@@ -47,7 +47,7 @@ ms.locfileid: "51758438"
   
  Visual Studio には、強力なブレークポイントとトレースポイントも用意されており、マルチスレッド アプリケーションのデバッグに役立ちます。 ブレークポイント フィルターを使用すると、個々のスレッドにブレークポイントを配置できます。 参照してください[ブレークポイントの使用](../debugger/using-breakpoints.md)  
   
- ユーザー インターフェイスを含むマルチスレッド アプリケーションは、特にデバッグが困難になることがあります。 その場合には、アプリケーションを別のコンピューターで実行し、リモート デバッグを使用することを検討してください。 詳しくは、次を参照してください。[リモート デバッグ](../debugger/remote-debugging.md)します。  
+ ユーザー インターフェイスを含むマルチスレッド アプリケーションは、特にデバッグが困難になることがあります。 その場合には、アプリケーションを別のコンピューターで実行し、リモート デバッグを使用することを検討してください。 詳しくは、[リモート デバッグ](../debugger/remote-debugging.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [スレッドとプロセスの操作](../debugger/debug-threads-and-processes.md)  

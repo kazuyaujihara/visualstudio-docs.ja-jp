@@ -1,4 +1,4 @@
-﻿---
+---
 title: T4 テキスト テンプレートの作成
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -238,7 +238,7 @@ private void WriteSquareLine(int i)
 
  **ナビゲート可能なモデルとしてファイルを読み込む。** より効果的な方法は、テキスト テンプレート コードでナビゲートできるモデルとしてデータを読み取ることです。 たとえば、XML ファイルを読み込み、XPath 式でそのファイル内をナビゲートできます。 XML データを読み取ることが可能なクラスのセットを作成するために [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) を使用することもできます。
 
- **図またはフォームでモデル ファイルを編集する。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] は、図または Windows フォームとして、モデルを編集するためのツールを提供します。 このため、生成されたアプリケーションのユーザーと、モデルについて効率的に話し合うことができます。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]では、モデルの構造を反映した、厳密に型指定されたクラスのセットも作成できます。 詳細については、次を参照してください。[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)します。
+ **図またはフォームでモデル ファイルを編集する。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] は、図または Windows フォームとして、モデルを編集するためのツールを提供します。 このため、生成されたアプリケーションのユーザーと、モデルについて効率的に話し合うことができます。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]では、モデルの構造を反映した、厳密に型指定されたクラスのセットも作成できます。 詳細については、[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)を参照してください。
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>デザイン時テンプレートの相対ファイル パス
  [デザイン時テキスト テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)を使用して、テキスト テンプレートを基準とする場所でファイルを参照する場合は、`this.Host.ResolvePath()`を使います。 また、`hostspecific="true"` ディレクティブで `template` を設定する必要もあります。
@@ -259,7 +259,7 @@ Content of MyFile.txt is:
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>別の AppDomain で実行されるデザイン時テキスト テンプレート
 
-[デザイン時テキスト テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)はメインのアプリケーションから分離した AppDomain で実行されることを認識しておく必要があります。 ほとんどの場合、これは重要ではありませんが、一部の複雑な状況で制限が生じることがあります。 たとえば、別のサービスからテンプレート内またはテンプレート外のデータを渡す場合、そのサービスでシリアル化可能な API を提供する必要があります。
+ [デザイン時テキスト テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)はメインのアプリケーションから分離した AppDomain で実行されることを認識しておく必要があります。 ほとんどの場合、これは重要ではありませんが、一部の複雑な状況で制限が生じることがあります。 たとえば、別のサービスからテンプレート内またはテンプレート外のデータを渡す場合、そのサービスでシリアル化可能な API を提供する必要があります。
 
  (これは、[実行時テキスト テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)にはあてはまりません。コードの残りの部分と一緒にコンパイルされるコードが提供されます。)
 

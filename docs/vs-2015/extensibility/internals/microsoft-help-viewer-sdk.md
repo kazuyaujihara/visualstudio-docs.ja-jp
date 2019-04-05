@@ -825,8 +825,8 @@ some F# code
 
 ### <a name="additional-resources"></a>その他のリソース
 
-ランタイム API では、次を参照してください。 [Windows API のヘルプ](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx)します。
+ランタイム API では、[Windows API のヘルプ](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx)を参照してください。
 
-API のヘルプを活用する方法の詳細については、次を参照してください。[ヘルプ ビューアーのコード例](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)します。
+API のヘルプを活用する方法の詳細については、[ヘルプ ビューアーのコード例](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)を参照してください。
 
-上の問題の重大な更新プログラムは、次を参照してください。、[ヘルプ ビューアーの Readme](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)します。
+上の問題の重大な更新プログラムは、、[ヘルプ ビューアーの Readme](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)を参照してください。

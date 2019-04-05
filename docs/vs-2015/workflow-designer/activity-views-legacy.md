@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: erikre
 ms.openlocfilehash: e5fb8368228118b210865b1a351d12b1b5da4b27
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49229315"
@@ -38,7 +38,7 @@ ms.locfileid: "49229315"
 |**補正ハンドラの表示**|このメニュー オプションまたはタブ オプションが表示、 [CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65053)選択した[TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093)します。|  
 |**イベント ハンドラーの表示**|このメニュー オプションまたはタブ オプションが表示、 [EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018)選択した、 [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030)します。|  
   
- 同様のビューについては、次を参照してください。[シーケンシャル ワークフロー ビュー (レガシ)](../workflow-designer/sequential-workflow-views-legacy.md)します。  
+ 同様のビューについては、[シーケンシャル ワークフロー ビュー (レガシ)](../workflow-designer/sequential-workflow-views-legacy.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [従来のワークフロー アクティビティ](../workflow-designer/legacy-workflow-activities.md)   

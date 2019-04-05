@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 324284a6cac44c995d652cce2f2e82a4c13702c1
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51753251"
@@ -39,7 +39,7 @@ Visual Studio 統合開発環境 (IDE) では、さまざまな種類のエデ�
   次の情報を使用する必要があるエディターの種類を選択できます。  
   
 ## <a name="types-of-editor"></a>エディターの種類  
- Visual Studio のコア エディターについては、次を参照してください。[エディターと言語サービス拡張](../extensibility/extending-the-editor-and-language-services.md)します。  
+ Visual Studio のコア エディターについては、[エディターと言語サービス拡張](../extensibility/extending-the-editor-and-language-services.md)を参照してください。  
   
 ##### <a name="custom-editors"></a>カスタム エディター  
  カスタム エディターでは、特殊な状況で動作するように設計された 1 つです。 たとえばの機能は、Microsoft Exchange server などの特定のリポジトリにデータを読み書きするエディターを作成します。 プロジェクトの種類のみで動作するエディターまたは特定のいくつかのコマンドのみを持つエディターが必要な場合は、カスタム エディターを選択します。 ただし、ユーザーはいないできるカスタム エディターを使用して、標準を編集する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。  
@@ -68,7 +68,7 @@ Visual Studio 統合開発環境 (IDE) では、さまざまな種類のエデ�
   
 -   エディターは、複数のビューをサポートしますか。 既定のエディターと同時に表示される、エディターのビューの場合は、複数のビューをサポートする必要があります。  
   
-     が複数のビューをサポートするために、エディターが必要な場合、ドキュメント データと、エディターのドキュメント ビュー オブジェクトは個別のオブジェクトになる可能性があります。 詳細については、次を参照してください。 [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)します。  
+     が複数のビューをサポートするために、エディターが必要な場合、ドキュメント データと、エディターのドキュメント ビュー オブジェクトは個別のオブジェクトになる可能性があります。 詳細については、[Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)を参照してください。  
   
      エディターでは、複数のビューをサポートする場合を使用して行う、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]コア エディターのテキスト バッファーの実装 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>オブジェクト)、ドキュメント データ オブジェクトのでしょうか。 エディター ビュー - サイドでをサポートする、つまり、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のコア エディターか? これを行う機能は、フォーム デザイナーの基になる.  
   

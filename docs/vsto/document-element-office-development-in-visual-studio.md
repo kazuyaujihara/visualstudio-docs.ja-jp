@@ -37,7 +37,7 @@ ms.locfileid: "54866387"
 
 |属性|説明|
 |---------------|-----------------|
-|`solutionId`|必須。 ドキュメント レベルのソリューションを一意に識別する、Visual Studio Tools for Office ランタイムによって使用される GUID です。 この値は、カスタムのドキュメントの _AssemblyLocation プロパティとして格納されます。 詳細については、次を参照してください。[カスタム ドキュメント プロパティの概要](../vsto/custom-document-properties-overview.md)します。|
+|`solutionId`|必須。 ドキュメント レベルのソリューションを一意に識別する、Visual Studio Tools for Office ランタイムによって使用される GUID です。 この値は、カスタムのドキュメントの _AssemblyLocation プロパティとして格納されます。 詳細については、[カスタム ドキュメント プロパティの概要](../vsto/custom-document-properties-overview.md)を参照してください。|
 
  `document` に子要素はありません。
 

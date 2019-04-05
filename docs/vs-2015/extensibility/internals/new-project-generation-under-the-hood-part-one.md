@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51792927"
@@ -128,7 +128,7 @@ devenv /installvstemplates
 -   並べ替え順序を変更することができます。  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>プロジェクトの種類のルート ノードの検索  
- Visual Studio では、ProjectTemplates フォルダーはスキャン、ときに、すべての .zip ファイルを開き、.vstemplate ファイルを抽出します。 .Vstemplate ファイルでは、XML を使用して、アプリケーション テンプレートについて説明します。 詳細については、次を参照してください。[新しいプロジェクトの生成: 内部、パート 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)します。  
+ Visual Studio では、ProjectTemplates フォルダーはスキャン、ときに、すべての .zip ファイルを開き、.vstemplate ファイルを抽出します。 .Vstemplate ファイルでは、XML を使用して、アプリケーション テンプレートについて説明します。 詳細については、[新しいプロジェクトの生成: 内部、パート 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)を参照してください。  
   
  \<ProjectType > タグは、アプリケーションのプロジェクトの種類を決定します。 たとえば、\CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip ファイルには、このタグを含む EmptyProject.vstemplate ファイルが含まれています。  
   

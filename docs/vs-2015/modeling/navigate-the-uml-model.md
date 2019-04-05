@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51727766"
@@ -33,9 +33,9 @@ ms.locfileid: "51727766"
   
  IElement 以外のすべての型は、1 つ以上のスーパータイプのプロパティを継承します。  
   
--   モデルの種類の概要については、次を参照してください。 [UML モデル要素の型](../modeling/uml-model-element-types.md)します。  
+-   モデルの種類の概要については、[UML モデル要素の型](../modeling/uml-model-element-types.md)を参照してください。  
   
--   API の詳細については、次を参照してください。 [UML モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)します。  
+-   API の詳細については、[UML モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)を参照してください。  
   
 ### <a name="relationships"></a>リレーションシップ  
  UML 仕様に定義されているプロパティおよび関係は、.NET プロパティとして実装されます。  
@@ -50,7 +50,7 @@ ms.locfileid: "51727766"
   
  UML 仕様で 0..1 の多重度がプロパティに割り当てられている場合、その値は `null` になることがあります。 1 は、.NET プロパティが、型を持つことを意味するよりも大きい最大多重度: `IEnumerable<`*型*`>`します。  
   
- 関係の走査の詳細については、次を参照してください。 [UML API を使用したリレーションシップをナビゲート](../modeling/navigate-relationships-with-the-uml-api.md)します。  
+ 関係の走査の詳細については、[UML API を使用したリレーションシップをナビゲート](../modeling/navigate-relationships-with-the-uml-api.md)を参照してください。  
   
 ### <a name="the-ownership-tree"></a>所有権ツリー  
  モデルには <xref:Microsoft.VisualStudio.Uml.Classes.IElement> オブジェクトのツリーがあります。 どの要素にもプロパティ `OwnedElements` および `Owner` があります。  
@@ -59,7 +59,7 @@ ms.locfileid: "51727766"
   
  ツリーの最上位要素 (Owner がない) は <xref:Microsoft.VisualStudio.Uml.AuxiliaryConstructs.IModel> です。 IModel は <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml.IModelStore> に含まれ、そこでは <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml.IModelStore.Root%2A> になります。  
   
- すべてのモデル要素には、作成時に Owner を指定します。 詳細については、次を参照してください。[で UML モデル要素および関係を作成する](../modeling/create-elements-and-relationships-in-uml-models.md)します。  
+ すべてのモデル要素には、作成時に Owner を指定します。 詳細については、[で UML モデル要素および関係を作成する](../modeling/create-elements-and-relationships-in-uml-models.md)を参照してください。  
   
  ![クラス ダイアグラム: モデル、図、図形、および要素](../modeling/media/uml-mm1.png "UML_MM1")  
   
@@ -70,7 +70,7 @@ ms.locfileid: "51727766"
   
  図形はツリー内に位置付けられます。 ツリーの各端は、ParentShape プロパティと ChildShapes プロパティで表されます。 図は、親のない唯一の図形です。 図のサーフェイス上の図形は、より小さなパートで構成されます。 たとえば、クラスの図形には、属性と操作のコンパートメントがあります。  
   
- 図形の詳細については、次を参照してください。[図に UML モデルを表示](../modeling/display-a-uml-model-on-diagrams.md)します。  
+ 図形の詳細については、[図に UML モデルを表示](../modeling/display-a-uml-model-on-diagrams.md)を参照してください。  
   
 ## <a name="access-to-the-model-in-extensions"></a>拡張機能でのモデルへのアクセス  
  MEF コンポーネントとして定義される [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能では、拡張機能が実行されるコンテキストから情報をインポートするプロパティを宣言できます。  
@@ -125,11 +125,11 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>別のモデルまたは図へのアクセス  
  次の操作を行うことができます。  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modelbus を使用し、さまざまなモデルの要素間のリンクを生成します。 詳細については、次を参照してください。[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)します。  
+-   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modelbus を使用し、さまざまなモデルの要素間のリンクを生成します。 詳細については、[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)を参照してください。  
   
--   モデリング プロジェクトと図を [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザー インターフェイスに表示させず、読み取り専用で読み込みます。 詳細については、次を参照してください。[プログラム コードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)します。  
+-   モデリング プロジェクトと図を [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザー インターフェイスに表示させず、読み取り専用で読み込みます。 詳細については、[プログラム コードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)を参照してください。  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でモデリング プロジェクトと図を開き、コンテンツにアクセスします。 詳細については、次を参照してください。 [Visual Studio API を使用して UML モデルを開く](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)します。  
+-   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でモデリング プロジェクトと図を開き、コンテンツにアクセスします。 詳細については、[Visual Studio API を使用して UML モデルを開く](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [UML モデルと図を拡張します。](../modeling/extend-uml-models-and-diagrams.md)   

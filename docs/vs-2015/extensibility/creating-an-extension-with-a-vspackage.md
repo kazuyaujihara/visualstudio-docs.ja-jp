@@ -15,7 +15,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 945ae5b3cf6cd8769795c31a10a4f51e1f7eccb6
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51773302"
@@ -36,12 +36,12 @@ ms.locfileid: "51773302"
   
 3.  プロジェクトをビルドし、デバッグを開始します。  
   
-     Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、次を参照してください。 [、実験用インスタンス](../extensibility/the-experimental-instance.md)します。  
+     Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、[、実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。  
   
 4.  実験用インスタンスの開く、**ツール/拡張機能と更新**ウィンドウ。 表示する必要があります、 **FirstPackage**拡張します。 (を開いた場合**拡張機能と更新**、Visual Studio の作業用インスタンスでは表示されません**FirstPackage**)。  
   
 ## <a name="loading-the-vspackage"></a>VSPackage の読み込み  
- この時点で、拡張機能は、ために読み込めませんをロードすると、そのことはありません。 (ツール ウィンドウを開き、メニュー コマンドをクリックすると、)、UI を使用した、または特定の UI コンテキストで、VSPackage を読み込む必要がありますを指定することで対話する際に一般的に、拡張機能を読み込むことができます。 Vspackage と UI のコンテキストを読み込む方法の詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。 この手順では、ソリューションが開いているときに VSPackage を読み込む方法を紹介します。  
+ この時点で、拡張機能は、ために読み込めませんをロードすると、そのことはありません。 (ツール ウィンドウを開き、メニュー コマンドをクリックすると、)、UI を使用した、または特定の UI コンテキストで、VSPackage を読み込む必要がありますを指定することで対話する際に一般的に、拡張機能を読み込むことができます。 Vspackage と UI のコンテキストを読み込む方法の詳細については、[Vspackage の読み込み](../extensibility/loading-vspackages.md)を参照してください。 この手順では、ソリューションが開いているときに VSPackage を読み込む方法を紹介します。  
   
 1.  FirstPackage.cs ファイルを開きます。 FirstPackage クラスの宣言を探します。 既存の属性を次に置き換えます。  
   

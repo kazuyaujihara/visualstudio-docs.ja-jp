@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 4223f694c55025c0fc3e4d0afe8fca530940520b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51764746"
@@ -45,7 +45,7 @@ ms.locfileid: "51764746"
   
   **エラー ブレークポイントの場合:**  
   
-- コードのコンテキストに保留中のブレークポイントをバインドするときにエラーを説明するための抽象型です。 エラー、ブレークポイントでは、またはブレークポイント式自体の場所で、いずれかのエラーについて説明します。 詳細については、次を参照してください。[ブレークポイントのバインド](../../extensibility/debugger/binding-breakpoints.md)します。  
+- コードのコンテキストに保留中のブレークポイントをバインドするときにエラーを説明するための抽象型です。 エラー、ブレークポイントでは、またはブレークポイント式自体の場所で、いずれかのエラーについて説明します。 詳細については、[ブレークポイントのバインド](../../extensibility/debugger/binding-breakpoints.md)を参照してください。  
   
    ブレークポイントのエラーは、エラーまたは警告のいずれかにできます。  
   

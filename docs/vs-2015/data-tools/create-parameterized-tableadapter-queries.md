@@ -26,7 +26,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 56e14d66275bd961829fc09e06f7d5e99dbcc2c4
 ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/29/2018
 ms.locfileid: "50218900"
@@ -49,15 +49,15 @@ ms.locfileid: "50218900"
   
 #### <a name="to-create-a-parameterized-query-in-the-dataset-designer"></a>データセット デザイナーでパラメーター クエリを作成するには  
   
--   新しい TableAdapter を作成し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。 詳細については、次を参照してください。[作成し、Tableadapter 構成](../data-tools/create-and-configure-tableadapters.md)します。  
+-   新しい TableAdapter を作成し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。 詳細については、[作成し、Tableadapter 構成](../data-tools/create-and-configure-tableadapters.md)を参照してください。  
   
      - または -  
   
--   既存の TableAdapter にクエリを追加し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。 詳細については、次を参照してください。[方法: TableAdapter クエリの作成](../data-tools/how-to-create-tableadapter-queries.md)です。  
+-   既存の TableAdapter にクエリを追加し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。 詳細については、[方法: TableAdapter クエリの作成](../data-tools/how-to-create-tableadapter-queries.md)を参照してください。  
   
 #### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>データ バインド フォームの設計時にパラメーター クエリを作成するには  
   
-1.  フォーム上の既にデータセットにバインドされているコントロールを選択します。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールを Windows フォームのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)します。  
+1.  フォーム上の既にデータセットにバインドされているコントロールを選択します。 詳細については、[Visual Studio でのデータにコントロールを Windows フォームのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)を参照してください。  
   
 2.  **データ**メニューの **クエリの追加**します。  
   

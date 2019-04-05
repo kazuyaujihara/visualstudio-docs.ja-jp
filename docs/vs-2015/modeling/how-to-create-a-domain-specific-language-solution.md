@@ -20,7 +20,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49908940"
@@ -66,7 +66,7 @@ ms.locfileid: "49908940"
   
     **ドメイン固有言語のオプションの選択**などソリューション テンプレートのいずれかの選択 ページで、**最小言語**します。 DSL を作成する次のようなテンプレートを選択します。  
   
-    ソリューション テンプレートの詳細については、次を参照してください。[ドメイン固有言語ソリューション テンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)します。  
+    ソリューション テンプレートの詳細については、[ドメイン固有言語ソリューション テンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)を参照してください。  
   
 3. ファイル名拡張子を入力、**ファイル拡張子**ページ。 自分のコンピューターで一意である必要がありする任意のコンピューターでは、DSL をインストールします。 メッセージが表示する必要があります**アプリケーションまたは Visual Studio エディターにこの拡張機能使用しない**します。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "49908940"
   
    -   もう 1 つ場合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]このファイルの拡張機能を使用する拡張機能は完全にコンピューターにインストールされたをアンインストールすることを検討してください。 **ツール** メニューのをクリックして**拡張機能マネージャー**します。  
   
-4. 検査、および必要に応じて調整、ウィザードの残りのページのフィールド。 設定に満足したら、クリックして**完了**します。 設定の詳細については、次を参照してください。 [DSL デザイナーのウィザード ページ](#settings)します。  
+4. 検査、および必要に応じて調整、ウィザードの残りのページのフィールド。 設定に満足したら、クリックして**完了**します。 設定の詳細については、[DSL デザイナーのウィザード ページ](#settings)を参照してください。  
   
     ウィザードの名前は 2 つのプロジェクトを含むソリューションを作成します**Dsl**と**DslPackage**します。  
   
@@ -86,7 +86,7 @@ ms.locfileid: "49908940"
   
 ### <a name="solution-settings-page"></a>ソリューションの設定 ページ  
  **どのテンプレート、ドメイン固有言語を基になるか?**  
- DSL を作成する次のようなテンプレートを選択します。 別のテンプレートは、便利な開始ポイントを提供します。 ソリューション テンプレートを選択すると、ウィザードには、説明が表示されます。 ソリューション テンプレートの詳細については、次を参照してください。[ドメイン固有言語ソリューション テンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)します。  
+ DSL を作成する次のようなテンプレートを選択します。 別のテンプレートは、便利な開始ポイントを提供します。 ソリューション テンプレートを選択すると、ウィザードには、説明が表示されます。 ソリューション テンプレートの詳細については、[ドメイン固有言語ソリューション テンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)を参照してください。  
   
  **ドメイン固有言語の名前にしますか。**  
  既定値は、ソリューション名です。 コードは、この値から生成されます。 C# クラス名として有効な場合があります。  
@@ -132,7 +132,7 @@ ms.locfileid: "49908940"
  **既存の厳密な名前キーを使用します。**  
  別のアセンブリと DSL を統合する場合は、このオプションを使用します。  
   
- 厳密な名前付けの詳細については、次を参照してください。[の作成と using strong-named Assemblies](http://go.microsoft.com/fwlink/?LinkId=186073)します。  
+ 厳密な名前付けの詳細については、[の作成と using strong-named Assemblies](http://go.microsoft.com/fwlink/?LinkId=186073)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)   

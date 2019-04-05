@@ -25,7 +25,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49917649"
@@ -44,7 +44,7 @@ TableAdapter を使用すると、アプリケーションとデータベース�
   
   新しい TableAdapter を作成してで空の領域に TableAdapter をツールボックスからドラッグしてデータ ソースと構成、**データセット デザイナー**画面。  
   
-  Tableadapter の概要については、次を参照してください。 [Tableadapter を使用してデータセットを入力](../data-tools/fill-datasets-by-using-tableadapters.md)します。  
+  Tableadapter の概要については、[Tableadapter を使用してデータセットを入力](../data-tools/fill-datasets-by-using-tableadapters.md)を参照してください。  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

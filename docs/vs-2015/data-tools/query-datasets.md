@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49890570"
@@ -68,10 +68,10 @@ ms.locfileid: "49890570"
   
  使用することができます、<xref:System.Data.DataRelation>呼び出すことによって、関連レコードを検索するオブジェクト、<xref:System.Data.DataRow.GetChildRows%2A>のメソッド、<xref:System.Data.DataRow>親テーブルでします。このメソッドは、関連する子レコードの配列を返します。 呼び出すか、または、<xref:System.Data.DataRow.GetParentRow%2A>のメソッド、<xref:System.Data.DataRow>子テーブルにします。このメソッドは、1 つを返します<xref:System.Data.DataRow>親テーブルから。  
   
- このページは、型指定されたデータセットを使用した例を示します。 型指定されていないデータセットのリレーションシップを移動する方法の詳細については、次を参照してください。 [Datarelation の移動](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)します。  
+ このページは、型指定されたデータセットを使用した例を示します。 型指定されていないデータセットのリレーションシップを移動する方法の詳細については、[Datarelation の移動](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)を参照してください。  
   
 > [!NOTE]
->  Windows フォーム アプリケーションで作業しているし、データ バインド機能を使用してデータを表示する、デザイナーで生成されたフォームは、アプリケーションのための十分な機能を提供可能性があります。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。 具体的を参照してください[方法: Windows フォーム アプリケーションで関連データを表示](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md)と[チュートリアル: Windows フォーム上で関連データを表示する](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md)します。  
+>  Windows フォーム アプリケーションで作業しているし、データ バインド機能を使用してデータを表示する、デザイナーで生成されたフォームは、アプリケーションのための十分な機能を提供可能性があります。 詳細については、[Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)を参照してください。 具体的を参照してください[方法: Windows フォーム アプリケーションで関連データを表示](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md)と[チュートリアル: Windows フォーム上で関連データを表示する](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md)します。  
   
  次のコード例では、型指定されたデータセットのリレーションシップを上下に移動する方法を示します。 型指定されたコードの例として使用<xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) され、生成された`FindBy` *PrimaryKey* (`FindByCustomerID`) を目的の行を見つけて、関連レコードを返すメソッド。 例では、正しくコンパイルして実行した場合にのみ。  
   

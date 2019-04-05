@@ -142,7 +142,7 @@ ms.locfileid: "51778411"
 >  図ファイルを単独で使用して試した後に .tbxinfo ファイルを使用し始めた場合、ツールボックスには、ツールボックス アイテムの古いバージョンと新しいバージョンの両方が含まれる場合があります。 これは、.tbxinfo ファイルで図ファイルの名前が間違っている場合にも発生します。 この場合、選択して、ツールボックスのショートカット メニューの [**ツールボックスのリセット]** します。 カスタム ツールボックス アイテムが表示されなくなります。 Visual Studio を再起動すると、正しいカスタム アイテムが表示されます。  
   
 ##  <a name="Extension"></a> Visual Studio 拡張機能内のツールボックス項目を配布する方法  
- 他のツールボックス項目を配布する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を Visual Studio Extension (VSIX) パッケージ化してユーザー。 コマンド、プロファイルなどの拡張機能を同じ VSIX ファイルにパッケージ化できます。 詳細については、次を参照してください。 [Visual Studio 拡張機能の配置](http://go.microsoft.com/fwlink/?LinkId=160780)します。  
+ 他のツールボックス項目を配布する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を Visual Studio Extension (VSIX) パッケージ化してユーザー。 コマンド、プロファイルなどの拡張機能を同じ VSIX ファイルにパッケージ化できます。 詳細については、[Visual Studio 拡張機能の配置](http://go.microsoft.com/fwlink/?LinkId=160780)を参照してください。  
   
  Visual Studio 拡張機能をビルドするには、通常は VSIX プロジェクトのテンプレートを使用します。 これを行うには、[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] をインストールしておく必要があります。  
   
@@ -223,7 +223,7 @@ ms.locfileid: "51778411"
   
 3. 言語のカルチャ コードを名前にしたフォルダーに、追加のアセンブリをそれぞれ配置します。 たとえば、フランス語バージョンのアセンブリをという名前のフォルダー内に配置**fr**します。  
   
-4. `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャ コードの詳細については、次を参照してください。 [CultureInfo.GetCultures メソッド](http://go.microsoft.com/fwlink/?LinkId=160782)、カルチャ コードの完全な一覧を提供します。  
+4. `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャ コードの詳細については、[CultureInfo.GetCultures メソッド](http://go.microsoft.com/fwlink/?LinkId=160782)、カルチャ コードの完全な一覧を提供を参照してください。  
   
 5. Visual Studio 拡張機能をビルドして配布します。  
   

@@ -13,7 +13,7 @@ ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: f309c2a960d011601a9fdd41e29d767c667de838
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002932"
@@ -29,7 +29,7 @@ Visual Studio での Azure クラウド サービス プロジェクトには、
 
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
-サービス定義ファイルとサービス構成ファイルの基になるスキーマについては、次を参照してください。、 [.csdef XML スキーマ](/azure/cloud-services/schema-csdef-file.md)と[.cscfg XML スキーマ](/azure/cloud-services/schema-cscfg-file.md)記事。 サービス構成の詳細については、次を参照してください。 [Cloud Services の構成方法](/azure/cloud-services/cloud-services-how-to-configure-portal)します。
+サービス定義ファイルとサービス構成ファイルの基になるスキーマについては、次を参照してください。、 [.csdef XML スキーマ](/azure/cloud-services/schema-csdef-file.md)と[.cscfg XML スキーマ](/azure/cloud-services/schema-cscfg-file.md)記事。 サービス構成の詳細については、[Cloud Services の構成方法](/azure/cloud-services/cloud-services-how-to-configure-portal)を参照してください。
 
 
 ## <a name="configuration-page"></a>[構成] ページ
@@ -42,7 +42,7 @@ Select を`ServiceConfiguration.*.cscfg`ファイルは変更の影響を受け�
 
 設定、**インスタンス**プロパティをこのロールに対して、サービスが実行するインスタンスの数をカウントします。
 
-設定、 **VM サイズ**プロパティを**極小**、**小さな**、 **Medium**、 **Large**、または**超大規模な**します。  詳細については、次を参照してください。 [Cloud Services のサイズ](/azure/cloud-services/cloud-services-sizes-specs)します。
+設定、 **VM サイズ**プロパティを**極小**、**小さな**、 **Medium**、 **Large**、または**超大規模な**します。  詳細については、[Cloud Services のサイズ](/azure/cloud-services/cloud-services-sizes-specs)を参照してください。
 
 ### <a name="startup-action-web-role-only"></a>スタートアップ アクション (Web ロールのみ)
 
@@ -54,7 +54,7 @@ HTTPS エンドポイントを既に追加した場合は、HTTPS エンドポ�
 
 ### <a name="diagnostics"></a>診断
 
-既定では、診断は、Web ロールに対して有効です。 ローカル ストレージ エミュレーターを使用する Azure クラウド サービス プロジェクトとストレージ アカウントが設定されます。 Azure にデプロイする準備ができたら、ビルダーのボタンを選択することができます (**.**) 代わりに Azure storage を使用します。 オンデマンドまたは自動的にスケジュールされた間隔では、ストレージ アカウントに診断データを転送できます。 Azure 診断の詳細については、次を参照してください。 [Enabling diagnostics in Azure Cloud Services および仮想マシン診断](/azure/cloud-services/cloud-services-dotnet-diagnostics)します。
+既定では、診断は、Web ロールに対して有効です。 ローカル ストレージ エミュレーターを使用する Azure クラウド サービス プロジェクトとストレージ アカウントが設定されます。 Azure にデプロイする準備ができたら、ビルダーのボタンを選択することができます (**.**) 代わりに Azure storage を使用します。 オンデマンドまたは自動的にスケジュールされた間隔では、ストレージ アカウントに診断データを転送できます。 Azure 診断の詳細については、[Enabling diagnostics in Azure Cloud Services および仮想マシン診断](/azure/cloud-services/cloud-services-dotnet-diagnostics)を参照してください。
 
 ## <a name="settings-page"></a>設定 ページ
 

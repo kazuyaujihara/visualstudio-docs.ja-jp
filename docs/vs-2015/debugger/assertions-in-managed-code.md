@@ -165,7 +165,7 @@ Debug.Assert ( temp != 0 );
   
   C# または Visual Basic のリリース ビルドで Debug メソッドを使用する必要がある場合は、リリース構成にデバッグ シンボルを定義する必要があります。  
   
-  C++ は、<xref:System.Diagnostics.Debug> クラスのメソッドをサポートしません。 使用して同じ効果を得ることができます、<xref:System.Diagnostics.Trace>などの条件付きコンパイルは、クラス`#ifdef DEBUG`.`#endif`. これらのシンボルを定義することができます、 **\<プロジェクト > プロパティ ページ** ダイアログ ボックス。 詳細については、次を参照してください。 [Visual Basic デバッグ構成のプロジェクトの設定を変更する](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)または[C または C++ デバッグ構成のプロジェクトの設定を変更する](../debugger/project-settings-for-a-cpp-debug-configuration.md)します。  
+  C++ は、<xref:System.Diagnostics.Debug> クラスのメソッドをサポートしません。 使用して同じ効果を得ることができます、<xref:System.Diagnostics.Trace>などの条件付きコンパイルは、クラス`#ifdef DEBUG`.`#endif`. これらのシンボルを定義することができます、 **\<プロジェクト > プロパティ ページ** ダイアログ ボックス。 詳細については、[Visual Basic デバッグ構成のプロジェクトの設定を変更する](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)または[C または C++ デバッグ構成のプロジェクトの設定を変更する](../debugger/project-settings-for-a-cpp-debug-configuration.md)を参照してください。  
   
 ##  <a name="BKMK_Assert_arguments"></a> Assert の引数  
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> と <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> は、最大で 3 つの引数を受け取ります。 最初の引数は調べる条件です。これは必ず指定します。 呼び出す場合<xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName>または<xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>、引数の 1 つだけで、`Assert`メソッドは、条件をチェックし、結果が false の場合は、呼び出し履歴の内容を出力、**出力**ウィンドウ。 <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> および <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName> の使用例は、次のようになります。  
@@ -216,7 +216,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  この方法で出力をカスタマイズするには、プログラムにリスナーが含まれている必要があります。また、<xref:System.Diagnostics.TraceListener> を継承し、その <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> メソッドをオーバーライドする必要があります。  
   
- 詳細については、次を参照してください。[トレース リスナー](http://msdn.microsoft.com/library/444b0d33-67ea-4c36-9e94-79c50f839025)します。  
+ 詳細については、[トレース リスナー](http://msdn.microsoft.com/library/444b0d33-67ea-4c36-9e94-79c50f839025)を参照してください。  
   
  [このトピックの内容](#BKMK_In_this_topic)  
   

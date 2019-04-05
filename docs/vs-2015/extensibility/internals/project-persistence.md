@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: ff836f56601adeba7b3df675207701f6e2d6e7fa
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51729565"
@@ -28,7 +28,7 @@ ms.locfileid: "51729565"
 
 永続化は、プロジェクトの主要な設計の考慮事項です。 ほとんどのプロジェクト ファイルを表すプロジェクト項目を使用します。[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]もデータが含まれるファイル ベースのプロジェクトをサポートします。 プロジェクトとプロジェクト ファイルによって所有されている、ファイルの両方を保持する必要があります。 IDE には、プロジェクト自体またはプロジェクト項目を保存するように指示します。  
   
- プロジェクトのテンプレートはプロジェクト ファクトリに渡されます。 テンプレートは、特定のプロジェクトの種類の要件に従ってすべてのプロジェクト項目の初期化をサポートする必要があります。 これらのテンプレートをプロジェクト ファイルとして保存後で、ソリューションで、IDE によって管理されています。 詳細については、次を参照してください。[を作成するプロジェクト インスタンスで使用してプロジェクト ファクトリ](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)と[ソリューション](../../extensibility/internals/solutions.md)します。  
+ プロジェクトのテンプレートはプロジェクト ファクトリに渡されます。 テンプレートは、特定のプロジェクトの種類の要件に従ってすべてのプロジェクト項目の初期化をサポートする必要があります。 これらのテンプレートをプロジェクト ファイルとして保存後で、ソリューションで、IDE によって管理されています。 詳細については、[を作成するプロジェクト インスタンスで使用してプロジェクト ファクトリ](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)と[ソリューション](../../extensibility/internals/solutions.md)を参照してください。  
   
  プロジェクト項目には、ファイル ベースまたはファイル ベースを指定できます。  
   
@@ -37,7 +37,7 @@ ms.locfileid: "51729565"
 -   ファイル ベース以外の項目は、データベースのリポジトリにアイテムを保存できます。  
   
 ## <a name="commit-models"></a>モデルをコミットします。  
- プロジェクト項目の場所を決定した後は、適切なコミット モデルを選択する必要があります。 たとえば、ローカル ファイルとファイル ベース モデルでの各プロジェクト保存できます自律的に。 リポジトリのモデルでは、1 つのトランザクションで複数の項目を保存できます。 詳細については、次を参照してください。[プロジェクトの種類の設計に関する決定事項](../../extensibility/internals/project-type-design-decisions.md)します。  
+ プロジェクト項目の場所を決定した後は、適切なコミット モデルを選択する必要があります。 たとえば、ローカル ファイルとファイル ベース モデルでの各プロジェクト保存できます自律的に。 リポジトリのモデルでは、1 つのトランザクションで複数の項目を保存できます。 詳細については、[プロジェクトの種類の設計に関する決定事項](../../extensibility/internals/project-type-design-decisions.md)を参照してください。  
   
  プロジェクトの実装ファイル名拡張子を決定する、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>インターフェイスを実装するオブジェクトのクライアントを有効にする情報を提供する、**名前を付けて保存** ダイアログ ボックス-を埋めるために、**ファイルの種類**ドロップダウンの一覧し、最初のファイル名拡張子を管理します。  
   

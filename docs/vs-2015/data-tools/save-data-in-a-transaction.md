@@ -25,7 +25,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
 ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/29/2018
 ms.locfileid: "50219303"
@@ -37,7 +37,7 @@ ms.locfileid: "50219303"
 このチュートリアルを使用して、トランザクションでデータを保存する方法について説明、<xref:System.Transactions>名前空間。 この例では、Northwind サンプル データベースの `Customers` テーブルと `Orders` テーブルを使用します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルでは、Northwind サンプル データベースへのアクセスが必要です。 Northwind サンプル データベースの設定の詳細については、次を参照してください。[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)します。  
+ このチュートリアルでは、Northwind サンプル データベースへのアクセスが必要です。 Northwind サンプル データベースの設定の詳細については、[方法: サンプル データベースをインストール](../data-tools/how-to-install-sample-databases.md)を参照してください。  
   
 ## <a name="create-a-windows-application"></a>Windows アプリケーションを作成します。  
  作成するには、まず、 **Windows アプリケーション**します。  
@@ -48,7 +48,7 @@ ms.locfileid: "50219303"
   
 2.  プロジェクトに名前を**SavingDataInATransactionWalkthrough**します。  
   
-3.  選択**Windows アプリケーション**、し、 **OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
+3.  選択**Windows アプリケーション**、し、 **OK**します。 詳細については、[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)を参照してください。  
   
      **SavingDataInATransactionWalkthrough**プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。  
   

@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 356b3d49fa8eb74ef2352e6ba36597d1c39fecf4
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51751545"
@@ -29,7 +29,7 @@ ms.locfileid: "51751545"
 
 アウトライン表示できるようになります、概要やアウトラインに複雑なプログラムを折りたたみます。 たとえば、c# では、すべてのメソッドをメソッドのシグネチャのみを示す、1 行に折りたたむことが。 さらに、構造体とクラスは、構造体とクラス名のみを表示のために折りたたむことができます。 1 つのメソッド内で複雑なロジックをなどのステートメントの最初の行のみを表示することによって全体的な流れに折りたたむことができます`foreach`、 `if`、および`while`します。  
   
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[チュートリアル: アウトライン](../../extensibility/walkthrough-outlining.md)します。  
+ 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、[チュートリアル: アウトライン](../../extensibility/walkthrough-outlining.md)を参照してください。  
   
 > [!NOTE]
 >  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  

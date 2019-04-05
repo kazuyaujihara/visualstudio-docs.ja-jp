@@ -33,7 +33,7 @@ ms.locfileid: "51783091"
   
 - 他のプロセスで使用できるサービスを作成するテキスト マーカーの使用  
   
-  コードの領域にテキスト マーカーを適用する方法の詳細については、次を参照してください。[方法: テキスト マーカーを使用して](../extensibility/how-to-use-text-markers.md)します。  
+  コードの領域にテキスト マーカーを適用する方法の詳細については、[方法: テキスト マーカーを使用して](../extensibility/how-to-use-text-markers.md)を参照してください。  
   
 ### <a name="to-register-a-custom-marker"></a>カスタム マーカーを登録するには  
   

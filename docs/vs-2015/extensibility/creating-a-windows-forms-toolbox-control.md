@@ -1,14 +1,9 @@
 ---
 title: ツールボックス コントロールをフォーム、Windows の作成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781713"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002466"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Windows フォーム ツールボックス コントロールの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,9 +55,9 @@ Visual Studio 機能拡張ツール (VS SDK) に含まれている Windows フ�
   
     |コントロール|プロパティ|[値]|  
     |-------------|--------------|-----------|  
-    |`Label1`|**[テキスト]**|""|  
+    |`Label1`|**Text**|""|  
     |`Button1`|**Name**|btnReset|  
-    |`Button1`|**[テキスト]**|リセット|  
+    |`Button1`|**Text**|リセット|  
   
 ### <a name="coding-the-user-control"></a>ユーザー コントロールのコーディング  
  `Counter` コントロールは、カウンターをインクリメントするメソッド、カウンターがインクリメントされると発生するイベント、および `Reset` ボタンを公開します。また、現在のカウント、表示テキスト、および `Reset` ボタンの表示または非表示の状態を格納するための、3 つのプロパティも公開します。 `ProvideToolboxControl` 属性は、 **[ツールボックス]** のどの場所に `Counter` コントロールが表示されるかを判断します。  
@@ -169,7 +164,7 @@ Visual Studio 機能拡張ツール (VS SDK) に含まれている Windows フ�
   
 5.  ドラッグ、`Counter`をフォームに制御し、それを選択します。 `Value`、 `Message`、および`ShowReset`でプロパティが表示されます、**プロパティ**ウィンドウから継承されるプロパティと共に<xref:System.Windows.Forms.UserControl>します。  
   
-6.  `Message` プロパティを `Count:`に設定します。  
+6.  `Message` プロパティを `Count:` に設定します。  
   
 7.  ドラッグ、<xref:System.Windows.Forms.Button>をフォームに制御し、ボタンの名前とテキストのプロパティを設定し、`Test`します。  
   
@@ -194,7 +189,7 @@ Visual Studio 機能拡張ツール (VS SDK) に含まれている Windows フ�
   
      フォームを開きます。 `Counter`コントロールは、次のテキストを表示します。  
   
-     **数: 0**  
+     **カウント:0**  
   
 14. **[テスト]** をクリックします。  
   
@@ -213,11 +208,10 @@ Visual Studio 機能拡張ツール (VS SDK) に含まれている Windows フ�
      カウンターをリセットする**0**します。  
   
 ## <a name="next-steps"></a>次の手順  
- **[ツールボックス]** のコントロールを構築すると、Visual Studio によって、プロジェクトの \bin\debug\ フォルダーに *プロジェクト名*.vsix という名前のファイルが作成されます。 コントロールは、.vsix ファイルをネットワークや Web サイトにアップロードすることで展開できます。 コントロールがインストールされ、Visual Studio に追加ユーザーは、.vsix ファイルを開いたら、**ツールボックス**ユーザーのコンピューターにします。 または、.vsix ファイルをアップロードできます、 [Visual Studio ギャラリー](http://go.microsoft.com/fwlink/?LinkID=123847) Web サイトのユーザーがで参照して検索できるように、**ツール/拡張機能と更新**ダイアログ。  
+ **[ツールボックス]** のコントロールを構築すると、Visual Studio によって、プロジェクトの \bin\debug\ フォルダーに *プロジェクト名*.vsix という名前のファイルが作成されます。 コントロールは、.vsix ファイルをネットワークや Web サイトにアップロードすることで展開できます。 コントロールがインストールされ、Visual Studio に追加ユーザーは、.vsix ファイルを開いたら、**ツールボックス**ユーザーのコンピューターにします。 または、.vsix ファイルをアップロードできます、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトのユーザーがで参照して検索できるように、**ツール/拡張機能と更新**ダイアログ。  
   
 ## <a name="see-also"></a>関連項目  
  [ツールボックスの拡張](../misc/extending-the-toolbox.md)   
  [WPF ツールボックス コントロールの作成](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Visual Studio の他の部分を拡張します。](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Windows フォーム コントロール開発の基本概念](http://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
-

@@ -21,7 +21,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 48f27d2e1bb72b7c5c0aaf1a66673beae003dd66
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49202216"
@@ -30,7 +30,7 @@ ms.locfileid: "49202216"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-データセットの機能を拡張するには、データセットの部分クラス ファイルを作成し、コードを追加 (コードを追加するのではなく、 *DatasetName*します。Dataset.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、次を参照してください。[部分](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)または[部分クラスとメソッド](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)します。  
+データセットの機能を拡張するには、データセットの部分クラス ファイルを作成し、コードを追加 (コードを追加するのではなく、 *DatasetName*します。Dataset.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、[部分](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)または[部分クラスとメソッド](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)を参照してください。  
   
  データセット定義を変更するたびに、データセットを定義するコードが生成された (で、[の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md))。 このコードは、データセットの構成を変更するウィザードの実行中に変更するときにも生成されます。 コードが、データセットの再生成中に削除されないようにするには、データセットの部分クラス ファイルにコードを追加します。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "49202216"
 >  データセットを分離する場合と`TableAdapter`s (設定して、 **DataSet プロジェクト**プロパティ)、プロジェクト内の既存のデータセット部分クラスが自動的に移動しません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。  
   
 > [!NOTE]
->  検証コードを追加する必要がある場合、[の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md)を生成するための機能を提供<xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.RowChanging>イベント ハンドラー。 詳細については、次を参照してください。 [n 層データセットに検証を追加](../data-tools/add-validation-to-an-n-tier-dataset.md)します。  
+>  検証コードを追加する必要がある場合、[の作成と型指定されたデータセットの編集](../data-tools/creating-and-editing-typed-datasets.md)を生成するための機能を提供<xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.RowChanging>イベント ハンドラー。 詳細については、[n 層データセットに検証を追加](../data-tools/add-validation-to-an-n-tier-dataset.md)を参照してください。  
   
 ### <a name="to-add-code-to-datasets-in-n-tier-applications"></a>N 層アプリケーションのデータセットにコードを追加するには  
   

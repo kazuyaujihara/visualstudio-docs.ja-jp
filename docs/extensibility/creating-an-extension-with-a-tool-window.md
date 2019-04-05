@@ -31,7 +31,7 @@ ms.locfileid: "58194150"
 
 3. プロジェクトをビルドし、デバッグを開始します。
 
-   Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、次を参照してください。[実験用インスタンス](../extensibility/the-experimental-instance.md)します。
+   Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、[実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
 
 4. 実験用のインスタンスに移動**ビュー** > **その他の Windows**します。
 

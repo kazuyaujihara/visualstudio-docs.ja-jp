@@ -23,7 +23,7 @@ ms.author: gewarren
 manager: erikre
 ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49231687"
@@ -45,11 +45,11 @@ ms.locfileid: "49231687"
   
 |ツールボックス名|アクティビティ|説明|  
 |------------------|--------------|-----------------|  
-|**状態**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|ステート マシン; の状態を表しますその他を含めることができます**StateActivity**アクティビティ。 詳細については、次を参照してください。 [StateActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65083)します。|  
-|**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|新しいステート (状態) への移行を指定します。 詳細については、次を参照してください。 [SetStateActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65082)します。|  
-|**StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|あるステートに移行する (他のアクティビティも同時に指定可) と実行されます。 詳細については、次を参照してください。 [StateInitialization アクティビティを使用して](http://go.microsoft.com/fwlink?LinkID=65006)します。|  
-|**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|終了時に含まれているアクティビティの実行、 [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)アクティビティ。 詳細については、次を参照してください。 [StateFinalizationActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65008)します。|  
-|**EventDriven**|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|外部イベントによって実行開始されるステートに使用されます。 **EventDrivenActivity**アクティビティにアクティビティを実装する必要があります、 [IEventActivity](http://go.microsoft.com/fwlink?LinkID=65032)最初の子アクティビティとしてインターフェイス。 詳細については、次を参照してください。 [EventDrivenActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65068)します。|  
+|**状態**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|ステート マシン; の状態を表しますその他を含めることができます**StateActivity**アクティビティ。 詳細については、[StateActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65083)を参照してください。|  
+|**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|新しいステート (状態) への移行を指定します。 詳細については、[SetStateActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65082)を参照してください。|  
+|**StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|あるステートに移行する (他のアクティビティも同時に指定可) と実行されます。 詳細については、[StateInitialization アクティビティを使用して](http://go.microsoft.com/fwlink?LinkID=65006)を参照してください。|  
+|**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|終了時に含まれているアクティビティの実行、 [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)アクティビティ。 詳細については、[StateFinalizationActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65008)を参照してください。|  
+|**EventDriven**|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|外部イベントによって実行開始されるステートに使用されます。 **EventDrivenActivity**アクティビティにアクティビティを実装する必要があります、 [IEventActivity](http://go.microsoft.com/fwlink?LinkID=65032)最初の子アクティビティとしてインターフェイス。 詳細については、[EventDrivenActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65068)を参照してください。|  
   
  ステート マシン ワークフローの主なコンポーネントは、 [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)アクティビティ。 ステート マシン ワークフロー内のさまざまなポイントでイベントがキャプチャされると、イベントに関連したタスクを処理するさまざまなステートに移行します。 有効期間中、ワークフローはいくつかの異なるステート間を遷移します。 これらの状態を使用して相互に接続する、 [SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)アクティビティ。  
   

@@ -29,7 +29,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0f44dc85d6378f4a8303fac846ad32528081b54b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51797768"
@@ -39,7 +39,7 @@ ms.locfileid: "51797768"
 
 表の凡例 :   
   
- ここでは、Web アプリケーションの一般的なデバッグ テクニックについて説明します。 詳細については、次を参照してください。[デバッガーの基本事項](../debugger/debugger-basics.md)します。  
+ ここでは、Web アプリケーションの一般的なデバッグ テクニックについて説明します。 詳細については、[デバッガーの基本事項](../debugger/debugger-basics.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [ASP.NET アプリケーションおよび AJAX アプリケーションのデバッグ](../debugger/debugging-aspnet-and-ajax-applications.md)  

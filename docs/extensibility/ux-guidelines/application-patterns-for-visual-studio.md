@@ -357,7 +357,7 @@ Visual Studio でのダイアログ ボックスでは、2 つの基本的なス
 ### <a name="common-conventions"></a>一般的な規則
 最適な設計とをダイアログ ボックスを使用して機能を実現するには、ダイアログのサイズ、位置、標準、制御の構成と配置、UI テキスト、タイトル バー、コントロールのボタン、およびアクセス キーでこれらの規則に従います。
 
-レイアウトに固有のガイドラインについては、次を参照してください。 [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)します。
+レイアウトに固有のガイドラインについては、[Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)を参照してください。
 
 #### <a name="size"></a>サイズ
 ダイアログ ボックスが最小 1024 x 768 の画面解像度内に収まる必要があり、最初のダイアログのサイズは 700 900 ピクセルを超えることはできません。 ダイアログ ボックスは、サイズを変更できる可能性がありますが、必須ではありません。

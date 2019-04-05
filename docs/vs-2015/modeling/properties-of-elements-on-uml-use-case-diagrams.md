@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: a81f7630a1a903af2f9c21aee3249ea6fe156af2
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51762822"
@@ -30,7 +30,7 @@ ms.locfileid: "51762822"
 UML ユース ケース図では、図の各要素にプロパティが存在します。 要素のプロパティを表示するには、図、または要素を右クリックして**UML モデル エクスプ ローラー**し**プロパティ**します。 プロパティが表示されます、**プロパティ**ウィンドウ。  
   
 > [!NOTE]
->  このトピックでは、UML ユース ケース図の要素のプロパティについて説明します。 UML アクティビティ図を読み取る方法の詳細については、次を参照してください。 [UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)します。 UML アクティビティ図を描画する方法の詳細については、次を参照してください。 [UML ユース ケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。  
+>  このトピックでは、UML ユース ケース図の要素のプロパティについて説明します。 UML アクティビティ図を読み取る方法の詳細については、[UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)を参照してください。 UML アクティビティ図を描画する方法の詳細については、[UML ユース ケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)を参照してください。  
   
 ## <a name="properties-of-elements"></a>要素のプロパティ  
   
@@ -48,7 +48,7 @@ UML ユース ケース図では、図の各要素にプロパティが存在し
 |**直接インスタンス化します。**|True|サブシステム|サブシステムは、設計の成果物としてのみ存在します。 実行時には、そのパートのみ存在します。|  
 |**ハイパーリンク**|(なし)|成果物|成果物からのリンクが設定された図またはドキュメントの URL またはファイル パス。|  
   
- 関連付けのプロパティの一覧では、次を参照してください。 [uml の関連付けのプロパティにクラス ダイアグラム](../modeling/properties-of-associations-on-uml-class-diagrams.md)します。  
+ 関連付けのプロパティの一覧では、[uml の関連付けのプロパティにクラス ダイアグラム](../modeling/properties-of-associations-on-uml-class-diagrams.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)   

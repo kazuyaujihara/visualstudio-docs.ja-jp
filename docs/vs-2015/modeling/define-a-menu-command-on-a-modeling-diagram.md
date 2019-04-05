@@ -74,9 +74,9 @@ Visual Studio では、UML 図のショートカット メニューに追加の�
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)を使用してコンポーネントを定義する。                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        モデル要素のプロパティを読み取り、変更する。                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      モデル要素を生成する、図のシェイプを変更する。                                                                                       |
-   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[バージョン]                                                                                  | モデル イベント ハンドラーを定義する。<br /><br /> モデルに対する一連の変更をカプセル化する。 詳細については、次を参照してください。[トランザクションを使用してモデルの更新をリンク UML](../modeling/link-uml-model-updates-by-using-transactions.md)します。 |
+   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[バージョン]                                                                                  | モデル イベント ハンドラーを定義する。<br /><br /> モデルに対する一連の変更をカプセル化する。 詳細については、[トランザクションを使用してモデルの更新をリンク UML](../modeling/link-uml-model-updates-by-using-transactions.md)を参照してください。 |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[バージョン]<br /><br /> (必須ではない)                                                             |                                                                                   ジェスチャ ハンドラーの追加の図要素にアクセスする。                                                                                   |
-   | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> レイヤー図上のコマンドにのみ必要。 詳細については、次を参照してください。[レイヤー図を拡張](../modeling/extend-layer-diagrams.md)します。 |                                                                                             レイヤー図上のコマンドを定義する。                                                                                              |
+   | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> レイヤー図上のコマンドにのみ必要。 詳細については、[レイヤー図を拡張](../modeling/extend-layer-diagrams.md)を参照してください。 |                                                                                             レイヤー図上のコマンドを定義する。                                                                                              |
 
 
 3. プロジェクトにクラス ファイルを追加し、その内容を次のコードに設定します。  
@@ -201,7 +201,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 ```  
 
 ### <a name="navigating-and-updating-the-model"></a>モデルをナビゲートおよび更新する  
- UML モデルの要素は、すべて API を通じて使用できます。 現在の選択項目から、またはモデルのルートから、その他すべての要素にアクセスすることができます。 詳細については、次を参照してください。 [UML モデル内を移動](../modeling/navigate-the-uml-model.md)と[UML API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)します。  
+ UML モデルの要素は、すべて API を通じて使用できます。 現在の選択項目から、またはモデルのルートから、その他すべての要素にアクセスすることができます。 詳細については、[UML モデル内を移動](../modeling/navigate-the-uml-model.md)と[UML API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)を参照してください。  
 
  シーケンス図を処理する場合も参照してください[UML API を使用して編集 UML シーケンス図](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)します。  
 
@@ -212,7 +212,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 ### <a name="use-the-ui-thread-for-updates"></a>更新の際の UI スレッドの使用  
  バックグラウンド スレッドからモデルの更新を行うと便利な場合があります。 たとえば、コマンドを使用して低速なリソースからデータを読み込む場合は、その処理をバックグラウンド スレッドで実行できます。これにより、ユーザーは実行中の変更を確認し、必要に応じて操作を取り消すことができます。  
 
- ただし、モデル ストアがスレッド セーフでないことに注意してください。 更新を行うには、必ずユーザー インターフェイス (UI) スレッドを使用する必要があります。可能な場合は、バックグラウンド操作の実行中にユーザーが編集を行えないようにしてください。 例については、次を参照してください。[バック グラウンド スレッドから UML モデルを更新](../modeling/update-a-uml-model-from-a-background-thread.md)します。  
+ ただし、モデル ストアがスレッド セーフでないことに注意してください。 更新を行うには、必ずユーザー インターフェイス (UI) スレッドを使用する必要があります。可能な場合は、バックグラウンド操作の実行中にユーザーが編集を行えないようにしてください。 例については、[バック グラウンド スレッドから UML モデルを更新](../modeling/update-a-uml-model-from-a-background-thread.md)を参照してください。  
 
 ##  <a name="Executing"></a> メニュー コマンドの実行  
  テストを行う場合は、コマンドをデバッグ モードで実行します。  

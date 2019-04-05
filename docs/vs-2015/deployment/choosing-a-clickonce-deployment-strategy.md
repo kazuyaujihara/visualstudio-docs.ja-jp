@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 54bf4f58a4cfe8622e12b3808ea9f36c8cf1ee49
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49175631"
@@ -40,14 +40,14 @@ ms.locfileid: "49175631"
 -   Web またはネットワーク共有からのアプリケーションの起動  
   
     > [!NOTE]
-    >  配置ストラテジを選択するだけでなく、アプリケーションの更新プログラムを提供するストラテジも選択する必要があります。 詳細については、次を参照してください。 [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)します。  
+    >  配置ストラテジを選択するだけでなく、アプリケーションの更新プログラムを提供するストラテジも選択する必要があります。 詳細については、[ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)を参照してください。  
   
 ## <a name="install-from-the-web-or-a-network-share"></a>Web またはネットワーク共有からのインストール  
  このストラテジを使用すると、アプリケーションが Web サーバーまたはネットワーク ファイル共有に配置されます。 エンド ユーザーがアプリケーションをインストールするときは、Web ページのアイコンをクリックするか、ファイル共有のアイコンをダブルクリックします。 これで、アプリケーションがユーザーのコンピューターにダウンロードされ、インストールされて起動します。 項目を追加、**開始**メニューと**プログラム追加と削除**で**コントロール パネルの**です。  
   
  このストラテジはネットワーク接続に依存するため、ローカル エリア ネットワークや高速インターネット接続にアクセスできるユーザーのコンピューターにアプリケーションを配置する場合に最適です。  
   
- アプリケーションを Web から配置する場合は、そのアプリケーションが URL を使用してアクティブ化されるときに、アプリケーションに引数を渡すことができます。 詳細については、次を参照してください。[方法: オンライン ClickOnce アプリケーションでのクエリ文字列情報の取得](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)します。 ここで説明されている他の方法でアクティブ化されるアプリケーションには、引数を渡すことができません。  
+ アプリケーションを Web から配置する場合は、そのアプリケーションが URL を使用してアクティブ化されるときに、アプリケーションに引数を渡すことができます。 詳細については、[方法: オンライン ClickOnce アプリケーションでのクエリ文字列情報の取得](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)を参照してください。 ここで説明されている他の方法でアクティブ化されるアプリケーションには、引数を渡すことができません。  
   
  この配置ストラテジを有効にする[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、 をクリックして**From the Web**または**UNC パスまたはファイル共有**上、**のインストール方法**発行ウィザードのページ。  
   

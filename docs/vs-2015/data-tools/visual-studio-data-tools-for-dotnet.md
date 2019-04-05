@@ -1,29 +1,27 @@
 ---
 title: .NET 用の visual Studio データ ツール |Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: da5578321e9c637b12ffbb253a9c0d4c4f87dfe9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859708"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002719"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET 用の Visual Studio データ ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio と .NET Framework は、さら広範な API とツールのデータベースへの接続、メモリ内のデータのモデリング、およびユーザー インターフェイスにデータを表示するためのサポートを提供します。  データ アクセス機能を提供する .NET Framework クラスと呼ばれます[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx)します。 Visual Studio で、ツール、データと共に、ADO.NET は、リレーショナル データベースと XML をサポートするには、主にもともと設計されています。 最近は、多くの NoSQL データベース ベンダー、または、第三者の ADO.NET プロバイダーを提供します。  
   
- Visual Studio 2015 Update 2 には最新の更新プログラムが含まれています[SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)、Azure での最新機能のサポートを有効にする[SQL Database](https://azure.microsoft.com/en-us/services/sql-database/)と[SQL Server 2016](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2016/). [.NET core](https://www.dotnetfoundation.org/netcore)データセットおよび関連する型を除く、ADO.NET をサポートしています。 .NET Core をターゲットにして、オブジェクト リレーショナル マッピング (ORM) レイヤーを必要とする場合は、使用[Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx)します。  
+ Visual Studio 2015 Update 2 には最新の更新プログラムが含まれています[SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)、Azure での最新機能のサポートを有効にする[SQL Database](https://azure.microsoft.com/services/sql-database/)と[SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project)データセットおよび関連する型を除く、ADO.NET をサポートしています。 .NET Core をターゲットにして、オブジェクト リレーショナル マッピング (ORM) レイヤーを必要とする場合は、使用[Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx)します。  
   
  次の図は、基本的なアーキテクチャの概略を示します。  
   
@@ -41,7 +39,7 @@ Visual Studio と .NET Framework は、さら広範な API とツールのデー
   
 5. 点など、ビジネス ルール、検索、およびデータの検証、または基になるデータベースを公開するカスタム機能を活用するためのカスタム コードを追加します。  
   
-   手順 3. を省略し、モデルを使用するのではなく、データベースに直接コマンドを発行する .NET アプリケーションをプログラミングできます。 この場合は、ここで、関連するドキュメントが表示されます: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx)します。 使用することもできる、データ ソース構成ウィザードとデザイナー メモリとし、それらのオブジェクトを UI コントロールをデータ バインドで、独自のオブジェクトの値を設定する際に、データ バインド コードを生成するに注意してください。  
+   手順 3. を省略し、モデルを使用するのではなく、データベースに直接コマンドを発行する .NET アプリケーションをプログラミングできます。 この場合は、ここで、関連するドキュメントが表示されます。[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx)します。 使用することもできる、データ ソース構成ウィザードとデザイナー メモリとし、それらのオブジェクトを UI コントロールをデータ バインドで、独自のオブジェクトの値を設定する際に、データ バインド コードを生成するに注意してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -69,10 +67,3 @@ Visual Studio と .NET Framework は、さら広範な API とツールのデー
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのデータへのアクセス](../data-tools/accessing-data-in-visual-studio.md)
-
-
-
-
-
-
-

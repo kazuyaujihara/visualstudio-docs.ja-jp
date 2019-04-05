@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 7aac774f64d79d2d28cc690550abb7a84b7d3674
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51778749"
@@ -37,7 +37,7 @@ Visual Studio には、windows アプリ、およびツール ウィンドウ、
   
  ツール ウィンドウは、既定では単一インスタンスです、つまり、一度に開くことができるツール ウィンドウのインスタンスは 1 つのみです。 単一インスタンスのツール ウィンドウを開いた後は、IDE が閉じられるまで開いたままです。 単一インスタンスのツール ウィンドウを閉じるときに、可視性のみを変更します。 複数インスタンスのツール ウィンドウを作成して、ウィンドウの複数のインスタンスを同時に開くことも可能です。 参照してください[マルチ インスタンスのツール ウィンドウの作成](../extensibility/creating-a-multi-instance-tool-window.md)詳細についてはします。  
   
- ツール ウィンドウを指定できます*動的*、表示される、関連する UI コンテキストが適用されるたびを意味します。 自動表示の使用により、IDE でのウィンドウの煩雑さが軽減されます。 詳細については、次を参照してください。[動的なツール ウィンドウを開く](../extensibility/opening-a-dynamic-tool-window.md)します。  
+ ツール ウィンドウを指定できます*動的*、表示される、関連する UI コンテキストが適用されるたびを意味します。 自動表示の使用により、IDE でのウィンドウの煩雑さが軽減されます。 詳細については、[動的なツール ウィンドウを開く](../extensibility/opening-a-dynamic-tool-window.md)を参照してください。  
   
  ツール ウィンドウは、ドッキング、フローティング、またはドキュメント フレームのタブ付けが可能です。 ツール ウィンドウの枠は IDE によって提供され、サイズ、位置、ドッキング状態と、その他の永続的なプロパティを制御するために使用します。 ツール ウィンドウのペインには、内容が表示されます。 既定のサイズと位置はツール ウィンドウを最初に開くときにのみ適用されます。その後、ツール ウィンドウの状態は保持されます。  
   
@@ -48,7 +48,7 @@ Visual Studio には、windows アプリ、およびツール ウィンドウ、
  ツール ウィンドウのイベントにサブスクライブすることができます:[イベントのサブスクライブ](../extensibility/subscribing-to-an-event.md)します。  
   
 ## <a name="extending-existing-tool-windows"></a>既存のツールの Windows の拡張  
- ツール ウィンドウに関する情報を追加するには、新しい**オプション**ページと、新しい設定で、**プロパティ** ページへの書き込み、**タスク一覧**と**出力** windows。 詳細については、次を参照してください。[プロパティ、タスク一覧、出力、およびオプションの Windows の拡張](../extensibility/extending-the-properties-task-list-output-and-options-windows.md)と[プロパティ、タスク一覧、出力、およびオプションの Windows の拡張](../extensibility/extending-the-properties-task-list-output-and-options-windows.md)します。  
+ ツール ウィンドウに関する情報を追加するには、新しい**オプション**ページと、新しい設定で、**プロパティ** ページへの書き込み、**タスク一覧**と**出力** windows。 詳細については、[プロパティ、タスク一覧、出力、およびオプションの Windows の拡張](../extensibility/extending-the-properties-task-list-output-and-options-windows.md)と[プロパティ、タスク一覧、出力、およびオプションの Windows の拡張](../extensibility/extending-the-properties-task-list-output-and-options-windows.md)を参照してください。  
   
 ## <a name="modal-dialog-boxes"></a>モーダル ダイアログ ボックス  
  Visual Studio 拡張機能から派生してモーダル ダイアログ ボックスを作成する必要があります<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>、し、残りの UI を制御できます。 詳細については、次を参照してください。 [作成して、モーダル ダイアログ ボックスを管理する](../extensibility/creating-and-managing-modal-dialog-boxes.md)します。  

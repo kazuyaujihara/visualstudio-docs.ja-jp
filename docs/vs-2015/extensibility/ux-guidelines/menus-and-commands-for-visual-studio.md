@@ -15,7 +15,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: e75a800ab86cc1ec902382bee06efd65c276b046
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51804495"
@@ -236,11 +236,11 @@ ms.locfileid: "51804495"
   
 #### <a name="when-naming-commands"></a>ときに名前を付けるコマンド。  
   
--   簡単にローカライズされるようにテキストを構築します。 詳細テキストのローカライズについては、次を参照してください。 [for Visual Studio の国際対応](http://msdn.microsoft.com/en-us/1cc35051-8126-441f-bea9-059245a47b1d)します。  
+-   簡単にローカライズされるようにテキストを構築します。 詳細テキストのローカライズについては、[for Visual Studio の国際対応](http://msdn.microsoft.com/en-us/1cc35051-8126-441f-bea9-059245a47b1d)を参照してください。  
   
 -   簡潔にします。 コマンドは、以下の 3 つの単語を使用する必要があります。  
   
--   タイトル文字の大文字と小文字を使用します。 各単語の最初の文字が大文字で入力する必要があります。 Visual Studio でのテキスト書式の詳細については、次を参照してください。[テキストのスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)します。  
+-   タイトル文字の大文字と小文字を使用します。 各単語の最初の文字が大文字で入力する必要があります。 Visual Studio でのテキスト書式の詳細については、[テキストのスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)を参照してください。  
   
 -   コマンドを配置する場所を考慮に入れる。 最上位のメニューまたはフライアウトのですか。 などとポップアップで、最上位レベルのコマンドの配置コマンドをグループ化する必要があります「配置」とフライアウトのコマンドする必要があります"Justify""Left""Right"、"Center、"なり具合です。 フライアウト コマンド「左揃え」または"Align Right です"という名前に重複します。  
   

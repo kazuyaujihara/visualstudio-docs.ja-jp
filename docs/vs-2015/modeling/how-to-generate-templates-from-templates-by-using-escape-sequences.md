@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: fd3a54c69b33e503908217b9d0d83c6f61c6380a
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49249419"
@@ -24,7 +24,7 @@ ms.locfileid: "49249419"
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>方法: エスケープ シーケンスを使用してテンプレートからテンプレートを生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-生成されたテキスト出力として別のテキスト テンプレートを作成するテキスト テンプレートを作成することができます。 これを行うには、エスケープ シーケンスを使用して、テキスト テンプレートのタグを区切る必要があります。 エスケープ シーケンスを使用しない場合、生成されたテキスト テンプレートが定義済みの意味になります。 テキスト テンプレートでエスケープ シーケンスの使用に関する詳細については、次を参照してください。[テキスト テンプレートでのエスケープ シーケンスを使用して](../modeling/using-escape-sequences-in-text-templates.md)します。  
+生成されたテキスト出力として別のテキスト テンプレートを作成するテキスト テンプレートを作成することができます。 これを行うには、エスケープ シーケンスを使用して、テキスト テンプレートのタグを区切る必要があります。 エスケープ シーケンスを使用しない場合、生成されたテキスト テンプレートが定義済みの意味になります。 テキスト テンプレートでエスケープ シーケンスの使用に関する詳細については、[テキスト テンプレートでのエスケープ シーケンスを使用して](../modeling/using-escape-sequences-in-text-templates.md)を参照してください。  
   
 ### <a name="to-generate-a-text-template-from-within-a-text-template"></a>テキスト テンプレート内のテキスト テンプレートを生成するには  
   

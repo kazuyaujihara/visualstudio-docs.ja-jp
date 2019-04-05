@@ -20,7 +20,7 @@ ms.lasthandoff: 02/21/2019
 ms.locfileid: "56605121"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>チュートリアル: SharePoint の OData を表示する Silverlight web パーツを作成します。
-  SharePoint 2010 では、OData を使用してそのリストのデータを公開します。 SharePoint では、OData サービスは、RESTful サービス ListData.svc によって実装されます。 このチュートリアルでは、Silverlight アプリケーションをホストする SharePoint web パーツを作成する方法を示します。 Silverlight アプリケーションでは、ListData.svc を使用して SharePoint のお知らせリストの情報が表示されます。 詳細については、次を参照してください。 [SharePoint Foundation REST インターフェイス](http://go.microsoft.com/fwlink/?LinkId=225999)と[Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000)します。
+  SharePoint 2010 では、OData を使用してそのリストのデータを公開します。 SharePoint では、OData サービスは、RESTful サービス ListData.svc によって実装されます。 このチュートリアルでは、Silverlight アプリケーションをホストする SharePoint web パーツを作成する方法を示します。 Silverlight アプリケーションでは、ListData.svc を使用して SharePoint のお知らせリストの情報が表示されます。 詳細については、[SharePoint Foundation REST インターフェイス](http://go.microsoft.com/fwlink/?LinkId=225999)と[Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000)を参照してください。
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -53,7 +53,7 @@ ms.locfileid: "56605121"
 
 6. **この SharePoint ソリューションの信頼レベルとは何ですか?** セクションで、選択、**ファーム ソリューションとして配置**オプション ボタンをクリックします。
 
-    この例では、ファーム ソリューションでは、Silverlight web パーツ プロジェクトは、ファームまたはサンド ボックス ソリューションとしてデプロイできます。 サンド ボックス ソリューションとファーム ソリューションの詳細については、次を参照してください。[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)します。
+    この例では、ファーム ソリューションでは、Silverlight web パーツ プロジェクトは、ファームまたはサンド ボックス ソリューションとしてデプロイできます。 サンド ボックス ソリューションとファーム ソリューションの詳細については、[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)を参照してください。
 
 7. **Silverlight Web パーツを関連付ける方法**のセクション、 **Silverlight 構成情報の指定**ページで、選択、**新しい Silverlight プロジェクトを作成し、web パーツに関連付ける**オプション ボタンをクリックします。
 
@@ -227,7 +227,7 @@ ms.locfileid: "56605121"
      Silverlight web パーツは、ここで、SharePoint サイトからお知らせのデータを表示している必要があります。 既定では、ページは、SharePoint のサイト ページのリストに格納されます。
 
     > [!NOTE]
-    >  Silverlight のドメイン間でのデータにアクセスするときに Silverlight web アプリケーションを攻撃に使用できるセキュリティの脆弱性を防止します。 Silverlight でのリモート データにアクセスするときに問題が発生した場合は、次を参照してください。[使用可能なドメインの境界を越えてサービスを行う](http://go.microsoft.com/fwlink/?LinkId=223276)します。
+    >  Silverlight のドメイン間でのデータにアクセスするときに Silverlight web アプリケーションを攻撃に使用できるセキュリティの脆弱性を防止します。 Silverlight でのリモート データにアクセスするときに問題が発生した場合は、[使用可能なドメインの境界を越えてサービスを行う](http://go.microsoft.com/fwlink/?LinkId=223276)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [For SharePoint の web パーツを作成します。](../sharepoint/creating-web-parts-for-sharepoint.md)

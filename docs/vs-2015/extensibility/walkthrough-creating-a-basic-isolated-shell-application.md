@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 901bbf12c9c1d153b84b3ed74f6ae8e97ebb2c9b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51777319"
@@ -30,7 +30,7 @@ ms.locfileid: "51777319"
 このチュートリアルでは、分離シェルのソリューションを作成し、バージョン情報 ツール ウィンドウをカスタマイズして、分離シェルをインストールするセットアップ プログラムを作成する方法を示します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。 分離シェルを展開するには、Visual Studio Shell (Isolated) 再頒布可能パッケージを使用することも必要があります。  
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。 分離シェルを展開するには、Visual Studio Shell (Isolated) 再頒布可能パッケージを使用することも必要があります。  
   
 ## <a name="creating-an-isolated-shell-solution"></a>分離シェルのソリューションの作成  
  このセクションでは、Visual Studio 分離シェル プロジェクト テンプレートを使用して、分離シェルのソリューションを作成する方法を示します。 ソリューションには、次のプロジェクトが含まれています。  
@@ -110,7 +110,7 @@ ms.locfileid: "51777319"
  Visual Studio で、カスタムの分離シェル アプリケーションでこれらの機能を設定したくない場合は、.pkgundef ファイルを編集することによって読み込まれるパッケージの一部を削除できます。 $RootKey$ \Packages レジストリ キーのサブキーのいずれかでは、パッケージを指定します。  
   
 > [!NOTE]
->  Visual Studio の Guid の機能を検索するには、次を参照してください。[パッケージ Guid の Visual Studio 機能](../extensibility/package-guids-of-visual-studio-features.md)します。  
+>  Visual Studio の Guid の機能を検索するには、[パッケージ Guid の Visual Studio 機能](../extensibility/package-guids-of-visual-studio-features.md)を参照してください。  
   
  次の手順では、分離シェルから、エディター、XML を削除する方法を示します。  
   

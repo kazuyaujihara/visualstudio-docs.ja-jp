@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 36aa6df6c0b904ad11f0027c4e01368a9c864b8a
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51781672"
@@ -33,7 +33,7 @@ ms.locfileid: "51781672"
   
  カスタム ツールを生成する出力ファイルは、入力ファイルへの依存関係をプロジェクトに追加されます。 プロジェクト システムのカスタム ツールの実装によって返される文字列に基づいて、出力ファイルの名前を自動的に決定する<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>します。  
   
- カスタム ツールを実装する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>インターフェイス。 必要に応じて、カスタム ツールのサポート、<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>インターフェイスは、入力ファイル以外のソースから情報を取得します。 いずれの場合も、カスタム ツールを使用する前に登録すると、システムまたは、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ローカル レジストリ。 カスタム ツールを登録する方法の詳細については、次を参照してください。[単一ファイル ジェネレーターの登録](../../extensibility/internals/registering-single-file-generators.md)します。  
+ カスタム ツールを実装する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>インターフェイス。 必要に応じて、カスタム ツールのサポート、<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>インターフェイスは、入力ファイル以外のソースから情報を取得します。 いずれの場合も、カスタム ツールを使用する前に登録すると、システムまたは、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ローカル レジストリ。 カスタム ツールを登録する方法の詳細については、[単一ファイル ジェネレーターの登録](../../extensibility/internals/registering-single-file-generators.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [プロジェクトの既定の Namespace を決定します。](../../misc/determining-the-default-namespace-of-a-project.md)   

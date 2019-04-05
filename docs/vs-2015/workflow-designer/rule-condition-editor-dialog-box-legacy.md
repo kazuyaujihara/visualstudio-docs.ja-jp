@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: erikre
 ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49838544"
@@ -82,7 +82,7 @@ ms.locfileid: "49838544"
   
   this.i == 1U (unsigned int として解決)  
   
-  条件の詳細については、次を参照してください。[ワークフロー内の条件を使用して](http://go.microsoft.com/fwlink?LinkID=65009)します。  
+  条件の詳細については、[ワークフロー内の条件を使用して](http://go.microsoft.com/fwlink?LinkID=65009)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   

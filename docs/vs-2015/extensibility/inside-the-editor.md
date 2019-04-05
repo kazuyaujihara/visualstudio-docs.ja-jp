@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: ddca5ab4b0d7dc6aa43f3db8c641ad5fc9e583b2
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51735182"
@@ -97,7 +97,7 @@ ms.locfileid: "51735182"
  文字のシーケンス、または行のシーケンスとしては、テキストのスナップショットの内容を表示できます。 行の文字とは、0 から始まるインデックス両方が。 空のテキストのスナップショットには、ゼロの文字と 1 つの空の行が含まれています。 行は、有効な Unicode の改行文字シーケンス、または先頭またはバッファーの末尾で区切られます。 改行文字は、テキストのスナップショットに明示的に表現し、テキスト スナップショット内の改行はすべて同じであるがします。  
   
 > [!NOTE]
->  Visual Studio エディターでの改行文字の詳細については、次を参照してください。[エンコーディングと改行](../ide/encodings-and-line-breaks.md)します。  
+>  Visual Studio エディターでの改行文字の詳細については、[エンコーディングと改行](../ide/encodings-and-line-breaks.md)を参照してください。  
   
  によって表される行のテキスト、<xref:Microsoft.VisualStudio.Text.ITextSnapshotLine>オブジェクトで、特定の行番号または特定の文字位置のテキスト スナップショットから取得できます。  
   

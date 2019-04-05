@@ -37,7 +37,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: f67a891327d179ffd23b56eb5bae951309bab8da
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51725610"
@@ -57,7 +57,7 @@ ms.locfileid: "51725610"
   
   参照:[ビデオ: コード マップ デバッガーの統合 (チャネル 9) で視覚的にデバッグ](http://go.microsoft.com/fwlink/?LinkId=293418)•[呼び出し履歴でマップ](#MapStack)•[コードに関するメモを作成](#MakeNotes)•[でマップを更新します次の呼び出し履歴](#UpdateMap)•[マップに関連するコードを追加](#AddRelatedCode)•[マップを使用してバグの検索](#FindBugs)• [Q & A](#QA)  
   
-  コマンドとコード マップを使用する場合に使用できる操作の詳細については、次を参照してください。[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)します。  
+  コマンドとコード マップを使用する場合に使用できる操作の詳細については、[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)を参照してください。  
   
 ##  <a name="MapStack"></a> 呼び出し履歴でマップします。  
   

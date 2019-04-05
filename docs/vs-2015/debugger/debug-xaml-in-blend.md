@@ -21,7 +21,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8b01fdc6962ea5a564537a083be4e9993533f1e4
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51728104"
@@ -47,7 +47,7 @@ ms.locfileid: "51728104"
   
 - XAML 要素が許可されていない場所にある。  
   
-  共通 XAML 構文の詳細については、次を参照してください。[基本的な XAML 構文のガイド](http://go.microsoft.com/fwlink/?LinkId=329942)します。  
+  共通 XAML 構文の詳細については、[基本的な XAML 構文のガイド](http://go.microsoft.com/fwlink/?LinkId=329942)を参照してください。  
   
   また、[!INCLUDE[blend_subs](../includes/blend-subs-md.md)] での単純な分離コード構文エラー、コンパイル エラー、およびランタイム エラーを識別して、解決できます。 ただし、分離コード エラーは Visual Studio で識別して解決する方が簡単です。  
   
@@ -128,7 +128,7 @@ ms.locfileid: "51728104"
 ## <a name="debugging-in-visual-studio"></a>Visual Studio でのデバッグ  
  アプリ内のコードをさらに簡単にデバッグするために、Visual Studio で [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] プロジェクトを開くことができます。 開くには、 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] Visual Studio でプロジェクトでのプロジェクトを右クリックし、**プロジェクト**パネルをクリックして**Visual Studio で編集**。 Visual Studio でデバッグ セッションを完了したら、Ctrl + Shift + S キーを押してすべての変更を保存し、[!INCLUDE[blend_subs](../includes/blend-subs-md.md)] に戻ります。 プロジェクトの再読み込みを求めるメッセージが表示されます。 クリックして**すべてはい**操作を続行する[!INCLUDE[blend_subs](../includes/blend-subs-md.md)]します。  
   
- アプリのデバッグの詳細については、次を参照してください。 [Visual Studio でのデバッグの Windows ストア アプリ](http://go.microsoft.com/fwlink/?LinkId=329944)します。  
+ アプリのデバッグの詳細については、[Visual Studio でのデバッグの Windows ストア アプリ](http://go.microsoft.com/fwlink/?LinkId=329944)を参照してください。  
   
 ## <a name="getting-help"></a>ヘルプ情報の入手  
  デバッグのヘルプが必要な場合、[!INCLUDE[blend_subs](../includes/blend-subs-md.md)]アプリを検索できます、 [Windows ストア アプリのコミュニティ フォーラム](http://go.microsoft.com/fwlink/?LinkId=280308)投稿、問題に関連の質問を投稿します。

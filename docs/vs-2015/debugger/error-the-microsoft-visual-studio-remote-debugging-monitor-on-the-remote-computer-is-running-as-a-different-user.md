@@ -31,7 +31,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2961aed55df241bce3c67eaa4c8630bac1e65f65
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51722121"
@@ -52,7 +52,7 @@ ms.locfileid: "51722121"
 > [!CAUTION]
 >  他のユーザーに接続する許可を与えると、誤ったリモート デバッグ セッションに接続してしまう可能性があります。 デバッグ**認証なし**モードがセキュリティで保護することはありませんし、注意して使用する必要があります。  
   
- 詳細については、次を参照してください。[リモート デバッグ モニターを起動](http://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c)します。  
+ 詳細については、[リモート デバッグ モニターを起動](http://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)   

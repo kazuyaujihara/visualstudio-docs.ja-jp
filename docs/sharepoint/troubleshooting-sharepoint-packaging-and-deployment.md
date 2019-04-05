@@ -34,10 +34,10 @@ ms.locfileid: "54868041"
   このトピックでは、SharePoint ソリューションをパッケージ化および配置するときに発生する可能性があるさまざまな問題について説明します。
 
 ## <a name="enable-enhanced-debugging"></a>デバッグ機能の強化を有効にします。
- Visual Studio、SharePoint、およびその他のレイヤーの間で問題を診断する場合は、EnableDiagnostics レジストリ キーを使用してスタック トレースを表示することができます。 詳細については、次を参照してください。[デバッグの SharePoint ソリューション](../sharepoint/debugging-sharepoint-solutions.md)します。
+ Visual Studio、SharePoint、およびその他のレイヤーの間で問題を診断する場合は、EnableDiagnostics レジストリ キーを使用してスタック トレースを表示することができます。 詳細については、[デバッグの SharePoint ソリューション](../sharepoint/debugging-sharepoint-solutions.md)を参照してください。
 
 ## <a name="add-project-output-to-the-solution-package"></a>プロジェクト出力ソリューション パッケージを追加します。
- パッケージ デザイナーを使用してパッケージにプロジェクト出力を追加することができます。 ただし、プロジェクト出力を追加する際には、そのプロジェクトのプラットフォームが SharePoint ソリューションのプラットフォームと一致していることを確認する必要があります。 使用することをお勧め、 **Any CPU**を SharePoint サーバーに展開するアセンブリのプラットフォーム ターゲット。 詳細については、次を参照してください。[コンパイル Page, Project Designer &#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md)と[コンパイラ設定 ダイアログ ボックスの高度な&#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)します。
+ パッケージ デザイナーを使用してパッケージにプロジェクト出力を追加することができます。 ただし、プロジェクト出力を追加する際には、そのプロジェクトのプラットフォームが SharePoint ソリューションのプラットフォームと一致していることを確認する必要があります。 使用することをお勧め、 **Any CPU**を SharePoint サーバーに展開するアセンブリのプラットフォーム ターゲット。 詳細については、[コンパイル Page, Project Designer &#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md)と[コンパイラ設定 ダイアログ ボックスの高度な&#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)を参照してください。
 
 ## <a name="validation-warnings-and-errors"></a>検証の警告とエラー
  Visual Studio の SharePoint 開発ツールでは、ソリューション パッケージが正しい形式になっていることを確認するために検証ステップが実行されます。 特定のフィーチャーやパッケージのためのカスタム検証ステップを作成することもできます。 詳細については、「[方法 :SharePoint ソリューションの検証規則を使用したカスタムのフィーチャーとパッケージの作成](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)です。

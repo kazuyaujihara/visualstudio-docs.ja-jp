@@ -25,7 +25,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49948942"
@@ -59,7 +59,7 @@ Windows Server で、インターネット インフォメーション サービ
   
  この機能を有効にする .NET Framework 2.0 修正プログラムを適用することもできます。 詳細については、「 http://go.microsoft.com/fwlink/?LinkId=158730 」を参照してください。  
   
- 詳細については、次を参照してください。 [ \<defaultProxy > 要素 (ネットワーク設定)](http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f)します。  
+ 詳細については、[ \<defaultProxy > 要素 (ネットワーク設定)](http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f)を参照してください。  
   
 ## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce と Web ブラウザーの互換性  
  現時点では、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]配置マニフェストへの URL が Internet Explorer で開かれている場合にのみインストールが起動します。 Internet Explorer が既定の Web ブラウザーとして設定されている場合にのみ、Microsoft Office Outlook などの別のアプリケーションが起動される URL のデプロイが正常に起動します。  
@@ -97,7 +97,7 @@ Windows Server で、インターネット インフォメーション サービ
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce とマップされたドライブ  
- Visual Studio を使用して ClickOnce アプリケーションを発行する場合は、インストール場所として、マップされたドライブを指定できません。 ただし、マニフェスト ジェネレーターおよびエディター (Mage.exe および MageUI.exe) を使用してマップされたドライブからインストールする ClickOnce アプリケーションを変更できます。 詳細については、次を参照してください。 [Mage.exe (マニフェスト生成および編集ツール)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)と[MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)します。  
+ Visual Studio を使用して ClickOnce アプリケーションを発行する場合は、インストール場所として、マップされたドライブを指定できません。 ただし、マニフェスト ジェネレーターおよびエディター (Mage.exe および MageUI.exe) を使用してマップされたドライブからインストールする ClickOnce アプリケーションを変更できます。 詳細については、[Mage.exe (マニフェスト生成および編集ツール)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)と[MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)を参照してください。  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>アプリケーションをインストールする FTP プロトコルがサポートされていません  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] HTTP 1.1 の Web サーバーまたはファイル サーバーからアプリケーションのインストールをサポートします。 アプリケーションをインストールするのには、FTP、ファイル転送プロトコルはサポートされていません。 アプリケーションのみを公開するのに FTP を使用することができます。 次の表は、これらの違いをまとめたものです。  
@@ -138,7 +138,7 @@ Windows Server で、インターネット インフォメーション サービ
   
  IIS を使用している場合、HTTP 圧縮を簡単に実現できます。 ただし、HTTP 圧縮を有効にした場合にのみなっての特定のファイルの種類、つまり、HTML やテキスト ファイル。 アセンブリ (.dll) の圧縮を有効にするには、XML (.xml)、配置マニフェスト (.application)、およびアプリケーション マニフェスト (.manifest) する必要があります追加するファイルの種類を圧縮する IIS の種類の一覧にします。 配置にファイルの種類を追加するまで、テキストや HTML ファイルのみが圧縮されます。  
   
- IIS の詳細な手順については、次を参照してください。 [HTTP 圧縮のドキュメントの種類を指定する方法](http://go.microsoft.com/fwlink/?LinkId=178459)します。  
+ IIS の詳細な手順については、[HTTP 圧縮のドキュメントの種類を指定する方法](http://go.microsoft.com/fwlink/?LinkId=178459)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)   

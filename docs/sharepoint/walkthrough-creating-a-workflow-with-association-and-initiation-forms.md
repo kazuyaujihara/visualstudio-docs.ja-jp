@@ -443,7 +443,7 @@ ms.locfileid: "56627572"
 ## <a name="next-steps"></a>次の手順
  これらのトピックからワークフロー テンプレートを作成する方法の詳細を確認できます。
 
--   SharePoint ワークフローの詳細については、次を参照してください。 [Windows SharePoint Services でのワークフロー](http://go.microsoft.com/fwlink/?LinkID=166275)します。
+-   SharePoint ワークフローの詳細については、[Windows SharePoint Services でのワークフロー](http://go.microsoft.com/fwlink/?LinkID=166275)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint ワークフロー ソリューションを作成します。](../sharepoint/creating-sharepoint-workflow-solutions.md)

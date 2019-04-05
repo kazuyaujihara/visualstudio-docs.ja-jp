@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: erikre
 ms.openlocfilehash: 2508404840db81f03ba4865a3e5d5af91e5c653b
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49187413"
@@ -58,7 +58,7 @@ ms.locfileid: "49187413"
   
 7.  条件の式を入力、**条件**テキスト ボックス。  
   
-     条件式を作成する方法については、次を参照してください。[ルール条件エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)します。  
+     条件式を作成する方法については、[ルール条件エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)を参照してください。  
   
 8.  条件式の作成が完了したら、クリックして**OK**ダイアログ ボックスを閉じ、割り当て済みの名前を持つルールの条件を作成します。  
   

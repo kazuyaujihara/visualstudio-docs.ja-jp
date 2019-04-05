@@ -27,7 +27,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49251852"
@@ -63,7 +63,7 @@ TableAdapter のコンポーネントでは、基に 1 つまたは複数のク�
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
 ## <a name="associated-datatable-schema"></a>関連付けられた DataTable スキーマ  
- TableAdapter を作成するとき、最初のクエリを使用して、TableAdapter のスキーマを定義するストアド プロシージャに関連付けられた<xref:System.Data.DataTable>します。 この最初のクエリを実行するか、ストアド プロシージャを呼び出して、TableAdapter の`Fill`メソッド (TableAdapter の値を格納する機能に関連付けられた<xref:System.Data.DataTable>)。 TableAdapter のメイン クエリに加えられた変更は、関連付けられたデータ テーブルのスキーマに反映されます。 たとえば、メイン クエリから列を削除しても列から削除関連付けられたデータ テーブル。 TableAdapter に関する他のクエリは、メインのクエリにない列を返す SQL ステートメントを使用して、デザイナーは、メインのクエリとその他のクエリの列の変更を同期しようとします。 詳細については、次を参照してください。[方法: Tableadapter の編集](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855)します。  
+ TableAdapter を作成するとき、最初のクエリを使用して、TableAdapter のスキーマを定義するストアド プロシージャに関連付けられた<xref:System.Data.DataTable>します。 この最初のクエリを実行するか、ストアド プロシージャを呼び出して、TableAdapter の`Fill`メソッド (TableAdapter の値を格納する機能に関連付けられた<xref:System.Data.DataTable>)。 TableAdapter のメイン クエリに加えられた変更は、関連付けられたデータ テーブルのスキーマに反映されます。 たとえば、メイン クエリから列を削除しても列から削除関連付けられたデータ テーブル。 TableAdapter に関する他のクエリは、メインのクエリにない列を返す SQL ステートメントを使用して、デザイナーは、メインのクエリとその他のクエリの列の変更を同期しようとします。 詳細については、[方法: Tableadapter の編集](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855)を参照してください。  
   
 ## <a name="tableadapter-update-commands"></a>TableAdapter 更新コマンド  
  TableAdapter の更新機能では、情報の量は、TableAdapter ウィザードで、メイン クエリで使用できるに依存します。 たとえば、複数のテーブル (JOIN)、スカラー値、ビュー、または集約関数の結果から値をフェッチするように設定された TableAdapter の場合、最初の作成時には、基になるデータベースに更新を戻す機能がありません。 ただし、手動で INSERT、UPDATE、および DELETE コマンドを構成することができます、**プロパティ**ウィンドウ。  
@@ -78,7 +78,7 @@ TableAdapter のコンポーネントでは、基に 1 つまたは複数のク�
  TableAdapter のデータ テーブルと同じスキーマのデータを返すクエリを追加するだけでは、スカラー (単一) 値を返すクエリを追加できます。 たとえば、顧客の数を返すクエリ (`SELECT Count(*) From Customers`) は有効です、`CustomersTableAdapter,`場合でも、返されるデータは、テーブルのスキーマに適合していません。  
   
 ## <a name="clearbeforefill-property"></a>ClearBeforeFill プロパティ  
- 既定では、既存のデータを消去すると、TableAdapter のデータ テーブルを格納するクエリを実行するたびに、クエリの結果のみがテーブルに読み込まれます。 TableAdapter の設定`ClearBeforeFill`プロパティを`false`を追加または既存のデータをデータ テーブルにクエリから返されるデータをマージするかどうか。 データを消去するかどうかに関係なく必要があります、データベースに更新プログラムを明示的に送信する場合は、それらを保存します。 テーブルに格納する別のクエリを実行する前に、テーブル内のデータに変更を保存してください。 詳細については、次を参照してください。 [TableAdapter を使用してデータ更新](../data-tools/update-data-by-using-a-tableadapter.md)します。  
+ 既定では、既存のデータを消去すると、TableAdapter のデータ テーブルを格納するクエリを実行するたびに、クエリの結果のみがテーブルに読み込まれます。 TableAdapter の設定`ClearBeforeFill`プロパティを`false`を追加または既存のデータをデータ テーブルにクエリから返されるデータをマージするかどうか。 データを消去するかどうかに関係なく必要があります、データベースに更新プログラムを明示的に送信する場合は、それらを保存します。 テーブルに格納する別のクエリを実行する前に、テーブル内のデータに変更を保存してください。 詳細については、[TableAdapter を使用してデータ更新](../data-tools/update-data-by-using-a-tableadapter.md)を参照してください。  
   
 ## <a name="tableadapter-inheritance"></a>TableAdapter の継承  
  Tableadapter では、標準のデータ アダプターの機能を拡張、構成をカプセル化して<xref:System.Data.Common.DataAdapter>クラスか? qualifyHint = False & autoUpgrade = True。 TableAdapter が継承、既定で、<xref:System.ComponentModel.Component>クラスおよびにキャストすることはできません、<xref:System.Data.Common.DataAdapter>クラス。 TableAdapter をキャスト、<xref:System.Data.Common.DataAdapter>で結果のクラス、<xref:System.InvalidCastException>エラー? qualifyHint = False & autoUpgrade = True。 派生したクラスを入力する TableAdapter の基底クラスを変更する<xref:System.ComponentModel.Component>で、**基底クラス**で TableAdapter のプロパティ、**データセット デザイナー**します。  
@@ -91,9 +91,9 @@ TableAdapter のコンポーネントでは、基に 1 つまたは複数のク�
 |メンバー|説明|  
 |------------|-----------------|  
 |`TableAdapter.Fill`|TableAdapter の関連付けられたデータ テーブルに、TableAdapter の SELECT コマンドの実行結果が格納されます。|  
-|`TableAdapter.Update`|データベースに変更を送信し、更新によって影響を受ける行の数を表す整数を返します。 詳細については、次を参照してください。 [TableAdapter を使用してデータ更新](../data-tools/update-data-by-using-a-tableadapter.md)します。|  
+|`TableAdapter.Update`|データベースに変更を送信し、更新によって影響を受ける行の数を表す整数を返します。 詳細については、[TableAdapter を使用してデータ更新](../data-tools/update-data-by-using-a-tableadapter.md)を参照してください。|  
 |`TableAdapter.GetData`|新しいを返します<xref:System.Data.DataTable>データが格納されます。|  
-|`TableAdapter.Insert`|データ テーブル内に新しい行を作成します。 詳細については、次を参照してください。[データベースに新しいレコードを挿入](../data-tools/insert-new-records-into-a-database.md)します。|  
+|`TableAdapter.Insert`|データ テーブル内に新しい行を作成します。 詳細については、[データベースに新しいレコードを挿入](../data-tools/insert-new-records-into-a-database.md)を参照してください。|  
 |`TableAdapter.ClearBeforeFill`|いずれかの `Fill` メソッドを呼び出す前に、データ テーブルが空になっているかどうかを確認します。|  
   
 ## <a name="tableadapter-update-method"></a>TableAdapter 更新メソッド  
@@ -110,7 +110,7 @@ TableAdapter のコンポーネントでは、基に 1 つまたは複数のク�
  これらのダイレクト メソッドを作成しない場合は、設定、TableAdapter の**GenerateDbDirectMethods**プロパティを`false`(で、**プロパティ**ウィンドウ)。 TableAdapter に追加される追加のクエリはスタンドアロン クエリなど、これらのメソッドを生成しません。  
   
 ## <a name="tableadapter-support-for-nullable-types"></a>Null 許容型の TableAdapter のサポート  
- Null 許容型をサポートする Tableadapter`Nullable(Of T)`と`T?`します。 Visual Basic での null 許容型について詳しくは、「[null 許容値型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)」をご覧ください。 C# の null 許容型の詳細については、次を参照してください。 [null 許容型を使用して](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)します。  
+ Null 許容型をサポートする Tableadapter`Nullable(Of T)`と`T?`します。 Visual Basic での null 許容型について詳しくは、「[null 許容値型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)」をご覧ください。 C# の null 許容型の詳細については、[null 許容型を使用して](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)を参照してください。  
   
 ## <a name="security"></a>セキュリティ  
  データ コマンドを使用すると、`CommandType`プロパティに設定<xref:System.Data.CommandType>、慎重に、データベースに渡す前に、クライアントから送信される情報を確認します。 悪意のあるユーザーが、承認なしでデータベースにアクセスしたり、データベースを破壊したりする目的で、変更した SQL ステートメントや追加の SQL ステートメントの送信 (挿入) を試みる場合があります。 ユーザーの入力をデータベースを転送する前に常に情報が有効なことを確認します。 常にパラメーター化クエリまたは可能であればストアド プロシージャを使用することをお勧めします。  

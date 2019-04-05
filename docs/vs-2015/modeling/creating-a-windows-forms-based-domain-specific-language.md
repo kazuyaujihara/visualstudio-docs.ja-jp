@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: a79ffda3a044424cc863472c32d62228e90cc6fd
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49942024"
@@ -330,7 +330,7 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 
  ただし、このコードは、新しい項目の既定の名前を設定できません。 定義した任意のカスタマイズされたマージは実行されません、**要素マージ ディレクティブ**DSL の定義されているコードのカスタムのマージは実行されません。  
 
- 使用すること勧めそのため<xref:Microsoft.VisualStudio.Modeling.ElementOperations>新しい要素を作成します。 詳細については、次を参照してください。[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)します。  
+ 使用すること勧めそのため<xref:Microsoft.VisualStudio.Modeling.ElementOperations>新しい要素を作成します。 詳細については、[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)を参照してください。  
 
 ## <a name="see-also"></a>関連項目  
  [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)   

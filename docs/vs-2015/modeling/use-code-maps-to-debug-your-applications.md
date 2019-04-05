@@ -23,7 +23,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: af5f34b307f94f1bae4c913421acbe0a934ed113
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51743829"
@@ -37,7 +37,7 @@ ms.locfileid: "51743829"
   
  **エディターでカーソルが表示されます。、緑色の矢印が表示されます。**  
   
- コマンドとコード マップを使用する場合に使用できる操作の詳細については、次を参照してください。[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)します。  
+ コマンドとコード マップを使用する場合に使用できる操作の詳細については、[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)を参照してください。  
   
 ## <a name="understand-the-problem"></a>問題を把握する  
  作業中の描画プログラムにバグがあるとします。 バグを再現するには、Visual Studio およびキーを押して、ソリューションを開いた**F5**デバッグを開始します。  

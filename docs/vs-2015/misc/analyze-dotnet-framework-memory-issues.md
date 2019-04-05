@@ -31,7 +31,7 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
   
 - 比較することもできます (*diff*) が原因で、メモリ、コードの領域を見つけるためのアプリの 2 つのスナップショットを使用して、時間と共に増加します。  
   
-  マネージ メモリ アナライザーのチュートリアルは、次を参照してください。 [Visual Studio 2013 に実稼働環境での .NET メモリ問題の診断を使用して](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)、Visual Studio ALM と Team Foundation Server のブログにします。  
+  マネージ メモリ アナライザーのチュートリアルは、[Visual Studio 2013 に実稼働環境での .NET メモリ問題の診断を使用して](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)、Visual Studio ALM と Team Foundation Server のブログにを参照してください。  
   
 ##  <a name="BKMK_Contents"></a> 目次  
  [.NET Framework アプリでメモリの使用](#BKMK_Memory_use_in__NET_Framework_apps)  

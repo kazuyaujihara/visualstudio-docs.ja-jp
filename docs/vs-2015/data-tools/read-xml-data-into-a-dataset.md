@@ -28,7 +28,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
 ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/29/2018
 ms.locfileid: "50219732"
@@ -63,7 +63,7 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
   
 2.  プロジェクトに `ReadingXML` という名前を付けます。  
   
-3.  選択**Windows アプリケーション**、し、 **OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
+3.  選択**Windows アプリケーション**、し、 **OK**します。 詳細については、[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)を参照してください。  
   
      **ReadingXML**プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。  
   
@@ -179,7 +179,7 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
     ||**[テキスト]**|`Show Schema`|  
   
 ## <a name="create-the-dataset-thatreceives-the-xml-data"></a>XML データを作成するには、データセット thatreceives  
- この手順でという名前の新しいデータセットを作成する`authors`します。 データセットの詳細については、次を参照してください。 [Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)します。  
+ この手順でという名前の新しいデータセットを作成する`authors`します。 データセットの詳細については、[Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)を参照してください。  
   
 #### <a name="to-create-a-new-dataset-that--receives-the-xml-data"></a>XML データを受信する新しいデータセットを作成するには  
   
@@ -247,7 +247,7 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
   
 -   データセットと書き戻せる XML としてデータを編集します。 詳細については、「 <xref:System.Data.DataSet.WriteXml%2A> 」を参照してください。  
   
--   データセット内のデータを編集し、データベースに書き込みます。 詳細については、次を参照してください。[データの保存](../data-tools/saving-data.md)します。  
+-   データセット内のデータを編集し、データベースに書き込みます。 詳細については、[データの保存](../data-tools/saving-data.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [データのチュートリアル](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   

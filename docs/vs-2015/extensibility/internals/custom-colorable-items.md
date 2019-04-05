@@ -39,7 +39,7 @@ ms.locfileid: "51796949"
 >   
 >  **C:\Program Files (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
->  キャッシュをリセットするには、呼び出す`CreateExpInstance /Reset`します。 CreateExpInstance の詳細については、次を参照してください。 [CreateExpInstance ユーティリティ](../../extensibility/internals/createexpinstance-utility.md)します。  
+>  キャッシュをリセットするには、呼び出す`CreateExpInstance /Reset`します。 CreateExpInstance の詳細については、[CreateExpInstance ユーティリティ](../../extensibility/internals/createexpinstance-utility.md)を参照してください。  
   
  装飾が可能な項目の一覧の最初の項目が参照されていることはありません。 最初の項目は、0 の装飾が可能な項目のインデックスに対応し、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]は常に既定のテキストの色とその項目の属性に提供します。 この参照されていない項目の処理の最も簡単な方法では、最初の項目として一覧内のプレース ホルダーの装飾が可能な項目を指定します。  
   

@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 2dfb26dd77a3117f40f82fdb80669a2e849e6c94
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51755167"
@@ -32,14 +32,14 @@ ms.locfileid: "51755167"
   
  IDE でツールバーとは異なりでツール ウィンドウのツールバーをする必要がありますドッキング、移動またはできませんカスタマイズ。 Umanaged コードで、VSPackage が書き込まれた場合、ツールバーがいずれかの端にドッキングできます。  
   
- ツールバーを追加する方法の詳細については、次を参照してください。[ツールバーの追加](../extensibility/adding-a-toolbar.md)します。  
+ ツールバーを追加する方法の詳細については、[ツールバーの追加](../extensibility/adding-a-toolbar.md)を参照してください。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
   
 ## <a name="creating-a-toolbar-for-a-tool-window"></a>ツール ウィンドウのツールバーの作成  
   
-1.  という名前の VSIX プロジェクトを作成する`TWToolbar`という名前の両方をメニュー コマンドを持つ**TWTestCommand**というツール ウィンドウと**TestToolWindow**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)と[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。 ツール ウィンドウのテンプレートを追加する前に、コマンドの項目テンプレートを追加する必要があります。  
+1.  という名前の VSIX プロジェクトを作成する`TWToolbar`という名前の両方をメニュー コマンドを持つ**TWTestCommand**というツール ウィンドウと**TestToolWindow**します。 詳細については、[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)と[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。 ツール ウィンドウのテンプレートを追加する前に、コマンドの項目テンプレートを追加する必要があります。  
   
 2.  TWTestCommandPackage.vsct の Symbols セクションを探します。 GuidTWTestCommandPackageCmdSet をという名前の GuidSymbol ノードで次のようにツールバーとツールバーのグループを宣言します。  
   

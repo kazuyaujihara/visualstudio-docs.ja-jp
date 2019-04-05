@@ -27,7 +27,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: e370e805df8e3a6ee253e3560738e882a247d2de
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51817460"
@@ -35,7 +35,7 @@ ms.locfileid: "51817460"
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML ファイルを編集してコード マップをカスタマイズする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-コード マップをカスタマイズするには、マップの Directed Graph Markup Language (.dgml) ファイルを編集できます。 たとえば、要素を編集してカスタム スタイルを指定したり、コード要素とリンクにプロパティおよびカテゴリを割り当てたり、コード要素やリンクにドキュメントや URL をリンクしたりすることができます。 DGML 要素の詳細については、次を参照してください。 [Directed Graph Markup Language (DGML) リファレンス](../modeling/directed-graph-markup-language-dgml-reference.md)します。  
+コード マップをカスタマイズするには、マップの Directed Graph Markup Language (.dgml) ファイルを編集できます。 たとえば、要素を編集してカスタム スタイルを指定したり、コード要素とリンクにプロパティおよびカテゴリを割り当てたり、コード要素やリンクにドキュメントや URL をリンクしたりすることができます。 DGML 要素の詳細については、[Directed Graph Markup Language (DGML) リファレンス](../modeling/directed-graph-markup-language-dgml-reference.md)を参照してください。  
   
  テキスト エディターまたは XML エディターで、コード マップの .dgml ファイルを編集します。 マップが Visual Studio ソリューションの一部である場合でを選択します。**ソリューション エクスプ ローラー**、ショートカット メニューを開き、選択**ファイルを開く**、 **XML (テキスト) エディター**します。  
   
@@ -123,7 +123,7 @@ ms.locfileid: "51817460"
 -   特定の条件に基づくコード要素およびリンクのグループ  
   
 > [!TIP]
->  多くのコード要素またはリンクで繰り返し使用するスタイルがある場合は、これらのコード要素またはリンクにカテゴリを適用し、そのカテゴリにスタイルを適用することも検討できます。 詳細については、次を参照してください。[コード要素およびリンクにカテゴリを割り当てる](#AssignCategories)と[コード要素およびリンク プロパティを割り当てる](#AssignProperties)します。  
+>  多くのコード要素またはリンクで繰り返し使用するスタイルがある場合は、これらのコード要素またはリンクにカテゴリを適用し、そのカテゴリにスタイルを適用することも検討できます。 詳細については、[コード要素およびリンクにカテゴリを割り当てる](#AssignCategories)と[コード要素およびリンク プロパティを割り当てる](#AssignProperties)を参照してください。  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>単一のコード要素にカスタム スタイルを適用するには  
   

@@ -25,7 +25,7 @@ ms.locfileid: "56711801"
   の JavaScript 用クラス ライブラリ プロジェクトの種類はありません。 このチュートリアルでは、このサンプルで*arithmetic.js* VSIX プロジェクトに直接ファイルを作成します。 実際を最初にビルドしてテストする JavaScript と CSS ファイルを Windows ストア アプリとしてお勧め — などを使用して、**空のアプリ**テンプレート、VSIX プロジェクトに配置する前にします。
 
 ## <a name="prerequisites"></a>必須コンポーネント
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。
 
 ##  <a name="createSimpleMathVSIX"></a> SimpleMathVSIX 拡張機能 SDK のプロジェクトを作成するには
 

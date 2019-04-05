@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49940867"
@@ -24,7 +24,7 @@ ms.locfileid: "49940867"
 
 任意のアプリケーションで DSL モデルを開くことができます。  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]拡張機能では、この目的のため、ModelBus を使用することができます。 ModelBus はモデルまたはモデルでは、要素を参照して、移動された場合、モデルを検索するための標準的なメカニズムを提供します。 詳細については、次を参照してください。 [Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)します。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]拡張機能では、この目的のため、ModelBus を使用することができます。 ModelBus はモデルまたはモデルでは、要素を参照して、移動された場合、モデルを検索するための標準的なメカニズムを提供します。 詳細については、[Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)を参照してください。  
   
 ## <a name="target-framework"></a>[対象とする Framework]  
  設定、**ターゲット フレームワーク**をアプリケーション プロジェクトの **.NET Framework 4**します。  

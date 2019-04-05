@@ -24,7 +24,7 @@ ms.locfileid: "56630965"
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>チュートリアル: SharePoint プロジェクト拡張機能を作成します。
   このチュートリアルでは、SharePoint プロジェクトの拡張機能を作成する方法について説明します。 プロジェクトの拡張機能を使用すると、プロジェクトを追加、削除、または名前を変更する場合など、プロジェクト レベルのイベントに応答します。 カスタム プロパティを追加またはプロパティ値を変更するときの応答もできます。 プロジェクト項目の拡張機能とは異なりプロジェクト拡張機能は、特定の SharePoint プロジェクトの種類に関連付けすることはできません。 任意の種類の SharePoint プロジェクトを開いたときに、拡張機能を読み込むプロジェクトの拡張機能を作成するときに[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
 
- このチュートリアルで作成された SharePoint プロジェクトに追加されるカスタムのブール型プロパティを作成します[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。 設定すると**True**、新しいプロパティを追加、または、プロジェクトのイメージ リソース フォルダーにマップします。 設定すると**False**、Images フォルダーを削除、存在する場合。 詳細については、次を参照してください。[方法: 追加すると、マップされたフォルダーを削除する](../sharepoint/how-to-add-and-remove-mapped-folders.md)します。
+ このチュートリアルで作成された SharePoint プロジェクトに追加されるカスタムのブール型プロパティを作成します[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。 設定すると**True**、新しいプロパティを追加、または、プロジェクトのイメージ リソース フォルダーにマップします。 設定すると**False**、Images フォルダーを削除、存在する場合。 詳細については、[方法: 追加すると、マップされたフォルダーを削除する](../sharepoint/how-to-add-and-remove-mapped-folders.md)を参照してください。
 
  このチュートリアルでは、次のタスクについて説明します。
 
@@ -45,7 +45,7 @@ ms.locfileid: "56630965"
 
 -   サポート対象エディションの[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]、SharePoint と[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
 
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 このチュートリアルでは、 **VSIX プロジェクト**テンプレート、[!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)]プロジェクト プロパティの拡張機能を配置するための VSIX パッケージを作成します。 詳細については、次を参照してください。 [Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)します。
+-   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 このチュートリアルでは、 **VSIX プロジェクト**テンプレート、[!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)]プロジェクト プロパティの拡張機能を配置するための VSIX パッケージを作成します。 詳細については、[Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)を参照してください。
 
 ## <a name="create-the-projects"></a>プロジェクトを作成します。
  このチュートリアルを完了するには、2 つのプロジェクトを作成する必要があります。
@@ -128,7 +128,7 @@ ms.locfileid: "56630965"
 
 1.  **ソリューション エクスプ ローラー**、source.extension.vsixmanifest ファイルのショートカット メニューを開き、選択し、**開く**ボタンをクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] マニフェスト デザイナーでファイルを開きます。 表示される情報、**メタデータ**にも表示されます タブ、**拡張機能と更新**します。 すべての VSIX パッケージには、extension.vsixmanifest ファイルが必要です。 このファイルの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] マニフェスト デザイナーでファイルを開きます。 表示される情報、**メタデータ**にも表示されます タブ、**拡張機能と更新**します。 すべての VSIX パッケージには、extension.vsixmanifest ファイルが必要です。 このファイルの詳細については、[VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)を参照してください。
 
 2.  **製品名**ボックスに、入力**プロジェクトのプロパティをカスタム**します。
 
@@ -143,7 +143,7 @@ ms.locfileid: "56630965"
 6.  **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MEFComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    >  この値は、extension.vsixmanifest ファイル内の `MEFComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、[MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))を参照してください。
 
 7.  **ソース**一覧で、選択、**現在のソリューションでプロジェクトを**オプション ボタンをクリックします。
 

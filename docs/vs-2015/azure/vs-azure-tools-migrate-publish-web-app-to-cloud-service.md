@@ -13,14 +13,14 @@ ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: c122b54a4e22285678d13213cc73d6492baba629
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51003042"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>方法: Visual Studio から Azure クラウド サービスに Web アプリケーション移行および発行
 
-のホスティング サービスの利点と Azure の機能をスケーリングするには、移行および Azure クラウド サービスに web アプリケーションを展開する可能性があります。 最小限の変更のみが必要です。 この記事では、クラウド サービスのみへのデプロイについて説明しますApp Service では、次を参照してください。 [Azure App Service で web アプリのデプロイ](/azure/app-service/app-service-deploy-local-git)します。
+のホスティング サービスの利点と Azure の機能をスケーリングするには、移行および Azure クラウド サービスに web アプリケーションを展開する可能性があります。 最小限の変更のみが必要です。 この記事では、クラウド サービスのみへのデプロイについて説明しますApp Service では、[Azure App Service で web アプリのデプロイ](/azure/app-service/app-service-deploy-local-git)を参照してください。
 
 > [!Important]
 > この移行は、特定の ASP.NET、Silverlight、WCF、および WCF ワークフロー プロジェクトのみサポートされます。 ASP.NET Core プロジェクトはサポートされません。 参照してください[サポートされているプロジェクト テンプレート](#supported-project-templates)します。
@@ -32,7 +32,7 @@ ms.locfileid: "51003042"
 1. Visual Studio にも設定、**ローカル コピー** MVC 2、MVC 3、MVC 4、および Silverlight ビジネス アプリケーションに必要なすべてのアセンブリを true に設定します。 このプロパティは、これらのアセンブリを展開に使用されるサービス パッケージに追加します。
 
    > [!Important]
-   > その他のアセンブリまたはこの web アプリケーションに必要なファイルがある場合は、これらのファイルのプロパティを手動で設定する必要があります。 これらのプロパティを設定する方法については、次を参照してください。[サービス パッケージにファイルを含める](#include-files-in-the-service-package)します。
+   > その他のアセンブリまたはこの web アプリケーションに必要なファイルがある場合は、これらのファイルのプロパティを手動で設定する必要があります。 これらのプロパティを設定する方法については、[サービス パッケージにファイルを含める](#include-files-in-the-service-package)を参照してください。
 
 ### <a name="errors-and-warnings"></a>エラーと警告
 
@@ -40,7 +40,7 @@ ms.locfileid: "51003042"
 
 エラーが発生した場合は、コンピューティング エミュレーターを使用してローカルで実行、または Azure に発行するアプリケーションを作成する、可能性があります:「指定されたパス、ファイル名、またはその両方が長すぎます」。 このエラーは、Azure プロジェクトの完全修飾名の長さが 146 文字を超えていることを示します。 この問題が解決するには、短いパスを持つ別のフォルダーにソリューションを移動します。
 
-すべての警告をエラーとして処理する方法の詳細については、次を参照してください。 [Visual Studio で Azure クラウド サービス プロジェクトを構成する](vs-azure-tools-configuring-an-azure-project.md)します。
+すべての警告をエラーとして処理する方法の詳細については、[Visual Studio で Azure クラウド サービス プロジェクトを構成する](vs-azure-tools-configuring-an-azure-project.md)を参照してください。
 
 ### <a name="test-the-migration-locally"></a>移行をローカルでのテストします。
 

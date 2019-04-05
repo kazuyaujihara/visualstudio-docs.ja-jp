@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: e14422b7430dc0429954bf11c77b30619fb7f7da
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51763423"
@@ -29,7 +29,7 @@ ms.locfileid: "51763423"
 属性を使用して、VSPackage の登録が、  
   
 ## <a name="registering-a-vspackage"></a>VSPackage を登録します。  
- マネージ Vspackage の登録を制御するのに属性を使用できます。 すべての登録情報は、.pkgdef ファイルに含まれます。 ファイル ベースの登録の詳細については、次を参照してください。 [CreatePkgDef ユーティリティ](../extensibility/internals/createpkgdef-utility.md)します。  
+ マネージ Vspackage の登録を制御するのに属性を使用できます。 すべての登録情報は、.pkgdef ファイルに含まれます。 ファイル ベースの登録の詳細については、[CreatePkgDef ユーティリティ](../extensibility/internals/createpkgdef-utility.md)を参照してください。  
   
  次のコードでは、標準登録属性を使用して、VSPackage を登録する方法を示します。  
   

@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: bd80ea5ce8cc1ee3778b3fc185746ee95ad3eacf
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51771551"
@@ -24,13 +24,13 @@ ms.locfileid: "51771551"
 
 UML ドキュメントをエクスポートする[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プログラムの制御下にあるイメージにします。 たとえば、このエクスポートをドキュメントの自動生成の一部として実行できます。  
   
- ドキュメントをイメージに手動でエクスポートする場合は、図から図形をコピーして Word などの他のプログラムに貼り付けることができます。 ドキュメントを XPS 形式にして印刷することもできます。 詳細については、次を参照してください。[ダイアグラムをイメージとしてエクスポート](../modeling/export-diagrams-as-images.md)します。  
+ ドキュメントをイメージに手動でエクスポートする場合は、図から図形をコピーして Word などの他のプログラムに貼り付けることができます。 ドキュメントを XPS 形式にして印刷することもできます。 詳細については、[ダイアグラムをイメージとしてエクスポート](../modeling/export-diagrams-as-images.md)を参照してください。  
   
 ## <a name="saving-an-image"></a>イメージの保存  
  次のコードでは、イメージをファイルに保存するショートカット メニュー コマンド ("コンテキスト メニュー コマンド" とも呼ばれる) を定義しています。  
   
 > [!NOTE]
->  このコードをメニュー コマンドとして機能させるには、このコードを MEF コンポーネントに組み込む必要があります。 詳細については、次を参照してください。[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  
+>  このコードをメニュー コマンドとして機能させるには、このコードを MEF コンポーネントに組み込む必要があります。 詳細については、[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)を参照してください。  
   
  このコードでは、最初に <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape.GetObject%2A> を使用して基になる実装の <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> を取得します。 この型には <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A> メソッドがあります。  
   

@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 626717ed559257d04cb0bbcca3c76283aac22d63
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51743296"
@@ -30,7 +30,7 @@ Windows インストーラーのタスクの単位は、Windows インストー�
   
  VSPackage、インストーラーを作成するいくつかの製品を使用できますが、この説明は Windows インストーラー (.msi) ファイルの使用を想定しています。 インストーラーを作成するときに、正しい参照カウントが常に発生するため、ファイルの配置正しく管理する必要があります。 その結果、製品の異なるバージョンに影響またはインストールの組み合わせで互いを中断してシナリオをアンインストールします。  
   
- Windows インストーラー、参照カウントは、コンポーネント レベルで発生します。 リソースの整理を慎重にする必要があります: ファイルやレジストリ エントリ、— コンポーネントにします。 組織の他のレベルがある-モジュール、機能、および製品など、さまざまなシナリオで役立つことができます。 詳細については、次を参照してください。 [Windows インストーラーの基本事項](../../extensibility/internals/windows-installer-basics.md)します。  
+ Windows インストーラー、参照カウントは、コンポーネント レベルで発生します。 リソースの整理を慎重にする必要があります: ファイルやレジストリ エントリ、— コンポーネントにします。 組織の他のレベルがある-モジュール、機能、および製品など、さまざまなシナリオで役立つことができます。 詳細については、[Windows インストーラーの基本事項](../../extensibility/internals/windows-installer-basics.md)を参照してください。  
   
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>サイド バイ サイドでインストールのセットアップの作成のガイドライン  
   

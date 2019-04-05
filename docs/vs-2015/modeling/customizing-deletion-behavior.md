@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49837563"
@@ -80,7 +80,7 @@ ms.locfileid: "49837563"
  DSL 定義ファイル内のオプションにより選択できるのは、削除がすぐ隣に伝達するかどうかのみです。 より複雑な削除の伝達のしくみを実装するために、プログラム コードを作成できます。  
   
 > [!NOTE]
->  DSL 定義にプログラム コードを追加するで別のコード ファイルを作成、 **Dsl**プロジェクトし、生成されたコード フォルダー内のクラスを拡張する部分の定義を作成します。 詳細については、次を参照してください。[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)します。  
+>  DSL 定義にプログラム コードを追加するで別のコード ファイルを作成、 **Dsl**プロジェクトし、生成されたコード フォルダー内のクラスを拡張する部分の定義を作成します。 詳細については、[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)を参照してください。  
   
 ##  <a name="closure"></a> 削除クロージャの定義  
  削除操作は、クラスを使用して_YourModel_**DeleteClosure**初期選択を指定を削除する要素を確認します。 これは `ShouldVisitRelationship()` および `ShouldVisitRolePlayer()` を繰り返し呼び出し、リレーションシップのグラフを検索します。 これらのメソッドをオーバーライドできます。 ShouldVisitRolePlayer はリンクの ID およびリンクのロールの一方における要素とともに提供されます。 次のいずれかの値を返す必要があります。  
@@ -146,7 +146,7 @@ partial class MusicLibDeleteClosure
   
 2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> は要素が削除されると呼び出されます。 CLR ヒープ内に留まるので、必要があれば Undo を実行できますが、他の要素からのリンクは解除され、`store.ElementDirectory` から削除されます。 リレーションシップ、ロールはまだ古いロール プレーヤーを参照します。`IsDeleted` true です。  
   
-3. OnDeleting および OnDeleted は要素の作成後にユーザーが Undo を起動するとき、および以前の削除が Redo で繰り返されるときに呼び出されます。 これらの場合にストア要素の更新を回避するには `this.Store.InUndoRedoOrRollback` を使用します。 詳細については、次を参照してください。[方法: モデルを更新するトランザクションを使用して](../modeling/how-to-use-transactions-to-update-the-model.md)します。  
+3. OnDeleting および OnDeleted は要素の作成後にユーザーが Undo を起動するとき、および以前の削除が Redo で繰り返されるときに呼び出されます。 これらの場合にストア要素の更新を回避するには `this.Store.InUndoRedoOrRollback` を使用します。 詳細については、[方法: モデルを更新するトランザクションを使用して](../modeling/how-to-use-transactions-to-update-the-model.md)を参照してください。  
   
    たとえば、次のコードでは、最後の子 Song が削除されると Album が削除されます。  
   
@@ -209,11 +209,11 @@ partial class Artist
   
      規則を使用し、リレーションシップ、図要素、およびそれらのプロパティなど、ストア内の要素にのみ影響する変更を伝達します。 通常、Deleting 規則は削除を伝達するために使用され、Delete 規則は置換要素およびリレーションシップを作成するために使用されます。  
   
-     詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。  
+     詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
   
 2.  **削除**ストア イベントは、トランザクションの最後に呼び出され、undo または redo の後に呼び出されます。 したがって、ファイル、データベース エントリ、または [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内の他のオブジェクトなど、ストア外のオブジェクトに削除を伝達するために使用されます。  
   
-     詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
+     詳細については、[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)を参照してください。  
   
     > [!WARNING]
     >  要素が削除された場合、そのドメイン プロパティ値にアクセスできますが、リレーションシップ リンクに移動できません。 ただし、リレーションシップに deleted イベントを設定した場合、ロール プレーヤーだった 2 つの要素にもアクセスできます。 したがって、モデル要素の削除に応答し、リンクされた要素にアクセスする場合、モデル要素のドメイン クラスの代わりにリレーションシップで delete イベントを設定します。  
@@ -297,7 +297,7 @@ partial class NestedShapesSampleDocData
   
  EMD は補完的なもカプセル化*unmerge*または`MergeDisconnect`操作。 マージにより構築された要素のクラスターがある場合、残りの要素を一貫した状態のままにするには、関連する unmerge を使用して、そこから要素を削除することをお勧めします。 通常、unmerge 操作は前のセクションで説明している手法を使用します。  
   
- 詳細については、次を参照してください。[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)します。  
+ 詳細については、[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)   

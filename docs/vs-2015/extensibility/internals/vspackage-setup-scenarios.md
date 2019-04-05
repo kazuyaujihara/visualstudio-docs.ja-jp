@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 34181e5b03b29662188e368561b0f43049629ec1
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51788551"
@@ -50,18 +50,18 @@ ms.locfileid: "51788551"
  図に示すように共有コンポーネントには、常にインストールされている Feat_Common 機能の一部が行われます。 Feat_VS2002 と Feat_VS2003 機能を表示するには、どのバージョンに、ユーザーがインストール時に選択できます[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]を統合する VSPackage を希望します。 ユーザーを追加またはをここで追加または異なるバージョンの VSPackage の登録情報を削除、機能を削除するメンテナンス モードの Windows インストーラーを使用できますも[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
   
 > [!NOTE]
->  機能の表示の列を 0 に設定します。 非表示にします。 1 などの低レベルの列値によりは常にインストールするようになります。 詳細については、次を参照してください。 [INSTALLLEVEL プロパティ](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx)と[機能テーブル](http://msdn.microsoft.com/library/aa368585.aspx)します。  
+>  機能の表示の列を 0 に設定します。 非表示にします。 1 などの低レベルの列値によりは常にインストールするようになります。 詳細については、[INSTALLLEVEL プロパティ](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx)と[機能テーブル](http://msdn.microsoft.com/library/aa368585.aspx)を参照してください。  
   
 ## <a name="scenario-2-shared-vspackage-update"></a>シナリオ 2: 共有 vs パッケージ更新  
  このシナリオでは、シナリオ 1 で、VSPackage のインストーラーの更新バージョンが付属しています。 便宜上、サポートの追加、更新プログラム[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、単純なセキュリティ修正プログラムまたはバグ修正サービス パックの場合もありますが、します。 新しいコンポーネントをインストールするための Windows インストーラーの規則では、システムに既に変更されていないコンポーネントが再コピーしないことが必要です。 この場合は、バージョン 1.0 が既に存在すると、システムは Comp_MyVSPackage.dll 更新されたコンポーネントを上書きし、Comp_VS2005_Reg そのコンポーネントの新機能 Feat_VS2005 を追加することもできます。  
   
 > [!CAUTION]
->  VSPackage を複数のバージョンの間で共有されるたびに[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、VSPackage の今後のリリースでの以前のバージョンとの下位互換性を維持する必要が[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 下位互換性を維持することはできませんがサイド バイ サイドで、プライベートの Vspackage を使用する必要があります。 詳細については、次を参照してください。[をサポートしている複数のバージョンの Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)します。  
+>  VSPackage を複数のバージョンの間で共有されるたびに[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、VSPackage の今後のリリースでの以前のバージョンとの下位互換性を維持する必要が[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 下位互換性を維持することはできませんがサイド バイ サイドで、プライベートの Vspackage を使用する必要があります。 詳細については、[をサポートしている複数のバージョンの Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)を参照してください。  
   
  ![VS 共有 VS パッケージ更新イメージ](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
 共有 vs パッケージ更新プログラムのインストーラー  
   
- このシナリオは、マイナー アップグレード用の Windows インストーラーのサポートの活用、新しい VSPackage インストーラーを表示します。 ユーザーが単純にバージョン 1.1 をインストールし、バージョン 1.0 をアップグレードします。 ただし、バージョンは 1.0 システムにする必要はありません。 同じインストーラーは、バージョン 1.0 のないシステムでバージョン 1.1 がインストールされます。 この方法でマイナー アップグレードを提供することの利点は、ことは、アップグレードのインストーラーと完全な製品インストーラーの開発の作業を経由する必要はありません。 1 つのインストーラーは、両方のジョブです。 セキュリティ修正プログラムまたはサービス パックが代わりに Windows インストーラーの修正プログラムの利点を活かす。 詳細については、次を参照してください。[パッチとアップグレード](http://msdn.microsoft.com/library/aa370579\(VS.85\).aspx)します。  
+ このシナリオは、マイナー アップグレード用の Windows インストーラーのサポートの活用、新しい VSPackage インストーラーを表示します。 ユーザーが単純にバージョン 1.1 をインストールし、バージョン 1.0 をアップグレードします。 ただし、バージョンは 1.0 システムにする必要はありません。 同じインストーラーは、バージョン 1.0 のないシステムでバージョン 1.1 がインストールされます。 この方法でマイナー アップグレードを提供することの利点は、ことは、アップグレードのインストーラーと完全な製品インストーラーの開発の作業を経由する必要はありません。 1 つのインストーラーは、両方のジョブです。 セキュリティ修正プログラムまたはサービス パックが代わりに Windows インストーラーの修正プログラムの利点を活かす。 詳細については、[パッチとアップグレード](http://msdn.microsoft.com/library/aa370579\(VS.85\).aspx)を参照してください。  
   
 ## <a name="scenario-3-side-by-side-vspackage"></a>シナリオ 3: サイド バイ サイド vs パッケージ  
  このシナリオでは、2 つの VSPackage インストーラー-Visual Studio .NET 2003 のバージョンごとに 1 つと[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 並列でまたはプライベート、VSPackage の各インストーラーがインストールされます (具体的にはビルドし、特定のバージョンの用にインストールされた 1 つ[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)])。 各 VSPackage は、独自のコンポーネントです。 その結果、それぞれ個別に処理されると修正プログラムやメンテナンスを解放します。 VSPackage の DLL は、バージョン固有ではこれであるため、DLL と同じコンポーネントにその登録情報を含めるも安全です。  
@@ -79,7 +79,7 @@ ms.locfileid: "51788551"
  ![VS サイド&#45;によって&#45;サイド VS パッケージ更新グラフィック](../../extensibility/internals/media/vs-sbys-packageupdate.gif "VS_SbyS_PackageUpdate")  
 サイド バイ サイド vs パッケージ更新プログラムのインストーラー  
   
- **注**サイド バイ サイド アセンブリの展開の詳細については、次を参照してください。[展開の簡素化すると、.NET Framework での DLL Hell の解決](http://msdn.microsoft.com/library/ms973843.aspx)します。  
+ **注**サイド バイ サイド アセンブリの展開の詳細については、[展開の簡素化すると、.NET Framework での DLL Hell の解決](http://msdn.microsoft.com/library/ms973843.aspx)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [Windows インストーラー](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   

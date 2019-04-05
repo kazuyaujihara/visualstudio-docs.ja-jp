@@ -28,7 +28,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51750578"
@@ -117,7 +117,7 @@ ms.locfileid: "51750578"
   
 -   **呼び出し履歴の関数まで実行する**  
   
-     **呼び出し履歴**ウィンドウ (デバッグ中に使用可能)、関数の選択を右クリックして**カーソルまで実行**します。 呼び出し履歴を視覚的にトレースするには、次を参照してください。[デバッグ中に呼び出し履歴に対するメソッドのマップ](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)します。  
+     **呼び出し履歴**ウィンドウ (デバッグ中に使用可能)、関数の選択を右クリックして**カーソルまで実行**します。 呼び出し履歴を視覚的にトレースするには、[デバッグ中に呼び出し履歴に対するメソッドのマップ](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)を参照してください。  
   
 -   **名前で指定した関数まで実行する**  
   

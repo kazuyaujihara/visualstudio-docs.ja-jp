@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 5d292cc60b782f8036367c72bf0e59e8b83d5191
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51764252"
@@ -34,7 +34,7 @@ ms.locfileid: "51764252"
   
  このプロセスの詳細については、次の手順。  
   
-1.  **保存**と**名前を付けて保存**、環境を使用して、コマンド、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービスのアクティブなドキュメント ウィンドウを確認して、どのような項目を保存するためです。 アクティブなドキュメント ウィンドウがわかったら、環境は、実行中の document テーブル内のドキュメントの階層のポインターと項目の識別子 (itemID) を検索します。 詳細については、次を参照してください。[を実行しているドキュメント テーブル](../../extensibility/internals/running-document-table.md)します。  
+1.  **保存**と**名前を付けて保存**、環境を使用して、コマンド、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービスのアクティブなドキュメント ウィンドウを確認して、どのような項目を保存するためです。 アクティブなドキュメント ウィンドウがわかったら、環境は、実行中の document テーブル内のドキュメントの階層のポインターと項目の識別子 (itemID) を検索します。 詳細については、[を実行しているドキュメント テーブル](../../extensibility/internals/running-document-table.md)を参照してください。  
   
      すべて保存 コマンドは、環境は、保存するのにすべての項目の一覧をコンパイルするのに、実行中の document テーブルの情報を使用します。  
   

@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49818160"
@@ -49,7 +49,7 @@ XML エディターを使用して、新しい XML スニペットを作成す�
 8.  使用して、**で保存**を My documents \visual Studio 2005\Code \xml\my XML Snippets フォルダーにファイルの場所を変更し、ドロップダウン リスト**保存**します。  
   
 ## <a name="snippet-description"></a>スニペットの説明  
- このセクションでは、定型スニペットの主な要素について説明します。 XML スニペットで使用されるスキーマ要素の詳細については、次を参照してください。[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)します。  
+ このセクションでは、定型スニペットの主な要素について説明します。 XML スニペットで使用されるスキーマ要素の詳細については、[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)を参照してください。  
   
 ### <a name="snippettype-element"></a>SnippetType 要素  
  エディターは、2 つのスニペット型をサポートしています。  

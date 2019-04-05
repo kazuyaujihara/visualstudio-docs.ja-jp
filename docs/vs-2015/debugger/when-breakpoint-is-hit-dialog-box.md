@@ -28,7 +28,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ad979fa302a29f9d444579655e368db6da8b3e1f
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51805412"
@@ -40,7 +40,7 @@ ms.locfileid: "51805412"
   
 ## <a name="uielement-list"></a>UIElement の一覧  
  **メッセージを出力します**  
- DebuggerDisplay 構文を使用してメッセージを出力します。 詳細については、次を参照してください。 [DebuggerDisplay 属性を使用して](../debugger/using-the-debuggerdisplay-attribute.md)します。  
+ DebuggerDisplay 構文を使用してメッセージを出力します。 詳細については、[DebuggerDisplay 属性を使用して](../debugger/using-the-debuggerdisplay-attribute.md)を参照してください。  
   
  このテキストボックスは、$ADDRESS などの特殊なキーワードもサポートしています。これらのキーワードはキーワード自身が使用することも、DebuggerDisplay 式の中かっこ ({}) 内で使用することもできます。 使用できるキーワードはダイアログ ボックスに一覧表示されます。  
   

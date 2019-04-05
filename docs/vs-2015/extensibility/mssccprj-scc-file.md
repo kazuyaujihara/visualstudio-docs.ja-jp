@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: a04429bafb7da0b3d4922905bd712e82ba16a4ba
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51736154"
@@ -77,7 +77,7 @@ IDE を使用してソース管理下にある Visual Studio ソリューショ�
   
  `SCC_Project_Name = "$/TestApp"`  
   
- このセクションに末尾の区切り記号はありません。 ファイルに表示されるすべてのリテラルと同様に、ファイルの名前は、scc.h ヘッダー ファイルで定義されます。 詳細については、次を参照してください。[文字列は、ソース管理プラグインを検索するためのキーとして使用](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)します。  
+ このセクションに末尾の区切り記号はありません。 ファイルに表示されるすべてのリテラルと同様に、ファイルの名前は、scc.h ヘッダー ファイルで定義されます。 詳細については、[文字列は、ソース管理プラグインを検索するためのキーとして使用](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)   

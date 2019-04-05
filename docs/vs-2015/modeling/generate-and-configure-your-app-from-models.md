@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 58d7112048aba7d0c3b75e83e2b10249b200e6d9
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51806361"
@@ -67,7 +67,7 @@ ms.locfileid: "51806361"
   
 -   **懸案事項を分離します。** 変化する側面を独立した複数の領域に分割できる場合、各領域に対して別個のモデルを使用してください。 ModelBus を使用すると、モデル、およびモデル間の制約の両方に影響する操作を定義できます。  
   
-     たとえば、1 つのモデルを使って Web ページ間の移動を定義し、次に別のモデルを使ってページのレイアウトを定義します。 詳細については、次を参照してください。[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)します。  
+     たとえば、1 つのモデルを使って Web ページ間の移動を定義し、次に別のモデルを使ってページのレイアウトを定義します。 詳細については、[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)を参照してください。  
   
 -   **ソリューションではなく、要件をモデル化します。** ユーザー要求を記述するように、DSL を設計するか、UML を適用します。 これとは対照的に、実装の可変部分に従って、表記を設計しないでください。  
   

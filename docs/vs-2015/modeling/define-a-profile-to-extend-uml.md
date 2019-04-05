@@ -21,7 +21,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51730314"
@@ -31,7 +31,7 @@ ms.locfileid: "51730314"
 
 定義することができます、 *UML プロファイル*特定の目的で標準のモデル要素をカスタマイズします。 プロファイルは、1 つまたは複数定義されています。 *UML ステレオタイプ*します。 ステレオタイプは、特定の種類のオブジェクトを表すものとして型をマークするために使用できます。 ステレオタイプを使用して、要素のプロパティのリストを拡張することもできます。  
   
- いくつかのプロファイルは、これをサポートするエディションの Visual Studio をインストールするときに、同時にインストールされます。 この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。 これらのプロファイルとステレオタイプを適用する方法についての詳細については、次を参照してください。[プロファイルとステレオタイプを使用してモデルをカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)します。  
+ いくつかのプロファイルは、これをサポートするエディションの Visual Studio をインストールするときに、同時にインストールされます。 この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。 これらのプロファイルとステレオタイプを適用する方法についての詳細については、[プロファイルとステレオタイプを使用してモデルをカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)を参照してください。  
   
  独自のプロファイルを定義して、UML を特定のビジネス領域またはアーキテクチャに適応させ、拡張することができます。 例:  
   
@@ -79,7 +79,7 @@ ms.locfileid: "51730314"
 6.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の他のユーザーに拡張ファイルを送信して、コンピューターにインストールしてもらいます。  
   
 ##  <a name="AddProfile"></a> プロファイルを Visual Studio 拡張機能を追加する方法  
- プロファイルをインストールし、他のユーザーに送信できるようにするには、プロファイルを Visual Studio 拡張機能に追加する必要があります。 詳細については、次を参照してください。 [Visual Studio 拡張機能の配置](http://go.microsoft.com/fwlink/?LinkId=160780)します。  
+ プロファイルをインストールし、他のユーザーに送信できるようにするには、プロファイルを Visual Studio 拡張機能に追加する必要があります。 詳細については、[Visual Studio 拡張機能の配置](http://go.microsoft.com/fwlink/?LinkId=160780)を参照してください。  
   
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>新しい Visual Studio 拡張機能でプロファイルを定義するには  
   
@@ -199,7 +199,7 @@ ms.locfileid: "51730314"
     > [!NOTE]
     >  Visual Studio 拡張機能プロジェクトを使用して拡張機能を構築する場合は、ソリューション エクスプローラーを使用して新しいフォルダーをプロジェクトに追加します。  
   
-3.  新しいディレクトリの名前を、ローカライズ カルチャを示す短い ISO コードに変更します (たとえば、ブルガリア語の場合は `bg`、フランス語の場合は `fr`)。 `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャ コードの詳細については、次を参照してください。 [CultureInfo.GetCultures メソッド](http://go.microsoft.com/fwlink/?LinkId=160782)、カルチャ コードの完全な一覧を提供します。  
+3.  新しいディレクトリの名前を、ローカライズ カルチャを示す短い ISO コードに変更します (たとえば、ブルガリア語の場合は `bg`、フランス語の場合は `fr`)。 `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャ コードの詳細については、[CultureInfo.GetCultures メソッド](http://go.microsoft.com/fwlink/?LinkId=160782)、カルチャ コードの完全な一覧を提供を参照してください。  
   
 4.  既定のプロファイルを新しいディレクトリにコピーします。 ファイル名は変更しないでください。  
   
@@ -233,7 +233,7 @@ ms.locfileid: "51730314"
   
  このパスの最初の部分は、インストールに応じて異なる可能性があります。  
   
- .NET プロファイルの詳細については、次を参照してください。 [UML モデルの標準ステレオタイプ](../modeling/standard-stereotypes-for-uml-models.md)します。  
+ .NET プロファイルの詳細については、[UML モデルの標準ステレオタイプ](../modeling/standard-stereotypes-for-uml-models.md)を参照してください。  
   
 ### <a name="main-sections-of-the-uml-profile-definition"></a>UML プロファイル定義の主要なセクション  
  すべてのプロファイルに次の内容が含まれています。  
@@ -292,7 +292,7 @@ ms.locfileid: "51730314"
       name="Microsoft.VisualStudio.Uml.Components.IComponent" />  
 ```  
   
- メタクラスとして使用できるモデルの要素およびリレーションシップの型の完全な一覧で、次を参照してください。[モデル要素の型](#Elements)します。  
+ メタクラスとして使用できるモデルの要素およびリレーションシップの型の完全な一覧で、[モデル要素の型](#Elements)を参照してください。  
   
 #### <a name="stereotype-definition"></a>ステレオタイプ定義  
  `<stereotypes>` セクションには、1 つ以上のステレオタイプ定義が記述されています。  
@@ -343,7 +343,7 @@ ms.locfileid: "51730314"
   
 ## <a name="troubleshooting"></a>トラブルシューティング  
  ステレオタイプが UML モデルに表示されません。  
- パッケージまたはモデルでプロファイルを選択する必要があります。 これで、ステレオタイプはパッケージまたはモデル内の要素上に表示されます。 詳細については、次を参照してください。[モデル要素を UML にステレオタイプを追加](../modeling/add-stereotypes-to-uml-model-elements.md)します。  
+ パッケージまたはモデルでプロファイルを選択する必要があります。 これで、ステレオタイプはパッケージまたはモデル内の要素上に表示されます。 詳細については、[モデル要素を UML にステレオタイプを追加](../modeling/add-stereotypes-to-uml-model-elements.md)を参照してください。  
   
  UML モデルを開くときに、次のエラーが表示されます: **VS1707: シリアル化エラーが発生したため、次のプロファイルを読み込むことができません: MyProfile.profile**  
  1.  .profile の基本的な XML 構文が正しいことを確認してください。  

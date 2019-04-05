@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 237a79fe0225f54bd8be1f779f241bc54f13cd09
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51728534"
@@ -28,7 +28,7 @@ ms.locfileid: "51728534"
 
 VSPackage は、Visual Studio Command Table (.vsct) ファイルをそのメニュー項目と既定の状態を宣言します。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage が読み込まれるまで、統合開発環境 (IDE) が既定の状態でメニュー項目を表示します。 その後、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>を有効にするか、メニュー項目を無効にするメソッドが呼び出されます。  
   
- VSPackage では、コマンドのユーザー インターフェイス (UI) のコンテキストによって自動的に読み込むことができますので、VSPackage がレジストリ キーを設定できます、UI の特定のコンテキストに切り替えるだけではなく、オンデマンドで VSPackage を読み込む必要がありますが、通常、ソースを制御します。 AutoLoadPackages のレジストリ キーの詳細については、次を参照してください。[管理 Vspackage](../../extensibility/managing-vspackages.md)します。  
+ VSPackage では、コマンドのユーザー インターフェイス (UI) のコンテキストによって自動的に読み込むことができますので、VSPackage がレジストリ キーを設定できます、UI の特定のコンテキストに切り替えるだけではなく、オンデマンドで VSPackage を読み込む必要がありますが、通常、ソースを制御します。 AutoLoadPackages のレジストリ キーの詳細については、[管理 Vspackage](../../extensibility/managing-vspackages.md)を参照してください。  
   
 ## <a name="vspackage-ui"></a>VSPackage の UI  
  ソース管理のパッケージは、VSPackage として実装されから UI を使用しない[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 各ソース管理 VSPackage では、ソース管理 VSPackage に固有のオプションの設定のメニュー項目、メニュー グループ、ツール ウィンドウ、ツールバー、および必要な UI など、独自の UI 要素を指定する必要があります。 これらの UI 要素は、静的または動的に有効にすることができます。 静的な UI 要素は、.vsct ファイルで定義されてし、か、VSPackage が読み込まれるかどうかが表示されます。 UI の動的な要素があります、特定のコマンドの UI コンテキストに応じて表示など<xref:EnvDTE.Constants.vsContextNoSolution>、または呼び出しの結果として、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>メソッド。 動的な UI 要素の可視性は、Vspackage の遅延読み込みのための戦略に準拠します。  

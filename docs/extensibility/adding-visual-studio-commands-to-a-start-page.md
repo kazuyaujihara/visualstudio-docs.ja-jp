@@ -52,7 +52,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 > [!NOTE]
 >  `x:` XAML スキーマを指すのエイリアスがすべてのコマンドの先頭に必要です。
 
- 値を設定することができます、`Command`プロパティからアクセスできる任意のコマンドを**コマンド**ウィンドウ。 使用可能なコマンドの一覧は、次を参照してください。 [Visual Studio コマンドのエイリアス](../ide/reference/visual-studio-command-aliases.md)します。
+ 値を設定することができます、`Command`プロパティからアクセスできる任意のコマンドを**コマンド**ウィンドウ。 使用可能なコマンドの一覧は、[Visual Studio コマンドのエイリアス](../ide/reference/visual-studio-command-aliases.md)を参照してください。
 
  追加するコマンドには、追加のパラメーターが必要とする場合の値に追加できます、`CommandParameter`プロパティ。 次の例に示すように、スペースを使用して、コマンドから別のパラメーター。
 

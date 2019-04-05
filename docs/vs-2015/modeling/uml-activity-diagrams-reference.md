@@ -25,7 +25,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 2dcfa13a7ac97a5afd3e315fcef13a706c5f4bce
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51810469"
@@ -37,18 +37,18 @@ ms.locfileid: "51810469"
   
  アクティビティ図を使用すると、次の例のような複数の種類のプロセスを記述することができます。  
   
-- ビジネス プロセス、またはユーザーとシステム間のワーク フロー。 詳細については、次を参照してください。[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。  
+- ビジネス プロセス、またはユーザーとシステム間のワーク フロー。 詳細については、[ユーザー要件をモデル化](../modeling/model-user-requirements.md)を参照してください。  
   
-- ユース ケースで実行された手順。 詳細については、次を参照してください。 [UML ユース ケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。  
+- ユース ケースで実行された手順。 詳細については、[UML ユース ケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)を参照してください。  
   
 - ソフトウェア プロトコル (コンポーネント間の相互作用の許可されたシーケンス)。  
   
 - ソフトウェア アルゴリズム。  
   
-  このトピックでは、アクティビティ図で使用できる要素について説明します。 詳細はアクティビティの描画の図を参照してください[UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。 UML アクティビティ図を作成する、**アーキテクチャ** メニューのをクリックして**新しい UML またはレイヤー図**します。 一般にモデリング図を描画する方法の詳細については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
+  このトピックでは、アクティビティ図で使用できる要素について説明します。 詳細はアクティビティの描画の図を参照してください[UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)します。 UML アクティビティ図を作成する、**アーキテクチャ** メニューのをクリックして**新しい UML またはレイヤー図**します。 一般にモデリング図を描画する方法の詳細については、[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)を参照してください。  
   
 ## <a name="reading-activity-diagrams"></a>アクティビティ図の読み取り  
- 次のセクションの表では、アクティビティ図とその主要なプロパティに対して使用できる要素について説明します。 要素のプロパティの完全な一覧は、次を参照してください。 [UML アクティビティ図の要素のプロパティ](../modeling/properties-of-elements-on-uml-activity-diagrams.md)します。  
+ 次のセクションの表では、アクティビティ図とその主要なプロパティに対して使用できる要素について説明します。 要素のプロパティの完全な一覧は、[UML アクティビティ図の要素のプロパティ](../modeling/properties-of-elements-on-uml-activity-diagrams.md)を参照してください。  
   
  アクションと、アクティビティ図に表示されるその他の要素によって、1 つのアクティビティが形成されます。 UML モデル エクスプローラーで、アクティビティを確認できます。 これは、最初の要素を図に追加すると作成されます。  
   

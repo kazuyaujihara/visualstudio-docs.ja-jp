@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49830746"
@@ -28,7 +28,7 @@ ms.locfileid: "49830746"
 XML エディターでは、Visual Studio で提供されている他の言語のエディターに相当する、フル機能の IntelliSense を利用できます。 このセクションでは、XML スキーマ定義言語 (XSD) ドキュメントと XSLT ドキュメントで IntelliSense を使用する方法について説明します。  
   
 ## <a name="intellisense-in-an-xsd-document"></a>XSD ドキュメントでの IntelliSense  
- 入力すると予測される要素のドロップダウン リストを取得するスキーマをドキュメントに関連付けられて後、 `"<"`  をクリックしてまたは、**オブジェクト メンバーの一覧を表示**XML エディターのツールバーのボタンをクリックします。 XML ドキュメントにスキーマを関連付ける方法については、次を参照してください。 [XML ドキュメントの検証](../xml-tools/xml-document-validation.md)です。  
+ 入力すると予測される要素のドロップダウン リストを取得するスキーマをドキュメントに関連付けられて後、 `"<"`  をクリックしてまたは、**オブジェクト メンバーの一覧を表示**XML エディターのツールバーのボタンをクリックします。 XML ドキュメントにスキーマを関連付ける方法については、[XML ドキュメントの検証](../xml-tools/xml-document-validation.md)を参照してください。  
   
  開始タグの内部で「SPACE」と入力しても、現在の要素に追加できる属性をすべて示したドロップダウン リストを表示できます。  
   

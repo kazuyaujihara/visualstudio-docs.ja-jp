@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: be1bcecb740fb0c375d0f461639a8b0d5e40669a
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51765199"
@@ -27,7 +27,7 @@ ms.locfileid: "51765199"
 
 VSPackage のコマンドを実装するには、次のタスクを実行する必要があります。  
   
-1. .Vsct ファイルでは、コマンド グループをセットアップし、コマンドを追加します。 詳細については、次を参照してください。 [Visual Studio Command Table (します。Vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)'  
+1. .Vsct ファイルでは、コマンド グループをセットアップし、コマンドを追加します。 詳細については、[Visual Studio Command Table (を参照してください。Vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)'  
   
 2. Visual Studio でのコマンドを登録します。  
   

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visual Studio 拡張機能の開発を始める |Microsoft Docs
 ms.date: 09/18/2017
 ms.topic: conceptual
@@ -91,7 +91,7 @@ Visual Studio 拡張機能を開発するために Visual Studio だけでなく
 ## <a name="how-can-i-distribute-my-extension"></a>私の拡張機能を配布する方法は?
  別のコンピューターにあなたの拡張機能をインストールするか、ダブルクリックするとインストールできる.vsix ファイルを友人に送信することができます。 VSIX パッケージの詳細については [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md) を参照してください。
 
- Visual Studio のお客様が大量にできるように、Visual Studio Marketplace で拡張機能を公開することもできます。 Marketplace の拡張機能をパッケージ化の例は、次を参照してください。[チュートリアル。Visual Studio 拡張機能を公開](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)します。 Marketplace での発行を行う必要がある内容の詳細については、次を参照してください。[製品と Visual Studio の拡張機能](/azure/devops/extend/overview?view=vsts)します。
+ Visual Studio のお客様が大量にできるように、Visual Studio Marketplace で拡張機能を公開することもできます。 Marketplace の拡張機能をパッケージ化の例は、次を参照してください。[チュートリアル。Visual Studio 拡張機能を公開](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)します。 Marketplace での発行を行う必要がある内容の詳細については、[製品と Visual Studio の拡張機能](/azure/devops/extend/overview?view=vsts)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

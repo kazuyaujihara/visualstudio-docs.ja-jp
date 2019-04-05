@@ -34,7 +34,7 @@ ms.lasthandoff: 02/08/2019
 ms.locfileid: "55945418"
 ---
 # <a name="build-office-solutions"></a>Office ソリューションを構築します。
-  一般に、Office プロジェクトのビルドとデバッグは、Visual Studio のその他の種類のプロジェクト (Windows フォームなど) のビルドおよびデバッグとほとんど同じです。 このセクションのトピックでは、いくつかある相違点について説明します。 アプリケーションを構築する方法については、次を参照してください。[コンパイルし、Visual Studio でビルド](../ide/compiling-and-building-in-visual-studio.md)します。
+  一般に、Office プロジェクトのビルドとデバッグは、Visual Studio のその他の種類のプロジェクト (Windows フォームなど) のビルドおよびデバッグとほとんど同じです。 このセクションのトピックでは、いくつかある相違点について説明します。 アプリケーションを構築する方法については、[コンパイルし、Visual Studio でビルド](../ide/compiling-and-building-in-visual-studio.md)を参照してください。
 
 > [!NOTE]
 >  [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
@@ -49,9 +49,9 @@ ms.locfileid: "55945418"
 
 -   プロジェクト アセンブリと、 **［ローカル コピー］** プロパティが **true**に設定されているすべての参照先アセンブリ。
 
--   アプリケーション マニフェストは、ファイル名拡張子を持つ *.manifest*します。 詳細については、次を参照してください。 [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)します。
+-   アプリケーション マニフェストは、ファイル名拡張子を持つ *.manifest*します。 詳細については、[Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)を参照してください。
 
--   配置マニフェストは、ファイル名拡張子を持つ *.vsto*します。 詳細については、次を参照してください。 [Office ソリューション用配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)します。
+-   配置マニフェストは、ファイル名拡張子を持つ *.vsto*します。 詳細については、[Office ソリューション用配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)を参照してください。
 
 -   プログラム データベース (*PDB*) ファイル。
 
@@ -63,13 +63,13 @@ ms.locfileid: "55945418"
 
 - プロジェクト アセンブリと、 **［ローカル コピー］** プロパティが **true**に設定されているすべての参照先アセンブリ。
 
-- アプリケーション マニフェストは、ファイル名拡張子を持つ *.manifest*します。 詳細については、次を参照してください。 [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)します。
+- アプリケーション マニフェストは、ファイル名拡張子を持つ *.manifest*します。 詳細については、[Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)を参照してください。
 
-- 配置マニフェストは、ファイル名拡張子を持つ *.vsto*します。 詳細については、次を参照してください。 [Office ソリューション用配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)します。
+- 配置マニフェストは、ファイル名拡張子を持つ *.vsto*します。 詳細については、[Office ソリューション用配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)を参照してください。
 
 - プログラム データベース (*PDB*) プロジェクトのアセンブリのファイル。
 
-  VSTO アドイン プロジェクトのビルド処理により、開発用コンピューターには、VSTO アドインの読み込みに必要な一連のレジストリ エントリも作成されます。 詳細については、次を参照してください。 [VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)します。
+  VSTO アドイン プロジェクトのビルド処理により、開発用コンピューターには、VSTO アドインの読み込みに必要な一連のレジストリ エントリも作成されます。 詳細については、[VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)を参照してください。
 
   フォーム領域を含む Outlook VSTO アドイン プロジェクトをビルドすると、ビルド処理により、次に示す情報がレジストリに追加されます。
 
@@ -87,12 +87,12 @@ ms.locfileid: "55945418"
 
  Office プロジェクトでは、発行者を確認するために証明書が使用されます。 Visual Studio は、Office ソリューションを識別するための一時的な証明書を自動的に作成し、その一時的な証明書を信頼するように開発コンピューターを構成します。
 
- 詳細については、次を参照してください。[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)します。
+ 詳細については、[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)を参照してください。
 
 ### <a name="network-projects"></a>ネットワーク プロジェクト
- アセンブリまたはドキュメントの場所がネットワーク共有上に存在している場合は、ローカル (User レベル) セキュリティ ポリシーを更新するだけでは、ソリューションを実行できるようになりません。 管理者は、ソリューションの実行前に、コンピューター (Machine) レベルで、ネットワーク共有上のアセンブリとドキュメントに完全な信頼を付与する必要があります。 セキュリティ ポリシーを設定する方法の詳細については、次を参照してください。[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)します。
+ アセンブリまたはドキュメントの場所がネットワーク共有上に存在している場合は、ローカル (User レベル) セキュリティ ポリシーを更新するだけでは、ソリューションを実行できるようになりません。 管理者は、ソリューションの実行前に、コンピューター (Machine) レベルで、ネットワーク共有上のアセンブリとドキュメントに完全な信頼を付与する必要があります。 セキュリティ ポリシーを設定する方法の詳細については、[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)を参照してください。
 
- ドキュメント レベルのプロジェクトでは、Office の信頼できるフォルダーのリストに、ドキュメントの完全修飾位置を追加する必要もあります。 詳細については、次を参照してください。[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)します。
+ ドキュメント レベルのプロジェクトでは、Office の信頼できるフォルダーのリストに、ドキュメントの完全修飾位置を追加する必要もあります。 詳細については、[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)を参照してください。
 
 ## <a name="change-the-platform-target"></a>プラットフォーム ターゲットを変更します。
  既定では、Office プロジェクトのプラットフォーム ターゲットは **Any CPU**です。 通常、この設定を変更する必要はありません。 **Any CPU** プラットフォーム ターゲット設定でビルドされた Officeソリューションは、32 ビット バージョンと 64 ビット バージョンの Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] または [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]で実行するようになります。

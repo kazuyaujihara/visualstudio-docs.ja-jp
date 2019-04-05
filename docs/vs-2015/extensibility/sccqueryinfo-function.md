@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: a7093f712ab520502e36094ec571c0ee1a3ded18
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51785080"
@@ -51,7 +51,7 @@ SCCRTN SccQueryInfo(
  [in]クエリを実行するファイルの名前の配列。  
   
  lpStatus  
- [入力、出力]配列をソース管理プラグインは各ファイルの状態フラグを返します。 詳細については、次を参照してください。[ファイルの状態コード](../extensibility/file-status-code-enumerator.md)します。  
+ [入力、出力]配列をソース管理プラグインは各ファイルの状態フラグを返します。 詳細については、[ファイルの状態コード](../extensibility/file-status-code-enumerator.md)を参照してください。  
   
 ## <a name="return-value"></a>戻り値  
  この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。  
@@ -66,7 +66,7 @@ SCCRTN SccQueryInfo(
 ## <a name="remarks"></a>Remarks  
  場合`lpFileName`は空の文字列を更新するステータス情報は現在ありません。 それ以外の場合、状態情報の変更を可能性がありますが、ファイルの完全なパス名になります。  
   
- 戻り値の配列は、ビットマスクの`SCC_STATUS_xxxx`ビット。 詳細については、次を参照してください。[ファイルの状態コード](../extensibility/file-status-code-enumerator.md)します。 ソース管理システムはすべてのビットの種類をサポートしていません。 たとえば場合、`SCC_STATUS_OUTOFDATE`が提供されていない、ビットが設定されていないだけです。  
+ 戻り値の配列は、ビットマスクの`SCC_STATUS_xxxx`ビット。 詳細については、[ファイルの状態コード](../extensibility/file-status-code-enumerator.md)を参照してください。 ソース管理システムはすべてのビットの種類をサポートしていません。 たとえば場合、`SCC_STATUS_OUTOFDATE`が提供されていない、ビットが設定されていないだけです。  
   
  ファイルをチェック アウトをこの関数を使用する場合は、次に注意してください`MSSCCI`状態の要件。  
   

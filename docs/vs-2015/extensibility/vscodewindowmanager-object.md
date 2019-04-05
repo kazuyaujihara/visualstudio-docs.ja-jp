@@ -20,7 +20,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 9c923b99fdd50bf07bfbda0f2cced68b6c85440f
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51736943"
@@ -28,7 +28,7 @@ ms.locfileid: "51736943"
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager オブジェクト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-言語サービスは、コード ウィンドウ マネージャーを実装し、表示要素 (たとえば、ドロップダウン バー) を管理する責任を負います。 詳細については、次を参照してください。[レガシ API を使用してコードの Windows をカスタマイズする](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)します。  
+言語サービスは、コード ウィンドウ マネージャーを実装し、表示要素 (たとえば、ドロップダウン バー) を管理する責任を負います。 詳細については、[レガシ API を使用してコードの Windows をカスタマイズする](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)を参照してください。  
   
  次の表は、インターフェイス、`VSCodeWindowManager`オブジェクト。  
   

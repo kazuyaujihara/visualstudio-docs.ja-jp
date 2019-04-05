@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 5a43f48c337751c989af37c49a361ae011aa4e16
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51733908"
@@ -28,7 +28,7 @@ ms.locfileid: "51733908"
 
 VSPackage の統合[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]だけで複数のユーザーのコンピューターにファイルをコピーする必要があります。 VSPackage とその依存ファイルをインストールして登録し、それらを統合する必要があります VSPackage のインストーラー[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 VSPackage がのアイコンを表示するなどの統合機能の活用、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]スプラッシュ画面とダイアログ ボックスの詳細。  
   
- Microsoft Windows インストーラー ファイルは、Vspackage を配布することをお勧めの方法です。 サポートされている任意の Windows オペレーティング システムで使いやすい Windows インストーラー パッケージを実行できる[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 詳細については、次を参照してください。 [Windows インストーラー](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)します。  
+ Microsoft Windows インストーラー ファイルは、Vspackage を配布することをお勧めの方法です。 サポートされている任意の Windows オペレーティング システムで使いやすい Windows インストーラー パッケージを実行できる[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 詳細については、[Windows インストーラー](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [Windows インストーラーの基本事項](../../extensibility/internals/windows-installer-basics.md)  

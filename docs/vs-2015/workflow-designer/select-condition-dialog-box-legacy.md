@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: erikre
 ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49897772"
@@ -49,9 +49,9 @@ ms.locfileid: "49897772"
 |**条件のプレビュー**|選択したルール条件の条件式が表示されます。|  
 |**わかりました**|これをクリックすると、選択したルール条件がアクティビティの条件に割り当てられます。|  
   
- 作成して、ルールの条件の編集の詳細については、次を参照してください。[ルール条件エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)します。  
+ 作成して、ルールの条件の編集の詳細については、[ルール条件エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)を参照してください。  
   
- 条件の詳細については、次を参照してください。[ワークフロー内の条件を使用して](http://go.microsoft.com/fwlink?LinkID=65009)します。  
+ 条件の詳細については、[ワークフロー内の条件を使用して](http://go.microsoft.com/fwlink?LinkID=65009)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ルール条件エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   

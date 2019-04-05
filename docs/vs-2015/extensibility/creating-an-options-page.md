@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 9c65a91135c9346e0dfcabbe7422501ed4f02704
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51751371"
@@ -41,7 +41,7 @@ ms.locfileid: "51751371"
   
 1.  すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]という名前の VSIX プロジェクト`MyToolsOptionsExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#/機能拡張**します。  
   
-2.  という名前の Visual Studio パッケージ項目テンプレートを追加することで、VSPackage を追加`MyToolsOptionsPackage`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加 ダイアログ**に移動して、 **Visual c# アイテム/機能拡張**選択と**Visual Studio パッケージ**します。 **名前**ダイアログの下部にあるフィールドに、ファイル名を変更して`MyToolsOptionsPackage.cs`します。 VSPackage を作成する方法の詳細については、次を参照してください。 [VSPackage を使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-vspackage.md)です。  
+2.  という名前の Visual Studio パッケージ項目テンプレートを追加することで、VSPackage を追加`MyToolsOptionsPackage`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加 ダイアログ**に移動して、 **Visual c# アイテム/機能拡張**選択と**Visual Studio パッケージ**します。 **名前**ダイアログの下部にあるフィールドに、ファイル名を変更して`MyToolsOptionsPackage.cs`します。 VSPackage を作成する方法の詳細については、[VSPackage を使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-vspackage.md)を参照してください。  
   
 #### <a name="to-create-the-tools-options-property-grid"></a>ツール オプションのプロパティ グリッドを作成するには  
   

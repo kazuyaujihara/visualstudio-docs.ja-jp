@@ -16,7 +16,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d43e48b67cdbfabcb38703469f8570f78336dcab
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51794596"
@@ -36,7 +36,7 @@ ms.locfileid: "51794596"
  IntelliTrace とデバッグ履歴を使用すると、アプリケーション内を移動して状態を調べることができ (呼び出し履歴およびローカル変数)、ブレークポイントを設定し、デバッグを再実行し、テスト手順を繰り返す必要はありません。 これにより多くの時間を節約できます。実行に時間がかかるテスト シナリオの深い場所にバグがある場合は特に有効です。  
   
 ## <a name="how-do-i-start-using-historical-debugging"></a>デバッグ履歴の使用を始める方法  
- IntelliTrace は既定で有効になります。 決定する必要があるのは、調査対象のイベントと関数呼び出しだけです。 検索する対象の定義の詳細については、次を参照してください。 [IntelliTrace 機能](../debugger/intellitrace-features.md)します。 IntelliTrace によるデバッグのステップ バイ ステップ アカウントは、次を参照してください。[チュートリアル: IntelliTrace を使用した](../debugger/walkthrough-using-intellitrace.md)します。  
+ IntelliTrace は既定で有効になります。 決定する必要があるのは、調査対象のイベントと関数呼び出しだけです。 検索する対象の定義の詳細については、[IntelliTrace 機能](../debugger/intellitrace-features.md)を参照してください。 IntelliTrace によるデバッグのステップ バイ ステップ アカウントは、[チュートリアル: IntelliTrace を使用した](../debugger/walkthrough-using-intellitrace.md)を参照してください。  
   
 ## <a name="navigating-your-code-with-historical-debugging"></a>デバッグ履歴でのコード内の移動  
  バグのある単純なプログラムから始めましょう。 C# コンソール アプリケーションで次のコードを追加します。  
@@ -91,7 +91,7 @@ private static int AddInt(int add)
   
 7. ここで、`AddInt()` メソッドにステップ インします。 このコードにバグがあることがすぐにわかります。  
   
-   この手順では、デバッグ履歴でできることの表面的な部分のみを見ています。 さまざまな設定とナビゲーション余白がさまざまなボタンの影響に関する詳細については、次を参照してください。 [IntelliTrace 機能](../debugger/intellitrace-features.md)します。
+   この手順では、デバッグ履歴でできることの表面的な部分のみを見ています。 さまざまな設定とナビゲーション余白がさまざまなボタンの影響に関する詳細については、[IntelliTrace 機能](../debugger/intellitrace-features.md)を参照してください。
 
 
 

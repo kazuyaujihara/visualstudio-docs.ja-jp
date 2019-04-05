@@ -20,7 +20,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 44fe6613288cac93034dd32a3203f1bb73004f83
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51747950"
@@ -86,7 +86,7 @@ ms.locfileid: "51747950"
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- ファイル名はで、ユーザーが入力した名前に基づいて、このテンプレートから項目が作成されると、**新しい項目の追加** ダイアログ ボックス。 これは、機能は、複数ファイルの項目テンプレートを作成するときに便利です。 詳細については、次を参照してください。[方法: 複数ファイル項目テンプレートを作成](../ide/how-to-create-multi-file-item-templates.md)と[テンプレート パラメーター](../ide/template-parameters.md)します。  
+ ファイル名はで、ユーザーが入力した名前に基づいて、このテンプレートから項目が作成されると、**新しい項目の追加** ダイアログ ボックス。 これは、機能は、複数ファイルの項目テンプレートを作成するときに便利です。 詳細については、[方法: 複数ファイル項目テンプレートを作成](../ide/how-to-create-multi-file-item-templates.md)と[テンプレート パラメーター](../ide/template-parameters.md)を参照してください。  
   
 ## <a name="example"></a>例  
  次の例では、用の標準的な項目テンプレートのメタデータを[!INCLUDE[csprcs](../includes/csprcs-md.md)]クラス。  

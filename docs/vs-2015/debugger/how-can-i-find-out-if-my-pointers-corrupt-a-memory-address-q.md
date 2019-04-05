@@ -29,7 +29,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 013b88bcaa0d0cf9dc8ff308f43f3191ed2d0334
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51734240"
@@ -50,7 +50,7 @@ ms.locfileid: "51734240"
   
 1.  0x00408000 にデータ ブレークポイントを設定します。 参照してください[データ変更ブレークポイントを設定 (ネイティブ C++ のみ)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only)します。  
   
-2.  ブレークポイントがヒットしたらを使用して、**メモリ**0x00408000 から始まるメモリを表示するウィンドウの内容します。 詳細については、次を参照してください。[メモリ Windows](../debugger/memory-windows.md)します。  
+2.  ブレークポイントがヒットしたらを使用して、**メモリ**0x00408000 から始まるメモリを表示するウィンドウの内容します。 詳細については、[メモリ Windows](../debugger/memory-windows.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ネイティブ コードのデバッグに関する Faq](../debugger/debugging-native-code-faqs.md)   

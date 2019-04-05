@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: bc61824e7df36fa3b615d1a2c4b729cd7b7c8c1c
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51796182"
@@ -27,13 +27,13 @@ ms.locfileid: "51796182"
 # <a name="solution-sln-file"></a>ソリューション (.Sln) ファイル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ソリューションは、Visual Studio でプロジェクトを整理するための構造です。 ソリューション内のプロジェクト (テキスト ベースの共有)、.sln および .suo (バイナリ、ユーザー固有のソリューションのオプション) ファイルの状態情報を保持します。 .Suo ファイルについては、次を参照してください。[ソリューション ユーザー オプション (します。Suo) ファイル](../../extensibility/internals/solution-user-options-dot-suo-file.md)します。  
+ソリューションは、Visual Studio でプロジェクトを整理するための構造です。 ソリューション内のプロジェクト (テキスト ベースの共有)、.sln および .suo (バイナリ、ユーザー固有のソリューションのオプション) ファイルの状態情報を保持します。 .Suo ファイルについては、[ソリューション ユーザー オプション (を参照してください。Suo) ファイル](../../extensibility/internals/solution-user-options-dot-suo-file.md)します。  
   
  .Sln ファイルで参照されている結果として、VSPackage が読み込まれる場合、環境を呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A>.sln ファイルを読み取るようにします。  
   
  .Sln ファイルには、環境を検索して読み込む永続化されたデータおよびプロジェクトを参照して Vspackage の名前と値のパラメーターを使用して、テキスト ベースの情報が含まれています。 ユーザーがソリューションを開いたときは、環境が繰り返し、 `preSolution`、 `Project`、および`postSolution`については、ソリューションを読み込むには .sln ファイルでは、ソリューション内でプロジェクトし、ソリューションに接続されているすべての永続化された情報。  
   
- 各プロジェクトのファイルには、そのプロジェクトの項目を含む階層を設定する環境で読み取られた追加の情報が含まれています。 階層データの永続化は、プロジェクトによって制御されます。データは通常格納されません、.sln ファイルで記述できますが意図的にプロジェクト情報 .sln ファイルをそのためには選択した場合。 永続化に関連する詳細については、次を参照してください。[プロジェクトの永続化](../../extensibility/internals/project-persistence.md)と[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)します。  
+ 各プロジェクトのファイルには、そのプロジェクトの項目を含む階層を設定する環境で読み取られた追加の情報が含まれています。 階層データの永続化は、プロジェクトによって制御されます。データは通常格納されません、.sln ファイルで記述できますが意図的にプロジェクト情報 .sln ファイルをそのためには選択した場合。 永続化に関連する詳細については、[プロジェクトの永続化](../../extensibility/internals/project-persistence.md)と[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)を参照してください。  
   
 ## <a name="solution-file-contents"></a>ソリューション ファイルの内容  
  .Sln ファイルは、次のコードに示すようにいくつかのセクションで構成されます。  

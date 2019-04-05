@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: bdd366cb8ac86f20e7457178f63aa553a0814158
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49831576"
@@ -84,7 +84,7 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]数のクライアント 
     </compatibleFrameworks>  
     ```  
   
-7.  アプリケーション マニフェストを手動で変更した後、デジタル証明書を使用してアプリケーション マニフェストに再署名更新にも、配置マニフェストに再署名をする必要があります。 Mage.exe を使用する必要がありますまたは MageUI.exe SDK ツールを使用してこれらのファイルを再生成すると、このタスクを実行する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]手動で変更を消去します。 Mage.exe を使用してマニフェストに再署名する詳細については、次を参照してください。[方法: re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)します。  
+7.  アプリケーション マニフェストを手動で変更した後、デジタル証明書を使用してアプリケーション マニフェストに再署名更新にも、配置マニフェストに再署名をする必要があります。 Mage.exe を使用する必要がありますまたは MageUI.exe SDK ツールを使用してこれらのファイルを再生成すると、このタスクを実行する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]手動で変更を消去します。 Mage.exe を使用してマニフェストに再署名する詳細については、[方法: re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)を参照してください。  
   
 ## <a name="net-framework-security"></a>.NET Framework セキュリティ  
  サポート URL は、部分信頼で実行するアプリケーションがマークされている場合、ダイアログ ボックスでは表示されません。  

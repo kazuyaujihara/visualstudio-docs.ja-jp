@@ -13,7 +13,7 @@ ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 8149f60440becb3c7a8d0dc08b2a1a9c00fb171a
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51003029"
@@ -51,7 +51,7 @@ Visual Studio Azure プロジェクトでは、ソリューションでロール
 - **サービス定義ファイル**-、必要なロールを含め、アプリケーション、エンドポイント、および仮想マシンのサイズのランタイム設定を定義します。 
 - **サービス構成ファイル**-ロールのインスタンスの数が実行され、ロールに対して定義されている設定の値を構成します。 
 
-これらのファイルの詳細については、次を参照してください。 [Visual Studio での Azure クラウド サービス ロール構成](vs-azure-tools-configure-roles-for-cloud-service.md)します。
+これらのファイルの詳細については、[Visual Studio での Azure クラウド サービス ロール構成](vs-azure-tools-configure-roles-for-cloud-service.md)を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 - [Visual Studio を使用した Azure クラウド サービス プロジェクトでのロールの管理](./vs-azure-tools-cloud-service-project-managing-roles.md)

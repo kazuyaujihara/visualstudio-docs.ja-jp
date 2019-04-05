@@ -21,7 +21,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 755c4a0b66c91aa37f96d3d6f06972878ee856b8
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51771608"
@@ -46,7 +46,7 @@ static void Main(string[] args)
 }  
 ```  
   
- このコードをビルド、**デバッグ**構成します。 この構成は、既定で設定されています。 構成の詳細については、次を参照してください。[ビルド構成について](../ide/understanding-build-configurations.md)します。  
+ このコードをビルド、**デバッグ**構成します。 この構成は、既定で設定されています。 構成の詳細については、[ビルド構成について](../ide/understanding-build-configurations.md)を参照してください。  
   
  クリックして、デバッガーでこのコードを実行**デバッグ]/[デバッグの開始**(または**開始**ツールバーで、または**F5**)。 アプリケーションはほぼ即座に終了するため、実際に何かがコンソール ウィンドウに出力されたかどうかは分かりません。  
   
@@ -54,7 +54,7 @@ static void Main(string[] args)
   
  ![ブレークポイントを設定する](../debugger/media/getstartedbreakpoint.png "GetStartedBreakpoint")  
   
- ブレークポイントの詳細については、次を参照してください。[を使用してブレークポイント](../debugger/using-breakpoints.md)します。  
+ ブレークポイントの詳細については、[を使用してブレークポイント](../debugger/using-breakpoints.md)を参照してください。  
   
 ##  <a name="BKMK_Inspect_Variables"></a> 変数を検査します。  
  多くの場合、デバッグするには、特定の時点で予期される値が含まれていない変数を検索する必要があります。 いくつかの変数を検査することができます、方法を示します。  
@@ -69,7 +69,7 @@ static void Main(string[] args)
   
  ![[自動変数] ウィンドウのデバッグ時に](../debugger/media/getstartedwindows.png "GetStartedWindows")  
   
- これらのウィンドウの詳細については、次を参照してください。 [[自動変数] と ローカル Windows](../debugger/autos-and-locals-windows.md)します。  
+ これらのウィンドウの詳細については、[[自動変数] と ローカル Windows](../debugger/autos-and-locals-windows.md)を参照してください。  
   
  プログラムを進めながら、変数の値がどのように変化するかを見てみましょう。 ブレークポイントを設定、`testInt += 1;`し、デバッグを再開します。 表示する必要があります**testInt**で、**ローカル**と **[自動変数]** windows が**0**、および**は**は**1**します。 デバッグを続行すると (**デバッグ]/[続行**、または**続行**ツールバーで、または**F5**)、ことを確認の値**testInt**変更**1**、し**2**など。 これらの変更を見るが面倒なときは、ブレークポイントを削除 (**]/[デバッグのブレークポイント**余白内でクリックしてまたは)、デバッグを続行します。 すべてのブレークポイントを削除する場合をクリックして**デバッグ/すべてのブレークポイントを削除**、または**CTRL + SHIFT + F9**、 をクリック**はい**確認するダイアログ ボックスで**Do youすべてのブレークポイントを削除しますか。**  
   

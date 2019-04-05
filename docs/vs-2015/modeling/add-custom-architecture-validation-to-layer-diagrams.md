@@ -66,7 +66,7 @@ Visual Studio では、ユーザーはプロジェクトのソース コード�
 5. メイン インスタンスで、拡張機能をインストールする[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、または別のコンピューターでは、検索、 **.vsix**ファイル*bin\\*します。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 拡張機能をアンインストールするには、 **[ツール]** メニューの **[拡張機能と更新プログラム]** を使用します。  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>レイヤー検証コントロールを別の VSIX に追加する  
- レイヤー検証コントロール、コマンド、および他の拡張機能を含む 1 つの VSIX を作成する場合は、VSIX を定義するプロジェクトとハンドラー用のプロジェクトを別にすることをお勧めします。 モデリング拡張機能の他の種類については、次を参照してください。 [UML を拡張モデルと図](../modeling/extend-uml-models-and-diagrams.md)します。  
+ レイヤー検証コントロール、コマンド、および他の拡張機能を含む 1 つの VSIX を作成する場合は、VSIX を定義するプロジェクトとハンドラー用のプロジェクトを別にすることをお勧めします。 モデリング拡張機能の他の種類については、[UML を拡張モデルと図](../modeling/extend-uml-models-and-diagrams.md)を参照してください。  
   
 #### <a name="to-add-layer-validation-to-a-separate-vsix"></a>レイヤー検証を別の VSIX に追加するには  
   
@@ -218,7 +218,7 @@ Visual Studio では、ユーザーはプロジェクトのソース コード�
  常に、Ctrl キーを押しながら F5 キーを押して (**[デバッグなしで開始]**) 実験用インスタンスを起動します。  
   
 ### <a name="deploying-a-validation-extension"></a>検証拡張機能を配置する  
- 適切なバージョンの Visual Studio がインストールされているコンピューターに検証拡張機能をインストールするには、ターゲット コンピューターで VSIX ファイルを開きます。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] がインストールされているコンピューターにインストールするには、VSIX の内容を Extensions フォルダーに手動で抽出する必要があります。 詳細については、次を参照してください。[レイヤー モデル拡張機能をデプロイ](../modeling/deploy-a-layer-model-extension.md)します。  
+ 適切なバージョンの Visual Studio がインストールされているコンピューターに検証拡張機能をインストールするには、ターゲット コンピューターで VSIX ファイルを開きます。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] がインストールされているコンピューターにインストールするには、VSIX の内容を Extensions フォルダーに手動で抽出する必要があります。 詳細については、[レイヤー モデル拡張機能をデプロイ](../modeling/deploy-a-layer-model-extension.md)を参照してください。  
   
 ##  <a name="example"></a> Example code  
   

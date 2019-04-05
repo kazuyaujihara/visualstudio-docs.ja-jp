@@ -30,7 +30,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51738396"
@@ -40,10 +40,10 @@ ms.locfileid: "51738396"
 
 UML モデルは、ソフトウェア システムを理解したり設計したりする上で、また、ソフトウェア システムについて話し合う際に役立ちます。 Visual Studio には、最もよく使用される 5 つの UML 図 (アクティビティ図、クラス図、コンポーネント図、シーケンス図、およびユース ケース図) のテンプレートが用意されています。 また、システムの構造の定義に役立つレイヤー図も作成できます。  
   
- UML モデリング図とレイヤー図が存在することが可能なのは、モデリング プロジェクト内のみです。 各モデリング プロジェクトには、1 つの共有 UML モデルといくつかの UML 図が含まれています。 各図はモデルの部分ビューです。 UML モデルは、UML 図にあるすべての要素が含まれていて、UML モデル エクスプローラーを使用して表示することができます。 モデルと図の関係については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。 バージョン管理下のモデリング プロジェクトについては、次を参照してください[モデルおよびバージョン管理下にある図](../modeling/manage-models-and-diagrams-under-version-control.md)と[モデリング ソリューションの構築。](../modeling/structure-your-modeling-solution.md)  
+ UML モデリング図とレイヤー図が存在することが可能なのは、モデリング プロジェクト内のみです。 各モデリング プロジェクトには、1 つの共有 UML モデルといくつかの UML 図が含まれています。 各図はモデルの部分ビューです。 UML モデルは、UML 図にあるすべての要素が含まれていて、UML モデル エクスプローラーを使用して表示することができます。 モデルと図の関係については、[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)を参照してください。 バージョン管理下のモデリング プロジェクトについては、次を参照してください[モデルおよびバージョン管理下にある図](../modeling/manage-models-and-diagrams-under-version-control.md)と[モデリング ソリューションの構築。](../modeling/structure-your-modeling-solution.md)  
   
 > [!NOTE]
->  また、プログラム コードを視覚化するために使用される、.NET クラス図と呼ばれる別の種類の図もあります。 詳細については、次を参照してください。[を表示するクラスと型のデザインおよび](http://go.microsoft.com/fwlink/?LinkId=142231)します。  
+>  また、プログラム コードを視覚化するために使用される、.NET クラス図と呼ばれる別の種類の図もあります。 詳細については、[を表示するクラスと型のデザインおよび](http://go.microsoft.com/fwlink/?LinkId=142231)を参照してください。  
   
 ##  <a name="CreatingModelingDiagrams"></a> モデリング プロジェクトに図を作成します。  
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
@@ -90,7 +90,7 @@ UML モデルは、ソフトウェア システムを理解したり設計した
      モデリング図が開き、モデリング プロジェクトに表示されます。  
   
     > [!CAUTION]
-    >  他のモデリング プロジェクト、またはソリューション内の他の場所に、既存の図ファイルを追加、コピー、またはドラッグしないでください。 そのようにすると、コピーした図から要素が消えたり、図を開いた際にエラーが発生したりします。 図のファイルは、そのファイルが作成されたモデリング プロジェクトから開く必要があります。 これは、UML 図がそのモデリング プロジェクトによって所有されるモデルのビューであるためです。 図のファイルをコピーするには、新しい図を作成し、コピー元の図から新しい図に要素をコピーします。 詳細については、次を参照してください。[トラブルシューティング モデリング プロジェクトおよびダイアグラム](#TroubleshootingModelingProjects)します。  
+    >  他のモデリング プロジェクト、またはソリューション内の他の場所に、既存の図ファイルを追加、コピー、またはドラッグしないでください。 そのようにすると、コピーした図から要素が消えたり、図を開いた際にエラーが発生したりします。 図のファイルは、そのファイルが作成されたモデリング プロジェクトから開く必要があります。 これは、UML 図がそのモデリング プロジェクトによって所有されるモデルのビューであるためです。 図のファイルをコピーするには、新しい図を作成し、コピー元の図から新しい図に要素をコピーします。 詳細については、[トラブルシューティング モデリング プロジェクトおよびダイアグラム](#TroubleshootingModelingProjects)を参照してください。  
   
 #### <a name="to-create-a-blank-modeling-project"></a>空のモデリング プロジェクトを作成するには  
   
@@ -144,7 +144,7 @@ UML モデルは、ソフトウェア システムを理解したり設計した
 ##  <a name="NonModelDiagrams"></a> モデリング プロジェクトを必要としないダイアグラム  
  次の種類の図は、モデリング プロジェクトには含まれません。  
   
--   ソース コードのビューとして作成されるクラス図。 これらは、UML クラス図とは無関係です。 詳細については、次を参照してください。[を表示するクラスと型のデザインおよび](../ide/designing-and-viewing-classes-and-types.md)します。  
+-   ソース コードのビューとして作成されるクラス図。 これらは、UML クラス図とは無関係です。 詳細については、[を表示するクラスと型のデザインおよび](../ide/designing-and-viewing-classes-and-types.md)を参照してください。  
   
 -   コード マップ。 「 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)」を参照してください。  
   

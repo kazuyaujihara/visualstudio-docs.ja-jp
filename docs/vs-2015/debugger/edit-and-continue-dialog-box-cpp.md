@@ -27,7 +27,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ce41b3ba317fbdc05db5c81cef2720748b0d9e16
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51779815"
@@ -35,7 +35,7 @@ ms.locfileid: "51779815"
 # <a name="edit-and-continue-dialog-box-c"></a>[エディット コンティニュ] ダイアログ ボックス (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-エディット コンティニュでは、ネイティブ コードに対して行われた変更を適用できない場合があります。 これは一時的な条件の場合もあります。 エディット コンティニュでネイティブ コードの変更をすぐに適用できないときでも、デバッグ セッションの進行中 (実行中のプロシージャに対して現在行っている呼び出しが完了した後など) に適用できる場合もあります。 詳細については、次を参照してください。[エディット コンティニュ](../debugger/edit-and-continue.md)します。  
+エディット コンティニュでは、ネイティブ コードに対して行われた変更を適用できない場合があります。 これは一時的な条件の場合もあります。 エディット コンティニュでネイティブ コードの変更をすぐに適用できないときでも、デバッグ セッションの進行中 (実行中のプロシージャに対して現在行っている呼び出しが完了した後など) に適用できる場合もあります。 詳細については、[エディット コンティニュ](../debugger/edit-and-continue.md)を参照してください。  
   
  コードを編集して、デバッグ中にエラーを修正したり、デバッグを停止してコードを修正したり、エラーを無視してデバッグを続行したりできます。 修正せずに続行した場合、コードの変更はすぐには適用されません。  
   

@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51794765"
@@ -48,19 +48,19 @@ ms.locfileid: "51794765"
   
  Fabrikam 社のツール開発者は、アクティビティ図のオブジェクト ノードにステレオタイプ (たとえば、«コンベヤ ベルト»、«チェックイン デスク») を定義します。 チーム メンバーがアクティビティ図を使用して荷物取り扱いスキームを作成すると、ツール開発者はステレオタイプを設定して各ノードが表す設備の種類を示すことができるようになります。 ツール開発者は、いくつかのステレオタイプに対して追加のプロパティを定義して、ユーザーがコンベヤ ベルトの容量やチェックイン デスクの左右の区別などの値を記録できるようにします。  
   
- 詳細については、次を参照してください。 [UML を拡張するプロファイルを定義して](../modeling/define-a-profile-to-extend-uml.md)します。  
+ 詳細については、[UML を拡張するプロファイルを定義して](../modeling/define-a-profile-to-extend-uml.md)を参照してください。  
   
 ## <a name="custom-toolbox-items"></a>カスタム ツールボックス項目  
  カスタム ツールボックス項目は、図で定義するプロトタイプから要素や要素グループを作成します。 たとえば、特定の色またはステレオタイプのユース ケースを作成するツールや、設計パターンを表すクラスと関連のグループを作成することもできます。 これらのツールボックス項目を Visual Studio 拡張機能に追加し、他のユーザーに配布できます。  
   
- 詳細については、次を参照してください。[定義のカスタム モデリング ツールボックス アイテム](../modeling/define-a-custom-modeling-toolbox-item.md)します。  
+ 詳細については、[定義のカスタム モデリング ツールボックス アイテム](../modeling/define-a-custom-modeling-toolbox-item.md)を参照してください。  
   
 ## <a name="validation"></a>検証  
  UML モデルが指定の制約に確実に準拠するようにするための規則を定義できます。  
   
  Fabrikam 社のツール開発者は、荷物取り扱いモデルでチーム メンバーが単純なミスを犯すことがないように規則を定義します。 たとえば、チェックイン デスクを保管庫に直接接続することはできません。 これらの間には、少なくともベルト コンベヤが存在する必要があります。  
   
- 詳細については、次を参照してください。 [UML モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)します。  
+ 詳細については、[UML モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)を参照してください。  
   
 ## <a name="menu-commands"></a>メニュー コマンド  
  UML 図内の要素をユーザーが右クリックすることで呼び出せるコマンドを定義できます。 これらのコマンドを使用して、モデルおよび図を更新したり、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] でその他の操作を実行したりできます。  
@@ -74,45 +74,45 @@ ms.locfileid: "51794765"
   
  Fabrikam 社のチーム メンバーは、仕様などのファイルを、Windows デスクトップからドラッグすることで、任意のモデル要素に関連付けることができます。 ツール開発者は、任意の要素にファイル パス プロパティを提供するステレオタイプと、ファイルが要素上にドロップされたときにステレオタイプとファイル パスを設定するジェスチャを定義しました。  
   
- 詳細については、次を参照してください。[モデリング図にジェスチャ ハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)します。  
+ 詳細については、[モデリング図にジェスチャ ハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)を参照してください。  
   
 ## <a name="responding-to-changes"></a>変更への対応  
  モデル内の変更が、ユーザー アクションに起因するものか、他のプログラム コードに起因するものかにかかわらず、変更に対応するコードを作成できます。  
   
  Fabrikam 社の開発者は、要素の色をそのステレオタイプに応じて自動的に設定するコードを作成します。 これにより、ユーザーはモデル内の要素のそれぞれ異なる役割を簡単に区別できるようになります。  
   
- 詳細については、次を参照してください。[方法: UML モデルの変更に応答](../misc/how-to-respond-to-changes-in-a-uml-model.md)します。  
+ 詳細については、[方法: UML モデルの変更に応答](../misc/how-to-respond-to-changes-in-a-uml-model.md)を参照してください。  
   
 ## <a name="model-bus"></a>モデル バス  
  モデル バスを使用すると、別の図または別の [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能から図またはモデルにアクセスできます。 特に、複数のモデルに情報を伝達することができるため、結合されたモデルで複数の人が同時に作業できます。  
   
  Fabrikam 社では、アクティビティ図上の要素を使用して、荷物取り扱い設備を表します。 設備の各項目については、別の図で詳細な仕様を記述できます。この図は、別のモデルに配置することもできます。 荷物フロー図の検証制約では、他の図から設備の関連プロパティを取得できます。 他の図への参照は、ステレオタイプに定義された追加のプロパティに格納されます。  
   
- 詳細については、次を参照してください。[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)します。  
+ 詳細については、[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)を参照してください。  
   
 ## <a name="generation"></a>生成  
  1 つのモデルから、プログラム コード、スクリプト、構成、ドキュメント、新しいモデル、またはその他の成果物を生成できます。  
   
  Fabrikam 社が設計する荷物取り扱いシステムのプログラム コードの多くは、複数のプロジェクトで共通しています。 主な変動要素は、空港における荷物の流れです。 設計チームが初期のいくつかのプロジェクトを経験した後、ツール開発者は、荷物フロー モデルから可変のプログラム コードの大部分およびその他のファイル (ユーザー ドキュメントなど) を生成するテンプレートを作成します。 これにより、新しいプロジェクトの開発時間が大幅に短縮され、エラー発生率も引き下げられます。  
   
- 詳細については、次を参照してください。 [UML モデルからファイルを生成](../modeling/generate-files-from-a-uml-model.md)します。  
+ 詳細については、[UML モデルからファイルを生成](../modeling/generate-files-from-a-uml-model.md)を参照してください。  
   
 ## <a name="team-foundation-server-integration"></a>Team Foundation Server 統合  
  作業項目をモデル要素にリンクし、リンクされた項目にプログラムでアクセスできます。  
   
  Fabrikam 社のツール開発者は、それぞれの空港プロジェクトの作業スケジュールを生成するツールを作成します。 スケジュールされた作業項目は、モデル要素にリンクされます。  
   
- 詳細については、次を参照してください。[作業項目リンク ハンドラーを定義](../modeling/define-a-work-item-link-handler.md)します。  
+ 詳細については、[作業項目リンク ハンドラーを定義](../modeling/define-a-work-item-link-handler.md)を参照してください。  
   
 ## <a name="tools-that-update-models"></a>モデルを更新するツール  
  UML モデルの読み込みを行えるスタンドアロン アプリケーションと Visual Studio 拡張機能を作成できます。  
   
  Fabrikam 社の開発者は、モデルを読み取り、モデルの各要素での作業の進捗状況についてレポートを生成するツールを作成します。  
   
- 詳細については、次を参照してください。[プログラム コードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)します。  
+ 詳細については、[プログラム コードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)を参照してください。  
   
 ## <a name="domain-specific-languages"></a>ドメイン固有の言語  
- 特定の種類のモデルを頻繁に使用する場合は、ドメイン固有の言語を作成しておくと便利です。 このようにすると UML モデルより密接にビジネス ニーズに合うものを作成できますが、それを構築して保守するには多大の労力が必要です。 詳細については、次を参照してください。 [Modeling SDK for Visual Studio - ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)します。  
+ 特定の種類のモデルを頻繁に使用する場合は、ドメイン固有の言語を作成しておくと便利です。 このようにすると UML モデルより密接にビジネス ニーズに合うものを作成できますが、それを構築して保守するには多大の労力が必要です。 詳細については、[Modeling SDK for Visual Studio - ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)を参照してください。  
   
 ## <a name="external-resources"></a>外部リソース  
   

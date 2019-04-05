@@ -26,7 +26,7 @@ ms.author: mblome
 manager: ghogen
 ms.openlocfilehash: e0e2f38bcde48a34ecb8f438a373b3bdfdb13dfa
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51766716"
@@ -34,7 +34,7 @@ ms.locfileid: "51766716"
 # <a name="code-analysis-for-cc-warnings"></a>C/C++ コードの警告に対応するコードの分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このセクションでは、C/C++ コード分析の警告の一覧を示します。 コード分析の詳細については、次を参照してください。 [/analyze (コード分析)](http://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08)と[クイック スタート: c/c++ のコード分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)します。  
+このセクションでは、C/C++ コード分析の警告の一覧を示します。 コード分析の詳細については、[/analyze (コード分析)](http://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08)と[クイック スタート: c/c++ のコード分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [セキュリティで保護されたコードの記述に関するガイドライン](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)   

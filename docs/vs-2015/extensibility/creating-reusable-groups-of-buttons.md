@@ -19,7 +19,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 79098eb51d9adc56021d3c57cb8d242edddeb9c3
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51732322"
@@ -33,7 +33,7 @@ ms.locfileid: "51732322"
   
 ### <a name="to-create-a-reusable-group-of-buttons"></a>ボタンの再利用可能なグループを作成するには  
   
-1.  という名前の VSIX プロジェクトを作成する`ReusableButtons`します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
+1.  という名前の VSIX プロジェクトを作成する`ReusableButtons`します。 詳細については、[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。  
   
 2.  という名前のカスタム コマンド項目テンプレートを追加、プロジェクトが開いたら、 **ReusableCommand**します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#/機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して**ReusableCommand.cs**します。  
   

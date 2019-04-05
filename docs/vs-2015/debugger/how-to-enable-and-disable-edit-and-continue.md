@@ -32,7 +32,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5709b4bdae55c0ade6ca4559dcbaad8d66c0bbac
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51781258"
@@ -55,11 +55,11 @@ ms.locfileid: "51781258"
 3. を有効にするのには、選択、**編集を有効にして続行**チェック ボックスをオンします。 無効にするには、このチェック ボックスをオフにします。  
   
    > [!NOTE]
-   >  IntelliTrace が有効になっている場合に、IntelliTrace イベントと呼び出し情報の両方を収集すると、エディット コンティニュが無効になります。 詳細については、次を参照してください。[構成 IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)します。  
+   >  IntelliTrace が有効になっている場合に、IntelliTrace イベントと呼び出し情報の両方を収集すると、エディット コンティニュが無効になります。 詳細については、[構成 IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)を参照してください。  
   
 4. **[OK]** をクリックします。  
   
-   これらのオプションの詳細については、次を参照してください。 [General, Debugging, オプション ダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)します。  
+   これらのオプションの詳細については、[General, Debugging, オプション ダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [エディット コンティニュ](../debugger/edit-and-continue.md)

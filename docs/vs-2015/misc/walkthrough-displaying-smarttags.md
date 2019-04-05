@@ -16,7 +16,7 @@ caps.latest.revision: 31
 manager: douge
 ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49939099"
@@ -34,7 +34,7 @@ ms.locfileid: "49939099"
  次のチュートリアルでは、現在の単語の上に表示され、 **Convert to upper case** と **Convert to lower case**の 2 つのアクションを提案するスマート タグを作成する方法を示します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) プロジェクトの作成  
   

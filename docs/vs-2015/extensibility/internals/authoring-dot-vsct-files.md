@@ -17,7 +17,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 50dc50aee377a4685527e57dc2af5d9946639946
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51772171"
@@ -62,7 +62,7 @@ ms.locfileid: "51772171"
   
     -   Vsshlids.h には、Visual Studio のメニューのコマンド Id が含まれています。  
   
-2.  パッケージが Visual Studio によって、または他のパッケージで定義されている任意のコマンドを呼び出す場合は、追加、`UsedCommands`要素の後に、`Commands`要素。 この要素で設定を[UsedCommand](../../extensibility/usedcommand-element.md)各コマンドを呼び出すが、パッケージの一部ではないです。 設定、`guid`と`id`の属性、`UsedCommand`要素を呼び出すコマンドの GUID と ID の値。 Guid と Visual Studio の Id のコマンドを検索する方法の詳細については、次を参照してください。 [Guid と Visual Studio コマンドの Id の](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)します。 他のパッケージからコマンドを呼び出すには、GUID と、それらのパッケージの .vsct ファイルで定義されているコマンドの ID を使用します。  
+2.  パッケージが Visual Studio によって、または他のパッケージで定義されている任意のコマンドを呼び出す場合は、追加、`UsedCommands`要素の後に、`Commands`要素。 この要素で設定を[UsedCommand](../../extensibility/usedcommand-element.md)各コマンドを呼び出すが、パッケージの一部ではないです。 設定、`guid`と`id`の属性、`UsedCommand`要素を呼び出すコマンドの GUID と ID の値。 Guid と Visual Studio の Id のコマンドを検索する方法の詳細については、[Guid と Visual Studio コマンドの Id の](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)を参照してください。 他のパッケージからコマンドを呼び出すには、GUID と、それらのパッケージの .vsct ファイルで定義されているコマンドの ID を使用します。  
   
 ### <a name="declaring-ui-elements"></a>UI 要素を宣言します。  
  内のすべての新しい UI 要素の宣言、 `Symbols` .vsct ファイルのセクション。  
@@ -97,7 +97,7 @@ ms.locfileid: "51772171"
   
     最初に作成する必要がある新しいコマンドのグループを追加すると、`Groups`要素を追加し、[グループ](../../extensibility/group-element.md)コマンド グループごとの要素。  
   
-    設定、`guid`と`id`の各属性`Group`要素、および設定して、`priority`属性を親メニューのグループの相対位置を確立します。 詳細については、次を参照してください。[ボタンの再利用可能なグループの作成](../../extensibility/creating-reusable-groups-of-buttons.md)です。  
+    設定、`guid`と`id`の各属性`Group`要素、および設定して、`priority`属性を親メニューのグループの相対位置を確立します。 詳細については、[ボタンの再利用可能なグループの作成](../../extensibility/creating-reusable-groups-of-buttons.md)を参照してください。  
   
 3. IDE に新しいコマンドを追加する場合は、追加、`Buttons`要素を`Commands`要素。 次に、各コマンドでは、追加、[ボタン](../../extensibility/button-element.md)要素を`Buttons`要素。  
   
@@ -113,9 +113,9 @@ ms.locfileid: "51772171"
       > [!NOTE]
       >  ツール バー ボタンのアイコンがあります。  
   
-      詳細については、次を参照してください。 [Menucommand とします。OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)します。  
+      詳細については、[Menucommand とを参照してください。OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)します。  
   
-4. コマンドのいずれかには、アイコンが必要とする場合は、追加、[ビットマップ](../../extensibility/bitmaps-element.md)要素を`Commands`要素。 次に、各アイコンの追加、[ビットマップ](../../extensibility/bitmap-element.md)要素を`Bitmaps`要素。 これは、ビットマップ リソースの場所を指定します。 詳細については、次を参照してください。[メニュー コマンドに追加するアイコン](../../extensibility/adding-icons-to-menu-commands.md)します。  
+4. コマンドのいずれかには、アイコンが必要とする場合は、追加、[ビットマップ](../../extensibility/bitmaps-element.md)要素を`Commands`要素。 次に、各アイコンの追加、[ビットマップ](../../extensibility/bitmap-element.md)要素を`Bitmaps`要素。 これは、ビットマップ リソースの場所を指定します。 詳細については、[メニュー コマンドに追加するアイコン](../../extensibility/adding-icons-to-menu-commands.md)を参照してください。  
   
    ほとんどのメニューのグループ、およびコマンドを正しく配置する親子構造を利用できます。 非常に大量のコマンド セットでは、コマンドの配置を指定することをお勧め メニューのグループ、またはコマンドは、複数の場所に表示する必要があります、または。  
   
@@ -127,7 +127,7 @@ ms.locfileid: "51772171"
   
    1.  設定、`guid`属性の名前を`GuidSymbol`コマンド セットを定義する要素。 ターゲット要素でない場合、パッケージの一部は、対応する .vsct ファイルで定義されているそのコマンド セットの guid を使用します。  
   
-   2.  設定、`id`と一致する属性、 `id` [ターゲット] メニューまたはグループの属性です。 メニューおよび Visual Studio によって公開されているグループの一覧については、次を参照してください。 [Guid と Visual Studio メニューの Id の](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)または[Guid と Visual Studio ツールバーの Id の](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)します。  
+   2.  設定、`id`と一致する属性、 `id` [ターゲット] メニューまたはグループの属性です。 メニューおよび Visual Studio によって公開されているグループの一覧については、[Guid と Visual Studio メニューの Id の](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)または[Guid と Visual Studio ツールバーの Id の](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)を参照してください。  
   
    IDE では、配置する UI 要素の数が多いがある場合、または複数の場所に表示される要素がある場合は、定義への配置、 [CommandPlacements](../../extensibility/commandplacements-element.md)要素は、次の手順で示すようにします。  
   
@@ -154,7 +154,7 @@ ms.locfileid: "51772171"
   
    2.  各 UI には、制約の項目が、追加、 [VisibilityItem](../../extensibility/visibilityitem-element.md)要素。  
   
-   3.  各`VisibilityItem`要素、設定、`guid`と`id`メニューのグループ、またはコマンド、および設定する属性、 `context` UI のコンテキストで定義されている属性、<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>クラス。 詳細については、次を参照してください。 [VisibilityItem 要素](../../extensibility/visibilityitem-element.md)します。  
+   3.  各`VisibilityItem`要素、設定、`guid`と`id`メニューのグループ、またはコマンド、および設定する属性、 `context` UI のコンテキストで定義されている属性、<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>クラス。 詳細については、[VisibilityItem 要素](../../extensibility/visibilityitem-element.md)を参照してください。  
   
 2. コードで、可視性または UI アイテムの可用性を設定するには、次のコマンド フラグの 1 つ以上を使用します。  
   
@@ -170,7 +170,7 @@ ms.locfileid: "51772171"
   
    - NotInTBList  
   
-     詳細については、次を参照してください。 [Command Flag 要素](../../extensibility/command-flag-element.md)します。  
+     詳細については、[Command Flag 要素](../../extensibility/command-flag-element.md)を参照してください。  
   
 3. 要素の表示、またはその外観を動的に変更を変更するには、次のコマンド フラグの 1 つ以上を使用します。  
   
@@ -198,7 +198,7 @@ ms.locfileid: "51772171"
   
    - TextOnly  
   
-     詳細については、次を参照してください。 [Command Flag 要素](../../extensibility/command-flag-element.md)します。  
+     詳細については、[Command Flag 要素](../../extensibility/command-flag-element.md)を参照してください。  
   
 4. コマンドを受信したときの要素の反応を変更するには、次のコマンド フラグの 1 つ以上を使用します。  
   
@@ -224,15 +224,15 @@ ms.locfileid: "51772171"
   
    - TextIsAnchorCommand  
   
-     詳細については、次を参照してください。 [Command Flag 要素](../../extensibility/command-flag-element.md)します。  
+     詳細については、[Command Flag 要素](../../extensibility/command-flag-element.md)を参照してください。  
   
 5. メニューまたはメニュー項目をメニューに依存するキーボード ショートカットをアタッチする追加のアンパサンド文字 ('& ') で、`ButtonText`メニューまたはメニュー項目の要素。 アンパサンドの後の文字は、親メニューが開いているときにアクティブなキーボード ショートカットが。  
   
-6. コマンドにアタッチしてショートカット メニューに依存しないキーを使用して[KeyBindings](../../extensibility/keybindings-element.md)します。 詳細については、次を参照してください。 [KeyBinding 要素](../../extensibility/keybinding-element.md)します。  
+6. コマンドにアタッチしてショートカット メニューに依存しないキーを使用して[KeyBindings](../../extensibility/keybindings-element.md)します。 詳細については、[KeyBinding 要素](../../extensibility/keybinding-element.md)を参照してください。  
   
-7. メニュー テキストをローカライズするには、使用、`LocCanonicalName`要素。 詳細については、次を参照してください。[文字列要素](../../extensibility/strings-element.md)します。  
+7. メニュー テキストをローカライズするには、使用、`LocCanonicalName`要素。 詳細については、[文字列要素](../../extensibility/strings-element.md)を参照してください。  
   
-   一部のメニューおよびボタンの種類には、特殊な動作が含まれます。 次の表では、いくつかの特別なメニューとボタンの種類について説明します。 他の種類では、次を参照してください。、`types`属性の説明で[メニュー要素](../../extensibility/menu-element.md)、[ボタン要素](../../extensibility/button-element.md)、および[Combo 要素](../../extensibility/combo-element.md)します。  
+   一部のメニューおよびボタンの種類には、特殊な動作が含まれます。 次の表では、いくつかの特別なメニューとボタンの種類について説明します。 他の種類では、、`types`属性の説明で[メニュー要素](../../extensibility/menu-element.md)、[ボタン要素](../../extensibility/button-element.md)、および[Combo 要素](../../extensibility/combo-element.md)を参照してください。  
   
    コンボ ボックス  
    コンボ ボックスは、ツールバーの使用できるドロップダウン リストです。 UI には、コンボ ボックスを追加するには、作成、 [Combos](../../extensibility/combos-element.md)内の要素、`Commands`要素。 追加し、`Combos`要素、`Combo`要素を追加するには、各コンボ ボックス。 `Combo` 要素の属性と子としてが同じである`Button`要素も`DefaultWidth`と`idCommandList`属性。 `DefaultWidth`属性 (ピクセル単位) の幅を設定して、`idCommandList`属性は、コンボ ボックスに入力するために使用するコマンド ID をポイントします。 詳細については、次を参照してください。、`Combo`要素のドキュメント。  

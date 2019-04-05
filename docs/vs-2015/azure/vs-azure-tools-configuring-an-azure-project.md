@@ -13,7 +13,7 @@ ms.date: 03/06/2017
 ms.author: ghogen
 ms.openlocfilehash: 7417bc117de7dc472f413dd9145944cad2d48bb4
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002952"
@@ -36,7 +36,7 @@ ms.locfileid: "51002952"
 
 1. 設定**既存のデプロイを削除する前にプロンプト**に**True**します。 この設定は、Azure で既存のデプロイが誤って削除されないことを確認するのに役立ちます
 
-1. 目的の**サービス構成**をサービス構成を示すために実行またはクラウド サービスをローカルでデバッグするときに使用します。 ロールのサービス構成を変更する方法の詳細については、次を参照してください。 [Visual Studio で Azure クラウド サービスのロールを構成する方法](./vs-azure-tools-configure-roles-for-cloud-service.md)します。
+1. 目的の**サービス構成**をサービス構成を示すために実行またはクラウド サービスをローカルでデバッグするときに使用します。 ロールのサービス構成を変更する方法の詳細については、[Visual Studio で Azure クラウド サービスのロールを構成する方法](./vs-azure-tools-configure-roles-for-cloud-service.md)を参照してください。
 
 1. 設定**Azure ストレージ エミュレーターの起動**に**True**実行またはクラウド サービスをローカルでデバッグするときに、Azure ストレージ エミュレーターを開始します。
 

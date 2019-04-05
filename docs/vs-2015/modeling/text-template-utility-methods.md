@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 4a9c5a0b4b6c85a301c5d3a0e12ad3687f54aeb0
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49186304"
@@ -27,7 +27,7 @@ ms.locfileid: "49186304"
 コードを記述するときに使用可能な常にいくつかのメソッドがある、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]テキスト テンプレート。 これらのメソッドが定義されている<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>します。  
   
 > [!TIP]
->  他のメソッドと正規表現 (いない前処理された) テキスト テンプレートでのホスト環境によって提供されるサービスを使用することもできます。 たとえば、ファイル パスを解決、エラーをログに記録してによって提供されるサービスを取得[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]といずれかのパッケージが読み込まれます。  詳細については、次を参照してください。[テキスト テンプレートから Visual Studio のへのアクセス](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)します。  
+>  他のメソッドと正規表現 (いない前処理された) テキスト テンプレートでのホスト環境によって提供されるサービスを使用することもできます。 たとえば、ファイル パスを解決、エラーをログに記録してによって提供されるサービスを取得[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]といずれかのパッケージが読み込まれます。  詳細については、[テキスト テンプレートから Visual Studio のへのアクセス](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)を参照してください。  
   
 ## <a name="write-methods"></a>メソッドを記述します。  
  使用することができます、`Write()`と`WriteLine()`式のコード ブロックを使用する代わりに、標準のコード ブロック内でテキストを追加する方法。 次の 2 つのコード ブロックは、機能的に同等です。  

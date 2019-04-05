@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1709: 識別子を正しく使い分ける |Microsoft Docs'
-ms.custom: ''
+title: CA1709:識別子では、大文字と小文字が正しく区別する必要があります |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
 - CA1709
@@ -20,17 +15,17 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 795bf9c307862195cd9ec70bb2de1f89ca4d1e17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4f2fff418e8d791898a4e5db00fe639b5d524d95
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199551"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59003087"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709:識別子では、大文字と小文字が正しく区別されなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。 [ca 1709: 識別子では、大文字と小文字が正しく区別する必要があります](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください。 [ca 1709。識別子では、大文字と小文字が正しく区別する必要があります](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)docs.microsoft.com でリリースされました。  
   
 |||  
 |-|-|  
@@ -57,7 +52,7 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
   
  このルールは、名は大文字と小文字の単語に分割し、2 文字の単語を"In"などの一般的な 2 文字の単語または"My"の一覧を確認します。 一致が見つからない場合、単語は頭字語と見なされます。 さらに、このルールでは、名前には、いずれかの行に 4 つの大文字または名前の最後の行に 3 つの大文字が含まれている場合、頭字語が前提としています。  
   
- 慣例により、2 文字の頭字語はすべて大文字を使用して、3 文字以上の頭字語は pascal 形式を使用して大文字小文字の区別します。 この名前付け規則を使用して、次の例: 'DB'、'CR'、'Cpa' および 'Ecma'。 次の例では、規則に違反: 'Io'、'XML' および 'DoD' と、nonparameter 名、'xp' および 'cpl'。  
+ 慣例により、2 文字の頭字語はすべて大文字を使用して、3 文字以上の頭字語は pascal 形式を使用して大文字小文字の区別します。 次の例では、この名前付け規則を使用します。'DB'、'CR'、'Cpa' および 'Ecma'。 次の例では、規則に違反します。'Io'、'XML' および 'DoD' と、nonparameter 名、'xp' および 'cpl'。  
   
  'ID' は、この規則の違反が発生する特殊なケースです。 'Id' は、頭字語ではありませんが、'id' の省略形です。  
   
@@ -67,8 +62,7 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況  
  名前付けの規則がある場合、または識別子は、適切な名前、たとえば、企業やテクノロジの名を表している場合、この警告を抑制しても安全です。  
   
- 特定の用語、略語、および頭字語を追加することも、コード分析カスタム辞書にします。 ユーザー辞書に指定された語句では、この規則の違反は発生しません。 詳細については、次を参照してください[方法: コード分析辞書をカスタマイズする。](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ 特定の用語、略語、および頭字語を追加することも、コード分析カスタム辞書にします。 ユーザー辞書に指定された語句では、この規則の違反は発生しません。 詳細については、「[方法 :コード分析辞書をカスタマイズします。](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
   
 ## <a name="related-rules"></a>関連規則  
- [CA1708: 識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-
+ [CA1708:識別子は、ケース以外で相違させる必要があります。](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

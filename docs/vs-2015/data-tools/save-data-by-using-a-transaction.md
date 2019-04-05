@@ -24,7 +24,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 4c73dd654a2d48be963e592d94685c74d3a16057
 ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/29/2018
 ms.locfileid: "50219576"
@@ -46,7 +46,7 @@ ms.locfileid: "50219576"
   
  トランザクションをロールバックするには、呼び出す前に例外をスロー、<xref:System.Transactions.TransactionScope.Complete%2A>メソッド。  
   
- 詳細については、次を参照してください。[トランザクションでデータを保存](../data-tools/save-data-in-a-transaction.md)します。  
+ 詳細については、[トランザクションでデータを保存](../data-tools/save-data-in-a-transaction.md)を参照してください。  
   
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll"></a>System.Transactions の dll への参照を追加するには  
   

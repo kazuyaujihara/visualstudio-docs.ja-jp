@@ -18,7 +18,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 70cb00e6d2ecae8ba5fb8abefb76f7061406f0fd
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51741285"
@@ -28,7 +28,7 @@ ms.locfileid: "51741285"
 
 次の表は、プロジェクト モデルを展開します。 テーブルは、インターフェイスと、モデルとインターフェイス、および特定のオブジェクトに関連付けられているサービスで識別されたサービスの簡単な説明を提示します。 さらに、テーブルには、プロジェクトの作成と、特定のプロジェクトの種類の要件に応じて保守で省略可能なその他のインターフェイスについて詳しく説明します。  
   
- 詳細については、次を参照してください。[をサポートしているシンボル参照ツール](../../extensibility/internals/supporting-symbol-browsing-tools.md)します。  
+ 詳細については、[をサポートしているシンボル参照ツール](../../extensibility/internals/supporting-symbol-browsing-tools.md)を参照してください。  
   
 ### <a name="package-object"></a>パッケージ オブジェクト  
   

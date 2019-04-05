@@ -24,7 +24,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a523d593b4c61a7ca730cc60a6ed22a1be541f9c
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51807596"
@@ -32,7 +32,7 @@ ms.locfileid: "51807596"
 # <a name="web-control-library-managed-code"></a>Web コントロール ライブラリ (マネージド コード)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Web コントロール ライブラリ プロジェクト テンプレートは DLL を作成します。 クラス ライブラリは DLL であるため、直接実行することはできません。 コントロールを埋め込む [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ページを作成する必要があります。 詳細については、次を参照してください。 [Web コントロール ライブラリ テンプレート](http://msdn.microsoft.com/en-us/00666b07-71d2-4ace-a13c-cc130a3ce372)します。  
+Web コントロール ライブラリ プロジェクト テンプレートは DLL を作成します。 クラス ライブラリは DLL であるため、直接実行することはできません。 コントロールを埋め込む [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ページを作成する必要があります。 詳細については、[Web コントロール ライブラリ テンプレート](http://msdn.microsoft.com/en-us/00666b07-71d2-4ace-a13c-cc130a3ce372)を参照してください。  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Web コントロール ライブラリをデバッグするには (方法 1)  
   

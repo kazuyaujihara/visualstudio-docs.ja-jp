@@ -1,24 +1,19 @@
 ---
-title: 'チュートリアル: c# または Visual Basic を使用して、SDK の作成 |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: C# または Visual Basic を使用して SDK の作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0bc88c8581b29f43e7efc55ee86019e1f1c3fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5989e0d72aaa7dda8e3daae16a6f384f8815357f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736760"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002978"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>チュートリアル: C# または Visual Basic を使用して SDK を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51736760"
 -   [クラス ライブラリを使用するサンプル アプリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。  
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
   
 ##  <a name="createClassLibrary"></a> SimpleMath Windows ランタイム コンポーネントを作成するには  
   
@@ -120,7 +115,7 @@ ms.locfileid: "51736760"
   
 22. **ソリューション エクスプ ローラー**、選択**SimpleMath.winmd**します。  
   
-23. メニュー バーで、**ビュー**、**プロパティ**(キーボード: F4 キーを押します)。  
+23. メニュー バーで、**ビュー**、**プロパティ**(キーボード。F4 キーを押します)。  
   
 24. **プロパティ**ウィンドウで、変更、**ビルド アクション**プロパティを**コンテンツ**、し、変更、 **VSIX に含める**プロパティ**True**します。  
   
@@ -179,7 +174,6 @@ ms.locfileid: "51736760"
     作成し、拡張機能 SDK を使用できました。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: C++ を使用して、SDK の作成](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [チュートリアル: JavaScript を使用して、SDK の作成](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [チュートリアル: C++ を使用して SDK を作成します。](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [チュートリアル: JavaScript を使用して SDK を作成します。](walkthrough-creating-an-sdk-using-javascript.md)   
  [ソフトウェア開発キットを作成する](../extensibility/creating-a-software-development-kit.md)
-

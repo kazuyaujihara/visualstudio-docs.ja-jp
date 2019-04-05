@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49845876"
@@ -33,13 +33,13 @@ XML スキーマ エクスプローラーは Microsoft Visual Studio および X
   
 - ツリーを参照して移動する。  
   
-- キーワード検索とスキーマ固有の検索を実行する。 詳細については、次を参照してください。[スキーマ セットの検索](../xml-tools/searching-the-schema-set.md)します。  
+- キーワード検索とスキーマ固有の検索を実行する。 詳細については、[スキーマ セットの検索](../xml-tools/searching-the-schema-set.md)を参照してください。  
   
 - グラフ ビューまたはコンテンツ モデル ビューに検索結果を追加する。  
   
-- ドキュメントの順序、ドキュメントの種類、またはドキュメント名でツリーを並べ替える。 詳細については、次を参照してください。[並べ替え、フィルター処理、およびグループ化](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)します。  
+- ドキュメントの順序、ドキュメントの種類、またはドキュメント名でツリーを並べ替える。 詳細については、[並べ替え、フィルター処理、およびグループ化](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)を参照してください。  
   
-- XML エディターを開き、XSD ファイルのコードの場所にジャンプする。 詳細については、次を参照してください。 [XML エディターとの統合](../xml-tools/integration-with-xml-editor.md)します。  
+- XML エディターを開き、XSD ファイルのコードの場所にジャンプする。 詳細については、[XML エディターとの統合](../xml-tools/integration-with-xml-editor.md)を参照してください。  
   
 - グローバル要素のサンプル XML を生成する。  
   
@@ -51,7 +51,7 @@ XML スキーマ エクスプローラーは Microsoft Visual Studio および X
   
 - XML スキーマの Explorerfrom を選択することも、**ビュー**メニュー。  
   
-- XML スキーマ Explorerfrom を Visual Basic の XML リテラルに関連付けられた .xsd ファイルを持つ .vb ファイルにアクセスできます。 XML スキーマ エクスプ ローラーの設定、XML リテラル内の XML ノードまたは XML 名前空間インポートを右クリックし、選択のスキーマを表示する、**スキーマ エクスプ ローラーで表示する**コマンド。 詳細については、次を参照してください。 [XML スキーマ エクスプ ローラーを使用した XML リテラルの統合](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)します。  
+- XML スキーマ Explorerfrom を Visual Basic の XML リテラルに関連付けられた .xsd ファイルを持つ .vb ファイルにアクセスできます。 XML スキーマ エクスプ ローラーの設定、XML リテラル内の XML ノードまたは XML 名前空間インポートを右クリックし、選択のスキーマを表示する、**スキーマ エクスプ ローラーで表示する**コマンド。 詳細については、[XML スキーマ エクスプ ローラーを使用した XML リテラルの統合](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)を参照してください。  
   
 ## <a name="tree-view"></a>ツリー ビュー  
  XML スキーマ エクスプローラーでは、事前にコンパイルされたスキーマ セット情報がツリー構造で表示されます。 ツリー構造は、次のように構成されます。  

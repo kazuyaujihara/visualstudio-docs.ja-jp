@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49891857"
@@ -26,7 +26,7 @@ ms.locfileid: "49891857"
 
 このトピックでは、デバッガーのウィンドウとダイアログ ボックスについて説明します。 ここでは、XSLT 固有のデバッグ動作を行うユーザー インターフェイスについてのみ説明します。  
   
- 詳細については、次を参照してください。、[デバッグ ユーザー インターフェイス リファレンス](../debugger/debugging-user-interface-reference.md)します。  
+ 詳細については、、[デバッグ ユーザー インターフェイス リファレンス](../debugger/debugging-user-interface-reference.md)を参照してください。  
   
 ## <a name="locals-window"></a>ローカル ウィンドウ  
  [ローカル] ウィンドウには、スタイル シートで定義されているすべての変数に関する情報が表示されます。 [ローカル] ウィンドウには、次の 3 列の情報が含まれています。  
@@ -48,7 +48,7 @@ ms.locfileid: "49891857"
 |`position()`|コンテキスト サイズを基準としたコンテキスト ノードの位置、つまりインデックス番号です。|  
 |`self::node()`|コンテキスト ノードの値です。|  
   
- 詳細については、次を参照してください。[方法: デバッガー コンテキストを変更](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)します。  
+ 詳細については、[方法: デバッガー コンテキストを変更](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)を参照してください。  
   
 ## <a name="output-window"></a>[出力] ウィンドウ  
  [出力] ウィンドウには、デバッグ中に発生したエラー メッセージやセキュリティ例外がすべて表示されます。  
@@ -96,7 +96,7 @@ ms.locfileid: "49891857"
   
 - ユーザー定義関数は使用できません。  
   
-  詳細については、次を参照してください。[方法: XPath 式を評価](../xml-tools/how-to-evaluate-an-xpath-expression.md)します。  
+  詳細については、[方法: XPath 式を評価](../xml-tools/how-to-evaluate-an-xpath-expression.md)を参照してください。  
   
 ## <a name="disassembly-window"></a>逆アセンブリ ウィンドウ  
  逆アセンブリ ウィンドウには、XSLT コンパイラによって生成されたアセンブリ コードが表示されます。 このウィンドウは、Visual Studio に備わる他の逆アセンブリ ウィンドウすべてと同じ方法で使用できます。  

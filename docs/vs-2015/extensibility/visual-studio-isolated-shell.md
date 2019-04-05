@@ -21,7 +21,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: d7fcb0a838f2849ab74d202785709164ec5af6d7
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51740652"
@@ -29,7 +29,7 @@ ms.locfileid: "51740652"
 # <a name="visual-studio-isolated-shell"></a>Visual Studio 分離シェル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 分離シェルでは、サイド バイ サイドで実行するスタンドアロン アプリケーションを作成できます。 Visual Studio の他のバージョン。 Visual Studio サービスを使用できますが、カスタマイズされた外観でもある特別なツールをホストするには、主に使用されるとブランド化をお勧めします。 Visual Studio の機能とメニュー コマンド グループ有効にできます簡単にオンとオフ。 アプリケーションのタイトル、アプリケーションのアイコンとスプラッシュ スクリーンは、完全にカスタマイズ可能です。 カスタマイズ可能な機能の一覧は、次を参照してください。[分離シェルのカスタマイズ](../extensibility/customizing-the-isolated-shell.md)します。  
+Visual Studio 分離シェルでは、サイド バイ サイドで実行するスタンドアロン アプリケーションを作成できます。 Visual Studio の他のバージョン。 Visual Studio サービスを使用できますが、カスタマイズされた外観でもある特別なツールをホストするには、主に使用されるとブランド化をお勧めします。 Visual Studio の機能とメニュー コマンド グループ有効にできます簡単にオンとオフ。 アプリケーションのタイトル、アプリケーションのアイコンとスプラッシュ スクリーンは、完全にカスタマイズ可能です。 カスタマイズ可能な機能の一覧は、[分離シェルのカスタマイズ](../extensibility/customizing-the-isolated-shell.md)を参照してください。  
   
  分離シェル プロジェクトを使用するには、Visual Studio SDK をインストールする必要があります。 Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
   
@@ -39,12 +39,12 @@ Visual Studio 分離シェルでは、サイド バイ サイドで実行する�
 >  分離シェルの再頒布可能パッケージにアクセスする前にお客様の簡単なアンケートに記入してになります。  アンケートに記入した後は、するは再頒布可能パッケージのダウンロード リンクを含む Visual Studio の Connect ページに移動します。  Visual Studio の Connect サイトにアクセスする際に、ダウンロード リンクを見つけることができます、**プログラム&#124;VISUAL STUDIO 2015 統合と分離シェル**タブ。  
   
 > [!NOTE]
->  分離シェルベースのアプリケーションをデプロイする方法の詳細については、次を参照してください。[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)します。  
+>  分離シェルベースのアプリケーションをデプロイする方法の詳細については、[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)を参照してください。  
   
 ## <a name="working-with-the-isolated-shell"></a>分離シェルの操作  
  Visual Studio 分離シェル アプリケーションは、Visual Studio services へのフル アクセスを備え、特別なカスタマイズとブランド化をサポートしています。 分離シェル アプリケーションをカスタマイズするいくつかの方法はあります。  
   
-- Vspackage と Managed Extensibility Framework (MEF) コンポーネント パーツを使用して、他の Visual Studio 拡張機能で使用する場合と同様に、分離シェル アプリケーションを拡張することができます。 詳細については、次を参照してください。[分離シェルの拡張](../extensibility/extending-the-isolated-shell.md)します。  
+- Vspackage と Managed Extensibility Framework (MEF) コンポーネント パーツを使用して、他の Visual Studio 拡張機能で使用する場合と同様に、分離シェル アプリケーションを拡張することができます。 詳細については、[分離シェルの拡張](../extensibility/extending-the-isolated-shell.md)を参照してください。  
   
 - Visual Studio の機能とメニュー コマンドのグループを使用できないか使用できないように、アプリケーションのユーザー インターフェイス (UI) のプロジェクトで .vsct ファイルを更新します。  
   
@@ -54,7 +54,7 @@ Visual Studio 分離シェルでは、サイド バイ サイドで実行する�
   
 - シェルの一部の側面は、アプリケーションの起動時にも指定できます。 これを行うには、始点、appenvstub.dll の呼び出しでパラメーターを更新します。  
   
-  カスタマイズ可能なさまざまな要素の詳細については、次を参照してください。[分離シェルの要素](../extensibility/elements-of-the-isolated-shell.md)します。  
+  カスタマイズ可能なさまざまな要素の詳細については、[分離シェルの要素](../extensibility/elements-of-the-isolated-shell.md)を参照してください。  
   
 ## <a name="standard-features-of-the-isolated-shell"></a>分離シェルの標準機能  
  次の機能は、Visual Studio のすべてのエディションを standard です。  

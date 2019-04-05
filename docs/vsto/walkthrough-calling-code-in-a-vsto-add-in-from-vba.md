@@ -102,7 +102,7 @@ ms.locfileid: "56627377"
      ソリューションがエラーなしでビルドされることを確認します。
 
 ## <a name="test-the-vsto-add-in"></a>VSTO アドインのテストします。
- `AddInUtilities` クラスをさまざまな種類の Office ソリューションから呼び出すことができます。 このチュートリアルでは、Excel ブック内の VBA コードを使用します。 使用することも、Office ソリューションの他の種類の詳細については、次を参照してください。[他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)します。
+ `AddInUtilities` クラスをさまざまな種類の Office ソリューションから呼び出すことができます。 このチュートリアルでは、Excel ブック内の VBA コードを使用します。 使用することも、Office ソリューションの他の種類の詳細については、[他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)を参照してください。
 
 ### <a name="to-test-your-vsto-add-in"></a>VSTO アドインをテストするには
 
@@ -144,7 +144,7 @@ ms.locfileid: "56627377"
 ## <a name="next-steps"></a>次の手順
  VSTO アドインのプログラミングの詳細については、次の各トピックを参照してください。
 
--   `ThisAddIn` クラスを使用して、ホスト アプリケーションを自動化し、VSTO アドイン プロジェクトの他のタスクを実行する。 詳細については、次を参照してください。[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)します。
+-   `ThisAddIn` クラスを使用して、ホスト アプリケーションを自動化し、VSTO アドイン プロジェクトの他のタスクを実行する。 詳細については、[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)を参照してください。
 
 -   VSTO アドインにカスタム作業ウィンドウを作成する。 詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)と[方法。カスタム作業ウィンドウをアプリケーションに追加](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)します。
 

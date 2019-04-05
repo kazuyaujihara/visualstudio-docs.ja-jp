@@ -41,7 +41,7 @@ VSPackage は、ユーザーが選択したときに永続化状態変数のグ�
  次の場所にレジストリ エントリでのカスタム設定ポイントが作成されます: hklm \software\microsoft\visualstudio\\*\<バージョン >* \UserSettings\\`<CSPName>`ここで、`<CSPName>` VSPackage のサポートは、カスタム設定ポイントの名前と*\<バージョン >* のバージョンは、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]8.0 などの。  
   
 > [!NOTE]
->  Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、次を参照してください。[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)します。  
+>  Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)を参照してください。  
   
  レジストリ エントリの構造は、次に示します。  
   

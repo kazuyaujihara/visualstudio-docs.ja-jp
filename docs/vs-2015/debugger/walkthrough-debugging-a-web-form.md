@@ -105,7 +105,7 @@ ms.locfileid: "51747268"
     textBox1.Text = "Button was clicked!";  
     ```  
   
-     赤い点が表示され、その行のテキストが赤く強調表示されます。 赤い点はブレークポイントを表します。 デバッガーを起動した状態でアプリケーションを実行すると、そのコードに達したときにデバッガーが実行を中断します。 アプリケーションの状態を表示し、デバッグできます。 詳細については、次を参照してください。[ブレークポイント](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)します。  
+     赤い点が表示され、その行のテキストが赤く強調表示されます。 赤い点はブレークポイントを表します。 デバッガーを起動した状態でアプリケーションを実行すると、そのコードに達したときにデバッガーが実行を中断します。 アプリケーションの状態を表示し、デバッグできます。 詳細については、[ブレークポイント](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)を参照してください。  
   
 2.  **[デバッグ]** メニューの **[デバッグの開始]** をクリックします。  
   
@@ -165,7 +165,7 @@ ms.locfileid: "51747268"
   
      Internet Explorer で Web フォームが起動しますが、デバッガーはアタッチされません。  
   
-4.  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] プロセスにアタッチします。 詳細については、次を参照してください。[デプロイされた Web アプリケーションのデバッグ](../debugger/debugging-deployed-web-applications.md)します。  
+4.  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] プロセスにアタッチします。 詳細については、[デプロイされた Web アプリケーションのデバッグ](../debugger/debugging-deployed-web-applications.md)を参照してください。  
   
 5.  Internet Explorer で、フォームのボタンをクリックします。  
   

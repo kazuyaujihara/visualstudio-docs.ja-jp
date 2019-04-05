@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49863166"
@@ -57,7 +57,7 @@ ms.locfileid: "49863166"
   
  [DocView と DocData](#docdata)  
   
- 図形、コネクタ、図、およびそれらの関係をモデル要素には、個別のトピックで説明します。 詳細については、次を参照してください。[方法: 移動し、図を更新](../misc/how-to-navigate-and-update-a-diagram.md)します。  
+ 図形、コネクタ、図、およびそれらの関係をモデル要素には、個別のトピックで説明します。 詳細については、[方法: 移動し、図を更新](../misc/how-to-navigate-and-update-a-diagram.md)を参照してください。  
   
 ##  <a name="example"></a> DSL 定義の例  
  これは、このトピックの例については、DslDefinition.dsl の主要部分です。  
@@ -94,7 +94,7 @@ ms.locfileid: "49863166"
   
  `henry.Name = "Henry VIII";`  
   
- 場合は、DSL 定義で、プロパティの**種類**は**Calculated**を設定することはできません。 詳細については、次を参照してください。[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)します。  
+ 場合は、DSL 定義で、プロパティの**種類**は**Calculated**を設定することはできません。 詳細については、[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)を参照してください。  
   
 ### <a name="relationships"></a>リレーションシップ  
  DSL 定義で定義したドメイン リレーションシップでは、プロパティ、リレーションシップの両端にあるクラスの 1 つのペアになります。 プロパティの名前は、リレーションシップの両側にあるロールのラベルとして DslDefinition ダイアグラムに表示されます。 によって、ロールの多重度は、プロパティの型は、リレーションシップのもう一方の端にあるクラスまたはそのクラスのコレクションのいずれか。  
@@ -229,7 +229,7 @@ using (Transaction t =
   
 - 対象のプロパティでは特に、新しい要素のプロパティを設定`IsName`DslDefinition に当てはまります。 このフラグは、その所有者内で一意に要素を識別するプロパティをマークします。 この場合、名前プロパティには、そのフラグがあります。  
   
-- この DSL の DSL 定義は、ストアに読み込まれている必要があります。 メニュー コマンドなどの拡張機能を記述する場合は、通常これは既に true です。 その他の場合は、明示的に、ストアに、モデルを読み込むまたはを使用することができます<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>を読み込みます。 詳細については、次を参照してください。[方法: プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)します。  
+- この DSL の DSL 定義は、ストアに読み込まれている必要があります。 メニュー コマンドなどの拡張機能を記述する場合は、通常これは既に true です。 その他の場合は、明示的に、ストアに、モデルを読み込むまたはを使用することができます<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>を読み込みます。 詳細については、[方法: プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)を参照してください。  
   
   この方法で要素を作成するときに (DSL に図がある場合)、図形が自動的に作成します。 既定の図形、色、およびその他の機能と、自動的に割り当てられている場所に表示されます。 参照してください、関連付けられた図形が表示される場所と方法を制御する場合[要素とその図形を作成する](#merge)します。  
   
@@ -275,7 +275,7 @@ using (Transaction t =
   
 - 対象のロールにある要素、`PropagatesDelete`フラグが true です。 たとえば、要素を表示する図形も削除されます。  
   
-  既定では、すべての埋め込みリレーションシップを持つ`PropagatesDelete`で true でターゲット ロール。 削除する`henry`は削除されません、`familyTree`が`familyTree.Delete()`すべてを削除、`Persons`します。 詳細については、次を参照してください。[削除の動作のカスタマイズ](../modeling/customizing-deletion-behavior.md)します。  
+  既定では、すべての埋め込みリレーションシップを持つ`PropagatesDelete`で true でターゲット ロール。 削除する`henry`は削除されません、`familyTree`が`familyTree.Delete()`すべてを削除、`Persons`します。 詳細については、[削除の動作のカスタマイズ](../modeling/customizing-deletion-behavior.md)を参照してください。  
   
   既定では、`PropagatesDelete`参照リレーションシップのロールには当てはまりません。  
   
@@ -326,7 +326,7 @@ using (Transaction t =
 ##  <a name="locks"></a> ロック  
  ロックによって、変更ができない可能性があります。 個々 の要素、パーティション、およびストアのロックを設定できます。 変更の種類を防止するロックをこれらのレベルのいずれかにある場合、例外がスローされるときに実行しようとします。 要素を使用してロックを設定するかどうかを検出できます。名前空間で定義されている拡張メソッドである、GetLocks()<xref:Microsoft.VisualStudio.Modeling.Immutability>します。  
   
- 詳細については、次を参照してください。[読み取り専用セグメントを作成するロックのポリシーを定義する](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)します。  
+ 詳細については、[読み取り専用セグメントを作成するロックのポリシーを定義する](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)を参照してください。  
   
 ##  <a name="copy"></a> コピーと貼り付け  
  要素または要素のグループにコピーすることができます、 <xref:System.Windows.Forms.IDataObject>:  
@@ -448,7 +448,7 @@ FamilyTreeDiagram diagram =
  --------- *YourConnector*  
   
 ###  <a name="shapeProperties"></a> シェイプおよびコネクタのプロパティ  
- ほとんどの場合は、図形に明示的な変更を加える必要はありません。 モデル要素を変更したときに、「修正」ルールは、図形とコネクタを更新します。 詳細については、次を参照してください。[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)します。  
+ ほとんどの場合は、図形に明示的な変更を加える必要はありません。 モデル要素を変更したときに、「修正」ルールは、図形とコネクタを更新します。 詳細については、[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)を参照してください。  
   
  ただし、図形には、モデル要素に依存しないプロパティを明示的ないくつか変更するのには便利です。 たとえば、これらのプロパティを変更する可能性があります。  
   
@@ -513,7 +513,7 @@ partial class MyDiagram
  色と、このメソッドを使用したコネクタの公開されている他のプロパティを設定することもできます。  
   
 ### <a name="use-transactions"></a>トランザクションを使用します。  
- 図形、コネクタと図のサブタイプは<xref:Microsoft.VisualStudio.Modeling.ModelElement>とストアでライブします。 トランザクション内でのみに変更を行う必要がありますので。 詳細については、次を参照してください。[方法: モデルを更新するトランザクションを使用して](../modeling/how-to-use-transactions-to-update-the-model.md)します。  
+ 図形、コネクタと図のサブタイプは<xref:Microsoft.VisualStudio.Modeling.ModelElement>とストアでライブします。 トランザクション内でのみに変更を行う必要がありますので。 詳細については、[方法: モデルを更新するトランザクションを使用して](../modeling/how-to-use-transactions-to-update-the-model.md)を参照してください。  
   
 ##  <a name="docdata"></a> ドキュメント ビューとドキュメント データ  
  ![標準の図の種類のクラス ダイアグラム](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  

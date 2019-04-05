@@ -21,7 +21,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: 856e32d4569e5dcb73e783d0a6b66e186fbb1848
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51755879"
@@ -41,18 +41,18 @@ ms.locfileid: "51755879"
 > [!NOTE]
 >  Visual Studio シェル統合モードは、Visual Studio Express edition 以外のすべてのエディションと共にインストールできます。  
   
- 詳細については、次を参照してください。 [Visual Studio Shell (Integrated)](../extensibility/visual-studio-shell-integrated.md)します。  
+ 詳細については、[Visual Studio Shell (Integrated)](../extensibility/visual-studio-shell-integrated.md)を参照してください。  
   
 ## <a name="isolated-mode"></a>分離モード  
  分離モードでは、サイド バイ サイドで実行するカスタム ツールを作成できます。 Visual Studio の他のバージョン。 標準の Visual Studio のすべての機能に応じてなしの Visual Studio services にアクセスできるツールの主なものでは。 Visual Studio 分離シェルに基づいて構築されたアプリケーションの外観をカスタマイズすることができます。 簡単に、機能と、アプリケーションと共に表示されるたくないメニュー コマンドのグループをオフにできます。  
   
- 詳細については、次を参照してください。 [Visual Studio 分離シェル](../extensibility/visual-studio-isolated-shell.md)します。  
+ 詳細については、[Visual Studio 分離シェル](../extensibility/visual-studio-isolated-shell.md)を参照してください。  
   
 ## <a name="distributing-your-integrated-or-isolated-shell-application"></a>統合または分離シェル アプリケーションを配布  
- 統合または分離シェル アプリケーションを配布するために、アプリケーションを特殊な統合または分離シェル再頒布可能パッケージ、およびインストール プログラムに含める必要があります。 配布とインストールの詳細については、次を参照してください。[分離シェル アプリケーションを配布する](../extensibility/distributing-isolated-shell-applications.md)します。  
+ 統合または分離シェル アプリケーションを配布するために、アプリケーションを特殊な統合または分離シェル再頒布可能パッケージ、およびインストール プログラムに含める必要があります。 配布とインストールの詳細については、[分離シェル アプリケーションを配布する](../extensibility/distributing-isolated-shell-applications.md)を参照してください。  
   
 > [!IMPORTANT]
->  [使用許諾契約書 (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552)シェルには Visual Studio 統合シェルと分離のデータ収集のセクションが含まれています (**セクション 3。データ**)。  これには、Microsoft によって、アプリケーションを作成するか、統合または分離シェル ソフトウェアのユーザーから収集する顧客の使用状況データについて説明します。 詳細については、次を参照してください。 [Microsoft Visual Studio 製品ファミリ プライバシーに関する声明](https://www.visualstudio.com/en-us/dn948229)します。  
+>  [使用許諾契約書 (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552)シェルには Visual Studio 統合シェルと分離のデータ収集のセクションが含まれています (**セクション 3。データ**)。  これには、Microsoft によって、アプリケーションを作成するか、統合または分離シェル ソフトウェアのユーザーから収集する顧客の使用状況データについて説明します。 詳細については、[Microsoft Visual Studio 製品ファミリ プライバシーに関する声明](https://www.visualstudio.com/en-us/dn948229)を参照してください。  
 > 
 >  アプリケーションを使って、顧客から別の使用状況データを収集する場合は、収集するのアプリケーションのユーザーに適切な通知を提供する必要があります。  Visual Studio Software Development Kit のライセンス、に従って、アプリケーションの一部として分離または統合シェル ソフトウェアを配布するときに、次のいずれかを含める必要があります。  
 > 

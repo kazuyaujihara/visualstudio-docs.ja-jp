@@ -22,7 +22,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: a7212b5b629ef6cd15901c76c755d01c0efe17e1
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49921933"
@@ -51,7 +51,7 @@ ms.locfileid: "49921933"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  複合語の両方の部分は、スペル チェック辞書によって認識され、目的は、2 つの単語を使用する場合は、この規則による警告を抑制するのには安全です。
 
- 複合語は、スペル チェッカーのユーザー辞書に追加することもできます。 カスタム辞書で単語では、違反が発生しません。 詳細については、次を参照してください。[方法: コード分析辞書をカスタマイズ](../code-quality/how-to-customize-the-code-analysis-dictionary.md)します。
+ 複合語は、スペル チェッカーのユーザー辞書に追加することもできます。 カスタム辞書で単語では、違反が発生しません。 詳細については、[方法: コード分析辞書をカスタマイズ](../code-quality/how-to-customize-the-code-analysis-dictionary.md)を参照してください。
 
 ## <a name="related-rules"></a>関連規則
  [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)

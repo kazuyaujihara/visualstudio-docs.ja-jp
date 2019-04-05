@@ -102,7 +102,7 @@ private static void OutputBuildMessage(IWorkspace workspace)
 
 ## <a name="tasksvsjson-and-launchvsjson"></a>tasks.vs.json と launch.vs.json
 
-Tasks.vs.json または launch.vs.json ファイルを作成する方法の詳細については、次を参照してください。[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)します。
+Tasks.vs.json または launch.vs.json ファイルを作成する方法の詳細については、[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

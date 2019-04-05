@@ -28,7 +28,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 801a4654b2297e3c19929063716339c7a4fcd50b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51774420"
@@ -36,7 +36,7 @@ ms.locfileid: "51774420"
 # <a name="debugging-managed-code"></a>マネージド コードのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ここでは、マネージド アプリケーションに共通するデバッグの問題と手法について説明します。マネージド アプリケーションは、Visual Basic、C#、C++ など、共通言語ランタイムをターゲットにした言語で記述されたアプリケーションです。 ここでは、高度な手法について説明します。 詳細については、次を参照してください。 [、デバッガーを使用して](../debugger/debugger-basics.md)します。  
+ここでは、マネージド アプリケーションに共通するデバッグの問題と手法について説明します。マネージド アプリケーションは、Visual Basic、C#、C++ など、共通言語ランタイムをターゲットにした言語で記述されたアプリケーションです。 ここでは、高度な手法について説明します。 詳細については、[、デバッガーを使用して](../debugger/debugger-basics.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [出力ウィンドウの診断メッセージ](../debugger/diagnostic-messages-in-the-output-window.md)  

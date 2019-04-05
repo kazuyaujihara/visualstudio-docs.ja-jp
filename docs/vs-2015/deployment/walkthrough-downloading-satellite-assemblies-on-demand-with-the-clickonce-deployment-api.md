@@ -29,7 +29,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 6e6de316fd0ff66e0815da7fa935d21e23a8285e
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49306333"
@@ -58,7 +58,7 @@ ms.locfileid: "49306333"
   
 2.  使用して、アプリケーションのサテライト アセンブリを生成[Resgen.exe (リソース ファイル ジェネレーター)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)または[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
   
-3.  MageUI.exe を使用して、アプリケーション マニフェストを生成するか、または既存のアプリケーション マニフェストを開きます。 このツールの詳細については、次を参照してください。 [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)します。  
+3.  MageUI.exe を使用して、アプリケーション マニフェストを生成するか、または既存のアプリケーション マニフェストを開きます。 このツールの詳細については、[MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)を参照してください。  
   
 4.  **[Files]** タブをクリックします。  
   

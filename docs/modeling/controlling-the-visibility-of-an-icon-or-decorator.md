@@ -18,7 +18,7 @@ ms.locfileid: "55913211"
 A*デコレーター*がアイコンか、ドメイン固有言語 (DSL) 内の図形に表示されるテキストの行。 デコレーターの表示を作成でき、モデル内のプロパティの状態によって非表示になります。 など、人を表す図形、個人の性別、子供の数に応じて表示されると、さまざまなアイコンがある可能性があります。
 
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>アイコンまたはデコレーターの可視性を制御します。
- 次の手順では、既に定義した図形、およびそのマッピングをドメイン クラスを前提としています。 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。
+ 次の手順では、既に定義した図形、およびそのマッピングをドメイン クラスを前提としています。 詳細については、[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)を参照してください。
 
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>アイコンやテキスト デコレーターの可視性を制御するには
 
@@ -66,7 +66,7 @@ A*デコレーター*がアイコンか、ドメイン固有言語 (DSL) 内の�
 
      **型** = `Boolean`
 
-     詳細については、次を参照してください。[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)します。
+     詳細については、[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)を参照してください。
 
 2.  デコレーターの可視性を制御する新しいプロパティを作成します。
 
@@ -99,7 +99,7 @@ A*デコレーター*がアイコンか、ドメイン固有言語 (DSL) 内の�
     } } }
     ```
 
-     プログラム コードでモデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。
+     プログラム コードでモデルをカスタマイズする方法の詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。
 
 8.  再構築し、ソリューションを実行します。
 

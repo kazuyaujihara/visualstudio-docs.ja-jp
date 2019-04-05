@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49924890"
@@ -25,7 +25,7 @@ ms.locfileid: "49924890"
 変更またはドメイン固有言語ソリューションでテキスト テンプレートを追加するときに、エンジンのソース コードに、または、生成されたコードをコンパイル時にテンプレートを変換するときにエラーが発生する可能性があります。 次のチュートリアルでは、テキスト テンプレートをデバッグすることの一部を示します。  
   
 > [!NOTE]
->  を一般に、テンプレート文字列の詳細についてを参照してください[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートのデバッグの詳細については、次を参照してください。[チュートリアル: テキスト テンプレートのデバッグ](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)します。  
+>  を一般に、テンプレート文字列の詳細についてを参照してください[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートのデバッグの詳細については、[チュートリアル: テキスト テンプレートのデバッグ](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)を参照してください。  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションを作成します。  
  この手順では、次の特性を持つドメイン固有言語ソリューションを作成します。  
@@ -38,7 +38,7 @@ ms.locfileid: "49924890"
   
 - 会社名: Fabrikam  
   
-  ドメイン固有言語ソリューションを作成する方法の詳細については、次を参照してください。[方法: ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)です。  
+  ドメイン固有言語ソリューションを作成する方法の詳細については、[方法: ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)を参照してください。  
   
 ## <a name="creating-a-text-template"></a>テキスト テンプレートの作成  
  テキスト テンプレートをソリューションに追加します。  
@@ -52,7 +52,7 @@ ms.locfileid: "49924890"
 3.  必ず、**カスタム ツール**DebugTest.tt のプロパティに設定されて`TextTemplatingFileGenerator`。  
   
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>テキスト テンプレートから、モデルにアクセスするデバッグ ディレクティブ  
- ステートメントとテキスト テンプレート内の式からモデルにアクセスすることができます、生成済みディレクティブ プロセッサを呼び出す必要があります。 生成されたディレクティブ プロセッサを呼び出すことクラスは、モデルを使用できるように、テキスト テンプレート コード プロパティとして。 詳細については、次を参照してください。[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)します。  
+ ステートメントとテキスト テンプレート内の式からモデルにアクセスすることができます、生成済みディレクティブ プロセッサを呼び出す必要があります。 生成されたディレクティブ プロセッサを呼び出すことクラスは、モデルを使用できるように、テキスト テンプレート コード プロパティとして。 詳細については、[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)を参照してください。  
   
  次の手順では、正しくないのディレクティブ名と正しくないプロパティ名をデバッグします。  
   

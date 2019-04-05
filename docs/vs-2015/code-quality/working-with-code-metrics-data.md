@@ -22,7 +22,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: ca9d384b8c7b6d49e44826c65a156d715baa0786
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51775889"
@@ -30,7 +30,7 @@ ms.locfileid: "51775889"
 # <a name="working-with-code-metrics-data"></a>コード メトリックス データの操作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**コード メトリックスの結果**ウィンドウには、コード メトリックスの分析によって生成されるデータが表示されます。 コード メトリックス データの値の詳細については、次を参照してください。[コード メトリックス値](../code-quality/code-metrics-values.md)します。  
+**コード メトリックスの結果**ウィンドウには、コード メトリックスの分析によって生成されるデータが表示されます。 コード メトリックス データの値の詳細については、[コード メトリックス値](../code-quality/code-metrics-values.md)を参照してください。  
   
  このトピックは、次のセクションで構成されています。  
   
@@ -129,7 +129,7 @@ ms.locfileid: "51775889"
 ##  <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> コード メトリックの結果に基づいて作業項目を作成します。  
  作成することができます、[!INCLUDE[esprfound](../includes/esprfound-md.md)]に基づいている作業項目の結果、**コード メトリックスの結果**ウィンドウ。 作業項目が作成されると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]にタイトルを自動的に入力、**タイトル**フィールドとコード メトリック データの下で、**履歴** タブ。  
   
- 作業項目を作成する方法の詳細については、次を参照してください。[作業項目を作成&#91;リダイレクト&#93;](http://msdn.microsoft.com/en-us/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b)します。  
+ 作業項目を作成する方法の詳細については、[作業項目を作成&#91;リダイレクト&#93;](http://msdn.microsoft.com/en-us/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b)を参照してください。  
   
 #### <a name="to-create-a-work-item-based-on-a-result"></a>結果に基づく作業項目を作成するには  
   

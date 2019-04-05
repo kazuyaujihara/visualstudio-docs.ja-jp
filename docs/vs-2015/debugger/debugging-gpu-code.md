@@ -21,7 +21,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ccad74608cc2332317a9a0c3081ef022b13a202d
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51738424"
@@ -45,7 +45,7 @@ ms.locfileid: "51738424"
 -   **ソリューション エクスプ ローラー**、プロジェクトのショートカット メニューを選択して**プロパティ**します。 **プロパティ ページ**ダイアログ ボックスで、**デバッグ**、し、 **GPU のみ**で、**デバッガーの種類**一覧。  
   
 ## <a name="launching-and-attaching-to-applications"></a>アプリケーションの起動とアプリケーションへのアタッチ  
- Visual Studio のデバッグ コマンドを使用して GPU デバッグを開始および停止できます。 詳細については、「[デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)」を参照してください。 また、実行中のプロセスに GPU デバッガーをアタッチできます。ただし、そのプロセスが GPU コードを実行している場合に限ります。 詳細については、次を参照してください。[実行中のプロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)します。  
+ Visual Studio のデバッグ コマンドを使用して GPU デバッグを開始および停止できます。 詳細については、「[デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)」を参照してください。 また、実行中のプロセスに GPU デバッガーをアタッチできます。ただし、そのプロセスが GPU コードを実行している場合に限ります。 詳細については、[実行中のプロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)を参照してください。  
   
 ## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>[現在の Tile をカーソル行の前まで実行] と [カーソル行の前まで実行]  
  GPU でデバッグするとき、カーソル位置まで実行するには 2 つの選択肢があります。 いずれの選択肢のコマンドもコード エディターのショートカット メニューで使用できます。  
@@ -68,7 +68,7 @@ ms.locfileid: "51738424"
 -   [方法: GPU スレッド ウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>データ同期の例外  
- デバッガーは実行中に複数のデータ同期条件を検出できます。 条件を検出すると、デバッガーは中断状態になります。 2 つのオプションがある-**中断**または**続行**します。 使用して、**例外**ダイアログ ボックスで、デバッガーがこれらの条件を検出し、またどの条件実行を中断するかどうかを構成できます。 詳細については、次を参照してください。[デバッガーでの例外を管理する](../debugger/managing-exceptions-with-the-debugger.md)します。 使用することも、**オプション** ダイアログ ボックスに書き込まれたデータのデータの値が変更されない場合に、デバッガーが例外を無視する必要がありますを指定します。 詳細については、次を参照してください。 [[全般]、デバッグ、オプションダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)です。  
+ デバッガーは実行中に複数のデータ同期条件を検出できます。 条件を検出すると、デバッガーは中断状態になります。 2 つのオプションがある-**中断**または**続行**します。 使用して、**例外**ダイアログ ボックスで、デバッガーがこれらの条件を検出し、またどの条件実行を中断するかどうかを構成できます。 詳細については、[デバッガーでの例外を管理する](../debugger/managing-exceptions-with-the-debugger.md)を参照してください。 使用することも、**オプション** ダイアログ ボックスに書き込まれたデータのデータの値が変更されない場合に、デバッガーが例外を無視する必要がありますを指定します。 詳細については、[[全般]、デバッグ、オプションダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)を参照してください。  
   
 ## <a name="troubleshooting"></a>トラブルシューティング  
   
@@ -79,13 +79,13 @@ ms.locfileid: "51738424"
  GPU コード内の条件付きブレークポイントはサポートされていますが、すべての式をデバイス上で評価できるとは限りません。 式はデバイスで評価できないと、デバッガーで評価されます。 デバッガーでの処理はデバイスでの処理よりも遅くなる可能性があります。  
   
 ### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>エラー: 選択されたデバッグ アクセラレータの種類には、構成に関する問題があります。  
- プロジェクトの設定とデバッグ中の PC の設定との間に矛盾があると、このエラーが発生します。 詳細については、次を参照してください。 [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)します。  
+ プロジェクトの設定とデバッグ中の PC の設定との間に矛盾があると、このエラーが発生します。 詳細については、[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)を参照してください。  
   
 ### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>エラー: 選択されたデバッグ アクセラレータの種類に対応するデバッグ ドライバーがターゲット コンピューターにインストールされていません。  
  リモート PC でデバッグしている場合に、このエラーが発生します。 デバッガーは、ドライバーがリモート PC にインストールされているかどうかを実行時まで判別できません。 ドライバーはグラフィックス カードの製造元から入手できます。  
   
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>エラー: リモート サイトでタイムアウト検出と復旧 (TDR) を無効にする必要があります。  
- Windows のタイムアウト検出と復旧 (TDR) で設定されている既定の時間間隔より、C++ AMP の計算が長くかかっている可能性があります。 その場合、計算は取り消され、データは失われます。 詳細については、次を参照してください。 [C++ AMP での処理の TDRs](http://go.microsoft.com/fwlink/p/?LinkId=249154)します。  
+ Windows のタイムアウト検出と復旧 (TDR) で設定されている既定の時間間隔より、C++ AMP の計算が長くかかっている可能性があります。 その場合、計算は取り消され、データは失われます。 詳細については、[C++ AMP での処理の TDRs](http://go.microsoft.com/fwlink/p/?LinkId=249154)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [チュートリアル: C++ AMP アプリケーションのデバッグ](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   

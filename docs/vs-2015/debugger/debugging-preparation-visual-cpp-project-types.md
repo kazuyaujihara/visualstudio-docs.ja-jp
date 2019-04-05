@@ -72,7 +72,7 @@ ms.locfileid: "51752404"
   
  Win32 アプリケーションには、MFC アプリケーションと ATL プロジェクトが含まれます。 これらは Windows API を使用します。MFC や ATL を使用することはありますが、共通言語ランタイム (CLR: Common Language Runtime) は使用しません。 ただし、CLR を使用するマネージド コードを呼び出すことはできます。  
   
- 次の手順では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内から Win32 プロジェクトをデバッグする方法を説明します。 Win32 アプリケーションをデバッグするもう 1 つの方法では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の外部でアプリケーションを起動してアタッチします。 詳細については、次を参照してください。[実行中のプロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)します。  
+ 次の手順では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内から Win32 プロジェクトをデバッグする方法を説明します。 Win32 アプリケーションをデバッグするもう 1 つの方法では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の外部でアプリケーションを起動してアタッチします。 詳細については、[実行中のプロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)を参照してください。  
   
 ###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> C または C++ の Win32 アプリケーションをデバッグするには  
   
@@ -100,7 +100,7 @@ ms.locfileid: "51752404"
   
 6. 開く、**リンカー**ノード、および選択**デバッグ**します。 最初の**生成**行で、**はい (/debug)** ドロップダウン リストから。 デバッグ時には、必ずこのオプションを設定する必要があります。  
   
-   詳細については、次を参照してください。[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)します。  
+   詳細については、[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)を参照してください。  
   
    [このトピックの内容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
@@ -109,11 +109,11 @@ ms.locfileid: "51752404"
   
  この種のアプリケーションを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でデバッグする作業は、マネージド Windows フォーム アプリケーションのデバッグ作業に似ています。  
   
- プロジェクト テンプレートを使用して Windows フォーム プロジェクトを作成する場合、デバッグ構成とリリース構成に必要な設定は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって自動的に作成されます。 かどうか、必要に応じて変更できますでこれらの設定、 **\<プロジェクト名 > プロパティ ページ** ダイアログ ボックス。 詳細については、次を参照してください。[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)します。  
+ プロジェクト テンプレートを使用して Windows フォーム プロジェクトを作成する場合、デバッグ構成とリリース構成に必要な設定は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって自動的に作成されます。 かどうか、必要に応じて変更できますでこれらの設定、 **\<プロジェクト名 > プロパティ ページ** ダイアログ ボックス。 詳細については、[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)を参照してください。  
   
- 詳細については、次を参照してください。 [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)します。  
+ 詳細については、[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)を参照してください。  
   
- Windows フォーム アプリケーションをデバッグするもう 1 つの方法では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の外部でアプリケーションを起動してアタッチします。 詳細については、次を参照してください。[実行中のプログラムまたは複数のプログラムへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)します。  
+ Windows フォーム アプリケーションをデバッグするもう 1 つの方法では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の外部でアプリケーションを起動してアタッチします。 詳細については、[実行中のプログラムまたは複数のプログラムへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)を参照してください。  
   
  [このトピックの内容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   

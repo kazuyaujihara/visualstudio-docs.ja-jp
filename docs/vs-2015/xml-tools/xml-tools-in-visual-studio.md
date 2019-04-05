@@ -40,7 +40,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 56c4fe7671751b7a7cd16c7065205978728f8f99
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49234131"
@@ -55,7 +55,7 @@ ms.locfileid: "49234131"
   
  XML は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] および [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] の多くの機能の中核となっています。 次のトピック一覧に、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] および [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] で提供される XML 関連のツールと機能を示します。  
   
- 詳細については、次を参照してください。、 [XML Developer Center](http://go.microsoft.com/fwlink/?LinkID=100176)、XML 開発者向けの最新のドキュメント、技術情報については、ダウンロード、ニュースグループ、およびその他のリソースを提供します。  
+ 詳細については、、 [XML Developer Center](http://go.microsoft.com/fwlink/?LinkID=100176)、XML 開発者向けの最新のドキュメント、技術情報については、ダウンロード、ニュースグループ、およびその他のリソースを提供を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [XML データの使用](../xml-tools/working-with-xml-data.md)  

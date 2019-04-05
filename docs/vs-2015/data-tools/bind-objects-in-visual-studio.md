@@ -24,7 +24,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: c832686cbe56bb9d2a3b9f31206dada8043e7b44
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49918637"
@@ -33,10 +33,10 @@ ms.locfileid: "49918637"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Visual Studio には、アプリケーションでデータ ソースとしてカスタム オブジェクトを操作するためのデザイン時ツールが用意されています。 UI コントロールにバインドするオブジェクトに、データベースからデータを格納する場合は、Entity Framework を使用して、クラスまたはクラスを生成することをお勧めします。 エンティティ Frameworkautogenerates すべて、定型コード変更の追跡は、コード、ローカルのオブジェクトに変更されるいずれかは、DbSet オブジェクトで AcceptChanges を呼び出すときに自動的にデータベースに保存されます。    詳細については、次を参照してください。 [Entity Framework ドキュメント](https://ef.readthedocs.org/en/latest/)します。  
+Visual Studio には、アプリケーションでデータ ソースとしてカスタム オブジェクトを操作するためのデザイン時ツールが用意されています。 UI コントロールにバインドするオブジェクトに、データベースからデータを格納する場合は、Entity Framework を使用して、クラスまたはクラスを生成することをお勧めします。 エンティティ Frameworkautogenerates すべて、定型コード変更の追跡は、コード、ローカルのオブジェクトに変更されるいずれかは、DbSet オブジェクトで AcceptChanges を呼び出すときに自動的にデータベースに保存されます。    詳細については、[Entity Framework ドキュメント](https://ef.readthedocs.org/en/latest/)を参照してください。  
   
 > [!TIP]
->  アプリケーションは既にデータセットに基づいている場合にのみ、この記事では、オブジェクトのバインドするためのアプローチを検討してください。これらの方法は、データセット、理解しているし、処理するデータが表形式と複雑すぎるか大きすぎる場合にも使用できます。 DataReader によるデータ バインド、なし、UI を手動で更新してオブジェクトに直接データの読み込みに関連する、さらに簡単な例については、次を参照してください。 [ADO.NET を使用して単純なデータ アプリケーションを作成する](../data-tools/create-a-simple-data-application-by-using-adonet.md)します。  
+>  アプリケーションは既にデータセットに基づいている場合にのみ、この記事では、オブジェクトのバインドするためのアプローチを検討してください。これらの方法は、データセット、理解しているし、処理するデータが表形式と複雑すぎるか大きすぎる場合にも使用できます。 DataReader によるデータ バインド、なし、UI を手動で更新してオブジェクトに直接データの読み込みに関連する、さらに簡単な例については、[ADO.NET を使用して単純なデータ アプリケーションを作成する](../data-tools/create-a-simple-data-application-by-using-adonet.md)を参照してください。  
   
 ## <a name="object-requirements"></a>オブジェクトの要件  
  Visual Studio でデザイン ツールをデータを処理するカスタム オブジェクトの唯一の要件は、オブジェクトが少なくとも 1 つのパブリック プロパティを必要があることです。  
@@ -98,7 +98,7 @@ Visual Studio には、アプリケーションでデータ ソースとして�
   
  使用してコレクションに追加する例については、<xref:System.Windows.Forms.BindingSource>を参照してください、`LoadCustomers`メソッド[チュートリアル: データ オブジェクト (Windows フォーム) に接続する](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)します。  
   
- オブジェクトのカスタム コレクションに追加の例は、次を参照してください。、`LoadOrders`メソッド[チュートリアル: データ オブジェクト (Windows フォーム) に接続する](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)します。  
+ オブジェクトのカスタム コレクションに追加の例は、、`LoadOrders`メソッド[チュートリアル: データ オブジェクト (Windows フォーム) に接続する](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)を参照してください。  
   
 > [!NOTE]
 >  `Add`メソッドはから継承する場合、自動的にカスタム コレクションの提供<xref:System.ComponentModel.BindingList%601>します。  
@@ -133,7 +133,7 @@ Visual Studio には、アプリケーションでデータ ソースとして�
 ### <a name="modify-the-data-in-objects"></a>オブジェクト内のデータを変更します。  
  Windows フォーム コントロールにデータ バインドされたカスタム オブジェクトのデータを編集するには、単に、バインドされたコントロール (または、オブジェクトのプロパティで直接) データを編集します。 データ バインディング アーキテクチャでは、オブジェクト内のデータを更新します。  
   
- アプリケーションには、変更の追跡と元の値に提案された変更のロールバックが必要とする場合は、オブジェクト モデルで、この機能を実装する必要があります。 どのデータ テーブルの提案された変更を追跡の例については、次を参照してください。 <xref:System.Data.DataRowState>、 <xref:System.Data.DataSet.HasChanges%2A>、および<xref:System.Data.DataTable.GetChanges%2A>します。  
+ アプリケーションには、変更の追跡と元の値に提案された変更のロールバックが必要とする場合は、オブジェクト モデルで、この機能を実装する必要があります。 どのデータ テーブルの提案された変更を追跡の例については、<xref:System.Data.DataRowState>、 <xref:System.Data.DataSet.HasChanges%2A>、および<xref:System.Data.DataTable.GetChanges%2A>を参照してください。  
   
 ### <a name="savedata-in-objects-back-to-the-database"></a>元のデータベースにオブジェクトで Savedata  
  TableAdapter の DBDirect メソッドをオブジェクトから値を渡すことで、元のデータベースにデータを保存します。  

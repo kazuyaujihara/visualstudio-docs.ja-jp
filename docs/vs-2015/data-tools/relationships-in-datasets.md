@@ -26,7 +26,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49935407"
@@ -54,7 +54,7 @@ ms.locfileid: "49935407"
   
   指定した制約を<xref:System.Data.DataRelation>オブジェクトが自動的に適切なオブジェクトを作成するか、プロパティを設定して実装されます。 使用して foreign key 制約を作成するかどうか、<xref:System.Data.DataRelation>オブジェクト、インスタンスの<xref:System.Data.ForeignKeyConstraint>クラスに追加されて、<xref:System.Data.DataRelation>オブジェクトの<xref:System.Data.DataRelation.ChildKeyConstraint%2A>プロパティ。  
   
-  Unique 制約が実装されているいずれかを設定するだけで、<xref:System.Data.DataColumn.Unique%2A>するデータ列のプロパティ`true`またはのインスタンスを追加することで、<xref:System.Data.UniqueConstraint>クラスを<xref:System.Data.DataRelation>オブジェクトの<xref:System.Data.DataRelation.ParentKeyConstraint%2A>プロパティ。 データセット内の制約を中断する方法の詳細については、次を参照してください。[データセットの読み込み中に制約を無効に](../data-tools/turn-off-constraints-while-filling-a-dataset.md)します。  
+  Unique 制約が実装されているいずれかを設定するだけで、<xref:System.Data.DataColumn.Unique%2A>するデータ列のプロパティ`true`またはのインスタンスを追加することで、<xref:System.Data.UniqueConstraint>クラスを<xref:System.Data.DataRelation>オブジェクトの<xref:System.Data.DataRelation.ParentKeyConstraint%2A>プロパティ。 データセット内の制約を中断する方法の詳細については、[データセットの読み込み中に制約を無効に](../data-tools/turn-off-constraints-while-filling-a-dataset.md)を参照してください。  
   
 ### <a name="referential-integrity-rules"></a>参照整合性の規則  
  Foreign key 制約の一部として、次の 3 つの時点で適用される参照整合性規則を指定できます。  
@@ -74,7 +74,7 @@ ms.locfileid: "49935407"
 |<xref:System.Data.Rule>|関連する子レコードの外部キーが既定値に設定 (列のによって確立されると、<xref:System.Data.DataColumn.DefaultValue%2A>プロパティ)。|  
 |<xref:System.Data.Rule>|関連する子レコードは変更されません。 この設定では、子レコードが無効な親レコードへの参照を含めることができます。|  
   
- データセットのテーブルで更新プログラムの詳細については、次を参照してください。[データをデータベースに保存](../data-tools/save-data-back-to-the-database.md)します。  
+ データセットのテーブルで更新プログラムの詳細については、[データをデータベースに保存](../data-tools/save-data-back-to-the-database.md)を参照してください。  
   
 ### <a name="constraint-only-relations"></a>制約だけのリレーションシップ  
  作成するときに、<xref:System.Data.DataRelation>オブジェクトの制約を適用するだけの関係を使用するように指定するオプションがあります: つまり、これはも使用されません関連レコードにアクセスします。 このオプションを使用すると、若干効率的ですが、関連レコードの機能よりも少ないメソッドを含むデータセットを生成します。 ただし、関連するレコードにアクセスすることはできません。 たとえば、制約のみのリレーションシップと子レコードを保持している親レコードを削除するできなくなり、親を子レコードにアクセスすることはできません。  
@@ -88,7 +88,7 @@ ms.locfileid: "49935407"
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>2 つのデータ テーブル間のリレーションシップを作成するには  
   
-1.  データセットを開き、**データセット デザイナー**します。 詳細については、次を参照してください。[方法: データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
+1.  データセットを開き、**データセット デザイナー**します。 詳細については、[方法: データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)を参照してください。  
   
 2.  ドラッグ、**関係**オブジェクトから、**データセット**ツールボックス リレーションシップの子のデータ テーブル。  
   
@@ -102,9 +102,9 @@ ms.locfileid: "49935407"
   
 6.  内のテーブルを結合する列を選択して、**キー列**と**外部キー列を**を一覧表示します。  
   
-7.  リレーションシップ、制約、またはその両方を作成するかどうかを選択します。 詳しくは、次を参照してください。 [DataRelation オブジェクトの概要](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)します。  
+7.  リレーションシップ、制約、またはその両方を作成するかどうかを選択します。 詳しくは、[DataRelation オブジェクトの概要](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)を参照してください。  
   
-8.  オンまたはオフ、**入れ子になったリレーションシップ**ボックス。 このオプションの設定を選択すると、<xref:System.Data.DataRelation.Nested%2A>プロパティを`true`と、行が親列内で入れ子になったこれらの行の XML データとして書き込まれるまたはとの同期とのリレーションシップの子をその<xref:System.Xml.XmlDataDocument>します。 詳細については、次を参照してください。 [Datarelation の入れ子](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)します。  
+8.  オンまたはオフ、**入れ子になったリレーションシップ**ボックス。 このオプションの設定を選択すると、<xref:System.Data.DataRelation.Nested%2A>プロパティを`true`と、行が親列内で入れ子になったこれらの行の XML データとして書き込まれるまたはとの同期とのリレーションシップの子をその<xref:System.Xml.XmlDataDocument>します。 詳細については、[Datarelation の入れ子](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)を参照してください。  
   
 9. これらのテーブル内のレコードに変更を加えていない場合に適用する規則を設定します。 詳細については、「 <xref:System.Data.Rule> 」を参照してください。  
   
@@ -112,7 +112,7 @@ ms.locfileid: "49935407"
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>データセット デザイナーでリレーションシップ名を表示するには  
   
-1.  データセットを開き、**データセット デザイナー**します。 詳細については、次を参照してください。[方法: データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
+1.  データセットを開き、**データセット デザイナー**します。 詳細については、[方法: データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)を参照してください。  
   
 2.  **データ**メニューの 、**リレーションシップ ラベルを表示する**リレーションシップ名を表示するコマンド。 リレーションシップ名を非表示にするには、そのコマンドをオフにします。
 

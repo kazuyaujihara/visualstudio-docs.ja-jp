@@ -1,27 +1,22 @@
 ---
 title: 利用可能なサービスの一覧 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0363aba508ff1a00fcca34f4b0b7a857aa15fc4f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730694"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002583"
 ---
 # <a name="list-of-available-services"></a>使用可能なサービスの一覧
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51730694"
 |サービス|Interface|Visual Studio|Visual Studio 2005|説明|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|はい|はい|Vspackage を取得するために使用する<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>非同期データ転送を容易に ActiveX コントロールからのインターフェイス。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|いいえ|はい|自動化に使用されるデザイン時の機能拡張 (DTE) オブジェクトを取得します。<br /><br /> C と C++ の ID SID_SDTE。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|いいえ|はい|自動化に使用されるデザイン時の機能拡張 (DTE) オブジェクトを取得します。<br /><br /> C と C++ の ID。SID_SDTE|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate>|<xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate>|はい|はい|コントロールの既定のイベント ハンドラーを表示するフォーム デザイナーによって実装されます。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch>|IDispatch|はい|はい|別の VSPackage またはコントロールのオートメーション インターフェイスにアクセスするために VSPackage を使用できます。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib>|<xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib>|はい|はい|追加または拡張型ライブラリを作成するために VSPackage を使用できます。|  
@@ -165,6 +160,5 @@ ms.locfileid: "51730694"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|はい|はい|特定のメタデータ ファイルに関連付けられたドキュメントを XML 形式のファイルへのアクセスを提供します。|  
   
 ## <a name="see-also"></a>関連項目  
- [COM と管理対象サービス](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+ [COM と管理対象サービス](/java/api/overview/partnercenter/managedservices?view=partnercenter-1.8.1)   
  [サービスの使用と提供](../../extensibility/using-and-providing-services.md)
-

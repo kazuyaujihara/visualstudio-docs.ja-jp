@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 6ba485b40beb82db9ea8cfe573cb6d9e6742ecea
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51817322"
@@ -64,7 +64,7 @@ ms.locfileid: "51817322"
   
     2.  **単体テスト プロジェクトです。** 詳しくは、「[コードの単体テストUnit Test Your Code](../test/unit-test-your-code.md)」をご覧ください。  
   
-2.  UML モデリング プロジェクトを含む [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。 このソリューションは、テストの初期段階として使用します。 Visual Studio ソリューションは、UML 拡張機能とその単体テストを記述するソリューションとは別にする必要があります。 詳細については、次を参照してください。 [UML モデリング プロジェクトおよびダイアグラム](../modeling/create-uml-modeling-projects-and-diagrams.md)します。  
+2.  UML モデリング プロジェクトを含む [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。 このソリューションは、テストの初期段階として使用します。 Visual Studio ソリューションは、UML 拡張機能とその単体テストを記述するソリューションとは別にする必要があります。 詳細については、[UML モデリング プロジェクトおよびダイアグラム](../modeling/create-uml-modeling-projects-and-diagrams.md)を参照してください。  
   
 3.  **UML 拡張プロジェクトで**、.csproj ファイルをテキストとして編集し、次の行で `true`が表示されていることを確認します。  
   

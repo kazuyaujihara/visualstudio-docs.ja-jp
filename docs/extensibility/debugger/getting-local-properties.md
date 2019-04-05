@@ -21,7 +21,7 @@ ms.locfileid: "56695896"
 ---
 # <a name="get-local-properties"></a>ローカル プロパティを取得します
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
 
 Visual Studio 呼び出し[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)を取得する、 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)に表示されるすべてのローカル変数へのアクセスを提供するオブジェクト、**ローカル**ウィンドウ。 Visual Studio を呼び出して[次](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)各ローカルに表示される情報を取得します。 この例では、クラスで`CEnumPropertyInfo`実装、`IEnumDebugPropertyInfo2`インターフェイス。
 

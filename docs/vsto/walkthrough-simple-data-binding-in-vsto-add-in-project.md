@@ -79,7 +79,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 4. `AdventureWorksLT` データベースへの既存の接続がある場合は、その接続を選んで **[次へ]** をクリックします。
 
-    それ以外の場合は、 **[新しい接続]** をクリックし、 **[接続の追加]** ダイアログ ボックスを使用して新しい接続を作成します。 詳細については、次を参照してください。[新しい接続を追加](../data-tools/add-new-connections.md)します。
+    それ以外の場合は、 **[新しい接続]** をクリックし、 **[接続の追加]** ダイアログ ボックスを使用して新しい接続を作成します。 詳細については、[新しい接続を追加](../data-tools/add-new-connections.md)を参照してください。
 
 5. **[アプリケーション構成ファイルへの接続文字列を保存]** ページで、 **[次へ]** をクリックします。
 
@@ -91,7 +91,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
    - `AdventureWorksLTDataSet`という名前の型指定されたデータセット。 このデータセットは、AdventureWorksLT データベースの **Customer (SalesLT)** テーブルの内容を表します。
 
-   - という名前の TableAdapter`CustomerTableAdapter`します。 この TableAdapter データを読み書きするために使用できます、`AdventureWorksLTDataSet`します。 詳細については、次を参照してください。 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)します。
+   - という名前の TableAdapter`CustomerTableAdapter`します。 この TableAdapter データを読み書きするために使用できます、`AdventureWorksLTDataSet`します。 詳細については、[TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)を参照してください。
 
      これらのオブジェクトは、どちらもこのチュートリアルの後半で使用します。
 
@@ -99,7 +99,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 このチュートリアルでは、データベース レコードを表示するためのインターフェイスは、basic、およびドキュメントの内部の右側に作成されます。 1 つの <xref:Microsoft.Office.Tools.Word.ContentControl> には一度に 1 つのデータベース レコードが表示されます。2 つの <xref:Microsoft.Office.Tools.Word.Controls.Button> コントロールを使用してレコードを前後にスクロールできます。 コンテンツ コントロールは <xref:System.Windows.Forms.BindingSource> を使用して、データベースに接続します。
 
-データ バインド コントロールの詳細については、次を参照してください。 [Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)します。
+データ バインド コントロールの詳細については、[Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)を参照してください。
 
 ### <a name="to-create-the-interface-in-the-document"></a>ドキュメントでインターフェイスを作成するには
 
@@ -113,7 +113,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3.  `ThisAddIn_Startup` メソッドに次のコードを追加します。 これによりホスト項目が生成され、ドキュメントの機能が拡張されます。 詳細については、次を参照してください。[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)します。
+3.  `ThisAddIn_Startup` メソッドに次のコードを追加します。 これによりホスト項目が生成され、ドキュメントの機能が拡張されます。 詳細については、[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)を参照してください。
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]

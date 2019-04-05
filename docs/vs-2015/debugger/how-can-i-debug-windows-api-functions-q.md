@@ -30,7 +30,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a84414c6e4d6b46cc0429fb03fd739d1dff94065
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51735632"
@@ -48,7 +48,7 @@ NT シンボルを読み込んだ状態で Windows API 関数をデバッグす�
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     装飾名を取得するには、次を参照してください。[装飾名の確認](http://msdn.microsoft.com/en-us/f79e2717-a4db-4d12-a689-69830cce2be0)します。  
+     装飾名を取得するには、[装飾名の確認](http://msdn.microsoft.com/en-us/f79e2717-a4db-4d12-a689-69830cce2be0)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ネイティブ コードのデバッグに関する Faq](../debugger/debugging-native-code-faqs.md)   

@@ -20,7 +20,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 097f431446ed2148e2a61c6f85266843fe7ada44
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51745166"
@@ -45,12 +45,12 @@ ms.locfileid: "51745166"
   
 #### <a name="to-inspect-a-pixel"></a>ピクセルを検査するには  
   
--   グラフィックス ログのドキュメントの上部で、レンダー ターゲットの出力から目的のピクセルを選択します。 使用することができます、ピクセルを選択した場合、**グラフィックス ピクセル履歴**選んだピクセルに関する詳細情報を表示するウィンドウ。 詳細については、次を参照してください。[ピクセル履歴](../debugger/graphics-pixel-history.md)します。  
+-   グラフィックス ログのドキュメントの上部で、レンダー ターゲットの出力から目的のピクセルを選択します。 使用することができます、ピクセルを選択した場合、**グラフィックス ピクセル履歴**選んだピクセルに関する詳細情報を表示するウィンドウ。 詳細については、[ピクセル履歴](../debugger/graphics-pixel-history.md)を参照してください。  
   
 ## <a name="playback-machine"></a>再生コンピューター  
  右上隅にも表示されます、**フレーム一覧**は、**再生コンピューター**します。 再生コンピューターは、後のグラフィックス診断のセッション中にグラフィックス ログ ファイルからグラフィックス イベントを再生するために使用されるコンピューターまたはデバイスです。 開発用コンピューターの代わりに別のデバイスを使用し、キャプチャしたイベントを再生することにより、問題が発生する実行環境をより正確に再現できます。たとえば、開発用コンピューターとは異なるグラフィックス ハードウェアまたはドライバーを使用するコンピューター、または ARM ベースの Windows RT タブレットや Windows Phone デバイスなどのデバイスを使用できます。  
   
- 再生コンピューターを指定する方法については、次を参照してください。[方法: グラフィックス診断再生マシンを変更](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)します。  
+ 再生コンピューターを指定する方法については、[方法: グラフィックス診断再生マシンを変更](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)を参照してください。  
   
 ## <a name="graphics-log-summary-information"></a>グラフィックス ログの概要情報  
  グラフィックス ログ ファイルが作業中の文書、**プロパティ**ウィンドウは、グラフィックス診断キャプチャ セッションをホストしていた環境に関する情報を表示します。 複数のカテゴリの情報が表示されます。  

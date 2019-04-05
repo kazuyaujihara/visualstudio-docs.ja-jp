@@ -13,7 +13,7 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 175181d5d866e9d7fab51eaf7c3262e47d0ed6a8
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51002892"
@@ -56,7 +56,7 @@ Web サイトを作成する Azure サブスクリプションの名前。
 | ワイルドカード文字を使用しますか。 |False |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Web サイトに発行する web デプロイ パッケージへのパス。 このパッケージを作成するには、Visual Studio で Web の発行ウィザードを使用します。 詳細については、次を参照してください。 [Azure Cloud Services と ASP.NET の概要](http://go.microsoft.com/fwlink/p/?LinkID=623089)します。
+Web サイトに発行する web デプロイ パッケージへのパス。 このパッケージを作成するには、Visual Studio で Web の発行ウィザードを使用します。 詳細については、[Azure Cloud Services と ASP.NET の概要](http://go.microsoft.com/fwlink/p/?LinkID=623089)を参照してください。
 
 | パラメーター | 既定値 |
 | --- | --- |

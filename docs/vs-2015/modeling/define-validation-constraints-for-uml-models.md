@@ -40,7 +40,7 @@ ms.locfileid: "51782415"
   
  検証エラーは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] エラー ウィンドウに報告されるので、エラーをダブルクリックすると、エラーが発生しているモデル要素を選択することができます。  
   
- 検証を適用する方法についての詳細については、次を参照してください。 [UML モデルの検証](../modeling/validate-your-uml-model.md)です。  
+ 検証を適用する方法についての詳細については、[UML モデルの検証](../modeling/validate-your-uml-model.md)を参照してください。  
   
 ## <a name="defining-a-validation-extension"></a>検証拡張機能の定義  
  UML デザイナーの検証拡張機能を作成するには、検証制約を定義するクラスを生成し、そのクラスを Visual Studio Integration Extension (VSIX) に埋め込む必要があります。 VSIX は、制約をインストールできるコンテナーとして機能します。 検証拡張機能を定義する方法は 2 つあります。  

@@ -44,7 +44,7 @@ ms.locfileid: "56629964"
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1.  **WinFormInput**という名前で Excel ブック プロジェクトを作成し、ウィザードで **[新しいドキュメントの作成]** を選択します。 詳細については、次を参照してください。[方法: Visual Studio での Office プロジェクトの作成](../vsto/how-to-create-office-projects-in-visual-studio.md)です。
+1.  **WinFormInput**という名前で Excel ブック プロジェクトを作成し、ウィザードで **[新しいドキュメントの作成]** を選択します。 詳細については、[方法: Visual Studio での Office プロジェクトの作成](../vsto/how-to-create-office-projects-in-visual-studio.md)を参照してください。
 
      Visual Studio により新しい Excel ブックがデザイナーで開き、 **WinFormInput** プロジェクトが **ソリューション エクスプローラー**に追加されます。
 
@@ -132,7 +132,7 @@ ms.locfileid: "56629964"
 ## <a name="next-steps"></a>次の手順
  このチュートリアルでは、Windows フォームを表示しワークシートにデータを渡すための基本操作を説明しました。 これ以外にも、次の操作が可能です。
 
--   Excel ブックまたは Word 文書で Windows フォーム コントロールを使用する。 詳細については、次を参照してください。 [Windows フォーム コントロールの Office ドキュメントの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)します。
+-   Excel ブックまたは Word 文書で Windows フォーム コントロールを使用する。 詳細については、[Windows フォーム コントロールの Office ドキュメントの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)を参照してください。
 
 -   ドキュメント レベルのカスタマイズまたは VSTO アドインから Microsoft Office アプリケーションのユーザー インターフェイスを変更します。 詳細については、「[Office UI のカスタマイズ](../vsto/office-ui-customization.md)」を参照してください。
 
