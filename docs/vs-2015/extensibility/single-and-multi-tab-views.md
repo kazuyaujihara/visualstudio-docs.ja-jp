@@ -1,33 +1,28 @@
 ---
 title: 1 つと複数タブのビュー |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8231581761199be4df9c368494fb27bdc7926c51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748997"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963254"
 ---
 # <a name="single-and-multi-tab-views"></a>単一タブと複数タブのビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 エディターでは、さまざまな種類のビューを作成できます。 1 つの例は、コード エディター ウィンドウで、もう 1 つは、フォーム デザイナー。  
   
- マルチタブのビューは、複数のタブのあるビューです。 たとえば、2 つのタブの下部に HTML エディター:**デザイン**と**ソース**、それぞれ論理ビューが表示されます。 デザイン ビューでは、web ページを構成する HTML が表示されます、他に、表示された web ページが表示されます。  
+ マルチタブのビューは、複数のタブのあるビューです。 たとえば、2 つのタブの下部に HTML エディター。**デザイン**と**ソース**、それぞれ論理ビューが表示されます。 デザイン ビューでは、web ページを構成する HTML が表示されます、他に、表示された web ページが表示されます。  
   
 ## <a name="accessing-physical-views"></a>物理ビューへのアクセス  
  物理ビューは、コードやフォームなど、バッファー内のデータのビューを表す各ドキュメント ビュー オブジェクトをホストします。 したがって、各ドキュメント ビュー オブジェクトは、(物理ビューが表示文字列と呼ばれるものによって識別される) 物理ビュー、および一般的に 1 つの論理ビューをが。  
@@ -121,6 +116,5 @@ Error:
   
 ## <a name="see-also"></a>関連項目  
  [複数のドキュメント ビューのサポート](../extensibility/supporting-multiple-document-views.md)   
- [方法: ビュー ドキュメント データへのアタッチ](../extensibility/how-to-attach-views-to-document-data.md)   
+ [方法: ドキュメント データをビューをアタッチします。](../extensibility/how-to-attach-views-to-document-data.md)   
  [カスタム エディターとデザイナーの作成](../extensibility/creating-custom-editors-and-designers.md)
-

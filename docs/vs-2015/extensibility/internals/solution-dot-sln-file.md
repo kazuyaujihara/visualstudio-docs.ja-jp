@@ -1,14 +1,9 @@
 ---
 title: ソリューション (します。Sln) ファイル |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - sln files, VSPackages
 - solutions, .sln files
@@ -16,24 +11,24 @@ helpviewer_keywords:
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bc61824e7df36fa3b615d1a2c4b729cd7b7c8c1c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: d9e045ab707620fe985e34174238081f6168e5af
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796182"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002959"
 ---
 # <a name="solution-sln-file"></a>ソリューション (.Sln) ファイル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ソリューションは、Visual Studio でプロジェクトを整理するための構造です。 ソリューション内のプロジェクト (テキスト ベースの共有)、.sln および .suo (バイナリ、ユーザー固有のソリューションのオプション) ファイルの状態情報を保持します。 .Suo ファイルについては、[ソリューション ユーザー オプション (を参照してください。Suo) ファイル](../../extensibility/internals/solution-user-options-dot-suo-file.md)します。  
+ソリューションは、Visual Studio でプロジェクトを整理するための構造です。 ソリューション内のプロジェクト (テキスト ベースの共有)、.sln および .suo (バイナリ、ユーザー固有のソリューションのオプション) ファイルの状態情報を保持します。 .Suo ファイルについては、次を参照してください。[ソリューション ユーザー オプション (します。Suo) ファイル](../../extensibility/internals/solution-user-options-dot-suo-file.md)します。  
   
  .Sln ファイルで参照されている結果として、VSPackage が読み込まれる場合、環境を呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A>.sln ファイルを読み取るようにします。  
   
  .Sln ファイルには、環境を検索して読み込む永続化されたデータおよびプロジェクトを参照して Vspackage の名前と値のパラメーターを使用して、テキスト ベースの情報が含まれています。 ユーザーがソリューションを開いたときは、環境が繰り返し、 `preSolution`、 `Project`、および`postSolution`については、ソリューションを読み込むには .sln ファイルでは、ソリューション内でプロジェクトし、ソリューションに接続されているすべての永続化された情報。  
   
- 各プロジェクトのファイルには、そのプロジェクトの項目を含む階層を設定する環境で読み取られた追加の情報が含まれています。 階層データの永続化は、プロジェクトによって制御されます。データは通常格納されません、.sln ファイルで記述できますが意図的にプロジェクト情報 .sln ファイルをそのためには選択した場合。 永続化に関連する詳細については、[プロジェクトの永続化](../../extensibility/internals/project-persistence.md)と[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)を参照してください。  
+ 各プロジェクトのファイルには、そのプロジェクトの項目を含む階層を設定する環境で読み取られた追加の情報が含まれています。 階層データの永続化は、プロジェクトによって制御されます。データは通常格納されません、.sln ファイルで記述できますが意図的にプロジェクト情報 .sln ファイルをそのためには選択した場合。 永続化に関連する詳細については、次を参照してください。[プロジェクトの永続化](../../extensibility/internals/project-persistence.md)と[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)します。  
   
 ## <a name="solution-file-contents"></a>ソリューション ファイルの内容  
  .Sln ファイルは、次のコードに示すようにいくつかのセクションで構成されます。  
@@ -108,5 +103,4 @@ EndGlobal
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   
  [ソリューション ユーザー オプション (します。Suo) ファイル](../../extensibility/internals/solution-user-options-dot-suo-file.md)   
- [ソリューション](../../extensibility/internals/solutions.md)
-
+ [ソリューション](../../extensibility/internals/solutions-overview.md)

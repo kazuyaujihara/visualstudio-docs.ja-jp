@@ -49,7 +49,7 @@ Visual Studio は、「アクティビティ ログ」を生成できます問�
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
 ```
 
-インスタンス ID で、VS を検索する方法の詳細については、次を参照してください。[を検出すると、Visual Studio インスタンスを管理するためのツール](../install/tools-for-managing-visual-studio-instances.md)します。 このアクティビティ ログは、UI の遅延と関連する通知の詳細を確認する後で使用されます。
+インスタンス ID で、VS を検索する方法の詳細については、[を検出すると、Visual Studio インスタンスを管理するためのツール](../install/tools-for-managing-visual-studio-instances.md)を参照してください。 このアクティビティ ログは、UI の遅延と関連する通知の詳細を確認する後で使用されます。
 
 ## <a name="starting-etw-tracing"></a>ETW トレースの開始
 

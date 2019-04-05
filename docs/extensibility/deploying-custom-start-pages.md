@@ -40,11 +40,11 @@ Visual Studio をスタート ページ プロジェクト テンプレートを
 
  スタート ページ プロジェクト テンプレートを使用せずには、VSIX 配置を作成するに最初に作成、 *.vsix*これら 2 つの方法のいずれかで [スタート] ページのファイル。
 
-- によって、カスタム スタート ページにファイルを空の VSIX プロジェクトに追加します。 詳細については、次を参照してください。 [VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)します。
+- によって、カスタム スタート ページにファイルを空の VSIX プロジェクトに追加します。 詳細については、[VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)を参照してください。
 
 - 手動で作成、 *.vsix*ファイル。 作成する、 *.vsix*ファイルを手動で。
 
-   1. 作成、 *extension.vsixmanifest*ファイルと *[Content_Types] .xml*新しいフォルダー内のファイル。 詳細については、次を参照してください。 [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)します。
+   1. 作成、 *extension.vsixmanifest*ファイルと *[Content_Types] .xml*新しいフォルダー内のファイル。 詳細については、[VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)を参照してください。
 
    2. Windows エクスプ ローラーでは、2 つの XML ファイルを含むフォルダーを右クリックし、をクリックして**送信**圧縮 (zip 形式) フォルダーを順にクリックします。 結果の名前を変更 *.zip*ファイルを*Filename.vsix*ファイル名は、パッケージをインストールする再頒布可能ファイルの名前です。
 
@@ -93,7 +93,7 @@ Visual studio がスタート ページでは、認識、 `Content Element` VSIX
 
 2.  スタート ページは、アセンブリを必要とする場合、コピーし、貼り付けることで *.\\{Visual Studio インストール フォルダー} \Common7\IDE\PrivateAssemblies\\*します。
 
-3.  **スタート ページのカスタマイズ**ボックスの一覧、**スタートアップ**オプション ページで、新しいスタート ページを選択します。 詳細については、次を参照してください。[スタート ページをカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)します。
+3.  **スタート ページのカスタマイズ**ボックスの一覧、**スタートアップ**オプション ページで、新しいスタート ページを選択します。 詳細については、[スタート ページをカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

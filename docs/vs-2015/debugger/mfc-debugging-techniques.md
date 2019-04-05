@@ -1,14 +1,9 @@
 ---
 title: MFC のデバッグ手法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
 - CMemoryState
@@ -31,13 +26,13 @@ ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f1e7a1ea69da1cafa38ae2a7bfa4551d3d40a8d4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4ed7d3a9db7a6bc486ad70236d9e39834c851dd2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745119"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002946"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC のデバッグ技術
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +102,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
   
- TRACE マクロは、char *、wchar_t の両方に適切に処理\*パラメーター。 TRACE マクロと異なる型の文字列パラメーターを組み合わせて使用する例を次に示します。  
+ TRACE マクロでは、char* パラメーターと wchar_t\* パラメーターの両方が適切に処理されます。 TRACE マクロと異なる型の文字列パラメーターを組み合わせて使用する例を次に示します。  
   
 ```  
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -167,7 +162,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> メモリのスナップショットの取得  
   
-1.  [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) オブジェクトを作成し、 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) メンバー関数を呼び出します。 これにより、メモリの最初のスナップショットが作成されます。  
+1. [CMemoryState](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) オブジェクトを作成し、 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) メンバー関数を呼び出します。 これにより、メモリの最初のスナップショットが作成されます。  
   
 2. プログラムでメモリの割り当てと解放が行われた後、別の `CMemoryState` オブジェクトを作成し、このオブジェクトの `Checkpoint` を呼び出します。 これにより、メモリ状態の 2 番目のスナップショットが取得されます。  
   
@@ -241,7 +236,7 @@ Total allocations: 67 bytes
  MFC プログラムで使用できます[cmemorystate::dumpallobjectssince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)解放されていないヒープ上のすべてのオブジェクトの説明をダンプします。 `DumpAllObjectsSince` は、前回の [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)を呼び出します。 `Checkpoint` が一度も呼び出されていない場合、 `DumpAllObjectsSince` はメモリ上に存在するオブジェクトと非オブジェクトをすべてダンプします。  
   
 > [!NOTE]
->  MFC のオブジェクト ダンプ機能を使用する場合は、あらかじめ [診断トレースを有効にしておく](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics)必要があります。  
+>  MFC のオブジェクト ダンプ機能を使用する場合は、あらかじめ [診断トレースを有効にしておく](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics)必要があります。  
   
 > [!NOTE]
 >  MFC では、メモリ リークが発生したオブジェクトはすべてプログラムの終了時に自動的にダンプされるため、オブジェクトをダンプするためにコードを作成する必要はありません。  
@@ -441,11 +436,11 @@ pMyPerson->Dump( afxDump );
   
 3. まず、新しいプロジェクト構成を作成します。  
   
-   1.  **\<プロジェクト > プロパティ ページ**ダイアログ ボックスで、をクリックして、 **Configuration Manager**ボタンをクリックします。  
+   1.  **\<[プロジェクト > プロパティ ページ]** ダイアログ ボックスで、**[構成マネージャー]** ボタンをクリックします。  
   
-   2.  [[構成マネージャー] ダイアログ ボックス](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)のグリッド内でプロジェクトを見つけます。 **構成**列で、 **\<新規作成 >** します。  
+   2.  [[構成マネージャー] ダイアログ ボックス](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)のグリッド内でプロジェクトを見つけます。 **[構成]** 列の **[\<新規作成]** を選択します。  
   
-   3.  [[新規プロジェクト構成] ダイアログ ボックス](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)の **[Project Configuration Name]** ボックスに、新しいプロジェクト構成に付ける名前を "Partial Debug" のように入力します。  
+   3.  [[新規プロジェクト構成] ダイアログ ボックス](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)の **[Project Configuration Name]** ボックスに、新しいプロジェクト構成に付ける名前を "Partial Debug" のように入力します。  
   
    4.  **[設定のコピー元]** ボックスの **[Release]** をクリックします。  
   
@@ -479,11 +474,11 @@ pMyPerson->Dump( afxDump );
   
    4.  **[プロパティ ページ]** ダイアログ ボックスで、 **[構成プロパティ]** フォルダーの下の **[C/C++]** フォルダーを開き、 **[全般]** カテゴリを選択します。  
   
-   5.  プロパティ グリッドで検索**デバッグ情報の形式。**  
+   5.  プロパティ グリッドで、**[デバッグ情報の形式]** を見つけます。  
   
    6.  **[デバッグ情報の形式]** の設定値をクリックし、デバッグ情報のオプション (通常は **/ZI**) を選択します。  
   
-   7.  アプリケーション ウィザードで生成されたアプリケーションを使用している場合や、プリコンパイル済みヘッダーがある場合は、他のモジュールをコンパイルする前に、プリコンパイル済みヘッダーを無効にするか再コンパイルする必要があります。 この処理を行わないと、警告メッセージ C4650 とエラー メッセージ C2855 が表示されます。 プリコンパイル済みヘッダーをオフするには、変更することで、**プリコンパイル済みヘッダーの作成/使用**での設定、 **\<プロジェクト > プロパティ** ダイアログ ボックス (**構成プロパティ**フォルダー、 **C/C++** サブフォルダー、**プリコンパイル済みヘッダー**カテゴリ)。  
+   7.  アプリケーション ウィザードで生成されたアプリケーションを使用している場合や、プリコンパイル済みヘッダーがある場合は、他のモジュールをコンパイルする前に、プリコンパイル済みヘッダーを無効にするか再コンパイルする必要があります。 この処理を行わないと、警告メッセージ C4650 とエラー メッセージ C2855 が表示されます。 プリコンパイル ヘッダーを無効にするには、**[\<プロジェクト> プロパティ ページ]** ダイアログ ボックス (**[構成プロパティ]** フォルダーの **[C/C++]** サブフォルダーにある **[プリコンパイル済みヘッダー]** カテゴリ) の **[プリコンパイル済みヘッダーの作成/使用]** 設定を変更します。  
   
 7. **[ビルド]** メニューの **[ビルド]** をクリックし、最新ではないプロジェクト ファイルをリビルドします。  
   
@@ -493,6 +488,3 @@ pMyPerson->Dump( afxDump );
   
 ## <a name="see-also"></a>関連項目  
  [Visual C++ のデバッグ](../debugger/debugging-native-code.md)
-
-
-

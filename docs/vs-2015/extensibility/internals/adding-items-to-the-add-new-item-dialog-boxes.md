@@ -1,26 +1,21 @@
 ---
 title: 項目を追加、新しい項目の追加 ダイアログ ボックス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ca9ae7d9e4f0ffc031d2dc8db3e940c9b844c57e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778554"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59001039"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>[新しい項目の追加] ダイアログ ボックスへの項目の追加
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,17 +29,17 @@ ms.locfileid: "51778554"
   
  最初の GUID です。 この種類のプロジェクトの CLSID2 つ目の GUID では、項目の追加テンプレートの登録済みのプロジェクトの種類を示します。  
   
- \\{C061DB26-5833-11D2-96F5-000000000000} {ACEF4EB2-57CF-11D2-96F4-000000000000} \AddItemTemplates\TemplateDirs\ \1  
+ \\{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1  
   
  @="#6"  
   
  "TemplatesDir「=」\<Visual Studio SDK インストール パス\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
   
- "SortPriority"dword:00000064 を =  
+ "SortPriority"=dword:00000064  
   
 |名前|型|(.Rgs ファイル) からのデータ|説明|  
 |----------|----------|-----------------------------|-----------------|  
-|@ (既定値)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|リソース ID を**項目の追加**テンプレート。|  
+|@ (既定値)|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY%|リソース ID を**項目の追加**テンプレート。|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\SomeProjectItems|ダイアログ ボックスに表示されるプロジェクト項目のパス、**新しい項目の追加**ウィザード。|  
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|ツリー ノードに表示されるファイルの並べ替え順序を決定、**新しい項目の追加** ダイアログ ボックス。|  
   
@@ -55,7 +50,7 @@ ms.locfileid: "51778554"
   
  通常、このフォルダーは、テンプレート HTML または .cpp ファイルなど、プロジェクトのテンプレート ファイルとウィザードを起動する .vsz ファイルに格納されます。 アイテムの表示方法を制御するには、ディレクトリ名とアイコンのローカライズ .vsdir ファイルも含めることができます。 ローカライズされた文字列は、この新しい項目の追加 ダイアログのツリー ノードを表す ダイアログ ボックスに表示されるキャプションです。  
   
- ただし、1 つの .vsdir ファイルにすべてのものがある必要はありません。 ディレクトリ内のすべての項目の 1 つの .vsdir ファイルがあることができます。 詳細については、[ウィザード (を参照してください。Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)と[テンプレート ディレクトリの説明 (します。Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)します。  
+ ただし、1 つの .vsdir ファイルにすべてのものがある必要はありません。 ディレクトリ内のすべての項目の 1 つの .vsdir ファイルがあることができます。 詳細については、次を参照してください。[ウィザード (します。Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)と[テンプレート ディレクトリの説明 (します。Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)します。  
   
 > [!NOTE]
 >  テンプレートのディレクトリに .vsdir ファイルは省略可能です。 プロジェクト要素をディレクトリに置きで表示したい場合、**新しい項目の追加**ダイアログ ボックスで、TemplatesDir ステートメントで指定されたテンプレートのディレクトリでそのファイルを配置することができます。 ファイルは、の右側のウィンドウに表示されますが、**新しい項目の追加**そのプロジェクトのダイアログ ボックス。 ただし、ファイルまたはアイコンのローカライズされたキャプションを表示する場合は、テンプレート ディレクトリに .vsdir ファイルを 1 つ以上を含める必要があります。  
@@ -89,4 +84,3 @@ ms.locfileid: "51778554"
  [プロジェクトとプロジェクト項目テンプレートを追加します。](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [テンプレート ディレクトリの説明 (します。Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
  [ウィザード (.Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)
-
