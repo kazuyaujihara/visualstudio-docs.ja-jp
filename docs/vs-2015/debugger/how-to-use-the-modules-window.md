@@ -1,14 +1,9 @@
 ---
 title: '方法: Use the Modules Window |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
 dev_langs:
@@ -31,18 +26,18 @@ ms.assetid: d840fdca-b035-4452-b652-72580c831896
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fea513b7593e260b5f5fb71e40ced98a1f8cc279
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 105325341d8f93f9531c2c85deb8ef21266e872c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764414"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973367"
 ---
-# <a name="how-to-use-the-modules-window"></a>方法 : [モジュール] ウィンドウを使用する
+# <a name="how-to-use-the-modules-window"></a>方法: [モジュール] ウィンドウを使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-注]
+注意]
 >  この機能は、SQL またはスクリプトのデバッグでは使用できません。  
   
  **モジュール**ウィンドウには、プログラムによって使用され、それぞれの関連情報が表示される Dll と EXE が一覧表示されます。  
@@ -51,7 +46,7 @@ ms.locfileid: "51764414"
   
 -   **デバッグ** メニューの 選択**Windows**、 をクリックし、**モジュール**します。  
   
-     既定で、**モジュール**ウィンドウは、読み込み順序でモジュールを並べ替えます。 ただし、基準列を指定して並べ替えるように選択できます。  
+     既定では、**[モジュール]** ウィンドウには、モジュールが読み込み順に表示されます。 ただし、基準列を指定して並べ替えるように選択できます。  
   
 ### <a name="to-sort-by-any-column"></a>基準列を指定して並べ替えるには  
   
@@ -70,7 +65,7 @@ ms.locfileid: "51764414"
   
 #### <a name="to-change-symbol-load-settings"></a>シンボル読み込みの設定を変更するには  
   
-1.  **モジュール**ウィンドウで、任意のモジュールを右クリックします。  
+1.  **[モジュール]** ウィンドウで、任意のモジュールを右クリックします。  
   
 2.  クリックして**シンボルの設定**します。  
   
@@ -78,16 +73,11 @@ ms.locfileid: "51764414"
   
 #### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>特定のモジュールのシンボル読み込み動作を変更するには  
   
-1.  **モジュール**ウィンドウで、モジュールを右クリックします。  
+1.  **[モジュール]** ウィンドウで、モジュールを右クリックします。  
   
 2.  をポイント**自動シンボル読み込みの設定** をクリックし、**常に手動で読み込む**または**既定**します。 変更内容は、デバッグ セッションを再起動しないと有効になりません。  
   
 ## <a name="see-also"></a>関連項目  
- [実行の中断](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
- [デバッガーでのデータの表示](../debugger/viewing-data-in-the-debugger.md)   
+ [実行の中断](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)   
  [シンボルとソース コードの管理](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-
-
-

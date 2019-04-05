@@ -1,14 +1,9 @@
 ---
 title: IDiaSession |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c2baa4b026fd9856625ce25be283c2c969f79a99
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 002e7198210e123fc2461f712bb8db442b9f25c8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799627"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975295"
 ---
 # <a name="idiasession"></a>IDiaSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ IDiaSession : IUnknown
 |メソッド|説明|  
 |------------|-----------------|  
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|このシンボル ストア内のシンボルに対応する実行可能ファイルの読み込みアドレスを取得します。 これは、同じ値に渡された、`put_loadAddress`メソッド。|  
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|このシンボル ストアのシンボルに対応する実行可能ファイルの読み込みアドレスを設定します。 **注:** するを取得する場合は、このメソッドを呼び出すことが重要、`IDiaSession`オブジェクトし、オブジェクトの使用を開始する前にします。|  
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|このシンボル ストアのシンボルに対応する実行可能ファイルの読み込みアドレスを設定します。 **注:** 取得する場合は、このメソッドを呼び出すことが重要、`IDiaSession`オブジェクトし、オブジェクトの使用を開始する前にします。|  
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|グローバル スコープへの参照を取得します。|  
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|シンボル ストアに含まれているすべてのテーブルの列挙子を取得します。|  
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|静的な場所にあるすべての名前付きシンボルの列挙子を取得します。|  
@@ -118,7 +113,7 @@ void InitializeDIA(const char *szFilename)
 ```  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー: Dia2.h  
+ ヘッダー:Dia2.h  
   
  ライブラリ: diaguids.lib  
   
@@ -127,12 +122,9 @@ void InitializeDIA(const char *szFilename)
 ## <a name="see-also"></a>関連項目  
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [概要](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
- [実行可能ファイル](../../debugger/debug-interface-access/exe.md)   
+ [Exe](../../debugger/debug-interface-access/exe.md)   
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [Idiadatasource::opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
- [Idiasymbol::findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
+ [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
+ [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
  [.Pdb ファイルの照会](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
-
-
-

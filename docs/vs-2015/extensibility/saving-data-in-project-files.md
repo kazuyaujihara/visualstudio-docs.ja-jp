@@ -1,14 +1,9 @@
 ---
 title: プロジェクト ファイル内のデータ保存 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - data [Visual Studio], saving in project files
 - project files
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 87d858d675fb1b2fb60280321a319b24684d9d83
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 72f9f1a098d17d7e6dd0b5cd8218b35f3408695e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755826"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963498"
 ---
 # <a name="saving-data-in-project-files"></a>プロジェクト ファイルでのデータの保存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51755826"
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>自由形式の XML でないビルド関連のデータを保持するために使用します。 によって提供されるメソッド<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>によって呼び出される[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]たびに[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]非ビルド プロジェクト ファイルに関連するデータを保持する必要があります。  
   
-  ビルドと非ビルド関連のデータを維持する方法の詳細については、[MSBuild プロジェクト ファイル内のデータの永続化](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)を参照してください。  
+  ビルドと非ビルド関連のデータを維持する方法の詳細については、次を参照してください。 [MSBuild プロジェクト ファイル内のデータの永続化](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)します。  
   
 ## <a name="saving-and-retrieving-build-related-data"></a>関連するデータの保存とビルドの取得  
   
@@ -217,4 +212,3 @@ ms.locfileid: "51755826"
   
 ## <a name="see-also"></a>関連項目  
  [MSBuild プロジェクト ファイルでのデータの保持](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
-

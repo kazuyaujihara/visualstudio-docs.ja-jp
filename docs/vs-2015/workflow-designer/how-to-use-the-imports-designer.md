@@ -1,11 +1,8 @@
 ---
 title: '方法: インポート デザイナーを使用して、|Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
@@ -13,15 +10,15 @@ ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: cf0ece10310b82cd958ff528fc06f36ed1b709d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c6eed27b9bfef272035f299af1a68a3788587f3c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875502"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963453"
 ---
-# <a name="how-to-use-the-imports-designer"></a>インポート デザイナーを使用する方法
+# <a name="how-to-use-the-imports-designer"></a>方法: インポート デザイナーを使用する
 インポート デザイナーを使用すると、式で使用する型の名前空間を入力できます。 ほぼ同じように、**インポート**または**を使用して**単に完全修飾ではなく、式の型名を入力することで、Visual Basic .NET と c#、インポート デザイナーで名前空間を指定するキーワードを使用します。バージョンの型名。  
   
  インポート デザイナーでは、UI での変更とワークフローの保存時に行われる変更の両方に応じて処理を行います。 ワークフローの保存時に、インポート デザイナーに名前空間を自動的に追加できます。 次に例を示します。  

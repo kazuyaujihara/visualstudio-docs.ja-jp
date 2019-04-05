@@ -1,25 +1,20 @@
 ---
 title: '方法: グラフィックス診断再生マシンを変更 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a2d5d56d37bbed4180d1231cac54da6beff3418d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1f5f25bf9b0dc03afc7cb2ba334d85bd697b7dc5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737602"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58973462"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>方法: グラフィックス診断再生マシンを変更する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,33 +26,30 @@ ms.locfileid: "51737602"
   
 #### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>ローカル コンピューターを使用してグラフィックス情報を再生するには  
   
-1.  グラフィックス ログ ドキュメント ウィンドウで、選択、**再生コンピューター**リンク。 **リモート デバッガー接続** ダイアログ ボックスが表示されます。  
+1.  グラフィックス ログのドキュメント ウィンドウで、**[再生コンピューター]** リンクをクリックします。 **[リモート デバッガー接続]** ダイアログ ボックスが表示されます。  
   
 2.  **手動構成**で、**アドレス**プロパティ、入力`localhost`します。  
   
-3.  設定、**認証モード**プロパティを**None**します。  
+3.  **[認証モード]** プロパティを **[なし]** に設定します。  
   
-4.  選択、**選択**ボタンをクリックします。  
+4.  **[選択]** ボタンを選択します。  
   
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>リモート コンピューターを使用してグラフィックス情報を再生するには  
   
-1.  グラフィックス ログ ドキュメント ウィンドウで、選択、**再生コンピューター**リンク。 **リモート デバッガー接続** ダイアログ ボックスが表示されます。  
+1.  グラフィックス ログのドキュメント ウィンドウで、**[再生コンピューター]** リンクをクリックします。 **[リモート デバッガー接続]** ダイアログ ボックスが表示されます。  
   
-2.  **手動構成**の**アドレス**プロパティ、Windows ドメイン名またはコンピューターまたはグラフィックス情報を再生に使用するデバイスの IP アドレスを入力します。  
+2.  **[手動で構成]** の下の **[アドレス]** プロパティにグラフィックス情報を再生するために使用するコンピューターまたはデバイスの Windows ドメイン名または IP アドレスを入力します。  
   
 3.  再生コンピューターへの接続を保護するために使用する承認の種類を指定します。  
   
-    -   Windows 認証では、設定、**認証モード**プロパティを**Windows**します。  
+    -   Windows 認証の場合は、**[認証モード]** プロパティを **[Windows]** に設定します。  
   
-    -   認証なしは、設定、**認証モード**プロパティを**None**します。  
+    -   認証を使用しない場合は、**[認証モード]** プロパティを **[なし]** に設定します。  
   
-4.  選択、**選択**ボタンをクリックします。  
+4.  **[選択]** ボタンを選択します。  
   
 > [!NOTE]
->  **リモート デバッガー接続** ダイアログ ボックスは、開発用コンピューターに直接接続されてが同じサブネット上またはリモートのデバッグ ターゲットを表示も可能性があります。 これらのリモート デバッグ ターゲットのいずれかを、手動で構成せずに、グラフィックス診断再生コンピューターとして使用できます。 **リモート デバッガー接続** ダイアログ ボックスで、クリックして、ターゲットを選択、**選択**ボタンをクリックします。  
+>  **[リモート デバッガー接続]** ダイアログ ボックスには、開発用コンピューターに直接接続されているか、同じサブネット上にある、リモート デバッグ ターゲットも表示されることがあります。 これらのリモート デバッグ ターゲットのいずれかを、手動で構成せずに、グラフィックス診断再生コンピューターとして使用できます。 **[リモート デバッガー接続]** ダイアログ ボックスで、目的のターゲットを選択し、**[選択]** をクリックします。  
   
 ## <a name="see-also"></a>関連項目  
  [グラフィックス ログ ドキュメント](../debugger/graphics-log-document.md)
-
-
-

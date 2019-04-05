@@ -1,14 +1,9 @@
 ---
 title: 従来の言語サービスで word の完了 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], IntelliSense Complete Word
 - IntelliSense, Complete Word
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 40a7e387ceb5fe88f059539634ae654ba076454f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0541e033727f7bf46fe60d3b82b0b3d493f95563
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801720"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976388"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>従来の言語サービスでの単語補完
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 単語補完は、部分的に型指定された単語の文字がない場合に格納します。 補完候補の 1 つだけがあると、入力候補の文字が入力されると、word は完了します。 単語の一部には、1 つ以上の可能性が一致すると、候補の一覧が表示されます。 終了文字には、識別子が使用されない任意の文字を指定できます。  
   
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、[エディターと言語サービス拡張](../../extensibility/extending-the-editor-and-language-services.md)を参照してください。  
+ 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[エディターと言語サービス拡張](../../extensibility/extending-the-editor-and-language-services.md)します。  
   
 > [!NOTE]
 >  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
@@ -57,4 +52,3 @@ ms.locfileid: "51801720"
  一覧には、1 つの単語が含まれている場合、<xref:Microsoft.VisualStudio.Package.Source>クラスは、単語の一部の代わりにその単語を自動的に挿入します。 一覧には、1 つ以上の単語が含まれている場合、<xref:Microsoft.VisualStudio.Package.Source>クラスには、ユーザーが適切な選択肢を選択できるツール ヒントの一覧が表示されます。  
   
  例を見ても、<xref:Microsoft.VisualStudio.Package.Declarations>クラスの実装で[従来の言語サービスでのメンバー補完](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)します。
-
