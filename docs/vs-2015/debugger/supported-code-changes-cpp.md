@@ -1,14 +1,9 @@
 ---
 title: サポートされるコードの変更 (C++) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,23 +13,23 @@ helpviewer_keywords:
 - Edit and Continue, limitations
 - supported code changes
 - object files, limitations of Edit and Continue
-- C# language, supported code changes
+- C++ language, supported code changes
 - coding, supported code changes
 - resource files, limitations of Edit and Continue
 - code changes, handling in Edit and Continue
-- what's new [C#], supported code changes
+- what's new [C++], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a68ad4add5f8c08e00067c903d5ba3946ca14538
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7dce0cd8d527f165c91c9133c6cb8025b8f4fd44
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797976"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002794"
 ---
 # <a name="supported-code-changes-c"></a>サポートされているコード変更 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,8 @@ Visual C++ のエディット コンティニュは、大半の種類のコー�
  Visual Studio での C++ のエディット コンティニュを使用する作業の情報については、「 [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) 」を参照してください。  
   
 ##  <a name="BKMK_Unsupported_changes"></a> サポートされていない変更  
- デバッグ セッション中に適用できない C/C++ の変更は、次のとおりです。  
+
+デバッグ セッション中に適用できない C/C++ の変更は、次のとおりです。  
   
 - グローバル データまたは静的データに対するほとんどの変更  
   
@@ -68,16 +64,16 @@ Visual C++ のエディット コンティニュは、大半の種類のコー�
   
 - オブジェクト ファイルのないコードに対する変更  
   
-  上のいずれかの変更を行った後にコード変更の適用を試みると、 **[出力]** ウィンドウにエラー メッセージまたは警告メッセージが表示されます。  
+上のいずれかの変更を行った後にコード変更の適用を試みると、 **[出力]** ウィンドウにエラー メッセージまたは警告メッセージが表示されます。  
   
 - エディット コンティニュでは、スタティック ライブラリは更新されません。 スタティック ライブラリに変更を加えた場合、変更前のスタティック ライブラリで実行が継続され、警告は表示されません。  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> サポートされていないシナリオ  
  次のデバッグ シナリオでは、C/C++ のエディット コンティニュを使用できません。  
   
--   [(強化に最適化されたデータのデバッグ)/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)でコンパイルしたネイティブ アプリのデバッグ  
+-    [(強化に最適化されたデータのデバッグ)/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)でコンパイルしたネイティブ アプリのデバッグ  
   
--   Visual Studio 2015 の Update 1 より前の Visual Studio のバージョンにおける、Windows ストア アプリまたはコンポーネントのデバッグ。 Visual Studio 2015 の Update 1 以降、Windows ストア C++ アプリと DirectX アプリでは、 `/ZI` コンパイラ スイッチと  `/bigobj` スイッチがサポートされているので、エディット コンティニュを使用できます。 `/FASTLINK` スイッチがサポートされているので、エディット コンティニュを使用できます。  
+-   Visual Studio 2015 の Update 1 より前の Visual Studio のバージョンにおける、Windows ストア アプリまたはコンポーネントのデバッグ。 Visual Studio 2015 の Update 1 以降、Windows ストア C++ アプリと DirectX アプリでは、 `/ZI` コンパイラ スイッチと  `/bigobj` スイッチがサポートされているので、エディット コンティニュを使用できます。  `/FASTLINK` スイッチがサポートされているので、エディット コンティニュを使用できます。  
   
 -   Windows 98 でのデバッグ  
   
@@ -149,6 +145,3 @@ Visual C++ のエディット コンティニュは、大半の種類のコー�
   
 ## <a name="see-also"></a>関連項目  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
-
-
-

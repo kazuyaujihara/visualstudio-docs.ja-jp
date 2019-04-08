@@ -82,7 +82,7 @@ ms.locfileid: "59002178"
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>ClickOnce 信頼プロンプト プログラムを有効にするには  
   
-1.  Visual Studio で Visual Basic または Visual c# コンソール アプリケーションを作成します。  
+1.  Visual Studio で Visual Basic または Visual C# コンソール アプリケーションを作成します。  
   
 2.  Program.vb または Program.cs ファイルを開いて編集し、次のコードを追加します。  
   
@@ -139,7 +139,7 @@ ms.locfileid: "59002178"
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>プログラムで ClickOnce 信頼プロンプトの表示を制限するには  
   
-1.  Visual Studio で Visual Basic または Visual c# コンソール アプリケーションを作成します。  
+1.  Visual Studio で Visual Basic または Visual C# コンソール アプリケーションを作成します。  
   
 2.  Program.vb または Program.cs ファイルを開いて編集し、次のコードを追加します。  
   
@@ -196,7 +196,7 @@ ms.locfileid: "59002178"
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>プログラムで、ClickOnce 信頼プロンプトを無効にするには  
   
-1.  Visual Studio で Visual Basic または Visual c# コンソール アプリケーションを作成します。  
+1.  Visual Studio で Visual Basic または Visual C# コンソール アプリケーションを作成します。  
   
 2.  Program.vb または Program.cs ファイルを開いて編集し、次のコードを追加します。  
   

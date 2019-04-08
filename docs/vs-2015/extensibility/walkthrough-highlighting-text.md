@@ -27,7 +27,7 @@ ms.locfileid: "58962398"
   
 ## <a name="creating-a-mef-project"></a>MEF プロジェクトを作成します。  
   
-1.  C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `HighlightWordTest`の名前を指定します。  
+1.  C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual C#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `HighlightWordTest`の名前を指定します。  
   
 2.  エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能の作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)です。  
   
@@ -308,7 +308,7 @@ ms.locfileid: "58962398"
   
 8.  実装する必要があります、<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>メソッド。 このメソッドのコレクションを受け取り<xref:Microsoft.VisualStudio.Text.SnapshotSpan>オブジェクトおよびタグの範囲の列挙体を返します。  
   
-     C# では、このメソッドを yield 反復子は、により、レイジー評価 (つまり、個々 の項目がアクセスされたときにのみ、セットの評価) として、タグの実装します。 Visual basic では、一覧に、タグを追加し、一覧を返します。  
+     C# では、このメソッドを yield 反復子は、により、レイジー評価 (つまり、個々 の項目がアクセスされたときにのみ、セットの評価) として、タグの実装します。 Visual Basic では、一覧に、タグを追加し、一覧を返します。  
   
      ここで、メソッドが返されます、 <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> "blue"を含むオブジェクト<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>、青色の背景を提供します。  
   

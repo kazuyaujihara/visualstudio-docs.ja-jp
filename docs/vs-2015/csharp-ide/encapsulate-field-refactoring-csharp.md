@@ -1,5 +1,5 @@
 ---
-title: カプセル化 リファクタリング (c#) |Microsoft Docs
+title: カプセル化 リファクタリング (C#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general

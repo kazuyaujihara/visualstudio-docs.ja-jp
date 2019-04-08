@@ -38,7 +38,7 @@ ms.locfileid: "58972871"
 ## <a name="rule-description"></a>規則の説明
  フィールドの主な用途は、実装の詳細にする必要があります。 フィールドは`private`または`internal`プロパティを使用して公開する必要があります。 プロパティにアクセスするように、フィールドにアクセスして、重大な変更を導入せず、型の機能を展開すると、プロパティのアクセサーでコードを変更できます簡単になります。 プライベートまたは内部フィールドの値を返すだけのプロパティに従った; フィールドへのアクセスを実行する最適化されました。ほとんどのパフォーマンスの向上は、プロパティに対する外部から参照できるフィールドの使用に関連付けられません。
 
- 外部から参照`public`、 `protected`、および`protected internal`(`Public`、`Protected`と`Protected Friend`Visual basic) のアクセシビリティ レベル。
+ 外部から参照`public`、 `protected`、および`protected internal`(`Public`、`Protected`と`Protected Friend`Visual Basic) のアクセシビリティ レベル。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正することをフィールド`private`または`internal`を外部から参照のプロパティを使用して公開します。

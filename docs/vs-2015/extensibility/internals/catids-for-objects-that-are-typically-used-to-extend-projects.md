@@ -42,7 +42,7 @@ ms.locfileid: "58976377"
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBFolderBrowseObject>|{932DC619-2EAA-4192-B7E6-3D15AD31DF49}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBReferenceBrowseObject>|{2289B812-8191-4e81-B7B3-174045AB0CB5}|  
   
-## <a name="visual-c-catids"></a>Visual c# の Catid  
+## <a name="visual-c-catids"></a>Visual C# の Catid  
  次の Catid を拡張に使用できる[!INCLUDE[csprcs](../../includes/csprcs-md.md)]のオブジェクトを参照します。 すべてで定義されている VSLangProj.olb します。  
   
 |名前|GUID|  

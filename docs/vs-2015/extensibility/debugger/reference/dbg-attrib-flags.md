@@ -300,7 +300,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
->  この列挙体の値は c# のアセンブリに実際に定義されていません。 代わりに、ソース ファイルに定義をコピーする必要があります。  
+>  この列挙体の値は C# のアセンブリに実際に定義されていません。 代わりに、ソース ファイルに定義をコピーする必要があります。  
   
  これらのフラグは、引数として渡されるときに、オブジェクトの子オブジェクトをフィルター処理にも使用[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)します。 ビットごとの値を組み合わせることができます`OR`します。  
   

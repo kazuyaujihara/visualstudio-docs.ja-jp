@@ -25,7 +25,7 @@ ms.locfileid: "58973603"
   
 ### <a name="navigate-the-shared-project"></a>共有プロジェクトを移動します。  
   
-1.  という名前の c# VSIX プロジェクトを作成する**TestUniversalProject**します。 (**新しいファイル]、[プロジェクト**し**c#、機能拡張、Visual Studio パッケージ**)。 追加、**カスタム コマンド**プロジェクト項目テンプレート (ソリューション エクスプ ローラーでプロジェクト ノードを右クリックし、選択**追加/新しい項目の**に移動し、**拡張**)。 ファイルに名前を**TestUniversalProject**します。  
+1.  という名前の C# VSIX プロジェクトを作成する**TestUniversalProject**します。 (**新しいファイル]、[プロジェクト**し**C#、機能拡張、Visual Studio パッケージ**)。 追加、**カスタム コマンド**プロジェクト項目テンプレート (ソリューション エクスプ ローラーでプロジェクト ノードを右クリックし、選択**追加/新しい項目の**に移動し、**拡張**)。 ファイルに名前を**TestUniversalProject**します。  
   
 2.  Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll への参照の追加 (で、**拡張**セクション)。  
   
@@ -293,7 +293,7 @@ ms.locfileid: "58973603"
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');  
     ```  
   
-16. 試してみましょう。F5 キーを押して、実験用インスタンスを起動します。 実験用インスタンスでの c# ユニバーサル ハブ アプリ プロジェクトの作成 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/Windows/Windows 8 ユニバーサル//ハブ アプリ**)。 ソリューションが読み込まれた後に移動して、**ツール**メニューをクリックします**呼び出す TestUniversalProject**、およびチェックインし、テキスト、**出力**ウィンドウ。 次のように表示されます。  
+16. 試してみましょう。F5 キーを押して、実験用インスタンスを起動します。 実験用インスタンスでの C# ユニバーサル ハブ アプリ プロジェクトの作成 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual C#/Windows/Windows 8 ユニバーサル//ハブ アプリ**)。 ソリューションが読み込まれた後に移動して、**ツール**メニューをクリックします**呼び出す TestUniversalProject**、およびチェックインし、テキスト、**出力**ウィンドウ。 次のように表示されます。  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -355,7 +355,7 @@ ms.locfileid: "58973603"
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4.  試してみましょう。F5 キーを押して、実験用インスタンスを起動します。 実験用インスタンスでの c# ユニバーサル ハブ アプリ プロジェクトの作成 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/Windows/Windows 8 ユニバーサル//ハブ アプリ**) に移動して、**ツール**メニューをクリックします**呼び出す TestUniversalProject**、およびチェックインし、テキスト、**出力**ウィンドウ。 次のように表示されます。  
+4.  試してみましょう。F5 キーを押して、実験用インスタンスを起動します。 実験用インスタンスでの C# ユニバーサル ハブ アプリ プロジェクトの作成 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual C#/Windows/Windows 8 ユニバーサル//ハブ アプリ**) に移動して、**ツール**メニューをクリックします**呼び出す TestUniversalProject**、およびチェックインし、テキスト、**出力**ウィンドウ。 次のように表示されます。  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -555,7 +555,7 @@ ms.locfileid: "58973603"
     this.ModifyFileNameInProject(sharedHier, fullPath);  
     ```  
   
-11. プロジェクトをビルドして実行します。 実験用インスタンスでの c# ユニバーサル hub アプリの作成に移動、**ツール**メニューをクリックします**呼び出す TestUniversalProject**、一般的な出力ペインのテキストを確認します。 共有の最初の項目の名前 (予定を App.xaml ファイルに) プロジェクトを変更する必要がありますと表示されます、<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>イベントが発生します。 この場合は、App.xaml の名前を変更すると、App.xaml.cs も名前を変更する、以降は、4 つのイベント (プラットフォーム プロジェクトごとに 2 つ) が表示されます。 (DTE イベントは、共有プロジェクト内の項目を追跡しないされません)。2 つのことがわかります<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>(プラットフォーム プロジェクトごとに 1 つ)、イベントが<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>イベント。  
+11. プロジェクトをビルドして実行します。 実験用インスタンスでの C# ユニバーサル hub アプリの作成に移動、**ツール**メニューをクリックします**呼び出す TestUniversalProject**、一般的な出力ペインのテキストを確認します。 共有の最初の項目の名前 (予定を App.xaml ファイルに) プロジェクトを変更する必要がありますと表示されます、<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>イベントが発生します。 この場合は、App.xaml の名前を変更すると、App.xaml.cs も名前を変更する、以降は、4 つのイベント (プラットフォーム プロジェクトごとに 2 つ) が表示されます。 (DTE イベントは、共有プロジェクト内の項目を追跡しないされません)。2 つのことがわかります<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>(プラットフォーム プロジェクトごとに 1 つ)、イベントが<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>イベント。  
   
 12. プラットフォームのプロジェクト内のファイルの名前を変更してみましょうし、取得を発生させたイベントの違いを確認できます。 次のコードを追加`ShowMessageBox`への呼び出し後`ModifyFileName`します。  
   
@@ -572,4 +572,4 @@ ms.locfileid: "58973603"
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);  
     ```  
   
-13. プロジェクトをビルドして実行します。 実験用インスタンスで c# ユニバーサル プロジェクトを作成に移動、**ツール**メニューをクリックします**呼び出す TestUniversalProject**、一般的な出力ペインのテキストを確認します。 プラットフォーム プロジェクトにファイルの名前を変更した後、両方を表示する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>イベントおよび<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>イベント。 変更した後、ファイルの原因となったなし、変更するには、その他のファイルと、プラットフォーム プロジェクト内の項目への変更を任意の場所に反映取得はありません、ため 1 つしかない各これらのイベント。
+13. プロジェクトをビルドして実行します。 実験用インスタンスで C# ユニバーサル プロジェクトを作成に移動、**ツール**メニューをクリックします**呼び出す TestUniversalProject**、一般的な出力ペインのテキストを確認します。 プラットフォーム プロジェクトにファイルの名前を変更した後、両方を表示する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>イベントおよび<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>イベント。 変更した後、ファイルの原因となったなし、変更するには、その他のファイルと、プラットフォーム プロジェクト内の項目への変更を任意の場所に反映取得はありません、ため 1 つしかない各これらのイベント。

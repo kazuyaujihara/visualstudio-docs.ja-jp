@@ -16,7 +16,7 @@ ms.locfileid: "58976248"
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-コード ツールに、マニフェストは、コンソール アプリケーションを Visual Studio イメージ サービスの .imagemanifest ファイルを受け取り、ラッパー ファイルまたはイメージ マニフェストの値では、C++、c#、VB、または Visual Studio 拡張機能の .vsct ファイルを参照するためのファイルを生成します。 このツールは、要求元のイメージから Visual Studio イメージ サービスを直接、またはコードがすべての UI とレンダリングを処理しない場合は、Api を使用してマニフェストの値を渡すために使用できるラッパー ファイルを生成します。  
+コード ツールに、マニフェストは、コンソール アプリケーションを Visual Studio イメージ サービスの .imagemanifest ファイルを受け取り、ラッパー ファイルまたはイメージ マニフェストの値では、C++、C#、VB、または Visual Studio 拡張機能の .vsct ファイルを参照するためのファイルを生成します。 このツールは、要求元のイメージから Visual Studio イメージ サービスを直接、またはコードがすべての UI とレンダリングを処理しない場合は、Api を使用してマニフェストの値を渡すために使用できるラッパー ファイルを生成します。  
   
 ## <a name="how-to-use-the-tool"></a>ツールを使用する方法  
  **構文**  
@@ -29,7 +29,7 @@ ms.locfileid: "58976248"
 |-|-|-|  
 |**スイッチ名**|**ノート**|**必須またはオプション**|  
 |/manifest|作成または更新コード ラッパーを使用するイメージ マニフェストへのパス。|必須|  
-|/language|コードのラッパーを生成する言語。<br /><br /> 有効な値:CPP、C++、CS、CSharp、c#、VB、または VSCT 値が区別されます。<br /><br /> VSCT 言語のオプション、/monikerClass、/classAccess、および/namespace オプションは無視されます。|必須|  
+|/language|コードのラッパーを生成する言語。<br /><br /> 有効な値:CPP、C++、CS、CSharp、C#、VB、または VSCT 値が区別されます。<br /><br /> VSCT 言語のオプション、/monikerClass、/classAccess、および/namespace オプションは無視されます。|必須|  
 |/imageIdClass|ImageIdClass と、ツールによって作成された関連付けられているファイルの名前。 C++ 言語のオプションでのみである .h ファイルが生成されます。<br /><br /> 既定:\<マニフェスト パス > \MyImageIds します。\<Lang Ext >|Optional|  
 |/monikerClass|MonikerClass と、ツールによって作成された関連付けられているファイルの名前。 C++ 言語のオプションでのみである .h ファイルが生成されます。 VSCT 言語これは無視されます。<br /><br /> 既定:\<マニフェスト パス > \MyMonikers します。\<Lang Ext >|Optional|  
 |/classAccess|ImageIdClass、および、monikerClass アクセス修飾子。 アクセス修飾子が指定された言語の有効なことを確認します。 これは、VSCT language オプションは無視されます。<br /><br /> 既定:Public|Optional|  
@@ -55,7 +55,7 @@ ms.locfileid: "58976248"
 ## <a name="sample-output"></a>出力例  
  **C# ラッパー**  
   
- 1 組の単純なイメージの ID とイメージ モニカー クラスの c# のような次のコード。  
+ 1 組の単純なイメージの ID とイメージ モニカー クラスの C# のような次のコード。  
   
 ```csharp  
 //-----------------------------------------------------------------------------  

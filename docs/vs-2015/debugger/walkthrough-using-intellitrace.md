@@ -1,25 +1,20 @@
 ---
-title: 'チュートリアル: IntelliTrace の使用 |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: IntelliTrace を使用する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc1e2b40e16a14da505243aeb11542df3adfb18d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963585"
 ---
 # <a name="walkthrough-using-intellitrace"></a>チュートリアル: IntelliTrace の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ IntelliTrace を使用して、特定のイベントまたはイベントのカ�
  IntelliTrace は Visual Studio Enterprise Edition で使用できます (Professional Edition または Community Edition の場合は使用できません)。  
   
 ##  <a name="GettingStarted"></a> イベントのみで IntelliTrace を使用します。  
- IntelliTrace イベントのみでデバッグを実行することができます。 IntelliTrace イベントは、デバッガー イベント、例外、.NET Framework イベント、およびその他のシステム イベントです。 デバッグを開始する前に、IntelliTrace が記録するイベントを制御するために、特定のイベントをオンまたはオフにする必要があります。 詳細については、[IntelliTrace 機能](../debugger/intellitrace-features.md)を参照してください。  
+ IntelliTrace イベントのみでデバッグを実行することができます。 IntelliTrace イベントは、デバッガー イベント、例外、.NET Framework イベント、およびその他のシステム イベントです。 デバッグを開始する前に、IntelliTrace が記録するイベントを制御するために、特定のイベントをオンまたはオフにする必要があります。 詳細については、次を参照してください。 [IntelliTrace 機能](../debugger/intellitrace-features.md)します。  
   
  IntelliTrace イベントのみでデバッグする方法を次の手順に示します。  
   
@@ -103,12 +98,6 @@ IntelliTrace を使用して、特定のイベントまたはイベントのカ�
      関数呼び出しのいずれかを選択してダブルクリックします。 関数の開始ポイントと終了ポイントだけでなく、現在の呼び出しが他の関数に対して実行した呼び出し、および呼び出しによって発生する IntelliTrace イベントが表示されます。 デバッグ履歴が有効になっていない場合、このアクションでデバッグ履歴を有効にします。 デバッグ履歴の詳細については、「 [Historical Debugging](../debugger/historical-debugging.md)」を参照してください。  
   
     > [!NOTE]
-    >  いくつかの呼び出しは淡色表示されていることが分かります。 これは、IntelliTrace が対応するモジュールのデータを記録しなかったためです。 このデータを表示するには、IntelliTrace がそのモジュールからデータを収集するようにします。 モジュールの指定方法の詳細については、[IntelliTrace 機能](../debugger/intellitrace-features.md)を参照してください。  
+    >  いくつかの呼び出しは淡色表示されていることが分かります。 これは、IntelliTrace が対応するモジュールのデータを記録しなかったためです。 このデータを表示するには、IntelliTrace がそのモジュールからデータを収集するようにします。 モジュールの指定方法の詳細については、次を参照してください。 [IntelliTrace 機能](../debugger/intellitrace-features.md)します。  
   
 ## <a name="next-steps"></a>次の手順
-
-
-
-
-
-

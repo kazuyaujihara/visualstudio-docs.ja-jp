@@ -25,7 +25,7 @@ ms.locfileid: "58963324"
   
 #### <a name="to-create-a-blank-start-page"></a>空白のスタート ページを作成するには  
   
-1.  型の新しいプロジェクトを作成する**WPF アプリケーション**(**Visual c#/Windows デスクトップ**します。  
+1.  型の新しいプロジェクトを作成する**WPF アプリケーション**(**Visual C#/Windows デスクトップ**します。  
   
 2.  `Microsoft.VisualStudio.Shell.14.0` への参照を追加します。  
   

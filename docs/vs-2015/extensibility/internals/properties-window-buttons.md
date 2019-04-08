@@ -20,7 +20,7 @@ ms.locfileid: "58975590"
 # <a name="properties-window-buttons"></a>プロパティ ウィンドウのボタン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-開発言語、製品の種類に応じて、既定では、ツールバーの特定のボタンが表示されます、**プロパティ**ウィンドウ。 すべてのケースで、 **Categorized**、 **Alphabetized**、**プロパティ**、および**プロパティ ページ**ボタンが表示されます。 Visual c# および Visual Basic の場合、**イベント**ボタンも表示されます。 特定の Visual C プロジェクトで、 **VC + + メッセージ**と**VC オーバーライド**ボタンが表示されます。 その他のプロジェクトの種類の他のボタンが表示されます。 ボタンの詳細については、**プロパティ**ウィンドウを参照してください[プロパティ ウィンドウ](../../ide/reference/properties-window.md)します。  
+開発言語、製品の種類に応じて、既定では、ツールバーの特定のボタンが表示されます、**プロパティ**ウィンドウ。 すべてのケースで、 **Categorized**、 **Alphabetized**、**プロパティ**、および**プロパティ ページ**ボタンが表示されます。 Visual C# および Visual Basic の場合、**イベント**ボタンも表示されます。 特定の Visual C プロジェクトで、 **VC + + メッセージ**と**VC オーバーライド**ボタンが表示されます。 その他のプロジェクトの種類の他のボタンが表示されます。 ボタンの詳細については、**プロパティ**ウィンドウを参照してください[プロパティ ウィンドウ](../../ide/reference/properties-window.md)します。  
   
 ## <a name="implementation-of-properties-window-buttons"></a>プロパティ ウィンドウのボタンの実装  
  クリックすると、 **Categorized**ボタン、Visual Studio の呼び出し、<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>をカテゴリにそのプロパティを並べ替えるにはフォーカスのあるオブジェクトのインターフェイス。 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> 実装されている、`IDispatch`に提示されるオブジェクト、**プロパティ**ウィンドウ。  

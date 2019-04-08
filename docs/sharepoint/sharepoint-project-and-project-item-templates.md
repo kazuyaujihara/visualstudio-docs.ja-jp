@@ -36,7 +36,7 @@ ms.locfileid: "57867875"
  SharePoint の基礎については、[SharePoint Foundation のビルド ブロック](http://go.microsoft.com/fwlink/?LinkId=179404)を参照してください。 上級ユーザーは、プロジェクトやプロジェクト項目のテンプレートを独自に作成することもできます。 詳細については、[SharePoint プロジェクト システムを拡張](../sharepoint/extending-the-sharepoint-project-system.md)を参照してください。
 
 ## <a name="project-templates"></a>プロジェクト テンプレート
- ここでは、それぞれの SharePoint プロジェクト テンプレートについて説明します。 Visual Studio で SharePoint プロジェクト テンプレートを表示する、**新しいプロジェクト** ダイアログ ボックスで、展開、 **SharePoint**のどちらかのノード**Visual c#** または**Visual Basic**を選び、 **2010**します。
+ ここでは、それぞれの SharePoint プロジェクト テンプレートについて説明します。 Visual Studio で SharePoint プロジェクト テンプレートを表示する、**新しいプロジェクト** ダイアログ ボックスで、展開、 **SharePoint**のどちらかのノード**Visual C#** または**Visual Basic**を選び、 **2010**します。
 
 ### <a name="sharepoint-2010-project"></a>SharePoint 2010 プロジェクト
  内容を*SharePoint 2010 プロジェクト*すべての SharePoint プロジェクト テンプレートに含まれます。 SharePoint 2010 プロジェクトの内容は次のとおりです。
@@ -68,7 +68,7 @@ ms.locfileid: "57867875"
 ## <a name="project-item-templates"></a>プロジェクト項目テンプレート
  ここでは、それぞれの SharePoint プロジェクト項目テンプレートについて説明します。 プロジェクト項目テンプレートでは、サイト列、リスト、コンテンツ タイプなどの SharePoint 機能をサポートするために、SharePoint ソリューションにファイルを追加します。 ソリューションへのサイト内の列の追加を含むサイト列プロジェクトを追加するなど、 *Elements.xml*定義ファイル。 含むソリューションを視覚的 web パーツのプロジェクトを視覚的 web パーツを追加する追加、 *Elements.xml*ファイルやユーザー コントロールの項目を視覚的 web パーツの項目。
 
- SharePoint プロジェクト項目テンプレートを表示する**ソリューション エクスプ ローラー**SharePoint プロジェクトのショートカット メニューを開き、選択し、**追加**、**新しい項目の**します。 展開、 **SharePoint**のどちらかのノード**Visual c#** または**Visual Basic**を選び、 **2010**します。
+ SharePoint プロジェクト項目テンプレートを表示する**ソリューション エクスプ ローラー**SharePoint プロジェクトのショートカット メニューを開き、選択し、**追加**、**新しい項目の**します。 展開、 **SharePoint**のどちらかのノード**Visual C#** または**Visual Basic**を選び、 **2010**します。
 
 ### <a name="application-page-farm-solution-only"></a>アプリケーション ページ (ファーム ソリューションのみ)
  **アプリケーション ページ (ファーム ソリューションのみ)** 項目では、設計することができます、 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] SharePoint サイトの web ページ。 アプリケーション ページは、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、「[方法 :アプリケーション ページを作成](../sharepoint/how-to-create-an-application-page.md)と[アプリケーション _layouts ページの種類](http://go.microsoft.com/fwlink/?LinkId=179434)します。

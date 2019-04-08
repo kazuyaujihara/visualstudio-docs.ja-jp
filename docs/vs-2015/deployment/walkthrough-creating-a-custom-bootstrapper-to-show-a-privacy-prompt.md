@@ -130,7 +130,7 @@ ms.locfileid: "58975150"
        > [!NOTE]
        >  アプリケーション フレームワークを無効にするには、Windows XP ビジュアル スタイルのアプリケーション イベント、スプラッシュ スクリーン、単一インスタンス アプリケーションなどの機能が無効にします。 詳細については、「[[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)」を参照してください。  
   
-       Visual c# 開発者の場合のみ。  
+       Visual C# 開発者の場合のみ。  
   
        Program.cs コード ファイルを開き、次のコードを追加します。  
   

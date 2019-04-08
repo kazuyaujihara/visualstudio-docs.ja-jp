@@ -1,5 +1,5 @@
 ---
-title: エディット コンティニュのエラーと警告 (c#) |Microsoft Docs
+title: エディット コンティニュのエラーと警告 (C#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -75,7 +75,7 @@ Visual C# エディット コンティニュで許可されていないコード
   
  通常、クラスのパブリック構造体に影響を及ぼす宣言コードの編集は禁止されています。また、クラス内のメソッド、プロパティ本体、プライベート宣言に対する一部の編集も禁止されています。 可能な場合、エディット コンティニュで編集できないコードは明るい灰色で示され、エラー メッセージが表示されます。  
   
- エディット コンティニュでサポートされている編集の詳細については[!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]を参照してください[サポートされているコード変更 (c#)](../debugger/supported-code-changes-csharp.md)します。 特定のエラーや警告に関する詳細情報が必要な場合は、MSDN の [Visual C# IDE フォーラム](http://go.microsoft.com/fwlink/?LinkId=214693)で質問を投稿したり、回答を検索したりできます。  
+ エディット コンティニュでサポートされている編集の詳細については[!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]を参照してください[サポートされているコード変更 (C#)](../debugger/supported-code-changes-csharp.md)します。 特定のエラーや警告に関する詳細情報が必要な場合は、MSDN の [Visual C# IDE フォーラム](http://go.microsoft.com/fwlink/?LinkId=214693)で質問を投稿したり、回答を検索したりできます。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   

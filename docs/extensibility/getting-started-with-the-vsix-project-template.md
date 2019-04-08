@@ -19,7 +19,7 @@ ms.locfileid: "58194322"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>VSIX プロジェクト テンプレートを概要します。
 
-拡張機能を作成するか、パッケージの展開の既存の拡張機能は、VSIX プロジェクト テンプレートを使用できます。 VSIX プロジェクト テンプレートは、Visual Basic と Visual c# の両方のバージョンを備え、Visual Studio SDK の一部としてインストールされます。
+拡張機能を作成するか、パッケージの展開の既存の拡張機能は、VSIX プロジェクト テンプレートを使用できます。 VSIX プロジェクト テンプレートは、Visual Basic と Visual C# の両方のバージョンを備え、Visual Studio SDK の一部としてインストールされます。
 
  VSIX プロジェクト テンプレートは構成だけを*source.extension.vsixmanifest*ファイルで、出荷、拡張機能と、資産に関する情報が含まれます。
 

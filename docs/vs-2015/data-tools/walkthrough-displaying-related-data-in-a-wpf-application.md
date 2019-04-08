@@ -65,7 +65,7 @@ ms.locfileid: "58964329"
   
 2.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
-3.  展開**Visual c#** または**Visual Basic**、し、 **Windows**します。  
+3.  展開**Visual C#** または**Visual Basic**、し、 **Windows**します。  
   
 4.  確認します **.NET Framework 4**  ダイアログ ボックスの上部にあるコンボ ボックスで選択されています。 <xref:System.Windows.Controls.DataGrid>このチュートリアルで使用するコントロールは、.NET Framework 4 でのみ使用できます。  
   

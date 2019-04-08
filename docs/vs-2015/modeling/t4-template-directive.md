@@ -36,7 +36,7 @@ ms.locfileid: "58974693"
  `compilerOptions="optimize+"`  
   
  有効な値:  
- 有効なコンパイラ オプション。 詳細については、次を参照してください。 [c# Compiler Options Listed by Category](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83)と[Visual Basic Compiler Options Listed by Category](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3)します。  
+ 有効なコンパイラ オプション。 詳細については、次を参照してください。 [C# Compiler Options Listed by Category](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83)と[Visual Basic Compiler Options Listed by Category](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3)します。  
   
  実行時 (前処理された) テンプレートでは無視されます。  
   

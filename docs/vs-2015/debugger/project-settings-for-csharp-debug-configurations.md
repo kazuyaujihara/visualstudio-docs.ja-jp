@@ -1,5 +1,5 @@
 ---
-title: プロジェクトの c# デバッグ構成の設定 |Microsoft Docs
+title: プロジェクトの C# デバッグ構成の設定 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -36,7 +36,7 @@ ms.locfileid: "58963150"
 C# デバッグ構成でのプロジェクトの設定を変更することができます、**プロパティ ページ**ウィンドウで説明したよう[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)します。 次の表は、**[プロパティ ページ]** ウィンドウのデバッガー関連の設定の場所を示しています。  
   
 > [!WARNING]
->  このトピックは Windows ストア アプリには適用されません。 参照してください[(VB、c#、C++ および XAML) は、デバッグ セッションを開始](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  このトピックは Windows ストア アプリには適用されません。 参照してください[(VB、C#、C++ および XAML) は、デバッグ セッションを開始](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
 ##  <a name="BKMK_Debug_tab"></a> [デバッグ] タブ  
   

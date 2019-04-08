@@ -20,4 +20,4 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58962828"
 ---
 # <a name="organizing-using-directives"></a>using ディレクティブの整理
-このコンテンツに移動[Visual c# IntelliSense](../ide/visual-csharp-intellisense.md)します。
+このコンテンツに移動[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)します。

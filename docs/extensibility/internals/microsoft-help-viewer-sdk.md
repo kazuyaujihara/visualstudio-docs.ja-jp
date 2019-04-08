@@ -63,7 +63,7 @@ Visual Studio ブランド パッケージには、コントロールがサポ�
 
 -   javascript
 
--   csharp または (c#)
+-   csharp または (C#)
 
 -   cplusplus visualc++ または c + +
 

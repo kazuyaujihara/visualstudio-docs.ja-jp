@@ -35,7 +35,7 @@ ms.locfileid: "58973049"
  マークされていないアセンブリ内のメンバー、<xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute>またはマークされている`RuntimeCompatibility(WrapNonExceptionThrows = false)`を処理する catch ブロックが含まれています<xref:System.Exception?displayProperty=fullName>直後に汎用の catch ブロックを含んでいません。 この規則は無視されます[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]アセンブリ。
 
 ## <a name="rule-description"></a>規則の説明
- 処理する catch ブロック<xref:System.Exception>共通言語仕様 (CLS) 準拠のすべての例外をキャッチします。 ただし、CLS 非準拠の例外はキャッチしません。 非 CLS 準拠でネイティブ コードまたは Microsoft によって生成されたマネージ コードから、準拠しない例外をスローできます intermediate language (MSIL) アセンブラー。 注意して、c# と[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]コンパイラできないようにする CLS 非準拠の例外をスローし、 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] CLS 非準拠の例外をキャッチしません。 すべての例外を処理する catch ブロックの目的がある場合は、次の汎用の catch ブロックの構文を使用します。
+ 処理する catch ブロック<xref:System.Exception>共通言語仕様 (CLS) 準拠のすべての例外をキャッチします。 ただし、CLS 非準拠の例外はキャッチしません。 非 CLS 準拠でネイティブ コードまたは Microsoft によって生成されたマネージ コードから、準拠しない例外をスローできます intermediate language (MSIL) アセンブラー。 注意して、C# と[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]コンパイラできないようにする CLS 非準拠の例外をスローし、 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] CLS 非準拠の例外をキャッチしません。 すべての例外を処理する catch ブロックの目的がある場合は、次の汎用の catch ブロックの構文を使用します。
 
 - C#: `catch {}`
 

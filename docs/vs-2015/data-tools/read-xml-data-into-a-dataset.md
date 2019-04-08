@@ -52,7 +52,7 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
 >  ダイアログ ボックスとメニュー コマンド、アクティブな設定またはエディションによって、ヘルプの記載を異なる場合がありますを表示するを使用しています。 設定を変更する、**ツール**メニューの **インポートおよびエクスポート設定**します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する  
- この手順では、このチュートリアルを含む Visual Basic または Visual c# プロジェクトを作成します。  
+ この手順では、このチュートリアルを含む Visual Basic または Visual C# プロジェクトを作成します。  
   
 #### <a name="to-create-the-new-windows-project"></a>新しい Windows プロジェクトを作成するには  
   

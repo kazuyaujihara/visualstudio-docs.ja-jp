@@ -1,14 +1,9 @@
 ---
 title: ウォッチ ウィンドウと [クイック ウォッチ] Windows |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 dev_langs:
@@ -28,13 +23,13 @@ ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b171352475b6c0b3bc916d27ab4ba351e84be42b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6fa22e93a767df599815c87e5809faddb674854b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791678"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977670"
 ---
 # <a name="watch-and-quickwatch-windows"></a>ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -211,7 +206,7 @@ public class Program
   
 2.  デバッグを開始し、ブレークポイントで実行が停止したら、 **[ローカル]** ウィンドウで対象の変数を見つけて右クリックし、 **[オブジェクト ID の作成]** を選択します。  
   
-3.  **$** ウィンドウに、 **[ローカル]** ウィンドウを閉じます。 これが、オブジェクト ID です。  
+3.   **$** ウィンドウに、 **[ローカル]** ウィンドウを閉じます。 これが、オブジェクト ID です。  
   
 4.  このオブジェクト ID をウォッチ ウィンドウに追加します。  
   
@@ -238,7 +233,7 @@ public class Program
   
  あるオブジェクトに対してのみ **動的ビュー** を表示するには、次のように **dynamic** 書式指定子を使用します。  
   
-- C#: **ObjectName, dynamic**  
+- C#: **ObjectName、動的**  
   
 - Visual Basic:: **$dynamic, ObjectName**  
   
@@ -246,8 +241,3 @@ public class Program
   
 ## <a name="see-also"></a>関連項目  
  [デバッガー ウィンドウ](../debugger/debugger-windows.md)
-
-
-
-
-

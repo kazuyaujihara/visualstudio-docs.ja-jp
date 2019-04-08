@@ -65,7 +65,7 @@ dotnet_code_quality.ca1003.api_surface = private, internal
 
 ## <a name="example"></a>例
 
-次の例では、規則に違反するデリゲートを示します。 Visual Basic の例では、コメントは、ルールを満たすために例を変更する方法を説明します。 例では、c# の例で、変更されたコードが表示されるに従います。
+次の例では、規則に違反するデリゲートを示します。 Visual Basic の例では、コメントは、ルールを満たすために例を変更する方法を説明します。 例では、C# の例で、変更されたコードが表示されるに従います。
 
 [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
 [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]

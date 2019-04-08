@@ -1,5 +1,5 @@
 ---
-title: 書式指定子でデバッガー (c#) |Microsoft Docs
+title: 書式指定子でデバッガー (C#) |Microsoft Docs
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -27,7 +27,7 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
 ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2019
 ms.locfileid: "57870521"

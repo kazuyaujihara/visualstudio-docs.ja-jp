@@ -31,7 +31,7 @@ Visual Studio では、メモリ不足の状態を検出すると、安定性を
 
 - Visual C# および Visual Basic の完全なソリューション分析は無効です。
 
-- [ガベージ コレクション](/dotnet/standard/garbage-collection/index)Visual c# と Visual Basic (GC) の待機時間の短いモードが無効になっています。
+- [ガベージ コレクション](/dotnet/standard/garbage-collection/index)Visual C# と Visual Basic (GC) の待機時間の短いモードが無効になっています。
 
 - Visual Studio のキャッシュがフラッシュされます。
 
@@ -41,7 +41,7 @@ Visual Studio では、メモリ不足の状態を検出すると、安定性を
 
 ## <a name="full-solution-analysis-suspended"></a>完全ソリューション解析を中断
 
-完全ソリューション解析は既定では、Visual Basic を有効になっているし、無効になっている Visual c# 用。 ただし、メモリ不足の状態で完全ソリューション解析が自動的に無効に Visual Basic と Visual c# の両方のオプション ダイアログ ボックスで、設定に関係なく。 ただし、再有効化できます完全ソリューション解析を選択して、**再度有効にする**、情報バーが表示されたら、選択してボタン、**完全ソリューション解析を有効にする**オプション ダイアログ ボックスで、チェック ボックスVisual Studio を再起動しています。 オプション ダイアログ ボックスでは、分析の設定、現在の完全なソリューションが常に表示します。 詳細については、「[方法 :有効にして、完全ソリューション解析を無効にする](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)します。
+完全ソリューション解析は既定では、Visual Basic を有効になっているし、無効になっている Visual C# 用。 ただし、メモリ不足の状態で完全ソリューション解析が自動的に無効に Visual Basic と Visual C# の両方のオプション ダイアログ ボックスで、設定に関係なく。 ただし、再有効化できます完全ソリューション解析を選択して、**再度有効にする**、情報バーが表示されたら、選択してボタン、**完全ソリューション解析を有効にする**オプション ダイアログ ボックスで、チェック ボックスVisual Studio を再起動しています。 オプション ダイアログ ボックスでは、分析の設定、現在の完全なソリューションが常に表示します。 詳細については、「[方法 :有効にして、完全ソリューション解析を無効にする](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)します。
 
 ## <a name="gc-low-latency-disabled"></a>GC 低待機時間無効になっています
 
@@ -60,7 +60,7 @@ GC の低待機時間モードを再度有効にするには、するには、Vi
 さらに、Visual Studio の内部操作のために使用するキャッシュもクリアされます。
 
 > [!NOTE]
-> 自動機能の中断に関する警告は、セッション単位ではなく、ソリューションごとに 1 回だけ発生します。 つまり、Visual Basic から Visual c# (またはその逆) に切り替えるメモリ不足の状態別に実行すると、別の自動機能の中断に関する警告を取得可能性があることができます。
+> 自動機能の中断に関する警告は、セッション単位ではなく、ソリューションごとに 1 回だけ発生します。 つまり、Visual Basic から Visual C# (またはその逆) に切り替えるメモリ不足の状態別に実行すると、別の自動機能の中断に関する警告を取得可能性があることができます。
 
 ## <a name="see-also"></a>関連項目
 

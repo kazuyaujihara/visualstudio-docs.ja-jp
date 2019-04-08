@@ -20,7 +20,7 @@ ms.locfileid: "58148205"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新しいプロジェクトの生成:内部的には、パート 2
 
-[新しいプロジェクトの生成。内部、パート 1 で](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)を説明しましたが、どのように**新しいプロジェクト** ダイアログ ボックスが表示されます。 選択したと仮定を**Visual c# Windows アプリケーション**、情報を入力した、**名前**と**場所**テキスト ボックス、および [ok] のクリックされました。
+[新しいプロジェクトの生成。内部、パート 1 で](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)を説明しましたが、どのように**新しいプロジェクト** ダイアログ ボックスが表示されます。 選択したと仮定を**Visual C# Windows アプリケーション**、情報を入力した、**名前**と**場所**テキスト ボックス、および [ok] のクリックされました。
 
 ## <a name="generating-the-solution-files"></a>ソリューション ファイルを生成します。
  アプリケーション テンプレートを選択するように指示[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を解凍して、対応する .vstemplate ファイルを開くと、このファイル内の XML コマンドを解釈するためのテンプレートを起動します。 これらのコマンドは、新規または既存のソリューションでプロジェクトとプロジェクト項目を作成します。

@@ -18,7 +18,7 @@ ms.locfileid: "59002978"
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>チュートリアル: C# または Visual Basic を使用して SDK を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このチュートリアルでは、Visual c# を使用して単純な数値演算ライブラリの SDK を作成し、SDK と Visual Studio Extension (VSIX) パッケージ化する方法を学習します。 次の手順を完了します。  
+このチュートリアルでは、Visual C# を使用して単純な数値演算ライブラリの SDK を作成し、SDK と Visual Studio Extension (VSIX) パッケージ化する方法を学習します。 次の手順を完了します。  
   
 -   [SimpleMath Windows ランタイム コンポーネントを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
   
@@ -33,7 +33,7 @@ ms.locfileid: "59002978"
   
 1.  メニュー バーで、**ファイル**、**新規**、**新しいプロジェクト**します。  
   
-2.  テンプレートの一覧で  **Visual c#** または**Visual Basic**、選択、 **Windows ストア**ノードを選択し、 **Windows ランタイム コンポーネント**テンプレート。  
+2.  テンプレートの一覧で  **Visual C#** または**Visual Basic**、選択、 **Windows ストア**ノードを選択し、 **Windows ランタイム コンポーネント**テンプレート。  
   
 3.  **名前**ボックスで、指定**SimpleMath**、選択し、 **OK**ボタン。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "59002978"
   
 1.  ショートカット メニューで、**ソリューション 'SimpleMath'** ノード選択**追加**、**新しいプロジェクト**します。  
   
-2.  テンプレートの一覧で展開**Visual c#** または**Visual Basic**、選択、**機能拡張**ノードを選択し、 **VSIX プロジェクト**テンプレート。  
+2.  テンプレートの一覧で展開**Visual C#** または**Visual Basic**、選択、**機能拡張**ノードを選択し、 **VSIX プロジェクト**テンプレート。  
   
 3.  **名前**ボックスで、指定**SimpleMathVSIX**、選択し、 **OK**ボタン。  
   
@@ -135,7 +135,7 @@ ms.locfileid: "59002978"
   
 1. メニュー バーで、**ファイル**、**新規**、**新しいプロジェクト**します。  
   
-2. テンプレートの一覧で  **Visual c#** または**Visual Basic**を選択し、 **Windows ストア**ノード。  
+2. テンプレートの一覧で  **Visual C#** または**Visual Basic**を選択し、 **Windows ストア**ノード。  
   
 3. 選択、**空のアプリ**名では、プロジェクト テンプレートは、 **ArithmeticUI**、選択し、 **OK**ボタン。  
   
