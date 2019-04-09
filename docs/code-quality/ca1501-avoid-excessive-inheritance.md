@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bc51b4c84ca38c0fb4e5837e3bcdf1f28a045747
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d77ecc255f03e38e39a9321d9c7a9e5568e94a4d
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947485"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232304"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501:継承を使用しすぎないでください
 
@@ -34,19 +34,24 @@ ms.locfileid: "55947485"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 型が、その継承階層内の 5 つ以上深いレベルにあります。
+
+型が、その継承階層内の 5 つ以上深いレベルにあります。
 
 ## <a name="rule-description"></a>規則の説明
- 深いレベルで入れ子にされた型の確認、理解、および保守は困難です。 このルールは、同じモジュール内の階層に分析を制限します。
+
+深いレベルで入れ子にされた型の確認、理解、および保守は困難です。 このルールは、同じモジュール内の階層に分析を制限します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するのには、継承階層の深い未満である基本型から型を派生または中間の基本型の一部を排除します。
+
+この規則違反を修正するのには、継承階層の深い未満である基本型から型を派生または中間の基本型の一部を排除します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- このルールから警告を抑制しても安全です。 ただし、コードは管理が困難にあります。 基本型の可視性、に応じてこの規則の違反を解決する可能性があります作成重大な変更に注意してください。 たとえば、パブリックの基本型を削除すると、重大な変更です。
+
+このルールから警告を抑制しても安全です。 ただし、コードは管理が困難にあります。 基本型の可視性、に応じてこの規則の違反を解決する可能性があります作成重大な変更に注意してください。 たとえば、パブリックの基本型を削除すると、重大な変更です。
 
 ## <a name="example"></a>例
- 次の例では、規則に違反する型を示します。
 
- [!code-csharp[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/CSharp/ca1501-avoid-excessive-inheritance_1.cs)]
- [!code-vb[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/VisualBasic/ca1501-avoid-excessive-inheritance_1.vb)]
+次の例では、規則に違反する型を示します。
+
+[!code-csharp[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/CSharp/ca1501-avoid-excessive-inheritance_1.cs)]
+[!code-vb[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/VisualBasic/ca1501-avoid-excessive-inheritance_1.vb)]

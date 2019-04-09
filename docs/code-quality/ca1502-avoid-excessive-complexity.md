@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa10945e87022546240d05304f59478b33bb5596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916766"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232317"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502:メソッドの実装を複雑にしすぎないでください
 
@@ -44,11 +44,11 @@ ms.locfileid: "55916766"
 
 サイクロマティック複雑度エッジ - ノード数 + 1 の数を =
 
-表すノードを論理的な分岐ポイントとエッジ ノードの間に行を表します。
+A*ノード*ロジックの分岐ポイントを表す、 *edge*ノード間の線を表します。
 
 ルールは、サイクロマティック複雑度が 25 を超える場合、違反を報告します。
 
-コード メトリックに関する詳細については、[を測定する複雑さとマネージ コードの保守容易性](../code-quality/code-metrics-values.md)、
+コード メトリックに関する詳細については、[マネージ コードの複雑さを測定](../code-quality/code-metrics-values.md)します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
@@ -102,7 +102,7 @@ ms.locfileid: "55916766"
 
 ## <a name="related-rules"></a>関連するルール
 
-[CA1501:過剰な継承を回避します。](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501:継承を使用しすぎないでください](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>関連項目
 
