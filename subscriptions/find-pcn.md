@@ -21,7 +21,7 @@ ms.locfileid: "56844348"
 ## <a name="to-locate-your-pcn-or-authorization-number"></a>PCN または承認番号を見つけるには
 
 ボリューム ライセンス サービス センターから PCN へのアクセスが提供されなくなりました。  取得するには、Visual Studio サブスクリプション サポートにお問い合わせください。
-1.  [https://visualstudio.microsoft.com/subscriptions/support/#talktous](https://visualstudio.microsoft.com/subscriptions/support/#talktous) にアクセスします。
+1.  https://visualstudio.microsoft.com/subscriptions/support/#talktous にアクセスします。
 2. **[Accounts, Subscriptions, and Billing Support]\(アカウント、サブスクリプション、課金サポート\)** ボタンをタップします。
     > [!div class="mx-imgBorder"]
     > ![サブスクリプション サポートを選択する](_img/vlsc/vlsc-pcn.png)

@@ -32,7 +32,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  このトピックでは、JavaScript と HTML5 で記述された Windows ストア アプリのデバッグ セッションを開始する方法について説明します。 1 回のキー入力でデバッグを開始できます。または、特定のシナリオのデバッグ セッションを構成してから、アプリの起動方法を選択できます。
 
 > [!NOTE]
->  XAML および Visual c#、Visual C、または Visual Basic で記述されたアプリでは、次を参照してください[(VB、c#、C++ および XAML) は、デバッグ セッションを開始。](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+>  XAML および Visual C#、Visual C、または Visual Basic で記述されたアプリでは、次を参照してください[(VB、C#、C++ および XAML) は、デバッグ セッションを開始。](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ##  <a name="BKMK_In_this_topic"></a> このトピックの内容
  [このトピックの内容](#BKMK_In_this_topic)
