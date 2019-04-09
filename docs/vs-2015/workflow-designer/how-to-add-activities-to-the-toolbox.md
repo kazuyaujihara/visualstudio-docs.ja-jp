@@ -1,30 +1,27 @@
 ---
 title: '方法: ツールボックスにアクティビティを追加 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7fc523cd032863498cdefac1e12f0653a57ab7cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 52f9fabec46fb04f2cc936c7bf76d67bd2dabcd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299859"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977959"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>方法 : ツール ボックスにアクティビティを追加する
+# <a name="how-to-add-activities-to-the-toolbox"></a>方法: ツール ボックスにアクティビティを追加する
 アクティビティに追加できる、**ツールボックス**でいくつかの方法でソリューション。 アクティビティを現在のプロジェクト内から追加したり、別のプロジェクトや別のアセンブリから参照したりできます。  
   
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>現在のプロジェクト内からアクティビティを追加するには  
   
-1.  現在のワークフロー プロジェクトに新しいカスタム アクティビティを追加します。 [!INCLUDE[crabout](../includes/crabout-md.md)] 参照をプロジェクトに新しいカスタム活動項目を追加する[方法: ワークフロー プロジェクトへ新しい項目を追加](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)します。  
+1.  現在のワークフロー プロジェクトに新しいカスタム アクティビティを追加します。 [!INCLUDE[crabout](../includes/crabout-md.md)] 参照をプロジェクトに新しいカスタム活動項目を追加する[方法。ワークフロー プロジェクトへ新しい項目を追加](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)します。  
   
 2.  カスタム ロジックをアクティビティに追加します。  
   
