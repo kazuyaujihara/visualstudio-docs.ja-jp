@@ -28,9 +28,9 @@ ms.locfileid: "58974998"
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>初期化の VSPackage からサービスを取得します。  
   
-1.  すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]という名前の VSIX プロジェクト`GetServiceExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#/機能拡張**します。  
+1.  すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]という名前の VSIX プロジェクト`GetServiceExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual C#/機能拡張**します。  
   
-2.  という名前のカスタム コマンド項目テンプレートを追加するようになりました**GetServiceCommand**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#/機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して**GetServiceCommand.cs**します。 詳細については、カスタム コマンドを作成する方法についての[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2.  という名前のカスタム コマンド項目テンプレートを追加するようになりました**GetServiceCommand**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual C#/機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して**GetServiceCommand.cs**します。 詳細については、カスタム コマンドを作成する方法についての[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 3.  GetServiceCommand.cs、MenuItemCommand メソッドの本体を削除し、次のコードを追加します。  
   

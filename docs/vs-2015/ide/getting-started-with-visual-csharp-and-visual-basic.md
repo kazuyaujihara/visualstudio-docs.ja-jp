@@ -1,5 +1,5 @@
 ---
-title: Visual c# と Visual Basic の概要 |Microsoft Docs
+title: Visual C# と Visual Basic の概要 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54788282"

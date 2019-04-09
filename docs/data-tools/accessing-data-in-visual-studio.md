@@ -16,7 +16,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
 ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2019
 ms.locfileid: "57983495"
@@ -150,7 +150,7 @@ C++ アプリからデータベースへの接続に関する詳細について�
 
 [Office ソリューションにおけるデータ](../vsto/data-in-office-solutions.md)&mdash;Office ソリューションでデータを操作する方法を説明するトピックへのリンクが含まれています。 スキーマ指向プログラミング、データ キャッシュ、およびサーバー側データ アクセスに関する説明が含まれます。
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;c# と Visual Basic、およびリレーショナル データベース、XML ドキュメント、データセット、およびインメモリ コレクションを照会するための一般的なモデルに組み込まれたクエリ機能について説明します。
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;C# と Visual Basic、およびリレーショナル データベース、XML ドキュメント、データセット、およびインメモリ コレクションを照会するための一般的なモデルに組み込まれたクエリ機能について説明します。
 
 [Visual Studio での XML ツール](../xml-tools/xml-tools-in-visual-studio.md)&mdash;、XML データ、XSLT のデバッグ、.NET Framework の XML 機能の使用と XML クエリのアーキテクチャについて説明します。
 

@@ -50,7 +50,7 @@ Visual Studio 2017 以降、カスタム プロジェクトと項目テンプレ
 
 -   [VSPackage を使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     VSPackage のウィザードは、c# または Visual Basic で不要になった拡張機能を作成します。
+     VSPackage のウィザードは、C# または Visual Basic で不要になった拡張機能を作成します。
 
 ### <a name="c"></a>C++
  C++ の場合は、VSPackage ウィザードは、メニュー コマンド、ツール ウィンドウ、およびカスタム エディターをサポートします。 探し、**新しいプロジェクト**でダイアログ**Visual C/機能拡張**します。

@@ -1,5 +1,5 @@
 ---
-title: デバッガー ナビゲーションのサンプル コード (Xaml および c#) |Microsoft Docs
+title: デバッガー ナビゲーションのサンプル コード (Xaml および C#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,7 +24,7 @@ ms.locfileid: "58975714"
 # <a name="debugger-navigation-sample-code-xaml-and-c"></a>デバッガーのナビゲーションのサンプル コード (Xaml および C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このトピックのコードは、のサンプル ファイルは、 [(Xaml および c#) は、デバッグ セッションのナビゲート](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)トピック。  
+このトピックのコードは、のサンプル ファイルは、 [(Xaml および C#) は、デバッグ セッションのナビゲート](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)トピック。  
   
 ## <a name="sample-code"></a>サンプル コード  
   

@@ -61,7 +61,7 @@ ms.locfileid: "58974479"
   
 - `string[] GetImportsForProcessingRun()` -テンプレート コードで使用できる名前空間を返します。  
   
-- `string GetClassCodeForProcessingRun()` -メソッド、プロパティ、およびテンプレート コードで使用できるその他の宣言のコードを返します。 これを行う最も簡単な方法では、c# または Visual Basic コードを含む文字列を作成します。 ディレクティブ プロセッサを任意の CLR 言語を使用するテンプレートから呼び出すことができるように、CodeDom ツリーとして、ステートメントを作成し、テンプレートで使用する言語でツリーをシリアル化の結果を返すできます。  
+- `string GetClassCodeForProcessingRun()` -メソッド、プロパティ、およびテンプレート コードで使用できるその他の宣言のコードを返します。 これを行う最も簡単な方法では、C# または Visual Basic コードを含む文字列を作成します。 ディレクティブ プロセッサを任意の CLR 言語を使用するテンプレートから呼び出すことができるように、CodeDom ツリーとして、ステートメントを作成し、テンプレートで使用する言語でツリーをシリアル化の結果を返すできます。  
   
 - 詳細については、「[チュートリアル:カスタム ディレクティブ プロセッサを作成する](../modeling/walkthrough-creating-a-custom-directive-processor.md)します。  
   

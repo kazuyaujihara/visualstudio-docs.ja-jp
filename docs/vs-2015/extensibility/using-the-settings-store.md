@@ -31,9 +31,9 @@ ms.locfileid: "58972541"
 ## <a name="creating-the-example-project"></a>サンプル プロジェクトを作成します。  
  このセクションでは、デモについては、メニュー コマンドを使用して単純な拡張機能プロジェクトを作成する方法を示します。  
   
-1.  すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]という名前の VSIX プロジェクト`SettingsStoreExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#/機能拡張**します。  
+1.  すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]という名前の VSIX プロジェクト`SettingsStoreExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual C#/機能拡張**します。  
   
-2.  という名前のカスタム コマンド項目テンプレートを追加するようになりました**SettingsStoreCommand**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#/機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して**SettingsStoreCommand.cs**します。 カスタム コマンドを作成する方法の詳細については、次を参照してください[メニュー コマンドを使用して拡張機能の作成。](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2.  という名前のカスタム コマンド項目テンプレートを追加するようになりました**SettingsStoreCommand**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual C#/機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して**SettingsStoreCommand.cs**します。 カスタム コマンドを作成する方法の詳細については、次を参照してください[メニュー コマンドを使用して拡張機能の作成。](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 ## <a name="using-the-configuration-settings-store"></a>構成設定ストアの使用  
  このセクションでは、検出し、構成設定を表示する方法を示します。  

@@ -144,7 +144,7 @@ ms.locfileid: "58976004"
 ## <a name="implementing-the-dynamic-menu-command"></a>動的メニュー コマンドの実装  
  継承する動的メニュー コマンド クラスを作成する<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>します。 この実装では、コンス トラクターは、コマンドの照合に使用する述語を指定します。 オーバーライドする必要があります、<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A>この述語を使用して設定するメソッド、<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A>プロパティで、呼び出されるコマンドを識別します。  
   
-1.  新しい c# クラス ファイルを DynamicItemMenuCommand.cs という名前を作成し、という名前のクラスを追加**DynamicItemMenuCommand**から継承する<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
+1.  新しい C# クラス ファイルを DynamicItemMenuCommand.cs という名前を作成し、という名前のクラスを追加**DynamicItemMenuCommand**から継承する<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
   
     ```csharp  
     class DynamicItemMenuCommand : OleMenuCommand  

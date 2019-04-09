@@ -200,7 +200,7 @@ This is test extension.
 
 この場合は、既定の VSPackage の拡張機能は使用しますが、同じ手順は、すべての種類の拡張機能の有効です。
 
-1. メニュー コマンドが"TestPublish"という名前の c# で VSPackage を作成します。 詳細については、[初めての拡張機能を作成を参照してください。Hello World](../extensibility/extensibility-hello-world.md)します。
+1. メニュー コマンドが"TestPublish"という名前の C# で VSPackage を作成します。 詳細については、[初めての拡張機能を作成を参照してください。Hello World](../extensibility/extensibility-hello-world.md)します。
 
 ### <a name="package-your-extension"></a>拡張機能をパッケージ化します。
 

@@ -61,7 +61,7 @@ int GetText( 
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
   
 ## <a name="example"></a>例  
- この例では、c# からのこのメソッドの呼び出し方法を示します。  
+ この例では、C# からのこのメソッドの呼び出し方法を示します。  
   
 ```csharp  
 using System.Runtime.Interop.Services;  

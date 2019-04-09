@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
 ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/28/2019
 ms.locfileid: "58567842"
@@ -33,7 +33,7 @@ ms.locfileid: "58567842"
 
  「ターゲット」は、コマンドを処理する方法には、MSBuild にインジケーターです。 キーのターゲットとは、ターゲットの「ビルド」と「発行」のターゲットです。 ビルド ターゲットがビルドを選択するのと同じ IDE でのコマンド (または f5 キーを押す) します。 プロジェクトをビルドする場合は、ことを実現する」と入力して`msbuild`します。 このコマンドは、ビルド ターゲットがによって生成されたすべてのプロジェクトの既定のターゲットであるため[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]します。 つまり、明示的にビルド ターゲットを指定する必要はありません。 したがって、`msbuild`入力と同じ操作は、`msbuild /target:build`します。
 
- `/target:publish`コマンドは、発行ターゲットを呼び出すための MSBuild に指示します。 発行先は、ビルド ターゲットに依存します。 これは、発行操作は、ビルド操作のスーパー セットであることを意味します。 たとえば、Visual Basic または c# ソース ファイルのいずれかに変更を加えた場合、対応するアセンブリは自動的にして再構築、発行操作。
+ `/target:publish`コマンドは、発行ターゲットを呼び出すための MSBuild に指示します。 発行先は、ビルド ターゲットに依存します。 これは、発行操作は、ビルド操作のスーパー セットであることを意味します。 たとえば、Visual Basic または C# ソース ファイルのいずれかに変更を加えた場合、対応するアセンブリは自動的にして再構築、発行操作。
 
  完全なを生成する方法について[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Mage.exe コマンド ライン ツールを使用して作成する展開、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]マニフェストは、「[チュートリアル: ClickOnce アプリケーションを手動で展開](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。
 

@@ -39,7 +39,7 @@ ms.locfileid: "55910871"
 
 ## <a name="rule-description"></a>規則の説明
 
-<xref:System.Runtime.InteropServices.LayoutKind> レイアウトの種類は、共通言語ランタイムによって管理されます。 これらの型のレイアウトは、特定のレイアウトを期待する COM クライアントを中断する .NET Framework のバージョン間で変更できます。 場合、 <xref:System.Runtime.InteropServices.StructLayoutAttribute> 、c#、Visual Basic、および C++ コンパイラの指定の属性が指定されていない[参照](<xref:System.Runtime.InteropServices.LayoutKind.Auto>)値の型。
+<xref:System.Runtime.InteropServices.LayoutKind> レイアウトの種類は、共通言語ランタイムによって管理されます。 これらの型のレイアウトは、特定のレイアウトを期待する COM クライアントを中断する .NET Framework のバージョン間で変更できます。 場合、 <xref:System.Runtime.InteropServices.StructLayoutAttribute> 、C#、Visual Basic、および C++ コンパイラの指定の属性が指定されていない[参照](<xref:System.Runtime.InteropServices.LayoutKind.Auto>)値の型。
 
 すべてのパブリックな非ジェネリックの型が、COM から参照できる他のマークがない限り、すべてのパブリックでないとジェネリック型が COM に表示されません。 ただし、偽陽性を減らすためには、この規則を明示的に指定する型の COM の参照範囲が必要です。 格納しているアセンブリをマークする必要があります、<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>に設定`false`で型をマークする必要があり、<xref:System.Runtime.InteropServices.ComVisibleAttribute>に設定`true`します。
 

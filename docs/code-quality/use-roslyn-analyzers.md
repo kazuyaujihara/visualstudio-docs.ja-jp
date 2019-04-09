@@ -20,7 +20,7 @@ ms.locfileid: "58515338"
 ---
 # <a name="use-roslyn-analyzers"></a>Roslyn アナライザーを使用して、
 
-.NET コンパイラ プラットフォーム ("Roslyn") アナライザー ルール、または*診断*、入力すると、c# または Visual Basic のコードを分析します。 各診断が、プロジェクトを上書きできる既定の重大度と抑制状態です。 この記事では、設定ルールの重要度、規則のセットを使用して、違反を抑制するについて説明します。
+.NET コンパイラ プラットフォーム ("Roslyn") アナライザー ルール、または*診断*、入力すると、C# または Visual Basic のコードを分析します。 各診断が、プロジェクトを上書きできる既定の重大度と抑制状態です。 この記事では、設定ルールの重要度、規則のセットを使用して、違反を抑制するについて説明します。
 
 ## <a name="analyzers-in-solution-explorer"></a>ソリューション エクスプ ローラーでアナライザー
 
@@ -124,7 +124,7 @@ A[ルール セット](../code-quality/using-rule-sets-to-group-code-analysis-ru
 
 1 つまたは複数の診断を抑制することができます、**エラー一覧**を抑制するたいものを選択し、右クリックし、選択して**抑制** > **でソース**または**抑制** > **抑制ファイル内**します。
 
-- 選択した場合**でソース**、**変更のプレビュー**ダイアログが開き、c# のプレビューを示します[#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)または Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives)ソース コードに追加されるディレクティブ。
+- 選択した場合**でソース**、**変更のプレビュー**ダイアログが開き、C# のプレビューを示します[#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)または Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives)ソース コードに追加されるディレクティブ。
 
    ![#Pragma 警告を追加するコード ファイルのプレビュー](media/pragma-warning-preview.png)
 

@@ -52,7 +52,7 @@ ms.locfileid: "58977125"
   
 - プロジェクトの種類の機能に関する詳細については、次を参照してください。  
   
-- プロジェクトの種類は、一連のインターフェイスを実装する vspackage オブジェクト[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]が必要です。 を使用する c# プロジェクトの種類を開発する場合、Managed Package Framework プロジェクトのクラスはするのに必要なインターフェイスを実装し、その実装を継承することができます。 詳細については、次を参照してください。 [Managed Package Framework を使用して、プロジェクトの種類 (c#) を実装する](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md)します。  
+- プロジェクトの種類は、一連のインターフェイスを実装する vspackage オブジェクト[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]が必要です。 を使用する C# プロジェクトの種類を開発する場合、Managed Package Framework プロジェクトのクラスはするのに必要なインターフェイスを実装し、その実装を継承することができます。 詳細については、次を参照してください。 [Managed Package Framework を使用して、プロジェクトの種類 (C#) を実装する](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md)します。  
   
 - C++ の開発者にとっては、HierUtil ライブラリのクラスは、同様の方法で動作します。 詳細については、次を参照してください。[ビルド内にありません。HierUtil7 プロジェクト クラスを使用して、プロジェクトの種類 (C++) を実装する](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)します。  
   

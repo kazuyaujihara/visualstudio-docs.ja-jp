@@ -81,7 +81,7 @@ typedef enum CV_CFL_LANG { 
  アプリケーションは、CVTPGD ツールで生成された最適化 POGO モジュールです。  
   
  CV_CFL_CSHARP  
- アプリケーションの言語は c# です。  
+ アプリケーションの言語は C# です。  
   
  CV_CFL_VB  
  アプリケーションの言語とは、Visual Basic です。  

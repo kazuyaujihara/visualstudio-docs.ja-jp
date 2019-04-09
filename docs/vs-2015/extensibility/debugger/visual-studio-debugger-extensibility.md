@@ -21,7 +21,7 @@ ms.locfileid: "58973776"
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio デバッガーの拡張性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio には、プログラムでバグを追跡するための強力で使いやすいツールを提供する完全な対話型のソース コードのデバッガーが含まれています。 デバッガーでは、完全なサポート Visual Basic、c#、C と C++ および JavaScript が。 ただし、 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]、つまりから使用可能な[Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkId=214453)、および他のプログラミング言語は同じ豊富な機能を使用してデバッガーでサポートされます。  
+Visual Studio には、プログラムでバグを追跡するための強力で使いやすいツールを提供する完全な対話型のソース コードのデバッガーが含まれています。 デバッガーでは、完全なサポート Visual Basic、C#、C と C++ および JavaScript が。 ただし、 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]、つまりから使用可能な[Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkId=214453)、および他のプログラミング言語は同じ豊富な機能を使用してデバッガーでサポートされます。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッガーは、一般的なフロント エンド (つまり、ユーザー インターフェイス)、デバッグ コンポーネントは、さらに、デバッグ中の言語に固有です。 によってサポートのために必要なすべての新しい言語は、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッガーはデバッグ エンジン (DE) など、必要なバックエンド コンポーネントを作成します。 ような場合は、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]が用意されています。  
   

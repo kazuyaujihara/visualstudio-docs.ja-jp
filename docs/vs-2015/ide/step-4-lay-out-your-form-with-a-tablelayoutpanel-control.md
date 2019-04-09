@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54763272"
@@ -21,7 +21,7 @@ ms.locfileid: "54763272"
 
 この手順では、フォームに `TableLayoutPanel` コントロールを追加します。 TableLayoutPanel は、後で追加するフォームのコントロールを適切にアラインするために役立ちます。  
   
- ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版について、次を参照してください[チュートリアル 1: ピクチャ ビューアーの Visual Basic - ビデオ 2 で作成](http://go.microsoft.com/fwlink/?LinkId=205211)または[チュートリアル 1: ピクチャ ビューアーの作成 - c#。ビデオ 2](http://go.microsoft.com/fwlink/?LinkId=205200)します。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。  
+ ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版について、次を参照してください[チュートリアル 1: ピクチャ ビューアーの Visual Basic - ビデオ 2 で作成](http://go.microsoft.com/fwlink/?LinkId=205211)または[チュートリアル 1: ピクチャ ビューアーの作成 - C#。ビデオ 2](http://go.microsoft.com/fwlink/?LinkId=205200)します。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。  
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>TableLayoutPanel コントロールを使用してフォームのレイアウトを設定するには  
   

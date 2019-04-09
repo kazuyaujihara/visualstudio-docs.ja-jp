@@ -37,7 +37,7 @@ ms.locfileid: "58976635"
  <xref:Microsoft.VisualStudio.Package.TokenTriggers>トリガー値への呼び出しを開始する、<xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A>メソッドを呼び出して、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッド パーサーの解析の理由で<xref:Microsoft.VisualStudio.Package.ParseReason>します。 メソッド シグネチャに一致させるの一覧を返しますが、パーサーは、前に、パラメーター リストの先頭文字の識別子が認識されているメソッド名である判断した場合、<xref:Microsoft.VisualStudio.Package.AuthoringScope>オブジェクト。 任意のメソッド シグネチャがわかった場合は、一覧の最初のシグネチャを持つパラメーター ヒントが表示されます。 署名の詳細の入力には、このヒントは更新されます。 パラメーター リストの最後の文字を入力すると、パラメーター ヒントはビューから削除されます。  
   
 > [!NOTE]
->  パラメーター ヒント、適切な形式は、プロパティを上書きする必要があります、<xref:Microsoft.VisualStudio.Package.Methods>適切な文字を指定するクラス。 ベース<xref:Microsoft.VisualStudio.Package.Methods>クラスは、c# のメソッド シグネチャのスタイル。 参照してください、<xref:Microsoft.VisualStudio.Package.Methods>この実行方法について詳しくクラス。  
+>  パラメーター ヒント、適切な形式は、プロパティを上書きする必要があります、<xref:Microsoft.VisualStudio.Package.Methods>適切な文字を指定するクラス。 ベース<xref:Microsoft.VisualStudio.Package.Methods>クラスは、C# のメソッド シグネチャのスタイル。 参照してください、<xref:Microsoft.VisualStudio.Package.Methods>この実行方法について詳しくクラス。  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>パラメーター ヒントのサポートを有効にします。  
  パラメーター ヒントのツールヒントをサポートするために設定する必要があります、`ShowCompletion`名前付きのパラメーター、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>に`true`します。 言語サービスからこのレジストリ エントリの値を読み取り、<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A>プロパティ。  

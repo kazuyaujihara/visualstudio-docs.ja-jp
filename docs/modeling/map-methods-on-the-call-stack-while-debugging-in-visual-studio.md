@@ -44,7 +44,7 @@ ms.locfileid: "55924546"
 
 - [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
 
-- Visual c#、Visual Basic、C++、JavaScript、または x++ など、デバッグできるコード
+- Visual C#、Visual Basic、C++、JavaScript、または x++ など、デバッグできるコード
 
   参照トピック
 

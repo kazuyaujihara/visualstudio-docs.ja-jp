@@ -67,7 +67,7 @@ ms.locfileid: "54867430"
 
 2.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
 
-3.  展開テンプレート ペインで**Visual c#** または**Visual Basic**、 をクリックし、 **Windows**します。
+3.  展開テンプレート ペインで**Visual C#** または**Visual Basic**、 をクリックし、 **Windows**します。
 
 4.  プロジェクト テンプレートの一覧で選択**クラス ライブラリ**します。
 
@@ -218,7 +218,7 @@ ms.locfileid: "54867430"
 
 1.  **ソリューション エクスプ ローラー**を右クリックし、 **AdventureWorksDataSet**ソリューション、 をポイント**追加**、 をクリックし、**新しいプロジェクト**します。
 
-2.  **プロジェクトの種類**ウィンドウで、展開**Visual c#** または**Visual Basic**、 をクリックし、 **Windows**します。
+2.  **プロジェクトの種類**ウィンドウで、展開**Visual C#** または**Visual Basic**、 をクリックし、 **Windows**します。
 
 3.  **テンプレート**ペインで、**コンソール アプリケーション**します。
 
@@ -245,7 +245,7 @@ ms.locfileid: "54867430"
 
 6. 開く、 *Program.cs*または*Module1.vb*コード エディターでファイル。
 
-7. 次の追加**を使用して**(c#) のまたは**Imports** (Visual Basic) のステートメントをコード ファイルの先頭にします。
+7. 次の追加**を使用して**(C#) のまたは**Imports** (Visual Basic) のステートメントをコード ファイルの先頭にします。
 
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]

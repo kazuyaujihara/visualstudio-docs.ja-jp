@@ -53,7 +53,7 @@ int GetExtendedInfo ( 
 ## <a name="remarks"></a>Remarks  
  このメソッドを呼び出すことによって取得するのには適していません情報を取得するためが存在する、 [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)メソッド。  
   
- 次の Guid は、(GUID 値は、名前は任意のアセンブリで利用できないために c# の指定は) このメソッドによって通常認識されます。 内部使用のため、追加の Guid を作成できます。  
+ 次の Guid は、(GUID 値は、名前は任意のアセンブリで利用できないために C# の指定は) このメソッドによって通常認識されます。 内部使用のため、追加の Guid を作成できます。  
   
 |名前|GUID|説明|  
 |----------|----------|-----------------|  

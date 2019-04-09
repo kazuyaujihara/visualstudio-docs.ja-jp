@@ -1,4 +1,4 @@
----
+﻿---
 title: 新しいプロジェクトの生成:内部的には、パート 2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

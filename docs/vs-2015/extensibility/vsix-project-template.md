@@ -29,7 +29,7 @@ VSIX プロジェクトでは、1 つまたは複数の Visual Studio 拡張機�
 >  VSIX プロジェクトを使用するには、Visual Studio SDK をインストールする必要があります。 Visual Studio SDK の詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>VSIX プロジェクト テンプレートの検索場所  
- VSIX プロジェクト テンプレートが表示されます、**新しいプロジェクト** ダイアログ ボックス。 いずれかを展開、 **Visual Basic**ノードまたは**Visual c#** ノードを選び、**拡張**します。  
+ VSIX プロジェクト テンプレートが表示されます、**新しいプロジェクト** ダイアログ ボックス。 いずれかを展開、 **Visual Basic**ノードまたは**Visual C#** ノードを選び、**拡張**します。  
   
 > [!TIP]
 >  以降の上部にあるドロップダウン リストで指定されたかを確認してください、.NET Framework 4.5、**新しいプロジェクト** ダイアログ ボックス。  

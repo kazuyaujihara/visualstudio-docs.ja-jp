@@ -20,7 +20,7 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58977502"
 ---
 # <a name="completion-lists-in-c"></a>C# でのコンプリート リスト #
-このコンテンツに移動[Visual c# の IntelliSense](../ide/visual-csharp-intellisense.md)  
+このコンテンツに移動[Visual C# の IntelliSense](../ide/visual-csharp-intellisense.md)  
   
 ## <a name="see-also"></a>関連項目  
  [Visual C# のコード スニペット](../ide/visual-csharp-code-snippets.md)

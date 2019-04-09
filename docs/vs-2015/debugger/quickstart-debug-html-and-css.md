@@ -1,14 +1,9 @@
 ---
-title: 'クイック スタート: HTML と CSS のデバッグ |Microsoft Docs'
-ms.custom: ''
+title: 'クイック スタート: HTML および CSS のデバッグ |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -25,15 +20,15 @@ ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 710bafe2383d95358ba06a287a300d9aea7baf66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729976"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002666"
 ---
-# <a name="quickstart-debug-html-and-css"></a>クイック スタート: HTML および CSS のデバッグ
+# <a name="quickstart-debug-html-and-css"></a>クイック スタート: HTML と CSS をデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows および Windows Phone に適用されます] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
@@ -60,13 +55,13 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 - [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)  
   
-  その他の JavaScript のデバッグ、JavaScript コンソール ウィンドウを使用して、ブレークポイントの設定などの機能の詳細についてを参照してください。[クイック スタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)と[Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)します。  
+  その他の JavaScript のデバッグ、JavaScript コンソール ウィンドウを使用して、ブレークポイントの設定などの機能の詳細についてを参照してください。[クイック スタート。JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)と[Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)します。  
   
 ##  <a name="InspectingDOM"></a> ライブ DOM の検査  
  DOM Explorer ではレンダリングされるページのビューが示され、DOM Explorer を使用すると値を変更して結果をすぐに確認できます。 これにより、デバッガーを停止して再起動することなく変更をテストできます。 この方法でページと対話するときはプロジェクトのソース コードは変更されないので、必要なコード修正が見つかったら、ソース コードを変更します。  
   
 > [!TIP]
->  ソース コードを変更する際、デバッガーの停止や再起動を避けるために、[デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンを使用して (または F4 キーを押して) アプリケーションを更新できます。 詳細については、[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)を参照してください。  
+>  ソース コードを変更する際、デバッガーの停止や再起動を避けるために、[デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンを使用して (または F4 キーを押して) アプリケーションを更新できます。 詳細については、次を参照してください。[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)します。  
   
  DOM Explorer を使用すると次のことができます。  
   
@@ -76,7 +71,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 - CSS スタイルがページ要素に適用される方法を調査し、適用されたルールをトレースします。  
   
-  アプリケーションをデバッグするときは、しばしば DOM Explorer で要素を選択する必要があります。 要素を選択すると、DOM Explorer の右側のタブに表示される値が、DOM Explorer での要素の選択を反映して自動的に更新されます。 このようなタブとしては、 **[スタイル]**、 **[計算済み]**、 **[レイアウト]** があります。 Windows ストア アプリでは **[イベント]** タブと **[変更]** タブもサポートされています。 要素の選択の詳細については、「 [Selecting elements](#SelectingElements)」を参照してください。  
+  アプリケーションをデバッグするときは、しばしば DOM Explorer で要素を選択する必要があります。 要素を選択すると、DOM Explorer の右側のタブに表示される値が、DOM Explorer での要素の選択を反映して自動的に更新されます。 これは、ようなタブ。**スタイル**、**計算**、**レイアウト**します。 Windows ストア アプリでは **[イベント]** タブと **[変更]** タブもサポートされています。 要素の選択の詳細については、「 [Selecting elements](#SelectingElements)」を参照してください。  
   
 > [!TIP]
 >  閉じた DOM Explorer ウィンドウを再び開くには、 **[デバッグ]**>**[ウィンドウ]** > **[DOM Explorer]** の順に選びます。 このウィンドウは、スクリプトのデバッグ セッション中にのみ表示されます。  
@@ -214,7 +209,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 15. `width: 100px;height: 100px;`を選択し、Del キー、Enter キーの順に押します。 デバッグ セッションを停止していなくても、Enter キーを押すとすぐに、新しい値がシミュレーターまたは Phone エミュレーターに反映されます。  
   
     > [!IMPORTANT]
-    >  DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]**、 **[計算済み]**、 **[レイアウト]** の各タブに表示される値も更新できます。 詳細については、[DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)と[DOM Explorer を使用してデバッグ レイアウト](../debugger/debug-layout-using-dom-explorer.md)を参照してください。  
+    >  DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]**、 **[計算済み]**、 **[レイアウト]** の各タブに表示される値も更新できます。 詳細については、次を参照してください。 [DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)と[DOM Explorer を使用してデバッグ レイアウト](../debugger/debug-layout-using-dom-explorer.md)します。  
   
 16. シミュレーターまたは Phone エミュレーターを選択するか、または Alt + Tab キーを使って、アプリケーションに切り替えます。  
   
@@ -234,9 +229,9 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
      **[レイアウト]** タブに、次の値が表示されます。  
   
-    - シミュレーターの場合は、320px (オフセット) および 320px (余白) です。  
+    - シミュレーターの場合。320 px (オフセット) および 320 px (余白)。  
   
-    - Phone エミュレーターの場合は、100px (オフセット) および 100px (余白) です。  
+    - Phone emulator:100 px (オフセット) および 100 px (余白)。  
   
       次の図は、Phone エミュレーター (100px オフセットおよび余白) を使用する場合の **[レイアウト]** タブを示しています。  
   
@@ -258,11 +253,11 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 2.  default.html を開き、 `"fView"` DIV 要素の高さと幅を 100% に変更して、ソース コードを変更します。  
   
-3.  [デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンをクリックします (または、F4 キーを押します)。 このようなボタンの外観:![更新の Windows アプリのボタン](../debugger/media/js-refresh.png "JS_Refresh")します。  
+3.  [デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンをクリックします (または、F4 キーを押します)。 ボタンのようになります。![Windows アプリのボタンを更新](../debugger/media/js-refresh.png "JS_Refresh")します。  
   
      アプリのページが再読み込みされ、シミュレーターまたは Phone エミュレーターが前面に戻ります。  
   
-     更新機能に関する詳細については、[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)を参照してください。  
+     更新機能に関する詳細については、次を参照してください。[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)します。  
   
 ##  <a name="SelectingElements"></a> Selecting elements  
  アプリケーションをデバッグするときに、次の 3 種類の方法で DOM 要素を選択できます。  
@@ -299,7 +294,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 -  [!INCLUDE[win8](../includes/win8-md.md)]  
   
-  [と Visual Studio をダウンロードするには、](http://go.microsoft.com/fwlink/?LinkID=232448) ここ [!INCLUDE[win8](../includes/win8-md.md)] にアクセスしてください。  
+  [と Visual Studio をダウンロードするには、](https://developer.microsoft.com/windows/downloads/sdk-archive) ここ [!INCLUDE[win8](../includes/win8-md.md)] にアクセスしてください。  
   
 ## <a name="see-also"></a>関連項目  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
@@ -307,11 +302,8 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  [DOM Explorer を使用してレイアウトをデバッグします。](../debugger/debug-layout-using-dom-explorer.md)   
  [DOM イベント リスナーの表示](../debugger/view-dom-event-listeners.md)   
  [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
- [WebView コントロールをデバッグします。](../debugger/debug-a-webview-control.md)   
+ [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)   
  [キーボード ショートカット](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [HTML、CSS、および JavaScript サンプル コードをデバッグします。](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [HTML、CSS、および JavaScript サンプル コードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [製品のサポートとユーザー補助](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

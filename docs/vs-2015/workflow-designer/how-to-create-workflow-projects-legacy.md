@@ -35,7 +35,7 @@ ms.locfileid: "58962789"
     > [!NOTE]
     >  既定のオプションに[!INCLUDE[vs2010](../includes/vs2010-md.md)]は **.NET Framework 4**します。 このオプションは、[!INCLUDE[wf](../includes/wf-md.md)] を対象とする [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] アプリケーションを作成する場合に使用され、従来のデザイナーは使用しません。  
   
-4.  **プロジェクトの種類**ウィンドウで、Visual c# プロジェクトまたは Visual Basic プロジェクトを選択し、**ワークフロー**します。  
+4.  **プロジェクトの種類**ウィンドウで、Visual C# プロジェクトまたは Visual Basic プロジェクトを選択し、**ワークフロー**します。  
   
 5.  **テンプレート**ウィンドウで、インストールされているプロジェクト テンプレートのいずれかを選択します。  
   

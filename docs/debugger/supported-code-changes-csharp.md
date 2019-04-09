@@ -1,5 +1,5 @@
 ﻿---
-title: サポートされるコードの変更 (c# および Visual Basic) |Microsoft Docs
+title: サポートされるコードの変更 (C# および Visual Basic) |Microsoft Docs
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,17 +18,17 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
 ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/06/2019
 ms.locfileid: "57526180"
 ---
-# <a name="supported-code-changes-c-and-visual-basic"></a>サポートされているコード変更 (c# および Visual Basic)
+# <a name="supported-code-changes-c-and-visual-basic"></a>サポートされているコード変更 (C# および Visual Basic)
 エディット コンティニュでは、メソッドの本体内で行ったほとんどの種類のコード変更を処理できます。 しかし、メソッドの本体外で行った変更の大部分やメソッドの本体内で行った一部の変更は、デバッグ時に適用できません。 このようなサポートされていない変更を適用するには、デバッグを停止し、新しいバージョンのコードを再起動する必要があります。
 
 ## <a name="supported-changes-to-code"></a>サポートされているコード変更
 
-次の表には、設定可能な c# および Visual Basic コードをデバッグ セッション中に、セッションを再起動しなくても変更が表示されます。
+次の表には、設定可能な C# および Visual Basic コードをデバッグ セッション中に、セッションを再起動しなくても変更が表示されます。
 
 |言語要素/機能|サポートされている編集操作|制限事項|
 |-|-|-|
@@ -43,7 +43,7 @@ ms.locfileid: "57526180"
 > 文字列補間と null 条件演算子などの新しい言語機能は通常、エディット コンティニュでサポートします。 最新情報については、次を参照してください。、 [Enc サポートされている編集](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)ページ。
 
 ## <a name="unsupported-changes-to-code"></a>サポートされていないコードの変更
- デバッグ セッション中に c# および Visual Basic コードに、次の変更は適用できません。
+ デバッグ セッション中に C# および Visual Basic コードに、次の変更は適用できません。
 
 -   現在のステートメントまたはその他のアクティブ ステートメントに対する変更。
 

@@ -22,9 +22,9 @@ UI スレッドをブロックすることがなくサービスを取得する�
 
 ## <a name="implementing-an-asynchronous-service"></a>非同期のサービスを実装します。
 
-1.  VSIX プロジェクトを作成 (**ファイル/新規、プロジェクト/Visual c#/呼び出/VSIX プロジェクト**)。 プロジェクトに名前を**TestAsync**します。
+1.  VSIX プロジェクトを作成 (**ファイル/新規、プロジェクト/Visual C#/呼び出/VSIX プロジェクト**)。 プロジェクトに名前を**TestAsync**します。
 
-2.  VSPackage をプロジェクトに追加します。 プロジェクト ノードを選択、**ソリューション エクスプ ローラー**クリック**追加/新しい項目/Visual c# アイテム/機能拡張/Visual Studio パッケージ**。 このファイルに名前を**TestAsyncPackage.cs**します。
+2.  VSPackage をプロジェクトに追加します。 プロジェクト ノードを選択、**ソリューション エクスプ ローラー**クリック**追加/新しい項目/Visual C# アイテム/機能拡張/Visual Studio パッケージ**。 このファイルに名前を**TestAsyncPackage.cs**します。
 
 3.  TestAsyncPackage.cs では、パッケージではなく、AsyncPackage から継承するようにパッケージを変更します。
 

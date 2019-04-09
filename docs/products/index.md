@@ -5,6 +5,12 @@ title: Visual Studio 製品 |Microsoft Docs
 description: Visual Studio ファミリ製品について説明します。
 ms.topic: landing-page
 searchScope: []
+ms.openlocfilehash: 77d03ae304886be2e6c588ccea1c6e8be97efb15
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59017993"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -24,7 +30,7 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-ide.svg" src="./images/vs-ide.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-ide-2019.svg" src="./images/vs-ide-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -43,12 +49,12 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac-2019.svg" src="./images/vs-mac-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio for Mac</h3>
-                                                    <p>Mac を使用して、クラウド、iOS、Android、macOS、ウェアラブル向けのアプリやゲームを構築します。</p>
+                                                    <p>.NET を使用して、iOS、Android、デスクトップ、および Web 向けのアプリとゲームを開発します。</p>
                                                 </div>
                                             </div>
                                         </div>

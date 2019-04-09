@@ -1,5 +1,5 @@
 ---
-title: パラメーターの削除リファクタリング (c#) |Microsoft Docs
+title: パラメーターの削除リファクタリング (C#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general

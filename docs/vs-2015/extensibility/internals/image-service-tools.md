@@ -20,6 +20,6 @@ VS SDK には、Visual Studio のイメージのサービスを使用して拡�
   
 -   [リソースからマニフェスト](../../extensibility/internals/manifest-from-resources.md)ツールは、イメージ リソース (.png または .xaml ファイル) のリストを取得し、イメージのマニフェスト ファイルを生成します。  
   
--   [マニフェストのコードを](../../extensibility/internals/manifest-to-code.md)ツールは、イメージのマニフェスト ファイルは、し、C++、c#、VB、または .vsct ファイルで使用するラッパー ファイルを生成します。  
+-   [マニフェストのコードを](../../extensibility/internals/manifest-to-code.md)ツールは、イメージのマニフェスト ファイルは、し、C++、C#、VB、または .vsct ファイルで使用するラッパー ファイルを生成します。  
   
 -   [イメージ ライブラリ ビューアー](../../extensibility/internals/image-library-viewer.md)読み込み、編集、およびイメージのマニフェストを検索できます。

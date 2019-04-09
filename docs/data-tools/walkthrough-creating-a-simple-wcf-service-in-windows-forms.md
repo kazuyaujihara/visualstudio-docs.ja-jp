@@ -18,7 +18,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 97bbf8212caf87f28849df15d350811579f22ccd
 ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/21/2019
 ms.locfileid: "58325229"
@@ -117,7 +117,7 @@ ms.locfileid: "58325229"
 
 1. **[ファイル]** メニューの **[追加]** をポイントし、**[新しいプロジェクト]** をクリックします。
 
-2. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual Basic**または**Visual c#** ノードの  **Windows**、し、 **Windows フォーム アプリケーション**します。 **[OK]** をクリックして、プロジェクトを開きます。
+2. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual Basic**または**Visual C#** ノードの  **Windows**、し、 **Windows フォーム アプリケーション**します。 **[OK]** をクリックして、プロジェクトを開きます。
 
      ![Windows フォーム アプリケーション プロジェクト](../data-tools/media/wcf7.png)
 

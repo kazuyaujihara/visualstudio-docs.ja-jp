@@ -13,14 +13,14 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
 ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/08/2019
 ms.locfileid: "55929402"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用した単純なデータ アプリケーションの作成
 
-データベースのデータを処理するアプリケーションの作成では、接続文字列の定義、データの挿入、ストアド プロシージャの実行などの基本的なタスクを実行します。 このトピックでは、Visual c# または Visual Basic および ADO.NET を使用して単純な Windows フォームの「フォーム オーバー データ」アプリケーションからデータベースと対話する方法を検出できます。  すべての .NET データ テクノロジ: LINQ to SQL、および Entity Framework のデータセットを含む-最終的にこの記事で示したものとよく似ている手順を実行します。
+データベースのデータを処理するアプリケーションの作成では、接続文字列の定義、データの挿入、ストアド プロシージャの実行などの基本的なタスクを実行します。 このトピックでは、Visual C# または Visual Basic および ADO.NET を使用して単純な Windows フォームの「フォーム オーバー データ」アプリケーションからデータベースと対話する方法を検出できます。  すべての .NET データ テクノロジ: LINQ to SQL、および Entity Framework のデータセットを含む-最終的にこの記事で示したものとよく似ている手順を実行します。
 
 この記事では、高速の方法で、データベースからデータを取得する簡単な方法を示します。 を、アプリケーションが自明でない方法でデータを変更し、データベースを更新する必要がある場合は、Entity Framework を使用して、基になるデータの変更をユーザー インターフェイス コントロールを自動的に同期へのデータ バインディングを使用してを検討してください。
 
@@ -35,7 +35,7 @@ ms.locfileid: "55929402"
 
 -   SQL Server Express LocalDB。 SQL Server Express LocalDB をお持ちでない場合からをインストール、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)します。
 
-このトピックでする Visual Studio IDE の基本的な機能を使い慣れているとできる Windows フォーム アプリケーションを作成と仮定ボタンと、フォームの他のコントロールを配置するプロジェクトにフォーム コントロール、およびコードの単純なイベントのプロパティの設定を追加します。 完了することをお勧め、これらのタスクを慣れていない場合、 [Visual c# および Visual Basic の概要](../ide/quickstart-visual-basic-console.md)トピックでこのチュートリアルを開始する前にします。
+このトピックでする Visual Studio IDE の基本的な機能を使い慣れているとできる Windows フォーム アプリケーションを作成と仮定ボタンと、フォームの他のコントロールを配置するプロジェクトにフォーム コントロール、およびコードの単純なイベントのプロパティの設定を追加します。 完了することをお勧め、これらのタスクを慣れていない場合、 [Visual C# および Visual Basic の概要](../ide/quickstart-visual-basic-console.md)トピックでこのチュートリアルを開始する前にします。
 
 ## <a name="set-up-the-sample-database"></a>サンプル データベースを設定する
 

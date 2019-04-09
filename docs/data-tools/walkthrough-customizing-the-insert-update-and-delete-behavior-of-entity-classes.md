@@ -13,7 +13,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 27c2677b8afef1f1e2cd035acb3038b42a4ef56d
 ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/08/2019
 ms.locfileid: "55948603"
@@ -73,7 +73,7 @@ LINQ to SQL クラスの操作、Windows フォームでデータを表示して
 
 1. Visual Studio での**ファイル**メニューの **新規** > **プロジェクト**します。
 
-2. いずれかを展開**Visual c#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
+2. いずれかを展開**Visual C#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
 
 3. 中央のペインで選択、 **Windows フォーム アプリ**プロジェクトの種類。
 
@@ -267,7 +267,7 @@ LINQ から SQL データ ソース アイテムをドラッグすることに�
 
 - 更新時のコンカレンシー チェックを実装します。 詳しくは、次を参照してください。[オプティミスティック同時実行制御: 概要](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview)します。
 
-- LINQ クエリを追加してデータをフィルター処理します。 詳しくは、次を参照してください。 [LINQ クエリ (c#) の概要](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)します。
+- LINQ クエリを追加してデータをフィルター処理します。 詳しくは、次を参照してください。 [LINQ クエリ (C#) の概要](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)します。
 
 ## <a name="see-also"></a>関連項目
 

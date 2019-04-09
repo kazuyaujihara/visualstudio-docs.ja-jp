@@ -42,11 +42,11 @@ Visual Studio でアプリケーションの構築 Windows Vista でユーザー
   
    このアプローチとも呼ばれます*virtualization*します。 Visual Studio の以前のバージョンからの既存のアプリケーションとの互換性のためには、このオプションを使用します。  
   
-  新しいプロパティは、**アプリケーション**(Visual c# プロジェクトのみ) 用のプロジェクト デザイナーのページと、MSBuild プロジェクト ファイル形式でします。  
+  新しいプロパティは、**アプリケーション**(Visual C# プロジェクトのみ) 用のプロジェクト デザイナーのページと、MSBuild プロジェクト ファイル形式でします。  
   
-  プロジェクトの種類 (Visual c# および Visual Basic) に応じて、Visual Studio IDE で UAC マニフェスト生成の構成方法が異なることに注意してください。  
+  プロジェクトの種類 (Visual C# および Visual Basic) に応じて、Visual Studio IDE で UAC マニフェスト生成の構成方法が異なることに注意してください。  
   
-  マニフェストの生成を Visual c# プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (c#)](../ide/reference/application-page-project-designer-csharp.md)します。  
+  マニフェストの生成を Visual C# プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (C#)](../ide/reference/application-page-project-designer-csharp.md)します。  
   
   マニフェストの生成を Visual Basic プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)します。  
   

@@ -1,29 +1,24 @@
 ---
-title: 'テスト領域 1: ソース管理から開くの追加 |Microsoft Docs'
-ms.custom: ''
+title: 'テスト領域 1: ソース管理から開くを追加する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ab1a267984f1a50cfd8e95cc8217572c0dacbcf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14bf97822957088f704ffbfefe24ea20b55f14ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746645"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976511"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>テスト領域 1: ソース管理から開くとを追加します。
+# <a name="test-area-1-add-toopen-from-source-control"></a>テスト領域 1: ソース管理から開く/を追加します。
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 このソース管理プラグインは、領域ではソース管理下のプロジェクトまたはソリューションを配置して、ソース管理から取得をテストします。  
@@ -31,15 +26,15 @@ ms.locfileid: "51746645"
 ## <a name="command-menu-access"></a>コマンド メニューへのアクセス  
  次[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境のメニューのパスは、テスト_ケースで使用されます。  
   
--   [!INCLUDE[vsvss](../../includes/vsvss-md.md)]、ソース管理から開く:**ファイル**、**開く**、**プロジェクト**/**ソリューション**記述を探して、で[!INCLUDE[vsvss](../../includes/vsvss-md.md)]場所。  
+-   [!INCLUDE[vsvss](../../includes/vsvss-md.md)]、ソース管理から開く。**ファイル**、**オープン**、**プロジェクト**/**ソリューション**記述を探してで、[!INCLUDE[vsvss](../../includes/vsvss-md.md)]場所。  
   
--   その他のソース管理プラグインをソース管理から開く:**ファイル**、**ソース管理**、**ソース管理から開く**します。  
+-   その他のソース管理プラグインをソース管理から開きます。**ファイル**、**ソース管理**、**ソース管理から開く**します。  
   
--   ソース管理に追加:**ファイル**、**ソース管理**、**ソリューションをソース管理ファイルに追加**、**ソース管理**、**追加選択したプロジェクトをソース管理に**します。  
+-   ソース管理に追加します。**ファイル**、**ソース管理**、**ソリューションをソース管理ファイルに追加**、**ソース管理**、**選択したプロジェクトをソース管理に追加します。**.  
   
 -   ショートカット メニュー (プロジェクト/ソリューション)**ソリューションをソース管理に追加**します。  
   
--   ソース管理から追加:**ファイル**、**ソース管理**、**ソース管理からプロジェクトの追加**します。  
+-   ソース管理から追加します。**ファイル**、**ソース管理**、**ソース管理からプロジェクトを追加**します。  
   
 -   [!INCLUDE[vsvss](../../includes/vsvss-md.md)]、追加のソースからコントロールが表示されます**ファイル**、**追加**、**既存のプロジェクト**記述を探してで、[!INCLUDE[vsvss](../../includes/vsvss-md.md)]場所。  
   
@@ -61,7 +56,7 @@ ms.locfileid: "51746645"
 ## <a name="test-cases"></a>テスト ケース  
  次に、追加の特定のテスト_ケースとテストの領域をソース管理から開く。  
   
-### <a name="case-1a-add-solution-to-source-control"></a>ケース 1 a: ソリューションをソース管理に追加します。  
+### <a name="case-1a-add-solution-to-source-control"></a>ケース 1 a:ソリューションをソース管理に追加します。  
  このテスト_ケースは、ソース管理にソリューションの追加について説明します。  
   
 |アクション|テスト ステップ|予想される結果を確認します|  
@@ -81,7 +76,7 @@ ms.locfileid: "51746645"
 |ローカルまたはソース管理からの IIS Web プロジェクトを含むソリューションを開く|1.ローカルまたは IIS Web プロジェクトを作成します。<br />2.ソース管理にソリューションを追加します。<br />3.ソリューションを閉じます。<br />4.新しい場所に、ソース管理からソリューションを開きます。|ソリューション/プロジェクトをソース管理から開きます。|  
 |ソース管理からのリモート サイトの Web プロジェクトを含むソリューションを開く|1.リモート サイトの Web プロジェクトを作成します。<br />2.ソース管理にソリューションを追加します。 このステップが成功した場合は、次の手順に進みます。<br />3.ソリューションを閉じます。<br />4.新しい場所に、ソース管理からソリューションを開きます。|`Result from Step 2:`<br /><br /> リモート サイトの Web ソース管理下ではありません。<br /><br /> `Result from Step 4:`<br /><br /> ソース管理から開くソリューションです。<br /><br /> リモート サイトのプロジェクトが読み込まれるが、ソース管理下ではありません。|  
   
-### <a name="case-1c-add-solution-from-source-control"></a>ケース 1 c: ソース管理からソリューションを追加  
+### <a name="case-1c-add-solution-from-source-control"></a>ケース 1 c:ソース管理からソリューションを追加します。  
  このテスト_ケースは、ソース管理からソリューションの追加について説明します。  
   
 |アクション|テスト ステップ|予想される結果を確認します|  
@@ -92,4 +87,3 @@ ms.locfileid: "51746645"
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグイン向けのテスト ガイド](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

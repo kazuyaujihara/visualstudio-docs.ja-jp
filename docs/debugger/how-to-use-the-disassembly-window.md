@@ -24,7 +24,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 43214ee122b3aa5c3907b9176631f2dc22c9178e
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54987766"
@@ -40,7 +40,7 @@ ms.locfileid: "54987766"
 
 **[逆アセンブル]** ウィンドウでは、アセンブリ命令だけでなく、必要に応じて以下の情報も表示できます。
 
-- 各命令が配置されているメモリ アドレス。 ネイティブ アプリケーションの場合は、実際のメモリ アドレス。 Visual basic またはC#は、関数の先頭からのオフセット。
+- 各命令が配置されているメモリ アドレス。 ネイティブ アプリケーションの場合は、実際のメモリ アドレス。 Visual Basic またはC#は、関数の先頭からのオフセット。
 
 - アセンブリ コードの派生元のソース コード。
 

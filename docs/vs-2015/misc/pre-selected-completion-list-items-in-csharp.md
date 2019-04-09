@@ -20,4 +20,4 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58972509"
 ---
 # <a name="pre-selected-completion-list-items-in-c"></a>C# で事前に選択されたコンプリート リスト項目 #
-このコンテンツに移動[で c# のコンプリート リスト](../misc/completion-lists-in-csharp.md)
+このコンテンツに移動[で C# のコンプリート リスト](../misc/completion-lists-in-csharp.md)

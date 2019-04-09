@@ -36,7 +36,7 @@ ms.locfileid: "58975181"
 「[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)」で説明されているように、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] のデバッグ構成に対するプロジェクト設定は **[プロパティ ページ]** ウィンドウで変更できます。 次の表は、**[プロパティ ページ]** ウィンドウのデバッガー関連の設定の場所を示しています。  
   
 > [!WARNING]
->  このトピックはストア アプリには適用されません。 参照してください[(VB、c#、C++ および XAML) は、デバッグ セッションを開始](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  このトピックはストア アプリには適用されません。 参照してください[(VB、C#、C++ および XAML) は、デバッグ セッションを開始](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
 ### <a name="debug-tab"></a>[デバッグ] タブ  
   
