@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a31058893e09de2c945cc253374a55c53f277110
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: dcef749068dfb1f13e5b08160a70dda168b771ee
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620006"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232854"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>方法: ClickOnce アプリケーションと共に必須コンポーネントを含める
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションと共に必須コンポーネントを配布する前に、まず開発用コンピューターにそれらの必須コンポーネントのインストーラー パッケージをダウンロードする必要があります。 インストーラー パッケージが **[パッケージ]** フォルダーにない場合、アプリケーションを発行して **[アプリケーションと同じ場所から必須コンポーネントをダウンロードする]** を選択するとエラーが発生します。
@@ -25,7 +25,7 @@ ms.locfileid: "56620006"
 
 1. ファイル エクスプローラーで、**Packages** フォルダーを開きます。
 
-    既定では、パスは 32 ビット システムでは *C:\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*、64 ビット システムでは *C:\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* です。
+    既定では、パスは`%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`します。
 
 2. 追加する必須コンポーネントのフォルダーを開いてから、インストールされているバージョンの [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の言語フォルダー (たとえば、英語の場合は **en**) を開きます。
 
@@ -50,4 +50,4 @@ ms.locfileid: "56620006"
     これで、アプリケーションと共にインストーラー パッケージを配布できます。
 
 ## <a name="see-also"></a>関連項目
-- [方法: ClickOnce アプリケーションの前提条件のインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [方法: ClickOnce アプリケーションの前提条件をインストールします。](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

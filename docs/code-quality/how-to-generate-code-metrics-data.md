@@ -11,20 +11,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223729"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232750"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>方法: コード メトリックス データを生成します。
 
-1 つまたは複数のプロジェクトまたはソリューション全体のコード メトリックスの結果を生成することができます。 コード メトリックスは Visual Studio の対話型開発環境 (IDE) 内であり、さらに利用可能なC#およびコマンドラインでの Visual Basic プロジェクト。
+3 つの方法では、コード メトリックス データを生成できます。
 
-さらに、インストール、 [NuGet パッケージ](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01)4 つのコード メトリックスを含む[アナライザー](roslyn-analyzers-overview.md)規則。CA1501、CA1502、CA1505、および CA1506 します。 既定では、これらの規則が無効になっていますが、それらから有効にすることができます**ソリューション エクスプ ローラー**または、[ルール セット](using-rule-sets-to-group-code-analysis-rules.md)ファイル。
+- インストールすることによって[FxCop アナライザー](#fxcop-analyzers-code-metrics-rules)が含まれている 4 つのコード (保守容易性) のメトリック ルールを有効にするとします。
 
-## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE のコード メトリックス
+- 選択して、 [**分析** > **コード メトリックスの計算**](#calculate-code-metrics-menu-command) Visual Studio 内でメニュー コマンド。
+
+- [コマンドライン](#command-line-code-metrics)のC#および Visual Basic プロジェクト。
+
+## <a name="fxcop-analyzers-code-metrics-rules"></a>FxCop アナライザー コード メトリックスの規則
+
+[FxCopAnalyzers NuGet パッケージ](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)いくつかのコード メトリックスを含む[アナライザー](roslyn-analyzers-overview.md)規則。
+
+- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1505](ca1505-avoid-unmaintainable-code.md)
+- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+
+これらのルールは既定で無効になりますが、それらから有効にすることができます[**ソリューション エクスプ ローラー** ](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer)または、[ルール セット](using-rule-sets-to-group-code-analysis-rules.md)ファイル。 たとえば、規則 CA1502 を警告としてを有効にする、.ruleset ファイルが含まれます次のエントリ。
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1502" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+### <a name="configuration"></a>構成
+
+FxCop アナライザーでコードのメトリック ルールが火災をパッケージするしきい値を構成できます。
+
+1. テキスト ファイルを作成します。 たとえば、という名前を*CodeMetricsConfig.txt*します。
+
+2. 次の形式でテキスト ファイルには、希望のしきい値を追加します。
+
+   ```txt
+   CA1502: 10
+   ```
+
+   この例では、ルール[CA1502](ca1502-avoid-excessive-complexity.md)メソッドのサイクロマティック複雑度が 10 より大きい場合に起動するように構成します。
+
+3. **プロパティ**またはプロジェクト ファイルで、Visual Studio のウィンドウとして、構成ファイルのビルド アクションをマークする[ **AdditionalFiles**](../ide/build-actions.md#build-action-values)します。 例:
+
+   ```xml
+   <ItemGroup>
+     <AdditionalFiles Include="CodeMetricsConfig.txt" />
+   </ItemGroup>
+   ```
+
+## <a name="calculate-code-metrics-menu-command"></a>メニュー コマンドのコード メトリックスを計算します。
 
 使用して、IDE で 1 つまたはすべての開いているプロジェクトのコード メトリックスを生成、**分析** > **コード メトリックスの計算**メニュー。
 
@@ -54,7 +100,8 @@ ms.locfileid: "57223729"
 > **コード メトリックスの計算**.NET Core と .NET Standard プロジェクトのコマンドは機能しません。 .NET Core または .NET Standard プロジェクトのコード メトリックスを計算するには、次のことができます。
 >
 > - コード メトリックスを計算、[コマンドライン](#command-line-code-metrics)代わりに
-> - Visual Studio 2019 へのアップグレードします。
+>
+> - アップグレード[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ::: moniker-end
 
@@ -202,7 +249,7 @@ Completed Successfully.
 msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 ```
 
-詳細については、[レガシ モードでのコード メトリックスの生成を有効にする](https://github.com/dotnet/roslyn-analyzers/pull/1841)を参照してください。
+詳細については、次を参照してください。[レガシ モードでのコード メトリックスの生成を有効にする](https://github.com/dotnet/roslyn-analyzers/pull/1841)します。
 
 ### <a name="previous-versions"></a>以前のバージョン
 
