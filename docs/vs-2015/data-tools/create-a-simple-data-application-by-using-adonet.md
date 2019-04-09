@@ -25,7 +25,7 @@ ms.locfileid: "58973889"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-データベースのデータを処理するアプリケーションの作成では、接続文字列の定義、データの挿入、ストアド プロシージャの実行などの基本的なタスクを実行します。 このトピックでは、Visual c# または Visual Basic および ADO.NET を使用して単純な Windows フォームの「フォーム オーバー データ」アプリケーションからデータベースと対話する方法を検出できます。  すべての .NET データ テクノロジ: LINQ to SQL、および Entity Framework のデータセットを含む-最終的にこの記事で示したものとよく似ている手順を実行します。  
+データベースのデータを処理するアプリケーションの作成では、接続文字列の定義、データの挿入、ストアド プロシージャの実行などの基本的なタスクを実行します。 このトピックでは、Visual C# または Visual Basic および ADO.NET を使用して単純な Windows フォームの「フォーム オーバー データ」アプリケーションからデータベースと対話する方法を検出できます。  すべての .NET データ テクノロジ: LINQ to SQL、および Entity Framework のデータセットを含む-最終的にこの記事で示したものとよく似ている手順を実行します。  
   
  この記事では、非常に高速の方法で、データベースからデータを取得する簡単な方法を示します。 を、アプリケーションが自明でない方法でデータを変更し、データベースを更新する必要がある場合は、Entity Framework を使用して、基になるデータの変更をユーザー インターフェイス コントロールを自動的に同期へのデータ バインディングを使用してを検討してください。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "58973889"
   
 - 設定が完了したデータベースへの接続文字列。 開いてこの値を調べる**SQL Server オブジェクト エクスプ ローラー**、データベースのショートカット メニューを開き、選択**プロパティ**にスクロールし、 **ConnectionString**プロパティ。  
   
-  このトピックは、Visual Studio IDE の基本的な機能を理解していて、Windows フォーム アプリケーションの作成、そのプロジェクトへのフォームの追加、フォームにボタンなどのコントロールの追加、コントロールのプロパティの設定、およびシンプルなイベントのコード記述ができることを前提としています。 完了することをお勧め、これらのタスクを慣れていない場合、 [Visual c# および Visual Basic の概要](../ide/getting-started-with-visual-csharp-and-visual-basic.md)このトピックを開始する前にします。  
+  このトピックは、Visual Studio IDE の基本的な機能を理解していて、Windows フォーム アプリケーションの作成、そのプロジェクトへのフォームの追加、フォームにボタンなどのコントロールの追加、コントロールのプロパティの設定、およびシンプルなイベントのコード記述ができることを前提としています。 完了することをお勧め、これらのタスクを慣れていない場合、 [Visual C# および Visual Basic の概要](../ide/getting-started-with-visual-csharp-and-visual-basic.md)このトピックを開始する前にします。  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> サンプル データベースを設定します。  
  このチュートリアルで扱うサンプル データベースには、「Customer (顧客)」と「Order (注文)」のテーブルがあります。 最初はテーブルにデータはありませんが、作成したアプリケーションを実行するとデータが追加されます。 データベースには、5 種類のシンプルなストアド プロシージャもあります。 [スクリプトを使用して SQL database を作成する](../data-tools/create-a-sql-database-by-using-a-script.md)テーブル、主キーと外部キー、制約、およびストアド プロシージャを作成する TRANSACT-SQL スクリプトが含まれています。  
@@ -218,7 +218,7 @@ ms.locfileid: "58973889"
     |-------------|-----------------|  
     |Util-1|`System.Configuration` 名前空間を追加します。|  
     |Util-2|変数 `returnValue` を定義し、`null` (C#)、または `Nothing` (Visual Basic) に初期化します。|  
-    |Util-3|入力した場合でも`connString`内の接続文字列の名前として、**プロパティ**指定する必要があります ウィンドウ、 `"SimpleDataApp.Properties.Settings.connString"` (c#) または`"SimpleDataApp.My.MySettings.connString"`(Visual Basic)、コードでします。|  
+    |Util-3|入力した場合でも`connString`内の接続文字列の名前として、**プロパティ**指定する必要があります ウィンドウ、 `"SimpleDataApp.Properties.Settings.connString"` (C#) または`"SimpleDataApp.My.MySettings.connString"`(Visual Basic)、コードでします。|  
   
 ##  <a name="BKMK_writethecodefortheforms"></a> フォームのコードを記述します。  
  このセクションには、各フォームの動作を簡単な概要と、フォームを作成するコードがあります。 番号付きコメントは、コードのセクションを識別します。  

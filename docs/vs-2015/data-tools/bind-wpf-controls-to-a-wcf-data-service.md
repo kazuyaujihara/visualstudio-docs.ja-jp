@@ -1,12 +1,9 @@
 ---
 title: WCF データ サービスへの WPF コントロールのバインド |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +17,13 @@ ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f3dbfad8655b8594301b8da7ce1dda050119206
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 86c4358179b86031652cf933823c00a68526e9c5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220379"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974215"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF Data Service への WPF コントロールのバインド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,7 @@ ms.locfileid: "50220379"
   
 - 作成、[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]を WPF アプリケーションに Entity Data Model でデータを公開します。  
   
-- 項目をドラッグしてデータ バインド コントロールのセットを作成する、**データソース**WPF デザイナーにウィンドウ。  
+- **[データ ソース]** ウィンドウから WPF デザイナーに項目をドラッグして、一連のデータ バインド コントロールを作成する。  
   
 - 顧客レコード間を前後に移動するためのボタンを作成する。  
   
@@ -63,7 +60,7 @@ ms.locfileid: "50220379"
   
 - Entity Data Model および ADO.NET Entity Framework。 詳細については、次を参照してください。 [Entity Framework の概要](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)します。  
   
-- WPF デザイナーの操作。 詳細については、次を参照してください。 [WPF および Silverlight デザイナーの概要](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)します。  
+- WPF デザイナーの操作。 詳細については、次を参照してください。 [WPF および Silverlight デザイナーの概要](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)します。  
   
 - WPF データ バインディング。 詳しくは、「 [データ バインディングの概要](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。  
   
@@ -76,7 +73,7 @@ ms.locfileid: "50220379"
   
 2.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
-3.  展開**Visual c#** または**Visual Basic**、し、 **Web**します。  
+3.  **[Visual C#]** または **[Visual Basic]** を展開し、**[Web]** を選択します。  
   
 4.  **[ASP.NET Web アプリケーション]** プロジェクト テンプレートを選択します。  
   
@@ -84,41 +81,41 @@ ms.locfileid: "50220379"
   
      Visual Studio によって作成、`AdventureWorksService`プロジェクト。  
   
-6.  **ソリューション エクスプ ローラー**を右クリックして**Default.aspx**選択**削除**します。 このファイルは、このチュートリアルでは必要ありません。  
+6.  **ソリューション エクスプローラー**で、**Default.aspx** を右クリックし、**[削除]** を選択します。 このファイルは、このチュートリアルでは必要ありません。  
   
 ## <a name="create-an-entity-data-model-for-the-service"></a>サービスのエンティティ データ モデルを作成します。  
- [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] を使用してアプリケーションにデータを公開するには、サービスのデータ モデルを定義する必要があります。 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] 2 種類のデータ モデルをサポートしています。 エンティティのデータ モデル、およびカスタム データ モデルを実装する共通言語ランタイム (CLR) オブジェクトを使用して定義されている、<xref:System.Linq.IQueryable%601>インターフェイス。 このチュートリアルでは、データ モデルとして Entity Data Model を作成します。  
+ [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] を使用してアプリケーションにデータを公開するには、サービスのデータ モデルを定義する必要があります。 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] 2 種類のデータ モデルをサポートしています。エンティティ データ モデルでは、およびカスタム データ モデルを実装する共通言語ランタイム (CLR) オブジェクトを使用して定義されている、<xref:System.Linq.IQueryable%601>インターフェイス。 このチュートリアルでは、データ モデルとして Entity Data Model を作成します。  
   
 #### <a name="to-create-an-entity-data-model"></a>Entity Data Model を作成するには  
   
 1.  **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。  
   
-2.  インストールされたテンプレートの一覧で**データ**を選び、 **ADO.NET Entity Data Model**プロジェクト アイテム。  
+2.  [インストールされたテンプレート] ボックスの一覧で、**[データ]** をクリックし、**[ADO.NET エンティティ データ モデル]** プロジェクト項目を選択します。  
   
 3.  名を変更して`AdventureWorksModel.edmx`、 をクリック**追加**します。  
   
-     **Entity Data Model**ウィザードが開きます。  
+     **Entity Data Model** ウィザードが開きます。  
   
-4.  **モデルのコンテンツの選択** ページで **データベースから生成**、 をクリック**次**。  
+4.  **[モデルのコンテンツの選択]** ページで、**[データベースから生成]** をクリックし、**[次へ]** をクリックします。  
   
-5.  **データ接続の選択**ページで、次のオプションのいずれかを選択します。  
+5.  **[データ接続の選択]** ページで、次のいずれかのオプションを選択します。  
   
     -   AdventureWorksLT サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は、これを選択します。  
   
-    -   をクリックして**新しい接続**、AdventureWorksLT データベースへの接続を作成します。  
+    -   **[新しい接続]** をクリックして、AdventureWorksLT データベースへの接続を作成します。  
   
-6.  **データ接続の選択**ことを確認します ページで、**エンティティ接続設定の app.config に保存**オプションが選択されているし、順にクリックします**次**します。  
+6.  **[データ接続の選択]** ページで、**[エンティティ接続設定に名前を付けて App.Config に保存]** オプションが選択されていることを確認し、**[次へ]** をクリックします。  
   
-7.  **データベース オブジェクトの選択** ページで、展開**テーブル**、クリックして、 **SalesOrderHeader**テーブル。  
+7.  **[データベース オブジェクトの選択]** ページで、**[テーブル]** を展開し、**SalesOrderHeader** テーブルを選択します。  
   
 8.  **[完了]** をクリックします。  
   
-## <a name="create-the-service"></a>サービスを作成します。  
+## <a name="create-the-service"></a>サービスを作成する  
  作成、[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]を WPF アプリケーションに Entity Data Model でデータを公開します。  
   
 #### <a name="to-create-the-service"></a>サービスを作成するには  
   
-1.  **プロジェクト**メニューの **新しい項目の追加**します。  
+1.  **[プロジェクト]** メニューで **[新しい項目の追加]** を選択します。  
   
 2.  インストールされたテンプレートの一覧で**Web**を選び、 **WCF Data Service**プロジェクト アイテム。  
   
@@ -145,39 +142,39 @@ ms.locfileid: "50220379"
   
 #### <a name="to-create-the-wpf-client-application"></a>WPF クライアント アプリケーションを作成するには  
   
-1.  **ソリューション エクスプ ローラー**は、ソリューション ノードを右クリックし、**追加**、選択と**新しいプロジェクト**します。  
+1.  **ソリューション エクスプローラー**で、ソリューション ノードを右クリックし、**[追加]** をクリックして、**[新しいプロジェクト]** を選択します。  
   
-2.  **新しいプロジェクト**ダイアログ ボックスで、展開**Visual c#** または**Visual Basic**、し、 **Windows**します。  
+2.  **[新しいプロジェクト]** ダイアログで、**[Visual C#]** または **[Visual Basic]** を展開し、**[Windows]** を選択します。  
   
-3.  選択、 **WPF アプリケーション**プロジェクト テンプレート。  
+3.  **[WPF アプリケーション]** プロジェクト テンプレートを選択します。  
   
-4.  **名前**ボックスに「 `AdventureWorksSalesEditor`、 をクリック**OK**します。  
+4.  **[名前]** ボックスに `AdventureWorksSalesEditor` と入力して、**[OK]** をクリックします。  
   
      Visual Studio の追加、`AdventureWorksSalesEditor`プロジェクトがソリューションにします。  
   
 5.  **[データ]** メニューの **[データ ソースの表示]** をクリックします。  
   
-     **データソース**ウィンドウが開きます。  
+     **[データ ソース]** ウィンドウが開きます。  
   
 6.  **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックします。  
   
-     **データ ソースの構成**ウィザードが開きます。  
+     **データ ソース構成**ウィザードが開きます。  
   
-7.  **データ ソースの種類を選択**、ウィザードのページ**サービス**、順にクリックします**次**します。  
+7.  ウィザードの **[データ ソースの種類を選択]** ページで、**[サービス]** を選択し、**[次へ]** をクリックします。  
   
-8.  **サービス参照の追加**ダイアログ ボックスで、をクリックして**Discover**します。  
+8.  **[サービス参照の追加]** ダイアログ ボックスで **[探索]** をクリックします。  
   
      Visual Studio が使用可能なサービスは、現在のソリューションを検索し、追加`AdventureWorksService.svc`で利用可能なサービスの一覧に、**サービス**ボックス。  
   
 9. **Namespace**ボックスに「`AdventureWorksService`します。  
   
-10. **サービス**ボックスで、 **AdventureWorksService.svc**、順にクリックします**OK**します。  
+10. **[サービス]** ボックスで **[AdventureWorksService.svc]** をクリックし、**[OK]** をクリックします。  
   
      Visual Studio は、サービスの情報をダウンロードし、状態に戻ります、**データ ソースの構成**ウィザード。  
   
-11. **サービス参照の追加**] ページで [**完了**します。  
+11. **[サービス参照の追加]** ページで、**[完了]** をクリックします。  
   
-     Visual Studio にサービスによって返されるデータを表すノードの追加、**データソース**ウィンドウ。  
+     Visual Studio によって、サービスから返されたデータを表すノードが **[データ ソース]** ウィンドウに追加されます。  
   
 ## <a name="define-the-user-interface-of-the-window"></a>ウィンドウのユーザー インターフェイスを定義します。  
  WPF デザイナーで XAML を変更して、いくつかのボタンをウィンドウに追加します。 これらのボタンを使用して販売レコードを表示および更新できるようにするコードは、このチュートリアルで後で追加します。  
@@ -207,11 +204,11 @@ ms.locfileid: "50220379"
   
 #### <a name="to-create-the-data-bound-controls"></a>データ バインディング コントロールを作成するには  
   
-1. **データ ソース**ウィンドウで、ドロップダウン メニューをクリックして、 **[salesorderheaders]** ノード、および選択**詳細**します。  
+1. **[データ ソース]** ウィンドウで、**[SalesOrderHeaders]** ノードのドロップダウン メニューをクリックし、**[詳細]** を選択します。  
   
-2. 展開、 **[salesorderheaders]** ノード。  
+2. **[SalesOrderHeaders]** ノードを展開します。  
   
-3. この例では、いくつかのフィールドは表示されませんので、次のノードの横にあるドロップダウン メニューをクリックして、選択**None**:  
+3. この例ではいくつかのフィールドを非表示にするために、次のノードの横のドロップダウン メニューをクリックして **[なし]** を選択します。  
   
    - **CreditCardApprovalCode**  
   
@@ -225,51 +222,51 @@ ms.locfileid: "50220379"
   
      この操作は、次の手順において、これらのノードに対応するデータ バインド コントロールが Visual Studio で作成されるのを防ぎます。 このチュートリアルでは、エンドユーザーがこのデータを表示する必要がないことを想定しています。  
   
-4. **データ ソース**ウィンドウで、ドラッグ、 **[salesorderheaders]** ノード下のボタンを含む行のグリッド行にします。  
+4. **[データ ソース]** ウィンドウから、ボタンのある行の下のグリッド行に **[SalesOrderHeaders]** ノードをドラッグします。  
   
-    Visual Studio には、XAML とのデータにバインドされるコントロールのセットを作成するコードが生成される、**製品**テーブル。 生成された XAML とコードの詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
+    Visual Studio によって、**Product** テーブルのデータにバインドされるコントロール セットを作成する XAML とコードが生成されます。 生成された XAML とコードの詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。  
   
-5. 横に、デザイナーでは、クリックして、テキスト ボックス、**顧客 ID**ラベル。  
+5. デザイナーで、**[Customer ID]** ラベルの横のテキスト ボックスをクリックします。  
   
-6. **プロパティ**ウィンドウで、横にあるチェック ボックスを選択、 **IsReadOnly**プロパティ。  
+6. **[プロパティ]** ウィンドウで、**IsReadOnly** プロパティの横のチェック ボックスをオンにします。  
   
-7. 設定、 **IsReadOnly**以下のテキスト ボックスのそれぞれのプロパティ。  
+7. 次の各テキスト ボックスに **IsReadOnly** プロパティを設定します。  
   
-   -   **発注書番号**  
+   -   **[Purchase Order Number]**  
   
-   -   **販売注文 ID**  
+   -   **[Sales Order ID]**  
   
-   -   **販売注文番号**  
+   -   **[Sales Order Number]**  
   
-## <a name="load-the-data-from-the-service"></a>サービスからデータを読み込む  
+## <a name="load-the-data-from-the-service"></a>サービスからのデータの読み込み  
  サービスのプロキシ オブジェクトを使用して、サービスからの売上データを読み込みます。 データ ソースに返されるデータを割り当てる、 <xref:System.Windows.Data.CollectionViewSource> WPF ウィンドウ。  
   
 #### <a name="to-load-the-data-from-the-service"></a>サービスからデータを読み込むには  
   
-1.  作成するため、デザイナーで、`Window_Loaded`イベント ハンドラーを読み取るテキストをダブルクリックします: **MainWindow**します。  
+1.  作成するため、デザイナーで、`Window_Loaded`イベント ハンドラーを読み取るテキストをダブルクリックします。**MainWindow**します。  
   
-2.   イベント ハンドラーを次のコードで置き換えます。 交換することを確認、 *localhost*開発用コンピューター上のローカル ホスト アドレスでこのコードでのアドレス。  
+2.   イベント ハンドラーを次のコードで置き換えます。 このコードの *localhost* アドレスは、使用している開発コンピューターのローカル ホスト アドレスで置き換えてください。  
   
      [!code-csharp[Data_WPFWCF#2](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs#2)]
      [!code-vb[Data_WPFWCF#2](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#2)]  
   
 ## <a name="navigatesales-records"></a>Navigatesales レコード  
- 使用して販売レコード間をスクロールできるようにするコードを追加、 **\<** と**>** ボタン。  
+ ユーザーが **[\<]** ボタンと **[>]** ボタンを使用して販売レコード間をスクロールできるようにするコードを追加します。  
   
 #### <a name="to-enable-users-to-navigate-sales-records"></a>ユーザーが販売レコード間を移動できるようにするには  
   
-1.  デザイナーをダブルクリック、 **<** ウィンドウ サーフェイスのボタンをクリックします。  
+1.  デザイナーで、ウィンドウ サーフェイスの **[<]** をダブルクリックします。  
   
-     Visual Studio の分離コード ファイルを開くし、新たに作成します`backButton_Click`のイベント ハンドラー、<xref:System.Windows.Controls.Primitives.ButtonBase.Click>イベント。  
+     Visual Studio によって分離コード ファイルが開かれ、`backButton_Click` イベントのために新しい <xref:System.Windows.Controls.Primitives.ButtonBase.Click> イベント ハンドラーが作成されます。  
   
 2.  生成された `backButton_Click` イベント ハンドラーに次のコードを追加します。  
   
      [!code-csharp[Data_WPFWCF#3](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs#3)]
      [!code-vb[Data_WPFWCF#3](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#3)]  
   
-3.  デザイナーに戻り、ダブルクリック、 **>** ボタンをクリックします。  
+3.  デザイナーに戻り、**[>]** をダブルクリックします。  
   
-     Visual Studio の分離コード ファイルを開くし、新たに作成します`nextButton_Click`のイベント ハンドラー、<xref:System.Windows.Controls.Primitives.ButtonBase.Click>イベント。  
+     Visual Studio によって分離コード ファイルが開かれ、`nextButton_Click` イベントのために新しい <xref:System.Windows.Controls.Primitives.ButtonBase.Click> イベント ハンドラーが作成されます。  
   
 4.  生成された `nextButton_Click` イベント ハンドラーに次のコードを追加します。  
   
@@ -281,9 +278,9 @@ ms.locfileid: "50220379"
   
 #### <a name="to-add-the-ability-to-save-changes-to-sales-records"></a>販売レコードへの変更を保存する機能を追加するには  
   
-1.  デザイナーで、ダブルクリック、**変更の保存**ボタンをクリックします。  
+1.  デザイナーで、**[変更の保存]** をダブルクリックします。  
   
-     Visual Studio の分離コード ファイルを開くし、新たに作成します`saveButton_Click`のイベント ハンドラー、<xref:System.Windows.Controls.Primitives.ButtonBase.Click>イベント。  
+     Visual Studio によって分離コード ファイルが開かれ、`saveButton_Click` イベントのために新しい <xref:System.Windows.Controls.Primitives.ButtonBase.Click> イベント ハンドラーが作成されます。  
   
 2.  `saveButton_Click` イベント ハンドラーに次のコードを追加します。  
   
@@ -299,19 +296,19 @@ ms.locfileid: "50220379"
   
 2.  キーを押して**Ctrl + F5**します。  
   
-     Visual Studio の起動時、 **AdventureWorksService**プロジェクトのデバッグを行わず、します。  
+     Visual Studio によって、**AdventureWorksService** プロジェクトがデバッグなしで開始されます。  
   
-3.  **ソリューション エクスプ ローラー**を右クリックし、 **AdventureWorksSalesEditor**プロジェクト。  
+3.  **ソリューション エクスプローラー**で、**AdventureWorksSalesEditor** プロジェクトを右クリックします。  
   
-4.  コンテキスト メニューで、[**デバッグ**、] をクリックして**新しいインスタンスを開始**します。  
+4.  コンテキスト メニューの **[デバッグ]** で、**[新しいインスタンスを開始]** をクリックします。  
   
      アプリケーションが実行されます。 次のことを検証します。  
   
-    -   販売注文 ID を持つ最初の販売レコードからのデータのさまざまなフィールドを表示するテキスト ボックス**71774**します。  
+    -   テキスト ボックスに、先頭の販売レコードの各種データ フィールドが表示されること。このレコードの販売注文 ID は **71774** です。  
   
-    -   クリックすることができます、 **>** または**<** 他の販売レコード間を移動するボタン。  
+    -   **[>]** または **[<]** をクリックして、他の販売レコードに移動できること。  
   
-5.  販売レコードの 1 つは、入力内のテキスト、**コメント**ボックスをクリックして**変更を保存**します。  
+5.  いずれかの販売レコードの **[コメント]** ボックスに任意のテキストを入力し、**[変更の保存]** をクリックします。  
   
 6.  アプリケーションを終了し、Visual Studio からもう一度アプリケーションを起動します。  
   
@@ -322,9 +319,9 @@ ms.locfileid: "50220379"
 ## <a name="next-steps"></a>次の手順  
  このチュートリアルを完了した後、関連する次のタスクを実行できます。  
   
--   使用する方法について説明します、**データソース**WPF のバインドを Visual Studio のウィンドウを他の種類のデータ ソースを制御します。 詳細については、次を参照してください。[データセットにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-dataset.md)します。  
+-   Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールをその他の種類のデータ ソースにバインドする方法について学習します。 詳細については、次を参照してください。[データセットにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-dataset.md)します。  
   
--   使用する方法について説明します、**データソース**Visual Studio で WPF コントロールに関連するデータ (つまり、親子リレーションシップ内のデータ) を表示するウィンドウ。 詳細については、次を参照してください。[チュートリアル: WPF アプリケーションで関連データを表示する](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)します。  
+-   Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、「[チュートリアル:WPF アプリケーションで関連データの表示](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのデータに WPF コントロールをバインドします。](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
@@ -332,6 +329,5 @@ ms.locfileid: "50220379"
  [データセットへの WPF コントロールをバインドします。](../data-tools/bind-wpf-controls-to-a-dataset.md)   
  [概要](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)   
  [Entity Framework の概要](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)   
- [WPF と Silverlight のデザイナーの概要](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [WPF と Silverlight のデザイナーの概要](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
  [データ バインディングの概要](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
-

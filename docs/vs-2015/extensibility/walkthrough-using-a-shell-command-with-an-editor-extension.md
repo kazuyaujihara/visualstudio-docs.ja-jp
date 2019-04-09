@@ -30,7 +30,7 @@ VSPackage からには、エディターにメニュー コマンドなどの機
 ## <a name="creating-an-extension-with-a-menu-command"></a>メニュー コマンドを使用した拡張機能の作成  
  という名前のメニュー コマンドを配置する VSPackage を作成**追加 Adornment**上、**ツール**メニュー。  
   
-1.  という名前の c# VSIX プロジェクトを作成する`MenuCommandTest`、カスタム コマンドの項目テンプレート名を追加および**AddAdornment**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
+1.  という名前の C# VSIX プロジェクトを作成する`MenuCommandTest`、カスタム コマンドの項目テンプレート名を追加および**AddAdornment**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
   
 2.  MenuCommandTest という名前のソリューションが開かれます。 MenuCommandTestPackage ファイルがメニュー コマンドを作成し、に配置するコードを**ツール**メニュー。 この時点では、コマンドが発生すると、メッセージ ボックスを表示します。 後の手順では、コメントの表示要素を表示するときに変更する方法を紹介します。  
   
@@ -40,7 +40,7 @@ VSPackage からには、エディターにメニュー コマンドなどの機
   
 ## <a name="adding-a-mef-extension-to-the-command-extension"></a>コマンド拡張機能への MEF 拡張機能の追加  
   
-1.  **ソリューション エクスプ ローラー**は、ソリューション ノードを右クリックし、[**追加**、] をクリックし、**新しいプロジェクト**します。 **新しいプロジェクトの追加**ダイアログ ボックスで、をクリックして**拡張** **Visual c#**、し**VSIX プロジェクト**。 プロジェクトに `CommentAdornmentTest` という名前を付けます。  
+1.  **ソリューション エクスプ ローラー**は、ソリューション ノードを右クリックし、[**追加**、] をクリックし、**新しいプロジェクト**します。 **新しいプロジェクトの追加**ダイアログ ボックスで、をクリックして**拡張** **Visual C#**、し**VSIX プロジェクト**。 プロジェクトに `CommentAdornmentTest` という名前を付けます。  
   
 2.  このプロジェクトは、VSPackage の厳密な名前付きアセンブリと対話は、ため、アセンブリに署名する必要があります。 既に作成されて、VSPackage アセンブリのキー ファイルを再利用することができます。  
   

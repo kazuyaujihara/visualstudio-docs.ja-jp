@@ -61,7 +61,7 @@ ms.locfileid: "58964150"
 
 -   プライベート コンス トラクター型を対象とする[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]version 1.0 および 1.1。
 
--   `static` (`Shared` Visual basic) 修飾子は型を対象とする[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]します。
+-   `static` (`Shared` Visual Basic) 修飾子は型を対象とする[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  このルールから警告を抑制しても安全です。 次の状況では、この警告を抑制することをお勧めします。

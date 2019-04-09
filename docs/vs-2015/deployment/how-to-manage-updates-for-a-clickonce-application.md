@@ -104,7 +104,7 @@ ms.locfileid: "58976613"
   
 5.  **の場所を更新**フィールドに、形式を使用して、完全修飾 URL で更新プログラムの場所を入力 http://Hostname/ApplicationName、または UNC パス形式を使用して\\\Server\ApplicationName、またはをクリックして、 **の参照**更新プログラムの場所を参照するボタンをクリックします。 更新プログラムの場所は、アプリケーションはそれ自体の更新バージョンを探します。  
   
-6.  ユーザーが更新をチェックする選択が Windows フォームにボタン、メニュー項目、またはその他のユーザー インターフェイス項目を作成します。 その項目のイベント ハンドラーからの確認し、更新プログラムをインストールするメソッドを呼び出します。 このようなメソッドでの Visual Basic および Visual c# のコードの例を検索できます[方法。ClickOnce 配置 API を使用してプログラムでアプリケーションの更新プログラムの確認](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)します。  
+6.  ユーザーが更新をチェックする選択が Windows フォームにボタン、メニュー項目、またはその他のユーザー インターフェイス項目を作成します。 その項目のイベント ハンドラーからの確認し、更新プログラムをインストールするメソッドを呼び出します。 このようなメソッドでの Visual Basic および Visual C# のコードの例を検索できます[方法。ClickOnce 配置 API を使用してプログラムでアプリケーションの更新プログラムの確認](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)します。  
   
 7.  アプリケーションをビルドします。  
   

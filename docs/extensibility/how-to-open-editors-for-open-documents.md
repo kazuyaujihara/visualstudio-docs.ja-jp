@@ -25,8 +25,7 @@ ms.locfileid: "56702487"
 
 ### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>開いているファイルのプロジェクトに固有のエディターを開く
 
-1. 
-  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> メソッドを呼び出します。
+1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> メソッドを呼び出します。
 
     この呼び出しは、該当する場合に、ドキュメントの階層、階層のアイテムと、ウィンドウ フレームにポインターを返します。
 
@@ -47,8 +46,7 @@ ms.locfileid: "56702487"
 
 ### <a name="to-open-a-standard-editor-for-an-open-file"></a>開いているファイルの標準のエディターを開く
 
-1.  
-  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> を呼び出す。
+1.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> を呼び出す。
 
      このメソッドが最初に、ドキュメントがまだ開いていない呼び出してを検証します<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>します。 ドキュメントが既に開いている場合、エディター ウィンドウが示されます。
 

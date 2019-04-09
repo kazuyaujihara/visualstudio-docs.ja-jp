@@ -1,5 +1,5 @@
 ---
-title: サポートされるコードの変更 (c#) |Microsoft Docs
+title: サポートされるコードの変更 (C#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug

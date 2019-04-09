@@ -83,5 +83,5 @@ ms.locfileid: "55916584"
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>
-- [lock ステートメント (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [lock ステートメント (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
 - [SyncLock ステートメント (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

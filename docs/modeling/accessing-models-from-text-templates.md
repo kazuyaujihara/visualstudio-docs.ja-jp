@@ -58,7 +58,7 @@ Here is a list of elements in the model:
 
 - プロパティに`this`ルート要素が含まれています。 そこから、コードは、モデルの他の要素に移動できます。 プロパティの名前は、通常、DSL のルート ドメイン クラスと同じです。 この例では、 `this.ExampleModel`です。
 
-- コード フラグメントを記述する言語が必要な場合は、c# を使用して、あらゆる種類のテキストを生成できます。 コードを記述できますまた[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]プロパティを追加することで`language="VB"`を`template`ディレクティブ。
+- コード フラグメントを記述する言語が必要な場合は、C# を使用して、あらゆる種類のテキストを生成できます。 コードを記述できますまた[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]プロパティを追加することで`language="VB"`を`template`ディレクティブ。
 
 - テンプレートをデバッグするには、追加`debug="true"`を`template`ディレクティブ。 テンプレートは、例外が発生した場合、Visual Studio の別のインスタンスで開かれます。 コードの特定の時点でデバッガーを中断する場合は、insert ステートメント `System.Diagnostics.Debugger.Break();`
 

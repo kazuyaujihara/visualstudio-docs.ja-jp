@@ -32,9 +32,9 @@ Visual Studio 機能拡張ツール (VS SDK) に含まれている Windows フ�
   
 #### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Windows フォーム ツールボックス コントロールでの拡張機能を作成します。  
   
-1.  という名前の VSIX プロジェクトを作成する`MyWinFormsControl`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#/機能拡張**します。  
+1.  という名前の VSIX プロジェクトを作成する`MyWinFormsControl`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual C#/機能拡張**します。  
   
-2.  プロジェクトが開いたら、追加、 **Windows フォーム ツールボックス コントロール**という名前の項目テンプレート`Counter`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#/機能拡張**選択**Windows フォーム ツールボックス コントロール**  
+2.  プロジェクトが開いたら、追加、 **Windows フォーム ツールボックス コントロール**という名前の項目テンプレート`Counter`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual C#/機能拡張**選択**Windows フォーム ツールボックス コントロール**  
   
 3.  ユーザー コントロールが追加されます、 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>にコントロールを配置する、**ツールボックス**、および**Microsoft.VisualStudio.ToolboxControl**展開用の VSIX マニフェストでアセット エントリ。  
   

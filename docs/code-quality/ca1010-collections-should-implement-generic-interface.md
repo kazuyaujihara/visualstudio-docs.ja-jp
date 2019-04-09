@@ -79,7 +79,7 @@ dotnet_code_quality.ca1010.api_surface = private, internal
 
 ## <a name="fix-by-base-class-change"></a>基本クラスの変更を修正します。
 
-次の例から、非ジェネリック コレクションの基本クラスを変更することで、違反を修正する`CollectionBase`クラスをジェネリック`Collection<T>`(`Collection(Of T)` Visual basic) クラス。
+次の例から、非ジェネリック コレクションの基本クラスを変更することで、違反を修正する`CollectionBase`クラスをジェネリック`Collection<T>`(`Collection(Of T)` Visual Basic) クラス。
 
 [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
 

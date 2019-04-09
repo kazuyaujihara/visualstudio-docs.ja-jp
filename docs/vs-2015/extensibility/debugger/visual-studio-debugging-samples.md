@@ -24,6 +24,6 @@ ms.locfileid: "58972310"
 
 2 つのサンプルを使用して、Visual Studio デバッガーを拡張する方法を示して[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]します。  
   
--   含まれている管理対象の言語で、デバッガーの式エバリュエーター サンプル、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]します。 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]ウィンドウで、をクリックして、**サンプル** タブで、をクリックして**すべて**または**c#** クリックして、言語の一覧で**デバッガー**します。  
+-   含まれている管理対象の言語で、デバッガーの式エバリュエーター サンプル、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]します。 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]ウィンドウで、をクリックして、**サンプル** タブで、をクリックして**すべて**または**C#** クリックして、言語の一覧で**デバッガー**します。  
   
 -   MSDN コード ギャラリーに、Visual Studio デバッグ エンジンのサンプル、ネイティブ言語が。 詳細については、Microsoft Web サイトの[Visual Studio デバッグ エンジン サンプル](http://go.microsoft.com/fwlink/?LinkId=150236)します。

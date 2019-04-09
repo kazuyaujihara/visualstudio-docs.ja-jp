@@ -30,7 +30,7 @@ VSPackage、Managed Extensibility Framework (MEF) コンポーネント パー�
   
 1.  **Visual Basic**、 **Extensibility**します。 プロジェクトの既定の言語は Visual Basic です。  
   
-2.  **Visual c#**、 **Extensibility**します。 プロジェクトの既定の言語は C# です。  
+2.  **Visual C#**、 **Extensibility**します。 プロジェクトの既定の言語は C# です。  
   
 3.  **他のプロジェクト タイプ**、 **Extensibility**します。 プロジェクトの既定の言語は C++ です。  
   
@@ -74,7 +74,7 @@ VSPackage、Managed Extensibility Framework (MEF) コンポーネント パー�
   
 #### <a name="to-add-a-mef-component"></a>MEF コンポーネントを追加するには  
   
-1.  **新しいプロジェクトの追加**ダイアログ ボックスで、 **Visual c#**、**拡張**を使用して、**エディター余白**テンプレート プロジェクトを追加します。 これに `ShellEditorMargin` という名前を付けます。  
+1.  **新しいプロジェクトの追加**ダイアログ ボックスで、 **Visual C#**、**拡張**を使用して、**エディター余白**テンプレート プロジェクトを追加します。 これに `ShellEditorMargin` という名前を付けます。  
   
 2.  ShellExtensionsVSIX プロジェクトでは、コード ビューではなく、デザイン ビューで Source.extension.vsixmanifest ファイルを開きます。  
   
@@ -98,7 +98,7 @@ VSPackage、Managed Extensibility Framework (MEF) コンポーネント パー�
   
 #### <a name="to-add-a-generic-vsix-project"></a>ジェネリックの VSIX プロジェクトに追加するには  
   
-1.  **新しいプロジェクトの追加**ダイアログ ボックスで、 **Visual c#**、**拡張**を使用して、 **VSIXProject**テンプレート プロジェクトを追加します。 これに `EmptyVSIX` という名前を付けます。  
+1.  **新しいプロジェクトの追加**ダイアログ ボックスで、 **Visual C#**、**拡張**を使用して、 **VSIXProject**テンプレート プロジェクトを追加します。 これに `EmptyVSIX` という名前を付けます。  
   
 2.  ShellExtensionsVSIX プロジェクトでは、コード ビューではなく、デザイン ビューで Source.extensions.vsixmanifest ファイルを開きます。  
   

@@ -20,7 +20,7 @@ ms.locfileid: "58963375"
 
 電球マークを展開すると、一連のアクションを表示、組み込みのコード アナライザーやコード リファクタリングで識別された問題の修正など、Visual Studio エディターで使用されるアイコン。  
   
- Visual c# および Visual Basic のエディターで記述して、自動的に電球を表示するアクションを含む独自のコード アナライザーをパッケージ化する .NET コンパイラ プラットフォーム ("Roslyn") を使用することもできます。 詳細については次を参照してください:  
+ Visual C# および Visual Basic のエディターで記述して、自動的に電球を表示するアクションを含む独自のコード アナライザーをパッケージ化する .NET コンパイラ プラットフォーム ("Roslyn") を使用することもできます。 詳細については次を参照してください:  
   
 - [方法: C# の診断とコード修正を記述します。](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
@@ -28,7 +28,7 @@ ms.locfileid: "58963375"
   
   C++ などの他の言語では、その関数のスタブ実装を作成する提案など、いくつかのクイック アクションの電球も提供します。  
   
-  Light bulb によっては次のようになります。 赤い波線は、Visual Basic または Visual c# プロジェクトで無効である場合に変数の名前で表示されます。 無効な識別子にマウスを置く、カーソルの近くに電球が表示されます。  
+  Light bulb によっては次のようになります。 赤い波線は、Visual Basic または Visual C# プロジェクトで無効である場合に変数の名前で表示されます。 無効な識別子にマウスを置く、カーソルの近くに電球が表示されます。  
   
   ![電球](../extensibility/media/lightbulb.png "電球")  
   
@@ -43,7 +43,7 @@ ms.locfileid: "58963375"
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) プロジェクトの作成  
   
-1.  C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `LightBulbTest`の名前を指定します。  
+1.  C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual C#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `LightBulbTest`の名前を指定します。  
   
 2.  追加、**エディター分類子**をプロジェクトに項目テンプレート。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能の作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)です。  
   

@@ -1,14 +1,9 @@
 ---
-title: 'クイック スタート: コンソールを使用した JavaScript のデバッグ |Microsoft Docs'
-ms.custom: ''
+title: クイック スタート:コンソールを使用して JavaScript のデバッグ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
 dev_langs:
@@ -24,15 +19,15 @@ ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61f36594b4158c95621ec240fd7a883accd259a8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: bce2eae7c9df527c9b40e8d7f68bda68033449f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802602"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977734"
 ---
-# <a name="quickstart-debug-javascript-using-the-console"></a>クイックスタート: コンソールを使用した JavaScript のデバッグ
+# <a name="quickstart-debug-javascript-using-the-console"></a>クイック スタート:コンソールを使用した JavaScript のデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows および Windows Phone に適用されます] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
@@ -66,7 +61,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 > [!TIP]
 >  閉じた JavaScript コンソール ウィンドウを再び開くには、 **[デバッグ]**>**[ウィンドウ]** > **JavaScript コンソール** の順に選びます。 このウィンドウは、スクリプトのデバッグ セッション中にのみ表示されます。  
   
- JavaScript コンソール ウィンドウを使用すると、デバッガーを停止/再起動することなくアプリと対話することができます。 詳細については、[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)を参照してください。 その他の JavaScript のデバッグ、DOM Explorer を使用して、ブレークポイントの設定などの機能の詳細についてを参照してください。[クイック スタート: デバッグの HTML および CSS](../debugger/quickstart-debug-html-and-css.md)と[Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)します。  
+ JavaScript コンソール ウィンドウを使用すると、デバッガーを停止/再起動することなくアプリと対話することができます。 詳細については、次を参照してください。[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)します。 その他の JavaScript のデバッグ、DOM Explorer を使用して、ブレークポイントの設定などの機能の詳細についてを参照してください。[クイック スタート。HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)と[Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)します。  
   
 ##  <a name="InteractiveConsole"></a> JavaScript コンソール ウィンドウを使用したデバッグ  
  次の手順では、 `FlipView` アプリを作成し、JavaScript のコード エラーを対話的にデバッグする方法を示します。  
@@ -212,7 +207,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 18.  **[デバッグ]** > **Stop [デバッグ]ging** の順にクリックするか、または Shift + F5 キーを押してデバッグを停止し、ソース コードを修正します。  
   
-     サンプル コードを修正、含む default.html ページ全体を参照してください[デバッグ HTML、CSS、および JavaScript サンプル コード](../debugger/debug-html-css-and-javascript-sample-code.md)します。  
+     修正後のサンプル コードを含む default.html ページ全体については、「[HTML、CSS、および JavaScript サンプル コードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)」を参照してください。  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> 対話形式のデバッグと中断モード  
  JavaScript コンソール ウィンドウなどの JavaScript デバッグ ツールの使用中は、ブレークポイントを使用し、コードにステップ インできます。 デバッガーで実行しているプログラムがブレークポイントに達すると、デバッガーは一時的にプログラムの実行を中断します。 実行が中断されると、プログラムは実行モードから中断モードに切り替わります。 いつでも実行を再開できます。  
@@ -285,10 +280,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [キーボード ショートカット](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [HTML、CSS、および JavaScript サンプル コードをデバッグします。](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [クイック スタート: HTML と CSS をデバッグします。](../debugger/quickstart-debug-html-and-css.md)   
- [WebView コントロールをデバッグします。](../debugger/debug-a-webview-control.md)   
+ [HTML、CSS、および JavaScript サンプル コードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)   
+ [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)   
  [製品のサポートとユーザー補助](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

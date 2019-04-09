@@ -13,7 +13,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 5f4f2f5e44ea95137f53019f52de94a5389fa6d8
 ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/08/2019
 ms.locfileid: "55913497"
@@ -106,7 +106,7 @@ ms.locfileid: "55913497"
 
     C# プロジェクトの場合は、次の操作を行います。
 
-    部分を作成する IntelliSense を使用して c# プロジェクトはイベント ハンドラーが自動的に生成しないため、`UpdateCLASSNAME`メソッド。 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加するクラスの update メソッドをクリックします。 次のコードを選択するときに生成されるコードと似ています、`UpdateCLASSNAME`部分メソッド。
+    部分を作成する IntelliSense を使用して C# プロジェクトはイベント ハンドラーが自動的に生成しないため、`UpdateCLASSNAME`メソッド。 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加するクラスの update メソッドをクリックします。 次のコードを選択するときに生成されるコードと似ています、`UpdateCLASSNAME`部分メソッド。
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

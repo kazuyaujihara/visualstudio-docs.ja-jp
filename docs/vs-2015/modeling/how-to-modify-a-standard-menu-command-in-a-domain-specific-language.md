@@ -41,7 +41,7 @@ DSL で自動的に定義される標準コマンドのいくつかの動作を�
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>変更可能なコマンドを見つけるには  
   
-1.  `DslPackage`プロジェクトを開き、`GeneratedCode\CommandSet.cs`します。 この c# ファイルは、の従属としてソリューション エクスプ ローラーで見つかんだことができます`CommandSet.tt`します。  
+1.  `DslPackage`プロジェクトを開き、`GeneratedCode\CommandSet.cs`します。 この C# ファイルは、の従属としてソリューション エクスプ ローラーで見つかんだことができます`CommandSet.tt`します。  
   
 2.  このファイルにクラスを見つけることで名前の末尾が"`CommandSet`"、たとえば`Language1CommandSet`と`Language1ClipboardCommandSet`。  
   

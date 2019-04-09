@@ -16,7 +16,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
 ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/06/2019
 ms.locfileid: "57526361"
@@ -31,7 +31,7 @@ Visual Studio デバッガーのいくつかの生産性に関するヒントと
 
 ![データのヒントをピン留め](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>コードをエディット コンティニュ デバッグ (c#、VB、C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>コードをエディット コンティニュ デバッグ (C#、VB、C++)
 
 Visual Studio でサポートされているほとんどの言語では、デバッグ セッションの途中でコードを編集し、デバッグを続行します。 この機能を使用するデバッガー、make の編集、およびキーを押してで一時停止中に、カーソルでコードにクリックします。 **F5**、 **F10**、または**F11**デバッグを続行します。
 

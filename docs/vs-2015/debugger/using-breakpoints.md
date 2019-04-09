@@ -1,13 +1,8 @@
 ---
 title: ブレークポイントの使用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
@@ -45,13 +40,13 @@ ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ff5858482f64e8e73844c433febe8033b7ab1d70
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765955"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58963812"
 ---
 # <a name="using-breakpoints"></a>ブレークポイントの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ ms.locfileid: "51765955"
   
  この時点で、 `testInt` の値は 1 のままです。  
   
- 変数の値や呼び出し履歴など、アプリケーションの現在の状態を確認できます。 呼び出し履歴の詳細については、「 [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。  
+ 変数の値や呼び出し履歴など、アプリケーションの現在の状態を確認できます。 呼び出し履歴の詳細については、次を参照してください。[方法。[呼び出し履歴] ウィンドウを使用する](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。  
   
  ブレークポイントは、実行可能ファイルの任意のコード行に設定できます。 たとえば、上記の C# コードでは、変数の宣言、 `for` ループ、または `for` ループ内の任意のコードにブレークポイントを設定できますが、名前空間またはクラスの宣言、またはメソッドのシグネチャにはブレークポイントを設定できません。  
   
@@ -76,7 +71,7 @@ ms.locfileid: "51765955"
  データの条件またはメモリ アドレスによっては、呼び出し履歴、[逆アセンブリ] ウィンドウ、およびネイティブ C++ コードにもブレークポイントを設定できます。  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> [呼び出し履歴] ウィンドウでブレークポイントを設定する  
- **[呼び出し履歴]** ウィンドウでブレークポイントを設定することで、呼び出し元の関数が返す命令または行で実行を中断できます。 呼び出し履歴の詳細については、「 [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。 デバッガーの実行は停止している必要があります。  
+ **[呼び出し履歴]** ウィンドウでブレークポイントを設定することで、呼び出し元の関数が返す命令または行で実行を中断できます。 呼び出し履歴の詳細については、次を参照してください。[方法。[呼び出し履歴] ウィンドウを使用する](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。 デバッガーの実行は停止している必要があります。  
   
 1. アプリケーションのデバッグを開始し、(ブレークポイントの位置などで) 実行が停止するまで待ちます。 **[呼び出し履歴]** ウィンドウを開きます (**[デバッグ] / [ウィンドウ] / [呼び出し履歴]** または **CTRL + ALT + C**キー)。  
   
@@ -86,7 +81,7 @@ ms.locfileid: "51765955"
   
    **[ブレークポイント]** ウィンドウには、関数内の次に実行可能な命令に対応するメモリ位置に設定されたアドレスとして、呼び出し履歴のブレークポイントが表示されます。 デバッガーはその命令で実行を中断します。  
   
-   視覚的にブレークポイントをトレースするコードが実行中に、[デバッグ中に呼び出し履歴に対するメソッドのマップ](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)を参照してください。  
+   視覚的にブレークポイントをトレースするコードが実行中に、次を参照してください。[デバッグ中に呼び出し履歴に対するメソッドのマップ](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)します。  
   
 ## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>[逆アセンブリ] ウィンドウでブレークポイントを設定する  
  アセンブリ命令にブレークポイントを設定するには、デバッガーが中断モードになっている必要があります。  
@@ -155,7 +150,7 @@ ms.locfileid: "51765955"
   
    **[条件]** ボックスをオンにすると、ウィンドウが展開され、さまざまな種類の条件が表示されます。  
   
-   **条件式:** [条件式] を選択すると、 **[true の場合]** と **[変更された場合]** という 2 つの条件を選択できます。 式の条件を満たす場合に中断するときは **[true の場合]** をオンにし、式の値が変更されたときに中断するときは **[変更された場合]** をオンにします。  
+   **条件式:** 条件式を選択すると、2 つの条件を選択できます。**True は**と**変更されたときに**します。 式の条件を満たす場合に中断するときは **[true の場合]** をオンにし、式の値が変更されたときに中断するときは **[変更された場合]** をオンにします。  
   
    次の例では、 `testInt` の値が **4**の場合にのみ、ブレークポイントがヒットするように設定します。  
   
@@ -255,10 +250,7 @@ ms.locfileid: "51765955"
 2.  ブレークポイントをソース ファイルにバインドすることもできます。 ブレークポイントを選択し、コンテキスト メニューの **[条件]** をクリックします。 **[ブレークポイントの設定]** ウィンドウで **[元のバージョンと異なるソース コードを許可する]** チェック ボックスをオンにします。  
   
 ### <a name="breakpoints-dont-work-in-a-dll"></a>ブレークポイントが DLL で機能しない  
- デバッガーがモジュールのコードの場所に関するデバッグ情報を読み込んでいない場合は、ソース ファイルにブレークポイントを設定できません。 このようなときは、 **ブレークポイントを設定できない**ことを示すメッセージが表示されます。 ブレークポイントの場所に、警告ブレークポイント グリフが表示されます。 ただし、これらの警告ブレークポイントは、コードが読み込まれたときに実際のブレークポイントになります。 シンボルの読み込みの詳細については、[指定シンボル (.pdb) とソース ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)を参照してください。  
+ デバッガーがモジュールのコードの場所に関するデバッグ情報を読み込んでいない場合は、ソース ファイルにブレークポイントを設定できません。 このようなときは、 **ブレークポイントを設定できない**ことを示すメッセージが表示されます。 ブレークポイントの場所に、警告ブレークポイント グリフが表示されます。 ただし、これらの警告ブレークポイントは、コードが読み込まれたときに実際のブレークポイントになります。 シンボルの読み込みの詳細については、次を参照してください。[指定シンボル (.pdb) とソース ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)
-
-
-

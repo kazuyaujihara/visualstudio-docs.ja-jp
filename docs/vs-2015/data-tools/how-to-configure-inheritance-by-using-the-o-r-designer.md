@@ -28,7 +28,7 @@ ms.locfileid: "58974267"
   
 ### <a name="to-create-inherited-data-classes"></a>継承されたデータ クラスを作成するには  
   
-1.  開く、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を追加して、 **LINQ to SQL クラス**項目を既存の Visual Basic または c# プロジェクト。  
+1.  開く、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を追加して、 **LINQ to SQL クラス**項目を既存の Visual Basic または C# プロジェクト。  
   
 2.  基本クラスとして使用するテーブルを [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]にドラッグします。  
   

@@ -110,7 +110,7 @@ ms.locfileid: "58963323"
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
   
 #### <a name="outlining"></a>アウトライン  
- クライアントの<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>を使用して追加されているアウトライン領域のみが表示されます<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>または<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>します。 アドホックのリージョンは、エディター アダプターを介して追加されないので、表示されなくなります。 同様に、これらのクライアントでは、アウトライン、エディターのアダプターではなく、新しいエディターのコードを使用している言語 (c# および C++ を含む) によって追加された領域が見えない。  
+ クライアントの<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>を使用して追加されているアウトライン領域のみが表示されます<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>または<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>します。 アドホックのリージョンは、エディター アダプターを介して追加されないので、表示されなくなります。 同様に、これらのクライアントでは、アウトライン、エディターのアダプターではなく、新しいエディターのコードを使用している言語 (C# および C++ を含む) によって追加された領域が見えない。  
   
 #### <a name="line-heights"></a>行の高さ  
  新しいエディターでテキスト行はフォント サイズやその他の行を基準とした行が移動可能な行の変換によって、異なる高さを持つことができます。 などのメソッドによって返される行の高さ<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineHeight%2A>が適用された行変換なしで既定のフォント サイズを使用して行の高さ。 この高さは、ビュー内の行の実際の高さを反映しない可能性があります。  

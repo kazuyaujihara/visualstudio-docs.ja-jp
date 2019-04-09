@@ -10,7 +10,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 6430cd3092f6edbc514c7958e07961ccd234c161
 ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/08/2019
 ms.locfileid: "55931261"
@@ -24,7 +24,7 @@ ms.locfileid: "55931261"
 
 ## <a name="to-create-inherited-data-classes"></a>継承されたデータ クラスを作成するには
 
-1.  開く、 **O/R デザイナー**を追加して、 **LINQ to SQL クラス**項目を既存の Visual Basic または c# プロジェクト。
+1.  開く、 **O/R デザイナー**を追加して、 **LINQ to SQL クラス**項目を既存の Visual Basic または C# プロジェクト。
 
 2.  上に基本クラスとして使用するテーブルをドラッグして、 **O/R デザイナー**します。
 

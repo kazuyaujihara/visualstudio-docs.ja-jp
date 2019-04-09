@@ -8,7 +8,7 @@ ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54781697"
@@ -72,7 +72,7 @@ ms.locfileid: "54781697"
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) は、簡単な概要、および Xamarin.Forms とネイティブ UI レイヤー (つまり、Xamarin.iOS と Xamarin.Android) を比較した長所と短所を提供します。  
   
-2.  James Montemagno 氏のビデオの最初の 3 分[Xamarin.Forms:ネイティブ iOS、Android、Windows のアプリを c# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9、13m3s) は、別の概要とデモを見るを続行することができます。  
+2.  James Montemagno 氏のビデオの最初の 3 分[Xamarin.Forms:ネイティブ iOS、Android、Windows のアプリを C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9、13m3s) は、別の概要とデモを見るを続行することができます。  
   
 3.  (省略可能) [Xamarin.Forms の概要](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
   

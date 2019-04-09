@@ -50,7 +50,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ```  
   
 #### <a name="implementing-ivssolutionloadmanager"></a>IVsSolutionLoadManager を実装します。  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnBeforeOpenProject%2A>のソリューションを開くプロセス中にメソッドが呼び出されます。 このメソッドを実装するには、使用する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManagerSupport>サービスを管理するプロジェクトの種類の読み込みの優先順位を設定します。 たとえば、次のコードは、c# プロジェクトの種類をバック グラウンドで読み込むを設定します。  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnBeforeOpenProject%2A>のソリューションを開くプロセス中にメソッドが呼び出されます。 このメソッドを実装するには、使用する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManagerSupport>サービスを管理するプロジェクトの種類の読み込みの優先順位を設定します。 たとえば、次のコードは、C# プロジェクトの種類をバック グラウンドで読み込むを設定します。  
   
 ```csharp  
 Guid guidCSProjectType = new Guid("{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}");  

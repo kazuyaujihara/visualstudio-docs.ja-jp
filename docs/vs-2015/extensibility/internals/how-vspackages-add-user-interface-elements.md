@@ -1,14 +1,9 @@
 ---
 title: Vspackage がユーザー インターフェイス要素を追加する方法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
 - UI element design [Visual Studio SDK], VSPackages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 88b1a71964ddae67241025dd32c1a1384c79765f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: d020dd0e1d20facd431a31f5aabffb4ec9e2631a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753368"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58977721"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage でユーザー インターフェイス要素を追加する方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -74,7 +69,7 @@ VSPackage では、ユーザー インターフェイス (UI) 要素、たとえ
   
  最初の`GuidSymbol`要素"guid [PackageName] Pkg"、パッケージ自体の GUID です。 これは、Visual Studio によってパッケージの読み込みに使用される GUID です。 通常、子要素はありません。  
   
- 慣例により、メニューとコマンドでグループ化された 1 秒あたり`GuidSymbol`要素"guid [PackageName] CmdSet"、およびビットマップは、3 つ目では `GuidSymbol`要素では、"guidImages"。 この規則に準拠する必要はありませんが、各メニューのグループ、コマンド、およびビットマップの子である必要があります、`GuidSymbol`要素。  
+ 慣例により、メニューとコマンドでグループ化された 1 秒あたり`GuidSymbol`要素"guid [PackageName] CmdSet"、およびビットマップは、3 つ目では [`GuidSymbol`要素では、"guidImages"。 この規則に準拠する必要はありませんが、各メニューのグループ、コマンド、およびビットマップの子である必要があります、`GuidSymbol`要素。  
   
  2 番目の`GuidSymbol`パッケージ コマンドのセットを表し、要素は、いくつか`IDSymbol`要素。 各[IDSymbol 要素](../../extensibility/idsymbol-element.md)名前に数値の値をマップし、メニューのグループ、または、コマンド セットの一部であるコマンドを表す場合があります。 `IDSymbol` 、3 番目の要素`GuidSymbol`コマンドのアイコンとして使用できる要素の表すビットマップ。 GUID と ID のペアが同じ 2 つの子がありません、アプリケーション内で一意でなければならないため`GuidSymbol`要素には、同じ値を指定します。  
   
@@ -289,7 +284,7 @@ priority="0x0100" type="Menu">
 -   ユーザーは、コマンドをクリックするに記載されている手順に従ってなります[ルーティング アルゴリズム](../../extensibility/internals/command-routing-algorithm.md)します。  
   
 ## <a name="calling-pre-defined-commands"></a>定義済みのコマンドを呼び出す  
- [UsedCommands 要素](../../extensibility/usedcommands-element.md)または IDE で他の Vspackage によって提供されるコマンドにアクセスする Vspackage を使用します。 これを行うには、作成、 [UsedCommand 要素](../../extensibility/usedcommand-element.md)GUID とコマンドの使用の ID を持ちます。 こう現在の Visual Studio の構成の一部ではない場合でも、Visual Studio によって、コマンドが読み込まれます。 詳細については、[UsedCommand 要素](../../extensibility/usedcommand-element.md)を参照してください。  
+ [UsedCommands 要素](../../extensibility/usedcommands-element.md)または IDE で他の Vspackage によって提供されるコマンドにアクセスする Vspackage を使用します。 これを行うには、作成、 [UsedCommand 要素](../../extensibility/usedcommand-element.md)GUID とコマンドの使用の ID を持ちます。 こう現在の Visual Studio の構成の一部ではない場合でも、Visual Studio によって、コマンドが読み込まれます。 詳細については、次を参照してください。 [UsedCommand 要素](../../extensibility/usedcommand-element.md)します。  
   
 ## <a name="interface-element-appearance"></a>インターフェイス要素の外観  
  選択して、コマンド要素の配置に関する考慮事項は次のとおりです。  
@@ -308,4 +303,3 @@ priority="0x0100" type="Menu">
   
 ## <a name="see-also"></a>関連項目  
  [メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)
-

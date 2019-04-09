@@ -45,7 +45,7 @@ ms.locfileid: "55945015"
 
 変更可能な型とは、インスタンス データを変更できる型です。 <xref:System.Text.StringBuilder?displayProperty=fullName>クラスは、変更可能な参照型の例を示します。 クラスのインスタンスの値を変更できるメンバーが含まれています。 変更不可の参照型の例は、<xref:System.String?displayProperty=fullName>クラス。 インスタンス化された後、その値は変化しません。
 
-読み取り専用修飾子 ([readonly](/dotnet/csharp/language-reference/keywords/readonly)でC#、 [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) Visual basic でと[const](/cpp/cpp/const-cpp) C++ で) 参照型のフィールド (または C++ でのポインター) により、フィールドから参照型の別のインスタンスを置き換えられます。 ただし、修飾子は、参照型を変更できないよう、フィールドのインスタンス データを妨げません。
+読み取り専用修飾子 ([readonly](/dotnet/csharp/language-reference/keywords/readonly)でC#、 [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) Visual Basic でと[const](/cpp/cpp/const-cpp) C++ で) 参照型のフィールド (または C++ でのポインター) により、フィールドから参照型の別のインスタンスを置き換えられます。 ただし、修飾子は、参照型を変更できないよう、フィールドのインスタンス データを妨げません。
 
 このルールが誤って表示の種類の違反は、実際には、変更できません。 その場合は、警告を抑制しても安全です。
 

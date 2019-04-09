@@ -47,7 +47,7 @@ IDebugCustomAttribute : IUnknown
 |[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|バイトの blob として属性情報を取得します。|  
   
 ## <a name="remarks"></a>Remarks  
- カスタム属性は、特定のクラスやメソッドに関連付けられているカスタム メタデータを提供する、c# の構造です。  
+ カスタム属性は、特定のクラスやメソッドに関連付けられているカスタム メタデータを提供する、C# の構造です。  
   
 ## <a name="requirements"></a>必要条件  
  ヘッダー: sh.h  

@@ -62,7 +62,7 @@ ms.locfileid: "55950748"
 
 - .NET Framework version 1.0 および 1.1 を対象とする型のプライベート コンス トラクターです。
 
-- `static` (`Shared` Visual basic) 修飾子は型を対象とする[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]します。
+- `static` (`Shared` Visual Basic) 修飾子は型を対象とする[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 

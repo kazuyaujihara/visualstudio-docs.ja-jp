@@ -1,5 +1,5 @@
 ---
-title: メソッドの抽出リファクタリング (c#) |Microsoft Docs
+title: メソッドの抽出リファクタリング (C#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general

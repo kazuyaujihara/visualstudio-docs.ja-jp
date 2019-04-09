@@ -1,5 +1,5 @@
 ---
-title: '方法: エディット コンティニュを使用 (c#) |Microsoft Docs'
+title: '方法: エディット コンティニュを使用 (C#) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -39,7 +39,7 @@ C# のエディット コンティニュを使用すると、デバッグ中に�
   
 2.  **デバッグ** メニューのをクリックして**続行**、**手順**、または**次のステートメントの設定**か、デバッガー ウィンドウで関数を評価します。  
   
-     新しいコードがコンパイルされ、その新しいコードでデバッグが続行されます。 エディット コンティニュでサポートされない変更もあります。 詳細については、次を参照してください。[サポートされているコード変更 (c#)](../debugger/supported-code-changes-csharp.md)します。  
+     新しいコードがコンパイルされ、その新しいコードでデバッグが続行されます。 エディット コンティニュでサポートされない変更もあります。 詳細については、次を参照してください。[サポートされているコード変更 (C#)](../debugger/supported-code-changes-csharp.md)します。  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>[エディット コンティニュ] を有効または無効にするには  
   
@@ -53,5 +53,5 @@ C# のエディット コンティニュを使用すると、デバッグ中に�
   
 ## <a name="see-also"></a>関連項目  
  [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [サポートされているコードの変更 (c#)](../debugger/supported-code-changes-csharp.md)   
+ [サポートされているコードの変更 (C#)](../debugger/supported-code-changes-csharp.md)   
  [エディット コンティニュのエラーと警告 (C#)](../misc/edit-and-continue-errors-and-warnings-csharp.md)

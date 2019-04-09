@@ -18,7 +18,7 @@ ms.locfileid: "58973787"
 読み込みと初期化 VS パッケージは、ディスク I/O 結果ことができます。 このような I/O が UI スレッドで発生した場合、応答性の問題になることができます。 これに対処すると、Visual Studio 2015 が導入された、<xref:Microsoft.VisualStudio.Shell.AsyncPackage>バック グラウンド スレッドでのパッケージの読み込みができるようにするクラス。  
   
 ## <a name="creating-an-asyncpackage"></a>Asyncpackage から作成します。  
- VSIX プロジェクトを作成することができます (**ファイル/新しい/プロジェクト/Visual c#/機能拡張/VSIX プロジェクト**) VSPackage をプロジェクトに追加して (、プロジェクトを右クリックし、**追加、新しい項目/c# 項目/拡張機能/visualパッケージを studio**)。 サービスを作成し、それらのサービスをパッケージに追加することができます。  
+ VSIX プロジェクトを作成することができます (**ファイル/新しい/プロジェクト/Visual C#/機能拡張/VSIX プロジェクト**) VSPackage をプロジェクトに追加して (、プロジェクトを右クリックし、**追加、新しい項目/C# 項目/拡張機能/visualパッケージを studio**)。 サービスを作成し、それらのサービスをパッケージに追加することができます。  
   
 1. パッケージからの派生<xref:Microsoft.VisualStudio.Shell.AsyncPackage>します。  
   

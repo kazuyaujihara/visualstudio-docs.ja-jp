@@ -21,4 +21,4 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58977503"
 ---
 # <a name="filtered-completion-lists-in-c"></a>C# でフィルター処理されたコンプリート リスト #
-このコンテンツに移動[で c# のコンプリート リスト](../misc/completion-lists-in-csharp.md)
+このコンテンツに移動[で C# のコンプリート リスト](../misc/completion-lists-in-csharp.md)

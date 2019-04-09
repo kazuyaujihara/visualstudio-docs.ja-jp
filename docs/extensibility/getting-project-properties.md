@@ -30,7 +30,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 1. すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクト`ProjectPropertiesExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**ダイアログで"vsix"を検索します。
 
-2. ツール ウィンドウを追加するには、という名前のカスタム ツール ウィンドウの項目テンプレートを追加`ProjectPropertiesToolWindow`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加 ダイアログ**に移動して、 **Visual c# アイテム** > **拡張**選択**カスタム ツール ウィンドウ**。 **名前**ダイアログの下部にあるフィールドに、ファイル名を変更して`ProjectPropertiesToolWindow.cs`します。 カスタム ツール ウィンドウを作成する方法の詳細については、[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。
+2. ツール ウィンドウを追加するには、という名前のカスタム ツール ウィンドウの項目テンプレートを追加`ProjectPropertiesToolWindow`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加 ダイアログ**に移動して、 **Visual C# アイテム** > **拡張**選択**カスタム ツール ウィンドウ**。 **名前**ダイアログの下部にあるフィールドに、ファイル名を変更して`ProjectPropertiesToolWindow.cs`します。 カスタム ツール ウィンドウを作成する方法の詳細については、[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。
 
 3. ソリューションをビルドし、エラーが発生することなくソリューションがコンパイルされることを確認します。
 

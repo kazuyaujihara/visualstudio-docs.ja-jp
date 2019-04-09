@@ -57,7 +57,7 @@ ms.locfileid: "55025723"
  `BuildProjectOnLoad` は、省略可能な要素です。 既定値は `false` です。
 
 ## <a name="example"></a>例
- 次の例では、Visual c# テンプレートのメタデータを示しています。
+ 次の例では、Visual C# テンプレートのメタデータを示しています。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

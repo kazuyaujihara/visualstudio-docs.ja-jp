@@ -11,7 +11,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
 ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/20/2019
 ms.locfileid: "58268791"
@@ -72,7 +72,7 @@ ms.locfileid: "58268791"
 
     ![モデルのデータベース オブジェクトを選択します。](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. ウィザードでは、Entity Framework モデルを表す c# クラスが生成されます。 クラスは、プレーンな古い c# クラスと、私たちは、WPF ユーザー インターフェイスにデータをバインドします。 *.Edmx*ファイルは、リレーションシップおよびその他のクラスをデータベース内のオブジェクトに関連付けられるメタデータについて説明します。 *.Tt*ファイルは対象モデルとし、データベースの変更を保存するコードを生成する T4 テンプレート。 これらすべてのファイルを確認できます**ソリューション エクスプ ローラー** Northwind_model ノードの下。
+5. ウィザードでは、Entity Framework モデルを表す C# クラスが生成されます。 クラスは、プレーンな古い C# クラスと、私たちは、WPF ユーザー インターフェイスにデータをバインドします。 *.Edmx*ファイルは、リレーションシップおよびその他のクラスをデータベース内のオブジェクトに関連付けられるメタデータについて説明します。 *.Tt*ファイルは対象モデルとし、データベースの変更を保存するコードを生成する T4 テンプレート。 これらすべてのファイルを確認できます**ソリューション エクスプ ローラー** Northwind_model ノードの下。
 
       ![ソリューション エクスプ ローラーの EF モデル ファイル](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 

@@ -42,11 +42,11 @@ Visual Studio の最新ドキュメントについては、次を参照してく
   
 -   イベント ハンドラーとして使用されるメソッド。  
   
--   宣言されたメソッド、 `abstract` (`MustOverride` Visual basic) 修飾子。  
+-   宣言されたメソッド、 `abstract` (`MustOverride` Visual Basic) 修飾子。  
   
--   宣言されたメソッド、 `virtual` (`Overridable` Visual basic) 修飾子。  
+-   宣言されたメソッド、 `virtual` (`Overridable` Visual Basic) 修飾子。  
   
--   宣言されたメソッド、 `override` (`Overrides` Visual basic) 修飾子。  
+-   宣言されたメソッド、 `override` (`Overrides` Visual Basic) 修飾子。  
   
 -   宣言されたメソッド、 `extern` (`Declare` Visual Basic でのステートメント) 修飾子。  
   

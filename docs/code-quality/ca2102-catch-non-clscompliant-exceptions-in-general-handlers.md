@@ -35,7 +35,7 @@ ms.locfileid: "55923709"
 
 ## <a name="rule-description"></a>規則の説明
 
-処理する catch ブロック<xref:System.Exception>共通言語仕様 (CLS) 準拠のすべての例外をキャッチします。 ただし、CLS 非準拠の例外はキャッチしません。 非 CLS 準拠でネイティブ コードまたは Microsoft によって生成されたマネージ コードから、準拠しない例外をスローできます intermediate language (MSIL) アセンブラー。 注意して、c# と[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]コンパイラできないようにする CLS 非準拠の例外をスローし、 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] CLS 非準拠の例外をキャッチしません。 すべての例外を処理する catch ブロックの目的がある場合は、次の汎用の catch ブロックの構文を使用します。
+処理する catch ブロック<xref:System.Exception>共通言語仕様 (CLS) 準拠のすべての例外をキャッチします。 ただし、CLS 非準拠の例外はキャッチしません。 非 CLS 準拠でネイティブ コードまたは Microsoft によって生成されたマネージ コードから、準拠しない例外をスローできます intermediate language (MSIL) アセンブラー。 注意して、C# と[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]コンパイラできないようにする CLS 非準拠の例外をスローし、 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] CLS 非準拠の例外をキャッチしません。 すべての例外を処理する catch ブロックの目的がある場合は、次の汎用の catch ブロックの構文を使用します。
 
 - C#: `catch {}`
 

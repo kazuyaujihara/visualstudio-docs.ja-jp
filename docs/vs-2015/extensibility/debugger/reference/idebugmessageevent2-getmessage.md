@@ -58,7 +58,7 @@ int GetMessage( 
  [out]Win32 の規則を使用して、メッセージの種類を返します`MessageBox`関数。 参照してください、 [AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)詳細については、関数。  
   
  `pbstrHelpFileName`  
- [入力、出力]ヘルプ ファイルの名前を返します。 ヘルプ ファイルが存在しない場合、null (C++) または (c#) 値が空にすることがあります。  
+ [入力、出力]ヘルプ ファイルの名前を返します。 ヘルプ ファイルが存在しない場合、null (C++) または (C#) 値が空にすることがあります。  
   
  `pdwHelpId`  
  [入力、出力]ヘルプ識別子を返します。 ヘルプがない場合は 0 を関連付けられるこのメッセージ。  

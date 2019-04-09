@@ -45,7 +45,7 @@ ms.locfileid: "58976368"
  この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、規則に違反するデリゲートを示します。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]例では、コメント、ルールを満たすために例を変更する方法を示しています。 例では、c# の例で、変更されたコードが表示されるに従います。
+ 次の例では、規則に違反するデリゲートを示します。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]例では、コメント、ルールを満たすために例を変更する方法を示しています。 例では、C# の例で、変更されたコードが表示されるに従います。
 
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.CustomEventHandler/cs/FxCop.Design.CustomEventHandler.cs#1)]
  [!code-vb[FxCop.Design.CustomEventHandler#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.CustomEventHandler/vb/FxCop.Design.CustomEventHandler.vb#1)]

@@ -57,7 +57,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
 |||  
 |-|-|  
-|**サポート状況**|-.NET Framework 2.0 または以降のバージョンを使用する Visual Basic および Visual c# のアプリケーション。<br />     ASP.NET、Microsoft Azure、Windows フォーム、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013、および 64 ビットのアプリを含むほとんどのアプリケーションをデバッグできます。<br />     IntelliTrace を使用した SharePoint アプリケーションをデバッグするを参照してください。[チュートリアル。IntelliTrace を使用して SharePoint アプリケーションのデバッグ](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)します。<br />     IntelliTrace を使用した Microsoft Azure アプリをデバッグするを参照してください。 [IntelliTrace および Visual Studio で発行されたクラウド サービスのデバッグ](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)します。|  
+|**サポート状況**|-.NET Framework 2.0 または以降のバージョンを使用する Visual Basic および Visual C# のアプリケーション。<br />     ASP.NET、Microsoft Azure、Windows フォーム、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013、および 64 ビットのアプリを含むほとんどのアプリケーションをデバッグできます。<br />     IntelliTrace を使用した SharePoint アプリケーションをデバッグするを参照してください。[チュートリアル。IntelliTrace を使用して SharePoint アプリケーションのデバッグ](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)します。<br />     IntelliTrace を使用した Microsoft Azure アプリをデバッグするを参照してください。 [IntelliTrace および Visual Studio で発行されたクラウド サービスのデバッグ](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)します。|  
 |**限定されたサポート**|-F#実験的な単位でのアプリ<br />-イベントについてのみサポートされている Windows ストア アプリ|  
 |**サポートされていません**|C++、その他の言語、およびスクリプト<br />-Windows サービス、Silverlight、Xbox、または[!INCLUDE[winmobile](../includes/winmobile-md.md)]アプリ|  
   

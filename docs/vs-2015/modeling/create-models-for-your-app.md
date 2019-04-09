@@ -78,7 +78,7 @@ ms.locfileid: "59002194"
 |[UML モデリング プロジェクトおよびダイアグラムを作成する](../modeling/create-uml-modeling-projects-and-diagrams.md)|**モデルを作成する**してダイアグラムを追加します。|  
 |[UML モデルおよびダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)|**図を描画する**してモデルを編集します。|  
 |[パッケージと名前空間の定義](../modeling/define-packages-and-namespaces.md)|**パッケージの作成**にモデルを別のチーム メンバーが作業できる単位に分割します。|  
-|[UML クラス図からコードを生成する](../modeling/generate-code-from-uml-class-diagrams.md)|**クラス ダイアグラムからの c# コードの生成**して実装を開始します。|  
+|[UML クラス図からコードを生成する](../modeling/generate-code-from-uml-class-diagrams.md)|**クラス ダイアグラムからの C# コードの生成**して実装を開始します。|  
 |[プロファイルとステレオタイプを使用したモデルのカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**モデル要素をカスタマイズ**ステレオタイプを使用して、特定の目的で標準の UML モデル要素を拡張します。|  
 |[モデル要素と作業項目とのリンク](../modeling/link-model-elements-and-work-items.md)|**モデル要素と作業項目間のリンクを作成**タスク、テスト_ケース、バグ、要件を追跡するために次のように問題、または、モデルの特定の部分に関連付けられているその他の作業です。|  
 |[イメージとしてダイアグラムをエクスポートする](../modeling/export-diagrams-as-images.md)|**モデルとダイアグラムの保存**他のユーザーと共有することができます、つまりは使用しない方を含めて[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]します。|  

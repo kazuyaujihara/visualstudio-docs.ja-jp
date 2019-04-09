@@ -29,7 +29,7 @@ ms.locfileid: "58975162"
  カレットを移動すると、<xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A>メソッド。 基本<xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>のナビゲーション バーの状態を更新するクラス。 セットを渡す<xref:Microsoft.VisualStudio.Package.DropDownMember>このメソッドにオブジェクト。 各オブジェクトは、ドロップダウン リスト内のエントリを表します。  
   
 ## <a name="the-contents-of-the-navigation-bar"></a>ナビゲーション バーの内容  
- ナビゲーション バーの種類の一覧とメンバーの一覧が通常含まれています。 種類の一覧には、現在のソース ファイル内のすべての種類が含まれています。 型名には、完全な名前空間情報が含まれます。 2 種類の c# コードの例を次に示します。  
+ ナビゲーション バーの種類の一覧とメンバーの一覧が通常含まれています。 種類の一覧には、現在のソース ファイル内のすべての種類が含まれています。 型名には、完全な名前空間情報が含まれます。 2 種類の C# コードの例を次に示します。  
   
 ```csharp  
 namespace TestLanguagePackage  

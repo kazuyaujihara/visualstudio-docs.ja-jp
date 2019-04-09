@@ -13,7 +13,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 20f4c2b4a876c35868b08378bda4daaf6d13c2e3
 ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/08/2019
 ms.locfileid: "55945847"
@@ -93,7 +93,7 @@ ms.locfileid: "55945847"
 
 1. Visual Studio での**ファイル**メニューの **新規** > **プロジェクト**します。
 
-2. いずれかを展開**Visual c#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
+2. いずれかを展開**Visual C#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
 
 3. 中央のペインで選択、 **Windows フォーム アプリ**プロジェクトの種類。
 

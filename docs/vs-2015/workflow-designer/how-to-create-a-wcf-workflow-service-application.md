@@ -1,30 +1,27 @@
 ---
 title: '方法: WCF ワークフロー サービス アプリケーションの作成 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 12d675ac-27d8-4d86-ba16-6f7688f8c841
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 8632d8cf942fe4a06f12d324fea1f6f567080981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0e7bf54f527a82bb59a8dc9248d3d9294a07aa59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228437"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963089"
 ---
-# <a name="how-to-create-a-wcf-workflow-service-application"></a>WCF ワークフロー サービス アプリケーションを作成する方法
+# <a name="how-to-create-a-wcf-workflow-service-application"></a>方法: WCF ワークフロー サービス アプリケーションを作成する
 [!INCLUDE[indigo1](../includes/indigo1-md.md)] ワークフロー サービス アプリケーションは、そのクライアントとの間でプロセスの境界を越えてメッセージを受け渡しする分散型の通信サービスです。 サービス側でのサービス コントラクトの実装は、.NET Framework 3.5 の従来のワークフロー サービスと同様に、[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] のワークフロー アクティビティを介して宣言形式で行います。  
   
 ### <a name="to-create-a-wcf-workflow-service-application"></a>WCF ワークフロー サービス アプリケーションを作成するには  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)] を起動します。  
+1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)]を起動します。  
   
 2.  **ファイル**メニューで、**新規**、し、**プロジェクト.**.  
   
@@ -46,5 +43,5 @@ ms.locfileid: "49228437"
 8.  プロジェクト テンプレートによって、サービス定義が XAML として作成されます。 [!INCLUDE[wfd1](../includes/wfd1-md.md)]のデザイン ビューが開かれ、<xref:System.Activities.Statements.Sequence> と <xref:System.ServiceModel.Activities.Receive> のアクティビティを含む <xref:System.ServiceModel.Activities.SendReply> アクティビティが表示されます。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: アクティビティの作成](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [方法: アクティビティを作成します。](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [ワークフロー プロジェクトの作成](../workflow-designer/creating-a-workflow-project.md)

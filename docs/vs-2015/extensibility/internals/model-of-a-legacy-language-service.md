@@ -27,7 +27,7 @@ ms.locfileid: "58977314"
 ## <a name="a-minimal-language-service"></a>最小言語サービス  
  最も基本的な言語サービスには、次の 2 つのオブジェクトが含まれています。  
   
-- *言語サービス*実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>インターフェイス。 言語サービスでは、名前、ファイル名拡張子、コード ウィンドウ マネージャー、および colorizer を含め、c# 言語に関する情報があります。  
+- *言語サービス*実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>インターフェイス。 言語サービスでは、名前、ファイル名拡張子、コード ウィンドウ マネージャー、および colorizer を含め、C# 言語に関する情報があります。  
   
 - *Colorizer*実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>インターフェイス。  
   

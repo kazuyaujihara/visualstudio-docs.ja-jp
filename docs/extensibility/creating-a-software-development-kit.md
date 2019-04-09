@@ -174,7 +174,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
     WindowsAppContainer 識別用のプロジェクト[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]アプリ。
 
-8. SupportPrefer32Bit:サポートされる値は"True"および"False"。 既定では"True です"。 MSBuild エラーが返されます、値が"False"に設定されている場合[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]プロジェクト (またはデスクトップ プロジェクトの場合の警告)、SDK を参照するプロジェクトがある Prefer32Bit が有効になっている場合。 Prefer32Bit の詳細については、[ビルド ページで、プロジェクト デザイナー (c#)](../ide/reference/build-page-project-designer-csharp.md)または[コンパイル ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)を参照してください。
+8. SupportPrefer32Bit:サポートされる値は"True"および"False"。 既定では"True です"。 MSBuild エラーが返されます、値が"False"に設定されている場合[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]プロジェクト (またはデスクトップ プロジェクトの場合の警告)、SDK を参照するプロジェクトがある Prefer32Bit が有効になっている場合。 Prefer32Bit の詳細については、[ビルド ページで、プロジェクト デザイナー (C#)](../ide/reference/build-page-project-designer-csharp.md)または[コンパイル ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)を参照してください。
 
 9. SupportedArchitectures:セミコロン区切りの SDK は、サポートされるアーキテクチャのリスト。 MSBuild では、使用中のプロジェクトで対象となる SDK のアーキテクチャがサポートされていない場合に警告が表示されます。 この属性が指定されていない場合 MSBuild にはこの種類の警告が表示されません。
 

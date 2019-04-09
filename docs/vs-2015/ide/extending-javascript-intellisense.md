@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54797448"
@@ -486,7 +486,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     ```  
   
-4.  appCode.js で、次のコードを入力します。 入力するときに、名前空間のアイコンに変更されたことが表示されます"{}"、c# で使用されているためです。  
+4.  appCode.js で、次のコードを入力します。 入力するときに、名前空間のアイコンに変更されたことが表示されます"{}"、C# で使用されているためです。  
   
      ![グリフのプロパティの使用例](../ide/media/js-intellisense-glyph-namespace.png "js_intellisense_glyph_namespace")  
   
