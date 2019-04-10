@@ -1,7 +1,7 @@
 ---
 title: デバッガーで実行中のプロセスのアタッチ |Microsoft Docs
 ms.custom: seodec18
-ms.date: 09/27/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,19 +28,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323095"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366407"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio デバッガーで実行中のプロセスへのアタッチ
 ローカルまたはリモート コンピューターで実行中のプロセスに、Visual Studio デバッガーをアタッチできます。 プロセスが実行されると、選択**デバッグ** > **プロセスにアタッチ**またはキーを押します**Ctrl**+**Alt** +**P**使用して、Visual Studio で、**プロセスにアタッチ**プロセスにデバッガーをアタッチするためのダイアログ。
 
 使用することができます**プロセスにアタッチ**をローカルまたはリモート コンピューターで実行中のアプリをデバッグするには、同時に複数のプロセスをデバッグ、Visual Studio で作成されていないアプリをデバッグまたはで Visual Studio から開始していないすべてのアプリをデバッグしますデバッガーをアタッチします。 たとえば、デバッガーなしのアプリを実行するいるし、例外が発生すると、アプリを実行しているプロセスにデバッガーをアタッチし、デバッグを開始します。
-
-Visual Studio で基本的なデバッグ方法の詳細については、次を参照してください。[デバッガーでのはじめ](../debugger/debugger-feature-tour.md)します。
 
 > [!TIP]
 > わからないを使用するかどうか**プロセスにアタッチ**デバッグ シナリオのでしょうか。 参照してください[デバッグ シナリオ共通](#BKMK_Scenarios)します。
@@ -94,19 +92,20 @@ IIS に配置されている ASP.NET アプリケーションのデバッグに�
 2. **接続の種類**べき**既定**のほとんどの場合。 **接続のターゲット**ボックスで、次のメソッドのいずれかを使用して、リモート コンピューターを選択します。
 
    - 次のドロップダウン矢印を選択**接続のターゲット**、ドロップダウン リストから、コンピューター名を選択します。
-   - コンピューター名を入力、**接続のターゲット**ボックス。
-   
-     ::: moniker range="vs-2017"
+   - コンピューター名を入力、**接続のターゲット**ボックス キーを押します**Enter**します。
 
-     > [!NOTE]
-     > リモート コンピューター名を使用して接続できない場合、IP を使用してお試しくださいし、ポートのアドレス (たとえば、 `123.45.678.9:4022`)。 4022 では、Visual Studio 2017 x64 リモート デバッガーの既定のポートです。 その他のリモート デバッガーのポート割り当てでは、次を参照してください。[リモート デバッガーのポートの割り当て](remote-debugger-port-assignments.md)します。
-
-     ::: moniker-end
+     Visual Studio が必要なポートの形式で表示されるコンピューター名に追加されることを確認します**\<リモート コンピューター名 >: ポート。**
 
      ::: moniker range=">= vs-2019"
 
      > [!NOTE]
      > リモート コンピューター名を使用して接続できない場合、IP を使用してお試しくださいし、ポートのアドレス (たとえば、 `123.45.678.9:4022`)。 4024 は、Visual Studio 2019 x64 リモート デバッガーの既定のポートです。 その他のリモート デバッガーのポート割り当てでは、次を参照してください。[リモート デバッガーのポートの割り当て](remote-debugger-port-assignments.md)します。
+
+     ::: moniker-end
+     ::: moniker range="vs-2017"
+
+     > [!NOTE]
+     > リモート コンピューター名を使用して接続できない場合、IP を使用してお試しくださいし、ポートのアドレス (たとえば、 `123.45.678.9:4022`)。 4022 では、Visual Studio 2017 x64 リモート デバッガーの既定のポートです。 その他のリモート デバッガーのポート割り当てでは、次を参照してください。[リモート デバッガーのポートの割り当て](remote-debugger-port-assignments.md)します。
 
      ::: moniker-end
 
@@ -129,7 +128,7 @@ IIS に配置されている ASP.NET アプリケーションのデバッグに�
    - すべてのユーザー アカウントで実行されているプロセスを検索するには、選択、**プロセスのすべてのユーザーを表示する**チェック ボックスをオンします。
 
      >[!NOTE]
-     >信頼関係のないユーザー アカウントによって所有されているプロセスにアタッチしようとすると、セキュリティ警告の確認ダイアログ ボックスが表示されます。 詳細については、次を参照してください。[セキュリティ警告: 信頼されていないユーザーによって所有されているプロセスにアタッチするのは危険です。以下の情報に関して疑わしい点がある場合や、不明な場合は、このプロセスにアタッチしないでください](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+     >信頼関係のないユーザー アカウントによって所有されているプロセスにアタッチしようとすると、セキュリティ警告の確認ダイアログ ボックスが表示されます。 詳細については、次を参照してください。[セキュリティ警告。信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。次の情報に関して疑わしい、または不明ながこのプロセスにアタッチしない](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)します。
 
 5. **にアタッチ**フィールドに、デバッグするコードの種類が表示されているかどうかを確認します。 既定の**自動**のほとんどの種類のアプリの動作を設定します。
 
@@ -146,7 +145,7 @@ IIS に配置されている ASP.NET アプリケーションのデバッグに�
 
 場合によって、リモート デスクトップ (ターミナル サービス) セッションでデバッグするときに、**選択可能なプロセス**リストは、すべての可能なプロセスを表示しません。 制限付きユーザー アカウントを持つユーザーとして Visual Studio を実行している場合、**選択可能なプロセス**リストは、セッション 0 で実行されているプロセスを表示しません。 サービスとを含むその他のサーバー プロセスにセッション 0 が使用される*w3wp.exe*します。 この問題を解決するには、管理者アカウントで [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を実行するか、ターミナル サービス セッションからではなくサーバー コンソールから [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を実行します。
 
-どちらの方法も実行できない場合、3 つ目の方法として、Windows コマンド ラインから `vsjitdebugger.exe -p <ProcessId>` を実行することによって、プロセスにアタッチできます。 プロセス ID は *tlist.exe* を使用して確認できます。 *tlist.exe* を入手するには、[WDK と WinDbg のダウンロード](/windows-hardware/drivers/download-the-wdk)に関するページで Windows 用のデバッグ ツールをダウンロードし、インストールします。
+どちらの方法も実行できない場合、3 つ目の方法として、Windows コマンド ラインから `vsjitdebugger.exe -p <ProcessId>` を実行することによって、プロセスにアタッチできます。 プロセスの ID を使用するかを調べる*tlist.exe*します。 *tlist.exe* を入手するには、[WDK と WinDbg のダウンロード](/windows-hardware/drivers/download-the-wdk)に関するページで Windows 用のデバッグ ツールをダウンロードし、インストールします。
 
 ## <a name="BKMK_reattach"></a> プロセスに再アタッチします。
 
@@ -163,7 +162,7 @@ IIS に配置されている ASP.NET アプリケーションのデバッグに�
 
 C++ で記述されたコードにデバッガーをアタッチするには、コードが `DebuggableAttribute`を生成する必要があります。 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) リンカー オプションを使ってリンクすると、これを自動的にコードに追加できます。
 
-クライアント側スクリプトのデバッグ、スクリプトのデバッグをする必要があります有効にする、ブラウザーで。 Chrome でクライアント側スクリプトをデバッグするには、次のように選択します。 **Webkit**として、コードの種類と、アプリの種類によっては、Chrome のすべてのインスタンスを閉じて、デバッグ モードでブラウザーを起動する必要があります (型`chrome.exe --remote-debugging-port=9222`コマンドラインから)。
+クライアント側スクリプトのデバッグ、スクリプトのデバッグをする必要があります有効にする、ブラウザーで。 Chrome でクライアント側スクリプトをデバッグするには、次のように選択します。**キットの Web**として、コードの種類と、アプリの種類によっては、Chrome のすべてのインスタンスを閉じて、デバッグ モードでブラウザーを起動する必要があります (型`chrome.exe --remote-debugging-port=9222`コマンドラインから)。
 
 Visual Studio で、アタッチする実行中のプロセスをすばやく選択するには、入力**Ctrl**+**Alt**+**P**の最初の文字を入力し、プロセスの名前。
 
@@ -172,8 +171,8 @@ Visual Studio で、アタッチする実行中のプロセスをすばやく選
 |ASP.NET 4 のリモート デバッグまたは IIS サーバー上の 4.5|リモート ツールを使用し、**プロセスにアタッチします。**|*w3wp.exe*|参照してください[リモート リモート IIS コンピューター上の ASP.NET のデバッグ](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |ASP.NET Core、IIS サーバー上のリモート デバッグ|リモート ツールを使用し、**プロセスにアタッチします。**|*dotnet.exe*|アプリの展開を参照してください。 [Publish to IIS](https://docs.asp.net/en/latest/publishing/iis.html)します。 デバッグについては、次を参照してください[リモート IIS コンピューター上のリモート デバッグ ASP.NET Core。](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |サポートされているアプリの種類をローカルの IIS サーバー上のクライアント側スクリプトをデバッグします。 |使用**プロセスにアタッチします。**|*chrome.exe*、 *MicrosoftEdgeCP.exe*、または*iexplore.exe*|スクリプトのデバッグを有効にする必要があります。 Chrome、デバッグ モードで Chrome も実行する必要があります**Webkit コード**で、**にアタッチ**フィールド。|
-|ローカル コンピューター上の C#、Visual Basic、または C++ アプリをデバッグします。|いずれかを使用して、[標準デバッグ](../debugger/debugger-feature-tour.md)または**プロセスにアタッチします。**|*\<アプリ名>.exe*|ほとんどのシナリオで標準的なデバッグを使用していないと**プロセスにアタッチ**します。|
-|Windows デスクトップ アプリのリモート デバッグ|リモート ツール|N/A| 参照してください[C# または Visual Basic アプリのリモート デバッグ](../debugger/remote-debugging-csharp.md)または[C++ アプリのリモート デバッグ](../debugger/remote-debugging-cpp.md)|
+|ローカル コンピューター上の c#、Visual Basic、または C++ アプリをデバッグします。|いずれかの標準的なデバッグを使用して (**F5**) または**プロセスにアタッチします。**|*\<appname>.exe*|ほとんどのシナリオで標準的なデバッグを使用していないと**プロセスにアタッチ**します。|
+|Windows デスクトップ アプリのリモート デバッグ|リモート ツール|N/A| 参照してください[c# または Visual Basic アプリのリモート デバッグ](../debugger/remote-debugging-csharp.md)または[C++ アプリのリモート デバッグ](../debugger/remote-debugging-cpp.md)|
 |デバッガーなしのアプリを起動した後、ローカル コンピューター上の ASP.NET アプリをデバッグします。|使用**プロセスにアタッチします。**|*iiexpress.exe*|これは、アプリをロードすると便利な可能性がありますより高速など (たとえば) プロファイリングを行う場合。 |
 |サーバー プロセスでその他のサポートされているアプリの種類をデバッグします。|サーバーがリモートの場合は、リモート ツールを使用し、**プロセスにアタッチします。**|*chrome.exe*、 *iexplore.exe*、または他のプロセス|必要に応じて、リソース モニターを使用して、プロセスを識別できるようにします。 「[Remote debugging](../debugger/remote-debugging.md)」(リモート デバッグ) を参照してください。|
 |ユニバーサル Windows アプリ (UWP) や OneCore、HoloLens、IoT アプリのリモート デバッグします。|インストールされているアプリ パッケージのデバッグ|N/A|参照してください[、インストールされているアプリ パッケージをデバッグ](debug-installed-app-package.md)を使用してではなく**プロセスにアタッチします。**|
@@ -198,7 +197,7 @@ Visual Studio デバッガー (ブレークポイントにヒット) などの�
 
  デバッガーがコードの種類へのアタッチに失敗した理由に関する詳細な情報を設定する場合は、コードの種類のみに再アタッチしてみてください。
 
- **ある種類のコードへのアタッチに失敗した理由を確認するには**
+ **コードの種類をアタッチが失敗した理由に関する特定の情報を入手するには**
 
 1.  プロセスからデタッチします。 **デバッグ**メニューの **すべてデタッチ**します。
 
@@ -219,5 +218,5 @@ Visual Studio デバッガー (ブレークポイントにヒット) などの�
 ## <a name="see-also"></a>関連項目
 
 - [複数プロセスをデバッグする](../debugger/debug-multiple-processes.md)
-- [Just-In-Time デバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [Just-in-time デバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [リモート デバッグ](../debugger/remote-debugging.md)

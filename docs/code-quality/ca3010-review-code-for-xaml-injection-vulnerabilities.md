@@ -1,5 +1,5 @@
 ---
-title: CA3010:XAML インジェクションの脆弱性の確認コード
+title: CA3010:XAML インジェクションの脆弱性のコード レビュー
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d8a94dbda7cbf61ac918025aee176cb95781b2
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: ea53f5e0cddf1dc6c6caf4c7fcfb79af52ce354e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018677"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365017"
 ---
-# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010:XAML インジェクションの脆弱性の確認コード
+# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010:XAML インジェクションの脆弱性のコード レビュー
 
 |||
 |-|-|
@@ -28,7 +28,7 @@ ms.locfileid: "59018677"
 
 ## <a name="cause"></a>原因
 
-信頼されていない可能性のある HTTP 要求の入力に達すると、 <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> Load メソッド。
+信頼されていない可能性のある HTTP 要求の入力に達すると、 <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> Load メソッド。
 
 ## <a name="rule-description"></a>規則の説明
 

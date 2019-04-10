@@ -116,7 +116,7 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
  **注:** によって返される COLORREF 値**GetVSSysColorEx()** だけ R、G を含むテーマの色の B コンポーネント。 テーマのエントリは、透明度を使用して、アルファ チャネル値を返す前に破棄されます。 したがって、関心のある環境の色を透過なチャネルが重要となる場所で使用する場合は、このトピックの後半の説明に従って IVsUIShell2::GetVSSysColorEx ではなく IVsUIShell5.GetThemedColor を使用する必要があります。
 
 ##### <a name="from-managed-code"></a>マネージ コードから
- ネイティブ コード VSColor service へのアクセスはとても簡単です。 マネージ コードで作業している場合、サービスを使用する方法を決定するはたいへん。 念頭に、このプロセスを示す c# コード スニペットを示します。
+ ネイティブ コード VSColor service へのアクセスはとても簡単です。 マネージ コードで作業している場合、サービスを使用する方法を決定するはたいへん。 念頭に、このプロセスを示す C# コード スニペットを示します。
 
 ```
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)

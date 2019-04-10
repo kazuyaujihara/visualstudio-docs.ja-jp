@@ -26,16 +26,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15de24a35e410bec38e5b70813285440aaa05de4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3aa277cca1d4c655f2a2894ff9c8ffce83474016
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914972"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789862"
 ---
 # <a name="understand-build-configurations"></a>ビルド構成について
 
-異なる種類のビルドに使用できるように、ソリューションおよびプロジェクト プロパティの異なる構成を保存することができます。 構成を作成、選択、変更、または削除するには、**構成マネージャー**を使用できます。 構成マネージャーを開くには、メニュー バーで、**[ビルド]** > **[構成マネージャー]** の順にクリックするか、**[クイック起動]** ボックスに「**構成**」と入力します。 また、**[標準]** ツール バーの **[ソリューション構成]** ボックスの一覧を使用して構成を選択することも、**[構成マネージャー]** を開くこともできます。
+異なる種類のビルドに使用できるように、ソリューションおよびプロジェクト プロパティの異なる構成を保存することができます。 構成を作成、選択、変更、または削除するには、**構成マネージャー**を使用できます。 それを開くには、メニュー バーで、**[ビルド]** > **[構成マネージャー]** を選択するか、検索ボックスに「**構成**」と入力します。 また、**[標準]** ツール バーの **[ソリューション構成]** ボックスの一覧を使用して構成を選択することも、**[構成マネージャー]** を開くこともできます。
 
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac でのビルド構成](/visualstudio/mac/configurations)に関するページを参照してください。

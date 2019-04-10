@@ -1,8 +1,10 @@
 ---
 title: Visual Basic を使用して Windows フォーム アプリを作成する
 description: Visual Studio で Visual Basic を使用して Windows フォーム アプリを作成する方法の詳細な手順を説明します。
-ms.date: 12/04/2017
-ms.topic: conceptual
+ms.date: 03/23/2019
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
@@ -11,32 +13,82 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 113493489e62a991e56f626e613c4ef0d76c0250
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 511305bd335bfb982590db2c52c35fabbfc7b841
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923774"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856488"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Visual Studio で Visual Basic を使用して Windows フォーム アプリを作成する
 
 ここでは、Visual Studio 統合開発環境 (IDE) の概要を示し、Windows ベースのユーザー インターフェイス (UI) を備えた簡単な Visual Basic アプリケーションを作成します。
 
+::: moniker range="vs-2017"
+
 Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+
+> [!NOTE]
+> このチュートリアルの一部のスクリーン ショットではダーク テーマが使用されています。 ダーク テーマを使用していないが、使用したい場合は、その方法について「[Visual Studio IDE とエディターのカスタマイズ](../ide/quickstart-personalize-the-ide.md)」ページを参照してください。
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
 まず、Visual Basic アプリケーション プロジェクトを作成します。 このプロジェクトの種類には、必要とするすべてのテンプレート ファイルが付属していますので、何も追加する必要はありません。
 
+::: moniker range="vs-2017"
+
 1. Visual Studio 2017 を開きます。
 
-2. 上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+2. 上部のメニュー バーから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
 3. 左側のウィンドウの **[新しいプロジェクト]** ダイアログ ボックスで、**[Visual Basic]** を展開し、**[Windows デスクトップ]** を選択します。 中央のウィンドウで、**[Windows フォーム アプリケーション (.NET Framework)]** を選択します。 ファイルに `HelloWorld` という名前を付けます。
 
      **[Windows フォーム アプリケーション (.NET Framework)]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスを取り消し、上部のメニュー バーで **[ツール]** > **[ツールと機能を取得]** の順に選択します。 Visual Studio インストーラーが起動します。 **.NET デスクトップ開発**ワークロードを選択し、**[変更]** を選択します。
 
      ![Visual Studio インストーラーの .NET Core ワークロード](../ide/media/install-dot-net-desktop-env.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Visual Studio 2019 を開きます。
+
+1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+
+   ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*Windows フォーム*」と入力またはタイプします。 次に、言語のリストから **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
+
+   言語とプラットフォームのフィルターを適用してから、**[Windows フォーム アプリ (.NET Framework)]** テンプレートを選択し、**[次へ]** を選択します。
+
+   ![Windows フォーム アプリ (.NET Framework) 用の Visual Basic テンプレートを選択する](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > **[Windows フォーム アプリ (.NET Framework)]** テンプレートが表示されない場合は、**[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、**[さらにツールと機能をインストールする]** リンクを選択します。
+   >
+   > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > 次に、Visual Studio インストーラーで、**[.NET デスクトップの開発]** ワークロードを選択します。
+   > 
+   > ![Visual Studio インストーラーの .NET Core ワークロード](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、**[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
+
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*HelloWorld*」とタイプまたは入力します。 次に、**[作成]** を選択します。
+
+   ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'HelloWorld' という名前を付けます。](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+
+   Visual Studio によってその新しいプロジェクトが開かれます。
+
+::: moniker-end
 
 ## <a name="create-the-application"></a>アプリケーションを作成する
 
@@ -48,16 +100,17 @@ Visual Basic プロジェクト テンプレートを選択し、ファイルに
 
      ![[ツールボックス] をクリックして [ツールボックス] ウィンドウを開く](../ide/media/vb-toolbox-toolwindow.png)
 
-     (**ツールボックス**のスライド アウト オプションが表示されない場合は、メニュー バーから開くことができます。 そのためには、**[ビュー]** > **[ツールボックス]** をクリックします。 または、**Ctrl**+**Alt**+**X** キーを押します)。
+     (**[ツールボックス]** フライアウト オプションが表示されない場合は、**Ctrl** + **Alt** + **X** キーを押して開くことができます。)
 
 2. **[ピン設定]** アイコンをクリックして、**[ツールボックス]** ウィンドウをドッキングします。
 
      ![[ツールボックス] ウィンドウを IDE にピン留めする [ピン設定] アイコンをクリックします。](../ide/media/vb-pin-the-toolbox-window.png)
+
 3. **[ボタン]** コントロールをクリックし、フォームまでドラッグします。
 
      ![フォームにボタンを追加する](../ide/media/vb-add-a-button-to-form1.png)
 
-4. **[プロパティ]** ウィンドウの **[外観]** セクションで、`Click this` と入力し、**Enter** キーを押します。
+4. **[プロパティ]** ウィンドウの **[外観]** セクション (または **[フォント]** セクション) で、`Click this` と入力し、**Enter** キーを押します。
 
      ![フォーム上のボタンにテキストを追加する](../ide/media/vb-button-control-text.png)
 
@@ -81,7 +134,7 @@ Visual Basic プロジェクト テンプレートを選択し、ファイルに
 
       (あるいは、**[ソリューション エクスプローラー]** で **[Form1.vb]** を展開し、**[Form1]** をクリックします)。
 
-2. **[Form1.vb]** ウィンドウの **Private Sub** 行と **End Sub** 行の間に、「`lblHelloWorld.Text = "Hello World!"`」と入力するか、貼り付けます。
+2. **Form1.vb** ウィンドウで、**Private Sub** 行と **End Sub** 行の間 (または **Public Class Form1** 行と **End Class** 行の間) に、次のコードを入力します。
 
      ![フォームにコードを追加する](../ide/media/vb-add-code-to-the-form.png)
 
@@ -101,5 +154,5 @@ Visual Basic プロジェクト テンプレートを選択し、ファイルに
 
 ## <a name="see-also"></a>関連項目
 
-* [クイック スタート:Visual Studio で Visual Basic を使用してコンソール アプリを作成する](quickstart-visual-basic-console.md)
+* [クイック スタート: Visual Studio で Visual Basic を使用してコンソール アプリを作成する](quickstart-visual-basic-console.md)
 * [Visual Basic IntelliSense について](visual-basic-specific-intellisense.md)

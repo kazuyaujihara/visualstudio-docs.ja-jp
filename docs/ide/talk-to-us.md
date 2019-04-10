@@ -1,6 +1,6 @@
 ---
 title: ご意見
-ms.date: 10/09/2018
+ms.date: 03/30/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -11,12 +11,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 038b094949a66fef0bb07fc605e069a441913ff5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953520"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857139"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 製品フィードバック
 
@@ -24,11 +26,11 @@ ms.locfileid: "56953520"
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Visual Studio に関する問題を報告する方法
 
-Visual Studio を使用していて問題 &mdash; クラッシュ、パフォーマンスの低下、予期しない動作など &mdash; が発生した場合は、**[問題を報告する]** ツールを使ってお知らせください。 Visual Studio で、**[クイック起動]** の横にあるフィードバック アイコンをクリックするか、メニュー バーで **[ヘルプ]** > **[フィードバックの送信]** > **[問題の報告]** の順に選択します。 次に、Visual Studio によって[開発者コミュニティ](https://developercommunity.visualstudio.com) ページがブラウザーで開かれます。ここにサインインして問題を報告することができます。 詳細については、「[Visual Studio で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」を参照してください。
+Visual Studio を使用していて問題 &mdash; クラッシュ、パフォーマンスの低下、予期しない動作など &mdash; が発生した場合は、**[問題を報告する]** ツールを使ってお知らせください。 Visual Studio で、検索ボックスの横にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** > **[フィードバックの送信]** > **[問題の報告]** の順に選択します。 次に、Visual Studio によって[開発者コミュニティ](https://developercommunity.visualstudio.com) ページがブラウザーで開かれます。ここにサインインして問題を報告することができます。 詳細については、「[Visual Studio で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」を参照してください。
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Visual Studio の機能に関するご提案
 
-改善できる点がありましたら、ぜひご連絡ください。 Visual Studio のメニュー バーから、**[ヘルプ]** > **[フィードバックの送信]** > **[提案の送信]** の順に選択します。 次に、Visual Studio によって[開発者コミュニティ](https://developercommunity.visualstudio.com) ページがブラウザーで開かれます。ここにサインインしてアイデアを共有することができます。 詳細については、[Visual Studio 2017 用の機能の提案](suggest-a-feature.md)に関連するページをご覧ください。
+改善できる点がありましたら、ぜひご連絡ください。 Visual Studio のメニュー バーから、**[ヘルプ]** > **[フィードバックの送信]** > **[提案の送信]** の順に選択します。 次に、Visual Studio によって[開発者コミュニティ](https://developercommunity.visualstudio.com) ページがブラウザーで開かれます。ここにサインインしてアイデアを共有することができます。 詳細については、[Visual Studio 用の機能の提案](suggest-a-feature.md)に関連するページをご覧ください。
 
 ### <a name="rate-this-product"></a>この製品を評価する
 
@@ -36,7 +38,7 @@ Visual Studio を使用していて問題 &mdash; クラッシュ、パフォー
 
 ## <a name="i-want-to-contact-microsoft-support"></a>Microsoft サポートに問い合わせる
 
-Visual Studio のサポート情報については、[サポートのライフ サイクルとサービス](/visualstudio/productinfo/vs-servicing-vs)に関するページを参照してください。
+Visual Studio のサポート情報については、[製品のライフ サイクルとサービス](/visualstudio/productinfo/vs-servicing-vs)に関するページを参照してください。
 
 その他の Microsoft 製品とサービスについては、オンラインヘルプの「[Microsoft サポート](https://go.microsoft.com/fwlink/?LinkID=99019)」を参照してください。
 
@@ -55,10 +57,10 @@ Microsoft サポート サービスは、当時最新だった価格、条項、
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Visual Studio ドキュメントの品質向上にご協力ください
 
-ページの下部にある **[このページは役に立ちましたか]** フィードバック ボタンをお使いください。 このボタンは、すべてのドキュメント ページに表示されます。 同じようにページの下部にある **[Sign in to give documentation feedback]\(サインインしてドキュメントのフィードバックを送る\)** ボタンを使用して、[docs.microsoft.com](https://docs.microsoft.com/visualstudio/) の任意の Visual Studio ページにフィードバックを追加することもできます。
+ページの下部にある **[このページは役に立ちましたか]** フィードバック ボタンをお使いください。 このボタンは、すべてのドキュメント ページに表示されます。 または、GitHub アカウントを使用して、[docs.microsoft.com](https://docs.microsoft.com/visualstudio/) の任意の Visual Studio ページにフィードバックを追加できます。同じようにページの下部にある **[Sign in to give documentation feedback]\(サインインしてドキュメントのフィードバックを送る\)** ボタンを選択してください。
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)
-* [Developer Community](https://developercommunity.visualstudio.com)
+* [Visual Studio で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)
+* [開発者コミュニティ](https://developercommunity.visualstudio.com)
 * [開発者コミュニティのデータのプライバシー](developer-community-privacy.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268543"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790759"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Visual Studio 拡張機能の検索と使用
 
@@ -33,7 +33,7 @@ Visual Studio 拡張機能は、Visual Studio 内で実行されるコード パ
 
 ::: moniker range=">=vs-2019"
 
-**[拡張機能の管理]** ダイアログ ボックスを使用して、Visual Studio の拡張機能をインストールおよび管理します。 **[拡張機能の管理]** ダイアログを開くには、**[拡張機能]** > **[拡張機能の管理]** を選択します。 または、**クイック起動**検索ボックスに「**拡張機能**」と入力し、**[拡張機能の管理]** を選択します。
+**[拡張機能の管理]** ダイアログ ボックスを使用して、Visual Studio の拡張機能をインストールおよび管理します。 **[拡張機能の管理]** ダイアログを開くには、**[拡張機能]** > **[拡張機能の管理]** を選択します。 または、検索ボックスに「**拡張機能**」と入力し、**[拡張機能の管理]** を選択します。
 
 ::: moniker-end
 

@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794242"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366615"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>コード エディターとテキスト エディターでのコードの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,17 +122,17 @@ Visual Studio エディターには、コードの記述と管理を容易にす
 
  ![[進む] と [戻る] のナビゲーション ボタン](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- また、コード ウィンドウの強化されたスクロール バーを使用すると、コード全体を見渡すことができます。 マップ モードでカーソルを移動して詳細については、スクロール バーを下に、コードのプレビューを参照してくださいを参照してください[方法。ScrollBar のカスタマイズによるコードの追跡](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+ また、コード ウィンドウの強化されたスクロール バーを使用すると、コード全体を見渡すことができます。 マップ モードでカーソルを移動して詳細については、スクロール バーを下に、コードのプレビューを参照してくださいを参照してください[方法。Scrollbar のカスタマイズによるコードの追跡](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)します。  
 
  次のコマンドは、コード特有のナビゲーションに使用できます。  
 
 |||  
 |-|-|  
 |\<行番号> にジャンプ|(**に編集/移動**または ctrl + g)。アクティブ ドキュメント内の特定の行番号に移動します。|  
-|[移動]|(**に編集/移動**または CTRL +,)。アクティブなソリューションでシンボルまたはファイルを検索します。 これにより、クエリから一致結果の適切なセットを選択できます。 シンボルを複数のキーワードに分ける Camel 形式およびアンダースコア文字を利用することで、シンボルに含まれているキーワードを検索できます。|  
-|[すべての参照の検索]|(コンテキスト メニュー): ソリューション内で選択された要素へのすべての参照を検出します。|  
+|移動|(**に編集/移動**または CTRL +,)。アクティブなソリューションでシンボルまたはファイルを検索します。 これにより、クエリから一致結果の適切なセットを選択できます。 シンボルを複数のキーワードに分ける Camel 形式およびアンダースコア文字を利用することで、シンボルに含まれているキーワードを検索できます。|  
+|[すべての参照の検索]|(コンテキスト メニュー):ソリューション内で選択された要素へのすべての参照を検出します。|  
 |[定義へ移動]|(コンテキスト メニューまたは F12):選択した要素の定義を検索します。|  
-|定義をここに表示|(コンテキスト メニューまたは alt + f12):選択した要素の定義を検出し、ポップアップ ウィンドウに表示されます。 詳細については、「[方法: [定義をここに表示] を使用してコードを表示および編集する (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)」を参照してください。|  
+|定義をここに表示|(コンテキスト メニューまたは alt + f12):選択した要素の定義を検出し、ポップアップ ウィンドウに表示されます。 詳細については、「[方法 :表示およびピークの定義 (Alt + F12) を使用してコードを編集](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)します。|  
 |次のメソッド、前のメソッド|(**[編集]、[次のメソッド]、[前のメソッド]**): Visual Basic コード ファイル内でカーソルをメソッド間で移動するには、これらのコマンドを使用します。|  
 |参照の強調表示|ソース コードでシンボルをクリックすると、ドキュメント内にあるそのシンボルのすべてのインスタンスが強調表示されます。 強調表示されるシンボルとしては、宣言や参照のほかに、 **[すべての参照の検索]** によって返されるその他多数のシンボルも対象となります。 これらには、クラス、オブジェクト、変数、メソッド、プロパティなどの名前があります。 Visual Basic コードでは、多くの制御構造のキーワードも強調表示されます。 強調表示された次のシンボル、または前のシンボルに移動するには、Ctrl キーと Shift キーを押しながら下方向キーを押すか、Ctrl キーと Shift キーを押しながら上方向キーを押します。 強調表示色を変更するには、 **[ツール]、[オプション]、[環境]、[フォントおよび色]、[強調表示された参照]** を使用します。|  
 |コード関連情報の確認|コード エディターの CodeLens を使用すると、特定のコードに関する情報 (コードの変更内容、変更者、参照、バグ、作業項目、コード レビュー、単体テストの状態など) を確認できます。 Visual Studio Enterprise with Team Foundation Server を使用する場合、CodeLens はヘッドアップ ディスプレイのように機能します。 「[コード変更およびその他の履歴の検索](../ide/find-code-changes-and-other-history-with-codelens.md)」を参照してください。|  
@@ -174,7 +174,7 @@ Visual Studio の [移動] コマンドは、コード ファイル、ファイ�
 
 ### <a name="filter-your-search"></a>検索のフィルター処理
 
-検索をシンボル コードのみに制限するには、[移動] クエリの前に "@" 文字を入れます。 たとえば、`@application` を検索する場合、[移動] には "application" という単語があるクラスのみが表示されます。
+[移動] クエリの前に検索をシンボル コードのみを制限するため、"\@"文字です。 たとえば、`@application` を検索する場合、[移動] には "application" という単語があるクラスのみが表示されます。
 
 コードで Camel 形式の規則を使用する場合は、コード要素名の大文字だけを入力すると、コードを速く検索することができます。 たとえば、コードに `ViewSwitcher` と呼ばれるコンポーネントがある場合は、[移動] ウィンドウで名前の大文字 (`"VS"`) を入力するだけで、検索することができます。
 
@@ -183,7 +183,7 @@ Visual Studio の [移動] コマンドは、コード ファイル、ファイ�
 この機能は、コードに長い名前がある場合に特に便利です。
 
 ## <a name="customize-the-editor"></a>エディターのカスタマイズ  
- **インポートおよびエクスポート設定**: 設定を別の開発者と共有する、標準に準拠しているかを使用して Visual Studio の既定の設定に戻りますが、設定されている、**インポートおよびエクスポート設定ウィザード**で、**ツール**メニュー。 全般設定または言語固有とプロジェクト固有の設定を変更することができます。  
+ **インポートおよびエクスポート設定**:設定を別の開発者と共有する、標準に準拠しているかを使用して Visual Studio の既定の設定に戻りますが、設定されている、**インポートおよびエクスポート設定ウィザード**上、**ツール**メニュー。 全般設定または言語固有とプロジェクト固有の設定を変更することができます。  
 
  **キーボード マップ**:新しいホット キーを定義したり、既存のツール/オプション/環境/キーボード設定を再定義することができます。 ホット キーの詳細については、「[既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md)」を参照してください。  
 
@@ -191,13 +191,13 @@ Visual Studio の [移動] コマンドは、コード ファイル、ファイ�
 
 -   [Visual Basic の設定](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Visual C# 開発環境の使用](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [C#、Visual Studio 開発環境を使用します。](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
 -   [[オプション]、[テキスト エディター]、[JavaScript]、[書式設定]](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>このセクションの内容  
 
--   [テキストの検索と置換](../ide/finding-and-replacing-text.md)  
+-   [Finding and Replacing Text](../ide/finding-and-replacing-text.md)  
 
 -   [エンコーディングと改行](../ide/encodings-and-line-breaks.md)  
 
@@ -207,13 +207,13 @@ Visual Studio の [移動] コマンドは、コード ファイル、ファイ�
 
 -   [生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)  
 
--   [IntelliSense の使用](../ide/using-intellisense.md)  
+-   [Using IntelliSense](../ide/using-intellisense.md)  
 
 -   [エディターのカスタマイズ](../ide/customizing-the-editor.md)  
 
--   [方法 : ScrollBar のカスタマイズによるコードの追跡](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+-   [方法: Scrollbar のカスタマイズによるコードを追跡します。](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [方法: [定義をここに表示] を使用してコードを表示および編集する (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [方法: 表示およびピークの定義 (Alt + F12) を使用してコードを編集](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [電球を使ってクイック操作をする](../ide/perform-quick-actions-with-light-bulbs.md)  
 

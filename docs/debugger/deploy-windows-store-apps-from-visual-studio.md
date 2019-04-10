@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043766"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790382"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio から UWP アプリを展開する
 
@@ -28,7 +28,7 @@ Visual Studio の配置機能は、ビルドし、ターゲット デバイス�
 
 - ターゲットがリモート デバイスの場合、Visual Studio は必要なファイルをリモート コンピューターにコピーしてから、そのデバイス上でアプリを登録します。
 
-アプリのデバッグを、Visual Studio から **[デバッグの開始]** オプション (キーボード:F5 キーを押して)、または**デバッグなしで開始**オプション (キーボード。CTRL + F5 アプリを手動で配置することも可能です。 次のシナリオでは、手動の配置は有効です。
+**[デバッグの開始]** オプション (キーボード: F5) または **[デバッグなしで開始]** オプション (キーボード: CTRL + F5) を使用して Visual Studio からアプリをデバッグする場合、展開は自動的に行われます。 アプリを手動で配置することも可能です。 次のシナリオでは、手動の配置は有効です。
 
 - ローカル コンピューターまたはリモート コンピューターで行う臨時のテスト。
 
@@ -76,7 +76,7 @@ Windows 10 のリモート デバイスで有効にする必要があります[�
 
     **リモート接続** ダイアログ ボックスでは、ローカル ネットワークのサブネットとイーサネット ケーブルによって Visual Studio コンピューターに直接接続されている任意のデバイスで、デバイスが表示されます。
 
-   **JavaScript または Visual C++ のプロジェクト ページにあるリモート デバイスを指定**
+   **Visual C プロジェクトのページで、リモート デバイスを指定します。**
 
    ![C&#43; &#43;リモート デバッグのプロパティをプロジェクト](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,15 +104,15 @@ Windows 10 のリモート デバイスで有効にする必要があります[�
 
 - C#と Visual Basic のデバッグ プロパティ ページで、クリア、**を許可するネットワーク Loopback**チェック ボックスをオンします。
 
-- JavaScript およびデバッグ プロパティ ページで、 **[ネットワーク ループバックの許可]** の値を **[いいえ]** に設定します。
+- C++ デバッグのプロパティ ページで、設定、**を許可するネットワーク Loopback**値を**いいえ**します。
 
-**起動しないが、開始時に、コードをデバッグ (C#および Visual Basic)/アプリケーションを起動 (JavaScript および C++)**
+**起動しないが、開始時に、コードをデバッグ (C#および Visual Basic)/アプリケーションの起動 (C++)**
 
 アプリが起動した場合はデバッグ セッションを自動駅に開始するように、配置を構成するには
 
 - C#と Visual Basic のデバッグ プロパティ ページで確認してください、**起動しないが、開始時に、コードをデバッグ**チェック ボックスをオンします。
 
-- JavaScript およびデバッグ プロパティ ページで、 **[アプリケーションの起動]** の値を **[はい]** に設定します。
+- C++ デバッグのプロパティ ページで、設定、**アプリケーションの起動**値を**はい**します。
 
 ## <a name="see-also"></a>関連項目
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41acd93dc89d84fa3fa96bc1228c57271f1fc21d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957469"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866693"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>アセンブリおよびマニフェストへの署名の管理
 
@@ -31,7 +31,7 @@ Visual Basic プロジェクトと C# プロジェクトのアセンブリへの
 Visual C++ プロジェクトのアセンブリへの署名については、[厳密名アセンブリ (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli) に関する記事を参照してください。
 
 > [!NOTE]
-> 厳密な名前の署名は、アセンブリのリバース エンジニアリングに対して保護されません。 リバース エンジニアリングに対して保護する方法については、「[Dotfuscator Community Edition (CE)](dotfuscator/index.md)」を参照してください。
+> 厳密な名前の署名は、アセンブリのリバース エンジニアリングに対して保護されません。 リバース エンジニアリングに対して保護する方法については、「[Dotfuscator Community](dotfuscator/index.md)」を参照してください。
 
 ## <a name="asset-types-and-signing"></a>アセットの型と署名
 
@@ -57,7 +57,7 @@ Visual C++ プロジェクトのアセンブリへの署名については、[�
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Visual Studio 内でアセンブリに署名する方法
 
-**[署名]** タブを使用してアプリケーションまたはコンポーネントに署名するには、プロジェクトのプロパティ ウィンドウに移動します (**ソリューション エクスプローラー**でプロジェクト ノードを右クリックして **[プロパティ]** を選択するか、**[クイック起動]** ウィンドウに**プロジェクトのプロパティ**を入力するか、**ソリューション エクスプローラー**内で **Alt** + **Enter** キーを押す)。 **[署名]** タブを選択し、**[アセンブリの署名]** チェック ボックスをオンにします。
+[プロジェクトのプロパティ] ウィンドウの **[署名]** タブを使用して、アプリケーションまたはコンポーネントに署名します (**ソリューション エクスプローラー**でプロジェクト ノードを右クリックし、**[プロパティ]** を選択します)。 **[署名]** タブを選択し、**[アセンブリの署名]** チェック ボックスをオンにします。
 
 キー ファイルを指定します。 新しいキー ファイルを作成する場合は、新しいキー ファイルは必ず *.pfx* 形式で作成されます。 新しいファイルの名前とパスワードが必要です。
 

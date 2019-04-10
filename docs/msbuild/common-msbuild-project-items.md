@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 394a986963ad1d1690535aecbb3355bdbe382516
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610347"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897687"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 項目には、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のすべてのプロジェクトの種類に共通のものがあります。 これらの項目は、*Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
@@ -46,9 +46,9 @@ ms.locfileid: "56610347"
 |項目メタデータの名前|説明|
 |---------------|-----------------|
 |name|省略可能な文字列。 コンポーネントの表示名を指定します。|
-|GUID|省略可能な文字列。 コンポーネントの GUID を {12345678-1234-1234-1234-1234567891234} の形式で指定します。|
-|VersionMajor|省略可能な文字列。 コンポーネントのメジャー バージョン番号を指定します。 たとえば、完全なバージョン番号が "5.46" である場合、"5" を指定します。|
-|VersionMinor|省略可能な文字列。 コンポーネントのマイナー バージョン番号を指定します。 たとえば、完全なバージョン番号が "5.46" である場合、"46" を指定します。|
+|GUID|必須の文字列。 コンポーネントの GUID を {12345678-1234-1234-1234-1234567891234} の形式で指定します。|
+|VersionMajor|必須の文字列。 コンポーネントのメジャー バージョン番号を指定します。 たとえば、完全なバージョン番号が "5.46" である場合、"5" を指定します。|
+|VersionMinor|必須の文字列。 コンポーネントのマイナー バージョン番号を指定します。 たとえば、完全なバージョン番号が "5.46" である場合、"46" を指定します。|
 |LCID|省略可能な文字列。 コンポーネントの LocaleID です。|
 |WrapperTool|省略可能な文字列。 コンポーネントで使用されるラッパー ツールの名前を指定します (たとえば、"tlbimp")。|
 |Isolated|省略可能なブール値。 コンポーネントが Reg-Free コンポーネントであるかどうかを指定します。|
@@ -76,7 +76,7 @@ ms.locfileid: "56610347"
 |name|省略可能な文字列。 参照の表示名を指定します。|
 |Project|省略可能な文字列。 参照の GUID を {12345678-1234-1234-1234-1234567891234} の形式で指定します。|
 |Package|省略可能な文字列。 参照されるプロジェクト ファイルのパスを指定します。|
-|ReferenceOutputAssembly|省略可能なブール値。 `false` を設定した場合、このプロジェクトの [Reference](#Reference) として参照されたプロジェクトの出力は含まれませんが、このプロジェクトをビルドする前の他のプロジェクトのビルドは保証されます。 既定値は `true` です。|
+|ReferenceOutputAssembly|省略可能なブール値。 `false` を設定した場合、このプロジェクトの [Reference](#reference) として参照されたプロジェクトの出力は含まれませんが、このプロジェクトをビルドする前の他のプロジェクトのビルドは保証されます。 既定値は `true` です。|
 
 ### <a name="compile"></a>Compile
  コンパイラのソース ファイルを表します。

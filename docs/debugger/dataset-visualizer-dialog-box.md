@@ -9,8 +9,6 @@ dev_langs:
 - VB
 - FSharp
 - C++
-- JScript
-- SQL
 helpviewer_keywords:
 - datasets [Visual Studio], Dataset Visualizer dialog box
 - visualizers, Dataset Visualizer dialog box
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 251e6ca5d1d9985defc8dff1dc6be95f3a088bbe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626324"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366992"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>[DataSet ビジュアライザー] ダイアログ ボックス
 DataSet ビジュアライザーを使用すると、DataSet、DataTable、DataView、または DataViewManager オブジェクトの内容を表示できます。 このビジュアライザーにアクセスするには、デバッガー変数ウィンドウまたは DataTip 内の各オブジェクトに対応する [値] の隣に表示される、虫眼鏡アイコンをクリックします。
@@ -39,6 +37,6 @@ DataSet ビジュアライザーを使用すると、DataSet、DataTable、DataV
 ## <a name="see-also"></a>関連項目
 
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
-- [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)
+- [カスタム ビジュアライザーを作成します。](../debugger/create-custom-visualizers-of-data.md)
 - [デバッガー ウィンドウ](../debugger/debugger-windows.md)
 - [データ ヒントでのデータ値の表示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

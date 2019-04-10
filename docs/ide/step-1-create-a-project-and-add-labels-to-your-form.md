@@ -2,18 +2,20 @@
 title: '手順 1: プロジェクトの作成とフォームへのラベルの追加'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1878d8a57ce8eddc599e14b5961179c7cdc48e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d077cd549b5bef703229b2c43f4ce36d9735d512
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917754"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647402"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>手順 1: プロジェクトの作成とフォームへのラベルの追加
 
@@ -24,23 +26,39 @@ ms.locfileid: "55917754"
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>プロジェクトを作成し、フォームのプロパティを設定するには
 
-1.  メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+::: moniker range="vs-2017"
 
-2.  **[インストールされたテンプレート]** の一覧で **[C#]** または **[Visual Basic]** を選択します。
+1.  メニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-3.  テンプレートの一覧で **[Windows フォーム アプリケーション]** テンプレートを選択し、「**Math Quiz**」という名前を付けて、**[OK]** をクリックします。
+1.  **[インストールされたテンプレート]** の一覧で **[C#]** または **[Visual Basic]** を選択します。
+
+1.  テンプレートの一覧で **[Windows フォーム アプリケーション]** テンプレートを選択し、「**MathQuiz**」という名前を付けて、**[OK]** ボタンを選択します。
 
      選択したプログラミング言語に応じて、*Form1.cs* または *Form1.vb* という名前のフォームが表示されます。
 
-4.  フォームを選択し、**Text** プロパティを **Math Quiz** に変更します。
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+
+1. 検索ボックスに「WPF」と入力し、**[WPF アプリ (.NET Framework)]** を選択し、**[次へ]** を選択します 
+
+   (**[WPF アプリ (.NET Framework)]** テンプレートが表示されない場合は、Visual Studio インストーラーを使用して **[.NET デスクトップ開発]** ワークロードをインストールします)。
+
+1. プロジェクトに「**MathQuiz**」という名前を付け、**[作成]** を選択します。
+
+::: moniker-end
+
+1.  フォームを選択し、**Text** プロパティを **Math Quiz** に変更します。
 
      **[プロパティ]** ウィンドウには、フォームのプロパティが含まれます。
 
-5.  フォームのサイズを幅が 500 ピクセル、高さが 400 ピクセルに変更します。
+1.  フォームのサイズを幅が 500 ピクセル、高さが 400 ピクセルに変更します。
 
      適切なサイズが統合開発環境 (IDE) の左下隅に表示されるまでフォームの端をドラッグしてフォームのサイズ変更ができます。 代わりに、**Size** プロパティの値を変更することもできます。
 
-6.  **FormBorderStyle** プロパティの値を **Fixed3D** に変更し、**MaximizeBox** プロパティを **False** に設定します。
+1.  **FormBorderStyle** プロパティの値を **Fixed3D** に変更し、**MaximizeBox** プロパティを **False** に設定します。
 
      これらの値によって、クイズの受け手はフォームのサイズを変更できなくなります。
 
