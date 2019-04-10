@@ -23,7 +23,7 @@ ms.locfileid: "58977320"
 
 **プロパティ**ウィンドウで、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) は、プロジェクトと構成のプロパティを表示できます。 独自のプロジェクトの種類のプロパティ ページを指定するには、ユーザーがアプリケーションのプロパティを設定できるようにします。  
   
- プロジェクト ノードを選択して**ソリューション エクスプ ローラー**  をクリックし、**プロパティ**上、**プロジェクト** メニューの プロジェクトと構成を含むダイアログ ボックスを開くことができますプロパティ。 [!INCLUDE[csprcs](../../includes/csprcs-md.md)]と[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]、プロジェクトの種類のタブ付きページとしてこのダイアログ ボックスが表示されます。 これらの言語から派生し、 [General, Environment, オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)します。 詳細については、次を参照してください。[ビルド内にありません。チュートリアル: プロジェクトと構成のプロパティ (c#) を公開する](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)します。  
+ プロジェクト ノードを選択して**ソリューション エクスプ ローラー**  をクリックし、**プロパティ**上、**プロジェクト** メニューの プロジェクトと構成を含むダイアログ ボックスを開くことができますプロパティ。 [!INCLUDE[csprcs](../../includes/csprcs-md.md)]と[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]、プロジェクトの種類のタブ付きページとしてこのダイアログ ボックスが表示されます。 これらの言語から派生し、 [General, Environment, オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)します。 詳細については、次を参照してください。[ビルド内にありません。チュートリアル: プロジェクトと構成のプロパティ (C#) を公開する](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)します。  
   
  Managed Package Framework (MPFProj) プロジェクトを作成して、新しいプロジェクト システムを管理するためのヘルパー クラスを提供します。 コードとコンパイル」の手順に従って、ソースを検索できる[- Visual Studio 2013 のプロジェクトの MPF](http://mpfproj12.codeplex.com/)します。  
   
@@ -93,7 +93,7 @@ ms.locfileid: "58977320"
  `MyConfigProp`構成プロパティとして構成プロパティ ページに表示されます**マイ Config プロパティ** カテゴリで**My Category**します。 オプションが選択されている場合、説明、**マイ説明**、説明パネルに表示されます。  
   
 ## <a name="see-also"></a>関連項目  
- [: ビルドに存在しませんチュートリアル: プロジェクトと構成のプロパティ (c#) を公開します。](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [: ビルドに存在しませんチュートリアル: プロジェクトと構成のプロパティ (C#) を公開します。](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
  [追加して、プロパティ ページを削除します。](../../extensibility/adding-and-removing-property-pages.md)   
  [VSPackage の状態](../../misc/vspackage-state.md)   
  [プロジェクト](../../extensibility/internals/projects.md)   

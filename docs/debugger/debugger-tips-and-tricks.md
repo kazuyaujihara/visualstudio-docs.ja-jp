@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526361"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366303"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Visual Studio のデバッガーの生産性に関するヒントと秘訣を学習します。
 
@@ -31,7 +31,7 @@ Visual Studio デバッガーのいくつかの生産性に関するヒントと
 
 ![データのヒントをピン留め](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>コードをエディット コンティニュ デバッグ (C#、VB、C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>コードをエディット コンティニュ デバッグ (c#、VB、C++)
 
 Visual Studio でサポートされているほとんどの言語では、デバッグ セッションの途中でコードを編集し、デバッグを続行します。 この機能を使用するデバッガー、make の編集、およびキーを押してで一時停止中に、カーソルでコードにクリックします。 **F5**、 **F10**、または**F11**デバッグを続行します。
 
@@ -106,7 +106,7 @@ Visual Studio でサポートされているほとんどの言語では、デバ
 
 ![JSON 文字列ビジュアライザー](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-他のいくつかの種類など、デバッガー ウィンドウに表示する WPF オブジェクトでは、ビジュアライザーも開くことができます。
+他のいくつかの種類など、デバッガー ウィンドウに表示される DataSet および DataTable オブジェクトでは、組み込みのビジュアライザーも開くことができます。
 
 ## <a name="break-into-code-on-handled-exceptions"></a>処理済みの例外でコードを中断します。
 
@@ -166,4 +166,4 @@ UWP アプリを使用して実行されたネットワーク操作を分析す�
 - [Visual Studio で非表示 gem の 7](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>関連項目
-[キーボード ショートカット](../ide/tips-and-tricks-for-visual-studio.md)
+[ショートカット キー](../ide/tips-and-tricks-for-visual-studio.md)
