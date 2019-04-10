@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: afe225d111f3e011b5f852b283c9a7ea161ba07a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355764"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789914"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio の生産性に関するヒント
 
@@ -66,7 +66,7 @@ ms.locfileid: "58355764"
 
 - **対処する必要があるエラーのみを表示する**。 **[エラー一覧]** ツール バーの **[フィルター]** を選択すると、**[エラー一覧]** ウィンドウに表示されるエラーの数を減らすことができます。 エディターで開いているファイルのエラーのみ、現在のファイルのエラーのみ、または現在のプロジェクトのエラーのみを表示できます。 また、**[エラー一覧]** ウィンドウ内で検索して、特定のエラーを見つけることもできます。
 
-- **ダイアログ ボックス、メニュー コマンド、オプションなどを検索します**。 [[クイック起動]](../ide/reference/quick-launch-environment-options-dialog-box.md) 検索ボックスに、検索対象の項目のキーワードまたは語句を入力します。 たとえば、「**新しいプロジェクト**」と入力すると、次のオプションが表示されます。
+- **ダイアログ ボックス、メニュー コマンド、オプションなどを検索します**。 検索ボックスに、検索対象の項目のキーワードまたは語句を入力します。 たとえば、「**新しいプロジェクト**」と入力すると、次のオプションが表示されます。
 
    ::: moniker range="vs-2017"
 
@@ -78,11 +78,11 @@ ms.locfileid: "58355764"
 
    ::: moniker range=">=vs-2019"
 
-   !['新しいプロジェクト' のクイック起動検索結果](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+   ![「新しいプロジェクト」の検索結果](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
 
    ::: moniker-end
 
-   **[クイック起動]** 検索ボックスに直接ジャンプするには、**Ctrl** + **Q** キーを押します。
+   検索ボックスに直接ジャンプするには、**Ctrl**+**Q** キーを押します。
 
 ## <a name="debug-code"></a>コードのデバッグ
 

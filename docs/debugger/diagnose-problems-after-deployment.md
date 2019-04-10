@@ -1,5 +1,5 @@
 ---
-title: 配置後の問題の診断 |Microsoft Docs
+title: 配置後の問題の診断 | Microsoft Docs
 ms.date: 04/10/2018
 ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
@@ -8,24 +8,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.openlocfilehash: 4f78cffeb5cc538cfa8fa80edf35ca1390ebbc65
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316887"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857776"
 ---
-# <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace を使用したデプロイ後に問題を診断 (C#、Visual Basic)
+# <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace を使って配置後に問題を診断します (C#、Visual Basic)
 
 IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診断するには、リリースについてのビルド情報を含めます。こうすることで、Visual Studio が、IntelliTrace ログをデバッグするために必要な正しいソース ファイルとシンボル ファイルを自動的に検索できるようになります。
 
  また、Microsoft Monitoring Agent を使用して IntelliTrace を制御している場合は、Web サーバー上でアプリケーション パフォーマンスの監視をセットアップする必要もあります。 これにより、アプリがイベントを実行して IntelliTrace ログ ファイルに保存する間に、診断イベントが記録されます。 次に Visual Studio Enterprise (ただし、Professional および Community Edition を除く) でイベントを確認し、イベントが発生したコードに移動できます。さらに、その時点で記録された値を確認し、実行されたコード内を前後に移動できます。 問題を見つけて解決したら、リリースをビルド、リリース、および監視するサイクルを繰り返して、将来発生する可能性がある問題をさらに早い段階で速やかに解決できます。
 
- ![コード、ビルド、リリース、監視、診断、修正](../debugger/media/ffr_cycle.png "FFR_Cycle")
+ ![コーディング、ビルド、リリース、監視、診断、修正](../debugger/media/ffr_cycle.png "FFR_Cycle")
 
- **要件:** 
+ **要件:**
 
--   Visual Studio、Azure DevOps、または Team Foundation Server 2017、2015、2013、2012、または 2010 をビルドを設定します。
+-   ビルドを設定するための Visual Studio、Azure DevOps、または Team Foundation Server 2017、2015、2013、2012、2010
 
 -   アプリを監視して診断データを記録するための Microsoft Monitoring Agent
 
@@ -40,29 +40,29 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
 
 ####  <a name="TFS2017"></a> Azure DevOps と Team Foundation Server 2017
 
-Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルでは、非推奨し、し、削除されました。 デプロイ後に ASP.NET web アプリをデバッグするには、次のメソッドのいずれかを使用します。
+Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.config* ファイルは含まれません。これは非推奨になったのちに削除されています。 配置後に ASP.NET Web アプリをデバッグするには、次のメソッドのいずれかを使用します。
 
-* Azure にデプロイする場合は、使用[Application Insights](https://docs.microsoft.com/azure/application-insights/)します。
+* Azure に配置する場合は、[Application Insights](https://docs.microsoft.com/azure/application-insights/) を使います。
 
-* IntelliTrace を使用する必要がある場合は、Visual Studio でプロジェクトを開くし、一致するビルドからシンボル ファイルを読み込みます。 シンボル ファイルを読み込むことができます、**モジュール**ウィンドウ内のシンボルを構成することで、または**ツール** > **オプション** > **デバッグ**  > **シンボル**します。
+* IntelliTrace を使用する必要がある場合は、Visual Studio でプロジェクトを開いて、一致するビルドからシンボル ファイルを読み込みます。 **[モジュール]** ウィンドウからシンボル ファイルを読み込むか、**[ツール]** > **[オプション]** > **[デバッグ]** > **[シンボル]** でシンボルを構成することができます。
 
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
- ビルド マニフェスト (BuildInfo.config ファイル) に、ソース、ビルド、およびシンボルの場所を追加、ビルド パイプラインを設定します。 Team Foundation ビルドは自動的にこのファイルを作成し、そのファイルをプロジェクトの出力フォルダーに配置します。
+ ビルド パイプラインを設定して、ソース、ビルド、およびシンボルの場所をビルド マニフェスト (BuildInfo.config ファイル) に追加します。 Team Foundation ビルドは自動的にこのファイルを作成し、そのファイルをプロジェクトの出力フォルダーに配置します。
 
 1.  [ビルド パイプラインを編集するか、新しいビルド パイプラインを作成します。](/azure/devops/pipelines/get-started-designer?view=vsts)
 
-     ![TFS 2013 でのパイプラインをビルドする表示](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+     ![TFS 2013 でビルド パイプラインを表示する](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
 2.  既定のテンプレート (TfvcTemplate.12.xaml) または独自のカスタム テンプレートを選択します。
 
-     ![ビルド プロセス テンプレートの選択&#45;TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
+     ![ビルド プロセス テンプレートを選択する &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
 
 3.  ソースのインデックスが自動的に作成されるように、シンボル (PDB) ファイルの保存場所を指定します。
 
      カスタム テンプレートを使用する場合は、ソースにインデックスを付けるアクティビティがカスタム テンプレートに含まれていることを確認します。 後の手順で、MSBuild 引数を追加して、シンボル ファイルの保存場所を指定できます。
 
-     ![ビルド パイプライン TFS 2013 でのシンボル パスを設定](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
+     ![ビルド パイプラインでシンボル パスを設定する TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
      シンボルの詳細については、「 [シンボル データを発行する](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)」を参照してください。
 
@@ -76,7 +76,7 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
      **/p:BuildSymbolStorePath=**\<*シンボルへのパス*>
 
-     ![ビルド定義の TFS 2013 ビルド サーバーの情報を含める](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
+     ![ビルド定義にビルド サーバーの情報を含める TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
 
      以下の行を Web プロジェクト ファイル (.csproj または .vbproj) に追加します。
 
@@ -90,18 +90,18 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
 6.  新しいビルドを実行します。
 
-    移動して[手順 2: アプリのリリース](#DeployRelease)
+    「[手順 2: アプリをリリースする](#DeployRelease)」に移動します
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 または 2010
  プロジェクトのビルド マニフェスト (BuildInfo.config ファイル) を自動的に作成し、プロジェクトの出力フォルダーに配置するには、次の手順を実行します。 このファイルは出力フォルダーで "*ProjectName*.BuildInfo.config" と表示されますが、アプリの発行後に配置フォルダーで "BuildInfo.config" という名前に変更されます。
 
 1.  Team Foundation ビルド サーバーに、Visual Studio 2013 (任意のエディション) をインストールします。
 
-2.  ビルド パイプラインでは、ソースが自動的にインデックス作成できるように、シンボルを保存する場所を指定します。
+2.  ビルド パイプラインで、ソースのインデックスが自動的に作成されるようにシンボルの保存場所を指定します。
 
      カスタム テンプレートを使用する場合は、ソースにインデックスを付けるアクティビティがカスタム テンプレートに含まれていることを確認します。
 
-3.  ビルド パイプラインには、次の MSBuild 引数を追加します。
+3.  次の MSBuild 引数を、ビルド パイプラインに追加します。
 
     -   **/p:VisualStudioVersion=12.0**
 
@@ -115,7 +115,7 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
 4.  新しいビルドを実行します。
 
-    移動して[手順 2: アプリのリリース](#DeployRelease)
+    「[手順 2: アプリをリリースする](#DeployRelease)」に移動します
 
 ###  <a name="ManualBuild"></a>Visual Studio を使用して手動ビルドのビルド マニフェストを作成する
  プロジェクトのビルド マニフェスト (BuildInfo.config ファイル) を自動的に作成し、プロジェクトの出力フォルダーに配置するには、次の手順を実行します。 このファイルは出力フォルダーで "*ProjectName*.BuildInfo.config" と表示されますが、アプリの発行後に配置フォルダーで "BuildInfo.config" という名前に変更されます。
@@ -142,7 +142,7 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
 4.  新しいビルドを実行します。
 
-    移動して[手順 2: アプリのリリース](#DeployRelease)
+    「[手順 2: アプリをリリースする](#DeployRelease)」に移動します
 
 ###  <a name="MSBuild"></a>MSBuild.exe を使用して手動ビルドのビルド マニフェストを作成する
  ビルドの実行時に次のビルド引数を追加します。
@@ -168,7 +168,7 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
 1.  IntelliTrace ログ (.iTrace ファイル) を Visual Studio Enterprise から開きます。 同じコンピューターに Visual Studio Enterprise がある場合は、ファイルをダブルクリックするだけです。
 
-2.  **[ソリューションを開く]** を選ぶと、対応するソリューションまたはプロジェクトが自動的に開きます (そのプロジェクトがソリューションの一部として組み込まれていない場合)。 [Q: 配置したアプリに関する情報が IntelliTrace ログ内にありません。なぜこのようなことが起きたのですか。どうしたらよいですか。](#InvalidConfigFile)
+2.  **[ソリューションを開く]** を選ぶと、対応するソリューションまたはプロジェクトが自動的に開きます (そのプロジェクトがソリューションの一部として組み込まれていない場合)。 [Q: 配置したアプリに関する情報が IntelliTrace ログ内にありません。 なぜこのようなことが起きたのですか。 どうしたらよいですか。](#InvalidConfigFile)
 
      Visual Studio では、対応するソリューションまたはプロジェクトが開くと、保留中のすべての変更が自動的にシェルブされます。 このシェルブセットの詳細情報を取得するには、 **[出力]** ウィンドウまたは **チーム エクスプローラー**を確認します。
 
@@ -178,11 +178,11 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
      このソリューションまたはプロジェクトに対するワークスペースを既に割り当てた場合は、Visual Studio によってそのワークスペースが選択され、検出されたソースが配置されます。
 
-     ![マップされたワークスペースには、ソース管理から開く](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
+     ![ソース管理からマップされたワークスペースに開く](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
 
      それ以外の場合は、別のワークスペースを選択するか、新しいワークスペースを作成します。 Visual Studio では、分岐全体がこのワークスペースに割り当てられます。
 
-     ![ソース管理から開く&#45;新しいワークスペースを作成する](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
+     ![ソース管理から開く &#45; 新しいワークスペースを作成する](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
 
      特定のマッピングを備えたワークスペースや、コンピューターとは名前が異なるワークスペースを作成するには、 **[管理]** を選択します。
 
@@ -192,9 +192,9 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
 ### <a name="diagnose-a-performance-problem"></a>パフォーマンスの問題を診断する
 
-1.  **[パフォーマンス違反]** で、記録されたパフォーマンス イベント、総実行時間、およびその他のイベント情報を確認します。 その後、特定のパフォーマンス イベントの発生時に呼び出されたメソッドをさらに掘り下げます。
+1.  **[パフォーマンス違反]** で、記録されたパフォーマンス イベント、総実行時間、その他のイベント情報を確認します。 その後、特定のパフォーマンス イベントの発生時に呼び出されたメソッドをさらに掘り下げます。
 
-     ![パフォーマンス イベントの詳細表示](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
+     ![パフォーマンス イベントの詳細を表示する](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
      イベントをダブルクリックするだけでもかまいません。
 
@@ -204,31 +204,31 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
      その呼び出しを展開して、その時点で記録された、入れ子になったすべての呼び出しと値を確認します。 その後、その呼び出しからデバッグを開始します。
 
-     ![メソッドの呼び出しからデバッグを開始](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
+     ![メソッドの呼び出しからデバッグを開始する](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
 
      呼び出しをダブルクリックするだけでもかまいません。
 
      アプリケーション コードにメソッドが含まれる場合、Visual Studio はそのメソッドに移動します。
 
-     ![パフォーマンス イベントからアプリケーション コードに移動して](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
+     ![パフォーマンス イベントからアプリケーション コードに移動する](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
 
      これで、他の記録された値、つまり呼び出し履歴を確認したり、コードをステップ実行したりできます。また、 **IntelliTrace** ウィンドウを使用して、パフォーマンス イベントの発生時に呼び出された [その他のメソッド間を "時間内に" 前後に移動することもできます](../debugger/intellitrace.md) 。
 
     - [IntelliTrace ログ内の他のイベントと情報について](../debugger/using-saved-intellitrace-data.md)
-    - [ここでは他に何ができますか。](#WhatElse)
-    - [パフォーマンス イベントに関する詳細を確認しましょう](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
+    - [ここで他にできること](#WhatElse)
+    - [パフォーマンス イベントに関する詳細情報を確認する](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>例外の診断
 
-1.  **[例外データ]** では、記録された例外イベントとその種類、メッセージ、およびその例外がいつ発生したかを確認できます。 コードをさらに掘り下げるには、例外グループの最新のイベントからデバッグを開始します。
+1.  **[例外データ]** では、記録された例外イベントとその種類、メッセージ、その例外がいつ発生したかを確認できます。 コードをさらに掘り下げるには、例外グループの最新のイベントからデバッグを開始します。
 
-     ![例外イベントからデバッグを開始](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
+     ![例外イベントからデバッグを開始する](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
      イベントをダブルクリックするだけでもかまいません。
 
      例外がアプリケーション コードで発生した場合、Visual Studio は例外が発生した場所に移動します。
 
-     ![例外イベントからアプリケーション コードに移動して](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
+     ![例外イベントからアプリケーション コードに移動する](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
 
      これで、他の記録された値、つまり呼び出し履歴を確認したり、 **IntelliTrace** ウィンドウを使用して、 [記録されたその他のイベント間を "時間内に" 前後に移動したりできます](../debugger/intellitrace.md)。また、関連するコードや、その時点で記録された値の間も前後に移動できます。
 
@@ -238,13 +238,13 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
 -   [このコードのさらに詳細な情報を入手します](../ide/find-code-changes-and-other-history-with-codelens.md)。 エディターから離れずに、このコードの参照、変更履歴、関連するバグ、作業項目、コード レビュー、または単体テストを検索するには、エディターの CodeLens インジケーターを使用します。
 
-     ![CodeLens&#45;このコードへの参照を表示](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
+     ![CodeLens &#45; このコードへの参照を表示する](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
 
-     ![CodeLens&#45;変更このコードの履歴の表示](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
+     ![CodeLens &#45; このコードの変更履歴を表示する](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
 
 -   [デバッグ中にコード内の位置を割り当てます。](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) デバッグ セッション中に呼び出されたメソッドを視覚的に追跡するには、呼び出し履歴を割り当てます。
 
-     ![デバッグ中に呼び出し履歴でマップ](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
+     ![デバッグ中に呼び出し履歴をマップする](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
 
 ###  <a name="FAQ"></a> Q & A
 
@@ -360,14 +360,14 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 ####  <a name="IneligibleWorkspace"></a> Q: 選択したワークスペースが適切でないというメッセージが Vidual Studio によって表示されるのはなぜですか。
  **A:** 選択したワークスペースのソース コントロール フォルダーとローカル フォルダーの間にマッピングがありません。 このワークスペースのマッピングを作成するには、 **[管理]** を選択します。 それ以外の場合は、既に割り当てられているワークスペースを選択するか、新しいワークスペースを作成します。
 
- ![マップされたワークスペースとソース管理から開く](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
+ ![マップされたワークスペースなしでソース管理から開く](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
 ####  <a name="ChooseTeamProject"></a> Q: チーム コレクションまたは別のコレクションを選択するまで続行できないのはなぜですか。
  **A:** これは次の理由によって発生する場合があります。
 
 -   Visual Studio が TFS に接続されていない。
 
-     ![ソース管理から開く&#45;未接続](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
+     ![ソース管理から開く &#45; 未接続](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
 
 -   Visual Studio が、現在のチーム コレクションでソリューションまたはプロジェクトを見つけられなかった。
 
@@ -377,12 +377,12 @@ Visual Studio 2017 には含まれません、 *BuildInfo.config*ファイルで
 
      新しい TFS に移行したため、対応するソースが指定 TFS にない、あるいは TFS 自体が存在しない可能性があります。 指定された TFS が存在しない場合、Visual Studio は 約 1 分後にタイムアウトになり、別のコレクションに接続するように求めるメッセージが表示される可能性があります。 操作を続行するには、正しい TFS サーバーに接続します。
 
-     ![ソース管理から開く&#45;移行](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
+     ![ソース管理から開く &#45; 移行済み](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> Q: ワークスペースとは何ですか。
  **A:** [ワークスペースにはソースのコピーが格納](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) されるので、作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。
 
 ####  <a name="UntrustedSymbols"></a> Q: 次の信頼されていないシンボルに関するメッセージが表示されるのはなぜですか。
- ![信頼されていないシンボル パスでデバッグしますか。](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
+ ![信頼されていないシンボル パスでデバッグするか?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
  **A:** このメッセージは、ビルド マニフェスト ファイル (\<*ProjectName*>.BuildInfo.config) のシンボル パスが、信頼されたシンボル パスの一覧に含まれない場合に表示されます。 このパスをシンボル パスの一覧に追加するには、デバッガー オプションを使用します。

@@ -21,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700006"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647285"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>[Web ブラウザー] ([オプション] ダイアログ ボックス - [環境])
+# <a name="options-dialog-box-environment--web-browser"></a>[オプション] ダイアログ ボックス: [環境] \> [Web ブラウザー]
 
 内部 Web ブラウザーと Internet Explorer のオプションを設定します。 このダイアログ ボックスにアクセスするには、**[ツール]** メニューの **[オプション]** をクリックし、**[環境]** フォルダーを展開して **[Web ブラウザー]** を選択します。
 
@@ -50,11 +50,11 @@ IDE Web ブラウザーを開いたときに表示されるページを設定し
 
 内部 Web ブラウザーからページの **[ソースの表示]** を選択するときに Web ページを開くために使用するエディターを設定します。
 
--   **ソース エディター** 選択すると、[エディター](../../ide/writing-code-in-the-code-and-text-editor.md)にソースが表示されます。
+- **ソース エディター** 選択すると、[エディター](../../ide/writing-code-in-the-code-and-text-editor.md)にソースが表示されます。
 
--   **HTML エディター** 選択すると、[HTML デザイナー](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)にソースが表示されます。 この選択を使用し、Web ページを 2 つのビュー、デザイン ビューまたは標準のテキスト ベースのソース ビューのいずれかで編集します。
+- **HTML エディター** 選択すると、[HTML デザイナー](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)にソースが表示されます。 この選択を使用し、Web ページを 2 つのビュー、デザイン ビューまたは標準のテキスト ベースのソース ビューのいずれかで編集します。
 
--   **外部エディター** 選択すると、別のエディターにソースが表示されます。 選択するエディター (Notepad.exe など) のパスを指定します。
+- **外部エディター** 選択すると、別のエディターにソースが表示されます。 選択するエディター (Notepad.exe など) のパスを指定します。
 
 ## <a name="internet-explorer-options"></a>Internet Explorer オプション
 

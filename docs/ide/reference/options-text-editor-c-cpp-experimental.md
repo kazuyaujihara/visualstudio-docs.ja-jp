@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325215"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789992"
 ---
 # <a name="options-text-editor-cc-experimental"></a>[オプション]、[テキスト エディター]、[C/C++]、[実験用]
 
@@ -28,7 +28,7 @@ ms.locfileid: "58325215"
 
 ::: moniker-end
 
-このプロパティ ページにアクセスするには、**Control** + **Q** キーを押し、`Quick Launch` をアクティブ化してから「実験用」と入力します。 クイック起動では、最初の数文字に一致するページが検索されます。 **[ツール]** > **[オプション]** を選択して **[テキスト エディター]** を展開し、**[C/C++]**、**[実験用]** の順に選択してアクセスすることもできます。
+このプロパティ ページにアクセスするには、**Ctrl**+**Q** キーを押して検索ボックスをアクティブ化した後、「**実験用**」と入力します。 検索では、最初の数文字と一致するページが検索されます。 **[ツール]** > **[オプション]** を選択して **[テキスト エディター]** を展開し、**[C/C++]**、**[実験用]** の順に選択してアクセスすることもできます。
 
 これらの機能は、Visual Studio のインストールで使用できます。
 

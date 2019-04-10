@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fcc961a478d3e23c7a8dcf06805505b6c437ed9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 339f6477395bf8d91618298bc1618132d76b3794
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924670"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647181"
 ---
-# <a name="tabs-and-windows-environment-options-dialog-box"></a>[タブとウィンドウ]\ ([オプション] ダイアログ ボックス - [環境])
+# <a name="options-dialog-box-environment--tabs-and-windows"></a>[オプション] ダイアログ ボックス: [環境] \> [タブとウィンドウ]
 
 このページを使用して、エディター ウィンドウでのタブ付きウィンドウの動作およびツール ウィンドウの動作に関するオプションを設定します。 詳細については、「[Visual Studio のウィンドウ レイアウトをカスタマイズする](../../ide/customizing-window-layouts-in-visual-studio.md)」を参照してください
 

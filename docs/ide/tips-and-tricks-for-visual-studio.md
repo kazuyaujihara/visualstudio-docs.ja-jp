@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223365"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790369"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio のキーボード ショートカット
 
@@ -50,9 +50,9 @@ Visual Studio では、この記事のキーボード ショートカットを�
 |||
 |-|-|
 |ソリューション エクスプローラーの検索|**Ctrl** + **;**|
-|任意のツール ウィンドウの検索ボックスへのフォーカスの移動|ツール ウィンドウにフォーカスがあるときに **Alt** + **`**|
-|クイック起動|**Ctrl** + **Q**|
-|スコープ結果のクイック起動|-   @opt オプション<br />-   @cmd コマンド<br />-   @mru 直前に使用<br />-   @doc ドキュメントを開く|
+|任意のツール ウィンドウでの検索ボックスへのフォーカスの移動|ツール ウィンドウにフォーカスがあるときに **Alt** + **`**|
+|検索ボックス|**Ctrl** + **Q**|
+|検索ボックスのスコープの結果|-   @opt オプション<br />-   @cmd コマンド<br />-   @mru 直前に使用<br />-   @doc ドキュメントを開く|
 |ツール オプションの検索|**Ctrl** + **E**|
 
 ## <a name="editor-find"></a>エディター検索
@@ -64,11 +64,11 @@ Visual Studio では、この記事のキーボード ショートカットを�
 |クイック検索の前の結果|**Shift** + **Enter**|
 |クイック検索でドロップダウンを展開|**Alt** + **↓**|
 |検索を消去|**Esc**|
-|[クイック置換]|**Ctrl** + **H**|
+|クイック置換|**Ctrl** + **H**|
 |クイック置換で次を置換|**Alt** + **R**|
 |クイック置換ですべて置換|**Alt** + **A**|
-|[フォルダーを指定して検索]|**Ctrl** + **Shift** + **F**|
-|[フォルダーを指定して置換]|**Ctrl** + **Shift** + **H**|
+|フォルダーを指定して検索|**Ctrl** + **Shift** + **F**|
+|フォルダーを指定して置換|**Ctrl** + **Shift** + **H**|
 
 ##  <a name="BKMK_CodeEditor"></a> コード エディター
 
@@ -93,7 +93,7 @@ Visual Studio では、この記事のキーボード ショートカットを�
 |行の複製|**Ctrl** + **E**、**V**|Visual Studio 2017 バージョン 15.6|
 |選択範囲の展開|**Shift** + **Alt** + **=**|Visual Studio 2017 バージョン 15.5|
 |選択範囲の縮小|**Shift** + **Alt** + **-**|Visual Studio 2017 バージョン 15.5|
-|[定義へ移動]|**F12**||
+|定義へ移動|**F12**||
 |定義をここに表示|**Alt** + **F12**||
 |定義スタックへ移動|**Ctrl** + **Shift** + **8** (戻る)、**Ctrl** + **Shift** + **7** (進む)||
 |[ピークの定義] ウィンドウを閉じる|**Esc**||

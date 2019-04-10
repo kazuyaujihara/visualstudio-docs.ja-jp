@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33afb83fdf680ef2eb1dd51e7b0e4dca8b77c3cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916884"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790850"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>方法: アプリケーション マニフェストと配置マニフェストの署名
 
@@ -35,11 +35,11 @@ ClickOnce 配置を使用してアプリケーションを発行しようとす�
  キー ファイルの作成については、「[方法 : 公開キーと秘密キーのキー ペアを作成する](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)」を参照してください。
 
 > [!NOTE]
-> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、拡張子 *.pfx* を持つ Personal Information Exchange (PFX) キー ファイルだけがサポートされます。 ただし、プロジェクトのプロパティの **[署名]** ページにある **[ストアから選択]** をクリックすると、現在のユーザーの Windows 証明書ストアから、他の種類の証明書を選ぶことができます。
+> Visual Studio では、拡張子 *.pfx* を持つ Personal Information Exchange (PFX) キー ファイルだけがサポートされます。 ただし、プロジェクトのプロパティの **[署名]** ページにある **[ストアから選択]** をクリックすると、現在のユーザーの Windows 証明書ストアから、他の種類の証明書を選ぶことができます。
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>証明書を使用してアプリケーション マニフェストおよび配置マニフェストに署名するには
+## <a name="sign-using-a-certificate"></a>証明書を使用して署名する
 
-1.  プロジェクトのプロパティ ウィンドウに移動します (**ソリューション エクスプローラー**でプロジェクト ノードを右クリックして **[プロパティ]** を選択するか、**[クイック起動]** ウィンドウに「**プロジェクトのプロパティ**」と入力するか、あるいは**ソリューション エクスプローラー**内で **Alt** + **Enter** キーを押す)。 **[署名]** タブの **[ClickOnce マニフェストに署名する]** チェック ボックスをオンにします。
+1.  プロジェクトのプロパティ ウィンドウに移動します (**ソリューション エクスプローラー**でプロジェクト ノードを右クリックし、**[プロパティ]** を選択します)。 **[署名]** タブの **[ClickOnce マニフェストに署名する]** チェック ボックスをオンにします。
 
 2.  **[ストアから選択]** をクリックします。
 
@@ -52,7 +52,7 @@ ClickOnce 配置を使用してアプリケーションを発行しようとす�
 
 4.  また、**[タイムスタンプ サーバーの URL]** ボックスでタイムスタンプ サーバーのアドレスを指定することもできます。 このサーバーは、マニフェストの署名日時を示すタイムスタンプを提供します。
 
-## <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>既存のキー ファイルを使用してアプリケーション マニフェストおよび配置マニフェストに署名するには
+## <a name="sign-using-an-existing-key-file"></a>既存のキー ファイルを使用して署名する
 
 1.  **[署名]** ページの **[ClickOnce マニフェストに署名する]** チェック ボックスをオンにします。
 
@@ -69,7 +69,7 @@ ClickOnce 配置を使用してアプリケーションを発行しようとす�
 
 4.  キー ファイルにアクセスするためのパスワードを入力し、**Enter** キーを押します。
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>テスト証明書を使用してアプリケーション マニフェストおよび配置マニフェストに署名するには
+## <a name="sign-using-a-test-certificate"></a>テスト証明書を使用して署名する
 
 1.  **[署名]** ページの **[ClickOnce マニフェストに署名する]** チェック ボックスをオンにします。
 

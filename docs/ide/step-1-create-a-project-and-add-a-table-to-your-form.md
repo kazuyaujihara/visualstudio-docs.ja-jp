@@ -2,18 +2,20 @@
 title: '手順 1: プロジェクトの作成とフォームへのテーブルの追加'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940660"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647493"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>手順 1: プロジェクトの作成とフォームへのテーブルの追加
 
@@ -21,7 +23,23 @@ ms.locfileid: "55940660"
 
 ## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>プロジェクトを作成し、フォームにテーブルを追加するには
 
-1. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+::: moniker range="vs-2017"
+
+1. メニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+
+1. 検索ボックスに「WPF」と入力し、**[WPF アプリ (.NET Framework)]** を選択し、**[次へ]** を選択します 
+
+   (**[WPF アプリ (.NET Framework)]** テンプレートが表示されない場合は、Visual Studio インストーラーを使用して **[.NET デスクトップ開発]** ワークロードをインストールします)。
+
+1. プロジェクトに「**MatchingGame**」という名前を付け、**[作成]** を選択します。
+
+::: moniker-end
 
 2. Visual Studio Express を使用していない場合は、最初にプログラミング言語を選択する必要があります。 **[インストールされたテンプレート]** ボックスの一覧で、**[Visual C#]** または **[Visual Basic]** を選択します。
 
