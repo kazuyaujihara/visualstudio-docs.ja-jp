@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223612"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790525"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Visual Studio でコードを機能させる
 
@@ -44,7 +44,7 @@ Visual Studio は、プロジェクトのビルドとデバッグ ツールの�
 
 ![Visual Studio の出力とエラー一覧](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-**[エラー一覧]** ウィンドウのエラー行をクリックし、エラーが発生した行にジャンプします。 (右上の **[クイック起動]** バーをクリックし、そこに "行番号" を入力し、**Enter** キーを押して、行番号をオンにします。 これは、**[オプション]** ダイアログを表示する最も簡単な方法です。そのダイアログで行番号をオンにすることができます。 **[クイック起動]** バーの使用について学ぶと、UI をクリックする回数を減らすことができます。)
+**[エラー一覧]** ウィンドウのエラー行をクリックし、エラーが発生した行にジャンプします  (または、**Ctrl**+**Q** キーを押し、「**行番号**」と入力した後、結果から **[行番号の表示を有効または無効にします]** を選択して行番号を表示します。 これは、行番号をオンにすることができる **[オプション]** ダイアログを表示する最も簡単な方法です)。
 
 ![Visual Studio の行番号を含むエディター](../ide/media/vs_ide_gs_debug_line_numbers.png)
 

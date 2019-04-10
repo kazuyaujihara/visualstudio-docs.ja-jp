@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c43e1edc2e2aae13fef6df4b4fe414b933067798
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018390"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366043"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>マネージド コードの "セキュリティ規則" 規則セット
 Microsoft のセキュリティ規則ルールが報告される潜在的なセキュリティの問題の数を最大化するセットを含める必要があります。
@@ -63,15 +63,18 @@ Microsoft のセキュリティ規則ルールが報告される潜在的なセ�
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|透過コードは、セキュリティ アサートを使用してはならない|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|アセンブリには有効な厳密な名前が必要です|
-|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|SQL インジェクションの脆弱性の確認コード|
-|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|XSS 脆弱性の確認コード|
-|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|コード ファイルのパスのインジェクションに対する脆弱性を確認します。|
-|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|情報漏えいの脆弱性の確認コード|
-|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|LDAP インジェクションの脆弱性の確認コード|
-|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|プロセス コマンド インジェクションの脆弱性の確認コード|
-|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|オープン リダイレクト脆弱性の確認コード|
-|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|XPath インジェクションの脆弱性の確認コード|
-|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|XML インジェクションの脆弱性の確認コード|
-|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|XAML インジェクションの脆弱性の確認コード|
-|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|コード DLL インジェクションの脆弱性を確認します。|
-|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|正規表現のインジェクションに対する脆弱性の確認コード|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|安全でないデシリアライザー BinaryFormatter を使用しないでください。|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|最初の設定 BinaryFormatter.Binder せず BinaryFormatter.Deserialize を呼び出さないでください。|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|BinaryFormatter.Binder は BinaryFormatter.Deserialize を呼び出す前に設定してください。|
+|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|SQL インジェクションの脆弱性のコード レビュー|
+|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|XSS の脆弱性のコード レビュー|
+|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|ファイル パス インジェクションの脆弱性のコード レビュー|
+|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|情報漏えいの脆弱性のコード レビュー|
+|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|LDAP インジェクションの脆弱性のコード レビュー|
+|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|プロセス コマンド インジェクションの脆弱性のコード レビュー|
+|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|オープン リダイレクトの脆弱性のコード レビュー|
+|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|XPath インジェクションの脆弱性のコード レビュー|
+|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|XML インジェクションの脆弱性のコード レビュー|
+|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|XAML インジェクションの脆弱性のコード レビュー|
+|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|DLL インジェクションの脆弱性のコード レビュー|
+|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|RegEx インジェクションの脆弱性のコード レビュー|

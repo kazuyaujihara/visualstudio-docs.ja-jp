@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Enterprise Mobility + Security の特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: b1d3aa39f4d3f53d10bcc692da96bfe6c50b981d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 917f4e6c2b80c2cb0b154d58effd8016f54740c3
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841196"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232659"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Enterprise Mobility + Security (EMS)
 
@@ -73,6 +73,6 @@ EMS を使うには、アカウントを設定するか、既存のアカウン�
 
 ## <a name="support-resources"></a>サポート リソース
 -  EMS に関するヘルプが必要ですか。  オンラインの [EMS ドキュメント](/enterprise-mobility-security/)を参照してください。
--  EMS のコンポーネントのテクニカル サポートについては、[EMS サポートの FAQ](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-support-faq) ページにアクセスし、問題に対する適切なサポートを見つけてください。
+-  EMS のコンポーネントのテクニカル サポートについては、[EMS サポートの FAQ](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) ページにアクセスし、問題に対する適切なサポートを見つけてください。
 -  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 -  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

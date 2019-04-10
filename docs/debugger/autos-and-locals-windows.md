@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636906"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366550"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>[自動変数] と [ローカル] ウィンドウに変数を検査します。
 
@@ -59,6 +59,19 @@ ms.locfileid: "56636906"
 >-   式を評価すると、変数の値が変わる場合や、プログラムの状態に影響が及ぶ場合があります。 たとえば、評価`var1 = ++var2`両方の値を変更`var1`と`var2`します。 これらの式といいますが[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))します。 副作用で、それらを認識していない場合、予期しない結果が生じる場合があります。
 >
 >-   浮動小数点値を編集すると、小数部分の 10 進とバイナリの変換により、多少の誤差が発生する場合があります。 一見無害の編集もバイトが、浮動小数点変数のビットの一部に変更します。
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-autos-or-locals-window"></a>[自動変数] または [ローカル] ウィンドウで検索します。
+
+名前、値、および型の列に含まれるキーワードを検索することができます、 **[自動変数]** または**ローカル**各ウィンドウの上部の検索バーを使用してウィンドウ。 ENTER キーまたは検索を実行する矢印のいずれかを選択します。 進行中の検索をキャンセルするには、検索バーに"x"アイコンを選択します。
+
+左と右矢印を使用して (Shift + F3 および F3、それぞれ) 間を移動する一致が見つかりました。
+
+![[ローカル] ウィンドウで検索](../debugger/media/ee-search-locals.png "[ローカル] ウィンドウで検索")
+
+検索をより小さいか完全に利用できるように、**検索より深い**の上部にあるドロップダウン リスト、 **[自動変数]** または**ローカル**ウィンドウに検索するレベルの深さを選択します。入れ子になったオブジェクト。 
+
+::: moniker-end
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>[自動変数] または [ローカル] ウィンドウのコンテキストを変更します。
 

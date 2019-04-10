@@ -1,6 +1,6 @@
 ---
 title: '[拡張機能] ([オプション] ダイアログ ボックス - [環境])'
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a9b890f57fc8148233a17e3910477a4e8697564
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983937"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646713"
 ---
-# <a name="extensions-environment-options-dialog-box"></a>[拡張機能] ([オプション] ダイアログ ボックス - [環境])
+# <a name="options-dialog-box-environment--extensions"></a>[オプション] ダイアログ ボックス: [環境] \> [拡張機能]
 
 このページを使用して、Visual Studio での更新プログラムの実行方法に関するオプションと、拡張機能の更新および検出方法に関するオプションを設定します。
 
@@ -29,7 +29,7 @@ ms.locfileid: "57983937"
 
 オンにすると、メッセージを表示せずに拡張機能の更新が行われます。 詳細については、「[Visual Studio 拡張機能の検索と使用](../../ide/finding-and-using-visual-studio-extensions.md)」を参照してください。
 
-## <a name="load-user-extensions-when-running-as-administrator"></a>管理者として実行しているときにユーザー拡張機能を読み込む
+## <a name="load-per-user-extensions-when-running-as-administrator"></a>管理者として実行しているときにユーザー単位で拡張機能を読み込む
 
 詳細については、「[Visual Studio 拡張機能の検索と使用](../../ide/finding-and-using-visual-studio-extensions.md)」を参照してください。
 

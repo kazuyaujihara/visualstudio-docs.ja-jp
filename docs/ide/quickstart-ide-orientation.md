@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354730"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790902"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>クイック スタート: Visual Studio IDE の表示の紹介
 
@@ -125,15 +125,15 @@ Visual Studio の上部にあるメニュー バーには、コマンドがカ�
 
 ![Visual Studio の [出力] ウィンドウ](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>クイック起動
+## <a name="search-box"></a>検索ボックス
 
-**[クイック起動]** 検索ボックスでは、Visual Studio のほぼすべての場所にすばやく簡単に移動できます。 実行する操作に関連したテキストを入力すると、そのテキストに関係するオプションの一覧が表示されます。 たとえば、ビルドで実際に行われる内容をさらに詳しく表示するために、ビルド出力の詳細レベルを上げるとします。 これは次のように行います。
+検索ボックスを使用して、Visual Studio のほぼすべての場所にすばやく簡単に移動できます。 実行する操作に関連したテキストを入力すると、そのテキストに関係するオプションの一覧が表示されます。 たとえば、ビルドで実際に行われる内容をさらに詳しく表示するために、ビルド出力の詳細レベルを上げるとします。 これは次のように行います。
 
 ::: moniker range="vs-2017"
 
 1. IDE の右上にある **[クイック起動]** 検索ボックスを見つけます。 (または、**Ctrl**+**Q** キーを押してアクセスします)。
 
-2. **[クイック起動]** 検索ボックスに「**詳細度**」と入力します。 **[オプション]** カテゴリで、表示された結果から **[プロジェクトおよびソリューション] --> [ビルド/実行]** を選択します。
+2. 検索ボックスに「**詳細度**」と入力します。 **[オプション]** カテゴリで、表示された結果から **[プロジェクトおよびソリューション] --> [ビルド/実行]** を選択します。
 
    ![Visual Studio 2017 のクイック起動検索ボックス](media/quickstart-IDE-quick-launch.png)
 
@@ -143,11 +143,11 @@ Visual Studio の上部にあるメニュー バーには、コマンドがカ�
 
 ::: moniker range=">=vs-2019"
 
-1. IDE 上部のメニューの右側にある **[クイック起動]** 検索ボックスを見つけます。 (または、**Ctrl**+**Q** キーを押してアクセスします)。
+1. IDE の上部の検索ボックスをアクティブにするには、**Ctrl** キーを押しながら **Q** キーを押します。
 
-2. **[クイック起動]** 検索ボックスに「**詳細度**」と入力します。 表示された結果から **[MSBuild の詳細度を変更する]** を選択します。
+2. 検索ボックスに「**詳細度**」と入力します。 表示された結果から **[MSBuild の詳細度を変更する]** を選択します。
 
-   ![Visual Studio 2019 のクイック起動検索ボックス](media/vs-2019/quick-launch-verbosity.png)
+   ![Visual Studio 2019 の検索ボックス](media/vs-2019/quick-launch-verbosity.png)
 
    **[オプション]** ダイアログ ボックスが開き、**[ビルド/実行]** オプションのページが表示されます。
 
@@ -163,7 +163,7 @@ Visual Studio の上部にあるメニュー バーには、コマンドがカ�
 
 ## <a name="send-feedback-menu"></a>[フィードバックの送信] メニュー
 
-Visual Studio の使用中に問題が発生した場合、または製品の改善案をお持ちの場合は、Visual Studio ウィンドウ上部の **[クイック起動]** ボックスの横にある、**[フィードバックの送信]** メニューを使用してください。
+Visual Studio の使用中に問題が発生した場合、または製品の改善案をお持ちの場合は、Visual Studio ウィンドウ上部の **[フィードバックの送信]** メニューを使用してください。
 
 ::: moniker range="vs-2017"
 

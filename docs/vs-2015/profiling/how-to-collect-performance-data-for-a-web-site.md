@@ -1,5 +1,5 @@
 ---
-title: '方法: Web サイトのパフォーマンス データを収集する | Microsoft Docs'
+title: 方法:Web サイトのパフォーマンス データを収集する | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,17 +19,17 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766153"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366732"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>方法: Web サイトのパフォーマンス データを収集する
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>方法: Web サイトのパフォーマンス データを収集します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**パフォーマンス ウィザード**を使用して、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションのパフォーマンス データを収集できます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で開かれた Web アプリケーションをプロファイリングすることも、ローカル コンピューターに置かれ、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE で開かれていない [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web サイトをプロファイリングすることもできます。  
+**パフォーマンス ウィザード** を使用して、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションのパフォーマンス データを収集できます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で開かれた Web アプリケーションをプロファイリングすることも、ローカル コンピューターに置かれ、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE で開かれていない [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web サイトをプロファイリングすることもできます。  
   
 > [!NOTE]
 >  **パフォーマンス ウィザード** を使用して、階層の相互作用(TIP) データ、JScript パフォーマンス データ、または両方を追加してプロファイル データを収集することができます。 TIP オプションは、サーバー側のプロセスからデータを収集します。 JScript プロファイリングは、ローカルまたはリモートの Web サイトで実行されているスクリプトからデータを収集します。 ほとんどの場合、1 つのオプションのみを選択する必要があります。  
@@ -84,7 +84,7 @@ ms.locfileid: "54766153"
   
    - ファイル ベースの Web サイトの場合は、file///**c:\WebSites\MySite\default.aspx**のようなパスを入力します。 これにより、c:\webSites\MySite に置かれている [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションがプロファイリングされ、 http://localhost:nnnn/MySite/default.aspx ページが Internet Explorer で起動されて、セッションが開始されます。  
   
-   - 外部サイトで JavaScript データを収集する場合は、 http://www.contoso.com のような URL を入力します。  
+   - たとえば http URL を入力、JavaScript データを収集する外部サイトで:\//www.contoso.com します。  
   
      詳細については、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ターゲット バイナリのプロパティ ページを参照してください。  
   
