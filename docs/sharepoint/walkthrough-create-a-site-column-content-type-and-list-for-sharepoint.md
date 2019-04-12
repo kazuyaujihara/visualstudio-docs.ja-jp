@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dee5d1ec207f2b7bec030076797720fe9e8216ed
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870400"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504264"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>チュートリアル: For SharePoint のサイト列、コンテンツの種類、および一覧を作成します。
   次の手順は、カスタムの SharePoint サイト列を作成する方法を示します: または*フィールド*— サイト内の列を使用するコンテンツの種類とします。 新しいコンテンツ タイプを使用するリストを作成する方法も示します。
@@ -46,16 +46,16 @@ ms.locfileid: "57870400"
 
 -   サポート対象エディションの Windows と SharePoint
 
--   Visual Studio
+-   [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>カスタムのサイト列を作成します。
  この例では、病院の患者を管理するためのリストを作成します。 まず、SharePoint プロジェクトを作成する必要があります[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を次のようにサイト内の列を追加します。
 
 #### <a name="to-create-the-project"></a>プロジェクトを作成するには
 
-1.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**ファイル**] メニューの [選択**新規** > **プロジェクト**します。
+1.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **ファイル**] メニューの [選択**新規** > **プロジェクト**します。
 
-2.  **新しいプロジェクト** ダイアログ ボックスで、いずれかで**Visual C#** または**Visual Basic**、展開、 **SharePoint**ノード、を選択し、**2010**します。
+2.  **新しいプロジェクト** ダイアログ ボックスで、いずれかで**Visual c#** または**Visual Basic**、展開、 **SharePoint**ノード、を選択し、**2010**します。
 
 3.  **テンプレート**ウィンドウで、選択**SharePoint 2010 プロジェクト**にプロジェクトの名前を変更**クリニック**、選択し、 **OK**ボタンをクリックします。
 
@@ -99,7 +99,7 @@ ms.locfileid: "57870400"
 
 2.  メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
 
-3.  いずれかで**Visual C#** または**Visual Basic**、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
+3.  いずれかで**Visual c#** または**Visual Basic**、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
 
 4.  **テンプレート**ウィンドウで、選択、**コンテンツの種類**テンプレート名を変更して**患者情報**、選択し、**追加**ボタン。
 
@@ -133,7 +133,7 @@ ms.locfileid: "57870400"
 
 2.  メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
 
-3.  いずれかで**Visual C#** または**Visual Basic**、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
+3.  いずれかで**Visual c#** または**Visual Basic**、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
 
 4.  **テンプレート**ウィンドウで、選択、**一覧**テンプレート名を変更して**患者**、選択し、**追加**ボタン。
 
@@ -166,7 +166,7 @@ ms.locfileid: "57870400"
     > [!TIP]
     >  サイト内の列の一覧から列を選択する場合は、既存のサイト列が使用されます。 ただし、一覧ですべての列を選択することがなく、列名の値を入力するとカスタム リストの列が作成されます、場合でも、同じ名前の列が一覧に既に存在します。
 
-     カスタム リストの列のデータ型の設定ではなく、必要に応じて、**単一行のテキスト**テーブルまたは別のリストからその値を取得を参照して、代わりにこの列のデータ型を設定できます。 参照列については、[SharePoint 2010 リスト リレーションシップ](http://go.microsoft.com/fwlink/?LinkId=224994)と[参照とリレーションシップの一覧](http://go.microsoft.com/fwlink/?LinkID=224995)を参照してください。
+     カスタム リストの列のデータ型の設定ではなく、必要に応じて、**単一行のテキスト**テーブルまたは別のリストからその値を取得を参照して、代わりにこの列のデータ型を設定できます。 参照列については、次を参照してください。 [SharePoint 2010 リスト リレーションシップ](http://go.microsoft.com/fwlink/?LinkId=224994)と[参照とリレーションシップの一覧](http://go.microsoft.com/fwlink/?LinkID=224995)します。
 
 10. 横に、**患者 ID**と**患者名**ボックスに、選択、**ために必要な**チェック ボックスをオンします。
 
@@ -221,7 +221,7 @@ ms.locfileid: "57870400"
 
 ## <a name="see-also"></a>関連項目
 - [For SharePoint のサイト列、コンテンツの種類、およびリストを作成します。](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
-- [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)
+- [SharePoint ソリューションを開発します。](../sharepoint/developing-sharepoint-solutions.md)
 - [方法: カスタム フィールド タイプを作成します。](http://go.microsoft.com/fwlink/?LinkId=192079)
 - [コンテンツの種類](http://go.microsoft.com/fwlink/?LinkId=192080)
 - [列](http://go.microsoft.com/fwlink/?LinkId=192081)
