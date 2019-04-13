@@ -1,5 +1,5 @@
 ---
-title: DebuggerTypeProxy 属性の使用 |Microsoft Docs
+title: DebuggerTypeProxy を使用してカスタムの型の表示 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011f5dc9525a8a5f88f3cc923eb56dde58313d85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c379fbeb9d17f92dcc7067424ea06bb1a2805ed1
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717495"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537544"
 ---
-# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>DebuggerTypeProxy 属性の使用 (C#、Visual Basic の場合、C +/cli CLI)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>DebuggerTypeProxy 属性の使用を表示するには、どのような型をデバッガーに通知 (C#、Visual Basic、 C++/CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> では、ある型のプロキシ (代理) を指定し、その型をデバッガー ウィンドウで表示する方法を変更します。 プロキシを指定した変数を表示すると、元の型の代理としてプロキシが**表示**されます。 デバッガーの変数ウィンドウには、プロキシ型のパブリック メンバーのみが表示されます。 プライベート メンバーは表示されません。
 
@@ -35,7 +35,7 @@ ms.locfileid: "56717495"
 - アセンブリ
 
 > [!NOTE]
-> ネイティブ コードは、この属性は C + でのみサポート/cli CLI コード。
+> この属性がでのみサポートされているネイティブ コード用のC++/CLI コード。
 
 型プロキシ クラスには、プロキシで置換される型の引数を使用するコンストラクターが必要です。 デバッガーでは、対象となる型の変数を表示するときに、毎回、新しい型プロキシ クラスのインスタンスが作成されます。 その結果、パフォーマンスが低下する可能性があります。 そのため、コンストラクターでの作業は必要最小限に抑えます。
 

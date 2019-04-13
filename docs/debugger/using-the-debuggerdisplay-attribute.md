@@ -1,5 +1,5 @@
 ---
-title: DebuggerDisplay 属性の使用 |Microsoft Docs
+title: DebuggerDisplay を使用してカスタム情報を表示する |Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680189"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537638"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>DebuggerDisplay 属性を使用して (C#、Visual Basic、 F#、C++/cli CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>DebuggerDisplay 属性を使用して表示するものをデバッガーに通知 (C#、Visual Basic、 F#、 C++/CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> は、デバッガー変数ウィンドウでのオブジェクト、プロパティ、フィールドの表示方法を制御します。 この属性は、型、デリゲート、プロパティ、フィールド、アセンブリに適用できます。
 
 `DebuggerDisplay` 属性の引数は 1 つです。それは、型のインスタンスの値列に表示する文字列です。 この文字列には、中かっこ (`{` と `}`) を含めることができます。 かっこ内のテキストは、フィールド、プロパティ、メソッドとして評価されます。
@@ -32,7 +32,7 @@ ms.locfileid: "56680189"
 > **[ツール] / [オプション] / [デバッグ]** ダイアログ ボックスで **[オブジェクトの生の構造体を変数ウィンドウに表示する]** チェック ボックスがオンになっている場合、 `DebuggerDisplay` 属性は無視されます。
 
 > [!NOTE]
-> ネイティブ コードは、この属性は C + でのみサポート/cli CLI コード。
+> この属性がでのみサポートされているネイティブ コード用のC++/CLI コード。
 
 次の表に、 `DebuggerDisplay` 属性の使用例と出力例を示します。
 

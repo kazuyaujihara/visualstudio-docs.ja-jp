@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366303"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537560"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Visual Studio のデバッガーの生産性に関するヒントと秘訣を学習します。
 
@@ -52,6 +52,10 @@ Visual Studio でサポートされているほとんどの言語では、デバ
     ![条件付きブレークポイント](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
 3. 別の種類の条件に関心がある場合は、選択**フィルター**の代わりに**条件式**で、**ブレークポイントの設定** ダイアログ ボックスと、次のフィルターのヒント。
+
+## <a name="configure-the-data-to-show-in-the-debugger"></a>デバッガーで表示するデータを構成します。
+
+C#、Visual Basic、およびC++(C++/CLI コードのみ)、デバッガーを使用して表示するには、どのような情報を設定できます、 [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)属性。 C++コードでは、同じ使用方法を行うことができます[Natvis 視覚化](create-custom-views-of-native-objects.md)します。
 
 ## <a name="change-the-execution-flow"></a>実行フローを変更する
 
@@ -166,4 +170,4 @@ UWP アプリを使用して実行されたネットワーク操作を分析す�
 - [Visual Studio で非表示 gem の 7](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>関連項目
-[ショートカット キー](../ide/tips-and-tricks-for-visual-studio.md)
+[キーボード ショートカット](../ide/tips-and-tricks-for-visual-studio.md)

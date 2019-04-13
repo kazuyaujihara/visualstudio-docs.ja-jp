@@ -23,33 +23,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 748305683ad8f874c985e2599028152d608ccc84
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 733f3ec7573287e934f8a5f0167db89c0683759a
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597423"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537479"
 ---
-# <a name="create-custom-views-of-objects-c-visual-basic-c"></a>オブジェクトのカスタム ビューの作成 (C#、Visual Basic、C++)
+# <a name="create-custom-views-of-objects-c-visual-basic-c"></a>オブジェクトのカスタム ビューの作成 (C#、Visual Basic、 C++)
 Visual Studio でデバッガーの変数ウィンドウにデータ型を表示する方法をカスタマイズできます。
 
 ## <a name="native-code"></a>ネイティブ コード
 
-」の説明に従って、C++ コードの Natvis フレームワークを使用してカスタム データ型の展開を追加することができます[デバッガーでネイティブ オブジェクトのカスタム ビューの作成](/visualstudio/debugger/create-custom-views-of-native-objects)です。 C++/cli、CLI コードも属性を使用して、この記事では、ここで説明します。
+C++コード、」の説明に従って、Natvis フレームワークを使用してカスタム データ型の展開を追加できます[カスタム ビューの作成C++デバッガーでオブジェクト](/visualstudio/debugger/create-custom-views-of-native-objects)します。 C++/CLI コードも属性を使用して、この記事では、ここで説明します。
 
 ## <a name="attributes"></a>属性
 
-C#、Visual Basic、および C++ (C +/cli CLI コードのみ)、カスタム データを使用するための拡張を追加する<xref:System.Diagnostics.DebuggerTypeProxyAttribute>、 <xref:System.Diagnostics.DebuggerDisplayAttribute>、および<xref:System.Diagnostics.DebuggerBrowsableAttribute>します。
+C#、Visual Basic、およびC++(C++/CLI コードのみ)、カスタム データを使用するための拡張を追加する<xref:System.Diagnostics.DebuggerTypeProxyAttribute>、<xref:System.Diagnostics.DebuggerDisplayAttribute>と<xref:System.Diagnostics.DebuggerBrowsableAttribute>。
 
 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] コードでは、Visual Basic は DebuggerBrowsable 属性をサポートしません。 この制限は、.NET Framework の新しいバージョンで解除されています。
 
 ## <a name="visualizers"></a>ビジュアライザー
 
-マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、次を参照してください。[方法: ビジュアライザーを記述する](/visualstudio/debugger/create-custom-visualizers-of-data)します。
+マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、「[方法 :ビジュアライザーを記述する](/visualstudio/debugger/create-custom-visualizers-of-data)
 
 ## <a name="see-also"></a>関連項目
 
-- [DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)
-- [DebuggerDisplay 属性の使用](../debugger/using-the-debuggerdisplay-attribute.md)
+- [DebuggerDisplay 属性を使用して表示するものをデバッガーに通知します。](../debugger/using-the-debuggerdisplay-attribute.md)
+- [DebuggerTypeProxy 属性の使用を表示するには、どのような型をデバッガーに通知します。](../debugger/using-debuggertypeproxy-attribute.md)
 - [ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)
 - [デバッガー表示属性によるデバッグ機能の拡張](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

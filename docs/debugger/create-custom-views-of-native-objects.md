@@ -1,5 +1,5 @@
 ---
-title: ネイティブ オブジェクトのカスタム ビューの作成
+title: カスタム ビューの作成C++オブジェクト
 description: Natvis フレームワークを使用して、Visual Studio がデバッガーでネイティブ型を表示する方法をカスタマイズするには
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428805"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537578"
 ---
-# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>デバッガーでのネイティブ オブジェクトのカスタム ビューの作成
+# <a name="create-custom-views-of-c-objects-in-the-debugger"></a>カスタム ビューの作成C++デバッガー内のオブジェクト
 
 Visual Studio *Natvis* framework ネイティブ型をなどのデバッガー変数ウィンドウに表示する方法をカスタマイズする、**ローカル**と**ウォッチ**windows、および**データヒント**します。 Natvis 視覚化は、デバッグ中に表示を作成する種類を作成できます。
 
@@ -165,7 +165,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 **Natvis 診断を有効にします。**
 
-- **ツール** > **オプション**(または**デバッグ** > **オプション**) > **のデバッグ** > **出力ウィンドウ**設定**Natvis 診断メッセージ (C++ のみ)** に**エラー**、**警告**、または**詳細な**、し、 **OK**します。
+- **ツール** > **オプション**(または**デバッグ** > **オプション**) > **のデバッグ** > **出力ウィンドウ**設定**Natvis 診断メッセージ (C++のみ)** に**エラー**、**警告**、または**Verbose**、し、 **OK**します。
 
 エラーが表示されます、**出力**ウィンドウ。
 
@@ -222,7 +222,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 視覚化エントリでは、検証に失敗した場合、[次へ] の使用可能な視覚化が使用されます。
 
 #### <a name="inheritable-attribute"></a>継承可能な属性
-省略可能な`Inheritable`属性は、視覚エフェクトが基本型にのみ適用されますまたはすべての基本データ型を派生型かどうかを指定します。 `Inheritable` の既定値は `true`です。
+省略可能な`Inheritable`属性は、視覚エフェクトが基本型にのみ適用されますまたはすべての基本データ型を派生型かどうかを指定します。 `Inheritable` の既定値は `true` です。
 
 次の例では、視覚エフェクトにのみ適用されます、`BaseClass`型。
 
@@ -664,7 +664,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 - A `ServiceId`  -  `Id`属性のペアを識別、`UIVisualizer`します。 `ServiceId`ビジュアライザーは、サービスの GUID は、パッケージが公開されます。 `Id` 1 つ以上のサービスを提供する場合、ビジュアライザーを区別する一意の識別子です。 前の例では、同じビジュアライザー サービスは、2 つのビジュアライザーを提供します。
 
-- `MenuName`属性は、デバッガーで虫眼鏡アイコンの横にあるドロップダウン リストに表示するビジュアライザーの名前を定義します。 次に例を示します。
+- `MenuName`属性は、デバッガーで虫眼鏡アイコンの横にあるドロップダウン リストに表示するビジュアライザーの名前を定義します。 例えば:
 
   ![UIVisualizer メニューのショートカット メニュー](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer メニューのショートカット メニュー")
 
