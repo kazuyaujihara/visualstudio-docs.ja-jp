@@ -77,3 +77,4 @@
 # [トラブルシューティング](/visualstudio/mac/troubleshooting)
 ## [Visual Studio カスタマー エクスペリエンス向上プログラム](/visualstudio/mac/visual-studio-experience-improvement-program)
 ## [問題を報告する](/visualstudio/mac/report-a-problem)
+## [トラブルシューティング : アップデーターが情報の取得中にエラーを表示する](updater-troubleshooting.md)
