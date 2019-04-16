@@ -77,3 +77,5 @@
 # [トラブルシューティング](troubleshooting.md)
 ## [Visual Studio カスタマー エクスペリエンス向上プログラム](visual-studio-experience-improvement-program.md)
 ## [問題を報告する](report-a-problem.md)
+## [トラブルシューティング : すべてのテンプレートが表示されない](troubleshooting-no-templates.md)
+## [トラブルシューティング : アップデーターが情報の取得中にエラーを表示する](updater-troubleshooting.md)
