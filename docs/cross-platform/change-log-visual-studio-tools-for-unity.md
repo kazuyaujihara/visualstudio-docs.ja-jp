@@ -1,7 +1,7 @@
 ---
 title: 変更ログ (Visual Studio Tools for Unity、Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/28/2018
+ms.date: 04/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,139 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a7cd8da81fef0d3b4af8e61be979c8bea904072f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803741"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232763"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="4005"></a>4.0.0.5
+ リリース日: 2019 年 2 月 27 日
+
+### <a name="bug-fixes"></a>バグ修正
+
+-   **統合:**
+
+    -   セットアップ パッケージでの Visual Studio のバージョン検出を修正しました。
+
+    -   セットアップ パッケージから未使用のアセンブリを削除しました。
+
+## <a name="4004"></a>4.0.0.4
+ リリース日: 2019 年 2 月 13 日
+
+### <a name="new-features"></a>新機能
+
+-   **統合:**
+
+    -   インストール時に Unity プロセスを適切に検出するためのサポートを追加し、セットアップ エンジンによるファイル ロックの処理を改善できるようにしました。
+    
+    -   ScriptableObject API を更新しました。
+
+## <a name="4003"></a>4.0.0.3
+ リリース日: 2019 年 1 月 31 日
+
+### <a name="new-features"></a>新機能
+
+-   **プロジェクトの生成:**
+
+    -   パブリック フィールドとシリアル化されたフィールドで、警告が発行されなくなりました。 これらのメッセージが作成された Unity プロジェクトでは、CS0649 および IDE0051 コンパイラの警告を自動抑制しています。
+
+-   **統合:**
+
+    -   Unity エディターとプレーヤー インスタンスを表示するユーザー エクスペリエンスを改善しました (ウィンドウのサイズが変更可能になり、均一な余白が使用され、サイズ変更グリップが表示されます)。 Unity エディターのプロセス ID 情報を追加しました。
+    
+    -   MonoBehaviour API を更新しました。
+    
+-   **評価:**
+
+    -   ローカル関数のサポートを追加しました。
+    
+    -   擬似変数のサポートを追加しました (例外とオブジェクトの識別子)。
+
+### <a name="bug-fixes"></a>バグ修正
+
+-   **統合:**
+
+    -   モニカー画像とテーマに関連する問題を修正しました。
+
+    -   資産データベースが自動更新されるとき、デバッグ中は出力ウィンドウにのみ書き込みます。
+
+    -   MonoBehaviour ウィザードのフィルター処理での UI の遅延を修正しました。
+    
+-   **デバッガー:**
+
+    -   古いプロトコル バージョン使用時の名前付き引数に対するカスタム属性の読み取りを修正しました。
+
+## <a name="4002"></a>4.0.0.2
+ リリース日: 2019 年 1 月 23 日
+
+### <a name="bug-fixes"></a>バグ修正
+
+-   **統合:**
+
+    -   試験的ビルドの生成を修正しました。
+
+    -   UI スレッドの負荷を最小限に抑えるようにプロジェクト ファイルのイベント処理を修正しました。
+
+    -   テキストの一括変更での補完プロバイダーを修正しました。
+    
+-   **デバッガー:**
+
+    -   アタッチされたデバッガーへのユーザー デバッグ メッセージの表示を修正しました。
+
+## <a name="4001"></a>4.0.0.1
+ リリース日: 2018 年 12 月 10 日
+
+### <a name="new-features"></a>新機能
+
+-   **評価:**
+
+    -   式の評価において、NRefactory を Roslyn に置き換えました。
+
+    -   ポインターのサポートを追加しました。逆参照、キャスト、およびポインターの算術演算 (これには、Unity 2018.2 以降と新しいランタイムの両方が必要です)。
+
+    -   配列ポインター ビューのサポートを追加しました (C++ に類似)。 ポインター式を取得してから、コンマと表示する要素数を付け加えます。
+
+    -   非同期のコンストラクトのサポートを追加しました。
+
+-   **統合:**
+    
+    -   保存時に Unity のアセット データベースを自動更新するサポートを追加しました。 これは既定で有効になっており、Visual Studio でスクリプトを保存すると、Unity 側で再コンパイルがトリガーされます。 この機能は、[ツール]\[オプション]\[Tools for Unity]\[保存時に Unity の AssetDatabase を更新] で無効にすることができます。
+
+### <a name="bug-fixes"></a>バグ修正
+
+-   **統合:**
+
+    -   優先する外部エディターとして Visual Studio が選択されていない場合のブリッジ アクティブ化を修正しました。
+
+    -   形式が正しくないかサポートされていない式での式の評価を修正しました。
+
+## <a name="4000"></a>4.0.0.0
+ リリース日: 2018 年 12 月 4 日
+
+### <a name="new-features"></a>新機能
+
+-   **統合:**
+
+    -   Visual Studio 2019 のサポートを追加しました。
+
+    -   Visual Studio イメージ サービスとカタログを導入し、HDPI のスケール、ピクセル パーフェクトなイメージ、およびテーマを完全にサポートします。
+
+### <a name="deprecated-features"></a>非推奨の機能
+
+-   **統合:**
+
+    -   今後、Visual Studio Tools for Unity では Unity 5.2 以降のみをサポートします (Unity の組み込み Visual Studio の統合による)。
+
+    -   今後、Visual Studio Tools for Unity では Visual Studio 2015 以降のみをサポートします。
+
+    -   従来の言語サービス、エラー一覧、およびステータス バーを削除しました。
+    
+    -   クイック Monobehaviour ウィザードを削除しました (専用の intellisense のサポートに置き換えました)。
 
 ## <a name="3903"></a>3.9.0.3
  リリース日: 2018 年 11 月 28 日
@@ -411,7 +535,7 @@ Visual Studio Tools for Unity の変更ログです。
 
     -   Visual Studio ウォッチへの項目の追加時の問題が修正されました。
 
--   **Project Generation:**
+-   **プロジェクトの生成:**
 
     -   mcs.rsp ファイルを使用したアセンブリ名の参照が修正されました。
 

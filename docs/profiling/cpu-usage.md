@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbad30fca5dd3ffbaa09c270f6a0b0400d9ea22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640793"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366758"
 ---
 # <a name="analyze-cpu-usage"></a>CPU 使用率の分析
 
@@ -56,6 +56,10 @@ ms.locfileid: "56640793"
 
 診断レポートは、**合計 CPU** の高い順に並べ替えられます。 並べ替え順序または並べ替え列を変更するには、列ヘッダーを選択します。 表示するスレッドを選択または選択解除するには、**[フィルター]** ドロップダウンを使用します。特定のスレッドまたはノードを検索するには、**[検索]** ボックスを使用します。
 
+::: moniker range=">=vs-2019"
+Visual Studio 2019 以降、**[ホット パスの展開]** ボタンと **[ホット パスの表示]** ボタンをクリックすることで、最も高い割合で CPU を使用している関数の呼び出しを呼び出しツリー ビューに表示できます。
+::: moniker-end
+
 ###  <a name="BKMK_Call_tree_data_columns"></a> CPU 使用率データの列
 
 |||
@@ -70,7 +74,12 @@ ms.locfileid: "56640793"
 
 ####  <a name="BKMK_Call_tree_structure"></a> コール ツリーの構造
 
- ![コール ツリーの構造](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "コール ツリーの構造")
+::: moniker range=">=vs-2019"
+![コール ツリーの構造](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "コール ツリーの構造")
+::: moniker-end
+::: moniker range="vs-2017"
+![コール ツリーの構造](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "コール ツリーの構造")
+::: moniker-end
 
 |||
 |-|-|
@@ -81,19 +90,24 @@ ms.locfileid: "56640793"
 
 ####  <a name="BKMK_External_Code"></a> 外部コード
 
- コードによって実行されるシステムおよびフレームワークの関数は、*外部コード*と呼ばれます。 外部コード関数は、アプリの開始と停止、UI の描画、スレッドの制御、およびアプリへの他の低レベル サービスの提供を行います。 外部コードを確認することはほとんどないため、CPU 使用率コール ツリーはユーザー メソッドの外部関数を 1 つの **[外部コード]** ノードにまとめます。
+コードによって実行されるシステムおよびフレームワークの関数は、*外部コード*と呼ばれます。 外部コード関数は、アプリの開始と停止、UI の描画、スレッドの制御、およびアプリへの他の低レベル サービスの提供を行います。 外部コードを確認することはほとんどないため、CPU 使用率コール ツリーはユーザー メソッドの外部関数を 1 つの **[外部コード]** ノードにまとめます。
 
- 外部コードの呼び出しパスを表示するには、診断レポートのメイン ページ (右側のウィンドウ) で、**[フィルター]** ドロップダウンから **[外部コードの表示]** を選択し、**[適用]** を選択します。 **[CPU 使用率]** ページの **[コール ツリー]** ビューで外部コードの呼び出しが展開されます。 (**[フィルター]** ドロップダウンは、詳細ビューではなくメインの診断ページで使用できます。)
+外部コードの呼び出しパスを表示するには、診断レポートのメイン ページ (右側のウィンドウ) で、**[フィルター]** ドロップダウンから **[外部コードの表示]** を選択し、**[適用]** を選択します。 **[CPU 使用率]** ページの **[コール ツリー]** ビューで外部コードの呼び出しが展開されます。 (**[フィルター]** ドロップダウンは、詳細ビューではなくメインの診断ページで使用できます。)
 
- ![外部コードの表示](../profiling/media/cpu_use_wt_filterview.png "外部コードの表示")
+![外部コードの表示](../profiling/media/cpu_use_wt_filterview.png "外部コードの表示")
 
- 多くの外部コードの呼び出しチェーンは複雑な入れ子になっているため、チェーンの幅が **[関数名]** 列の表示幅に収まりきらない可能性があります。 その場合、関数名が **...** として表示されます。
+多くの外部コードの呼び出しチェーンは複雑な入れ子になっているため、チェーンの幅が **[関数名]** 列の表示幅に収まりきらない可能性があります。 その場合、関数名が **...** として表示されます。
 
- ![コール ツリーの入れ子になった外部コード](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "コール ツリーの入れ子になった外部コード")
+![コール ツリーの入れ子になった外部コード](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "コール ツリーの入れ子になった外部コード")
 
- 探している関数名を検索するには、検索ボックスを使用します。 選択した行をポイントするか、水平スクロール バーを使用してデータを表示します。
+探している関数名を検索するには、検索ボックスを使用します。 選択した行をポイントするか、水平スクロール バーを使用してデータを表示します。
 
- ![入れ子になった外部コードの検索](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "入れ子になった外部コードの検索")
+::: moniker range=">=vs-2019"
+![入れ子になった外部コードの検索](../profiling/media/vs-2019/cpu-use-wt-showexternalcodetoowide-found.png "入れ子になった外部コードの検索")
+::: moniker-end
+::: moniker range="vs-2017"
+![入れ子になった外部コードの検索](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "入れ子になった外部コードの検索")
+::: moniker-end
 
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー内の非同期関数
 
@@ -107,8 +121,8 @@ ms.locfileid: "56640793"
 
 ![展開された非同期ノード](media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "展開された非同期ノード")
 
-- `MainPage::GetMaxNumberAsyncButton_Click` は単に、タスクの値のリストを管理し、結果の最大値を計算し、出力を表示します。
+- `MainPage::GetMaxNumberAsyncButton_Click`  は単に、タスクの値のリストを管理し、結果の最大値を計算し、出力を表示します。
 
 - `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` は、 `GetNumberAsync`の呼び出しをラップする 48 個のタスクをスケジュールして起動するために必要なアクティビティを表示します。
 
-- `MainPage::<GetNumberAsync>b__b` は `GetNumber`を呼び出すタスクのアクティビティを表示します。
+- `MainPage::<GetNumberAsync>b__b`  は `GetNumber` を呼び出すタスクのアクティビティを表示します。

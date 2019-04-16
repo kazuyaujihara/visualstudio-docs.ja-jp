@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 54c93a07d7ac3754c5c57d2029fff9991221ae65
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070644"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897583"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS を使用してビルドするためのツールのインストールおよび構成
 
@@ -34,7 +34,7 @@ iOS のコードを開発するためのリモート エージェントをイン
 
 - OS X Mavericks (バージョン 10.9) 以降を実行する Mac コンピューター
 
--  [Apple ID](https://appleid.apple.com/)
+- [Apple ID](https://appleid.apple.com/)
 
 - Apple のアクティブな [iOS Developer Program](https://developer.apple.com/programs/ios/) アカウント
 
@@ -70,7 +70,7 @@ iOS のコードを開発するためのリモート エージェントをイン
 
 Visual C++ for Cross-Platform Mobile Development をインストールすると、Visual Studio は、Mac 上で実行されているリモート エージェント [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)と通信して、ファイルを転送したり、iOS アプリをビルドして実行したり、デバッグ コマンドを送信したりできます。
 
-リモート エージェントをインストールする前に、[前提条件](#Prerequisites)を満たしていること、[Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools) をインストール済みであることを確認してください。
+リモート エージェントをインストールする前に、[前提条件](#prerequisites)を満たしていること、[Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools) をインストール済みであることを確認してください。
 
 ###  <a name="DownloadInstall"></a> リモート エージェントをダウンロードしてインストールするには
 
@@ -83,7 +83,7 @@ Visual C++ for Cross-Platform Mobile Development をインストールすると�
    インストール中、Mac に vcremote がインストールされて、開発者モードがアクティブ化されます。 [Homebrew](https://brew.sh/) と 2 つのパッケージ (vcremote-lib および vcremote-utils) もインストールされます。 インストールが完了したら、スキップしたオプションの依存関係に関する警告は無視しても安全です。
 
    > [!NOTE]
-   > Homebrew をインストールするには、sudo (管理者) のアクセス許可が必要です。 sudo 以外で vcremote をインストールする必要がある場合には、Homebrew を手動で usr/local の場所にインストールして、その bin フォルダーをパスに追加します。 詳細については、 [Homebrew のドキュメント](https://github.com/Homebrew/homebrew/wiki/Installation)を参照してください。 開発者モードを手動で有効にするには、ターミナル アプリでコマンド `DevToolsSecurity -enable`を入力します。
+   > Homebrew をインストールするには、sudo (管理者) のアクセス許可が必要です。 sudo 以外で vcremote をインストールする必要がある場合には、Homebrew を手動で usr/local の場所にインストールして、その bin フォルダーをパスに追加します。 詳細については、 [Homebrew のドキュメント](https://github.com/Homebrew/homebrew/wiki/Installation)を参照してください。 開発者モードを手動で有効にするには、ターミナル アプリで次のコマンドを入力します。 `DevToolsSecurity -enable`
 
 Visual Studio を新しいバージョンに更新した場合は、リモート エージェントも現在のバージョンに更新する必要があります。 リモート エージェントを更新するには、リモート エージェントをダウンロードしてインストールする手順を繰り返します。
 
@@ -236,4 +236,4 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual C++ for Cross-Platform Mobile Development のインストール](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [クロス プラットフォーム モバイル開発のための Visual C++ のインストール](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

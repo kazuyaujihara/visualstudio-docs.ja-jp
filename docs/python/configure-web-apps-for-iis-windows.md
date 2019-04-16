@@ -3,20 +3,20 @@ title: IIS 用に Python Web アプリを構築する
 description: Windows 仮想マシンから IIS を使用して実行される Python Web アプリを構築する方法を説明します。
 ms.date: 12/06/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 547c92cdb892c3a087301fb527d069dacfaccd8e
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355458"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366394"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS 用に Python Web アプリを構築する
 
@@ -100,8 +100,8 @@ FastCGI は、要求レベルで動作するインターフェイスです。 II
     これらの `<appSettings>` 値はアプリで環境変数として使用できます。
 
     - `PYTHONPATH` の値は、自由に拡張できますが、アプリのルートを含める必要があります。
-    - `WSGI_HANDLER` はアプリからインポート可能な WSGI アプリをポイントする必要があります。
-    - `WSGI_LOG` は省略可能ですが、アプリのデバッグのために推奨します。
+    - `WSGI_HANDLER`  はアプリからインポート可能な WSGI アプリをポイントする必要があります。
+    - `WSGI_LOG`  は省略可能ですが、アプリのデバッグのために推奨します。
 
 1. *web.config* の `WSGI_HANDLER` エントリを、使用しているフレームワークに合わせて適切に設定します。
 

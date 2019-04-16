@@ -3,19 +3,19 @@ title: Python プロジェクトの項目テンプレート
 description: Visual Studio の [追加] > [新しい項目] ダイアログから利用できる、Python プロジェクトの項目テンプレートの参照一覧。
 ms.date: 12/06/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 119ce4b4221995bdbe3225c895defd5d471377d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924696"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366459"
 ---
 # <a name="python-item-templates"></a>Python 項目テンプレート
 
@@ -40,7 +40,7 @@ ms.locfileid: "55924696"
 | **Django 1.9 アプリ**<br/>**Django 1.4 アプリ** | アプリ名のフォルダー。Django 1.9 の場合は、[「Visual Studio での Django の詳細情報」の手順 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) で説明したように、Django アプリの主要なファイルが含まれます。 Django 1.4 の場合は、*migrations* フォルダー、*admin.py* ファイル、*apps.py* ファイルが含まれません。 |
 | **IronPython WPF ウィンドウ** | 2 つの横並びのファイルで構成される WPF ウィンドウ: 空の `<Grid>` 要素で `<Window>` を定義する *.xaml* ファイルと、`wpf` ライブラリを使用して XAML ファイルを読み込む、関連する *.py* ファイル。 通常は、IronPython プロジェクト テンプレートの 1 つを使用して作成されたプロジェクト内で使用されます。 [「Python プロジェクトの管理」の「プロジェクト テンプレート」のセクション](managing-python-projects-in-visual-studio.md#project-templates)をご覧ください。 |
 | **Web ロール サポート ファイル** | プロジェクト ルートにある *bin* フォルダー (プロジェクト内で選択されたフォルダーとは関係ありません)。 Azure クラウド サービス Web ロールの既定のデプロイ スクリプトと *web.config* ファイルが格納されています。 また、テンプレートには、詳細を説明する *readme.html* ファイルが含まれています。 |
-| **Worker ロールのサポート ファイル** | プロジェクト ルートにある *bin* フォルダー (プロジェクト内で選択されたフォルダーとは関係ありません)。 Azure クラウド サービス Worker ロールの既定のデプロイ スクリプトと *web.config* ファイルが格納されています。 また、テンプレートには、詳細を説明する *readme.html* ファイルが含まれています。 |
+| **worker ロールのサポート ファイル** | プロジェクト ルートにある *bin* フォルダー (プロジェクト内で選択されたフォルダーとは関係ありません)。 Azure クラウド サービス Worker ロールの既定のデプロイ スクリプトと *web.config* ファイルが格納されています。 また、テンプレートには、詳細を説明する *readme.html* ファイルが含まれています。 |
 | **Azure web.config (FastCGI)** | 受信接続の処理に [WSGI](https://wsgi.readthedocs.io/en/latest/) オブジェクトを使うアプリ用のエントリを含む *web.config* ファイル。 このファイルは通常、IIS を実行している Web サーバーのルートに配置されます。 詳細については、[IIS 用のアプリの構成](configure-web-apps-for-iis-windows.md)に関連するページをご覧ください。 |
 | **Azure web.config (HttpPlatformHandler)** | 受信接続のためのソケット上でリッスンするアプリのエントリを含む *web.config* ファイル。 このファイルは通常、Azure App Service などの IIS を実行している Web サーバーのルートにデプロイされます。 詳細については、[IIS 用のアプリの構成](configure-web-apps-for-iis-windows.md)に関連するページをご覧ください。 |
 | **Azure 静的ファイルの web.config** | *web.config* ファイル。通常は *static* フォルダー (または、静的な項目を格納する他のフォルダー) に追加されて、そのフォルダーの Python 処理を無効にします。 この構成ファイルは、上記の FastCGI または HttpPlatformHandler 構成ファイルと組み合わせることで、機能します。 詳細については、[IIS 用のアプリの構成](configure-web-apps-for-iis-windows.md)に関連するページをご覧ください。 |

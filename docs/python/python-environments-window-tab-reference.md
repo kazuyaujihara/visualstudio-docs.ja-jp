@@ -3,19 +3,19 @@ title: '[Python 環境] ウィンドウ リファレンス'
 description: Visual Studio の [Python 環境] ウィンドウに表示される各タブの詳細について説明します。
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355777"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366524"
 ---
 # <a name="python-environments-window-tabs-reference"></a>[Python 環境] ウィンドウ タブ リファレンス
 
@@ -60,7 +60,7 @@ ms.locfileid: "58355777"
 
 スタートアップ スクリプトにはインポート、関数定義、その他文字どおりどのようなコードでも含めることができ、**対話型**ウィンドウは自動的にそれを読み込んで実行します。 このようなスクリプトは、2 つの方法で参照されます。
 
-1. 環境をインストールすると、Visual Studio によってフォルダー *Documents\Visual Studio <version>\Python Scripts\\\<environment>* が作成されます。ここで、&lt;version&gt; は Visual Studio バージョン (2017 または 2019 など) です。&lt;environment&gt; は環境の名前と一致します。 **[対話型のスクリプトを確認する]** コマンドを使って、環境固有のフォルダーに簡単に移動できます。 その環境の**対話型**ウィンドウを開始すると、このフォルダーで見つかったすべての *.py* ファイルがアルファベット順に読み込まれて実行されます。
+1. 環境をインストールすると、Visual Studio によってフォルダー *Documents\Visual Studio \<version>\Python Scripts\\\<environment>* が作成されます。ここで、&lt;version&gt; は Visual Studio バージョン (2017 または 2019 など) です。&lt;environment&gt; は環境の名前と一致します。 **[対話型のスクリプトを確認する]** コマンドを使って、環境固有のフォルダーに簡単に移動できます。 その環境の**対話型**ウィンドウを開始すると、このフォルダーで見つかったすべての *.py* ファイルがアルファベット順に読み込まれて実行されます。
 
 1. **[ツール]** > **[オプション]** > **[Python]** > **[対話型ウィンドウ]** タブ (「[対話型ウィンドウ オプション](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)」を参照) の **[スクリプト]** コントロールでは、すべての環境で読み込まれて実行されるスタートアップ スクリプトの追加フォルダーを指定します。 ただし、この機能は現時点では機能しません。
 
@@ -78,17 +78,17 @@ ms.locfileid: "58355777"
 | フィールド | 説明 |
 | --- | --- |
 | **説明** | 環境の名前です。 |
-| **Prefix path (プレフィックスのパス)** | インタープリターの基本フォルダーの場所です。 この値を入力して **[自動検出]** をクリックすると、Visual Studio が他のフィールドを設定します。 |
-| **Interpreter Path (インタープリターのパス)** | インタープリターの実行可能ファイルへのパスです。通常は、プレフィックスのパスの後に **python.exe** を付けたものです。 |
-| **Windowed interpreter (ウィンドウ形式のインタープリター)** | コンソールではない実行可能ファイルへのパスです。多くの場合、プレフィックスのパスの後に **pythonw.exe** を付けたものです。 |
-| **Library path (ライブラリのパス)**<br/>(使用可能な場合) | 標準ライブラリのルートを指定します。ただし、Visual Studio がさらに正確なパスをインタープリターに要求できる場合、この値は無視される可能性があります。 |
-| **Language version (言語バージョン)** | ドロップダウン メニューから選びます。 |
+| **プレフィックスのパス** | インタープリターの基本フォルダーの場所です。 この値を入力して **[自動検出]** をクリックすると、Visual Studio が他のフィールドを設定します。 |
+| **インタープリターのパス** | インタープリターの実行可能ファイルへのパスです。通常は、プレフィックスのパスの後に **python.exe** を付けたものです。 |
+| **ウィンドウ形式のインタープリター** | コンソールではない実行可能ファイルへのパスです。多くの場合、プレフィックスのパスの後に **pythonw.exe** を付けたものです。 |
+| **ライブラリのパス**<br/>(使用可能な場合) | 標準ライブラリのルートを指定します。ただし、Visual Studio がさらに正確なパスをインタープリターに要求できる場合、この値は無視される可能性があります。 |
+| **言語バージョン** | ドロップダウン メニューから選びます。 |
 | **アーキテクチャ** | 通常は自動的に検出されて設定されます。されない場合は **32 ビット**または **64 ビット**を指定します。 |
-| **Path environment variable (パス環境変数)** | 検索パスを探すためにインタープリターが使う環境変数です。 Visual Studio は、Python を開始するとき、プロジェクトの検索パスが含まれるように変数の値を変更します。 通常、このプロパティは **PYTHONPATH** に設定する必要がありますが、一部のインタープリターでは別の値が使われます。 |
+| **パス環境変数** | 検索パスを探すためにインタープリターが使う環境変数です。 Visual Studio は、Python を開始するとき、プロジェクトの検索パスが含まれるように変数の値を変更します。 通常、このプロパティは **PYTHONPATH** に設定する必要がありますが、一部のインタープリターでは別の値が使われます。 |
 
 ## <a name="packages-tab"></a>[パッケージ] タブ
 
-*旧バージョンでは "pip" も表示されます。*
+*旧バージョンでは "pip" とも表示されます。*
 
 pip (**[パッケージ (PyPI)]** タブ) または Conda (**[パッケージ (Conda)]** タブ、Visual Studio 2017 バージョン 15.7 以降の Conda 環境の場合) を使用して、環境にインストールされたパッケージを管理します。 このタブでは、新しいパッケージを検索し、その依存関係と共にインストールすることもできます。
 
@@ -167,7 +167,7 @@ Visual Studio は新しい環境を検出すると (またはユーザーが追�
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio での Python 環境の管理](managing-python-environments-in-visual-studio.md)
+- [Visual Studio で Python 環境を管理する](managing-python-environments-in-visual-studio.md)
 - [プロジェクトのインタープリターの選択](selecting-a-python-environment-for-a-project.md)
-- [依存関係の requirements.txt の使用](managing-required-packages-with-requirements-txt.md)
+- [依存関係に requirements.txt を使用する](managing-required-packages-with-requirements-txt.md)
 - [検索パス](search-paths.md)

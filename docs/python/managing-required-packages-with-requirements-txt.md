@@ -3,19 +3,19 @@ title: requirements.txt ファイルでパッケージ依存関係を管理す�
 description: requirements.txt ファイルは、プロジェクトの依存関係を示すものです。 requirements.txt ファイルを含むプロジェクトを受信した場合は、これらの依存関係を 1 つの手順で簡単にインストールできます。
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 88cd2ee237a92aff4ca6f641556b8003be550c3d
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: a1853df63354801ebf0413d3c8707135cb9bb800
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194841"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365237"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>requirements.txt での必須パッケージの管理
 
@@ -68,7 +68,7 @@ Cleaning up...
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio での Python 環境の管理](managing-python-environments-in-visual-studio.md)
+- [Visual Studio で Python 環境を管理する](managing-python-environments-in-visual-studio.md)
 - [プロジェクトのインタープリターの選択](selecting-a-python-environment-for-a-project.md)
 - [検索パス](search-paths.md)
 - [[Python 環境] ウィンドウ リファレンス](python-environments-window-tab-reference.md)

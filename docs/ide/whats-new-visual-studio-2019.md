@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 04/03/2019
+ms.date: 04/04/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f75f1172e96e3dc2576a199949fdbb0c32f68
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866745"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018156"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
@@ -166,7 +166,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 Azure VM で実行される ASP.NET (Core およびデスクトップ) アプリケーションを対象とするサポートが追加されました。 また、Azure Kubernetes Service で実行されるアプリケーションのサポートが追加されました。 スナップショット デバッガーは、実稼働環境で発生する問題の解決にかかる時間を大幅に短縮するのに役立ちます。
 
-詳細については、「[Debug live ASP.NET apps using the Snapshot Debugger](../debugger/debug-live-azure-applications.md)」(スナップショット デバッガーを使用してライブ ASP.NET アプリをデバッグする) のページを参照してください。
+詳細については、「[Debug live ASP.NET Azure apps using the Snapshot Debugger (スナップショット デバッガーを使用したライブ ASP.NET Azure アプリのデバッグ)](../debugger/debug-live-azure-applications.md)」ページと「[Introducing Time Travel Debugging for Visual Studio Enterprise 2019 (Visual Studio Enterprise 2019 のタイム トラベル デバッグの概要)](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/)」ブログ投稿を参照してください。
 
 ## <a name="give-us-feedback"></a>フィードバックの送信
 
