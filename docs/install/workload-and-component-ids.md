@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b96088a2107ae826067287aee9f306aa0f590329
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 02229fd346ec1ead65e778fcce3ab6cb307e2656
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324040"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018299"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio のワークロードとコンポーネント ID
 
@@ -64,13 +64,16 @@ ms.locfileid: "57324040"
 
 これらの ID の使用方法の詳細については、「[Use Command-Line Parameters to Install Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019)」(コマンドライン パラメーターを使用して Visual Studio をインストールする) ページと[方法:機能拡張プロジェクトの Visual Studio への移行](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019)に関するページも参照してください。
 
+> [!NOTE]
+> 以前のバージョンのワークロードおよびコンポーネントの一覧については、[Visual Studio 2017 のワークロードおよびコンポーネント ID](workload-and-component-ids.md?view=vs-2017) に関するページを参照してください。
+
 ::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio の管理者ガイド](visual-studio-administrator-guide.md)
+* [Visual Studio 用 Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)
 * [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)
   * [コマンド ライン パラメーターの例](command-line-parameter-examples.md)
 * [Visual Studio のオフライン インストールを作成する](create-an-offline-installation-of-visual-studio.md)

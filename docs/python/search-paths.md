@@ -3,19 +3,19 @@ title: Python 検索パスの適用方法
 description: Visual Studio では、システム全体の変数使用を回避する目的で、環境やプロジェクトの検索パスを指定するための特別な方法が用意されています。
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 55995d53f763bcc3f13338e52b255135bbefa15b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147736"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365341"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio による Python 検索パスの使用方法
 
@@ -48,7 +48,7 @@ ms.locfileid: "58147736"
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio での Python 環境の管理](managing-python-environments-in-visual-studio.md)
+- [Visual Studio で Python 環境を管理する](managing-python-environments-in-visual-studio.md)
 - [プロジェクトのインタープリターの選択](selecting-a-python-environment-for-a-project.md)
-- [依存関係の requirements.txt の使用](managing-required-packages-with-requirements-txt.md)
+- [依存関係に requirements.txt を使用する](managing-required-packages-with-requirements-txt.md)
 - [[Python 環境] ウィンドウ リファレンス](python-environments-window-tab-reference.md)

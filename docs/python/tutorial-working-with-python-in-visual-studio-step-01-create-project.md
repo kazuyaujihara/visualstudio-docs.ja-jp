@@ -4,19 +4,19 @@ titleSuffix: ''
 description: 前提条件や新しい Python プロジェクトの作成など、Visual Studio での Python 機能の中核となるチュートリアルの概要と手順 1。
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 23f843c745d672d9aa4f8dcbfec9c25f7ba98919
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155215"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366290"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>チュートリアル: Visual Studio での Python の使用
 
@@ -25,12 +25,12 @@ Python は、信頼性と柔軟性に優れ、簡単に学ぶことができ、�
 Visual Studio は、Python 言語の最上のサポートを提供しています。 このチュートリアルに従って操作すると、以下の作業を実行できます。
 
 - [手順 0:インストール](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [手順 1:Python プロジェクトの作成 (この記事)](#step-1-create-a-new-python-project)
-- [手順 2:動作中の Visual Studio IntelliSense を確認するためのコードの記述と実行](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
-- [手順 3:対話型 REPL ウィンドウでの追加のコードの作成](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
-- [手順 4:完成したプログラムの Visual Studio デバッガーでの実行](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [手順 5:パッケージのインストールと、Python 環境の管理](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
-- [手順 6:Git の操作](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
+- [手順 1: Python プロジェクトの作成 (この記事)](#step-1-create-a-new-python-project)
+- [手順 2: 動作中の Visual Studio IntelliSense を確認するためのコードの記述と実行](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [手順 3: 対話型 REPL ウィンドウでの追加のコードの作成](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+- [手順 4: 完成したプログラムの Visual Studio デバッガーでの実行](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+- [手順 5: パッケージのインストールと、Python 環境の管理。](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+- [手順 6: Git の操作](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 

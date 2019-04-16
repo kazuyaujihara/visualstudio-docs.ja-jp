@@ -1,27 +1,27 @@
 ---
 title: Visual Studio サブスクリプションの Visual Studio IDE 特典 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Visual Studio IDE をダウンロードしてインストールする方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789888"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018143"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>Visual Studio 2017 の特典を使用する
+# <a name="using-the-visual-studio-2019-benefit"></a>Visual Studio 2019 の特典を使用する
 
 Visual Studio のサブスクライバーは、Visual Studio IDE にアクセスできます。  具体的なバージョンは、サブスクリプションのレベルによって異なります。  特典は、サブスクリプション ポータルの [[特典]](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ページの [ツール] カテゴリのタイルとして表示されます。
 
 
 ## <a name="activation-steps"></a>アクティブ化の手順
 
-*(次の例では Visual Studio Enterprise が使われています)*
+*(以下の例では Visual Studio Enterprise が使われています)*
 
 IDE をダウンロードするには:
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
@@ -29,7 +29,7 @@ IDE をダウンロードするには:
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise タイル](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Visual Studio Enterprise のダウンロード結果ページにリダイレクトされ、そこで IDE をダウンロードして、ライセンス認証するためのプロダクト キーを入手できます。 青い **[キーを取得]** リンクをクリックして、プロダクト キーを要求することもできます。あるいは、後から [[プロダクト キー]](https://my.visualstudio.com/productkeys) ページでキーを要求できます。
+3. Visual Studio のダウンロード結果ページにリダイレクトされ、そこで IDE をダウンロードして、ライセンス認証するためのプロダクト キーを入手できます。 青い **[キーを取得]** リンクをクリックして、プロダクト キーを要求することもできます。あるいは、後から [[プロダクト キー]](https://my.visualstudio.com/productkeys) ページでキーを要求できます。
 4. [ダウンロードの結果] ページの [詳細] タブで、次のようにします。
    - 必要なアーキテクチャ (x86、x64) を選びます。
    - 言語を選びます。

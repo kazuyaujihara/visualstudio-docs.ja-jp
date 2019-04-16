@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983275"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232594"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig での .NET の名前付け規則
 
@@ -76,8 +76,21 @@ ms.locfileid: "57983275"
 - private\_protected
 - local
 
-> [!NOTE]
-> 対象とするシンボルの種類にアクセシビリティが適用されない場合は、アクセシビリティ レベルを名前付け規則の一部には指定しません。 たとえば、パラメーターにはアクセシビリティ レベルはありません。 パラメーターの名前付け規則にアクセシビリティ レベルを指定すると、名前付け規則は正しく機能しません。
+   `local` アクセシビリティ レベルは、メソッド内で定義された記号に適用されます。 コード内でアクセシビリティを指定できない記号には、名前規則を定義すると便利です。 たとえば、定数 (`required_modifiers = const`) の名前規則に `applicable_accessibilities = local` を指定した場合、規則はメソッド内で定義された定数のみに適用され、型の中で定義されたものには適用されません。
+
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
 
 ### <a name="symbol-modifiers-optional"></a>シンボルの修飾子 (省略可能)
 
@@ -156,8 +169,8 @@ ms.locfileid: "57983275"
 ------------ | -------------
 none または silent | このスタイルに準拠していないときは、ユーザーには何も表示されません。ただし、自動生成コードは、このスタイルに従います。
 修正候補 | このスタイルに準拠していないとき、修正候補としてユーザーに表示されます (最初の 2 文字の下に点線が付きます)。 コンパイル時には影響しません。
-警告 | このスタイルに準拠していないとき、**エラー一覧**にコンパイラの警告が表示されます。
-エラー | このスタイルに準拠していないとき、**エラー一覧**にコンパイラ エラーが表示されます。
+warning | このスタイルに準拠していないとき、**エラー一覧**にコンパイラの警告が表示されます。
+error | このスタイルに準拠していないとき、**エラー一覧**にコンパイラ エラーが表示されます。
 
 > [!NOTE]
 > 名前付け規則違反を確認するために、プロジェクトをビルドする必要はありません。 名前付け規則違反は、コードの編集時に、**エラー一覧**に表示されるか、または修正候補として表示されます。

@@ -4,23 +4,23 @@ titleSuffix: ''
 description: Visual Studio の Python の中核となるチュートリアルの手順 6 では、Visual Studio の Git 関連の機能について説明しています。
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 386821867b1f7290fd195322a699eb161536a06b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919860"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365999"
 ---
 # <a name="step-6-work-with-git"></a>手順 6: Git の操作
 
-**前の手順: [パッケージのインストールと、Python 環境の管理](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
+**前の手順:[パッケージのインストールと Python 環境の管理](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
 Visual Studio には、ローカルの Git リポジトリと、GitHub や Azure Repos などのサービス上のリモート リポジトリを直接統合できます。 この統合には、リポジトリの複製、変更のコミット、分岐の管理が含まれます。
 

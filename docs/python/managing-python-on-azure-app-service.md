@@ -3,20 +3,20 @@ title: Azure App Service での Python の構成 (Windows)
 description: Azure App Service に Python インタープリターとライブラリをインストールし、そのインタープリターを正しく参照するように Web アプリケーションを構成する方法について説明します。
 ms.date: 01/07/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: c0f0cdb6c1807aa8ce0a30e7371fe8ad4270ca7b
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 7ffe0de939eba8af38c132fc3de5c96a9499e3f0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324183"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366667"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Azure App Service で Python 環境を設定する方法 (Windows)
 
@@ -151,8 +151,8 @@ FastCGI は、要求レベルで動作するインターフェイスです。 II
 ここで定義した `<appSettings>` はアプリで環境変数として使用できます。
 
 - `PYTHONPATH` の値は、自由に拡張できますが、アプリのルートを含める必要があります。
-- `WSGI_HANDLER` はアプリからインポート可能な WSGI アプリをポイントする必要があります。
-- `WSGI_LOG` は省略可能ですが、アプリのデバッグのために推奨します。
+- `WSGI_HANDLER`  はアプリからインポート可能な WSGI アプリをポイントする必要があります。
+- `WSGI_LOG`  は省略可能ですが、アプリのデバッグのために推奨します。
 
 Bottle、Flask、および Django Web アプリ用の *web.config* コンテンツのその他の詳細については、[Azure への発行](publishing-python-web-applications-to-azure-from-visual-studio.md)に関するページをご覧ください。
 

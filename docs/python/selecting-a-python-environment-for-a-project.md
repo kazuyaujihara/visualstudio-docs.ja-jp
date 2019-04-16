@@ -3,19 +3,19 @@ title: プロジェクトの Python インタープリターと環境を選択�
 description: Anaconda や仮想環境を含む Python 環境を具体的に選択して、特定のプロジェクトに適用することができます。
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bf1937c92f5da234ab72934c5acd52bc9cd0a6b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 9d7736365e8e2bb371a71580492401bb2660fcc3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194964"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366186"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>プロジェクトの Python 環境を選択する方法
 
@@ -169,11 +169,11 @@ Visual Studio 内では、ほとんどの環境のパッケージ (および依�
 また、現在 Visual Studio では、`conda` を使用して conda 環境にパッケージをインストールする操作はサポートされていません。 代わりにコマンド ラインから `conda` を使用してください。
 
 > [!Tip]
-> pip がパッケージのインストールに失敗する一般的な状況は、パッケージの *\*.pyd* ファイルにネイティブ コンポーネントのソース コードが含まれる場合です。 必要なバージョンの Visual Studio がインストールされていない場合、pip はこれらのコンポーネントをコンパイルできません。 このような状況では、"**エラー:vcvarsall.bat が見つかりません**" というエラー メッセージが表示されます。 多くの場合、`easy_install` を使用してコンパイル済みのバイナリをダウンロードでき、Python の古いバージョンに適したコンパイラを [https://aka.ms/VCPython27](https://aka.ms/VCPython27) からダウンロードできます。 詳しくは、Python Tools チーム ブログの「[How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/)」("vcvarsallbat が見つからない" という問題への対処方法) をご覧ください。
+> pip がパッケージのインストールに失敗する一般的な状況は、パッケージの *\*.pyd* ファイルにネイティブ コンポーネントのソース コードが含まれる場合です。 必要なバージョンの Visual Studio がインストールされていない場合、pip はこれらのコンポーネントをコンパイルできません。 このような状況では、"**エラー:vcvarsall.bat が見つかりません**" というエラー メッセージが表示されます。 `easy_install`  では、多くの場合、コンパイル済みのバイナリをダウンロードでき、Python の古いバージョンに適したコンパイラを [https://aka.ms/VCPython27](https://aka.ms/VCPython27) からダウンロードできます。 詳しくは、Python Tools チーム ブログの「[How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/)」("vcvarsallbat が見つからない" という問題への対処方法) をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio での Python 環境の管理](managing-python-environments-in-visual-studio.md)
-- [依存関係の requirements.txt の使用](managing-required-packages-with-requirements-txt.md)
+- [Visual Studio で Python 環境を管理する](managing-python-environments-in-visual-studio.md)
+- [依存関係に requirements.txt を使用する](managing-required-packages-with-requirements-txt.md)
 - [検索パス](search-paths.md)
 - [[Python 環境] ウィンドウ リファレンス](python-environments-window-tab-reference.md)

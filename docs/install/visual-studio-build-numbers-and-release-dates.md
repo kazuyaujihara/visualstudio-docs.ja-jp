@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/26/2019
+ms.date: 04/03/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3e88054d497bda068585b7bc58787ee3058bcb71
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 3b1be29663bacee5719749746f6275aba4381f99
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476086"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018247"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio のビルド番号とリリース日
 
@@ -31,6 +31,7 @@ ms.locfileid: "58476086"
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.11 | 解放 | 2019 年 4 月 2 日 | 15.9.28307.586 |
 | 15.9.10 | 解放 | 2019 年 3 月 25 日 | 15.9.28307.557 |
 | 15.9.9 | 解放 | 2019 年 3 月 12 日 | 15.9.28307.518 |
 | 15.0.21 | 解放 | 2019 年 3 月 12 日 | 15.0.26228.76 |
@@ -192,6 +193,10 @@ ms.locfileid: "58476086"
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | 解放 | 2019 年 4 月 2 日 | 16.0.28729.10 |
+| 16.0.0 | Preview 5 | 2019 年 4 月 2 日 | 16.0.28729.10 |
+| 16.0.0 | リリース候補 4 (RC.4) | 2019 年 3 月 26 日 | 16.0.28721.148 |
+| 16.0.0 | Preview 4.4 | 2019 年 3 月 26 日 | 16.0.28721.148 |
 | 16.0.0 | リリース候補 3 (RC.3) | 2019 年 3 月 19 日 | 16.0.28714.193 |
 | 16.0.0 | プレビュー 4.3 | 2019 年 3 月 19 日 | 16.0.28714.193 |
 | 16.0.0 | リリース候補 2 (RC.2) | 2019 年 3 月 12 日 | 16.0.28711.60 |
@@ -208,6 +213,9 @@ ms.locfileid: "58476086"
 | 16.0.0 | Preview 2 | 2019 年 1 月 23 日 | 16.0.28522.59 |
 | 16.0.0 | プレビュー 1.1 | 2018 年 12 月 10 日 | 16.0.28408.50 |
 | 16.0.0 | Preview 1 | 2018 年 12 月 4 日 | 16.0.28329.73 |
+
+> [!NOTE]
+> 以前のバージョンのビルド番号とリリース日の一覧については、[Visual Studio 2017 のビルド番号とリリース日](visual-studio-build-numbers-and-release-dates.md?view=vs-2017)に関するページを参照してください。
 
 ::: moniker-end
 

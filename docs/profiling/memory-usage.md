@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd36bf3381c2b3bdd604dad9bc1aaf3ad37b36d4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868988"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232776"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio でのメモリ使用量の測定
 
@@ -54,13 +54,13 @@ ms.locfileid: "57868988"
 
 4.  ツールバーにある **[ツールの選択]** の設定で、**[メモリ使用量]** を選択します。
 
-     ![診断ツールを表示する](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![診断ツールを表示する](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
 5.  **[デバッグ]、[デバッグの開始]** の順にクリックします (あるいは、ツール バーの **[開始]** をクリックするか、**F5** を押します)。
 
      アプリケーションが読み込みを完了すると、診断ツールの概要ビューが表示されます。
 
-     ![診断ツールの概要タブ](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![診断ツールの概要タブ](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      >  メモリ データの収集はネイティブ アプリや混在モードのアプリのパフォーマンスに影響する可能性があるため、既定でメモリのスナップショットは無効になっています。 ネイティブ アプリや混在モードのアプリのスナップショットを有効にするには、デバッグ セッションを開始します (ショートカット キー: **F5**)。 **[診断ツール]** ウィンドウが表示されたら、**[メモリ使用量]** タブ、**[ヒープのプロファイル]** の順に選択します。
@@ -150,7 +150,7 @@ ms.locfileid: "57868988"
 
 - **[診断ツール]** ウィンドウの **[メモリ使用量]** タブで、概要テーブルのセルにある変更リンクを選択します。
 
-   ![変更 &#40;差分&#41; レポートの選択](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![変更 &#40;diff&#41; レポートの選択](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - マネージド レポート、もしくはネイティブ レポートの **[比較対象]** 一覧でスナップショットを選択します。
 
@@ -164,7 +164,7 @@ ms.locfileid: "57868988"
 
 [デバッグ中に CPU とメモリを分析する](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
-[Visual C++ ブログ:Visual C++ 2015 のメモリ プロファイル](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
+[Visual C++ ブログ:Visual C++ 2015 でのメモリ プロファイル](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
 ## <a name="next-steps"></a>次の手順
 

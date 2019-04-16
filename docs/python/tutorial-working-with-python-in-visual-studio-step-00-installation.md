@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Visual Studio で Python を使用するための中核となるチュートリアルの手順 0 (インストールの前提条件)。
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a67b471a798a1a7aaf35b713f22d60d98f54dc5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355095"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59367018"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Visual Studio での Python サポートのインストール
 
@@ -42,7 +42,7 @@ ms.locfileid: "58355095"
 ## <a name="next-step"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [手順 1:Python プロジェクトの作成](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [手順 1: Python プロジェクトの作成](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>関連項目
 

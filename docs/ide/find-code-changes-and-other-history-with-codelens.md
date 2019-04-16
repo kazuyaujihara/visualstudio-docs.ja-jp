@@ -9,21 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867856"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232711"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens によるコード変更とその他の履歴の検索
 
 CodeLens では、エディターを離れずにコードに関する情報を検索できるため、自分の作業に専念できます。 コードの参照、コードへの変更、リンクされたバグ、作業項目、コード レビュー、単体テストを検索できます。
 
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> ソース管理の CodeLens インジケーターは、Visual Studio Community エディションでは使用できません。
+
+::: moniker-end
+
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> CodeLens は、Visual Studio Enterprise エディションと Visual Studio Professional エディションでのみ使用できます。 Visual Studio Community エディションでは使用できません。
+> CodeLens は、Visual Studio の Enterprise および Professional エディションのみで使用できます。 Visual Studio Community エディションでは使用できません。
 
 ::: moniker-end
 
@@ -41,7 +48,7 @@ CodeLens では、エディターを離れずにコードに関する情報を�
 
 C# コードまたは Visual Basic コードでの参照を検索することができます。
 
-1. **参照**インジケーターを選択するか、**Alt** + **2** キーを押します。
+1. **参照**インジケーターを選択するか、または **Alt** + **2** キーを押します。
 
    ![CodeLens 参照](../ide/media/codelens-view-references.png)
 
@@ -60,15 +67,15 @@ C# コードまたは Visual Basic コードでの参照を検索することが
 
 ![CodeLens - コード マップ上の参照](../ide/media/codelensmappedreferences.png)
 
-## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>コードに含まれる変更の検索
+## <a name="find-changes-in-your-code"></a>コードに含まれる変更の検索
 
 コードの変遷をたどるため、コードの履歴を確認します。 または、他の分岐での変更がコードに与える可能性のある影響を理解できるよう、変更をコードにマージする前に、それらの変更を検討します。
 
 要件:
 
-- Visual Studio 2019 (または、Visual Studio 2017 Enterprise/Professional Edition)
+- Visual Studio Enterprise または Professional エディション
 
-- Team Foundation Server 2013 以降、Azure DevOps Services、または Git
+- Azure DevOps Services、Team Foundation Server 2013 以降、または Git
 
 - コード エディターからチームと通信するための [Skype for Business](/skypeforbusiness/)
 
@@ -82,7 +89,7 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
 ### <a name="code-element-level-indicators"></a>コードの要素レベルのインジケーター
 
-コードの要素レベルのインジケーターでは、コードを変更したユーザー、およびそのユーザーが変更した内容を確認できます。 コードの要素レベルのインジケーターは、C# および Visual Basic コードに対して利用できます。
+コードの要素レベルのインジケーターでは、コードの変更者とその変更内容を確認できます。 コードの要素レベルのインジケーターは、C# および Visual Basic コードに対して利用できます。
 
 これは、Team Foundation Server または Azure DevOps Services で Team Foundation バージョン管理 (TFVC) を使用するときに表示されます。
 
@@ -224,11 +231,11 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
      ![CodeLens - 単体テストの定義に移動する](../ide/media/codelens-unit-test-definition.png)
 
-6. テスト結果を確認するには、テスト状態インジケーター (![テスト失敗アイコン](../ide/media/codelenstestfailedicon.png)または![テスト成功アイコン](../ide/media/codelenstestpassedicon.png)) を選択するか、**Alt** + **1** キーを押します。
+6. テストの結果を確認するには、テスト状態インジケーター (![テスト失敗アイコン](../ide/media/codelenstestfailedicon.png)または![テスト成功アイコン](../ide/media/codelenstestpassedicon.png)) を選択するか、**Alt** + **1** キーを押します。
 
      ![CodeLens - 単体テストの結果を表示する](../ide/media/codelens-unit-test-result.png)
 
-7. 何人のユーザーによってこのテストが変更されたか、だれがこのテストを変更したか、また、このテストに対していくつの変更が行われたかを確認するには、[コードの履歴とリンクされた項目を検索](#find-code-history)します。
+7. 何人のユーザーによってこのテストが変更されたか、だれがこのテストを変更したか、また、このテストに対していくつの変更が行われたかを確認するには、[コードの履歴とリンクされた項目を検索](#find-changes-in-your-code)します。
 
 ## <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
@@ -241,7 +248,7 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
 ## <a name="q--a"></a>Q & A
 
-### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>Q:CodeLens を有効または無効にする方法、表示するインジケーターを選択する方法を教えてください。
+### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>Q:CodeLens を有効または無効にしたり、表示するインジケーターを選択したりするには、どうしたらいいですか。
 
 **A:** 参照インジケーター以外のインジケーターは無効にも有効にもできます。 **[ツール]**、**[オプション]**、**[テキスト エディター]**、**[すべての言語]**、**[CodeLens]** の順に進みます。
 
@@ -265,6 +272,20 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
 - アプリケーション コードに単体テストがない場合は、単体テスト インジケーターが表示されません。 テスト状態インジケーターは、テスト プロジェクトに自動的に表示されます。 アプリケーション コードに単体テストがあることがわかっているのに、テスト インジケーターが表示されない場合は、ソリューションのビルドを試みます (**Ctrl** + **Shift** + **B**)。
 
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> ソース管理のインジケーターは、Visual Studio Community エディションでは使用できません。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> CodeLens は、Visual Studio Community エディションでは使用できません。
+
+::: moniker-end
+
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Q:コミットの作業項目詳細が表示されないのはなぜですか。
 
 **A:** CodeLens が Azure Boards または TFS で作業項目を見つけることができない可能性があります。 その作業項目があるプロジェクトに接続していることと、その作業項目を表示するアクセス許可があることを確認してください。 Azure Boards または TFS での作業項目 ID に関する誤った情報がコミットの説明に含まれている場合、作業項目の詳細が表示されないこともあります。
@@ -275,7 +296,7 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
 ![CodeLens - 変更セット所有者にメールで連絡する](../ide/media/codelenscodesendmailchangesetnolync1.png)
 
-**サポートされる Skype および Lync 構成**
+**どの Skype および Lync 構成がサポートされていますか。**
 
 - Skype for Business (32 ビットまたは 64 ビット)
 
@@ -313,11 +334,11 @@ CodeLens では、異なるバージョン の Lync または Skype はインス
 
 - **参照**:このインジケーターは、コードが変更されるときに自動的に更新されます。 **参照**インジケーターが独立したウィンドウとしてドッキングされている場合は、**[更新]** を選択することでインジケーターを更新できます。
 
-     ![CodeLens 参照の [更新] ボタン](../ide/media/codelensviewreferencesdocked.png)
+   ![CodeLens 参照の [更新] ボタン](../ide/media/codelensviewreferencesdocked.png)
 
 - **チーム**:これらのインジケーターを更新するには、右クリック メニューから **[CodeLens チームのインジケーターの更新]** を選択します。
 
-     ![[CodeLens チームのインジケーターの更新] メニュー項目](../ide/media/codelensrefreshindicatorsfromcode.png)
+   ![[CodeLens チームのインジケーターの更新] メニュー項目](../ide/media/codelensrefreshindicatorsfromcode.png)
 
 - **テスト**:[コードの単体テストを検索し](#associated-unit-tests)、**テスト** インジケーターを更新します。
 

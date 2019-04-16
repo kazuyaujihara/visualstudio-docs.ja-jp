@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Visual Studio プロジェクトのコンテキストにおける Flask の基本のチュートリアルです。具体的には、Flask Web プロジェクトと Flask/Jade Web プロジェクト テンプレートの機能について取り上げます。
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b17400aae5386a2d86cc13d0b81293bd2ef068fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908921"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366446"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>手順 4: 完全な Flask Web プロジェクト テンプレートを使用する
 

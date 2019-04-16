@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Visual Studio プロジェクトのコンテキストにおける Django の基本のチュートリアルです。具体的には、Django Web プロジェクト テンプレートによって提供される認証機能について取り上げます。
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 01c37d70fd38ce8e35b1903308773ccf38203170
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955181"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366030"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>手順 5: Django でユーザーを認証する
 
