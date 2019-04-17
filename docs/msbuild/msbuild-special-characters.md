@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad150a2eb9e27a9b2ce1e2e293d84ed956d8a7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a87013ff3a1911caa667f7ba431e408fc87a98f4
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603314"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584481"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild の特殊文字
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、特定の文脈で特別な使い方をするためにいくつかの文字が予約されています。 予約されている文脈でそのような文字を文字通り使用するには、エスケープする必要があります。 たとえば、アスタリスクは、項目定義の `Include` 属性と `Exclude` 属性、ならびに `CreateItem` の呼び出しで特別な意味を持ちます。 このような文脈でアスタリスクをアスタリスクとして表示するには、エスケープする必要があります。 その他の文脈では、アスタリスクを使う場所でそれを入力できます。
@@ -32,7 +32,7 @@ ms.locfileid: "56603314"
 |%|%25|メタデータを参照する|
 |$|%24|プロパティを参照する|
 |@|%40|項目一覧を参照する|
-|'|%27|条件とその他の式|
+|\'|%27|条件とその他の式|
 |;|%3B|一覧の区切り記号|
 |?|%3F|`Include` 属性と `Exclude` 属性のファイル名のワイルドカード文字|
 |*|%2A|`Include` 属性と `Exclude` 属性のファイル名で使用するワイルドカード文字|
