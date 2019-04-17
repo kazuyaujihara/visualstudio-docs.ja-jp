@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e011d564af02bf6370536086ad0c95b5432cfa04
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354844"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504225"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して ASP.NET をデバッグする
 
@@ -28,7 +28,7 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 1. Visual Studio を開きます。
 
     ::: moniker range=">=vs-2019"
-    **Ctrl + Q** キーを押して検索ボックスを開き、「**asp.net**」と入力し、**[テンプレート]** を選択してから、**[新しい ASP.NET Core Web アプリケーションの作成]** を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**asp.net**」と入力し、**[テンプレート]** を選択してから、**[新しい ASP.NET Core Web アプリケーションの作成]** を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
     上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** の左側のウィンドウで、**[Visual C#]** の下にある **[Web]** を選択し、次に、真ん中のウィンドウで **[ASP.NET Core Web アプリケーション]** を選択します。 「**MyDbgApp**」のような名前を入力し、**[OK]** をクリックします。
@@ -138,4 +138,4 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 このチュートリアルでは、デバッガーを起動する方法、コードをステップ実行する方法、変数を確認する方法について学習しました。 必要に応じて、デバッガー機能の概要と、詳細情報へのリンクを取得します。
 
 > [!div class="nextstepaction"]
-> [デバッガー機能ツアー](../debugger/debugger-feature-tour.md)
+> [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ba9ff86db64c59d8be581dc778db5ffa6d56f4a
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: cdd82bffcbdbbf4ee176c7ffd643cd920d1c5268
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355660"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790148"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>チュートリアル: Visual Studio を使用した C# のデバッグについて理解する
 
@@ -58,7 +58,7 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 1. Visual Studio を開きます。
 
     ::: moniker range=">=vs-2019"
-    **Ctrl + Q** キーを押して検索ボックスを開き、「**コンソール**」と入力し、**[テンプレート]** を選択して、**[Create new Console App (.NET Framework) project]\(新しいコンソール アプリ (.NET Framework) プロジェクトの作成\)** を選択します。 表示されたダイアログ ボックスで、**get-started-debugging** のような名前を入力して、**[作成]** をクリックします。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**コンソール**」と入力し、**[テンプレート]** を選択して、**[Create new Console App (.NET Framework) project]\(新しいコンソール アプリ (.NET Framework) プロジェクトの作成\)** を選択します。 表示されたダイアログ ボックスで、**get-started-debugging** のような名前を入力して、**[作成]** をクリックします。
     ::: moniker-end
     ::: moniker range="vs-2017"
     上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual C#]** の下にある **[Windows デスクトップ]** を選択し、次に真ん中のウィンドウで **[コンソール アプリ (.NET Framework)]** を選択します。 次に、「**get-started-debugging**」ような名前を入力し、**[OK]** をクリックします。

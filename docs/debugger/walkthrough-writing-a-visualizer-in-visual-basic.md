@@ -1,7 +1,7 @@
 ---
 title: Visual Basic でビジュアライザーを記述 |Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2016
+ms.date: 04/12/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24138337ab5adbbcabb9b0ab03cc411392565622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: d30e789d0ae3fa3e717be9739b94439a7d6a31a2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988364"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584546"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>チュートリアル: Visual Basic でビジュアライザーを記述する
 このチュートリアルでは、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] を使用して簡単なビジュアライザーを作成する方法を説明します。 このチュートリアルで作成するビジュアライザーは、Windows フォーム メッセージ ボックスを使用して文字列の内容を表示します。 この単純な文字列のビジュアライザーは基本的な例で、プロジェクトに合わせて他のデータ型向けのビジュアライザーを作成するときに参考になります。
@@ -36,15 +36,16 @@ ms.locfileid: "54988364"
 
 ### <a name="to-create-a-class-library-project"></a>クラス ライブラリ プロジェクトを作成するには
 
-1. **[ファイル]** メニューの **[新規作成]** をポイントし、**[新しいプロジェクト]** をクリックします。
+1. 新しいクラス ライブラリ プロジェクトを作成します。
 
-2. **新しいプロジェクト**ダイアログ ボックスで、 **Visual Basic**します。
+    ::: moniker range=">=vs-2019"
+    **Esc** キーを押してスタート ウィンドウを閉じます。 型**Ctrl + Q**を検索ボックスを開き、「 **visual basic**、選択**テンプレート**、を選択し、**新しいクラス ライブラリ (.NET Standard)作成**. 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 左側のウィンドウで、**新しいプロジェクト**ダイアログ ボックスで、 **Visual Basic**、選択 **.NET Standard**、中央のペインの **クラス ライブラリ (.NET標準)** します。
+    ::: moniker-end
 
-3. [ **.NET Standard**、] をクリックして**クラス ライブラリ**します。
-
-4. **[名前]** ボックスに、クラス ライブラリの名前 (**MyFirstVisualizer** など) を入力します。
-
-5. **[OK]** をクリックします。
+2. クラス ライブラリでは、適切な名前を入力します。 `MyFirstVisualizer`、順にクリックします**作成**または**OK**します。
 
    クラス ライブラリを作成したら、Microsoft.VisualStudio.DebuggerVisualizers.DLL への参照を追加することによって、この DLL で定義されているクラスを使用できるようにします。 ただし、最初にプロジェクトにわかりやすい名前を付けます。
 
@@ -59,7 +60,9 @@ ms.locfileid: "54988364"
 
 3. **ソリューション エクスプローラー**で、**[My First Visualizer]** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
 
-4. **[参照の追加]** ダイアログ ボックスの **[.NET]** タブで、Microsoft.VisualStudio.DebuggerVisualizers.DLL をクリックします。
+4. **参照の追加**] ダイアログ ボックス [、**参照**] タブで [**参照**Microsoft.VisualStudio.DebuggerVisualizers.DLL を見つけるとします。
+
+    DLL を検索する *\<Visual Studio インストール ディレクトリ > \Common7\IDE\PublicAssemblies* Visual Studio のインストール ディレクトリのサブディレクトリ。
 
 5. **[OK]** をクリックします。
 
@@ -105,7 +108,9 @@ ms.locfileid: "54988364"
 
 1.  **ソリューション エクスプローラー**で、**[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
 
-2.  **[参照の追加]** ダイアログ ボックスの **[.NET]** タブで、**System.Windows.Forms** をクリックします。
+2. **参照の追加**] ダイアログ ボックスの [、**参照**] タブで [**参照**System.Windows.Forms.DLL を見つけてします。
+
+    DLL を検索する*C:\Windows\Microsoft.NET\Framework\v4.0.30319*します。
 
 3.  **[OK]** をクリックします。
 
@@ -163,13 +168,16 @@ ms.locfileid: "54988364"
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>ソリューションにコンソール アプリケーション プロジェクトを追加するには
 
-1. **[ファイル]** メニューの **[追加]** をポイントし、**[新しいプロジェクト]** をクリックします。
+1. ソリューション エクスプ ローラーでソリューションを右クリックし、選択**追加**、 をクリックし、**新しいプロジェクト**します。
 
-2. **新しいプロジェクトの追加**ダイアログ ボックスで、 **Visual Basic**、 をクリックし、**コンソール アプリケーション**します。
+    ::: moniker range=">=vs-2019"
+    検索ボックスに「 **visual basic**、選択**テンプレート**、を選択し、**新しいコンソール アプリ (.NET Framework) の作成**です。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual Basic]** の下にある **[Windows デスクトップ]** を選択し、次に真ん中のウィンドウで **[コンソール アプリ (.NET Framework)]** を選択します。
+    ::: moniker-end
 
-3. **[名前]** ボックスに、コンソール アプリケーション用のわかりやすい名前 (**MyTestConsole** など) を入力します。
-
-4. **[OK]** をクリックします。
+2. クラス ライブラリでは、適切な名前を入力します。 `MyTestConsole`、順にクリックします**作成**または**OK**します。
 
    次に、必要な参照を追加して、MyTestConsole が MyFirstVisualizer を呼び出すことができるようにします。
 
@@ -177,7 +185,7 @@ ms.locfileid: "54988364"
 
 1.  **ソリューション エクスプローラー**で、**MyTestConsole** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
 
-2.  **[参照の追加]** ダイアログ ボックスの **[.NET]** タブで、Microsoft.VisualStudio.DebuggerVisualizers をクリックします。
+2.  **参照の追加** ダイアログ ボックスで、**参照** タブで、Microsoft.VisualStudio.DebuggerVisualizers をクリックします。
 
 3.  **[OK]** をクリックします。
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee57fe4d2df3a9d1fa9f4f8a624e7b63caa1f7fd
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: ac95fc54b410700f3ce28f3ace6192787400d64b
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475956"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504212"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して C++ でデバッグする
 
@@ -28,7 +28,7 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 1. Visual Studio を開き、プロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Ctrl + Q** キーを押して検索ボックスを開き、「**c++**」と入力し、**[テンプレート]**、**[新しいコンソール アプリ プロジェクトの作成]** の順に選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**c++**」と入力し、**[テンプレート]**、**[新しいコンソール アプリ プロジェクトの作成]** の順に選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
     上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** の左側のウィンドウで、**[Visual C++]** の下にある **[Windows デスクトップ]** を選択し、真ん中のウィンドウで **[Windows コンソール アプリケーション]** を選択します。 次に、「**MyDbgApp**」のような名前を入力し、**[OK]** をクリックします。
@@ -138,4 +138,4 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 このチュートリアルでは、デバッガーを起動する方法、コードをステップ実行する方法、変数を確認する方法について学習しました。 必要に応じて、デバッガー機能の概要と、詳細情報へのリンクを取得します。
 
 > [!div class="nextstepaction"]
-> [デバッガー機能ツアー](../debugger/debugger-feature-tour.md)
+> [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
