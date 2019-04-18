@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8887f4cd6b4dcd7f08e808f1271f5d546d6a224c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f24fa988cf14bbf48fe157e2b9ee538d3eff2f35
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159180"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537531"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Visual Studio でデコンストラクターを生成する
 
@@ -26,21 +26,21 @@ ms.locfileid: "58159180"
 
 **条件:** 型を自動的に正しく分解します。
 
-**理由:** デコンストラクターの型を手動で指定できます。ただし、この機能では、正しい out パラメーターと共にスタブが生成されます。
+**理由:** デコンストラクターの型は手動で指定できますが、この機能では、正しい out パラメーターと共にスタブが生成されます。
 
-## <a name="generate-deconstructor"></a>デコンストラクターの生成
+## <a name="generate-a-deconstructor"></a>デコンストラクターを生成する
 
-1. out パラメーターを指定し、新しい型を宣言します。 この宣言により、宣言に一致するデコンストラクト インスタンスが見つからないとき、エラーが表示されます。
+1. out パラメーターを指定し、新しい型を宣言します。 この宣言により、宣言に一致するデコンストラクト インスタンスが見つからないとき、エラーが発生します。
 
    ![デコンストラクター不足エラー](media/deconstruct.png)
 
-2. 次に、以下のいずれかを実行します。
+2. 次のいずれかの手順を実行します。
 
    - **キーボード**
-      - 宣言にカーソルを置き、**Ctrl**+ **を押します。** **[クイック アクションとリファクタリング]** メニューをトリガーします。
+      - 宣言にカーソルを置き、Ctrl + . キーを選択します **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
-      - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
+      - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
 
       ![デコンストラクターの生成のコード修正](media/deconstruct-codefix.png)
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790538"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504303"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio の機能
 
@@ -100,7 +100,7 @@ Visual Studio の **SQL Server オブジェクト エクスプローラー**で�
 
 ## <a name="debug-test-and-improve-your-code"></a>デバッグとテストによるコードの改善
 
-コードを記述する際には、バグの存在やパフォーマンスを確認するために実際に実行してテストする必要があります。 Visual Studio の最新のデバッグ システムを使うと、ローカル プロジェクト、リモート デバイス、または[デバイス エミュレーター](../cross-platform/visual-studio-emulator-for-android.md)で実行されるコードをデバッグできます。 一度に 1 つのステートメントずつ、コードを実行して必要に応じて変数を検査できます。 指定した条件が True の場合にのみヒットするブレークポイントを設定することができます。 デバッグ オプションはコード エディター自体で管理できるため、コードを離れる必要はありません。 Visual Studio でのデバッグの詳細については、[デバッガーの機能ツアー](../debugger/debugger-feature-tour.md)に関するページをご覧ください。
+コードを記述する際には、バグの存在やパフォーマンスを確認するために実際に実行してテストする必要があります。 Visual Studio の最新のデバッグ システムを使うと、ローカル プロジェクト、リモート デバイス、または[デバイス エミュレーター](../cross-platform/visual-studio-emulator-for-android.md)で実行されるコードをデバッグできます。 一度に 1 つのステートメントずつ、コードを実行して必要に応じて変数を検査できます。 指定した条件が True の場合にのみヒットするブレークポイントを設定することができます。 デバッグ オプションはコード エディター自体で管理できるため、コードを離れる必要はありません。 Visual Studio でのデバッグの詳細については、[デバッガーでのはじめに](../debugger/debugger-feature-tour.md)に関するページをご覧ください。
 
 アプリのパフォーマンスを改善する方法の詳細については、Visual Studio の[プロファイリング](../profiling/profiling-feature-tour.md)に関するページを参照してください。
 

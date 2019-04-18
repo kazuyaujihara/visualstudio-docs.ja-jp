@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610607"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584559"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
 次の表は、Visual Studio プロジェクト ファイルで定義される、または MSBuild に用意されている *.targets* ファイルに含まれている、使用頻度の高いプロパティを示しています。
@@ -54,7 +54,7 @@ ms.locfileid: "56610607"
 | CscToolPath | [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] コンパイラ *csc.exe* のパスです。 |
 | CustomBeforeMicrosoftCommonTargets | 共通ターゲットのインポートの前に自動的にインポートされるプロジェクト ファイルまたは targets ファイルの名前です。 |
 | DebugSymbols | ビルド時にシンボルを生成するかどうかを示すブール値です。<br /><br /> コマンド ラインで **-p:DebugSymbols=false** と設定すると、プログラム データベース (*.pdb*) シンボル ファイルの生成が無効になります。 |
-| DebugType | 生成するデバッグ情報のレベルを定義します。 有効な値は "full"、"pdbonly"、および "none" です。 |
+| DebugType | 生成するデバッグ情報のレベルを定義します。 有効な値は "full"、"pdbonly"、"portable"、"embedded、"および "none" です。 |
 | DefineConstants | 条件付きコンパイル定数を定義します。 次の構文に従い、シンボルと値のペアをセミコロン (;) で区切って指定します。<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> このプロパティは、`/define` コンパイラ スイッチに相当します。 |
 | DefineDebug | 定数 DEBUG を定義するかどうかを示すブール値です。 |
 | DefineTrace | 定数 TRACE を定義するかどうかを示すブール値です。 |

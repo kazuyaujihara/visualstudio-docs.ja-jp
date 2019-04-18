@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897739"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584403"
 ---
 # <a name="walkthrough-use-msbuild"></a>チュートリアル: MSBuild の使用
 
@@ -416,7 +416,7 @@ Message タスクに変更を加えて、復帰と改行 (%0A%0D) を使用し�
  この例では、*images* フォルダーにある拡張子が *.jpeg* のすべてのファイルが項目の種類 Photos に追加されます。もう 1 つ例を見てましょう。
 
 ```xml
-<Photos Include="images\**.jpeg" />
+<Photos Include="images\**\*.jpeg" />
 ```
 
  この例では、*images* フォルダーとそのすべてのサブフォルダーにある拡張子が *.jpeg* のすべてのファイルが項目の種類 Photos に追加されます。 その他の例については、「[方法:ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)」をご覧ください。
@@ -428,7 +428,7 @@ Message タスクに変更を加えて、復帰と改行 (%0A%0D) を使用し�
 <Photos Include="images\*.gif" />
 ```
 
- この例では、*image* フォルダーにある拡張子が *.jpeg* または *.gif* のすべてのファイルを含む項目の種類 Photos が作成されます。 次の行も同じ結果をもたらします。
+ この例では、*image* フォルダーにある拡張子が *.jpeg* または *.gif* のすべてのファイルを含む、Photos という名前の項目の種類 が作成されます。 次の行も同じ結果をもたらします。
 
 ```xml
 <Photos Include="images\*.jpeg;images\*.gif" />
