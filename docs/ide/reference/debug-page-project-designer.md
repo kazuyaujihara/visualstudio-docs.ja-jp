@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b02ecf1b4b03bfc8b664af898fdbedcb27c80bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949682"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504407"
 ---
 # <a name="debug-page-project-designer"></a>[デバッグ] ページ (プロジェクト デザイナー)
 
@@ -41,7 +41,7 @@ Visual Basic または C# プロジェクトのデバッグ動作のプロパテ
 
 表示または変更するプラットフォーム設定を指定します。 **[Any CPU]** (既定)、**[x64]**、および **[x86]** から選択できます。
 
-## <a name="start-action"></a>開始動作
+## <a name="start-action"></a>[開始動作]
 
 **[開始動作]** は、アプリケーションをデバッグするときに開始するアイテムを示します。プロジェクト、カスタム プログラム、URL のいずれかを指定できます。また、省略することもできます。 既定では、このオプションは **[プロジェクトの開始]** に設定されます。 **[デバッグ]** ページの **[開始動作]** 設定で、`StartAction` プロパティの値が決まります。
 
@@ -83,7 +83,7 @@ Visual Basic アプリケーションから SQL プロシージャのデバッ�
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio でのデバッグ](../../debugger/debugger-feature-tour.md)
+- [デバッガーでのはじめに](../../debugger/debugger-feature-tour.md)
 - [C# デバッグ構成のプロジェクト設定](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic デバッグ構成のプロジェクト設定](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [方法: アクセス許可が制限された ClickOnce アプリケーションをデバッグする](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)

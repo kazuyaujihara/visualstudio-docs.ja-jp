@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: a635ca7369470788f0813f6e246767b64f6af445
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232763"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477666"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
 Visual Studio Tools for Unity の変更ログです。
@@ -49,7 +49,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 -   **プロジェクトの生成:**
 
-    -   パブリック フィールドとシリアル化されたフィールドで、警告が発行されなくなりました。 これらのメッセージが作成された Unity プロジェクトでは、CS0649 および IDE0051 コンパイラの警告を自動抑制しています。
+    -   パブリック フィールドとシリアル化されたフィールドで、警告が発行されなくなりました。 CS0649 および IDE0051 のメッセージを作成していた Unity プロジェクトでは、これらのコンパイラの警告を自動抑制しました。
 
 -   **統合:**
 
@@ -103,15 +103,15 @@ Visual Studio Tools for Unity の変更ログです。
 
     -   式の評価において、NRefactory を Roslyn に置き換えました。
 
-    -   ポインターのサポートを追加しました。逆参照、キャスト、およびポインターの算術演算 (これには、Unity 2018.2 以降と新しいランタイムの両方が必要です)。
+    -   ポインターへのサポートを追加しました: 逆参照、キャスト、およびポインターの算術演算 (これには、Unity 2018.2+ および新しいランタイムの両方が必要です)。
 
-    -   配列ポインター ビューのサポートを追加しました (C++ に類似)。 ポインター式を取得してから、コンマと表示する要素数を付け加えます。
+    -   (C++ の場合のように) 配列ポインター ビューのサポートを追加しました。 ポインター式を取得してから、コンマと表示する要素数を付け加えます。
 
     -   非同期のコンストラクトのサポートを追加しました。
 
 -   **統合:**
     
-    -   保存時に Unity のアセット データベースを自動更新するサポートを追加しました。 これは既定で有効になっており、Visual Studio でスクリプトを保存すると、Unity 側で再コンパイルがトリガーされます。 この機能は、[ツール]\[オプション]\[Tools for Unity]\[保存時に Unity の AssetDatabase を更新] で無効にすることができます。
+    -   保存時に Unity のアセット データベースを自動更新するサポートを追加しました。 これは既定で有効になっており、Visual Studio 内にスクリプトを保存するときに Unity 側での再コンパイルをトリガーします。 この機能は、[ツール]\[オプション]\[Tools for Unity]\[保存時に Unity の AssetDatabase を更新] で無効にすることができます。
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -128,7 +128,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 -   **統合:**
 
-    -   Visual Studio 2019 のサポートを追加しました。
+    -   Visual Studio 2019 のサポートが追加されました (外部スクリプト エディターとして Visual Studio 2019 を使えるようにするには、少なくとも Unity 2018.3 が必要です)。
 
     -   Visual Studio イメージ サービスとカタログを導入し、HDPI のスケール、ピクセル パーフェクトなイメージ、およびテーマを完全にサポートします。
 

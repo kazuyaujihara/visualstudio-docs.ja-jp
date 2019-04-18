@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018156"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477542"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
@@ -34,10 +34,10 @@ Visual Studio 2019 では、あらゆる開発者、アプリ、プラットフ�
 新機能の大まかな要約を示します。
 
 * **[開発](#develop)**:パフォーマンスの向上、迅速なコードのクリーンアップ、優れた検索結果による生産性向上に引き続き注力しています。
-* **[共同作業](#collaborate)**:クラウド ファーストのワークフロー、リアルタイムでの編集とデバッグ、Visual Studio でのコード レビューによる自然な共同作業を体験してください。
+* **[共同作業](#collaborate)**:Git ファーストのワークフロー、リアルタイムでの編集とデバッグ、Visual Studio でのコード レビューによる自然な共同作業を体験してください。
 * **[デバッグ](#debug)**:特定の値を強調表示してそこに移動したり、メモリの使用を最適化したり、アプリケーションの実行のスナップショットを自動的に取得したりできます。
 
-このバージョンのすべての新機能の一覧は、[リリース ノート](/visualstudio/releases/2019/release-notes/)を参照してください。 
+このバージョンのすべての新機能の一覧は、[リリース ノート](/visualstudio/releases/2019/release-notes/)を参照してください。
 
 ## <a name="develop"></a>開発
 
@@ -55,11 +55,11 @@ Visual Studio 2019 では、あらゆる開発者、アプリ、プラットフ�
 
 ### <a name="refactorings"></a>リファクタリング
 
-新しい C# リファクタリングにより、コードの整理が簡単になります。 **Ctrl +.** を押し、 実行するアクションを選択するだけでリファクタリングを呼び出せます。 
+C# には非常に便利な新しいリファクタリングが多数あります。これにより、コードの整理がより簡単になります。 それらは電球で提案として表示されます。インターフェイスや基底クラスへのメンバーの移動、フォルダー構造に一致させるための名前空間の調整、foreach ループの Linq クエリへの変換などのアクションが含まれています。
 
    ![Visual Studio 2019 のリファクタリングのアニメーション](media/vs-2019/refactorings.gif)
 
-メソッド パラメーターをラップできるものなど、新しいリファクタリングが多数追加されました。
+**Ctrl +.** を押し、 実行するアクションを選択するだけでリファクタリングを呼び出せます。
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -78,7 +78,7 @@ Visual Studio 向けの IntelliCode を初めてプレビューしたときに�
 
 C# を使用している場合は、独自のコードでカスタム モデルをトレーニングする機能も追加されました。
 
-IntelliCode の詳細については、ブログの投稿「[Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/)」(Visual Studio IntelliCode を使用して少ないスクロールで多くのコードを書く) を参照してください。 
+IntelliCode の詳細については、ブログの投稿「[Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/)」(Visual Studio IntelliCode を使用して少ないスクロールで多くのコードを書く) を参照してください。
 
 ### <a name="code-cleanup"></a>コードのクリーンアップ
 
@@ -142,7 +142,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
    ![Visual Studio 2019 のデバッグ データ ブレークポイントを示すアニメーション](media/vs-2019/debug-data-breakpoints.gif)
 
-コードを C++ と .NET Core のどちらで書いている場合でも、データ ブレークポイントは通常のブレークポイントを配置する適切な代替手段となります。 データ ブレークポイントは、グローバル オブジェクトがリストのどこで修正、追加、削除されているかを見つけるようなシナリオでも適しています。 
+コードを C++ と .NET Core のどちらで書いている場合でも、データ ブレークポイントは通常のブレークポイントを配置する適切な代替手段となります。 データ ブレークポイントは、グローバル オブジェクトがリストのどこで修正、追加、削除されているかを見つけるようなシナリオでも適しています。
 
 また、大規模なアプリケーションを開発している C++ の開発者の場合、Visual Studio 2019 ではシンボルをプロセス外にできるため、メモリ関連の問題が発生することなくアプリケーションをデバッグできます。
 

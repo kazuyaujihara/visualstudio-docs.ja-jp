@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0353249712fefc0052a27469b075c52b9fdd5d06
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 718ef14fda76df87dc4627dc518e993058896471
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982910"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584299"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 の新機能
 
@@ -24,7 +24,7 @@ MSBuild は現在 [.NET Core SDK](https://www.microsoft.com/net/download/core) �
 
  MSBuild は Visual Studio の各バージョンのフォルダーにインストールされます。 例: *C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild*。 次の PowerShell モジュールを使用して MSBuild を検索することもできます: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)。
 
- MSBuild は、グローバル アセンブリ キャッシュにインストールされなくなりました。 MSBuild をプログラムで参照するには、NuGet パッケージを使用します。
+ MSBuild は、グローバル アセンブリ キャッシュにインストールされなくなりました。 MSBuild をプログラムで参照するには、NuGet パッケージを使用します。 詳細については、[MSBuild 15.0 に向けた既存のアプリケーションの更新](../msbuild/updating-an-existing-application.md)に関するページをご覧ください。
 
 ## <a name="changed-properties"></a>変更されたプロパティ
 
