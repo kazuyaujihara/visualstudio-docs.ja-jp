@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d38657e1885ed84d5bd5e0e574968ae2009c19d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645876"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648551"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>チュートリアル: VSTO アドインにおける実行時のドキュメントにコントロールを追加します。
   VSTO アドインを使用して、開いている Microsoft Office Word 文書にコントロールを追加できます。 このチュートリアルは、リボンを使用してユーザーを追加できるようにする方法を示します、<xref:Microsoft.Office.Tools.Word.Controls.Button>または<xref:Microsoft.Office.Tools.Word.RichTextContentControl>ドキュメントにします。
 
- **適用対象します。** このトピックの情報は、Word 2010 の VSTO アドイン プロジェクトに適用されます。 詳細については、「[Office アプリケーションおよびプロジェクトの種類別の使用可能な機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
+ **適用対象:** このトピックの情報は、Word 2010 の VSTO アドイン プロジェクトに適用されます。 詳細については、「[Office アプリケーションおよびプロジェクトの種類別の使用可能な機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
 
  このチュートリアルでは、次の作業について説明します。
 
@@ -78,21 +78,17 @@ ms.locfileid: "56645876"
 
 8. **[プロパティ]** ウィンドウで、次のプロパティを変更します。
 
-
    | プロパティ | [値] |
    |-----------|-----------------------|
    | **Name** | **addButtonCheckBox** |
    | **group1** | **追加ボタン** |
 
-
 9. **group1**に 2 つ目のチェック ボックスを追加し、次のプロパティを変更します。
-
 
    | プロパティ | [値] |
    |-----------|---------------------------|
    | **Name** | **addRichTextCheckBox** |
    | **Label** | **リッチ テキスト コントロールの追加** |
-
 
 10. リボン デザイナーで **[ボタンの追加]** をダブルクリックします。
 

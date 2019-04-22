@@ -14,7 +14,6 @@
 # [IDE のカスタマイズ](customizing-the-ide.md)
 ## [Visual Studio for Mac の拡張](extending-visual-studio-mac.md)
 
-
 # [プロジェクトおよびソリューション](projects-and-solutions.md)
 ## [プロジェクトの新規作成](create-new-projects.md)
 ## [プロジェクト項目の追加と削除](add-and-remove-project-items.md)

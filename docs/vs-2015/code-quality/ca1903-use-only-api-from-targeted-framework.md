@@ -15,24 +15,24 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e0382ab59745fccde53d09f88222b64d36a9bd6d
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59003050"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647156"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:対象のフレームワークから API のみを使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新ドキュメントについては、次を参照してください[CA1903:。対象のフレームワークから API のみを使用して、](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください[CA1903:。対象のフレームワークから API のみを使用して、](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework)します。  
   
 |||  
 |-|-|  
 |TypeName|UseOnlyApiFromTargetedFramework|  
 |CheckId|CA1903|  
 |カテゴリ|Microsoft.Portability|  
-|互換性に影響する変更点|– の外部から参照できるメンバーまたは型のシグネチャに対して発生した場合。<br /><br /> なし - メソッドの本体で発生したときに|  
+|互換性に影響する変更点|– の外部から参照できるメンバーまたは型のシグネチャに対して発生した場合。<br /><br /> 改行しない - メソッドの本体で発生したときにします。|  
   
 ## <a name="cause"></a>原因  
  メンバーまたはないプロジェクトの対象とする framework に含まれていたサービス パックで導入された型、メンバーまたは型を使用します。  
@@ -53,10 +53,10 @@ Visual Studio の最新ドキュメントについては、次を参照してく
  プロジェクトのターゲット フレームワークを変更するを参照してください。[特定の .NET Framework のバージョンを対象とする](../ide/targeting-a-specific-dotnet-framework-version.md)します。  
   
 ## <a name="how-to-fix-violations"></a>違反の修正方法  
- サービス パックへの依存関係を削除するには、新しいメンバーまたは型のすべての使用状況を削除します。 これが意図的な依存関係の場合は、警告を抑制するか、このルールをオフにします。  
+ サービス パックへの依存関係を削除するには、新しいメンバーまたは型のすべての使用状況を削除します。 これが意図的な依存関係の場合は、警告を抑制するか、または、このルールをオフにします。  
   
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況  
- これが、指定されたサービス パックに依存関係が意図的でない場合は、この規則による警告を抑制しないでください。 このような状況で、アプリケーションは、この service pack がインストールされていないシステムで実行する失敗可能性があります。 警告を抑制または意図的な依存関係の場合、このルールを無効にします。  
+ これが、指定されたサービス パックに依存関係が意図的でない場合は、この規則による警告を抑制しないでください。 このような状況で、アプリケーションは、この service pack がインストールされていないシステムで実行する失敗可能性があります。 警告を抑制または意図的な依存関係の場合に、このルールをオフにします。  
   
 ## <a name="example"></a>例  
  次の例では、.NET 2.0 Service Pack 1 で使用できるだけが DateTimeOffset 型を使用するクラスを示します。 この例では、.NET Framework 2.0 がプロジェクトのプロパティでターゲット フレームワーク ドロップダウン リストで選択されている必要があります。  

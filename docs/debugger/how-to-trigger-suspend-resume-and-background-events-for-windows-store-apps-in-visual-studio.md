@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790356"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>トリガーする方法を中断、再開、および Visual Studio で UWP アプリのデバッグ中にバック グラウンド イベント
@@ -72,7 +72,7 @@ ms.locfileid: "58790356"
 
 2.  スタートアップ プロジェクトのデバッグ プロパティ ページを開きます。 ソリューション エクスプローラーでプロジェクトを選択します。 **[デバッグ]** メニューの **[プロパティ]** をクリックします。
 
-     C++ プロジェクトでは、展開**構成プロパティ**選び、**デバッグ**します。
+     C++プロジェクトでは、展開**構成プロパティ**選び、**デバッグ**します。
 
 3.  次のいずれかの操作を行います。
 
@@ -80,7 +80,7 @@ ms.locfileid: "58790356"
 
          ![C&#35;&#47;VB のデバッグ起動アプリケーション プロパティ](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   Visual C プロジェクトでは、次のように選択します。**いいえ**から、**アプリケーション起動**一覧。
+    -   ビジュアルのC++プロジェクトでは、選択**いいえ**から、**アプリケーション起動**一覧。
 
          ![C&#43;&#43;&#47;/VB 起動アプリケーションのデバッグ プロパティ](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

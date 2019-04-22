@@ -58,10 +58,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866767"
 ---
 # <a name="managing-external-tools"></a>Visual Studio の外部ツール
@@ -78,11 +78,11 @@ Visual Studio から、外部ツールを呼び出すことができます。 �
   
 3.  ATL/MFC トレース ツール: ATL および ATL のソースに含まれているデバッグ トレース メッセージを表示します。  
   
-4.  PreEmptive Protection - Dotfuscator: .NET プログラムをリバース エンジニアリングから保護します。  
+4.  PreEmptive Protection - Dotfuscator:リバース エンジニア リングに対して .NET プログラムを保護します。  
   
-5.  SPY++: プロセス、スレッド、ウィンドウ、およびウィンドウ メッセージをグラフィカル表示します。  
+5.  SPY++:プロセス、スレッド、windows、およびウィンドウ メッセージをグラフィカルに表示します。  
   
-6.  WCF サービス構成エディター: WCF サービスの構成設定を作成および変更できます。  
+6.  WCF サービス構成エディター:作成および WCF サービスの構成設定を変更することができます。  
   
 > [!WARNING]
 >  表示される外部ツールの一覧は、インストールされている Visual Studio のエディションおよび適用されている設定プロファイルによって異なります。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
@@ -90,7 +90,7 @@ Visual Studio から、外部ツールを呼び出すことができます。 �
 ## <a name="adding-new-tools"></a>新しいツールの追加  
  **[ツール]** メニューに外部ツールを追加することができます。 **[外部ツール]** ダイアログ ボックスを開き、**[追加]** をクリックして、情報を入力します。 たとえば、次のエントリを指定すると、Visual Studio で現在開いているファイルのディレクトリでエクスプローラーが開きます。  
   
-1.  タイトル: 開いているファイルの場所  
+1.  タイトル:開いているファイルの場所  
   
 2.  コマンド: explorer.exe  
   
@@ -102,7 +102,7 @@ Visual Studio から、外部ツールを呼び出すことができます。 �
 > [!NOTE]
 >  IDE のステータス バーに、アクティブなコード エディターの挿入位置を示す、Current Line 変数および Current Column 変数が表示されます。 Current Text 変数は、その場所で選択されているテキストまたはコードを返します。  
   
-|name|引数|説明|  
+|名前|引数|説明|  
 |----------|--------------|-----------------|  
 |項目のパス|$(ItemPath)|現在のファイルの完全なファイル名 (ドライブ + パス + ファイル名)。|  
 |項目のディレクトリ|$(ItemDir)|現在のファイルのディレクトリ (ドライブ + パス)。|  
@@ -122,4 +122,4 @@ Visual Studio から、外部ツールを呼び出すことができます。 �
 |ソリューション ファイル名|$(SolutionFileName)|現在のソリューションのファイル名 (ドライブ + パス + ファイル名)。|  
   
 ## <a name="see-also"></a>関連項目  
- [C と C++ のビルド ツール](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [C/C++ のビルド ツール](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

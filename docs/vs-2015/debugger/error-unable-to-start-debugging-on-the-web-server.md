@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15e65b85490c2cc65a6f965a37bd28b9a241b428
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972956"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652060"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>エラー :Web サーバー上でデバッグを開始できません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,6 @@ Web サーバーで実行されている ASP.NET アプリケーションをデ�
     (後ほど修正) 以前のバージョンのバグには、ASP.NET のデバッグ シナリオの一部で管理者特権が必要です。
     
 - Visual Studio の複数のインスタンスが実行されている場合、Visual Studio の 1 つのインスタンスでプロジェクトを再び開くもう一度やり直してください。
-   
-  
+
 ## <a name="see-also"></a>関連項目  
  [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002767"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649447"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,6 @@ ms.locfileid: "59002767"
 > [!TIP] 
 > コマンド ライン インストールおよびコマンド ライン リファレンスでは、ヘルプ ページをご覧ください**msvsmon.exe** 」と入力して``msvsmon.exe /?``で Visual Studio がインストールされているコンピューターでコマンドラインで (に移動または**ヘルプ/使用状況**リモート デバッガーで)。
 
-  
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  リモート コンピューターで次のいずれかのオペレーティング システムが実行されている必要があります。  
   

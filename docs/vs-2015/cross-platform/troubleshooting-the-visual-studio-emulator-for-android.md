@@ -8,16 +8,15 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 5500af58ab93b41cc73b48f5ebe2d63ed16ca495
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7462f99bc06ea84ebbeaf675c8f3882cef527ce5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754941"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649681"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 このトピックには、Visual Studio Emulator for Android の使用時に発生する可能性のある問題の解決に役立つ情報が含まれています。
 
@@ -174,7 +173,7 @@ ms.locfileid: "54754941"
 
      - Trusted Execution を無効にする
 
-       詳細については、この記事を参照してください。TechNetHyper-VHYPER-V を有効にする BIOS エラーを修正する方法
+       詳細については、TechNet 記事「Hyper-V: How to Fix BIOS Errors Enabling Hyper-V」 (Hyper-V を有効にして BIOS エラーを修正する方法) を参照してください。
 
   5. 少なくとも 4 GB のシステム メモリがあり、リソースを大量に消費する他のプログラムおよびプロセスによって消費されていないことを確認します。
 
@@ -192,7 +191,7 @@ ms.locfileid: "54754941"
 
    一般に、Windows 8 および Hyper-V と互換性のあるソフトウェアを更新するかどうかは、製品の開発者の責任となります。
 
-   次の製品は、Windows 8 のコンプライアンスをアップグレードする必要があります。VirtualBox、Virtual PC 7、VMWare、一部の VPN クライアント、ソフトウェア ファイアウォール、Cisco VPN クライアント、およびその他の仮想化システムの一部のバージョン。 問題のある仮想化ソフトウェアの開発者と協力して、ソフトウェアをアップグレードし、Windows 8 および Hyper-V と互換性を持たせるようにしてください。
+   次の製品は、Windows 8 と互換性を持たせるためにアップグレードが必要になる可能性があります: VirtualBox、Virtual PC 7、VMWare、一部の VPN クライアント、ソフトウェア ファイアウォール、Cisco VPN クライアントの一部のバージョン、およびその他の仮想化システム。 問題のある仮想化ソフトウェアの開発者と協力して、ソフトウェアをアップグレードし、Windows 8 および Hyper-V と互換性を持たせるようにしてください。
 
    **回避策**として、Visual Studio との通信のためにエミュレーターで使用される仮想ネットワークに干渉している可能性があるすべてのサード パーティ製のドライバーとアプリケーションを無効にすることができます。 これらのアプリケーションには以下のようなものがあります。
 
@@ -255,7 +254,7 @@ ms.locfileid: "54754941"
 
   この問題を解決するには、マザーボードの BIOS 設定で USB3 を無効にして、コンピューターを再起動します。 次に、Gigabyte からマザーボードの BIOS の更新プログラムがリリースされているかどうかを確認します。
 
-  詳細については、次のサポート技術情報の記事を参照してください。[Gigabyte システムで HYPER-V ロールのインストール後に起動できない](https://support.microsoft.com/kb/2693144)します。
+  詳細については、次の内容に関するサポート技術情報の記事を参照してください: [Gigabyte システムで Hyper-V ロールのインストール後に起動できない](https://support.microsoft.com/kb/2693144)。
 
 ##  <a name="ADB"></a> Visual Studio がエミュレーターにアプリを配置しようとして行き詰まっているか、エミュレーターが他の IDE でデバッグ ターゲットとして表示されません。
  エミュレーターが実行されていても、ADB (Android Debug Bridge) に接続されているように見えない、または ADB を利用する Android ツール (Android Studio や Eclipse など) 内で見えない場合は、エミュレーターが ADB を検索する場所を調整する必要があります。 エミュレーターはレジストリ キーを使用して、Android SDK の基本場所を識別し、そのディレクトリで \platform-tools\adb.exe ファイルを検索します。 エミュレーターで使用される Android SDK パスを変更するには、次のようにします。
@@ -269,7 +268,7 @@ ms.locfileid: "54754941"
   エミュレーターを再起動します。これで、ADB と関連する Android ツールにエミュレーターが接続されていることを確認できるはずです。
 
 ##  <a name="XamarinPlayer"></a> UDP ポートを設定できなかったため、エミュレーターがハングする
- Xamarin Player との互換性がないためにこの問題が発生する可能性があります。 エミュレーターがハングしている場合、またはこのエラー メッセージを表示する場合は"エミュレーターがデバイスのオペレーティング システムに接続できません。UDP ポートを設定できませんでした。  一部の機能が無効になっている可能性があります。" というエラー メッセージが表示されたりした場合は、この問題が発生している可能性があります。 次の手順を実行します。
+ Xamarin Player との互換性がないためにこの問題が発生する可能性があります。 エミュレーターがハングしているように見えたり、"エミュレーターがデバイスのオペレーティング システムに接続できません。UDP ポートを設定できませんでした。  一部の機能が無効になっている可能性があります。" というエラー メッセージが表示されたりした場合は、この問題が発生している可能性があります。 次の手順を実行します。
 
 1.  Xamarin Player をアンインストールします。
 

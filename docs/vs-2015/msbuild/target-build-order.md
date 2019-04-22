@@ -11,17 +11,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc12ba16a52546b26a7941734caa8c6fca8419b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f5d619a18fa38c09b25f2d8367f3f767ac5bdc11
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764862"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651083"
 ---
 # <a name="target-build-order"></a>ターゲットのビルド順序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 あるターゲットへの入力が別のターゲットの出力に依存する場合、ターゲットの順序を指定する必要があります。 以下の属性を使用して、ターゲットを実行する順序を指定できます。  
   
 - `InitialTargets`。 この `Project` 属性は、ターゲットがコマンド ラインまたは `DefaultTargets` 属性に指定されている場合でも最初に実行されるターゲットを指定します。  
@@ -47,7 +46,7 @@ ms.locfileid: "54764862"
   
  インポートされたプロジェクトには、独自の `InitialTargets` 属性が含まれている場合があります。 それらのすべての初期ターゲットが集約されて順番に実行されます。  
   
- 詳細については、「[方法: 最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)」を参照してください。  
+ 詳細については、「[方法 :最初にビルドするターゲット指定](../msbuild/how-to-specify-which-target-to-build-first.md)します。  
   
 ## <a name="default-targets"></a>既定のターゲット  
  [Project](../msbuild/project-element-msbuild.md) 要素の `DefaultTargets` 属性は、ターゲットがコマンド ラインで明示的に指定されていない場合にビルドするターゲット (複数可) を指定します。  
@@ -66,13 +65,13 @@ ms.locfileid: "54764862"
   
  インポートされたプロジェクトには、独自の `DefaultTargets` 属性が含まれている場合があります。 検出された最初の `DefaultTargets` 属性によって、実行する既定のターゲットが決定されます。  
   
- 詳細については、「[方法: 最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)」を参照してください。  
+ 詳細については、「[方法 :最初にビルドするターゲット指定](../msbuild/how-to-specify-which-target-to-build-first.md)します。  
   
 ## <a name="first-target"></a>最初のターゲット  
  初期ターゲット、既定のターゲット、またはコマンド ラインのターゲットがいずれも指定されていない場合、MSBuild はプロジェクト ファイル内またはインポートされたプロジェクト ファイル内で検出された最初のターゲットを実行します。  
   
 ## <a name="target-dependencies"></a>ターゲットの依存関係  
- ターゲット同士は相互に依存関係を記述できます。 `DependsOnTargets` 属性は、ターゲットが他のターゲットに依存していることを示します。 たとえば、オブジェクトに適用された  
+ ターゲット同士は相互に依存関係を記述できます。 `DependsOnTargets` 属性は、ターゲットが他のターゲットに依存していることを示します。 例えば以下のようにします。  
   
 ```  
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />  

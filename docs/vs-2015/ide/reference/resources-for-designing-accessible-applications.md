@@ -14,17 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ed7f7106b22cabc2e30c4f979aacda1823ea7d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761673"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651933"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>ユーザー補助アプリケーションのデザイン リソース
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 ユーザー補助 Windows アプリケーションおよび Web サイトを開発するためのヒントと例、およびユーザー補助設計をサポートする技術については、以下のリンク先を参照してください。 ユーザー補助についての一般的な情報は、Web サイト [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/) にあります。  
   
 ## <a name="technologies"></a>技術情報  
@@ -45,7 +44,7 @@ ms.locfileid: "54761673"
   
 ## <a name="web-sites"></a>Web サイト  
   
--   [チュートリアル: Image コントロール、Menu コントロール、AutoPostBack を使用する際のユーザー補助のガイドライン](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) このトピックでは、Web 用のユーザー補助設計のヒントに加え、ユーザー補助コントロールをサンプル Web ページに含めるための手順を順番に説明します。  
+-   [チュートリアル: アクセシビリティのガイドラインを使用してイメージ コントロール、Menu コントロール、AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202)このトピックで、Web 用のユーザー補助設計のヒントと同様に、サンプル Web ページでアクセス可能なコントロールを含めるための手順について説明します。  
   
 -   **Web ページのユーザー補助機能の強化** この技術情報では、ユーザー補助機能を持つ HTML 3.2 の要素が一覧にしてあります。また、Web サイトの開発で使用してユーザー補助機能を強化するための要素も示しています。 詳細については、「[http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx)」を参照してください。  
   

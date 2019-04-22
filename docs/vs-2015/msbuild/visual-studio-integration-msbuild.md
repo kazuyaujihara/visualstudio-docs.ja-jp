@@ -19,17 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194510"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649265"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio の統合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio は、マネージド プロジェクトの読み込みとビルドを行う [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] をホストしています。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] はプロジェクトに対応しているため、そのプロジェクトが他のツールで作成されていたり、ビルド処理がカスタマイズされていたりしても、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 形式のほとんどすべてのプロジェクトを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で問題なく使用できます。  
   
  このトピックでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] に読み込んでビルドするプロジェクトおよび .targets ファイルをカスタマイズする際に考慮が必要な、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] による [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のホストに固有な事項について説明します。 これらの事項は、IntelliSense やデバッグなどの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の機能をカスタム プロジェクトに対して有効にするうえで役立ちます。  
@@ -183,7 +182,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Visual Studio の通常のビルドでは、高速更新チェックは適用されず、コマンド プロンプトでビルドを開始する場合と同じ方法でプロジェクトがビルドされます。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: Visual Studio ビルド処理を拡張する](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
+ [方法: Visual Studio ビルド処理を拡張します。](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [IDE 内からのビルドの開始](../msbuild/starting-a-build-from-within-the-ide.md)   
  [.NET Framework の拡張機能の登録](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   

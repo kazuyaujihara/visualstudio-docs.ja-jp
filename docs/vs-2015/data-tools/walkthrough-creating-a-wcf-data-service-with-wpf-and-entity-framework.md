@@ -14,17 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2be6c030cf8602f053472971a98508043b253e43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974816"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653087"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このチュートリアルは、単純なを作成する方法を示します[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]でホストされる、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションと Windows フォーム アプリケーションからアクセスします。  
   
  このチュートリアルでは、次の作業を行います。  
@@ -145,7 +144,7 @@ ms.locfileid: "58974816"
   
 1. メニュー バーで、ファイルを選択**追加**、**新しいプロジェクト**します。  
   
-2. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual Basic**または**Visual C#** ノードを選択し、 **Windows**ノード、を選択し、**Windows フォーム アプリケーション**します。  
+2. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual Basic**または**Visual c#** ノードを選択し、 **Windows**ノード、を選択し、**Windows フォーム アプリケーション**します。  
   
 3. **[名前]** ボックスに「`NorthwindClient`」と入力して、**[OK]** を選択します。  
   

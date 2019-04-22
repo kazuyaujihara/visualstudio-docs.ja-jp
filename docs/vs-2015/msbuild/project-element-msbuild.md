@@ -20,17 +20,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b26bd7d5f65122695a96dc5339e39044ff93a924
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 132d1c3fbf23433ea89e7dba39bc226bc253b015
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752835"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650825"
 ---
 # <a name="project-element-msbuild"></a>Project 要素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルの必須のルート要素です。  
   
 ## <a name="syntax"></a>構文  
@@ -61,7 +60,7 @@ ms.locfileid: "54752835"
 |    `DefaultTargets`    |                                                                                                                                                                                                                                                                                                 省略可能な属性です。<br /><br /> ターゲットが指定されていない場合にビルドのエントリ ポイントとなる 1 つまたは複数の既定のターゲット。 複数のターゲットはセミコロン (;) で区切られます。<br /><br /> `DefaultTargets` 属性または [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] コマンド ラインのいずれかで既定のターゲットが指定されていない場合、[Import](../msbuild/import-element-msbuild.md) 要素の評価後、エンジンはプロジェクト ファイルの最初のターゲットを実行します。                                                                                                                                                                                                                                                                                                  |
 |    `InitialTargets`    |                                                                                                                                                                                                                                                                                                                                                                                                                                             省略可能な属性です。<br /><br /> `DefaultTargets` 属性またはコマンド ラインで指定されたターゲットの前に実行される 1 つまたは複数の初期ターゲット。 複数のターゲットはセミコロン (;) で区切られます。                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |     `ToolsVersion`     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                             省略可能な属性です。<br /><br /> MSBuild が $(MSBuildBinPath) と $(MSBuildToolsPath) の値を決定するために使用するツールセットのバージョン。                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| `TreatAsLocalProperty` | 省略可能な属性です。<br /><br /> グローバルとは見なされないプロパティ名。 この属性は、プロジェクトまたはターゲット ファイル、および後続のすべてのインポートに設定されているプロパティ値が特定のコマンド ライン プロパティによってオーバーライドされることを防ぎます。 複数のプロパティはセミコロン (;) で区切られます。<br /><br /> 通常、グローバル プロパティは、プロジェクト ファイルまたはターゲット ファイルで設定されたプロパティ値をオーバーライドします。 プロパティが `TreatAsLocalProperty` 値に一覧表示されている場合、グローバル プロパティ値は、そのファイルと後続のインポートに設定されているプロパティ値をオーバーライドしません。 詳細については、「[方法 : 同じソース ファイルを異なるオプションでビルドする](../msbuild/how-to-build-the-same-source-files-with-different-options.md)」を参照してください。 **注:**  グローバル プロパティは、コマンド プロンプトで **/property** (または **/p**) スイッチを使用して設定します。 また、複数プロジェクト ビルドの子プロジェクトのグローバル プロパティは、MSBuild タスクの `Properties` 属性を使用して設定または変更することもできます。 詳細については、「[MSBuild タスク](../msbuild/msbuild-task.md)」を参照してください。 |
+| `TreatAsLocalProperty` | 省略可能な属性です。<br /><br /> グローバルとは見なされないプロパティ名。 この属性は、プロジェクトまたはターゲット ファイル、および後続のすべてのインポートに設定されているプロパティ値が特定のコマンド ライン プロパティによってオーバーライドされることを防ぎます。 複数のプロパティはセミコロン (;) で区切られます。<br /><br /> 通常、グローバル プロパティは、プロジェクト ファイルまたはターゲット ファイルで設定されたプロパティ値をオーバーライドします。 プロパティが `TreatAsLocalProperty` 値に一覧表示されている場合、グローバル プロパティ値は、そのファイルと後続のインポートに設定されているプロパティ値をオーバーライドしません。 詳細については、「[方法 :同じソース ファイルを異なるオプションでビルド](../msbuild/how-to-build-the-same-source-files-with-different-options.md)します。 **注:** コマンド プロンプトを使用してグローバル プロパティを設定する、 **/property** (または **/p**) スイッチします。 また、複数プロジェクト ビルドの子プロジェクトのグローバル プロパティは、MSBuild タスクの `Properties` 属性を使用して設定または変更することもできます。 詳細については、「[MSBuild タスク](../msbuild/msbuild-task.md)」を参照してください。 |
 |        `Xmlns`         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 必須の属性です。<br /><br /> `xmlns`属性の値が必要"<http://schemas.microsoft.com/developer/msbuild/2003>"。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
   
 ### <a name="child-elements"></a>子要素  
@@ -80,7 +79,7 @@ ms.locfileid: "54752835"
  なし。  
   
 ## <a name="see-also"></a>関連項目  
- [方法 : 最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)   
+ [方法: 最初にビルドするターゲットを指定します。](../msbuild/how-to-specify-which-target-to-build-first.md)   
  [Command-Line Reference (コマンド ライン リファレンス)](../msbuild/msbuild-command-line-reference.md)   
  [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
  [MSBuild](msbuild.md)

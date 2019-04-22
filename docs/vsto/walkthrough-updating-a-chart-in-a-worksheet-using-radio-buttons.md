@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791908c4e5c85a9d1b5210eb950394273bda184c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602066"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651891"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>チュートリアル: オプション ボタンを使用してワークシートのグラフを更新する方法
   このチュートリアルでは、Microsoft Office Excel ワークシートでラジオ ボタンを使用して、オプションですばやく切り替える方法をユーザーに提供の基本を説明します。 この場合、オプションは、グラフのスタイルを変更します。
@@ -132,30 +132,24 @@ ms.locfileid: "56602066"
 
 2. **コモン コントロール**のタブ、**ツールボックス**、ドラッグ、**ラジオ ボタン**ユーザー コントロールにし、次のプロパティを変更します。
 
-
    | プロパティ | [値] |
    |----------|------------------|
    | **Name** | **付いた円柱グラフ** |
    | **Text** | **縦棒グラフ** |
 
-
 3. ユーザー コントロールに 2 番目のラジオ ボタンを追加し、次のプロパティを変更します。
-
 
    | プロパティ | [値] |
    |----------|---------------|
    | **Name** | **barChart** |
    | **Text** | **横棒グラフ** |
 
-
 4. 3 番目のラジオ ボタンをユーザー コントロールに追加し、次のプロパティを変更します。
-
 
    | プロパティ | [値] |
    |----------|----------------|
    | **Name** | **です折れ線グラフ** |
    | **Text** | **折れ線グラフ** |
-
 
 5. 4 番目のラジオ ボタンをユーザー コントロールに追加し、次のプロパティを変更します。
 
@@ -249,7 +243,7 @@ ms.locfileid: "56602066"
 ## <a name="next-steps"></a>次の手順
  このチュートリアルでは、オプション ボタンやグラフのスタイルを使用してワークシート上の基本を説明します。 ここでは、次のタスクを行います。
 
--   プロジェクトを配置します。 詳細については、[Office ソリューションを配置](../vsto/deploying-an-office-solution.md)を参照してください。
+-   プロジェクトを配置します。 詳細については、次を参照してください。 [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
 
 -   ボタンを使用してテキスト ボックスへデータを挿入する。 詳細については、「[チュートリアル:ボタンを使用してワークシート内のテキスト ボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)します。
 

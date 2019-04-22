@@ -18,21 +18,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790252"
 ---
-# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>マルチ スレッド アプリケーションのデバッグの開始 (C#、Visual Basic、C++)
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>マルチ スレッド アプリケーションのデバッグの開始 (C#、Visual Basic、 C++)
 
 Visual Studio には、いくつかのツールとマルチ スレッド アプリケーションをデバッグする方法をユーザー インターフェイス要素が用意されています。 このチュートリアルでは、スレッド マーカーを使用する方法、**並列スタック**ウィンドウで、**並列ウォッチ**ウィンドウ、条件付きブレークポイントは、および [フィルター] ブレークポイント。 このチュートリアルを完了に慣れることがするマルチ スレッド アプリケーションをデバッグするための Visual Studio の機能を使用します。
 
 これら 2 つのトピックでは、その他のマルチ スレッド デバッグ ツールを使用して追加についてを説明します。
 
-- 使用する、**デバッグの場所**ツールバーと**スレッド**ウィンドウを参照してください[チュートリアル: マルチ スレッド アプリケーションをデバッグ](../debugger/how-to-use-the-threads-window.md)します。
+- 使用する、**デバッグの場所**ツールバーと**スレッド**ウィンドウを参照してください[チュートリアル。マルチ スレッド アプリケーションをデバッグ](../debugger/how-to-use-the-threads-window.md)します。
 
-- 使用するサンプルの<xref:System.Threading.Tasks.Task>(マネージ コード) を参照してください (C++)、同時実行ランタイムと[チュートリアル: 並行アプリケーションをデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)します。 最もマルチ スレッド アプリケーションの種類に適用される一般的なデバッグ ヒント、そのトピックと、この 1 つの両方を参照します。
+- 使用するサンプルの<xref:System.Threading.Tasks.Task>(マネージ コード) と同時実行ランタイム (C++) を参照してください[チュートリアル。並列アプリケーションをデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)します。 最もマルチ スレッド アプリケーションの種類に適用される一般的なデバッグ ヒント、そのトピックと、この 1 つの両方を参照します。
 
 まず、マルチ スレッド アプリケーション プロジェクトを必要があります。 以下に例を示します。
 
@@ -41,10 +41,10 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
 1. Visual Studio を起動し、新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    キーを押して**Esc**開始 ウィンドウを閉じます。 型**Ctrl + Q**を検索ボックスを開き、「**コンソール**(または**c++**)、選択**テンプレート**、し。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 型**Ctrl + Q**を検索ボックスを開き、「**コンソール**(または**c++**)、選択**テンプレート**、し。
 
     - C#または Visual Basic では、選択**新しいコンソール アプリ (.NET Framework) プロジェクトの作成**いずれかのC#または Visual Basic です。 表示されたダイアログ ボックスで、**[作成]** を選択します。
-    - C++ では、選択**新しいコンソール アプリ プロジェクトの作成**c++ です。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    - C++、選択**新しいコンソール アプリ プロジェクトの作成**のC++します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
 
     などの名前を入力し、 **MyThreadWalkthroughApp**クリック**作成**します。
     ::: moniker-end
@@ -53,7 +53,7 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
 
     - C#アプリ  **Visual C#** 、選択**Windows デスクトップ**、中央のペインの **コンソール アプリ (.NET Framework)** します。
     - Visual Basic アプリでは、 **Visual Basic**、選択**Windows デスクトップ**、中央のペインの **コンソール アプリ (.NET Framework)** します。
-    - C++ アプリでは、 **Visual C**、選択**Windows デスクトップ**、および選び、 **Windows コンソール アプリケーション**します。
+    - C++アプリで、 **Visual C++** 、選択**Windows デスクトップ**、および選び、 **Windows コンソール アプリケーション**します。
 
     などの名前を入力し、 **MyThreadWalkthroughApp**  をクリック**OK**します。
     ::: moniker-end
@@ -265,7 +265,7 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
     これらの右クリック メニューからさまざまなアクションを実行することができますが、このチュートリアルでこれらの詳細の示しますが、**並列ウォッチ**ウィンドウ (次のセクション)。
 
     > [!NOTE]
-    > リスト ビューを各スレッドの情報を表示する、**スレッド**ウィンドウ代わりにします。 参照してください[チュートリアル: マルチ スレッド アプリケーションをデバッグ](../debugger/how-to-use-the-threads-window.md)します。
+    > リスト ビューを各スレッドの情報を表示する、**スレッド**ウィンドウ代わりにします。 「[チュートリアル:マルチ スレッド アプリケーションをデバッグ](../debugger/how-to-use-the-threads-window.md)します。
 
 ### <a name="set-a-watch-on-a-variable"></a>変数のウォッチを設定します。
 
@@ -353,6 +353,6 @@ Visual Studio には、いくつかのツールとマルチ スレッド アプ�
 ## <a name="see-also"></a>関連項目
 
 - [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [方法 : デバッグ中に別のスレッドに切り替える](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-- [方法: 並列スタック ウィンドウを使用](../debugger/using-the-parallel-stacks-window.md)
+- [方法: デバッグ中に別のスレッドに切り替える](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+- [方法: 並列スタック ウィンドウを使用します。](../debugger/using-the-parallel-stacks-window.md)
 - [方法: [並列ウォッチ] ウィンドウを使用する](../debugger/how-to-use-the-parallel-watch-window.md)

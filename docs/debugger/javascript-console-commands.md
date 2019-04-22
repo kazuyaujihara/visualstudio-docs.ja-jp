@@ -14,10 +14,10 @@ ms.workload:
 - uwp
 - cordova
 ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790772"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio での JavaScript コンソール コマンド
@@ -26,7 +26,7 @@ ms.locfileid: "58790772"
 Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 このトピックの情報を Visual Studio を使用して作成された Node.js アプリに適用されます、 **Node.js 開発**ワークロードをインストールします。
 ::: moniker-end
 ::: moniker range="vs-2017"
-Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 このウィンドウを使用する方法を示す例については、次を参照してください。[クイック スタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)します。 このトピックの情報は、Node.js アプリを UWP に適用されますアプリ、および Apache Cordova の Visual Studio Tools を使用して作成されたアプリ。 Cordova アプリでサポートされているコンソール コマンドについては、「 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)」を参照してください。
+Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 このウィンドウを使用する方法を示す例については、次を参照してください。[クイック スタート。JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)します。 このトピックの情報は、Node.js アプリを UWP に適用されますアプリ、および Apache Cordova の Visual Studio Tools を使用して作成されたアプリ。 Cordova アプリでサポートされているコンソール コマンドについては、「 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)」を参照してください。
 ::: moniker-end
 
 JavaScript コンソール ウィンドウが閉じられた場合開けることを選択して、Visual Studio でデバッグ中**デバッグ** > **Windows** > **JavaScriptコンソール**します。
@@ -72,7 +72,7 @@ JavaScript コンソール ウィンドウでは、以下のコマンドも使�
 
 |コマンド|説明|例|
 |-------------|-----------------|-------------|
-|`$0`, `$1`, `$2`, `$3`, `$4`|指定された要素をコンソール ウィンドウに返します。 `$0` は DOM Explorer で現在選択されている要素を返し、`$1` は DOM Explorer で直前に選択されていた要素を返します。 同様に、最大で 4 つ前に選択されていた要素を返します。|$3|
+|`$0`, `$1`, `$2`, `$3`, `$4`|指定された要素をコンソール ウィンドウに返します。 `$0` は DOM Explorer で現在選択されている要素を返し、`$1` は DOM Explorer で直前に選択されていた要素を返します。同様に、最大で 4 つ前に選択されていた要素を返します。|$3|
 |`$(id)`|要素を ID で返します。 これは `document.getElementById(id)`のショートカット コマンドであり、 `id` は要素の ID を表す文字列です。|`$("contenthost")`|
 |`$$(selector)`|CSS セレクター構文を使用して、指定されたセレクターと一致する要素の配列を返します。 これは `document.querySelectorAll()`のショートカット コマンドです。|`$$(".itemlist")`|
 |`cd()`<br /><br /> `cd(window)`|式の評価のコンテキストを、既定であるページのトップレベル ウィンドウから指定したフレームのウィンドウに変更できます。 `cd()` をパラメーターの指定なしで呼び出すと、コンテキストがトップレベル ウィンドウに戻ります。|`cd();`<br /><br /> `cd(myframe);`|
@@ -130,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>関連項目
-- [クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

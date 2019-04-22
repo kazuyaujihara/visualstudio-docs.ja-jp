@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eedc9c469e4ceb4ac4b5be018f2ebdd227ffcf2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: f50d72990ec0fb47ec880e3c267ef4e52225837d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681791"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649421"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>方法: 高パフォーマンス クラスター上でデバッグ (C#、Visual Basic、C++)
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>方法: 高パフォーマンス クラスター上でデバッグ (C#、Visual Basic、 C++)
 
 高パフォーマンス クラスター上でのマルチプロセス プログラムのデバッグは、リモート コンピューター上での通常のプログラムのデバッグと似ています。 ただし、追加の考慮事項がいくつかあります。 一般的なリモート セットアップ要件は、次を参照してください。[リモート デバッグ](../debugger/remote-debugging.md)します。
 
  高パフォーマンス クラスター上でデバッグするときは、リモート デバッグに使用できる [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のデバッグ ウィンドウとデバッグ手法をすべて使用できます。 ただし、リモートでデバッグするため、外部のコンソール ウィンドウは使用できません。
 
- **[スレッド]** ウィンドウと **[プロセス]** ウィンドウは、並列アプリケーションをデバッグする際に特に役立ちます。 これらのウィンドウを使用する方法のヒントについては、次を参照してください。[方法。[プロセス] ウィンドウを使用して、](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))と[チュートリアル。[スレッド] ウィンドウを使用してデバッグする](../debugger/how-to-use-the-threads-window.md).
+ **[スレッド]** ウィンドウと **[プロセス]** ウィンドウは、並列アプリケーションをデバッグする際に特に役立ちます。 これらのウィンドウを使用する方法のヒントについては、次を参照してください。[方法。[プロセス] ウィンドウを使用して、](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))と[チュートリアル。[スレッド] ウィンドウを使用してデバッグ](../debugger/how-to-use-the-threads-window.md)します。
 
  以下の手順では、高パフォーマンス クラスター上でのデバッグに特に役立つ手法を示します。
 
@@ -96,11 +96,10 @@ ms.locfileid: "56681791"
 
 `(MachineName = marvin) & (ThreadName = fourier1)`
 
-
 ## <a name="see-also"></a>関連項目
 - [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Remote Debugging](../debugger/remote-debugging.md)
-- [方法: [プロセス] ウィンドウの使用](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
+- [方法: [プロセス] ウィンドウを使用します。](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
 - [マルチ スレッド アプリケーションのデバッグの開始します。](../debugger/get-started-debugging-multithreaded-apps.md)
 - [スレッドとプロセス](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
 - [ブレークポイントの使用](../debugger/using-breakpoints.md)

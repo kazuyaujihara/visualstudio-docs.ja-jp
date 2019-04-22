@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683680"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649993"
 ---
 # <a name="graphics-event-list"></a>グラフィックス イベント一覧
 Visual Studio Graphics Analyzer でグラフィックス イベント一覧を使用して、ゲームまたはアプリのフレームのレンダリング中に記録された Direct3D イベントを調査できます。
@@ -104,7 +104,6 @@ Visual Studio 2017 およびそれ以降を含む、**リソース履歴**ウィ
 ![リソース履歴](media/gfx_diag_resource_history.png)
 
 このウィンドウを使用すると、イベントの一覧で選択した項目の履歴を表示できます。  上部にあるドロップダウン リストには、履歴を表示するには、他の項目の選択ができます。  ウィンドウの上半分が含まれています、**フレーム セットアップ イベント**します。  これらはイベントには、*作成*カテゴリを入力し、呼び出しが通常を初期化し、リソースを作成します。  含むウィンドウの下部にある、**フレーム イベント**セクション。  これらは通常の読み取りであり、リソースの使用状況の中に発生するイベントを書き込みます。
-
 
 | Column | 説明 |
 |-----------| - |

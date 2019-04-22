@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366407"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio デバッガーで実行中のプロセスへのアタッチ
@@ -171,7 +171,7 @@ Visual Studio で、アタッチする実行中のプロセスをすばやく選
 |ASP.NET 4 のリモート デバッグまたは IIS サーバー上の 4.5|リモート ツールを使用し、**プロセスにアタッチします。**|*w3wp.exe*|参照してください[リモート リモート IIS コンピューター上の ASP.NET のデバッグ](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |ASP.NET Core、IIS サーバー上のリモート デバッグ|リモート ツールを使用し、**プロセスにアタッチします。**|*dotnet.exe*|アプリの展開を参照してください。 [Publish to IIS](https://docs.asp.net/en/latest/publishing/iis.html)します。 デバッグについては、次を参照してください[リモート IIS コンピューター上のリモート デバッグ ASP.NET Core。](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |サポートされているアプリの種類をローカルの IIS サーバー上のクライアント側スクリプトをデバッグします。 |使用**プロセスにアタッチします。**|*chrome.exe*、 *MicrosoftEdgeCP.exe*、または*iexplore.exe*|スクリプトのデバッグを有効にする必要があります。 Chrome、デバッグ モードで Chrome も実行する必要があります**Webkit コード**で、**にアタッチ**フィールド。|
-|ローカル コンピューター上の c#、Visual Basic、または C++ アプリをデバッグします。|いずれかの標準的なデバッグを使用して (**F5**) または**プロセスにアタッチします。**|*\<appname>.exe*|ほとんどのシナリオで標準的なデバッグを使用していないと**プロセスにアタッチ**します。|
+|ローカル コンピューター上の c#、Visual Basic、または C++ アプリをデバッグします。|いずれかの標準的なデバッグを使用して (**F5**) または**プロセスにアタッチします。**|*\<アプリ名>.exe*|ほとんどのシナリオで標準的なデバッグを使用していないと**プロセスにアタッチ**します。|
 |Windows デスクトップ アプリのリモート デバッグ|リモート ツール|N/A| 参照してください[c# または Visual Basic アプリのリモート デバッグ](../debugger/remote-debugging-csharp.md)または[C++ アプリのリモート デバッグ](../debugger/remote-debugging-cpp.md)|
 |デバッガーなしのアプリを起動した後、ローカル コンピューター上の ASP.NET アプリをデバッグします。|使用**プロセスにアタッチします。**|*iiexpress.exe*|これは、アプリをロードすると便利な可能性がありますより高速など (たとえば) プロファイリングを行う場合。 |
 |サーバー プロセスでその他のサポートされているアプリの種類をデバッグします。|サーバーがリモートの場合は、リモート ツールを使用し、**プロセスにアタッチします。**|*chrome.exe*、 *iexplore.exe*、または他のプロセス|必要に応じて、リソース モニターを使用して、プロセスを識別できるようにします。 「[Remote debugging](../debugger/remote-debugging.md)」(リモート デバッグ) を参照してください。|
@@ -197,7 +197,7 @@ Visual Studio デバッガー (ブレークポイントにヒット) などの�
 
  デバッガーがコードの種類へのアタッチに失敗した理由に関する詳細な情報を設定する場合は、コードの種類のみに再アタッチしてみてください。
 
- **コードの種類をアタッチが失敗した理由に関する特定の情報を入手するには**
+ **ある種類のコードへのアタッチに失敗した理由を確認するには**
 
 1.  プロセスからデタッチします。 **デバッグ**メニューの **すべてデタッチ**します。
 
@@ -218,5 +218,5 @@ Visual Studio デバッガー (ブレークポイントにヒット) などの�
 ## <a name="see-also"></a>関連項目
 
 - [複数プロセスをデバッグする](../debugger/debug-multiple-processes.md)
-- [Just-in-time デバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [Just-In-Time デバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [リモート デバッグ](../debugger/remote-debugging.md)
