@@ -12,17 +12,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a42cee0574d5cf5f0de50fb1e9923c9e54504a91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773086"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653490"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 変換
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 変換とは、1 つの項目一覧を別の項目コレクションに一対一で変換することです。 プロジェクトで項目一覧を変換できます。さらに変換により、ターゲットは入出力間の直接割り当てを指定できるようになります。 このトピックでは、変換と、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] で変換を利用してプロジェクトを効率的にビルドする方法について説明します。  
   
 ## <a name="transform-modifiers"></a>変換修飾子  
@@ -55,7 +54,7 @@ ms.locfileid: "54773086"
 ## <a name="dependency-analysis"></a>依存関係の分析  
  変換では、変換後の項目一覧と元の項目一覧の間に存在する一対一のマッピングか維持されます。 そのため、入力の変換である出力がターゲットによって作成される場合、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] は、入力と出力のタイムスタンプを分析し、ターゲットをスキップ、ビルド、部分的再ビルドするかどうかを決定します。  
   
- 次の例の [[タスクをコピー]](../msbuild/copy-task.md) では、`BuiltAssemblies` 項目一覧のすべてのファイルが、`Outputs` 属性の変換によって指定される、タスクのターゲット フォルダーにマッピングされます。 `BuiltAssemblies` 項目一覧のファイルが変更されると、`Copy` タスクは変更されたファイルにだけ実行され、他のファイルはすべてスキップされます。 依存関係分析と変換の使用方法に関する詳細については、「[インクリメンタル ビルドを実行する方法](../msbuild/how-to-build-incrementally.md)」を参照してください。  
+ 次の例の [[タスクをコピー]](../msbuild/copy-task.md) では、`BuiltAssemblies` 項目一覧のすべてのファイルが、`Outputs` 属性の変換によって指定される、タスクのターゲット フォルダーにマッピングされます。 `BuiltAssemblies` 項目一覧のファイルが変更されると、`Copy` タスクは変更されたファイルにだけ実行され、他のファイルはすべてスキップされます。 依存関係分析と変換の使用方法に関する詳細については、「[方法:インクリメンタル ビルド](../msbuild/how-to-build-incrementally.md)します。  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -112,4 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>関連項目  
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
- [方法: インクリメンタル ビルドを実行する](../msbuild/how-to-build-incrementally.md)
+ [方法: インクリメンタル ビルドします。](../msbuild/how-to-build-incrementally.md)

@@ -14,16 +14,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f44b44cb0aa2d574d81fd63ef8541c25a4c2453
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: db58bb1826aab9a26dcec6a9475c49fc99057891
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002807"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661102"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Visual Studio での entity Data Model ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Entity Framework とは、.NET 開発者は、ドメイン固有オブジェクトを使用してリレーショナル データを操作できるオブジェクト リレーショナル マッピング テクノロジです。 開発者が通常記述しなければならないデータアクセス コードの多くが不要になります。 Entity Framework は、.NET アプリケーションの新しいテクノロジをモデリング推奨オブジェクト リレーショナル マッピング (ORM です)。
 

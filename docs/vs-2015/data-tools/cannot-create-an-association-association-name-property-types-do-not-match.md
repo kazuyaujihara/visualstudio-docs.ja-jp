@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a4a8a8dfdbf34a52e48a47d691436188cca9c70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 149f9360569978cf3ec15fd60154ad6f1408362f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976204"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656597"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>関連付け &lt;association name&gt; を作成できません - プロパティの型が一致しません。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 関連付け \<association name> を作成できません - プロパティの型が一致しません。 プロパティに一致する型がありません: \<property names>。  
   
  関連付けは、**[関連付けエディター]** ダイアログ ボックスで選択された **[関連付けのプロパティ]** によって定義されます。 関連付けの両側のプロパティは、同じデータ型である必要があります。  

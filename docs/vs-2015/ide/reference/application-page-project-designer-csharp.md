@@ -15,17 +15,16 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1c1c463e95ab81c0331b12aaea692afe7005eff9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778647"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653699"
 ---
 # <a name="application-page-project-designer-c"></a>[アプリケーション] ページ (プロジェクト デザイナー) (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **プロジェクト デザイナー**の **[アプリケーション]** ページを使用して、プロジェクトのアプリケーション設定とプロパティを指定します。  
   
  **[アプリケーション]** ページにアクセスするには、**ソリューション エクスプローラー**のプロジェクト ノード (**[ソリューション]** ノードではありません) を選択します。 その後、メニュー バーで **[プロジェクト]**、**[プロパティ]** の順に選択します。 プロジェクト デザイナーが表示されたら、**[アプリケーション]** タブをクリックします。  

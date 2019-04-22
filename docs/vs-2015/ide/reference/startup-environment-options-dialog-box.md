@@ -11,17 +11,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 946c9b42d247df010863074786b41e6c52d7d585
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c54bea7e5d80db2b6aecf9fac06070bf012d3d2e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785927"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659710"
 ---
 # <a name="startup-environment-options-dialog-box"></a>[スタートアップ] ([オプション] ダイアログ ボックス - [環境])
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 このページを使用して、Visual Studio のスタート ページをカスタマイズするか、Visual Studio 起動時の別の既定のアクションを設定します。 詳細については、[スタート ページのカスタマイズ](../../ide/customizing-the-start-page-for-visual-studio.md)に関するページを参照してください。  
   
 ## <a name="see-also"></a>関連項目  

@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa90a0d10b06559b3f4f46fd8dc0c5da4cef981e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9f4f410656e49b1a76e74898940cbd32314fc8b4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780748"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661335"
 ---
 # <a name="how-to-clean-a-build"></a>方法 : ビルドをクリーンする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ビルドをクリーンするとき、すべての中間ファイルと出力ファイルが削除され、プロジェクト ファイルとコンポーネント ファイルが残ります。 プロジェクト ファイルとコンポーネント ファイルから、中間ファイルと出力ファイルの新しいインスタンスをビルドできます。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] とともに提供されている一般的なタスクのライブラリには、システム コマンドの実行に利用できる [Exec](../msbuild/exec-task.md) タスクが含まれています。 タスクのライブラリに関する情報については、「[タスク リファレンス](../msbuild/msbuild-task-reference.md)」を参照してください。  
   
 ## <a name="creating-a-directory-for-output-items"></a>出力項目のディレクトリを作成する  

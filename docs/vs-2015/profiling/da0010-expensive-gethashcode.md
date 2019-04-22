@@ -1,5 +1,5 @@
 ---
-title: 'DA0010: GetHashCode の負荷が高くなっています | Microsoft Docs'
+title: DA0010:GetHashCode の負荷が高くなっています | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 111e3204224f1124476ab2a324df7be2b6ef2525
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: 1055136562d59412a6187524dc6023c55ef2dc3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354831"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659034"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode の負荷が高くなっています
+# <a name="da0010-expensive-gethashcode"></a>DA0010:GetHashCode の負荷が高くなっています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新ドキュメントについては、次を参照してください。 [DA0010: GetHashCode の負荷が](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode)docs.microsoft.com でリリースされました。  
-
-  
+Visual Studio の最新ドキュメントについては、次を参照してください[DA0010:。GetHashCode の負荷が](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode)します。  
 
 |||  
 |-|-|  
@@ -40,7 +38,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
  型の GetHashCode メソッドの呼び出しがプロファイリング データの大きな割合を占めているか、またはそのメソッドがメモリを割り当てています。  
   
 ## <a name="rule-description"></a>規則の説明  
- ハッシュは、大きなコレクションの中から特定の項目を簡単に見つけるための手法です。 ハッシュ テーブルは非常に大きくなることがあり、非常に高いアクセス率に対応しなければなりません。そのため、ハッシュ テーブルは極めて効率的にする必要があります。 この要件が意味するところは、.NET Framework の GetHashCode メソッドでメモリを割り当ててはいけないということです。 メモリを割り当てるとガベージ コレクターの負荷が増し、割り当て要求の結果としてガベージ コレクションを実行しなければならなくなると、メソッドに遅延が発生する可能性があります。  
+ ハッシュは、大きなコレクションの中から特定の項目を簡単に見つけるための手法です。 ハッシュ テーブルは、非常に大きくなるし、高速のアクセス速度をサポートする必要がある、ため、ハッシュ テーブルが非常に効率的な場合があります。 この要件が意味するところは、.NET Framework の GetHashCode メソッドでメモリを割り当ててはいけないということです。 メモリを割り当てるとガベージ コレクターの負荷が増し、割り当て要求の結果としてガベージ コレクションを実行しなければならなくなると、メソッドに遅延が発生する可能性があります。  
   
 ## <a name="how-to-fix-violations"></a>違反の修正方法  
  メソッドの複雑さを軽減してください。

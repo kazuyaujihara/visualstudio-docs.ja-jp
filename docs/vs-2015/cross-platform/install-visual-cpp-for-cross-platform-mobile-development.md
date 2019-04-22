@@ -11,17 +11,16 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 504f7f002c41832294e61fa968f7cfd2d32b54b0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 7236c0cde965a52ea6ea19f4244e90ec53851405
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869123"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659164"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Visual C++ for Cross-Platform Mobile Development のインストール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual C++ for Cross-Platform Mobile Development](http://go.microsoft.com/fwlink/p/?LinkId=536383) は、Visual Studio 2015 付属のインストール可能なコンポーネントです。 クロス プラットフォームの Visual Studio テンプレートが含まれており、クロス プラットフォーム ツールおよび SDK をインストールしてすぐに開始できるようにします。それらを自分で検索、ダウンロード、構成する必要はありません。 これらのツールを Visual Studio で使用することで、クロス プラットフォーム プロジェクトを簡単に作成、編集、デバッグ、テストできます。 このトピックでは、Visual Studio を使用してクロス プラットフォーム アプリを開発するために必要なツールとサード パーティのソフトウェアをインストールする方法について説明します。 コンポーネントの概要については、「 [Visual C++ クロスプラットフォーム モバイル](http://go.microsoft.com/fwlink/p/?LinkId=536387)」をご覧ください。  
   
  [要件](#Requirements)   

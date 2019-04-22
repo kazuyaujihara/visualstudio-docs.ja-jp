@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 957c1fe49d222a691160eadc4b2cf08f8a20a65a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 247e1720a21c88f15a766fb948156e93ec55e308
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975296"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656324"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>方法: 更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ストアド プロシージャは O/R デザイナーに追加でき、通常の <xref:System.Data.Linq.DataContext> メソッドとして実行できます。 既定値も使用[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]実行時の動作を挿入、更新を実行し、データベースに、エンティティ クラスから変更が保存されたときに削除します (などを呼び出すときに、<xref:System.Data.Linq.DataContext.SubmitChanges%2A>メソッド)。  
   
 > [!NOTE]

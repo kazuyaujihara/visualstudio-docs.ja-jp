@@ -21,17 +21,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd437be1dd61e05259bc13501d7b9b9aaa06e285
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: beb0296834986648f47357da50d4022c1f632823
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753533"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658787"
 ---
 # <a name="properties-window"></a>[プロパティ] ウィンドウ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 このウィンドウで、エディターやデザイナーのオブジェクトを選択してデザイン時のプロパティやイベントを表示および変更できます。 また、**[プロパティ]** ウィンドウでは、ファイル、プロジェクト、およびソリューションのプロパティの編集や表示もできます。 **[プロパティ]** ウィンドウは **[表示]** メニューにあります。 また、F4 キーを押すか、**[クイック起動]** ウィンドウに「**プロパティ**」と入力して開くこともできます。  
   
  **[プロパティ]** ウィンドウでは、特定のプロパティの必要性に応じて、さまざまな編集フィールドを表示できます。 編集フィールドには、編集ボックス、ドロップダウン リスト、カスタム エディター ダイアログ ボックスへのリンクなどがあります。 淡色表示されているプロパティは読み取り専用です。  

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e3c4aabd973a755f2289abfa809df556680070
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: cd4bf8b1b6f43e8ed12b133a621e21157fb87118
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944534"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657390"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>ドメイン固有言語の定義に追跡プロパティを追加する
 
@@ -26,7 +26,7 @@ A*追跡ドメイン*プロパティは、ユーザーを更新できますが�
 
 たとえば、ドメイン固有言語ツール (DSL) ツールでユーザーが、ドメイン クラスの名前を使用して計算される既定値を持つドメイン クラスのプロパティの表示名デザイン時に値を変更したりできます計算値にリセットします。
 
-このチュートリアルでは、ドメイン固有言語 (DSL) を持つモデルの既定の Namespace プロパティに基づいて既定値を持つプロパティの追跡の Namespace を作成します。 プロパティの追跡の詳細については、[追跡プロパティを定義する](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)を参照してください。
+このチュートリアルでは、ドメイン固有言語 (DSL) を持つモデルの既定の Namespace プロパティに基づいて既定値を持つプロパティの追跡の Namespace を作成します。 プロパティの追跡の詳細については、次を参照してください。[追跡プロパティを定義する](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)します。
 
 - DSL ツール サポートは、プロパティ記述子を追跡します。 ただし、DSL デザイナーを使用して、言語にトラッキング プロパティを追加することはできません。 したがって、定義して、トラッキング プロパティを実装するカスタム コードを追加する必要があります。
 
@@ -45,7 +45,6 @@ A*追跡ドメイン*プロパティは、ユーザーを更新できますが�
 ## <a name="prerequisites"></a>必須コンポーネント
 
 このチュートリアルを開始する前に、これらのコンポーネントをまずインストールする必要があります。
-
 
 | | |
 |-|-|
@@ -138,7 +137,7 @@ A*追跡ドメイン*プロパティは、ユーザーを更新できますが�
 
 1.  **ソリューション エクスプ ローラー**ツールバーで、をクリックして**すべてのテンプレートの変換**します。
 
-2.  システムでは、ソリューションでは、コードを再生成し、DslDefinition.dsl を保存します。 定義ファイルの XML 形式の詳細については、[DslDefinition.dsl ファイル](../modeling/the-dsldefinition-dsl-file.md)を参照してください。
+2.  システムでは、ソリューションでは、コードを再生成し、DslDefinition.dsl を保存します。 定義ファイルの XML 形式の詳細については、次を参照してください。 [DslDefinition.dsl ファイル](../modeling/the-dsldefinition-dsl-file.md)します。
 
 ## <a name="create-files-for-custom-code"></a>カスタム コードのファイルを作成します。
 
@@ -753,11 +752,11 @@ XML シリアル化のカスタムの読み込み後の動作をサポートす�
 
 ## <a name="next-steps"></a>次の手順
 
-1 つ以上の追跡のプロパティを使用して、または 1 つ以上の DSL に追跡プロパティを実装する場合は、各追跡プロパティをサポートするための一般的なコードを生成するテキスト テンプレートを作成できます。 テキスト テンプレートの詳細については、[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)を参照してください。
+1 つ以上の追跡のプロパティを使用して、または 1 つ以上の DSL に追跡プロパティを実装する場合は、各追跡プロパティをサポートするための一般的なコードを生成するテキスト テンプレートを作成できます。 テキスト テンプレートの詳細については、次を参照してください。[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。
 
 ## <a name="see-also"></a>関連項目
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)
-- [方法: ドメイン固有言語ソリューションを作成します。](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [方法: ドメイン固有言語ソリューションを作成する](../modeling/how-to-create-a-domain-specific-language-solution.md)

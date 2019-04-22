@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78e70ae790a39cb761eca34dcdc2b9b32b5bbfd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974146"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653633"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>スクリプトを使用して SQL database を作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このチュートリアルでのサンプル コードを含む小さなデータベースを作成する Visual Studio を使用する[ADO.NET を使用して単純なデータ アプリケーションを作成する](../data-tools/create-a-simple-data-application-by-using-adonet.md)します。  
   
  **このトピックの内容**  

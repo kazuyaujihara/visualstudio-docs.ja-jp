@@ -24,17 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1740e9d7668101911862c91457a2c81c48f7b72d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976680"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661322"
 ---
 # <a name="validate-data-in-datasets"></a>データセットのデータの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 データの検証は、データ オブジェクトに入力される値は、データセットのスキーマ内の制約に準拠することを確認するプロセスです。 また、検証プロセスは、これらの値が、アプリケーションに対して設定した規則に従っていることを確認します。 基になるデータベースの更新を送信する前にデータを検証することをお勧めします。 これには、エラーに加え、潜在的なアプリケーションとデータベース間のラウンド トリップ数が削減されます。  
   
  データセットに書き込まれたデータがデータセットに検証チェックを組み込むことで有効であるを確認できます。 データセットは、更新プログラムの実行方法に関係なく、データを確認できます: コントロール、コンポーネント内のフォームまたは他の方法で直接かどうか。 データセットが (データベースのバック エンド) とは異なり、アプリケーションの一部であるため、アプリケーション固有の検証をビルドする論理的な場所になります。  

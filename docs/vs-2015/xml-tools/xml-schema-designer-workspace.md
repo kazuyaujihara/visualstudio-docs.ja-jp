@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65312776f56fc2c96f2da7b528cc8cc9d339fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962542"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656545"
 ---
 # <a name="xml-schema-designer-workspace"></a>XML スキーマ デザイナーのワークスペース
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML スキーマ デザイナー (XSD デザイナー) は、XML スキーマを調べるために使用できるグラフィカル ツールです。 加え、 [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)、参照し XML スキーマのツリーを移動し、検索を実行することができる XSD デザイナーには、さらに詳しく、XSD スキーマを検証するための 3 つのビューが用意されています。 スタート ビューは XSD デザイナーの起点で、スタート ビューからは、XSD デザイナーの他のビューに移動したり、スキーマ セットの詳細を表示したりすることができます。 グラフ ビューでは、スキーマ セットの概要とスキーマ ノード間のリレーションシップを表示できます。 コンテンツ モデル ビューには、単純型、複合型、要素、グループ、属性、属性グループなど、ローカル スキーマ ノードとグローバル スキーマ ノードの詳細がグラフィック表示されます。  
   
  目的のノードを調べるには、ワークスペースにノードを追加する必要があります。 ワークスペースは、すべてのビューで共有されます。  

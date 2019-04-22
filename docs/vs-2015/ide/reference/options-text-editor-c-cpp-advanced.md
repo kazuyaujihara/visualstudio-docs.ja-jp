@@ -15,17 +15,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a4f7da520c1659ebb75b777c031f171d1465493e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790098"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660776"
 ---
 # <a name="options-text-editor-cc-advanced"></a>[オプション]、[テキスト エディター]、[C/C++]、[詳細]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 これらのオプションを変更することによって、C または C++ でプログラミングを行うときに、IntelliSense に関連する動作と参照データベースを変更できます。  
   
  このページにアクセスするには、左ウィンドウ枠の **[オプション]** ダイアログ ボックスで、**[テキスト エディター]**、**[C/C++]** の順に展開して、**[詳細]** を選択します。  

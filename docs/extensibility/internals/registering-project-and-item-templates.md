@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6f2a8b25438d7909f47087b8f6a80e595e7cba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630523"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658399"
 ---
 # <a name="registering-project-and-item-templates"></a>プロジェクトと項目テンプレートの登録
 プロジェクトの種類には、そのプロジェクトとプロジェクト項目テンプレートが配置されるディレクトリを登録する必要があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 表示するものを決定する、プロジェクトの種類に関連付けられている登録情報を使用して、**新しいプロジェクトの追加**と**新しい項目の追加** ダイアログ ボックス。
 
- テンプレートの詳細については、[プロジェクトに追加するとプロジェクト項目テンプレート](../../extensibility/internals/adding-project-and-project-item-templates.md)を参照してください。
+ テンプレートの詳細については、次を参照してください。[プロジェクトに追加するとプロジェクト項目テンプレート](../../extensibility/internals/adding-project-and-project-item-templates.md)します。
 
 ## <a name="registry-entries-for-projects"></a>プロジェクトのレジストリ エントリ
  次の例では、hkey_local_machine \software\microsoft\visualstudio の下にレジストリ エントリ\\<*バージョン*>。 付随するテーブルでは、例で使用される要素について説明します。
@@ -54,7 +54,6 @@ ms.locfileid: "56630523"
 "TemplatesLocalizedSubDir"="#10"
 "SortPriority"=dword:00000064
 ```
-
 
 | 名前 | 種類 | 説明 |
 |--------------------------|-----------| - |

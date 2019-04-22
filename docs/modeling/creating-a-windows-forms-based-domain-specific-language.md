@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 9e952cda19664a9d73ebe6b77daba3ecfd78777c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951515"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658710"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows フォームに基づくドメイン固有言語の作成
 DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの状態を表示するのに Windows フォームを使用することができます。 ここでは、Visual Studio Visualization and Modeling SDK を使用して、DSL への Windows フォームのバインドを示します。
@@ -28,12 +28,10 @@ DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの
 
     このチュートリアルでは、次の名前が想定しています。
 
-
    | | |
    |-|-|
    | ソリューションと DSL 名 | FarmApp |
    | 名前空間 | Company.FarmApp |
-
 
 2. テンプレートに用意された最初の例を試してみる。
 
@@ -318,7 +316,7 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 
  ただし、このコードは、新しい項目の既定の名前を設定できません。 定義した任意のカスタマイズされたマージは実行されません、**要素マージ ディレクティブ**DSL の定義されているコードのカスタムのマージは実行されません。
 
- 使用すること勧めそのため<xref:Microsoft.VisualStudio.Modeling.ElementOperations>新しい要素を作成します。 詳細については、[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)を参照してください。
+ 使用すること勧めそのため<xref:Microsoft.VisualStudio.Modeling.ElementOperations>新しい要素を作成します。 詳細については、次を参照してください。[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)します。
 
 ## <a name="see-also"></a>関連項目
 

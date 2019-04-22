@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4d9afdfcc221e8f07bae7d4bbf7dee57dda31f
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504251"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660698"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio の extender のモニターごとの認識をサポート
 Visual Studio 2019 より前のバージョンには、DPI 認識コンテキストの認識ではなく、モニターごとの DPI に注意してください (PMA) システムに設定が必要があります。 システムの認識を実行しているビジュアルを低下が発生しました (例: ぼやけてフォントまたはアイコン) が発生するたびに、Visual Studio で表示するために複数のモニターの別のスケール ファクターまたはリモートで別のディスプレイの構成を持つマシンになど (異なる必要があります。Windows スケーリング)。
@@ -40,10 +40,13 @@ Visual Studio 2019 の DPI 認識コンテキストは、環境をサポート�
 ## <a name="enabling-pma"></a>PMA を有効にします。
 Visual Studio で PMA を有効にするには、次の要件を満たす必要があります。
 1)  Windows 10 April 2018 Update (v1803 RS4) またはそれ以降
-2)  .NET framework 4.8 RTM 以上 (現在スタンドアロン プレビューまたは最近のバンドルとして出荷されます Windows Insider ビルド)
+2)  .NET framework 4.8 RTM 以降
 3)  Visual Studio 2019、 [「異なるピクセル密度の画面のレンダリングの最適化」](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019)オプションを有効に
 
 これらの要件が満たされると、Visual Studio は、プロセス全体で PMA モードを有効に自動的にします。
+
+> [!NOTE]
+> VS (プロパティ ブラウザーなど) で Windows フォームのコンテンツは、Visual Studio 2019 Update #1 がある場合にのみ、PMA をサポートします。
 
 ## <a name="testing-your-extensions-for-pma-issues"></a>PMA 問題について、拡張機能のテスト
 
@@ -106,12 +109,18 @@ CreateWindow() または CreateWindowEx() で windows を作成するときに�
 #### <a name="out-of-process-ui"></a>プロセス外の UI
 一部の UI にはアウト プロセスが作成され、これが以前のレンダリングの問題のいずれかを導入、作成した外部プロセスは、Visual Studio よりも、さまざまな解像度認識モードでは場合、。
 
-#### <a name="windows-forms-controls-images-or-windows-not-displaying"></a>Windows フォーム コントロール、イメージ、または windows に表示されません。
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Windows フォーム コントロール、イメージまたはレイアウトが正しくレンダリングされません。
+すべての Windows フォームのコンテンツは、PMA モードをサポートします。 その結果、不適切なレイアウトの問題を表示またはスケールを表示があります。 解決策は、ここで明示的に「システム対応」DpiAwarenessContext で Windows フォームのコンテンツを表示するためには (を参照してください[コントロールの特定の DpiAwarenessContext 強制](#forcing-a-control-into-a-specific-dpiawarenesscontext))。
+
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Windows フォーム コントロールまたはウィンドウが表示されません。
 この問題の主な原因の 1 つは、開発者がコントロールまたは異なる DpiAwarenessContext でウィンドウを 1 つ DpiAwarenessContext でウィンドウの親を変更しようとしています。
 
-次の図は、windows の親で現在の Windows オペレーティング システムの制限を示してください。
+次の図は、現在を示して**既定**windows の親での Windows オペレーティング システムの制限。
 
 ![適切な親動作のスクリーン ショット](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+
+> [!Note]
+> ホストしているスレッドの動作を設定してこの動作を変更することができます (を参照してください[DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior))。
 
 その結果、サポートされていないモード間の親子リレーションシップを設定した場合は、失敗し、コントロールまたはウィンドウが表示されない期待どおりにします。
 

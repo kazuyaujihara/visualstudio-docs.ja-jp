@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: ce283e5cbab30b612a02ec447113ad11e206a7f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694817"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655375"
 ---
 # <a name="graphics-frame-validation"></a>グラフィックス フレームの検証
-<!-- VERSIONLESS --> Visual Studio 2017 とサポートを強化、**フレームの検証**ツール。  フレームの検証のウィンドウには、エラーとイベントの一覧に関連付けられている警告が表示されます。  このウィンドウを表示するには、選択、**ビュー > フレームの検証**メニュー。
+<!-- VERSIONLESS -->
+Visual Studio 2017 とサポートを強化、**フレームの検証**ツール。  フレームの検証のウィンドウには、エラーとイベントの一覧に関連付けられている警告が表示されます。  このウィンドウを表示するには、選択、**ビュー > フレームの検証**メニュー。
 
 ![フレームの検証](media/gfx_diag_frame_validation.png)
 
 をクリックして、**検証の実行**分析を開始する左上隅にあるボタンをクリックします。  フレームの複雑さによっては完了までに数分かかる場合があります。  2 つのソースからの組み合わせは、ここに表示されるデータ: メッセージを D3D ときに出力自体[SDK レイヤー](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers)が有効になってと追跡ツールの内部状態から収集されるデータ。 完了すると、いくつかの列のデータが表示されます。
-
 
 | **列** | **説明** |
 |------------| - |

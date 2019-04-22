@@ -30,17 +30,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0c4a353923bbf5d98bd2ef4fcb3c5fe28447fe8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 632c3027ccb8019e372abd6400dd3f2333742e05
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54773337"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658106"
 ---
 # <a name="project-and-solution-file-types"></a>プロジェクト ファイルとソリューション ファイルの種類
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は、多くの種類のファイルをサポートします。 特定のインストールでは、インストールされるコンポーネントによってサポートされるファイルの種類が決まります。 このトピックでは、いくつかの標準的なインストールでサポートされるソリューション ファイルとプロジェクト ファイルの種類について説明します。 その他のファイルの種類の詳細については、それぞれの種類のファイル名拡張子を使用して検索してください。  
   
 ## <a name="solution-files-sln-and-suo"></a>ソリューション ファイル (.sln および .suo)  

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e1a1561bef1ae99db2b6bf338b083c57d0c8d7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f1b4137a6f024a9a4f752af7c9e19fd946a1c282
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621514"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653893"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>チュートリアル: CheckBox コントロールを使用したドキュメント書式を変更します。
   このチュートリアルでは、Microsoft Office Word のドキュメント レベルのカスタマイズでの Windows フォーム コントロールを使用して、テキストの書式設定を変更する方法を示します。
@@ -155,7 +155,6 @@ ms.locfileid: "56621514"
 -   ボタンを使用して、テキスト ボックスに入力します。 詳細については、「[チュートリアル:ボタンを使用して、ドキュメント内のテキスト ボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)します。
 
 -   オプション ボタンを使用してグラフのスタイルを選択する。 詳細については、「[チュートリアル:ラジオ ボタンを使用してドキュメントのグラフを更新](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)します。
-
 
 ## <a name="see-also"></a>関連項目
 - [Word を使用したチュートリアル](../vsto/walkthroughs-using-word.md)

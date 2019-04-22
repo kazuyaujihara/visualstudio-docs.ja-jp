@@ -9,17 +9,16 @@ caps.latest.revision: 4
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 14b04de6ea4c945b67bada257d7822790b683b38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 744e7d89827e169579953474c9e7b37f2dcc653f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772946"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660506"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>VSTU によって作成されるプロジェクト ファイルのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio Tools for Unity は、プロジェクト ファイルの生成時に Unity スタイルのコールバックを提供します。 `VisualStudioIntegration.ProjectFileGeneration` イベントに登録し、プロジェクト ファイルが再生成されるたびに、それを変更します。  
   
 ## <a name="demonstrates"></a>使用例  
@@ -70,4 +69,4 @@ public class ProjectFileHook
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [例: ログのコールバック](../cross-platform/share-the-unity-log-callback-with-vstu.md)
+ [例:ログのコールバック](../cross-platform/share-the-unity-log-callback-with-vstu.md)

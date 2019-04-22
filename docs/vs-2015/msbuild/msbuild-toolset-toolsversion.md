@@ -14,17 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2f570252a5bf87d0949bcda04ba312fe8092704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773039"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657507"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild ツールセット (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild は、タスク、ターゲット、およびツールのツールセットを使用して、アプリケーションをビルドします。 通常、MSBuild ツールセットには、microsoft.common.tasks ファイル、microsoft.common.targets ファイル、および csc.exe や vbc.exe などのコンパイラが含まれています。 ほとんどのツールセットは、複数のバージョンの .NET Framework や複数のシステム プラットフォームを対象としてアプリケーションをコンパイルするために使用できます。 ただし、MSBuild 2.0 ツールセットは .NET Framework 2.0 のみを対象として使用できます。  
   
 ## <a name="toolsversion-attribute"></a>ToolsVersion 属性  
@@ -72,7 +71,7 @@ MSBuild は、タスク、ターゲット、およびツールのツールセッ
   
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper> メソッドの使用  
   
-  ツールセットのプロパティは、ツールのパスを指定します。 MSBuild はプロジェクト ファイル内にある `ToolsVersion` 属性の値を使用して、対応するレジストリ キーを検索します。その後で、レジストリ キーの情報を使用して、ツールセットのプロパティを設定します。 たとえば、`ToolsVersion` の値が `12.0` である場合、MSBuild は、レジストリ キー (HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0) に従ってツールセットのプロパティを設定します。  
+  ツールセットのプロパティは、ツールのパスを指定します。 MSBuild はプロジェクト ファイル内にある `ToolsVersion` 属性の値を使用して、対応するレジストリ キーを検索します。その後で、レジストリ キーの情報を使用して、ツールセットのプロパティを設定します。 たとえば、`ToolsVersion` の値が `12.0` である場合、MSBuild ではレジストリ キー HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
   ツールセットのプロパティを次に示します。  
   

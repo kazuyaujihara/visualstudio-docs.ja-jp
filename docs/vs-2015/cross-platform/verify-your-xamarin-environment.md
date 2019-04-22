@@ -6,17 +6,16 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 220931b3c00087b778b4c886046795b3f83acaa0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a8be3ad8b102677014aca4b59fed29f11cf3d50a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766998"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661045"
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin 環境を検証する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 インストーラーが完了したら (「[セットアップとインストール](../cross-platform/setup-and-install.md)」を参照)、数分をかけて、Xamarin 開発を実行するための準備ができているかどうかを確認します。  
   
  これらの確認が終わったら、次のチュートリアルの一方または両方を実行できます。  

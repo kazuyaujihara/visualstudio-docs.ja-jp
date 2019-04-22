@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
+ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323452"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661387"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 
@@ -96,8 +96,7 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 
   - **入力規則**適用、 [、C++ Core Guidelines のプロファイルを入力](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)します。
 
-
-警告を 1 つだけ、またはグループの数を制限することができます。 **ネイティブ最小**と**ネイティブ推奨**ルール セットには、その他の PREfast のチェックだけでなく C++ Core Check の規則が含まれます。 確認には、使用可能なルール セット、プロジェクトのプロパティ ダイアログを開き、次のように選択します**コード Analysis\General**、にあるボックスを開き、**規則セット**コンボ ボックス、および選択**複数の規則セットの選択**。 Visual Studio でのルール セットの使用に関する詳細については、[ルール セットのコード分析規則のグループを使用して](using-rule-sets-to-group-code-analysis-rules.md)を参照してください。
+警告を 1 つだけ、またはグループの数を制限することができます。 **ネイティブ最小**と**ネイティブ推奨**ルール セットには、その他の PREfast のチェックだけでなく C++ Core Check の規則が含まれます。 確認には、使用可能なルール セット、プロジェクトのプロパティ ダイアログを開き、次のように選択します**コード Analysis\General**、にあるボックスを開き、**規則セット**コンボ ボックス、および選択**複数の規則セットの選択**。 Visual Studio でのルール セットの使用に関する詳細については、次を参照してください。[ルール セットのコード分析規則のグループを使用して](using-rule-sets-to-group-code-analysis-rules.md)します。
 
 ## <a name="macros"></a>[マクロ]
 

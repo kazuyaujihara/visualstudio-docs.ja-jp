@@ -23,17 +23,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1b384ad0dd8c121a03f8ee8840f55352d435218c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962814"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653207"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML データのデータセットへの読み込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ADO.NET では、XML データを操作するための単純なメソッドを提供します。 このチュートリアルでは、データセットに XML データを読み込む Windows アプリケーションを作成します。 データセットが表示し、<xref:System.Windows.Forms.DataGridView>コントロール。 最後に、XML ファイルの内容に基づく XML スキーマは、テキスト ボックスに表示されます。  
   
  このチュートリアルは、5 つの主な手順で構成されます。  
@@ -52,7 +51,7 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
 >  ダイアログ ボックスとメニュー コマンド、アクティブな設定またはエディションによって、ヘルプの記載を異なる場合がありますを表示するを使用しています。 設定を変更する、**ツール**メニューの **インポートおよびエクスポート設定**します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する  
- この手順では、このチュートリアルを含む Visual Basic または Visual C# プロジェクトを作成します。  
+ この手順では、このチュートリアルを含む Visual Basic または Visual c# プロジェクトを作成します。  
   
 #### <a name="to-create-the-new-windows-project"></a>新しい Windows プロジェクトを作成するには  
   

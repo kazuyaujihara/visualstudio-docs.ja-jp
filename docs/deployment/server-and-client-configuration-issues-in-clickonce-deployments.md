@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b834ce2b76d9c73fc5247da3402003b766dd9d87
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597798"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654088"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 配置でのサーバーおよびクライアント構成の問題
 Windows Server で、インターネット インフォメーション サービス (IIS) を使用する、展開には、Windows で認識されない種類のファイルが含まれている場合は、Microsoft Word ファイルなど、そのファイルを送信する IIS は拒否し、配置は失敗します。
@@ -49,7 +49,7 @@ Windows Server で、インターネット インフォメーション サービ
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce とプロキシの認証
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .NET Framework 3.5 以降で Windows 統合のプロキシ認証のサポートを提供します。 特定の machine.config ディレクティブは必要ありません。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 基本認証またはダイジェストなどの他の認証プロトコルのサポートを行いません。
 
- この機能を有効にする .NET Framework 2.0 修正プログラムを適用することもできます。 詳細については、「 http://go.microsoft.com/fwlink/?LinkId=158730」を参照してください。
+ この機能を有効にする .NET Framework 2.0 修正プログラムを適用することもできます。 詳細については、「 http://go.microsoft.com/fwlink/?LinkId=158730 」を参照してください。
 
  詳細については、次を参照してください。 [ \<defaultProxy > 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)します。
 
@@ -94,7 +94,6 @@ Windows Server で、インターネット インフォメーション サービ
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP プロトコルのアプリケーションをインストールするためにサポートされていません
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] HTTP 1.1 の Web サーバーまたはファイル サーバーからアプリケーションのインストールをサポートします。 アプリケーションをインストールするのには、FTP、ファイル転送プロトコルはサポートされていません。 アプリケーションのみを公開するのに FTP を使用することができます。 次の表は、これらの違いをまとめたものです。
 
-
 | URL の種類 | 説明 |
 |----------| - |
 | ftp:// | 発行することができます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]このプロトコルを使用してアプリケーション。 |
@@ -102,15 +101,15 @@ Windows Server で、インターネット インフォメーション サービ
 | https:// | インストールすることができます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]このプロトコルを使用してアプリケーション。 |
 | file:// | インストールすることができます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]このプロトコルを使用してアプリケーション。 |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP sp 2: Windows ファイアウォール
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows ファイアウォール
  既定では、Windows XP SP2、Windows ファイアウォールが可能です。 発行および実行する場合は Windows XP がインストールされているコンピューター上でアプリケーションを開発している場合[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]IIS を実行しているローカル サーバーからのアプリケーション。 ただし、Windows ファイアウォールを開く場合を除き、別のコンピューターから IIS を実行するサーバーはアクセスできません。 Windows ファイアウォールを管理する手順については、Windows のヘルプを参照してください。
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server:、FrontPage server extensions が有効にします。
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server:FrontPage server extensions を有効にします。
  Microsoft の FrontPage Server Extensions は、HTTP を使用する Windows の Web サーバーにアプリケーションの発行に必要です。
 
  既定では、Windows Server にインストールされている FrontPage Server Extensions はありません。 使用する場合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]FrontPage Server Extensions で HTTP を使用する Windows Server の Web サーバーで発行する必要があります最初にインストールする FrontPage Server Extensions。 インストールを実行するには、Windows Server のサーバーの管理の管理ツールを使用します。
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: ロックされたコンテンツの種類
+## <a name="windows-server-locked-down-content-types"></a>Windows Server:ロックされたコンテンツの種類
  上の IIS[!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)]ロックは特定の既知のコンテンツ タイプを除くすべてのファイルの種類 (たとえば、 *.htm*、 *.html*、 *.txt*など)。 展開を有効にする[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]の種類のファイルをダウンロードできるようにするのには、IIS 設定を変更する必要があるアプリケーションがこのサーバーを使用して、 *.application*、 *.manifest*、およびその他のカスタムのファイルの種類アプリケーションで使用します。
 
  IIS サーバーを使用してを展開する場合は、実行*inetmgr.exe*し、既定の Web ページの新しいファイルの種類を追加します。

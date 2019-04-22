@@ -19,17 +19,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49fb600b2c27725eb6fe888aa2a41a6b19c123b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3e155b33c501326be3d3dcc89fb6b73d501556be
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975793"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657848"
 ---
 # <a name="save-a-dataset-as-xml"></a>データセットを XML として保存する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 データセット内の XML データは、データセットで使用可能な XML メソッドを呼び出すことによってアクセスできます。 XML 形式でデータを保存する、いずれかを呼び出すことができます、<xref:System.Data.DataSet.GetXml%2A>メソッドまたは<xref:System.Data.DataSet.WriteXml%2A>のメソッド、<xref:System.Data.DataSet>します。  
   
  呼び出す、<xref:System.Data.DataSet.GetXml%2A>メソッドは XML として書式設定するデータセット内のすべてのデータ テーブルからデータを含む文字列を返します。  

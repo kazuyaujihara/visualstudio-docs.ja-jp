@@ -16,18 +16,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e55d9d34a4837e2c01d78cc1f52ae2a25f28da8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d04c750bbe8183ae8e39765e41af2f138704ba3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785785"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654062"
 ---
 # <a name="build-events-page-project-designer-c"></a>[ビルド イベント] ページ (プロジェクト デザイナー) (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
-**プロジェクト デザイナー**の **[ビルド イベント]** ページを使用して、ビルド構成の手順を指定します。 また、あらゆるビルド後イベントを実行する条件を指定することもできます。 詳細については、「[方法 : ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)」および「[方法 : ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)」を参照してください。  
+**プロジェクト デザイナー**の **[ビルド イベント]** ページを使用して、ビルド構成の手順を指定します。 また、あらゆるビルド後イベントを実行する条件を指定することもできます。 詳細については、「[方法 :ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)」と「[方法:ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)」を参照してください。  
   
 ## <a name="uielement-list"></a>UIElement の一覧  
  **構成**  
@@ -58,7 +57,7 @@ ms.locfileid: "54785785"
 |**ビルドがプロジェクト出力を更新したとき**|ビルド後イベントは、コンパイラの出力ファイル (.exe または .dll) が以前のコンパイラの出力ファイルと異なる場合にのみ実行されます。 したがって、ビルド後イベントは、プロジェクトが最新の場合は実行されません。|  
   
 ## <a name="see-also"></a>関連項目  
- [方法 : ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [方法 : ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)   
+ [方法: ビルド イベント (Visual Basic) を指定します。](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [方法: ビルド イベント (c#) を指定します。](../../ide/how-to-specify-build-events-csharp.md)   
  [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)   
  [コードのコンパイルとビルド](../../ide/compiling-and-building-in-visual-studio.md)

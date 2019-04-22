@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 129b94087b19ebed9f95ec29dd093f3c18e42e87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1f5dced1acba79b0559db49f079e04f605263e0f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963810"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653477"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Visual Studio でのストア アプリのデバッグ セッションの開始 (VB、C#、C++、および XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
 2. F5 キーを選択します。
 
-   Visual Studio によってアプリがビルドされ、アタッチされたデバッガーが起動します。 実行は、ブレークポイントに達するか、実行が手動で中断されるか、ハンドルされていない例外が発生するか、アプリが終了するまで続行されます。 詳細については、次を参照してください。 [(Xaml および C#) は、デバッグ セッションのナビゲート](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)します。
+   Visual Studio によってアプリがビルドされ、アタッチされたデバッガーが起動します。 実行は、ブレークポイントに達するか、実行が手動で中断されるか、ハンドルされていない例外が発生するか、アプリが終了するまで続行されます。 詳細については、次を参照してください。 [(Xaml および c#) は、デバッグ セッションのナビゲート](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)します。
 
 ##  <a name="BKMK_Configure_the_debugging_session"></a> デバッグ セッションを構成する
 
@@ -256,13 +256,11 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
 2. 一覧から次のいずれかのオプションを選択します。
 
-
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **ローカル コンピューター**  |                                                                                                                ローカル コンピューターの現在のセッションでアプリをデバッグします。 参照してください[Windows ストア アプリの実行、ローカル コンピューター](../debugger/run-windows-store-apps-on-the-local-machine.md)します。                                                                                                                 |
    |   **シミュレーター**    | [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ用の Visual Studio シミュレーターでアプリをデバッグします。 シミュレーターは、ローカル コンピューターでは使用できないデバイスの機能 (タッチ ジェスチャやデバイスの回転など) をデバッグできるようにするデスクトップ ウィンドウです。 参照してください[Windows ストア アプリの実行、シミュレーターで](../debugger/run-windows-store-apps-in-the-simulator.md)します。 |
    | **リモート コンピューター** |                          ローカル コンピューターにイントラネットを介して接続されているかイーサネット ケーブルを使用して直接接続されているデバイス上のアプリをデバッグします。 リモートでデバッグするには、リモート デバイス上に Visual Studio リモート ツールがインストールされ、実行されている必要があります。 参照してください[Windows ストア アプリの実行をリモート コンピューターで](../debugger/run-windows-store-apps-on-a-remote-machine.md)します。                           |
-
 
 3. **[インストールされているアプリケーション パッケージ]** ボックスの一覧からアプリを選択します。
 

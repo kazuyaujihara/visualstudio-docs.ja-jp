@@ -13,17 +13,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8efc470db346e4de9036a5869c0118b68ea76f81
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ec8cefeaf005c17ecb09d109c161b5cbae3dc03a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802290"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655349"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>マルチプロセッサ対応の logger の記述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] では複数のプロセッサを使用できるため、プロジェクトのビルド時間が短縮されますが、同時にビルド イベント ログの複雑性も高まります。 シングルプロセッサ環境では、イベント、メッセージ、警告、およびエラーが順序に従った予測可能な方法で logger に到着します。 それに対し、マルチプロセッサ環境では、イベントが複数のソースから同時に、または誤った順序で送られてくることがあります。 この問題を解決するために、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] にはマルチプロセッサ対応の logger と新しいログ モデルが導入されており、カスタム "転送 logger" を作成できます。  
   
 ## <a name="multi-processor-logging-challenges"></a>マルチプロセッサ ログの問題点  

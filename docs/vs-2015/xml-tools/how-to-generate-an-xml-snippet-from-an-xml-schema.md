@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec2d14a03649b63a068d2e0a95877ccd03ddf97a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962604"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658829"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>方法: XML スキーマから XML スニペットを生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML エディターは、XML スキーマ定義言語 (XSD) スキーマから XML スニペットを生成する機能を備えています。 たとえば、XML ファイルを作成しているときは、要素名の横にカーソルを置いて Tab キーを押すと、その要素のスキーマ情報から生成された XML データを要素に格納することができます。  
   
  この機能は、要素に対してのみ使用できます。 次の規則も適用されます。  
@@ -140,7 +139,7 @@ XML エディターは、XML スキーマ定義言語 (XSD) スキーマから X
 </xs:schema>  
 ```  
   
-### <a name="output"></a>Output  
+### <a name="output"></a>出力  
  `Contact` 要素に関連付けられているスキーマ情報に基づいて生成された XML データを次に示します。 としてマークされた項目`bold`の XML スニペットの編集可能なフィールドを指定します。  
   
 ```  

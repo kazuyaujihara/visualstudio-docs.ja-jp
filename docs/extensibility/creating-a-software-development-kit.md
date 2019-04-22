@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
+ms.openlocfilehash: ddc6849aa5c0dec07fc7dbdd08a950809624015d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324069"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661221"
 ---
 # <a name="create-a-software-development-kit"></a>ソフトウェア開発キットを作成します。
 ソフトウェア開発キット (SDK) は、Visual Studio での 1 つの項目として参照できる Api のコレクションです。 **参照マネージャー**  ダイアログ ボックスに、プロジェクトに関連するすべての Sdk が一覧表示されます。 SDK をプロジェクトに追加するときに、Api は Visual Studio で使用できます。
@@ -49,7 +49,6 @@ ms.locfileid: "58324069"
                   \[config]
                         \[arch]
 ```
-
 
 | ノード | 説明 |
 |------------------------| - |
@@ -174,7 +173,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
     WindowsAppContainer 識別用のプロジェクト[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]アプリ。
 
-8. SupportPrefer32Bit:サポートされる値は"True"および"False"。 既定では"True です"。 MSBuild エラーが返されます、値が"False"に設定されている場合[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]プロジェクト (またはデスクトップ プロジェクトの場合の警告)、SDK を参照するプロジェクトがある Prefer32Bit が有効になっている場合。 Prefer32Bit の詳細については、[ビルド ページで、プロジェクト デザイナー (C#)](../ide/reference/build-page-project-designer-csharp.md)または[コンパイル ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)を参照してください。
+8. SupportPrefer32Bit:サポートされる値は"True"および"False"。 既定では"True です"。 MSBuild エラーが返されます、値が"False"に設定されている場合[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]プロジェクト (またはデスクトップ プロジェクトの場合の警告)、SDK を参照するプロジェクトがある Prefer32Bit が有効になっている場合。 Prefer32Bit の詳細については、次を参照してください。[ビルド ページで、プロジェクト デザイナー (c#)](../ide/reference/build-page-project-designer-csharp.md)または[コンパイル ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)します。
 
 9. SupportedArchitectures:セミコロン区切りの SDK は、サポートされるアーキテクチャのリスト。 MSBuild では、使用中のプロジェクトで対象となる SDK のアーキテクチャがサポートされていない場合に警告が表示されます。 この属性が指定されていない場合 MSBuild にはこの種類の警告が表示されません。
 

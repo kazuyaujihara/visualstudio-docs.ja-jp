@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51deb24a2ba0088db8ed9a7acc1f8324f1fa92b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 0bcd3855b5dd2fc701b78c5745a9053d19dc7fcf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605693"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658254"
 ---
 # <a name="template-directory-description-vsdir-files"></a>テンプレート ディレクトリの説明 (.Vsdir) ファイル
 テンプレート ディレクトリの説明 (.vsdir) ファイルは、統合開発環境 (IDE) に、フォルダー、ウィザードの .vsz ファイル、およびダイアログ ボックスで、プロジェクトに関連付けられているテンプレート ファイルを表示できるテキスト ファイルです。 内容には、ファイルまたはフォルダーごとに 1 つのレコードが含まれます。 複数のフォルダー、ウィザード、またはテンプレート ファイルを記述する 1 つだけ .vsdir ファイルが用意されています一般に、参照先の場所ですべての .vsdir ファイルがマージされます。
@@ -35,7 +35,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
 ## <a name="fields"></a>フィールド
  次の表には、各レコードに対して指定されたフィールドが一覧表示します。
-
 
 | フィールド | 説明 |
 | - | - |

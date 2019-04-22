@@ -20,22 +20,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e29a80c9cc3f492a19de630e2a09e1f15ca9c45c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bddba1170cf675b5bde7ab8deed8cce1e7eb57dd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791440"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654998"
 ---
 # <a name="cppclean-task"></a>CPPClean タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Visual C++ プロジェクトのビルド時に MSBuild によって作成される一時ファイルを削除します。 ビルド ファイルを削除するプロセスは、*クリーニング* と呼ばれます。  
 
 ## <a name="parameters"></a>パラメーター  
  **CPPClean** タスクのパラメーターの説明を次の表に示します。  
-
 
 |            パラメーター            |                                                                                                説明                                                                                                 |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,7 +43,7 @@ Visual C++ プロジェクトのビルド時に MSBuild によって作成され
 |   **FilesExcludedFromClean**    |                                                    省略可能な `String` 型のパラメーターです。<br /><br /> 消去しないファイルをセミコロンで区切ったリストを指定します。                                                    |
 |       **FoldersToClean**        | 必須の `String` 型のパラメーターです。<br /><br /> 消去するディレクトリをセミコロンで区切ったリストを指定します。 完全パスまたは相対パスを指定することができ、パスにはワイルドカード記号 (**\\**\*) を含めることができます。 |
 
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
 
 ## <a name="see-also"></a>関連項目  
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

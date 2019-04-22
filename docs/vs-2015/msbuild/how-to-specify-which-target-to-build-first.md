@@ -13,17 +13,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 52baabe5a8cf2e064c72ef7a5ab146d534214d90
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c7e1c9c4374e35dd484d478118fe714ff415f93e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797041"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654881"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>方法 : 最初にビルドするターゲットを指定する
+# <a name="how-to-specify-which-target-to-build-first"></a>方法: 最初にビルドするターゲットを指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 プロジェクト ファイルには、プロジェクトのビルド方法を定義する 1 つ以上の `Target` 要素を含めることができます。 [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) エンジンは、見つけた最初のプロジェクトと依存関係をビルドします。ただし、プロジェクト ファイルに `DefaultTargets` 属性または `InitialTargets` 属性が含まれている場合や、コマンド ラインで **/target** スイッチを使ってターゲットが指定されている場合は例外です。  
   
 ## <a name="using-the-initialtargets-attribute"></a>InitialTargets 属性を使用する  
@@ -31,7 +30,7 @@ ms.locfileid: "54797041"
   
 #### <a name="to-specify-one-initial-target"></a>1 つの初期ターゲットを指定するには  
   
-- `Project` 要素の `InitialTargets` 属性の既定のターゲットを指定します。 次に例を示します。  
+- `Project` 要素の `InitialTargets` 属性の既定のターゲットを指定します。 例:  
   
    `<Project InitialTargets="Clean">`  
   
@@ -48,7 +47,7 @@ ms.locfileid: "54797041"
   
 #### <a name="to-specify-one-default-target"></a>1 つの既定のターゲットを指定するには  
   
-- `Project` 要素の `DefaultTargets` 属性の既定のターゲットを指定します。 次に例を示します。  
+- `Project` 要素の `DefaultTargets` 属性の既定のターゲットを指定します。 例:  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -65,7 +64,7 @@ ms.locfileid: "54797041"
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>最初に既定のターゲット以外のターゲットを使用する  
   
--   **/target** コマンド ライン スイッチを使用してターゲットを最初のターゲットとして指定します。 次に例を示します。  
+-   **/target** コマンド ライン スイッチを使用してターゲットを最初のターゲットとして指定します。 例えば:  
   
      `msbuild file.proj /target:Clean`  
   
@@ -78,4 +77,4 @@ ms.locfileid: "54797041"
 ## <a name="see-also"></a>関連項目
   [MSBuild](msbuild.md)  
  [ターゲット](../msbuild/msbuild-targets.md)   
- [方法 : ビルドをクリーンする](../msbuild/how-to-clean-a-build.md)
+ [方法: ビルドをクリーンします。](../msbuild/how-to-clean-a-build.md)

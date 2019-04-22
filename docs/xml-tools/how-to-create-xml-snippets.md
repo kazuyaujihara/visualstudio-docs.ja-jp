@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 43305d7b9353bd34e98a3dcfd31205cb9159a2f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526621"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659921"
 ---
-# <a name="how-to-create-xml-snippets"></a>方法: XML スニペットを作成します。
+# <a name="how-to-create-xml-snippets"></a>方法: XML スニペットを作成する
 
 新しい XML スニペットを作成するのには、XML エディターを使用できます。 エディターには、新しい XML スニペットを作成する際の定型スニペットである、"Snippet" という名前の XML スニペットが含まれています。
 
@@ -43,7 +43,7 @@ ms.locfileid: "57526621"
 
 ## <a name="snippet-description"></a>スニペットの説明
 
- このセクションでは、定型スニペットの主な要素について説明します。 XML スニペットで使用されるスキーマ要素の詳細については、[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)を参照してください。
+ このセクションでは、定型スニペットの主な要素について説明します。 XML スニペットで使用されるスキーマ要素の詳細については、次を参照してください。[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)します。
 
 ### <a name="snippettype-element"></a>SnippetType 要素
 
@@ -64,7 +64,6 @@ ms.locfileid: "57526621"
 
 > [!NOTE]
 > XML スニペットのテキストは、`<![CDATA[...]]>` セクションで囲む必要があります。
-
 
  定型スニペットによって作成される `Code` 要素を次に示します。
 

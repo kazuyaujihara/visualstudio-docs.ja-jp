@@ -16,17 +16,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b81d4f2341f9ddca3468bd77f0f79940dba3d29
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d42495542f96a4ae4918d9d6477f0877979871d2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755007"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655895"
 ---
 # <a name="options-text-editor-file-extension"></a>[オプション]、[テキスト エディター]、[ファイル拡張子]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 この [オプション] ダイアログでは、Visual Studio 統合開発環境 (IDE) で特定のファイル拡張子を持つすべてのファイルを処理する方法を指定できます。 入力した**拡張子**ごとに、[使用したエディター] を選択できます。 これにより、特定の種類の文書を開く IDE のエディターまたはデザイナーを選択できます。 オプションを表示するには、**[ツール]** メニューから **[オプション]** を選択し、**[テキスト エディター]** ノードを展開し、**[ファイル拡張子]** を選択します。  
   
  "エンコードあり" オプションを選択すると、その種類の文書を開くときにダイアログが表示され、その文書のエンコード スキームを選択できます。 これは、さまざまなプラットフォームで、あるいはさまざまなターゲット言語で使用できるようにプロジェクト文書の各種バージョンを用意している場合に便利です。  

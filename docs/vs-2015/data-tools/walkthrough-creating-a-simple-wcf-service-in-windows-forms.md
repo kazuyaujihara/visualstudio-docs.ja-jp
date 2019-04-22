@@ -14,17 +14,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a87c88aba4b0a622dd66440fca33ab99fd028d51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c2c5fba8914ba3b5404412c0cbc55af36fe15c21
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974423"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661040"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>チュートリアル: Windows フォームでのシンプルな WCF サービスの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このチュートリアルは、単純な [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] サービスを作成し、テストして、Windows フォーム アプリケーションからアクセスする方法を例示しています。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
@@ -92,7 +91,7 @@ ms.locfileid: "58974423"
   
 1.  **[ファイル]** メニューの **[追加]** をポイントし、**[新しいプロジェクト]** をクリックします。  
   
-2.  **新しいプロジェクト**] ダイアログ ボックスで、展開、 **Visual Basic**または**Visual C#** ノード**Windows**、し、[ **Windows フォーム アプリケーション**します。 **[OK]** をクリックして、プロジェクトを開きます。  
+2.  **新しいプロジェクト**] ダイアログ ボックスで、展開、 **Visual Basic**または**Visual c#** ノード**Windows**、し、[ **Windows フォーム アプリケーション**します。 **[OK]** をクリックして、プロジェクトを開きます。  
   
      ![Windows フォーム アプリケーション プロジェクト](../data-tools/media/wcf7.png "wcf7")  
   

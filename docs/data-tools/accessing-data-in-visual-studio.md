@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983495"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659723"
 ---
 # <a name="access-data-in-visual-studio"></a>Visual Studio でのデータへのアクセス
 
@@ -27,7 +27,7 @@ Visual Studio では、事実上すべてのデータベース製品またはサ
 
 JavaScript、Python、PHP、Ruby、または C++ でのアプリケーションでのデータに接続するライブラリを取得し、コードの記述によって、何も行うようにします。 .NET アプリケーションでは、Visual Studio には、データ ソースの探索、格納、メモリ内のデータを操作し、ユーザー インターフェイスにデータをバインドしてオブジェクト モデルの作成を使用できるツールが用意されています。 Microsoft Azure は、Azure Storage に接続するため、.NET、Java、Node.js、PHP、Python、Ruby、およびモバイル アプリ、および Visual Studio のツールの Sdk を提供します。
 
-次の表は、Visual Studio から使用できる多くのデータベースとストレージ システムのほんの一部を示します。 [Microsoft Azure](https://azure.microsoft.com/)サービス/データはすべてのプロビジョニングと、基になるデータ ストアの管理を含むデータ サービス。 **Azure 開発**ワークロード[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) Visual Studio から直接 Azure データ ストアを操作することができます。
+次の表は、Visual Studio から使用できる多くのデータベースとストレージ システムのほんの一部を示します。 [Microsoft Azure](https://azure.microsoft.com/)サービス/データはすべてのプロビジョニングと、基になるデータ ストアの管理を含むデータ サービス。 **Azure 開発**ワークロード[Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) Visual Studio から直接 Azure データ ストアを操作することができます。
 
 ![Azure 開発ワークロード](media/azure-development-workload.png)
 
@@ -150,7 +150,7 @@ C++ アプリからデータベースへの接続に関する詳細について�
 
 [Office ソリューションにおけるデータ](../vsto/data-in-office-solutions.md)&mdash;Office ソリューションでデータを操作する方法を説明するトピックへのリンクが含まれています。 スキーマ指向プログラミング、データ キャッシュ、およびサーバー側データ アクセスに関する説明が含まれます。
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;C# と Visual Basic、およびリレーショナル データベース、XML ドキュメント、データセット、およびインメモリ コレクションを照会するための一般的なモデルに組み込まれたクエリ機能について説明します。
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;c# と Visual Basic、およびリレーショナル データベース、XML ドキュメント、データセット、およびインメモリ コレクションを照会するための一般的なモデルに組み込まれたクエリ機能について説明します。
 
 [Visual Studio での XML ツール](../xml-tools/xml-tools-in-visual-studio.md)&mdash;、XML データ、XSLT のデバッグ、.NET Framework の XML 機能の使用と XML クエリのアーキテクチャについて説明します。
 

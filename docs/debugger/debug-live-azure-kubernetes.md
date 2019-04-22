@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856691"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654712"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用してライブ ASP.NET Azure Kubernetes サービスをデバッグする
 
@@ -35,9 +35,9 @@ ms.locfileid: "58856691"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Azure Kubernetes サービス用のスナップショット デバッガーは、**Azure 開発ワークロード**に対して Visual Studio 2019 Enterprise プレビュー以降でのみ使用できます。 (**[個別のコンポーネント]** タブの **[デバッグとテスト]** > **[スナップショット デバッガー]** にあります)。
+* Azure Kubernetes サービスでは Visual Studio 2019 Enterprise の使用可能な以上でのみのスナップショットのデバッガー、 **Azure 開発ワークロード**します。 (**[個別のコンポーネント]** タブの **[デバッグとテスト]** > **[スナップショット デバッガー]** にあります)。
 
-    まだ [Visual Studio 2019 Enterprise プレビュー](https://visualstudio.microsoft.com/vs/preview/)がインストールされていない場合はインストールしてください。
+    インストールされていない場合は、インストール[Visual Studioenterprise 2019](https://visualstudio.microsoft.com/vs/)します。
 
 * スナップショット コレクションは、次の Azure Kubernetes サービス Web アプリに使用できます。
   * Debian 9 上の .NET Core 2.2 以降で実行されている ASP.NET Core アプリケーション。
@@ -101,7 +101,7 @@ ms.locfileid: "58856691"
 
 アプリにスナップポイントを追加して **[コレクションの更新]** ボタンをクリックして有効にすることもできます。
 
-**お困りの際は、** [トラブルシューティングと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)と[スナップショットのデバッグに関する FAQ](../debugger/debug-live-azure-apps-faq.md) のページを参照してください。
+**ヘルプが必要ですか?** [トラブルシューティングと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)と[スナップショットのデバッグに関する FAQ](../debugger/debug-live-azure-apps-faq.md) のページを参照してください。
 
 ## <a name="set-a-conditional-snappoint"></a>条件付きスナップポイントを設定する
 

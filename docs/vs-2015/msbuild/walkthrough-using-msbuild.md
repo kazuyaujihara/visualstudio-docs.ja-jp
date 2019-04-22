@@ -11,17 +11,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792221"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655011"
 ---
 # <a name="walkthrough-using-msbuild"></a>チュートリアル: MSBuild の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild は Microsoft および Visual Studio のビルド プラットフォームです。 このチュートリアルでは、MSBuild のビルド ブロックについて説明し、MSBuild プロジェクトを記述、操作、およびデバッグする方法について説明します。 ここで学習する内容を以下に示します。  
   
 - プロジェクト ファイルの作成と操作  
@@ -176,7 +175,7 @@ MSBuild は Microsoft および Visual Studio のビルド プラットフォー
 </PropertyGroup>  
 ```  
   
- すべてのプロパティは、PropertyGroup 要素の子要素です。 子要素の名前がプロパティの名前になり、子要素のテキスト要素がプロパティの値になります。 たとえば、オブジェクトに適用された  
+ すべてのプロパティは、PropertyGroup 要素の子要素です。 子要素の名前がプロパティの名前になり、子要素のテキスト要素がプロパティの値になります。 例えば以下のようにします。  
   
 ```  
 <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
@@ -231,7 +230,7 @@ $(PropertyName)
 >  これらの行が表示されない場合は、コード エディターでプロジェクト ファイルが保存されていない可能性があります。 ファイルを保存して、やり直してください。  
   
 ### <a name="conditional-properties"></a>条件付きプロパティ  
- Configuration など、多くのプロパティは、Condition 属性を使用して条件付きで定義されます。 条件付きプロパティは、条件が "true" と評価された場合にのみ定義 (または再定義) されます。 未定義のプロパティには、既定値として空の文字列が割り当てられます。 たとえば、オブジェクトに適用された  
+ Configuration など、多くのプロパティは、Condition 属性を使用して条件付きで定義されます。 条件付きプロパティは、条件が "true" と評価された場合にのみ定義 (または再定義) されます。 未定義のプロパティには、既定値として空の文字列が割り当てられます。 例えば以下のようにします。  
   
 ```  
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -242,10 +241,10 @@ $(PropertyName)
  Condition 属性は MSBuild のほぼすべての要素に設定できます。 Condition 属性の使用の詳細については、「[MSBuild Conditions (MSBuild の条件)](../msbuild/msbuild-conditions.md)」をご覧ください。  
   
 ### <a name="reserved-properties"></a>予約済みのプロパティ  
- MSBuild では、プロジェクト ファイルに関する情報や MSBuild のバイナリに関する情報を保持するために、いくつかのプロパティ名が予約されています。 たとえば、MSBuildToolsPath も予約済みのプロパティの 1 つです。 予約済みのプロパティは、他のプロパティと同じように $ 表記で参照できます。 詳細については、「[方法 : プロジェクト ファイルの名前または場所を参照する](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)」および「[MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)」をご覧ください。  
+ MSBuild では、プロジェクト ファイルに関する情報や MSBuild のバイナリに関する情報を保持するために、いくつかのプロパティ名が予約されています。 たとえば、MSBuildToolsPath も予約済みのプロパティの 1 つです。 予約済みのプロパティは、他のプロパティと同じように $ 表記で参照できます。 詳細については、「[方法 :名前またはプロジェクト ファイルの場所を参照](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)と[MSBuild プロパティが予約済みおよび既知](../msbuild/msbuild-reserved-and-well-known-properties.md)します。  
   
 ### <a name="environment-variables"></a>環境変数  
- プロジェクト ファイルで環境変数を参照する場合も、ビルド プロパティを参照するときと同じ方法を使用します。 たとえば、プロジェクト ファイルで PATH 環境変数を使用するには、$(Path) と記述します。 プロジェクト ファイルに、環境変数と同じ名前のプロパティが定義されている場合、環境変数の値はプロジェクト内のプロパティによってオーバーライドされます。 環境変数の使用方法の詳細については、「[方法 : ビルドで環境変数を使用する](../msbuild/how-to-use-environment-variables-in-a-build.md)」をご覧ください。  
+ プロジェクト ファイルで環境変数を参照する場合も、ビルド プロパティを参照するときと同じ方法を使用します。 たとえば、プロジェクト ファイルで PATH 環境変数を使用するには、$(Path) と記述します。 プロジェクト ファイルに、環境変数と同じ名前のプロパティが定義されている場合、環境変数の値はプロジェクト内のプロパティによってオーバーライドされます。 詳細については、「[方法 :ビルドで環境変数を使用して](../msbuild/how-to-use-environment-variables-in-a-build.md)します。  
   
 ## <a name="setting-properties-from-the-command-line"></a>コマンドラインからのプロパティの設定  
  プロパティは、コマンド ライン スイッチの /property または /p を使用してコマンド ラインで定義することもできます。 プロジェクト ファイルに設定されたプロパティ値や環境変数として設定されたプロパティ値は、コマンド ラインから渡されたプロパティ値によってオーバーライドされます。  
@@ -298,7 +297,7 @@ $(PropertyName)
 ## <a name="build-items"></a>ビルド項目  
  項目とは、ファイル名など、ビルド システムへの入力として使用される情報です。 たとえば、ソース ファイルを表す項目のコレクションを Compile という名前のタスクに渡して、アセンブリにコンパイルする場合などがあります。  
   
- すべての項目は、ItemGroup 要素の子要素です。 子要素の名前が項目の名前になり、子要素の Include 属性の値が項目の値になります。 同じ名前を持つ項目の値は、その名前の項目の種類に収集されます。  たとえば、オブジェクトに適用された  
+ すべての項目は、ItemGroup 要素の子要素です。 子要素の名前が項目の名前になり、子要素の Include 属性の値が項目の値になります。 同じ名前を持つ項目の値は、その名前の項目の種類に収集されます。  例えば以下のようにします。  
   
 ```  
 <ItemGroup>  
@@ -307,7 +306,7 @@ $(PropertyName)
 </ItemGroup>  
 ```  
   
- ここでは、2 つの項目を含む項目グループを定義しています。 項目の種類 Compile には、"Program.cs" と "Properties\AssemblyInfo.cs" の 2 つの値があります。  
+ ここでは、2 つの項目を含む項目グループを定義しています。 Compile 項目の種類には、2 つの値があります。"Program.cs"と"properties \assemblyinfo.cs"。  
   
  次のコードでは、両方のファイルをセミコロンで区切って 1 つの Include 属性で宣言することで、同じ項目の種類を作成しています。  
   
@@ -391,7 +390,7 @@ $(PropertyName)
     ```  
   
 ### <a name="include-exclude-and-wildcards"></a>Include、Exclude、およびワイルドカード  
- Include 属性でワイルドカード ("*"、"\*\*"、および "?") を使用して、項目を項目の種類に追加できます。 たとえば、オブジェクトに適用された  
+ Include 属性でワイルドカード ("*"、"\*\*"、および "?") を使用して、項目を項目の種類に追加できます。 例えば以下のようにします。  
   
 ```  
 <Photos Include="images\*.jpeg" />  
@@ -403,9 +402,9 @@ $(PropertyName)
 <Photos Include="images\**.jpeg" />  
 ```  
   
- この例では、images フォルダーとそのすべてのサブフォルダーにある拡張子が ".jpeg" のすべてのファイルが項目の種類 Photos に追加されます。 例については、「[方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)」をご覧ください。  
+ この例では、images フォルダーとそのすべてのサブフォルダーにある拡張子が ".jpeg" のすべてのファイルが項目の種類 Photos に追加されます。 その他の例については、「[方法:ビルドするファイルを選択](../msbuild/how-to-select-the-files-to-build.md)します。  
   
- 項目を宣言すると、それらが項目の種類に追加されます。 たとえば、オブジェクトに適用された  
+ 項目を宣言すると、それらが項目の種類に追加されます。 例えば以下のようにします。  
   
 ```  
 <Photos Include="images\*.jpeg" />  
@@ -418,15 +417,15 @@ $(PropertyName)
 <Photos Include="images\*.jpeg;images\*.gif" />  
 ```  
   
- 項目の種類から項目を除外するには、Exclude 属性を使用します。 たとえば、オブジェクトに適用された  
+ 項目の種類から項目を除外するには、Exclude 属性を使用します。 例えば以下のようにします。  
   
 ```  
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- この例では、拡張子が ".cs" のすべてのファイルが項目の種類 Compile に追加されますが、名前に文字列 "Designer" が含まれているファイルは除外されます。 例については、「[方法: ビルドからファイルを除外する](../msbuild/how-to-exclude-files-from-the-build.md)」をご覧ください。  
+ この例では、拡張子が ".cs" のすべてのファイルが項目の種類 Compile に追加されますが、名前に文字列 "Designer" が含まれているファイルは除外されます。 その他の例については、「[方法:ビルドからファイルを除外する](../msbuild/how-to-exclude-files-from-the-build.md)します。  
   
- Exclude 属性は、同一の項目要素内にある Include 属性によって追加された項目のみに作用します。 たとえば、オブジェクトに適用された  
+ Exclude 属性は、同一の項目要素内にある Include 属性によって追加された項目のみに作用します。 例えば以下のようにします。  
   
 ```  
 <Compile Include="*.cs" />  
@@ -577,7 +576,7 @@ $(PropertyName)
    この構文で表されるメタデータではバッチ処理は行われないことに注意してください。  
   
 ## <a name="whats-next"></a>次の内容  
- 簡単なプロジェクト ファイルを 1 ステップずつ作成する方法については、「[チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)」をご覧ください。  
+ 簡単なプロジェクト ファイルを 1 ステップずつ作成する方法については、「[チュートリアル:MSBuild プロジェクト ファイルを最初から作成](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)です。  
   
 ## <a name="see-also"></a>関連項目
 [MSBuild の概要](msbuild.md)  

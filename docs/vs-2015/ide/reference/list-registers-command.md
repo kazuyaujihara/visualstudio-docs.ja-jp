@@ -15,17 +15,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fadd5429b351eb2393aa0823dec133749b32c83
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f9eaa1299ec49cf20713723e822f8fc641401d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763040"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658540"
 ---
 # <a name="list-registers-command"></a>List Registers コマンド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 選択したレジスタの値を表示するほか、表示されるレジスタの一覧を変更できます。  
   
 ## <a name="syntax"></a>構文  
@@ -38,7 +37,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
   
 ## <a name="switches"></a>スイッチ  
  /Display [{`register`&#124;`registerGroup`}...]  
- 指定した `register` または `registerGroup` の値を表示します。 `register` も `registerGroup` も指定されていない場合は、レジスタの既定の一覧が表示されます。 スイッチが指定されていない場合、動作は同じです。 次に例を示します。  
+ 指定した `register` または `registerGroup` の値を表示します。 `register` も `registerGroup` も指定されていない場合は、レジスタの既定の一覧が表示されます。 スイッチが指定されていない場合、動作は同じです。 例えば:  
   
  `Debug.ListRegisters /Display eax`  
   
@@ -55,7 +54,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
  /Unwatch [{`register`&#124;`registerGroup`}...]  
  1 つ以上の `register` または `registerGroup` の値が一覧から削除されます。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
  エイリアス `r` を `Debug.ListRegisters` の代わりに使用できます。  
   
 ## <a name="example"></a>例  
@@ -67,5 +66,5 @@ r /Display Flags
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
- [デバッグの基礎 : [レジスタ] ウィンドウ](../../debugger/debugging-basics-registers-window.md)   
+ [デバッグの基礎:[レジスタ] ウィンドウ](../../debugger/debugging-basics-registers-window.md)   
  [方法: [レジスタ] ウィンドウを使用する](../../debugger/how-to-use-the-registers-window.md)

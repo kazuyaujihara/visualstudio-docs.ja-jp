@@ -15,18 +15,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fba7e236dee275048d27c8377c819873f2fbad0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 91b62fa8384bd2e0e9e90e9c9057a89e61869a2a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782282"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658618"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>[クイック起動] \([オプション] ダイアログ ボックス - [環境])
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
-**クイック起動**を使用すると、オプション、テンプレート、メニューなどの IDE アセットのアクションをすばやく検索して実行できます。 **クイック起動**を使用してコードおよびシンボルを検索できません。 **クイック起動**の検索ボックスは、メニュー バーの右上隅にあり、Ctrl キーを押しながら Q キーを押すとアクセスできます。 ボックスに検索文字列を入力します。 @ を含む文字列を検索するには、'@@' を使用します。  
+**クイック起動**を使用すると、オプション、テンプレート、メニューなどの IDE アセットのアクションをすばやく検索して実行できます。 **クイック起動**を使用してコードおよびシンボルを検索できません。 **クイック起動**の検索ボックスは、メニュー バーの右上隅にあり、Ctrl キーを押しながら Q キーを押すとアクセスできます。 ボックスに検索文字列を入力します。 \@ を含む文字列を検索するには、 '\@\@' を使用します。  
   
  Visual Studio をインストールすると、**クイック起動**は既定で有効になります。 メニュー バーで、**[ツール]**、**[オプション]** の順にクリックし、**クイック起動**を表示または非表示にできます。 **[環境]** ノードを展開し、**[クイック起動]** をクリックします。 **[クイック起動を有効にする]** チェック ボックスをオンまたはオフにします。 また、このページの検索カテゴリを有効または無効にできます。  
   

@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963978"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657260"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>WPF アプリケーションで関連データを表示する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 一部のアプリケーションでは、複数のテーブルまたは親と子のリレーションシップで相互に関連するエンティティから取得したデータを操作する可能性があります。 顧客を表示するグリッドを表示するなど、`Customers`テーブル。 別のグリッドがから、関連する顧客の注文を表示、ユーザーは、特定の顧客を選択するときに`Orders`テーブル。  
   
  項目をドラッグして関連データを表示するデータ バインド コントロールを作成することができます、**データソース**WPF デザイナーにウィンドウ。  

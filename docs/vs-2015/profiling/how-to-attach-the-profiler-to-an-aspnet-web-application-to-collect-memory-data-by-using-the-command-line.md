@@ -9,14 +9,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d824a567f5819125837dde401107a050561d08a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4aa0517a20e0d667982fb2bfbf0784060628b09
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783473"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653282"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを ASP.NET Web アプリケーションにアタッチし、メモリ データを収集する
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>方法: コマンドラインを使用してメモリ データを収集する ASP.NET Web アプリケーションに、Profiler をアタッチします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションにプロファイラーをアタッチし、.NET Framework のメモリ割り当ての数とサイズに関するデータを収集する方法について説明します。 .NET Framework メモリ オブジェクトの有効期間に関するデータも収集できます。  
@@ -76,7 +76,6 @@ ms.locfileid: "54783473"
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                                         プロファイリング実行中に収集する Windows パフォーマンス カウンターを指定します。                                                                                                                         |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 ミリ秒です。                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.etl) ファイルに収集されます。                                                                                          |
-
 
 6. 一般的な方法で [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションを起動します。  
 

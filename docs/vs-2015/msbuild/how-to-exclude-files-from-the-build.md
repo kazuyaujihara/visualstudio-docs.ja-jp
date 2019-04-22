@@ -13,21 +13,20 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb390e98b8650764dfc9f4237f150a5b903f1618
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796725"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656455"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>方法: ビルドからファイルを除外する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 プロジェクト ファイルでは、ワイルドカードを使用して、1 つのディレクトリ内のすべてのファイル、または入れ子にされたディレクトリのセットをビルドの入力として使用することができます。 しかし、ディレクトリ内の 1 つのファイル、または入れ子にされたディレクトリのセット内の 1 つのディレクトリをビルドの入力に含めたくない場合もあります。 そのファイルまたはディレクトリは、入力の一覧から明示的に除外できます。 また、特定の条件のもとでのみ含めることを望むファイルがプロジェクトに存在することもあります。 ファイルをビルドに含める条件を明示的に宣言できます。  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>ビルドの入力からファイルまたはディレクトリを除外する  
- 項目リストは、ビルドの入力ファイルです。 `Include` 属性を使用して、含める項目を個別にまたはグループとして宣言します。 次に例を示します。  
+ 項目リストは、ビルドの入力ファイルです。 `Include` 属性を使用して、含める項目を個別にまたはグループとして宣言します。 例:  
   
 ```  
 <CSFile Include="Form1.cs"/>  
@@ -128,4 +127,4 @@ ms.locfileid: "54796725"
   
 ## <a name="see-also"></a>関連項目  
  [項目](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](msbuild.md) [方法。ビルドするファイルを選択します。](../msbuild/how-to-select-the-files-to-build.md)

@@ -1,5 +1,5 @@
 ---
-title: テスト領域 8:プラグインの切り替え |Microsoft Docs
+title: 'テスト領域 8: プラグインの切り替え |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002aa5cf9e1324eb81996a5a14f7a1933a26ba9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605173"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659502"
 ---
-# <a name="test-area-8-plug-in-switching"></a>テスト領域 8:プラグインの切り替え
+# <a name="test-area-8-plug-in-switching"></a>テスト領域 8: プラグインの切り替え
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) では、ユーザー インターフェイス (UI) を持つ現在のソース管理プラグインを変更します。 このテストの領域は、ソリューションのソース管理を使用するプラグインの選択のプロセスのテスト_ケースを提供します。
 
 ## <a name="command-menu-access"></a>コマンド メニューへのアクセス
@@ -39,7 +39,6 @@ ms.locfileid: "56605173"
 #### <a name="expected-behavior"></a>想定される動作
  ユーザーには、ソース管理下にあるソリューションが読み込まれたら、ソリューションが自動的に読み込まれ、適切なソース管理プラグインは、現在選択されています。
 
-
 | アクション | テスト ステップ | 予想される結果を確認します |
 | - | - | - |
 | 自動のソース管理プラグインの変更 | 1.現在テスト プラグインの選択 (**ツール** -> **オプション** -> **ソース管理** -> **プラグイン選択**)。<br />2.新しいプロジェクトを作成します。<br />3.ソース管理にソリューションを追加します。<br />4.別のプラグインを選択します (たとえば、 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)])。<br />5.ソリューションのアンロードのプロンプトを受け入れます。<br />6.ディスクからソリューションを再度開きます。 | ソリューションが開かれます。<br /><br /> テスト対象プラグインは、現在のソース管理プラグインです。 |
@@ -48,7 +47,6 @@ ms.locfileid: "56605173"
 
 #### <a name="expected-behavior"></a>想定される動作
  ソリューションは、その関連ソース管理プラグインを変更できます。
-
 
 | アクション | テスト ステップ | 予想される結果を確認します |
 |----------------------------------| - | - |

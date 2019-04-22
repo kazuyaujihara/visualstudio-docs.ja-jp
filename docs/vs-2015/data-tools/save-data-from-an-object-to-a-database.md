@@ -18,17 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ddb6ad55a8d90a3e9d4f5b2568885cbe49fb66c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972406"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659021"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>オブジェクトからデータベースにデータを保存する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 TableAdapter の DBDirect メソッドのいずれかに、オブジェクトから値を渡すことでオブジェクトをデータベースでデータを保存することができます (たとえば、 `TableAdapter.Insert`)。
   
  オブジェクトのコレクションからデータを保存するには、オブジェクト (次のループなど) のコレクションをループ処理し、TableAdapter の DBDirect メソッドのいずれかを使用して、各オブジェクトの値をデータベースに送信します。  

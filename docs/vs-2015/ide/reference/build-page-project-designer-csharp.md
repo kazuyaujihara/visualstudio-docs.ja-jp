@@ -14,17 +14,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 066535309c7001c3f7a951f68321f7530a06ed05
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 256ceb2e1a40d41798ea8dd38757b447221fab16
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805322"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658358"
 ---
 # <a name="build-page-project-designer-c"></a>[ビルド] ページ (プロジェクト デザイナー) (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **プロジェクト デザイナー**の **[ビルド]** ページでは、プロジェクトのビルド構成プロパティを指定します。 このページは、[!INCLUDE[csprcs](../../includes/csprcs-md.md)] プロジェクトにのみ適用されます。  
   
  **[ビルド]** ページにアクセスするには、**ソリューション エクスプローラー**のプロジェクト ノード (**[ソリューション]** ノードではありません) を選択します。 その後、メニュー バーで **[プロジェクト]**、**[プロパティ]** の順に選択します。 プロジェクト デザイナーが表示されたら、**[ビルド]** タブをクリックします。  
@@ -100,7 +99,7 @@ ms.locfileid: "54805322"
  **All**  
  すべての警告をエラーとして扱います。  
   
-## <a name="output"></a>出力  
+## <a name="output"></a>Output  
  次の設定は、ビルド処理の出力オプションを構成するために使用します。  
   
  **出力パス**  

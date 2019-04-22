@@ -17,17 +17,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41467515e172b34fe96200020189a02a6a4fc8a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976939"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656610"
 ---
 # <a name="edit-data-in-datasets"></a>データセットのデータの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 任意のデータベースのテーブルにデータを編集するのと同様に、データ テーブル内のデータを編集します。 プロセスには、挿入、更新、およびテーブル内のレコードの削除を含めることができます。 データ バインド フォームでは、どのフィールドがユーザーが編集可能なを指定できます。 その場合は、データ バインド インフラストラクチャは、すべての変更の追跡、変更を後で元のデータベースに送信できるようにを処理します。 データにプログラムで編集を行ってそれらの変更をデータベースに送信する場合は、オブジェクトや変更の追跡を行うメソッドを使用する必要があります。  
   
  だけでなく、実際のデータを変更するには、照会することも、<xref:System.Data.DataTable>を特定のデータ行を返します。 たとえば、個々 の行や行 (元および提案された) の特定のバージョン、変更された行のエラーが発生した行のクエリを可能性があります。  

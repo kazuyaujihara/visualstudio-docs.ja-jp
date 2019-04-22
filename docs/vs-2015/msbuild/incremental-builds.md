@@ -11,17 +11,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a436135d4acb27e9f875d6a0bd348e37b91c06a6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758448"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654036"
 ---
 # <a name="incremental-builds"></a>インクリメンタル ビルド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 インクリメンタル ビルドは、対応する入力ファイルに対して最新の状態の出力ファイルを含むターゲットが実行されないように最適化されたビルドです。 ターゲット要素には、ターゲットが入力として受け取る項目を示す `Inputs` 属性と、ターゲットが出力として生成する項目を示す `Outputs` 属性の両方を指定できます。 MSBuild は、これらの属性の値間に一対一の対応関係があるかどうかを確認します。 一対一の対応関係が存在する場合、MSBuild は、すべての入力項目のタイム スタンプをそれぞれ対応する出力項目のタイム スタンプと比較します。 一対一の対応関係が存在しない出力ファイルは、すべての入力ファイルと比較されます。 項目が最新の状態であると見なされるのは、その出力ファイルが入力ファイルと同じタイム スタンプであるかそれよりも新しい場合です。  
   
  すべての出力項目が最新の状態である場合、MSBuild はターゲットをスキップします。 このターゲットの*インクリメンタル ビルド*により、ビルド速度が大幅に向上します。 一部のファイルだけが最新の状態である場合、MSBuild は最新の項目をスキップしてターゲットを実行するので、すべての項目が最新の状態になります。 これは、*部分インクリメンタル ビルド*と呼ばれます。  

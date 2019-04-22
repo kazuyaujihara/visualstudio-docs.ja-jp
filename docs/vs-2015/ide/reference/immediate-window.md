@@ -15,17 +15,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802675"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660295"
 ---
 # <a name="immediate-window"></a>イミディエイト ウィンドウ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **[イミディエイト]** ウィンドウは、式のデバックと評価、ステートメントの実行、変数値の出力などのために使用します。 このモードでは、デバッグ時に、開発言語で評価または実行される式を入力できます。 **[イミディエイト]** ウィンドウを表示するには、編集用にプロジェクトを開いて、**[デバッグ]** メニューの **[ウィンドウ]** をポイントし、**[イミディエイト]** をクリックするか、Ctrl キーと Alt キーを押しながら I キーを押します。  
   
  このウィンドウは、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] コマンドを個別に実行するために使用できます。 使用できるコマンドには、`EvaluateStatement` があります。このコマンドは、変数に値を割り当てるのに使用できます。 **[イミディエイト]** ウィンドウは、IntelliSense もサポートしています。  
@@ -75,7 +74,7 @@ ms.locfileid: "54802675"
   
     **[イミディエイト]** ウィンドウで `MyFunction` が実行され、`4` と表示されます。  
   
-   関数またはサブルーチンにブレークポイントが含まれているとき、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は適切なポイントで実行を中断します。 デバッガー ウィンドウを使用して、プログラムの状態を確認できます。 詳細については、「[チュートリアル: デザイン時のデバッグ](../../debugger/walkthrough-debugging-at-design-time.md)」を参照してください。  
+   関数またはサブルーチンにブレークポイントが含まれているとき、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は適切なポイントで実行を中断します。 デバッガー ウィンドウを使用して、プログラムの状態を確認できます。 詳細については、「[チュートリアル:デザイン時のデバッグ](../../debugger/walkthrough-debugging-at-design-time.md)」をご覧ください。  
   
    デザイン時の式の評価は、実行時環境の起動を必要とするプロジェクトの種類 ([!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] プロジェクト、Web プロジェクト、スマート デバイス プロジェクト、SQL プロジェクトなど) には使用できません。  
   

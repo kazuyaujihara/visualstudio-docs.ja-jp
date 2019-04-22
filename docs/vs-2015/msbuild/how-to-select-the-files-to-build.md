@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798905"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659815"
 ---
 # <a name="how-to-select-the-files-to-build"></a>方法: ビルドするファイルを選択する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 複数のファイルを含むプロジェクトをビルドするときに、各ファイルを個別にプロジェクト ファイルにリストしたり、ワイルドカードを使用して、1 つのディレクトリまたは入れ子になった一連のディレクトリ内のすべてのファイルを含めたりすることができます。  
   
 ## <a name="specifying-inputs"></a>入力を指定する  
@@ -174,5 +173,5 @@ ms.locfileid: "54798905"
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [方法: ビルドからファイルを除外する](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [方法: ビルドからファイルを除外します。](../msbuild/how-to-exclude-files-from-the-build.md)   
  [項目](../msbuild/msbuild-items.md)

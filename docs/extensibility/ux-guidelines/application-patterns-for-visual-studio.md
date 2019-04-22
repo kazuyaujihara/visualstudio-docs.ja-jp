@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MT
+ms.openlocfilehash: c498fd10403bcb6b62552c30fe3a92b71ded4944
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796882"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659788"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio のアプリケーション パターン
 ##  <a name="BKMK_WindowInteractions"></a> ウィンドウの相互作用
@@ -357,7 +357,7 @@ Visual Studio でのダイアログ ボックスでは、2 つの基本的なス
 ### <a name="common-conventions"></a>一般的な規則
 最適な設計とをダイアログ ボックスを使用して機能を実現するには、ダイアログのサイズ、位置、標準、制御の構成と配置、UI テキスト、タイトル バー、コントロールのボタン、およびアクセス キーでこれらの規則に従います。
 
-レイアウトに固有のガイドラインについては、[Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)を参照してください。
+レイアウトに固有のガイドラインについては、次を参照してください。 [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)します。
 
 #### <a name="size"></a>サイズ
 ダイアログ ボックスが最小 1024 x 768 の画面解像度内に収まる必要があり、最初のダイアログのサイズは 700 900 ピクセルを超えることはできません。 ダイアログ ボックスは、サイズを変更できる可能性がありますが、必須ではありません。
@@ -413,7 +413,7 @@ Visual Studio で同じことを実現する既存のコントロール構成と
 #### <a name="access-keys"></a>アクセス キー
 アクセス キーを使用しないでください**OK**、**キャンセル**、または**ヘルプ**ボタン。 これらのボタンは、既定では、ショートカット キーにマップされます。
 
-| ボタンの名前 | キーボード ショートカット |
+| Button name | キーボード ショートカット |
 | --- | --- |
 | OK | Enter |
 | キャンセル | Esc |
@@ -547,7 +547,6 @@ Visual Studio で同じことを実現する既存のコントロール構成と
 
 #### <a name="directory-based-projects"></a>ディレクトリ ベースのプロジェクト
 次の表は、ディレクトリ ベースのターゲット プロジェクトの押されたソース項目と修飾子キーの性質に基づいて実行する必要があります (切り取り/コピー/貼り付け) と同様にドラッグ アンド ドロップ操作をまとめたものです。
-
 
 | 修飾子 | Category | ソース項目:参照/リンク | ソース項目:項目またはファイル システムの物理 (`CF_HDROP`) |
 |-----------------|----------| - | - |

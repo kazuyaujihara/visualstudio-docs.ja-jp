@@ -1,5 +1,5 @@
 ---
-title: C++ 静的コード分析ストア アプリ
+title: C++静的コード分析のストア アプリ
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873244"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659827"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 静的コード分析によるストア アプリの C++ コード品質の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,6 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 ##  <a name="Warnings"></a> C++ のコード分析の警告
  コード分析は、C++ コードに次の警告を発生させます。
 
-
 |                                      ルール                                      |                                                  説明                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                          初期化されていないメモリの使用                                           |
@@ -133,7 +132,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         無効なサイズの文字列パラメーター                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   無効なサイズの到達不能な場所の文字列                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        無効なサイズの文字列バッファー型                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              無効な注釈です: 'NeedsRelease' プロパティは、void 型の値では使用できません               |
+|                       [C6527](../code-quality/c6527.md)                        |              無効な注釈。'NeedsRelease' プロパティを void 型の値に対して使用することはできません。               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       認識されない書式指定文字列スタイル                                        |
 |                       [C6540](../code-quality/c6540.md)                        | この関数で属性注釈を使用すると、既存の __declspec 注釈がすべて無効となります  |
 |                       [C6551](../code-quality/c6551.md)                        |                              無効なサイズ指定です: 式が解析可能ではありません                              |
@@ -204,7 +203,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 |                      [C28286](../code-quality/c28286.md)                       |                                    関数について、構文エラーが最後の近くにあります                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                関数について、\_At\_() 注釈 (認識されないパラメーター名) に構文エラーがあります                |
 |                      [C28288](../code-quality/c28288.md)                       |                  関数について、\_At\_() 注釈 (無効のパラメーター名) に構文エラーがあります                   |
-|                      [C28289](../code-quality/c28289.md)                       |                関数について: ReadableTo または WritableTo には、パラメーターとして limit-spec がありませんでした                |
+|                      [C28289](../code-quality/c28289.md)                       |                関数の場合。ReadableTo または WritableTo では、パラメーターとして limit-spec がなかった                |
 |                      [C28290](../code-quality/c28290.md)                       |           関数の注釈は、実際のパラメーターの数より多い外部参照を含みます            |
 |                      [C28291](../code-quality/c28291.md)                       |                        deref レベル 0 での post null/notnull は、関数に対して意味がありません。                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            演算子に対する互換性のない型の、式のオペランドです                             |

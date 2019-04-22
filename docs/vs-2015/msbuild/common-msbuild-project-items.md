@@ -16,17 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796878"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655817"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 項目には、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のすべてのプロジェクトの種類に共通のものがあります。 これらの項目は、microsoft.build.commontypes.xsd ファイルに定義されています。  
   
 ## <a name="common-items"></a>共通の項目  
@@ -78,7 +77,7 @@ ms.locfileid: "54796878"
 |項目名|説明|  
 |---------------|-----------------|  
 |name|省略可能な文字列。 参照の表示名を指定します。|  
-|プロジェクト|省略可能な文字列。 参照の GUID を {12345678-1234-1234-1234-1234567891234} の形式で指定します。|  
+|Project|省略可能な文字列。 参照の GUID を {12345678-1234-1234-1234-1234567891234} の形式で指定します。|  
 |Package|省略可能な文字列。 参照されるプロジェクト ファイルのパスを指定します。|  
   
 ### <a name="compile"></a>Compile  
@@ -88,8 +87,8 @@ ms.locfileid: "54796878"
 |---------------|-----------------|  
 |DependentUpon|省略可能な文字列。 正しくコンパイルする必要があるファイルを指定します。|  
 |AutoGen|省略可能なブール値。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 統合開発環境 (IDE) で使用するプロジェクト用にファイルを生成するかどうかを指定します。|  
-|リンク|省略可能な文字列。 プロジェクト ファイルの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。|  
-|可視|省略可能なブール値。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。|  
+|Link|省略可能な文字列。 プロジェクト ファイルの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。|  
+|Visible|省略可能なブール値。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。|  
 |CopyToOutputDirectory|省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest|  
   
 ### <a name="embeddedresource"></a>EmbeddedResource  
@@ -98,11 +97,11 @@ ms.locfileid: "54796878"
 |項目名|説明|  
 |---------------|-----------------|  
 |DependentUpon|省略可能な文字列。 正しくコンパイルするために、このファイルが依存するファイルを指定します|  
-|ジェネレーター|必須の文字列。 この項目に対して実行される任意のファイル ジェネレーターの名前です。|  
+|Generator|必須の文字列。 この項目に対して実行される任意のファイル ジェネレーターの名前です。|  
 |LastGenOutput|必須の文字列。 この項目に対して実行された任意のファイル ジェネレーターによって作成されたファイルの名前です。|  
 |CustomToolNamespace|必須の文字列。 名前空間を指定します。指定した名前空間で、この項目に対して実行する任意のファイル ジェネレーターによってコードが作成されます。|  
-|リンク|省略可能な文字列。 プロジェクトの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。|  
-|可視|省略可能なブール値。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。|  
+|Link|省略可能な文字列。 プロジェクトの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。|  
+|Visible|省略可能なブール値。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。|  
 |CopyToOutputDirectory|省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest|  
 |LogicalName|必須の文字列。 埋め込まれるリソースの論理名です。|  
   
@@ -112,13 +111,13 @@ ms.locfileid: "54796878"
 |項目名|説明|  
 |---------------|-----------------|  
 |DependentUpon|省略可能な文字列。 正しくコンパイルする必要があるファイルを指定します。|  
-|ジェネレーター|必須の文字列。 この項目に対して実行する任意のファイル ジェネレーターの名前です。|  
+|Generator|必須の文字列。 この項目に対して実行する任意のファイル ジェネレーターの名前です。|  
 |LastGenOutput|必須の文字列。 この項目に対して実行された任意のファイル ジェネレーターによって作成されたファイルの名前です。|  
 |CustomToolNamespace|必須の文字列。 名前空間を指定します。指定した名前空間で、この項目に対して実行する任意のファイル ジェネレーターによってコードが作成されます。|  
-|リンク|省略可能なブール値。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。|  
+|Link|省略可能なブール値。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。|  
 |PublishState|必須の文字列。 コンテンツの発行状態を示すもので、以下のいずれかの値を取ります。<br /><br /> -   Default<br />-   Included<br />-   Excluded<br />-   DataFile<br />-   Prerequisite|  
 |IsAssembly|省略可能なブール値。 ファイルがアセンブリであるかどうかを指定します。|  
-|可視|省略可能なブール値。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。|  
+|Visible|省略可能なブール値。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。|  
 |CopyToOutputDirectory|省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest|  
   
 ### <a name="none"></a>なし  
@@ -127,11 +126,11 @@ ms.locfileid: "54796878"
 |項目名|説明|  
 |---------------|-----------------|  
 |DependentUpon|省略可能な文字列。 正しくコンパイルする必要があるファイルを指定します。|  
-|ジェネレーター|必須の文字列。 この項目に対して実行される任意のファイル ジェネレーターの名前です。|  
+|Generator|必須の文字列。 この項目に対して実行される任意のファイル ジェネレーターの名前です。|  
 |LastGenOutput|必須の文字列。 この項目に対して実行された任意のファイル ジェネレーターによって作成されたファイルの名前です。|  
 |CustomToolNamespace|必須の文字列。 名前空間を指定します。指定した名前空間で、この項目に対して実行する任意のファイル ジェネレーターによってコードが作成されます。|  
-|リンク|省略可能な文字列。 プロジェクトの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。|  
-|可視|省略可能なブール値。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。|  
+|Link|省略可能な文字列。 プロジェクトの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。|  
+|Visible|省略可能なブール値。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。|  
 |CopyToOutputDirectory|省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest|  
   
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  

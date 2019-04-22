@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868302"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660714"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft ヘルプ ビューアー SDK
 
@@ -63,7 +63,7 @@ Visual Studio ブランド パッケージには、コントロールがサポ�
 
 -   javascript
 
--   csharp または (C#)
+-   csharp または (c#)
 
 -   cplusplus visualc++ または c + +
 
@@ -352,14 +352,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 ::: moniker-end
 
-値:小売店のデータのデバッグ出力を表示する:うん
+値:小売店のデータのデバッグ出力を表示する:YES
 
 IDE では、[ヘルプ] メニュー項目で、次のように選択します。**ヘルプ コンテキストのデバッグ**します。
 
 **コンテンツのメタデータ**
 
 次の表では、角かっこの間に表示される任意の文字列は認識されている値で置き換える必要があるプレース ホルダーです。 たとえば、\<メタ name="Microsoft.Help.Locale"コンテンツ =「[言語コード]」/>、「[言語コード]」をなどの値で置換する必要があります"en-米国"。
-
 
 | プロパティ (HTML 形式) | 説明 |
 | - | - |
@@ -832,8 +831,8 @@ Visual Studio のコンテンツ ストアを作成します。 統合シェル�
 
 ## <a name="additional-resources"></a>その他の技術情報
 
-ランタイム API では、[Windows API のヘルプ](/previous-versions/windows/desktop/helpapi/helpapi-portal)を参照してください。
+ランタイム API では、次を参照してください。 [Windows API のヘルプ](/previous-versions/windows/desktop/helpapi/helpapi-portal)します。
 
-API のヘルプを活用する方法の詳細については、[ヘルプ ビューアーのコード例](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)を参照してください。
+API のヘルプを活用する方法の詳細については、次を参照してください。[ヘルプ ビューアーのコード例](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)します。
 
 機能に関する提案を送信する[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)します。

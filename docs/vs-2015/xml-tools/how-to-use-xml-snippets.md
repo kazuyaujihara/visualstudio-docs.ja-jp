@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec1b206bffa5ea49a17bd76487cdc398395c1f48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: be8d42a5a4557b39a02e724eb54b5434c1b454ea
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977733"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659970"
 ---
 # <a name="how-to-use-xml-snippets"></a>方法: XML スニペットを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML エディターのショートカット メニューにある次の 2 つのコマンドを使用すると、XML スニペットを呼び出すことができます。 **スニペットの挿入**コマンドは、カーソル位置にある XML スニペットを挿入します。 **ブロックの挿入**コマンドは、選択したテキストの周囲の XML スニペットをラップします。 各 XML スニペットには、スニペット型が指定されています。 スニペット型が、スニペットを使用できるかどうかを判断、**スニペットの挿入**コマンド、**ブロックの挿入**コマンド、またはその両方です。  
   
  XML スニペットがエディターに追加されると、スニペット内の編集可能なフィールドがすべて黄色で強調表示され、カーソルが最初の編集可能なフィールドに置かれます。  

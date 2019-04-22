@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc172e9ed91a354918fd536060f97fcbb259a94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972799"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654504"
 ---
 # <a name="install-sql-server-sample-databases"></a>SQL Server サンプル データベースをインストールします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 サンプル データベースは、SQL および LINQ クエリ、データ バインド、Entity Framework のモデル化して試してみる場合に便利です。  各データベース製品には、独自のサンプル データベースがあります。 Northwind と AdventureWorks は、人気のある 2 つの SQL Server サンプル データベースです。  
   
  **AdventureWorks**は現在のサンプル データベースを SQL Server の製品に対して提供します。 .Mdf ファイルとしてダウンロードすることができます、 [codeplex の AdventureWorks ページ](http://msftdbprodsamples.codeplex.com/)します。 バージョンがある定期的かつ軽量な (LT)、データベースの使用可能なここです。 ほとんどのシナリオでは、LT バージョンではあまり複雑ではお勧めします。  

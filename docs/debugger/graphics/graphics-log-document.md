@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4596015acd94d7d4f1d4d5552cfe6d83ab8727c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c4d372c0f21bfeb9768796e494a2689b7fc9f32f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714284"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658045"
 ---
 # <a name="graphics-log-document"></a>グラフィックス ログ ドキュメント
 グラフィックス ログのドキュメントは、アプリがグラフィックス診断のセッションで実行されているときに発生したグラフィックス イベントのレコードです。 記録した後で、Visual Studio Graphics Analyzer でログを確認して、レンダリングとパフォーマンスの問題を診断することができます。
@@ -42,7 +42,7 @@ ms.locfileid: "56714284"
 ## <a name="playback-machine"></a>再生コンピューター
  **[フレーム一覧]** の右上隅には、**[再生コンピューター]** も表示されます。 再生コンピューターは、後のグラフィックス診断のセッション中にグラフィックス ログ ファイルからグラフィックス イベントを再生するために使用されるコンピューターまたはデバイスです。 開発用コンピューターの代わりに別のデバイスを使用し、キャプチャしたイベントを再生することにより、問題が発生する実行環境をより正確に再現できます。たとえば、開発用コンピューターとは異なるグラフィックス ハードウェアまたはドライバーを使用するコンピューター、または ARM ベースの Windows RT タブレットや Windows Phone デバイスなどのデバイスを使用できます。
 
- 再生コンピューターを指定する方法については、「[方法: グラフィックス診断再生マシンを変更する](how-to-change-the-graphics-diagnostics-playback-machine.md)」を参照してください。
+ 再生コンピューターを指定する方法については、次を参照してください。[方法。グラフィックス診断再生マシンを変更する](how-to-change-the-graphics-diagnostics-playback-machine.md)」を参照してください。
 
 ## <a name="graphics-log-summary-information"></a>グラフィックス ログの概要情報
  グラフィックス ログ ファイルがアクティブ ドキュメントの場合、**[プロパティ]** ウィンドウには、グラフィックス診断キャプチャ セッションをホストしていた環境に関する情報が表示されます。 複数のカテゴリの情報が表示されます。
@@ -73,7 +73,7 @@ ms.locfileid: "56714284"
 
 |プロパティ|説明|
 |--------------|-----------------|
-|**パス**|.vsglog ファイルのパス。 **注:** レガシー キャプチャではこのプロパティは使用されません。|
+|**パス**|.vsglog ファイルのパス。 **注:** レガシー キャプチャでは、このプロパティは使用されません。|
 
  **モジュール情報**キャプチャ セッション中に、アプリによって読み込まれたダイナミック リンク ライブラリ (Dll) のバージョンと名前を一覧表示されます。
 
@@ -97,7 +97,6 @@ ms.locfileid: "56714284"
 |**Version**|アプリケーションのバージョン。|
 
  **VSG ログ ファイル**グラフィックス ログ ドキュメントに関する情報を一覧表示します。
-
 
 | プロパティ | 説明 |
 |------------------------| - |

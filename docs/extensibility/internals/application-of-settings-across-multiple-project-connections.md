@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7274f0daaf809116dc502a528fce1b540c2c53b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f7d0a13a72613ba72be5a90aa65be991d6ca10b3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620744"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657039"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>複数プロジェクトの接続設定の適用
 ソース管理プラグインが複数のプロジェクトまたは複数の接続コンテキスト全体にわたって、同じソース管理の操作を実行するバッチ操作を使用してソース管理プラグイン API バージョン 1.2 を使用して構築できます。 バッチは、冗長、プロジェクトごとのユーザー エクスペリエンスからダイアログ ボックスを使用できます。
@@ -31,7 +31,6 @@ ms.locfileid: "56620744"
 -   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)
-
 
 `SCCBeginBatch`関数は、ソース管理操作のグループを開始します。 `SccEndBatch`関数は、グループを閉じます。 グループは、入れ子にできません。
 
