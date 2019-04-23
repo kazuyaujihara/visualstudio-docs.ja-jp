@@ -9,14 +9,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f716c279bce14a2a262578de090ed59290890f57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bec6c539963d54bfa1d866ccc4811425bba9e3a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068575"
 ---
-# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>手順 1: プロジェクトの作成とフォームへのテーブルの追加
+# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>手順 1: プロジェクトを作成し、フォームにテーブルを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 絵合わせゲームの作成における最初の手順は、プロジェクトの作成とフォームへのテーブルの追加です。 テーブルはアイコンを 4 x 4 のグリッドに整列させるために便利です。 いくつかのプロパティの設定も行ってゲーム ボードの見栄えが良くなるようにします。  
@@ -31,9 +31,9 @@ ms.locfileid: "54776032"
   
 4. **[プロパティ]** ウィンドウで、次のフォーム プロパティを設定します。  
   
-   1.  フォームの **Text** プロパティを **Form1** から **Matching Game** に変更します。 このテキストはゲーム ウィンドウの上部に表示されます。  
+   1. フォームの **Text** プロパティを **Form1** から **Matching Game** に変更します。 このテキストはゲーム ウィンドウの上部に表示されます。  
   
-   2.  フォームのサイズとして幅を 550 ピクセル、高さを 550 ピクセルに設定します。 そのためには、**Size** プロパティを **550, 550** に設定します。または、統合開発環境 (IDE) の右下隅に適切なサイズが表示されるまで、フォームの隅をドラッグします。  
+   2. フォームのサイズとして幅を 550 ピクセル、高さを 550 ピクセルに設定します。 そのためには、**Size** プロパティを **550, 550** に設定します。または、統合開発環境 (IDE) の右下隅に適切なサイズが表示されるまで、フォームの隅をドラッグします。  
   
 5. IDE の左側にある **[ツール ボックス]** のタブをクリックして、ツール ボックスを表示します。  
   
@@ -60,19 +60,19 @@ ms.locfileid: "54776032"
   
     TableLayoutPanel コントロールが選択されている状態で、ツール ボックスを開き、**Label** コントロール (**[コモン コントロール]** カテゴリ内) を TableLayoutPanel コントロールの左上のセルに追加します。 これで、IDE で `Label` コントロールが選択されました。 このコントロールの次のプロパティを設定します。  
   
-   1.  ラベルの **BackColor** プロパティが **CornflowerBlue** に設定されていることを確認します。  
+   1. ラベルの **BackColor** プロパティが **CornflowerBlue** に設定されていることを確認します。  
   
-   2.  **AutoSize** プロパティを **False** に設定します。  
+   2. **AutoSize** プロパティを **False** に設定します。  
   
-   3.  **Dock** プロパティを **Fill** に設定します。  
+   3. **Dock** プロパティを **Fill** に設定します。  
   
-   4.  プロパティの横のドロップダウン ボタンをクリックし、中央ボタンをクリックして、**TextAlign** プロパティを **MiddleCenter** に設定します。 これによりアイコンはセルの中央に表示されます。  
+   4. プロパティの横のドロップダウン ボタンをクリックし、中央ボタンをクリックして、**TextAlign** プロパティを **MiddleCenter** に設定します。 これによりアイコンはセルの中央に表示されます。  
   
-   5.  **Font** プロパティをクリックします。 省略記号 (…) ボタンが表示されます。  
+   5. **Font** プロパティをクリックします。 省略記号 (…) ボタンが表示されます。  
   
-   6.  省略記号ボタンをクリックし、**Font** を **Webdings** に、**Font Style** を **Bold** に、**Size** を **72** に設定します。  
+   6. 省略記号ボタンをクリックし、**Font** を **Webdings** に、**Font Style** を **Bold** に、**Size** を **72** に設定します。  
   
-   7.  ラベルの **Text** プロパティを **c** という文字に設定します。  
+   7. ラベルの **Text** プロパティを **c** という文字に設定します。  
   
         これで、TableLayoutPanel の左上のセルに、青色の背景の中央に黒いボックスが配置されました。  
   
@@ -91,6 +91,6 @@ ms.locfileid: "54776032"
   
 ### <a name="to-continue-or-review"></a>続行または確認するには  
   
--   チュートリアルの次の手順に進むには、「[手順 2: Random オブジェクトおよびアイコンのリストの追加](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)」を参照してください。  
+- チュートリアルの次の手順に進むには、「[手順 2:Random オブジェクトおよびアイコンの一覧に追加](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)します。  
   
--   概要のトピックに戻るには、「[チュートリアル 3: 絵合わせゲームの作成](../ide/tutorial-3-create-a-matching-game.md)」を参照してください。
+- 概要のトピックに戻るには、「[チュートリアル 3:絵合わせゲームの作成](../ide/tutorial-3-create-a-matching-game.md)です。

@@ -15,16 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e35819371a751aa8047adbacd77f55ea257831a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070044"
 ---
 # <a name="accessibility-in-office-projects"></a>Office プロジェクトのユーザー補助機能
 
-Microsoft Visual Studio と Microsoft Office には、標準のユーザー補助の要件を満たすカスタム ソリューションを構築するための多くのユーザー補助機能が含まれます。 Microsoft では、Web 上のユーザー補助のガイドラインを公開します。 詳細については、、[アクセシビリティ web サイト](http://go.microsoft.com/fwlink/?LinkID=37113)を参照してください。
+Microsoft Visual Studio と Microsoft Office には、標準のユーザー補助の要件を満たすカスタム ソリューションを構築するための多くのユーザー補助機能が含まれます。 Microsoft では、Web 上のユーザー補助のガイドラインを公開します。 詳細については、次を参照してください。、[アクセシビリティ web サイト](http://go.microsoft.com/fwlink/?LinkID=37113)します。
 
 ほとんどの場合は、Visual Studio での Office プロジェクトには、ユーザー補助の標準や公開プロパティ、ソリューションにアクセスできるようにするために設定できますが満たしています。 ただし、ユーザー補助機能が制限されている一部の機能があります。
 
@@ -40,26 +40,26 @@ Microsoft Visual Studio と Microsoft Office には、標準のユーザー補�
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>デザイナーでリボン タブとコントロールのショートカット キーを表示するには
 
-1.  Visual Studio での**ツール** メニューのをクリックして**オプション**します。
+1. Visual Studio での**ツール** メニューのをクリックして**オプション**します。
 
-2.  展開、 **Office ツール**ノード、および選択**Microsoft Office Excel Keyboard**または**Microsoft Office Word Keyboard**必要に応じて、します。
+2. 展開、 **Office ツール**ノード、および選択**Microsoft Office Excel Keyboard**または**Microsoft Office Word Keyboard**必要に応じて、します。
 
-3.  選択**ダイナミック キーボード スキーム**します。
+3. 選択**ダイナミック キーボード スキーム**します。
 
      有効にする、変更の Visual Studio を再起動する必要があるかを示すメッセージが表示されます。
 
-4.  **[OK]** をクリックします。
+4. **[OK]** をクリックします。
 
-5.  Visual Studio を再起動して、プロジェクトを再度開きます。
+5. Visual Studio を再起動して、プロジェクトを再度開きます。
 
-6.  プロジェクトの文書またはブックのデザイナーを開きます。
+6. プロジェクトの文書またはブックのデザイナーを開きます。
 
-7.  キーを押して**F6**リボンのショートカット キーを表示します。
+7. キーを押して**F6**リボンのショートカット キーを表示します。
 
 ## <a name="accessibility-at-runtime"></a>実行時に、ユーザー補助機能
 
 ### <a name="windows-forms-controls-on-office-documents"></a>Office ドキュメントでの Windows フォーム コントロール
- Windows フォーム コントロールは、スクリーン リーダーなどのユーザー補助機能するコントロールに関する情報を提供する、アクセシビリティのプロパティを公開します。 コントロールがドキュメント レベルのカスタマイズでの Office ドキュメントを上にある場合に、これらのアクセシビリティのプロパティの利用ができます。 詳細については、[Windows フォーム上のコントロールのアクセシビリティに関する情報を提供](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)を参照してください。
+ Windows フォーム コントロールは、スクリーン リーダーなどのユーザー補助機能するコントロールに関する情報を提供する、アクセシビリティのプロパティを公開します。 コントロールがドキュメント レベルのカスタマイズでの Office ドキュメントを上にある場合に、これらのアクセシビリティのプロパティの利用ができます。 詳細については、次を参照してください。 [Windows フォーム上のコントロールのアクセシビリティに関する情報を提供](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)します。
 
  ただし、ユーザー補助な制限があります実行時に Windows フォーム コントロールは、Excel ブックまたは Word 文書にホストされている場合。
 
@@ -67,12 +67,12 @@ Microsoft Visual Studio と Microsoft Office には、標準のユーザー補�
 
 - 100% 以外に、ドキュメントのズーム設定を変更すると、ドキュメント上のコントロールが無効です。
 
-  ドキュメントでの Windows フォーム コントロールの制限事項については、[の制限事項の Windows フォーム コントロールの Office ドキュメント](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)を参照してください。
+  ドキュメントでの Windows フォーム コントロールの制限事項については、次を参照してください。[の制限事項の Windows フォーム コントロールの Office ドキュメント](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)します。
 
 ### <a name="actions-panes-and-custom-task-panes"></a>操作ウィンドウやカスタム作業ウィンドウ
  操作ウィンドウまたはカスタム作業ウィンドウにフォーカスが、コントロールにアクセスする、Windows フォーム アプリケーションのコントロールと同じようです。 [操作] ウィンドウとドキュメントの間にカーソルを移動するキーを押して**F6**します。
 
- 操作ウィンドウやカスタム作業ウィンドウの詳細については、[操作ウィンドウの概要](../vsto/actions-pane-overview.md)と[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)を参照してください。
+ 操作ウィンドウやカスタム作業ウィンドウの詳細については、次を参照してください。[操作ウィンドウの概要](../vsto/actions-pane-overview.md)と[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
 
 ### <a name="display-modes"></a>表示モード
 
@@ -86,7 +86,7 @@ Visual Studio では、表示モードに関連する次の制限があります
 
 ## <a name="see-also"></a>関連項目
 
-- [Office ソリューションを開発します。](../vsto/developing-office-solutions.md)
+- [Office ソリューションの開発](../vsto/developing-office-solutions.md)
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)
 - [障碍を持つユーザーのユーザー補助機能](../ide/reference/accessibility-for-people-with-disabilities.md)
 - [Visual Studio のユーザー補助機能](../ide/reference/accessibility-features-of-visual-studio.md)

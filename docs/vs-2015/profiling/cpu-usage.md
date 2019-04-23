@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46d2005ae22828a01a03141a870acec4e23a785d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a78025bd11e56b001514f580acca18b7d21d5424
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755358"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067054"
 ---
 # <a name="cpu-usage"></a>CPU 使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ ms.locfileid: "54755358"
   
  パフォーマンスと診断ハブでは、診断セッションの実行と管理のために他の多くのオプションを提供しています。 たとえば、 **CPU 使用率** ツールをローカルまたはリモートのコンピューターで、あるいはシミュレーターやエミュレーターで実行できます。 Visual Studio で開いているプロジェクトのパフォーマンスを分析したり、実行中のアプリにアタッチしたり、Windows ストアからインストールされたアプリを開始したりできます。 詳細については、次を参照してください[デバッグなしでプロファイリング ツールの実行。](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> CPU 使用率のデータの収集  
+## <a name="BKMK_Collect_CPU_usage_data"></a> CPU 使用率のデータの収集  
   
 1. Visual Studio で、ソリューション構成を **[リリース]** に設定して配置ターゲットを選択します。  
   
     ![リリースとローカル コンピューターの選択](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-   -   アプリを **[リリース]** モードで実行すると、アプリの実際のパフォーマンスをよりよく把握できます。  
+   - アプリを **[リリース]** モードで実行すると、アプリの実際のパフォーマンスをよりよく把握できます。  
   
-   -   アプリをローカル コンピューターで実行すると、インストールされているアプリの実行に最も近い状態で再現できます。  
+   - アプリをローカル コンピューターで実行すると、インストールされているアプリの実行に最も近い状態で再現できます。  
   
-   -   リモート デバイスからデータを収集している場合は、アプリはリモート デスクトップ接続を使用しないで、デバイス上で直接実行してください。  
+   - リモート デバイスからデータを収集している場合は、アプリはリモート デスクトップ接続を使用しないで、デバイス上で直接実行してください。  
   
-   -   Windows Phone アプリの場合には、**[デバイス]** からのデータを直接収集すると最も正確なデータが得られます。  
+   - Windows Phone アプリの場合には、**[デバイス]** からのデータを直接収集すると最も正確なデータが得られます。  
   
 2. **[デバッグ]** メニューの **[パフォーマンス プロファイラー...]** をクリックします。  
   
@@ -59,10 +59,10 @@ ms.locfileid: "54755358"
   
 ## <a name="analyze-the-cpu-usage-report"></a>CPU 使用率レポートの分析  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー  
  コール ツリー情報を理解するには、 `GetMaxNumberButton_Click` セグメントを再度選択し、コール ツリーの詳細を確認します。  
   
-####  <a name="BKMK_Call_tree_structure"></a> コール ツリーの構造  
+#### <a name="BKMK_Call_tree_structure"></a> コール ツリーの構造  
  ![GetMaxNumberButton&#95;Click コール ツリー](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -72,7 +72,7 @@ ms.locfileid: "54755358"
 |![手順 3](../profiling/media/procguid-3.png "ProcGuid_3")|セカンド レベル ノードの子はユーザー コード メソッドおよび非同期ルーチンで、セカンド レベル システムとフレームワーク コードによって呼び出される、または作成されます。|  
 |![手順 4](../profiling/media/procguid-4.png "ProcGuid_4")|メソッドの子ノードには、親メソッドの呼び出しのみのデータが含まれます。 **[外部コードの表示]** がオフのとき、アプリ メソッドには **[外部コード]** ノードが含まれる場合もあります。|  
   
-####  <a name="BKMK_External_Code"></a> 外部コード  
+#### <a name="BKMK_External_Code"></a> 外部コード  
  外部コードとは、作成したコードによって実行されるシステムおよびフレームワーク コンポーネント内の関数です。 外部コードには、アプリの開始と停止、UI の描画、スレッドの制御、およびアプリへの他の低レベル サービスの提供を行う関数が含まれます。 外部コードを確認することはほとんどないため、CPU 使用率コール ツリーはユーザー メソッドの外部関数を 1 つの **[外部コード]** ノードにまとめます。  
   
  外部コードのコール パスを表示する場合、 **[フィルター ビュー]** リストから **[外部コードの表示]** をクリックし、 **[適用]** をクリックします。  
@@ -87,7 +87,7 @@ ms.locfileid: "54755358"
   
  ![入れ子式の外部コードの検索](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a> コール ツリー データの列  
+### <a name="BKMK_Call_tree_data_columns"></a> コール ツリー データの列  
   
 |||  
 |-|-|  
@@ -97,7 +97,7 @@ ms.locfileid: "54755358"
 |**セルフ CPU (ミリ秒)**|選択した時間範囲内で、関数への呼び出しおよび関数が呼び出した関数によって使用されたミリ秒です。|  
 |**モジュール**|関数が含まれるモジュールの名前です。あるいは、[外部コード] ノード内の関数が含まれるモジュールの数です。|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー内の非同期関数  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー内の非同期関数  
  コンパイラが非同期メソッドを検出すると、メソッドの実行を制御するために非表示のクラスを作成します。 概念的に言って、クラスとはコンパイラによって生成された関数のリストを含んだステート マシンです。これらの関数は、元のメソッドの操作を非同期で呼び出したり、それに必要なコールバック、スケジューラ、および反復子を正しく呼び出したりします。 元のメソッドが親メソッドによって呼び出されると、ランタイムは親の実行コンテキストからメソッドを削除し、アプリの実行を制御するシステムとフレームワーク コードのコンテキストにある非表示のクラスのメソッドを実行します。 非同期のメソッドは、多くの場合、1 つ以上の異なるスレッドで実行されます (必ずそうなるわけではありません)。 このコードは、CPU 使用率コール ツリーで、ツリーのトップ ノードのすぐ下にある **[外部コード]** ノードの子として表示されます。  
   
  これをこの例で表示するには、タイムラインで `GetMaxNumberAsyncButton_Click` セグメントを再度選択します。  
@@ -108,8 +108,8 @@ ms.locfileid: "54755358"
   
  ![展開された GetMaxNumberAsyncButton&#95;Click コール ツリー](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click` の機能は非常にわずかで、タスクの値のリストを管理し、結果の最大値を計算し、出力を表示するに過ぎません。  
+- `MainPage::GetMaxNumberAsyncButton_Click` の機能は非常にわずかで、タスクの値のリストを管理し、結果の最大値を計算し、出力を表示するに過ぎません。  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` は、 `GetNumberAsync`の呼び出しをラップする 48 個のタスクをスケジュールして起動するために必要なアクティビティを表示します。  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` は、 `GetNumberAsync`の呼び出しをラップする 48 個のタスクをスケジュールして起動するために必要なアクティビティを表示します。  
   
--   `MainPage::<GetNumberAsync>b__b` は `GetNumber`を呼び出すタスクのアクティビティを表示します。
+- `MainPage::<GetNumberAsync>b__b` は `GetNumber`を呼び出すタスクのアクティビティを表示します。

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb95d2beb90358cbbe359076a815dee13ce7166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e39a742c01b013c43992847010bf5f6cb6ac6009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070922"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio を使用して Office 用 VSTO アドインを作成する
   Visual Studio の Microsoft Office Developer Tools を使用して、Office を拡張する .NET Framework アプリケーションを作成できます。 このようなアプリケーションは、 *Office ソリューション*とも呼ばれます。
@@ -29,9 +29,9 @@ ms.locfileid: "56644381"
 
  Office 開発の最新情報については、MSDN の次のデベロッパー センターを参照してください。
 
--   [Visual Studio の開発者ポータルでの Office 開発](http://go.microsoft.com/fwlink/?LinkId=123844)には、製品情報、コード サンプル、ビデオに加え、Visual Studio を使用して、Office アプリケーションをソリューションの一部としてカスタマイズする方法のコミュニティ リソースへのリンクが含まれています。
+- [Visual Studio の開発者ポータルでの Office 開発](http://go.microsoft.com/fwlink/?LinkId=123844)には、製品情報、コード サンプル、ビデオに加え、Visual Studio を使用して、Office アプリケーションをソリューションの一部としてカスタマイズする方法のコミュニティ リソースへのリンクが含まれています。
 
--   [Microsoft Office デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=83467)には、技術記事、コード サンプル、ダウンロード、コミュニティ情報、サポート、および Office のカスタマイズと Office Business Application (OBA) に関する他のドキュメントへのリンクが含まれています。
+- [Microsoft Office デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=83467)には、技術記事、コード サンプル、ダウンロード、コミュニティ情報、サポート、および Office のカスタマイズと Office Business Application (OBA) に関する他のドキュメントへのリンクが含まれています。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [はじめに&#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

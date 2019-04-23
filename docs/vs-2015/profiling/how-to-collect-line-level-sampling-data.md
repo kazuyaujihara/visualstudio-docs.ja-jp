@@ -11,14 +11,14 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2ba4c8a58a2969ced066c6211fd9faa7326cbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068107"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>方法 : 行レベルのサンプリング データを収集する
+# <a name="how-to-collect-line-level-sampling-data"></a>方法: 行レベルのサンプリング データを収集します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 行レベルのサンプリングとは、排他サンプル数が高い関数など、プロセッサ集中型の関数のコードで、プロセッサが大部分の時間を費やす必要のある場所を特定するためのプロファイラーの機能です。  
@@ -52,11 +52,11 @@ ms.locfileid: "54779025"
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>マネージド コードの行レベルのサンプリングの無効化  
  既定では、行レベルのサンプリングは有効になっています。 マネージド コードの行レベルのデータ収集を無効にするには、次のいずれかを実行します。  
   
--   プロファイリングの前に、「**VSPerfCLREnv /samplelineoff**」と入力します。 これは、アプリケーションとサービスの両方に影響します。  
+- プロファイリングの前に、「**VSPerfCLREnv /samplelineoff**」と入力します。 これは、アプリケーションとサービスの両方に影響します。  
   
      または  
   
--   アプリケーションの起動時に、「**VSPerfCmd /lineoff\<他の引数>**」を入力します。  
+- アプリケーションの起動時に、「**VSPerfCmd /lineoff\<他の引数>**」を入力します。  
   
 ## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   

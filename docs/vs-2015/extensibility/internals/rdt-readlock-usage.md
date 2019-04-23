@@ -13,12 +13,12 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c818023d50b733a4818c87e67d0b49abde518ad2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9a6b5f86f0cfbb71f6264bdc74df72ad9209c9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972836"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070161"
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock の使用法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "58972836"
   
  一般に、使用するよう<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>次のいずれかが true の場合。  
   
--   ドキュメントを自動的に開く場合、読み取り専用はまだが確立されていることが、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>所有する必要があります。  
+- ドキュメントを自動的に開く場合、読み取り専用はまだが確立されていることが、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>所有する必要があります。  
   
--   ユーザーが、ユーザーの前に自動的に開かれたドキュメントを保存するよう求める場合は、UI に表示されることと閉じるましょう。  
+- ユーザーが、ユーザーの前に自動的に開かれたドキュメントを保存するよう求める場合は、UI に表示されることと閉じるましょう。  
   
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>表示と非表示のドキュメントを管理する方法  
  ユーザーが UI では、ドキュメントを開いたときに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>ドキュメントの所有者を確立する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>フラグを設定する必要があります。 ない場合は<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>所有者が確立されると、その後、ユーザーがクリックしたときに、ドキュメントは保存されません**すべて保存**または IDE を終了します。 かどうか、ドキュメントが開いていない視覚的、メモリ内で変更されていて、ユーザーがシャット ダウン時にドキュメントを保存するように求めまたは保存つまり**すべて保存**を選択した場合、`RDT_ReadLock`は使用できません。 代わりに、使用する必要があります、`RDT_EditLock`を登録し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>ときに、<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER>フラグ。  

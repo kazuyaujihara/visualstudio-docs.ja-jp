@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd79925023a32a68ff4a9ac5f86f85d9c6798bf
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 93c30d9966dabdf7ad7b42bbad6ecbae5679e636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843595"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070339"
 ---
 # <a name="save-data-in-project-files"></a>プロジェクト ファイル内のデータを保存します。
 プロジェクト サブタイプは、保存し、プロジェクト ファイルのサブタイプに固有のデータを取得できます。 マネージ パッケージ フレームワーク (MPF) は、このタスクを実行する 2 つのインターフェイスを提供します。
@@ -26,13 +26,13 @@ ms.locfileid: "56843595"
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>自由形式の XML でないビルド関連のデータを保持するために使用します。 によって提供されるメソッド<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>によって呼び出される[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]たびに[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]非ビルド プロジェクト ファイルに関連するデータを保持する必要があります。
 
-  ビルドと非ビルド関連のデータを維持する方法の詳細については、[MSBuild プロジェクト ファイル内のデータを永続化](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)を参照してください。
+  ビルドと非ビルド関連のデータを維持する方法の詳細については、次を参照してください。 [MSBuild プロジェクト ファイル内のデータを永続化](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)します。
 
 ## <a name="save-and-retrieve-build-related-data"></a>ビルド関連のデータの保存および取得
 
 ### <a name="to-save-a-build-related-data-in-the-project-file"></a>プロジェクト ファイル内のデータに関連するビルドを保存するには
 
--   呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>プロジェクト ファイルの完全なパスを保存するメソッド。
+- 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>プロジェクト ファイルの完全なパスを保存するメソッド。
 
     ```
     private SpecializedProject project;
@@ -47,7 +47,7 @@ ms.locfileid: "56843595"
 
 ### <a name="to-retrieve-build-related-data-from-the-project-file"></a>関連するデータをプロジェクト ファイルからビルドを取得するには
 
--   呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A>プロジェクト ファイルの完全なパスを取得します。
+- 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A>プロジェクト ファイルの完全なパスを取得します。
 
     ```
     private SpecializedProject project;
@@ -64,7 +64,7 @@ ms.locfileid: "56843595"
 
 ### <a name="to-save-non-build-related-data-in-the-project-file"></a>関連するプロジェクト ファイル内のデータを非ビルドを保存するには
 
-1.  実装、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A>が最後に、XML フラグメントが変更されたかどうかを判断するメソッドは、現在のファイルを保存します。
+1. 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A>が最後に、XML フラグメントが変更されたかどうかを判断するメソッドは、現在のファイルを保存します。
 
     ```
     public int IsFragmentDirty(uint storage, out int pfDirty)
@@ -94,7 +94,7 @@ ms.locfileid: "56843595"
     }
     ```
 
-2.  実装、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>プロジェクト ファイルに XML データを保存するメソッド。
+2. 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>プロジェクト ファイルに XML データを保存するメソッド。
 
     ```
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)
@@ -145,7 +145,7 @@ ms.locfileid: "56843595"
 
 ### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>非ビルド プロジェクト ファイルに関連するデータを取得するには
 
-1.  実装、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A>プロジェクト拡張機能のプロパティとその他のビルドに依存しないデータを初期化します。 プロジェクト ファイルに存在する XML の構成データが存在しない場合は、このメソッドが呼び出されます。
+1. 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A>プロジェクト拡張機能のプロパティとその他のビルドに依存しないデータを初期化します。 プロジェクト ファイルに存在する XML の構成データが存在しない場合は、このメソッドが呼び出されます。
 
     ```
     public int InitNew(ref Guid guidFlavor, uint storage)
@@ -161,7 +161,7 @@ ms.locfileid: "56843595"
         return VSConstants.S_OK;
     ```
 
-2.  実装、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>プロジェクト ファイルから XML データを読み込むメソッド。
+2. 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>プロジェクト ファイルから XML データを読み込むメソッド。
 
     ```
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)

@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad3dddec84ac8afc00681171bf59d13205229ca7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 533ad333923edf2e3f55ed5c4e85b42f422a573a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072371"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>方法: テクニカル サポートのリンクを指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "58962699"
   
 ### <a name="to-specify-a-support-url"></a>サポート URL を指定するには  
   
-1.  **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
+1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
   
-2.  **発行**タブをクリックします。  
+2. **発行**タブをクリックします。  
   
-3.  **オプション**ボタンをクリックして、**発行オプション** ダイアログ ボックスを開きます。  
+3. **オプション**ボタンをクリックして、**発行オプション** ダイアログ ボックスを開きます。  
   
-4.  **説明**をクリックします。  
+4. **説明**をクリックします。  
   
-5.  **サポート URL**フィールドに、Web サイト、Web ページ、または UNC 共有に完全修飾パスを入力します。  
+5. **サポート URL**フィールドに、Web サイト、Web ページ、または UNC 共有に完全修飾パスを入力します。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   

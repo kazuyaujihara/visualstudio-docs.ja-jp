@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649993"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066781"
 ---
 # <a name="graphics-event-list"></a>グラフィックス イベント一覧
 Visual Studio Graphics Analyzer でグラフィックス イベント一覧を使用して、ゲームまたはアプリのフレームのレンダリング中に記録された Direct3D イベントを調査できます。
@@ -49,7 +49,7 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
 
 ##### <a name="to-change-the-event-list-view-mode"></a>イベント一覧ビューのモードを変更するには
 
--   **グラフィックス イベント一覧**、イベントの一覧の上のウィンドウの検索、**ビュー**ドロップダウンいずれかを選択、**タイムライン**ビューまたは**のGPUの処理**ビュー。
+- **グラフィックス イベント一覧**、イベントの一覧の上のウィンドウの検索、**ビュー**ドロップダウンいずれかを選択、**タイムライン**ビューまたは**のGPUの処理**ビュー。
 
 ### <a name="filtering-events"></a>イベントのフィルタリング
  **[グラフィックス イベント一覧]** ウィンドウの右上にある [検索] ボックスを使用してイベント一覧をフィルタリングし、特定のキーワードが含まれている名前のイベントのみを検索することができます。 前の図に示されているように、「 `Vertex`」などの 1 つのキーワードを指定することも、「 `Draw;Primitive`」のようにセミコロンで区切って複数のキーワードを指定することもできます。複数のキーワードを指定すると、名前に `Draw` または `Primitive` のいずれかが含まれているイベントが該当します。 検索では、空白の有無も区別されます。たとえば、「 `VSSet` 」と「 `VS Set` 」は異なる検索であるため、検索する語には注意が必要です。

@@ -25,19 +25,19 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002562"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071773"
 ---
 # <a name="using-dump-files"></a>ダンプ ファイルの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ヒープ情報あり/なしのダンプ ファイル、ダンプ ファイルを作成する、ダンプ ファイルを開く、ダンプ ファイルのバイナリ、PDB、ソース ファイルを検索する 
   
-##  <a name="BKMK_Contents"></a> 目次  
+## <a name="BKMK_Contents"></a> 目次  
  [ダンプ ファイルとは何ですか。](#BKMK_What_is_a_dump_file_)  
   
  [ダンプ ファイル、ヒープの有無](#BKMK_Dump_files__with_or_without_heaps)  
@@ -50,14 +50,14 @@ ms.locfileid: "59002562"
   
  [バイナリ、シンボル (.pdb) ファイル、ソース ファイルを検索します。](#BKMK_Find_binaries__symbol___pdb__files__and_source_files)  
   
-##  <a name="BKMK_What_is_a_dump_file_"></a> ダンプ ファイルとは何ですか。  
+## <a name="BKMK_What_is_a_dump_file_"></a> ダンプ ファイルとは何ですか。  
  A*ダンプ ファイル*時に、アプリのスナップショットは、ダンプを取得します。 ダンプ ファイルには、実行されたプロセスと読み込まれたモジュールが示されます。 ダンプがヒープ情報と共に保存された場合、ダンプ ファイルにはその時点におけるアプリのメモリの内容のスナップショットも含まれています。 Visual Studio でヒープ情報ありのダンプ ファイルを開くのは、デバッグ セッションのブレークポイントで実行を中断するようなものです。 実行を続行することはできませんが、ダンプの作成時におけるアプリのスタック、スレッド、変数値を調べることができます。  
   
  ダンプが主に使用されるのは、開発者がアクセスできないコンピューター上で発生する問題をデバッグする場合です。 たとえば、顧客のクラッシュやハングアップの状況を自分のコンピューターで再現できないときは、顧客のコンピューターからのダンプ ファイルを使用できます。 ダンプはテスターによっても作成されてクラッシュまたはハングアップ データの保存に使用されるため、テスト コンピューターを使用してより多くのテストを行えるようになります。 Visual Studio デバッガーでは、マネージドまたはネイティブ コードのダンプ ファイルを保存できます。 デバッガーは、Visual Studio によって、または内のファイルを保存する他のプログラムで作成されたダンプ ファイルを読み込むことができます、*ミニダンプ*形式。  
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> ダンプ ファイル、ヒープの有無  
+## <a name="BKMK_Dump_files__with_or_without_heaps"></a> ダンプ ファイル、ヒープの有無  
  ヒープ情報あり/なしのダンプ ファイルを作成できます。  
   
 - **ダンプ ファイルがヒープ情報あり**アプリのメモリのスナップショットが含まれます。 ダンプの作成時における変数値も含まれています。 ヒープ情報と共に保存されたダンプ ファイルを読み込む場合、Visual Studio はアプリケーション バイナリが見つからなくてもシンボルを読み込むことができます。 また、Visual Studio は、読み込まれたネイティブ モジュールのバイナリをダンプ ファイルに保存するため、デバッグが大幅に簡単になります。  
@@ -66,7 +66,7 @@ ms.locfileid: "59002562"
   
   ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_Requirements_and_limitations"></a> 要件と制限事項  
+## <a name="BKMK_Requirements_and_limitations"></a> 要件と制限事項  
   
 - 最適化されたコードのダンプ ファイルをデバッグすると、混乱が生じることがあります。 たとえば、コンパイラによる関数のインライン展開により、予期しない呼び出し履歴になっていたり、その他の最適化により、変数の有効期間が変更されていたりします。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "59002562"
   
   ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_Create_a_dump_file"></a> ダンプ ファイルを作成する  
+## <a name="BKMK_Create_a_dump_file"></a> ダンプ ファイルを作成する  
  Visual Studio でダンプ ファイルを作成するには:   
   
 - Visual Studio でのプロセスのデバッグ中、デバッガーが例外またはブレークポイントで停止するときに、ダンプ ファイルを保存できます。 選択**としてダンプを保存**、**デバッグ**します。 **ダンプを保存** ダイアログ ボックスで、**型として保存** ボックスの一覧を選択できます**ミニダンプ**または**ヒープ付きミニダンプ**(既定)。  
@@ -95,19 +95,19 @@ ms.locfileid: "59002562"
   
   ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_Open_a_dump_file"></a> ダンプ ファイルを開く  
+## <a name="BKMK_Open_a_dump_file"></a> ダンプ ファイルを開く  
   
-1.  Visual Studio で、次のように選択します。**ファイル**、**オープン**、**ファイル**します。  
+1. Visual Studio で、次のように選択します。**ファイル**、**オープン**、**ファイル**します。  
   
-2.  **[ファイルを開く]** ダイアログ ボックスで、ダンプ ファイルを探して選択します。 通常は拡張子 .dmp が付いています。 クリックして**OK**します。  
+2. **[ファイルを開く]** ダイアログ ボックスで、ダンプ ファイルを探して選択します。 通常は拡張子 .dmp が付いています。 次に、**[OK]** を選択します。  
   
-3.  **ダンプ ファイルの概要**ウィンドウが表示されます。 このウィンドウでは、ダンプ ファイルのデバッグに関する概要情報を確認し、シンボル パスを設定したりデバッグを開始したりすることができます。概要情報をクリップボードにコピーすることもできます。  
+3. **ダンプ ファイルの概要**ウィンドウが表示されます。 このウィンドウでは、ダンプ ファイルのデバッグに関する概要情報を確認し、シンボル パスを設定したりデバッグを開始したりすることができます。概要情報をクリップボードにコピーすることもできます。  
   
      ![ミニダンプ概要ページ](../debugger/media/dbg-dump-summarypage.png "DBG_DUMP_SummaryPage")  
   
-4.  デバッグを開始するには、**アクション**セクションし、いずれかを選択**ネイティブのみでデバッグ**または**混合でデバッグ**します。  
+4. デバッグを開始するには、**アクション**セクションし、いずれかを選択**ネイティブのみでデバッグ**または**混合でデバッグ**します。  
   
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> バイナリ、シンボル (.pdb) ファイル、ソース ファイルを検索します。  
+## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> バイナリ、シンボル (.pdb) ファイル、ソース ファイルを検索します。  
  Visual Studio でダンプ ファイルのデバッグ機能をすべて使用するには、次のファイルにアクセスできる必要があります。  
   
 - ダンプの作成に使用した .exe ファイルと、ダンプ プロセスで使用したその他のファイルおよびバイナリ (DLL など)。  

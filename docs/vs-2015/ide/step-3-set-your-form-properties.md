@@ -1,5 +1,5 @@
 ---
-title: '手順 3: フォームのプロパティの設定 | Microsoft Docs'
+title: '手順 3: フォームのプロパティの設定 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067249"
 ---
-# <a name="step-3-set-your-form-properties"></a>手順 3: フォームのプロパティの設定
+# <a name="step-3-set-your-form-properties"></a>手順 3: フォームのプロパティを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 次に、**[プロパティ]** ウィンドウを使用してフォームの外観を変更します。  
   
- ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic によるピクチャ ビューアーの作成 - ビデオ 1](http://go.microsoft.com/fwlink/?LinkId=205209)」または「[チュートリアル 1: C# によるピクチャ ビューアーの作成 - ビデオ 1](http://go.microsoft.com/fwlink/?LinkId=205199)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。  
+ ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版について、次を参照してください。[チュートリアル 1。Visual basic - ビデオ 1 ピクチャ ビューアーの作成](http://go.microsoft.com/fwlink/?LinkId=205209)または[チュートリアル 1。C# - ビデオ 1 ピクチャ ビューアーの作成](http://go.microsoft.com/fwlink/?LinkId=205199)です。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。  
   
 ### <a name="to-set-your-form-properties"></a>フォームのプロパティを設定するには  
   
@@ -64,14 +64,14 @@ ms.locfileid: "54782250"
   
 7. IDE では実行中のプログラムを変更することはできないため、次の手順に進む前にプログラムを停止しておきます。 次のメソッドのいずれかを使用して、プログラムを停止できます。  
   
-   -   ツール バーで、**[デバッグの停止]** ボタンを選択します。  
+   - ツール バーで、**[デバッグの停止]** ボタンを選択します。  
   
-   -   メニュー バーで、**[デバッグ]**、**[デバッグの停止]** の順に選択します。  
+   - メニュー バーで、**[デバッグ]**、**[デバッグの停止]** の順に選択します。  
   
-   -   **[Form1]** ウィンドウの上隅にある X ボタンを選択します。  
+   - **[Form1]** ウィンドウの上隅にある X ボタンを選択します。  
   
 ### <a name="to-continue-or-review"></a>続行または確認するには  
   
--   チュートリアルの次の手順に進むには、「[手順 4: TableLayoutPanel コントロールを使用したフォームのレイアウトの設定](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)」を参照してください。  
+- チュートリアルの次の手順に進むには、「[手順 4:TableLayoutPanel コントロールを使用してフォームのレイアウト](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)します。  
   
--   チュートリアルの前の手順に戻るには、「[手順 2: プログラムの実行](../ide/step-2-run-your-program.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「[手順 2:プログラムの実行](../ide/step-2-run-your-program.md)します。

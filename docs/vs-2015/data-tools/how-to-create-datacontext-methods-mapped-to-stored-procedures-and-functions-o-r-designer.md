@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8485885cbba43ea9eaef76616607861c44c2ab24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b395b396ab182ca03be35cddc8d237506b43e39c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668783"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066612"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>方法: ストアド プロシージャや関数にマップされる DataContext メソッドを作成する (O/R デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ ms.locfileid: "59668783"
   
 #### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>自動生成された型を返す DataContext メソッドを作成するには  
   
-1.  **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**、展開、 **Stored Procedures**を使用するデータベースのノード。  
+1. **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**、展開、 **Stored Procedures**を使用するデータベースのノード。  
   
-2.  目的のストアド プロシージャを探し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]の空の領域にドラッグします。  
+2. 目的のストアド プロシージャを探し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]の空の領域にドラッグします。  
   
      自動生成された戻り値の型を使用して <xref:System.Data.Linq.DataContext> メソッドが作成され、**[メソッド]** ペインに表示されます。  
   
 #### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>エンティティ クラスを戻り値の型とする DataContext メソッドを作成するには  
   
-1.  **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**、展開、 **Stored Procedures**を使用するデータベースのノード。  
+1. **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**、展開、 **Stored Procedures**を使用するデータベースのノード。  
   
-2.  目的のストアド プロシージャを探し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]の既存のエンティティ クラスにドラッグします。  
+2. 目的のストアド プロシージャを探し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]の既存のエンティティ クラスにドラッグします。  
   
      選択したエンティティ クラスを戻り値の型として <xref:System.Data.Linq.DataContext> メソッドが作成され、**[メソッド]** ペインに表示されます。  
   

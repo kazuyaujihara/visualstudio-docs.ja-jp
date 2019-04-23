@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e5c5f6d73f3606813fd9a1954cdc10bb562baf34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070265"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio リモート デバッグ モニターに接続できません。
 このメッセージは、リモート デバッグ モニターが正しくリモート コンピューターで設定されていないか、リモートのコンピューターによってにアクセスできないネットワークの問題またはファイアウォールが存在するために発生する可能性があります。
@@ -130,16 +130,16 @@ Visual Studio でのプロジェクト プロパティを確認し、サーバ�
 
 これは、次のいずれかの方法で解消できます。
 
--   リモート デバッガーのアクセス許可を Visual Studio のユーザーを追加 (リモート デバッガーのウィンドウで次のように選択します。**ツール > アクセス許可**)。
+- リモート デバッガーのアクセス許可を Visual Studio のユーザーを追加 (リモート デバッガーのウィンドウで次のように選択します。**ツール > アクセス許可**)。
 
--   リモート コンピューターでは、Visual Studio コンピューターを使用するパスワードと同じユーザー アカウントでリモート デバッガーを再起動します。
+- リモート コンピューターでは、Visual Studio コンピューターを使用するパスワードと同じユーザー アカウントでリモート デバッガーを再起動します。
 
     > [!NOTE]
     > リモート サーバーでリモート デバッガーを実行している場合、リモート デバッガー アプリケーションを右クリックし、選択**管理者として実行**(または、サービスとしてリモート デバッガーを実行することができます)。 場合を実行して、リモート サーバーではない、通常開始だけです。
 
--   コマンド ラインで **/allow \<username** パラメーターに `msvsmon /allow <username@computer>` を指定してリモート デバッガーを開始します。
+- コマンド ラインで **/allow \<username** パラメーターに `msvsmon /allow <username@computer>` を指定してリモート デバッガーを開始します。
 
--   または、すべてのユーザーにリモート デバッグを行うことができます。 リモート デバッガー ウィンドウで、**[ツール] > [オプション]** ダイアログに移動します。 **[認証なし]** を選択すると、 **[すべてのユーザーにデバッグを許可する]** をチェックできるようになります。 ただし、その他のオプションが失敗した場合にのみ、またはプライベート ネットワーク上にいる場合は、このオプションを試してください。
+- または、すべてのユーザーにリモート デバッグを行うことができます。 リモート デバッガー ウィンドウで、**[ツール] > [オプション]** ダイアログに移動します。 **[認証なし]** を選択すると、 **[すべてのユーザーにデバッグを許可する]** をチェックできるようになります。 ただし、その他のオプションが失敗した場合にのみ、またはプライベート ネットワーク上にいる場合は、このオプションを試してください。
 
 ### <a name="firewall"></a> リモート コンピューター上のファイアウォールがリモート デバッガーへの着信接続を許可しない
  Visual Studio とリモート デバッガーの間の通信を許可するように、Visual Studio のコンピューター上のファイアウォールとリモート コンピューター上のファイアウォールを構成する必要があります。 リモート デバッガーが使用するポートについては、「 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)」を参照してください。 Windows ファイアウォールを構成する方法については、「 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)」を参照してください。

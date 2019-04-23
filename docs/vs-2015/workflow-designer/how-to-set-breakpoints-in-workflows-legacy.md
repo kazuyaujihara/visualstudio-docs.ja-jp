@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e3f7e4ffefcd6dc8509cf4c787af67c9a03305f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069966"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>方法: ワークフロー内にブレークポイントを設定する (レガシ)
 このトピックでは、従来の [!INCLUDE[wf](../includes/wf-md.md)]を使用して作成された [!INCLUDE[wfd1](../includes/wfd1-md.md)] アプリケーションでブレークポイントを設定する方法について説明します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] アプリケーションが [!INCLUDE[wf2](../includes/wf2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  
@@ -30,11 +30,11 @@ ms.locfileid: "58978239"
   
  次のような方法で、ワークフロー デザイン サーフェイス上でアクティビティのブレークポイントを設定できます。  
   
--   アクティビティを右クリックして**ブレークポイント \ ブレークポイントの挿入**します。  
+- アクティビティを右クリックして**ブレークポイント \ ブレークポイントの挿入**します。  
   
--   アクティビティを選択して、F9 キーを押します。  
+- アクティビティを選択して、F9 キーを押します。  
   
--   選択**新しいブレークポイント**から、**デバッグ**メニュー。  
+- 選択**新しいブレークポイント**から、**デバッグ**メニュー。  
   
      また、このオプションを使用して、デバッグ中にデバッガがブレークポイントで停止したときに新しいブレークポイントを設定することもできます。  
   
@@ -43,24 +43,24 @@ ms.locfileid: "58978239"
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>[デバッグ] メニューの [ブレークポイントの作成] オプションを使ってブレークポイントを設定するには  
   
-1.  **デバッグ**メニューの **新しいブレークポイント**します。  
+1. **デバッグ**メニューの **新しいブレークポイント**します。  
   
-2.  クリックして**関数でブレーク**します。  
+2. クリックして**関数でブレーク**します。  
   
      **新しいブレークポイント** ダイアログ ボックスが表示されます。  
   
-3.  内のアクティビティの名前を指定、**関数**この構文を使用してテキスト ボックス:`QualifiedActivityId[:[FullClassName][:InstanceId]]`します。  
+3. 内のアクティビティの名前を指定、**関数**この構文を使用してテキスト ボックス:`QualifiedActivityId[:[FullClassName][:InstanceId]]`します。  
   
     > [!NOTE]
     >  アクティビティ名を使用する代わりに、必要に応じて、**関数**テキスト ボックスに、ワークフロー アクティビティの絶対パスを指定してブレークポイントを設定することができます。 たとえば、という名前のワークフロー ソリューション**WorkflowConsoleApplication1**という名前のソリューションでのワークフローと**Workflow1**というアクティビティを使用する**Delay1**. アクティビティ名を使用する**Delay1**としてパスを指定または**Delay1:WorkflowConsoleApplication1.Workflow1**または**Delay1:WorkflowConsoleApplication1.Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}** します。  
   
-4.  選択、 **IntelliSense を使用する**関数名を検証する チェック ボックス。  
+4. 選択、 **IntelliSense を使用する**関数名を検証する チェック ボックス。  
   
      このチェック ボックスをオンにしない場合、ブレークポイント名は検証されません。  
   
-5.  選択**ワークフロー**から、**言語**一覧。  
+5. 選択**ワークフロー**から、**言語**一覧。  
   
-6.  **[OK]** をクリックします。  
+6. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>関連項目  
  [従来のワークフローのデバッグ](../workflow-designer/debugging-legacy-workflows.md)   

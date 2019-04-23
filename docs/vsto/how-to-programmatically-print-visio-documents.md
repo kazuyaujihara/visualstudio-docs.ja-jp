@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a949ee781652c3e19b3ebc3476e736374fe4f21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bf492c866a43a0098fbcad5660a19c57fc90a3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634319"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071545"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>方法: プログラムによって Visio 図面を印刷します。
   Microsoft Office Visio 図面の全体または特定のページだけを印刷することができます。
@@ -29,7 +29,7 @@ ms.locfileid: "56634319"
 
 ### <a name="to-print-a-complete-document"></a>図面全体を印刷するには
 
--   印刷する `Microsoft.Office.Interop.Visio.Document.Print` オブジェクトの `Microsoft.Office.Interop.Visio.Document` メソッドを呼び出します。
+- 印刷する `Microsoft.Office.Interop.Visio.Document.Print` オブジェクトの `Microsoft.Office.Interop.Visio.Document` メソッドを呼び出します。
 
      アクティブ文書を印刷するコード例を次に示します。 この例を使用するには、プロジェクトの `ThisAddIn` クラスからコードを実行します。
 
@@ -40,7 +40,7 @@ ms.locfileid: "56634319"
 
 ### <a name="to-print-a-page-of-a-document"></a>特定のページの図面を印刷するには
 
--   印刷する `Microsoft.Office.Interop.Visio.Pages.Print` オブジェクトの `Microsoft.Office.Interop.Visio.Pages` メソッドを呼び出します。
+- 印刷する `Microsoft.Office.Interop.Visio.Pages.Print` オブジェクトの `Microsoft.Office.Interop.Visio.Pages` メソッドを呼び出します。
 
      アクティブ文書の最初のページを印刷するコード例を次に示します。 この例を使用するには、プロジェクトの `ThisAddIn` クラスからコードを実行します。
 

@@ -9,12 +9,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a33f43f7c12f45cfbe469b618385c64158547d71
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5b9c46631fcd3ada0946748b515366b4f1b3362a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654348"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070564"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>方法: コマンドラインを使用して同時実行データを収集するネイティブ サービスに、Profiler をアタッチします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "59654348"
 
 #### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには  
 
--   次の表に示すオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
+- 次の表に示すオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
 
     |オプション|説明|  
     |------------|-----------------|  
@@ -79,10 +79,10 @@ ms.locfileid: "59654348"
 
 #### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには  
 
-1.  サービスを停止するか、コマンド プロンプトで次のコマンドを入力し、対象のアプリケーションからプロファイラーをデタッチします。  
+1. サービスを停止するか、コマンド プロンプトで次のコマンドを入力し、対象のアプリケーションからプロファイラーをデタッチします。  
 
      **VSPerfCmd /detach** と入力します  
 
-2.  コマンド プロンプトに次のコマンドを入力し、プロファイラーを終了します。  
+2. コマンド プロンプトに次のコマンドを入力し、プロファイラーを終了します。  
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)

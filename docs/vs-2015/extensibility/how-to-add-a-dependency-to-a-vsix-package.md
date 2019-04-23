@@ -13,12 +13,12 @@ ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 97118134106614e1e04cd2bc328ad31480618116
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cbd9426b7a9190872a2b04246d7f051b480a188d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972766"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066885"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>方法: VSIX パッケージへの依存関係の追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ ms.locfileid: "58972766"
   
 #### <a name="to-add-a-dependency"></a>依存関係を追加するには  
   
-1.  Source.extension.vsixmanifest ファイルを開き、**デザイン**ビュー。 移動して、**依存関係** タブでをクリックし、**新規**します。  
+1. Source.extension.vsixmanifest ファイルを開き、**デザイン**ビュー。 移動して、**依存関係** タブでをクリックし、**新規**します。  
   
-2.  インストールされている拡張機能を追加する: で、**新しい依存関係の追加**ダイアログ ボックスで、**拡張機能がインストールされている**し、**名前**リストの拡張機能を選択します。  
+2. インストールされている拡張機能を追加する: で、**新しい依存関係の追加**ダイアログ ボックスで、**拡張機能がインストールされている**し、**名前**リストの拡張機能を選択します。  
   
-3.  インストールされていない別の VSIX を追加する:: で、**新しい依存関係の追加**ダイアログ ボックスで、**ファイル システム上のファイル**しを使用して、**参照**VSIX を選択するボタンをクリックします。  
+3. インストールされていない別の VSIX を追加する:: で、**新しい依存関係の追加**ダイアログ ボックスで、**ファイル システム上のファイル**しを使用して、**参照**VSIX を選択するボタンをクリックします。  
   
 ## <a name="see-also"></a>関連項目  
  [VSIX 拡張機能スキーマ 1.0 リファレンス](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   

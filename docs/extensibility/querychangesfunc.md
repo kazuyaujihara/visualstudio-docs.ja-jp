@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfa7ed62276e63e80158a86165b59e367d7a88f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2c7a993bca55f1224661e15f9a7ecbf0a967e31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066989"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 これで使用されるコールバック関数、 [SccQueryChanges](../extensibility/sccquerychanges-function.md)操作をファイル名のコレクションを列挙し、各ファイルの状態を確認します。
@@ -52,7 +52,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 |SCC_I_OPERATIONCANCELED|処理を停止します。|
 |SCC_E_xxx|適切な SCC エラーは、処理を停止する必要があります。|
 
-##  <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 構造体
+## <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 構造体
  各ファイルに渡された構造体は、次のようになります。
 
 ```cpp

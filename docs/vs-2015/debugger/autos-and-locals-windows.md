@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072852"
 ---
 # <a name="autos-and-locals-windows"></a>[自動変数] ウィンドウと [ローカル] ウィンドウ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ void main() {
   
  ある状況では、関数やメソッドの戻り値が表示されることもあります。 以下の「 [View return values of method calls](#bkmk_returnValue) 」をご覧ください。  
   
-##  <a name="bkmk_returnValue"></a> View return values of method calls  
+## <a name="bkmk_returnValue"></a> View return values of method calls  
  .NET および C++ のコードでは、メソッド呼び出しのステップ オーバーまたはステップ アウトをするときに戻り値を確認できます。 この機能が便利なのは、メソッド呼び出しの結果がローカル変数に格納されないときです。たとえば、メソッドが別のメソッドのパラメーターまたは戻り値として使用されるときなどです。  
   
  次の C# コードは、2 つの関数の戻り値を加算します。  
@@ -133,11 +133,11 @@ private static int subtractVars(int i, int j)
   
  ただし、値を変更するときには注意が必要です。 考えられる問題のいくつかを次に示します。  
   
--   式を評価すると、変数の値が変わる場合や、プログラムの状態に影響が及ぶ場合があります。 たとえば、 `var1 = ++var2` を評価すると `var1` と `var2`の値が変更されます。  
+- 式を評価すると、変数の値が変わる場合や、プログラムの状態に影響が及ぶ場合があります。 たとえば、 `var1 = ++var2` を評価すると `var1` と `var2`の値が変更されます。  
   
      データを変更する式は、 [副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))があると言われています。気付かないうちに予期しない結果になる可能性があります。 変更を加える前に、そうした変更の結果を理解する必要があります。  
   
--   浮動小数点値を編集すると、小数部分の 10 進とバイナリの変換により、多少の誤差が発生する場合があります。 特に影響のないように見える編集でも、浮動小数点値の最下位バイトが変化する場合があります。  
+- 浮動小数点値を編集すると、小数部分の 10 進とバイナリの変換により、多少の誤差が発生する場合があります。 特に影響のないように見える編集でも、浮動小数点値の最下位バイトが変化する場合があります。  
   
 ## <a name="debug-location-toolbar"></a>[デバッグの場所] ツール バー  
  **[デバッグの場所]** ツール バーを使用して、必要な関数、スレッド、またはプロセスを選択できます。 ブレークポイントを設定し、デバッグを開始します。 (このツール バーが表示されていない場合は、ツール バーの領域の空白の場所をクリックして有効にできます。 ツール バーの一覧が表示されたら、 **[デバッグの場所]** を選びます。) ブレークポイントがヒットすると、実行が停止し、[デバッグの場所] ツール バーが表示されます (次の図の一番下の行)。  

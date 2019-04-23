@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bb3daab1196e151a4fea57ae120b2ec280e2e23a
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 9e92cbdca3ac2c5c366ec054ba79f2e7324986c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58070218"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067613"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>方法: XML リテラルに XML スキーマ デザイナーを使用する
 
@@ -23,7 +23,7 @@ ms.locfileid: "58070218"
 
 ## <a name="create-a-new-visual-basic-project"></a>新しい Visual Basic プロジェクトを作成します。
 
-1.  Visual Studio を開きます。
+1. Visual Studio を開きます。
 
 2. 新しい Visual Basic 作成**コンソール アプリ**という名前のプロジェクト**XMLLiterals**します。
 
@@ -31,11 +31,11 @@ ms.locfileid: "58070218"
 
 ## <a name="add-an-existing-xsd-file"></a>既存の XSD ファイルを追加します。
 
-1.  メモ帳で新しいテキスト ファイルを開きます。 XML スキーマのサンプル コードをコピー[購買発注書のスキーマ](../xml-tools/sample-xsd-file-simple-schema.md)ファイルに貼り付けます。
+1. メモ帳で新しいテキスト ファイルを開きます。 XML スキーマのサンプル コードをコピー[購買発注書のスキーマ](../xml-tools/sample-xsd-file-simple-schema.md)ファイルに貼り付けます。
 
-2.  いくつかの場所に名前でファイルを保存*PurchaseOrderSchema.xsd*します。
+2. いくつかの場所に名前でファイルを保存*PurchaseOrderSchema.xsd*します。
 
-3.  **ソリューション エクスプ ローラー**、プロジェクトの名前を右クリックし、選択**追加**、し、**既存項目の**します。 **既存項目の追加** ダイアログ ボックスが表示されます。 参照、 *PurchaseOrderSchema.xsd*ファイル、それを選択してクリックして**追加**します。
+3. **ソリューション エクスプ ローラー**、プロジェクトの名前を右クリックし、選択**追加**、し、**既存項目の**します。 **既存項目の追加** ダイアログ ボックスが表示されます。 参照、 *PurchaseOrderSchema.xsd*ファイル、それを選択してクリックして**追加**します。
 
      XMLLiterals プロジェクトには、2 つのファイルが含まれています。*Module1.vb*と*PurchaseOrderSchema.xsd*します。
 

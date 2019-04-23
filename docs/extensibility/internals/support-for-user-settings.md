@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c358f80284083625dfe8c0eb3484c95000beb63
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7f7fbb6c8e6a6310b736ade599ad7854bc4255c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070741"
 ---
 # <a name="support-for-user-settings"></a>ユーザー設定のサポート
 VSPackage は、ユーザーが選択したときに永続化状態変数のグループが 1 つまたは複数の設定カテゴリを定義できます、**設定のインポート/エクスポート**コマンドを**ツール**メニュー。 この永続化を有効にするには、Api の設定を使用するには[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]します。
 
  カスタム設定ポイントと GUID として参照されるレジストリ エントリは、VSPackage のカテゴリの設定を定義します。 VSPackage が複数のカテゴリの設定をサポートできますが、カスタム設定ポイントによって定義されている各。
 
--   相互運用機能アセンブリに基づく設定の実装 (を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>インターフェイス)、レジストリを編集するか、レジストラー スクリプト (.rgs ファイル) を使用してカスタム設定ポイントを作成する必要があります。 詳細については、「 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)」を参照してください。
+- 相互運用機能アセンブリに基づく設定の実装 (を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>インターフェイス)、レジストリを編集するか、レジストラー スクリプト (.rgs ファイル) を使用してカスタム設定ポイントを作成する必要があります。 詳細については、「 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)」を参照してください。
 
--   管理パッケージ フレームワーク (MPF) を使用するコードは、アタッチすることでのカスタム設定ポイントを作成する必要があります、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>各カスタム設定ポイントの VSPackage にします。
+- 管理パッケージ フレームワーク (MPF) を使用するコードは、アタッチすることでのカスタム設定ポイントを作成する必要があります、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>各カスタム設定ポイントの VSPackage にします。
 
      単一 VSPackage は、いくつかのカスタム設定ポイントをサポートしている場合は、各カスタム設定ポイントが別のクラスによって実装されるの一意のインスタンスで登録されますが、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラス。 そのため、クラスの実装設定では、1 つ以上のカテゴリの設定をサポートできます。
 

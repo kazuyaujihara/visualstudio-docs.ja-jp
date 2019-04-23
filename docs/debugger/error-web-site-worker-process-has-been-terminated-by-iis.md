@@ -1,5 +1,5 @@
 ---
-title: 'エラー: Web サイトのワーカー プロセスが IIS によって停止されましたが |Microsoft Docs'
+title: エラー :Web サイトのワーカー プロセスが IIS によって停止されました |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d951486d41e3449410f6f815b3b355a281e0898
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2d89eabec0c199b1b8df7eeb78d0e629d4a70b2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072657"
 ---
-# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>エラー : Web サイトのワーカー プロセスが IIS によって停止されました
+# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>エラー :Web サイトのワーカー プロセスが IIS によって停止されました
 デバッガーが Web サイト上のコードの実行を停止しました。 このため、インターネット インフォメーション サービス (IIS: Internet Information Services) はワーカー プロセスが応答を停止したと見なしました。 したがって、IIS がワーカー プロセスを終了しました。
 
  デバッグを継続するには、ワーカー プロセスが継続できるように IIS を設定する必要があります。 このエラー メッセージは、IIS 7 より古いバージョンの IIS では表示されません。
@@ -30,9 +30,9 @@ ms.locfileid: "56698873"
 
 1. **[管理ツール]** ウィンドウを開きます。
 
-   1.  **[スタート]** ボタンをクリックし、**[コントロール パネル]** をクリックします。
+   1. をクリックして**開始**を選択し**コントロール パネルの**です。
 
-   2.  **コントロール パネル**で必要に応じて **[クラシック表示に切り替える]** を選択し、**[管理ツール]** をダブルクリックします。
+   2. **コントロール パネル**で必要に応じて **[クラシック表示に切り替える]** を選択し、**[管理ツール]** をダブルクリックします。
 
 2. **[管理ツール]** ウィンドウで、**[インターネット インフォメーション サービス (IIS) マネージャー]** をダブルクリックします。
 

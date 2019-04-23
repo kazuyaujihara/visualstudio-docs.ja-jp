@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル : データセット デザイナーでのデータセットの作成'
+title: 'チュートリアル: データセット デザイナーでデータセットを作成します。'
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,24 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d706ab0cf179a4a4efefa8f60143ea8ce9800ef9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f91c24885cc6817889671dd7a1a6e7e1686ce93f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927673"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070526"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>チュートリアル: データセット デザイナーでデータセットを作成します。
 
 使用してデータセットを作成するこのチュートリアルでは、**データセット デザイナー**します。 記事では、新しいプロジェクトを作成し、新しい追加のプロセス**データセット**項目にします。 ウィザードを使用せず、データベース内のテーブルに基づいて、テーブルを作成する方法について説明します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 
-1.  SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 一部として Visual Studio インストーラーでは、SQL Server Express LocalDB をインストールすることができます、**データ ストレージと処理**ワークロード、または個々 のコンポーネントとして。
+1. SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 一部として Visual Studio インストーラーでは、SQL Server Express LocalDB をインストールすることができます、**データ ストレージと処理**ワークロード、または個々 のコンポーネントとして。
 
-2.  次の手順に従って、Northwind サンプル データベースをインストールします。
+2. 次の手順に従って、Northwind サンプル データベースをインストールします。
 
     1. Visual Studio で開く、 **SQL Server オブジェクト エクスプ ローラー**ウィンドウ。 (SQL Server オブジェクト エクスプ ローラーがの一部としてインストールされている、**データ ストレージと処理**Visual Studio インストーラーにワークロード)。展開、 **SQL Server**ノード。 LocalDB インスタンスを右クリックし、選択**新しいクエリ**します。
 
@@ -46,7 +46,7 @@ ms.locfileid: "55927673"
 
 1. Visual Studio での**ファイル**メニューの **新規** > **プロジェクト**します。
 
-2. いずれかを展開**Visual C#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
+2. いずれかを展開**Visual c#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
 
 3. 中央のペインで選択、 **Windows フォーム アプリ**プロジェクトの種類。
 
@@ -56,23 +56,23 @@ ms.locfileid: "55927673"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>アプリケーションに新しいデータセットを追加します。
 
-1.  **[プロジェクト]** メニューで **[新しい項目の追加]** を選択します。
+1. **[プロジェクト]** メニューで **[新しい項目の追加]** を選択します。
 
      **[新しい項目の追加]** ダイアログ ボックスが表示されます。
 
-2.  左側のウィンドウで次のように選択します。**データ**を選択し、**データセット**中央のペインでします。
+2. 左側のウィンドウで次のように選択します。**データ**を選択し、**データセット**中央のペインでします。
 
-3.  データセットの名前を付けます**NorthwindDataset**を選び、**追加**します。
+3. データセットの名前を付けます**NorthwindDataset**を選び、**追加**します。
 
      Visual Studio がという名前のファイルを追加します**NorthwindDataset.xsd**プロジェクトで開くと、**データセット デザイナー**。
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>サーバー エクスプ ローラーでのデータ接続を作成します。
 
-1.  **[表示]** メニューの **[サーバー エクスプローラー]** をクリックします。
+1. **[表示]** メニューの **[サーバー エクスプローラー]** をクリックします。
 
-2.  **サーバー エクスプローラー**で、**[データベースへの接続]** をクリックします。
+2. **サーバー エクスプローラー**で、**[データベースへの接続]** をクリックします。
 
-3.  Northwind サンプル データベースへの接続を作成します。
+3. Northwind サンプル データベースへの接続を作成します。
 
 ## <a name="create-the-tables-in-the-dataset"></a>データセットにテーブルを作成します。
 
@@ -80,33 +80,33 @@ ms.locfileid: "55927673"
 
 ### <a name="to-create-the-customers-table"></a>Customers テーブルを作成するには
 
-1.  **サーバー エクスプローラー**で作成したデータ接続を展開し、**[テーブル]** ノードを展開します。
+1. **サーバー エクスプローラー**で作成したデータ接続を展開し、**[テーブル]** ノードを展開します。
 
-2.  **サーバー エクスプローラー**から**データセット デザイナー**に **Customers** テーブルをドラッグします。
+2. **サーバー エクスプローラー**から**データセット デザイナー**に **Customers** テーブルをドラッグします。
 
      **Customers** データ テーブルと **CustomersTableAdapter** がデータセットに追加されます。
 
 ### <a name="to-create-the-orders-table"></a>Orders テーブルを作成するには
 
--   **サーバー エクスプローラー**から**データセット デザイナー**に **Orders** テーブルをドラッグします。
+- **サーバー エクスプローラー**から**データセット デザイナー**に **Orders** テーブルをドラッグします。
 
      **Orders** データ テーブル、**OrdersTableAdapter**、および **Customers** テーブルと **Orders** テーブル間のリレーションシップが、データセットに追加されます。
 
 ### <a name="to-create-the-orderdetails-table"></a>OrderDetails テーブルを作成するには
 
--   **サーバー エクスプローラー**から**データセット デザイナー**に **Order Details** テーブルをドラッグします。
+- **サーバー エクスプローラー**から**データセット デザイナー**に **Order Details** テーブルをドラッグします。
 
      **Order Details**データ テーブル、 **OrderDetailsTableAdapter**との間のリレーションシップ、**注文**と**OrderDetails**テーブルデータセットに追加されます。
 
 ## <a name="next-steps"></a>次の手順
 
--   データセットを保存します。
+- データセットを保存します。
 
--   **[データ ソース]** ウィンドウの項目を選択し、フォームにドラッグします。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールを Windows フォームのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)します。
+- **[データ ソース]** ウィンドウの項目を選択し、フォームにドラッグします。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールを Windows フォームのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)します。
 
--   TableAdapter に他のクエリを追加します。
+- TableAdapter に他のクエリを追加します。
 
--   データセット内のデータ テーブルの <xref:System.Data.DataTable.ColumnChanging> イベントまたは <xref:System.Data.DataTable.RowChanging> イベントに検証ロジックを追加します。 詳細については、次を参照してください。[検証データセットのデータの](../data-tools/validate-data-in-datasets.md)します。
+- データセット内のデータ テーブルの <xref:System.Data.DataTable.ColumnChanging> イベントまたは <xref:System.Data.DataTable.RowChanging> イベントに検証ロジックを追加します。 詳細については、次を参照してください。[検証データセットのデータの](../data-tools/validate-data-in-datasets.md)します。
 
 ## <a name="see-also"></a>関連項目
 

@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2354f65e1b042682a0e58a0dbb4bc12712bb47e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963587"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066599"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>再署名を行わない ClickOnce アプリケーションの配置 (テスト サーバーおよび運用サーバー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "58963587"
   
  サード パーティ製の開発者や Isv オプトインできる、この機能にアプリケーションを更新する顧客に容易にします。 この機能は、次の状況で使用できます。  
   
--   ときに、アプリケーション、アプリケーションの最初のインストールではなくを更新しています。  
+- ときに、アプリケーション、アプリケーションの最初のインストールではなくを更新しています。  
   
--   コンピューター上のアプリケーションの 1 つだけの構成がある場合。 たとえば、2 つの異なるデータベースをポイントするアプリケーションを構成すると、この機能を使用することはできません。  
+- コンピューター上のアプリケーションの 1 つだけの構成がある場合。 たとえば、2 つの異なるデータベースをポイントするアプリケーションを構成すると、この機能を使用することはできません。  
   
 ## <a name="excluding-deploymentprovider-from-deployment-manifests"></a>配置マニフェストからの deploymentProvider の除外  
  .NET Framework 2.0 と .NET Framework 3.0 でオフライン利用のシステムにインストールされる ClickOnce アプリケーションを指定する必要があります、`deploymentProvider`配置マニフェストにします。 `deploymentProvider`更新プログラムの場所とも呼ば ClickOnce がアプリケーションの更新をチェックする場所です。 配置に署名するアプリケーションの発行者の必要性と組み合わせると、この要件を使用企業がベンダーやその他のサード パーティからの ClickOnce アプリケーションを更新する困難になることができます。 同じネットワーク上の複数の場所から同じアプリケーション デプロイにくくします。  
