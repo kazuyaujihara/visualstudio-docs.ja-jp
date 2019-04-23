@@ -18,18 +18,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d46953b56accd4926d5515440642e1591ef85a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: eed2cc63941f63b3f1d21cac86f907808a072665
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625557"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666352"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows インストーラーを使用して Office ソリューションを配置します。
 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]を使用して Office ソリューション用の Windows インストーラーを作成する方法について説明します。
 
 Visual Studio を使用して Windows インストーラーを作成すると、エンド ユーザーのコンピューターに対する管理アクセスを必要とする Office ソリューションを配置できます。 たとえば、1 台のコンピューターのすべてのユーザーを対象にして、1 度のみの実行でソリューションをインストールするファイルを使用することができます。 これ以外に、ClickOnce を使用して Office ソリューションを配置することもできますが、そのソリューションは、コンピューター上のユーザーごとに個別にインストールする必要があります。
-
 
 ## <a name="in-this-topic"></a>このトピックの内容
 
@@ -55,15 +54,12 @@ Visual Studio を使用して Windows インストーラーを作成すると、
 
 - [Build the setup project](#Build)
 
-ClickOnce を使用して Office ソリューションをデプロイする方法の詳細については、[ClickOnce を使用して Office ソリューションを配置](../vsto/deploying-an-office-solution-by-using-clickonce.md)を参照してください。
+ClickOnce を使用して Office ソリューションをデプロイする方法の詳細については、次を参照してください。 [ClickOnce を使用して Office ソリューションを配置](../vsto/deploying-an-office-solution-by-using-clickonce.md)します。
 
 使用して、Windows インストーラー ファイルを作成する方法については[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]を参照してください[Visual Studio 2010 Tools for Windows インストーラーを使用して Office ソリューションのデプロイ](http://go.microsoft.com/fwlink/?LinkId=201807)します。
 
-
 ## <a name="Download"></a>サンプルのダウンロード
 このトピックでは、次のダウンロード可能なサンプルを参照します。
-
-
 
 |サンプル<br /><br />|説明<br /><br />|
 |----------|---------------|
@@ -73,18 +69,15 @@ ClickOnce を使用して Office ソリューションをデプロイする方�
 ## <a name="ApplySecurity"></a>ソリューションに信頼を付与する方法の決定
 ユーザーのコンピューターでソリューションを実行する前に、次の方法のいずれかで信頼を付与する必要があります。そうしない場合は、ユーザーはソリューションをインストールするときに、信頼プロンプトに応答する必要が生じます。
 
-
-- 既知の信頼される発行者を特定する証明書を使用してマニフェストに署名します。 詳細については、[、アプリケーション マニフェストと配置マニフェストに署名することで、ソリューションを信頼](../vsto/granting-trust-to-office-solutions.md#Signing)を参照してください。
+- 既知の信頼される発行者を特定する証明書を使用してマニフェストに署名します。 詳細については、次を参照してください。 [、アプリケーション マニフェストと配置マニフェストに署名することで、ソリューションを信頼](../vsto/granting-trust-to-office-solutions.md#Signing)します。
 
 - ユーザーのコンピューターの Program Files ディレクトリにソリューションをインストールします。
 
 > [!NOTE]
-> ドキュメント レベルのカスタマイズでは、ドキュメントの位置も信頼する必要があります。 詳細については、[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)を参照してください。
-
+> ドキュメント レベルのカスタマイズでは、ドキュメントの位置も信頼する必要があります。 詳細については、次を参照してください。[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)します。
 
 ## <a name="Obtain"></a>InstallShield Limited Edition の入手
 InstallShield Limited Edition (ISLE) を使用して、Windows インストーラー ファイルを作成することもできます。Visual Studio をインストールする場合は、ISLE を無料で使用できます。 ISLE は、以前のバージョンの Visual Studio で提供されていた、セットアップと配置を対象とするプロジェクト テンプレートの機能を置き換えます。
-
 
 ### <a name="to-get-installshield-limited-edition"></a>InstallShield Limited Edition の入手方法
 
@@ -104,7 +97,6 @@ InstallShield Limited Edition (ISLE) を使用して、Windows インストー�
 
    この製品をダウンロードし、インストールしてアクティブにすると、 **[InstallShield Limited Edition Project]** のプロジェクト テンプレートが Visual Studio 内に表示されます。
 
-
 ## <a name="Create"></a>セットアップ プロジェクトの作成
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で、配置しようとする Office プロジェクトを開きます。
@@ -123,10 +115,8 @@ InstallShield Limited Edition (ISLE) を使用して、Windows インストー�
 
    このトピックで使用するサンプルには **OfficeAddInSetup**という名前のセットアップ プロジェクトが含まれています。 ここでは、同じ名前を使用して、ソリューション内でセットアップ プロジェクトを参照します。
 
-
 ## <a name="Add"></a>プロジェクト出力の追加
 Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** プロジェクトを構成します。 VSTO アドイン プロジェクトの場合は、プロジェクト出力は、ソリューション アセンブリのみです。 ドキュメント レベルのカスタマイズ プロジェクトの場合は、プロジェクト出力には、ソリューション アセンブリに加えて、ドキュメント自体も含まれています。
-
 
 ### <a name="to-add-the-project-output"></a>プロジェクト出力を追加するには
 
@@ -144,7 +134,6 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 5. **[Visual Studio Output Selector]** ダイアログ ボックスで、 **[Primary Output]** チェック ボックスをオンにし、 **[OK]** をクリックします。
 
-
 ## <a name="AddD"></a>配置マニフェストとアプリケーション マニフェストの追加
 
 ###
@@ -160,15 +149,12 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
    ![セットアップ プロジェクトの出力ファイル。](../vsto/media/installshield-outputfiles.png "セットアップ プロジェクトの出力ファイル。")
 
-
 ## <a name="Configure"></a>依存コンポーネントを前提条件として構成
 セットアップ アプリケーション内で、次のコンポーネントに加えて、ソリューションを実行するために必要な他のすべてのコンポーネントがも含める必要があります。
-
 
 - Office ソリューションが対象とする .NET Framework のバージョン。
 
 - Microsoft Visual Studio 2010 Tools for Office Runtime
-
 
 ### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>前提条件として .NET Framework 4 または .NET Framework 4.5 を追加します。
 
@@ -186,15 +172,12 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 4. このダイアログ ボックスが表示された場合は、 **[No]** をクリックします。
 
-
 ### <a name="AddToolsForOffice"></a>Visual Studio 2010 Tools for Office Runtime の追加
 **[Redistributables]** ページには **[Microsoft VSTO 2010 Runtime]** という名前の項目が含まれていますが、これはランタイムの古いバージョンを参照しています。 したがって、最新バージョンを参照する構成ファイルを手動で作成することができます。 そのファイルを、 **[Redistributables]** ページに表示される他の項目すべてに対応する構成ファイルと同じディレクトリに配置する必要があります。
-
 
 #### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>前提条件として、Visual Studio 2010 Tools for Office ランタイムを追加するには
 
 1. メモ帳を開き、次の XML をテキスト ファイルに貼り付けます。
-
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -221,7 +204,6 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 4. メモ帳で、テキスト **Your GUID goes here** の位置に GUID を貼り付け、そのテキストを置換します。
 
    次の図のように、 **&lt;properties&gt;** 要素は、次の例のようになります。
-
 
    ```xml
    <properties Id="{87989B73-21DC-4403-8FD1-0C68A41A6D8C}" Description="This prerequisite installs the most recent version of the Microsoft Visual Studio 2010 Tools for Office Runtime." >
@@ -257,7 +239,6 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 13. このダイアログ ボックスが表示された場合は、 **[No]** をクリックします。
 
-
 ## <a name="Location"></a>ユーザーのコンピューター上でのソリューションのインストール場所の指定
 
 1. **ソリューション エクスプローラー**で、 **[OfficeAddInSetup]** ノードを展開し、 **[Organize your Setup]** ノードを展開してから **[General Information]** ファイルをクリックします。
@@ -271,7 +252,6 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
    > [!NOTE]
    >    **Set INSTALLDIR** ダイアログ ボックスで、一覧の中にある任意のフォルダーに対応するショートカット メニューを開いて、サブディレクトリを作成することもできます。
 
-
 ## <a name="ConfigureRegistry"></a>VSTO アドインの構成します。
 コンピューターを使用するすべてのユーザーに対して (コンピューター単位)、またはインストールを実行するユーザーに対してのみ (ユーザー単位)、VSTO アドインをインストールするかどうかを指定できます。
 
@@ -281,7 +261,6 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 > [!NOTE]
 > このセクションでは、VSTO アドインを配置する場合にのみ適用されます。 直ちに移動できますドキュメント レベルのカスタマイズを配置する場合、[ドキュメント レベルのカスタマイズを構成する](#ConfigureDocument)セクション。
-
 
 ### <a name="to-specify-whether-you-want-to-support-per-user-or-per-computer-installations"></a>ユーザー単位またはコンピューター単位のインストールをサポートするかどうかを指定するには
 
@@ -296,7 +275,6 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
    現在のユーザー用の VSTO アドインをインストールするには、選択**ALLUSERS =""(per-user installation)** します。 コンピューターのすべてのユーザーに対して VSTO アドインをインストールするには、 **[ALLUSERS=1 (Per-machine installation)]** を選びます。
 
    次の手順では、Office アプリケーションを検出し、読み込む VSTO アドインを有効にするレジストリ キーを作成します。 参照してください[VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)します。
-
 
 ### <a name="to-create-registry-keys"></a>レジストリ キーを作成するには
 
@@ -322,16 +300,12 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
    **Office のバージョンに基づくコンピューター単位のインストーラー**
 
-
-
 | Office のバージョン<br /><br /> | InstallShield の構成パス<br /><br /> |
 |----------------------------| - |
 | 32 ビット<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 | 64 ビット<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Windows のバージョンに基づくコンピューター単位のインストーラー**
-
-
 
 | Windows のバージョン<br /><br /> | InstallShield の構成パス<br /><br /> |
 |-----------------------------| - |
@@ -351,8 +325,6 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 6. 値の名前を「 **Description**」に変更します。
 
 7. この手順を繰り返して、次の値を追加します。
-
-
 
 |値型<br /><br />|名前<br /><br />|
 |--------------|--------|
@@ -382,7 +354,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 13. **[Value data]** テキスト ボックスに「 **3**」と入力し、 **[OK]** ボタンを選びます。
 
-   アプリケーションの起動時に、3 という値を使用して VSTO アドインが読み込まれます。 LoadBehavior 値の詳細については、[VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)を参照してください。
+   アプリケーションの起動時に、3 という値を使用して VSTO アドインが読み込まれます。 LoadBehavior 値の詳細については、次を参照してください。 [VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)します。
 
 14. **[Manifest]** 値のショートカット メニューを開き、 **[Modify]** をクリックします。
 
@@ -393,8 +365,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
    Visual Studio 2010 Tools for Office Runtime は、配置マニフェストを見つけるために、このパスを使用します。 このパスの **[INSTALLDIR]** の部分は、InstallShield セットアップ プロジェクトの **[一般情報]** プロパティ ページ内の **INSTALLDIR** プロパティへのマップを行うマクロです。 このプロパティは、VSTO アドインのインストール先になる、ターゲット コンピューター上の位置を指定します。 **|vstolocal** サフィックスにより、ClickOnce キャッシュではなく、インストール フォルダーからソリューションが読み込まれます。
 
 > [!IMPORTANT]
-> Outlook 用 VSTO アドインでカスタム フォーム領域を作成する場合は、領域を Outlook に登録するレジストリ エントリを作成する必要があります。 詳細については、[フォーム領域の Outlook 用のレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries)を参照してください。
-
+> Outlook 用 VSTO アドインでカスタム フォーム領域を作成する場合は、領域を Outlook に登録するレジストリ エントリを作成する必要があります。 詳細については、次を参照してください。[フォーム領域の Outlook 用のレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries)します。
 
 ## <a name="ConfigureDocument"></a>Configure a document-level customization
 このセクションでは、ドキュメント レベルのカスタマイズを配置する場合にのみ適用されます。 直ちに移動できますが、VSTO アドインを配置する場合、[セットアップ プロジェクトのビルド](#Build)セクション。
@@ -419,7 +390,6 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 6. **[参照マネージャー]** ダイアログ ボックスで、 **[拡張機能]** タブをクリックしてから、次のアセンブリの隣にあるチェック ボックスをオンにし、 **[OK]** をクリックします。
 
-
    - Microsoft.VisualStudio.Tools.Applications.Runtime
 
    - Microsoft.VisualStudio.Tools.Applications.ServerDocument
@@ -434,7 +404,6 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 [!code-csharp[Trin_CustomAction#1](../vsto/codesnippet/CSharp/setexceldocumentproperties/program.cs#1)]
 
 10. プロジェクトをコンパイルします。
-
 
 ### <a name="to-add-a-custom-action-that-runs-your-program"></a>プログラムを実行するカスタム アクションを追加するには
 
@@ -492,7 +461,6 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 15. **[NewCustomAction1]** プロパティ ページで、 **[コマンド ライン]** プロパティを次のテキスト行に設定します。
 
-
    ```cmd
    /assemblyLocation="[INSTALLDIR]ExcelWorkbook.dll" /deploymentManifestLocation="[INSTALLDIR]ExcelWorkbook.vsto" /documentLocation="[INSTALLDIR]ExcelWorkbook.xlsx" /solutionID="Your Solution ID"
    ```
@@ -500,8 +468,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 16. **Your Solution ID** を、クリップボードにコピーしたソリューション ID で置き換えます。
 
    > [!IMPORTANT]
-   >    インストーラーをテストし、このカスタム アクションで実行するコンソール アプリケーションが INSTALLDIR ディレクトリ内のドキュメントにアクセスできることを確認します。 一部のディレクトリ ユーザーのコンピューターには、(たとえば、Program Files ディレクトリ) の管理アクセスを必要があります。 管理アクセス権を必要とするディレクトリにソリューションをデプロイする場合を開く必要があります、**プロパティ**のダイアログ ボックス、 *setup.exe*ファイルで、選択、 **の互換性** 、タブを選び、**このプログラムを管理者として実行**インストーラーを配布する前に、チェック ボックス。 ユーザーが管理者権限でセットアップ プログラムを実行しない場合は、ディレクトリをユーザーがアクセスする [INSTALLDIR] プロパティを設定、既になど、**ドキュメント**ディレクトリ。 詳細については、、[を指定するユーザーのコンピューターにソリューションをインストール](#Location)このトピックの「を参照してください。
-
+   >    インストーラーをテストし、このカスタム アクションで実行するコンソール アプリケーションが INSTALLDIR ディレクトリ内のドキュメントにアクセスできることを確認します。 一部のディレクトリ ユーザーのコンピューターには、(たとえば、Program Files ディレクトリ) の管理アクセスを必要があります。 管理アクセス権を必要とするディレクトリにソリューションをデプロイする場合を開く必要があります、**プロパティ**のダイアログ ボックス、 *setup.exe*ファイルで、選択、 **の互換性** 、タブを選び、**このプログラムを管理者として実行**インストーラーを配布する前に、チェック ボックス。 ユーザーが管理者権限でセットアップ プログラムを実行しない場合は、ディレクトリをユーザーがアクセスする [INSTALLDIR] プロパティを設定、既になど、**ドキュメント**ディレクトリ。 詳細については、次を参照してください。、[を指定するユーザーのコンピューターにソリューションをインストール](#Location)このトピックの「します。
 
 ## <a name="Build"></a>Build the setup project
 

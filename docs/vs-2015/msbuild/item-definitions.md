@@ -11,17 +11,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796674"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668495"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 では、[ItemGroup](../msbuild/itemgroup-element-msbuild.md) 要素を使用することにより、プロジェクト ファイルに項目を静的に宣言できます。 ただし、メタデータは、すべての項目に共通であっても項目単位でしか追加できません。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 以降には、この制限を克服する [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) という名前のプロジェクト要素が導入されました。 *ItemDefinitionGroup* を使用して一連の項目定義を定義すると、名前付きの項目の種類に含まれるすべての項目に既定のメタデータ値を追加できます。  
   
  *ItemDefinitionGroup* 要素は、プロジェクト ファイルの [Project](../msbuild/project-element-msbuild.md) 要素の直後にあります。 項目定義によって、次の機能が使用可能になります。  

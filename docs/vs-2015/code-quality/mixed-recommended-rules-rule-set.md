@@ -9,18 +9,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4bc9b014eede5ac19935f29ed8317e1507ae8a42
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f762920f61b649023f98810f7de8cdb7e3cf908a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002778"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662407"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>"混合推奨規則" 規則セット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Microsoft 混合推奨規則は、潜在的なセキュリティ ホール、アプリケーションのクラッシュ、その他の重要なロジックとデザイン エラーなど、共通言語ランタイムをサポートする C++ プロジェクトの最も一般的で重大な問題に集中します。 共通言語ランタイムをサポートする C++ プロジェクトにカスタムの規則セットを作成する場合は、必ずこの規則セットを含める必要があります。 この規則セットは、Visual Studio Professional Edition 以上で構成するように設計されています。  
-
 
 |                                                              ルール                                                              |                                                             説明                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

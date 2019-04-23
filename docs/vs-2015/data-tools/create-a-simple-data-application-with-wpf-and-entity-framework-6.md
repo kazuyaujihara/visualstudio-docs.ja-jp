@@ -9,17 +9,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 62e1a6c317752dc5513a51d3e8018d15c9598b93
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002698"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664801"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF と Entity Framework 6 を使用して単純なデータ アプリケーションを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このチュートリアルでは、SQL Server LocalDB、Northwind データベース、Entity Framework 6、および Windows Presentation Foundation と Visual Studio で基本的な「フォーム オーバー データ」のアプリケーションを作成する方法を示します。 マスター/詳細ビューでは、基本的なデータ バインドを行う方法を示していて、カスタム「バインド ナビゲーター」を「次に移動」ボタンを含む"Move Previous、"「を先頭へ移動」""への移動、終了があります「更新」および「削除します」。  
   
  この記事では、Visual Studio での data tools の使用について説明し、任意の深さの基になるテクノロジの説明を試行しません。 これにより、XAML、Entity Framework、および SQL の基礎知識があることを前提としています。 また、この例には MVVM アーキテクチャは、WPF アプリケーションの標準は示しません。 ただし、非常にいくつかの変更を MVVM アプリケーションに、このコードをコピーできます。  
@@ -35,7 +34,7 @@ ms.locfileid: "59002698"
   
 ## <a name="configure-the-project"></a>プロジェクトを構成する  
   
-1.  Visual Studio で、次のように選択します。**ファイル&#124;新しいプロジェクト**し、新しい C# WPF アプリケーションを作成します。  
+1.  Visual Studio で、次のように選択します。**ファイル&#124;新しいプロジェクト**し、新しい c# WPF アプリケーションを作成します。  
   
 2.  次に Entity Framework 6 の NuGet パッケージを追加します。 ソリューション エクスプ ローラーでプロジェクト ノードを選択します。 メイン メニューで、次のように選択します**プロジェクト&#124;NuGet パッケージの管理.。**  
   
@@ -63,7 +62,7 @@ ms.locfileid: "59002698"
   
     ![モデルのデータベース オブジェクトの選択](../data-tools/media/raddata-choose-ef-objects.png "raddata EF オブジェクトの選択")  
   
-5. ウィザードでは、Entity Framework モデルを表す C# クラスが生成されます。 これらは、プレーンな古い C# クラスとは知りませんが、WPF ユーザー インターフェイスにデータをバインドします。 .Edmx ファイルには、リレーションシップおよびその他のクラスをデータベース内のオブジェクトに関連付けられるメタデータについて説明します。  .Tt ファイルは、モデルに対して機能し、変更、データベースに保存するコードを生成する T4 テンプレートです。 これらすべてのファイルでは、ソリューション エクスプ ローラー Northwind_model ノードの下を確認できます。  
+5. ウィザードでは、Entity Framework モデルを表す c# クラスが生成されます。 これらは、プレーンな古い c# クラスとは知りませんが、WPF ユーザー インターフェイスにデータをバインドします。 .Edmx ファイルには、リレーションシップおよびその他のクラスをデータベース内のオブジェクトに関連付けられるメタデータについて説明します。  .Tt ファイルは、モデルに対して機能し、変更、データベースに保存するコードを生成する T4 テンプレートです。 これらすべてのファイルでは、ソリューション エクスプ ローラー Northwind_model ノードの下を確認できます。  
   
     ![ソリューション エクスプ ローラーの EF モデル ファイル](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata ソリューション エクスプ ローラーの EF モデル ファイル")  
   

@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976596"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668900"
 ---
 # <a name="content-model-view"></a>コンテンツ モデル ビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 コンテンツ モデル ビューには、単純型、複合型、要素、モデル グループ、属性、属性グループなど、ローカル スキーマ ノードとグローバル スキーマ ノード、およびそのコンポーネントがグラフィック表示されます。 XML のコメントおよび処理命令は、コンテンツ モデル ビューには表示できません。 コンテンツ モデル ビューには、2 つのパネルが含まれています。**ワークスペース**パネル内のノードのリストを含む、 [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)、およびスキーマのコンテンツ モデルを表示するデザイン サーフェイス選択したノード、**ワークスペース**パネル。 さらにコンテンツ モデル ビューには、XML スキーマ デザイナーのツール バーおよび階層リンク バーがあります。  
   
  次の画像は、6 つのスキーマ ノードが表示された [ワークスペース] パネルを示しています。 `purchaseOrder` ノードが [ワークスペース] パネルで選択され、デザイン サーフェイスに表示されています。  

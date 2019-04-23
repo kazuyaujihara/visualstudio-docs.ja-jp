@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 32aff234b5b45df4154d47f94c975828f31b71fe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977998"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668341"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則によって変更内容がモデル内に反映される
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,7 +133,6 @@ namespace ExampleNamespace
 
 - ルール クラスを次の基本クラスのいずれかから派生します。  
 
-
   |                             基底クラス                              |                                                                                                                                                                                                                                                                                                                                                                              トリガー                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        要素、リンク、または図形が追加されます。<br /><br /> これを使用して、新しい要素だけでなく、新しいリレーションシップを検出します。                                                                                                                                                                                                                                                                                                                        |
@@ -146,7 +145,6 @@ namespace ExampleNamespace
   |   <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>   |                                                                                                                                                                                                                                                                                                                                                              トランザクションの作成時に実行します。                                                                                                                                                                                                                                                                                                                                                              |
   |  <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>   |                                                                                                                                                                                                                                                                                                                                                      トランザクションがコミットされるときに実行します。                                                                                                                                                                                                                                                                                                                                                      |
   |  <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>  |                                                                                                                                                                                                                                                                                                                                                     トランザクションがロールバックするときに実行されます。                                                                                                                                                                                                                                                                                                                                                     |
-
 
 - 各クラスには、オーバーライドするメソッドがあります。 型`override`で検出するクラス。 このメソッドのパラメーターは、変更する要素を識別します。  
 

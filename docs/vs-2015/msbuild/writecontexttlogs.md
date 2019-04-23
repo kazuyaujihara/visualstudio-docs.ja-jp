@@ -17,17 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: deee2af2ccf1f2561410bc66b7f2f096bab61dd5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7bba9c5b46aa01cddca4de5c8e1347b540999289
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764938"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668095"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 現在のコンテキストのログ ファイルを書き込みます。  
   
 ## <a name="syntax"></a>構文  
@@ -44,9 +43,9 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  ログ ファイル名のルート名。  
   
 ## <a name="return-value"></a>戻り値  
- 追跡コンテキストが作成された場合、[HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) に [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) ビットが設定されます。  
+ [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) [SUCCEEDED] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 追跡コンテキストが作成された場合はビットが設定されます。  
   
-## <a name="requirements"></a>要件  
+## <a name="requirements"></a>必要条件  
  **ヘッダー:** FileTracker.h  
   
 ## <a name="see-also"></a>関連項目  

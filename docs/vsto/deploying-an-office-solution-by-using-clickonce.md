@@ -13,35 +13,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: 7eb266eda25198f6d270ebcf48086141a73dcb9c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504433"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665455"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>ClickOnce を使用して Office ソリューションを配置します。
   ClickOnce を使用する場合は、少しの手順で Office ソリューションを配置できます。 更新プログラムを発行する場合は、ソリューションはそれらを自動的に検出してインストールします。 ただし、ClickOnce を使用する場合は、コンピューターのユーザーごとに、ソリューションを個別にインストールする必要があります。 Windows インストーラーを使用してそのため、検討 (*.msi*) 場合は、複数のユーザーは同じコンピューターにソリューションを実行します。
 
 ## <a name="in-this-topic"></a>このトピックの内容
 
-- [ソリューションの発行](#Publish)
+- [ソリューションを発行します。](#Publish)
 
-- [ソリューションに信頼を付与する方法の決定](#Trust)
+- [ソリューションに信頼を付与する方法を決定します。](#Trust)
 
-- [ユーザーによるソリューションのインストールの支援](#Helping)
+- [ユーザー ソリューションのインストールの支援します。](#Helping)
 
-- [ソリューションのドキュメントをエンド ユーザーのコンピューターに配置 (ドキュメント レベルのカスタマイズのみ) ](#Put)
+- [ソリューションのドキュメントをエンドユーザーのコンピューター (ドキュメント レベルのカスタマイズのみ) に配置します。](#Put)
 
-- [ソリューションのドキュメントを、SharePoint を実行しているサーバーに配置 (ドキュメント レベルのカスタマイズのみ)](#SharePoint)
+- [ソリューションのドキュメント (ドキュメント レベルのカスタマイズのみ) SharePoint を実行しているサーバーに配置します。](#SharePoint)
 
-- [カスタム インストーラーの作成](#Custom)
+- [カスタム インストーラーを作成します。](#Custom)
 
-- [更新の発行](#Update)
+- [更新プログラムを発行します。](#Update)
 
-- [ソリューションのインストール場所の変更](#Location)
+- [ソリューションのインストール場所を変更します。](#Location)
 
-- [ソリューションを以前のバージョンにロールバック](#Roll)
+- [ソリューションを以前のバージョンにロールバックします。](#Roll)
 
   Windows インストーラー ファイルを作成して Office ソリューションをデプロイする方法の詳細については、次を参照してください。 [Windows インストーラーを使用して Office ソリューションを配置](../vsto/deploying-an-office-solution-by-using-windows-installer.md)します。
 
@@ -91,8 +91,8 @@ ms.locfileid: "59504433"
 
     |オプション|説明|
     |------------|-----------------|
-    |**[必須コンポーネントをコンポーネントの開発元の Web サイトからダウンロードする]**|ユーザーは、販売元からこれらの必須コンポーネントをダウンロードしてインストールするように求められます。|
-    |**[アプリケーションと同じ場所から必須コンポーネントをダウンロードする]**|必要なソフトウェアは、ソリューションと共にインストールされます。 このオプションを選択すると、Visual Studio はすべての必須パッケージを発行場所に自動的にコピーします。 このオプションを使用するには、必須パッケージが開発用コンピューターに存在する必要があります。|
+    |**必須コンポーネントをコンポーネントの開発元の Web サイトからダウンロードする**|ユーザーは、販売元からこれらの必須コンポーネントをダウンロードしてインストールするように求められます。|
+    |**アプリケーションと同じ場所から必須コンポーネントをダウンロードする**|必要なソフトウェアは、ソリューションと共にインストールされます。 このオプションを選択すると、Visual Studio はすべての必須パッケージを発行場所に自動的にコピーします。 このオプションを使用するには、必須パッケージが開発用コンピューターに存在する必要があります。|
     |**次の場所から必須コンポーネントをダウンロード**|Visual Studio は、指定した場所にすべての必須パッケージをコピーし、ソリューションと共にそれらをインストールします。|
 
      参照してください[の前提条件 ダイアログ ボックス](../ide/reference/prerequisites-dialog-box.md)します。
@@ -346,7 +346,6 @@ ms.locfileid: "59504433"
 
  次のパラメーターを使用する*VSTOinstaller.exe*します。
 
-
 | パラメーター | 定義 |
 |------------------| - |
 | /Install または /I | ソリューションをインストールします。 このオプションの後に配置マニフェストのパスを指定する必要があります。 ローカル コンピューター上のパス、汎用名前付けの規則 (UNC) のファイル共有を指定できます。 ローカル パスを指定することができます (*C:\FolderName\PublishFolder*)、相対パス (*発行\\*)、または完全修飾の場所 (*\\\ServerName\FolderName*または http://<em>Servername/foldername</em>)。 |
@@ -459,7 +458,7 @@ ms.locfileid: "59504433"
 
 ## <a name="see-also"></a>関連項目
 
-- [Office ソリューションをデプロイします。](../vsto/deploying-an-office-solution.md)
+- [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)
 - [Office ソリューションを発行します。](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [方法: ClickOnce を使用して、Office ソリューションを発行します。](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
 - [方法: ClickOnce Office ソリューションをインストールします。](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)

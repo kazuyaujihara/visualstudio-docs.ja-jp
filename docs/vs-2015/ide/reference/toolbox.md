@@ -16,17 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f296cda3fb7b57ed323dd8b1a6bbff949b9a6d1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0a7c2320f7943798a336e52ba2043f430cdb9231
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799799"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661348"
 ---
 # <a name="toolbox"></a>ツールボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **[ツールボックス]** には、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] プロジェクトに追加できるコントロールおよびその他の項目がアイコンで表示されます。 **ツールボックス**を開くには、**[表示]** メニューの **[ツールボックス]** をクリックします。 **ツールボックス**はドッキングでき、開いたままにすることも、**[自動的に隠す]** に設定することもできます。  
   
  **[ツールボックス]** アイコンをデザイン ビューにドラッグしたり、コード エディターに貼り付けたりできます。 どちらの操作を実行しても、**[ツールボックス]** 項目のインスタンスを作成するための基本コードが、アクティブ プロジェクトのファイルに追加されます。  

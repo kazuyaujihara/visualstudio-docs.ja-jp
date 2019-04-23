@@ -6,17 +6,16 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781697"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662076"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin を使用したモバイル開発について学習します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このトピックでは、Xamarin を使用したクロス プラットフォーム モバイル アプリ開発を理解するのに役立つ概要の資料を提供します。 Visual Studio および Xamarinをまだインストールしていない場合は、まず [Setup and install](../cross-platform/setup-and-install.md) プロセスを開始して、ここに戻り、インストーラーの実行中にこれらのリソースを処理します。  
   
 > [!NOTE]
@@ -24,14 +23,14 @@ ms.locfileid: "54781697"
 >   
 >  また、"要点" のマークの付いたトピックを参照したり、後で "詳細" トピックに戻ったりするのも自由です。  
   
-## <a name="essentials-introduction-to-xamarin"></a>要点: Xamarin の概要  
+## <a name="essentials-introduction-to-xamarin"></a>Essentials の場合:Xamarin の概要  
  *10 分から 20 分*  
   
 1.  [Xamarin を使用した Visual Studio におけるモバイル アプリ](https://www.visualstudio.com/explore/xamarin-vs) (visualstudio.com) は、Xamarin の主要な特性についての簡単な概要を提供します。  
   
 2.  Xamarin を宣伝している James Montemagno 氏の[C# と Visual Studio を使用したクロスプラットフォーム モバイル アプリのビルド](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel 9、15 分 16 秒)。 最初の 3 分間は、Xamarin の概要、続けてコードのデモンストレーションです。  
   
-## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>要点: Visual Studio と Xamarin 環境の概要  
+## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Essentials の場合:Visual Studio と Xamarin 環境の概要  
  *5 分から 15 分*  
   
 - ほとんどの作業は、Visual Studio および Xamarin がインストールされている Windows コンピューターで行います。 このコンピューターで Windows および Android アプリを直接ビルドし、デバイスまたはエミュレーターでそれらを実行およびデバッグします。 また、Mac を使用して iOS アプリをリモートでビルド、実行、およびデバッグします。 Windows コンピューターの Visual Studio は、iOS Storyboard Designer や iOS シミュレーターにも接続できます。  
@@ -42,7 +41,7 @@ ms.locfileid: "54781697"
   
   ![Xamarin 環境における Windows 開発機 と Mac 開発機の関係 ](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
-## <a name="essentials-how-projects-are-structured"></a>基本情報プロジェクトの構造  
+## <a name="essentials-how-projects-are-structured"></a>Essentials の場合:プロジェクトの構造  
  *10 分から 30 分*  
   
 1.  [コード共有のオプション](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com)。 すべてのターゲット プラットフォームでサポートされる .NET API のみの使用を最も良くサポートしているため、ポータブル クラス ライブラリのオプションを使用することをお勧めします。 ほとんどのビジネス ロジックのコードは、データベース、REST Api の呼び出しおよびポータブル Xamarin コンポーネントへの呼び出しへのアクセスを含めて、PCL に置かれます (を参照してください[かかわりについて詳しく説明します。Xamarin コンポーネント](#components)このトピックの最後に)。 Xamarin.Forms で記述された共通の UI コードは、PCL にも置くことができます。  
@@ -52,7 +51,7 @@ ms.locfileid: "54781697"
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>要点: ネイティブと Xamarin.Forms UI レイヤー  
  *10 分から 40 分*  
   
- Xamarin では、優れたネイティブ アプリをビルドする 2 つの方法を提供します。Xamarin Native と Xamarin.Forms です。  
+ Xamarin には、優れたネイティブ アプリを構築する 2 つの方法が用意されています。Xamarin Native と Xamarin.Forms です。  
   
  Xamarin Native を使用して、iOS、Android、Windows の各ターゲット プラットフォームに個別の UI コードを記述します。  この方法では、プラットフォーム固有の API に直接アクセスでき、プラットフォームごとにカスタマイズされた UI エクスペリエンスが可能になります。  また、それぞれの UI の構築を支援するため、各プラットフォーム用のネイティブのデザイナーとコントロールのすべての機能を利用できます。  
   
@@ -72,7 +71,7 @@ ms.locfileid: "54781697"
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) は、簡単な概要、および Xamarin.Forms とネイティブ UI レイヤー (つまり、Xamarin.iOS と Xamarin.Android) を比較した長所と短所を提供します。  
   
-2.  James Montemagno 氏のビデオの最初の 3 分[Xamarin.Forms:ネイティブ iOS、Android、Windows のアプリを C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9、13m3s) は、別の概要とデモを見るを続行することができます。  
+2.  James Montemagno 氏のビデオの最初の 3 分[Xamarin.Forms:ネイティブ iOS、Android、Windows のアプリを c# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9、13m3s) は、別の概要とデモを見るを続行することができます。  
   
 3.  (省略可能) [Xamarin.Forms の概要](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
   
@@ -93,7 +92,7 @@ ms.locfileid: "54781697"
   
 2.  **Apple の iOS シミュレーター。** 詳しくは、「[Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1)」(iOS シミュレーター入門) (apple.com) をお読みください。  
   
-3.  **Microsoft の Windows Phone エミュレーター。** 詳しくは、「[エミュレーターにおける Windows Phone アプリの実行](https://msdn.microsoft.com/library/dn632391.aspx)」をお読みください。  
+3.  **Microsoft の Windows Phone エミュレーター。** 詳しくは、「 [Windows Phone 8 用 Windows Phone エミュレーター](https://msdn.microsoft.com/library/dn632391.aspx)」をお読みください。  
   
 ##  <a name="components"></a> 詳細:Xamarin コンポーネント  
  *10 分*  

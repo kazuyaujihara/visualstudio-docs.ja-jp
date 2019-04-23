@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41a5016c528e754e452ee1248e85b705c41a44ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621072"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662397"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>VSPackage のインストール ディレクトリを選択します。
 VSPackage とそのサポート ファイルは、ユーザーのファイル システム上にある必要があります。 場所は、VSPackage の管理または非管理対象、サイド バイ サイド バージョン管理スキームとユーザーの選択かどうかによって異なります。
@@ -40,7 +40,7 @@ VSPackage とそのサポート ファイルは、ユーザーのファイル �
 
  マネージ Vspackage を GAC 以外の場所にインストールする場合は、アンマネージ Vspackage 用に指定されたディレクトリ階層を選択する以前のアドバイスに従います。 Regpkg ツールの使用 **/codebase** VSPackage アセンブリのパスを指すレジストリ エントリを記述するスイッチ。
 
- 詳細については、[を登録し、Vspackage の登録解除](../../extensibility/registering-and-unregistering-vspackages.md)を参照してください。
+ 詳細については、次を参照してください。[を登録し、Vspackage の登録解除](../../extensibility/registering-and-unregistering-vspackages.md)します。
 
 ## <a name="satellite-dlls"></a>サテライト Dll
  慣例によりは、VSPackage のサブディレクトリに置かれてサテライト Dll は、特定のロケールのリソースを含む、 *VSPackage*ディレクトリ。 サブディレクトリでは、ロケール ID (LCID) の値に対応します。
@@ -56,7 +56,6 @@ VSPackage とそのサポート ファイルは、ユーザーのファイル �
 4.  既定のサブ言語とシステムの既定の LCID。
 
 5.  米国英語 (*. \1033*または *. \0x409*)。
-
 
 VSPackage DLL にリソースが含まれている場合、 **SatelliteDll\DllName**レジストリ エントリが指す、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]それらを上記の順序で読み込みを試みます。
 

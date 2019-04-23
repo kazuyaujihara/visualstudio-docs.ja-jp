@@ -11,18 +11,17 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0d32428c7a7b1f481771aacaf3e2b0dadfde5db6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: f8cec34f5eb814dfd236aa5fab46bcc811c8c88f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002426"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669706"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>チュートリアル: Visual Studio の拡張機能を発行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **注**:Visual Studio ギャラリーは、Visual Studio Marketplace に置き換えられます。 詳細については、このトピックの最新バージョンを参照してください。
-
 
 このチュートリアルでは、Visual Studio 拡張機能を Visual Studio ギャラリーに発行する方法を示します。 ギャラリーに、拡張機能を追加すると、開発者が使用できる**拡張機能と更新**新規および更新された拡張機能の参照があります。
 

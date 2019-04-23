@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8c081a2836c4dbb85f7d9af789deeda667a2a27
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 582006c7b9629911f9d403fdab6af0637eb9337c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616873"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661894"
 ---
 # <a name="legacy-language-service-essentials"></a>従来の言語サービスの基本情報
 Visual Studio のプログラミング言語に統合する言語サービスを提供する必要があります。 このトピックでは、従来の言語サービスで使用できる機能について説明します。
@@ -32,18 +32,17 @@ Visual Studio のプログラミング言語に統合する言語サービスを
 
 |機能|説明|
 |-------------|-----------------|
-|構文の色分け表示|により、エディター ビューは、さまざまな色と言語のさまざまな要素のフォント スタイルを表示します。 この区別により作成の読み取りし、ファイルを編集しやすくします。<br /><br /> 一般的な情報は、[従来の言語サービスでの構文の色分け表示](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)を参照してください。<br /><br /> Managed package framework (MPF) でこの機能については、[従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)を参照してください。|
-|入力候補|ステートメントまたはユーザーが入力を開始したキーワードを完了します。 ステートメント入力候補を使用して、少ない入力、エラーが少ない可能性と困難なステートメントをより簡単に入力できます。<br /><br /> 一般的な情報は、[従来の言語サービスで入力候補](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)を参照してください。<br /><br /> MPF でこの機能については、[従来の言語サービスでの単語補完](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)を参照してください。|
-|かっこの一致|中かっこなどの文字のペアを強調表示になります。 ユーザーが終了文字など"}"、かっこの一致を強調表示、対応するなどの文字を開く"{0}"。 文字を囲むのいくつかのレベルが存在する場合、この機能は、囲み文字の対応が正しいことを確認します。 ユーザーに役立ちます。<br /><br /> MPF でこの機能については、[従来の言語サービスでかっこの照合](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)を参照してください。|
-|パラメーター情報のヒント|オーバー ロードされたメソッド、ユーザーの現在の入力の可能な署名の一覧が表示されます。<br /><br /> 一般的な情報は、[従来の言語サービスでのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)を参照してください。<br /><br /> MPF でこの機能については、[従来の言語サービスでのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)を参照してください。|
+|構文の色分け表示|により、エディター ビューは、さまざまな色と言語のさまざまな要素のフォント スタイルを表示します。 この区別により作成の読み取りし、ファイルを編集しやすくします。<br /><br /> 一般的な情報は、次を参照してください。[従来の言語サービスでの構文の色分け表示](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)します。<br /><br /> Managed package framework (MPF) でこの機能については、次を参照してください。[従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)します。|
+|入力候補|ステートメントまたはユーザーが入力を開始したキーワードを完了します。 ステートメント入力候補を使用して、少ない入力、エラーが少ない可能性と困難なステートメントをより簡単に入力できます。<br /><br /> 一般的な情報は、次を参照してください。[従来の言語サービスで入力候補](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)します。<br /><br /> MPF でこの機能については、次を参照してください。[従来の言語サービスでの単語補完](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)します。|
+|かっこの一致|中かっこなどの文字のペアを強調表示になります。 ユーザーが終了文字など"}"、かっこの一致を強調表示、対応するなどの文字を開く"{0}"。 文字を囲むのいくつかのレベルが存在する場合、この機能は、囲み文字の対応が正しいことを確認します。 ユーザーに役立ちます。<br /><br /> MPF でこの機能については、次を参照してください。[従来の言語サービスでかっこの照合](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)します。|
+|パラメーター情報のヒント|オーバー ロードされたメソッド、ユーザーの現在の入力の可能な署名の一覧が表示されます。<br /><br /> 一般的な情報は、次を参照してください。[従来の言語サービスでのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)します。<br /><br /> MPF でこの機能については、次を参照してください。[従来の言語サービスでのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)します。|
 |エラーのマーカー|赤い波線の下線とも呼ばれる、波線、構文が正しくないテキストの下に表示されます。 通常、エラー マーカーは、ユーザーのキーワードのスペルミス、閉じられていないかっこ、無効な文字、および同様のエラーを認識させるのに使用されます。<br /><br /> MPF クラスでエラーのマーカーが自動的に処理、<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A>のメソッド、<xref:Microsoft.VisualStudio.Package.AuthoringSink>クラス。|
 
  これらの機能の多くには、ソース コードを解析する言語サービスが必要です。 多くの場合、再利用できますトークン化して、コンパイラやインタープリター用のコードを解析します。
 
  次の機能は、関連するプログラミング言語のサポートが言語サービスの一部ではないです。
 
-
 | 機能 | 説明 |
 |-----------------------| - |
-| 式エバリュエーター | では、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]に表示されるデバッガーのブレークポイントの検証の式のリストを指定して、 **[自動変数]** デバッグ ウィンドウ。<br /><br /> 詳細については、[をデバッグ用の言語サービスのサポート](../../extensibility/internals/language-service-support-for-debugging.md)を参照してください。 |
+| 式エバリュエーター | では、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]に表示されるデバッガーのブレークポイントの検証の式のリストを指定して、 **[自動変数]** デバッグ ウィンドウ。<br /><br /> 詳細については、次を参照してください。[をデバッグ用の言語サービスのサポート](../../extensibility/internals/language-service-support-for-debugging.md)します。 |
 | シンボル参照ツール | サポート**オブジェクト ブラウザー**、**クラス ビュー**、**呼び出しブラウザー**、および**シンボルの検索結果**します。 |

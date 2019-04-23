@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d02f72a686d0f271e387e550122451db34c019a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976663"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668029"
 ---
 # <a name="typed-vs-untyped-datasets"></a>型指定されたデータセットと型指定されていないデータセットの比較
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 型指定されたデータセットはまず、ベースから派生したデータセット<xref:System.Data.DataSet>クラスし、からの情報を使用して、**データセット デザイナー**、厳密に型指定された dataset クラスを新しいを生成する、.xsd ファイルに格納されています。 (テーブル、列、およびなど) のスキーマから情報が生成され、最上位のオブジェクトとプロパティのセットとして、この新しい dataset クラスにコンパイルします。 型指定されたデータセットは、ベースから継承するため<xref:System.Data.DataSet>クラス、型指定されたクラスはすべての機能の<xref:System.Data.DataSet>クラスし、のインスタンスを取るメソッドで使用できる、<xref:System.Data.DataSet>クラスをパラメーターとして。  
   
  これに対し、型指定されていないデータセットには対応する組み込みのスキーマがありません。 型指定されたデータセットのように、データセットには、テーブルや列などが含まれています — はコレクションとしてのみ公開されるものが、します。 (ただし、データセットのテーブルとその他のデータ要素を手動で作成した後できます構造をエクスポートするデータセットのスキーマとして、データセットを使用して<xref:System.Data.DataSet.WriteXmlSchema%2A>メソッドです)。  

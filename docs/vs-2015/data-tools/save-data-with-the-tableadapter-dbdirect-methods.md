@@ -19,17 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84f00ce07c2eb5e417141b6139d11b44cccf3362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 096d15b82e256df2bc35bc443c248e8ca0662c19
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972374"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661855"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect メソッドを使用してデータを保存する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このチュートリアルでは、TableAdapter の DBDirect メソッドを使用して、データベースに対して直接 SQL ステートメントを実行するための詳細な手順を提供します。 TableAdapter の DBDirect メソッドを使用すると、データベースの更新をきめ細かいレベルで制御できます。 それらを使用するには個別に呼び出すことによって、特定の SQL ステートメントおよびストアド プロシージャを実行する`Insert`、 `Update`、および`Delete`アプリケーションに必要なメソッド (オーバー ロードされたのではなく`Update`更新プログラムを実行するメソッド、INSERT、および 1 回の呼び出しですべての DELETE ステートメント)。  
   
  このチュートリアルでは、次の作業を行う方法について説明します。  

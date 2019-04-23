@@ -8,16 +8,15 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9ad50aea8da784d05f3852860186bb029e67a54
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 2352f32b36ab7b2973897599be1fd29859fafc17
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954109"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665689"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio で Xamarin を使用してネイティブ UI を備えたアプリを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 「[セットアップとインストール](../cross-platform/setup-and-install.md)」と「[Xamarin 環境を検証する](../cross-platform/verify-your-xamarin-environment.md)」の手順を完了しましたが、このチュートリアルでは、ネイティブ UI レイヤーを備えた基本的な Xamarin アプリ (下図) を作成する方法を示します。 ネイティブ UI を使用すると、共有コードはポータブル クラス ライブラリ (PCL) に存在し、個別のプラットフォーム プロジェクトに UI 定義が含まれます。
 
@@ -519,7 +518,7 @@ ms.locfileid: "56954109"
 
 2.  適切なデバイスまたはエミュレーターのターゲットを選択し、F5 キーを押してアプリケーションを開始します。
 
-3.  デバイスまたはエミュレーターで、米国の有効な郵便番号 (例: 60601) を編集ボックスに入力してから、**[Get Weather]** をクリックします。 該当する地域の気象データがコントロールに表示されます。
+3.  デバイスまたはエミュレーターでは、編集ボックスに有効なアメリカ合衆国郵便を入力 (例。60601)、キーを押します**Get Weather**します。 該当する地域の気象データがコントロールに表示されます。
 
      ![Android および Windows Phone 用お天気アプリ](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +624,7 @@ ms.locfileid: "56954109"
 
 2.  F5 キーを押すとアプリが起動します。
 
-3.  Windows Phone エミュレーターで、米国の有効な郵便番号を編集ボックスに入力 (例: 60601) してから、**[Get Weather]** をクリックします。 該当する地域の気象データがコントロールに表示されます。
+3.  Windows Phone エミュレーターで、編集ボックスに有効なアメリカ合衆国郵便を入力します (例。60601)、キーを押します**Get Weather**します。 該当する地域の気象データがコントロールに表示されます。
 
      ![実行中のアプリの Windows バージョン](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 

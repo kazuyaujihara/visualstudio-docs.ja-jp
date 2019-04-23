@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 003b4ed6407126c7b1b6992c9c99eb30d36379b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963153"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665390"
 ---
 # <a name="walkthrough-xslt-profiler"></a>チュートリアル: XSLT プロファイラー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XSLT プロファイラーは、詳細な XSLT パフォーマンス レポートを作成することにより、XSLT コード内のパフォーマンス関連の問題を計測、評価、および特定できるようにします。 XSLT プロファイラーには、XSL および XSLT のスタイル シートの最適化に役立つヒントが含まれています。 最高のパフォーマンスが必要になる XSLT アプリケーションには、このツールが不可欠です。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  

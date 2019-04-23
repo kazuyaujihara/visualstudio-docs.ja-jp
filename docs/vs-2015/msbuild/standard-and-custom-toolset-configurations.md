@@ -12,22 +12,20 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ad0d60921e9bb42f54cc70c49efbe64f036398d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c629d82d208f45433564c1b36bb5aa889e402915
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801675"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668329"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準ツールセット構成とカスタム ツールセット構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 MSBuild ツールセットには、アプリケーション プロジェクトのビルドに使用できるタスク、ターゲット、およびツールへの参照が含まれています。 MSBuild には標準ツールセットが用意されていますが、カスタム ツールセットを作成することもできます。 ツールセットを指定する方法については、「[ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)」を参照してください。  
 
 ## <a name="standard-toolset-configurations"></a>標準ツールセット構成  
  MSBuild 12.0 には以下の標準ツールセットが含まれています。  
-
 
 | ToolsVersion | ツールセットのパス (MSBuildToolsPath ビルド プロパティまたは MSBuildBinPath ビルド プロパティで指定) |
 |--------------|--------------------------------------------------------------------------------------|

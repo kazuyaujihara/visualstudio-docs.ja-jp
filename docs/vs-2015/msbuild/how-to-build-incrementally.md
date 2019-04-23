@@ -13,17 +13,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803911"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662258"
 ---
-# <a name="how-to-build-incrementally"></a>方法 : インクリメンタル ビルドを実行する
+# <a name="how-to-build-incrementally"></a>方法: インクリメンタル ビルド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 大規模なプロジェクトをビルドする場合、今でも最新の以前にビルドされたコンポーネントが再ビルドされないことが重要です。 すべてのターゲットが毎回ビルドされると、各ビルドが完了するのに長い時間がかかります。 インクリメンタル ビルド (ビルド内の以前にビルドされていないターゲット、または古くなっているターゲットだけが再ビルドされます) を有効にするため、[!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) は入力ファイルのタイムスタンプと出力ファイルのタイムスタンプを比較して、ターゲットをスキップ、ビルド、または部分的に再ビルドするかどうかを判断できます。 ただし、入力と出力の間に一対一のマッピングが必要です。 変換を使用して、ターゲットがこの直接マッピングを識別できるようにすることができます。 変換の詳細については、「[MSBuild 変換](../msbuild/msbuild-transforms.md)」を参照してください。  
   
 ## <a name="specifying-inputs-and-outputs"></a>入力と出力を指定する  
@@ -31,7 +30,7 @@ ms.locfileid: "54803911"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>ターゲットに入力と出力を指定するには  
   
-- `Target` 要素の `Inputs` 属性と `Outputs` 属性を使用します。 次に例を示します。  
+- `Target` 要素の `Inputs` 属性と `Outputs` 属性を使用します。 例:  
   
   ```  
   <Target Name="Build"  
@@ -62,9 +61,9 @@ ms.locfileid: "54803911"
 ## <a name="example"></a>例  
  次の例では、架空のヘルプ システムのヘルプ ファイルをビルドするプロジェクトを使用します。 プロジェクトは、ソースの .txt ファイルを、中間の .content ファイルに変換し、これを XML メタデータ ファイルと結合してヘルプ システムで使用される最終の .help ファイルを生成することによって機能します。 プロジェクトでは、次の仮想タスクを使用します。  
   
-- `GenerateContentFiles`: .txt ファイルを .content ファイルに変換します。  
+- `GenerateContentFiles`:.Txt ファイルを .content ファイルに変換します。  
   
-- `BuildHelp`: .content ファイルと XML メタデータ ファイルを結合し、最終の .help ファイルをビルドします。  
+- `BuildHelp`:.Content ファイルと、最終の .help ファイルをビルドする XML メタデータ ファイルを結合します。  
   
   プロジェクトは、変換を使用して、`GenerateContentFiles` タスクで入力と出力間の一対一のマッピングを作成します。 詳細については、「[MSBuild 変換](../msbuild/msbuild-transforms.md)」をご覧ください。 また、`Output` 要素が `GenerateContentFiles` タスクからの出力を `BuildHelp` タスクの入力として自動的に使用するように設定されます。  
   

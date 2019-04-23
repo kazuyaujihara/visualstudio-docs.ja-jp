@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
-ms.translationtype: MT
+ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366615"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665745"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>コード エディターとテキスト エディターでのコードの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,6 @@ Visual Studio の [移動] コマンドは、コード ファイル、ファイ�
     入力すると、テキスト ボックスの下のドロップダウン リストに結果が表示されます。
 1. 要素に移動するには、一覧の要素を選択します。
 
-
 ### <a name="filter-your-search"></a>検索のフィルター処理
 
 [移動] クエリの前に検索をシンボル コードのみを制限するため、"\@"文字です。 たとえば、`@application` を検索する場合、[移動] には "application" という単語があるクラスのみが表示されます。
@@ -191,13 +190,13 @@ Visual Studio の [移動] コマンドは、コード ファイル、ファイ�
 
 -   [Visual Basic の設定](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [C#、Visual Studio 開発環境を使用します。](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [Visual C# 開発環境の使用](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
 -   [[オプション]、[テキスト エディター]、[JavaScript]、[書式設定]](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>このセクションの内容  
 
--   [Finding and Replacing Text](../ide/finding-and-replacing-text.md)  
+-   [テキストの検索と置換](../ide/finding-and-replacing-text.md)  
 
 -   [エンコーディングと改行](../ide/encodings-and-line-breaks.md)  
 
@@ -207,13 +206,13 @@ Visual Studio の [移動] コマンドは、コード ファイル、ファイ�
 
 -   [生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Using IntelliSense](../ide/using-intellisense.md)  
+-   [IntelliSense の使用](../ide/using-intellisense.md)  
 
 -   [エディターのカスタマイズ](../ide/customizing-the-editor.md)  
 
--   [方法: Scrollbar のカスタマイズによるコードを追跡します。](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+-   [方法: ScrollBar のカスタマイズによるコードの追跡](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [方法: 表示およびピークの定義 (Alt + F12) を使用してコードを編集](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [方法: [定義をここに表示] を使用してコードを表示および編集する (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [電球を使ってクイック操作をする](../ide/perform-quick-actions-with-light-bulbs.md)  
 

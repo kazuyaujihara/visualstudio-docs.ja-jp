@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c890602fa35ae96c4a28ef3c6d39724ce062a3c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: efc9fa354ab7dfc119efd747c54091d2426b257b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612466"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666586"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>方法: オブジェクト マネージャーにライブラリによって提供されるシンボルのリストを公開します。
 シンボル参照ツール、**クラス ビュー**、**オブジェクト ブラウザー**、**呼び出しブラウザー**と**シンボルの検索結果**を新しいデータの要求を渡す[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]オブジェクト マネージャー。 オブジェクト マネージャーは、適切なライブラリを検索し、シンボルの新しいリストを要求します。 ライブラリの応答を要求されたデータを提供することで、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]オブジェクト マネージャーを介して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>インターフェイス。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]オブジェクト マネージャー メソッドを呼び出して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>データを取得するインターフェイスを使用して設定またはシンボル参照ツールのビューを更新します。
@@ -30,7 +30,6 @@ ms.locfileid: "56612466"
 >  実装するシンボルのリストを提供する管理対象のコード例を以下に示します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>インターフェイス。 オブジェクト マネージャーでは、このインターフェイスでメソッドを呼び出して、取得したデータを使用して設定またはシンボル参照ツールを更新します。
 >
 >  ネイティブ コード シンボル プロバイダーの実装を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>インターフェイス。
-
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>オブジェクト マネージャーにシンボルのリストを提供するには
 

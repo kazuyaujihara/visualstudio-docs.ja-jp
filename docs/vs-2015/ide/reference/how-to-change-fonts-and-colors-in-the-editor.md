@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799109"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661868"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>方法 : エディターで使用するフォントのフォント フェイス、サイズ、色を変更する
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>方法: エディターのフォントと色を変更します。
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 コード エディターでは、さまざまなテキスト**表示項目**の既定のフォント フェイスを変更し、フォント サイズを調整し、前景色と背景色を変更することができます。 フォントの設定を変更するときは、次の情報に注意してください。  
   
 -   **[フォント]** と **[サイズ]** の設定は、すべての [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] エディターのすべてのテキスト要素に対するグローバルな設定です。  

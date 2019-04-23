@@ -9,14 +9,14 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2568b04e999a1b887e918a07ff8233ea9bf289a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b6d205a3a8abddadc714aea4aa913ff064518920
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802379"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663480"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを .NET サービスにアタッチし、メモリ データを収集する
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>方法: コマンドラインを使用してメモリ データを収集する .NET サービスに、Profiler をアタッチします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールのコマンド ライン ツールを使用してプロファイラーを [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] サービスにアタッチし、メモリ データを収集する方法について説明します。 メモリ割り当ての数およびサイズに関するデータだけでなく、メモリ オブジェクトの有効期間に関するデータも収集できます。  
@@ -84,14 +84,13 @@ ms.locfileid: "54802379"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 ミリ秒です。                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.etl) ファイルに収集されます。                                                                                     |
 
-
 8. プロファイラーをサービスにアタッチします。 型:  
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
    -   サービスのプロセス ID またはプロセス名を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID と名前を参照できます。  
 
-   -   **targetclr:** `Version` には、アプリケーションに複数のバージョンのランタイムが読み込まれている場合に、プロファイリングを行う共通言語ランタイム (CLR: Common Language Runtime) のバージョンを指定します。 任意。  
+   -   **targetclr:** `Version` には、アプリケーションに複数のバージョンのランタイムが読み込まれている場合に、プロファイリングを行う共通言語ランタイム (CLR: Common Language Runtime) のバージョンを指定します。 省略可能です。  
 
 ## <a name="controlling-data-collection"></a>データ コレクションの制御  
  サービスの実行中に、**VSPerfCmd.exe** のオプションを使用して、プロファイラー データ ファイルへのデータ書き込みを停止または開始できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。  

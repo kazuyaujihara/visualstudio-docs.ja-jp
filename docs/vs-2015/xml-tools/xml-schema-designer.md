@@ -9,17 +9,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe81190bca91aba4655e551026458c9047739d66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f25af22d97b1a564f97120e462cee8ca3fee37e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977174"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669173"
 ---
 # <a name="xml-schema-designer"></a>XML スキーマ デザイナー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML スキーマ デザイナー (XSD デザイナー) は、スキーマ セットをさまざまな抽象レベルで視覚的に表現するためのグラフィカル ツールです。 XSD デザイナーには、次の主要コンポーネントがあります。    
   
 -   [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)参照し、XML スキーマのツリーを移動し、検索を実行することができます。  

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dae9c7728de35c92c973c9fca097595b56aabaf5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 46fa0dbcc5ab80ce567d4e0afd64d8990006204b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869245"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663246"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>方法: ドメイン固有言語を新バージョンに移行する
 ドメイン固有言語を使って定義するプロジェクトを移行する[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]のバージョンから[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]を使用して配布されて[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]します。
@@ -74,14 +74,13 @@ ms.locfileid: "57869245"
    2.  をクリックして、**すべてのテンプレートの変換**ソリューション エクスプ ローラーのヘッダーにボタンをクリックします。
 
        > [!NOTE]
-       >  この手順を不要なことできます。 詳細については、[すべてのテンプレートの変換を自動化する方法](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))を参照してください。
+       >  この手順を不要なことできます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))します。
 
 6. 変換後のプロジェクトでのカスタム コードを更新します。
 
    -   プロジェクトをビルドし、すべてのエラーを調査しようとします。
 
    -   デザイナーをテストします。
-
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

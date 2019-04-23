@@ -13,17 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59dad7f376b79b2e8ac773f8cc604204dcd0c908
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602209"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665995"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>チュートリアル: カスタム マスター ページとサイトのページにイメージをインポートします。
   このチュートリアルの SharePoint カスタム マスター ページとサイトのページにイメージがインポートする方法、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint プロジェクト。
 
- このチュートリアルでは、以下のタスクを完了する方法について説明します。
+ このチュートリアルで説明する内容は次のとおりです。
 
 - SharePoint Designer で、イメージを使用して、カスタム マスター ページとサイトのページを作成します。
 
@@ -150,13 +150,11 @@ ms.locfileid: "56602209"
 
 2. **をインポートする項目の選択**] ページ [**モジュール**で、**型**列で、インポートについては、次の表に、ファイルのみのチェック ボックスをオンします。
 
-
    | ファイル名 | 説明 |
    |------------------------|-----------------------------------------------|
    | \_catalogsmasterpage\_ | カスタム マスター ページです。 |
    | images_ | SharePoint のファイル システムのイメージ ファイルです。 |
    | SitePages_ | サイトのページ。 |
-
 
 3. 選択、**完了**ボタンをクリックして選択したアイテムをインポートします。
 

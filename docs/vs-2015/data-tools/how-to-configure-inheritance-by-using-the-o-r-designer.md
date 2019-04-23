@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4dfa0f5eb59b055b2dd16e9f8ac1554247c85a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974267"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662271"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>方法: O/R デザイナーを使用して継承を構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) では、一般にリレーショナル システムで実装されている単一テーブル継承の概念がサポートされます。 単一テーブル継承には、親情報と子情報の両方のフィールドを含む単一のデータベース テーブルがあります。 リレーショナル データでは、判別用の列に、レコードが属するクラスを決定する値が含まれています。  
   
  たとえば、会社に採用されたすべての人を含む Persons テーブルについて考えます。 従業員の人もいれば、管理者の人もいます。 Persons テーブルには、管理者を表す値 1 と従業員を表す値 2 がある `EmployeeType` という名前の列が含まれています。これが判別用の列です。 このシナリオでは、従業員のサブクラスを作成して、そのクラスには `EmployeeType` の値が 2 のレコードだけを入れます。 適用されない列を各クラスから削除することもできます。  
@@ -28,7 +27,7 @@ ms.locfileid: "58974267"
   
 ### <a name="to-create-inherited-data-classes"></a>継承されたデータ クラスを作成するには  
   
-1.  開く、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を追加して、 **LINQ to SQL クラス**項目を既存の Visual Basic または C# プロジェクト。  
+1.  開く、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を追加して、 **LINQ to SQL クラス**項目を既存の Visual Basic または c# プロジェクト。  
   
 2.  基本クラスとして使用するテーブルを [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]にドラッグします。  
   

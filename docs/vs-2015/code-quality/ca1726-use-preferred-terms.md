@@ -14,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59003079"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664113"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726:適切な用語を使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新ドキュメントについては、次を参照してください。 [ca 1726 適切な。適切な用語を使用して、](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください。 [ca 1726 適切な。適切な用語を使用して、](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms)します。  
   
 |||  
 |-|-|  
@@ -41,30 +41,30 @@ Visual Studio の最新ドキュメントについては、次を参照してく
   
 |廃止された用語|推奨用語|  
 |-------------------|--------------------|  
-|ありません。|:R|  
-|取り消し済み|Canceled|  
-|できません。|できません。|  
-|ComPlus|EnterpriseServices|  
-|できませんでした。|でした|  
-|Didnt|DidNot|  
-|セーフモード|含まれていません|  
-|不要|DoNot|  
-|フラグまたはフラグ|置換用語はありません。 使用しないでください。|  
-|ですか?|HadNot|  
-|していません。|妥当|  
-|していません。|プロファ|  
-|インデックス|Indexes|  
-|ありません。|IsNot|  
-|ログイン|ログオン|  
-|ログアウト|ログオフ|  
-|Shouldnt|マクロ|  
-|サインオン|サインイン|  
-|サインオフ|サインアウト|  
-|Wasnt|WasNot|  
-|でした。|WereNot|  
-|が|自分|  
-|Wouldnt|ユースケース|  
-|書き込み可能です|書き込み可能です|  
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` または `Flags`|置換用語はありません。 使用しないでください。|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
   
 ## <a name="how-to-fix-violations"></a>違反の修正方法  
  この規則違反を修正するには、推奨される代替用語でという用語を置き換えます。  

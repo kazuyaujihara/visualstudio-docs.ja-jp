@@ -24,17 +24,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974914"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663298"
 ---
 # <a name="hierarchical-update"></a>階層更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 階層的な更新プログラム *、参照整合性を維持しながら、データベースに戻す (2 つ以上の関連テーブルを含むデータセット) から更新されたデータを保存するプロセスを指します。 *参照整合性*の挿入、更新、および関連レコードを削除する動作を制御するデータベース内の制約によって定義される一貫性規則を参照します。 たとえば、その顧客の注文を作成するを許可する前に、顧客レコードの作成を強制する参照の整合性を勧めします。  データセットのリレーションシップの詳細については、次を参照してください[データセットのリレーションシップ。](../data-tools/relationships-in-datasets.md)  
   
  階層更新機能を使用して、`TableAdapterManager`を管理する、`TableAdapter`型指定された dataset の s。 `TableAdapterManager`コンポーネントは、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-は、クラスを生成の一部、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]します。 データ ソース ウィンドウから Windows フォームまたは WPF ページにテーブルをドラッグするとは、Visual Studio がフォームまたはページで、TableAdapterManager の型の変数を追加し、コンポーネント トレイにデザイナーで参照してください。 詳細については、`TableAdapterManager`クラスの TableAdapterManager リファレンスのセクションを参照してください[TableAdapterManager の概要](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)します。  

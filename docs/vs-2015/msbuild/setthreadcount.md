@@ -17,17 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a57ac0b3412c6668dea1669d14b72fe399b6ab2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 79987c77da7959c4ba37a4ae8e5b689a052cbbbc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758627"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666678"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 グローバルなスレッド カウントを設定し、そのカウントを現在のスレッドに割り当てます。  
   
 ## <a name="syntax"></a>構文  
@@ -41,7 +40,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  使用するスレッドの数。  
   
 ## <a name="return-value"></a>戻り値  
- スレッド カウントが更新された場合、[HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) に [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) ビットが設定されます。  
+ [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) [SUCCEEDED] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->)、スレッド数が更新された場合はビットが設定されます。  
   
-## <a name="requirements"></a>要件  
+## <a name="requirements"></a>必要条件  
  **ヘッダー:** FileTracker.h

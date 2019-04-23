@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7ce412da98d05d70864a6932021912a6f03f6a7b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976211"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662973"
 ---
 # <a name="working-with-xml-data"></a>XML データの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML とその関連技術は、[!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio でのデータ処理において大きな役割を果たしています。 Visual Studio には、XML、XSLT、および XML スキーマの操作を容易にするツールと機能が含まれています。  
   
 ## <a name="xml-editor"></a>XML エディター  

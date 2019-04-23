@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85ea10b956069415198feb74be8c9e546ecc7ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769224"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668120"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 アプリケーションとその前提条件を検出、ダウンロード、インストールする自動化方法を提供します。 これは、アプリケーションを構成するすべてのコンポーネントの別々のインストーラーを統合する単一のインストーラーとして機能します。  
   
 ## <a name="task-parameters"></a>タスク パラメーター  
@@ -96,11 +95,11 @@ ms.locfileid: "54769224"
   
    インストールするインストール前提条件をブートストラップが探す場所を指定します。 このパラメーターには、次の値を指定できます。  
   
-  - `HomeSite`: 前提条件がコンポーネント ベンダーによってホストされていることを示します。  
+  - `HomeSite`:前提条件がコンポーネント ベンダーによってホストされていることを示します。  
   
-  - `Relative`: 前提条件がアプリケーションと同じ場所にあることを示します。  
+  - `Relative`:前提条件が、アプリケーションの同じ位置にあることを示します。  
   
-  - `Absolute`: 一元化された URL にすべてのコンポーネントがあることを示します。 この値は `ComponentsUrl` 入力パラメーターと共に使用する必要があります。  
+  - `Absolute`:一元化された URL にすべてのコンポーネントがあることを示します。 この値は `ComponentsUrl` 入力パラメーターと共に使用する必要があります。  
   
     `ComponentsLocation` が指定されていない場合は、`HomeSite` が既定で使用されます。  
   
@@ -152,7 +151,7 @@ ms.locfileid: "54769224"
   
    `true` の場合、ブートストラップは指定された入力ブートストラップ項目に対して XSD 検証を実行します。 このパラメーターの既定値は、`false` です。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
   
 ## <a name="example"></a>例  

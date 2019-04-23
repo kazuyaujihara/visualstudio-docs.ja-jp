@@ -53,16 +53,15 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 723b074b51e97282f67a8e490ec6b109e765dbc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 553d4f7ca61bbc01e72e8735b0007d2f08876e71
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973969"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666508"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio のデータセット ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 注意]
 >  データセットと関連するクラスは、アプリケーションがデータベースから切断されていても、メモリ内のデータを使用するアプリケーションを実現する 2000 年の初めから従来の .NET テクノロジが。 データを変更し、変更を元のデータベースに保持するユーザーを有効にするアプリケーションに特に便利です。 データセットの非常に効果的なテクノロジとなることがわかっていますが、新しい .NET アプリケーションが Entity Framework を使用することをお勧めします。 Entity Framework はオブジェクト モデルと表形式のデータを操作する方法がより自然を示しより単純なプログラミング インターフェイスがあります。

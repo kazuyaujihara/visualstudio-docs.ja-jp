@@ -12,16 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df34e65eda5dd871dc62132059dce0ac75e4030f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: b7dc3d84ab543c7e3fc49060d20a33738bf5a8db
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612433"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661465"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>方法: 従来の言語サービスで非表示のテキストのサポートを提供します。
 アウトライン領域以外にも非表示のテキスト領域を作成できます。 非表示のテキスト領域は、クライアントが管理またはエディター コントロールとテキストの特定の領域を完全に非表示に使用されます。 エディターには、水平線として非表示の領域が表示されます。 この例は、**スクリプトのみ**HTML エディターで表示します。
-
 
 ## <a name="to-implement-a-hidden-text-region"></a>非表示のテキスト領域を実装するには
 

@@ -17,17 +17,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26b826b19a14731ba4fbbb11eccee5fc4337c4ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784820"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668913"
 ---
 # <a name="output-window"></a>[出力] ウィンドウ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **[出力]** ウィンドウには、統合開発環境 (IDE: Integrated Development Environment) のさまざまな機能のステータス メッセージが表示されます。 **[出力]** ウィンドウを開くには、メニュー バーで、**[表示]、[出力]** の順にクリックします (または、Ctrl キーと Alt キーを押しながら O キーを押します)。  
   
 > [!WARNING]
@@ -69,7 +68,7 @@ ms.locfileid: "54784820"
   
 ## <a name="see-also"></a>関連項目  
  [出力ウィンドウの診断メッセージ](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [方法 : 出力ウィンドウを制御する](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [方法: 出力ウィンドウを制御します。](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [コードのコンパイルとビルド](../../ide/compiling-and-building-in-visual-studio.md)   
  [ビルド構成について](../../ide/understanding-build-configurations.md)   
  [クラス ライブラリの概要](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

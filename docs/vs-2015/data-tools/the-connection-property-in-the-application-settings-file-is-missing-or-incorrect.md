@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 671b0acfd0f2ec81e349bd6a69db0fb64bff94d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a29d98455ccf796f331513c7abf5e679e55af8b5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962470"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669472"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>アプリケーション設定ファイルの接続プロパティが、存在しないか、正しくありません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 アプリケーション設定ファイルの接続プロパティが、存在しないか、正しくありません。 .dbml ファイルの接続文字列が代わりに使用されます。  
   
  .dbml ファイルには、アプリケーション設定ファイルに見つからない接続文字列への参照が含まれています。 このメッセージは情報であり、**[OK]** をクリックすると接続文字列設定が作成されます。  

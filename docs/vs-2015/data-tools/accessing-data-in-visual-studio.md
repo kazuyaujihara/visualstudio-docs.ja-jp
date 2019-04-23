@@ -22,16 +22,15 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 5165cf21328b8af1cda63384a5dafbc8dfc2d849
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 02d40062b1202a261aa7be4ae306329a6a93b37a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002898"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669459"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio でのデータにアクセスします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Visual Studio では、事実上すべてのデータベース製品またはサービスで、任意の場所の形式でデータに接続するアプリケーションを作成することができます: ローカル コンピューターのローカル エリア ネットワーク、またはパブリック、プライベート、およびハイブリッド クラウドで。
 

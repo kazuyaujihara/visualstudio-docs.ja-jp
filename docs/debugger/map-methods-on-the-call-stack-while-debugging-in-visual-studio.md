@@ -29,23 +29,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526091"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665676"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>デバッグ中に呼び出し履歴のビジュアル マップを作成 (C#、Visual Basic、C++、JavaScript)
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>デバッグ中に呼び出し履歴のビジュアル マップを作成 (C#、Visual Basic、 C++、JavaScript)
 
 デバッグ中に呼び出し履歴を視覚的にトレースするためのコード マップを作成します。 コメントをマップに追加することで、バグを見つけることに重点を置いてコードの動作を追跡できます。
 
-チュートリアル、ビデオをご覧ください:[ビデオ: コード マップ デバッガーの統合 (チャネル 9) で視覚的にデバッグ](http://go.microsoft.com/fwlink/?LinkId=293418)
+チュートリアルについては、このビデオをご覧ください。[ビデオ:コード マップ デバッガーの統合 (チャネル 9) で視覚的にデバッグします。](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 コマンドとコード マップで使用できる操作の詳細については、次を参照してください。[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)します。
 
 >[!IMPORTANT]
->作成することができますのみでコード マップを[Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/)します。
+>作成することができますのみでコード マップを[Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)します。
 
 コード マップの概要を次に示します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "57526091"
 
 ##  <a name="MapStack"></a>呼び出し履歴でマップを作成する
 
-1. Visual Studio Enterprise でC#、Visual Basic、C++ または JavaScript プロジェクトを選択してデバッグを開始**デバッグ** > **デバッグの開始**キーを押して**F5**.
+1. Visual Studio Enterprise でC#、Visual Basic、 C++、または JavaScript プロジェクトを選択してデバッグを開始**デバッグ** > **デバッグの開始**キーを押して**F5**.
 
 1. アプリが中断モードになるか、関数にステップ イン、選択**デバッグ** > **コード マップ**、またはキーを押します**Ctrl**+**シフト**+**`**.
 

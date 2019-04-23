@@ -18,17 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 283428e4d4b2c81179d8dbd8ff6200c1d7140eae
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: afdeda6c18c20af1b7f82e42cedc4aadac13ebcb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758727"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661674"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>[セキュリティの詳細設定] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 このダイアログ ボックスでは、ゾーンでのデバッグに関連するセキュリティ設定を指定することができます。  
   
  このダイアログ ボックスを表示するには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、[**プロジェクト**] メニューの [**プロパティ**] をクリックします。 **プロジェクト デザイナー**が表示されたら、[**セキュリティ**] タブをクリックします。**[セキュリティ]** ページで **[ClickOnce セキュリティ設定を有効にする]** を選び、**[これは部分的に信頼するアプリケーションです]** をクリックして、**[詳細]** をクリックします。  

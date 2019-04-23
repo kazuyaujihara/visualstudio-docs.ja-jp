@@ -9,14 +9,14 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6382d4e674640426d2676531f06dc720b3c7eb4b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6575cf949084b8fa1bdbb0c891cafdc720e809d3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793162"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666378"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーをネイティブ サービスにアタッチし、アプリケーションの統計情報を収集する
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>方法: コマンドラインを使用してアプリケーションの統計情報を収集するネイティブ サービスに、Profiler をアタッチします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、プロファイラーをネイティブ サービスにアタッチし、サンプリング メソッドによってパフォーマンスに関する統計情報を収集する方法について説明します。  
@@ -60,7 +60,6 @@ ms.locfileid: "54793162"
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                             プロファイリング実行中に収集する Windows パフォーマンス カウンターを指定します。                                                                                                              |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                           **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 ミリ秒です。                                                                            |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                              プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.etl) ファイルに収集されます。                                                                              |
-
 
 4. プロファイラーをサービスにアタッチします。 型:  
 

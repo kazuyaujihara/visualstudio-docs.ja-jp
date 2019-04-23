@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 50b38a5ca5c37fe2b372f863f695a968055895ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 49dde34079cc7d8b63ab374c0ceb16390f934d58
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962371"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665729"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>方法: グラフ ビューおよびコンテンツ モデル ビューからダイアグラムを出力する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このトピックでは、グラフ ビューまたはコンテンツ モデル ビューからダイアグラムを出力する方法について説明します。  
   
 ### <a name="to-print-diagrams-from-the-xml-schema-designer"></a>XML スキーマ デザイナーからダイアグラムを出力するには  

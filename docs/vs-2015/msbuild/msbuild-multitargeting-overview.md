@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 543fde0c09d97d0001210c401fdc4cf81f48a698
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 73266c77a26f614af9978b48f7475086070aa5e6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800381"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666008"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild のマルチ ターゲットの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild を使用すると、.NET Framework のいずれかのバージョンやいずれかのシステム プラットフォームで動作するように、アプリケーションをコンパイルできます。 たとえば、あるアプリケーションを 32 ビット プラットフォーム上の .NET Framework 2.0 で動作するようにコンパイルしたり、これと同じアプリケーションを 64 ビット プラットフォーム上の .NET Framework 4.5 で動作するようにコンパイルしたりできます。  
   
 > [!IMPORTANT]

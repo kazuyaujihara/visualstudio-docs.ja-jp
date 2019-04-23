@@ -11,17 +11,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 24756553f4b1f5eb1a0ce811842c2843debd71aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: deeed2ed86b07ec6f3d36f7dd4b4be02c1060155
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770851"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669810"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 項目はビルド システムへの入力であり、通常はファイルを表します。 項目は要素名に基づいてアイテムの種類にグループ化されます。 項目の種類は項目の名前付きリストであり、タスクのパラメーターとして使用できます。 タスクは項目値を使用して、ビルド処理のステップを実行します。  
   
  項目名はそれぞれが属するアイテムの種類によって指定されるため、「項目」と「項目値」という用語は同義です。  
@@ -88,9 +87,9 @@ MSBuild 項目はビルド システムへの入力であり、通常はファ�
 -   .NET Framework 3.5 以降では、項目要素を格納できる [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 要素を `Target` 要素に含めることができます。  
   
 ##  <a name="BKMK_ReferencingItems"></a> プロジェクト ファイルの項目を参照する  
- プロジェクト ファイルでアイテムの種類を参照するには、構文 @(`ItemType`) を使用します。 たとえば、前の例に挙げたアイテムの種類を参照するには、`@(Compile)` を使用します。 この構文を使用してアイテムの種類をタスクのパラメーターとして指定すれば、項目をそのタスクに渡すことができます。 詳細については、「[方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)」を参照してください。  
+ プロジェクト ファイルでアイテムの種類を参照するには、構文 @(`ItemType`) を使用します。 たとえば、前の例に挙げたアイテムの種類を参照するには、`@(Compile)` を使用します。 この構文を使用してアイテムの種類をタスクのパラメーターとして指定すれば、項目をそのタスクに渡すことができます。 詳細については、「[方法 :ビルドするファイルを選択](../msbuild/how-to-select-the-files-to-build.md)します。  
   
- 既定では、アイテムの種類の項目は、それが展開されるときにセミコロン (;) によって区切られます。 構文 @(*ItemType*, '*separator*') を使用して、既定以外の区切り記号を指定できます。 詳細については、「[方法: 項目リストをコンマ区切りで表示する](../msbuild/how-to-display-an-item-list-separated-with-commas.md)」を参照してください。  
+ 既定では、アイテムの種類の項目は、それが展開されるときにセミコロン (;) によって区切られます。 構文 @(*ItemType*, '*separator*') を使用して、既定以外の区切り記号を指定できます。 詳細については、「[方法 :項目のリストをコンマで区切って表示](../msbuild/how-to-display-an-item-list-separated-with-commas.md)します。  
   
 ##  <a name="BKMK_Wildcards"></a> ワイルドカードを使用して項目を指定する  
  **、\*、および ? をワイルドカード文字として使用して、各ファイルを個別にリストする代わりに、ファイルのグループをビルドの入力として指定できます。  
@@ -113,7 +112,7 @@ MSBuild 項目はビルド システムへの入力であり、通常はファ�
 <VBFile Include="D:/**/*.vb"/>  
 ```  
   
- ワイルドカード文字の詳細については、「[方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)」を参照してください。  
+ ワイルドカード文字の詳細については、「[方法:ビルドするファイルを選択](../msbuild/how-to-select-the-files-to-build.md)します。  
   
 ##  <a name="BKMK_ExcludeAttribute"></a> Exclude 属性を使用する  
  項目の要素には `Exclude` 属性を含めることができます。この属性は、アイテムの種類から特定の項目 (ファイル) を除外します。 `Exclude` 属性は通常、ワイルドカード文字と一緒に使用されます。 たとえば、次の XML は、`DoNotBuild.cs` ファイルを除き、ディレクトリのすべての .cs ファイルをアイテムの種類 CSFile に追加します。  
@@ -131,7 +130,7 @@ MSBuild 項目はビルド システムへの入力であり、通常はファ�
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- 詳細については、「[方法: ビルドからファイルを除外する](../msbuild/how-to-exclude-files-from-the-build.md)」を参照してください。  
+ 詳細については、「[方法 :ビルドからファイルを除外する](../msbuild/how-to-exclude-files-from-the-build.md)します。  
   
 ##  <a name="BKMK_ItemMetadata"></a> 項目メタデータ  
  項目には、`Include` および `Exclude` 属性の情報に加えて、メタデータを含めることができます。 このメタデータは、項目に関する詳細情報を必要とするタスクで使用できます。あるいは、タスクとターゲットをバッチ処理するために使用できます。 詳細については、「[MSBuild バッチ](../msbuild/msbuild-batching.md)」をご覧ください。  
@@ -358,9 +357,9 @@ Output:
 ## <a name="see-also"></a>関連項目  
  [MSBuild の概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)   
- [方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)   
- [方法: ビルドからファイルを除外する](../msbuild/how-to-exclude-files-from-the-build.md)   
- [方法: 項目リストをコンマ区切りで表示する](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [方法: ビルドするファイルを選択します。](../msbuild/how-to-select-the-files-to-build.md)   
+ [方法: ビルドからファイルを除外します。](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [方法: コンマ区切りで項目のリストを表示します。](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [項目定義](../msbuild/item-definitions.md)   
  [バッチ](../msbuild/msbuild-batching.md)   
  [Item 要素 (MSBuild)](../msbuild/item-element-msbuild.md)

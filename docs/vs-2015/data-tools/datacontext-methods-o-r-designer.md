@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05acf62d30a1ac272003c0883b4a8c927e13e659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a57f94758d4289981740ed9c1a8a463a8a97887d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976559"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661595"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext メソッド (O/R デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & autoUpgrade = True) メソッド (のコンテキストで、 [LINQ to SQL ツール Visual Studio で](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) のメソッドは、<xref:System.Data.Linq.DataContext>ストアドを実行しているクラスプロシージャと、データベース内の関数。  
   
  <xref:System.Data.Linq.DataContext> クラスは、SQL Server データベースと、そのデータベースにマップされる [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] エンティティ クラスの間のパイプ役として機能する [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] クラスです。 <xref:System.Data.Linq.DataContext> クラスには、接続文字列の情報と、データベースへの接続およびデータベース内のデータの操作を行うメソッドが含まれています。 既定では、<xref:System.Data.Linq.DataContext> クラスには、更新されたデータを [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] クラスからデータベースに送信する <xref:System.Data.Linq.DataContext.SubmitChanges%2A> メソッドなど、呼び出すことのできるいくつかのメソッドがあります。 また、ストアド プロシージャおよび関数にマップされる追加の <xref:System.Data.Linq.DataContext> メソッドを作成することもできます。 つまり、これらのカスタム メソッドを呼び出すと、<xref:System.Data.Linq.DataContext> メソッドのマップ先となっているデータベース内のストアド プロシージャまたは関数が実行されます。 メソッドを追加して任意のクラスを拡張するのと同じように、<xref:System.Data.Linq.DataContext> クラスに新しいメソッドを追加できます。 ただし、に関するディスカッションで<xref:System.Data.Linq.DataContext>メソッドのコンテキストで、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]は、<xref:System.Data.Linq.DataContext>ストアド プロシージャとは、説明されている関数にマップされるメソッド。  

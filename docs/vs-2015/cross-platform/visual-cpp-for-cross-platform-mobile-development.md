@@ -11,17 +11,16 @@ caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c2ff6555be6f8189ff085e203890891f5345d3c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ec4bc799c3a808a7259e4dd39565e2e21940ca56
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778304"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665703"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual C++ for Cross-Platform Mobile Development を使用することによって、iOS、Android、および Windows デバイス対応のネイティブ C++ アプリをビルドし、iOS、Android、および Windows 用に作成されたライブラリ内で共通コードを共有できます。 これは、Visual Studio 2015 で使用できるオプションです。このオプションを選択すると、共有ライブラリとネイティブ アプリのクロスプラットフォーム開発に必要な SDK とツールがインストールされます。 インストールされている場合、Windows、Windows Phone、および Xbox に加え、iOS と Android のデバイスおよびプラットフォームで実行されるコードを、Visual C++ を使用して作成できます。  
   
  複数のプラットフォーム用にコードを記述することは、ストレスのたまる作業になることがあります。 iOS、Android、および Windows の主要な開発言語とツールは、それぞれのプラットフォームによって異なります。 ただし、すべてのプラットフォームは共通して C++ コードの記述をサポートしています。 この共通項を利用して、プラットフォーム間でのコードの再利用を可能にすることができます。 C++ で記述されたネイティブ コードは、パフォーマンスに優れているだけでなく、リバース エンジニアリングに対する耐性もあります。 コードを再利用できれば、複数のプラットフォーム用にアプリを作成する場合にかかる時間と労力の両方を節約できます。  

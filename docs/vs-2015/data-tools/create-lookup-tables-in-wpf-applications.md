@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: b25a86617fdead402a2bcc3e6d901868caad840e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58977643"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663783"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF アプリケーションでルックアップ テーブルを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 用語*ルックアップ テーブル*(とも呼ばれる、*ルックアップ バインディング*) 別のテーブルの外部キー フィールドの値に基づいて 1 つのデータ テーブルからの情報を表示するコントロールについて説明します。 親テーブルの主ノードをドラッグして、ルックアップ テーブルを作成したり、オブジェクト、**データソース**列または関連する子テーブルのプロパティに既にバインドされているコントロールにウィンドウ。  
   
  たとえば、販売データベースの `Orders` テーブルであれば、次のように使用されます。 内の各レコード、`Orders`テーブルが含まれています、`CustomerID`どの顧客が注文を示します。 `CustomerID`で顧客レコードを参照する外部キー、`Customers`テーブル。 注文の一覧を表示すると、`Orders`テーブルの代わりに実際の顧客名を表示する可能性があります、`CustomerID`します。 顧客名いるため、`Customers`テーブル、顧客の名前を表示するルックアップ テーブルを作成する必要があります。 参照テーブルの使用、`CustomerID`値、`Orders`リレーションシップの移動を記録し、顧客名を返します。  

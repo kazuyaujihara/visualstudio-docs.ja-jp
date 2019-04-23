@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c978c4be142283866ce140a1f0870cd654a06dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2566d5d0d653af7caa29474e7916352600bf94d4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978345"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668263"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply テンプレート デザイナー
 **SendAndReceiveReply**のペアを作成するテンプレートが使用される事前構成済み<xref:System.ServiceModel.Activities.Send>と<xref:System.ServiceModel.Activities.ReceiveReply>内のアクティビティを<xref:System.Activities.Statements.Sequence>要求/応答メッセージ交換の一部として関連付けられるアクティビティクライアントのパターン。  
@@ -42,7 +42,6 @@ ms.locfileid: "58978345"
 
 ### <a name="properties-of-receivereply"></a>ReceiveReply のプロパティ  
  次の表に、<xref:System.ServiceModel.Activities.ReceiveReply> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティ グリッドで編集できます。また、その一部は[!INCLUDE[wfd2](../includes/wfd2-md.md)]のデザイナー画面で編集できます。  
-
 
 |                                 プロパティ名                                 | 必須 |                                                                                                                                                                                                                                                                                                                                                        使用方法                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -9,14 +9,14 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6340b30f393fc2690a76febf335883b0ebf6f6ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ea13b68f65d20f48a15c155761adef6bcbd4536b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801764"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666021"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを ASP.NET Web アプリケーションにアタッチし、コンカレンシー データを収集する
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>方法: コマンドラインを使用して同時実行データを収集する ASP.NET Web アプリケーションに、Profiler をアタッチします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、プロファイラーを ASP.NET アプリケーションにアタッチし、プロセス データおよびスレッド コンカレンシー データを収集する方法について説明します。  
@@ -46,7 +46,6 @@ ms.locfileid: "54801764"
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      プロファイリング実行中に収集する Windows パフォーマンス カウンターを指定します。                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 です。 |
    |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.etl) ファイルに収集されます。       |
-
 
 2. 一般的な方法で ASP.NET アプリケーションを起動します。  
 

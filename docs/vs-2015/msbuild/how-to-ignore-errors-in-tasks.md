@@ -12,17 +12,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bac63523829c47b17821ff5905687bd76bbc57e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3c641e1f84e90a9e805630d8711f13e3d212ab17
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54777032"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668081"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>方法 : タスクで発生したエラーを無視する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ビルド時に一部のタスクのエラーを許容するとよい場合があります。 そのような重要でないタスクが失敗しても必要な出力は生成できるため、ビルドを続行させる場合です。 たとえば、各コンポーネントのビルド後にプロジェクトで `SendMail` タスクを使ってメール メッセージを送信する場合、メール サーバーが利用できず、ステータス メッセージを送信できなくても、完了までビルドを続行させるのは許容範囲と見なせる場合があります。 別の例として、通常、ビルド中に中間ファイルが削除される場合、それらのファイルを削除できなくても、完了までビルドを続行させるのは許容範囲と見なせる場合があります。  
   
 ## <a name="using-the-continueonerror-attribute"></a>ContinueOnError 属性の使用  

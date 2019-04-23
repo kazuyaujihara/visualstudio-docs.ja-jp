@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 870f5385074e02036a088b34a94bd4e60d8153bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 5d257953aeefd56a8b58a75377a64a5d9e882a25
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641755"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665208"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>チュートリアル: 初めて VSTO アドイン プロジェクトの作成します。
-  このチュートリアルでは、Microsoft Office Project の VSTO アドインを作成する方法を示します。 この種のソリューションに作成した機能は、どのプロジェクトが開いているかにかかわらず、アプリケーション自体に対して使用できます。 詳細については、[Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)を参照してください。
+  このチュートリアルでは、Microsoft Office Project の VSTO アドインを作成する方法を示します。 この種のソリューションに作成した機能は、どのプロジェクトが開いているかにかかわらず、アプリケーション自体に対して使用できます。 詳細については、次を参照してください。 [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)します。
 
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
@@ -69,9 +69,9 @@ ms.locfileid: "56641755"
 ## <a name="write-code-that-adds-a-new-task-to-a-project"></a>プロジェクトに新しいタスクを追加するコードを記述します。
  次に、ThisAddIn コード ファイルにコードを追加します。 新しいコードでは、Project のオブジェクト モデルを使用して、プロジェクトに新しいタスクを追加します。 ThisAddIn コード ファイルには、次の生成コードが既定で含まれています。
 
--   `ThisAddIn` クラスの部分定義。 このクラスは、コードのエントリ ポイントを提供し、Project のオブジェクト モデルへのアクセスを提供します。 詳細については、[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)を参照してください。`ThisAddIn` クラスの残りの部分は、変更することができない非表示のコード ファイルに定義されています。
+-   `ThisAddIn` クラスの部分定義。 このクラスは、コードのエントリ ポイントを提供し、Project のオブジェクト モデルへのアクセスを提供します。 詳細については、次を参照してください。[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)します。`ThisAddIn` クラスの残りの部分は、変更することができない非表示のコード ファイルに定義されています。
 
--   `ThisAddIn_Startup` および `ThisAddIn_Shutdown` イベント ハンドラー。 これらのイベント ハンドラーは、Project が VSTO アドインを読み込むときとアンロードするときに呼び出されます。 これらのイベント ハンドラーを使用して、VSTO アドインを読み込むときに初期化し、VSTO アドインがアンロードされるときには使用したリソースをクリーンアップします。 詳細については、[Office プロジェクト内のイベント](../vsto/events-in-office-projects.md)を参照してください。
+-   `ThisAddIn_Startup` および `ThisAddIn_Shutdown` イベント ハンドラー。 これらのイベント ハンドラーは、Project が VSTO アドインを読み込むときとアンロードするときに呼び出されます。 これらのイベント ハンドラーを使用して、VSTO アドインを読み込むときに初期化し、VSTO アドインがアンロードされるときには使用したリソースをクリーンアップします。 詳細については、次を参照してください。 [Office プロジェクト内のイベント](../vsto/events-in-office-projects.md)します。
 
 ### <a name="to-add-a-task-to-a-new-project"></a>新しいプロジェクトにタスクを追加するには
 
@@ -86,12 +86,11 @@ ms.locfileid: "56641755"
 
 -   `Application` クラスの `ThisAddIn` フィールド。 `Application` フィールドは、Project の現在のインスタンスを表す `Microsoft.Office.Interop.MSProject.Application` オブジェクトを返します。
 
--   `pj` NewProject イベントのイベント ハンドラーのパラメーター。 `pj` パラメーターは、プロジェクトを表す `Microsoft.Office.Interop.MSProject.Project` オブジェクトです。 詳細については、[ソリューション プロジェクト](../vsto/project-solutions.md)を参照してください。
+-   `pj` NewProject イベントのイベント ハンドラーのパラメーター。 `pj` パラメーターは、プロジェクトを表す `Microsoft.Office.Interop.MSProject.Project` オブジェクトです。 詳細については、次を参照してください。[ソリューション プロジェクト](../vsto/project-solutions.md)します。
 
 1.  C# を使用する場合は、次のコードを `ThisAddIn_Startup` イベント ハンドラーに追加します。 このコードは接続、 `Application_Newproject` NewProject イベントにイベント ハンドラー。
 
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]
-
 
 ## <a name="test-the-project"></a>プロジェクトをテストします。
  プロジェクトをビルドして実行し、新しいプロジェクトに新しいタスクが表示されることを確認します。
@@ -100,7 +99,7 @@ ms.locfileid: "56641755"
 
 1.  **F5** キーを押して、プロジェクトをビルドおよび実行します。 Microsoft Project が起動し、新しい空のプロジェクトが自動的に開きます。
 
-     プロジェクトをビルドすると、プロジェクトのビルド出力フォルダーに含まれるアセンブリにコードがコンパイルされます。 さらに Visual Studio は、Project が VSTO アドインを検出して読み込めるようにする一連のレジストリ エントリを作成し、VSTO アドインを実行できるように開発用コンピューター上のセキュリティを設定します。 詳細については、[Office ソリューション ビルド処理の概要](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100))を参照してください。
+     プロジェクトをビルドすると、プロジェクトのビルド出力フォルダーに含まれるアセンブリにコードがコンパイルされます。 さらに Visual Studio は、Project が VSTO アドインを検出して読み込めるようにする一連のレジストリ エントリを作成し、VSTO アドインを実行できるように開発用コンピューター上のセキュリティを設定します。 詳細については、次を参照してください。 [Office ソリューション ビルド処理の概要](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100))します。
 
 2.  新しいタスクが空のプロジェクトに追加されることを確認します。
 

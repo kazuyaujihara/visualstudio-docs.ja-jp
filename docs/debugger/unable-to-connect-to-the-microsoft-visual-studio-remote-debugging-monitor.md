@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953657"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665624"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio リモート デバッグ モニターに接続できません。
 このメッセージは、リモート デバッグ モニターが正しくリモート コンピューターで設定されていないか、リモートのコンピューターによってにアクセスできないネットワークの問題またはファイアウォールが存在するために発生する可能性があります。
@@ -80,7 +80,6 @@ Visual Studio は、リモート デバッガーに接続できませんでし�
 - ファイアウォールでポートがブロックされます。 ファイアウォールが確認[要求をブロックしていない](#firewall)サードパーティ製のファイアウォールを使用している場合に特にです。
 
 - リモート デバッガーのバージョンでは、Visual Studio は一致しません。 リモート デバッガーの適切なバージョンを取得するを参照してください[リモート デバッグ。](../debugger/remote-debugging.md)
-
 
 ## <a name="valid_name"></a> 要求された名前が有効では、要求された型のデータが見つかりません
 

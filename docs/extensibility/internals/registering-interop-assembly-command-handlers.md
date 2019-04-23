@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5373e292192294b5dd27eff87c9f9f2b2f97820a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7a129e0a66399da1efe9bff4d7aef1a94602fa79
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602794"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664467"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>相互運用機能アセンブリ コマンド ハンドラーの登録
 VSPackage に登録する必要があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) は、そのコマンドを正しくルーティングされるようにします。
@@ -31,7 +31,7 @@ VSPackage に登録する必要があります[!INCLUDE[vsprvs](../../code-quali
  ユーザー インターフェイス (UI) のハンドラーとして機能する VSPackage-ベースのコマンドは、VSPackage にちなんだ名前のレジストリ エントリを必要と`GUID`します。 このレジストリ エントリには、VSPackage の UI のリソース ファイルとそのファイル内でメニュー リソースの場所を指定します。 Hkey_local_machine \software\microsoft\visualstudio の下にレジストリ エントリ自体も\\*\<バージョン >* \Menus、場所*\<バージョン >* バージョンである[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]たとえば 9.0、します。
 
 > [!NOTE]
->  Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]シェルが初期化されます。 ルート パスの詳細については、[Windows インストーラーで Vspackage をインストールする](../../extensibility/internals/installing-vspackages-with-windows-installer.md)を参照してください。
+>  Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]シェルが初期化されます。 ルート パスの詳細については、次を参照してください。 [Windows インストーラーで Vspackage をインストールする](../../extensibility/internals/installing-vspackages-with-windows-installer.md)します。
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU のリソースのレジストリ エントリ
  レジストリ エントリの構造です。
@@ -49,7 +49,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
  \<*リソース DLL へのパス*>、 \< *] メニューの [リソース ID*>、 \<*メニュー バージョン*>
 
  次の表は、フィールドの\<*リソース情報*>。
-
 
 | 要素 | 説明 |
 |---------------------------| - |

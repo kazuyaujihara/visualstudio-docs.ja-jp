@@ -11,17 +11,16 @@ caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 045955ff33cc4c4e745e0c844f1b2cca80e62955
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 01989e9e9d6b186e520f48d45202687d690410fc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773872"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661491"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Native Activity アプリの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual C++ for Cross-Platform Mobile Development オプションをインストールすると、Visual Studio 2015 を使用して、フル機能を持つ Android Native Activity アプリを作成できます。 Android Native Development Kit (NDK) は、純粋な C/C++ コードを使用して Android アプリの大半を実装することを可能にするツールセットです。 いくつかの Java JNI コードはグルーとして機能し、C/C++ コードが Android とやり取りできるようにします。 Android NDK では、Android API レベル 9 を使用して Native Activity アプリを作成する機能が導入されました。 Native Activity コードは、Unreal Engine または OpenGL を使用したゲームやグラフィックス処理の多いアプリを作成できるので人気があります。 このトピックでは、OpenGL を使用した単純な Native Activity アプリの作成方法について説明します。 他のトピックでは、Native Activity コードの編集、ビルド、デバッグ、展開の開発ライフサイクルについて説明します。  
   
  [必要条件](#req)   
