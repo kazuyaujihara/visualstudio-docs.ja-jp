@@ -3,15 +3,15 @@ title: '方法: Visual Studio for Mac で複数のソリューションを開く
 description: Visual Studio for Mac で複数のソリューションを開く方法、およびアプリケーションの複数のインスタンスを開く方法について説明します。
 author: conceptdev
 ms.author: crdun
-ms.date: 07/19/2018
+ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: cdbe02cf3d60b460252f09764521afd240551115
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 031ce885faa29e587fe5d48210d8e13b48fcdc4c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768238"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856345"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Visual Studio for Mac の複数のソリューションまたはインスタンスを開く
 
@@ -21,11 +21,9 @@ ms.locfileid: "55768238"
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Visual Studio for Mac の 2 つ目のインスタンスを開く
 
-統合開発環境 (IDE) の 2 つ目のインスタンスを開くには、**ターミナル** アプリケーションを開いて、次の行を入力します。
+統合開発環境 (IDE) の 2 番目のインスタンスを開くには、ドックまたは**アプリケーション** フォルダーで Visual Studio アイコンを右クリックし、**[新しいインスタンス]** を選択します。
 
-```bash
-open -n "/Applications/Visual Studio.app"
-```
+![Visual Studio アイコンを右クリックした状態の [新しいインスタンス] メニュー オプションのスクリーンショット](media/open-new-instance.png)
 
 ## <a name="open-a-second-solution-inside-a-single-instance"></a>単一のインスタンス内で 2 つ目のソリューションを開く
 

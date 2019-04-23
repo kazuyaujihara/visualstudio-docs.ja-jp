@@ -3,109 +3,111 @@ title: ASP.NET Core の概要
 description: この記事では、インストールや新しいプロジェクトの作成など、Visual Studio for Mac で ASP.NET の使用を始める方法について説明します。
 author: conceptdev
 ms.author: crdun
-ms.date: 07/13/2017
+ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7544d3aa72bb981a35b3c7fc63db3f397f8f26dd
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 183431a160245fd8fc0ec2193c00c32659230459
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953759"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856795"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core の概要
 
- Visual Studio for Mac は最新の ASP.NET Core Web 開発プラットフォームをサポートしているため、アプリのサービスを簡単に開発できます。 ASP.NET Core は .NET Core (.NET Framework とランタイムの最新の進化) で実行されます。 ASP.NET Core は、パフォーマンスが高速になるように調整されています。また、インストール サイズが小さくなるように要素が細かく分かれているほか、Windows に加えて Linux と MacOS でも動作するようにイメージが再構成されています。
+ Visual Studio for Mac は最新の ASP.NET Core Web 開発プラットフォームをサポートしているため、アプリのサービスを簡単に開発できます。 ASP.NET Core は .NET Core (.NET Framework とランタイムの最新の進化) で実行されます。 これは、パフォーマンスが高速になるように調整されています。また、インストール サイズが小さくなるように要素が細かく分かれているほか、Windows に加えて Linux と macOS でも動作するようにイメージが再構成されています。
 
 ## <a name="installing-net-core"></a>.NET Core のインストール
 
-.NET Core 1.1 は、Visual Studio for Mac のインストールと共に自動的にインストールされます。
+.NET Core 2.1 は、Visual Studio for Mac をインストールすると自動的にインストールされます。
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Visual Studio for Mac で ASP.NET Core を作成する
 
-Visual Studio for Mac を開きます。 ようこそページで、**[新しいプロジェクト]** を選択します。
+Visual Studio for Mac を開きます。 スタート画面で、**[新しいプロジェクト]** を選択します。
 
-![[新しいプロジェクト] ダイアログ](media/asp-net-core-image1.png)
+![[新しいプロジェクト] ダイアログ](media/asp-net-core-2019-new-asp-core.png)
 
 [新しいプロジェクト] ダイアログが表示されます。このダイアログで、アプリケーションを作成するためのテンプレートを選択できます。
 
 ASP.NET Core アプリケーションの作成を開始するためのテンプレートがさまざまなプロジェクトで既に用意されています。 これらの数値は、次のとおりです。
 
-- **.NET Core > ASP.NET Core 空の Web アプリケーション**
-- **.NET Core > ASP.NET Core Web アプリ**
-- **.NET Core > ASP.NET Core Web API**
-- **マルチプラットフォーム > アプリ > 接続型アプリ**
+- **[.NET Core] > [空]**
+- **[.NET Core] > [API]**
+- **[.NET Core] > [Web アプリケーション]**
+- **[.NET Core] > [Web アプリケーション (モデル ビュー コントローラー)]**
 
-![ASP.NET プロジェクト オプション](media/asp-net-core-image11.png)
+![ASP.NET プロジェクト オプション](media/asp-net-core-2019-new-asp-core.png)
 
 **[ASP.NET Core Empty Web Application]\(ASP.NET Core 空の Web アプリケーション\)** を選択し、**[次へ]** を押します。 プロジェクトに名前を付け、**[作成]** を押します。 これで新しい ASP.NET Core アプリが作成されます。下の画像のようになります。
 
-![新しい ASP.NET Core の空のプロジェクト](media/asp-net-core-image4.png)
+![新しい ASP.NET Core の空のプロジェクト](media/asp-net-core-2019-empty-project.png)
 
-ASP.NET Core 空の Web アプリケーションでは、2 つの既定のファイルを使って Web アプリケーションが作成されます:**Program.cs** と **Startup.cs** です。これらについて以下で説明します。 また、[依存関係] フォルダーが作成されます。このフォルダーには、ASP.NET Core、.NET Core フレームワーク、プロジェクトをビルドする MSBuild ターゲットなど、プロジェクトの NuGet パッケージ依存関係が含まれます。
+ASP.NET Core の空のテンプレートでは、次の 2 つの既定のファイルを使って Web アプリケーションが作成されます。**Program.cs** と **Startup.cs** です。これらについて以下で説明します。 また、[依存関係] フォルダーが作成されます。このフォルダーには、ASP.NET Core、.NET Core フレームワーク、プロジェクトをビルドする MSBuild ターゲットなど、プロジェクトの NuGet パッケージ依存関係が含まれます。
 
-![Solution Pad と依存関係](media/asp-net-core-image12.png)
+![Solution Pad と依存関係](media/asp-net-core-2019-solution-dependencies.png)
 
 ### <a name="programcs"></a>Program.cs
 
-プロジェクトの **Program.cs** ファイルを開き、中を調べます。 `Main` メソッドで 2 つのことが行われていることに注目してください。作成するアプリに入る項目です。
+プロジェクトの **Program.cs** ファイルを開き、中を調べます。 `Main` メソッドでいくつかのことが行われていることに注目してください。作成するアプリに入る項目です。
 
 ```csharp
-public static void Main(string[] args)
-{
-    var host = new WebHostBuilder()
-        .UseKestrel()
-        .UseContentRoot(Directory.GetCurrentDirectory())
-        .UseIISIntegration()
-        .UseStartup<Startup>()
-        .Build();
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateWebHostBuilder(args).Build().Run();
+        }
 
-    host.Run();
-}
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>();
+    }
 ```
 ASP.NET Core アプリにより、その main メソッドで Web サーバーが作成されます。[`WebHostBuilder`](/aspnet/core/fundamentals/hosting) のインスタンスを介してホストが構成され、起動されます。 このビルダーは、ホストの構成を可能にするメソッドを提供します。 テンプレート アプリで、次の構成が使用されます。
+
+* `.UseStartup<Startup>()`:スタートアップ クラスを指定します。
+
+ただし、次などの追加の構成も追加できます。
 
 * `UseKestrel`:Kestrel サーバーがアプリにより使用されることを指定します
 * `UseContentRoot(Directory.GetCurrentDirectory())`:アプリがこのフォルダーから起動されるとき、Web プロジェクトのルート フォルダーをアプリのコンテンツ ルートとして使用します
 * `.UseIISIntegration()`:アプリが IIS と連動しなければならないことを指定します。 IIS と ASP.NET Core を一緒に使用するには、`UseKestrel` と `UseIISIntegration` を指定する必要があります。
-* `.UseStartup<Startup>()`:スタートアップ クラスを指定します。
-
-  ビルド/実行メソッドにより、IWebHost がビルドされます。これはアプリをホストし、入ってくる HTTP 要求の待ち受けをアプリに開始させます。
 
 ### <a name="startupcs"></a>Startup.cs
 
-アプリのスタートアップ クラスは `WebHostBuilder` の `UseStartup()` メソッドに指定されます。 このクラスで要求処理パイプラインを指定し、サービスを構成します。
+アプリのスタートアップ クラスは `CreateWebHostBuilder` の `UseStartup()` メソッドに指定されます。 このクラスで要求処理パイプラインを指定し、サービスを構成します。
 
 プロジェクトの **Startup.cs** ファイルを開き、中を調べます。
 
 ```csharp
-public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
+    public class Startup
     {
-    }
-
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
-    {
-        loggerFactory.AddConsole();
-
-        if (env.IsDevelopment())
+        // This method gets called by the runtime. Use this method to add services to the container.
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public void ConfigureServices(IServiceCollection services)
         {
-            app.UseDeveloperExceptionPage();
         }
 
-        app.Run(async (context) =>
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            await context.Response.WriteAsync("Hello World!");
-        });
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Hello World!");
+            });
+        }
     }
-}
 ```
 
 このスタートアップ クラスは次の規則に常に従う必要があります。
 
  - 常にパブリックに設定する必要があります
- - `ConfigureServices` と `Configure` という 2 つのパブリック メソッドが含まれている必要があります
+ - `ConfigureServices` と という 2 つのパブリック メソッドが含まれている必要があります `Configure`
 
 `ConfigureServices` メソッドは、アプリで使用されるサービスを定義します。
 
@@ -117,13 +119,13 @@ public class Startup
 
 この簡単な "Hello World" プロジェクトは、コードを追加しなくても実行できるようになりました。 アプリを実行し、それをブラウザーで表示するには、ツールバーの [再生] ボタン (三角形) を押します。
 
-![アプリを実行する](media/asp-net-core-image5.png)
+![アプリを実行する](media/asp-net-core-2019-run-debug.png)
 
 Visual Studio for Mac では、ランダムのポートを利用して Web プロジェクトを起動します。 利用されているポートを調べるには、アプリケーション出力を開きます。これは **[表示]、[パッド]** にあります。 出力は下の画像のようになります。
 
 ![アプリケーション出力と待ち受けポート](media/asp-net-core-image6.png)
 
-ブラウザーを開き、`http://localhost:5000/` を入力します。`5000` は、Visual Studio がアプリケーション出力に出力したポートに変更します。 `Hello World!` というテキストが表示されるはずです。
+プロジェクトが実行されたら、お使いの既定の Web ブラウザーが起動し、[アプリケーション出力] に列挙されている URL に接続される必要があります。 または、任意のブラウザーを開き、`http://localhost:5000/` を入力します。`5000` は、Visual Studio が [アプリケーション出力] に出力したポートに変更します。 `Hello World!` というテキストが表示されるはずです。
 
 ![ブラウザーにテキストが表示される](media/asp-net-core-image7.png)
 
@@ -222,13 +224,13 @@ MVC の使用方法については、「[Overview of ASP.NET Core MVC](/aspnet/c
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-Mac OS 10.11 (El Capitan) 以降に .NET Core を手動インストールする場合、次のように行います。
+Mac OS 10.12 (Sierra) 以降に .NET Core を手動インストールする場合、次のように行います。
 
 1. .NET Core のインストールを開始する前に、すべての OS が安定した最新版に更新されていることを確認します。 これは App Store アプリケーションで確認できます。[更新プログラム] タブを選択してください。
 
 2. [.NET Core サイト](https://www.microsoft.com/net/core#macos)にある手順を実行してください。
 
-4 つすべての手順を完了し、.NET Core が正しくインストールされていることを確認します。
+.NET Core を確実に正しくインストールするには、すべての手順を正常に完了したことを確認します。
 
 ## <a name="summary"></a>まとめ
 

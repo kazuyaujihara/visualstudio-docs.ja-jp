@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/01/2019
+ms.date: 04/02/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 61b5a7e251f4c20a2118869605b89b0cea21ffc3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e1b93685dad395fbda3415e529dbc618c266da66
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160964"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58872996"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2019"></a>Visual Studio のコア エディター (Visual Studio Community 2019 に付属)
 
@@ -40,8 +40,8 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ ユーザー用 V
 
 コンポーネント ID | name | Version | 依存関係の種類
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28315.86 | 必須
-Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs ツール | 16.0.28625.61 | 必須
+Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28714.129 | 必須
+Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs ツール | 16.0.28714.129 | 必須
 Component.Microsoft.Web.LibraryManager | ライブラリ マネージャー | 16.0.28315.86 | 必須
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | 必須
@@ -55,7 +55,7 @@ Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | .NET Core 2.1 開発ツ�
 Microsoft.NetCore.ComponentGroup.Web.2.1 | .NET Core 2.1 開発ツール | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET 用 Azure ライブラリ | 16.0.28315.86 | 必須
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure コンピューティング エミュレーター | 16.0.28625.61 | 必須
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure コンピューティング エミュレーター | 16.0.28720.110 | 必須
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure Storage エミュレーター | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 接続および発行ツール | 16.0.28315.86 | 必須
@@ -67,9 +67,9 @@ Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診断 | 16
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript および TypeScript の言語サポート | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed Desktop Workload コア | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC Driver | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28625.61 | 必須
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28707.177 | 必須
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL ランタイム | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server の CLR データ型 | 16.0.28315.86 | 必須
@@ -83,7 +83,7 @@ Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites | Azure 開発の前�
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Azure WebJobs ツール | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET と Web の開発ツールの前提条件 | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET と Web 開発 | 16.0.28621.142 | 必須
-Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake と Stream Analytics ツール | 16.0.28625.61 | 推奨
+Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake と Stream Analytics ツール | 16.0.28720.110 | 推奨
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | 推奨
@@ -125,9 +125,9 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 コンポーネント ID | name | Version | 依存関係の種類
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28315.86 | 推奨
+Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28714.129 | 推奨
 Component.Microsoft.Web.LibraryManager | ライブラリ マネージャー | 16.0.28315.86 | 推奨
-Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake と Stream Analytics ツール | 16.0.28625.61 | 推奨
+Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake と Stream Analytics ツール | 16.0.28720.110 | 推奨
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | 推奨
@@ -141,7 +141,7 @@ Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 �
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開発ツール | 16.0.28621.142 | 推奨
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET 用 Azure ライブラリ | 16.0.28315.86 | 推奨
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure コンピューティング エミュレーター | 16.0.28625.61 | 推奨
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure コンピューティング エミュレーター | 16.0.28720.110 | 推奨
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure Storage エミュレーター | 16.0.28517.75 | 推奨
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure Cloud Services コア ツール | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services ビルド ツール | 16.0.28625.61 | 推奨
@@ -153,9 +153,9 @@ Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診断 | 16
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript および TypeScript の言語サポート | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed Desktop Workload コア | 16.0.28621.142 | 推奨
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC Driver | 16.0.28625.61 | 推奨
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28625.61 | 推奨
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28707.177 | 推奨
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | 推奨
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 推奨
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 推奨
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL ランタイム | 16.0.28517.75 | 推奨
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server の CLR データ型 | 16.0.28315.86 | 推奨
@@ -188,7 +188,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | 接続および発行ツ�
 Microsoft.VisualStudio.Component.FSharp.Desktop | F# デスクトップ言語のサポート | 16.0.28315.86 | 推奨
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript および TypeScript の言語サポート | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | 推奨
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 推奨
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 推奨
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.WebDeploy | Web 配置 | 16.0.28517.75 | 推奨
@@ -220,11 +220,11 @@ Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開発ツール | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed Desktop Workload コア | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | .NET デスクトップ開発ツール | 16.0.28621.142 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server の CLR データ型 | 16.0.28315.86 | 必須
 Microsoft.VisualStudio.Component.TextTemplating | テキスト テンプレート変換 | 16.0.28625.61 | 必須
-Component.Microsoft.VisualStudio.LiveShare | Live Share - プレビュー | 0.3.1225.0 | 推奨
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | 推奨
 Microsoft.ComponentGroup.Blend | Blend for Visual Studio | 16.0.28315.86 | 推奨
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | 推奨
@@ -235,7 +235,7 @@ Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 �
 Microsoft.VisualStudio.Component.Debugger.JustInTime | Just-In-Time デバッガー | 16.0.28517.75 | 推奨
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 Tools | 16.0.28315.86 | 推奨
 Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 16.0.28528.71 | Optional
-Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28315.86 | Optional
+Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28714.129 | Optional
 Component.Microsoft.Web.LibraryManager | ライブラリ マネージャー | 16.0.28315.86 | Optional
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Optional
@@ -260,7 +260,7 @@ Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Opt
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診断 | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript および TypeScript の言語サポート | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC Driver | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28707.177 | Optional
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.PortableLibrary | .NET ポータブル ライブラリ Targeting Pack | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL ランタイム | 16.0.28517.75 | Optional
@@ -286,11 +286,11 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET と Web 開�
 Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 開発ツール | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.Unity | Visual Studio Tools for Unity | 16.0.28315.86 | 必須
-Component.UnityEngine.x64 | Unity 2018.3 64 ビット エディター | 16.0.28528.71 | 推奨
-Component.UnityEngine.x86 | Unity 5.6 32 ビット エディター | 16.0.28315.86 | 推奨
+Component.UnityEngine.x64 | Unity 2018.3 64 ビット エディター | 16.0.28707.178 | 推奨
+Component.UnityEngine.x86 | Unity 5.6 32 ビット エディター | 16.0.28707.178 | 推奨
 
 ## <a name="linux-development-with-c"></a>C++ による Linux 開発
 
@@ -322,12 +322,12 @@ Component.MDD.Linux.GCC.arm | 埋め込み開発ツールと IoT 開発ツール
 コンポーネント ID | name | Version | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.TextTemplating | テキスト テンプレート変換 | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ コア機能 | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 再頒布可能パッケージの更新プログラム | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Visual C++ コア デスクトップ機能 | 16.0.28315.86 | 必須
-Component.Microsoft.VisualStudio.LiveShare | Live Share - プレビュー | 0.3.1225.0 | 推奨
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | 推奨
 Microsoft.VisualStudio.Component.Debugger.JustInTime | Just-In-Time デバッガー | 16.0.28517.75 | 推奨
 Microsoft.VisualStudio.Component.Graphics.Tools | DirectX 用グラフィックス デバッガーおよび GPU プロファイラー | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | 推奨
@@ -340,7 +340,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x6
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | 推奨
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET と Web 開発 | 16.0.28621.142 | 推奨
 Component.Incredibuild | IncrediBuild - ビルド アクセラレーション | 16.0.28528.71 | Optional
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.3 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 16.0.28625.61 | Optional
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Optional
@@ -369,12 +369,12 @@ Microsoft.VisualStudio.Component.Windows10SDK | Windows ユニバーサル C ラ
 Microsoft.VisualStudio.Component.Graphics.Tools | DirectX 用グラフィックス デバッガーおよび GPU プロファイラー | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ のプロファイル ツール | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | 推奨
-Component.Android.NDK.R16B | Android NDK (R16B) | 16.0.28625.61 | Optional
+Component.Android.NDK.R16B | Android NDK (R16B) | 16.0.28728.38 | Optional
 Component.Android.SDK25.Private | Android SDK セットアップ (API レベル 25) (C++ を使用したモバイル開発のためにローカルにインストール) | 16.0.28625.61 | Optional
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | Optional
 Component.Cocos | Cocos | 16.0.28315.86 | Optional
 Component.Incredibuild | IncrediBuild - ビルド アクセラレーション | 16.0.28528.71 | Optional
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.3 | Optional
 Component.MDD.Android | C++ Android 開発ツール | 16.0.28517.75 | Optional
 Component.OpenJDK | OpenJDK (Microsoft ディストリビューション) | 16.0.28625.61 | Optional
 Component.Unreal | Unreal Engine のインストーラー | 16.0.28625.61 | Optional
@@ -390,7 +390,7 @@ Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開発ツール | 16.0.28516.191 | Optional
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開発ツール | 16.0.28516.191 | Optional
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet ターゲットとビルド タスク | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | Optional
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | Optional
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | Optional
@@ -408,14 +408,14 @@ Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134
 Component.Android.SDK25.Private | Android SDK セットアップ (API レベル 25) (C++ を使用したモバイル開発のためにローカルにインストール) | 16.0.28625.61 | 必須
 Component.OpenJDK | OpenJDK (Microsoft ディストリビューション) | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ コア機能 | 16.0.28625.61 | 必須
-Component.Android.NDK.R16B | Android NDK (R16B) | 16.0.28625.61 | 推奨
+Component.Android.NDK.R16B | Android NDK (R16B) | 16.0.28728.38 | 推奨
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | 推奨
 Component.MDD.Android | C++ Android 開発ツール | 16.0.28517.75 | 推奨
-Component.Android.NDK.R16B_3264 | Android NDK (R16B) (32 ビット) | 16.0.28625.61 | Optional
+Component.Android.NDK.R16B_3264 | Android NDK (R16B) (32 ビット) | 16.0.28728.38 | Optional
 Component.Google.Android.Emulator.API25.Private | Google Android Emulator (API レベル 25) (ローカル インストール) | 16.0.28625.61 | Optional
 Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM) (ローカル インストール) | 16.0.28528.71 | Optional
 Component.Incredibuild | IncrediBuild - ビルド アクセラレーション | 16.0.28528.71 | Optional
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.3 | Optional
 Component.MDD.IOS | C++ iOS 開発ツール | 16.0.28517.75 | Optional
 
 ## <a name="net-core-cross-platform-development"></a>.NET Core クロスプラットフォームの開発
@@ -428,7 +428,7 @@ Component.MDD.IOS | C++ iOS 開発ツール | 16.0.28517.75 | Optional
 
 コンポーネント ID | name | Version | 依存関係の種類
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28315.86 | 必須
+Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28714.129 | 必須
 Component.Microsoft.Web.LibraryManager | ライブラリ マネージャー | 16.0.28315.86 | 必須
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | 必須
@@ -449,9 +449,9 @@ Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診断 | 16
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript および TypeScript の言語サポート | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed Desktop Workload コア | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC Driver | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28625.61 | 必須
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28707.177 | 必須
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL ランタイム | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server の CLR データ型 | 16.0.28315.86 | 必須
@@ -462,12 +462,12 @@ Microsoft.VisualStudio.Component.TextTemplating | テキスト テンプレー�
 Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET と Web の開発ツールの前提条件 | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET と Web 開発 | 16.0.28621.142 | 必須
-Component.Microsoft.VisualStudio.LiveShare | Live Share - プレビュー | 0.3.1225.0 | 推奨
-Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs ツール | 16.0.28625.61 | 推奨
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | 推奨
+Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs ツール | 16.0.28714.129 | 推奨
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET 用 Azure ライブラリ | 16.0.28315.86 | 推奨
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure コンピューティング エミュレーター | 16.0.28625.61 | 推奨
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure コンピューティング エミュレーター | 16.0.28720.110 | 推奨
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure Storage エミュレーター | 16.0.28517.75 | 推奨
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET プロファイル ツール | 16.0.28625.61 | 推奨
@@ -503,7 +503,7 @@ Microsoft.VisualStudio.Component.FSharp | F# 言語サポート | 16.0.28315.86 
 Microsoft.VisualStudio.Component.Merq | Xamarin の一般的な内部ツール | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.MonoDebugger | Mono デバッガー | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine | ASP.NET テンプレート エンジン | 16.0.28315.86 | 必須
 Component.Android.SDK27 | Android SDK セットアップ (API レベル 27) | 16.0.28517.75 | 推奨
@@ -519,7 +519,7 @@ Component.OpenJDK | OpenJDK (Microsoft ディストリビューション) | 16.0
 
 コンポーネント ID | name | Version | 依存関係の種類
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28315.86 | 必須
+Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28714.129 | 必須
 Component.Microsoft.Web.LibraryManager | ライブラリ マネージャー | 16.0.28315.86 | 必須
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | 必須
@@ -540,9 +540,9 @@ Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診断 | 16
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript および TypeScript の言語サポート | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed Desktop Workload コア | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC Driver | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28625.61 | 必須
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28707.177 | 必須
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL ランタイム | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server の CLR データ型 | 16.0.28315.86 | 必須
@@ -554,8 +554,8 @@ Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.2862
 Microsoft.VisualStudio.Component.Web | ASP.NET と Web の開発ツール | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET と Web の開発ツールの前提条件 | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET と Web 開発 | 16.0.28621.142 | 必須
-Component.Microsoft.VisualStudio.LiveShare | Live Share - プレビュー | 0.3.1225.0 | 推奨
-Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs ツール | 16.0.28625.61 | 推奨
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | 推奨
+Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs ツール | 16.0.28714.129 | 推奨
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | 推奨
@@ -564,7 +564,7 @@ Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools |
 Microsoft.VisualStudio.Component.AspNet45 | 高度な ASP.NET 機能 | 16.0.28315.86 | 推奨
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET 用 Azure ライブラリ | 16.0.28315.86 | 推奨
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure コンピューティング エミュレーター | 16.0.28625.61 | 推奨
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure コンピューティング エミュレーター | 16.0.28720.110 | 推奨
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure Storage エミュレーター | 16.0.28517.75 | 推奨
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET プロファイル ツール | 16.0.28625.61 | 推奨
@@ -605,7 +605,7 @@ Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript および Ty
 Microsoft.VisualStudio.Component.Node.Tools | Node.js 開発ツール | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET と Web 開発 | 16.0.28621.142 | 必須
-Component.Microsoft.VisualStudio.LiveShare | Live Share - プレビュー | 0.3.1225.0 | 推奨
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | 推奨
 Microsoft.VisualStudio.Component.WebDeploy | Web 配置 | 16.0.28517.75 | 推奨
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 接続および発行ツール | 16.0.28315.86 | Optional
@@ -622,7 +622,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x6
 
 コンポーネント ID | name | Version | 依存関係の種類
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28315.86 | 必須
+Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28714.129 | 必須
 Component.Microsoft.Web.LibraryManager | ライブラリ マネージャー | 16.0.28315.86 | 必須
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | 必須
@@ -642,9 +642,9 @@ Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript および Ty
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed Desktop Workload コア | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | .NET デスクトップ開発ツール | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC Driver | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28625.61 | 必須
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28707.177 | 必須
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.Sharepoint.Tools | Office Developer Tools for Visual Studio | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL ランタイム | 16.0.28517.75 | 必須
@@ -686,7 +686,7 @@ Microsoft.VisualStudio.ComponentGroup.Sharepoint.WIF | Windows Identity Foundati
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Python 言語サポート | 16.0.28625.61 | 必須
 Component.CPython3.x64 | Python 3 64 ビット (3.7.2) | 3.7.2 | 推奨
-Component.Microsoft.VisualStudio.LiveShare | Live Share - プレビュー | 0.3.1225.0 | 推奨
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | 推奨
 Microsoft.Component.PythonTools.Minicondax64 | Python miniconda | 16.0.28625.61 | 推奨
 Microsoft.Component.PythonTools.Web | Python Web サポート | 16.0.28517.75 | 推奨
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 接続および発行ツール | 16.0.28315.86 | 推奨
@@ -697,7 +697,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET と Web 開�
 Component.CPython2.x64 | Python 2 64 ビット (2.7.15) | 2.7.15 | Optional
 Component.CPython2.x86 | Python 2 32 ビット (2.7.15) | 2.7.15 | Optional
 Component.CPython3.x86 | Python 3 32 ビット (3.7.2) | 3.7.2 | Optional
-Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28315.86 | Optional
+Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28714.129 | Optional
 Component.Microsoft.Web.LibraryManager | ライブラリ マネージャー | 16.0.28315.86 | Optional
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 16.0.28625.61 | Optional
@@ -710,7 +710,7 @@ Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開発ツール | 16.0.28621.142 | Optional
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET 用 Azure ライブラリ | 16.0.28315.86 | Optional
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure コンピューティング エミュレーター | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure コンピューティング エミュレーター | 16.0.28720.110 | Optional
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure Storage エミュレーター | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure Cloud Services コア ツール | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services ビルド ツール | 16.0.28625.61 | Optional
@@ -720,9 +720,9 @@ Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Opt
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診断 | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed Desktop Workload コア | 16.0.28621.142 | Optional
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC Driver | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server コマンド ライン ユーティリティ | 16.0.28707.177 | Optional
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | Optional
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | Optional
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL ランタイム | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server の CLR データ型 | 16.0.28315.86 | Optional
@@ -760,7 +760,7 @@ Microsoft.VisualStudio.Component.Graphics | イメージ エディターと 3D �
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診断 | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript および TypeScript の言語サポート | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server の CLR データ型 | 16.0.28315.86 | 必須
 Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.28625.61 | 必須
@@ -806,7 +806,7 @@ Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 16.0.28517.75 | �
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | 必須
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開発ツール | 16.0.28516.191 | 必須
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.VSSDK | Visual Studio SDK | 16.0.28315.86 | 必須
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites | Visual Studio 拡張機能の開発の前提条件 | 16.0.28621.142 | 必須
@@ -833,6 +833,7 @@ Component.GitHub.VisualStudio | Visual Studio 用の GitHub 拡張機能 | 2.5.9
 Component.Xamarin.Inspector | Xamarin Inspector | 16.0.28315.86
 Component.Xamarin.Profiler | Xamarin Profiler | 16.0.28315.86
 Component.Xamarin.Workbooks | Xamarin Workbooks | 16.0.28315.86
+Microsoft.Component.ClickOnce | ClickOnce Publishing | 16.0.28707.177
 Microsoft.Component.HelpViewer | ヘルプ ビューアー | 16.0.28625.61
 Microsoft.NetCore.1x.ComponentGroup.Web | .NET Core 1.0 - 1.1 Web 用開発ツール | 16.0.28621.142
 Microsoft.VisualStudio.Component.AzureDevOps.OfficeIntegration | Azure DevOps Office Integration | 16.0.28625.61
@@ -870,5 +871,6 @@ Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64 | v141 ビルド ツールの
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre | v141 ビルド ツール用 C++ MFC と Spectre 軽減策 (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre | v141 ビルド ツール用 C++ MFC と Spectre 軽減策 (x86 & x64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC v141 – VS 2017 C++ x64/x86 Spectre 軽減ライブラリ (v14.16) | 16.0.28625.61
+Microsoft.VisualStudio.Component.VisualStudioData | データソースとサービス参照 | 16.0.28707.177
 Microsoft.VisualStudio.Component.WinXP | VS 2017 (v141) ツールの C++ Windows XP サポート [非推奨] | 16.0.28625.61
 Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 16.0.28621.142

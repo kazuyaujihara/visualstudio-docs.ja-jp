@@ -3,14 +3,14 @@ title: Visual Studio for Mac にサインインする
 description: Visual Studio for Mac にサインインする方法
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: e34a1a65e168b92f5002fc52586cae8967b46d3a
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: fe3b3ce45f72028e6081a849a9b10cad7a9916b5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953876"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857464"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Visual Studio for Mac にサインインする
 
@@ -24,7 +24,7 @@ ms.locfileid: "56953876"
 
 Visual Studio for Mac にサインインするには、次の手順を実行します。
 
-1. ウェルカム ページの **[サインイン]** リンクをクリックして [アカウント] ダイアログを表示し、**[サインイン]** ボタンをクリックします。
+1. サインイン ウィンドウの **[Microsoft アカウントでサインイン]** ボタンをクリックします。
 
     ![Visual Studio for Mac の [アカウント] ダイアログ](media/signing-in-image12.png)
 
@@ -34,7 +34,7 @@ Visual Studio for Mac にサインインするには、次の手順を実行し�
 
     Xamarin の資格情報を使って Visual Studio for Mac にログインすることはできません。
 
-3. ログインすると、自分のライセンスの種類が表示されます。 このダイアログからは、使う可能性がある他の Microsoft アカウントを追加できます。
+3. ログインすると、Visual Studio 2019 for Mac のスタート ウィンドウが表示されます。 ここから、プロジェクトを開くか、新しいプロジェクトを作成できます。
 
     ![サインイン成功](media/signing-in-image14.png)
 
@@ -42,7 +42,9 @@ Visual Studio for Mac にサインインするには、次の手順を実行し�
 
 Visual Studio for Mac では、個人アカウントに複数のアカウントを追加できます。 これらの追加アカウントを使うと、追加した任意のアカウントから Azure などのリソースにアクセスできます。
 
-追加ユーザー アカウントを追加するには、「[Visual Studio for Mac にサインインする方法](#how-to-sign-in-to-visual-studio-for-mac)」セクションの手順に従います。
+ユーザー アカウントを追加するには、Visual Studio for Mac で **[Visual Studio]、[アカウント]** メニューの順に選択します。 **[追加]...** ボタンをクリックし、アカウントの資格情報を追加入力します。
+
+![アカウントの管理](media/signing-in-image15.png)
 
 ## <a name="see-also"></a>関連項目
 

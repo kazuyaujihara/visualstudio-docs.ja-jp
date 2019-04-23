@@ -1,7 +1,7 @@
 ---
 title: オフライン インストールに必要な証明書をインストールする
 description: Visual Studio オフライン インストール用の証明書をインストールする方法を説明します。
-ms.date: 01/15/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 249a611bf9db43f31b2370a4a2b4c760cb4ebf64
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323069"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789342"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio オフライン インストールに必要な証明書をインストールする
 
@@ -34,17 +34,29 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 
 ### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>オプション 1 - レイアウト フォルダーから手動で証明書をインストールする
 
+::: moniker range="vs-2017"
+
 ネットワーク レイアウトを作成するときに、必要な証明書が Certificates フォルダーにダウンロードされます。 各証明書ファイルをダブルクリックし、証明書マネージャー ウィザードをクリックすることで証明書を手動でインストールできます。 パスワードを求められたら、空のままにしてください。
 
 **更新**:Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、各証明書ファイルを右クリックして [証明書のインストール] を選択した後、証明書マネージャー ウィザードの指示に従って操作することで、手動で証明書をインストールできます。
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ネットワーク レイアウトを作成するときに、必要な証明書が Certificates フォルダーにダウンロードされます。 各証明書ファイルを右クリックして [証明書のインストール] を選択した後、証明書マネージャー ウィザードの指示に従って操作することで、手動で証明書をインストールできます。 パスワードを求められたら、空のままにしてください。
+
+::: moniker-end
+
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>オプション 2 - エンタープライズ環境で信頼されたルート証明書を配布する
 
-最新のルート証明書がないオフラインのコンピューターの場合、管理者が「[信頼されたルートおよび許可されない証明書を構成する](https://technet.microsoft.com/library/dn265983.aspx)」の指示に従って更新できます。
+最新のルート証明書がないオフラインのコンピューターの場合、管理者が「[信頼されたルートおよび許可されない証明書を構成する](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11))」の指示に従って更新できます。
 
 ### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>オプション 3 - Visual Studio のスクリプト化された展開の一部として証明書をインストールする
 
 オフライン環境でクライアント ワークステーションへの Visual Studio の配置をスクリプトにしている場合は、以下の手順に従う必要があります。
+
+::: moniker range="vs-2017"
 
 1. [証明書マネージャー ツール](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) をインストール共有 (たとえば \\server\share\vs2017) にコピーします。 certmgr.exe は Windows 自体には含まれませんが、[Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) の一部として利用できます。
 
@@ -86,7 +98,39 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 
 3. バッチ ファイルをクライアントに配置します。 このコマンドは、管理者特権のプロセスから実行する必要があります。
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. [証明書マネージャー ツール](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) をインストール共有 (たとえば \\server\share\vs2019) にコピーします。 certmgr.exe は Windows 自体には含まれませんが、[Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) の一部として利用できます。
+
+2. 次のコマンドでバッチ ファイルを作成します。
+
+   ```cmd
+   certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   ```
+   
+   あるいは、次のコマンドによって、certutil.exe (Windows に付属している) を使用するバッチ ファイルを作成します。
+   
+      ```cmd
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+
+   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
+   ```
+
+3. バッチ ファイルをクライアントに配置します。 このコマンドは、管理者特権のプロセスから実行する必要があります。
+
+::: moniker-end
+
 ## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>Certificates フォルダー内の証明書ファイルの内容
+
+::: moniker range="vs-2017"
 
 このフォルダー内にある 3 つの .P12 ファイルのそれぞれに、中間証明書とルート証明書が含まれます。 Windows Update で最新の状態になっているほとんどのシステムでは、これらの証明書は既にインストールされています。
 
@@ -108,6 +152,30 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 
 **更新**:Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合、Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* **ManifestSignCertificates.p12** に含まれるもの:
+    * 中間証明書:**Microsoft Code Signing PCA 2011**
+        * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
+    * ルート証明書:**Microsoft Root Certificate Authority 2011**
+        * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
+* **ManifestCounterSignCertificates.p12** に含まれるもの:
+    * 中間証明書:**Microsoft Time-Stamp PCA 2010**
+        * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
+    * ルート証明書:**Microsoft Root Certificate Authority 2010**
+        * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
+* **Vs_installer_opc.SignCertificates.p12** に含まれるもの:
+    * 中間証明書:**Microsoft Code Signing PCA**
+        * すべてのシステムに必要。 Windows Update からすべての更新プログラムが適用されているシステムにはこの証明書がない場合があることに注意してください。
+    * ルート証明書:**Microsoft Root Certificate Authority**
+        * 必須です。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
+
+Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。
+
+::: moniker-end
+
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Certificates フォルダーから証明書が自動的にインストールされません。
 
 署名がオンライン環境で検証されるとき、Windows API が利用されて証明書がシステムにダウンロードされ、追加されます。 このプロセスで、証明書が信頼できることと管理者設定で許可されることが確認されます。 ほとんどのオフライン環境では、この検証プロセスを実行できません。 証明書を手動でインストールすると、証明書が信頼できること、および組織のセキュリティ ポリシーを満たすことを確認できます。
@@ -117,7 +185,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 以下の手順はインストール システムをチェックする方法の 1 つです。
 
 1. **mmc.exe** を実行します。<br/>
-  a.  [ファイル] をクリックし、**[スナップインの追加と削除]** を選択します。<br/>
+  a.  **[ファイル]** をクリックし、**[スナップインの追加と削除]** を選択します。<br/>
   b.  **[証明書]** をダブルクリックし、**[コンピューター アカウント]** を選択して、**[次へ]** をクリックします。<br/>
   c. **[ローカル コンピューター]** を選択し、**[完了]** をクリックして、**[OK]** をクリックします。<br/>
   d. **[証明書 (ローカル コンピューター)]** を展開します。<br/>
@@ -127,7 +195,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
    f. **[中間証明機関]** を展開し、**[証明書]** を選択します。<br/>
     * この一覧で必要な中間証明書を確認します。<br/>
 
-2. [ファイル] をクリックし、**[スナップインの追加と削除]** を選択します。<br/>
+2. **[ファイル]** をクリックし、**[スナップインの追加と削除]** を選択します。<br/>
   a.  **[証明書]** をダブルクリックし、**[ユーザー アカウント]** を選択して、**[完了]**、**[OK]** の順にクリックします。<br/>
   b.  **[証明書 - 現在のユーザー]** を展開します。<br/>
   c. **[中間証明機関]** を展開し、**[証明書]** を選択します。<br/>

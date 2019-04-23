@@ -1,70 +1,36 @@
 ---
 title: サードパーティ製の単体テスト フレームワークをインストールする
-ms.date: 06/07/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982923"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857703"
 ---
 # <a name="install-unit-test-frameworks"></a>単体テスト フレームワークのインストール
 
-Visual Studio テスト エクスプ ローラーは、エクスプ ローラーのアダプター インターフェイスを開発した単体テスト フレームワークを実行できます。 フレームワークのインストール プログラムは、バイナリをインストールし、サポートする言語の Visual Studio プロジェクト テンプレートを追加します。 テンプレートを使用してプロジェクトを作成する際、フレームワークはテスト エクスプ ローラーに登録されます。 Visual Studio ソリューションには異なるフレームワークを使用する単体テスト プロジェクトと、異なる言語を対象とした単体テスト プロジェクトを含めることができます。 テスト エクスプローラーではそれらがすべて実行されます。
+Visual Studio テスト エクスプローラーでは、エクスプローラーに対するアダプター インターフェイスが開発されている任意の単体テスト フレームワークからテストを実行できます。 フレームワークをインストールすると、バイナリがコピーされ、サポートされている言語用の Visual Studio プロジェクト テンプレートが追加されます。 テンプレートを使用してプロジェクトを作成する際、フレームワークはテスト エクスプ ローラーに登録されます。
 
-[MSTest](getting-started-with-unit-testing.md) は Visual Studio が提供するテスト フレームワークであり、既定で Visual Studio と共にインストールされます。
+Visual Studio ソリューションには異なるフレームワークを使用する単体テスト プロジェクトと、異なる言語を対象とした単体テスト プロジェクトを含めることができます。
+
+[MSTest](getting-started-with-unit-testing.md) は Visual Studio で提供されているテスト フレームワークであり、既定でインストールされます。
 
 ## <a name="acquire-frameworks"></a>フレームワークを取得する
 
-Visual Studio 拡張機能マネージャーを使用して、または [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) から、サードパーティ製の単体テスト フレームワークをダウンロードしてインストールすることができます。 フレームワークは、フレームワークの Web サイトなどの他のサイトからダウンロードすることもできます。
+サード パーティ製の単体テスト フレームワークをインストールするには、**NuGet パッケージ マネージャー**を使用します。
 
-### <a name="install-from-visual-studio"></a>Visual Studio からインストールする
+1. テスト コードが含まれているプロジェクトを右クリックして、**[NuGet パッケージの管理]** を選択します。
 
-::: moniker range="vs-2017"
+2. **NuGet パッケージ マネージャー**で、インストールするテスト フレームワークを検索して、**[インストール]** をクリックします。
 
-1. **[ツール]** > **[拡張機能と更新プログラム]** を選択します。
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. **[拡張機能]** > **[拡張機能の管理]** を選択します。
-
-::: moniker-end
-
-2. **[オンライン]** > **[Visual Studio Marketplace]** > **[ツール]** を展開し、**[テスト]** を選択します。
-
-3. 一覧を参照してフレームワークを検索します。
-
-4. フレームワークを選択し、**[ダウンロード]** をクリックします。
-
-詳細については、「[Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)」を参照してください。
-
-### <a name="install-from-the-web"></a>Web からのインストール
-
-関心のあるフレームワークが分かっている場合は、
-
-1. [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) を開きます。
-
-2. **[検索]** ボックスに、フレームワーク名を入力します。
-
-3. 結果の一覧でフレームワークを選択してから、ツールの **Visual Studio Marketplace** ページに移動します。
-
-フレームワークの一覧とともにその他のテスト ツールを参照するには、
-
-1. [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) を開きます。
-
-2. **[カテゴリ/コレクションによるフィルター]** で、**[すべて表示]** を選択します。
-
-3. **[カテゴリ]** の一覧 (**[表示中]** というラベルが付けられている) で、**[ツール]** ノードを展開してから、**[テスト]** をクリックします。
-
-4. 結果の一覧でフレームワークを選択してから、ツールの **Visual Studio Marketplace** ページに移動します。
+   ![Visual Studio の NuGet パッケージ マネージャー](media/vs-2019/nuget-package-manager.png)
 
 ## <a name="update-to-the-latest-test-adapters"></a>最新のテスト アダプターに更新する
 
