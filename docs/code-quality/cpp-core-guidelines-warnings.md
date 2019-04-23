@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 002a82143ca30e87a8e83f3e7e4b7217ab677f11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087925"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 
@@ -84,17 +84,17 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 
 ように、新しいルールを追加する、C++ Core ガイドライン チェッカーの既存のコードを生成する警告の数は増やすことができます。 有効にするのにルールの種類をフィルター処理するのに定義済みの規則のセットを使用することができます。 Visual Studio 2017 バージョン 15.3 の時点では、サポートされている規則セット。
 
-  - **所有者ポインターの規則**適用[所有者に関連するリソース管理を確認します\<T >、C++ Core Guidelines から](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)します。
+- **所有者ポインターの規則**適用[所有者に関連するリソース管理を確認します\<T >、C++ Core Guidelines から](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)します。
 
-  - **Const ルール**適用[、C++ Core guidelines の定数に関連したチェック](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)します。
+- **Const ルール**適用[、C++ Core guidelines の定数に関連したチェック](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)します。
 
-  - **生のポインターの規則**適用[リソース管理に関連する生のポインター、C++ Core guidelines のチェック](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)します。
+- **生のポインターの規則**適用[リソース管理に関連する生のポインター、C++ Core guidelines のチェック](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)します。
 
-  - **一意のポインターの規則**適用[、C++ Core guidelines のユニーク ポインター セマンティクスを持つ型に関連するリソース管理を確認します](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)します。
+- **一意のポインターの規則**適用[、C++ Core guidelines のユニーク ポインター セマンティクスを持つ型に関連するリソース管理を確認します](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)します。
 
-  - **範囲の規則**適用、 [、C++ Core Guidelines のプロファイルの境界](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)します。
+- **範囲の規則**適用、 [、C++ Core Guidelines のプロファイルの境界](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)します。
 
-  - **入力規則**適用、 [、C++ Core Guidelines のプロファイルを入力](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)します。
+- **入力規則**適用、 [、C++ Core Guidelines のプロファイルを入力](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)します。
 
 警告を 1 つだけ、またはグループの数を制限することができます。 **ネイティブ最小**と**ネイティブ推奨**ルール セットには、その他の PREfast のチェックだけでなく C++ Core Check の規則が含まれます。 確認には、使用可能なルール セット、プロジェクトのプロパティ ダイアログを開き、次のように選択します**コード Analysis\General**、にあるボックスを開き、**規則セット**コンボ ボックス、および選択**複数の規則セットの選択**。 Visual Studio でのルール セットの使用に関する詳細については、次を参照してください。[ルール セットのコード分析規則のグループを使用して](using-rule-sets-to-group-code-analysis-rules.md)します。
 

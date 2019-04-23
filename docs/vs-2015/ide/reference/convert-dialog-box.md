@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a67804984c427062e55b72e3bbe942e6e4839f99
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e69b9a96ba2529eba2f981ab79e59c5e7936cf97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086586"
 ---
 # <a name="convert-dialog-box"></a>[変換] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "59652827"
   
 #### <a name="to-access-the-convert-dialog-box"></a>[変換] ダイアログ ボックスにアクセするには  
   
-1.  メニュー バーから **[ファイル]**、 **[開く]**、 **[変換]** の順に選択します。  
+1. メニュー バーから **[ファイル]**、 **[開く]**、 **[変換]** の順に選択します。  
   
      現在使用できるコード変換ツールの一覧が表示されます。  
   
-2.  アプリケーションに適したツールを選択します。  
+2. アプリケーションに適したツールを選択します。  
   
 ## <a name="see-also"></a>関連項目  
  [NOTINBUILD - 方法: プロジェクトを Visual Basic 6.0 からアップグレードする](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
