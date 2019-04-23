@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66bbab5cf82d4ada241d8e5b3a4213ac51ecffd2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c270c67d21c023310df5b25c015afa754787a33f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093557"
 ---
 # <a name="access-stored-font-and-color-settings"></a>アクセスには、フォントおよび色の設定が格納されています。
 
@@ -29,21 +29,21 @@ ms.locfileid: "56335455"
 
 そのため、永続化を開始するには、VSPackage が必要です。
 
--   取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>呼び出してインターフェイス`QueryService`に対してグローバル サービス プロバイダー。
+- 取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>呼び出してインターフェイス`QueryService`に対してグローバル サービス プロバイダー。
 
      `QueryService` サービス ID の引数を使用して呼び出す必要があります`SID_SVsFontAndColorStorage`とのインターフェイス ID 引数`IID_IVsFontAndColorStorage`します。
 
--   使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>メソッドを引数として、カテゴリの GUID とモード フラグを使用して永続化するカテゴリを開きます。
+- 使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>メソッドを引数として、カテゴリの GUID とモード フラグを使用して永続化するカテゴリを開きます。
 
      指定したモード、`fFlags`引数が値から構築された、<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>列挙体。 このモードを制御します。
 
-    -   経由でアクセスできる設定、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。
+    - 経由でアクセスできる設定、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。
 
-    -   すべての設定またはユーザーを変更してを使用して取得する設定のみ、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。
+    - すべての設定またはユーザーを変更してを使用して取得する設定のみ、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。
 
-    -   ユーザー設定に変更を反映する方法。
+    - ユーザー設定に変更を反映する方法。
 
-    -   使用される色の値の形式です。
+    - 使用される色の値の形式です。
 
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>フォントおよび色の状態の永続化を使用するには
 

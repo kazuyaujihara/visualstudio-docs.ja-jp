@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成 | Microsoft Docs'
+title: 'チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,56 +9,56 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118020"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル サービスを利用してデータの格納および提供を行う、最新式のデスクトップ アプリケーションをすばやく作成することができます。  
   
-##  <a name="Requirements"></a> 必要条件  
+## <a name="Requirements"></a> 必要条件  
  このチュートリアルを完了させるための要件は次のとおりです。  
   
--   Visual Studio 2015 - WPF 開発をサポートする任意のバージョン。  
+- Visual Studio 2015 - WPF 開発をサポートする任意のバージョン。  
   
--   アクティブな Microsoft Azure アカウント。  
+- アクティブな Microsoft Azure アカウント。  
   
-    -   無料試用版アカウントのサインアップを、 [ここ](http://azure.microsoft.com/pricing/free-trial/)で行うことができます。  
+    - 無料試用版アカウントのサインアップを、 [ここ](http://azure.microsoft.com/pricing/free-trial/)で行うことができます。  
   
-    -   [MSDN サブスクライバー特典](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)をアクティブにできます。 MSDN サブスクリプションでは、有料の Azure サービスに対して使用できるクレジットが毎月ユーザーに提供されます。  
+    - [MSDN サブスクライバー特典](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)をアクティブにできます。 MSDN サブスクリプションでは、有料の Azure サービスに対して使用できるクレジットが毎月ユーザーに提供されます。  
   
 ## <a name="create-a-project-and-add-references"></a>プロジェクトを作成してソース ファイルを追加する  
  最初の手順では、WPF プロジェクトを作成し、Azure Mobile Services に接続できる NuGet パッケージを追加します。  
   
 #### <a name="to-create-the-project"></a>プロジェクトを作成するには  
   
-1.  メニュー バーで、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
+1. メニュー バーで、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
   
-2.  **[新しいプロジェクト]** ダイアログで、 **[Visual C#]** ノードまたは **[Visual Basic]** ノードを展開し、 **[Windows]** ノードを選択して **[Windows]** ノードを展開してから **[従来の (クラシック) デスクトップ]** ノードを選択します。  
+2. **[新しいプロジェクト]** ダイアログで、 **[Visual C#]** ノードまたは **[Visual Basic]** ノードを展開し、 **[Windows]** ノードを選択して **[Windows]** ノードを展開してから **[従来の (クラシック) デスクトップ]** ノードを選択します。  
   
-3.  テンプレートの一覧で、 **[WPF アプリケーション]** テンプレートを選択します。  
+3. テンプレートの一覧で、 **[WPF アプリケーション]** テンプレートを選択します。  
   
-4.   **[名前]** ボックスに「 `WPFQuickStart`」と入力して、 **[OK]** を選択します。  
+4.  **[名前]** ボックスに「 `WPFQuickStart`」と入力して、 **[OK]** を選択します。  
   
      プロジェクトが作成され、プロジェクト ファイルが **ソリューション エクスプローラー**に追加され、 **MainWindow.xaml** という名前の既定のアプリケーション ウィンドウのデザイナーが表示されます。  
   
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>Microsoft Azure Mobile Services SDK に参照を追加するには  
   
-1.  **ソリューション エクスプローラー**で **[参照]** ノードのショートカット メニューを開き、 **[NuGet パッケージの管理]** を選択します。  
+1. **ソリューション エクスプローラー**で **[参照]** ノードのショートカット メニューを開き、 **[NuGet パッケージの管理]** を選択します。  
   
-2.  **NuGet パッケージ マネージャー**で、**[検索]** フィールドを選択して「`mobileservices`」と入力します。  
+2. **NuGet パッケージ マネージャー**で、**[検索]** フィールドを選択して「`mobileservices`」と入力します。  
   
-3.  左ウィンドウで、 **WindowsAzure.MobileServices**を選択し、右ウィンドウで **[インストール]** ボタンをクリックします。  
+3. 左ウィンドウで、 **WindowsAzure.MobileServices**を選択し、右ウィンドウで **[インストール]** ボタンをクリックします。  
   
     > [!NOTE]
     >  **[プレビュー]** ダイアログが表示されたら、提示された変更を確認した後、 **[OK]** ボタンをクリックします。  
   
-4.  **[ライセンスへの同意]** ダイアログで、各ライセンス条項を確認してから、 **[同意]** ボタンをクリックしてそれらに同意します。  
+4. **[ライセンスへの同意]** ダイアログで、各ライセンス条項を確認してから、 **[同意]** ボタンをクリックしてそれらに同意します。  
   
      必要な参照が **ソリューション エクスプローラー**に追加されます。  
   
@@ -70,17 +70,17 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
 #### <a name="to-add-a-user-control"></a>ユーザー コントロールを追加するには  
   
-1.  **ソリューション エクスプローラー**で、 **[WPFQuickStart]** ノードのショートカット メニューを開き、 **[追加]**、 **[新しいフォルダー]** の順に選択します。  
+1. **ソリューション エクスプローラー**で、 **[WPFQuickStart]** ノードのショートカット メニューを開き、 **[追加]**、 **[新しいフォルダー]** の順に選択します。  
   
-2.  フォルダーに「 `Common`で行うことができます。  
+2. フォルダーに「 `Common`で行うことができます。  
   
-3.  **[Common]** フォルダーのショートカット メニューを開き、 **[追加]**、 **[ユーザー コントロール]** の順に選択します。  
+3. **[Common]** フォルダーのショートカット メニューを開き、 **[追加]**、 **[ユーザー コントロール]** の順に選択します。  
   
-4.   **[新しい項目の追加]** ダイアログで、[名前] フィールドを選択して「 `QuickStartTask`」と入力して、 **[追加]** を選択します。  
+4.  **[新しい項目の追加]** ダイアログで、[名前] フィールドを選択して「 `QuickStartTask`」と入力して、 **[追加]** を選択します。  
   
      ユーザー コントロールがプロジェクトに追加され、 **[QuickStartTask.xaml]** ファイルがデザイナーで開きます。  
   
-5.  デザイナーの下ウィンドウで、 `<Grid>` タグと `</Grid>` タグを選択してから、それらを次の XAML コードに置き換えます。  
+5. デザイナーの下ウィンドウで、 `<Grid>` タグと `</Grid>` タグを選択してから、それらを次の XAML コードに置き換えます。  
   
     ```xaml  
     <Grid VerticalAlignment="Top">  
@@ -100,9 +100,9 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
      ![QuickStartTask ユーザー コントロール](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
   
-6.  **ソリューション エクスプローラー**で、 **[QuickStartTask.xaml]** ノードを展開して **[QuickStartTask.xaml.cs]** ファイルまたは **[QuickStartTask.xaml.vb]** ファイルを開きます。  
+6. **ソリューション エクスプローラー**で、 **[QuickStartTask.xaml]** ノードを展開して **[QuickStartTask.xaml.cs]** ファイルまたは **[QuickStartTask.xaml.vb]** ファイルを開きます。  
   
-7.  コード エディターで、 `namespace WPFQuickStart.Common` (C#) 名前空間または `Public Class QuickStartTask` (VB) メソッドを次のコードに書き換えます。  
+7. コード エディターで、 `namespace WPFQuickStart.Common` (C#) 名前空間または `Public Class QuickStartTask` (VB) メソッドを次のコードに書き換えます。  
   
     ```csharp  
     namespace WPFQuickStart.Common  
@@ -200,27 +200,27 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
      このコードでは依存関係プロパティを使用して、実行時に、番号、タイトル、および説明の各フィールドの値を設定します。  
   
-8.  メニュー バーで、 **[ビルド]**、 **[WPFQuickStart のビルド]** の順に選択してユーザー コントロールをビルドします。  
+8. メニュー バーで、 **[ビルド]**、 **[WPFQuickStart のビルド]** の順に選択してユーザー コントロールをビルドします。  
   
 #### <a name="to-create-and-modify-the-main-window"></a>メイン ウィンドウを作成および変更するには  
   
-1.  **ソリューション エクスプローラー**で、 **[MainWindow.xaml]** ファイルを開きます。  
+1. **ソリューション エクスプローラー**で、 **[MainWindow.xaml]** ファイルを開きます。  
   
-2.  **重要**。 この手順は、C# の場合のみです。 Visual Basic を使用する場合は、次の手順に進んでください。 デザイナーの下ウィンドウで、 `xmlns:local=”clr-namespace:WPFQuickStart”` という行を見つけてから、それを次の XAML コードに置き換えます。  
+2. **重要**。 この手順は、C# の場合のみです。 Visual Basic を使用する場合は、次の手順に進んでください。 デザイナーの下ウィンドウで、 `xmlns:local=”clr-namespace:WPFQuickStart”` という行を見つけてから、それを次の XAML コードに置き換えます。  
   
     ```xaml  
     xmlns:local=”clr-namespace:WPFQuickStart.Common”  
     ```  
   
-3.   **[プロパティ]** ウィンドウで、 **Common** カテゴリ ノードを展開し **[Title]** プロパティを選択してから、「 `WPF Todo List` 」と入力して **Enter** キーを押します。  
+3.  **[プロパティ]** ウィンドウで、 **Common** カテゴリ ノードを展開し **[Title]** プロパティを選択してから、「 `WPF Todo List` 」と入力して **Enter** キーを押します。  
   
      [XAML] ウィンドウの **[Title]** 要素がこの新しい値と一致していることに注目してください。 XAML のプロパティは、[XAML] ウィンドウまたは **[プロパティ]** ウィンドウのいずれかで変更でき、それらの変更は同期されます。  
   
-4.  [XAML] ウィンドウで **[Height]** 要素の値を `768`に設定し、 **[Width]** プロパティの値を `1280`で行うことができます。  
+4. [XAML] ウィンドウで **[Height]** 要素の値を `768`に設定し、 **[Width]** プロパティの値を `1280`で行うことができます。  
   
      これらの要素は、 **[プロパティ]** ウィンドウの **[レイアウト]** カテゴリにある **[Height]** プロパティと **[Width]** プロパティに対応します。  
   
-5.  `<Grid>` タグと `</Grid>` タグを選択してから、それらを次の XAML コードに置き換えます。  
+5. `<Grid>` タグと `</Grid>` タグを選択してから、それらを次の XAML コードに置き換えます。  
   
     ```xaml  
     <Grid>  
@@ -290,9 +290,9 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
     > [!NOTE]
     >  **[エラー一覧]** を開いている場合、次のいくつかの手順の実行中にエラーが表示される可能性があります。 心配には及びません。これらのエラーは、残りの手順を完了すれば表示されなくなります。  
   
-6.  **ソリューション エクスプローラー**で、 **[MainWindow.xaml]** ノードを展開し、 **[MainWindow.xaml.cs]** ファイルまたは **[MainWindow.xaml.vb]** ファイルを開きます。  
+6. **ソリューション エクスプローラー**で、 **[MainWindow.xaml]** ノードを展開し、 **[MainWindow.xaml.cs]** ファイルまたは **[MainWindow.xaml.vb]** ファイルを開きます。  
   
-7.  コード エディターで、ファイルの先頭に次の `using` ディレクティブまたは `Imports` ディレクティブを追加します。  
+7. コード エディターで、ファイルの先頭に次の `using` ディレクティブまたは `Imports` ディレクティブを追加します。  
   
     ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
@@ -304,7 +304,7 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
     Imports Newtonsoft.Json  
     ```  
   
-8.  **[WPFQuickStart]** 名前空間 (C#) または **[Class MainWindow]** クラス (VB) 内のすべてのコードを次のコードに置き換えます。  
+8. **[WPFQuickStart]** 名前空間 (C#) または **[Class MainWindow]** クラス (VB) 内のすべてのコードを次のコードに置き換えます。  
   
     ```csharp  
     namespace WPFQuickStart  
@@ -475,31 +475,31 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
 #### <a name="to-create-a-mobile-service"></a>モバイル サービスを作成するには  
   
-1.  Web ブラウザーを開いて Microsoft Azure ポータルにログインし、 **[Mobile Services]** タブをクリックします。  
+1. Web ブラウザーを開いて Microsoft Azure ポータルにログインし、 **[Mobile Services]** タブをクリックします。  
   
-2.  **[新規]** ボタンをクリックし、ポップアップ ダイアログで **[コンピューティング]**、**[モバイル サービス]、[作成]** の順に選択します。  
+2. **[新規]** ボタンをクリックし、ポップアップ ダイアログで **[コンピューティング]**、**[モバイル サービス]、[作成]** の順に選択します。  
   
-3.  **[新しいモバイル サービス]** ダイアログで、**[URL]** テキストボックスを選択して「`wpfquickstart01`」と入力します。  
+3. **[新しいモバイル サービス]** ダイアログで、**[URL]** テキストボックスを選択して「`wpfquickstart01`」と入力します。  
   
     > [!NOTE]
     >  URL の数字部分の変更が必要になる場合があります。 Microsoft Azure では、モバイル サービスごとに一意の URL が必要になります。  
   
      サービスの URL を設定してこの`https://wpfquickstart01.azure-mobile.net/`します。  
   
-4.  **[データベース]** 一覧で、データベース オプションを選択します。 このアプリケーションは、おそらく頻繁には使用されないアプリケーションであるため、 **[無料の 20 MB の SQL データベースを作成する]** オプション、またはサブスクリプションに関連付けられている無料のデータベースを選択できます。  
+4. **[データベース]** 一覧で、データベース オプションを選択します。 このアプリケーションは、おそらく頻繁には使用されないアプリケーションであるため、 **[無料の 20 MB の SQL データベースを作成する]** オプション、またはサブスクリプションに関連付けられている無料のデータベースを選択できます。  
   
-5.  **[リージョン]** 一覧で、モバイル サービスをデプロイするデータ センターを選択してから、 **[次へ]** (右矢印) ボタンをクリックします。  
+5. **[リージョン]** 一覧で、モバイル サービスをデプロイするデータ センターを選択してから、 **[次へ]** (右矢印) ボタンをクリックします。  
   
     > [!NOTE]
     >  このサービスの場合、既定の **[バックエンド]** 設定である **JavaScript**を使用します。  
   
-6.  新しいデータベースを作成する場合は、 **[データベースの設定の指定]** ページの **[サーバー]** 一覧で **[新しい SQL データベース サーバー]** を選択し、 **SQL ログイン名** と **パスワード**を入力して、 **[完了]** (チェックマーク) ボタンをクリックします。  
+6. 新しいデータベースを作成する場合は、 **[データベースの設定の指定]** ページの **[サーバー]** 一覧で **[新しい SQL データベース サーバー]** を選択し、 **SQL ログイン名** と **パスワード**を入力して、 **[完了]** (チェックマーク) ボタンをクリックします。  
   
-7.  既存のデータベースを選択した場合は、 **[データベースの設定]** ページで、 **ログイン パスワード** を入力して、 **[完了]** (チェックマーク) ボタンをクリックします。  
+7. 既存のデータベースを選択した場合は、 **[データベースの設定]** ページで、 **ログイン パスワード** を入力して、 **[完了]** (チェックマーク) ボタンをクリックします。  
   
      モバイル サービスを作成する処理が開始されます。 この処理が完了すると、状態が **[準備完了]** に変わり、次の手順に進むことができます。  
   
-8.  ポータルで、新しく作成したモバイル サービスを選択して **[キーの管理]** ボタンをクリックします。  
+8. ポータルで、新しく作成したモバイル サービスを選択して **[キーの管理]** ボタンをクリックします。  
   
 9. **[アクセス キーの管理]** ダイアログで、 **アプリケーション キー**をコピーします。  
   
@@ -507,17 +507,17 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
 #### <a name="to-create-a-table"></a>テーブルを作成するには  
   
-1.  Microsoft Azure ポータルで、モバイル サービスの名前の横にある右矢印をクリックし、メニュー バーで **[データ]** を選択してから、 **[テーブルの追加]** リンクを選択します。  
+1. Microsoft Azure ポータルで、モバイル サービスの名前の横にある右矢印をクリックし、メニュー バーで **[データ]** を選択してから、 **[テーブルの追加]** リンクを選択します。  
   
-2.   **[新しいテーブルの作成]** ダイアログの **[テーブル名]** テキスト ボックスに「 `TodoItem`」と入力して、 **[完了]** (チェックマーク) ボタンをクリックします。  
+2.  **[新しいテーブルの作成]** ダイアログの **[テーブル名]** テキスト ボックスに「 `TodoItem`」と入力して、 **[完了]** (チェックマーク) ボタンをクリックします。  
   
      テーブルの作成が完了するのを待機してから、最後の手順に進みます。  
   
 #### <a name="to-add-a-declaration-for-the-mobile-service"></a>モバイル サービスの宣言を追加するには  
   
-1.  Visual Studio に戻ります。 **ソリューション エクスプローラー**で、 **[App.xaml]** (C#) ノードまたは **[Application.xaml]** (Visual Basic) ノードを展開して **[App.xaml.cs]** ファイルまたは **[App.xaml.vb]** ファイルを開きます。  
+1. Visual Studio に戻ります。 **ソリューション エクスプローラー**で、 **[App.xaml]** (C#) ノードまたは **[Application.xaml]** (Visual Basic) ノードを展開して **[App.xaml.cs]** ファイルまたは **[App.xaml.vb]** ファイルを開きます。  
   
-2.  コード エディターで、ファイルの先頭に次の `using` ディレクティブまたは **Imports** ディレクティブを追加します。  
+2. コード エディターで、ファイルの先頭に次の `using` ディレクティブまたは **Imports** ディレクティブを追加します。  
   
     ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
@@ -527,7 +527,7 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
     Imports Microsoft.WindowsAzure.MobileServices  
     ```  
   
-3.  次の宣言をクラスに追加し、作成したサービスの URL の名前で *YOUR-SERVICE_HERE* を置き換え、前の手順でコピーしたアプリケーション キーで *YOUR-KEY-HERE* を置き換えます。  
+3. 次の宣言をクラスに追加し、作成したサービスの URL の名前で *YOUR-SERVICE_HERE* を置き換え、前の手順でコピーしたアプリケーション キーで *YOUR-KEY-HERE* を置き換えます。  
   
     ```csharp  
     public static MobileServiceClient MobileService = new MobileServiceClient(  
@@ -547,17 +547,17 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
 #### <a name="to-run-the-application"></a>アプリケーションを実行するには  
   
-1.  メニュー バーで、 **[デバッグ]**、 **[デバッグの開始]** の順に選択します (または F5 キーを押します)。  
+1. メニュー バーで、 **[デバッグ]**、 **[デバッグの開始]** の順に選択します (または F5 キーを押します)。  
   
-2.   **[Insert a TodoItem]** テキスト ボックスに「 `Do something`」と入力して、 **[Save]** を選択します。  
+2.  **[Insert a TodoItem]** テキスト ボックスに「 `Do something`」と入力して、 **[Save]** を選択します。  
   
-3.  Enter `Do something else`」と入力して、 **[Save]** ボタンを再度クリックします。  
+3. Enter `Do something else`」と入力して、 **[Save]** ボタンを再度クリックします。  
   
      次の図に示すように、2 つのエントリが **[Query and Update Data]** (データのクエリおよび更新) リストに追加されることに注意してください。  
   
      ![TODO 項目が一覧に追加されます。](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
   
-4.  一覧の **[Do something else]** エントリのチェックボックスをオンにします。  
+4. 一覧の **[Do something else]** エントリのチェックボックスをオンにします。  
   
      これにより、 **UpdateCheckedTodoItem** メソッドが呼び出され、リストとデータベースの両方から項目が削除されます。  
   

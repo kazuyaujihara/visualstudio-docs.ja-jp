@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d797b0881ef06d8934df52473ae8178e520f96f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27690ab275d0c7ef2a090fa8ef2e42887ae9daeb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043850"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>方法: デザイナーを使用して ClickOnce アプリケーションの URL アクティベーションを無効にする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ ms.locfileid: "58962612"
   
 #### <a name="to-disable-url-activation-for-your-application"></a>アプリケーションの URL アクティベーションを無効にするには  
   
-1.  プロジェクト名を右クリックして**ソリューション エクスプ ローラー**、 をクリック**プロパティ**します。  
+1. プロジェクト名を右クリックして**ソリューション エクスプ ローラー**、 をクリック**プロパティ**します。  
   
-2.  **プロパティ** ページで、をクリックして、**発行**タブ。  
+2. **プロパティ** ページで、をクリックして、**発行**タブ。  
   
-3.  **[オプション]** をクリックします。  
+3. **[オプション]** をクリックします。  
   
-4.  クリックして**マニフェスト**します。  
+4. クリックして**マニフェスト**します。  
   
-5.  チェック ボックスをオン**URL 経由でアクティブ化からアプリケーションをブロック**します。  
+5. チェック ボックスをオン**URL 経由でアクティブ化からアプリケーションをブロック**します。  
   
-6.  アプリケーションを配置します。  
+6. アプリケーションを配置します。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)

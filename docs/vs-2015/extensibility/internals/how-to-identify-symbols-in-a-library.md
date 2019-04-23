@@ -11,12 +11,12 @@ ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5dcdbd6d9f9f24b094d62289b0b058edde8c156b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f154c63940189f1a6035246fb7f72ec27be677f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116252"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>方法: ライブラリでのシンボルの識別
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58978118"
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfoNode>  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>。  
   
  階層内の記号の場所は、シンボルを区別します。 これにより、特定のシンボルに移動する、シンボル参照ツールができます。 シンボルに一意な完全修飾パスは、場所を決定します。 パス内の各要素は、ノードです。 パスは、最上位のノードから始まり、特定のシンボルで終わります。 たとえば、M1 メソッドは、C1 クラスのメンバー、C1 が N1 の名前空間にある場合は、M1 メソッドの完全なパスは N1 です。C1 します。M1 します。 このパスには、3 つのノードが含まれています。N1、C1、および M1 します。  
   
@@ -56,7 +56,7 @@ N1
   
 #### <a name="to-obtain-canonical-and-presentation-forms-information"></a>正規の取得、およびプレゼンテーションのフォーム情報  
   
-1.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> メソッドを実装します。  
+1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> メソッドを実装します。  
   
      オブジェクト マネージャーは、シンボルの既定のパスに含まれるノードの一覧を取得するには、このメソッドを呼び出します。  
   
@@ -79,7 +79,7 @@ N1
   
     ```  
   
-2.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> メソッドを実装します。  
+2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> メソッドを実装します。  
   
      オブジェクト マネージャーは、シンボルのプレゼンテーションのパスに含まれるノードの一覧を取得するには、このメソッドを呼び出します。  
   

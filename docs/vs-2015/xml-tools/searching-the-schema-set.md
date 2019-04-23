@@ -9,21 +9,21 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98ed22a9a6e570c5e47c6b51ddf4486334205a0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661270"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080567"
 ---
 # <a name="searching-the-schema-set"></a>スキーマ セットの検索
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XML スキーマ エクスプローラーでは、次の方法でスキーマ セットを検索できます。  
   
--   キーワード検索  
+- キーワード検索  
   
--   スキーマ固有の検索  
+- スキーマ固有の検索  
   
 ## <a name="keyword-search"></a>キーワード検索  
  内の部分文字列を入力してキーワード検索を実行する、**検索 SchemaSet** XML スキーマ エクスプ ローラーのツールバーのテキスト ボックス。  
@@ -32,11 +32,11 @@ XML スキーマ エクスプローラーでは、次の方法でスキーマ �
   
  XML スキーマ エクスプローラーは、次のようにスキーマ セットを検索します。  
   
--   指定したキーワードに一致する `name` 属性または `ref` 属性。 これを使用すると、要素、属性、型などを名前で検索することができます。  
+- 指定したキーワードに一致する `name` 属性または `ref` 属性。 これを使用すると、要素、属性、型などを名前で検索することができます。  
   
--   include ステートメントの `schemaLocation` 属性。  
+- include ステートメントの `schemaLocation` 属性。  
   
--   import ステートメントの `namespace` 属性。  
+- import ステートメントの `namespace` 属性。  
   
 ## <a name="schema-specific-search"></a>スキーマ固有の検索  
  XML スキーマ エクスプローラーには、XML スキーマ エクスプローラーのコンテキスト メニューを使用してアクセスできる組み込みの検索機能もあります。 使用できるコンテキスト メニューの詳細については、次を参照してください。[コンテキスト メニュー](../xml-tools/context-menus-xml-schema-explorer.md)します。 スタート ビューからスキーマ固有の検索を実行することもできます。詳細については、「スキーマ セットの詳細」セクションを参照してください、[スタート ビュー](../xml-tools/start-view.md)トピック。  

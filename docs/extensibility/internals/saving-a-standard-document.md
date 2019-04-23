@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ced873db6c1a3c9adbe40625ed44817eb6703d9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043459"
 ---
 # <a name="saving-a-standard-document"></a>標準ドキュメントの保存
 環境では、保存、名前を付けて保存および すべて保存コマンドを処理します。 ユーザーが選択すると**保存**、**名前を付けて保存**、または**すべて保存**から、**ファイル**メニューまたはその結果、ソリューションを閉じる、 **すべて保存**、次の処理が行われます。
@@ -26,7 +26,7 @@ ms.locfileid: "56614897"
 
  このプロセスの詳細については、次の手順。
 
-1. ときに、**保存**と**名前を付けて保存**コマンドが選択されている場合、環境を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービスのアクティブなドキュメント ウィンドウを確認して、どのような項目を保存するためです。 アクティブなドキュメント ウィンドウがわかったら、環境は、実行中の document テーブル内のドキュメントの階層のポインターと項目の識別子 (itemID) を検索します。 詳細については、[を実行しているドキュメント テーブル](../../extensibility/internals/running-document-table.md)を参照してください。
+1. ときに、**保存**と**名前を付けて保存**コマンドが選択されている場合、環境を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービスのアクティブなドキュメント ウィンドウを確認して、どのような項目を保存するためです。 アクティブなドキュメント ウィンドウがわかったら、環境は、実行中の document テーブル内のドキュメントの階層のポインターと項目の識別子 (itemID) を検索します。 詳細については、次を参照してください。[を実行しているドキュメント テーブル](../../extensibility/internals/running-document-table.md)します。
 
     ときに、**すべて保存**コマンドが選択されている場合、環境では、実行中の document テーブルの情報を使用して保存するすべての項目の一覧をコンパイルします。
 
@@ -50,11 +50,11 @@ ms.locfileid: "56614897"
 
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>その他のファイル プロジェクトにファイルの所有権を変更するには
 
-1.  サービスにクエリ、<xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>インターフェイス。
+1. サービスにクエリ、<xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>インターフェイス。
 
      ポインター<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2>が返されます。
 
-2.  呼び出す、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`、 `punkWindowFrame`) ドキュメントを新しい階層に転送する方法。 名前を付けて保存コマンドを実行する階層では、このメソッドを呼び出します。
+2. 呼び出す、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`、 `punkWindowFrame`) ドキュメントを新しい階層に転送する方法。 名前を付けて保存コマンドを実行する階層では、このメソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

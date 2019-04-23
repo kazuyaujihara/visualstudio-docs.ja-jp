@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a38e453d9bfff3b2633eb98cc5d6127fa126335f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 020fdd5f3df5f0f3b53f1ca28992c2b6a40a35f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116155"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>方法: ClickOnce 配置エラー用にカスタム ログ ファイルの場所を設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "58977648"
   
 ### <a name="to-set-a-custom-log-file-location"></a>カスタム ログ ファイルの場所を設定するには  
   
-1.  開いている**Regedit.exe**します。  
+1. 開いている**Regedit.exe**します。  
   
-2.  ノードに移動`HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`します。  
+2. ノードに移動`HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`します。  
   
-3.  文字列値を設定`LogFilePath`の完全なパスと、任意のカスタム ログの場所のファイル名にします。  
+3. 文字列値を設定`LogFilePath`の完全なパスと、任意のカスタム ログの場所のファイル名にします。  
   
      この場所は、ユーザーが書き込みアクセス権を持っているディレクトリにある必要があります。 たとえば、Windows vista では、次のフォルダー構造を作成し、設定`LogFilePath`C:\Users に\\< ユーザー名\>\Documents\Logs\ClickOnce\installation.log します。  
   

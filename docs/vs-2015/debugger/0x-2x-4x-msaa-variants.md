@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090027"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA バリアント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "58976255"
   
 - `D3D11_TEXTURE2D_DESC` で渡される`pDesc` オブジェクトがレンダー ターゲットを記述する場合。つまり  
   
-  -   BindFlags メンバーは、D3D11_BIND_TARGET フラグまたは D3D11_BIND_DEPTH_STENCIL フラグのいずれかを設定します。  
+  - BindFlags メンバーは、D3D11_BIND_TARGET フラグまたは D3D11_BIND_DEPTH_STENCIL フラグのいずれかを設定します。  
   
-  -   Usage メンバーは D3D11_USAGE_DEFAULT に設定されます。  
+  - Usage メンバーは D3D11_USAGE_DEFAULT に設定されます。  
   
-  -   CPUAccessFlags メンバーは 0 に設定されます。  
+  - CPUAccessFlags メンバーは 0 に設定されます。  
   
-  -   MipLevels メンバーは 1 に設定されます。  
+  - MipLevels メンバーは 1 に設定されます。  
   
 - デバイスは、要求されたレンダー ターゲット形式 (D3D11_TEXTURE2D_DESC::Format member) に対して、要求された sample count (0、2、または 4) および sample quality (0) を、`ID3D11Device::CheckMultisampleQualityLevels` で定義されているとおりにサポートします。  
   

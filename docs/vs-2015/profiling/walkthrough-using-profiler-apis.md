@@ -12,14 +12,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82d6c16c75cb2605bcdb8382d461d3557846fcc2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7cb8d054a2e26caddb2ccc9f37d20bb973b1833f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769636"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090804"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>チュートリアル : プロファイラー API の使用
+# <a name="walkthrough-using-profiler-apis"></a>チュートリアル: Profiler の Api を使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、C# アプリケーションを使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツール API を使用する方法を説明します。 プロファイラー API を使用すると、インストルメンテーション プロファイル中に収集されるデータの量を制限することができます。  
@@ -34,7 +34,7 @@ ms.locfileid: "54769636"
   
  ネイティブ コード用の Visual Studio プロファイラー API は VSPerf.dll にあります。 ヘッダー ファイルの VSPerf.h とインポート ライブラリの VSPerf.lib は、Microsoft Visual Studio 9\Team Tools\Performance Tools ディレクトリにあります。  
   
- マネージド コード用のプロファイラー API は、Microsoft.VisualStudio.Profiler.dll にあります。 この DLL は、Microsoft Visual Studio 9\Team Tools\Performance Tools ディレクトリにあります。 詳細については、「<xref:Microsoft.VisualStudio.Profiler>」を参照してください。  
+ マネージド コード用のプロファイラー API は、Microsoft.VisualStudio.Profiler.dll にあります。 この DLL は、Microsoft Visual Studio 9\Team Tools\Performance Tools ディレクトリにあります。 詳細については、「 <xref:Microsoft.VisualStudio.Profiler> 」を参照してください。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  このチュートリアルでは、ユーザーが選択した開発環境で、デバッグとサンプリングがサポートされていることを前提としています。 以下のトピックでは、これらの前提条件の概要について説明しています。  
@@ -57,12 +57,12 @@ DataCollection.CurrentId);
   
 #### <a name="to-create-the-code-to-profile"></a>プロファイルするコードを作成するには  
   
-1.  Visual Studio で、新しい C# プロジェクトを作成するか、希望に応じて、コマンド ライン ビルドを使用します。  
+1. Visual Studio で、新しい C# プロジェクトを作成するか、希望に応じて、コマンド ライン ビルドを使用します。  
   
     > [!NOTE]
     >  ビルドは、Microsoft Visual Studio 9\Team Tools\Performance Tools ディレクトリにある、Microsoft.VisualStudio.Profiler.dll ライブラリを参照している必要があります。  
   
-2.  プロジェクトに次のコードをコピーし、貼り付けます。  
+2. プロジェクトに次のコードをコピーし、貼り付けます。  
   
     ```  
     using System;  
@@ -141,23 +141,23 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>コマンド ラインでデータを収集し表示するには  
   
-1.  このチュートリアルで前述した「プロファイルするコードを作成するには」の手順で作成したサンプル コードのデバッグ バージョンをコンパイルします。  
+1. このチュートリアルで前述した「プロファイルするコードを作成するには」の手順で作成したサンプル コードのデバッグ バージョンをコンパイルします。  
   
-2.  マネージド アプリケーションをプロファイリングするには、次のコマンドを入力し、適切な環境変数を設定します。  
+2. マネージド アプリケーションをプロファイリングするには、次のコマンドを入力し、適切な環境変数を設定します。  
   
      **VsPefCLREnv /traceon**  
   
-3.  **VSInstr \<filename>.exe** のコマンドを入力します。  
+3. **VSInstr \<filename>.exe** のコマンドを入力します。  
   
-4.  **VSPerfCmd /start:trace /output:\<filename>.vsp** のコマンドを入力します。  
+4. **VSPerfCmd /start:trace /output:\<filename>.vsp** のコマンドを入力します。  
   
-5.  **VSPerfCmd /globaloff** のコマンドを入力します。  
+5. **VSPerfCmd /globaloff** のコマンドを入力します。  
   
-6.  プログラムを実行します。  
+6. プログラムを実行します。  
   
-7.  **VSPerfCmd/shutdown** のコマンドを入力します。  
+7. **VSPerfCmd/shutdown** のコマンドを入力します。  
   
-8.  **VSPerfReport /calltrace:\<filename>.vsp** のコマンドを入力します。  
+8. **VSPerfReport /calltrace:\<filename>.vsp** のコマンドを入力します。  
   
      現在のディレクトリに、結果のパフォーマンス データが含まれた .csv ファイルが作成されます。  
   

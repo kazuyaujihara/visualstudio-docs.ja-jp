@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515338"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080814"
 ---
 # <a name="use-roslyn-analyzers"></a>Roslyn アナライザーを使用して、
 
-.NET コンパイラ プラットフォーム ("Roslyn") アナライザー ルール、または*診断*、入力すると、C# または Visual Basic のコードを分析します。 各診断が、プロジェクトを上書きできる既定の重大度と抑制状態です。 この記事では、設定ルールの重要度、規則のセットを使用して、違反を抑制するについて説明します。
+.NET コンパイラ プラットフォーム ("Roslyn") アナライザー ルール、または*診断*、入力すると、c# または Visual Basic のコードを分析します。 各診断が、プロジェクトを上書きできる既定の重大度と抑制状態です。 この記事では、設定ルールの重要度、規則のセットを使用して、違反を抑制するについて説明します。
 
 ## <a name="analyzers-in-solution-explorer"></a>ソリューション エクスプ ローラーでアナライザー
 
@@ -108,42 +108,42 @@ A[ルール セット](../code-quality/using-rule-sets-to-group-code-analysis-ru
 
 規則違反を抑制する複数の方法はあります。
 
-- 現在のすべての違反を抑制するのには、選択**分析** > **コード分析を実行し、アクティブな懸案事項の抑制**メニュー バーでします。 これは、「基準」と呼ばれます。
+- **分析**メニュー
 
-- 診断を抑制する**ソリューション エクスプ ローラー**、その重要度を設定**None**します。
+   選択**分析** > **コード分析を実行し、アクティブな懸案事項の抑制**メニューバーの現在のすべての違反を抑制します。 これは、「基準」と呼ばれます。
 
-- 規則セット エディターから診断を抑制するのに、名前の横にあるボックスをオフにしますか、設定**アクション**に**None**します。
+- **ソリューション エクスプ ローラー**
 
-- コード エディターから診断を抑制するのには、違反とキーを押してコードの行にカーソルを置き**Ctrl**+**します。** 開く、**クイック アクション**メニュー。 選択**CAxxxx を抑制する** > **ソース**または**CAxxxx を抑制する** > **抑制ファイル内**します。
+   違反を抑制して**ソリューション エクスプ ローラー**、ルールの重大度を設定**None**します。
+
+- **ルール セット エディター**
+
+   規則セット エディターからの違反を抑制するのにその名前の横にあるボックスをオフにします。 または設定**アクション**に**None**します。
+
+- **コード エディター**
+
+   コード エディターからの違反を抑制するのには、違反とキーを押してコードの行にカーソルを置き**Ctrl**+**します。** 開く、**クイック アクション**メニュー。 選択**CAXXXX を抑制する** > **/抑制ファイル内でソース**します。
 
    ![クイック アクション メニューから診断を抑制します。](media/suppress-diagnostic-from-editor.png)
 
-- 診断を抑制する、**エラー一覧**を参照してください[違反エラーの一覧からを抑制する](#suppress-violations-from-the-error-list)します。
+- **エラー一覧**
 
-### <a name="suppress-violations-from-the-error-list"></a>エラーの一覧からの違反を抑制します。
+   1 つまたは複数の診断を抑制することができます、**エラー一覧**を抑制するたいものを選択し、右クリックし、選択して**抑制** > **で Source/In抑制ファイル**します。
 
-1 つまたは複数の診断を抑制することができます、**エラー一覧**を抑制するたいものを選択し、右クリックし、選択して**抑制** > **でソース**または**抑制** > **抑制ファイル内**します。
+   - 表示されないようにする場合**でソース**、**変更のプレビュー**ダイアログが開きのプレビューを表示、 C# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)または Visual Basic [#Disable警告](/dotnet/visual-basic/language-reference/directives/directives)ソース コードに追加されるディレクティブ。
 
-- 選択した場合**でソース**、**変更のプレビュー**ダイアログが開き、C# のプレビューを示します[#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)または Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives)ソース コードに追加されるディレクティブ。
+      ![#Pragma 警告を追加するコード ファイルのプレビュー](media/pragma-warning-preview.png)
 
-   ![#Pragma 警告を追加するコード ファイルのプレビュー](media/pragma-warning-preview.png)
+   - 選択した場合**抑制ファイル内**、**変更のプレビュー**ダイアログが開きのプレビューを表示、<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>グローバル抑制ファイルに追加される属性。
 
-- 選択した場合**抑制ファイル内**、**変更のプレビュー**ダイアログが開きのプレビューを表示、<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>グローバル抑制ファイルに追加される属性。
+      ![SuppressMessage 属性を抑制ファイルに追加のプレビュー](media/preview-changes-in-suppression-file.png)
 
-   ![SuppressMessage 属性を抑制ファイルに追加のプレビュー](media/preview-changes-in-suppression-file.png)
+   **変更のプレビュー**ダイアログ ボックスで、**適用**します。
 
-**変更のプレビュー**ダイアログ ボックスで、**適用**します。
-
-**エラー一覧**診断、または両方からの違反、ライブ コード分析およびビルド規則が表示されます。 ビルドの診断は、古くなっていることができます、ためなど、違反を修正するコードを編集しましたが、再構築していない場合は抑制できませんからこれらの診断、**エラー一覧**します。 ただし、ライブ分析、または IntelliSense からの診断の現在のソースの最新の状態は常から抑制することができます、**エラー一覧**します。 抑制のオプションは、右クリックして、または、コンテキスト メニューで無効になっている、いずれかが必要以上のビルド、選択した診断があること可能性があります。 選択項目から、ビルドの診断を除外するには、スイッチ、**エラー一覧**からソース フィルター**ビルド + IntelliSense**に**Intellisense のみ**します。 次に、抑制して、前述のように続行する診断を選択します。
-
-![Visual Studio でのエラー一覧のソース フィルター](media/error-list-filter.png)
-
-> [!NOTE]
-> .NET Core プロジェクトで NuGet のアナライザーを含むプロジェクトへの参照を追加する場合これらのアナライザーは自動的に追加、依存プロジェクトすぎます。 例では、依存プロジェクトが、単体テスト プロジェクトの場合、この動作を無効にする NuGet パッケージではプライベートとしてマークを付ける、 *.csproj*または *.vbproj*参照先プロジェクトのファイル。
->
-> ```xml
-> <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
-> ```
+   > [!NOTE]
+   > 表示されない場合、**抑制**メニュー オプション**ソリューション エクスプ ローラー**違反がビルドおよびいないライブ分析から送信される可能性があります。 **エラー一覧**診断、または両方からの違反、ライブ コード分析およびビルド規則が表示されます。 ビルドの診断は、古くなっていることができます、ためなど、違反を修正するコードを編集しましたが、再構築していない場合は抑制できませんからこれらの診断、**エラー一覧**します。 ライブ分析、または IntelliSense からの診断は、現在のソースの最新の状態は常とから抑制することができます、**エラー一覧**します。 除外する*ビルド*から選択すると、診断の切り替え、**エラー一覧**からソース フィルター**ビルド + IntelliSense**に**Intellisenseのみ**. 次に、抑制して、前述のように続行する診断を選択します。
+   >
+   > ![Visual Studio でのエラー一覧のソース フィルター](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>コマンドラインの使用状況
 
@@ -169,6 +169,14 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 次の図は、アナライザーの規則違反を含むプロジェクトをビルドしてからコマンド ライン ビルドの出力を示しています。
 
 ![ルール違反を示す MSBuild 出力](media/command-line-build-analyzers.png)
+
+## <a name="dependent-projects"></a>依存プロジェクト
+
+.NET Core プロジェクトで NuGet のアナライザーを含むプロジェクトへの参照を追加する場合これらのアナライザーは自動的に追加、依存プロジェクトすぎます。 例では、依存プロジェクトが、単体テスト プロジェクトの場合、この動作を無効にする NuGet パッケージではプライベートとしてマークを付ける、 *.csproj*または *.vbproj* を設定して、参照先プロジェクトのファイル**PrivateAssets**属性。
+
+```xml
+<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+```
 
 ## <a name="see-also"></a>関連項目
 

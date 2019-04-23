@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02454e308a97f043caa6e85e1c4308c2d2a2402e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8eb5f93ef3770b0d275d71d818e44d52a067f83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094685"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>選択したクラスは、1 つ以上の DataContext メソッドで戻り値の型として使用されているため、削除できません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "59649044"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1.  識別<xref:System.Data.Linq.DataContext>エンティティ クラスを選択して戻り値の型として使用するメソッド、<xref:System.Data.Linq.DataContext>メソッドにメソッド ペインおよび検査、**戻り値の型**プロパティ、**プロパティ**ウィンドウ.  
+1. 識別<xref:System.Data.Linq.DataContext>エンティティ クラスを選択して戻り値の型として使用するメソッド、<xref:System.Data.Linq.DataContext>メソッドにメソッド ペインおよび検査、**戻り値の型**プロパティ、**プロパティ**ウィンドウ.  
   
-2.  **[戻り値の型]** を別のエンティティ クラスに設定するか、メソッド ペインから <xref:System.Data.Linq.DataContext> メソッドを削除します。  
+2. **[戻り値の型]** を別のエンティティ クラスに設定するか、メソッド ペインから <xref:System.Data.Linq.DataContext> メソッドを削除します。  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

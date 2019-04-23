@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e59864cabf638f4525165ed4f31c42fff748bf26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974133"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116746"
 ---
 # <a name="extract-interface-refactoring-c"></a>インターフェイスの抽出リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58974133"
   
 ### <a name="to-use-extract-interface"></a>インターフェイスの抽出を使用するには  
   
-1.  という名前のコンソール アプリケーションを作成する`ExtractInterface`、し、置き換えます`Program`を次のコード  
+1. という名前のコンソール アプリケーションを作成する`ExtractInterface`、し、置き換えます`Program`を次のコード  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -45,7 +45,7 @@ ms.locfileid: "58974133"
     }  
     ```  
   
-2.  カーソルが配置`MethodB`、 をクリック**インターフェイスの抽出**上、**リファクタリング**メニュー。  
+2. カーソルが配置`MethodB`、 をクリック**インターフェイスの抽出**上、**リファクタリング**メニュー。  
   
      **インターフェイスの抽出** ダイアログ ボックスが表示されます。  
   
@@ -53,9 +53,9 @@ ms.locfileid: "58974133"
   
      マウスを右クリックすることもできますを指す**リファクタリング**、順にクリックします**インターフェイスの抽出**を表示する、**インターフェイスの抽出** ダイアログ ボックス。  
   
-3.  クリックして**すべて選択**します。  
+3. クリックして**すべて選択**します。  
   
-4.  **[OK]** をクリックします。  
+4. **[OK]** をクリックします。  
   
      新しいファイルや IProtoA.cs、次のコードを参照してください。  
   

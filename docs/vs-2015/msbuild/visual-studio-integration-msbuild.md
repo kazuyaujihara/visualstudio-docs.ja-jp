@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117500"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio の統合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,20 +69,20 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>インプロセス コンパイラ  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、可能な限り [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] コンパイラのインプロセス バージョンを使用して、パフォーマンスの向上を計ります  ([!INCLUDE[csprcs](../includes/csprcs-md.md)] には該当しません)。これが正しく機能するためには、次の条件が満たされている必要があります。  
   
--   `Vbc` プロジェクトの場合、プロジェクトのターゲットに [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] という名前のタスクが存在すること。  
+- `Vbc` プロジェクトの場合、プロジェクトのターゲットに [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] という名前のタスクが存在すること。  
   
--   このタスクの `UseHostCompilerIfAvailable` パラメーターが true に設定されていること。  
+- このタスクの `UseHostCompilerIfAvailable` パラメーターが true に設定されていること。  
   
 ## <a name="design-time-intellisense"></a>デザイン時における IntelliSense のサポート  
  ビルドによって出力アセンブリが生成される前に、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で IntelliSense がサポートされるようにするには、次の条件が満たされている必要があります。  
   
--   `Compile`という名前のターゲットが存在すること。  
+- `Compile`という名前のターゲットが存在すること。  
   
--   `Compile` ターゲットまたはその依存関係のいずれかによって、 `Csc` や `Vbc`などの、プロジェクトのコンパイラ タスクが呼び出されること。  
+- `Compile` ターゲットまたはその依存関係のいずれかによって、 `Csc` や `Vbc`などの、プロジェクトのコンパイラ タスクが呼び出されること。  
   
--   `Compile` ターゲットまたはその依存関係のいずれかによって、IntelliSense に必要なすべてのパラメーター (特にすべての参照) をコンパイラが受け取ること。  
+- `Compile` ターゲットまたはその依存関係のいずれかによって、IntelliSense に必要なすべてのパラメーター (特にすべての参照) をコンパイラが受け取ること。  
   
--   「インプロセス コンパイラ」のセクションに示した条件が満たされていること。  
+- 「インプロセス コンパイラ」のセクションに示した条件が満たされていること。  
   
 ## <a name="building-solutions"></a>ソリューションの構築  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内では、ソリューション ファイルおよびプロジェクトのビルドの順序は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 自体によって制御されます。 コマンド ラインで msbuild.exe を使用してソリューションをビルドする場合、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] はソリューション ファイルを解析し、プロジェクトのビルドの順序を指定します。 どちらの場合も、プロジェクトは依存関係の順序で個別にビルドされ、プロジェクト間参照は走査されません。 逆に、msbuild.exe を使用して個々のプロジェクトをビルドする場合は、プロジェクト間参照が走査されます。  
@@ -127,22 +127,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>デザイン時におけるターゲットの実行  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] は、プロジェクトを読み込む際に、特定の名前を持つターゲットを実行しようとします。 このようなターゲットとしては、`Compile`、`ResolveAssemblyReferences`、`ResolveCOMReferences`、`GetFrameworkPaths`、`CopyRunEnvironmentFiles` などがあります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はこれらのターゲットを実行することにより、IntelliSense が使用できるようにコンパイラを初期化し、デバッガーを初期化し、さらにソリューション エクスプローラーに表示される参照を解決します。 これらのターゲットが存在しない場合、プロジェクトは正常に読み込まれてビルドされますが、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のデザイン時環境は完全には機能しません。  
   
-##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
+## <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクトを直接編集するには、Visual Studio の XML エディターでプロジェクト ファイルを開きます。  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Visual Studio でプロジェクト ファイルをアンロードして編集するには  
   
-1.  **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューを開き、 **[プロジェクトのアンロード]** をクリックします。  
+1. **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューを開き、 **[プロジェクトのアンロード]** をクリックします。  
   
      プロジェクトに **(利用不可)** のマークが付きます。  
   
-2.  **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、**[\<プロジェクト ファイル> の編集]** をクリックします。  
+2. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、**[\<プロジェクト ファイル> の編集]** をクリックします。  
   
      Visual Studio XML エディターでプロジェクト ファイルが開きます。  
   
-3.  プロジェクト ファイルを編集し、保存して閉じます。  
+3. プロジェクト ファイルを編集し、保存して閉じます。  
   
-4.  **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、 **[プロジェクトの再読み込み]** をクリックします。  
+4. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、 **[プロジェクトの再読み込み]** をクリックします。  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense と検証  
  XML エディターを使用してプロジェクト ファイルを編集する際、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] のスキーマ ファイルによって IntelliSense と検証が実行されます。 これらは、*\<Visual Studio のインストール ディレクトリ>* \Xml\Schemas\1033\MSBuild にあるスキーマ キャッシュにインストールされます。  
@@ -158,21 +158,21 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>参照の解決  
  参照の解決とは、プロジェクト ファイルに格納されている参照項目を使用して、実際のアセンブリを検索する処理をいいます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、**[プロパティ]** ウィンドウに参照ごとに詳細なプロパティを表示するために、参照の解決を実行する必要があります。 次の一覧では、3 種類の参照とその解決方法について説明します。  
   
--   アセンブリ参照  
+- アセンブリ参照  
   
      プロジェクト システムは、 `ResolveAssemblyReferences`という既知の名前を持つターゲットを呼び出します。 このターゲットは、 `ReferencePath`という項目の種類名を持つ項目を生成します。 これらの項目のそれぞれが、参照への完全パスを含む項目規定 (項目の `Include` 属性の値) を持ちます。 これらの項目には、以下の新しいメタデータに加え、入力項目のすべてのメタデータも渡されます。  
   
-    -   アセンブリを出力フォルダーにコピーするかどうかを示す`CopyLocal`。true または false に設定されます。  
+    - アセンブリを出力フォルダーにコピーするかどうかを示す`CopyLocal`。true または false に設定されます。  
   
-    -   参照の元の項目規定を格納している`OriginalItemSpec`。  
+    - 参照の元の項目規定を格納している`OriginalItemSpec`。  
   
-    -   `ResolvedFrom` ディレクトリから解決された場合に "{TargetFrameworkDirectory}" に設定される [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。  
+    - `ResolvedFrom` ディレクトリから解決された場合に "{TargetFrameworkDirectory}" に設定される [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。  
   
--   COM 参照  
+- COM 参照  
   
      プロジェクト システムは、 `ResolveCOMReferences`という既知の名前を持つターゲットを呼び出します。 このターゲットは、 `ComReferenceWrappers`という項目の種類名を持つ項目を生成します。 これらの項目のそれぞれが、COM 参照のための相互運用機能アセンブリへの完全パスを含む項目規定を持ちます。 これらの項目には、アセンブリを出力フォルダーにコピーするかどうかを示す `CopyLocal`という名前の新しいメタデータ (true または false に設定) に加え、入力項目のすべてのメタデータも渡されます。  
   
--   ネイティブ参照  
+- ネイティブ参照  
   
      プロジェクト システムは、 `ResolveNativeReferences`という既知の名前を持つターゲットを呼び出します。 このターゲットは、 `NativeReferenceFile`という項目の種類名を持つ項目を生成します。 これらの項目には、参照の元の項目規定を格納する `OriginalItemSpec`という名前の新しいメタデータに加え、入力項目のすべてのメタデータも渡されます。  
   

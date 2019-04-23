@@ -23,12 +23,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7566d3a89ff27cc473b9352c7e0f02492dc736d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ea1e932f7651439dcb9a1ff85094bd30e5239bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977688"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116167"
 ---
 # <a name="how-to-edit-a-register-value"></a>方法: レジスタ値を編集します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "58977688"
   
 ### <a name="to-change-the-value-of-a-register"></a>レジスタ値を変更するには  
   
-1.  **[レジスタ]** ウィンドウで、Tab キーまたはマウスを使用して、変更する値にカーソルを置きます。 入力するときは、上書きする値の直前の位置にカーソルを置く必要があります。  
+1. **[レジスタ]** ウィンドウで、Tab キーまたはマウスを使用して、変更する値にカーソルを置きます。 入力するときは、上書きする値の直前の位置にカーソルを置く必要があります。  
   
-2.  新しい値を入力します。  
+2. 新しい値を入力します。  
   
     > [!CAUTION]
     >  レジスタ値を変更すると (特に EIP レジスタと EBP レジスタの場合は)、プログラムの実行に影響する場合があります。  

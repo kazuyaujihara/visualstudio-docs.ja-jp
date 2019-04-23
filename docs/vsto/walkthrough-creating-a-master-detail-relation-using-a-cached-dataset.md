@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a3b1491f8a7978fa7f2ab12afa46c5e50fbf80c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: abbc39bece090db962b35c61cb7e77fabaea6be9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091500"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>チュートリアル: キャッシュされたデータセットを使用したマスター/詳細関係を作成します。
   このチュートリアルでは、ワークシートで、マスター/詳細関係を作成して、ソリューションをオフラインで使用できるように、データのキャッシュを示します。
@@ -27,13 +27,13 @@ ms.locfileid: "56603028"
 
  このチュートリアルでは、次の作業を行う方法について説明します。
 
--   コントロールをワークシートに追加します。
+- コントロールをワークシートに追加します。
 
--   ワークシート内でキャッシュされるデータセットを設定します。
+- ワークシート内でキャッシュされるデータセットを設定します。
 
--   レコードのスクロールを有効にするコードを追加します。
+- レコードのスクロールを有効にするコードを追加します。
 
--   プロジェクトをテストします。
+- プロジェクトをテストします。
 
 > [!NOTE]
 >  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
@@ -41,13 +41,13 @@ ms.locfileid: "56603028"
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
--   SQL Server の Northwind サンプル データベースへのアクセス。 データベースには、開発用コンピューター上またはサーバーを指定できます。
+- SQL Server の Northwind サンプル データベースへのアクセス。 データベースには、開発用コンピューター上またはサーバーを指定できます。
 
--   SQL Server データベースの読み書きアクセス許可。
+- SQL Server データベースの読み書きアクセス許可。
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
  この手順では、Excel ブック プロジェクトを作成します。
@@ -88,21 +88,21 @@ ms.locfileid: "56603028"
 
 ### <a name="to-add-a-named-range-and-a-list-object"></a>名前付き範囲およびリスト オブジェクトを追加するには
 
-1.  いることを確認、**マイ マスター Detail.xlsx** 、Visual Studio デザイナーで開いているブックで**Sheet1**が表示されます。
+1. いることを確認、**マイ マスター Detail.xlsx** 、Visual Studio デザイナーで開いているブックで**Sheet1**が表示されます。
 
-2.  開く、**データ ソース**ウィンドウを展開し、**注文**ノード。
+2. 開く、**データ ソース**ウィンドウを展開し、**注文**ノード。
 
-3.  選択、 **OrderID**列で、表示されるドロップダウン矢印を順にクリックします。
+3. 選択、 **OrderID**列で、表示されるドロップダウン矢印を順にクリックします。
 
-4.  クリックして**NamedRange**をドラッグし、ドロップダウン一覧で、 **OrderID**セルに列**A2**します。
+4. クリックして**NamedRange**をドラッグし、ドロップダウン一覧で、 **OrderID**セルに列**A2**します。
 
      A<xref:Microsoft.Office.Tools.Excel.NamedRange>という名前のコントロール`OrderIDNamedRange`セルは**A2**します。 、同時に、<xref:System.Windows.Forms.BindingSource>という名前`OrdersBindingSource`、テーブル アダプターの場合は、および<xref:System.Data.DataSet>インスタンスは、プロジェクトに追加されます。 コントロールにバインドする、<xref:System.Windows.Forms.BindingSource>にさらにバインドされます、<xref:System.Data.DataSet>インスタンス。
 
-5.  過去の下にある列の下へスクロール、**注文**テーブル。 一覧の下部には、 **Order Details** ; テーブルの子であるため、ここでは、**注文**テーブル。 このオプションを選択**Order Details**テーブルと同じレベルでは、1 つない、**注文**テーブル、および、表示されるドロップダウン矢印をクリックします。
+5. 過去の下にある列の下へスクロール、**注文**テーブル。 一覧の下部には、 **Order Details** ; テーブルの子であるため、ここでは、**注文**テーブル。 このオプションを選択**Order Details**テーブルと同じレベルでは、1 つない、**注文**テーブル、および、表示されるドロップダウン矢印をクリックします。
 
-6.  クリックして**ListObject**をドラッグし、ドロップダウン一覧で、 **OrderDetails**テーブル セルに**A6**します。
+6. クリックして**ListObject**をドラッグし、ドロップダウン一覧で、 **OrderDetails**テーブル セルに**A6**します。
 
-7.  A<xref:Microsoft.Office.Tools.Excel.ListObject>という名前のコントロール**Order_DetailsListObject**セルは**A6**にバインドされていると、<xref:System.Windows.Forms.BindingSource>します。
+7. A<xref:Microsoft.Office.Tools.Excel.ListObject>という名前のコントロール**Order_DetailsListObject**セルは**A6**にバインドされていると、<xref:System.Windows.Forms.BindingSource>します。
 
 ### <a name="to-add-two-buttons"></a>2 つのボタンを追加するには
 
@@ -136,14 +136,14 @@ ms.locfileid: "56603028"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>データと、コントロールを初期化するには
 
-1.  **ソリューション エクスプ ローラー**を右クリックして**Sheet1.vb**または**Sheet1.cs**、] をクリックし、**コードの表示**ショートカット メニューの [します。
+1. **ソリューション エクスプ ローラー**を右クリックして**Sheet1.vb**または**Sheet1.cs**、] をクリックし、**コードの表示**ショートカット メニューの [します。
 
-2.  次のコードを追加、`Sheet1_Startup`ボタンのテキストを設定します。
+2. 次のコードを追加、`Sheet1_Startup`ボタンのテキストを設定します。
 
      [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
      [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]
 
-3.  C# の場合のみ、追加ボタンのイベント ハンドラーにイベントをクリックして、`Sheet1_Startup`メソッド。
+3. C# の場合のみ、追加ボタンのイベント ハンドラーにイベントをクリックして、`Sheet1_Startup`メソッド。
 
      [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]
 
@@ -152,12 +152,12 @@ ms.locfileid: "56603028"
 
 ### <a name="to-scroll-through-the-records"></a>レコードをスクロールするには
 
-1.  イベント ハンドラーを追加、<xref:System.Windows.Forms.Control.Click>のイベント`Button1`、下位レコード間を移動するには、次のコードを追加します。
+1. イベント ハンドラーを追加、<xref:System.Windows.Forms.Control.Click>のイベント`Button1`、下位レコード間を移動するには、次のコードを追加します。
 
      [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
      [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]
 
-2.  イベント ハンドラーを追加、<xref:System.Windows.Forms.Control.Click>のイベント`Button2`レコードに進むには、次のコードを追加します。
+2. イベント ハンドラーを追加、<xref:System.Windows.Forms.Control.Click>のイベント`Button2`レコードに進むには、次のコードを追加します。
 
      [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
      [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
@@ -167,26 +167,26 @@ ms.locfileid: "56603028"
 
 ### <a name="to-test-the-data-caching"></a>データ キャッシュをテストするには
 
-1.  **F5**キーを押します。
+1. **F5**キーを押します。
 
-2.  名前付き範囲およびリスト オブジェクトは、データ ソースからのデータで塗りつぶされていることを確認します。
+2. 名前付き範囲およびリスト オブジェクトは、データ ソースからのデータで塗りつぶされていることを確認します。
 
-3.  ボタンをクリックして、一部のレコードをスクロールします。
+3. ボタンをクリックして、一部のレコードをスクロールします。
 
-4.  ブックを保存し、ブックと Visual Studio を閉じます。
+4. ブックを保存し、ブックと Visual Studio を閉じます。
 
-5.  データベースへの接続を無効にします。 データベースがサーバー上にある場合は、コンピューターからネットワーク ケーブルを外します。 またはデータベースが開発用コンピューター上にある場合は、SQL Server サービスを停止します。
+5. データベースへの接続を無効にします。 データベースがサーバー上にある場合は、コンピューターからネットワーク ケーブルを外します。 またはデータベースが開発用コンピューター上にある場合は、SQL Server サービスを停止します。
 
-6.  Excel を開き、開き**マイ マスター Detail.xlsx**から、 *\bin*ディレクトリ (*\My Master-Detail\bin* Visual basic または*\My Master-Detail\bin\デバッグ*(C#))。
+6. Excel を開き、開き**マイ マスター Detail.xlsx**から、 *\bin*ディレクトリ (*\My Master-Detail\bin* Visual basic または*\My Master-Detail\bin\デバッグ*(C#))。
 
-7.  切断されている場合、ワークシートは通常どおりことを確認するレコードの一部をスクロールします。
+7. 切断されている場合、ワークシートは通常どおりことを確認するレコードの一部をスクロールします。
 
-8.  データベースに再接続します。 データベースがサーバー上にある場合に、ネットワークにコンピューターをもう一度接続またはデータベースが開発用コンピューター上にある場合は、SQL Server サービスを開始します。
+8. データベースに再接続します。 データベースがサーバー上にある場合に、ネットワークにコンピューターをもう一度接続またはデータベースが開発用コンピューター上にある場合は、SQL Server サービスを開始します。
 
 ## <a name="next-steps"></a>次の手順
  このチュートリアルでは、ワークシートのマスター/詳細データのリレーションシップを作成して、データセットのキャッシュの基本を説明します。 ここでは、次のタスクを行います。
 
--   ソリューションをデプロイします。 詳細については、次を参照してください[Office ソリューションのデプロイ。](../vsto/deploying-an-office-solution.md)
+- ソリューションを展開する。 詳細については、次を参照してください[Office ソリューションのデプロイ。](../vsto/deploying-an-office-solution.md)
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションでのコントロールにデータをバインドします。](../vsto/binding-data-to-controls-in-office-solutions.md)

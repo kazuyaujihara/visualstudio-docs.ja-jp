@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115992"
 ---
 # <a name="schema-cache"></a>スキーマ キャッシュ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,21 +109,21 @@ XML エディターはスキーマ キャッシュを提供します。このキ
 
 #### <a name="to-change-the-schema-cache-location"></a>スキーマ キャッシュの場所を変更するには  
 
-1.  **ツール**メニューの **オプション**します。  
+1. **ツール**メニューの **オプション**します。  
 
-2.  展開**テキスト エディター**、展開**XML**、 をクリックし、 **その他**します。  
+2. 展開**テキスト エディター**、展開**XML**、 をクリックし、 **その他**します。  
 
-3.  をクリックして、**参照**のボタンでは、**スキーマ**フィールド。  
+3. をクリックして、**参照**のボタンでは、**スキーマ**フィールド。  
 
-4.  スキーマ キャッシュのフォルダーを選択し、クリックして**OK**します。  
+4. スキーマ キャッシュのフォルダーを選択し、クリックして**OK**します。  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>よく使用するスキーマが存在するディレクトリを追加するには  
 
-1.  XML エディターのスキーマ キャッシュ ディレクトリにある catalog.xml ファイルを編集します。  
+1. XML エディターのスキーマ キャッシュ ディレクトリにある catalog.xml ファイルを編集します。  
 
-2.  追加するスキーマのディレクトリを指し示す新しい `<Catalog href="…"/>` 要素を追加します。  
+2. 追加するスキーマのディレクトリを指し示す新しい `<Catalog href="…"/>` 要素を追加します。  
 
-3.  変更内容を保存します。  
+3. 変更内容を保存します。  
 
      カタログは自動的に再度読み込まれます。  
 

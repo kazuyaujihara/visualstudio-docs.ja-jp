@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27aed07b7e4212502a819ce024b0ce46680df6bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759962"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089576"
 ---
 # <a name="resource-details-view---contention-data"></a>リソースの詳細ビュー - 競合データ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ ms.locfileid: "54759962"
   
 #### <a name="to-magnify-a-timeline-segment"></a>タイムライン セグメントを拡大するには  
   
--   タイムラインの領域をマウス ポインターでドラッグします。  
+- タイムラインの領域をマウス ポインターでドラッグします。  
   
      マウス ボタンを離すと、選択した時間セグメントに合わせてビューが表示されます。 セグメントをさらに拡大する手順を繰り返すことができます。 時間スクロール バーのスクロール ボックスは、ビューに表示されている時間セグメントの相対サイズを表します。  
   
 #### <a name="to-zoom-out-on-a-timeline"></a>タイムラインを縮小するには  
   
--   次のいずれかの操作を実行します。  
+- 次のいずれかの操作を実行します。  
   
-    -   前のズーム レベルに戻るには、**[縮小]** をクリックします。  
+    - 前のズーム レベルに戻るには、**[縮小]** をクリックします。  
   
-    -   タイムライン全体をビューに表示するには、**[ズームのリセット]** をクリックします。  
+    - タイムライン全体をビューに表示するには、**[ズームのリセット]** をクリックします。  
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>イベントの呼び出し履歴を表示するには  
   
--   タイムライン グラフで、イベント バーをクリックします。  
+- タイムライン グラフで、イベント バーをクリックします。  
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>呼び出し履歴内の関数のソース コードを表示または編集するには  
   
@@ -55,12 +55,12 @@ ms.locfileid: "54759962"
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>リソースの競合イベントの呼び出しツリーを表示するには  
   
--   タイムライン グラフで、**[合計]** をクリックします。  
+- タイムライン グラフで、**[合計]** をクリックします。  
   
      リソースの競合ビューが表示されます。 詳細については、「[Resource Contentions View](../profiling/resource-contentions-view-contention-data.md) (リソースの競合ビュー)」をご覧ください。  
   
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>スレッドのすべての競合イベントを表示するには  
   
--   タイムライン グラフで、スレッドの名前または ID をクリックします。  
+- タイムライン グラフで、スレッドの名前または ID をクリックします。  
   
      選択したスレッドに対して [スレッドの詳細] ビューが表示されます。 詳細については、「[Thread Details View](../profiling/thread-details-view-contention-data.md) (スレッドの詳細ビュー)」をご覧ください。

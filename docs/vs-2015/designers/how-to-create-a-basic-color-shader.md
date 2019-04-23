@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117760"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>方法: 基本カラー シェーダーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54774115"
   
  このドキュメントでは、以下のアクティビティについて説明します。  
   
--   グラフからのノードの削除  
+- グラフからのノードの削除  
   
--   グラフへのノードの追加  
+- グラフへのノードの追加  
   
--   ノードのプロパティの設定  
+- ノードのプロパティの設定  
   
--   ノードの接続  
+- ノードの接続  
   
 ## <a name="creating-a-flat-color-shader"></a>単色シェーダーの作成  
  RGB 色定数のカラー値を最終的な出力の色に書き込めば、単色シェーダーを実装できます。  
@@ -59,6 +59,6 @@ ms.locfileid: "54774115"
   
 ## <a name="see-also"></a>関連項目  
  [方法: シェーダーを 3-D モデルに適用します。](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)   
+ [方法: シェーダーをエクスポートします。](../designers/how-to-export-a-shader.md)   
  [シェーダー デザイナー](../designers/shader-designer.md)   
  [シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)

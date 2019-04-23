@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2d79c56cfeb2c1a5ef6f83ef64c005fd794c1f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096908"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>カスタム アーキテクチャ検証を依存関係図に追加する
 
@@ -75,7 +75,7 @@ Visual Studio で、ソース コードが依存関係図に、依存関係に�
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>レイヤー検証を別の VSIX に追加するには
 
-1. 新規作成**クラス ライブラリ**プロジェクト。 このプロジェクトには、レイヤー検証クラスが含められます。
+1. 新しい**クラス ライブラリ** プロジェクトを作成します。 このプロジェクトには、レイヤー検証クラスが含められます。
 
 2. 検索または作成を**VSIX プロジェクト**ソリューションにします。 VSIX プロジェクトには、 **source.extension.vsixmanifest**という名前のファイルが含まれます。
 
@@ -83,9 +83,9 @@ Visual Studio で、ソース コードが依存関係図に、依存関係に�
 
 4. **source.extension.vsixmanifest**の **[アセット]** で、レイヤー検証プロジェクトを MEF コンポーネントとして追加します。
 
-    1.  **[新規作成]** をクリックします。
+    1. **[新規作成]** をクリックします。
 
-    2.  **[Add New Asset]** (新しいアセットの追加) ダイアログ ボックスで、次のように設定します。
+    2. **[Add New Asset]** (新しいアセットの追加) ダイアログ ボックスで、次のように設定します。
 
          **[種類]** = **Microsoft.VisualStudio.MefComponent**
 
@@ -95,9 +95,9 @@ Visual Studio で、ソース コードが依存関係図に、依存関係に�
 
 5. また、このプロジェクトをレイヤー検証として追加する必要があります。
 
-    1.  **[新規作成]** をクリックします。
+    1. **[新規作成]** をクリックします。
 
-    2.  **[Add New Asset]** (新しいアセットの追加) ダイアログ ボックスで、次のように設定します。
+    2. **[Add New Asset]** (新しいアセットの追加) ダイアログ ボックスで、次のように設定します。
 
          **[種類]** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**」を参照してください。 これは、ドロップダウン リストのオプションの 1 つではありません。 キーボードで入力する必要があります。
 
@@ -125,7 +125,7 @@ Visual Studio で、ソース コードが依存関係図に、依存関係に�
 
 9. または別のコンピューターで、Visual Studio のメイン インスタンスで、VSIX をインストールするには、検索、 **.vsix**ファイル、 **bin** VSIX プロジェクトのディレクトリ。 このファイルを、VSIX をインストールするコンピューターにコピーします。 Windows エクスプローラーで、VSIX ファイルをダブルクリックします。
 
-##  <a name="programming"></a> 検証のプログラミング
+## <a name="programming"></a> 検証のプログラミング
 
 レイヤー検証拡張機能を定義するには、以下の特性を備えたクラスを定義します。
 
@@ -194,7 +194,7 @@ Visual Studio で、ソース コードが依存関係図に、依存関係に�
 
 レイヤーからコード内の要素へのリンクのカテゴリは "Represents" です。
 
-##  <a name="debugging"></a> 検証のデバッグ
+## <a name="debugging"></a> 検証のデバッグ
 
 レイヤー検証拡張機能をデバッグするには、Ctrl キーを押しながら F5 キーを押します。 Visual Studio の実験用インスタンスが開きます。 このインスタンスで、レイヤー モデルを開くか作成します。 このモデルは、コードと関連付けられている必要があり、少なくとも 1 つの依存関係を含む必要があります。
 
@@ -226,7 +226,7 @@ Visual Studio で、ソース コードが依存関係図に、依存関係に�
 
 適切なバージョンの Visual Studio がインストールされているコンピューターに検証拡張機能をインストールするには、ターゲット コンピューターで VSIX ファイルを開きます。
 
-##  <a name="example"></a> Example code
+## <a name="example"></a> Example code
 
 ```csharp
 using System;

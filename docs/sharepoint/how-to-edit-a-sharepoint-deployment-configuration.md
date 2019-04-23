@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07788a8d45068b34e5e480c3a8aae8563c907791
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cfaa260b32deb2cb91b27dfcaa910e950ee00752
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093710"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>方法: SharePoint の配置構成を編集します。
   配置構成を作成または既存の展開構成を変更できます。 たとえば、1 つの手順を実行したり、展開プロセスの手順の順序を変更します。 作成または組み込みおよびプログラムで追加の構成を変更できないために、展開の構成を変更することがあります。
@@ -28,15 +28,15 @@ ms.locfileid: "56646188"
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>SharePoint の配置構成を作成するには
 
-1.  **ソリューション エクスプ ローラー**を SharePoint プロジェクトを選択し、メニュー バーで、次のように選択します。**プロジェクト**、 _ProjectName_**プロパティ**します。
+1. **ソリューション エクスプ ローラー**を SharePoint プロジェクトを選択し、メニュー バーで、次のように選択します。**プロジェクト**、 _ProjectName_**プロパティ**します。
 
-2.  **SharePoint**  タブで、選択、**新規**ボタンをクリックします。
+2. **SharePoint**  タブで、選択、**新規**ボタンをクリックします。
 
      **新しい配置構成の追加** ダイアログ ボックスが表示されます。
 
-3.  **名前**テキスト ボックスに、展開の構成の名前を入力します。
+3. **名前**テキスト ボックスに、展開の構成の名前を入力します。
 
-4.  **使用可能な展開手順**ウィンドウで、展開の構成に追加するには、選択する手順を選択、(**>**) ボタンをクリックし、選択し、 **[ok]** ボタンをクリックします。
+4. **使用可能な展開手順**ウィンドウで、展開の構成に追加するには、選択する手順を選択、(**>**) ボタンをクリックし、選択し、 **[ok]** ボタンをクリックします。
 
     > [!NOTE]
     >  配置前コマンドまたは配置後コマンドを構成した場合、次の手順は、カスタマイズされた展開構成に追加する場合にのみを実行します。
@@ -45,11 +45,11 @@ ms.locfileid: "56646188"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>アクティブな配置構成を変更するには
 
-1.  **ソリューション エクスプ ローラー**を SharePoint プロジェクトを選択し、メニュー バーで、次のように選択します**プロジェクト** > **\<*ProjectName*。> プロパティ**します。
+1. **ソリューション エクスプ ローラー**を SharePoint プロジェクトを選択し、メニュー バーで、次のように選択します**プロジェクト** > **\<*ProjectName*。> プロパティ**します。
 
-2.  選択、 **SharePoint**タブ。
+2. 選択、 **SharePoint**タブ。
 
-3.  **アクティブな配置構成**リスト ボックスで、使用する配置構成の名前を選択します。
+3. **アクティブな配置構成**リスト ボックスで、使用する配置構成の名前を選択します。
 
 ## <a name="see-also"></a>関連項目
 - [パッケージ化し、SharePoint ソリューションのデプロイ](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

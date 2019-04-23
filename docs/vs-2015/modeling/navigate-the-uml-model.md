@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116668"
 ---
 # <a name="navigate-the-uml-model"></a>UML モデル内を移動する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "58974241"
   
  IElement 以外のすべての型は、1 つ以上のスーパータイプのプロパティを継承します。  
   
--   モデルの種類の概要については、次を参照してください。 [UML モデル要素の型](../modeling/uml-model-element-types.md)します。  
+- モデルの種類の概要については、次を参照してください。 [UML モデル要素の型](../modeling/uml-model-element-types.md)します。  
   
--   API の詳細については、次を参照してください。 [UML モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)します。  
+- API の詳細については、次を参照してください。 [UML モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)します。  
   
 ### <a name="relationships"></a>リレーションシップ  
  UML 仕様に定義されているプロパティおよび関係は、.NET プロパティとして実装されます。  
@@ -122,11 +122,11 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>別のモデルまたは図へのアクセス  
  次の操作を行うことができます。  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modelbus を使用し、さまざまなモデルの要素間のリンクを生成します。 詳細については、次を参照してください。[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)します。  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modelbus を使用し、さまざまなモデルの要素間のリンクを生成します。 詳細については、次を参照してください。[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)します。  
   
--   モデリング プロジェクトと図を [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザー インターフェイスに表示させず、読み取り専用で読み込みます。 詳細については、次を参照してください。[プログラム コードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)します。  
+- モデリング プロジェクトと図を [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザー インターフェイスに表示させず、読み取り専用で読み込みます。 詳細については、次を参照してください。[プログラム コードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)します。  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でモデリング プロジェクトと図を開き、コンテンツにアクセスします。 詳細については、次を参照してください。 [Visual Studio API を使用して UML モデルを開く](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)します。  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でモデリング プロジェクトと図を開き、コンテンツにアクセスします。 詳細については、次を参照してください。 [Visual Studio API を使用して UML モデルを開く](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [UML モデルと図を拡張します。](../modeling/extend-uml-models-and-diagrams.md)   

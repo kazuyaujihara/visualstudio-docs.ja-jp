@@ -10,23 +10,23 @@ ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4227bd8a82df031f04c1ab33761cf9b8520dec7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975359"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116239"
 ---
 # <a name="debugger-contexts"></a>デバッガー コンテキスト
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッグ、デバッグ エンジン (DE) の動作を同時にいくつかの異なるコンテキスト内で。  
   
--   コード コンテキスト、プログラムの実行のストリームの現在の場所について説明します。  
+- コード コンテキスト、プログラムの実行のストリームの現在の場所について説明します。  
   
--   ドキュメントのコンテキストまたは位置で、ソース ドキュメント内の現在位置をについて説明します。  
+- ドキュメントのコンテキストまたは位置で、ソース ドキュメント内の現在位置をについて説明します。  
   
--   式の評価は行わコンテキストを記述する式の評価のコンテキスト。  
+- 式の評価は行わコンテキストを記述する式の評価のコンテキスト。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [コード コンテキスト](../../extensibility/debugger/code-context.md)  

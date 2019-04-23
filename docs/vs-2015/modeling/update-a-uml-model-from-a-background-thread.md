@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0707ec7838ffb2dcebc8a176c79810f2614133
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d5a7ad318b5bd9fac41d5e8835169e4075d1da67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093008"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>バックグラウンド スレッドから UML モデルを更新する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ ms.locfileid: "58977463"
   
  ただし、UML ストアがスレッド セーフでないことに注意してください。 重要な注意点を次に示します。  
   
--   モデルまたは図に対するすべての更新は、ユーザー インターフェイス (UI) スレッドで行う必要があります。 バックグラウンド スレッドでは、<xref:System.Windows.Forms.Control.Invoke%2A> または `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A> を使用して、UI スレッドで実際の更新を行う必要があります。  
+- モデルまたは図に対するすべての更新は、ユーザー インターフェイス (UI) スレッドで行う必要があります。 バックグラウンド スレッドでは、<xref:System.Windows.Forms.Control.Invoke%2A> または `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A> を使用して、UI スレッドで実際の更新を行う必要があります。  
   
--   一連の変更を単一のトランザクションにグループ化する場合は、トランザクションの実行中にユーザーがモデルを編集できないようにすることをお勧めします。 そうしないと、ユーザーが行った編集が同じトランザクションに含まれます。 モーダル ダイアログ ボックスを表示して、ユーザーが変更を行うことができないようにすることができます。 必要に応じて、ダイアログ ボックスにキャンセル ボタンを追加できます。 ユーザーは、実行された変更を確認することができます。  
+- 一連の変更を単一のトランザクションにグループ化する場合は、トランザクションの実行中にユーザーがモデルを編集できないようにすることをお勧めします。 そうしないと、ユーザーが行った編集が同じトランザクションに含まれます。 モーダル ダイアログ ボックスを表示して、ユーザーが変更を行うことができないようにすることができます。 必要に応じて、ダイアログ ボックスにキャンセル ボタンを追加できます。 ユーザーは、実行された変更を確認することができます。  
   
 ## <a name="example"></a>例  
  この例では、バックグラウンド スレッドを使用してモデルにいくつかの変更を加えます。 スレッドの実行中にユーザーを除外するためにダイアログ ボックスが使用されます。 この簡単な例では、ダイアログ ボックスにキャンセル ボタンは用意されていません。 ただし、ボタンは簡単に追加できます。  
@@ -36,17 +36,17 @@ ms.locfileid: "58977463"
   
 2. 次のアセンブリへの参照がプロジェクトに含まれていることを確認します。  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.[バージョン]  
+   - Microsoft.VisualStudio.Modeling.Sdk.[バージョン]  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[バージョン]  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[バージョン]  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces  
+   - Microsoft.VisualStudio.Uml.Interfaces  
   
-   -   System.ComponentModel.Composition  
+   - System.ComponentModel.Composition  
   
-   -   System.Windows.Forms  
+   - System.Windows.Forms  
   
 3. という名前の Windows フォームをプロジェクトに追加**ProgressForm**します。 このフォームには、更新が実行中であることを示すメッセージが表示されます。 他のコントロールを追加する必要はありません。  
   
@@ -162,9 +162,9 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
 #### <a name="to-allow-the-user-to-cancel-the-thread-in-the-example"></a>上記の例でユーザーにスレッドの取り消しを許可するには  
   
-1.  プログレス ダイアログ ボックスにキャンセル ボタンを追加します。  
+1. プログレス ダイアログ ボックスにキャンセル ボタンを追加します。  
   
-2.  プログレス ダイアログ ボックスに次のコードを追加します。  
+2. プログレス ダイアログ ボックスに次のコードを追加します。  
   
      `public event MethodInvoker Cancel;`  
   
@@ -176,7 +176,7 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
      `}`  
   
-3.  Execute() メソッドのフォームの構造の後に次の行を挿入します。  
+3. Execute() メソッドのフォームの構造の後に次の行を挿入します。  
   
      `form.Cancel += delegate() { worker.CancelAsync(); };`  
   
