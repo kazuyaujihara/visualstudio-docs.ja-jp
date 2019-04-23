@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103876"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 静的コード分析によるストア アプリの C++ コード品質の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 > [!NOTE]
 > Visual Studio Ultimate、Visual Studio Premium、および Visual Studio Professional では、コード分析ツールの全機能を使用できます。 MSDN ライブラリの「[コード分析ツールを使用したアプリケーション品質の分析](http://msdn.microsoft.com/library/dd264897.aspx)」を参照してください。
 
-##  <a name="BKMK_Run"></a> コード分析の実行
+## <a name="BKMK_Run"></a> コード分析の実行
  Visual Studio ソリューションでコード分析を実行するには:
 
 - **[ビルド]** メニューの **[ソリューションでコード分析を実行]** をクリックします。
@@ -43,7 +43,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
    ![[コード分析] ウィンドウ](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> コード分析警告の分析と解決
+## <a name="BKMK_Analyze"></a> コード分析警告の分析と解決
  特定の警告を分析するには、[コード分析] ウィンドウで警告のタイトルを選択します。 警告が展開され、問題に関する詳細情報が表示されます。 コード分析は、可能な場合は警告につながる行番号と分析ロジックを表示します。
 
  ![展開されたコード分析の警告](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 > [!TIP]
 >  コード分析は、[コード分析] ウィンドウから再実行できます。 **[分析]** ボタンをクリックし、分析の範囲を選択します。 ソリューション全体または選択したプロジェクトの分析を再実行できます。
 
-##  <a name="BKMK_Suppress"></a> コード分析警告の抑制
+## <a name="BKMK_Suppress"></a> コード分析警告の抑制
  コード分析警告の修正を行わないことを決定する場合があります。 コードを実装したときの警告の発生確率と、警告を解決するためのコード変更の量を比較して、解決しないことを選択できます。 または、警告で使用された分析が特定のコンテキストでは不適切であると判断できます。 個々の警告を抑制して、[コード分析] ウィンドウに表示されないように設定できます。
 
  警告を抑制するには:
@@ -70,12 +70,12 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
    メッセージを非表示にすると、コードの該当行に対して警告を抑制する`#pragma(warning:`*警告 ID*`)` が挿入されます。
 
-##  <a name="BKMK_Search"></a> コード分析結果の検索とフィルター処理
+## <a name="BKMK_Search"></a> コード分析結果の検索とフィルター処理
  警告メッセージの長い一覧の検索と、複数のプロジェクトから成るソリューションの警告をフィルター処理できます。
 
  ![[コード分析] ウィンドウの検索とフィルター処理](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> C++ のコード分析の警告
+## <a name="Warnings"></a> C++ のコード分析の警告
  コード分析は、C++ コードに次の警告を発生させます。
 
 |                                      ルール                                      |                                                  説明                                                  |

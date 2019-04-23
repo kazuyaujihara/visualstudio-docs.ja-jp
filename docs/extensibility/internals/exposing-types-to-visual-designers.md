@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dac34d2e568d5f487e06da89151fb91ebcc69f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104071"
 ---
 # <a name="expose-types-to-visual-designers"></a>ビジュアル デザイナーへの型を公開します。
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ビジュアル デザイナーを表示するためにデザイン時にクラスと型定義へのアクセスが必要です。 クラスは、定義済みの一連の (参照とその依存関係) は、現在のプロジェクトの依存関係の完全なセットを含むアセンブリから読み込まれます。 ビジュアル デザイナーのクラスのアクセスとカスタム ツールによって生成されたファイルで定義されている型に必要もあります。
@@ -31,15 +31,15 @@ ms.locfileid: "56629691"
 
  一時 PE サポートを活用するカスタム ツールは、次の規則に従う必要があります。
 
--   **GeneratesDesignTimeSource**レジストリ内の 1 に設定する必要があります。
+- **GeneratesDesignTimeSource**レジストリ内の 1 に設定する必要があります。
 
      プログラム実行可能ファイルのコンパイルには、この設定がない場所はありません。
 
--   生成されたコードは、グローバル プロジェクト設定と同じ言語でなければなりません。
+- 生成されたコードは、グローバル プロジェクト設定と同じ言語でなければなりません。
 
      要求された拡張機能として、カスタム ツールのレポートに関係なく一時 PE がコンパイルされる<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>される**GeneratesDesignTimeSource**がレジストリ内の 1 に設定します。 拡張機能がある必要はありません *.vb*、 *.cs*、または *.jsl*; 任意の拡張機能であることができます。
 
--   カスタム ツールによって生成されたコードを有効にする必要があり、時に、プロジェクトに存在する参照のセットのみを使用して、独自にコンパイルする必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>の実行が終了します。
+- カスタム ツールによって生成されたコードを有効にする必要があり、時に、プロジェクトに存在する参照のセットのみを使用して、独自にコンパイルする必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>の実行が終了します。
 
      一時 PE がコンパイルされると、コンパイラに提供される唯一のソース ファイルは、カスタム ツールの出力を示します。 そのため、一時 PE を使用するカスタム ツールは、プロジェクト内の他のファイルとは別にコンパイルできる出力ファイルを生成する必要があります。
 
