@@ -8,12 +8,12 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7178b2d901d22956c93145c5e780144b894970de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1cde9cf66979815a804868f481910a2d0a21efa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963061"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111052"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>マネージド コードの複数のスレッドを管理する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58963061"
   
 ## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>バック グラウンド スレッド UI スレッドからに切り替える  
   
-1.  UI スレッドを使用している場合に、バック グラウンド スレッドで非同期作業を行うには、Task.Run() を使用します。  
+1. UI スレッドを使用している場合に、バック グラウンド スレッドで非同期作業を行うには、Task.Run() を使用します。  
   
     ```csharp  
     await Task.Run(async delegate{  
@@ -37,7 +37,7 @@ ms.locfileid: "58963061"
   
     ```  
   
-2.  UI スレッドを使用しているし、使用して、バック グラウンド スレッドで作業を実行している間に同期的にブロックする場合、<xref:System.Threading.Tasks.TaskScheduler>プロパティ`TaskScheduler.Default`内<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
+2. UI スレッドを使用しているし、使用して、バック グラウンド スレッドで作業を実行している間に同期的にブロックする場合、<xref:System.Threading.Tasks.TaskScheduler>プロパティ`TaskScheduler.Default`内<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
   
     ```csharp  
     // using Microsoft.VisualStudio.Threading;  
@@ -51,7 +51,7 @@ ms.locfileid: "58963061"
   
 ## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>バック グラウンド スレッドから UI スレッドへの切り替え  
   
-1.  バック グラウンド スレッドにいるし、使用して、UI スレッドで何かを実行するかどうか<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
+1. バック グラウンド スレッドにいるし、使用して、UI スレッドで何かを実行するかどうか<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
   
     ```csharp  
     // Switch to main thread  

@@ -10,12 +10,12 @@ ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3f0c6109f965f78a3c03b0de8fecf63f702ddb3c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bca32c007e29e910f167df66c92d04bec637f9b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973847"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105460"
 ---
 # <a name="how-to-use-text-markers"></a>方法: テキスト マーカーを使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,33 +26,33 @@ ms.locfileid: "58973847"
   
 #### <a name="to-apply-text-markers"></a>テキスト マーカーに適用するには  
   
-1.  インスタンスを取得、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>クラス。  
+1. インスタンスを取得、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>クラス。  
   
     > [!NOTE]
     >  コア エディターでは、それを編集すると、任意のドキュメントに、標準のテキスト マーカーを自動的に適用して、標準のテキスト マーカーを明示的に適用する必要はありません。  
   
-2.  呼び出すことによって、関心のあるマーカーのマーカーの種類 ID を取得、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>メソッドを`GUID`テキスト マーカーを使用したいのです。  
+2. 呼び出すことによって、関心のあるマーカーのマーカーの種類 ID を取得、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>メソッドを`GUID`テキスト マーカーを使用したいのです。  
   
     > [!NOTE]
     >  使用しないでください、 `GUID` VSPackage またはテキスト マーカーを提供するサービス。  
   
-3.  呼び出すことによって取得したマーカーの種類 ID を使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>メソッドを呼び出すをパラメーターとして、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>メソッドまたは<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>テキスト マーカーをテキストの特定のリージョンに適用する方法。  
+3. 呼び出すことによって取得したマーカーの種類 ID を使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>メソッドを呼び出すをパラメーターとして、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>メソッドまたは<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>テキスト マーカーをテキストの特定のリージョンに適用する方法。  
   
 #### <a name="to-add-features-to-text-markers"></a>テキスト マーカーに機能を追加するには  
   
-1.  テキスト マーカー、ツール ヒント、特殊なコンテキスト メニュー ハンドラーなどの特殊な状況に追加の機能を追加することが望ましい場合があります。 次の手順に従います。  
+1. テキスト マーカー、ツール ヒント、特殊なコンテキスト メニュー ハンドラーなどの特殊な状況に追加の機能を追加することが望ましい場合があります。 次の手順に従います。  
   
-2.  実装するオブジェクトを作成、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>インターフェイス。  
+2. 実装するオブジェクトを作成、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>インターフェイス。  
   
-3.  追加の機能を使用する場合は、実装、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>、および<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>インターフェイスを実装するオブジェクトと同じで、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>インターフェイス。  
+3. 追加の機能を使用する場合は、実装、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>、および<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>インターフェイスを実装するオブジェクトと同じで、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>インターフェイス。  
   
-4.  渡す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>インターフェイスの呼び出しに、作成した、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>メソッドまたは<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>メソッドがテキストの特定のリージョンにテキスト マーカーを適用するために使用します。  
+4. 渡す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>インターフェイスの呼び出しに、作成した、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>メソッドまたは<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>メソッドがテキストの特定のリージョンにテキスト マーカーを適用するために使用します。  
   
-5.  テキスト マーカーのリージョンにコンテキスト メニューのサポートを追加する場合は、メニューを作成する必要があります。  
+5. テキスト マーカーのリージョンにコンテキスト メニューのサポートを追加する場合は、メニューを作成する必要があります。  
   
      コンテキスト メニューを参照を作成する方法の詳細についての[コンテキスト メニュー](../extensibility/context-menus.md)します。  
   
-6.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]環境などの指定のインターフェイスのメソッドの呼び出し、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A>メソッド、または<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>メソッドに応じて。  
+6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]環境などの指定のインターフェイスのメソッドの呼び出し、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A>メソッド、または<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>メソッドに応じて。  
   
 ## <a name="see-also"></a>関連項目  
  [レガシ API を使用したテキスト マーカーの使用](../extensibility/using-text-markers-with-the-legacy-api.md)   

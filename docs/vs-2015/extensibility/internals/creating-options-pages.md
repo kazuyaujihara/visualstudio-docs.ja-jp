@@ -11,12 +11,12 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 319d889d2763662cda92d815ce45a3becfcab8cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c2b993a6c6947adfa3b01f2947b992b23236b8f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962887"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106125"
 ---
 # <a name="creating-options-pages"></a>オプション ページの作成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "58962887"
   
  環境は、特定の実装のオブジェクトをインスタンス化するため**ツール オプション**IDE によって特定のページが表示されるときにページします。  
   
--   A**ツール オプション**独自のオブジェクトでは、VSPackage を実装するオブジェクトではなく、ページを実装する必要があります。  
+- A**ツール オプション**独自のオブジェクトでは、VSPackage を実装するオブジェクトではなく、ページを実装する必要があります。  
   
--   オブジェクトは、複数を実装できません**ツール オプション**ページ。  
+- オブジェクトは、複数を実装できません**ツール オプション**ページ。  
   
 ## <a name="registering-as-a-tools-options-page-provider"></a>ツール オプション ページ プロバイダーとして登録します。  
  VSPackage サポート ユーザー構成を通じて**ツール オプション**ページを提供するオブジェクトを示します**ツール オプション**のインスタンスを適用することでページ<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>に適用される<xref:Microsoft.VisualStudio.Shell.Package>実装します。  

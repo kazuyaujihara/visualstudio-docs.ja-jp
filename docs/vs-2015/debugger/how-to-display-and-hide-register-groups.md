@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 088313e4452e2606b1908430c81c69446346775c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b7408100bbbda5533a65a3a55715fc46088f6061
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964330"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106359"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>方法: 登録グループの表示と非表示にします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58964330"
   
 ### <a name="to-display-or-hide-register-groups"></a>レジスタ グループの表示と非表示を切り替えるには  
   
-1.  **[レジスタ]** ウィンドウを右クリックします。  
+1. **[レジスタ]** ウィンドウを右クリックします。  
   
-2.  ショートカット メニューで、表示または非表示にするレジスタ グループをクリックします。  
+2. ショートカット メニューで、表示または非表示にするレジスタ グループをクリックします。  
   
      デバッグ中のハードウェアでサポートされていないレジスタ グループは、ショートカット メニューで無効になっているため選択できません。  
   

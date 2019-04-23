@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f98cad59356b48be185ba8e73d91bd3d368ff2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804135"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108710"
 ---
 # <a name="resource-contentions-view---contention-data"></a>リソースの競合ビュー - 競合データ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "54804135"
 ### <a name="function-values"></a>関数の値  
  関数の値は、コール ツリーで表される実行パスで発生する関数のインスタンスに基づいて決まります。  
   
--   排他値は、関数でその関数本体のステートメントを実行したときに発生するイベントに基づいて決まります。 関数によって呼び出された関数が原因で発生したイベントは排他値に含まれません。  
+- 排他値は、関数でその関数本体のステートメントを実行したときに発生するイベントに基づいて決まります。 関数によって呼び出された関数が原因で発生したイベントは排他値に含まれません。  
   
--   包括値は、関数やその関数によって呼び出された関数を実行したときに発生するイベントに基づいて決まります。  
+- 包括値は、関数やその関数によって呼び出された関数を実行したときに発生するイベントに基づいて決まります。  
   
 ### <a name="percentage-values"></a>割合の値  
  割合の値は、プロファイル データの合計時間や競合イベントに基づいて決まります。 プロファイリング実行のレポートやビューをフィルター処理すると、フィルター処理されたデータのブロックされた時間と競合のみが合計値として使用されます。  

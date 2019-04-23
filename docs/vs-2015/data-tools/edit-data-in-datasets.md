@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105007"
 ---
 # <a name="edit-data-in-datasets"></a>データセットのデータの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "59656610"
   
 #### <a name="to-delete-records-from-a-data-table"></a>データ テーブルからレコードを削除するには  
   
--   呼び出す、<xref:System.Data.DataRow.Delete%2A>のメソッド、<xref:System.Data.DataRow>します。  
+- 呼び出す、<xref:System.Data.DataRow.Delete%2A>のメソッド、<xref:System.Data.DataRow>します。  
   
      このメソッドは、レコードを物理的に削除されません。 代わりに、削除のレコードをマークします。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "59656610"
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>行に変更が加えられましたかどうかを判断するには  
   
--   データセットの <xref:System.Data.DataSet.HasChanges%2A> メソッドを呼び出し、変更された行があるかどうかをチェックします。  
+- データセットの <xref:System.Data.DataSet.HasChanges%2A> メソッドを呼び出し、変更された行があるかどうかをチェックします。  
   
      <xref:System.Data.DataSet.HasChanges%2A> メソッドから返された値をチェックし、`NorthwindDataset1` という名前のデータセットが変更された行があるかどうかを確認する方法を次の例に示します。  
   
@@ -95,7 +95,7 @@ ms.locfileid: "59656610"
   
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>行への変更の種類を確認するには  
   
--   <xref:System.Data.DataRowState> 値を <xref:System.Data.DataSet.HasChanges%2A> メソッドに渡します。  
+- <xref:System.Data.DataRowState> 値を <xref:System.Data.DataSet.HasChanges%2A> メソッドに渡します。  
   
      次の例は、という名前のデータセットを確認する方法を示しています。`NorthwindDataset1`をそれには、新しい行が追加された場合を判断します。  
   
@@ -105,9 +105,9 @@ ms.locfileid: "59656610"
 ## <a name="to-locate-rows-that-have-errors"></a>エラーが発生した行を探す  
  個々 の列と行のデータを使用する場合は、エラーが発生する可能性があります。 チェックすることができます、`HasErrors`プロパティでエラーが存在するかどうかは確認を<xref:System.Data.DataSet>、 <xref:System.Data.DataTable>、または<xref:System.Data.DataRow>します。  
   
-1.  チェック、`HasErrors`プロパティをデータセットのすべてのエラーがないかを参照してください。  
+1. チェック、`HasErrors`プロパティをデータセットのすべてのエラーがないかを参照してください。  
   
-2.  場合、`HasErrors`プロパティは`true`テーブルのコレクションを反復処理し、エラー行を検索する、行を介してします。  
+2. 場合、`HasErrors`プロパティは`true`テーブルのコレクションを反復処理し、エラー行を検索する、行を介してします。  
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]

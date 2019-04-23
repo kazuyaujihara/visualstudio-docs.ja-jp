@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a212250791ececddbf2227d67d1f4652dc7de466
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 50e91c47ef848eda51fe71c9dce09cd1ea4893a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661208"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106457"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>プロパティ&lt;プロパティ名&gt;を削除できません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ ms.locfileid: "59661208"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1.  O/R デザイナーで、エラー メッセージに示されているデータ クラスを接続する継承線を選択します。  
+1. O/R デザイナーで、エラー メッセージに示されているデータ クラスを接続する継承線を選択します。  
   
-2.  **識別子** プロパティを別のプロパティに設定します。  
+2. **識別子** プロパティを別のプロパティに設定します。  
   
-3.  プロパティの削除を再試行します。  
+3. プロパティの削除を再試行します。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: O/R デザイナーを使用して継承を構成します。](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   

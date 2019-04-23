@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1b98875bbc7ea4fc33c342ab625be385593aab8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9838e934421e619c85f348052fbe589288391c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104721"
 ---
 # <a name="responding-to-and-propagating-changes"></a>変更内容への対応および変更内容の反映
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58964110"
   
  ストア イベントを使用して、ストア内の一貫性を維持するためには、ストア、および規則外のオブジェクトと、モデルを同期します。  
   
--   **カスタム ルールを作成する**抽象ルールからの派生クラスとしてカスタムの規則を作成します。 カスタム ルールに関する、フレームワークにも通知する必要があります。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
+- **カスタム ルールを作成する**抽象ルールからの派生クラスとしてカスタムの規則を作成します。 カスタム ルールに関する、フレームワークにも通知する必要があります。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
   
--   **イベントにサブスクライブする**前に、イベントをサブスクライブすることができますが、イベント ハンドラーおよびデリゲートを作成します。 使用して、<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>プロパティ、イベントをサブスクライブします。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
+- **イベントにサブスクライブする**前に、イベントをサブスクライブすることができますが、イベント ハンドラーおよびデリゲートを作成します。 使用して、<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>プロパティ、イベントをサブスクライブします。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
   
--   **変更の取り消し**トランザクションを元に戻すと、イベントが発生しますが、規則は適用されません。 ルールは、値を変更します。 その変更を元に戻す場合は、値は、元に戻す操作中に、元の値にリセットされます。 イベントが発生したときに、元の値に戻す値を手動で変更する必要があります。 Transactons と元に戻すの詳細については、次を参照してください。[方法。モデルを更新するトランザクションを使用して](../modeling/how-to-use-transactions-to-update-the-model.md)します。  
+- **変更の取り消し**トランザクションを元に戻すと、イベントが発生しますが、規則は適用されません。 ルールは、値を変更します。 その変更を元に戻す場合は、値は、元に戻す操作中に、元の値にリセットされます。 イベントが発生したときに、元の値に戻す値を手動で変更する必要があります。 Transactons と元に戻すの詳細については、次を参照してください。[方法。モデルを更新するトランザクションを使用して](../modeling/how-to-use-transactions-to-update-the-model.md)します。  
   
--   **ルールとイベントにイベント引数を渡す**両方のイベント ルールが渡されると、`EventArgs`方法に関する情報を持つパラメーター、モデルを変更します。  
+- **ルールとイベントにイベント引数を渡す**両方のイベント ルールが渡されると、`EventArgs`方法に関する情報を持つパラメーター、モデルを変更します。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: シェイプまたはデコレーターに対するクリックします。](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   

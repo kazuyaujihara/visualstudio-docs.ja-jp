@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109830"
 ---
 # <a name="customizing-copy-behavior"></a>コピー動作のカスタマイズ
 Visual Studio Visualization and Modeling SDK で作成された、ドメイン固有言語 (DSL)、ユーザーは、コピーし、要素を貼り付けますときの動作を変更できます。
@@ -37,19 +37,19 @@ Visual Studio Visualization and Modeling SDK で作成された、ドメイン�
   ユーザーはコピーした要素を、DSL 定義に従って要素を受け入れることが可能なターゲットに貼り付けることができます。 たとえば、コンポーネント ソリューション テンプレートから生成された DSL で、ユーザーはポートをコンポーネントに貼り付けることができますが、図に貼り付けることはできません。また、コンポーネントを図に貼り付けることができますが、他のコンポーネントに貼り付けることはできません。
 
 ## <a name="customizing-copy-and-paste-behavior"></a>コピーと貼り付け動作のカスタマイズ
- プログラム コードを使用して、モデルをカスタマイズする方法の詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。
+ プログラム コードを使用して、モデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。
 
  **有効または、コピー、切り取り、および貼り付けを無効にします。**
 DSL エクスプ ローラーでは、設定、**コピー貼り付けを有効にする**のプロパティ、**エディター**ノード。
 
  **同じターゲットにリンクをコピーします。** たとえば、コピーしたコメント ボックスを同じ件名の要素にリンクします。
-設定、**コピーの伝達**するロールのプロパティ**コピーをリンクのみに反映されるまで**します。 詳細については、[リンク コピー動作のカスタマイズ](#customizeLinks)を参照してください。
+設定、**コピーの伝達**するロールのプロパティ**コピーをリンクのみに反映されるまで**します。 詳細については、次を参照してください。[リンク コピー動作のカスタマイズ](#customizeLinks)します。
 
  リンクされた要素をコピーします。 たとえば、新しい要素をコピーすると、リンクされたすべてのコメント ボックスのコピーも作成されます。
-設定、**コピーの伝達**するロールのプロパティ**コピーをリンクおよび反対のロール プレーヤーに伝達**します。 詳細については、[リンク コピー動作のカスタマイズ](#customizeLinks)を参照してください。
+設定、**コピーの伝達**するロールのプロパティ**コピーをリンクおよび反対のロール プレーヤーに伝達**します。 詳細については、次を参照してください。[リンク コピー動作のカスタマイズ](#customizeLinks)します。
 
  **コピーして貼り付けることで要素をすばやく複製します。** 通常、コピーしたばかりの項目はまだ選択されており、そこに同じ種類の要素を貼り付けることはできません。
-ドメイン クラスに要素マージ ディレクティブを追加し、マージを親クラスに転送するように設定します。 これはドラッグ操作に同じ効果を持ちます。 詳細については、[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)を参照してください。
+ドメイン クラスに要素マージ ディレクティブを追加し、マージを親クラスに転送するように設定します。 これはドラッグ操作に同じ効果を持ちます。 詳細については、次を参照してください。[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)します。
 
  \- または -
 
@@ -73,7 +73,7 @@ partial class MyDslClipboardCommandSet
 ```
 
  **選択したターゲットに、ユーザーが貼り付けるときに、その他のリンクを作成します。** たとえば、要素にコメント ボックスが貼り付けられると、それらの間にリンクが作成されます。
-ターゲット ドメイン クラスに要素マージ ディレクティブを追加し、リンクを追加することでマージを処理するように設定します。 これはドラッグ操作に同じ効果を持ちます。 詳細については、[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)を参照してください。
+ターゲット ドメイン クラスに要素マージ ディレクティブを追加し、リンクを追加することでマージを処理するように設定します。 これはドラッグ操作に同じ効果を持ちます。 詳細については、次を参照してください。[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)します。
 
  \- または -
 
@@ -232,7 +232,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  インスタンスによってコピー、貼り付け、作成、およびオブジェクトの削除に関する DSL の動作の多くの側面を制御<xref:Microsoft.VisualStudio.Modeling.ElementOperations>はダイアグラムに結合されています。 DSL の動作を変更するには、独自のクラスから派生することによって<xref:Microsoft.VisualStudio.Modeling.ElementOperations>をオーバーライドして、<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>図のクラスのプロパティ。
 
 > [!TIP]
->  プログラム コードを使用して、モデルをカスタマイズする方法の詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。
+>  プログラム コードを使用して、モデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。
 
  ![コピー操作のシーケンス図](../modeling/media/dslcopyseqdiagram.png)
 
@@ -284,9 +284,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  ElementOperations クラスに次の 2 つのメソッドを定義します。
 
--   ソース要素をターゲットの図形、コネクタ、または図にドラッグ可能かどうかを決定する `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`。
+- ソース要素をターゲットの図形、コネクタ、または図にドラッグ可能かどうかを決定する `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`。
 
--   ソース要素をターゲットに結合する `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`。
+- ソース要素をターゲットに結合する `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`。
 
 ### <a name="canmerge"></a>CanMerge()
  `CanMerge()` は、マウスが図の上を移動するときにユーザーに示されるフィードバックを決定するために呼び出されます。 メソッドへのパラメーターは、マウスを置く要素とドラッグ操作が実行されたソースに関するデータです。 ユーザーは画面上の任意の場所からドラッグできます。 したがって、ソース オブジェクトとして多数の種類が考えられ、さまざまな形式でシリアル化されます。 ソースが DSL または UML モデルの場合、データ パラメーターは <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> のシリアル化です。 ドラッグ、コピー、およびツールボックス操作は ElementGroupPrototypes を使用してモデルの断片を表します。

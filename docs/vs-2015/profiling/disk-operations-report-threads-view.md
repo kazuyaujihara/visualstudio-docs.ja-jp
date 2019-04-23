@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be99c10a999ec190f538816e39eac411dc85544e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: daace3e78cca67fd9b44144cd6c8a5608dbd9a1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111195"
 ---
 # <a name="disk-operations-report-threads-view"></a>ディスク操作レポート (スレッド ビュー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +27,23 @@ ms.locfileid: "54763375"
   
  現在表示されている時間帯でプロファイリングされているプロセスの代わりに発生する各ディスク アクセスについて、この情報が報告されます。  
   
--   ディスク アクセスを実行したプロセスの名前と PID  
+- ディスク アクセスを実行したプロセスの名前と PID  
   
--   ディスクにアクセスしたスレッドの ID  
+- ディスクにアクセスしたスレッドの ID  
   
--   アクセスされたファイルの名前  
+- アクセスされたファイルの名前  
   
--   各ファイルの読み取りの数  
+- 各ファイルの読み取りの数  
   
--   読み取られたバイト数  
+- 読み取られたバイト数  
   
--   読み取り待機時間 (ミリ秒)  
+- 読み取り待機時間 (ミリ秒)  
   
--   書き込み数  
+- 書き込み数  
   
--   書き込まれたバイト数  
+- 書き込まれたバイト数  
   
--   書き込み待機時間 (ミリ秒)  
+- 書き込み待機時間 (ミリ秒)  
   
 ## <a name="see-also"></a>関連項目  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

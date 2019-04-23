@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dda4193a0ea30ac08f8a63a39ce00fb634832d7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104461"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>方法: 追加およびパッケージング エクスプ ローラーを使用して、フィーチャーおよびパッケージに項目を削除
   SharePoint プロジェクト項目およびフィーチャーを配置するパッケージを構成するには、パッケージング エクスプ ローラーを使用できます。 .Wsp ファイル内では、SharePoint プロジェクト項目と機能を調整できます。
@@ -31,7 +31,7 @@ ms.locfileid: "56596426"
 
 #### <a name="to-open-the-packaging-explorer"></a>パッケージング エクスプ ローラーを開く
 
-1.  メニュー バーで、**ビュー** > **その他の Windows** > **パッケージング エクスプ ローラー**します。
+1. メニュー バーで、**ビュー** > **その他の Windows** > **パッケージング エクスプ ローラー**します。
 
      **パッケージング エクスプ ローラー**に表示されます、**ツールボックス**します。
 
@@ -40,15 +40,15 @@ ms.locfileid: "56596426"
 
 #### <a name="to-add-a-sharepoint-feature"></a>SharePoint フィーチャーを追加するには
 
-1.  開く、**パッケージング エクスプ ローラー**、プロジェクトのショートカット メニューを開き、選択し、**機能の追加**します。
+1. 開く、**パッケージング エクスプ ローラー**、プロジェクトのショートカット メニューを開き、選択し、**機能の追加**します。
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>既存の SharePoint 機能を移動するには
 
-1.  開く、**パッケージング エクスプ ローラー**、次の手順のいずれかを実行します。
+1. 開く、**パッケージング エクスプ ローラー**、次の手順のいずれかを実行します。
 
-    -   ドラッグ、**機能**別のプロジェクトに 1 つのプロジェクトから。
+    - ドラッグ、**機能**別のプロジェクトに 1 つのプロジェクトから。
 
-    -   機能のショートカット メニューを開き、選択**切り取り**の機能 を選択しプロジェクトのショートカット メニューを開き**貼り付け**します。
+    - 機能のショートカット メニューを開き、選択**切り取り**の機能 を選択しプロジェクトのショートカット メニューを開き**貼り付け**します。
 
     > [!NOTE]
     >  ソリューションには、複数の SharePoint プロジェクトがある場合は、この手順を使用します。
@@ -58,9 +58,9 @@ ms.locfileid: "56596426"
 
 #### <a name="to-validate-a-sharepoint-feature-or-package"></a>SharePoint フィーチャーまたはパッケージを検証するには
 
-1.  開く、**パッケージング エクスプ ローラー**します。
+1. 開く、**パッケージング エクスプ ローラー**します。
 
-2.  機能またはパッケージのショートカット メニューを開き、選択**検証**です。
+2. 機能またはパッケージのショートカット メニューを開き、選択**検証**です。
 
 ## <a name="see-also"></a>関連項目
 - [パッケージ化し、SharePoint ソリューションのデプロイ](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

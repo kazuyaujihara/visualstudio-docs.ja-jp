@@ -1,5 +1,5 @@
 ---
-title: '方法: プロファイリング ツールの ETW レポートを作成する | Microsoft Docs'
+title: '方法: プロファイル ツールの ETW レポートを作成する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8ad32f3231915c86f9578563ec4c0684435a3ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0de5d5560c2e840fd2df7fdc5811c5eea0747da8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797338"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106502"
 ---
-# <a name="how-to-create-a-profiling-tools-etw-report"></a>方法: プロファイリング ツールの ETW レポートを作成する
+# <a name="how-to-create-a-profiling-tools-etw-report"></a>方法: プロファイリング ツールの ETW レポートを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows イベント トレーシング (ETW) レポートには、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイル ツールのパフォーマンス セッションで記録された ETW イベントが一覧表示されます。 ETW データはバイナリ (.etl) ファイルで収集されます。 このレポートの詳細については、「[ETW (Event Tracing for Windows) レポート](../profiling/event-tracing-for-windows-etw-report.md)」を参照してください。  
@@ -24,7 +24,7 @@ Windows イベント トレーシング (ETW) レポートには、[!INCLUDE[vsp
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の場合、インターフェイスに ETW レポートを表示できません。  
   
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のインターフェイスを利用して ETW データを収集する方法については、「[方法: ETW (Event Tracing for Windows) データを収集する](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)」を参照してください。  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のインターフェイスを利用して ETW データを収集する方法については、「[方法:Event Tracing for Windows (ETW) のデータ収集](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)します。  
   
 - コマンド プロンプトから ETW データを収集する方法については、「[VSPerfCmd](../profiling/vsperfcmd.md)」と「[イベント](../profiling/events-vsperfcmd.md)」を参照してください。  
   
@@ -32,7 +32,7 @@ Windows イベント トレーシング (ETW) レポートには、[!INCLUDE[vsp
   
 ### <a name="to-generate-an-etw-report"></a>ETW レポートを生成するには  
   
--   **[コマンド プロンプト]** ウィンドウで、次のコマンド ラインを入力します。  
+- **[コマンド プロンプト]** ウィンドウで、次のコマンド ラインを入力します。  
   
      *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**  
   

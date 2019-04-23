@@ -25,12 +25,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b822ed97b2f31b6838fcfc9ee2b6ea32760c54d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8dea98b05f5350f581128f18f38ec5f095505a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105672"
 ---
 # <a name="how-to-debug-an-activex-control"></a>方法: ActiveX コントロールをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ ms.locfileid: "58963695"
   
 ### <a name="to-specify-a-container-for-the-debug-session"></a>デバッグ セッションのコンテナーを指定するには  
   
-1.  ソリューション エクスプローラーでプロジェクトを選択します。  
+1. ソリューション エクスプローラーでプロジェクトを選択します。  
   
-2.  **ビュー** ] メニューの [選択**プロパティ ページ**します。  
+2. **ビュー** ] メニューの [選択**プロパティ ページ**します。  
   
-3.  **[プロジェクト プロパティ ページ]** ダイアログ ボックスで、**[構成プロパティ]** フォルダーを開き、**[デバッグ]** を選択します。  
+3. **[プロジェクト プロパティ ページ]** ダイアログ ボックスで、**[構成プロパティ]** フォルダーを開き、**[デバッグ]** を選択します。  
   
-4.  **[デバッグ]** カテゴリの **[コマンド]** プロパティを探します。  
+4. **[デバッグ]** カテゴリの **[コマンド]** プロパティを探します。  
   
-5.  コンテナーのパス名を指定します。 たとえば、「C:\Program Files\Internet Explorer\IEXPLORE.EXE」のように指定します。  
+5. コンテナーのパス名を指定します。 たとえば、「C:\Program Files\Internet Explorer\IEXPLORE.EXE」のように指定します。  
   
-6.  Internet Explorer をコンテナーとして指定し、アクティブ デスクトップを使用している場合は、**[コマンド引数]** ボックスに「`/new`」と入力します。  
+6. Internet Explorer をコンテナーとして指定し、アクティブ デスクトップを使用している場合は、**[コマンド引数]** ボックスに「`/new`」と入力します。  
   
-7.  **[OK]** をクリックします。  
+7. **[OK]** をクリックします。  
   
      **[プロジェクト プロパティ ページ]** ダイアログ ボックスでコンテナーを指定しなかった場合でも、デバッグを開始するときにコンテナーを指定できます。 実行コマンドを選択してデバッグを開始するときに、[[デバッグ セッションで実行可能] ダイアログ ボックス](../debugger/executable-for-debugging-session-dialog-box.md)が表示されます。 ダイアログ ボックスにコンテナーのパス名を指定します。  
   

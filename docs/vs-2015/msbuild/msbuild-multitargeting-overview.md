@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73266c77a26f614af9978b48f7475086070aa5e6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 1d4221cfdc0d741264aa4667892117ba0cc24f9a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108283"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild のマルチ ターゲットの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ MSBuild を使用すると、.NET Framework のいずれかのバージョンや
   
  MSBuild の機能の対象となるフレームワークやプラットフォームの一部を次に示します。  
   
--   バージョン 2.0、3.5、4 などの以前のバージョンの .NET Framework を対象とするアプリケーションを開発できます。  
+- バージョン 2.0、3.5、4 などの以前のバージョンの .NET Framework を対象とするアプリケーションを開発できます。  
   
--   Silverlight フレームワークなど、.NET Framework 以外のフレームワークを対象にできます。  
+- Silverlight フレームワークなど、.NET Framework 以外のフレームワークを対象にできます。  
   
--   ターゲット フレームワークの定義済みのサブセットである*フレームワーク プロファイル*を対象にできます。  
+- ターゲット フレームワークの定義済みのサブセットである*フレームワーク プロファイル*を対象にできます。  
   
--   現在のバージョンの .NET Framework 用サービス パックがリリースされた場合、そのバージョンを対象にできます。  
+- 現在のバージョンの .NET Framework 用サービス パックがリリースされた場合、そのバージョンを対象にできます。  
   
--   MSBuild の対象となるフレームワークやプラットフォームで動作するアプリケーションでは、それらのフレームワークやプラットフォームで利用できる機能だけを使うことができます。  
+- MSBuild の対象となるフレームワークやプラットフォームで動作するアプリケーションでは、それらのフレームワークやプラットフォームで利用できる機能だけを使うことができます。  
   
 ## <a name="target-framework-and-platform"></a>ターゲット フレームワークとターゲット プラットフォーム  
  *ターゲット フレームワーク*は、ビルドされるプロジェクトの実行対象となる .NET Framework のバージョンを表します。また、*ターゲット プラットフォーム*は、ビルドされるプロジェクトの実行対象となるシステム プラットフォームを表します。  たとえば、802x86 プロセッサ ファミリ (x86) と互換性のある 32 ビット プラットフォームで動作する .NET Framework 2.0 アプリケーションを対象とする場合があります。 ターゲット フレームワークとターゲット プラットフォームの組み合わせは*ターゲット コンテキスト*と呼ばれます。 詳細については、「[ターゲット フレームワークおよびターゲット プラットフォーム](../msbuild/msbuild-target-framework-and-target-platform.md)」を参照してください。  

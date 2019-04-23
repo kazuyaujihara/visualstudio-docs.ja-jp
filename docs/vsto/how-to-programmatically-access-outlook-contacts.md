@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c46df4218a12c0f9a155567aeee0c007d0a19c53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9fc9cf214a8aebd663a7de29528790aa3cc0b46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598207"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104227"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>方法: プログラムによって Outlook の連絡先へのアクセスします。
   この例では、最後の名前が指定した検索文字列を含むすべての連絡先を検索します。
@@ -32,7 +32,7 @@ ms.locfileid: "56598207"
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例で必要な要素は次のとおりです。
 
--   連絡先の姓が文字列を含む"**Na"** (Tzipi Butnaru など) で、**連絡先**フォルダー。
+- 連絡先の姓が文字列を含む"**Na"** (Tzipi Butnaru など) で、**連絡先**フォルダー。
 
 ## <a name="see-also"></a>関連項目
 - [連絡先項目を操作します。](../vsto/working-with-contact-items.md)

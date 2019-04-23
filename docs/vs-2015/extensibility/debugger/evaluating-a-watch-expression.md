@@ -11,12 +11,12 @@ ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4eb1ee2048a5e5580cbeb8320ba573c85b92183
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eed1a1b3da59d6d5e76c9157fc0a2cb37420c797
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973479"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104357"
 ---
 # <a name="evaluating-a-watch-expression"></a>ウォッチ式の評価
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "58973479"
   
  この実装で`IDebugParsedExpression::EvaluateSync`式が解析され、同時に評価されます。 この実装では、次のタスクを実行します。  
   
-1.  解析し、値とその型を保持する汎用オブジェクトを生成するために、式を評価します。 C# の場合でとして表されます、`object`として C++ で表されます中に、 `VARIANT`。  
+1. 解析し、値とその型を保持する汎用オブジェクトを生成するために、式を評価します。 C# の場合でとして表されます、`object`として C++ で表されます中に、 `VARIANT`。  
   
-2.  クラスをインスタンス化します (と呼ばれる`CValueProperty`この例では) を実装する、`IDebugProperty2`インターフェイスし、クラスで返される値を格納します。  
+2. クラスをインスタンス化します (と呼ばれる`CValueProperty`この例では) を実装する、`IDebugProperty2`インターフェイスし、クラスで返される値を格納します。  
   
-3.  返します、`IDebugProperty2`からインターフェイス、`CValueProperty`オブジェクト。  
+3. 返します、`IDebugProperty2`からインターフェイス、`CValueProperty`オブジェクト。  
   
 ## <a name="managed-code"></a>マネージド コード  
  これは、実装、`IDebugParsedExpression::EvaluateSync`マネージ コードでします。 ヘルパー メソッド`Tokenize`解析ツリーには、式を解析します。 ヘルパー関数`EvalToken`トークンの値に変換します。 ヘルパー関数`FindTerm`再帰的には、解析ツリーを走査を呼び出す`EvalToken`の各ノードの値を表すと、式で任意の操作 (加算または減算) を適用します。  

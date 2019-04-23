@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670434"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104925"
 ---
 # <a name="xml-schema-explorer"></a>XML スキーマ エクスプローラー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ XML スキーマ エクスプローラーは Microsoft Visual Studio および X
   
  ノードをアクティブ化をダブルクリックするか、キーを押します**Enter**ノードを選択するとします。  
   
--   ノードをアクティブ化すると、このノードが定義されているファイルが開き (ファイルが既に開かれていない場合)、ファイル内でノードが選択されます。  
+- ノードをアクティブ化すると、このノードが定義されているファイルが開き (ファイルが既に開かれていない場合)、ファイル内でノードが選択されます。  
   
--   ファイル ノードをアクティブ化すると、選択されたファイルが開き (既に開かれていない場合)、`<schema>` ノードが強調表示されます。  
+- ファイル ノードをアクティブ化すると、選択されたファイルが開き (既に開かれていない場合)、`<schema>` ノードが強調表示されます。  
   
--   SchemaSet または名前空間ノードをアクティブ化しても、何も行われません。  
+- SchemaSet または名前空間ノードをアクティブ化しても、何も行われません。  
   
 ## <a name="draging-and-dropping-nodes"></a>ノードのドラッグ アンド ドロップ  
  グローバル ノード、ファイル ノード、名前空間ノードを XSD デザイナーのビューにドラッグ アンド ドロップすることができます。 現在のビューがある場合、[スタート ビュー](../xml-tools/start-view.md)、ビューにノードのドラッグが開き、[グラフ ビュー](../xml-tools/graph-view.md)。 現在のビューがある場合、[コンテンツ モデル ビュー](../xml-tools/content-model-view.md)またはグラフ ビュー、ビューは変更されませんにノードを削除するとします。  
@@ -82,13 +82,13 @@ XML スキーマ エクスプローラーは Microsoft Visual Studio および X
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [スキーマ セットの検索](../xml-tools/searching-the-schema-set.md)  
+- [スキーマ セットの検索](../xml-tools/searching-the-schema-set.md)  
   
--   [並べ替え、フィルター処理、およびグループ化](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [並べ替え、フィルター処理、およびグループ化](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [コンテキスト メニュー](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [コンテキスト メニュー](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [XML リテラルと XML スキーマ エクスプローラーの統合](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [XML リテラルと XML スキーマ エクスプローラーの統合](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>関連項目  
  [方法: XML スキーマ エクスプローラーからワークスペースにノードを追加する](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f85169ebb6460ac42031aec7c75ff2e29154a9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668900"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109129"
 ---
 # <a name="content-model-view"></a>コンテンツ モデル ビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,13 +91,13 @@ ms.locfileid: "59668900"
 ## <a name="undoredo"></a>元に戻す/やり直し  
  元に戻す/やり直し機能は、コンテンツ モデル ビューの次の操作に対して有効です。  
   
--   ドラッグ アンド ドロップして 1 つのノードを追加する。  
+- ドラッグ アンド ドロップして 1 つのノードを追加する。  
   
--   スキーマ エクスプローラーの検索結果ウィンドウから複数のノードを追加する。  
+- スキーマ エクスプローラーの検索結果ウィンドウから複数のノードを追加する。  
   
--   スタート ビューからノードを追加する。  
+- スタート ビューからノードを追加する。  
   
--   1 つまたは複数のノードを削除する。  
+- 1 つまたは複数のノードを削除する。  
   
 ## <a name="zoom"></a>ズーム  
  ズームはコンテンツ モデル ビューの右下隅にあります。  

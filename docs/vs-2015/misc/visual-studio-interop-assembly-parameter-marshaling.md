@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105068"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio 相互運用機能アセンブリのパラメーター マーシャリング
 マネージ コードで記述されている Vspackage は、呼び出しまたはアンマネージ COM コードによって呼び出される必要があります。 通常、メソッドの引数が変換、または、マーシャ リングされる、自動的に相互運用マーシャラーによって。 ただし、場合によって引数は、変換できない簡単な方法でします。 その場合、相互運用機能アセンブリのメソッド プロトタイプのパラメーターは、COM 関数のパラメーターをできるだけ一致に使用されます。 詳細については、次を参照してください。[相互運用マーシャ リング](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)します。  
@@ -28,11 +28,11 @@ ms.locfileid: "58962831"
   
  各メソッドのリファレンス ドキュメントには、次の 3 つの関連するセクションが含まれています。  
   
--   [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] COM 関数のプロトタイプ。  
+- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] COM 関数のプロトタイプ。  
   
--   相互運用機能アセンブリのメソッド プロトタイプ。  
+- 相互運用機能アセンブリのメソッド プロトタイプ。  
   
--   COM パラメーターとそれぞれの簡単な説明の一覧。  
+- COM パラメーターとそれぞれの簡単な説明の一覧。  
   
 ##### <a name="look-for-differences-between-the-two-prototypes"></a>2 つのプロトタイプの相違点を探します  
  ほとんどの相互運用性の問題は、COM インターフェイスで特定の種類の定義とで同じ種類の定義の間の不一致から派生、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]相互運用機能アセンブリ。 たとえばを渡す機能の違いを`null`[out] パラメーターの値。 2 つのプロトタイプの相違点を探し、渡されるデータの影響を考慮する必要があります。  
@@ -79,17 +79,17 @@ else
 > [!NOTE]
 >  次のメソッドが渡す呼ばれる`IUnknown`オブジェクト ポインターの型として<xref:System.IntPtr>します。 このセクションで説明したは、それらを処理します。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
 ### <a name="optional-out-parameters"></a>[Out] パラメーターは省略可能です。  
  [Out] として定義されているパラメーターの参照データ型 (`int`、`object`など)、COM で同じデータ型の配列としてがインターフェイスを定義します。、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]相互運用機能アセンブリのメソッド プロトタイプ。  

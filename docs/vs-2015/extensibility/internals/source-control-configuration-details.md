@@ -10,23 +10,23 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 85c537d5e915324a2bd8cd858c5ff133370b62f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51fac40d0bffe570ac1f374872fb4572c1c83441
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109466"
 ---
 # <a name="source-control-configuration-details"></a>ソース管理構成の詳細
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 ソース管理を実装するために、プロジェクト システムやには、次のエディターを適切に構成する必要があります。  
   
--   変更された状態に遷移するアクセス許可を要求します。  
+- 変更された状態に遷移するアクセス許可を要求します。  
   
--   ファイルを保存するアクセス許可を要求します。  
+- ファイルを保存するアクセス許可を要求します。  
   
--   追加、削除、またはプロジェクト内のファイルの名前を変更する許可を要求します。  
+- 追加、削除、またはプロジェクト内のファイルの名前を変更する許可を要求します。  
   
 ## <a name="request-permission-to-transition-to-changed-state"></a>変更された状態に遷移するアクセス許可を要求します。  
  プロジェクトまたはエディターを呼び出すことによって変更された (ダーティ) 状態に遷移するためのアクセス許可を要求する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>します。 実装する各エディター<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>呼び出す必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>を返す前に、環境からドキュメントの変更の承認を得ると`True`の`M:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty(System.Int32@)`します。 プロジェクトでは、プロジェクト ファイルは、エディターでは基本的をその結果、そのファイルはテキスト エディターのようにプロジェクト ファイルの変更状態の追跡を実装するための同じの責任を持ちます。 環境は、ソリューションの変更の状態を処理しますが、任意のオブジェクトを参照していては格納されません、プロジェクト ファイルやその項目のように、ソリューションの変更の状態を処理する必要があります。 一般に、プロジェクトまたはエディターがアイテムの永続化を管理する場合、られます変更状態の追跡を実装する責任を負います。  

@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07bd9e469d090ffb97e166ce943397b51aedd497
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105020"
 ---
 # <a name="save-data-in-a-transaction"></a>トランザクションにデータを保存する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ ms.locfileid: "59647676"
   
 #### <a name="to-create-the-new-windows-project"></a>新しい Windows プロジェクトを作成するには  
   
-1.  Visual Studio での**ファイル**] メニューの [新規作成**プロジェクト**。  
+1. Visual Studio での**ファイル**] メニューの [新規作成**プロジェクト**。  
   
-2.  プロジェクトに名前を**SavingDataInATransactionWalkthrough**します。  
+2. プロジェクトに名前を**SavingDataInATransactionWalkthrough**します。  
   
-3.  選択**Windows アプリケーション**、し、 **OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
+3. 選択**Windows アプリケーション**、し、 **OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
   
      **SavingDataInATransactionWalkthrough** プロジェクトが作成されて**ソリューション エクスプローラー**に追加されます。  
   
@@ -53,27 +53,27 @@ ms.locfileid: "59647676"
   
 #### <a name="to-create-the-data-source"></a>データ ソースを作成するには  
   
-1.  **データ**メニューの **データ ソースの**します。  
+1. **データ**メニューの **データ ソースの**します。  
   
-2.  **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成ウィザード**を起動します。  
+2. **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成ウィザード**を起動します。  
   
-3.  **データ ソースの種類を選択**画面で、**データベース**、し、**次**します。  
+3. **データ ソースの種類を選択**画面で、**データベース**、し、**次**します。  
   
-4.  **データ接続の選択**画面は、次のいずれか。  
+4. **データ接続の選択**画面は、次のいずれか。  
   
-    -   Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。  
+    - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。  
   
          - または -  
   
-    -   **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示し、Northwind データベースへの接続を作成します。  
+    - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示し、Northwind データベースへの接続を作成します。  
   
-5.  データベースにパスワードが必要な場合は、機密データを含めるしを選択するオプションを選択**次**します。  
+5. データベースにパスワードが必要な場合は、機密データを含めるしを選択するオプションを選択**次**します。  
   
-6.  **接続文字列をアプリケーション構成ファイルに保存**画面で、**次**します。  
+6. **接続文字列をアプリケーション構成ファイルに保存**画面で、**次**します。  
   
-7.  **データベース オブジェクトの選択**画面で、展開、**テーブル**ノード。  
+7. **データベース オブジェクトの選択**画面で、展開、**テーブル**ノード。  
   
-8.  選択、`Customers`と`Orders`テーブル、および選択**完了**します。  
+8. 選択、`Customers`と`Orders`テーブル、および選択**完了**します。  
   
      プロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウに `Customers` テーブルと `Orders` テーブルが表示されます。  
   
@@ -82,13 +82,13 @@ ms.locfileid: "59647676"
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Windows フォーム上のコントロールのバインドをデータを作成するには  
   
--   **データソース**ウィンドウで、展開、**顧客**ノード。  
+- **データソース**ウィンドウで、展開、**顧客**ノード。  
   
--   **[データ ソース]** ウィンドウから **Form1** にメインの **[Customers]** ノードをドラッグします。  
+- **[データ ソース]** ウィンドウから **Form1** にメインの **[Customers]** ノードをドラッグします。  
   
      レコード間をナビゲートするための <xref:System.Windows.Forms.DataGridView> コントロールとツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) がフォームに表示されます。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource>、<xref:System.Windows.Forms.BindingNavigator> がコンポーネント トレイに表示されます。  
   
--   関連するドラッグ**注文**ノード (main ではない**注文**が関連する子テーブル ノードの下、 **Fax**列) 下のフォームに、 **CustomersDataGridView**します。  
+- 関連するドラッグ**注文**ノード (main ではない**注文**が関連する子テーブル ノードの下、 **Fax**列) 下のフォームに、 **CustomersDataGridView**します。  
   
      <xref:System.Windows.Forms.DataGridView> がフォームに表示されます。 OrdersTableAdapter と<xref:System.Windows.Forms.BindingSource>コンポーネント トレイに表示されます。  
   
@@ -97,9 +97,9 @@ ms.locfileid: "59647676"
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>System.Transactions の DLL ファイルへの参照を追加するには  
   
-1.  **プロジェクト**メニューの **参照の追加**します。  
+1. **プロジェクト**メニューの **参照の追加**します。  
   
-2.  選択**System.Transactions**(上、 **.NET** ] タブ)、し、[ **[ok]** します。  
+2. 選択**System.Transactions**(上、 **.NET** ] タブ)、し、[ **[ok]** します。  
   
      **System.Transactions** への参照がプロジェクトに追加されます。  
   
@@ -117,38 +117,38 @@ ms.locfileid: "59647676"
   
    関連するデータへの変更を解決する順序は次のとおりです。  
   
--   子レコードを削除します。 (この場合、レコードを削除、`Orders`テーブルです)。  
+- 子レコードを削除します。 (この場合、レコードを削除、`Orders`テーブルです)。  
   
--   親レコードを削除します。 (この場合、レコードを削除、`Customers`テーブルです)。  
+- 親レコードを削除します。 (この場合、レコードを削除、`Customers`テーブルです)。  
   
--   親レコードを挿入します。(この場合は、内のレコードを挿入、`Customers`テーブルです)。  
+- 親レコードを挿入します。(この場合は、内のレコードを挿入、`Customers`テーブルです)。  
   
--   子レコードを挿入します。 (この場合は、内のレコードを挿入、`Orders`テーブルです)。  
+- 子レコードを挿入します。 (この場合は、内のレコードを挿入、`Orders`テーブルです)。  
   
 #### <a name="to-delete-existing-orders"></a>既存の注文を削除するには  
   
--   次の `DeleteOrders` メソッドを **Form1** に追加します。  
+- 次の `DeleteOrders` メソッドを **Form1** に追加します。  
   
      [!code-csharp[VbRaddataSaving#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#5)]
      [!code-vb[VbRaddataSaving#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#5)]  
   
 #### <a name="to-delete-existing-customers"></a>既存の顧客を削除するには  
   
--   次の `DeleteCustomers` メソッドを **Form1** に追加します。  
+- 次の `DeleteCustomers` メソッドを **Form1** に追加します。  
   
      [!code-csharp[VbRaddataSaving#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#6)]
      [!code-vb[VbRaddataSaving#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#6)]  
   
 #### <a name="to-add-new-customers"></a>新規顧客を追加するには  
   
--   次の `AddNewCustomers` メソッドを **Form1** に追加します。  
+- 次の `AddNewCustomers` メソッドを **Form1** に追加します。  
   
      [!code-csharp[VbRaddataSaving#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#7)]
      [!code-vb[VbRaddataSaving#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#7)]  
   
 #### <a name="to-add-new-orders"></a>新規注文を追加するには  
   
--   次の `AddNewOrders` メソッドを **Form1** に追加します。  
+- 次の `AddNewOrders` メソッドを **Form1** に追加します。  
   
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]  
@@ -157,7 +157,7 @@ ms.locfileid: "59647676"
   
 #### <a name="to-run-the-application"></a>アプリケーションを実行するには  
   
--   選択**F5**アプリケーションを実行します。  
+- 選択**F5**アプリケーションを実行します。  
   
 ## <a name="see-also"></a>関連項目  
  [データをデータベースに保存する](../data-tools/save-data-back-to-the-database.md)

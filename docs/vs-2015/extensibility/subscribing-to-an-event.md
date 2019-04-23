@@ -11,12 +11,12 @@ ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec19e71685fc2a866f23d5050861e5733ef6cb39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 324e74c78f01da47c544b5f640ad0bd9052a1bb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107646"
 ---
 # <a name="subscribing-to-an-event"></a>イベントのサブスクライブ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "58973090"
   
 #### <a name="to-create-an-extension-with-a-tool-window"></a>ツール ウィンドウで、拡張機能を作成するには  
   
-1.  という名前のプロジェクトを作成する**RDTExplorer** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**RDTExplorerWindow**します。  
+1. という名前のプロジェクトを作成する**RDTExplorer** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**RDTExplorerWindow**します。  
   
      ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。  
   
 #### <a name="to-subscribe-to-rdt-events"></a>RDT のイベントをサブスクライブするには  
   
-1.  RDTExplorerWindowControl.xaml ファイルを開き、という名前のボタンを削除`button1`します。 追加、<xref:System.Windows.Forms.ListBox>を制御し、既定の名前をそのまま使用します。 このようグリッド要素になります。  
+1. RDTExplorerWindowControl.xaml ファイルを開き、という名前のボタンを削除`button1`します。 追加、<xref:System.Windows.Forms.ListBox>を制御し、既定の名前をそのまま使用します。 このようグリッド要素になります。  
   
     ```xml  
     <Grid>  
@@ -47,7 +47,7 @@ ms.locfileid: "58973090"
     </Grid>  
     ```  
   
-2.  コード ビューで RDTExplorerWindow.cs ファイルを開きます。 次の追加、ファイルの先頭にステートメントを使用します。  
+2. コード ビューで RDTExplorerWindow.cs ファイルを開きます。 次の追加、ファイルの先頭にステートメントを使用します。  
   
     ```csharp  
     using Microsoft.VisualStudio;  
@@ -55,24 +55,24 @@ ms.locfileid: "58973090"
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-3.  変更、`RDTExplorerWindow`ためクラスから派生するだけでなくを<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>クラスは実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>インターフェイス。  
+3. 変更、`RDTExplorerWindow`ためクラスから派生するだけでなくを<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>クラスは実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>インターフェイス。  
   
     ```csharp  
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents  
     {. . .}  
     ```  
   
-4.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>を実装します。  
+4. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>を実装します。  
   
-    -   インターフェイスを実装します。 IVsRunningDocTableEvents 名にカーソルを置きます。 左の余白に電球が表示されます。 電球の右側の下矢印をクリックして選択します**インターフェイスの実装**します。  
+    - インターフェイスを実装します。 IVsRunningDocTableEvents 名にカーソルを置きます。 左の余白に電球が表示されます。 電球の右側の下矢印をクリックして選択します**インターフェイスの実装**します。  
   
-5.  インターフェイスの各メソッドでは、行を置き換えます`throw new NotImplementedException();`この。  
+5. インターフェイスの各メソッドでは、行を置き換えます`throw new NotImplementedException();`この。  
   
     ```csharp  
     return VSConstants.S_OK;  
     ```  
   
-6.  RDTExplorerWindow クラスには、cookie フィールドを追加します。  
+6. RDTExplorerWindow クラスには、cookie フィールドを追加します。  
   
     ```csharp  
     private uint rdtCookie;   
@@ -80,7 +80,7 @@ ms.locfileid: "58973090"
   
      これは、によって返されるクッキー、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>メソッド。  
   
-7.  RDT のイベントを登録する RDTExplorerWindow の Initialize() メソッドをオーバーライドします。 サービスは、コンス トラクターではなく、ToolWindowPane の Initialize() メソッドで常に表示されます。  
+7. RDT のイベントを登録する RDTExplorerWindow の Initialize() メソッドをオーバーライドします。 サービスは、コンス トラクターではなく、ToolWindowPane の Initialize() メソッドで常に表示されます。  
   
     ```csharp  
     protected override void Initialize()  
@@ -93,7 +93,7 @@ ms.locfileid: "58973090"
   
      <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>サービスを呼び出して取得する<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable>インターフェイス。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>メソッド RDT イベントを実装するオブジェクトには接続<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>、ここでは、RDTExplorer オブジェクト。  
   
-8.  RDTExplorerWindow の Dispose() メソッドを更新します。  
+8. RDTExplorerWindow の Dispose() メソッドを更新します。  
   
     ```csharp  
     protected override void Dispose(bool disposing)  

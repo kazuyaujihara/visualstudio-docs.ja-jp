@@ -26,12 +26,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5226f5c235b3af10fba4fd0fab3ee44ceb72a93e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 079264d2687d382aa79e526d829687f2a60f6882
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654101"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106632"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>TableAdapter で直接データベースにアクセスする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "59654101"
   
 #### <a name="to-insert-new-records-directly-into-a-database"></a>データベースに直接新しいレコードを挿入するには  
   
--   呼び出す TableAdapter の`Insert`メソッド、パラメーターとして各列の値で渡します。 次の手順を使用して、`Region`例をテーブルに Northwind databaseas にします。  
+- 呼び出す TableAdapter の`Insert`メソッド、パラメーターとして各列の値で渡します。 次の手順を使用して、`Region`例をテーブルに Northwind databaseas にします。  
   
     > [!NOTE]
     >  使用可能なインスタンスがいない場合は、TableAdapter を使用するをインスタンス化します。  
@@ -55,7 +55,7 @@ ms.locfileid: "59654101"
   
 #### <a name="to-update-records-directly-in-a-database"></a>データベースに直接レコードを更新するには  
   
--   呼び出す TableAdapter の`Update`メソッド、パラメーターとして各列の新しいと、元の値を渡します。  
+- 呼び出す TableAdapter の`Update`メソッド、パラメーターとして各列の新しいと、元の値を渡します。  
   
     > [!NOTE]
     >  使用可能なインスタンスがいない場合は、TableAdapter を使用するをインスタンス化します。  
@@ -65,7 +65,7 @@ ms.locfileid: "59654101"
   
 #### <a name="to-delete-records-directly-from-a-database"></a>データベースから直接レコードを削除するには  
   
--   呼び出す TableAdapter の`Delete`メソッドのパラメーターとして各列の値を渡す、`Delete`メソッド。 次の手順を使用して、`Region`例をテーブルに Northwind databaseas にします。  
+- 呼び出す TableAdapter の`Delete`メソッドのパラメーターとして各列の値を渡す、`Delete`メソッド。 次の手順を使用して、`Region`例をテーブルに Northwind databaseas にします。  
   
     > [!NOTE]
     >  使用可能なインスタンスがいない場合は、TableAdapter を使用するをインスタンス化します。  

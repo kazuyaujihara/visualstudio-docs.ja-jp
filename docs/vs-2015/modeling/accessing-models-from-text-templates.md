@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977483"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110493"
 ---
 # <a name="accessing-models-from-text-templates"></a>テキスト テンプレートからモデルへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Here is a list of elements in the model:
   
  このテンプレートについては、次の点に注意してください。  
   
--   テンプレートには、ドメイン クラス、プロパティ、および、DSL 定義で定義されているリレーションシップを使用できます。  
+- テンプレートには、ドメイン クラス、プロパティ、および、DSL 定義で定義されているリレーションシップを使用できます。  
   
--   テンプレートで指定したモデル ファイルを読み込み、`requires`プロパティ。  
+- テンプレートで指定したモデル ファイルを読み込み、`requires`プロパティ。  
   
--   プロパティに`this`ルート要素が含まれています。 そこから、コードは、モデルの他の要素に移動できます。 プロパティの名前は、通常、DSL のルート ドメイン クラスと同じです。 この例では、 `this.ExampleModel`です。  
+- プロパティに`this`ルート要素が含まれています。 そこから、コードは、モデルの他の要素に移動できます。 プロパティの名前は、通常、DSL のルート ドメイン クラスと同じです。 この例では、 `this.ExampleModel`です。  
   
--   コード フラグメントを記述する言語が必要な場合は、C# を使用して、あらゆる種類のテキストを生成できます。 コードを記述できますまた[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]プロパティを追加することで`language="VB"`を`template`ディレクティブ。  
+- コード フラグメントを記述する言語が必要な場合は、c# を使用して、あらゆる種類のテキストを生成できます。 コードを記述できますまた[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]プロパティを追加することで`language="VB"`を`template`ディレクティブ。  
   
--   テンプレートをデバッグするには、追加`debug="true"`を`template`ディレクティブ。 別のインスタンスで、テンプレートが開きます[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]例外が発生した場合。 コードの特定の時点でデバッガーを中断する場合は、insert ステートメント `System.Diagnostics.Debugger.Break();`  
+- テンプレートをデバッグするには、追加`debug="true"`を`template`ディレクティブ。 別のインスタンスで、テンプレートが開きます[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]例外が発生した場合。 コードの特定の時点でデバッガーを中断する場合は、insert ステートメント `System.Diagnostics.Debugger.Break();`  
   
      詳細については、次を参照してください。 [T4 テキスト テンプレートのデバッグ](../modeling/debugging-a-t4-text-template.md)します。  
   
@@ -80,9 +80,9 @@ Here is a list of elements in the model:
   
  DSL のディレクティブ プロセッサは、2 つの主要なタスクを実行します。  
   
--   アセンブリおよびインポート ディレクティブは、DSL を参照するテンプレートに効果的に挿入します。 これにより、テンプレート コードで、ドメイン クラスを使用できます。  
+- アセンブリおよびインポート ディレクティブは、DSL を参照するテンプレートに効果的に挿入します。 これにより、テンプレート コードで、ドメイン クラスを使用できます。  
   
--   指定したファイルを読み込む、`requires`パラメーター セットのプロパティと`this`読み込み済みのモデルのルート要素を参照します。  
+- 指定したファイルを読み込む、`requires`パラメーター セットのプロパティと`this`読み込み済みのモデルのルート要素を参照します。  
   
 ## <a name="validating-the-model-before-running-the-template"></a>テンプレートを実行する前に、モデルの検証  
  このテンプレートを実行する前に検証するモデルが発生することができます。  
@@ -100,7 +100,7 @@ Here is a list of elements in the model:
   
    エラーが見つかった場合は、[エラー] ウィンドウで報告し、結果ファイルは、エラー メッセージが格納されます。  
   
-##  <a name="Multiple"></a> テキスト テンプレートから複数のモデルへのアクセス  
+## <a name="Multiple"></a> テキスト テンプレートから複数のモデルへのアクセス  
   
 > [!NOTE]
 >  このメソッドは、同じテンプレートに複数のモデルを読み取ることができますが、ModelBus references をサポートしていません。 ModelBus 参照によって指定されたモデルを読み取り、次を参照してください。[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)します。  

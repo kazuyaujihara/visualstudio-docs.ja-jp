@@ -9,12 +9,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cd8b160eca8b3a7e628ed9eda199c0b26fe38c14
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 619b64578c5fd626f9ffa8cfca8f777fdc1c93a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648656"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105729"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>方法: コマンドラインを使用してアプリケーションの統計情報を収集する ASP.NET Web アプリケーションに、Profiler をアタッチします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ ms.locfileid: "59648656"
 
     **VSPerfClrEnv /globalsampleon** **[/samplelineoff]**  
 
-   -   **/globalsampleon** はサンプリングを有効にします。  
+   - **/globalsampleon** はサンプリングを有効にします。  
 
-   -   **/samplelineoff** は特定のソース コード行への収集データの割り当てを無効にします。 このオプションを指定すると、データは関数に対してのみ割り当てられます。  
+   - **/samplelineoff** は特定のソース コード行への収集データの割り当てを無効にします。 このオプションを指定すると、データは関数に対してのみ割り当てられます。  
 
 3. コンピューターを再起動します。  
 
@@ -73,9 +73,9 @@ ms.locfileid: "59648656"
 
 6. プロファイラーを ASP.NET ワーカー プロセスにアタッチします。 Type:**VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   `PID` は ASP.NET ワーカー プロセスのプロセス ID を指定します。`ProcName` はワーカー プロセスの名前を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID と名前を参照できます。  
+   - `PID` は ASP.NET ワーカー プロセスのプロセス ID を指定します。`ProcName` はワーカー プロセスの名前を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID と名前を参照できます。  
 
-   -   既定では、パフォーマンス データはプロセッサのクロック サイクル数 10,000,000 (停止なし) ごとにサンプリングされます。 このため、1 GHz のプロセッサにおける 1 秒あたりのサンプリング回数は約 100 回です。 次の **VSPerfCmd** オプションのいずれかを指定して、クロック サイクルの間隔の変更、または別のサンプリング イベントの指定ができます。  
+   - 既定では、パフォーマンス データはプロセッサのクロック サイクル数 10,000,000 (停止なし) ごとにサンプリングされます。 このため、1 GHz のプロセッサにおける 1 秒あたりのサンプリング回数は約 100 回です。 次の **VSPerfCmd** オプションのいずれかを指定して、クロック サイクルの間隔の変更、または別のサンプリング イベントの指定ができます。  
 
    |サンプリング イベント|説明|  
    |------------------|-----------------|  
@@ -85,14 +85,14 @@ ms.locfileid: "59648656"
    |[/counter](../profiling/counter.md) **:** `Config`|サンプリング イベントと間隔を、プロセッサのパフォーマンス カウンターと、`Config` で指定した間隔に、それぞれ変更します。|  
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|アプリケーションに複数バージョンのランタイムが読み込まれている場合に、プロファイリングを行う共通言語ランタイム (CLR: Common Language Runtime) のバージョンを指定します。|  
 
-   -   **targetclr:** `Version` には、アプリケーションに複数バージョンのランタイムが読み込まれている場合に、プロファイリングを行う CLR のバージョンを指定します。 任意。  
+   - **targetclr:** `Version` には、アプリケーションに複数バージョンのランタイムが読み込まれている場合に、プロファイリングを行う CLR のバージョンを指定します。 任意。  
 
 ## <a name="controlling-data-collection"></a>データ コレクションの制御  
  アプリケーションの実行中は、**VSPerfCmd.exe** のオプションを使用してファイルへのデータ書き込みを開始または停止することにより、データ収集を制御できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。  
 
 #### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには  
 
--   次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
+- 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
 
     |オプション|説明|  
     |------------|-----------------|  
@@ -109,21 +109,21 @@ ms.locfileid: "59648656"
 
 #### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには  
 
-1.  対象アプリケーションからプロファイラーをデタッチするには、次のいずれかの操作を行います。  
+1. 対象アプリケーションからプロファイラーをデタッチするには、次のいずれかの操作を行います。  
 
-    -   **VSPerfCmd /detach** と入力します  
+    - **VSPerfCmd /detach** と入力します  
 
          - または -  
 
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ワーカー プロセスを終了します。  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ワーカー プロセスを終了します。  
 
-2.  プロファイラーをシャットダウンします。 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) と入力します  
+2. プロファイラーをシャットダウンします。 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) と入力します  
 
-3.  (省略可能) プロファイル環境変数を削除します。 型:  
+3. (省略可能) プロファイル環境変数を削除します。 型:  
 
      **VSPerfCmd /globaloff**  
 
-4.  コンピューターを再起動します。  
+4. コンピューターを再起動します。  
 
 ## <a name="see-also"></a>関連項目  
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

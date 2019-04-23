@@ -10,29 +10,29 @@ ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9a2898bb5736e6731d200fd4a05e84aeae8adb42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c9ea20e42ada09bd9ff2a5ab5fdb6222839380c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108049"
 ---
 # <a name="program-control"></a>プログラムの制御
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Visual Studio でデバッグする場合に、次のステップ実行のすべてとルーチンの続行がプログラムのレベルで発生します。  
   
--   特定のフレームの環境で実行するには、次の命令をコンピューターの設定は、次のステートメントを設定するには、  
+- 特定のフレームの環境で実行するには、次の命令をコンピューターの設定は、次のステートメントを設定するには、  
   
--   ステップ実行モードを終了するは、継続を実行します。  
+- ステップ実行モードを終了するは、継続を実行します。  
   
--   次の命令をステップ実行  
+- 次の命令をステップ実行  
   
--   現在のステップ実行モードを続行  
+- 現在のステップ実行モードを続行  
   
--   プログラムに含まれるスレッドの中断  
+- プログラムに含まれるスレッドの中断  
   
--   プログラムに含まれるスレッドを再開します。  
+- プログラムに含まれるスレッドを再開します。  
   
 > [!NOTE]
 >  コール スタックの表示は、スレッド レベルで実装されます。 スレッドの呼び出し履歴を表示するときに、フレームの情報を列挙するには、すべてのメソッドを実装する必要があります、 [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)インターフェイス。  

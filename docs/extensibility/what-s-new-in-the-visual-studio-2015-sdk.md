@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10ceddf29a044ac8538c05cbf7cd300759a76de6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a67b2e1d9cbbad4a9b3426d264e6fecf8623e5a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692048"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105091"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>どのような&#39;s を Visual Studio 2015 SDK の新機能
 Visual Studio SDK では、Visual Studio 2015、Visual Studio 2015 が更新されると、および Visual Studio 2017 の新規および更新の機能が次があります。
@@ -23,9 +23,9 @@ Visual Studio SDK では、Visual Studio 2015、Visual Studio 2015 が更新さ�
 
  これらのトピックでは、下、 [VSSDK ユーティリティ](../extensibility/internals/vssdk-utilities.md)セクション。
 
--   [色のテーマのツール](../extensibility/internals/color-theming-tools.md)作成し、Visual Studio のカスタム色を編集できます。
+- [色のテーマのツール](../extensibility/internals/color-theming-tools.md)作成し、Visual Studio のカスタム色を編集できます。
 
--   [イメージ サービス ツール](../extensibility/internals/image-service-tools.md)Visual Studio のイメージのマニフェスト ファイルを操作できます。
+- [イメージ サービス ツール](../extensibility/internals/image-service-tools.md)Visual Studio のイメージのマニフェスト ファイルを操作できます。
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Visual Studio SDK を Visual Studio に追加する新しい方法
  Visual Studio 2015 以降、Visual Studio SDK を個別にダウンロードする必要はありません。 代わりに、通常のインストール プロセスの一部としてインストールすることができますか、後でインストールすることもできます。 開くか、VSIX ソリューションを作成するときに Visual Studio から Visual Studio 機能拡張ツールのインストールを求められます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。
@@ -36,13 +36,13 @@ Visual Studio SDK では、Visual Studio 2015、Visual Studio 2015 が更新さ�
 ### <a name="visual-c-and-visual-basic"></a>Visual C# および Visual Basic
  C# と Visual Basic の場合は、Vspackage、メニュー コマンド、ツール ウィンドウ、エディターの分類子、エディターの表示要素、およびエディターの余白の拡張機能を作成するためのプロジェクト項目テンプレートの完全な範囲があります。 標準の VSIX プロジェクトには、これらのテンプレートの一部またはすべてを追加できます。 詳細については次を参照してください:
 
--   [メニュー コマンドを使用して拡張機能を作成します。](../extensibility/creating-an-extension-with-a-menu-command.md)
+- [メニュー コマンドを使用して拡張機能を作成します。](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   [ツール ウィンドウでの拡張機能を作成します。](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [ツール ウィンドウでの拡張機能を作成します。](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   [エディターの項目テンプレートを使用した拡張機能を作成します。](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [エディターの項目テンプレートを使用した拡張機能を作成します。](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   [VSPackage を使用した拡張機能を作成します。](../extensibility/creating-an-extension-with-a-vspackage.md)
+- [VSPackage を使用した拡張機能を作成します。](../extensibility/creating-an-extension-with-a-vspackage.md)
 
      VSPackage のウィザードは、c# または Visual Basic で不要になった拡張機能を作成します。
 
@@ -62,7 +62,7 @@ Visual Studio SDK では、Visual Studio 2015、Visual Studio 2015 が更新さ�
 >  NuGet を使用して、参照してください、既存のプロジェクトを変更したい場合[方法。VSPackages を Visual Studio 2015 に移行](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)NuGet パッケージへの拡張機能プロジェクトを更新する方法のセクションがあります。
 
 ## <a name="light-bulbs"></a>電球
- 拡張機能コードの記述の最も魅力的な新しい方法の 1 つは、Roslyn プロジェクトによって提供されます。 詳細については、[Roslyn](https://github.com/dotnet/Roslyn)を参照してください。
+ 拡張機能コードの記述の最も魅力的な新しい方法の 1 つは、Roslyn プロジェクトによって提供されます。 詳細については、次を参照してください。 [Roslyn](https://github.com/dotnet/Roslyn)します。
 
  電球マークは VSSDK に付属する新しい機能です。 Visual Studio エディターで使用される、展開すると、一連のコードのリファクタリング操作または組み込みのコード アナライザーによって識別された問題の修正プログラムを表示するアイコンが表示されます。 詳細については、「[チュートリアル:Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)します。
 
