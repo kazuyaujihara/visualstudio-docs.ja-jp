@@ -12,14 +12,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a8a99e160e4d488e44cc9e084789fe3a005eb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: be004820967f85de41b11c38031722b87a5af375
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039415"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>方法 : テンプレート内のパラメーターを置き換える
+# <a name="how-to-substitute-parameters-in-a-template"></a>方法: テンプレート内のパラメーターを置き換える
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 テンプレートに基づいてファイルを作成するとき、クラス名や名前空間などのテンプレート パラメーターを置き換えることができます。 テンプレート パラメーターの完全な一覧については、「[テンプレート パラメーター](../ide/template-parameters.md)」をご覧ください。  
@@ -29,7 +29,7 @@ ms.locfileid: "54780292"
   
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>パラメーターを使用して名前空間の名前をプロジェクト名に置き換えるには  
   
-1.  テンプレートの 1 つ以上のコード ファイルにパラメーターを挿入します。 次に例を示します。  
+1. テンプレートの 1 つ以上のコード ファイルにパラメーターを挿入します。 例:  
   
     ```  
     namespace $safeprojectname$  
@@ -38,9 +38,9 @@ ms.locfileid: "54780292"
     > [!NOTE]
     >  テンプレート パラメーターは、$*parameter*$ という形式で記述します。  
   
-2.  テンプレートの .vstemplate ファイルで、このファイルを含む `ProjectItem` 要素を検索します。  
+2. テンプレートの .vstemplate ファイルで、このファイルを含む `ProjectItem` 要素を検索します。  
   
-3.  `ProjectItem` 要素の `ReplaceParameters` 属性を `true` に設定します。 次に例を示します。  
+3. `ProjectItem` 要素の `ReplaceParameters` 属性を `true` に設定します。 例:  
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  

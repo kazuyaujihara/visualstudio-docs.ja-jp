@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df23a6e2a4288c6370a339d37d151283fe3afa8f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 79e7b2a406338e5ecfacf41f9c0485a35c2d97d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043030"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>1 つ以上の選択されたデータベース オブジェクトがターゲット データ クラスのスキーマに一致しないスキーマを返しました
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "59655557"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1.  **[OK]** をクリックしてダイアログ ボックスを閉じます。  
+1. **[OK]** をクリックしてダイアログ ボックスを閉じます。  
   
-2.  ターゲット クラス (O/R デザイナーでデータベース オブジェクトのドロップ先となるクラス) のスキーマと一致するデータを返すデータベース オブジェクトを選択します。  
+2. ターゲット クラス (O/R デザイナーでデータベース オブジェクトのドロップ先となるクラス) のスキーマと一致するデータを返すデータベース オブジェクトを選択します。  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

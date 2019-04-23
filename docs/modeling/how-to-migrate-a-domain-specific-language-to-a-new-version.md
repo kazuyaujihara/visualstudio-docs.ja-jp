@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46fa0dbcc5ab80ce567d4e0afd64d8990006204b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d8ca2366111e0e87e8e95db66f9bdb146016adb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040133"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>方法: ドメイン固有言語を新バージョンに移行する
 ドメイン固有言語を使って定義するプロジェクトを移行する[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]のバージョンから[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]を使用して配布されて[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]します。
@@ -28,9 +28,9 @@ ms.locfileid: "59663246"
 
 #### <a name="to-prepare-projects-for-migration"></a>移行するには、プロジェクトを準備します。
 
--   必ず、 **.csproj**と **.sln**ファイルを書き込むことができます。 ソース管理下にある場合は、チェック アウトすることを確認します。
+- 必ず、 **.csproj**と **.sln**ファイルを書き込むことができます。 ソース管理下にある場合は、チェック アウトすることを確認します。
 
--   移行するフォルダーのコピーを作成します。
+- 移行するフォルダーのコピーを作成します。
 
 ## <a name="migrating-a-collection-of-projects"></a>プロジェクトのコレクションを移行します。
 
@@ -38,7 +38,7 @@ ms.locfileid: "59663246"
 
 1. DSL の移行ツールを起動します。
 
-   -   Windows エクスプ ローラー (またはファイル エクスプ ローラー) ツールをダブルクリックします。 または、コマンド プロンプトからツールを起動できます。 このツールは、この場所には。
+   - Windows エクスプ ローラー (またはファイル エクスプ ローラー) ツールをダブルクリックします。 または、コマンド プロンプトからツールを起動できます。 このツールは、この場所には。
 
         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
@@ -50,37 +50,37 @@ ms.locfileid: "59663246"
 
 3. プロジェクトのツリーを確認し、変換したくないプロジェクトをオフにします。
 
-   -   プロジェクトまたはツールによって、変更の一覧を表示するソリューションを選択します。
+   - プロジェクトまたはツールによって、変更の一覧を表示するソリューションを選択します。
 
        > [!NOTE]
        >  フォルダー名の横に表示されるチェック ボックスは、影響を与えるありません。 プロジェクトおよびソリューションを検査するフォルダーを展開する必要があります。
 
 4. プロジェクトに変換します。
 
-   1.  クリックして**変換**します。
+   1. クリックして**変換**します。
 
         各プロジェクト ファイルが変換される前のコピーを_プロジェクト_**.csproj**として保存されます_プロジェクト_**vs2008.csproj。**
 
         各コピー_ソリューション_**.sln**として保存されます_ソリューション_**vs2008.sln。**
 
-   2.  報告されるすべての失敗した変換を調査します。
+   2. 報告されるすべての失敗した変換を調査します。
 
         テキスト ウィンドウにエラーが報告されます。 さらに、ツリー ビューでは、変換に失敗した各ノードに赤いフラグを示しています。 そのエラーの詳細を取得するノードをクリックすることができます。
 
 5. **すべてのテンプレートの変換**ソリューションで正常に格納しているプロジェクトを変換します。
 
-   1.  ソリューションを開きます。
+   1. ソリューションを開きます。
 
-   2.  をクリックして、**すべてのテンプレートの変換**ソリューション エクスプ ローラーのヘッダーにボタンをクリックします。
+   2. をクリックして、**すべてのテンプレートの変換**ソリューション エクスプ ローラーのヘッダーにボタンをクリックします。
 
        > [!NOTE]
        >  この手順を不要なことできます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))します。
 
 6. 変換後のプロジェクトでのカスタム コードを更新します。
 
-   -   プロジェクトをビルドし、すべてのエラーを調査しようとします。
+   - プロジェクトをビルドし、すべてのエラーを調査しようとします。
 
-   -   デザイナーをテストします。
+   - デザイナーをテストします。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

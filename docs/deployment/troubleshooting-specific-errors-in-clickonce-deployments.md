@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042382"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 配置の固有のエラーのトラブルシューティング
 この記事では、展開するときに発生する可能性がある次の一般的なエラーを示します、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションでは、各問題を解決する手順を示します。
@@ -81,9 +81,9 @@ ms.locfileid: "59654322"
 
  次の操作を行う必要があります。
 
--   配置マニフェストの id、アプリケーション マニフェストの id、およびメイン アプリケーションの EXE の id がすべて一意であることを確認します。
+- 配置マニフェストの id、アプリケーション マニフェストの id、およびメイン アプリケーションの EXE の id がすべて一意であることを確認します。
 
--   ファイルのパスが 100 文字を超えていないことを確認します。 アプリケーションには長すぎるファイル パスが含まれている場合は、格納できるパスの最大の制限を超える可能性があります。 再インストールして、パスを短くしてください。
+- ファイルのパスが 100 文字を超えていないことを確認します。 アプリケーションには長すぎるファイル パスが含まれている場合は、格納できるパスの最大の制限を超える可能性があります。 再インストールして、パスを短くしてください。
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>アプリケーション構成ファイルで PrivatePath 設定は適用されません。
  PrivatePath (Fusion のプローブ パス) を使用するには、アプリケーションは、完全な信頼のアクセス許可を要求する必要があります。 完全な信頼を要求し、もう一度お試しに、アプリケーション マニフェストを変更してください。
@@ -112,9 +112,9 @@ ms.locfileid: "59654322"
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>証明書ストアと空白のメッセージを受信したボックス内の証明書に署名しようとしています。
  **署名** ダイアログ ボックスがあります。
 
--   選択**格納された証明書を使用してサインイン**と
+- 選択**格納された証明書を使用してサインイン**と
 
--   は、一覧から証明書を選択します。最初の証明書は、既定で選択します。
+- は、一覧から証明書を選択します。最初の証明書は、既定で選択します。
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>「署名のない」ボタンをクリックすると、例外が発生します。
  この問題は、既知のバグです。 すべて[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]マニフェストが署名するために必要です。 署名のオプションのいずれかを選択し、 **OK**します。

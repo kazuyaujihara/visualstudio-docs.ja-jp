@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca75dc2afd49576cecc0fb89afd11744f098b170
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631615"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042239"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 要素 (ClickOnce アプリケーション)
 アプリケーションをクライアント コンピューター上で実行するのに必要な最低限のセキュリティ権限について説明します。
@@ -70,38 +70,38 @@ ms.locfileid: "56631615"
  `trustInfo` 要素は必須です。この要素は `asm.v2` 名前空間に属します。 これには、属性はなく次の要素を含みます。
 
 ## <a name="security"></a>セキュリティ
- 必須です。 この要素は `trustInfo` 要素の子です。 `applicationRequestMinimum` 要素を含み、属性はありません。
+ 必須。 この要素は `trustInfo` 要素の子です。 `applicationRequestMinimum` 要素を含み、属性はありません。
 
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum
- 必須です。 この要素は `security` 要素の子であり、 `PermissionSet`、 `assemblyRequest`、および `defaultAssemblyRequest`要素を含んでいます。 この要素には属性はありません。
+ 必須。 この要素は `security` 要素の子であり、 `PermissionSet`、 `assemblyRequest`、および `defaultAssemblyRequest`要素を含んでいます。 この要素には属性はありません。
 
 ## <a name="permissionset"></a>PermissionSet
- 必須です。 この要素は `applicationRequestMinimum` 要素の子であり、 `IPermission` 要素を含んでいます。 この要素には、次の属性があります。
+ 必須。 この要素は `applicationRequestMinimum` 要素の子であり、 `IPermission` 要素を含んでいます。 この要素には、次の属性があります。
 
--   `ID`
+- `ID`
 
-     必須です。 アクセス許可セットを識別します。 この属性は任意の値にできます。 この ID は `defaultAssemblyRequest` および `assemblyRequest` 属性で参照されます。
+     必須。 アクセス許可セットを識別します。 この属性は任意の値にできます。 この ID は `defaultAssemblyRequest` および `assemblyRequest` 属性で参照されます。
 
--   `version`
+- `version`
 
-     必須です。 アクセス許可のバージョンを識別します。 通常、この値は `1`です。
+     必須。 アクセス許可のバージョンを識別します。 通常、この値は `1`です。
 
 ## <a name="ipermission"></a>IPermission
- 任意。 この要素は `PermissionSet` 要素の子です。 `IPermission` 要素には、 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]内のアクセス許可クラスを正しく指定します。 `IPermission` 要素には次の属性がありますが、アクセス許可クラスのプロパティに対応する追加の属性を持つことができます。 アクセス許可の具体的な構文については、Security.config ファイル内の例を参照してください。
+ 任意。 この要素は `PermissionSet` 要素の子です。 `IPermission` 要素には、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 内のアクセス許可クラスを正しく指定します。 `IPermission` 要素には次の属性がありますが、アクセス許可クラスのプロパティに対応する追加の属性を持つことができます。 アクセス許可の具体的な構文については、Security.config ファイル内の例を参照してください。
 
--   `class`
+- `class`
 
-     必須です。 アクセス許可クラスを厳密な名前で指定します。 たとえば、次のコードでは `FileDialogPermission` 型を指定しています。
+     必須。 アクセス許可クラスを厳密な名前で指定します。 たとえば、次のコードでは `FileDialogPermission` 型を指定しています。
 
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
--   `version`
+- `version`
 
-     必須です。 アクセス許可のバージョンを識別します。 通常、この値は `1`です。
+     必須。 アクセス許可のバージョンを識別します。 通常、この値は `1`です。
 
--   `Unrestricted`
+- `Unrestricted`
 
-     必須です。 アプリケーションの実行に、このアクセス許可を無制限で与える必要があるかどうかを指定します。 `true`に設定すると、アクセス許可は無条件に与えられます。 `false`に設定するか、この属性を定義しない場合は、 `IPermission` タグで定義されているアクセス許可固有の属性に従って制限されます。 アクセス許可の例を次に示します。
+     必須。 アプリケーションの実行に、このアクセス許可を無制限で与える必要があるかどうかを指定します。 `true`に設定すると、アクセス許可は無条件に与えられます。 `false`に設定するか、この属性を定義しない場合は、 `IPermission` タグで定義されているアクセス許可固有の属性に従って制限されます。 アクセス許可の例を次に示します。
 
     ```xml
     <IPermission
@@ -119,20 +119,20 @@ ms.locfileid: "56631615"
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest
  任意。 すべてのアセンブリに付与されるアクセス許可のセットを指定します。 この要素は `applicationRequestMinimum` 要素の子であり、以下の属性があります。
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      必ず指定します。 既定のアクセス許可として使用するアクセス許可セットの ID を指定します。 アクセス許可セットは、 `PermissionSet` 要素で宣言します。
 
 ## <a name="assemblyrequest"></a>assemblyRequest
  任意。 特定のアセンブリのアクセス許可を識別します。 この要素は `applicationRequestMinimum` 要素の子であり、以下の属性があります。
 
--   `Name`
+- `Name`
 
-     必須です。 アセンブリ名を識別します。
+     必須。 アセンブリ名を識別します。
 
--   `permissionSetReference`
+- `permissionSetReference`
 
-     必須です。 このアセンブリに必要なアクセス許可セットの ID を指定します。 アクセス許可セットは、 `PermissionSet` 要素で宣言します。
+     必須。 このアセンブリに必要なアクセス許可セットの ID を指定します。 アクセス許可セットは、 `PermissionSet` 要素で宣言します。
 
 ## <a name="requestedprivileges"></a>requestedPrivileges
  任意。 この要素は `security` 要素の子であり、 `requestedExecutionLevel` 要素を含んでいます。 この要素には属性はありません。
@@ -142,7 +142,7 @@ ms.locfileid: "56631615"
 
 - `Level`
 
-   必須です。 アプリケーションが要求するセキュリティ レベルを指定します。 指定できる値は次のとおりです。
+   必須。 アプリケーションが要求するセキュリティ レベルを指定します。 指定できる値は次のとおりです。
 
    `asInvoker`。アクセス許可の追加要求は行いません。 このレベルでは、追加の信頼確認は不要です。
 
@@ -150,13 +150,13 @@ ms.locfileid: "56631615"
 
    `requireAdministrator`。完全な管理者のアクセス許可を要求します。
 
-   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションは、 `asInvoker`値のみでインストールされます。 それ以外の値でインストールすると、エラーが発生します。
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションは、`asInvoker` 値のみでインストールされます。 それ以外の値でインストールすると、エラーが発生します。
 
 - `uiAccess`
 
    任意。 アプリケーションが、保護されたユーザー インターフェイス要素へのアクセスを必要とするかどうかを指定します。 指定できる値は、 `true` または `false`です。既定値は false です。 署名付きのアプリケーションのみ、true の値を設定する必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションが、クライアント コンピューターによって既定で与えられる以上のアクセス許可を求める場合は、より高いレベルの信頼を与えるかどうかを確認するメッセージが、共通言語ランタイムの Trust Manager によって表示されます。 ユーザーが信頼を与えない場合、アプリケーションは実行されません。信頼を与えた場合は、ここで要求されたアクセス許可で実行されます。
 
  配置マニフェストに有効な信頼ライセンスがある場合には、 `defaultAssemblyRequest` や `assemblyRequest` を使用して要求されるすべてのアクセス許可は、ユーザーに確認することなく与えられます。
@@ -164,7 +164,7 @@ ms.locfileid: "56631615"
  アクセス許可の昇格の詳細については、次を参照してください。 [ClickOnce アプリケーションのセキュリティで保護する](../deployment/securing-clickonce-applications.md)します。 ポリシー配置の詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。
 
 ## <a name="examples"></a>使用例
- 次の 3 つのコード例では、 `trustInfo` による配置のアプリケーション マニフェストで使用する、既定の名前付きセキュリティ ゾーン (Internet、LocalIntranet、および FullTrust) に対応する [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 要素を示しています。
+ 次の 3 つのコード例では、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] による配置のアプリケーション マニフェストで使用する、既定の名前付きセキュリティ ゾーン (Internet、LocalIntranet、および FullTrust) に対応する `trustInfo` 要素を示しています。
 
  最初の例は、Internet セキュリティ ゾーンで使用できる既定のアクセス許可の `trustInfo` 要素を示しています。
 

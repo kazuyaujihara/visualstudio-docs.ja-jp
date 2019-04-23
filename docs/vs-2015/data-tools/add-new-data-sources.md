@@ -19,17 +19,16 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963906"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670174"
 ---
 # <a name="add-new-data-sources"></a>新しいデータ ソースの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio での .NET データ ツールのコンテキストでは、用語*データ ソース*データ ストアに接続し、.NET アプリケーションにデータを公開する .NET オブジェクトを参照します。 Visual Studio のデザイナーにドラッグしてからデータベース オブジェクトを削除すると、フォームにデータをバインドする定型コードを生成するデータ ソースの出力を使用できる、**データソース**ウィンドウ。 この種類のデータ ソースを指定できます。  
   
 -   いくつかの種類のデータベースに関連付けられている Entity Framework モデル内のクラス。  

@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 553b7a542bc49b3105462a5f53082917b1741916
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 80c8d385e0c78461df5b7938d356ec43a481e46e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803669"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670421"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio を使用して UI を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,6 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
  ![[プロパティ] パネル](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
  **[カテゴリ]** プロパティのカテゴリを展開し、折りたたみます。 カテゴリの詳細を表示するには **[展開]** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") をクリックし、非表示にするには **[折りたたみ]** ![折りたたみ](../designers/media/b5-collapse-button.png "b5_collapse_button") をクリックします。
-
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84b5ed45bfa7117eec4cbaa86ad9ca4533339d62
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039060"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Visual Studio 2015 の Visual Studio でデザインする場合は新機能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,18 +64,18 @@ ms.locfileid: "59002882"
 
 - **アーキテクチャ エクスプローラー**。 アーキテクチャ エクスプローラーを使ってダイアグラムを作成できなくなりました。 しかし、ソリューション エクスプローラーを使って引き続き作成できます。
 
-##  <a name="VersionSupport"></a> アーキテクチャ ツールとモデリング ツールのエディションのサポート
+## <a name="VersionSupport"></a> アーキテクチャ ツールとモデリング ツールのエディションのサポート
 
 Visual Studio 2015 は、いくつかのエディションで使用できます。 すべては、アーキテクチャとモデリング ツールのサポートを提供します。 各ツールの利用可能情報を次の表に示します。
 
 |**機能**|**Enterprise**|**Professional**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**コード マップ**|はい|読み取りとコード マップをフィルター処理、新しいジェネリック ノードを追加および選択範囲から新しいの有向グラフの作成にのみサポートします。|-|-|
+|**コード マップ**|[はい]|読み取りとコード マップをフィルター処理、新しいジェネリック ノードを追加および選択範囲から新しいの有向グラフの作成にのみサポートします。|-|-|
 |**UML クラス図**|はい|-|-|-|
 |**UML シーケンス図**|[はい]|-|-|-|
-|**UML ユース ケース図**|[はい]|-|-|-|
-|**UML アクティビティ図**|はい|-|-|-|
+|**UML ユース ケース図**|はい|-|-|-|
+|**UML アクティビティ図**|[はい]|-|-|-|
 |**UML コンポーネント図**|はい|-|-|-|
 |**レイヤー図**|はい|-|-|-|
-|**グラフの directed** (DGML ダイアグラム)|はい|はい|-|-|
+|**グラフの directed** (DGML ダイアグラム)|[はい]|はい|-|-|
 |**コード クローン**|はい|-|-|-|

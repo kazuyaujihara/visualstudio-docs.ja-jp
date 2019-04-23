@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195165"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041836"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 の新機能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -123,15 +123,15 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 ## <a name="cross-platform-debugging-support"></a>クロスプラットフォームのデバッグのサポート
  Visual Studio を使用して、Windows、iOS、Android の各デバイスで実行されるネイティブ モバイル アプリを作成、デバッグすることができます。 [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)を使用するか、またはデバイスを接続し、Visual Studio で直接コードをデバッグします。
 
--   **JavaScript / Cordova**。 JavaScript で Windows、iOS、Android のネイティブ アプリを作成するには、 [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) を使用します。
+- **JavaScript / Cordova**。 JavaScript で Windows、iOS、Android のネイティブ アプリを作成するには、 [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) を使用します。
 
      [アプリのデバッグ](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)MSDN ライブラリでは、Visual Studio の Cordova のサポートのデバッグについて詳しく説明します。
 
--   **C# / Xamarin**。 [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) を使用し、C# を使って Visual Studio で Windows、iOS、および Android のネイティブ アプリを作成します。
+- **C# / Xamarin**。 [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) を使用し、C# を使って Visual Studio で Windows、iOS、および Android のネイティブ アプリを作成します。
 
      デバッグ機能については、[Xamarin 開発者ガイド](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) の「 [Debugging](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) 」 (iOS) および「 [Debug on Device](http://developer.xamarin.com/guides) 」で説明されています。
 
--   **C++ / Android**。 [Visual C for Cross-platform Mobile Development](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) テンプレートを [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) などのサード パーティ製ツールとともに使用して、Windows および Android のネイティブ アプリを作成します。
+- **C++ / Android**。 [Visual C for Cross-platform Mobile Development](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) テンプレートを [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) などのサード パーティ製ツールとともに使用して、Windows および Android のネイティブ アプリを作成します。
 
 ## <a name="debugging-and-diagnostics"></a>デバッグと診断
 
@@ -140,7 +140,7 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 次に示すのは、コードに対して異なる種類の診断および分析を実行する新しいツールまたは機能強化されたツールです。
 
 ### <a name="perftips"></a>パフォーマンスのヒント
- パフォーマンスのヒントはデバッグ中のメソッドの実行時間を表示し、プロファイラーを呼び出すことなくボトルネックをすばやく見つけることができるようになります。 開始するには、「 [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)」を参照してください
+ パフォーマンスのヒントはデバッグ中のメソッドの実行時間を表示し、プロファイラーを呼び出すことなくボトルネックをすばやく見つけることができるようになります。 最初に、次を参照してください[PerfTips:。Visual Studio を使用したデバッグ中のパフォーマンス概要の参照](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>エラー一覧
  エラー一覧はあらゆる列のフィルター処理をサポートするようになりました。 また入力時の C# または Visual Basic ソリューション全体におけるエラー、警告、コード分析を、コードの変更によって大量の警告が発生したとしてもライブで表示します。 新しいエラー一覧は既存の使用方法と後方互換性があります。 詳細については、「 [Error List Window](./ide/reference/error-list-window.md)」を参照してください。
@@ -179,18 +179,18 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 ### <a name="notification-hub"></a>通知ハブ
  スキャンを簡単にするために、通知ハブの UI が効率化されています。 パフォーマンスの問題、レンダリングの問題、クラッシュなどの通知の種類が追加され、Visual Studio に通知の表示停止を指示できるようになりました。 詳しくは、「[Visual Studio の通知](./ide/visual-studio-notifications.md)」をご覧ください。
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: コードに何が起こったかを検索します (Enterprise Edition と Professional Edition のみ)。
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens:検索 (Enterprise および Professional エディションのみ)、コードの変更点
  エディターを離れずにコードに関する情報を検索できるため、自分の作業に専念できます。 Visual Studio Team Services (VSTS) または Team Foundation Server (TFS) に格納されているコードについて、作業項目、バグ、コード レビューなどの変更やその他の履歴を確認できます。
 
  Visual Studio Enterprise と Visual Studio Professional で、次の操作を実行できるようになりました。
 
 - Visual Studio エディターでコード ファイル全体の履歴を取得する。
 
-   ![CodeLens: コード ファイルの詳細を取得する](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens:コード ファイルの詳細を取得](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - コードを変更したユーザーを示すグラフを表示する。 これは、チームでの変更のパターンを見つけて影響を評価するために役立ちます。
 
-   ![CodeLens: コードの変更履歴をグラフで表示](./ide/media/codelens.png "CodeLens")
+   ![CodeLens:グラフとしてコードの変更履歴を参照してください](./ide/media/codelens.png "CodeLens")
 
 - コードの最終変更日時を簡単に分かるようにする。
 

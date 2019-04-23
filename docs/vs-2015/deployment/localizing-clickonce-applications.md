@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962854"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039865"
 ---
 # <a name="localizing-clickonce-applications"></a>ClickOnce アプリケーションのローカライズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58962854"
   
  ここでは、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを他のカルチャ向けに配置する 3 つの方法について説明します。  
   
--   すべてのサテライト アセンブリを 1 つの配置に含める。  
+- すべてのサテライト アセンブリを 1 つの配置に含める。  
   
--   カルチャごとに 1 つの配置を生成し、それぞれに 1 つのサテライト アセンブリを含める。  
+- カルチャごとに 1 つの配置を生成し、それぞれに 1 つのサテライト アセンブリを含める。  
   
--   必要に応じてサテライト アセンブリをダウンロードする。  
+- 必要に応じてサテライト アセンブリをダウンロードする。  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>すべてのサテライト アセンブリを 1 つの配置に含める  
  複数の [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 配置を発行するのではなく、すべてのサテライト アセンブリを含む 1 つの [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 配置を発行します。  
@@ -77,9 +77,9 @@ ms.locfileid: "58962854"
   
  アプリケーションを顧客が使用できるようにする前に、ローカライズされた配置をテストするには、次の 3 つのオプションがあります。  
   
--   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを、Windows の該当するローカライズ版で実行する。  
+- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを、Windows の該当するローカライズ版で実行する。  
   
--   アプリケーション内で、<xref:System.Threading.Thread.CurrentUICulture%2A> プロパティをプログラムにより設定する (このプロパティは、<xref:System.Windows.Forms.Application.Run%2A> メソッドを呼び出す前に設定する必要があります)。  
+- アプリケーション内で、<xref:System.Threading.Thread.CurrentUICulture%2A> プロパティをプログラムにより設定する (このプロパティは、<xref:System.Windows.Forms.Application.Run%2A> メソッドを呼び出す前に設定する必要があります)。  
   
 ## <a name="see-also"></a>関連項目  
  [\<assemblyIdentity > 要素](../deployment/assemblyidentity-element-clickonce-deployment.md)   

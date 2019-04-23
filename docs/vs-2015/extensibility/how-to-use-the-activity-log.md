@@ -11,12 +11,12 @@ ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 50ef738826a9eb85a081a7063c1ca55280bed3a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 812862c3eaf99b7459bb422e174f8fe155ea384a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042588"
 ---
 # <a name="how-to-use-the-activity-log"></a>方法: アクティビティ ログを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Vspackage は、メッセージをアクティビティ ログに書き込むこ
   
 ### <a name="to-write-an-entry-to-the-activity-log"></a>アクティビティ ログにエントリを書き込む  
   
-1.  このコードを挿入、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドまたはコンス トラクターは、VSPackage を除くその他の方法で。  
+1. このコードを挿入、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドまたはコンス トラクターは、VSPackage を除くその他の方法で。  
   
     ```csharp  
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -42,13 +42,13 @@ Vspackage は、メッセージをアクティビティ ログに書き込むこ
   
      このコードを取得、<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>サービスおよびにキャスト、<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>インターフェイス。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> 現在のカルチャのコンテキストを使用してアクティビティ ログに情報のエントリを書き込みます。  
   
-2.  (通常は、コマンドが呼び出されたまたはウィンドウを開いた) ときに VSPackage が読み込まれるときに、テキストは、アクティビティ ログに書き込まれます。  
+2. (通常は、コマンドが呼び出されたまたはウィンドウを開いた) ときに VSPackage が読み込まれるときに、テキストは、アクティビティ ログに書き込まれます。  
   
 ### <a name="to-examine-the-activity-log"></a>アクティビティ ログを確認するには  
   
-1.  Visual Studio のデータのサブフォルダーでアクティビティ ログを検索: *%appdata%* \Microsoft\VisualStudio\14.0\ActivityLog.XML.  
+1. Visual Studio のデータのサブフォルダーでアクティビティ ログを検索: *%appdata%* \Microsoft\VisualStudio\14.0\ActivityLog.XML.  
   
-2.  任意のテキスト エディターでは、アクティビティ ログを開きます。 一般的なエントリを次に示します。  
+2. 任意のテキスト エディターでは、アクティビティ ログを開きます。 一般的なエントリを次に示します。  
   
     ```  
     Called for: Company.MyApp.MyAppPackage ...  

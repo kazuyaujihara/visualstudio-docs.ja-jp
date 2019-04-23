@@ -27,12 +27,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a0226ca619d766fdf2f06e811a608177235fc46
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f622440c5bd0f0d09967eff56479459a4a3bfbb0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972931"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042876"
 ---
 # <a name="how-to-use-the-registers-window"></a>方法: [レジスタ] ウィンドウを使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "58972931"
   
 ### <a name="to-display-the-registers-window"></a>[レジスタ] ウィンドウを表示するには  
   
--   **デバッグ**] メニューの [選択**Windows**を選び、**登録**。  
+- **デバッグ**] メニューの [選択**Windows**を選び、**登録**。  
   
      デバッガーは動作中であるか、中断モードである必要があります。  
   

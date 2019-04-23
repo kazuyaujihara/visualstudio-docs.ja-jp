@@ -1,4 +1,4 @@
-﻿---
+---
 title: コントロールのコード化された UI テストの有効化 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -8,12 +8,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e24e9e405dfeab18ca0e55a617857d73ba4234e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 332926de13053339c4e98f2d533d9e39213be4d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766972"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040291"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>コントロールのコード化された UI テストの有効化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54766972"
   
    ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
   
-##  <a name="recordandplayback"></a>アクセシビリティの実装によって記録と再生およびプロパティの検証をサポートする  
+## <a name="recordandplayback"></a>アクセシビリティの実装によって記録と再生およびプロパティの検証をサポートする  
  コード化された UI テスト ビルダーは、記録時に出現したコントロールに関する情報をキャプチャし、そのセッションを再生するコードを生成します。 コントロールがユーザー補助をサポートしていない場合、コード化された UI テスト ビルダーは画面座標を使用して操作 (マウス クリックなど) をキャプチャします。 テストの再生時、生成されたコードは同じ画面座標にそれらのマウス クリックを表示します。 テストの再生時にコントロールが画面上の別の場所に表示される場合、生成されたコードはコントロールに対するその操作の実行に失敗します。 テストが異なる画面構成や異なる環境で再生される場合、または UI レイアウトが変更された後に再生される場合、これは失敗する可能性があります。  
   
  ![CUIT&#95;RecordNoSupport](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")  
@@ -46,7 +46,7 @@ ms.locfileid: "54766972"
   
  ![CUIT&#95;Accessible](../test/media/cuit-accessible.png "CUIT_Accessible")  
   
-1.  <xref:System.Windows.Forms.Control.ControlAccessibleObject> から派生するクラスを実装し、クラスのオブジェクトを返すように <xref:System.Windows.Forms.Control.AccessibilityObject%2A> プロパティをオーバーライドします。  
+1. <xref:System.Windows.Forms.Control.ControlAccessibleObject> から派生するクラスを実装し、クラスのオブジェクトを返すように <xref:System.Windows.Forms.Control.AccessibilityObject%2A> プロパティをオーバーライドします。  
   
     ```csharp  
     public partial class ChartControl : UserControl  
@@ -71,16 +71,16 @@ ms.locfileid: "54766972"
     }  
     ```  
   
-2.  アクセス可能なオブジェクトの <xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.GetChild%2A>、および <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> プロパティおよびメソッドをオーバーライドします。  
+2. アクセス可能なオブジェクトの <xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.GetChild%2A>、および <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> プロパティおよびメソッドをオーバーライドします。  
   
-3.  子コントロールの別のユーザー補助オブジェクトを実装し、そのユーザー補助オブジェクト返すように子コントロールの <xref:System.Windows.Forms.Control.AccessibilityObject%2A> プロパティをオーバーライドします。  
+3. 子コントロールの別のユーザー補助オブジェクトを実装し、そのユーザー補助オブジェクト返すように子コントロールの <xref:System.Windows.Forms.Control.AccessibilityObject%2A> プロパティをオーバーライドします。  
   
-4.  子コントロールのユーザー補助オブジェクトの <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>、<xref:System.Windows.Forms.AccessibleObject.Name%2A>、<xref:System.Windows.Forms.AccessibleObject.Parent%2A>、<xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.Navigate%2A>、および <xref:System.Windows.Forms.AccessibleObject.Select%2A> プロパティおよびメソッドをオーバーライドします。  
+4. 子コントロールのユーザー補助オブジェクトの <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>、<xref:System.Windows.Forms.AccessibleObject.Name%2A>、<xref:System.Windows.Forms.AccessibleObject.Parent%2A>、<xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.Navigate%2A>、および <xref:System.Windows.Forms.AccessibleObject.Select%2A> プロパティおよびメソッドをオーバーライドします。  
   
 > [!NOTE]
 >  このトピックでは、まずこのプロシージャの <xref:System.Windows.Forms.AccessibleObject> でユーザー補助のサンプルを作成し、それを基に残りのプロシージャで他の要素を作成します。 ユーザー補助サンプルの作業バージョンを作成する場合は、コンソール アプリケーションを作成し、Program.cs のコードをサンプル コードで置き換えます。 ユーザー補助、System.Drawing、および System.Windows.Forms への参照を追加する必要があります。 ビルド警告を除去するために、アクセシビリティの **[相互運用機能型の埋め込み]** を **False** に変更してください。 アプリケーションの実行時にコンソール ウィンドウが表示されないように、プロジェクトの出力の種類を **[コンソール アプリケーション]** から **[Windows アプリケーション]** に変更できます。  
   
-##  <a name="customproprties"></a>プロパティ プロバイダーの実装によってカスタム プロパティの検証をサポートする  
+## <a name="customproprties"></a>プロパティ プロバイダーの実装によってカスタム プロパティの検証をサポートする  
  記録と再生およびプロパティの検証の基本的なサポートを実装したら、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> プラグインを実装して、コントロールのカスタム プロパティをコード化された UI テストから使用できるようにすることができます。 たとえば、次のプロシージャでは、コード化された UI テストがグラフ コントロールの CurveLegend 子コントロールの State プロパティにアクセスできるようにするプロパティ プロバイダーを作成します。  
   
  ![CUIT&#95;CustomProps](../test/media/cuit-customprops.png "CUIT_CustomProps")  
@@ -88,7 +88,7 @@ ms.locfileid: "54766972"
 ### <a name="to-support-custom-property-validation"></a>カスタム プロパティの検証をサポートするには  
  ![CUIT&#95;Props](../test/media/cuit-props.png "CUIT_Props")  
   
-1.  曲線の凡例のアクセス可能なオブジェクトの <xref:System.Windows.Forms.AccessibleObject.Description%2A> プロパティを、説明文字列の豊富なプロパティ値を渡すようにオーバーライドします。主要な説明とは (複数のプロパティを実装している場合はそれぞれを) セミコロン (;) で区切ります。  
+1. 曲線の凡例のアクセス可能なオブジェクトの <xref:System.Windows.Forms.AccessibleObject.Description%2A> プロパティを、説明文字列の豊富なプロパティ値を渡すようにオーバーライドします。主要な説明とは (複数のプロパティを実装している場合はそれぞれを) セミコロン (;) で区切ります。  
   
     ```csharp  
     public class CurveLegendAccessibleObject : AccessibleObject  
@@ -106,9 +106,9 @@ ms.locfileid: "54766972"
     }  
     ```  
   
-2.  クラス ライブラリ プロジェクトを作成し、ユーザー補助、Microsoft.VisualStudio.TestTools.UITesting、Microsoft.VisualStudio.TestTools.UITest.Common、および Microsoft.VisualStudio.TestTools.Extension への参照を追加して、コントロール用の UI テスト拡張パッケージを作成します。 アクセシビリティの **[相互運用機能型の埋め込み]** を **False** に変更します。  
+2. クラス ライブラリ プロジェクトを作成し、ユーザー補助、Microsoft.VisualStudio.TestTools.UITesting、Microsoft.VisualStudio.TestTools.UITest.Common、および Microsoft.VisualStudio.TestTools.Extension への参照を追加して、コントロール用の UI テスト拡張パッケージを作成します。 アクセシビリティの **[相互運用機能型の埋め込み]** を **False** に変更します。  
   
-3.  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> から派生したプロパティのプロバイダー クラスを追加します。  
+3. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> から派生したプロパティのプロバイダー クラスを追加します。  
   
     ```csharp  
     using System;  
@@ -127,7 +127,7 @@ ms.locfileid: "54766972"
     }  
     ```  
   
-4.  <xref:System.Collections.Generic.Dictionary%602> でプロパティ名とプロパティ記述子を設定して、プロパティ プロバイダーを実装します。  
+4. <xref:System.Collections.Generic.Dictionary%602> でプロパティ名とプロパティ記述子を設定して、プロパティ プロバイダーを実装します。  
   
     ```csharp  
     // Define a map of property descriptors for CurveLegend  
@@ -187,7 +187,7 @@ ms.locfileid: "54766972"
     }  
     ```  
   
-5.  アセンブリがコントロールとその子コントロールにコントロール固有のサポートを提供することを示すように、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName> をオーバーライドします。  
+5. アセンブリがコントロールとその子コントロールにコントロール固有のサポートを提供することを示すように、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName> をオーバーライドします。  
   
     ```csharp  
     public override int GetControlSupportLevel(UITestControl uiTestControl)  
@@ -205,7 +205,7 @@ ms.locfileid: "54766972"
     }  
     ```  
   
-6.  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName> の残りの抽象メソッドをオーバーライドします。  
+6. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName> の残りの抽象メソッドをオーバーライドします。  
   
     ```csharp  
     public override string[] GetPredefinedSearchProperties(Type specializedClass)  
@@ -240,7 +240,7 @@ ms.locfileid: "54766972"
   
     ```  
   
-7.  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> から派生した拡張パッケージ クラスを追加します。  
+7. <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> から派生した拡張パッケージ クラスを追加します。  
   
     ```csharp  
     using System;  
@@ -256,7 +256,7 @@ ms.locfileid: "54766972"
     }  
     ```  
   
-8.  アセンブリの `UITestExtensionPackage` 属性を定義します。  
+8. アセンブリの `UITestExtensionPackage` 属性を定義します。  
   
     ```csharp  
     [assembly: Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage(  
@@ -326,7 +326,7 @@ ms.locfileid: "54766972"
 > [!NOTE]
 >  この拡張パッケージは、"Text" 型であるすべてのコントロールに適用されます。 同じ種類の複数のコントロールをテストしている場合は、別々にテストし、テストを記録するときにどの拡張パッケージが配置されているかを管理する必要があります。  
   
-##  <a name="codegeneration"></a>カスタム プロパティにアクセスするためのクラスを実装してコード生成をサポートする  
+## <a name="codegeneration"></a>カスタム プロパティにアクセスするためのクラスを実装してコード生成をサポートする  
  コード化された UI テスト ビルダーはセッションの記録からコードを生成するとき、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> クラスを使用してコントロールにアクセスします。  
   
 ```csharp  
@@ -346,7 +346,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>特殊なクラスを追加してコントロールにアクセスするには  
  ![CUIT&#95;CodeGen](../test/media/cuit-codegen.png "CUIT_CodeGen")  
   
-1.  <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> から派生したクラスを実装し、コンストラクターの検索プロパティのコレクションにコントロールの型を追加します。  
+1. <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> から派生したクラスを実装し、コンストラクターの検索プロパティのコレクションにコントロールの型を追加します。  
   
     ```csharp  
     public class CurveLegend:WinControl   
@@ -360,7 +360,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-2.  クラスのプロパティとして、コントロールのカスタム プロパティを実装します。  
+2. クラスのプロパティとして、コントロールのカスタム プロパティを実装します。  
   
     ```csharp  
     public virtual string State  
@@ -372,7 +372,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-3.  曲線の凡例の子コントロールの新しいクラスの型を返すように、プロパティ プロバイダーの <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName> メソッドをオーバーライドします。  
+3. 曲線の凡例の子コントロールの新しいクラスの型を返すように、プロパティ プロバイダーの <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName> メソッドをオーバーライドします。  
   
     ```csharp  
     public override Type GetSpecializedClass(UITestControl uiTestControl)   
@@ -389,7 +389,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-4.  新しいクラスの PropertyNames メソッドの型を返すように、プロパティ プロバイダーの <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A> メソッドをオーバーライドします。  
+4. 新しいクラスの PropertyNames メソッドの型を返すように、プロパティ プロバイダーの <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A> メソッドをオーバーライドします。  
   
     ```csharp  
     public override Type GetPropertyNamesClassType(UITestControl uiTestControl)  
@@ -406,13 +406,13 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-##  <a name="intentawareactions"></a>操作フィルターの実装によって目的に応じた操作をサポートする  
+## <a name="intentawareactions"></a>操作フィルターの実装によって目的に応じた操作をサポートする  
  Visual Studio はテストを記録するとき、各マウス イベントとキーボード イベントをキャプチャします。 ただし、一連のマウス イベントとキーボード イベントで操作の目的が失われる場合があります。 たとえば、コントロールがオートコンプリートをサポートしている場合は、テストを別の環境で再生すると、同じマウス イベントとキーボード イベントのセットで別の値になることがあります。 一連のキーボード イベントとマウス イベントを単一の操作に置き換える操作フィルター プラグインを追加できます。 こうすることで、結果として値を選択することになる一連のマウス イベントとキーボード イベントを、値を設定する単一の操作に置き換えることができます。 これによって、コード化された UI テストは環境の違いによるオートコンプリートの結果の違いから保護されます。  
   
 ### <a name="to-support-intent-aware-actions"></a>目的に応じた操作をサポートするには  
  ![CUIT&#95;Actions](../test/media/cuit-actions.png "CUIT_Actions")  
   
-1.  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> から派生した操作フィルター クラスを実装して、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A>、および <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A> プロパティをオーバーライドします。  
+1. <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> から派生した操作フィルター クラスを実装して、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A>、および <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A> プロパティをオーバーライドします。  
   
     ```csharp  
     internal class MyActionFilter : UITestActionFilter  
@@ -457,7 +457,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
        }  
     ```  
   
-2.  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A> をオーバーライドします。 次の例では、ダブルクリック操作をシングルクリック操作に置き換えています。  
+2. <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A> をオーバーライドします。 次の例では、ダブルクリック操作をシングルクリック操作に置き換えています。  
   
     ```csharp  
     public override bool ProcessRule(IUITestActionStack actionStack)  
@@ -484,7 +484,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-3.  拡張パッケージの <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> メソッドに操作フィルターを追加します。  
+3. 拡張パッケージの <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> メソッドに操作フィルターを追加します。  
   
     ```csharp  
     public override object GetService(Type serviceType)   
@@ -509,7 +509,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-4.  バイナリをビルドし、%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages にコピーします。  
+4. バイナリをビルドし、%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages にコピーします。  
   
 > [!NOTE]
 >  操作フィルターは、ユーザー補助の実装またはプロパティ プロバイダーに依存しません。  
@@ -519,25 +519,25 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
   
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>プロパティ プロバイダーまたは操作フィルターをデバッグするには  
   
-1.  拡張パッケージのデバッグ バージョンをビルドし、.dll ファイルと .pdb ファイルを %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages にコピーします。  
+1. 拡張パッケージのデバッグ バージョンをビルドし、.dll ファイルと .pdb ファイルを %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages にコピーします。  
   
-2.  アプリケーションを実行します (デバッガーの外部で)。  
+2. アプリケーションを実行します (デバッガーの外部で)。  
   
-3.  コード化された UI テスト ビルダーを実行します。  
+3. コード化された UI テスト ビルダーを実行します。  
   
      `codedUITestBuilder.exe  /standalone`  
   
-4.  codedUITestBuilder プロセスにデバッガーをアタッチします。  
+4. codedUITestBuilder プロセスにデバッガーをアタッチします。  
   
-5.  コード内にブレークポイントを設定します。  
+5. コード内にブレークポイントを設定します。  
   
-6.  コード化された UI テスト ビルダーで、プロパティ プロバイダーを実行するためのアサートを作成し、操作フィルターを実行するための操作を記録します。  
+6. コード化された UI テスト ビルダーで、プロパティ プロバイダーを実行するためのアサートを作成し、操作フィルターを実行するための操作を記録します。  
   
 ## <a name="external-resources"></a>外部リソース  
   
 ### <a name="guidance"></a>ガイダンス  
- [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト:内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  <xref:System.Windows.Forms.AccessibleObject>   
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)

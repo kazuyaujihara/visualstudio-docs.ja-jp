@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7f8e3f4d53b0a8b79367064761ba0fc5b901dc5e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973585"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670070"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>方法: 使用する XML スキーマを選択する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML エディターはスキーマ キャッシュを提供します。このキャッシュは %InstallDir%\Xml\Schemas ディレクトリに配置されています。 スキーマ キャッシュには、IntelliSense と XML ドキュメントの検証に使用される既知の XML スキーマが格納されています。  
   
  **スキーマ**ドキュメント プロパティを使用して、1 つまたは複数 XML スキーマ定義言語 (XSD) スキーマを使用するを選択します。 このプロパティによって、スキーマ キャッシュにあるスキーマの選択、またはキャッシュ内に置かれていないスキーマの指定が可能になります。  
