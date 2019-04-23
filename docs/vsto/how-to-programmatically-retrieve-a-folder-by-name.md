@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c08f3d2f7ddcd3d9f1ad0eb0b937905d6449d00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088627"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>方法: 名前でフォルダーをプログラムで取得します。
   この例では、名前付きカスタム フォルダーへの参照を取得し、フォルダーの内容を表示します。
@@ -30,7 +30,7 @@ ms.locfileid: "56620890"
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例で必要な要素は次のとおりです。
 
--   TestFolder という名前のフォルダー。
+- TestFolder という名前のフォルダー。
 
 ## <a name="see-also"></a>関連項目
 - [フォルダーを操作します。](../vsto/working-with-folders.md)

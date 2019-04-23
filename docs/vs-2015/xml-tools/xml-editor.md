@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c9c348607c4a009a5b9b0a501e61dda443127df
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665585"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112176"
 ---
 # <a name="xml-editor"></a>XML エディター
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ XML エディターは [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual S
 ## <a name="express-editions"></a>Express Edition  
  XML エディターの次の機能は、Visual Studio Express Edition で提供されていません。  
   
--   XML インスタンス ドキュメントからの XML スキーマの作成。  
+- XML インスタンス ドキュメントからの XML スキーマの作成。  
   
--   XML エディターからの XSLT 出力の表示。  
+- XML エディターからの XSLT 出力の表示。  
   
--   XSLT スタイル シート編集中の自動検証。  
+- XSLT スタイル シート編集中の自動検証。  
   
--   XML スキーマ エクスプローラー。  
+- XML スキーマ エクスプローラー。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [XML ドキュメントの検証](../xml-tools/xml-document-validation.md)  

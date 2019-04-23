@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d63354d552b04d07f0b2d0ede41d28fc33cda3a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6a31544c256c8160eba2c18afb102205a921e0b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970726"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088562"
 ---
 # <a name="customizing-text-and-image-fields"></a>テキストおよびイメージ フィールドのカスタマイズ
 図形のテキスト デコレータを定義するときに、テキスト フィールドで表されます。 テキスト フィールドとその他の ShapeFields の初期化の例については、DSL ソリューションで Dsl\GeneratedCode\Shapes.cs を検査します。
@@ -181,13 +181,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 #### <a name="to-create-a-subclass-of-imagefield"></a>ImageField のサブクラスを作成するには
 
-1.  設定、 **Double Derived の生成**DSL 定義で親シェイプ クラスのプロパティ。
+1. 設定、 **Double Derived の生成**DSL 定義で親シェイプ クラスのプロパティ。
 
-2.  上書き、`InitializeShapeFields`図形クラスのメソッド。
+2. 上書き、`InitializeShapeFields`図形クラスのメソッド。
 
-    -   DSL プロジェクトで新しいコード ファイルを作成し、シェイプ クラスの部分クラス定義を記述します。 メソッドの定義をオーバーライドします。
+    - DSL プロジェクトで新しいコード ファイルを作成し、シェイプ クラスの部分クラス定義を記述します。 メソッドの定義をオーバーライドします。
 
-3.  コードを調べ、 `InitializeShapeFields` DSL\GeneratedCode\Shapes.cs でします。
+3. コードを調べ、 `InitializeShapeFields` DSL\GeneratedCode\Shapes.cs でします。
 
      オーバーライド メソッドで基本メソッドを呼び出しておよびイメージ フィールド クラスのインスタンスを作成します。 これで通常の画像フィールドを置換を使用して、`shapeFields`一覧。
 

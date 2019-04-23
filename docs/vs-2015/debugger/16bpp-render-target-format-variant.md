@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee5112f27498bfa14d742469478cc4961f3cc7b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112378"
 ---
 # <a name="16bpp-render-target-format-variant"></a>16bpp レンダリング ターゲット フォーマット バリアント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ ms.locfileid: "58975019"
 ## <a name="remarks"></a>Remarks  
  レンダー ターゲット形式は、レンダー ターゲットを作成する `ID3D11Device::CreateTexture2D` への呼び出しのたびに、DXGI_FORMAT_B5G6R5_UNORM にリセットされます。 具体的には、pDesc で渡される D3D11_TEXTURE2D_DESC オブジェクトがレンダー ターゲットを記述するときに、この形式はオーバーライドされます。つまり、  
   
--   BindFlags メンバーは、D3D11_BIND_REDNER_TARGET フラグを設定します。  
+- BindFlags メンバーは、D3D11_BIND_REDNER_TARGET フラグを設定します。  
   
--   BindFlags メンバーは D3D11_BIND_DEPTH_STENCIL フラグを解除します。  
+- BindFlags メンバーは D3D11_BIND_DEPTH_STENCIL フラグを解除します。  
   
--   Usage メンバーは D3D11_USAGE_DEFAULT に設定されます。  
+- Usage メンバーは D3D11_USAGE_DEFAULT に設定されます。  
   
 ## <a name="restrictions-and-limitations"></a>制約と制限  
  B5G6R5 形式ではアルファ チャネルを持たないため、アルファ コンテンツはこのバリアントでは保存されません。 アプリケーションのレンダリングで、レンダー ターゲットのアルファ チャネルが必要な場合、B5G6R5 形式に切り替えることはできません。  

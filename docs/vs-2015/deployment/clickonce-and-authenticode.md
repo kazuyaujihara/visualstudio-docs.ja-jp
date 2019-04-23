@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6057aa437aa4fc0d14bd21f20e3fa657f5c5c15d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000932"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089082"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce と Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Authenticode *、業界標準の暗号化を使用して、アプリケーショ
   
  コード署名の証明書は、次の 3 つの方法のいずれかで取得することができます。  
   
--   証明書の販売元から購入する。  
+- 証明書の販売元から購入する。  
   
--   デジタル証明書の作成を担当する組織内のグループから受け取る。  
+- デジタル証明書の作成を担当する組織内のグループから受け取る。  
   
--   [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] に含まれている MakeCert.exe で独自の証明書を生成する。  
+- [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] に含まれている MakeCert.exe で独自の証明書を生成する。  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>証明機関を使用してユーザーを支援する方法  
  MakeCert.exe ユーティリティを使用して生成された証明書は、一般に *自己証明書* または *テスト証明書*と呼ばれます。この種の証明書は、.snk ファイルが .NET Framework で機能する場合とほとんど同様に機能します。 この証明書は、秘密/公開暗号化キーのペアのみで構成され、発行者に関する検証可能な情報を含んでいません。 自己証明書を使用すると、イントラネット上に信頼性の高い [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを配置できます。 ただし、これらのアプリケーションをクライアント コンピューターで実行した場合は、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] が、不明な発行元からのものとしてアプリケーションを識別します。 既定では、自己証明書によって署名され、インターネットを介して配置された [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、信頼されたアプリケーションの配置を利用できません。  
@@ -61,15 +61,15 @@ Authenticode *、業界標準の暗号化を使用して、アプリケーショ
 ### <a name="updating-expired-certificates"></a>期限切れの証明書の更新  
  以前のバージョンの .NET Framework では、証明書の期限が切れているアプリケーションを更新すると、そのアプリケーションが機能しなくなる可能性がありました。 この問題を解決するには、次のいずれかの方法を使用します。  
   
--   .NET Framework のバージョンを 2.0 SP1 以降 (Windows XP の場合) または 3.5 以降 (Windows Vista の場合) に更新します。  
+- .NET Framework のバージョンを 2.0 SP1 以降 (Windows XP の場合) または 3.5 以降 (Windows Vista の場合) に更新します。  
   
--   アプリケーションをアンインストールし、有効な証明書を含む新しいバージョンを再インストールします。  
+- アプリケーションをアンインストールし、有効な証明書を含む新しいバージョンを再インストールします。  
   
--   証明書を更新するコマンド ライン アセンブリを作成します。 このプロセスの詳細な手順については、 [Microsoft サポートの記事 925521](http://go.microsoft.com/fwlink/?LinkId=179454)を参照してください。  
+- 証明書を更新するコマンド ライン アセンブリを作成します。 このプロセスの詳細な手順については、 [Microsoft サポートの記事 925521](http://go.microsoft.com/fwlink/?LinkId=179454)を参照してください。  
   
 ### <a name="storing-certificates"></a>証明書の格納  
   
--   証明書は .pfx ファイルとしてファイル システムに格納できます。また、キー コンテナーの内部に格納することもできます。 Windows ドメインのユーザーは、多数のキー コンテナーを持つことができます。 .pfx に保存するよう指定しない限り、既定では、MakeCert.exe が個人のキー コンテナーに証明書を格納します。 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 配置の作成に使用する [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ツールである Mage.exe と MageUI.exe を使用すると、このどちらの方法で格納された証明書も使用できます。  
+- 証明書は .pfx ファイルとしてファイル システムに格納できます。また、キー コンテナーの内部に格納することもできます。 Windows ドメインのユーザーは、多数のキー コンテナーを持つことができます。 .pfx に保存するよう指定しない限り、既定では、MakeCert.exe が個人のキー コンテナーに証明書を格納します。 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 配置の作成に使用する [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ツールである Mage.exe と MageUI.exe を使用すると、このどちらの方法で格納された証明書も使用できます。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   

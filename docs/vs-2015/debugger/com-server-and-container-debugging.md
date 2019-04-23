@@ -22,12 +22,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7fe876b9205d7efede2f5c1085c082f7b0ec6fd2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 631b1d35a0878bfc362b03751f35909839c7da19
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974141"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088055"
 ---
 # <a name="com-server-and-container-debugging"></a>COM サーバーおよび COM コンテナーのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ COM アプリケーションは、プログラマが直接コントロールで�
   
  Visual Studio のデバッガーは、コンテナーやサーバー間のステップやステップ インをサポートしています。 この機能には、リモート プロシージャ コール (RPC) 間のステップも含まれます。  
   
-##  <a name="BKMK_COMServerandContainerintheSameSolution"></a> 同じソリューション内の COM サーバーおよび COM コンテナーのデバッグ  
+## <a name="BKMK_COMServerandContainerintheSameSolution"></a> 同じソリューション内の COM サーバーおよび COM コンテナーのデバッグ  
  同じソリューションで 2 つのプロジェクトを使用して、COM サーバーおよび COM コンテナーをデバッグできます。 それぞれのプロジェクトに適切なブレークポイントを設定してデバッグを行います。 ブレークポイントが設定されているサーバーをコンテナーが呼び出すと、サーバーのコードに戻るまで、つまりデバッグが終了するまで、コンテナーは待機しています。  
   
  COM コンテナーのデバッグは、標準的なプログラムのデバッグによく似ています。 違いがあるのは、コンテナー アプリケーションにデータをドラッグするなど、コールバックを生成するイベントをデバッグする場合です。 この場合は、ブレークポイントをコールバック関数の中に設定する必要があります。  
   
-##  <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> コンテナー情報のないサーバー アプリケーションのデバッグ  
+## <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> コンテナー情報のないサーバー アプリケーションのデバッグ  
  コンテナー アプリケーションのデバッグ情報が不要な場合、サーバー アプリケーションは次の 3 つの手順でデバッグします。  
   
-1.  サーバーのデバッグを通常のアプリケーションと同様に開始します。  
+1. サーバーのデバッグを通常のアプリケーションと同様に開始します。  
   
-2.  必要な場所にブレークポイントを設定します。  
+2. 必要な場所にブレークポイントを設定します。  
   
-3.  コンテナー アプリケーションを起動します。  
+3. コンテナー アプリケーションを起動します。  
   
-##  <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> サーバーとドメインの分離 (SDI) アプリケーションのデバッグ  
+## <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> サーバーとドメインの分離 (SDI) アプリケーションのデバッグ  
  SDI サーバー アプリケーションをデバッグする場合は、C/C++、C#、または Visual Basic のプロジェクトの [*プロジェクト* プロパティ ページ] ダイアログ ボックスで、**[コマンド ライン引数]** プロパティに `/Embedding` または `/Automation` を指定する必要があります。  
   
  デバッガーはこれらのコマンド ライン引数を利用して、コンテナーから起動されたようにサーバー アプリケーションを起動できます。 次に、プログラム マネージャーまたはファイル マネージャーからコンテナーを起動すると、コンテナーはデバッガー中で起動されたサーバーのインスタンスを使用できます。  

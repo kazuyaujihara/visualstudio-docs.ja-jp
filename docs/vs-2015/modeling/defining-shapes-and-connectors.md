@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02b470926001c08695bc6c18712cbd0db41503cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 761e0e77a0fe9f6f32f08045d81f6eab815801dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112326"
 ---
 # <a name="defining-shapes-and-connectors"></a>シェイプとコネクタの定義
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 いくつかの基本的な種類のシェイプを使用して、ドメイン固有言語 (DSL) で図に情報を表示できます。  
   
-##  <a name="shapeTypes"></a> シェイプおよびコネクタの基本型  
+## <a name="shapeTypes"></a> シェイプおよびコネクタの基本型  
  DSL 図は、のコレクションを示しています。*図形*線で連結されたまたは*コネクタ*します。  一般的な定義 (必ずしもこの通りではありません):  
   
 - シェイプは、モデル要素の可視的な表現です。  
@@ -45,5 +45,5 @@ ms.locfileid: "58974448"
 |スイムレーン|スイムレーンは、図を水平または垂直のセグメントに分割します。 図の中で、スイムレーンは常に他のシェイプの下にあります。<br /><br /> 通常、スイムレーンのモデル要素はモデル ルートを親に設定し、他の要素はスイムレーンのモデル要素を親に設定します。 たとえば、Task Flow ソリューション テンプレートから DSL を作成します。|  
 |コネクタ|通常、シェイプ間に引かれる線は参照リレーションシップを表します。 オプションを設定して、コネクタを直線または直角にしたり、さまざまな種類の矢印を持つようにしたりすることができます。|  
   
-##  <a name="shapeInheritance"></a> シェイプの継承  
+## <a name="shapeInheritance"></a> シェイプの継承  
  シェイプは別のシェイプから継承できます。 ただし、同じ種類のシェイプである必要があります。 たとえば、ジオメトリ シェイプだけがジオメトリ シェイプから継承できます。 継承されたシェイプには、基底シェイプのコンパートメントとデコレータがあります。 コネクタはコネクタから継承できます。

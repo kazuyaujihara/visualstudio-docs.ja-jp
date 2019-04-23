@@ -10,12 +10,12 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 108910c52033af3574a004cf314be2628fd54122
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963552"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088952"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>方法: ファイル変更通知を抑制します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ ms.locfileid: "58963552"
   
 ### <a name="to-suppress-file-change-notification"></a>ファイル変更通知を抑制するには  
   
-1.  呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>テキスト バッファー オブジェクトは、開いているファイルに関連付けを調べます。  
+1. 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>テキスト バッファー オブジェクトは、開いているファイルに関連付けを調べます。  
   
-2.  直接、<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>オブジェクトが監視しているメモリを無視するファイルの変更を取得して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>からインターフェイス、 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> (ドキュメント データ) オブジェクト、および実装し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>メソッドを`fIgnore`パラメーター設定`true`します。  
+2. 直接、<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>オブジェクトが監視しているメモリを無視するファイルの変更を取得して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>からインターフェイス、 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> (ドキュメント データ) オブジェクト、および実装し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>メソッドを`fIgnore`パラメーター設定`true`します。  
   
-3.  メソッドを呼び出して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>インターフェイスでメモリを更新する<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>(ときに、フィールドは、コンポーネントに追加されます) などのファイルの変更を持つオブジェクト。  
+3. メソッドを呼び出して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>インターフェイスでメモリを更新する<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>(ときに、フィールドは、コンポーネントに追加されます) などのファイルの変更を持つオブジェクト。  
   
-4.  保留中の編集が進行中のユーザーがあります。 いずれかを考慮せず、変更をディスク上のファイルを更新します。  
+4. 保留中の編集が進行中のユーザーがあります。 いずれかを考慮せず、変更をディスク上のファイルを更新します。  
   
      これにより、送信すると、<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>ファイルの監視を再開するオブジェクトの変更通知、メモリ内のテキスト バッファーには、他のすべての保留中の編集と、生成した変更が反映されます。 ディスク上のファイルは、自分で生成された最新のコードを反映し、ユーザーが編集したコードで以前に、ユーザーによる変更を保存いずれかです。  
   
-5.  呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>に通知するメソッド、<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>オブジェクトを設定して、ファイル変更通知の監視を再開する、`fIgnore`パラメーター`false`します。  
+5. 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>に通知するメソッド、<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>オブジェクトを設定して、ファイル変更通知の監視を再開する、`fIgnore`パラメーター`false`します。  
   
-6.  ソース コード管理 (SCC) の場合と同様、ファイルにいくつかの変更を加える場合は、ファイル変更通知を一時的に中断するグローバル ファイル変更サービスを伝える必要があります。  
+6. ソース コード管理 (SCC) の場合と同様、ファイルにいくつかの変更を加える場合は、ファイル変更通知を一時的に中断するグローバル ファイル変更サービスを伝える必要があります。  
   
      などのファイルを再書き込みするタイムスタンプを変更して場合、ように、別のファイルの変更イベントをカウントそれぞれ、書き換えおよび timestample 操作として、ファイル変更の通知を中断する必要があります。 代わりに呼び出す必要がありますグローバル ファイル変更通知を有効にする、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A>メソッド。  
   
