@@ -12,12 +12,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 321dca309476ecba80c0293f100ed64e7bb1cc4e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 87bfa86585d384c7940d5a5bcf31d07579bc75a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064681"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>方法: Visual Studio の拡張機能を更新する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,30 +30,30 @@ ms.locfileid: "59002602"
 
 ### <a name="to-update-an-extension-on-your-system"></a>システムに拡張機能を更新するには
 
-1.  **[ツール]** メニューの **[拡張機能と更新プログラム]** をクリックします。
+1. **[ツール]** メニューの **[拡張機能と更新プログラム]** をクリックします。
 
-2.  左側のウィンドウで次のようにクリックします。**更新**します。
+2. 左側のウィンドウで次のようにクリックします。**更新**します。
 
-3.  中央のペインで、インストールする更新プログラムをクリックします。
+3. 中央のペインで、インストールする更新プログラムをクリックします。
 
      更新された拡張機能のバージョン番号は、その他の情報と共に、右側のウィンドウに表示されます。
 
-4.  右側のウィンドウの下部には、次のようにクリックします。 **Update**します。
+4. 右側のウィンドウの下部には、次のようにクリックします。 **Update**します。
 
 ### <a name="to-publish-an-update-of-an-extension"></a>拡張機能の更新を発行するには
 
-1.  Visual Studio で、拡張機能を更新するためのソリューションを開きます。 変更を行います。
+1. Visual Studio で、拡張機能を更新するためのソリューションを開きます。 変更を行います。
 
     > [!IMPORTANT]
     >  未署名のすべてのユーザー拡張機能は自動的に更新されません。 常に、拡張機能に署名する必要があります。
 
-2.  **ソリューション エクスプ ローラー**source.extension.manifest を開きます。
+2. **ソリューション エクスプ ローラー**source.extension.manifest を開きます。
 
-3.  マニフェスト デザイナーでの番号の値を増やす、**バージョン**フィールド。
+3. マニフェスト デザイナーでの番号の値を増やす、**バージョン**フィールド。
 
-4.  ソリューションを保存してビルドします。
+4. ソリューションを保存してビルドします。
 
-5.  (プロジェクトの \bin\Debug\ フォルダー) に新しい .vsix ファイルをアップロード、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイト。
+5. (プロジェクトの \bin\Debug\ フォルダー) に新しい .vsix ファイルをアップロード、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイト。
 
      拡張機能の以前のバージョンを持つユーザーが開いたとき**拡張機能と更新プログラム**、新しいバージョンが表示されます、**更新**ツールが自動的に更新プログラムを探すように設定されている、一覧表示します。
 

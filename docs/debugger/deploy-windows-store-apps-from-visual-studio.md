@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065741"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio から UWP アプリを展開する
 
@@ -36,18 +36,18 @@ Visual Studio の配置機能は、ビルドし、ターゲット デバイス�
 
 - 別のアプリまたはメソッドによって起動される、デバッグ対象のアプリを配置します。
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> UWP アプリをデプロイする方法
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> UWP アプリをデプロイする方法
  アプリを手動で配置する手順はシンプルです。
 
-1.  リモート デバイスへ配置する場合は、アプリのスタートアップ プロジェクトのプロパティ プロジェクト ページに、デバイスの名前または IP アドレスを指定します。 (指定するステップはこのトピック内で後述)。
+1. リモート デバイスへ配置する場合は、アプリのスタートアップ プロジェクトのプロパティ プロジェクト ページに、デバイスの名前または IP アドレスを指定します。 (指定するステップはこのトピック内で後述)。
 
-2.  デバッガーの Visual Studio ツールバーで、 **[デバッグの開始]** ボタンの横のドロップダウン リストから配置ターゲットを選択します。
+2. デバッガーの Visual Studio ツールバーで、 **[デバッグの開始]** ボタンの横のドロップダウン リストから配置ターゲットを選択します。
 
      ![ローカル コンピューターで実行](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  **[ビルド]** メニューで **[配置]** を選択
+3. **[ビルド]** メニューで **[配置]** を選択
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> リモート デバイスの指定方法
+## <a name="BKMK_How_to_specify_a_remote_device"></a> リモート デバイスの指定方法
 
 **必須コンポーネント**
 
@@ -92,7 +92,7 @@ Windows 10 のリモート デバイスで有効にする必要があります[�
 
 10. リモート デバイスのネットワーク名を **[リモート コンピューター]** ボックスに入力するか、 **[検索]** をクリックし、 **[リモート デバッガー接続の選択]** ダイアログ ボックスでデバイスを選択します。
 
-##  <a name="BKMK_Deployment_options"></a> 配置オプション
+## <a name="BKMK_Deployment_options"></a> 配置オプション
 
 次の配置オプションを、スタートアップ プロジェクトのデバッグ プロパティ ページに設定できます。
 

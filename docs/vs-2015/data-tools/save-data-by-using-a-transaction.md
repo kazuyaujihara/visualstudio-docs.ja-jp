@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba83cf7db6415eefcb989f678bc4149d495016e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c133bb3f8ef56378c20b985aa118e48e71109cea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065260"
 ---
 # <a name="save-data-by-using-a-transaction"></a>トランザクションを使用してデータを保存する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,15 +46,15 @@ ms.locfileid: "59658345"
   
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll"></a>System.Transactions の dll への参照を追加するには  
   
-1.  **プロジェクト**メニューの **参照の追加**します。  
+1. **プロジェクト**メニューの **参照の追加**します。  
   
-2.  **.NET**  タブ (**SQL Server**の SQL Server プロジェクト タブ) を選択します**System.Transactions**、し、 **OK**。  
+2. **.NET**  タブ (**SQL Server**の SQL Server プロジェクト タブ) を選択します**System.Transactions**、し、 **OK**。  
   
      System.Transactions.dll への参照は、プロジェクトに追加されます。  
   
 ### <a name="to-save-data-in-a-transaction"></a>トランザクションでデータを保存するには  
   
--   使用して、データを保存するコードを追加するが、トランザクションを含むステートメント。 次のコードを作成し、インスタンス化する方法を示しています、<xref:System.Transactions.TransactionScope>オブジェクトを使用して、ステートメント。  
+- 使用して、データを保存するコードを追加するが、トランザクションを含むステートメント。 次のコードを作成し、インスタンス化する方法を示しています、<xref:System.Transactions.TransactionScope>オブジェクトを使用して、ステートメント。  
   
      [!code-csharp[VbRaddataSaving#11](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#11)]
      [!code-vb[VbRaddataSaving#11](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#11)]  

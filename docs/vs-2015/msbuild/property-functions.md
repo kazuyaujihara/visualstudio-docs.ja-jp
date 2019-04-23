@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065183"
 ---
 # <a name="property-functions"></a>プロパティ関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,45 +27,45 @@ ms.locfileid: "59649239"
   
  **このトピックの内容**  
   
--   [プロパティ関数の構文](#BKMK_Syntax)  
+- [プロパティ関数の構文](#BKMK_Syntax)  
   
-    -   [文字列プロパティ関数](#BKMK_String)  
+    - [文字列プロパティ関数](#BKMK_String)  
   
-    -   [静的プロパティ関数](#BKMK_Static)  
+    - [静的プロパティ関数](#BKMK_Static)  
   
-    -   [静的プロパティ上でインスタンス メソッドを呼び出す](#BKMK_InstanceMethods)  
+    - [静的プロパティ上でインスタンス メソッドを呼び出す](#BKMK_InstanceMethods)  
   
-    -   [MSBuild プロパティ関数](#BKMK_PropertyFunctions)  
+    - [MSBuild プロパティ関数](#BKMK_PropertyFunctions)  
   
--   [入れ子になったプロパティ関数](#BKMK_Nested)  
+- [入れ子になったプロパティ関数](#BKMK_Nested)  
   
--   [MSBuild の DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
+- [MSBuild の DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
   
--   [MSBuild の GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
+- [MSBuild の GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
   
--   [MSBuild の GetRegistryValue](#BKMK_GetRegistryValue)  
+- [MSBuild の GetRegistryValue](#BKMK_GetRegistryValue)  
   
--   [MSBuild の GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
+- [MSBuild の GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
   
--   [MSBuild の MakeRelative](#BKMK_MakeRelative)  
+- [MSBuild の MakeRelative](#BKMK_MakeRelative)  
   
--   [MSBuild の ValueOrDefault](#BKMK_ValueOrDefault)  
+- [MSBuild の ValueOrDefault](#BKMK_ValueOrDefault)  
   
-##  <a name="BKMK_Syntax"></a> プロパティ関数の構文  
+## <a name="BKMK_Syntax"></a> プロパティ関数の構文  
  次に 3 種類のプロパティ関数を示します。各関数には異なる構文があります。  
   
--   文字列 (インスタンス) プロパティ関数  
+- 文字列 (インスタンス) プロパティ関数  
   
--   静的プロパティ関数  
+- 静的プロパティ関数  
   
--   MSBuild プロパティ関数  
+- MSBuild プロパティ関数  
   
-###  <a name="BKMK_String"></a> 文字列プロパティ関数  
+### <a name="BKMK_String"></a> 文字列プロパティ関数  
  ビルド プロパティの値はすべて文字列値です。 文字列 (インスタンス) メソッドを使用してプロパティ値を操作できます。 たとえば、次のコードを使用して、完全パスを表すビルド プロパティからドライブ名 (最初の 3 文字) を抽出できます。  
   
  `$(ProjectOutputFolder.Substring(0,3))`  
   
-###  <a name="BKMK_Static"></a> 静的プロパティ関数  
+### <a name="BKMK_Static"></a> 静的プロパティ関数  
  ビルド スクリプトで、各種システム クラスの静的プロパティおよびメソッドにアクセスできます。 静的プロパティの値を取得するには、次の構文を使用します。ここで、*Class* はシステム クラスの名前、*Property* はプロパティの名前です。  
   
  `$([Class]::Property)`  
@@ -166,7 +166,7 @@ ms.locfileid: "59649239"
   
 - System.IO.File::ReadAllText  
   
-###  <a name="BKMK_InstanceMethods"></a> 静的プロパティ上でインスタンス メソッドを呼び出す  
+### <a name="BKMK_InstanceMethods"></a> 静的プロパティ上でインスタンス メソッドを呼び出す  
  オブジェクト インスタンスを返す静的プロパティにアクセスすると、そのオブジェクトのインスタンス メソッドを呼び出すことができます。 インスタンス メソッドを呼び出すには、次の構文を使用します。ここで、*Class* はシステム クラスの名前、*Property* はプロパティの名前、*Method* はメソッドの名前、*(Parameters)* はメソッドのパラメーター リストです。  
   
  `$([Class]::Property.Method(Parameters))`  
@@ -177,7 +177,7 @@ ms.locfileid: "59649239"
   
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
   
-###  <a name="BKMK_PropertyFunctions"></a> MSBuild プロパティ関数  
+### <a name="BKMK_PropertyFunctions"></a> MSBuild プロパティ関数  
  ビルド内のいくつかの静的メソッドにアクセスすると、算術、ビットごとの論理、およびエスケープ文字のサポートが提供されます。 次の構文を使用して、これらのメソッドにアクセスします。ここで、*Method* はメソッドの名前、*Parameters* はメソッドのパラメーター リストです。  
   
  `$([MSBuild]::Method(Parameters))`  
@@ -207,7 +207,7 @@ ms.locfileid: "59649239"
 |int BitwiseXor(int first, int second)|1 番目と 2 番目 (first ^ second) でビットごとの `XOR` を実行します。|  
 |int BitwiseNot(int first)|ビットごとの `NOT` (~first) を実行します。|  
   
-##  <a name="BKMK_Nested"></a> 入れ子になったプロパティ関数  
+## <a name="BKMK_Nested"></a> 入れ子になったプロパティ関数  
  次の例が示すように、プロパティ関数を組み合わせてより複雑な関数を形成します。  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
@@ -216,7 +216,7 @@ ms.locfileid: "59649239"
   
  入れ子になったプロパティ関数では、メタデータも表示される可能性があります。 詳細については、「[MSBuild バッチ](../msbuild/msbuild-batching.md)」を参照してください。  
   
-##  <a name="BKMK_DoesTaskHostExist"></a> MSBuild の DoesTaskHostExist  
+## <a name="BKMK_DoesTaskHostExist"></a> MSBuild の DoesTaskHostExist  
  MSBuild の `DoesTaskHostExist` プロパティ関数は、指定したランタイムとアーキテクチャ値に対してタスク ホストが現在インストールされているかどうかを返します。  
   
  このプロパティ関数には次の構文があります。  
@@ -225,7 +225,7 @@ ms.locfileid: "59649239"
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
   
-##  <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild の GetDirectoryNameOfFileAbove  
+## <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild の GetDirectoryNameOfFileAbove  
  MSBuild の `GetDirectoryNameOfFileAbove` プロパティ関数は、パスの現在のディレクトリの上にあるディレクトリ内でファイルを探します。  
   
  このプロパティ関数には次の構文があります。  
@@ -240,7 +240,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
   
-##  <a name="BKMK_GetRegistryValue"></a> MSBuild の GetRegistryValue  
+## <a name="BKMK_GetRegistryValue"></a> MSBuild の GetRegistryValue  
  MSBuild の `GetRegistryValue` プロパティ関数は、レジストリ キーの値を返します。 この関数は、キー名と値の名前という 2 つの引数を取り、レジストリの値を返します。 値の名前を指定しない場合は、既定値が返されます。  
   
  この関数を使用する方法を次の例に示します。  
@@ -252,7 +252,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
 ```  
   
-##  <a name="BKMK_GetRegistryValueFromView"></a> MSBuild の GetRegistryValueFromView  
+## <a name="BKMK_GetRegistryValueFromView"></a> MSBuild の GetRegistryValueFromView  
  MSBuild の `GetRegistryValueFromView` プロパティ関数は、レジストリ キー、値、および 1 つ以上の順序づけられたレジストリ ビューを含むシステム レジストリ データを取得します。 キーと値は見つかるまで各レジストリ ビューで順番に検索されます。  
   
  このプロパティ関数の構文を次に示します。  
@@ -277,7 +277,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
  は、最初に 64 ビットのレジストリ ビュー、次に 32 ビットのレジストリ ビューを参照して、ReferenceAssemblies キーの SLRuntimeInstallPath データを取得します。  
   
-##  <a name="BKMK_MakeRelative"></a> MSBuild の MakeRelative  
+## <a name="BKMK_MakeRelative"></a> MSBuild の MakeRelative  
  MSBuild の `MakeRelative` プロパティ関数は、最初のパスに対する 2 番目のパスの相対パスを返します。 各パスはファイルまたはフォルダです。  
   
  このプロパティ関数には次の構文があります。  
@@ -306,7 +306,7 @@ Output:
 -->  
 ```  
   
-##  <a name="BKMK_ValueOrDefault"></a> MSBuild の ValueOrDefault  
+## <a name="BKMK_ValueOrDefault"></a> MSBuild の ValueOrDefault  
  MSBuild の `ValueOrDefault` プロパティ関数は、null または空でない限り、最初の引数を返します。 最初の引数が null または空の場合、関数は 2 番目の引数を返します。  
   
  この関数を使用する方法を次の例に示します。  

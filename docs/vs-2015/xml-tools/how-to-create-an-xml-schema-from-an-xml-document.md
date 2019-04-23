@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43c4f50b5793933065b2f3ff4342d4aabdbd130b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066066"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>方法: XML ドキュメントから XML スキーマを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ XML エディターを使用することで、XML ドキュメントから XML �
   
 ### <a name="to-create-an-xml-schema"></a>XML スキーマを作成するには  
   
-1.  XML インスタンス ドキュメントを XML エディターに読み込みます。  
+1. XML インスタンス ドキュメントを XML エディターに読み込みます。  
   
-2.  をクリックして、 **Create Schema**からボタン、**ツールバー**します。  
+2. をクリックして、 **Create Schema**からボタン、**ツールバー**します。  
   
      XML インスタンス ドキュメントで見つかった名前空間ごとに 1 つの XML スキーマ ドキュメントが作成され、開かれます。 各スキーマは、一時的にその他のファイルとして開かれます。  
   

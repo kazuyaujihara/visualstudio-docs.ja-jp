@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 149f9360569978cf3ec15fd60154ad6f1408362f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 79f991954c1c54811496628576283c3c0b4330a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065116"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>関連付け &lt;association name&gt; を作成できません - プロパティの型が一致しません。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "59656597"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1.  メッセージを確認し、メッセージで示されているプロパティに注目します。  
+1. メッセージを確認し、メッセージで示されているプロパティに注目します。  
   
-2.  **[OK]** をクリックしてダイアログ ボックスを閉じます。  
+2. **[OK]** をクリックしてダイアログ ボックスを閉じます。  
   
-3.  **[関連付けのプロパティ]** を調べ、同じデータ型のプロパティを選択します。  
+3. **[関連付けのプロパティ]** を調べ、同じデータ型のプロパティを選択します。  
   
-4.  **[OK]** をクリックします。  
+4. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: LINQ to SQL クラス (O/R デザイナー) 間の関連付け (リレーションシップ) を作成します。](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d614a991de46552c34ca5ab8c797f6dd92954180
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065653"
 ---
 # <a name="capturing-graphics-information"></a>グラフィックス情報をキャプチャする
 Visual Studio Graphics Analyzer を使用してレンダリングに関する問題とパフォーマンスに関する問題を診断できるように、Direct3D アプリからグラフィックス情報をキャプチャします。
@@ -27,7 +27,7 @@ Visual Studio Graphics Analyzer を使用してレンダリングに関する問
 
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>グラフィックス診断の下でアプリを実行するには
 
-- メニュー バーで、**デバッグ**、**グラフィックス**、**グラフィックス デバッグの開始**します。 (キーボード: Alt キーを押しながら F5 キーを押します)
+- メニュー バーで、**デバッグ**、**グラフィックス**、**グラフィックス デバッグの開始**します。 (キーボード:Alt キーを押しながら f5 キーを押します)
 
 - **グラフィックス**ツールバーで、選択、**グラフィックス デバッグの開始**ボタンをクリックします。
 
@@ -57,9 +57,9 @@ Visual Studio Graphics Analyzer を使用してレンダリングに関する問
 
 #### <a name="to-configure-graphics-diagnostics-capture-options"></a>グラフィックス診断のキャプチャ オプションを構成するには
 
-1.  メニュー バーで [ツール]、[オプション] の順にクリックします。 [オプション] ダイアログ ボックスが表示されます。
+1. メニュー バーで [ツール]、[オプション] の順にクリックします。 [オプション] ダイアログ ボックスが表示されます。
 
-2.  左側にあるオプション カテゴリの一覧からグラフィックス診断を選択した後、使用するグラフィックス診断オプションを構成します。
+2. 左側にあるオプション カテゴリの一覧からグラフィックス診断を選択した後、使用するグラフィックス診断オプションを構成します。
 
      **キャプチャ中に呼び出し履歴を収集 (キャプチャ速度が低下)** 呼び出し履歴を収集するには、このボックスをオンします。 既定では、呼び出し履歴は収集されません。 呼び出し履歴を取得するには、**[呼び出し履歴をキャプチャ中に収集する (キャプチャ速度が低下します)]** チェック ボックスで収集を有効にするよう設定し、**[描画、ディスパッチ、表示、およびパフォーマンス マーカー]** オプション (既定) を設定して最も重要な呼び出し履歴のみを収集するか、**[すべて]** オプションを設定してすべての呼び出し履歴を収集します。 後で呼び出し履歴の収集を停止するには、**[呼び出し履歴をキャプチャ中に収集する (キャプチャ速度が低下します)]** チェック ボックスをクリアします。
 
@@ -74,10 +74,10 @@ Visual Studio Graphics Analyzer を使用してレンダリングに関する問
 
  プロジェクトをリモート デバッグ用に構成する方法は、開発中のアプリの種類と、使用しているプログラミング言語によって異なります。 UWP アプリ用のリモート デバッグを構成する方法については、次を参照してください。[リモート マシンでの実行の UWP アプリ](../run-windows-store-apps-on-a-remote-machine.md)します。 Windows デスクトップ アプリ用のリモート デバッグを構成する方法については、次を参照してください。[リモート デバッグ](../remote-debugging.md)します。
 
- 後で、情報をキャプチャした場所にかかわらず、リモート コンピューターまたはリモート デバイスを使用してグラフィックス情報を再生できます。 詳しくは、「[方法: グラフィックス診断再生マシンを変更する](how-to-change-the-graphics-diagnostics-playback-machine.md)」をご覧ください。
+ 後で、情報をキャプチャした場所にかかわらず、リモート コンピューターまたはリモート デバイスを使用してグラフィックス情報を再生できます。 詳細については、「[方法 :グラフィックス診断再生マシンを変更する](how-to-change-the-graphics-diagnostics-playback-machine.md)」を参照してください。
 
 ## <a name="capturing-graphics-information-from-the-command-line"></a>コマンド ラインからのグラフィックス情報のキャプチャ
  コマンド ライン ツールを使用して、アプリからグラフィックス情報をキャプチャできます。 この DXCap.exe というツールでは、Visual Studio またはプログラムによるキャプチャを使用することなく、簡単にグラフィックス情報をキャプチャして再生できます。 具体的には、オートメーションを行う場合や、テスト環境で DXCap.exe を使用できます。 DXCap.exe の詳細については、「[コマンド ライン キャプチャ ツール](command-line-capture-tool.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [チュートリアル: グラフィックス情報のキャプチャ](walkthrough-capturing-graphics-information.md)
+- [チュートリアル: グラフィックス情報をキャプチャする](walkthrough-capturing-graphics-information.md)

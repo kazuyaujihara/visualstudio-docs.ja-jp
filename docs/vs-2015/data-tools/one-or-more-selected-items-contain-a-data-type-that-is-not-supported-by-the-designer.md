@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6e6c44895a022521899bdd0383ee71257b83fe3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ac5507722a62942dbca67518c2f6689bf29aacfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668822"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065709"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>1 つ以上の選択された項目に、デザイナーでサポートされていないデータ型が含まれています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ ms.locfileid: "59668822"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1.  目的のテーブルをベースにした、サポートされていないデータ型を含まないビューを作成します。  
+1. 目的のテーブルをベースにした、サポートされていないデータ型を含まないビューを作成します。  
   
-2.  ビューからドラッグ**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**デザイナーにします。  
+2. ビューからドラッグ**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**デザイナーにします。  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

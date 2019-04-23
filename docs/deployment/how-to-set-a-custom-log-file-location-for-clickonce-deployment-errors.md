@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 986311cc4b56880c6ce98cb649d5f4afc1f80b34
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 0c4f3b6243e7deb7ef6040cb717de04660d6687d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636529"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065624"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>方法: ClickOnce 配置エラー用にカスタム ログ ファイルの場所を設定する
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] すべてのデプロイのアクティベーション ログ ファイルを保持します。 これらのログ記録のインストールと初期化に関連するすべてのエラー、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]展開します。 既定では、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]各展開のアクティブ化の 1 つのログ ファイルを作成します。 これらのログ ファイルを Temporary Internet Files フォルダーに格納します。 展開のログ ファイルは、アクティベーション エラーが発生して、ユーザーがクリックしたときに、ユーザーに表示される**詳細**結果のエラー ダイアログ ボックス。
@@ -38,11 +38,11 @@ ms.locfileid: "56636529"
 
 ### <a name="to-set-a-custom-log-file-location"></a>カスタム ログ ファイルの場所を設定するには
 
-1.  開いている**Regedit.exe**します。
+1. 開いている**Regedit.exe**します。
 
-2.  ノードに移動`HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`します。
+2. ノードに移動`HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`します。
 
-3.  文字列値を設定`LogFilePath`の完全なパスと、任意のカスタム ログの場所のファイル名にします。
+3. 文字列値を設定`LogFilePath`の完全なパスと、任意のカスタム ログの場所のファイル名にします。
 
      この場所は、ユーザーが書き込みアクセス権を持っているディレクトリにある必要があります。 たとえば、Windows vista では、次のフォルダー構造を作成し、設定`LogFilePath`に*C:\Users\\\<ユーザー名 > \Documents\Logs\ClickOnce\installation.log*します。
 
