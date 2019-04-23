@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: d2be08b563c67b210f8e70df36f49b9fa4c68316
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095959"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>トラブルシューティングと既知の問題 (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "59660646"
   
 ##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>Unity プロジェクトを UnityVS 1.8 から Visual Studio Tools for Unity 1.9 に移行する方法  
   
-1.  古いソリューションとプロジェクト ファイルを Unity プロジェクトから削除します。 Unity プロジェクトのルート ディレクトリで、Visual Studio .sln と *proj ファイルを見つけてすべて削除します。  
+1. 古いソリューションとプロジェクト ファイルを Unity プロジェクトから削除します。 Unity プロジェクトのルート ディレクトリで、Visual Studio .sln と *proj ファイルを見つけてすべて削除します。  
   
-2.  Visual Studio Tools for Unity パッケージを Unity プロジェクトにインポートします。 VSTU パッケージをインポートする方法については、「 [作業の開始](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) 」ページの「Visual Studio Tools for Unity の構成」をご覧ください。  
+2. Visual Studio Tools for Unity パッケージを Unity プロジェクトにインポートします。 VSTU パッケージをインポートする方法については、「 [作業の開始](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) 」ページの「Visual Studio Tools for Unity の構成」をご覧ください。  
   
-3.  新しいソリューションとプロジェクト ファイルを生成します。 今すぐに作成する場合は、Unity エディターのメイン メニューで、**[Visual Studio Tools]**、**[Generate Project Files]** を選択します。 あるいは、この手順をスキップすることもできます。その場合、**[Visual Studio Tools]**、**[Open in Visual Studio]** と選択すると新しいファイルが自動的に Visual Studio Tools for Unity によって作成されます。  
+3. 新しいソリューションとプロジェクト ファイルを生成します。 今すぐに作成する場合は、Unity エディターのメイン メニューで、**[Visual Studio Tools]**、**[Generate Project Files]** を選択します。 あるいは、この手順をスキップすることもできます。その場合、**[Visual Studio Tools]**、**[Open in Visual Studio]** と選択すると新しいファイルが自動的に Visual Studio Tools for Unity によって作成されます。  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio が Visual Studio Tools for Unity によって作成されたソリューションを読み込まない  
  詳細については、 [この stackoverflow の質問に対する回答](http://stackoverflow.com/a/24035907/36702)を参照してください。  
@@ -44,11 +44,11 @@ ms.locfileid: "59660646"
 ## <a name="known-issues"></a>既知の問題  
  デバッガーが Unity の古いバージョンの C# コンパイラとやり取りする方法に起因する、Visual Studio Tools for Unity の既知の問題があります。 これらの問題を修正するために作業中ですが、修正されるまでは以下の問題が発生する可能性があります。  
   
--   デバッグ時に Unity がクラッシュすることがあります。  
+- デバッグ時に Unity がクラッシュすることがあります。  
   
--   デバッグ時に Unity がフリーズすることがあります。  
+- デバッグ時に Unity がフリーズすることがあります。  
   
--   メソッドのステップインとステップアウトが正しく動作しないことがあります。特に、反復子または switch ステートメント内でこれが生じる可能性があります。  
+- メソッドのステップインとステップアウトが正しく動作しないことがあります。特に、反復子または switch ステートメント内でこれが生じる可能性があります。  
   
 ## <a name="reporting-errors"></a>エラーの報告  
  クラッシュ、フリーズ、またはその他のエラーが発生する場合、エラー レポートを送信することによって、Visual Studio Tools for Unity の品質向上にご協力ください。 Visual Studio Tools for Unity における問題の調査と解決に役立ちます。 ご協力に感謝いたします。  

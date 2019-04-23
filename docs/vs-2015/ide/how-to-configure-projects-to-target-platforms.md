@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee35a42ea28295869fe05bf6cd1d2c49f12cc39b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 660f1fd1d67490bde327533f9d030c7deba9f819
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084922"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>方法 : プロジェクトを構成して対象プラットフォームを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,16 +39,16 @@ ms.locfileid: "54791411"
   
 2. **[アクティブ ソリューション プラットフォーム]** ボックスの一覧で、ソリューションの対象となる 64 ビット プラットフォームを選び、**[閉じる]** を選びます。  
   
-   1.  必要なプラットフォームが表示されない場合は、**[アクティブ ソリューション プラットフォーム]** ボックスの一覧の **[新規作成]** を選びます。  
+   1. 必要なプラットフォームが表示されない場合は、**[アクティブ ソリューション プラットフォーム]** ボックスの一覧の **[新規作成]** を選びます。  
   
         **[新しいソリューション プラットフォーム]** ダイアログ ボックスが表示されます。  
   
-   2.  **[新しいプラットフォームを入力または選択してください]** ボックスの一覧で、**[x64]** を選びます。  
+   2. **[新しいプラットフォームを入力または選択してください]** ボックスの一覧で、**[x64]** を選びます。  
   
        > [!NOTE]
        >  構成に新しい名前を指定する場合は、**[プロジェクト デザイナー]** で適切なプラットフォームを対象にするよう設定の変更が必要になることがあります。  
   
-   3.  現在のプラットフォーム構成から設定をコピーする場合は、構成を選んでから **[OK]** を選びます。  
+   3. 現在のプラットフォーム構成から設定をコピーする場合は、構成を選んでから **[OK]** を選びます。  
   
    64 ビット プラットフォームを対象とするすべてのプロジェクトのプロパティが更新され、プロジェクトの次のビルドは 64 ビット プラットフォーム用に最適化されます。  
   
@@ -57,11 +57,11 @@ ms.locfileid: "54791411"
   
  このタスクの実行方法は、使用するプログラミング言語によって異なります。 詳細については、次のリンクを参照してください。  
   
--   [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクトについては、「[/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)」をご覧ください。  
+- [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクトについては、「[/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)」をご覧ください。  
   
--   [!INCLUDE[csprcs](../includes/csprcs-md.md)] プロジェクトについては、「[[ビルド] ウィンドウ (プロジェクト デザイナー) (C#)](../ide/reference/build-page-project-designer-csharp.md)」をご覧ください。  
+- [!INCLUDE[csprcs](../includes/csprcs-md.md)] プロジェクトについては、「[[ビルド] ウィンドウ (プロジェクト デザイナー) (C#)](../ide/reference/build-page-project-designer-csharp.md)」をご覧ください。  
   
--   [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] プロジェクトについては、「[/clr (共通言語ランタイムのコンパイル)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)」をご覧ください。  
+- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] プロジェクトについては、「[/clr (共通言語ランタイムのコンパイル)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)」をご覧ください。  
   
 ## <a name="see-also"></a>関連項目  
  [ビルド プラットフォームについて](../ide/understanding-build-platforms.md)   

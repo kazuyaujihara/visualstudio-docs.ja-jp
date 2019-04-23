@@ -12,34 +12,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10cd8b5e302809147f8f6e48210ca513534ce37e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f9fecd6960b07edb84e946899024ffbbe71bf39c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094971"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>[ウォッチ] ウィンドウの式を評価します。
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
+>  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
 
  実行が一時停止したときに、Visual Studio はデバッグ エンジンのウォッチ リスト内の各式の現在の値を確認するには、(DE) を呼び出します。 デは、式エバリュエーター (EE) を使用して各式を評価し、Visual Studio では、その値が表示されます、**ウォッチ**ウィンドウ。
 
  ウォッチ リストの式を評価する方法の概要を次に示します。
 
-1.  Visual Studio 呼び出し DE の[GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)式の評価に使用できる式のコンテキストを取得します。
+1. Visual Studio 呼び出し DE の[GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)式の評価に使用できる式のコンテキストを取得します。
 
-2.  ウォッチ リストの各式では、Visual Studio 呼び出し[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)解析された式の式のテキストに変換します。
+2. ウォッチ リストの各式では、Visual Studio 呼び出し[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)解析された式の式のテキストに変換します。
 
-3.  `IDebugExpressionContext2::ParseText` 呼び出し[解析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)生成とテキストの解析の実際の作業を行う、 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)オブジェクト。
+3. `IDebugExpressionContext2::ParseText` 呼び出し[解析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)生成とテキストの解析の実際の作業を行う、 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)オブジェクト。
 
-4.  `IDebugExpressionContext2::ParseText` 作成、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクトと配置、`IDebugParsedExpression`それにオブジェクト。 この`DebugExpression2`オブジェクトは Visual Studio に返されます。
+4. `IDebugExpressionContext2::ParseText` 作成、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクトと配置、`IDebugParsedExpression`それにオブジェクト。 この`DebugExpression2`オブジェクトは Visual Studio に返されます。
 
-5.  Visual Studio 呼び出し[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)解析された式を評価します。
+5. Visual Studio 呼び出し[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)解析された式を評価します。
 
-6.  `IDebugExpression2::EvaluateSync` 呼び出しを渡す[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)を実際の評価を行い、生成、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Visual Studio に返されるオブジェクト。
+6. `IDebugExpression2::EvaluateSync` 呼び出しを渡す[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)を実際の評価を行い、生成、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Visual Studio に返されるオブジェクト。
 
-7.  Visual Studio 呼び出し[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)ウォッチ リストに表示される式の値を取得します。
+7. Visual Studio 呼び出し[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)ウォッチ リストに表示される式の値を取得します。
 
 ## <a name="parse-then-evaluate"></a>解析し、評価
  複雑な式の解析は、それを評価するよりもかなり長くかかることが、式の評価プロセスが 2 つの手順に分割されます。1)、式を解析および 2) は、解析された式を評価します。 これにより、評価は回数だけ出現できますが、式が 1 回だけを解析する必要があります。 EE から中間の解析された式が返される、 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)順番にカプセル化され、として DE から返されるオブジェクトを[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクト。 `IDebugExpression`オブジェクトをすべて評価の延期、`IDebugParsedExpression`オブジェクト。

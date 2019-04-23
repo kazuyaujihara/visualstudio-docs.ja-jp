@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 484998916619a7dc72693d1854d29849bb62d833
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bbe703e54c6023a4d14a8610168438acc5c0e953
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085143"
 ---
 # <a name="word-solutions"></a>Word ソリューション
   Visual Studio には、Microsoft Office Word のドキュメント レベルのカスタマイズおよび VSTO アドインの作成に使用できるプロジェクト テンプレートが用意されています。 これらのソリューションを使用して、Word の自動化、Word の機能拡張、Word のユーザー インターフェイス (UI) のカスタマイズを行うことができます。 ドキュメント レベルのカスタマイズと VSTO アドインの違いの詳細については、次の [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md) を参照してください。
@@ -43,20 +43,20 @@ ms.locfileid: "56612648"
 
  ここでは、次の情報について説明します。
 
--   [Word の自動化](#automating)します。
+- [Word の自動化](#automating)します。
 
--   [Word 用ドキュメント レベルのカスタマイズを開発](#doclevel)します。
+- [Word 用ドキュメント レベルのカスタマイズを開発](#doclevel)します。
 
--   [Word 用 VSTO アドインの開発](#applevel)します。
+- [Word 用 VSTO アドインの開発](#applevel)します。
 
--   [Word のユーザー インターフェイスをカスタマイズ](#UI)します。
+- [Word のユーザー インターフェイスをカスタマイズ](#UI)します。
 
-##  <a name="automating"></a> Word を自動化します。
- Word オブジェクト モデルでは、Word の自動化に使用できる型が多数公開されています。 たとえば、プログラムを使用して、表の作成、文書の書式設定、範囲内や段落内でのテキストの設定などを行うことができます。 詳細については、[Word オブジェクト モデルの概要](../vsto/word-object-model-overview.md)を参照してください。
+## <a name="automating"></a> Word を自動化します。
+ Word オブジェクト モデルでは、Word の自動化に使用できる型が多数公開されています。 たとえば、プログラムを使用して、表の作成、文書の書式設定、範囲内や段落内でのテキストの設定などを行うことができます。 詳細については、次を参照してください。 [Word オブジェクト モデルの概要](../vsto/word-object-model-overview.md)します。
 
- Visual Studio で Word ソリューションを開発するときには、ソリューションの *ホスト項目* および *ホスト コントロール* を使用することもできます。 Word オブジェクト モデルには、 <xref:Microsoft.Office.Interop.Word.Document> や <xref:Microsoft.Office.Interop.Word.ContentControl> などのよく使用される特定のオブジェクトを拡張したオブジェクトがあります。 これらの拡張オブジェクトは、基になる Word オブジェクトと同じように動作しますが、基のオブジェクトにはないイベントとデータ バインディング機能が追加されています。 詳細については、[拡張オブジェクトを使用して Word の自動化](../vsto/automating-word-by-using-extended-objects.md)を参照してください。
+ Visual Studio で Word ソリューションを開発するときには、ソリューションの *ホスト項目* および *ホスト コントロール* を使用することもできます。 Word オブジェクト モデルには、 <xref:Microsoft.Office.Interop.Word.Document> や <xref:Microsoft.Office.Interop.Word.ContentControl> などのよく使用される特定のオブジェクトを拡張したオブジェクトがあります。 これらの拡張オブジェクトは、基になる Word オブジェクトと同じように動作しますが、基のオブジェクトにはないイベントとデータ バインディング機能が追加されています。 詳細については、次を参照してください。[拡張オブジェクトを使用して Word の自動化](../vsto/automating-word-by-using-extended-objects.md)します。
 
-##  <a name="doclevel"></a> Word 用ドキュメント レベル カスタマイズを開発します。
+## <a name="doclevel"></a> Word 用ドキュメント レベル カスタマイズを開発します。
  Microsoft Office Word のドキュメント レベルのカスタマイズは、特定の文書に関連付けられたアセンブリで構成されます。 このアセンブリは、一般には UI のカスタマイズと Word の自動化によってドキュメントの機能を拡張します。 Word 自体と関連付けられる VSTO アドインとは異なり、カスタマイズに実装した機能は、関連付けられた文書が Word で開かれている場合にのみ利用できます。
 
  Word のドキュメント レベルのカスタマイズ プロジェクトを作成するには、Visual Studio の **[新しいプロジェクト]** ダイアログ ボックスで Word 文書または Word テンプレートのプロジェクト テンプレートを使用します。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
@@ -68,7 +68,7 @@ ms.locfileid: "56612648"
 
  詳細については、`ThisDocument`クラスおよびドキュメント レベルのプロジェクトで使用できるその他の機能を参照してください[ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)します。
 
-##  <a name="applevel"></a> Word 用 VSTO アドインを開発します。
+## <a name="applevel"></a> Word 用 VSTO アドインを開発します。
  Microsoft Office Word の VSTO アドインは、Word によって読み込まれるアセンブリで構成されます。 このアセンブリは、一般には UI のカスタマイズと Word の自動化によって Word の機能を拡張します。 特定のドキュメントに関連付けられたドキュメント レベルのカスタマイズとは異なり、VSTO アドインに実装する機能の対象は 1 つの文書に制限されません。
 
  Word 用の VSTO アドイン プロジェクトを作成するには、Visual Studio の **[新しいプロジェクト]** ダイアログ ボックスで Word アドイン プロジェクト テンプレートを使用します。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
@@ -80,7 +80,7 @@ ms.locfileid: "56612648"
 
  詳細については、`ThisAddIn`クラスと、VSTO アドインで使用できるその他の機能を参照してください[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)します。
 
-##  <a name="UI"></a> Word のユーザー インターフェイスをカスタマイズします。
+## <a name="UI"></a> Word のユーザー インターフェイスをカスタマイズします。
  Word のユーザー インターフェイスをカスタマイズする方法はいくつかあります。 一部のオプションはすべてのプロジェクト タイプで使用できますが、VSTO アドインまたはドキュメント レベルのカスタマイズでのみ使用できるオプションもあります。
 
 ### <a name="options-for-all-project-types"></a>すべてのプロジェクトの種類のオプション

@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 279dd66ca1f814dbd52593d52040818edf8f408b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fa16f3587e0d70d8604aeadb33ee7807f6a22ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085663"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションのカスタム アクセス許可を設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ ms.locfileid: "58975978"
   
 ### <a name="to-customize-a-permission"></a>アクセス許可をカスタマイズするには  
   
-1.  **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
+1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
   
-2.  **[セキュリティ]** タブをクリックします。  
+2. **[セキュリティ]** タブをクリックします。  
   
-3.  **[ClickOnce セキュリティ設定を有効にする]** チェック ボックスをオンにします。  
+3. **[ClickOnce セキュリティ設定を有効にする]** チェック ボックスをオンにします。  
   
-4.  **[これは部分的に信頼するアプリケーションです]** オプション ボタンを選択します。  
+4. **[これは部分的に信頼するアプリケーションです]** オプション ボタンを選択します。  
   
      **[ClickOnce セキュリティのアクセス許可]** セクション内のコントロールが有効になります。  
   
-5.  **[アプリケーションのインストール元のゾーン]** ドロップダウン リストの **[(カスタム)]** を選択します。  
+5. **[アプリケーションのインストール元のゾーン]** ドロップダウン リストの **[(カスタム)]** を選択します。  
   
-6.  **[アクセス許可 XML の編集]** をクリックします。  
+6. **[アクセス許可 XML の編集]** をクリックします。  
   
      XML エディターで app.manifest ファイルが開きます。  
   
-7.  `</applicationRequestMinimum>` 要素の前に、アプリケーションに必要なアクセス許可の XML コードを追加します。  
+7. `</applicationRequestMinimum>` 要素の前に、アプリケーションに必要なアクセス許可の XML コードを追加します。  
   
     > [!NOTE]
     >  アクセス許可セットの `ToXml` メソッドを使用して、アプリケーション マニフェスト用の XML コードを生成できます。 たとえば、 <xref:System.Security.Permissions.EnvironmentPermission> アクセス許可セットの XML を生成するには、 <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> メソッドを呼び出します。 XML セットのアクセス許可の構造の詳細についてを参照してください[NIB:。方法: アクセス許可のセットを XML ファイルを使用してインポート](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236)します。  

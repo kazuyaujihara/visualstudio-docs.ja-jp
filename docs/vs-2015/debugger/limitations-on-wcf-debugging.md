@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b42eecb5c620e911e448728678781ee32ccb5ca0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3faa57a0a2ca413898364c2d4ad1891df85f1ce8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095101"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF デバッグの制約
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ WCF サービスのデバッグを開始するには、次の 3 つの方法が�
 ## <a name="limitations-on-stepping-into-a-service"></a>サービスへのステップ インの制約  
  デバッグ中のクライアント アプリケーションのサービスにステップ インするには、次の条件を満たす必要があります。  
   
--   クライアントは、同期クライアント オブジェクトを使用してサービスを呼び出す必要があります。  
+- クライアントは、同期クライアント オブジェクトを使用してサービスを呼び出す必要があります。  
   
--   コントラクト操作では、一方向の操作を使用できません。  
+- コントラクト操作では、一方向の操作を使用できません。  
   
--   サーバーが非同期の場合、サービスのコードを実行している間は、完全な呼び出し履歴を表示できません。  
+- サーバーが非同期の場合、サービスのコードを実行している間は、完全な呼び出し履歴を表示できません。  
   
--   app.config ファイルまたは Web.config ファイルの次のコードでデバッグが有効にされている必要があります。  
+- app.config ファイルまたは Web.config ファイルの次のコードでデバッグが有効にされている必要があります。  
   
     ```  
     <system.web>  
@@ -62,13 +62,13 @@ WCF サービスのデバッグを開始するには、次の 3 つの方法が�
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>サービスへのオート アタッチの制約  
  サービスへのオート アタッチには、次の制約があります。  
   
--   サービスは、デバッグしている [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションの一部である必要があります。  
+- サービスは、デバッグしている [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションの一部である必要があります。  
   
--   サービスはホストされている必要があります。 サービスは、Web サイト プロジェクト (ファイル システムおよび HTTP)、Web アプリケーション プロジェクト (ファイル システムおよび HTTP)、または WCF サービス ライブラリ プロジェクトの一部にすることができます。 WCF サービス ライブラリ プロジェクトは、サービス ライブラリまたはワークフロー サービス ライブラリです。  
+- サービスはホストされている必要があります。 サービスは、Web サイト プロジェクト (ファイル システムおよび HTTP)、Web アプリケーション プロジェクト (ファイル システムおよび HTTP)、または WCF サービス ライブラリ プロジェクトの一部にすることができます。 WCF サービス ライブラリ プロジェクトは、サービス ライブラリまたはワークフロー サービス ライブラリです。  
   
--   サービスは、WCF クライアントから起動される必要があります。  
+- サービスは、WCF クライアントから起動される必要があります。  
   
--   app.config ファイルまたは Web.config ファイルの次のコードでデバッグが有効にされている必要があります。  
+- app.config ファイルまたは Web.config ファイルの次のコードでデバッグが有効にされている必要があります。  
   
     ```  
     <system.web>  

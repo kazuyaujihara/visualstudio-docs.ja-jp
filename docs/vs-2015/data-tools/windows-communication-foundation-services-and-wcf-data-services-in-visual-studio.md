@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d143bd6ea48150ec8a2515eafc016786a8d3e33e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095036"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio での Windows Communication Foundation サービスと WCF データ サービス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,9 +124,9 @@ Visual Studio には、Windows Communication Foundation (WCF) を操作するた
 
 #### <a name="to-select-a-service-endpoint"></a>サービス エンドポイントを選択するには
 
-1.  ソリューション エクスプ ローラーでプロジェクト ノードを右クリックして、WCF サービスへの参照を追加**サービス参照の追加**
+1. ソリューション エクスプ ローラーでプロジェクト ノードを右クリックして、WCF サービスへの参照を追加**サービス参照の追加**
 
-2.  コード エディターでは、サービス参照のコンス トラクターを追加します。
+2. コード エディターでは、サービス参照のコンス トラクターを追加します。
 
     ```vb
     Dim proxy As New ServiceReference.Service1Client(
@@ -139,24 +139,24 @@ Visual Studio には、Windows Communication Foundation (WCF) を操作するた
     > [!NOTE]
     >  置換*ServiceReference*サービス参照と置換の名前空間を持つ*Service1Client*サービスの名前に置き換えます。
 
-3.  コンス トラクターのオーバー ロードでは、IntelliSense の一覧が表示されます。 選択、`endpointConfigurationName As String`オーバー ロードします。
+3. コンス トラクターのオーバー ロードでは、IntelliSense の一覧が表示されます。 選択、`endpointConfigurationName As String`オーバー ロードします。
 
-4.  次のオーバー ロードは、次のように入力します。 `=` *ConfigurationName*ここで、 *ConfigurationName*を使用するエンドポイントの名前を指定します。
+4. 次のオーバー ロードは、次のように入力します。 `=` *ConfigurationName*ここで、 *ConfigurationName*を使用するエンドポイントの名前を指定します。
 
     > [!NOTE]
     >  使用可能なエンドポイントの名前がわからない場合は、app.config ファイルで見つけることができます。
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>WCF サービスの使用可能なエンドポイントが見つかりません
 
-1.  **ソリューション エクスプ ローラー**サービス参照を含むプロジェクトの app.config ファイルを右クリックし、クリックして**オープン**します。 ファイルは、コード エディターで表示されます。
+1. **ソリューション エクスプ ローラー**サービス参照を含むプロジェクトの app.config ファイルを右クリックし、クリックして**オープン**します。 ファイルは、コード エディターで表示されます。
 
-2.  検索、`<Client>`ファイル内のタグ。
+2. 検索、`<Client>`ファイル内のタグ。
 
-3.  下に検索、`<Client>`で始まるタグのタグ`<Endpoint>`します。
+3. 下に検索、`<Client>`で始まるタグのタグ`<Endpoint>`します。
 
      サービス参照は、複数のエンドポイントを提供する場合があります複数`<Endpoint`タグ。
 
-4.  内で、`<EndPoint>`タグが表示されます、 `name="` *SomeService* `"`パラメーター (場所*SomeService*エンドポイント名を表します)。 渡すことができるエンドポイントの名前が、`endpointConfigurationName As String`サービス参照のコンス トラクターのオーバー ロードします。
+4. 内で、`<EndPoint>`タグが表示されます、 `name="` *SomeService* `"`パラメーター (場所*SomeService*エンドポイント名を表します)。 渡すことができるエンドポイントの名前が、`endpointConfigurationName As String`サービス参照のコンス トラクターのオーバー ロードします。
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>方法: サービス メソッドを非同期的に呼び出す
  Windows Communication Foundation (WCF) サービスのほとんどのメソッドは、同期または非同期で呼び出すことができます。 メソッドを非同期的に呼び出すには、低速接続で実行しているときに、メソッドが呼び出されるときに作業を続行するアプリケーションができるようにします。
@@ -170,42 +170,42 @@ Visual Studio には、Windows Communication Foundation (WCF) を操作するた
 
 #### <a name="to-call-a-service-method-asynchronously"></a>サービス メソッドを非同期的に呼び出す
 
-1.  **ソリューション エクスプ ローラー**、サービス参照 を選択します。
+1. **ソリューション エクスプ ローラー**、サービス参照 を選択します。
 
-2.  **プロジェクト** メニューのをクリックして**サービス参照の構成**します。
+2. **プロジェクト** メニューのをクリックして**サービス参照の構成**します。
 
-3.  **サービス参照の構成**ダイアログ ボックスで、**非同期操作を生成する**チェック ボックスをオンします。
+3. **サービス参照の構成**ダイアログ ボックスで、**非同期操作を生成する**チェック ボックスをオンします。
 
 ## <a name="how-to-bind-data-returned-by-a-service"></a>方法: サービスによって返されるデータをバインドします。
  他のデータ ソースをコントロールにバインドすると同様、コントロールに Windows Communication Foundation (WCF) サービスによって返されるデータをバインドすることができます。 自動的に追加されますが、サービスにデータを返す複合型が含まれている場合に、WCF サービスへの参照を追加すると、**データソース**ウィンドウ。
 
 #### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>WCF サービスによって返された 1 つのデータ フィールドにコントロールをバインドするには
 
-1.  **[データ]** メニューの **[データ ソースの表示]** をクリックします。 **データソース**ウィンドウが表示されます。
+1. **[データ]** メニューの **[データ ソースの表示]** をクリックします。 **データソース**ウィンドウが表示されます。
 
-2.  **データソース**ウィンドウで、サービス参照のノードを展開します。 サービスによって返される、複合型が表示されます。
+2. **データソース**ウィンドウで、サービス参照のノードを展開します。 サービスによって返される、複合型が表示されます。
 
-3.  型のノードを展開します。 その型のデータ フィールドが表示されます。
+3. 型のノードを展開します。 その型のデータ フィールドが表示されます。
 
-4.  フィールドを選択し、データ型で利用可能なコントロールの一覧を表示するドロップダウン矢印をクリックします。
+4. フィールドを選択し、データ型で利用可能なコントロールの一覧を表示するドロップダウン矢印をクリックします。
 
-5.  バインドするコントロールの種類をクリックします。
+5. バインドするコントロールの種類をクリックします。
 
-6.  フィールドをフォームにドラッグします。 コントロールは、と共にフォームに追加されます、<xref:System.Windows.Forms.BindingSource>コンポーネントと<xref:System.Windows.Forms.BindingNavigator>コンポーネント。
+6. フィールドをフォームにドラッグします。 コントロールは、と共にフォームに追加されます、<xref:System.Windows.Forms.BindingSource>コンポーネントと<xref:System.Windows.Forms.BindingNavigator>コンポーネント。
 
-7.  他のフィールドを手順 4 にバインドします。
+7. 他のフィールドを手順 4 にバインドします。
 
 #### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>WCF サービスから返された複合型にコントロールをバインドするには
 
-1.  **データ**メニューの  **データ ソースの**します。 **データソース**ウィンドウが表示されます。
+1. **データ**メニューの  **データ ソースの**します。 **データソース**ウィンドウが表示されます。
 
-2.  **データソース**ウィンドウで、サービス参照のノードを展開します。 サービスによって返される、複合型が表示されます。
+2. **データソース**ウィンドウで、サービス参照のノードを展開します。 サービスによって返される、複合型が表示されます。
 
-3.  型のノードを選択し、使用可能なオプションの一覧を表示するドロップダウン矢印をクリックします。
+3. 型のノードを選択し、使用可能なオプションの一覧を表示するドロップダウン矢印をクリックします。
 
-4.  いずれかをクリックします**DataGridView**をグリッドにデータを表示するか、**詳細**個々 のコントロールにデータを表示します。
+4. いずれかをクリックします**DataGridView**をグリッドにデータを表示するか、**詳細**個々 のコントロールにデータを表示します。
 
-5.  ノードをフォームにドラッグします。 コントロールと共にフォームに追加されます、<xref:System.Windows.Forms.BindingSource>コンポーネントと<xref:System.Windows.Forms.BindingNavigator>コンポーネント。
+5. ノードをフォームにドラッグします。 コントロールと共にフォームに追加されます、<xref:System.Windows.Forms.BindingSource>コンポーネントと<xref:System.Windows.Forms.BindingNavigator>コンポーネント。
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>方法: 既存の型を再利用のサービスを構成します。
  サービス参照がプロジェクトに追加されると、サービスで定義された任意の型は、ローカル プロジェクトで生成されます。 多くの場合、重複する型と作成、サービスを使用して一般的な[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]型または型が共有ライブラリで定義されている場合。
@@ -214,21 +214,21 @@ Visual Studio には、Windows Communication Foundation (WCF) を操作するた
 
 #### <a name="to-disable-type-sharing-in-a-single-assembly"></a>1 つのアセンブリで型の共有を無効にするには
 
-1.  **ソリューション エクスプ ローラー**、サービス参照 を選択します。
+1. **ソリューション エクスプ ローラー**、サービス参照 を選択します。
 
-2.  **プロジェクト** メニューのをクリックして**サービス参照の構成**します。
+2. **プロジェクト** メニューのをクリックして**サービス参照の構成**します。
 
-3.  **サービス参照の構成**ダイアログ ボックスで、**参照されたアセンブリを指定した型を再利用**します。
+3. **サービス参照の構成**ダイアログ ボックスで、**参照されたアセンブリを指定した型を再利用**します。
 
-4.  型の共有を有効にする各アセンブリのチェック ボックスを選択します。 型のアセンブリの共有を無効にするには、 チェック ボックスをオフのままにします。
+4. 型の共有を有効にする各アセンブリのチェック ボックスを選択します。 型のアセンブリの共有を無効にするには、 チェック ボックスをオフのままにします。
 
 #### <a name="to-disable-type-sharing-in-all-assemblies"></a>すべてのアセンブリで型の共有を無効にするには
 
-1.  **ソリューション エクスプ ローラー**、サービス参照 を選択します。
+1. **ソリューション エクスプ ローラー**、サービス参照 を選択します。
 
-2.  **プロジェクト** メニューのをクリックして**サービス参照の構成**します。
+2. **プロジェクト** メニューのをクリックして**サービス参照の構成**します。
 
-3.  **サービス参照の構成** ダイアログ ボックスで、クリア、**参照されたアセンブリで型を再利用**チェック ボックスをオンします。
+3. **サービス参照の構成** ダイアログ ボックスで、クリア、**参照されたアセンブリで型を再利用**チェック ボックスをオンします。
 
 ## <a name="related-topics"></a>関連トピック
 

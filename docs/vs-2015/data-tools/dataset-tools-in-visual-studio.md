@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 553d4f7ca61bbc01e72e8735b0007d2f08876e71
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666508"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085378"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio のデータセット ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ ms.locfileid: "59666508"
 ## <a name="dataset-workflow"></a>データセットのワークフロー
  Visual Studio では、データセットの操作を簡略化するツールが多数用意されています。 基本的なエンド ツー エンドのワークフローは次のとおりです。
 
--   使用して、**データ ソース**ウィンドウを 1 つまたは複数のデータ ソースから新しいデータセットを作成します。 使用して、**データセット デザイナー**データセットを構成し、そのプロパティを設定します。 たとえば、含めるには、データ ソースからどのテーブルとそれぞれのテーブルから列を指定する必要があります。 データセットが必要になるメモリの量を節約するために慎重に選択します。 詳細については、[データセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)に関するページを参照してください。
+- 使用して、**データ ソース**ウィンドウを 1 つまたは複数のデータ ソースから新しいデータセットを作成します。 使用して、**データセット デザイナー**データセットを構成し、そのプロパティを設定します。 たとえば、含めるには、データ ソースからどのテーブルとそれぞれのテーブルから列を指定する必要があります。 データセットが必要になるメモリの量を節約するために慎重に選択します。 詳細については、[データセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)に関するページを参照してください。
 
--   外部キーが正しく処理されるように、テーブル間のリレーションシップを指定します。 詳細については、次を参照してください。 [Tableadapter を使用してデータセットを入力](../data-tools/fill-datasets-by-using-tableadapters.md)します。
+- 外部キーが正しく処理されるように、テーブル間のリレーションシップを指定します。 詳細については、次を参照してください。 [Tableadapter を使用してデータセットを入力](../data-tools/fill-datasets-by-using-tableadapters.md)します。
 
--   使用して、 **TableAdapter 構成ウィザード**クエリや、データセットを作成するストアド プロシージャを指定し、どのようなデータベース操作 (更新、削除、およびなど) を実装します。 詳細については、次のトピックを参照してください。
+- 使用して、 **TableAdapter 構成ウィザード**クエリや、データセットを作成するストアド プロシージャを指定し、どのようなデータベース操作 (更新、削除、およびなど) を実装します。 詳細については、次のトピックを参照してください。
 
-    -   [TableAdapters を使用してデータセットを入力する](../data-tools/fill-datasets-by-using-tableadapters.md)
+    - [TableAdapters を使用してデータセットを入力する](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    -   [データセットのデータの編集](../data-tools/edit-data-in-datasets.md)
+    - [データセットのデータの編集](../data-tools/edit-data-in-datasets.md)
 
-    -   [データセットのデータの検証](../data-tools/validate-data-in-datasets.md)
+    - [データセットのデータの検証](../data-tools/validate-data-in-datasets.md)
 
-    -   [データをデータベースに保存する](../data-tools/save-data-back-to-the-database.md)
+    - [データをデータベースに保存する](../data-tools/save-data-back-to-the-database.md)
 
--   クエリを実行し、データセットで、データを検索します。 詳細については、次を参照してください。[データセットを照会](../data-tools/query-datasets.md)します。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] により、 [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)内のデータを<xref:System.Data.DataSet>オブジェクト。 詳細については、「[LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)」を参照してください。
+- クエリを実行し、データセットで、データを検索します。 詳細については、次を参照してください。[データセットを照会](../data-tools/query-datasets.md)します。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] により、 [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)内のデータを<xref:System.Data.DataSet>オブジェクト。 詳細については、「[LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)」を参照してください。
 
--   使用して、**データソース**ウィンドウ ユーザー インターフェイス コントロールをデータセットまたはその個々 の列にバインドして、ユーザーが編集可能な列を指定します。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。
+- 使用して、**データソース**ウィンドウ ユーザー インターフェイス コントロールをデータセットまたはその個々 の列にバインドして、ユーザーが編集可能な列を指定します。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。
 
 ## <a name="datasets-and-n-tier-architecture"></a>データセットと N 層アーキテクチャ
  N 層アプリケーションでのデータセットについては、次を参照してください。 [n 層アプリケーションでデータセットを操作](../data-tools/work-with-datasets-in-n-tier-applications.md)します。

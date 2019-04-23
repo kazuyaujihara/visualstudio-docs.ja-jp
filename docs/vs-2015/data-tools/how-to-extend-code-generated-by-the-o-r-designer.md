@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a5fc9bb7b6e2d6813c4c571633ef46d4b9e1f48
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8aa3ecd29180e01a7d6f254303d42ac328aceaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651735"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085221"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>方法: O/R デザイナーで生成されたコードを拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ ms.locfileid: "59651735"
   
 #### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>部分クラスを作成し、エンティティ クラスにコードを追加するには  
   
-1.  開くか、新しい LINQ to SQL クラス ファイルの作成 (**.dbml**ファイル) で、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。 (ダブルクリックして、 **.dbml**ファイル**ソリューション エクスプ ローラー**/**データベース エクスプ ローラー**)。  
+1. 開くか、新しい LINQ to SQL クラス ファイルの作成 (**.dbml**ファイル) で、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。 (ダブルクリックして、 **.dbml**ファイル**ソリューション エクスプ ローラー**/**データベース エクスプ ローラー**)。  
   
-2.  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]をクリックして検証を追加するクラスを右クリックして**コードの表示**します。  
+2. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]をクリックして検証を追加するクラスを右クリックして**コードの表示**します。  
   
      コード エディターが開き、選択したエンティティ クラスの部分クラスが表示されます。  
   
-3.  エンティティ クラスの部分クラス宣言内にコードを追加します。  
+3. エンティティ クラスの部分クラス宣言内にコードを追加します。  
   
 ## <a name="adding-code-to-a-datacontext"></a>DataContext へのコードの追加  
   
 #### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>部分クラスを作成し、DataContext にコードを追加するには  
   
-1.  開くか、新しい LINQ to SQL クラス ファイルの作成 (**.dbml**ファイル) で、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。 (ダブルクリックして、 **.dbml**ファイル**ソリューション エクスプ ローラー**/**データベース エクスプ ローラー**)。  
+1. 開くか、新しい LINQ to SQL クラス ファイルの作成 (**.dbml**ファイル) で、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。 (ダブルクリックして、 **.dbml**ファイル**ソリューション エクスプ ローラー**/**データベース エクスプ ローラー**)。  
   
-2.  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]デザイナーの空の領域を右クリックし、クリックして**コードの表示**します。  
+2. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]デザイナーの空の領域を右クリックし、クリックして**コードの表示**します。  
   
      コード エディターが開き、DataContext の部分クラスが表示されます。  
   
-3.  DataContext の部分クラス宣言内にコードを追加します。  
+3. DataContext の部分クラス宣言内にコードを追加します。  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
