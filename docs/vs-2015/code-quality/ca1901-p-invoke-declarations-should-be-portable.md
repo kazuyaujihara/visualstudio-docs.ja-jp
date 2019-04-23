@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ed1385ee914fa8b0df31b360f4a1d8fdc8931332
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962969"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053950"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901:P/Invoke 宣言はポータブルでなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ ms.locfileid: "58962969"
 ## <a name="rule-description"></a>規則の説明
  このルールに違反している、次のシナリオのいずれかに発生します。
 
--   戻り値またはパラメーターとして型指定された固定サイズの整数として型指定しなければならないときに、`IntPtr`します。
+- 戻り値またはパラメーターとして型指定された固定サイズの整数として型指定しなければならないときに、`IntPtr`します。
 
--   として型指定された戻り値またはパラメーター、`IntPtr`固定サイズの整数としてときに入力する必要があります。
+- として型指定された戻り値またはパラメーター、`IntPtr`固定サイズの整数としてときに入力する必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この違反を修正するを使用して`IntPtr`または`UIntPtr`の代わりにハンドルを表す`Int32`または`UInt32`します。

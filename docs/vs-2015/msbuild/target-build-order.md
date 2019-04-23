@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5d619a18fa38c09b25f2d8367f3f767ac5bdc11
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054445"
 ---
 # <a name="target-build-order"></a>ターゲットのビルド順序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,19 +107,19 @@ ms.locfileid: "59651083"
 ## <a name="determining-the-target-build-order"></a>ターゲットのビルド順序の決定  
  MSBuild では、ターゲットのビルド順序を次のように決定します。  
   
-1.  `InitialTargets` ターゲットが実行されます。  
+1. `InitialTargets` ターゲットが実行されます。  
   
-2.  **/target** スイッチによってコマンドラインで指定されたターゲットが実行されます。 コマンド ラインでターゲットが指定されていない場合、`DefaultTargets` ターゲットが実行されます。 どちらも存在しない場合は、検出された最初のターゲットが実行されます。  
+2. **/target** スイッチによってコマンドラインで指定されたターゲットが実行されます。 コマンド ラインでターゲットが指定されていない場合、`DefaultTargets` ターゲットが実行されます。 どちらも存在しない場合は、検出された最初のターゲットが実行されます。  
   
-3.  ターゲットの `Condition` 属性が評価されます。 `Condition` 属性が存在し、`false` と評価された場合、ターゲットは実行されず、ビルドにはそれ以上影響しません。  
+3. ターゲットの `Condition` 属性が評価されます。 `Condition` 属性が存在し、`false` と評価された場合、ターゲットは実行されず、ビルドにはそれ以上影響しません。  
   
-4.  あるターゲットが実行される前には、その `DependsOnTargets` ターゲットが実行されます。  
+4. あるターゲットが実行される前には、その `DependsOnTargets` ターゲットが実行されます。  
   
-5.  あるターゲットが実行される前には、そのターゲットを `BeforeTargets` 属性に一覧表示しているターゲットが実行されます。  
+5. あるターゲットが実行される前には、そのターゲットを `BeforeTargets` 属性に一覧表示しているターゲットが実行されます。  
   
-6.  あるターゲットが実行される前には、その `Inputs` 属性と `Outputs` 属性が比較されます。 対応する入力ファイルに対して最新ではない出力ファイルがあると MSBuild が判断した場合、MSBuild はターゲットを実行します。 それ以外の場合は、MSBuild はターゲットをスキップします。  
+6. あるターゲットが実行される前には、その `Inputs` 属性と `Outputs` 属性が比較されます。 対応する入力ファイルに対して最新ではない出力ファイルがあると MSBuild が判断した場合、MSBuild はターゲットを実行します。 それ以外の場合は、MSBuild はターゲットをスキップします。  
   
-7.  あるターゲットが実行またはスキップされると、その後、そのターゲットを `AfterTargets` 属性に一覧表示しているターゲットが実行されます。  
+7. あるターゲットが実行またはスキップされると、その後、そのターゲットを `AfterTargets` 属性に一覧表示しているターゲットが実行されます。  
   
 ## <a name="see-also"></a>関連項目  
  [ターゲット](../msbuild/msbuild-targets.md)

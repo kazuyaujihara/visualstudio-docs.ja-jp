@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975143"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053534"
 ---
 # <a name="graphics-frame-analysis"></a>グラフィックス フレーム分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
   
  フレーム分析は、再試行を 10 回に制限しています。 プラットフォームに積極的な電源管理またはクロックゲーティングの機能がある場合、これらの機能が再試行の制限を超えたために、フレーム分析が失敗してエラーをレポートする原因となることがあります。 この問題は、プラットフォームの電源管理をリセットすること、およびプラットフォームで可能な場合はクロック速度の調整を少し遅くすることによって、改善できます。  
   
-##  <a name="HardwareSupport"></a> ハードウェア サポート  
+## <a name="HardwareSupport"></a> ハードウェア サポート  
   
 ### <a name="timestamps-and-occlusion-queries"></a>タイムスタンプおよび occlusion querｙ  
  タイムスタンプは、フレーム分析をサポートしているすべてのプラットフォームでサポートされています。 (Pixels Occluded カウンターで必要な) 深さの occlusion query は、機能レベル 9.2 以降をサポートしているプラットフォームでサポートされます。  
@@ -182,7 +182,7 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
 > [!NOTE]
 >  これは、機能レベルではなく、使用している Direct3D API 呼び出しに対してのみ適用されます。 Direct3D 11、Direct3D 11.1、または Direct3D 11.2 API を使用している場合は、任意の機能レベルを使用してもフレーム分析は機能します。  
   
-##  <a name="Variants"></a> バリアント  
+## <a name="Variants"></a> バリアント  
  再生中に、フレームがレンダリングされる方法に対してフレーム分析が加える変更のことを*バリアント*といいます。 フレーム分析が調査するバリアントは、レンダリング パフォーマンスまたはアプリケーションの表示品質を改善しようとして行った、一般的で比較的簡単な変更に対応します。たとえば、テクスチャのサイズを小さくする、テクスチャの圧縮を使用する、違う種類のアンチエイリアス処理を有効にする、などの変更です。 バリアントは、通常のレンダリング コンテキストおよびアプリケーションのパラメーターを上書きします。 次に概要を示します。  
   
 |バリアント|説明|  

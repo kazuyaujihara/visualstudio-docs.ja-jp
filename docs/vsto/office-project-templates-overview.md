@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c64fac3e69a1b7678b9583f8529dd7b94201932e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614689"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054574"
 ---
 # <a name="office-project-templates-overview"></a>Office プロジェクト テンプレートの概要
   Visual Studio の Microsoft Office Developer Tools には、次の種類の Office ソリューションの作成に使用できるプロジェクト テンプレートが含まれています。
@@ -48,12 +48,12 @@ ms.locfileid: "56614689"
 
   Office プロジェクト テンプレートは、 **[新しいプロジェクト]** ダイアログ ボックスの **[Visual C#]** 言語ノードおよび **[Visual Basic]** 言語ノードの下の **[Office]** ノードで使用できます。 各テンプレートでは、アセンブリ参照、デバッグ設定など、対象アプリケーションに適した構成を持つプロジェクトが生成されます。
 
-  各プロジェクトには、特定の種類のソリューションの作成に使用できるファイルおよびコードが用意されています。 プロジェクトごとに生成されるコードには、スタートアップ イベントおよびシャットダウン イベントのハンドラーが含まれます。 これらのイベント ハンドラーにコードを追加して、読み込まれるときにはソリューションを初期化し、アンロードされるときにはソリューションをクリーンアップすることができます。 詳細については、[Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)と[Office プロジェクト内のイベント](../vsto/events-in-office-projects.md)を参照してください。
+  各プロジェクトには、特定の種類のソリューションの作成に使用できるファイルおよびコードが用意されています。 プロジェクトごとに生成されるコードには、スタートアップ イベントおよびシャットダウン イベントのハンドラーが含まれます。 これらのイベント ハンドラーにコードを追加して、読み込まれるときにはソリューションを初期化し、アンロードされるときにはソリューションをクリーンアップすることができます。 詳細については、次を参照してください。 [Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)と[Office プロジェクト内のイベント](../vsto/events-in-office-projects.md)します。
 
 > [!NOTE]
 > Office 開発ツールは、Visual Studio の一部のエディションに付属しています。 詳細については、[Office ソリューションを開発するコンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md)を参照してください。
 
-##  <a name="DocLevel"></a> ドキュメント レベルのカスタマイズ
+## <a name="DocLevel"></a> ドキュメント レベルのカスタマイズ
  **[新しいプロジェクト]** ダイアログ ボックスの **[Office]** ノードには、Word および Excel のドキュメント レベルのカスタマイズの作成に使用できる次のプロジェクト テンプレートが用意されています。
 
 - **Word 2013 および 2016 VSTO ドキュメント**
@@ -81,17 +81,17 @@ ms.locfileid: "56614689"
 
  これらのプロジェクトの種類を使用して作業を開始する場合の詳細については、次のトピックを参照してください。
 
--   [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)
+- [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)
 
--   [Word ソリューション](../vsto/word-solutions.md)
+- [Word ソリューション](../vsto/word-solutions.md)
 
--   [Excel ソリューション](../vsto/excel-solutions.md)
+- [Excel ソリューション](../vsto/excel-solutions.md)
 
--   [チュートリアル: 最初の Word 用ドキュメント レベルのカスタマイズを作成します。](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [チュートリアル: 最初の Word 用ドキュメント レベルのカスタマイズを作成します。](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
--   [チュートリアル: 最初の Excel 用ドキュメント レベルのカスタマイズを作成します。](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [チュートリアル: 最初の Excel 用ドキュメント レベルのカスタマイズを作成します。](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
-##  <a name="AppLevel"></a> VSTO アドイン
+## <a name="AppLevel"></a> VSTO アドイン
  **[新しいプロジェクト]** ダイアログ ボックスの **[Office/SharePoint]** ノードには、VSTO アドインの作成に使用できる次のプロジェクト テンプレートが用意されています。
 
 - **Excel 2013 および 2016 VSTO アドイン**
@@ -157,7 +157,7 @@ ms.locfileid: "56614689"
 |読み取り専用に設定されていない場合、ユーザーは文書を開いて変更できます。 保存した変更はすべて、元の文書に保存されます。|ユーザーは、テンプレートを開いて、新しい文書としてローカル コピーを作成できます。 特別なアクセス許可が与えられていない限り、元のテンプレートを変更することはできません。|
 |文書を開くと、 <xref:Microsoft.Office.Tools.Word.Document.Open> イベントが呼び出されます。|テンプレートを開くと、 <xref:Microsoft.Office.Tools.Word.Document.New> イベントが呼び出されます。|
 
-##  <a name="Limitations"></a> グローバル テンプレートと Excel アドイン (.xla ファイル) の制限事項
+## <a name="Limitations"></a> グローバル テンプレートと Excel アドイン (.xla ファイル) の制限事項
  ドキュメント、ブック、およびテンプレートは、グローバル テンプレートや Excel VSTO アドイン (.xla ファイル) として正常に機能しないことがあります。
 
 ## <a name="word-templates"></a>Word テンプレート
