@@ -10,33 +10,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c80ee3cebe003eff7248626f0d8e27b3c179453
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 9ec010680a490d538b1cdbe6d3994f075adaf193
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083778"
 ---
 # <a name="language-service-and-editor-extension-points"></a>言語サービスとエディターの拡張ポイント
 エディターでは、ほとんどの言語サービスの機能を含む、Managed Extensibility Framework (MEF) コンポーネント パーツとして拡張する拡張ポイントを提供します。 これらには、主要な拡張機能ポイントのカテゴリです。
 
--   コンテンツの種類
+- コンテンツの種類
 
--   分類の種類と分類の形式
+- 分類の種類と分類の形式
 
--   余白とスクロール バー
+- 余白とスクロール バー
 
--   Tags
+- Tags
 
--   修飾
+- 修飾
 
--   マウスのプロセッサ
+- マウスのプロセッサ
 
--   ハンドラーを削除します。
+- ハンドラーを削除します。
 
--   オプション
+- オプション
 
--   IntelliSense
+- IntelliSense
 
 ## <a name="extend-content-types"></a>コンテンツの種類を拡張します。
  コンテンツの種類は、たとえば、エディターによって処理されるテキスト、"text"、"code"または"CSharp"の種類の定義です。 型の変数を宣言することで新しいコンテンツ タイプを定義する<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>新しいコンテンツ タイプに一意の名前を提供します。 エディターを使用して、コンテンツの種類を登録するには、次の属性とエクスポートします。
@@ -400,25 +400,25 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: このドロップ ハンドラーの有効なテキスト形式。 次の形式は、最上位から最下位までの優先順位で処理されます。
 
-  1.  任意のカスタム書式指定
+  1. 任意のカスタム書式指定
 
-  2.  FileDrop
+  2. FileDrop
 
-  3.  EnhancedMetafile
+  3. EnhancedMetafile
 
-  4.  Waveaudio で
+  4. Waveaudio で
 
-  5.  Riff
+  5. Riff
 
-  6.  差分
+  6. 差分
 
-  7.  ロケール
+  7. ロケール
 
-  8.  [パレット]
+  8. [パレット]
 
   9. PenData
 
-  10. シリアル化可能です
+  10. Serializable
 
   11. シンボリック リンク
 
@@ -498,39 +498,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implement-an-intellisense-source"></a>IntelliSense、ソースを実装します。
  ソースをカスタマイズするには、次のソース インターフェイスの 1 つ (または複数) を実装する必要があります。
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
 
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 非推奨の好評だった<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>します。
 
  さらに、同じ種類のプロバイダーを実装する必要があります。
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
 
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 非推奨の好評だった<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>します。
 
  次の属性とプロバイダーをエクスポートする必要があります。
 
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: ソースの名前。
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: ソースの名前。
 
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: ソースが適用されます (たとえば、"text"または「コード」) のコンテンツの種類。
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: ソースが適用されます (たとえば、"text"または「コード」) のコンテンツの種類。
 
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: (その他のソース) に関して、ソースを表示する順序。
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: (その他のソース) に関して、ソースを表示する順序。
 
--   次の例では、入力候補のソース プロバイダーでエクスポート属性を示します。
+- 次の例では、入力候補のソース プロバイダーでエクスポート属性を示します。
 
 ```
 Export(typeof(ICompletionSourceProvider))]

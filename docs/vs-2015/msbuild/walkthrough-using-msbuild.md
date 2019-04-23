@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082803"
 ---
 # <a name="walkthrough-using-msbuild"></a>チュートリアル: MSBuild の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ MSBuild は Microsoft および Visual Studio のビルド プラットフォー
   
 #### <a name="to-create-a-project-file"></a>プロジェクト ファイルを作成するには  
   
-1.  Visual Studio を開きます。  
+1. Visual Studio を開きます。  
   
-2.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
+2. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
-3.  **[新しいプロジェクト]** ダイアログ ボックスで、プロジェクトの種類として Visual C# を選択し、**[Windows フォーム アプリケーション]** テンプレートをクリックします。 **[名前]** ボックスに「 `BuildApp`」と入力します。 **[場所]** ボックスにソリューションの場所を入力します (「`D:\`」など)。 それ以外は、既定値をそのまま使用します (**[ソリューションのディレクトリを作成]** はオン、**[ソース管理に追加]** はオフ、**[ソリューション名]** は `BuildApp`)。  
+3. **[新しいプロジェクト]** ダイアログ ボックスで、プロジェクトの種類として Visual C# を選択し、**[Windows フォーム アプリケーション]** テンプレートをクリックします。 **[名前]** ボックスに「 `BuildApp`」と入力します。 **[場所]** ボックスにソリューションの場所を入力します (「`D:\`」など)。 それ以外は、既定値をそのまま使用します (**[ソリューションのディレクトリを作成]** はオン、**[ソース管理に追加]** はオフ、**[ソリューション名]** は `BuildApp`)。  
   
      **[OK]** をクリックして、プロジェクト ファイルを作成します。  
   
@@ -49,13 +49,13 @@ MSBuild は Microsoft および Visual Studio のビルド プラットフォー
   
 #### <a name="to-examine-the-project-file"></a>プロジェクト ファイルを確認するには  
   
-1.  **ソリューション エクスプローラー**で、BuildApp というプロジェクト ノードをクリックします。  
+1. **ソリューション エクスプローラー**で、BuildApp というプロジェクト ノードをクリックします。  
   
-2.  **プロパティ** ブラウザーで、**"プロジェクト ファイル"** プロパティが "BuildApp.csproj" になっていることを確認します。 プロジェクト ファイルはすべて、名前に "proj" というサフィックスが付いています。 Visual Basic プロジェクトを作成した場合は、プロジェクト ファイルの名前が "BuildApp.vbproj" になります。  
+2. **プロパティ** ブラウザーで、**"プロジェクト ファイル"** プロパティが "BuildApp.csproj" になっていることを確認します。 プロジェクト ファイルはすべて、名前に "proj" というサフィックスが付いています。 Visual Basic プロジェクトを作成した場合は、プロジェクト ファイルの名前が "BuildApp.vbproj" になります。  
   
-3.  プロジェクト ノードを右クリックし、**[プロジェクトのアンロード]** をクリックします。  
+3. プロジェクト ノードを右クリックし、**[プロジェクトのアンロード]** をクリックします。  
   
-4.  プロジェクト ノードを再度右クリックし、**[BuildApp.csproj の編集]** をクリックします。  
+4. プロジェクト ノードを再度右クリックし、**[BuildApp.csproj の編集]** をクリックします。  
   
      コード エディターにプロジェクト ファイルが表示されます。  
   
@@ -136,17 +136,17 @@ MSBuild は Microsoft および Visual Studio のビルド プラットフォー
   
 #### <a name="to-build-the-target"></a>ターゲットをビルドするには  
   
-1.  **[スタート]** ボタンをクリックし、**[すべてのプログラム]** をクリックします。 **[Visual Studio Tools]** フォルダーで **[Visual Studio コマンド プロンプト]** をクリックします。  
+1. **[スタート]** ボタンをクリックし、**[すべてのプログラム]** をクリックします。 **[Visual Studio Tools]** フォルダーで **[Visual Studio コマンド プロンプト]** をクリックします。  
   
-2.  コマンド ウィンドウで、プロジェクト ファイルを含むフォルダー (この場合は D:\BuildApp\BuildApp) に移動します。  
+2. コマンド ウィンドウで、プロジェクト ファイルを含むフォルダー (この場合は D:\BuildApp\BuildApp) に移動します。  
   
-3.  コマンド ライン スイッチ /t:HelloWorld を使用して msbuild を実行します。 HelloWorld ターゲットが選択されてビルドされます。  
+3. コマンド ライン スイッチ /t:HelloWorld を使用して msbuild を実行します。 HelloWorld ターゲットが選択されてビルドされます。  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  **コマンド ウィンドウ**で出力を確認します。 "Hello" と "World" の 2 つの行が表示されます。  
+4. **コマンド ウィンドウ**で出力を確認します。 "Hello" と "World" の 2 つの行が表示されます。  
   
     ```  
     Hello  
@@ -202,7 +202,7 @@ $(PropertyName)
   
 #### <a name="to-examine-a-property-value"></a>プロパティ値を確認するには  
   
-1.  コード エディターで、HelloWorld ターゲットを次のコードに置き換えます。  
+1. コード エディターで、HelloWorld ターゲットを次のコードに置き換えます。  
   
     ```  
     <Target Name="HelloWorld">  
@@ -211,15 +211,15 @@ $(PropertyName)
     </Target>  
     ```  
   
-2.  プロジェクト ファイルを保存します。  
+2. プロジェクト ファイルを保存します。  
   
-3.  **コマンド ウィンドウ**で、次の行を入力して実行します。  
+3. **コマンド ウィンドウ**で、次の行を入力して実行します。  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  出力を調べます。 次の 2 つの行が表示されます (.NET Framework のバージョンが異なる場合もあります)。  
+4. 出力を調べます。 次の 2 つの行が表示されます (.NET Framework のバージョンが異なる場合もあります)。  
   
     ```  
     Configuration is Debug  
@@ -366,19 +366,19 @@ $(PropertyName)
   
 #### <a name="to-display-item-type-values-one-per-line"></a>項目の種類の値を 1 行に 1 つずつ表示するには  
   
-1.  コード エディターで、Message タスクを次の行に置き換えます。  
+1. コード エディターで、Message タスクを次の行に置き換えます。  
   
     ```  
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />  
     ```  
   
-2.  プロジェクト ファイルを保存します。  
+2. プロジェクト ファイルを保存します。  
   
-3.  **コマンド ウィンドウ**で、次の行を入力して実行します。  
+3. **コマンド ウィンドウ**で、次の行を入力して実行します。  
   
      `msbuild buildapp.csproj /t:HelloWorld`  
   
-4.  出力を調べます。 次の行が表示されます。  
+4. 出力を調べます。 次の行が表示されます。  
   
     ```  
     Compile item type contains Form1.cs  
@@ -436,13 +436,13 @@ $(PropertyName)
   
 ##### <a name="to-include-and-exclude-items"></a>項目を追加および除外するには  
   
-1.  コード エディターで、Message タスクを次の行に置き換えます。  
+1. コード エディターで、Message タスクを次の行に置き換えます。  
   
     ```  
     <Message Text="Compile item type contains @(XFiles)" />  
     ```  
   
-2.  Import 要素の直後に次の項目グループを追加します。  
+2. Import 要素の直後に次の項目グループを追加します。  
   
     ```  
     <ItemGroup>  
@@ -450,15 +450,15 @@ $(PropertyName)
     </ItemGroup>  
     ```  
   
-3.  プロジェクト ファイルを保存します。  
+3. プロジェクト ファイルを保存します。  
   
-4.  **コマンド ウィンドウ**で、次の行を入力して実行します。  
+4. **コマンド ウィンドウ**で、次の行を入力して実行します。  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-5.  出力を調べます。 次の行が表示されます。  
+5. 出力を調べます。 次の行が表示されます。  
   
     ```  
     Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  

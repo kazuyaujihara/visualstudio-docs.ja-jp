@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51f4aeef55d20a728567b50e67c2232a0a77b1e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a6f1ecd427b1c715649bc2118be5ab384a74c585
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084313"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>方法: SharePoint プロジェクトにプロパティを追加します。
   プロジェクトの拡張機能を使用すると、任意の SharePoint プロジェクトにプロパティを追加します。 プロパティを表示する、**プロパティ**ウィンドウで、プロジェクトを選択すると**ソリューション エクスプ ローラー**します。
@@ -28,11 +28,11 @@ ms.locfileid: "56646058"
 
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>SharePoint プロジェクトにプロパティを追加するには
 
-1.  SharePoint プロジェクトに追加するプロパティを表すパブリック プロパティを持つクラスを定義します。 複数のプロパティを追加する場合は、同じクラスまたは別のクラスですべてのプロパティを定義できます。
+1. SharePoint プロジェクトに追加するプロパティを表すパブリック プロパティを持つクラスを定義します。 複数のプロパティを追加する場合は、同じクラスまたは別のクラスですべてのプロパティを定義できます。
 
-2.  <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>のメソッド、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>実装、ハンドル、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>のイベント、 *projectService*パラメーター。
+2. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>のメソッド、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>実装、ハンドル、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>のイベント、 *projectService*パラメーター。
 
-3.  イベント ハンドラーで、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>イベント、プロパティ、クラスのインスタンスを追加、<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A>イベント引数のパラメーターのコレクション。
+3. イベント ハンドラーで、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>イベント、プロパティ、クラスのインスタンスを追加、<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A>イベント引数のパラメーターのコレクション。
 
 ## <a name="example"></a>例
  次のコード例では、SharePoint プロジェクトに 2 つのプロパティを追加する方法を示します。 1 つのプロパティが、プロジェクト ユーザー オプション ファイル内のデータを永続化 (、 *. csproj.user*ファイルまたは *. vbproj.user*ファイル)。 その他のプロパティは、プロジェクト ファイル内のデータを永続化 (*.csproj*ファイルまたは *.vbproj*ファイル)。
@@ -49,36 +49,36 @@ ms.locfileid: "56646058"
 
 - `CustomProjectFileProperty` 使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>その値をプロジェクト ファイルに保存するメソッド。
 
-  これらのファイルでデータの永続化の詳細については、[SharePoint プロジェクト システムの拡張機能でデータを保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)を参照してください。
+  これらのファイルでデータの永続化の詳細については、次を参照してください。 [SharePoint プロジェクト システムの拡張機能でデータを保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)します。
 
 ### <a name="specify-the-behavior-of-custom-properties"></a>カスタム プロパティの動作を指定します。
  カスタム プロパティの表示し、動作を定義することができます、**プロパティ**ウィンドウからの属性を適用することで、<xref:System.ComponentModel>プロパティ定義に名前空間。 次の属性には、多くのシナリオがあります。
 
--   <xref:System.ComponentModel.DisplayNameAttribute>:表示されるプロパティの名前を指定します、**プロパティ**ウィンドウ。
+- <xref:System.ComponentModel.DisplayNameAttribute>:表示されるプロパティの名前を指定します、**プロパティ**ウィンドウ。
 
--   <xref:System.ComponentModel.DescriptionAttribute>:下に表示される説明文字列を指定します、**プロパティ**プロパティが選択されている場合は、ウィンドウ。
+- <xref:System.ComponentModel.DescriptionAttribute>:下に表示される説明文字列を指定します、**プロパティ**プロパティが選択されている場合は、ウィンドウ。
 
--   <xref:System.ComponentModel.DefaultValueAttribute>:プロパティの既定値を指定します。
+- <xref:System.ComponentModel.DefaultValueAttribute>:プロパティの既定値を指定します。
 
--   <xref:System.ComponentModel.TypeConverterAttribute>:カスタムの変換との間に表示される文字列を指定します、**プロパティ**ウィンドウと非文字列プロパティの値。
+- <xref:System.ComponentModel.TypeConverterAttribute>:カスタムの変換との間に表示される文字列を指定します、**プロパティ**ウィンドウと非文字列プロパティの値。
 
--   <xref:System.ComponentModel.EditorAttribute>:使用して、プロパティを変更するカスタム エディターを指定します。
+- <xref:System.ComponentModel.EditorAttribute>:使用して、プロパティを変更するカスタム エディターを指定します。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のアセンブリへの参照が必要です。
 
--   Microsoft.VisualStudio.SharePoint
--
--   Microsoft.VisualStudio.Shell
--
--   Microsoft.VisualStudio.Shell.Interop
--
--   Microsoft.VisualStudio.Shell.Interop.8.0
--
--   System.ComponentModel.Composition
+- Microsoft.VisualStudio.SharePoint
+
+- Microsoft.VisualStudio.Shell
+
+- Microsoft.VisualStudio.Shell.Interop
+
+- Microsoft.VisualStudio.Shell.Interop.8.0
+
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>拡張機能をデプロイします。
- 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、[Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)を参照してください。
+ 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint プロジェクトを拡張します。](../sharepoint/extending-sharepoint-projects.md)

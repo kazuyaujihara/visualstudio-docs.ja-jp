@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219d70f1a722a19017399ab851aa2e69c44d2b28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663363"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082946"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>XAML デザイナー でコントロールを挿入し、そのビヘイビアーを変更する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "59663363"
   
  **このトピックの内容**  
   
--   [アートボードにコントロールを追加する](#Insert)  
+- [アートボードにコントロールを追加する](#Insert)  
   
--   [コントロールの操作を行う](#Modify)  
+- [コントロールの操作を行う](#Modify)  
   
-##  <a name="Insert"></a> アートボードにコントロールを追加する  
+## <a name="Insert"></a> アートボードにコントロールを追加する  
  コントロールは、 **[アセット]** パネルから **アートボード**にドラッグし、 **[プロパティ]** ウィンドウで修正できます。  
   
  ![Blend &#45; Assets &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
@@ -53,7 +53,7 @@ ms.locfileid: "59663363"
   
  コントロールを作成するには、オブジェクトを選択します。 **[ツール]** メニューで **[コントロールの作成]** をクリックします。  
   
-##  <a name="Modify"></a> コントロールの操作を行う  
+## <a name="Modify"></a> コントロールの操作を行う  
  コントロールは、ユーザーが操作したときにアクションを実行します。 たとえば、アニメーションの開始、データ ソースの更新、またはビデオの再生を行えます。  
   
  *トリガー*、 *ビヘイビアー*、 *イベント* を使用して、コントロールの操作を実行します。  

@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b852a83c16920e3e8a4b036a1b7bf37e63fe9cfb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 768bfc5de11f8b7fa6c3cd8988dbcc70633dde89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082831"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>方法: [ClickOnce セキュリティ設定を有効にする]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58977321"
   
 ### <a name="to-enable-clickonce-security-settings"></a>ClickOnce のセキュリティ設定を有効にするには  
   
-1.  **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
+1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
   
-2.  **[セキュリティ]** タブをクリックします。  
+2. **[セキュリティ]** タブをクリックします。  
   
-3.  **[ClickOnce セキュリティ設定を有効にする]** チェック ボックスをオンにします。  
+3. **[ClickOnce セキュリティ設定を有効にする]** チェック ボックスをオンにします。  
   
      [セキュリティ] ページで、アプリケーションのセキュリティ設定をカスタマイズできます。  
   
@@ -48,11 +48,11 @@ ms.locfileid: "58977321"
   
 ### <a name="to-disable-clickonce-security-settings"></a>ClickOnce のセキュリティ設定を無効にするには  
   
-1.  **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
+1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
   
-2.  **[セキュリティ]** タブをクリックします。  
+2. **[セキュリティ]** タブをクリックします。  
   
-3.  クリア、 **ClickOnce セキュリティ設定を有効にする**チェック ボックスをオンします。  
+3. クリア、 **ClickOnce セキュリティ設定を有効にする**チェック ボックスをオンします。  
   
      アプリケーションは完全な信頼のセキュリティ設定で実行します。すべての設定、**セキュリティ**ページは無視されます。  
   
