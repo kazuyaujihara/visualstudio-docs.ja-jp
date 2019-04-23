@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f4f410656e49b1a76e74898940cbd32314fc8b4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661335"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075364"
 ---
 # <a name="how-to-clean-a-build"></a>方法 : ビルドをクリーンする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "59661335"
   
 #### <a name="to-create-a-directory-for-output-items"></a>出力項目のディレクトリを作成するには  
   
-1.  `Property` 要素を利用し、ディレクトリの場所と名前を定義します。 たとえば、プロジェクトおよびソースファイルを含むディレクトリに `BuiltApp` という名前のディレクトリを作成します。  
+1. `Property` 要素を利用し、ディレクトリの場所と名前を定義します。 たとえば、プロジェクトおよびソースファイルを含むディレクトリに `BuiltApp` という名前のディレクトリを作成します。  
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  ディレクトリが存在しない場合、[MakeDir](../msbuild/makedir-task.md) タスクを理使用してディレクトリを作成します。 次に例を示します。  
+2. ディレクトリが存在しない場合、[MakeDir](../msbuild/makedir-task.md) タスクを理使用してディレクトリを作成します。 次に例を示します。  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -46,7 +46,7 @@ ms.locfileid: "59661335"
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>ディレクトリとそのディレクトリに含まれるすべてのファイルを削除するには  
   
--   `RemoveDir` タスクを利用してディレクトリを削除します。 次に例を示します。  
+- `RemoveDir` タスクを利用してディレクトリを削除します。 次に例を示します。  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   

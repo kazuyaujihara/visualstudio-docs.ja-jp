@@ -11,12 +11,12 @@ ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5a7602a152054587fa450beae56ad6cbe2c72241
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 70b94eeb48f6b099b3183eb6cbee5e4846d0d92b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075455"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Visual Studio の他の部分の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "58974265"
 ## <a name="extending-the-toolbox"></a>ツールボックスの拡張
  ツールボックスの機能を使用する方法と、ツールボックスに新しいコントロールおよびその他の項目を追加する方法について説明します。
 
--   [WPF ツールボックス コントロールの作成](../extensibility/creating-a-wpf-toolbox-control.md)
+- [WPF ツールボックス コントロールの作成](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [Windows フォーム ツールボックス コントロールの作成](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Windows フォーム ツールボックス コントロールの作成](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extending-the-status-bar"></a>ステータス バーの拡張
  ステータス バーと、進行状況バーを読み書きする方法と、アニメーションやその他の UI を提供する方法について説明します。[ステータス バーの拡張](../extensibility/extending-the-status-bar.md)します。

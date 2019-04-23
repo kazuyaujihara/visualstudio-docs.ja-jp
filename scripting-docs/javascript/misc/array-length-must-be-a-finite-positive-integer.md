@@ -14,19 +14,19 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 691f7aff61a8a2bfae6444540afe9a28a200278d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073983"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>配列の長さは、有限の正の整数でなければなりません。
 呼び出している、**配列**(0 と正の整数のセットの値は整数で構成されます) の整数でない引数を持つコンス トラクター。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   正の整数を使用して、新しいを作成する場合にのみ`Array`オブジェクト。 整数でない 1 つの要素の配列を作成する場合は、2 段階のプロセスで行うこと。 1 つの要素を持つ配列を作成し、(array[0]) の最初の要素に値を配置します。 このエラーを生成する例を次に示します。  
+- 正の整数を使用して、新しいを作成する場合にのみ`Array`オブジェクト。 整数でない 1 つの要素の配列を作成する場合は、2 段階のプロセスで行うこと。 1 つの要素を持つ配列を作成し、(array[0]) の最初の要素に値を配置します。 このエラーを生成する例を次に示します。  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  

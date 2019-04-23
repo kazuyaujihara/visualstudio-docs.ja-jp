@@ -1,5 +1,5 @@
 ---
-title: '方法: ClickOnce の発行設定のバージョン |Microsoft Docs'
+title: '方法: 発行バージョンを設定、ClickOnce |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea53e5e50aebc7c8ad201f6dae1003350f9fa4e2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bc57639c988b33f4d1b5844151e983593bf52ddd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074701"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>方法: ClickOnce の発行バージョンを設定する
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version`プロパティが公開するアプリケーションは更新プログラムとして扱うかどうかを決定します。 各時点のバージョンがインクリメントされます、アプリケーションは、更新プログラムとして発行されます。
@@ -29,15 +29,15 @@ ms.locfileid: "56633448"
  `Publish Version`でプロパティを設定することができます、**発行**のページ、**プロジェクト デザイナー**します。
 
 > [!NOTE]
->  自動的にインクリメントするプロジェクトのオプションがある、`Publish Version`プロパティごとにアプリケーションを発行する。 このオプションは既定で有効にします。 詳細については、次を参照してください。[方法: ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)します。
+>  自動的にインクリメントするプロジェクトのオプションがある、`Publish Version`プロパティごとにアプリケーションを発行する。 このオプションは既定で有効にします。 詳細については、「[方法 :ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)」を参照してください。
 
 ### <a name="to-change-the-publish-version"></a>発行バージョンを変更するには
 
-1.  **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-2.  **[発行]** タブをクリックします。
+2. **発行**タブをクリックします。
 
-3.  **発行バージョン**フィールドに、インクリメント、**メジャー**、**マイナー**、**ビルド**、または**リビジョン**バージョン数値。
+3. **発行バージョン**フィールドに、インクリメント、**メジャー**、**マイナー**、**ビルド**、または**リビジョン**バージョン数値。
 
     > [!NOTE]
     >  バージョン番号がデクリメントしないでください。そうする予期しない更新プログラムの動作と原因でした。

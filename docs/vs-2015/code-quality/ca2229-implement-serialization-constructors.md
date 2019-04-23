@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee283e2e25958d497e00dad245bb69841196c65c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073165"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229:シリアル化コンストラクターを実装します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58962939"
 ## <a name="cause"></a>原因
  型が実装、<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>インターフェイス、デリゲートまたはインターフェイスではないと、次の条件のいずれかが true:
 
--   型には、取得するコンス トラクターはありません、<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>オブジェクトと<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>オブジェクト (シリアル化コンス トラクターの署名)。
+- 型には、取得するコンス トラクターはありません、<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>オブジェクトと<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>オブジェクト (シリアル化コンス トラクターの署名)。
 
--   型が封印されていないと、そのシリアル化コンス トラクターのアクセス修飾子が保護された (ファミリ) ではありません。
+- 型が封印されていないと、そのシリアル化コンス トラクターのアクセス修飾子が保護された (ファミリ) ではありません。
 
--   型がシールされている、シリアル化コンス トラクターのアクセス修飾子がプライベートではありません。
+- 型がシールされている、シリアル化コンス トラクターのアクセス修飾子がプライベートではありません。
 
 ## <a name="rule-description"></a>規則の説明
  このルールは、カスタムのシリアル化をサポートする型に関連します。 型は、実装している場合、カスタムのシリアル化をサポートしている、<xref:System.Runtime.Serialization.ISerializable>インターフェイス。 シリアル化コンス トラクターは、逆シリアル化、またはを使用してシリアル化されたオブジェクトを再作成に必要な<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>メソッド。

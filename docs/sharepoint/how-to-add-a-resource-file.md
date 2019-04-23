@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fd519b396f5120b7b0acca8d2e6144e363ab1f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c806e2d84973c445c9ab8a6aedb7c4f1fb28354
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075546"
 ---
 # <a name="how-to-add-a-resource-file"></a>方法: リソース ファイルを追加します。
-  リソース ファイルを追加するためのコマンドは、ソリューション エクスプ ローラー内のノードの機能、ソリューション ノードのショートカット メニューでです。 詳細については、[をローカライズする SharePoint ソリューション](../sharepoint/localizing-sharepoint-solutions.md)を参照してください。
+  リソース ファイルを追加するためのコマンドは、ソリューション エクスプ ローラー内のノードの機能、ソリューション ノードのショートカット メニューでです。 詳細については、次を参照してください。[をローカライズする SharePoint ソリューション](../sharepoint/localizing-sharepoint-solutions.md)します。
 
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>SharePoint ソリューションにグローバル リソース ファイルを追加するには
 
@@ -42,13 +42,13 @@ ms.locfileid: "56633058"
 
 ### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>フィーチャー リソース ファイルを SharePoint フィーチャーに追加するには
 
-1.  SharePoint ソリューションがで開いていない場合[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ソリューションを開きます。
+1. SharePoint ソリューションがで開いていない場合[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ソリューションを開きます。
 
-2.  **ソリューション エクスプ ローラー**、ショートカット メニューを開き、機能の名前、**機能**ノードを選び、**フィーチャー リソースの追加**します。
+2. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、機能の名前、**機能**ノードを選び、**フィーチャー リソースの追加**します。
 
      この手順では、リソース ファイルを追加の形式で機能する_ResourceFileName_**.**_カルチャ_**.resx**、次のように、 *Feature1.en US.resx*します。
 
-3.  ときに、**リソース エディター**で開きます[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、リソース ファイルにリソースを追加します。
+3. ときに、**リソース エディター**で開きます[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、リソース ファイルにリソースを追加します。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)

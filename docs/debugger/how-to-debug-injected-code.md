@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ecb4d69db653c24ff13c0c95059d431424e4fe9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 35d2343343bf554df7592c8616e7697d88665baf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077889"
 ---
 # <a name="how-to-debug-injected-code"></a>方法: 挿入されたコードをデバッグする
 
@@ -46,25 +46,25 @@ ms.locfileid: "55069122"
 
 ## <a name="to-turn-on-source-annotation"></a>ソースの注釈を表示するには
 
--   **[逆アセンブリ]** ウィンドウを右クリックし、ショートカット メニューの **[ソース コードの表示]** を選びます。
+- **[逆アセンブリ]** ウィンドウを右クリックし、ショートカット メニューの **[ソース コードの表示]** を選びます。
 
      ソース ウィンドウ内の属性の位置がわかっている場合は、ショートカット メニューを使用して、その属性が挿入したコードを **[逆アセンブリ]** ウィンドウに表示できます。
 
 ## <a name="to-view-injected-code"></a>挿入されたコードを表示するには
 
-1.  デバッガーは中断モードである必要があります。
+1. デバッガーは中断モードである必要があります。
 
-2.  ソース コード ウィンドウで、挿入されたコードを表示する対象の属性の直前にカーソルを置きます。
+2. ソース コード ウィンドウで、挿入されたコードを表示する対象の属性の直前にカーソルを置きます。
 
-3.  右クリックし、ショートカット メニューの **[逆アセンブリを表示]** を選択します。
+3. 右クリックし、ショートカット メニューの **[逆アセンブリを表示]** を選択します。
 
      属性の位置が現在の実行ポイントに近い場合は、**[デバッグ]** メニューの **[逆アセンブリ]** ウィンドウを選択できます。
 
 ## <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>現在の実行ポイントにあるコードを表示するには
 
-1.  デバッガーは中断モードである必要があります。
+1. デバッガーは中断モードである必要があります。
 
-2.  **[デバッグ]** メニューの **[Windows]** を選び、**[逆アセンブリ]** をクリックします。
+2. **[デバッグ]** メニューの **[Windows]** を選び、**[逆アセンブリ]** をクリックします。
 
 ## <a name="see-also"></a>関連項目
 

@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074884"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>オブジェクトからデータベースにデータを保存する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ TableAdapter の DBDirect メソッドのいずれかに、オブジェクトか
   
 ### <a name="to-save-new-records-from-an-object-to-a-database"></a>オブジェクトから新しいレコードをデータベースに保存するには  
   
--   値を渡すことによって、レコードを作成、`TableAdapter.Insert`メソッド。  
+- 値を渡すことによって、レコードを作成、`TableAdapter.Insert`メソッド。  
   
      次の例は、新しい顧客レコードを作成、`Customers`テーブル内の値を渡すことによって、`currentCustomer`オブジェクトを`TableAdapter.Insert`メソッド。  
   
@@ -54,7 +54,7 @@ TableAdapter の DBDirect メソッドのいずれかに、オブジェクトか
   
 ### <a name="to-update-existing-records-from-an-object-to-a-database"></a>オブジェクトからデータベースへの既存のレコードを更新するには  
   
--   呼び出すことによって、レコードの変更、`TableAdapter.Update`メソッドをレコードを更新する新しい値を渡すと、レコードを検索する元の値を渡します。  
+- 呼び出すことによって、レコードの変更、`TableAdapter.Update`メソッドをレコードを更新する新しい値を渡すと、レコードを検索する元の値を渡します。  
   
     > [!NOTE]
     >  オブジェクトに渡すために、元の値を維持するために必要のある、`Update`メソッド。 この例でのプロパティを使用して、`orig`元の値を格納するプレフィックス。  
@@ -66,7 +66,7 @@ TableAdapter の DBDirect メソッドのいずれかに、オブジェクトか
   
 ### <a name="to-delete-existing-records-from-a-database"></a>既存のレコードをデータベースから削除するには  
   
--   呼び出すことにより、レコードを削除、`TableAdapter.Delete`メソッドとレコードを検索する元の値を渡すことです。  
+- 呼び出すことにより、レコードを削除、`TableAdapter.Delete`メソッドとレコードを検索する元の値を渡すことです。  
   
     > [!NOTE]
     >  オブジェクトに渡すために、元の値を維持するために必要のある、`Delete`メソッド。 この例でのプロパティを使用して、`orig`元の値を格納するプレフィックス。  

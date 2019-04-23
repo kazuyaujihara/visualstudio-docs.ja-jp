@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c438514263d9934f70927b46c8d1c9130746a06f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 77b50f5511f76cceda1827d2a36db7514daa6bea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962664"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076017"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002:ジェネリック リストを公開しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58962664"
 ## <a name="rule-description"></a>規則の説明
  <xref:System.Collections.Generic.List%601?displayProperty=fullName> パフォーマンスを継承しないように設計されたジェネリック コレクションであります。 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 継承されたクラスの動作を変更するが簡単にする仮想メンバーは含まれません。 次のジェネリック コレクションは、継承を目的しの代わりに公開する必要があります<xref:System.Collections.Generic.List%601?displayProperty=fullName>します。
 
--   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  このルールの違反を修正するには、変更、<xref:System.Collections.Generic.List%601?displayProperty=fullName>を継承するために設計されたジェネリック コレクションの 1 つの型。

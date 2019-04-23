@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7e1c9c4374e35dd484d478118fe714ff415f93e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076420"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>方法: 最初にビルドするターゲットを指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59654881"
   
 #### <a name="to-specify-more-than-one-initial-target"></a>2 つ以上の初期ターゲットを指定するには  
   
--   `Project` 要素の `InitialTargets` 属性で、セミコロンで区切られた初期ターゲットを一覧表示します。 たとえば、`Clean` ターゲットを実行してから `Compile` ターゲットを実行する場合は、次を入力します。  
+- `Project` 要素の `InitialTargets` 属性で、セミコロンで区切られた初期ターゲットを一覧表示します。 たとえば、`Clean` ターゲットを実行してから `Compile` ターゲットを実行する場合は、次を入力します。  
   
      `<Project InitialTargets="Clean;Compile">`  
   
@@ -55,7 +55,7 @@ ms.locfileid: "59654881"
   
 #### <a name="to-specify-more-than-one-default-target"></a>2 つ以上の既定のターゲットを指定するには  
   
--   `Project` 要素の `DefaultTargets` 属性で、セミコロンで区切られた既定のターゲットを一覧表示します。 たとえば、`Clean` ターゲットを実行してから `Compile` ターゲットを実行する場合は、次を入力します。  
+- `Project` 要素の `DefaultTargets` 属性で、セミコロンで区切られた既定のターゲットを一覧表示します。 たとえば、`Clean` ターゲットを実行してから `Compile` ターゲットを実行する場合は、次を入力します。  
   
      `<Project DefaultTargets="Clean;Compile">`  
   
@@ -64,13 +64,13 @@ ms.locfileid: "59654881"
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>最初に既定のターゲット以外のターゲットを使用する  
   
--   **/target** コマンド ライン スイッチを使用してターゲットを最初のターゲットとして指定します。 例えば:  
+- **/target** コマンド ライン スイッチを使用してターゲットを最初のターゲットとして指定します。 例:  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>最初に既定のターゲット以外の複数のターゲットを使用するには  
   
--   **/target** コマンド ライン スイッチを使用して、セミコロンまたはコンマで区切られたターゲットを一覧表示します。 次に例を示します。  
+- **/target** コマンド ライン スイッチを使用して、セミコロンまたはコンマで区切られたターゲットを一覧表示します。 次に例を示します。  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   

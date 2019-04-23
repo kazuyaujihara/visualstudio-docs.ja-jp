@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be57c5d8a298f37f9cffc7cc4b363651efbc9c2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3e44a2c9b5fab120432f412e7c70f35c8e1ecafd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077473"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>方法: DataContext メソッドの戻り値の型を変更する (O/R デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ ms.locfileid: "59665650"
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>DataContext メソッドの戻り値の型を、自動生成型からエンティティ クラスに変更するには  
   
-1.  メソッド ペインで <xref:System.Data.Linq.DataContext> メソッドを選択します。  
+1. メソッド ペインで <xref:System.Data.Linq.DataContext> メソッドを選択します。  
   
-2.  **[プロパティ]** ウィンドウの **[戻り値の型]** を選択し、**[戻り値の型]** リストで使用可能なエンティティ クラスを選択します。 一覧で目的のエンティティ クラスでない場合にそれを追加または作成、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]一覧に追加します。  
+2. **[プロパティ]** ウィンドウの **[戻り値の型]** を選択し、**[戻り値の型]** リストで使用可能なエンティティ クラスを選択します。 一覧で目的のエンティティ クラスでない場合にそれを追加または作成、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]一覧に追加します。  
   
-3.  .dbml ファイルを保存します。  
+3. .dbml ファイルを保存します。  
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>DataContext メソッドの戻り値の型を、エンティティ クラスから自動生成型に変更するには  
   
-1.  メソッド ペインで <xref:System.Data.Linq.DataContext> メソッドを選択し、削除します。  
+1. メソッド ペインで <xref:System.Data.Linq.DataContext> メソッドを選択し、削除します。  
   
-2.  データベース オブジェクトをドラッグして**サーバー エクスプ ローラー**/**データベース エクスプ ローラー** O/R デザイナーの空の領域にします。  
+2. データベース オブジェクトをドラッグして**サーバー エクスプ ローラー**/**データベース エクスプ ローラー** O/R デザイナーの空の領域にします。  
   
-3.  .dbml ファイルを保存します。  
+3. .dbml ファイルを保存します。  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

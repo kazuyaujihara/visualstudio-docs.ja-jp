@@ -25,12 +25,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978218"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077499"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>方法: 逆アセンブル ウィンドウを使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ ms.locfileid: "58978218"
   
 ### <a name="to-display-the-disassembly-window"></a>[逆アセンブル] ウィンドウを表示するには  
   
--   **デバッグ** メニューの 選択**Windows**、 をクリック**逆アセンブル**します。  
+- **デバッグ** メニューの 選択**Windows**、 をクリック**逆アセンブル**します。  
   
      デバッガーは動作中であるか、中断モードである必要があります。  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>オプション情報の表示と非表示を切り替えるには  
   
--   右クリックし、**逆アセンブル**ウィンドウで、設定や、ショートカット メニューで目的のオプションをオフにします。  
+- 右クリックし、**逆アセンブル**ウィンドウで、設定や、ショートカット メニューで目的のオプションをオフにします。  
   
      左マージンの黄色の矢印は、現在の実行ポイントの位置を示します。 ネイティブ コードの場合、これは CPU のプログラム カウンターに対応します。 この位置は、プログラム内で次に実行される命令を示します。  
   

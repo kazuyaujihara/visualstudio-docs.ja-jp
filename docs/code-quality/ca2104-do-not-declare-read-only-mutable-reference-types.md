@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a033ed83d6d349ac3876a6f11a24570f3ff8f60c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077707"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104:読み取り専用の変更可能な参照型を宣言しません
 
@@ -35,7 +35,7 @@ ms.locfileid: "55945015"
 |互換性に影響する変更点|なし|
 
 > [!NOTE]
-> Ca 2104 のルールは廃止され、Visual Studio の将来のバージョンで削除される予定です。
+> Ca 2104 のルールは廃止され、Visual Studio の将来のバージョンで削除される予定です。 として実装しない、[アナライザー](roslyn-analyzers-overview.md)型の実際の不変性を判断するために必要な複雑な分析のためです。
 
 ## <a name="cause"></a>原因
 
@@ -45,7 +45,7 @@ ms.locfileid: "55945015"
 
 変更可能な型とは、インスタンス データを変更できる型です。 <xref:System.Text.StringBuilder?displayProperty=fullName>クラスは、変更可能な参照型の例を示します。 クラスのインスタンスの値を変更できるメンバーが含まれています。 変更不可の参照型の例は、<xref:System.String?displayProperty=fullName>クラス。 インスタンス化された後、その値は変化しません。
 
-読み取り専用修飾子 ([readonly](/dotnet/csharp/language-reference/keywords/readonly)でC#、 [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) Visual Basic でと[const](/cpp/cpp/const-cpp) C++ で) 参照型のフィールド (または C++ でのポインター) により、フィールドから参照型の別のインスタンスを置き換えられます。 ただし、修飾子は、参照型を変更できないよう、フィールドのインスタンス データを妨げません。
+読み取り専用修飾子 ([readonly](/dotnet/csharp/language-reference/keywords/readonly)でC#、 [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) Visual basic でと[const](/cpp/cpp/const-cpp) C++ で) 参照型のフィールド (または C++ でのポインター) により、フィールドから参照型の別のインスタンスを置き換えられます。 ただし、修飾子は、参照型を変更できないよう、フィールドのインスタンス データを妨げません。
 
 このルールが誤って表示の種類の違反は、実際には、変更できません。 その場合は、警告を抑制しても安全です。
 

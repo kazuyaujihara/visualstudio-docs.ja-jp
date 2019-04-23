@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74b3559849fe69da998f59c3caa6e38ff23b238b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9de3e8446250829d431dcbf33b14effd607ab545
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075773"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply テンプレート デザイナー
 **ReceiveAndSendReply**のペアを作成するテンプレートが使用される事前構成済み<xref:System.ServiceModel.Activities.Receive>と<xref:System.ServiceModel.Activities.SendReply>内のアクティビティを<xref:System.Activities.Statements.Sequence>要求/応答メッセージ交換の一部として関連付けられるアクティビティサーバー上のパターン。  
@@ -25,11 +25,11 @@ ms.locfileid: "59657520"
 ## <a name="the-receiveandsendreply-template"></a>ReceiveAndSendReply テンプレート  
  追加**ReceiveAndSendReply**テンプレートは次の 3 つ作成されるほか、<xref:System.ServiceModel.Activities.Receive>と<xref:System.ServiceModel.Activities.SendReply>でアクティビティを<xref:System.Activities.Statements.Sequence>アクティビティ。  
 
-1.  <xref:System.ServiceModel.Activities.Receive.OperationName%2A> アクティビティの <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> プロパティと <xref:System.ServiceModel.Activities.Receive> プロパティを構成する。  
+1. <xref:System.ServiceModel.Activities.Receive.OperationName%2A> アクティビティの <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> プロパティと <xref:System.ServiceModel.Activities.Receive> プロパティを構成する。  
 
-2.  <xref:System.ServiceModel.Activities.SendReply.Request%2A> アクティビティの <xref:System.ServiceModel.Activities.Receive> プロパティを <xref:System.ServiceModel.Activities.Send> アクティビティにバインドする。  
+2. <xref:System.ServiceModel.Activities.SendReply.Request%2A> アクティビティの <xref:System.ServiceModel.Activities.Receive> プロパティを <xref:System.ServiceModel.Activities.Send> アクティビティにバインドする。  
 
-3.  親アクティビティに、変数として <xref:System.ServiceModel.Activities.CorrelationHandle> を作成する。  
+3. 親アクティビティに、変数として <xref:System.ServiceModel.Activities.CorrelationHandle> を作成する。  
 
 ### <a name="using-the-receiveandsendreply-template-designer"></a>ReceiveAndSendReply テンプレート デザイナーの使用  
  **ReceiveAndSendReply**アクティビティ デザイナーが記載されて、**メッセージング**のカテゴリ、**ツールボックス**をクリックしてアクセスする、**ツールボックス** ] タブの [ [!INCLUDE[wfd2](../includes/wfd2-md.md)] (または、選択**ツールバー**から、**ビュー**メニューのまたは CTRL + ALT + X)。  

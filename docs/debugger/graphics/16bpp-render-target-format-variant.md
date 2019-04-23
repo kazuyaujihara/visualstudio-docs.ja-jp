@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fd601b48489e7334013e1e9438c1b6a580457d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698938"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075793"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp レンダリング ターゲット フォーマット バリアント
 すべてのレンダー ターゲットおよびバック バッファーに対して、ピクセル形式を DXGI_FORMAT_B5G6R5_UNORM に設定します。
@@ -45,14 +45,14 @@ ms.locfileid: "56698938"
 
    並べて表示されるレンダリング手法を使用する GPU アーキテクチャでは、16 bpp フレーム バッファーの形式を使用して大幅なパフォーマンス上の利点を確認できます。 この機能強化は、フレームバッファーのより大きい領域が各タイルのフレームのローカル バッファー キャッシュ内に収まるのでです。 タイル型のレンダリング アーキテクチャは、携帯電話機やタブレット コンピューターの GPU で使用されています。これらの市場以外で使用されることはほとんどありません。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  レンダー ターゲット形式は、レンダー ターゲットを作成する `ID3D11Device::CreateTexture2D` への呼び出しのたびに、DXGI_FORMAT_B5G6R5_UNORM にリセットされます。 具体的には、pDesc で渡される D3D11_TEXTURE2D_DESC オブジェクトがレンダー ターゲットを記述するときに、この形式はオーバーライドされます。つまり、
 
--   BindFlags メンバーは、D3D11_BIND_REDNER_TARGET フラグを設定します。
+- BindFlags メンバーは、D3D11_BIND_REDNER_TARGET フラグを設定します。
 
--   BindFlags メンバーは D3D11_BIND_DEPTH_STENCIL フラグを解除します。
+- BindFlags メンバーは D3D11_BIND_DEPTH_STENCIL フラグを解除します。
 
--   Usage メンバーは D3D11_USAGE_DEFAULT に設定されます。
+- Usage メンバーは D3D11_USAGE_DEFAULT に設定されます。
 
 ## <a name="restrictions-and-limitations"></a>制約と制限
  B5G6R5 形式ではアルファ チャネルを持たないため、アルファ コンテンツはこのバリアントでは保存されません。 アプリケーションのレンダリングで、レンダー ターゲットのアルファ チャネルが必要な場合、B5G6R5 形式に切り替えることはできません。

@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 430ee5d0b36196c85d7c81b63503bfcc471d7664
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 00e1e849ba12303041d23b89e65230c2a5aafc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075106"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>方法: レジスタ値を編集 (C#、C++、Visual Basic、 F#)
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>方法: レジスタ値を編集 (C#、 C++、Visual Basic、 F#)
 
 [レジスタ] ウィンドウは、**[オプション]** ダイアログ ボックス、**[デバッグ]** ノードで、アドレスレベルのデバッグが有効になっている場合にのみ、使用できます。
 
 ### <a name="to-change-the-value-of-a-register"></a>レジスタ値を変更するには
 
-1.  **[レジスタ]** ウィンドウで、Tab キーまたはマウスを使用して、変更する値にカーソルを置きます。 入力するときは、上書きする値の直前の位置にカーソルを置く必要があります。
+1. **[レジスタ]** ウィンドウで、Tab キーまたはマウスを使用して、変更する値にカーソルを置きます。 入力するときは、上書きする値の直前の位置にカーソルを置く必要があります。
 
-2.  新しい値を入力します。
+2. 新しい値を入力します。
 
     > [!CAUTION]
     >  レジスタ値を変更すると (特に EIP レジスタと EBP レジスタの場合は)、プログラムの実行に影響する場合があります。

@@ -10,12 +10,12 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 182fc9a8ca55dfe4fc54d7e40c8c88f5b1c6c77d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: beae9d0526cb9f2f294f2267a8da52d3ce3d8c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076616"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +27,23 @@ ms.locfileid: "58976389"
   
 ## <a name="creating-a-mef-project"></a>MEF プロジェクトを作成します。  
   
-1.  C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual C#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `ContentTypeTest`の名前を指定します。  
+1. C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `ContentTypeTest`の名前を指定します。  
   
-2.  **Source.extension.vsixmanifest**に移動して、ファイル、**資産**タブをクリックし、設定、**型**フィールドを **[microsoft.visualstudio.mefcomponent]**、**ソース**フィールドを**現在のソリューションでプロジェクトを**、および**プロジェクト**フィールドをプロジェクトの名前。  
+2. **Source.extension.vsixmanifest**に移動して、ファイル、**資産**タブをクリックし、設定、**型**フィールドを **[microsoft.visualstudio.mefcomponent]**、**ソース**フィールドを**現在のソリューションでプロジェクトを**、および**プロジェクト**フィールドをプロジェクトの名前。  
   
 ## <a name="defining-the-content-type"></a>コンテンツの種類を定義します。  
   
-1.  クラス ファイルを追加し、その名前を `FileAndContentTypes`にします。  
+1. クラス ファイルを追加し、その名前を `FileAndContentTypes`にします。  
   
-2.  次のアセンブリへの参照を追加します。  
+2. 次のアセンブリへの参照を追加します。  
   
-    1.  System.ComponentModel.Composition  
+    1. System.ComponentModel.Composition  
   
-    2.  Microsoft.VisualStudio.Text.Logic  
+    2. Microsoft.VisualStudio.Text.Logic  
   
-    3.  Microsoft.VisualStudio.CoreUtility  
+    3. Microsoft.VisualStudio.CoreUtility  
   
-3.  次の追加`using`ディレクティブ。  
+3. 次の追加`using`ディレクティブ。  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -52,14 +52,14 @@ ms.locfileid: "58976389"
   
     ```  
   
-4.  定義を含む静的クラスを宣言します。  
+4. 定義を含む静的クラスを宣言します。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
     {. . .}  
     ```  
   
-5.  このクラスは、エクスポート、<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>という名前の「非表示」と"text"をその基本定義を宣言します。  
+5. このクラスは、エクスポート、<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>という名前の「非表示」と"text"をその基本定義を宣言します。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -73,7 +73,7 @@ ms.locfileid: "58976389"
   
 ## <a name="linking-a-file-name-extension-to-a-content-type"></a>コンテンツの種類に、ファイル名拡張子をリンク  
   
--   ファイル名拡張子には、このコンテンツの種類をマップするには、エクスポート、 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> ".hid"を拡張機能を持つし、コンテンツの種類"hid"。  
+- ファイル名拡張子には、このコンテンツの種類をマップするには、エクスポート、 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> ".hid"を拡張機能を持つし、コンテンツの種類"hid"。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -92,11 +92,11 @@ ms.locfileid: "58976389"
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>エディターのエクスポートへのコンテンツの種類の追加  
   
-1.  エディター拡張機能を作成します。 たとえばで説明されている余白のグリフの拡張機能を使用することができます[チュートリアル。余白のグリフの作成](../extensibility/walkthrough-creating-a-margin-glyph.md)です。  
+1. エディター拡張機能を作成します。 たとえばで説明されている余白のグリフの拡張機能を使用することができます[チュートリアル。余白のグリフの作成](../extensibility/walkthrough-creating-a-margin-glyph.md)です。  
   
-2.  この手順で定義したクラスを追加します。  
+2. この手順で定義したクラスを追加します。  
   
-3.  追加の拡張機能クラスをエクスポートするときに、<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>に"hid"型の。  
+3. 追加の拡張機能クラスをエクスポートするときに、<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>に"hid"型の。  
   
     ```csharp  
     [Export]  

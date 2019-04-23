@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7d0165c0a774ba53e5ce4798cdcd4bc4755d1ebd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 5ed075cbc5bdc49159024a81cfcf1c3afb04cc6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076878"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>スタブを使用して単体テストでアプリケーションの各部分を相互に分離する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "58145162"
   
  **必要条件**  
   
--   Visual Studio Enterprise
+- Visual Studio Enterprise
   
-##  <a name="How"></a> スタブの使用方法  
+## <a name="How"></a> スタブの使用方法  
   
-###  <a name="Dependency"></a> 依存関係の挿入のデザイン  
+### <a name="Dependency"></a> 依存関係の挿入のデザイン  
  スタブを使用するには、各コンポーネントが互いに依存せず、インターフェイス定義だけに依存するようにアプリケーションをデザインする必要があります。 コンポーネントはコンパイル時には結合されず、実行時に接続されます。 このパターンでは、変更がコンポーネントの境界を越えて広がることが少ないので、堅牢で更新しやすいソフトウェアを作成できます。 スタブを使用しない場合でも、このパターンに従うことをお勧めします。 新しいコードを記述する場合は、[依存関係の挿入](http://en.wikipedia.org/wiki/Dependency_injection)パターンに簡単に準拠できます。 既存のソフトウェアのテストを作成する場合は、通常、ソフトウェアをリファクタリングする必要があります。 それが現実的でない場合は、代わりに shim を使用する方法もあります。  
   
  ここではまず、図に示されているような、スタブに適した例について説明します。 クラス StockAnalyzer は、株価を読み取り、興味深い結果を生成します。 いくつかのパブリック メソッドがあり、それらをテスト対象にします。 説明を簡単にするために、これらのメソッドのうちの 1 つに着目します。特定の株式の現在の価格を報告する単純なメソッドです。 このメソッドの単体テストを記述します。 テストの最初のドラフトは、次のようになります。  
@@ -144,7 +144,7 @@ analyzer = new StockAnalyzer(new StockFeed())
   
  この接続を行うには、より柔軟な方法があります。 たとえば、StockAnalyzer は、さまざまな条件で IStockFeed のさまざまな実装をインスタンス化できるファクトリ オブジェクトを受け取ることができます。  
   
-###  <a name="GeneratingStubs"></a> スタブを生成する  
+### <a name="GeneratingStubs"></a> スタブを生成する  
  テスト対象のクラスを、それが使用する他のコンポーネントから分離しました。 分離することによって、アプリケーションの堅牢性と柔軟性を高めるだけでなく、テスト対象のコンポーネントをインターフェイスのスタブ実装にテスト用に接続することもできます。  
   
  スタブは、単に通常の方法でクラスとして記述することもできます。 しかし、Microsoft Fakes では、各テストで最も適切なスタブを作成するための、より動的な手段が用意されています。  
@@ -153,15 +153,15 @@ analyzer = new StockAnalyzer(new StockFeed())
   
 ##### <a name="adding-a-fakes-assembly"></a>Fakes アセンブリを追加する  
   
-1.  ソリューション エクスプローラーで、単体テスト プロジェクトの **[参照設定]** を展開します。  
+1. ソリューション エクスプローラーで、単体テスト プロジェクトの **[参照設定]** を展開します。  
   
-    -   Visual Basic で作業している場合、参照一覧を表示するには、ソリューション エクスプローラー ツール バーの **[すべてのファイルを表示]** を選択する必要があります。  
+    - Visual Basic で作業している場合、参照一覧を表示するには、ソリューション エクスプローラー ツール バーの **[すべてのファイルを表示]** を選択する必要があります。  
   
-2.  作成するスタブに対応するインターフェイス定義が含まれているアセンブリを選択します。  
+2. 作成するスタブに対応するインターフェイス定義が含まれているアセンブリを選択します。  
   
-3.  ショートカット メニューで、**[Fakes アセンブリに追加]** を選択します。  
+3. ショートカット メニューで、**[Fakes アセンブリに追加]** を選択します。  
   
-###  <a name="WriteTest"></a> スタブを使用してテストを作成する  
+### <a name="WriteTest"></a> スタブを使用してテストを作成する  
   
 ```csharp  
 [TestClass]  
@@ -223,8 +223,8 @@ End Class
   
  また、イベントおよびジェネリック メソッドについて、プロパティの getter および setter に対してもスタブが生成されます。  
   
-###  <a name="mocks"></a> パラメーター値を確認する  
- 自分のコンポーネントが他のコンポーネントを呼び出すときに、適切な値が渡されることを検証できます。 スタブ内にアサーションを配置するか、値を保存して、テストの本体で検証できます。 次に例を示します。  
+### <a name="mocks"></a> パラメーター値を確認する  
+ 自分のコンポーネントが他のコンポーネントを呼び出すときに、適切な値が渡されることを検証できます。 スタブ内にアサーションを配置するか、値を保存して、テストの本体で検証できます。 例:  
   
 ```csharp  
 [TestClass]  
@@ -301,9 +301,9 @@ Class TestMyComponent
 End Class  
 ```  
   
-##  <a name="BKMK_Stub_basics"></a> さまざまな種類の型メンバーのスタブ  
+## <a name="BKMK_Stub_basics"></a> さまざまな種類の型メンバーのスタブ  
   
-###  <a name="BKMK_Methods"></a> メソッド  
+### <a name="BKMK_Methods"></a> メソッド  
  例に示すように、スタブ クラスのインスタンスにデリゲートをアタッチすることによって、メソッドをスタブすることができます。 スタブ型の名前は、メソッドとパラメーターの名前から派生されます。 たとえば、`IMyInterface` というインターフェイスと `MyMethod` というメソッドがあるとします。  
   
 ```csharp  
@@ -325,7 +325,7 @@ interface IMyInterface
   
  関数のスタブを指定しないと、戻り値の型の既定値を返す関数が Fakes によって生成されます。 数値の場合、既定値は 0 です。クラス型の場合は、`null` (C#) または `Nothing` (Visual Basic) です。  
   
-###  <a name="BKMK_Properties"></a> プロパティ  
+### <a name="BKMK_Properties"></a> プロパティ  
  プロパティの getter と setter は、個別のデリゲートとして公開され、個別にスタブできます。 例として、`Value` の `IMyInterface` プロパティを考えます。  
   
 ```csharp  
@@ -350,7 +350,7 @@ stub.ValueSet = (value) => i = value;
   
  プロパティの setter または getter にスタブ メソッドを指定しないと、値を格納するスタブが Fakes によって生成されます。そのため、スタブ プロパティは単純な変数のように動作します。  
   
-###  <a name="BKMK_Events"></a> イベント  
+### <a name="BKMK_Events"></a> イベント  
  イベントは、デリゲート フィールドとして公開されます。 そのため、スタブされたイベントは、単にイベントのバッキング フィールドを呼び出すだけで発生させることができます。 次のようなインターフェイスをスタブするとします。  
   
 ```csharp  
@@ -371,7 +371,7 @@ interface IWithEvents
   
 ```  
   
-###  <a name="BKMK_Generic_methods"></a> ジェネリック メソッド  
+### <a name="BKMK_Generic_methods"></a> ジェネリック メソッド  
  メソッドに必要な各インスタンス化用のデリゲートを用意することによって、ジェネリック メソッドをスタブすることができます。 たとえば、次のような、ジェネリック メソッドを含むインターフェイスがあるとします。  
   
 ```csharp  
@@ -399,8 +399,8 @@ public void TestGetValue()
   
  コードが他のインスタンス化で `GetValue<T>` を呼び出す場合、スタブは単に動作を呼び出します。  
   
-###  <a name="BKMK_Partial_stubs"></a> 仮想クラスのスタブ  
- これまでの例では、スタブはインターフェイスから生成されていました。 仮想メンバーまたは抽象メンバーを持つクラスからスタブを生成することもできます。 次に例を示します。  
+### <a name="BKMK_Partial_stubs"></a> 仮想クラスのスタブ  
+ これまでの例では、スタブはインターフェイスから生成されていました。 仮想メンバーまたは抽象メンバーを持つクラスからスタブを生成することもできます。 例:  
   
 ```csharp  
 // Base class in application under test  
@@ -438,16 +438,16 @@ stub.CallBase = true;
 Assert.AreEqual(43,stub.DoVirtual(1));  
 ```  
   
-##  <a name="BKMK_Debugging_stubs"></a> スタブをデバッグする  
+## <a name="BKMK_Debugging_stubs"></a> スタブをデバッグする  
  スタブ型は、デバッグを円滑に行うことができるように設計されています。 既定では、デバッガーは生成されたすべてのコードをステップ オーバーするように設定されています。そのため、スタブにアタッチされたカスタム メンバー実装に直接ステップ インする必要があります。  
   
-##  <a name="BKMK_Stub_limitation"></a> スタブの制限事項  
+## <a name="BKMK_Stub_limitation"></a> スタブの制限事項  
   
-1.  ポインターを含むメソッド シグネチャはサポートされていません。  
+1. ポインターを含むメソッド シグネチャはサポートされていません。  
   
-2.  スタブ型は仮想メソッド ディスパッチに依存しているため、シール クラスまたは静的メソッドはスタブできません。 そのような場合、「[shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)」の説明にある shim 型を利用してください。  
+2. スタブ型は仮想メソッド ディスパッチに依存しているため、シール クラスまたは静的メソッドはスタブできません。 そのような場合、「[shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)」の説明にある shim 型を利用してください。  
   
-##  <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> スタブの既定の動作を変更する  
+## <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> スタブの既定の動作を変更する  
  生成された各スタブ型は、`IStubBehavior` インターフェイスのインスタンスを保持します (`IStub.InstanceBehavior` プロパティを通じて)。 この動作は、カスタム デリゲートをアタッチされていないメンバーをクライアントが呼び出すたびに呼び出されます。 動作が設定されていない場合は、`StubsBehaviors.Current` プロパティによって返されるインスタンスが使用されます。 既定では、このプロパティは `NotImplementedException` 例外をスローする動作を返します。  
   
  動作は、任意のスタブ インスタンス上の `InstanceBehavior` プロパティを設定することによって、いつでも変更できます。 たとえば、次のスニペットは、何も行わないか、戻り値の型の既定値 (`default(T)`) を返す動作を変更します。  
@@ -472,7 +472,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>外部リソース  
   
 ### <a name="guidance"></a>ガイダンス  
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト:内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>関連項目  
  [Microsoft Fakes を使用したテストでのコードの分離](../test/isolating-code-under-test-with-microsoft-fakes.md)

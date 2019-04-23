@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6200b96992638ccf5ad009ac103551824219135f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074961"
 ---
 # <a name="xml-schema-designer-workspace"></a>XML スキーマ デザイナーのワークスペース
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,29 +26,29 @@ XML スキーマ デザイナー (XSD デザイナー) は、XML スキーマを
 ## <a name="adding-nodes-to-the-workspace"></a>ワークスペースへのノードの追加  
  次の方法でワークスペースにノードを追加できます。  
   
--   "スキーマ セットの詳細 セクションでは、[スタート ビュー](../xml-tools/start-view.md)、クリックして、**追加**グローバル ノード型の横にあるリンクです。  
+- "スキーマ セットの詳細 セクションでは、[スタート ビュー](../xml-tools/start-view.md)、クリックして、**追加**グローバル ノード型の横にあるリンクです。  
   
--   XML スキーマ エクスプローラーからは、3 つのどのビューにでもグローバル ノード、ファイル ノード、および名前空間ノードをドラッグ アンド ドロップすることができます。 詳細については、「ノードをドラッグすること、および削除」のセクションを参照してください。 [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)します。  
+- XML スキーマ エクスプローラーからは、3 つのどのビューにでもグローバル ノード、ファイル ノード、および名前空間ノードをドラッグ アンド ドロップすることができます。 詳細については、「ノードをドラッグすること、および削除」のセクションを参照してください。 [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)します。  
   
--   XML スキーマ エクスプローラーのコンテキスト メニューを使用します。 詳細については、次を参照してください。[コンテキスト メニュー](../xml-tools/context-menus-xml-schema-explorer.md)します。  
+- XML スキーマ エクスプローラーのコンテキスト メニューを使用します。 詳細については、次を参照してください。[コンテキスト メニュー](../xml-tools/context-menus-xml-schema-explorer.md)します。  
   
--   XSD エクスプ ローラーで検索を実行し、**強調表示されたノードをワークスペースに追加**概要結果ペインでボタンをクリックします。 詳細については、次を参照してください。[スキーマ セットの検索](../xml-tools/searching-the-schema-set.md)します。  
+- XSD エクスプ ローラーで検索を実行し、**強調表示されたノードをワークスペースに追加**概要結果ペインでボタンをクリックします。 詳細については、次を参照してください。[スキーマ セットの検索](../xml-tools/searching-the-schema-set.md)します。  
   
 ## <a name="view-switching"></a>ビューの切り替え  
  ビューを切り替えるには、次のいずれかを使用します。  
   
--   XSD デザイナーのツール バー。  
+- XSD デザイナーのツール バー。  
   
--   コンテンツ モデル ビューおよびグラフ ビューのコンテキスト メニュー  
+- コンテンツ モデル ビューおよびグラフ ビューのコンテキスト メニュー  
   
--   スタート ビューのウォーターマークか、空白のコンテンツ モデル ビューまたはグラフ ビューのウォーターマーク。  
+- スタート ビューのウォーターマークか、空白のコンテンツ モデル ビューまたはグラフ ビューのウォーターマーク。  
   
--   ホット キー:CTRL + スタート ビュー、CTRL +、グラフ ビューおよび ctrl キーを 2 + 3 コンテンツ モデル ビューの 1。  
+- ホット キー:CTRL + スタート ビュー、CTRL +、グラフ ビューおよび ctrl キーを 2 + 3 コンテンツ モデル ビューの 1。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [スタート ビュー](../xml-tools/start-view.md)  
+- [スタート ビュー](../xml-tools/start-view.md)  
   
--   [グラフ ビュー](../xml-tools/graph-view.md)  
+- [グラフ ビュー](../xml-tools/graph-view.md)  
   
--   [コンテンツ モデル ビュー](../xml-tools/content-model-view.md)
+- [コンテンツ モデル ビュー](../xml-tools/content-model-view.md)
