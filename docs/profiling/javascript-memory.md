@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f73011cd675772add62b25a1f94de52c0018e667
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 725566a4bc09a7c787c5ffa96b9422d15fd197b1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867969"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790954"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP アプリでの JavaScript のメモリ使用量を分析する
 Visual Studio に用意されている JavaScript メモリ アナライザーは、メモリ使用量を把握し、JavaScript を使用して Windows 用に開発された UWP アプリのメモリ リークを検出するのに役立ちます。 サポートされるアプリには、ユニバーサル Windows アプリのアプリが含まれます。
@@ -102,7 +103,7 @@ Visual Studio に用意されている JavaScript メモリ アナライザー�
 
 1. Visual Studio でアプリを開きます。
 
-2. JavaScript メモリ アナライザーを実行します。 詳細については、「 [JavaScript メモリ アナライザーの実行](#run-the-JavaScript-memory-analyzer)」を参照してください。
+2. JavaScript メモリ アナライザーを実行します (前述の手順を参照)。
 
 3. テストするシナリオでアプリを実行します。 たとえばシナリオには、特定のページが読み込まれるときやアプリケーションが開始されるときの DOM の大きな変異などが含まれます。
 
