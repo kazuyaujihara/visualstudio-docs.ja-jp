@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ce412da98d05d70864a6932021912a6f03f6a7b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092176"
 ---
 # <a name="working-with-xml-data"></a>XML データの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,17 +26,17 @@ XML とその関連技術は、[!INCLUDE[msCoName](../includes/msconame-md.md)] 
   
  次のような機能も含まれています。  
   
--   スキーマから生成されるスニペットを含めた、XML スニペットのサポート。  
+- スキーマから生成されるスニペットを含めた、XML スニペットのサポート。  
   
--   要素の展開と折りたたみが可能なドキュメントのアウトライン表示。  
+- 要素の展開と折りたたみが可能なドキュメントのアウトライン表示。  
   
--   XSLT 変換を実行し、結果をテキスト、XML、または HTML で表示する機能。  
+- XSLT 変換を実行し、結果をテキスト、XML、または HTML で表示する機能。  
   
--   XML インスタンス ドキュメントから XML スキーマ定義言語 (XSD) スキーマを生成する機能。  
+- XML インスタンス ドキュメントから XML スキーマ定義言語 (XSD) スキーマを生成する機能。  
   
--   IntelliSense サポートを含めた、XSLT スタイル シートの編集のサポート。  
+- IntelliSense サポートを含めた、XSLT スタイル シートの編集のサポート。  
   
--   XML スキーマ エクスプローラー  
+- XML スキーマ エクスプローラー  
   
 ## <a name="xml-schema-designer"></a>XML スキーマ デザイナー  
  XML スキーマ デザイナーは Microsoft Visual Studio 2010 および XML エディターに統合されており、これを使用すると、XML スキーマ定義言語 (XSD) スキーマの操作が可能になります。  

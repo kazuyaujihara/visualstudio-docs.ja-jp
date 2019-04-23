@@ -1,5 +1,5 @@
 ---
-title: '方法: Visual Studio 2015 をデプロイするときに、プロダクト キーを自動的に適用 |Microsoft Docs'
+title: '方法: Visual Studio 2015 の展開時にプロダクト キーを自動的に適用する | Microsoft Docs'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,22 +10,22 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bbbc5cf6a6a65f7dbb38de60a5a99ec89fc70687
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834849"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656727"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>方法: Visual Studio の展開時にプロダクト キーを自動的に適用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。 [Visual Studio の展開時に、プロダクト キーを自動的に適用](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio)します。
+Visual Studio に関する最新のドキュメントについては、「[Visual Studio の展開時にプロダクト キーを自動的に適用する](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio)」をご覧ください。
 
 Visual Studio 2015 の配置を自動化するために使用されるスクリプトの一部として、プログラム的にプロダクト キーを適用することができます。 プロダクト キーは、Visual Studio のインストール中またはインストール完了後に、プログラム的にデバイスで設定できます。
 
 ## <a name="apply-the-license-during-installation"></a>インストール中にライセンスを適用する
- Visual Studio のセットアップ プロセス中にプロダクト キーを適用するには、/ProductKey パラメーターを使用します。 既にエンドユーザーにライセンスが付与されている状態で Visual Studio をインストールする場合は、このセットアップ パラメーターを /Silent パラメーターとともに使用できます。 /ProductKey パラメーターを使用するには、コマンド プロンプトを開きます。 セットアップ プログラム (vs_enterprise.exe や vs_professional.exe など) を実行し、ダッシュが含まれていないプロダクト キー (25 文字) を指定して /ProductKey パラメーターを設定します。
+ Visual Studio のセットアップ プロセス中にプロダクト キーを適用するには、/ProductKey パラメーターを使用します。 既にエンドユーザーにライセンスが付与されている状態で Visual Studio をインストールする場合は、このセットアップ パラメーターを /Silent パラメーターとともに使用できます。 /ProductKey パラメーターを使用するには、コマンド プロンプトを開きます。 セットアップ プログラム (例: vs_enterprise.exe や vs_professional.exe) を実行し、ダッシュが含まれていないプロダクト キー (25 文字) を指定して /ProductKey パラメーターを設定します。
 
  以下に例として、プロダクト キー AAAAABBBBBCCCCCDDDDDEEEEEEE を指定して Visual Studio 2015 Enterprise をインストールする場合のコマンドを示します。
 
@@ -34,11 +34,11 @@ Visual Studio 2015 の配置を自動化するために使用されるスクリ�
 ## <a name="apply-the-license-after-installation"></a>インストール後にライセンスを適用する
  ターゲット コンピューターにある storePID.exe ユーティリティをサイレント モードで使用して、インストールされているバージョンの Visual Studio をプロダクト キーでアクティブにすることができます。 StorePID.exe はユーティリティ プログラムで、Visual Studio で以下にインストールされます。**\<ドライブ>:\\\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**
 
- System Center エージェントまたは管理者特権でのコマンド プロンプトのいずれかを使用することにより、昇格された特権で storePID.exe を実行します。その際、プロダクト キー (ダッシュを含む) と Microsoft 製品コード (MPC) を後ろに付けます。 プロダクト キーには、絶対にダッシュ (-) を含めないください。
+ System Center エージェントまたは管理者特権でのコマンド プロンプトのいずれかを使用することにより、昇格された特権で storePID.exe を実行します。その際、プロダクト キー (ダッシュを含む) と Microsoft 製品コード (MPC) を後ろに付けます。 プロダクト キーには必ずダッシュ (-) を含めます。
 
  `StorePID.exe [product key including the dashes] [MPC]`
 
- 以下に例として、プロダクト キー「AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE」を指定して、MPC が 07060 の Visual Studio 2015 Enterprise をインストールする場合のコマンド ラインを示します。
+ プロダクト キー「AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE」を指定して、MPC が 07060 の Visual Studio 2015 Enterprise をインストールするコマンド ラインの例を次に示します。
 
  `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 07060`
 
@@ -54,9 +54,10 @@ Visual Studio 2015 の配置を自動化するために使用されるスクリ�
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- プロダクト キーの取得方法の詳細については、「 [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md)」を参照してください。
+プロダクト キーの取得方法の詳細については、「[How to: Locate the Visual Studio Product Key (方法: Visual Studio プロダクト キーを見つける)](../install/how-to-locate-the-visual-studio-product-key.md)」を参照してください。
 
- StorePID.exe が正常にプロダクト キーを適用した場合は 0 を返します。 エラーが検出された場合は、1 ～ 6 の範囲の数値を返します。
+StorePID.exe が正常にプロダクト キーを適用した場合は 0 を返します。 エラーが検出された場合は、1 ～ 6 の範囲の数値を返します。
 
 ## <a name="see-also"></a>関連項目
- [Visual Studio のインストール](../install/install-visual-studio-2015.md)
+
+- [Visual Studio のインストール](../install/install-visual-studio-2015.md)

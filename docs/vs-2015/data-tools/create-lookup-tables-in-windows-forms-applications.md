@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 280cc2fa94b8ea8167da2168cd4fff90bb8fa612
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102979"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows フォーム アプリケーションでルックアップ テーブルを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ ms.locfileid: "59663233"
   
 ## <a name="to-databind-a-lookup-control"></a>検索コントロールをデータバインドするには  
   
-1.  **[データ ソース]** ウィンドウを開く。  
+1. **[データ ソース]** ウィンドウを開く。  
   
     > [!NOTE]
     > 検索テーブルを作成するには、関連付けられた 2 つのテーブルまたはオブジェクトが **[データ ソース]** ウィンドウで使用可能になっている必要があります。
   
-2.  **[データ ソース]** ウィンドウで、親テーブルとそのすべての列および関連する子テーブルとそのすべて列が表示されるまでノードを展開します。  
+2. **[データ ソース]** ウィンドウで、親テーブルとそのすべての列および関連する子テーブルとそのすべて列が表示されるまでノードを展開します。  
   
     > [!NOTE]
     >  子テーブルのノードは、展開可能な子ノードとして親テーブルに表示されます。  
   
-3.  子テーブルのノードのコントロール一覧の **[詳細]** を選択し、子テーブルのドロップ タイプを **[詳細]** に変更します。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
+3. 子テーブルのノードのコントロール一覧の **[詳細]** を選択し、子テーブルのドロップ タイプを **[詳細]** に変更します。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
   
-4.  2 つのテーブルの関連ノードを見つけます (、`CustomerID`前の例でのノード)。ドロップ型を変更、<xref:System.Windows.Forms.ComboBox>を選択して**ComboBox**コントロール リストから。  
+4. 2 つのテーブルの関連ノードを見つけます (、`CustomerID`前の例でのノード)。ドロップ型を変更、<xref:System.Windows.Forms.ComboBox>を選択して**ComboBox**コントロール リストから。  
   
-5.  メインの子テーブルのノードを **[データ ソース]** ウィンドウからフォームにドラッグします。  
+5. メインの子テーブルのノードを **[データ ソース]** ウィンドウからフォームにドラッグします。  
   
      説明のラベルが付いたデータ バインド コントロールとツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) がフォームに表示されます。 A[データセット](../data-tools/dataset-tools-in-visual-studio.md)、TableAdapter、 <xref:System.Windows.Forms.BindingSource>、および<xref:System.Windows.Forms.BindingNavigator>コンポーネント トレイに表示されます。  
   
-6.  今すぐからメインの親テーブル ノードをドラッグ、**データ ソース**ルックアップ コントロールに直接ウィンドウ (、 <xref:System.Windows.Forms.ComboBox>)。  
+6. 今すぐからメインの親テーブル ノードをドラッグ、**データ ソース**ルックアップ コントロールに直接ウィンドウ (、 <xref:System.Windows.Forms.ComboBox>)。  
   
      これで検索バインドが確立されます。 コントロールに設定された個々のプロパティについては、次の表を参照してください。  
   

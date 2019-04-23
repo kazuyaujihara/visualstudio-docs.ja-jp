@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcd72b398c49b84f110145f5dbf0e8b8929d82e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5dbf56278a3987fafa0e0a0263c17460b56fafaf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619720"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102641"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>他の Office ソリューションから VSTO アドイン内のコードを呼び出す
   VSTO アドイン内のオブジェクトは、他の Microsoft Office ソリューションを含む、他のソリューションに公開できます。 このことは、VSTO アドインが他のソリューションで使用可能なサービスを含む場合に便利です。 たとえば、この場合は、Web サービスから受け取る財務データについて計算を実行する Microsoft Office Excel の VSTO アドインである場合は、その他のソリューションは実行時に Excel VSTO アドインを呼び出すことによってこれらの計算を実行できます。
@@ -31,29 +31,29 @@ ms.locfileid: "56619720"
 
  この処理には主に 2 つの手順があります。
 
--   VSTO アドインで、オブジェクトを他のソリューションに公開します。
+- VSTO アドインで、オブジェクトを他のソリューションに公開します。
 
--   もう 1 つのソリューションで、VSTO アドインにより公開されたオブジェクトにアクセスし、オブジェクトのメンバーを呼び出します。
+- もう 1 つのソリューションで、VSTO アドインにより公開されたオブジェクトにアクセスし、オブジェクトのメンバーを呼び出します。
 
 ## <a name="types-of-solutions-that-can-call-code-in-an-add-in"></a>アドインでコードを呼び出すことができるソリューションの種類
  次の種類のソリューションに VSTO アドイン内のオブジェクトを公開することができます。
 
--   VSTO アドインと同じアプリケーション プロセスに読み込まれるドキュメント内の Visual Basic for Applications (VBA) コード。
+- VSTO アドインと同じアプリケーション プロセスに読み込まれるドキュメント内の Visual Basic for Applications (VBA) コード。
 
--   VSTO アドインと同じアプリケーション プロセスに読み込まれるドキュメント レベルのカスタマイズ。
+- VSTO アドインと同じアプリケーション プロセスに読み込まれるドキュメント レベルのカスタマイズ。
 
--   Visual Studio に含まれる Office プロジェクト テンプレートを使用して作成された他の VSTO アドイン。
+- Visual Studio に含まれる Office プロジェクト テンプレートを使用して作成された他の VSTO アドイン。
 
--   COM VSTO アドイン (つまり、 <xref:Extensibility.IDTExtensibility2> インターフェイスを直接実装する VSTO アドイン)。
+- COM VSTO アドイン (つまり、 <xref:Extensibility.IDTExtensibility2> インターフェイスを直接実装する VSTO アドイン)。
 
--   VSTO アドインとは異なるプロセスで実行中の任意のソリューション (こうした種類のソリューションは *アウト プロセス クライアント*とも呼ばれます)。 これらには、Windows フォームまたはコンソール アプリケーションなど、Office アプリケーションを自動化するアプリケーションと、異なるプロセスに読み込まれる VSTO アドインが含まれます。
+- VSTO アドインとは異なるプロセスで実行中の任意のソリューション (こうした種類のソリューションは *アウト プロセス クライアント*とも呼ばれます)。 これらには、Windows フォームまたはコンソール アプリケーションなど、Office アプリケーションを自動化するアプリケーションと、異なるプロセスに読み込まれる VSTO アドインが含まれます。
 
 ## <a name="expose-objects-to-other-solutions"></a>他のソリューションにオブジェクトを公開
  VSTO アドイン内のオブジェクトを他のソリューションに公開するには、VSTO アドインで次の手順を実行します。
 
-1.  他のソリューションに公開するクラスを定義します。
+1. 他のソリューションに公開するクラスを定義します。
 
-2.  <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> クラスの `ThisAddIn` メソッドをオーバーライドします。 他のソリューションに公開するクラスのインスタンスを返します。
+2. <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> クラスの `ThisAddIn` メソッドをオーバーライドします。 他のソリューションに公開するクラスのインスタンスを返します。
 
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>他のソリューションに公開するクラスを定義します。
  少なくとも、公開するクラスはパブリックであり、 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性の設定は **true**であり、 [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) インターフェイスを公開する必要があります。
@@ -70,9 +70,9 @@ ms.locfileid: "56619720"
 
 5. このクラスをアウト プロセス クライアントに公開する場合に、次はも必要。
 
-   -   <xref:System.Runtime.InteropServices.StandardOleMarshalObject>からクラスを派生させます。 詳細については、[クラスをアウト プロセス クライアントに公開](#outofproc)を参照してください。
+   - <xref:System.Runtime.InteropServices.StandardOleMarshalObject>からクラスを派生させます。 詳細については、次を参照してください。[クラスをアウト プロセス クライアントに公開](#outofproc)します。
 
-   -   インターフェイスを定義するプロジェクトで、 **[COM の相互運用機能に登録]** プロパティを設定します。 このプロパティは、事前バインディングを使用して VSTO アドインを呼び出せるにクライアントを有効にする場合にのみ必要です。
+   - インターフェイスを定義するプロジェクトで、 **[COM の相互運用機能に登録]** プロパティを設定します。 このプロパティは、事前バインディングを使用して VSTO アドインを呼び出せるにクライアントを有効にする場合にのみ必要です。
 
    次のコード例は、他のソリューションによって呼び出し可能な `AddInUtilities` メソッドを持つ、 `ImportData` クラスを示します。 大きなチュートリアルのコンテキストでこのコードを表示するには、次を参照してください。[チュートリアル。VSTO アドイン内のコードを VBA から呼び出す](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)します。
 
@@ -84,12 +84,12 @@ ms.locfileid: "56619720"
 
  別の方法として公開することができます、 [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)インターフェイスを設定して、<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>属性の値 (autodispatch に対する) または AutoDual 値を<xref:System.Runtime.InteropServices.ClassInterfaceType>列挙体。 インターフェイスを公開する場合は、個別のインターフェイスでメソッドを宣言するはありません。 ただし、VBA コードは、 <xref:System.Object>など、基本クラスから取得されるメソッドを含め、クラス内の任意のパブリックおよび非静的メソッドを呼び出すことができます。 さらに、事前バインディングを使用するアウト プロセス クライアントはクラスを呼び出すことができません。
 
-###  <a name="outofproc"></a> クラスをアウト プロセス クライアントに公開します。
+### <a name="outofproc"></a> クラスをアウト プロセス クライアントに公開します。
  VSTO アドイン内のクラスをアウト プロセス クライアントに公開する場合、 <xref:System.Runtime.InteropServices.StandardOleMarshalObject> からクラスを派生させ、アウト プロセス クライアントが公開された VSTO アドイン オブジェクトを呼び出せるようにする必要があります。 そうしないと、アウト プロセス クライアントで公開されたオブジェクトのインスタンスを取得しようとしたとき、予期せずに失敗する可能性があります。
 
  この失敗は、Office アプリケーションのオブジェクト モデルのすべての呼び出しは、メイン UI スレッドで行う必要がありますが、アウト プロセス クライアントから、オブジェクトへの呼び出しは、任意の RPC (リモート プロシージャ コール) スレッドに到達するためです。 .NET Framework における COM マーシャリング機構はスレッドを切り替えず、メイン UI スレッドではなく、受信 RPC スレッド上のオブジェクトに呼び出しをマーシャリングすることを試みます。 オブジェクトが <xref:System.Runtime.InteropServices.StandardOleMarshalObject>から派生するクラスのインスタンスである場合、オブジェクトへの受信呼び出しは、公開されたオブジェクトが作成されたスレッド、つまりホスト アプリケーションのメイン UI スレッドに自動的にマーシャリングされます。
 
- Office ソリューションにおけるスレッドの使用に関する詳細については、[のスレッドの Office でサポート](../vsto/threading-support-in-office.md)を参照してください。
+ Office ソリューションにおけるスレッドの使用に関する詳細については、次を参照してください。[のスレッドの Office でサポート](../vsto/threading-support-in-office.md)します。
 
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>RequestComAddInAutomationService メソッドをオーバーライドします。
  次のコード例は、VSTO アドイン内の <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> クラスで `ThisAddIn` をオーバーライドする方法を示します。 この例ではという名前のクラスが定義されている`AddInUtilities`他のソリューションに公開します。 大きなチュートリアルのコンテキストでこのコードを表示するには、次を参照してください。[チュートリアル。VSTO アドイン内のコードを VBA から呼び出す](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)します。

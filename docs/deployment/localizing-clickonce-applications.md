@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ad065db8871696fe1068e85be1c06f4a5b99d1c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 529adc66ece75219e71d7ae8b17857f5036e1668
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097285"
 ---
 # <a name="localize-clickonce-applications"></a>ClickOnce アプリケーションのローカライズ
 ローカライズは、アプリケーションを特定のカルチャに適したものにするためのプロセスです。 このプロセスには、ユーザー インターフェイス (UI) のテキストを地域固有の言語に翻訳する作業、正しい日付と通貨の書式の適用、フォーム上にあるコントロールのサイズの調整、およびコントロールを右から左へとミラー化する作業 (必要な場合) が含まれます。
@@ -35,11 +35,11 @@ ms.locfileid: "56624790"
 
  ここでは、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを他のカルチャ向けに配置する 3 つの方法について説明します。
 
--   すべてのサテライト アセンブリを 1 つの配置に含める。
+- すべてのサテライト アセンブリを 1 つの配置に含める。
 
--   カルチャごとに 1 つの配置を生成し、それぞれに 1 つのサテライト アセンブリを含める。
+- カルチャごとに 1 つの配置を生成し、それぞれに 1 つのサテライト アセンブリを含める。
 
--   必要に応じてサテライト アセンブリをダウンロードする。
+- 必要に応じてサテライト アセンブリをダウンロードする。
 
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>すべてのサテライト アセンブリを 1 つの配置に含める
  複数の [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置を発行するのではなく、すべてのサテライト アセンブリを含む 1 つの [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置を発行します。
@@ -51,7 +51,7 @@ ms.locfileid: "56624790"
  この方法の利点は、単一の配置が作成されるので、配置のローカライズが簡素化されることです。 実行時に、ユーザーが使用する Windows オペレーティング システムの既定のカルチャに応じて、適切なサテライト アセンブリが使用されます。 この方法の欠点は、クライアント コンピューターでアプリケーションをインストールまたは更新するたびに、すべてのサテライト アセンブリがダウンロードされることです。 このため、アプリケーションに大量の文字列が含まれている場合や顧客が使用するネットワーク接続の速度が遅い場合は、このプロセスがアプリケーション更新時のパフォーマンスに影響を与える可能性があります。
 
 > [!NOTE]
->  この方法では、それぞれのカルチャで異なるテキスト文字列のサイズに対応するために、コントロールの高さ、幅、および位置をアプリケーションが自動的に調整することを前提としています。 Windows フォームには、容易にローカライズできるフォームをデザインするためのさまざまなコントロールとテクノロジが用意されています。これには、<xref:System.Windows.Forms.FlowLayoutPanel> コントロールと <xref:System.Windows.Forms.TableLayoutPanel> コントロール、および <xref:System.Windows.Forms.Control.AutoSize%2A> プロパティが含まれます。  参照してください[方法: AutoSize と TableLayoutPanel コントロールを使用して Windows フォームのローカリゼーションをサポートする](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))します。
+>  この方法では、それぞれのカルチャで異なるテキスト文字列のサイズに対応するために、コントロールの高さ、幅、および位置をアプリケーションが自動的に調整することを前提としています。 Windows フォームには、容易にローカライズできるフォームをデザインするためのさまざまなコントロールとテクノロジが用意されています。これには、<xref:System.Windows.Forms.FlowLayoutPanel> コントロールと <xref:System.Windows.Forms.TableLayoutPanel> コントロール、および <xref:System.Windows.Forms.Control.AutoSize%2A> プロパティが含まれます。  参照してください[方法。AutoSize と TableLayoutPanel コントロールを使用して Windows フォームのローカリゼーションをサポートする](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))します。
 
 ## <a name="generate-one-deployment-for-each-culture"></a>カルチャごとに 1 つの配置を生成する
  この配置ストラテジでは、複数の配置を生成します。 各配置には特定のカルチャに必要なサテライト アセンブリのみを含め、その配置をそのカルチャ固有としてマークします。
@@ -65,9 +65,9 @@ ms.locfileid: "56624790"
 ## <a name="download-satellite-assemblies-on-demand"></a>必要に応じてサテライト アセンブリをダウンロードする
  すべてのサテライト アセンブリを 1 つの配置に含める場合は、オンデマンド ダウンロードを使用し、サテライト アセンブリをオプションとしてマークすることにより、パフォーマンスを高めることができます。 マークしたアセンブリは、アプリケーションがインストールまたは更新されるときにはダウンロードされません。 これらのアセンブリは、必要になったときに <xref:System.Deployment.Application.ApplicationDeployment> クラスの <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> メソッドを呼び出すことでインストールできます。
 
- サテライト アセンブリを必要に応じてダウンロードする処理は、その他の種類のアセンブリを必要に応じてダウンロードする処理と若干異なります。 このシナリオを使用して有効にする方法の詳細情報とコード例を[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]用ツールの[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]を参照してください[チュートリアル。ClickOnce 配置 API を使用して必要に応じてサテライト アセンブリをダウンロードする](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)。
+ サテライト アセンブリを必要に応じてダウンロードする処理は、その他の種類のアセンブリを必要に応じてダウンロードする処理と若干異なります。 このシナリオを使用して有効にする方法の詳細情報とコード例を[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]用ツールの[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]を参照してください[チュートリアル。ClickOnce 配置 API で必要に応じてサテライト アセンブリをダウンロード](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)します。
 
- このシナリオは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で有効にすることもできます。  「 [チュートリアル: デザイナーを使用し、ClickOnce 配置 API で必要に応じてサテライト アセンブリをダウンロードする](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) 」または「 [チュートリアル: デザイナーを使用し、ClickOnce 配置 API で必要に応じてサテライト アセンブリをダウンロードする](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120))」もご覧ください。
+ このシナリオは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で有効にすることもできます。  参照してください[チュートリアル。ClickOnce 配置デザイナーを使用して API で必要に応じてサテライト アセンブリをダウンロード](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110))または[チュートリアル。ClickOnce 配置デザイナーを使用して API で必要に応じてサテライト アセンブリをダウンロード](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120))します。
 
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>ローカライズされた ClickOnce アプリケーションを配置前にテストする
  サテライト アセンブリが Windows フォーム アプリケーションに使用されるのは、アプリケーションのメイン スレッドの <xref:System.Threading.Thread.CurrentUICulture%2A> プロパティがそのサテライト アセンブリのカルチャに設定されている場合に限られます。 各地域の顧客は Windows のローカライズ版を既に実行していると考えられるため、カルチャも該当する既定値に設定されているはずです。

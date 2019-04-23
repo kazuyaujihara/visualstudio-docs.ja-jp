@@ -11,12 +11,12 @@ ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 075644dc36a25c723f51e7c518cbaf6de8a8bc1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f54dc683aa4287145a27e22d49397241b395f69f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093307"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>従来の言語サービスでのブレークポイントの検証
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "58977115"
   
 ## <a name="implementing-support-for-validating-breakpoints"></a>ブレークポイントを検証するためのサポートの実装  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>メソッドには、ブレークポイントの位置が与えられます。 実装には、場所が有効期限、およびコードを特定するテキスト範囲を返すことによってこれに関連付けられている行位置ブレークポイントを示すかどうかを決める必要があります。  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>メソッドには、ブレークポイントの位置が与えられます。 実装には、場所が有効期限、およびコードを特定するテキスト範囲を返すことによってこれに関連付けられている行位置ブレークポイントを示すかどうかを決める必要があります。  
   
--   返す<xref:Microsoft.VisualStudio.VSConstants.S_OK>の場所が、有効な場合または<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>が有効でない場合。  
+- 返す<xref:Microsoft.VisualStudio.VSConstants.S_OK>の場所が、有効な場合または<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>が有効でない場合。  
   
--   ブレークポイントが有効な場合は、ブレークポイントと共に、テキスト範囲が強調表示されます。  
+- ブレークポイントが有効な場合は、ブレークポイントと共に、テキスト範囲が強調表示されます。  
   
--   ブレークポイントが有効でない場合は、ステータス バーに、エラー メッセージが表示されます。  
+- ブレークポイントが有効でない場合は、ステータス バーに、エラー メッセージが表示されます。  
   
 ### <a name="example"></a>例  
  この例の実装を示しています、<xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>を指定した場所 (ある場合)、コードの範囲を取得するためにパーサーを呼び出すメソッド。  

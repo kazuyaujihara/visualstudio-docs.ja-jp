@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67e98f7d9f8e1e8914508d8a2e3c63c5dc55b8a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637595"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097493"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>方法: ホスト コントロールからのデータでデータ ソースを更新します。
   ホスト コントロールをデータ ソースにバインドし、コントロール内のデータに加えられた変更でデータ ソースを更新することができます。 この処理には主に 2 つの手順があります。
@@ -29,7 +29,7 @@ ms.locfileid: "56637595"
 
 2. メモリ内データ ソースで変更されたデータを使用して、データベースを更新します。 これは、データ ソースが SQL Server や Microsoft Office Access データベースなどのバックエンド データベースに接続されている場合にのみ有効です。
 
-   ホスト コントロールとデータ バインディングの詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)と[Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)を参照してください。
+   ホスト コントロールとデータ バインディングの詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)と[Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)します。
 
    [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "56637595"
 
 ### <a name="to-update-the-in-memory-data-source-at-runtime"></a>実行時にメモリ内データ ソースを更新するには
 
--   コントロールをデータ ソースにバインドする <xref:System.Windows.Forms.Binding.WriteValue%2A> オブジェクトの <xref:System.Windows.Forms.Binding> メソッドを呼び出します。
+- コントロールをデータ ソースにバインドする <xref:System.Windows.Forms.Binding.WriteValue%2A> オブジェクトの <xref:System.Windows.Forms.Binding> メソッドを呼び出します。
 
      Excel ワークシートの <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールに加えられた変更をデータ ソースに保存する例を次に示します。 この例は、 <xref:Microsoft.Office.Tools.Excel.NamedRange> という名前の `namedRange1` コントロールで <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> プロパティがデータ ソースのフィールドにバインドされていることを前提としています。
 
@@ -70,42 +70,42 @@ ms.locfileid: "56637595"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>デザイナーを使用してメモリ内データ ソースを自動的に更新するようにコントロールを設定するには
 
-1.  Visual Studio のデザイナーで、Word 文書または Excel ブックを開きます。
+1. Visual Studio のデザイナーで、Word 文書または Excel ブックを開きます。
 
-2.  データ ソースの自動更新を行うコントロールをクリックします。
+2. データ ソースの自動更新を行うコントロールをクリックします。
 
-3.  **[プロパティ]** ウィンドウで **(DataBindings)** プロパティを展開します。
+3. **[プロパティ]** ウィンドウで **(DataBindings)** プロパティを展開します。
 
-4.  次に、 **(詳細)** プロパティ、省略記号ボタンをクリックします (![VisualStudioEllipsesButton スクリーン ショット](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton スクリーン ショット"))。
+4. 次に、 **(詳細)** プロパティ、省略記号ボタンをクリックします (![VisualStudioEllipsesButton スクリーン ショット](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton スクリーン ショット"))。
 
-5.  **[フォーマットと詳細バインド]** ダイアログ ボックスで、 **[データ ソース更新モード]** ドロップダウン リストをクリックし、次の値のいずれかを選びます。
+5. **[フォーマットと詳細バインド]** ダイアログ ボックスで、 **[データ ソース更新モード]** ドロップダウン リストをクリックし、次の値のいずれかを選びます。
 
-    -   コントロールの検証時にデータ ソースを更新するには、 **[OnValidation]** を選びます。
+    - コントロールの検証時にデータ ソースを更新するには、 **[OnValidation]** を選びます。
 
-    -   コントロールのデータ バインド プロパティの値が変更されたときにデータ ソースを更新するには、 **[OnPropertyChanged]** を選びます。
+    - コントロールのデータ バインド プロパティの値が変更されたときにデータ ソースを更新するには、 **[OnPropertyChanged]** を選びます。
 
         > [!NOTE]
         >  **[OnPropertyChanged]** オプションは、Word ホスト コントロールには適用されません。Word では文書変更やコントロール変更の通知は提供されないためです。 ただし、Word 文書上の Windows フォーム コントロールには、このオプションを使用できます。
 
-6.  **[フォーマットと詳細バインド]** ダイアログ ボックスを閉じます。
+6. **[フォーマットと詳細バインド]** ダイアログ ボックスを閉じます。
 
 ## <a name="update-the-database"></a>データベースを更新する
- メモリ内データ ソースがデータベースに関連付けられている場合、データ ソースへの変更内容を使用して、データベースを更新する必要があります。 データベースの更新の詳細については、[データをデータベースに保存](../data-tools/save-data-back-to-the-database.md)と[TableAdapter を使用してデータ更新](../data-tools/update-data-by-using-a-tableadapter.md)を参照してください。
+ メモリ内データ ソースがデータベースに関連付けられている場合、データ ソースへの変更内容を使用して、データベースを更新する必要があります。 データベースの更新の詳細については、次を参照してください。[データをデータベースに保存](../data-tools/save-data-back-to-the-database.md)と[TableAdapter を使用してデータ更新](../data-tools/update-data-by-using-a-tableadapter.md)します。
 
 ### <a name="to-update-the-database"></a>データベースを更新するには
 
-1.  コントロールの <xref:System.Windows.Forms.BindingSource.EndEdit%2A> の <xref:System.Windows.Forms.BindingSource> メソッドを呼び出します。
+1. コントロールの <xref:System.Windows.Forms.BindingSource.EndEdit%2A> の <xref:System.Windows.Forms.BindingSource> メソッドを呼び出します。
 
-     デザイン時に文書またはブックにデータ バインド コントロールを追加すると、 <xref:System.Windows.Forms.BindingSource> が自動的に生成されます。 <xref:System.Windows.Forms.BindingSource> によって、コントロールはプロジェクト内の型指定されたデータセットに接続されます。 詳細については、[BindingSource コンポーネントの概要](/dotnet/framework/winforms/controls/bindingsource-component-overview)を参照してください。
+     デザイン時に文書またはブックにデータ バインド コントロールを追加すると、 <xref:System.Windows.Forms.BindingSource> が自動的に生成されます。 <xref:System.Windows.Forms.BindingSource> によって、コントロールはプロジェクト内の型指定されたデータセットに接続されます。 詳細については、次を参照してください。 [BindingSource コンポーネントの概要](/dotnet/framework/winforms/controls/bindingsource-component-overview)します。
 
      次のコード例は、プロジェクトに <xref:System.Windows.Forms.BindingSource> という名前の `customersBindingSource`が含まれていることを前提としています。
 
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2.  呼び出す、`Update`プロジェクトで生成された TableAdapter のメソッド。
+2. 呼び出す、`Update`プロジェクトで生成された TableAdapter のメソッド。
 
-     デザイン時にドキュメントまたはブックにデータ バインド コントロールを追加すると、TableAdapter は自動的に生成されます。 TableAdapter では、プロジェクト内の型指定されたデータセットをデータベースに接続します。 詳細については、[TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)を参照してください。
+     デザイン時にドキュメントまたはブックにデータ バインド コントロールを追加すると、TableAdapter は自動的に生成されます。 TableAdapter では、プロジェクト内の型指定されたデータセットをデータベースに接続します。 詳細については、次を参照してください。 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)します。
 
      次のコード例は、Northwind データベースの Customers テーブルへの接続があるか、という名前の TableAdapter がプロジェクトに含まれている`customersTableAdapter`という名前の型指定されたデータセットと`northwindDataSet`します。
 

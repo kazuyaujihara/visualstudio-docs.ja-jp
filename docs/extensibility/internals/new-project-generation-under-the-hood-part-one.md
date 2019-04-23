@@ -1,5 +1,5 @@
 ---
-title: 新しいプロジェクトの生成:内部的には、パート 1 |Microsoft Docs
+title: '新しいプロジェクトの生成: 内部的には、パート 1 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,27 +11,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd31b87f6a82ae11a21d2f7373f98ede01e1fdea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605680"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091942"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>新しいプロジェクトの生成:内部的には、パート 1
+# <a name="new-project-generation-under-the-hood-part-one"></a>新しいプロジェクトの生成: 内部的な処理、パート 1
 独自のプロジェクトの種類を作成する方法と考えるでしょうか。 新しいプロジェクトを作成すると実際にはどうなりますか不思議に思うでしょうか。 内部的には時間をかけてを実際に起こっているを確認しましょう。
 
  Visual Studio を調整するいくつかのタスクがあります。
 
--   すべての利用可能なプロジェクトの種類のツリーが表示されます。
+- すべての利用可能なプロジェクトの種類のツリーが表示されます。
 
--   各プロジェクトの種類のアプリケーション テンプレートの一覧を表示し、いずれかを選択することができます。
+- 各プロジェクトの種類のアプリケーション テンプレートの一覧を表示し、いずれかを選択することができます。
 
--   プロジェクトの名前とパスなど、アプリケーションのプロジェクト情報を収集します。
+- プロジェクトの名前とパスなど、アプリケーションのプロジェクト情報を収集します。
 
--   プロジェクト ファクトリにこの情報を渡します。
+- プロジェクト ファクトリにこの情報を渡します。
 
--   現在のソリューションにプロジェクト項目とフォルダーを生成します。
+- 現在のソリューションにプロジェクト項目とフォルダーを生成します。
 
 ## <a name="the-new-project-dialog-box"></a>新しいプロジェクト ダイアログ ボックス
  すべては、新しいプロジェクトのプロジェクトの種類を選択すると開始します。 クリックして始めましょう**新しいプロジェクト**上、**ファイル**メニュー。 **新しいプロジェクト** ダイアログ ボックスが表示されたら、次のように見える。
@@ -90,7 +90,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity
  このサブキーが存在する場合、ルート ノードの位置は、開発者の設定 ダイアログ ボックスによって制御されます。 例えば以下のようにします。
 
- DeveloperActivity REG_SZ VC #
+ DeveloperActivity REG_SZVC#
 
  されることを示します (Visual C#) はルート ノードの Visual Studio が設定されている場合[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]開発します。 それ以外の場合の子ノードであることが**他の言語**します。
 
@@ -114,11 +114,11 @@ devenv /installvstemplates
 
  ときに、**新しいプロジェクト** ダイアログ ボックスが開き、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ProjectTemplates フォルダーを走査し、その構造を再作成、**プロジェクトの種類**ツリーにいくつかの変更。
 
--   ルート ノード、**プロジェクトの種類**ツリーは、アプリケーション テンプレートによって決定されます。
+- ルート ノード、**プロジェクトの種類**ツリーは、アプリケーション テンプレートによって決定されます。
 
--   ノード名はローカライズできますが、特殊文字を含めることができます。
+- ノード名はローカライズできますが、特殊文字を含めることができます。
 
--   並べ替え順序を変更することができます。
+- 並べ替え順序を変更することができます。
 
 ##### <a name="finding-the-root-node-for-a-project-type"></a>プロジェクトの種類のルート ノードの検索
  Visual Studio では、ProjectTemplates フォルダーはスキャン、ときに、すべての .zip ファイルを開き、.vstemplate ファイルを抽出します。 .Vstemplate ファイルでは、XML を使用して、アプリケーション テンプレートについて説明します。 詳細については、次を参照してください。[新しいプロジェクトの生成。内部的には、2 つのパート](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)します。

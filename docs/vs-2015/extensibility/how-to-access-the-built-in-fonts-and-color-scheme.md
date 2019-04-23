@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091526"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>方法: 組み込みのフォントおよび色スキームへをアクセスします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウ�
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>組み込みのフォントと色を使用してカテゴリを登録するには  
   
-1.  特殊な種類のカテゴリのレジストリ エントリの次の場所を作成します。  
+1. 特殊な種類のカテゴリのレジストリ エントリの次の場所を作成します。  
   
      [Hklm \software\microsoft \Visual Studio\\*\<Visual Studio のバージョン >* \FontAndColors\\*\<カテゴリ >*]  
   
      *\<カテゴリ >* カテゴリのローカライズされていない名前を指定します。  
   
-2.  4 つの値をストックのフォントとカラー スキームを使用するレジストリを作成します。  
+2. 4 つの値をストックのフォントとカラー スキームを使用するレジストリを作成します。  
   
     |名前|型|データ|説明|  
     |----------|----------|----------|-----------------|  
@@ -64,7 +64,7 @@ Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウ�
     |NameID|REG_DWORD|ID|VSPackage のローカライズ可能なカテゴリ名のリソース ID。|  
     |ToolWindowPackage|REG_SZ|GUID|VSPackage の実装の GUID、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>インターフェイス。|  
   
-3.  
+3. 
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>システム指定のフォントと色の使用を開始します  
   

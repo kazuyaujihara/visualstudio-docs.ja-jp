@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3120cee504de8565f5caf80034678e9788da70ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975477"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100327"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>チュートリアル: カスタム テキスト テンプレート ホストの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,31 +31,31 @@ A*テキスト テンプレート*<em>ホスト</em>できる環境を提供し�
   
  このチュートリアルでは、以下のタスクを行います。  
   
--   カスタム テキスト テンプレート ホストの作成。  
+- カスタム テキスト テンプレート ホストの作成。  
   
--   カスタム ホストのテスト。  
+- カスタム ホストのテスト。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  このチュートリアルを完了するには、次の製品が必要です。  
   
--   Visual Studio 2010 以降  
+- Visual Studio 2010 以降  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
 ## <a name="creating-a-custom-text-template-host"></a>カスタム テキスト テンプレート ホストの作成  
  このチュートリアルでは、コマンド ラインから呼び出すことのできる実行可能なアプリケーションでカスタム ホストを作成します。 このアプリケーションは、テキスト テンプレート ファイルを引数として受け取り、テンプレートを読み取ります。さらに、エンジンを呼び出してテンプレートを変換し、発生したすべてのエラーをコマンド プロンプト ウィンドウに表示します。  
   
 #### <a name="to-create-a-custom-host"></a>カスタム ホストを作成するには  
   
-1.  Visual Studio で、新しい Visual Basic コンソール アプリケーションまたは C# コンソール アプリケーションを作成し、CustomHost という名前を付けます。  
+1. Visual Studio で、新しい Visual Basic コンソール アプリケーションまたは C# コンソール アプリケーションを作成し、CustomHost という名前を付けます。  
   
-2.  次のアセンブリへの参照を追加します。  
+2. 次のアセンブリへの参照を追加します。  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 以降**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 以降**  
   
-3.  Program.cs ファイルまたは Module1.vb ファイル内のコードを次のコードに置き換えます。  
+3. Program.cs ファイルまたは Module1.vb ファイル内のコードを次のコードに置き換えます。  
   
     ```csharp  
     using System;  
@@ -714,22 +714,22 @@ A*テキスト テンプレート*<em>ホスト</em>できる環境を提供し�
     End Namespace  
     ```  
   
-4.  [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]のみ、開く、**プロジェクト** メニューをクリック**CustomHost のプロパティ**です。 **スタートアップ オブジェクト**一覧で、 **customhost.program** をクリックします。  
+4. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]のみ、開く、**プロジェクト** メニューをクリック**CustomHost のプロパティ**です。 **スタートアップ オブジェクト**一覧で、 **customhost.program** をクリックします。  
   
-5.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
+5. **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
-6.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
+6. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
 ## <a name="testing-the-custom-host"></a>カスタム ホストのテスト  
  カスタム ホストをテストするには、テキスト テンプレートを作成し、カスタム ホストを実行します。次に、テキスト テンプレートの名前をそのカスタム ホストに渡し、テンプレートが変換されることを確認します。  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>テキスト テンプレートを作成してカスタム ホストをテストするには  
   
-1.  テキスト ファイルを作成し、名前を `TestTemplate.tt` にします。  
+1. テキスト ファイルを作成し、名前を `TestTemplate.tt` にします。  
   
      ファイルの作成には、メモ帳など、任意のテキスト エディターを使用できます。  
   
-2.  ファイルに次のコードを追加します。  
+2. ファイルに次のコードを追加します。  
   
     > [!NOTE]
     >  テキスト テンプレートのプログラミング言語は、カスタム ホストのプログラミング言語と同じでなくてもかまいません。  
@@ -772,13 +772,13 @@ A*テキスト テンプレート*<em>ホスト</em>できる環境を提供し�
   
     ```  
   
-3.  ファイルを保存して閉じます。  
+3. ファイルを保存して閉じます。  
   
 #### <a name="to-test-the-custom-host"></a>カスタム ホストをテストするには  
   
-1.  コマンド プロンプト ウィンドウを開きます。  
+1. コマンド プロンプト ウィンドウを開きます。  
   
-2.  カスタム ホストの実行可能ファイルのパスを入力します。ただし、Enter キーはまだ押さないでください。  
+2. カスタム ホストの実行可能ファイルのパスを入力します。ただし、Enter キーはまだ押さないでください。  
   
      たとえば、次のように入力します。  
   
@@ -787,9 +787,9 @@ A*テキスト テンプレート*<em>ホスト</em>できる環境を提供し�
     > [!NOTE]
     >  アドレスを入力する代わりに、**Windows エクスプ ローラー**でファイル CustomHost.exe を参照し、コマンド プロンプト ウィンドウにファイルをドラッグすることもできます。  
   
-3.  空白を入力します。  
+3. 空白を入力します。  
   
-4.  テキスト テンプレート ファイルのパスを入力し、Enter キーを押します。  
+4. テキスト テンプレート ファイルのパスを入力し、Enter キーを押します。  
   
      たとえば、次のように入力します。  
   
@@ -800,11 +800,11 @@ A*テキスト テンプレート*<em>ホスト</em>できる環境を提供し�
   
      カスタム ホスト アプリケーションが実行され、テキスト テンプレート変換プロセスが完了します。  
   
-5.  **Windows エクスプローラー**で、ファイル TestTemplate.tt が含まれているフォルダーを参照します。  
+5. **Windows エクスプローラー**で、ファイル TestTemplate.tt が含まれているフォルダーを参照します。  
   
      このフォルダーには、TestTemplate1.txt ファイルも含まれています。  
   
-6.  このファイルを開き、テキスト テンプレート変換の結果を確認します。  
+6. このファイルを開き、テキスト テンプレート変換の結果を確認します。  
   
      生成されたテキスト出力は、次のようになります。  
   

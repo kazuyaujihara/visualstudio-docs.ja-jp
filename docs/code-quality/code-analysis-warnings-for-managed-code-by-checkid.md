@@ -1,6 +1,6 @@
 ---
 title: マネージド コードのコード分析警告 (CheckId 別)
-ms.date: 11/04/2016
+ms.date: 04/18/2019
 ms.topic: reference
 f1_keywords:
 - CA1000
@@ -160,6 +160,7 @@ f1_keywords:
 - CA2003
 - CA2004
 - CA2006
+- CA2007
 - CA2100
 - CA2101
 - CA2102
@@ -258,12 +259,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72d03c7a9394e760f24023c47a0c7a27881c0cda
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad553cc46f9681ba5a13437960e77b221d330e36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909129"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092475"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Checkid 別のマネージ コードに対するコード分析の警告
 
@@ -311,7 +312,7 @@ ms.locfileid: "55909129"
 | CA1041 | [CA1041:ObsoleteAttribute メッセージを指定します。](../code-quality/ca1041-provide-obsoleteattribute-message.md) | 型またはメンバーが System.ObsoleteAttribute 属性を使用してマークされていますが、この属性で ObsoleteAttribute.Message プロパティが指定されていません。 ObsoleteAttribute でマークされている型またはメンバーをコンパイルすると、属性の Message プロパティが表示されます。 これによって、ユーザーは旧式の型またはメンバーに関する情報を知ることができます。 |
 | CA1043 | [CA 1043:インデクサーは整数または文字列引数を使用して、](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md) | インデクサー (つまり、インデックスされたプロパティ) では、インデックスに整数型または文字列型を使用します。 一般に、このような型はデータ構造のインデックス作成に使用され、ライブラリの操作性も改善されます。 Object 型の使用は、デザイン時に特定の整数型または文字列型を指定できない場合に限定してください。 |
 | CA1044 | [CA 1044:プロパティが書き込み専用することはできません。](../code-quality/ca1044-properties-should-not-be-write-only.md) | 読み取り専用のプロパティは許容され、必要な場合もよくありますが、書き込み専用のプロパティを使用することはデザインのガイドラインで禁止されています。 これは、値を設定できてもその値を参照できず、セキュリティが確保されないためです。 また、読み取りアクセスがないと、共有オブジェクトのステータスを参照できないため、実用性が制限されます。 |
-| CA1045 |[CA 1045:型を参照によって渡しません](../code-quality/ca1045-do-not-pass-types-by-reference.md) | (out または ref を使用した) 型の参照渡しには、ポインターの使用経験、値の型と参照型の違いの理解、および複数の戻り値を持つメソッドの処理が必要です。 開発者全般に向けてライブラリをデザインする場合、ユーザーが out パラメーターまたは ref パラメーターの扱い方を習得することは期待しないでください。 |
+| CA1045 |[CA 1045:型を参照によって渡しません](../code-quality/ca1045-do-not-pass-types-by-reference.md) | (out または ref を使用した) 型の参照渡しには、ポインターの使用経験、値の型と参照型の違いの理解、および複数の戻り値を持つメソッドの処理が必要です。 ライブラリのアーキテクトが設計には一般的なユーザーはユーザーがマスターの操作を期待できません`out`または`ref`パラメーター。 |
 | CA1046 | [CA1046:参照型で、演算子 equals をオーバー ロードしません。](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md) | 参照型の場合、等値演算子は既定の実装でほぼ問題がありません。 既定で、2 つの参照が等値と見なされるのは、同じオブジェクトを参照する場合のみです。 |
 | CA1047 |[CA 1047:Sealed 型の保護されたメンバーを宣言しません](../code-quality/ca1047-do-not-declare-protected-members-in-sealed-types.md) | 型でプロテクト メンバーを宣言するのは、継承する型からメンバーにアクセスまたはオーバーライドできるようにするためです。 定義により、シールされた型から継承することはできません。これは、シールされた型のプロテクト メソッドを呼び出すことができないということを意味します。 |
 | CA1048 | [CA 1048:Sealed 型の仮想メンバーを宣言しません](../code-quality/ca1048-do-not-declare-virtual-members-in-sealed-types.md) | 型でメソッドを仮想と宣言するのは、継承する型が仮想メソッドの実装をオーバーライドできるようにするためです。 定義により、シールされた型から継承することはできません。 これにより、シールされた型の仮想メソッドの意味がなくなります。 |
@@ -324,7 +325,7 @@ ms.locfileid: "55909129"
 | CA1055 | [CA 1055:URI 戻り値は文字列をすることはできません。](../code-quality/ca1055-uri-return-values-should-not-be-strings.md) | この規則では、メソッドは URI を返すと想定されます。 URI の文字列表現は解析エラーやエンコーディング エラーが発生しやすく、セキュリティ上の脆弱性の原因となる場合があります。 System.Uri クラスを使用すると、安全な方法でこのサービスを実現できます。 |
 | CA1056 | [CA 1056:URI のプロパティには、文字列がすることはできません。](../code-quality/ca1056-uri-properties-should-not-be-strings.md) | この規則では、プロパティは URI (Uniform Resource Identifier) を表すと想定されます。 URI の文字列表現は解析エラーやエンコーディング エラーが発生しやすく、セキュリティ上の脆弱性の原因となる場合があります。 System.Uri クラスを使用すると、安全な方法でこのサービスを実現できます。 |
 | CA1057 | [CA 1057:文字列 URI オーバー ロードは、System.Uri オーバー ロードを呼び出す](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md) | 文字列パラメーターが System.Uri パラメーターに置き換えられている点だけが異なるメソッド オーバーロードが型で宣言されています。 文字列パラメーターを使用するオーバーロードは、URI パラメーターを使用するオーバーロードを呼び出しません。 |
-| CA1058 | [CA1058:種類は一定の基本型を拡張する必要がありません。](../code-quality/ca1058-types-should-not-extend-certain-base-types.md) | 外部から参照可能な型では、特定の基本型が拡張されます。 別の型を使用してください。 |
+| CA1058 | [CA1058:型は、一定の基本型を拡張することはできません](../code-quality/ca1058-types-should-not-extend-certain-base-types.md) | 外部から参照可能な型では、特定の基本型が拡張されます。 別の型を使用してください。 |
 | CA1059 |[CA 1059:メンバーが特定の具象型に公開することはできません。](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md) | 具象型は、完全な実装を含む型であるため、インスタンス化できます。 このメンバーを広範囲に使用するには、具象型を推奨インターフェイスによって置き換えます。 |
 | CA1060 | [CA1060:P/invoke を NativeMethods クラスに移動します。](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | System.Runtime.InteropServices.DllImportAttribute 属性でマークされているメソッドなどのプラットフォーム呼び出しメソッド、または [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] で Declare キーワードを使用して定義されたメソッドが、アンマネージ コードにアクセスしています。 これらのメソッドは、NativeMethods、SafeNativeMethods、UnsafeNativeMethods の各クラスのいずれかに含まれる必要があります。 |
 | CA1061 |[CA 1061:基底クラスのメソッドを隠ぺいしません。](../code-quality/ca1061-do-not-hide-base-class-methods.md) | 派生メソッドのパラメーター シグネチャ内のある型が、基本メソッドのパラメーター シグネチャ内のそれに対応する型より弱く型指定されていることが、両者の唯一の相違点である場合、基本型内のメソッドが派生型内の同じ名前のメソッドによって隠ぺいされます。 |
@@ -333,7 +334,7 @@ ms.locfileid: "55909129"
 | CA1064 | [CA1064:例外はパブリックである必要があります。](../code-quality/ca1064-exceptions-should-be-public.md) | 内部例外は、その内部スコープ内でのみ認識されます。 内部スコープの外側にある例外は、基本例外を使用しなければキャッチできません。 場合、内部例外から継承<xref:System.Exception>、 <xref:System.SystemException>、または<xref:System.ApplicationException>、外部のコードには、例外の処理方法を把握するための十分な情報はありません。 |
 | CA1065 | [CA 1065:予期しない場所で例外を発生させません](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 例外をスローしないはずのメソッドが例外をスローします。 |
 | CA1300 | [CA 1300:Messageboxoption を指定します](../code-quality/ca1300-specify-messageboxoptions.md) | テキストを右から左へ読むカルチャでメッセージ ボックスを正しく表示するには、MessageBoxOptions 列挙体の RightAlign メンバーと RtlReading メンバーを、Show メソッドに渡す必要があります。 |
-| CA1301 | [CA 1301:アクセラレータが重複の回避します。](../code-quality/ca1301-avoid-duplicate-accelerators.md) | Alt キーを使用するアクセス キー (アクセラレータとも呼ばれます) によって、キーボードからコントロールにアクセスできます。 アクセス キーの重複したコントロールがあると、アクセス キーの動作は不明確になります。 |
+| CA1301 | [CA 1301:アクセラレータが重複の回避します。](../code-quality/ca1301-avoid-duplicate-accelerators.md) | Alt キーを使用するアクセス キー (アクセラレータとも呼ばれます) によって、キーボードからコントロールにアクセスできます。 複数のコントロールには、重複するアクセス キーがある、アクセス キーの動作は明確に定義されません。 |
 | CA1302 | [CA 1302:ロケール特有の文字列をハードコードしません](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md) | System.Environment.SpecialFolder 列挙体には、特殊なシステム フォルダーを参照するメンバーが含まれます。 このフォルダーの位置は、オペレーティング システムによって異なる場合、ユーザーが位置を変更する場合、および位置がローカライズされる場合があります。 Environment.GetFolderPath メソッドは、Environment.SpecialFolder 列挙体に関連付けられ、ローカライズされ、現在実行されているコンピューターに適切な位置を返します。 |
 | CA1303 | [CA 1303:ローカライズされたパラメーターとしてリテラルを渡さないでください。](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md) | 外部から参照できるメソッドに渡し文字列リテラルをパラメーターとしてコンス トラクターまたはメソッドは、.NET Framework クラス ライブラリで、その文字列はローカライズ可能にする必要があります。 |
 | CA1304 | [CA1304:CultureInfo を指定します](../code-quality/ca1304-specify-cultureinfo.md) | System.Globalization.CultureInfo パラメーターを受け入れるオーバーロードを持つメンバーを呼び出しているメソッドまたはコンストラクターが、CultureInfo パラメーターを使用するオーバーロードを呼び出していません。 CultureInfo オブジェクトまたは System.IFormatProvider オブジェクトが指定されない場合、オーバーロードされたメンバーから提示された既定値は、すべてのロケールに効果が及ばない可能性があります。 |
@@ -407,7 +408,7 @@ ms.locfileid: "55909129"
 | CA1821 | [CA1821: 空のファイナライザーを削除します](../code-quality/ca1821-remove-empty-finalizers.md) | オブジェクトの有効期間の追跡に関連するパフォーマンス オーバーヘッドが増大するため、ファイナライザーは可能な限り使用しないでください。 空のファイナライザーを使用すると、オーバーヘッドが増大するだけで何の利点もありません。 |
 | CA1822 |[CA1822:静的メンバーをマーク](../code-quality/ca1822-mark-members-as-static.md) | インスタンス データにアクセスしない、またはインスタンス メソッドを呼び出さないメンバーは、静的 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では共有) としてマークできます。 メソッドを静的としてマークすると、コンパイラはこれらのメンバーに対する非仮想呼び出しサイトを出力します。 パフォーマンス重視のコードでは、これにより大きくパフォーマンスを向上できます。 |
 | CA1823 | [CA1823:使用されていないプライベート フィールドを回避します。](../code-quality/ca1823-avoid-unused-private-fields.md) | アセンブリ内でアクセスされていないと思われるプライベート フィールドが検出されました。 |
-| CA1824 |[CA1824:アセンブリを neutralresourceslanguageattribute に設定します](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md) | NeutralResourcesLanguage 属性は、ResourceManager に対し、アセンブリのニュートラル カルチャのリソースを表示するために使用した言語を通知します。 これにより、読み込んだ最初のリソースに対する検索のパフォーマンスが向上し、ワーキング セットを縮小できます。 |
+| CA1824 |[CA1824:アセンブリを neutralresourceslanguageattribute に設定します](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md) | NeutralResourcesLanguage 属性は、アセンブリのニュートラル カルチャのリソースを表示するために使用された言語のリソース マネージャーに通知します。 これにより、読み込んだ最初のリソースに対する検索のパフォーマンスが向上し、ワーキング セットを縮小できます。 |
 | CA1900 | [CA 1900:値型フィールドはポータブルでなければなりません](../code-quality/ca1900-value-type-fields-should-be-portable.md) | この規則は、明示的なレイアウトによって宣言された構造体が、64 ビット オペレーティング システムでアンマネージ コードにマーシャリングされるときに、適切にアライメントされるかどうかを確認します。 |
 | CA1901 | [CA1901:P/invoke 宣言はポータブルでなければなりません](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md) | この規則では、P/Invoke の各パラメーターのサイズと戻り値が評価され、32 ビットおよび 64 ビット オペレーティング システムのアンマネージ コードにマーシャリングされたときのパラメーターのサイズが正しいことが検証されます。 |
 | CA1903 | [CA1903:対象のフレームワークから API のみを使用します。](../code-quality/ca1903-use-only-api-from-targeted-framework.md) | メンバーまたは型が、プロジェクトの対象のフレームワークに含まれていない Service Pack で導入されたメンバーまたは型を使用しています。 |
@@ -416,7 +417,8 @@ ms.locfileid: "55909129"
 | CA2002 |[CA 2002:Id が不十分なオブジェクトをロックしないでください。](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md) |アプリケーション ドメインの境界を越えてオブジェクトに直接アクセスできる場合、そのオブジェクトの ID は不十分と表現されます。 スレッドで ID が不十分なオブジェクトをロックしようとすると、ブロックされることがあります。たとえば、異なるアプリケーション ドメインの別スレッドで、既に同じオブジェクトがロックされている場合です。 |
 | CA2003 |[CA 2003:ファイバーをスレッドとして処理しません](../code-quality/ca2003-do-not-treat-fibers-as-threads.md) | マネージド スレッドが [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] スレッドとして扱われています。 |
 | CA2004 | [CA 2004:GC への呼び出しを削除します。KeepAlive](../code-quality/ca2004-remove-calls-to-gc-keepalive.md) | SafeHandle の使用に変更する場合、すべての GC.KeepAlive (object) の呼び出しを削除します。 この場合、クラスに GC.KeepAlive の呼び出しを含めることはできません。 クラスはファイナライザーを持っていない代わりに、SafeHandle を使用して OS ハンドルを終了していることが前提となっています。 |
-| CA2006 | [CA2006:SafeHandle を使用して、ネイティブ リソースをカプセル化するには](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md) | マネージド コードで IntPtr を使用すると、セキュリティ上の問題および信頼性の問題が発生する可能性があります。 すべての IntPtr の使用状況をチェックして、SafeHandle または類似のテクノロジに置き換える必要があるかどうかを判断してください。 |
+| CA2006 | [CA2006:SafeHandle を使用して、ネイティブ リソースをカプセル化するには](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md) | マネージド コードで IntPtr を使用すると、セキュリティ上の問題および信頼性の問題が発生する可能性があります。 すべての IntPtr の使用状況をレビューして、SafeHandle または類似のテクノロジに置き換える必要があるかどうかを判断してください。 |
+| CA2007 | [CA2007:タスクを直接待機しません](ca2007-do-not-directly-await-task.md) | 非同期メソッド[待機](/dotnet/csharp/language-reference/keywords/await)、<xref:System.Threading.Tasks.Task>直接します。 非同期のメソッドを待機すると、<xref:System.Threading.Tasks.Task>タスクを作成した同じスレッドで直接、継続が発生します。 この動作は、パフォーマンスの観点からコスト高にすることができます、UI スレッドでデッドロックが発生することができます。 呼び出し元を検討してください。 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 、意図したものの継続を通知します。 |
 | CA2100 | [CA 2100:SQL クエリのセキュリティの脆弱性を確認します。](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md) | メソッドに渡された文字列引数から構築された文字列を使用して System.Data.IDbCommand.CommandText プロパティが設定されています。 この規則では、文字列引数にユーザー入力が含まれていることが想定されています。 ユーザー入力から構築された SQL コマンド文字列には、SQL 注入攻撃に対する脆弱性があります。 |
 | CA2101 |[CA 2101:P/invoke 文字列引数に対してマーシャ リングを指定します。](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md) | プラットフォーム呼び出しメンバーが、部分信頼の呼び出し元を許可し、文字列パラメーターを持ち、さらにその文字列を明示的にマーシャリングしていません。 これはセキュリティ上の脆弱性となる可能性があります。 |
 | CA2102 | [CA 2102:汎用ハンドラーで非 CLSCompliant の例外をキャッチします。](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md) | アセンブリ内の RuntimeCompatibilityAttribute でマークされていないメンバーまたは RuntimeCompatibility(WrapNonExceptionThrows = false) でマークされているメンバーには、System.Exception を処理する catch ブロックがあり、その直後に汎用 catch ブロックはありません。 |
@@ -496,7 +498,7 @@ ms.locfileid: "55909129"
 | CA2232 | [CA2232:Mark の Windows フォームのエントリ ポイントを stathread に設定します](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md) | STAThreadAttribute は、アプリケーションの COM スレッド処理モデルがシングルスレッド アパートメントであることを示します。 この属性は、Windows フォームを使用するすべてのアプリケーションのエントリ ポイントに指定する必要があります。省略すると、Windows コンポーネントが正常に機能しないことがあります。 |
 | CA2233 |[CA2233:操作はオーバーフローできません。](../code-quality/ca2233-operations-should-not-overflow.md) | 算術演算を実行する前にオペランドを検証してください。 これにより、演算結果が関連するデータ型で使用できる値の範囲を超えないことを確認できます。 |
 | CA2234 | [CA2234:文字列の代わりに System.Uri オブジェクトを渡します](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md) | "uri"、"URI"、"urn"、"URN"、"url"、または "URL" という名前を持つ文字列パラメーターが指定されているメソッドに対して、呼び出しが行われました。 そのメソッドの型宣言に対応するメソッドのオーバーロードが存在し、それに対して System.Uri パラメーターが指定されています。 |
-| CA2235 | [CA2235:すべてのシリアル化不可能なフィールドをマークします。](../code-quality/ca2235-mark-all-non-serializable-fields.md) | シリアル化できない型のインスタンス フィールドが、シリアル化できる型で宣言されています。 |
+| CA2235 | [CA2235:すべてのシリアル化不可能なフィールドを設定します](../code-quality/ca2235-mark-all-non-serializable-fields.md) | シリアル化できない型のインスタンス フィールドが、シリアル化できる型で宣言されています。 |
 | CA2236 | [CA2236:ISerializable 型の基本クラス メソッドを呼び出す](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md) | この規則違反を修正するには、基本型の GetObjectData メソッドまたはシリアル化コンストラクターを、対応する派生型のメソッドまたはコンストラクターから呼び出します。 |
 | CA2237 | [CA2237:ISerializable 型を serializableattribute に設定します](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md) | 型が共通言語ランタイムでシリアル化できると認識されるようにするには、型を SerializableAttribute 属性でマークする必要があります。型が ISerializable インターフェイスの実装を通じてカスタムのシリアル化ルーチンを使用している場合でも、マークする必要があります。 |
 | CA2238 |[CA2238:シリアル化メソッドを正しく実装します。](../code-quality/ca2238-implement-serialization-methods-correctly.md) | シリアル化イベントを処理するメソッドに、適切なシグネチャ、戻り値の型、または参照範囲がありません。 |

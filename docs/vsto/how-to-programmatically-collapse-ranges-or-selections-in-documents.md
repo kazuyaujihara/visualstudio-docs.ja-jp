@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6550ac7b2ea1d6780122f0064f39defa4859731
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6174688bbab5655a7a108e1c971e926ee5977ba1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598235"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101732"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>方法: プログラムまたはドキュメント内の選択範囲を折りたたむ
   <xref:Microsoft.Office.Interop.Word.Range> または <xref:Microsoft.Office.Interop.Word.Selection> オブジェクトを使用する場合、既存のテキストが上書きされないように、テキストを挿入する前に、選択範囲を挿入ポイントに変更できます。 両方の<xref:Microsoft.Office.Interop.Word.Range>と<xref:Microsoft.Office.Interop.Word.Selection>オブジェクトを利用する、折りたたみメソッドがある、<xref:Microsoft.Office.Interop.Word.WdCollapseDirection>列挙値。
@@ -72,7 +72,7 @@ ms.locfileid: "56598235"
 
 ### <a name="to-collapse-a-range-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズで範囲を縮小するには
 
-1.  次の例は、ドキュメント レベルのカスタマイズのメソッド全体を示しています。 このコードを使用するには、プロジェクトの `ThisDocument` クラスから実行します。
+1. 次の例は、ドキュメント レベルのカスタマイズのメソッド全体を示しています。 このコードを使用するには、プロジェクトの `ThisDocument` クラスから実行します。
 
      [!code-vb[Trin_VstcoreWordAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#45)]
@@ -81,7 +81,7 @@ ms.locfileid: "56598235"
 
 ### <a name="to-collapse-a-range-in-a-vsto-add-in"></a>VSTO アドインで範囲を縮小するには
 
-1.  次の例では、VSTO アドインの完全なメソッドを示します。 このコードを使用するには、プロジェクトの `ThisAddIn` クラスから実行します。
+1. 次の例では、VSTO アドインの完全なメソッドを示します。 このコードを使用するには、プロジェクトの `ThisAddIn` クラスから実行します。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12fc82fd0c04e9f05ff55be24c3527ca95a357fb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34727c0949ab4ad6baf8e91b27b20115cf074b92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096362"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>方法: アドイン ユーザー インターフェイス エラーを表示します。
   既定では、VSTO アドインを Microsoft Office ユーザー インターフェイス (UI) と失敗した場合、操作をしようとするとエラー メッセージは表示されません。 しかし、UI に関連するエラー メッセージを表示するように Microsoft Office アプリケーションを構成できます。 これらのメッセージを使用すると、なぜカスタム リボンが表示されない、またはリボンが表示されますが、コントロールが表示されない理由を判断します。
@@ -29,15 +29,15 @@ ms.locfileid: "56596011"
 
 ## <a name="to-show-vsto-add-in-user-interface-errors"></a>VSTO アドインのユーザー インターフェイス エラーを表示するには
 
-1.  アプリケーションを起動します。
+1. アプリケーションを起動します。
 
-2.  **[ファイル]** タブをクリックします。
+2. **[ファイル]** タブをクリックします。
 
-3.  **[オプション]** をクリックします。
+3. **[オプション]** をクリックします。
 
-4.  [カテゴリ] ウィンドウで **[詳細]** をクリックします。
+4. [カテゴリ] ウィンドウで **[詳細]** をクリックします。
 
-5.  詳細ウィンドウで、 **[VSTO アドイン ユーザー インターフェイスのエラーを表示する]** を選び、 **[OK]** をクリックします。
+5. 詳細ウィンドウで、 **[VSTO アドイン ユーザー インターフェイスのエラーを表示する]** を選び、 **[OK]** をクリックします。
 
     > [!NOTE]
     >  Outlook の場合、詳細ウィンドウの **[開発]** セクションに **[VSTO アドイン ユーザー インターフェイスのエラーを表示する]** チェック ボックスがあります。 その他のアプリケーションの場合、このチェック ボックスは、詳細ウィンドウの **[全般]** セクションにあります。

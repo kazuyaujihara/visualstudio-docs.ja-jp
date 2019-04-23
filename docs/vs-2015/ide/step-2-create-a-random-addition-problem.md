@@ -9,30 +9,30 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 403dda0aa915e2a969b5bc9eef2be82ba58b2e33
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 318caec1f96bc0b69a6fe9540231608a8636e107
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099501"
 ---
-# <a name="step-2-create-a-random-addition-problem"></a>手順 2: ランダムな加算問題の作成
+# <a name="step-2-create-a-random-addition-problem"></a>手順 2: ランダムな加算問題を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルの第 2 部では、乱数に基づく計算問題を追加して、クイズに挑みます。 また、`StartTheQuiz()` という名前の、問題に記入して、カウントダウン タイマーを開始するメソッドを作成します。 このチュートリアルの後半では、減算、乗算、除算問題を追加します。  
   
 > [!NOTE]
->  このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2: 制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。  
+>  このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)です。  
   
 ### <a name="to-create-a-random-addition-problem"></a>ランダムな加算問題を作成するには  
   
-1.  フォーム デザイナーで、フォーム (Form1) を選択します。  
+1. フォーム デザイナーで、フォーム (Form1) を選択します。  
   
-2.  メニュー バーで **[表示]**、 **[コード]** の順に選択します。  
+2. メニュー バーで **[表示]**、 **[コード]** の順に選択します。  
   
      使用しているプログラミング言語によって Form1.cs または Form1.vb が表示されるため、フォームの分離コードを表示できます。  
   
-3.  次のように、コードの先頭付近に `Random` ステートメントを追加して `new` オブジェクトを作成します。  
+3. 次のように、コードの先頭付近に `Random` ステートメントを追加して `new` オブジェクトを作成します。  
   
      [!code-csharp[VbExpressTutorial3Step2#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial3Step2#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#1)]  
@@ -43,7 +43,7 @@ ms.locfileid: "54804657"
   
      すぐにメソッドをビルドして解答を確認するため、クイズは変数を使用して各問題に生成する乱数を格納する必要があります。 [変数](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa)または[型](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad)に関するページを参照してください。 変数を適切に使用するためには、変数を宣言する必要があります。これは名前およびデータ型を一覧表示することを意味します。  
   
-4.  2 つの整数変数をフォームに追加し、**addend1** と **addend2** という名前を付けます。  
+4. 2 つの整数変数をフォームに追加し、**addend1** と **addend2** という名前を付けます。  
   
     > [!NOTE]
     >  整数変数は、C# では int、Visual Basic では Integer と呼ばれます。 この種類の変数は、-2147483648 から 2147483647 の正または負の数を格納し、整数のみを格納することができ、小数は格納できません。  
@@ -53,7 +53,7 @@ ms.locfileid: "54804657"
      [!code-csharp[VbExpressTutorial3Step2#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial3Step2#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#2)]  
   
-5.  `StartTheQuiz()` と名付けられたメソッドを追加しますが、このメソッドは `Random` オブジェクトの `Next()` メソッドを使用してラベルの乱数を表示します。 `StartTheQuiz()` は最終的にすべての問題に入力し、タイマーを開始するので、コメントを追加します。 関数は次のようになります。  
+5. `StartTheQuiz()` と名付けられたメソッドを追加しますが、このメソッドは `Random` オブジェクトの `Next()` メソッドを使用してラベルの乱数を表示します。 `StartTheQuiz()` は最終的にすべての問題に入力し、タイマーを開始するので、コメントを追加します。 関数は次のようになります。  
   
      [!code-csharp[VbExpressTutorial3Step2#3](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#3)]
      [!code-vb[VbExpressTutorial3Step2#3](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#3)]  
@@ -75,18 +75,18 @@ ms.locfileid: "54804657"
   
      これらのステートメントでは、**plusLeftLabel** および **plusRightLabel** の **Text** プロパティを設定し、2 つの乱数が表示されるようになっています。 数値をテキストに変換するには、整数の `ToString()` メソッドを使用する必要があります。 (プログラミングでは、文字列はテキストを意味します。 ラベル コントロールには、数ではなく、テキストのみが表示されます。  
   
-6.  デザイン ウィンドウで、**[Start]** ボタンをダブルクリックするか、または [Start] ボタンをクリックして、Enter キーを押します。  
+6. デザイン ウィンドウで、**[Start]** ボタンをダブルクリックするか、または [Start] ボタンをクリックして、Enter キーを押します。  
   
      クイズの受け手がこのボタンをクリックすると、クイズが開始され、その動作を実装する Click イベント ハンドラーが追加されました。  
   
-7.  次の 2 つのステートメントを追加します。  
+7. 次の 2 つのステートメントを追加します。  
   
      [!code-csharp[VbExpressTutorial3Step2#4](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#4)]
      [!code-vb[VbExpressTutorial3Step2#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#4)]  
   
      最初のステートメントは新しい `StartTheQuiz()` メソッドを呼び出します。 2 番目のステートメントは **startButton** コントロールの **Enabled** プロパティを **False** に設定するため、クイズの受け手はクイズ中にこのボタンをクリックできません。  
   
-8.  コードを保存し、実行して、**[Start]** ボタンをクリックします。  
+8. コードを保存し、実行して、**[Start]** ボタンをクリックします。  
   
      次の図に示すように、ランダムな加算問題が表示されます。  
   
@@ -97,6 +97,6 @@ ms.locfileid: "54804657"
   
 ### <a name="to-continue-or-review"></a>続行または確認するには  
   
--   チュートリアルの次の手順に進むには、「[手順 3: カウントダウン タイマーの追加](../ide/step-3-add-a-countdown-timer.md)」を参照してください。  
+- チュートリアルの次の手順に進むには、「[手順 3: カウント ダウン タイマーの追加](../ide/step-3-add-a-countdown-timer.md)します。  
   
--   チュートリアルの前の手順に戻るには、「[手順 1: プロジェクトの作成とフォームへのラベルの追加](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「[手順 1: プロジェクトを作成し、フォームにラベルを追加](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)します。

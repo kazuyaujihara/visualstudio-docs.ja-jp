@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9adab2cbf429860840e60b88065cf445c882fd2c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099677"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>シナリオ:視覚化およびモデリングを使用して設計を変更する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "59002255"
   
 - [アプリのモデルを生成する](../modeling/create-models-for-your-app.md)  
   
-##  <a name="ScenarioOverview"></a> シナリオの概要  
+## <a name="ScenarioOverview"></a> シナリオの概要  
  このシナリオでは、2 つの架空の会社のソフトウェア開発ライフ サイクルの録画がについて説明します。Dinner Now と Lucerne の発行。 Dinner Now は、シアトルで Web ベースの料理宅配サービスを提供しています。 顧客は、Dinner Now の Web サイトで料理を注文し、料金を支払うことができます。 注文は最寄りのレストランに送信され、そこから料理が配達されます。 ニューヨークを拠点とする Lucerne Publishing は、オフラインとオンラインでさまざまなビジネスを展開しています。 その 1 つに、顧客がレストランのレビューを投稿できる Web サイトがあります。  
   
  先ごろ Dinner Now を買収した Lucerne は、現在次のような変更を計画しています。  
@@ -78,7 +78,7 @@ ms.locfileid: "59002255"
   
 - [更新されたコードのテスト、検証、およびチェックイン](#TestValidateCheckInCode)  
   
-##  <a name="ModelingDiagramsTools"></a> ソフトウェア開発におけるアーキテクチャ図とモデル図の役割  
+## <a name="ModelingDiagramsTools"></a> ソフトウェア開発におけるアーキテクチャ図とモデル図の役割  
  ソフトウェア開発ライフサイクルのさまざまなステージにおけるこれらのツールの役割を次の表に示します。  
   
 ||**ユーザー要求のモデリング**|**ビジネス プロセスのモデリング**|**システムのアーキテクチャと設計**|**コードの視覚化と精査**|**検証**|  
@@ -122,7 +122,7 @@ ms.locfileid: "59002255"
   > [!NOTE]
   >  Visual Studio のいくつかのバージョンでは、レイヤー検証と、視覚化およびモデリングのためのコード マップと UML 図の読み取り専用のバージョンがサポートされています。 この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
-##  <a name="UnderstandingCommunicating"></a> システムに関する情報の把握と伝達  
+## <a name="UnderstandingCommunicating"></a> システムに関する情報の把握と伝達  
  Visual Studio のモデリング図は、使用する順番は特に決まっていません。したがって、それぞれのニーズや方法に合わせて使用できます。 モデルは通常、プロジェクト全体を通じて繰り返し頻繁に参照されます。 図にはそれぞれ長所があるため、さまざまな図を使用することにより、開発中のシステムのさまざまな側面を把握、記述、および伝達できます。  
   
  Dinner Now と Lucerne は、プロジェクトに関するコミュニケーションのための共通の言語として図を使用しています。 たとえば、Dinner Now では次のような作業に図を使用しています。  
@@ -165,7 +165,7 @@ ms.locfileid: "59002255"
   
 - [更新されたコードのテスト、検証、およびチェックイン](#TestValidateCheckInCode)  
   
-###  <a name="UnderstandingBPMandSystemDesign"></a> ビジネス プロセスにおけるシステムの役割をについてください。  
+### <a name="UnderstandingBPMandSystemDesign"></a> ビジネス プロセスにおけるシステムの役割をについてください。  
  Lucerne は、Dinner Now のビジネス プロセスについてより深く知りたいと考えています。 そのため、Dinner Now に関する情報を整理するために以下の図を生成しました。  
   
 |**図**|**記述する内容**|  
@@ -192,7 +192,7 @@ ms.locfileid: "59002255"
   
  **UML クラス図**  
   
-###  <a name="DescribingURM"></a> 新しいまたは更新されたユーザーの要件を記述します。  
+### <a name="DescribingURM"></a> 新しいまたは更新されたユーザーの要件を記述します。  
  Lucerne は、Dinner Now のシステムに機能を追加して、顧客がレストランのレビューを読んだり投稿したりできるようにしたいと考えています。 そのため、この新しい要求を記述し、それについて議論できるようにするために、以下の図を更新しました。  
   
 |**図**|**記述する内容**|  
@@ -219,7 +219,7 @@ ms.locfileid: "59002255"
   
  **UML クラス図**  
   
-###  <a name="CreatingTests"></a> モデルからテストを作成します。  
+### <a name="CreatingTests"></a> モデルからテストを作成します。  
  Dinner Now と Lucerne は、システムに変更を加える前にシステムとそのコンポーネントの完全なテスト セットを用意する必要があるという点で合意しました。 Lucerne には、システム レベルとコンポーネント レベルのテストを担当する専任のチームが存在します。 このチームは、Dinner Now で生成されたテストを再利用し、UML 図を使用して次のように構成しました。  
   
 - 各ユース ケースを 1 つまたは複数のテストで表し、 ユース ケース図の要素を Team Foundation Server のテスト ケース作業項目にリンクします。  
@@ -236,7 +236,7 @@ ms.locfileid: "59002255"
   
 - [UML モデルの検証](../modeling/validate-your-uml-model.md)  
   
-###  <a name="DeterminingChanges"></a> Identifying Changes to the Existing System  
+### <a name="DeterminingChanges"></a> Identifying Changes to the Existing System  
  Dinner Now では、新しい要求を満たすためのコストを見積もる必要があります。 これは、その変更がシステムの他の部分にどのくらい影響するかによって違ってきます。 そのため、Dinner Now の開発者の 1 人が、既存のコードから次のマップと図を作成しました。  
   
 |**マップまたは図**|**表示される内容**|  
@@ -280,7 +280,7 @@ ms.locfileid: "59002255"
   
  **UML シーケンス図**  
   
-###  <a name="ValidatingCode"></a> コードと設計の一致の維持  
+### <a name="ValidatingCode"></a> コードと設計の一致の維持  
  Dinner Now では、更新されたコードが設計と一致していることを確認する必要があります。 そのため、システムの機能のレイヤーを記述するレイヤー図を生成し、レイヤー間で許容される依存関係を指定して、ソリューションの成果物をそれらのレイヤーに関連付けました。  
   
 |**図**|**記述する内容**|  
@@ -297,13 +297,13 @@ ms.locfileid: "59002255"
   
  参照トピック  
   
--   [ビルド プロセスの定義](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [ビルド プロセスの定義](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
--   [変更内容を検証するためのゲート チェックイン ビルド プロセスの定義](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [変更内容を検証するためのゲート チェックイン ビルド プロセスの定義](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
--   [ビルド プロセス テンプレートのカスタマイズ](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [ビルド プロセス テンプレートのカスタマイズ](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-###  <a name="GeneralTips"></a> General Tips for Creating and Using Models  
+### <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
 - ほとんどの図は、線で接続された一連のノードで構成されています。 図の種類ごとに異なるノードと線がツールボックスに表示されます。  
   
@@ -323,7 +323,7 @@ ms.locfileid: "59002255"
   
   参照してください[アプリのモデルを作成する](../modeling/create-models-for-your-app.md)します。  
   
-###  <a name="PlanningTracking"></a> Planning and Tracking Work  
+### <a name="PlanningTracking"></a> Planning and Tracking Work  
  Visual Studio のモデリング図は Team Foundation Server と統合されているため、Dinner Now と Lucerne にとって作業の計画、管理、および追跡がより簡単になります。 Dinner Now と Lucerne はどちらも、モデルを使用してテスト ケースと開発タスクを特定し、必要な作業を見積もることができます。 Lucerne では、Team Foundation Server の作業項目を作成し、ユース ケースやコンポーネントなどのモデル要素にリンクしています。 これにより、作業の進行状況を監視したり、関連するユーザーの要求を見直して、 変更後も引き続きそれらの要求が満たされていることを確認したりできます。  
   
  Dinner Now と Lucerne は、作業の進行に伴って、タスクに費やされた時間を反映して作業項目を更新できます。 また、Team Foundation Server の以下の機能を使用して、作業の状況を監視および報告できます。  
@@ -344,7 +344,7 @@ ms.locfileid: "59002255"
   
 - [Project を使用したバックログとタスクの作成](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
-###  <a name="TestValidateCheckInCode"></a> コードのテスト、検証、およびチェックイン  
+### <a name="TestValidateCheckInCode"></a> コードのテスト、検証、およびチェックイン  
  Dinner Now と Lucerne は、作業が完了するたびにコードを Team Foundation バージョン管理にチェックインします。その作業を忘れると、Team Foundation Server から通知されます。 Team Foundation Server でチェックインが受け入れられるためには、単体テストとレイヤー検証を実行して、コードをテスト ケースと設計に照らし合わせて検証する必要があります。 Dinner Now と Lucerne は、Team Foundation Server を使用して、ビルド、自動化された単体テスト、およびレイヤー検証を定期的に実行しています。 これにより、コードが以下の基準を満たしていることを確認できます。  
   
 - 正常に動作する。  
@@ -367,7 +367,7 @@ ms.locfileid: "59002255"
   
 - [アプリケーションのビルド](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-##  <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
+## <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne と Dinner Now は、支払いシステムを統合する必要があります。 以降では、この作業に役立つ Visual Studio のモデル図について説明します。  
   
 - [ユーザー要件を理解するには。ユース ケース図](#UnderstandUseCases)  
@@ -396,7 +396,7 @@ ms.locfileid: "59002255"
   
 - [アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)  
   
-###  <a name="UnderstandUseCases"></a> ユーザー要件を理解するには。ユース ケース図  
+### <a name="UnderstandUseCases"></a> ユーザー要件を理解するには。ユース ケース図  
  ユース ケース図には、システムがサポートするアクティビティと、それらのアクティビティを実行する人の概要が示されます。 Lucerne では、ユース ケース図を使用することにより、Dinner Now のシステムについて以下の情報を得ることができます。  
   
 - 顧客が注文を作成する。  
@@ -447,13 +447,13 @@ ms.locfileid: "59002255"
 #### <a name="summary-strengths-of-use-case-diagrams"></a>概要:ユース ケース図の長所  
  ユース ケース図を使用すると、以下の要素を視覚化できます。  
   
--   システムがサポートするアクティビティまたはサポートしないアクティビティ  
+- システムがサポートするアクティビティまたはサポートしないアクティビティ  
   
--   それらのアクティビティを実行する人または外部システム  
+- それらのアクティビティを実行する人または外部システム  
   
--   各アクティビティをサポートするシステムの主要コンポーネント (親システム内に入れ子にされたサブシステムとして表すことができます)  
+- 各アクティビティをサポートするシステムの主要コンポーネント (親システム内に入れ子にされたサブシステムとして表すことができます)  
   
--   ユース ケースがより小さなユース ケースやバリエーションに分割されるしくみ  
+- ユース ケースがより小さなユース ケースやバリエーションに分割されるしくみ  
   
 #### <a name="relationship-to-other-diagrams"></a>他の図との関係  
   
@@ -463,7 +463,7 @@ ms.locfileid: "59002255"
 |シーケンス図|ユース ケースの参加要素の間の相互作用のシーケンス。<br /><br /> 参照トピック<br /><br /> -   [UML シーケンス図:参照](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML シーケンス図:ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |クラス図 (UML)|ユース ケースに参加するエンティティまたは型。<br /><br /> 参照トピック<br /><br /> -   [UML クラス図:参照](../modeling/uml-class-diagrams-reference.md)<br />-   [UML クラス図:ガイドライン](../modeling/uml-class-diagrams-guidelines.md)|  
   
-###  <a name="UnderstandActivities"></a> ビジネス プロセスを理解するには。アクティビティ図  
+### <a name="UnderstandActivities"></a> ビジネス プロセスを理解するには。アクティビティ図  
  アクティビティ図は、ビジネス プロセスのステップのフローを記述して、ワークフローを簡単に伝達できるようにします。 1 つの開発プロジェクトに複数のアクティビティ図を含めることができます。 通常は、1 つの外部アクション (料理の注文、メニューの更新、新しいレストランの追加など) に起因するすべてのアクションがアクティビティに含まれます。 複雑なアクションの詳細をアクティビティで記述する場合もあります。  
   
  Lucerne は、Lucerne が支払いを処理してレストランへの支払いを行うことを示すために、アクティビティ図を次のように更新して、 Dinner Now Payment System を Lucerne Payment System に置き換えました (変更箇所が強調表示されています)。  
@@ -480,9 +480,9 @@ ms.locfileid: "59002255"
   
  参照トピック  
   
--   [UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)  
+- [UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)  
   
--   [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)  
+- [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="drawing-an-activity-diagram"></a>アクティビティ図の描画  
  アクティビティ図の主な機能を以下に示します。  
@@ -519,7 +519,7 @@ ms.locfileid: "59002255"
 |ユース ケース図|各アクターが実行するアクティビティの概要を示します。<br /><br /> 参照トピック<br /><br /> -   [UML ユース ケース図:参照](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML ユース ケース図:ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)|  
 |コンポーネント図|明確に定義された一連のインターフェイスを通じて振る舞いを提供または使用する再利用可能なパートのコレクションとしてシステムを視覚化します。<br /><br /> 参照トピック<br /><br /> -   [UML コンポーネント図:参照](../modeling/uml-component-diagrams-reference.md)<br />-   [UML コンポーネント図:ガイドライン](../modeling/uml-component-diagrams-guidelines.md)|  
   
-###  <a name="DescribeComponents"></a> システムの構造について説明します。コンポーネント図  
+### <a name="DescribeComponents"></a> システムの構造について説明します。コンポーネント図  
  コンポーネント図は、明確に定義された一連のインターフェイスを通じて振る舞いを提供または使用する分離可能なパートのコレクションとしてシステムを記述します。 パートは任意のスケールで記述でき、任意の方法で接続できます。  
   
  Lucerne と Dinner Now は、システムのコンポーネントとそのインターフェイスを視覚化し、それらについて議論するために、次のようなコンポーネント図を生成しました。  
@@ -582,9 +582,9 @@ ms.locfileid: "59002255"
 #### <a name="summary-strengths-of-component-diagrams"></a>概要:コンポーネント図の長所  
  コンポーネント図の長所を以下に示します。  
   
--   実装の言語やスタイルに関係なく、システムを分離可能なパートのコレクションとして視覚化できます。  
+- 実装の言語やスタイルに関係なく、システムを分離可能なパートのコレクションとして視覚化できます。  
   
--   明確に定義されたインターフェイスを持つコンポーネントを視覚化できます。これにより、設計がわかりやすくなり、要求が変更された場合の更新も容易になります。  
+- 明確に定義されたインターフェイスを持つコンポーネントを視覚化できます。これにより、設計がわかりやすくなり、要求が変更された場合の更新も容易になります。  
   
 #### <a name="relationship-to-other-diagrams"></a>他の図との関係  
   
@@ -596,7 +596,7 @@ ms.locfileid: "59002255"
 |レイヤー図|コンポーネントに関連するシステムの論理アーキテクチャを記述します。 レイヤー検証を使用して、コードが設計と常に一致することを確認します。<br /><br /> 参照トピック<br /><br /> -   [コードからレイヤー図を作成します。](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [レイヤー図:参照](../modeling/layer-diagrams-reference.md)<br />-   [レイヤー図:ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />-   [レイヤー図を使用したコードを検証します。](../modeling/validate-code-with-layer-diagrams.md)|  
 |アクティビティ図|受信メッセージに対する応答としてコンポーネントによって実行される内部処理を視覚化します。<br /><br /> 参照トピック<br /><br /> -   [UML アクティビティ図:参照](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML アクティビティ図:ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)|  
   
-###  <a name="VisualizeCode"></a> 既存のコードを視覚化するには。コード マップ  
+### <a name="VisualizeCode"></a> 既存のコードを視覚化するには。コード マップ  
  コード マップは、コード内の現在の編成やリレーションシップを示します。 マップの *ノード* によって項目が表され、 *リンク*によってリレーションシップが表されます。 コード マップは次のような作業に役立ちます。  
   
 - よく知らないコードを調べる。  
@@ -637,26 +637,26 @@ ms.locfileid: "59002255"
   
 #### <a name="creating-a-code-map"></a>コード マップの作成  
   
--   ソース コードの概要をすばやく確認するには、次の手順に従ってコード マップを生成します。  
+- ソース コードの概要をすばやく確認するには、次の手順に従ってコード マップを生成します。  
   
      **[アーキテクチャ]** メニューで、 **[ソリューションのコード マップを生成]** をクリックします。  
   
      コンパイル済みコードの概要をすばやく確認するには、空のコード マップを生成し、アセンブリ ファイルまたはバイナリ ファイルをそのマップにドラッグします。  
   
--   特定のコードまたはソリューション項目について調べるには、ソリューション エクスプローラーを使用して、視覚化する項目およびリレーションシップを選択し、 新しいマップを生成するか、選択した項目を既存のマップに追加します。 「 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)」を参照してください。  
+- 特定のコードまたはソリューション項目について調べるには、ソリューション エクスプローラーを使用して、視覚化する項目およびリレーションシップを選択し、 新しいマップを生成するか、選択した項目を既存のマップに追加します。 「 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)」を参照してください。  
   
--   マップを調べる際には、実行する作業に合わせてレイアウトを再配置することができます。  
+- マップを調べる際には、実行する作業に合わせてレイアウトを再配置することができます。  
   
      たとえば、コードのレイヤーを視覚化するにはツリー レイアウトを選択します。 参照してください[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)します。  
   
 #### <a name="summary-strengths-of-code-maps"></a>概要:コード マップの長所  
  コード マップは次のような作業に役立ちます。  
   
--   既存のコード内の編成や関係を把握する。  
+- 既存のコード内の編成や関係を把握する。  
   
--   提案された変更によって影響を受ける可能性がある領域を特定する。  
+- 提案された変更によって影響を受ける可能性がある領域を特定する。  
   
--   複雑な領域、パターン、レイヤーなど、コードの保守、変更、および再利用を容易にするために改良できる領域を見つける。  
+- 複雑な領域、パターン、レイヤーなど、コードの保守、変更、および再利用を容易にするために改良できる領域を見つける。  
   
 #### <a name="relationship-to-other-diagrams"></a>他の図との関係  
   
@@ -667,7 +667,7 @@ ms.locfileid: "59002255"
 |クラス図 (UML)|クラスとその属性、操作、および関係。<br /><br /> これらの要素を特定するには、それらの要素を示す UML クラス図を作成します。<br /><br /> 参照トピック<br /><br /> -   [UML クラス図:参照](../modeling/uml-class-diagrams-reference.md)<br />-   [UML クラス図:ガイドライン](../modeling/uml-class-diagrams-guidelines.md)|  
 |クラス図 (コード ベース)|特定のプロジェクトに対するコード内の既存のクラス。<br /><br /> コード内の既存のクラスを視覚化して変更するには、クラス デザイナーを使用します。<br /><br /> 「[方法:(クラス デザイナー) のプロジェクトにクラス ダイアグラムを追加する](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)します。|  
   
-###  <a name="DescribeSequence"></a> 相互作用をについて説明します。シーケンス図  
+### <a name="DescribeSequence"></a> 相互作用をについて説明します。シーケンス図  
  シーケンス図は、システムのパート間の一連の相互作用を記述します。 パートの規模に制限はなく、 たとえば、プログラムの個々のオブジェクトから大規模なサブシステムや外部アクターまでが対象に含まれます。 相互作用の規模と種類にも制限はなく、 たとえば、個々のメッセージから長時間にわたるトランザクションまでが対象に含まれます。関数呼び出しや Web サービス メッセージも相互作用として記述できます。  
   
  Lucerne と Dinner Now は、Process Payment ユース ケースのステップを記述し、それについて議論するために、コンポーネント図から次のようなシーケンス図を生成しました。 図の生存線には、Dinner Now Web Site コンポーネントとそのパートが反映されています。 生存線の間のメッセージは、コンポーネント図の接続に従っています。  
@@ -682,11 +682,11 @@ ms.locfileid: "59002255"
   
  参照トピック  
   
--   [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)  
+- [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)  
+- [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)  
   
--   [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)  
+- [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)  
   
 #### <a name="drawing-a-sequence-diagram"></a>シーケンス図の描画  
  シーケンス図の主な機能を以下に示します。  
@@ -710,9 +710,9 @@ ms.locfileid: "59002255"
 #### <a name="summary-strengths-of-sequence-diagrams"></a>概要:シーケンス図の長所  
  シーケンス図を使用すると、以下の内容を視覚化できます。  
   
--   ユース ケースの実行中にアクターまたはオブジェクトの間を移動する制御のフロー。  
+- ユース ケースの実行中にアクターまたはオブジェクトの間を移動する制御のフロー。  
   
--   メソッド呼び出しやメッセージの実装。  
+- メソッド呼び出しやメッセージの実装。  
   
 #### <a name="relationship-to-other-diagrams"></a>他の図との関係  
   
@@ -722,7 +722,7 @@ ms.locfileid: "59002255"
 |コンポーネント図|生存線によって表されるコンポーネントと、メッセージによって表される振る舞いを提供および使用するインターフェイスを記述します。<br /><br /> コンポーネント図から生存線を生成するには、コンポーネントを右クリックし、 **[生存線の生成]** をクリックします。<br /><br /> 参照トピック<br /><br /> -   [UML コンポーネント図:参照](../modeling/uml-component-diagrams-reference.md)<br />-   [UML コンポーネント図:ガイドライン](../modeling/uml-component-diagrams-guidelines.md)|  
 |ユース ケース図|シーケンス図に示されるユーザーとコンポーネントの間の相互作用を、ユーザーのゴールを表すユース ケースとしてまとめます。<br /><br /> 参照トピック<br /><br /> -   [UML ユース ケース図:参照](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML ユース ケース図:ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)|  
   
-###  <a name="DefineClasses"></a> 型の用語集を定義します。クラス ダイアグラム  
+### <a name="DefineClasses"></a> 型の用語集を定義します。クラス ダイアグラム  
  クラス図は、システムに参加するエンティティ、用語、または概念と、それらの関係を定義します。 たとえば、開発中にこれらの図を使用すると、各クラスの属性と操作を、実装の言語やスタイルに関係なく記述できます。  
   
  Lucerne は、Process Payment ユース ケースに参加するエンティティを記述し、それについて議論するために、次のようなクラス図を描画しました。  
@@ -741,20 +741,20 @@ ms.locfileid: "59002255"
   
  参照トピック  
   
--   [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)  
+- [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-class-diagram"></a>クラス図の描画  
  クラス図の主な機能を以下に示します。  
   
 - クラス、インターフェイス、列挙などの型:  
   
-  -   *クラス* とは、特定の構造上または振る舞い上の特性を共有するオブジェクトの定義です。  
+  - *クラス* とは、特定の構造上または振る舞い上の特性を共有するオブジェクトの定義です。  
   
-  -   *インターフェイス* は、外部から見えるオブジェクトの振る舞いの一部を定義します。  
+  - *インターフェイス* は、外部から見えるオブジェクトの振る舞いの一部を定義します。  
   
-  -   *列挙* とは、リテラル値のリストを含む分類子です。  
+  - *列挙* とは、リテラル値のリストを含む分類子です。  
   
 - *属性* とは、 *分類子*の各インスタンスを記述する特定の型の値です。 分類子とは、型、コンポーネント、ユース ケース、およびアクターの総称です。  
   
@@ -789,11 +789,11 @@ ms.locfileid: "59002255"
 #### <a name="summary-strengths-of-class-diagrams"></a>概要:クラス図の長所  
  クラス図を使用すると、以下の要素を定義できます。  
   
--   ユーザーのニーズやシステムに参加するエンティティについて議論する際に使用する用語の共通用語集。 参照してください[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。  
+- ユーザーのニーズやシステムに参加するエンティティについて議論する際に使用する用語の共通用語集。 参照してください[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。  
   
--   システムのパート (コンポーネントなど) によって使用される型。実装に関係なく定義できます。 参照してください[、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)します。  
+- システムのパート (コンポーネントなど) によって使用される型。実装に関係なく定義できます。 参照してください[、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)します。  
   
--   型の間の関係 (依存関係など)。 たとえば、ある型を別の型の複数のインスタンスに関連付けられることを示すことができます。  
+- 型の間の関係 (依存関係など)。 たとえば、ある型を別の型の複数のインスタンスに関連付けられることを示すことができます。  
   
 #### <a name="relationship-to-other-diagrams"></a>他の図との関係  
   
@@ -806,7 +806,7 @@ ms.locfileid: "59002255"
 |シーケンス図|生存線の型と、生存線が受信するすべてのメッセージの操作、パラメーター、および戻り値を定義します。<br /><br /> クラス図の型から生存線を生成するには、型を右クリックし、 **[生存線の生成]** をクリックします。<br /><br /> 参照トピック<br /><br /> -   [UML シーケンス図:参照](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML シーケンス図:ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |コード マップ|既存のコード内の編成や関係を視覚化します。<br /><br /> クラスとその関係およびメソッドを特定するには、それらの要素を示すコード マップを生成します。<br /><br /> 参照トピック<br /><br /> -   [ソリューション間の依存関係をマップします。](../modeling/map-dependencies-across-your-solutions.md)|  
   
-###  <a name="DescribeLayers"></a> 論理アーキテクチャをについて説明します。レイヤー図  
+### <a name="DescribeLayers"></a> 論理アーキテクチャをについて説明します。レイヤー図  
  レイヤー図は、ソリューションの成果物を抽象的なグループ ( *レイヤー*) に整理することによってシステムの論理アーキテクチャを記述します。 成果物には、名前空間、プロジェクト、クラス、メソッドなど、さまざまなものがあります。 レイヤーは、それらの成果物がシステムで実行するロールやタスクを表します。 コードが設計と一致していることを確認するために、ビルドやチェックイン操作にレイヤー検証を組み込むこともできます。  
   
  Dinner Now と Lucerne は、コードと設計の一致を維持するために、次のようなレイヤー図を使用してコードの変更を検証します。  
@@ -867,9 +867,9 @@ ms.locfileid: "59002255"
 #### <a name="summary-strengths-of-layer-diagrams"></a>概要:レイヤー図の長所  
  レイヤー図は次のような作業に役立ちます。  
   
--   成果物の機能に従ってシステムの論理アーキテクチャを記述する。  
+- 成果物の機能に従ってシステムの論理アーキテクチャを記述する。  
   
--   開発中のコードが指定された設計に準拠していることを確認する。  
+- 開発中のコードが指定された設計に準拠していることを確認する。  
   
 #### <a name="relationship-to-other-diagrams"></a>他の図との関係  
   

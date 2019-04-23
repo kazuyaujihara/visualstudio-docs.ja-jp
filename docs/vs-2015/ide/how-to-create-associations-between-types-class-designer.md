@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8a1126427a1454ec09f0460cb9da1eb65fb72b31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7f70b18bb2b648231e3cada312fd241375be3193
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764799"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099846"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>方法: 型の間の関連付けを作成する (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ ms.locfileid: "54764799"
   
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>クラス ダイアグラムに関連行を定義するには  
   
-1.  クラス デザイナーのツールボックスで、**[関連]** を選択します。  
+1. クラス デザイナーのツールボックスで、**[関連]** を選択します。  
   
-2.  関連付けでリンクする 2 つの図形間に線を描画します。  
+2. 関連付けでリンクする 2 つの図形間に線を描画します。  
   
      新しいプロパティが最初のクラスに作成されます。 このプロパティは、図形のコンパートメント内のプロパティとしてではなく、既定の名前を持つ関連行として表示されます。 その型は、関連行が指す図形です。  
   
@@ -46,13 +46,13 @@ ms.locfileid: "54764799"
   
 - ダイアグラム領域で、関連行のラベルをクリックし、編集します。  
   
-  \- または  
+  \- または -  
   
-1.  関連付けとして表示されるプロパティを含む図形をクリックします。  
+1. 関連付けとして表示されるプロパティを含む図形をクリックします。  
   
      図形がフォーカスを取得し、図形のメンバーが [クラスの詳細] ウィンドウと [プロパティ] ウィンドウに表示されます。  
   
-2.  [クラスの詳細] ウィンドウまたは [プロパティ] ウィンドウで、そのプロパティの名前フィールドを編集し、Enter キーを押します。  
+2. [クラスの詳細] ウィンドウまたは [プロパティ] ウィンドウで、そのプロパティの名前フィールドを編集し、Enter キーを押します。  
   
      **[クラスの詳細]** ウィンドウ、関連行、[プロパティ] ウィンドウ、およびコード上の名前が更新されます。  
   

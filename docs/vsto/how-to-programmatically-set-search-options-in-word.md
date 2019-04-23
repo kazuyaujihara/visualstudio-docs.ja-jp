@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7443a4789008f3bb5992695761dff228bd32298
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6e3b66bfd7f3f5d0ef0f4893efeb81c80df5d4ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601409"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093515"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>方法: プログラムによって Word の検索オプションを設定します。
   Microsoft Office Word 文書で選択内容の検索オプションを設定する 2 つの方法はあります。
@@ -38,7 +38,7 @@ ms.locfileid: "56601409"
 
 ### <a name="to-set-search-options-using-a-find-object"></a>Find オブジェクトを使用して検索オプションを設定するには
 
-1.  プロパティを設定、<xref:Microsoft.Office.Interop.Word.Find>テキスト選択範囲を前方に検索するオブジェクト**検索 me**します。
+1. プロパティを設定、<xref:Microsoft.Office.Interop.Word.Find>テキスト選択範囲を前方に検索するオブジェクト**検索 me**します。
 
      [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
 
@@ -47,7 +47,7 @@ ms.locfileid: "56601409"
 
 ### <a name="to-set-search-options-using-execute-method-arguments"></a>Execute メソッドの引数を使用して、検索オプションを設定するには
 
-1.  パラメーターとしての検索条件を渡す、<xref:Microsoft.Office.Interop.Word.Find.Execute%2A>テキスト選択範囲を前方に検索するメソッド**検索 me**します。
+1. パラメーターとしての検索条件を渡す、<xref:Microsoft.Office.Interop.Word.Find.Execute%2A>テキスト選択範囲を前方に検索するメソッド**検索 me**します。
 
      [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]

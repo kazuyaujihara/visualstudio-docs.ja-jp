@@ -8,12 +8,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fe4adb6e70027cae239cf9fafe605aa03431ff3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 97f238b51e3f4ad3bbb32bdbdc134089c0cb7e99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766626"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099105"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes を使用したテストでのコードの分離
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ Microsoft Fakes では、アプリケーションの別の部分を*スタブ*�
   
  一般に、コードベース内の依存関係から分離するためにスタブ型を使用することをお勧めします。 これを行うには、インターフェイスの背後にあるコンポーネントを非表示にします。 Shim 型は、テスト可能な API を提供しないサードパーティのコンポーネントから分離する場合に使用できます。  
   
-##  <a name="stubs"></a>スタブの概要  
+## <a name="stubs"></a>スタブの概要  
  より詳細な説明については、「[スタブを使用して単体テストでアプリケーションの各部分を相互に分離する](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)」を参照してください。  
   
-1.  **インターフェイスの挿入**  
+1. **インターフェイスの挿入**  
   
      スタブを使用するには、アプリケーションの別のコンポーネントのクラスを明示的に示すことがないように、テストするコードを記述する必要があります。 "コンポーネント" とは、1 つのクラス、または一緒に設計され更新される複数のクラスで、通常は 1 つの Visual Studio コンポーネントに格納されるもののことです。 変数とパラメーターは、インターフェイスを使用して宣言される必要があります。別のコンポーネントのインスタンスは、渡されるかファクトリを使用して作成される必要があります。 たとえば、StockFeed がアプリケーションの別のコンポーネントのクラスである場合、これは不適切であると見なされます。  
   
@@ -75,15 +75,15 @@ Microsoft Fakes では、アプリケーションの別の部分を*スタブ*�
   
     ```  
   
-2.  **Fakes アセンブリの追加**  
+2. **Fakes アセンブリの追加**  
   
-    1.  ソリューション エクスプローラーで、テスト プロジェクトの参照一覧を展開します。 Visual Basic で作業している場合、参照一覧を表示するには、**[すべてのファイルを表示]** を選択する必要があります。  
+    1. ソリューション エクスプローラーで、テスト プロジェクトの参照一覧を展開します。 Visual Basic で作業している場合、参照一覧を表示するには、**[すべてのファイルを表示]** を選択する必要があります。  
   
-    2.  インターフェイス (たとえば IStockFeed) が定義されているアセンブリへの参照を選択します。 この参照のショートカット メニューで、**[Fakes アセンブリに追加]** をクリックします。  
+    2. インターフェイス (たとえば IStockFeed) が定義されているアセンブリへの参照を選択します。 この参照のショートカット メニューで、**[Fakes アセンブリに追加]** をクリックします。  
   
-    3.  ソリューションをリビルドします。  
+    3. ソリューションをリビルドします。  
   
-3.  テストで、スタブのインスタンスを構築し、そのメソッドのためのコードを指定します。  
+3. テストで、スタブのインスタンスを構築し、そのメソッドのためのコードを指定します。  
   
     ```csharp  
     [TestClass]  
@@ -145,7 +145,7 @@ Microsoft Fakes では、アプリケーションの別の部分を*スタブ*�
   
      また、イベントおよびジェネリック メソッドについて、プロパティの getter および setter に対してもスタブが生成されます。 詳細については、「[スタブを使用して単体テストでアプリケーションの各部分を相互に分離する](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)」を参照してください。  
   
-##  <a name="shims"></a>shim の概要  
+## <a name="shims"></a>shim の概要  
  (より詳細な説明については、「[shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)」を参照してください。)  
   
  コンポーネントに `DateTime.Now` の呼び出しが含まれているとします。  

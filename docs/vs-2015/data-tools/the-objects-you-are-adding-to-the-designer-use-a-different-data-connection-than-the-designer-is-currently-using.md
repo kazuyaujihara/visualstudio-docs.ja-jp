@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 773d3ea2e0d5574b194a44783b14d35db25d6f7f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 960d3123c45e44b2b1cdc64b896b15b82e655bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102842"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using"></a>デザイナーに追加する対象のオブジェクトは、デザイナーが現在使用しているのとは異なるデータ接続を使用しています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "59661829"
   
 ### <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>選択したオブジェクトで使用されている接続で既存の接続を置換するには  
   
--   **[はい]** をクリックします。  
+- **[はい]** をクリックします。  
   
      選択したオブジェクトが [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]に追加され、DataContext.Connection が新しい接続に設定されます。  
   
 ### <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>既存の接続を引き続き使用し、選択したオブジェクトの追加を取り消すには  
   
--   **[いいえ]** をクリックします。  
+- **[いいえ]** をクリックします。  
   
      操作がキャンセルされます。 DataContext.Connection は、既存の接続に設定されたままになります。  
   

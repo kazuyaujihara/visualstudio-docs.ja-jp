@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 662cd662e8fe18c5a2a8c05a7f5da21c064743b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660750"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101185"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,11 +111,11 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 ## <a name="creating-properties-during-execution"></a>実行時のプロパティの作成  
  `Target` 要素の外側にあるプロパティには、ビルドの評価フェーズで値が割り当てられます。 その後の実行フェーズでプロパティを作成または変更するには、次のようにします。  
   
--   プロパティはどのタスクでも生成できます。 プロパティを生成するには、[Task](../msbuild/task-element-msbuild.md) 要素の子要素として、`PropertyName` 属性を持つ [Output](../msbuild/output-element-msbuild.md) 要素を持つ必要があります。  
+- プロパティはどのタスクでも生成できます。 プロパティを生成するには、[Task](../msbuild/task-element-msbuild.md) 要素の子要素として、`PropertyName` 属性を持つ [Output](../msbuild/output-element-msbuild.md) 要素を持つ必要があります。  
   
--   プロパティは [CreateProperty](../msbuild/createproperty-task.md) タスクによって生成できます。 この使用法は非推奨とされます。  
+- プロパティは [CreateProperty](../msbuild/createproperty-task.md) タスクによって生成できます。 この使用法は非推奨とされます。  
   
--   .NET Framework 3.5 以降では、プロパティ宣言を格納できる `Target` 要素を  `PropertyGroup` 要素に含めることができます。  
+- .NET Framework 3.5 以降では、プロパティ宣言を格納できる `Target` 要素を  `PropertyGroup` 要素に含めることができます。  
   
 ## <a name="storing-xml-in-properties"></a>プロパティに XML を格納する  
  プロパティには、タスクに値を渡したり、ログ情報を表示したりするための任意の XML を格納できます。 次の例では、`ConfigTemplate` プロパティの値に、XML や他のプロパティ参照が使用されています。 このプロパティ参照は、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] により、対応するプロパティ値を使用して置き換えられます。 プロパティ値は表示される順に割り当てられます。 したがって、この例では、`$(MySupportedVersion)`、`$(MyRequiredVersion)`、および `$(MySafeMode)` は既に定義されています。  

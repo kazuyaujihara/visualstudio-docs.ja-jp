@@ -1,5 +1,5 @@
 ---
-title: 複数の言語バージョンのインストール |Microsoft Docs
+title: 複数言語バージョンをインストールする | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -12,27 +12,29 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 189430a1ff22450f887cc8e6903db5537b137f17
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57872083"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652278"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>複数言語バージョンの Visual Studio をインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。 [Visual Studio 2017 でインストールの言語パック](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-6---install-language-packs-optional)します。
+Visual Studio に関する最新のドキュメントについては、[言語パックのインストール](/visualstudio/install/install-visual-studio?view=vs-2019#step-6---install-language-packs-optional)に関するページをご覧ください。
 
-1 つまたは複数の言語パッケージをインストールするには、同じコンピューター上に、他の言語で Visual Studio 2015 を行うことができます。 インストールする言語ごとに、個別の言語パッケージを取得する必要があります。
+1 つ以上の言語パッケージをインストールすると、同じコンピューター上で他の言語で Visual Studio 2015 を実行できます。 インストールする言語ごとに、個別の言語パッケージを取得する必要があります。
 
 ## <a name="important-considerations"></a>重要な考慮事項
 
--   言語パッケージをインストールする際、インストール済みフィーチャーのリソース ファイルは、言語バージョンごとに自動的にインストールされます。
+- 言語パッケージをインストールする際、インストール済みフィーチャーのリソース ファイルは、言語バージョンごとに自動的にインストールされます。
 
--   Visual Studio サービス パッケージは、インストールされている Visual Studio のすべての言語バージョンに適用されます。 インストールした Visual Studio の言語バージョンごとにサービス パッケージをインストールする必要はありません。
+- Visual Studio サービス パッケージは、インストールされている Visual Studio のすべての言語バージョンに適用されます。 インストールした Visual Studio の言語バージョンごとにサービス パッケージをインストールする必要はありません。
 
--   Visual Studio セットアップのメンテナンス モードを使用して、言語パッケージをアンインストールできます。 **[コントロール パネル]**、 **[プログラムと機能]** の順に開き、インストールした Visual Studio のエディションを選択して、 **[アンインストールと変更]** をクリックします。
+- Visual Studio セットアップのメンテナンス モードを使用して、言語パッケージをアンインストールできます。 **[コントロール パネル]**、 **[プログラムと機能]** の順に開き、インストールした Visual Studio のエディションを選択して、 **[アンインストールと変更]** をクリックします。
 
 ## <a name="see-also"></a>関連項目
- [Microsoft Language Interface Pack (Lip) および Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md) [Visual Studio のインストール](../install/install-visual-studio-2015.md)
+
+- [Microsoft Language Interface Pack (LIP) および Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md)
+- [Visual Studio のインストール](../install/install-visual-studio-2015.md)

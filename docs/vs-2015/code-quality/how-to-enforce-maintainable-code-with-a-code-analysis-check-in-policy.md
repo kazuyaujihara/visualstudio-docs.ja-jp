@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5676bfaabb20ebf6dabea7bae66527d17891b362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27593a450f7c2a1b34c1c84bc1d4e7ea5bb5919f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962475"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091877"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>方法: コード分析のチェックイン ポリシーを使用して保守が容易なコードを適用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,35 +29,35 @@ ms.locfileid: "58962475"
   
 ### <a name="to-open-the-code-analysis-policy-editor"></a>コード分析ポリシー エディターを開きます  
   
-1.  **チーム エクスプ ローラー**、チーム プロジェクトを右クリックし、をクリックして**チーム プロジェクトの設定**、 をクリックし、**ソース管理**します。  
+1. **チーム エクスプ ローラー**、チーム プロジェクトを右クリックし、をクリックして**チーム プロジェクトの設定**、 をクリックし、**ソース管理**します。  
   
      **ソース管理** ダイアログ ボックスが表示されます。  
   
-2.  **チェックイン ポリシー**タブをクリックし、をクリックして**追加**します。  
+2. **チェックイン ポリシー**タブをクリックし、をクリックして**追加**します。  
   
      **チェックイン ポリシーの追加** ダイアログ ボックスが表示されます。  
   
-3.  **チェックイン ポリシー**一覧で、、**コード分析**チェック ボックスをオンにし**OK**。  
+3. **チェックイン ポリシー**一覧で、、**コード分析**チェック ボックスをオンにし**OK**。  
   
      **コード分析ポリシー エディター**  ダイアログ ボックスが表示されます。  
   
 ### <a name="to-enable-code-analysis-maintainability-rules"></a>コード分析の保守容易性の規則を有効にするには  
   
-1.  **コード分析ポリシー エディター**ダイアログ ボックスで、**ルール設定**、展開、**保守容易性規則**ノード。  
+1. **コード分析ポリシー エディター**ダイアログ ボックスで、**ルール設定**、展開、**保守容易性規則**ノード。  
   
-2.  次の規則のチェック ボックスを選択します。  
+2. 次の規則のチェック ボックスを選択します。  
   
-    -   継承の深さ:**CA1501 AvoidExcessiveInheritance** -しきい値。5 つを超えるレベルの深さで警告が発生  
+    - 継承の深さ:**CA1501 AvoidExcessiveInheritance** -しきい値。5 つを超えるレベルの深さで警告が発生  
   
-    -   複雑さ:**CA1502 AvoidExcessiveComplexity** -しきい値。25 を超えるで警告が発生  
+    - 複雑さ:**CA1502 AvoidExcessiveComplexity** -しきい値。25 を超えるで警告が発生  
   
-    -   保守容易性指数。**CA1505 AvoidUnmaintainableCode** -しきい値。20 未満で警告が発生  
+    - 保守容易性指数。**CA1505 AvoidUnmaintainableCode** -しきい値。20 未満で警告が発生  
   
-    -   クラス結合度:**CA1506 AvoidExcessiveClassCoupling** -しきい値。クラスの 80 以上とメソッドの 30 以上で警告が発生  
+    - クラス結合度:**CA1506 AvoidExcessiveClassCoupling** -しきい値。クラスの 80 以上とメソッドの 30 以上で警告が発生  
   
-    -   さらに、ビルドをできないようにするルールに違反する場合は、選択、**警告をエラーとして扱う**ルールの説明の横にあるチェック ボックス。  
+    - さらに、ビルドをできないようにするルールに違反する場合は、選択、**警告をエラーとして扱う**ルールの説明の横にあるチェック ボックス。  
   
-3.  **[OK]** をクリックします。 新しいチェックイン ポリシーは、将来のチェックインに適用されます。  
+3. **[OK]** をクリックします。 新しいチェックイン ポリシーは、将来のチェックインに適用されます。  
   
 ## <a name="see-also"></a>関連項目  
  [コード メトリックス値](../code-quality/code-metrics-values.md)   

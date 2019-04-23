@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b64c94d26dcb197246f78b721fd087d5dbf1e0dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101380"
 ---
 # <a name="how-to-create-xml-snippets"></a>方法: XML スニペットを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,23 +24,23 @@ XML エディターを使用して、新しい XML スニペットを作成す�
 ## <a name="to-create-a-new-xml-snippet"></a>新しい XML スニペットを作成するには  
  新しい XML コードを作成するスニペットが新しい XML ファイルを作成し、使用、**スニペットの挿入**機能します。  
   
-1.  **ファイル** メニューのをクリックして**新規** をクリックし、**ファイル**します。  
+1. **ファイル** メニューのをクリックして**新規** をクリックし、**ファイル**します。  
   
-2.  クリックして**XML ファイル**順にクリックします**オープン**します。  
+2. クリックして**XML ファイル**順にクリックします**オープン**します。  
   
-3.  エディター ウィンドウで右クリックして**スニペットの挿入**します。  
+3. エディター ウィンドウで右クリックして**スニペットの挿入**します。  
   
-4.  選択**スニペット**ENTER キーを押して、一覧から。  
+4. 選択**スニペット**ENTER キーを押して、一覧から。  
   
-5.  新しいスニペットに必要な変更を加えます。  
+5. 新しいスニペットに必要な変更を加えます。  
   
-6.  **ファイル**メニューの  **XMLFile.xml の保存**します。  
+6. **ファイル**メニューの  **XMLFile.xml の保存**します。  
   
      **ファイルに名前を付けて** ダイアログ ボックスが表示されます。  
   
-7.  新しいスニペットの名前を入力し、選択**スニペット ファイル**から、**型として保存**ドロップダウン ウィンドウ。  
+7. 新しいスニペットの名前を入力し、選択**スニペット ファイル**から、**型として保存**ドロップダウン ウィンドウ。  
   
-8.  使用して、**で保存**を My documents \visual Studio 2005\Code \xml\my XML Snippets フォルダーにファイルの場所を変更し、ドロップダウン リスト**保存**します。  
+8. 使用して、**で保存**を My documents \visual Studio 2005\Code \xml\my XML Snippets フォルダーにファイルの場所を変更し、ドロップダウン リスト**保存**します。  
   
 ## <a name="snippet-description"></a>スニペットの説明  
  このセクションでは、定型スニペットの主な要素について説明します。 XML スニペットで使用されるスキーマ要素の詳細については、次を参照してください。[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)します。  

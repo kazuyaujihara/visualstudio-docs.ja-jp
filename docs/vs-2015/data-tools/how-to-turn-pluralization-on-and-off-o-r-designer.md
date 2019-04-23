@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6171ca233af1ec2af71f11d3248a9d2e670c156b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9ab9315c428944de0b047192a789eac6aa654073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098624"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>方法: 複数形化をオンおよびオフにする (O/R デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ ms.locfileid: "59665858"
   
 ### <a name="to-turn-pluralization-on-and-off"></a>複数形化をオンまたはオフにするには  
   
-1.  **[ツール]** メニューの **[オプション]** をクリックします。  
+1. **[ツール]** メニューの **[オプション]** をクリックします。  
   
-2.  **[オプション]** ダイアログ ボックスの **[データベース ツール]** を展開します。  
+2. **[オプション]** ダイアログ ボックスの **[データベース ツール]** を展開します。  
   
 > [!NOTE]
 >  **[データベース ツール]** ノードが表示されない場合は、**[すべての設定を表示]** を選択します。  
   
-1.  **[O/R デザイナー]** をクリックします。  
+1. **[O/R デザイナー]** をクリックします。  
   
-2.  設定**名の複数形化**に**有効** = **False**を設定する、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]クラス名を変更しないようにします。  
+2. 設定**名の複数形化**に**有効** = **False**を設定する、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]クラス名を変更しないようにします。  
   
-3.  設定**名の複数形化**に**有効** = **True**に追加されたオブジェクトのクラス名に複数形化規則を適用する、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。  
+3. 設定**名の複数形化**に**有効** = **True**に追加されたオブジェクトのクラス名に複数形化規則を適用する、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

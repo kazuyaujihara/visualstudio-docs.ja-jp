@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090421"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 テキスト テンプレートを使用したデザイン時コード生成
 デザイン時 T4 テキスト テンプレートでは、Visual Studio プロジェクトでプログラム コードやその他のファイルを生成できます。 通常、*モデル*のデータに従って生成されるコードが異なるようにテンプレートを記述します。 モデルは、アプリケーションの要件に関する重要な情報を含むファイルまたはデータベースです。
@@ -141,9 +141,9 @@ ms.locfileid: "59657468"
 
 #### <a name="to-generate-program-code-or-resources"></a>プログラム コードまたはリソースを生成するには
 
-1.  適切な種類のファイル (.cs、.vb、.resx、.xml など) を生成するように output ディレクティブを変更します。
+1. 適切な種類のファイル (.cs、.vb、.resx、.xml など) を生成するように output ディレクティブを変更します。
 
-2.  必要なソリューション コードを生成するためのコードを挿入します。 たとえば、クラス内に整数型のフィールド宣言を 3 つ生成するには、次のようにします。
+2. 必要なソリューション コードを生成するためのコードを挿入します。 たとえば、クラス内に整数型のフィールド宣言を 3 つ生成するには、次のようにします。
 
     ```csharp
 
@@ -176,7 +176,7 @@ ms.locfileid: "59657468"
 
     ```
 
-3.  ファイルを保存し、生成されたファイルを調べると、次のコードが含まれていることがわかります。
+3. ファイルを保存し、生成されたファイルを調べると、次のコードが含まれていることがわかります。
 
     ```csharp
     class MyGeneratedClass {

@@ -15,12 +15,12 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27be664fb035af2c97f0536026b590c468b68b9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 681a529b33fc2342168ba1fbe1df57746dc8bd7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101705"
 ---
 # <a name="localizing-menu-commands"></a>メニュー コマンドのローカライズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,19 +78,19 @@ ms.locfileid: "58973659"
 ## <a name="localizing-other-text-resources"></a>その他のテキストのリソースをローカライズします。  
  コマンド名以外の文字列リソースは、リソース (.resx) ファイルで定義されます。  
   
-1.  VSPackage.en US.resx VSPackage.resx に変更します。  
+1. VSPackage.en US.resx VSPackage.resx に変更します。  
   
-2.  ローカライズされた言語ごとに VSPackage.en US.resx ファイルのコピーを作成します。  
+2. ローカライズされた言語ごとに VSPackage.en US.resx ファイルのコピーを作成します。  
   
      各コピーの VSPackage の名前を付けます。*ロケール*、.resx、*ロケール*は特定のカルチャの名前です。  
   
-3.  各カルチャ用 US.resx Resources.resx に変更します。  
+3. 各カルチャ用 US.resx Resources.resx に変更します。  
   
-4.  ローカライズされた言語ごとに各カルチャ用 US.resx ファイルのコピーを作成します。  
+4. ローカライズされた言語ごとに各カルチャ用 US.resx ファイルのコピーを作成します。  
   
      各コピー リソースの名前を付けます。*ロケール*、.resx、*ロケール*は特定のカルチャの名前です。  
   
-5.  特定の言語とカルチャに適した文字列値を変更するには、各 .resx ファイルを開きます。 次の例では、ツール ウィンドウのタイトル バーのローカライズされたリソースの定義を示します。  
+5. 特定の言語とカルチャに適した文字列値を変更するには、各 .resx ファイルを開きます。 次の例では、ツール ウィンドウのタイトル バーのローカライズされたリソースの定義を示します。  
   
      [各カルチャ用 US.resx]  
   
@@ -112,9 +112,9 @@ ms.locfileid: "58973659"
 ## <a name="incorporating-localized-resources-into-the-project"></a>ローカライズされたリソースをプロジェクトに組み込む  
  Assemblyinfo.cs ファイルとローカライズされたリソースを組み込むプロジェクト ファイルを変更する必要があります。  
   
-1.  **プロパティ**ノード**ソリューション エクスプ ローラー**、assemblyinfo.cs または assemblyinfo.vb をエディターで開きます。  
+1. **プロパティ**ノード**ソリューション エクスプ ローラー**、assemblyinfo.cs または assemblyinfo.vb をエディターで開きます。  
   
-2.  次のエントリを追加します。  
+2. 次のエントリを追加します。  
   
     ```csharp  
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]  
@@ -122,13 +122,13 @@ ms.locfileid: "58973659"
   
      これは既定の言語として英語 (米国) 設定します。  
   
-3.  プロジェクトをアンロードします。  
+3. プロジェクトをアンロードします。  
   
-4.  エディターでプロジェクト ファイルを開きます。  
+4. エディターでプロジェクト ファイルを開きます。  
   
-5.  検索、`ItemGroup`要素を含む`EmbeddedResource`要素。  
+5. 検索、`ItemGroup`要素を含む`EmbeddedResource`要素。  
   
-6.  `EmbeddedResource`を呼び出す VSPackage.en US.resx、要素を交換して、`ManifestResourceName`を持つ要素を`LogicalName`に設定されている要素`VSPackage.en-US.Resources`、次のようにします。  
+6. `EmbeddedResource`を呼び出す VSPackage.en US.resx、要素を交換して、`ManifestResourceName`を持つ要素を`LogicalName`に設定されている要素`VSPackage.en-US.Resources`、次のようにします。  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.en-US.resx">  
@@ -137,9 +137,9 @@ ms.locfileid: "58973659"
     </EmbeddedResource>  
     ```  
   
-7.  ローカライズされた言語ごとに、コピー、 `EmbeddedResource` VsPackage.en 米国、およびセットの要素、 **Include**属性と**LogicalName**コピーでは、次に示すように、対象のロケールの要素例です。  
+7. ローカライズされた言語ごとに、コピー、 `EmbeddedResource` VsPackage.en 米国、およびセットの要素、 **Include**属性と**LogicalName**コピーでは、次に示すように、対象のロケールの要素例です。  
   
-8.  ローカライズされた各`VSCTCompile`要素を追加、`ResourceName`要素を指す`Menus.ctmenu`次の例のようにします。  
+8. ローカライズされた各`VSCTCompile`要素を追加、`ResourceName`要素を指す`Menus.ctmenu`次の例のようにします。  
   
     ```xml  
     <ItemGroup>  

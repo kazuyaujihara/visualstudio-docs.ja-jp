@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa4d1c3126c22661285f18aac18a63d55468312
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9c82669ac6d4f32f1525b7e14427ed620a51cfc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102706"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>従来の言語サービスでのコメント コード
 プログラミング言語は、通常の注釈を設定するか、コードをコメントするための手段を提供します。 コメントは、コードに関する追加情報を提供しますが、コンパイルまたは解釈中に無視されるテキストのセクションです。
@@ -26,9 +26,9 @@ ms.locfileid: "59647302"
 ## <a name="comment-styles"></a>コメントのスタイル
 コメントの 2 つの一般的なスタイルがあります。
 
-1.  行のコメントを 1 行にコメントがあります。
+1. 行のコメントを 1 行にコメントがあります。
 
-2.  ブロックのコメント、コメントが複数の行を含めることができます。
+2. ブロックのコメント、コメントが複数の行を含めることができます。
 
 行のコメントは、通常、開始文字 (文字)、ブロックのコメントの中に開始と終了の両方の文字があります。 たとえば、c# の場合は、行のコメントから始まります`//`、ブロックのコメントの始まりと`/*`で終わります`*/`します。
 

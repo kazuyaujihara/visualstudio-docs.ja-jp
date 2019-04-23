@@ -17,25 +17,25 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6f50584c5e01b97eb00a0e7f62998670d033553
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963325"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097129"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET のデバッグ: システム要件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] のデバッグ シナリオに必要なソフトウェアとセキュリティの要件について説明します。  
   
--   ローカル デバッグ。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] と Web アプリケーションが同じコンピューターで実行されている場合のデバッグです。 このシナリオには、2 つのバージョンがあります。  
+- ローカル デバッグ。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] と Web アプリケーションが同じコンピューターで実行されている場合のデバッグです。 このシナリオには、2 つのバージョンがあります。  
   
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] コードがファイル システムに存在する場合  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] コードがファイル システムに存在する場合  
   
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] コードが IIS の Web サイトに存在する場合  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] コードが IIS の Web サイトに存在する場合  
   
--   リモート デバッグ。[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はクライアント コンピューターで実行され、リモート サーバー コンピューターで実行されている Web アプリケーションをデバッグします。  
+- リモート デバッグ。[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はクライアント コンピューターで実行され、リモート サーバー コンピューターで実行されている Web アプリケーションをデバッグします。  
   
 ## <a name="security-requirements"></a>セキュリティ要件  
  リモート デバッグでは、ローカル コンピューターとリモート コンピューターが同じドメイン内または同じワークグループ内にセットアップされている必要があります。  

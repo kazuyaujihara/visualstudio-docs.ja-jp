@@ -18,51 +18,51 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a20a9ecf08c82589fd915fdd4bd60c6144e9d1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772155"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100418"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>方法: クラス デザイナーを使用して型を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクトの新しい型を設計するには、これらをクラス ダイアグラム上で作成します。 既存の型を見る場合は、「[方法: 既存の型を表示する (クラス デザイナー)](../ide/how-to-view-existing-types-class-designer.md)」をご覧ください。  
+Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクトの新しい型を設計するには、これらをクラス ダイアグラム上で作成します。 既存の型を表示する場合は、「[方法:既存の型 (クラス デザイナー) を表示](../ide/how-to-view-existing-types-class-designer.md)します。  
   
--   [新しい型を作成する](#CreateType)  
+- [新しい型を作成する](#CreateType)  
   
--   [カスタム属性を型に適用する](#CustAttributeType)  
+- [カスタム属性を型に適用する](#CustAttributeType)  
   
--   [カスタム属性を型のメンバーに適用する](#CustAttributeMember)  
+- [カスタム属性を型のメンバーに適用する](#CustAttributeMember)  
   
-##  <a name="CreateType"></a> 新しい型を作成する  
+## <a name="CreateType"></a> 新しい型を作成する  
   
-1.  クラス デザイナーのツールボックスから、いずれかをクラス ダイアグラムにドラッグします。  
+1. クラス デザイナーのツールボックスから、いずれかをクラス ダイアグラムにドラッグします。  
   
-    -   **[クラス]** または **[抽象クラス]**  
+    - **[クラス]** または **[抽象クラス]**  
   
-    -   **Enum**  
+    - **Enum**  
   
-    -   **Interface**  
+    - **Interface**  
   
-    -   **[構造体]** (VB) または **[構造体]** (C#)  
+    - **[構造体]** (VB) または **[構造体]** (C#)  
   
-    -   **Delegate**  
+    - **Delegate**  
   
-    -   **[モジュール]** (VB のみ)  
+    - **[モジュール]** (VB のみ)  
   
-2.  型の名前を付けます。 それからアクセス レベルを選択します。  
+2. 型の名前を付けます。 それからアクセス レベルを選択します。  
   
-3.  型の初期コードを追加するファイルを選択します。  
+3. 型の初期コードを追加するファイルを選択します。  
   
-    -   新しいクラス ファイルを作成して、そのファイルを現在のプロジェクトに追加するには、**[新しいファイルの作成]** をクリックし、ファイル名を入力します。  
+    - 新しいクラス ファイルを作成して、そのファイルを現在のプロジェクトに追加するには、**[新しいファイルの作成]** をクリックし、ファイル名を入力します。  
   
-    -   既存のファイルにコードを追加するには、**[存在するファイルに追加]** をクリックします。  
+    - 既存のファイルにコードを追加するには、**[存在するファイルに追加]** をクリックします。  
   
          ソリューションに複数のアプリでコードを共有しているプロジェクトがある場合、対応するクラス ファイルが同じアプリ プロジェクトまたは共有プロジェクトにある場合にのみ、アプリケーション プロジェクトで新しい型をクラス ダイアグラムに追加できます。  
   
-4.  次に、型を定義するために他の項目を追加します。  
+4. 次に、型を定義するために他の項目を追加します。  
   
     |||  
     |-|-|  
@@ -75,29 +75,29 @@ Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクト�
   
      「[メンバーの作成](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)」をご覧ください。  
   
-##  <a name="CustAttributeType"></a> カスタム属性を型に適用する  
+## <a name="CustAttributeType"></a> カスタム属性を型に適用する  
   
-1.  クラス ダイアグラムで型の図形をクリックします。  
+1. クラス ダイアグラムで型の図形をクリックします。  
   
-2.  [プロパティ] ウィンドウで、型の **[カスタム属性]** プロパティの横の省略記号 (...) ボタンをクリックします。  
+2. [プロパティ] ウィンドウで、型の **[カスタム属性]** プロパティの横の省略記号 (...) ボタンをクリックします。  
   
-3.  1 つ以上のカスタム属性を 1 行あたり 1 つ追加します。 角かっこで閉じません。  
+3. 1 つ以上のカスタム属性を 1 行あたり 1 つ追加します。 角かっこで閉じません。  
   
      終了後、カスタム属性が型に適用されます。  
   
-##  <a name="CustAttributeMember"></a> カスタム属性を型のメンバーに適用する  
+## <a name="CustAttributeMember"></a> カスタム属性を型のメンバーに適用する  
   
-1.  クラス ダイアグラムの型の図形でメンバーの名前をクリックするか、[クラスの詳細] ウィンドウでその行をクリックします。  
+1. クラス ダイアグラムの型の図形でメンバーの名前をクリックするか、[クラスの詳細] ウィンドウでその行をクリックします。  
   
-2.  [プロパティ] ウィンドウで、メンバーの **[カスタム属性]** プロパティを探します。  
+2. [プロパティ] ウィンドウで、メンバーの **[カスタム属性]** プロパティを探します。  
   
-3.  1 つ以上のカスタム属性を 1 行あたり 1 つ追加します。 角かっこで閉じません。  
+3. 1 つ以上のカスタム属性を 1 行あたり 1 つ追加します。 角かっこで閉じません。  
   
      終了後、カスタム属性が型に適用されます。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: 型の間の継承を作成する (クラス デザイナー)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
- [方法: 型の間の関連付けを作成する (クラス デザイナー)](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [方法: 型 (クラス デザイナー) の間の継承を作成します。](../ide/how-to-create-inheritance-between-types-class-designer.md)   
+ [方法: 型 (クラス デザイナー) の間の関連付けを作成します。](../ide/how-to-create-associations-between-types-class-designer.md)   
  [型のメンバーの作成と構成 (クラス デザイナー)](../ide/creating-and-configuring-type-members-class-designer.md)   
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)   
  [クラスおよび型のデザイン (クラス デザイナー)](../ide/designing-classes-and-types-class-designer.md)

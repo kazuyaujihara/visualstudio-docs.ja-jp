@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232698"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098650"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise の IntelliTrace (C#、Visual Basic、 C++)
 
@@ -59,7 +59,7 @@ IntelliTrace は Visual Studio Enterprise Edition で使用できます (Profess
 > [!NOTE]
 > 既に実行されているプロセスをデバッグする場合は、IntelliTrace イベントのみ (呼び出し情報なし) を収集できます。 のみ、ローカル コンピューター上の 32 ビットまたは 64 ビット プロセスにアタッチすることができます。 プロセスにアタッチする前に発生するイベントは収集されません。
 
-##  <a name="IntelliTraceVSTraditional"></a>IntelliTrace を使用してデバッグする理由
+## <a name="IntelliTraceVSTraditional"></a>IntelliTrace を使用してデバッグする理由
 
 従来のデバッグまたは "*ライブ*" デバッグでは、ご利用のアプリケーションの現在の状態と過去のイベントの制限されたデータのみが表示されます。 アプリケーションの現在の状態に基づいてこれらのイベントを推測するか、またはアプリケーションを再実行することによってこれらのイベントを再作成する必要があります。
 
@@ -97,7 +97,7 @@ IntelliTrace を使用したデバッグがどのように役立つかの例を�
 
      これは、配置されたアプリの問題を診断する場合に便利です。 参照してください[IntelliTrace スタンドアロン コレクターを使用して、](../debugger/using-the-intellitrace-stand-alone-collector.md)します。
 
-##  <a name="WhatData"></a> IntelliTrace が収集するデータ
+## <a name="WhatData"></a> IntelliTrace が収集するデータ
 
 **イベント情報を収集します。**
 

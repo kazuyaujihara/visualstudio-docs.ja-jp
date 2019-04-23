@@ -8,12 +8,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ebff9b9e41212fcb1d33b7672e87aae8103571b7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: fc09d8570eed04c559e1b94f65319739bbc4ee13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653194"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103293"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
 
  このトピックは、次のセクションで構成されています。
 
--   [クイック チェックリスト](#Checklist)
+- [クイック チェックリスト](#Checklist)
 
--   [システム要件](#System)
+- [システム要件](#System)
 
--   [ネットワーク要件](#Network)
+- [ネットワーク要件](#Network)
 
--   [Hyper-V の要件](#HyperV)
+- [Hyper-V の要件](#HyperV)
 
--   [起動可能な VHD からのエミュレーターの実行はサポートされていません](#BootableVHD)
+- [起動可能な VHD からのエミュレーターの実行はサポートされていません](#BootableVHD)
 
--   [Hyper-V に必要な圧縮と暗号化が行われていないファイル](#Files)
+- [Hyper-V に必要な圧縮と暗号化が行われていないファイル](#Files)
 
-##  <a name="Checklist"></a> クイック チェックリスト
+## <a name="Checklist"></a> クイック チェックリスト
  Visual Studio Emulator for Android を実行するための要件を簡単に確認できるチェックリストです。 詳細については、このトピックの以下のセクションを参照してください。
 
  システム要件
@@ -62,17 +62,17 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
 
 - BIOS で、次の機能がサポートされている必要があります。
 
-  -   ハードウェア依存の仮想化
+  - ハードウェア依存の仮想化
 
-  -   第 2 レベルのアドレス変換 (SLAT)
+  - 第 2 レベルのアドレス変換 (SLAT)
 
-  -   ハードウェア ベースのデータ実行防止 (DEP)
+  - ハードウェア ベースのデータ実行防止 (DEP)
 
 - Windows で、Hyper-V を有効にして実行する必要があります。
 
 - ローカルの Hyper-V Administrators グループのメンバーである必要があります。
 
-##  <a name="System"></a> システム要件
+## <a name="System"></a> システム要件
  コンピューターは次の条件を満たしている必要があります。
 
 - Hyper-V のサポート (「 [Hyper-V の要件](#HyperV)」を参照してください)
@@ -85,7 +85,7 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
 
   ![システム要件を確認する](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")
 
-##  <a name="Network"></a> ネットワーク要件
+## <a name="Network"></a> ネットワーク要件
  ネットワークは次の条件を満たしている必要があります。
 
 - DHCP
@@ -100,7 +100,7 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
 
 - [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
-##  <a name="HyperV"></a> Hyper-V の要件
+## <a name="HyperV"></a> Hyper-V の要件
  BIOS での Hyper-V の要件
 
  コンピューターの BIOS は、次の要件をサポートする必要があります。また、次の要件を有効にする必要があります。
@@ -133,12 +133,12 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
 
  手動で自分をグループに追加するには、[ローカル ユーザーとグループ] スナップインを開きます。
 
-##  <a name="BootableVHD"></a> 起動可能な VHD からのエミュレーターの実行はサポートされていません
+## <a name="BootableVHD"></a> 起動可能な VHD からのエミュレーターの実行はサポートされていません
  起動可能な VHD から Windows を実行しているときに Visual Studio Emulator for Android でアプリを実行しようとすると、一般的にエミュレーターの起動に数分かかるか、起動に失敗します。 エミュレーターの起動に失敗すると、"アプリの配置に失敗しました。 やり直してください。
 
  この構成はサポートされていません。" というメッセージが表示されます。 関連する問題については、「 [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)」を参照してください。
 
-##  <a name="Files"></a> Hyper-V に必要な圧縮と暗号化が行われていないファイル
+## <a name="Files"></a> Hyper-V に必要な圧縮と暗号化が行われていないファイル
  NTFS ファイル システムで構成したハード ドライブで、Hyper-V に使用する仮想ハード ディスク ファイルは、圧縮も暗号化もされていない状態である必要があります。 次のディレクトリが圧縮も暗号化もされていないことを確認してください。
 
 - %localappdata%\Microsoft\XDE

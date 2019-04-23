@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b1d29c4398e6b6c377ab493c495951f942d15965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091292"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>方法: ワークフロー デザイナーで検索を使用する
 
@@ -23,13 +23,13 @@ ms.locfileid: "55942389"
 
 クイック検索では、デザイナーで、次を検索します。
 
--   <xref:System.Activities.Activity> オブジェクト、<xref:System.Activities.Statements.FlowNode> オブジェクト、<xref:System.Activities.Statements.State> オブジェクト、遷移、およびその他のカスタム フロー制御項目のプロパティ。
+- <xref:System.Activities.Activity> オブジェクト、<xref:System.Activities.Statements.FlowNode> オブジェクト、<xref:System.Activities.Statements.State> オブジェクト、遷移、およびその他のカスタム フロー制御項目のプロパティ。
 
--   変数
+- 変数
 
--   引数
+- 引数
 
--   式
+- 式
 
 ### <a name="use-quick-find"></a>クイック検索を使用します。
 
@@ -47,8 +47,8 @@ ms.locfileid: "55942389"
 
 ### <a name="use-find-in-files"></a>ファイルの検索を使用してください。
 
-1.  Visual Studio で、キーを押します**Ctrl**+**Shift**+**F**、または選択**編集** >  。**検索し、置換** > **ファイル内の検索**します。
+1. Visual Studio で、キーを押します**Ctrl**+**Shift**+**F**、または選択**編集** >  。**検索し、置換** > **ファイル内の検索**します。
 
-2.  検索項目を入力してください、**検索**テキスト ボックス をクリック**すべて検索**します。
+2. 検索項目を入力してください、**検索**テキスト ボックス をクリック**すべて検索**します。
 
-3.  検索結果に示されます、**の検索結果**ビュー。 結果の項目をダブルクリックするとは、ワークフロー デザイナーで一致を含むアクティビティに移動します。
+3. 検索結果に示されます、**の検索結果**ビュー。 結果の項目をダブルクリックするとは、ワークフロー デザイナーで一致を含むアクティビティに移動します。

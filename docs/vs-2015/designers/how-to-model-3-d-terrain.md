@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097480"
 ---
 # <a name="how-to-model-3-d-terrain"></a>方法: 3-D 地形をモデル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54764117"
   
  このドキュメントでは、以下のアクティビティについて説明します。  
   
--   シーンへのオブジェクトの追加  
+- シーンへのオブジェクトの追加  
   
--   面とポイントの選択  
+- 面とポイントの選択  
   
--   選択内容の移動  
+- 選択内容の移動  
   
--   **[面を再分割する]** ツールの使用  
+- **[面を再分割する]** ツールの使用  
   
--   デザイン サーフェイスでのオブジェクトのフレーム化  
+- デザイン サーフェイスでのオブジェクトのフレーム化  
   
 ## <a name="creating-a-3-d-terrain-model"></a>3-D 地形モデルの作成  
  平面を再分割して新たな面を作成した後、頂点を操作して対象の地形特徴を作成することで、3-D の地形を作成できます。  
@@ -68,7 +68,7 @@ ms.locfileid: "54764117"
   
    ![地形モデルを表示する 3&#45;D シーン](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")  
   
-   この地形モデルを使用して、「[方法: ジオメトリベースのグラデーション シェーダーを作成する](../designers/how-to-create-a-geometry-based-gradient-shader.md)」で説明するグラデーション シェーダーの効果を確認できます。  
+   この地形モデルを使用して、「[方法:ジオメトリ ベースのグラデーション シェーダーを作成](../designers/how-to-create-a-geometry-based-gradient-shader.md)です。  
   
 ## <a name="see-also"></a>関連項目  
  [モデル エディター](../designers/model-editor.md)

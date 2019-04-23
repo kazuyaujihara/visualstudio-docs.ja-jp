@@ -11,12 +11,12 @@ ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1ac7289489e1b7f3f2a047a10b6ace42fc15d94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28fc1155279ec624cea576b5a70a25800d4ff837
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962390"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101068"
 ---
 # <a name="extending-the-status-bar"></a>ステータス バーの拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ IDE の下部にある Visual Studio のステータス バーを使用して、
   
 #### <a name="reading-and-writing-to-the-status-bar"></a>読み取りと書き込みをステータス バー  
   
-1.  という名前の VSIX プロジェクトを作成する**TestStatusBarExtension**という名前のメニュー コマンドを追加および**TestStatusBarCommand**します。  
+1. という名前の VSIX プロジェクトを作成する**TestStatusBarExtension**という名前のメニュー コマンドを追加および**TestStatusBarCommand**します。  
   
-2.  TestStatusBarCommand.cs では、次のようにコマンド ハンドラー メソッド コード (MenuItemCallback) を置き換えます。  
+2. TestStatusBarCommand.cs では、次のようにコマンド ハンドラー メソッド コード (MenuItemCallback) を置き換えます。  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -70,17 +70,17 @@ IDE の下部にある Visual Studio のステータス バーを使用して、
     }  
     ```  
   
-3.  コードをコンパイルし、デバッグを開始します。  
+3. コードをコンパイルし、デバッグを開始します。  
   
-4.  開く、**ツール**Visual Studio の実験用インスタンスでのメニュー。 をクリックして、**呼び出す TestStatusBarCommand**ボタンをクリックします。  
+4. 開く、**ツール**Visual Studio の実験用インスタンスでのメニュー。 をクリックして、**呼び出す TestStatusBarCommand**ボタンをクリックします。  
   
      表示されるステータス バーの現在の読み取りでテキスト **「さっきステータス バーにします」。** メッセージ ボックスが表示されるが、同じテキスト。  
   
 #### <a name="updating-the-progress-bar"></a>進行状況バーを更新しています  
   
-1.  この手順では、初期化、および進行状況バーを更新する方法を紹介します。  
+1. この手順では、初期化、および進行状況バーを更新する方法を紹介します。  
   
-2.  TestStatusBarCommand.cs ファイルを開き、MenuItemCallback メソッドを次のコードに置き換えます。  
+2. TestStatusBarCommand.cs ファイルを開き、MenuItemCallback メソッドを次のコードに置き換えます。  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -104,21 +104,21 @@ IDE の下部にある Visual Studio のステータス バーを使用して、
     }  
     ```  
   
-3.  コードをコンパイルし、デバッグを開始します。  
+3. コードをコンパイルし、デバッグを開始します。  
   
-4.  開く、**ツール**Visual Studio の実験用インスタンスでのメニュー。 クリックして**呼び出す TestStatusBarCommand**ボタンをクリックします。  
+4. 開く、**ツール**Visual Studio の実験用インスタンスでのメニュー。 クリックして**呼び出す TestStatusBarCommand**ボタンをクリックします。  
   
      表示されるステータス バーの現在の読み取りでテキスト **「進行状況バーを書き込んでいます」。** 毎秒 20 秒の更新の進行状況バーも表示されます。 その後、ステータス バーと、進行状況バーはクリアされます。  
   
 #### <a name="displaying-an-animation"></a>アニメーションを表示します。  
   
-1.  ステータス バーには、いずれかを示すアニメーションをループ (たとえば、ソリューション内の複数のプロジェクトの構築) の実行時間の長い操作が表示されます。 このアニメーションが表示されない場合がある、正しい確認**ツール/オプション**設定。  
+1. ステータス バーには、いずれかを示すアニメーションをループ (たとえば、ソリューション内の複数のプロジェクトの構築) の実行時間の長い操作が表示されます。 このアニメーションが表示されない場合がある、正しい確認**ツール/オプション**設定。  
   
      移動して、**ツール/オプション/全般**  タブでオフにし、**クライアントのパフォーマンスに基づいて視覚的効果を自動的に調整**します。 サブ オプションを確認し、**リッチ クライアントの視覚的効果を有効にする**します。 今すぐできる Visual Studio の実験用インスタンスでプロジェクトをビルドするときに、アニメーションを参照してください。  
   
      この手順では、プロジェクトまたはソリューションの構築を表す標準の Visual Studio のアニメーションを表示します。  
   
-2.  TestStatusBarCommand.cs ファイルを開き、MenuItemCallback メソッドを次のコードに置き換えます。  
+2. TestStatusBarCommand.cs ファイルを開き、MenuItemCallback メソッドを次のコードに置き換えます。  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -139,8 +139,8 @@ IDE の下部にある Visual Studio のステータス バーを使用して、
     }  
     ```  
   
-3.  コードをコンパイルし、デバッグを開始します。  
+3. コードをコンパイルし、デバッグを開始します。  
   
-4.  開く、**ツール** メニューのをクリックし、Visual Studio の実験用インスタンスで**呼び出す TestStatusBarCommand**します。  
+4. 開く、**ツール** メニューのをクリックし、Visual Studio の実験用インスタンスで**呼び出す TestStatusBarCommand**します。  
   
      メッセージ ボックスが表示されたら、右端にステータス バーのアニメーションも表示されます。 メッセージ ボックスを消去するときに、アニメーションは表示されなくなります。

@@ -13,12 +13,12 @@ ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6e08d08e8ec68e684ced1972f277af9b04805c3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4f480275c29906f3bb941187ff537e3a02a1f45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978017"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099131"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 要素 (Visual Studio プロジェクト テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,21 +90,21 @@ ms.locfileid: "58978017"
   
 ### <a name="to-rename-files-with-parameters"></a>パラメーターを持つファイルの名前を変更するには  
   
-1.  .Vstemplate ファイルでは、次の XML を使用します。  
+1. .Vstemplate ファイルでは、次の XML を使用します。  
   
     ```  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  プロジェクト ファイルを開きます (の .vbproj、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]プロジェクト) をテキスト エディターでまたは[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
+2. プロジェクト ファイルを開きます (の .vbproj、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]プロジェクト) をテキスト エディターでまたは[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
   
-3.  次の xml のようなプロジェクト ファイル内の行を見つけます。  
+3. 次の xml のようなプロジェクト ファイル内の行を見つけます。  
   
     ```  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  コード行を次の XML に置き換えます。  
+4. コード行を次の XML に置き換えます。  
   
     ```  
     <Compile Include="$safeprojectname$.vb">  
