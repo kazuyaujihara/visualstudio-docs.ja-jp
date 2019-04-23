@@ -14,12 +14,12 @@ ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41d1ecc982dcdc4d494fc167e4784e9121bec15e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4442143b2766ed3608a852d0f811a6b943fd19df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117055"
 ---
 # <a name="function-expected"></a>関数が必要です。
 いずれかを呼び出すしようとするか、**関数プロトタイプ**できなかったオブジェクトのメソッドを`Function`オブジェクト、またはするには、関数呼び出しのコンテキストでオブジェクトを使用します。 次のコードがこのエラーを生成するため、たとえば、**例**関数ではありません。  
@@ -31,9 +31,9 @@ var x = example();           // Try and call example as if it were a function.
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   のみを呼び出す**関数プロトタイプ**メソッド`Function`オブジェクト。  
+- のみを呼び出す**関数プロトタイプ**メソッド`Function`オブジェクト。  
   
--   関数呼び出し演算子を使用することを確認します。`()`関数のみを呼び出します。  
+- 関数呼び出し演算子を使用することを確認します。`()`関数のみを呼び出します。  
   
 ## <a name="see-also"></a>関連項目  
  [関数オブジェクト](../../javascript/reference/function-object-javascript.md)   

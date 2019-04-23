@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39156994caa9e6ec073a05b0d8d04edab40e11e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1df66fcc2e7844bb05ff9a09e8fc71b6fb59ea9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609385"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073633"
 ---
 # <a name="listobject-control"></a>ListObject コントロール
   <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールは、イベントを公開するリストであり、データにバインドすることができます。 ワークシートにリストを追加すると、ユーザーが Microsoft Office Excel オブジェクト モデルを走査する必要なく、直接、プログラムできる <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールが Visual Studio により作成されます。
@@ -34,7 +34,7 @@ ms.locfileid: "56609385"
  ドキュメント レベルのプロジェクトでは、デザイン時または実行時に、ワークシートに <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールを追加できます。 VSTO アドイン プロジェクトに追加することができます<xref:Microsoft.Office.Tools.Excel.ListObject>実行時にのみのワークシートにコントロール。 詳細については、「[方法 :ワークシートに ListObject コントロールを追加](../vsto/how-to-add-listobject-controls-to-worksheets.md)します。
 
 > [!NOTE]
->  既定では、動的に作成されたリスト オブジェクトは、ワークシートを閉じる際に、ホスト コントロールとしてワークシートに残りません。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
+>  既定では、動的に作成されたリスト オブジェクトは、ワークシートを閉じる際に、ホスト コントロールとしてワークシートに残りません。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
 
 ## <a name="bind-data-to-the-control"></a>データをコントロールにバインドします。
  <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールでは、単純または複雑なデータ バインディングがサポートされます。 <xref:Microsoft.Office.Tools.Excel.ListObject>コントロールを使用して、データ ソースにバインドすることができます、<xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A>と<xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A>デザイン時プロパティまたは<xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A>メソッド実行時にします。
@@ -79,33 +79,33 @@ ms.locfileid: "56609385"
 ## <a name="events"></a>イベント
  次のイベントは <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールに対して利用できます。
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.Change>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.Change>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.DataBindingFailure>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.DataBindingFailure>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.DataMemberChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.DataMemberChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.DataSourceChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.DataSourceChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.Deselected>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.Deselected>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.Selected>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.Selected>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.SelectedIndexChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.SelectedIndexChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
 
 ## <a name="see-also"></a>関連項目
 - [拡張オブジェクトを使用した Excel の自動化](../vsto/automating-excel-by-using-extended-objects.md)

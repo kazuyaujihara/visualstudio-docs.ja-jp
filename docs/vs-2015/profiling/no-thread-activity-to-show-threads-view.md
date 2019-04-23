@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 509e0988d07bb22fc8d3180cc65db1a12092de08
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763298"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069720"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>表示するスレッド アクティビティがありません (スレッド ビュー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "54763298"
   
  表示される情報がない場合は、次の設定を確認してください。  
   
--   ズーム レベルが高いかどうか。 範囲内にスレッド アクティビティが表示されるように、表示を縮小するかスクロールしてみてください。  
+- ズーム レベルが高いかどうか。 範囲内にスレッド アクティビティが表示されるように、表示を縮小するかスクロールしてみてください。  
   
--   非表示のスレッドが多すぎないか。 多すぎる場合は、すべてのスレッドを表示してみてください。  
+- 非表示のスレッドが多すぎないか。 多すぎる場合は、すべてのスレッドを表示してみてください。  
   
--   **[マイ コードのみ]** が選択されている場合は、自分のコードに関するデータのみを表示できます。 システム スレッド アクティビティがあるかどうかを確認するための設定をクリアしてみてください。  
+- **[マイ コードのみ]** が選択されている場合は、自分のコードに関するデータのみを表示できます。 システム スレッド アクティビティがあるかどうかを確認するための設定をクリアしてみてください。  
   
--   不要項目の非表示が低いしきい値に設定されていることを確認してください。  
+- 不要項目の非表示が低いしきい値に設定されていることを確認してください。  
   
 ## <a name="see-also"></a>関連項目  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

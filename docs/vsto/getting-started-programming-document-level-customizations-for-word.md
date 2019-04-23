@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41fb80c229d016658b030d6ebf6981051c5de096
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056329"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Word 用ドキュメント レベル カスタマイズのプログラミングを開始します。
   開始した場合は取得する Visual Studio を使用して Microsoft Office Word のドキュメント レベルのカスタマイズを作成する、次を知る必要がありますに示します。
@@ -44,11 +44,11 @@ ms.locfileid: "56631498"
 
  詳細については、次のトピックを参照してください。
 
--   [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)
+- [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)
 
--   [拡張オブジェクトを使用して Word を自動化します。](../vsto/automating-word-by-using-extended-objects.md)
+- [拡張オブジェクトを使用して Word を自動化します。](../vsto/automating-word-by-using-extended-objects.md)
 
--   [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
+- [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-word"></a>Word のユーザー インターフェイスをカスタマイズします。
  ほとんどの Microsoft Office ソリューションは、Office アプリケーションのユーザー インターフェイス (UI) を変更して、ユーザーがソリューションと対話するためのなんらかの方法を提供します。 ドキュメント レベルのカスタマイズを使用して Word の UI を変更する方法はたくさんあります。 たとえば、コントロールは、リボンを追加することができ、操作ウィンドウを表示することができます。 詳細については、「[Office UI のカスタマイズ](../vsto/office-ui-customization.md)」を参照してください。
@@ -61,7 +61,7 @@ ms.locfileid: "56631498"
 ## <a name="next-steps"></a>次の手順
  Word 用ドキュメント レベルのカスタマイズを作成する方法についてを参照してください。[チュートリアル。最初の Word 用ドキュメント レベルのカスタマイズを作成する](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)します。 このチュートリアルでは、Visual Studio と Word のドキュメント レベルのカスタマイズのプログラミング モデルでの Office 開発ツールについて説明します。
 
- Word プロジェクトで、一般的なタスクを解説しているトピックの一覧は、[Office プログラミングで一般的なタスク](../vsto/common-tasks-in-office-programming.md)を参照してください。
+ Word プロジェクトで、一般的なタスクを解説しているトピックの一覧は、次を参照してください。 [Office プログラミングで一般的なタスク](../vsto/common-tasks-in-office-programming.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [方法: Visual Studio での Office プロジェクトを作成します。](../vsto/how-to-create-office-projects-in-visual-studio.md)

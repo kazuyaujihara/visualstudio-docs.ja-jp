@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093110"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>チュートリアル: プログラムによるグラフィックス情報のキャプチャ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ ms.locfileid: "58975035"
   
  プログラムによるキャプチャは次のようなシナリオで役立ちます。  
   
--   存在するスワップチェーンをグラフィックス アプリケーションが使用しないとき (テクスチャにレンダリングするときなど)、プログラムによるキャプチャを開始します。  
+- 存在するスワップチェーンをグラフィックス アプリケーションが使用しないとき (テクスチャにレンダリングするときなど)、プログラムによるキャプチャを開始します。  
   
--   アプリケーションがまったくレンダリングしないとき (DirectCompute を使用して計算を実行するときなど)、プログラムによるキャプチャを開始します。  
+- アプリケーションがまったくレンダリングしないとき (DirectCompute を使用して計算を実行するときなど)、プログラムによるキャプチャを開始します。  
   
--   レンダリングの問題を予測して手動テストでキャプチャすることは難しいものの、実行時にアプリケーションの状態に関する情報を使用してプログラムで予測できるときは、 `CaptureCurrentFrame`を呼び出します。  
+- レンダリングの問題を予測して手動テストでキャプチャすることは難しいものの、実行時にアプリケーションの状態に関する情報を使用してプログラムで予測できるときは、 `CaptureCurrentFrame`を呼び出します。  
   
-##  <a name="CaptureDX11_2"></a> Windows 8.1 のプログラムによるキャプチャ  
+## <a name="CaptureDX11_2"></a> Windows 8.1 のプログラムによるキャプチャ  
  このチュートリアルのパートでは、Windows 8.1 で DirectX 11.2 API を使用するアプリケーションでのプログラムによるキャプチャについて説明します。ここでは、堅牢なキャプチャ方法を使用します。 Windows 8.0 で前のバージョンの DirectX を使用しているアプリでプログラムによるキャプチャを使用する方法については、このチュートリアルで後述する「 [Programmatic capture in Windows 8.0 and earlier](#CaptureDX11_1) 」をご覧ください。  
   
  このセクションでは、次のタスクを実行する方法を示します。  
   
--   プログラムによるキャプチャを使用するためにアプリケーションを準備する  
+- プログラムによるキャプチャを使用するためにアプリケーションを準備する  
   
--   IDXGraphicsAnalysis インターフェイスを取得する  
+- IDXGraphicsAnalysis インターフェイスを取得する  
   
--   グラフィックス情報をキャプチャする  
+- グラフィックス情報をキャプチャする  
   
 > [!NOTE]
 >  プログラムによるキャプチャの以前の実装では、Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を利用してキャプチャ機能を提供していましたが、Windows 8.1 は Direct3D 11.2 によりキャプチャを直接サポートしています。 このため、Windows 8.1 でプログラムによるキャプチャを行うために Remote Tools をインストールする必要がなくなりました。  
@@ -48,7 +48,7 @@ ms.locfileid: "58975035"
   
 ##### <a name="to-include-programmatic-capture-headers"></a>プログラムによるキャプチャのヘッダーをインクルードするには  
   
--   IDXGraphicsAnalysis インターフェイスを定義するソース ファイルに、次のヘッダーをインクルードします。  
+- IDXGraphicsAnalysis インターフェイスを定義するソース ファイルに、次のヘッダーをインクルードします。  
   
     ```  
     #include <DXGItype.h>  
@@ -89,7 +89,7 @@ ms.locfileid: "58975035"
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis インターフェイスを取得するには  
   
--   以下のコードを使用して、DXGI デバッグ インターフェイスに対して IDXGraphicsAnalysis インターフェイスをフックします。  
+- 以下のコードを使用して、DXGI デバッグ インターフェイスに対して IDXGraphicsAnalysis インターフェイスをフックします。  
   
     ```  
     IDXGraphicsAnalysis* pGraphicsAnalysis;  
@@ -113,7 +113,7 @@ ms.locfileid: "58975035"
   
 ##### <a name="to-capture-graphics-information"></a>グラフィックス情報をキャプチャするには  
   
--   グラフィックス情報のキャプチャを開始するには、 `BeginCapture`を使用します。  
+- グラフィックス情報のキャプチャを開始するには、 `BeginCapture`を使用します。  
   
     ```  
     ...  
@@ -129,18 +129,18 @@ ms.locfileid: "58975035"
     ...  
     ```  
   
-##  <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
+## <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
  チュートリアルのこの部分では、DirectX 11.1 API を使用する Windows 8.0 (およびそれ以前) のアプリケーションにおけるプログラムによるキャプチャについて説明します。これは、従来のキャプチャ方法を使用します。 Windows 8.1 で DirectX 11.2 を使用するアプリでプログラムによるキャプチャを使用する方法については、このチュートリアルで前述の「 [Windows 8.1 のプログラムによるキャプチャ](#CaptureDX11_2) 」をご覧ください。  
   
  ここでは、次のタスクについて説明します。  
   
--   プログラムによるキャプチャを使用するためにコンピューターを準備する  
+- プログラムによるキャプチャを使用するためにコンピューターを準備する  
   
--   プログラムによるキャプチャを使用するためにアプリケーションを準備する  
+- プログラムによるキャプチャを使用するためにアプリケーションを準備する  
   
--   グラフィックス ログ ファイルの名前と場所を設定する  
+- グラフィックス ログ ファイルの名前と場所を設定する  
   
--   `CaptureCurrentFrame` API の使用  
+- `CaptureCurrentFrame` API の使用  
   
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>プログラムによるキャプチャを使用するためにコンピューターを準備する  
  プログラム キャプチャ API は、Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用してキャプチャ機能を提供します。 ローカル コンピューターでプログラムによるキャプチャを使用している場合でも、アプリケーションが実行されるコンピューターにリモート ツールをインストールしておく必要があります。 ローカル コンピューターでプログラムによるキャプチャを行う場合は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行させる必要はありません。  
@@ -157,9 +157,9 @@ ms.locfileid: "58975035"
   
 ##### <a name="to-prepare-your-app-to-capture-graphics-information-programmatically"></a>グラフィックス情報をプログラムによってキャプチャするためにアプリケーションを準備するには  
   
-1.  `vsgcapture.h` ヘッダーがアプリケーションのソース コードにインクルードされていることを確認します。 このヘッダーは、プログラム キャプチャ API を呼び出すソース コード ファイルや、複数のソース コード ファイルから API を呼び出すためのコンパイル済みヘッダー ファイルの中で、決まった場所にのみインクルードできます。  
+1. `vsgcapture.h` ヘッダーがアプリケーションのソース コードにインクルードされていることを確認します。 このヘッダーは、プログラム キャプチャ API を呼び出すソース コード ファイルや、複数のソース コード ファイルから API を呼び出すためのコンパイル済みヘッダー ファイルの中で、決まった場所にのみインクルードできます。  
   
-2.  アプリケーション用のソース コードで、現行のフレームの残りをキャプチャしようとするたびに、 `g_pVsgDbg->CaptureCurrentFrame()`を呼び出します。 この方法では、パラメーターを使用しないため戻り値がありません。  
+2. アプリケーション用のソース コードで、現行のフレームの残りをキャプチャしようとするたびに、 `g_pVsgDbg->CaptureCurrentFrame()`を呼び出します。 この方法では、パラメーターを使用しないため戻り値がありません。  
   
 ### <a name="configuring-the-name-and-location-of-the-graphics-log-file"></a>グラフィックス ログ ファイルの名前と場所を設定する  
  グラフィックス ログは、 `DONT_SAVE_VSGLOG_TO_TEMP` および `VSG_DEFAULT_RUN_FILENAME` マクロで定義されている場所に作成されます。  
@@ -196,7 +196,7 @@ ms.locfileid: "58975035"
 ## <a name="next-steps"></a>次の手順  
  このチュートリアルでは、プログラムでグラフィックス情報をキャプチャする方法を示しました。 次の手順では、次のオプションを検討します。  
   
--   グラフィックス診断ツールを使用してキャプチャされたグラフィックス情報を解析する方法について学習します。 参照してください[概要](../debugger/overview-of-visual-studio-graphics-diagnostics.md)します。  
+- グラフィックス診断ツールを使用してキャプチャされたグラフィックス情報を解析する方法について学習します。 参照してください[概要](../debugger/overview-of-visual-studio-graphics-diagnostics.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [チュートリアル: グラフィックス情報をキャプチャする](../debugger/walkthrough-capturing-graphics-information.md)   

@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c34ac4fdcf50d1fde95c957de6aff4b7f004a2d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1ccd8c399bd92bd98307d44aff913c30390033c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083713"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>方法: ASP.NET の例外をデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ ms.locfileid: "58975970"
   
 ### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>[マイ コードのみ] で ASP.NET 例外を有効にするには  
   
-1.  **[デバッグ]** メニューの **[例外]** をクリックします。  
+1. **[デバッグ]** メニューの **[例外]** をクリックします。  
   
      **[例外]** ダイアログ ボックスが表示されます。  
   
-2.  **[Common Language Runtime Exceptions]** 行の **[スローされるとき]** または **[ユーザーにハンドルされていないとき]** チェック ボックスをオンにします。  
+2. **[Common Language Runtime Exceptions]** 行の **[スローされるとき]** または **[ユーザーにハンドルされていないとき]** チェック ボックスをオンにします。  
   
      **[ユーザーにハンドルされていないとき]** 設定を使用するには、**[マイ コードのみ]** を有効にする必要があります。  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>ASP.NET の例外処理で推奨される手順を使用するには  
   
--   予測でき、処理方法がわかる例外をスローできるコードを、`try … catch` ブロックで囲みます。 たとえば場合は、アプリケーションは、XML Web サービスまたは SQL Server に直接呼び出しを行うは、そのコードがでなければなりません**try… catch**数多くの例外が発生する可能性があるためにをブロックします。
+- 予測でき、処理方法がわかる例外をスローできるコードを、`try … catch` ブロックで囲みます。 たとえば場合は、アプリケーションは、XML Web サービスまたは SQL Server に直接呼び出しを行うは、そのコードがでなければなりません**try… catch**数多くの例外が発生する可能性があるためにをブロックします。

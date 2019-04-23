@@ -27,12 +27,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a284fc35a5a792171e5102518bcfa553337dd15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963687"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080742"
 ---
 # <a name="expressions-in-the-debugger"></a>デバッガー内の式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> デバッガーの組み込み関数による状態の保持  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> デバッガーの組み込み関数による状態の保持  
  デバッガーの組み込み関数を使用すると、アプリケーションの状態を変更せずに、式の中で特定の C/C++ 関数を呼び出すことができます。  
   
  デバッガーの組み込み関数には次の特徴があります。  
@@ -118,15 +118,15 @@ int main()
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - サポートされていない式  
   
--   ポインターを使用するキャスト、およびユーザー定義のキャストはサポートされていません。  
+- ポインターを使用するキャスト、およびユーザー定義のキャストはサポートされていません。  
   
--   オブジェクトの比較と代入はサポートされていません。  
+- オブジェクトの比較と代入はサポートされていません。  
   
--   オーバーロードされた演算子とオーバーロードされた関数はサポートされていません。  
+- オーバーロードされた演算子とオーバーロードされた関数はサポートされていません。  
   
--   ボックス化とボックス化解除はサポートされていません。  
+- ボックス化とボックス化解除はサポートされていません。  
   
--   `Sizeof` 演算子はサポートされていません。  
+- `Sizeof` 演算子はサポートされていません。  
   
 ## <a name="c---unsupported-expressions"></a>C# - サポートされていない式  
   
@@ -135,19 +135,19 @@ int main()
   
  動的オブジェクトでは、以下の機能はサポートされていません。  
   
--   複合演算子 `+=`、 `-=`、 `%=`、 `/=`、 `*=`  
+- 複合演算子 `+=`、 `-=`、 `%=`、 `/=`、 `*=`  
   
--   多数のキャスト (数値キャスト、型引数キャストなど)  
+- 多数のキャスト (数値キャスト、型引数キャストなど)  
   
--   3 つ以上の引数を指定したメソッド呼び出し  
+- 3 つ以上の引数を指定したメソッド呼び出し  
   
--   3 つ以上の引数を指定したプロパティの getter  
+- 3 つ以上の引数を指定したプロパティの getter  
   
--   引数を指定したプロパティの setter  
+- 引数を指定したプロパティの setter  
   
--   インデクサーへの割り当て  
+- インデクサーへの割り当て  
   
--   ブール演算子 `&&` および `||`  
+- ブール演算子 `&&` および `||`  
   
 ### <a name="anonymous-methods"></a>匿名メソッド  
  匿名メソッドの新規作成はサポートされていません。  
@@ -159,19 +159,19 @@ int main()
   
  動的オブジェクトでは、以下の機能はサポートされていません。  
   
--   複合演算子 `+=`、 `-=`、 `%=`、 `/=`、 `*=`  
+- 複合演算子 `+=`、 `-=`、 `%=`、 `/=`、 `*=`  
   
--   多数のキャスト (数値キャスト、型引数キャストなど)  
+- 多数のキャスト (数値キャスト、型引数キャストなど)  
   
--   3 つ以上の引数を指定したメソッド呼び出し  
+- 3 つ以上の引数を指定したメソッド呼び出し  
   
--   3 つ以上の引数を指定したプロパティの getter  
+- 3 つ以上の引数を指定したプロパティの getter  
   
--   引数を指定したプロパティの setter  
+- 引数を指定したプロパティの setter  
   
--   インデクサーへの割り当て  
+- インデクサーへの割り当て  
   
--   ブール演算子 `&&` および `||`  
+- ブール演算子 `&&` および `||`  
   
 ### <a name="local-constants"></a>ローカル定数  
  ローカル定数はサポートされていません。  
@@ -184,35 +184,35 @@ int main()
   
 ### <a name="unsupported-keywords"></a>サポートされないキーワード  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   名前空間またはモジュール レベルのキーワード ( `End Sub` や `Module`など)。  
+- 名前空間またはモジュール レベルのキーワード ( `End Sub` や `Module`など)。  
   
 ## <a name="see-also"></a>関連項目  
  [C++ の書式指定子](../debugger/format-specifiers-in-cpp.md)   

@@ -19,17 +19,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e763c0a39e3785e91733105f8fc18eae324e958
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f14815502a33fb7d49a10c2724c57a4a0d86e9f7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758291"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651449"
 ---
 # <a name="target-element-msbuild"></a>Target 要素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] が順次実行するタスクのセットを格納します。  
   
  \<Project>  
@@ -64,8 +63,8 @@ ms.locfileid: "54758291"
 |---------------|-----------------|  
 |`Name`|必須の属性です。<br /><br /> ターゲットの名前。|  
 |`Condition`|省略可能な属性です。<br /><br /> 評価する条件です。 条件が `false` と評価された場合、ターゲットの本体も、`DependsOnTargets` 属性で設定されたいずれのターゲットも実行されません。 条件の詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|  
-|`Inputs`|省略可能な属性です。<br /><br /> このターゲットの入力を形成するファイル。 複数のファイルを指定するときは、セミコロン (;) で区切ります。 ファイルのタイムスタンプは、`Outputs` のファイルのタイムスタンプと比較され、`Target` が最新かどうか判断されます。 詳細については、「[インクリメンタル ビルド](../msbuild/incremental-builds.md)」、「[方法: インクリメンタル ビルドを実行する](../msbuild/how-to-build-incrementally.md)」、「[変換](../msbuild/msbuild-transforms.md)」を参照してください。|  
-|`Outputs`|省略可能な属性です。<br /><br /> このターゲットの出力を形成するファイル。 複数のファイルを指定するときは、セミコロン (;) で区切ります。 ファイルのタイムスタンプは、`Inputs` のファイルのタイムスタンプと比較され、`Target` が最新かどうか判断されます。 詳細については、「[インクリメンタル ビルド](../msbuild/incremental-builds.md)」、「[方法: インクリメンタル ビルドを実行する](../msbuild/how-to-build-incrementally.md)」、「[変換](../msbuild/msbuild-transforms.md)」を参照してください。|  
+|`Inputs`|省略可能な属性です。<br /><br /> このターゲットの入力を形成するファイル。 複数のファイルを指定するときは、セミコロン (;) で区切ります。 ファイルのタイムスタンプは、`Outputs` のファイルのタイムスタンプと比較され、`Target` が最新かどうか判断されます。 詳細については、次を参照してください。[インクリメンタル ビルド](../msbuild/incremental-builds.md)、[方法。インクリメンタル ビルド](../msbuild/how-to-build-incrementally.md)、および[変換](../msbuild/msbuild-transforms.md)します。|  
+|`Outputs`|省略可能な属性です。<br /><br /> このターゲットの出力を形成するファイル。 複数のファイルを指定するときは、セミコロン (;) で区切ります。 ファイルのタイムスタンプは、`Inputs` のファイルのタイムスタンプと比較され、`Target` が最新かどうか判断されます。 詳細については、次を参照してください。[インクリメンタル ビルド](../msbuild/incremental-builds.md)、[方法。インクリメンタル ビルド](../msbuild/how-to-build-incrementally.md)、および[変換](../msbuild/msbuild-transforms.md)します。|  
 |`Returns`|省略可能な属性です。<br /><br /> このターゲットを呼び出すタスク (MSBuild タスクなど) で使用可能になる項目のセットです。 複数のターゲットを指定するときは、セミコロン (;) で区切ります。 ファイル内のターゲットに `Returns` 属性がない場合、代わりに Outputs 属性がこの目的で使用されます。|  
 |`KeepDuplicateOutputs`|省略可能な Boolean 属性です。<br /><br /> `true` の場合、ターゲットの Returns の同じ項目への参照が複数記録されます。  既定では、この属性は `false` です。|  
 |`BeforeTargets`|省略可能な属性です。<br /><br /> ターゲット名のセミコロン区切りのリストです。  指定した場合、指定したターゲットの前にこのターゲットが実行されます。 これにより、プロジェクト作成者は、これらを直接変更せずに、既存のターゲット セットを拡張できます。 詳細については、「[ターゲットのビルド順序](../msbuild/target-build-order.md)」を参照してください。|  
@@ -88,7 +87,7 @@ ms.locfileid: "54758291"
 |-------------|-----------------|  
 |[プロジェクト](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルの必須のルート要素です。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
  実行する最初のターゲットは実行時に指定されます。 各ターゲットは他のターゲットとの依存関係を持つ場合があります。 たとえば、展開用のターゲットはコンパイル用のターゲットに依存します。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] エンジンは `DependsOnTargets` 属性に出現する順序で、依存関係を左から右に実行します。 詳細については、「[ターゲット](../msbuild/msbuild-targets.md)」を参照してください。  
   
  あるターゲットに複数のターゲットが依存関係を持つ場合でも、ターゲットは 1 回のビルド中に 1 回だけ実行されます。  

@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109817"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "54763115"
 ## <a name="adding-single-files-at-the-solution-level"></a>ソリューション レベルで 1 つのファイルを追加する  
  複数のプロジェクトが 1 つのファイルを参照することがあります。または、特定のプロジェクトの下ではなく、ソリューション レベルで論理的に属するテキストまたはその他のデータが 1 つのファイルに含まれていることがあります。  1 つの項目を 1 つのソリューションに追加するには:  
   
-1.  **ソリューション エクスプローラー**でソリューション ノードを右クリックし、**[追加 &#124; 新しい項目]** の順に選択するか、**[追加 &#124; 既存の項目]** の順に選択します。  
+1. **ソリューション エクスプローラー**でソリューション ノードを右クリックし、**[追加 &#124; 新しい項目]** の順に選択するか、**[追加 &#124; 既存の項目]** の順に選択します。  
   
 ## <a name="creating-empty-solutions"></a>空のソリューションの作成  
  プロジェクトはソリューション内に配置されている必要がありますが、プロジェクトを持たないソリューションを作成することもできます。  
@@ -87,11 +87,11 @@ ms.locfileid: "54763115"
   
 ##### <a name="to-delete-a-solution"></a>ソリューションを削除するには  
   
-1.  **ソリューション エクスプローラー**で、削除するソリューションを右クリックし、 **[エクスプローラーでフォルダーを開く]** をクリックします。  
+1. **ソリューション エクスプローラー**で、削除するソリューションを右クリックし、 **[エクスプローラーでフォルダーを開く]** をクリックします。  
   
-2.  ファイル エクスプローラーで、1 つ上の階層に移動します。  
+2. ファイル エクスプローラーで、1 つ上の階層に移動します。  
   
-3.  ソリューションのあるディレクトリを選択し、Del キーを押します。  
+3. ソリューションのあるディレクトリを選択し、Del キーを押します。  
   
 ## <a name="see-also"></a>関連項目
  [ソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)   

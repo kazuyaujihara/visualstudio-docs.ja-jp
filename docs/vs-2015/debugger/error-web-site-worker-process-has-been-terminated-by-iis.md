@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97b6b7a798483000916ee8c99a8000fd45b9cc00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 787785909cd980176fd9220f58198ae6cc272ea8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977962"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080242"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>エラー :Web サイトのワーカー プロセスが IIS によって停止されました
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58977962"
   
 1. **[管理ツール]** ウィンドウを開きます。  
   
-   1.  をクリックして**開始**を選択し**コントロール パネルの**です。  
+   1. をクリックして**開始**を選択し**コントロール パネルの**です。  
   
-   2.  **コントロール パネル**で必要に応じて **[クラシック表示に切り替える]** を選択し、**[管理ツール]** をダブルクリックします。  
+   2. **コントロール パネル**で必要に応じて **[クラシック表示に切り替える]** を選択し、**[管理ツール]** をダブルクリックします。  
   
 2. **[管理ツール]** ウィンドウで、**[インターネット インフォメーション サービス (IIS) マネージャー]** をダブルクリックします。  
   

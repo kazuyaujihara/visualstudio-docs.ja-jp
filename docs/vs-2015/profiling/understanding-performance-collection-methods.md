@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 357623a6c93cf2ec87cc9d4b53f76cec535fd6c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7432009cb64081fc235ec48a3de5400311260f3f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079059"
 ---
 # <a name="understanding-performance-collection-methods"></a>パフォーマンス収集方法について
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
   
  一部のプロファイル方法では、ソフトウェアおよびハードウェアのパフォーマンス カウンターなど、ここで示した以外の情報も収集できます。 詳細については、「[追加のパフォーマンス データの収集](../profiling/collecting-additional-performance-data.md)」を参照してください。  
   
-##  <a name="sampling"></a> サンプリング  
+## <a name="sampling"></a> サンプリング  
  サンプリング プロファイル方式では、プロファイリング実行中にアプリケーションが実行した作業に関する統計データを収集します。 サンプリング方式は負荷が少ないため、アプリケーション メソッドの実行にほとんど影響しません。  
   
  サンプリングは、Visual Studio プロファイリング ツールの既定の方式です。 サンプリング方式は、次のような用途に適しています。  
@@ -57,7 +57,7 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
   
   [サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)  
   
-##  <a name="instrumentation"></a> インストルメンテーション  
+## <a name="instrumentation"></a> インストルメンテーション  
  インストルメンテーション プロファイル方式では、プロファイル対象アプリケーションにおける関数呼び出しのタイミングに関する詳細情報を収集します。 インストルメンテーション プロファイル方式は、次のような用途に適しています。  
   
 - ディスク I/O などの入出力のボトルネックを調査する場合  
@@ -82,7 +82,7 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
   
   [インストルメンテーション メソッドのデータ ビュー](../profiling/instrumentation-method-data-views.md)  
   
-##  <a name="concurrency"></a> コンカレンシー  
+## <a name="concurrency"></a> コンカレンシー  
  コンカレンシー プロファイルでは、マルチスレッド アプリケーションに関する情報が収集されます。 リソース競合プロファイルでは、競合するスレッドによる共有リソースへのアクセスで待機が発生するたびに、詳細な呼び出し履歴情報が収集されます。 また、コンカレンシーの視覚化では、マルチスレッド アプリケーションが、アプリケーション自体、ハードウェア、オペレーティング システム、およびホスト コンピューター上の他のプロセスと対話する方法に関する、より一般的な情報が収集されます。  
   
 - リソース競合レポートには、発生した競合の合計数と、リソースに対する合計待機時間 (待機が発生したモジュール、関数、ソース コード行、命令についての合計待機時間) が表示されます。 また、タイムライン グラフにも発生した競合が表示されます。  
@@ -97,7 +97,7 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
   
   [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)  
   
-##  <a name="net_memory"></a> .NET メモリ  
+## <a name="net_memory"></a> .NET メモリ  
  .NET メモリ割り当てプロファイル方式では、プロファイリング対象アプリケーションで .NET Framework オブジェクトにメモリが割り当てられるたびに、コンピューター プロセッサに対して割り込みを行います。 オブジェクトの有効期間データも収集する場合は、.NET Framework のガベージ コレクションの実行後に、毎回プロファイラーがコンピューター プロセッサに対して割り込みを行います。  
   
  プロファイラーは、割り当てで作成されたオブジェクト、またはガベージ コレクションで破棄されたオブジェクトの型、サイズ、および数に関する情報を収集します。  
@@ -118,7 +118,7 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
   
   [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)  
   
-##  <a name="tier_interaction"></a> 階層の相互作用  
+## <a name="tier_interaction"></a> 階層の相互作用  
  階層の相互作用のプロファイリングでは、[!INCLUDE[vstecado](../includes/vstecado-md.md)] ページまたはその他のアプリケーションと [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] データベースとの間で行われた同期的な [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 呼び出しに関する情報が、プロファイリング データ ファイルに追加されます。 データには、呼び出しの回数と時間、および最長時間と最短時間が含まれます。 階層の相互作用データは、サンプリング、インストルメンテーション、.NET メモリ、またはコンカレンシーの各方式で収集されたプロファイリング データに追加できます。  
   
  ![階層相互作用プロファイリング データ](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  
@@ -129,5 +129,5 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
  [階層相互作用のビュー](../profiling/tier-interaction-views.md)  
   
 ## <a name="see-also"></a>関連項目  
- [方法: Web サイトのパフォーマンス データを収集する](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
+ [方法: Web サイトのパフォーマンス データを収集します。](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [パフォーマンス プロファイリングのビギナーズ ガイド](../profiling/beginners-guide-to-performance-profiling.md)

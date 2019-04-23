@@ -14,12 +14,12 @@ ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 159a5dd0195cc0cbb244664d75e19d1ac6af3dec
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 5d1fabd8da6f825a266614a4a5c7fabd5c307130
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843417"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064947"
 ---
 # <a name="vbarray-expected"></a>VBArray が必要です。
 必要ですが、Visual Basic の safeArray、されていないオブジェクトを指定しています。  
@@ -32,7 +32,7 @@ new VBArray(safeArray);
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   のみを渡すこと**VBArray**オブジェクトを**VBArray**コンス トラクター。  
+- のみを渡すこと**VBArray**オブジェクトを**VBArray**コンス トラクター。  
   
 ## <a name="see-also"></a>関連項目  
  [VBArray オブジェクト](../../javascript/reference/vbarray-object-javascript.md)   

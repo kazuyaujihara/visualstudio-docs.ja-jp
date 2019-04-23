@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366813"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>ウォッチ ウィンドウと クイック ウォッチ変数なウォッチ
@@ -231,8 +231,8 @@ public class Program
 
 のみを表示する、**動的ビュー**オブジェクトは、追加、**動的**の動的オブジェクト名の後の書式指定子、**ウォッチ**ウィンドウ。
 
-- C# の場合 : `ObjectName, dynamic`
-- Visual Basic の場合 `$dynamic, ObjectName`
+- C# の場合: `ObjectName, dynamic`
+- Visual Basic の場合: `$dynamic, ObjectName`
 
 >[!NOTE]
 >- C#内の値が自動的に再評価するデバッガー、**動的ビュー**次のコード行をステップ実行する場合。

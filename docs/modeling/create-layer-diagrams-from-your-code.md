@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b9822dda92a096e3c497d468865d3ed9fd56e16d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223235"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046918"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>コードからの依存関係図の作成
 
@@ -43,13 +43,13 @@ ms.locfileid: "57223235"
 > [!NOTE]
 > Visual Studio で .NET Core プロジェクトでは、依存関係図はサポートされていません。
 
-1.  **アーキテクチャ**] メニューの [選択**新しい依存関係図**します。
+1. **アーキテクチャ**] メニューの [選択**新しい依存関係図**します。
 
-2.  **テンプレート**、選択**依存関係図**します。
+2. **テンプレート**、選択**依存関係図**します。
 
-3.  図に名前を付けます。
+3. 図に名前を付けます。
 
-4.  **モデリング プロジェクトに追加**を参照し、ソリューション内の既存のモデリング プロジェクトを選択します。
+4. **モデリング プロジェクトに追加**を参照し、ソリューション内の既存のモデリング プロジェクトを選択します。
 
      - または -
 
@@ -58,7 +58,7 @@ ms.locfileid: "57223235"
     > [!NOTE]
     > 依存関係図はモデリング プロジェクト内に存在する必要があります。 ただし、ソリューション内のどの場所にある項目にもリンクできます。
 
-5.  モデリング プロジェクトと依存関係図の両方を保存してください。
+5. モデリング プロジェクトと依存関係図の両方を保存してください。
 
 ## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>ドラッグし削除、またはコピーして貼り付けるには、コード マップから
 
@@ -101,19 +101,19 @@ ms.locfileid: "57223235"
 
  レイヤーの数字は、レイヤーにリンクされている成果物の数を示します。 ただし、この数値を読み取るときには、次の点に注意してください。
 
--   1 つのレイヤーが他の成果物を含む 1 つの成果物にリンクされているが、他の成果物に直接リンクされていない場合、その数字にはリンクされた成果物のみが含まれます。 ただし、レイヤー検証時の分析にはそれらの他の成果物も含まれます。
+- 1 つのレイヤーが他の成果物を含む 1 つの成果物にリンクされているが、他の成果物に直接リンクされていない場合、その数字にはリンクされた成果物のみが含まれます。 ただし、レイヤー検証時の分析にはそれらの他の成果物も含まれます。
 
      たとえば、1 つのレイヤーが 1 つの名前空間にリンクされている場合、その名前空間に複数のクラスが含まれていても、リンクされた成果物の数は 1 です。 レイヤーに名前空間の各クラスへのリンクもある場合、その数字にはリンクされたクラスが含まれます。
 
--   1 つのレイヤーに成果物にリンクされた他のレイヤーが含まれている場合は、そのコンテナー レイヤーの数字にそれらの成果物が含まれていなくても、コンテナー レイヤーはそれらの成果物にリンクされます。
+- 1 つのレイヤーに成果物にリンクされた他のレイヤーが含まれている場合は、そのコンテナー レイヤーの数字にそれらの成果物が含まれていなくても、コンテナー レイヤーはそれらの成果物にリンクされます。
 
 ## <a name="Managing"></a> レイヤーと成果物の間のリンクを管理します。
 
-1.  依存関係図、レイヤーのショートカット メニューを開きし、**ビュー リンク**します。
+1. 依存関係図、レイヤーのショートカット メニューを開きし、**ビュー リンク**します。
 
      **レイヤー エクスプ ローラー**選択したレイヤーの成果物のリンクが表示されます。
 
-2.  これらのリンクを管理するには、次の操作を行います。
+2. これらのリンクを管理するには、次の操作を行います。
 
 |**To**|**レイヤー エクスプ ローラーで**|
 |-|-|
@@ -150,17 +150,17 @@ ms.locfileid: "57223235"
 ## <a name="Codemaps"></a> パターンとコード マップ上の依存関係を検出します。
  依存関係図を作成するときに作成することも**コード マップ**します。 これらの図を利用することで、コードを検証するときに、パターンと依存関係を見つけやすくなります。 ソリューション エクスプローラー、クラス ビュー、またはオブジェクト ブラウザーを使用して、アセンブリ、名前空間、およびクラスを調べることができます。これらは、通常は既存のレイヤーに対応しています。 コード マップについての詳細は、次を参照してください。
 
--   [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)
+- [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)
 
--   [コード マップを使用してアプリケーションをデバッグする](../modeling/use-code-maps-to-debug-your-applications.md)
+- [コード マップを使用してアプリケーションをデバッグする](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [コード マップ アナライザーを使用して潜在的な問題を検索する](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [コード マップ アナライザーを使用して潜在的な問題を検索する](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>関連項目
 
 - [アーキテクチャ ツールとモデリング ツールのエディションのサポート](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [ビデオ:リアルタイムでアーキテクチャ依存関係を検証します。](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [依存関係図:参照](../modeling/layer-diagrams-reference.md)
+- [依存関係図:リファレンス](../modeling/layer-diagrams-reference.md)
 - [依存関係図:ガイドライン](../modeling/layer-diagrams-guidelines.md)
 - [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)
 - [コードの視覚化](../modeling/visualize-code.md)

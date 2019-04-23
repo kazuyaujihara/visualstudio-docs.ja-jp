@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fa5df395aee8e93c191535a7bec5b078563e3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6567b4ff4ee7c798ac82c5d33ea50ac206fcd692
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039047"
 ---
 # <a name="customizing-project-and-item-templates"></a>プロジェクトと項目テンプレートのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,28 +26,28 @@ ms.locfileid: "54801107"
   
  たとえば、次のタスクを実行できます。  
   
--   既存のテンプレートを変更し、カスタム テンプレートとしてエクスポートします。  
+- 既存のテンプレートを変更し、カスタム テンプレートとしてエクスポートします。  
   
-     詳しくは、「[方法: 既存のテンプレートを更新する](../ide/how-to-update-existing-templates.md)」をご覧ください。  
+     詳細については、「[方法 :既存のテンプレートを更新](../ide/how-to-update-existing-templates.md)します。  
   
--   カスタム パラメーターをテンプレートに渡して、既存の値を置き換えます。  
+- カスタム パラメーターをテンプレートに渡して、既存の値を置き換えます。  
   
-     詳しくは、「[方法 : テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」をご覧ください。  
+     詳細については、「[方法 :テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)します。  
   
--   テンプレートからプロジェクトを作成するウィザードをカスタマイズします。  
+- テンプレートからプロジェクトを作成するウィザードをカスタマイズします。  
   
-     詳しくは、「[方法 : プロジェクト テンプレートを組み合わせたウィザードを使用する](../extensibility/how-to-use-wizards-with-project-templates.md)」をご覧ください。  
+     詳細については、「[方法 :プロジェクト テンプレートにウィザードを使用して](../extensibility/how-to-use-wizards-with-project-templates.md)します。  
   
 ## <a name="related-sections"></a>関連項目  
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)  
   
- [方法 : テンプレートの問題を解決する](../ide/how-to-troubleshoot-templates.md)  
+ [方法: テンプレートの問題を解決する](../ide/how-to-troubleshoot-templates.md)  
   
- [方法 : プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)  
+ [方法: プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)  
   
- [方法 : 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)  
+ [方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)  
   
- [方法 : スタート キットを作成する](../ide/how-to-create-starter-kits.md)  
+ [方法: スタート キットを作成する](../ide/how-to-create-starter-kits.md)  
   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)  
   

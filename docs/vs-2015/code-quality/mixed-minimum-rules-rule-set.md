@@ -9,18 +9,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8fb6cecf9c1e8798e5f545f5ad0155a4960f75aa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: fbc8239fc3472d5dd5e8a24ca2b0c125d57cca21
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002751"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653074"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>"混合最小規則" 規則セット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Microsoft 混合最小規則は、潜在的なセキュリティ ホールやアプリケーションのクラッシュなど、共通言語ランタイムをサポートする C++ プロジェクトの最も重大な問題に集中します。 共通言語ランタイムをサポートする C++ プロジェクトにカスタムの規則セットを作成する場合は、必ずこの規則セットを含める必要があります。  
-
 
 |                                            ルール                                             |                                                  説明                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3858d10d685e104617a6de7b5c11c87cfee1872d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 74b3fa73c3a67c721b9311a964e26fa9ab48c16e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802794"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098968"
 ---
 # <a name="how-to-export-a-shader"></a>方法: シェーダーをエクスポートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,20 +23,20 @@ ms.locfileid: "54802794"
   
  このドキュメントでは、以下のアクティビティについて説明します:  
   
--   シェーダーのエクスポート  
+- シェーダーのエクスポート  
   
 ## <a name="exporting-a-shader"></a>シェーダーのエクスポート  
  シェーダー デザイナーを使用して作成したシェーダーをアプリで使用するには、グラフィックス API が理解できる形式でシェーダーをエクスポートする必要があります。 シェーダーはニーズに応じてさまざまな方法でエクスポートできます。  
   
 #### <a name="to-export-a-shader"></a>シェーダーをエクスポートするには  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で、**視覚シェーダー グラフ (.dgsl)** ファイルを開きます。  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で、**視覚シェーダー グラフ (.dgsl)** ファイルを開きます。  
   
-     開く**視覚シェーダー グラフ (.dgsl)** ファイルがない場合、「[方法: 基本カラー シェーダーを作成する](../designers/how-to-create-a-basic-color-shader.md)」に示された手順で作成します。  
+     開く**視覚シェーダー グラフ (.dgsl)** ファイルがない場合、「[方法: 基本カラー シェーダーを作成する](../designers/how-to-create-a-basic-color-shader.md)します。  
   
-2.  **シェーダー デザイナー**のツール バーで、**[詳細]**、**[エクスポート]**、**[名前を付けてエクスポート]** を選択します。 **[シェーダーのエクスポート]** ダイアログ ボックスが表示されます。  
+2. **シェーダー デザイナー**のツール バーで、**[詳細]**、**[エクスポート]**、**[名前を付けてエクスポート]** を選択します。 **[シェーダーのエクスポート]** ダイアログ ボックスが表示されます。  
   
-3.  **[ファイルの種類]** ドロップダウン リストで、エクスポートする形式を選択します。  
+3. **[ファイルの種類]** ドロップダウン リストで、エクスポートする形式を選択します。  
   
      ここでは次の形式を選択できます。  
   
@@ -49,8 +49,8 @@ ms.locfileid: "54802794"
      **C++ ヘッダー (\*.h)**  
      HLSL バイトコードを含むバイト配列を定義する C スタイル ヘッダーとしてシェーダーをエクスポートします。 このオプションでは、修正のテストにアプリの再コンパイルが必要になるため、エンド ユーザーの問題に基づくコードのデバッグと修正に時間がかかる可能性があります。 しかし、アプリへの配置後のシェーダーの変更は不可能とはいえないまでも困難になるため、ユーザーが望ましくない方法でシェーダーを変更することが最も困難になります。  
   
-4.  エクスポートするシェーダーの名前を **[ファイル名]** コンボ ボックスに指定し、**[保存]** ボタンを選択します。  
+4. エクスポートするシェーダーの名前を **[ファイル名]** コンボ ボックスに指定し、**[保存]** ボタンを選択します。  
   
 ## <a name="see-also"></a>関連項目
- [方法: 基本カラー シェーダーを作成する](../designers/how-to-create-a-basic-color-shader.md)   
+ [方法: 基本カラー シェーダーを作成します。](../designers/how-to-create-a-basic-color-shader.md)   
  [シェーダー デザイナー](../designers/shader-designer.md)

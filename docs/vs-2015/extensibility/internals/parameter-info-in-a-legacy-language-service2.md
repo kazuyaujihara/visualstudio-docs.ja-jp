@@ -12,12 +12,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd89520cb976cb6deaca957d97f952e4baa71def
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 986a392dc381b972c9e4d4bfa6dda06fe1aa878e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087744"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>従来の言語サービスでのパラメーター ヒント
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58976635"
  <xref:Microsoft.VisualStudio.Package.TokenTriggers>トリガー値への呼び出しを開始する、<xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A>メソッドを呼び出して、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッド パーサーの解析の理由で<xref:Microsoft.VisualStudio.Package.ParseReason>します。 メソッド シグネチャに一致させるの一覧を返しますが、パーサーは、前に、パラメーター リストの先頭文字の識別子が認識されているメソッド名である判断した場合、<xref:Microsoft.VisualStudio.Package.AuthoringScope>オブジェクト。 任意のメソッド シグネチャがわかった場合は、一覧の最初のシグネチャを持つパラメーター ヒントが表示されます。 署名の詳細の入力には、このヒントは更新されます。 パラメーター リストの最後の文字を入力すると、パラメーター ヒントはビューから削除されます。  
   
 > [!NOTE]
->  パラメーター ヒント、適切な形式は、プロパティを上書きする必要があります、<xref:Microsoft.VisualStudio.Package.Methods>適切な文字を指定するクラス。 ベース<xref:Microsoft.VisualStudio.Package.Methods>クラスは、C# のメソッド シグネチャのスタイル。 参照してください、<xref:Microsoft.VisualStudio.Package.Methods>この実行方法について詳しくクラス。  
+>  パラメーター ヒント、適切な形式は、プロパティを上書きする必要があります、<xref:Microsoft.VisualStudio.Package.Methods>適切な文字を指定するクラス。 ベース<xref:Microsoft.VisualStudio.Package.Methods>クラスは、c# のメソッド シグネチャのスタイル。 参照してください、<xref:Microsoft.VisualStudio.Package.Methods>この実行方法について詳しくクラス。  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>パラメーター ヒントのサポートを有効にします。  
  パラメーター ヒントのツールヒントをサポートするために設定する必要があります、`ShowCompletion`名前付きのパラメーター、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>に`true`します。 言語サービスからこのレジストリ エントリの値を読み取り、<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A>プロパティ。  
@@ -113,10 +113,10 @@ testfunc("a string",3);
   
  以下は、パーサーが取る手順の概要します。  
   
-1.  パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>テキスト"testfunc"を使用します。  
+1. パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>テキスト"testfunc"を使用します。  
   
-2.  パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>します。  
+2. パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>します。  
   
-3.  パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>します。  
+3. パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>します。  
   
-4.  パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>します。
+4. パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>します。

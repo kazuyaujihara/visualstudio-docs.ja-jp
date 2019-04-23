@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41f89449ab412a53d779bfc3fb4cf9ac52ded239
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa8ec46036bbb9a133f2036f1c54cad87d064618
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105488"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>視覚化のサポートされている Visual Studio エディション&amp;Modeling SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58977996"
 ## <a name="deployment-editions"></a>配置エディション
  [!INCLUDE[dsl](../includes/dsl-md.md)] では、作成したドメイン固有言語を配置するために、以下の構成がサポートされています。
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Visual Studio Shell (統合モード) 再頒布可能パッケージの再頒布可能パッケージ
+- Visual Studio Shell (統合モード) 再頒布可能パッケージの再頒布可能パッケージ
 
--   Visual Studio Shell (分離モード) 再頒布可能パッケージ
+- Visual Studio Shell (分離モード) 再頒布可能パッケージ
 
 > [!NOTE]
 >  DSL を Shell 製品上で実行可能にするには、設定する必要があります、**サポートされている VS エディション**フィールドに、拡張機能マニフェストします。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。

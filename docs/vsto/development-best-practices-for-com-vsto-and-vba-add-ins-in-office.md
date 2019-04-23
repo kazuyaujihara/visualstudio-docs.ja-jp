@@ -11,19 +11,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b81dec69d27cc32fa5e6848d358049d8b8e2c04e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2fcc2fe575bd6b526f5f66d936625c87e91b0b39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643575"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111182"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>COM、VSTO、および VBA の office アドインの開発のベスト プラクティスします。
   Office の COM、VSTO または VBA アドインを開発する場合はこの記事で説明されている開発のベスト プラクティスに従います。   ことができます。
 
--  独自のアドインに Office の展開と異なるバージョン間での互換性。
--  ユーザーと IT 管理者の追加で展開の複雑さが軽減されます。
--  アドインのインストールまたは実行時の意図しないエラーが発生しません。
+- 独自のアドインに Office の展開と異なるバージョン間での互換性。
+- ユーザーと IT 管理者の追加で展開の複雑さが軽減されます。
+- アドインのインストールまたは実行時の意図しないエラーが発生しません。
 
 >メモ:使用して、[デスクトップ ブリッジ](/windows/uwp/porting/desktop-to-uwp-root)COM を準備する VSTO または VBA アドインを Windows ストアがサポートされていません。 COM、VSTO と VBA アドインは、Windows ストアまたは Office ストアで配布することはできません。
 
@@ -41,7 +41,7 @@ ms.locfileid: "56643575"
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Office の使用状況を 32 ビットと 64 ビットの両方を有効にします。
 既定の build ターゲットは、ソリューションは、特定のビット数でのみ使用するライブラリに依存していない限り 32 ビット (x86) と 64 ビット (x64) の両方をサポートする必要があります。 Office の 64 ビット版は特にビッグ データ環境での導入に増加します。 32 ビットと 64 ビットの両方のサポートやすく、ユーザーが Office の 32 ビットおよび 64 ビットのバージョン間の遷移です。
 
-VBA コードを記述するとき使用して 64 ビットの安全は declare ステートメントし、適切な変数を変換します。 さらに、各ビット数のコードを提供することで、32 ビットまたは 64 ビット バージョンの Office を実行しているユーザーの間でドキュメントを共有できることを確認します。 詳細については、[64 ビットの Visual Basic アプリケーションの概要の](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview)を参照してください。
+VBA コードを記述するとき使用して 64 ビットの安全は declare ステートメントし、適切な変数を変換します。 さらに、各ビット数のコードを提供することで、32 ビットまたは 64 ビット バージョンの Office を実行しているユーザーの間でドキュメントを共有できることを確認します。 詳細については、次を参照してください。 [64 ビットの Visual Basic アプリケーションの概要の](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview)します。
 
 ## <a name="support-restricted-environments"></a>制限された環境をサポートします。
 ソリューションでは、ユーザー アカウントの昇格または管理者特権は必要ありません必要があります。 さらに、設定または変更するのには、ソリューションが依存する必要があります。

@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de4fc349a25719a0494b095e5a37c218b87cb0f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600721"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648235"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;依存関係&gt;要素 (ClickOnce 配置)
 をインストールするアプリケーションのバージョンとアプリケーション マニフェストの場所を識別します。
@@ -76,40 +76,38 @@ ms.locfileid: "56600721"
  `dependency`要素は通常内に含まれるアセンブリでメイン アプリケーションの依存関係を表現する[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション。 Main.exe アプリケーションでは、DotNetAssembly.dll という名前のアセンブリを消費する場合、依存関係セクションではそのアセンブリを表示する必要があります。 依存関係、ただし、表すことも他の種類など、共通言語ランタイムの特定のバージョンに依存関係の依存関係のグローバル アセンブリ キャッシュ (GAC) 内のアセンブリまたは COM オブジェクト。 ノータッチ デプロイメントのテクノロジである[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]防ぐことはできません、依存関係が、この種の開始のダウンロードとインストールは、アプリケーションの実行、指定した依存関係の 1 つ以上が存在しない場合。
 
 ## <a name="dependentassembly"></a>dependentAssembly
- 必須です。 この要素が含まれています、`assemblyIdentity`要素。 次の表は、属性、`dependentAssembly`をサポートしています。
-
+ 必須。 この要素が含まれています、`assemblyIdentity`要素。 次の表は、属性、`dependentAssembly`をサポートしています。
 
 | 属性 | 説明 |
 |------------------| - |
 | `preRequisite` | 任意。 このアセンブリが GAC に既に存在する必要があるを指定します。 有効値は `true` または `false` です。 場合`true`を実行するアプリケーションが失敗した、指定したアセンブリが GAC に存在しません。 |
 | `visible` | 任意。 依存関係を含む、最上位のアプリケーション id を識別します。 によって内部的に使用される[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション記憶域とアクティブ化を管理します。 |
-| `dependencyType` | 必須です。 この依存関係とアプリケーション間のリレーションシップ。 次の値を指定できます。<br /><br /> -   `install`。 コンポーネントは、現在のアプリケーションから別のインストールを表します。<br />-   `preRequisite`。 コンポーネントは、現在のアプリケーションで必要です。 |
-| `codebase` | 任意。 アプリケーション マニフェストの完全パスです。 |
+| `dependencyType` | 必須。 この依存関係とアプリケーション間のリレーションシップ。 次の値を指定できます。<br /><br /> -   `install`。 コンポーネントは、現在のアプリケーションから別のインストールを表します。<br />-   `preRequisite`。 コンポーネントは、現在のアプリケーションで必要です。 |
+| `codebase` | 省略可能です。 アプリケーション マニフェストの完全パスです。 |
 | `size` | 任意。 (バイト単位)、アプリケーション マニフェストのサイズ。 |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
- 必須です。 この要素は `dependentAssembly` 要素の子です。 コンテンツ`assemblyIdentity`で説明されているものと同じである必要があります、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション マニフェスト。 次の表の属性を示します、`assemblyIdentity`要素。
+ 必須。 この要素は `dependentAssembly` 要素の子です。 コンテンツ`assemblyIdentity`で説明されているものと同じである必要があります、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション マニフェスト。 次の表の属性を示します、`assemblyIdentity`要素。
 
 |属性|説明|
 |---------------|-----------------|
-|`Name`|必須です。 アプリケーションの名前を識別します。|
-|`Version`|必須です。 次の形式で、アプリケーションのバージョン番号を指定します。 `major.minor.build.revision`|
-|`publicKeyToken`|必須です。 アプリケーションまたはアセンブリに署名するとき、公開キーの sha-1 ハッシュの最後の 8 バイトを表す 16 文字の 16 進文字列を指定します。 署名に使用される公開キーは 2048 ビットである必要がありますまたはそれ以上。|
-|`processorArchitecture`|必須です。 マイクロプロセッサを指定します。 有効な値は`x86`32 ビット Windows 用と`IA64`の 64 ビット Windows です。|
-|`Language`|任意。 アセンブリの 2 部構成の言語コードを識別します。 たとえば、EN-US、英語 (米国) を意味します。 既定値は、`neutral` です。 この要素は、`asmv2`名前空間。|
+|`Name`|必須。 アプリケーションの名前を識別します。|
+|`Version`|必須。 次の形式で、アプリケーションのバージョン番号を指定します。 `major.minor.build.revision`|
+|`publicKeyToken`|必須。 アプリケーションまたはアセンブリに署名するとき、公開キーの sha-1 ハッシュの最後の 8 バイトを表す 16 文字の 16 進文字列を指定します。 署名に使用される公開キーは 2048 ビットである必要がありますまたはそれ以上。|
+|`processorArchitecture`|必須。 マイクロプロセッサを指定します。 有効な値は`x86`32 ビット Windows 用と`IA64`の 64 ビット Windows です。|
+|`Language`|任意。 アセンブリの 2 部構成の言語コードを識別します。 たとえば、EN-US、英語 (米国) を意味します。 既定値は `neutral` です。 この要素は、`asmv2`名前空間。|
 |`type`|任意。 Windows によって並列との互換性が旧バージョンとテクノロジをインストールします。 唯一の許容値は`win32`します。|
 
 ## <a name="hash"></a>hash
- `hash`要素のオプションの子では、`file`要素。 `hash` 要素に属性はありません。
+ `hash`要素のオプションの子では、`file`要素。 `hash`要素に属性がありません。
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] デプロイ後に変更されたファイルがないことを確認するのにセキュリティ チェックとして、アプリケーションでのすべてのファイルのアルゴリズム、ハッシュを使用します。 場合、`hash`要素が含まれていない、このチェックは実行されません。 そのため、省略すると、`hash`要素はお勧めしません。
 
 ## <a name="dsigtransforms"></a>dsig:Transforms
- `dsig:Transforms`要素の必須の子では、`hash`要素。 `dsig:Transforms` 要素に属性はありません。
+ `dsig:Transforms`要素の必須の子では、`hash`要素。 `dsig:Transforms`要素に属性がありません。
 
 ## <a name="dsigtransform"></a>dsig:Transform
  `dsig:Transform`要素の必須の子では、`dsig:Transforms`要素。 次の表の属性を示します、`dsig:Transform`要素。
-
 
 | 属性 | 説明 |
 |-------------| - |
@@ -118,15 +116,14 @@ ms.locfileid: "56600721"
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod
  `dsig:DigestMethod`要素の必須の子では、`hash`要素。 次の表の属性を示します、`dsig:DigestMethod`要素。
 
-
 | 属性 | 説明 |
 |-------------| - |
 | `Algorithm` | このファイルのダイジェストを計算するために使用するアルゴリズム。 現在、唯一の値で使用される[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]は`http://www.w3.org/2000/09/xmldsig#sha1`します。 |
 
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
- `dsig:DigestValue`要素の必須の子では、`hash`要素。 `dsig:DigestValue` 要素に属性はありません。 テキスト値は、指定したファイルの計算されたハッシュです。
+ `dsig:DigestValue`要素の必須の子では、`hash`要素。 `dsig:DigestValue`要素に属性がありません。 テキスト値は、指定したファイルの計算されたハッシュです。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  配置マニフェストは通常、1 つをある`assemblyIdentity`名前と、アプリケーション マニフェストのバージョンを識別する要素。
 
 ## <a name="example"></a>例

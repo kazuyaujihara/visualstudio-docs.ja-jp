@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 90b16c9d7e7a762b6c1dac322ae9467b835476fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111599"
 ---
 # <a name="service-essentials"></a>サービスの基本情報
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ ms.locfileid: "58972198"
   
  サービスには、見つけやすさはあるありません。 したがってを使用するサービスのサービス識別子 (SID) を知る必要がありますを提供するインターフェイスを知る必要があります。 サービスのリファレンス ドキュメントは、この情報を提供します。  
   
--   サービスを提供する Vspackage は、サービス プロバイダーと呼ばれます。  
+- サービスを提供する Vspackage は、サービス プロバイダーと呼ばれます。  
   
--   その他の Vspackage に提供されるサービスは、グローバル サービスと呼ばれます。  
+- その他の Vspackage に提供されるサービスは、グローバル サービスと呼ばれます。  
   
--   または、それらを実装する VSPackage にのみ、任意のオブジェクトを作成するかどうかを利用できるサービスは、ローカル サービスと呼ばれます。  
+- または、それらを実装する VSPackage にのみ、任意のオブジェクトを作成するかどうかを利用できるサービスは、ローカル サービスと呼ばれます。  
   
--   組み込みのサービスまたは他のパッケージで提供されるサービスを置き換えるサービスは、サービスの上書きと呼ばれます。  
+- 組み込みのサービスまたは他のパッケージで提供されるサービスを置き換えるサービスは、サービスの上書きと呼ばれます。  
   
--   サービス、またはサービスの上書きがオンデマンドで読み込まれる、別の VSPackage に提供するサービスを要求すると、サービス プロバイダーが読み込まれます。  
+- サービス、またはサービスの上書きがオンデマンドで読み込まれる、別の VSPackage に提供するサービスを要求すると、サービス プロバイダーが読み込まれます。  
   
--   サービス プロバイダーをオンデマンドの読み込みをサポートするには、グローバル サービスを登録します[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 詳細については、次を参照してください。[サービス登録](../../misc/registering-services.md)します。  
+- サービス プロバイダーをオンデマンドの読み込みをサポートするには、グローバル サービスを登録します[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 詳細については、次を参照してください。[サービス登録](../../misc/registering-services.md)します。  
   
--   サービスを取得した後を使用して、 [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (アンマネージ コード) やなどの目的のインターフェイスを取得するキャスト (マネージ コード)。  
+- サービスを取得した後を使用して、 [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (アンマネージ コード) やなどの目的のインターフェイスを取得するキャスト (マネージ コード)。  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -51,13 +51,13 @@ ms.locfileid: "58972198"
   
     ```  
   
--   マネージ コードは、アンマネージ コードは、GUID によって、サービスには、その型によって、サービスを指します。  
+- マネージ コードは、アンマネージ コードは、GUID によって、サービスには、その型によって、サービスを指します。  
   
--   ときに[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]VSPackage を読み込む、グローバル サービスを VSPackage のアクセスを提供する VSPackage に、サービス プロバイダーを渡されます。 これは、VSPackage を「配置」と呼ばれます。  
+- ときに[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]VSPackage を読み込む、グローバル サービスを VSPackage のアクセスを提供する VSPackage に、サービス プロバイダーを渡されます。 これは、VSPackage を「配置」と呼ばれます。  
   
--   Vspackage では、サービス プロバイダーを作成するオブジェクトを指定できます。 たとえば、フォームはへの要求を渡すことがあります、そのフレームに色サービスに対する要求を送信可能性があります[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
+- Vspackage では、サービス プロバイダーを作成するオブジェクトを指定できます。 たとえば、フォームはへの要求を渡すことがあります、そのフレームに色サービスに対する要求を送信可能性があります[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
   
--   深く入れ子になったか、まったくが配置されていないマネージ オブジェクトを呼び出すことが<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>グローバル サービスに直接アクセスします。 詳細については、「[方法 :GetGlobalService を使用する](../../misc/how-to-use-getglobalservice.md)します。  
+- 深く入れ子になったか、まったくが配置されていないマネージ オブジェクトを呼び出すことが<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>グローバル サービスに直接アクセスします。 詳細については、「[方法 :GetGlobalService を使用する](../../misc/how-to-use-getglobalservice.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [利用可能なサービスの一覧](../../extensibility/internals/list-of-available-services.md)   

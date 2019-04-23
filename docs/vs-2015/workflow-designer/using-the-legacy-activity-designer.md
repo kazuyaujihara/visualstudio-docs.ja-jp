@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070785"
 ---
 # <a name="using-the-legacy-activity-designer"></a>従来のアクティビティ デザイナーの使用
 このトピックでは、従来の [!INCLUDE[wfd1](../includes/wfd1-md.md)]でアクティビティ デザイナーを使用する方法について説明します。 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] を対象とする場合は、従来のデザイナーを使用します。  
@@ -35,9 +35,9 @@ ms.locfileid: "58976591"
   
 2. 選択、**アクティビティ**または**アクティビティ (コード分離付き)** テンプレート。  
   
-   1.  使用して、**アクティビティ**アクティビティ定義と同じコード ファイル内のユーザー コード アクティビティを作成するテンプレート。  
+   1. 使用して、**アクティビティ**アクティビティ定義と同じコード ファイル内のユーザー コード アクティビティを作成するテンプレート。  
   
-   2.  使用して、**アクティビティ (コード分離付き)** アクティビティ定義がワークフロー マークアップや別のコード ファイル内のユーザー コードとして表現されるアクティビティを作成するテンプレート。  
+   2. 使用して、**アクティビティ (コード分離付き)** アクティビティ定義がワークフロー マークアップや別のコード ファイル内のユーザー コードとして表現されるアクティビティを作成するテンプレート。  
   
 3. アクティビティ名を入力または既定の名前をクリックして**追加**します。  
   

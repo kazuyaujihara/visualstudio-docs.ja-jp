@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c805c842832ac99c527ea382169775d8b6b2529
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113314"
 ---
 # <a name="validate-your-uml-model"></a>UML モデルの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ Visual Studio で描画できる UML モデルの一部が、プロジェクト�
   
 #### <a name="to-install-a-visual-studio-extension"></a>Visual Studio 拡張機能をインストールするには  
   
-1.  ダブルクリックして、 **.vsix** Windows エクスプ ローラー (またはファイル エクスプ ローラー) でのファイル。  
+1. ダブルクリックして、 **.vsix** Windows エクスプ ローラー (またはファイル エクスプ ローラー) でのファイル。  
   
-2.  既に実行されている [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のインスタンスを再起動します。  
+2. 既に実行されている [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のインスタンスを再起動します。  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>検証制約の無効化およびインストール  
  制約を適用しないモデルを操作するとき、制約を含んだ拡張機能を一時的に無効にすることができます。 この方法により、各種の拡張機能を有効または無効にして、さまざまなモデルを個別に操作できます。  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Visual Studio 拡張機能を無効化またはアンインストールするには  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ツール** メニューのをクリックして**拡張機能と更新**します。  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ツール** メニューのをクリックして**拡張機能と更新**します。  
   
-2.  拡張機能、と共に次のようにクリックします。**を無効にする**、拡張機能を一時的に無効にします。 返すことによって後で有効再ことができます、**拡張機能と更新**ウィンドウ。  
+2. 拡張機能、と共に次のようにクリックします。**を無効にする**、拡張機能を一時的に無効にします。 返すことによって後で有効再ことができます、**拡張機能と更新**ウィンドウ。  
   
      \- または -  
   
      クリックして**アンインストール**拡張機能を削除します。  
   
-3.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を再起動します。  
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を再起動します。  
   
 ## <a name="see-also"></a>関連項目  
  [UML モデルの検証制約を定義します。](../modeling/define-validation-constraints-for-uml-models.md)   

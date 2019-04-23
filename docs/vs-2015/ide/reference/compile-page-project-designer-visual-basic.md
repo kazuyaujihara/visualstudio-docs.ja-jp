@@ -19,17 +19,16 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 928d3c4fe3e90c731f56eba4e7275772fdcd76c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd58013cb26e8533a5b898a0e5cd1df3be1b262
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778913"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649057"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 プロジェクト デザイナーの **[コンパイル]** ページを使用して、コンパイル命令を指定します。 このページでは、高度なコンパイラ オプションとビルド前またはビルド後のイベントを指定することもできます。  
   
  **[コンパイル]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノード (**[ソリューション]** ノードではありません) を選択します。 その後、メニュー バーで **[プロジェクト]**、**[プロパティ]** の順に選択します。 プロジェクト デザイナーが表示されたら、**[コンパイル]** タブをクリックします。  
@@ -172,6 +171,6 @@ ms.locfileid: "54778913"
 ## <a name="see-also"></a>関連項目
  [デバッグ プロジェクト構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
  [コンパイル プロパティの管理](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
- [方法 : ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [方法: ビルド イベント (Visual Basic) を指定します。](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Visual Basic のコマンド ライン コンパイラ](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
- [方法 : 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)
+ [方法: 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)

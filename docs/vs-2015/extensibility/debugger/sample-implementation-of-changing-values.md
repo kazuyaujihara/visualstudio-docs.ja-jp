@@ -11,12 +11,12 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 66b949ee2bd065186c13f32e788eea8f40faf34d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a7b35c2a96ae31d698ff2294878adc45e3d6572
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056407"
 ---
 # <a name="sample-implementation-of-changing-values"></a>値の変更の実装のサンプル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "58962380"
   
  この実装の`IDebugProperty2::SetValueAsString`は、次のタスクを実行します。  
   
-1.  値を生成する式を評価します。  
+1. 値を生成する式を評価します。  
   
-2.  関連付けられているバインド[IDebugField](../../extensibility/debugger/reference/idebugfield.md)メモリ位置にオブジェクトを生成、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。  
+2. 関連付けられているバインド[IDebugField](../../extensibility/debugger/reference/idebugfield.md)メモリ位置にオブジェクトを生成、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。  
   
-3.  一連のバイト値に変換します。  
+3. 一連のバイト値に変換します。  
   
-4.  呼び出し[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)メモリ内のバイトを格納します。  
+4. 呼び出し[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)メモリ内のバイトを格納します。  
   
 ## <a name="managed-code"></a>マネージド コード  
  これは、実装の`IDebugProperty2::SetValueAsString`マネージ コードでします。  

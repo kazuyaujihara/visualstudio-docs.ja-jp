@@ -10,12 +10,12 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 082e8db8793850319f02586ba3894da8775e6ff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba007a8084355445f0404a9b0f7a2c1cee7b2005
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108189"
 ---
 # <a name="how-to-provide-a-service"></a>方法: サービスを提供する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
   
 #### <a name="implementing-a-service"></a>サービスの実装  
   
-1. VSIX プロジェクトを作成 (**ファイル/新規、プロジェクト/Visual C#/呼び出/VSIX プロジェクト**)。  
+1. VSIX プロジェクトを作成 (**ファイル/新規、プロジェクト/Visual c#/呼び出/VSIX プロジェクト**)。  
   
-2. VSPackage をプロジェクトに追加します。 プロジェクト ノードを選択、**ソリューション エクスプ ローラー**クリック**追加/新しい項目/Visual C# アイテム/機能拡張/Visual Studio パッケージ**。  
+2. VSPackage をプロジェクトに追加します。 プロジェクト ノードを選択、**ソリューション エクスプ ローラー**クリック**追加/新しい項目/Visual c# アイテム/機能拡張/Visual Studio パッケージ**。  
   
 3. サービスを実装するには次の 3 つの種類を作成する必要があります。  
   
@@ -78,7 +78,7 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
   
 ### <a name="registering-a-service"></a>サービスを登録します。  
   
-1.  サービスを登録するには、追加、<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>サービスを提供する VSPackage にします。 次に例を示します。  
+1. サービスを登録するには、追加、<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>サービスを提供する VSPackage にします。 次に例を示します。  
   
     ```csharp  
     [ProvideService(typeof(SMyService))]  
@@ -95,7 +95,7 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
   
 ### <a name="adding-a-service"></a>サービスの追加  
   
-1.  1.  VSPackage の初期化子では、サービスを追加し、サービスを作成するコールバック メソッドを追加します。 に対する変更をここでは、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。  
+1. 1.  VSPackage の初期化子では、サービスを追加し、サービスを作成するコールバック メソッドを追加します。 に対する変更をここでは、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。  
   
     ```csharp  
     protected override void Initialize()  
@@ -107,7 +107,7 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
     }  
     ```  
   
-2.  作成し、サービスを返す、または作成できない場合は null にする必要がありますコールバック メソッドを実装します。  
+2. 作成し、サービスを返す、または作成できない場合は null にする必要がありますコールバック メソッドを実装します。  
   
     ```  
     private object CreateService(IServiceContainer container, Type serviceType)  
@@ -121,7 +121,7 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
     > [!NOTE]
     >  Visual Studio では、サービスを提供する要求を拒否できます。 そうなった場合、別の VSPackage に、サービスが既に用意されています。  
   
-3.  これで、サービスを取得し、そのメソッドを使用できます。 これで、初期化子を説明しますが、サービスを使用する任意の場所サービスを取得することができます。  
+3. これで、サービスを取得し、そのメソッドを使用できます。 これで、初期化子を説明しますが、サービスを使用する任意の場所サービスを取得することができます。  
   
     ```csharp  
     protected override void Initialize()  

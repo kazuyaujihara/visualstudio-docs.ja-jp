@@ -23,14 +23,14 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041183"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>方法: 参照マネージャーを使用して参照を追加または削除する
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>方法: 追加または参照マネージャーを使用して参照を削除します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **[参照マネージャー]** ダイアログ ボックスを使って、Microsoft または別の企業が開発したコンポーネントへの参照を追加し、管理することができます。 ユニバーサル Windows アプリを開発している場合、プロジェクトはすべての正しい Windows SDK DLL を自動的に参照します。 .NET アプリケーションを開発している場合、プロジェクトは mscorlib.dll を自動的に参照します。 一部の .NET API は、手動で追加する必要があるコンポーネントで公開されます。 COM コンポーネントまたはカスタム コンポーネントへの参照は、手動で追加する必要があります。  
@@ -45,13 +45,13 @@ ms.locfileid: "54756987"
   
    **[参照マネージャー]** は、使用可能な参照を開いてグループごとに表示します。 プロジェクトの種類に基づいて、次のグループのうちどれが表示されるかが決まります。  
   
--   アセンブリ - Framework と拡張機能の各サブグループが含まれます。  
+- アセンブリ - Framework と拡張機能の各サブグループが含まれます。  
   
--   ソリューション - プロジェクト サブグループが含まれます。  
+- ソリューション - プロジェクト サブグループが含まれます。  
   
--   Windows - コアと拡張機能の各サブグループが含まれます。 **[オブジェクト ブラウザー]** を使って Windows SDK または拡張 SDK 内の参照を探索できます。  
+- Windows - コアと拡張機能の各サブグループが含まれます。 **[オブジェクト ブラウザー]** を使って Windows SDK または拡張 SDK 内の参照を探索できます。  
   
--   最近使用したサブグループを参照します。  
+- 最近使用したサブグループを参照します。  
   
 ## <a name="assemblies-tab"></a>[アセンブリ] タブ  
  **[アセンブリ]** タブには、参照に使うことができるすべての .NET Framework アセンブリが一覧表示されます。 グローバル アセンブリ キャッシュ (GAC) 内のアセンブリは実行時環境の一部であるため、**[アセンブリ]** タブでは GAC からのアセンブリはどれもリスト表示されません。 GAC に登録されているアセンブリへの参照を含むアプリケーションを配置またはコピーした場合は、[ローカル コピー] の設定とはかかわりなく、そのアセンブリがアプリケーションと共に配置またはコピーされることはありません。 詳しくは、「[プロジェクトの参照](http://go.microsoft.com/fwlink/?LinkId=238512)」をご覧ください。  
@@ -66,13 +66,13 @@ ms.locfileid: "54756987"
   
 1. [Framework] には、対象の Framework を形成するすべてのアセンブリが一覧表示されます。  
   
-   -   アドバタイズされたアセンブリは [Full Framework] の中にあり、対象とする Framework のプロファイルをプロジェクトが対象にしている場合は、それらのアセンブリは [Framework] 一覧で列挙されます。 アドバタイズされたアセンブリは淡色表示され、プロジェクトの対象である Framework プロファイルの中に存在するアセンブリとは区別されます。 たとえば、プロジェクトが .NET Framework 4 Client を対象としている場合は、[Framework] 一覧には .NET Framework 4 からアドバタイズされたアセンブリが表示されます。 アドバタイズされたアセンブリをユーザーが追加した場合は、**[参照マネージャー]** ダイアログ ボックスを閉じた後、プロジェクトが .NET Framework 4 を対象として再指定し、アドバタイズされたアセンブリが追加されることがユーザーに対して通知されます。  
+   - アドバタイズされたアセンブリは [Full Framework] の中にあり、対象とする Framework のプロファイルをプロジェクトが対象にしている場合は、それらのアセンブリは [Framework] 一覧で列挙されます。 アドバタイズされたアセンブリは淡色表示され、プロジェクトの対象である Framework プロファイルの中に存在するアセンブリとは区別されます。 たとえば、プロジェクトが .NET Framework 4 Client を対象としている場合は、[Framework] 一覧には .NET Framework 4 からアドバタイズされたアセンブリが表示されます。 アドバタイズされたアセンブリをユーザーが追加した場合は、**[参照マネージャー]** ダイアログ ボックスを閉じた後、プロジェクトが .NET Framework 4 を対象として再指定し、アドバタイズされたアセンブリが追加されることがユーザーに対して通知されます。  
   
-   -   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションを対象とするプロジェクトには、プロジェクトを作成した時点の既定として、対象の [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] 内にあるすべてのアセンブリへの参照が含まれています。 マネージド プロジェクトでは、**ソリューション エクスプローラー**内の [参照設定] フォルダーの下にある 1 つの読み取り専用ノードが、Framework 全体に対する参照を示します。 したがって、[Framework] タブでは、Framework からのどのアセンブリも列挙されず、代わりに次のメッセージが表示されます。"すべての Framework アセンブリが既に参照されています。 オブジェクト ブラウザーを使用して Framework 内の参照を調べてください。" デスクトップ プロジェクトの場合は、対象とする Framework からのアセンブリが [Framework] タブで列挙され、アプリケーションが必要とする参照をユーザーが追加する必要があります。  
+   - [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションを対象とするプロジェクトには、プロジェクトを作成した時点の既定として、対象の [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] 内にあるすべてのアセンブリへの参照が含まれています。 マネージド プロジェクトでは、**ソリューション エクスプローラー**内の [参照設定] フォルダーの下にある 1 つの読み取り専用ノードが、Framework 全体に対する参照を示します。 したがって、[Framework] タブはフレームワークからのアセンブリのいずれも列挙され、代わりに、次のメッセージが表示されません。"すべての Framework アセンブリが既に参照されています。 オブジェクト ブラウザーを使用して Framework 内の参照を調べてください。" デスクトップ プロジェクトの場合は、対象とする Framework からのアセンブリが [Framework] タブで列挙され、アプリケーションが必要とする参照をユーザーが追加する必要があります。  
   
 2. [拡張機能] には、対象の Framework を拡張するためにコンポーネントおよびコントロールを扱う外部販売元が開発したすべてのアセンブリの一覧が表示されます。 ユーザー アプリケーションの目的によっては、これらのアセンブリが必要になることがあります。  
   
-   -   次の場所に登録されているアセンブリを列挙することによって、拡張機能が設定されます。  
+   - 次の場所に登録されているアセンブリを列挙することによって、拡張機能が設定されます。  
   
        ```  
        32-bit machine:  
@@ -88,17 +88,17 @@ ms.locfileid: "54756987"
   
    プロジェクトの [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] バージョンによっては、一部のコンポーネントが一覧に表示されないことがあります。 これは、次のような条件で発生します。  
   
--   最新バージョンの .NET Framework を使用するコンポーネントは、旧バージョンの .NET Framework を対象とするプロジェクトとは互換性がありません。  
+- 最新バージョンの .NET Framework を使用するコンポーネントは、旧バージョンの .NET Framework を対象とするプロジェクトとは互換性がありません。  
   
-     プロジェクトの対象となる .NET Framework のバージョンを変更する方法については、「[方法: .NET Framework のバージョンをターゲットにする](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」をご覧ください。  
+     プロジェクトの対象の .NET Framework を変更する方法の詳細については、「[方法:.NET Framework のターゲット バージョンを指定する](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。  
   
--   [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] を使用するコンポーネントは、[!INCLUDE[net_v45](../includes/net-v45-md.md)] を対象とするプロジェクトと互換性がありません。  
+- [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] を使用するコンポーネントは、[!INCLUDE[net_v45](../includes/net-v45-md.md)] を対象とするプロジェクトと互換性がありません。  
   
      新しいアプリケーションの作成時に、いくつかのプロジェクトが既定で [!INCLUDE[net_v45](../includes/net-v45-md.md)] を対象とするように設定されます。 詳細については、「[.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)」を参照してください。  
   
--   コンパイル エラーが発生する可能性があるため、同じソリューション内の他のプロジェクトの出力に対するファイル参照は追加しないでください。 代わりに、**[参照の追加]** ダイアログ ボックスの **[プロジェクト]** タブを使ってプロジェクト間参照を作成します。 そうすることによってプロジェクトで作成するクラス ライブラリを管理する機能が向上し、チーム開発が簡単になります。 詳しくは、「[壊れた参照のトラブルシューティング](../ide/troubleshooting-broken-references.md)」をご覧ください。  
+- コンパイル エラーが発生する可能性があるため、同じソリューション内の他のプロジェクトの出力に対するファイル参照は追加しないでください。 代わりに、**[参照の追加]** ダイアログ ボックスの **[プロジェクト]** タブを使ってプロジェクト間参照を作成します。 そうすることによってプロジェクトで作成するクラス ライブラリを管理する機能が向上し、チーム開発が簡単になります。 詳しくは、「[壊れた参照のトラブルシューティング](../ide/troubleshooting-broken-references.md)」をご覧ください。  
   
--   > [!NOTE]
+- > [!NOTE]
     >  Visual Studio 2015 では、一方のプロジェクトが対象とする .NET Framework のバージョンが Version 4.5 で、他方のプロジェクトが対象とするバージョンが Version 2、3、3.5、または 4.0 である場合、プロジェクト参照ではなくファイル参照が作成されます。  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>[参照の追加] ダイアログ ボックスにアセンブリを表示するには  
@@ -109,7 +109,7 @@ ms.locfileid: "54756987"
   
   - 同じソリューション内のその他のプロジェクト ディレクトリ。 ここにあるアセンブリは、**[プロジェクト]** タブに表示されます。  
   
-    \- または  
+    \- または -  
   
 - 表示するアセンブリの場所を指定するレジストリ キーを設定します。  
   
@@ -154,9 +154,7 @@ ms.locfileid: "54756987"
   
  Visual Studio 内で、次のような 2 とおりの方法で WinMD ファイルを生成できます。  
   
-- 
-  **
-  [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションのマネージド プロジェクト**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ プロジェクトは、[プロジェクトのプロパティ &#124; 出力の種類 = WinMD ファイル] に設定することにより、WinMD バイナリを出力できます。 WinMD のファイル名はその中に存在するすべての名前空間に対するスーパーセットの名前空間である必要があります。 たとえば、1 つのプロジェクトが名前空間 A.B と A.B.C で形成されている場合は、出力される WinMD で使用可能な名前は A.winmd と A.B.winmd です。 ユーザーが入力すると、プロジェクトのプロパティ&#124;アセンブリ名またはプロジェクトのプロパティ&#124;がプロジェクトの名前空間のセットから離れて Namespace 値またはプロジェクト内でのスーパー セットの名前空間がない、ビルド警告が生成されます。'A.winmd' では、このアセンブリの有効な .winmd ファイル名はありません。 Windows メタデータ ファイル内のすべての型は、ファイル名で指定される名前空間のサブ名前空間に存在する必要があります。 このようなサブ名前空間に存在しない型は、ランタイムに見つかりません。 このアセンブリでは、ファイル名として使用できる最も小さい共通の名前空間は 'CSWSClassLibrary1' です。 デスクトップの Visual Basic プロジェクトまたは Visual C# プロジェクトでは、[!INCLUDE[win8](../includes/win8-md.md)] SDK を使用して生成される WinMD のみを使用できます。このような WinMD を、ファースト パーティ WinMD と呼びます。また、これらのプロジェクトでは WinMD を生成できません。  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションのマネージド プロジェクト**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ プロジェクトは、[プロジェクトのプロパティ &amp;#124; 出力の種類 = WinMD ファイル] に設定することにより、WinMD バイナリを出力できます。 WinMD のファイル名はその中に存在するすべての名前空間に対するスーパーセットの名前空間である必要があります。 たとえば、1 つのプロジェクトが名前空間 A.B と A.B.C で形成されている場合は、出力される WinMD で使用可能な名前は A.winmd と A.B.winmd です。 ユーザーが入力すると、プロジェクトのプロパティ&#124;アセンブリ名またはプロジェクトのプロパティ&#124;がプロジェクトの名前空間のセットから離れて Namespace 値またはプロジェクト内でのスーパー セットの名前空間がない、ビルド警告が生成されます。'A.winmd' では、このアセンブリの有効な .winmd ファイル名はありません。 Windows メタデータ ファイル内のすべての型は、ファイル名で指定される名前空間のサブ名前空間に存在する必要があります。 このようなサブ名前空間に存在しない型は、ランタイムに見つかりません。 このアセンブリでは、ファイル名として使用できる最も小さい共通の名前空間は 'CSWSClassLibrary1' です。 デスクトップの Visual Basic プロジェクトまたは Visual C# プロジェクトでは、[!INCLUDE[win8](../includes/win8-md.md)] SDK を使用して生成される WinMD のみを使用できます。このような WinMD を、ファースト パーティ WinMD と呼びます。また、これらのプロジェクトでは WinMD を生成できません。  
   
 - **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションのネイティブ プロジェクト**:ネイティブ WinMD ファイルは、メタデータのみで構成されます。 その実装は、別の DLL ファイル内に存在します。 **[新しいプロジェクト]** ダイアログ ボックス内で Windows ランタイム構成プロジェクト テンプレートを選ぶか、空のプロジェクトから作業を開始し、WinMD ファイルを生成するようにプロジェクトのプロパティを変更することによって、ネイティブ バイナリを生成できます。 プロジェクトが、分離された複数の名前空間で形成されている場合は、ユーザーがそれらの名前空間を結合するか、MSMerge ツールを実行することを求めるビルド エラーが表示されます。  
   
@@ -165,7 +163,7 @@ ms.locfileid: "54756987"
 ### <a name="core-subgroup"></a>[コア] サブグループ  
  [コア] サブグループには、対象となる Windows のバージョンに対応する SDK の中にある (Windows ランタイム要素に対応する) すべての WinMD が一覧表示されます。  
   
- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーション プロジェクトには、プロジェクトを作成した時点の既定として、[!INCLUDE[win8](../includes/win8-md.md)] 内にあるすべての WinMD への参照が含まれています。 マネージド プロジェクトでは、**ソリューション エクスプローラー**の [参照] フォルダーの下にある 1 つの読み取り専用ノードが、[!INCLUDE[win8](../includes/win8-md.md)] SDK 全体に対する参照を示します。 したがって、参照マネージャーで [コア] サブグループいずれも列挙されず、アセンブリからの[!INCLUDE[win8](../includes/win8-md.md)]SDK 代わりにメッセージを表示します。"The Windows SDK is already referenced. (Windows SDK が既に参照されています。) Please use the Object Browser to explore the references in the Windows SDK. (オブジェクト ブラウザーを使用して Windows SDK 内の参照を調べてください。)"  
+ [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーション プロジェクトには、プロジェクトを作成した時点の既定として、[!INCLUDE[win8](../includes/win8-md.md)] 内にあるすべての WinMD への参照が含まれています。 マネージド プロジェクトでは、**ソリューション エクスプローラー**の [参照] フォルダーの下にある 1 つの読み取り専用ノードが、[!INCLUDE[win8](../includes/win8-md.md)] SDK 全体に対する参照を示します。 したがって、参照マネージャーで [コア] サブグループいずれも列挙されず、アセンブリからの[!INCLUDE[win8](../includes/win8-md.md)]SDK 代わりにメッセージを表示します。"Windows SDK が既に参照されています。 Please use the Object Browser to explore the references in the Windows SDK. (オブジェクト ブラウザーを使用して Windows SDK 内の参照を調べてください。)"  
   
  デスクトップ プロジェクトでは、[コア] サブグループは既定では表示されません。 Windows ランタイムを追加するために、プロジェクト ノードのショートカット メニューを開き、**[プロジェクトのアンロード]** をクリックし、次のスニペットを追加してから、プロジェクトをもう一度開きます (プロジェクト ノードで、**[プロジェクトの再読み込み]** をクリックします)。 **[参照マネージャー]** ダイアログ ボックスを開くと、[コア] サブグループが表示されます。  
   
@@ -198,9 +196,9 @@ ms.locfileid: "54756987"
   
  WinMD に対してファイル参照を行う場合に予期されるレイアウトは、*FileName*.winmd、*FileName*.dll、および *FileName*.pri というすべてのファイルが並行して配置された状態です。 次のシナリオで WinMD を参照する場合は、不完全なファイル セットがプロジェクトの出力ディレクトリにコピーされるため、ビルド エラーとランタイム エラーが発生します。  
   
--   **ネイティブ コンポーネント**: ネイティブ プロジェクトは、分離された名前空間ごとに 1 つの WinMD を作成し、実装全体を含む 1 つの DLL を作成します。 各 WinMD は、共通点のない名前になります。 このネイティブ コンポーネント ファイルを参照するときに、MSBuild は、共通点のない名前を付けられた複数の WinMD が 1 つのコンポーネントを形成することを認識しません。 その結果、同じ名前を付けられた *FileName*.dll と *FileName*.winmd のみがコピーされ、ランタイム エラーが発生します。 この問題を回避するには、拡張機能 SDK を作成します。 詳しくは、「[Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md)」(ソフトウェア開発キットの作成) をご覧ください。  
+- **ネイティブ コンポーネント**: ネイティブ プロジェクトは、分離された名前空間ごとに 1 つの WinMD を作成し、実装全体を含む 1 つの DLL を作成します。 各 WinMD は、共通点のない名前になります。 このネイティブ コンポーネント ファイルを参照するときに、MSBuild は、共通点のない名前を付けられた複数の WinMD が 1 つのコンポーネントを形成することを認識しません。 その結果、同じ名前を付けられた *FileName*.dll と *FileName*.winmd のみがコピーされ、ランタイム エラーが発生します。 この問題を回避するには、拡張機能 SDK を作成します。 詳しくは、「[Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md)」(ソフトウェア開発キットの作成) をご覧ください。  
   
--   **コントロールの使用**: XAML コントロールは、少なくとも *FileName*.winmd、*FileName*.dll、*FileName*.pri、*XamlName*.xaml、および *ImageName*.jpg で構成されます。 プロジェクトをビルドするときに、ファイル参照に関連付けられたリソース ファイルはプロジェクトの出力ディレクトリにコピーされず、*FileName*.winmd、*FileName*.dll、および *FileName*.pri のみがコピーされます。 リソースの *XamlName*.xaml と *ImageName*.jpg が見つからないことをユーザーに通知するために、ビルド エラーが記録されます。 ビルド、デバッグ、および実行時の動作を成功させるには、ユーザーはプロジェクトの出力ディレクトリにこれらのリソース ファイルを手動でコピーする必要があります。 この問題を回避するには、「[Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md)」(ソフトウェア開発キットの作成) の手順に従って拡張機能 SDK を作成するか、プロジェクト ファイルを編集して次のプロパティを追加します。  
+- **コントロールの使用**: XAML コントロールは、少なくとも *FileName*.winmd、*FileName*.dll、*FileName*.pri、*XamlName*.xaml、および *ImageName*.jpg で構成されます。 プロジェクトをビルドするときに、ファイル参照に関連付けられたリソース ファイルはプロジェクトの出力ディレクトリにコピーされず、*FileName*.winmd、*FileName*.dll、および *FileName*.pri のみがコピーされます。 リソースの *XamlName*.xaml と *ImageName*.jpg が見つからないことをユーザーに通知するために、ビルド エラーが記録されます。 ビルド、デバッグ、および実行時の動作を成功させるには、ユーザーはプロジェクトの出力ディレクトリにこれらのリソース ファイルを手動でコピーする必要があります。 この問題を回避するには、「[Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md)」(ソフトウェア開発キットの作成) の手順に従って拡張機能 SDK を作成するか、プロジェクト ファイルを編集して次のプロパティを追加します。  
   
     ```  
     <PropertyGroup>  
@@ -218,5 +216,5 @@ ms.locfileid: "54756987"
  **[参照マネージャー]** ダイアログ ボックス内の検索バーは、現在フォーカスが置かれているタブを対象として動作します。 たとえば、**[ソリューション]** タブにフォーカスがあるときにユーザーが検索バーに「System」と入力した場合は、"System" という文字列を含むプロジェクト名がソリューションを形成している状況以外では、検索結果が返されません。  
   
 ## <a name="see-also"></a>関連項目
- [(NIB) 方法:追加または参照の追加 ダイアログ ボックスを使用して参照を削除します。](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB 方法。追加または参照の追加 ダイアログ ボックスを使用して参照を削除します。](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [プロジェクト内の参照の管理](../ide/managing-references-in-a-project.md)

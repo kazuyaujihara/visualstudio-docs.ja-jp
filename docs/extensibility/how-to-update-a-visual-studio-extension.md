@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be5140fda673b85991d2a9247cff5bd53329944d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042120"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>方法: Visual Studio 拡張機能を更新します。
 使用して、システムに Visual Studio 拡張機能を更新する**拡張機能と更新**更新されたバージョンをインストールします。 VSIX マニフェストのバージョン番号をインクリメントして更新されるとは、拡張機能の更新バージョンを作成する場合を示すことができます。
@@ -28,30 +28,30 @@ ms.locfileid: "56702461"
 
 ## <a name="to-update-an-extension-on-your-system"></a>システムに拡張機能を更新するには
 
-1.  **[ツール]** メニューの **[拡張機能と更新プログラム]** をクリックします。
+1. **[ツール]** メニューの **[拡張機能と更新プログラム]** をクリックします。
 
-2.  左側のウィンドウで次のようにクリックします。**更新**します。
+2. 左側のウィンドウで次のようにクリックします。**更新**します。
 
-3.  中央のペインで、インストールする更新プログラムをクリックします。
+3. 中央のペインで、インストールする更新プログラムをクリックします。
 
      更新された拡張機能のバージョン番号は、その他の情報と共に、右側のウィンドウに表示されます。
 
-4.  右側のウィンドウの下部には、次のようにクリックします。 **Update**します。
+4. 右側のウィンドウの下部には、次のようにクリックします。 **Update**します。
 
 ## <a name="to-publish-an-update-of-an-extension"></a>拡張機能の更新を発行するには
 
-1.  Visual Studio で、拡張機能を更新するためのソリューションを開きます。 変更を行います。
+1. Visual Studio で、拡張機能を更新するためのソリューションを開きます。 変更を行います。
 
     > [!IMPORTANT]
     >  未署名のすべてのユーザー拡張機能は自動的に更新されません。 常に、拡張機能に署名する必要があります。
 
-2.  **ソリューション エクスプ ローラー**オープン*source.extension.manifest*します。
+2. **ソリューション エクスプ ローラー**オープン*source.extension.manifest*します。
 
-3.  マニフェスト デザイナーでの番号の値を増やす、**バージョン**フィールド。
+3. マニフェスト デザイナーでの番号の値を増やす、**バージョン**フィールド。
 
-4.  ソリューションを保存してビルドします。
+4. ソリューションを保存してビルドします。
 
-5.  新しいアップロード *.vsix*ファイル (で、* \bin\Debug\*プロジェクトのフォルダー) に、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Web サイト。
+5. 新しいアップロード *.vsix*ファイル (で、* \bin\Debug\*プロジェクトのフォルダー) に、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Web サイト。
 
      拡張機能の以前のバージョンを持つユーザーが開いたとき**拡張機能と更新プログラム**、新しいバージョンが表示されます、**更新**ツールが自動的に更新プログラムを探すように設定されている、一覧表示します。
 

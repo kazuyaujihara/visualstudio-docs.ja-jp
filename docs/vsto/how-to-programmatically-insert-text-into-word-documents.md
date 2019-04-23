@@ -16,24 +16,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c81a0da3c60bc9b3cfaec357dab0fe2bb33706
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060633"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>方法: プログラムによって Word 文書にテキストを挿入します。
   Microsoft Office Word の文書にテキストを挿入するには、主に次の 3 つの方法があります。
 
--   範囲内にテキストを挿入する。
+- 範囲内にテキストを挿入する。
 
--   範囲内のテキストを新しいテキストに置換する。
+- 範囲内のテキストを新しいテキストに置換する。
 
--   <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> オブジェクトの <xref:Microsoft.Office.Interop.Word.Selection> メソッドを使用して、カーソルの位置または選択範囲にテキストを挿入する。
+- <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> オブジェクトの <xref:Microsoft.Office.Interop.Word.Selection> メソッドを使用して、カーソルの位置または選択範囲にテキストを挿入する。
 
 > [!NOTE]
->  テキストをコンテンツ コントロールやブックマークに挿入することもできます。 詳細については、[コンテンツ コントロール](../vsto/content-controls.md)と[Bookmark コントロール](../vsto/bookmark-control.md)を参照してください。
+>  テキストをコンテンツ コントロールやブックマークに挿入することもできます。 詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)と[Bookmark コントロール](../vsto/bookmark-control.md)します。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "56654023"
 
 ### <a name="to-insert-text-in-a-range"></a>範囲内にテキストを挿入するには
 
-1.  文書の先頭に範囲を指定し、 **New Text**というテキストを挿入します。
+1. 文書の先頭に範囲を指定し、 **New Text**というテキストを挿入します。
 
      次のコード例はドキュメント レベルのカスタマイズで使用できます。
 
@@ -54,7 +54,7 @@ ms.locfileid: "56654023"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]
 
-2.  1 文字から挿入したテキストの長さまで拡張された <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを選択します。
+2. 1 文字から挿入したテキストの長さまで拡張された <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを選択します。
 
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]
@@ -64,7 +64,7 @@ ms.locfileid: "56654023"
 
 ### <a name="to-replace-text-in-a-range"></a>範囲内のテキストを置換するには
 
-1.  文書の先頭の 12 文字から成る <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを作成します。
+1. 文書の先頭の 12 文字から成る <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを作成します。
 
      次のコード例はドキュメント レベルのカスタマイズで使用できます。
 
@@ -76,12 +76,12 @@ ms.locfileid: "56654023"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]
 
-2.  これらの文字を **New Text**という文字列で置換します。
+2. これらの文字を **New Text**という文字列で置換します。
 
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]
 
-3.  範囲を選択します。
+3. 範囲を選択します。
 
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]

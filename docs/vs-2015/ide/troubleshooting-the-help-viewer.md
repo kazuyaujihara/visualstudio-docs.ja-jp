@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067041"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>ヘルプ ビューアーのトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "54774602"
   
 #### <a name="to-activate-windows-search-service"></a>Windows Search サービスをアクティブにするには  
   
-1.  サーバー マネージャーを起動します。  
+1. サーバー マネージャーを起動します。  
   
-2.  左側のナビゲーション ペインで、**[役割]** を選択します。  
+2. 左側のナビゲーション ペインで、**[役割]** を選択します。  
   
-3.  [役割の概要] ペインで、**[役割の追加]** を選択します。  
+3. [役割の概要] ペインで、**[役割の追加]** を選択します。  
   
-4.  ファイル サービスの役割を選択し、**[次へ]** をクリックします。  
+4. ファイル サービスの役割を選択し、**[次へ]** をクリックします。  
   
-5.  Windows Search の役割サービスを選択します。  
+5. Windows Search の役割サービスを選択します。  
   
 ## <a name="additional-resources"></a>その他のリソース  
  次のリソースを使用して、ヘルプ ビューアーで詳細情報を取得し、フィードバックを提供することができます。  

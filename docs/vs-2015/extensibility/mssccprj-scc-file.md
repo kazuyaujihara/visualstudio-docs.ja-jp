@@ -11,12 +11,12 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975048"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117721"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC File
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ IDE を使用してソース管理下にある Visual Studio ソリューショ�
   
  ソース管理プラグイン、MSSCCPRJ をサポートします。SCC ファイルは、次のガイドラインに従う必要があります。  
   
--   1 つ MSSCCPRJ のみできます。1 つのディレクトリのファイルを SCC です。  
+- 1 つ MSSCCPRJ のみできます。1 つのディレクトリのファイルを SCC です。  
   
--   MSSCCPRJ します。SCC ファイルでは、指定したディレクトリ内のソース管理下にある複数のファイルの"AuxPath"と"ProjName"を含めることができます。  
+- MSSCCPRJ します。SCC ファイルでは、指定したディレクトリ内のソース管理下にある複数のファイルの"AuxPath"と"ProjName"を含めることができます。  
   
--   "AuxPath"文字列は、引用符の内部に必要ありません。 区切り記号として引用符で囲むが許可されます (たとえば、二重引用符のペアを空の文字列を示すために使用できます)。 IDE、MSSCCPRJ から読み取られるときに"AuxPath"文字列からすべての引用符が削除されます。SCC ファイルです。  
+- "AuxPath"文字列は、引用符の内部に必要ありません。 区切り記号として引用符で囲むが許可されます (たとえば、二重引用符のペアを空の文字列を示すために使用できます)。 IDE、MSSCCPRJ から読み取られるときに"AuxPath"文字列からすべての引用符が削除されます。SCC ファイルです。  
   
--   MSSCCPRJ"ProjName"文字列。SCC ファイルはまったくから返される文字列と一致する必要があります、`SccGetProjPath`関数。 関数によって返される文字列に引用符で囲む、MSSCCPRJ 内の文字列がある場合。SCC ファイルが引用符で囲み、その逆です。  
+- MSSCCPRJ"ProjName"文字列。SCC ファイルはまったくから返される文字列と一致する必要があります、`SccGetProjPath`関数。 関数によって返される文字列に引用符で囲む、MSSCCPRJ 内の文字列がある場合。SCC ファイルが引用符で囲み、その逆です。  
   
--   MSSCCPRJ します。SCC ファイルが作成または、ファイルがソース管理下に配置されるたびに更新します。  
+- MSSCCPRJ します。SCC ファイルが作成または、ファイルがソース管理下に配置されるたびに更新します。  
   
--   MSSCCPRJ 場合。SCC ファイルが削除された、プロバイダーが再生成、次回そのディレクトリに関連のソース管理操作を実行します。  
+- MSSCCPRJ 場合。SCC ファイルが削除された、プロバイダーが再生成、次回そのディレクトリに関連のソース管理操作を実行します。  
   
--   MSSCCPRJ します。SCC ファイルには、定義済みの形式に厳密に従う必要があります。  
+- MSSCCPRJ します。SCC ファイルには、定義済みの形式に厳密に従う必要があります。  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ を示しています。SCC ファイルの形式  
  MSSCCPRJ のサンプルを次に示します。SCC ファイルの形式 (行番号は、ガイドとしてのみ提供されているし、ファイルの本文に含まれない):  

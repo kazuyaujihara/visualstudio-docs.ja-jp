@@ -21,17 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c21c14b8c84246545d9ffb3e3dc59210b56fe84e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 05290bed3fe51c69e29d8bafef927c91c63b5249
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777153"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667262"
 ---
 # <a name="bscmake-task"></a>BscMake タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 重要]
 >  Visual Studio IDE では、bscmake は使用されなくなりました。 Visual Studio 2008 以降、ブラウザー情報は、ソリューション フォルダーの sdf ファイルに自動的に格納されます。  
   
@@ -49,7 +48,7 @@ ms.locfileid: "54777153"
 |**SuppressStartupBanner**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、タスクの開始時に著作権およびバージョン番号のメッセージが表示されないようにします。<br /><br /> 詳細については、「[BSCMAKE オプション](http://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2)」で **/n** オプションの説明を参照してください。|  
 |**TrackerLogDirectory**|省略可能な **String** 型のパラメーターです。<br /><br /> トラッカー ログのディレクトリを指定します。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

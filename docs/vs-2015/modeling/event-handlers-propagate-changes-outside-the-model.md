@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c723e0a2cc76b6432fc6f209a7edf4a988a0b3fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059904"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>イベント ハンドラーによって変更内容がモデル外に反映される
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Visualization and Modeling SDK では、ストア以外の変数、ファイル�
   
 1. 監視するイベントの種類を選択します。 完全な一覧については、プロパティを確認<xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>します。 各プロパティは、イベントの種類に対応します。 最もイベントの種類は頻繁に使用します。  
   
-   -   `ElementAdded` – モデル要素のときにトリガーされると、リンクのリレーションシップ、図形またはコネクタが作成されます。  
+   - `ElementAdded` – モデル要素のときにトリガーされると、リンクのリレーションシップ、図形またはコネクタが作成されます。  
   
-   -   ElementPropertyChanged – がトリガーされたときの値を`Normal`ドメイン プロパティを変更します。 イベントは、新旧の値が等しくない場合にのみトリガーされます。 イベントは、計算およびカスタム格納プロパティに適用できません。  
+   - ElementPropertyChanged – がトリガーされたときの値を`Normal`ドメイン プロパティを変更します。 イベントは、新旧の値が等しくない場合にのみトリガーされます。 イベントは、計算およびカスタム格納プロパティに適用できません。  
   
         これは、リレーションシップ リンクに対応するロールのプロパティに適用できません。 代わりに、`ElementAdded`ドメインの関係を監視します。  
   
-   -   `ElementDeleted` – モデル要素の後にトリガーされると、リレーションシップ、図形またはコネクタが削除されました。 要素のプロパティ値に引き続きアクセスできますが、その他の要素へのリレーションシップはありません。  
+   - `ElementDeleted` – モデル要素の後にトリガーされると、リレーションシップ、図形またはコネクタが削除されました。 要素のプロパティ値に引き続きアクセスできますが、その他の要素へのリレーションシップはありません。  
   
 2. 部分クラス定義を追加_YourDsl_**DocData**で別のコード ファイルで、 **DslPackage**プロジェクト。  
   
@@ -166,11 +166,11 @@ private static void AlbumTitleAdjuster(object sender,
   
  イベントを記述する場合は、ストアを更新します。  
   
--   使用`store.InUndoRedoOrRollback`元に戻すのモデル要素を変更するようにします。 トランザクション マネージャーの設定すべてストアを元の状態にします。  
+- 使用`store.InUndoRedoOrRollback`元に戻すのモデル要素を変更するようにします。 トランザクション マネージャーの設定すべてストアを元の状態にします。  
   
--   使用`store.InSerializationTransaction`モデルは、ファイルから読み込み中に変更しないようにします。  
+- 使用`store.InSerializationTransaction`モデルは、ファイルから読み込み中に変更しないようにします。  
   
--   変更は、さらにトリガーされるようにイベントが発生されます。 無限ループを避けることを確認します。  
+- 変更は、さらにトリガーされるようにイベントが発生されます。 無限ループを避けることを確認します。  
   
 ## <a name="store-event-types"></a>ストア イベントの種類  
  各イベントの種類は、Store.EventManagerDirectory でコレクションに対応します。 追加または、いつでもイベント ハンドラーを削除することができますが、通常、ドキュメントが読み込まれるときに、それらを追加します。  

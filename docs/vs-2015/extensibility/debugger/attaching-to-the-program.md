@@ -10,12 +10,12 @@ ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0caeb922ecf908f56d9792e6363ac66c339c53e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6c8aa5d32d579183b0bb42a9152232377423435
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977728"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088692"
 ---
 # <a name="attaching-to-the-program"></a>プログラムへのアタッチ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,16 +45,16 @@ ms.locfileid: "58977728"
   
   後に、`IDebugEngine2::Attach`メソッドが呼び出されるの実装で次の手順に従って、`IDebugEngine2::Attach`メソッド。  
   
-1.  送信、 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM にイベント オブジェクト。 詳細については、次を参照してください。[イベントの送信](../../extensibility/debugger/sending-events.md)します。  
+1. 送信、 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM にイベント オブジェクト。 詳細については、次を参照してください。[イベントの送信](../../extensibility/debugger/sending-events.md)します。  
   
-2.  呼び出す、 [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)メソッドを[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)に渡されたオブジェクト、`IDebugEngine2::Attach`メソッド。  
+2. 呼び出す、 [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)メソッドを[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)に渡されたオブジェクト、`IDebugEngine2::Attach`メソッド。  
   
      これにより返されます、`GUID`プログラムを識別するために使用されます。 `GUID` DE を表すローカル プログラムを返す必要がある場合に、オブジェクトに格納する必要があります、`IDebugProgram2::GetProgramId`でメソッドが呼び出される、`IDebugProgram2`インターフェイス。  
   
     > [!NOTE]
     >  実装する場合、`IDebugProgramNodeAttach2`インターフェイス、プログラムの`GUID`に渡される、`IDebugProgramNodeAttach2::OnAttach`メソッド。 これは、`GUID`プログラムの使用は`GUID`によって返される、`IDebugProgram2::GetProgramId`メソッド。  
   
-3.  送信、 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 、SDM を通知するイベント オブジェクトをローカル`IDebugProgram2`DE にプログラムを表現するオブジェクトが作成されました。 詳細については、次を参照してください。[イベントの送信](../../extensibility/debugger/sending-events.md)します。  
+3. 送信、 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 、SDM を通知するイベント オブジェクトをローカル`IDebugProgram2`DE にプログラムを表現するオブジェクトが作成されました。 詳細については、次を参照してください。[イベントの送信](../../extensibility/debugger/sending-events.md)します。  
   
     > [!NOTE]
     >  これは、同じ`IDebugProgram2`に渡されたオブジェクト、`IDebugEngine2::Attach`メソッド。 渡された以前`IDebugProgram2`オブジェクトは、ポートのみによって認識され、独立したオブジェクトします。  

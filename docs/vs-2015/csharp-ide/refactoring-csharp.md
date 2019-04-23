@@ -1,5 +1,5 @@
 ---
-title: リファクタリング (C#) |Microsoft Docs
+title: リファクタリング (c#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,31 +18,31 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046319"
 ---
 # <a name="refactoring-c"></a>リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 リファクタリングは、プロセスが、コードの外部の動作を変更することがなく、コードの内部構造を変更することによって書き込まれた後に、コードを向上させるのです。  
   
- Visual C# のリファクタリングの次のコマンドを提供する、**リファクタリング**メニュー。  
+ Visual c# のリファクタリングの次のコマンドを提供する、**リファクタリング**メニュー。  
   
--   [メソッドの抽出リファクタリング (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [メソッドの抽出リファクタリング (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [名前の変更リファクタリング (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [名前の変更リファクタリング (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [フィールドのカプセル化リファクタリング (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [フィールドのカプセル化リファクタリング (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [インターフェイスの抽出リファクタリング (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [インターフェイスの抽出リファクタリング (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [パラメーターの削除リファクタリング (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [パラメーターの削除リファクタリング (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [パラメーター順序の再変更リファクタリング (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [パラメーター順序の再変更リファクタリング (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>複数プロジェクトのリファクタリング  
  Visual Studio では、複数のプロジェクトが同じソリューション内にあるプロジェクトのリファクタリングをサポートします。 すべてのファイル間での参照を修正、リファクタリング操作は、同じ言語のすべてのプロジェクト間でこれらの参照を修正します。 これは、すべてのプロジェクト間参照に対して機能します。 たとえば、クラス ライブラリ型の名前を変更するときに、クラス ライブラリを参照するコンソール アプリケーションがある場合 (を使用して、`Rename`リファクタリング操作)、コンソール アプリケーションでは、クラス ライブラリ型への参照も更新されます。  
@@ -69,7 +69,7 @@ ms.locfileid: "58975880"
   
  **検証結果** ダイアログ ボックスで通知する場合は、リファクタリングのエンジンのコンパイル エラーを検出またはリファクタリング操作は、バインドが別のものへの参照をコードを誤って原因を検出しますもともと (問題を再バインド) にバインドされます。  
   
- 有効にする、検証結果機能、**ツール** メニューのをクリックして**オプション**します。 **オプション** ダイアログ ボックスで、展開**テキスト エディター**、順に展開**C#** します。 クリックして **[詳細設定]** を選択し、**リファクタリングの結果を確認**チェック ボックスをオンします。  
+ 有効にする、検証結果機能、**ツール** メニューのをクリックして**オプション**します。 **オプション** ダイアログ ボックスで、展開**テキスト エディター**、順に展開**c#** します。 クリックして **[詳細設定]** を選択し、**リファクタリングの結果を確認**チェック ボックスをオンします。  
   
  **検証結果** ダイアログ ボックスが 2 つの種類の問題を再バインドの違いを区別します。  
   

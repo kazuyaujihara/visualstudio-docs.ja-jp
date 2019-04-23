@@ -14,14 +14,14 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8819964eff232cc01cbcfc2081e01eca47f04c15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 45e1ad3c89d811a0a2bd715c86d8fcd8006600b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086703"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>方法: Windows シンボル情報を参照する
+# <a name="how-to-reference-windows-symbol-information"></a>方法: Windows シンボル情報を参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio プロファイリング ツールは、シンボル (.pdb) ファイルを使用して、プログラム バイナリの関数名などのシンボル名を解決します。 次の手順を使って、ローカル コンピューター上の Windows のバージョンに適切な .pdb ファイルを自動的にダウンロードし、更新することができます。  
@@ -33,17 +33,17 @@ Visual Studio プロファイリング ツールは、シンボル (.pdb) ファ
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>Microsoft シンボル サーバーを使用するには  
   
-1.  シンボル ファイルの情報を格納するフォルダーを作成します (例: C:\SymbolCache)。  
+1. シンボル ファイルの情報を格納するフォルダーを作成します (例: C:\SymbolCache)。  
   
-2.  **[ツール]** メニューの **[オプション]** をクリックします。  
+2. **[ツール]** メニューの **[オプション]** をクリックします。  
   
      **[オプション]** ダイアログ ボックスが表示されます。  
   
-3.  **[デバッグ]** ツリーを展開し、**[シンボル]** をクリックします。  
+3. **[デバッグ]** ツリーを展開し、**[シンボル]** をクリックします。  
   
-4.  **[シンボル ファイル (.pdb) の場所]** で、**[Microsoft シンボル サーバー]** を選択します。  
+4. **[シンボル ファイル (.pdb) の場所]** で、**[Microsoft シンボル サーバー]** を選択します。  
   
-5.  **[シンボル サーバーからシンボルをキャッシュするディレクトリ]** ボックスに、次に示すように、手順 1. で作成したフォルダーのパスを入力します。  
+5. **[シンボル サーバーからシンボルをキャッシュするディレクトリ]** ボックスに、次に示すように、手順 1. で作成したフォルダーのパスを入力します。  
   
      **C:\SymbolCache**  
   

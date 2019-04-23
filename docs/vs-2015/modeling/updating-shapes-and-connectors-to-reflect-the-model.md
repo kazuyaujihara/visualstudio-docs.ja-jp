@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977808"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107867"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>シェイプおよびコネクタの更新とモデルへの反映
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>デコレーターの可視性を制御するマップのシェイプのプロパティを設定  
  DSL 定義で、図形とドメイン クラス間のマッピングを構成することによって、プログラム コードを記述することがなく、デコレーターの可視性を制御できます。 詳細については、次のトピックを参照してください。  
   
--   [方法: デコレーターの可視性を制御する-リダイレクト](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [方法: デコレーターの可視性を制御する-リダイレクト](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)  
+- [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>色と形のスタイル プロパティとして公開します。  
  DSL 定義で、シェイプ クラスを右クリックして**公開されている追加**、項目のいずれかなどのクリックと**塗りつぶしの色**。  
@@ -115,7 +115,7 @@ partial class MyLanguageDiagram
   
  このメソッドは、ドメインのプロパティと、図形のサイズなど、ストア以外の機能の両方に使用できます。  
   
-##  <a name="OnAssociatedProperty"></a> AssociateValueWith() を使用して、図形の他の機能を更新するには  
+## <a name="OnAssociatedProperty"></a> AssociateValueWith() を使用して、図形の他の機能を更新するには  
  図形、影、または、コネクタの矢印のスタイルがかどうかなどの機能の一部のドメインのプロパティとしての機能を公開する組み込みのメソッドはありません。  このような機能に変更は、トランザクション システムの制御下ではありません。 そのため、それらを更新する適切ながないユーザーが元に戻すコマンドを実行するときに、規則が呼び出されないため、規則を使用します。  
   
  このような機能を使用して更新する代わりに、<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>します。 次の例では、コネクタの矢印のスタイルは、コネクタを表示するリレーションシップ内のドメイン プロパティの値によって制御されます。  

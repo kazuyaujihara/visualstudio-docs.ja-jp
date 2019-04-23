@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 90605152607f403a089d59727d155cd154f7032e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9d00db6f9a00a273198cc50704d65ed6d2e4bb33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58975440"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072098"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030:適切な場所にイベントを使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58975440"
 ## <a name="cause"></a>原因
  パブリック、プロテクト、またはプライベート メソッドの名前は、次のいずれかで始まります。
 
--   アドオン
+- アドオン
 
--   RemoveOn
+- RemoveOn
 
--   起動
+- 起動
 
--   発生させる
+- 発生させる
 
 ## <a name="rule-description"></a>規則の説明
  この規則では、通常はイベントに使用される名前を持つメソッドを検出します。 イベントがオブザーバーまたは公開/定期受信デザイン パターンに従ってください。1 つのオブジェクトの状態の変更は、その他のオブジェクトに伝達する必要があるときに使用されます。 明確に定義された状態の変更に応答するメソッドの呼び出しの場合、イベント ハンドラーで、メソッドを呼び出します。 メソッドを呼び出すオブジェクトは、メソッドを直接呼び出すのではなく、イベントを発生させる必要があります。

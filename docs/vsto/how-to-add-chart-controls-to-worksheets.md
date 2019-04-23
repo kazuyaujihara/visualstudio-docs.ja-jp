@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09301d9ebb85d12edf9c8df3d1879aad49ef8d56
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056316"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>方法: ワークシートに Chart コントロールを追加します。
   追加することができます<xref:Microsoft.Office.Tools.Excel.Chart>およびドキュメント レベルのカスタマイズで実行時のデザイン時に、Microsoft Office Excel ワークシートにコントロール。 追加することも<xref:Microsoft.Office.Tools.Excel.Chart>VSTO アドインにおける実行時にコントロール。
@@ -35,7 +35,7 @@ ms.locfileid: "56598064"
 
   詳細については<xref:Microsoft.Office.Tools.Excel.Chart>コントロールを参照してください[グラフ コントロール](../vsto/chart-control.md)します。
 
-##  <a name="designtime"></a> デザイン時に Chart コントロールを追加します。
+## <a name="designtime"></a> デザイン時に Chart コントロールを追加します。
  アプリケーションの中からグラフを追加するのと同じ方法で、ワークシートに <xref:Microsoft.Office.Tools.Excel.Chart> コントロールを追加できます。
 
 > [!NOTE]
@@ -43,36 +43,36 @@ ms.locfileid: "56598064"
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Excel のワークシートに Chart ホスト コントロールを追加するには
 
-1.  **挿入**] タブで、**グラフ**グループで、[**列**グラフのカテゴリをクリックします。、、およびグラフの種類をクリックします。
+1. **挿入**] タブで、**グラフ**グループで、[**列**グラフのカテゴリをクリックします。、、およびグラフの種類をクリックします。
 
-2.  **グラフの挿入**ダイアログ ボックスで、をクリックして**OK**。
+2. **グラフの挿入**ダイアログ ボックスで、をクリックして**OK**。
 
-3.  **デザイン**] タブで、**データ**グループで、[**データの選択**します。
+3. **デザイン**] タブで、**データ**グループで、[**データの選択**します。
 
-4.  **データ ソースの選択**ダイアログ ボックスで、クリック、**グラフ****データ範囲**ボックスし、既定の選択をオフにします。
+4. **データ ソースの選択**ダイアログ ボックスで、クリック、**グラフ****データ範囲**ボックスし、既定の選択をオフにします。
 
-5.  **グラフのデータ**シートで、グラフのデータが含まれているセルの範囲を選択します (セル**A5**を通じて**D8**)。
+5. **グラフのデータ**シートで、グラフのデータが含まれているセルの範囲を選択します (セル**A5**を通じて**D8**)。
 
-6.  **データ ソースの選択**ダイアログ ボックスで、をクリックして**OK**します。
+6. **データ ソースの選択**ダイアログ ボックスで、をクリックして**OK**します。
 
-##  <a name="runtimedoclevel"></a> ドキュメント レベル プロジェクト内で実行時の chart コントロールを追加します。
- 追加することができます、<xref:Microsoft.Office.Tools.Excel.Chart>実行時に動的に制御します。 動的に作成したグラフは、ドキュメントを閉じるとホスト コントロールとしてドキュメントに保持されません。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
+## <a name="runtimedoclevel"></a> ドキュメント レベル プロジェクト内で実行時の chart コントロールを追加します。
+ 追加することができます、<xref:Microsoft.Office.Tools.Excel.Chart>実行時に動的に制御します。 動的に作成したグラフは、ドキュメントを閉じるとホスト コントロールとしてドキュメントに保持されません。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>プログラムを使用してワークシートに Chart コントロールを追加するには
 
-1.  `Sheet1` の <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> イベント ハンドラーに以下のコードを挿入して、<xref:Microsoft.Office.Tools.Excel.Chart> コントロールを追加します。
+1. `Sheet1` の <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> イベント ハンドラーに以下のコードを挿入して、<xref:Microsoft.Office.Tools.Excel.Chart> コントロールを追加します。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]
 
-##  <a name="runtimeaddin"></a> VSTO アドイン プロジェクト内で実行時の chart コントロールを追加します。
- プログラムを使用して <xref:Microsoft.Office.Tools.Excel.Chart> コントロールを VSTO アドイン プロジェクトの任意の開いているワークシートに追加できます。 詳細については、[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)を参照してください。
+## <a name="runtimeaddin"></a> VSTO アドイン プロジェクト内で実行時の chart コントロールを追加します。
+ プログラムを使用して <xref:Microsoft.Office.Tools.Excel.Chart> コントロールを VSTO アドイン プロジェクトの任意の開いているワークシートに追加できます。 詳細については、次を参照してください。[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)します。
 
- 動的に作成されたグラフ コントロールは、ワークシートを閉じるとホスト コントロールとしてワークシートに保持されません。 詳細については、[Add Controls to Office は、実行時にドキュメント](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
+ 動的に作成されたグラフ コントロールは、ワークシートを閉じるとホスト コントロールとしてワークシートに保持されません。 詳細については、次を参照してください。 [Add Controls to Office は、実行時にドキュメント](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>プログラムを使用してワークシートに Chart コントロールを追加するには
 
-1.  次のコードでは、開いているワークシートに基づいたワークシート ホスト項目を生成し、<xref:Microsoft.Office.Tools.Excel.Chart> コントロールを追加します。
+1. 次のコードでは、開いているワークシートに基づいたワークシート ホスト項目を生成し、<xref:Microsoft.Office.Tools.Excel.Chart> コントロールを追加します。
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#9)]
      [!code-vb[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#9)]
@@ -80,7 +80,7 @@ ms.locfileid: "56598064"
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例の要件は以下のとおりです。
 
--   グラフ化するデータが、ワークシートの A5 ～ D8 の範囲に格納されていること。
+- グラフ化するデータが、ワークシートの A5 ～ D8 の範囲に格納されていること。
 
 ## <a name="see-also"></a>関連項目
 - [Word 文書と Excel ブックを実行時に VSTO アドインで拡張します。](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

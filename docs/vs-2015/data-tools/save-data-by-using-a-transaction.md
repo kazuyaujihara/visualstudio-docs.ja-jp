@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 243170acd838b96efac6521a548596a021893e41
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c133bb3f8ef56378c20b985aa118e48e71109cea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065260"
 ---
 # <a name="save-data-by-using-a-transaction"></a>トランザクションを使用してデータを保存する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 使用して、トランザクションでデータを保存する、<xref:System.Transactions>名前空間。 使用して、<xref:System.Transactions.TransactionScope>オブジェクトが自動的に管理されているトランザクションに参加します。  
   
  プロジェクトは、トランザクションを使用するプロジェクトへの参照を手動で追加する必要があるため、System.Transactions アセンブリへの参照は作成されません。  
@@ -47,15 +46,15 @@ ms.locfileid: "58976342"
   
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll"></a>System.Transactions の dll への参照を追加するには  
   
-1.  **プロジェクト**メニューの **参照の追加**します。  
+1. **プロジェクト**メニューの **参照の追加**します。  
   
-2.  **.NET**  タブ (**SQL Server**の SQL Server プロジェクト タブ) を選択します**System.Transactions**、し、 **OK**。  
+2. **.NET**  タブ (**SQL Server**の SQL Server プロジェクト タブ) を選択します**System.Transactions**、し、 **OK**。  
   
      System.Transactions.dll への参照は、プロジェクトに追加されます。  
   
 ### <a name="to-save-data-in-a-transaction"></a>トランザクションでデータを保存するには  
   
--   使用して、データを保存するコードを追加するが、トランザクションを含むステートメント。 次のコードを作成し、インスタンス化する方法を示しています、<xref:System.Transactions.TransactionScope>オブジェクトを使用して、ステートメント。  
+- 使用して、データを保存するコードを追加するが、トランザクションを含むステートメント。 次のコードを作成し、インスタンス化する方法を示しています、<xref:System.Transactions.TransactionScope>オブジェクトを使用して、ステートメント。  
   
      [!code-csharp[VbRaddataSaving#11](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#11)]
      [!code-vb[VbRaddataSaving#11](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#11)]  

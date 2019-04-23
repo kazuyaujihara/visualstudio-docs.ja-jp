@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: f7ab539c1e5a5e90006629850f4c0e728e2e89f4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f95daba8d1a7a8965be223ff2a9787101530edc1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868157"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790928"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>ユニバーサル Windows アプリの HTML UI の応答性を分析する
 このトピックでは、アプリのパフォーマンス問題を UI 応答性プロファイラーを使って切り分ける方法を説明します。UI 応答性プロファイラーは、ユニバーサル Windows アプリで利用できるパフォーマンス ツールです。
@@ -178,7 +179,7 @@ if (performance.mark && performance.measure) {
 
  ![診断セッション ルーラー](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")
 
- タイムラインには、アクティブ化イベントのようなアプリのライフサイクル イベントが発生した日時が示されます。 また、コードに追加することができるユーザー マーク (ユーザー マークの三角形) も表示されます。 イベントを選択すると、より多くの情報を含むヒントが表示されます。 ユーザー マークの詳細については、このトピックの「 [分析用のコードのマーク](#ProfileMark) 」を参照してください。
+ タイムラインには、アクティブ化イベントのようなアプリのライフサイクル イベントが発生した日時が示されます。また、コードに追加することができるユーザー マーク (ユーザー マークの三角形) も表示されます。 イベントを選択すると、より多くの情報を含むヒントが表示されます。 ユーザー マークの詳細については、このトピックの「 [分析用のコードのマーク](#ProfileMark) 」を参照してください。
 
  アプリのライフサイクル イベントは、菱形記号として表示されます。 これらは次のような DOM イベントです。
 

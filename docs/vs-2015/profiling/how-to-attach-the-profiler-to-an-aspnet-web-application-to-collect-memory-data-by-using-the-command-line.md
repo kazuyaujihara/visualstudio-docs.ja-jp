@@ -9,14 +9,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d824a567f5819125837dde401107a050561d08a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 863e60592fe82c468f48912c4e36182b1bb1a36b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104149"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを ASP.NET Web アプリケーションにアタッチし、メモリ データを収集する
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>方法: コマンドラインを使用してメモリ データを収集する ASP.NET Web アプリケーションに、Profiler をアタッチします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションにプロファイラーをアタッチし、.NET Framework のメモリ割り当ての数とサイズに関するデータを収集する方法について説明します。 .NET Framework メモリ オブジェクトの有効期間に関するデータも収集できます。  
@@ -40,7 +40,7 @@ ms.locfileid: "54783473"
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} **[/samplelineoff]**  
 
-   -   オプションの **/globalsamplegc** と **/globalsamplegclife** では、収集するメモリ データの型を指定します。  
+   - オプションの **/globalsamplegc** と **/globalsamplegclife** では、収集するメモリ データの型を指定します。  
 
         次のいずれかのオプションを 1 つのみ指定します。  
 
@@ -49,7 +49,7 @@ ms.locfileid: "54783473"
        |**/globalsamplegc**|メモリの割り当てデータを収集できます。|  
        |**/globalsamplegclife**|メモリの割り当てデータとオブジェクトの有効期間データを収集できます。|  
 
-   -   オプションの **/samplelineoff** は特定のソース コード行への収集データの割り当てを無効にします。 このオプションを指定すると、データは関数レベルで割り当てられます。  
+   - オプションの **/samplelineoff** は特定のソース コード行への収集データの割り当てを無効にします。 このオプションを指定すると、データは関数レベルで割り当てられます。  
 
 3. コンピューターを再起動して、新しい環境構成を設定します。  
 
@@ -77,23 +77,22 @@ ms.locfileid: "54783473"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 ミリ秒です。                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.etl) ファイルに収集されます。                                                                                          |
 
-
 6. 一般的な方法で [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションを起動します。  
 
 7. プロファイラーを [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ワーカー プロセスにアタッチします。 型:  
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   プロセス ID `(PID)` には、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ワーカー プロセスのプロセス ID またはプロセス名を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID を参照できます。  
+   - プロセス ID `(PID)` には、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ワーカー プロセスのプロセス ID またはプロセス名を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID を参照できます。  
 
-   -   **/targetclr:** `Version` には、アプリケーションに複数のバージョンのランタイムが読み込まれている場合に、プロファイリングを行う共通言語ランタイム (CLR) のバージョンを指定します。  
+   - **/targetclr:** `Version` には、アプリケーションに複数のバージョンのランタイムが読み込まれている場合に、プロファイリングを行う共通言語ランタイム (CLR) のバージョンを指定します。  
 
 ## <a name="controlling-data-collection"></a>データ コレクションの制御  
  アプリケーションの実行中に、**VSPerfCmd.exe** オプションを使用して、プロファイラーのデータ ファイルへのデータ書き込みを開始および停止することにより、データ収集を制御できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。  
 
 #### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには  
 
--   次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
+- 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
 
     |オプション|説明|  
     |------------|-----------------|  

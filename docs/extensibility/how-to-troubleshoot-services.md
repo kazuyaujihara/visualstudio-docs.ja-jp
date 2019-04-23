@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b943322fe6172eaaf196cc3f842da9ec0838d8cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 681564b2148fb9554e80105c2e18b1d220bb37ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702396"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111650"
 ---
 # <a name="how-to-troubleshoot-services"></a>方法: サービスをトラブルシューティングします。
 これには、サービスを取得するときに発生する可能性があるいくつかの一般的な問題があります。
@@ -52,9 +52,9 @@ if (log == null) return;
 
 2. GetService を呼び出すときに、サービスの種類と、インターフェイス型ではなくを使用します。 サービスを要求するときに[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、<xref:Microsoft.VisualStudio.Shell.Package>型から GUID を抽出します。 次の条件が存在しない場合、サービスは見つかりませんされます。
 
-   1.  インターフェイス型は、サービスの種類ではなく、GetService に渡されます。
+   1. インターフェイス型は、サービスの種類ではなく、GetService に渡されます。
 
-   2.  GUID は、インターフェイスを明示的に割り当てられません。 そのため、システムは、必要に応じてオブジェクトの既定の GUID を作成します。
+   2. GUID は、インターフェイスを明示的に割り当てられません。 そのため、システムは、必要に応じてオブジェクトの既定の GUID を作成します。
 
 3. サービスを要求する VSPackage が配置されていることを確認します。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 呼び出す前に、構築した後は、VSPackage をサイト<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>します。
 

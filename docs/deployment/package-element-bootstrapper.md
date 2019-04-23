@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da71825596117bed4f5cd9042255a8fa83a0c64
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631862"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654582"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;パッケージ&gt;要素 (ブートス トラップ)
 `Package`要素は、パッケージ ファイル内の最上位の XML 要素。
@@ -143,12 +143,11 @@ ms.locfileid: "56631862"
 ## <a name="elements-and-attributes"></a>要素と属性
  `Package`要素が必要です。 次の属性があります。
 
-
 | 属性 | 説明 |
 |--------------------| - |
-| `Culture` | 必須です。 このパッケージには、使用する言語を決定するカルチャを定義します。 この属性がキーに、`Strings`要素で、インストール時に製品名とエラー メッセージのカルチャに固有の文字列の一覧を表示します。 |
-| `Name` | 必須です。 などのツールで開発者に表示されるパッケージの名前[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 この属性がキーに、`Strings`要素が含まれている、`String`を持つ要素、`Name`と`Culture`プロパティが一致するように設定、`Name`と`Culture`プロパティの`Package`します。 |
-| `LicenseAgreement` | 任意。 ライセンス契約 (EULA) を含む配布パッケージでは、ファイルの名前を指定します。  このファイルは、プレーン テキストを指定できます (*.txt*) またはリッチ テキスト形式。 (*.rtf*) |
+| `Culture` | 必須。 このパッケージには、使用する言語を決定するカルチャを定義します。 この属性がキーに、`Strings`要素で、インストール時に製品名とエラー メッセージのカルチャに固有の文字列の一覧を表示します。 |
+| `Name` | 必須。 などのツールで開発者に表示されるパッケージの名前[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 この属性がキーに、`Strings`要素が含まれている、`String`を持つ要素、`Name`と`Culture`プロパティが一致するように設定、`Name`と`Culture`プロパティの`Package`します。 |
+| `LicenseAgreement` | 省略可能です。 ライセンス契約 (EULA) を含む配布パッケージでは、ファイルの名前を指定します。  このファイルは、プレーン テキストを指定できます (*.txt*) またはリッチ テキスト形式。 (*.rtf*) |
 
 ## <a name="example"></a>例
  次のコード例は、再配布するための完全なパッケージ ファイルを示しています、[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]します。

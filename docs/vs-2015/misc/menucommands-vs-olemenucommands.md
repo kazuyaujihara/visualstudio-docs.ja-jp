@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
-ms.openlocfilehash: 2681b407bd7fd742e4085bb71b22025f533e2210
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976958"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089147"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand とOleMenuCommand
 メニュー コマンドは、 <xref:System.ComponentModel.Design.MenuCommand> または <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> オブジェクトから派生させて、適切なイベント ハンドラーを実装することによって作成できます。 ほとんどのケースでは、VSPackage プロジェクト テンプレートの場合と同様に <xref:System.ComponentModel.Design.MenuCommand>を使用できますが、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>を使用することが必要になることもあります。  
@@ -64,9 +64,9 @@ ms.locfileid: "58976958"
    </Button>
    ``` 
      
-   1.  新しいコマンドの GUID:ID が一致するように `guid` フィールドと `id` フィールドを設定します。  
+   1. 新しいコマンドの GUID:ID が一致するように `guid` フィールドと `id` フィールドを設定します。  
   
-   2.  `priority` 属性を設定します。  
+   2. `priority` 属性を設定します。  
   
         `priority` 属性は、ボタンの場所を親グループ内の他のオブジェクトの中から特定するために .vsct で使用されます。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "58976958"
   
         `priority` 属性を省略すると、その値は 0 に設定されます。  
   
-   3.  `type` 属性を設定します。 ほとんどの場合、その値は `"Button"`になります。 その他の有効なボタンの種類の説明については、「 [Button Element](../extensibility/button-element.md)」を参照してください。  
+   3. `type` 属性を設定します。 ほとんどの場合、その値は `"Button"`になります。 その他の有効なボタンの種類の説明については、「 [Button Element](../extensibility/button-element.md)」を参照してください。  
   
 5. ボタンの定義には、 [Strings](../extensibility/strings-element.md) 要素を作成します。この要素には、IDE に表示されるメニューの名前を格納する [ButtonText](../extensibility/buttontext-element.md) 要素と、 [[コマンド]](../extensibility/commandname-element.md) ウィンドウのメニューにアクセスするときに使用されるコマンドの名前を格納する **CommandName** 要素を含めます。  
   
@@ -90,7 +90,7 @@ ms.locfileid: "58976958"
   
     これは、設計に応じて次の 2 つの方法のいずれかで行うことができます。  
   
-   -   `Button` 要素に、 [Parent](../extensibility/parent-element.md) 要素を作成し、その要素の `guid` フィールドと `id` フィールドにコマンドをホストするグループ ( *プライマリ親グループ*とも呼ばれます) の Guid と ID を設定します。  
+   - `Button` 要素に、 [Parent](../extensibility/parent-element.md) 要素を作成し、その要素の `guid` フィールドと `id` フィールドにコマンドをホストするグループ ( *プライマリ親グループ*とも呼ばれます) の Guid と ID を設定します。  
   
         次の例では、ユーザー定義メニューに表示されるコマンドを定義しています。  
   
@@ -105,7 +105,7 @@ ms.locfileid: "58976958"
        </Button>
        ```
       
-   -   コマンド配置を使用してコマンドを配置する場合には、 `Parent` 要素を省略することもできます。 次の例に示すように、 [セクションの前に](../extensibility/commandplacements-element.md) CommandPlacements `Symbols` 要素を作成し、コマンドの [と](../extensibility/commandplacement-element.md) を持つ `guid` CommandPlacement `id` 要素、 `priority`、および親を追加します。  
+   - コマンド配置を使用してコマンドを配置する場合には、 `Parent` 要素を省略することもできます。 次の例に示すように、 [セクションの前に](../extensibility/commandplacements-element.md) CommandPlacements `Symbols` 要素を作成し、コマンドの [と](../extensibility/commandplacement-element.md) を持つ `guid` CommandPlacement `id` 要素、 `priority`、および親を追加します。  
   
    ```xml
    <CommandPlacements>
@@ -126,11 +126,11 @@ ms.locfileid: "58976958"
   
  コマンド処理のために直接 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> インターフェイスを使用するコードの場合、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> インターフェイスとそのメソッドを実装する必要があります。 2 つの最も重要なメソッドが <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> と <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>です。  
   
-1.  次の例に示すように、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> インスタンスを取得します。  
+1. 次の例に示すように、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> インスタンスを取得します。  
   
      [!code-csharp[ButtonGroup#21](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#21)]  
   
-2.  次の例に示すように、処理するコマンドの GUID と ID をパラメーターとして持つ <xref:System.ComponentModel.Design.CommandID> オブジェクトを作成します。  
+2. 次の例に示すように、処理するコマンドの GUID と ID をパラメーターとして持つ <xref:System.ComponentModel.Design.CommandID> オブジェクトを作成します。  
   
      [!code-csharp[ButtonGroup#22](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#22)]  
   
@@ -138,7 +138,7 @@ ms.locfileid: "58976958"
   
      また、GUID の生の文字列値と ID の整数値を使用して、 <xref:System.ComponentModel.Design.CommandID> オブジェクトを設定することもできます。  
   
-3.  次の例に示すように、 <xref:System.ComponentModel.Design.MenuCommand> と共にコマンドを処理するメソッドを指定する <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> オブジェクトまたは <xref:System.ComponentModel.Design.CommandID>オブジェクトをインスタンス化します。  
+3. 次の例に示すように、 <xref:System.ComponentModel.Design.MenuCommand> と共にコマンドを処理するメソッドを指定する <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> オブジェクトまたは <xref:System.ComponentModel.Design.CommandID>オブジェクトをインスタンス化します。  
   
      [!code-csharp[ButtonGroup#23](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#23)]  
   
@@ -146,7 +146,7 @@ ms.locfileid: "58976958"
   
      パッケージ テンプレートで作成したコマンドは、既定ではパッケージ クラスの <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> メソッドの `Initialize()` オブジェクトに渡されます。  
   
-4.  <xref:System.ComponentModel.Design.MenuCommand> は、静的コマンドに適しています。 動的メニュー項目を表示するには、QueryStatus イベント ハンドラーが必要です。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> は、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> イベント (コマンドのホスト メニューを開くと発生します) と、その他のプロパティ ( <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>など) を追加します。  
+4. <xref:System.ComponentModel.Design.MenuCommand> は、静的コマンドに適しています。 動的メニュー項目を表示するには、QueryStatus イベント ハンドラーが必要です。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> は、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> イベント (コマンドのホスト メニューを開くと発生します) と、その他のプロパティ ( <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>など) を追加します。  
   
      パッケージ テンプレートで作成したコマンドは、既定ではパッケージ クラスの <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> メソッドの `Initialize()` オブジェクトに渡されます。 Visual Studio ウィザードは、 `Initialize` を使用して `MenuCommand`メソッドを実装します。 動的メニュー項目を表示するには、次の手順に示すように、これを `OleMenuCommand`に変更する必要があります。 さらに、メニュー項目のテキストを変更するには、次の例に示すように、.vsct ファイルでメニュー コマンド ボタンに TextChanges コマンド フラグを追加する必要があります。  
   
@@ -162,11 +162,11 @@ ms.locfileid: "58976958"
     </Button>
     ```
       
-5.  この新しいメニュー コマンドを <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> インターフェイスの <xref:System.ComponentModel.Design.IMenuCommandService> メソッドに渡します。 これは、次の例に示すように、既定ではパッケージ テンプレートで作成したコマンドに対して行われます。  
+5. この新しいメニュー コマンドを <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> インターフェイスの <xref:System.ComponentModel.Design.IMenuCommandService> メソッドに渡します。 これは、次の例に示すように、既定ではパッケージ テンプレートで作成したコマンドに対して行われます。  
   
      [!code-csharp[ButtonGroup#24](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#24)]  
   
-6.  コマンドを処理するメソッドを実装します。  
+6. コマンドを処理するメソッドを実装します。  
   
 #### <a name="to-implement-querystatus"></a>QueryStatus を実装するには  
   
@@ -245,11 +245,11 @@ ms.locfileid: "58976958"
   
 ##### <a name="to-implement-the-exec-method"></a>Exec メソッドを実装するには  
   
--   コマンド `GUID` が不明である場合は、 `OLECMDERR_E_UNKNOWNGROUP`を返します。  
+- コマンド `GUID` が不明である場合は、 `OLECMDERR_E_UNKNOWNGROUP`を返します。  
   
--   `GUID` は既知であるものの、コマンド ID が不明である場合は、 `OLECMDERR_E_NOTSUPPORTED`を返します。  
+- `GUID` は既知であるものの、コマンド ID が不明である場合は、 `OLECMDERR_E_NOTSUPPORTED`を返します。  
   
--   `GUID` とコマンド ID が .vsct ファイル内のコマンドで使用される GUID:ID のペアと一致する場合は、コマンドに関連付けられているコードを実行し、 <xref:Microsoft.VisualStudio.VSConstants.S_OK>を返します。  
+- `GUID` とコマンド ID が .vsct ファイル内のコマンドで使用される GUID:ID のペアと一致する場合は、コマンドに関連付けられているコードを実行し、 <xref:Microsoft.VisualStudio.VSConstants.S_OK>を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [VSCT XML スキーマ リファレンス](../extensibility/vsct-xml-schema-reference.md)   

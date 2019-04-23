@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973868"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668354"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>方法: エンティティ クラスに検証を追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 エンティティ クラスの "*検証*" とは、データ オブジェクトに入力された値が、アプリケーションに対して設定された規則に従っていること、およびオブジェクトのスキーマ内の制約に従っていることを確認するプロセスです。 基になるデータベースに更新を送信する前にデータを検証すると、エラーを減らすことができます。 アプリケーションとデータベースの間で生じる可能性のあるラウンド トリップの回数も減ります。  
   
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)挿入、更新、中に実行し、完全なエンティティとも中と後の個々 の列を削除します。 デザイナーで生成されたコードを拡張するユーザーを有効にする部分メソッドを提供します。変更します。  
@@ -110,7 +109,7 @@ ms.locfileid: "58973868"
   
       C# プロジェクトの場合は、次の操作を行います。  
   
-   5. 部分を作成する IntelliSense を使用して C# プロジェクトは、イベント ハンドラーが自動的に生成しないため、 `Update` *CLASSNAME*メソッド。  
+   5. 部分を作成する IntelliSense を使用して c# プロジェクトは、イベント ハンドラーが自動的に生成しないため、 `Update` *CLASSNAME*メソッド。  
   
    6. 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加するクラスの更新メソッドをクリックします。 次のコードを選択するときに生成されるコードのような`Update` *CLASSNAME*部分メソッド。  
   

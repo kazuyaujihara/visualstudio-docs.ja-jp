@@ -13,14 +13,14 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b2261641f1883830e60785dda1460f0f4202f21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e9c8f14fbec74b353550a1420a5ff3e119d6dce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783535"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117435"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>チュートリアル: サンプリングを使ったコマンド ライン プロファイリング
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>チュートリアル: コマンドラインのサンプリングを使用したプロファイリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、コマンド ライン ツールを使用したアプリケーションのプロファイリング方法と、パフォーマンス上の問題をサンプリングによって特定する方法について説明します。  
@@ -29,21 +29,21 @@ ms.locfileid: "54783535"
   
  このチュートリアルでは、次の手順を行います。  
   
--   コマンド ライン ツールとサンプリングを使用してアプリケーションのプロファイリングを行います。  
+- コマンド ライン ツールとサンプリングを使用してアプリケーションのプロファイリングを行います。  
   
--   サンプリングしたプロファイリング結果を分析して、パフォーマンス上の問題を特定および修正します。  
+- サンプリングしたプロファイリング結果を分析して、パフォーマンス上の問題を特定および修正します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
   
--   [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、または [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、または [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
--   [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)] についての中級レベルの知識  
+- [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)] についての中級レベルの知識  
   
--   コマンド ライン ツールの操作についての中級レベルの知識  
+- コマンド ライン ツールの操作についての中級レベルの知識  
   
--   [PeopleTrax サンプル](../profiling/peopletrax-sample-profiling-tools.md)のコピー  
+- [PeopleTrax サンプル](../profiling/peopletrax-sample-profiling-tools.md)のコピー  
   
--   プロファイリングによって得られた情報を操作するには、デバッグ シンボル情報を使用できるようにしておくことをお勧めします。  
+- プロファイリングによって得られた情報を操作するには、デバッグ シンボル情報を使用できるようにしておくことをお勧めします。  
   
 ## <a name="command-line-profiling-using-the-sampling-method"></a>サンプリング メソッドを使用したコマンド ライン プロファイリング  
  サンプリングとは 1 つのプロファイリング方式で、対象のプロセスを定期的にポーリングしてアクティブな関数を識別します。 結果のデータからは、プロセスがサンプリングされたときに対象の関数が呼び出し履歴の一番上に配置されていた回数がわかります。  
@@ -53,19 +53,19 @@ ms.locfileid: "54783535"
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>サンプリング メソッドを使用して PeopleTrax アプリケーションのプロファイリングを行うには  
   
-1.  PeopleTrax サンプル アプリケーションをインストールして、リリース バージョンをビルドします。  
+1. PeopleTrax サンプル アプリケーションをインストールして、リリース バージョンをビルドします。  
   
-2.  コマンド プロンプト ウィンドウを開いて、ローカル パス環境変数にプロファイリング ツール ディレクトリを追加します。  
+2. コマンド プロンプト ウィンドウを開いて、ローカル パス環境変数にプロファイリング ツール ディレクトリを追加します。  
   
-3.  作業ディレクトリを PeopleTrax バイナリを含むディレクトリに変更します。  
+3. 作業ディレクトリを PeopleTrax バイナリを含むディレクトリに変更します。  
   
-4.  次のコマンドを入力し、適切な環境変数を設定します。  
+4. 次のコマンドを入力し、適切な環境変数を設定します。  
   
     ```  
     VSPerfCLREnv /sampleon  
     ```  
   
-5.  VSPerfCmd.exe (プロファイラーを制御するコマンド ライン ツール) を実行してプロファイリングを開始します。 次のコマンドにより、アプリケーションとプロファイラーがサンプリング モードで起動します。  
+5. VSPerfCmd.exe (プロファイラーを制御するコマンド ライン ツール) を実行してプロファイリングを開始します。 次のコマンドにより、アプリケーションとプロファイラーがサンプリング モードで起動します。  
   
     ```  
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe  
@@ -73,13 +73,13 @@ ms.locfileid: "54783535"
   
      プロファイラーのプロセスが開始され、PeopleTrax.exe のプロセスにアタッチされます。 プロファイラーのプロセスにより、収集したプロファイリング データのレポート ファイルへの出力が開始されます。  
   
-6.  **[Get People]** をクリックします。  
+6. **[Get People]** をクリックします。  
   
-7.  **[ExportData]** をクリックします。  
+7. **[ExportData]** をクリックします。  
   
      メモ帳が開かれ、**PeopleTrax** からエクスポートされたデータを含む新しいファイルが表示されます。  
   
-8.  メモ帳を閉じてから、**PeopleTrax** アプリケーションを閉じます。  
+8. メモ帳を閉じてから、**PeopleTrax** アプリケーションを閉じます。  
   
 9. プロファイラーをシャットダウンします。 次のコマンドを入力します。  
   
@@ -95,11 +95,11 @@ ms.locfileid: "54783535"
   
 11. プロファイリング データは .vsp ファイルに格納されます。次のいずれかの方法により結果を分析します。  
   
-    -   Visual Studio IDE で .vsp ファイルを開きます。  
+    - Visual Studio IDE で .vsp ファイルを開きます。  
   
          または  
   
-    -   コマンド ライン ツール VSPerfReport.exe を使用してコンマ区切り値 (csv) ファイルを生成します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 以外で使用するレポートを生成するには、次のコマンドを使用します。  
+    - コマンド ライン ツール VSPerfReport.exe を使用してコンマ区切り値 (csv) ファイルを生成します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 以外で使用するレポートを生成するには、次のコマンドを使用します。  
   
         ```  
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all  

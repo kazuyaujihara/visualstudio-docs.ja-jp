@@ -11,12 +11,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 714e4a24ae6dc2c345b97bbd6e080b0c987f65f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6cef18951a6ac5494f74c150c4251bafd9597686
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117942"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>従来の言語サービスでのナビゲーション バーのサポート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58975162"
  カレットを移動すると、<xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A>メソッド。 基本<xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>のナビゲーション バーの状態を更新するクラス。 セットを渡す<xref:Microsoft.VisualStudio.Package.DropDownMember>このメソッドにオブジェクト。 各オブジェクトは、ドロップダウン リスト内のエントリを表します。  
   
 ## <a name="the-contents-of-the-navigation-bar"></a>ナビゲーション バーの内容  
- ナビゲーション バーの種類の一覧とメンバーの一覧が通常含まれています。 種類の一覧には、現在のソース ファイル内のすべての種類が含まれています。 型名には、完全な名前空間情報が含まれます。 2 種類の C# コードの例を次に示します。  
+ ナビゲーション バーの種類の一覧とメンバーの一覧が通常含まれています。 種類の一覧には、現在のソース ファイル内のすべての種類が含まれています。 型名には、完全な名前空間情報が含まれます。 2 種類の c# コードの例を次に示します。  
   
 ```csharp  
 namespace TestLanguagePackage  
@@ -70,24 +70,24 @@ namespace TestLanguagePackage
   
   実装、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>メソッドは通常、次の手順を実行します。  
   
-1.  ソース ファイルの現在の宣言の一覧を取得します。  
+1. ソース ファイルの現在の宣言の一覧を取得します。  
   
      リストを設定する方法を数多くあります。 1 つの方法は、のバージョンでカスタム メソッドを作成する、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスを呼び出す、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>カスタム解析理由は、すべての宣言の一覧を返すメソッド。 呼び出す別の方法があります、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドから直接、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>理由は、カスタムな parse メソッド。 3 番目のアプローチがキャッシュ内の宣言することがあります、<xref:Microsoft.VisualStudio.Package.AuthoringScope>クラスの最後の完全な解析操作によって返される、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスを取得する、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>メソッド。  
   
-2.  設定または型の一覧を更新します。  
+2. 設定または型の一覧を更新します。  
   
      種類の一覧の内容は、ソースが変更されたとき、または現在のカレット位置に基づく種類のテキストのスタイルを変更することを選択した場合に更新することがあります。 注この位置に渡される、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>メソッド。  
   
-3.  現在のカレット位置に基づく種類の一覧から選択する種類を決定します。  
+3. 現在のカレット位置に基づく種類の一覧から選択する種類を決定します。  
   
      現在のカレット位置を囲む型を検索する、手順 1 で取得した宣言を検索し、型の一覧にそのインデックスを判断するには、その型の種類の一覧を検索できます。  
   
-4.  入力または選択した型に基づくメンバーの一覧を更新します。  
+4. 入力または選択した型に基づくメンバーの一覧を更新します。  
   
      メンバー リストの反映に現在表示されて、**メンバー**ドロップダウンします。 メンバーの一覧の内容は、ソースが変更された場合、または、選択した型のメンバーだけを表示して、選択した型が変更された場合に更新する必要があります。 ソース ファイル内のすべてのメンバーを表示する場合は、一覧内の各メンバーのテキスト スタイルを現在選択されている型が変更された場合に更新する必要があります。  
   
-5.  現在のカレット位置に基づいてメンバーの一覧から選択するメンバーを決定します。  
+5. 現在のカレット位置に基づいてメンバーの一覧から選択するメンバーを決定します。  
   
      現在のカレット位置を含むメンバーを手順 1. で取得した宣言を検索し、メンバーの一覧にそのインデックスを判断するには、そのメンバーのメンバーの一覧を検索します。  
   
-6.  返す`true`リスト、またはいずれかの一覧の選択項目への変更を加えた場合。
+6. 返す`true`リスト、またはいずれかの一覧の選択項目への変更を加えた場合。

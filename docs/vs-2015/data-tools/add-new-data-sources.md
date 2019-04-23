@@ -19,28 +19,27 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963906"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102759"
 ---
 # <a name="add-new-data-sources"></a>新しいデータ ソースの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio での .NET データ ツールのコンテキストでは、用語*データ ソース*データ ストアに接続し、.NET アプリケーションにデータを公開する .NET オブジェクトを参照します。 Visual Studio のデザイナーにドラッグしてからデータベース オブジェクトを削除すると、フォームにデータをバインドする定型コードを生成するデータ ソースの出力を使用できる、**データソース**ウィンドウ。 この種類のデータ ソースを指定できます。  
   
--   いくつかの種類のデータベースに関連付けられている Entity Framework モデル内のクラス。  
+- いくつかの種類のデータベースに関連付けられている Entity Framework モデル内のクラス。  
   
--   いくつかの種類のデータベースに関連付けられているデータセットです。  
+- いくつかの種類のデータベースに関連付けられているデータセットです。  
   
--   Windows Communication Foundation (WCF) のデータ サービス、または REST サービスなどのネットワーク サービスを表すクラス。  
+- Windows Communication Foundation (WCF) のデータ サービス、または REST サービスなどのネットワーク サービスを表すクラス。  
   
--   SharePoint サービスを表すクラス。  
+- SharePoint サービスを表すクラス。  
   
--   クラスまたはソリューション内のコレクション。  
+- クラスまたはソリューション内のコレクション。  
   
 > [!NOTE]
 >  データ バインド機能を使用していない場合のデータセットや Entity Framework、LINQ to SQL、WCF では、SharePoint、"data source"の概念は適用されません。 SQLCommand オブジェクトを使用して、データベースに直接接続して、データベースと直接通信だけです。  
@@ -78,11 +77,11 @@ Visual Studio での .NET データ ツールのコンテキストでは、用�
   
  次の種類のサービスからデータ ソースを作成できます。  
   
--   WCF Data Services。 詳細については、次を参照してください。[概要](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)します。  
+- WCF Data Services。 詳細については、次を参照してください。[概要](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)します。  
   
--   WCF data services。 詳細については、次を参照してください。 [Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)します。  
+- WCF data services。 詳細については、次を参照してください。 [Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)します。  
   
--   Web サービス  
+- Web サービス  
   
     > [!NOTE]
     >  表示される項目、**データソース**ウィンドウは、サービスが返すデータに依存します。 サービスによっては、**データ ソース構成ウィザード**でバインドできるオブジェクトを作成するための十分な情報を提供しないものもあります。 などの場合は、サービスは、型指定されていないデータセットを返します、項目は表示されません、**データソース**ウィンドウ、ウィザードを完了するとします。 これは、型指定されていないデータセットからはスキーマが提供されず、したがってウィザードでデータ ソースを作成するための十分な情報が得られないためです。  

@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f0db19d3dfb92658f2aa15e457659b5d4d34ec3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105429"
 ---
 # <a name="cores-view-zoom-tool"></a>コア ビューのズーム ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "54801454"
   
 ## <a name="other-ways-to-zoom"></a>その他のズーム方法  
   
--   拡大: ドラッグでタイムライン ビュー内の領域を選択します。 マウス ボタンを離すと、タイムライン ビューの選択した範囲が拡大されます。  
+- 拡大:ドラッグでタイムライン ビュー内の領域を選択します。 マウス ボタンを離すと、タイムライン ビューの選択した範囲が拡大されます。  
   
--   拡大と縮小: タイムラインの上にマウス ポインターを置き、CTRL を押しながらマウス ホイールを動かします。  
+- 拡大と縮小:タイムラインを合わせるし、ctrl キーを押しながらマウス ホイールを動かします。  
   
 ## <a name="see-also"></a>関連項目  
  [コア ビュー](../profiling/cores-view.md)

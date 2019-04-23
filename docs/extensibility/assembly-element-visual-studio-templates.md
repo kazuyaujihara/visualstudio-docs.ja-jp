@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9887214edae870ca79796a7a667b15f8536e8bb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5caa0804ae4d90a23ae59195d2e610653437babe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079345"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 要素 (Visual Studio テンプレート)
 そのアセンブリの参照をプロジェクトに追加するテンプレートを使用して、アセンブリに関する情報を指定します。
@@ -52,7 +52,7 @@ ms.locfileid: "56710982"
 
  このテキストは、項目テンプレートがインスタンス化されるときに、プロジェクトに追加するアセンブリを指定します。 このアセンブリの名前は、次の方法のいずれかで指定する必要があります。
 
--   アセンブリの完全名。 例:
+- アセンブリの完全名。 例えば:
 
     ```
     <Assembly>
@@ -60,7 +60,7 @@ ms.locfileid: "56710982"
     </Assembly>
     ```
 
--   単純なテキストの参照。 例:
+- 単純なテキストの参照。 例えば:
 
     ```
     <Assembly> System </Assembly>

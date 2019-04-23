@@ -9,23 +9,21 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115992"
 ---
 # <a name="schema-cache"></a>スキーマ キャッシュ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 XML エディターはスキーマ キャッシュを提供します。このキャッシュは %InstallRoot%\Xml\Schemas ディレクトリに配置されています。 スキーマ キャッシュはコンピューター上のすべてのユーザーに対してグローバルで、IntelliSense と XML ドキュメントの検証に使用される標準的な XML スキーマを格納しています。  
 
  XML エディターは、ソリューション内のスキーマを検索することで指定されたスキーマ、**スキーマ**ドキュメントのフィールド**プロパティ**ウィンドウ、およびスキーマで識別される、`xsi:schemaLocation`と`xsi:noNamespaceSchemaLocation`属性。  
 
  次の表では XML エディターと共にインストールされるスキーマについて説明します。  
-
 
 |     ファイル名      |                                                      説明                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -111,21 +109,21 @@ XML エディターはスキーマ キャッシュを提供します。このキ
 
 #### <a name="to-change-the-schema-cache-location"></a>スキーマ キャッシュの場所を変更するには  
 
-1.  **ツール**メニューの **オプション**します。  
+1. **ツール**メニューの **オプション**します。  
 
-2.  展開**テキスト エディター**、展開**XML**、 をクリックし、 **その他**します。  
+2. 展開**テキスト エディター**、展開**XML**、 をクリックし、 **その他**します。  
 
-3.  をクリックして、**参照**のボタンでは、**スキーマ**フィールド。  
+3. をクリックして、**参照**のボタンでは、**スキーマ**フィールド。  
 
-4.  スキーマ キャッシュのフォルダーを選択し、クリックして**OK**します。  
+4. スキーマ キャッシュのフォルダーを選択し、クリックして**OK**します。  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>よく使用するスキーマが存在するディレクトリを追加するには  
 
-1.  XML エディターのスキーマ キャッシュ ディレクトリにある catalog.xml ファイルを編集します。  
+1. XML エディターのスキーマ キャッシュ ディレクトリにある catalog.xml ファイルを編集します。  
 
-2.  追加するスキーマのディレクトリを指し示す新しい `<Catalog href="…"/>` 要素を追加します。  
+2. 追加するスキーマのディレクトリを指し示す新しい `<Catalog href="…"/>` 要素を追加します。  
 
-3.  変更内容を保存します。  
+3. 変更内容を保存します。  
 
      カタログは自動的に再度読み込まれます。  
 

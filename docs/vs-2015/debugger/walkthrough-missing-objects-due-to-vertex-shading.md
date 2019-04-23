@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977279"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046381"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>チュートリアル: 頂点の網かけによるオブジェクトの不足
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "58977279"
   
  このチュートリアルでは、次の作業について説明します。  
   
--   **[グラフィックス イベント一覧]** を使用して、問題の原因となる可能性がある部分を検索します。  
+- **[グラフィックス イベント一覧]** を使用して、問題の原因となる可能性がある部分を検索します。  
   
--   **[グラフィックス パイプライン ステージ]** ウィンドウを使用して、 `DrawIndexed` Direct3D API 呼び出しの影響を確認します。  
+- **[グラフィックス パイプライン ステージ]** ウィンドウを使用して、 `DrawIndexed` Direct3D API 呼び出しの影響を確認します。  
   
--   **HLSL デバッガー** を使用して、頂点シェーダーを調査します。  
+- **HLSL デバッガー** を使用して、頂点シェーダーを調査します。  
   
--   **[グラフィックス イベント呼び出し履歴]** を使用して、正しくない HLSL 定数の原因を突き止めることができます。  
+- **[グラフィックス イベント呼び出し履歴]** を使用して、正しくない HLSL 定数の原因を突き止めることができます。  
   
 ## <a name="scenario"></a>シナリオ  
  3-D アプリのオブジェクトが欠落する一般的な原因の 1 つは、頂点シェーダーによるオブジェクトの頂点の変換が正しくない方法や予期しない方法で行われることです。たとえば、オブジェクトが非常に小さいサイズに縮小される場合や、オブジェクトがカメラの前面にではなく、背後に表示されるように変換される場合などがあります。  

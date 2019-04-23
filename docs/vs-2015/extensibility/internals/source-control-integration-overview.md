@@ -10,12 +10,12 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 808d7538e8b30e346464cdbeff3b80ae4d387612
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4e2761958cd60721ccf05a14ec54d3e365572ea1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116187"
 ---
 # <a name="source-control-integration-overview"></a>ソース管理の統合の概要
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ ms.locfileid: "58977112"
   
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>欠点は、ソース管理プラグインを実装します。  
   
--   高度な機能は、のユーザーは、特定できるだけ混乱につながる、インターフェイスの 2 つの異なるスタイルを表示可能性があります。  
+- 高度な機能は、のユーザーは、特定できるだけ混乱につながる、インターフェイスの 2 つの異なるスタイルを表示可能性があります。  
   
--   ソース管理プラグインは、ソース管理プラグイン API が含まれるソース コントロールのモデルに限定されます。  
+- ソース管理プラグインは、ソース管理プラグイン API が含まれるソース コントロールのモデルに限定されます。  
   
--   ソース コントロールのプラグイン API は、ソース管理のシナリオはいくつかの制限が多すぎて可能性があります。  
+- ソース コントロールのプラグイン API は、ソース管理のシナリオはいくつかの制限が多すぎて可能性があります。  
   
 ### <a name="advantages-to-implementing-a-source-control-plug-in"></a>ソース管理プラグインを実装する利点  
   
--   Visual Studio では、ソース管理プラグインが可能性のある複雑な UI を実装する必要がないように、すべての基本的なソース管理操作のすべての UI が用意されています。  
+- Visual Studio では、ソース管理プラグインが可能性のある複雑な UI を実装する必要がないように、すべての基本的なソース管理操作のすべての UI が用意されています。  
   
--   ため、厳密な API をソース管理プラグインはより広範な機能を提供する外部のソース管理プログラムと対話簡単にできます。Visual Studio は、すぎるはるかソース管理の機能を実現する方法、ソース管理プラグイン API に従って方法、その場合はそれだけでも気にしません。  
+- ため、厳密な API をソース管理プラグインはより広範な機能を提供する外部のソース管理プログラムと対話簡単にできます。Visual Studio は、すぎるはるかソース管理の機能を実現する方法、ソース管理プラグイン API に従って方法、その場合はそれだけでも気にしません。  
   
--   ソース管理 VSPackage よりプラグイン ソース管理を実装するために簡単です。  
+- ソース管理 VSPackage よりプラグイン ソース管理を実装するために簡単です。  
   
 ## <a name="source-control-vspackage"></a>ソース管理 VSPackage  
  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Visual Studio のソース管理機能を完全に制御し、Visual Studio で提供されるソース制御ユーザー インターフェイスの完全な置き換えを緊密に統合できます。 ソース管理 VSPackage は Visual Studio に登録され、ソース管理機能を提供します。 Visual Studio には、いくつかのソース管理 Vspackage を登録することができますが 1 つだけを有効にする任意の時点。 ソース管理 VSPackage がアクティブな Visual Studio でソース管理機能と外観を完全に制御が。 他のすべてのソース管理システムに登録することがあります Vspackage では、アクティブでないし、UI をまったく表示されません。  
@@ -63,17 +63,17 @@ ms.locfileid: "58977112"
   
 ### <a name="drawbacks-to-implementing-a-source-control-vspackage"></a>ソース管理 VSPackage の実装の欠点  
   
--   VSPackage では、さまざまな Visual Studio と正常に統合する複雑なインターフェイスを実装する必要があります。  
+- VSPackage では、さまざまな Visual Studio と正常に統合する複雑なインターフェイスを実装する必要があります。  
   
--   VSPackage は、ソース管理されているために必要なすべての UI を提供する必要があります。Visual Studio で、この領域についての支援を提供するものはありません。  
+- VSPackage は、ソース管理されているために必要なすべての UI を提供する必要があります。Visual Studio で、この領域についての支援を提供するものはありません。  
   
--   ソース管理 VSPackage は、Visual Studio には密接し、機能は外部のバージョン、ソース管理プログラムのように簡単に共有できないようにスタンドアロンのプログラムで操作できません。  
+- ソース管理 VSPackage は、Visual Studio には密接し、機能は外部のバージョン、ソース管理プログラムのように簡単に共有できないようにスタンドアロンのプログラムで操作できません。  
   
 ### <a name="advantages-to-implementing-a-source-control-vspackage"></a>ソース管理 VSPackage を実装する利点  
   
--   VSPackage はソース管理 UI を完全に制御し、機能があるために、ソース管理のためのシームレスなインターフェイスで、ユーザーが表示されます。  
+- VSPackage はソース管理 UI を完全に制御し、機能があるために、ソース管理のためのシームレスなインターフェイスで、ユーザーが表示されます。  
   
--   VSPackage は、特定のソース コントロールのモデルに限定されていません。  
+- VSPackage は、特定のソース コントロールのモデルに限定されていません。  
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理](../../extensibility/internals/source-control.md)   

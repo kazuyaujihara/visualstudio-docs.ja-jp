@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973719"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054782"
 ---
 # <a name="query-datasets"></a>データセットのクエリ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 データセット内の特定のレコードを検索するに、DataTable の FindBy メソッドを使用して、テーブルの行のコレクションに対する独自の foreach ループを記述または使用[LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)します。 LINQ to DataSet。  
   
 ## <a name="dataset-case-sensitivity"></a>データセットの大文字と小文字の区別  
@@ -34,7 +33,7 @@ ms.locfileid: "58973719"
   
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>主キー値で指定されたデータセットの行を検索するには  
   
--   1 行を検索するには、厳密に型指定された呼び出し`FindBy`テーブルの主キーを使用するメソッド。  
+- 1 行を検索するには、厳密に型指定された呼び出し`FindBy`テーブルの主キーを使用するメソッド。  
   
      次の例では、`CustomerID`列が主キーの`Customers`テーブル。 これにより、生成された`FindBy`メソッドは`FindByCustomerID`します。 例では、特定の割り当て方法を示しています<xref:System.Data.DataRow>、生成されたを使用して変数に`FindBy`メソッド。  
   
@@ -43,7 +42,7 @@ ms.locfileid: "58973719"
   
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>主キー値で、型指定されていないデータセットの行を検索するには  
   
--   呼び出す、<xref:System.Data.DataRowCollection.Find%2A>のメソッド、<xref:System.Data.DataRowCollection>コレクション、主キーのパラメーターとして渡します。  
+- 呼び出す、<xref:System.Data.DataRowCollection.Find%2A>のメソッド、<xref:System.Data.DataRowCollection>コレクション、主キーのパラメーターとして渡します。  
   
      次の例と呼ばれる新しい行を宣言する方法を示しています。`foundRow`の戻り値を割り当てると、<xref:System.Data.DataRowCollection.Find%2A>メソッド。 主キーが見つかった場合は、メッセージ ボックスに列のインデックス 1 の内容が表示されます。  
   
@@ -54,7 +53,7 @@ ms.locfileid: "58973719"
   
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>任意の列の値に基づいて行を検索するには  
   
--   データ テーブルを作成、<xref:System.Data.DataTable.Select%2A>の配列を返すメソッド<xref:System.Data.DataRow>に渡された式に基づく s、<xref:System.Data.DataTable.Select%2A>メソッド。 有効な式を作成する方法の詳細については、ページの「式の構文」セクションを参照してください。、<xref:System.Data.DataColumn.Expression%2A>プロパティ。  
+- データ テーブルを作成、<xref:System.Data.DataTable.Select%2A>の配列を返すメソッド<xref:System.Data.DataRow>に渡された式に基づく s、<xref:System.Data.DataTable.Select%2A>メソッド。 有効な式を作成する方法の詳細については、ページの「式の構文」セクションを参照してください。、<xref:System.Data.DataColumn.Expression%2A>プロパティ。  
   
      次の例は、使用する方法を示します、<xref:System.Data.DataTable.Select%2A>のメソッド、<xref:System.Data.DataTable>特定の行を検索します。  
   
@@ -83,14 +82,14 @@ ms.locfileid: "58973719"
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>選択した親レコードのレコードの子を取得するには  
   
--   呼び出す、<xref:System.Data.DataRow.GetChildRows%2A>メソッドは、特定の`Customers`データ行し、からの行の配列を返す、`Orders`テーブル。  
+- 呼び出す、<xref:System.Data.DataRow.GetChildRows%2A>メソッドは、特定の`Customers`データ行し、からの行の配列を返す、`Orders`テーブル。  
   
      [!code-csharp[VbRaddataDatasets#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#6)]
      [!code-vb[VbRaddataDatasets#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#6)]  
   
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>選択されている子レコードの親レコードを取得するには  
   
--   呼び出す、<xref:System.Data.DataRow.GetParentRow%2A>メソッドは、特定の`Orders`データ行、および戻り値の 1 つの行、`Customers`テーブル。  
+- 呼び出す、<xref:System.Data.DataRow.GetParentRow%2A>メソッドは、特定の`Orders`データ行、および戻り値の 1 つの行、`Customers`テーブル。  
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]

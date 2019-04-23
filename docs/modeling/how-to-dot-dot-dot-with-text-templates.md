@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82309eb9288dffb1fca0a3917b764ffb9040ab9d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937182"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095933"
 ---
 # <a name="how-to--with-text-templates"></a>テキスト テンプレートでどうやって ... をする
 Visual Studio のテキスト テンプレートは、あらゆる種類のテキストを生成するのに便利な方法を提供します。 テキスト テンプレートを使用すると、アプリケーションの一部として実行時にテキストを生成したり、デザイン時にプロジェクト コードの一部を生成することができます。 このトピックでは、「どうやって ... をするか？」として最も頻繁に寄せられる質問をまとめています。 質問します。
@@ -26,21 +26,21 @@ Visual Studio のテキスト テンプレートは、あらゆる種類のテ�
 ### <a name="generate-part-of-my-application-code"></a>アプリケーション コードの一部を生成
  ファイルまたはデータベースにコンフィグレーションまたは*モデル*があります。 コードの 1 つ以上の部分が、そのモデルに依存しています。
 
--   テキスト テンプレートから、コード ファイルの一部を生成します。 詳細については、[T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)と[テンプレートの作成を開始する最善の方法は何ですか?](#starting)を参照してください。
+- テキスト テンプレートから、コード ファイルの一部を生成します。 詳細については、[T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)と[テンプレートの作成を開始する最善の方法は何ですか?](#starting)を参照してください。
 
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>テンプレートにデータを渡して、実行時にファイルを生成する
  実行時に、アプリケーションは、標準のテキストとデータの組み合わせを含むレポートなどのテキスト ファイルを生成します。 何百もの `write` ステートメントを書くことを回避したいです。
 
--   ランタイム テキスト テンプレートをプロジェクトに追加します。 このテンプレートは、あなたのコードでインスタンス化しテキストを生成することができるクラスを作成します。 データは、コンストラクターのパラメーターから渡すことができます。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
+- ランタイム テキスト テンプレートをプロジェクトに追加します。 このテンプレートは、あなたのコードでインスタンス化しテキストを生成することができるクラスを作成します。 データは、コンストラクターのパラメーターから渡すことができます。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
--   実行時にのみ使用可能なテンプレートを生成する場合は、標準のテキスト テンプレートを使用できます。 Visual Studio 拡張機能を作成する場合は、テキスト テンプレート サービスを呼び出すことができます。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md) 他のコンテキストで、テキスト テンプレート エンジンを使用することができます。 詳細については、「 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 」を参照してください。
+- 実行時にのみ使用可能なテンプレートを生成する場合は、標準のテキスト テンプレートを使用できます。 Visual Studio 拡張機能を作成する場合は、テキスト テンプレート サービスを呼び出すことができます。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md) 他のコンテキストで、テキスト テンプレート エンジンを使用することができます。 詳細については、「 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 」を参照してください。
 
      パラメーターをこれらのテンプレートに渡すには \<#@parameter#> ディレクティブを使用します。 詳細については、次を参照してください。 [T4 パラメーター ディレクティブ](../modeling/t4-parameter-directive.md)
 
 ### <a name="read-another-project-file-from-a-template"></a>テンプレートから別のプロジェクト ファイルを読み取る
  テンプレートと同じ Visual Studio プロジェクトからのファイルを読み取るには次のようにします。
 
--   `hostSpecific="true"` ディレクティブに `<#@template#>` を挿入します。
+- `hostSpecific="true"` ディレクティブに `<#@template#>` を挿入します。
 
      コードで、ファイルの完全なパスを取得するために、`this.Host.ResolvePath(filename)` を使用します。
 
@@ -66,11 +66,11 @@ Visual Studio のテキスト テンプレートは、あらゆる種類のテ�
 ### <a name="generate-many-files-from-one-model-schema"></a>1 つのモデル スキーマからの多数のファイル生成
  同じXMLまたはデータベース スキーマを持つモデルからファイルをしばしば生成する場合:
 
--   ディレクティブ プロセッサを記述することを検討します。 これにより、アセンブリの複数のステートメントを置換して、単一のカスタム ディレクティブを持つ各テンプレート内でステートメントをインポートすることができます。 ディレクティブ プロセッサはモデル ファイルを読み込み、解析できます。 詳細については、次を参照してください。[カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成](../modeling/creating-custom-t4-text-template-directive-processors.md)
+- ディレクティブ プロセッサを記述することを検討します。 これにより、アセンブリの複数のステートメントを置換して、単一のカスタム ディレクティブを持つ各テンプレート内でステートメントをインポートすることができます。 ディレクティブ プロセッサはモデル ファイルを読み込み、解析できます。 詳細については、次を参照してください。[カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成](../modeling/creating-custom-t4-text-template-directive-processors.md)
 
 ### <a name="generate-files-from-a-complex-model"></a>複雑なモデルからファイルを生成する
 
--   ドメイン固有言語 (DSL) を表すモデルを作成することを検討してください。 これによって、モデル内の要素の名前を反映した型とプロパティを使用するため、テンプレートの記述が簡単になります。 ファイルを解析したり、XML ノードを巡回したりする必要はありません。 例:
+- ドメイン固有言語 (DSL) を表すモデルを作成することを検討してください。 これによって、モデル内の要素の名前を反映した型とプロパティを使用するため、テンプレートの記述が簡単になります。 ファイルを解析したり、XML ノードを巡回したりする必要はありません。 例えば:
 
      `foreach (Book book in this.Library) { ... }`
 
@@ -93,21 +93,21 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ### <a name="execute-text-templates-in-the-build-process"></a>ビルド プロセスでのテキスト テンプレートの実行
 
--   詳細については、次を参照してください。[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md) 
+- 詳細については、次を参照してください。[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md) 
 
 ## <a name="more-general-questions"></a>一般的な質問
 
 ### <a name="starting"></a>テキスト テンプレートの作成を開始する最善の方法は何ですか?
 
-1.  生成されたファイルの具体的な例を記述します。
+1. 生成されたファイルの具体的な例を記述します。
 
-2.  `<#@template #>` ディレクティブを挿入することで、テキスト テンプレートに変えます。ディレクティブとコードは、入力ファイルまたはモデルを読み込むために必要です。
+2. `<#@template #>` ディレクティブを挿入することで、テキスト テンプレートに変えます。ディレクティブとコードは、入力ファイルまたはモデルを読み込むために必要です。
 
-3.  段階的に、ファイルの一部を式とコード ブロックに置き換えます。
+3. 段階的に、ファイルの一部を式とコード ブロックに置き換えます。
 
 ### <a name="what-is-a-model"></a>「モデル」とは何ですか?
 
--   テンプレートによって読み取られる入力です。 ファイルまたはデータベースが考えられます。 XML、Visio 図面、ドメイン固有言語 (DSL)、UML モデルのいずれか、またはプレーン テキストである可能性があります。 これは、いくつかのファイルにまたがることがあります。 通常は、複数のテンプレートが、1 つのモデルを読み取ります。
+- テンプレートによって読み取られる入力です。 ファイルまたはデータベースが考えられます。 XML、Visio 図面、ドメイン固有言語 (DSL)、UML モデルのいずれか、またはプレーン テキストである可能性があります。 これは、いくつかのファイルにまたがることがあります。 通常は、複数のテンプレートが、1 つのモデルを読み取ります。
 
      「モデル」という用語の意味は、プログラム コードやその他のファイルの生成というよりも、ビジネスの側面をより直接的に表現しています。 たとえば、生成されたソフトウェアが監督する通信ネットワークの計画を表しているかもしれません。
 
@@ -118,8 +118,8 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ### <a name="what-best-practices-are-there-for-text-templates"></a>テキスト テンプレートには、どのような「ベスト プラクティス」がありますか?
 
--   詳細については、[T4 テキスト テンプレートの記述に関するガイドライン](../modeling/guidelines-for-writing-t4-text-templates.md)を参照してください。
+- 詳細については、次を参照してください。 [T4 テキスト テンプレートの記述に関するガイドライン](../modeling/guidelines-for-writing-t4-text-templates.md)します。
 
 ### <a name="what-is-t4"></a>"T4"とは何ですか?
 
--   ここで説明されている Visual Studio のテキスト テンプレート機能の別の名前です。 公開されていない以前のバージョンでは、「Text Template Transformation」の省略形でした。
+- ここで説明されている Visual Studio のテキスト テンプレート機能の別の名前です。 公開されていない以前のバージョンでは、「Text Template Transformation」の省略形でした。

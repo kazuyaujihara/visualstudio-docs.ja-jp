@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7be75a00925fbd3220934d50432f625c66fee9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723501"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667456"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials for Visual Studio
 ## <a name="best-practices"></a>ベスト プラクティス
@@ -30,7 +30,7 @@ ms.locfileid: "56723501"
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2.フォントと色の環境のサービスを使用します。
 
--   UI は現在を尊重する必要があります[環境フォント](fonts-and-formatting-for-visual-studio.md)オプション ダイアログ ボックスで [フォントおよび色] ページでカスタマイズには、公開される場合を除きを設定します。
+-   UI は現在を尊重する必要があります[環境フォント](fonts-and-formatting-for-visual-studio.md)オプション] ダイアログ ボックスで [フォントおよび色] ページでカスタマイズには、公開される場合を除きを設定します。
 
 -   UI 要素を使用する必要があります、 [VSColor Service](colors-and-styling-for-visual-studio.md)環境のトークンまたは機能固有のトークンを使用して共有します。
 
@@ -102,7 +102,6 @@ ms.locfileid: "56723501"
 
 #### <a name="example-video-links-in-team-explorer"></a>例: チーム エクスプ ローラーでリンクされたビデオ
 Visual Studio 内でのアンチ パターンは、UI を破棄する前に説明文を読み取るユーザーを強制します。 正しくデザインされた、ビデオのリンクをクリックして、ポインターを合わせると追加情報を含むヒントを表示する必要があります、"&times;"さらに操作を必要としないメッセージを無視する必要があります。
-
 
  ![説明のテキストを反&#45;パターン&#45;が正しくない](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />ビデオの正しくないリンク パターン
 

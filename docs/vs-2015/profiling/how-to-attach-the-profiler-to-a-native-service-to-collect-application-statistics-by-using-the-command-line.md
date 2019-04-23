@@ -9,14 +9,14 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6382d4e674640426d2676531f06dc720b3c7eb4b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 214a7fc8144d50dac52a5be1b45d9d5fc2b4a633
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078604"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーをネイティブ サービスにアタッチし、アプリケーションの統計情報を収集する
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>方法: コマンドラインを使用してアプリケーションの統計情報を収集するネイティブ サービスに、Profiler をアタッチします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、プロファイラーをネイティブ サービスにアタッチし、サンプリング メソッドによってパフォーマンスに関する統計情報を収集する方法について説明します。  
@@ -61,7 +61,6 @@ ms.locfileid: "54793162"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                           **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 ミリ秒です。                                                                            |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                              プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.etl) ファイルに収集されます。                                                                              |
 
-
 4. プロファイラーをサービスにアタッチします。 型:  
 
     **VSPerfCmd /attach:** `PID` [`Sample Event`]  
@@ -82,7 +81,7 @@ ms.locfileid: "54793162"
 
 #### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには  
 
--   次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
+- 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
 
     |オプション|説明|  
     |------------|-----------------|  
@@ -95,15 +94,15 @@ ms.locfileid: "54793162"
 
 #### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには  
 
-1.  対象アプリケーションからプロファイラーをデタッチするには、次のいずれかの操作を行います。  
+1. 対象アプリケーションからプロファイラーをデタッチするには、次のいずれかの操作を行います。  
 
-    -   サービスを停止します。  
+    - サービスを停止します。  
 
          - または -  
 
-    -   **VSPerfCmd /detach** と入力します  
+    - **VSPerfCmd /detach** と入力します  
 
-2.  プロファイラーをシャットダウンします。 型:  
+2. プロファイラーをシャットダウンします。 型:  
 
      **VSPerfCmd /shutdown**  
 

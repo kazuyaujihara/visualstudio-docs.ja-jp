@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba40e16f70451a288a17c138bdfa3b2070d56122
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5bfcb10bdbbfcb8e4b98f8d90d6652832059107d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108218"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>ETW (Event Tracing for Windows) レポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Windows イベント トレーシング (ETW) レポートには、[!INCLUDE[vsp
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] インターフェイスでは ETW レポートを表示できません。  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] インターフェイスのプロファイル ツールを利用して ETW データを収集する方法については、「[方法: ETW (Event Tracing for Windows) データを収集する](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)」を参照してください。  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] インターフェイスのプロファイル ツールを利用して ETW データを収集する方法については、「[方法:Event Tracing for Windows (ETW) のデータ収集](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)します。  
   
--   [VSPerfCmd](../profiling/vsperfcmd.md) コマンド ライン ツールを利用して ETW データを収集する方法については、「[Events](../profiling/events-vsperfcmd.md)」を参照してください。  
+- [VSPerfCmd](../profiling/vsperfcmd.md) コマンド ライン ツールを利用して ETW データを収集する方法については、「[Events](../profiling/events-vsperfcmd.md)」を参照してください。  
   
--   ETW レポートは **VSReport/Summary:ETW** コマンドを利用して生成します。 詳細については、「[VSPerfReport](../profiling/vsperfreport.md)」を参照してください。  
+- ETW レポートは **VSReport/Summary:ETW** コマンドを利用して生成します。 詳細については、「[VSPerfReport](../profiling/vsperfreport.md)」を参照してください。  
   
 |Column|説明|  
 |------------|-----------------|  
@@ -40,4 +40,4 @@ Windows イベント トレーシング (ETW) レポートには、[!INCLUDE[vsp
 |**スレッド ID**|イベントを生成したスレッドを識別します。|  
 |**説明**|イベント プロバイダーを識別します。|  
 |**Type**|イベントの種類を識別します。|  
-|**プロパティ**|イベントのプロパティ。 各イベントは角かっこで囲まれた名前と値のペアになり、コンマで区切られます。|
+|**Properties**|イベントのプロパティ。 各イベントは角かっこで囲まれた名前と値のペアになり、コンマで区切られます。|

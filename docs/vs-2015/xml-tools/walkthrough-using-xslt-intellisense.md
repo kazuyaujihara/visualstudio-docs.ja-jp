@@ -9,22 +9,21 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e6d1aa5cbcc4d996f2caf0e42f372dd3de9eee6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45cb15a81f7f8f74ab17bf22ce52aca48a90aea9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063102"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>チュートリアル: XSLT IntelliSense の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このチュートリアルでは、XSLT IntelliSense を使用して一部の属性値のオートコンプリートを行う方法について説明します。  
   
 ### <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>xsl:with-param 要素と xsl:call-template 要素の name 属性に IntelliSense を使用するには  
   
-1.  新しい XSLT ファイルを作成して、次のコードをコピーします。  
+1. 新しい XSLT ファイルを作成して、次のコードをコピーします。  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -48,7 +47,7 @@ ms.locfileid: "58973996"
     </xsl:stylesheet>  
     ```  
   
-2.  `<xsl:template name="msg23" match="msg23">` の後ろにカーソルを置き、Enter キーを押します。 その後、次の `xsl:call-template` 要素を入力します。  
+2. `<xsl:template name="msg23" match="msg23">` の後ろにカーソルを置き、Enter キーを押します。 その後、次の `xsl:call-template` 要素を入力します。  
   
     ```  
     <xsl:call-template name="localized-message">  
@@ -57,7 +56,7 @@ ms.locfileid: "58973996"
   
      入力中、`name=""` 要素の `xsl:call-template` 属性にテンプレート名の一覧が表示されます。  
   
-3.  `<xsl:call-template name="localized-message">` の後ろにカーソルを置き、Enter キーを押します。 その後、次の `xsl:with-param` 要素を入力します。  
+3. `<xsl:call-template name="localized-message">` の後ろにカーソルを置き、Enter キーを押します。 その後、次の `xsl:with-param` 要素を入力します。  
   
     ```  
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
@@ -67,7 +66,7 @@ ms.locfileid: "58973996"
   
 ### <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>xsl:apply-templates 要素の mode 属性に IntelliSense を使用するには  
   
-1.  新しい XSLT ファイルを作成して、次のコードをコピーします。  
+1. 新しい XSLT ファイルを作成して、次のコードをコピーします。  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -114,7 +113,7 @@ ms.locfileid: "58973996"
     </xsl:stylesheet>  
     ```  
   
-2.  `<xsl:apply-templates select="phone" />` の後ろにカーソルを置き、Enter キーを押します。 その後、次の `xsl: apply-templates` 要素を入力します。  
+2. `<xsl:apply-templates select="phone" />` の後ろにカーソルを置き、Enter キーを押します。 その後、次の `xsl: apply-templates` 要素を入力します。  
   
     ```  
     <xsl:apply-templates select="phone"  mode="accountNumber">  
@@ -124,7 +123,7 @@ ms.locfileid: "58973996"
   
 ### <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>xsl:namespace-alias 要素の stylesheet-prefix 属性および result-prefix 属性に IntelliSense を使用するには  
   
-1.  新しい XSLT ファイルを作成して、次のコードをコピーします。  
+1. 新しい XSLT ファイルを作成して、次のコードをコピーします。  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
@@ -155,7 +154,7 @@ ms.locfileid: "58973996"
     </xsl:stylesheet>  
     ```  
   
-2.  `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` の後ろにカーソルを置き、Enter キーを押します。 その後、次の `xsl:namespace-alias` 要素を入力します。  
+2. `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` の後ろにカーソルを置き、Enter キーを押します。 その後、次の `xsl:namespace-alias` 要素を入力します。  
   
     ```  
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e9652e986ee67721c51f8a52df898688d9492ea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f34a239628c3ed9e8bccaa8590cb22100d7d290f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690293"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042437"
 ---
 # <a name="how-to-open-standard-editors"></a>方法: 標準のエディターを開く
 標準のエディターを開くと、ファイルのプロジェクトに固有のエディターを指定する代わりに、指定されたファイルの種類の標準エディターの特定の IDE を使用できます。
@@ -25,25 +25,25 @@ ms.locfileid: "56690293"
 
 ## <a name="to-implement-the-openitem-method-with-a-standard-editor"></a>標準のエディターで OpenItem メソッドを実装するには
 
-1.  呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable>(`RDT_EditLock`) をドキュメント データ オブジェクトのファイルが既に開いているかどうかを判断します。
+1. 呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable>(`RDT_EditLock`) をドキュメント データ オブジェクトのファイルが既に開いているかどうかを判断します。
 
-2.  ファイルが既に開いている場合は、呼び出すことによって、ファイルを再び表面化、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>の値を指定して、メソッド`IDO_ActivateIfOpen`の`grfIDO`パラメーター。
+2. ファイルが既に開いている場合は、呼び出すことによって、ファイルを再び表面化、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>の値を指定して、メソッド`IDO_ActivateIfOpen`の`grfIDO`パラメーター。
 
      ファイルが開かれていると、ドキュメントが、呼び出し元プロジェクトよりも、別のプロジェクトが所有するプロジェクトが開かれるエディターは、別のプロジェクトから警告を受信します。 [ファイル] ウィンドウに表示されるからです。
 
-3.  ドキュメントが開いていない場合、または実行中のドキュメントのテーブルではなく、呼び出し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>メソッド (`OSE_ChooseBestStdEditor`) ファイルの標準のエディターを開きます。
+3. ドキュメントが開いていない場合、または実行中のドキュメントのテーブルではなく、呼び出し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>メソッド (`OSE_ChooseBestStdEditor`) ファイルの標準のエディターを開きます。
 
      メソッドを呼び出すときに、IDE は、次のタスクを実行します。
 
-    1.  IDE のエディターのスキャン/{guidEditorType}]、[レジストリ エディターで拡張機能のサブキーは、ファイルを開くし、これを行うための優先順位が最も高い。
+    1. IDE のエディターのスキャン/{guidEditorType}]、[レジストリ エディターで拡張機能のサブキーは、ファイルを開くし、これを行うための優先順位が最も高い。
 
-    2.  エディターでファイルを開く IDE が決まりますが、IDE は呼び出し<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>します。 このメソッドのエディターの実装には、IDE を呼び出すに必要な情報が返されます。<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A>と新しく開かれたドキュメントのサイト。
+    2. エディターでファイルを開く IDE が決まりますが、IDE は呼び出し<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>します。 このメソッドのエディターの実装には、IDE を呼び出すに必要な情報が返されます。<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A>と新しく開かれたドキュメントのサイト。
 
-    3.  最後に、IDE は、通常の永続化インターフェイスを使用して、ドキュメントを読み込みます<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>します。
+    3. 最後に、IDE は、通常の永続化インターフェイスを使用して、ドキュメントを読み込みます<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>します。
 
-    4.  IDE が以前階層または階層アイテムがあることを確認して場合、IDE によって呼び出さ<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A>、プロジェクトをプロジェクト レベルのコンテキストを取得するメソッド<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>内で渡すへのポインター、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A>メソッドの呼び出し。
+    4. IDE が以前階層または階層アイテムがあることを確認して場合、IDE によって呼び出さ<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A>、プロジェクトをプロジェクト レベルのコンテキストを取得するメソッド<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>内で渡すへのポインター、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A>メソッドの呼び出し。
 
-4.  返す、 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> IDE を呼び出すと、IDE へのポインター<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A>エディターがプロジェクトからのコンテキストを取得できるようにする場合は、プロジェクトにします。
+4. 返す、 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> IDE を呼び出すと、IDE へのポインター<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A>エディターがプロジェクトからのコンテキストを取得できるようにする場合は、プロジェクトにします。
 
      この手順を実行するには、エディターにプロジェクトのプランの追加のサービスが使用できます。
 

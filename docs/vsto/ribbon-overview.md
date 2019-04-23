@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 387ec5814e0b5a2a8c2169198a3ceebad47e10d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599481"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040147"
 ---
 # <a name="ribbon-overview"></a>リボンの概要
   リボンは、関連するコマンドを見つけやすいように整理する方法です。 コマンドは、リボン上のコントロールとして表示されます。 コントロールで構成された*グループ*アプリケーション ウィンドウの上端に水平方向のストリップです。 関連するグループは、タブに整理されます。
@@ -93,12 +93,12 @@ ms.locfileid: "56599481"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>複数のリボン項目をプロジェクトに追加します。
  1 つのプロジェクトに複数のリボン項目を追加することができます。 これは、次の 2 つのタスクのいずれかを実行する場合に便利です。
 
--   Outlook のリボンを作成*インスペクター*します。 詳細については、[Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)を参照してください。
+- Outlook のリボンを作成*インスペクター*します。 詳細については、次を参照してください。 [Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)します。
 
     > [!NOTE]
     >  インスペクターは、ユーザーが電子メール メッセージを作成するなど、特定のタスクを実行するときに表示されるウィンドウです。
 
--   実行時に表示するリボンを選択します。
+- 実行時に表示するリボンを選択します。
 
 ### <a name="select-which-ribbons-to-display-at-runtime"></a>実行時に表示するには、どのリボンを選択します。
  プロジェクトは、1 つ以上のリボンを含めることができます、ためには、実行時に表示するリボンを選択できます。

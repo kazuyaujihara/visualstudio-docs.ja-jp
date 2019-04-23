@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002759"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066352"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce での COM コンポーネントの配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ ms.locfileid: "59002759"
   
  2 つの方法を[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]COM コンポーネントを展開します。  
   
--   ブートス トラップを使用して、COM コンポーネントを展開するにはこれは、サポートされているすべてのプラットフォームで動作します。  
+- ブートス トラップを使用して、COM コンポーネントを展開するにはこれは、サポートされているすべてのプラットフォームで動作します。  
   
--   ネイティブ コンポーネントの分離 (登録無料 COM とも呼ばれます) の展開を使用します。 ただし、この方法は、Windows XP または以上のオペレーティング システムでのみ動作します。  
+- ネイティブ コンポーネントの分離 (登録無料 COM とも呼ばれます) の展開を使用します。 ただし、この方法は、Windows XP または以上のオペレーティング システムでのみ動作します。  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>分離と単純な COM コンポーネントの展開の例  
  登録のない COM コンポーネントの配置を示すためにこの例は Visual Basic 6.0 を使用して作成された分離ネイティブ COM コンポーネントを参照する Visual Basic では、Windows ベースのアプリケーションを作成および展開を使用して[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]します。  
@@ -60,16 +60,16 @@ ms.locfileid: "59002759"
   
 ##### <a name="to-create-a-native-com-component"></a>ネイティブの COM コンポーネントを作成するには  
   
-1.  Visual Basic 6.0 を使用して、**ファイル** メニューのをクリックして**新規**、し**プロジェクト**します。  
+1. Visual Basic 6.0 を使用して、**ファイル** メニューのをクリックして**新規**、し**プロジェクト**します。  
   
-2.  **新しいプロジェクト**ダイアログ ボックスで、 **Visual Basic**ノード、 **ActiveX DLL**プロジェクト。 **[名前]** ボックスに「 `VB6Hello`」と入力します。  
+2. **新しいプロジェクト**ダイアログ ボックスで、 **Visual Basic**ノード、 **ActiveX DLL**プロジェクト。 **[名前]** ボックスに「 `VB6Hello`」と入力します。  
   
     > [!NOTE]
     >  ActiveX の DLL と ActiveX コントロール プロジェクト型は、登録を必要としない COM; でサポートされます。ActiveX 実行可能ファイルと ActiveX ドキュメント プロジェクトの種類がサポートされていません。  
   
-3.  **ソリューション エクスプ ローラー**、ダブルクリックして**Class1.vb**テキスト エディターを開きます。  
+3. **ソリューション エクスプ ローラー**、ダブルクリックして**Class1.vb**テキスト エディターを開きます。  
   
-4.  Class1.vb に対して生成されたコードの後に、次のコードを追加、`New`メソッド。  
+4. Class1.vb に対して生成されたコードの後に、次のコードを追加、`New`メソッド。  
   
     ```  
     Public Sub SayHello()  
@@ -77,7 +77,7 @@ ms.locfileid: "59002759"
     End Sub  
     ```  
   
-5.  コンポーネントをビルドします。 **ビルド** メニューのをクリックして**ソリューションのビルド**します。  
+5. コンポーネントをビルドします。 **ビルド** メニューのをクリックして**ソリューションのビルド**します。  
   
 > [!NOTE]
 >  COM コントロール プロジェクトの種類を登録しない COM が Dll のみをサポートします。 登録を必要としない COM を Exe を使用することはできません。  

@@ -19,17 +19,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975495"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668991"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Windows フォーム コントロールをデータにバインドする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 オブジェクトをドラッグしてコントロールにデータ ソースをバインドすることができます、**データソース**Windows フォーム、または既存のコントロールをフォーム上のウィンドウ。 項目をドラッグする前にバインドするコントロールの種類を設定できます。 自体、または個々 の列にテーブルを選択するかどうかに応じて異なる値が表示されます。  カスタム値を設定することもできます。 テーブルの場合は、"Details"は、各列が個別のコントロールにバインドされているを意味します。  
   
  ![データ ソースをバインドする DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "DataGridView に raddata バインド データ ソース")  

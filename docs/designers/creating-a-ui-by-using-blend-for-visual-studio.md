@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7886981dd3bc2ed93e987256a906f021e6ea5f2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941084"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647441"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio 概要
 
@@ -30,11 +30,18 @@ Blend for Visual Studio を初めてご使用になる場合は、このワー�
 > [!NOTE]
 > アートボード、**[ドキュメント アウトライン]** ウィンドウ、**[デバイス]** ウィンドウなどの共有デザイン機能のツアーについては、「[XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)」を参照してください。
 
-## <a name="tour-of-the-tools-panel"></a>[ツール] パネルのツアー
+## <a name="tools-panel"></a>ツール パネル
 
-Blend for Visual Studio の **[ツール]** パネルは、アプリケーションのオブジェクトの作成と変更に使用します。 パネルにあるツールを選択してアートボード上でマウスを動かすと、オブジェクトを描画できます。
+Blend for Visual Studio の **[ツール]** パネルは、アプリケーションのオブジェクトの作成と変更に使用します。 *.xaml* ファイルを開くと、XAML デザイナーの左側に **[ツール]** パネルが表示されます。
 
-![ツール パネル](../designers/media/blend5toolspanel.png)
+パネルにあるツールを選択してアートボード上でマウスを動かすと、オブジェクトを描画できます。
+
+![Blend for Visual Studio の [ツール] パネル](../designers/media/blend5toolspanel.png)
+
+> [!TIP]
+> **[ツール]** パネルの一部のツールにはバリエーションがあります (図では A から F として示されています)。 これらのバリエーションにアクセスするには、ツールを右クリックするか、長押しします。
+>
+> ![Blend for Visual Studio のシェイプ ツールのバリエーション](media/rectangle-shape-tool-blend.png)
 
 |||||
 |-|-|-|-|
@@ -45,13 +52,11 @@ Blend for Visual Studio の **[ツール]** パネルは、アプリケーショ
 |![アセット ツール](../designers/media/b1_5.png)|**アセット ツール** **[アセット]** パネルにアクセスし、ライブラリから最近使用したアセットを表示します。|![吹き出し E](../designers/media/b5_label_e.png)|**テキスト コントロール**|
 |||![吹き出し F](../designers/media/b5_label_f.png)|**コモン コントロール**|
 
-**短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.png) [ツール バー](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)。
+## <a name="assets-window"></a>[アセット] ウィンドウ
 
-## <a name="tour-of-the-assets-panel"></a>[アセット] パネルのツアー
+**[アセット]** ウィンドウには、使用できるすべてのコントロールが表示されます (Visual Studio の **[ツールボックス]** に似ています)。 また、コントロールのほかに、スタイル、メディア、ビヘイビアー、効果など、アートボードに追加できるすべてのものが **[アセット]** ウィンドウに用意されています。 **[アセット]** ウィンドウを開くには、**[表示]** > **[アセット] ウィンドウ**を選択するか、**Ctrl**+**Alt**+**X** キーを押します。
 
-**[アセット]** パネルには、すべてのコントロールが用意されています (Visual Studio の **[ツールボックス]** に似ています)。 また、コントロールのほかに、スタイル、メディア、ビヘイビアー、効果など、アートボードに追加できるすべてのものが **[アセット]** パネルに用意されています。
-
-![アセット パネル](../designers/media/blend5_assets_panel.png)
+![Blend for Visual Studio の [アセット] ウィンドウ](../designers/media/blend5_assets_panel.png)
 
 |||
 |-|-|
@@ -61,11 +66,11 @@ Blend for Visual Studio の **[ツール]** パネルは、アプリケーショ
 |![スタイル](../designers/media/b1_4.png)|**スタイル** リソース ディクショナリに含まれるすべてのスタイルを表示します。|
 |![説明](../designers/media/b1_5.png)|**説明** 選択したカテゴリまたはサブカテゴリの説明が表示されます。|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a>[オブジェクトとタイムライン] パネルのツアー
+## <a name="objects-and-timeline-window"></a>[オブジェクトとタイムライン] ウィンドウ
 
-このパネルを使用すると、アートボード上のオブジェクトを整理して、必要な場合はアニメーション化できます。
+このウィンドウを使用すると、アートボード上のオブジェクトを整理して、必要な場合はアニメーション化できます。 **[オブジェクトとタイムライン]** ウィンドウを開くには、**[表示]** > **[オブジェクトとタイムライン]** の順に選択するか、**Ctrl**+**W**、**U** キーを押します。
 
-![アニメーション モードの [オブジェクトとタイムライン] パネル](../designers/media/b5_object_timeline_animation.png)
+![アニメーション モードの [オブジェクトとタイムライン] ウィンドウ](../designers/media/b5_object_timeline_animation.png)
 
 |||
 |-|-|
@@ -86,11 +91,11 @@ Blend for Visual Studio の **[ツール]** パネルは、アプリケーショ
 |![タイムラインのズーム](../designers/media/b1_15.png)|**タイムラインのズーム** タイムラインのズーム解像度を設定します。 ズーム インでは、アニメーションを詳細に編集できます。ズーム アウトすると、長い再生時間にわたる動作の概要が表示されます。 ズーム インしても、目的の位置にキーフレームを設定できない場合は、スナップ精度が十分高く設定されていることを確認してください。|
 |![吹き出し 16](../designers/media/b5_label_16.png)|**タイムライン構成領域** タイムラインを表示するとともに、キーフレームをドラッグするかショートカット メニューを使用してキーフレームを移動します。|
 
-## <a name="tour-of-the-properties-panel"></a>[プロパティ] パネルのツアー
+## <a name="properties-window"></a>[プロパティ] ウィンドウ
 
-オブジェクトのプロパティを表示して変更するには、このパネルを使用します。 また、アートボード上で直接設定することもできます。 この場合、プロパティの変更が **[プロパティ]** パネルに反映されます。
+オブジェクトのプロパティを表示して変更するには、このウィンドウを使用します。 また、アートボード上で直接設定することもできます。 この場合、プロパティの変更が**プロパティ** ウィンドウに反映されます。 **プロパティ** ウィンドウを開くには、**[表示]** > **[プロパティ] ウィンドウ**を選択するか、**Ctrl**+**W**、**P** キーを押します。
 
-![プロパティ パネル](../designers/media/blend5_properties_panel.png)
+![Blend for Visual Studio のプロパティ ウィンドウ](../designers/media/blend5_properties_panel.png)
 
 **[カテゴリ]** プロパティのカテゴリを展開し、折りたたみます。 カテゴリの詳細を表示するには **[展開]** ![展開](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) をクリックし、非表示にするには **[折りたたみ]** ![折りたたみ](../designers/media/b5_collapse_button.png) をクリックします。
 
@@ -113,8 +118,6 @@ Blend for Visual Studio の **[ツール]** パネルは、アプリケーショ
 |![](../designers/media/b1_15.png)|**16 進数値** 表示されている色を表す 16 進数値が表示されます。|
 |![吹き出し 16](../designers/media/b5_label_16.png)|**グラデーション スライダー** グラデーション ブラシが選択されている場合にのみ表示されます。|
 |![詳細設定プロパティの表示](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**詳細設定プロパティの表示** 使用頻度が低いプロパティのカテゴリを表示します。|
-
-**短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.png) [[プロパティ] パネル](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)。
 
 ## <a name="see-also"></a>関連項目
 

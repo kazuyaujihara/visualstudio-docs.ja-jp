@@ -20,16 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 379911793f85cedcee708716782e6ef38203867b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58977639"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079488"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio がデータ バインド コントロールのキャプションを作成する方法をカスタマイズする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 項目をドラッグすると、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)Windows フォーム デザイナーに、特別な配慮: キャプション ラベル内の列名は 2 つの読みやすい文字列に再設定、または複数の単語連結が見つかりました。 設定によって、これらのラベルを作成、方法をカスタマイズすることができます、 **SmartCaptionExpression**、 **SmartCaptionReplacement**、および**SmartCaptionSuffix**値**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data デザイナー**レジストリ キー。
 
@@ -61,21 +60,21 @@ ms.locfileid: "58977639"
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>データ ソース ウィンドウのスマート キャプションの動作を変更するには
 
-1.  コマンド ウィンドウを開きます**開始**し**実行**します。
+1. コマンド ウィンドウを開きます**開始**し**実行**します。
 
-2.  型`regedit`で、**実行** ダイアログ ボックスをクリックします**OK**します。
+2. 型`regedit`で、**実行** ダイアログ ボックスをクリックします**OK**します。
 
-3.  展開、 **HKEY_CURRENT_USER**ノード。
+3. 展開、 **HKEY_CURRENT_USER**ノード。
 
-4.  展開、**ソフトウェア**ノード。
+4. 展開、**ソフトウェア**ノード。
 
-5.  展開、 **Microsoft**ノード。
+5. 展開、 **Microsoft**ノード。
 
-6.  展開、 **VisualStudio**ノード。
+6. 展開、 **VisualStudio**ノード。
 
-7.  右クリックし、 **10.0**ノード、され、新しい作成**キー**という`Data Designers`します。
+7. 右クリックし、 **10.0**ノード、され、新しい作成**キー**という`Data Designers`します。
 
-8.  右クリックし、**データ デザイナー**ノード、され、新しい作成**文字列値**という`SmartCaptionExpression`。
+8. 右クリックし、**データ デザイナー**ノード、され、新しい作成**文字列値**という`SmartCaptionExpression`。
 
 9. 右クリックし、**データ デザイナー**ノード、され、新しい作成**文字列値**という`SmartCaptionReplacement`。
 
@@ -97,21 +96,21 @@ ms.locfileid: "58977639"
 
 ### <a name="to-turn-off-the-smart-captioning-feature"></a>スマート キャプション機能を無効にするには
 
-1.  コマンド ウィンドウを開きます**開始**し**実行**します。
+1. コマンド ウィンドウを開きます**開始**し**実行**します。
 
-2.  型`regedit`で、**実行** ダイアログ ボックスをクリックします**OK**します。
+2. 型`regedit`で、**実行** ダイアログ ボックスをクリックします**OK**します。
 
-3.  展開、 **HKEY_CURRENT_USER**ノード。
+3. 展開、 **HKEY_CURRENT_USER**ノード。
 
-4.  展開、**ソフトウェア**ノード。
+4. 展開、**ソフトウェア**ノード。
 
-5.  展開、 **Microsoft**ノード。
+5. 展開、 **Microsoft**ノード。
 
-6.  展開、 **VisualStudio**ノード。
+6. 展開、 **VisualStudio**ノード。
 
-7.  右クリックし、 **10.0**ノード、され、新しい作成**キー**という`Data Designers`します。
+7. 右クリックし、 **10.0**ノード、され、新しい作成**キー**という`Data Designers`します。
 
-8.  右クリックし、**データ デザイナー**ノード、され、新しい作成**文字列値**という`SmartCaptionExpression`。
+8. 右クリックし、**データ デザイナー**ノード、され、新しい作成**文字列値**という`SmartCaptionExpression`。
 
 9. 右クリックし、**データ デザイナー**ノード、され、新しい作成**文字列値**という`SmartCaptionReplacement`。
 

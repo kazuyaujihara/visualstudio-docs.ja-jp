@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b9b8848399ea88b5f4ce7ebf30f970e2091e6406
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fbbbd27cfe7d720349592050419f5c73d1843c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115407"
 ---
 # <a name="shutdown"></a>シャットダウン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ VSPerfCmd.exe /Shutdown[:Timeout]
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- `Timeout`  
- -   (省略可能) 指定した場合は、指定した秒数の経過後にオプションから制御が戻りますが、プロファイラーはオフにされず、プロファイル データ ファイルも閉じられません。  
+`Timeout`  
+- (省略可能) 指定した場合は、指定した秒数の経過後にオプションから制御が戻りますが、プロファイラーはオフにされず、プロファイル データ ファイルも閉じられません。  
   
 ## <a name="see-also"></a>関連項目  
  [VSPerfCmd](../profiling/vsperfcmd.md)   

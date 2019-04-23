@@ -1,11 +1,9 @@
 ---
-ms.openlocfilehash: 00dc39a90fd74d5a606a4d730db9d35586431134
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: HT
+ms.openlocfilehash: 95662a86217cc5cabbd266ee6489794c144bd8c2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "38809315"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670616"
 ---
-  **適用されます:** ドキュメントにこのトピックの情報が適用されます\-レベルのプロジェクトおよび VSTO 追加\-の Word プロジェクトでします。 詳細については、[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../../vsto/features-available-by-office-application-and-project-type.md)を参照してください。
-
-  
+  **適用対象:** このトピックの情報は、ドキュメントに適用されます\-レベルのプロジェクトおよび VSTO 追加\-の Word プロジェクトでします。 詳細については、「[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。

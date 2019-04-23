@@ -12,12 +12,12 @@ ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bb36540aaf6fa30cdcd069fd96a18124daafe2b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 49fd700120e819bb0b38cb8d91401869a364714c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972762"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039454"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>式の評価の実装のサンプル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "58972762"
   
  この実装の`IDebugExpressionEvaluator::Parse`は、次のタスクを実行します。  
   
-1.  [C++ のみ]エラーを検索する式を解析します。  
+1. [C++のみ]エラーを検索する式を解析します。  
   
-2.  クラスをインスタンス化します (と呼ばれる`CParsedExpression`この例では) を実装する、`IDebugParsedExpression`インターフェイスし、クラスで解析する式を格納します。  
+2. クラスをインスタンス化します (と呼ばれる`CParsedExpression`この例では) を実装する、`IDebugParsedExpression`インターフェイスし、クラスで解析する式を格納します。  
   
-3.  返します、`IDebugParsedExpression`からインターフェイス、`CParsedExpression`オブジェクト。  
+3. 返します、`IDebugParsedExpression`からインターフェイス、`CParsedExpression`オブジェクト。  
   
 > [!NOTE]
 >  以下の例と MyCEE サンプルでは、式エバリュエーターで分離されていない、評価を解析します。  

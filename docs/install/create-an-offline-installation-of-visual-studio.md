@@ -1,7 +1,7 @@
 ---
 title: オフライン インストールを作成する
 description: インターネット接続の信頼性が低い場合や帯域幅が低い場合にオフラインで Visual Studio をインストールする方法について説明します。
-ms.date: 02/23/2019
+ms.date: 03/28/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,32 +16,54 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0c0495d3413ba824f4976f2a7d04fb1ed0f05806
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 2b813d92188a2b4e33b87a1391c7ebbea63292f6
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322822"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856996"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio のオフライン インストールを作成する
 
+::: moniker range="vs-2017"
+
 Visual Studio 2017 はさまざまなネットワークとコンピューターの構成で問題なく動作するように設計されています。 [Visual Studio Web インストーラー](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash;ファイルが小さく、最新の修正プログラムと機能がすべて含まれています&mdash;の利用をお勧めしますが、それが難しい場合もあると思います。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio 2019 はさまざまなネットワーク構成およびコンピューター構成で問題なく動作するように設計されています。 [Visual Studio Web インストーラー](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)&mdash;ファイルが小さく、最新の修正プログラムと機能がすべて含まれています&mdash;の利用をお勧めしますが、それが難しい場合もあると思います。
+
+::: moniker-end
 
 たとえば、インターネット接続の信頼性が低い場合や帯域幅が低い場合があるでしょう。 その場合、いくつかの選択肢があります。新しい "全部ダウンロードしてからインストールする" 機能を使用してインストール前にファイルをダウンロードするか、コマンド ラインを使用してファイルのローカル キャッシュを作成することができます。
 
 > [!NOTE]
-> 企業の IT 管理者が、インターネットからファイアウォールで隔てられたクライアント ワークステーションのネットワークに Visual Studio 2017 を展開する場合は、「[Visual Studio 2017 のネットワーク インストールを作成する](../install/create-a-network-installation-of-visual-studio.md)」と「[Visual Studio オフライン インストールに必要な証明書をインストールする](../install/install-certificates-for-visual-studio-offline.md)」をご覧ください。
+> 企業の IT 管理者が、インターネットからファイアウォールで隔てられたクライアント ワークステーションのネットワークに Visual Studio を展開する場合は、[Visual Studio のネットワーク インストールの作成](../install/create-a-network-installation-of-visual-studio.md)に関するページと「[Visual Studio オフライン インストールに必要な証明書をインストールする](../install/install-certificates-for-visual-studio-offline.md)」をご覧ください。
 
 ## <a name="use-the-download-all-then-install-feature"></a>"全部ダウンロードしてからインストールする" 機能を使用する
+
+::: moniker range="vs-2017"
 
 [**バージョン 15.8 の新機能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install):Web インストーラーをダウンロードした後、Visual Studio インストーラーから **[Download all, then install]\(全部ダウンロードしてからインストールする\)** オプションを選択します。 次に、インストールを続行します。
 
    !["全部ダウンロードしてからインストールする" オプション](media/download-all-then-install.png)
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Web インストーラーをダウンロードした後、Visual Studio インストーラーから **[Download all, then install]\(全部ダウンロードしてからインストールする\)** オプションを選択します。 次に、インストールを続行します。
+
+   !["全部ダウンロードしてからインストールする" オプション](media/vs-2019/download-all-then-install-from-installer.png)
+
+::: moniker-end
+
 "全部ダウンロードしてからインストールする" 機能は、ダウンロードしたのと同じコンピューターを対象とする 1 つのインストールとして Visual Studio をダウンロードできるように設計されています。 これにより、Visual Studio をインストールする前に安全に Web から切断できます。
 
 > [!IMPORTANT]
-> 別のコンピューターに転送する目的のオフライン キャッシュを作成するために "全部ダウンロードしてからインストールする" 機能を使わないでください。 これは、そのように動作するようには設計されていません。 <br><br>別のコンピューターに Visual Studio をインストールするためにオフライン キャッシュを作成したい場合、ローカル キャッシュを作成する方法について詳しくは、このページの「[コマンドラインを使用してローカル キャッシュを作成する](#use-the-command-line-to-create-a-local-cache)」セクションをご覧ください。または、ネットワーク キャッシュを作成する方法について詳しくは、「[Visual Studio 2017 のネットワーク インストールを作成する](../install/create-a-network-installation-of-visual-studio.md)」ページをご覧ください。
+> 別のコンピューターに転送する目的のオフライン キャッシュを作成するために "全部ダウンロードしてからインストールする" 機能を使わないでください。 これは、そのように動作するようには設計されていません。 <br><br>別のコンピューターに Visual Studio をインストールするためにオフライン キャッシュを作成したい場合、ローカル キャッシュを作成する方法について詳しくは、このページの「[コマンドラインを使用してローカル キャッシュを作成する](#use-the-command-line-to-create-a-local-cache)」セクションをご覧ください。または、ネットワーク キャッシュを作成する方法を、[Visual Studio のネットワーク インストールの作成](../install/create-a-network-installation-of-visual-studio.md)に関するページでご覧ください。
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>コマンドラインを使用してローカル キャッシュを作成する
 
@@ -55,18 +77,32 @@ Visual Studio 2017 はさまざまなネットワークとコンピューター�
 
 最初に、選択したエディションの Visual Studio の Visual Studio ブートストラップをダウンロードします。 セットアップ ファイル&mdash;またはブートストラップ&mdash;は、次のいずれかになります (あるいは同様のファイル)。
 
+::: moniker range="vs-2017"
+
 | エディション                    | ファイル                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
 | Visual Studio コミュニティ    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
 | Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+| エディション                    | ファイル                                                                    |
+|----------------------------|-------------------------------------------------------------------------|
+| Visual Studio コミュニティ    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
+| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
+| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+
+::: moniker-end
+
 ### <a name="step-2---create-a-local-install-cache"></a>ステップ 2 - ローカル インストール キャッシュを作成する
 
 このステップを実行するにはインターネット接続が必要です。
 
 > [!IMPORTANT]
-> Visual Studio Community 2017 をインストールする場合、インストールしてから 30 日以内にアクティブ化する必要があります。 これにはインターネット接続が必要です。
+> Visual Studio Community をインストールする場合、インストールしてから 30 日以内にアクティブ化する必要があります。 これにはインターネット接続が必要です。
 
 コマンド プロンプトを開き、次の例にあるいずれかのコマンドを使用します。 ここに挙げた例は、Visual Studio の Community Edition を使用することを前提としています。ご利用のエディションに応じて適切なコマンドに修正してください。
 
@@ -76,29 +112,29 @@ Visual Studio 2017 はさまざまなネットワークとコンピューター�
 - .NET Web と .NET デスクトップ開発の場合、次を実行します。
 
    ```cmd
-    vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
+    vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
     ```
 
 - .NET デスクトップと Office 開発の場合、次を実行します。
 
    ```cmd
-    vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
+    vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
     ```
 
 - C++ デスクトップ開発の場合、次を実行します。
 
    ```cmd
-    vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
+    vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
 - すべての機能を備えた完全なローカル レイアウトを作成するには (_多くの_機能があるため、これには時間がかかります)、次を実行します。
 
    ```cmd
-    vs_community.exe --layout c:\vs2017layout --lang en-US
+    vs_community.exe --layout c:\vslayout --lang en-US
     ```
 
   > [!NOTE]
-  > Visual Studio 2017 の完全なレイアウトでは、少なくとも 35 GB のディスク領域が必要です。 インストールするコンポーネントのみでレイアウトを作成する方法については、「[コマンド ライン パラメーターを使用して Visual Studio 2017 をインストールする](use-command-line-parameters-to-install-visual-studio.md)」をご覧ください。
+  > Visual Studio の完全なレイアウトでは、少なくとも 35 GB のディスク領域が必要です。 インストールするコンポーネントのみでレイアウトを作成する方法については、「[コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)」をご覧ください。
 
 英語以外の言語をインストールする場合、`en-US` を[言語ロケールの一覧](#list-of-language-locales)にあるロケールに変更します。 次に、[利用できるコンポーネントとワークロードの一覧](workload-and-component-ids.md)を利用して、インストール キャッシュをさらにカスタマイズします。
 
@@ -110,13 +146,13 @@ Visual Studio 2017 はさまざまなネットワークとコンピューター�
 以前にダウンロードしたファイルのみがインストールされるように、レイアウト キャッシュの作成に利用したものと同じコマンド ライン オプションを使用します。 たとえば、次のコマンドでレイアウト キャッシュを作成した場合、
 
 ```cmd
-vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
+vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
 ```
 
 次に、このコマンドを使用してインストールを実行します。
 
 ```cmd
-c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
+c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
 
 > [!NOTE]
@@ -124,7 +160,7 @@ c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDe
 
 ### <a name="list-of-language-locales"></a>言語ロケールの一覧
 
-| **言語ロケール** | **Language** |
+| **言語ロケール** | **言語** |
 | ----------------------- | --------------- |
 | cs-CZ | チェコ語 |
 | de-DE | ドイツ語 |

@@ -11,17 +11,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06b49a8fda448707540d5bfe65d0499c6c2dde96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767364"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652359"
 ---
 # <a name="msbuild-targets"></a>MSBuild ターゲット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ターゲットはタスクを特定の順序でグループ化し、ビルド プロセスを小さな単位に分割することを可能にします。 たとえば、あるターゲットは、ビルドの準備として、出力ディレクトリに含まれるすべてのファイルを削除し、別のターゲットは、プロジェクトに対する入力をコンパイルし、空のディレクトリに配置します。 タスクについて詳しくは、「[MSBuild タスク](../msbuild/msbuild-tasks.md)」をご覧ください。  
   
 ## <a name="declaring-targets-in-the-project-file"></a>プロジェクト ファイルでターゲットを宣言する  
@@ -33,7 +32,7 @@ ms.locfileid: "54767364"
 </Target>  
 ```  
   
- MSBuild プロパティと同様に、ターゲットは再定義できます。 たとえば、オブジェクトに適用された  
+ MSBuild プロパティと同様に、ターゲットは再定義できます。 例えば以下のようにします。  
   
 ```  
 <Target Name="AfterBuild" >  
@@ -64,7 +63,7 @@ ms.locfileid: "54767364"
   ターゲットのビルド順序に関する詳細については、「[ターゲットのビルド順序](../msbuild/target-build-order.md)」を参照してください。  
   
 ## <a name="target-batching"></a>ターゲットのバッチ  
- あるターゲット要素に、%(メタデータ) 形式でメタデータを指定する `Outputs` 属性が含まれている場合があります。 その場合、MSBuild は一意のメタデータ値ごとにターゲットを 1 回実行し、そのメタデータ値を含むアイテムをグループ化または "バッチ処理" します。 たとえば、オブジェクトに適用された  
+ あるターゲット要素に、%(メタデータ) 形式でメタデータを指定する `Outputs` 属性が含まれている場合があります。 その場合、MSBuild は一意のメタデータ値ごとにターゲットを 1 回実行し、そのメタデータ値を含むアイテムをグループ化または "バッチ処理" します。 例えば以下のようにします。  
   
 ```  
 <ItemGroup>  
@@ -101,4 +100,4 @@ Reference: 4.0
   
 ## <a name="see-also"></a>関連項目  
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
- [方法: 複数のプロジェクト ファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [方法: 複数のプロジェクト ファイルで同じターゲットを使用します。](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

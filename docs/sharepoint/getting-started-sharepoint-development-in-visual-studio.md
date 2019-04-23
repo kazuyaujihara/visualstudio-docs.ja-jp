@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504108"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>開始 (SharePoint 開発の Visual Studio で)
@@ -47,13 +47,13 @@ ms.locfileid: "59504108"
 |[For SharePoint アプリケーション ページを作成します。](../sharepoint/creating-application-pages-for-sharepoint.md)|デザイナーを使用してアプリケーション ページをデザインする方法について説明します。|
 |[Web パーツまたはアプリケーション ページの再利用可能なコントロールを作成します。](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|SharePoint でアプリケーション ページおよび Web パーツに使用できる再利用可能なカスタム コントロールの作成方法を説明します。|
 |[サーバー エクスプ ローラーを使用した SharePoint 接続を参照します。](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Visual Studio のツール ウィンドウで SharePoint サイトのコンポーネントを参照する方法について説明します。|
-|[ビルドし、SharePoint ソリューションのデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)|ビルドする方法、およびデバッグの SharePoint ソリューションについて説明します。|
+|[SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)|ビルドする方法、およびデバッグの SharePoint ソリューションについて説明します。|
 |[パッケージ化し、SharePoint ソリューションのデプロイ](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|について説明しますパッケージ方法と、SharePoint ソリューションを配置します。|
 |[Visual Studio の SharePoint ツールを拡張します。](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|SharePoint のツールを拡張して必要な機能を作成する方法について説明します。|
 
 ## <a name="see-also"></a>関連項目
 
-- [SharePoint ソリューションを開発します。](../sharepoint/developing-sharepoint-solutions.md)
+- [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)
 - [サーバー エクスプ ローラーを使用した SharePoint 接続を参照します。](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
-- [ビルドし、SharePoint ソリューションのデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [パッケージ化し、SharePoint ソリューションのデプロイ](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

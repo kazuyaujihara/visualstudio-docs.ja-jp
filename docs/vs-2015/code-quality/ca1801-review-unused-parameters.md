@@ -16,39 +16,39 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59003071"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045643"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801:使用されていないパラメーターの確認
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新ドキュメントについては、次を参照してください。 [ca 1801。未使用のパラメーターをレビュー](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください。 [ca 1801。未使用のパラメーターをレビュー](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)します。  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
 |カテゴリ|Microsoft.Usage|  
-|互換性に影響する変更点|なし - メンバーが行った変更に関係なく、アセンブリの外部に表示されない場合<br /><br /> なし - の本体にあるパラメーターを使用するメンバーを変更する場合<br /><br /> あり - パラメーターを削除して、アセンブリの外側に表示される場合。|  
+|互換性に影響する変更点|非的なメンバーが、アセンブリの外部に表示されない場合、変更に関係なくすること。<br /><br /> 改行しない - の本体にあるパラメーターを使用するメンバーを変更する場合。<br /><br /> あり - パラメーターを削除して、アセンブリの外側に表示される場合。|  
   
 ## <a name="cause"></a>原因  
  メソッドのシグネチャに、メソッドの本体で使用されていないパラメーターがあります。 このルールは、次の方法を確認できません。  
   
--   デリゲートによって参照されるメソッド。  
+- デリゲートによって参照されるメソッド。  
   
--   イベント ハンドラーとして使用されるメソッド。  
+- イベント ハンドラーとして使用されるメソッド。  
   
--   宣言されたメソッド、 `abstract` (`MustOverride` Visual Basic) 修飾子。  
+- 宣言されたメソッド、 `abstract` (`MustOverride` Visual basic) 修飾子。  
   
--   宣言されたメソッド、 `virtual` (`Overridable` Visual Basic) 修飾子。  
+- 宣言されたメソッド、 `virtual` (`Overridable` Visual basic) 修飾子。  
   
--   宣言されたメソッド、 `override` (`Overrides` Visual Basic) 修飾子。  
+- 宣言されたメソッド、 `override` (`Overrides` Visual basic) 修飾子。  
   
--   宣言されたメソッド、 `extern` (`Declare` Visual Basic でのステートメント) 修飾子。  
+- 宣言されたメソッド、 `extern` (`Declare` Visual Basic でのステートメント) 修飾子。  
   
 ## <a name="rule-description"></a>規則の説明  
  それらにアクセスする障害が回避の正確性が存在しないかどうかを確認するメソッドの本体で使用されていない非仮想メソッドのパラメーターを確認します。 使用されていないパラメーターには、メンテナンスとパフォーマンスのコストが発生します。  

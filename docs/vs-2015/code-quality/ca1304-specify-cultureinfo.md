@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 173ab11e85853324089f1dee66cd047e0afb7f13
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8757b04423037d821d7b74293e508f567975da57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973094"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047933"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304:CultureInfo を指定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58973094"
 ## <a name="cause"></a>原因
  メソッドまたはコンス トラクターの呼び出しを受け入れるオーバー ロードを持つメンバーを<xref:System.Globalization.CultureInfo?displayProperty=fullName>パラメーター、およびメソッドまたはコンス トラクターは使用するオーバー ロードを呼び出しません、<xref:System.Globalization.CultureInfo>パラメーター。 このルールは、次のメソッドの呼び出しを無視します。
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則の説明
  ときに、<xref:System.Globalization.CultureInfo>または<xref:System.IFormatProvider?displayProperty=fullName>オブジェクトが指定されていない、オーバー ロードされたメンバーによって提供される既定値はすべてのロケールに効果がありません。 また、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]メンバーが既定のカルチャを選択し、コードの適切なことができない可能性がある前提条件に基づく書式設定します。 コードのシナリオでは、予想どおりに機能させるには、次のガイドラインに従って、カルチャに固有の情報を指定する必要があります。

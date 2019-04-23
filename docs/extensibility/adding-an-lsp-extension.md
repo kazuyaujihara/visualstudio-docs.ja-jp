@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7590350fdcfb74f90cd4441e97503a60b298c66
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 44b8e31fea497bff928ce19e5cb165c7809883cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104565"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>言語サーバー プロトコルの拡張機能を追加します。
 
@@ -259,7 +259,6 @@ namespace MockLanguageExtension
         [BaseDefinition(CodeRemoteContentDefinition.CodeRemoteContentTypeName)]
         internal static ContentTypeDefinition BarContentTypeDefinition;
 
-
         [Export]
         [FileExtension(".bar")]
         [ContentType("bar")]
@@ -297,6 +296,7 @@ LSP 言語サービス拡張機能への設定のサポートを追加する以�
         "foo.maxNumberOfProblems": -1
     }
     ```
+
 2. JSON ファイルを右クリックし、選択**プロパティ**します。 変更、**ビルド**アクションを「コンテンツ」、"VSIX に含める ' プロパティを true にします。
 
 3. ConfigurationSections を実装し、JSON ファイルで定義された設定のプレフィックスの一覧を返します (Visual Studio Code で、これにマップ package.json 内の構成セクション名)。
@@ -319,6 +319,7 @@ LSP 言語サービス拡張機能への設定のサポートを追加する以�
     ```
 
     サンプル:
+
     ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"

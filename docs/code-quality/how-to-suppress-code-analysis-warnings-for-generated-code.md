@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0bc46684d94470bb5e12cbdbecb5538ceb89606
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c2d58ea5d23ed8b302b6ec2a0352f23b0eeeff66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066521"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>方法: 生成されたコードに対するコード分析の警告を表示しない
 マネージ コード コンパイラは、多くの場合、コードの迅速な開発を促進するプロジェクトに追加されるコードを生成します。 さらに、開発者は、アプリケーションを迅速に開発を支援するのにサード パーティ製ツールを使用する多くの場合にします。 これらのツールでは、プロジェクトに追加されるコードも生成します。
@@ -27,8 +27,8 @@ ms.locfileid: "55936077"
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>生成されたコードをプロジェクトで警告を抑制するには
 
-1.  ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックし、**プロパティ**します。
+1. ソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックし、**プロパティ**します。
 
-2.  クリックして**コード分析**します。
+2. クリックして**コード分析**します。
 
-3.  選択、**結果生成されたコードを表示しない**チェック ボックスをオンします。
+3. 選択、**結果生成されたコードを表示しない**チェック ボックスをオンします。

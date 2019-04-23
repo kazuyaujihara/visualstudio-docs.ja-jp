@@ -1,5 +1,5 @@
 ---
-title: カスタム ビューの作成C++オブジェクト
+title: C++ オブジェクトのカスタム ビューを作成する
 description: Natvis フレームワークを使用して、Visual Studio がデバッガーでネイティブ型を表示する方法をカスタマイズするには
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: f8ef28b453ba6c754c337c5d42581bd658be5f04
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537578"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045551"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger"></a>カスタム ビューの作成C++デバッガー内のオブジェクト
 
@@ -40,7 +40,7 @@ Natvis フレームワークを使用すると、開発者が確認できるよ�
 
 ![ビジュアライザーを使用してデータをテキスト ボックス](../debugger/media/dbg_natvis_textbox_visualizer.png "ビジュアライザーを使用してデータをテキスト ボックス")
 
-##  <a name="BKMK_Using_Natvis_files"></a>C++ プロジェクトで .natvis ファイルの使用
+## <a name="BKMK_Using_Natvis_files"></a>C++ プロジェクトで .natvis ファイルの使用
 
 Natvis は *.natvis*視覚化ルールを指定するファイル。 A *.natvis*ファイルは XML ファイルは、 *.natvis*拡張機能。 Natvis スキーマが定義されている *%VSINSTALLDIR%\Xml\Schemas\natvis.xsd*します。
 
@@ -103,17 +103,17 @@ Visual Studio デバッガーが読み込む *.natvis* C++ プロジェクト内
 
 ::: moniker range="vs-2017"
 
-3.  ユーザー固有の Natvis ディレクトリ (たとえば、 *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*)。
+3. ユーザー固有の Natvis ディレクトリ (たとえば、 *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*)。
 
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 
-3.  ユーザー固有の Natvis ディレクトリ (たとえば、 *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*)。
+3. ユーザー固有の Natvis ディレクトリ (たとえば、 *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*)。
 
 ::: moniker-end
 
-4.  システム全体の Natvis ディレクトリ (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 このディレクトリに、 *.natvis* Visual Studio と共にインストールされるファイル。 管理者のアクセス許可があれば、このディレクトリにファイルを追加することができます。
+4. システム全体の Natvis ディレクトリ (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 このディレクトリに、 *.natvis* Visual Studio と共にインストールされるファイル。 管理者のアクセス許可があれば、このディレクトリにファイルを追加することができます。
 
 ## <a name="modify-natvis-files-while-debugging"></a>デバッグ中に .natvis ファイルを変更します。
 
@@ -127,7 +127,7 @@ Visual Studio デバッガーが読み込む *.natvis* C++ プロジェクト内
 
 使用しても、 **.natvisreload**をアップグレードするコマンド、 *.natvis*ファイルより新しいバージョンにします。 たとえば、 *.natvis*その人がそれ以外の場合に加えた最近の変更を取得して、ソース管理にファイルをチェックすることがあります。
 
-##  <a name="BKMK_Expressions_and_formatting"></a> 式と書式
+## <a name="BKMK_Expressions_and_formatting"></a> 式と書式
 Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を指定します。 説明されるだけでなく、拡張機能と、デバッガーでの C++ 式の制限事項、 [Context operator (C++)](../debugger/context-operator-cpp.md)次に注意してください。
 
 - Natvis 式は、現在のスタック フレームではなく視覚化されるオブジェクトのコンテキストで評価されます。 たとえば、`x`という名前のフィールドに、Natvis 式で参照されて**x**という名前のローカル変数が、視覚化されるオブジェクトで**x**で現在の関数。 グローバル変数にアクセスすることができますが、Natvis 式内のローカル変数にアクセスできません。
@@ -154,12 +154,11 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 </Type>
 ```
 
-
 **ウォッチ**ウィンドウで、使用、 **、ビュー**書式指定子を別のビューを指定します。 単純なビューとして表示**vec,view(simple)**:
 
 ![単純なビューとウォッチ ウィンドウ](../debugger/media/watch-simpleview.png "単純なビューとウォッチ ウィンドウ")
 
-##  <a name="BKMK_Diagnosing_Natvis_errors"></a> Natvis エラー
+## <a name="BKMK_Diagnosing_Natvis_errors"></a> Natvis エラー
 
 デバッガーには、視覚化エントリのエラーが発生すると、それらを無視します。 未加工の形式で型を表示、または、別の適切な視覚化を選択します。 Natvis 診断は、デバッガーで、視覚化エントリが無視される理由を理解して基になる構文を確認し、解析エラーを使用できます。
 
@@ -169,9 +168,9 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 エラーが表示されます、**出力**ウィンドウ。
 
-##  <a name="BKMK_Syntax_reference"></a> Natvis 構文のリファレンス
+## <a name="BKMK_Syntax_reference"></a> Natvis 構文のリファレンス
 
-###  <a name="BKMK_AutoVisualizer"></a> AutoVisualizer の要素
+### <a name="BKMK_AutoVisualizer"></a> AutoVisualizer の要素
 `AutoVisualizer` 要素は *.natvis* ファイルのルート ノードであり、名前空間 `xmlns:` 属性を含みます。
 
 ```xml
@@ -184,7 +183,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 `AutoVisualizer`要素を持つことができます[型](#BKMK_Type)、 [HResult](#BKMK_HResult)、 [UIVisualizer](#BKMK_UIVisualizer)、および[CustomVisualizer](#BKMK_CustomVisualizer)子。
 
-###  <a name="BKMK_Type"></a> Type 要素
+### <a name="BKMK_Type"></a> Type 要素
 
 基本的な`Type`この例のようになります。
 
@@ -218,7 +217,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 マクロ $t1、$t2 などを使用して、視覚化エントリでテンプレート パラメーターを参照してなど。 これらのマクロの例を見つけるには、Visual Studio に付属の *.natvis* ファイルをご覧ください。
 
-####  <a name="BKMK_Visualizer_type_matching"></a> ビジュアライザーと型の対応付け
+#### <a name="BKMK_Visualizer_type_matching"></a> ビジュアライザーと型の対応付け
 視覚化エントリでは、検証に失敗した場合、[次へ] の使用可能な視覚化が使用されます。
 
 #### <a name="inheritable-attribute"></a>継承可能な属性
@@ -268,7 +267,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 </Type>
 ```
 
-###  <a name="BKMK_Condition_attribute"></a> Condition 属性
+### <a name="BKMK_Condition_attribute"></a> Condition 属性
 
 省略可能な`Condition`属性は、多くの視覚化要素の使用と視覚化ルールを使用するかを指定します。 Condition 属性内の式が解決される場合`false`、視覚化ルールは適用されません。 評価されると、 `true`、か、ありません`Condition`属性、視覚エフェクトに適用されます。 視覚化エントリの場合、その他のロジックについては、この属性を使用することができます。
 
@@ -304,7 +303,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 使用することができます、`IncludeView`と`ExcludeView`型および個々 のメンバーの属性。
 
-###  <a name="BKMK_Versioning"></a> Version 要素
+### <a name="BKMK_Versioning"></a> Version 要素
 `Version`要素には、特定のモジュールとバージョンを視覚化エントリのスコープします。 `Version`要素により、名前の競合を回避できます、不用意が削減され、さまざまな種類のバージョンのさまざまな視覚エフェクトを使用します。
 
 異なるモジュールで使用される共通のヘッダー ファイルには、型が定義されている場合、型が、指定したモジュールのバージョンの場合にのみ、バージョン管理された視覚エフェクトが表示されます。
@@ -321,7 +320,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 </Type>
 ```
 
-###  <a name="BKMK_DisplayString"></a> DisplayString 要素
+### <a name="BKMK_DisplayString"></a> DisplayString 要素
 `DisplayString`要素は、変数の値として表示する文字列を指定します。 この要素には、任意の文字列を式と組み合わせて使用できます。 中かっこ内のすべてのものは式として解釈されます。 たとえば、次`DisplayString`エントリ。
 
 ```xml
@@ -339,7 +338,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 > [!NOTE]
 > `DisplayString` 要素でのみ、任意の文字列と中かっこ構文を使用できます。 その他のすべての視覚化要素では、デバッガーで評価できる式のみを受け入れます。
 
-###  <a name="BKMK_StringView"></a> StringView 要素
+### <a name="BKMK_StringView"></a> StringView 要素
 
 `StringView`要素は、デバッガーが組み込みテキスト ビジュアライザーに送信できる値を定義します。 たとえばの次の視覚エフェクトを指定、`ATL::CStringT`型。
 
@@ -368,7 +367,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 式`{m_pszData,su}`C++ 書式指定子が含まれています**su**を Unicode 文字列として値を表示します。 詳細については、次を参照してください。[書式指定子で C++](../debugger/format-specifiers-in-cpp.md)します。
 
-###  <a name="BKMK_Expand"></a> 要素を展開します。
+### <a name="BKMK_Expand"></a> 要素を展開します。
 
 省略可能な`Expand`ノードが [変数] ウィンドウで型を展開すると、視覚化された型の子をカスタマイズします。 `Expand`ノードが子要素を定義する子ノードの一覧を受け入れます。
 
@@ -376,7 +375,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 - 場合、`Expand`ノードは、デバッガー ウィンドウで、型が拡張できない、その下にある子ノードなしで指定します。
 
-####  <a name="BKMK_Item_expansion"></a> Item の展開
+#### <a name="BKMK_Item_expansion"></a> Item の展開
 
  `Item`要素が、最も基本的で一般的な要素で、`Expand`ノード。 `Item` は 1 つの子要素を定義します。 たとえば、`CRect`フィールドを持つクラス`top`、 `left`、 `right`、および`bottom`は次の視覚化エントリがあります。
 
@@ -401,7 +400,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 > [!NOTE]
 > Item 要素の式は、複合型を指している場合、**項目**ノード自体が展開されます。
 
-####  <a name="BKMK_ArrayItems_expansion"></a> Size
+#### <a name="BKMK_ArrayItems_expansion"></a> Size
 `ArrayItems` ノードを使用すると、Visual Studio デバッガーによって型が配列として解釈され、その個々の要素が表示されるようになります。 `std::vector` の視覚化は良い使用例です。
 
 ```xml
@@ -457,7 +456,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 ![ArrayItems の展開の 2 次元配列](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "ArrayItems の展開の 2 次元配列")
 
-####  <a name="BKMK_IndexListItems_expansion"></a> IndexListItems の展開
+#### <a name="BKMK_IndexListItems_expansion"></a> IndexListItems の展開
 
 使用することができます`ArrayItems`配列の要素は連続してメモリに配置する場合にのみ展開します。 デバッガーは、単にそのポインターをインクリメントして次の要素を取得します。 値のノードにインデックスを操作する必要がある場合を使用して、`IndexListItems`ノード。 ここでの視覚化、`IndexListItems`ノード。
 
@@ -479,7 +478,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 >[!NOTE]
 >使用することができます、`[]`演算子の例では、`vector[i]`を使用する 1 次元配列視覚エフェクトで`IndexListItems`場合でも、型自体 (たとえば`CATLArray`) が、この演算子を許可していません。
 
-####  <a name="BKMK_LinkedListItems_expansion"></a> LinkedListItems の展開
+#### <a name="BKMK_LinkedListItems_expansion"></a> LinkedListItems の展開
 
 視覚化された型がリンク リストを表す場合、デバッガーは `LinkedListItems` ノードを使用してその子を表示できます。 次の視覚エフェクト、`CAtlList`使用している種類`LinkedListItems`:
 
@@ -556,7 +555,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 - `TreeTraverse_Next // Returns nodes in a tree`
 - `TreeTraverse_Skip // Skips nodes in a pending tree traversal`
 
-####  <a name="BKMK_TreeItems_expansion"></a> TreeItems の展開
+#### <a name="BKMK_TreeItems_expansion"></a> TreeItems の展開
  視覚化された型がツリーを表す場合、デバッガーはツリーをたどり、 `TreeItems` ノードを使用してその子を表示できます。 ここでは、視覚エフェクト、`std::map`を使用して型を`TreeItems`ノード。
 
 ```xml
@@ -578,7 +577,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 構文に似ています、`LinkedListItems`ノード。 `LeftPointer`、 `RightPointer`、および`ValueNode`、ツリー ノード クラスのコンテキストで評価されます。 `ValueNode` 空のままにできるかを使用して、`this`を参照する、`TreeItems`ノード自体です。
 
-####  <a name="BKMK_ExpandedItem_expansion"></a> ExpandedItem の展開
+#### <a name="BKMK_ExpandedItem_expansion"></a> ExpandedItem の展開
  `ExpandedItem`場合、視覚化された型の子と同様に、基本クラスまたはデータ メンバーのプロパティを表示することによって要素が子の集約ビューを生成します。 デバッガーでは、指定された式を評価し、視覚化された型の子リストに、結果の子ノードを追加します。
 
 たとえば、スマート ポインター型`auto_ptr<vector<int>>`として表示されます。
@@ -612,7 +611,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 派生クラスの視覚化の対応付けを無効にする **nd** 書式指定子がここで必要になります。 それ以外の場合、式`*(CFrameworkElement*)this`なる、`CPanel`最も適切なものと既定のビジュアル化の照合ルールを入力するため、ここでも、適用する視覚化を考えています。 使用して、 **nd**書式指定子を基底クラスに視覚化があるない場合は、基底クラスの視覚化、または既定の展開を使用するデバッガーに指示します。
 
-####  <a name="BKMK_Synthetic_Item_expansion"></a> Synthetic Item の展開
+#### <a name="BKMK_Synthetic_Item_expansion"></a> Synthetic Item の展開
  `ExpandedItem` 要素は階層を排除することでデータ ビューを平坦化しますが、`Synthetic` ノードはその反対のことを行います。 式の結果が意図的な子要素を作成することができます。 人為的な要素には、独自の子要素を持つことができます。 次の例では、 `Concurrency::array` 型の視覚化で `Synthetic` ノードを使用して、診断メッセージをユーザーに表示しています。
 
 ```xml
@@ -634,7 +633,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
  ![合成要素の展開で:array](../debugger/media/dbg_natvis_expand_synthetic.png ":array で合成要素の拡張")
 
-###  <a name="BKMK_HResult"></a> HResult 要素
+### <a name="BKMK_HResult"></a> HResult 要素
  `HResult`要素に表示される情報をカスタマイズすることができます、 **HRESULT**のデバッガー ウィンドウにします。 `HRValue` 要素には、カスタマイズする **HRESULT** の 32 ビット値を格納する必要があります。 `HRDescription`要素には、デバッガー ウィンドウに表示する情報が含まれています。
 
 ```xml
@@ -645,7 +644,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 </HResult>
 ```
 
-###  <a name="BKMK_UIVisualizer"></a> UIVisualizer 要素
+### <a name="BKMK_UIVisualizer"></a> UIVisualizer 要素
 `UIVisualizer` 要素は、グラフィカル ビジュアライザー プラグインをデバッガーに登録するために使用します。 ダイアログ ボックスまたは他のインターフェイスを表示する変数またはオブジェクトの方法でのデータ型で一貫性のあるグラフィカル ビジュアライザーを作成します。 ビジュアライザー プラグインとして作成する必要があります、 [VSPackage](../extensibility/internals/vspackages.md)デバッガーが使用できるサービスを公開する必要があります。 *.Natvis*ファイルには、名前、公開されているサービス、および視覚化できる型の GUID など、プラグインの登録情報が含まれています。
 
 ここでは、UIVisualizer 要素の例を示しています。

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d85803e478931022e5872ddde2746b5b90feacf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 56ecbfcdaf22132f63df1ecf5eadba97dee426af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078084"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>方法: プログラムによって Excel の範囲に色を適用します。
   セルの範囲内のテキストの色を適用するには、使用、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールまたはネイティブな Excel 範囲オブジェクト。
@@ -31,12 +31,12 @@ ms.locfileid: "56614130"
 
 ### <a name="to-apply-color-to-a-namedrange-control"></a>NamedRange コントロールに色を適用するには
 
-1.  作成、<xref:Microsoft.Office.Tools.Excel.NamedRange>セル A1 にあるコントロール。
+1. 作成、<xref:Microsoft.Office.Tools.Excel.NamedRange>セル A1 にあるコントロール。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#65)]
      [!code-vb[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#65)]
 
-2.  内のテキストの色を設定、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロール。
+2. 内のテキストの色を設定、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロール。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#66)]
      [!code-vb[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#66)]
@@ -45,7 +45,7 @@ ms.locfileid: "56614130"
 
 ### <a name="to-apply-color-to-a-native-excel-range-object"></a>ネイティブな Excel 範囲オブジェクトに色を適用するには
 
-1.  セル A1 に範囲を作成し、テキストの色を設定します。
+1. セル A1 に範囲を作成し、テキストの色を設定します。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]

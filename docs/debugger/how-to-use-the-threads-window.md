@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790798"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>チュートリアル: [スレッド] ウィンドウを使用してマルチ スレッド アプリのデバッグ (C#、Visual Basic、C++)
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>チュートリアル: [スレッド] ウィンドウを使用してマルチ スレッド アプリのデバッグ (C#、Visual Basic、 C++)
 
 いくつかの Visual Studio ユーザー インターフェイス要素では、マルチ スレッド アプリケーションをデバッグするのに役立ちます。 この記事には、コード エディター ウィンドウで、マルチ スレッドのデバッグ機能が導入されています**デバッグの場所**ツールバー、および**スレッド**ウィンドウ。 マルチ スレッド アプリケーションをデバッグするためには、その他のツールについては、次を参照してください。[マルチ スレッド アプリケーションのデバッグの開始](../debugger/get-started-debugging-multithreaded-apps.md)します。
 
@@ -37,17 +37,17 @@ ms.locfileid: "58790798"
 1. Visual Studio を起動し、新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    キーを押して**Esc**開始 ウィンドウを閉じます。 型**Ctrl + Q**を検索ボックスを開き、「**コンソール**(または**c++**)、選択**テンプレート**、し。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 型**Ctrl + Q**を検索ボックスを開き、「**コンソール**(または**c++**)、選択**テンプレート**、し。
 
     - C#、選択**新しいコンソール アプリ (.NET Framework) プロジェクトの作成**のC#します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
-    - C++ では、選択**新しいコンソール アプリ プロジェクトの作成**です。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    - C++、選択**新しいコンソール アプリ プロジェクトの作成**します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
 
     などの名前を入力し、 **MyThreadWalkthroughApp**クリック**作成**します。
     ::: moniker-end
     ::: moniker range="vs-2017"
     上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 左側のウィンドウで、**新しいプロジェクト** ダイアログ ボックスで、次を選択します。
     - C#アプリ  **Visual C#** 、選択**Windows デスクトップ**、中央のペインの **コンソール アプリ (.NET Framework)** します。
-    - C++ アプリでは、 **Visual C**、選択**Windows デスクトップ**、および選び、 **Windows コンソール アプリケーション**します。
+    - C++アプリで、 **Visual C++** 、選択**Windows デスクトップ**、および選び、 **Windows コンソール アプリケーション**します。
 
     などの名前を入力し、 **MyThreadWalkthroughApp**  をクリック**OK**します。
     ::: moniker-end
@@ -56,7 +56,7 @@ ms.locfileid: "58790798"
 
     新しいプロジェクトに表示されます**ソリューション エクスプ ローラー**、というソース ファイルと*Program.cs*または*MyThreadWalkthroughApp.cpp*ソース コード ウィンドウで開きます。
 
-1. ソース ファイル内のコードを置き換える、C#または C++ の例のコードから[マルチ スレッド アプリケーションのデバッグの開始](../debugger/get-started-debugging-multithreaded-apps.md)します。
+1. ソース ファイル内のコードを置き換える、C#またはC++からコードを例[マルチ スレッド アプリケーションのデバッグの開始](../debugger/get-started-debugging-multithreaded-apps.md)します。
 
 1. 選択**ファイル** > **すべて保存**します。
 
@@ -109,7 +109,7 @@ ms.locfileid: "58790798"
 
 1. 開く、**デバッグの場所**を選択してツールバー**ビュー** > **ツールバー** > **デバッグの場所**します。 ツールバー領域で右クリックして**デバッグの場所**します。
 
-1. **デバッグの場所**ツールバーが 3 つのフィールド:**プロセス**、**スレッド**、および**スタック フレーム**します。 ドロップダウン リスト、**スレッド**一覧、およびスレッドの数に注意してください。 **スレッド**で現在実行中のスレッドがマークされている、リスト、 **>** シンボル。
+1. **デバッグの場所**ツールバーが 3 つのフィールド。**プロセス**、**スレッド**、および**のスタック フレーム**します。 ドロップダウン リスト、**スレッド**一覧、およびスレッドの数に注意してください。 **スレッド**で現在実行中のスレッドがマークされている、リスト、 **>** シンボル。
 
 1. ソース コード ウィンドウの余白で、スレッド マーカーのアイコンをポイントし、データヒントで、フラグ アイコン (または空のフラグ アイコンのいずれか) を選択します。 フラグ アイコンが赤に変わります。
 
@@ -198,4 +198,4 @@ ms.locfileid: "58790798"
 
 ## <a name="see-also"></a>関連項目
 - [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [方法 : デバッグ中に別のスレッドに切り替える](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+- [方法: デバッグ中に別のスレッドに切り替える](../debugger/how-to-switch-to-another-thread-while-debugging.md)

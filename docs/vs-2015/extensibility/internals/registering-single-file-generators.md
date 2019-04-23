@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978352"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055419"
 ---
 # <a name="registering-single-file-generators"></a>単一ファイル ジェネレーターの登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58978352"
   
 ### <a name="to-register-a-custom-tool"></a>カスタム ツールを登録するには  
   
-1.  カスタム ツールの DLL を登録するかで、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ローカル レジストリかシステム レジストリの HKEY_CLASSES_ROOT の下。  
+1. カスタム ツールの DLL を登録するかで、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ローカル レジストリかシステム レジストリの HKEY_CLASSES_ROOT の下。  
   
      たとえば、マネージ MSDataSetGenerator カスタム ツールに付属している登録情報をここでは[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -38,17 +38,17 @@ ms.locfileid: "58978352"
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  必要なレジストリ キーを作成[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ジェネレーターでの hive\\*GUID*場所*GUID* GUID は、特定の言語のプロジェクト システムまたはサービスによって定義されます。 カスタム ツールのプログラムによる名前のキーの名前になります。 カスタム ツールのキーでは、次の値があります。  
+2. 必要なレジストリ キーを作成[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ジェネレーターでの hive\\*GUID*場所*GUID* GUID は、特定の言語のプロジェクト システムまたはサービスによって定義されます。 カスタム ツールのプログラムによる名前のキーの名前になります。 カスタム ツールのキーでは、次の値があります。  
   
-    -   (既定)  
+    - (既定)  
   
          任意。 カスタム ツールのわかりやすい説明を提供します。 このパラメーターは省略可、ただし推奨されるは。  
   
-    -   CLSID  
+    - CLSID  
   
          必須。 実装する COM コンポーネントのクラス ライブラリの識別子を指定します<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>します。  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
          必須。 このカスタムのツールによって生成されたファイルからの種類をビジュアル デザイナーを使用できる構成されるかどうかを示します。 このパラメーターの値は、ビジュアル デザイナーを使用できない種類の 0 (ゼロ) やビジュアル デザイナーを使用可能な型の (1 つ) の 1 にする必要があります。  
   

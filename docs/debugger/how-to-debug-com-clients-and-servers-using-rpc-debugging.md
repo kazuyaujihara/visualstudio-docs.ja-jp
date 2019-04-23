@@ -26,25 +26,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01dca60a19adcf27652bccd096d6e1596ec2fc15
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: a4cd55ff42bc4ba81df881045d06362b469f009b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112703"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>方法 : RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>方法: RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする
 リモート プロシージャ コール (RPC: Remote Procedure Call) デバッグを使用して、COM クライアント/サーバー アプリケーションをデバッグできます。 このデバッグを行うには、あらかじめ RPC デバッグを有効にする必要があります。 RPC デバッグを有効にすると、ステップ実行でクライアントからサーバーを呼び出すときに、デバッガーがサーバーにアタッチし、コードのデバッグができるようになります。 デバッガーをアタッチすることにより、クライアントおよびサーバーのどちらのプロセスでも、デバッガーのすべての機能を使用できます。
 
 ### <a name="to-enable-rpc-debugging"></a>RPC デバッグを有効にするには
 
-1.  **[ツール]** メニューの **[オプション]** をクリックします。
+1. **[ツール]** メニューの **[オプション]** をクリックします。
 
-2.  **[オプション]** ダイアログ ボックスで、**[デバッグ]** フォルダーをクリックします。
+2. **[オプション]** ダイアログ ボックスで、**[デバッグ]** フォルダーをクリックします。
 
-3.  **[ネイティブ]** ページをクリックします。
+3. **[ネイティブ]** ページをクリックします。
 
-4.  **[RPC デバッグ]** チェック ボックスをオンにします。
+4. **[RPC デバッグ]** チェック ボックスをオンにします。
 
     > [!NOTE]
     >  RPC 呼び出しをデバッグするには、管理者またはパワー ユーザーの権限が必要です。

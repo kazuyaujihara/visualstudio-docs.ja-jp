@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002767"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076212"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59002767"
 
 ### <a name="to-download-and-install-the-remote-tools"></a>ダウンロードして、リモート ツールをインストールするには
   
-1.  デバイスまたはサーバーをデバッグするコンピューター (はなく Visual Studio を実行しているコンピューター) 上には、リモート ツールの適切なバージョンを取得します。
+1. デバイスまたはサーバーをデバッグするコンピューター (はなく Visual Studio を実行しているコンピューター) 上には、リモート ツールの適切なバージョンを取得します。
 
     |Version|リンク|メモ|
     |-|-|-|
@@ -47,14 +47,14 @@ ms.locfileid: "59002767"
     |Visual Studio 2013|[リモート ツール](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Visual Studio 2013 のドキュメント内のページをダウンロードします。|
     |Visual Studio 2012|[リモート ツール](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Visual Studio 2012 のドキュメント内のページをダウンロードします。|
   
-2.  [ダウンロード] ページで、オペレーティング システム (x 86、x64、または ARM バージョン) に一致するバージョンのツールを選択し、リモート ツールをダウンロードします。
+2. [ダウンロード] ページで、オペレーティング システム (x 86、x64、または ARM バージョン) に一致するバージョンのツールを選択し、リモート ツールをダウンロードします。
   
     > [!IMPORTANT]
     >  Visual Studio のバージョンに一致する remote tools の最新バージョンをインストールすることをお勧めします。 一致しないバージョンは推奨されません。  
     >   
     >  さらをインストールするオペレーティング システムと同じアーキテクチャを持つリモート ツールをインストールする必要があります。 つまり、64 ビットのオペレーティング システムを実行しているリモート コンピューター上の 32 ビット アプリケーションをデバッグする場合は、リモート コンピューターのリモート ツールの 64 ビット バージョンをインストールする必要があります。  
   
-3.  実行可能ファイルのダウンロードが完了したら、アプリケーションをリモート コンピューターにインストールするための指示に従います。 参照してください[セットアップ手順](#bkmk_setup)
+3. 実行可能ファイルのダウンロードが完了したら、アプリケーションをリモート コンピューターにインストールするための指示に従います。 参照してください[セットアップ手順](#bkmk_setup)
 
 リモートのコンピューターにリモート デバッガー (msvsmon.exe) をコピーし、実行しようとする場合がありますが、**リモート デバッガー構成ウィザード**(**rdbgwiz.exe**) をダウンロードする場合にのみがインストールされている、ツール、およびするは、特にリモート デバッガーをサービスとして実行する場合に、後で構成ウィザードを使用する必要があります。 詳細については、次を参照してください。 [(省略可能) 構成サービスとしてリモート デバッガー](#bkmk_configureService)以下。
 
@@ -75,31 +75,30 @@ ms.locfileid: "59002767"
 > [!TIP] 
 > コマンド ライン インストールおよびコマンド ライン リファレンスでは、ヘルプ ページをご覧ください**msvsmon.exe** 」と入力して``msvsmon.exe /?``で Visual Studio がインストールされているコンピューターでコマンドラインで (に移動または**ヘルプ/使用状況**リモート デバッガーで)。
 
-  
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  リモート コンピューターで次のいずれかのオペレーティング システムが実行されている必要があります。  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8 または 8.1  
+- Windows 8 または 8.1  
   
--   Windows 7 Service Pack 1  
+- Windows 7 Service Pack 1  
   
--   Windows Server 2012 または Windows Server 2012 R2  
+- Windows Server 2012 または Windows Server 2012 R2  
   
--   Windows Server 2008 Service Pack 2、Windows Server 2008 R2 Service Pack 1  
+- Windows Server 2008 Service Pack 2、Windows Server 2008 R2 Service Pack 1  
   
 ## <a name="supported-hardware-configurations"></a>サポートされているハードウェア構成  
   
--   1.6 GHz 以上の高速プロセッサ  
+- 1.6 GHz 以上の高速プロセッサ  
   
--   1 GB の RAM (仮想マシン上で実行されている場合は 1.5 GB)  
+- 1 GB の RAM (仮想マシン上で実行されている場合は 1.5 GB)  
   
--   1 GB のハード ディスク空き容量  
+- 1 GB のハード ディスク空き容量  
   
--   5400 RPM のハード ドライブ  
+- 5400 RPM のハード ドライブ  
   
--   1024 x 768 以上のディスプレイ解像度の DirectX 9 対応ビデオ カード  
+- 1024 x 768 以上のディスプレイ解像度の DirectX 9 対応ビデオ カード  
   
 ## <a name="network-configuration"></a>ネットワーク構成  
  リモート コンピューターと Visual Studio コンピューターは、ネットワーク、ワークグループ、またはホームグループを介して接続されているか、あるいはイーサネット ケーブルによって直接接続されている必要があります。 インターネットを介したデバッグはサポートされません。  
@@ -148,7 +147,7 @@ ms.locfileid: "59002767"
    > [!WARNING]
   >  リモート ツールを [認証なし] モードで実行することも選択できますが、このモードの使用は避けることを強く推奨します。 このモードで実行した場合、ネットワーク セキュリティはまったく提供されません。 [認証なし] モードは、ネットワークに悪意のあるコードや悪意のあるトラフィックのリスクがないことが確実である場合にのみ選択してください。
 
-##  <a name="bkmk_configureService"></a> (省略可能)サービスとしてリモート デバッガーを構成します。
+## <a name="bkmk_configureService"></a> (省略可能)サービスとしてリモート デバッガーを構成します。
  ASP.NET およびその他のサーバー環境でデバッグ、リモート デバッガーを管理者として実行かを常に実行する場合は、サービスとしてリモート デバッガーを実行します。
   
  サービスとしてリモート デバッガーを構成するには、以下の手順を実行します。  
@@ -283,16 +282,16 @@ ms.locfileid: "59002767"
   
  詳細については、リモート デバッグのヘルプを参照してください (キーを押して**F1**リモート デバッガー ウィンドウで**ヘルプ/使用状況**)。 詳細については、「[.NET Remote Symbol Loading Changes in Visual Studio 2012 and 2013 (Visual Studio 2012 および 2013 における .NET のリモート シンボルの読み込みの変更)](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)」を参照してください。  
   
-##  <a name="bkmk_winstoreAzure"></a> Windows ストアと Azure アプリでのリモート デバッグ  
+## <a name="bkmk_winstoreAzure"></a> Windows ストアと Azure アプリでのリモート デバッグ  
  Windows ストア アプリでのリモート デバッグについては、次を参照してください。[デバッグし、Visual Studio からリモート デバイス上の Windows ストア アプリをテスト](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx)します。  
   
  Azure でのデバッグ方法の詳細については、次のトピックのいずれかを参照してください。  
   
--   [Visual Studio での仮想マシンまたはクラウド サービスのデバッグ](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
+- [Visual Studio での仮想マシンまたはクラウド サービスのデバッグ](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
--   [Visual Studio で .NET バックエンドのデバッグ](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
+- [Visual Studio で .NET バックエンドのデバッグ](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
--   Azure Websites でのリモート デバッグの概要 ([パート 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/)、[パート 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/)、[パート 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/))。  
+- Azure Websites でのリモート デバッグの概要 ([パート 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/)、[パート 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/)、[パート 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/))。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)   

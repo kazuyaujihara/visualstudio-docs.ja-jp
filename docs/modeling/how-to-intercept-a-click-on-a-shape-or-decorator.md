@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb3a96889d96911f43e7c8c271cea12951f9cfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 531e723bbc7c1b288a73f1ea036cb24efcf8ce4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916155"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056120"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>方法: シェイプまたはデコレーターに対するクリック操作を受け取る
 次の手順では、図形または、アイコン デコレーターに対するクリックする方法を説明します。 数回のクリックをインターセプトできるをダブルクリックしたにドラッグ、およびその他のジェスチャをし応答要素。
@@ -43,11 +43,11 @@ public partial class MyShape // change
 
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>アイコン、デコレーターに対するクリックするには
 
-1.  開くか、DSL ソリューションを作成します。
+1. 開くか、DSL ソリューションを作成します。
 
-2.  選択またはアイコン デコレータでは、図形を作成し、ドメイン クラスにマップします。
+2. 選択またはアイコン デコレータでは、図形を作成し、ドメイン クラスにマップします。
 
-3.  コード ファイル内のファイルとは別に、`GeneratedCode`フォルダー、ImageField の新しいサブクラスを作成します。
+3. コード ファイル内のファイルとは別に、`GeneratedCode`フォルダー、ImageField の新しいサブクラスを作成します。
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -85,7 +85,7 @@ public partial class MyShape // change
 
      処理済みイベントが含まれている図形に渡されるしたくない場合は true に設定してください。
 
-4.  次の部分クラス定義を追加することで、図形渡してで InitializeShapeFields メソッドをオーバーライドします。
+4. 次の部分クラス定義を追加することで、図形渡してで InitializeShapeFields メソッドをオーバーライドします。
 
     ```csharp
     public partial class MyShape // change
@@ -112,9 +112,9 @@ public partial class MyShape // change
     }
     ```
 
-1.  ソリューションをビルドして実行します。
+1. ソリューションをビルドして実行します。
 
-2.  図形のインスタンス上のアイコンをダブルクリックします。 テスト メッセージが表示されます。
+2. 図形のインスタンス上のアイコンをダブルクリックします。 テスト メッセージが表示されます。
 
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>インターセプトをクリックしておよびドラッグ CompartmentShape リスト
  次の例では、順序にドラッグしてコンパートメント シェイプで項目を変更することができます。 このコードを実行します。
@@ -131,19 +131,19 @@ public partial class MyShape // change
 
    要約すると、コードの次のように動作します。 この例で`ClassShape`コンパートメント シェイプの名前を指定します。
 
--   マウス イベント ハンドラーのセットは、作成時に、各コンパートメント インスタンスにアタッチされます。
+- マウス イベント ハンドラーのセットは、作成時に、各コンパートメント インスタンスにアタッチされます。
 
--   `ClassShape.MouseDown`イベントは、現在の項目を格納します。
+- `ClassShape.MouseDown`イベントは、現在の項目を格納します。
 
--   移動したときに、マウス、現在のアイテムから MouseAction のインスタンスが作成されたカーソルを設定し、解放されるまでマウスをキャプチャします。
+- 移動したときに、マウス、現在のアイテムから MouseAction のインスタンスが作成されたカーソルを設定し、解放されるまでマウスをキャプチャします。
 
      項目のテキストを選択するなど、他のマウス操作で干渉を避けるため、マウスが、元の項目を左になるまで、MouseAction は作成されません。
 
      MouseAction を作成する代わりには、MouseUp リッスンするように単純になります。 ただし、これは正しく機能しません、コンパートメントの外側にドラッグした後、マウスを離した場合。 MouseAction はマウスがリリースされた場所に関係なく、適切なアクションを実行できません。
 
--   マウスがリリースされると、MouseAction.MouseUp はモデル要素間のリンクの順序を並べ替えます。
+- マウスがリリースされると、MouseAction.MouseUp はモデル要素間のリンクの順序を並べ替えます。
 
--   ロールの順序の変更には、表示を更新する規則が適用されます。 この動作が既に定義されているし、コードを追加する必要はありません。
+- ロールの順序の変更には、表示を更新する規則が適用されます。 この動作が既に定義されているし、コードを追加する必要はありません。
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

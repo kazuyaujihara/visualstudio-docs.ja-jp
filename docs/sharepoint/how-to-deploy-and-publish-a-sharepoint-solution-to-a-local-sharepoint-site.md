@@ -13,31 +13,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6911c237f5994e809900fcf3bd49e3b9cf83e31c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067756"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>方法: 配置し、SharePoint ソリューションをローカル SharePoint サイトに発行します。
   展開するか、開発用コンピューターにローカル SharePoint サーバーに SharePoint ソリューションを発行します。 展開プロセスのコピー、 *.wsp* SharePoint サーバーにファイルが、ソリューションをインストールして、機能をアクティブにします。 コピーのみを処理する、発行、 *.wsp*ファイルを SharePoint サーバーにし、そのインストールします。 SharePoint で有効にすることがアクティブ化する必要があります手動でします。
 
 ## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>ローカルの SharePoint サーバーに SharePoint ソリューションをデプロイするには
 
-1.  **ソリューション エクスプ ローラー**、デプロイするプロジェクトを選択します。
+1. **ソリューション エクスプ ローラー**、デプロイするプロジェクトを選択します。
 
-2.  メニュー バーで、**ビルド**、**ソリューションの配置**します。
+2. メニュー バーで、**ビルド**、**ソリューションの配置**します。
 
      *.Wsp*ファイルが作成され、ローカルの SharePoint サーバーにインストールします。 また、機能がアクティブ化されます。
 
 ## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>SharePoint ソリューションをローカル SharePoint サーバーに発行するには
 
-1.  **ソリューション エクスプ ローラー**、クリックして発行する SharePoint プロジェクトのショートカット メニューを開き**発行**します。
+1. **ソリューション エクスプ ローラー**、クリックして発行する SharePoint プロジェクトのショートカット メニューを開き**発行**します。
 
-2.  **発行** ダイアログ ボックスで、選択、**ファイル システムに公開**オプション ボタンをクリックします。
+2. **発行** ダイアログ ボックスで、選択、**ファイル システムに公開**オプション ボタンをクリックします。
 
-3.  **ターゲットの場所**テキスト ボックスに、ローカル パスを入力し、、**発行**ボタンをクリックします。
+3. **ターゲットの場所**テキスト ボックスに、ローカル パスを入力し、、**発行**ボタンをクリックします。
 
      Visual Studio で発行の進行状況が表示されます。**出力**ウィンドウ。 プロセスが終了すると、ソリューション (*.wsp*) ファイルがローカルの SharePoint サーバーにインストールされています。 ただし、まだがアクティブ化があります SharePoint で使用します。 ソリューション ファイルが既に存在する場合、エラーが発生し、既存のファイルを上書きするかどうかを確認します。 パッケージのアップグレード方法の詳細についてでリモート パッケージのアップグレードに関するセクションをご覧ください。[方法。配置、発行、およびリモート サーバー上で SharePoint ソリューションのアップグレード](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)します。
 

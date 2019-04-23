@@ -12,26 +12,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1bf4f23ffc6d06313c39f0ffe25b9f1a6ffe595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040717"
 ---
 # <a name="ribbon-object-model-overview"></a>リボン オブジェクト モデルの概要
-  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]取得および実行時にリボン コントロールのプロパティを設定するのに使用できる厳密に型指定されたオブジェクト モデルを公開します。 たとえば、メニュー コントロールを動的に設定したり、コントロールの表示/非表示をコンテキストに応じて切り替えたりすることができます。 Office アプリケーションがリボンを読み込む前であれば、タブ、グループ、およびコントロールをリボンに追加することもできます。 詳しくは、[読み取り専用になるプロパティを設定](#SettingReadOnlyProperties)を参照してください。
+  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]取得および実行時にリボン コントロールのプロパティを設定するのに使用できる厳密に型指定されたオブジェクト モデルを公開します。 たとえば、メニュー コントロールを動的に設定したり、コントロールの表示/非表示をコンテキストに応じて切り替えたりすることができます。 Office アプリケーションがリボンを読み込む前であれば、タブ、グループ、およびコントロールをリボンに追加することもできます。 詳しくは、次を参照してください。[読み取り専用になるプロパティを設定](#SettingReadOnlyProperties)します。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
  このリボン オブジェクト モデルは、主に、[リボン クラス](#RibbonClass)、[リボン イベント](#RibbonEvents)、および[リボン コントロール クラス](#RibbonControlClasses)します。
 
-##  <a name="RibbonClass"></a> リボン クラス
+## <a name="RibbonClass"></a> リボン クラス
  新しいを追加すると**リボン (ビジュアル デザイナー)** Visual Studio の追加、プロジェクトに項目を**リボン**をプロジェクトにクラス。 **リボン**クラスから継承、<xref:Microsoft.Office.Tools.Ribbon.RibbonBase>クラス。
 
  このクラスは、リボン コード ファイルとリボン デザイナー コード ファイルを分割する部分クラスとして位置付けられます。
 
-##  <a name="RibbonEvents"></a> リボンのイベント
+## <a name="RibbonEvents"></a> リボンのイベント
  **リボン**クラスには、次の 3 つのイベントが含まれています。
 
 |event|説明|
@@ -40,10 +40,10 @@ ms.locfileid: "56601037"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|リボンが読み込まれるときにリボンのカスタマイズ内のイメージをキャッシュできます。 このイベント ハンドラーで、リボンのイメージをキャッシュするコードを記述する場合は、わずかなパフォーマンスの向上を取得できます。 詳細については、「 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> 」を参照してください。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|リボンのインスタンスを閉じるときに発生します。|
 
-##  <a name="RibbonControlClasses"></a> リボン コントロール
+## <a name="RibbonControlClasses"></a> リボン コントロール
  <xref:Microsoft.Office.Tools.Ribbon>名前空間に表示される各コントロールの型が含まれています、 **Office リボン コントロール**のグループ、**ツールボックス**します。
 
- 各 `Ribbon` コントロールの型を次の表に示します。 各コントロールの説明は、[リボンの概要](../vsto/ribbon-overview.md)を参照してください。
+ 各 `Ribbon` コントロールの型を次の表に示します。 各コントロールの説明は、次を参照してください。[リボンの概要](../vsto/ribbon-overview.md)します。
 
 |コントロール名|クラス名|
 |------------------|----------------|
@@ -70,7 +70,7 @@ ms.locfileid: "56601037"
 ### <a name="common-tasks-using-the-properties-of-ribbon-controls"></a>リボン コントロールのプロパティを使用して一般的なタスク
  各 `Ribbon` コントロールには、コントロールへのラベルの割り当てやコントロールの表示/非表示の切り替えなど、さまざまなタスクの実行に使用できるプロパティが含まれています。
 
- 場合によっては、プロパティ読み取り専用にリボンが読み込まれた後、またはコントロールが動的メニューに追加されます。 詳細については、[読み取り専用になるプロパティを設定](#SettingReadOnlyProperties)を参照してください。
+ 場合によっては、プロパティ読み取り専用にリボンが読み込まれた後、またはコントロールが動的メニューに追加されます。 詳細については、次を参照してください。[読み取り専用になるプロパティを設定](#SettingReadOnlyProperties)します。
 
  `Ribbon` コントロールのプロパティを使用して実行できる一部のタスクについて、次の表で説明します。
 
@@ -84,13 +84,12 @@ ms.locfileid: "56601037"
 |ユーザー定義のデータをコントロールに追加する。|Tag プロパティを使用します。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>、<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>、<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>、<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> コントロール。|Items プロパティを使用します。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>、<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>、<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> のいずれかのコントロールに項目を追加する。|Items プロパティを使用します。|
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> にコントロールを追加する。|Items プロパティを使用します。<br /><br /> コントロールを追加する、<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>設定する必要があります、リボンが Office アプリケーションに読み込まれた後、<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A>プロパティを**true**リボンが Office アプリケーションに読み込まれる前にします。 詳しくは、[読み取り専用になるプロパティを設定](#SettingReadOnlyProperties)を参照してください。|
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> にコントロールを追加する。|Items プロパティを使用します。<br /><br /> コントロールを追加する、<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>設定する必要があります、リボンが Office アプリケーションに読み込まれた後、<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A>プロパティを**true**リボンが Office アプリケーションに読み込まれる前にします。 詳しくは、次を参照してください。[読み取り専用になるプロパティを設定](#SettingReadOnlyProperties)します。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> 内の選択された項目を取得する。<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> または <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|SelectedItem プロパティを使用します。 <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> では、<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> プロパティを使用します。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab> 上のグループを取得する。|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A> プロパティを使用します。|
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> に表示する行および列の数を指定する。|
-  <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> プロパティおよび <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> プロパティを使用します。|
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> に表示する行および列の数を指定する。|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> プロパティおよび <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> プロパティを使用します。|
 
-##  <a name="SettingReadOnlyProperties"></a> 読み取り専用になるプロパティを設定します。
+## <a name="SettingReadOnlyProperties"></a> 読み取り専用になるプロパティを設定します。
  リボンが読み込まれる前にのみ設定できるプロパティがあります。 それらのプロパティは次の 3 つの方法で設定できます。
 
 - Visual Studio で**プロパティ**ウィンドウ。
@@ -103,7 +102,7 @@ ms.locfileid: "56601037"
 
   動的メニューに追加するコントロールのプロパティは、いつでも設定できます。
 
-  詳細については、[読み取り専用になるプロパティ](#ReadOnlyProperties)を参照してください。
+  詳細については、次を参照してください。[読み取り専用になるプロパティ](#ReadOnlyProperties)します。
 
 ### <a name="set-properties-in-the-constructor-of-the-ribbon"></a>リボンのコンス トラクターでプロパティを設定します。
  プロパティを設定することができます、`Ribbon`のコンス トラクター内のコントロール、**リボン**クラス。 このコードは、`InitializeComponent` メソッドの呼び出しの後に置く必要があります。 次のコード例は、現在の時刻が太平洋標準時間 (UTC-8) の 17:00 以降である場合に、新しいボタンをグループに追加します。
@@ -127,7 +126,7 @@ ms.locfileid: "56601037"
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-###  <a name="ReadOnlyProperties"></a> 読み取り専用になるプロパティ
+### <a name="ReadOnlyProperties"></a> 読み取り専用になるプロパティ
  次の表では、リボンが読み込まれる前にのみ設定できるプロパティを示します。
 
 > [!NOTE]

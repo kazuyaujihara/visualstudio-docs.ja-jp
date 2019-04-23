@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83f23bb04c9080b75d2a8e93252d981c0833d69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045488"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>ServerDocument クラスを使用してサーバー上のドキュメントを管理します。
   使用することができます、`ServerDocument`クラス、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Microsoft Office Word および Microsoft Office Excel がインストールされていない場合でも、ドキュメント レベルのカスタマイズのさまざまな側面を管理します。 実行できる管理タスクは以下のとおりです。
 
-- ドキュメントまたはブックのデータ キャッシュにあるデータへのアクセスおよびそのデータの変更。 詳細については、[ドキュメントでキャッシュされたデータを扱う](#CachedData)を参照してください。
+- ドキュメントまたはブックのデータ キャッシュにあるデータへのアクセスおよびそのデータの変更。 詳細については、次を参照してください。[ドキュメントでキャッシュされたデータを扱う](#CachedData)します。
 
-- ドキュメントに関連付けられているカスタマイズ アセンブリの管理。 詳細については、[ドキュメントのカスタマイズを管理](#CustomizationInfo)を参照してください。
+- ドキュメントに関連付けられているカスタマイズ アセンブリの管理。 詳細については、次を参照してください。[ドキュメントのカスタマイズを管理](#CustomizationInfo)します。
 
   [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -35,22 +35,22 @@ ms.locfileid: "56630081"
 
  `ServerDocument` クラスは、[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] を使用して作成されたドキュメント レベルのカスタマイズの操作に使用できます。
 
- 詳細については、Visual Studio 2010 Tools for Office Runtime および Office 拡張機能、.NET Framework の[Visual Studio Tools for Office runtime の概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)を参照してください。
+ 詳細については、Visual Studio 2010 Tools for Office Runtime および Office 拡張機能、.NET Framework の次を参照してください。 [Visual Studio Tools for Office runtime の概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)します。
 
 > [!NOTE]
 >  使用するレガシ アプリケーションがある場合、`ServerDocument`クラス、`Visual Studio Tools for Office`システム (version 3.0 Runtime)、 `Visual Studio Tools for Office` system (version 3.0 runtime) は、アプリケーションを実行しているコンピューターにインストールする必要があります。 `Visual Studio 2010 Tools for Office runtime`これらのアプリケーションを実行することはできません。
 
-##  <a name="CachedData"></a> ドキュメントのキャッシュされたデータを操作します。
- `ServerDocument` クラスには、カスタマイズされたドキュメント内のデータ キャッシュの操作に使用できるメンバーが用意されています。 キャッシュされたデータの詳細については、[データ キャッシュ](../vsto/caching-data.md)と[サーバー上のドキュメント内のデータ アクセス](../vsto/accessing-data-in-documents-on-the-server.md)を参照してください。
+## <a name="CachedData"></a> ドキュメントのキャッシュされたデータを操作します。
+ `ServerDocument` クラスには、カスタマイズされたドキュメント内のデータ キャッシュの操作に使用できるメンバーが用意されています。 キャッシュされたデータの詳細については、次を参照してください。[データ キャッシュ](../vsto/caching-data.md)と[サーバー上のドキュメント内のデータ アクセス](../vsto/accessing-data-in-documents-on-the-server.md)します。
 
  次の表は、キャッシュされたデータの操作に使用できるメンバーを示しています。
 
 |タスク|使用するメンバー|
 |----------|-------------------|
 |ドキュメントにデータ キャッシュがあるかどうかを確認する。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> メソッド。|
-|ドキュメント内のキャッシュされたデータにアクセスする。<br /><br /> 詳細については、[サーバー上のドキュメント内のデータ アクセス](../vsto/accessing-data-in-documents-on-the-server.md)を参照してください。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> プロパティ。|
+|ドキュメント内のキャッシュされたデータにアクセスする。<br /><br /> 詳細については、次を参照してください。[サーバー上のドキュメント内のデータ アクセス](../vsto/accessing-data-in-documents-on-the-server.md)します。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> プロパティ。|
 
-##  <a name="CustomizationInfo"></a> ドキュメントのカスタマイズを管理します。
+## <a name="CustomizationInfo"></a> ドキュメントのカスタマイズを管理します。
  `ServerDocument` クラスのメンバーを使用して、ドキュメントに関連付けられているカスタマイズ アセンブリを管理できます。 たとえば、ドキュメントのカスタマイズをプログラムによって削除し、そのドキュメントをカスタマイズから除外することもできます。
 
  次の表は、カスタマイズ アセンブリの管理に使用できるメンバーを示しています。

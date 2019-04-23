@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d846385349ad0dbcfe60bdf9b1fd7f1b5db507f
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 505678b52253d1efb21b06a2fb39d5250311167c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476047"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789394"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>超初心者でもわかるデバッグ方法
 
@@ -85,13 +85,13 @@ Visual Studio では、コード行の左にある余白をクリックして、
 1. Visual Studio を開きます。
 
     ::: moniker range=">=vs-2019"
-    **Ctrl + Q** キーを押して検索ボックスを開き、「**コンソール**」と入力し、**[テンプレート]** を選択して、**[新しいコンソール アプリ (.NET Framework) の作成]** または **[新しいコンソール アプリ (.NET Core) の作成]** を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。 **ConsoleApp-FirstApp** のような名前を入力して、**[作成]** をクリックします。
+    スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。 検索ボックスに「**コンソール**」と入力し、**[コンソール アプリ (.NET Framework)]** または **[コンソール アプリ (.NET Core)]** を選択します。 **[次へ]** をクリックします。 **ConsoleApp-FirstApp** のようなプロジェクト名を入力して、**[作成]** をクリックします。
     ::: moniker-end
     ::: moniker range="vs-2017"
     上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual C#]** の下にある **[コンソール アプリ]** を選択し、次に真ん中のウィンドウで **[コンソール アプリ (.NET Framework)]** または **[コンソール アプリ (.NET Core)]** のいずれかを選択します。 **ConsoleApp-FirstApp** のような名前を入力して、**[OK]** をクリックします。
     ::: moniker-end
 
-    **[コンソール アプリ (.NET Framework)]** または **[コンソール アプリ (.NET Core)]** プロジェクト テンプレートが表示されない場合は、**[ツール]** > **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 **[.NET デスクトップ開発]** ワークロードまたは **[.NET Core クロスプラットフォームの開発]** ワークロードを選択して、**[変更]** を選択します。
+    **[コンソール アプリ (.NET Framework)]** または **[コンソール アプリ (.NET Core)]** プロジェクト テンプレートが表示されない場合は、**[ツール]** > **[ツールと機能を取得]** に移動して、Visual Studio インストーラーを開きます。 **[.NET デスクトップ開発]** ワークロードまたは **[.NET Core クロスプラットフォームの開発]** ワークロードを選択して、**[変更]** を選択します。
 
     Visual Studio によってコンソール プロジェクトが作成され、ソリューション エクスプローラーの右側のウィンドウに表示されます。
 

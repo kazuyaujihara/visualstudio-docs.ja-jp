@@ -8,82 +8,82 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: efde723cfb72c8f91b0ba88c0a24bb2d9a3d245d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9644aeed1df42aa3a73af7d2cd7d7fa81bd27684
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963116"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040832"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio のコモン コントロール パターン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-##  <a name="BKMK_CommonControls"></a> コモン コントロール
+## <a name="BKMK_CommonControls"></a> コモン コントロール
 
 ### <a name="overview"></a>概要
  一般的なコントロールは、Visual Studio でのユーザー インターフェイスの大部分を構成します。 Visual Studio インターフェイスで使用される最も一般的なコントロールが従う必要があります、 [Windows デスクトップ ガイドライン](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)します。 このドキュメントは、Visual Studio に固有の特殊な状況やその Windows ガイドラインの強化の詳細について説明します。
 
 #### <a name="common-controls-in-this-topic"></a>このトピックの「一般的なコントロール
 
--   [スクロール バー](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_Scrollbars)
+- [スクロール バー](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_Scrollbars)
 
--   [入力フィールド](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_InputFields)
+- [入力フィールド](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_InputFields)
 
--   [コンボ ボックスとドロップダウン リスト](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ComboBoxesAndDropDowns)
+- [コンボ ボックスとドロップダウン リスト](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ComboBoxesAndDropDowns)
 
--   [チェック ボックス](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CheckBoxes)
+- [チェック ボックス](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CheckBoxes)
 
--   [オプション ボタン](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
+- [オプション ボタン](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
 
--   [グループのフレーム](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
+- [グループのフレーム](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
 
--   [テキスト コントロール](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
+- [テキスト コントロール](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
 
--   [ボタンやハイパーリンク](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
+- [ボタンやハイパーリンク](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
 
--   [ツリー ビュー](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
+- [ツリー ビュー](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
 
 #### <a name="visual-style"></a>Visual スタイル
  最初にコントロールのスタイルを設定するときに考慮することは、テーマの UI でコントロールを使用するかどうか。 標準的な ui コントロールのないテーマの UI、従う必要があります[標準の Windows デスクトップ スタイル](https://msdn.microsoft.com/library/windows/desktop/dn742399\(v=vs.85\).aspx)、re テンプレートでないと既定のコントロールの外観で表示する必要があります。
 
--   **標準 (ユーティリティ) ダイアログ ボックス:** ないテーマが適用されました。 Re テンプレートはしないでください。 基本的なコントロールのスタイルの既定値を使用します。
+- **標準 (ユーティリティ) ダイアログ ボックス:** ないテーマが適用されました。 Re テンプレートはしないでください。 基本的なコントロールのスタイルの既定値を使用します。
 
--   **ツール ウィンドウ、ドキュメント エディター、デザイン サーフェイスおよびテーマが適用されたダイアログ ボックス:** 色のサービスを使用して特殊化されたテーマの表示を使用します。
+- **ツール ウィンドウ、ドキュメント エディター、デザイン サーフェイスおよびテーマが適用されたダイアログ ボックス:** 色のサービスを使用して特殊化されたテーマの表示を使用します。
 
-###  <a name="BKMK_Scrollbars"></a> スクロール バー
+### <a name="BKMK_Scrollbars"></a> スクロール バー
  スクロール バーが従う必要があります[Windows のスクロール バーの一般的な相互作用パターン](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx)それらによって増幅コンテンツについてなど、コード エディターでしない限り、します。
 
-###  <a name="BKMK_InputFields"></a> 入力フィールド
+### <a name="BKMK_InputFields"></a> 入力フィールド
  一般的な操作の動作に従って、[テキスト ボックスについては、Windows デスクトップ](https://msdn.microsoft.com/library/windows/desktop/dn742442\(v=vs.85\).aspx)します。
 
 #### <a name="visual-style"></a>Visual スタイル
 
--   入力フィールドは、ユーティリティのダイアログ ボックスでないスタイルを設定する必要があります。 基本のスタイルを組み込みコントロールを使用します。
+- 入力フィールドは、ユーティリティのダイアログ ボックスでないスタイルを設定する必要があります。 基本のスタイルを組み込みコントロールを使用します。
 
--   テーマが適用された入力フィールドは、テーマが適用されたダイアログとツール ウィンドウでのみ使用する必要があります。
+- テーマが適用された入力フィールドは、テーマが適用されたダイアログとツール ウィンドウでのみ使用する必要があります。
 
 #### <a name="specialized-interactions"></a>特殊な相互作用
 
--   読み取り専用フィールド (アクティブ) の既定の前景は灰色 (無効) バック グラウンドになります。
+- 読み取り専用フィールド (アクティブ) の既定の前景は灰色 (無効) バック グラウンドになります。
 
--   フィールドが必要に必要な**\<必要 >** 内にウォーターマークとして。 まれな状況では、以外の背景の色を変更する必要がありますできません。
+- フィールドが必要に必要な**\<必要 >** 内にウォーターマークとして。 まれな状況では、以外の背景の色を変更する必要がありますできません。
 
--   エラーの検証:参照してください[通知と Visual Studio の進行状況](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+- エラーの検証:参照してください[通知と Visual Studio の進行状況](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
--   入力フィールドは、順番に表示されます、ウィンドウの幅に合わせてしないにも、任意のパスなどの長いフィールドの長さと一致には、コンテンツに合わせてサイズに設定する必要があります。 長さ フィールドに文字数が許可されているかの制限事項のユーザーを示す値があります。
+- 入力フィールドは、順番に表示されます、ウィンドウの幅に合わせてしないにも、任意のパスなどの長いフィールドの長さと一致には、コンテンツに合わせてサイズに設定する必要があります。 長さ フィールドに文字数が許可されているかの制限事項のユーザーを示す値があります。
 
      ![正しくない入力フィールド コントロールの幅](../../extensibility/ux-guidelines/media/0707-01-incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl") **が正しくない入力フィールドの長さ。名前になるはこの長い可能性が高いことはできません。**
 
      ![入力フィールド コントロールの幅を修正](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl") **修正は、フィールド長を入力します。入力フィールドは、予期されるコンテンツの妥当な幅です。**
 
-###  <a name="BKMK_ComboBoxesAndDropDowns"></a> コンボ ボックスとドロップダウン リスト
+### <a name="BKMK_ComboBoxesAndDropDowns"></a> コンボ ボックスとドロップダウン リスト
  一般的な操作の動作に従って、[ドロップダウン リストとコンボ ボックスの Windows デスクトップ ガイドライン](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx)します。
 
 #### <a name="visual-style"></a>Visual スタイル
 
--   ユーティリティのダイアログ、re テンプレートは、コントロールの操作を行います。 基本のスタイルを組み込みコントロールを使用します。
+- ユーティリティのダイアログ、re テンプレートは、コントロールの操作を行います。 基本のスタイルを組み込みコントロールを使用します。
 
--   テーマの UI でコンボ ボックスとドロップダウン リスト コントロールの標準的なテーマに従います。
+- テーマの UI でコンボ ボックスとドロップダウン リスト コントロールの標準的なテーマに従います。
 
 #### <a name="layout"></a>レイアウト
  コンボ ボックスとドロップダウン リストは、順番に表示されます、ウィンドウの幅に合わせてしないにも、任意のパスなどの長いフィールドの長さと一致には、コンテンツに合わせてサイズにする必要があります。
@@ -96,26 +96,26 @@ ms.locfileid: "58963116"
 
  **ドロップダウン コントロールの適切なフィールド長**
 
-###  <a name="BKMK_CheckBoxes"></a> チェック ボックス
+### <a name="BKMK_CheckBoxes"></a> チェック ボックス
  一般的な操作の動作に従って、[チェック ボックスについては、Windows デスクトップ](https://msdn.microsoft.com/library/windows/desktop/dn742401\(v=vs.85\).aspx)します。
 
 #### <a name="visual-style"></a>Visual スタイル
 
--   ユーティリティのダイアログ、re テンプレートは、コントロールの操作を行います。 基本のスタイルを組み込みコントロールを使用します。
+- ユーティリティのダイアログ、re テンプレートは、コントロールの操作を行います。 基本のスタイルを組み込みコントロールを使用します。
 
--   テーマの UI では、チェック ボックスは、コントロールの標準的なテーマに従います。
+- テーマの UI では、チェック ボックスは、コントロールの標準的なテーマに従います。
 
 #### <a name="specialized-interactions"></a>特殊な相互作用
 
--   チェック ボックスとの対話は、ダイアログを表示または別の領域に移動する必要がありますしないでください。
+- チェック ボックスとの対話は、ダイアログを表示または別の領域に移動する必要がありますしないでください。
 
--   チェック ボックスをテキストの最初の行のベースラインに揃えます。
+- チェック ボックスをテキストの最初の行のベースラインに揃えます。
 
      ![正しくないチェック ボックスの配置](../../extensibility/ux-guidelines/media/0707-05-incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign") **が正しくないチェック ボックスの配置。チェック ボックスは、テキストを中心します。**
 
      ![チェック ボックスの配置を修正](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign") **チェック ボックスの配置を修正します。チェック ボックスは、テキストの最初の行のベースラインに揃えられます。**
 
-###  <a name="BKMK_RadioButtons"></a> オプション ボタン
+### <a name="BKMK_RadioButtons"></a> オプション ボタン
  一般的な操作の動作に従って、[ラジオ ボタンの Windows デスクトップ ガイドライン](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx)します。
 
 #### <a name="visual-style"></a>Visual スタイル
@@ -124,7 +124,7 @@ ms.locfileid: "58963116"
 #### <a name="specialized-interactions"></a>特殊な相互作用
  オプションの選択肢を囲むグループ フレームを使用する必要はありません。
 
-###  <a name="BKMK_GroupFrames"></a> グループのフレーム
+### <a name="BKMK_GroupFrames"></a> グループのフレーム
  一般的な操作の動作に従って、[グループ フレームの Windows デスクトップ ガイドライン](https://msdn.microsoft.com/library/windows/desktop/dn742405\(v=vs.85\).aspx)します。
 
 #### <a name="visual-style"></a>Visual スタイル
@@ -132,13 +132,13 @@ ms.locfileid: "58963116"
 
 #### <a name="layout"></a>レイアウト
 
--   緊密なレイアウトでのグループの区別を維持するために必要でない限り、オプションの選択を囲むグループ フレームを使用する必要はありません。
+- 緊密なレイアウトでのグループの区別を維持するために必要でない限り、オプションの選択を囲むグループ フレームを使用する必要はありません。
 
--   1 つのコントロールのグループのフレームを使用しないでください。
+- 1 つのコントロールのグループのフレームを使用しないでください。
 
--   グループのフレームのコンテナーではなく水平方向の規則を使用できる場合があります。
+- グループのフレームのコンテナーではなく水平方向の規則を使用できる場合があります。
 
-##  <a name="BKMK_TextControls"></a> テキスト コントロール
+## <a name="BKMK_TextControls"></a> テキスト コントロール
 
 ### <a name="labels"></a>ラベル
 
@@ -146,11 +146,11 @@ ms.locfileid: "58963116"
 
 ##### <a name="utility-standard-dialogs"></a>ユーティリティ (標準) ダイアログ ボックス)
 
--   一般に、コントロールのラベルの Windows デスクトップのガイダンスに従ってください。
+- 一般に、コントロールのラベルの Windows デスクトップのガイダンスに従ってください。
 
--   ユーティリティのダイアログ ボックスで太字でない、標準的な環境のフォントとテキストの色のラベルが表示されます。 参照してください[Visual Studio のフォントと書式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)します。
+- ユーティリティのダイアログ ボックスで太字でない、標準的な環境のフォントとテキストの色のラベルが表示されます。 参照してください[Visual Studio のフォントと書式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)します。
 
--   省略記号は、ラベルを常に従う必要があります。
+- 省略記号は、ラベルを常に従う必要があります。
 
 ##### <a name="signature-themed-dialogs"></a>署名 (テーマが適用された) ダイアログ ボックス)
  ラベル コントロールには、太字やライト グレー可能性があります。
@@ -168,11 +168,11 @@ ms.locfileid: "58963116"
 #### <a name="instructional-text"></a>説明のテキスト
  一部のインターフェイス要素またはを実行するには、どのアクションを示すために UI の目的を理解するユーザーを支援する指示テキストを享受できます。
 
--   説明のテキストは、ダイアログの上部にある最も一般的な複雑なコントロールのグループ化する命令を提供する他の領域に表示できます。
+- 説明のテキストは、ダイアログの上部にある最も一般的な複雑なコントロールのグループ化する命令を提供する他の領域に表示できます。
 
--   説明のテキストでは、非対話型ですが、ヘルプ トピックへのハイパーリンクを含めることができます。
+- 説明のテキストでは、非対話型ですが、ヘルプ トピックへのハイパーリンクを含めることができます。
 
--   説明のテキストを使用して、慎重に行いのみ必要なときにします。
+- 説明のテキストを使用して、慎重に行いのみ必要なときにします。
 
 ##### <a name="formatting"></a>書式設定
  説明のテキストには、環境フォント、(テーマではない) 標準のコントロールのテキスト必要があります。 参照してください[Visual Studio のフォントと書式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)します。
@@ -227,7 +227,7 @@ ms.locfileid: "58963116"
 
   **Visual Studio でのウォーターマーク テキストの例**
 
-##  <a name="BKMK_ButtonsAndHyperlinks"></a> ボタンやハイパーリンク
+## <a name="BKMK_ButtonsAndHyperlinks"></a> ボタンやハイパーリンク
 
 ### <a name="overview"></a>概要
  ボタンやリンクのコントロール (ハイパーリンク) に従う必要があります[ハイパーリンクの基本的な Windows デスクトップ ガイダンス](https://msdn.microsoft.com/library/windows/desktop/dn742406\(v=vs.85\).aspx)wording、サイズ変更、および間隔は、使用するためです。
@@ -352,13 +352,13 @@ ms.locfileid: "58963116"
 
 #### <a name="visual-style"></a>Visual スタイル
 
--   ハイパーリンクは常に使用する必要があります[The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)します。 ハイパーリンクが正しく書式設定されていない、する場合はアクティブな際の赤で点滅またはアクセスした後に別の色が表示されます。
+- ハイパーリンクは常に使用する必要があります[The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)します。 ハイパーリンクが正しく書式設定されていない、する場合はアクティブな際の赤で点滅またはアクセスした後に別の色が表示されます。
 
--   リンクは、完全な文章内文のフラグメントをなど、ウォーターマークがない限り、状態を置くコントロールに下線を含めないでください。
+- リンクは、完全な文章内文のフラグメントをなど、ウォーターマークがない限り、状態を置くコントロールに下線を含めないでください。
 
--   ポインターを合わせると下線は表示されません。 代わりに、リンクがアクティブであるユーザーにフィードバックは、わずかな色の変更と適切なリンクのカーソルは。
+- ポインターを合わせると下線は表示されません。 代わりに、リンクがアクティブであるユーザーにフィードバックは、わずかな色の変更と適切なリンクのカーソルは。
 
-##  <a name="BKMK_TreeViews"></a> ツリー ビュー
+## <a name="BKMK_TreeViews"></a> ツリー ビュー
 
 ### <a name="overview"></a>概要
  ツリー ビューでは、親と子グループに複雑な整理する方法の一覧を提供します。 ユーザーは、展開したり、表示、または基になる子アイテムを非表示に親グループを折りたたんだりできます。 さらにアクションを提供する、ツリー ビュー内の各項目を選択できます。
@@ -367,11 +367,11 @@ ms.locfileid: "58963116"
 
 #### <a name="in-this-topic"></a>このトピックの内容
 
--   [Visual スタイル](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewVisualStyle)
+- [Visual スタイル](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewVisualStyle)
 
--   [相互作用](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
+- [相互作用](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
 
-###  <a name="BKMK_TreeViewVisualStyle"></a> Visual スタイル
+### <a name="BKMK_TreeViewVisualStyle"></a> Visual スタイル
 
 #### <a name="expanders"></a>展開コントロール
  ツリー ビュー コントロールは、Windows と Visual Studio で使用される expander のデザインに準拠する必要があります。 各ノードは、表示、または基になるアイテムを非表示に expander コントロールを使用します。 Expander コントロールを使用して、Windows と Visual Studio 内の別のツリー ビューを発生する可能性があるユーザーに一貫性が提供します。
@@ -405,7 +405,7 @@ ms.locfileid: "58963116"
 
  **内容がツリー ビュー コントロールの制限を超えたために、両方の垂直および水平スクロール バーが表示されます。**
 
-###  <a name="BKMK_TreeViewInteractions"></a> 相互作用
+### <a name="BKMK_TreeViewInteractions"></a> 相互作用
 
 #### <a name="context-menus"></a>コンテキスト メニュー
  ツリー ビュー ノードには、コンテキスト メニューのサブメニューで開くオプションを表示できます。 通常、これは、ユーザーが項目を右クリックしてまたは選択された項目を持つ Windows キーボードでメニュー キーを押したときに発生します。 ノードがフォーカスでが選択されていることは重要です。 これにより、ユーザーに属しているサブメニュー項目を識別できます。
@@ -420,15 +420,15 @@ ms.locfileid: "58963116"
 ##### <a name="tree-view-control"></a>ツリー ビュー コントロール
  Visual Studio のツリー コントロールでは、共通のキーボード ナビゲーションを従う必要があります。
 
--   **↑ キー。** ツリーを移動することで項目を選択します。
+- **↑ キー。** ツリーを移動することで項目を選択します。
 
--   **下向きの矢印。** ツリーの下位に移動して項目を選択します。
+- **下向きの矢印。** ツリーの下位に移動して項目を選択します。
 
--   **右矢印は:** ツリー内のノードを展開します。
+- **右矢印は:** ツリー内のノードを展開します。
 
--   **左矢印は:** ツリー ノードを折りたたみます
+- **左矢印は:** ツリー ノードを折りたたみます
 
--   **キーを入力します。** 開始、読み込み、選択した項目の実行
+- **キーを入力します。** 開始、読み込み、選択した項目の実行
 
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (ツリー ビューおよびグリッド ビュー)
  Trid コントロールは、グリッド内のツリー ビューを含む複雑なコントロールです。 展開、折りたたみ、およびツリー内で移動加え、次のツリー ビューと同じキーボード コマンドを尊重する必要があります。

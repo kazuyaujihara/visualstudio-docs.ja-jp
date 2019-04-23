@@ -19,17 +19,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3d829a439ec7fb61247e28146e80d4988f04623
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802190"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659697"
 ---
 # <a name="vbc-task"></a>Vbc タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 実行可能ファイル (.exe)、ダイナミック リンク ライブラリ (.dll)、またはコード モジュール (.netmodule) を生成する vbc.exe をラップします。 vbc.exe の詳細については、「[Visual Basic のコマンド ライン コンパイラ](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)」を参照してください。  
   
 ## <a name="parameters"></a>パラメーター  
@@ -53,7 +52,7 @@ ms.locfileid: "54802190"
 |`Imports`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 指定した項目コレクションから名前空間をインポートします。 このパラメーターは、vbc.exe コンパイラの [/imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) スイッチに相当します。|  
 |`KeyContainer`|省略可能な `String` 型のパラメーターです。<br /><br /> 暗号化キー コンテナーの名前を指定します。 このパラメーターは、vbc.exe コンパイラの [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) スイッチに相当します。|  
 |`KeyFile`|省略可能な `String` 型のパラメーターです。<br /><br /> 暗号化キーを格納するファイル名を指定します。 詳細については、「[/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8)」を参照してください。|  
-|`LangVersion`|省略可能な [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 型のパラメーターです。<br /><br /> 言語バージョンとして "9" か "10" を指定します。|  
+|`LangVersion`|省略可能な [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) パラメーター。<br /><br /> 言語バージョンとして "9" か "10" を指定します。|  
 |`LinkResources`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 出力ファイル内で .NET Framework リソースへのリンクを作成します。リソース ファイルは出力ファイル内に置かれません。 このパラメーターは、vbc.exe コンパイラの [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) スイッチに相当します。|  
 |`MainEntryPoint`|省略可能な `String` 型のパラメーターです。<br /><br /> `Sub Main` プロシージャを格納するクラスまたはモジュールを指定します。 このパラメーターは、vbc.exe コンパイラの [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) スイッチに相当します。|  
 |`ModuleAssemblyName`|省略可能な `String` 型のパラメーターです。<br /><br /> このモジュールが一部となるアセンブリを指定します。|  
@@ -90,7 +89,7 @@ ms.locfileid: "54802190"
 |`Win32Icon`|省略可能な `String` 型のパラメーターです。<br /><br /> エクスプローラーで出力ファイルを適切に表示する .ico ファイルをアセンブリに挿入します。 このパラメーターは、vbc.exe コンパイラの [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) スイッチに相当します。|  
 |`Win32Resources`|省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース (.res) ファイルを出力ファイルに挿入します。 このパラメーターは、vbc.exe コンパイラの [/win32resource](http://msdn.microsoft.com/library/e226946d-19ce-4cc9-91f5-aed24f77aa2b) スイッチに相当します。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension 基本クラス](../msbuild/tooltaskextension-base-class.md)」を参照してください。  
   
 ## <a name="example"></a>例  

@@ -9,14 +9,14 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6340b30f393fc2690a76febf335883b0ebf6f6ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d720779019ab4106fa6c4b727e9994f168a2d8f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102290"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを ASP.NET Web アプリケーションにアタッチし、コンカレンシー データを収集する
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>方法: コマンドラインを使用して同時実行データを収集する ASP.NET Web アプリケーションに、Profiler をアタッチします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、プロファイラーを ASP.NET アプリケーションにアタッチし、プロセス データおよびスレッド コンカレンシー データを収集する方法について説明します。  
@@ -47,21 +47,20 @@ ms.locfileid: "54801764"
    |       [/automark](../profiling/automark.md) **:** `Interval`       | **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 です。 |
    |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.etl) ファイルに収集されます。       |
 
-
 2. 一般的な方法で ASP.NET アプリケーションを起動します。  
 
 3. コマンド **VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`] を入力して、プロファイラーを ASP.NET ワーカー プロセスにアタッチします。  
 
-   -   `PID` には、ASP.NET ワーカー プロセスの ID または名前を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID を参照できます。  
+   - `PID` には、ASP.NET ワーカー プロセスの ID または名前を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID を参照できます。  
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` には、アプリケーションに複数のバージョンのランタイムが読み込まれている場合に、プロファイリングを行う共通言語ランタイム (CLR: Common Language Runtime) のバージョンを指定します。 このパラメーターは省略できます。  
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` には、アプリケーションに複数のバージョンのランタイムが読み込まれている場合に、プロファイリングを行う共通言語ランタイム (CLR: Common Language Runtime) のバージョンを指定します。 このパラメーターは省略できます。  
 
 ## <a name="controlling-data-collection"></a>データ コレクションの制御  
  アプリケーションの実行中は、VSPerfCmd.exe のオプションを使用してファイルへのデータ書き込みを開始または停止することにより、データ収集を制御できます。 データ収集を制御することにより、アプリケーションの起動や終了など、プログラム実行の特定部分のデータを収集できます。  
 
 #### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには  
 
--   次の表に示す VSPerfCmd オプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
+- 次の表に示す VSPerfCmd オプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
 
     |オプション|説明|  
     |------------|-----------------|  
@@ -74,11 +73,11 @@ ms.locfileid: "54801764"
 
 #### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには  
 
-1.  対象のアプリケーションを終了するか、コマンド プロンプトで次のコマンドを入力し、アプリケーションからプロファイラーをデタッチします。  
+1. 対象のアプリケーションを終了するか、コマンド プロンプトで次のコマンドを入力し、アプリケーションからプロファイラーをデタッチします。  
 
      **VSPerfCmd /detach**  
 
-2.  コマンド プロンプトに次のコマンドを入力し、プロファイラーを終了します。  
+2. コマンド プロンプトに次のコマンドを入力し、プロファイラーを終了します。  
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
 

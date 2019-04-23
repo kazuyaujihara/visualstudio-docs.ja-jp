@@ -27,33 +27,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c2cee0e0b823e5fe17fbc5720137163dcb300b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 1b1c8bb5e7f6ea8e0c68ec444bc5a1995bac4277
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083076"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Web アプリケーションのデバッグ : エラーおよびトラブルシューティング
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Web アプリケーションのデバッグ: エラーとトラブルシューティング
 Web アプリケーションのデバッグを試行した場合に、次のエラーが発生することがあります。
 
--   [トラブルシューティング](../debugger/debugging-web-applications-troubleshooting.md)
+- [トラブルシューティング](../debugger/debugging-web-applications-troubleshooting.md)
 
--   [エラー : サイトは IP アドレスを使用しています](../debugger/error-site-uses-ip-address.md)
+- [エラー: サイトは IP アドレスを使用しています](../debugger/error-site-uses-ip-address.md)
 
--   [エラー: IIS 管理サービスが応答しないため、セキュリティ チェックに失敗しました。](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
+- [エラー: IIS 管理サービスが応答しないため、セキュリティ チェックに失敗しました](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
 
--   [エラー: ASP .NET がインストールされていません。](../debugger/error-aspnet-not-installed.md)
+- [エラー: ASP.NET がインストールされていません](../debugger/error-aspnet-not-installed.md)
 
--   [エラー: Windows 統合認証が無効になっているため、デバッグに失敗しました。](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
+- [エラー: Windows 統合認証が無効になっているため、デバッグに失敗しました](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
 
--   [エラー : Web サーバーは正しく構成されていません](../debugger/error-the-web-server-is-not-configured-correctly.md)
+- [エラー: Web サーバーは正しく構成されていません](../debugger/error-the-web-server-is-not-configured-correctly.md)
 
--   [エラー: Web サーバーが制限され、デバッグの有効化に必要な DEBUG 動詞をブロックしています](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+- [エラー: Web サーバーが制限され、デバッグの有効化に必要な DEBUG 動詞をブロックしています](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
 
--   [エラー: Web サービスのデバッグ中にタイムアウトになりました。](../debugger/error-timeout-while-debugging-web-services.md)
+- [エラー: Web サービスのデバッグ中にタイムアウトになりました](../debugger/error-timeout-while-debugging-web-services.md)
 
--   [エラー: Web サーバーでデバッグを開始できません](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
+- [エラー: Web サーバーでデバッグを開始できません](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
 
 ## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)

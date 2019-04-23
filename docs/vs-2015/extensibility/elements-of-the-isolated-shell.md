@@ -10,12 +10,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cea41ee70001d32bb003a6ccefe033d42274f682
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106606"
 ---
 # <a name="elements-of-the-isolated-shell"></a>分離シェルの要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "58976490"
   
  アプリケーションを実行すると、次の順序では、レジストリ設定が定義されています。  
   
-1.  アプリケーションのレジストリ キーが作成されます。  
+1. アプリケーションのレジストリ キーが作成されます。  
   
-2.  レジストリは、指定したキーとエントリを定義することで、アプリケーションの .pkgdef ファイルから更新されます。  
+2. レジストリは、指定したキーとエントリを定義することで、アプリケーションの .pkgdef ファイルから更新されます。  
   
-3.  アプリケーションの一部であるパッケージごとに、レジストリは、そのパッケージの .pkgdef ファイルから更新されます。 各パッケージは、$RootKey$ \Packages によって、アプリケーションの .pkgdef ファイルで定義されている\\{*vsPackageGuid*} パッケージのキー。  
+3. アプリケーションの一部であるパッケージごとに、レジストリは、そのパッケージの .pkgdef ファイルから更新されます。 各パッケージは、$RootKey$ \Packages によって、アプリケーションの .pkgdef ファイルで定義されている\\{*vsPackageGuid*} パッケージのキー。  
   
-4.  AppEnvConfig.pkgdef とで BaseConfig.pkgdef からレジストリを更新、 *Visual Studio SDK インストール パス*\Common7\IDE\ShellExtensions\Platform ディレクトリ。 これらのファイルは、Visual Studio の一部とも Visual Studio Shell (分離モード) 再頒布可能パッケージの一部です。  
+4. AppEnvConfig.pkgdef とで BaseConfig.pkgdef からレジストリを更新、 *Visual Studio SDK インストール パス*\Common7\IDE\ShellExtensions\Platform ディレクトリ。 これらのファイルは、Visual Studio の一部とも Visual Studio Shell (分離モード) 再頒布可能パッケージの一部です。  
   
-5.  レジストリは、指定したキーとエントリを削除することで、アプリケーションの .pkgundef ファイルから更新されます。  
+5. レジストリは、指定したキーとエントリを削除することで、アプリケーションの .pkgundef ファイルから更新されます。  
   
 ## <a name="run-time-settings"></a>実行時の設定  
  ユーザーは、分離シェル アプリケーションを起動するときに、Visual Studio シェルの開始のエントリ ポイントを呼び出します。 アプリケーションの設定は、次のように、アプリケーションの起動時に定義されます。  

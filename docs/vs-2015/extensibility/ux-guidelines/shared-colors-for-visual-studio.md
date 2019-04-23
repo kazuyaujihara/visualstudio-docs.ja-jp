@@ -8,56 +8,59 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c8d0dfb8a7758d0619557f6c54056cd88ec68771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086430"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio の共有の色
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 共通の Visual Studio シェル要素を使用する UI を設計する場合、または類似の機能との一貫性をインターフェイス要素に持たせる場合、パッケージ定義ファイルにある既存のトークン名を使用して色を選択し、割り当てます。 これにより、UI が Visual Studio 環境全体で一貫性を保ち、テーマが追加された場合や更新された場合に自動的に更新されるようになります。
 
- この記事では、類似の UI を構築する際に参照できる一般的な UI 要素と UI 要素で使用されるトークン名について説明します。 これらの色のトークンにアクセスする方法の詳細については、「 [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)」を参照してください。
+この記事では、類似の UI を構築する際に参照できる一般的な UI 要素と UI 要素で使用されるトークン名について説明します。 これらの色のトークンにアクセスする方法の詳細については、「 [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)」を参照してください。
 
- トークン名は次のように正しく使用してください。
+トークン名は次のように正しく使用してください。
 
--   **色自体ではなく、機能に基づいてトークン名を使用します。** 一般的な共有色は、特定のインターフェイス要素と関連付けられ、同一または類似した機能に対してのみ使用されることを想定しています。 たとえば、押されているコンボ ボックスの色を、単にその色が好きという理由で進行状況を示す回転アニメーションに再利用しないでください。 コンボ ボックスとアニメーションの機能は異なり、コンボ ボックスに関連付けられている色が変更された場合、アニメーション要素にとっては適切な色でなくなる可能性があります。 色を一貫して使用すると、ユーザーの理解を助け、混乱を避けるために役立ちます。
+- **色自体ではなく、機能に基づいてトークン名を使用します。** 一般的な共有色は、特定のインターフェイス要素と関連付けられ、同一または類似した機能に対してのみ使用されることを想定しています。 たとえば、押されているコンボ ボックスの色を、単にその色が好きという理由で進行状況を示す回転アニメーションに再利用しないでください。 コンボ ボックスとアニメーションの機能は異なり、コンボ ボックスに関連付けられている色が変更された場合、アニメーション要素にとっては適切な色でなくなる可能性があります。 色を一貫して使用すると、ユーザーの理解を助け、混乱を避けるために役立ちます。
 
--   **適切な組み合わせでは、背景色とテキストの色を使用します。** テキストと共に使用することが想定された背景色には、テキストの色が関連付けられています。 その背景に指定されている色以外のテキストの色を使用しないでください。 テキストの色が関連付けられていない背景色は、テキストを表示する予定のサーフェイスで使用しないでください。 テキストの色と背景色の他の組み合わせによって、読み取り不可能なインターフェイスが生成される場合があります。
+- **適切な組み合わせでは、背景色とテキストの色を使用します。** テキストと共に使用することが想定された背景色には、テキストの色が関連付けられています。 その背景に指定されている色以外のテキストの色を使用しないでください。 テキストの色が関連付けられていない背景色は、テキストを表示する予定のサーフェイスで使用しないでください。 テキストの色と背景色の他の組み合わせによって、読み取り不可能なインターフェイスが生成される場合があります。
 
--   **その場所に適したコントロールの色を使用します。** 特定の状態では、一部の Visual Studio コントロールに個別の境界線の色と背景色がありません。 代わりに、それらのコントロールにはその背後のサーフェイスから色が適用されます。 コントロールを配置する場所に適したトークン名を常に使用してください。
+- **その場所に適したコントロールの色を使用します。** 特定の状態では、一部の Visual Studio コントロールに個別の境界線の色と背景色がありません。 代わりに、それらのコントロールにはその背後のサーフェイスから色が適用されます。 コントロールを配置する場所に適したトークン名を常に使用してください。
 
 > [!IMPORTANT]
->  「スタート ページ」や"Cider"カテゴリで見つかったトークンは使用しません。
+> 「スタート ページ」や"Cider"カテゴリで見つかったトークンは使用しません。
 
 ## <a name="command-structures"></a>コマンドの構造
 
-###  <a name="BKMK_CommandMenus"></a> メニュー
- メニューに Visual Studio 内で複数の場所で発生することができます。 埋め込みドキュメントまたはツールのウィンドウまたは IDE 全体のさまざまな場所で右クリックして、メイン メニュー バー。 他の UI 要素に関連付けられたメニューの実装については、それぞれの要素のセクションで説明します。 Visual Studio 環境で提供される標準のメニュー実装を常に使用してください。 ただし、まれに、標準の Visual Studio メニューにアクセスできないことがあります。 このような場合は、次のトークン名を使用して、UI が Visual Studio の他のメニューと一貫性を保つようにします。
+### <a name="BKMK_CommandMenus"></a> メニュー
 
- ![メニューの赤線](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")
+メニューに Visual Studio 内で複数の場所で発生することができます。 埋め込みドキュメントまたはツールのウィンドウまたは IDE 全体のさまざまな場所で右クリックして、メイン メニュー バー。 他の UI 要素に関連付けられたメニューの実装については、それぞれの要素のセクションで説明します。 Visual Studio 環境で提供される標準のメニュー実装を常に使用してください。 ただし、まれに、標準の Visual Studio メニューにアクセスできないことがあります。 このような場合は、次のトークン名を使用して、UI が Visual Studio の他のメニューと一貫性を保つようにします。
 
- 使用するケース
- -   カスタム メニューを作成する必要がある場合。
+![メニューの赤線](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")
+
+使用するケース
+- カスタム メニューを作成する必要がある場合。
 
 - Visual Studio メニューと一致させる新しい UI コンポーネントがある場合。
 
-  使用しないケース
-  背景色単独の場合。 常に指定された背景と前景の組み合わせを使用します。
+使用しないケース
+背景色単独の場合。 常に指定された背景と前景の組み合わせを使用します。
 
 #### <a name="menu-title"></a>メニュー タイトル
- メニュー タイトルは、背景、境界線、タイトル テキスト、および通常、メニューがコマンド バーにあるときは、オプションのグリフで構成されます。
 
- ![メニュー タイトルの赤線](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")
+メニュー タイトルは、背景、境界線、タイトル テキスト、および通常、メニューがコマンド バーにあるときは、オプションのグリフで構成されます。
 
- 使用するケース
+![メニュー タイトルの赤線](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")
+
+使用するケース
 カスタム メニュー タイトルを作成する場合。
 
- 使用しないケース
- -   メニュー タイトルと常に一致させるわけではないすべてのもの。
+使用しないケース
+- メニュー タイトルと常に一致させるわけではないすべてのもの。
 
 - 指定以外の背景と前景の組み合わせ。
 
@@ -192,15 +195,16 @@ ms.locfileid: "58975055"
   なし
 
 #### <a name="menu"></a>メニュー
- 個々のメニュー項目は、メニュー テキストとオプションのアイコン、チェック ボックス、またはサブメニュー グリフで構成されます。 その背景色とテキストの色はホバー時に変化します。 この色トークンは、背景と前景のペアです。
 
- ![メニュー項目の赤線](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")
+個々のメニュー項目は、メニュー テキストとオプションのアイコン、チェック ボックス、またはサブメニュー グリフで構成されます。 その背景色とテキストの色はホバー時に変化します。 この色トークンは、背景と前景のペアです。
 
- 使用するケース
+![メニュー項目の赤線](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")
+
+使用するケース
 メニュー バーまたはコマンド バーから起動されるドロップダウン リスト。
 
- 使用しないケース
- -   別のコンテキストで発生するドロップダウン リスト。
+使用しないケース
+- 別のコンテキストで発生するドロップダウン リスト。
 
 - 指定以外の背景と前景の組み合わせ。
 
@@ -351,32 +355,34 @@ ms.locfileid: "58975055"
   `Environment.CommandBarSelectedIconDisabled`
 
 ### <a name="command-bar"></a>コマンド バー
- コマンド バーは、Visual Studio IDE 内の複数の場所、特にコマンド シェルフ、およびツールまたはドキュメント ウィンドウへの埋め込みで表示できます。
 
- 通常は、Visual Studio 環境で提供される標準のコマンド バー実装を常に使用してください。 標準メカニズムを使用すると、すべての表示の詳細が正しく表示され、対話型要素が他の Visual Studio のコマンド バーのコントロールと一貫して動作するようになります。 ただし、独自のコマンド バーを作成する必要がある場合は、次のトークン名を使用してスタイルを正しく設定してください。
+コマンド バーは、Visual Studio IDE 内の複数の場所、特にコマンド シェルフ、およびツールまたはドキュメント ウィンドウへの埋め込みで表示できます。
 
- ![コマンド バーの赤線](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
+通常は、Visual Studio 環境で提供される標準のコマンド バー実装を常に使用してください。 標準メカニズムを使用すると、すべての表示の詳細が正しく表示され、対話型要素が他の Visual Studio のコマンド バーのコントロールと一貫して動作するようになります。 ただし、独自のコマンド バーを作成する必要がある場合は、次のトークン名を使用してスタイルを正しく設定してください。
 
- ![オーバーフロー ボタンの赤線](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
+![コマンド バーの赤線](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
 
- 使用するケース
+![オーバーフロー ボタンの赤線](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
+
+使用するケース
 埋め込みコマンド バーが必要だが、標準の Visual Studio のコマンド バー実装を使用できない場所。
 
- 使用しないケース
- -   コマンド バーに類似していない UI 要素。
+使用しないケース
+- コマンド バーに類似していない UI 要素。
 
--   トークン名が指定されているもの以外のコマンド バー コンポーネント。
+- トークン名が指定されているもの以外のコマンド バー コンポーネント。
 
 #### <a name="command-bar-group"></a>コマンド バー グループ
- コマンド バー グループは、関連する一連のコマンド バー コントロールで構成され、任意の数のボタン、分割ボタン、ドロップダウン メニュー、コンボ ボックス、またはメニューを含めることができます。 これらのコントロールの色は別々のトークン名によって制御され、このガイドの他の場所で個別に説明されています。 区切り線を使用して、コマンド バー グループを関連するサブグループに分割します。
 
- ![コマンド バー グループの赤線](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+コマンド バー グループは、関連する一連のコマンド バー コントロールで構成され、任意の数のボタン、分割ボタン、ドロップダウン メニュー、コンボ ボックス、またはメニューを含めることができます。 これらのコントロールの色は別々のトークン名によって制御され、このガイドの他の場所で個別に説明されています。 区切り線を使用して、コマンド バー グループを関連するサブグループに分割します。
 
- 使用するケース
+![コマンド バー グループの赤線](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+
+使用するケース
 埋め込みコマンド バーが必要だが、標準の Visual Studio のコマンド バー実装を使用できない場所。
 
- 使用しないケース
- -   コマンド バーに類似していない UI 要素。
+使用しないケース
+- コマンド バーに類似していない UI 要素。
 
 - トークン名が指定されているもの以外のコマンド バー コンポーネント。
 
@@ -407,15 +413,16 @@ ms.locfileid: "58975055"
   `Environment.CommandBarToolBarSeparatorHighlight`
 
 #### <a name="command-icons"></a>コマンド アイコン
- ![コマンド アイコンの赤線](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
 
- ![コマンド アイコンの赤線](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+![コマンド アイコンの赤線](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
 
- 使用するケース
+![コマンド アイコンの赤線](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+
+使用するケース
 コマンド バーに配置されるボタン。
 
- 使用しないケース
- -   独自のトークン名があるコントロール。
+使用しないケース
+- 独自のトークン名があるコントロール。
 
 - 指定以外の背景と前景の組み合わせ。
 
@@ -551,20 +558,20 @@ ms.locfileid: "58975055"
 
   N/A
 
-####  <a name="BKMK_CommandComboBox"></a> コンボ ボックス
+#### <a name="BKMK_CommandComboBox"></a> コンボ ボックス
 
 > [!IMPORTANT]
->  コンボ ボックスはドロップダウンに似ていますが、編集可能なテキスト領域が含まれます。 ドロップダウンに編集可能なテキスト領域が含まれていない場合は、 [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)に記載した色トークンを使用します。
+> コンボ ボックスはドロップダウンに似ていますが、編集可能なテキスト領域が含まれます。 ドロップダウンに編集可能なテキスト領域が含まれていない場合は、 [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)に記載した色トークンを使用します。
 
- ![コンボ ボックスの赤線](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")
+![コンボ ボックスの赤線](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")
 
- 使用するケース
- -   カスタム コンボ ボックスを作成する場合。
+使用するケース
+- カスタム コンボ ボックスを作成する場合。
 
 - コンボ ボックスに類似したコマンド バー コントロールを作成する場合。
 
   使用しないケース
-  -   コマンド バー UI と常に一致させるわけではないすべてのもの。
+  - コマンド バー UI と常に一致させるわけではないすべてのもの。
 
 - スタイル設定されたコンボ ボックスにアクセスできる場合。
 
@@ -798,18 +805,18 @@ ms.locfileid: "58975055"
 
   `Environment.ComboBoxDisabledGlyph`
 
-####  <a name="BKMK_CommandDropDown"></a> ドロップダウン リスト
+#### <a name="BKMK_CommandDropDown"></a> ドロップダウン リスト
 
 > [!IMPORTANT]
->  ドロップダウンはコンボ ボックスに似ていますが、編集可能なテキスト領域がありません。 ドロップダウンに編集可能なテキスト領域が含まれる場合は、 [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)に見つかる色トークンを使用します。
+> ドロップダウンはコンボ ボックスに似ていますが、編集可能なテキスト領域がありません。 ドロップダウンに編集可能なテキスト領域が含まれる場合は、 [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)に見つかる色トークンを使用します。
 
- ![Drop&#45;ダウンの赤線](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
+![Drop&#45;ダウンの赤線](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
 
- 使用するケース
+使用するケース
 カスタム ドロップダウン リスト コントロールを作成する場合。
 
- 使用しないケース
- -   ドロップダウン リストに類似していないすべてのもの。
+使用しないケース
+- ドロップダウン リストに類似していないすべてのもの。
 
 - コンボ ボックスまたは分割ボタン。
 
@@ -1010,15 +1017,16 @@ ms.locfileid: "58975055"
   `Environment.DropDownDisabledGlyph`
 
 #### <a name="split-button"></a>分割ボタン
- 分割ボタンは、ボタン、メニュー、コマンド バー テキストなど、他のコマンド バー コントロールと多くのトークン名を共有します。 ここでは利便性のために、すべての必要なアクション ボタンとドロップダウン ボタンのトークン名を繰り返しています。 分割ボタンのドロップダウン リストは、コマンド バー [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)の実装です。
 
- ![分割ボタンの赤線](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+分割ボタンは、ボタン、メニュー、コマンド バー テキストなど、他のコマンド バー コントロールと多くのトークン名を共有します。 ここでは利便性のために、すべての必要なアクション ボタンとドロップダウン ボタンのトークン名を繰り返しています。 分割ボタンのドロップダウン リストは、コマンド バー [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)の実装です。
 
- 使用するケース
+![分割ボタンの赤線](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+
+使用するケース
 カスタム分割ボタンを構築する場合。
 
- 使用しないケース
- -   他の種類のボタン。
+使用しないケース
+- 他の種類のボタン。
 
 - 指定以外の背景と前景の組み合わせ。
 
@@ -1425,7 +1433,7 @@ ms.locfileid: "58975055"
   カスタム ドキュメント タブを作成する場合。
 
   使用しないケース
-  -   一時的な (プレビュー) タブ。
+  - 一時的な (プレビュー) タブ。
 
 - シェルにテーマの更新がある場合に自動的に変更しない UI。
 
@@ -1538,15 +1546,16 @@ ms.locfileid: "58975055"
  背景と同じ色に設定されます。
 
 #### <a name="preview-tab"></a>プレビュー タブ
- プレビュー タブは、ユーザーがソリューション エクスプローラーのツール ウィンドウで項目をクリックすると、ドキュメント タブ チャネルの右側に表示されます。 プレビュー タブはドキュメントのプレビューとして機能し、ユーザーはドキュメント タブ チャネルの左側でドキュメントを開いたままにできます。 プレビュー タブは一度に 1 つのみ開くことができます。 プレビュー タブには、開いているタブと同様に、背景と選択された状態の両方があり、アクティブな状態でフォーカスされている場合とフォーカスされていない場合があります。
 
- ![[プレビュー] タブの赤線](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")
+プレビュー タブは、ユーザーがソリューション エクスプローラーのツール ウィンドウで項目をクリックすると、ドキュメント タブ チャネルの右側に表示されます。 プレビュー タブはドキュメントのプレビューとして機能し、ユーザーはドキュメント タブ チャネルの左側でドキュメントを開いたままにできます。 プレビュー タブは一度に 1 つのみ開くことができます。 プレビュー タブには、開いているタブと同様に、背景と選択された状態の両方があり、アクティブな状態でフォーカスされている場合とフォーカスされていない場合があります。
 
- 使用するケース
+![[プレビュー] タブの赤線](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")
+
+使用するケース
 一時的なプレビューを作成し、一部の要素を現在のプレビュー タブの色と一致させるすべての場所。
 
- 使用しないケース
- -   一時的 (プレビュー) でないすべての種類のドキュメントまたはタブ。
+使用しないケース
+- 一時的 (プレビュー) でないすべての種類のドキュメントまたはタブ。
 
 - シェルにテーマの更新がある場合に自動的に変更しない UI。
 
@@ -1661,15 +1670,16 @@ ms.locfileid: "58975055"
   背景と同じ色に設定されます。
 
 #### <a name="document-overflow-button"></a>ドキュメント オーバーフロー ボタン
- ドキュメント オーバーフロー ボタンは、すべてのドキュメント タブに適した垂直スペースが現在の構成にあるかどうかに関係なく、1 つ以上のドキュメントが開いている場合に表示されます。 **CommandBarMenu** 色 (「 [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)」を参照) で制御されるドキュメント オーバーフロー ドロップダウン メニューには、表示と非表示の両方の開いているすべてのドキュメントのリストが表示され、オーバーフロー グリフは開いているすべてのドキュメントがタブ チャネルに表示されるかどうかに応じて変化します。
 
- ![オーバーフローの赤線](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
+ドキュメント オーバーフロー ボタンは、すべてのドキュメント タブに適した垂直スペースが現在の構成にあるかどうかに関係なく、1 つ以上のドキュメントが開いている場合に表示されます。 **CommandBarMenu** 色 (「 [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)」を参照) で制御されるドキュメント オーバーフロー ドロップダウン メニューには、表示と非表示の両方の開いているすべてのドキュメントのリストが表示され、オーバーフロー グリフは開いているすべてのドキュメントがタブ チャネルに表示されるかどうかに応じて変化します。
 
- 使用するケース
+![オーバーフローの赤線](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
+
+使用するケース
 カスタム ドキュメント オーバーフロー ボタンを作成する場合。
 
- 使用しないケース
- -   オーバーフロー ボタンと類似していない UI。
+使用しないケース
+- オーバーフロー ボタンと類似していない UI。
 
 - コマンド バー オーバーフロー ボタン。
 
@@ -1895,13 +1905,14 @@ ms.locfileid: "58975055"
  `Environment.TitleBarDragHandle`
 
 #### <a name="title-bar-buttons"></a>タイトル バー ボタン
- ![タイトル バー ボタンの赤線](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
 
- 使用するケース
+![タイトル バー ボタンの赤線](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
+
+使用するケース
 ツール ウィンドウのタイトル バーの色のトークンを使用する UI に表示されるボタン。
 
- 使用しないケース
- -   その他の場所に表示されるボタン。
+使用しないケース
+- その他の場所に表示されるボタン。
 
 - 指定以外の背景と前景の組み合わせ。
 
@@ -2227,7 +2238,7 @@ ms.locfileid: "58975055"
   カスタム検索ボックスを設計する場合。
 
   使用しないケース
-  -   検索ボックス以外のすべてのもの。
+  - 検索ボックス以外のすべてのもの。
 
 - 検索ボックスの UI と常に一致させるわけではないすべてのもの。
 
@@ -2516,17 +2527,18 @@ ms.locfileid: "58975055"
   なし
 
 #### <a name="search-drop-down-lists"></a>検索ドロップダウン リスト
- 検索ボックスのドロップダウン メニューは、Visual Studio の他のドロップダウン メニューより少し複雑になる可能性があります。 "提案される検索" と "検索オプション" の各セクションは、メニューに単独または一緒に表示され、それぞれに別の色が付けられます。 これらの 2 つのセクションが一緒に表示される場合は線で区切られ、ドロップダウン メニュー全体が境界線で囲まれます。
 
- ![検索ドロップダウン&#45;ダウンの赤線](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+検索ボックスのドロップダウン メニューは、Visual Studio の他のドロップダウン メニューより少し複雑になる可能性があります。 "提案される検索" と "検索オプション" の各セクションは、メニューに単独または一緒に表示され、それぞれに別の色が付けられます。 これらの 2 つのセクションが一緒に表示される場合は線で区切られ、ドロップダウン メニュー全体が境界線で囲まれます。
 
- 使用するケース
- -   カスタム検索ドロップダウン リストを作成する場合。
+![検索ドロップダウン&#45;ダウンの赤線](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+
+使用するケース
+- カスタム検索ドロップダウン リストを作成する場合。
 
 - 正しいリスト コンポーネントの正しいトークン名。
 
   使用しないケース
-  -   他のコンテキストで表示されるドロップダウン リスト。
+  - 他のコンテキストで表示されるドロップダウン リスト。
 
 - 指定以外の背景と前景の組み合わせ。
 
@@ -2906,16 +2918,17 @@ Visual Studio のスクロール バーと一致させる UI を作成する場�
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-###  <a name="BKMK_TreeView"></a> ツリー ビュー
- ソリューション エクスプローラー、サーバー エクスプローラー、クラス ビューなど、いくつかのツール ウィンドウでは、色が TreeView カテゴリの色の名前によって制御される階層組織スキームが実装されます。 ツリー ビューのすべての項目に背景色とテキスト色があります。 入れ子にされた子要素がある項目には、項目が展開されているか折りたたまれているかを示すグリフもあります。
+### <a name="BKMK_TreeView"></a> ツリー ビュー
 
- ![Tree view redline](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")
+ソリューション エクスプローラー、サーバー エクスプローラー、クラス ビューなど、いくつかのツール ウィンドウでは、色が TreeView カテゴリの色の名前によって制御される階層組織スキームが実装されます。 ツリー ビューのすべての項目に背景色とテキスト色があります。 入れ子にされた子要素がある項目には、項目が展開されているか折りたたまれているかを示すグリフもあります。
 
- 使用するケース
+![Tree view redline](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")
+
+使用するケース
 階層組織ビューを実装する必要があるすべての場所。
 
- 使用しないケース
- -   ツリー ビューに類似していないすべてのもの。
+使用しないケース
+- ツリー ビューに類似していないすべてのもの。
 
 - 指定以外の背景と前景の組み合わせ。
 
@@ -3332,13 +3345,14 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
  `CommonControls.CheckBoxGlyphFocused`
 
 ### <a name="drop-boxcombo-box-controls"></a>ドロップ ボックス/コンボ ボックス コントロール
- ![Drop&#45;ダウン&#47;コンボ ボックスの赤線](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")
 
- 使用するケース
+![Drop&#45;ダウン&#47;コンボ ボックスの赤線](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")
+
+使用するケース
 ドキュメント ウェルに含まれるドロップダウンとコンボ ボックス。
 
- 使用しないケース
- -   ドロップダウンまたはコンボ ボックスでない UI。
+使用しないケース
+- ドロップダウンまたはコンボ ボックスでない UI。
 
 - コマンド バーの [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) または [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) 。
 
@@ -3690,17 +3704,18 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
  なし
 
 ## <a name="manifest-designer"></a>マニフェスト デザイナー
- マニフェスト デザイナーは、Windows 8 および Windows Phone 8 プロジェクトのマニフェスト ファイルを編集しやすくするための手段として設計されています。 使用可能な共有フレームワークはありませんが、向き/ナビゲーション タブと全体的な構造のデザイン レイアウトおよび色を一致させることが適切な場合があります。 レイアウトの詳細については、「 [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)」を参照してください。
 
- ![マニフェスト デザイナーの赤線](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+マニフェスト デザイナーは、Windows 8 および Windows Phone 8 プロジェクトのマニフェスト ファイルを編集しやすくするための手段として設計されています。 使用可能な共有フレームワークはありませんが、向き/ナビゲーション タブと全体的な構造のデザイン レイアウトおよび色を一致させることが適切な場合があります。 レイアウトの詳細については、「 [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)」を参照してください。
 
- 使用するケース
- -   マニフェスト デザイナーと同様のデザイナー。
+![マニフェスト デザイナーの赤線](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+
+使用するケース
+- マニフェスト デザイナーと同様のデザイナー。
 
 - ドキュメント ウェル内のエディターの上部でコモン タブ コントロールを使用する代わり。
 
-  使用しないケース
-  -   7 つ以上のタブがある場合。
+使用しないケース
+- 7 つ以上のタブがある場合。
 
 - マニフェスト デザイナーのように構造化されていないすべての UI。
 
@@ -3964,15 +3979,16 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 ## <a name="shell"></a>Shell
 
 ### <a name="background"></a>背景
- 環境の背景色は、2 つのレイヤーで構成されます。 下部レイヤーは、IDE 全体にわたる単色です。 上部レイヤーは、コマンド シェルフの下、および IDE の左端と右端のツール ウィンドウ自動非表示チャネルの間に収まります。 Visual Studio 2013 の時点で、上部と下部の背景レイヤーは、ライト テーマとダーク テーマで同じ色に設定されます。
 
- ![バック グラウンドのシェルの赤線](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+環境の背景色は、2 つのレイヤーで構成されます。 下部レイヤーは、IDE 全体にわたる単色です。 上部レイヤーは、コマンド シェルフの下、および IDE の左端と右端のツール ウィンドウ自動非表示チャネルの間に収まります。 Visual Studio 2013 の時点で、上部と下部の背景レイヤーは、ライト テーマとダーク テーマで同じ色に設定されます。
 
- 使用するケース
+![バック グラウンドのシェルの赤線](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+
+使用するケース
 Visual Studio 環境の背景を一致させる場所。
 
- 使用しないケース
- -   背景サーフェイスではない場所の塗りつぶし。
+使用しないケース
+- 背景サーフェイスではない場所の塗りつぶし。
 
 - 前景要素を配置する背景。
 
@@ -4009,17 +4025,18 @@ Visual Studio 環境の背景を一致させる場所。
   `Environment.EnvironmentBackgroundGradientMiddle2`
 
 ### <a name="command-shelf"></a>コマンド シェルフ
- コマンド シェルフの背景には 2 セットのトークン名が使用されます。1 セットはメニュー バーが位置する場所、もう 1 セットはコマンド バーが位置する場所に使用されます。 個々のコマンド バー グループには、独自の背景色値があります。これについては「コマンド バー」セクションで詳しく説明しています。 メニュー バーとコマンド バーのテキストについては、それぞれメニューとコマンド バーのセクションで説明しています。
 
- ![コマンド シェルフの赤線](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+コマンド シェルフの背景には 2 セットのトークン名が使用されます。1 セットはメニュー バーが位置する場所、もう 1 セットはコマンド バーが位置する場所に使用されます。 個々のコマンド バー グループには、独自の背景色値があります。これについては「コマンド バー」セクションで詳しく説明しています。 メニュー バーとコマンド バーのテキストについては、それぞれメニューとコマンド バーのセクションで説明しています。
 
- 使用するケース
- -   メニューまたはツール バーを配置する領域。
+![コマンド シェルフの赤線](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+
+使用するケース
+- メニューまたはツール バーを配置する領域。
 
 - 正しい背景/でしょうか。 前景トークン名の組み合わせ。
 
-  使用しないケース
-  コマンド シェルフに類似していない領域。
+使用しないケース
+コマンド シェルフに類似していない領域。
 
   コンポーネント
 

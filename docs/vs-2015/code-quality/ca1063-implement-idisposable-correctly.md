@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 52e77762900a321cf547709d98d9856088580789
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081399"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:IDisposable を正しく実装します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,23 +59,23 @@ ms.locfileid: "58975881"
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  コードを調べて、この違反を修正する次の解決方法のうちはします。
 
--   によって実装されるインターフェイスのリストから IDisposable を削除{0}を代わりに、基底クラス Dispose の実装をオーバーライドします。
+- によって実装されるインターフェイスのリストから IDisposable を削除{0}を代わりに、基底クラス Dispose の実装をオーバーライドします。
 
--   型からファイナライザーを削除{0}Dispose (bool disposing) をオーバーライドし、'disposing' が false のコード パスに finalization 論理を配置します。
+- 型からファイナライザーを削除{0}Dispose (bool disposing) をオーバーライドし、'disposing' が false のコード パスに finalization 論理を配置します。
 
--   削除{0}Dispose (bool disposing) をオーバーライドし、'disposing' が true に、コード パスに dispose 論理を入れます。
+- 削除{0}Dispose (bool disposing) をオーバーライドし、'disposing' が true に、コード パスに dispose 論理を入れます。
 
--   いることを確認{0}は public として宣言され、シールします。
+- いることを確認{0}は public として宣言され、シールします。
 
--   名前を変更{0}を 'Dispose' public およびシールドとして宣言されているかどうかを確認します。
+- 名前を変更{0}を 'Dispose' public およびシールドとして宣言されているかどうかを確認します。
 
--   必ず{0}が保護されを virtual と宣言し、封印されていません。
+- 必ず{0}が保護されを virtual と宣言し、封印されていません。
 
--   変更{0}GC を呼び出して dispose (true) を呼び出すようにします。オブジェクトの現在のインスタンスで SuppressFinalize ('this' または 'Me' で[!INCLUDE[vbprvb](../includes/vbprvb-md.md)])、しを返します。
+- 変更{0}GC を呼び出して dispose (true) を呼び出すようにします。オブジェクトの現在のインスタンスで SuppressFinalize ('this' または 'Me' で[!INCLUDE[vbprvb](../includes/vbprvb-md.md)])、しを返します。
 
--   変更{0}ように dispose (false) を呼び出すし、返します。
+- 変更{0}ように dispose (false) を呼び出すし、返します。
 
--   封印されていないルートの IDisposable クラスを作成する場合は、IDisposable の実装が、このセクションで既に説明したパターンに従うことを確認します。
+- 封印されていないルートの IDisposable クラスを作成する場合は、IDisposable の実装が、このセクションで既に説明したパターンに従うことを確認します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。

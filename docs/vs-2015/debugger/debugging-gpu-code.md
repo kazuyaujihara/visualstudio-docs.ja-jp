@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f48baa33577bc383e48b6535fef0a8448836609e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 07e3c15fad2758de965d0e13c2b64ac3ceebd2fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114133"
 ---
 # <a name="debugging-gpu-code"></a>GPU コードのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58972705"
 ## <a name="configuring-gpu-debugging"></a>GPU デバッグの構成  
  デバッガーは同じアプリの実行中に CPU コードと GPU コードの両方で中断することはできません。 既定では、デバッガーは CPU コードで中断されます。 GPU コードをデバッグするには、次の 2 つの手順のいずれかを使用します。  
   
--   **[標準]** ツール バーの **[デバッグの種類]** リストで **[GPU のみ]** を選択します。  
+- **[標準]** ツール バーの **[デバッグの種類]** リストで **[GPU のみ]** を選択します。  
   
--   **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューの **[プロパティ]** を選びます。 **[プロパティ ページ]** ダイアログ ボックスで **[デバッグ]** をクリックし、**[デバッガーの種類]** リストで **[GPU のみ]** を選択します。  
+- **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューの **[プロパティ]** を選びます。 **[プロパティ ページ]** ダイアログ ボックスで **[デバッグ]** をクリックし、**[デバッガーの種類]** リストで **[GPU のみ]** を選択します。  
   
 ## <a name="launching-and-attaching-to-applications"></a>アプリケーションの起動とアプリケーションへのアタッチ  
  Visual Studio のデバッグ コマンドを使用して GPU デバッグを開始および停止できます。 詳細については、「[デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)」を参照してください。 また、実行中のプロセスに GPU デバッガーをアタッチできます。ただし、そのプロセスが GPU コードを実行している場合に限ります。 詳細については、次を参照してください。[実行中のプロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)します。  
@@ -45,22 +45,22 @@ ms.locfileid: "58972705"
 ## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>[現在の Tile をカーソル行の前まで実行] と [カーソル行の前まで実行]  
  GPU でデバッグするとき、カーソル位置まで実行するには 2 つの選択肢があります。 いずれの選択肢のコマンドもコード エディターのショートカット メニューで使用できます。  
   
-1.  **[カーソル行の前まで実行]** コマンドは、カーソル位置に達するまでアプリを実行してから中断します。 これは、現在のスレッドがカーソル位置まで実行されるという意味ではありません。カーソル位置に達した最初のスレッドが中断されるということです。 参照してください[デバッガーでコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)  
+1. **[カーソル行の前まで実行]** コマンドは、カーソル位置に達するまでアプリを実行してから中断します。 これは、現在のスレッドがカーソル位置まで実行されるという意味ではありません。カーソル位置に達した最初のスレッドが中断されるということです。 参照してください[デバッガーでコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)  
   
-2.  **[現在の Tile をカーソル行の前まで実行]** コマンドは、現在の Tile 内のすべてのスレッドがカーソル位置に達するまでアプリを実行してから中断します。  
+2. **[現在の Tile をカーソル行の前まで実行]** コマンドは、現在の Tile 内のすべてのスレッドがカーソル位置に達するまでアプリを実行してから中断します。  
   
 ## <a name="debugging-windows"></a>デバッグ ウィンドウ  
  特定のデバッグ ウィンドウを使用することで、GPU スレッドを調べたり、スレッドにフラグを設定したり、スレッドを凍結したりできます。 詳細については次を参照してください:  
   
--   [[並列スタック] ウィンドウの使用](../debugger/using-the-parallel-stacks-window.md)  
+- [[並列スタック] ウィンドウの使用](../debugger/using-the-parallel-stacks-window.md)  
   
--   [[タスク] ウィンドウの使用](../debugger/using-the-tasks-window.md)  
+- [[タスク] ウィンドウの使用](../debugger/using-the-tasks-window.md)  
   
--   [方法: [並列ウォッチ] ウィンドウを使用する](../debugger/how-to-use-the-parallel-watch-window.md)  
+- [方法: [並列ウォッチ] ウィンドウを使用する](../debugger/how-to-use-the-parallel-watch-window.md)  
   
--   [スレッドとプロセス](../debugger/debug-threads-and-processes.md)([デバッグの場所] ツールバー)  
+- [スレッドとプロセス](../debugger/debug-threads-and-processes.md)([デバッグの場所] ツールバー)  
   
--   [方法: [GPU スレッド] ウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)  
+- [方法: [GPU スレッド] ウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>データ同期の例外  
  デバッガーは実行中に複数のデータ同期条件を検出できます。 条件を検出すると、デバッガーは中断状態になります。 **[中断]** または **[続行]** の 2 つの選択肢があります。 **[例外]** ダイアログ ボックスを使用して、デバッガーがこれらの条件を検出するかどうか、どの条件で実行を中断するかを構成できます。 詳細については、次を参照してください。[デバッガーでの例外を管理する](../debugger/managing-exceptions-with-the-debugger.md)します。 使用することも、**オプション** ダイアログ ボックスに書き込まれたデータのデータの値が変更されない場合に、デバッガーが例外を無視する必要がありますを指定します。 詳細については、[[全般]、デバッグ、オプションダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)を参照してください。  
@@ -68,7 +68,7 @@ ms.locfileid: "58972705"
 ## <a name="troubleshooting"></a>トラブルシューティング  
   
 ### <a name="specifying-an-accelerator"></a>アクセラレータの指定  
- GPU コード内のブレークポイントがヒットするのは、コードが [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF) アクセラレータで実行されている場合のみです。 コード内でアクセラレータを指定していない場合は、REF アクセラレータがプロジェクトのプロパティの **[デバッグ アクセラレータの種類]** で自動的に選択されます。 コード内でアクセラレータを明示的に選択している場合、REF アクセラレータはデバッグ中に使用されません。GPU ハードウェアがデバッグをサポートしていない限り、ブレークポイントがヒットすることはありません。 この問題を解決するには、デバッグ中に REF アクセラレータを使用するようにコードを記述します。 詳細については、プロジェクトのプロパティを参照してくださいと[アクセラレータおよび accelerator_view オブジェクトを使用して](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1)と[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)します。  
+ GPU コード内のブレークポイントがヒットするのは、コードが [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF) アクセラレータで実行されている場合のみです。 コード内でアクセラレータを指定していない場合は、REF アクセラレータがプロジェクトのプロパティの **[デバッグ アクセラレータの種類]** で自動的に選択されます。 コード内でアクセラレータを明示的に選択している場合、REF アクセラレータはデバッグ中に使用されません。GPU ハードウェアがデバッグをサポートしていない限り、ブレークポイントがヒットすることはありません。 この問題を解決するには、デバッグ中に REF アクセラレータを使用するようにコードを記述します。 詳細については、プロジェクトのプロパティを参照してくださいと[アクセラレータおよび accelerator_view オブジェクトを使用して](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1)と[のプロジェクト設定、C++デバッグ構成](../debugger/project-settings-for-a-cpp-debug-configuration.md)します。  
   
 ### <a name="conditional-breakpoints"></a>条件付きブレークポイント  
  GPU コード内の条件付きブレークポイントはサポートされていますが、すべての式をデバイス上で評価できるとは限りません。 式はデバイスで評価できないと、デバッガーで評価されます。 デバッガーでの処理はデバイスでの処理よりも遅くなる可能性があります。  

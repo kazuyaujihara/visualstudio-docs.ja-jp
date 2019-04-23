@@ -12,19 +12,19 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057161"
 ---
 # <a name="in-source-suppression-overview"></a>ソース内抑制の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ソース内抑制は非表示または追加することでマネージ コードでコード分析の違反を無視する機能、 **SuppressMessage**属性を違反が発生するコードのセグメント。 **SuppressMessage** CODE_ANALYSIS コンパイルのシンボルがコンパイル時に定義されている場合にのみ、マネージ コード アセンブリの IL メタデータに含まれている条件付き属性です。  
   
- C++/cli、CLI、ヘッダー ファイルの属性を追加する CA_SUPPRESS_MESSAGE または CA_GLOBAL_SUPPRESS_MESSAGE マクロを使用します。  
+ C++/CLI、ヘッダー ファイルの属性を追加する CA_SUPPRESS_MESSAGE または CA_GLOBAL_SUPPRESS_MESSAGE マクロを使用します。  
   
  ソース内抑制のメタデータを誤って発送を防ぐために、リリース ビルドのソース内抑制を使用する必要がありますできません。 ソース内抑制の処理コスト、ために、ソース内抑制のメタデータを含めることによって、アプリケーションのパフォーマンスを低下する可能性もします。  
   
@@ -54,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  この場合、  
   
--   **ルール カテゴリ**-ルールが定義されているカテゴリ。 コード分析ルールのカテゴリの詳細については、次を参照してください。[マネージ コードの警告のコード分析](../code-quality/code-analysis-for-managed-code-warnings.md)します。  
+- **ルール カテゴリ**-ルールが定義されているカテゴリ。 コード分析ルールのカテゴリの詳細については、次を参照してください。[マネージ コードの警告のコード分析](../code-quality/code-analysis-for-managed-code-warnings.md)します。  
   
--   **規則 Id** -ルールの識別子。 サポートには、短期および長期のルールの識別子名の両方が含まれます。 短い名前が CAXXXX;長い名前は、CAXXXX:FriendlyTypeName です。  
+- **規則 Id** -ルールの識別子。 サポートには、短期および長期のルールの識別子名の両方が含まれます。 短い名前が CAXXXX;長い名前は、CAXXXX:FriendlyTypeName です。  
   
--   **位置揃え**-メッセージの抑制の理由を文書化に使用されるテキスト。  
+- **位置揃え**-メッセージの抑制の理由を文書化に使用されるテキスト。  
   
--   **メッセージ Id** -各メッセージの問題の一意識別子。  
+- **メッセージ Id** -各メッセージの問題の一意識別子。  
   
--   **スコープ**-警告を抑制するターゲット。 ターゲットが指定されていない場合は、属性のターゲットに設定されます。 サポートされているスコープを以下に示します。  
+- **スコープ**-警告を抑制するターゲット。 ターゲットが指定されていない場合は、属性のターゲットに設定されます。 サポートされているスコープを以下に示します。  
   
-    -   Module  
+    - Module  
   
-    -   名前空間  
+    - 名前空間  
   
-    -   リソース  
+    - リソース  
   
-    -   型  
+    - 型  
   
-    -   メンバー  
+    - メンバー  
   
--   **ターゲット**- 警告を抑制するターゲットを指定するために使用する識別子。 項目の完全修飾名を含める必要があります。  
+- **ターゲット**- 警告を抑制するターゲットを指定するために使用する識別子。 項目の完全修飾名を含める必要があります。  
   
 ## <a name="suppressmessage-usage"></a>SuppressMessage 使用状況  
  先のレベルでコード分析の警告を抑制のインスタンス、 **SuppressMessage**属性を適用します。 この目的は、違反が発生する抑制については、コードに密に結合します。  

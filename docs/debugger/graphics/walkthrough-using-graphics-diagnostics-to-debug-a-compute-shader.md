@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 448f9f95da763a17bf7bb54fb222da031403b38a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2ffdbee23ff363f7c0f1e843c30f09551f38ab3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105371"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Walkthrough: Using Graphics Diagnostics to Debug a Compute Shader (チュートリアル: 計算シェーダーをデバッグするためのグラフィックス診断の使用)
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>チュートリアル: 計算シェーダーをデバッグするためのグラフィックス診断の使用
 このチュートリアルでは、Visual Studio のグラフィックス診断ツールを使用して、正しくない結果を生成する計算シェーダーを調査する方法を説明します。
 
  このチュートリアルでは、次の作業について説明します。
 
--   **[グラフィックス イベント一覧]** を使用して、問題の原因となる可能性がある部分を検索します。
+- **[グラフィックス イベント一覧]** を使用して、問題の原因となる可能性がある部分を検索します。
 
--   **[グラフィックス イベント呼び出し履歴]** を使用して、DirectCompute `Dispatch` イベントによって実行される計算シェーダーを決定します。
+- **[グラフィックス イベント呼び出し履歴]** を使用して、DirectCompute `Dispatch` イベントによって実行される計算シェーダーを決定します。
 
--   **[グラフィックス パイプライン ステージ]** ウィンドウと HLSL デバッガーを使用して、問題の原因になっている計算シェーダーを調べます。
+- **[グラフィックス パイプライン ステージ]** ウィンドウと HLSL デバッガーを使用して、問題の原因になっている計算シェーダーを調べます。
 
 ## <a name="scenario"></a>シナリオ
  このシナリオでは、シミュレーション更新の計算量が最も多い部分を実行するために DirectCompute を使用する流体力学シミュレーションを記述しました。 アプリを実行したときに、データセットと UI は正しくレンダリングされますが、シミュレーションが想定どおりに動作しません。 グラフィックス診断を使用すると、グラフィックス ログに問題をキャプチャして、アプリのデバッグを実行できます。 問題は、アプリケーションでは次のように見えます。
@@ -88,7 +88,7 @@ ms.locfileid: "56713790"
 
     ![IntegrateCS 計算シェーダーをデバッグします。](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")
 
-4. 計算シェーダーのデバッグを停止するには、**[デバッグ]** ツール バーで、**[デバッグの停止]** (キーボード: Shift + F5) を選択します。
+4. 計算シェーダーのデバッグを停止する、**デバッグ**ツールバーで、選択**デバッグの停止** (キーボード。Shift + F5)。
 
 5. 次に、2 番目の `Dispatch` イベントを選択し、前のステップで実行したように、計算シェーダーのデバッグを開始します。
 

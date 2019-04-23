@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e4f1916fb7bfc0672efeddaac5e632692f92f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113756"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>方法: 基本フォン シェーダーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ ms.locfileid: "54787331"
   
  このドキュメントでは、以下のアクティビティについて説明します。  
   
--   シェーダー グラフへのノードの追加  
+- シェーダー グラフへのノードの追加  
   
--   ノードの接続の解除  
+- ノードの接続の解除  
   
--   ノードの接続  
+- ノードの接続  
   
 ## <a name="the-phong-lighting-model"></a>フォン照明モデル  
  フォン照明モデルは、ランバート照明モデルを拡張して、サーフェイスの反射プロパティをシミュレートする反射ハイライトを含めたものです。 反射コンポーネントは、ランバート照明モデルで使用されるのと同じ指向性光源からの追加の照明となりますが、最終的な色に対する効果の処理は異なります。 反射ハイライトがシーン内のサーフェイスに与える影響は、ビューの方向、光源の方向、サーフェイスの向きの間の関係によって、サーフェイスごとに異なります。 これは、サーフェイスの反射の色、反射の度合い、向きと、光源の色、輝度、方向で決まります。 ビューアーで光源を直接反射するサーフェイスは最大の反射効果を受け、ビューアーと反対側で光源を反射するサーフェイスは効果を受けません。 フォン照明モデルでは、1 つ以上の反射コンポーネントの組み合わせで、オブジェクトのポイントごとに反射ハイライトの色と輝度が決まります。これらのコンポーネントは、ランバート照明モデルの結果に追加されて、ピクセルの最終的な色が生成されます。  
   
- ランバート ライティング モデルの詳細については、「[方法: 基本ランバート シェーダーを作成する](../designers/how-to-create-a-basic-lambert-shader.md)」を参照してください。  
+ ランバート ライティング モデルの詳細については、「[方法:基本ランバート シェーダーを作成](../designers/how-to-create-a-basic-lambert-shader.md)です。  
   
  開始する前に、**[プロパティ]** ウィンドウと**ツールボックス**が表示されていることを確認します。  
   
 #### <a name="to-create-a-phong-shader"></a>フォン シェーダーを作成するには  
   
-1. 「[方法: 基本ランバート シェーダーを作成する](../designers/how-to-create-a-basic-lambert-shader.md)」の説明に従って、ランバート シェーダーを作成します。  
+1. ランバート シェーダーの作成を、「[方法:基本ランバート シェーダーを作成](../designers/how-to-create-a-basic-lambert-shader.md)です。  
   
 2. **[最終的な色]** ノードから **[ランバート]** ノードを接続解除します。 **[ランバート]** ノードの **[RGB]** ターミナルを選択し、**[リンクの解除]** を選択します。 これにより、次の手順で追加するノードのための領域を確保できます。  
   
@@ -72,7 +72,7 @@ ms.locfileid: "54787331"
   
 ## <a name="see-also"></a>関連項目
  [方法: シェーダーを 3-D モデルに適用します。](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)   
- [方法: 基本ランバート シェーダーを作成する](../designers/how-to-create-a-basic-lambert-shader.md)   
+ [方法: シェーダーをエクスポートします。](../designers/how-to-export-a-shader.md)   
+ [方法: 基本ランバート シェーダーを作成します。](../designers/how-to-create-a-basic-lambert-shader.md)   
  [シェーダー デザイナー](../designers/shader-designer.md)   
  [シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bcf5f27653782d0280082713306e142702559c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce0aadf455e95895309bbae4f23eb84c75935428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770319"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049868"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>RequireJS 用に IntelliSense をカスタマイズする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Visual Studio 2013 Update 4 以降では、人気のある RequireJS JavaScript 
   
  このトピックでは、次の方法を説明します。  
   
--   ASP.NET プロジェクトで RequireJS をカスタマイズする  
+- ASP.NET プロジェクトで RequireJS をカスタマイズする  
   
--   JSProj プロジェクトで RequireJS をカスタマイズして、Apache Cordova アプリ、Windows ストア アプリ、および LightSwitch HTML アプリを構築するために使用する  
+- JSProj プロジェクトで RequireJS をカスタマイズして、Apache Cordova アプリ、Windows ストア アプリ、および LightSwitch HTML アプリを構築するために使用する  
   
 ## <a name="customize-requirejs-in-aspnet-projects"></a>ASP.NET プロジェクトで RequireJS をカスタマイズする  
  require.js という名前のファイルが現在の JavaScript ファイルで参照されている場合、自動的に RequireJS のサポートが有効になります (詳細については、「[JavaScript IntelliSense](../ide/javascript-intellisense.md)」の IntelliSense のコンテキスト確認に関するセクションを参照してください)。 ASP.NET プロジェクトでは、通常、_references.js ファイル内で /// \<reference/> ディレクティブを使用することによって require.js が参照されます。  

@@ -19,16 +19,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dedfc71636983a9cbe634551a88eb3de45cb1d99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974614"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053118"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio でのオブジェクトのバインド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Visual Studio には、アプリケーションでデータ ソースとしてカスタム オブジェクトを操作するためのデザイン時ツールが用意されています。 UI コントロールにバインドするオブジェクトに、データベースからデータを格納する場合は、Entity Framework を使用して、クラスまたはクラスを生成することをお勧めします。 エンティティ Frameworkautogenerates すべて、定型コード変更の追跡は、コード、ローカルのオブジェクトに変更されるいずれかは、DbSet オブジェクトで AcceptChanges を呼び出すときに自動的にデータベースに保存されます。    詳細については、次を参照してください。 [Entity Framework ドキュメント](https://ef.readthedocs.org/en/latest/)します。
 
@@ -43,17 +42,17 @@ Visual Studio には、アプリケーションでデータ ソースとして�
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>カスタム オブジェクトを使用して、データ ソースとして例を示します
  データ ソースとしてオブジェクトを使用する場合、アプリケーション ロジックを実装する方法を使用して、SQL のデータベースがありますが Visual Studio が生成する TableAdapter のオブジェクトを使用して簡略化できますが、いくつかの標準的な操作です。 このページは、これらの標準的なプロセスを実装する方法を説明します。 TableAdapters.It を使用するものではありませんをガイドとして、カスタム オブジェクトを作成するためです。 たとえば、オブジェクト、またはアプリケーションのロジックの特定の実装に関係なく次の標準的な操作を通常実行は。
 
--   (通常はデータベース) からオブジェクトにデータを読み込んでいます。
+- (通常はデータベース) からオブジェクトにデータを読み込んでいます。
 
--   オブジェクトの型指定されたコレクションを作成します。
+- オブジェクトの型指定されたコレクションを作成します。
 
--   オブジェクトを追加し、オブジェクトのコレクションから削除します。
+- オブジェクトを追加し、オブジェクトのコレクションから削除します。
 
--   フォーム上のユーザーにオブジェクト データを表示しています。
+- フォーム上のユーザーにオブジェクト データを表示しています。
 
--   オブジェクトのデータを変更または編集します。
+- オブジェクトのデータを変更または編集します。
 
--   オブジェクトからデータベースにデータを保存しています。
+- オブジェクトからデータベースにデータを保存しています。
 
 > [!NOTE]
 >  理解、および、このページの例については、コンテキストを提供する、するには、次を完了することをお勧めします。[チュートリアル: データ オブジェクト (Windows フォーム) に接続する](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)します。 このチュートリアルでは、ここで説明したオブジェクトを作成します。

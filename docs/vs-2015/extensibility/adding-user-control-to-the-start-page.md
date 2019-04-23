@@ -12,12 +12,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4ccef9678cbdec3ea048c556434d80ef9b0196e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48f079d29fee5587617f95791bc6de7148741735
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069390"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>スタート ページへのユーザー コントロールの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ ms.locfileid: "58963600"
 ## <a name="adding-a-wpf-user-control-to-the-solution"></a>ソリューションに WPF ユーザー コントロールの追加  
  最初に、スタート ページのソリューションに Windows Presentation Foundation (WPF) ユーザー コントロールを追加します。  
   
-1.  スタート ページを作成で作成したを使用して[カスタム スタート ページを作成する](../extensibility/creating-a-custom-start-page.md)します。  
+1. スタート ページを作成で作成したを使用して[カスタム スタート ページを作成する](../extensibility/creating-a-custom-start-page.md)します。  
   
-2.  **ソリューション エクスプ ローラー**は、ソリューションを右クリックし、[**追加**、] をクリックし、**新しいプロジェクト**します。  
+2. **ソリューション エクスプ ローラー**は、ソリューションを右クリックし、[**追加**、] をクリックし、**新しいプロジェクト**します。  
   
-3.  左側のウィンドウで、**新しいプロジェクト** ダイアログ ボックスで、いずれかを展開、 **Visual Basic**または**Visual C#** ノード、およびクリック**Windows**。 中央のペインで選択**WPF ユーザー コントロール ライブラリ**します。  
+3. 左側のウィンドウで、**新しいプロジェクト** ダイアログ ボックスで、いずれかを展開、 **Visual Basic**または**Visual c#** ノード、およびクリック**Windows**。 中央のペインで選択**WPF ユーザー コントロール ライブラリ**します。  
   
-4.  コントロールに名前を`WebUserControl` をクリックし、 **OK**します。  
+4. コントロールに名前を`WebUserControl` をクリックし、 **OK**します。  
   
 ## <a name="implementing-the-user-control"></a>ユーザー コントロールを実装します。  
- WPF ユーザー コントロールを実装するには、XAML でユーザー インターフェイス (UI) を構築し、C# または他の .NET 言語で分離コードのイベントを書き込みます。  
+ WPF ユーザー コントロールを実装するには、XAML でユーザー インターフェイス (UI) を構築し、c# または他の .NET 言語で分離コードのイベントを書き込みます。  
   
 #### <a name="to-write-the-xaml-for-the-user-control"></a>ユーザー コントロールの XAML を記述するには  
   
-1.  ユーザー コントロールの XAML ファイルを開きます。 \<グリッド > 要素をコントロールに次の行の定義を追加します。  
+1. ユーザー コントロールの XAML ファイルを開きます。 \<グリッド > 要素をコントロールに次の行の定義を追加します。  
   
     ```vb  
     <Grid.RowDefinitions>  
@@ -52,7 +52,7 @@ ms.locfileid: "58963600"
   
     ```  
   
-2.  メイン`Grid`要素、次の新しい追加`Grid`要素で、Web アドレスと、新しいアドレスを設定するためのボタン入力用のテキスト ボックスが含まれています。  
+2. メイン`Grid`要素、次の新しい追加`Grid`要素で、Web アドレスと、新しいアドレスを設定するためのボタン入力用のテキスト ボックスが含まれています。  
   
     ```xml  
     <Grid Grid.Row="0">  
@@ -65,13 +65,13 @@ ms.locfileid: "58963600"
     </Grid>  
     ```  
   
-3.  次のフレームを最上位レベルに追加`Grid`要素直後、 `Grid` button と textbox を含む要素。  
+3. 次のフレームを最上位レベルに追加`Grid`要素直後、 `Grid` button と textbox を含む要素。  
   
     ```vb  
     <Frame Grid.Row="1" x:Name="WebFrame" Source="http://www.bing.com" Navigated="WebFrame_Navigated" />  
     ```  
   
-4.  次の例では、ユーザー コントロールの完成した XAML を示します。  
+4. 次の例では、ユーザー コントロールの完成した XAML を示します。  
   
     ```xml  
     <UserControl x:Class="WebUserControl.UserControl1"  
@@ -102,11 +102,11 @@ ms.locfileid: "58963600"
   
 #### <a name="to-write-the-code-behind-events-for-the-user-control"></a>ユーザー コントロールの分離コードのイベントの書き込み  
   
-1.  XAML デザイナーで、ダブルクリック、**アドレスの設定**コントロールに追加したボタンをクリックします。  
+1. XAML デザイナーで、ダブルクリック、**アドレスの設定**コントロールに追加したボタンをクリックします。  
   
      コード エディターに UserControl1.cs ファイルが開きます。  
   
-2.  SetButton_Click イベント ハンドラーで、次のように入力します。  
+2. SetButton_Click イベント ハンドラーで、次のように入力します。  
   
     ```csharp  
     private void SetButton_Click(object sender, RoutedEventArgs e)  
@@ -124,14 +124,14 @@ ms.locfileid: "58963600"
   
      このコードは、Web ブラウザーのターゲットとして、テキスト ボックスに型指定された Web アドレスを設定します。 アドレスが有効でない場合、コードはエラーをスローします。  
   
-3.  WebFrame_Navigated イベントを処理することも必要があります。  
+3. WebFrame_Navigated イベントを処理することも必要があります。  
   
     ```csharp  
     private void WebFrame_Navigated(object sender, EventArgs e)  
     { }  
     ```  
   
-4.  ソリューションをビルドします。  
+4. ソリューションをビルドします。  
   
 ## <a name="adding-the-user-control-to-the-start-page"></a>スタート ページにユーザー コントロールの追加  
  このコントロールで使用できるように、スタート ページ プロジェクトにスタート ページ プロジェクト ファイルでは、新しいコントロール ライブラリへの参照を追加します。 スタート ページの XAML マークアップをコントロールを追加できます。  
@@ -174,15 +174,15 @@ ms.locfileid: "58963600"
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>手動で作成したカスタム スタート ページのテスト  
   
-1.  コピーは、XAML ファイルとサポート テキスト ファイルまたはマークアップをファイルに、 **%USERPROFILE%\My documents \visual Studio 2015 \startpages\\** フォルダー。  
+1. コピーは、XAML ファイルとサポート テキスト ファイルまたはマークアップをファイルに、 **%USERPROFILE%\My documents \visual Studio 2015 \startpages\\** フォルダー。  
   
-2.  スタート ページは、すべてのコントロールまたは Visual Studio がインストールされていないアセンブリで型を参照する場合、アセンブリをコピーし、貼り付けることで_Visual Studio インストール フォルダー_**\Common7\IDE\PrivateAssemblies\\**します。  
+2. スタート ページは、すべてのコントロールまたは Visual Studio がインストールされていないアセンブリで型を参照する場合、アセンブリをコピーし、貼り付けることで_Visual Studio インストール フォルダー_**\Common7\IDE\PrivateAssemblies\\**します。  
   
-3.  Visual Studio コマンド プロンプトで「 **devenv/rootsuffix Exp**を Visual Studio の実験用インスタンスを開きます。  
+3. Visual Studio コマンド プロンプトで「 **devenv/rootsuffix Exp**を Visual Studio の実験用インスタンスを開きます。  
   
-4.  実験用のインスタンスに移動、**ツール/オプション/環境/スタートアップ**ページおよび元の XAML ファイルを選択、**スタート ページのカスタマイズ**ドロップダウンします。  
+4. 実験用のインスタンスに移動、**ツール/オプション/環境/スタートアップ**ページおよび元の XAML ファイルを選択、**スタート ページのカスタマイズ**ドロップダウンします。  
   
-5.  **[表示]** メニューの **[スタート ページ]** をクリックします。  
+5. **[表示]** メニューの **[スタート ページ]** をクリックします。  
   
      カスタム スタート ページが表示されます。 ファイルを変更する場合は、する必要があります実験用インスタンスを閉じて、変更を行います、コピーし、変更されたファイルを貼り付けるして変更を表示する実験用インスタンスを再度開きます。  
   

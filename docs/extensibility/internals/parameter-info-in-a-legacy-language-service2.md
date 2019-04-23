@@ -12,19 +12,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57c5516c70819f8f86d56e93f78ec5d877c72a78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 838e057fd0063df6a1c592dfefee759b56b9f89b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041196"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>従来の言語サービスでのパラメーター ヒント
 パラメーターの IntelliSense のヒントは、ユーザーがパラメーター リストを入力すると、メソッドのシグネチャを表示するツールヒントに start メソッドのパラメーター リストの文字 (通常、開きかっこを入力)。 各パラメーターを入力し、パラメーター区切り記号 (コンマ) が型指定された、次のパラメーターを太字で表示するツールヒントが更新されます。
 
  マネージ パッケージ フレームワーク (MPF) クラスは、パラメーター ヒントを管理するためのサポートを提供します。 パーサーには、パラメーターの開始、パラメーター次に、およびパラメーター最後の文字であり、メソッド シグネチャとその関連付けられているパラメーターの一覧を指定する必要がありますを検出する必要があります。
 
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、[エディターと言語サービス拡張](../../extensibility/extending-the-editor-and-language-services.md)を参照してください。
+ 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[エディターと言語サービス拡張](../../extensibility/extending-the-editor-and-language-services.md)します。
 
 > [!NOTE]
 >  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
@@ -111,10 +111,10 @@ testfunc("a string",3);
 
  以下は、パーサーが取る手順の概要します。
 
-1.  パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>テキスト"testfunc"を使用します。
+1. パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>テキスト"testfunc"を使用します。
 
-2.  パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>します。
+2. パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>します。
 
-3.  パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>します。
+3. パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>します。
 
-4.  パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>します。
+4. パーサー呼び出し<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>します。

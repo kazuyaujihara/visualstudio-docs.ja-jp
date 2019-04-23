@@ -19,17 +19,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b25318a9b453ee9f9b05b22e7130555b5a14d556
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f530648c7dd772fb60148f4d755d4a4ffb420cbb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760142"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655137"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 指定したアイテムのパスを指定したテキスト ファイルに書き込みます。  
   
 ## <a name="task-parameters"></a>タスク パラメーター  
@@ -40,7 +39,7 @@ ms.locfileid: "54760142"
 |`File`|必須の <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> 項目を書き込むファイルを指定します。|  
 |`Lines`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> ファイルに書き込む項目を指定します。|  
 |`Overwrite`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、タスクはファイル内の既存のコンテンツをすべて上書きします。|  
-|`Encoding`|省略可能な `String` 型のパラメーターです。<br /><br /> 文字エンコードを選択します。たとえば、"Unicode" を選択します。  関連項目 <xref:System.Text.Encoding>.|  
+|`Encoding`|省略可能な `String` 型のパラメーターです。<br /><br /> 文字エンコードを選択します。たとえば、"Unicode" を選択します。  参照 <xref:System.Text.Encoding>.|  
   
 ## <a name="remarks"></a>解説  
  `Overwrite` が `true` の場合、新しいファイルを作成し、内容をそのファイルに書き込んだ後、ファイルを閉じます。 既存のターゲット ファイルは上書きされます。 `Overwrite` が `false` の場合、ファイルにコンテンツを追加します。ターゲット ファイルがまだ存在しない場合は、ファイルを作成します。  

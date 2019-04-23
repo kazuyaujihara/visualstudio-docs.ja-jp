@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 728241c4f8cf8609c453f83f0237d2bdc8410f35
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: caf878f6ea43a7f041285fb02b2f32175ca862b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977995"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057187"
 ---
 # <a name="how-to-use-the-expression-editor"></a>方法: 式エディターを使用する
 式エディターは、式を入力および評価する手段として、多くのワークフロー アクティビティで使用される[!INCLUDE[wfd1](../includes/wfd1-md.md)] コントロールです。 式エディターには、IntelliSense、色付け、パラメーター情報、エラーを示す波線などの、本格的な IDE 編集機能が用意されています。 入力した式はコンパイラによって検証されます。 式が無効な場合は、エラー アイコンが表示されます。 として、エディターを開くことも、**式エディター**  ダイアログ ボックス。  
@@ -25,29 +25,29 @@ ms.locfileid: "58977995"
   
  **式エディター**ように動作します。  
   
--   フォーカスがない場合、式エディターは通常の TextBlock コントロールと同様の外観になります。  
+- フォーカスがない場合、式エディターは通常の TextBlock コントロールと同様の外観になります。  
   
--   フォーカスが式エディターに移ると、式エディター コントロールと同様の外観と動作になります。 フォーカスが失われると、通常の TextBlock と同様の外観に戻ります。  
+- フォーカスが式エディターに移ると、式エディター コントロールと同様の外観と動作になります。 フォーカスが失われると、通常の TextBlock と同様の外観に戻ります。  
   
--   再ホストされたワークフロー デザイナーで式エディターにフォーカスを設定した場合は、TextBox と同じように動作します。 再ホストされたワークフロー デザイナーでフォーカスが失われると、式エディターは、通常の TextBlock と同様の外観に戻ります。  
+- 再ホストされたワークフロー デザイナーで式エディターにフォーカスを設定した場合は、TextBox と同じように動作します。 再ホストされたワークフロー デザイナーでフォーカスが失われると、式エディターは、通常の TextBlock と同様の外観に戻ります。  
   
 > [!NOTE]
 >  式エディター用の IntelliSense は、[!INCLUDE[vs2010](../includes/vs2010-md.md)] 内でのみ使用できます。 [!INCLUDE[vs2010](../includes/vs2010-md.md)] および再ホストのシナリオではいずれも、入力した式がコンパイラによって検証され、式が無効な場合は、式エディターにエラー アイコンが表示されます。  
   
 ### <a name="using-the-expression-editor"></a>式エディターの使用  
   
-1.  [!INCLUDE[vs2010](../includes/vs2010-md.md)] で新規または既存のワークフロー プロジェクトを開きます。  
+1. [!INCLUDE[vs2010](../includes/vs2010-md.md)] で新規または既存のワークフロー プロジェクトを開きます。  
   
-2.  ワークフローに <xref:System.Activities.Statements.Assign> などのアクティビティを追加します。  
+2. ワークフローに <xref:System.Activities.Statements.Assign> などのアクティビティを追加します。  
   
     > [!NOTE]
     >  式エディターを使用できるワークフロー アクティビティは複数あります。 変数デザイナー、引数デザイナー、および動的引数デザイナーには、式 TextBlock も表示されます。 ここでは、例として <xref:System.Activities.Statements.Assign> アクティビティを使用しています。  
   
-3.  <xref:System.Activities.Statements.Assign> アクティビティのアクティビティ デザイナーで、左側の式エディターをクリックします。  
+3. <xref:System.Activities.Statements.Assign> アクティビティのアクティビティ デザイナーで、左側の式エディターをクリックします。  
   
      灰色のウォーターマークの文字列**\<に >** と **\<VB の式を入力してください >** の式エディターに既定値をテキスト文字列は、<xref:System.Activities.Statements.Assign>アクティビティ。  
   
-4.  式を入力します。 文字列を入力する場合は、文字列を引用符で囲みます。 式の引数を変数にバインドする場合は、引用符を省略してください。  
+4. 式を入力します。 文字列を入力する場合は、文字列を引用符で囲みます。 式の引数を変数にバインドする場合は、引用符を省略してください。  
   
      式を入力し終えたら、式エディターの外部を選択して、デザイナーの他の部分にフォーカスを移動させます。 この操作により、既に説明したように、コンパイラによって式が検証されます。  
   

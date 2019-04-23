@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d814576c4f071c9e90dd71d56c3bde8da43260f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ed19972fb2f71104357977554984ae43f886c950
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084364"
 ---
 # <a name="expose-project-objects"></a>プロジェクト オブジェクトを公開します。
 
@@ -28,7 +28,7 @@ ms.locfileid: "56609918"
 
 ## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>プロジェクトの VSPackage に固有のオブジェクトを投稿するには
 
-1.  適切なキーを追加して、 *.pkgdef* VSPackage のファイル。
+1. 適切なキーを追加して、 *.pkgdef* VSPackage のファイル。
 
      たとえば、ここでは、 *.pkgdef* C++ 言語のプロジェクトの設定。
 
@@ -39,7 +39,7 @@ ms.locfileid: "56609918"
     "VCProjectEngineEventsObject"=""
     ```
 
-2.  コードでは、実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>メソッドは、次の例のようにします。
+2. コードでは、実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>メソッドは、次の例のようにします。
 
     ```cpp
     STDMETHODIMP CVsPackage::GetAutomationObject(
@@ -89,7 +89,7 @@ ms.locfileid: "56609918"
 
      オートメーション オブジェクトの一意の名前を選択します。 名前の競合が予測可能なではなく、競合が発生する場合は、同じ名前を使用して、複数のプロジェクトの種類任意にスローされる競合するオブジェクト名。 会社名またはオートメーション オブジェクトの名前には、その製品名の一部の一意の側面を含める必要があります。
 
-     カスタム`Projects`コレクション オブジェクトは、プロジェクト オートメーション モデルの残りの部分の利便性のためのエントリ ポイント。 プロジェクト オブジェクトがからアクセスできることも、<xref:EnvDTE.Solution>プロジェクト コレクション。 コンシューマーに提供する適切なコードとレジストリ エントリを作成した後`Projects`コレクション オブジェクトの場合、残りのプロジェクト モデルの標準的なオブジェクトの実装が提供する必要があります。 詳細については、[プロジェクトのモデリング](../../extensibility/internals/project-modeling.md)を参照してください。
+     カスタム`Projects`コレクション オブジェクトは、プロジェクト オートメーション モデルの残りの部分の利便性のためのエントリ ポイント。 プロジェクト オブジェクトがからアクセスできることも、<xref:EnvDTE.Solution>プロジェクト コレクション。 コンシューマーに提供する適切なコードとレジストリ エントリを作成した後`Projects`コレクション オブジェクトの場合、残りのプロジェクト モデルの標準的なオブジェクトの実装が提供する必要があります。 詳細については、次を参照してください。[プロジェクトのモデリング](../../extensibility/internals/project-modeling.md)します。
 
 ## <a name="see-also"></a>関連項目
 

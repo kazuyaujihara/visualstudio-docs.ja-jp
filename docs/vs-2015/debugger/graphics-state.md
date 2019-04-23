@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485969b40fdcedd2ec8835de8d9c9a699aba9e79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963977"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091786"
 ---
 # <a name="graphics-state"></a>グラフィックスの状態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Visual Studio のグラフィックス診断の [状態] ウィンドウでは�
   
 ##### <a name="to-change-the-state-view"></a>状態ビューを変更するには  
   
--   [状態] ウィンドウ左上のタイトル バーのすぐ下で、使用する状態ビューのスタイルに対応するボタンを選択します。  
+- [状態] ウィンドウ左上のタイトル バーのすぐ下で、使用する状態ビューのスタイルに対応するボタンを選択します。  
   
-    -   **API 入力状態ビューの表示**  
+    - **API 入力状態ビューの表示**  
   
-    -   **論理状態ビューの表示**  
+    - **論理状態ビューの表示**  
   
-    -   **固定状態ビューの表示**  
+    - **固定状態ビューの表示**  
   
 > [!IMPORTANT]
 >  **[固定状態ビューの表示]** で状態を表示するには、**[API 入力状態ビューの表示]** または **[論理状態ビューの表示]** で状態を固定する必要があります。  
@@ -67,8 +67,8 @@ Visual Studio のグラフィックス診断の [状態] ウィンドウでは�
   
 ##### <a name="to-pin-state-in-place"></a>状態を固定するには  
   
-1.  [状態] ウィンドウで該当する状態を見つけます。 該当する詳細の検索を見つけるために、上位レベルの状態を展開しなければならないことがあります。  
+1. [状態] ウィンドウで該当する状態を見つけます。 該当する詳細の検索を見つけるために、上位レベルの状態を展開しなければならないことがあります。  
   
-2.  該当する状態の上にカーソルを置きます。 状態の項目の左側に、[固定] アイコンが表示されます。  
+2. 該当する状態の上にカーソルを置きます。 状態の項目の左側に、[固定] アイコンが表示されます。  
   
-3.  [固定] アイコンをクリックして、状態の項目を固定します。
+3. [固定] アイコンをクリックして、状態の項目を固定します。

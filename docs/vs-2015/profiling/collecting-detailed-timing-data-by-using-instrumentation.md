@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 595c5f326ba7af25f3b6517f9955db18056e38f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c129ddf016e02fe6c29d5cf63fe57ba07fbd4e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087977"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>インストルメンテーションを使用した詳細なタイミング データの収集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ ms.locfileid: "54794327"
   
  インストルメンテーション メソッドは、次のいずれかの手順を使用して指定できます。  
   
--   プロファイリング ウィザードの最初のページで **[インストルメンテーション]** を選択します。  
+- プロファイリング ウィザードの最初のページで **[インストルメンテーション]** を選択します。  
   
--   **パフォーマンス エクスプローラー** のツールバーで、 **[メソッド]** 一覧の **[インストルメンテーション]** をクリックします。  
+- **パフォーマンス エクスプローラー** のツールバーで、 **[メソッド]** 一覧の **[インストルメンテーション]** をクリックします。  
   
--   パフォーマンス セッションの [プロパティ] ダイアログ ボックスの **[全般]** ページで、 **[インストルメンテーション]** をクリックします。  
+- パフォーマンス セッションの [プロパティ] ダイアログ ボックスの **[全般]** ページで、 **[インストルメンテーション]** をクリックします。  
   
-## <a name="common-tasks"></a>一般的なタスク  
+## <a name="common-tasks"></a>よく使う機能  
  追加のオプションを、パフォーマンス セッションの [ _パフォーマンス セッション]_**[プロパティ ページ]** ダイアログ ボックスで指定できます。 このダイアログ ボックスを開くには:  
   
 - **パフォーマンス エクスプローラー**で、パフォーマンス セッション名を右クリックして **[プロパティ]** をクリックします。  

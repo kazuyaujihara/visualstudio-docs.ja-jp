@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977711"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069537"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>方法: オンライン ClickOnce アプリケーションでクエリ文字列を取得する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ ms.locfileid: "58977711"
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>ClickOnce アプリケーションでクエリ文字列を取得するには  
   
-1.  プロジェクト内に次のコードを記述します。 このコードが機能するためには、System.Web への参照を設定し、System.Web、System.Collections.Specialized、および System.Deployment.Application に対して `using` ステートメントまたは `Imports` ステートメントを追加する必要があります。  
+1. プロジェクト内に次のコードを記述します。 このコードが機能するためには、System.Web への参照を設定し、System.Web、System.Collections.Specialized、および System.Deployment.Application に対して `using` ステートメントまたは `Imports` ステートメントを追加する必要があります。  
   
      [!code-csharp[ClickOnceQueryString#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
      [!code-vb[ClickOnceQueryString#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
   
-2.  定義済みの関数を呼び出して、名前でインデックス化された、クエリ文字列パラメーターの <xref:System.Collections.DictionaryBase.Dictionary%2A> を取得します。  
+2. 定義済みの関数を呼び出して、名前でインデックス化された、クエリ文字列パラメーターの <xref:System.Collections.DictionaryBase.Dictionary%2A> を取得します。  
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>MageUI.exe を使用して ClickOnce アプリケーションでクエリ文字列の受け渡しを有効にする方法  
   
-1.  .NET Framework のコマンド プロンプトを開き、次のように入力します。  
+1. .NET Framework のコマンド プロンプトを開き、次のように入力します。  
   
     ```  
     MageUI  
     ```  
   
-2.  **[ファイル]** メニューの **[開く]** をクリックし、対象の [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションの配置マニフェストを開きます。配置マニフェスト ファイルの拡張子は `.application` です。  
+2. **[ファイル]** メニューの **[開く]** をクリックし、対象の [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションの配置マニフェストを開きます。配置マニフェスト ファイルの拡張子は `.application` です。  
   
-3.  左側のナビゲーション ウィンドウにある **[配置オプション]** パネルをクリックし、 **[URL パラメーターをアプリケーションに渡すことを許可する]** チェック ボックスをオンにします。  
+3. 左側のナビゲーション ウィンドウにある **[配置オプション]** パネルをクリックし、 **[URL パラメーターをアプリケーションに渡すことを許可する]** チェック ボックスをオンにします。  
   
-4.  **[ファイル]** メニューの **[保存]** をクリックします。  
+4. **[ファイル]** メニューの **[保存]** をクリックします。  
   
 > [!NOTE]
 >  または、 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]でクエリ文字列を渡すことができるようにすることもできます。 **[URL パラメーターをアプリケーションに渡すことを許可する]** チェック ボックスをオンにします。このチェック ボックスは、 **[プロジェクトのプロパティ]** を開いて **[発行]** タブをクリックし、 **[オプション]** ボタンをクリックして **[マニフェスト]** を選択すると表示されます。  

@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975719"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045784"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>方法: アプリケーション マニフェストと配置マニフェストの再署名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Windows フォーム アプリケーション、Windows Presentation Foundation 
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe を使用してマニフェストに、アプリケーションおよび配置を再署名するには  
   
-1.  開く、 **Visual Studio コマンド プロンプト**ウィンドウ。  
+1. 開く、 **Visual Studio コマンド プロンプト**ウィンドウ。  
   
-2.  マニフェスト ファイルに署名するが含まれるフォルダーにディレクトリを変更します。  
+2. マニフェスト ファイルに署名するが含まれるフォルダーにディレクトリを変更します。  
   
-3.  アプリケーション マニフェスト ファイルの署名には、次のコマンドを入力します。 ManifestFileName をマニフェスト ファイルと、拡張の名前に置き換えます。 証明書を証明書ファイルの相対パスまたは完全修飾パスに置き換え、パスワードを証明書のパスワードに置き換えます。  
+3. アプリケーション マニフェスト ファイルの署名には、次のコマンドを入力します。 ManifestFileName をマニフェスト ファイルと、拡張の名前に置き換えます。 証明書を証明書ファイルの相対パスまたは完全修飾パスに置き換え、パスワードを証明書のパスワードに置き換えます。  
   
     ```  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -56,7 +56,7 @@ Windows フォーム アプリケーション、Windows Presentation Foundation 
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  更新し、前の手順のようにプレース ホルダー名を置き換えて、配置マニフェスト ファイルを署名するには、次のコマンドを入力します。  
+4. 更新し、前の手順のようにプレース ホルダー名を置き換えて、配置マニフェスト ファイルを署名するには、次のコマンドを入力します。  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -70,20 +70,20 @@ Windows フォーム アプリケーション、Windows Presentation Foundation 
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  必要に応じて、マスター展開マニフェストをコピー (発行\\*appname*.application) バージョンの展開ディレクトリに (publish\Application ファイル\\*appname*_*バージョン*)。  
+5. 必要に応じて、マスター展開マニフェストをコピー (発行\\*appname*.application) バージョンの展開ディレクトリに (publish\Application ファイル\\*appname*_*バージョン*)。  
   
 ## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>更新およびアプリケーション マニフェストと配置マニフェストに再署名  
  この手順は、アプリケーション マニフェスト (.manifest)、ファイルの変更が既に行われたことが、更新されたその他のファイルがあることを前提とします。 ファイルが更新されると、ファイルを表すハッシュも更新する必要があります。  
   
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe を使用してマニフェストを更新し、アプリケーションおよび配置に再署名するには  
   
-1.  開く、 **Visual Studio コマンド プロンプト**ウィンドウ。  
+1. 開く、 **Visual Studio コマンド プロンプト**ウィンドウ。  
   
-2.  マニフェスト ファイルに署名するが含まれるフォルダーにディレクトリを変更します。  
+2. マニフェスト ファイルに署名するが含まれるフォルダーにディレクトリを変更します。  
   
-3.  発行の出力フォルダー内のファイルから、.deploy ファイル拡張子を削除します。  
+3. 発行の出力フォルダー内のファイルから、.deploy ファイル拡張子を削除します。  
   
-4.  更新されたファイル用の新しいハッシュで、アプリケーション マニフェストを更新して、アプリケーション マニフェスト ファイルに署名するには、次のコマンドを入力します。 ManifestFileName をマニフェスト ファイルと、拡張の名前に置き換えます。 証明書を証明書ファイルの相対パスまたは完全修飾パスに置き換え、パスワードを証明書のパスワードに置き換えます。  
+4. 更新されたファイル用の新しいハッシュで、アプリケーション マニフェストを更新して、アプリケーション マニフェスト ファイルに署名するには、次のコマンドを入力します。 ManifestFileName をマニフェスト ファイルと、拡張の名前に置き換えます。 証明書を証明書ファイルの相対パスまたは完全修飾パスに置き換え、パスワードを証明書のパスワードに置き換えます。  
   
     ```  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -97,7 +97,7 @@ Windows フォーム アプリケーション、Windows Presentation Foundation 
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  更新し、前の手順のようにプレース ホルダー名を置き換えて、配置マニフェスト ファイルを署名するには、次のコマンドを入力します。  
+5. 更新し、前の手順のようにプレース ホルダー名を置き換えて、配置マニフェスト ファイルを署名するには、次のコマンドを入力します。  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -111,9 +111,9 @@ Windows フォーム アプリケーション、Windows Presentation Foundation 
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  ただし、アプリケーションおよび配置マニフェスト ファイル、ファイルに .deploy ファイル拡張子を追加します。  
+6. ただし、アプリケーションおよび配置マニフェスト ファイル、ファイルに .deploy ファイル拡張子を追加します。  
   
-7.  必要に応じて、マスター展開マニフェストをコピー (発行\\*appname*.application) バージョンの展開ディレクトリに (publish\Application ファイル\\*appname*_*バージョン*)。  
+7. 必要に応じて、マスター展開マニフェストをコピー (発行\\*appname*.application) バージョンの展開ディレクトリに (publish\Application ファイル\\*appname*_*バージョン*)。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   

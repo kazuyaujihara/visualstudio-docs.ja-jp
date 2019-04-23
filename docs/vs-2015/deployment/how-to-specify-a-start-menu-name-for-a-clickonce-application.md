@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 38ea7865d625e2d5a04591848ecc7c3375d654f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 30bb4050399bf7a6d9120f7e5454b26ce505af35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061555"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションのスタート メニューの名前を指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ ms.locfileid: "58975582"
   
 ### <a name="to-specify-a-start-menu-name"></a>スタート メニューの名前を指定するには  
   
-1.  **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
+1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
   
-2.  **発行**タブをクリックします。  
+2. **発行**タブをクリックします。  
   
-3.  **オプション**ボタンをクリックして、**発行オプション** ダイアログ ボックスを開きます。  
+3. **オプション**ボタンをクリックして、**発行オプション** ダイアログ ボックスを開きます。  
   
-4.  **説明**をクリックします。  
+4. **説明**をクリックします。  
   
-5.  **発行オプション** ダイアログ ボックスで、**製品名**に表示する名前を入力します。  
+5. **発行オプション** ダイアログ ボックスで、**製品名**に表示する名前を入力します。  
   
-6.  必要に応じて、**パブリッシャー名**にパブリッシャー名を入力します。  
+6. 必要に応じて、**パブリッシャー名**にパブリッシャー名を入力します。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   

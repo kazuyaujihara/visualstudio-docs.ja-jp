@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366849"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio デバッガーで擬似変数
@@ -36,7 +36,7 @@ ms.locfileid: "59366849"
 
 |擬似変数|関数|
 |--------------------|--------------|
-|`$err`|SetLastError 関数で設定された最後のエラー値を表示します。 表示される値は、本来 GetLastError が返す値を示します。<br /><br /> `$err,hr` を使用すると、この値のデコードされた形式が表示されます。 たとえば、最後のエラーが、3、`$err,hr`が表示されます `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
+|`$err`|SetLastError 関数で設定された最後のエラー値を表示します。 表示される値は、本来 GetLastError が返す値を示します。<br /><br /> `$err,hr` を使用すると、この値のデコードされた形式が表示されます。 たとえば、最後のエラーが 3 の場合、`$err,hr` によって `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.` と表示されます。|
 |`$handles`|アプリケーションに割り当てられているハンドル数を表示します。|
 |`$vframe`|現在のスタック フレームのアドレスを表示します。|
 |`$tid`|現在のスレッドのスレッド ID を表示します。|

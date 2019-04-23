@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 94f61902090c2ada0770a41375d5cb501b92580f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268724"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660740"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio の C++ プロジェクト システムの機能拡張とツールセットの統合
 
@@ -215,7 +215,7 @@ Visual Studio は、クロス プラットフォームのサポートを実装�
 
 ## <a name="msbuild-tasks-to-use-in-toolset-targets"></a>ツールセットのターゲットで使用する MSBuild タスク
 
-実際のビルド ツールを起動するには、ターゲットを MSBuild タスクを呼び出す必要があります。 基本的ながある[Exec タスク](../msbuild/exec-task.md)を実行するコマンドラインを指定することができます。 ただし、通常、ビルド ツールでは、多くのオプション、入力があります。 インクリメンタル ビルドを追跡するため、それらに対する特別なタスクを持つ方が合理的に出力します。 たとえば、`CL`タスク CL.exe スイッチの MSBuild プロパティに変換、応答ファイルに書き込みますおよび CL.exe を呼び出します。 また、以降のインクリメンタル ビルドのすべての入力と出力ファイルを追跡します。 詳細については、[インクリメンタル ビルドと最新状態チェック](#incremental-builds-and-up-to-date-checks)を参照してください。
+実際のビルド ツールを起動するには、ターゲットを MSBuild タスクを呼び出す必要があります。 基本的ながある[Exec タスク](../msbuild/exec-task.md)を実行するコマンドラインを指定することができます。 ただし、通常、ビルド ツールでは、多くのオプション、入力があります。 インクリメンタル ビルドを追跡するため、それらに対する特別なタスクを持つ方が合理的に出力します。 たとえば、`CL`タスク CL.exe スイッチの MSBuild プロパティに変換、応答ファイルに書き込みますおよび CL.exe を呼び出します。 また、以降のインクリメンタル ビルドのすべての入力と出力ファイルを追跡します。 詳細については、次を参照してください。[インクリメンタル ビルドと最新状態チェック](#incremental-builds-and-up-to-date-checks)します。
 
 Microsoft.Cpp.Common.Tasks.dll は、これらのタスクを実装します。
 
@@ -285,7 +285,6 @@ MSBuild では、読み取りと書き込み .tlog ファイル。 これらの�
 [している FlatTrackingData](/dotnet/api/microsoft.build.utilities.flattrackingdata)読み書きの両方にアクセスし、.tlog ファイルの書き込みと出力がない場合や、出力よりも新しい入力を識別するクラスを使用できます。 最新の状態の確認に使用されます。
 
 コマンド ライン .tlog ファイルには、ビルドで使用されるコマンドラインに関する情報が含まれます。 内部の形式が生成する MSBuild タスクによって決まりますが、最新ではないチェックは、インクリメンタル ビルドにのみ使用されます。
-
 
 ### <a name="read-tlog-format"></a>読み取り .tlog 形式
 
@@ -416,9 +415,9 @@ Visual C プロジェクト システムがに基づいて、 [VS プロジェ�
 
 ### <a name="project-property-pages"></a>プロジェクト プロパティ ページ
 
-一般的な設計については、[vc++ プロジェクトのフレームワークのマルチ ターゲット](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/)を参照してください。
+一般的な設計については、次を参照してください。 [vc++ プロジェクトのフレームワークのマルチ ターゲット](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/)します。
 
-簡単に言えば、プロパティ ページを参照してください、**プロジェクトのプロパティ**C++ プロジェクトのダイアログが定めた*ルール*ファイル。 ルール ファイルには、一連のプロパティ ページでは、表示し、プロジェクトに保存する必要があり、どのファイルのプロパティを指定します。 ルール ファイルは、Xaml 形式を使用する .xml ファイルです。 シリアル化に使用する型が記載されて[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)します。 プロジェクト内のルール ファイルの使用に関する詳細については、[プロパティ ページの XML ルール ファイル](/cpp/build/reference/property-page-xml-files)を参照してください。
+簡単に言えば、プロパティ ページを参照してください、**プロジェクトのプロパティ**C++ プロジェクトのダイアログが定めた*ルール*ファイル。 ルール ファイルには、一連のプロパティ ページでは、表示し、プロジェクトに保存する必要があり、どのファイルのプロパティを指定します。 ルール ファイルは、Xaml 形式を使用する .xml ファイルです。 シリアル化に使用する型が記載されて[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)します。 プロジェクト内のルール ファイルの使用に関する詳細については、次を参照してください。[プロパティ ページの XML ルール ファイル](/cpp/build/reference/property-page-xml-files)します。
 
 ルール ファイルに追加する必要があります、`PropertyPageSchema`項目グループ。
 
@@ -557,7 +556,7 @@ Visual Studio でデバッグ サービスでは、デバッグ エンジンの�
 
    これらのプロパティ名で *\<safe_toolset_name >* アンダー スコアに置き換え英数字以外のすべての文字とツールセットの名前を表します (**\_**)。
 
-含まれているプロジェクトをアップグレードするには、*ソリューションの再ターゲット*します。 詳細については、[IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2)を参照してください。
+含まれているプロジェクトをアップグレードするには、*ソリューションの再ターゲット*します。 詳細については、次を参照してください。 [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2)します。
 
 プロジェクトの名前を装飾するなら**ソリューション エクスプ ローラー**プロジェクトは、特定のツールセットを使用して、ときに定義、`_PlatformToolsetShortNameFor_<safe_toolset_name>`プロパティ。
 
@@ -632,12 +631,12 @@ CPS オブジェクトをキャッシュから読み込まれている .vcxproj 
 
 ## <a name="shipping-your-extension"></a>拡張機能を配布
 
-VSIX ファイルを作成する方法については、[Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)を参照してください。 たとえば、特別なインストール場所にファイルを追加して、下のファイルを追加する方法について`$(VCTargetsPath)`を参照してください[拡張機能フォルダー外でのインストール](../extensibility/set-install-root.md)します。
+VSIX ファイルを作成する方法については、次を参照してください。 [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)します。 たとえば、特別なインストール場所にファイルを追加して、下のファイルを追加する方法について`$(VCTargetsPath)`を参照してください[拡張機能フォルダー外でのインストール](../extensibility/set-install-root.md)します。
 
 ## <a name="additional-resources"></a>その他の技術情報
 
 Microsoft ビルド システム ([MSBuild](../msbuild/msbuild.md)) ビルド エンジンと拡張可能な XML ベース形式のプロジェクト ファイルを提供します。 理解しておく必要があります basic [MSBuild の概念](../msbuild/msbuild-concepts.md)方法を使用して[Visual C の MSBuild](/cpp/build/reference/msbuild-visual-cpp-overview)プロジェクト システムの Visual C を拡張するには動作します。
 
-Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 拡張機能の CPS と Visual C プロジェクト システムで使用される Api を提供します。 CPS で MEF を使用する方法の概要については、[CPS と MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)で、 [MEF の概要については VSProjectSystem](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)を参照してください。
+Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 拡張機能の CPS と Visual C プロジェクト システムで使用される Api を提供します。 CPS で MEF を使用する方法の概要については、次を参照してください。 [CPS と MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)で、 [MEF の概要については VSProjectSystem](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)します。
 
-ビルド ステップまたは新しいファイルの種類を追加する既存のビルド システムをカスタマイズできます。 詳細については、[MSBuild (Visual c) の概要](/cpp/build/reference/msbuild-visual-cpp-overview)と[プロジェクト プロパティの操作](/cpp/build/working-with-project-properties)を参照してください。
+ビルド ステップまたは新しいファイルの種類を追加する既存のビルド システムをカスタマイズできます。 詳細については、次を参照してください。 [MSBuild (Visual c) の概要](/cpp/build/reference/msbuild-visual-cpp-overview)と[プロジェクト プロパティの操作](/cpp/build/working-with-project-properties)します。

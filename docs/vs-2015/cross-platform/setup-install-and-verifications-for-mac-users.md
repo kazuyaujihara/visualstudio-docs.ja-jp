@@ -6,22 +6,21 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 52310ffb0a3c08f652f4d628db1c047a5d0417d6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 623e47e7244e9e4317e89f47cfda02bda465273b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772036"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670291"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Mac ユーザー向けのセットアップ、インストール、および 検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このトピックは、主に Mac で作業し、Mac で Windows 仮想マシン内部の Visual Studio を必要に応じて使用する開発者を対象としています。 主に Windows コンピューターで作業する開発者であり、かつ iOS をターゲットとするためにセカンダリの Mac を設定する必要がある場合は、メインの「[Setup and install](../cross-platform/setup-and-install.md)」トピックをご覧ください。  
   
  Mac で Xamarin を操作するには、次の条件が必要です。  
   
-- Xamarin アカウント。 移動[ https://www.xamarin.com/ ](https://www.xamarin.com/) をクリック**サインイン**、ページの右上にあるをクリックし、**新しいアカウントを作成**表示されるページ。 Xamarin アカウントの電子メール アドレスとパスワードを選択します。  
+- Xamarin アカウント。 移動[ https://www.xamarin.com/ ](https://www.xamarin.com/) ] をクリック**サインイン**、ページの右上にあるをクリックし、**新しいアカウントを作成**表示されるページ。 Xamarin アカウントの電子メール アドレスとパスワードを選択します。  
   
 - Xcode 7 および Xamarin 4 がインストールされた、OSX Yosemite (10.10) 以降を搭載した Mac。  
   

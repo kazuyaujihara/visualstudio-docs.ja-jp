@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaaa9b5f30844e9d23b35ec9304a70edcd2b6139
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933251"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089316"
 ---
 # <a name="hierarchical-update"></a>階層更新
 
@@ -87,9 +87,9 @@ ms.locfileid: "55933251"
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>保存前に、関連テーブルへの変更をコミットするコードを更新するには
 
-1.  <xref:System.Windows.Forms.BindingNavigator> の **[保存]** ボタンをダブルクリックし、コード エディターで **Form1** を開きます。
+1. <xref:System.Windows.Forms.BindingNavigator> の **[保存]** ボタンをダブルクリックし、コード エディターで **Form1** を開きます。
 
-2.  `OrdersBindingSource.EndEdit` メソッドを呼び出す行の後に、`CustomersBindingSource.EndEdit` メソッドを呼び出すコード行を追加します。 **[保存]** ボタン クリック イベントのコードは、次のようになります。
+2. `OrdersBindingSource.EndEdit` メソッドを呼び出す行の後に、`CustomersBindingSource.EndEdit` メソッドを呼び出すコード行を追加します。 **[保存]** ボタン クリック イベントのコードは、次のようになります。
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
@@ -101,12 +101,11 @@ ms.locfileid: "55933251"
 
 ### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>データセットで新しい子レコードを追加する前に親レコードをコミットするコードを追加するには
 
-1.  
-  `OrdersBindingSource.AddingNew` イベントのイベント ハンドラーを作成します。
+1. `OrdersBindingSource.AddingNew` イベントのイベント ハンドラーを作成します。
 
-    -   開いている**Form1**デザイン ビューで、次のように選択します**OrdersBindingSource** 、コンポーネント トレイに次のように選択します。**イベント**で、**プロパティ**ウィンドウ、および。ダブルクリックし、 **AddingNew**イベント。
+    - 開いている**Form1**デザイン ビューで、次のように選択します**OrdersBindingSource** 、コンポーネント トレイに次のように選択します。**イベント**で、**プロパティ**ウィンドウ、および。ダブルクリックし、 **AddingNew**イベント。
 
-2.  呼び出すイベント ハンドラーにコードの行を追加、`CustomersBindingSource.EndEdit`メソッド。 `OrdersBindingSource_AddingNew` イベント ハンドラー内のコードは、次のようになります。
+2. 呼び出すイベント ハンドラーにコードの行を追加、`CustomersBindingSource.EndEdit`メソッド。 `OrdersBindingSource_AddingNew` イベント ハンドラー内のコードは、次のようになります。
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]

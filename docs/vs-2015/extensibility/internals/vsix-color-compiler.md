@@ -6,12 +6,12 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063674"
 ---
 # <a name="vsix-color-compiler"></a>VSIX カラー コンパイラ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
 |-|-|  
 |**属性**|**定義**|  
 |型|[必須]色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色は、無効であるか設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor から Windows のシステム カラーです。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX から Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動の色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|  
-|ソース|[必須]16 進数で表される色の値|  
+|Source|[必須]16 進数で表される色の値|  
   
  型の属性のスキーマでは、__VSCOLORTYPE 列挙型によってサポートされているすべての値がサポートされています。 ただし、CT_RAW と CT_SYSCOLOR のみを使用することをお勧めします。  
   
@@ -149,15 +149,15 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
   
  **例**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   VsixColorCompiler D:\xml\colors.xml /noLogo  
+- VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>メモ  
   
--   このツールでは、vc ランタイムの最新バージョンをインストールすることが必要です。  
+- このツールでは、vc ランタイムの最新バージョンをインストールすることが必要です。  
   
--   1 つのファイルのみがサポートされています。 フォルダーのパスを使用して一括変換がサポートされていません。  
+- 1 つのファイルのみがサポートされています。 フォルダーのパスを使用して一括変換がサポートされていません。  
   
 ## <a name="sample-output"></a>出力例  
  ツールによって生成された、.pkgdef ファイルのようになります、キーの下。  

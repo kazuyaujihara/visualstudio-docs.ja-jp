@@ -13,22 +13,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17cfc810bbe8cfa303620b19c49941ba9085a849
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779360"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662560"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio コマンド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Visual Studio のコマンドを使用すると、 **[コマンド]** ウィンドウ、 **[イミディエイト]** ウィンドウ、または **[検索]** ボックスからコマンドを呼び出すことができます。 どちらに入力する場合でも、後続の操作が検索またはデバッグではなく、コマンドであることを示す不等号 (`>`) を使用します。
 
  コマンドの一覧とその構文は、 **[オプション]** ダイアログ ボックスの [環境] の下の [キーボード] で確認できます。
 
- Visual Studio のコマンドのエスケープ文字はキャレット (^) 文字です。これは、その直後の文字が制御文字としてではなくリテラル文字として解釈されることを意味します。 したがって、引用符 (")、スペース、先頭のスラッシュ、カレット、その他の任意のリテラル文字をパラメーターまたはスイッチの値に直接埋め込むことができます。ただし、スイッチ名には埋め込むことができません。 たとえば、オブジェクトに適用された
+ Visual Studio のコマンドのエスケープ文字はキャレット (^) 文字です。これは、その直後の文字が制御文字としてではなくリテラル文字として解釈されることを意味します。 したがって、引用符 (")、スペース、先頭のスラッシュ、カレット、その他の任意のリテラル文字をパラメーターまたはスイッチの値に直接埋め込むことができます。ただし、スイッチ名には埋め込むことができません。 例えば以下のようにします。
 
 ```
 >Edit.Find ^^t /regex

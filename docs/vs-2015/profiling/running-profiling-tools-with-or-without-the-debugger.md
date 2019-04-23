@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 910c2f6e71820c079eb92fdc7adf61d9e67d0001
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783391"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054067"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>デバッガーを使用して、または使用せずにプロファイリング ツールを実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Visual Studio ではパフォーマンス ツールを選ぶことができま�
   
  どちらのツールがご自分の目的に適しているかを判断するうえで役立ついくつかの質問を次に示します。  
   
-1.  アプリケーションの開発中に問題が発生しましたか、またはリリース版に問題が見つかりましたか。  
+1. アプリケーションの開発中に問題が発生しましたか、またはリリース版に問題が見つかりましたか。  
   
      扱っている問題が開発中に見つかったものならば、リリース ビルドでパフォーマンス ツールを実行する必要はおそらくありません。 リリース版で見つかったものであれば、リリース構成で問題を再現して、さらに調査するためにデバッガーが役立つかどうか判断してください。  
   
-2.  CPU 負荷の高い処理が問題の原因ですか。  
+2. CPU 負荷の高い処理が問題の原因ですか。  
   
      多くの問題は、ファイル入出力、ネットワークの応答性など外的なパフォーマンス上の問題に起因しています。この場合、パフォーマンス ツールのデバッガーの有無が大きな違いになることはありません。 問題が CPU 負荷の高い呼び出しに起因している場合、リリース構成とデバッグ構成の違いは考慮に値するかもしれません。デバッガー統合ツールを使用する前に、おそらくリリース ビルドで問題が生じるかどうかを確認するべきでしょう。  
   
-3.  パフォーマンスを正確に測定する必要がありますか、それともおおよその測定で構いませんか。  
+3. パフォーマンスを正確に測定する必要がありますか、それともおおよその測定で構いませんか。  
   
      デバッグ ビルドには、リリース ビルドにはある最適化がありません。たとえば、関数呼び出しと定数のインライン化、不使用のコード パスの除去、変数の保存などは、デバッガーが使用できない方法で行われます。 デバッガー自体によって、パフォーマンス時間が変わります。デバッガーによって必要な特定の操作 (例外の解釈やモジュール読み込みのイベントなど) が実行されるためです。 したがって、デバッガー統合ツールでのパフォーマンスの数値には、数十ミリ秒の誤差が生じます。 デバッガーを使用しないリリース構成のツールによるパフォーマンス数値の方が、精度が高くなります。  
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> デバッグ中にプロファイリング データを収集する  
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> デバッグ中にプロファイリング データを収集する  
  次のセクションでは、ローカル デバッグについて説明します。 後のセクションでは、デバイスでのデバッグやリモート デバッグについて確認できます。  
   
 1. デバッグするプロジェクトを開いてから、 **[デバッグ] / [デバッグの開始]** の順にクリックします (またはツールバーの **[開始]** をクリックするか、 **F5**キーを押します)。  
@@ -74,7 +74,7 @@ Visual Studio ではパフォーマンス ツールを選ぶことができま�
   
 1. Visual Studio でプロジェクトを開きます。  
   
-2. **[デバッグ]** メニューの **[パフォーマンス プロファイラー...]** をクリックします。(ショートカット キー: Alt + F2)。  
+2. **[デバッグ]** メニューの **[パフォーマンス プロファイラー...]** をクリックします。(ショートカット キー。Alt + F2)。  
   
 3. 診断の起動ページで、セッションで実行する 1 つ以上のツールを選択します。 プロジェクトの種類、オペレーティング システム、およびプログラミング言語に適用されるツールのみが表示されます。 ある診断ツールを選択すると、同じ診断セッションで実行できないツールの選択肢が無効になります。 C# Windows ユニバーサル アプリでの選択例を次に示します。  
   
@@ -125,17 +125,17 @@ Visual Studio ではパフォーマンス ツールを選ぶことができま�
  リモート PC またはタブレットで診断セッションを実行するには、リモート ターゲットに Visual Studio リモート ツールがインストールおよび実行されている必要があります。 デスクトップ アプリについては、「[リモート デバッグ](../debugger/remote-debugging.md)」をご覧ください。  Windows ユニバーサル アプリについては、「[リモート コンピューターでの Windows ストア アプリの実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)」をご覧ください。  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>診断開発チームのブログ投稿と MSDN 記事  
- [MSDN マガジン: Visual Studio 2015 でのデバッグ中のパフォーマンス分析](https://msdn.microsoft.com/magazine/dn973013.aspx)  
+ [MSDN マガジン:Visual Studio 2015 でのデバッグ中のパフォーマンス分析](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
- [MSDN マガジン: IntelliTrace を使用して迅速に問題を診断する](https://msdn.microsoft.com/magazine/dn973014.aspx)  
+ [MSDN マガジン:IntelliTrace を使用して迅速に問題を診断する](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [ブログの投稿: Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015 (Visual Studio 2015 でのメモリ使用量ツールを使用したイベント ハンドラーのリークの診断)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [ブログの投稿:Visual Studio 2015 でのメモリ使用量ツールを使用したイベント ハンドラーのリークの診断](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
   
- [ビデオ: Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015 (Microsoft Visual Studio Ultimate 2015 での IntelliTrace を使用したデバッグ履歴)](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [ビデオ:Microsoft Visual Studio Ultimate 2015 での IntelliTrace を使用したデバッグ履歴](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
- [ビデオ: Debugging Performance Issues Using Visual Studio 2015 (Visual Studio 2015 を使用したパフォーマンスに関する問題のデバッグ)](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [ビデオ:Visual Studio 2015 を使用したパフォーマンスに関する問題のデバッグ](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio (Visual Studio を使用したデバッグ中のパフォーマンス概要の参照)](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [パフォーマンスのヒント:Visual Studio を使用したデバッグ中のパフォーマンス概要の参照](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
  [Visual Studio 2015 の診断ツール [デバッガー] ウィンドウ](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   

@@ -9,14 +9,14 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f3d513010b94c61e09f8bda6a9fb3074ba949bdd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057837"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>方法: パフォーマンス データ ファイル名のオプションを設定する
+# <a name="how-to-set-performance-data-file-name-options"></a>方法: パフォーマンス データのファイル名のオプションの設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 既定では、次の構文を使用してプロファイル データ (.vsp) ファイルを保存します。  
@@ -27,7 +27,7 @@ ms.locfileid: "54760415"
   
  **必要条件**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 |||  
 |-|-|  
@@ -38,11 +38,11 @@ ms.locfileid: "54760415"
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>パフォーマンス セッションのプロファイル データ ファイルの名前付け構文を変更するには  
   
-1.  **パフォーマンス エクスプローラー**で、パフォーマンス セッションの名前を右クリックして、**[プロパティ]** をクリックします。  
+1. **パフォーマンス エクスプローラー**で、パフォーマンス セッションの名前を右クリックして、**[プロパティ]** をクリックします。  
   
-2.  **[全般]** をクリックします。  
+2. **[全般]** をクリックします。  
   
-3.  **[レポート]** で、以下のいずれかの設定を変更します。  
+3. **[レポート]** で、以下のいずれかの設定を変更します。  
   
     |||  
     |-|-|  

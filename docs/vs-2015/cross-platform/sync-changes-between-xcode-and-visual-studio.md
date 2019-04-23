@@ -8,16 +8,15 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: bb7b5ebe398b66a8ae28d7734d64ce67c8735a73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 42352ba4c5260c4b13a4cb3c6875d3469efcf404
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754915"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665533"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>XCode と Visual Studio 間の変更の同期
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Microsoft Visual C++ for Mobile Development コンポーネントには、PC と Mac 間で作業を同期するリモート機能が含まれます。 Visual Studio と Mac コンピューターがペアになっている場合、Visual Studio の iOS Application プロジェクトで新しいオプションを使用して、プロジェクトを XCode で開いたり、XCode と Visual Studio 間でコードを移動したり、一時 XCode プロジェクト ディレクトリを消去したりできます。
 

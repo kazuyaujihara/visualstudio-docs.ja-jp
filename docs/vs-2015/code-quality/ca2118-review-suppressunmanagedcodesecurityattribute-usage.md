@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059176"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118:SuppressUnmanagedCodeSecurityAttribute の使用法を確認してください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "58973533"
 
  またはグループは次のいずれかのメンバーであるが、ローカル コンピューターから実行しない限り、既定のセキュリティ ポリシーは、アセンブリにアンマネージ コード アクセス許可を付与できません。
 
--   コンピューターのゾーンのコード グループ
+- コンピューターのゾーンのコード グループ
 
--   Microsoft の厳密な名前のコード グループ
+- Microsoft の厳密な名前のコード グループ
 
--   ECMA 厳密な名前のコード グループ
+- ECMA 厳密な名前のコード グループ
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この属性がどうしても必要なことを確認するようにコードを慎重に確認します。 マネージ コードのセキュリティを使い慣れていらっしゃらないするか、またはこの属性を使用するセキュリティへの影響を理解していない場合は、コードから削除します。 属性が必要な場合は、呼び出し元がコードを悪意を持って使用できないことを確認する必要があります。 コードがアンマネージ コードを実行するアクセス許可を持たない場合、この属性は影響を与えません、削除する必要があります。

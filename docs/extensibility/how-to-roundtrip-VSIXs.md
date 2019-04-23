@@ -9,11 +9,11 @@ manager: justinclareburt
 ms.workload:
 - willbrown
 ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111013"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>方法: Visual Studio 2017 と Visual Studio 2015 と互換性のある拡張機能を作成します。
 
@@ -165,7 +165,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VSSDK.BuildTools 参照を含んでいる `<import>` タグに、その他の条件付きステートメントを追加します。 挿入`'$(VisualStudioVersion)' != '14.0' And`条件文の先頭にあります。 これらのステートメントは、csproj ファイルのヘッダーとフッターに表示されます。
 
-例:
+例えば:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
@@ -173,7 +173,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VisualStudio.Sdk.BuildTasks.14.0 を含んでいる `<import>` タグに、その他の条件付きステートメントを追加します。 挿入`'$(VisualStudioVersion)' == '14.0' And`条件文の先頭にあります。 これらのステートメントは、csproj ファイルのヘッダーとフッターに表示されます。
 
-例:
+例えば:
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,7 +181,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VSSDK.BuildTools 参照を含んでいる `<Error>` タグに、その他の条件付きステートメントを追加します。 これを行うには、条件付きステートメントの前に `'$(VisualStudioVersion)' != '14.0' And` を挿入します。 これらのステートメントは、csproj ファイルのフッターに表示されます。
 
-例:
+例えば:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
@@ -189,7 +189,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VisualStudio.Sdk.BuildTasks.14.0 を含んでいる `<Error>` タグに、その他の条件付きステートメントを追加します。 挿入`'$(VisualStudioVersion)' == '14.0' And`条件文の先頭にあります。 これらのステートメントは、csproj ファイルのフッターに表示されます。
 
-例:
+例えば:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />

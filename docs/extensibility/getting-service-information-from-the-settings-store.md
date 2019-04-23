@@ -8,21 +8,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ed137354ee43b923c5d1508a8c2d5ebe4f754f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe38bf84510ea247c737477e421db8dbb15f63c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042647"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>設定ストアからサービス情報を取得します。
 設定ストアを使用するには、すべての利用可能なサービスを検索するかを特定のサービスがインストールされているかどうかを判断します。 サービス クラスの型が必要です。
 
 ## <a name="to-list-the-available-services"></a>利用可能なサービスを一覧表示するには
 
-1.  という名前の VSIX プロジェクトを作成する`FindServicesExtension`という名前のカスタム コマンドを追加し`FindServicesCommand`します。 カスタム コマンドを作成する方法の詳細については、次を参照してください[メニュー コマンドを使用して拡張機能を作成します。](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. という名前の VSIX プロジェクトを作成する`FindServicesExtension`という名前のカスタム コマンドを追加し`FindServicesCommand`します。 カスタム コマンドを作成する方法の詳細については、次を参照してください[メニュー コマンドを使用して拡張機能を作成します。](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2.  *FindServicesCommand.cs*次を追加するステートメントを使用します。
+2. *FindServicesCommand.cs*次を追加するステートメントを使用します。
 
     ```vb
     using System.Collections.Generic;
@@ -31,7 +31,7 @@ ms.locfileid: "56699419"
     using System.Windows.Forms;
     ```
 
-3.  構成設定ストアを取得し、名前付きサービス、サブコレクションを検索します。 このコレクションには、利用可能なすべてのサービスが含まれています。 `MenuItemCommand`方法を既存のコードを削除して、次に置き換えます。
+3. 構成設定ストアを取得し、名前付きサービス、サブコレクションを検索します。 このコレクションには、利用可能なすべてのサービスが含まれています。 `MenuItemCommand`方法を既存のコードを削除して、次に置き換えます。
 
     ```
     private void MenuItemCallback(object sender, EventArgs e)
@@ -50,9 +50,9 @@ ms.locfileid: "56699419"
     }
     ```
 
-4.  プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
+4. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
 
-5.  実験用インスタンスでは、上、**ツール** メニューのをクリックして**呼び出す FindServicesCommand**します。
+5. 実験用インスタンスでは、上、**ツール** メニューのをクリックして**呼び出す FindServicesCommand**します。
 
      すべてのサービスを一覧表示するメッセージ ボックスが表示されます。
 
@@ -61,7 +61,7 @@ ms.locfileid: "56699419"
 ## <a name="find-a-specific-service"></a>特定のサービスを検索します。
  使用することも、<xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A>する特定のサービスがインストールされているかどうかを判断するメソッド。 サービス クラスの型が必要です。
 
-1.  前の手順で作成したプロジェクトの MenuItemCallback での構成設定ストアを検索、`Services`という名前のサービスの GUID でサブコレクションを含むコレクション。 この場合、ヘルプ サービスを見ていきます。
+1. 前の手順で作成したプロジェクトの MenuItemCallback での構成設定ストアを検索、`Services`という名前のサービスの GUID でサブコレクションを含むコレクション。 この場合、ヘルプ サービスを見ていきます。
 
     ```
     private void MenuItemCallback(object sender, EventArgs e)
@@ -76,8 +76,8 @@ ms.locfileid: "56699419"
     }
     ```
 
-2.  プロジェクトをビルドし、デバッグを開始します。
+2. プロジェクトをビルドし、デバッグを開始します。
 
-3.  実験用インスタンスでは、上、**ツール** メニューのをクリックして**呼び出す FindServicesCommand**します。
+3. 実験用インスタンスでは、上、**ツール** メニューのをクリックして**呼び出す FindServicesCommand**します。
 
      テキスト メッセージが表示する必要があります**使用できるサービスのヘルプ:** 続けて**True**または**False**します。 この設定を確認するには、前の手順で示すように、レジストリ エディターを使用できます。

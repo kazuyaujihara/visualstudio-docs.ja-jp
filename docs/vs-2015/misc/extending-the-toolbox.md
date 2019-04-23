@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
-ms.openlocfilehash: a1cf66baf73fe4a04dcb21b0c7ac7609214bea20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975696"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088705"
 ---
 # <a name="extending-the-toolbox"></a>ツールボックスの拡張
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ツールボックス** には、IDE のドラッグ アンド ドロップ メカニズムを利用してエディターとデザイナーに機能を提供するオブジェクトのコレクションが用意されています。  
   
  VSPackage が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ツールボックス**と連携して動作する方法には、次の 2 つの基本的な方法があります。  
   
--   VSPackage が、新しいデータ項目とコントロールを **ツールボックス**に追加します。  
+- VSPackage が、新しいデータ項目とコントロールを **ツールボックス**に追加します。  
   
--   VSPackage が、既存の **ツールボックス** 機能のターゲットまたはコンシューマーとなり、ドラッグ アンド ドロップ操作をサポートして、 **ツールボックス**の外観を構成します。  
+- VSPackage が、既存の **ツールボックス** 機能のターゲットまたはコンシューマーとなり、ドラッグ アンド ドロップ操作をサポートして、 **ツールボックス**の外観を構成します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [方法: Windows フォームを使用するツールボックス コントロールを作成します。](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)  

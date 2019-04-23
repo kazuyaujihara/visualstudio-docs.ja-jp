@@ -1,5 +1,5 @@
 ---
-title: テスト領域 2:ソース管理から取得 |Microsoft Docs
+title: 'テスト領域 2: ソース管理から取得 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e6a9f71a1ebda6e6366096881fb681a864ce31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067184"
 ---
-# <a name="test-area-2-get-from-source-control"></a>テスト領域 2:ソース管理から取得します。
+# <a name="test-area-2-get-from-source-control"></a>テスト領域 2: ソース管理から取得
 このテストの領域では、Get コマンドを使用して、バージョン ストアから項目を取得するためのテスト_ケースについて説明します。 これらのテスト_ケースは、両方のローカルにし、Web プロジェクトに適用できます。
 
 ## <a name="command-menu-access"></a>コマンド メニューへのアクセス
@@ -26,13 +26,13 @@ ms.locfileid: "56630874"
 
 ##### <a name="get-latest-version"></a>最新バージョンを取得します。
 
--   **ファイル**、**ソース管理**、**最新バージョンの取得**します。
+- **ファイル**、**ソース管理**、**最新バージョンの取得**します。
 
--   **ファイル**、**最新バージョンの取得**します。
+- **ファイル**、**最新バージョンの取得**します。
 
--   ショートカット メニューの **最新バージョンの取得**します。
+- ショートカット メニューの **最新バージョンの取得**します。
 
--   取得：**ファイル**、**ソース管理**、**取得**します。
+- 取得：**ファイル**、**ソース管理**、**取得**します。
 
 ## <a name="expected-behavior"></a>想定される動作
 

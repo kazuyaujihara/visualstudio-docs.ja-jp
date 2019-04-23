@@ -14,12 +14,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 598daccecbd2b03d0df117262571f6f511e2a247
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2feef3cbe72b7eb8db96052236fe483733e22273
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107750"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio コマンドの GUID および ID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Visual Studio 統合開発環境 (IDE) で含まれているコマンドの GUID
 ### <a name="special-cases"></a>特殊なケース
  次の場合、メニュー テキストまたはツールヒントのテキストが一致しない一致コマンド定義でです。
 
--   など、下線付きの文字を含むメニュー項目、**印刷**コマンドを**ファイル**] メニューの [、P に下線が付いています。
+- など、下線付きの文字を含むメニュー項目、**印刷**コマンドを**ファイル**] メニューの [、P に下線が付いています。
 
      メニュー項目の名前で '&' 文字が付いている文字が表示されます、下線が引かれました。 ただし、.vsct ファイルが XML では、特殊文字を示すために '&' 文字を使用し、表示するのには、アンパサンドを綴る必要がありますが必要、で記述 '&amp;'。 そのため、.vsct ファイルで、**印刷**としてコマンドが表示されます '&amp;印刷 '。
 
--   コマンドのテキストを動的をなどが含まれない**保存***現在のファイル名*で項目などのメニュー項目を動的に生成されると、**最近使ったファイル**一覧。
+- コマンドのテキストを動的をなどが含まれない**保存***現在のファイル名*で項目などのメニュー項目を動的に生成されると、**最近使ったファイル**一覧。
 
      動的テキストを検索する確実な方法はありません。 代わりを参照して目的のコマンドをホストするグループを検索[Guid と Visual Studio メニューの Id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)または[Guid と Visual Studio ツールバーの Id の](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)とそのグループの ID を検索します。 コマンドの定義としてグループを持たないかどうか、[親要素](../../extensibility/parent-element.md)、SharedCmdPlace.vsct と ShellCmdPlace.vsct (または VsDbgCmdPlace.vsct のデバッガー コマンド) を検索、`<CommandPlacement>`の親を設定する要素、コマンド。 SharedCmdPlace.vsct、ShellCmdPlace.vsct、andVsDbgCmdPlace.vsct はでは、 *Visual Studio SDK インストール パス*\VisualStudioIntegration\Common\Inc\ フォルダー。
 

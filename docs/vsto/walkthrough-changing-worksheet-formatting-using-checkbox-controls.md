@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77b9226857a7dbd43f8f2cd0f5d247e8a1386d4f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aba73d5fc6c1609a3347178765ba516840b5176e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061690"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>チュートリアル: CheckBox コントロールを使用してワークシートの書式設定を変更します。
   このチュートリアルでは、Microsoft Office Excel ワークシートの書式を変更するチェック ボックスの使用の基本を説明します。 Visual Studio での Office 開発ツールを使用して作成し、プロジェクトにコードを追加するは。 完成したサンプルとして結果を参照してくださいにある Excel コントロールのサンプルを参照してください。 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)します。
@@ -28,11 +28,11 @@ ms.locfileid: "56624660"
 
  このチュートリアルでは、次の作業を行う方法について説明します。
 
--   テキストとコントロールをワークシートに追加します。
+- テキストとコントロールをワークシートに追加します。
 
--   オプションを選択すると、テキストの書式を設定します。
+- オプションを選択すると、テキストの書式を設定します。
 
--   プロジェクトをテストします。
+- プロジェクトをテストします。
 
 > [!NOTE]
 >  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
@@ -40,16 +40,16 @@ ms.locfileid: "56624660"
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
 ## <a name="create-the-project"></a>プロジェクトの作成
  この手順では、Visual Studio を使用して Excel ブック プロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1.  名前の Excel ブック プロジェクトを作成する**マイ Excel の書式**します。 必ず**新しい文書を作成**が選択されています。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. 名前の Excel ブック プロジェクトを作成する**マイ Excel の書式**します。 必ず**新しい文書を作成**が選択されています。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
      デザイナーで新しい Excel ブックを開き、**マイ Excel の書式**プロジェクトを**ソリューション エクスプ ローラー**します。
 
@@ -58,36 +58,36 @@ ms.locfileid: "56624660"
 
 ### <a name="to-add-three-check-boxes"></a>次の 3 つのチェック ボックスを追加するには
 
-1.  ブックが、Visual Studio デザイナーで開いていることを確認`Sheet1`が開いています。
+1. ブックが、Visual Studio デザイナーで開いていることを確認`Sheet1`が開いています。
 
-2.  **コモン コントロール**のタブ、**ツールボックス**、ドラッグ、<xref:Microsoft.Office.Tools.Excel.Controls.CheckBox>コントロールまたはセルの近くに**B2**で**Sheet1**します。
+2. **コモン コントロール**のタブ、**ツールボックス**、ドラッグ、<xref:Microsoft.Office.Tools.Excel.Controls.CheckBox>コントロールまたはセルの近くに**B2**で**Sheet1**します。
 
-3.  **ビュー**メニューの **プロパティ**ウィンドウ。
+3. **ビュー**メニューの **プロパティ**ウィンドウ。
 
-4.  確認します**Checkbox1**のオブジェクト名のリスト ボックスに表示されて、**プロパティ**ウィンドウで、次のプロパティを変更。
+4. 確認します**Checkbox1**のオブジェクト名のリスト ボックスに表示されて、**プロパティ**ウィンドウで、次のプロパティを変更。
 
     |プロパティ|[値]|
     |--------------|-----------|
     |**Name**|**applyBoldFont**|
     |**Text**|**Bold**|
 
-5.  上またはセルの近くに 2 つ目のチェック ボックスをドラッグして**B4**し、次のプロパティを変更します。
+5. 上またはセルの近くに 2 つ目のチェック ボックスをドラッグして**B4**し、次のプロパティを変更します。
 
     |プロパティ|[値]|
     |--------------|-----------|
     |**Name**|**applyItalicFont**|
     |**Text**|**Italic**|
 
-6.  上またはセルの近くに 3 つ目のチェック ボックスをドラッグして**B6**し、次のプロパティを変更します。
+6. 上またはセルの近くに 3 つ目のチェック ボックスをドラッグして**B6**し、次のプロパティを変更します。
 
     |プロパティ|[値]|
     |--------------|-----------|
     |**Name**|**applyUnderlineFont**|
     |**Text**|**下線**|
 
-7.  保留中のすべての 3 つのチェック ボックス コントロールを選択して、 **Ctrl**キー。
+7. 保留中のすべての 3 つのチェック ボックス コントロールを選択して、 **Ctrl**キー。
 
-8.  Excel で 書式 タブの 配置グループの  **Align**、 をクリックし、**左揃え**します。
+8. Excel で 書式 タブの 配置グループの  **Align**、 をクリックし、**左揃え**します。
 
      次の 3 つのチェック ボックス コントロールは、左側にある、選択した最初のコントロールの位置に配置されます。
 
@@ -122,24 +122,24 @@ ms.locfileid: "56624660"
 
 ### <a name="to-change-formatting-when-a-check-box-is-selected"></a>チェック ボックスの書式を変更するには、が選択されています。
 
-1.  右クリック**Sheet1**、] をクリックし、**コードの表示**ショートカット メニューの [します。
+1. 右クリック**Sheet1**、] をクリックし、**コードの表示**ショートカット メニューの [します。
 
-2.  次のコードを追加、<xref:System.Windows.Forms.Control.Click>のイベント ハンドラー、 `applyBoldFont`  チェック ボックス。
+2. 次のコードを追加、<xref:System.Windows.Forms.Control.Click>のイベント ハンドラー、 `applyBoldFont`  チェック ボックス。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#7](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#7)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#7)]
 
-3.  次のコードを追加、<xref:System.Windows.Forms.Control.Click>のイベント ハンドラー、 `applyItalicFont`  チェック ボックス。
+3. 次のコードを追加、<xref:System.Windows.Forms.Control.Click>のイベント ハンドラー、 `applyItalicFont`  チェック ボックス。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#8](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#8)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#8)]
 
-4.  次のコードを追加、<xref:System.Windows.Forms.Control.Click>のイベント ハンドラー、 `applyUnderlineFont`  チェック ボックス。
+4. 次のコードを追加、<xref:System.Windows.Forms.Control.Click>のイベント ハンドラー、 `applyUnderlineFont`  チェック ボックス。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#9)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#9)]
 
-5.  C# でにあるチェック ボックスのイベント ハンドラーを追加する必要があります、<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>次に示すようにイベント。 イベント ハンドラーの作成方法の詳細については、次を参照してください。[方法。Office プロジェクトでイベント ハンドラーを作成する](../vsto/how-to-create-event-handlers-in-office-projects.md)します。
+5. C# でにあるチェック ボックスのイベント ハンドラーを追加する必要があります、<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>次に示すようにイベント。 イベント ハンドラーの作成方法の詳細については、次を参照してください。[方法。Office プロジェクトでイベント ハンドラーを作成する](../vsto/how-to-create-event-handlers-in-office-projects.md)します。
 
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#10)]
 
@@ -148,17 +148,17 @@ ms.locfileid: "56624660"
 
 ### <a name="to-test-your-workbook"></a>ブックをテストするには
 
-1.  キーを押して**F5**プロジェクトを実行します。
+1. キーを押して**F5**プロジェクトを実行します。
 
-2.  選択するか、チェック ボックスをオフにします。
+2. 選択するか、チェック ボックスをオフにします。
 
-3.  テキストの形式が正しいことを確認します。
+3. テキストの形式が正しいことを確認します。
 
 ## <a name="next-steps"></a>次の手順
  このチュートリアルでは、チェック ボックスを使用して、Excel ワークシート上でテキストの書式設定の基本を説明します。 ここでは、次のタスクを行います。
 
--   プロジェクトを配置します。 詳細については、[ClickOnce を使用して Office ソリューションを配置](../vsto/deploying-an-office-solution-by-using-clickonce.md)を参照してください。
--   ボタンを使用してテキスト ボックスへデータを挿入する。 詳細については、「[チュートリアル:ボタンを使用してワークシート内のテキスト ボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)します。
+- プロジェクトを配置します。 詳細については、次を参照してください。 [ClickOnce を使用して Office ソリューションを配置](../vsto/deploying-an-office-solution-by-using-clickonce.md)します。
+- ボタンを使用してテキスト ボックスへデータを挿入する。 詳細については、「[チュートリアル:ボタンを使用してワークシート内のテキスト ボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [Excel を使用したチュートリアル](../vsto/walkthroughs-using-excel.md)

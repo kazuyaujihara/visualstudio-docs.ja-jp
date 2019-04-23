@@ -14,27 +14,27 @@ ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10b0c5fe888e41801801e1600c9fb79188d4fdec
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 7e60975e8f356e749e5e32adb2e773526ab63141
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065040"
 ---
 # <a name="expected-identifier-javascript"></a>識別子が必要です。(JavaScript)
 ものを使用した識別子以外のコンテキストで 1 つが必要です。 識別子を指定できます。  
   
--   変数、  
+- 変数、  
   
--   プロパティ、  
+- プロパティ、  
   
--   配列では、  
+- 配列では、  
   
--   または、関数名。  
+- または、関数名。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   識別子は等号 (=) の左側に表示されるように、式を変更します。  
+- 識別子は等号 (=) の左側に表示されるように、式を変更します。  
   
 ## <a name="see-also"></a>関連項目  
  [配列の使用](../../javascript/advanced/using-arrays-javascript.md)

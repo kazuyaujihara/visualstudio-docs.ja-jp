@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89b4f55e5e5de564db6cb7a1217b79a15283fb93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051662"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>ボタンの再利用可能なグループを作成します。
 コマンド グループは、常に、メニューまたはツールバーにまとめて表示されるコマンドのコレクションです。 CommandPlacements セクションでは、別の親メニューに割り当てることで、任意のコマンド グループを再利用できる、 *.vsct*ファイル。
@@ -26,13 +26,13 @@ ms.locfileid: "56712321"
 
 ## <a name="to-create-a-reusable-group-of-buttons"></a>ボタンの再利用可能なグループを作成するには
 
-1.  という名前の VSIX プロジェクトを作成する`ReusableButtons`します。 詳細については、[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。
+1. という名前の VSIX プロジェクトを作成する`ReusableButtons`します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
 
-2.  という名前のカスタム コマンド項目テンプレートを追加、プロジェクトが開いたら、 **ReusableCommand**します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#** > **機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*ReusableCommand.cs*します。
+2. という名前のカスタム コマンド項目テンプレートを追加、プロジェクトが開いたら、 **ReusableCommand**します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#** > **機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*ReusableCommand.cs*します。
 
-3.  *.Vsct*ファイル、シンボルのセクションに移動し、グループ、およびプロジェクトのコマンドを含む GuidSymbol 要素を検索します。 GuidReusableCommandPackageCmdSet、名前にする必要があります。
+3. *.Vsct*ファイル、シンボルのセクションに移動し、グループ、およびプロジェクトのコマンドを含む GuidSymbol 要素を検索します。 GuidReusableCommandPackageCmdSet、名前にする必要があります。
 
-4.  次の例のように、グループに追加する各ボタン、IDSymbol を追加します。
+4. 次の例のように、グループに追加する各ボタン、IDSymbol を追加します。
 
     ```xml
     <GuidSymbol name="guidReusableCommandPackageCmdSet" value="{7f383b2a-c6b9-4c1d-b4b8-a26dc5b60ca1}">
@@ -44,7 +44,7 @@ ms.locfileid: "56712321"
 
      既定では、コマンドの項目テンプレートがという名前のグループを作成します**MyMenuGroup**と各 IDSymbol エントリと共に、指定された名前を持つボタンをクリックします。
 
-5.  Groups セクションでは、シンボルで示されているものと同じ GUID と ID の属性を持つグループ要素を作成します。 既存のグループを使用してもまたは次の例のように、コマンド テンプレートによって提供されるエントリを使用できます。 このグループが表示されます、**ツール**メニュー
+5. Groups セクションでは、シンボルで示されているものと同じ GUID と ID の属性を持つグループ要素を作成します。 既存のグループを使用してもまたは次の例のように、コマンド テンプレートによって提供されるエントリを使用できます。 このグループが表示されます、**ツール**メニュー
 
     ```xml
     <Groups>
@@ -56,7 +56,7 @@ ms.locfileid: "56712321"
 
 ## <a name="to-create-a-group-of-buttons-for-reuse"></a>再利用するためのボタンのグループを作成するには
 
-1.  コマンドまたはメニューの定義内の親として、グループを使用するか、CommandPlacements セクションを使用して、コマンドまたはメニューをグループ内に配置することで、グループ内のコマンドまたはメニューに配置できます。
+1. コマンドまたはメニューの定義内の親として、グループを使用するか、CommandPlacements セクションを使用して、コマンドまたはメニューをグループ内に配置することで、グループ内のコマンドまたはメニューに配置できます。
 
      ボタンのセクションでは、グループ、その親を持つボタンの定義またはのパッケージ テンプレートによって提供されるボタンを使用して、次の例に示すようにします。
 
@@ -70,7 +70,7 @@ ms.locfileid: "56712321"
     </Button>
     ```
 
-2.  ボタンは、1 つ以上のグループに表示する必要があります、コマンド セクションの後に配置する必要があります CommandPlacements のセクションでそのエントリを作成します。 移動するボタンに合わせて CommandPlacement 要素の GUID と ID の属性を設定し、GUID とその親要素の ID がターゲット グループの次の例に示すようにします。
+2. ボタンは、1 つ以上のグループに表示する必要があります、コマンド セクションの後に配置する必要があります CommandPlacements のセクションでそのエントリを作成します。 移動するボタンに合わせて CommandPlacement 要素の GUID と ID の属性を設定し、GUID とその親要素の ID がターゲット グループの次の例に示すようにします。
 
     ```xml
     <CommandPlacements>

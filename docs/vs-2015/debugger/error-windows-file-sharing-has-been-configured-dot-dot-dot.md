@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7664c94f626b639f4d0330b938777d545128847d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 96d65ae615522bcee43ddf5e8181e96eecc0d958
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977961"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040858"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>エラー :Windows ファイル共有が構成されました...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,16 +36,16 @@ ms.locfileid: "58977961"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1.  他のアカウント名を使用してローカル コンピューター (デバッグを起動したコンピューター) にログオンします。  
+1. 他のアカウント名を使用してローカル コンピューター (デバッグを起動したコンピューター) にログオンします。  
   
      または  
   
      . リモート コンピューターから切断します。次に、自分のアカウント名を使用して他のコンピューターに接続するようにファイル共有を再構成します。  
   
-    1.  **[スタート]** メニューの **[アクセサリ]** をポイントして、**[コマンド プロンプト]** をクリックします。  
+    1. **[スタート]** メニューの **[アクセサリ]** をポイントして、**[コマンド プロンプト]** をクリックします。  
   
-    2.  Windows のコマンド プロンプトで、次のように入力します。  
+    2. Windows のコマンド プロンプトで、次のように入力します。  
   
          `net use /delete computer_name`  
   
-    3.  Windows ヘルプに記載されているいずれかの方法を使用して、ファイル共有の設定を変更します。
+    3. Windows ヘルプに記載されているいずれかの方法を使用して、ファイル共有の設定を変更します。

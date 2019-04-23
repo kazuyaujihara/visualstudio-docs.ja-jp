@@ -25,12 +25,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6cb3b1f0d1c21a7cde53f8b3eecf1cd25c26b394
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 684738fd2180a3c5bf269b2a30efd970bcf9ab08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092202"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>方法: ネイティブ フレームが [呼び出し履歴] ウィンドウに見つからないときにマネージド コードからステップ アウトする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58973907"
   
 ### <a name="to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>呼び出し履歴にネイティブ フレームが表示されないときにマネージド コードからステップ アウトするには  
   
-1.  ネイティブ コード内で、マネージド コードの呼び出し後に位置ブレークポイントを設定します。  
+1. ネイティブ コード内で、マネージド コードの呼び出し後に位置ブレークポイントを設定します。  
   
-2.  **[デバッグ]** メニューの **[続行]** をクリックします。  
+2. **[デバッグ]** メニューの **[続行]** をクリックします。  
   
      マネージド呼び出しが完了すると、ネイティブ コードのブレークポイントで実行が停止します。  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068159"
 ---
 # <a name="quickstart-debug-html-and-css"></a>クイック スタート: HTML と CSS をデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
   その他の JavaScript のデバッグ、JavaScript コンソール ウィンドウを使用して、ブレークポイントの設定などの機能の詳細についてを参照してください。[クイック スタート。JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)と[Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)します。  
   
-##  <a name="InspectingDOM"></a> ライブ DOM の検査  
+## <a name="InspectingDOM"></a> ライブ DOM の検査  
  DOM Explorer ではレンダリングされるページのビューが示され、DOM Explorer を使用すると値を変更して結果をすぐに確認できます。 これにより、デバッガーを停止して再起動することなく変更をテストできます。 この方法でページと対話するときはプロジェクトのソース コードは変更されないので、必要なコード修正が見つかったら、ソース コードを変更します。  
   
 > [!TIP]
@@ -249,17 +249,17 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 #### <a name="to-refresh-your-app-while-debugging"></a>デバッグ中にアプリを更新するには  
   
-1.  アプリケーションがまだ実行している間に、Visual Studio に切り替えます。  
+1. アプリケーションがまだ実行している間に、Visual Studio に切り替えます。  
   
-2.  default.html を開き、 `"fView"` DIV 要素の高さと幅を 100% に変更して、ソース コードを変更します。  
+2. default.html を開き、 `"fView"` DIV 要素の高さと幅を 100% に変更して、ソース コードを変更します。  
   
-3.  [デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンをクリックします (または、F4 キーを押します)。 ボタンのようになります。![Windows アプリのボタンを更新](../debugger/media/js-refresh.png "JS_Refresh")します。  
+3. [デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンをクリックします (または、F4 キーを押します)。 ボタンのようになります。![Windows アプリのボタンを更新](../debugger/media/js-refresh.png "JS_Refresh")します。  
   
      アプリのページが再読み込みされ、シミュレーターまたは Phone エミュレーターが前面に戻ります。  
   
      更新機能に関する詳細については、次を参照してください。[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)します。  
   
-##  <a name="SelectingElements"></a> Selecting elements  
+## <a name="SelectingElements"></a> Selecting elements  
  アプリケーションをデバッグするときに、次の 3 種類の方法で DOM 要素を選択できます。  
   
 - 直接 DOM エクスプローラー ウィンドウの要素をクリックする (または方向キーを使用)。  
@@ -285,7 +285,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
  使用して要素を選択する方法を示す例については、 **Select 要素**ボタンをクリックしを参照してください[DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)します。  
   
-##  <a name="BrowserSupport"></a> ブラウザーとプラットフォームのサポート  
+## <a name="BrowserSupport"></a> ブラウザーとプラットフォームのサポート  
  JavaScript 用の Visual Studio ツールである DOM Explorer と JavaScript コンソール ウィンドウは、次のプラットフォーム上でサポートされます。  
   
 - JavaScript と HTML を使った[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] および Windows Phone ストア アプリ  

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Excel 拡張子のサンプル:TechnologyManager クラス |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -8,12 +8,12 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ab353f9c42eebe4af10f56f6ee4cda533069121
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 64632c175b44a370d7dcaf48e7c0a8cee766a4ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779571"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078071"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Excel 拡張子のサンプル:TechnologyManager クラス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ ms.locfileid: "54779571"
 ## <a name="methods-to-get-an-element"></a>要素を取得するメソッド  
  テクノロジに固有の要素を取得するために、コード化された UI テスト フレームワークによって使用される、いくつかの重要なメソッドがあります。要素を取得するには、ハンドル、画面上のポイント、または別のテクノロジの要素を指定します。 これらのメソッドのコードは、自己記述的です。 基本メソッドは次のとおりです。  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
   
 ## <a name="parsequeryid-method"></a>ParseQueryId メソッド  
  コード化された UI テストの作成時に、ユーザーはテストの一部またはすべてのコントロールのプロパティ値を指定できます。 これらのプロパティ値は、テスト フレームワークによって、検索プロパティ (テスト中に特定の UI コントロールを見つけるために使用される、名前と値の組) を作成するために使用されます。 すべての検索プロパティは、各コントロールを含め、テクノロジ内の各要素の <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> プロパティの値を表しています。 テストの実行中にコントロールを数回検索しなければならない場合があるため、このメソッドはテクノロジ マネージャーによる特定のコントロールの検索プロパティの解析を最適化できるようにします。 またこのメソッドは、フレームワークがそのコントロールを後で検索するときに使用できるクッキーも返します。 メソッドのこの実装では、<xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName> メソッドを使用して検索プロパティを解析します。  
@@ -60,7 +60,7 @@ ms.locfileid: "54779571"
 ## <a name="getexcelelement-internal-method"></a>GetExcelElement 内部メソッド  
  この内部メソッドは、ウィンドウ ハンドルと Excel 要素についての情報を受け取り、要求された Excel 要素を返します。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>   
  <xref:System.NotSupportedException>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   

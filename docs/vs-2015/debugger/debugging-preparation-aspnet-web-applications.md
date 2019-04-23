@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975141"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092423"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>デバッグの準備:ASP.NET Web アプリケーション
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "58975141"
   
 ### <a name="to-create-a-web-forms-application"></a>Web フォーム アプリケーションを作成するには  
   
-1.  **ファイル**] メニューの [選択**新しい Web サイト**します。  
+1. **ファイル**] メニューの [選択**新しい Web サイト**します。  
   
-2.  **新しい Web サイト**ダイアログ ボックスで、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **Web サイト**します。  
+2. **新しい Web サイト**ダイアログ ボックスで、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **Web サイト**します。  
   
-3.  **[OK]** をクリックします。  
+3. **[OK]** をクリックします。  
   
 ### <a name="to-debug-your-web-form"></a>Web フォームをデバッグするには  
   
-1.  関数とイベント ハンドラーに 1 つ以上のブレークポイントを設定します。  
+1. 関数とイベント ハンドラーに 1 つ以上のブレークポイントを設定します。  
   
      詳細については、「 [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)」を参照してください。  
   
-2.  ブレークポイントに達したら、関数内のコードをステップ実行します。 問題が特定されるまでコードの実行を確認します。  
+2. ブレークポイントに達したら、関数内のコードをステップ実行します。 問題が特定されるまでコードの実行を確認します。  
   
      詳細については、次を参照してください。[ステッピング](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)と[Web アプリケーションのデバッグとスクリプト](../debugger/debugging-web-applications-and-script.md)します。  
   
@@ -54,13 +54,13 @@ ms.locfileid: "58975141"
   
 #### <a name="to-change-the-default-debug-configuration"></a>既定のデバッグ構成を変更するには  
   
-1.  **ソリューション エクスプ ローラー**を Web サイトを右クリックし、**プロパティ ページ**を開く、**プロパティ ページ** ダイアログ ボックス。  
+1. **ソリューション エクスプ ローラー**を Web サイトを右クリックし、**プロパティ ページ**を開く、**プロパティ ページ** ダイアログ ボックス。  
   
-2.  クリックして**開始オプション**します。  
+2. クリックして**開始オプション**します。  
   
-3.  設定**開始動作**最初に表示される Web ページにします。  
+3. 設定**開始動作**最初に表示される Web ページにします。  
   
-4.  **デバッガー**、ことを確認します**ASP.NET デバッグ**が選択されています。  
+4. **デバッガー**、ことを確認します**ASP.NET デバッグ**が選択されています。  
   
      詳細については、次を参照してください。 [Web プロジェクトのプロパティ ページ設定](../debugger/property-pages-settings-for-web-projects.md)します。  
   

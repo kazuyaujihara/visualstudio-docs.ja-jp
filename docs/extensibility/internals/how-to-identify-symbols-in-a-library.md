@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183a0774bf507fcf8bdf9abeea688bb1ea75b1bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5eebe6382d2aec13996c57ef76aba2e04512463f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628716"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060359"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>方法: ライブラリ内のシンボルを識別します。
 シンボル参照ツールでは、シンボルの階層ビューを表示します。 シンボルは、名前空間、オブジェクト、クラス、クラスのメンバー、およびその他の言語要素を表します。
@@ -50,10 +50,9 @@ N1
 
  プレゼンテーションのフォームはをオブジェクトの manager 呼び出しを取得する<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>メソッド。
 
-
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>正規の取得、およびプレゼンテーションのフォーム情報
 
-1.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> メソッドを実装します。
+1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> メソッドを実装します。
 
      オブジェクト マネージャーは、シンボルの既定のパスに含まれるノードの一覧を取得するには、このメソッドを呼び出します。
 
@@ -76,7 +75,7 @@ N1
 
     ```
 
-2.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> メソッドを実装します。
+2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> メソッドを実装します。
 
      オブジェクト マネージャーは、シンボルのプレゼンテーションのパスに含まれるノードの一覧を取得するには、このメソッドを呼び出します。
 

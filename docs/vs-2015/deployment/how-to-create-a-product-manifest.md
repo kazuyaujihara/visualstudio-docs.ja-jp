@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 948cbe88f39b0a39fc23ff8307c3e3484fb9438c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73e2c3f2c9736fd762a9e763827ed641ea5069f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092124"
 ---
 # <a name="how-to-create-a-product-manifest"></a>方法: 製品マニフェストを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ ms.locfileid: "58976326"
   
 #### <a name="to-create-the-product-manifest"></a>製品マニフェストを作成するには  
   
-1.  ブートス トラップ パッケージ用のディレクトリを作成します。 この例では、C:\package を使用します。  
+1. ブートス トラップ パッケージ用のディレクトリを作成します。 この例では、C:\package を使用します。  
   
-2.  Visual Studio で作成するという新しい XML ファイル`product.xml`、C:\package フォルダーに保存します。  
+2. Visual Studio で作成するという新しい XML ファイル`product.xml`、C:\package フォルダーに保存します。  
   
-3.  パッケージの XML 名前空間と製品コードを記述する次の XML を追加します。 製品コードをパッケージの一意の識別子に置き換えます。  
+3. パッケージの XML 名前空間と製品コードを記述する次の XML を追加します。 製品コードをパッケージの一意の識別子に置き換えます。  
   
     ```  
     <Product  
@@ -49,7 +49,7 @@ ms.locfileid: "58976326"
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  パッケージに依存関係があることを指定する XML を追加します。 この例では、Microsoft Windows インストーラー 3.1 の依存関係を使用します。  
+4. パッケージに依存関係があることを指定する XML を追加します。 この例では、Microsoft Windows インストーラー 3.1 の依存関係を使用します。  
   
     ```  
     <RelatedProducts>  
@@ -57,7 +57,7 @@ ms.locfileid: "58976326"
       </RelatedProducts>  
     ```  
   
-5.  ブートス トラップ パッケージに含まれるすべてのファイルを一覧表示の XML を追加します。 この例では、パッケージのファイル名 CorePackage.msi を使用します。  
+5. ブートス トラップ パッケージに含まれるすべてのファイルを一覧表示の XML を追加します。 この例では、パッケージのファイル名 CorePackage.msi を使用します。  
   
     ```  
     <PackageFiles>  
@@ -65,16 +65,16 @@ ms.locfileid: "58976326"
     </PackageFiles>  
     ```  
   
-6.  コピーまたは CorePackage.msi ファイルを C:\package フォルダーに移動します。  
+6. コピーまたは CorePackage.msi ファイルを C:\package フォルダーに移動します。  
   
-7.  ブートス トラップ コマンドを使用してパッケージをインストールする XML を追加します。 ブートス トラップが自動的に追加されます、 **/qn**をサイレント モードでインストールする .msi ファイルにフラグ。 ファイルが .exe の場合は、ブートス トラップは、シェルを使用して、.exe ファイルを実行します。 次の XML に CorePackage.msi、引数はありませんが、Arguments 属性にコマンドライン引数を配置することができます。  
+7. ブートス トラップ コマンドを使用してパッケージをインストールする XML を追加します。 ブートス トラップが自動的に追加されます、 **/qn**をサイレント モードでインストールする .msi ファイルにフラグ。 ファイルが .exe の場合は、ブートス トラップは、シェルを使用して、.exe ファイルを実行します。 次の XML に CorePackage.msi、引数はありませんが、Arguments 属性にコマンドライン引数を配置することができます。  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  このブートス トラップ パッケージがインストールされていることを確認する次の XML を追加します。 製品コードを再頒布可能コンポーネントの GUID に置き換えます。  
+8. このブートス トラップ パッケージがインストールされていることを確認する次の XML を追加します。 製品コードを再頒布可能コンポーネントの GUID に置き換えます。  
   
     ```  
     <InstallChecks>  

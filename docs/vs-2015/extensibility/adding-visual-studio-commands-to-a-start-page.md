@@ -11,12 +11,12 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 34336b93e8739bcba807aca72b26a47b581b7413
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47f752f00e1efe130f029a3cabdd2e3e3bf19449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974286"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072442"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Visual Studio コマンドのスタート ページへの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
   
 #### <a name="to-call-a-command-from-an-assembly"></a>アセンブリからコマンドを呼び出す  
   
-1.  ソリューションでは、アセンブリへの参照を追加します。  
+1. ソリューションでは、アセンブリへの参照を追加します。  
   
-2.  StartPage.xaml ファイルの上部にある次の例に示すように、アセンブリの名前空間ディレクティブを追加します。  
+2. StartPage.xaml ファイルの上部にある次の例に示すように、アセンブリの名前空間ディレクティブを追加します。  
   
     ```xml  
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
     ```  
   
-3.  設定してコマンドを呼び出す、`Command`次の例に示すように、XAML オブジェクトのプロパティ。  
+3. 設定してコマンドを呼び出す、`Command`次の例に示すように、XAML オブジェクトのプロパティ。  
   
      Xaml  
   

@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4d1dd6d8f4d64400b4b2358dd47971f3111dcf1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3fc77e24a1a9ca72d6f689247f0de6a9e0bf26cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098936"
 ---
 # <a name="debugger-contexts"></a>デバッガー コンテキスト
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグ、デバッグ エンジン (DE) の動作を同時にいくつかの異なるコンテキスト内で。
 
--   コード コンテキスト、プログラムの実行のストリームの現在の場所について説明します。
+- コード コンテキスト、プログラムの実行のストリームの現在の場所について説明します。
 
--   ドキュメントのコンテキストまたは位置で、ソース ドキュメント内の現在位置をについて説明します。
+- ドキュメントのコンテキストまたは位置で、ソース ドキュメント内の現在位置をについて説明します。
 
--   式の評価は行わコンテキストを記述する式の評価のコンテキスト。
+- 式の評価は行わコンテキストを記述する式の評価のコンテキスト。
 
 ## <a name="in-this-section"></a>このセクションの内容
  [コード コンテキスト](../../extensibility/debugger/code-context.md)場所コードは表現できない手順については、他の手段で、従来とは異なる言語ではなく現在の実行時のアーキテクチャでプログラムの命令ストリーム内のアドレスとして、コードのコンテキストについて説明します。

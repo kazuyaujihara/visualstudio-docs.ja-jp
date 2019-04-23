@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49bc9f56a07319c9edad1522c5e44b0bb35e92a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039289"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>パラメーター付きの TableAdapter クエリを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "58975884"
   
 ### <a name="create-a-parameterized-query-while-designing-a-data-bound-form"></a>データ バインド フォームのデザイン時にパラメーター化クエリを作成します。  
   
-1.  フォーム上の既にデータセットにバインドされているコントロールを選択します。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールを Windows フォームのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)します。  
+1. フォーム上の既にデータセットにバインドされているコントロールを選択します。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールを Windows フォームのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)します。  
   
-2.  **データ**メニューの **クエリの追加**します。  
+2. **データ**メニューの **クエリの追加**します。  
   
-3.  **[検索条件ビルダー]** ダイアログ ボックスの設定を完了し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。  
+3. **[検索条件ビルダー]** ダイアログ ボックスの設定を完了し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。  
   
 ### <a name="add-a-query-to-an-existing-data-bound-form"></a>クエリを既存のデータ バインド フォームに追加します。  
   
@@ -91,11 +91,11 @@ ms.locfileid: "58975884"
   
 ### <a name="enable-a-query-to-accept-null-values"></a>Null 値を使用するためのクエリを有効にします。  
   
-1.  **データセット デザイナー**、null パラメーター値をそのまま使用する必要がある TableAdapter クエリを選択します。  
+1. **データセット デザイナー**、null パラメーター値をそのまま使用する必要がある TableAdapter クエリを選択します。  
   
-2.  **プロパティ**ウィンドウで、**パラメーター**します。 省略記号ボタンを押します (**.**) ボタンをクリックする、**パラメーター コレクション エディター**します。  
+2. **プロパティ**ウィンドウで、**パラメーター**します。 省略記号ボタンを押します (**.**) ボタンをクリックする、**パラメーター コレクション エディター**します。  
   
-3.  Null 値を許容するパラメーターを選択し、設定、 **AllowDbNull**プロパティを`true`します。  
+3. Null 値を許容するパラメーターを選択し、設定、 **AllowDbNull**プロパティを`true`します。  
   
 ## <a name="see-also"></a>関連項目
 

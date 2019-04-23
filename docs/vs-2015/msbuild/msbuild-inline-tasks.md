@@ -11,17 +11,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03a0dcde4b96afa028a69f5def5cdb52632e5e85
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 33e9bafcba14c65f6f117319180dad7538414885
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792173"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670304"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild インライン タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するクラスをコンパイルして作成します。 詳細については、[タスク](../msbuild/msbuild-tasks.md)に関する記事を参照してください。  
   
  .NET Framework Version 4 以降では、プロジェクト ファイルでタスクをインラインで作成できます。 個別のアセンブリを作成してタスクをホストする必要はありません。 これにより、ソース コードの追跡やタスクの配置が簡単になります。 ソース コードはスクリプトに統合されます。  
@@ -144,7 +143,7 @@ Log.LogError("Hello, world!");
   
 - `Output` は省略可能な属性で、既定値は `false` です。 `true` の場合、そのパラメーターの値を、Execute メソッドから戻る前に指定する必要があります。  
   
-  たとえば、オブジェクトに適用された  
+  例えば以下のようにします。  
   
 ```  
 <ParameterGroup>  

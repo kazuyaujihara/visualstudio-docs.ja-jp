@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d5858df00057298f961189173a3943f3e23d2b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 29ee765bfc11362a870d359ff0a9cdc3f633e464
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781481"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080801"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>方法: Direct2D または Javascipt アプリで使用するためのテクスチャをエクスポートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,34 +23,34 @@ ms.locfileid: "54781481"
   
  このドキュメントでは、以下のアクティビティについて説明します。  
   
--   イメージ コンテンツ パイプラインによって処理されるようにソース イメージを構成する。  
+- イメージ コンテンツ パイプラインによって処理されるようにソース イメージを構成する。  
   
--   Direct2D または JavaScript アプリで使用できるテクスチャを生成するようにイメージ コンテンツ パイプラインを構成する。  
+- Direct2D または JavaScript アプリで使用できるテクスチャを生成するようにイメージ コンテンツ パイプラインを構成する。  
   
-    -   ブロック圧縮形式の .dds ファイルを生成する。  
+    - ブロック圧縮形式の .dds ファイルを生成する。  
   
-    -   前乗算されたアルファを生成する。  
+    - 前乗算されたアルファを生成する。  
   
-    -   MIPMAP の生成を無効にする。  
+    - MIPMAP の生成を無効にする。  
   
 ## <a name="rendering-conventions-in-direct2d"></a>Direct2D のレンダリング規則  
  Direct2D のコンテキストで使用するテクスチャは、次に示す Direct2D の内部レンダリング規則に準拠している必要があります。  
   
--   Direct2D では、前乗算されたアルファを使用することで透明性と透光性を実現します。 Direct2D と組み合わせて使用するテクスチャには、前乗算されたアルファが含まれている必要があります。この要件は、テクスチャで透明性または透光性を使用しない場合でも同様です。 前乗算されたアルファに関する詳細については、「[方法: 前乗算されたアルファを持つテクスチャをエクスポートする](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)」を参照してください。  
+- Direct2D では、前乗算されたアルファを使用することで透明性と透光性を実現します。 Direct2D と組み合わせて使用するテクスチャには、前乗算されたアルファが含まれている必要があります。この要件は、テクスチャで透明性または透光性を使用しない場合でも同様です。 前乗算されたアルファの詳細については、「[方法: 前乗算されたアルファを持つテクスチャをエクスポート](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)します。  
   
--   テクスチャは次のいずれかのブロック圧縮形式の .dds ファイルで提供する必要があります。  
+- テクスチャは次のいずれかのブロック圧縮形式の .dds ファイルで提供する必要があります。  
   
-    -   BC1_UNORM 圧縮  
+    - BC1_UNORM 圧縮  
   
-    -   BC2_UNORM 圧縮  
+    - BC2_UNORM 圧縮  
   
-    -   BC3_UNORM 圧縮  
+    - BC3_UNORM 圧縮  
   
--   MIPMAP はサポートされていません。  
+- MIPMAP はサポートされていません。  
   
 #### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Direct2D のレンダリング規則に準拠したテクスチャを作成するには  
   
-1. 基本的なテクスチャを作成します。 既存のイメージを読み込むか、「[方法: 基本テクスチャを作成する](../designers/how-to-create-a-basic-texture.md)」の手順に従って新しいイメージを作成します。 DDS 形式でブロック圧縮をサポートするには、100x100、128x128、256x192 など、サイズの幅と高さが 4 の倍数であるテクスチャを指定します。 MIPMAP はサポートされていないため、テクスチャは正方形である必要がなく、サイズも 2 の累乗である必要はありません。  
+1. 基本的なテクスチャを作成します。 既存のイメージを読み込むか、「[方法: 基本的なテクスチャを作成](../designers/how-to-create-a-basic-texture.md)です。 DDS 形式でブロック圧縮をサポートするには、100x100、128x128、256x192 など、サイズの幅と高さが 4 の倍数であるテクスチャを指定します。 MIPMAP はサポートされていないため、テクスチャは正方形である必要がなく、サイズも 2 の累乗である必要はありません。  
   
 2. イメージ コンテンツ パイプラインによって処理されるようにテクスチャ ファイルを構成します。 **ソリューション エクスプローラー**で、先ほど作成したテクスチャ ファイルのショートカット メニューを開き、**[プロパティ]** をクリックします。 **[構成プロパティ]** の **[全般]** ページで、**[項目の種類]** を **[Image Content Pipeline]** (イメージ コンテンツ パイプライン) に設定します。 **[コンテンツ]** が **[はい]** に、**[ビルドから除外]** が **[いいえ]** に設定されていることを確認し、**[適用]** ボタンをクリックします。 **[イメージ コンテンツ パイプライン]** の構成プロパティ ページが表示されます。  
   

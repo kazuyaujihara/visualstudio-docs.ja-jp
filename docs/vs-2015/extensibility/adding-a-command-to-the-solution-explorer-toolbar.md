@@ -12,12 +12,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f0a9faa2d9dd09156c2e1a37e776381270f480af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054731"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>ソリューション エクスプローラーのツールバーへのコマンドの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "58972246"
 ## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>ソリューション エクスプ ローラーのツールバーにボタンの追加  
  このチュートリアルのこのセクションでは、ボタンを追加する方法を示しています。、**ソリューション エクスプ ローラー**ツールバー。 このボタンをクリックすると、コールバック メソッドでコードが実行されます。  
   
-1.  ToolbarButtonPackage.vsct ファイルに移動、`<Symbols>`セクション。 `<GuidSymbol>`ノードには、メニューのグループおよびパッケージ テンプレートによって生成されたコマンドが含まれています。 追加、`<IDSymbol>`要素は、コマンドを保持するグループを宣言するには、このノードにします。  
+1. ToolbarButtonPackage.vsct ファイルに移動、`<Symbols>`セクション。 `<GuidSymbol>`ノードには、メニューのグループおよびパッケージ テンプレートによって生成されたコマンドが含まれています。 追加、`<IDSymbol>`要素は、コマンドを保持するグループを宣言するには、このノードにします。  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2.  `<Groups>`セクションでは、の 既存のグループ エントリの後に前の手順で定義を宣言する新しいグループ。  
+2. `<Groups>`セクションでは、の 既存のグループ エントリの後に前の手順で定義を宣言する新しいグループ。  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -57,7 +57,7 @@ ms.locfileid: "58972246"
   
      親 GUID:ID のペアを設定`guidSHLMainMenu`と`IDM_VS_TOOL_PROJWIN`にこのグループを設定、**ソリューション エクスプ ローラー**ツールバー、および優先度の高い値を設定するその他のコマンド グループの後に配置します。  
   
-3.  `<Buttons>`セクションで、生成された親 ID を変更、`<Button>`前の手順で定義されているグループを反映するように入力します。 変更された`<Button>`要素は、次のようになります。  
+3. `<Buttons>`セクションで、生成された親 ID を変更、`<Button>`前の手順で定義されているグループを反映するように入力します。 変更された`<Button>`要素は、次のようになります。  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -69,11 +69,11 @@ ms.locfileid: "58972246"
     </Button>  
     ```  
   
-4.  プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。  
+4. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。  
   
      **ソリューション エクスプ ローラー**既存のボタンの右側に新しいコマンド ボタンがツールバーに表示する必要があります。 ボタンのアイコンは、取り消し線です。  
   
-5.  新しいボタンをクリックします。  
+5. 新しいボタンをクリックします。  
   
      ダイアログ ボックスに、メッセージ**ToolbarButtonPackage 内 SolutionToolbar.ToolbarButton.MenuItemCallback()** が表示されます。  
   

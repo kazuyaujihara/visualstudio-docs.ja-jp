@@ -8,12 +8,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b8129b4ff946658c5e1b4f24c57ca77cb50e14a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71f92543b73eddb26f82e787f5c81f53d3aeddb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102667"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 破られた暗号アルゴリズムを使用しないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ ms.locfileid: "58976053"
 ## <a name="how-to-fix-violations"></a>違反の修正方法  
  暗号強度の高いオプションを使用します。  
   
--   MD5 の場合は、 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) ファミリ ( <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>など) のハッシュを使用します。  
+- MD5 の場合は、 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) ファミリ ( <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>など) のハッシュを使用します。  
   
--   DES と RC2 の場合は、 <xref:System.Security.Cryptography.Aes> 暗号を使用します。  
+- DES と RC2 の場合は、 <xref:System.Security.Cryptography.Aes> 暗号を使用します。  
   
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況  
  暗号の専門家によって確認された場合を除き、この規則からの警告を抑制しないでください。  

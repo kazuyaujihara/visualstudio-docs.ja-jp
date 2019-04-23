@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978001"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113457"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>ドメイン固有言語における検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ ms.locfileid: "58978001"
   
 1. 検証を有効にする、**発します**ノード。  
   
-   1.  開いている**Dsl\DslDefinition.dsl**します。  
+   1. 開いている**Dsl\DslDefinition.dsl**します。  
   
-   2.  DSL エクスプ ローラーで、**エディター**ノード**検証**です。  
+   2. DSL エクスプ ローラーで、**エディター**ノード**検証**です。  
   
-   3.  [プロパティ] ウィンドウで次のように設定します。、**使用**プロパティ`true`。 これらのプロパティをすべて設定すると利便性が最高になります。  
+   3. [プロパティ] ウィンドウで次のように設定します。、**使用**プロパティ`true`。 これらのプロパティをすべて設定すると利便性が最高になります。  
   
-   4.  クリックして**すべてのテンプレートの変換**ソリューション エクスプ ローラーのツールバー。  
+   4. クリックして**すべてのテンプレートの変換**ソリューション エクスプ ローラーのツールバー。  
   
 2. 1 つ以上のドメイン クラスまたはドメイン リレーションシップに対して部分クラス定義を作成します。 新しいコード ファイル内のこれらの定義を記述、 **Dsl**プロジェクト。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "58978001"
    [ValidationState(ValidationState.Enabled)]  
    ```  
   
-   -   既定では、この属性により、派生したクラスの検証も有効になります。 特定の派生クラスについて検証を無効にする場合は、`ValidationState.Disabled` を使用できます。  
+   - 既定では、この属性により、派生したクラスの検証も有効になります。 特定の派生クラスについて検証を無効にする場合は、`ValidationState.Disabled` を使用できます。  
   
 4. 検証メソッドをクラスに追加します。 各検証メソッドには任意の名前を付けられますが、型 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> のパラメーターは 1 つです。  
   
@@ -304,7 +304,7 @@ namespace Company.FamilyTree
   
  ハンドラーはリンクまたは要素に影響する、元に戻す操作またはやり直し操作の後でも呼び出されます。  
   
-##  <a name="custom"></a> カスタム検証カテゴリ  
+## <a name="custom"></a> カスタム検証カテゴリ  
  「メニュー」や「開く」といった標準の検証カテゴリに加えて、独自のカテゴリを定義できます。 これらのカテゴリをプログラム コードから呼び出すことができます。 ユーザーはそれらを直接呼び出すことができません。  
   
  カスタム カテゴリの一般的な使用法は、モデルが特定のツールの事前条件を満たすかどうかをテストするカテゴリを定義することです。  
@@ -332,7 +332,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a> 検証の代替手段  
+## <a name="alternatives"></a> 検証の代替手段  
  検証制約はエラーを報告しますが、モデルを変更しません。 代わりに、モデルが無効になることを防ぐ場合、他の手法を使用できます。  
   
  ただし、これらの手法は推奨されません。 通常、無効なモデルの修正方法をユーザーに決めてもらう方が適切です。  

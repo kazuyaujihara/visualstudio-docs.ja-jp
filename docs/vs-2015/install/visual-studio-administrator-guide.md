@@ -13,17 +13,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868886"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649369"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。、 [Visual Studio 2017 管理者ガイド](/visualstudio/install/visual-studio-administrator-guide)します。
+Visual Studio の最新ドキュメントについては、次を参照してください。、 [Visual Studio 管理者ガイド](/visualstudio/install/visual-studio-administrator-guide)します。
 
 各ターゲット コンピューターが満たしている限り、ネットワーク上の Visual Studio 2015 を展開することができます、[最小インストール要件](https://visualstudio.microsoft.com/vs/older-downloads/)します。 /layout スイッチを指定してインストール ファイルを実行し (「[Visual Studio のオフライン インストールを作成する](../install/create-an-offline-installation-of-visual-studio.md)」ページの説明を参照)、そのファイルをローカル コンピューターからネットワーク共有にコピーすることで、ネットワーク共有を作成できます。 ISO を使用している場合、ISO をマウントする共有し、ISO をネットワーク共有にコピーまたはできます。  
   
@@ -54,22 +54,23 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 ## <a name="controlling-what-is-installed"></a>インストール内容の制御  
  エンド ユーザーによるインストール内容を制御する場合、管理者ファイルのインストールとコマンド ラインの 2 つのオプションがあります。 エンド ユーザーが Visual Studio インストーラー エクスペリエンスから選択できる内容を制限することが目的の場合は、管理者ファイルのインストールを選択できます、 初期構成を作成しつつ、エンド ユーザーが独自の Visual Studio インストーラー エクスペリエンスから選択できるようにする場合、コマンド ラインのパラメーターを選択します。  
   
- 管理者ファイル エクスペリエンスの詳細については、「 [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) 」および「 [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)」を参照してください。  コマンドライン制御の詳細については、次を参照してください。、 [Visual Studio をインストールするコマンド ライン パラメータを使用して](../install/use-command-line-parameters-to-install-visual-studio.md)ページ。  
+ 管理者ファイル エクスペリエンスの詳細については、次を参照してください。[方法。作成し、Visual Studio の無人インストールを実行](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)と[方法。Visual Studio の展開時に、プロダクト キーを自動的に適用](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)します。  コマンドライン制御の詳細については、次を参照してください。、 [Visual Studio をインストールするコマンド ライン パラメータを使用して](../install/use-command-line-parameters-to-install-visual-studio.md)ページ。  
   
 ## <a name="specifying-customer-feedback-settings"></a>顧客フィードバック設定の指定  
- 既定では、Visual Studio をインストールすると、カスタマー フィードバックが有効になります。 次のレジストリ キーの値を文字列 "0" に変更することで、個々のコンピューターで顧客からのカスタマー フィードバックを無効にするように Visual Studio を構成できます。  
+
+既定では、Visual Studio をインストールすると、カスタマー フィードバックが有効になります。 次のレジストリ キーの値を文字列 "0" に変更することで、個々のコンピューターで顧客からのカスタマー フィードバックを無効にするように Visual Studio を構成できます。  
   
- **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
 **OptIn**  
   
- (たとえば、HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn="0" に変更します)  
+(たとえば、HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn="0" に変更します)  
   
 ## <a name="related-topics"></a>関連トピック  
   
 |トピック|説明|  
 |-----------|-----------------|  
-|[方法: Visual Studio の特定のリリースをインストールする](../install/how-to-install-a-specific-release-of-visual-studio.md)|現在のバージョンの特定の構成をインストールする方法について説明します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。|  
-|[方法: Visual Studio の無人インストールを作成して実行する](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|インストールする方法について説明します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]無人モードでします。|  
-|[方法: Visual Studio の展開時にプロダクト キーを自動的に適用する](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|複数のコンピューターに展開するときに、プロダクト キーを適用する方法について説明します。|  
+|[方法: Visual Studio の特定のリリースをインストールします。](../install/how-to-install-a-specific-release-of-visual-studio.md)|現在のバージョンの特定の構成をインストールする方法について説明します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。|  
+|[方法: 作成し、Visual Studio の無人インストールの実行](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|インストールする方法について説明します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]無人モードでします。|  
+|[方法: Visual Studio の展開時に、プロダクト キーを自動的に適用します。](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|複数のコンピューターに展開するときに、プロダクト キーを適用する方法について説明します。|  
 |[ヘルプ ビューアーの管理者ガイド](../ide/help-viewer-administrator-guide.md)|ネットワーク環境があるか、インターネットへのアクセスがないローカル ヘルプのインストールを管理する方法について説明します。|  
 |[Visual Studio のインストール](../install/install-visual-studio-2015.md)|手順については、インストールする方法を説明するトピックへのリンクを提供します。[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。|

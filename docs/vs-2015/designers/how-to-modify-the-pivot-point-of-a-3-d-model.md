@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f63c271e096793a03616356b9eb7229e4f823fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071786"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>方法: 3-D モデルのピボット ポイントを変更します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54774102"
   
  このドキュメントでは、以下のアクティビティについて説明します:  
   
--   オブジェクトのピボット ポイントの変更  
+- オブジェクトのピボット ポイントの変更  
   
 ## <a name="modifying-the-pivot-point-of-a-3-d-model"></a>3-D モデルのピボット ポイントの変更  
  ピボット ポイントを変更することにより、3-D モデルの原点を再定義できます。  

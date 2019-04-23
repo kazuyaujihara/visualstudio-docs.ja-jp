@@ -3,20 +3,20 @@ title: 新しいプロジェクトとソリューションを作成する
 description: この記事では、Visual Studio for Mac でプロジェクトとソリューションを作成する方法について説明します。
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294267"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856474"
 ---
 # <a name="creating-new-projects-and-solutions"></a>新しいプロジェクトとソリューションを作成する
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>テンプレートから新しいプロジェクトとソリューションを作成する
 
-ソリューションは、事前定義済みのテンプレートを利用していつでも作成できます。 ソリューションをこの方法で作成するには、 **[ファイル]、[新しいソリューション]** の順に移動し、必要なプラットフォームを選択し、必要なテンプレートを選択します。
+ソリューションは、事前定義済みのテンプレートを利用していつでも作成できます。 Visual Studio 2019 for Mac を開始し、スタート ウィンドウで **[新規作成]** を選択します。 または、 **[ファイル] > [新しいソリューション]** に移動します。 必要なプラットフォームを選択してから、必要なテンプレートを選択します。
 
 ![新しいソリューションを作成する](media/projects-and-solutions-image0.png)
 
@@ -32,7 +32,7 @@ ms.locfileid: "51294267"
 
 ## <a name="opening-recent-solutions"></a>最近使用したソリューションを開く
 
-Visual Studio のランディング ページには、最近使用したプロジェクトの一覧が表示されます。
+Visual Studio のスタート ウィンドウには、最近使用したプロジェクトの一覧が表示されます。
 
 ![ウェルカム ページの最近使用したソリューションのセクション](media/create-new-projects-recent.png)
 

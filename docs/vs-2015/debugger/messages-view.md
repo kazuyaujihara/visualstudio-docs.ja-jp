@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14569a915dc1da4d8628283dfa1aae5338502de1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080580"
 ---
 # <a name="messages-view"></a>メッセージ ビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Spy++ メッセージ ビュー
   
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>ウィンドウ、プロセス、またはスレッドのメッセージ ビューを開く  
   
-1.  フォーカスを移動する、 [Windows ビュー](../debugger/windows-view.md)、[プロセス ビュー](../debugger/processes-view.md)、または[スレッド ビュー](../debugger/threads-view.md)ウィンドウ。  
+1. フォーカスを移動する、 [Windows ビュー](../debugger/windows-view.md)、[プロセス ビュー](../debugger/processes-view.md)、または[スレッド ビュー](../debugger/threads-view.md)ウィンドウ。  
   
-2.  確認するメッセージが含まれる項目のノードを検索し、それを選択します。  
+2. 確認するメッセージが含まれる項目のノードを検索し、それを選択します。  
   
-3.  **スパイ**] メニューの [選択**ログ メッセージ**します。  
+3. **スパイ**] メニューの [選択**ログ メッセージ**します。  
   
      [メッセージ オプション ダイアログ ボックス](../debugger/message-options-dialog-box.md)が開きます。  
   
-4.  メッセージを表示するためのオプションを選択します。  
+4. メッセージを表示するためのオプションを選択します。  
   
-5.  キーを押して**OK**メッセージのログ記録を開始します。  
+5. キーを押して**OK**メッセージのログ記録を開始します。  
   
      ビュー ウィンドウが開き、メッセージおよび**メッセージ**spy++ ツールバーにメニューが追加されます。 選択したオプションに応じて、メッセージは、アクティブなメッセージ ビュー ウィンドウにストリーミングを開始します。  
   
-6.  十分なメッセージを使用する場合は、選択**ログの停止**から、**メッセージ**メニュー。  
+6. 十分なメッセージを使用する場合は、選択**ログの停止**から、**メッセージ**メニュー。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [メッセージ ビューを制御します。](../debugger/how-to-control-messages-view.md)  

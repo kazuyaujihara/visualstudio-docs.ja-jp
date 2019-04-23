@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 52c1c2cc7304828e9ace7e9b5072d262a5395a1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 14b4ac689109e29baa4ee06c668b208d0d5227b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072774"
 ---
 # <a name="graphics-diagnostics-examples"></a>グラフィックス診断例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ ms.locfileid: "58974264"
 ## <a name="capturing-graphics-information"></a>グラフィックス情報をキャプチャする  
  グラフィックス診断を使用してアプリケーションのレンダリングの問題を診断するには、まず実行中のアプリケーションからグラフィックス情報を取得する必要があります。 グラフィックス情報は、ローカルに実行しているアプリケーション、またはリモート コンピューターや他のデバイス上で実行しているアプリケーションからキャプチャできます。 これらのチュートリアルでは、アプリケーションから手動で、またはプログラムを使用してグラフィックス情報をキャプチャする方法を示しています。  
   
--   [チュートリアル: グラフィックス情報をキャプチャする](../debugger/walkthrough-capturing-graphics-information.md)  
+- [チュートリアル: グラフィックス情報をキャプチャする](../debugger/walkthrough-capturing-graphics-information.md)  
   
--   [チュートリアル: プログラムによるグラフィックス情報のキャプチャ](../debugger/walkthrough-capturing-graphics-information-programmatically.md)  
+- [チュートリアル: プログラムによるグラフィックス情報のキャプチャ](../debugger/walkthrough-capturing-graphics-information-programmatically.md)  
   
 ## <a name="use-graphics-diagnostics-with-an-arm-based-device"></a>ARM ベースのデバイスでのグラフィックス診断の使用  
  グラフィックス診断を使用すると、リモート デバッギングを使用することによって、ARM ベースのデバイス上で Direct3D アプリケーションをデバッグできます。 詳細については、「[方法: ARM デバイスでグラフィックス診断を使用する](../debugger/how-to-use-graphics-diagnostics-with-an-arm-device.md)  
@@ -39,18 +39,18 @@ ms.locfileid: "58974264"
   
  これらのシナリオは、グラフィックス診断を使用して、オブジェクトが欠落している原因を特定し、責任のあるコードを見つけるための方法を示しています。  
   
--   [チュートリアル: デバイス状態によるオブジェクトの不足](../debugger/walkthrough-missing-objects-due-to-device-state.md)  
+- [チュートリアル: デバイス状態によるオブジェクトの不足](../debugger/walkthrough-missing-objects-due-to-device-state.md)  
   
--   [チュートリアル: 頂点の網かけによるオブジェクトの不足](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)  
+- [チュートリアル: 頂点の網かけによるオブジェクトの不足](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)  
   
--   [チュートリアル: ピクセル シェーディングによるオブジェクトの不足](../debugger/walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
+- [チュートリアル: ピクセル シェーディングによるオブジェクトの不足](../debugger/walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
   
 ## <a name="debugging-rendering-errors"></a>レンダリングのエラーをデバッグする  
  外観が正しくないオブジェクトは、グラフィックス開発者が遭遇するもう 1 つの一般的な問題です。 正しくない外観とその原因は、誤ったテクスチャのバインドなどの非常に明白なものから、シェーダー コードのバグやシェーダー間の予期しない相互作用などの非常にわかりにくいものにまで及ぶため、このような問題の診断は困難な場合があります。 いくつかの問題は、エラーの組み合わせにより起きる場合があります。  
   
  次のシナリオは、グラフィックス診断を使用して、シェーダーの軽微なバグによって引き起こされる、それほどわかりにくくないレンダリングの問題を追跡する方法を示しています。  
   
--   [チュートリアル: 網かけによるレンダリング エラーのデバッグ](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)  
+- [チュートリアル: 網かけによるレンダリング エラーのデバッグ](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)  
   
 ## <a name="debugging-compute-shaders"></a>計算シェーダーをデバッグする  
  グラフィックス診断を使用して、正しくない結果を生成する DirectCompute 計算シェーダー カーネルをデバッグできます。 DirectCompute を使用すると、GPU 計算能力を使用して、多数のデータ要素に対して並列に計算を実行できます。 問題の種類によっては、GPU を利用することにより、適切に最適化された CPU コードの何倍も高速に実行できる場合があります。 ただし、従来のデバッガーでは、GPU で実行されるコードを検出できません。 この種のコードをデバッグするには、多くの場合販売元固有の専用ツールが必要であり、Visual Studio と密接に統合されない場合があります。 計算シェーダーのデバッグを、さまざまな GPU にまたがってより一貫したものにするために、グラフィックス診断は、Direct3D レンダリング イベントに加えて DirectCompute の Dispatch イベントをキャプチャし、使い慣れたツールを使用して計算シェーダー コードの問題をデバッグできるようにします。  

@@ -14,37 +14,36 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2be6c030cf8602f053472971a98508043b253e43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974816"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107048"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このチュートリアルは、単純なを作成する方法を示します[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]でホストされる、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションと Windows フォーム アプリケーションからアクセスします。  
   
  このチュートリアルでは、次の作業を行います。  
   
--   [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] をホストする Web アプリケーションを作成します。  
+- [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] をホストする Web アプリケーションを作成します。  
   
--   Northwind データベースの Customers テーブルを表す[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]を作成します。  
+- Northwind データベースの Customers テーブルを表す[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]を作成します。  
   
--   [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] を作成します。  
+- [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] を作成します。  
   
--   クライアント アプリケーションを作成し、[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] への参照を追加します。  
+- クライアント アプリケーションを作成し、[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] への参照を追加します。  
   
--   サービスへのデータ バインディングを有効にし、ユーザー インターフェイスを生成します。  
+- サービスへのデータ バインディングを有効にし、ユーザー インターフェイスを生成します。  
   
--   必要に応じて、アプリケーションにフィルター処理機能を追加します。  
+- 必要に応じて、アプリケーションにフィルター処理機能を追加します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  このチュートリアルを実行するには、次のコンポーネントが必要です。  
   
--   Northwind サンプル データベース。  
+- Northwind サンプル データベース。  
   
      開発用コンピューターにこのデータベースがない場合は、 [Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkID=98088)からダウンロードできます。 手順については、次を参照してください。[サンプル データベースのダウンロード](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)します。  
   
@@ -81,11 +80,11 @@ ms.locfileid: "58974816"
   
 5. **[データ接続の選択]** ページで、次のいずれかの操作を行います。  
   
-   -   Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。  
+   - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。  
   
         - または -  
   
-   -   **[新しい接続]** を選択して、新しいデータ接続を構成します。 詳細については、次を参照してください。[新しい接続を追加](../data-tools/add-new-connections.md)します。  
+   - **[新しい接続]** を選択して、新しいデータ接続を構成します。 詳細については、次を参照してください。[新しい接続を追加](../data-tools/add-new-connections.md)します。  
   
 6. データベースにパスワードが必要な場合は、**[はい、重要情報を接続文字列に含めます。]** を選択し、**[次へ]** をクリックします。  
   
@@ -145,7 +144,7 @@ ms.locfileid: "58974816"
   
 1. メニュー バーで、ファイルを選択**追加**、**新しいプロジェクト**します。  
   
-2. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual Basic**または**Visual C#** ノードを選択し、 **Windows**ノード、を選択し、**Windows フォーム アプリケーション**します。  
+2. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual Basic**または**Visual c#** ノードを選択し、 **Windows**ノード、を選択し、**Windows フォーム アプリケーション**します。  
   
 3. **[名前]** ボックスに「`NorthwindClient`」と入力して、**[OK]** を選択します。  
   
@@ -237,11 +236,11 @@ ms.locfileid: "58974816"
   
 #### <a name="to-add-filtering-by-city"></a>都市によるフィルター処理を追加するには  
   
-1.  **ソリューション エクスプローラー**で、**[Form1.vb]** または **[Form1.cs]** ノードのショートカット メニューを開き、**[開く]** をクリックします。  
+1. **ソリューション エクスプローラー**で、**[Form1.vb]** または **[Form1.cs]** ノードのショートカット メニューを開き、**[開く]** をクリックします。  
   
-2.  **[ツールボックス]** から、<xref:System.Windows.Forms.TextBox> コントロールと <xref:System.Windows.Forms.Button> コントロールをフォームに追加します。  
+2. **[ツールボックス]** から、<xref:System.Windows.Forms.TextBox> コントロールと <xref:System.Windows.Forms.Button> コントロールをフォームに追加します。  
   
-3.  ショートカット メニューを開き、<xref:System.Windows.Forms.Button>制御、および選択**コードの表示**、し、次のコードを追加、`Button1_Click`イベント ハンドラー。  
+3. ショートカット メニューを開き、<xref:System.Windows.Forms.Button>制御、および選択**コードの表示**、し、次のコードを追加、`Button1_Click`イベント ハンドラー。  
   
     ```vb  
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
@@ -270,11 +269,11 @@ ms.locfileid: "58974816"
     }  
     ```  
   
-4.  このコードの `http://localhost:53161/NorthwindCustomers.svc` を `Form1_Load` イベント ハンドラーの URL に置き換えます。  
+4. このコードの `http://localhost:53161/NorthwindCustomers.svc` を `Form1_Load` イベント ハンドラーの URL に置き換えます。  
   
-5.  メニュー バーで、**デバッグ**、**デバッグの開始**アプリケーションを実行します。  
+5. メニュー バーで、**デバッグ**、**デバッグの開始**アプリケーションを実行します。  
   
-6.  テキスト ボックスに「**London**」と入力し、ボタンをクリックします。 ロンドンの顧客だけが表示されます。  
+6. テキスト ボックスに「**London**」と入力し、ボタンをクリックします。 ロンドンの顧客だけが表示されます。  
   
 ## <a name="see-also"></a>関連項目  
  [Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   

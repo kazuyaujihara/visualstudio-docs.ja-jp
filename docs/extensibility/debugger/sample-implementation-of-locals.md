@@ -11,34 +11,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8faaa293a1fc39f39a63fb55a9f84acac36b6831
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 17de5858870afe3064f57cb51ec8b713bb65ddf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047646"
 ---
 # <a name="sample-implementation-of-locals"></a>ローカル変数のサンプルの実装
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
+>  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
 
  Visual Studio を取得する方法、ローカル変数をメソッドの式エバリュエーター (EE) からの概要を次に示します。
 
-1.  Visual Studio はデバッグ エンジン (DE) を呼び出して[GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)を取得する、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)ローカル変数のスタック フレームのすべてのプロパティを表すオブジェクト。
+1. Visual Studio はデバッグ エンジン (DE) を呼び出して[GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)を取得する、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)ローカル変数のスタック フレームのすべてのプロパティを表すオブジェクト。
 
-2.  `IDebugStackFrame2::GetDebugProperty` 呼び出し[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)をブレークポイントが発生したメソッドを記述するオブジェクトを取得します。 シンボル プロバイダーを提供する、DE ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md))、アドレス ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md))、およびバインダー ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md))。
+2. `IDebugStackFrame2::GetDebugProperty` 呼び出し[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)をブレークポイントが発生したメソッドを記述するオブジェクトを取得します。 シンボル プロバイダーを提供する、DE ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md))、アドレス ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md))、およびバインダー ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md))。
 
-3.  `IDebugExpressionEvaluator::GetMethodProperty` 呼び出し[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)指定した`IDebugAddress`取得するオブジェクト、 [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)指定されたアドレスを格納しているメソッドを表します。
+3. `IDebugExpressionEvaluator::GetMethodProperty` 呼び出し[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)指定した`IDebugAddress`取得するオブジェクト、 [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)指定されたアドレスを格納しているメソッドを表します。
 
-4.  `IDebugContainerField`インターフェイスが照会されます、 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)インターフェイス。 このインターフェイス メソッドのローカル変数にアクセスできるようにすることをお勧めします。
+4. `IDebugContainerField`インターフェイスが照会されます、 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)インターフェイス。 このインターフェイス メソッドのローカル変数にアクセスできるようにすることをお勧めします。
 
-5.  `IDebugExpressionEvaluator::GetMethodProperty` クラスをインスタンス化します (と呼ばれる`CFieldProperty`サンプル) を実行する、`IDebugProperty2`をメソッドのローカル変数を表すインターフェイス。 `IDebugMethodField`オブジェクトがこの配置`CFieldProperty`オブジェクトと共に、 `IDebugSymbolProvider`、 `IDebugAddress`、および`IDebugBinder`オブジェクト。
+5. `IDebugExpressionEvaluator::GetMethodProperty` クラスをインスタンス化します (と呼ばれる`CFieldProperty`サンプル) を実行する、`IDebugProperty2`をメソッドのローカル変数を表すインターフェイス。 `IDebugMethodField`オブジェクトがこの配置`CFieldProperty`オブジェクトと共に、 `IDebugSymbolProvider`、 `IDebugAddress`、および`IDebugBinder`オブジェクト。
 
-6.  ときに、`CFieldProperty`オブジェクトが初期化される[GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md)で呼び出される、`IDebugMethodField`取得するオブジェクト、 [FIELD_INFO](../../extensibility/debugger/reference/field-info.md)メソッド自体に関する表示可能なすべての情報を含む構造体。
+6. ときに、`CFieldProperty`オブジェクトが初期化される[GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md)で呼び出される、`IDebugMethodField`取得するオブジェクト、 [FIELD_INFO](../../extensibility/debugger/reference/field-info.md)メソッド自体に関する表示可能なすべての情報を含む構造体。
 
-7.  `IDebugExpressionEvaluator::GetMethodProperty` 返します、`CFieldProperty`オブジェクトとして、`IDebugProperty2`オブジェクト。
+7. `IDebugExpressionEvaluator::GetMethodProperty` 返します、`CFieldProperty`オブジェクトとして、`IDebugProperty2`オブジェクト。
 
-8.  Visual Studio 呼び出し[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)返された`IDebugProperty2`でフィルター処理されたオブジェクト`guidFilterLocalsPlusArgs`、返された、 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)メソッドのローカル変数を含むオブジェクト。 この列挙体への呼び出しによって入力されます[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)と[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)します。
+8. Visual Studio 呼び出し[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)返された`IDebugProperty2`でフィルター処理されたオブジェクト`guidFilterLocalsPlusArgs`、返された、 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)メソッドのローカル変数を含むオブジェクト。 この列挙体への呼び出しによって入力されます[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)と[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)します。
 
 9. Visual Studio 呼び出し[次](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)を取得する、 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)構造体の各ローカルです。 この構造体にはへのポインターが含まれています、`IDebugProperty2`ローカル インターフェイス。
 

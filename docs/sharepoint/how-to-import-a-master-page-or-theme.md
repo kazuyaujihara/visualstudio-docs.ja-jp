@@ -13,39 +13,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a415a1021514a4d8b962e4a65a22b691edc66d9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635151"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081907"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>方法: マスター ページまたはテーマをインポートします。
   付与できますページ、SharePoint サイトで一貫した外観を作成してマスター ページとテーマを使用します。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] これらの要素のテンプレートが指定されない SharePoint Designer で作成できにインポートできますが、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。 詳細については、次を参照してください。[ビルディング ブロック。ページとユーザー インターフェイス](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft web サイト。
 
 ### <a name="to-import-a-master-page-or-theme"></a>マスター ページまたはテーマをインポートするには
 
-1.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を作成または SharePoint プロジェクトを開きます。
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を作成または SharePoint プロジェクトを開きます。
 
-     SharePoint プロジェクトを作成する方法については、[SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)を参照してください。
+     SharePoint プロジェクトを作成する方法については、次を参照してください。 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)します。
 
-2.  メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
+2. メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
 
-3.  **新しい項目の追加** ダイアログ ボックスで、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
+3. **新しい項目の追加** ダイアログ ボックスで、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
 
-4.  SharePoint テンプレートの一覧で選択、**モジュール**テンプレート、モジュールの名前を指定します。
+4. SharePoint テンプレートの一覧で選択、**モジュール**テンプレート、モジュールの名前を指定します。
 
      モジュールには、SharePoint で指定した場所に配置するためのファイル (たとえば、マスター ページまたはテーマ ファイル) が含まれています。
 
-5.  モジュールで、削除の既定のファイルの名前は*Sample.txt*します。
+5. モジュールで、削除の既定のファイルの名前は*Sample.txt*します。
 
-6.  モジュール ノードを選択します。
+6. モジュール ノードを選択します。
 
-7.  メニュー バーで、**プロジェクト** > **既存項目の追加**、マスター ページまたはテーマ ファイルを選択します。
+7. メニュー バーで、**プロジェクト** > **既存項目の追加**、マスター ページまたはテーマ ファイルを選択します。
 
      マスター ページのファイル拡張子を持ち、.master、およびテーマ ファイル .thmx という拡張子があります。
 
-8.  マスター ページを追加した場合は、変更、**配置競合の解決**設定**自動**モジュールのプロパティで。
+8. マスター ページを追加した場合は、変更、**配置競合の解決**設定**自動**モジュールのプロパティで。
 
     > [!NOTE]
     >  エラーは、マスター ページの名前は既定のマスター ページまたはカスタム マスター ページのいずれかとしてマークされている既存のマスター ページの名前と同じ場合に発生することができます。 この問題を解決する方法については、次を参照してください。[チュートリアル。カスタム マスター ページとサイトのページにイメージをインポート](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)します。

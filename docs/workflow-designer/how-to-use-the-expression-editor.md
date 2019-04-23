@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee9738cfce003ef19d311856304d87f6a4b2f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117253"
 ---
 # <a name="how-to-use-the-expression-editor"></a>方法: 式エディターを使用する
 
@@ -36,18 +36,18 @@ ms.locfileid: "55918911"
 
 ## <a name="use-the-expression-editor"></a>式エディターを使用する
 
-1.  Visual Studio で、新規または既存のワークフロー プロジェクトを開きます。
+1. Visual Studio で、新規または既存のワークフロー プロジェクトを開きます。
 
-2.  ワークフローに <xref:System.Activities.Statements.Assign> などのアクティビティを追加します。
+2. ワークフローに <xref:System.Activities.Statements.Assign> などのアクティビティを追加します。
 
     > [!NOTE]
     > 式エディターを使用できるワークフロー アクティビティは複数あります。 変数デザイナー、引数デザイナー、および動的引数デザイナーには、式 TextBlock も表示されます。 ここでは、例として <xref:System.Activities.Statements.Assign> アクティビティを使用しています。
 
-3.  <xref:System.Activities.Statements.Assign> アクティビティのアクティビティ デザイナーで、左側の式エディターをクリックします。
+3. <xref:System.Activities.Statements.Assign> アクティビティのアクティビティ デザイナーで、左側の式エディターをクリックします。
 
      灰色のウォーターマークの文字列**\<に >** と **\<VB の式を入力してください >** の式エディターに既定値をテキスト文字列は、<xref:System.Activities.Statements.Assign>アクティビティ。
 
-4.  式を入力します。 文字列を入力する場合は、文字列を引用符で囲みます。 式の引数を変数にバインドする場合は、引用符を省略してください。
+4. 式を入力します。 文字列を入力する場合は、文字列を引用符で囲みます。 式の引数を変数にバインドする場合は、引用符を省略してください。
 
      完了すると、リージョンまたはデザイナーの別の部分にフォーカスを移動して式エディターの外部で領域を選択します。 フォーカスをシフトすると、前述のように、式を検証するコンパイラがさせます。
 

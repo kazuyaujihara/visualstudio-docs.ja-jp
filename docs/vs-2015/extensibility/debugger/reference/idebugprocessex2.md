@@ -12,12 +12,12 @@ ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7948fbcf4268603436ec1c0bf999d34f65a3f503
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: acdd887e3d1f1fd21c92ccd055bd7940b071ccbe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977842"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074139"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -41,14 +41,14 @@ IDebugProcessEx2 : IUnknown
   
 ## <a name="notes-for-callers"></a>呼び出し元のノート  
   
--   SDM コール[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上、`IDebugProcess2`をこのインターフェイスを取得するインターフェイス。  
+- SDM コール[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上、`IDebugProcess2`をこのインターフェイスを取得するインターフェイス。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
  次の表は、メソッドの`IDebugProcessEx2`します。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[添付](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|セッションがプロセスをデバッグして今すぐ、プロセスに通知します。|  
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|セッションがプロセスをデバッグして今すぐ、プロセスに通知します。|  
 |[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|プロセスにセッションがプロセスのデバッグで不要になったことを通知します。|  
 |[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|デバッグ エンジンの一覧については、プログラムのノードを追加します。|  
   

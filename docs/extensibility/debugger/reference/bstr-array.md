@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24222b60db1ba35da59069e58d6f1377928e7a54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 25897eac467fe318ac67b91db247d2fd7b6ec68a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714921"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654413"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 文字列の配列を記述する構造体。
@@ -46,8 +46,7 @@ dwCount 文字列の数で`Members`配列。
 ## <a name="remarks"></a>Remarks
 この構造体から返される、 [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)メソッド。
 
-
- [C++ のみ]使用して個々 の各文字列を解放する必要があります`SysFreeString`、および`Members`配列を使用して解放する必要があります`CoTaskMemFree`します。
+ [C++のみ]使用して個々 の各文字列を解放する必要があります`SysFreeString`、および`Members`配列を使用して解放する必要があります`CoTaskMemFree`します。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h

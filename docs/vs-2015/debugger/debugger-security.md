@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bfb6270f4b6e5a0c4f65f5490def24c03cad6898
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 32fec95757e3baf1b62230457cc048aba38af8c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101640"
 ---
 # <a name="debugger-security"></a>デバッガーのセキュリティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ ms.locfileid: "58976683"
 ### <a name="web-services-debugging-security"></a>Web サービスをデバッグするときのセキュリティ  
  ローカルでデバッグする方が安全ですが、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が Web サーバーにインストールされていない可能性があるため、ローカル デバッグを実行できない場合があります。 通常、Web サービスのデバッグは、開発時を除いてリモートで行われます。そのため、Web サービスのデバッグにも、リモート デバッグのセキュリティに関する推奨事項が適用されます。 次に、その他の推奨される手順を示します。 詳細については、「 [Debugging XML Web Services](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)」を参照してください。  
   
--   セキュリティに問題のある Web サーバーではデバッグを有効にしないでください。  
+- セキュリティに問題のある Web サーバーではデバッグを有効にしないでください。  
   
--   デバッグする前に、Web サーバーが安全であることを確認します。 安全かどうかが確認できない場合は、デバッグしないでください。  
+- デバッグする前に、Web サーバーが安全であることを確認します。 安全かどうかが確認できない場合は、デバッグしないでください。  
   
--   インターネットに公開されている Web サービスをデバッグする場合は、特に注意が必要です。  
+- インターネットに公開されている Web サービスをデバッグする場合は、特に注意が必要です。  
   
 ### <a name="external-components"></a>外部コンポーネント  
  プログラムが外部コンポーネントとやり取りする場合、特に、外部コンポーネントのコードを自分で記述していない場合は、そのコンポーネントの信頼ステータスに注意します。 また、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] またはデバッガーで使用する可能性のあるコンポーネントにも注意します。  

@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040965"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>デバッガーでの例外の管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ ms.locfileid: "58976700"
   
  例外が発生すると、[出力] ウィンドウに例外メッセージが書き込まれます。 次のような場合、例外によって実行が中断される可能性があります。  
   
--   例外がスローされたが、処理されない場合。  
+- 例外がスローされたが、処理されない場合。  
   
--   例外がスローされた直後、ハンドラーが呼び出される前に実行を中断するようにデバッガーが設定されている場合。  
+- 例外がスローされた直後、ハンドラーが呼び出される前に実行を中断するようにデバッガーが設定されている場合。  
   
--   [ [Just My Code](../debugger/just-my-code.md)] を設定済みで、デバッガーが、ユーザー コードで処理されない例外に対して実行を中断するように設定されている場合。  
+- [ [Just My Code](../debugger/just-my-code.md)] を設定済みで、デバッガーが、ユーザー コードで処理されない例外に対して実行を中断するように設定されている場合。  
   
 > [!NOTE]
 >  ASP.NET は、エラー ページをブラウザーに表示する最上位の例外ハンドラーを持っています。 **マイ コードのみ** が有効ではない場合、実行は中断されません。 例については、以下の「 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 」をご覧ください。  
@@ -141,7 +141,7 @@ ms.locfileid: "58976700"
   
    ![例外設定の既定値に戻す](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> ユーザーよって処理されない例外を続行するデバッガーを設定します。  
+### <a name="BKMK_UserUnhandled"></a> ユーザーよって処理されない例外を続行するデバッガーを設定します。  
  [ [Just My Code](../debugger/just-my-code.md)] を使用して .NET コードまたは JavaScript コードをデバッグする場合、ユーザー コードで処理されないが他の場所で処理される例外について、中断しないようにデバッガーを設定することができます。  
   
 1. **[例外設定]** ウィンドウでコンテキスト メニューを開くには、ウィンドウで右クリックし、 **[列の表示]** を選択します ( **[マイ コードのみ]** を選択していない場合、このコマンドは表示されません)。  

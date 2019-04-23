@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975488"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110441"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>チュートリアル: スマート タグの表示
 スマート タグは非推奨とされており、代わって電球が使用されるようになりました。 「[チュートリアル:Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)します。  
@@ -35,57 +35,57 @@ ms.locfileid: "58975488"
   
 #### <a name="to-create-a-mef-project"></a>MEF プロジェクトを作成するには  
   
-1.  エディター分類子プロジェクトを作成します。 ソリューション `SmartTagTest`の名前を指定します。  
+1. エディター分類子プロジェクトを作成します。 ソリューション `SmartTagTest`の名前を指定します。  
   
-2.  VSIX マニフェスト エディターで source.extension.vsixmanifest ファイルを開きます。  
+2. VSIX マニフェスト エディターで source.extension.vsixmanifest ファイルを開きます。  
   
-3.  **資産** セクションに `Microsoft.VisualStudio.MefComponent` 型が含まれ、 **ソース** が `A project in current solution`に設定され、 **プロジェクト** が SmartTagTest.dll に設定されていることを確認します。  
+3. **資産** セクションに `Microsoft.VisualStudio.MefComponent` 型が含まれ、 **ソース** が `A project in current solution`に設定され、 **プロジェクト** が SmartTagTest.dll に設定されていることを確認します。  
   
-4.  source.extension.vsixmanifest を保存して閉じます。  
+4. source.extension.vsixmanifest を保存して閉じます。  
   
-5.  プロジェクトに次の参照を追加し、 **CopyLocal** を `false`に設定します。  
+5. プロジェクトに次の参照を追加し、 **CopyLocal** を `false`に設定します。  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-6.  既存のクラス ファイルを削除します。  
+6. 既存のクラス ファイルを削除します。  
   
 ## <a name="implementing-a-tagger-for-smart-tags"></a>スマート タグのタガーの実装  
   
 #### <a name="to-implement-a-tagger-for-smart-tags"></a>スマート タグのタガーを実装するには  
   
-1.  クラス ファイルを追加し、その名前を `TestSmartTag`にします。  
+1. クラス ファイルを追加し、その名前を `TestSmartTag`にします。  
   
-2.  次のインポートを追加します。  
+2. 次のインポートを追加します。  
   
      [!code-csharp[VSSDKSmartTagTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#1)]
      [!code-vb[VSSDKSmartTagTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#1)]  
   
-3.  <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> から継承するクラスを `TestSmartTag` という名前で追加します。  
+3. <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> から継承するクラスを `TestSmartTag` という名前で追加します。  
   
      [!code-csharp[VSSDKSmartTagTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#2)]
      [!code-vb[VSSDKSmartTagTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#2)]  
   
-4.  <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> の <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> で基底コンストラクターを呼び出す、このクラスのコンストラクターを追加します。これにより、単語の最初の文字の下に青い線が表示されます (<xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> を使用すると、単語の最後の文字の下に赤い線が表示されます)。  
+4. <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> の <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> で基底コンストラクターを呼び出す、このクラスのコンストラクターを追加します。これにより、単語の最初の文字の下に青い線が表示されます (<xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> を使用すると、単語の最後の文字の下に赤い線が表示されます)。  
   
      [!code-csharp[VSSDKSmartTagTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#3)]
      [!code-vb[VSSDKSmartTagTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#3)]  
   
-5.  型 `TestSmartTag` の <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> から継承し、<xref:System.IDisposable> を実装するクラスを `TestSmartTagger` という名前で追加します。  
+5. 型 `TestSmartTag` の <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> から継承し、<xref:System.IDisposable> を実装するクラスを `TestSmartTagger` という名前で追加します。  
   
      [!code-csharp[VSSDKSmartTagTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#4)]
      [!code-vb[VSSDKSmartTagTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#4)]  
   
-6.  タガー クラスに次のプライベート フィールドを追加します。  
+6. タガー クラスに次のプライベート フィールドを追加します。  
   
      [!code-csharp[VSSDKSmartTagTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#5)]
      [!code-vb[VSSDKSmartTagTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#5)]  
   
-7.  プライベート フィールドを設定し、<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> イベントを購読するコンストラクターを追加します。  
+7. プライベート フィールドを設定し、<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> イベントを購読するコンストラクターを追加します。  
   
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  現在の単語に対してタグが作成されるように <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> を実装します (このメソッドは、後述するプライベート メソッド `GetSmartTagActions` も呼び出します)。  
+8. 現在の単語に対してタグが作成されるように <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> を実装します (このメソッドは、後述するプライベート メソッド `GetSmartTagActions` も呼び出します)。  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -114,17 +114,17 @@ ms.locfileid: "58975488"
   
 #### <a name="to-implement-the-smart-tag-tagger-provider"></a>スマート タグ タガー プロバイダーを実装するには  
   
-1.  <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> から継承するクラスを `TestSmartTagTaggerProvider` という名前で追加します。 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> を "text"、<xref:Microsoft.VisualStudio.Utilities.OrderAttribute> を Before="default"、および <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> を <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> にして、そのクラスをエクスポートします。  
+1. <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> から継承するクラスを `TestSmartTagTaggerProvider` という名前で追加します。 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> を "text"、<xref:Microsoft.VisualStudio.Utilities.OrderAttribute> を Before="default"、および <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> を <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> にして、そのクラスをエクスポートします。  
   
      [!code-csharp[VSSDKSmartTagTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#12)]
      [!code-vb[VSSDKSmartTagTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#12)]  
   
-2.  <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> をプロパティとしてインポートします。  
+2. <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> をプロパティとしてインポートします。  
   
      [!code-csharp[VSSDKSmartTagTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#13)]
      [!code-vb[VSSDKSmartTagTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#13)]  
   
-3.  <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> メソッドを実装します。  
+3. <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> メソッドを実装します。  
   
      [!code-csharp[VSSDKSmartTagTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#14)]
      [!code-vb[VSSDKSmartTagTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#14)]  
@@ -168,19 +168,19 @@ ms.locfileid: "58975488"
   
 #### <a name="to-build-and-test-the-smarttagtest-solution"></a>SmartTagTest ソリューションをビルドし、テストするには  
   
-1.  ソリューションをビルドします。  
+1. ソリューションをビルドします。  
   
-2.  デバッガーでこのプロジェクトを実行すると、Visual Studio の 2 つ目のインスタンスがインスタンス化されます。  
+2. デバッガーでこのプロジェクトを実行すると、Visual Studio の 2 つ目のインスタンスがインスタンス化されます。  
   
-3.  テキスト ファイルを作成し、いくつかのテキストを入力します。  
+3. テキスト ファイルを作成し、いくつかのテキストを入力します。  
   
      テキストの最初の単語の最初の文字の下に青い線が表示されます。  
   
-4.  青い線の上にポインターを移動します。  
+4. 青い線の上にポインターを移動します。  
   
      ポインターの近くにボタンが表示されます。  
   
-5.  ボタンをクリックすると、2 つの推奨されるアクションが表示されます。**大文字に変換**と**小文字に変換**します。 最初の操作をクリックすると、現在の単語内のすべてのテキストが大文字に変換されます。 2 つ目の操作をクリックすると、すべてのテキストが小文字に変換されます。  
+5. ボタンをクリックすると、2 つの推奨されるアクションが表示されます。**大文字に変換**と**小文字に変換**します。 最初の操作をクリックすると、現在の単語内のすべてのテキストが大文字に変換されます。 2 つ目の操作をクリックすると、すべてのテキストが小文字に変換されます。  
   
 ## <a name="see-also"></a>関連項目  
  [チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

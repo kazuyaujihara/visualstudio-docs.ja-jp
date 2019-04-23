@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30e789d0ae3fa3e717be9739b94439a7d6a31a2
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: be3fb721fd058f127b4d361c769d4cdfdc1e4b92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584546"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050890"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>チュートリアル: Visual Basic でビジュアライザーを記述する
 このチュートリアルでは、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] を使用して簡単なビジュアライザーを作成する方法を説明します。 このチュートリアルで作成するビジュアライザーは、Windows フォーム メッセージ ボックスを使用して文字列の内容を表示します。 この単純な文字列のビジュアライザーは基本的な例で、プロジェクトに合わせて他のデータ型向けのビジュアライザーを作成するときに参考になります。
@@ -106,15 +106,15 @@ ms.locfileid: "59584546"
 
 ### <a name="to-add-systemwindowsforms"></a>System.Windows.Forms を追加するには
 
-1.  **ソリューション エクスプローラー**で、**[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
+1. **ソリューション エクスプローラー**で、**[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
 
 2. **参照の追加**] ダイアログ ボックスの [、**参照**] タブで [**参照**System.Windows.Forms.DLL を見つけてします。
 
     DLL を検索する*C:\Windows\Microsoft.NET\Framework\v4.0.30319*します。
 
-3.  **[OK]** をクリックします。
+3. **[OK]** をクリックします。
 
-4.  DebuggerSide.cs の `Imports` ステートメントに次のステートメントを追加します。
+4. DebuggerSide.cs の `Imports` ステートメントに次のステートメントを追加します。
 
     ```vb
     Imports System.Windows.Forms
@@ -125,7 +125,7 @@ ms.locfileid: "59584546"
 
 ### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>ビジュアライザーの出力をダイアログ ボックスに表示するには
 
-1.  `Show` メソッドに次のコード行を追加します。
+1. `Show` メソッドに次のコード行を追加します。
 
     ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())
@@ -133,20 +133,20 @@ ms.locfileid: "59584546"
 
      このコード例には、エラー処理が含まれていません。 実際に使用するビジュアライザーなど、どのようなアプリケーションにも、エラー処理を追加する必要があります。
 
-2.  **[ビルド]** メニューの **[MyFirstVisualizer のビルド]** をクリックします。 プロジェクトが構築されます。 ビルド エラーを修正してから次の作業に進みます。
+2. **[ビルド]** メニューの **[MyFirstVisualizer のビルド]** をクリックします。 プロジェクトが構築されます。 ビルド エラーを修正してから次の作業に進みます。
 
 ## <a name="add-the-necessary-attribute"></a>必要な属性の追加
  これで、デバッガー側のコードは終わりです。 ただし、もう 1 つ追加するものがあります。それは、ビジュアライザーを構成しているクラスのコレクションをデバッグ対象側に通知する属性です。
 
 ### <a name="to-add-the-debugee-side-code"></a>デバッギ側のコードを追加するには
 
-1.  DebuggerSide.vb の `Imports` ステートメントと `namespace MyFirstVisualizer` の間に次の属性コードを追加します。
+1. DebuggerSide.vb の `Imports` ステートメントと `namespace MyFirstVisualizer` の間に次の属性コードを追加します。
 
     ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>
     ```
 
-2.  **[ビルド]** メニューの **[MyFirstVisualizer のビルド]** をクリックします。 プロジェクトが構築されます。 ビルド エラーを修正してから次の作業に進みます。
+2. **[ビルド]** メニューの **[MyFirstVisualizer のビルド]** をクリックします。 プロジェクトが構築されます。 ビルド エラーを修正してから次の作業に進みます。
 
 ## <a name="create-a-test-harness"></a>テスト ハーネスの作成
  これで、最初のビジュアライザーが完成しました。 手順どおりに作業を行ってきた場合は、ビジュアライザーを構築し、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] にインストールできます。 ただし、ビジュアライザーを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] にインストールする前にテストを行い、ビジュアライザーが正しく動作することを確認する必要があります。 そこで、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] にインストールしないでビジュアライザーを実行する、テスト ハーネスを作成します。
@@ -183,17 +183,17 @@ ms.locfileid: "59584546"
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>必要な参照を MyTestConsole に追加するには
 
-1.  **ソリューション エクスプローラー**で、**MyTestConsole** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
+1. **ソリューション エクスプローラー**で、**MyTestConsole** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
 
-2.  **参照の追加** ダイアログ ボックスで、**参照** タブで、Microsoft.VisualStudio.DebuggerVisualizers をクリックします。
+2. **参照の追加** ダイアログ ボックスで、**参照** タブで、Microsoft.VisualStudio.DebuggerVisualizers をクリックします。
 
-3.  **[OK]** をクリックします。
+3. **[OK]** をクリックします。
 
-4.  **MyTestConsole** を右クリックし、再度 **[参照の追加]** をクリックします。
+4. **MyTestConsole** を右クリックし、再度 **[参照の追加]** をクリックします。
 
-5.  **[参照の追加]** ダイアログ ボックスの **[プロジェクト]** タブをクリックし、MyFirstVisualizer をクリックします。
+5. **[参照の追加]** ダイアログ ボックスの **[プロジェクト]** タブをクリックし、MyFirstVisualizer をクリックします。
 
-6.  **[OK]** をクリックします。
+6. **[OK]** をクリックします。
 
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>テスト ハーネスの終了とビジュアライザーのテスト
  次に、コードを追加してテスト ハーネスを完成させます。

@@ -10,12 +10,12 @@ ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fce793b077460f2c141de0a75d612bb9254f7b3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978125"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044375"
 ---
 # <a name="web-site-support-templates"></a>Web サイト サポートのテンプレート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,66 +35,66 @@ ms.locfileid: "58978125"
 ## <a name="project-templates"></a>プロジェクト テンプレート  
  Web サイト プロジェクトのテンプレートへの応答で新しい Web サイトの構築に使用されます、**新しい Web サイト**コマンドを**ファイル**メニュー。 次の 3 つの Web サイト プロジェクトの種類は現在サポートされています。  
   
--   空の Web サイト プロジェクト  
+- 空の Web サイト プロジェクト  
   
--   Web サイト プロジェクト  
+- Web サイト プロジェクト  
   
--   Web サービス プロジェクト  
+- Web サービス プロジェクト  
   
 ### <a name="empty-web-site-projects"></a>空の Web サイト プロジェクト  
  これらのファイルへの応答で新しい空の Web サイトの作成、**空の Web サイト**コマンドをポイントした後は**新しい Web サイト**上、**ファイル**メニュー。  
   
--   EmptyWeb.vstemplate  
+- EmptyWeb.vstemplate  
   
      新しい空の Web サイトの作成の指針、テンプレート ファイル。  
   
--   EmptyWeb.webproj  
+- EmptyWeb.webproj  
   
      このファイルは、プロジェクト テンプレートのシステムの成果物です。 EmptyWeb.vstemplate ファイルで、プロジェクト ファイルの参照を満たしています。  
   
 ### <a name="web-site-projects"></a>Web サイト プロジェクト  
  これらのファイルへの応答で新しい Web サイトの作成、 **ASP.NET Web サイト**コマンドをポイントした後は**新しい Web サイト**上、**ファイル**メニュー。  
   
--   Default.aspx  
+- Default.aspx  
   
      新しい Web サイトの既定のホーム ページ。 言語属性が分離コードの言語を指定し、CodeFile 属性は、このページに関連付けられた分離コードを含む依存ファイルを指定します。  
   
--   Default.aspx です。*拡張機能*  
+- Default.aspx です。*拡張機能*  
   
      既定のホーム ページの分離コードを含む依存ファイル。 分離コード言語の決定、*拡張子*このファイルの。  
   
--   web.config  
+- web.config  
   
      ルート web.site 構成ファイル。  
   
--   WebApplication.vstemplate  
+- WebApplication.vstemplate  
   
      Web サイト ソリューションの内容を決定し、強制的に App_Data フォルダーを作成するテンプレート ファイルです。  
   
--   WebApplication.webproj  
+- WebApplication.webproj  
   
      このファイルは、プロジェクト テンプレートのシステムの成果物です。 WebApplication.vstemplate ファイルで、プロジェクト ファイルの参照を満たしています。  
   
 ### <a name="web-service-projects"></a>Web サービス プロジェクト  
  これらのファイルへの応答で新しい Web サイトの作成、 **ASP.NET Web サービス**をポイントした後、使用されるコマンド**新しい Web サイト**上、**ファイル**メニュー。  
   
--   Service.asmx  
+- Service.asmx  
   
      新しい Web サービスの HTML ページ。 言語属性は、分離コード言語を指定および分離コード属性は、このサービスに関連付けられた分離コードを格納している依存ファイルを指定します。  
   
--   サービス。 *extension*  
+- サービス。 *extension*  
   
      サービス クラスを実装する依存ファイル。 分離コード言語の決定、*拡張子*このファイルの。  
   
--   web.config  
+- web.config  
   
--   ルート web.site 構成ファイル。  
+- ルート web.site 構成ファイル。  
   
--   WebService.vstemplate  
+- WebService.vstemplate  
   
      Web サイト ソリューションのコンテンツを決定し、App_Data、App_Code フォルダーの作成を強制するテンプレート ファイルです。 サービスです。*拡張子*ファイルが App_Code フォルダーにコピーされます。  
   
--   WebService.webproj  
+- WebService.webproj  
   
      このファイルは、プロジェクト テンプレートのシステムの成果物です。 WebService.vstemplate ファイルで、プロジェクト ファイルの参照を満たしています。  
   
@@ -104,33 +104,33 @@ ms.locfileid: "58978125"
 ## <a name="project-item-templates"></a>プロジェクト項目テンプレート  
  Web サイト プロジェクト項目テンプレートを使用して Web サイトへの応答に新しい Web ページを追加する、**既存項目の追加**コマンド。 この種の Web ページは現在サポートされています。  
   
--   新しいクラス  
+- 新しいクラス  
   
--   新しい HTML ページ  
+- 新しい HTML ページ  
   
--   新しい Web フォーム  
+- 新しい Web フォーム  
   
--   新しいマスター ページ  
+- 新しいマスター ページ  
   
 ### <a name="new-class"></a>新しいクラス  
  このテンプレートへの応答で空のクラスを定義する新しいソース ファイルの作成、**新しいクラスの追加**コマンド。  
   
--   クラス。 *extension*  
+- クラス。 *extension*  
   
      空のクラスを実装するソース ファイル。 分離コード言語の決定、*拡張子*このファイルの。  
   
--   Class.vstemplate  
+- Class.vstemplate  
   
      テンプレート ファイル、ソース ファイルを作成し、その内容を決定します。  
   
 ### <a name="new-html-page"></a>新しい HTML ページ  
  このテンプレートへの応答で新しい Web ページを作成、**新しい HTML ページの追加**コマンド。  
   
--   HTMLPage.htm  
+- HTMLPage.htm  
   
      Web ページのコンテンツの開始。 通常、この Web ページには関連する分離コードの依存ファイルがありません。 関連の分離コード ファイルを使用したスマートのページを作成するには、代わりに、Web フォーム テンプレートを使用します。  
   
--   HTMLPage.vstemplate  
+- HTMLPage.vstemplate  
   
      テンプレート ファイルを Web ページを作成し、その内容を決定します。  
   
@@ -141,27 +141,27 @@ ms.locfileid: "58978125"
   
  選択したマスター ページのコンテンツ ページを作成するには、選択**マスター ページを選択**します。  
   
--   WebForm.aspx  
+- WebForm.aspx  
   
      Web ページのコンテンツの開始。 この Web ページには、関連する分離コードの依存ファイルがありません。  
   
--   WebForm_cb.aspx  
+- WebForm_cb.aspx  
   
      Web ページのコンテンツの開始。 この Web ページでは、関連する分離コードの依存ファイルにします。  
   
--   分離コード。 *extension*  
+- 分離コード。 *extension*  
   
      Web フォーム クラスを実装する依存ファイル。 分離コード言語の決定、*拡張子*このファイルの。  
   
--   ContentPage.aspx  
+- ContentPage.aspx  
   
      コンテンツ ページとして Web ページのコンテンツの開始。 この Web ページには、関連する分離コードの依存ファイルがありません。  
   
--   ContentPage_cb.aspx  
+- ContentPage_cb.aspx  
   
      コンテンツ ページとして Web ページのコンテンツの開始。 この Web ページでは、関連する分離コードの依存ファイルにします。  
   
--   WebForm.vstemplate  
+- WebForm.vstemplate  
   
      存在する場合は、新しい web ページとその依存ファイルの内容を決定するテンプレート ファイル。  
   
@@ -170,19 +170,19 @@ ms.locfileid: "58978125"
   
  依存の分離コードのソース ファイルを作成するには、選択**別のファイルにコードを配置**します。 空のスクリプト ブロックと no を持つ単一の Web ページが作成されるそれ以外の場合\<ページ % % > 依存ファイルをフックするディレクティブ。  
   
--   MasterPage.master  
+- MasterPage.master  
   
      マスター ページのコンテンツの開始。 このマスター ページには、関連する分離コードの依存ファイルがありません。  
   
--   MasterPage_cb.master  
+- MasterPage_cb.master  
   
      マスター ページのコンテンツの開始。 このマスター ページには、関連する分離コードの依存ファイルがあります。  
   
--   分離コード。*拡張機能*  
+- 分離コード。*拡張機能*  
   
      マスター ページ クラスを実装する依存ファイル。 分離コード言語の決定、*拡張子*このファイルの。  
   
--   MasterPage.vstemplate  
+- MasterPage.vstemplate  
   
      存在する場合は、新しいマスター ページとその依存ファイルの内容を決定するテンプレート ファイル。  
   

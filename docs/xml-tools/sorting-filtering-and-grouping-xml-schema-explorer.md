@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 200ac7f9a38a242d6140902374d477339747b9b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 740fd46d453a6e6a51285d418374d036d83bc598
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065027"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>並べ替え、フィルター処理、およびグループ化 (XML スキーマ エクスプ ローラー)
 
@@ -23,41 +23,41 @@ ms.locfileid: "55914007"
 
  次のフィルター オプションがあります。 既定では、**名前空間の表示**と**スキーマ ファイルの**のオプションを選択します。
 
--   **名前空間の表示**します。
+- **名前空間の表示**します。
 
--   **スキーマ ファイルを表示する**します。
+- **スキーマ ファイルを表示する**します。
 
--   **(シーケンス/選択/すべて) の表示 (sequence/choice/all)** します。
+- **(シーケンス/選択/すべて) の表示 (sequence/choice/all)** します。
 
 ## <a name="sorting-options"></a>並べ替えのオプション
 
  次の並べ替えオプションがあります。 既定値は**種類で並べ替え**します。 **並べ替え**オプションは、ファイルと名前空間には適用されません。
 
--   **種類で並べ替え**します。
+- **種類で並べ替え**します。
 
--   **名前順で並べ替え**します。
+- **名前順で並べ替え**します。
 
--   **ドキュメント順**します。
+- **ドキュメント順**します。
 
 ### <a name="sort-by-type"></a>[種類で並べ替え]
 
  ときに、**種類で並べ替え**オプションが選択されている場合、グローバル ノードが次の順序で並べ替えられます。 さらに、各グループ内でアルファベット順に並べ替えられます。
 
-1.  `import` ノード
+1. `import` ノード
 
-2.  `include` ノード
+2. `include` ノード
 
-3.  `redefine` ノード
+3. `redefine` ノード
 
-4.  `attribute` ノード
+4. `attribute` ノード
 
-5.  `attributeGroup` ノード
+5. `attributeGroup` ノード
 
-6.  `complexType` ノード
+6. `complexType` ノード
 
-7.  `simpleType` ノード
+7. `simpleType` ノード
 
-8.  `element` ノード
+8. `element` ノード
 
 9. `group` ノード
 
@@ -65,13 +65,13 @@ ms.locfileid: "55914007"
 
  ときに、**名前で並べ替え**オプションが選択されている場合、グローバル ノードが次の順序で並べ替えられます。
 
-1.  `import` ノード (名前空間のアルファベット順)
+1. `import` ノード (名前空間のアルファベット順)
 
-2.  `include` ノード (`schemaLocation` 属性のアルファベット順)
+2. `include` ノード (`schemaLocation` 属性のアルファベット順)
 
-3.  `redefine` ノード (`schemaLocation` 属性のアルファベット順)
+3. `redefine` ノード (`schemaLocation` 属性のアルファベット順)
 
-4.  その他のグローバル ノード (アルファベット順)
+4. その他のグローバル ノード (アルファベット順)
 
 ### <a name="document-order"></a>[ドキュメントの順序]
 

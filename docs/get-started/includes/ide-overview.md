@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: cd4fefc8a3f63cf3c4bf4c2ca61a09ce9e40170a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342507"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58807714"
 ---
 Visual Studio *統合開発環境* は、コードの編集、デバッグ、ビルドを行ってから、アプリを発行するために使用できるクリエイティブなランチパッドです。 統合開発環境 (IDE) は、ソフトウェア開発の多くの側面で使用できる機能を豊富に備えたプログラムです。 大部分の IDE が備える標準的なエディターおよびデバッガーに加えて、Visual Studio ではコンパイラ、コード補完ツール、グラフィック デザイナーなど、ソフトウェア開発プロセスを容易にする多くの機能を用意しています。
 
@@ -91,22 +91,24 @@ Visual Studio 2019 には 3 つのエディションがあります:という 3 
 
    ![Visual Studio のメンバーの一覧](../media/intellisense-list-members.png)
 
-- [クイック起動](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- 検索ボックス
 
-   Visual Studio には非常に多くのメニュー、オプション、およびプロパティがあるため、手に負えないもののように思える場合があるかもしれません。 **クイック起動**検索ボックスは、Visual Studio で必要な情報を迅速に見つけるに役立ちます。 探しているものを表す名前の入力を開始すると、Visual Studio に結果がリストされ、目的の場所に正確に移動できます。 Visual Studio に機能を追加する必要がある場合 (追加のプログラミング言語に対するサポートを追加するなど)、**クイック起動**の結果としてワークロードまたは個々のコンポーネントをインストールする Visual Studio インストーラーが開かれます。
+   Visual Studio には非常に多くのメニュー、オプション、およびプロパティがあるため、手に負えないもののように思える場合があるかもしれません。 検索ボックスは、Visual Studio 内で必要な情報を迅速に見つけるのに役立ちます。 探しているものを表す名前の入力を開始すると、Visual Studio に結果がリストされ、目的の場所に正確に移動できます。 Visual Studio に機能を追加する必要がある場合 (追加のプログラミング言語に対してサポートを追加するなど)、検索ボックスの結果として、ワークロードまたは個々のコンポーネントをインストールするための Visual Studio インストーラーが開かれます。
 
    > [!TIP]
-   > **クイック起動**検索ボックスのショートカットとしては、**Ctrl** + **Q** キーを押します。
+   > 検索ボックスのショートカットとしては、**Ctrl** + **Q** キーを押します。
 
    ::: moniker range="vs-2017"
 
    ![Visual Studio 2017 でのクイック起動検索ボックス](../media/quick-launch-nuget.png)
 
+   詳細については、[クイック起動](../../ide/reference/quick-launch-environment-options-dialog-box.md)に関するページを参照してください。
+
    ::: moniker-end
 
    ::: moniker range="vs-2019"
 
-   ![Visual Studio 2019 でのクイック起動検索ボックス](../media/vs-2019/quick-launch-nuget.png)
+   ![Visual Studio 2019 の検索ボックス](../media/vs-2019/quick-launch-nuget.png)
 
    ::: moniker-end
 

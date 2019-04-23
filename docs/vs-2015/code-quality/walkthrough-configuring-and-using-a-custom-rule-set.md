@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052065"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>チュートリアル: カスタム規則セットの構成と使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ ms.locfileid: "58975099"
   
  このチュートリアルでは、これらのプロセスをステップします。  
   
--   クラス ライブラリを作成します。  
+- クラス ライブラリを作成します。  
   
--   選択、 **Microsoft 基本デザイン ガイドライン規則**コード分析規則セット。  
+- 選択、 **Microsoft 基本デザイン ガイドライン規則**コード分析規則セット。  
   
--   クラスには、独自のコードを追加します。  
+- クラスには、独自のコードを追加します。  
   
--   コード分析を実行します。  
+- コード分析を実行します。  
   
--   規則セットをカスタマイズします。  
+- 規則セットをカスタマイズします。  
   
--   コード分析を実行して、ルール セットのカスタマイズの動作の仕組みを参照してください。  
+- コード分析を実行して、ルール セットのカスタマイズの動作の仕組みを参照してください。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、または [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、または [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>規則を使用してコード分析設定します。  
  最初に、単純なクラス ライブラリを作成します。  
@@ -49,9 +49,9 @@ ms.locfileid: "58975099"
   
 1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
-2. **新しいプロジェクト**ダイアログ ボックスで、**プロジェクトの種類**、 をクリックして**Visual C#** します。  
+2. **新しいプロジェクト**ダイアログ ボックスで、**プロジェクトの種類**、 をクリックして**Visual c#** します。  
   
-3. **Visual C#**、**クラス ライブラリ**します。  
+3. **Visual c#**、**クラス ライブラリ**します。  
   
 4. **名前**テキスト ボックスに「 **RuleSetSample**順にクリックします**OK**します。  
   
@@ -148,9 +148,9 @@ ms.locfileid: "58975099"
   
 #### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>コード分析を RuleSetSample プロジェクトを 2 回目の実行します。  
   
-1.  **分析** メニューのをクリックして**RuleSetSample でコード分析を実行**します。  
+1. **分析** メニューのをクリックして**RuleSetSample でコード分析を実行**します。  
   
-2.  エラー一覧 ウィンドウで、注意をクリックすると**警告**、「識別子は正しく入力されなければなりません」ルールの ca 1704 警告違反が表示されません。  
+2. エラー一覧 ウィンドウで、注意をクリックすると**警告**、「識別子は正しく入力されなければなりません」ルールの ca 1704 警告違反が表示されません。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: マネージ コード プロジェクトのコード分析を構成します。](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   

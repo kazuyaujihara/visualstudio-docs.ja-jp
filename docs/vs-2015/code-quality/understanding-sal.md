@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104019"
 ---
 # <a name="understanding-sal"></a>SAL について
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,15 +124,15 @@ wchar_t * wmemcpy(
 ### <a name="example-the-in-annotation"></a>例:\_で\_注釈  
  `_In_`注釈には、ことを示します。  
   
--   パラメーターが有効にする必要がありは変更されません。  
+- パラメーターが有効にする必要がありは変更されません。  
   
--   関数は、1 つの要素のバッファーからのみ読み取ります。  
+- 関数は、1 つの要素のバッファーからのみ読み取ります。  
   
--   呼び出し元は、バッファーを提供し、初期化する必要があります。  
+- 呼び出し元は、バッファーを提供し、初期化する必要があります。  
   
--   `_In_` 「読み取り専用」を指定します。 よくある間違いは、適用する`_In_`が必要なパラメーターに、`_Inout_`注釈代わりにします。  
+- `_In_` 「読み取り専用」を指定します。 よくある間違いは、適用する`_In_`が必要なパラメーターに、`_Inout_`注釈代わりにします。  
   
--   `_In_` 非ポインター スカラーのアナライザーによって無視が許可されます。  
+- `_In_` 非ポインター スカラーのアナライザーによって無視が許可されます。  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  

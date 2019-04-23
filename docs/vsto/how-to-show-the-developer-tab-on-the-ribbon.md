@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 64a0fb4dbc91ff09bddf037a8ce140f134e41e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e1855c64e88cdf45715654eede780aaa20d0258
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091422"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>方法: リボンの [開発] タブを表示します。
   アクセスする、**開発者** タブ、Office アプリケーションのリボンで、既定で表示されないため、このタブを表示するように構成する必要があります。 たとえば、Word のドキュメント レベルのカスタマイズに <xref:Microsoft.Office.Tools.Word.GroupContentControl> を追加しようとする場合、このタブを表示する必要があります。
@@ -34,9 +34,9 @@ ms.locfileid: "56614663"
 
 ## <a name="to-show-the-developer-tab"></a>[開発] タブを表示するには
 
-1.  このトピックでサポートされている Office アプリケーションのいずれかを起動します。 参照してください、**に適用されます:** このトピックの前に注意してください。
+1. このトピックでサポートされている Office アプリケーションのいずれかを起動します。 参照してください、**に適用されます:** このトピックの前に注意してください。
 
-2.  **ファイル** タブで、選択、**オプション**ボタンをクリックします。
+2. **ファイル** タブで、選択、**オプション**ボタンをクリックします。
 
      次に示します、**ファイル** タブと**オプション**Office 2010 でボタンをクリックします。
 
@@ -50,19 +50,19 @@ ms.locfileid: "56614663"
 
      ![Outlook 2013 Preview の [オプション] ボタン](../vsto/media/vsto-office2013-optionsbutton.png "Outlook 2013 Preview で [オプション] ボタン")
 
-3.  _ApplicationName_**オプション** ダイアログ ボックスで、選択、**リボンのカスタマイズ**ボタンをクリックします。
+3. _ApplicationName_**オプション** ダイアログ ボックスで、選択、**リボンのカスタマイズ**ボタンをクリックします。
 
      次に示します、**オプション** ダイアログ ボックスおよび**リボンのカスタマイズ**Excel 2010 でボタンをクリックします。 このボタンの位置は、このトピックの上部付近の「対象」セクションに記載されている他のすべてのアプリケーションで同様です。
 
      ![リボン ボタン](../vsto/media/vsto-office2010-customizeribbonbutton.png "[リボンのカスタマイズ] ボタン")
 
-4.  メイン タブの一覧で選択、**開発者**チェック ボックスをオンします。
+4. メイン タブの一覧で選択、**開発者**チェック ボックスをオンします。
 
      次に示します、**開発者**Word 2010 でのチェック ボックスと[!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]します。 このチェック ボックスの位置は、このトピックの上部付近の「対象」セクションに記載されている他のすべてのアプリケーションと同様です。
 
      ![Word のオプションダイアログ ボックスの [開発] チェック ボックス](../vsto/media/vsto-office2010-developercheckbox.png "Word のオプションダイアログ ボックスで [開発] チェック ボックス")
 
-5.  選択、 **OK**を閉じる ボタン、**オプション** ダイアログ ボックス。
+5. 選択、 **OK**を閉じる ボタン、**オプション** ダイアログ ボックス。
 
 ## <a name="see-also"></a>関連項目
 - [Office UI のカスタマイズ](../vsto/office-ui-customization.md)

@@ -14,12 +14,12 @@ ms.assetid: f6bb8398-4fd6-4312-b4be-9617a2834cc4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b902795ef2cd273c937067771505a1b3b4f60af
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: a3bd991a1d8beb355456e3b8cf7f864975b499cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842456"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103486"
 ---
 # <a name="expected-identifier-string-or-number"></a>識別子、文字列、または数値が必要です
 リテラル オブジェクトを宣言するのにには、リテラルの構文が正しくありませんを使用します。 オブジェクト リテラルのプロパティは、識別子、文字列、または数値である必要があります。 オブジェクト リテラル (「オブジェクトの初期化子」とも呼ばれます) は、すべて、角かっこで囲まれるプロパティ。 値のペアのコンマ区切りの一覧で構成されます。 例:  
@@ -30,7 +30,7 @@ var point = {x:1.2, y:-3.4};
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   適切なリテラルの構文を使用することを確認します。  
+- 適切なリテラルの構文を使用することを確認します。  
   
 ## <a name="see-also"></a>関連項目  
  [コンマ演算子 (,)](../../javascript/reference/comma-operator-decrement-javascript.md)

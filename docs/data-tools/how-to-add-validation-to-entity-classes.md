@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f4f2f5e44ea95137f53019f52de94a5389fa6d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce3658f93df11b83f89e89931d03f35b0fa801a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070239"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>方法: エンティティ クラスに検証を追加する
 エンティティ クラスの "*検証*" とは、データ オブジェクトに入力された値が、アプリケーションに対して設定された規則に従っていること、およびオブジェクトのスキーマ内の制約に従っていることを確認するプロセスです。 基になるデータベースに更新を送信する前にデータを検証すると、エラーを減らすことができます。 アプリケーションとデータベースの間で生じる可能性のあるラウンド トリップの回数も減ります。
@@ -33,23 +33,23 @@ ms.locfileid: "55913497"
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>列の値の変更時にデータを検証するには
 
-1.  開くか、新しい LINQ to SQL クラス ファイルの作成 (**.dbml**ファイル) で、 **O/R デザイナー**します。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
+1. 開くか、新しい LINQ to SQL クラス ファイルの作成 (**.dbml**ファイル) で、 **O/R デザイナー**します。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
 
-2.  **O/R デザイナー**で、検証を追加するクラスを右クリックして、**[コードの表示]** をクリックします。
+2. **O/R デザイナー**で、検証を追加するクラスを右クリックして、**[コードの表示]** をクリックします。
 
      コード エディターが開き、選択したエンティティ クラスの部分クラスが表示されます。
 
-3.  部分クラスにカーソルを置きます。
+3. 部分クラスにカーソルを置きます。
 
-4.  Visual Basic プロジェクトの場合は、次の操作を行います。
+4. Visual Basic プロジェクトの場合は、次の操作を行います。
 
-    1.  **[メソッド名]** の一覧を展開します。
+    1. **[メソッド名]** の一覧を展開します。
 
-    2.  検証を追加する列の **OnCOLUMNNAMEChanging** メソッドを見つけます。
+    2. 検証を追加する列の **OnCOLUMNNAMEChanging** メソッドを見つけます。
 
-    3.  `OnCOLUMNNAMEChanging` メソッドが部分クラスに追加されます。
+    3. `OnCOLUMNNAMEChanging` メソッドが部分クラスに追加されます。
 
-    4.  次のコードを追加して、まず値が入力されたことを確認し、次に列に入力された値がアプリケーションで許容されることを確認します。 入力された値は `value` 引数に含まれています。そこで、これが有効な値であることを確認するロジックを追加します。
+    4. 次のコードを追加して、まず値が入力されたことを確認し、次に列に入力された値がアプリケーションで許容されることを確認します。 入力された値は `value` 引数に含まれています。そこで、これが有効な値であることを確認するロジックを追加します。
 
         ```vb
         If value.HasValue Then
@@ -79,23 +79,23 @@ ms.locfileid: "55913497"
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>エンティティ クラスの更新時にデータを検証するには
 
-1.  開くか、新しい LINQ to SQL クラス ファイルの作成 (**.dbml**ファイル) で、 **O/R デザイナー**します。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
+1. 開くか、新しい LINQ to SQL クラス ファイルの作成 (**.dbml**ファイル) で、 **O/R デザイナー**します。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
 
-2.  **O/R デザイナー**で空の領域を右クリックし、**[コードの表示]** をクリックします。
+2. **O/R デザイナー**で空の領域を右クリックし、**[コードの表示]** をクリックします。
 
      コード エディターが開き、`DataContext` の部分クラスが表示されます。
 
-3.  `DataContext` の部分クラスにカーソルを置きます。
+3. `DataContext` の部分クラスにカーソルを置きます。
 
-4.  Visual Basic プロジェクトの場合は、次の操作を行います。
+4. Visual Basic プロジェクトの場合は、次の操作を行います。
 
-    1.  **[メソッド名]** の一覧を展開します。
+    1. **[メソッド名]** の一覧を展開します。
 
-    2.  **[UpdateENTITYCLASSNAME]** をクリックします。
+    2. **[UpdateENTITYCLASSNAME]** をクリックします。
 
-    3.  `UpdateENTITYCLASSNAME` メソッドが部分クラスに追加されます。
+    3. `UpdateENTITYCLASSNAME` メソッドが部分クラスに追加されます。
 
-    4.  次のコードに示すように、`instance` 引数を使用して個々の列の値にアクセスします。
+    4. 次のコードに示すように、`instance` 引数を使用して個々の列の値にアクセスします。
 
         ```vb
         If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then
@@ -106,7 +106,7 @@ ms.locfileid: "55913497"
 
     C# プロジェクトの場合は、次の操作を行います。
 
-    部分を作成する IntelliSense を使用して C# プロジェクトはイベント ハンドラーが自動的に生成しないため、`UpdateCLASSNAME`メソッド。 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加するクラスの update メソッドをクリックします。 次のコードを選択するときに生成されるコードと似ています、`UpdateCLASSNAME`部分メソッド。
+    部分を作成する IntelliSense を使用して c# プロジェクトはイベント ハンドラーが自動的に生成しないため、`UpdateCLASSNAME`メソッド。 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加するクラスの update メソッドをクリックします。 次のコードを選択するときに生成されるコードと似ています、`UpdateCLASSNAME`部分メソッド。
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

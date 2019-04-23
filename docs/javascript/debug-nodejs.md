@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223391"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856594"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio で JavaScript アプリまたは TypeScript アプリをデバッグする
 
 Visual Studio を使用して、JavaScript および TypeScript のコードをデバッグすることができます。 ブレークポイントを設定してそこにヒットし、変数を検査し、呼び出し履歴を表示し、その他のデバッグ機能を使用することができます。
 
 > [!TIP]
-> Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページに移動し、無料試用版をインストールしてください。 実行するアプリ開発の種類によっては、Visual Studio と共に **Node.js ワークロード**をインストールする必要がある場合があります。
+> Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。 実行するアプリ開発の種類によっては、Visual Studio と共に **Node.js ワークロード**をインストールする必要がある場合があります。
 
 ## <a name="debug-server-side-script"></a>サーバー側のスクリプトをデバッグする
 
@@ -60,6 +60,11 @@ Visual Studio からデバッガーをアタッチし、クライアント側の
     `chrome.exe --remote-debugging-port=9222`
 
     このコマンドにより、デバッグが有効な状態で Chrome が起動します。
+
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > ブラウザーの起動時に `--remote-debugging-port` フラグを設定することもできます。**[デバッグ]** ツールバーから **[ブラウザーの選択]** を選択し、**[追加]** を選択した後、**[引数]** フィールドにフラグを設定します。 ブラウザーで **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support)を参照してください。
+    ::: moniker-end
 
 3. Visual Studio に切り替え、ソース コードにブレークポイントを設定します  (`return` ステートメントや `var` 宣言など、ブレークポイントを許可するコード行でブレークポイントを設定します)。
 
@@ -101,7 +106,7 @@ Visual Studio からデバッガーをアタッチし、クライアント側の
     * トランスパイルされた JavaScript ファイル (*app-bundle.js* など) 内のコードで中断する必要があるときにできない場合は、ソース マップ ファイルである *filename.js.map* を削除します。
 
      > [!TIP]
-     > 以上の手順に従って初めてプロセスにアタッチした後は、Visual Studio 2017 で **[デバッグ]** > **[プロセスに再アタッチする]** を選ぶことで、同じプロセスにすぐに再アタッチできます。
+     > 以上の手順に従って初めてプロセスにアタッチした後は、**[デバッグ]** > **[プロセスに再アタッチする]** を選ぶことで、同じプロセスにすぐに再アタッチできます。
 
 ## <a name="generate_sourcemaps"></a> デバッグ用のソース マップを生成する
 

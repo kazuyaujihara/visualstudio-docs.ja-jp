@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b32779fe2d852e21eacf888e7b2326830fa9829
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972717"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670096"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio の色とスタイル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,6 @@ ms.locfileid: "58972717"
 |個々 の機能や機能のグループがあるし、同様の要素の色を共有することはありません。|**カスタム色**|色のトークン名を領域に固有の他の UI と共有することはできません。|
 |エンドユーザー (たとえば、テキスト エディターまたはデザイナーの特殊化されたウィンドウ)、UI またはコンテンツをカスタマイズすることを許可するには。|**エンドユーザーのカスタマイズ**<br /><br /> **(ツール > オプション ダイアログ ボックス)**|設定の"フォントおよび色 ページで定義されている、**ツール > オプション**ダイアログまたは UI 機能の 1 つに固有の特殊化されたページ。|
 
-
 ### <a name="visual-studio-themes"></a>Visual Studio のテーマ
  Visual Studio 機能の 3 つの異なる配色テーマ: 明色、暗色、青。 また、ユーザー補助用に設計されたシステム全体の配色テーマは、ハイ コントラスト モードを検出します。
 
@@ -79,7 +78,6 @@ ms.locfileid: "58972717"
  ![ツール&#62;Visual Studio でのオプション ダイアログ ボックス](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")
 
  **ツール > オプション ダイアログ ボックス**
-
 
 ##  <a name="BKMK_TheVSColorService"></a> VSColor Service
  Visual Studio では、VSColor service またはシェル カラー サービスとも呼ばれる環境の色サービスを提供します。 このサービスでは、各テーマの色を含む名前と値の色に、UI 要素の色の値をバインドできます。 すべての UI 要素の色は自動的に現在のユーザーが選択したテーマを反映するように変更し、UI は、環境の色のサービスにバインドされているようにと統合される新しいテーマ将来のバージョンの Visual Studio ように、VSColor サービスを使用する必要があります。
@@ -116,7 +114,7 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
  **注:** によって返される COLORREF 値**GetVSSysColorEx()** だけ R、G を含むテーマの色の B コンポーネント。 テーマのエントリは、透明度を使用して、アルファ チャネル値を返す前に破棄されます。 したがって、関心のある環境の色を透過なチャネルが重要となる場所で使用する場合は、このトピックの後半の説明に従って IVsUIShell2::GetVSSysColorEx ではなく IVsUIShell5.GetThemedColor を使用する必要があります。
 
 ##### <a name="from-managed-code"></a>マネージ コードから
- ネイティブ コード VSColor service へのアクセスはとても簡単です。 マネージ コードで作業している場合、サービスを使用する方法を決定するはたいへん。 念頭に、このプロセスを示す C# コード スニペットを示します。
+ ネイティブ コード VSColor service へのアクセスはとても簡単です。 マネージ コードで作業している場合、サービスを使用する方法を決定するはたいへん。 念頭に、このプロセスを示す c# コード スニペットを示します。
 
 ```
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)

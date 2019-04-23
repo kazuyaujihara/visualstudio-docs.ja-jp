@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039130"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;要素 (ClickOnce アプリケーション)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,28 +81,28 @@ ms.locfileid: "58973478"
 ## <a name="permissionset"></a>PermissionSet  
  必須。 この要素は `applicationRequestMinimum` 要素の子であり、 `IPermission` 要素を含んでいます。 この要素には、次の属性があります。  
   
--   `ID`  
+- `ID`  
   
      必須。 アクセス許可セットを識別します。 この属性は任意の値にできます。 この ID は `defaultAssemblyRequest` および `assemblyRequest` 属性で参照されます。  
   
--   `version`  
+- `version`  
   
      必須。 アクセス許可のバージョンを識別します。 通常、この値は `1`です。  
   
 ## <a name="ipermission"></a>IPermission  
  任意。 この要素は `PermissionSet` 要素の子です。 `IPermission` 要素には、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 内のアクセス許可クラスを正しく指定します。 `IPermission` 要素には次の属性がありますが、アクセス許可クラスのプロパティに対応する追加の属性を持つことができます。 アクセス許可の具体的な構文については、Security.config ファイル内の例を参照してください。  
   
--   `class`  
+- `class`  
   
      必須。 アクセス許可クラスを厳密な名前で指定します。 たとえば、次のコードでは `FileDialogPermission` 型を指定しています。  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
--   `version`  
+- `version`  
   
      必須。 アクセス許可のバージョンを識別します。 通常、この値は `1`です。  
   
--   `Unrestricted`  
+- `Unrestricted`  
   
      必須。 アプリケーションの実行に、このアクセス許可を無制限で与える必要があるかどうかを指定します。 `true`に設定すると、アクセス許可は無条件に与えられます。 `false`に設定するか、この属性を定義しない場合は、 `IPermission` タグで定義されているアクセス許可固有の属性に従って制限されます。 アクセス許可の例を次に示します。  
   
@@ -122,18 +122,18 @@ ms.locfileid: "58973478"
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  任意。 すべてのアセンブリに付与されるアクセス許可のセットを指定します。 この要素は `applicationRequestMinimum` 要素の子であり、以下の属性があります。  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      必ず指定します。 既定のアクセス許可として使用するアクセス許可セットの ID を指定します。 アクセス許可セットは、 `PermissionSet` 要素で宣言します。  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  任意。 特定のアセンブリのアクセス許可を識別します。 この要素は `applicationRequestMinimum` 要素の子であり、以下の属性があります。  
   
--   `Name`  
+- `Name`  
   
      必須。 アセンブリ名を識別します。  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      必須。 このアセンブリに必要なアクセス許可セットの ID を指定します。 アクセス許可セットは、 `PermissionSet` 要素で宣言します。  
   
@@ -143,7 +143,7 @@ ms.locfileid: "58973478"
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  任意。 アプリケーションを実行するために必要なセキュリティ レベルを指定します。 この要素には子はなく、次の属性があります。  
   
--   `Level`  
+- `Level`  
   
      必須。 アプリケーションが要求するセキュリティ レベルを指定します。 指定できる値は次のとおりです。  
   
@@ -155,7 +155,7 @@ ms.locfileid: "58973478"
   
      [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、`asInvoker` 値のみでインストールされます。 それ以外の値でインストールすると、エラーが発生します。  
   
--   `uiAccess`  
+- `uiAccess`  
   
      任意。 アプリケーションが、保護されたユーザー インターフェイス要素へのアクセスを必要とするかどうかを指定します。 指定できる値は、 `true` または `false`です。既定値は false です。 署名付きのアプリケーションのみ、true の値を設定する必要があります。  
   

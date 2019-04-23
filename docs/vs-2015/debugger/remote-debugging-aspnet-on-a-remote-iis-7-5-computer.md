@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972938"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109531"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>ASP.NET のリモート IIS コンピューター上でリモート デバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +74,7 @@ ASP.NET アプリケーションのリモート デバッグを行うには、�
       </system.web>
   
     ```
+
 1. **インターネット インフォメーション サービス (IIS) マネージャー** を開き、 **[サイト]** に移動します。
 1. **[既定の Web サイト]** ノードを右クリックして、 **[アプリケーションの追加]** を選択します。
 1. 設定、**エイリアス**フィールドを**MyMVC**と、アプリケーション プール フィールドを**ASP.NET v4.0** (ASP.NET 4.5 は、アプリケーション プールのオプションではありません)。 **[物理パス]** を「 **C:\Publish** 」 (ASP.NET プロジェクト ディレクトリをコピーしたディレクトリ) に設定します。

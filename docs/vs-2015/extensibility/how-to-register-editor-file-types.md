@@ -10,12 +10,12 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042042"
 ---
 # <a name="how-to-register-editor-file-types"></a>方法: エディターのファイルの種類を登録します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58978109"
   
 #### <a name="to-register-editor-file-types-using-mpf-classes"></a>MPF クラスを使用してエディター ファイルの種類を登録するには  
   
-1.  提供、 <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> VSPackage のクラスで、エディターの適切なパラメーターを持つクラス。  
+1. 提供、 <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> VSPackage のクラスで、エディターの適切なパラメーターを持つクラス。  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -43,7 +43,7 @@ ms.locfileid: "58978109"
   
      `NameResourceID` BasicEditorUI プロジェクトの Resources.h ファイルで定義され、エディターを「My エディター」として識別します。  
   
-2.  <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> メソッドをオーバーライドします。  
+2. <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> メソッドをオーバーライドします。  
   
      実装で、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドを呼び出し、<xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>メソッドと次の例として、エディター ファクトリのインスタンスのパス。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "58978109"
   
      この手順では、エディター ファクトリおよびファイルのエディター拡張機能の両方を登録します。  
   
-3.  エディター ファクトリの登録を解除します。  
+3. エディター ファクトリの登録を解除します。  
   
      VSPackage が破棄されたときに、エディター ファクトリは自動的に登録できません。 エディターのファクトリ オブジェクトを実装する場合、<xref:System.IDisposable>インターフェイス、その`Dispose`とファクトリが登録解除された後、メソッドが呼び出された[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "58978109"
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>レジストリ スクリプトを使用してエディター ファイルの種類を登録するには  
   
-1.  レジストリ スクリプトでエディター ファクトリと定義エディター ファクトリの GUID の文字列のように、`GUID_BscEditorFactory`レジストリ スクリプトを次のセクション。 また、拡張機能およびエディター拡張機能の優先順位を定義します。  
+1. レジストリ スクリプトでエディター ファクトリと定義エディター ファクトリの GUID の文字列のように、`GUID_BscEditorFactory`レジストリ スクリプトを次のセクション。 また、拡張機能およびエディター拡張機能の優先順位を定義します。  
   
     ```  
   
@@ -92,9 +92,9 @@ ms.locfileid: "58978109"
   
      この例では、エディターのファイル拡張子は".rtf"として識別され、その優先順位が「50」。 GUID の文字列は、Resource.h ファイルの BscEdit サンプル プロジェクトで定義されます。  
   
-2.  VSPackage を登録します。  
+2. VSPackage を登録します。  
   
-3.  エディター ファクトリを登録します。  
+3. エディター ファクトリを登録します。  
   
      エディター ファクトリに登録されている、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>実装します。  
   

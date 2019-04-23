@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6bd4117f3cce8a5a8a708da4b7941e224260ea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 440b60697d4ab1e88f535b6c5ef824bc74e19c48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068692"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Windows フォームでのダイアグラムの埋め込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Windows コントロールに表示される DSL 図を埋め込むことがで�
   
 #### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>Windows コントロールに DSL 図を埋め込むには  
   
-1.  新しい追加**ユーザー コントロール**ファイルを DslPackage プロジェクト。  
+1. 新しい追加**ユーザー コントロール**ファイルを DslPackage プロジェクト。  
   
-2.  ユーザー コントロールをパネル コントロールを追加します。 このパネルにはは DSL 図が含まれます。  
+2. ユーザー コントロールをパネル コントロールを追加します。 このパネルにはは DSL 図が含まれます。  
   
      必要なその他のコントロールを追加します。  
   
      コントロールのアンカーのプロパティを設定します。  
   
-3.  ソリューション エクスプ ローラーでユーザー コントロール ファイルを右クリックし、をクリックして**コードの表示**します。 コードには、このコンス トラクターと変数を追加します。  
+3. ソリューション エクスプ ローラーでユーザー コントロール ファイルを右クリックし、をクリックして**コードの表示**します。 コードには、このコンス トラクターと変数を追加します。  
   
     ```csharp  
   
@@ -47,7 +47,7 @@ Windows コントロールに表示される DSL 図を埋め込むことがで�
   
     ```  
   
-4.  次の内容、DslPackage プロジェクトに新しいファイルを追加します。  
+4. 次の内容、DslPackage プロジェクトに新しいファイルを追加します。  
   
     ```  
     using System.Windows.Forms;  
@@ -71,13 +71,13 @@ Windows コントロールに表示される DSL 図を埋め込むことがで�
   
     ```  
   
-5.  DSL をテストするには、f5 キーを押して、サンプル モデル ファイルを開きます。 コントロール内に、ダイアグラムが表示されます。 ツールボックスとその他の機能が通常動作します。  
+5. DSL をテストするには、f5 キーを押して、サンプル モデル ファイルを開きます。 コントロール内に、ダイアグラムが表示されます。 ツールボックスとその他の機能が通常動作します。  
   
 #### <a name="updating-the-form-using-store-events"></a>ストア イベントを使用してフォームを更新しています  
   
-1.  フォーム デザイナーでは追加、 **ListBox**という`listBox1`します。 これにより、モデルに要素の一覧が表示されます。 モデルを使用して synchronism で保持*イベント格納*します。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
+1. フォーム デザイナーでは追加、 **ListBox**という`listBox1`します。 これにより、モデルに要素の一覧が表示されます。 モデルを使用して synchronism で保持*イベント格納*します。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
   
-2.  カスタム コード ファイルでさらにメソッドをオーバーライド DocView クラス。  
+2. カスタム コード ファイルでさらにメソッドをオーバーライド DocView クラス。  
   
     ```  
   
@@ -120,7 +120,7 @@ Windows コントロールに表示される DSL 図を埋め込むことがで�
   
     ```  
   
-3.  ユーザー コントロールの背後にあるコードでは、要素を追加および削除をリッスンするメソッドを挿入します。  
+3. ユーザー コントロールの背後にあるコードでは、要素を追加および削除をリッスンするメソッドを挿入します。  
   
     ```  
   
@@ -149,7 +149,7 @@ Windows コントロールに表示される DSL 図を埋め込むことがで�
   
     ```  
   
-4.  DSL をテストするには、f5 キーを押しての実験用インスタンスで[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、サンプル モデル ファイルを開きます。  
+4. DSL をテストするには、f5 キーを押しての実験用インスタンスで[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、サンプル モデル ファイルを開きます。  
   
      モデルでは、要素の一覧をリスト ボックスが表示されるが正しいことおよび取り消しとやり直しの任意の追加または削除後に注意してください。  
   

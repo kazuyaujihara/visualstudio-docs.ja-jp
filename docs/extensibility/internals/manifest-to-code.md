@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7583a25e000478e473cce61fd85e0158bad4212
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075832"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 コード ツールに、マニフェストは、コンソール アプリケーションを Visual Studio イメージ サービスの .imagemanifest ファイルを受け取り、ラッパー ファイルまたはイメージ マニフェストの値では、C++、c#、VB、または Visual Studio 拡張機能の .vsct ファイルを参照するためのファイルを生成します。 このツールは、要求元のイメージから Visual Studio イメージ サービスを直接、またはコードがすべての UI とレンダリングを処理しない場合は、Api を使用してマニフェストの値を渡すために使用できるラッパー ファイルを生成します。
@@ -40,17 +40,17 @@ ms.locfileid: "56609555"
 
  **例**
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp
 
--   ManifestToCode/manifest:D:\MyManifest.imagemanifest/language:C++/namespace: :: Namespace/imageIdClass:MyImageIds/monikerClass:MyMonikers/classAccess:friend
+- ManifestToCode/manifest:D:\MyManifest.imagemanifest/language:C++/namespace: :: Namespace/imageIdClass:MyImageIds/monikerClass:MyMonikers/classAccess:friend
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
 
 ## <a name="notes"></a>メモ
 
--   リソースのツールから、マニフェストによって生成されたイメージのマニフェストでこのツールを使用することをお勧めします。
+- リソースのツールから、マニフェストによって生成されたイメージのマニフェストでこのツールを使用することをお勧めします。
 
--   コードのラッパーを生成するシンボルのエントリだけツールを確認します。 イメージ マニフェストにシンボルが含まれていない場合は、生成されたコード ラッパーが空になります。 イメージまたはシンボルを使用してイメージ マニフェストでイメージのセットが場合、コード ラッパーから除外されます。
+- コードのラッパーを生成するシンボルのエントリだけツールを確認します。 イメージ マニフェストにシンボルが含まれていない場合は、生成されたコード ラッパーが空になります。 イメージまたはシンボルを使用してイメージ マニフェストでイメージのセットが場合、コード ラッパーから除外されます。
 
 ## <a name="sample-output"></a>出力例
  **C# ラッパー**

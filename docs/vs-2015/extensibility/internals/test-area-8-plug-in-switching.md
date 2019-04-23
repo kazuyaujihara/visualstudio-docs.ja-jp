@@ -11,12 +11,12 @@ ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8064ffec4b98c1a05d8236b11bec226a08f20321
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112951"
 ---
 # <a name="test-area-8-plug-in-switching"></a>テスト領域 8: プラグインの切り替え
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "58964162"
 ## <a name="command-menu-access"></a>コマンド メニューへのアクセス  
  次[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境のメニューのパスは、テスト_ケースで使用されます。  
   
--   現在ソース管理プラグイン:**ツール** -> **オプション** -> **ソース管理** -> **プラグインの選択**します。  
+- 現在ソース管理プラグイン:**ツール** -> **オプション** -> **ソース管理** -> **プラグインの選択**します。  
   
--   ソースの変更管理のバインディング。**ファイル** -> **ソース管理** -> **ソース管理の変更**.  
+- ソースの変更管理のバインディング。**ファイル** -> **ソース管理** -> **ソース管理の変更**.  
   
 ## <a name="common-expected-behavior"></a>共通の想定される動作  
  ソース管理ソリューションのプラグインの変更は、Visual Studio を終了するか、またはソリューションを再読み込みせず可能性があります。 さらに、現在のソース管理プラグインは、そのソリューションが読み込まれるときに、ソリューションで使用される 1 つに自動的に変更します。  

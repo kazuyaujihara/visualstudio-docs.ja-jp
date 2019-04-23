@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 327b9ca623c6d7f949c0d516798865de48fd94be
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9bc91ec6cd91cdd0785580d57782ae57ccee1839
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078168"
 ---
 # <a name="handle-specialized-deployment"></a>特殊化された展開を処理します。
 展開は、プロジェクトの省略可能な操作です。 Web プロジェクトは、たとえば、Web サーバーを更新するプロジェクトへのデプロイをサポートします。 同様に、**スマート デバイス**プロジェクトは、ターゲット デバイスにビルドされたアプリケーションをコピーする展開をサポートしています。 プロジェクト サブタイプが実装することによって特殊化された展開の動作を指定できます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>インターフェイス。 このインターフェイスは、デプロイ操作の完全なセットを定義します。
@@ -41,10 +41,9 @@ ms.locfileid: "56840326"
 
   呼び出す必要があるプロジェクト サブタイプに環境をデプロイ操作が開始または終了を通知する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A>メソッド。
 
-
 ## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>プロジェクト サブタイプによって特殊化された展開を処理するには
 
--   実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>デプロイの状態イベントの通知を受信するための環境を登録します。
+- 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>デプロイの状態イベントの通知を受信するための環境を登録します。
 
     ```vb
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()
@@ -75,7 +74,7 @@ ms.locfileid: "56840326"
 
     ```
 
--   実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>デプロイの状態イベントの通知を受信する環境の登録をキャンセルするメソッド。
+- 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>デプロイの状態イベントの通知を受信する環境の登録をキャンセルするメソッド。
 
     ```vb
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer
@@ -93,7 +92,7 @@ ms.locfileid: "56840326"
 
     ```
 
--   実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>アプリケーションに固有のコミット操作を実行するメソッド。  このメソッドは、主にデータベースの配置に使用されます。
+- 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>アプリケーションに固有のコミット操作を実行するメソッド。  このメソッドは、主にデータベースの配置に使用されます。
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -111,7 +110,7 @@ ms.locfileid: "56840326"
 
     ```
 
--   実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>ロールバック操作を実行するメソッド。 このメソッドが呼び出されたときに、変更をロールバックして、プロジェクトの状態を復元する必要に応じて、デプロイ プロジェクトが行う必要があります。 このメソッドは、主にデータベースの配置に使用されます。
+- 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>ロールバック操作を実行するメソッド。 このメソッドが呼び出されたときに、変更をロールバックして、プロジェクトの状態を復元する必要に応じて、デプロイ プロジェクトが行う必要があります。 このメソッドは、主にデータベースの配置に使用されます。
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -129,7 +128,7 @@ ms.locfileid: "56840326"
 
     ```
 
--   実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>プロジェクトがデプロイ操作を開始できるかどうかを判断するメソッド。
+- 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>プロジェクトがデプロイ操作を開始できるかどうかを判断するメソッド。
 
     ```vb
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer
@@ -162,7 +161,7 @@ ms.locfileid: "56840326"
 
     ```
 
--   実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>デプロイ操作が正常に完了するかどうかを判断するメソッド。
+- 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>デプロイ操作が正常に完了するかどうかを判断するメソッド。
 
     ```vb
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer
@@ -185,7 +184,7 @@ ms.locfileid: "56840326"
 
     ```
 
--   実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>メソッドを個別のスレッドでのデプロイ操作を開始します。 内のアプリケーションの展開に固有のコードを配置、`Deploy`メソッド。
+- 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>メソッドを個別のスレッドでのデプロイ操作を開始します。 内のアプリケーションの展開に固有のコードを配置、`Deploy`メソッド。
 
     ```vb
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer
@@ -242,7 +241,7 @@ ms.locfileid: "56840326"
 
     ```
 
--   実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>展開操作を停止するメソッド。 ユーザーが押したときに、このメソッドが呼び出されます、**キャンセル**展開プロセス中にボタンをクリックします。
+- 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>展開操作を停止するメソッド。 ユーザーが押したときに、このメソッドが呼び出されます、**キャンセル**展開プロセス中にボタンをクリックします。
 
     ```vb
     Public Function StopDeploy(ByVal fSync As Integer) As Integer

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e32ba1641b084f1240e2a3f872a07e410b6c507
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bb386a2d80931ece415b0b3939f2947678808261
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641521"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041222"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>再利用可能なワークフローをインポートするためのガイドライン
   SharePoint Designer で作成された再利用可能なワークフローをインポートするには、再利用可能な SharePoint 2010 ワークフローのインポート プロジェクト テンプレートを使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。 このテンプレートをインポート、*宣言型**ワークフロー* ([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-のみ) に変換します、*コード ワークフロー*、これは、いずれかで強化できるワークフロー[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]または[!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]コード。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [チュートリアル:SharePoint Designer の再利用可能なワークフローを Visual Studio にインポート](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)します。
@@ -36,13 +36,13 @@ ms.locfileid: "56641521"
 ## <a name="import-reusable-workflows-by-using-the-import-sharepoint-2010-solution-package-template"></a>SharePoint 2010 ソリューション パッケージのインポート テンプレートを使用して再利用可能なワークフローのインポート
  SharePoint 2010 ソリューション パッケージのインポート テンプレートを使用して再利用可能なワークフローをインポートする場合は、次の問題を考慮する必要があります。
 
--   ワークフローをインポートした後は、すぐにデプロイしで実行することができます[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を選択して、 **F5**キー。 ただし、インポートされたソリューションでのワークフローで何も変更するを展開して、ワークフローを実行する前に、プロジェクトで要素を手動で修正するがあります。
+- ワークフローをインポートした後は、すぐにデプロイしで実行することができます[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を選択して、 **F5**キー。 ただし、インポートされたソリューションでのワークフローで何も変更するを展開して、ワークフローを実行する前に、プロジェクトで要素を手動で修正するがあります。
 
--   ワークフローは、宣言型であるためにコードを追加することはできません。 コード ワークフローにワークフローを変換する必要がありますにインポートする[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]再利用可能な SharePoint 2010 ワークフローのインポート テンプレートを使用しています。
+- ワークフローは、宣言型であるためにコードを追加することはできません。 コード ワークフローにワークフローを変換する必要がありますにインポートする[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]再利用可能な SharePoint 2010 ワークフローのインポート テンプレートを使用しています。
 
--   デザイン ビューでワークフロー デザイナー (.xoml) ファイルを編集することができますが勧めソース ビューで、編集すること、ワークフロー デザイナーでの間違ったエラーが表示されるためです。
+- デザイン ビューでワークフロー デザイナー (.xoml) ファイルを編集することができますが勧めソース ビューで、編集すること、ワークフロー デザイナーでの間違ったエラーが表示されるためです。
 
--   ワークフローでのデバッグは、宣言型のコンテンツに対しては機能しません。 ブレークポイントを設定、[!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)]はヒットしません。
+- ワークフローでのデバッグは、宣言型のコンテンツに対しては機能しません。 ブレークポイントを設定、[!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)]はヒットしません。
 
 ## <a name="import-globally-reusable-workflow-solutions"></a>グローバルに再利用可能なワークフロー ソリューションをインポートします。
  再利用可能な SharePoint 2010 のワークフローのインポート テンプレートを使用してグローバルに再利用可能なワークフローをインポートすることはできません。 グローバルに再利用可能なワークフローをインポートするには、非グローバルに再利用可能なワークフローに変換する必要があるか、SharePoint 2010 ソリューション パッケージのインポート テンプレートを使用する必要があります。

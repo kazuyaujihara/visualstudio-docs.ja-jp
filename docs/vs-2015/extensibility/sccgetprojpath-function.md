@@ -12,23 +12,23 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 053d8ff8f7e75224b05b1a722ba1bce03cd53a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972673"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093931"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 この関数は、ソース管理プラグインにのみ意味のある文字列であるプロジェクトのパスをユーザーに求めます。 これには、ユーザーの場合は呼び出されます。  
   
--   新しいプロジェクトを作成します。  
+- 新しいプロジェクトを作成します。  
   
--   バージョン管理への既存のプロジェクトの追加  
+- バージョン管理への既存のプロジェクトの追加  
   
--   既存のバージョン コントロール プロジェクトを検索しようとしています。  
+- 既存のバージョン コントロール プロジェクトを検索しようとしています。  
   
 ## <a name="syntax"></a>構文  
   

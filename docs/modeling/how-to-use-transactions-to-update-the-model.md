@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed10c7535a08a299f43138774935f4c65eafffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075026"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>方法: トランザクションを使用してモデルを更新する
 トランザクションをストアに加えられた変更がグループとして扱われることを確認します。 グループ化されている変更をコミットまたは 1 つの単位としてロールバックできます。
@@ -57,9 +57,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>トランザクションのロールバック
  ストアに残っていることを確認、トランザクションの前に、の状態に戻りするには、これらの戦術のいずれかを使用できます。
 
-1.  トランザクションのスコープ内でキャッチされない例外を発生させます。
+1. トランザクションのスコープ内でキャッチされない例外を発生させます。
 
-2.  明示的にトランザクションをロールバックします。
+2. 明示的にトランザクションをロールバックします。
 
     ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();
@@ -68,12 +68,12 @@ catch (Exception ex)
 ## <a name="transactions-do-not-affect-non-store-objects"></a>トランザクションは、Store 以外のオブジェクトには影響しません
  トランザクションには、ストアの状態のみによって制御されます。 ファイル、データベース、または DSL 定義の外部の通常の型で宣言されているオブジェクトなどの外部のアイテムに対する部分の変更が元に戻すことはできません。
 
- 場合は、例外がこのような変更をストアと一貫性のないは、例外ハンドラーでその可能性を処理する必要があります。 外部リソースが、オブジェクトの保存と同期を保つことを確認する方法の 1 つでは、ストア内の要素にイベント ハンドラーを使用して各外部オブジェクトを結合します。 詳細については、[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)を参照してください。
+ 場合は、例外がこのような変更をストアと一貫性のないは、例外ハンドラーでその可能性を処理する必要があります。 外部リソースが、オブジェクトの保存と同期を保つことを確認する方法の 1 つでは、ストア内の要素にイベント ハンドラーを使用して各外部オブジェクトを結合します。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。
 
 ## <a name="rules-fire-at-the-end-of-a-transaction"></a>トランザクションの最後にルールの起動
  トランザクションの最後に、トランザクションが破棄される前に、ストア内の要素に適用される規則が発生します。 各ルールは、変更されたモデル要素に適用される方法です。 たとえば、「修正」のモデル要素が変更されたときに、図形の状態を更新する規則があるし、モデル要素が作成されるときに図形を作成します。 指定された起動順序はありません。 ルールによって行われた変更は、別のルールを起動できます。
 
- 独自のルールを定義することができます。 ルールの詳細については、[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)を参照してください。
+ 独自のルールを定義することができます。 ルールの詳細については、次を参照してください。[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)します。
 
  ルールは、元に戻す、やり直し操作、または rollback コマンドの後に起動されません。
 

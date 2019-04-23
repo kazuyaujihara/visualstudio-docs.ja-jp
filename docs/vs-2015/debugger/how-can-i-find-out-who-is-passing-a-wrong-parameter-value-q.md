@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 89ef2aabd03316f34280e75dc30da2189629b2f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fa3f96cd6ee5ff3c4f78a3e9a9bc89b2037066fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977139"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053833"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>引数に不正な値が渡された原因を見つけるには
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ ms.locfileid: "58977139"
   
 #### <a name="to-resolve-this-problem"></a>この問題を解決するには  
   
-1.  関数の先頭に位置ブレークポイントを設定します。  
+1. 関数の先頭に位置ブレークポイントを設定します。  
   
-2.  ブレークポイントを右クリックし、**[条件]** をクリックします。  
+2. ブレークポイントを右クリックし、**[条件]** をクリックします。  
   
-3.  **[ブレークポイントの条件]** ダイアログ ボックスで、**[条件]** チェック ボックスをオンにします。 参照してください[ブレークポイントの高度な](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)します。  
+3. **[ブレークポイントの条件]** ダイアログ ボックスで、**[条件]** チェック ボックスをオンにします。 参照してください[ブレークポイントの高度な](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)します。  
   
-4.  テキスト ボックスに `Var==3` などの式を入力します (`Var` は不適切な値が格納されるパラメーターの名前、`3` はこのパラメーターに渡される不適切な値)。  
+4. テキスト ボックスに `Var==3` などの式を入力します (`Var` は不適切な値が格納されるパラメーターの名前、`3` はこのパラメーターに渡される不適切な値)。  
   
-5.  **[true の場合]** オプション ボタンをクリックし、**[OK]** をクリックします。  
+5. **[true の場合]** オプション ボタンをクリックし、**[OK]** をクリックします。  
   
-6.  そして、再びプログラムを実行します。 `Var` パラメーターの値が `3` になると、ブレークポイントによって、その関数の先頭でプログラムの実行が停止します。  
+6. そして、再びプログラムを実行します。 `Var` パラメーターの値が `3` になると、ブレークポイントによって、その関数の先頭でプログラムの実行が停止します。  
   
-7.  次に、[呼び出し履歴] ウィンドウを使用して呼び出し元の関数を見つけ、その関数のソース コードに移動します。 詳細については、「[方法 :[呼び出し履歴] ウィンドウを使用する](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。  
+7. 次に、[呼び出し履歴] ウィンドウを使用して呼び出し元の関数を見つけ、その関数のソース コードに移動します。 詳細については、「[方法 :[呼び出し履歴] ウィンドウを使用する](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)   

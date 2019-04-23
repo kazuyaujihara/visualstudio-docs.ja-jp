@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: 9e4a30c3aa85969a4cbf712f2f4018c24169ff6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268564"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051415"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>データベースへのデータの保存 (複数テーブル)
 
@@ -31,15 +31,15 @@ ms.locfileid: "58268564"
 
 このチュートリアルでは、以下のタスクを行います。
 
--  使用してアプリケーションでのデータ ソースの構成の作成と、[データ ソース構成ウィザード](../data-tools/media/data-source-configuration-wizard.png)します。
+- 使用してアプリケーションでのデータ ソースの構成の作成と、[データ ソース構成ウィザード](../data-tools/media/data-source-configuration-wizard.png)します。
 
--  内の項目のコントロールの設定、[データ ソース ウィンドウ](add-new-data-sources.md#data-sources-window)します。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。
+- 内の項目のコントロールの設定、[データ ソース ウィンドウ](add-new-data-sources.md#data-sources-window)します。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。
 
--  **[データ ソース]** ウィンドウからフォームに項目をドラッグして、データ バインド コントロールを作成します。
+- **[データ ソース]** ウィンドウからフォームに項目をドラッグして、データ バインド コントロールを作成します。
 
--  データセット内の各テーブル内のいくつかのレコードを変更します。
+- データセット内の各テーブル内のいくつかのレコードを変更します。
 
--  データセット内の更新されたデータをデータベースに返送するコードを変更します。
+- データセット内の更新されたデータをデータベースに返送するコードを変更します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
@@ -65,7 +65,7 @@ ms.locfileid: "58268564"
 
 ## <a name="create-the-data-source"></a>データ ソースを作成します。
 
-この手順では、**データ ソース構成ウィザード**を使用して、Northwind データベースからデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースの設定の詳細については、次を参照してください。[方法: サンプル データベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)します。
+この手順では、**データ ソース構成ウィザード**を使用して、Northwind データベースからデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースの設定の詳細については、次を参照してください。[方法。サンプル データベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)します。
 
 1. **データ**メニューの  **データ ソースの**します。
 

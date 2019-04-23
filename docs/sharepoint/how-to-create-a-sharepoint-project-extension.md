@@ -14,31 +14,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c42fc5ec197447a8def80d3aab7bb74def2db5e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 37f22e085334bf6a18ef1b5482b6b6c206690148
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073203"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>方法: SharePoint プロジェクト拡張機能を作成します。
-  Visual Studio で開いている任意の SharePoint プロジェクトに機能を追加する場合は、プロジェクトの拡張機能を作成します。 詳細については、[SharePoint プロジェクト システムを拡張](../sharepoint/extending-the-sharepoint-project-system.md)を参照してください。
+  Visual Studio で開いている任意の SharePoint プロジェクトに機能を追加する場合は、プロジェクトの拡張機能を作成します。 詳細については、次を参照してください。 [SharePoint プロジェクト システムを拡張](../sharepoint/extending-the-sharepoint-project-system.md)します。
 
 ### <a name="to-create-a-project-extension"></a>プロジェクトの拡張機能を作成するには
 
-1.  クラス ライブラリ プロジェクトを作成します。
+1. クラス ライブラリ プロジェクトを作成します。
 
-2.  次のアセンブリへの参照を追加します。
+2. 次のアセンブリへの参照を追加します。
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> インターフェイスを実装するクラスを作成します。
+3. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> インターフェイスを実装するクラスを作成します。
 
-4.  追加、<xref:System.ComponentModel.Composition.ExportAttribute>クラスにします。 この属性により、Visual Studio を検出して読み込む、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>実装します。 渡す、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>属性コンス トラクターの型。
+4. 追加、<xref:System.ComponentModel.Composition.ExportAttribute>クラスにします。 この属性により、Visual Studio を検出して読み込む、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>実装します。 渡す、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>属性コンス トラクターの型。
 
-5.  実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>メソッドのメンバーを使用して、 *projectService*パラメーター、拡張機能の動作を定義します。 このパラメーターは、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>で定義されたイベントへのアクセスを提供するオブジェクト、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>インターフェイス。
+5. 実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>メソッドのメンバーを使用して、 *projectService*パラメーター、拡張機能の動作を定義します。 このパラメーターは、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>で定義されたイベントへのアクセスを提供するオブジェクト、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>インターフェイス。
 
 ## <a name="example"></a>例
  次のコード例で定義されている SharePoint プロジェクト イベントのほとんどを処理する単純なプロジェクトの拡張機能を作成する方法を示します、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>インターフェイス。 SharePoint プロジェクトを作成するコードをテストするには、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]とし、その他のプロジェクトをソリューションに追加、プロジェクト プロパティの値を変更または削除またはプロジェクトを除外します。 メッセージを記述することで、拡張機能を通知するイベントの**出力**ウィンドウと**エラー一覧**ウィンドウ。
@@ -185,19 +185,19 @@ ms.locfileid: "56619382"
   }
   ```
 
-この例では、SharePoint プロジェクト サービスを使用して、メッセージを書き込む、**出力**ウィンドウと**エラー一覧**ウィンドウ。 詳細については、[SharePoint プロジェクト サービスを使用して、](../sharepoint/using-the-sharepoint-project-service.md)を参照してください。
+この例では、SharePoint プロジェクト サービスを使用して、メッセージを書き込む、**出力**ウィンドウと**エラー一覧**ウィンドウ。 詳細については、次を参照してください。 [SharePoint プロジェクト サービスを使用して、](../sharepoint/using-the-sharepoint-project-service.md)します。
 
  処理する方法を示す例について、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested>と<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>イベントを参照してください[方法。ショートカット メニュー項目を SharePoint プロジェクトに追加](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)と[方法。SharePoint プロジェクトにプロパティを追加](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)します。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のアセンブリへの参照が必要です。
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>拡張機能をデプロイします。
- 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、[、SharePoint 用の拡張機能の展開ツールの Visual Studio で](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)を参照してください。
+ 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、次を参照してください。 [、SharePoint 用の拡張機能の展開ツールの Visual Studio で](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint プロジェクト システムを拡張します。](../sharepoint/extending-the-sharepoint-project-system.md)

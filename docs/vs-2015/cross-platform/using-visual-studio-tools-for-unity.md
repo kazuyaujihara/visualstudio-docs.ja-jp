@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073430"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity を使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このセクションでは、Visual Studio Tools for Unity の統合と生産性の機能の使用法、および Unity 開発における Visual Studio デバッガーの使用法について取り上げます。  
   
 ## <a name="unity-integration-and-productivity"></a>Unity の統合と生産性  
@@ -30,7 +29,7 @@ ms.locfileid: "54777382"
   
 ##### <a name="to-access-unity-documentation"></a>Unity のドキュメントにアクセスするには  
   
--   Visual Studio で、情報を必要とする Unity API を選択するか、その上にカーソルを置き、**Ctrl + Alt + M、Ctrl + H** キーの順に押します。  
+- Visual Studio で、情報を必要とする Unity API を選択するか、その上にカーソルを置き、**Ctrl + Alt + M、Ctrl + H** キーの順に押します。  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Unity MonoBehavior のスクリプト作成ウィザード  
  Unity では、ほとんどのスクリプトを、MonoBehavior クラスを継承し、そのメソッドの一部をオーバーライドすることにより実装します。 MonoBehavior ウィザードを使用すると、オーバーロード元にする MonoBehavior メソッドの空の定義を素早く作成できます。 このウィザードを使用して、使用可能なメソッドの一覧からオーバーロードする 1 つ以上のメソッドを指定し、それをコードのどの場所に挿入するかを選択し、使用方法についてのコメントを含めるかどうかを決定できます。  
@@ -60,13 +59,13 @@ ms.locfileid: "54777382"
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>クイック MonoBehavior ウィザードを使用して空の MonoBehavior メソッド定義を作成するには  
   
-1.  Visual Studio で、メソッドの挿入位置にカーソルを合わせてから、**Ctrl + Shift + Q** キーを押してクイック MonoBehavior ウィザードを起動します。 もう 1 つの MonoBehavior ウィザードとは違って、このウィザードでは新しいメソッドがいつもカーソル位置に挿入されるので、使用時にカーソルを目的の位置に置く必要があります。  
+1. Visual Studio で、メソッドの挿入位置にカーソルを合わせてから、**Ctrl + Shift + Q** キーを押してクイック MonoBehavior ウィザードを起動します。 もう 1 つの MonoBehavior ウィザードとは違って、このウィザードでは新しいメソッドがいつもカーソル位置に挿入されるので、使用時にカーソルを目的の位置に置く必要があります。  
   
-2.  **[スクリプト メソッドの作成]** ウィンドウの右上隅に表示されているフレームワークのバージョンが、使用しているバージョンと一致していることを確認します。 一致していない場合は、ドロップダウンの値を、使用するバージョンに変更します。  
+2. **[スクリプト メソッドの作成]** ウィンドウの右上隅に表示されているフレームワークのバージョンが、使用しているバージョンと一致していることを確認します。 一致していない場合は、ドロップダウンの値を、使用するバージョンに変更します。  
   
-3.  オーバーロードするメソッドを見つけます。 それには、スクリプト メソッドの作成ウィンドウでテキスト ボックスにメソッド名を入力します。 入力し始めた文字に名前が一致するメソッドの一覧が表示されます。  
+3. オーバーロードするメソッドを見つけます。 それには、スクリプト メソッドの作成ウィンドウでテキスト ボックスにメソッド名を入力します。 入力し始めた文字に名前が一致するメソッドの一覧が表示されます。  
   
-4.  オーバーロードするメソッドを選択します。 必要なメソッドが一覧に表示されている場合は、マウスまたは方向キーを使用してメソッドを選択し、**Enter** キーを押します。 一覧に表示されているメソッドが 1 つだけの場合は、**Enter** キーを押すだけです。 メソッドがコードに挿入されます。  
+4. オーバーロードするメソッドを選択します。 必要なメソッドが一覧に表示されている場合は、マウスまたは方向キーを使用してメソッドを選択し、**Enter** キーを押します。 一覧に表示されているメソッドが 1 つだけの場合は、**Enter** キーを押すだけです。 メソッドがコードに挿入されます。  
   
 ### <a name="unity-project-explorer"></a>Unity プロジェクト エクスプローラー  
  Unity プロジェクト エクスプローラーを使用すると、Visual Studio から Unity プロジェクト内を移動できます。  
@@ -104,16 +103,16 @@ ms.locfileid: "54777382"
 ## <a name="unity-debugging"></a>Unity のデバッグ  
  Visual Studio Tools for Unity では、Visual Studio の強力なデバッガーを使用して、Unity プロジェクトのエディター スクリプトとゲーム スクリプトの両方をデバッグできます。  
   
-###  <a name="connecting-visual-studio-to-unity"></a> Visual Studio を Unity に接続する  
+### <a name="connecting-visual-studio-to-unity"></a> Visual Studio を Unity に接続する  
  Visual Studio Tools for Unity は、UDP 接続を介して Unity と通信します。 そのため、ローカルで実行されている Unity インスタンスにも、ネットワーク上の任意の場所で実行されている Unity インスタンスにも、まったく同じ方法で接続できます。 ネットワーク上で参照できる Unity インスタンスのいずれかに接続するには、**[Unity のインスタンスの選択]** ダイアログを使用します。  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>[Select Unity Instance] ダイアログを開くには  
   
--   Visual Studio のメイン メニューで、**[デバッグ]**、**[Unity デバッガーのアタッチ]** の順に選択します。  
+- Visual Studio のメイン メニューで、**[デバッグ]**、**[Unity デバッガーのアタッチ]** の順に選択します。  
   
      ![Unity のデバッガーをアタッチします。](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
--   *または*、Visual Studio のステータス バーの右下隅にあるプラグのアイコンを選択します。  
+- *または*、Visual Studio のステータス バーの右下隅にあるプラグのアイコンを選択します。  
   
      ![このアイコンは VSTU が Unity に接続されていることを示します。](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
@@ -139,7 +138,7 @@ ms.locfileid: "54777382"
 > [!IMPORTANT]
 >  Visual Studio Tools for Unity と Unity インスタンスは UDP ネットワーク ソケット上で通信を行っているため、ファイアウォールからメッセージが表示されることがあります。 その場合は、VSTU と Unity が通信できるように、接続を承認する必要があります。  
   
-###  <a name="debugging-your-project-in-a-unity-player"></a> Unity プレーヤーでのプロジェクトのデバッグ  
+### <a name="debugging-your-project-in-a-unity-player"></a> Unity プレーヤーでのプロジェクトのデバッグ  
  Unity エディターを実行していない場合、またはプラットフォーム固有の問題をデバッグする場合は、Visual Studio Tools for Unity を、スタンドアロン プレーヤーで実行されている Unity アプリケーションに直接接続できます。  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Unity プレーヤーでのスクリプトのデバッグを有効にするには  

@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7661de324e2d2872491988c7b0fa637d0c318545
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920575"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053730"
 ---
 # <a name="annotating-locking-behavior"></a>ロック動作に注釈を付ける
 マルチ スレッド プログラムでの同時実行のバグを回避するには、以下の適切なロック作業分野と SAL 注釈を使用して常に。
@@ -55,11 +55,11 @@ ms.locfileid: "55920575"
 
  いくつかスレッドの所有権ルールに注意してください。
 
--   スピン ロックは、クリア スレッド所有権のあるカウントされないロックです。
+- スピン ロックは、クリア スレッド所有権のあるカウントされないロックです。
 
--   ミュー テックスとクリティカル セクションには、クリア スレッド所有権のロックがカウントされます。
+- ミュー テックスとクリティカル セクションには、クリア スレッド所有権のロックがカウントされます。
 
--   セマフォおよびイベントには、クリア スレッドの所有権がないロックがカウントされます。
+- セマフォおよびイベントには、クリア スレッドの所有権がないロックがカウントされます。
 
 ## <a name="locking-annotations"></a>ロックの注釈
  次の表は、ロックの注釈を一覧表示します。
@@ -104,7 +104,6 @@ ms.locfileid: "55920575"
 |`_Interlocked_`|変数に注釈を付けます、等価`_Guarded_by_(_Global_interlock_)`します。|
 |`_Interlocked_operand_`|注釈付きの関数パラメーターは、さまざまな Interlocked 関数の 1 つのターゲットのオペランドです。  これらのオペランドは、特定の追加プロパティを持つ必要があります。|
 |`_Write_guarded_by_(expr)`|変数に注釈を付けますするたびに、変数を変更、ロックのロック オブジェクトによって指定される数を示します`expr`は少なくとも 1 つです。|
-
 
 ## <a name="smart-lock-and-raii-annotations"></a>Smart Lock と RAII 注釈
  スマート ロックは通常ネイティブ ロックをラップし、その有効期間を管理します。 次の表に、スマート ロックと RAII コード対応のパターンで使用できる注釈`move`セマンティクスです。

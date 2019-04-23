@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29e0fb7a5fe9cfa107bdbc4ced90cbea2967b77a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1286af8222703028d5a8a1bd2dbb0d990ca7e30c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041094"
 ---
 # <a name="hit-a-breakpoint"></a>ブレークポイントに到達する
 次のセクションでは、デバッグ エンジン (DE) を実行している、またはステップ実行中にブレークポイントに達すると、プロセスが説明します。
 
 ## <a name="troubleshoot-a-hit-breakpoint"></a>ブレークポイントをヒットのトラブルシューティングします。
 
-1.  DE 送信、 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)インターフェイスとして、 **EVENT_SYNC_STOP**します。
+1. DE 送信、 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)インターフェイスとして、 **EVENT_SYNC_STOP**します。
 
-2.  セッション デバッグ マネージャー (SDM) を呼び出す[IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)ヒットしたブレークポイントを取得します。
+2. セッション デバッグ マネージャー (SDM) を呼び出す[IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)ヒットしたブレークポイントを取得します。
 
 ## <a name="see-also"></a>関連項目
 - [デバッガー イベントを呼び出す](../../extensibility/debugger/calling-debugger-events.md)

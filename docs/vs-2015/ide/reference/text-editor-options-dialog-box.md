@@ -1,5 +1,5 @@
 ---
-title: '[テキスト エディター]([オプション] ダイアログ ボックス) | Microsoft Docs'
+title: '[テキスト エディター] ([オプション] ダイアログ ボックス) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -21,30 +21,29 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e81a2168516974fef40dad5cf46b3aff77fc54a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788100"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649070"
 ---
 # <a name="text-editor-options-dialog-box"></a>[テキスト エディター]\([オプション] ダイアログ ボックス)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **[オプション]** ダイアログ ボックスのエディター オプションには、エディターの表示と動作をカスタマイズするための方法が用意されています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [方法 : エディターで使用するフォントのフォント フェイス、サイズ、色を変更する](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
+ [方法: エディターのフォントと色を変更する](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  エディターのフォントおよび色を変更する方法について説明します。  
   
- [方法 : エディターのワード ラップを管理する](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
+ [方法: エディターのワード ラップを管理する](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
  折り返しオプションについて説明します。  
   
- [方法 : エディターで行番号を表示する](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
+ [方法: エディターで行番号を表示する](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
  行番号をオンにする方法について説明します。  
   
- [方法 : エディターで URL をリンクとして表示する](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
+ [方法: エディターで URL をリンクとして表示する](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
  リンクとして表示されるように URL を書式設定する方法について説明します。  
   
  [言語固有のエディター オプションの設定](../../ide/reference/setting-language-specific-editor-options.md)  

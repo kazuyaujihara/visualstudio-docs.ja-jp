@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 9e368a318b2f6c552ce815c839e73f0a18ea5c9b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323387"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648803"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>方法: ソース管理プラグインのインストールします。
 ソース管理プラグインを作成するには、3 つの手順が含まれます。
@@ -62,7 +62,6 @@ ms.locfileid: "58323387"
    | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio | 1 |
    | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager | 1 |
 
-
 3. サブキーを追加**SourceCodeControlProvider**下で、 **HKEY_LOCAL_MACHINE**キー、**ソフトウェア**サブキー。
 
     このサブキーのレジストリ エントリの下**ProviderRegKey**手順 1. でレジストリに配置したサブキーを表す文字列に設定されます。 パターンは、 **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *ソフトウェア\\< 会社名\>\\< 製品名\>*.
@@ -80,7 +79,7 @@ ms.locfileid: "58323387"
 
     このエントリの名前が (同じ SCCServerName エントリに指定された値)、プロバイダーのユーザーが判読できる名前と値が、もう一度、手順 1. で作成されたサブキー。 パターンは、 **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< 表示名\>** = *ソフトウェア\\< 会社名前\>\\< 製品名\>* します。
 
-    例:
+    例えば:
 
    |レジストリ エントリの例|サンプル値|
    |---------------------------|------------------|

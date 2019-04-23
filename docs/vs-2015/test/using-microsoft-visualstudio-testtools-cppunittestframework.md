@@ -1,4 +1,4 @@
-﻿---
+---
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework の使用 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -8,12 +8,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4315e4008c3a4f14e8d9124da5d7ff83c8275a65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 02b33bfbb0e7de3007de9e36691fa1524f69b21b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796929"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117799"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,18 +24,18 @@ ms.locfileid: "54796929"
   
  lib ファイルは _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib** フォルダーにあります。  
   
-##  <a name="BKMK_In_this_topic"></a> このトピックの内容  
+## <a name="BKMK_In_this_topic"></a> このトピックの内容  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
 - [テスト クラスとメソッドを作成する](#BKMK_Create_test_classes_and_methods)  
   
 - [初期化とクリーンアップ](#BKMK_Initialize_and_cleanup)  
   
-  -   [テスト メソッド](#BKMK_Test_methods)  
+  - [テスト メソッド](#BKMK_Test_methods)  
   
-  -   [テスト クラス](#BKMK_Test_classes)  
+  - [テスト クラス](#BKMK_Test_classes)  
   
-  -   [テスト モジュール](#BKMK_Test_modules)  
+  - [テスト モジュール](#BKMK_Test_modules)  
   
 - [テスト属性を作成する](#BKMK_Create_test_attributes)  
   
@@ -51,37 +51,37 @@ ms.locfileid: "54796929"
   
   - [一般的なアサート](#BKMK_General_Asserts)  
   
-    -   [等しい](#BKMK_General_Are_Equal)  
+    - [等しい](#BKMK_General_Are_Equal)  
   
-    -   [等しくない](#BKMK_General_Are_Not_Equal)  
+    - [等しくない](#BKMK_General_Are_Not_Equal)  
   
-    -   [同じである](#BKMK_General_Are_Same)  
+    - [同じである](#BKMK_General_Are_Same)  
   
-    -   [同じではない](#BKMK_General_Are_Not_Same)  
+    - [同じではない](#BKMK_General_Are_Not_Same)  
   
-    -   [Null である](#BKMK_General_Is_Null)  
+    - [Null である](#BKMK_General_Is_Null)  
   
-    -   [Null ではない](#BKMK_General_Is_Not_Null)  
+    - [Null ではない](#BKMK_General_Is_Not_Null)  
   
-    -   [True である](#BKMK_General_Is_True)  
+    - [True である](#BKMK_General_Is_True)  
   
-    -   [False である](#BKMK_General_Is_False)  
+    - [False である](#BKMK_General_Is_False)  
   
-    -   [失敗](#BKMK_General_Fail)  
+    - [失敗](#BKMK_General_Fail)  
   
   - [Windows ランタイム アサート](#BKMK_WinRT_Asserts)  
   
-    -   [等しい](#BKMK_WinRT_Are_Equal)  
+    - [等しい](#BKMK_WinRT_Are_Equal)  
   
-    -   [同じである](#BKMK_WinRT_Are_Same)  
+    - [同じである](#BKMK_WinRT_Are_Same)  
   
-    -   [等しくない](#BKMK_WinRT_Are_Not_Equal)  
+    - [等しくない](#BKMK_WinRT_Are_Not_Equal)  
   
-    -   [同じではない](#BKMK_WinRT_Are_Not_Same)  
+    - [同じではない](#BKMK_WinRT_Are_Not_Same)  
   
-    -   [Null である](#BKMK_WinRT_Is_Null)  
+    - [Null である](#BKMK_WinRT_Is_Null)  
   
-    -   [Null ではない](#BKMK_WinRT_Is_Not_Null)  
+    - [Null ではない](#BKMK_WinRT_Is_Not_Null)  
   
   - [例外アサート](#BKMK_Exception_Asserts)  
   
@@ -93,9 +93,9 @@ ms.locfileid: "54796929"
   
     - [メッセージの書き込み](#BKMK_Write_Message)  
   
-##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
+## <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   
-###  <a name="BKMK_Create_test_classes_and_methods"></a> テスト クラスとメソッドを作成する  
+### <a name="BKMK_Create_test_classes_and_methods"></a> テスト クラスとメソッドを作成する  
   
 ```cpp  
 TEST_CLASS(className)  
@@ -113,9 +113,9 @@ TEST_METHOD(methodName)
   
  *methodName* をテスト メソッドとして定義します。 `TEST_METHOD` はメソッドのクラスのスコープ内で宣言する必要があります。  
   
-###  <a name="BKMK_Initialize_and_cleanup"></a> 初期化とクリーンアップ  
+### <a name="BKMK_Initialize_and_cleanup"></a> 初期化とクリーンアップ  
   
-####  <a name="BKMK_Test_methods"></a> テスト メソッド  
+#### <a name="BKMK_Test_methods"></a> テスト メソッド  
   
 ```cpp  
 TEST_METHOD_INITIALIZE(methodName)   
@@ -137,7 +137,7 @@ TEST_METHOD_CLEANUP(methodName)
   
  *methodName* を各テスト メソッドの実行後に実行するメソッドとして定義します。 `TEST_METHOD_CLEANUP` はテスト クラスで一度だけ定義でき、テスト クラスのスコープ内で定義する必要があります。  
   
-####  <a name="BKMK_Test_classes"></a> テスト クラス  
+#### <a name="BKMK_Test_classes"></a> テスト クラス  
   
 ```cpp  
 TEST_CLASS_INITIALIZE(methodName)   
@@ -159,7 +159,7 @@ TEST_CLASS_CLEANUP(methodName)
   
  *methodName* を各テスト クラスの作成後に実行するメソッドとして定義します。 `TEST_CLASS_CLEANUP` はテスト クラスで一度だけ定義でき、テスト クラスのスコープ内で定義する必要があります。  
   
-####  <a name="BKMK_Test_modules"></a> テスト モジュール  
+#### <a name="BKMK_Test_modules"></a> テスト モジュール  
   
 ```cpp  
 TEST_MODULE_INITIALIZE(methodName)  
@@ -176,9 +176,9 @@ TEST_MODULE_CLEANUP(methodName)
   
  モジュールがアンロードされるときに実行するメソッド *methodName* を定義します。 `TEST_MODULE_CLEANUP` はテスト モジュールで一度だけ定義でき、名前空間スコープで宣言する必要があります。  
   
-###  <a name="BKMK_Create_test_attributes"></a> テスト属性を作成する  
+### <a name="BKMK_Create_test_attributes"></a> テスト属性を作成する  
   
-####  <a name="BKMK_Test_method_attributes"></a> テスト メソッドの属性  
+#### <a name="BKMK_Test_method_attributes"></a> テスト メソッドの属性  
   
 ```cpp  
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)   
@@ -191,7 +191,7 @@ END_TEST_METHOD_ATTRIBUTE()
   
  `TEST_METHOD_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。  
   
-####  <a name="BKMK_Test_class_attributes"></a> テスト クラス属性  
+#### <a name="BKMK_Test_class_attributes"></a> テスト クラス属性  
   
 ```cpp  
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)   
@@ -204,7 +204,7 @@ END_TEST_CLASS_ATTRIBUTE()
   
  `TEST_CLASS_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。  
   
-####  <a name="BKMK_Test_module_attributes"></a> テスト モジュール属性  
+#### <a name="BKMK_Test_module_attributes"></a> テスト モジュール属性  
   
 ```cpp  
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)   
@@ -217,7 +217,7 @@ END_TEST_MODULE_ATTRIBUTE()
   
  `TEST_MODULE_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。  
   
-####  <a name="BKMK_Pre_defined_attributes"></a> 定義済みの属性  
+#### <a name="BKMK_Pre_defined_attributes"></a> 定義済みの属性  
  これらの定義済み属性マクロは、前に説明したマクロ `TEST_METHOD_ATTRIBUTE`、`TEST_CLASS_ATTRIBUTE`、または `TEST_MODULE_ATTRIBUTE` と置き換えることができます。  
   
 ```cpp  
@@ -250,11 +250,11 @@ TEST_IGNORE()
   
  名前 `Ignore` と属性値 `true` を持つ属性を定義します。  
   
-##  <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h  
+## <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h  
   
-###  <a name="BKMK_General_Asserts"></a> 一般的なアサート  
+### <a name="BKMK_General_Asserts"></a> 一般的なアサート  
   
-####  <a name="BKMK_General_Are_Equal"></a> 等しい  
+#### <a name="BKMK_General_Are_Equal"></a> 等しい  
  2 つのオブジェクトが等しいことを確認します  
   
 ```cpp  
@@ -310,7 +310,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Not_Equal"></a> 等しくない  
+#### <a name="BKMK_General_Are_Not_Equal"></a> 等しくない  
  2 つの倍精度小数点数が等しくないことを確認します  
   
 ```cpp  
@@ -366,7 +366,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Same"></a> 同じである  
+#### <a name="BKMK_General_Are_Same"></a> 同じである  
  2 つの参照が同じオブジェクト インスタンス (ID) を参照していることを確認します。  
   
 ```cpp  
@@ -378,7 +378,7 @@ static void AreSame(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Not_Same"></a> 同じではない  
+#### <a name="BKMK_General_Are_Not_Same"></a> 同じではない  
  2 つの参照が同じオブジェクト インスタンス (ID) を参照していないことを確認します。  
   
 ```cpp  
@@ -390,7 +390,7 @@ static void AreNotSame (
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_Null"></a> Null である  
+#### <a name="BKMK_General_Is_Null"></a> Null である  
  ポインターが NULL であることを確認します。  
   
 ```cpp  
@@ -401,7 +401,7 @@ static void IsNull(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_Not_Null"></a> Null ではない  
+#### <a name="BKMK_General_Is_Not_Null"></a> Null ではない  
  ポインターが NULL ではないことを確認します  
   
 ```cpp  
@@ -412,7 +412,7 @@ static void IsNotNull(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_True"></a> True である  
+#### <a name="BKMK_General_Is_True"></a> True である  
  条件が true であることを確認します  
   
 ```cpp  
@@ -422,7 +422,7 @@ static void IsTrue(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_False"></a> False である  
+#### <a name="BKMK_General_Is_False"></a> False である  
  条件が false であることを確認します  
   
 ```cpp  
@@ -432,7 +432,7 @@ static void IsFalse(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Fail"></a> 失敗  
+#### <a name="BKMK_General_Fail"></a> 失敗  
  テスト ケースの結果が失敗するよう強制します  
   
 ```cpp  
@@ -441,9 +441,9 @@ static void Fail(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-###  <a name="BKMK_WinRT_Asserts"></a> Windows ランタイム アサート  
+### <a name="BKMK_WinRT_Asserts"></a> Windows ランタイム アサート  
   
-####  <a name="BKMK_WinRT_Are_Equal"></a> 等しい  
+#### <a name="BKMK_WinRT_Are_Equal"></a> 等しい  
  2 つの Windows ランタイム ポインターが等しいことを確認します。  
   
 ```  
@@ -466,7 +466,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Same"></a> 同じである  
+#### <a name="BKMK_WinRT_Are_Same"></a> 同じである  
  2 つの Windows ランタイム参照が同じオブジェクトを参照していることを確認します。  
   
 ```  
@@ -478,7 +478,7 @@ static void AreSame(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Not_Equal"></a> 等しくない  
+#### <a name="BKMK_WinRT_Are_Not_Equal"></a> 等しくない  
  2 つの Windows ランタイム ポインターが等しくないことを確認します。  
   
 ```  
@@ -501,7 +501,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Not_Same"></a> 同じではない  
+#### <a name="BKMK_WinRT_Are_Not_Same"></a> 同じではない  
  2 つの Windows ランタイム参照が同じオブジェクトを参照していないことを確認します。  
   
 ```  
@@ -513,7 +513,7 @@ static void AreNotSame(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Is_Null"></a> Null である  
+#### <a name="BKMK_WinRT_Is_Null"></a> Null である  
  Windows ランタイム ポインターが nullptr であることを確認します。  
   
 ```  
@@ -524,7 +524,7 @@ static void IsNull(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Is_Not_Null"></a> Null ではない  
+#### <a name="BKMK_WinRT_Is_Not_Null"></a> Null ではない  
  Windows ランタイム ポインターが nullptr ではないことを確認します。  
   
 ```  
@@ -535,9 +535,9 @@ static void IsNotNull(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-###  <a name="BKMK_Exception_Asserts"></a> 例外アサート  
+### <a name="BKMK_Exception_Asserts"></a> 例外アサート  
   
-####  <a name="BKMK_Expect_Exception"></a> 例外を想定する  
+#### <a name="BKMK_Expect_Exception"></a> 例外を想定する  
  関数が例外を発生させることを確認します。  
   
 ```  
@@ -558,16 +558,16 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-##  <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h  
+## <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h  
   
-###  <a name="BKMK_Logger"></a> Logger  
+### <a name="BKMK_Logger"></a> Logger  
  ロガー クラスには書き込みを行うための静的メソッドが含まれます  
   
 ```  
 class Logger  
 ```  
   
-###  <a name="BKMK_Write_Message"></a> メッセージの書き込み  
+### <a name="BKMK_Write_Message"></a> メッセージの書き込み  
   
 ```  
 static void   
@@ -650,7 +650,7 @@ public:
 };  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [コードの単体テスト](../test/unit-test-your-code.md)   
  [テスト エクスプローラーを使用したネイティブ コードの単体テスト](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)   
  [既存の C++ アプリケーションへの単体テストの追加](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)

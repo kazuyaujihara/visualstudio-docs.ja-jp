@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25503430fd8924100a193ef5d8517231578800e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fc6c951f1da3fc37fe8e1189a3ec8de9609a48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069598"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>方法: ASP.NET ベースのワークフローをデバッグする (レガシ)
 このトピックでは、従来の [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]で、[!INCLUDE[wf](../includes/wf-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ベースの [!INCLUDE[wfd1](../includes/wfd1-md.md)] アプリケーションをデバッグする方法について説明します。  
@@ -28,25 +28,25 @@ ms.locfileid: "58972912"
   
 ### <a name="to-debug-an-aspnet-based-workflow"></a>ASP.NET ベースのワークフローをデバッグするには  
   
-1.  設定して、ASP.NET アプリケーションのデバッグを有効にする**デバッグ = true** web.config ファイルにします。  
+1. 設定して、ASP.NET アプリケーションのデバッグを有効にする**デバッグ = true** web.config ファイルにします。  
   
-2.  ワークフロー ライブラリをスタートアップ プロジェクトとして設定し、ワークフローのブレークポイントを設定します。  
+2. ワークフロー ライブラリをスタートアップ プロジェクトとして設定し、ワークフローのブレークポイントを設定します。  
   
-3.  ワークフロー プロジェクトのプロパティの既定の Web ページの URL を入力**デバッグ**オプション**外部 URL にブラウザーを開始**テキスト ボックス。  
+3. ワークフロー プロジェクトのプロパティの既定の Web ページの URL を入力**デバッグ**オプション**外部 URL にブラウザーを開始**テキスト ボックス。  
   
-4.  選択**プロセスにアタッチ**上、**デバッグ**メニュー。  
+4. 選択**プロセスにアタッチ**上、**デバッグ**メニュー。  
   
-5.  アタッチするプロセスの選択、**選択可能なプロセス**一覧。  
+5. アタッチするプロセスの選択、**選択可能なプロセス**一覧。  
   
      ワークフローのホストとなる w3wp.exe、webdev.webserver、または aspnet_wp プロセスにアタッチします。  
   
-6.  クリックして**選択**横に、 **Attach To**テキスト ボックス。  
+6. クリックして**選択**横に、 **Attach To**テキスト ボックス。  
   
      **コードの種類の選択** ダイアログ ボックスが表示されます。  
   
-7.  選択**コードの種類をデバッグ**選択**ワークフロー**します。  
+7. 選択**コードの種類をデバッグ**選択**ワークフロー**します。  
   
-8.  **[OK]** をクリックします。  
+8. **[OK]** をクリックします。  
   
 9. **[アタッチ]** をクリックします。  
   

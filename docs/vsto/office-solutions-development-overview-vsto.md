@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c9c834d3fbb49775d9462ac5e6ce3d27127f793
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628781"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061958"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office ソリューション開発の概要 (VSTO)
   ソリューションのフロント エンドとして Microsoft Office を使用すると、Word のワープロ機能、Excel のデータの分析機能、および Outlook の電子メール管理機能などの使い慣れた Microsoft Office のユーザー インターフェイスとツールを活用することができます。 Office アプリケーションのカスタマイズおよびビジネス プロセスに必要な特定の機能の追加を行うために、Visual Studio でソリューションを開発することができます。 たとえば、Word を既存のパーツからコントラクトを組み合わせてコントラクト ジェネレーターにすることができます。既存のパーツは編集可能である場合も編集可能でない場合もあります。 Excel では、さまざまなプロジェクト用にカスタマイズされた自動予算のワークシートを作成できます。 ユーザーはオフラインで Office ソリューションを取得することもできます。これは、Web ベースのアーキテクチャを使用する場合に、複雑なソリューションをより実用的なものにします。
@@ -43,11 +43,11 @@ ms.locfileid: "56628781"
 
  カスタマイズの詳細については、次のトピックを参照してください。
 
--   [Excel をドキュメント レベルでカスタマイズするプログラミングを始める](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
+- [Excel をドキュメント レベルでカスタマイズするプログラミングを始める](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 
--   [Word をドキュメント レベルでカスタマイズするプログラミングを始める](../vsto/getting-started-programming-document-level-customizations-for-word.md)
+- [Word をドキュメント レベルでカスタマイズするプログラミングを始める](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 
--   [ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)
+- [ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)
 
 ### <a name="vsto-add-ins"></a>VSTO アドイン
  VSTO アドインは、Microsoft Office アプリケーションに関連付けられているアセンブリで構成されます。 アプリケーションが既に実行されている場合に VSTO アドインを読み込むこともできますが、通常、VSTO アドインは関連付けられたアプリケーションが開始されたときに実行されます。 作成した VSTO アドインの機能は、どのドキュメントが開いているかにかかわらず、アプリケーション自体に対して使用できます。
@@ -56,9 +56,9 @@ ms.locfileid: "56628781"
 
  VSTO アドインの詳細については、次のトピックを参照してください。
 
--   [VSTO アドインのプログラミングを始める](../vsto/getting-started-programming-vsto-add-ins.md)
+- [VSTO アドインのプログラミングを始める](../vsto/getting-started-programming-vsto-add-ins.md)
 
--   [VSTO アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)
+- [VSTO アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)
 
 ## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>プライマリ相互運用機能アセンブリを使用した Office アプリケーションの自動化
  アプリケーションのオブジェクト モデルにアクセスするコードを記述して、Office アプリケーションの機能をソリューションにプログラムによって組み込むことができます。 オブジェクト モデルは、さまざまなプロパティとメソッドを介して機能を公開するクラスの配置です。 各 Office アプリケーションのオブジェクト モデルは異なります。
@@ -69,9 +69,9 @@ ms.locfileid: "56628781"
 
  VSTO Office ソリューションでの PIA の使用に関する詳細については、次のトピックを参照してください。
 
--   [Office ソリューションでのコードの記述](../vsto/writing-code-in-office-solutions.md)
+- [Office ソリューションでのコードの記述](../vsto/writing-code-in-office-solutions.md)
 
--   [Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)
+- [Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)
 
 ## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>エンドユーザーのコンピューターでの Microsoft VSTO Office ソリューションの実行
  VSTO Office ソリューションを作成する場合、配置要件が開発方法に与える可能性のある影響について考慮します。

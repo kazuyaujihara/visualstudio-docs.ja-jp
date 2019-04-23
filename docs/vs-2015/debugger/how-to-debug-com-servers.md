@@ -23,12 +23,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975922"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088315"
 ---
 # <a name="how-to-debug-com-servers"></a>方法: COM サーバーをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ COM サーバー アプリケーションのデバッグには固有の問題が
   
 ### <a name="to-debug-a-server-application-without-container-information"></a>コンテナー情報のないサーバー アプリケーションをデバッグするには  
   
-1.  サーバーのデバッグを通常のアプリケーションと同様に開始します。  
+1. サーバーのデバッグを通常のアプリケーションと同様に開始します。  
   
-2.  必要な場所にブレークポイントを設定します。  
+2. 必要な場所にブレークポイントを設定します。  
   
-3.  コンテナー アプリケーションを起動します。  
+3. コンテナー アプリケーションを起動します。  
   
 ## <a name="see-also"></a>関連項目  
  [COM および ActiveX のデバッグ](../debugger/com-and-activex-debugging.md)   

@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a260f046c33b2afdcf4df0b456069cf0d518b865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52950f138354a72f7c0e781d761aa466760e3ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054795"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233:操作はオーバーフローできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58973542"
 |-|-|
 |TypeName|OperationsShouldNotOverflow|
 |CheckId|CA2233|
-|カテゴリ|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
@@ -77,7 +77,7 @@ Public Shared Sub Main()
 End Sub
 ```
 
-### <a name="output"></a>Output
+### <a name="output"></a>出力
 
 ```
 2147483647
@@ -107,11 +107,11 @@ End Sub
 
  **C# で算術演算のオーバーフローおよびアンダー フローがチェックを有効にするには**
 
-1.  **ソリューション エクスプ ローラー**プロジェクトを右クリックし、選択、**プロパティ**します。
+1. **ソリューション エクスプ ローラー**プロジェクトを右クリックし、選択、**プロパティ**します。
 
-2.  **[ビルド]** タブを選択してから **[詳細設定]** をクリックします。
+2. **[ビルド]** タブを選択してから **[詳細設定]** をクリックします。
 
-3.  選択**算術オーバーフローおよびアンダー フローの確認** をクリック**OK**。
+3. 選択**算術オーバーフローおよびアンダー フローの確認** をクリック**OK**。
 
 ## <a name="see-also"></a>関連項目
  <xref:System.OverflowException?displayProperty=fullName> [C# 演算子](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked と Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

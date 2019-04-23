@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 1a0b90e5d863d41c46057e38c5f87bdad2481581
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790291"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088029"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio で UWP アプリを更新します。
 
@@ -32,34 +32,34 @@ ms.locfileid: "58790291"
 
  更新では、アプリの状態は保持されません。また、アプリに対する次の変更は反映されません。
 
--   パッケージ マニフェストに指定されたイメージの変更を含むパッケージ マニフェスト ファイルの変更。
+- パッケージ マニフェストに指定されたイメージの変更を含むパッケージ マニフェスト ファイルの変更。
 
--   SDK 参照の追加や削除などの参照の変更、または Windows ランタイム コンポーネント (.winmd ファイル) の変更。
+- SDK 参照の追加や削除などの参照の変更、または Windows ランタイム コンポーネント (.winmd ファイル) の変更。
 
--   .resjson ファイル内の文字列の変更などのリソースの変更。
+- .resjson ファイル内の文字列の変更などのリソースの変更。
 
--   パス名の変更、新しいプロジェクト ファイル、または削除ファイルが発生するプロジェクト ファイルの変更。
+- パス名の変更、新しいプロジェクト ファイル、または削除ファイルが発生するプロジェクト ファイルの変更。
 
--   選択したデバッグ デバイスの変更などのプロジェクトおよび項目プロパティの変更、またはファイルのパッケージ操作の変更 ([プロパティ] ウィンドウ内)。
+- 選択したデバッグ デバイスの変更などのプロジェクトおよび項目プロパティの変更、またはファイルのパッケージ操作の変更 ([プロパティ] ウィンドウ内)。
 
 > [!IMPORTANT]
 >  参照やパッケージ マニフェストの変更など、上記の項目の変更を行った場合、HTML、CSS、および JavaScript のソース ファイルを更新するには、デバッガーを停止して再起動する必要があります。
 
 ### <a name="to-refresh-an-app"></a>アプリを更新するには
 
-1.  UWP プロジェクトを Visual Studio で開いて、次のように選択します。**ローカル マシン**デバッグ ターゲットとして。
+1. UWP プロジェクトを Visual Studio で開いて、次のように選択します。**ローカル マシン**デバッグ ターゲットとして。
 
      ![デバッグ ターゲット リスト](../debugger/media/js_select_target.png "JS_Select_Target")
 
-3.  F5 キーを押して、アプリをデバッグ モードで実行します。
+3. F5 キーを押して、アプリをデバッグ モードで実行します。
 
-4.  Visual Studio に切り替えます 
+4. Visual Studio に切り替えます 
 
-5.  UWP アプリのホーム ページで、HTML の一部を編集します。
+5. UWP アプリのホーム ページで、HTML の一部を編集します。
 
-7.  をクリックして、**更新の Windows アプリ**のように、ボタン:![更新の Windows アプリのボタン](../debugger/media/js_refresh.png "JS_Refresh")します。 (または F4 キーを押します)。
+7. をクリックして、**更新の Windows アプリ**のように、ボタン。![Windows アプリのボタンを更新](../debugger/media/js_refresh.png "JS_Refresh")します。 (または F4 キーを押します)。
 
-8.  アプリに切り替えます。 アプリが再度読み込まれ、更新された HTML は、アプリを表示するために使用します。
+8. アプリに切り替えます。 アプリが再度読み込まれ、更新された HTML は、アプリを表示するために使用します。
 
 ## <a name="see-also"></a>関連項目
-- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)
+- [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)

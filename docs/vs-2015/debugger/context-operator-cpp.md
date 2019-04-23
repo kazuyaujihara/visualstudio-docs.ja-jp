@@ -23,22 +23,22 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3e54852ef9e6718f2f027c8aca608f11200b1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6351dd9db7e6f8f29bdd15f376f84511c64bfe7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116616"
 ---
 # <a name="context-operator-c"></a>context 演算子 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 C++ のコンテキスト演算子を使用して、ブレークポイントの場所、変数名、または式を修飾できます。 コンテキスト演算子は、ローカル名で隠されていてほかにアクセス方法がない外部スコープから名前を指定するために利用できます。  
   
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 構文  
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 構文  
  コンテキストを指定する 2 つの方法があります。  
   
-1.  {,,[*module*] } *expression*  
+1. {,,[*module*] } *expression*  
   
      中かっこ内には、2 個のコンマとモジュール (実行可能ファイルまたは DLL) 名か完全パスが必要です。  
   
@@ -48,7 +48,7 @@ C++ のコンテキスト演算子を使用して、ブレークポイントの�
     {,,EXAMPLE.dll}SomeFunction  
     ```  
   
-2.  *module*!*expression*  
+2. *module*!*expression*  
   
     ```cpp  
     EXAMPLE.dll!SomeFunction  
@@ -66,12 +66,12 @@ C++ のコンテキスト演算子を使用して、ブレークポイントの�
   
   式エバリュエーターが式に含まれる記号を見つけると、次の順序で記号を検索します。  
   
-1.  構文のスコープの外部。現在のブロック (角かっこで囲まれた一連のステートメント) から、外側のブロックに進みます。 現在のブロックは、現在の場所 (命令ポインター アドレス) を含むコードです。  
+1. 構文のスコープの外部。現在のブロック (角かっこで囲まれた一連のステートメント) から、外側のブロックに進みます。 現在のブロックは、現在の場所 (命令ポインター アドレス) を含むコードです。  
   
-2.  関数スコープ。 現在の関数です。  
+2. 関数スコープ。 現在の関数です。  
   
-3.  クラス スコープ。現在の場所が C++ メンバー関数内部の場合です。 クラス スコープにはすべての基底クラスが含まれます。 式エバリュエーターは、通常の優先順位規則を使用します。  
+3. クラス スコープ。現在の場所が C++ メンバー関数内部の場合です。 クラス スコープにはすべての基底クラスが含まれます。 式エバリュエーターは、通常の優先順位規則を使用します。  
   
-4.  現在のモジュール内のグローバル シンボル。  
+4. 現在のモジュール内のグローバル シンボル。  
   
-5.  現在のプログラム内のパブリック シンボル。
+5. 現在のプログラム内のパブリック シンボル。

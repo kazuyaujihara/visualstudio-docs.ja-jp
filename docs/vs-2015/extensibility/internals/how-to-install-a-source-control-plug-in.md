@@ -11,23 +11,23 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c9c93c83a6385ad45b3f402867b7f7e734447f98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe03499200d3528a1aed286550191fd9dfcc1451
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974689"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039843"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>方法: ソース管理プラグインのインストール
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 ソース管理プラグインを作成するには、3 つの手順が含まれます。  
   
-1.  このドキュメントのソース管理プラグイン API リファレンスのセクションで定義された関数では、DLL を作成します。  
+1. このドキュメントのソース管理プラグイン API リファレンスのセクションで定義された関数では、DLL を作成します。  
   
-2.  ソース管理プラグイン API 定義の関数を実装します。 ときに[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]呼び出し、インターフェイスとダイアログ ボックスから使用できるように、プラグイン。  
+2. ソース管理プラグイン API 定義の関数を実装します。 ときに[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]呼び出し、インターフェイスとダイアログ ボックスから使用できるように、プラグイン。  
   
-3.  DLL を登録するには、適切なレジストリ エントリを作成します。  
+3. DLL を登録するには、適切なレジストリ エントリを作成します。  
   
 ## <a name="integration-with-visual-studio"></a>Visual Studio との統合  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ソース管理プラグイン API に準拠するソース管理プラグインをサポートしています。  
@@ -37,7 +37,7 @@ ms.locfileid: "58974689"
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>ソース管理プラグインの DLL を登録するには  
   
-1.  ソフトウェアのサブキー、製品名のサブキーを続けて、会社名のサブキーを指定するには、HKEY_LOCAL_MACHINE キーの下の 2 つのエントリを追加します。 パターンは、hkey_local_machine \software\\ *[会社名]*\\ *[製品名]*\\ *[entry]* = 値。 SCCServerName と SCCServerPath、2 つのエントリが常に呼び出されます。 それぞれは、通常の文字列です。  
+1. ソフトウェアのサブキー、製品名のサブキーを続けて、会社名のサブキーを指定するには、HKEY_LOCAL_MACHINE キーの下の 2 つのエントリを追加します。 パターンは、hkey_local_machine \software\\ *[会社名]*\\ *[製品名]*\\ *[entry]* = 値。 SCCServerName と SCCServerPath、2 つのエントリが常に呼び出されます。 それぞれは、通常の文字列です。  
   
      たとえば、会社名が Microsoft と、ソース管理製品である場合の名前は SourceSafe、HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe するレジストリのパスとなります。 このサブキー、SCCServerName、最初のエントリは、製品の名前を付け、ユーザーが判読できる文字列です。 2 番目のエントリでは、SCCServerPath は、ソースへの完全パスに接続する IDE プラグインの DLL を制御します。 レジストリ エントリの例を次に示します。  
   
@@ -49,13 +49,13 @@ ms.locfileid: "58974689"
     > [!NOTE]
     >  SCCServerPath は、SourceSafe プラグインへの完全パスです。 ソース管理プラグインでは、同じレジストリ エントリのパスが異なる会社と製品の名前を使用します。  
   
-2.  ソース管理プラグインの動作を変更するのには、次のオプションのレジストリ エントリを使用できます。 これらのエントリは、SccServerName と SccServerPath として同じサブキーに移動します。  
+2. ソース管理プラグインの動作を変更するのには、次のオプションのレジストリ エントリを使用できます。 これらのエントリは、SccServerName と SccServerPath として同じサブキーに移動します。  
   
-    -   コントロールのプラグ-でのプラグインの選択リストに表示される、ソースを設定したくない場合、HideInVisualStudioregistry エントリを使用できます[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 ソース管理プラグインへの自動切り替えは、このエントリによっても影響します。 このエントリの用途の 1 つは、ソース管理プラグインを置換するソース管理パッケージを指定するが、ソース管理プラグインのソース管理パッケージを使用してから移行するユーザーを容易にできるようにするかどうかは。 ソース管理パッケージがインストールされている場合は、プラグインを非表示にこのレジストリ エントリを設定します。  
+    - コントロールのプラグ-でのプラグインの選択リストに表示される、ソースを設定したくない場合、HideInVisualStudioregistry エントリを使用できます[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 ソース管理プラグインへの自動切り替えは、このエントリによっても影響します。 このエントリの用途の 1 つは、ソース管理プラグインを置換するソース管理パッケージを指定するが、ソース管理プラグインのソース管理パッケージを使用してから移行するユーザーを容易にできるようにするかどうかは。 ソース管理パッケージがインストールされている場合は、プラグインを非表示にこのレジストリ エントリを設定します。  
   
          HideInVisualStudio は、DWORD 値であり、プラグインを非表示にする 1 またはプラグインを表示するには 0 に設定されています。 レジストリ エントリが表示されない場合、既定の動作は、プラグインを表示するのには。  
   
-    -   DisableSccManager のレジストリ エントリを無効にするか、または非表示に使用できる、**起動\<ソース管理サーバー >** 通常下に表示されるメニュー オプション、**ファイル** ->  **ソース管理** をクリックします。 このメニューを選択するオプションを呼び出し、 [SccRunScc](../../extensibility/sccrunscc-function.md)関数。 外部プログラムのソース管理プラグインでは対応していないとする可能性がありますを無効または非表示にもそのため、**起動**メニュー オプション。  
+    - DisableSccManager のレジストリ エントリを無効にするか、または非表示に使用できる、**起動\<ソース管理サーバー >** 通常下に表示されるメニュー オプション、**ファイル** ->  **ソース管理** をクリックします。 このメニューを選択するオプションを呼び出し、 [SccRunScc](../../extensibility/sccrunscc-function.md)関数。 外部プログラムのソース管理プラグインでは対応していないとする可能性がありますを無効または非表示にもそのため、**起動**メニュー オプション。  
   
          DisableSccManager は DWORD 値が 0 に設定を有効にする、**起動\<ソース管理サーバー >** メニュー オプションを 1 に設定 メニュー オプションを無効にして、メニュー オプションを非表示には 2 に設定します。 このレジストリ エントリが表示されない場合、既定の動作では、メニュー オプションを説明します。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "58974689"
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio|1|  
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager|1|  
   
-3.  サブキー、SourceCodeControlProvider、ソフトウェアのサブキー HKEY_LOCAL_MACHINE キーの下に追加します。  
+3. サブキー、SourceCodeControlProvider、ソフトウェアのサブキー HKEY_LOCAL_MACHINE キーの下に追加します。  
   
      このサブキーは、レジストリ エントリ ProviderRegKey を手順 1. でレジストリに配置したサブキーを表す文字列に設定してされます。 パターンは、HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey ソフトウェア =\\ *[会社名]*\\ *[製品名]* します。  
   
@@ -77,11 +77,11 @@ ms.locfileid: "58974689"
     > [!NOTE]
     >  ソース管理プラグインは、同じサブキーとエントリの名前を使用してが異なる値になります。  
   
-4.  SourceCodeControlProvider サブキー InstalledSCCProviders をという名前のサブキーを作成し、そのサブキーの下の 1 つのエントリを配置します。  
+4. SourceCodeControlProvider サブキー InstalledSCCProviders をという名前のサブキーを作成し、そのサブキーの下の 1 つのエントリを配置します。  
   
      このエントリの名前が (同じ SCCServerName エントリに指定された値)、プロバイダーのユーザーが判読できる名前と値が、もう一度、手順 1. で作成されたサブキー。 パターンは、HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[表示名]* ソフトウェア =\\ *[会社名]* \\ *[製品名]* します。  
   
-     例えば:  
+     例:  
   
     |レジストリ エントリの例|サンプル値|  
     |---------------------------|------------------|  

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b34d02bcb70ede4605fedd3efbea49870a406100
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 33fe66319cda75ebdfc6fb47c9da6789cabc8e60
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064610"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>テキスト テンプレートでの Visual Studio ModelBus の使用
 
@@ -33,56 +33,56 @@ Visual Studio ModelBus 参照を含むモデルを読み取るテキスト テ�
 
 テキスト テンプレート内の ModelBus 参照を解決するには、ターゲット DSL の互換性のあるアダプターが必要です。 テキスト テンプレートが Visual Studio のドキュメント エディターから別の AppDomain で実行し、アダプターの DTE を通じてアクセスすることではなく、モデルを読み込むためにします。
 
-1.  ターゲット DSL ソリューションがあるない場合、 **ModelBusAdapter**プロジェクト、Modelbus 拡張機能のウィザードを使用して 1 つを作成します。
+1. ターゲット DSL ソリューションがあるない場合、 **ModelBusAdapter**プロジェクト、Modelbus 拡張機能のウィザードを使用して 1 つを作成します。
 
-    1.  ダウンロードして Visual Studio ModelBus 拡張機能をインストールしていない場合。 詳細については、[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)を参照してください。
+    1. ダウンロードして Visual Studio ModelBus 拡張機能をインストールしていない場合。 詳細については、[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)を参照してください。
 
-    2.  DSL 定義ファイルを開きます。 デザイン サーフェイスを右クリックし、をクリックし、 **Modelbus の有効化**します。
+    2. DSL 定義ファイルを開きます。 デザイン サーフェイスを右クリックし、をクリックし、 **Modelbus の有効化**します。
 
-    3.  ダイアログ ボックスで、次のように選択します。**この DSL を ModelBus に公開する**します。 この DSL モデルを公開して、他の Dsl への参照を使用する場合は、両方のオプションを選択できます。
+    3. ダイアログ ボックスで、次のように選択します。**この DSL を ModelBus に公開する**します。 この DSL モデルを公開して、他の Dsl への参照を使用する場合は、両方のオプションを選択できます。
 
-    4.  **[OK]** をクリックします。 新しいプロジェクト "ModelBusAdapter" が DSL ソリューションに追加されます。
+    4. **[OK]** をクリックします。 新しいプロジェクト "ModelBusAdapter" が DSL ソリューションに追加されます。
 
-    5.  クリックして**すべてのテンプレートの変換**します。
+    5. クリックして**すべてのテンプレートの変換**します。
 
-    6.  ソリューションをリビルドします。
+    6. ソリューションをリビルドします。
 
-2.  テキスト テンプレートからして、コマンドなどの他のコードから DSL にアクセスする場合は、複製、 **ModelBusAdapter**プロジェクト。
+2. テキスト テンプレートからして、コマンドなどの他のコードから DSL にアクセスする場合は、複製、 **ModelBusAdapter**プロジェクト。
 
-    1.  Windows エクスプ ローラーにコピーして貼り付けるを含むフォルダー **ModelBusAdapter.csproj**します。
+    1. Windows エクスプ ローラーにコピーして貼り付けるを含むフォルダー **ModelBusAdapter.csproj**します。
 
-    2.  プロジェクト ファイルの名前を変更 (たとえば、 **T4ModelBusAdapter.csproj**)。
+    2. プロジェクト ファイルの名前を変更 (たとえば、 **T4ModelBusAdapter.csproj**)。
 
-    3.  **ソリューション エクスプ ローラー**、ソリューション ノードを右クリックし、 をポイント**追加**、 をクリックし、**既存のプロジェクト**します。 新しいアダプター プロジェクト**T4ModelBusAdapter.csproj**します。
+    3. **ソリューション エクスプ ローラー**、ソリューション ノードを右クリックし、 をポイント**追加**、 をクリックし、**既存のプロジェクト**します。 新しいアダプター プロジェクト**T4ModelBusAdapter.csproj**します。
 
-    4.  各`*.tt`ファイル、新しいプロジェクトの名前空間を変更します。
+    4. 各`*.tt`ファイル、新しいプロジェクトの名前空間を変更します。
 
-    5.  新しいプロジェクトを右クリックして**ソリューション エクスプ ローラー**し**プロパティ**します。 プロパティ エディターで生成されるアセンブリと既定の名前空間の名前を変更します。
+    5. 新しいプロジェクトを右クリックして**ソリューション エクスプ ローラー**し**プロパティ**します。 プロパティ エディターで生成されるアセンブリと既定の名前空間の名前を変更します。
 
-    6.  DslPackage プロジェクト内には、両方のアダプターへの参照を新しいアダプター プロジェクトへの参照を追加します。
+    6. DslPackage プロジェクト内には、両方のアダプターへの参照を新しいアダプター プロジェクトへの参照を追加します。
 
-    7.  DslPackage\source.extension.tt では、新しいアダプター プロジェクトを参照する行を追加します。
+    7. DslPackage\source.extension.tt では、新しいアダプター プロジェクトを参照する行を追加します。
 
         ```
         <MefComponent>|T4ModelBusAdapter|</MefComponent>
         ```
 
-    8.  **すべてのテンプレートの変換**ソリューションをリビルドします。 ビルド エラーは発生しません。
+    8. **すべてのテンプレートの変換**ソリューションをリビルドします。 ビルド エラーは発生しません。
 
-3.  新しいアダプター プロジェクトの場合、次のアセンブリへの参照を追加します。
+3. 新しいアダプター プロジェクトの場合、次のアセンブリへの参照を追加します。
 
     - Microsoft.VisualStudio.TextTemplating.11.0
     - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-4.  で AdapterManager.tt:
+4. で AdapterManager.tt:
 
-    -   継承するように AdapterManagerBase の宣言を変更する<xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>します。
+    - 継承するように AdapterManagerBase の宣言を変更する<xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>します。
 
          `public partial class <#= dslName =>AdapterManagerBase :`
 
          `Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager { ...`
 
-    -   ファイルの最後に、近くには、クラス AdapterManager の前に HostSpecific 属性を置き換えます。 次の行を削除します。
+    - ファイルの最後に、近くには、クラス AdapterManager の前に HostSpecific 属性を置き換えます。 次の行を削除します。
 
          `[DslIntegration::HostSpecific(DslIntegrationShell::VsModelingAdapterManager.HostName)]`
 
@@ -92,19 +92,19 @@ Visual Studio ModelBus 参照を含むモデルを読み取るテキスト テ�
 
          この属性は、アダプターの modelbus コンシューマーを検索するときに使用できるアダプターのセットをフィルター処理します。
 
-5.  **すべてのテンプレートの変換**ソリューションをリビルドします。 ビルド エラーは発生しません。
+5. **すべてのテンプレートの変換**ソリューションをリビルドします。 ビルド エラーは発生しません。
 
 ## <a name="write-a-text-template-that-can-resolve-modelbus-references"></a>ModelBus References を解決できるテキスト テンプレートを作成します。
 
 通常、読み込み、"source"DSL からファイルを生成するテンプレートを使用して開始します。 このテンプレートで説明されている方法でソース モデル ファイルを読み取るソース DSL プロジェクトで生成されたディレクティブを使用して[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)します。 ただし、ソース DSL には、「ターゲット」DSL への ModelBus 参照が含まれています。 テンプレート コードでの参照を解決し、ターゲット DSL にアクセスできるようにするため。 次の手順に従って、テンプレートを調整する必要がありますので。
 
--   テンプレートの基本クラスを変更<xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>します。
+- テンプレートの基本クラスを変更<xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>します。
 
--   含める`hostspecific="true"`template ディレクティブにします。
+- 含める`hostspecific="true"`template ディレクティブにします。
 
--   ModelBus を有効にして、ターゲット DSL およびそのアダプターでは、アセンブリ参照を追加します。
+- ModelBus を有効にして、ターゲット DSL およびそのアダプターでは、アセンブリ参照を追加します。
 
--   ターゲット DSL の一部として生成されるディレクティブを使用する必要はありません。
+- ターゲット DSL の一部として生成されるディレクティブを使用する必要はありません。
 
 ```
 <#@ template debug="true" hostspecific="true" language="C#"
@@ -149,29 +149,29 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
  さらに、テンプレートでは、ModelBus References を解決できます。 場所の参照は、ターゲットのモデルをポイントして、アセンブリ ディレクティブは、ドメイン クラスとそのモデルの DSL のプロパティを使用してコードを使用できます。
 
--   DSL プロジェクトによって生成されるディレクティブを使用しない場合は、次の必要があります。
+- DSL プロジェクトによって生成されるディレクティブを使用しない場合は、次の必要があります。
 
     ```
     <#@ assembly name = "Microsoft.VisualStudio.Modeling.Sdk.11.0" #>
     <#@ assembly name = "Microsoft.VisualStudio.TextTemplating.Modeling.11.0" #>
     ```
 
--   使用`this.ModelBus`ModelBus へのアクセスを取得します。
+- 使用`this.ModelBus`ModelBus へのアクセスを取得します。
 
 ## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>チュートリアル: ModelBus を使用するテキスト テンプレートのテスト
  このチュートリアルでは、次の手順に従います。
 
-1.  2 つの Dsl を作成します。 1 つの DSL、*コンシューマー*が、`ModelBusReference`プロパティその他の DSL を参照できる、*プロバイダー*します。
+1. 2 つの Dsl を作成します。 1 つの DSL、*コンシューマー*が、`ModelBusReference`プロパティその他の DSL を参照できる、*プロバイダー*します。
 
-2.  プロバイダーの 2 つの ModelBus アダプターを作成します。 他の通常のコード、テキスト テンプレートによるアクセスのいずれか。
+2. プロバイダーの 2 つの ModelBus アダプターを作成します。 他の通常のコード、テキスト テンプレートによるアクセスのいずれか。
 
-3.  1 つの実験的なプロジェクトで、Dsl のインスタンス モデルを作成します。
+3. 1 つの実験的なプロジェクトで、Dsl のインスタンス モデルを作成します。
 
-4.  その他のモデルをポイントする 1 つのモデルには、ドメイン プロパティを設定します。
+4. その他のモデルをポイントする 1 つのモデルには、ドメイン プロパティを設定します。
 
-5.  指すモデルを開く をダブルクリック ハンドラーを記述します。
+5. 指すモデルを開く をダブルクリック ハンドラーを記述します。
 
-6.  最初のモデルを読み込み、以下の他のモデルへの参照およびその他のモデルを読み取ることができます、テキスト テンプレートを記述します。
+6. 最初のモデルを読み込み、以下の他のモデルへの参照およびその他のモデルを読み取ることができます、テキスト テンプレートを記述します。
 
 ### <a name="construct-a-dsl-that-is-accessible-to-modelbus"></a>DSL を ModelBus にアクセスできるコンス トラクター
 
@@ -213,7 +213,7 @@ DSL を ModelBus を使用してテキスト テンプレートからアクセ�
 
 8. T4ModelBusAdapter\AdapterManager.tt を開きます。
 
-   1.  AdapterManagerBase の基底クラスを <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager> に変更します。 ファイルのこの部分が、次のようになります。
+   1. AdapterManagerBase の基底クラスを <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager> に変更します。 ファイルのこの部分が、次のようになります。
 
        ```
        namespace <#= CodeGenerationUtilities.GetPackageNamespace(this.Dsl) #>.T4ModelBusAdapters
@@ -226,7 +226,7 @@ DSL を ModelBus を使用してテキスト テンプレートからアクセ�
            {
        ```
 
-   2.  ファイルの最後に、近くには、クラス AdapterManager の前に、次の追加の属性を挿入します。
+   2. ファイルの最後に、近くには、クラス AdapterManager の前に、次の追加の属性を挿入します。
 
         `[Microsoft.VisualStudio.Modeling.Integration.HostSpecific(HostName)]`
 
@@ -285,11 +285,11 @@ DSL を ModelBus を使用してテキスト テンプレートからアクセ�
 
 2. Sample.provide へのコピーを追加、 **MBConsumer\Debugging**プロジェクト。 これは、機能は、ModelBus 参照する必要があります、同じソリューション内のファイルを参照しているため必要です。
 
-   1.  デバッグ プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。
+   1. デバッグ プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。
 
-   2.  **項目の追加**ダイアログ ボックスで、フィルターを設定**すべてのファイル (\*.\*)**.
+   2. **項目の追加**ダイアログ ボックスで、フィルターを設定**すべてのファイル (\*.\*)**.
 
-   3.  移動します`MBProvider\Debugging\Sample.provide`し**追加**します。
+   3. 移動します`MBProvider\Debugging\Sample.provide`し**追加**します。
 
 3. `Sample.consume`を開きます。
 
@@ -301,7 +301,7 @@ DSL を ModelBus を使用してテキスト テンプレートからアクセ�
 
 ### <a name="resolve-a-modelbus-reference-in-a-text-template"></a>テキスト テンプレート内の ModelBus 参照を解決するには
 
-1.  Visual Studio の実験用インスタンスのサンプルのテキスト テンプレート ファイルを開きます。 その内容を次の手順に設定します。
+1. Visual Studio の実験用インスタンスのサンプルのテキスト テンプレート ファイルを開きます。 その内容を次の手順に設定します。
 
     ```
     <#@ template debug="true" hostspecific="true" language="C#"
@@ -345,7 +345,7 @@ DSL を ModelBus を使用してテキスト テンプレートからアクセ�
 
     - Mbr を多くが、同じモデルにリンクされている場合は、1 回だけ CreateAdapter を呼び出すことをお勧めします。
 
-2.  テンプレートを保存したとき。 生成されたテキスト ファイルが、次のようになっていることを確認します。
+2. テンプレートを保存したとき。 生成されたテキスト ファイルが、次のようになっていることを確認します。
 
     ```
     ExampleElement1
@@ -355,9 +355,9 @@ DSL を ModelBus を使用してテキスト テンプレートからアクセ�
 
 ### <a name="resolve-a-modelbus-reference-in-a-gesture-handler"></a>ジェスチャ ハンドラーの ModelBus 参照を解決するには
 
-1.  実行されている場合は、Visual Studio の実験用インスタンスを閉じます。
+1. 実行されている場合は、Visual Studio の実験用インスタンスを閉じます。
 
-2.  という名前のファイルを追加*MBConsumer\Dsl\Custom.cs*され、次にそのコンテンツを設定します。
+2. という名前のファイルを追加*MBConsumer\Dsl\Custom.cs*され、次にそのコンテンツを設定します。
 
     ```csharp
     namespace Company.MB2Consume
@@ -388,11 +388,11 @@ DSL を ModelBus を使用してテキスト テンプレートからアクセ�
     }
     ```
 
-3.  キーを押して**Ctrl**+**F5**します。
+3. キーを押して**Ctrl**+**F5**します。
 
-4.  Visual Studio の実験用インスタンスの開く`Debugging\Sample.consume`します。
+4. Visual Studio の実験用インスタンスの開く`Debugging\Sample.consume`します。
 
-5.  1 つの図形をダブルクリックします。
+5. 1 つの図形をダブルクリックします。
 
     その要素で MBR を設定した場合は、参照先のモデルが表示されますされ、参照先の要素が選択されます。
 

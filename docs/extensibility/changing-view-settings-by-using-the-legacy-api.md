@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a0cb811ecb21cf0dd607bd046011bb7018f3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dc0dc26a01cdddb4b26dfa65acab2c497618a76e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106489"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>従来の API を使用して、表示設定の変更
 ユーザーによってワード ラップ、選択余白、および仮想の領域などのコア エディター機能の設定を変更することができます、**オプション** ダイアログ ボックス。 ただし、これらの設定を変更することはもプログラムを使用します。
@@ -25,13 +25,13 @@ ms.locfileid: "56697599"
 
  コア エディターのインスタンスの表示設定を変更するための一般的なプロセスを次に示します。
 
-1.  呼び出す`QueryInterface`で、(<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) の<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>インターフェイス。
+1. 呼び出す`QueryInterface`で、(<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) の<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>インターフェイス。
 
-2.  呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>の GUID_EditPropCategory_View_MasterSettings の値を指定して、メソッド、`rguidCategory`パラメーター。
+2. 呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>の GUID_EditPropCategory_View_MasterSettings の値を指定して、メソッド、`rguidCategory`パラメーター。
 
      これを行うにポインターを返します、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>インターフェイスでは、一連ビューの強制プロパティにはが含まれています。 このグループ内のすべての設定を完全に実行されます。 このグループで、設定がないかどうかで指定されたオプションに従います、**オプション** ダイアログ ボックスまたはユーザーのコマンド。
 
-3.  呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>で適切な設定値を指定して、メソッド、`idprop`パラメーター。
+3. 呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>で適切な設定値を指定して、メソッド、`idprop`パラメーター。
 
      たとえば、ワード ラップを強制的に呼び出す<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>VSEDITPROPID_ViewLangOpt_WordWrap の値を指定して`vt`の`idprop`パラメーター。 この呼び出しで`vt`VT_BOOL 型のバリアントと`vt.boolVal`は VARIANT_TRUE です。
 

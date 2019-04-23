@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 28e1a926800bcd4c63bdc83336fbba41c38579eb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079306"
 ---
 # <a name="intellitrace"></a>[IntelliTrace]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,18 +53,18 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
 |**展開されたアプリケーションから IntelliTrace データを収集する**|-   [IntelliTrace スタンドアロン コレクターを使用する](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**IntelliTrace ログ ファイル (.iTrace ファイル) からデバッグを開始する**|-   [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)|  
   
-##  <a name="IntelliTraceSupport"></a>IntelliTrace を使用してデバッグできるアプリ  
+## <a name="IntelliTraceSupport"></a>IntelliTrace を使用してデバッグできるアプリ  
   
 |||  
 |-|-|  
-|**サポート状況**|-.NET Framework 2.0 または以降のバージョンを使用する Visual Basic および Visual C# のアプリケーション。<br />     ASP.NET、Microsoft Azure、Windows フォーム、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013、および 64 ビットのアプリを含むほとんどのアプリケーションをデバッグできます。<br />     IntelliTrace を使用した SharePoint アプリケーションをデバッグするを参照してください。[チュートリアル。IntelliTrace を使用して SharePoint アプリケーションのデバッグ](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)します。<br />     IntelliTrace を使用した Microsoft Azure アプリをデバッグするを参照してください。 [IntelliTrace および Visual Studio で発行されたクラウド サービスのデバッグ](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)します。|  
+|**サポート状況**|-.NET Framework 2.0 または以降のバージョンを使用する Visual Basic および Visual c# のアプリケーション。<br />     ASP.NET、Microsoft Azure、Windows フォーム、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013、および 64 ビットのアプリを含むほとんどのアプリケーションをデバッグできます。<br />     IntelliTrace を使用した SharePoint アプリケーションをデバッグするを参照してください。[チュートリアル。IntelliTrace を使用して SharePoint アプリケーションのデバッグ](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)します。<br />     IntelliTrace を使用した Microsoft Azure アプリをデバッグするを参照してください。 [IntelliTrace および Visual Studio で発行されたクラウド サービスのデバッグ](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)します。|  
 |**限定されたサポート**|-F#実験的な単位でのアプリ<br />-イベントについてのみサポートされている Windows ストア アプリ|  
 |**サポートされていません**|C++、その他の言語、およびスクリプト<br />-Windows サービス、Silverlight、Xbox、または[!INCLUDE[winmobile](../includes/winmobile-md.md)]アプリ|  
   
 > [!NOTE]
 >  既に実行されているプロセスをデバッグする場合は、IntelliTrace を使用できません。 プロセスの開始時に IntelliTrace を起動する必要があります。  
   
-##  <a name="IntelliTraceVSTraditional"></a>IntelliTrace を使用してデバッグする理由  
+## <a name="IntelliTraceVSTraditional"></a>IntelliTrace を使用してデバッグする理由  
  従来のデバッグまたは "*ライブ*" デバッグでは、ご利用のアプリケーションの現在の状態と過去のイベントの制限されたデータのみが表示されます。 アプリケーションの現在の状態に基づいてこれらのイベントを推測するか、またはアプリケーションを再実行することによってこれらのイベントを再作成する必要があります。  
   
  IntelliTrace は、これらの時点で特定のイベントやデータを記録することによってこの従来のデバッグを拡大します。 これにより、特にバグの箇所を通り越してステップ実行した場合に、再起動せずにこれらのアプリケーションで起こったことを確認できます。 IntelliTrace は従来のデバッグ中に既定で有効になっているため、自動的に非表示の状態でデータを収集します。 これにより、従来のデバッグと IntelliTrace デバッグを簡単に切り替えて、記録された情報を見ることができます。 参照してください[IntelliTrace 機能](../debugger/intellitrace-features.md)と[IntelliTrace の収集はどのようなデータでしょうか。](#WhatData)  
@@ -101,7 +101,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
    これは、配置されたアプリの問題を診断する場合に便利です。 参照してください[IntelliTrace スタンドアロン コレクターを使用して](../debugger/using-the-intellitrace-stand-alone-collector.md)します。  
   
-##  <a name="WhatData"></a> IntelliTrace が収集するデータ  
+## <a name="WhatData"></a> IntelliTrace が収集するデータ  
  **イベント情報の収集**  
   
  既定では、IntelliTrace は、IntelliTrace イベント (デバッガー イベント、例外、.NET Framework イベント、およびデバッグに役立つその他のシステム イベント) のみを記録します。 常に収集されるデバッガー イベントと例外を除き、収集する IntelliTrace イベントの種類を選択できます。 参照してください[IntelliTrace 構成](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)します。  
@@ -112,27 +112,27 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
    パフォーマンスを向上するため、IntelliTrace はデバッガー イベントのすべての値を記録しません。 代わりに、次の値を記録します。  
   
-  -   **[ローカル]** ウィンドウの値。 これらの値を確認するために **[ローカル]** ウィンドウを開いたままにします。  
+  - **[ローカル]** ウィンドウの値。 これらの値を確認するために **[ローカル]** ウィンドウを開いたままにします。  
   
-  -   **[自動変数]** ウィンドウが開いているときにのみ **[自動変数]** ウィンドウの値  
+  - **[自動変数]** ウィンドウが開いているときにのみ **[自動変数]** ウィンドウの値  
   
-  -   値を表示するためにソース ウィンドウの変数の上にマウス ポインターを移動すると表示されるデータヒントの値。 IntelliTrace は、固定されたデータヒントの値は収集しません。  
+  - 値を表示するためにソース ウィンドウの変数の上にマウス ポインターを移動すると表示されるデータヒントの値。 IntelliTrace は、固定されたデータヒントの値は収集しません。  
   
 - **例外**  
   
    IntelliTrace は、次のような種類の例外の種類とメッセージを記録します。  
   
-  -   例外がスローおよびキャッチされた場合の処理済みの例外  
+  - 例外がスローおよびキャッチされた場合の処理済みの例外  
   
-  -   ハンドルされない例外  
+  - ハンドルされない例外  
   
 - **.NET Framework イベント**  
   
    既定では、IntelliTrace は最も一般的な .NET Framework のイベントを記録します。 例えば:  
   
-  -   ファイル アクセス イベントの場合、IntelliTrace はファイル名を収集します。  
+  - ファイル アクセス イベントの場合、IntelliTrace はファイル名を収集します。  
   
-  -   チェック ボックスの確認イベントの場合、IntelliTrace はチェック ボックスの状態とテキストを収集します。  
+  - チェック ボックスの確認イベントの場合、IntelliTrace はチェック ボックスの状態とテキストを収集します。  
   
 - **SharePoint 2010 アプリケーション イベントと SharePoint 2013 アプリケーション イベント**  
   
@@ -142,11 +142,11 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
    参照トピック  
   
-  -   [IntelliTrace スタンドアロン コレクターを使用する](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+  - [IntelliTrace スタンドアロン コレクターを使用する](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-  -   [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)  
+  - [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)  
   
-  -   [チュートリアル: IntelliTrace を使用して SharePoint アプリケーションのデバッグ](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [チュートリアル: IntelliTrace を使用して SharePoint アプリケーションのデバッグ](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **関数呼び出し情報を収集**  
   
@@ -169,7 +169,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
  IntelliTrace で収集される呼び出し情報の量を制御するには、目的のモジュールのみを指定します。 これにより、収集時のアプリケーションのパフォーマンスを向上させることができます。 参照してください[IntelliTrace 構成](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)します。  
   
-##  <a name="AffectPerformance"></a>IntelliTrace はアプリケーションの速度を低下させるか  
+## <a name="AffectPerformance"></a>IntelliTrace はアプリケーションの速度を低下させるか  
  既定では、選択された IntelliTrace イベントについてのみ情報が収集されます。 これが原因でアプリケーションの速度が低下するかどうかは、コードの構造と構成によって決まります。 たとえば、IntelliTrace がイベントを頻繁に記録する場合、アプリケーションの速度が低下する可能性があります。 また、アプリケーションのリファクタリングを検討する必要に迫られる場合があります。  
   
  呼び出し情報を収集すると、アプリケーションの速度が大幅に低下する可能性があります。 さらに、ディスクに保存される IntelliTrace ログ ファイル (.iTrace ファイル) のサイズが増加する可能性があります。 これらの影響を最小限に抑えるには、必要なモジュールのみから呼び出し情報を収集するようにします。  ご利用の .iTrace ファイルの最大サイズを変更するには、**[ツール]**、**[オプション]**、**[IntelliTrace]**、**[詳細設定]** の順に選択します。 参照してください[IntelliTrace 構成](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)します。  

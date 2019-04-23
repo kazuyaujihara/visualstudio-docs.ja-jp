@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5457c0b4e7b355c130fedbdbba456b550a35f1ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084818"
 ---
 # <a name="image-library-viewer"></a>イメージ ライブラリ ビューア
 Visual Studio Image Library ビューアー ツールは、読み込みおよびユーザーが Visual Studio と同じ方法で操作できるように、イメージのマニフェストを検索できます。 ユーザーは、バック グラウンド、サイズ、DPI、ハイ コントラスト、およびその他の設定を変更できます。 このツールは、各イメージ マニフェストの読み込み情報を表示し、イメージ マニフェスト内の各イメージのソース情報を表示します。 このツールは、場合に便利です。
@@ -72,7 +72,7 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
 |-|-|
 |**サブ要素**|**定義**|
 |インポート|現在のマニフェストで使用するための指定されたマニフェスト ファイルのシンボルをインポートします。|
-|GUID|シンボルは、GUID を表し、GUID の書式設定と一致する必要があります。|
+|Guid|シンボルは、GUID を表し、GUID の書式設定と一致する必要があります。|
 |ID|シンボルは、ID を表し、負でない整数でなければなりません。|
 |String|シンボルは、任意の文字列値を表します。|
 
@@ -113,7 +113,7 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
 |||
 |-|-|
 |**属性**|**定義**|
-|GUID|[必須]イメージのモニカーの GUID 部分|
+|Guid|[必須]イメージのモニカーの GUID 部分|
 |ID|[必須]イメージのモニカーの ID 部分|
 |AllowColorInversion|[省略可能、既定値は true]イメージが黒っぽい背景で使用されるときに反転されるプログラムでの色を持つかどうかを示します。|
 
@@ -169,7 +169,7 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
 |||
 |-|-|
 |**属性**|**定義**|
-|GUID|[必須]イメージのモニカーの GUID 部分|
+|Guid|[必須]イメージのモニカーの GUID 部分|
 |ID|[必須]イメージのモニカーの ID 部分|
 |外部|[省略可能、既定値は false]イメージ モニカーが現在のマニフェストでイメージを参照するかどうかを示します。|
 
@@ -224,9 +224,9 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
 
 ## <a name="notes"></a>メモ
 
--   既定では、このツールは Visual Studio のインストール ディレクトリに存在するいくつかのイメージのマニフェストにプルします。 モニカーをパブリックに使用できるは 1 つだけが、 **Microsoft.VisualStudio.ImageCatalog**マニフェストします。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (は**いない**カスタム マニフェストにこの GUID を上書き) の種類。KnownMonikers
+- 既定では、このツールは Visual Studio のインストール ディレクトリに存在するいくつかのイメージのマニフェストにプルします。 モニカーをパブリックに使用できるは 1 つだけが、 **Microsoft.VisualStudio.ImageCatalog**マニフェストします。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (は**いない**カスタム マニフェストにこの GUID を上書き) の種類。KnownMonikers
 
--   ツールは、アプリケーションが、実際に表示するのに数秒がかかる場合がありますのでが見つかると、すべてのイメージ マニフェストを読み込むの起動時にしようとします。 低速または応答も、マニフェストの読み込み中にられます可能性があります。
+- ツールは、アプリケーションが、実際に表示するのに数秒がかかる場合がありますのでが見つかると、すべてのイメージ マニフェストを読み込むの起動時にしようとします。 低速または応答も、マニフェストの読み込み中にられます可能性があります。
 
 ## <a name="sample-output"></a>出力例
  このツールは、任意の出力を生成しません。

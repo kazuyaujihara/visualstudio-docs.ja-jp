@@ -12,29 +12,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f44af8ae730a39f68d24624cd321bd634d98dd73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 581f9c0b9907fd59863f6a468a45ef67d9966475
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061399"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>方法: 配置手順の実行時にコードを実行します。
-  SharePoint プロジェクトの配置手順の追加のタスクを実行する場合は、前に、SharePoint プロジェクト アイテムと Visual Studio が各デプロイの手順を実行後に発生するイベントを処理できます。 詳細については、[拡張 SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)を参照してください。
+  SharePoint プロジェクトの配置手順の追加のタスクを実行する場合は、前に、SharePoint プロジェクト アイテムと Visual Studio が各デプロイの手順を実行後に発生するイベントを処理できます。 詳細については、次を参照してください。[拡張 SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)します。
 
 ### <a name="to-run-code-when-deployment-steps-are-executed"></a>配置手順の実行時にコードを実行するには
 
-1.  プロジェクト項目の拡張機能、プロジェクトの拡張機能、または新しいプロジェクト項目の種類の定義を作成します。 詳細については、次のトピックを参照してください。
+1. プロジェクト項目の拡張機能、プロジェクトの拡張機能、または新しいプロジェクト項目の種類の定義を作成します。 詳細については、次のトピックを参照してください。
 
-    -   [方法: SharePoint プロジェクト項目の拡張機能を作成します。](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
+    - [方法: SharePoint プロジェクト項目の拡張機能を作成します。](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
-    -   [方法: SharePoint プロジェクト拡張機能を作成します。](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+    - [方法: SharePoint プロジェクト拡張機能を作成します。](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 
-    -   [方法: SharePoint プロジェクト項目の種類を定義します。](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
+    - [方法: SharePoint プロジェクト項目の種類を定義します。](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 
-2.  拡張機能、処理、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted>と<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted>のイベント、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> (プロジェクト項目の拡張機能またはプロジェクトの拡張機能) 内のオブジェクトまたは<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition>(新しいプロジェクト項目の種類の定義) 内のオブジェクト。
+2. 拡張機能、処理、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted>と<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted>のイベント、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> (プロジェクト項目の拡張機能またはプロジェクトの拡張機能) 内のオブジェクトまたは<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition>(新しいプロジェクト項目の種類の定義) 内のオブジェクト。
 
-3.  イベント ハンドラーを使用して、<xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs>と<xref:Microsoft.VisualStudio.SharePoint.DeploymentStepCompletedEventArgs>パラメーター配置手順に関する情報を取得します。 たとえば、どの展開手順を実行して、ソリューションがされているかどうかを判断できます配置または取り消します。
+3. イベント ハンドラーを使用して、<xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs>と<xref:Microsoft.VisualStudio.SharePoint.DeploymentStepCompletedEventArgs>パラメーター配置手順に関する情報を取得します。 たとえば、どの展開手順を実行して、ソリューションがされているかどうかを判断できます配置または取り消します。
 
 ## <a name="example"></a>例
  次のコード例は、処理する方法を示します、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted>と<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted>リスト インスタンスのプロジェクト項目の拡張機能内のイベント。 この拡張機能を追加のメッセージを書き込みます、**出力**ウィンドウを展開して、ソリューションの取り消し中に、Visual Studio でアプリケーション プールがリサイクルされる場合。
@@ -45,12 +45,12 @@ ms.locfileid: "56638934"
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のアセンブリへの参照が必要です。
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>拡張機能をデプロイします。
- 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、[Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)を参照してください。
+ 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint のパッケージ化と配置を拡張します。](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 770c805489e358252151dc8e777941a267f76363
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f23db8a9674de621090be70067a555ef4fca2b99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061425"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243:属性文字列リテラルは、正しく解析する必要があります
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,11 +55,11 @@ ms.locfileid: "58973553"
 
  ルールは、次のようにトリガーされます。
 
--   パラメーター 'version' が含まれてし、System.Version を解析できません。
+- パラメーター 'version' が含まれてし、System.Version を解析できません。
 
--   パラメーター 'guid' が含まれており、System.Guid を解析できません。
+- パラメーター 'guid' が含まれており、System.Guid を解析できません。
 
--   パラメーター 'uri'、'urn' または 'url' が含まれており、System.Uri に解析できません。
+- パラメーター 'uri'、'urn' または 'url' が含まれており、System.Uri に解析できません。
 
 ## <a name="see-also"></a>関連項目
  [CA 1054:URI パラメーターは文字列をすることはできません。](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

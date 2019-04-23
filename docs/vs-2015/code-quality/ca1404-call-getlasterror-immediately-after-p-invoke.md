@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a7f1f4d036bd035368cce10684899d880481e37b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e33c724d2cebb9423f2e475d95bf42ac5e2cc966
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053287"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404:P/Invoke の直後に GetLastError を呼び出します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "58962516"
 
  規則は、次の呼び出し、プラットフォームへの呼び出しの間で発生したときに管理対象のメンバーを呼び出すメソッドを呼び出す<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>します。 これらのメンバーでは、エラーは変更しないで呼び出しメソッドの呼び出しのコードとはいくつかのプラットフォームの成功を判断するのに役立ちます。
 
--   <xref:System.IntPtr.Zero?displayProperty=fullName>
+- <xref:System.IntPtr.Zero?displayProperty=fullName>
 
--   <xref:System.IntPtr.op_Equality%2A?displayProperty=fullName>
+- <xref:System.IntPtr.op_Equality%2A?displayProperty=fullName>
 
--   <xref:System.IntPtr.op_Inequality%2A?displayProperty=fullName>
+- <xref:System.IntPtr.op_Inequality%2A?displayProperty=fullName>
 
--   <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
+- <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  このルールの違反を修正するへの呼び出しを移動<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>メソッドの呼び出しに、プラットフォームへの呼び出し直後に続くようにします。

@@ -1,5 +1,5 @@
 ---
-title: Managed Package Framework を使用して、プロジェクトの種類 (C#) を実装する |Microsoft Docs
+title: Managed Package Framework を使用して、プロジェクトの種類 (c#) を実装する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d83f26183c422d39e69dfe106443dae54f576899
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977943"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066835"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>マネージド パッケージ フレームワークを使用したプロジェクト タイプの実装 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-マネージ パッケージ フレームワーク (MPF) は、C# クラスを使用するか、独自のプロジェクトの種類を実装するために継承することができますを提供します。 MPF は取り込んだら、プロジェクトの種類の詳細の実装に専念する多くの Visual Studio に提供するため、プロジェクトの種類が必要ですが、インターフェイスを実装します。  
+マネージ パッケージ フレームワーク (MPF) は、c# クラスを使用するか、独自のプロジェクトの種類を実装するために継承することができますを提供します。 MPF は取り込んだら、プロジェクトの種類の詳細の実装に専念する多くの Visual Studio に提供するため、プロジェクトの種類が必要ですが、インターフェイスを実装します。  
   
 ## <a name="using-the-mpf-project-source-code"></a>MPF プロジェクト ソース コードを使用します。  
  Managed Package Framework (MPFProj) プロジェクトを作成して、新しいプロジェクト システムを管理するためのヘルパー クラスを提供します。 MPF の他のクラスとは異なりプロジェクトのクラスは Visual Studio に付属するアセンブリに含まれていません。 ソース コードとしてプロジェクトのクラスを提供する代わりに、 [2013 のプロジェクトの MPF](http://mpfproj12.codeplex.com)します。  
   
  VSPackage ソリューションには、このプロジェクトを追加するには、次の操作を行います。  
   
-1.  MPFProj ファイルをダウンロード*MPFProjectDir*します。  
+1. MPFProj ファイルをダウンロード*MPFProjectDir*します。  
   
-2.  *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file、次のブロックを変更します。  
+2. *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file、次のブロックを変更します。  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -40,11 +40,11 @@ ms.locfileid: "58977943"
   </PropertyGroup>  
 ```  
   
-1.  VSPackage プロジェクトを作成します。  
+1. VSPackage プロジェクトを作成します。  
   
-2.  VSPackage プロジェクトをアンロードします。  
+2. VSPackage プロジェクトをアンロードします。  
   
-3.  VSPackage の .csproj ファイルを編集する前に、次のブロックを追加することで`<Import>`ブロック。  
+3. VSPackage の .csproj ファイルを編集する前に、次のブロックを追加することで`<Import>`ブロック。  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -56,17 +56,17 @@ ms.locfileid: "58977943"
   </PropertyGroup>  
 ```  
   
-1.  プロジェクトを保存します。  
+1. プロジェクトを保存します。  
   
-2.  VSPackage ソリューションを閉じてから。  
+2. VSPackage ソリューションを閉じてから。  
   
-3.  VSPackage プロジェクトを再度開きます。 ProjectBase をという名前の新しいディレクトリを表示する必要があります。  
+3. VSPackage プロジェクトを再度開きます。 ProjectBase をという名前の新しいディレクトリを表示する必要があります。  
   
-4.  VSPackage プロジェクトに次の参照を追加します。  
+4. VSPackage プロジェクトに次の参照を追加します。  
   
      Microsoft.Build.Tasks.4.0  
   
-5.  プロジェクトをビルドします。  
+5. プロジェクトをビルドします。  
   
 ## <a name="hierarchy-classes"></a>クラスの階層  
  次の表では、プロジェクト階層をサポートしている、MPFProj でクラスを示します。 詳細については、次を参照してください。[階層と選択](../../extensibility/internals/hierarchies-and-selection.md)します。  

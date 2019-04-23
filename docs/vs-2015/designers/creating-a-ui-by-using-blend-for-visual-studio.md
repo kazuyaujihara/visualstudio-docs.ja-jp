@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 553b7a542bc49b3105462a5f53082917b1741916
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803669"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082959"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio を使用して UI を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 
  **このトピックの内容**:
 
--   [[ツール] パネルのツアー](#Tools)
+- [[ツール] パネルのツアー](#Tools)
 
--   [[アセット] パネルのツアー](#Assets)
+- [[アセット] パネルのツアー](#Assets)
 
--   [[オブジェクトとタイムライン] パネルのツアー](#Objects)
+- [[オブジェクトとタイムライン] パネルのツアー](#Objects)
 
--   [[プロパティ] パネルのツアー](#Properties)
+- [[プロパティ] パネルのツアー](#Properties)
 
-##  <a name="Tools"></a> [ツール] パネルのツアー
+## <a name="Tools"></a> [ツール] パネルのツアー
  Blend for Visual Studio の **[ツール]** パネルは、アプリケーションのオブジェクトの作成と変更に使用します。 パネルにあるツールを選択してアートボード上でマウスを動かすと、オブジェクトを描画できます。
 
  ![[ツール] パネル](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
@@ -56,7 +56,7 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 
  **短いビデオを見る:**![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [ツールバー](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)します。
 
-##  <a name="Assets"></a> [アセット] パネルのツアー
+## <a name="Assets"></a> [アセット] パネルのツアー
  **[アセット]** パネルには、すべてのコントロールが用意されています (Visual Studio の **[ツールボックス]** に似ています)。 また、コントロールのほかに、スタイル、メディア、ビヘイビアー、効果など、アートボードに追加できるすべてのものが **[アセット]** パネルに用意されています。
 
  ![[アセット] パネル](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
@@ -69,7 +69,7 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 |![](../designers/media/b1-4.png "B1_4")|**スタイル** リソース ディクショナリに含まれるすべてのスタイルを表示します。|
 |![](../designers/media/b1-5.png "B1_5")|**説明** 選択したカテゴリまたはサブカテゴリの説明が表示されます。|
 
-##  <a name="Objects"></a> [オブジェクトとタイムライン] パネルのツアー
+## <a name="Objects"></a> [オブジェクトとタイムライン] パネルのツアー
  このパネルを使用すると、アートボード上のオブジェクトを整理して、必要な場合はアニメーション化できます。
 
  ![アニメーション モードの [オブジェクトとタイムライン] パネル](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -93,13 +93,12 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 |![](../designers/media/b1-15.png "B1_15")|**タイムラインのズーム** タイムラインのズーム解像度を設定します。 ズーム インでは、アニメーションを詳細に編集できます。ズーム アウトすると、長い再生時間にわたる動作の概要が表示されます。 ズーム インしても、目的の位置にキーフレームを設定できない場合は、スナップ精度が十分高く設定されていることを確認してください。|
 |![吹き出し 16](../designers/media/b5-label-16.png "b5_label_16")|**タイムライン構成領域** タイムラインを表示するとともに、キーフレームをドラッグするかショートカット メニューを使用してキーフレームを移動します。|
 
-##  <a name="Properties"></a> [プロパティ] パネルのツアー
+## <a name="Properties"></a> [プロパティ] パネルのツアー
  オブジェクトのプロパティを表示して変更するには、このパネルを使用します。 また、アートボード上で直接設定することもできます。 この場合、プロパティの変更が **[プロパティ]** パネルに反映されます。
 
  ![[プロパティ] パネル](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
  **[カテゴリ]** プロパティのカテゴリを展開し、折りたたみます。 カテゴリの詳細を表示するには **[展開]** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") をクリックし、非表示にするには **[折りたたみ]** ![折りたたみ](../designers/media/b5-collapse-button.png "b5_collapse_button") をクリックします。
-
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

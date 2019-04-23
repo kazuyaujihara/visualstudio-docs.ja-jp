@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 178d5c22c74386cb70ced170b8643baeedfab55e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f74b2d08a268bc79bcd7d2fd33513b5ccf5b1415
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115784"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>方法: プログラムによってブック内の範囲にスタイルを適用します。
   ブック内の領域に名前付きスタイルを適用できます。 Excel には、定義済みのスタイルがいくつか用意されています。
@@ -30,38 +30,38 @@ ms.locfileid: "56607968"
 
 ## <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズで名前付き範囲にスタイルを適用するには
 
-1.  新しいスタイルを作成し、その属性を設定します。
+1. 新しいスタイルを作成し、その属性を設定します。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#53](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#53)]
      [!code-vb[Trin_VstcoreExcelAutomation#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#53)]
 
-2.  <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを作成し、テキストを割り当て、新しいスタイルを適用します。 このコードは、 `ThisWorkbook` クラスではなく、シート クラスに配置する必要があります。
+2. <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを作成し、テキストを割り当て、新しいスタイルを適用します。 このコードは、 `ThisWorkbook` クラスではなく、シート クラスに配置する必要があります。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#54)]
      [!code-vb[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#54)]
 
 ## <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズで名前付き範囲からスタイルをクリアするには
 
-1.  Normal スタイルを範囲に適用します。 このコードは、 `ThisWorkbook` クラスではなく、シート クラスに配置する必要があります。
+1. Normal スタイルを範囲に適用します。 このコードは、 `ThisWorkbook` クラスではなく、シート クラスに配置する必要があります。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#55)]
      [!code-vb[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#55)]
 
 ## <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>VSTO アドインで名前付き範囲にスタイルを適用するには
 
-1.  新しいスタイルを作成し、その属性を設定します。
+1. 新しいスタイルを作成し、その属性を設定します。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#28](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#28)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#28](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#28)]
 
-2.  <xref:Microsoft.Office.Interop.Excel.Range> を作成し、テキストを割り当て、新しいスタイルを適用します。
+2. <xref:Microsoft.Office.Interop.Excel.Range> を作成し、テキストを割り当て、新しいスタイルを適用します。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]
 
 ## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>VSTO アドインで名前付き範囲からスタイルをクリアするには
 
-1.  Normal スタイルを範囲に適用します。
+1. Normal スタイルを範囲に適用します。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#56)]
      [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]

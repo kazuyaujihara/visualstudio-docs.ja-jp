@@ -17,17 +17,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f4b470bab1bc3a017edeb1c686a53baf2293495
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962851"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647465"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>データセットと TableAdapters を別々のプロジェクトに分離する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 型指定されたデータセットが強化されているように、 [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)および個別のプロジェクトにデータセット クラスを生成することができます。 これにより、アプリケーション層を分離して、n 層データ アプリケーションをすばやく生成できるようになります。  
   
  次の手順をデータセット デザイナーを使用して、プロジェクトには、生成されたプロジェクトとは別にデータセット コードを生成するプロセスを説明する`TableAdapter`コード。  

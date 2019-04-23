@@ -11,12 +11,12 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1c949d4668089a2cc06543169a1c3ce6619409d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f40c523c058bf215cc4574b3aa4a2e038c833beb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974524"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044671"
 ---
 # <a name="exposing-project-objects"></a>プロジェクト オブジェクトの公開
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58974524"
   
 ### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>プロジェクトの VSPackage に固有のオブジェクトを投稿するには  
   
-1.  VSPackage の .pkgdef ファイルに適切なキーを追加します。  
+1. VSPackage の .pkgdef ファイルに適切なキーを追加します。  
   
      たとえば、C++ 言語のプロジェクトの .pkgdef 設定次に示します。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "58974524"
     "VCProjectEngineEventsObject"=""  
     ```  
   
-2.  コードでは、実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>メソッドは、次の例のようにします。  
+2. コードでは、実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>メソッドは、次の例のようにします。  
   
     ```cpp  
     STDMETHODIMP CVsPackage::GetAutomationObject(  

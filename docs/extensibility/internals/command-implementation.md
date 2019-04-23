@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6b9776f94c802502bc393f2b8c262408d443e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089754"
 ---
 # <a name="command-implementation"></a>コマンドの実装
 VSPackage のコマンドを実装するには、次のタスクを実行する必要があります。
 
-1.  *.Vsct*ファイルおよびコマンド グループをセットアップし、コマンドを追加します。 詳細については、[Visual Studio コマンド テーブル (.vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)を参照してください。
+1. *.Vsct*ファイルおよびコマンド グループをセットアップし、コマンドを追加します。 詳細については、次を参照してください。 [Visual Studio コマンド テーブル (.vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
 
-2.  Visual Studio でのコマンドを登録します。
+2. Visual Studio でのコマンドを登録します。
 
-3.  コマンドを実装します。
+3. コマンドを実装します。
 
 次のセクションでは、登録およびコマンドを実装する方法を説明します。
 
@@ -61,29 +61,29 @@ if ( null != mcs )
 ## <a name="querystatus-methods"></a>QueryStatus メソッド
  いずれかを実装している場合、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>メソッドまたは<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>メソッドで、コマンド、コマンドが所属するセットの GUID を確認し、コマンドの ID。 次のガイドラインに従ってください。
 
--   いずれかのメソッドの実装を返す必要があります、GUID が認識されないかどうか<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>します。
+- いずれかのメソッドの実装を返す必要があります、GUID が認識されないかどうか<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>します。
 
--   いずれかのメソッドの実装、GUID を認識して、コマンドが実装していない場合、メソッドが返す必要があります<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>します。
+- いずれかのメソッドの実装、GUID を認識して、コマンドが実装していない場合、メソッドが返す必要があります<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>します。
 
--   かどうかには、いずれかのメソッドの実装は、GUID と、コマンドの両方を認識し、メソッドは、すべてのコマンドのコマンド フラグ フィールドを設定する必要があります (で、`prgCmds`パラメーター)、次を使用して<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>フラグ。
+- かどうかには、いずれかのメソッドの実装は、GUID と、コマンドの両方を認識し、メソッドは、すべてのコマンドのコマンド フラグ フィールドを設定する必要があります (で、`prgCmds`パラメーター)、次を使用して<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>フラグ。
 
-    -   `OLECMDF_SUPPORTED`:コマンドがサポートされています。
+    - `OLECMDF_SUPPORTED`:コマンドがサポートされています。
 
-    -   `OLECMDF_INVISIBLE`:コマンドは表示されません。
+    - `OLECMDF_INVISIBLE`:コマンドは表示されません。
 
-    -   `OLECMDF_LATCHED`:このコマンドがオンにしをオンになっているが表示されます。
+    - `OLECMDF_LATCHED`:このコマンドがオンにしをオンになっているが表示されます。
 
-    -   `OLECMDF_ENABLED`:コマンドが有効になっているとします。
+    - `OLECMDF_ENABLED`:コマンドが有効になっているとします。
 
-    -   `OLECMDF_DEFHIDEONCTXTMENU`:コマンドは、ショートカット メニューに表示される場合、非表示にする必要があります。
+    - `OLECMDF_DEFHIDEONCTXTMENU`:コマンドは、ショートカット メニューに表示される場合、非表示にする必要があります。
 
-    -   `OLECMDF_NINCHED`:コマンドがメニュー コント ローラーが有効でないが、そのドロップダウン メニューからリストが空でないとは引き続き使用できます。 (このフラグはあまり使用されません。)
+    - `OLECMDF_NINCHED`:コマンドがメニュー コント ローラーが有効でないが、そのドロップダウン メニューからリストが空でないとは引き続き使用できます。 (このフラグはあまり使用されません。)
 
--   コマンドが定義されている場合、 *.vsct*ファイルと、`TextChanges`フラグは、次のパラメーターを設定します。
+- コマンドが定義されている場合、 *.vsct*ファイルと、`TextChanges`フラグは、次のパラメーターを設定します。
 
-    -   設定、`rgwz`の要素、`pCmdText`パラメーターをコマンドの新しいテキスト。
+    - 設定、`rgwz`の要素、`pCmdText`パラメーターをコマンドの新しいテキスト。
 
-    -   設定、`cwActual`の要素、`pCmdText`パラメーターをコマンド文字列のサイズ。
+    - 設定、`cwActual`の要素、`pCmdText`パラメーターをコマンド文字列のサイズ。
 
 また、必ず、現在のコンテキストは、automation 関数ではないことオートメーション機能を処理するために、コマンドの目的は具体的にはしない限り。
 

@@ -11,19 +11,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e90b66288d15abdaf85c519bd89deb6262e4363
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48d70901a2d616031eeed197b639f3a7bb7336c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963274"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092995"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>プログラム コードで UML モデルを読み取る
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UML API を使用して、UML モデルおよび UML 図を読み込むことができます。  
   
-##  <a name="Reading"></a> プログラム コードでのモデルの読み込み  
+## <a name="Reading"></a> プログラム コードでのモデルの読み込み  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ウィンドウに表示せずにモデルのコンテンツにアクセスするには、`ModelingProject.LoadReadOnly()` を使用します。  
   
  例:  
@@ -70,7 +70,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API を使用して、ユーザー インターフェイスでモデルおよび図を開くこともできます。 詳細については、次を参照してください。 [Visual Studio API を使用して UML モデルを開く](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)します。  
   
-##  <a name="Standalone"></a> スタンドアロン アプリケーション  
+## <a name="Standalone"></a> スタンドアロン アプリケーション  
  前のセクションの例は、Visual Studio 拡張機能で動作します。 スタンドアロン アプリーションでモデルを読み込むこともできますが、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトにいくつかの参照を追加する必要があります。  
   
 > [!NOTE]
@@ -82,9 +82,9 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
 2. UML モデルにアクセスするために必要な [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 参照を追加します。  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces.dll  
+   - Microsoft.VisualStudio.Uml.Interfaces.dll  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
 3. 次のプロジェクト参照を追加すると、前のセクションで示した参照に加えて**\Program Files\Microsoft Visual Studio [バージョン] \Common7\IDE\PrivateAssemblies**:  
   

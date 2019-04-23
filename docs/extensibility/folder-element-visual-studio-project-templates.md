@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa788fafd7b07f1224bb4abf6bfe527109b3bc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057252"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 要素 (Visual Studio プロジェクト テンプレート)
 プロジェクトに追加されるフォルダーを指定します。
@@ -62,7 +62,7 @@ ms.locfileid: "56692657"
 
  テンプレート内のフォルダーにプロジェクト項目を整理するのにには、次の方法のいずれかを使用できます。
 
--   テンプレート フォルダーに含める *.zip*ファイルを開き、プロジェクトに追加、 *.vstemplate*ファイル内のファイルへのパスを指定することによって、`ProjectItem`なしで、要素`Folder`要素。 これは、推奨される方法です。 例:
+- テンプレート フォルダーに含める *.zip*ファイルを開き、プロジェクトに追加、 *.vstemplate*ファイル内のファイルへのパスを指定することによって、`ProjectItem`なしで、要素`Folder`要素。 これは、推奨される方法です。 例:
 
      `...`
 
@@ -72,7 +72,7 @@ ms.locfileid: "56692657"
 
      `...`
 
--   テンプレート フォルダーに含める *.zip*ファイルを開き、プロジェクトに追加、 *.vstemplate*ファイルと`Folder`要素。 例:
+- テンプレート フォルダーに含める *.zip*ファイルを開き、プロジェクトに追加、 *.vstemplate*ファイルと`Folder`要素。 例:
 
      `...`
 
@@ -86,7 +86,7 @@ ms.locfileid: "56692657"
 
      `...`
 
--   テンプレートのフォルダーを含めないでください *.zip*ファイルしますが、使用してフォルダーを追加、`TargetFileName`の属性、`ProjectItem`要素。 例:
+- テンプレートのフォルダーを含めないでください *.zip*ファイルしますが、使用してフォルダーを追加、`TargetFileName`の属性、`ProjectItem`要素。 例:
 
      `...`
 

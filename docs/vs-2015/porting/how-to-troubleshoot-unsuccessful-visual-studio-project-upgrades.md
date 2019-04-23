@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096336"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>方法: 失敗した Visual Studio プロジェクトのアップグレードをトラブルシューティングします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Visual Studio が、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の旧バージ
 
 #### <a name="to-resolve-incorrect-file-paths"></a>ファイル パスの間違いを解決するには
 
-1.  プロジェクト ファイルをテキスト エディターで開きます。
+1. プロジェクト ファイルをテキスト エディターで開きます。
 
-2.  間違っている可能性のあるファイル パス、特に [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のバージョン番号を含むパスをスキャンします。
+2. 間違っている可能性のあるファイル パス、特に [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のバージョン番号を含むパスをスキャンします。
 
-3.  間違っているファイル パスを、新しいターゲットを指すように変更します。
+3. 間違っているファイル パスを、新しいターゲットを指すように変更します。
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>参照が有効でないため、プロジェクトがビルドできない
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のアップグレード時に、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョンもアップグレードすることがあります。 新しい [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] バージョンで継承されない参照がプロジェクトに含まれている場合、これらの参照は正しく解決されない可能性があります。 これは特に、`Microsoft.VisualStudio.Shell.Interop.8.0` などのバージョン番号を含む参照で発生する可能性があります。

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6346b7751ccb076298c406f3f3e583991bfadfe7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 548851a4e5811864e60d3a14368d6380f14f9e7e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089394"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>引数に不正な値が渡された原因を見つけるには
 ## <a name="problem-description"></a>問題の説明
@@ -37,19 +37,19 @@ ms.locfileid: "56702955"
 
 #### <a name="to-resolve-this-problem"></a>この問題を解決するには
 
-1.  関数の先頭に位置ブレークポイントを設定します。
+1. 関数の先頭に位置ブレークポイントを設定します。
 
-2.  ブレークポイントを右クリックし、**[条件]** をクリックします。
+2. ブレークポイントを右クリックし、**[条件]** をクリックします。
 
-3.  **[ブレークポイントの条件]** ダイアログ ボックスで、**[条件]** チェック ボックスをオンにします。 参照してください[ブレークポイントの高度な](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)します。
+3. **[ブレークポイントの条件]** ダイアログ ボックスで、**[条件]** チェック ボックスをオンにします。 参照してください[ブレークポイントの高度な](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)します。
 
-4.  テキスト ボックスに `Var==3` などの式を入力します (`Var` は不適切な値が格納されるパラメーターの名前、`3` はこのパラメーターに渡される不適切な値)。
+4. テキスト ボックスに `Var==3` などの式を入力します (`Var` は不適切な値が格納されるパラメーターの名前、`3` はこのパラメーターに渡される不適切な値)。
 
-5.  **[true の場合]** オプション ボタンをクリックし、**[OK]** をクリックします。
+5. **[true の場合]** オプション ボタンをクリックし、**[OK]** をクリックします。
 
-6.  そして、再びプログラムを実行します。 `Var` パラメーターの値が `3` になると、ブレークポイントによって、その関数の先頭でプログラムの実行が停止します。
+6. そして、再びプログラムを実行します。 `Var` パラメーターの値が `3` になると、ブレークポイントによって、その関数の先頭でプログラムの実行が停止します。
 
-7.  次に、[呼び出し履歴] ウィンドウを使用して呼び出し元の関数を見つけ、その関数のソース コードに移動します。 詳細については、次を参照してください。[方法: 呼び出し履歴 ウィンドウを使用して、](../debugger/how-to-use-the-call-stack-window.md)します。
+7. 次に、[呼び出し履歴] ウィンドウを使用して呼び出し元の関数を見つけ、その関数のソース コードに移動します。 詳細については、「[方法 :[呼び出し履歴] ウィンドウを使用する](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)

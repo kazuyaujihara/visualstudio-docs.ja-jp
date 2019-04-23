@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 0bbe7d081e15fdf81308218f2bb4b54e7623b333
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856957"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663192"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用して、Azure Virtual Machines と Azure Virtual Machine Scale Sets 上のライブ ASP.NET アプリをデバッグする
 
@@ -35,11 +35,11 @@ ms.locfileid: "58856957"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Azure Virtual Machines (VM) および Azure Virtual Machine Scale Sets (VMSS) 用のスナップショット デバッガーは、**Azure 開発ワークロード**に対して Visual Studio 2019 Enterprise プレビュー以降でのみ使用できます。 (**[個別のコンポーネント]** タブの **[デバッグとテスト]** > **[スナップショット デバッガー]** にあります)。
+* Azure Virtual Machines (VM) と Azure 仮想マシン スケール セット用のスナップショット デバッガーでは Visual Studio 2019 Enterprise の使用可能な以上でのみ、 **Azure 開発ワークロード**します。 (**[個別のコンポーネント]** タブの **[デバッグとテスト]** > **[スナップショット デバッガー]** にあります)。
 
-    まだ [Visual Studio 2019 Enterprise プレビュー](https://visualstudio.microsoft.com/vs/preview/)がインストールされていない場合はインストールしてください。
+    インストールされていない場合は、インストール[Visual Studioenterprise 2019](https://visualstudio.microsoft.com/vs/)します。
 
-* スナップショット コレクションは、次の VM/VMSS Web アプリに使用できます。
+* スナップショット コレクションは、次の Azure の仮想 Machines\Virtual Machine Scale Sets の web アプリの使用。
   * .NET Framework 4.6.1 以降で実行されている ASP.NET アプリケーション。
   * Windows の .NET Core 2.0 以降で実行されている ASP.NET Core アプリケーション。
 
@@ -48,9 +48,9 @@ ms.locfileid: "58856957"
 1. デバッグのスナップショットを取得するプロジェクトを開きます。
 
     > [!IMPORTANT]
-    > デバッグのスナップショットを取得するには、Azure VM/VMSS サービスに公開されているものと*同じバージョンのソース コード*を開く必要があります。
+    > スナップショットのデバッグを開く必要があります、*ソース コードの同じバージョン*Azure 仮想 Machine\Virtual マシン スケール セットのサービスに公開されています。
 
-1. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。Web アプリがデプロイされる Azure VM/VMSS と Azure ストレージ アカウントを選択し、**[アタッチ]** をクリックします。
+1. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。Azure 仮想 Machine\Virtual マシン スケール セットに、web アプリを展開し、Azure ストレージ アカウントを選択してクリックして**アタッチ**します。
 
       ![[デバッグ] メニューからスナップショット デバッガーを起動する](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "58856957"
 
     > [!IMPORTANT]
     > 初めて VM に **[スナップショット デバッガーのアタッチ]** を選択すると、IIS が自動的に再起動されます。
-    > 初めて VMSS に **[スナップショット デバッガーのアタッチ]** を選択する場合、VMSS の各インスタンスを手動でアップグレードする必要があります。
+    > 選択した最初の時刻**スナップショット デバッガーのアタッチ**仮想マシン スケール セット、仮想マシン スケール セットの各インスタンスの手動アップグレードが必要です。
 
     **[モジュール]** のメタデータは最初は有効ではありません。Web アプリにアクセスすると、**[コレクションの開始]** ボタンが有効になります。 これで、Visual Studio はスナップショット デバッグ モードになりました。
 
@@ -66,9 +66,9 @@ ms.locfileid: "58856957"
 
     > [!NOTE]
     > Application Insights サイト拡張機能では、スナップショットのデバッグもサポートされています。 "サイト拡張機能が最新ではない" というエラー メッセージが表示される場合は、[スナップショットのデバッグに関するトラブルシューティングのヒントと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)のページでアップグレードの詳細を参照してください。
-    > VMSS の場合、初めてスナップショット デバッガーをアタッチした後に、VMSS 内のインスタンスを手動でアップグレードする必要があります。
+    > VMSS、ユーザーは、最初のスナップショット デバッガーをアタッチした後、仮想マシン スケール セット内のインスタンスを手動でアップグレードする必要があります。
 
-   **[モジュール]** ウィンドウは、Azure VM/VMSS のすべてのモジュールが読み込まれたときに表示されます (このウィンドウを開くには、**[デバッグ] > [ウィンドウ] > [モジュール]** の順に選択します)。
+   **モジュール**ウィンドウは、すべてのモジュールが読み込まれるときに、Azure 仮想 Machine\Virtual マシン スケール セットを示します (選択**デバッグ > Windows > モジュール**をこのウィンドウを開きます)。
 
    ![[モジュール] ウィンドウを確認する](../debugger/media/snapshot-modules.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "58856957"
 
 アプリにスナップポイントを追加して **[コレクションの更新]** ボタンをクリックして有効にすることもできます。
 
-**お困りの際は、** [トラブルシューティングと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)と[スナップショットのデバッグに関する FAQ](../debugger/debug-live-azure-apps-faq.md) のページを参照してください。
+**ヘルプが必要ですか?** [トラブルシューティングと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)と[スナップショットのデバッグに関する FAQ](../debugger/debug-live-azure-apps-faq.md) のページを参照してください。
 
 ## <a name="set-a-conditional-snappoint"></a>条件付きスナップポイントを設定する
 

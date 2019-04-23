@@ -11,12 +11,12 @@ ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fa412b37ae735ffd53acba9d7e9730f4a51ce416
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b1f052392edab92dfd566c14bb0e452ca0056bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113899"
 ---
 # <a name="registering-an-expression-evaluator"></a>式エバリュエーターの登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -109,9 +109,9 @@ namespace EEMC
 ### <a name="dll-server-process"></a>サーバー プロセスの DLL  
  EE、DLL サーバーを登録する: 場合  
   
-1.  クラス ファクトリを登録します`CLSID`通常の COM 規則に従ってします。  
+1. クラス ファクトリを登録します`CLSID`通常の COM 規則に従ってします。  
   
-2.  ヘルパー関数を呼び出す`SetEEMetric`EE メトリックが、次の表に示すように Visual Studio で登録します。 関数は、`SetEEMetric`以下で指定したメトリック dbgmetric.lib ライブラリの一部であるとします。 参照してください[デバッグ用の SDK ヘルパー](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)詳細についてはします。  
+2. ヘルパー関数を呼び出す`SetEEMetric`EE メトリックが、次の表に示すように Visual Studio で登録します。 関数は、`SetEEMetric`以下で指定したメトリック dbgmetric.lib ライブラリの一部であるとします。 参照してください[デバッグ用の SDK ヘルパー](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)詳細についてはします。  
   
     |メトリック|説明|  
     |------------|-----------------|  
@@ -123,7 +123,7 @@ namespace EEMC
     > [!NOTE]
     >  `metricLanguage``GUID`によって名、言語を識別しますが、`guidLang`への引数`SetEEMetric`する言語を選択します。 適切な書き込む必要がありますが、コンパイラは、デバッグ情報ファイルを生成するとき`guidLang`DE が使用するには、どの EE を認識できるようにします。 デは、この言語のシンボル プロバイダーを要求する通常`GUID`、デバッグ情報ファイルに格納されています。  
   
-3.  Hkey_local_machine \software\microsoft\visualstudio の下にキーを作成して Visual Studio を使用した登録\\*X.Y*ここで、 *X.Y*を登録する Visual Studio のバージョンです。  
+3. Hkey_local_machine \software\microsoft\visualstudio の下にキーを作成して Visual Studio を使用した登録\\*X.Y*ここで、 *X.Y*を登録する Visual Studio のバージョンです。  
   
 ### <a name="example"></a>例  
  この関数は、アンマネージ コード (C++) EE の登録し、Visual Studio を使用した登録を解除します自体を表示します。  

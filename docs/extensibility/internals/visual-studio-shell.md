@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1428b4c5a54b901ca3e21ffc2b23d71763e7804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 65f3090c6b96290527d2508ba47c899c81d6e6dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613285"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067080"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]シェルは、プライマリのエージェントでの統合の[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 シェルは、一般的なサービスを共有する Vspackage を有効にするために必要な機能を提供します。 のアーキテクチャの目的は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Vspackage では主要な機能をというには、シェルは、基本的な機能を提供し、Vspackage のコンポーネント間の相互通信をサポートするためのフレームワークです。
@@ -38,17 +38,17 @@ ms.locfileid: "56613285"
 
 - 追跡シェル全体の選択、コンテキスト、および通貨。 シェルでは、次の種類の項目を追跡します。
 
-  -   現在のプロジェクト
+  - 現在のプロジェクト
 
-  -   現在のプロジェクト項目または現在の itemid であります。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+  - 現在のプロジェクト項目または現在の itemid であります。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 
-  -   現在の選択、**プロパティ**ウィンドウまたは `SelectionContainer`
+  - 現在の選択、**プロパティ**ウィンドウまたは `SelectionContainer`
 
-  -   Id または CmdUIGuids コマンド、メニューのおよびツールバーの表示を制御する UI コンテキスト
+  - Id または CmdUIGuids コマンド、メニューのおよびツールバーの表示を制御する UI コンテキスト
 
-  -   アクティブなウィンドウ、ドキュメント、および元に戻すマネージャーなどの現在アクティブな要素
+  - アクティブなウィンドウ、ドキュメント、および元に戻すマネージャーなどの現在アクティブな要素
 
-  -   ダイナミック ヘルプを促進するユーザー コンテキストの属性
+  - ダイナミック ヘルプを促進するユーザー コンテキストの属性
 
   シェルもインストールされている Vspackage と現在のサービス間の通信を仲介します。 シェルのコア機能をサポートしに統合されているすべての VSPackages に利用できるように[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 これらのコア機能には、次の項目があります。
 

@@ -1,7 +1,7 @@
 ---
 title: インストールまたはアップグレードの問題をトラブルシューティングする
 description: ときには、問題が発生してしまうことがあります。 Visual Studio のインストールまたはアップグレードが失敗した場合、このページが役に立ちます。
-ms.date: 08/01/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 464bd3a6e4c5ed8ade1f9174ff205e2eda5c4aff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 5de7976af32601b6df188162aef0e129789a5147
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325121"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857386"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio のインストールとアップグレードの問題のトラブルシューティング
 
@@ -35,7 +35,17 @@ ms.locfileid: "58325121"
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>手順 1 - この問題が既知の問題であるかどうかを確認する
 
+::: moniker range="vs-2017"
+
 Visual Studio インストーラーには、Microsoft が修正に取り組んでいる問題がいくつかあります。 問題の回避策があるかどうか、[リリース ノートの既知の問題に関するセクション](/visualstudio/releasenotes/vs2017-relnotes#-known-issues)で確認してください。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio インストーラーには、Microsoft が修正に取り組んでいる問題がいくつかあります。 問題の回避策があるかどうか、[リリース ノートの既知の問題に関するセクション](/visualstudio/releases/2019/release-notes#-known-issues)で確認してください。
+
+::: moniker-end
 
 ### <a name="step-2---check-with-the-developer-community"></a>手順 2 - 開発者コミュニティを確認する
 
@@ -48,20 +58,47 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 > [!NOTE]
 > 次のアクションを実行すると、Visual Studio インストーラー ファイルが再インストールされ、インストール メタデータがリセットされます。
 
+::: moniker range="vs-2017"
+
 1. Visual Studio インストーラーを閉じます。
 2. Visual Studio インストーラーのディレクトリを削除します。 通常、ディレクトリは `C:\Program Files (x86)\Microsoft Visual Studio\Installer` です。
 3. Visual Studio インストーラーのブートストラップを実行します。 [ダウンロード] フォルダーのブートストラップのファイル名には `vs_[Visual Studio edition]__*.exe` のパターンが使用されている場合があります。 アプリケーションが見つからない場合は、「[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)」ページに移動し、Visual Studio のお使いのエディションの **[ダウンロード]** をクリックして、ブートストラップをダウンロードできます。 次に、実行可能ファイルを実行して、インストール メタデータをリセットします。
 4. Visual Studio のインストールまたは更新を再度試します。 インストーラーのエラーが続く場合は、次の手順に進みます。
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Visual Studio インストーラーを閉じます。
+2. Visual Studio インストーラーのディレクトリを削除します。 通常、ディレクトリは `C:\Program Files (x86)\Microsoft Visual Studio\Installer` です。
+3. Visual Studio インストーラーのブートストラップを実行します。 [ダウンロード] フォルダーのブートストラップのファイル名には `vs_[Visual Studio edition]__*.exe` のパターンが使用されている場合があります。 アプリケーションが見つからない場合は、「[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)」ページに移動し、Visual Studio のお使いのエディションの **[ダウンロード]** をクリックして、ブートストラップをダウンロードできます。 次に、実行可能ファイルを実行して、インストール メタデータをリセットします。
+4. Visual Studio のインストールまたは更新を再度試します。 インストーラーのエラーが続く場合は、次の手順に進みます。
+
+::: moniker-end
+
 ### <a name="step-4---report-a-problem"></a>手順 4 - 問題を報告する
 
 ファイルの破損など、一部の状況では、ケースごとに問題を調べる必要がある場合があります。 サポートに役立つように、次のことを実行します。
+
+::: moniker range="vs-2017"
 
 1. セットアップ ログを収集します。 詳細については、「[Visual Studio のインストール ログを取得する方法](#how-to-get-visual-studio-installation-logs)」をご覧ください。
 2. Visual Studio インストーラーを開き、**[問題の報告]** をクリックして、Visual Studio フィードバック ツールを開きます。
 ![[フィードバックの送信] ボタンからフィードバック ツールを開くことができます](media/report-a-problem.png)
 3. 問題のレポートにタイトルを付け、関連する詳細を入力します。 **[次へ]** をクリックして **[添付ファイル]** セクションに移動し、生成されたログ ファイルを添付します (通常、ファイルは `%TEMP%\vslogs.zip` にあります)。
 4. **[次へ]** をクリックして問題レポートを確認し、**[送信]** をクリックします。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. セットアップ ログを収集します。 詳細については、「[Visual Studio のインストール ログを取得する方法](#how-to-get-visual-studio-installation-logs)」をご覧ください。
+2. Visual Studio インストーラーを開き、**[問題の報告]** をクリックして、Visual Studio フィードバック ツールを開きます。
+![[フィードバックの送信] ボタンからフィードバック ツールを開くことができます](media/vs-2019/vs-installer-report-problem.png)
+3. 問題のレポートにタイトルを付け、関連する詳細を入力します。 **[次へ]** をクリックして **[添付ファイル]** セクションに移動し、生成されたログ ファイルを添付します (通常、ファイルは `%TEMP%\vslogs.zip` にあります)。
+4. **[次へ]** をクリックして問題レポートを確認し、**[送信]** をクリックします。
+
+::: moniker-end
 
 ### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>手順 5 - InstallCleanup.exe を実行してインストール ファイルを削除する
 

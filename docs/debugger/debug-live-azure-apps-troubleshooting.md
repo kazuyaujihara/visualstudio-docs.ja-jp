@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857763"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio でのスナップショットのデバッグに関するトラブルシューティングと既知の問題
 
 この記事に記載されている手順を実行しても問題が解決しない場合は、snaphelp@microsoft.com にお問い合わせください。
 
-## <a name="issue-snappoint-does-not-turn-on"></a>問題: スナップポイントが有効にならない。
+## <a name="issue-snappoint-does-not-turn-on"></a>問題:スナップ ポイントを有効にしません
 
 通常のスナップ アイコンではなく、![スナップポイントの警告アイコン](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "スナップポイントの警告アイコン")がスナップポイントに表示される場合、スナップポイントは有効ではありません。
 
@@ -32,7 +32,7 @@ ms.locfileid: "58857763"
 
 1. app.isua1 のビルドと配置に使用したものと同じバージョンのソース コードがあることを確認します。 配置の正しいシンボルを読み込んでいることを確認します。 これを行うには、スナップショットのデバッグ中に **[モジュール]** ウィンドウを表示し、デバッグ対象のモジュール用に読み込まれた .pdb ファイルが [シンボル ファイル] 列に表示されることを確認します。 スナップショット デバッガーは、配置用のシンボルを自動的にダウンロードして使用しようとします。
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題: スナップショットを開いてもシンボルが読み込まれない
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題:スナップショットを開くと、シンボルが読み込まれない
 
 次のウィンドウが表示される場合、シンボルは読み込まれていません。
 
@@ -48,7 +48,7 @@ ms.locfileid: "58857763"
 
 - また、組織がシンボル サーバーを使用している場合、または別のパスにあるシンボルをドロップする場合は、シンボル設定を使用して配置の正しいシンボルを読み込みます。
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>問題: Cloud Explorer に [スナップショット デバッガーのアタッチ] オプションが表示されない
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>問題:クラウド エクスプ ローラーで、「スナップショット デバッガーのアタッチ」オプションを表示できません。
 
 次の手順を実行します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "58857763"
   - Azure Kubernetes Service - Ubuntu 18.04 上の .NET Core 2.2 以降で実行されている ASP.NET Core アプリケーション。
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>問題: 診断ツールに調整されたスナップショットのみが表示される
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>問題:診断ツールでのスナップショットの調整のみ表示します。
 
 ![調整されたスナップポイント](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "調整されたスナップポイント")
 
@@ -75,7 +75,7 @@ ms.locfileid: "58857763"
 
 - スナップショットはほとんどメモリを占有しませんが、コミット チャージがかかります。 スナップショット デバッガーで、サーバーに大きなメモリ負荷がかかっていることが検出された場合は、スナップショットが取得されません。 既にキャプチャされたスナップショットを削除するには、スナップショット デバッガー セッションを停止して再試行します。
 
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>問題: 複数のバージョンの Visual Studio でスナップショットをデバッグするとエラーが発生する
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>問題:エラーには複数のバージョンの Visual Studio でスナップショットのデバッグ
 
 VS 2019 では、Azure App Service 上に新しいバージョンのスナップショット デバッガー サイト拡張機能が必要です。  このバージョンは、VS 2017 で使用されている古いバージョンのスナップショット デバッガー サイト拡張機能と互換性がありません。  VS 2019 のスナップショット デバッガーを、VS 2017 のスナップショット デバッガーによって以前にデバッグされた Azure App Service にアタッチしようとすると、次のエラーが発生します。
 
@@ -90,7 +90,7 @@ VS 2019 では、Azure App Service 上に新しいバージョンのスナップ
 - INSTRUMENTATIONENGINE_EXTENSION_VERSION
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>問題: スナップショットのデバッグに問題があり、さらに多くのログを有効にする必要がある
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>問題:スナップショットのデバッグの問題があると、複数のログ記録を有効にする必要があります。
 
 ### <a name="enable-agent-logs"></a>エージェント ログを有効にする
 
@@ -100,9 +100,9 @@ VS 2019 では、Azure App Service 上に新しいバージョンのスナップ
 
 - App Service:
   - App Service の Kudu サイト (つまり yourappservice.**scm**.azurewebsites.net) にアクセスし、[デバッグ コンソール] に移動します。
-  - エージェント ログの保存先ディレクトリは D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\ です
+  - エージェントのログは、次のディレクトリに格納されます。D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS:
-  - VM にサインインします。エージェント ログは C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt に格納されます
+  - エージェントのログが次のように格納されている、VM にサインインします。C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<バージョン > \SnapshotDebuggerAgent_*.txt
 - AKS
   - /tmp/diag/AgentLogs/* ディレクトリに移動します
 
@@ -114,7 +114,7 @@ VS 2019 では、Azure App Service 上に新しいバージョンのスナップ
   - エラー ログは自動的に D:\Home\LogFiles\eventlog.xml に送信され、イベントには <<Provider Name="Instrumentation Engine" //>> または "Production Breakpoints" とマークされます
 - VM/VMSS:
   - VM にサインインし、イベント ビューアーを開きます。
-  - *[Windows ログ] > [アプリケーション]* を選択してビューを開きます。
+  - 次のビューを開きます。*Windows ログ > アプリケーション*します。
   - *[Production Breakpoints]\(運用ブレークポイント\)* または *[インストルメンテーション エンジン]* を使用して、*[イベント ソース]* で *[現在のログをフィルター]* を実行します。
 - AKS
   - /tmp/diag/log.txt のインストルメンテーション エンジン ログ (DockerFile で MicrosoftInstrumentationEngine_FileLogPath を設定します)
@@ -142,7 +142,7 @@ VS 2019 では、Azure App Service 上に新しいバージョンのスナップ
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのデバッグ](../debugger/index.md)
-- [スナップショット デバッガーを使用してライブ ASP.NET アプリをデバッグする](../debugger/debug-live-azure-applications.md)
-- [スナップショット デバッガーを使用してライブ ASP.NET Azure Virtual Machines\Virtual Machine Scale Sets をデバッグする](../debugger/debug-live-azure-virtual-machines.md)
-- [スナップショット デバッガーを使用してライブ ASP.NET Azure Kubernetes をデバッグする](../debugger/debug-live-azure-kubernetes.md)
+- [スナップショット デバッガーを使用して、ライブ ASP.NET アプリをデバッグします。](../debugger/debug-live-azure-applications.md)
+- [ライブ ASP.NET Azure 仮想 Machines\Virtual マシン スケール セットのスナップショット デバッガーを使用したデバッグします。](../debugger/debug-live-azure-virtual-machines.md)
+- [スナップショット デバッガーを使用して、ライブの ASP.NET Azure Kubernetes デバッグします。](../debugger/debug-live-azure-kubernetes.md)
 - [スナップショットのデバッグに関する FAQ](../debugger/debug-live-azure-apps-faq.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6a315adb859445c5efa15df5b8366815bfc86d7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0b0587f6c1c5d7577d8fddffb73db31f09248fae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075650"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>方法 : Visual Basic 開発者設定が適用されたビルド構成を管理する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ ms.locfileid: "54784788"
   
 #### <a name="to-enable-advanced-build-configurations"></a>ビルド構成の詳細を有効にするには  
   
-1.  **[ツール]** メニューの **[オプション]** をクリックします。  
+1. **[ツール]** メニューの **[オプション]** をクリックします。  
   
-2.  **[プロジェクトおよびソリューション]** を展開し、**[全般]** をクリックします。  
+2. **[プロジェクトおよびソリューション]** を展開し、**[全般]** をクリックします。  
   
     > [!NOTE]
     >  **[全般]** ノードは、**[すべての設定を表示]** オプションがオフになっている場合でも表示されます。 使用可能なすべてのオプションを表示する場合は、**[すべての設定を表示]** をクリックします。  
   
-3.  **[ビルド構成の詳細を表示]** をクリックします。  
+3. **[ビルド構成の詳細を表示]** をクリックします。  
   
-4.  **[OK]** をクリックします。  
+4. **[OK]** をクリックします。  
   
      **[ビルド]** メニューで **[構成マネージャー]** を使用できるようになり、**[構成]** 一覧と **[プラットフォーム]** 一覧がプロジェクト デザイナーに表示されるようになります。  
   

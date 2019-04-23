@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25542f9179917c5675eb56753f79db895f5d2ddf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b395b396ab182ca03be35cddc8d237506b43e39c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066612"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>方法: ストアド プロシージャや関数にマップされる DataContext メソッドを作成する (O/R デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ストアド プロシージャおよび関数に追加できる、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]として<xref:System.Data.Linq.DataContext>メソッド。 メソッドを呼び出して必要なパラメーターを渡すと、データベースでストアド プロシージャまたは関数が実行され、<xref:System.Data.Linq.DataContext> メソッドの戻り値の型のデータが返されます。 詳細については<xref:System.Data.Linq.DataContext>メソッドを参照してください[DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md)します。  
   
 > [!NOTE]
@@ -35,17 +34,17 @@ ms.locfileid: "58964294"
   
 #### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>自動生成された型を返す DataContext メソッドを作成するには  
   
-1.  **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**、展開、 **Stored Procedures**を使用するデータベースのノード。  
+1. **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**、展開、 **Stored Procedures**を使用するデータベースのノード。  
   
-2.  目的のストアド プロシージャを探し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]の空の領域にドラッグします。  
+2. 目的のストアド プロシージャを探し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]の空の領域にドラッグします。  
   
      自動生成された戻り値の型を使用して <xref:System.Data.Linq.DataContext> メソッドが作成され、**[メソッド]** ペインに表示されます。  
   
 #### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>エンティティ クラスを戻り値の型とする DataContext メソッドを作成するには  
   
-1.  **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**、展開、 **Stored Procedures**を使用するデータベースのノード。  
+1. **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**、展開、 **Stored Procedures**を使用するデータベースのノード。  
   
-2.  目的のストアド プロシージャを探し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]の既存のエンティティ クラスにドラッグします。  
+2. 目的のストアド プロシージャを探し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]の既存のエンティティ クラスにドラッグします。  
   
      選択したエンティティ クラスを戻り値の型として <xref:System.Data.Linq.DataContext> メソッドが作成され、**[メソッド]** ペインに表示されます。  
   

@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977069"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058877"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>例外のトラブルシューティング。System.ServiceModel.Security.MessageSecurityException
 A<xref:System.ServiceModel.Security.MessageSecurityException>ときに例外がスローされる[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]メッセージが適切に保護されていないまたは改ざんされたことを決定します。 このエラーが最も発生しやすいのは、次の条件がすべて該当する場合です。  
   
--   リモート デスクトップ接続やターミナル サービスなどのリモート接続を介した WCF サービス参照を使用して、Web サイトまたは Web アプリケーション プロジェクト内の WCF サービス (.svc) と通信している。  
+- リモート デスクトップ接続やターミナル サービスなどのリモート接続を介した WCF サービス参照を使用して、Web サイトまたは Web アプリケーション プロジェクト内の WCF サービス (.svc) と通信している。  
   
--   リモート サイトに管理者のアクセス許可がない。  
+- リモート サイトに管理者のアクセス許可がない。  
   
--   リモート サイトの localhost に対する要求が [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 開発サーバーによって処理されている。  
+- リモート サイトの localhost に対する要求が [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 開発サーバーによって処理されている。  
   
 ## <a name="associated-tips"></a>関連するヒント  
  **ASP.Net 開発サーバーを使用する場合は、NTLM 認証の問題を解決します。**  
@@ -78,11 +78,11 @@ A<xref:System.ServiceModel.Security.MessageSecurityException>ときに例外が�
   
 #### <a name="to-turn-off-ntlm-security"></a>NTLM セキュリティをオフにするには  
   
-1.  **[ソリューション エクスプローラー]** で Web サイト名を右クリックして、 **[プロパティ ページ]** をクリックします。  
+1. **[ソリューション エクスプローラー]** で Web サイト名を右クリックして、 **[プロパティ ページ]** をクリックします。  
   
-2.  **[開始オプション]** をクリックし、 **[NTLM 認証]** チェック ボックスをオフにします。  
+2. **[開始オプション]** をクリックし、 **[NTLM 認証]** チェック ボックスをオフにします。  
   
-3.  **[OK]** をクリックします。  
+3. **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

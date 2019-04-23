@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22db62a186c1f1c668a0304a9b586aca85e713c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4d300651731b38b9b86421d36d9de169dc6464d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758511"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651046"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>JavaScript IntelliSense の JSDoc コメントを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,6 @@ IntelliSense in Visual Studio は、標準的な JSDoc コメントを使用し�
 
 ## <a name="jsdoc-comment-tags"></a>JSDoc コメント用のタグ  
  次の標準的な JSDoc コメント タグは、コードについての情報を表示するために IntelliSense によって使用されます。  
-
 
 |  JSDoc タグ   |                       構文                        |                                                     メモ                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35f8486ae85f0933d30b9587f2fc59652071a85
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110532"
 ---
 # <a name="manifest-from-resources"></a>リソースからのマニフェスト
 リソースのツールから、マニフェストとは、イメージ リソース (.png または .xaml ファイル) の一覧を受け取り、Visual Studio イメージのサービスで使用するそれらのイメージを許可する .imagemanifest ファイルを生成するコンソール アプリケーションです。 さらに、このツールを使用して、既存の .imagemanifest にイメージを追加することができます。 このツールは、イメージを Visual Studio 拡張機能の高 DPI とテーマのサポートを追加するのに役立ちます。 生成された .imagemanifest ファイルに含まれ、Visual Studio 拡張機能 (.vsix) の一部として配置する必要があります。
@@ -43,25 +43,25 @@ ms.locfileid: "56626727"
 
  **例**
 
--   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative
+- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
 
--   ManifestFromResources/resources:D:\Images\Image1.png;D:\Images\Image1.xaml/assembly:My.Assembly.Name/guidName:MyImages/newGuids/newIds
+- ManifestFromResources/resources:D:\Images\Image1.png;D:\Images\Image1.xaml/assembly:My.Assembly.Name/guidName:MyImages/newGuids/newIds
 
 ## <a name="notes"></a>メモ
 
--   ツールは、.png、.xaml ファイルのみをサポートします。 その他のイメージまたはファイルの種類は無視されます。 リソースの解析中に発生したすべてのサポートされていない型では、警告が生成されます。 ツールが終了するとイメージを検出するサポートされていない場合、リソースの解析エラーが生成されます
+- ツールは、.png、.xaml ファイルのみをサポートします。 その他のイメージまたはファイルの種類は無視されます。 リソースの解析中に発生したすべてのサポートされていない型では、警告が生成されます。 ツールが終了するとイメージを検出するサポートされていない場合、リソースの解析エラーが生成されます
 
--   .Png イメージに対する推奨形式では、ツールは、イメージの実際のサイズとは異なる場合でも、形式が指定したサイズ、.png のサイズ/ディメンションの値が設定されます。
+- .Png イメージに対する推奨形式では、ツールは、イメージの実際のサイズとは異なる場合でも、形式が指定したサイズ、.png のサイズ/ディメンションの値が設定されます。
 
--   幅と高さの形式は .png イメージでは、省略できますが、ツールは、イメージの実際の幅と高さを読み取り、それらのイメージのサイズ/ディメンションの値を使用しています。
+- 幅と高さの形式は .png イメージでは、省略できますが、ツールは、イメージの実際の幅と高さを読み取り、それらのイメージのサイズ/ディメンションの値を使用しています。
 
--   ツールは、スタンドアロン画像イメージ ストリップに分割し、それらを既存のマニフェストに追加しようとするのでこのツールを複数回の同じ .imagemanifest 同じイメージ ストリップで実行されているが、マニフェストのエントリが重複する発生します。
+- ツールは、スタンドアロン画像イメージ ストリップに分割し、それらを既存のマニフェストに追加しようとするのでこのツールを複数回の同じ .imagemanifest 同じイメージ ストリップで実行されているが、マニフェストのエントリが重複する発生します。
 
--   マージ (/newGuids または/newIds を省略すると) は、ツールで生成されるマニフェストののみ行ってください。 カスタマイズまたはその他の手段を使用して生成されたマニフェストを正しくマージされません可能性があります。
+- マージ (/newGuids または/newIds を省略すると) は、ツールで生成されるマニフェストののみ行ってください。 カスタマイズまたはその他の手段を使用して生成されたマニフェストを正しくマージされません可能性があります。
 
--   ネイティブ アセンブリに対して生成されるマニフェストは、リソース、ネイティブ アセンブリの .rc ファイルから Id と一致する ID のシンボルを生成後の手作業で編集をする必要があります。
+- ネイティブ アセンブリに対して生成されるマニフェストは、リソース、ネイティブ アセンブリの .rc ファイルから Id と一致する ID のシンボルを生成後の手作業で編集をする必要があります。
 
 ## <a name="sample-output"></a>出力例
  **単純なイメージ マニフェスト**

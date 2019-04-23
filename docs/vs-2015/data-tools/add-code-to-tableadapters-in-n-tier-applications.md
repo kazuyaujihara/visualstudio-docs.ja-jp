@@ -17,17 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 423975825e74b7dab29f19697e1e17fb00430f9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115368"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>n 層アプリケーションの TableAdapters にコードを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 機能を拡張することができます、`TableAdapter`の部分クラス ファイルを作成して、`TableAdapter`コードを追加し、(コードを追加するのではなく、 *DatasetName*します。DataSet.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、次を参照してください。[部分](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)または[partial (型)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)します。  
   
  定義するコードを`TableAdapter`は変更されるたびに生成される、`TableAdapter`します。 構成を変更するウィザードの実行中に変更されたときに、このコードは生成も、`TableAdapter`します。 コードが再生成中に削除されないようにする、 `TableAdapter`、コードの部分クラス ファイルを追加、`TableAdapter`します。  
@@ -44,17 +43,17 @@ ms.locfileid: "58972780"
   
 ### <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>N 層アプリケーションでの TableAdapter にユーザー コードを追加するには  
   
-1.  .Xsd ファイル (データセット) を含むプロジェクトを見つけます。  
+1. .Xsd ファイル (データセット) を含むプロジェクトを見つけます。  
   
-2.  ダブルクリックして、 **.xsd**ファイル データセットを開きます。  
+2. ダブルクリックして、 **.xsd**ファイル データセットを開きます。  
   
-3.  右クリックし、 `TableAdapter` 、コードを追加し、選択する**コードの表示**します。  
+3. 右クリックし、 `TableAdapter` 、コードを追加し、選択する**コードの表示**します。  
   
      部分クラスが作成され、コード エディターで開きます。  
   
-4.  部分クラス宣言内でコードを追加します。  
+4. 部分クラス宣言内でコードを追加します。  
   
-5.  次の例では、コードを追加する場所、`CustomersTableAdapter`で、 `NorthwindDataSet`:  
+5. 次の例では、コードを追加する場所、`CustomersTableAdapter`で、 `NorthwindDataSet`:  
   
     ```vb  
     Partial Public Class CustomersTableAdapter  

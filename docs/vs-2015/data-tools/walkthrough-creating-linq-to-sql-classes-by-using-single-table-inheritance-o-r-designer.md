@@ -9,46 +9,45 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62b56e11f5f91485f8fb38f4b087ee2466ad43f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111975"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>チュートリアル: 単一テーブル継承 (O/R デザイナー) を使用して LINQ to SQL クラスを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)リレーショナル システムに実装されている通常の単一テーブル継承をサポートしています。 このチュートリアルで提供される汎用的な手順、[方法。O/R デザイナーを使用して継承を構成する](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)トピックでの継承の使用を示すために、実際のデータを提供し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。  
   
  このチュートリアルでは次のタスクを行います。  
   
--   データベース テーブルを作成し、データを追加します。  
+- データベース テーブルを作成し、データを追加します。  
   
--   Windows フォーム アプリケーションを作成します。  
+- Windows フォーム アプリケーションを作成します。  
   
--   [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] ファイルをプロジェクトに追加します。  
+- [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] ファイルをプロジェクトに追加します。  
   
--   新しいエンティティ クラスを作成します。  
+- 新しいエンティティ クラスを作成します。  
   
--   継承を使用するようにエンティティ クラスを構成します。  
+- 継承を使用するようにエンティティ クラスを構成します。  
   
--   継承されたクラスをクエリします。  
+- 継承されたクラスをクエリします。  
   
--   Windows フォームにデータを表示します。  
+- Windows フォームにデータを表示します。  
   
 ## <a name="create-a-table-to-inherit-from"></a>継承するテーブルの作成  
  継承の動作を確認するには、小さな Person テーブルを作成し、それをベース クラスとして使用して、そのテーブルから継承する Employee オブジェクトを作成します。  
   
 #### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>ベース テーブルを作成して継承の動作を確認するには  
   
-1.  **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**を右クリックし、**テーブル**ノードをクリックします**新しいテーブルの追加**します。  
+1. **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**を右クリックし、**テーブル**ノードをクリックします**新しいテーブルの追加**します。  
   
     > [!NOTE]
     >  Northwind データベースを使用することも、テーブルを追加できる他の任意のデータベースを使用することもできます。  
   
-2.  テーブル デザイナーで、次の列をテーブルに追加します。  
+2. テーブル デザイナーで、次の列をテーブルに追加します。  
   
     |列名|データ型|Null を許容|  
     |-----------------|---------------|-----------------|  
@@ -58,18 +57,18 @@ ms.locfileid: "58976246"
     |**LastName**|**nvarchar(200)**|**False**|  
     |**Manager**|**int**|**True**|  
   
-3.  ID 列を主キーとして設定します。  
+3. ID 列を主キーとして設定します。  
   
-4.  テーブルを **Person** という名前で保存します。  
+4. テーブルを **Person** という名前で保存します。  
   
 ## <a name="add-data-to-the-table"></a>テーブルへのデータの追加  
  継承が正しく構成されていることを確認できるように、単一テーブル継承のテーブルの各クラスにデータを入力する必要があります。  
   
 #### <a name="to-add-data-to-the-table"></a>テーブルにデータを追加するには  
   
-1.  データ ビューでテーブルを開きます  (を右クリックし、**人**テーブルに**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**クリック**テーブル データの表示**)。  
+1. データ ビューでテーブルを開きます  (を右クリックし、**人**テーブルに**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**クリック**テーブル データの表示**)。  
   
-2.  テーブルに次のデータをコピーします。 (コピーして、結果ウィンドウで、行全体を選択して、テーブルに貼り付けます。)  
+2. テーブルに次のデータをコピーします。 (コピーして、結果ウィンドウで、行全体を選択して、テーブルに貼り付けます。)  
   
     ||||||  
     |-|-|-|-|-|  
@@ -92,24 +91,24 @@ ms.locfileid: "58976246"
   
 #### <a name="to-create-the-new-windows-application"></a>新しい Windows アプリケーションを作成するには  
   
-1.  **ファイル**] メニューの [新しいプロジェクトを作成します。  
+1. **ファイル**] メニューの [新しいプロジェクトを作成します。  
   
-2.  プロジェクトに名前を**InheritanceWalkthrough**します。  
+2. プロジェクトに名前を**InheritanceWalkthrough**します。  
   
     > [!NOTE]
     >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]は Visual Basic プロジェクトと C# プロジェクトでサポートされています。 新しいプロジェクトはこれらの言語のどちらかで作成してください。  
   
-3.  をクリックして、 **Windows フォーム アプリケーション**テンプレートとクリック**OK**。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
+3. をクリックして、 **Windows フォーム アプリケーション**テンプレートとクリック**OK**。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
   
-4.  InheritanceWalkthrough プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。  
+4. InheritanceWalkthrough プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。  
   
 ## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>LINQ to SQL クラス ファイルをプロジェクトに追加します。  
   
 #### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>LINQ to SQL ファイルをプロジェクトに追加するには  
   
-1.  **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。  
+1. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。  
   
-2.  **LINQ to SQL クラス** テンプレートをクリックし、**[追加]** をクリックします。  
+2. **LINQ to SQL クラス** テンプレートをクリックし、**[追加]** をクリックします。  
   
      プロジェクトに .dbml ファイルが追加され、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]が開きます。  
   
@@ -118,21 +117,21 @@ ms.locfileid: "58976246"
   
 #### <a name="to-create-the-inheritance"></a>継承を作成するには  
   
-1.  **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**に移動し、 **Person**先ほど作成したテーブル。  
+1. **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**に移動し、 **Person**先ほど作成したテーブル。  
   
-2.  ドラッグ、 **Person**テーブルを[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]デザイン サーフェイス。  
+2. ドラッグ、 **Person**テーブルを[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]デザイン サーフェイス。  
   
-3.  1 秒あたりのドラッグ**Person**テーブルを[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]し、名前に変更**従業員**します。  
+3. 1 秒あたりのドラッグ**Person**テーブルを[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]し、名前に変更**従業員**します。  
   
-4.  **Person** オブジェクトから **Manager** プロパティを削除します。  
+4. **Person** オブジェクトから **Manager** プロパティを削除します。  
   
-5.  **Employee** オブジェクトから、**Type**、**ID**、**FirstName**、および **LastName** の各プロパティを削除します。 (つまり、**Manager** 以外のプロパティをすべて削除します。)  
+5. **Employee** オブジェクトから、**Type**、**ID**、**FirstName**、および **LastName** の各プロパティを削除します。 (つまり、**Manager** 以外のプロパティをすべて削除します。)  
   
-6.  **ツールボックス**の **[オブジェクト リレーショナル デザイナー]** タブで、**Person** オブジェクトと **Employee** オブジェクトの間に**継承**を作成します。 これを作成するには、**ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放します。 次に、クリックして、**従業員**オブジェクトをクリックし、 **Person**内のオブジェクト、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 継承線の矢印が指す、 **Person**オブジェクト。  
+6. **ツールボックス**の **[オブジェクト リレーショナル デザイナー]** タブで、**Person** オブジェクトと **Employee** オブジェクトの間に**継承**を作成します。 これを作成するには、**ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放します。 次に、クリックして、**従業員**オブジェクトをクリックし、 **Person**内のオブジェクト、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 継承線の矢印が指す、 **Person**オブジェクト。  
   
-7.  デザイン サーフェイスで**継承**線をクリックします。  
+7. デザイン サーフェイスで**継承**線をクリックします。  
   
-8.  **[識別子プロパティ]** プロパティを **Type** に設定します。  
+8. **[識別子プロパティ]** プロパティを **Type** に設定します。  
   
 9. **[派生クラスの識別子の値]** プロパティを **2** に設定します。  
   
@@ -147,11 +146,11 @@ ms.locfileid: "58976246"
   
 #### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>LINQ クエリを作成し、フォームに結果を表示するには  
   
-1.  ドラッグ、 **ListBox**を Form1 にします。  
+1. ドラッグ、 **ListBox**を Form1 にします。  
   
-2.  フォームをダブルクリックして、`Form1_Load` イベント ハンドラーを作成します。  
+2. フォームをダブルクリックして、`Form1_Load` イベント ハンドラーを作成します。  
   
-3.  `Form1_Load` イベント ハンドラーに次のコードを追加します。  
+3. `Form1_Load` イベント ハンドラーに次のコードを追加します。  
   
     ```vb  
     Dim dc As New DataClasses1DataContext  
@@ -181,11 +180,11 @@ ms.locfileid: "58976246"
   
 #### <a name="to-test-the-application"></a>アプリケーションをテストするには  
   
-1.  F5 キーを押します。  
+1. F5 キーを押します。  
   
-2.  [Type] 列の値が 2 のレコードのみが表示されていることを確認します。  
+2. [Type] 列の値が 2 のレコードのみが表示されていることを確認します。  
   
-3.  フォームを閉じます  (**[デバッグ]** メニューの **[デバッグの停止]** をクリックします。)  
+3. フォームを閉じます  (**[デバッグ]** メニューの **[デバッグの停止]** をクリックします。)  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
