@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67ac7693d4332c4dc5d6eae3fb89cf3e9a9c2384
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 7e5bf51fd416fd9ccbb2343c17412984858429da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953031"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115290"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションの発行言語を変更する
 
@@ -34,15 +34,15 @@ ms.locfileid: "54953031"
 
 ## <a name="to-change-the-publish-language"></a>発行の言語を変更するには
 
-1.  **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-2.  **[発行]** タブをクリックします。
+2. **発行**タブをクリックします。
 
-3.  をクリックして、**オプション**ボタンをクリックする、**発行オプション** ダイアログ ボックス。
+3. **オプション**ボタンをクリックして、**発行オプション** ダイアログ ボックスを開きます。
 
-4.  クリックして**説明**します。
+4. **説明**をクリックします。
 
-5.  **発行オプション** ダイアログ ボックスで、言語を選択し、カルチャから、**発行の言語**ドロップダウン リストをクリック**OK**します。
+5. **発行オプション** ダイアログ ボックスで、言語を選択し、カルチャから、**発行の言語**ドロップダウン リストをクリック**OK**します。
 
 ## <a name="see-also"></a>関連項目
 

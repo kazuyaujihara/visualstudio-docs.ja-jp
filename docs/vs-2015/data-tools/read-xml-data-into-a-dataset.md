@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b384ad0dd8c121a03f8ee8840f55352d435218c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b858a6c513c1b9e1caa4f17c1bd8af067de47365
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653207"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114900"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML データのデータセットへの読み込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
   
  このチュートリアルは、5 つの主な手順で構成されます。  
   
-1.  新しいプロジェクトを作成します。  
+1. 新しいプロジェクトを作成します。  
   
-2.  データセットに読み込まれる XML ファイルの作成  
+2. データセットに読み込まれる XML ファイルの作成  
   
-3.  ユーザー インターフェイスの作成  
+3. ユーザー インターフェイスの作成  
   
-4.  データセットの作成や、XML ファイルの読み取りで表示する、<xref:System.Windows.Forms.DataGridView>コントロール  
+4. データセットの作成や、XML ファイルの読み取りで表示する、<xref:System.Windows.Forms.DataGridView>コントロール  
   
-5.  XML ファイルに基づく XML スキーマを表示するコードを追加する、<xref:System.Windows.Forms.TextBox>コントロール  
+5. XML ファイルに基づく XML スキーマを表示するコードを追加する、<xref:System.Windows.Forms.TextBox>コントロール  
   
 > [!NOTE]
 >  ダイアログ ボックスとメニュー コマンド、アクティブな設定またはエディションによって、ヘルプの記載を異なる場合がありますを表示するを使用しています。 設定を変更する、**ツール**メニューの **インポートおよびエクスポート設定**します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
@@ -55,11 +55,11 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
   
 #### <a name="to-create-the-new-windows-project"></a>新しい Windows プロジェクトを作成するには  
   
-1.  **ファイル**] メニューの [新しいプロジェクトを作成します。  
+1. **ファイル**] メニューの [新しいプロジェクトを作成します。  
   
-2.  プロジェクトに `ReadingXML` という名前を付けます。  
+2. プロジェクトに `ReadingXML` という名前を付けます。  
   
-3.  選択**Windows アプリケーション**、し、 **OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
+3. 選択**Windows アプリケーション**、し、 **OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
   
      **ReadingXML**プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。  
   
@@ -68,13 +68,13 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
   
 #### <a name="to-create-the-xml-file-that-will-be-read-into-the-dataset"></a>データセットに読み込むことが XML ファイルを作成するには  
   
-1.  **プロジェクト**メニューの **新しい項目の追加**します。  
+1. **プロジェクト**メニューの **新しい項目の追加**します。  
   
-2.  選択**XML ファイル**、ファイルに名前を`authors.xml`、し、**追加**します。  
+2. 選択**XML ファイル**、ファイルに名前を`authors.xml`、し、**追加**します。  
   
      XML ファイルでは、デザイナーに読み込まし、編集の準備ができています。  
   
-3.  XML 宣言の下のエディターには、次のコードを貼り付けます。  
+3. XML 宣言の下のエディターには、次のコードを貼り付けます。  
   
     ```xml  
     <Authors_Table>  
@@ -136,34 +136,34 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
     </Authors_Table>  
     ```  
   
-4.  **ファイル**メニューの **保存 authors.xml**します。  
+4. **ファイル**メニューの **保存 authors.xml**します。  
   
 ## <a name="create-the-user-interface"></a>ユーザー インターフェイスを作成する  
  このアプリケーションのユーザー インターフェイスを次の構成します。  
   
--   A<xref:System.Windows.Forms.DataGridView>データとして XML ファイルの内容を表示するコントロール。  
+- A<xref:System.Windows.Forms.DataGridView>データとして XML ファイルの内容を表示するコントロール。  
   
--   A <xref:System.Windows.Forms.TextBox> XML ファイルの XML スキーマを表示するコントロール。  
+- A <xref:System.Windows.Forms.TextBox> XML ファイルの XML スキーマを表示するコントロール。  
   
--   2 つ<xref:System.Windows.Forms.Button>コントロール。  
+- 2 つ<xref:System.Windows.Forms.Button>コントロール。  
   
-    -   1 つのボタンを選択し、XML ファイルをデータセットに読み込みますで表示、<xref:System.Windows.Forms.DataGridView>コントロール。  
+    - 1 つのボタンを選択し、XML ファイルをデータセットに読み込みますで表示、<xref:System.Windows.Forms.DataGridView>コントロール。  
   
-    -   2 番目のボタンと、データセットからスキーマを抽出し、<xref:System.IO.StringWriter>で表示、<xref:System.Windows.Forms.TextBox>コントロール。  
+    - 2 番目のボタンと、データセットからスキーマを抽出し、<xref:System.IO.StringWriter>で表示、<xref:System.Windows.Forms.TextBox>コントロール。  
   
 #### <a name="to-add-controls-to-the-form"></a>フォームにコントロールを追加するには  
   
-1.  開いている`Form1`デザイン ビューで。  
+1. 開いている`Form1`デザイン ビューで。  
   
-2.  **ツールボックス**、次のコントロールをフォームにドラッグします。  
+2. **ツールボックス**、次のコントロールをフォームにドラッグします。  
   
-    -   1 つ<xref:System.Windows.Forms.DataGridView>コントロール  
+    - 1 つ<xref:System.Windows.Forms.DataGridView>コントロール  
   
-    -   1 つ<xref:System.Windows.Forms.TextBox>コントロール  
+    - 1 つ<xref:System.Windows.Forms.TextBox>コントロール  
   
-    -   2 つ<xref:System.Windows.Forms.Button>コントロール  
+    - 2 つ<xref:System.Windows.Forms.Button>コントロール  
   
-3.  次のプロパティを設定します。  
+3. 次のプロパティを設定します。  
   
     |コントロール|プロパティ|設定|  
     |-------------|--------------|-------------|  
@@ -179,46 +179,46 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
   
 #### <a name="to-create-a-new-dataset-that--receives-the-xml-data"></a>XML データを受信する新しいデータセットを作成するには  
   
-1.  **ソリューション エクスプ ローラー**、ソース ファイルを選択します**Form1**を選び、**ビュー デザイナー**のボタンでは、**ソリューション エクスプ ローラー**ツールバー。  
+1. **ソリューション エクスプ ローラー**、ソース ファイルを選択します**Form1**を選び、**ビュー デザイナー**のボタンでは、**ソリューション エクスプ ローラー**ツールバー。  
   
-2.  [ツールボックス、[データ] タブ](../ide/reference/toolbox-data-tab.md)、ドラッグ、**データセット**に**Form1**します。  
+2. [ツールボックス、[データ] タブ](../ide/reference/toolbox-data-tab.md)、ドラッグ、**データセット**に**Form1**します。  
   
-3.  **データセットの追加**ダイアログ ボックスで、**型指定されていないデータセット**、し、 **OK**します。  
+3. **データセットの追加**ダイアログ ボックスで、**型指定されていないデータセット**、し、 **OK**します。  
   
      **DataSet1**コンポーネント トレイに追加されます。  
   
-4.  **プロパティ**ウィンドウで、設定、**名前**と<xref:System.Data.DataSet.DataSetName%2A>プロパティ`AuthorsDataSet`します。  
+4. **プロパティ**ウィンドウで、設定、**名前**と<xref:System.Data.DataSet.DataSetName%2A>プロパティ`AuthorsDataSet`します。  
   
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>データセットに XML ファイルを読み取るためのイベント ハンドラーを作成します。  
  **読み取り XML**ボタンは、データセットに、XML ファイルを読み取ります。 プロパティを設定します、<xref:System.Windows.Forms.DataGridView>データセットにバインドするコントロール。  
   
 #### <a name="to-add-code-to-the-readxmlbuttonclick-event-handler"></a>ReadXmlButton_Click イベント ハンドラーにコードを追加するには  
   
-1.  **ソリューション エクスプ ローラー**を選択します**Form1**を選び、**ビュー デザイナー**のボタンでは、**ソリューション エクスプ ローラー**ツールバー。  
+1. **ソリューション エクスプ ローラー**を選択します**Form1**を選び、**ビュー デザイナー**のボタンでは、**ソリューション エクスプ ローラー**ツールバー。  
   
-2.  選択、**読み取り XML**ボタンをクリックします。  
+2. 選択、**読み取り XML**ボタンをクリックします。  
   
      **コード エディター**で開き、`ReadXmlButton_Click`イベント ハンドラー。  
   
-3.  次のコードを入力、`ReadXmlButton_Click`イベント ハンドラー。  
+3. 次のコードを入力、`ReadXmlButton_Click`イベント ハンドラー。  
   
      [!code-csharp[VbRaddataFillingAndExecuting#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/CS/Form1.cs#2)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#2)]  
   
-4.  `ReadXMLButton_Click`イベント ハンドラーのコードの変更、`filepath =`正しいパスへのエントリ。  
+4. `ReadXMLButton_Click`イベント ハンドラーのコードの変更、`filepath =`正しいパスへのエントリ。  
   
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>テキスト ボックスに、スキーマを表示するイベント ハンドラーを作成します。  
  **スキーマの表示**ボタンを作成、<xref:System.IO.StringWriter>スキーマを使用して格納しに表示されるオブジェクト、<xref:System.Windows.Forms.TextBox>コントロール。  
   
 #### <a name="to-add-code-to-the-showschemabuttonclick-event-handler"></a>ShowSchemaButton_Click イベント ハンドラーにコードを追加するには  
   
-1.  **ソリューション エクスプ ローラー**を選択します**Form1**を選び、**ビュー デザイナー**ボタンをクリックします。  
+1. **ソリューション エクスプ ローラー**を選択します**Form1**を選び、**ビュー デザイナー**ボタンをクリックします。  
   
-2.  選択、**スキーマの表示**ボタンをクリックします。  
+2. 選択、**スキーマの表示**ボタンをクリックします。  
   
      **コード エディター**で開き、`ShowSchemaButton_Click`イベント ハンドラー。  
   
-3.  次のコードを入力、`ShowSchemaButton_Click`イベント ハンドラー。  
+3. 次のコードを入力、`ShowSchemaButton_Click`イベント ハンドラー。  
   
      [!code-csharp[VbRaddataFillingAndExecuting#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/CS/Form1.cs#3)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
@@ -227,13 +227,13 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
 
 フォームをテストして、期待どおりに動作することを確認します。
   
-1.  選択**F5**アプリケーションを実行します。  
+1. 選択**F5**アプリケーションを実行します。  
   
-2.  選択、**読み取り XML**ボタンをクリックします。  
+2. 選択、**読み取り XML**ボタンをクリックします。  
   
      DataGridView は、XML ファイルの内容を表示します。  
   
-3.  選択、**スキーマの表示**ボタンをクリックします。  
+3. 選択、**スキーマの表示**ボタンをクリックします。  
   
      テキスト ボックスには、XML ファイルの XML スキーマが表示されます。  
   
@@ -241,9 +241,9 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
 
 このチュートリアルでは、データセット、XML ファイルを読み取るだけでなく XML ファイルの内容に基づくスキーマの作成の基本を説明します。 次に実行する可能性のあるいくつかのタスクを次に示します。  
   
--   データセットと書き戻せる XML としてデータを編集します。 詳細については、「 <xref:System.Data.DataSet.WriteXml%2A> 」を参照してください。  
+- データセットと書き戻せる XML としてデータを編集します。 詳細については、「 <xref:System.Data.DataSet.WriteXml%2A> 」を参照してください。  
   
--   データセット内のデータを編集し、データベースに書き込みます。
+- データセット内のデータを編集し、データベースに書き込みます。
   
 ## <a name="see-also"></a>関連項目  
  [データに関するチュートリアル](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   

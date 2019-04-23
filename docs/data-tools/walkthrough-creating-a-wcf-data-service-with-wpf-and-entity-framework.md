@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d9e41de9fc395b673f38fa1f7b343594bf905a8d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223170"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081386"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成
 このチュートリアルでは、[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] Web アプリケーションでホストされる簡単な [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] を作成して、Windows フォーム アプリケーションからアクセスする方法について説明します。
@@ -90,11 +90,11 @@ ms.locfileid: "57223170"
 
 5. **[データ接続の選択]** ページで、次のいずれかの操作を行います。
 
-    -   Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
+    - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
          - または -
 
-    -   **[新しい接続]** を選択して、新しいデータ接続を構成します。 詳細については、次を参照してください。[新しい接続を追加](../data-tools/add-new-connections.md)します。
+    - **[新しい接続]** を選択して、新しいデータ接続を構成します。 詳細については、次を参照してください。[新しい接続を追加](../data-tools/add-new-connections.md)します。
 
 6. データベースにパスワードが必要な場合は、**[はい、重要情報を接続文字列に含めます。]** を選択し、**[次へ]** をクリックします。
 

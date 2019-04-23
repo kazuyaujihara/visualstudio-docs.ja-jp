@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9c4c8cea0b29994bb880dd0d93832da0e875cc56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115602"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>方法: O/R デザイナーを使用して継承を構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "59662271"
   
 ### <a name="to-create-inherited-data-classes"></a>継承されたデータ クラスを作成するには  
   
-1.  開く、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を追加して、 **LINQ to SQL クラス**項目を既存の Visual Basic または c# プロジェクト。  
+1. 開く、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を追加して、 **LINQ to SQL クラス**項目を既存の Visual Basic または c# プロジェクト。  
   
-2.  基本クラスとして使用するテーブルを [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]にドラッグします。  
+2. 基本クラスとして使用するテーブルを [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]にドラッグします。  
   
-3.  上にテーブルの 2 番目のコピーをドラッグして、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]し名前を変更します。 これは、派生クラス、つまりサブクラスです。  
+3. 上にテーブルの 2 番目のコピーをドラッグして、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]し名前を変更します。 これは、派生クラス、つまりサブクラスです。  
   
-4.  **ツールボックス**の **[オブジェクト リレーショナル デザイナー]** タブで **[継承]** をクリックし、サブクラス (名前を変更したテーブル) をクリックして、基本クラスに接続します。  
+4. **ツールボックス**の **[オブジェクト リレーショナル デザイナー]** タブで **[継承]** をクリックし、サブクラス (名前を変更したテーブル) をクリックして、基本クラスに接続します。  
   
     > [!NOTE]
     >  **ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放し、手順 3 で作成したクラスの 2 番目のコピーをクリックしてから、手順 2 で作成した最初のクラスをクリックします。 継承線の矢印は最初のクラスを指します。  
   
-5.  各クラスで、関連付けに使用されていない、表示する必要のないオブジェクト プロパティを削除します。 関連付けに使用するオブジェクトのプロパティを削除しようとした場合、エラーが表示されます。[プロパティ\<プロパティ名 > の関連付けに関与しているために削除できません\<関連付けの名前 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)します。  
+5. 各クラスで、関連付けに使用されていない、表示する必要のないオブジェクト プロパティを削除します。 関連付けに使用するオブジェクトのプロパティを削除しようとした場合、エラーが表示されます。[プロパティ\<プロパティ名 > の関連付けに関与しているために削除できません\<関連付けの名前 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)します。  
   
     > [!NOTE]
     >  派生クラスは基本クラスで定義されているプロパティを継承するため、各クラスに同じ列を定義することはできません  (列はプロパティとして実装されます)。基本クラスのプロパティに [Inheritance Modifier] を設定することで、派生クラスでの列の作成が可能になります。 詳細については、次を参照してください。[ビルド内にありません。プロパティとメソッドのオーバーライド](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213)します。  
   
-6.  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]で継承線を選択します。  
+6. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]で継承線を選択します。  
   
-7.  **プロパティ**ウィンドウで、設定、**識別子プロパティ**クラス内のレコードを区別するために使用される列名にします。  
+7. **プロパティ**ウィンドウで、設定、**識別子プロパティ**クラス内のレコードを区別するために使用される列名にします。  
   
-8.  **[派生クラスの識別子の値]** プロパティに、レコードが継承された型であることを示すデータベース内の値を設定します。 (これは判別用の列に格納される値で、継承されたクラスを示すために使用されます)。  
+8. **[派生クラスの識別子の値]** プロパティに、レコードが継承された型であることを示すデータベース内の値を設定します。 (これは判別用の列に格納される値で、継承されたクラスを示すために使用されます)。  
   
 9. **[基本クラスの識別子の値]** プロパティに、レコードが基本型であることを示す値を設定します。 (これは判別用の列に格納される値で、基本クラスを示すために使用されます)。  
   

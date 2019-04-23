@@ -1,5 +1,5 @@
 ---
-title: 'エラー: IIS 管理サービスが応答しないために、セキュリティ チェックが失敗しました |。Microsoft Docs'
+title: エラー :IIS 管理サービスが応答しないために、セキュリティ チェックが失敗しました |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,33 +16,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe294bd375f4896286b32d0d2c638fa8b467061b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ae97ae0594b06e9b35ac3bdd61eacf852968889
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080152"
 ---
-# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>エラー ： IIS 管理サービスが応答しないため、セキュリティ チェックに失敗しました。
+# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>エラー :IIS 管理サービスが応答しないため、セキュリティ チェックに失敗しました
 このエラーは、IIS Admin サービスが応答しないときに発生します。 これは通常、IIS のインストールに問題があることを意味します。 まず、**[管理ツール]** の **[サービス]** ツールを使用して、サービスが実行中であることを確認します。
 
 ### <a name="to-correct-this-error"></a>このエラーを解決するには
 
--   コントロール パネルの **[プログラムの追加と削除]** を使って、IIS を再インストールします。
+- コントロール パネルの **[プログラムの追加と削除]** を使って、IIS を再インストールします。
 
--   - または -
+- - または -
 
--   コントロール パネルの [アプリケーションの追加と削除] を使って、コンピューターから IIS を削除します。 IIS を削除しても問題が解決しない場合は、レジストリをチェックして、次のキーが存在しないことを確認します。
+- コントロール パネルの [アプリケーションの追加と削除] を使って、コンピューターから IIS を削除します。 IIS を削除しても問題が解決しない場合は、レジストリをチェックして、次のキーが存在しないことを確認します。
 
     `HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}`
 
      - または -
 
--   コントロール パネルの [管理ツール] を使って、IIS Admin サービスを無効にします。 これによって、コンピューター上の IIS は無効になります。
+- コントロール パネルの [管理ツール] を使って、IIS Admin サービスを無効にします。 これによって、コンピューター上の IIS は無効になります。
 
      この 3 つの手順のいずれかを実行した後は、コンピューターを再起動します。
 
      詳細については、IIS のドキュメントを参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+- [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -9,30 +9,30 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118085"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio のカラー値の参照
 
 このトピックでは、新しい色のトークンを作成するための参照です。 新しい UI を作成するときは、各メイン テーマの色とその要素のハイ コントラスト テーマのシステム色の名前を選択するのに既存の UI からの似た色を使用できます。
 
-新しい色のトークンを作成する方法の実装については、[色のテーマのツール](../../extensibility/internals/color-theming-tools.md)を参照してください。
+新しい色のトークンを作成する方法の実装については、次を参照してください。[色のテーマのツール](../../extensibility/internals/color-theming-tools.md)します。
 
 既存の UI を使用する色のトークンを参照してください。 [for Visual Studio の色を共有](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)します。
 
 このリファレンス ガイドを使用する場合に注意してください。
 
--   **常にまとめての色合いがフォア グラウンドとバック グラウンドの両方をコピーします。** 1 つの UI 要素別のバック グラウンドからの色合いをなどからといって、前景を選択しないでください。
+- **常にまとめての色合いがフォア グラウンドとバック グラウンドの両方をコピーします。** 1 つの UI 要素別のバック グラウンドからの色合いをなどからといって、前景を選択しないでください。
 
--   **これらは、16 進コード、色のトークンではありません。** トークンを今後変更される可能性がどのように制御できないために、これらの UI 要素の実際の色のトークン名を使用することはできません。 代わりに、独自のカテゴリ内のトークンを作成し、表に示す色相値を使用します。 色のトークンで見つかる既存の UI の[for Visual Studio の色を共有](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)します。
+- **これらは、16 進コード、色のトークンではありません。** トークンを今後変更される可能性がどのように制御できないために、これらの UI 要素の実際の色のトークン名を使用することはできません。 代わりに、独自のカテゴリ内のトークンを作成し、表に示す色相値を使用します。 色のトークンで見つかる既存の UI の[for Visual Studio の色を共有](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)します。
 
 - **のみの比較については、ハイ コントラストの見本が表示されます。** ハイ コントラストの UI でのシステム カラー名を使用し、これらの見本をスポイト ツールまたは色の選択を使用しないでください。 このトピックでハイ コントラスト見本は、Windows のハイコントラスト #1 テーマを反映します。 その他のハイ コントラスト テーマでさまざまな色になります。
 
--   **最良の結果をペアの色を設定 UI を使用した例のようにします。**
+- **最良の結果をペアの色を設定 UI を使用した例のようにします。**
 
 ## <a name="properties-window"></a>[プロパティ] ウィンドウ
 

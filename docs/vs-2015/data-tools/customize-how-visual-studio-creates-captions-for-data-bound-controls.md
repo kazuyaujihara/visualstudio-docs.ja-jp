@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20611035ba37c509be7e41d8468d0c3d893334b2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079488"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio がデータ バインド コントロールのキャプションを作成する方法をカスタマイズする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ ms.locfileid: "59647955"
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>データ ソース ウィンドウのスマート キャプションの動作を変更するには
 
-1.  コマンド ウィンドウを開きます**開始**し**実行**します。
+1. コマンド ウィンドウを開きます**開始**し**実行**します。
 
-2.  型`regedit`で、**実行** ダイアログ ボックスをクリックします**OK**します。
+2. 型`regedit`で、**実行** ダイアログ ボックスをクリックします**OK**します。
 
-3.  展開、 **HKEY_CURRENT_USER**ノード。
+3. 展開、 **HKEY_CURRENT_USER**ノード。
 
-4.  展開、**ソフトウェア**ノード。
+4. 展開、**ソフトウェア**ノード。
 
-5.  展開、 **Microsoft**ノード。
+5. 展開、 **Microsoft**ノード。
 
-6.  展開、 **VisualStudio**ノード。
+6. 展開、 **VisualStudio**ノード。
 
-7.  右クリックし、 **10.0**ノード、され、新しい作成**キー**という`Data Designers`します。
+7. 右クリックし、 **10.0**ノード、され、新しい作成**キー**という`Data Designers`します。
 
-8.  右クリックし、**データ デザイナー**ノード、され、新しい作成**文字列値**という`SmartCaptionExpression`。
+8. 右クリックし、**データ デザイナー**ノード、され、新しい作成**文字列値**という`SmartCaptionExpression`。
 
 9. 右クリックし、**データ デザイナー**ノード、され、新しい作成**文字列値**という`SmartCaptionReplacement`。
 
@@ -96,21 +96,21 @@ ms.locfileid: "59647955"
 
 ### <a name="to-turn-off-the-smart-captioning-feature"></a>スマート キャプション機能を無効にするには
 
-1.  コマンド ウィンドウを開きます**開始**し**実行**します。
+1. コマンド ウィンドウを開きます**開始**し**実行**します。
 
-2.  型`regedit`で、**実行** ダイアログ ボックスをクリックします**OK**します。
+2. 型`regedit`で、**実行** ダイアログ ボックスをクリックします**OK**します。
 
-3.  展開、 **HKEY_CURRENT_USER**ノード。
+3. 展開、 **HKEY_CURRENT_USER**ノード。
 
-4.  展開、**ソフトウェア**ノード。
+4. 展開、**ソフトウェア**ノード。
 
-5.  展開、 **Microsoft**ノード。
+5. 展開、 **Microsoft**ノード。
 
-6.  展開、 **VisualStudio**ノード。
+6. 展開、 **VisualStudio**ノード。
 
-7.  右クリックし、 **10.0**ノード、され、新しい作成**キー**という`Data Designers`します。
+7. 右クリックし、 **10.0**ノード、され、新しい作成**キー**という`Data Designers`します。
 
-8.  右クリックし、**データ デザイナー**ノード、され、新しい作成**文字列値**という`SmartCaptionExpression`。
+8. 右クリックし、**データ デザイナー**ノード、され、新しい作成**文字列値**という`SmartCaptionExpression`。
 
 9. 右クリックし、**データ デザイナー**ノード、され、新しい作成**文字列値**という`SmartCaptionReplacement`。
 

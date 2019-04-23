@@ -11,14 +11,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb2c708bfb6bfafe90b548ad2826e0cf11882a3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e7daee59d754b8b09ed8684ff16a6bae81fa3bf8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793207"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079773"
 ---
-# <a name="how-to-troubleshoot-templates"></a>方法 : テンプレートの問題を解決する
+# <a name="how-to-troubleshoot-templates"></a>方法: テンプレートをトラブルシューティングします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 テンプレートを開発環境に読み込むことができない場合に、問題を突き止める方法はいくつかあります。  
@@ -28,24 +28,24 @@ ms.locfileid: "54793207"
   
 #### <a name="to-validate-the-vstemplate-file"></a>.vstemplate ファイルを検証するには  
   
-1.  テンプレートを含む .zip ファイルを探します。  
+1. テンプレートを含む .zip ファイルを探します。  
   
-2.  .zip ファイルを展開します。  
+2. .zip ファイルを展開します。  
   
-3.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の **[ファイル]** メニューの **[開く]** をクリックし、**[ファイル]** をクリックします。  
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の **[ファイル]** メニューの **[開く]** をクリックし、**[ファイル]** をクリックします。  
   
-4.  テンプレートの .vstemplate ファイルを選択し、**[開く]** をクリックします。  
+4. テンプレートの .vstemplate ファイルを選択し、**[開く]** をクリックします。  
   
-5.  .vstemplate ファイルの XML が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] テンプレート スキーマに準拠していることを確認します。 .vstemplate スキーマの詳細については、「[Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」を参照してください。  
+5. .vstemplate ファイルの XML が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] テンプレート スキーマに準拠していることを確認します。 .vstemplate スキーマの詳細については、「[Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」を参照してください。  
   
     > [!NOTE]
     >  .vstemplate ファイルを作成する際に IntelliSense のサポートを得るには、`xmlns` 属性を `VSTemplate` 要素に追加し、 http://schemas.microsoft.com/developer/vstemplate/2005 の値を割り当てます。  
   
-6.  .vstemplate ファイルを保存して、閉じます。  
+6. .vstemplate ファイルを保存して、閉じます。  
   
-7.  テンプレートに含まれるファイルを選択して右クリックし、**[送る]** を選択し、**[圧縮 (zip 形式) フォルダー]** をクリックします。 選択したファイルは .zip ファイルに圧縮されます。  
+7. テンプレートに含まれるファイルを選択して右クリックし、**[送る]** を選択し、**[圧縮 (zip 形式) フォルダー]** をクリックします。 選択したファイルは .zip ファイルに圧縮されます。  
   
-8.  新しい .zip ファイルを古い .zip ファイルと同じディレクトリに配置します。  
+8. 新しい .zip ファイルを古い .zip ファイルと同じディレクトリに配置します。  
   
 9. 抽出したテンプレート ファイルと古いテンプレート .zip ファイルを削除します。  
   
@@ -54,13 +54,13 @@ ms.locfileid: "54793207"
   
 #### <a name="to-locate-template-errors-in-event-viewer"></a>イベント ビューアーでテンプレート エラーを見つけるには  
   
-1.  Windows で、**[スタート]** をクリックし、**[コントロール パネル]** をクリックします。次に、**[管理ツール]** をダブルクリックし、**[イベント ビューアー]** をダブルクリックします。  
+1. Windows で、**[スタート]** をクリックし、**[コントロール パネル]** をクリックします。次に、**[管理ツール]** をダブルクリックし、**[イベント ビューアー]** をダブルクリックします。  
   
-2.  左ウィンドウで、**[アプリケーション]** をクリックします。  
+2. 左ウィンドウで、**[アプリケーション]** をクリックします。  
   
-3.  **[ソース]** の値が [`Visual Studio - VsTemplate`] のイベントを探します。  
+3. **[ソース]** の値が [`Visual Studio - VsTemplate`] のイベントを探します。  
   
-4.  テンプレート イベントをダブルクリックして、エラーを表示します。  
+4. テンプレート イベントをダブルクリックして、エラーを表示します。  
   
 ## <a name="see-also"></a>関連項目  
  [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)   

@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d82776b72b1634e3645749c8a1fb8eaecbedf17c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 01b767e4b2aceeb50ca72ef6852934f4b0502b98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657299"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114315"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio におけるクロス プラットフォーム モバイル開発
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
  **この記事の内容:**
 
--   [Android、iOS、および Windows 用のアプリをビルドする (.NET Framework)](#NET)
+- [Android、iOS、および Windows 用のアプリをビルドする (.NET Framework)](#NET)
 
-    -   [1 つのコード ベースから Android、iOS、Windows を対象にする](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+    - [1 つのコード ベースから Android、iOS、Windows を対象にする](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    -   [Windows 10 デバイスを対象にする](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+    - [Windows 10 デバイスを対象にする](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
--   [Android、iOS、および Windows 用のアプリをビルドする (HTML/JavaScript)](#HTML)
+- [Android、iOS、および Windows 用のアプリをビルドする (HTML/JavaScript)](#HTML)
 
--   [Android および Windows 用のアプリをビルドする (C++)](#CPP)
+- [Android および Windows 用のアプリをビルドする (C++)](#CPP)
 
--   [Android、iOS、および Windows 用のクロスプラットフォーム ゲームを Visual Studio Tools for Unity を使用してビルドする](#Unity)
+- [Android、iOS、および Windows 用のクロスプラットフォーム ゲームを Visual Studio Tools for Unity を使用してビルドする](#Unity)
 
-##  <a name="NET"></a> Android、iOS、および Windows 用のアプリをビルドする (.NET Framework)
+## <a name="NET"></a> Android、iOS、および Windows 用のアプリをビルドする (.NET Framework)
  ![デバイス](../cross-platform/media/homedevices.png "HomeDevices")
 
  Xamarin を利用すれば、コードや UI を共有し、同じソリューションで Android、iOS、Windows を対象にできます。
@@ -53,7 +53,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 |[Swift と C# との間の類似点について学習する](https://aka.ms/scposter) (download.microsoft.com)|
 |[Visual Studio Emulator for Android について学習する](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
-###  <a name="AndroidHTML"></a> 1 つのコード ベースから Android、iOS、Windows を対象にする
+### <a name="AndroidHTML"></a> 1 つのコード ベースから Android、iOS、Windows を対象にする
  C# または F# を使用することで (Visual Basic は現時点ではサポートされていません)、Android、iOS、Windows のネイティブ アプリを開発できます。  最初に Visual Studio 2015 をインストールし、インストーラーで **[カスタム]** オプションを選択し、[クロス プラットフォームのモバイル開発] の **[C#/.NET (Xamarin)]** ボックスを選択します。 [Xamarin インストーラー](https://www.xamarin.com/download)で開始することもできます。このインストーラーは Xamarin for Visual Studio 2013 のインストールに必須です。
 
  Visual Studio 2015 が既にインストールされている場合、**[コントロール パネル] の [プログラムと機能]** からインストーラーを実行し、上と同じように Xamarin に **[カスタム]** オプションを選択します。
@@ -67,7 +67,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>すべてのデバイス用にレンダリングするページを 1 セット、Xamarin.Forms を使用してデザインする
  アプリのデザインの複雑さによっては、プロジェクト テンプレートの [ *Mobile Apps* ] グループにある **[Xamarin.Forms]** テンプレートを使用して作成することを検討します。 Xamarin.Forms は、Android、iOS、Windows 間で共有できる単一のユーザー インターフェイスを作成する UI ツールキットです。  Xamarin.Forms ソリューションをコンパイルすると、Android アプリ、iOS アプリ、Windows アプリが生成されます。 詳細については、「[Xamarin によるモバイル開発の概要](../cross-platform/learn-about-mobile-development-with-xamarin.md)」を参照してください。
 
-####  <a name="ShareHTML"></a> Android、iOS、Windows アプリ間でコードを共有する
+#### <a name="ShareHTML"></a> Android、iOS、Windows アプリ間でコードを共有する
  Xamarin.Forms を使用せず、プラットフォームごとに個別にデザインすることにした場合は、UI 以外のコードの大部分をプラットフォームのプロジェクト (Android、iOS、および Windows) 間で共有できます。 これには、ビジネス ロジック、クラウド統合、データベース アクセス、または .NET Framework を対象とするその他のコードが含まれます。 特定のプラットフォームを対象とするコードのみ、共有することができません。
 
  ![Windows、iOS、Android の UI でコードを共有](../cross-platform/media/sharecode.png "ShareCode")
@@ -78,7 +78,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 |--------------------|
 |共有プロジェクト、ポータブル クラス ライブラリ プロジェクト、またはその両方のいずれを使用してコードを共有するかを選択する。<br /><br /> [プラットフォーム間でコードを共有する](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (.NET Framework ブログ)<br /><br /> [コード共有のオプション](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [.NET Framework によるコード共有のオプション](http://msdn.microsoft.com/library/dn720832.aspx) (MSDN ライブラリ)|
 
-###  <a name="WindowsHTML"></a> Windows 10 デバイスを対象にする
+### <a name="WindowsHTML"></a> Windows 10 デバイスを対象にする
  ![Windows デバイス](../cross-platform/media/windowsdevices.png "WindowsDevices")
 
  Windows 10 デバイスを幅広く対象とした単一のアプリを作成する必要がある場合は、ユニバーサル Windows アプリを作成します。 1 つのプロジェクトを使用してアプリをデザインすれば、どのデバイスを使用して表示してもアプリのページが正しくレンダリングされます。
@@ -94,7 +94,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 |[ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[アプリを Universal Windows Platform (UWP) へ移行する](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
-##  <a name="HTML"></a> Android、iOS、および Windows 用のアプリをビルドする (HTML/JavaScript)
+## <a name="HTML"></a> Android、iOS、および Windows 用のアプリをビルドする (HTML/JavaScript)
  ![デバイス](../cross-platform/media/homedevices.png "HomeDevices")
 
  HTML と JavaScript に精通した Web 開発者は、Visual Studio Tools for Apache Cordova を使用して、Windows、Android、および iOS を対象とすることができます。 これらのアプリは 3 つのすべてのプラットフォームを対象にすることができ、開発者が最も慣れているスキルとプロセスを使用してアプリを作成できます。
@@ -119,7 +119,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 |[Visual Studio Tools for Apache Cordova の使用を開始する](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
 |[Visual Studio Emulator for Android について学習する](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
-##  <a name="CPP"></a> Android および Windows 用のアプリをビルドする (C++)
+## <a name="CPP"></a> Android および Windows 用のアプリをビルドする (C++)
  ![C++ を使用し、Android、iOS、Windows 向けに開発する](../cross-platform/media/cross-plat-cpp-intro-image.png "Cross_Plat_CPP_Intro_Image")
 
  最初に、Visual Studio 2015 と Visual C++ for Cross Platform Mobile Development ツールをインストールします。 その後、Android 用のネイティブ アクティビティ アプリケーションか、Windows を対象とするアプリを構築できます。 iOS を対象とする C++ テンプレートは、まだ利用できません。 必要であれば、同じソリューションで Android と Windows を対象にし、クロスプラットフォームの静的または動的な共有ライブラリを使用して両方でコードを共有することができます。
@@ -151,7 +151,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 |[C++ のクロス プラットフォーム モバイル開発の例](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN ライブラリ)|
 |[C++ のクロス プラットフォーム モバイル開発のその他の例](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
-##  <a name="Unity"></a> Android、iOS、および Windows 用のクロスプラットフォーム ゲームを Visual Studio Tools for Unity を使用してビルドする
+## <a name="Unity"></a> Android、iOS、および Windows 用のクロスプラットフォーム ゲームを Visual Studio Tools for Unity を使用してビルドする
  Visual Studio Tools for Unity は、Visual Studio の強力なコード編集、生産性向上、およびデバッグ ツールを、Windows、iOS、Android、および Web を含むその他のプラットフォームを対象とするクロスプラットフォームのゲーム/グラフィックス エンジンおよび没入感のあるアプリ開発環境として人気の高い *Unity* と統合するための Visual Studio 用の無料の拡張機能です。
 
  ![VSTU 開発環境](../cross-platform/media/vstu-overview.png "VSTU_Overview")

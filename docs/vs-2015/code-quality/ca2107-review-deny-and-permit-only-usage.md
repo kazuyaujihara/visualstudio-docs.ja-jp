@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 425a7363e03dcc8a967853bbe574f29678df11a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082153"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107:拒否および許可のみの使用を確認します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "58973898"
 
  これらのアクションに依存するコードは、セキュリティの脆弱性で慎重に、制限付きの有用性と動作が多少により評価する必要があります。 次に例を示します。
 
--   [リンク確認要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)Deny または PermitOnly の影響を受けない。
+- [リンク確認要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)Deny または PermitOnly の影響を受けない。
 
--   Deny または PermitOnly は、スタック ウォークを実行する要求と同じスタック フレームで発生する場合、セキュリティ アクションがある影響しません。
+- Deny または PermitOnly は、スタック ウォークを実行する要求と同じスタック フレームで発生する場合、セキュリティ アクションがある影響しません。
 
--   パス ベースのアクセス許可の作成に使用される値は、複数の方法で、通常は指定できます。 パスの 1 つのフォームへのアクセスを拒否することは、すべてのフォームへのアクセスは拒否されません。 たとえば、ファイル共有\\\Server\Share はネットワーク ドライブ、共有上のファイルへのアクセスを拒否する、x: にマップする必要がありますを拒否する\\\Server\Share\File、X:\File およびファイルにアクセスするその他のすべてのパス。
+- パス ベースのアクセス許可の作成に使用される値は、複数の方法で、通常は指定できます。 パスの 1 つのフォームへのアクセスを拒否することは、すべてのフォームへのアクセスは拒否されません。 たとえば、ファイル共有\\\Server\Share はネットワーク ドライブ、共有上のファイルへのアクセスを拒否する、x: にマップする必要がありますを拒否する\\\Server\Share\File、X:\File およびファイルにアクセスするその他のすべてのパス。
 
--   <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> Deny または PermitOnly に達する前に、スタック ウォークを終了できます。
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> Deny または PermitOnly に達する前に、スタック ウォークを終了できます。
 
--   拒否に影響がある場合具体的には、呼び出し元が、拒否によってブロックされているアクセス許可を持つ呼び出し元リソースにアクセスできる保護されたを直接拒否する をバイパスします。 同様に、呼び出し元が拒否されたアクセス許可を持たない場合、拒否せず、スタック ウォークは失敗します。
+- 拒否に影響がある場合具体的には、呼び出し元が、拒否によってブロックされているアクセス許可を持つ呼び出し元リソースにアクセスできる保護されたを直接拒否する をバイパスします。 同様に、呼び出し元が拒否されたアクセス許可を持たない場合、拒否せず、スタック ウォークは失敗します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  これらのセキュリティ アクションの使用はすべて、違反となります。 違反を修正するには、これらのセキュリティ アクションを使用しないでください。

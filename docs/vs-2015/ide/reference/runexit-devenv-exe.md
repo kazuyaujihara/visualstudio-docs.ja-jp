@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 412dee9ec920d4d94e2b4f2f176d1b1634a34eef
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0206f01df517c2dbd0c1c4052201dc8ded1bcbf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648901"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115680"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ devenv /runexit {SolutionName|ProjectName}
 ## <a name="remarks"></a>解説  
  アクティブなソリューション構成に対して指定された設定に従って、指定したプロジェクトまたはソリューションをコンパイルして実行します。 このスイッチはプロジェクトまたはソリューションの実行中に IDE を最小化し、プロジェクトまたはソリューションの実行の完了後に IDE を閉じます。  
   
--   空白を含む文字列を二重引用符で囲みます。  
+- 空白を含む文字列を二重引用符で囲みます。  
   
--   エラーなどの概要情報は、**[コマンド]** ウィンドウ、または `/out`スイッチで指定した任意のログ ファイルに表示できます。  
+- エラーなどの概要情報は、**[コマンド]** ウィンドウ、または `/out`スイッチで指定した任意のログ ファイルに表示できます。  
   
 ## <a name="example"></a>例  
  この例では、アクティブな配置構成を使用し、IDE を最小化した状態でソリューション `MySolution` を実行してから IDE を閉じます。  

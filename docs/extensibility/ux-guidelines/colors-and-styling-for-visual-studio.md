@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650630"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114770"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio の色とスタイル
 
@@ -85,7 +85,7 @@ Visual Studio のソース コードには、トークンの名前と各テー�
 
 ![ツール&gt;オプション ダイアログ ボックス](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")<br />ツール&gt;オプション ダイアログ ボックス
 
-##  <a name="BKMK_TheVSColorService"></a> VSColor Service
+## <a name="BKMK_TheVSColorService"></a> VSColor Service
 
 Visual Studio では、VSColor service またはシェル カラー サービスとも呼ばれる環境の色サービスを提供します。 このサービスでは、各テーマの色を含む名前と値の色に、UI 要素の色の値をバインドできます。 すべての UI 要素の色は自動的に現在のユーザーが選択したテーマを反映するように変更し、UI は、環境の色のサービスにバインドされているようにと統合される新しいテーマ将来のバージョンの Visual Studio ように、VSColor サービスを使用する必要があります。
 
@@ -267,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> ハイ コントラストの色を選択します。
+## <a name="BKMK_ChoosingHighContrastColors"></a> ハイ コントラストの色を選択します。
 
 ### <a name="overview"></a>概要
 
@@ -330,7 +330,7 @@ Ui、色のセットを制限するこれを適用するときに *「標準」�
 | WindowFrame | -IDE の枠線 |
 | WindowText | 自動的に隠す タブの前景色<br />-選択したツール ウィンドウ タブの前景色<br />-フォーカスされていないドキュメント ウィンドウ タブ、フォーカスされていない、または未選択の一時的なタブの前景色<br />-既定の前景を表示し、マウス ポインターをツリー未選択のグリフの上<br />-ツール ウィンドウの選択されているタブ境界線<br />-スクロール バーのつまみの背景、境界線、およびグリフ |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> エンドユーザーの色を公開します。
+## <a name="BKMK_ExposingColorsForEndUsers"></a> エンドユーザーの色を公開します。
 
 ### <a name="overview"></a>概要
 

@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c62d8a65b1015029f183ea2b617dfe77f9b4f05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753564"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114510"
 ---
 # <a name="code-snippets-schema-reference"></a>コード スニペット スキーマ リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ IntelliSense コード スニペットとは、[!INCLUDE[vsprvs](../includes/vsp
 |[Function 要素](../ide/code-snippets-schema-reference.md#function)|[Object 要素](../ide/code-snippets-schema-reference.md#object)|[Url 要素](../ide/code-snippets-schema-reference.md#url)|  
 |[Header 要素](../ide/code-snippets-schema-reference.md#header)|[Reference 要素](../ide/code-snippets-schema-reference.md#reference)||  
   
-##  <a name="assembly"></a> Assembly 要素  
+## <a name="assembly"></a> Assembly 要素  
  コード スニペットによって参照されるアセンプリの名前を指定します。  
   
 > [!NOTE]
@@ -61,7 +61,7 @@ IntelliSense コード スニペットとは、[!INCLUDE[vsprvs](../includes/vsp
   
  テキスト値が必要です。 このテキストで、コード スニペットが参照するアセンブリを指定します。  
   
-##  <a name="author"></a> Author 要素  
+## <a name="author"></a> Author 要素  
  スニペット作成者の名前を指定します。 **コード スニペット マネージャー**には、コード スニペットの `Author` 要素に格納された名前が表示されます。  
   
 ```xml  
@@ -77,7 +77,7 @@ IntelliSense コード スニペットとは、[!INCLUDE[vsprvs](../includes/vsp
   
  テキスト値が必要です。 このテキストでコード スニペットの作成者を指定します。  
   
-##  <a name="code"></a> Code 要素  
+## <a name="code"></a> Code 要素  
  短いコード ブロックのコンテナーを提供します。  
   
  `Code` 要素のテキストでは、`$end$` および `$selected$` という 2 つの予約語を使用できます。 `$end$` は、コード スニペットの挿入後のカーソル位置を指定します。 `$selected$` は、ドキュメントで選択されているテキストを表し、スニペットが呼び出されたときに置き換えられます。 たとえば、次のコードを含むスニペットがあるとします。  
@@ -146,7 +146,7 @@ is a great color. I love Blue.
   
  テキスト値が必要です。 このテキストで、コード スニペットをプロジェクトに挿入した場合に使用できるコードを、リテラルおよびオブジェクトと共に指定します。  
   
-##  <a name="codesnippet"></a> CodeSnippet 要素  
+## <a name="codesnippet"></a> CodeSnippet 要素  
  Visual Studio Code ファイルに挿入できる見出しと複数の IntelliSense コード スニペットを指定します。  
   
 ```xml  
@@ -170,7 +170,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[CodeSnippets 要素](../ide/code-snippets-schema-reference.md#codesnippets)|コード スニペットの XML スキーマのルート要素です。|  
   
-##  <a name="codesnippets"></a> CodeSnippets 要素  
+## <a name="codesnippets"></a> CodeSnippets 要素  
  複数の [CodeSnippet 要素](../ide/code-snippets-schema-reference.md#codesnippet)をグループ化します。 `CodeSnippets` 要素は、コード スニペットの XML スキーマにおけるルート要素です。  
   
 ```xml  
@@ -184,7 +184,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|  
 |[CodeSnippet 要素](../ide/code-snippets-schema-reference.md#codesnippet)|省略可能な要素です。 すべてのコード スニペット データを下位に持つ親要素です。 `CodeSnippet` 要素に 0 個以上の `CodeSnippets` 要素があります。|  
   
-##  <a name="declarations"></a> Declarations 要素  
+## <a name="declarations"></a> Declarations 要素  
  編集できるコード スニペットの部分を構成するリテラルとオブジェクトを指定します。  
   
 ```xml  
@@ -204,7 +204,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Snippet 要素](../ide/code-snippets-schema-reference.md#snippet)|コード スニペットの参照、インポート、宣言、およびコードが格納されます。|  
   
-##  <a name="default"></a> Default 要素  
+## <a name="default"></a> Default 要素  
  IntelliSense コード スニペットのリテラルまたはオブジェクトの既定値を指定します。  
   
 ```xml  
@@ -221,7 +221,7 @@ is a great color. I love Blue.
   
  テキスト値が必要です。 このテキストは、編集できるコード スニペットのフィールドに入れるリテラルまたはオブジェクトの既定値を指定します。  
   
-##  <a name="description"></a> Description 要素  
+## <a name="description"></a> Description 要素  
  IntelliSense コード スニペットの内容に関する説明文を指定します。  
   
 ```xml  
@@ -236,7 +236,7 @@ is a great color. I love Blue.
   
  テキスト値が必要です。 このテキストで、コード スニペットについて説明します。  
   
-##  <a name="function"></a> Function 要素  
+## <a name="function"></a> Function 要素  
  Visual Studio でリテラルまたはオブジェクトがフォーカスを取得するときに実行される関数を指定します。  
   
 > [!NOTE]
@@ -255,7 +255,7 @@ is a great color. I love Blue.
   
  テキスト値が必要です。 このテキストで、Visual Studio でリテラルまたはオブジェクト フィールドがフォーカスを取得するときに実行される関数を指定します。  
   
-##  <a name="header"></a> Header 要素  
+## <a name="header"></a> Header 要素  
  IntelliSense コード スニペットの一般情報を指定します。  
   
 ```xml  
@@ -275,7 +275,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|  
 |[Author 要素](../ide/code-snippets-schema-reference.md#author)|省略可能な要素です。 コード スニペットを作成した個人または会社の名前です。 `Author` 要素には 0 個または 1 個の `Header` 要素があります。|  
 |[Description 要素](../ide/code-snippets-schema-reference.md#description)|省略可能な要素です。 コード スニペットの説明です。 `Description` 要素には 0 個または 1 個の `Header` 要素があります。|  
-|[HelpUrl 要素](../ide/code-snippets-schema-reference.md#helpurl)|省略可能な要素です。 コード スニペットに関する詳細な情報が記載された URL です。 Header 要素には 0 個または 1 個の `HelpURL` 要素があります。 **注:** Visual Studio では `HelpUrl` 要素を使いません。 この要素は IntelliSense コード スニペット XML スキーマの一部であり、この要素を含むコード スニペットはすべて問題なく検証されますが、要素の値が使われることはありません。|  
+|[HelpUrl 要素](../ide/code-snippets-schema-reference.md#helpurl)|省略可能な要素です。 コード スニペットに関する詳細な情報が記載された URL です。 Header 要素には 0 個または 1 個の `HelpURL` 要素があります。 **注:** Visual Studio では `HelpUrl` 要素を使用しません。 この要素は IntelliSense コード スニペット XML スキーマの一部であり、この要素を含むコード スニペットはすべて問題なく検証されますが、要素の値が使われることはありません。|  
 |[Keywords 要素](../ide/code-snippets-schema-reference.md#keywords)|省略可能な要素です。 複数の `Keyword` 要素をグループ化します。 `Keywords` 要素には 0 個または 1 個の `Header` 要素があります。|  
 |[Shortcut 要素](../ide/code-snippets-schema-reference.md#shortcut)|省略可能な要素です。 スニペットの挿入に使用するショートカット テキストを指定します。 `Shortcut` 要素には 0 個または 1 個の `Header` 要素があります。|  
 |[SnippetTypes 要素](../ide/code-snippets-schema-reference.md#snippettypes)|省略可能な要素です。 複数の `SnippetType` 要素をグループ化します。 `SnippetTypes` 要素には 0 個または 1 個の `Header` 要素があります。 `SnippetTypes` 要素が存在しない場合、コード スニペットは常に有効となります。|  
@@ -285,7 +285,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[CodeSnippet 要素](../ide/code-snippets-schema-reference.md#codesnippet)|すべてのコード スニペット データを下位に持つ親要素です。|  
   
-##  <a name="helpurl"></a> HelpUrl 要素  
+## <a name="helpurl"></a> HelpUrl 要素  
  コード スニペットに関する詳細な情報の入手先 URL を指定します。  
   
 > [!NOTE]
@@ -304,7 +304,7 @@ is a great color. I love Blue.
   
  テキスト値は省略可能です。 このテキストで、コード スニペットに関する詳細情報の入手先 URL を指定します。  
   
-##  <a name="id"></a> ID 要素  
+## <a name="id"></a> ID 要素  
  `Literal` 要素または `Object` 要素の一意の識別子を指定します。 同じコード スニペット内で、2 つのリテラルまたはオブジェクトの `ID` 要素に同じテキスト値を割り当てることはできません。リテラルおよびオブジェクトに、end という値の `ID` 要素を使用することはできません。 `$end$` という値は、コード スニペットの挿入後のカーソル位置をマーキングする目的で予約されています。  
   
 ```xml  
@@ -321,7 +321,7 @@ is a great color. I love Blue.
   
  テキスト値が必要です。 このテキストで、オブジェクトまたはリテラルの一意の識別子を指定します。  
   
-##  <a name="import"></a> Import 要素  
+## <a name="import"></a> Import 要素  
  IntelliSense コード スニペットによって使用されるインポートされた名前空間を指定します。  
   
 > [!NOTE]
@@ -342,7 +342,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Imports 要素](../ide/code-snippets-schema-reference.md#imports)|**Import** 要素のグループ化要素です。|  
   
-##  <a name="imports"></a> Imports 要素  
+## <a name="imports"></a> Imports 要素  
  複数の `Import` 要素をグループ化します。  
   
 > [!NOTE]
@@ -362,7 +362,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Snippet 要素](../ide/code-snippets-schema-reference.md#snippet)|コード スニペットの参照、インポート、宣言、およびコードが格納されます。|  
   
-##  <a name="keyword"></a> Keyword 要素  
+## <a name="keyword"></a> Keyword 要素  
  コード スニペットのカスタム キーワードを指定します。 コード スニペットのキーワードは Visual Studio によって使用され、検索や分類のためのカスタム キーワードを追加する手段をオンライン コンテンツ プロバイダーに提供します。  
   
 ```xml  
@@ -377,7 +377,7 @@ is a great color. I love Blue.
   
  テキスト値が必要です。 コード スニペットのキーワードを指定します。  
   
-##  <a name="keywords"></a> Keywords 要素  
+## <a name="keywords"></a> Keywords 要素  
  複数の `Keyword` 要素をグループ化します。 コード スニペットのキーワードは Visual Studio によって使用され、検索や分類のためのカスタム キーワードを追加する手段をオンライン コンテンツ プロバイダーに提供します。  
   
 ```xml  
@@ -395,7 +395,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Header 要素](../ide/code-snippets-schema-reference.md#header)|コード スニペットに関する全般的な情報が格納されます。|  
   
-##  <a name="literal"></a> Literal 要素  
+## <a name="literal"></a> Literal 要素  
  編集できるコード スニペットのリテラルを定義します。 `Literal` 要素は、コード スニペットの中で置き換えて使用できる部分を識別する目的で使用されます。 たとえば、リテラル文字列、数値、および変数名はリテラルとして宣言されなければなりません。  
   
  リテラルおよびオブジェクトに、selected または end という値の **ID** 要素を含めることはできません。 値 `$selected$` は、ドキュメントで選択されているテキストを表し、スニペットが呼び出されたときに置き換えられます。 `$end$` は、コード スニペットの挿入後のカーソル位置を指定します。  
@@ -424,7 +424,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Declarations 要素](../ide/code-snippets-schema-reference.md#declarations)|編集が可能なコード スニペットのリテラルおよびオブジェクトを保持します。|  
   
-##  <a name="namespace"></a> 名前空間要素  
+## <a name="namespace"></a> 名前空間要素  
  コード スニペットをコンパイルおよび実行するためにインポートする必要のある名前空間を指定します。 `Namespace` 要素で指定された名前空間が存在しない場合、コードの先頭に `Imports` ステートメントとして自動的に追加されます。  
   
 > [!NOTE]
@@ -442,7 +442,7 @@ is a great color. I love Blue.
   
  テキスト値が必要です。 このテキストで、コード スニペットを使用するためにインポートする必要のある名前空間を指定します。  
   
-##  <a name="object"></a> Object 要素  
+## <a name="object"></a> Object 要素  
  編集できるコード スニペットのオブジェクトを定義します。 `Object` 要素は、コード スニペット自体には定義されておらず、外部で定義する必要のある項目を指定するときに使用します。 たとえば、Windows フォーム コントロール、ASP.NET コントロール、オブジェクトのインスタンス、型のインスタンスなどをオブジェクトとして宣言します。 オブジェクトの宣言では、`Type` 要素で型を指定する必要があります。  
   
 ```xml  
@@ -471,7 +471,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Declarations 要素](../ide/code-snippets-schema-reference.md#declarations)|編集が可能なコード スニペットのリテラルおよびオブジェクトを保持します。|  
   
-##  <a name="reference"></a> Reference 要素  
+## <a name="reference"></a> Reference 要素  
  コード スニペットで参照する必要のあるアセンブリについての情報を指定します。  
   
 > [!NOTE]
@@ -493,7 +493,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[References 要素](../ide/code-snippets-schema-reference.md#references)|`Reference` 要素のグループ化要素です。|  
   
-##  <a name="references"></a> References 要素  
+## <a name="references"></a> References 要素  
  複数の `Reference` 要素をグループ化します。  
   
 > [!NOTE]
@@ -513,7 +513,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Snippet 要素](../ide/code-snippets-schema-reference.md#snippet)|コード スニペットの参照、インポート、宣言、およびコードが格納されます。|  
   
-##  <a name="shortcut"></a> Shortcut 要素  
+## <a name="shortcut"></a> Shortcut 要素  
  スニペットの挿入に使用するショートカット テキストを指定します。 `Shortcut` 要素のテキスト値には、英数字、ハイフン (-)、およびアンダースコア (_) のみを含めることができます。  
   
 > [!CAUTION]
@@ -531,7 +531,7 @@ is a great color. I love Blue.
   
  テキスト値は省略可能です。 このテキストは、コード スニペットを挿入するためのショートカットとして使用されます。  
   
-##  <a name="snippet"></a> Snippet 要素  
+## <a name="snippet"></a> Snippet 要素  
  参照、インポート、宣言およびコード スニペット用のコードを指定します。  
   
 ```xml  
@@ -555,7 +555,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[CodeSnippet 要素](../ide/code-snippets-schema-reference.md#codesnippet)|Visual Studio Code ファイルに挿入できる見出しと複数の IntelliSense コード スニペットを指定します。|  
   
-##  <a name="snippettype"></a> SnippetType 要素  
+## <a name="snippettype"></a> SnippetType 要素  
  Visual Studio がコード スニペットをどのように挿入するかを指定します。  
   
 ```xml  
@@ -570,13 +570,13 @@ is a great color. I love Blue.
   
  テキスト値は、次のいずれかの値である必要があります。  
   
--   `SurroundsWith`: 選択したコードの周りにコード スニペットを配置します。  
+- `SurroundsWith`: 選択したコードの周りにコード スニペットを配置します。  
   
--   `Expansion` : カーソル位置にコード スニペットを挿入します。  
+- `Expansion` : カーソル位置にコード スニペットを挿入します。  
   
--   `Refactoring`: Visual C# のリファクタリング中にコード スニペットを使用するよう指定します。 `Refactoring` は、カスタムのコード スニペットには使用できません。  
+- `Refactoring`: Visual C# のリファクタリング中にコード スニペットを使用するよう指定します。 `Refactoring` は、カスタムのコード スニペットには使用できません。  
   
-##  <a name="snippettypes"></a> SnippetTypes 要素  
+## <a name="snippettypes"></a> SnippetTypes 要素  
  複数の `SnippetType` 要素をグループ化します。 `SnippetTypes` 要素が存在しない場合、コード スニペットはコード内のどこにでも挿入できます。  
   
 ```xml  
@@ -594,7 +594,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Header 要素](../ide/code-snippets-schema-reference.md#header)|コード スニペットに関する全般的な情報を指定します。|  
   
-##  <a name="title"></a> Title 要素  
+## <a name="title"></a> Title 要素  
  コード スニペットのタイトルを指定します。 コード スニペットの `Title` 要素に格納されたタイトルは、**コード スニペット ピッカー**と、**コード スニペット マネージャー**内のコード スニペットの説明に表示されます。  
   
 ```xml  
@@ -609,7 +609,7 @@ is a great color. I love Blue.
   
  テキスト値が必要です。 このテキストでコード スニペットのタイトルを指定します。  
   
-##  <a name="tooltip"></a> ToolTip 要素  
+## <a name="tooltip"></a> ToolTip 要素  
  コード スニペット内のリテラルまたはオブジェクトに指定される値と使用方法を説明します。これは、プロジェクトにコード スニペットを挿入するときに Visual Studio によって ToolTip に表示されます。 コード スニペットの挿入後、リテラルまたはオブジェクト上にマウスを重ねると、ツールヒントのテキストが表示されます。  
   
 ```xml  
@@ -625,7 +625,7 @@ is a great color. I love Blue.
   
  テキスト値が必要です。 このテキストは、コード スニペットのオブジェクトまたはリテラルに関連付けられる ToolTip の説明を指定します。  
   
-##  <a name="type"></a> Type 要素  
+## <a name="type"></a> Type 要素  
  オブジェクトの種類を指定します。 `Object` 要素は、コード スニペット自体には定義されておらず、外部で定義する必要のある項目を指定するときに使用します。 たとえば、Windows フォーム コントロール、ASP.NET コントロール、オブジェクトのインスタンス、型のインスタンスなどをオブジェクトとして宣言します。 オブジェクトの宣言では、`Type` 要素で型を指定する必要があります。  
   
 ```xml  
@@ -640,7 +640,7 @@ is a great color. I love Blue.
   
  テキスト値が必要です。 このテキストでオブジェクトの型を指定します。  
   
-##  <a name="url"></a> Url 要素  
+## <a name="url"></a> Url 要素  
  参照アセンブリの詳細情報を提供する URL を指定します。  
   
 > [!NOTE]

@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 532781a2e816120dabfe2bec61059955cd0c82a6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082179"
 ---
 # <a name="n-tier-data-applications-overview"></a>n 層データ アプリケーションの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ N-レベル * データ アプリケーションは複数に区切られたデ�
   
  Visual Studio には、開発者が n 層アプリケーションを作成するときに役立つ機能がいくつか用意されています。  
   
--   データセット デザイナーで用意されて、 **DataSet プロジェクト**データセット (データ エンティティ層) を分離できるようにするプロパティと`TableAdapter`s (データ アクセス層) 別々 のプロジェクトにします。  
+- データセット デザイナーで用意されて、 **DataSet プロジェクト**データセット (データ エンティティ層) を分離できるようにするプロパティと`TableAdapter`s (データ アクセス層) 別々 のプロジェクトにします。  
   
--   [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)個別の名前空間に DataContext とデータ クラスを生成する設定を提供します。 これにより、データ アクセス層とデータ エンティティ層の論理的な分離が可能になります。  
+- [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)個別の名前空間に DataContext とデータ クラスを生成する設定を提供します。 これにより、データ アクセス層とデータ エンティティ層の論理的な分離が可能になります。  
   
--   [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供、<xref:System.Data.Linq.Table%601.Attach%2A>メソッドすると、アプリケーションでさまざまな層から DataContext をまとめることができます。 詳細については、次を参照してください。 [N 層アプリケーションと linq to SQL のリモート アプリケーション](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)します。  
+- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供、<xref:System.Data.Linq.Table%601.Attach%2A>メソッドすると、アプリケーションでさまざまな層から DataContext をまとめることができます。 詳細については、次を参照してください。 [N 層アプリケーションと linq to SQL のリモート アプリケーション](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)します。  
   
 ## <a name="presentation-tier"></a>プレゼンテーション層  
  *プレゼンテーション層*は、ユーザーがアプリケーションとやりとりする層です。 多くの場合、追加のアプリケーション ロジックも含まれています。 一般的なプレゼンテーション層のコンポーネントには、次のようなものがあります。  
@@ -57,11 +57,11 @@ N-レベル * データ アプリケーションは複数に区切られたデ�
   
 - 次のようなデータ アクセス コンポーネントおよびロジック  
   
-  -   [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)と[Dataadapter と Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)します。  
+  - [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)と[Dataadapter と Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)します。  
   
-  -   データの表現をオブジェクト[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)エンティティ クラスです。  
+  - データの表現をオブジェクト[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)エンティティ クラスです。  
   
-  -   共通のアプリケーション サービス (認証、承認、パーソナル化など)  
+  - 共通のアプリケーション サービス (認証、承認、パーソナル化など)  
   
   次の図は、Visual Studio で使用できる機能および技術と、n 層アプリケーションの中間層においてそれらが適合する位置を示しています。  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9c525aa18e94e7951e6355c959a105aa5841e10d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 631979309d9ad42a25b244e8806e5a6849f8b81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081490"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002:弱い ID を伴うオブジェクト上でロックしません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "58963469"
 ## <a name="rule-description"></a>規則の説明
  アプリケーション ドメインの境界を越えてオブジェクトに直接アクセスできる場合、そのオブジェクトの ID は不十分と表現されます。 スレッドで ID が不十分なオブジェクトをロックしようとすると、ブロックされることがあります。たとえば、異なるアプリケーション ドメインの別スレッドで、既に同じオブジェクトがロックされている場合です。 次の種類は、id が不十分なと、ルールによってフラグが設定されます。
 
--   <xref:System.MarshalByRefObject>
+- <xref:System.MarshalByRefObject>
 
--   <xref:System.ExecutionEngineException>
+- <xref:System.ExecutionEngineException>
 
--   <xref:System.OutOfMemoryException>
+- <xref:System.OutOfMemoryException>
 
--   <xref:System.StackOverflowException>
+- <xref:System.StackOverflowException>
 
--   <xref:System.String>
+- <xref:System.String>
 
--   <xref:System.Reflection.MemberInfo>
+- <xref:System.Reflection.MemberInfo>
 
--   <xref:System.Reflection.ParameterInfo>
+- <xref:System.Reflection.ParameterInfo>
 
--   <xref:System.Threading.Thread>
+- <xref:System.Threading.Thread>
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、[説明] セクションに一覧されていない型からオブジェクトを使用します。

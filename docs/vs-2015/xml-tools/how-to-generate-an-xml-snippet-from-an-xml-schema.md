@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115576"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>方法: XML スキーマから XML スニペットを生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ XML エディターは、XML スキーマ定義言語 (XSD) スキーマから X
   
 - エディター内の現在の要素は、属性がなく、空である必要があります。 たとえば、以下はすべて有効になります。  
   
-  -   `<Account`  
+  - `<Account`  
   
-  -   `<Account>`  
+  - `<Account>`  
   
-  -   `<Account></Account>`  
+  - `<Account></Account>`  
   
 - 要素名のすぐ右側にカーソルが置かれている必要があります。  
   
@@ -51,31 +51,31 @@ XML エディターは、XML スキーマ定義言語 (XSD) スキーマから X
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>新しい XML ファイルを作成して XML スキーマに関連付けるには  
   
-1.  **ファイル**メニューで、**新規**、 をクリック**ファイル**します。  
+1. **ファイル**メニューで、**新規**、 をクリック**ファイル**します。  
   
-2.  選択**XML ファイル**で、**テンプレート**ウィンドウをクリックします**オープン**します。  
+2. 選択**XML ファイル**で、**テンプレート**ウィンドウをクリックします**オープン**します。  
   
      エディターに新しいファイルが開きます。 ファイルには既定の XML 宣言 `<?xml version="1.0" encoding="utf-8">` が含まれています。  
   
-3.  ドキュメントのプロパティ ウィンドウで、参照 ボタンをクリックします (**.。**) で、**スキーマ**フィールド。  
+3. ドキュメントのプロパティ ウィンドウで、参照 ボタンをクリックします (**.。**) で、**スキーマ**フィールド。  
   
      **XSD スキーマ** ダイアログ ボックスが表示されます。  
   
-4.  **[追加]** をクリックします。  
+4. **[追加]** をクリックします。  
   
      **XSD スキーマを開く** ダイアログ ボックスが表示されます。  
   
-5.  スキーマ ファイルを選択し、クリックして**オープン**します。  
+5. スキーマ ファイルを選択し、クリックして**オープン**します。  
   
-6.  **[OK]** をクリックします。  
+6. **[OK]** をクリックします。  
   
      これで XML スキーマが XML ドキュメントと関連付けられます。  
   
 #### <a name="to-generate-an-xml-snippet"></a>XML スニペットを生成するには  
   
-1.  エディターのペインに「`<`」と入力します。  
+1. エディターのペインに「`<`」と入力します。  
   
-2.  メンバーの一覧に使用可能な項目が表示されます。  
+2. メンバーの一覧に使用可能な項目が表示されます。  
   
      **!--** コメントを追加します。  
   
@@ -85,11 +85,11 @@ XML エディターは、XML スキーマ定義言語 (XSD) スキーマから X
   
      **連絡先**ルート要素を追加します。  
   
-3.  選択**連絡先**からメンバーの一覧と ENTER キーを押します。  
+3. 選択**連絡先**からメンバーの一覧と ENTER キーを押します。  
   
      エディターには開始タグ `<Contact` が追加され、要素名の後にカーソルが置かれます。  
   
-4.  Tab`Contact` キーを押し、スキーマ情報に基づいて  要素用に XML データを生成します。  
+4. Tab`Contact` キーを押し、スキーマ情報に基づいて  要素用に XML データを生成します。  
   
 ### <a name="input"></a>入力  
  このチュートリアルでは、次のスキーマ ファイルを使用します。  

@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3608b5d99e8566701f6090e37b659b7a7c8df86e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114965"
 ---
 # <a name="xsd-task"></a>XSD タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "59655336"
 ## <a name="parameters"></a>パラメーター  
  **XSD** タスクのパラメーターの説明を次の表に示します。  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      省略可能な **String** 型のパラメーターです。  
   
      コマンド ラインで指定するオプションのリストです。 たとえば、"*/option1 /option2 /option#*" のような形式です。 他の **XSD** タスク パラメーターでは表されないオプションを指定する場合は、このパラメーターを使用します。  
   
--   **GenerateFromSchema**  
+- **GenerateFromSchema**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -50,11 +50,11 @@ ms.locfileid: "59655336"
   
      次のいずれかの値を指定します。各値は XSD オプションに対応しています。  
   
-    -   **classes** - **/classes**  
+    - **classes** - **/classes**  
   
-    -   **dataset** - **/dataset**  
+    - **dataset** - **/dataset**  
   
--   **Language**  
+- **Language**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -62,25 +62,25 @@ ms.locfileid: "59655336"
   
      **CS** (C#、既定)、**VB** (Visual Basic)、または **JS** (JScript) のいずれかを選択します。 `System.CodeDom.Compiler.CodeDomProvider Class` を実装するクラスの完全修飾名を指定することもできます。  
   
--   **Namespace**  
+- **Namespace**  
   
      省略可能な **String** 型のパラメーターです。  
   
      生成する型のランタイム名前空間を指定します。  
   
--   **Sources**  
+- **Sources**  
   
      必須の `ITaskItem[]` 型のパラメーターです。  
   
      タスクで使用および生成できる MSBuild ソース ファイル アイテムの配列を定義します。  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      省略可能な **Boolean** 型のパラメーターです。  
   
      `true` の場合、タスクの開始時に著作権およびバージョン番号のメッセージが表示されないようにします。  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      省略可能な **String** 型のパラメーターです。  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 585dfa357082fbb46794ab5f6dcc7b0e141fc9b7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 56b01eb64d38563178d6af947174d0c4d2720bea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113822"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>TableAdapter を使用してデータを更新する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ Databaseby 呼び出し元に戻す、更新されたデータを送信するに
   
  データ ソースを更新するための実際の手順は、ビジネス ニーズによって異なることができますが、次の手順が含まれています。  
   
-1.  アダプターの呼び出す`Update`メソッドで、 `try` / `catch`ブロック。  
+1. アダプターの呼び出す`Update`メソッドで、 `try` / `catch`ブロック。  
   
-2.  例外が検出された場合は、エラーを引き起こしたデータ行を探します。 詳細については、「[方法 :エラーが発生した行を探す](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c)します。  
+2. 例外が検出された場合は、エラーを引き起こしたデータ行を探します。 詳細については、「[方法 :エラーが発生した行を探す](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c)します。  
   
-3.  データの問題を調整 (プログラムを使用できる場合、または無効な行を変更するためのユーザーに提示することで) 行、および更新プログラムをもう一度やり直して (<xref:System.Data.DataRow.HasErrors%2A>、 <xref:System.Data.DataTable.GetErrors%2A>)。  
+3. データの問題を調整 (プログラムを使用できる場合、または無効な行を変更するためのユーザーに提示することで) 行、および更新プログラムをもう一度やり直して (<xref:System.Data.DataRow.HasErrors%2A>、 <xref:System.Data.DataTable.GetErrors%2A>)。  
   
 ## <a name="savedata-to-a-database"></a>データベースに Savedata  
  呼び出す、 `Update` TableAdapter のメソッド。 データベースに書き込まれる値を含むデータ テーブルの名前を渡します。  
   
 #### <a name="to-update-a-database-by-using-a-tableadapter"></a>TableAdapter を使用してデータベースを更新するには  
   
--   TableAdapter を囲む`Update`メソッドで、 `try` / `catch`ブロックします。 次の例の内容を更新する方法を示しています、`Customers`テーブルに`NorthwindDataSet`内から、 `try` / `catch`ブロックします。  
+- TableAdapter を囲む`Update`メソッドで、 `try` / `catch`ブロックします。 次の例の内容を更新する方法を示しています、`Customers`テーブルに`NorthwindDataSet`内から、 `try` / `catch`ブロックします。  
   
      [!code-csharp[VbRaddataSaving#9](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs#9)]
      [!code-vb[VbRaddataSaving#9](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#9)]  

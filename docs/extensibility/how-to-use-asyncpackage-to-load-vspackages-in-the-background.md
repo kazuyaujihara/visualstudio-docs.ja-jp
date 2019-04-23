@@ -7,12 +7,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0de1ccf4a75bb10ae120e9237ceb176a3794a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113964"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>方法: AsyncPackage を使用して、バック グラウンドで Vspackage を読み込む
 読み込みと初期化 VS パッケージは、ディスク I/O 結果ことができます。 このような I/O が UI スレッドで発生した場合、応答性の問題になることができます。 これに対処すると、Visual Studio 2015 が導入された、<xref:Microsoft.VisualStudio.Shell.AsyncPackage>バック グラウンド スレッドでのパッケージの読み込みができるようにするクラス。
@@ -47,7 +47,7 @@ ms.locfileid: "56680985"
 
 4. 非同期初期化作業を行う場合は、オーバーライド<xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>します。 削除、 `Initialize()` VSIX のテンプレートによって提供されるメソッド。 (、`Initialize()`メソッド**AsyncPackage**がシールされている)。 いずれかを使用することができます、<xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A>非同期のサービスをパッケージに追加する方法。
 
-    注:呼び出す`base.InitializeAsync()`、ソース コードを変更することができます。
+    注: 呼び出す`base.InitializeAsync()`、ソース コードを変更することができます。
 
    ```csharp
    await base.InitializeAsync(cancellationToken, progress);
@@ -55,7 +55,7 @@ ms.locfileid: "56680985"
 
 5. 非同期初期化コードから Rpc (リモート プロシージャ コール) が作成されないように注意する必要があります (で**InitializeAsync**)。 これらを呼び出すときに発生することが<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>直接的または間接的にします。  使用して負荷が同期が必要なときは、UI スレッドをブロック<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>します。 既定のブロックしているモデルには、Rpc が無効にします。 つまりする場合は、非同期タスクから RPC を使用しようとすると、するデッドロックが発生、UI スレッドが、パッケージを読み込むを待つ自体の場合。 ようなものを使用して必要な場合は、UI スレッドにコードをマーシャ リングする一般的な方法が**結合可能なタスク ファクトリ**の<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>または RPC を使用しないその他のいくつかのメカニズムです。  使用しない**ThreadHelper.Generic.Invoke**または一般的に、UI スレッドへの取得を待機している呼び出し元のスレッドをブロックします。
 
-    注:使用しないように**GetService**または**QueryService**で、`InitializeAsync`メソッド。 使用する場合は、まず、UI スレッドに切り替える必要があります。 使用する方法が<xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A>から、 **AsyncPackage** (にキャストすることによって<xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>)。
+    注: 使用しないように**GetService**または**QueryService**で、`InitializeAsync`メソッド。 使用する場合は、まず、UI スレッドに切り替える必要があります。 使用する方法が<xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A>から、 **AsyncPackage** (にキャストすることによって<xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>)。
 
    C#: AsyncPackage を作成します。
 
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>AsyncPackage を既存の VSPackage に変換します。
  作業の大部分は、新しいを作成すると同じ**AsyncPackage**します。 1 ~ 5 の上記の手順に従います。 次の推奨事項を慎重に実行する必要があります。
 
-1.  必ず削除してください、`Initialize`オーバーライドは、パッケージにする必要があります。
+1. 必ず削除してください、`Initialize`オーバーライドは、パッケージにする必要があります。
 
-2.  デッドロックを回避するには。可能性があります、コードで Rpc を非表示します。 バック グラウンド スレッドに実行するようになりました。 確認、RPC を行う場合 (たとえば、 **GetService**)、いずれか (1) スイッチをメイン スレッドにする必要がある、または (2) を使用した場合は、1 つの API の非同期バージョンが存在する (たとえば、 **GetServiceAsync**).
+2. デッドロックを回避するには。可能性があります、コードで Rpc を非表示します。 バック グラウンド スレッドに実行するようになりました。 確認、RPC を行う場合 (たとえば、 **GetService**)、いずれか (1) スイッチをメイン スレッドにする必要がある、または (2) を使用した場合は、1 つの API の非同期バージョンが存在する (たとえば、 **GetServiceAsync**).
 
-3.  頻度が高すぎるのスレッド間で切り替えないでください。 読み込み時間を短縮するバック グラウンド スレッドで実行できる作業をローカライズしてみてください。
+3. 頻度が高すぎるのスレッド間で切り替えないでください。 読み込み時間を短縮するバック グラウンド スレッドで実行できる作業をローカライズしてみてください。
 
 ## <a name="querying-services-from-asyncpackage"></a>AsyncPackage からサービスのクエリを実行します。
  **AsyncPackage**可能性がありますまたは呼び出し元によって非同期的に読み込まれないことができます。 例えば

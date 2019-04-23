@@ -11,23 +11,23 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 7f8d5da0d246cb6b0faa8b424f8039697686cd2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b04692ed30e69e8904919748a6db0d0eff49f54
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082283"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages およびマネージド パッケージ フレームワーク
 クラスを作成して、VSPackage、マネージ パッケージ フレームワーク (MPF) の代わりに COM 相互運用機能のクラスを使用して開発時間を短縮することができます。  
   
  マネージ VSPackage を作成する 2 つの方法はあります。  
   
--   使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パッケージ プロジェクト テンプレート  
+- 使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パッケージ プロジェクト テンプレート  
   
      詳細については、「[チュートリアル:Visual Studio パッケージ テンプレートを使用してメニュー コマンドを作成する](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)します。  
   
--   なし、VSPackage をビルド、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パッケージ プロジェクト テンプレート  
+- なし、VSPackage をビルド、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パッケージ プロジェクト テンプレート  
   
      たとえば、サンプルの VSPackage をコピーして、Guid と名前を変更します。 VSX セクションでサンプルを見つけたりできます[コード ギャラリー](http://code.msdn.microsoft.com/vsx/)します。  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae621a36a8e5226c60ff5b879d359b0e8556aeaa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bca0b07922d1b0b0d1a218fcccfa51e68a64e7e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114783"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Visual Studio で XAML をデザインする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,25 +29,25 @@ Visual Studio と Blend for Visual Studio の両方に、XAML ベースの Windo
 ### <a name="shared-capabilities"></a>共有機能
  最も基本的なタスクに関しては、いくらかのわずかな相違はあるものの、Visual Studio と Blend for Visual Studio の IDE で同一のウィンドウおよび機能のセットを使用します。 主な特徴:
 
--   **一貫性のあるユーザー インターフェイス:** アプリケーションを使い慣れた Visual Studio ユーザー インターフェイス環境で設計できるため、IDE 間の切り替えが快適になり、生産性も向上します。 Blend for Visual Studio では、コンテンツとユーザー インターフェイスの間のコントラストを上げることにより設計中のコンテンツに注意を集中するのに役立つ Visual Studio ダーク テーマを使用します。 「[XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)」をご覧ください。
+- **一貫性のあるユーザー インターフェイス:** アプリケーションを使い慣れた Visual Studio ユーザー インターフェイス環境で設計できるため、IDE 間の切り替えが快適になり、生産性も向上します。 Blend for Visual Studio では、コンテンツとユーザー インターフェイスの間のコントラストを上げることにより設計中のコンテンツに注意を集中するのに役立つ Visual Studio ダーク テーマを使用します。 「[XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)」をご覧ください。
 
      ![Blend for Visual Studio の IDE](../designers/media/blendide.png "BlendIDE")
 
--   **XAML IntelliSense:** どちらの IDE も、ステートメント入力候補、コードへのコメント追加や書式設定などの一般的なエディター操作のサポート、およびリソース、バインディング、コードへのナビゲーションなど、IntelliSense に期待する一般的な機能すべてをサポートします。
+- **XAML IntelliSense:** どちらの IDE も、ステートメント入力候補、コードへのコメント追加や書式設定などの一般的なエディター操作のサポート、およびリソース、バインディング、コードへのナビゲーションなど、IntelliSense に期待する一般的な機能すべてをサポートします。
 
--   **基本的なデバッグ機能:** Blend では、実行中のアプリをデバッグするブレークポイントをコードに設定するなどの、新たなデバッグが可能です。 Visual Studio とデバッグ機能の一貫性を保つため、Blend for Visual Studio には Visual Studio の大半のデバッグ ウィンドウとツールバーが含まれています。 診断やコード分析などの高度なデバッグ機能は、Visual Studio でのみ使用できます。 「 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)」を参照してください。
+- **基本的なデバッグ機能:** Blend では、実行中のアプリをデバッグするブレークポイントをコードに設定するなどの、新たなデバッグが可能です。 Visual Studio とデバッグ機能の一貫性を保つため、Blend for Visual Studio には Visual Studio の大半のデバッグ ウィンドウとツールバーが含まれています。 診断やコード分析などの高度なデバッグ機能は、Visual Studio でのみ使用できます。 「 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)」を参照してください。
 
--   **ファイルの再読み込み操作:** XAML ファイルは、Blend for Visual Studio または Visual Studio のどちらでも編集でき、切り替え時に編集したファイルを自動的に再読み込みさせることができます。 ワークフローの中断を最小限に抑えるため、[ファイルの再読み込み] ダイアログでファイルの再読み込みの基本設定を設定できます。
+- **ファイルの再読み込み操作:** XAML ファイルは、Blend for Visual Studio または Visual Studio のどちらでも編集でき、切り替え時に編集したファイルを自動的に再読み込みさせることができます。 ワークフローの中断を最小限に抑えるため、[ファイルの再読み込み] ダイアログでファイルの再読み込みの基本設定を設定できます。
 
      ![ファイルの再読み込み操作](../designers/media/blendfilereload.png "BlendFileReload")
 
--   **レイアウトの同期と設定:** カスタム レイアウトを使用して、ツール ウィンドウのレイアウト変更を保存および適用できます。 同じ Microsoft アカウントでサインインすると、Visual Studio は Visual Studio と Blend for Visual Studio 双方の変更や基本設定をコンピューター間で同期します。 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)を参照してください。
+- **レイアウトの同期と設定:** カスタム レイアウトを使用して、ツール ウィンドウのレイアウト変更を保存および適用できます。 同じ Microsoft アカウントでサインインすると、Visual Studio は Visual Studio と Blend for Visual Studio 双方の変更や基本設定をコンピューター間で同期します。 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)を参照してください。
 
--   **共通のソリューション エクスプローラー:** ソリューション エクスプローラーによって、プロジェクトやファイルが整理して表示されるだけでなく、プロジェクトやファイルに関連付けられているコマンドにすばやくアクセスできます。 ソリューション エクスプローラーを使用すると、大規模なエンタープライズ プロジェクトでの作業が容易になります。 「[ソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)」をご覧ください。
+- **共通のソリューション エクスプローラー:** ソリューション エクスプローラーによって、プロジェクトやファイルが整理して表示されるだけでなく、プロジェクトやファイルに関連付けられているコマンドにすばやくアクセスできます。 ソリューション エクスプローラーを使用すると、大規模なエンタープライズ プロジェクトでの作業が容易になります。 「[ソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)」をご覧ください。
 
--   **チーム エクスプローラー:** チーム エクスプローラーを使用すると、プロジェクトを GIT または TFS リポジトリを使用して管理でき、チームのコラボレーションが容易になります。 [チーム エクスプローラーでの作業](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)を参照してください。
+- **チーム エクスプローラー:** チーム エクスプローラーを使用すると、プロジェクトを GIT または TFS リポジトリを使用して管理でき、チームのコラボレーションが容易になります。 [チーム エクスプローラーでの作業](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)を参照してください。
 
--   **NuGet:** Visual Studio と Blend for Visual Studio の両方で NuGet パッケージを管理できます。 NuGet は、パッケージのインストールと、ソリューションからの削除を簡略化する .NET Framework 用のパッケージ マネージャーです。
+- **NuGet:** Visual Studio と Blend for Visual Studio の両方で NuGet パッケージを管理できます。 NuGet は、パッケージのインストールと、ソリューションからの削除を簡略化する .NET Framework 用のパッケージ マネージャーです。
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Blend for Visual Studio での高度な機能
  生産性を高めるため、次のようなタスクには Blend for Visual Studio の使用をご検討ください。 Blend for Visual Studio が Visual Studio デザイナーまたはコード単独より短い時間でより多くの機能を提供する領域は以下のとおりです。

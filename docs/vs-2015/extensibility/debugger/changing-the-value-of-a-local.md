@@ -11,12 +11,12 @@ ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 29a2145199629b9a1a02928b5a4a888a5824c339
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b955d27089d86035f96711c2f8442fec5b34bceb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113483"
 ---
 # <a name="changing-the-value-of-a-local"></a>ローカルの値の変更
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "58973076"
   
 2. `IDebugProperty2::SetValueAsString` では次のタスクを実行します。  
   
-   1.  値を生成する文字列を評価します。  
+   1. 値を生成する文字列を評価します。  
   
-   2.  関連付けられているバインド[IDebugField](../../extensibility/debugger/reference/idebugfield.md)オブジェクトを取得する、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。  
+   2. 関連付けられているバインド[IDebugField](../../extensibility/debugger/reference/idebugfield.md)オブジェクトを取得する、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。  
   
-   3.  一連のバイト値に変換します。  
+   3. 一連のバイト値に変換します。  
   
-   4.  呼び出し[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)デバッグ中のプログラムがアクセスできるように、メモリに、値のバイトを格納します。  
+   4. 呼び出し[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)デバッグ中のプログラムがアクセスできるように、メモリに、値のバイトを格納します。  
   
 3. Visual Studio の更新、**ローカル**表示 (を参照してください[を表示するローカル](../../extensibility/debugger/displaying-locals.md)詳細については)。  
   

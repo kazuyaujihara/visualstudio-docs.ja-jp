@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e1940bb3825fd610d4177b92c7147bfcd55b6174
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 36d9f2abceb7daf0d9e4be72958b2bbc1fe86204
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659359"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080541"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>方法: Profiler のコマンドラインを使用して収集の詳細なタイミング データを .NET サービスをインストルメント化および
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ ms.locfileid: "59659359"
 
 #### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには  
 
--   次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
+- 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
 
     |オプション|説明|  
     |------------|-----------------|  
@@ -98,19 +98,19 @@ ms.locfileid: "59659359"
 
 #### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには  
 
-1.  サービス コントロール マネージャーからサービスを停止します。  
+1. サービス コントロール マネージャーからサービスを停止します。  
 
-2.  プロファイラーをシャットダウンします。 型:  
+2. プロファイラーをシャットダウンします。 型:  
 
      **VSPerfCmd /shutdown**  
 
-3.  すべてのプロファイリングを完了したら、プロファイル環境変数を消去します。 型:  
+3. すべてのプロファイリングを完了したら、プロファイル環境変数を消去します。 型:  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  インストルメントされたモジュールを元のモジュールに置き換えます。 必要に応じて、サービスの [スタートアップの種類] を再構成します。  
+4. インストルメントされたモジュールを元のモジュールに置き換えます。 必要に応じて、サービスの [スタートアップの種類] を再構成します。  
 
-5.  コンピューターを再起動します。  
+5. コンピューターを再起動します。  
 
 ## <a name="see-also"></a>関連項目  
  [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)   

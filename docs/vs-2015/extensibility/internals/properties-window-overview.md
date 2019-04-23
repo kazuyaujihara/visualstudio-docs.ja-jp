@@ -10,21 +10,21 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 224fb081f21701433a84121985f90351225036e5
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: e43893af3275258c49e3e23348afb106416636a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58963838"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113847"
 ---
 # <a name="properties-window-overview"></a>プロパティ ウィンドウの概要
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 **プロパティ**で利用可能な期間の 2 つの主な型で選択したオブジェクトのプロパティを表示するウィンドウが使用される、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) です。 これら 2 つの種類のウィンドウは次のとおりです。  
   
--   ソリューション エクスプ ローラー、クラス ビュー、およびオブジェクト ブラウザーなどのツール ウィンドウ  
+- ソリューション エクスプ ローラー、クラス ビュー、およびオブジェクト ブラウザーなどのツール ウィンドウ  
   
--   このようなエディターや、フォーム デザイナー、XML エディター、HTML エディターとデザイナーを格納しているドキュメント ウィンドウ  
+- このようなエディターや、フォーム デザイナー、XML エディター、HTML エディターとデザイナーを格納しているドキュメント ウィンドウ  
   
 ## <a name="using-the-properties-window"></a>[プロパティ] ウィンドウを使用します。  
  **プロパティ**ウィンドウが 1 つまたは複数選択した項目のプロパティを表示します。 複数の項目を選択すると、選択したすべてのオブジェクトのすべてのプロパティの積集合が表示されます。  

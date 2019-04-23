@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9bc74cbd0d7fbcfec26f4bfe3f334623baf066b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e0bbf15c82f62ad61e538f48cec065a9ef806ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113613"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>方法: .NET Framework サービスをインストルメント化と Profiler のコマンドラインを使用して収集メモリ データ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "59653737"
 
     **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}  
 
-   -   **/globaltracegc** および **/globaltracegclife** を使用すると、メモリの割り当てデータとオブジェクトの有効期間データを収集できます。  
+   - **/globaltracegc** および **/globaltracegclife** を使用すると、メモリの割り当てデータとオブジェクトの有効期間データを収集できます。  
 
        |オプション|説明|  
        |------------|-----------------|  
@@ -91,14 +91,14 @@ ms.locfileid: "59653737"
 
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`  
 
-    -   サービスのプロセス ID またはプロセス名を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID と名前を参照できます。  
+    - サービスのプロセス ID またはプロセス名を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID と名前を参照できます。  
 
 ## <a name="controlling-data-collection"></a>データ コレクションの制御  
  サービスの実行中は、**VSPerfCmd.exe** のオプションを使用してファイルへのデータ書き込みを開始または停止することにより、データ収集を制御できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。  
 
 #### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには  
 
--   次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
+- 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
 
     |オプション|説明|  
     |------------|-----------------|  
@@ -111,19 +111,19 @@ ms.locfileid: "59653737"
 
 #### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには  
 
-1.  サービス コントロール マネージャーからサービスを停止します。  
+1. サービス コントロール マネージャーからサービスを停止します。  
 
-2.  プロファイラーをシャットダウンします。 型:  
+2. プロファイラーをシャットダウンします。 型:  
 
      **VSPerfCmd /shutdown**  
 
-3.  すべてのプロファイリングを完了したら、プロファイル環境変数を消去します。 型:  
+3. すべてのプロファイリングを完了したら、プロファイル環境変数を消去します。 型:  
 
      **VSPerfClrEnv /globaloff**  
 
      インストルメントされたモジュールを元のモジュールに置き換えます。 必要に応じて、サービスの [スタートアップの種類] を再構成します。  
 
-4.  コンピューターを再起動します。  
+4. コンピューターを再起動します。  
 
 ## <a name="see-also"></a>関連項目  
  [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)   

@@ -6,12 +6,12 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112833"
 ---
 # <a name="manifest-from-resources"></a>リソースからのマニフェスト
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,25 +43,25 @@ ms.locfileid: "58977706"
   
  **例**  
   
--   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
+- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
--   ManifestFromResources/resources:D:\Images\Image1.png;D:\Images\Image1.xaml/assembly:My.Assembly.Name/guidName:MyImages/newGuids/newIds  
+- ManifestFromResources/resources:D:\Images\Image1.png;D:\Images\Image1.xaml/assembly:My.Assembly.Name/guidName:MyImages/newGuids/newIds  
   
 ## <a name="notes"></a>メモ  
   
--   ツールは、.png、.xaml ファイルのみをサポートします。 その他のイメージまたはファイルの種類は無視されます。 リソースの解析中に発生したすべてのサポートされていない型では、警告が生成されます。 ツールが終了するとイメージを検出するサポートされていない場合、リソースの解析エラーが生成されます  
+- ツールは、.png、.xaml ファイルのみをサポートします。 その他のイメージまたはファイルの種類は無視されます。 リソースの解析中に発生したすべてのサポートされていない型では、警告が生成されます。 ツールが終了するとイメージを検出するサポートされていない場合、リソースの解析エラーが生成されます  
   
--   .Png イメージに対する推奨形式では、ツールは、イメージの実際のサイズとは異なる場合でも、形式が指定したサイズ、.png のサイズ/ディメンションの値が設定されます。  
+- .Png イメージに対する推奨形式では、ツールは、イメージの実際のサイズとは異なる場合でも、形式が指定したサイズ、.png のサイズ/ディメンションの値が設定されます。  
   
--   幅と高さの形式は .png イメージでは、省略できますが、ツールは、イメージの実際の幅と高さを読み取り、それらのイメージのサイズ/ディメンションの値を使用しています。  
+- 幅と高さの形式は .png イメージでは、省略できますが、ツールは、イメージの実際の幅と高さを読み取り、それらのイメージのサイズ/ディメンションの値を使用しています。  
   
--   ツールは、スタンドアロン画像イメージ ストリップに分割し、それらを既存のマニフェストに追加しようとするのでこのツールを複数回の同じ .imagemanifest 同じイメージ ストリップで実行されているが、マニフェストのエントリが重複する発生します。  
+- ツールは、スタンドアロン画像イメージ ストリップに分割し、それらを既存のマニフェストに追加しようとするのでこのツールを複数回の同じ .imagemanifest 同じイメージ ストリップで実行されているが、マニフェストのエントリが重複する発生します。  
   
--   マージ (/newGuids または/newIds を省略すると) は、ツールで生成されるマニフェストののみ行ってください。 カスタマイズまたはその他の手段を使用して生成されたマニフェストを正しくマージされません可能性があります。  
+- マージ (/newGuids または/newIds を省略すると) は、ツールで生成されるマニフェストののみ行ってください。 カスタマイズまたはその他の手段を使用して生成されたマニフェストを正しくマージされません可能性があります。  
   
--   ネイティブ アセンブリに対して生成されるマニフェストは、リソース、ネイティブ アセンブリの .rc ファイルから Id と一致する ID のシンボルを生成後の手作業で編集をする必要があります。  
+- ネイティブ アセンブリに対して生成されるマニフェストは、リソース、ネイティブ アセンブリの .rc ファイルから Id と一致する ID のシンボルを生成後の手作業で編集をする必要があります。  
   
 ## <a name="sample-output"></a>出力例  
  **単純なイメージ マニフェスト**  

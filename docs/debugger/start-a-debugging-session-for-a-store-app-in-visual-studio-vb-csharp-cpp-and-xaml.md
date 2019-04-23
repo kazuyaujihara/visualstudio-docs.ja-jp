@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63c6dfde0f4f097b4bfa595c0e594ba80020cedc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7c65662d054b8c3dd9e650fe088f7048cc3b4071
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669787"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081854"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>UWP アプリのデバッグ セッションを開始する
 
@@ -54,7 +54,7 @@ ms.locfileid: "59669787"
 Visual Studio 2017 では、コマンドとこの記事に示すオプションのほとんどにも適用されます UWP アプリの HTML および JavaScript。 管理コマンドが異なるとC++アプリ、JavaScript アプリ通常はのコマンドと同じC++UWP アプリです。
 ::: moniker-end
 
-##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Visual Studio のツールバーからデバッグを開始します。
+## <a name="BKMK_The_easy_way_to_start_debugging"></a>Visual Studio のツールバーからデバッグを開始します。
 
 構成して、デバッグを開始する最も簡単な方法は、標準の Visual Studio ツールバーです。
 
@@ -72,7 +72,7 @@ Visual Studio 2017 では、コマンドとこの記事に示すオプション�
 
 デバッグするには、ブレークポイントに到達する、手動で実行を中断した、ハンドルされない例外が発生するか、アプリが終了するまでが続行されます。
 
-###  <a name="BKMK_Choose_the_deployment_target"></a> 展開ターゲットのオプション
+### <a name="BKMK_Choose_the_deployment_target"></a> 展開ターゲットのオプション
 
 Visual Studio のツールバーでデバッグ ターゲットを設定できるまたはプロジェクトのプロパティ ページをデバッグします。 次のいずれかのオプションを選択します。
 
@@ -84,7 +84,7 @@ Visual Studio のツールバーでデバッグ ターゲットを設定でき�
 |**デバイス**|USB で接続されたデバイスでアプリをデバッグします。 デバイスは、開発者のロックを解除し、画面がロックを解除する必要があります。|
 |**モバイル エミュレーター**|エミュレーターの名で指定されたエミュレーターを起動、アプリのデプロイ、デバッグを開始します。 エミュレーターは、HYPER-V が有効になっているマシンでのみ使用できます。|
 
-##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> プロジェクトのプロパティ ページでのデバッグを構成します。
+## <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> プロジェクトのプロパティ ページでのデバッグを構成します。
 
 追加のデバッグ オプションを構成するには、プロジェクトのデバッグ プロパティ ページを使用します。
 
@@ -102,7 +102,7 @@ Visual Studio のツールバーでデバッグ ターゲットを設定でき�
 
      ![C++UWP アプリのデバッグ プロパティ ページ](../debugger/media/dbg_cpp_debugpropertypage.png)
 
-###  <a name="BKMK_Choose_the_debugger_to_use"></a> 使用するデバッガーを選択する
+### <a name="BKMK_Choose_the_debugger_to_use"></a> 使用するデバッガーを選択する
 
 C#と既定では、マネージ コードを Visual Basic アプリでは、Visual Studio のデバッグ。 その他のまたは追加のコードをデバッグすることができます。 設定することも**デバッガーの種類**プロジェクトの一部である任意のバック グラウンド タスクの値。
 
@@ -123,20 +123,20 @@ C++ アプリでの Visual Studio は既定では、ネイティブ コードを
 |**スクリプトを利用したネイティブ コード**|ネイティブの C/C++ コードとアプリの JavaScript コードをデバッグします。 マネージ コードは無視されます。 使用できるC++プロジェクトまたはバック グラウンド タスクのみです。|
 |**GPU のみ (C++ AMP)**|GPU (Graphics Processing Unit) で実行されるネイティブ C++ コードをデバッグします。 C++ プロジェクトのみで使用できます。|
 
-###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> (省略可能) ネットワーク ループバックを無効にします。
+### <a name="BKMK__Optional__Disable_network_loopbacks"></a> (省略可能) ネットワーク ループバックを無効にします。
 
  セキュリティ、標準的な方法でインストールされている UWP アプリはネットワーク呼び出しにインストールされて、デバイスを作成できません。 Visual Studio の除外対象では、既定では、この規則からのアプリが展開されるため、1 台のコンピューター上で通信プロシージャをテストすることができます。 アプリをリリースする前に、この免除なしアプリをテストする必要があります。
 
 **ネットワーク ループバックの免除を削除するには:**
 
--   C# Visual Basic アプリの場合は、選択を解除し、**ローカル ネットワーク ループバックの許可**下のチェック ボックス**開始オプション**上、**デバッグ**プロパティ ページ。
+- C# Visual Basic アプリの場合は、選択を解除し、**ローカル ネットワーク ループバックの許可**下のチェック ボックス**開始オプション**上、**デバッグ**プロパティ ページ。
 
--   ビジュアルのC++アプリで、**いいえ**から、**ローカル ネットワーク Loopback を許可する**ボックスの一覧、**デバッグ**プロパティ ページ。
+- ビジュアルのC++アプリで、**いいえ**から、**ローカル ネットワーク Loopback を許可する**ボックスの一覧、**デバッグ**プロパティ ページ。
 
-###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> デバッグの開始時 (省略可能) アプリを再インストールします。
+### <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> デバッグの開始時 (省略可能) アプリを再インストールします。
  インストールの問題を診断する、C#または Visual Basic アプリで、**アンインストールし、パッケージを再インストール**上、**デバッグ**プロパティ ページ。 このオプションは、デバッグを開始するときに、元のインストールを再作成されます。 このオプションは使用できませんC++プロジェクト。
 
-###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> リモート デバッグ用の認証オプションを設定します。
+### <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> リモート デバッグ用の認証オプションを設定します。
 
 既定では、選択した場合は、リモート デバッガーを実行する Windows 資格情報を指定する必要があります**リモート マシン**デプロイ ターゲットとして。 認証の要件を変更することができます。
 
@@ -151,11 +151,11 @@ C++ アプリでの Visual Studio は既定では、ネイティブ コードを
 > [!CAUTION]
 > リモート デバッガーを実行すると、ネットワークのセキュリティがない**None**または**ユニバーサル (暗号化されていないプロトコル)** モード。 悪意のあるコードや悪意のあるトラフィックのリスクとしている信頼されたネットワーク上でのみこれらのモードをいないことを確認を選択します。
 
-##  <a name="BKMK_Start_the_debugging_session"></a> デバッグの開始オプション
+## <a name="BKMK_Start_the_debugging_session"></a> デバッグの開始オプション
 
 選択すると**デバッグ** > **デバッグの開始**またはキーを押します**f5 キーを押して**、Visual Studio がアタッチされたデバッガーでアプリを起動します。 実行は、ブレークポイントに達するか、実行が手動で中断されるか、ハンドルされない例外が発生するか、アプリが終了するまで続行されます。
 
-###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> アプリの起動の遅延が、デバッグを開始します。
+### <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> アプリの起動の遅延が、デバッグを開始します。
 
 既定では、Visual Studio は、デバッグを開始するときにすぐにアプリを起動します。 デバッグ モードで実行されますが、デバッガーの外部のアプリケーションを開始するアプリを設定することもできます。 Windows アプリの起動をデバッグするなど、**開始**メニューのまたはアプリのバック グラウンド プロセスをデバッグします。 このオプションを選択した場合、アプリの起動時にデバッガーで開始します。
 
@@ -167,7 +167,7 @@ C++ アプリでの Visual Studio は既定では、ネイティブ コードを
 
 バック グラウンド タスクのデバッグの詳細については、次を参照してください。[トリガー中断、再開、および UWP アプリ用のイベントをバック グラウンド](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)します。
 
-###  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> インストールされているか、実行中の UWP アプリをデバッグします。
+### <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> インストールされているか、実行中の UWP アプリをデバッグします。
 
 使用することができます**インストール済みアプリ パッケージのデバッグ**が既にインストールされているか、ローカルまたはリモート デバイスで実行されている UWP アプリをデバッグします。 アプリを Microsoft Store からインストールする可能性があります。 または Visual Studio プロジェクトができない可能性があります。 たとえば、アプリには、Visual Studio を使用しないカスタム ビルド システムがあります。
 
@@ -175,7 +175,7 @@ C++ アプリでの Visual Studio は既定では、ネイティブ コードを
 
 デバッガーでインストールまたは実行中の UWP アプリを起動する**デバッグ** > **その他のデバッグ ターゲット** > **インストール済みアプリ パッケージのデバッグ**します。 詳細については、次を参照してください。 [、インストールされているアプリ パッケージをデバッグ](../debugger/debug-installed-app-package.md)します。
 
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> 実行中の Windows 8.x アプリにデバッガーをアタッチします。
+### <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> 実行中の Windows 8.x アプリにデバッガーをアタッチします。
 
 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] アプリにデバッガーをアタッチするには、デバッグ可能パッケージ マネージャーを使用して、デバッグ モードで実行するようにアプリを設定する必要があります。 デバッグ可能パッケージ マネージャーは、Visual Studio 用リモート ツールと共にインストールされます。
 
