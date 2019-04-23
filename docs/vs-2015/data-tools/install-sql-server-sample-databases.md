@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 056e5d1fad258d063e30cfd97e85529ff3a0c9bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654504"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059637"
 ---
 # <a name="install-sql-server-sample-databases"></a>SQL Server サンプル データベースをインストールします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "59654504"
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Visual Studio の .bak ファイルからデータベースを復元するには  
   
-1.  Microsoft SQL Server データベースをバックアップする場合、.bak ファイルになります。 データベース ファイルとして再使用可能なをファイル .bak にする必要があります*復元*します。 メイン メニューで、次のように選択します。**ビュー** > **SQL Server オブジェクト エクスプ ローラー**します。 表示されない場合は、インストールする必要があります。 移動して**コントロール パネル** > **プログラムと機能**Microsoft Visual Studio 2015 を検索し、クリックして、**変更**ボタンをクリックします。 インストールされているコンポーネントの一覧は、インストーラー ウィンドウが表示されたら、選択、 **SQL Server オブジェクト エクスプ ローラー**チェック ボックスをオンし、インストールを続行します。  
+1. Microsoft SQL Server データベースをバックアップする場合、.bak ファイルになります。 データベース ファイルとして再使用可能なをファイル .bak にする必要があります*復元*します。 メイン メニューで、次のように選択します。**ビュー** > **SQL Server オブジェクト エクスプ ローラー**します。 表示されない場合は、インストールする必要があります。 移動して**コントロール パネル** > **プログラムと機能**Microsoft Visual Studio 2015 を検索し、クリックして、**変更**ボタンをクリックします。 インストールされているコンポーネントの一覧は、インストーラー ウィンドウが表示されたら、選択、 **SQL Server オブジェクト エクスプ ローラー**チェック ボックスをオンし、インストールを続行します。  
   
-2.  SQL Server オブジェクト エクスプ ローラーで、SQL Server データベース エンジン (たとえば、localdb) を右クリックして**新しいクエリ**します。  
+2. SQL Server オブジェクト エクスプ ローラーで、SQL Server データベース エンジン (たとえば、localdb) を右クリックして**新しいクエリ**します。  
   
      ![SQL Server オブジェクト エクスプ ローラーの新しいクエリ](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "raddata SQL Server オブジェクト エクスプ ローラーの新しいクエリ")  
   
-3.  最初に、.bak ファイル内のデータベースとログ ファイルの論理名が必要です。 これを取得する SQL クエリ エディターにこのクエリを入力し、緑色を選択**実行**ウィンドウの上部にあるボタンをクリックします。 .Bak ファイルを指すために必要な場合は、ファイルのパスを変更します。  
+3. 最初に、.bak ファイル内のデータベースとログ ファイルの論理名が必要です。 これを取得する SQL クエリ エディターにこのクエリを入力し、緑色を選択**実行**ウィンドウの上部にあるボタンをクリックします。 .Bak ファイルを指すために必要な場合は、ファイルのパスを変更します。  
   
     ```  
     RESTORE FILELISTONLY  
@@ -43,7 +43,7 @@ ms.locfileid: "59654504"
   
      [結果] ウィンドウに表示される論理名を書き留めます。  Northwind データベースでは、2 つの論理名に Northwind と Northwind_log を使用します。  
   
-4.  データベースを作成するには、このクエリを実行するようになりました。 独自のソースと変換先のパス、論理データベース名、および Northwind 用の物理ファイル名を適切なに置き換えてください。 .Mdf と .ldf ファイルの拡張機能を保持します。  
+4. データベースを作成するには、このクエリを実行するようになりました。 独自のソースと変換先のパス、論理データベース名、および Northwind 用の物理ファイル名を適切なに置き換えてください。 .Mdf と .ldf ファイルの拡張機能を保持します。  
   
     ```  
     RESTORE DATABASE Northwind  
@@ -52,14 +52,14 @@ ms.locfileid: "59654504"
     MOVE 'Northwind_log' TO 'c:\nw\northwind.ldf'  
     ```  
   
-5.  SQL Server オブジェクト エクスプ ローラーを右クリックし、**データベース**ノード、およびするが、Northwind データベースのノードに表示されます。 ない場合は、データベースを選択します右クリックし、**新しいデータベースの追加**します。 名前と作成した .mdf ファイルの場所を入力します。  
+5. SQL Server オブジェクト エクスプ ローラーを右クリックし、**データベース**ノード、およびするが、Northwind データベースのノードに表示されます。 ない場合は、データベースを選択します右クリックし、**新しいデータベースの追加**します。 名前と作成した .mdf ファイルの場所を入力します。  
   
-6.  データベースは、Visual Studio でのデータ ソースとして使用する準備ができました。  
+6. データベースは、Visual Studio でのデータ ソースとして使用する準備ができました。  
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>SQL Server Management Studio の .bak ファイルからデータベースを復元するには  
   
-1.  SQL Server Management Studio のダウンロード サイトからダウンロードします。  
+1. SQL Server Management Studio のダウンロード サイトからダウンロードします。  
   
-2.  SSMS で**オブジェクト エクスプ ローラー**ウィンドウを右クリックし、**データベース**ノードを選択**データベースの復元**、し .bak ファイルの場所を指定します。  
+2. SSMS で**オブジェクト エクスプ ローラー**ウィンドウを右クリックし、**データベース**ノードを選択**データベースの復元**、し .bak ファイルの場所を指定します。  
   
      ![SSMS の データベースの復元](../data-tools/media/raddata-ssms-restore-database.png "raddata SSMS の データベースの復元")

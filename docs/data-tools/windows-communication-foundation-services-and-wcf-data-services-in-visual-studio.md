@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b253c4e3447b8d7cd76dcef010adf99addb7bf9d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045189"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio での Windows Communication Foundation サービスと WCF データ サービス
 
@@ -91,7 +91,7 @@ WCF クライアントが作成された後は、他のオブジェクトと同�
 
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio での WCF ツール
 
-Visual Studio には、WCF サービスと WCF クライアントの両方を作成するためのツールが用意されています。 ツールについて説明するチュートリアルでは、次を参照してください。[チュートリアル: Windows フォームにおける単純な WCF サービスを作成する](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)します。
+Visual Studio には、WCF サービスと WCF クライアントの両方を作成するためのツールが用意されています。 ツールについて説明するチュートリアルでは、次を参照してください。[チュートリアル。Windows フォームにおける単純な WCF サービスを作成する](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)します。
 
 ### <a name="create-and-test-wcf-services"></a>作成し、WCF サービスのテスト
 
@@ -139,9 +139,9 @@ Visual Studio がプロキシとサービスを使用して、追加のエンド
 
 ### <a name="to-select-a-service-endpoint"></a>サービス エンドポイントを選択するには
 
-1.  プロジェクト ノードを右クリックして WCF サービスへの参照を追加**ソリューション エクスプ ローラー**を選択して**サービス参照の追加**します。
+1. プロジェクト ノードを右クリックして WCF サービスへの参照を追加**ソリューション エクスプ ローラー**を選択して**サービス参照の追加**します。
 
-2.  コード エディターでは、サービス参照のコンス トラクターを追加します。
+2. コード エディターでは、サービス参照のコンス トラクターを追加します。
 
     ```vb
     Dim proxy As New ServiceReference.Service1Client(
@@ -154,26 +154,26 @@ Visual Studio がプロキシとサービスを使用して、追加のエンド
     > [!NOTE]
     > 置換*ServiceReference*サービス参照と置換の名前空間を持つ*Service1Client*サービスの名前に置き換えます。
 
-3.  IntelliSense の一覧では、コンス トラクターのオーバー ロードを含むが表示されます。 選択、`endpointConfigurationName As String`オーバー ロードします。
+3. IntelliSense の一覧では、コンス トラクターのオーバー ロードを含むが表示されます。 選択、`endpointConfigurationName As String`オーバー ロードします。
 
-4.  次のオーバー ロードは、次のように入力します。 `=` *ConfigurationName*ここで、 *ConfigurationName*を使用するエンドポイントの名前を指定します。
+4. 次のオーバー ロードは、次のように入力します。 `=` *ConfigurationName*ここで、 *ConfigurationName*を使用するエンドポイントの名前を指定します。
 
     > [!NOTE]
     > 使用可能なエンドポイントの名前がわからない場合は、それらを検索、 *app.config*ファイル。
 
 ### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>WCF サービスの使用可能なエンドポイントが見つかりません
 
-1.  **ソリューション エクスプ ローラー**を右クリックし、 **app.config**サービス参照を含むプロジェクトのファイルをクリックして**オープン**します。 ファイルでは、コード エディターで表示されます。
+1. **ソリューション エクスプ ローラー**を右クリックし、 **app.config**サービス参照を含むプロジェクトのファイルをクリックして**オープン**します。 ファイルでは、コード エディターで表示されます。
 
-2.  検索、`<Client>`ファイル内のタグ。
+2. 検索、`<Client>`ファイル内のタグ。
 
-3.  下に検索、`<Client>`で始まるタグのタグ`<Endpoint>`します。
+3. 下に検索、`<Client>`で始まるタグのタグ`<Endpoint>`します。
 
      サービス参照は、複数のエンドポイントを提供する場合があります複数`<Endpoint`タグ。
 
-4.  内で、`<EndPoint>`タグが表示されます、 `name="` *SomeService* `"`パラメーター (場所*SomeService*エンドポイント名を表します)。 渡すことができるエンドポイントの名前が、`endpointConfigurationName As String`サービス参照のコンス トラクターのオーバー ロードします。
+4. 内で、`<EndPoint>`タグが表示されます、 `name="` *SomeService* `"`パラメーター (場所*SomeService*エンドポイント名を表します)。 渡すことができるエンドポイントの名前が、`endpointConfigurationName As String`サービス参照のコンス トラクターのオーバー ロードします。
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>方法: 非同期サービス メソッドを呼び出す
+## <a name="how-to-call-a-service-method-asynchronously"></a>方法: サービス メソッドを非同期的に呼び出す
 
 Windows Communication Foundation (WCF) サービスのほとんどのメソッドは、同期または非同期で呼び出すことができます。 メソッドを非同期的に呼び出すには、低速接続で実行しているときに、メソッドが呼び出されるときに作業を続行するアプリケーションができるようにします。
 
@@ -186,45 +186,45 @@ Windows Communication Foundation (WCF) サービスのほとんどのメソッ�
 
 ### <a name="to-call-a-service-method-asynchronously"></a>サービス メソッドを非同期的に呼び出す
 
-1.  **ソリューション エクスプ ローラー**、サービス参照 を選択します。
+1. **ソリューション エクスプ ローラー**、サービス参照 を選択します。
 
-2.  **プロジェクト** メニューのをクリックして**サービス参照の構成**します。
+2. **プロジェクト** メニューのをクリックして**サービス参照の構成**します。
 
-3.  **サービス参照の構成**ダイアログ ボックスで、**非同期操作を生成する**チェック ボックスをオンします。
+3. **サービス参照の構成**ダイアログ ボックスで、**非同期操作を生成する**チェック ボックスをオンします。
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>方法: サービスによって返されるデータのバインド
+## <a name="how-to-bind-data-returned-by-a-service"></a>方法: サービスによって返されるデータをバインドします。
 
 他のデータ ソースをコントロールにバインドすると同様、コントロールに Windows Communication Foundation (WCF) サービスによって返されるデータをバインドすることができます。 自動的に追加されますが、サービスにデータを返す複合型が含まれている場合に、WCF サービスへの参照を追加すると、**データソース**ウィンドウ。
 
 ### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>WCF サービスによって返された 1 つのデータ フィールドにコントロールをバインドするには
 
-1.  **[データ]** メニューの **[データ ソースの表示]** をクリックします。
+1. **[データ]** メニューの **[データ ソースの表示]** をクリックします。
 
    **データソース**ウィンドウが表示されます。
 
-2.  **データソース**ウィンドウで、サービス参照のノードを展開します。 サービスの表示によって返される任意の複合型。
+2. **データソース**ウィンドウで、サービス参照のノードを展開します。 サービスの表示によって返される任意の複合型。
 
-3.  型のノードを展開します。 その型のデータ フィールドが表示されます。
+3. 型のノードを展開します。 その型のデータ フィールドが表示されます。
 
-4.  フィールドを選択し、データ型で利用可能なコントロールの一覧を表示するドロップダウン矢印をクリックします。
+4. フィールドを選択し、データ型で利用可能なコントロールの一覧を表示するドロップダウン矢印をクリックします。
 
-5.  バインドするコントロールの種類をクリックします。
+5. バインドするコントロールの種類をクリックします。
 
-6.  フィールドをフォームにドラッグします。 と共にをフォームにコントロールを追加、<xref:System.Windows.Forms.BindingSource>コンポーネントと<xref:System.Windows.Forms.BindingNavigator>コンポーネント。
+6. フィールドをフォームにドラッグします。 と共にをフォームにコントロールを追加、<xref:System.Windows.Forms.BindingSource>コンポーネントと<xref:System.Windows.Forms.BindingNavigator>コンポーネント。
 
-7.  他のフィールドを手順 4 にバインドします。
+7. 他のフィールドを手順 4 にバインドします。
 
 ### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>WCF サービスから返された複合型にコントロールをバインドするには
 
-1.  **データ**メニューの  **データ ソースの**します。 **データソース**ウィンドウが表示されます。
+1. **データ**メニューの  **データ ソースの**します。 **データソース**ウィンドウが表示されます。
 
-2.  **データソース**ウィンドウで、サービス参照のノードを展開します。 サービスの表示によって返される任意の複合型。
+2. **データソース**ウィンドウで、サービス参照のノードを展開します。 サービスの表示によって返される任意の複合型。
 
-3.  型のノードを選択し、使用可能なオプションの一覧を表示するドロップダウン矢印をクリックします。
+3. 型のノードを選択し、使用可能なオプションの一覧を表示するドロップダウン矢印をクリックします。
 
-4.  いずれかをクリックします**DataGridView**をグリッドにデータを表示するか、**詳細**個々 のコントロールにデータを表示します。
+4. いずれかをクリックします**DataGridView**をグリッドにデータを表示するか、**詳細**個々 のコントロールにデータを表示します。
 
-5.  ノードをフォームにドラッグします。 と共に、フォームに、コントロールを追加、<xref:System.Windows.Forms.BindingSource>コンポーネントと<xref:System.Windows.Forms.BindingNavigator>コンポーネント。
+5. ノードをフォームにドラッグします。 と共に、フォームに、コントロールを追加、<xref:System.Windows.Forms.BindingSource>コンポーネントと<xref:System.Windows.Forms.BindingNavigator>コンポーネント。
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>方法: 既存の型を再利用のサービスを構成します。
 
@@ -234,27 +234,27 @@ Windows Communication Foundation (WCF) サービスのほとんどのメソッ�
 
 ### <a name="to-disable-type-sharing-in-a-single-assembly"></a>1 つのアセンブリで型の共有を無効にするには
 
-1.  **ソリューション エクスプ ローラー**、サービス参照 を選択します。
+1. **ソリューション エクスプ ローラー**、サービス参照 を選択します。
 
-2.  **プロジェクト** メニューのをクリックして**サービス参照の構成**します。
+2. **プロジェクト** メニューのをクリックして**サービス参照の構成**します。
 
-3.  **サービス参照の構成**ダイアログ ボックスで、**参照されたアセンブリを指定した型を再利用**します。
+3. **サービス参照の構成**ダイアログ ボックスで、**参照されたアセンブリを指定した型を再利用**します。
 
-4.  型の共有を有効にする各アセンブリのチェック ボックスを選択します。 型のアセンブリの共有を無効にするには、 チェック ボックスをオフのままにします。
+4. 型の共有を有効にする各アセンブリのチェック ボックスを選択します。 型のアセンブリの共有を無効にするには、 チェック ボックスをオフのままにします。
 
 ### <a name="to-disable-type-sharing-in-all-assemblies"></a>すべてのアセンブリで型の共有を無効にするには
 
-1.  **ソリューション エクスプ ローラー**、サービス参照 を選択します。
+1. **ソリューション エクスプ ローラー**、サービス参照 を選択します。
 
-2.  **プロジェクト** メニューのをクリックして**サービス参照の構成**します。
+2. **プロジェクト** メニューのをクリックして**サービス参照の構成**します。
 
-3.  **サービス参照の構成** ダイアログ ボックスで、クリア、**参照されたアセンブリで型を再利用**チェック ボックスをオンします。
+3. **サービス参照の構成** ダイアログ ボックスで、クリア、**参照されたアセンブリで型を再利用**チェック ボックスをオンします。
 
 ## <a name="related-topics"></a>関連トピック
 
-| Title | 説明 |
+| タイトル | 説明 |
 | - | - |
-| [チュートリアル : Windows フォームでの簡単な WCF サービスの作成](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Visual Studio で作成および WCF サービスのステップ バイ ステップ デモを提供します。 |
+| [チュートリアル: Windows フォームでの簡単な WCF サービスの作成](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Visual Studio で作成および WCF サービスのステップ バイ ステップ デモを提供します。 |
 | [チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | ステップ バイ ステップを作成して、Visual Studio で WCF Data Services を使用する方法のデモを提供します。 |
 | [WCF 開発ツールの使用](/dotnet/framework/wcf/using-the-wcf-development-tools) | 作成し、Visual Studio で WCF サービスをテストする方法について説明します。 |
 | | [方法: WCF データ サービス参照を追加、更新、または削除する](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |

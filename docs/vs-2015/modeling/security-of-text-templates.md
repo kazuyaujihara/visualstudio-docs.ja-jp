@@ -11,21 +11,21 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce0a5b008df683694a20cce360fbd5e779e408d8
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f21bfadd540ce365c7f585a35991c27395558c6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58963841"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058657"
 ---
 # <a name="security-of-text-templates"></a>テキスト テンプレートのセキュリティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 テキスト テンプレートには、次のセキュリティの懸念事項があります。  
   
--   テキスト テンプレートは、任意のコードが挿入される点で脆弱です。  
+- テキスト テンプレートは、任意のコードが挿入される点で脆弱です。  
   
--   ホストがディレクティブ プロセッサの検索に使用するメカニズムが安全でない場合は、悪意のあるディレクティブ プロセッサを実行できます。  
+- ホストがディレクティブ プロセッサの検索に使用するメカニズムが安全でない場合は、悪意のあるディレクティブ プロセッサを実行できます。  
   
 ## <a name="arbitrary-code"></a>任意のコード  
  テンプレートを記述するときは、 \<## > タグ内にコードを配置します。 これにより、任意のコードをテキスト テンプレート内から実行できます。  

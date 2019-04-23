@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 392e50b9494d2de17f2d1ac2b0f3c23f1e872fa6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046150"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>チュートリアル: デザイン時のデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Visual Studio を使用する**イミディ エイト**ウィンドウで、ア�
   
 ### <a name="to-hit-breakpoints-from-the-immediate-window"></a>[イミディエイト] ウィンドウからブレークポイントにヒットするには  
   
-1.  次のコードを Visual Basic コンソール アプリケーションに貼り付けます。  
+1. 次のコードを Visual Basic コンソール アプリケーションに貼り付けます。  
   
     ```  
     Module Module1  
@@ -63,19 +63,19 @@ Visual Studio を使用する**イミディ エイト**ウィンドウで、ア�
     End Module  
     ```  
   
-2.  `s="Add BreakPoint Here"` という行にブレークポイントを設定します。  
+2. `s="Add BreakPoint Here"` という行にブレークポイントを設定します。  
   
-3.  次の入力、**イミディ エイト**ウィンドウ。 `?MyFunction<enter>`  
+3. 次の入力、**イミディ エイト**ウィンドウ。 `?MyFunction<enter>`  
   
-4.  ブレークポイントにヒットしたことと、呼び出し履歴が正確であることを確認します。  
+4. ブレークポイントにヒットしたことと、呼び出し履歴が正確であることを確認します。  
   
-5.  **デバッグ** メニューのをクリックして**続行**、まだデザイン モードであることを確認します。  
+5. **デバッグ** メニューのをクリックして**続行**、まだデザイン モードであることを確認します。  
   
-6.  次の入力、**イミディ エイト**ウィンドウ。 `?MyFunction<enter>`  
+6. 次の入力、**イミディ エイト**ウィンドウ。 `?MyFunction<enter>`  
   
-7.  次の入力、**イミディ エイト**ウィンドウ。 `?MySub<enter>`  
+7. 次の入力、**イミディ エイト**ウィンドウ。 `?MySub<enter>`  
   
-8.  ブレークポイントにヒットし、静的変数の値を確認することを確認`i`で、**ローカル**ウィンドウ。 3 という値が表示されます。  
+8. ブレークポイントにヒットし、静的変数の値を確認することを確認`i`で、**ローカル**ウィンドウ。 3 という値が表示されます。  
   
 9. 呼び出し履歴が正確であることを確認します。  
   

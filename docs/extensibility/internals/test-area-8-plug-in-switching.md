@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b308fb97a55f61645d038c9a81445f4561415e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659502"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047881"
 ---
 # <a name="test-area-8-plug-in-switching"></a>テスト領域 8: プラグインの切り替え
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) では、ユーザー インターフェイス (UI) を持つ現在のソース管理プラグインを変更します。 このテストの領域は、ソリューションのソース管理を使用するプラグインの選択のプロセスのテスト_ケースを提供します。
@@ -24,9 +24,9 @@ ms.locfileid: "59659502"
 ## <a name="command-menu-access"></a>コマンド メニューへのアクセス
  次[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境のメニューのパスは、テスト_ケースで使用されます。
 
--   現在ソース管理プラグイン:**ツール** -> **オプション** -> **ソース管理** -> **プラグインの選択**します。
+- 現在ソース管理プラグイン:**ツール** -> **オプション** -> **ソース管理** -> **プラグインの選択**します。
 
--   ソースの変更管理のバインディング。**ファイル** -> **ソース管理** -> **ソース管理の変更**.
+- ソースの変更管理のバインディング。**ファイル** -> **ソース管理** -> **ソース管理の変更**.
 
 ## <a name="common-expected-behavior"></a>共通の想定される動作
  ソース管理ソリューションのプラグインの変更は、Visual Studio を終了するか、またはソリューションを再読み込みせず可能性があります。 さらに、現在のソース管理プラグインは、そのソリューションが読み込まれるときに、ソリューションで使用される 1 つに自動的に変更します。

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045538"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233:操作はオーバーフローできません
 
@@ -100,13 +100,13 @@ Checked ブロックでサポートされていない[!INCLUDE[vbprvb](../code-q
 
 チェックされている算術オーバーフローおよびアンダー フロー (C#) を有効にする場合は、checked ブロックですべての整数演算の折り返しと同じです。
 
-有効にするには、C# で算術演算のオーバーフローおよびアンダー フローをチェックしました。
+有効にするには、c# で算術演算のオーバーフローおよびアンダー フローをチェックしました。
 
-1.  **ソリューション エクスプ ローラー**プロジェクトを右クリックし、選択、**プロパティ**します。
+1. **ソリューション エクスプ ローラー**プロジェクトを右クリックし、選択、**プロパティ**します。
 
-2.  **[ビルド]** タブを選択してから **[詳細設定]** をクリックします。
+2. **[ビルド]** タブを選択してから **[詳細設定]** をクリックします。
 
-3.  選択**算術オーバーフローおよびアンダー フローの確認** をクリック**OK**。
+3. 選択**算術オーバーフローおよびアンダー フローの確認** をクリック**OK**。
 
 ## <a name="see-also"></a>関連項目
 

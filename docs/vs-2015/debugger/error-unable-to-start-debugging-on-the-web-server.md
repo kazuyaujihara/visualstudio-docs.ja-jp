@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048763"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>エラー :Web サーバー上でデバッグを開始できません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Web サーバーで実行されている ASP.NET アプリケーションをデ�
   
 多くの場合、IIS が正しく構成されていないためにこのエラーが発生します。
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> IIS の構成を確認してください。
+## <a name="vxtbshttpservererrorsthingstocheck"></a> IIS の構成を確認してください。
 
 詳細なここでは、およびデバッグをもう一度試す前に、問題を解決する手順を実行するには後、は、IIS をリセットする必要がありますも。 管理者のコマンド プロンプトを開き、入力を行うことができます`iisreset`、またはこれを行う IIS マネージャーでします。 
 

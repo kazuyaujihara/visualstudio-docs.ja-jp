@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 481c1a66f3e025d3a29b2d5a1e39cd29bbb22490
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c85690b34f0db705fe2a17e2f98d5b4f11433b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974335"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044977"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>方法: C# プロジェクトに、アプリケーション構成ファイルを追加します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "58974335"
   
 ### <a name="to-add-an-application-configuration-file-to-your-c-project"></a>C# プロジェクトに、アプリケーション構成ファイルを追加するには  
   
-1.  メニュー バーで、**プロジェクト**、**新しい項目の追加**します。  
+1. メニュー バーで、**プロジェクト**、**新しい項目の追加**します。  
   
      **[新しい項目の追加]** ダイアログ ボックスが表示されます。  
   
-2.  展開**インストール済み**、展開**Visual C# アイテム**を選択し、**アプリケーション構成ファイル**テンプレート。  
+2. 展開**インストール済み**、展開**Visual c# アイテム**を選択し、**アプリケーション構成ファイル**テンプレート。  
   
-3.  **[名前]** ボックスに名前を入力し、**[追加]** ボタンをクリックします。  
+3. **[名前]** ボックスに名前を入力し、**[追加]** ボタンをクリックします。  
   
      App.config はという名前のファイルは、プロジェクトに追加されます。  
   

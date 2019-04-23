@@ -13,30 +13,30 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4bfc46e4860933d57b3439f8293b0d88fc0519ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c859e4488a4e1ef6d843ffe27f5b342ea1a92e0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799760"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049959"
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>方法: クラス ダイアグラムをイメージとしてエクスポートする (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 プロジェクトのコードから作成されたクラス ダイアグラムをエクスポートするには、ダイアグラムをイメージとして保存します。 代わりに UML クラス ダイアグラムをエクスポートする場合は、「[イメージとしてダイアグラムをエクスポートする](../modeling/export-diagrams-as-images.md)」を参照してください。  
   
-1.  クラス ダイアグラム (.cd) ファイルを開きます。  
+1. クラス ダイアグラム (.cd) ファイルを開きます。  
   
-2.  **[クラス ダイアグラム]** メニューまたはダイアグラム サーフェイスのショートカット メニューから、**[イメージとしてダイアグラムをエクスポート]** を選択します。  
+2. **[クラス ダイアグラム]** メニューまたはダイアグラム サーフェイスのショートカット メニューから、**[イメージとしてダイアグラムをエクスポート]** を選択します。  
   
-3.  ダイアグラムを選択します。  
+3. ダイアグラムを選択します。  
   
-4.  必要な形式を選択します。  
+4. 必要な形式を選択します。  
   
-5.  **[エクスポート]** をクリックしてエクスポートを終了します。  
+5. **[エクスポート]** をクリックしてエクスポートを終了します。  
   
      他のドキュメントからリンクされているエクスポート済みイメージを自動的に更新するには、Visual Studio でもう一度ダイアグラムをエクスポートします。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: クラス ダイアグラムを印刷する (クラス デザイナー)](../ide/how-to-print-class-diagrams-class-designer.md)   
+ [方法: 印刷クラス ダイアグラム (クラス デザイナー)](../ide/how-to-print-class-diagrams-class-designer.md)   
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)

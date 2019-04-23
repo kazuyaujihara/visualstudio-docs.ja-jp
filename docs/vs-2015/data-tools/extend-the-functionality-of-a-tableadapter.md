@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a060444ec5ec8085b56810862e87e523c56fddb6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: db6ea3e2b19b655c3a1ec8dedf60409b8706f3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059033"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>TableAdapter の機能を拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ TableAdapter の機能を拡張するには、TableAdapter の部分クラス �
   
 #### <a name="to-create-a-partial-class-for-a-tableadapter"></a>TableAdapter の部分クラスを作成するには  
   
-1.  移動して、プロジェクトに新しいクラスを追加、**プロジェクト**メニュー**クラスの追加**します。  
+1. 移動して、プロジェクトに新しいクラスを追加、**プロジェクト**メニュー**クラスの追加**します。  
   
-2.  クラスに `CustomersTableAdapterExtended` という名前を付けます。  
+2. クラスに `CustomersTableAdapterExtended` という名前を付けます。  
   
-3.  **[追加]** を選びます。  
+3. **[追加]** を選びます。  
   
-4.  正しい名前空間と、プロジェクトの名前を部分クラスとしては、次のようにコードを置き換えます。  
+4. 正しい名前空間と、プロジェクトの名前を部分クラスとしては、次のようにコードを置き換えます。  
   
      [!code-csharp[VbRaddataTableAdapters#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/CustomersTableAdapterExtended.cs#2)]
      [!code-vb[VbRaddataTableAdapters#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/CustomersTableAdapterExtended.vb#2)]  

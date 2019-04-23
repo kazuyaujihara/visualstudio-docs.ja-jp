@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba574854424eac14898c923701f7d8f4c1f81347
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d3b94b70db49903e41d26ac0f1382eaa2826e31a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059758"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>DataContext メソッドの戻り値の型を変更すると、元に戻せなくなります
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ DataContext メソッドの戻り値の型を変更すると、元に戻せな�
   
 ### <a name="to-change-the-return-type-of-a-datacontext"></a>DataContext の戻り値の型を変更するには  
   
--   **[はい]** をクリックします。  
+- **[はい]** をクリックします。  
   
 ### <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>メッセージ ボックスを終了し、現在の戻り値の型を維持するには  
   
--   **[いいえ]** をクリックします。  
+- **[いいえ]** をクリックします。  
   
 ### <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>戻り値の型を変更した後で、元の戻り値の型に戻すには  
   
-1.  <xref:System.Data.Linq.DataContext> で [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] メソッドを選択し、削除します。  
+1. <xref:System.Data.Linq.DataContext> で [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] メソッドを選択し、削除します。  
   
-2.  **サーバー エクスプローラー/データベース エクスプローラー**で項目を探し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] にドラッグします。  
+2. **サーバー エクスプローラー/データベース エクスプローラー**で項目を探し、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] にドラッグします。  
   
      元の既定の戻り値の型で <xref:System.Data.Linq.DataContext> メソッドが作成されます。  
   

@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 167e4f4b8977ed847823fb6db101f207142d6b4d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060320"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>方法 : エディター内のテキストの大文字と小文字を変更する
+# <a name="how-to-change-text-case-in-the-editor"></a>方法: エディターでテキストの大文字小文字を変更します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 メニュー コマンドやキーボード ショートカットを使って、選択したテキストを、すべて大文字またはすべて小文字に変換できます。  
@@ -31,11 +31,11 @@ ms.locfileid: "54799744"
   
 #### <a name="to-switch-text-to-upper-case"></a>テキストを大文字に切り替えるには  
   
-1.  変換するテキストを選択します。  
+1. 変換するテキストを選択します。  
   
-2.  **[編集]** メニューの **[詳細設定]** を選択します。  
+2. **[編集]** メニューの **[詳細設定]** を選択します。  
   
-3.  テキストをすべて大文字に変換するには、**[大文字に変換]** を選択するか、または **Ctrl** + **Shift** + **U** キーを押します。  
+3. テキストをすべて大文字に変換するには、**[大文字に変換]** を選択するか、または **Ctrl** + **Shift** + **U** キーを押します。  
   
      または  
   

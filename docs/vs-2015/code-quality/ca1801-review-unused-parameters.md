@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045643"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801:使用されていないパラメーターの確認
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Visual Studio の最新ドキュメントについては、次を参照してく
 ## <a name="cause"></a>原因  
  メソッドのシグネチャに、メソッドの本体で使用されていないパラメーターがあります。 このルールは、次の方法を確認できません。  
   
--   デリゲートによって参照されるメソッド。  
+- デリゲートによって参照されるメソッド。  
   
--   イベント ハンドラーとして使用されるメソッド。  
+- イベント ハンドラーとして使用されるメソッド。  
   
--   宣言されたメソッド、 `abstract` (`MustOverride` Visual basic) 修飾子。  
+- 宣言されたメソッド、 `abstract` (`MustOverride` Visual basic) 修飾子。  
   
--   宣言されたメソッド、 `virtual` (`Overridable` Visual basic) 修飾子。  
+- 宣言されたメソッド、 `virtual` (`Overridable` Visual basic) 修飾子。  
   
--   宣言されたメソッド、 `override` (`Overrides` Visual basic) 修飾子。  
+- 宣言されたメソッド、 `override` (`Overrides` Visual basic) 修飾子。  
   
--   宣言されたメソッド、 `extern` (`Declare` Visual Basic でのステートメント) 修飾子。  
+- 宣言されたメソッド、 `extern` (`Declare` Visual Basic でのステートメント) 修飾子。  
   
 ## <a name="rule-description"></a>規則の説明  
  それらにアクセスする障害が回避の正確性が存在しないかどうかを確認するメソッドの本体で使用されていない非仮想メソッドのパラメーターを確認します。 使用されていないパラメーターには、メンテナンスとパフォーマンスのコストが発生します。  

@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047138"
 ---
 # <a name="validate-data-in-datasets"></a>データセットのデータの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,9 +103,9 @@ ms.locfileid: "59661322"
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>行の変更時にデータを検証するには (Visual Basic)  
   
-1.  **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
+1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
   
-2.  検証するテーブルのタイトル バーをダブルクリックします。 この操作により、データセットの部分クラス ファイルに <xref:System.Data.DataTable.RowChanging> の <xref:System.Data.DataTable> イベント ハンドラーが自動的に作成されます。  
+2. 検証するテーブルのタイトル バーをダブルクリックします。 この操作により、データセットの部分クラス ファイルに <xref:System.Data.DataTable.RowChanging> の <xref:System.Data.DataTable> イベント ハンドラーが自動的に作成されます。  
   
     > [!TIP]
     >  テーブル名の左側をダブルクリックして、行変更イベント ハンドラーを作成します。 テーブル名をダブルクリックすると、編集することができます。  
@@ -114,14 +114,14 @@ ms.locfileid: "59661322"
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>行の変更時にデータ検証するには (C#)  
   
-1.  **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
+1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
   
-2.  検証するテーブルのタイトル バーをダブルクリックします。 この操作により、<xref:System.Data.DataTable> の部分クラス ファイルが作成されます。  
+2. 検証するテーブルのタイトル バーをダブルクリックします。 この操作により、<xref:System.Data.DataTable> の部分クラス ファイルが作成されます。  
   
     > [!NOTE]
     >  **データセット デザイナー**では、<xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーが自動作成されません。 処理するメソッドを作成する必要がある、<xref:System.Data.DataTable.RowChanging>テーブルの初期化メソッドでイベントにフックするには、イベント、およびコードを実行します。  
   
-3.  部分クラスに次のコードをコピーします。  
+3. 部分クラスに次のコードをコピーします。  
   
     ```  
     public override void EndInit()  
@@ -155,7 +155,7 @@ ms.locfileid: "59661322"
   
 #### <a name="to-get-all-changed-records-from-a-dataset"></a>データセットから変更されたすべてのレコードを取得するには  
   
--   呼び出す、<xref:System.Data.DataSet.GetChanges%2A>データセットのメソッド。  
+- 呼び出す、<xref:System.Data.DataSet.GetChanges%2A>データセットのメソッド。  
   
      次の例と呼ばれる新しいデータセットを作成する`changedRecords`しという別のデータセットから変更されたすべてのレコードを追加します`dataSet1`します。  
   
@@ -164,7 +164,7 @@ ms.locfileid: "59661322"
   
 #### <a name="to-get-all-changed-records-from-a-data-table"></a>データ テーブルから変更されたすべてのレコードを取得するには  
   
--   呼び出す、 <xref:System.Data.DataTable.GetChanges%2A> DataTable のメソッド。  
+- 呼び出す、 <xref:System.Data.DataTable.GetChanges%2A> DataTable のメソッド。  
   
      次の例と呼ばれる新しいデータ テーブルを作成する`changedRecordsTable`しと呼ばれる別のデータ テーブルから変更されたすべてのレコードを追加します`dataTable1`します。  
   
@@ -173,14 +173,14 @@ ms.locfileid: "59661322"
   
 #### <a name="to-get-all-records-that-have-a-specific-row-state"></a>特定の行の状態を持つすべてのレコードを取得するには  
   
--   呼び出す、`GetChanges`データセットまたはデータ テーブルとパスのメソッドを<xref:System.Data.DataRowState>を引数としての列挙値。  
+- 呼び出す、`GetChanges`データセットまたはデータ テーブルとパスのメソッドを<xref:System.Data.DataRowState>を引数としての列挙値。  
   
      次の例は、という名前の新しいデータセットを作成する方法を示しています。`addedRecords`し、そこに追加されたレコードでのみ、`dataSet1`データセット。  
   
      [!code-csharp[VbRaddataEditing#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#16)]
      [!code-vb[VbRaddataEditing#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#16)]  
   
--   次の例に最近追加されたすべてのレコードを返す方法を示しています、`Customers`テーブル。  
+- 次の例に最近追加されたすべてのレコードを返す方法を示しています、`Customers`テーブル。  
   
      [!code-csharp[VbRaddataEditing#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#17)]
      [!code-vb[VbRaddataEditing#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#17)]  
@@ -195,7 +195,7 @@ ms.locfileid: "59661322"
   
 #### <a name="to-get-the-original-version-of-a-record"></a>レコードの元のバージョンを取得するには  
   
--   渡すことで、列の値へのアクセス、<xref:System.Data.DataRowVersion>を取得する行のできます。  
+- 渡すことで、列の値へのアクセス、<xref:System.Data.DataRowVersion>を取得する行のできます。  
   
      次の例は、使用する方法を示します、<xref:System.Data.DataRowVersion>の元の値を取得する値を`CompanyName`フィールドに、 <xref:System.Data.DataRow>:  
   
@@ -206,7 +206,7 @@ ms.locfileid: "59661322"
   
 #### <a name="to-get-the-current-version-of-a-record"></a>レコードの現在のバージョンを取得するには  
   
--   列の値にアクセスし、し、パラメーターを取得する行のバージョンを示すインデックスを追加します。  
+- 列の値にアクセスし、し、パラメーターを取得する行のバージョンを示すインデックスを追加します。  
   
      次の例は、使用する方法を示します、<xref:System.Data.DataRowVersion>の現在の値を取得する値を`CompanyName`フィールドに、 <xref:System.Data.DataRow>:  
   

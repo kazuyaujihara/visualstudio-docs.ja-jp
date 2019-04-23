@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a97dfc6e7f93602b50102da51127fff6169ac3dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2f2a70df72f6dfcdc8946ca2f5afec9efa21a65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973581"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059241"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>警告: 依存関係&#39;ファイル&#39;プロジェクトで&#39;プロジェクト&#39;の参照を上書きするために、実行ディレクトリにコピーできません&#39;ファイル。&#39;
 依存関係間で競合が発生しています。同じ名前の複数の異なるアセンブリ ファイルを、アプリケーションを実行する bin ディレクトリにコピーする必要があります。 依存関係の 1 つがプライマリ参照であるため、実行ディレクトリは競合を解決することができます。  
@@ -31,7 +31,7 @@ ms.locfileid: "58973581"
   
  **このエラーを修正するには**  
   
--   1 つ (または 0 個) のアセンブリ ファイルを bin ディレクトリにコピーします。そのためには、アセンブリ ファイルをグローバル アセンブリ キャッシュに配置します。 グローバル アセンブリ キャッシュにより、ファイル名の競合が解決します。 共通言語ランタイムはグローバル アセンブリ キャッシュ内のアセンブリを見つける方法を認識しているため、アセンブリのローカル コピーは作成されません。 詳細については、 [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) および [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015)を参照してください。  
+- 1 つ (または 0 個) のアセンブリ ファイルを bin ディレクトリにコピーします。そのためには、アセンブリ ファイルをグローバル アセンブリ キャッシュに配置します。 グローバル アセンブリ キャッシュにより、ファイル名の競合が解決します。 共通言語ランタイムはグローバル アセンブリ キャッシュ内のアセンブリを見つける方法を認識しているため、アセンブリのローカル コピーは作成されません。 詳細については、 [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) および [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015)を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [プロジェクト内の参照の管理](../ide/managing-references-in-a-project.md)   

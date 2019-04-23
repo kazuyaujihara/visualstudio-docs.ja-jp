@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44efc94f1bd9f0c2e962bf08bb663ada834f5b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dee6c5dadb1634f384fd04d67cb0701b2e972799
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049933"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>チュートリアル: NamedRange コントロールのイベントのプログラム
   このチュートリアルは、追加する方法を示します、 <xref:Microsoft.Office.Tools.Excel.NamedRange> Microsoft Office Excel ワークシートと Visual Studio での Office 開発ツールを使用して、そのイベントに対してプログラミングを制御します。
@@ -30,11 +30,11 @@ ms.locfileid: "56633240"
 
  このチュートリアルでは、次の作業を行う方法について説明します。
 
--   追加、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールをワークシートにします。
+- 追加、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールをワークシートにします。
 
--   に対するプログラミング<xref:Microsoft.Office.Tools.Excel.NamedRange>イベントを制御します。
+- に対するプログラミング<xref:Microsoft.Office.Tools.Excel.NamedRange>イベントを制御します。
 
--   プロジェクトをテストします。
+- プロジェクトをテストします。
 
 > [!NOTE]
 >  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
@@ -42,16 +42,16 @@ ms.locfileid: "56633240"
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
 ## <a name="create-the-project"></a>プロジェクトの作成
  この手順では、Visual Studio を使用して Excel ブック プロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1.  名前の Excel ブック プロジェクトを作成する**マイという名前の範囲イベント**します。 必ず**新しい文書を作成**が選択されています。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. 名前の Excel ブック プロジェクトを作成する**マイという名前の範囲イベント**します。 必ず**新しい文書を作成**が選択されています。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
      デザイナーで新しい Excel ブックを開き、**マイという名前の範囲イベント**プロジェクトを**ソリューション エクスプ ローラー**します。
 
@@ -62,23 +62,23 @@ ms.locfileid: "56633240"
 
 ### <a name="to-add-a-range-to-your-worksheet"></a>ワークシートに範囲を追加するには
 
-1.  いることを確認、*マイ名前付き範囲 Events.xlsx* 、Visual Studio デザイナーで開いているブックで`Sheet1`が表示されます。
+1. いることを確認、*マイ名前付き範囲 Events.xlsx* 、Visual Studio デザイナーで開いているブックで`Sheet1`が表示されます。
 
-2.  **Excel コントロール**、ツールボックスのタブ、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールをセル**A1**で`Sheet1`します。
+2. **Excel コントロール**、ツールボックスのタブ、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールをセル**A1**で`Sheet1`します。
 
      **NamedRange コントロールの追加** ダイアログ ボックスが表示されます。
 
-3.  いることを確認 **$A$ 1**編集可能なテキスト ボックスに、そのセルに表示される**A1**が選択されています。 そうでない場合は、セルをクリックします。 **A1**をオンにします。
+3. いることを確認 **$A$ 1**編集可能なテキスト ボックスに、そのセルに表示される**A1**が選択されています。 そうでない場合は、セルをクリックします。 **A1**をオンにします。
 
-4.  **[OK]** をクリックします。
+4. **[OK]** をクリックします。
 
      セル**A1**という名前の範囲になります`namedRange1`します。 ワークシートの表示を示す値はありませんが、`namedRange1`に表示されます、**名前**ボックス (左側にあるワークシートの真上にあります) セル**A1**が選択されています。
 
-5.  もう 1 つ追加<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールをセル**B3**します。
+5. もう 1 つ追加<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールをセル**B3**します。
 
-6.  いることを確認 **$B$ 3**編集可能なテキスト ボックスに、そのセルに表示される**B3**が選択されています。 そうでない場合は、セルをクリックします。 **B3**をオンにします。
+6. いることを確認 **$B$ 3**編集可能なテキスト ボックスに、そのセルに表示される**B3**が選択されています。 そうでない場合は、セルをクリックします。 **B3**をオンにします。
 
-7.  **[OK]** をクリックします。
+7. **[OK]** をクリックします。
 
      セル**B3**という名前の範囲になります`namedRange2`します。
 
@@ -98,14 +98,14 @@ ms.locfileid: "56633240"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>BeforeDoubleClick イベントに基づいて NamedRange2 にテキストを挿入するには
 
-1.  **ソリューション エクスプ ローラー**、右クリック**Sheet1.vb**または**Sheet1.cs**選択と**コードの表示**します。
+1. **ソリューション エクスプ ローラー**、右クリック**Sheet1.vb**または**Sheet1.cs**選択と**コードの表示**します。
 
-2.  コードを追加するため、`namedRange1_BeforeDoubleClick`イベント ハンドラーは、次のようにします。
+2. コードを追加するため、`namedRange1_BeforeDoubleClick`イベント ハンドラーは、次のようにします。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]
 
-3.  C# でのように、名前付き範囲のイベント ハンドラーを追加する必要があります、<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>イベント。 イベント ハンドラーの作成方法の詳細については、次を参照してください。[方法。Office プロジェクトでイベント ハンドラーを作成する](../vsto/how-to-create-event-handlers-in-office-projects.md)します。
+3. C# でのように、名前付き範囲のイベント ハンドラーを追加する必要があります、<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>イベント。 イベント ハンドラーの作成方法の詳細については、次を参照してください。[方法。Office プロジェクトでイベント ハンドラーを作成する](../vsto/how-to-create-event-handlers-in-office-projects.md)します。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]
 
@@ -113,7 +113,7 @@ ms.locfileid: "56633240"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-change-event"></a>変更イベントに基づく namedRange2 にテキストを挿入するには
 
-1.  コードを追加するため、`NamedRange1_Change`イベント ハンドラーは、次のようにします。
+1. コードを追加するため、`NamedRange1_Change`イベント ハンドラーは、次のようにします。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#26)]
      [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
@@ -125,7 +125,7 @@ ms.locfileid: "56633240"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-selectionchange-event"></a>SelectionChange イベントに基づいて namedRange2 にテキストを挿入するには
 
-1.  コードを追加するため、 **NamedRange1_SelectionChange**イベント ハンドラーは、次のようにします。
+1. コードを追加するため、 **NamedRange1_SelectionChange**イベント ハンドラーは、次のようにします。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
@@ -138,22 +138,22 @@ ms.locfileid: "56633240"
 
 ### <a name="to-test-your-document"></a>文書をテストするには
 
-1.  キーを押して**F5**プロジェクトを実行します。
+1. キーを押して**F5**プロジェクトを実行します。
 
-2.  カーソルを置く`namedRange1`、いることを確認し、テキストに関する、<xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>イベントが挿入されると、ワークシートにコメントを挿入します。
+2. カーソルを置く`namedRange1`、いることを確認し、テキストに関する、<xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>イベントが挿入されると、ワークシートにコメントを挿入します。
 
-3.  内でダブルクリック`namedRange1`、ことを確認しますテキストに関する<xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>の赤色の斜体テキストと共にイベントが挿入されます`namedRange2`します。
+3. 内でダブルクリック`namedRange1`、ことを確認しますテキストに関する<xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>の赤色の斜体テキストと共にイベントが挿入されます`namedRange2`します。
 
-4.  外側をクリックして`namedRange1`テキストに変更が加えられなかった場合でも、編集モードの変更イベントが終了するときに発生する注意してください。
+4. 外側をクリックして`namedRange1`テキストに変更が加えられなかった場合でも、編集モードの変更イベントが終了するときに発生する注意してください。
 
-5.  内のテキストを変更する`namedRange1`します。
+5. 内のテキストを変更する`namedRange1`します。
 
-6.  外側をクリックして`namedRange1`、いることを確認し、テキストに関する<xref:Microsoft.Office.Tools.Excel.NamedRange.Change>に青色のテキストと共にイベントが挿入されます`namedRange2`します。
+6. 外側をクリックして`namedRange1`、いることを確認し、テキストに関する<xref:Microsoft.Office.Tools.Excel.NamedRange.Change>に青色のテキストと共にイベントが挿入されます`namedRange2`します。
 
 ## <a name="next-steps"></a>次の手順
  このチュートリアルでのイベントのプログラミングの基礎を<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロール。 次のタスクを次に示します。
 
--   プロジェクトを配置します。 詳細については、[Office ソリューションを配置](../vsto/deploying-an-office-solution.md)を参照してください。
+- プロジェクトを配置します。 詳細については、次を参照してください。 [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)

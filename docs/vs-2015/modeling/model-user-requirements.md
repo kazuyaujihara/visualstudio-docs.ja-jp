@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059852"
 ---
 # <a name="model-user-requirements"></a>ユーザー要件のモデリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
   
  ほとんどの種類の図が、他の目的に使用できることに注意してください。 図の種類の概要については、次を参照してください。[アプリのモデルを作成する](../modeling/create-models-for-your-app.md)します。 図を描画する基本については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
   
-##  <a name="UseCases"></a> システムの使用方法を説明します。  
+## <a name="UseCases"></a> システムの使用方法を説明します。  
  システムを使用するユーザーと、システムの使用目的を記述するユース ケース図を作成します。 ユース ケースは、システムのユーザーの目的と、目的を実現するためにユーザーが実行する手順を表します。  
   
  例として、オンライン料理販売システムでは、お客様がメニューから項目を選択することができること、および提供を受けるレストランでメニューを更新できることが必要です。 これをユース ケース図で要約できます。  
@@ -93,7 +93,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 |ユース ケース図の要素|[UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)|  
 |ユース ケースからコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> 要求の記述に使用される用語の定義  
+## <a name="RequirementsClasses"></a> 要求の記述に使用される用語の定義  
  UML クラス図を使用すると、次の目的で使用される、ビジネス概念の一貫性のあるボキャブラリを開発しやすくなります。  
   
 - ユーザー自身が、システムの動作対象となるビジネスについて検討する。  
@@ -140,7 +140,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
   
  概念クラス図では通常、移動方向を表すために、関連付けに矢印を配置しても役に立ちません。 これは、図が実装を表していないためです。 関連付けは、現実世界のオブジェクト間の関係を表します。 次[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]して矢印の方向性のない、既定の拡張機能。[サンプル:UML ドメイン モデリング機能](http://go.microsoft.com/fwlink/?LinkId=213849)します。  
   
-##  <a name="BusinessRules"></a> Showing Business Rules  
+## <a name="BusinessRules"></a> Showing Business Rules  
  ビジネス ルールとは、特定のユース ケースに関連付けられておらず、システム全体で認められる要求です。  
   
  多くのビジネス ルールは、概念クラス間の関係に関する制約です。 これらを書き込める*静的なビジネス ルール*概念クラス図の関連するクラスに関連付けられたコメントとして。 例えば:  
@@ -161,7 +161,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 |概念クラス図の要素|[UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)|  
 |ビジネス ルールに準拠しているコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  サービス品質要求には、いくつかのカテゴリがあります。 次に例を示します。  
   
 - パフォーマンス  
@@ -185,7 +185,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 |ユース ケースへの追加ドキュメントのアタッチ|[ユース ケースをドキュメントおよび図にリンクする](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |サービス品質要求に準拠しているコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> ユーザーとシステム間のワークフローの表示  
+## <a name="Workflow"></a> ユーザーとシステム間のワークフローの表示  
  アクティビティ図を使って、さまざまなユース ケース間のワークフローを表示することができます。 多くの場合、ユーザーがシステムおよびシステム外の両方で実行する主なタスクを示すアクティビティ図を描画して、要件のモデルを開始すると便利です。  
   
  例えば:  
@@ -206,7 +206,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 |アクティビティ図の要素|[UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)|  
 |アクティビティ図からコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> ユーザーとシステム間の相互作用の表示  
+## <a name="Sequences"></a> ユーザーとシステム間の相互作用の表示  
  シーケンス図を使って、システムと外部アクター間、またはシステムのパーツ相互間のメッセージのやり取りを表示できます。 これにより、相互作用のシーケンスを非常に明確に示すユース ケース内の手順が表示されます。 ユース ケース内で複数の関係者が相互作業している場合や、システムに API がある場合に、シーケンス図は特に便利です。  
   
  例えば:  

@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660295"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053400"
 ---
 # <a name="immediate-window"></a>イミディエイト ウィンドウ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -118,9 +118,9 @@ ms.locfileid: "59660295"
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>[イミディエイト] ウィンドウで初回例外通知を切り替えるには  
   
-1.  **[表示]** メニューの **[その他のウィンドウ]** をポイントし、**[出力]** をクリックします。  
+1. **[表示]** メニューの **[その他のウィンドウ]** をポイントし、**[出力]** をクリックします。  
   
-2.  **[出力]** ウィンドウのテキスト領域で右クリックし、**[例外メッセージ]** をクリックして選択または選択解除します。  
+2. **[出力]** ウィンドウのテキスト領域で右クリックし、**[例外メッセージ]** をクリックして選択または選択解除します。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーでのコード間の移動](../../debugger/navigating-through-code-with-the-debugger.md)   

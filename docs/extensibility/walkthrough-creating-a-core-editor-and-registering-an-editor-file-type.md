@@ -10,27 +10,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 437f5aecb2fe8f7bb953c9efb6eb33ccb945c9f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721793"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048206"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>チュートリアル: コア エディターとエディター ファイルの種類の登録を作成します。
 このチュートリアルを開始する VSPackage を作成する方法について説明、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]コア エディターでファイルがいつ、 *.myext*ファイル名拡張子が読み込まれます。
 
 ## <a name="prerequisites"></a>必須コンポーネント
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
 
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio パッケージ プロジェクト テンプレートの場所
  Visual Studio パッケージのプロジェクト テンプレートは、 **[新しいプロジェクト]** ダイアログの次の 3 つの場所にあります。
 
-1.  **Visual Basic の拡張機能**の下。 プロジェクトの既定の言語は Visual Basic です。
+1. **Visual Basic の拡張機能**の下。 プロジェクトの既定の言語は Visual Basic です。
 
-2.  **C# の拡張機能**の下。 プロジェクトの既定の言語は C# です。
+2. **C# の拡張機能**の下。 プロジェクトの既定の言語は C# です。
 
-3.  **その他のプロジェクトの種類の拡張機能**の下。 プロジェクトの既定の言語は C++ です。
+3. **その他のプロジェクトの種類の拡張機能**の下。 プロジェクトの既定の言語は C++ です。
 
 ### <a name="to-create-the-vspackage"></a>VSPackage を作成するには
 
@@ -126,8 +126,7 @@ ms.locfileid: "56721793"
 
     この手順で実装する必要がある 4 つのメソッドを追加します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>インターフェイス。
 
-9. 
-  `IVsEditorFactory.Close` メソッドの内容を次のコードに置き換えます。
+9. `IVsEditorFactory.Close` メソッドの内容を次のコードに置き換えます。
 
     ```vb
     Return VSConstants.S_OK
@@ -149,8 +148,7 @@ ms.locfileid: "56721793"
     return VSConstants.S_OK;
     ```
 
-11. 
-  `IVsEditorFactory.MapLogicalView` メソッドの内容を次のコードに置き換えます。
+11. `IVsEditorFactory.MapLogicalView` メソッドの内容を次のコードに置き換えます。
 
     ```vb
     Dim retval As Integer = VSConstants.E_NOTIMPL
@@ -173,8 +171,7 @@ ms.locfileid: "56721793"
     return retval;
     ```
 
-12. 
-  `IVsEditorFactory.CreateEditorInstance` メソッドの内容を次のコードに置き換えます。
+12. `IVsEditorFactory.CreateEditorInstance` メソッドの内容を次のコードに置き換えます。
 
     ```vb
     Dim retval As Integer = VSConstants.E_FAIL
@@ -394,7 +391,7 @@ ms.locfileid: "56721793"
 
  VSPackage が呼び出すことができます、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]エディター ファクトリを指定することによって、コア エディター。 このエディターのファクトリは、それに関連付けられているファイルが読み込まれるたびに使用されます。 ファイルがプロジェクトの一部である場合は、VSPackage によってオーバーライドされない限り、コア エディターが自動的に起動します。 ただし、プロジェクトの外側で、ファイルを読み込んだ場合、コア エディターする必要があります明示的に呼び出す、VSPackage によって。
 
- コア エディターの詳細については、[コア エディター内で](../extensibility/inside-the-core-editor.md)を参照してください。
+ コア エディターの詳細については、次を参照してください。[コア エディター内で](../extensibility/inside-the-core-editor.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [コア エディター](../extensibility/inside-the-core-editor.md)

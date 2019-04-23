@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b5846fe9db2d7ea02259f949697f5cb164d1c081
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e631f73a6714cf26b55cf9907095fc322467d3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053898"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告: [動作の構成] ダイアログ ボックスで行った変更が適用されていません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "59651757"
   
 ### <a name="to-apply-the-change-and-continue"></a>変更を適用して続行するには  
   
--   **[はい]** をクリックして、選択された **[クラス]** および **[動作]** に対する変更を適用します。  
+- **[はい]** をクリックして、選択された **[クラス]** および **[動作]** に対する変更を適用します。  
   
 ### <a name="to-cancel-the-previous-change-and-continue"></a>前の変更を取り消して続行するには  
   
--   **[いいえ]** をクリックして、選択した **[クラス]** と **[動作]** に対する変更を取り消します。  
+- **[いいえ]** をクリックして、選択した **[クラス]** と **[動作]** に対する変更を取り消します。  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
