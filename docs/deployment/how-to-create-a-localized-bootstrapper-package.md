@@ -12,23 +12,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbd9aab09d4972e5fe9c1784aed7cadf15c3db4c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611166"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061490"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>方法: ローカライズされたブートストラップ パッケージを作成する
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>方法: ローカライズ版のブートストラップ パッケージを作成する
 ブートストラップ パッケージを作成したら、さらに 2 つのファイルをロケールごとに作成して、ローカライズ版のブートストラップ パッケージを作成できます。2 つのファイルとは、ソフトウェア ライセンス条項ファイル (*eula.rtf* など) とパッケージ マニフェスト (*package.xml*) です。
 
  既定では、Visual Studio 2010 には .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0、および F# Runtime 4.0 用のローカライズ版のブートストラップ パッケージのみが用意されています。 3 つのステップを実行することにより、その他のブートストラップのローカライズ版パッケージを作成できます。
 
-1.  ロケール名に続くという名前のフォルダーを作成する*\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >* します。
+1. ロケール名に続くという名前のフォルダーを作成する*\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >* します。
 
-2.  ブートストラップ パッケージのソフトウェア ライセンス条項を示すファイルを作成し、新しいフォルダーに格納します。
+2. ブートストラップ パッケージのソフトウェア ライセンス条項を示すファイルを作成し、新しいフォルダーに格納します。
 
-3.  *package.xml* という名前のパッケージ マニフェストを作成し、文字列とカルチャを更新して、そのファイルを新しいフォルダーに格納します。 Visual Studio のブートストラップを対象言語で既に作成している場合は、Visual Studio の *package.xml* ファイルをコピーして、このステップで変更することができます。
+3. *package.xml* という名前のパッケージ マニフェストを作成し、文字列とカルチャを更新して、そのファイルを新しいフォルダーに格納します。 Visual Studio のブートストラップを対象言語で既に作成している場合は、Visual Studio の *package.xml* ファイルをコピーして、このステップで変更することができます。
 
 > [!NOTE]
 >  セットアップ プロジェクトを使用してアプリケーションを配置する場合は、**Localization** プロパティを変更してアプリケーションをローカライズできます。
@@ -37,7 +37,7 @@ ms.locfileid: "56611166"
 
 ### <a name="to-create-a-localized-bootstrapper-package"></a>ローカライズ版のブートストラップ パッケージを作成するには
 
-1.  ロケール名に基づいた名前のフォルダーを作成します。
+1. ロケール名に基づいた名前のフォルダーを作成します。
 
      32 ビットのコンピューターでのフォルダーを作成、 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >\\* フォルダー。
 
@@ -47,8 +47,8 @@ ms.locfileid: "56611166"
 
     |ロケール|フォルダー名|
     |------------|-----------------|
-    |中国語 (簡体字、中国)|zh-Hans|
-    |では |zh-Hant|
+    |簡体字中国語|zh-Hans|
+    |繁体字中国語|zh-Hant|
     |チェコ語|cs|
     |ドイツ語|de|
     |英語|en|
@@ -62,33 +62,33 @@ ms.locfileid: "56611166"
     |ロシア語|ru|
     |トルコ語|tr|
 
-2.  ブートストラップ パッケージのソフトウェア ライセンス条項を示すファイルを作成し、新しいフォルダーに格納します。
+2. ブートストラップ パッケージのソフトウェア ライセンス条項を示すファイルを作成し、新しいフォルダーに格納します。
 
-3.  *package.xml* という名前のパッケージ マニフェストを作成し、新しいフォルダーに格納します。 詳細については、次を参照してください。[方法: パッケージ マニフェストを作成する](../deployment/how-to-create-a-package-manifest.md)します。
+3. *package.xml* という名前のパッケージ マニフェストを作成し、新しいフォルダーに格納します。 詳細については、「[方法 :パッケージ マニフェストを作成する](../deployment/how-to-create-a-package-manifest.md)」を参照してください。
 
-4.  パッケージ マニフェストの `<Strings>` セクションを更新して、文字列がロケールに対応する正しい言語で表示されるようにします。
+4. パッケージ マニフェストの `<Strings>` セクションを更新して、文字列がロケールに対応する正しい言語で表示されるようにします。
 
-5.  `<String Name="Culture">` の値をフォルダー名と一致するように変更します。
+5. `<String Name="Culture">` の値をフォルダー名と一致するように変更します。
 
-6.  *package.xml* ファイルを保存します。
+6. *package.xml* ファイルを保存します。
 
 ### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>フランス語でローカライズした .NET Framework 3.5 Service Pack 1 用のブートストラップ パッケージを作成するには
 
-1.  *fr* という名前のフォルダーを作成します。 フォルダー名はロケール名と一致する必要があります。
+1. *fr* という名前のフォルダーを作成します。 フォルダー名はロケール名と一致する必要があります。
 
      32 ビット コンピューターでは、このフォルダーは *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* フォルダーに作成します。
 
      64 ビット コンピューターでは、このフォルダーは *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* フォルダーに作成します。
 
-2.  ローカライズ版のソフトウェア ライセンス条項を *fr* フォルダーに格納します。
+2. ローカライズ版のソフトウェア ライセンス条項を *fr* フォルダーに格納します。
 
-3.  *\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* ファイルを *fr* フォルダーにコピーし、XML デザイナーでそのファイルを開きます。
+3. *\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* ファイルを *fr* フォルダーにコピーし、XML デザイナーでそのファイルを開きます。
 
-4.  パッケージ マニフェストの `<Strings>` セクションを更新して、エラー文字列がフランス語で表示されるようにします。
+4. パッケージ マニフェストの `<Strings>` セクションを更新して、エラー文字列がフランス語で表示されるようにします。
 
-5.  `<String Name="Culture">` の値を *fr* に変更します。
+5. `<String Name="Culture">` の値を *fr* に変更します。
 
-6.  *package.xml* ファイルを保存します。
+6. *package.xml* ファイルを保存します。
 
 ## <a name="see-also"></a>関連項目
 - [ブートストラップ パッケージの作成](../deployment/creating-bootstrapper-packages.md)

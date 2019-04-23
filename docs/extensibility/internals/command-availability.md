@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae72a9f8ed20840da958c3c9314c8f25aada801f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7dfe8a6b3e4c84fd97a159f6ac43e0de47536f0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625623"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064272"
 ---
 # <a name="command-availability"></a>利用可能なコマンド
 
@@ -44,11 +44,11 @@ Visual Studio のコンテキストでは、コマンドが使用可能な判断
 
 適切なコマンドは、GUID が定義されていないコンテキスト場合、VSPackage のいずれかを定義およびアクティブまたはコマンドの表示を制御する必要に応じて非アクティブにすることをプログラムできます。
 
-1.  呼び出してコンテキストの Guid を登録、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>メソッド。
+1. 呼び出してコンテキストの Guid を登録、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>メソッド。
 
-2.  呼び出してコンテキストの GUID の状態を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>メソッド。
+2. 呼び出してコンテキストの GUID の状態を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>メソッド。
 
-3.  呼び出してコンテキストの Guid のオンとオフ、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>メソッド。
+3. 呼び出してコンテキストの Guid のオンとオフ、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>メソッド。
 
 > [!CAUTION]
 > 確認して、VSPackage 影響を及ぼさないように既存のコンテキストの Guid の他の Vspackage がそれらに依存している可能性があります。

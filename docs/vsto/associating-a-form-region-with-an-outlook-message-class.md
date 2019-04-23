@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f94442e89cee6a615497376ad7baa9c85b7797
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063544"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>フォーム領域を Outlook メッセージ クラスに関連付ける
   Microsoft Office Outlook アイテム フォーム領域を各項目のメッセージ クラスに関連付けることによって、フォーム領域を表示するを指定することができます。 たとえば、メール アイテムの下部にフォーム領域を追加する場合は、フォーム領域を関連付けることができます、 `IPM.Note` message クラス。
@@ -50,9 +50,9 @@ ms.locfileid: "56625531"
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>フォーム領域を Outlook メッセージ クラスに関連付ける
  関連付けるメッセージ クラスのフォーム領域の 2 つの方法はあります。
 
--   使用して、**新しい Outlook フォーム領域**ウィザード。
+- 使用して、**新しい Outlook フォーム領域**ウィザード。
 
--   クラスの属性を適用します。
+- クラスの属性を適用します。
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>新しい Outlook フォーム領域ウィザードの使用
  最後のページで、**新しい Outlook フォーム領域**ウィザードの標準のメッセージ クラスを選択し、フォーム領域に関連付けるカスタム メッセージ クラスの名前を入力することができます。

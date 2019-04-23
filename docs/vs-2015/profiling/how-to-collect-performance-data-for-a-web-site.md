@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366732"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060555"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>方法: Web サイトのパフォーマンス データを収集します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,25 +46,25 @@ ms.locfileid: "59366732"
   
 ### <a name="to-profile-a-web-site-project"></a>Web サイト プロジェクトをプロファイリングする  
   
-1.  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] または [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] で [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]Web プロジェクト開きます。  
+1. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] または [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] で [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]Web プロジェクト開きます。  
   
-2.  **[分析]** メニューの **[パフォーマンス ウィザードの起動]** をクリックします。  
+2. **[分析]** メニューの **[パフォーマンス ウィザードの起動]** をクリックします。  
   
-3.  ウィザードの最初のページで、プロファイル方法を選択し、 **[次へ]** をクリックします。 プロファイリング方法の詳細については、「[パフォーマンス収集方法について](../profiling/understanding-performance-collection-methods.md)」を参照してください。 コンカレンシー ビジュアライザーのプロファイル方法は、Web アプリケーションでは使用できません。  
+3. ウィザードの最初のページで、プロファイル方法を選択し、 **[次へ]** をクリックします。 プロファイリング方法の詳細については、「[パフォーマンス収集方法について](../profiling/understanding-performance-collection-methods.md)」を参照してください。 コンカレンシー ビジュアライザーのプロファイル方法は、Web アプリケーションでは使用できません。  
   
-4.  **[プロファイル対象のアプリケーションを選択してください]** ドロップダウン リストで、現在のプロジェクトが選択されていることを確認し、 **[次へ]** をクリックします。  
+4. **[プロファイル対象のアプリケーションを選択してください]** ドロップダウン リストで、現在のプロジェクトが選択されていることを確認し、 **[次へ]** をクリックします。  
   
-5.  ウィザードの 3 番目のページで、階層相互作用プロファイリング (TIP) データ、Web ページで実行されている JavaScript からのデータ、またはその両方の追加を選択できます。  
+5. ウィザードの 3 番目のページで、階層相互作用プロファイリング (TIP) データ、Web ページで実行されている JavaScript からのデータ、またはその両方の追加を選択できます。  
   
-    -   階層の相互作用を収集するには、 **[階層の相互作用のプロファイルを有効にする]** チェック ボックスをオンにします。  
+    - 階層の相互作用を収集するには、 **[階層の相互作用のプロファイルを有効にする]** チェック ボックスをオンにします。  
   
-    -   Web ページで実行されている JavaScript からデータを収集するには、 **[JavaScript のプロファイル]** チェック ボックスをオンにします。  
+    - Web ページで実行されている JavaScript からデータを収集するには、 **[JavaScript のプロファイル]** チェック ボックスをオンにします。  
   
-6.  **[次へ]** をクリックします。  
+6. **[次へ]** をクリックします。  
   
-7.  ウィザードの 4 番目のページで、 **[完了]** をクリックします。  
+7. ウィザードの 4 番目のページで、 **[完了]** をクリックします。  
   
-8.  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションのパフォーマンス セッションが作成され、ブラウザーで Web サイトが起動します。 プロファイリングする機能を実行してからブラウザーを閉じます。  
+8. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションのパフォーマンス セッションが作成され、ブラウザーで Web サイトが起動します。 プロファイリングする機能を実行してからブラウザーを閉じます。  
   
      プロファイラーで、データ ファイルが生成され、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] メイン ウィンドウにデータの概要ビューが表示されます。  
   
@@ -90,9 +90,9 @@ ms.locfileid: "59366732"
   
 6. ウィザードの 3 番目のページで、階層相互作用プロファイリング (TIP) データ、Web ページで実行されている JavaScript からのデータ、またはその両方の追加を選択できます。  
   
-   -   階層の相互作用を収集するには、 **[階層の相互作用のプロファイルを有効にする]** チェック ボックスをオンにします。  
+   - 階層の相互作用を収集するには、 **[階層の相互作用のプロファイルを有効にする]** チェック ボックスをオンにします。  
   
-   -   Web ページで実行されている JavaScript からデータを収集するには、 **[JavaScript のプロファイル]** チェック ボックスをオンにします。  
+   - Web ページで実行されている JavaScript からデータを収集するには、 **[JavaScript のプロファイル]** チェック ボックスをオンにします。  
   
 7. **[次へ]** をクリックします。  
   

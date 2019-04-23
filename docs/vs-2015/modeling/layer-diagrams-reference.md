@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061991"
 ---
 # <a name="layer-diagrams-reference"></a>レイヤー図:参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Visual Studio で使用することができます、*レイヤー図*システ�
 |4|**コメント**|全般的なノートを図または図の要素に追加するために使用します。|  
 |5|**コメント リンク**|コメントを図の要素にリンクするために使用します。|  
   
-##  <a name="Explorer"></a> レイヤー エクスプ ローラー  
+## <a name="Explorer"></a> レイヤー エクスプ ローラー  
  各レイヤーをソリューション内の成果物 (たとえば、プロジェクト、クラス、名前空間、プロジェクト ファイル、またはソフトウェアのその他のパート) にリンクすることができます。 レイヤーの数字は、レイヤーにリンクされている成果物の数を示します。 ただし、レイヤーの成果物の数を読み取るときには、次の点に注意してください。  
   
 - 1 つのレイヤーが他の成果物を含む 1 つの成果物にリンクされているが、他の成果物に直接リンクされていない場合、その数字にはリンクされた成果物のみが含まれます。 ただし、レイヤー検証時の分析にはそれらの他の成果物も含まれます。  
@@ -80,7 +80,7 @@ Visual Studio で使用することができます、*レイヤー図*システ�
   
 #### <a name="to-examine-the-linked-artifacts"></a>リンクされた成果物を確認するには  
   
--   レイヤー図では、1 つまたは複数のレイヤーのショートカット メニューを開きし、**ビュー リンク**します。  
+- レイヤー図では、1 つまたは複数のレイヤーのショートカット メニューを開きし、**ビュー リンク**します。  
   
      **レイヤー エクスプ ローラー**が開き、選択したレイヤーにリンクされている成果物を表示します。 **レイヤー エクスプ ローラー**の各成果物のリンクのプロパティを表示する列があります。  
   

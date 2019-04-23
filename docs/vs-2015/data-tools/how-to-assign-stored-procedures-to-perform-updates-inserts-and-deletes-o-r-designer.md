@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 247e1720a21c88f15a766fb948156e93ec55e308
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 84aa3400eb6b64e8904d95e0fce7b43ae9351ad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060866"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>方法: 更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,23 +34,23 @@ ms.locfileid: "59656324"
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>ストアド プロシージャを割り当てて、エンティティ クラスの既定の動作をオーバーライドするには  
   
-1.  デザイナーで **LINQ to SQL** ファイルを開きます。 (で .dbml ファイルをダブルクリック**ソリューション エクスプ ローラー**)。  
+1. デザイナーで **LINQ to SQL** ファイルを開きます。 (で .dbml ファイルをダブルクリック**ソリューション エクスプ ローラー**)。  
   
-2.  **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**、展開**Stored Procedures** Insert、Update を使用するストアド プロシージャを探しますまたは、エンティティ クラスのコマンドを削除します。  
+2. **サーバー エクスプ ローラー**/**データベース エクスプ ローラー**、展開**Stored Procedures** Insert、Update を使用するストアド プロシージャを探しますまたは、エンティティ クラスのコマンドを削除します。  
   
-3.  ストアド プロシージャを O/R デザイナーにドラッグします。  
+3. ストアド プロシージャを O/R デザイナーにドラッグします。  
   
      ストアド プロシージャが <xref:System.Data.Linq.DataContext> メソッドとしてメソッド ペインに追加されます。 詳細については [DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md) を参照してください。  
   
-4.  更新の実行にストアド プロシージャを使用するエンティティ クラスを選択します。  
+4. 更新の実行にストアド プロシージャを使用するエンティティ クラスを選択します。  
   
-5.  **[プロパティ]** ウィンドウで、オーバーライドするコマンド (**[Insert]**、**[Update]**、または **[Delete]**) を選択します。  
+5. **[プロパティ]** ウィンドウで、オーバーライドするコマンド (**[Insert]**、**[Update]**、または **[Delete]**) を選択します。  
   
-6.  **[ランタイムを使用]** の横にある省略記号 ([...]) をクリックして、**[動作の構成]** ダイアログ ボックスを開きます。  
+6. **[ランタイムを使用]** の横にある省略記号 ([...]) をクリックして、**[動作の構成]** ダイアログ ボックスを開きます。  
   
-7.  **[カスタマイズ]** を選択します。  
+7. **[カスタマイズ]** を選択します。  
   
-8.  **[カスタマイズ]** リストで、目的のストアド プロシージャを選択します。  
+8. **[カスタマイズ]** リストで、目的のストアド プロシージャを選択します。  
   
 9. **[メソッドの引数]** および **[クラスのプロパティ]** のリストを調べて、**[メソッドの引数]** が適切な **[クラスのプロパティ]** にマップされていることを確認します。 マップ元のメソッド引数 (original _*ArgumentName*) を元のプロパティ (*PropertyName* (オリジナル)) の Update および Delete コマンド。  
   

@@ -12,12 +12,12 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5f6b8ef087d3e9d43aaf740a99983cf0f5c8d1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: cd224f84dd1d0be8167ee55fa7b40264d742c4f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063778"
 ---
 # <a name="template-directory-description-vsdir-files"></a>テンプレート ディレクトリの説明 (.Vsdir) ファイル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,17 +52,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  ウィザード ファイルを作成するときに、次の問題を考慮する必要もあります。  
 
--   意味のあるデータを持たない省略可能なフィールドには、プレースホルダーとして 0 (ゼロ) を格納する必要があります。  
+- 意味のあるデータを持たない省略可能なフィールドには、プレースホルダーとして 0 (ゼロ) を格納する必要があります。  
 
--   ローカライズされた名前が指定されていない場合、ウィザードのファイルの相対パス名が使用されます。  
+- ローカライズされた名前が指定されていない場合、ウィザードのファイルの相対パス名が使用されます。  
 
--   DLLPath clsidPackage アイコンの場所を上書きします。  
+- DLLPath clsidPackage アイコンの場所を上書きします。  
 
--   アイコンが定義されていない場合、IDE には、その拡張子を持つファイルの既定のアイコンが置換されます。  
+- アイコンが定義されていない場合、IDE には、その拡張子を持つファイルの既定のアイコンが置換されます。  
 
--   基本名が指定されていない場合は、'Project' が使用されます。  
+- 基本名が指定されていない場合は、'Project' が使用されます。  
 
--   .Vsz ファイル、フォルダー、またはテンプレート ファイルを削除する場合は、.vsdir ファイルから、対応するレコードを削除することも必要があります。  
+- .Vsz ファイル、フォルダー、またはテンプレート ファイルを削除する場合は、.vsdir ファイルから、対応するレコードを削除することも必要があります。  
 
 ## <a name="see-also"></a>関連項目  
  [ウィザード](../../extensibility/internals/wizards.md)   

@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 682fc88fb616fbe2617fe6d336a35bf6fbc30e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962908"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061711"
 ---
 # <a name="when-to-create-project-types"></a>プロジェクト タイプを作成する状況
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,26 +25,26 @@ ms.locfileid: "58962908"
 ## <a name="create-a-new-project-type"></a>新しいプロジェクトの種類を作成します。  
  カスタマイズする場合は、プロジェクトの種類を作成する必要があります[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]の次の方法の 1 つ以上を実行します。  
   
--   ビルドに参加、デプロイ、構成、およびソース管理。  
+- ビルドに参加、デプロイ、構成、およびソース管理。  
   
--   デバッグのサポートを提供します。  
+- デバッグのサポートを提供します。  
   
--   プロジェクト アイテムの表示**ソリューション エクスプ ローラー**します。  
+- プロジェクト アイテムの表示**ソリューション エクスプ ローラー**します。  
   
--   使用して、**プロジェクトを開く**または**新しいプロジェクト** ダイアログ ボックス。  
+- 使用して、**プロジェクトを開く**または**新しいプロジェクト** ダイアログ ボックス。  
   
--   プロジェクトの入れ子をサポートします。  
+- プロジェクトの入れ子をサポートします。  
   
 ## <a name="extend-an-existing-project-type"></a>既存のプロジェクトの種類を拡張します。  
  使用できる新しいプロジェクトの種類を作成したい場合があります[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]変更または既存のプロジェクトの種類の動作を拡張する次の方法でのビルド プロセスを変更するなど、[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]プロジェクト。  
   
--   1 つの単位として複数のファイルを使用します。  
+- 1 つの単位として複数のファイルを使用します。  
   
--   サブ項目の階層として 1 つのファイルを表示します。  
+- サブ項目の階層として 1 つのファイルを表示します。  
   
--   エディターの周囲のコマンドのコンテキストを表示します。  
+- エディターの周囲のコマンドのコンテキストを表示します。  
   
--   エディターに対し、サービス コンテキストを表示します。  
+- エディターに対し、サービス コンテキストを表示します。  
   
 ## <a name="use-an-existing-project-type"></a>既存のプロジェクトの種類を使用して、  
  新しいプロジェクトを作成する必要がありますされません。 次の表では、プロジェクトの種類を作成する必要はありませんが、タスクを示します。  

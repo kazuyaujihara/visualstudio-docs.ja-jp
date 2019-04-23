@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2be46e61438c555fc7ee7d523b3ff9b758c0a15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b6e661a79f190e5befdbcf5c28ec0f4bd29ebf4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061581"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>方法: テーブルとビューにマップされた LINQ to SQL クラスを作成する (O/R デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ LINQ to SQL クラス データベース テーブルおよびビューにマッ
 
 #### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>データベース テーブルまたはビューにマップされる LINQ to SQL クラスを作成するには
 
-1.  **Server**/**データベース エクスプ ローラー**、展開**テーブル**または**ビュー**とデータベースのテーブルを検索または表示します。アプリケーションで使用します。
+1. **Server**/**データベース エクスプ ローラー**、展開**テーブル**または**ビュー**とデータベースのテーブルを検索または表示します。アプリケーションで使用します。
 
-2.  テーブルまたはビューを [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]にドラッグします。
+2. テーブルまたはビューを [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]にドラッグします。
 
      エンティティ クラスが作成され、デザイン サーフェイスに表示されます。 このエンティティ クラスには、選択されたテーブルまたはビューの列にマップされるプロパティが含まれています。
 
@@ -43,22 +43,22 @@ LINQ to SQL クラス データベース テーブルおよびビューにマッ
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>LINQ to SQL エンティティ クラスに基づいてオブジェクト データ ソースを作成するには
 
-1.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックしてプロジェクトをビルドします。
+1. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックしてプロジェクトをビルドします。
 
-2.  **[データ]** メニューの **[データ ソースの表示]** をクリックします。
+2. **[データ]** メニューの **[データ ソースの表示]** をクリックします。
 
-3.  **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックします。
+3. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックします。
 
-4.  **[データソースの種類を選択]** ページで、**[オブジェクト]** をクリックし、**[次へ]** をクリックします。
+4. **[データソースの種類を選択]** ページで、**[オブジェクト]** をクリックし、**[次へ]** をクリックします。
 
-5.  ノードを展開し、クラスを探して選択します。
+5. ノードを展開し、クラスを探して選択します。
 
     > [!NOTE]
     > **Customer** クラスが使用可能でない場合は、ウィザードをキャンセルし、プロジェクトをビルドしてからウィザードを再実行します。
 
-6.  **[完了]** をクリックしてデータ ソースを作成し、**Customer** エンティティ クラスを **[データ ソース]** ウィンドウに追加します。
+6. **[完了]** をクリックしてデータ ソースを作成し、**Customer** エンティティ クラスを **[データ ソース]** ウィンドウに追加します。
 
-7.  **[データ ソース]** ウィンドウからフォームに項目をドラッグします。
+7. **[データ ソース]** ウィンドウからフォームに項目をドラッグします。
 
 ## <a name="see-also"></a>関連項目
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43305d7b9353bd34e98a3dcfd31205cb9159a2f3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 99ad13fd3c8c1c2efeeec28794e10a91d9dd0db1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060840"
 ---
 # <a name="how-to-create-xml-snippets"></a>方法: XML スニペットを作成する
 
@@ -23,23 +23,23 @@ ms.locfileid: "59659921"
 
  新しい XML コードを作成するスニペットが新しい XML ファイルを作成し、使用、**スニペットの挿入**機能します。
 
-1.  **ファイル** メニューのをクリックして**新規** をクリックし、**ファイル**します。
+1. **ファイル** メニューのをクリックして**新規** をクリックし、**ファイル**します。
 
-2.  クリックして**XML ファイル**順にクリックします**オープン**します。
+2. クリックして**XML ファイル**順にクリックします**オープン**します。
 
-3.  エディター ウィンドウで右クリックして**スニペットの挿入**します。
+3. エディター ウィンドウで右クリックして**スニペットの挿入**します。
 
-4.  選択**スニペット**キーを押して、一覧から**Enter**します。
+4. 選択**スニペット**キーを押して、一覧から**Enter**します。
 
-5.  新しいスニペットに必要な変更を加えます。
+5. 新しいスニペットに必要な変更を加えます。
 
-6.  **ファイル**メニューの  **XMLFile.xml の保存**します。
+6. **ファイル**メニューの  **XMLFile.xml の保存**します。
 
      **ファイルに名前を付けて** ダイアログ ボックスが表示されます。
 
-7.  新しいスニペットの名前を入力し、選択**スニペット ファイル**から、**型として保存**ドロップダウン ウィンドウ。
+7. 新しいスニペットの名前を入力し、選択**スニペット ファイル**から、**型として保存**ドロップダウン ウィンドウ。
 
-8.  使用して、**で保存**ファイルの場所を変更するドロップダウン リスト、 *My documents \visual Studio 2005\Code \xml\my XML Snippets*フォルダーを押してから**保存**します。
+8. 使用して、**で保存**ファイルの場所を変更するドロップダウン リスト、 *My documents \visual Studio 2005\Code \xml\my XML Snippets*フォルダーを押してから**保存**します。
 
 ## <a name="snippet-description"></a>スニペットの説明
 

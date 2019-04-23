@@ -11,12 +11,12 @@ ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e47fa574d607f0fe56950b232991ad6e5ff2b351
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3870027762675f4f9791fa720ae932aedf0b5f90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002519"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061334"
 ---
 # <a name="enabling-the-azure-sdk"></a>Azure SDK を有効にします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "59002519"
   
 ### <a name="to-enable-the-azure-sdk"></a>Azure SDK を有効にするには  
   
-1.  **ファイル**] メニューの [新しいプロジェクトを作成します。 (クリックして**新規** をクリックし、**プロジェクト**)。  
+1. **ファイル**] メニューの [新しいプロジェクトを作成します。 (クリックして**新規** をクリックし、**プロジェクト**)。  
   
-2.  いずれかのノードを展開**Visual Basic**または**C#** し**クラウド**します。  
+2. いずれかのノードを展開**Visual Basic**または**c#** し**クラウド**します。  
   
-3.  中央のペインで選択**Azure SDK for .NET を入手**、順にクリックします**OK**します。  
+3. 中央のペインで選択**Azure SDK for .NET を入手**、順にクリックします**OK**します。  
   
      インストーラーに表示される指示に従います。  
   

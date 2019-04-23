@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40c9c3d2da03b70b75f5c2edd8c256e1e35ea0b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4fb6543f5e741010ae19e706ee4a87352d678390
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063791"
 ---
 # <a name="concurrency-visualizer-sdk"></a>コンカレンシー ビジュアライザー SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ ms.locfileid: "54769321"
   
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>C# または Visual Basic のプロジェクトに SDK のサポートを追加するには  
   
-1.  メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[プロジェクトへの SDK の追加]** の順に選択します。  
+1. メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[プロジェクトへの SDK の追加]** の順に選択します。  
   
-2.  SDK にアクセスするプロジェクトを選択し、**[選択したプロジェクトに SDK を追加]** ボタンを選択します。  
+2. SDK にアクセスするプロジェクトを選択し、**[選択したプロジェクトに SDK を追加]** ボタンを選択します。  
   
-3.  imports ステートメントまたは using ステートメントをコードに追加します。  
+3. imports ステートメントまたは using ステートメントをコードに追加します。  
   
     ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
@@ -53,19 +53,19 @@ ms.locfileid: "54769321"
   
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>C++ または C のプロジェクトに SDK のサポートを追加するには  
   
-1.  メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[プロジェクトへの SDK の追加]** の順に選択します。  
+1. メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[プロジェクトへの SDK の追加]** の順に選択します。  
   
-2.  SDK にアクセスするプロジェクトを選択し、**[選択したプロジェクトに SDK を追加]** ボタンを選択します。  
+2. SDK にアクセスするプロジェクトを選択し、**[選択したプロジェクトに SDK を追加]** ボタンを選択します。  
   
-3.  C++ の場合は、`cvmarkersobj.h` を含めます。 C の場合は、`cvmarkers.h` を含めます。  
+3. C++ の場合は、`cvmarkersobj.h` を含めます。 C の場合は、`cvmarkers.h` を含めます。  
   
-4.  using ステートメントをコードに追加します。  
+4. using ステートメントをコードに追加します。  
   
     ```  
     using namespace Concurrency::diagnostic;  
     ```  
   
-5.  `marker_series` オブジェクトを作成し、それを `span` コンストラクターに渡します。  
+5. `marker_series` オブジェクトを作成し、それを `span` コンストラクターに渡します。  
   
     ```cpp  
   
@@ -79,19 +79,19 @@ ms.locfileid: "54769321"
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>C# または Visual Basic プロジェクトで新しいマーカー プロバイダーを使用するには  
   
-1.  <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> オブジェクトを作成します。  コンストラクターは GUID を受け取ります。  
+1. <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> オブジェクトを作成します。  コンストラクターは GUID を受け取ります。  
   
-2.  プロバイダーを登録するには、コンカレンシー ビジュアライザーの [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。  **[マーカー]** タブを選択してから、**[新しいプロバイダーを追加します]** ボタンを選択します。 [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスで、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。  
+2. プロバイダーを登録するには、コンカレンシー ビジュアライザーの [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。  **[マーカー]** タブを選択してから、**[新しいプロバイダーを追加します]** ボタンを選択します。 [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスで、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。  
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>C# または C プロジェクトで新しいマーカー プロバイダーを使用するには  
   
-1.  `CvInitProvider` 関数を使用して、PCV_PROVIDER を初期化します。  コンストラクターは GUID* と PCV_PROVIDER\* を受け取ります。  
+1. `CvInitProvider` 関数を使用して、PCV_PROVIDER を初期化します。  コンストラクターは GUID* と PCV_PROVIDER\* を受け取ります。  
   
-2.  プロバイダーを登録するには、[[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。  **[マーカー]** タブを選択してから、**[新しいプロバイダーを追加します]** ボタンを選択します。 ダイアログ ボックスに、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。  
+2. プロバイダーを登録するには、[[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。  **[マーカー]** タブを選択してから、**[新しいプロバイダーを追加します]** ボタンを選択します。 ダイアログ ボックスに、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。  
   
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>C# または Visual Basic プロジェクトでマーカー シリーズを使用するには  
   
-1.  新しい <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> を使うには、最初に <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> オブジェクトを使って作成した後、新しいシリーズから直接マーカー イベントを生成します。  
+1. 新しい <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> を使うには、最初に <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> オブジェクトを使って作成した後、新しいシリーズから直接マーカー イベントを生成します。  
   
     ```csharp  
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries(″Series 1″);  
@@ -105,7 +105,7 @@ ms.locfileid: "54769321"
   
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>C++ プロジェクトでマーカー シリーズを使用するには  
   
-1.  `marker_series` オブジェクトを作成します。  この新しいシリーズからイベントを生成することができます。  
+1. `marker_series` オブジェクトを作成します。  この新しいシリーズからイベントを生成することができます。  
   
     ```scr  
     marker_series series;  
@@ -114,7 +114,7 @@ ms.locfileid: "54769321"
   
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>C プロジェクトでマーカー シリーズを使用するには  
   
-1.  `CvCreateMarkerSeries` 関数を使用して、PCV_MARKERSERIES を作成します。  
+1. `CvCreateMarkerSeries` 関数を使用して、PCV_MARKERSERIES を作成します。  
   
     ```cpp  
     PCV_MARKERSERIES series;  
@@ -124,7 +124,7 @@ ms.locfileid: "54769321"
   
 ## <a name="related-topics"></a>関連トピック  
   
-|Title|説明|  
+|タイトル|説明|  
 |-----------|-----------------|  
 |[C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)|C++ のコンカレンシー ビジュアライザー API について説明します。|  
 |[C ライブラリ リファレンス](../profiling/c-library-reference.md)|C のコンカレンシー ビジュアライザー API について説明します。|  

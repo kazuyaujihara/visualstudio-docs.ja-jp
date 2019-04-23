@@ -27,12 +27,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 883c56ce2bd272e508bc79d1d0c07db02350862d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062036"
 ---
 # <a name="midl-task"></a>MIDL タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 ## <a name="parameters"></a>パラメーター  
  **MIDL** タスクのパラメーターの説明を次の表に示します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。  
   
--   **AdditionalIncludeDirectories**  
+- **AdditionalIncludeDirectories**  
   
      省略可能な **String[]** 型のパラメーターです。  
   
@@ -50,7 +50,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/I** オプションを参照してください。  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -58,7 +58,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」を参照してください。  
   
--   **ApplicationConfigurationMode**  
+- **ApplicationConfigurationMode**  
   
      省略可能な **Boolean** 型のパラメーターです。  
   
@@ -66,7 +66,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/app_config** オプションを参照してください。  
   
--   **ClientStubFile**  
+- **ClientStubFile**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -74,7 +74,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/cstub** オプションを参照してください。 この表にある **ServerStubFile** パラメーターも参照してください。  
   
--   **CPreprocessOptions**  
+- **CPreprocessOptions**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -82,7 +82,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/cpp_opt** オプションを参照してください。  
   
--   **DefaultCharType**  
+- **DefaultCharType**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -98,7 +98,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/char** オプションを参照してください。  
   
--   **DllDataFileName**  
+- **DllDataFileName**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -106,7 +106,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/dlldata** オプションを参照してください。  
   
--   **EnableErrorChecks**  
+- **EnableErrorChecks**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -122,7 +122,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/error** オプションを参照してください。  
   
--   **ErrorCheckAllocations**  
+- **ErrorCheckAllocations**  
   
      省略可能な **Boolean** 型のパラメーターです。  
   
@@ -130,7 +130,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/error allocation** オプションを参照してください。  
   
--   **ErrorCheckBounds**  
+- **ErrorCheckBounds**  
   
      省略可能な **Boolean** 型のパラメーターです。  
   
@@ -138,7 +138,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/error bounds_check** オプションを参照してください。  
   
--   **ErrorCheckEnumRange**  
+- **ErrorCheckEnumRange**  
   
      省略可能な **Boolean** 型のパラメーターです。  
   
@@ -146,7 +146,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、midl.exe のコマンド ライン ヘルプ (**/?**) の **/error enum** オプションを参照してください。  
   
--   **ErrorCheckRefPointers**  
+- **ErrorCheckRefPointers**  
   
      省略可能な **Boolean** 型のパラメーターです。  
   
@@ -154,7 +154,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/error ref** オプションを参照してください。  
   
--   **ErrorCheckStubData**  
+- **ErrorCheckStubData**  
   
      省略可能な **Boolean** 型のパラメーターです。  
   
@@ -162,7 +162,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/error stub_data** オプションを参照してください。  
   
--   **GenerateClientFiles**  
+- **GenerateClientFiles**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -177,7 +177,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/client** オプションを参照してください。  
   
--   **GenerateServerFiles**  
+- **GenerateServerFiles**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -192,7 +192,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/server** オプションを参照してください。  
   
--   **GenerateStublessProxies**  
+- **GenerateStublessProxies**  
   
      省略可能な **Boolean** 型のパラメーターです。  
   
@@ -200,7 +200,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/Oicf** オプションを参照してください。  
   
--   **GenerateTypeLibrary**  
+- **GenerateTypeLibrary**  
   
      省略可能な **Boolean** 型のパラメーターです。  
   
@@ -208,7 +208,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/notlb** オプションを参照してください。  
   
--   **HeaderFileName**  
+- **HeaderFileName**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -216,7 +216,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/h** または **/header** オプションを参照してください。  
   
--   **IgnoreStandardIncludePath**  
+- **IgnoreStandardIncludePath**  
   
      省略可能な **Boolean** 型のパラメーターです。  
   
@@ -224,7 +224,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/no_def_idir** オプションを参照してください。  
   
--   **InterfaceIdentifierFileName**  
+- **InterfaceIdentifierFileName**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -232,7 +232,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/iid** オプションを参照してください。  
   
--   **LocaleID**  
+- **LocaleID**  
   
      省略可能な **int** 型のパラメーターです。  
   
@@ -240,7 +240,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/lcid** オプションを参照してください。 MSDN の「Locale IDs Assigned by Microsoft (Microsoft によって割り当てられたロケール ID)」も参照してください。  
   
--   **MkTypLibCompatible**  
+- **MkTypLibCompatible**  
   
      省略可能な **Boolean** 型のパラメーターです。  
   
@@ -248,7 +248,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/mktyplib203** オプションを参照してください。 また、MSDN Web サイトの「ODL File Syntax (ODL ファイルの構文)」を参照してください。  
   
--   **OutputDirectory**  
+- **OutputDirectory**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -256,7 +256,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/out** オプションを参照してください。  
   
--   **PreprocessorDefinitions**  
+- **PreprocessorDefinitions**  
   
      省略可能な **String[]** 型のパラメーターです。  
   
@@ -264,7 +264,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/D** オプションを参照してください。 この表の **UndefinePreprocessorDefinitions** パラメーターも参照してください。  
   
--   **ProxyFileName**  
+- **ProxyFileName**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -272,7 +272,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/proxy** オプションを参照してください。  
   
--   **RedirectOutputAndErrors**  
+- **RedirectOutputAndErrors**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -280,7 +280,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/o** オプションを参照してください。  
   
--   **ServerStubFile**  
+- **ServerStubFile**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -288,13 +288,13 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/sstub** オプションを参照してください。 この表にある **ClientStubFile** パラメーターも参照してください。  
   
--   **Source**  
+- **Source**  
   
      必須の `ITaskItem[]` 型のパラメーターです。  
   
      スペースで区切られたソース ファイルのリストを指定します。  
   
--   **StructMemberAlignment**  
+- **StructMemberAlignment**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -312,7 +312,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/Zp** オプションを参照してください。 **/Zp** オプションは、**/pack** オプションおよび以前の **/align** オプションに相当します。  
   
--   **SuppressCompilerWarnings**  
+- **SuppressCompilerWarnings**  
   
      省略可能な **Boolean** 型のパラメーターです。  
   
@@ -320,7 +320,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/no_warn** オプションを参照してください。  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      省略可能な `Boolean` 型のパラメーターです。  
   
@@ -328,7 +328,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/nologo** オプションを参照してください。  
   
--   **TargetEnvironment**  
+- **TargetEnvironment**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -345,13 +345,13 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/env** オプションを参照してください。  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      省略可能な `String` 型のパラメーターです。  
   
      このタスクの追跡ログの格納先となる中間ディレクトリを指定します。  
   
--   **TypeLibFormat**  
+- **TypeLibFormat**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -366,7 +366,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/newtlb** オプションおよび **/oldtlb** オプションを参照してください。  
   
--   **TypeLibraryName**  
+- **TypeLibraryName**  
   
      省略可能な **String** 型のパラメーターです。  
   
@@ -374,7 +374,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/tlb** オプションを参照してください。  
   
--   **UndefinePreprocessorDefinitions**  
+- **UndefinePreprocessorDefinitions**  
   
      省略可能な **String[]** 型のパラメーターです。  
   
@@ -382,7 +382,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/U** オプションを参照してください。 この表の **PreprocessorDefinitions** パラメーターも参照してください。  
   
--   **ValidateAllParameters**  
+- **ValidateAllParameters**  
   
      省略可能な `Boolean` 型のパラメーターです。  
   
@@ -390,7 +390,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/robust** オプションおよび **/no_robust** オプションを参照してください。  
   
--   **WarnAsError**  
+- **WarnAsError**  
   
      省略可能な `Boolean` 型のパラメーターです。  
   
@@ -400,7 +400,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/WX** オプションを参照してください。 この表にある **WarningLevel** パラメーターも参照してください。  
   
--   **WarningLevel**  
+- **WarningLevel**  
   
      省略可能な **String** 型のパラメーターです。  
   
