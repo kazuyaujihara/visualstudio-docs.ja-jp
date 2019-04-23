@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e595247b147d9a775fcea0299c291d9027aea9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: eed5d81cce05b316ef7593639e868936e7f2fa69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039254"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod アクティビティ デザイナー
 
@@ -49,11 +49,11 @@ C# としてパラメーターを渡す**アウト**パラメーター (たと�
 
 <xref:System.Activities.Activity.CacheMetadata%2A> にパラメーターを登録するアルゴリズムは次のとおりです。
 
-1.  <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> 引数を登録します。
+1. <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> 引数を登録します。
 
-2.  <xref:System.Activities.Statements.InvokeMethod.Result%2A> 引数を登録します。
+2. <xref:System.Activities.Statements.InvokeMethod.Result%2A> 引数を登録します。
 
-3.  <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> コレクションを繰り返し処理し、各引数を登録します。
+3. <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> コレクションを繰り返し処理し、各引数を登録します。
 
 型の結果の例外は、<xref:System.Activities.InvalidWorkflowException>次のメッセージ。' InvokeMethod':名前が 'TargetObject' の変数 RuntimeArgument または DelegateArgument を既にが存在します。 名前は、環境スコープ内で一意であることが必要です。
 

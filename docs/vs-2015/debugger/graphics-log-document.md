@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f1d5d706bb3ce738fc8c820e6ffd0600b9a98ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977641"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117604"
 ---
 # <a name="graphics-log-document"></a>グラフィックス ログ ドキュメント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "58977641"
   
 #### <a name="to-inspect-a-frame"></a>フレームを検査するには  
   
--   **[フレーム一覧]** から、検査するフレームを選択します。 グラフィックス ログのドキュメントの上部のレンダー ターゲットの出力が更新されて、選択したフレームが表示されます。  
+- **[フレーム一覧]** から、検査するフレームを選択します。 グラフィックス ログのドキュメントの上部のレンダー ターゲットの出力が更新されて、選択したフレームが表示されます。  
   
 #### <a name="to-inspect-a-pixel"></a>ピクセルを検査するには  
   
--   グラフィックス ログのドキュメントの上部で、レンダー ターゲットの出力から目的のピクセルを選択します。 ピクセルを選択すると、**[グラフィックス ピクセル履歴]** ウィンドウを使用して選択したピクセルについての詳細情報が参照できます。 詳細については、次を参照してください。[ピクセル履歴](../debugger/graphics-pixel-history.md)します。  
+- グラフィックス ログのドキュメントの上部で、レンダー ターゲットの出力から目的のピクセルを選択します。 ピクセルを選択すると、**[グラフィックス ピクセル履歴]** ウィンドウを使用して選択したピクセルについての詳細情報が参照できます。 詳細については、次を参照してください。[ピクセル履歴](../debugger/graphics-pixel-history.md)します。  
   
 ## <a name="playback-machine"></a>再生コンピューター  
  **[フレーム一覧]** の右上隅には、**[再生コンピューター]** も表示されます。 再生コンピューターは、後のグラフィックス診断のセッション中にグラフィックス ログ ファイルからグラフィックス イベントを再生するために使用されるコンピューターまたはデバイスです。 開発用コンピューターの代わりに別のデバイスを使用し、キャプチャしたイベントを再生することにより、問題が発生する実行環境をより正確に再現できます。たとえば、開発用コンピューターとは異なるグラフィックス ハードウェアまたはドライバーを使用するコンピューター、または ARM ベースの Windows RT タブレットや Windows Phone デバイスなどのデバイスを使用できます。  

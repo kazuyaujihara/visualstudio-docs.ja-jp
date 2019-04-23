@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d86834b82dbc130c9e2e4b3cf712b4d23a27e5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 43521b940d786902f4d502c93b5c0eb54922422f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069914"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,30 +28,30 @@ ms.locfileid: "54801184"
   
  テスト エクスプローラーは、テスト エクスプローラーのアドオン インターフェイスを実装した、サードパーティ製やオープン ソースの単体テスト フレームワークも実行できます。 Visual Studio 拡張機能マネージャーおよび Visual Studio ギャラリーを使用して、これらのフレームワークの多くを追加できます。 「[サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)」を参照してください。  
   
--   [クイック スタート](#BKMK_Quick_starts)  
+- [クイック スタート](#BKMK_Quick_starts)  
   
--   [MyBank ソリューションの例](#BKMK_The_MyBank_Solution_example)  
+- [MyBank ソリューションの例](#BKMK_The_MyBank_Solution_example)  
   
--   [単体テスト プロジェクトとテスト メソッドを作成する](#BKMK_Creating_the_unit_test_projects)  
+- [単体テスト プロジェクトとテスト メソッドを作成する](#BKMK_Creating_the_unit_test_projects)  
   
--   [テストを作成する](#BKMK_Writing_your_tests)  
+- [テストを作成する](#BKMK_Writing_your_tests)  
   
--   [テスト エクスプローラーでテストを実行する](#BKMK_Running_tests_in_Test_Explorer)  
+- [テスト エクスプローラーでテストを実行する](#BKMK_Running_tests_in_Test_Explorer)  
   
--   [テストを実行して表示する](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
+- [テストを実行して表示する](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
   
-##  <a name="BKMK_Unit_testing_overview"></a> 単体テストの概要  
+## <a name="BKMK_Unit_testing_overview"></a> 単体テストの概要  
   
-###  <a name="BKMK_Quick_starts"></a> クイック スタート  
+### <a name="BKMK_Quick_starts"></a> クイック スタート  
  コーディングに直接関係する単体テストの概要については、次のいずれかのトピックを参照してください。  
   
--   [チュートリアル: マネージド コードに対する単体テストの作成と実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+- [チュートリアル: 作成して、マネージ コードの単体テストの実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
--   [クイック スタート: テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)  
+- [クイック スタート:テスト エクスプ ローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
--   [テスト エクスプローラーを使用したネイティブ コードの単体テスト](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
+- [テスト エクスプローラーを使用したネイティブ コードの単体テスト](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
-##  <a name="BKMK_The_MyBank_Solution_example"></a> MyBank ソリューションの例  
+## <a name="BKMK_The_MyBank_Solution_example"></a> MyBank ソリューションの例  
  このトピックでは、例として `MyBank` という架空のアプリケーションの開発を使用します。 このトピックの説明は、実際のコードがなくても理解できます。 テスト メソッドは C# で記述され、マネージド コード用の Microsoft 単体テスト フレームワークを使用して示されますが、その概念は他の言語やフレームワークに容易に移行できます。  
   
  ![MyBank ソリューション](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")  
@@ -92,7 +92,7 @@ public void Withdraw(double amount)
   
  少しコードがあるので、テストしましょう。  
   
-##  <a name="BKMK_Creating_the_unit_test_projects"></a> 単体テスト プロジェクトとテスト メソッドを作成する  
+## <a name="BKMK_Creating_the_unit_test_projects"></a> 単体テスト プロジェクトとテスト メソッドを作成する  
  ほとんどの場合、コードから単体テスト プロジェクトと単体テスト スタブを生成する方が手軽です。 また、必要に応じて単体テスト プロジェクトとテストを手動で作成することもできます。  
   
  **単体テスト プロジェクトと単体テスト スタブを生成する**  
@@ -130,19 +130,19 @@ public void Withdraw(double amount)
   
     コード プロジェクトへの参照を作成する方法は次のとおりです。  
   
-   1.  ソリューション エクスプローラーでプロジェクトを選択します。  
+   1. ソリューション エクスプローラーでプロジェクトを選択します。  
   
-   2.  **[プロジェクト]** メニューの **[参照の追加]** をクリックします。  
+   2. **[プロジェクト]** メニューの **[参照の追加]** をクリックします。  
   
-   3.  [参照マネージャー] ダイアログ ボックスで、 **[ソリューション]** ノードを開き、 **[プロジェクト]** を選択します。 コード プロジェクトの名前を選択し、ダイアログ ボックスを閉じます。  
+   3. [参照マネージャー] ダイアログ ボックスで、 **[ソリューション]** ノードを開き、 **[プロジェクト]** を選択します。 コード プロジェクトの名前を選択し、ダイアログ ボックスを閉じます。  
   
    各単体テスト プロジェクトには、コード プロジェクト内のクラス名を反映したクラスが含まれています。 この例では、 `AccountsTests` プロジェクトに次のクラスが含まれています。  
   
--   `AccountInfoTests` クラスには、 `AccountInfo` プロジェクトの `BankAccount` クラス用の単体テスト メソッドが含まれています。  
+- `AccountInfoTests` クラスには、 `AccountInfo` プロジェクトの `BankAccount` クラス用の単体テスト メソッドが含まれています。  
   
--   `CheckingAccountTests` クラスには、 `CheckingAccount` クラス用の単体テスト メソッドが含まれています。  
+- `CheckingAccountTests` クラスには、 `CheckingAccount` クラス用の単体テスト メソッドが含まれています。  
   
-##  <a name="BKMK_Writing_your_tests"></a> テストを作成する  
+## <a name="BKMK_Writing_your_tests"></a> テストを作成する  
  使用する単体テスト フレームワークと Visual Studio IntelliSense に従って、コード プロジェクトの単体テスト用コードを記述していきます。 ほとんどのフレームワークでは、テスト エクスプローラーで実行するには、単体テスト メソッドを識別する特定の属性を追加する必要があります。 フレームワークには、テスト メソッドが成功したか失敗したかを示す手段も用意されています。通常は、Assert ステートメントまたはメソッドの属性を使用します。 他の属性は、各テスト メソッドの前でクラスの初期化時に実行される省略可能な設定メソッド、および各テスト メソッドの後でクラスが破棄される前に実行される終了処理メソッドを識別します。  
   
  AAA (Arrange、Act、Assert) のパターンが、テスト対象のメソッドの単体テストを記述する一般的な方法です。  
@@ -188,9 +188,9 @@ public void Withdraw_AmountMoreThanBalance_Throws()
   
  Microsoft 単体テスト フレームワークの詳細については、次のトピックのいずれかを参照してください。  
   
--   [マネージド コード用の Microsoft 単体テスト フレームワークを使用した .NET Framework 用単体テストの記述](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
+- [マネージド コード用の Microsoft 単体テスト フレームワークを使用した .NET Framework 用単体テストの記述](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
--   [C++ 用の Microsoft 単体テスト フレームワークを使用した C++ 用単体テストの記述](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
+- [C++ 用の Microsoft 単体テスト フレームワークを使用した C++ 用単体テストの記述](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
   
 ## <a name="set-timeouts-for-unit-tests"></a>単体テストのタイムアウトを設定する  
  個々のテスト メソッドで、タイムアウトを設定するには  
@@ -217,7 +217,7 @@ public void My_Test ()
 }  
 ```  
   
-##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> テスト エクスプローラーでテストを実行する  
+## <a name="BKMK_Running_tests_in_Test_Explorer"></a> テスト エクスプローラーでテストを実行する  
  テスト プロジェクトをビルドすると、テストはテスト エクスプローラーに表示されます。 テスト エクスプローラーが表示されない場合は、Visual Studio メニューの **[テスト]** をクリックし、 **[Windows]**、 **[テスト エクスプローラー]** の順に選択します。  
   
  ![単体テスト エクスプローラー](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
@@ -226,16 +226,16 @@ public void My_Test ()
   
  グローバル レベルで検索ボックスでテキストを照合して、または定義済みのフィルターの 1 つを選択して、任意のビューでテストにフィルターを適用することもできます。 任意に選択したテストをいつでも実行できます。 テスト実行の結果は、エクスプローラー ウィンドウの上部にある成功/失敗ステータス バーですぐにわかります。 テストを選択すると、そのテスト メソッドの結果の詳細が表示されます。  
   
-###  <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> テストを実行して表示する  
+### <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> テストを実行して表示する  
  テスト エクスプローラーのツール バーは、対象にするテストを検出、編成、実行するのに役立ちます。  
   
  ![テスト エクスプローラー ツールバーからテストを実行](../test/media/ute-toolbar.png "UTE_ToolBar")  
   
- **[すべて実行]** を選択してテストをすべて実行することも、 **[実行]** を選択してテストのサブセットを実行することもできます。 一連のテストを実行した後、テスト実行の概要がテスト エクスプローラー ウィンドウの下部に表示されます。 テストを選択すると、そのテストの詳細が下部のペインに表示されます。 コンテキスト メニューから **[テストを開く]** を選択すると (キーボード: F12)、選択したテストのソース コードが表示されます。  
+ **[すべて実行]** を選択してテストをすべて実行することも、 **[実行]** を選択してテストのサブセットを実行することもできます。 一連のテストを実行した後、テスト実行の概要がテスト エクスプローラー ウィンドウの下部に表示されます。 テストを選択すると、そのテストの詳細が下部のペインに表示されます。 コンテキスト メニューから **[テストを開く]** を選び (キーボード: F12)、選択したテストのソース コードを表示します。  
   
  個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。  
   
-###  <a name="BKMK_Running_tests_after_every_build"></a> 各ビルドの後にテストを実行する  
+### <a name="BKMK_Running_tests_after_every_build"></a> 各ビルドの後にテストを実行する  
   
 > [!WARNING]
 >  各ビルドの後の単体テスト実行は、Visual Studio Enterprise でのみサポートされます。  
@@ -244,7 +244,7 @@ public void My_Test ()
 |-|-|  
 |![ビルド後に実行](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|各ローカル ビルドの後で単体テストを実行するには、標準のメニューの **[テスト]** を選択し、テスト エクスプローラーのツール バーの **[ビルド後にテストを実行]** を選択します。|  
   
-###  <a name="BKMK_Filtering_and_grouping_the_test_list"></a> テスト リストのフィルター処理とグループ化を実行する  
+### <a name="BKMK_Filtering_and_grouping_the_test_list"></a> テスト リストのフィルター処理とグループ化を実行する  
  多数のテストがある場合は、テスト エクスプローラーの検索ボックスに入力し、指定した文字列によって一覧をフィルター処理できます。 フィルターの一覧から選択することで、フィルター イベントをさらに制限できます。  
   
  ![検索フィルターのカテゴリ](../test/media/ute-searchfilter.png "UTE_SearchFilter")  
@@ -258,7 +258,7 @@ public void My_Test ()
 ## <a name="qa"></a>Q&A  
  **Q: 単体テストのデバッグ方法を教えてください。**  
   
- **A:** テスト エクスプローラーを使用して、テストのデバッグ セッションを開始します。 Visual Studio デバッガーを使用してコードをシームレスにステップ実行すると、テスト対象のプロジェクトと単体テストの間を切り替えることができます。 デバッグを開始するには:  
+ **A:** テスト エクスプ ローラーを使用すると、テストのデバッグ セッションを開始します。 Visual Studio デバッガーを使用してコードをシームレスにステップ実行すると、テスト対象のプロジェクトと単体テストの間を切り替えることができます。 デバッグを開始するには:  
   
 1. Visual Studio エディターで、デバッグする 1 つ以上のテスト メソッドにブレークポイントを設定します。  
   
@@ -269,15 +269,15 @@ public void My_Test ()
   
    [単体テストのデバッグ](../debugger/debugging-in-visual-studio.md)の詳細を確認してください。  
   
-   **Q: TDD を使用している場合にテストからコードを生成する方法を教えてください。**  
+   **Q: TDD を使用している場合どのようにコードを生成するテストからでしょうか。**  
   
    **A:** IntelliSense を使用して、プロジェクト コードにクラスとメソッドを生成します。 テスト メソッドに、生成するクラスまたはメソッドを呼び出すステートメントを記述し、その呼び出しの下で IntelliSense メニューを開きます。 新しいクラスのコンストラクターへの呼び出しの場合は、メニューから **[新しい型の生成]** を選択し、ウィザードに従ってコード プロジェクトにクラスを挿入します。 メソッドへの呼び出しの場合は、IntelliSense メニューから **[Generate new method (新しいメソッドの生成)]** を選択します。  
   
    ![[メソッド スタブの生成] の Intellisense メニュー](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
   
-   **Q: テストを実行する入力値として複数のデータ セットを使用する単体テストを作成できますか。**  
+   **Q: テストを実行する入力値として複数のデータ セットを取得する単体テストを作成できますか。**  
   
-   **A:** できます。 *データ ドリブン テスト メソッド* を使用すると、1 つの単体テスト メソッドである範囲の値をテストすることができます。 テストする変数の値が格納されているデータ ソースとデータ テーブルを指定する、テスト メソッドの `DataSource` 属性を使用します。  メソッドの本体で、 `TestContext.DataRow[`*ColumnName*`]` インデクサーを使用して変数に行の値を割り当てます。  
+   **A:** はい。 *データ ドリブン テスト メソッド* を使用すると、1 つの単体テスト メソッドである範囲の値をテストすることができます。 テストする変数の値が格納されているデータ ソースとデータ テーブルを指定する、テスト メソッドの `DataSource` 属性を使用します。  メソッドの本体で、 `TestContext.DataRow[`*ColumnName*`]` インデクサーを使用して変数に行の値を割り当てます。  
   
 > [!NOTE]
 >  ここに示すプロシージャは、マネージド コード用の Microsoft 単体テスト フレームワークを使用して記述したテスト メソッドにのみ適用できます。 別のフレームワークを使用している場合は、同等の機能についてフレームワークのドキュメントを参照してください。  
@@ -311,7 +311,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  **Q: 単体テストでテストするコードの量を確認できますか。**  
   
- **A:** できます。 Visual Studio のコード カバレッジ ツールを使用して、単体テストで実際にテスト中のコードの量を確認できます。 単体テスト フレームワークによって実行できるネイティブ言語とマネージド言語、およびすべての単体テスト フレームワークがサポートされています。  
+ **A:** はい。 Visual Studio のコード カバレッジ ツールを使用して、単体テストで実際にテスト中のコードの量を確認できます。 単体テスト フレームワークによって実行できるネイティブ言語とマネージド言語、およびすべての単体テスト フレームワークがサポートされています。  
   
  選択したテストまたはソリューションのすべてのテストのコード カバレッジを実行できます。 [コード カバレッジの結果] ウィンドウに、行、関数、クラス、名前空間、およびモジュールで実行された製品コードのブロックのパーセンテージが表示されます。  
   
@@ -321,11 +321,11 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  ![コード カバレッジの結果](../test/media/ute-codecoverageresults.png "UTE_CodeCoverageResults")  
   
- [コード カバレッジ](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)の詳細を確認してください。  
+ [コード カバレッジ](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) の詳細を確認してください。  
   
- **Q: 外部依存関係を含むコード内のメソッドをテストする方法を教えてください。**  
+ **Q: 外部の依存関係のあるコードでメソッドをテストする方法は?**  
   
- **A:** できます。 Visual Studio Enterprise を使用している場合は、Microsoft Fakes は、マネージド コード用の単体テスト フレームワークを使用して記述したテスト メソッドで使用できます。  
+ **A:** はい。 Visual Studio Enterprise を使用している場合は、Microsoft Fakes は、マネージド コード用の単体テスト フレームワークを使用して記述したテスト メソッドで使用できます。  
   
  Microsoft Fakes は、次の 2 つの方法で外部依存関係の代替クラスを作成します。  
   
@@ -339,7 +339,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
    **Q: 他の単体テスト フレームワークを使用して単体テストを作成することはできますか。**  
   
-   **A:** はい。以下の手順に従って、 [他のフレームワークを検索してインストール](../test/install-third-party-unit-test-frameworks.md)してください。 Visual Studio を再起動した後、単体テストを作成するためのソリューションをもう一度開き、インストールしたフレームワークを選びます。  
+   **A:** はい。以下の手順に従って、[他のフレームワークを検索してインストール](../test/install-third-party-unit-test-frameworks.md)してください。 Visual Studio を再起動した後、単体テストを作成するためのソリューションをもう一度開き、インストールしたフレームワークを選びます。  
   
    ![インストールされているその他の単体テスト フレームワークを選択する](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   

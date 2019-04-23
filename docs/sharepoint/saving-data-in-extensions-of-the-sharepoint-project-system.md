@@ -12,20 +12,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eba3f66e55c06efad2a540b1be7d3ad66ddfa3d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082764"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>SharePoint プロジェクト システムの拡張機能でデータを保存します。
   SharePoint プロジェクト システムを拡張するときは、SharePoint プロジェクトを閉じた後に保持される文字列データを保存できます。 データは、通常、またはプロジェクト自体と特定のプロジェクト項目と関連付けられています。
 
- 実装する SharePoint ツールのオブジェクト モデル内のオブジェクトにデータを追加するには永続化する必要のないデータがあれば、<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>インターフェイス。 詳細については、[ツールの拡張機能を SharePoint でカスタム データを関連付ける](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)を参照してください。
+ 実装する SharePoint ツールのオブジェクト モデル内のオブジェクトにデータを追加するには永続化する必要のないデータがあれば、<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>インターフェイス。 詳細については、次を参照してください。[ツールの拡張機能を SharePoint でカスタム データを関連付ける](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)します。
 
 ## <a name="save-data-that-is-associated-with-a-project-item"></a>プロジェクト項目に関連付けられているデータを保存します。
- データを保存するには、プロジェクト項目に追加するプロパティの値など、特定の SharePoint プロジェクト アイテムに関連付けられているデータがある場合、 *.spdata*プロジェクト項目のファイル。 これを行うには、使用、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>のプロパティ、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>オブジェクト。 このプロパティを追加するデータの保存、 **ExtensionData**内の要素、 *.spdata*プロジェクト項目のファイル。 詳細については、[ExtensionData 要素](../sharepoint/extensiondata-element.md)を参照してください。
+ データを保存するには、プロジェクト項目に追加するプロパティの値など、特定の SharePoint プロジェクト アイテムに関連付けられているデータがある場合、 *.spdata*プロジェクト項目のファイル。 これを行うには、使用、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>のプロパティ、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>オブジェクト。 このプロパティを追加するデータの保存、 **ExtensionData**内の要素、 *.spdata*プロジェクト項目のファイル。 詳細については、次を参照してください。 [ExtensionData 要素](../sharepoint/extensiondata-element.md)します。
 
  次のコード例は、使用する方法を示します、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>プロパティをカスタム SharePoint プロジェクト項目の種類で定義されている文字列プロパティの値を保存します。 例のコンテキストでは、この例を確認するには、次を参照してください。[方法。カスタム SharePoint プロジェクト項目の種類にプロパティを追加](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)します。
 
@@ -35,9 +35,9 @@ ms.locfileid: "56599676"
 ## <a name="save-data-that-is-associated-with-a-project"></a>プロジェクトに関連付けられているデータを保存します。
  プロジェクト ファイルにデータを保存するには、SharePoint プロジェクトに追加するプロパティの値など、プロジェクト レベルのデータがある場合 (、 *.csproj*ファイルまたは *.vbproj*ファイル) またはプロジェクト ユーザー オプションファイル (、 *. csproj.user*ファイルまたは *. vbproj.user*ファイル)。 内のデータを保存するファイルは、データを使用する方法によって異なります。
 
--   SharePoint プロジェクトを開くすべての開発者が利用できるデータを表示する場合は、プロジェクト ファイルにデータを保存します。 このファイルが、このファイル内のデータは、プロジェクトをチェック アウトしたその他の開発者が利用できるようにも、常に、ソース管理データベースにチェックインします。
+- SharePoint プロジェクトを開くすべての開発者が利用できるデータを表示する場合は、プロジェクト ファイルにデータを保存します。 このファイルが、このファイル内のデータは、プロジェクトをチェック アウトしたその他の開発者が利用できるようにも、常に、ソース管理データベースにチェックインします。
 
--   SharePoint プロジェクトを Visual Studio で開いている現在の開発者にのみ使用できるデータを表示する場合は、プロジェクト ユーザー オプション ファイルにデータを保存します。 このファイルは通常チェックインされない、ソース管理データベースにこのファイル内のデータをプロジェクトをチェック アウトするその他の開発者にご利用いただけませんので。
+- SharePoint プロジェクトを Visual Studio で開いている現在の開発者にのみ使用できるデータを表示する場合は、プロジェクト ユーザー オプション ファイルにデータを保存します。 このファイルは通常チェックインされない、ソース管理データベースにこのファイル内のデータをプロジェクトをチェック アウトするその他の開発者にご利用いただけませんので。
 
 ### <a name="save-data-to-the-project-file"></a>プロジェクト ファイルにデータを保存します。
  プロジェクト ファイルにデータを保存する変換、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>オブジェクトを<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>オブジェクトし、を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>メソッド。 次のコード例では、このメソッドを使用して、プロジェクト プロパティの値をプロジェクト ファイルに保存する方法を示します。 大規模なサンプルのコンテキストでは、この例を確認するには、次を参照してください。[方法。SharePoint プロジェクトにプロパティを追加](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)します。

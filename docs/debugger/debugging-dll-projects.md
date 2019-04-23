@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efdde349a0501af423ad08576fcf82491b59fcfd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c22da2a31be1389ca0b60df6cc64ac6c9155ad69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102589"
 ---
-# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio で Dll をデバッグ (C#、C++、Visual Basic、 F#)
+# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio で Dll をデバッグ (C#、 C++、Visual Basic、 F#)
 
 DLL (ダイナミック リンク ライブラリ) は、コードとは、複数のアプリで使用できるデータを含むライブラリです。 作成、ビルド、構成するには、Visual Studio を使用して、Dll をデバッグできます。
 
@@ -86,7 +86,7 @@ C と C++ プロジェクトでは、それらを出力フォルダーにコピ�
 
 C++ プロジェクトの設定の詳細については、次を参照してください。[プロパティ ページ (Visual c)](/cpp/ide/property-pages-visual-cpp)します。
 
-##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> デバッグ バージョンをビルドします。
+## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> デバッグ バージョンをビルドします。
 
 デバッグを開始する前に、DLL のデバッグ バージョンをビルドしてください。 DLL をデバッグするには、呼び出し元のアプリで検索できる必要があります、 [.pdb ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)とその他のすべてのファイル、DLL が必要です。
 
@@ -94,7 +94,7 @@ DLL ファイルのコピー先のカスタム ビルド タスクを作成す�
 
 必ず、正しい位置に、DLL を呼び出します。 当然のことがありますが、デバッガーが設定したブレークポイントをヒットしない場合、呼び出し元のアプリを検索して、別の DLL のコピーを読み込みます。
 
-##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> DLL をデバッグします。
+## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> DLL をデバッグします。
 
 DLL を直接実行することはできません。 呼び出す必要があります、アプリによっては、通常、 *.exe*ファイル。 詳細については、次を参照してください。[作成し、Visual c プロジェクトを管理](/cpp/ide/creating-and-managing-visual-cpp-projects)します。
 
@@ -117,13 +117,13 @@ DLL を呼び出すアプリを指定できます。
 
   または
 
-- 既に展開済みで、テストまたは実稼働コンピューター上で実行されているアプリにアタッチします。 Web サイトまたは web apps では、Dll のこのメソッドを使用します。 詳細については、「[方法: 実行中のプロセスにアタッチする](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)」を参照してください。
+- 既に展開済みで、テストまたは実稼働コンピューター上で実行されているアプリにアタッチします。 Web サイトまたは web apps では、Dll のこのメソッドを使用します。 詳細については、「[方法 :実行中のプロセスにアタッチする](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 
 呼び出し元のアプリのデバッグを開始する前に、DLL で、ブレークポイントを設定します。 参照してください[ブレークポイントを使用して](../debugger/using-breakpoints.md)します。 DLL のブレークポイントにヒットしたときにすることができますコードをステップ実行、1 行ずつアクションを確認します。 詳細については、次を参照してください。[デバッガーでコード内を移動](../debugger/navigating-through-code-with-the-debugger.md)します。
 
-デバッグ中に、使用することができます、**モジュール**Dll を確認するウィンドウおよび *.exe*ファイルをアプリの読み込み。 開くには、**モジュール**ウィンドウで、デバッグ中に、**デバッグ** > **Windows** > **モジュール**します。 詳細については、「[方法: [モジュール] ウィンドウを使用する](../debugger/how-to-use-the-modules-window.md)」を参照してください。
+デバッグ中に、使用することができます、**モジュール**Dll を確認するウィンドウおよび *.exe*ファイルをアプリの読み込み。 開くには、**モジュール**ウィンドウで、デバッグ中に、**デバッグ** > **Windows** > **モジュール**します。 詳細については、「[方法 :[モジュール] ウィンドウを使用する](../debugger/how-to-use-the-modules-window.md)」を参照してください。
 
-###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> イミディ エイト ウィンドウを使用します。
+### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> イミディ エイト ウィンドウを使用します。
 
 使用することができます、**イミディ エイト**デザイン時に DLL の関数またはメソッドを評価するウィンドウ。 **イミディ エイト**ウィンドウは、呼び出し元のアプリの役割を果たします。
 
@@ -154,9 +154,9 @@ DLL を呼び出すアプリを指定できます。
 
    ブレークポイントにヒットして、ステップ`Test`します。 `Test` の実行が終了すると、デバッガーはデザイン モードに戻ります。
 
-##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> 混合モードのデバッグ
+## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> 混合モードのデバッグ
 
-呼び出し元のアプリは、マネージまたはネイティブ コード内の DLL を記述できます。 マネージ DLL を呼び出すネイティブ アプリ、両方をデバッグする場合は、プロジェクトのプロパティで、マネージ コードとネイティブ デバッガーの両方を有効にすることができます。 実際のプロセスは、DLL プロジェクトまたは呼び出し元のアプリ プロジェクトからデバッグを開始するかどうかによって異なります。 詳細については、「[方法: 混合モードでデバッグする](../debugger/how-to-debug-in-mixed-mode.md)」を参照してください。
+呼び出し元のアプリは、マネージまたはネイティブ コード内の DLL を記述できます。 マネージ DLL を呼び出すネイティブ アプリ、両方をデバッグする場合は、プロジェクトのプロパティで、マネージ コードとネイティブ デバッガーの両方を有効にすることができます。 実際のプロセスは、DLL プロジェクトまたは呼び出し元のアプリ プロジェクトからデバッグを開始するかどうかによって異なります。 詳細については、「[方法 :混合モードでデバッグする](../debugger/how-to-debug-in-mixed-mode.md)
 
 マネージ呼び出し元プロジェクトからネイティブ DLL をデバッグすることもできます。 詳細については、次を参照してください。[マネージ コードとネイティブ コードをデバッグする方法について](how-to-debug-managed-and-native-code.md)します。
 

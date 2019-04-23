@@ -10,12 +10,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78b768ae63fcf03912d4f81820e80706f8a46a98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085780"
 ---
 # <a name="project-subtypes-design"></a>プロジェクト サブタイプのデザイン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ ms.locfileid: "58974545"
   
  次のトピックでは、基本的な設計とプロジェクト サブタイプの実装について詳しく説明します。  
   
--   プロジェクト サブタイプのデザイン。  
+- プロジェクト サブタイプのデザイン。  
   
--   複数レベルの集計。  
+- 複数レベルの集計。  
   
--   インターフェイスをサポートします。  
+- インターフェイスをサポートします。  
   
 ## <a name="project-subtype-design"></a>プロジェクト サブタイプのデザイン  
  プロジェクト サブタイプの初期化はメイン集約することによって実現<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>オブジェクト。 この集計は、プロジェクトのサブタイプをオーバーライドしたり、基本プロジェクトの機能の大半を強化したりできます。 プロジェクト サブタイプの取得を使用してプロパティを処理するためにファースト チャンス<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>、コマンドを使用して<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>、使用してプロジェクト項目の管理と<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>します。 プロジェクト サブタイプを拡張することがもできます。  
@@ -71,11 +71,11 @@ ms.locfileid: "58974545"
 ## <a name="multi-level-aggregation"></a>複数レベルの集計  
  下位レベルのプロジェクト サブタイプをラップするプロジェクト サブタイプの実装では、適切に機能する内部のプロジェクト サブタイプを許可する協調的なプログラムを作成する必要があります。 責任のプログラミングの一覧は次のとおりです。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>を内部のサブタイプで折り返されるプロジェクト サブタイプの実装に委任する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>両方の内部のプロジェクト サブタイプの実装<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>メソッド。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>を内部のサブタイプで折り返されるプロジェクト サブタイプの実装に委任する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>両方の内部のプロジェクト サブタイプの実装<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>メソッド。  
   
--   <xref:EnvDTE80.IInternalExtenderProvider>その内部のプロジェクト サブタイプのラッパーのプロジェクト サブタイプの実装に委任する必要があります。 具体的には、実装で<xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A>エクステンダーとして追加する文字列を連結し、内部のプロジェクト サブタイプから名の文字列を取得する必要があります。  
+- <xref:EnvDTE80.IInternalExtenderProvider>その内部のプロジェクト サブタイプのラッパーのプロジェクト サブタイプの実装に委任する必要があります。 具体的には、実装で<xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A>エクステンダーとして追加する文字列を連結し、内部のプロジェクト サブタイプから名の文字列を取得する必要があります。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>ラッパー プロジェクト サブタイプの実装のインスタンスを作成する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>オブジェクト、内部のプロジェクトのサブタイプ、押したままに、プライベート デリゲートでは、ためベースのプロジェクトのプロジェクト構成オブジェクトを直接知っているだけで、ラッパープロジェクト サブタイプの構成オブジェクトが存在します。 外部プロジェクト サブタイプが最初に、直接処理する構成インターフェイスを選択およびの内部のプロジェクト サブタイプの実装に残りの部分を委任し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>します。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>ラッパー プロジェクト サブタイプの実装のインスタンスを作成する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>オブジェクト、内部のプロジェクトのサブタイプ、押したままに、プライベート デリゲートでは、ためベースのプロジェクトのプロジェクト構成オブジェクトを直接知っているだけで、ラッパープロジェクト サブタイプの構成オブジェクトが存在します。 外部プロジェクト サブタイプが最初に、直接処理する構成インターフェイスを選択およびの内部のプロジェクト サブタイプの実装に残りの部分を委任し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>します。  
   
 ## <a name="supporting-interfaces"></a>インターフェイスのサポート  
  基本プロジェクトは、その実装のさまざまな側面を拡張するインターフェイスのプロジェクト サブタイプの場合は、追加のサポートへの呼び出しを代行させます。 これは、プロジェクト構成のオブジェクトとさまざまなプロパティ ブラウザーのオブジェクトの拡張が含まれます。 これらのインターフェイスを呼び出すことによって取得されて`QueryInterface`で`punkOuter`(へのポインター、 `IUnknown`) の最も外側にあるプロジェクトのサブタイプ アグリゲーター。  

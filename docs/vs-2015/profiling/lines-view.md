@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e27194d830e880fd9ae28065e69fa140d9201dc2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ccdb211312a6f53e7f519b7fac0e3ac28aab2429
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54762014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058631"
 ---
 # <a name="lines-view"></a>行ビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "54762014"
   
  ステートメントは、次の項目によって識別されます。  
   
--   function ステートメントを含むソース ファイル。  
+- function ステートメントを含むソース ファイル。  
   
--   ステートメントを含む関数。  
+- ステートメントを含む関数。  
   
--   ステートメントが開始されるソース行。  
+- ステートメントが開始されるソース行。  
   
--   ステートメントが開始されるソース行の文字。  
+- ステートメントが開始されるソース行の文字。  
   
--   ステートメントが終了するソース行。  
+- ステートメントが終了するソース行。  
   
--   ステートメントが終了するソース行の文字。  
+- ステートメントが終了するソース行の文字。  
   
 ## <a name="see-also"></a>関連項目  
  [行ビュー](../profiling/lines-view-sampling-data.md)   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bad52a02cb87f611293283deb3743c6e148e688
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e293a0136e6ae2d8b6a6747201e484fdea43f91e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067236"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>チュートリアル: 実行時にリボン上のコントロールを更新します。
 
@@ -34,13 +34,13 @@ ms.locfileid: "54875915"
 
 このチュートリアルでは、次の作業について説明します。
 
--   新しい Outlook VSTO アドイン プロジェクトを作成します。
+- 新しい Outlook VSTO アドイン プロジェクトを作成します。
 
--   カスタム リボン グループを設計します。
+- カスタム リボン グループを設計します。
 
--   組み込みタブにカスタム グループを追加します。
+- 組み込みタブにカスタム グループを追加します。
 
--   実行時にリボン上のコントロールを更新します。
+- 実行時にリボン上のコントロールを更新します。
 
 > [!NOTE]
 > 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
@@ -49,9 +49,9 @@ ms.locfileid: "54875915"
 
 このチュートリアルを実行するには、次のコンポーネントが必要です。
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Outlook
+- Microsoft Outlook
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>新しい Outlook VSTO アドイン プロジェクトを作成します。
 
@@ -59,13 +59,13 @@ ms.locfileid: "54875915"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>新しい Outlook VSTO アドイン プロジェクトを作成するには
 
-1.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、名前の Outlook VSTO アドイン プロジェクトを作成**Ribbon_Update_At_Runtime**します。
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、名前の Outlook VSTO アドイン プロジェクトを作成**Ribbon_Update_At_Runtime**します。
 
-2.  **[新しいプロジェクト]** ダイアログ ボックスの **[ソリューションのディレクトリを作成]** チェック ボックスをオンにします。
+2. **[新しいプロジェクト]** ダイアログ ボックスの **[ソリューションのディレクトリを作成]** チェック ボックスをオンにします。
 
-3.  プロジェクトを既定のプロジェクト ディレクトリに保存します。
+3. プロジェクトを既定のプロジェクト ディレクトリに保存します。
 
-     詳細については、「[方法 :Visual Studio での Office プロジェクトの作成](../vsto/how-to-create-office-projects-in-visual-studio.md)です。
+     詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
 ## <a name="design-a-custom-ribbon-group"></a>カスタム リボン グループを設計します。
 
@@ -73,25 +73,25 @@ ms.locfileid: "54875915"
 
 ### <a name="to-design-a-custom-group"></a>カスタム グループをデザインするには
 
-1.  **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
+1. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
-2.  **[新しい項目の追加]** ダイアログ ボックスで、 **[リボン (ビジュアル デザイナー)]** をクリックします。
+2. **[新しい項目の追加]** ダイアログ ボックスで、 **[リボン (ビジュアル デザイナー)]** をクリックします。
 
-3.  新しいリボンの名前を変更**CustomerRibbon**、 をクリックし、**追加**します。
+3. 新しいリボンの名前を変更**CustomerRibbon**、 をクリックし、**追加**します。
 
      *CustomerRibbon.cs*または*CustomerRibbon.vb*ファイルがリボン デザイナーで開き、既定のタブとグループが表示されます。
 
-4.  リボン デザイナーをクリックして選択します。
+4. リボン デザイナーをクリックして選択します。
 
-5.  **プロパティ**ウィンドウで、ドロップダウン矢印をクリックして、 **[ribbontype]** プロパティ、およびクリック**Microsoft.Outlook.Mail.Compose**します。
+5. **プロパティ**ウィンドウで、ドロップダウン矢印をクリックして、 **[ribbontype]** プロパティ、およびクリック**Microsoft.Outlook.Mail.Compose**します。
 
      これにより、ユーザーが Outlook で新しいメール メッセージを作成するときに表示されるリボンができます。
 
-6.  リボン デザイナーで、クリックして**Group1**をオンにします。
+6. リボン デザイナーで、クリックして**Group1**をオンにします。
 
-7.  **プロパティ**ウィンドウで、設定**ラベル**に**Customer Purchases**します。
+7. **プロパティ**ウィンドウで、設定**ラベル**に**Customer Purchases**します。
 
-8.  **Office リボン コントロール**のタブ、**ツールボックス**、ドラッグ、 **ComboBox**上に、 **Customer Purchases**グループ。
+8. **Office リボン コントロール**のタブ、**ツールボックス**、ドラッグ、 **ComboBox**上に、 **Customer Purchases**グループ。
 
 9. クリックして**ComboBox1**をオンにします。
 
@@ -111,17 +111,17 @@ ms.locfileid: "54875915"
 
 ### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>組み込みタブにカスタム グループを追加するには
 
-1.  をクリックして、 **TabAddins (ビルトイン)**  タブを選択します。
+1. をクリックして、 **TabAddins (ビルトイン)**  タブを選択します。
 
-2.  **プロパティ**ウィンドウで、展開、 **ControlId**プロパティ、および設定して**OfficeId**に**TabNewMailMessage**します。
+2. **プロパティ**ウィンドウで、展開、 **ControlId**プロパティ、および設定して**OfficeId**に**TabNewMailMessage**します。
 
      これを追加、 **Customer Purchases**グループに、**メッセージ**新しいメール メッセージに表示されるリボンのタブ。
 
-3.  をクリックして、 **Customer Purchases**グループを選択します。
+3. をクリックして、 **Customer Purchases**グループを選択します。
 
-4.  **プロパティ**ウィンドウで、展開、**位置**プロパティ、ドロップダウン矢印をクリックして、 **PositionType**プロパティ、およびクリック**BeforeOfficeId**します。
+4. **プロパティ**ウィンドウで、展開、**位置**プロパティ、ドロップダウン矢印をクリックして、 **PositionType**プロパティ、およびクリック**BeforeOfficeId**します。
 
-5.  設定、 **OfficeId**プロパティを**GroupClipboard**します。
+5. 設定、 **OfficeId**プロパティを**GroupClipboard**します。
 
      これを配置、 **Customer Purchases**する前にグループ化、**クリップボード**のグループ、**メッセージ**タブ。
 
@@ -131,31 +131,31 @@ ms.locfileid: "54875915"
 
 ### <a name="to-create-the-data-source"></a>データ ソースを作成するには
 
-1.  **[データ]** メニューの **[新しいデータ ソースの追加]** をクリックします。
+1. **[データ]** メニューの **[新しいデータ ソースの追加]** をクリックします。
 
      起動、**データ ソース構成ウィザード**します。
 
-2.  選択**データベース**、 をクリックし、**次**。
+2. 選択**データベース**、 をクリックし、**次**。
 
-3.  選択**データセット**、 をクリックし、**次**。
+3. 選択**データセット**、 をクリックし、**次**。
 
-4.  Northwind サンプルの Microsoft SQL Server Compact 4.0 データベースへのデータ接続を選択するかを使用して新しい接続を追加、**新しい接続**ボタンをクリックします。
+4. Northwind サンプルの Microsoft SQL Server Compact 4.0 データベースへのデータ接続を選択するかを使用して新しい接続を追加、**新しい接続**ボタンをクリックします。
 
-5.  接続を選択または作成後にをクリックして**次**します。
+5. 接続を選択または作成後にをクリックして**次**します。
 
-6.  をクリックして**次**接続文字列に保存します。
+6. をクリックして**次**接続文字列に保存します。
 
-7.  **データベース オブジェクトの選択** ページで、展開**テーブル**します。
+7. **データベース オブジェクトの選択** ページで、展開**テーブル**します。
 
-8.  次の各テーブルの横にあるチェック ボックスをオンにします。
+8. 次の各テーブルの横にあるチェック ボックスをオンにします。
 
-    1.  **顧客**
+    1. **顧客**
 
-    2.  **注文の詳細**
+    2. **注文の詳細**
 
-    3.  **注文**
+    3. **注文**
 
-    4.  **製品**
+    4. **製品**
 
 9. **[完了]** をクリックします。
 
@@ -163,11 +163,11 @@ ms.locfileid: "54875915"
 
 リボン オブジェクト モデルを使用して、以下のタスクを実行します。
 
--   顧客名を追加、**顧客**コンボ ボックス。
+- 顧客名を追加、**顧客**コンボ ボックス。
 
--   メニューおよびボタン コントロールを追加、 **Products Purchased**販売の販売注文および製品を表すメニュー。
+- メニューおよびボタン コントロールを追加、 **Products Purchased**販売の販売注文および製品を表すメニュー。
 
--   件名、および本文を設定からデータを使用して新しいメール メッセージのフィールド、**顧客**コンボ ボックスと**Products Purchased**メニュー。
+- 件名、および本文を設定からデータを使用して新しいメール メッセージのフィールド、**顧客**コンボ ボックスと**Products Purchased**メニュー。
 
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>リボン オブジェクト モデルを使用してカスタム グループのコントロールを更新するには
 
@@ -257,31 +257,31 @@ ms.locfileid: "54875915"
 
 ### <a name="to-test-the-controls-in-the-custom-group"></a>カスタム グループのコントロールをテストするには
 
-1.  キーを押して**F5**プロジェクトを実行します。
+1. キーを押して**F5**プロジェクトを実行します。
 
      Outlook が起動します。
 
-2.  Outlook では、上、**ファイル**メニューで、**新規**、 をクリックし、**メール メッセージ**。
+2. Outlook では、上、**ファイル**メニューで、**新規**、 をクリックし、**メール メッセージ**。
 
      次の操作が行われます。
 
-    -   新しいメール メッセージのインスペクター ウィンドウが表示されます。
+    - 新しいメール メッセージのインスペクター ウィンドウが表示されます。
 
-    -   **メッセージ**、リボンのタブ、 **Customer Purchases**する前にグループが表示されます、**クリップボード**グループ。
+    - **メッセージ**、リボンのタブ、 **Customer Purchases**する前にグループが表示されます、**クリップボード**グループ。
 
-    -   **顧客**グループ内のコンボ ボックスが Northwind データベース内の顧客の名前で更新されます。
+    - **顧客**グループ内のコンボ ボックスが Northwind データベース内の顧客の名前で更新されます。
 
-3.  **メッセージ**リボンのタブで、 **Customer Purchases**グループから顧客を選択して、**顧客**コンボ ボックス。
+3. **メッセージ**リボンのタブで、 **Customer Purchases**グループから顧客を選択して、**顧客**コンボ ボックス。
 
      次の操作が行われます。
 
-    -   **Products Purchased**メニューが更新され、選択した顧客の各販売注文を表示します。
+    - **Products Purchased**メニューが更新され、選択した顧客の各販売注文を表示します。
 
-    -   個々の販売注文サブメニューが、その注文で購入された商品を示すように更新されます。
+    - 個々の販売注文サブメニューが、その注文で購入された商品を示すように更新されます。
 
-    -   選択された顧客の電子メール アドレスに追加されます、**に**テキスト メッセージ、および件名とメール メッセージの本文の行が挿入されます。
+    - 選択された顧客の電子メール アドレスに追加されます、**に**テキスト メッセージ、および件名とメール メッセージの本文の行が挿入されます。
 
-4.  をクリックして、 **Products Purchases** ] メニューの [任意の販売注文をポイントし、販売注文から製品を順にクリックします。
+4. をクリックして、 **Products Purchases** ] メニューの [任意の販売注文をポイントし、販売注文から製品を順にクリックします。
 
      製品の名前がメール メッセージの本文に追加されます。
 
@@ -289,11 +289,11 @@ ms.locfileid: "54875915"
 
 Office UI をカスタマイズする方法の詳細については、次のトピックで説明します。
 
--   ドキュメント レベルのカスタマイズにコンテキスト ベースの UI を追加する。 詳細については、[操作ウィンドウの概要](../vsto/actions-pane-overview.md)を参照してください。
+- ドキュメント レベルのカスタマイズにコンテキスト ベースの UI を追加する。 詳細については、次を参照してください。[操作ウィンドウの概要](../vsto/actions-pane-overview.md)します。
 
--   標準またはカスタムの Microsoft Office Outlook フォームを拡張する。 詳細については、「[チュートリアル:Outlook フォーム領域をデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)します。
+- 標準またはカスタムの Microsoft Office Outlook フォームを拡張する。 詳細については、「[チュートリアル:Outlook フォーム領域をデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)します。
 
--   Outlook にカスタム作業ウィンドウを追加する。 詳細については、[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)を参照してください。
+- Outlook にカスタム作業ウィンドウを追加する。 詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
 
 ## <a name="see-also"></a>関連項目
 

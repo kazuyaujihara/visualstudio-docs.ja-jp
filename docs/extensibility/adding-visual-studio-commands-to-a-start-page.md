@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7533d2217682b7be2b48c7aa3a5943c270de5a1a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8461fdd3fd0aaedbbdd770a4e2762c4912c3ce0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040160"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>スタート ページを Visual Studio のコマンドを追加します。
 
@@ -52,7 +52,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 > [!NOTE]
 >  `x:` XAML スキーマを指すのエイリアスがすべてのコマンドの先頭に必要です。
 
- 値を設定することができます、`Command`プロパティからアクセスできる任意のコマンドを**コマンド**ウィンドウ。 使用可能なコマンドの一覧は、[Visual Studio コマンドのエイリアス](../ide/reference/visual-studio-command-aliases.md)を参照してください。
+ 値を設定することができます、`Command`プロパティからアクセスできる任意のコマンドを**コマンド**ウィンドウ。 使用可能なコマンドの一覧は、次を参照してください。 [Visual Studio コマンドのエイリアス](../ide/reference/visual-studio-command-aliases.md)します。
 
  追加するコマンドには、追加のパラメーターが必要とする場合の値に追加できます、`CommandParameter`プロパティ。 次の例に示すように、スペースを使用して、コマンドから別のパラメーター。
 
@@ -73,15 +73,15 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 
 ### <a name="to-call-a-command-from-an-assembly"></a>アセンブリからコマンドを呼び出す
 
-1.  ソリューションでは、アセンブリへの参照を追加します。
+1. ソリューションでは、アセンブリへの参照を追加します。
 
-2.  上部にある、 *StartPage.xaml*ファイルをアセンブリの名前空間ディレクティブを追加する次の例に示すようにします。
+2. 上部にある、 *StartPage.xaml*ファイルをアセンブリの名前空間ディレクティブを追加する次の例に示すようにします。
 
     ```xml
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3.  設定してコマンドを呼び出す、`Command`次の例に示すように、XAML オブジェクトのプロパティ。
+3. 設定してコマンドを呼び出す、`Command`次の例に示すように、XAML オブジェクトのプロパティ。
 
      Xaml
 

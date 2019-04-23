@@ -11,21 +11,21 @@ ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 677047dbe66577548b10fc2b5c6a7eaeedbfaa67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 097d666a839f67e657610b34641ed29da91797be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964174"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085858"
 ---
 # <a name="private-galleries"></a>Private Galleries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コントロール、テンプレート、および投稿することで開発したツールを共有することができます、*プライベート ギャラリー*次のように、組織のイントラネット上。  
   
--   イントラネット上で適切に構成されている中央の場所 (リポジトリ) にフィード Atom (RSS) を作成します。 詳細については、「[方法 :Atom を作成するプライベート ギャラリーのフィード](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)します。  
+- イントラネット上で適切に構成されている中央の場所 (リポジトリ) にフィード Atom (RSS) を作成します。 詳細については、「[方法 :Atom を作成するプライベート ギャラリーのフィード](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)します。  
   
--   プライベート ギャラリーを記述する .pkgdef ファイルを配布します。 プライベート ギャラリーを同時に多くのコンピューターに接続する管理者のためには、この構成をお勧めします。  
+- プライベート ギャラリーを記述する .pkgdef ファイルを配布します。 プライベート ギャラリーを同時に多くのコンピューターに接続する管理者のためには、この構成をお勧めします。  
   
 ## <a name="adding-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>拡張機能と Visual Studio での更新プログラムへのプライベート ギャラリーの追加  
  プライベート ギャラリーが利用できる場合を追加**拡張機能と更新**Visual Studio でします。  
@@ -34,19 +34,19 @@ ms.locfileid: "58964174"
   
 #### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>拡張機能と更新プログラムにプライベート ギャラリーを追加するには  
   
-1.  メニュー バーの **[ツール]**、 **[オプション]** の順にクリックします。  
+1. メニュー バーの **[ツール]**、 **[オプション]** の順にクリックします。  
   
-2.  **環境**ノードの **拡張機能と更新**します。  
+2. **環境**ノードの **拡張機能と更新**します。  
   
-3.  **[追加]** ボタンをクリックします。  
+3. **[追加]** ボタンをクリックします。  
   
-4.  **名前**フィールドに、たとえば、プライベート ギャラリーの名前を入力`My Gallery`します。  
+4. **名前**フィールドに、たとえば、プライベート ギャラリーの名前を入力`My Gallery`します。  
   
-5.  **URL**フィールドに、Atom フィードまたはプライベート ギャラリーをホストしている SharePoint サイトの URL を入力します。  
+5. **URL**フィールドに、Atom フィードまたはプライベート ギャラリーをホストしている SharePoint サイトの URL を入力します。  
   
-    1.  プライベート ギャラリーに接続するホストが Atom フィードの場合は、このいずれかの URL のようになります: http://www.mywebsite/mygallery/atom.xml します。  この URL は、ファイルまたはネットワーク パスを参照できます。  
+    1. プライベート ギャラリーに接続するホストが Atom フィードの場合は、このいずれかの URL のようになります: http://www.mywebsite/mygallery/atom.xml します。  この URL は、ファイルまたはネットワーク パスを参照できます。  
   
-    2.  ホストが SharePoint サイトの場合は、URL のようになりますこのいずれか:http://mysharepoint/sites/mygallery/forms/AllItems.aspxします。  
+    2. ホストが SharePoint サイトの場合は、URL のようになりますこのいずれか:http://mysharepoint/sites/mygallery/forms/AllItems.aspxします。  
   
 ### <a name="managing-private-galleries"></a>プライベート ギャラリーを管理します。  
  行うことができますをプライベート ギャラリー使用可能な複数のコンピューターに同時に各コンピューター上のシステム レジストリを変更することで。 これを実現するには、新しいレジストリ キーとその値を記述する .pkgdef ファイルを作成します。  このファイルの形式は次のとおりです。  
@@ -72,11 +72,11 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 #### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>検索してプライベート ギャラリーから拡張機能をインストールするには  
   
-1.  メニュー バーで、**[ツール]**、**[拡張機能と更新プログラム]** の順にクリックします。  
+1. メニュー バーで、**[ツール]**、**[拡張機能と更新プログラム]** の順にクリックします。  
   
-2.  左側のウィンドウで次のように選択します。**拡張機能のオンライン**、し、**マイ ギャラリー**します。  
+2. 左側のウィンドウで次のように選択します。**拡張機能のオンライン**、し、**マイ ギャラリー**します。  
   
-3.  右側のウィンドウで、拡張機能を選択し、選択、**ダウンロード**ボタンをクリックします。  
+3. 右側のウィンドウで、拡張機能を選択し、選択、**ダウンロード**ボタンをクリックします。  
   
 ## <a name="updating-extensions-from-a-private-gallery"></a>プライベート ギャラリーから拡張機能の更新  
  プライベート ギャラリーでは、Visual Studio 拡張機能の新しいバージョンがポストされた、インストールされている拡張機能を更新することができます。 次の手順を使用して、という名前のプライベート ギャラリー`My Repository`します。  
@@ -85,11 +85,11 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 #### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>プライベート ギャラリーからインストールされている拡張機能を更新するには  
   
-1.  メニュー バーで、**[ツール]**、**[拡張機能と更新プログラム]** の順にクリックします。  
+1. メニュー バーで、**[ツール]**、**[拡張機能と更新プログラム]** の順にクリックします。  
   
-2.  左側のウィンドウで次のように選択します。**更新**、し、**マイ リポジトリ**します。  
+2. 左側のウィンドウで次のように選択します。**更新**、し、**マイ リポジトリ**します。  
   
-3.  右側のウィンドウで、拡張機能を選択し、選択、 **Update**ボタンをクリックします。  
+3. 右側のウィンドウで、拡張機能を選択し、選択、 **Update**ボタンをクリックします。  
   
 ## <a name="see-also"></a>関連項目  
  [検索と Visual Studio 拡張機能の使用](../ide/finding-and-using-visual-studio-extensions.md)   

@@ -12,12 +12,12 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2392f77ef3b78176dd33defd012b828d7a918b5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e370f48559638e8c68ea5ac8e04eca6960983475
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046087"
 ---
 # <a name="localizing-vsix-packages"></a>VSIX パッケージのローカライズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ VSIX パッケージは、各ターゲット言語 Extension.vsixlangpack ファ
   
 #### <a name="to-set-the-include-in-vsix-property"></a>Vsix のプロパティで、含めるを設定するには  
   
-1.  **ソリューション エクスプ ローラー**Extension.vsixlangpack ファイルを右クリックし、クリックして**プロパティ**します。  
+1. **ソリューション エクスプ ローラー**Extension.vsixlangpack ファイルを右クリックし、クリックして**プロパティ**します。  
   
-2.  プロパティ グリッドで、クリックして**Vsix に含める**、その値に設定し、`true`します。  
+2. プロパティ グリッドで、クリックして**Vsix に含める**、その値に設定し、`true`します。  
   
 ## <a name="example"></a>例  
   

@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6b203fcfbe5de92787ae5d2dcaba1b7d9b9454e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bab7f45824def7a4b5a385381a4789b7adc276d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048620"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint ソリューションをトラブルシューティングします。
-  以下の問題または警告は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーを使用して SharePoint ソリューションをデバッグするときに発生することがあります。 詳細については、[SharePoint 2007 ワークフロー ソリューションのデバッグ](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)を参照してください。
+  以下の問題または警告は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーを使用して SharePoint ソリューションをデバッグするときに発生することがあります。 詳細については、次を参照してください。 [SharePoint 2007 ワークフロー ソリューションのデバッグ](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)します。
 
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>サンド ボックス視覚的 web パーツでトークンの制限
  サンドボックス ソリューションの視覚的 Web パーツは、SharePoint ランタイムでサポートされる $SPUrl などの標準トークンを処理できません。 そのため、URL は解決されず、次の例のように、スクリプト要素でこのトークンを直接参照する場合、視覚的 Web パーツ デザイナーのデザイン ビューでコンテンツをプレビューできません。
@@ -102,7 +102,7 @@ ms.locfileid: "54870624"
  なし。
 
 ### <a name="resolution"></a>解像度
- 値が不適切なため、この問題が発生します、**パス**webtemp サイト定義の構成のプロパティ ファイルなど、 *webtemp_SiteDefinitionProject1.xml*します。 **パス**の下にある、webtemp ファイルのプロパティ、**配置場所**、1033 を適切なロケールに変更[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]します。 たとえば、使用する日本語のロケール値に変更 1041。 詳細については、[Microsoft によるロケール Id 割り当て](http://go.microsoft.com/fwlink/?LinkID=165561)を参照してください。
+ 値が不適切なため、この問題が発生します、**パス**webtemp サイト定義の構成のプロパティ ファイルなど、 *webtemp_SiteDefinitionProject1.xml*します。 **パス**の下にある、webtemp ファイルのプロパティ、**配置場所**、1033 を適切なロケールに変更[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]します。 たとえば、使用する日本語のロケール値に変更 1041。 詳細については、次を参照してください。 [Microsoft によるロケール Id 割り当て](http://go.microsoft.com/fwlink/?LinkID=165561)します。
 
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>ワークフロー プロジェクトがクリーン システムにデプロイした場合、エラーが表示されます。
  この問題は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] のワークフロー プロジェクトをクリーン システムに配置した場合に発生します。 クリーン システムとは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] と SharePoint の新しいインストールが含まれているが、ワークフロー プロジェクトは配置されていないコンピューターです。
@@ -115,9 +115,9 @@ ms.locfileid: "54870624"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>ワークフロー ウィザードを再実行するには
 
-1.  **ソリューション エクスプ ローラー**でワークフロー ノードを選択します。
+1. **ソリューション エクスプ ローラー**でワークフロー ノードを選択します。
 
-2.  **プロパティ**ウィンドウで、省略記号ボタンがある任意のプロパティに対して省略記号 (...) ボタンをクリックします。
+2. **プロパティ**ウィンドウで、省略記号ボタンがある任意のプロパティに対して省略記号 (...) ボタンをクリックします。
 
 ## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>ユーザーは、更新された画像を表示するデバッグ中にブラウザーでアプリケーション ページを更新する必要があります。
  デバッグしている SharePoint ソリューションに、イメージを表示するコントロール ([!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] Image コントロールなど) を含むアプリケーション ページが含まれている場合に、そのイメージに対して行われた変更を表示するには、ブラウザーでページを更新する必要があります。
@@ -127,13 +127,13 @@ ms.locfileid: "54870624"
 
 ### <a name="error-message"></a>エラー メッセージ
 
--   入力されている SharePoint サイトの場所が有効ではありません。
+- 入力されている SharePoint サイトの場所が有効ではありません。
 
 ### <a name="resolution"></a>解像度
 
--   [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]をインストールします。
+- [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]をインストールします。
 
--   SharePoint Web サイトに対する管理者の権限があることを確認します。 詳細については、、[!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)]オンライン記事[割り当てまたは SharePoint サーバーのサービス アプリケーションの管理者を削除](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)を参照してください。
+- SharePoint Web サイトに対する管理者の権限があることを確認します。 詳細については、次を参照してください。、[!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)]オンライン記事[割り当てまたは SharePoint サーバーのサービス アプリケーションの管理者を削除](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)します。
 
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>イベント レシーバー プロジェクトでサイト削除 web イベントは発生しません
  イベント レシーバー プロジェクトを作成し、"サイトが削除されています" などの特定の Web イベントを選択すると、イベントは発生しません。
@@ -156,46 +156,46 @@ ms.locfileid: "54870624"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>イベント レシーバーのフィーチャー スコープを変更するには
 
-1.  **ソリューション エクスプ ローラー**、開く、イベント レシーバーの *.feature*ファイル、**フィーチャー デザイナー**ファイルをダブルクリックするか、そのショートカット メニューを開きし、選択**オープン**します。
+1. **ソリューション エクスプ ローラー**、開く、イベント レシーバーの *.feature*ファイル、**フィーチャー デザイナー**ファイルをダブルクリックするか、そのショートカット メニューを開きし、選択**オープン**します。
 
-2.  横にある矢印を選択**スコープ**を選び、**サイト**で表示される一覧。
+2. 横にある矢印を選択**スコープ**を選び、**サイト**で表示される一覧。
 
 ## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>ビジネス データ接続モデル プロジェクト内の識別子の名前を変更した後、展開エラーが表示されます。
  この問題は、ビジネス データ接続 (BDC) モデルでエンティティの識別名を変更した後、ソリューションを配置しようとすると発生します。
 
 ### <a name="error-messages"></a>エラー メッセージ
 
--   \<*モデル名*> 次の外部コンテンツ タイプ アクティブ化エラーが発生しています.
+- \<*モデル名*> 次の外部コンテンツ タイプ アクティブ化エラーが発生しています.
 
--   名前 IMetadataObject は、'\<*モデル名*>' の値フィールド 'name' が重複しています.
+- 名前 IMetadataObject は、'\<*モデル名*>' の値フィールド 'name' が重複しています.
 
 ### <a name="resolution"></a>解像度
  この問題を解決するには、モデルを手動で削除した後、ソリューションを再び配置します。  モデルを削除するには、次のどちらかのツールを使用します。
 
--   SharePoint 2010 サーバーの全体管理。 詳細については、次を参照してください。 [BDC モデル管理](http://go.microsoft.com/fwlink/?LinkID=181472)、Microsoft TechNet Web サイト。
+- SharePoint 2010 サーバーの全体管理。 詳細については、次を参照してください。 [BDC モデル管理](http://go.microsoft.com/fwlink/?LinkID=181472)、Microsoft TechNet Web サイト。
 
--   Windows PowerShell。 コマンド プロンプトで次のコマンドを入力して、モデルを削除できます。**削除 SPBusinessDataCatalogModel**します。 詳細については、次を参照してください。[全般のコマンドレット (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) 、Microsoft TechNet Web サイト。
+- Windows PowerShell。 コマンド プロンプトで次のコマンドを入力して、モデルを削除できます。**削除 SPBusinessDataCatalogModel**します。 詳細については、次を参照してください。[全般のコマンドレット (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) 、Microsoft TechNet Web サイト。
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>SharePoint で視覚的 web パーツを表示するときにエラーが表示されます。
  この問題が発生したときに、**パス**ユーザー コントロールのプロパティが文字列で始まらない"CONTROLTEMPLATES\\"。
 
 ### <a name="error-messages"></a>エラー メッセージ
 
--   ファイル '/_controltemplates/*\<プロジェクト名 >*/*\<Web パーツの名前 >*/*\<ユーザー コントロール名前 >*.ascx' が存在しません。
+- ファイル '/_controltemplates/*\<プロジェクト名 >*/*\<Web パーツの名前 >*/*\<ユーザー コントロール名前 >*.ascx' が存在しません。
 
--   '/' アプリケーションにサーバー エラーがあります。
+- '/' アプリケーションにサーバー エラーがあります。
 
 ### <a name="resolution"></a>解像度
 
 ##### <a name="to-resolve-this-issue"></a>この問題を解決するには
 
-1.  **ソリューション エクスプ ローラー**のファイル名拡張子は、ユーザー コントロール ファイルを選択 *.ascx*します。
+1. **ソリューション エクスプ ローラー**のファイル名拡張子は、ユーザー コントロール ファイルを選択 *.ascx*します。
 
-2.  メニュー バーで、**ビュー** > **プロパティ ウィンドウ**します。
+2. メニュー バーで、**ビュー** > **プロパティ ウィンドウ**します。
 
-3.  **プロパティ**ウィンドウで、展開、**配置場所**ノード。
+3. **プロパティ**ウィンドウで、展開、**配置場所**ノード。
 
-4.  値を必ず、**パス**プロパティが文字列で始まる"CONTROLTEMPLATES\\"。
+4. 値を必ず、**パス**プロパティが文字列で始まる"CONTROLTEMPLATES\\"。
 
 ## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>タスク フォームのフィールドを含む、インポートした再利用可能なワークフローの実行時にエラーが表示されます。
  この問題は、フィールドを含むタスク フォームが存在するワークフローをインポートした後、ワークフローのインポート元と同じシステム上で新しいワークフローを実行したときに発生します。
@@ -230,26 +230,26 @@ ms.locfileid: "54870624"
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>IIS アプリケーション プールの設定にアクセスするには
 
-1.  IIS マネージャーを開きます。
+1. IIS マネージャーを開きます。
 
-2.  **接続**ウィンドウでは、SharePoint サーバーのノードを展開して、選択し、**アプリケーション プール**ノード。
+2. **接続**ウィンドウでは、SharePoint サーバーのノードを展開して、選択し、**アプリケーション プール**ノード。
 
-3.  **アプリケーション プール**] ページで、SharePoint アプリケーション プール (通常は"SharePoint - 80") を選択し、[、**アクション**ウィンドウで、選択、**詳細設定**リンク。
+3. **アプリケーション プール**] ページで、SharePoint アプリケーション プール (通常は"SharePoint - 80") を選択し、[、**アクション**ウィンドウで、選択、**詳細設定**リンク。
 
-4.  IIS がタイムアウトまでの待機時間を大きくには、値を変更**Ping 最大応答時間 (秒)** 90 秒よりも大きい値にします。
+4. IIS がタイムアウトまでの待機時間を大きくには、値を変更**Ping 最大応答時間 (秒)** 90 秒よりも大きい値にします。
 
-5.  IIS の ping を無効にするには設定**Ping の有効化**に**False**します。
+5. IIS の ping を無効にするには設定**Ping の有効化**に**False**します。
 
 ## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>SharePoint リストの孤立したインスタンスのまま自動取り消し
  この問題は、次の手順に従った場合に発生します。
 
-1.  リスト インスタンスがあるリスト定義を [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] で作成します。
+1. リスト インスタンスがあるリスト定義を [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] で作成します。
 
-2.  選択、 **F5**キーをソリューションを実行します。
+2. 選択、 **F5**キーをソリューションを実行します。
 
-3.  デバッグを停止するか、SharePoint サイトを閉じます。
+3. デバッグを停止するか、SharePoint サイトを閉じます。
 
-4.  SharePoint サイトを再度開き、リスト インスタンスを開きます。
+4. SharePoint サイトを再度開き、リスト インスタンスを開きます。
 
 ### <a name="error-message"></a>エラー メッセージ
  '/' アプリケーションにサーバー エラーがあります。
@@ -275,7 +275,7 @@ ms.locfileid: "54870624"
  Web.config 構成ファイルを読み込むことができませんでした。 ファイルをチェックして、形式が正しくない XML 要素を修正した後、再試行してください。 以下のエラーが発生しました。指定したキーがディクショナリに存在しました。
 
 ### <a name="resolution"></a>解像度
- この問題を解決するには、Visual Studio 内の SharePoint プロジェクトの [サイト URL] プロパティの値が、Web アプリケーションの代替アクセス マッピング用の既定のゾーンに割り当てられた URL と一致することを確認します。 URL でイントラネットなどの他のゾーンを使用すると、エラーは解消されません。 プロジェクトのサイト URL と既定のゾーンの URL は一致している必要があります。 代替アクセス マッピングにアクセスするには、SharePoint 2010 サーバーの全体管理ユーティリティを開き、**アプリケーション管理**リンクし、 **Web アプリケーション**、選択、 **代替アクセス マッピングを構成する**リンク。 詳細については、[Web アプリケーションのゾーンを作成する](http://go.microsoft.com/fwlink/?LinkId=192274)を参照してください。
+ この問題を解決するには、Visual Studio 内の SharePoint プロジェクトの [サイト URL] プロパティの値が、Web アプリケーションの代替アクセス マッピング用の既定のゾーンに割り当てられた URL と一致することを確認します。 URL でイントラネットなどの他のゾーンを使用すると、エラーは解消されません。 プロジェクトのサイト URL と既定のゾーンの URL は一致している必要があります。 代替アクセス マッピングにアクセスするには、SharePoint 2010 サーバーの全体管理ユーティリティを開き、**アプリケーション管理**リンクし、 **Web アプリケーション**、選択、 **代替アクセス マッピングを構成する**リンク。 詳細については、次を参照してください。 [Web アプリケーションのゾーンを作成する](http://go.microsoft.com/fwlink/?LinkId=192274)します。
 
 ## <a name="see-also"></a>関連項目
 

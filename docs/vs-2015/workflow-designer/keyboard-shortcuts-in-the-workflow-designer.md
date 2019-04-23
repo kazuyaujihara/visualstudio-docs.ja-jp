@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41774d09b72430aafc50794cd3d356baa4b565ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978249"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117305"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>ワークフロー デザイナーのキーボード ショートカット
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]のすべてのコア機能に、キーボードでアクセスできます。  
@@ -54,13 +54,13 @@ ms.locfileid: "58978249"
   
 - アクティビティを接続するには、次の操作を実行します。  
   
-  1.  Tab キーで接続元アクティビティに移動して選択します。  
+  1. Tab キーで接続元アクティビティに移動して選択します。  
   
-  2.  必要な回数だけ Ctrl キーを押しながら E キーを押し、X キーを押して、キーボード フォーカスを接続先アクティビティに移動します。  
+  2. 必要な回数だけ Ctrl キーを押しながら E キーを押し、X キーを押して、キーボード フォーカスを接続先アクティビティに移動します。  
   
-  3.  Ctrl キーを押しながら E キーを押し、S キーを押して、接続先アクティビティを選択範囲に追加します。  
+  3. Ctrl キーを押しながら E キーを押し、S キーを押して、接続先アクティビティを選択範囲に追加します。  
   
-  4.  Ctrl キーを押しながら E キーを押し、F キーを押して、接続元アクティビティから接続先アクティビティへのコネクタを追加します。  
+  4. Ctrl キーを押しながら E キーを押し、F キーを押して、接続元アクティビティから接続先アクティビティへのコネクタを追加します。  
   
   キーボードでアクティビティを接続する際は、次のことに注意してください。  
   
@@ -73,18 +73,18 @@ ms.locfileid: "58978249"
 ### <a name="expression-editing"></a>式の編集  
  既定では、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] のテキスト編集用の既定のキーボード ショートカットが、[!INCLUDE[wfd2](../includes/wfd2-md.md)]の式エディター内に適用されます。だたし、次の制限があります。  
   
--   次のコマンドのキーボード ショートカットの再マップは無効です。 既定のキーボード ショートカットは、式の編集時にこれらのコマンドにアクセスするためにのみ使用できます。  
+- 次のコマンドのキーボード ショートカットの再マップは無効です。 既定のキーボード ショートカットは、式の編集時にこれらのコマンドにアクセスするためにのみ使用できます。  
   
-    1.  切り取り  
+    1. 切り取り  
   
-    2.  コピー  
+    2. コピー  
   
-    3.  貼り付け  
+    3. 貼り付け  
   
-    4.  すべて選択  
+    4. すべて選択  
   
-    5.  元に戻す  
+    5. 元に戻す  
   
-    6.  やり直し  
+    6. やり直し  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] で、[!INCLUDE[vs2010](../includes/vs2010-md.md)]内の式の編集コマンドのキーボード ショートカットを再マップするには、[!INCLUDE[wfd2](../includes/wfd2-md.md)] スコープでショートカットを編集します。 テキスト エディター スコープで行った変更は、自動的には[!INCLUDE[wfd2](../includes/wfd2-md.md)]に適用されません。 両方の場所でショートカットを再マップするには、変更を 2 回 (スコープごとに 1 回ずつ) 適用する必要があります。
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] で、[!INCLUDE[vs2010](../includes/vs2010-md.md)]内の式の編集コマンドのキーボード ショートカットを再マップするには、[!INCLUDE[wfd2](../includes/wfd2-md.md)] スコープでショートカットを編集します。 テキスト エディター スコープで行った変更は、自動的には[!INCLUDE[wfd2](../includes/wfd2-md.md)]に適用されません。 両方の場所でショートカットを再マップするには、変更を 2 回 (スコープごとに 1 回ずつ) 適用する必要があります。

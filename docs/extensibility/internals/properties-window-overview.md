@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b47db7802a6e174d8efff054fe9a6454fa6ef73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06844e8723cc118d6cc10c44c5c788e48c206684
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101029"
 ---
 # <a name="properties-window-overview"></a>プロパティ ウィンドウの概要
 **プロパティ**で利用可能な期間の 2 つの主な型で選択したオブジェクトのプロパティを表示するウィンドウが使用される、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) です。 これら 2 つの種類のウィンドウは次のとおりです。
 
--   ソリューション エクスプ ローラー、クラス ビュー、およびオブジェクト ブラウザーなどのツール ウィンドウ
+- ソリューション エクスプ ローラー、クラス ビュー、およびオブジェクト ブラウザーなどのツール ウィンドウ
 
--   このようなエディターや、フォーム デザイナー、XML エディター、HTML エディターとデザイナーを格納しているドキュメント ウィンドウ
+- このようなエディターや、フォーム デザイナー、XML エディター、HTML エディターとデザイナーを格納しているドキュメント ウィンドウ
 
 ## <a name="using-the-properties-window"></a>[プロパティ] ウィンドウを使用します。
  **プロパティ**ウィンドウが 1 つまたは複数選択した項目のプロパティを表示します。 複数の項目を選択すると、選択したすべてのオブジェクトのすべてのプロパティの積集合が表示されます。

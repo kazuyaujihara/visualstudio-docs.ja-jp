@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7c904e74793710dedc96d4a769d4f6c61a15e69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 834651f525ccb292f82d5cf0ab5a7068a1cf7f20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108309"
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>方法: 基本的な 3-D モデルを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54760772"
   
  このドキュメントでは、以下のアクティビティについて説明します。  
   
--   シーンへのオブジェクトの追加  
+- シーンへのオブジェクトの追加  
   
--   面とエッジの選択  
+- 面とエッジの選択  
   
--   選択範囲の変換  
+- 選択範囲の変換  
   
--   **[面を再分割する]** および **[面を浮き出し表示にする]** ツールの使用  
+- **[面を再分割する]** および **[面を浮き出し表示にする]** ツールの使用  
   
--   **[三角形に変換]** コマンドの使用  
+- **[三角形に変換]** コマンドの使用  
   
 ## <a name="creating-a-basic-3-d-model"></a>基本 3-D モデルの作成   
  モデル エディターを使用すると、ゲームやアプリの 3-D モデルやシーンを作成したり変更したりできます。 次の手順では、モデル エディターを使用して、家の簡易 3-D モデルを作成する方法を示します。 簡易モデルは、まだ作成中の最終的なアート アセットの代わりとして、または衝突検出用のメッシュとして使用できます。あるいは、表現するオブジェクトを詳細にレンダリングしてもほとんど役に立たない場合に、詳細度の低いモデルとして使用することもできます。  

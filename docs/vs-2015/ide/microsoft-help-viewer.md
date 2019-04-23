@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104331"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft ヘルプ ビューアー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Microsoft ヘルプ ビューアーを使用して、ローカル コンピュ�
   
  ヘルプ ビューアーでは、以下の操作が可能です。  
   
--   ブックとも呼ばれる、コンテンツのセットを検索してダウンロードします。  
+- ブックとも呼ばれる、コンテンツのセットを検索してダウンロードします。  
   
--   目次を参照および検索して、タイトルによってトピックを検索します。  
+- 目次を参照および検索して、タイトルによってトピックを検索します。  
   
--   インデックスでサブジェクトを調べます。  
+- インデックスでサブジェクトを調べます。  
   
--   フルテキスト検索を使用して情報を検索します。  
+- フルテキスト検索を使用して情報を検索します。  
   
--   トピックを表示、ブックマーク、および印刷します。  
+- トピックを表示、ブックマーク、および印刷します。  
   
 ## <a name="navigating-the-help-viewer"></a>ヘルプ ビューアー間の移動  
  ナビゲーション タブを使用してインストールされているコンテンツの情報を検索し、トピック タブでインストールされているコンテンツを表示し、**[コンテンツの管理]** タブを使用してコンテンツを管理することができます。ツール バーのボタンを使用して追加のタスクを実行し、ウィンドウの右下隅で追加情報を確認することもできます。  

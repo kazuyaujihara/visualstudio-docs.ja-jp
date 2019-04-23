@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0efd71b38d3fcd8ae8241e31e721bd48e857d3bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e200d0918e3d346f71da6ec2184e07e7d8433174
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962698"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069771"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>方法: ClickOnce 配置用の詳細ログ ファイルを指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58962698"
   
 ### <a name="to-specify-verbose-log-files"></a>詳細なログ ファイルを指定するには  
   
-1.  開いている**Regedit.exe**します。  
+1. 開いている**Regedit.exe**します。  
   
-2.  ノードに移動`HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`します。  
+2. ノードに移動`HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`します。  
   
-3.  必要に応じて、という名前の新しい文字列値を作成`LogVerbosityLevel`です。  
+3. 必要に応じて、という名前の新しい文字列値を作成`LogVerbosityLevel`です。  
   
-4.  設定、`LogVerbosityLevel`値を`1`します。  
+4. 設定、`LogVerbosityLevel`値を`1`します。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)

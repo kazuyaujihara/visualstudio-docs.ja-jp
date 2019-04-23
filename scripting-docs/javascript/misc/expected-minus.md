@@ -14,19 +14,19 @@ ms.assetid: a31d161a-4a51-43a9-9d65-d8b765ce3c19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22d60c7029ce64ba8c8a7b130da3bbddce9b7f6b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: e897133b39110f65dfadc091f77855cfef1f6f6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842001"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117279"
 ---
 # <a name="expected--"></a>予想 '-'
 正規表現をリテラルには、作成しようとしましたが、スラッシュ (/) の 1 つ含まれていません。 文字列リテラルが二重引用符内の文字として書き込まれると同様、正規表現リテラルは、スラッシュ (/) 文字のペア内の文字として表現されます。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   正規表現の終わりをマークする終了スラッシュを挿入します。  
+- 正規表現の終わりをマークする終了スラッシュを挿入します。  
   
 ## <a name="see-also"></a>関連項目  
  [Regular Expression オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)   

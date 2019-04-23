@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6845e867a8c5fd0ef2b367dc5f2e3b5760869746
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102719"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>親コンテナーのフォルダーのソリューションを作成します。
 ソース管理プラグイン API バージョン 1.2、ユーザーは、ソリューション内のすべての web プロジェクトの 1 つのルートのソース コントロール変換先を指定できます。 この単一のルートには、スーパー Unified ルート (サー) が呼び出されます。
@@ -35,14 +35,13 @@ ms.locfileid: "56602015"
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE は、ソース管理にソリューションを追加するときに常にほぼサー フォルダーを作成します。 具体的には、これは、次の場合。
 
--   プロジェクトでは、web プロジェクトのファイル共有です。
+- プロジェクトでは、web プロジェクトのファイル共有です。
 
--   別のドライブは、プロジェクトとソリューション ファイルがあります。
+- 別のドライブは、プロジェクトとソリューション ファイルがあります。
 
--   別の共有は、プロジェクトとソリューション ファイルがあります。
+- 別の共有は、プロジェクトとソリューション ファイルがあります。
 
--   プロジェクトは、個別に (ソース管理の対象のソリューション) に追加されました。
-
+- プロジェクトは、個別に (ソース管理の対象のソリューション) に追加されました。
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、サー フォルダーの名前が、拡張子を除いたソリューション名と同じであることをお勧めします。 次の表では、2 つのバージョンで動作をまとめたものです。
 

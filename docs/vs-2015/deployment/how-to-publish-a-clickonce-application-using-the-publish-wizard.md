@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45ca2bd23c6da7d86b65cc05c0b0dee670e2718f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046939"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "58974268"
   
 4. **[ユーザーはアプリケーションをどのようにインストールするのですか?]** ページで、ユーザーがアプリケーションをインストールするためにアクセスする場所を選択します。  
   
-   -   Web サイトからユーザーがインストールするようにする場合は、**[Web サイトから]** をクリックし、前の手順で入力したファイル パスに対応する URL を入力します。 **[次へ]** をクリックします。 (このオプションは通常、発行場所として FTP アドレスを指定する場合に使用します。 FTP からの直接ダウンロードはサポートされていません。 したがって、ここに URL を入力する必要があります。)  
+   - Web サイトからユーザーがインストールするようにする場合は、**[Web サイトから]** をクリックし、前の手順で入力したファイル パスに対応する URL を入力します。 **[次へ]** をクリックします。 (このオプションは通常、発行場所として FTP アドレスを指定する場合に使用します。 FTP からの直接ダウンロードはサポートされていません。 したがって、ここに URL を入力する必要があります。)  
   
-   -   ファイル共有からユーザーが直接アプリケーションをインストールするようにする場合は、**[UNC パスまたはファイル共有から]**、**[次へ]** の順にクリックします。 (これはフォーム c:\deploy\myapp の発行場所または\\\server\myapp)。  
+   - ファイル共有からユーザーが直接アプリケーションをインストールするようにする場合は、**[UNC パスまたはファイル共有から]**、**[次へ]** の順にクリックします。 (これはフォーム c:\deploy\myapp の発行場所または\\\server\myapp)。  
   
-   -   ユーザーがリムーバブル メディアからインストールする場合は、**[CD-ROM または DVD-ROM から]**、**[次へ]** の順にクリックします。  
+   - ユーザーがリムーバブル メディアからインストールする場合は、**[CD-ROM または DVD-ROM から]**、**[次へ]** の順にクリックします。  
   
 5. **[アプリケーションはオフラインでも利用できますか?]** ページで、必要に応じたオプションをクリックします。  
   

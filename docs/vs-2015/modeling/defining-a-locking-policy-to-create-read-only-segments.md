@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062244"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>ロック ポリシーの定義と読み取り専用セグメントの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>ロックを使用します。  
  ロックは、次の例などのスキームを実装するために使用できます。  
   
--   すべての要素および関係のコメントを表すものを除くへの変更を禁止します。 これにより、これを変更することがなく、モデルの注釈を設定できます。  
+- すべての要素および関係のコメントを表すものを除くへの変更を禁止します。 これにより、これを変更することがなく、モデルの注釈を設定できます。  
   
--   既定のパーティションに変更を禁止しますが、ダイアグラムのパーティションの変更を許可します。 ユーザーは、図を並べ替えることができますが、基になるモデルを変更することはできません。  
+- 既定のパーティションに変更を禁止しますが、ダイアグラムのパーティションの変更を許可します。 ユーザーは、図を並べ替えることができますが、基になるモデルを変更することはできません。  
   
--   別のデータベースに登録されているユーザーのグループを除く、ストアへの変更を禁止します。 他のユーザーの図とモデルは読み取り専用になります。  
+- 別のデータベースに登録されているユーザーのグループを除く、ストアへの変更を禁止します。 他のユーザーの図とモデルは読み取り専用になります。  
   
--   ダイアグラムのブール型プロパティが設定されている場合は、モデルへの変更を許可しないようにを true にします。 そのプロパティを変更するメニュー コマンドを提供します。 これにより、ようにしないユーザーが誤って変更することを確認できます。  
+- ダイアグラムのブール型プロパティが設定されている場合は、モデルへの変更を許可しないようにを true にします。 そのプロパティを変更するメニュー コマンドを提供します。 これにより、ようにしないユーザーが誤って変更することを確認できます。  
   
--   加算して、要素の削除、および特定のクラスの間のリレーションシップを許可しないが、プロパティの変更を許可します。 これにより、ユーザーが、固定のフォーム プロパティを入力できます。  
+- 加算して、要素の削除、および特定のクラスの間のリレーションシップを許可しないが、プロパティの変更を許可します。 これにより、ユーザーが、固定のフォーム プロパティを入力できます。  
   
 ## <a name="lock-values"></a>ロックの値  
  ロックは、ストア、パーティション、または個々 のモデル要素を設定できます。 ロックは、`Flags`列挙: を使用してその値を組み合わせることができます '&#124;'。  
@@ -97,9 +97,9 @@ partition.SetLocks(Locks.Delete);
   
  ロック ポリシーを定義するには、する必要があります。  
   
--   <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> を実装するクラスを作成します。  
+- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> を実装するクラスを作成します。  
   
--   このクラスを DSL の DocData を介して利用できるサービスに追加します。  
+- このクラスを DSL の DocData を介して利用できるサービスに追加します。  
   
 ### <a name="to-define-a-locking-policy"></a>ロック ポリシーを定義するには  
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 次の定義があります。  

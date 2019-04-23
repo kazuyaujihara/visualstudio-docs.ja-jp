@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9878fea72c83cd6a466f2743f44d3eddca0bdba7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ce0f09c1749621838729e1e4f64feb3ca8b07628
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117565"
 ---
 # <a name="load-vspackages"></a>Vspackage を読み込む
 Vspackage は、それらの機能が必要な場合にのみ、Visual Studio に読み込まれます。 たとえば、Visual Studio がプロジェクト ファクトリや VSPackage を実装するサービスを使用するときに VSPackage が読み込まれます。 この機能には、パフォーマンスを向上させるために可能な場合に使用される、遅延読み込みが呼び出されます。
@@ -28,7 +28,7 @@ Vspackage は、それらの機能が必要な場合にのみ、Visual Studio �
 
 ### <a name="autoload-a-vspackage-in-a-specific-context"></a>特定のコンテキストで VSPackage を自動読み込み
 
--   追加、 `ProvideAutoLoad` VSPackage 属性に属性します。
+- 追加、 `ProvideAutoLoad` VSPackage 属性に属性します。
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -41,11 +41,11 @@ Vspackage は、それらの機能が必要な場合にのみ、Visual Studio �
 
      列挙型のフィールドを参照してください。 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> UI コンテキストとその GUID 値の一覧についてはします。
 
--   ブレークポイントを設定、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。
+- ブレークポイントを設定、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。
 
--   VSPackage をビルドしてデバッグを開始します。
+- VSPackage をビルドしてデバッグを開始します。
 
--   ソリューションを読み込むか、1 つを作成します。
+- ソリューションを読み込むか、1 つを作成します。
 
      VSPackage では、読み込みをブレークポイントで停止します。
 
@@ -54,7 +54,7 @@ Vspackage は、それらの機能が必要な場合にのみ、Visual Studio �
 
  使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A>をロードするために VSPackage を強制する方法。
 
--   次のコードを挿入、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドの VSPackage を読み込む別の VSPackage を強制します。
+- 次のコードを挿入、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドの VSPackage を読み込む別の VSPackage を強制します。
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;

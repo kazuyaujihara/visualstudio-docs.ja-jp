@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 19191d8812d198b6a72ec8b6bdc8e75ef9d8f4ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974129"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097116"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039:リストは厳密に型指定されています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "58974129"
 ## <a name="cause"></a>原因
  パブリックまたはプロテクト型実装<xref:System.Collections.IList?displayProperty=fullName>は、次の 1 つ以上の厳密に型指定されたメソッドを提供しません。
 
--   IList.Item
+- IList.Item
 
--   IList.Add
+- IList.Add
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList.Insert
+- IList.Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>規則の説明
  この規則で<xref:System.Collections.IList>を実装する厳密に型指定されたメンバー ユーザーは引数をキャストする必要がないように、<xref:System.Object?displayProperty=fullName>インターフェイスによって提供される機能を使用するときに入力します。 <xref:System.Collections.IList>インターフェイス インデックスによってアクセスできるオブジェクトのコレクションによって実装されます。 このルールは、実装する型前提としています。<xref:System.Collections.IList>はこれよりも厳密な型のインスタンスのコレクションを管理する<xref:System.Object>します。

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bf16f79401f4b8df3bafff0f92963510110dff1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622762"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061035"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>ソース管理プラグイン向けのテスト ガイド
 このセクションでは、ソース管理プラグインをテストするためのガイダンスを提供します。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 同様の問題となる可能性がより複雑な領域の一部、最も一般的なテスト領域の広範な概要が表示されます。 この概要はテスト_ケースを網羅するものではありません。
@@ -51,55 +51,55 @@ ms.locfileid: "56622762"
 
 ## <a name="test-areas-covered-in-this-section"></a>このセクションで説明するテスト区分
 
--   [テスト領域 1:ソース管理から開く/を追加します。](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [テスト領域 1:ソース管理から開く/を追加します。](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-    -   ケース 1 a:ソリューションをソース管理に追加します。
+    - ケース 1 a:ソリューションをソース管理に追加します。
 
-    -   ケース 1 b:ソース管理からソリューションを開く
+    - ケース 1 b:ソース管理からソリューションを開く
 
-    -   ケース 1 c:ソース管理からソリューションを追加します。
+    - ケース 1 c:ソース管理からソリューションを追加します。
 
--   [テスト領域 2:ソース管理から取得します。](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [テスト領域 2:ソース管理から取得します。](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
--   [テスト領域 3:チェック アウト/チェック アウトの取り消し](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [テスト領域 3:チェック アウト/チェック アウトの取り消し](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
-    -   ケース 3:チェック アウト/チェック アウトの取り消し
+    - ケース 3:チェック アウト/チェック アウトの取り消し
 
-    -   ケース 3 a:チェックアウト
+    - ケース 3 a:チェックアウト
 
-    -   ケース 3 b:切断されたチェック アウト
+    - ケース 3 b:切断されたチェック アウト
 
-    -   ケース 3 c:保存 (QEQS) クエリの編集/クエリ
+    - ケース 3 c:保存 (QEQS) クエリの編集/クエリ
 
-    -   3d の場合します。サイレント チェック アウト
+    - 3d の場合します。サイレント チェック アウト
 
-    -   ケース 3 e:チェック アウトを取り消し
+    - ケース 3 e:チェック アウトを取り消し
 
--   [テスト領域 4:チェックイン](../../extensibility/internals/test-area-4-check-in.md)
+- [テスト領域 4:チェックイン](../../extensibility/internals/test-area-4-check-in.md)
 
-    -   ケース 4 a:変更された項目
+    - ケース 4 a:変更された項目
 
-    -   ケース 4 b:ファイルを追加します。
+    - ケース 4 b:ファイルを追加します。
 
-    -   ケース 4 c:プロジェクトの追加
+    - ケース 4 c:プロジェクトの追加
 
--   [テスト領域 5:ソース管理の変更](../../extensibility/internals/test-area-5-change-source-control.md)
+- [テスト領域 5:ソース管理の変更](../../extensibility/internals/test-area-5-change-source-control.md)
 
-    -   ケース 5 a:バインド
+    - ケース 5 a:バインド
 
-    -   ケース 5 b:バインド解除します。
+    - ケース 5 b:[バインドの解除]
 
-    -   ケース 5 c:再バインドします。
+    - ケース 5 c:再バインドします。
 
--   [テスト領域 6:Delete](../../extensibility/internals/test-area-6-delete.md)
+- [テスト領域 6:Delete](../../extensibility/internals/test-area-6-delete.md)
 
--   [テスト領域 7:共有](../../extensibility/internals/test-area-7-share.md)
+- [テスト領域 7:共有](../../extensibility/internals/test-area-7-share.md)
 
--   [テスト領域 8:プラグインの切り替え](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [テスト領域 8:プラグインの切り替え](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-    -   大文字と小文字の 8 a:自動の変更
+    - 大文字と小文字の 8 a:自動の変更
 
-    -   大文字と小文字の 8 b:ソリューションに基づく変更
+    - 大文字と小文字の 8 b:ソリューションに基づく変更
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン](../../extensibility/source-control-plug-ins.md)

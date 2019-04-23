@@ -9,14 +9,14 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 13245f28ac758685c95acdc11bbe92489724f5e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d98481630ee3f02a96ec0670404c3f9d77e5d5d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048828"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>方法: コマンド ラインからプロファイラーを使用してスタンドアロンのネイティブ コンポーネントをインストルメントし、タイミング データを収集する
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>方法: スタンドアロンのネイティブ コンポーネントをインストルメントし、タイミング、コマンドラインから Profiler でのデータを収集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、C++ .exe や .dll ファイルなどのネイティブ コンポーネントをインストルメントし、詳細なタイミング データを収集する方法について説明します。  
@@ -56,7 +56,6 @@ ms.locfileid: "54757109"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 ミリ秒です。                                                                                |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                  プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.etl) ファイルに収集されます。                                                                                   |
 
-
 4. 一般的な方法で対象のアプリケーションを起動します。  
 
 ## <a name="controlling-data-collection"></a>データ コレクションの制御  
@@ -64,7 +63,7 @@ ms.locfileid: "54757109"
 
 #### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには  
 
--   次に示すオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
+- 次に示すオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
 
     |オプション|説明|  
     |------------|-----------------|  
@@ -77,9 +76,9 @@ ms.locfileid: "54757109"
 
 #### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには  
 
-1.  対象アプリケーションを終了します。  
+1. 対象アプリケーションを終了します。  
 
-2.  プロファイラーをシャットダウンします。 型:  
+2. プロファイラーをシャットダウンします。 型:  
 
      **VSPerfCmd /shutdown**  
 

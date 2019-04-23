@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 725f2a7882b0825795ac75906bdfd6ef1cfef669
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046016"
 ---
 # <a name="how-to-create-a-package-manifest"></a>方法: パッケージ マニフェストを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "58977965"
   
 #### <a name="to-create-the-package-manifest"></a>パッケージ マニフェストを作成するには  
   
-1.  ブートス トラップ パッケージ用のディレクトリを作成します。 この例では、C:\package を使用します。  
+1. ブートス トラップ パッケージ用のディレクトリを作成します。 この例では、C:\package を使用します。  
   
-2.  英語など、ロケールの名前を持つサブディレクトリを作成します。  
+2. 英語など、ロケールの名前を持つサブディレクトリを作成します。  
   
-3.  Visual Studio では、という XML ファイルを作成`package.xml`、C:\package\en フォルダーに保存します。  
+3. Visual Studio では、という XML ファイルを作成`package.xml`、C:\package\en フォルダーに保存します。  
   
-4.  このローカライズされたパッケージ マニフェストと省略可能なライセンス契約のカルチャにブートス トラップ パッケージの名前を一覧表示する XML を追加します。 次の XML は、変数を使用して`DisplayName`と`Culture`、以降の要素で定義されています。  
+4. このローカライズされたパッケージ マニフェストと省略可能なライセンス契約のカルチャにブートス トラップ パッケージの名前を一覧表示する XML を追加します。 次の XML は、変数を使用して`DisplayName`と`Culture`、以降の要素で定義されています。  
   
     ```  
     <Package  
@@ -53,7 +53,7 @@ ms.locfileid: "58977965"
         LicenseAgreement="eula.txt">  
     ```  
   
-5.  ロケール固有のディレクトリ内にあるすべてのファイルを一覧表示の XML を追加します。 次の XML に適用できる eula.txt がという名前のファイルを使用して、 **en**ロケール。  
+5. ロケール固有のディレクトリ内にあるすべてのファイルを一覧表示の XML を追加します。 次の XML に適用できる eula.txt がという名前のファイルを使用して、 **en**ロケール。  
   
     ```  
     <PackageFiles>  
@@ -61,7 +61,7 @@ ms.locfileid: "58977965"
     </PackageFiles>  
     ```  
   
-6.  ブートス トラップ パッケージのローカライズ可能な文字列を定義する XML を追加します。 次の XML は、英語ロケールのエラー文字列を追加します。  
+6. ブートス トラップ パッケージのローカライズ可能な文字列を定義する XML を追加します。 次の XML は、英語ロケールのエラー文字列を追加します。  
   
     ```  
       <Strings>  
@@ -74,7 +74,7 @@ ms.locfileid: "58977965"
     </Strings>  
     ```  
   
-7.  C:\package フォルダーを Visual Studio ブートス トラップ ディレクトリにコピーします。 Visual Studio 2010 では、これは、\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages ディレクトリです。  
+7. C:\package フォルダーを Visual Studio ブートス トラップ ディレクトリにコピーします。 Visual Studio 2010 では、これは、\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages ディレクトリです。  
   
 ## <a name="example"></a>例  
  パッケージ マニフェストには、エラー メッセージ、ソフトウェア ライセンス条項、および言語パックなど、ロケールに固有の情報が含まれています。  

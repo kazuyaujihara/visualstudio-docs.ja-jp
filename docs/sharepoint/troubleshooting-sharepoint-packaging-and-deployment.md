@@ -23,21 +23,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087600"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint のパッケージ化とデプロイをトラブルシューティングします。
   このトピックでは、SharePoint ソリューションをパッケージ化および配置するときに発生する可能性があるさまざまな問題について説明します。
 
 ## <a name="enable-enhanced-debugging"></a>デバッグ機能の強化を有効にします。
- Visual Studio、SharePoint、およびその他のレイヤーの間で問題を診断する場合は、EnableDiagnostics レジストリ キーを使用してスタック トレースを表示することができます。 詳細については、[デバッグの SharePoint ソリューション](../sharepoint/debugging-sharepoint-solutions.md)を参照してください。
+ Visual Studio、SharePoint、およびその他のレイヤーの間で問題を診断する場合は、EnableDiagnostics レジストリ キーを使用してスタック トレースを表示することができます。 詳細については、次を参照してください。[デバッグの SharePoint ソリューション](../sharepoint/debugging-sharepoint-solutions.md)します。
 
 ## <a name="add-project-output-to-the-solution-package"></a>プロジェクト出力ソリューション パッケージを追加します。
- パッケージ デザイナーを使用してパッケージにプロジェクト出力を追加することができます。 ただし、プロジェクト出力を追加する際には、そのプロジェクトのプラットフォームが SharePoint ソリューションのプラットフォームと一致していることを確認する必要があります。 使用することをお勧め、 **Any CPU**を SharePoint サーバーに展開するアセンブリのプラットフォーム ターゲット。 詳細については、[コンパイル Page, Project Designer &#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md)と[コンパイラ設定 ダイアログ ボックスの高度な&#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)を参照してください。
+ パッケージ デザイナーを使用してパッケージにプロジェクト出力を追加することができます。 ただし、プロジェクト出力を追加する際には、そのプロジェクトのプラットフォームが SharePoint ソリューションのプラットフォームと一致していることを確認する必要があります。 使用することをお勧め、 **Any CPU**を SharePoint サーバーに展開するアセンブリのプラットフォーム ターゲット。 詳細については、次を参照してください。[コンパイル Page, Project Designer &#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md)と[コンパイラ設定 ダイアログ ボックスの高度な&#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)します。
 
 ## <a name="validation-warnings-and-errors"></a>検証の警告とエラー
  Visual Studio の SharePoint 開発ツールでは、ソリューション パッケージが正しい形式になっていることを確認するために検証ステップが実行されます。 特定のフィーチャーやパッケージのためのカスタム検証ステップを作成することもできます。 詳細については、「[方法 :SharePoint ソリューションの検証規則を使用したカスタムのフィーチャーとパッケージの作成](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)です。
@@ -73,9 +73,9 @@ ms.locfileid: "54868041"
 ### <a name="resolution"></a>解像度
  この問題を回避するには、次の手順を実行します。
 
-1.  Microsoft サポート記事で説明したように、kb967535 をインストール[修正します。IIS 7.0 の ASP.NET では Windows Vista および Windows Server 2008 の 2 つの問題を修正する修正プログラムがある](http://go.microsoft.com/fwlink/?LinkId=179055)します。
+1. Microsoft サポート記事で説明したように、kb967535 をインストール[修正します。IIS 7.0 の ASP.NET では Windows Vista および Windows Server 2008 の 2 つの問題を修正する修正プログラムがある](http://go.microsoft.com/fwlink/?LinkId=179055)します。
 
-2.  次の行を Web.config ファイルに追加します。
+2. 次の行を Web.config ファイルに追加します。
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">

@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f090fef8fd4a146cf036ebbb5f8d06b120afb3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6d5bb4be34a6a476e975c240f8a9d99114b870f0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962611"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092917"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>方法: 特定のロケールを持つプロジェクトを発行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "58962611"
   
 ### <a name="to-create-the-publishing-macro"></a>発行マクロを作成するには  
   
-1.  マクロ エクスプローラーを開くには、**[ツール]** メニューの **[マクロ]** をポイントし、**[マクロ エクスプローラー]** をクリックします。  
+1. マクロ エクスプローラーを開くには、**[ツール]** メニューの **[マクロ]** をポイントし、**[マクロ エクスプローラー]** をクリックします。  
   
-2.  新しいマクロ モジュールを作成します。 マクロ エクスプローラーで **[MyMacros]** を選択します。 **[ツール]** メニューの **[マクロ]** をポイントし、**[新しいマクロ モジュール]** をクリックします。 モジュールに "**PublishSpecificCulture**" という名前を付けます。  
+2. 新しいマクロ モジュールを作成します。 マクロ エクスプローラーで **[MyMacros]** を選択します。 **[ツール]** メニューの **[マクロ]** をポイントし、**[新しいマクロ モジュール]** をクリックします。 モジュールに "**PublishSpecificCulture**" という名前を付けます。  
   
-3.  マクロ エクスプローラーで **[MyMacros]** ノードを展開し、**[PublishAllProjects]** モジュールをダブルクリックして開きます。(または、**[ツール]** メニューの **[マクロ]** をポイントし、**[マクロ IDE]** をクリックします。)  
+3. マクロ エクスプローラーで **[MyMacros]** ノードを展開し、**[PublishAllProjects]** モジュールをダブルクリックして開きます。(または、**[ツール]** メニューの **[マクロ]** をポイントし、**[マクロ IDE]** をクリックします。)  
   
-4.  マクロ IDE で、モジュールの `Import` ステートメントに続けて次のコードを追加します。  
+4. マクロ IDE で、モジュールの `Import` ステートメントに続けて次のコードを追加します。  
   
     ```vb  
     Module PublishSpecificCulture  
@@ -138,31 +138,31 @@ ms.locfileid: "58962611"
     End Module  
     ```  
   
-5.  マクロ IDE を閉じます。 フォーカスが Visual Studio に戻ります。  
+5. マクロ IDE を閉じます。 フォーカスが Visual Studio に戻ります。  
   
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>特定のロケールのプロジェクトを発行するには  
   
-1.  Visual Basic Windows アプリケーション プロジェクトを作成するには、**[ファイル]** メニューの **[新規作成]** をポイントし、**[プロジェクト]** をクリックします。  
+1. Visual Basic Windows アプリケーション プロジェクトを作成するには、**[ファイル]** メニューの **[新規作成]** をポイントし、**[プロジェクト]** をクリックします。  
   
-2.  **[新しいプロジェクト]** ダイアログ ボックスの **[Visual Basic]** ノードで、**[Windows アプリケーション]** を選択します。 プロジェクトに "**PublishLocales**" という名前を付けます。  
+2. **[新しいプロジェクト]** ダイアログ ボックスの **[Visual Basic]** ノードで、**[Windows アプリケーション]** を選択します。 プロジェクトに "**PublishLocales**" という名前を付けます。  
   
-3.  Form1 をクリックします。 **[プロパティ]** ウィンドウの **[デザイン]** で、**[Language]** プロパティを **[(既定値)]** から **[英語]** に変更します。 フォームの **[Text]** プロパティを **MyForm** に変更します。  
+3. Form1 をクリックします。 **[プロパティ]** ウィンドウの **[デザイン]** で、**[Language]** プロパティを **[(既定値)]** から **[英語]** に変更します。 フォームの **[Text]** プロパティを **MyForm** に変更します。  
   
      ローカライズされたリソース DLL は必要になるまで作成されません。 たとえば、新しいロケールを指定した後で、フォームやそのコントロールのテキストを変更した場合などに作成されます。  
   
-4.  Visual Studio IDE を使用して、PublishLocales を発行します。  
+4. Visual Studio IDE を使用して、PublishLocales を発行します。  
   
      **ソリューション エクスプ ローラー**PublishLocales を選択します。 **[プロジェクト]** メニューの **[プロパティ]** を選択します。 プロジェクト デザイナーで、**発行**の発行場所の指定 ページで、 **http://localhost/PublishLocales**、順にクリックします**今すぐ発行**します。  
   
      発行 Web ページが表示されたら、そのページを終了します。 (この手順では、プロジェクトを発行するだけで、インストールする必要はありません。)  
   
-5.  [Visual Studio コマンド プロンプト] ウィンドウでマクロを呼び出し、PublishLocales をもう一度発行します。 コマンド プロンプト ウィンドウを表示する、**ビュー**メニューで、**その他の Windows**  をクリックし、**コマンド ウィンドウ**、または CTRL + ALT + A キーを押します。 コマンド プロンプト ウィンドウで次のように入力します。`macros`がオートコンプリートによって使用可能なマクロの一覧が表示されます。 次のマクロを選択し、Enter キーを押します。  
+5. [Visual Studio コマンド プロンプト] ウィンドウでマクロを呼び出し、PublishLocales をもう一度発行します。 コマンド プロンプト ウィンドウを表示する、**ビュー**メニューで、**その他の Windows**  をクリックし、**コマンド ウィンドウ**、または CTRL + ALT + A キーを押します。 コマンド プロンプト ウィンドウで次のように入力します。`macros`がオートコンプリートによって使用可能なマクロの一覧が表示されます。 次のマクロを選択し、Enter キーを押します。  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6.  発行プロセスが正常に完了すると、"PublishLocales\PublishLocales.vbproj の発行は成功しました。 発行の言語は 'en' です。" というメッセージが表示されます。メッセージ ボックスの **[OK]** をクリックします。 発行 Web ページが表示されたら、**[インストール]** をクリックします。  
+6. 発行プロセスが正常に完了すると、"PublishLocales\PublishLocales.vbproj の発行は成功しました。 発行の言語は 'en' です。" というメッセージが表示されます。メッセージ ボックスの **[OK]** をクリックします。 発行 Web ページが表示されたら、**[インストール]** をクリックします。  
   
-7.  C:\Inetpub\wwwroot\PublishLocales\en にアクセスします。 ローカライズされたリソース DLL のほかに、マニフェスト、setup.exe、発行 Web ページ ファイルなどのインストールされたファイルがあるはずです。 (既定では、ClickOnce は EXE ファイルおよび DLL ファイルに .deploy という拡張子を追加します。この拡張子は展開後に削除できます。)  
+7. C:\Inetpub\wwwroot\PublishLocales\en にアクセスします。 ローカライズされたリソース DLL のほかに、マニフェスト、setup.exe、発行 Web ページ ファイルなどのインストールされたファイルがあるはずです。 (既定では、ClickOnce は EXE ファイルおよび DLL ファイルに .deploy という拡張子を追加します。この拡張子は展開後に削除できます。)  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   

@@ -12,12 +12,12 @@ ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 10e5b03f2a9c275de3ac3d8259582aee771a20f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7344bc5b830de07a72a86537af6839ab0993518a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975815"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044461"
 ---
 # <a name="getting-local-values"></a>ローカル値の取得
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "58975815"
   
  この実装の`IDebugProperty2::GetPropertyInfo`は、次のタスクを実行します。  
   
-1.  ローカルの名前、プロパティ、およびから属性を取得、 [FIELD_INFO](../../extensibility/debugger/reference/field-info.md)構造体、クラスがインスタンス化され、初期化されるときに入力します。  
+1. ローカルの名前、プロパティ、およびから属性を取得、 [FIELD_INFO](../../extensibility/debugger/reference/field-info.md)構造体、クラスがインスタンス化され、初期化されるときに入力します。  
   
-2.  ローカルの型を取得、 [IDebugField](../../extensibility/debugger/reference/idebugfield.md)オブジェクト。  
+2. ローカルの型を取得、 [IDebugField](../../extensibility/debugger/reference/idebugfield.md)オブジェクト。  
   
-3.  ローカルの値を取得、`IDebugField`オブジェクト。 このフィールドは、ローカルを使用するメモリ位置にバインドされて、 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)オブジェクトと、値が、その結果から取得した[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。  
+3. ローカルの値を取得、`IDebugField`オブジェクト。 このフィールドは、ローカルを使用するメモリ位置にバインドされて、 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)オブジェクトと、値が、その結果から取得した[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。  
   
-4.  要求されたすべてのプロパティを返します、 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)構造体。  
+4. 要求されたすべてのプロパティを返します、 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)構造体。  
   
 ## <a name="managed-code"></a>マネージド コード  
  この例の実装を示しています。`IDebugProperty2::GetPropertyInfo`メソッドのマネージ コードでローカルです。 ヘルパー関数も示します`Field.GetType`、つまりフィールドの型を取得するために使用します。 `Field.GetValue` 示した[を評価するローカル](../../extensibility/debugger/evaluating-locals.md)します。 ヘルパー関数`Field.MapModifiersToAttributes`(非表示) を変換してフィールドの[FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md)フラグ[DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md)値。  

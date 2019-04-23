@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978202"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089979"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>方法: ワークフロー内のブレークポイントを設定する
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]を使用すると、Visual Basic コードまたは C# コードを使用する場合と同じように、グラフィカル ワークフローにブレークポイントを設定できます。 設定したそれぞれのブレークポイントで、ワークフローの実行が停止します。  
@@ -32,9 +32,9 @@ ms.locfileid: "58978202"
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>デザイン ビューでアクティビティにブレークポイントを設定するには  
   
-1.  デバッガーを中断する位置にあるアクティビティを選択します。  
+1. デバッガーを中断する位置にあるアクティビティを選択します。  
   
-2.  **デバッグ**メニューの **ブレークポイントの切り替え**します。 アクティビティの左上端に赤色のアイコンが表示されます。  
+2. **デバッグ**メニューの **ブレークポイントの切り替え**します。 アクティビティの左上端に赤色のアイコンが表示されます。  
   
      または、ショートカット キーも**F9**するか、アクティビティを選択することができます、アクティビティを右クリックし、選択した後にキー**ブレークポイント**し**ブレークポイントの挿入**、コンテキスト メニュー。  
   

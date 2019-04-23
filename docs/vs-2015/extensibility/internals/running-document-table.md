@@ -14,12 +14,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2bee266cb917f1e16bdebbdad52f2cc30055835e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044607"
 ---
 # <a name="running-document-table"></a>ドキュメント テーブルの実行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ IDE では、実行中のドキュメント テーブル (RDT) と呼ばれる�
   
  IDE が再び表面化することも、RDT を使用 (、最前面へ移動)、ユーザーがそのドキュメントを要求した場合、開いているドキュメント。 詳細については、次を参照してください。 [Open File コマンドを使用してファイルを表示する](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)します。 ファイルが、RDT で開いているかどうかを判断するには、1 つは、以下します。  
   
--   項目が開いているを確認するには、ドキュメント モニカー (つまり、ドキュメントの完全パス) を照会します。  
+- 項目が開いているを確認するには、ドキュメント モニカー (つまり、ドキュメントの完全パス) を照会します。  
   
--   階層または項目の ID を使用して、プロジェクト システムを完全なドキュメントのパス、要求を RDT を項目を検索します。  
+- 階層または項目の ID を使用して、プロジェクト システムを完全なドキュメントのパス、要求を RDT を項目を検索します。  
   
 ## <a name="see-also"></a>関連項目  
  [RDT_ReadLock の使用法](../../extensibility/internals/rdt-readlock-usage.md)   

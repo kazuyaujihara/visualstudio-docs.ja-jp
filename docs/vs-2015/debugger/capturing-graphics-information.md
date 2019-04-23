@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b64be59e1a962eb23ef12ba49e8b4fa73bd7a44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972474"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114230"
 ---
 # <a name="capturing-graphics-information"></a>グラフィックス情報をキャプチャする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,9 +60,9 @@ Visual Studio Graphics Analyzer を使用してレンダリングに関する問
   
 ##### <a name="to-configure-graphics-diagnostics-capture-options"></a>グラフィックス診断のキャプチャ オプションを構成するには  
   
-1.  メニュー バーで [ツール]、[オプション] の順にクリックします。 [オプション] ダイアログ ボックスが表示されます。  
+1. メニュー バーで [ツール]、[オプション] の順にクリックします。 [オプション] ダイアログ ボックスが表示されます。  
   
-2.  左側にあるオプション カテゴリの一覧からグラフィックス診断を選択した後、使用するグラフィックス診断オプションを構成します。  
+2. 左側にあるオプション カテゴリの一覧からグラフィックス診断を選択した後、使用するグラフィックス診断オプションを構成します。  
   
      **呼び出し履歴をキャプチャ中に収集する (キャプチャ速度が低下します)**  
      呼び出し履歴を収集するには、このチェック ボックスをオンにします。 既定では、呼び出し履歴は収集されません。 呼び出し履歴を取得するには、**[呼び出し履歴をキャプチャ中に収集する (キャプチャ速度が低下します)]** チェック ボックスで収集を有効にするよう設定し、**[描画、ディスパッチ、表示、およびパフォーマンス マーカー]** オプション (既定) を設定して最も重要な呼び出し履歴のみを収集するか、**[すべて]** オプションを設定してすべての呼び出し履歴を収集します。 後で呼び出し履歴の収集を停止するには、**[呼び出し履歴をキャプチャ中に収集する (キャプチャ速度が低下します)]** チェック ボックスをクリアします。  

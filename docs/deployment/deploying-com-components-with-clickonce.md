@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13df8f9a4a360c48d25d46ba3cddb1b42d5150a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 3428a5aeca92d8c56634b3221bd35a0e8d0bb926
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069121"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>ClickOnce での COM コンポーネントの配置
 従来の COM コンポーネントのデプロイには、困難な作業がきました。 コンポーネントは、グローバルに登録する必要があるおり、したがって重複しているアプリケーション間では、望ましくない副作用が発生することができます。 このような状況問題には一般に .NET Framework アプリケーションでコンポーネントがアプリケーションに完全に分離されたまたはサイド バイ サイドでの互換性があるのためです。 Visual Studio、Windows XP または以上のオペレーティング システムの分離された COM コンポーネントを配置することができます。
@@ -46,9 +46,9 @@ ms.locfileid: "56632356"
 
  2 つの方法を[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]COM コンポーネントを展開します。
 
--   ブートス トラップを使用して、COM コンポーネントを展開するにはこれは、サポートされているすべてのプラットフォームで動作します。
+- ブートス トラップを使用して、COM コンポーネントを展開するにはこれは、サポートされているすべてのプラットフォームで動作します。
 
--   ネイティブ コンポーネントの分離 (登録無料 COM とも呼ばれます) の展開を使用します。 ただし、この方法は、Windows XP または以上のオペレーティング システムでのみ動作します。
+- ネイティブ コンポーネントの分離 (登録無料 COM とも呼ばれます) の展開を使用します。 ただし、この方法は、Windows XP または以上のオペレーティング システムでのみ動作します。
 
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>分離と単純な COM コンポーネントの展開の例
  登録のない COM コンポーネントの配置を示すためにこの例は Visual Basic 6.0 を使用して作成された分離ネイティブ COM コンポーネントを参照する Visual Basic では、Windows ベースのアプリケーションを作成および展開を使用して[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]します。
@@ -57,16 +57,16 @@ ms.locfileid: "56632356"
 
 ##### <a name="to-create-a-native-com-component"></a>ネイティブの COM コンポーネントを作成するには
 
-1.  Visual Basic 6.0 を使用して、**ファイル** メニューのをクリックして**新規**、し**プロジェクト**します。
+1. Visual Basic 6.0 を使用して、**ファイル** メニューのをクリックして**新規**、し**プロジェクト**します。
 
-2.  **新しいプロジェクト**ダイアログ ボックスで、 **Visual Basic**ノード、 **ActiveX DLL**プロジェクト。 **[名前]** ボックスに「 `VB6Hello`」と入力します。
+2. **新しいプロジェクト**ダイアログ ボックスで、 **Visual Basic**ノード、 **ActiveX DLL**プロジェクト。 **[名前]** ボックスに「 `VB6Hello`」と入力します。
 
     > [!NOTE]
     >  ActiveX の DLL と ActiveX コントロール プロジェクト型は、登録を必要としない COM; でサポートされます。ActiveX 実行可能ファイルと ActiveX ドキュメント プロジェクトの種類がサポートされていません。
 
-3.  **ソリューション エクスプ ローラー**、ダブルクリックして**Class1.vb**テキスト エディターを開きます。
+3. **ソリューション エクスプ ローラー**、ダブルクリックして**Class1.vb**テキスト エディターを開きます。
 
-4.  Class1.vb に対して生成されたコードの後に、次のコードを追加、`New`メソッド。
+4. Class1.vb に対して生成されたコードの後に、次のコードを追加、`New`メソッド。
 
     ```vb
     Public Sub SayHello()
@@ -74,7 +74,7 @@ ms.locfileid: "56632356"
     End Sub
     ```
 
-5.  コンポーネントをビルドします。 **ビルド** メニューのをクリックして**ソリューションのビルド**します。
+5. コンポーネントをビルドします。 **ビルド** メニューのをクリックして**ソリューションのビルド**します。
 
 > [!NOTE]
 >  COM コントロール プロジェクトの種類を登録しない COM が Dll のみをサポートします。 登録を必要としない COM を Exe を使用することはできません。
@@ -163,7 +163,7 @@ ms.locfileid: "56632356"
 
 - コンポーネントは、システムでは、印刷スプーラのデバイス ドライバーなどの物理または仮想デバイスを管理します。
 
-- コンポーネントは、再頒布可能パッケージのデータ アクセスです。 データ アプリケーションでは、別のデータへのアクセスを再頒布可能パッケージを実行する前にインストールする一般的に必要です。 Microsoft ADO データ コントロール、Microsoft OLE DB、または Microsoft Data Access Components (MDAC) などのコンポーネントを分離しようとする必要があります。 代わりに、アプリケーションでは、MDAC または SQL Server Express を使用する場合として設定の前提条件参照してください[方法: ClickOnce アプリケーションと共に必須コンポーネントをインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)します。
+- コンポーネントは、再頒布可能パッケージのデータ アクセスです。 データ アプリケーションでは、別のデータへのアクセスを再頒布可能パッケージを実行する前にインストールする一般的に必要です。 Microsoft ADO データ コントロール、Microsoft OLE DB、または Microsoft Data Access Components (MDAC) などのコンポーネントを分離しようとする必要があります。 代わりに、アプリケーションでは、MDAC または SQL Server Express を使用する場合として設定の前提条件参照してください[方法。ClickOnce アプリケーションと共に必須コンポーネントをインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)します。
 
   場合によっては、コンポーネントの開発者に登録を必要としない COM の再設計可能な場合があります。 それができない場合でもビルドし、ブートス トラップを使用して標準の登録スキームを通じてそれらに依存するアプリケーションを発行します。 詳細については、次を参照してください。[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)します。
 

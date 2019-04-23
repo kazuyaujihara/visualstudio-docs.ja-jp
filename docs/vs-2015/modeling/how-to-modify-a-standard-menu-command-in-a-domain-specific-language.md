@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058481"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>方法: ドメイン固有言語における標準のメニュー コマンドを修正する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,37 +37,37 @@ DSL で自動的に定義される標準コマンドのいくつかの動作を�
 > [!NOTE]
 >  独自のメニュー コマンドを作成する場合を参照してください。[方法。ショートカット メニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)します。  
   
-##  <a name="what"></a> どのようなコマンドを変更できますか。  
+## <a name="what"></a> どのようなコマンドを変更できますか。  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>変更可能なコマンドを見つけるには  
   
-1.  `DslPackage`プロジェクトを開き、`GeneratedCode\CommandSet.cs`します。 この C# ファイルは、の従属としてソリューション エクスプ ローラーで見つかんだことができます`CommandSet.tt`します。  
+1. `DslPackage`プロジェクトを開き、`GeneratedCode\CommandSet.cs`します。 この c# ファイルは、の従属としてソリューション エクスプ ローラーで見つかんだことができます`CommandSet.tt`します。  
   
-2.  このファイルにクラスを見つけることで名前の末尾が"`CommandSet`"、たとえば`Language1CommandSet`と`Language1ClipboardCommandSet`。  
+2. このファイルにクラスを見つけることで名前の末尾が"`CommandSet`"、たとえば`Language1CommandSet`と`Language1ClipboardCommandSet`。  
   
-3.  各コマンド セット クラスで、"`override`" とその後に続けて空白文字を 1 つ入力します。 IntelliSense ではオーバーライド可能なメソッドの一覧が表示されます。 各コマンドには名前が "`ProcessOnStatus`" および "`ProcessOnMenu`" で始まるメソッドのペアが含まれます。  
+3. 各コマンド セット クラスで、"`override`" とその後に続けて空白文字を 1 つ入力します。 IntelliSense ではオーバーライド可能なメソッドの一覧が表示されます。 各コマンドには名前が "`ProcessOnStatus`" および "`ProcessOnMenu`" で始まるメソッドのペアが含まれます。  
   
-4.  変更するコマンドを含むコマンド セット クラスをメモします。  
+4. 変更するコマンドを含むコマンド セット クラスをメモします。  
   
-5.  編集内容を保存せずにファイルを閉じます。  
+5. 編集内容を保存せずにファイルを閉じます。  
   
     > [!NOTE]
     >  通常、生成されたファイルを編集できません。 次回ファイルが生成されたときに編集内容は失われます。  
   
-##  <a name="extend"></a> 適切なコマンド セット クラスを拡張します。  
+## <a name="extend"></a> 適切なコマンド セット クラスを拡張します。  
  コマンド セット クラスの部分宣言を含む新しいファイルを作成します。  
   
 #### <a name="to-extend-the-command-set-class"></a>コマンド セット クラスを拡張するには  
   
-1.  ソリューション エクスプローラーで、DslPackage プロジェクト内の GeneratedCode フォルダーを開き、CommandSet.tt の下で、生成されたファイル CommandSet.cs を開きます。 名前空間と、名前空間で定義されている最初のクラスの名前を書きとめます。 たとえば、次のように表示されることがあります。  
+1. ソリューション エクスプローラーで、DslPackage プロジェクト内の GeneratedCode フォルダーを開き、CommandSet.tt の下で、生成されたファイル CommandSet.cs を開きます。 名前空間と、名前空間で定義されている最初のクラスの名前を書きとめます。 たとえば、次のように表示されることがあります。  
   
      `namespace Company.Language1`  
   
      `{ ...  internal partial class Language1CommandSet : ...`  
   
-2.  **DslPackage**、という名前のフォルダーを作成する**カスタム コード**します。 このフォルダーの作成という名前の新しいクラス ファイル`CommandSet.cs`します。  
+2. **DslPackage**、という名前のフォルダーを作成する**カスタム コード**します。 このフォルダーの作成という名前の新しいクラス ファイル`CommandSet.cs`します。  
   
-3.  新しいファイル内に、生成された部分クラスと同じ名前空間および名前を持つ部分宣言を記述します。 例:  
+3. 新しいファイル内に、生成された部分クラスと同じ名前空間および名前を持つ部分宣言を記述します。 例:  
   
     ```  
     using System;  
@@ -79,7 +79,7 @@ DSL で自動的に定義される標準コマンドのいくつかの動作を�
   
      **注**クラス ファイル テンプレートを使用して、新しいファイルを作成した場合は、名前空間とクラス名の両方を修正する必要があります。  
   
-##  <a name="override"></a> コマンド メソッドをオーバーライドします。  
+## <a name="override"></a> コマンド メソッドをオーバーライドします。  
  ほとんどのコマンドでは、2 つの関連付けられているメソッドがあります。などの名前を持つメソッド`ProcessOnStatus`... コマンドを表示して有効にするかどうかを決定します。 このメソッドはユーザーが図を右クリックするたびに呼び出され、すばやく実行し、何の変更も生じません。 `ProcessOnMenu`... ユーザーが、コマンドをクリックし、コマンドの関数を実行するときに呼び出されます。 これらのメソッドの一方または両方をオーバーライドする場合があります。  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>メニュー上にコマンドが表示されるタイミングを変更するには  

@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110545"
 ---
 # <a name="graph-view"></a>グラフ ビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 グラフ ビューには、グローバル スキーマ ノードおよびノード間のリレーションシップがグラフィック表示されます。 グラフ ビューでは、デザイン サーフェイスのスキーマ セットのレイアウトを変更できないことに注意してください。 グラフ ビューには、XML スキーマ デザイナーのツール バーおよび階層リンク バーも含まれています。  
   
  次の画像は、デザイン サーフェイスに 6 つのグローバル ノードが表示されたグラフ ビューを示します。  
@@ -116,11 +115,11 @@ ms.locfileid: "58972538"
 ## <a name="undoredo"></a>元に戻す/やり直し  
  元に戻す/やり直し機能は、グラフ ビューの次の操作に対して有効です。  
   
--   ドラッグ アンド ドロップして 1 つのノードを追加する。  
+- ドラッグ アンド ドロップして 1 つのノードを追加する。  
   
--   スキーマ エクスプローラーの検索結果ウィンドウまたはスタート ビューのクエリで複数のノードを追加する。  
+- スキーマ エクスプローラーの検索結果ウィンドウまたはスタート ビューのクエリで複数のノードを追加する。  
   
--   1 つまたは複数のノードを削除する。  
+- 1 つまたは複数のノードを削除する。  
   
 ## <a name="zoom"></a>ズーム  
  ズームはグラフ ビューの右下隅にあります。  

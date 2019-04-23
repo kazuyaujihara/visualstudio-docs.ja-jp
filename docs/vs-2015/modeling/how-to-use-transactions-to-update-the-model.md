@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff4aba08b4eaa1d508c3371a3da80b8cac48534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bbc09543d0ee0297678d3f205becc55a6b6d7714
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977989"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085934"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>方法: トランザクションを使用してモデルを更新する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,9 +61,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>トランザクションのロールバック  
  ストアに残っていることを確認、トランザクションの前に、の状態に戻りするには、これらの戦術のいずれかを使用できます。  
   
-1.  トランザクションのスコープ内でキャッチされない例外を発生させます。  
+1. トランザクションのスコープ内でキャッチされない例外を発生させます。  
   
-2.  明示的にトランザクションをロールバックします。  
+2. 明示的にトランザクションをロールバックします。  
   
     ```  
     this.Store.TransactionManager.CurrentTransaction.Rollback();  

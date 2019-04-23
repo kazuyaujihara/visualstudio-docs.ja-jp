@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a81bcfc6c9f5db47c2140e68a7b609efc92bf8fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd6562a48a66c1c73cd281fb4510e2df737f6a04
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107269"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>方法: Excel の計算をプログラムで実行します。
   計算を実行する同様のプロセスを使用して、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールまたはネイティブな Excel 範囲オブジェクト。
@@ -32,12 +32,12 @@ ms.locfileid: "56610516"
 
 ### <a name="to-run-calculations-in-a-namedrange-control"></a>NamedRange コントロール内の計算を実行するには
 
-1.  名前付き範囲を作成します。
+1. 名前付き範囲を作成します。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#75)]
      [!code-vb[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#75)]
 
-2.  呼び出す、<xref:Microsoft.Office.Tools.Excel.NamedRange.Calculate%2A>指定された範囲のメソッド。
+2. 呼び出す、<xref:Microsoft.Office.Tools.Excel.NamedRange.Calculate%2A>指定された範囲のメソッド。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#76)]
      [!code-vb[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#76)]
@@ -46,12 +46,12 @@ ms.locfileid: "56610516"
 
 ### <a name="to-run-calculations-in-a-native-excel-range"></a>ネイティブな Excel 範囲で計算を実行するには
 
-1.  名前付き範囲を作成します。
+1. 名前付き範囲を作成します。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#30)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#30)]
 
-2.  呼び出す、<xref:Microsoft.Office.Interop.Excel.Range.Calculate%2A>指定された範囲のメソッド。
+2. 呼び出す、<xref:Microsoft.Office.Interop.Excel.Range.Calculate%2A>指定された範囲のメソッド。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#31)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#31)]

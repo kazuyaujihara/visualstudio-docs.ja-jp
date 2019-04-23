@@ -11,14 +11,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9916a46089e1d3381f1bc1f41dd5b7c0178c964
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1edfb882838907503a0df106da2181c283f29d9a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790885"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054002"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>方法: パフォーマンス データ収集の一時停止と再開
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>方法: 一時停止と再開パフォーマンス データの収集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 プロファイル セッション ページ ウィンドウから、プロファイリング データの収集を対話形式で制御することができます。  
@@ -32,13 +32,13 @@ ms.locfileid: "54790885"
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>プロファイリングを一時停止、再開、または停止するには  
   
--   プロファイル セッション ページで、次のように操作します。  
+- プロファイル セッション ページで、次のように操作します。  
   
-    -   データ コレクションを中断するには、**[収集の一時停止]** を選択します。  
+    - データ コレクションを中断するには、**[収集の一時停止]** を選択します。  
   
-    -   データ コレクションを一時停止した後で再開するには、**[収集の再開]** を選択します。  
+    - データ コレクションを一時停止した後で再開するには、**[収集の再開]** を選択します。  
   
-    -   プロファイリング セッションを終了してレポートを生成するには、**[プロファイリングの停止]** を選択します。  
+    - プロファイリング セッションを終了してレポートを生成するには、**[プロファイリングの停止]** を選択します。  
   
 ## <a name="see-also"></a>関連項目  
  [データ コレクションの制御](../profiling/controlling-data-collection.md)   

@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d2e9ce63ed19d1a920fa4e337d6ba398417a16a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ea5433fc1dd12c759faa31599be029f1ba569db1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975332"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648953"
 ---
 # <a name="xml-editor-components"></a>XML エディターのコンポーネント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このセクションでは、XML エディターのウィンドウおよびダイアログ ボックスについて説明します。 XML エディターはテキスト エディターに基づいているため、統合開発環境 (IDE) の一部は、一般的なテキスト エディターの設定を使用して構成されています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  

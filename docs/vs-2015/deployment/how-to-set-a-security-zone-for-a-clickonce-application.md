@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0652f8dbb1acfec111dcc587f3ce4ba2496eb4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9af4507d7ccd604f82aae675bf87d36c0b039b26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974158"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110467"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションのセキュリティ ゾーンを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ClickOnce アプリケーションのコード アクセス セキュリティ �
   
 ### <a name="to-set-a-security-zone"></a>セキュリティ ゾーンを設定するには  
   
-1.  **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
+1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
   
-2.  **[セキュリティ]** タブをクリックします。  
+2. **[セキュリティ]** タブをクリックします。  
   
-3.  **[ClickOnce セキュリティ設定を有効にする]** チェック ボックスをオンにします。  
+3. **[ClickOnce セキュリティ設定を有効にする]** チェック ボックスをオンにします。  
   
-4.  **[これは部分的に信頼するアプリケーションです]** オプション ボタンを選択します。  
+4. **[これは部分的に信頼するアプリケーションです]** オプション ボタンを選択します。  
   
      **[ClickOnce セキュリティのアクセス許可]** セクション内のコントロールが有効になります。  
   
-5.  **[アプリケーションのインストール元のゾーン]** ドロップダウン リストでセキュリティ ゾーンを選択します。  
+5. **[アプリケーションのインストール元のゾーン]** ドロップダウン リストでセキュリティ ゾーンを選択します。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: ClickOnce アプリケーションのカスタム アクセス許可の設定](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   

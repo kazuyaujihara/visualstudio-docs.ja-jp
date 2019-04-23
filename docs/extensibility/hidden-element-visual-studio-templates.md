@@ -1,6 +1,6 @@
 ---
 title: 要素 (Visual Studio テンプレート) を非表示 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -13,32 +13,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a7a70b59d08da09f6a06c3d5c38d330def11b86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c3fdeebabbb3f7a95886fed0a7e2c5eafa4d495b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721395"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104435"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden 要素 (Visual Studio テンプレート)
-いずれかで、テンプレートを表示するかどうかを指定します、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。
 
- \<VSTemplate> \<TemplateData> \<Hidden>
+いずれかで表示されるテンプレートが、新しいプロジェクトを使用するかどうかを指定または**新しい項目の追加** ダイアログ ボックス。
+
+```xml
+<VSTemplate>
+    <TemplateData>
+        <Hidden>
+```
 
 ## <a name="syntax"></a>構文
 
-```
-<Hidden> true/false </Hidden>
+```xml
+<Hidden>true</Hidden>
+<Hidden>false</Hidden>
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
- 以降のセクションでは、属性、子要素、および親要素について説明します。
+
+以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+
+なし。
 
 ### <a name="child-elements"></a>子要素
- なし。
+
+なし。
 
 ### <a name="parent-elements"></a>親要素
 
@@ -47,19 +56,22 @@ ms.locfileid: "56721395"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートをカテゴリに分類し、 **[新しいプロジェクト]** ダイアログ ボックス、または **[新しい項目の追加]** ダイアログ ボックスでどのように表示させるかを定義します。|
 
 ## <a name="text-value"></a>テキスト値
- テキスト値が必要です。
 
- テキストがいずれかにする必要があります`true`または`false`かを示すにテンプレートが表示されるかどうか、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。
+テキスト値が必要です。
+
+テキストがいずれかにする必要があります`true`または`false`かを示すにテンプレートが表示されるかどうか、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。
 
 ## <a name="remarks"></a>Remarks
- `Hidden` は、省略可能な要素です。
 
- 他の子要素を指定しなかった場合、`TemplateData`要素が必要です。
+`Hidden` は、省略可能な要素です。
+
+他の子要素を指定しなかった場合、`TemplateData`要素が必要です。
 
 ## <a name="example"></a>例
- [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] テンプレートのメタデータの例を次に示します。
 
-```
+次の例では、メタデータをC#テンプレート。
+
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +97,6 @@ ms.locfileid: "56721395"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+
+- [テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)

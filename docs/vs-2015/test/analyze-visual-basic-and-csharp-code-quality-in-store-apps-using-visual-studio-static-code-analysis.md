@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9353b4c3f5f5f073a0658d2cf506a46e13d3662c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108341"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 静的コード分析によるストア アプリの Visual Basic および C# のコード品質の分析
 
@@ -42,7 +42,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
  [Visual Basic および C# コード分析警告](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
 
-##  <a name="BKMK_Run"></a> コード分析の実行
+## <a name="BKMK_Run"></a> コード分析の実行
  Visual Studio ソリューションでコード分析を実行するには:
 
 - **[ビルド]** メニューの **[ソリューションでコード分析を実行]** をクリックします。
@@ -57,12 +57,12 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
    ![[コード分析] ウィンドウ](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> コード分析警告の分析と解決
+## <a name="BKMK_Analyze"></a> コード分析警告の分析と解決
  特定の警告を分析するには、[コード分析] ウィンドウで警告のタイトルをクリックします。 警告が展開され、問題に関する詳細情報が表示されます。
 
  ![展開されたコード分析の警告](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
- 警告を展開すると、警告の原因となったコード行が Visual Studio のコード エディターで強調表示されます。
+ 警告を展開すると、警告の原因となったコード行が Visual Studio コード エディターで強調表示されます。
 
  ![コード分析テキストの強調表示](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 
@@ -71,7 +71,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 > [!TIP]
 >  コード分析は、[コード分析] ウィンドウから再実行できます。 **[分析]** をクリックし、分析の範囲を選択します。 ソリューション全体または選択したプロジェクトの分析を再実行できます。
 
-##  <a name="BKMK_Suppress"></a> コード分析警告の抑制
+## <a name="BKMK_Suppress"></a> コード分析警告の抑制
  コード分析警告の修正を行わないことを決定する場合があります。 コードを実装したときの警告の発生確率と、警告を解決するためのコード変更の量を比較して、解決しないことを選択できます。 または、警告で使用された分析が特定のコンテキストでは不適切であると判断できます。 個々の警告を抑制して、[コード分析] ウィンドウに表示されないように設定できます。
 
  警告を抑制するには:
@@ -88,14 +88,14 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
      ソース ファイルで警告を抑制するか、抑制ファイルで警告を抑制するかは、コーディング スタイルとニーズによって決まります。
 
-##  <a name="BKMK_Search"></a> コード分析結果の検索とフィルター処理
+## <a name="BKMK_Search"></a> コード分析結果の検索とフィルター処理
  警告メッセージの長い一覧の検索と、複数のプロジェクトから成るソリューションの警告をフィルター処理できます。
 
  ![[コード分析] ウィンドウの検索とフィルター処理](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)] では、コード分析のすべての警告に、警告の重大度レベルが示されています。
 
-##  <a name="BKMK_Warnings"></a> Visual Basic および C# コード分析警告
+## <a name="BKMK_Warnings"></a> Visual Basic および C# コード分析警告
  コード分析では次の警告が発生します。
 
  [CA1001: 破棄可能なフィールドを所有する型は、破棄可能でなければなりません](http://msdn.microsoft.com/library/ms182172.aspx)

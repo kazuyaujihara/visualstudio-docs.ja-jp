@@ -22,12 +22,12 @@ caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c10dd5661cafd5deeef66d8a65b0ddb61738125
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b1fc7da90eb4f263aaf3de19eb37cfa3272a249
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105731"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace の機能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,12 +43,12 @@ IntelliTrace を使用すると、イベントとアプリケーションを呼�
 > [!NOTE]
 >  **[IntelliTrace]** オプション ページ上のすべての設定の適用範囲は、個々のプロジェクトまたはソリューションではなく、Visual Studio 全体となります。 これらの設定に加えた変更は、Visual Studio のすべてのインスタンス、すべてのデバッグ セッション、あるいはすべてのプロジェクトまたはソリューションに適用されます。  
   
-##  <a name="ChooseEvents"></a> IntelliTrace で記録するイベントを選択します。  
+## <a name="ChooseEvents"></a> IntelliTrace で記録するイベントを選択します。  
  特定の IntelliTrace イベントの記録はオンまたはオフにすることができます。  
   
  デバッグ中の場合、デバッグを停止します。 移動して**ツール/オプション/IntelliTrace/IntelliTrace イベント**します。 IntelliTrace で記録するイベントを選択します。  
   
-##  <a name="GoingFurther"></a> IntelliTrace イベントの収集し、呼び出し情報  
+## <a name="GoingFurther"></a> IntelliTrace イベントの収集し、呼び出し情報  
  このオプションは既定では有効になっていませんが、IntelliTrace ではイベントと共にメソッドの呼び出しを記録できます。 呼び出しメソッドのコレクションを有効にする**ツール/オプション/IntelliTrace/[全般]**、選択と**IntelliTrace イベントと呼び出し情報**します。  
   
  これにより、呼び出し履歴が表示され、コード内で呼び出しの前後を移動できるようになります。 IntelliTrace は、メソッド名、メソッド エントリ、および終了ポイントなどのデータと、特定のパラメーター値および戻り値を記録します。  
@@ -75,14 +75,14 @@ IntelliTrace を使用すると、イベントとアプリケーションを呼�
 ### <a name="search-for-a-line-or-method-in-intellitrace"></a>行またはメソッドを IntelliTrace で検索する  
  メソッドを検索できるのは、メソッド呼び出し情報が有効になっている場合に限られます。 特定の行またはメソッドの IntelliTrace 履歴を検索することができます。 デバッガーの実行が停止したら、関数本文内を右クリックしてコンテキスト メニューを表示し、**[この行を IntelliTrace で検索]** または **[このメソッドを IntelliTrace で検索]** のいずれかをクリックします。  
   
-###  <a name="ControlCallData"></a>IntelliTrace が呼び出し情報をどの程度記録するかの制御  
+### <a name="ControlCallData"></a>IntelliTrace が呼び出し情報をどの程度記録するかの制御  
  既定では、IntelliTrace はソリューションで使用されるすべてのモジュールについて情報を記録します。 関心のあるモジュールに関してのみ、呼び出し情報を記録するように IntelliTrace を設定できます。 **ツール/オプション/IntelliTrace/モジュール**、含めるモジュールまたは IntelliTrace から除外するモジュールを指定できます。 指定したモジュールから発生したイベントと、関心のあるモジュール内で発生したメソッド呼び出しだけが IntelliTrace で収集されます。  
   
  複数のモジュールを追加するには、ワイルドカード文字 * を文字列の先頭または末尾に使用します。 モジュール名には、アセンブリ名ではなくファイル名を使用してください。 ファイル パスは使用できません。  
   
  モジュールの数は最小限に抑えるようにしてください。 そうすれば、収集するデータが少なくなるので、パフォーマンスが向上します。 また、処理すべきデータが少なくなるので、UI のノイズが減少します。  
   
-##  <a name="SaveSession"></a> IntelliTrace データをファイルに保存します。  
+## <a name="SaveSession"></a> IntelliTrace データをファイルに保存します。  
  IntelliTrace で収集されたデータを保存することができますを**デバッグ/IntelliTrace IntelliTrace セッションの保存/** をデバッグすると、アプリケーションがブレーク状態にします。 アプリケーションがまだ実行中の場合またはデバッグが停止状態の場合、メニュー項目は無効であるため、IntelliTrace で収集されたデータを保存することはできません。  
   
  移動してファイルに自動的に保存するように IntelliTrace を構成することができます**ツール/オプション/IntelliTrace、高度な**を選択して**ストア IntelliTrace 記録をこのディレクトリに**。 生成するファイルの設定サイズを構成することもできます。その場合、IntelliTrace は領域が足りなくなると古いデータから順に上書きしていきます。 Visual Studio では、ファイルが自動保存されるときと Visual Studio のホスティング プロセス (vshost.exe) をオンにしたときに、IntelliTrace セッションごとに 2 つのファイルが作成されます。  

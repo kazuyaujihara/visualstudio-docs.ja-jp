@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6d996cfcfb9dd8c63cf31b203905b486b3a1c82
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: af494a87b2feea10d121e59931e51ef3dd344f67
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598467"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669303"
 ---
 # <a name="how-to-resize-listobject-controls"></a>方法: ListObject コントロールをサイズ変更します。
   <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールのサイズは Microsoft Office Excel ブックにコントロールを追加するときに設定しますが、後でサイズを変更することもできます。 たとえば、2 列のリストを 3 列のリストに変更できます。
@@ -37,13 +37,12 @@ ms.locfileid: "56598467"
 
   詳細については<xref:Microsoft.Office.Tools.Excel.ListObject>コントロールを参照してください[ListObject コントロール](../vsto/listobject-control.md)します。
 
-  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:実行時にデータ バインド リスト オブジェクトには、列を追加しますか](http://go.microsoft.com/fwlink/?LinkID=130318).
+  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。実行時にデータ バインド リスト オブジェクトには、列を追加しますか。](http://go.microsoft.com/fwlink/?LinkID=130318).
 
 ##  <a name="designtime"></a> デザイン時に ListObject コントロールのサイズを変更します。
  リストのサイズを変更するには、サイズ変更ハンドルのいずれかをクリックしてドラッグでき、また **[リストのサイズ変更]** ダイアログ ボックスでそのサイズを再定義することもできます。
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>[リストのサイズ変更] ダイアログ ボックスを使用してリストのサイズを変更するには
-
 
 1.  内をクリックし、<xref:Microsoft.Office.Tools.Excel.ListObject>テーブル。 **テーブル ツール** > **デザイン**リボンのタブが表示されます。
 

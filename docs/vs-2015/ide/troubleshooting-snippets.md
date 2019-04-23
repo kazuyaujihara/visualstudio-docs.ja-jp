@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fe80ad6c3983b35f97071093428bf7f356292b0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f1a623d5ee5edee376819ad6c385aead5003f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803763"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117955"
 ---
 # <a name="troubleshooting-snippets"></a>スニペットのトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,15 +29,15 @@ IntelliSense コード スニペットに関する問題は、通常は 2 つの
   
 ### <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>スニペットをファイル エクスプローラーから Visual Studio のソース ファイルにドラッグできない  
   
--   スニペット ファイルの XML が破損している可能性があります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の **[XML エディター]** を使用すると、XML 構造の問題を特定できます。  
+- スニペット ファイルの XML が破損している可能性があります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の **[XML エディター]** を使用すると、XML 構造の問題を特定できます。  
   
--   スニペット ファイルがスニペット スキーマに準拠していない可能性があります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の **[XML エディター]** を使用すると、XML 構造の問題を特定できます。  
+- スニペット ファイルがスニペット スキーマに準拠していない可能性があります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の **[XML エディター]** を使用すると、XML 構造の問題を特定できます。  
   
 ### <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>コードに強調表示されていないコンパイラ エラーがある  
   
--   プロジェクト参照がない可能性があります。 スニペットについてのドキュメントを調べてください。 参照がコンピューター上にない場合は、インストールする必要があります。 スニペットを挿入すると、必要な参照がプロジェクトに追加されます。 スニペットに参照情報がない場合は、スニペットの作成者にエラーとして報告できます。  
+- プロジェクト参照がない可能性があります。 スニペットについてのドキュメントを調べてください。 参照がコンピューター上にない場合は、インストールする必要があります。 スニペットを挿入すると、必要な参照がプロジェクトに追加されます。 スニペットに参照情報がない場合は、スニペットの作成者にエラーとして報告できます。  
   
--   変数が未定義の可能性があります。 スニペット内の未定義の変数は強調表示されます。 そうなっていない場合は、スニペットの作成者にエラーとして報告できます。  
+- 変数が未定義の可能性があります。 スニペット内の未定義の変数は強調表示されます。 そうなっていない場合は、スニペットの作成者にエラーとして報告できます。  
   
 ## <a name="see-also"></a>関連項目  
  [コード スニペット](../ide/code-snippets.md)

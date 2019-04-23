@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57872060"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790434"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP アプリでのエネルギー使用の分析
 
@@ -64,6 +64,7 @@ Visual Studio の **エネルギー消費** プロファイラーは、常時ま
 
 コードの例については、Windows SDK サンプル「[LoggingSession Sample (LoggingSession サンプル)](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)」をご覧ください。
 
+::: moniker range="vs-2017"
 **JavaScript コードに対するマークの追加**
 
 ユーザー マークを追加するには、コード内のマークする位置に次のコードを追加します。
@@ -75,6 +76,7 @@ if (performance && performance.mark) {
 ```
 
 *markDescription* は、ユーザー マークのツールヒントに表示されるメッセージを含む文字列です。
+::: moniker-end
 
 ## <a name="configure-your-environment-for-profiling"></a>プロファイリング用の環境の構成
  正確な見積もりを取得するために、バッテリが電源になっている低電力デバイス上でのアプリのエネルギー使用をプロファイリングします。 Visual Studio は、これらのほとんどのデバイス上で動作しないため、Visual Studio Remote Tools を使用して、Visual Studio コンピューターをデバイスに接続する必要があります。 リモート デバイスに接続するには、Visual Studio プロジェクトとリモート デバイスの両方を構成する必要があります。 詳細については、「[Run UWP apps on a remote machine](../debugger/run-windows-store-apps-on-a-remote-machine.md)」(リモート コンピューターで UWP アプリを実行する) をご覧ください。
@@ -147,11 +149,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>その他のリソース
 
-- **C#/VB/C++ と XAML** および [JavaScript と HTML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) の「[接続状態とコストの管理](/previous-versions/windows/apps/hh452983(v=win.10))」セクションでは、ネットワーク接続情報を提供する Windows API について説明されています。この情報を使って、アプリはネットワーク トラフィックのコストを最小限にすることができます。
+- [C#/VB/C++ と XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) の「**接続状態とコストの管理**」セクションでは、ネットワーク接続情報を提供する Windows API について説明されています。この情報を使って、アプリはネットワーク トラフィックのコストを最小限にすることができます。
 
    UWP アプリ用の Visual Studio シミュレーターでは、ネットワーク情報 API のデータ接続プロパティをシミュレートすることができます。 「[シミュレーターで UWP アプリを実行する](../debugger/run-windows-store-apps-in-the-simulator.md)」をご覧ください
 
-- **JavaScript 関数タイミング** および **CPU 使用率** ツールは、非効率的な関数のために生じる CPU 負荷の削減に役立ちます。 「[CPU 使用率の分析](../profiling/beginners-guide-to-performance-profiling.md)」をご覧ください。
+- **CPU 使用率**ツールは、非効率的な関数のために生じる CPU 負荷の削減に役立ちます。 「[CPU 使用率の分析](../profiling/beginners-guide-to-performance-profiling.md)」をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 

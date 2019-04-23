@@ -12,12 +12,12 @@ ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d9836702b00b51d1e2dbe1cd64687c892feaba4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1cd8e7e85b9753c3742044ae2a557cdf4637214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972566"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084883"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ ms.locfileid: "58972566"
   
  この値で、テンプレートから作成されるプロジェクトの種類を指定します。値には、次のいずれかの値を含める必要があります。  
   
--   `CSharp`:テンプレートを作成するを指定します、[!INCLUDE[csprcs](../includes/csprcs-md.md)]プロジェクトまたは項目。  
+- `CSharp`:テンプレートを作成するを指定します、[!INCLUDE[csprcs](../includes/csprcs-md.md)]プロジェクトまたは項目。  
   
--   `VisualBasic`:テンプレートを作成するを指定します、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]プロジェクトまたは項目。  
+- `VisualBasic`:テンプレートを作成するを指定します、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]プロジェクトまたは項目。  
   
--   `Web`:Web プロジェクトまたは項目テンプレートを作成するを指定します。 場合、`ProjectType`要素には、この値が含まれていますでプロジェクトまたはアイテムの言語が定義されている、 [ProjectSubType 要素 (Visual Studio テンプレート)](../extensibility/projectsubtype-element-visual-studio-templates.md)します。  
+- `Web`:Web プロジェクトまたは項目テンプレートを作成するを指定します。 場合、`ProjectType`要素には、この値が含まれていますでプロジェクトまたはアイテムの言語が定義されている、 [ProjectSubType 要素 (Visual Studio テンプレート)](../extensibility/projectsubtype-element-visual-studio-templates.md)します。  
   
 ## <a name="remarks"></a>Remarks  
  `ProjectType` は `TemplateData` に必須の子要素です。  

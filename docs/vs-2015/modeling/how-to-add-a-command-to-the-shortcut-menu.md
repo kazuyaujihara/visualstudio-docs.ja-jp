@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c88c0e30ebe1953dcf5f6c9311edd2b3186f53ed
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 7692e418c3e01b89a8dcf775350c062600351ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58977668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093047"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>方法: ショートカット メニューにコマンドを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "58977668"
   
    上記に該当しない場合は、MEF 手法を使用してコマンドを定義することを検討してください。 詳細については、次を参照してください。 [MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)します。  
   
-##  <a name="VSCT"></a> Commands.Vsct でコマンドを宣言します。  
+## <a name="VSCT"></a> Commands.Vsct でコマンドを宣言します。  
  メニュー コマンドは、DslPackage\Commands.vsct で宣言されます。 これらの定義では、メニュー項目のラベルと、メニューでのメニュー項目の表示位置が指定されます。  
   
  編集するファイル Commands.vsct は、ディレクトリ内にある複数の .h ファイルから定義をインポートする*Visual Studio SDK インストール パス*\VisualStudioIntegration\Common\Inc します。また、DSL 定義から生成される GeneratedVsct.vsct をインクルードします。  
@@ -61,9 +61,9 @@ ms.locfileid: "58977668"
   
 #### <a name="to-add-the-command"></a>コマンドを追加するには  
   
-1.  **ソリューション エクスプ ローラー**下で、 **DslPackage**プロジェクトで、Commands.vsct を開きます。  
+1. **ソリューション エクスプ ローラー**下で、 **DslPackage**プロジェクトで、Commands.vsct を開きます。  
   
-2.  `Commands` 要素に 1 つ以上のボタンと 1 つのグループを定義します。 A*ボタン*はメニュー アイテムです。 A*グループ*メニュー セクションします。 これらの項目を定義するため、次の要素を追加します。  
+2. `Commands` 要素に 1 つ以上のボタンと 1 つのグループを定義します。 A*ボタン*はメニュー アイテムです。 A*グループ*メニュー セクションします。 これらの項目を定義するため、次の要素を追加します。  
   
     ```  
     <!-- Define a group - a section in the menu -->  
@@ -92,7 +92,7 @@ ms.locfileid: "58977668"
     > [!NOTE]
     >  各ボタンとグループは、GUID と整数の ID によって識別されます。 同じ GUID を使用して複数のグループとボタンを作成できます。 ただし、それぞれに異なる ID が必要です。 GUID 名と ID 名は、実際の Guid と数値 Id に変換されます、`<Symbols>`ノード。  
   
-3.  ドメイン固有言語のコンテキストでのみコマンドが読み込まれるようにするため、コマンドに表示制限を追加します。 詳細については、次を参照してください。 [VisibilityConstraints 要素](../extensibility/visibilityconstraints-element.md)します。  
+3. ドメイン固有言語のコンテキストでのみコマンドが読み込まれるようにするため、コマンドに表示制限を追加します。 詳細については、次を参照してください。 [VisibilityConstraints 要素](../extensibility/visibilityconstraints-element.md)します。  
   
      このためには、`CommandTable` 要素内で `Commands` 要素の後に以下の要素を追加します。  
   
@@ -104,7 +104,7 @@ ms.locfileid: "58977668"
     </VisibilityConstraints>  
     ```  
   
-4.  GUID と ID に使用する名前を定義します。 このためには、`Symbols` 要素内で `CommandTable` 要素の後に `Commands` 要素を追加します。  
+4. GUID と ID に使用する名前を定義します。 このためには、`Symbols` 要素内で `CommandTable` 要素の後に `Commands` 要素を追加します。  
   
     ```  
     <Symbols>  
@@ -117,52 +117,52 @@ ms.locfileid: "58977668"
     </Symbols>  
     ```  
   
-5.  `{000...000}` を、グループとメニュー項目を識別する GUID に置き換えます。 新しい GUID を取得するには、使用、 **GUID の作成**ツールを**ツール**メニュー。  
+5. `{000...000}` を、グループとメニュー項目を識別する GUID に置き換えます。 新しい GUID を取得するには、使用、 **GUID の作成**ツールを**ツール**メニュー。  
   
     > [!NOTE]
     >  さらにグループやメニュー項目を追加するときには、同じ GUID を使用できます。 ただし、`IDSymbols` に新しい値を使用する必要があります。  
   
-6.  この手順からコピーしたコード内の、次の文字列をすべて各自固有の文字列に置き換えます。  
+6. この手順からコピーしたコード内の、次の文字列をすべて各自固有の文字列に置き換えます。  
   
-    -   `grpidMyMenuGroup`  
+    - `grpidMyMenuGroup`  
   
-    -   `cmdidMyContextMenuCommand`  
+    - `cmdidMyContextMenuCommand`  
   
-    -   `guidCustomMenuCmdSet`  
+    - `guidCustomMenuCmdSet`  
   
-    -   `My Context Menu Command`  
+    - `My Context Menu Command`  
   
-##  <a name="version"></a> Package.tt でパッケージ バージョンを更新します。  
+## <a name="version"></a> Package.tt でパッケージ バージョンを更新します。  
  コマンドを追加または変更するたびに、`version` の <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> パラメーターを更新します。これは、ドメイン固有言語の新しいバージョンをリリースする前にパッケージ クラスに適用されます。  
   
  生成されるファイルでパッケージ クラスが定義されているため、Package.cs ファイルを生成するテキスト テンプレート ファイルで属性を更新します。  
   
 #### <a name="to-update-the-packagett-file"></a>Package.tt ファイルを更新するには  
   
-1.  **ソリューション エクスプ ローラー**で、 **DslPackage**プロジェクトの**GeneratedCode**フォルダーにある Package.tt ファイルを開きます。  
+1. **ソリューション エクスプ ローラー**で、 **DslPackage**プロジェクトの**GeneratedCode**フォルダーにある Package.tt ファイルを開きます。  
   
-2.  `ProvideMenuResource` 属性を探します。  
+2. `ProvideMenuResource` 属性を探します。  
   
-3.  この属性の `version` パラメーター (2 番目のパラメーター) の値を大きくします。 必要に応じて、パラメーターの目的を明確にするためパラメーター名を明示的に記述できます。 例えば:  
+3. この属性の `version` パラメーター (2 番目のパラメーター) の値を大きくします。 必要に応じて、パラメーターの目的を明確にするためパラメーター名を明示的に記述できます。 例えば:  
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
-##  <a name="CommandSet"></a> コマンドの動作を定義します。  
+## <a name="CommandSet"></a> コマンドの動作を定義します。  
  DSL には、DslPackage\GeneratedCode\CommandSet.cs で宣言される一部のクラスで実装されているコマンドが既に存在しています。 新しいコマンドを追加するには、同じクラスの部分的な宣言を含む新しいファイルを作成して、このクラスを拡張する必要があります。 通常、クラスの名前は *\<YourDslName >*`CommandSet`します。 最初にクラスの名前を検証し、クラスの内容を調べておくと便利です。  
   
  コマンド セット クラスは、<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> から派生しています。  
   
 #### <a name="to-extend-the-commandset-class"></a>CommandSet クラスを拡張するには  
   
-1.  ソリューション エクスプローラーで、DslPackage プロジェクト内の GeneratedCode フォルダーを開き、CommandSet.tt の下で、生成されたファイル CommandSet.cs を開きます。 名前空間と、名前空間で定義されている最初のクラスの名前を書きとめます。 たとえば、次のように表示されることがあります。  
+1. ソリューション エクスプローラーで、DslPackage プロジェクト内の GeneratedCode フォルダーを開き、CommandSet.tt の下で、生成されたファイル CommandSet.cs を開きます。 名前空間と、名前空間で定義されている最初のクラスの名前を書きとめます。 たとえば、次のように表示されることがあります。  
   
      `namespace Company.Language1`  
   
      `{ ...  internal partial class Language1CommandSet : ...`  
   
-2.  **DslPackage**、という名前のフォルダーを作成する**カスタム コード**します。 このフォルダーの作成という名前の新しいクラス ファイル`CommandSet.cs`します。  
+2. **DslPackage**、という名前のフォルダーを作成する**カスタム コード**します。 このフォルダーの作成という名前の新しいクラス ファイル`CommandSet.cs`します。  
   
-3.  新しいファイル内に、生成された部分クラスと同じ名前空間および名前を持つ部分宣言を記述します。 例えば:  
+3. 新しいファイル内に、生成された部分クラスと同じ名前空間および名前を持つ部分宣言を記述します。 例えば:  
   
      `namespace Company.Language1 /* Make sure this is correct */`  
   
@@ -324,13 +324,13 @@ protected override IList<MenuCommand> GetMenuCommands()
   
 #### <a name="to-exercise-the-command"></a>コマンドを実行するには  
   
-1.  **ソリューション エクスプ ローラー**ツールバーで、をクリックして**すべてのテンプレートの変換**します。  
+1. **ソリューション エクスプ ローラー**ツールバーで、をクリックして**すべてのテンプレートの変換**します。  
   
-2.  キーを押して**F5**をソリューションをリビルドし、実験用ビルドでドメイン固有言語のデバッグを開始します。  
+2. キーを押して**F5**をソリューションをリビルドし、実験用ビルドでドメイン固有言語のデバッグを開始します。  
   
-3.  実験用ビルドでサンプルの図を開きます。  
+3. 実験用ビルドでサンプルの図を開きます。  
   
-4.  図の中のさまざまな項目を右クリックして、選択した項目に基づいてコマンドが正しく有効または無効になること、適切に表示または非表示になることを確認します。  
+4. 図の中のさまざまな項目を右クリックして、選択した項目に基づいてコマンドが正しく有効または無効になること、適切に表示または非表示になることを確認します。  
   
 ## <a name="troubleshooting"></a>トラブルシューティング  
  **コマンドは、メニューは表示されません。**  
@@ -345,11 +345,11 @@ protected override IList<MenuCommand> GetMenuCommands()
   
    **OnStatus メソッドは呼び出されません**:  
   
-  -   CommandSet コードの GUID と ID が Commands.vsct の Symbols セクションの GUID と ID に一致することを確認します。  
+  - CommandSet コードの GUID と ID が Commands.vsct の Symbols セクションの GUID と ID に一致することを確認します。  
   
-  -   Commands.vsct ですべての親ノードの GUID と ID が正しい親グループを識別していることを確認します。  
+  - Commands.vsct ですべての親ノードの GUID と ID が正しい親グループを識別していることを確認します。  
   
-  -   Visual Studio コマンド プロンプトで devenv /rootsuffix exp /setup と入力します。 Visual Studio のデバッグ インスタンスを再起動します。  
+  - Visual Studio コマンド プロンプトで devenv /rootsuffix exp /setup と入力します。 Visual Studio のデバッグ インスタンスを再起動します。  
   
 - OnStatus メソッドをステップ実行し、command.Visible と command.Enabled が true に設定されていることを確認します。  
   

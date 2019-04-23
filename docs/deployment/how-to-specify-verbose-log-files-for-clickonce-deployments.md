@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc7fbdace660a894352623a3ff8765a165b5556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 70c83c31ba8c415de9c2a7be8f60c9c6ee8ba9ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111533"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>方法: ClickOnce 配置用の詳細ログ ファイルを指定する
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] すべてのデプロイ アクティビティのログ ファイルを保持します。 これらのログ記録に関連するインストール、初期化、更新、およびアンインストールの詳細、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]展開します。 詳細を向上させるを[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]レジストリ エディターを使用して、これらのログ ファイルへの書き込み (*regedit.exe*) 詳細レベルを指定します。
@@ -32,13 +32,13 @@ ms.locfileid: "56619499"
 
 ### <a name="to-specify-verbose-log-files"></a>詳細なログ ファイルを指定するには
 
-1.  開いている*Regedit.exe*します。
+1. 開いている*Regedit.exe*します。
 
-2.  ノードに移動**HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**します。
+2. ノードに移動**HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**します。
 
-3.  必要に応じて、という名前の新しい文字列値を作成`LogVerbosityLevel`です。
+3. 必要に応じて、という名前の新しい文字列値を作成`LogVerbosityLevel`です。
 
-4.  設定、`LogVerbosityLevel`値を`1`します。
+4. 設定、`LogVerbosityLevel`値を`1`します。
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)

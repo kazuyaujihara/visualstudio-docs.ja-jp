@@ -11,30 +11,29 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090760"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 では、[ItemGroup](../msbuild/itemgroup-element-msbuild.md) 要素を使用することにより、プロジェクト ファイルに項目を静的に宣言できます。 ただし、メタデータは、すべての項目に共通であっても項目単位でしか追加できません。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 以降には、この制限を克服する [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) という名前のプロジェクト要素が導入されました。 *ItemDefinitionGroup* を使用して一連の項目定義を定義すると、名前付きの項目の種類に含まれるすべての項目に既定のメタデータ値を追加できます。  
   
  *ItemDefinitionGroup* 要素は、プロジェクト ファイルの [Project](../msbuild/project-element-msbuild.md) 要素の直後にあります。 項目定義によって、次の機能が使用可能になります。  
   
--   項目の既定のグローバル メタデータをターゲットの外部で定義できます。 これにより、指定した種類のすべての項目に同じメタデータが適用されます。  
+- 項目の既定のグローバル メタデータをターゲットの外部で定義できます。 これにより、指定した種類のすべての項目に同じメタデータが適用されます。  
   
--   項目の種類には複数の定義を指定できます。 項目の種類に複数のメタデータ指定を追加すると、最後の指定が優先されます  \(メタデータのインポート順序はプロパティの場合と同じです。\)  
+- 項目の種類には複数の定義を指定できます。 項目の種類に複数のメタデータ指定を追加すると、最後の指定が優先されます  \(メタデータのインポート順序はプロパティの場合と同じです。\)  
   
--   メタデータは追加的に指定できます。 たとえば、CDefines の値は設定されるプロパティに応じて条件付きで累積されます。 たとえば、`MT;STD_CALL;DEBUG;UNICODE` のようにします。  
+- メタデータは追加的に指定できます。 たとえば、CDefines の値は設定されるプロパティに応じて条件付きで累積されます。 たとえば、`MT;STD_CALL;DEBUG;UNICODE` のようにします。  
   
--   メタデータを削除することができます。  
+- メタデータを削除することができます。  
   
--   条件を使用してメタデータの追加を制御できます。  
+- 条件を使用してメタデータの追加を制御できます。  
   
 ## <a name="item-metadata-default-values"></a>項目メタデータの既定値  
  ItemDefinitionGroup に定義された項目メタデータは、既定のメタデータの宣言に過ぎません。 ItemGroup からメタデータ値を取り込む項目を定義しない限り、ItemDefinitionGroup に定義されたメタデータは適用されません。  
@@ -67,21 +66,21 @@ ms.locfileid: "54796674"
 ## <a name="value-sources"></a>値のソース  
  ItemDefinitionGroup に定義されたメタデータには、以下のさまざまなソースから値を割り当てることができます。  
   
--   PropertyGroup プロパティ  
+- PropertyGroup プロパティ  
   
--   ItemDefinitionGroup 内の項目  
+- ItemDefinitionGroup 内の項目  
   
--   ItemDefinitionGroup 項目の項目変換  
+- ItemDefinitionGroup 項目の項目変換  
   
--   環境変数  
+- 環境変数  
   
--   グローバル プロパティ \(MSBuild.exe コマンド ラインで指定\)  
+- グローバル プロパティ \(MSBuild.exe コマンド ラインで指定\)  
   
--   予約済みのプロパティ  
+- 予約済みのプロパティ  
   
--   ItemDefinitionGroup 内の項目の既知のメタデータ  
+- ItemDefinitionGroup 内の項目の既知のメタデータ  
   
--   CDATA セクション \<\!\[CDATA\[この部分は解析されない\]\]\>  
+- CDATA セクション \<\!\[CDATA\[この部分は解析されない\]\]\>  
   
 > [!NOTE]
 >  ItemDefinitionGroup 要素は ItemGroup 要素より先に処理されるため、ItemGroup の項目メタデータは ItemDefinitionGroup メタデータの宣言では役に立ちません。  

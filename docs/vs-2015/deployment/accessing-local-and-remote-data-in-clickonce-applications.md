@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 21e16823d664b927008e43f8bfc6972ac284eac7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040070"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>ClickOnce アプリケーションにおけるローカル データおよびリモート データへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58963858"
 ## <a name="local-data"></a>ローカル データ  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] では、次のいずれかの方法を使用してデータを読み込んでローカルに格納できます。  
   
--   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] データ ディレクトリ  
+- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] データ ディレクトリ  
   
--   分離ストレージ  
+- 分離ストレージ  
   
--   その他のローカル ファイル  
+- その他のローカル ファイル  
   
 ### <a name="clickonce-data-directory"></a>ClickOnce データ ディレクトリ  
  ローカル コンピューターにインストールされている各 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションには、データ ディレクトリがあります。このデータ ディレクトリは、ユーザーの "Documents and Settings" フォルダーにあります。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションに含まれていて、"データ" ファイルとしてマークされているすべてのファイルは、アプリケーションのインストール時にこのディレクトリにコピーされます。 どのような種類のファイルでもデータ ファイルとして指定できます。最もよく使用されるのは、テキスト ファイルや XML ファイル、データベース ファイル (Microsoft Access の .mdb ファイルなど) です。  

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 765072cea77a23ca63a176555832bbc95f0ab4b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950033"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104546"
 ---
 # <a name="error-messages-in-workflow-designer"></a>ワークフロー デザイナーでのエラー メッセージ
 
@@ -27,13 +27,13 @@ ms.locfileid: "55950033"
 
 ワークフロー デザイナーでのエラーは、次の状況で発生します。
 
-1.  式でエラーが発生している。
+1. 式でエラーが発生している。
 
-2.  アクティビティの検証制約が満たされていない。
+2. アクティビティの検証制約が満たされていない。
 
-3.  アクティビティによる読み込み失敗を引き起こすエラーが XAML ファイルで発生している。
+3. アクティビティによる読み込み失敗を引き起こすエラーが XAML ファイルで発生している。
 
-4.  ワークフローによる読み込み失敗を引き起こすエラーが XAML ファイルで発生している。
+4. ワークフローによる読み込み失敗を引き起こすエラーが XAML ファイルで発生している。
 
 無効な式や検証制約違反によって、ワークフローの構築が失敗することはありません。 ワークフローは正常に構築されますが、実行時に <xref:System.Activities.InvalidWorkflowException> がスローされます。 XAML ファイルにエラーがある場合は、構築が失敗します。
 

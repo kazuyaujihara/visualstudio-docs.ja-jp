@@ -13,12 +13,12 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73a94ee7a6d3ed874d61b589186706b50ad0a376
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7c6783f3d6d79606ccc5002b978be40097c8c90b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977350"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040520"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace スタンドアロン コレクターを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,33 +51,33 @@ ms.locfileid: "58977350"
 
 - [IntelliTrace データを取得できるその他の場所](#WhereElse)
 
-##  <a name="WhatApps"></a> コレクターで使用できるアプリ
+## <a name="WhatApps"></a> コレクターで使用できるアプリ
 
--   インターネット インフォメーション サービス (IIS) Version 7.0、7.5、および 8.0 によってホストされる ASP.NET アプリ
+- インターネット インフォメーション サービス (IIS) Version 7.0、7.5、および 8.0 によってホストされる ASP.NET アプリ
 
--   SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーション
+- SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーション
 
--   Windows Presentation Foundation (WPF) および Windows フォーム アプリ。
+- Windows Presentation Foundation (WPF) および Windows フォーム アプリ。
 
-##  <a name="GetStarted"></a> 開始方法
+## <a name="GetStarted"></a> 開始方法
 
-1.  [コレクターのインストール](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
+1. [コレクターのインストール](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
 
-2.  [コレクター ディレクトリのアクセス許可を設定する](#ConfigurePermissionsRunningCollector)
+2. [コレクター ディレクトリのアクセス許可を設定する](#ConfigurePermissionsRunningCollector)
 
-3.  [Web アプリまたは SharePoint アプリケーションのデータを収集するための IntelliTrace PowerShell コマンドレットをインストールする](#BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets)
+3. [Web アプリまたは SharePoint アプリケーションのデータを収集するための IntelliTrace PowerShell コマンドレットをインストールする](#BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets)
 
-4.  [.iTrace ファイル ディレクトリのアクセス許可を設定する](#BKMK_Create_and_Configure_a_Log_File_Directory)
+4. [.iTrace ファイル ディレクトリのアクセス許可を設定する](#BKMK_Create_and_Configure_a_Log_File_Directory)
 
-5.  [Web アプリまたは SharePoint アプリケーションからデータを収集する](#BKMK_Collect_Data_from_IIS_Application_Pools)
+5. [Web アプリまたは SharePoint アプリケーションからデータを収集する](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
      - または -
 
      [マネージド アプリからのデータの収集](#BKMK_Collect_Data_from_Executables)
 
-6.  [Visual Studio Enterprise で .iTrace ファイルを開く](#BKMK_View_IntelliTrace_Log_Files)
+6. [Visual Studio Enterprise で .iTrace ファイルを開く](#BKMK_View_IntelliTrace_Log_Files)
 
-##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> コレクターのインストール
+## <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> コレクターのインストール
 
 1. アプリのサーバーでは、たとえば、コレクター ディレクトリを作成します。**C:\IntelliTraceCollector**) を参照します。
 
@@ -95,88 +95,88 @@ ms.locfileid: "58977350"
 
    - **Visual Studio インストール フォルダー**:
 
-     1.  次のフォルダーから IntelliTraceCollection.cab をコピーします。
+     1. 次のフォルダーから IntelliTraceCollection.cab をコピーします。
 
           **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-     2.  IntelliTraceCollection.cab をコレクター ディレクトリ (たとえば、**C:\IntelliTraceCollector**) にプットします。
+     2. IntelliTraceCollection.cab をコレクター ディレクトリ (たとえば、**C:\IntelliTraceCollector**) にプットします。
 
 3. IntelliTraceCollection.cab を展開します。
 
-   1.  アプリのサーバーで、管理者としてコマンド プロンプト ウィンドウを開きます。
+   1. アプリのサーバーで、管理者としてコマンド プロンプト ウィンドウを開きます。
 
-   2.  コレクター ディレクトリ (たとえば、**C:\IntelliTraceCollector**) を参照します。
+   2. コレクター ディレクトリ (たとえば、**C:\IntelliTraceCollector**) を参照します。
 
-   3.  末尾のピリオド ( **.** ) も含めて**expand**コマンドを使用して、IntelliTraceCollection.cab を展開します。
+   3. 末尾のピリオド ( **.** ) も含めて**expand**コマンドを使用して、IntelliTraceCollection.cab を展開します。
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
        >  ピリオド (**.**) を指定することにより、ローカライズされた収集計画を含むサブフォルダーが保持されます。
 
-##  <a name="ConfigurePermissionsRunningCollector"></a> コレクター ディレクトリのアクセス許可を設定する
+## <a name="ConfigurePermissionsRunningCollector"></a> コレクター ディレクトリのアクセス許可を設定する
 
-1.  アプリのサーバーで、管理者としてコマンド プロンプト ウィンドウを開きます。
+1. アプリのサーバーで、管理者としてコマンド プロンプト ウィンドウを開きます。
 
-2.  Windows の **icacls** コマンドを使用して、サーバー管理者に、コレクター ディレクトリに対する完全なアクセス許可を与えます。 例えば:
+2. Windows の **icacls** コマンドを使用して、サーバー管理者に、コレクター ディレクトリに対する完全なアクセス許可を与えます。 例えば:
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
-3.  Web アプリまたは SharePoint アプリケーションのデータを収集するには:
+3. Web アプリまたは SharePoint アプリケーションのデータを収集するには:
 
-    1.  IntelliTrace PowerShell コマンドレットを実行するユーザーに、コレクター ディレクトリに対する完全なアクセス許可を与えます。
+    1. IntelliTrace PowerShell コマンドレットを実行するユーザーに、コレクター ディレクトリに対する完全なアクセス許可を与えます。
 
          例えば:
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
-    2.  Web アプリまたは SharePoint アプリケーションのアプリケーション プールに、コレクター ディレクトリに対する読み取りおよび実行アクセス許可を与えます。
+    2. Web アプリまたは SharePoint アプリケーションのアプリケーション プールに、コレクター ディレクトリに対する読み取りおよび実行アクセス許可を与えます。
 
          例えば:
 
-        -   **DefaultAppPool** アプリケーション プールの Web アプリの場合:
+        - **DefaultAppPool** アプリケーション プールの Web アプリの場合:
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\DefaultAppPool":RX`
 
-        -   **SharePoint - 80** アプリケーション プールの SharePoint アプリケーションの場合:
+        - **SharePoint - 80** アプリケーション プールの SharePoint アプリケーションの場合:
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-##  <a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> Web アプリまたは SharePoint アプリケーションのデータを収集するための IntelliTrace PowerShell コマンドレットをインストールする
+## <a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> Web アプリまたは SharePoint アプリケーションのデータを収集するための IntelliTrace PowerShell コマンドレットをインストールする
 
-1.  アプリのサーバーで、PowerShell が有効になっていることを確認します。 Windows Server のほとんどのバージョンでは、 **サーバー マネージャー** 管理ツールを使用してこの機能を追加できます。
+1. アプリのサーバーで、PowerShell が有効になっていることを確認します。 Windows Server のほとんどのバージョンでは、 **サーバー マネージャー** 管理ツールを使用してこの機能を追加できます。
 
      ![サーバー マネージャーを使用して PowerShell の追加](../debugger/media/intellitrace-servermanager-addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
 
-2.  IntelliTrace PowerShell コマンドレットをインストールします。
+2. IntelliTrace PowerShell コマンドレットをインストールします。
 
-    1.  管理者として PowerShell コマンド ウィンドウを開きます。
+    1. 管理者として PowerShell コマンド ウィンドウを開きます。
 
-        1.  **[スタート]**、 **[すべてのプログラム]**、 **[アクセサリ]**、 **[Windows PowerShell]** の順に選択します。
+        1. **[スタート]**、 **[すべてのプログラム]**、 **[アクセサリ]**、 **[Windows PowerShell]** の順に選択します。
 
-        2.  次のいずれかの操作を実行します。
+        2. 次のいずれかの操作を実行します。
 
-            -   64 ビット オペレーティング システムでは、 **[Windows PowerShell]** のショートカット メニューを開きます。 **[管理者として実行]** を選択します。
+            - 64 ビット オペレーティング システムでは、 **[Windows PowerShell]** のショートカット メニューを開きます。 **[管理者として実行]** を選択します。
 
-            -   32 ビット オペレーティング システムでは、 **[Windows PowerShell (x86)]** のショートカット メニューを開きます。 **[管理者として実行]** を選択します。
+            - 32 ビット オペレーティング システムでは、 **[Windows PowerShell (x86)]** のショートカット メニューを開きます。 **[管理者として実行]** を選択します。
 
-    2.  PowerShell コマンド ウィンドウで、 **Import-Module** コマンドを使用して **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**をインポートします。
+    2. PowerShell コマンド ウィンドウで、 **Import-Module** コマンドを使用して **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**をインポートします。
 
          例えば:
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
-##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> .iTrace ファイル ディレクトリのアクセス許可を設定する
+## <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> .iTrace ファイル ディレクトリのアクセス許可を設定する
 
 1. アプリのサーバーでは、たとえば、.iTrace ファイル ディレクトリを作成します。**C:\IntelliTraceLogFiles**) を作成します。
 
    > [!NOTE]
    > - アプリの処理が低下するのを回避するには、あまりアクティブではないローカルの高速なディスク上の場所を選択してください。
-   >   -   .iTrace ファイルとコレクター ファイルは同じ場所に配置できます。 ただし、Web アプリまたは SharePoint アプリケーションがある場合は、この場所がアプリケーションをホストするディレクトリの外部にあることを確認します。
+   >   - .iTrace ファイルとコレクター ファイルは同じ場所に配置できます。 ただし、Web アプリまたは SharePoint アプリケーションがある場合は、この場所がアプリケーションをホストするディレクトリの外部にあることを確認します。
    >
    > [!IMPORTANT]
    > - .iTrace ファイル ディレクトリへのアクセスを、コレクターを使用する必要がある ID のみに制限します。 IntelliTrace はメソッド パラメーターに渡されるデータや戻り値として渡されるデータを記録できるため、ユーザー、データベース、その他のソースの場所、および接続文字列のデータなどの重要情報が .iTrace ファイルに含まれることがあります。
-   >   -   .iTrace ファイルを開くことができるユーザーが、重要情報を表示する権限が与えられているユーザーであることを確認します。 .iTrace ファイルを共有する場合は注意してください。 他のユーザーがアクセスを必要とするときは、安全な共有の場所にファイルをコピーします。
+   >   - .iTrace ファイルを開くことができるユーザーが、重要情報を表示する権限が与えられているユーザーであることを確認します。 .iTrace ファイルを共有する場合は注意してください。 他のユーザーがアクセスを必要とするときは、安全な共有の場所にファイルをコピーします。
 
 2. Web アプリまたは SharePoint アプリケーションのアプリケーション プールに、.iTrace ファイル ディレクトリに対する完全なアクセス許可を与えます。 Windows の **icacls** コマンドまたはエクスプローラー (またはファイル エクスプローラー) を使用できます。
 
@@ -196,23 +196,23 @@ ms.locfileid: "58977350"
 
    - エクスプローラー (またはファイル エクスプローラー) を使用してアクセス許可を設定するには:
 
-     1.  .iTrace ファイル ディレクトリの **[プロパティ]** を開きます。
+     1. .iTrace ファイル ディレクトリの **[プロパティ]** を開きます。
 
-     2.  **[セキュリティ]** タブで、 **[編集]**、 **[追加]** を順に選択します。
+     2. **[セキュリティ]** タブで、 **[編集]**、 **[追加]** を順に選択します。
 
-     3.  **[オブジェクトの種類を選択してください]** ボックスに **[ビルトイン セキュリティ プリンシパル]** が表示されることを確認します。 表示されない場合は、 **[オブジェクトの種類]** を選択してこれを追加します。
+     3. **[オブジェクトの種類を選択してください]** ボックスに **[ビルトイン セキュリティ プリンシパル]** が表示されることを確認します。 表示されない場合は、 **[オブジェクトの種類]** を選択してこれを追加します。
 
-     4.  ローカル コンピューターが **[場所の指定]** ボックスに表示されることを確認します。 表示されない場合は、 **[場所]** を選択してこれを追加します。
+     4. ローカル コンピューターが **[場所の指定]** ボックスに表示されることを確認します。 表示されない場合は、 **[場所]** を選択してこれを追加します。
 
-     5.  **[選択するオブジェクト名を入力してください]** ボックスに、Web アプリまたは SharePoint アプリケーションのアプリケーション プールを追加します。
+     5. **[選択するオブジェクト名を入力してください]** ボックスに、Web アプリまたは SharePoint アプリケーションのアプリケーション プールを追加します。
 
-     6.  **[名前の確認]** を選択して名前を解決します。 **[OK]** をクリックします。
+     6. **[名前の確認]** を選択して名前を解決します。 **[OK]** をクリックします。
 
-     7.  アプリケーション プールに対して **フル コントロール**のアクセス許可が設定されていることを確認します。
+     7. アプリケーション プールに対して **フル コントロール**のアクセス許可が設定されていることを確認します。
 
-##  <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Web アプリまたは SharePoint アプリケーションからデータを収集する
+## <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Web アプリまたは SharePoint アプリケーションからデータを収集する
 
-1.  データの収集を開始するには、PowerShell のコマンド ウィンドウを管理者として開き、次のコマンドを実行します。
+1. データの収集を開始するには、PowerShell のコマンド ウィンドウを管理者として開き、次のコマンドを実行します。
 
      `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
@@ -233,28 +233,28 @@ ms.locfileid: "58977350"
 
      *この時点で .iTrace ファイルを表示できますか。* いいえ。データ収集中はファイルがロックされます。
 
-2.  問題を再現します。
+2. 問題を再現します。
 
-3.  .iTrace ファイルのスナップショットを取得するには、次の構文を使用します。
+3. .iTrace ファイルのスナップショットを取得するには、次の構文を使用します。
 
      `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
-4.  コレクションの実行状態を確認するには、次の構文を使用します。
+4. コレクションの実行状態を確認するには、次の構文を使用します。
 
      `Get-IntelliTraceCollectionStatus`
 
-5.  データ収集を停止するには、次の構文を使用します。
+5. データ収集を停止するには、次の構文を使用します。
 
      `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
     >  このコマンドを実行した後、「 **Y** 」と入力してデータ収集を停止することを確認します。 この操作を行わないと、コレクターはデータを収集し続けます。iTrace ファイルはロックされたままになり、ファイルに有用なデータが含まれなくなる可能性があります。
 
-6.  [Visual Studio Enterprise で .iTrace ファイルを開く](#BKMK_View_IntelliTrace_Log_Files)
+6. [Visual Studio Enterprise で .iTrace ファイルを開く](#BKMK_View_IntelliTrace_Log_Files)
 
-##  <a name="BKMK_Collect_Data_from_Executables"></a> マネージド アプリからのデータの収集
+## <a name="BKMK_Collect_Data_from_Executables"></a> マネージド アプリからのデータの収集
 
-1.  アプリを起動すると同時にデータの収集を開始するには、次の構文を使用します。
+1. アプリを起動すると同時にデータの収集を開始するには、次の構文を使用します。
 
      *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
@@ -269,25 +269,25 @@ ms.locfileid: "58977350"
     |*FullPathToITraceFileDirectoryAndFileName*|.iTrace ファイル ディレクトリへの完全パスと、拡張子 **.itrace** を含む .iTrace ファイル名。 **セキュリティに関するメモ:** 相対パスではなく完全パスを指定します。|
     |*PathToAppExecutableFileAndFileName*|マネージド アプリのパスとファイル名。|
 
-2.  アプリを終了し、データ収集を停止します。
+2. アプリを終了し、データ収集を停止します。
 
-3.  [Visual Studio Enterprise で .iTrace ファイルを開く](#BKMK_View_IntelliTrace_Log_Files)
+3. [Visual Studio Enterprise で .iTrace ファイルを開く](#BKMK_View_IntelliTrace_Log_Files)
 
-##  <a name="BKMK_View_IntelliTrace_Log_Files"></a> Visual Studio Enterprise で .iTrace ファイルを開く
+## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Visual Studio Enterprise で .iTrace ファイルを開く
 
 > [!NOTE]
 >  IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 参照してください[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)します。
 
-1.  Visual Studio Enterprise (Professional Edition でも Community Edition でもなく) がインストールされたコンピューターに、.iTrace ファイルを移動またはコピーします。
+1. Visual Studio Enterprise (Professional Edition でも Community Edition でもなく) がインストールされたコンピューターに、.iTrace ファイルを移動またはコピーします。
 
-2.  Visual Studio の外部で .iTrace ファイルをダブルクリックするか、Visual Studio 内からファイルを開きます。
+2. Visual Studio の外部で .iTrace ファイルをダブルクリックするか、Visual Studio 内からファイルを開きます。
 
      Visual Studio に **[IntelliTrace の概要]** ページが表示されます。 ほとんどのセクションにおいて、イベントまたは他の項目を確認したうえで項目を選択し、イベントが発生したポイントで IntelliTrace を使用してデバッグを開始できます。 参照してください[保存された IntelliTrace データを使用して](../debugger/using-saved-intellitrace-data.md)します。
 
     > [!NOTE]
     >  IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが開発コンピューターに必要です。 参照してください[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)します。
 
-##  <a name="Minimizing"></a> アプリのパフォーマンスの低下なしにほとんどのデータを取得する方法
+## <a name="Minimizing"></a> アプリのパフォーマンスの低下なしにほとんどのデータを取得する方法
  IntelliTrace では大量のデータを収集できます。そのため、アプリのパフォーマンスへの影響は、IntelliTrace で収集するデータの種類、および分析するコードの種類によって決まります。 「 [運用サーバーでの IntelliTrace 収集の最適化](http://go.microsoft.com/fwlink/?LinkId=255233)」を参照してください。
 
  アプリのパフォーマンスが低下することなく、ほとんどのデータを取得する方法を次に示します。
@@ -310,9 +310,9 @@ ms.locfileid: "58977350"
 
    *これにより、どのようにパフォーマンスが向上しますか。*
 
-  -   アプリに関連しないイベントを無効にすると、起動時間を短縮できます。 たとえば、Windows Workflow を使用しないアプリの Windows Workflow イベントを無効にします。
+  - アプリに関連しないイベントを無効にすると、起動時間を短縮できます。 たとえば、Windows Workflow を使用しないアプリの Windows Workflow イベントを無効にします。
 
-  -   レジストリにアクセスするアプリのレジストリ イベントを無効にすると、起動およびランタイムのパフォーマンスは向上し、レジストリ設定に関する問題は見られません。
+  - レジストリにアクセスするアプリのレジストリ イベントを無効にすると、起動およびランタイムのパフォーマンスは向上し、レジストリ設定に関する問題は見られません。
 
 - IntelliTrace がデータを収集する収集計画のモジュールを確認します。 目的のモジュールのみ含めるように収集計画を編集します。
 
@@ -379,11 +379,11 @@ ms.locfileid: "58977350"
 
    コレクターは、 `id`メソッドから返された、 `Employee.Id`、 `Employee.Name` 、 `Employee` 、および `AlterEmployee` の各オブジェクトの値を記録します。 ただし、null であるかどうかの情報を除き、 `Address` オブジェクトについての情報は記録しません。 コレクターは、メソッド パラメーターとして記録される時点のパラメーターとしてそれらのローカル変数を他のメソッドが使用する場合を除き、 `AlterEmployee` メソッドのローカル変数に関するデータは記録しません。
 
-##  <a name="WhereElse"></a> IntelliTrace データを取得できるその他の場所
+## <a name="WhereElse"></a> IntelliTrace データを取得できるその他の場所
 
--   IntelliTrace デバッグ セッションを Visual Studio Enterprise から次を参照してください。 [IntelliTrace 機能](../debugger/intellitrace-features.md)します。
+- IntelliTrace デバッグ セッションを Visual Studio Enterprise から次を参照してください。 [IntelliTrace 機能](../debugger/intellitrace-features.md)します。
 
--   Microsoft Test Manager でのテスト セッションから次を参照してください。[方法。困難な問題をデバッグに役立つ IntelliTrace データを収集](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015)します。
+- Microsoft Test Manager でのテスト セッションから次を参照してください。[方法。困難な問題をデバッグに役立つ IntelliTrace データを収集](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015)します。
 
 ## <a name="where-can-i-get-more-information"></a>情報の入手方法
  [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)

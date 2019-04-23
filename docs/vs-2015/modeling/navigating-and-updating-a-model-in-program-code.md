@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b9f53f1c2e28ce84cc59afa1d1db205da61e735
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 260d726ef9f6478292fe80c7fd90ffc4a807265d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110805"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>プログラム コードにおけるモデル内の移動およびモデルの更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "58963059"
   
  図形、コネクタ、図、およびそれらの関係をモデル要素には、個別のトピックで説明します。 詳細については、「[方法 :移動し、図を更新](../misc/how-to-navigate-and-update-a-diagram.md)します。  
   
-##  <a name="example"></a> DSL 定義の例  
+## <a name="example"></a> DSL 定義の例  
  これは、このトピックの例については、DslDefinition.dsl の主要部分です。  
   
  ![DSL 定義図&#45;ファミリ ツリー モデル](../modeling/media/familyt-person.png "FamilyT_Person")  
@@ -76,7 +76,7 @@ ms.locfileid: "58963059"
   
  さらに、DSL が定義されている 1 つから別のプロジェクトでコードを記述する場合は、Dsl プロジェクトをビルドしたアセンブリをインポートする必要があります。  
   
-##  <a name="navigation"></a> モデルの移動  
+## <a name="navigation"></a> モデルの移動  
   
 ### <a name="properties"></a>プロパティ  
  DSL 定義で定義したドメインのプロパティでは、プログラム コードでアクセス可能なプロパティになります。  
@@ -143,7 +143,7 @@ ms.locfileid: "58963059"
   
  `store.ElementDirectory.GetElement(elementId);`  
   
-##  <a name="metadata"></a> クラス情報にアクセスします。  
+## <a name="metadata"></a> クラス情報にアクセスします。  
  クラス、リレーションシップ、および DSL 定義の他の側面についての情報を取得することができます。 例:  
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
@@ -160,11 +160,11 @@ ms.locfileid: "58963059"
   
  モデル要素の先祖クラスは次のとおりです。  
   
--   ModelElement - すべての要素および関係はモデル要素です。  
+- ModelElement - すべての要素および関係はモデル要素です。  
   
--   ElementLink - すべてのリレーションシップは ElementLinks  
+- ElementLink - すべてのリレーションシップは ElementLinks  
   
-##  <a name="transaction"></a> トランザクション内で変更を実行します。  
+## <a name="transaction"></a> トランザクション内で変更を実行します。  
  プログラム コードが、ストアでは何も変更されるたびに、行う必要があります、トランザクション内で。 これは、すべてのモデル要素、リレーションシップ、図形、図、およびそのプロパティに適用されます。 詳細については、「 <xref:Microsoft.VisualStudio.Modeling.Transaction> 」を参照してください。  
   
  トランザクションの管理の最も便利な方法は、`using`ステートメントで囲む、`try...catch`ステートメント。  
@@ -197,7 +197,7 @@ catch (Exception ex)
   
  変更を永続的なようにするにする必要があります`Commit`破棄される前に、トランザクション。 トランザクション内でキャッチされない例外が発生した場合、ストアが、変更前に、の状態にリセットされます。  
   
-##  <a name="elements"></a> モデル要素を作成します。  
+## <a name="elements"></a> モデル要素を作成します。  
  この例では、既存のモデル要素を追加します。  
   
 ```  
@@ -230,38 +230,38 @@ using (Transaction t =
   
   この方法で要素を作成するときに (DSL に図がある場合)、図形が自動的に作成します。 既定の図形、色、およびその他の機能と、自動的に割り当てられている場所に表示されます。 参照してください、関連付けられた図形が表示される場所と方法を制御する場合[要素とその図形を作成する](#merge)します。  
   
-##  <a name="links"></a> リレーションシップ リンクを作成します。  
+## <a name="links"></a> リレーションシップ リンクを作成します。  
  DSL 定義の例で定義されている 2 つのリレーションシップがあります。 各リレーションシップを定義、*ロール プロパティ*リレーションシップの両端にあるクラス。  
   
  リレーションシップのインスタンスを作成できる 3 つの方法はあります。 これら 3 つのメソッドのそれぞれは、同じ効果があります。  
   
 - ソース ロール プレーヤーのプロパティを設定します。 例:  
   
-  -   `familyTree.People.Add(edward);`  
+  - `familyTree.People.Add(edward);`  
   
-  -   `edward.Parents.Add(henry);`  
+  - `edward.Parents.Add(henry);`  
   
 - ターゲット ロール プレーヤーのプロパティを設定します。 例:  
   
-  -   `edward.familyTreeModel = familyTree;`  
+  - `edward.familyTreeModel = familyTree;`  
   
        このロールの多重度が`1..1`ので、値を割り当てます。  
   
-  -   `henry.Children.Add(edward);`  
+  - `henry.Children.Add(edward);`  
   
        このロールの多重度が`0..*`ので、コレクションに追加します。  
   
 - リレーションシップのインスタンスを明示的に作成します。 例:  
   
-  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
+  - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
-  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
+  - `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
   
   最後のメソッドは、リレーションシップ自体のプロパティを設定する場合に便利です。  
   
   この方法で要素を作成するときに、図上のコネクタが自動的に作成するが既定の図形、色、およびその他の機能があります。 関連するコネクタを作成する方法を制御するを参照してください。[要素とその図形を作成する](#merge)します。  
   
-##  <a name="deleteelements"></a> 要素の削除  
+## <a name="deleteelements"></a> 要素の削除  
  呼び出すことによって要素を削除する`Delete()`:  
   
  `henry.Delete();`  
@@ -284,7 +284,7 @@ using (Transaction t =
   
   場合によっては、ロック、要素または伝達によって削除される要素のいずれかの存在によって削除ができません。 使用することができます`element.CanDelete()`要素を削除できるかどうかを確認します。  
   
-##  <a name="deletelinks"></a> リレーションシップ リンクを削除します。  
+## <a name="deletelinks"></a> リレーションシップ リンクを削除します。  
  リレーションシップ リンクを削除するには、ロールのプロパティから要素を削除します。  
   
  `henry.Children.Remove(edward); // or:`  
@@ -303,7 +303,7 @@ using (Transaction t =
   
  `edward.FamilyTreeModel = anotherFamilyTree;`  
   
-##  <a name="reorder"></a> リレーションシップのリンクの順序  
+## <a name="reorder"></a> リレーションシップのリンクの順序  
  ソースまたは特定のモデル要素を対象とする特定のリレーションシップのリンクでは、特定のシーケンスがあります。 追加された順序で表示されます。 たとえば、このステートメントは常に同じ順序で子を生成します。  
   
  `foreach (Person child in henry.Children) ...`  
@@ -320,12 +320,12 @@ using (Transaction t =
   
  `link.MoveBefore(role, nextLink);`  
   
-##  <a name="locks"></a> ロック  
+## <a name="locks"></a> ロック  
  ロックによって、変更ができない可能性があります。 個々 の要素、パーティション、およびストアのロックを設定できます。 変更の種類を防止するロックをこれらのレベルのいずれかにある場合、例外がスローされるときに実行しようとします。 要素を使用してロックを設定するかどうかを検出できます。名前空間で定義されている拡張メソッドである、GetLocks()<xref:Microsoft.VisualStudio.Modeling.Immutability>します。  
   
  詳細については、次を参照してください。[読み取り専用セグメントを作成するロックのポリシーを定義する](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)します。  
   
-##  <a name="copy"></a> コピーと貼り付け  
+## <a name="copy"></a> コピーと貼り付け  
  要素または要素のグループにコピーすることができます、 <xref:System.Windows.Forms.IDataObject>:  
   
 ```  
@@ -350,7 +350,7 @@ using (Transaction t = targetDiagram.Store.
   
  `Merge ()` いずれかを受け入れることができます、`PresentationElement`または`ModelElement`します。 指定した場合、 `PresentationElement`、3 番目のパラメーターとしてターゲット図上の位置を指定することもできます。  
   
-##  <a name="diagrams"></a> 移動およびダイアグラムの更新  
+## <a name="diagrams"></a> 移動およびダイアグラムの更新  
  DSL、人や音楽などの概念を表すドメイン モデル要素は別のダイアグラムに表示されるものを表す図形要素から。 ドメイン モデル要素には、重要なプロパティと概念の間のリレーションシップが格納されます。 図形要素には、サイズ、位置とダイアグラムで、オブジェクトの表示の色とその構成部分のレイアウトが格納されます。  
   
 ### <a name="presentation-elements"></a>Presentation 要素  
@@ -372,7 +372,7 @@ using (Transaction t = targetDiagram.Store.
   
  図形は、2 つのセットで子図形を持つことができます。 内の図形、`NestedChildShapes`セットは、親の境界ボックスに限られています。 内の図形、`RelativeChildShapes`一覧が親 – ラベルやポートなどの境界の外側外側または一部を表示できます。 ダイアグラムを持たない`RelativeChildShapes`および no`Parent`します。  
   
-###  <a name="views"></a> 図形と要素間を移動します。  
+### <a name="views"></a> 図形と要素間を移動します。  
  ドメイン モデル要素と図形要素に関連して、<xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject>リレーションシップ。  
   
 ```csharp  
@@ -444,22 +444,22 @@ FamilyTreeDiagram diagram =
   
  --------- *YourConnector*  
   
-###  <a name="shapeProperties"></a> シェイプおよびコネクタのプロパティ  
+### <a name="shapeProperties"></a> シェイプおよびコネクタのプロパティ  
  ほとんどの場合は、図形に明示的な変更を加える必要はありません。 モデル要素を変更したときに、「修正」ルールは、図形とコネクタを更新します。 詳細については、次を参照してください。[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)します。  
   
  ただし、図形には、モデル要素に依存しないプロパティを明示的ないくつか変更するのには便利です。 たとえば、これらのプロパティを変更する可能性があります。  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> -、図形の幅と高さを決定します。  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> -、図形の幅と高さを決定します。  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -親図形または図に対する相対位置  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -親図形または図に対する相対位置  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> -ペンとシェイプまたはコネクタを描画するために使用されるブラシのセット  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> -ペンとシェイプまたはコネクタを描画するために使用されるブラシのセット  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> -図形を非表示にします。  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> -図形を非表示にします。  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> -図形は、後に表示します。 `Hide()`  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> -図形は、後に表示します。 `Hide()`  
   
-###  <a name="merge"></a> 要素とその図形を作成します。  
+### <a name="merge"></a> 要素とその図形を作成します。  
  作成する要素の埋め込みリレーションシップ ツリーにリンクすると、図形が自動的に作成され、関連付けられています。 これは、トランザクションの最後に実行するルールを「修正」を実行します。 ただし、図形は、自動的に割り当てられている場所に表示され、形状、色、およびその他の機能は既定値を設定します。 図形を作成する方法を制御するには、マージ関数を使用できます。 まず ElementGroup に追加する要素を追加して、ダイアグラムにグループをマージする必要があります。  
   
  このメソッドには:  
@@ -512,7 +512,7 @@ partial class MyDiagram
 ### <a name="use-transactions"></a>トランザクションを使用します。  
  図形、コネクタと図のサブタイプは<xref:Microsoft.VisualStudio.Modeling.ModelElement>とストアでライブします。 トランザクション内でのみに変更を行う必要がありますので。 詳細については、「[方法 :モデルを更新するトランザクションを使用して](../modeling/how-to-use-transactions-to-update-the-model.md)します。  
   
-##  <a name="docdata"></a> ドキュメント ビューとドキュメント データ  
+## <a name="docdata"></a> ドキュメント ビューとドキュメント データ  
  ![標準の図の種類のクラス ダイアグラム](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
   
 ## <a name="store-partitions"></a>パーティションを格納します。  

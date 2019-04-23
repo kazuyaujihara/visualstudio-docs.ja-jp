@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05faeddf43c91ce0f45d54d2f6b6ed46cf8d2a4f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f34121ca50ae2467addb29809e7a3792063642ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062451"
 ---
 # <a name="sourcetextattr-enumeration"></a>SOURCE_TEXT_ATTR 列挙型
 ソース テキストの単一文字の属性を記述します。  
@@ -44,11 +44,11 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
 ## <a name="remarks"></a>Remarks  
  通常、 `IDebugDocumentHost::GetScriptTextAttributes`、`IActiveScriptDebug::GetScriptletTextAttributes`と`IActiveScriptDebug::GetScriptTextAttributes`しない限り、メソッドは、1 文字あたり 1 つのテキスト属性を返します。  
   
--   GETATTRTYPE_DEPSCAN フラグを設定すると、その場合、メソッドが SOURCETEXT_ATTR_IDENTIFIER と SOURCETEXT_ATTR_MEMBERLOOKUP のフラグを返す可能性があります。  
+- GETATTRTYPE_DEPSCAN フラグを設定すると、その場合、メソッドが SOURCETEXT_ATTR_IDENTIFIER と SOURCETEXT_ATTR_MEMBERLOOKUP のフラグを返す可能性があります。  
   
--   GETATTRFLAG_THIS フラグを設定すると、その場合メソッドは、SOURCETEXT_ATTR_THIS フラグを返す可能性があります。  
+- GETATTRFLAG_THIS フラグを設定すると、その場合メソッドは、SOURCETEXT_ATTR_THIS フラグを返す可能性があります。  
   
--   GETATTRFLAG_HUMANTEXT フラグが設定されますが、この場合、メソッドが SOURCETEXT_ATTR_HUMANTEXT フラグを返す可能性があります。  
+- GETATTRFLAG_HUMANTEXT フラグが設定されますが、この場合、メソッドが SOURCETEXT_ATTR_HUMANTEXT フラグを返す可能性があります。  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプト デバッガーの定数、列挙型、および構造体](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

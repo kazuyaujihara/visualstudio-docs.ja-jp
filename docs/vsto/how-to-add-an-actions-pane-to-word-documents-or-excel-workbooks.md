@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b33a3f7980031a84e381a317213de988280517c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598234"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085845"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>方法: Word 文書または Excel ブックに操作ウィンドウを追加する
   に Microsoft Office Word ドキュメントまたは Microsoft Excel ブックを操作ウィンドウを追加するには、Windows フォーム ユーザー コントロールをまず作成します。 次に、ユーザー コントロールを追加、<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>のプロパティ、`ThisDocument.ActionsPane`フィールド (Word) または`ThisWorkbook.ActionsPane`project のフィールド (Excel)。
@@ -35,26 +35,26 @@ ms.locfileid: "56598234"
 
 #### <a name="to-create-the-user-control"></a>ユーザー コントロールを作成するには
 
-1.  Visual Studio で Word または Excel ドキュメント レベルのプロジェクトを開きます。
+1. Visual Studio で Word または Excel ドキュメント レベルのプロジェクトを開きます。
 
-2.  **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
+2. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
-3.  **新しい項目の追加**ダイアログ ボックスで、**操作ウィンドウ コントロール**、名前を付けます**HelloControl**、 をクリック**追加**します。
+3. **新しい項目の追加**ダイアログ ボックスで、**操作ウィンドウ コントロール**、名前を付けます**HelloControl**、 をクリック**追加**します。
 
     > [!NOTE]
     >  別の方法として追加することができます、**ユーザー コントロール**をプロジェクトに項目。 によって生成されたクラス、**操作ウィンドウ コントロール**と**ユーザー コントロール**項目は、機能的に同等です。
 
-4.  **Windows フォーム**のタブ、**ツールボックス**ドラッグ、**ボタン**コントロールをコントロールにします。
+4. **Windows フォーム**のタブ、**ツールボックス**ドラッグ、**ボタン**コントロールをコントロールにします。
 
     > [!NOTE]
     >  コントロールがデザイナーで表示されていない場合をダブルクリックします**HelloControl**で**ソリューション エクスプ ローラー**します。
 
-5.  コードを追加して、<xref:System.Windows.Forms.Control.Click>ボタンのイベント ハンドラー。 次の例では、Microsoft Office Word ドキュメントのコードを示します。
+5. コードを追加して、<xref:System.Windows.Forms.Control.Click>ボタンのイベント ハンドラー。 次の例では、Microsoft Office Word ドキュメントのコードを示します。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#12)]
      [!code-vb[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb#12)]
 
-6.  C# では、ボタン クリックのイベント ハンドラーを追加する必要があります。 このコードを配置することができます、`HelloControl`コンス トラクターの呼び出し後`InitializeComponent`します。
+6. C# では、ボタン クリックのイベント ハンドラーを追加する必要があります。 このコードを配置することができます、`HelloControl`コンス トラクターの呼び出し後`InitializeComponent`します。
 
      イベント ハンドラーを作成する方法については、次を参照してください。[方法。Office プロジェクトでイベント ハンドラーを作成する](../vsto/how-to-create-event-handlers-in-office-projects.md)します。
 
@@ -65,12 +65,12 @@ ms.locfileid: "56598234"
 
 ### <a name="to-add-the-user-control-to-the-actions-pane"></a>[操作] ウィンドウにユーザー コントロールを追加するには
 
-1.  次のコードを追加、`ThisDocument`または`ThisWorkbook`クラスレベル宣言としてクラス (は、メソッドに次のコードが追加されることはありません)。
+1. 次のコードを追加、`ThisDocument`または`ThisWorkbook`クラスレベル宣言としてクラス (は、メソッドに次のコードが追加されることはありません)。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#14)]
      [!code-vb[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#14)]
 
-2.  次のコードを追加、`ThisDocument_Startup`のイベント ハンドラー、`ThisDocument`クラスまたは`ThisWorkbook_Startup`のイベント ハンドラー、`ThisWorkbook`クラス。
+2. 次のコードを追加、`ThisDocument_Startup`のイベント ハンドラー、`ThisDocument`クラスまたは`ThisWorkbook_Startup`のイベント ハンドラー、`ThisWorkbook`クラス。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]

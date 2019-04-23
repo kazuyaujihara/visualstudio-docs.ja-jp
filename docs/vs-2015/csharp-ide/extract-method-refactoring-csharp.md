@@ -1,5 +1,5 @@
 ---
-title: メソッドの抽出リファクタリング (C#) |Microsoft Docs
+title: メソッドの抽出リファクタリング (c#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2d38c46d630f7deccaec8c093c2c4e75456eec0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041399"
 ---
 # <a name="extract-method-refactoring-c"></a>メソッドの抽出リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "58962801"
   
  **メソッドの抽出**次の利点があります。  
   
--   再利用可能な個別のメソッドを目立たせることで、コーディングのベスト プラクティスをお勧めします。  
+- 再利用可能な個別のメソッドを目立たせることで、コーディングのベスト プラクティスをお勧めします。  
   
--   適切な組織でのコードを自己文書化を促進します。  
+- 適切な組織でのコードを自己文書化を促進します。  
   
      わかりやすい名前が使用されている高度な方法の詳細は一連のコメントをなどことができます。  
   
--   メソッドをオーバーライドする簡略化に細かい単位の作成をお勧めします。  
+- メソッドをオーバーライドする簡略化に細かい単位の作成をお勧めします。  
   
--   コードの重複を削減します。  
+- コードの重複を削減します。  
   
 ### <a name="to-use-extract-method"></a>メソッドの抽出を使用するには  
   
-1.  `ExtractMethod` という名前のコンソール アプリケーションを作成し、`Program` を次のコード例で置き換えます。  
+1. `ExtractMethod` という名前のコンソール アプリケーションを作成し、`Program` を次のコード例で置き換えます。  
   
     ```csharp  
     class A  
@@ -68,13 +68,13 @@ ms.locfileid: "58962801"
     }  
     ```  
   
-2.  抽出するコード フラグメントを選択します。  
+2. 抽出するコード フラグメントを選択します。  
   
     ```csharp  
     double area = PI * radius * radius;  
     ```  
   
-3.  **リファクタリング** メニューのをクリックして**メソッドの抽出**します。  
+3. **リファクタリング** メニューのをクリックして**メソッドの抽出**します。  
   
      **メソッドの抽出** ダイアログ ボックスが表示されます。  
   
@@ -82,11 +82,11 @@ ms.locfileid: "58962801"
   
      右、選択したコードをポイントして、**リファクタリング**、 をクリックし、**メソッドの抽出**を表示する、**メソッドの抽出** ダイアログ ボックス。  
   
-4.  新規のメソッドの名前を指定します。`CircleArea`の、**新しいメソッドの名前**ボックス。  
+4. 新規のメソッドの名前を指定します。`CircleArea`の、**新しいメソッドの名前**ボックス。  
   
      新しいメソッドのシグネチャのプレビューを表示します**メソッド シグネチャのプレビュー**します。  
   
-5.  **[OK]** をクリックします。  
+5. **[OK]** をクリックします。  
   
 ## <a name="remarks"></a>Remarks  
  使用すると、**メソッドの抽出**コマンドを次のソース メンバーを同じクラスの新しいメソッドを挿入します。  

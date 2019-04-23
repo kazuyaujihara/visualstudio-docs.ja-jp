@@ -11,12 +11,12 @@ ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 805b86802e64c91e52d869b067fac871603019e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6c9de9c90840c01b37b99d813fbf23b7c2be3eea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963143"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066573"
 ---
 # <a name="loading-vspackages"></a>VSPackage の読み込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Vspackage は、それらの機能が必要な場合にのみ、Visual Studio �
   
 ### <a name="autoloading-a-vspackage-in-a-specific-context"></a>特定のコンテキストで VSPackage を自動読み込み  
   
--   追加、 `ProvideAutoLoad` VSPackage 属性に属性します。  
+- 追加、 `ProvideAutoLoad` VSPackage 属性に属性します。  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -43,11 +43,11 @@ Vspackage は、それらの機能が必要な場合にのみ、Visual Studio �
   
      列挙型のフィールドを参照してください。 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> UI コンテキストとその GUID 値の一覧についてはします。  
   
--   ブレークポイントを設定、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。  
+- ブレークポイントを設定、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。  
   
--   VSPackage をビルドしてデバッグを開始します。  
+- VSPackage をビルドしてデバッグを開始します。  
   
--   ソリューションを読み込むか、1 つを作成します。  
+- ソリューションを読み込むか、1 つを作成します。  
   
      VSPackage では、読み込みをブレークポイントで停止します。  
   
@@ -56,7 +56,7 @@ Vspackage は、それらの機能が必要な場合にのみ、Visual Studio �
   
  使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A>をロードするために VSPackage を強制する方法。  
   
--   次のコードを挿入、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドの VSPackage を読み込む別の VSPackage を強制します。  
+- 次のコードを挿入、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドの VSPackage を読み込む別の VSPackage を強制します。  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  

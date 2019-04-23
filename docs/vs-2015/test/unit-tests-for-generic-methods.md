@@ -11,12 +11,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d93d14383ec755f14619f4d126c7f676acafc6c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771466"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070109"
 ---
 # <a name="unit-tests-for-generic-methods"></a>ジェネリック メソッドの単体テスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ ms.locfileid: "54771466"
 ## <a name="examples"></a>使用例  
  ジェネリックの単体テストの例を次に示します。  
   
--   [生成されたテスト コードの編集](#EditingGeneratedTestCode)。 この例には、「生成後のテスト コード」と「編集後のテスト コード」という 2 つのセクションがあります。 ここでは、ジェネリック メソッドから生成される未加工のテスト コードを編集して有用なテスト メソッドにする方法を示します。  
+- [生成されたテスト コードの編集](#EditingGeneratedTestCode)。 この例には、「生成後のテスト コード」と「編集後のテスト コード」という 2 つのセクションがあります。 ここでは、ジェネリック メソッドから生成される未加工のテスト コードを編集して有用なテスト メソッドにする方法を示します。  
   
--   [型制約の使用](#TypeConstraintNotSatisfied)。 この例では、型制約を使用するジェネリック メソッドの単体テストを示します。 この例では、型制約が満たされていません。  
+- [型制約の使用](#TypeConstraintNotSatisfied)。 この例では、型制約を使用するジェネリック メソッドの単体テストを示します。 この例では、型制約が満たされていません。  
   
-###  <a name="EditingGeneratedTestCode"></a> 例 1: 生成されたテスト コードの編集  
+### <a name="EditingGeneratedTestCode"></a> 例 1:生成されたテスト コードの編集  
  このセクションのテスト コードでは、`SizeOfLinkedList()` という名前のテスト対象コードのメソッドをテストします。 このメソッドは、リンク リスト内のノード数を示す整数を返します。  
   
  「生成後のテスト コード」にある最初のコード例では、Visual Studio Enterprise で生成された編集前のテスト コードを示しています。 「編集後のテスト コード」にある 2 番目のコード例では、2 つのデータ型 `int` と `char` に対して SizeOfLinkedList メソッドの機能をテストする方法を示しています。  
   
  このコードでは、2 つのメソッドを示します。  
   
--   `SizeOfLinkedListTestHelper<T>()` テスト ヘルパー メソッド。 既定では、テスト ヘルパー メソッドは名前に "TestHelper" を使用しています。  
+- `SizeOfLinkedListTestHelper<T>()` テスト ヘルパー メソッド。 既定では、テスト ヘルパー メソッドは名前に "TestHelper" を使用しています。  
   
--   `SizeOfLinkedListTest()` テスト メソッド。 各テスト メソッドは、TestMethod 属性でマークされています。  
+- `SizeOfLinkedListTest()` テスト メソッド。 各テスト メソッドは、TestMethod 属性でマークされています。  
   
 #### <a name="generated-test-code"></a>生成後のテスト コード  
  次のテスト コードは、`SizeOfLinkedList()` メソッドから生成されました。 これは生成された編集前のテストであるため、SizeOfLinkedList メソッドを正しくテストするように変更する必要があります。  
@@ -74,22 +74,22 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-helper-method"></a>テスト ヘルパー メソッド  
  テスト ヘルパー メソッドは、step 1 ～ 5 というラベルの付いたコード行に対応する、次の手順を実行します。  
   
-1.  ジェネリック リンク リストを作成します。  
+1. ジェネリック リンク リストを作成します。  
   
-2.  リンク リストに 4 つのノードを追加します。 これらのノードの内容のデータ型は不明です。  
+2. リンク リストに 4 つのノードを追加します。 これらのノードの内容のデータ型は不明です。  
   
-3.  リンク リストの予想サイズを `expected` 変数に割り当てます。  
+3. リンク リストの予想サイズを `expected` 変数に割り当てます。  
   
-4.  リンク リストの実際のサイズを計算し、`actual` 変数に割り当てます。  
+4. リンク リストの実際のサイズを計算し、`actual` 変数に割り当てます。  
   
-5.  Assert ステートメントで、`actual` と `expected` を比較します。 実際のサイズが予想サイズと異なる場合、テストは失敗します。  
+5. Assert ステートメントで、`actual` と `expected` を比較します。 実際のサイズが予想サイズと異なる場合、テストは失敗します。  
   
 ##### <a name="test-method"></a>テスト メソッド  
  テスト メソッドは、SizeOfLinkedListTest という名前のテストの実行時に呼び出されるコードにコンパイルされます。 テスト メソッドは、step 6 と step 7 というラベルの付いたコード行に対応する、次の手順を実行します。  
   
-1.  テスト ヘルパー メソッドの呼び出し時に `<int>` を指定し、`integer` 変数に対してテストを実行できることを確認します。  
+1. テスト ヘルパー メソッドの呼び出し時に `<int>` を指定し、`integer` 変数に対してテストを実行できることを確認します。  
   
-2.  テスト ヘルパー メソッドの呼び出し時に `<char>` を指定し、`char` 変数に対してテストを実行できることを確認します。  
+2. テスト ヘルパー メソッドの呼び出し時に `<char>` を指定し、`char` 変数に対してテストを実行できることを確認します。  
   
 ```  
   
@@ -117,9 +117,9 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
->  SizeOfLinkedListTest テストを実行するたびに、TestHelper メソッドは 2 回呼び出されます。 テストを成功させるには、アサート ステートメントが毎回 true と評価される必要があります。 テストが失敗した場合、`<int>` を指定した呼び出しと `<char>` を指定した呼び出しのどちらが原因でテストが失敗したかはっきりしないことがあります。 これをはっきりさせるには、コール スタックを調べるか、テスト メソッドにブレークポイントを設定してテスト実行時にデバッグします。 詳細については、「[方法 : ASP.NET ソリューションでのテスト中にデバッグする](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)」を参照してください。  
+>  SizeOfLinkedListTest テストを実行するたびに、TestHelper メソッドは 2 回呼び出されます。 テストを成功させるには、アサート ステートメントが毎回 true と評価される必要があります。 テストが失敗した場合、`<int>` を指定した呼び出しと `<char>` を指定した呼び出しのどちらが原因でテストが失敗したかはっきりしないことがあります。 これをはっきりさせるには、コール スタックを調べるか、テスト メソッドにブレークポイントを設定してテスト実行時にデバッグします。 詳細については、「[方法 :ASP.NET ソリューションでのテストの実行中にデバッグ](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)します。  
   
-###  <a name="TypeConstraintNotSatisfied"></a> 例 2: 型制約の使用  
+### <a name="TypeConstraintNotSatisfied"></a> 例 2:型制約の使用  
  この例では、満たされていない型制約を使用するジェネリック メソッドの単体テストを示します。 最初のセクションでは、テスト対象コード プロジェクトのコードを示します。 型制約が強調表示されています。  
   
  2 番目のセクションでは、テスト プロジェクトのコードを示します。  

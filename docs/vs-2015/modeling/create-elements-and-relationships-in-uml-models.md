@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b31faa7c71a0f4072d922528a1abc4d040e7dae
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000944"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099274"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>UML モデル内に要素および関係を生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Visual Studio の拡張機能のプログラム コードでは、要素とリ�
 ### <a name="obtain-the-owner-of-the-element-you-want-to-create"></a>作成する要素の所有者を取得します。  
  モデルのルートを除いて、項目ごとに 1 つの所有者があるように、モデルは 1 つのツリーで形成されています。 モデルのルートは `IModel` 型です。これは `IPackage` の型です。  
   
- たとえばユーザーの現在のダイアグラムなど、特定のダイアグラムに表示される要素を作成する場合、通常はそのダイアグラムとリンクしているパッケージ内に作成する必要があります。 例:  
+ たとえばユーザーの現在のダイアグラムなど、特定のダイアグラムに表示される要素を作成する場合、通常はそのダイアグラムとリンクしているパッケージ内に作成する必要があります。 例えば:  
   
 ```  
 IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;  
@@ -87,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>アソシエーションを作成するには  
   
-1.  アソシエーションの所有者を取得します。通常、これはリレーションシップのソース エンドを含むパッケージまたはモデルになります。  
+1. アソシエーションの所有者を取得します。通常、これはリレーションシップのソース エンドを含むパッケージまたはモデルになります。  
   
-2.  所有者に対して必要な Create メソッドを呼び出します。  
+2. 所有者に対して必要な Create メソッドを呼び出します。  
   
-3.  リレーションシップのプロパティ (名前など) を設定します。  
+3. リレーションシップのプロパティ (名前など) を設定します。  
   
      例:  
   
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  リレーションシップの両方の側のプロパティを設定します。 常に 2 つの `MemberEnds` があります。 例えば:  
+4. リレーションシップの両方の側のプロパティを設定します。 常に 2 つの `MemberEnds` があります。 例えば:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -125,9 +125,9 @@ anElement.Delete();
   
  モデルから要素を削除する場合:  
   
--   要素にリンクしているすべてのリレーションシップも削除されます。  
+- 要素にリンクしているすべてのリレーションシップも削除されます。  
   
--   ダイアグラムに表されるすべての図形も削除されます。  
+- ダイアグラムに表されるすべての図形も削除されます。  
   
 ## <a name="see-also"></a>関連項目  
  [UML モデルと図を拡張します。](../modeling/extend-uml-models-and-diagrams.md)   

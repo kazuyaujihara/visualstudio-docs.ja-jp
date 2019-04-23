@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963195"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059956"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>方法: ASP.NET アプリケーションのデバッグを有効にします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,32 +35,32 @@ ms.locfileid: "58963195"
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Visual Basic または C# のプロジェクト プロパティで ASP.NET デバッグを有効にするには  
   
-1.  **ソリューション エクスプローラー**で、Web プロジェクト名を右クリックし、 **[プロパティ]** をクリックします。  
+1. **ソリューション エクスプローラー**で、Web プロジェクト名を右クリックし、 **[プロパティ]** をクリックします。  
   
-2.  プロジェクトのプロパティ ページで、 **[Web]** タブをクリックします。  
+2. プロジェクトのプロパティ ページで、 **[Web]** タブをクリックします。  
   
-3.  **[デバッガー]** の下で、 **[ASP.NET]** チェック ボックスをオンにします。  
+3. **[デバッガー]** の下で、 **[ASP.NET]** チェック ボックスをオンにします。  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>web.config ファイルでデバッグを有効にするには  
   
-1.  標準のテキスト エディターまたは XML パーサーで web.config ファイルを開きます。  
+1. 標準のテキスト エディターまたは XML パーサーで web.config ファイルを開きます。  
   
     > [!NOTE]  
     > ただし、Web ブラウザーを使用してファイルにリモート アクセスすることはできません。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] では、セキュリティ上の理由から、ブラウザーが直接 Web.config ファイルにアクセスできないように Microsoft IIS を設定しています。 ブラウザーで構成ファイルにアクセスしようとすると、HTTP アクセス エラー 403 (禁止) が表示されます。  
   
-2.  Web.config は XML ファイルなので、タグでマークされた入れ子のセクションが含まれます。  `configuration/system.web/compilation` 要素を探します。 compilation 要素が存在しない場合は、その要素を作成します。  
+2. Web.config は XML ファイルなので、タグでマークされた入れ子のセクションが含まれます。  `configuration/system.web/compilation` 要素を探します。 compilation 要素が存在しない場合は、その要素を作成します。  
   
-3.   `compilation` 要素内に `debug` 属性がない場合は、その属性を要素に追加します。  
+3.  `compilation` 要素内に `debug` 属性がない場合は、その属性を要素に追加します。  
   
-4.  `debug` 属性の値が `true` に設定されていることを確認します。  
+4. `debug` 属性の値が `true` に設定されていることを確認します。  
   
 web.config ファイルは次の例のようになります。 場合によって configuration 要素と system.web 要素との間には次のセクションがあることに注意してください。  
   
--   configuration 要素と system.web 要素との間の element セクション。  
+- configuration 要素と system.web 要素との間の element セクション。  
   
--   system.web 要素と compilation 要素との間の element セクション。  
+- system.web 要素と compilation 要素との間の element セクション。  
   
--   compilation 要素には他の属性と要素が含まれる場合があります。  
+- compilation 要素には他の属性と要素が含まれる場合があります。  
   
 ## <a name="example"></a>例  
   

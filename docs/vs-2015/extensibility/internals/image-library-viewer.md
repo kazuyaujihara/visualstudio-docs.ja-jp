@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062605"
 ---
 # <a name="image-library-viewer"></a>イメージ ライブラリ ビューア
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -224,9 +224,9 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
   
 ## <a name="notes"></a>メモ  
   
--   既定では、このツールは Visual Studio のインストール ディレクトリに存在するいくつかのイメージのマニフェストにプルします。 モニカーをパブリックに使用できるは 1 つだけが、 **Microsoft.VisualStudio.ImageCatalog**マニフェストします。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (は**いない**カスタム マニフェストにこの GUID を上書き) の種類。KnownMonikers  
+- 既定では、このツールは Visual Studio のインストール ディレクトリに存在するいくつかのイメージのマニフェストにプルします。 モニカーをパブリックに使用できるは 1 つだけが、 **Microsoft.VisualStudio.ImageCatalog**マニフェストします。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (は**いない**カスタム マニフェストにこの GUID を上書き) の種類。KnownMonikers  
   
--   ツールは、アプリケーションが、実際に表示するのに数秒がかかる場合がありますのでが見つかると、すべてのイメージ マニフェストを読み込むの起動時にしようとします。 低速または応答も、マニフェストの読み込み中にられます可能性があります。  
+- ツールは、アプリケーションが、実際に表示するのに数秒がかかる場合がありますのでが見つかると、すべてのイメージ マニフェストを読み込むの起動時にしようとします。 低速または応答も、マニフェストの読み込み中にられます可能性があります。  
   
 ## <a name="sample-output"></a>出力例  
  このツールは、任意の出力を生成しません。

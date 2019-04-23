@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa12fdc3eea5c353071fb4a80e2c99f2f9e060c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087184"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>方法: リボン グループにダイアログ ボックス起動ツールを追加します。
   ダイアログ ボックス起動ツールは、リボン上の任意のグループに追加できます。 ダイアログ ボックス起動ツールは、グループ内にある小さなアイコンです。 ユーザーは、関連するダイアログ ボックスまたはグループに関連するその他のオプションを提供する作業ウィンドウを開くには、このアイコンをクリックします。
@@ -27,11 +27,11 @@ ms.locfileid: "56629951"
 
 ### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>リボン グループにダイアログ ボックス起動ツールを追加するには
 
-1.  リボン コード ファイルを選択します (*.vb*または *.cs*ファイル) で**ソリューション エクスプ ローラー**します。
+1. リボン コード ファイルを選択します (*.vb*または *.cs*ファイル) で**ソリューション エクスプ ローラー**します。
 
-2.  **ビュー**  メニューのをクリックして**デザイナー**します。
+2. **ビュー**  メニューのをクリックして**デザイナー**します。
 
-3.  リボン デザイナーで任意のグループを右クリックし をクリックし、**追加ダイアログ ボックス起動ツール**します。
+3. リボン デザイナーで任意のグループを右クリックし をクリックし、**追加ダイアログ ボックス起動ツール**します。
 
      コードを追加して、<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick>またはカスタムの組み込みダイアログ ボックスを開き、グループのイベント。
 

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2a606d6b22dabc8bab0477a240499021a4312c3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7ae934de4a9f0dbcf4076d7402abd138eac20268
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104877"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>方法: ARM デバイスでグラフィックス診断を使用してください。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "59002455"
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>ARM ベースのデバイス上でリモート デバッギングを有効にするには  
   
-1.  インストール、 [ARM Kits Policy](http://msdn.microsoft.com/windows/desktop/dn469188) ARM ベースのデバイスにします。  
+1. インストール、 [ARM Kits Policy](http://msdn.microsoft.com/windows/desktop/dn469188) ARM ベースのデバイスにします。  
   
-2.  インストール、 [Remote Debugging Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) ARM ベースのデバイスにします。  
+2. インストール、 [Remote Debugging Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) ARM ベースのデバイスにします。  
   
 > [!IMPORTANT]
 >  Windows Phone 8.1 のデバイスの場合は、開発用にスマートフォンを登録しなければならないことがあります。 そのためには、自身が登録されている開発者であることが必要です。 詳細については、次を参照してください。[展開および Windows Phone 8 向けアプリを実行する方法](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)します。  
@@ -39,11 +39,11 @@ ms.locfileid: "59002455"
   
 #### <a name="to-configure-and-start-graphics-diagnostics-on-your-device"></a>デバイス上でグラフィックス診断を構成および開始するには  
   
-1.  **ソリューション プラットフォーム**ドロップダウン リストで、 **ARM** ARM ベースのデバイスをリモート デバッグ ターゲットとして使用できるようにします。  
+1. **ソリューション プラットフォーム**ドロップダウン リストで、 **ARM** ARM ベースのデバイスをリモート デバッグ ターゲットとして使用できるようにします。  
   
-2.  **デバッグ ターゲット**ドロップダウン リストで、ARM デバイスを選択します。  
+2. **デバッグ ターゲット**ドロップダウン リストで、ARM デバイスを選択します。  
   
-3.  メニューで、次のように選択します。**デバッグ**、**グラフィックス**、**診断の開始**します。 (キーボード:Alt キーを押しながら f5 キー)  
+3. メニューで、次のように選択します。**デバッグ**、**グラフィックス**、**診断の開始**します。 (キーボード:Alt キーを押しながら f5 キー)  
   
 ## <a name="see-also"></a>関連項目  
  [リモート コンピューター上の Windows ストア アプリを実行します。](../debugger/run-windows-store-apps-on-a-remote-machine.md)   

@@ -10,12 +10,12 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d73acf8f46966cd0de9eb779acb5a5c53ad4e329
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 04151a6fd3b934dd39e795cafc375974ac5a6b33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043667"
 ---
 # <a name="creating-a-settings-category"></a>設定カテゴリの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58976996"
   
 #### <a name="to-create-a-settings-category"></a>設定カテゴリを作成するには  
   
-1.  完了、[オプション ページの作成](../extensibility/creating-an-options-page.md)です。  
+1. 完了、[オプション ページの作成](../extensibility/creating-an-options-page.md)です。  
   
-2.  VSPackage.resx ファイルを開き、次の 3 つの文字列リソースを追加します。  
+2. VSPackage.resx ファイルを開き、次の 3 つの文字列リソースを追加します。  
   
     |名前|[値]|  
     |----------|-----------|  
@@ -49,7 +49,7 @@ ms.locfileid: "58976996"
     > [!NOTE]
     >  これらの 3 つのカテゴリの名前だけは、インポートとエクスポートの設定ウィザードでは表示されません。  
   
-3.  MyToolsOptionsPackage.cs で追加、`float`という名前のプロパティ`OptionFloat`を`OptionPageGrid`クラスに、次の例に示すようにします。  
+3. MyToolsOptionsPackage.cs で追加、`float`という名前のプロパティ`OptionFloat`を`OptionPageGrid`クラスに、次の例に示すようにします。  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
@@ -79,39 +79,39 @@ ms.locfileid: "58976996"
     > [!NOTE]
     >  `OptionPageGrid` "My Category"を今すぐという名前のカテゴリには 2 つのプロパティの`OptionInteger`と`OptionFloat`します。  
   
-4.  追加、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>を`MyToolsOptionsPackage`クラスし CategoryName"My Category"を付けます、ObjectName"My Settings"を付けますおよび isToolsOptionPage を true に設定します。 対応する文字列リソース Id が前に作成する categoryResourceID、objectNameResourceID、および DescriptionResourceID を設定します。  
+4. 追加、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>を`MyToolsOptionsPackage`クラスし CategoryName"My Category"を付けます、ObjectName"My Settings"を付けますおよび isToolsOptionPage を true に設定します。 対応する文字列リソース Id が前に作成する categoryResourceID、objectNameResourceID、および DescriptionResourceID を設定します。  
   
     ```csharp  
     [ProvideProfileAttribute(typeof(OptionPageGrid),   
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]  
     ```  
   
-5.  プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスを参照する必要があります**マイのグリッド ページ**整数と浮動小数点数の両方の値になりました。  
+5. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスを参照する必要があります**マイのグリッド ページ**整数と浮動小数点数の両方の値になりました。  
   
 ## <a name="examining-the-settings-file"></a>設定ファイルの確認  
  このセクションでは、プロパティのカテゴリの値を設定ファイルにエクスポートします。 ファイルを確認し、プロパティのカテゴリに値をインポートします。  
   
-1.  F5 キーを押してデバッグ モードで、プロジェクトを起動します。 これは、実験用インスタンスを起動します。  
+1. F5 キーを押してデバッグ モードで、プロジェクトを起動します。 これは、実験用インスタンスを起動します。  
   
-2.  開く、**ツール/オプション**ダイアログ。  
+2. 開く、**ツール/オプション**ダイアログ。  
   
-3.  左側のウィンドウで、ツリー ビューで、展開**My Category**  をクリックし、**マイのグリッド ページ**します。  
+3. 左側のウィンドウで、ツリー ビューで、展開**My Category**  をクリックし、**マイのグリッド ページ**します。  
   
-4.  値を変更**OptionFloat** 3.1416 へと**OptionInteger** 12 にします。 **[OK]** をクリックします。  
+4. 値を変更**OptionFloat** 3.1416 へと**OptionInteger** 12 にします。 **[OK]** をクリックします。  
   
-5.  **[ツール]** メニューの **[設定のインポートとエクスポート]** を選択します。  
+5. **[ツール]** メニューの **[設定のインポートとエクスポート]** を選択します。  
   
      **インポートおよびエクスポート設定**ウィザードが表示されます。  
   
-6.  確認します**選択された環境設定のエクスポート**が選択されているし、をクリックし、**次**します。  
+6. 確認します**選択された環境設定のエクスポート**が選択されているし、をクリックし、**次**します。  
   
      **エクスポートする設定**ページが表示されます。  
   
-7.  クリックして**My Settings**します。  
+7. クリックして**My Settings**します。  
   
      **説明**変更**OptionInteger と OptionFloat**します。  
   
-8.  確認します**My Settings**唯一のカテゴリを選択し、**次**します。  
+8. 確認します**My Settings**唯一のカテゴリを選択し、**次**します。  
   
      **名前、設定ファイル**ページが表示されます。  
   

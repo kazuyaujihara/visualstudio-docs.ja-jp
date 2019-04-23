@@ -10,12 +10,12 @@ ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 496dcbd6f30f9b3b29b49cb9954c0434d0996836
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5964aa82d76791d29313ac787f1216c9c9ad283
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963636"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066157"
 ---
 # <a name="legacy-language-service-overview"></a>従来の言語サービスの概要
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,71 +25,71 @@ ms.locfileid: "58963636"
 ## <a name="fully-supported-features-in-the-mpf"></a>MPF で完全にサポートされる機能  
  MPF 言語サービスのクラスは、次の機能をサポートします。  
   
--   構文の強調表示  
+- 構文の強調表示  
   
--   アウトライン  
+- アウトライン  
   
--   コードのコメント ブロック  
+- コードのコメント ブロック  
   
--   かっこの一致  
+- かっこの一致  
   
--   コード スニペット  
+- コード スニペット  
   
--   カスタム ドキュメント プロパティ  
+- カスタム ドキュメント プロパティ  
   
--   IntelliSense のパラメーター情報  
+- IntelliSense のパラメーター情報  
   
--   IntelliSense Quick Info  
+- IntelliSense Quick Info  
   
--   IntelliSense メンバー入力候補  
+- IntelliSense メンバー入力候補  
   
--   IntelliSense の単語補完  
+- IntelliSense の単語補完  
   
 ## <a name="partially-supported-features-in-the-mpf"></a>MPF で部分的にサポートされる機能  
  MPF は、次の機能のみ部分的にサポートを提供します。 つまり、MPF によって呼び出されるメソッドを実装する必要があります。  
   
--   コードの再フォーマットします。 再フォーマットを実装するコードを入力します。  
+- コードの再フォーマットします。 再フォーマットを実装するコードを入力します。  
   
--   範囲の有効なコードを識別することによってブレークポイントを検証しています。 コードの範囲を識別するコードを入力します。  
+- 範囲の有効なコードを識別することによってブレークポイントを検証しています。 コードの範囲を識別するコードを入力します。  
   
--   デバッガーをサポートしている **[自動変数]** 変数を表示するためのウィンドウ。 ウィンドウに表示するアクションを決定するコードを入力します。  
+- デバッガーをサポートしている **[自動変数]** 変数を表示するためのウィンドウ。 ウィンドウに表示するアクションを決定するコードを入力します。  
   
--   サポートしている、**ナビゲーション バー**型とメンバー間ですばやく移動します。 実装しに含まれる一覧を設定するヘルパー クラスを返す、**ナビゲーション バー**コンボ ボックス。  
+- サポートしている、**ナビゲーション バー**型とメンバー間ですばやく移動します。 実装しに含まれる一覧を設定するヘルパー クラスを返す、**ナビゲーション バー**コンボ ボックス。  
   
 ## <a name="implementation"></a>実装  
  言語サービス自体と、言語をサポートする言語サービスの機能を実装するいくつかの手順を完了する必要があります。 次の手順は、次のトピックについて説明します。  
   
--   [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+- [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
   
--   [従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+- [従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)  
   
--   [従来の言語サービスでの構文の配色変更](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
+- [従来の言語サービスでの構文の配色変更](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
   
--   [従来の言語サービスでのかっこの一致](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
+- [従来の言語サービスでのかっこの一致](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
   
--   [従来の言語サービスのアウトライン](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
+- [従来の言語サービスのアウトライン](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
   
--   [従来の言語サービスのコメント コード](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
+- [従来の言語サービスのコメント コード](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
   
--   [従来の言語サービスの再フォーマット コード](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
+- [従来の言語サービスの再フォーマット コード](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
   
--   [従来の言語サービスのカスタム ドキュメント プロパティ](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
+- [従来の言語サービスのカスタム ドキュメント プロパティ](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
   
--   [従来の言語サービスでのコード スニペットのサポート](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
+- [従来の言語サービスでのコード スニペットのサポート](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
   
--   [従来の言語サービスでのナビゲーション バーのサポート](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
+- [従来の言語サービスでのナビゲーション バーのサポート](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
   
--   [従来の言語サービスでの単語補完](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
+- [従来の言語サービスでの単語補完](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
   
--   [従来の言語サービスでのメンバー補完](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
+- [従来の言語サービスでのメンバー補完](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
   
--   [従来の言語サービスのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
+- [従来の言語サービスのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
   
--   [従来の言語サービスのクイック ヒント](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
+- [従来の言語サービスのクイック ヒント](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
   
--   [従来の言語サービスでの自動変数ウィンドウのサポート](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
+- [従来の言語サービスでの自動変数ウィンドウのサポート](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
   
--   [従来の言語サービスでのブレークポイントの検証](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
+- [従来の言語サービスでのブレークポイントの検証](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
   
 ## <a name="see-also"></a>関連項目  
  [従来の言語サービスを実装します。](../../extensibility/internals/implementing-a-legacy-language-service1.md)   

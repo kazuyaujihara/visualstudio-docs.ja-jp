@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47db94f7602a42ae9e5142ef27213a06adb8865c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791654"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048386"
 ---
 # <a name="call-tree-view---contention-data"></a>コール ツリー ビュー - 競合データ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54791654"
 ## <a name="highlighting-the-execution-hot-path"></a>実行ホット パスの強調表示  
  コール ツリー ビューでは、最も多くの競合が発生したプロセスまたは関数の実行パスを展開して強調表示できます。  
   
--   最もアクティブなパスを表示するには、プロセスまたは関数を右クリックし、**[ホット パスの展開]** をクリックします。  
+- 最もアクティブなパスを表示するには、プロセスまたは関数を右クリックし、**[ホット パスの展開]** をクリックします。  
   
 ## <a name="setting-the-call-tree-root-node"></a>コール ツリーのルート ノードの設定  
  プロファイル実行の各プロセスは、ルート ノードとして表示されます。 コール ツリー ビューの開始ノードを設定するには、開始ノードとして設定するノードを右クリックし、**[ルートの設定]** をクリックします。  

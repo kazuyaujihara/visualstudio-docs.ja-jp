@@ -15,17 +15,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 328ed2afe4c942c2db16ebca214b7a3dfa631138
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789836"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648836"
 ---
 # <a name="code-snippet-picker"></a>コード スニペット ピッカー
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Code エディターでは、**コード スニペット ピッカー**が提供されています。これを使用すると、数回マウスをクリックするだけで、既成のコードのブロックをアクティブなドキュメントに挿入することができます。  
   
  **コード スニペット ピッカー**を表示する手順は、使用している言語によって異なります。  
@@ -46,7 +45,7 @@ ms.locfileid: "54789836"
   
 - SQL: コード エディターで目的の場所を右クリックしてショートカット メニューを表示し、**[スニペットの挿入]** をクリックします。  
   
-  ほとんどの Visual Studio 開発言語では、**コード スニペット マネージャー**を使用して、**コード スニペット ピッカー**が XML スニペット ファイルをスキャンする**フォルダー一覧**にフォルダーを追加することができます。 独自のスニペットを作成して一覧に追加することもできます。 詳細については、「[チュートリアル: コード スニペットを作成する](../../ide/walkthrough-creating-a-code-snippet.md)」を参照してください。  
+  ほとんどの Visual Studio 開発言語では、**コード スニペット マネージャー**を使用して、**コード スニペット ピッカー**が XML スニペット ファイルをスキャンする**フォルダー一覧**にフォルダーを追加することができます。 独自のスニペットを作成して一覧に追加することもできます。 詳細については、「[チュートリアル:コード スニペットを作成](../../ide/walkthrough-creating-a-code-snippet.md)です。  
   
 ## <a name="uielement-list"></a>UIElement の一覧  
  項目名  
@@ -59,4 +58,4 @@ ms.locfileid: "54789836"
  [コード スニペットを使用するためのベスト プラクティス](../../ide/best-practices-for-using-code-snippets.md)   
  [Visual Basic の IntelliSense コード スニペット](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [コードへのブックマークの設定](../../ide/setting-bookmarks-in-code.md)   
- [方法 : surround-with コード スニペットを使用する](../../ide/how-to-use-surround-with-code-snippets.md)
+ [方法: surround-with コード スニペットを使用する](../../ide/how-to-use-surround-with-code-snippets.md)

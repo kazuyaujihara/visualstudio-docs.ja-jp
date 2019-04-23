@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219f850ed73104357766ffc4333da55647fb9d40
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af191c929b88f1bda76896061359b7315517beb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066079"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Visual Studio では、コードを記述してレイヤー図を生成および
   
  レイヤー図の詳細については、次の項目を参照してください。  
   
--   [レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)  
+- [レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)  
   
--   [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)  
+- [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)  
   
--   [コードからのレイヤー図の作成](../modeling/create-layer-diagrams-from-your-code.md)  
+- [コードからのレイヤー図の作成](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [レイヤー図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)  
+- [レイヤー図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)  
   
-##  <a name="prereqs"></a> 要件  
+## <a name="prereqs"></a> 要件  
  レイヤー拡張機能を開発するコンピューターに以下の項目がインストールされている必要があります。  
   
 - Visual Studio  

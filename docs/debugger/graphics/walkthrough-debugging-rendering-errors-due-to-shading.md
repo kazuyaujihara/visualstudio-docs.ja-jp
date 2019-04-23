@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e70fb88a9dd3c51a5e280e1e778bd18220985f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688369"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091331"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>チュートリアル: 網かけによるレンダリング エラーのデバッグ
 このチュートリアルを使用する方法について説明[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]グラフィックス診断をシェーダーのバグにより正しく色付けがオブジェクトを調査します。
 
  このチュートリアルでは、次の方法を示します。
 
--   問題を示すピクセルを識別するために、グラフィックスのログのドキュメントを調査する。
+- 問題を示すピクセルを識別するために、グラフィックスのログのドキュメントを調査する。
 
--   **[グラフィックス ピクセル履歴]** ウィンドウを使用して、ピクセルの状態をより詳しく調査する。
+- **[グラフィックス ピクセル履歴]** ウィンドウを使用して、ピクセルの状態をより詳しく調査する。
 
--   **HLSL デバッガー** を使用して、ピクセルと頂点シェーダーを調査する。
+- **HLSL デバッガー** を使用して、ピクセルと頂点シェーダーを調査する。
 
 ## <a name="scenario"></a>シナリオ
  オブジェクトに正しくない色が指定される問題は、一般的に、頂点シェーダーからピクセル シェーダーに渡される情報が正しくないまたは不完全な場合に発生します。

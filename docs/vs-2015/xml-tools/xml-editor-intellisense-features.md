@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8299e96f6ec074ce82dcd1fd872e56886c2d19b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978205"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094666"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML エディターの IntelliSense 機能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML エディターでは、Visual Studio で提供されている他の言語のエディターに相当する、フル機能の IntelliSense を利用できます。 このセクションでは、XML スキーマ定義言語 (XSD) ドキュメントと XSLT ドキュメントで IntelliSense を使用する方法について説明します。  
   
 ## <a name="intellisense-in-an-xsd-document"></a>XSD ドキュメントでの IntelliSense  
@@ -86,19 +85,19 @@ XML エディターでは、Visual Studio で提供されている他の言語�
   
  XML エディターは、この動作を次の項目に対して行います。  
   
--   対応する開始タグと終了タグ  
+- 対応する開始タグと終了タグ  
   
--   すべてのペア"\<"または">"山かっこします。  
+- すべてのペア"\<"または">"山かっこします。  
   
--   コメントの開始と終了  
+- コメントの開始と終了  
   
--   処理命令の開始と終了  
+- 処理命令の開始と終了  
   
--   CDATA ブロックの開始と終了  
+- CDATA ブロックの開始と終了  
   
--   DTD 宣言の開始と終了  
+- DTD 宣言の開始と終了  
   
--   属性の開始と終了の引用符  
+- 属性の開始と終了の引用符  
   
 ## <a name="modifying-the-intellisense-options"></a>IntelliSense オプションの変更  
  IntelliSense とオートコンプリートの機能は、既定で有効になっています。 ただし、[ツール] メニューの [オプション] の設定を変更することによって、この設定を変更できます。  
@@ -113,11 +112,11 @@ XML エディターでは、Visual Studio で提供されている他の言語�
   
 #### <a name="to-change-the-auto-completion-behavior"></a>オートコンプリートの動作を変更するには  
   
-1.  **[ツール]** メニューの **[オプション]** を選択します。  
+1. **[ツール]** メニューの **[オプション]** を選択します。  
   
-2.  展開**テキスト エディター**、展開**XML**、選択および **[その他]** します。  
+2. 展開**テキスト エディター**、展開**XML**、選択および **[その他]** します。  
   
-3.  何も変更、**自動挿入**セクションし、をクリックして**OK**します。  
+3. 何も変更、**自動挿入**セクションし、をクリックして**OK**します。  
   
 ## <a name="see-also"></a>関連項目  
  [XML エディター](../xml-tools/xml-editor.md)   

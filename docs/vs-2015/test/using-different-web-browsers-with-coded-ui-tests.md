@@ -1,4 +1,4 @@
-﻿---
+---
 title: コード化された UI テストでのさまざまな Web ブラウザーの使用 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7245af090cfdaa8e4282677c8b5a052d63b63e2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805535"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100405"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>コード化された UI テストでのさまざまな Web ブラウザーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ ms.locfileid: "54805535"
   
 - オペレーティング システム:  
   
-  -   Microsoft Windows 7  
+  - Microsoft Windows 7  
   
-  -   Microsoft Windows 8  
+  - Microsoft Windows 8  
   
-  -   Microsoft Windows Server 2008 R2 SP1  
+  - Microsoft Windows Server 2008 R2 SP1  
   
 - Web ブラウザーのバージョン:  
   
-  -   Windows Internet Explorer 9  
+  - Windows Internet Explorer 9  
   
-  -   Windows Internet Explorer 10  
+  - Windows Internet Explorer 10  
   
-  -   Mozilla Firefox と Google Chrome のサポートされているバージョンについては、[こちら](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)を参照してください。  
+  - Mozilla Firefox と Google Chrome のサポートされているバージョンについては、[こちら](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)を参照してください。  
   
 - [コード化された UI のクロス ブラウザー テスト用に Selenium コンポーネント](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)をインストールします。  
   
@@ -83,19 +83,19 @@ ms.locfileid: "54805535"
 ### <a name="enable-debugging"></a>デバッグの有効化  
  Web アプリケーションのデバッグを有効にするには、以下の構成オプションを設定する必要があります。  
   
-1.  マイ コードのみを有効にする:  
+1. マイ コードのみを有効にする:  
   
-    1.  **[ツール]** メニューの **[オプション]** を選択し、**[デバッグ]** を選択します。  
+    1. **[ツール]** メニューの **[オプション]** を選択し、**[デバッグ]** を選択します。  
   
-    2.  **[マイ コードのみを有効にする]** を選択します。  
+    2. **[マイ コードのみを有効にする]** を選択します。  
   
-2.  CLR 例外を無効にする:  
+2. CLR 例外を無効にする:  
   
-    1.  **[デバッグ]** メニューの **[例外]** を選択します。  
+    1. **[デバッグ]** メニューの **[例外]** を選択します。  
   
-    2.  **[共通言語ランタイム例外]** で、**[ユーザーにハンドルされていないとき]** をオフにします。  
+    2. **[共通言語ランタイム例外]** で、**[ユーザーにハンドルされていないとき]** をオフにします。  
   
-##  <a name="generate"></a> *コード化された UI テストで、BrowserWindow.CurrentBrowser を変更するオプションが表示されません。*  
+## <a name="generate"></a> *コード化された UI テストで、BrowserWindow.CurrentBrowser を変更するオプションが表示されません。*  
  さまざまな Web ブラウザーを使用するコード化された UI テストをサポートしないバージョンの [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] を使用している可能性があります。 そのようなコード化された UI テストを使用するには、Visual Studio Enterprise を使用する必要があります。  
   
  *その他に知っておく必要があること*  
@@ -139,7 +139,7 @@ ms.locfileid: "54805535"
  [クロス ブラウザー テストのエラーのトラブルシューティング](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)  
   
 ### <a name="guidance"></a>ガイダンス  
- [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト:内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
  [Visual Studio 2012 – Chapter 5 による継続的デリバリーのテスト。システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
@@ -151,7 +151,7 @@ ms.locfileid: "54805535"
 ### <a name="forum"></a>フォーラム  
  [Visual Studio の UI オートメーションのテスト (コード化された UI を含む)](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
  [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [コード化された UI テスト ログを使用したコード化された UI テストの分析](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

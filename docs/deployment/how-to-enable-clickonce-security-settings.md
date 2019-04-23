@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f89db12596754630eddaf78b9429eb2983625481
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1c24126f18cc55bdddcda97a750b1f443bb8b4d8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599844"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068939"
 ---
-# <a name="how-to-enable-clickonce-security-settings"></a>方法: ClickOnce のセキュリティ設定を有効にする
+# <a name="how-to-enable-clickonce-security-settings"></a>方法:  ClickOnce セキュリティ設定を有効にする
 アプリケーションを発行するためには、ClickOnce アプリケーションのコード アクセス セキュリティを有効にする必要があります。 これは自動的に発行ウィザードを使用してアプリケーションを発行するときです。
 
  場合によっては、コード アクセス セキュリティを有効にするとパフォーマンスに影響するビルド時や、アプリケーションのデバッグこのような場合は、セキュリティ設定を一時的に無効にする可能性があります。
@@ -32,11 +32,11 @@ ms.locfileid: "56599844"
 
 ### <a name="to-enable-clickonce-security-settings"></a>ClickOnce のセキュリティ設定を有効にするには
 
-1.  **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-2.  **[セキュリティ]** タブをクリックします。
+2. **[セキュリティ]** タブをクリックします。
 
-3.  **[ClickOnce セキュリティ設定を有効にする]** チェック ボックスをオンにします。
+3. **[ClickOnce セキュリティ設定を有効にする]** チェック ボックスをオンにします。
 
      [セキュリティ] ページで、アプリケーションのセキュリティ設定をカスタマイズできます。
 
@@ -45,11 +45,11 @@ ms.locfileid: "56599844"
 
 ### <a name="to-disable-clickonce-security-settings"></a>ClickOnce のセキュリティ設定を無効にするには
 
-1.  **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-2.  **[セキュリティ]** タブをクリックします。
+2. **[セキュリティ]** タブをクリックします。
 
-3.  クリア、 **ClickOnce セキュリティ設定を有効にする**チェック ボックスをオンします。
+3. クリア、 **ClickOnce セキュリティ設定を有効にする**チェック ボックスをオンします。
 
      アプリケーションは完全な信頼のセキュリティ設定で実行します。すべての設定、**セキュリティ**ページは無視されます。
 

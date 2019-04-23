@@ -9,29 +9,29 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117857"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>方法: 作成します。既存の Vsct ファイルです。Ctc ファイル
 既存のコマンドテーブルの .ctc ソース ファイルから XML ベースの .vsct ファイルを作成できます。 これにより、新しい XML ベースの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] コマンド テーブル (VSCT) コンパイラ形式を利用できます。  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>.ctc ファイルから .vsct ファイルを作成するには  
   
-1.  Perl 言語のコピーを取得します。  
+1. Perl 言語のコピーを取得します。  
   
-2.  通常にある Perl スクリプト ConvertCTCToVSCT.pl のコピーを取得、  *\<Visual Studio SDK インストール パス >* \VisualStudioIntegration\Tools\bin フォルダー。  
+2. 通常にある Perl スクリプト ConvertCTCToVSCT.pl のコピーを取得、  *\<Visual Studio SDK インストール パス >* \VisualStudioIntegration\Tools\bin フォルダー。  
   
-3.  変換する .ctc ソース ファイルのコピーを取得します。  
+3. 変換する .ctc ソース ファイルのコピーを取得します。  
   
-4.  同じディレクトリにファイルを配置します。  
+4. 同じディレクトリにファイルを配置します。  
   
-5.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のコマンド プロンプト ウィンドウで、そのディレクトリに移動します。  
+5. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のコマンド プロンプト ウィンドウで、そのディレクトリに移動します。  
   
-6.  型  
+6. 型  
   
     ```  
     perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  

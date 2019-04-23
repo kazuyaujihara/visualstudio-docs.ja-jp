@@ -11,12 +11,12 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbf6c3908460ce9d0f34b31c9a815c652de8031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977578"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117683"
 ---
 # <a name="evaluating-locals"></a>ローカル変数の評価
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "58977578"
   
  ローカルの値を取得するには、この機能は、次のタスクを実行するヘルパー関数にカプセル化します。  
   
-1.  バインド、`IDebugField`オブジェクトを取得するためのメモリを`IDebugObject`オブジェクト。  
+1. バインド、`IDebugField`オブジェクトを取得するためのメモリを`IDebugObject`オブジェクト。  
   
-2.  メモリから値を取得します。 この値は、一連のバイトとして表されます。  
+2. メモリから値を取得します。 この値は、一連のバイトとして表されます。  
   
-3.  ローカルの型に基づいた値の書式を設定します。  
+3. ローカルの型に基づいた値の書式を設定します。  
   
-4.  ローカルの値を含む汎用オブジェクトを返します。 これは、C# では、 `object`、C++ では、これは、`VARIANT`します。  
+4. ローカルの値を含む汎用オブジェクトを返します。 これは、c# では、 `object`、C++ では、これは、`VARIANT`します。  
   
 ## <a name="managed-code"></a>マネージド コード  
  これは、マネージ コードでローカルの値を取得する関数の実装です。  

@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973584"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104097"
 ---
 # <a name="how-to-start-debugging-xslt"></a>方法: XSLT のデバッグを開始します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ XSLT デバッガーを使用すると、XSLT スタイル シートや XSLT ア
   
 #### <a name="to-start-debugging-from-a-style-sheet"></a>スタイル シートからデバッグを開始するには  
   
-1.  XML エディターでスタイル シートを開きます。  
+1. XML エディターでスタイル シートを開きます。  
   
-2.  選択**XSL のデバッグ**から、 **XML**メニュー。  
+2. 選択**XSL のデバッグ**から、 **XML**メニュー。  
   
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>XML 入力ドキュメントからデバッグを開始するには  
   
-1.  XML エディターで XML ドキュメントを開きます。  
+1. XML エディターで XML ドキュメントを開きます。  
   
-2.  選択**XSL のデバッグ**から、 **XML**メニュー。  
+2. 選択**XSL のデバッグ**から、 **XML**メニュー。  
   
 ## <a name="xslt-from-other-languages"></a>他の言語の XSLT  
  アプリケーションのデバッグ中に XSLT にステップ インすることもできます。 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> 呼び出しで F11 キーを押すと、デバッガーは XSLT コードにステップ インできます。  
@@ -44,11 +44,11 @@ XSLT デバッガーを使用すると、XSLT スタイル シートや XSLT ア
   
 #### <a name="to-start-debugging-an-xslt-application"></a>XSLT アプリケーションのデバッグを開始するには  
   
-1.  <xref:System.Xml.Xsl.XslCompiledTransform> オブジェクトをインスタンス化するときに、コード内で `enableDebug` パラメーターを `true` に設定します。  
+1. <xref:System.Xml.Xsl.XslCompiledTransform> オブジェクトをインスタンス化するときに、コード内で `enableDebug` パラメーターを `true` に設定します。  
   
      この設定によって、コードがコンパイルされるときにデバッグ情報を作成するように XSLT プロセッサに指示します。  
   
-2.  F11 キーを押して、XSLT コードにステップ インします。  
+2. F11 キーを押して、XSLT コードにステップ インします。  
   
      XSLT スタイル シートが新しいドキュメントのウィンドウに読み込まれ、XSLT デバッガーが起動されます。  
   

@@ -15,19 +15,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1235c8b1bb7b815b5f26e0ffb744c31a3575ba81
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: a31b56b4b2d568b3bc3fd59f876f5052b9f6faff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063999"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>value 引数の循環参照はサポートされません。
 呼び出しが試行された`JSON.stringify`値が無効です。 `value`引数、配列またはオブジェクトを循環参照が含まれています。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   引数の循環参照を削除します。  
+- 引数の循環参照を削除します。  
   
 ## <a name="example"></a>例  
  に、この例では、コードによってランタイム エラーが発生`john`への参照を持つ`mary`と`mary`への参照を持つ`john`します。 循環参照を削除するか、削除または未設定プロパティ`brother`から、`mary`オブジェクトまたは`sister`プロパティから、`john`オブジェクト。  

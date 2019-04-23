@@ -25,14 +25,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fde858615894967dea83239388925851f342c3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 193afeddd553dfda54de568c92b4697e3f1a2a93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095543"
 ---
-# <a name="how-to-manage-editor-modes"></a>方法 : エディター モードを管理する
+# <a name="how-to-manage-editor-modes"></a>方法: エディターのモードを管理します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio のコード エディターは、さまざまな表示モードで表示できます。  
@@ -45,27 +45,27 @@ Visual Studio のコード エディターは、さまざまな表示モード�
   
 #### <a name="to-enable-full-screen-mode"></a>全画面表示モードを有効にするには  
   
--   **全画面表示**モードを開始または終了するには、Alt + Shift + Enter キーを押します。  
+- **全画面表示**モードを開始または終了するには、Alt + Shift + Enter キーを押します。  
   
      または  
   
--   **[コマンド]** ウィンドウで `View.Fullscreen` コマンドを実行します。  
+- **[コマンド]** ウィンドウで `View.Fullscreen` コマンドを実行します。  
   
 ## <a name="enabling-virtual-space-mode"></a>仮想空白モードを有効にする  
  **仮想空白**モードでは、各コード行の末尾に空白が挿入されます。 コードの横に一貫してコメントを入れる場合は、このチェック ボックスをオンにします。  
   
 #### <a name="to-enable-virtual-space-mode"></a>仮想空白モードを有効にするには  
   
-1.  **[ツール]** メニューの **[オプション]** を選択します。  
+1. **[ツール]** メニューの **[オプション]** を選択します。  
   
-2.  **[テキスト エディター]** フォルダーを展開し、**[すべての言語]** を選択してこのオプションをグローバルに設定するか、または特定の言語フォルダーを選択します  (たとえば、Visual Basic でのみ行番号を表示するには、[テキスト エディター] で [Basic] を選択します)。  
+2. **[テキスト エディター]** フォルダーを展開し、**[すべての言語]** を選択してこのオプションをグローバルに設定するか、または特定の言語フォルダーを選択します  (たとえば、Visual Basic でのみ行番号を表示するには、[テキスト エディター] で [Basic] を選択します)。  
   
-3.  **[全般]** オプションを選択し、**[設定]** で **[仮想空白文字を使用]** を選択します。  
+3. **[全般]** オプションを選択し、**[設定]** で **[仮想空白文字を使用]** を選択します。  
   
     > [!NOTE]
     >  **列の選択**モードで**仮想空白文字**が有効になります。 **仮想空白**モードを有効にしないと、挿入ポイントは行の末尾から次の行の先頭文字に直接移動します。  
   
 ## <a name="see-also"></a>関連項目
  [エディターのカスタマイズ](../ide/customizing-the-editor.md)   
- [方法 : ウィンドウを整列およびドッキングする](../misc/how-to-arrange-and-dock-windows.md)   
+ [方法: 整列し、固定 Windows](../misc/how-to-arrange-and-dock-windows.md)   
  [[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

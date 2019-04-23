@@ -1,5 +1,5 @@
 ---
-title: '方法: spy++ ツリーを閉じたり |Microsoft Docs'
+title: '方法: 展開し、spy++ ツリーを折りたたむ |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a99a221199d2e02b66fd717cdd722091bd724eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071188"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>方法: Spy++ ツリーの展開と折りたたみを行う
 展開したり、2 つのメソッドを使用して、Windows、プロセス、およびスレッド ビューを折りたたむ: またはを使用して、ウィンドウのアイコンをクリックして、**ツリー**メニュー。 + と - Visual C プロジェクト ウィンドウのように、ツリー内のアイコンが機能します。
@@ -34,9 +34,9 @@ ms.locfileid: "56687602"
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>展開または spy++ ツリーを折りたたむ
 
-1.  Windows、プロセスまたはスレッド ビュー内の項目のいずれかを選択します。
+1. Windows、プロセスまたはスレッド ビュー内の項目のいずれかを選択します。
 
-2.  **ツリー**  メニューの 展開 のいずれかを選択するか折りたたみコマンド。
+2. **ツリー**  メニューの 展開 のいずれかを選択するか折りたたみコマンド。
 
 ## <a name="see-also"></a>関連項目
 - [Spy++ の使用](../debugger/using-spy-increment.md)

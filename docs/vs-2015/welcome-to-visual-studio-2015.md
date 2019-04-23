@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f175e8870795374ab35058ef163f4752115d5be
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
-ms.translationtype: MTE95
+ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567248"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067730"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 へようこそ
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -54,24 +54,24 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 
  アプリ要件に基づいて必要なツールと使用する言語を選択します。
 
-1.  [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): すべてのデバイスを対象とする C# の共通コード ベース
+1. [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md):共通コードのすべてのデバイス ベース (C#)
 
-2.  [Apache Cordova with Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): HTML、CSS、および JavaScript または Typescript 用の共通コード ベース
+2. [Visual Studio での Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42):HTML、CSS、および JavaScript または Typescript の基本の共通コード
 
-3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): C# での 2D/3D ゲーム開発
+3. [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md):C# での 2d/3d ゲーム開発
 
-4.  [クロスプラットフォーム開発用 C++](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): C++ の共有コード ライブラリとアプリ
+4. [クロスプラット フォーム開発用 C++](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md):共有コード ライブラリと C++ でのアプリ
 
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: IDE とは関係なく、Android アプリをデバッグおよびテストします。
+5. [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md):Visual Studio Emulator for Android:デバッグおよび IDE に関係なく、Android アプリのテスト
 
 ## <a name="connect-your-apps-to-services"></a>アプリをサービスに接続する
  追加の設定なしで以下のサービスに接続できます (各サービスのアカウントを持っていることを前提とします)。
 
--   [Azure モバイル サービス](http://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure モバイル サービス](http://azure.microsoft.com/documentation/services/mobile-services/)
 
--   [Azure ストレージ](http://azure.microsoft.com/documentation/services/storage/)
+- [Azure ストレージ](http://azure.microsoft.com/documentation/services/storage/)
 
--   クラウドに格納されているデータに接続するために、Office 365 REST API を独自のアプリに統合します。 詳細については、 [これらのサンプル](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365)を参照してください。
+- クラウドに格納されているデータに接続するために、Office 365 REST API を独自のアプリに統合します。 詳細については、 [これらのサンプル](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365)を参照してください。
 
 ## <a name="write-great-web-apps-with-aspnet"></a>ASP.NET で優れた Web アプリを作成する
  [ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) は、MVC、WebAPI、および SignalR へのメジャー アップデートであり、Windows、Mac、および Linux で実行されます。  ASP.NET 5 は、最新のクラウド ベースの Web アプリとサービスをビルドするための効率的で構成可能な .NET スタックを提供するために、まったく新たに設計されました。
@@ -79,7 +79,7 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 ## <a name="build-test-and-manage-your-code"></a>コードのビルド、テスト、管理
 
 ### <a name="check-in-your-code"></a>コードのチェックイン
- チームで作業している場合、最新バージョンのコードを共有して、チーム全員が同じコードベースを使用する必要があります。 Visual Studio は Visual Studio Team Services や Team Foundation Server とシームレスに統合し、Git または TFVC (Team Foundation バージョン管理) でのバージョン管理を提供します。 Visual Studio Team Services を使用してコードをクラウドに格納すると、ローカル サーバーのメンテナンスが不要になります。 オンプレミスのサーバーを使用する場合は、Team Foundation Server を使用します。 コード プロジェクトを作成するたびに、そのプロジェクトをバージョン管理に追加するオプションが表示されます。 ニーズに最適のバージョン管理システムを調べるには、「 [バージョン管理の使用](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)」を参照してください。
+ チームで作業している場合、最新バージョンのコードを共有して、チーム全員が同じコードベースを使用する必要があります。 Visual Studio は Visual Studio Team Services や Team Foundation Server とシームレスに統合し、Git または TFVC (Team Foundation バージョン管理) でのバージョン管理を提供します。 Visual Studio Team Services を使用してコードをクラウドに格納すると、ローカル サーバーのメンテナンスが不要になります。 オンプレミスのサーバーを使用する場合は、Team Foundation Server を使用します。 コード プロジェクトを作成するたびに、そのプロジェクトをバージョン管理に追加するオプションが表示されます。 システムは、ニーズに最適にバージョン管理について説明します。[バージョン管理を使用して、](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)します。
 
 ### <a name="build-your-app"></a>アプリのビルド
  [アプリをローカルでビルドし、](./ide/compiling-and-building-in-visual-studio.md) それが正常に機能することを確認します。 [デバッグ ツールを使用して](./debugger/debugging-in-visual-studio.md) 、アプリの問題を修正します。 あるいは、共有ビルド サーバーまたはクラウドにプロジェクトをビルドすることもできます。 チームの開発者がバージョン管理にチェックインしたコードをビルドするよう、ビルド プロセスを自動化します。 たとえば、1 つまたは複数のプロジェクトを夜間にビルドすることも、コードのチェックインごとにビルドすることもできます。
@@ -102,32 +102,32 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 
 ## <a name="in-this-section"></a>このセクションの内容
 
--   [Visual Studio 2015 の新機能](./what-s-new-in-visual-studio-2015.md)
+- [Visual Studio 2015 の新機能](./what-s-new-in-visual-studio-2015.md)
 
--   [Visual Studio 2015 のインストール](./install/install-visual-studio-2015.md)
+- [Visual Studio 2015 のインストール](./install/install-visual-studio-2015.md)
 
--   [Visual Studio プロジェクトの移植、移行、およびアップグレード](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+- [Visual Studio プロジェクトの移植、移行、およびアップグレード](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 
--   [Visual Studio IDE](./ide/visual-studio-ide.md)
+- [Visual Studio IDE](./ide/visual-studio-ide.md)
 
--   [Visual Studio の機能拡張](./extensibility/extensibility-in-visual-studio.md)
+- [Visual Studio の機能拡張](./extensibility/extensibility-in-visual-studio.md)
 
--   [Visual Studio でのデータへのアクセス](./data-tools/accessing-data-in-visual-studio.md)
+- [Visual Studio でのデータへのアクセス](./data-tools/accessing-data-in-visual-studio.md)
 
--   [クロス プラットフォームのモバイル開発](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
+- [クロス プラットフォームのモバイル開発](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 
--   [C# および Visual Basic の共有プログラミング概念](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
+- [C# および Visual Basic の共有プログラミング概念](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
 
--   [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
+- [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
 
--   [JavaScript](./javascript/javascript-in-visual-studio.md)
+- [JavaScript](./javascript/javascript-in-visual-studio.md)
 
--   [Python](./python/getting-started-with-python.md)
+- [Python](./python/getting-started-with-python.md)
 
--   [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
+- [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
 
--   [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
+- [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
--   [DevOps とアプリケーション ライフサイクル管理](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps とアプリケーション ライフサイクル管理](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
--   [ご意見](./ide/talk-to-us.md)
+- [ご意見](./ide/talk-to-us.md)

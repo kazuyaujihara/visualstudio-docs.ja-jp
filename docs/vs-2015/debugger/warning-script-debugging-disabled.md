@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b44c260e00ae5ef8b0d23e7aede139563ff22d98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105592"
 ---
 # <a name="warning-script-debugging-disabled"></a>警告 :スクリプト デバッグが無効
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Internet Explorer では、スクリプトのデバッグは現在無効にな�
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Internet Explorer でスクリプトのデバッグを有効にするには  
   
-1.  Internet Explorer で、**[ツール]** メニューの **[インターネット オプション]** を選択します。  
+1. Internet Explorer で、**[ツール]** メニューの **[インターネット オプション]** を選択します。  
   
-2.  **[インターネット オプション]** ダイアログ ボックスで、 **[詳細設定]** タブをクリックします。  
+2. **[インターネット オプション]** ダイアログ ボックスで、 **[詳細設定]** タブをクリックします。  
   
-3.  **[詳細設定]** タブの **[設定]** で **[参照]** カテゴリを表示します。  
+3. **[詳細設定]** タブの **[設定]** で **[参照]** カテゴリを表示します。  
   
-4.  **[スクリプトのデバッグを使用しない (Internet Explorer)]** チェック ボックスをオフにします。  
+4. **[スクリプトのデバッグを使用しない (Internet Explorer)]** チェック ボックスをオフにします。  
   
-5.  **[OK]** をクリックします。  
+5. **[OK]** をクリックします。  
   
-6.  Internet Explorer を終了して再起動します。  
+6. Internet Explorer を終了して再起動します。  
   
      新しい設定が反映されます。  
   

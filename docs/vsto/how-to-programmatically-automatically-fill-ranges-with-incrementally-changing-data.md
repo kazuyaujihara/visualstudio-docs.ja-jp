@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36a91875d2964bf952f039a699da6ed165afa090
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4caede15b17478bb9649f09d9341931511b655f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117890"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>方法: プログラムによって自動的に増分するデータ範囲を入力します。
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>のメソッド、<xref:Microsoft.Office.Interop.Excel.Range>オブジェクトでは、値を含むワークシートで範囲を自動的に入力することができます。 ほとんどの場合、<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>メソッドは、段階的増加または減少する範囲の値の格納に使用されます。 任意の定数を指定して、動作を指定することができます、<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>列挙体。
@@ -29,12 +29,12 @@ ms.locfileid: "56638531"
 
  使用する場合は、2 つの範囲を指定する必要があります<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:
 
--   呼び出す範囲、<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>メソッドでは、塗りつぶしの開始位置を指定し、初期値が含まれています。
+- 呼び出す範囲、<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>メソッドでは、塗りつぶしの開始位置を指定し、初期値が含まれています。
 
--   パラメーターとして渡される範囲を入力する、<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>メソッド。 この変換先の範囲は、初期値を含む範囲を含める必要があります。
+- パラメーターとして渡される範囲を入力する、<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>メソッド。 この変換先の範囲は、初期値を含む範囲を含める必要があります。
 
     > [!NOTE]
-    >  渡すことはできません、<xref:Microsoft.Office.Tools.Excel.NamedRange>制御の代わりに、<xref:Microsoft.Office.Interop.Excel.Range>します。 詳細については、[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)を参照してください。
+    >  渡すことはできません、<xref:Microsoft.Office.Tools.Excel.NamedRange>制御の代わりに、<xref:Microsoft.Office.Interop.Excel.Range>します。 詳細については、次を参照してください。[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)します。
 
 ## <a name="example"></a>例
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
@@ -45,11 +45,11 @@ ms.locfileid: "56638531"
 
  この例では、3 つのリージョンを入力することが必要です。
 
--   列 B には 5 つまでの平日を含めます。 初期値に「**月曜日**セル B1 にします。
+- 列 B には 5 つまでの平日を含めます。 初期値に「**月曜日**セル B1 にします。
 
--   列 C には 5 か月が含まれます。 初期値に「**年 1 月**セル C1 にします。
+- 列 C には 5 か月が含まれます。 初期値に「**年 1 月**セル C1 にします。
 
--   列 D では、一連の数字、行ごとに 2 つずつインクリメントされます。 初期値として、入力**4** D1 のセルと**6**セル D2 にします。
+- 列 D では、一連の数字、行ごとに 2 つずつインクリメントされます。 初期値として、入力**4** D1 のセルと**6**セル D2 にします。
 
 ## <a name="see-also"></a>関連項目
 - [範囲を操作します。](../vsto/working-with-ranges.md)

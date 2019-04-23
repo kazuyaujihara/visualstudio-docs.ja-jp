@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49908ba5110cf59d0aa4fff6f91bf356ec72c3c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065286"
 ---
 # <a name="localizing-vsix-packages"></a>VSIX パッケージのローカライズ
 
@@ -53,7 +53,7 @@ VSIX パッケージのコンテンツは追加する VSPackage が含まれる�
 
 1. **ソリューション エクスプ ローラー**Extension.vsixlangpack ファイルを右クリックし、クリックして**プロパティ**します。
 
-2.  **プロパティ グリッド**、 をクリックして**Vsix に含める**、その値に設定し、`true`します。
+2. **プロパティ グリッド**、 をクリックして**Vsix に含める**、その値に設定し、`true`します。
 
 ## <a name="example"></a>例
 
@@ -101,7 +101,7 @@ VSIX パッケージのコンテンツは追加する VSPackage が含まれる�
 
 ## <a name="see-also"></a>関連項目
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
 |[VSIX 言語パック スキーマ 2.0 リファレンス](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|VSIX 言語パックでは、.vsix 展開ファイルのローカリゼーションの情報について説明します。|
 |[VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)|構造と vsix パッケージの内容について説明します。|

@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798808"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082387"
 ---
 # <a name="net-memory-allocations-view"></a>.NET メモリの割り当てビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "54798808"
 ## <a name="highlighting-the-execution-hot-path"></a>実行ホット パスの強調表示  
  親型のほとんどのオブジェクトを作成したコール ツリーの実行パスを見つけることができます。  
   
--   最もアクティブなパスを表示するには、型または関数を右クリックし、**[ホット パスの展開]** をクリックします。  
+- 最もアクティブなパスを表示するには、型または関数を右クリックし、**[ホット パスの展開]** をクリックします。  
   
 |Column|説明|  
 |------------|-----------------|  

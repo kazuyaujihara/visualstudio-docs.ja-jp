@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4b559b80613197dae62bc6246bd7ef1532d7071
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e79a7fd37bd5f2d5298bda6dca7568c6ba4db6ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941167"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057005"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>ダイアグラムへの背景イメージの設定
 Visual Studio Visualization and Modeling SDK でカスタム コードを使用して、生成されたデザイナーの背景イメージを設定できます。
@@ -21,21 +21,21 @@ Visual Studio Visualization and Modeling SDK でカスタム コードを使用�
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>生成されるデザイナーの背景イメージを設定するには
 
-1.  図の背景として使用するイメージ ファイルを、現在のプロジェクトの Dsl\Resources ディレクトリにコピーします。
+1. 図の背景として使用するイメージ ファイルを、現在のプロジェクトの Dsl\Resources ディレクトリにコピーします。
 
-2.  **ソリューション エクスプ ローラー**、dsl \resources フォルダーを右クリックし、 をポイント**追加**、 をクリックし、**既存項目の**します。
+2. **ソリューション エクスプ ローラー**、dsl \resources フォルダーを右クリックし、 をポイント**追加**、 をクリックし、**既存項目の**します。
 
-3.  **既存項目の追加** ダイアログ ボックスで dsl \resources フォルダーを参照します。
+3. **既存項目の追加** ダイアログ ボックスで dsl \resources フォルダーを参照します。
 
-4.  **ファイルの種類**一覧で、**イメージ ファイル**します。
+4. **ファイルの種類**一覧で、**イメージ ファイル**します。
 
-5.  ディレクトリにコピーしたイメージ ファイルをクリックし、クリックして**追加**します。
+5. ディレクトリにコピーしたイメージ ファイルをクリックし、クリックして**追加**します。
 
-6.  Dsl を右クリックし、をクリックして**プロパティ**Dsl プロジェクトのプロパティを開きます。
+6. Dsl を右クリックし、をクリックして**プロパティ**Dsl プロジェクトのプロパティを開きます。
 
-7.  **リソース**] タブで [**このプロジェクトに既定のリソース ファイルが含まれていません。ここをクリックすると、1 つを作成します。**
+7. **リソース**] タブで [**このプロジェクトに既定のリソース ファイルが含まれていません。ここをクリックすると、1 つを作成します。**
 
-8.  イメージ ファイルをリソース ファイルから画像をドラッグして追加**ソリューション エクスプ ローラー**リソース ウィンドウにします。
+8. イメージ ファイルをリソース ファイルから画像をドラッグして追加**ソリューション エクスプ ローラー**リソース ウィンドウにします。
 
 9. ［ファイル］ メニューを開き、プロジェクトのプロパティを保存するオプションをクリックします。
 
@@ -98,7 +98,7 @@ Visual Studio Visualization and Modeling SDK でカスタム コードを使用�
     }
     ```
 
-     プログラム コードでモデルをカスタマイズする方法の詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。
+     プログラム コードでモデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。
 
 ## <a name="see-also"></a>関連項目
 

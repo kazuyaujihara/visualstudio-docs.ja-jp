@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963586"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087941"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>方法: 配置の更新用に別の場所を指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ ms.locfileid: "58963586"
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>MageUI.exe (Windows フォーム ベースのユーティリティ) を使用して更新プログラムの別の場所を指定します。  
   
-1.  .NET Framework コマンド プロンプトと種類を開きます。  
+1. .NET Framework コマンド プロンプトと種類を開きます。  
   
      **mageui.exe**  
   
-2.  **ファイル**] メニューの [選択**開く**をアプリケーションの配置マニフェストを開きます。  
+2. **ファイル**] メニューの [選択**開く**をアプリケーションの配置マニフェストを開きます。  
   
-3.  **[配置オプション]** タブを選択します。  
+3. **[配置オプション]** タブを選択します。  
   
-4.  テキスト ボックスに名前付き**起動場所**アプリケーションの更新プログラムの配置マニフェストを含むディレクトリへの URL を入力します。  
+4. テキスト ボックスに名前付き**起動場所**アプリケーションの更新プログラムの配置マニフェストを含むディレクトリへの URL を入力します。  
   
-5.  配置マニフェストを保存します。  
+5. 配置マニフェストを保存します。  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Mage.exe を使用して更新プログラムの別の場所を指定します。  
   
-1.  .NET Framework コマンド プロンプトを開きます。  
+1. .NET Framework コマンド プロンプトを開きます。  
   
-2.  次のコマンドを使用して更新プログラムの場所を設定します。 この例で**HelloWorld.exe.application**へのパス、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]は .application という拡張子を持つ常に、アプリケーション マニフェストと**http://adatum.com/Update/Path**そのをURLには[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]はアプリケーションの更新プログラムを確認します。  
+2. 次のコマンドを使用して更新プログラムの場所を設定します。 この例で**HelloWorld.exe.application**へのパス、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]は .application という拡張子を持つ常に、アプリケーション マニフェストと**http://adatum.com/Update/Path**そのをURLには[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]はアプリケーションの更新プログラムを確認します。  
   
      **Mage-HelloWorld.exe.application ProviderUrl の更新 http://adatum.com/Update/Path**  
   
-3.  ファイルを保存します。  
+3. ファイルを保存します。  
   
     > [!NOTE]
     >  Mage.exe を使用してファイルを再署名する必要があります。 詳細については、「[チュートリアル:Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」(チュートリアル: ClickOnce アプリケーションを手動で配置する) を参照してください。  

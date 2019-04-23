@@ -16,14 +16,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100457"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>チュートリアル: メモリ リークの検出 (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>チュートリアル: メモリ リーク (JavaScript) の検出します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows および Windows Phone に適用されます] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
@@ -34,18 +34,18 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>JavaScript メモリ アナライザーのテスト アプリの実行  
   
-1.  Visual Studio で、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
+1. Visual Studio で、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
   
-2.  左ペインで **[JavaScript]** を選択し、次に **[Windows]**、 **[Windows 8]** の順に選択してから、 **[ユニバーサル]** または **[Windows Phone アプリ]** を選択します。  
+2. 左ペインで **[JavaScript]** を選択し、次に **[Windows]**、 **[Windows 8]** の順に選択してから、 **[ユニバーサル]** または **[Windows Phone アプリ]** を選択します。  
   
     > [!IMPORTANT]
     >  このトピックに示すメモリ使用量の結果は、Windows 8 アプリでテストされます。  
   
-3.  中央のペインにある **[空のアプリケーション]** プロジェクト テンプレートを選択します。  
+3. 中央のペインにある **[空のアプリケーション]** プロジェクト テンプレートを選択します。  
   
-4.  **[名前]** ボックスに `JS_Mem_Tester`などの名前を指定し、 **[OK]** をクリックします。  
+4. **[名前]** ボックスに `JS_Mem_Tester`などの名前を指定し、 **[OK]** をクリックします。  
   
-5.  **ソリューション エクスプローラー**で default.html を開き、次のコードを \<body> タグの間に貼り付けます。  
+5. **ソリューション エクスプローラー**で default.html を開き、次のコードを \<body> タグの間に貼り付けます。  
   
     ```html  
     <div class="wrapper">  
@@ -57,7 +57,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
     > [!IMPORTANT]
     >  「Windows 8.1 ユニバーサル アプリ」テンプレートを使用する場合、Windows および.WindowsPhone プロジェクトの両方で HTML および CSS コードを更新する必要があります。  
   
-6.  default.css を開き、次の CSS コードを追加します。  
+6. default.css を開き、次の CSS コードを追加します。  
   
     ```css  
     .memleak {  
@@ -65,7 +65,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
     }  
     ```  
   
-7.  default.js を開き、すべてのコードを次のコードに置き換えます。  
+7. default.js を開き、すべてのコードを次のコードに置き換えます。  
   
     ```javascript  
     (function () {  
@@ -126,7 +126,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
     })();  
     ```  
   
-8.  F5 キーを押してデバッグを開始します。 **[Leak Memory]** ボタンがページに表示されることを確認します。  
+8. F5 キーを押してデバッグを開始します。 **[Leak Memory]** ボタンがページに表示されることを確認します。  
   
 9. Visual Studio に戻り (Alt + Tab キー)、Shift キーを押しながら F5 キーを押してデバッグを停止します。  
   
@@ -224,7 +224,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
     > [!TIP]
     >  `Global` オブジェクトに対する相対的な位置を特定することによってオブジェクトを識別できる場合があります。 これを行うには、その識別子のショートカット メニューを開き、 **[ルート ビューで表示]** をクリックします。  
   
-##  <a name="FixingMemory"></a> メモリの問題の修正  
+## <a name="FixingMemory"></a> メモリの問題の修正  
   
 1. プロファイラーで公開されたデータを使用して、"項目" の ID と共に DOM 要素の削除を担当するコードを確認します。 これは `initialize()` 関数で発生します。  
   

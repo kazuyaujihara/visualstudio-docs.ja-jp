@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059267"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 テキスト テンプレートを使用した実行時テキスト生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>ランタイム テキスト テンプレートを作成するには  
   
-1.  ソリューション エクスプ ローラーで、プロジェクトのショートカット メニューの 選択**追加**、**新しい項目の**します。  
+1. ソリューション エクスプ ローラーで、プロジェクトのショートカット メニューの 選択**追加**、**新しい項目の**します。  
   
-2.  **新しい項目の追加** ダイアログ ボックスで、**ランタイム テキスト テンプレート** を選択します。 (で[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]下を見て**共通 Items\General**)。  
+2. **新しい項目の追加** ダイアログ ボックスで、**ランタイム テキスト テンプレート** を選択します。 (で[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]下を見て**共通 Items\General**)。  
   
-3.  テンプレート ファイルの名前を入力します。  
+3. テンプレート ファイルの名前を入力します。  
   
     > [!NOTE]
     >  テンプレート ファイルの名前は、生成されたコード内のクラス名として使用されます。 そのため、スペースまたは句読点を含めることはできません。  
   
-4.  **[追加]** をクリックします。  
+4. **[追加]** をクリックします。  
   
      拡張子 **.tt** を持つ新しいファイルが作成されます。 その **カスタム ツール** プロパティには **TextTemplatingFilePreprocessor** が設定されています。 次の行が含まれています。  
   
@@ -79,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>既存のテキスト ファイルをランタイム テンプレートに変換するには  
   
-1.  ファイルを含める、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。 ソリューション エクスプ ローラーで、プロジェクトのショートカット メニューの 選択**追加**、**既存項目の**します。  
+1. ファイルを含める、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。 ソリューション エクスプ ローラーで、プロジェクトのショートカット メニューの 選択**追加**、**既存項目の**します。  
   
-2.  ファイルの設定 **カスタム ツール** プロパティを **TextTemplatingFilePreprocessor** にします。 ソリューション エクスプ ローラーで、ファイルのショートカット メニューの **プロパティ** を選択します。  
+2. ファイルの設定 **カスタム ツール** プロパティを **TextTemplatingFilePreprocessor** にします。 ソリューション エクスプ ローラーで、ファイルのショートカット メニューの **プロパティ** を選択します。  
   
     > [!NOTE]
     >  プロパティが既に設定されている場合は、**TextTemplatingFilePreprocessor** ではなく **TextTemplatingFileGenerator** であることを確認します。 拡張子 **.tt** のファイルをインクルードする場合に起こりえます。  
   
-3.  ファイル名の拡張子を **.tt** に変更します。 この手順は省略可能ですが、不適切なエディターでファイルを開いてしまうことを防ぎます。  
+3. ファイル名の拡張子を **.tt** に変更します。 この手順は省略可能ですが、不適切なエディターでファイルを開いてしまうことを防ぎます。  
   
-4.  ファイル名の主要部分から、スペースや句読点を削除します。 たとえば"My Web Page.tt"は適切ではないですが、"MyWebPage.tt"は適切です。 ファイル名は、生成されたコード内のクラス名として使用されます。  
+4. ファイル名の主要部分から、スペースや句読点を削除します。 たとえば"My Web Page.tt"は適切ではないですが、"MyWebPage.tt"は適切です。 ファイル名は、生成されたコード内のクラス名として使用されます。  
   
-5.  ファイルの先頭に次の行を挿入します。 Visual Basic プロジェクトで作業している場合は、"C#" が "VB" に置き換えられます。  
+5. ファイルの先頭に次の行を挿入します。 Visual Basic プロジェクトで作業している場合は、"C#" が "VB" に置き換えられます。  
   
      `<#@ template language="C#" #>`  
   

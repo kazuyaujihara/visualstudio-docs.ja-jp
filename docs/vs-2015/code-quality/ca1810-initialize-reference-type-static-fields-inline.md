@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2722286af0d4c95fec30593047bedf1fe0ba4d2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037869"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810:参照型の静的フィールドをインラインで初期化します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58975860"
 
  静的コンストラクターのチェックによってパフォーマンスが低下することがあります。 多くの場合、静的コンス トラクターは、静的フィールドの最初のアクセスする前にする必要がありますのみを確認する静的な初期化ケースが発生する静的フィールドの初期化にのみ使用されます。 `beforefieldinit`な場合、これらおよびその他のほとんどの種類。 適切でないのみ静的な初期化がグローバルな状態に影響し、次のいずれかが当てはまるときです。
 
--   グローバル状態への影響は、コストが、型を使用しない場合は必要ありません。
+- グローバル状態への影響は、コストが、型を使用しない場合は必要ありません。
 
--   グローバル状態の結果は、型の静的フィールドにアクセスしなくてもアクセスできます。
+- グローバル状態の結果は、型の静的フィールドにアクセスしなくてもアクセスできます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、静的データが宣言されたとき、および静的コンストラクターを削除するときに、静的データをすべて初期化します。

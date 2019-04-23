@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 154e6058689d308f35fd969438d1964b9383f653
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: a98ad657fd1664a71b0b07063615923af4b9db2d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096050"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>方法: ClickOnce を使用して、複数のバージョンの .NET Framework で実行できるアプリケーションを配置する
 ClickOnce 配置テクノロジを使用して複数バージョンの .NET Framework を対象とするアプリケーションを展開することができます。 これは、生成し、アプリケーション マニフェストと配置マニフェストを更新する必要があります。
@@ -31,27 +31,27 @@ ClickOnce 配置テクノロジを使用して複数バージョンの .NET Fram
 
  このプロセスでは、次の手順が必要です。
 
-1.  アプリケーションと配置マニフェストを生成します。
+1. アプリケーションと配置マニフェストを生成します。
 
-2.  複数の .NET Framework バージョンを一覧表示、配置マニフェストを変更します。
+2. 複数の .NET Framework バージョンを一覧表示、配置マニフェストを変更します。
 
-3.  変更、 *app.config*ファイルが互換性のある .NET Framework ランタイムのバージョンを一覧表示します。
+3. 変更、 *app.config*ファイルが互換性のある .NET Framework ランタイムのバージョンを一覧表示します。
 
-4.  依存アセンブリの .NET Framework アセンブリとしてマークするアプリケーション マニフェストを変更します。
+4. 依存アセンブリの .NET Framework アセンブリとしてマークするアプリケーション マニフェストを変更します。
 
-5.  アプリケーション マニフェストに署名します。
+5. アプリケーション マニフェストに署名します。
 
-6.  更新し、配置マニフェストに署名します。
+6. 更新し、配置マニフェストに署名します。
 
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>アプリケーションと配置マニフェストを生成するには
 
--   アプリケーションを発行して、アプリケーションと配置マニフェスト ファイルを生成するには、発行ウィザード、または、プロジェクト デザイナーの [発行] ページを使用します。 詳細については、次を参照してください。[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)または[発行 Page, Project Designer](../ide/reference/publish-page-project-designer.md)します。
+- アプリケーションを発行して、アプリケーションと配置マニフェスト ファイルを生成するには、発行ウィザード、または、プロジェクト デザイナーの [発行] ページを使用します。 詳細については、「[方法 :発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)または[発行 Page, Project Designer](../ide/reference/publish-page-project-designer.md)します。
 
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>複数の .NET Framework バージョンを一覧表示、配置マニフェストを変更するには
 
-1.  発行ディレクトリには、Visual Studio で、XML エディターを使用して、配置マニフェストを開きます。 配置マニフェスト、 *.application*ファイル名拡張子。
+1. 発行ディレクトリには、Visual Studio で、XML エディターを使用して、配置マニフェストを開きます。 配置マニフェスト、 *.application*ファイル名拡張子。
 
-2.  間の XML コードを置き換える、`<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">`と`</compatibleFrameworks>`アプリケーションのサポートされている .NET Framework バージョンを一覧表示する xml 要素。
+2. 間の XML コードを置き換える、`<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">`と`</compatibleFrameworks>`アプリケーションのサポートされている .NET Framework バージョンを一覧表示する xml 要素。
 
      次の表では、使用可能な .NET Framework バージョンと配置マニフェストに追加できる、対応する XML の一部を示します。
 
@@ -65,9 +65,9 @@ ClickOnce 配置テクノロジを使用して複数バージョンの .NET Fram
 
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>互換性のある .NET Framework ランタイムのバージョンを一覧表示する app.config ファイルを変更するには
 
-1.  ソリューション エクスプ ローラーで開く、 *app.config* Visual Studio で、XML エディターを使用して、ファイル。
+1. ソリューション エクスプ ローラーで開く、 *app.config* Visual Studio で、XML エディターを使用して、ファイル。
 
-2.  間の XML コードを置き換えます (または追加)、`<startup>`と`</startup>`アプリケーションのサポートされている .NET Framework ランタイムの一覧を表示する xml 要素。
+2. 間の XML コードを置き換えます (または追加)、`<startup>`と`</startup>`アプリケーションのサポートされている .NET Framework ランタイムの一覧を表示する xml 要素。
 
      次の表では、使用可能な .NET Framework バージョンと配置マニフェストに追加できる、対応する XML の一部を示します。
 
@@ -100,7 +100,7 @@ ClickOnce 配置テクノロジを使用して複数バージョンの .NET Fram
 
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>マニフェストを更新して、アプリケーションおよび配置に再署名
 
--   更新し、アプリケーション マニフェストと配置マニフェストに再署名します。 詳細については、「[方法: アプリケーション マニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。
+- 更新し、アプリケーション マニフェストと配置マニフェストに再署名します。 詳細については、「[方法 :アプリケーション マニフェストと配置マニフェストの再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 576b9a6890a6a6de398e917c1c152dcdb2f3ef16
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54c3bd854f824818d9656a33ccf30391f750a491
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978285"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080723"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>方法: 要素の CLR 属性を設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ ms.locfileid: "58978285"
   
 ### <a name="to-add-a-custom-attribute"></a>カスタム属性を追加するには  
   
-1.  **DSL エクスプ ローラー**、カスタム属性を追加する要素を選択します。  
+1. **DSL エクスプ ローラー**、カスタム属性を追加する要素を選択します。  
   
-2.  **プロパティ**ウィンドウ、次へ を**カスタム属性**プロパティで、参照 をクリックします (**...**) アイコン。  
+2. **プロパティ**ウィンドウ、次へ を**カスタム属性**プロパティで、参照 をクリックします (**...**) アイコン。  
   
      **属性の編集** ダイアログ ボックスが表示されます。  
   
-3.  **名前**列、 をクリックして**\<属性の追加 >** 属性の名前を入力します。 ENTER キーを押します。  
+3. **名前**列、 をクリックして**\<属性の追加 >** 属性の名前を入力します。 ENTER キーを押します。  
   
-4.  属性名の下にある行は、かっこを示しています。 この行に入力属性のパラメーターの型 (たとえば、 `string`)、し、ENTER キーを押します。  
+4. 属性名の下にある行は、かっこを示しています。 この行に入力属性のパラメーターの型 (たとえば、 `string`)、し、ENTER キーを押します。  
   
-5.  **Name プロパティ**列で、たとえば、適切な名前を入力`MyString`します。  
+5. **Name プロパティ**列で、たとえば、適切な名前を入力`MyString`します。  
   
-6.  **[OK]** をクリックします。  
+6. **[OK]** をクリックします。  
   
      **カスタム属性**プロパティは、次の形式で属性を表示するようになりました。  
   

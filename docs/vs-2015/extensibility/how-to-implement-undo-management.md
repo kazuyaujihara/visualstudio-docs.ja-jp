@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 267cd5d5487bfb5f861143e3767c066330bff81e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974518"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112612"
 ---
 # <a name="how-to-implement-undo-management"></a>方法: 元に戻す管理を実装
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "58974518"
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>単一ビュー エディターの元に戻す管理をサポートするには  
   
-1.  呼び出す`QueryInterface`上、`IServiceProvider`インターフェイスのウィンドウ フレームを`IOleUndoManager`、元に戻すマネージャーにアクセスするドキュメント ビュー オブジェクトから (`IID_IOLEUndoManager`)。  
+1. 呼び出す`QueryInterface`上、`IServiceProvider`インターフェイスのウィンドウ フレームを`IOleUndoManager`、元に戻すマネージャーにアクセスするドキュメント ビュー オブジェクトから (`IID_IOLEUndoManager`)。  
   
-2.  ビューはウィンドウ フレームに配置された、場合に、呼び出しに使用できること、サイトのポインターを取得します。`QueryInterface`の`IServiceProvider`します。  
+2. ビューはウィンドウ フレームに配置された、場合に、呼び出しに使用できること、サイトのポインターを取得します。`QueryInterface`の`IServiceProvider`します。  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>エディターが複数のビューをサポートしている場合  
  ドキュメントとビューの分離した場合は、ドキュメント自体に関連付けられている通常の 1 つの元に戻すマネージャーです。 すべての元に戻す単位は、ドキュメント データ オブジェクトに関連付けられている 1 つの元に戻すマネージャーに配置されます。  
@@ -48,17 +48,17 @@ ms.locfileid: "58974518"
   
 3. リレー、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>と<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>に格納されている呼び出し`IOleCommandTarget`StandardCommandSet97 コマンドを次のインターフェイス。  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. 呼び出す`QueryInterface`で`IOleUndoManager`の`IID_IVsChangeTrackingUndoManager`します。 ポインターを格納<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>します。  
   

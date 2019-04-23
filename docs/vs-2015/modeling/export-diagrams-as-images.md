@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3554941ea4fc0d0d95d36cc99224f270cdc23fe9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da424c2250c327a04a9f878e6bd953a664dcc4d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104123"
 ---
 # <a name="export-diagrams-as-images"></a>イメージとしてダイアグラムをエクスポートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ Visual Studio で、利害関係者、ユーザー、または同じバージョ
   
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>図または図の一部を別のアプリケーションにコピーするには  
   
-1.  図で、一部またはすべての図形を選択します。  
+1. 図で、一部またはすべての図形を選択します。  
   
-2.  選択内容を右クリックし、をクリックし、**コピー**します。  
+2. 選択内容を右クリックし、をクリックし、**コピー**します。  
   
-3.  必要なアプリケーションに選択内容を貼り付けます。  
+3. 必要なアプリケーションに選択内容を貼り付けます。  
   
 ### <a name="to-export-an-image-as-part-of-an-automated-process"></a>自動化されたプロセスの一部として、イメージをエクスポートするには  
   
--   参照してください[にイメージ ファイルのエクスポートの UML 図](../modeling/export-uml-diagrams-to-image-files.md)します。  
+- 参照してください[にイメージ ファイルのエクスポートの UML 図](../modeling/export-uml-diagrams-to-image-files.md)します。  
   
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>モデリング図を XML Paper Specification (.xps) ファイルとして保存するには  
   
-1.  **ファイル** メニューのをクリックして**印刷**を開く、**印刷** ダイアログ ボックス。  
+1. **ファイル** メニューのをクリックして**印刷**を開く、**印刷** ダイアログ ボックス。  
   
-2.  **名前**一覧で、 **Microsoft XPS Document Writer**、順にクリックします**OK**します。  
+2. **名前**一覧で、 **Microsoft XPS Document Writer**、順にクリックします**OK**します。  
   
-3.  **ファイルに保存します**ファイルとして保存 ダイアログ ボックス、 **XPS ドキュメント (\*.xps)** ファイル。  
+3. **ファイルに保存します**ファイルとして保存 ダイアログ ボックス、 **XPS ドキュメント (\*.xps)** ファイル。  
   
 ## <a name="net-framework-security"></a>.NET Framework セキュリティ  
   

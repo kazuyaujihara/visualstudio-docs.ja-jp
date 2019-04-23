@@ -11,12 +11,12 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3df1a4e61859aee4b27dccf5360e0ae99ad5aa8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077525"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>チェックリスト: 従来の言語サービスの作成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "58963142"
   
 ## <a name="steps-for-creating-a-language-service"></a>言語サービスを作成するための手順  
   
-1.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> インターフェイスを実装します。  
+1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> インターフェイスを実装します。  
   
-    -   VSPackage、実装、<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>言語サービスを提供するインターフェイス。  
+    - VSPackage、実装、<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>言語サービスを提供するインターフェイス。  
   
-    -   言語サービスを統合開発環境 (IDE) で使用できるように、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>実装します。  
+    - 言語サービスを統合開発環境 (IDE) で使用できるように、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>実装します。  
   
-2.  実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>主要言語サービス クラスのインターフェイス。  
+2. 実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>主要言語サービス クラスのインターフェイス。  
   
      <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>インターフェイスは、コア エディターと言語サービスの間の相互作用の開始ポイントです。  
   
@@ -121,7 +121,7 @@ ms.locfileid: "58963142"
   
    次の方法のいずれかで、エディターにコンテキストを提供します。  
   
-  -   テキスト マーカーのコンテキストを提供するを実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>インターフェイス。  
+  - テキスト マーカーのコンテキストを提供するを実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>インターフェイス。  
   
   すべてのユーザー コンテキストを提供するを実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>インターフェイス。  
   

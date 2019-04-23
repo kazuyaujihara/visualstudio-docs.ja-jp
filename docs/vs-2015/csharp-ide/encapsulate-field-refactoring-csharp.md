@@ -1,5 +1,5 @@
 ---
-title: カプセル化 リファクタリング (C#) |Microsoft Docs
+title: カプセル化 リファクタリング (c#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee56c4588bbbd3ec5cfca03bbd18c6dec1732fbf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116603"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>フィールドのカプセル化リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58973041"
   
 ### <a name="to-create-a-property-from-a-field"></a>フィールドからプロパティを作成するには  
   
-1.  `EncapsulateFieldExample` という名前のコンソール アプリケーションを作成し、`Program` を次のコード例で置き換えます。  
+1. `EncapsulateFieldExample` という名前のコンソール アプリケーションを作成し、`Program` を次のコード例で置き換えます。  
   
     ```csharp  
     class Square  
@@ -58,13 +58,13 @@ ms.locfileid: "58973041"
     }  
     ```  
   
-2.  [コード エディター](../ide/writing-code-in-the-code-and-text-editor.md)、カプセル化するフィールドの名前を宣言にカーソルを置きます。 次の例では、カーソルを `width` という語に移動します。  
+2. [コード エディター](../ide/writing-code-in-the-code-and-text-editor.md)、カプセル化するフィールドの名前を宣言にカーソルを置きます。 次の例では、カーソルを `width` という語に移動します。  
   
     ```csharp  
     public int width, height;  
     ```  
   
-3.  **リファクタリング** メニューのをクリックして**フィールドのカプセル化**します。  
+3. **リファクタリング** メニューのをクリックして**フィールドのカプセル化**します。  
   
      **フィールドのカプセル化** ダイアログ ボックスが表示されます。  
   
@@ -72,11 +72,11 @@ ms.locfileid: "58973041"
   
      カーソルを右クリックして をポイント**リファクタリング**、順にクリックします**フィールドのカプセル化**を表示する、**フィールドのカプセル化** ダイアログ ボックス。  
   
-4.  設定を指定します。  
+4. 設定を指定します。  
   
-5.  ENTER を押すか、クリックして、 **OK**ボタンをクリックします。  
+5. ENTER を押すか、クリックして、 **OK**ボタンをクリックします。  
   
-6.  選択した場合、**参照の変更のプレビュー**オプション、**参照の変更のプレビュー**ウィンドウが開きます。 をクリックして、**適用**ボタンをクリックします。  
+6. 選択した場合、**参照の変更のプレビュー**オプション、**参照の変更のプレビュー**ウィンドウが開きます。 をクリックして、**適用**ボタンをクリックします。  
   
      次の `get` アクセサー コードおよび `set` アクセサー コードがソース ファイルに表示されます。  
   

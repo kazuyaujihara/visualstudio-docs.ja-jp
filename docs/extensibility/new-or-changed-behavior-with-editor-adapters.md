@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41dafb118120d14004eae07e56a954675b8ffc4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 63c04e808228898e7542f67ec72bf9d36203547d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335416"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061258"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>エディターのアダプターを搭載した新規または変更された動作
 以前のバージョンの Visual Studio コア エディターと照らして記述されたコードを更新する、新しい API を使用するのではなく、エディターのアダプター (または shim) を使用する場合は、エディターのアダプターの動作に次の相違点の注意する必要があります。に関しては、前のコア エディター。
@@ -41,7 +41,7 @@ ms.locfileid: "56335416"
  WPF のモードは、2 つの方法で Win32 モードによって異なります。 まず、テキスト ビューは、WPF のコンテキストでホストできます。 キャストすることによって、WPF ウィンドウを表示できます、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>に<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane>を呼び出すと<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>します。 2 番目、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A>も返しますが、HWND がこの HWND の位置を確認し、フォーカスの設定にのみ使用できます。 エディターで、ウィンドウを描画する方法には影響があるため、WM_PAINT メッセージに応答するこの HWND を使用する必要がありますできません。 この HWND では、アダプターを使用して新しいエディター コードへの移行を容易にするためにのみ存在します。 使用する必要がありますしないことを強くお勧め`VIF_NO_HWND_SUPPORT`コンポーネントから返される HWND の制限のため、操作する HWND を必要とする場合`GetWindowHandle`このモードでいます。
 
 #### <a name="pass-arrays-as-parameters-in-native-code"></a>ネイティブ コードで配列をパラメーターとして渡す
- 配列とその数を含むパラメーターを持つ API のレガシのエディターで多くの方法はあります。 例を示します。
+ 配列とその数を含むパラメーターを持つ API のレガシのエディターで多くの方法はあります。 以下に例を示します。
 
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>
 
@@ -55,7 +55,7 @@ ms.locfileid: "56335416"
  バッファーのアダプターは、UI スレッドから常に呼び出す必要があります。 バッファーのアダプターは、マネージ オブジェクト、つまり、呼び出しが自動的にマーシャ リングできない、UI スレッドへとマネージ コードからそれを呼び出すことは COM マーシャ リングをバイパスします。  使用する必要があります、バック グラウンド スレッドからバッファー アダプターを呼び出す場合<xref:System.Windows.Threading.Dispatcher.Invoke%2A>または同様のメソッド。
 
 #### <a name="lockbuffer-methods"></a>LockBuffer メソッド
- すべての LockBuffer() メソッドが非推奨とされます。 例を示します。
+ すべての LockBuffer() メソッドが非推奨とされます。 以下に例を示します。
 
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.LockBuffer%2A>
 
@@ -83,29 +83,29 @@ ms.locfileid: "56335416"
 
  影響を受ける方法 (リストはすべてを網羅) 次に示します。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>
 
 #### <a name="outlining"></a>アウトライン
  クライアントの<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>を使用して追加されているアウトライン領域のみが表示されます<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>または<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>します。 アドホックのリージョンは、エディター アダプターを介して追加されないので、表示されなくなります。 同様に、これらのクライアントでは、アウトライン、エディターのアダプターではなく、新しいエディターのコードを使用している言語 (c# および C++ を含む) によって追加された領域が見えない。
@@ -118,7 +118,7 @@ ms.locfileid: "56335416"
 
 #### <a name="intellisense"></a>IntelliSense
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A>メソッドは、いずれかを実装していないクラスを渡す場合は失敗<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2>または<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>します。 カスタム Win32 オーナー描画のポップアップがサポートされていません。
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A>メソッドは、いずれかを実装していないクラスを渡す場合は失敗<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2>または<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>します。 カスタム Win32 オーナー描画のポップアップがサポートされていません。
 
 #### <a name="smarttags"></a>スマート タグ
  使用すると、作成されたスマート タグのアダプターのサポートはありません<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>、および<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2>インターフェイス。

@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1227dea199ebff465fc2dde3ec30568bb50e9ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975927"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043681"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 配置でのセキュリティ、バージョン管理、およびマニフェストの問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ ms.locfileid: "58975927"
   
  配置またはアプリケーション マニフェストを手動で編集した場合を意図せず壊れていること。 正しいにより、破損したマニフェスト[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]インストールします。 クリックして、実行時にこのようなエラーをデバッグすることができます**詳細**上、 **ClickOnce エラー**ダイアログ ボックスで、およびログにエラー メッセージを読み取っています。 ログは、次のメッセージのいずれかの一覧に表示します。  
   
--   構文エラー、および行の数と文字の説明、エラーが発生した位置。  
+- 構文エラー、および行の数と文字の説明、エラーが発生した位置。  
   
--   要素またはマニフェストのスキーマの違反で使用される属性の名前。 場合は、マニフェストに XML を手動で追加した、マニフェストのスキーマに、追加機能を比較する必要があります。 詳細については、次を参照してください。 [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)と[ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)します。  
+- 要素またはマニフェストのスキーマの違反で使用される属性の名前。 場合は、マニフェストに XML を手動で追加した、マニフェストのスキーマに、追加機能を比較する必要があります。 詳細については、次を参照してください。 [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)と[ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)します。  
   
--   ID が競合します。 配置マニフェストとアプリケーション マニフェストで参照する依存関係は、両方で一意である必要があります、`name`と`publicKeyToken`属性。 両方の属性は、マニフェスト内で 2 つの要素間で一致、マニフェストの解析は成功しません。  
+- ID が競合します。 配置マニフェストとアプリケーション マニフェストで参照する依存関係は、両方で一意である必要があります、`name`と`publicKeyToken`属性。 両方の属性は、マニフェスト内で 2 つの要素間で一致、マニフェストの解析は成功しません。  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>マニフェストまたはアプリケーションを手動で変更するときの注意事項  
  アプリケーション マニフェストを更新するときに、アプリケーション マニフェストと配置マニフェストの両方を再署名する必要があります。 配置マニフェストには、そのファイルのハッシュとデジタル署名を含むアプリケーション マニフェストへの参照が含まれています。  

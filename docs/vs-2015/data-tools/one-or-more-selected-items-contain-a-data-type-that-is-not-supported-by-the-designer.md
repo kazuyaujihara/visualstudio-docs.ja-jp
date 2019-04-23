@@ -9,24 +9,23 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35b45a407b5c07bc5c6ab6db87e972b3787890ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac5507722a62942dbca67518c2f6689bf29aacfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065709"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>1 つ以上の選択された項目に、デザイナーでサポートされていないデータ型が含まれています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 1 つまたは複数の項目のドラッグ**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]でサポートされていないデータ型が含まれる、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] (例。[CLR ユーザー定義型](http://msdn.microsoft.com/library/9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2))。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1.  目的のテーブルをベースにした、サポートされていないデータ型を含まないビューを作成します。  
+1. 目的のテーブルをベースにした、サポートされていないデータ型を含まないビューを作成します。  
   
-2.  ビューからドラッグ**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**デザイナーにします。  
+2. ビューからドラッグ**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**デザイナーにします。  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

@@ -8,12 +8,12 @@ ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044188"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ ms.locfileid: "58975148"
   
  有効な式の構文は次のように定義されます。  
   
--   機能の式など"(Visualc++ &#124; CSharp) + (MSTest &#124; NUnit)"。  
+- 機能の式など"(Visualc++ &#124; CSharp) + (MSTest &#124; NUnit)"。  
   
--   "&#124;"は OR 演算子です。  
+- "&#124;"は OR 演算子です。  
   
--   "&"と「+」文字は、どちらも AND 演算子。  
+- "&"と「+」文字は、どちらも AND 演算子。  
   
--   "!" 文字は NOT 演算子です。  
+- "!" 文字は NOT 演算子です。  
   
--   かっこで囲むことで、評価の優先順位が強制的に設定されます。  
+- かっこで囲むことで、評価の優先順位が強制的に設定されます。  
   
--   Null または空の式は、一致として評価されます。  
+- Null または空の式は、一致として評価されます。  
   
--   これらの予約文字を除く任意の文字をプロジェクトの機能があります:"':;,+-*/\\! ~&#124;& %$@^() ={}:operator[] <> でしょうか。 を除く文字を使用できます。  
+- これらの予約文字を除く任意の文字をプロジェクトの機能があります:"':;,+-*/\\! ~&#124;& %$@^() ={}:operator[] <> でしょうか。 を除く文字を使用できます。  
   
 ## <a name="example"></a>例  
  次の例に、3 種類のテンプレートを示します。 `Template1` は、C# のすべてのプロジェクトの種類、または `WindowsAppContainer` 機能をサポートする他のプロジェクトの種類に適用されます。 `Template2` は、すべての種類の C# プロジェクトに適用されます。 `Template3` は、`WindowsAppContainer` プロジェクトではない C# プロジェクトに適用されます。  

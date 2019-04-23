@@ -9,68 +9,67 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a7bf4918779fa3c15a21b32432f46dec18564af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 86c13f7c710e462e1edd45acbf68fa4642d3d422
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973994"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099443"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>並べ替え、フィルター処理、およびグループ化 (XML スキーマ エクスプローラー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ここで使用できるオプションについて説明、**並べ替え、フィルター処理、およびグループ化のオプション**XML スキーマ エクスプ ローラー ツールバーのメニュー。  
   
 ## <a name="filter-options"></a>フィルター オプション  
  次のフィルター オプションがあります。 既定では、**名前空間の表示**と**スキーマ ファイルの**のオプションを選択します。  
   
--   **名前空間の表示**します。  
+- **名前空間の表示**します。  
   
--   **スキーマ ファイルを表示する**します。  
+- **スキーマ ファイルを表示する**します。  
   
--   **(シーケンス/選択/すべて) の表示 (sequence/choice/all)** します。  
+- **(シーケンス/選択/すべて) の表示 (sequence/choice/all)** します。  
   
 ## <a name="sorting-options"></a>並べ替えオプション  
  次の並べ替えオプションがあります。 既定値は**種類で並べ替え**します。 ファイルと名前空間には、[種類で並べ替え] オプションと [名前で並べ替え] オプションは適用されません。  
   
--   **種類で並べ替え**します。  
+- **種類で並べ替え**します。  
   
--   **名前順で並べ替え**します。  
+- **名前順で並べ替え**します。  
   
--   **ドキュメント順**します。  
+- **ドキュメント順**します。  
   
 ### <a name="sort-by-type"></a>[種類で並べ替え]  
  ときに、**種類で並べ替え**オプションが選択されている場合、グローバル ノードが次の順序で並べ替えられます。 さらに、各グループ内でアルファベット順に並べ替えられます。  
   
-1.  `import` ノード  
+1. `import` ノード  
   
-2.  `include` ノード  
+2. `include` ノード  
   
-3.  `redefine` ノード  
+3. `redefine` ノード  
   
-4.  `attribute` ノード  
+4. `attribute` ノード  
   
-5.  `attributeGroup` ノード  
+5. `attributeGroup` ノード  
   
-6.  `complexType` ノード  
+6. `complexType` ノード  
   
-7.  `simpleType` ノード  
+7. `simpleType` ノード  
   
-8.  `element` ノード  
+8. `element` ノード  
   
 9. `group` ノード  
   
 ### <a name="sort-by-name"></a>[名前で並べ替え]  
  ときに、**名前で並べ替え**オプションが選択されている場合、グローバル ノードが次の順序で並べ替えられます。  
   
-1.  `import` ノード (名前空間のアルファベット順)  
+1. `import` ノード (名前空間のアルファベット順)  
   
-2.  `include` ノード (`schemaLocation` 属性のアルファベット順)  
+2. `include` ノード (`schemaLocation` 属性のアルファベット順)  
   
-3.  `redefine` ノード (`schemaLocation` 属性のアルファベット順)  
+3. `redefine` ノード (`schemaLocation` 属性のアルファベット順)  
   
-4.  その他のグローバル ノード (アルファベット順)  
+4. その他のグローバル ノード (アルファベット順)  
   
 ### <a name="document-order"></a>[ドキュメントの順序]  
  **ドキュメント順**場合オプションは使用、 **スキーマ ファイルの**オプションを選択します。 ときに**ドキュメント順**が選択されているスキーマ ファイルに出現する順序でのグローバル ノードが表示されます。  

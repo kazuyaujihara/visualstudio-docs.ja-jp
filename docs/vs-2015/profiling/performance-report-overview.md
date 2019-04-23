@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff52925dea61916b9fa27af8cfacc044588cdb75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785623"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091617"
 ---
 # <a name="performance-report-overview"></a>パフォーマンス レポートの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,19 +82,19 @@ Visual Studio Team System Development Edition の統合開発環境 (IDE) の **
 ## <a name="customizable-filter-control"></a>カスタマイズ可能なフィルター コントロール  
  カスタマイズ可能なフィルター コントロールには、次のオプションがあります。  
   
--   **[フィルターのインポート]** - 以前に保存されたカスタム クエリを取得します。  
+- **[フィルターのインポート]** - 以前に保存されたカスタム クエリを取得します。  
   
--   **[フィルターのエクスポート]** - カスタム クエリを指定の場所に保存します。  
+- **[フィルターのエクスポート]** - カスタム クエリを指定の場所に保存します。  
   
--   **[クエリの実行]** - カスタム クエリ コントロールに表示されるクエリを実行します。  
+- **[クエリの実行]** - カスタム クエリ コントロールに表示されるクエリを実行します。  
   
--   **[クエリの停止]** - 実行中のクエリの実行を停止します。 クエリが実行中でない場合、このボタンは使用できません。  
+- **[クエリの停止]** - 実行中のクエリの実行を停止します。 クエリが実行中でない場合、このボタンは使用できません。  
   
--   **[クエリの表示]** - カスタム クエリ コントロールを表示または非表示にします。  
+- **[クエリの表示]** - カスタム クエリ コントロールを表示または非表示にします。  
   
--   **[分析されたものを保存]** - .vsps ファイルとして、現在の分析と共にレポートを保存します。  
+- **[分析されたものを保存]** - .vsps ファイルとして、現在の分析と共にレポートを保存します。  
   
--   **[エクスポート]** - .CVS 形式または .XML 形式のファイルに現在のレポートを保存します。別のビューで保存するためのオプションを指定できます。  
+- **[エクスポート]** - .CVS 形式または .XML 形式のファイルに現在のレポートを保存します。別のビューで保存するためのオプションを指定できます。  
   
 ## <a name="see-also"></a>関連項目  
  [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)   

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c5a57c41753c8689e83da2a6f8473fa643a657f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041579"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio デバッガーでコード内を移動します。
 
@@ -44,7 +44,7 @@ Visual Studio デバッガーでは、アプリの状態を検査し、その実
 
 常に、先頭にアプリを起動してデバッグを開始する必要はありません。 押すことも**F11**に[コードにステップ イン](#BKMK_Step_into__over__or_out_of_the_code)、キーを押して**F10**に[ステップ オーバー](#BKMK_Step_over_Step_out)、または[特定の場所に実行または関数](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)します。
 
-##  <a name="step-through-code"></a>コードのステップ実行
+## <a name="step-through-code"></a>コードのステップ実行
 
 デバッガー ステップのコマンドでは、アプリの状態を検査またはその実行フローの詳細を確認できます。
 
@@ -75,16 +75,16 @@ Visual Studio デバッガーでは、アプリの状態を検査し、その実
 >[!TIP]
 >その値を表示または使用する変数をポイントする各コード行を実行すると、[ローカル](autos-and-locals-windows.md)と[ウォッチ](watch-and-quickwatch-windows.md)の値の変化を監視する windows。 関数にステップ イン中に呼び出し履歴を視覚的にトレースできます。 参照してください[デバッグ中に呼び出し履歴に対するメソッドのマップ](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)します。
 
-###  <a name="BKMK_Step_over_Step_out"></a> コードをステップ実行し、一部の関数をスキップ
+### <a name="BKMK_Step_over_Step_out"></a> コードをステップ実行し、一部の関数をスキップ
 
 デバッグ中に、関数の詳細について配慮しませんかわかって、動作などのライブラリを十分にテストされたコード。 次のコマンドを使用して、コードをスキップすることができます。 関数がまだ実行しますが、デバッガーがスキップします。
 
-|キーボード コマンド|メニュー コマンドをデバッグします。|説明|
+|キーボード コマンド|[デバッグ] メニューのコマンド|説明|
 |----------------------|------------------|-----------------|
 |**F10**|**[ステップ オーバー]**|現在の行には、関数の呼び出しが含まれている場合**ステップ オーバー**コードを実行し、コードの最初の行に、呼び出された関数で返された後に実行を中断します。|
 |**Shift** + **F11**|**[ステップ アウト]**|**ステップ アウト**コードの実行を継続し、現在の関数が戻るときに実行を中断します。 デバッガーは、現在の関数をスキップします。|
 
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> 特定の場所または関数まで実行するには
+## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> 特定の場所または関数まで実行するには
 
 を検査するコードを正確にわかっている場合に、特定の位置または関数を直接実行することもできます。 またはデバッグを開始することがわかっています。
 
@@ -139,7 +139,7 @@ Visual Studio でのブレークポイントには、条件付きブレークポ
 
 を実行中のアプリのコードの使用可能な次の行で解除する選択**デバッグ** > **すべて中断**、またはキーを押します**Ctrl**+**Alt** +**中断**します。
 
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a> 実行フローを変更するポインターを移動します。
+## <a name="BKMK_Set_the_next_statement_to_execute"></a> 実行フローを変更するポインターを移動します。
 
 デバッガーが一時停止中にソース コードのマージンに黄色の矢印または**逆アセンブル**ウィンドウが実行される次のステートメントの位置を示します。 この矢印を移動して実行する次のステートメントを変更することができます。 コードの部分をスキップまたは前の行を返すことができます。 ポインターを移動することは、既知のバグを含むコードのセクションをスキップするなどの場合に便利です。
 
@@ -181,7 +181,7 @@ Microsoft のシンボルを読み込むには、次を参照してください�
 
 1. **モジュール**ウィンドウで、ことがわかりますモジュールに読み込まれたシンボルがある、**シンボルの状態**列。 シンボルを読み込むし、選択するモジュールを右クリックして**シンボルの読み込み**します。
 
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> マネージド コード内のプロパティと演算子にステップ インする
+## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> マネージド コード内のプロパティと演算子にステップ インする
  デバッガーは既定ではマネージド コード内のプロパティと演算子をステップ オーバーします。 ほとんどの場合、これにより正しくデバッグを実行できます。 プロパティや演算子にステップ インを有効にするには、**デバッグ** > **オプション**します。 **[デバッグ]** > **[全般]** ページで、 **[プロパティおよび演算子をステップ オーバーする (マネージドのみ)]** チェック ボックスをオフにします。
 
 ## <a name="see-also"></a>関連項目

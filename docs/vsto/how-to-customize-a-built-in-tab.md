@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26f17e863900eb1d1aa6414d28a7de0cee8f3c10
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5a686d2a43fed0fdb8c5c1e8f21d4b35fd63f3a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075663"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>方法: 組み込みタブをカスタマイズします。
   組み込みタブには、グループやコントロールを追加できます。組み込みタブは、Microsoft Office アプリケーションのリボンに用意されているタブです。 たとえば、**データ**タブは、Excel の組み込みタブ。 カスタム グループを作成すると、そのグループはタブの最後に表示されますが、タブ上のどこにでも移動できます。
@@ -30,39 +30,39 @@ ms.locfileid: "56639545"
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>組み込みタブにグループを追加するには
 
-1.  リボン コード ファイルを右クリックして**ソリューション エクスプ ローラー**、 をクリックし、**ビュー デザイナー**します。
+1. リボン コード ファイルを右クリックして**ソリューション エクスプ ローラー**、 をクリックし、**ビュー デザイナー**します。
 
     > [!NOTE]
     >  リボン コード ファイルが表示されない場合**ソリューション エクスプ ローラー**、追加する必要があります、**リボン項目**をプロジェクトにします。 「[方法:リボンのカスタマイズの概要](../vsto/how-to-get-started-customizing-the-ribbon.md)します。
 
-2.  リボン デザイナーでの任意のタブを右クリックし、をクリックし、**プロパティ**します。
+2. リボン デザイナーでの任意のタブを右クリックし、をクリックし、**プロパティ**します。
 
-3.  **プロパティ**ウィンドウで、展開、 **ControlId**プロパティ、および設定して、 **[controlidtype]** プロパティを**Office**します。
+3. **プロパティ**ウィンドウで、展開、 **ControlId**プロパティ、および設定して、 **[controlidtype]** プロパティを**Office**します。
 
-4.  設定、 **OfficeId**プロパティを*制御 ID*の組み込みタブをカスタマイズするのです。
+4. 設定、 **OfficeId**プロパティを*制御 ID*の組み込みタブをカスタマイズするのです。
 
      コントロール ID は、Microsoft Office アプリケーションに組み込まれているタブ、グループ、コントロールを一意に識別する名前です。
 
      コントロール Id の一覧は、次を参照してください。 [Office 2010 ヘルプ ファイル。Office fluent ユーザー インターフェイスのコントロール id](http://go.microsoft.com/fwlink/?LinkID=181052)します。
 
-5.  **Office リボン コントロール**のタブ、**ツールボックス**グループをタブにドラッグします。
+5. **Office リボン コントロール**のタブ、**ツールボックス**グループをタブにドラッグします。
 
     > [!NOTE]
     >  組み込みグループは、デザイナーには表示されません。 組み込みタブを使用しているかどうかを判断する唯一の方法を確認するはそのため、 **ControlId**  タブのプロパティ。
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>組み込みタブ上でグループを配置するには
 
-1.  リボン デザイナーで、カスタム グループを選択します。
+1. リボン デザイナーで、カスタム グループを選択します。
 
-2.  **プロパティ**ウィンドウで、展開、**位置**プロパティ。
+2. **プロパティ**ウィンドウで、展開、**位置**プロパティ。
 
-3.  設定、 **PositionType**プロパティを適切な値。
+3. 設定、 **PositionType**プロパティを適切な値。
 
-    -   **BeforeOfficeId**指定の組み込みグループの前に、グループを配置します。
+    - **BeforeOfficeId**指定の組み込みグループの前に、グループを配置します。
 
-    -   **AfterOfficeId**指定の組み込みグループの後、グループに配置します。
+    - **AfterOfficeId**指定の組み込みグループの後、グループに配置します。
 
-4.  設定、 **OfficeId**プロパティを組み込みのグループのコントロール ID。
+4. 設定、 **OfficeId**プロパティを組み込みのグループのコントロール ID。
 
      コントロール Id の一覧は、次を参照してください。 [Office 2010 ヘルプ ファイル。Office fluent ユーザー インターフェイスのコントロール id](http://go.microsoft.com/fwlink/?LinkID=181052)します。
 

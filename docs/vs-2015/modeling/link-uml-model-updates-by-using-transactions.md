@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978231"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064831"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>トランザクションを使用して UML モデルの更新をリンクする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ Visual Studio で UML デザイナー向けに拡張機能を定義するとき�
   
  次の点に注意してください。  
   
--   トランザクションの最後に必ず `Commit()` を含める必要があります。 トランザクションがコミットされることなく破棄されると、トランザクションはロールバックされます。 つまり、モデルは、トランザクションが開始された時点の状態に復元されます。  
+- トランザクションの最後に必ず `Commit()` を含める必要があります。 トランザクションがコミットされることなく破棄されると、トランザクションはロールバックされます。 つまり、モデルは、トランザクションが開始された時点の状態に復元されます。  
   
--   トランザクション内でキャッチされない例外が発生すると、トランザクションはロールバックされます。 一般的なパターンとしては、トランザクションの `using` ブロックを `try…catch` ブロックで囲む方法があります。  
+- トランザクション内でキャッチされない例外が発生すると、トランザクションはロールバックされます。 一般的なパターンとしては、トランザクションの `using` ブロックを `try…catch` ブロックで囲む方法があります。  
   
--   トランザクションは、入れ子にできます。  
+- トランザクションは、入れ子にできます。  
   
--   `BeginTransaction()` には、任意の空白でない名前を付けることができます。  
+- `BeginTransaction()` には、任意の空白でない名前を付けることができます。  
   
--   これらのトランザクションの影響を受けるのは、UML モデル ストアのみです。 モデリング トランザクションは、変数、外部ストア (ファイルやデータベースなど)、レイヤー図、およびコード モデルに影響を及ぼしません。  
+- これらのトランザクションの影響を受けるのは、UML モデル ストアのみです。 モデリング トランザクションは、変数、外部ストア (ファイルやデータベースなど)、レイヤー図、およびコード モデルに影響を及ぼしません。  
   
 ## <a name="example"></a>例  
   

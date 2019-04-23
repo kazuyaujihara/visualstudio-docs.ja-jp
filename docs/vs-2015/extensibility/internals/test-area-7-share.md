@@ -11,12 +11,12 @@ ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47bf73d60d71a7b1c2e1c80e58c5900c870599ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a788eb73c65a84731dd5505af54f4dd78439d456
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111637"
 ---
 # <a name="test-area-7-share"></a>テスト領域 7: 共有
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "58973671"
   
  ソース管理下にある少なくとも 1 つのファイルとフォルダーを選択する場合、共有フォルダーには機能します。 [共有] コマンドは、次の条件下で無効になります。  
   
--   選択したフォルダーが空のフォルダーの場合は。  
+- 選択したフォルダーが空のフォルダーの場合は。  
   
--   実際のフォルダーがありますが、ソース管理ファイルを含んでいません。  
+- 実際のフォルダーがありますが、ソース管理ファイルを含んでいません。  
   
--   場合は、仮想フォルダーがあるソース管理下にあるファイルがあるかどうかどうか。  
+- 場合は、仮想フォルダーがあるソース管理下にあるファイルがあるかどうかどうか。  
   
--   リモート サイトの Web プロジェクトがある場合  
+- リモート サイトの Web プロジェクトがある場合  
   
 ## <a name="command-menu-access"></a>コマンド メニューへのアクセス  
  次[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境のメニューのパスは、テスト_ケースで使用されます。  
@@ -42,11 +42,11 @@ ms.locfileid: "58973671"
   
 ## <a name="expected-behavior"></a>想定される動作  
   
--   共有ファイルは、共有の場所が表示されます。  
+- 共有ファイルは、共有の場所が表示されます。  
   
--   ファイルが共有されるソース コントロールのバージョン ストア履歴表示を表示します。  
+- ファイルが共有されるソース コントロールのバージョン ストア履歴表示を表示します。  
   
--   ファイルの両方の場所を編集、共有ファイルを編集します。  
+- ファイルの両方の場所を編集、共有ファイルを編集します。  
   
 ## <a name="test-cases"></a>テスト ケース  
  共有テスト領域の特定のテスト_ケースを次に示します。  

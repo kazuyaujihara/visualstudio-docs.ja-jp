@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24f4f21c984f70ca10236de7bf15d0187fd12d71
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e85fc0add84f6f6097355d1fc7a58cc954c8e538
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111754"
 ---
 # <a name="programming-with-the-uml-api"></a>UML API を使用したプログラミング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ UML API の Visual Studio を使用して、作成、読み取り、および UM
   
  そのプラットフォームの型は、UML 拡張機能を記述するために参照するアセンブリの一部で表示されます。 [!INCLUDE[dsl](../includes/dsl-md.md)] API にアクセスすると、UML ツールへの拡張機能も作成できますが、次の事項を考慮に入れる必要があります。  
   
--   単純と思われる変更によって一貫性が失われ、予測できない結果を引き起こすことがあります。  
+- 単純と思われる変更によって一貫性が失われ、予測できない結果を引き起こすことがあります。  
   
--   実装は将来的に変更されることがあるので、[!INCLUDE[dsl](../includes/dsl-md.md)] API を使用して行った調整が有効でなくなる場合があります。  
+- 実装は将来的に変更されることがあるので、[!INCLUDE[dsl](../includes/dsl-md.md)] API を使用して行った調整が有効でなくなる場合があります。  
   
 ## <a name="the-api-assemblies"></a>API アセンブリ  
  この表は、UML ツールに機能拡張をもたらすアセンブリと、推奨される名前空間を示します。  

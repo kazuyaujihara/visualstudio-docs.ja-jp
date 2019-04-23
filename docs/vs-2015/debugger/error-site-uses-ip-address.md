@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e040c45079c9e4b82337cbd1e4b5d7d8306e1a32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46eace1c566a2810c5914a49654f8393f425fdee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040871"
 ---
 # <a name="error-site-uses-ip-address"></a>エラー :サイトは IP アドレスを使用しています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ ms.locfileid: "58963678"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1.  手動のアタッチを使用します ([デバッグ] メニューの **[プロセスにアタッチ]** を選択します)。  
+1. 手動のアタッチを使用します ([デバッグ] メニューの **[プロセスにアタッチ]** を選択します)。  
   
      または  
   
-2.  IIS の **[Web サイトの識別]** 設定を変更します。  
+2. IIS の **[Web サイトの識別]** 設定を変更します。  
   
 ## <a name="see-also"></a>関連項目  
  [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

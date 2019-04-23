@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 60231333a084ef62e069f3e3aba9bee8bd25daed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066709"
 ---
 # <a name="how-to-start-spy"></a>方法: Spy++ の起動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58977555"
   
 ### <a name="to-start-spy-from-visual-studio"></a>Visual Studio から spy++ を起動するには  
   
--   **ツール** メニューのをクリックして**spy++** します。  
+- **ツール** メニューのをクリックして**spy++** します。  
   
      Spy++ が実行されるためいない、独立して開始した後、Visual Studio を閉じることができます。  
   
@@ -39,9 +39,9 @@ ms.locfileid: "58977555"
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>コマンド プロンプトで spy++ を起動するには  
   
-1.  コマンド プロンプト ウィンドウで、spyxx.exe を含むフォルダーにディレクトリを変更します。 通常、このフォルダーのパスには.\\ *Visual Studio インストール フォルダー*\Common7\Tools\\します。  
+1. コマンド プロンプト ウィンドウで、spyxx.exe を含むフォルダーにディレクトリを変更します。 通常、このフォルダーのパスには.\\ *Visual Studio インストール フォルダー*\Common7\Tools\\します。  
   
-2.  型**spyxx.exe**し、ENTER キーを押します。  
+2. 型**spyxx.exe**し、ENTER キーを押します。  
   
 ## <a name="see-also"></a>関連項目  
  [Spy++ の使用](../debugger/using-spy-increment.md)   

@@ -14,23 +14,23 @@ ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02084c6989a3c3948ddbc0bd0ff2999a69ba70cb
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 433972790310559b19ca5bc2c982c32e699e0e60
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064533"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>オブジェクトはこのプロパティまたはメソッドをサポートしていません
 このオブジェクトにはないプロパティまたはメソッドを指定しました。 すべてのオブジェクトが、すべてのプロパティとメソッドをサポートするわけではありません。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   プロパティとメソッドを調べて、入力エラーがないことを確認します。  
+- プロパティとメソッドを調べて、入力エラーがないことを確認します。  
   
--   オブジェクトのランタイム型が予想されるオブジェクト型であることを確認します。  
+- オブジェクトのランタイム型が予想されるオブジェクト型であることを確認します。  
   
--   詳細については、オブジェクトのドキュメントを参照してください。  
+- 詳細については、オブジェクトのドキュメントを参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [Object オブジェクト](../../javascript/reference/object-object-javascript.md)   

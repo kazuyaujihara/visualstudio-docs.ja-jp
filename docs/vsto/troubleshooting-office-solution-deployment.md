@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6773e73eaa4d6d53bbfa63e26b66f56553910444
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872262"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088094"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office ソリューションのデプロイをトラブルシューティングします。
   このトピックでは、Office ソリューションを配置するときに発生する可能性がある一般的な問題を解決する方法について説明します。
@@ -27,7 +27,7 @@ ms.locfileid: "54872262"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="troubleshoot-office-solutions-by-using-the-event-viewer"></a>イベント ビューアーを使用して Office ソリューションをトラブルシューティングします。
- Windows のイベント ビューアーを使用すると、Office ソリューションのインストール時またはアンインストール時に [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] でキャプチャされるエラー メッセージを表示できます。 イベント ロガーからのこれらのメッセージを使用して、インストールと配置の問題を解決できます。 詳細については、[Office ソリューションのイベント ログ](../vsto/event-logging-for-office-solutions.md)を参照してください。
+ Windows のイベント ビューアーを使用すると、Office ソリューションのインストール時またはアンインストール時に [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] でキャプチャされるエラー メッセージを表示できます。 イベント ロガーからのこれらのメッセージを使用して、インストールと配置の問題を解決できます。 詳細については、次を参照してください。 [Office ソリューションのイベント ログ](../vsto/event-logging-for-office-solutions.md)します。
 
 ## <a name="change-the-assembly-name-causes-conflicts"></a>アセンブリの名前を変更して競合を原因します。
  変更する場合、**アセンブリ名**値、**アプリケーション**のページ、**プロジェクト デザイナー**ソリューションを既にデプロイした後に、発行ツールを変更します1 つのセットアップ パッケージ*Setup.exe*ファイルと 2 つの配置マニフェスト。 2 つのマニフェスト ファイルを配置すると、次のような状況が発生する場合があります。
@@ -43,11 +43,11 @@ ms.locfileid: "54872262"
 
 #### <a name="to-set-the-time-out-value"></a>タイムアウト値を設定するには
 
-1.  レジストリで、次のキーに移動します。
+1. レジストリで、次のキーに移動します。
 
      **HKEY_CURRENT_USER\Software\Microsoft\VSTA**
 
-2.  **AddInTimeout** サブキーに、タイムアウト値をミリ秒単位で設定します。
+2. **AddInTimeout** サブキーに、タイムアウト値をミリ秒単位で設定します。
 
      **[AddInTimeout]** サブキーが存在しない場合は、DWORD として作成します。
 
@@ -118,11 +118,11 @@ ms.locfileid: "54872262"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>Web から配置マニフェストを開くことで、ClickOnce ソリューションをインストールすることはできません。
  ユーザーは、Web で配置マニフェストを開くことにより、Office ソリューションをインストールできます。 ただし、インターネット インフォメーション サービス (IIS) のいくつかのインストールはブロック、 *.vsto*ファイル名拡張子。 Office ソリューションを配置するために使用する前に、IIS で MIME の種類を定義する必要があります。
 
- IIS 7 で MIME の種類を定義する方法については、[MIME の種類 (IIS7) 追加](http://technet.microsoft.com/library/cc725608(WS.10).aspx)を参照してください。
+ IIS 7 で MIME の種類を定義する方法については、次を参照してください。 [MIME の種類 (IIS7) 追加](http://technet.microsoft.com/library/cc725608(WS.10).aspx)します。
 
  拡張子を **.vsto** に、MIME の種類を " **application/x-ms-vsto**" に設定します。
 
 ## <a name="see-also"></a>関連項目
 
 - [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)
-- [Office ソリューションをデプロイします。](../vsto/deploying-an-office-solution.md)
+- [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)

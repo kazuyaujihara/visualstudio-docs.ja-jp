@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049543"
 ---
 # <a name="addressing-dpi-issues"></a>DPI 問題への対応
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58963426"
   
   Visual Studio オプトイン DPI スケーリングに対応して、そのため、「仮想化されません」  
   
-  Windows (と Visual Studio) スケール係数は、システムによって設定の処理のさまざまな方法がありますが、いくつかの UI テクノロジを活用します。 例えば:  
+  Windows (と Visual Studio) スケール係数は、システムによって設定の処理のさまざまな方法がありますが、いくつかの UI テクノロジを活用します。 例:  
   
 - WPF では、(ユニット、ピクセル単位ではありません) は、デバイスに依存しない方法でコントロールを測定します。 WPF の UI は、現在 DPI 用に自動的にスケーリングされます。  
   
@@ -120,15 +120,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  DPI のヘルパー関数は、Visual Studio 環境内で実行されるマネージ コードからアクセスします。  
   
--   使用中のプロジェクトでは、シェル MPF の最新バージョンを参照する必要があります。 例えば:  
+- 使用中のプロジェクトでは、シェル MPF の最新バージョンを参照する必要があります。 例:  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
     ```  
   
--   プロジェクトへの参照に含まれることを確認**System.Windows.Forms**、 **PresentationCore**、および**PresentationUI**します。  
+- プロジェクトへの参照に含まれることを確認**System.Windows.Forms**、 **PresentationCore**、および**PresentationUI**します。  
   
--   コードでは、使用、 **Microsoft.VisualStudio.PlatformUI** DpiHelper クラスの静的関数を名前空間を呼び出します。 (ポイント、サイズ、四角形、およびなど) のサポートされている型は、拡張機能を返す新しい関数オブジェクトを拡大縮小提供にがあります。 例:  
+- コードでは、使用、 **Microsoft.VisualStudio.PlatformUI** DpiHelper クラスの静的関数を名前空間を呼び出します。 (ポイント、サイズ、四角形、およびなど) のサポートされている型は、拡張機能を返す新しい関数オブジェクトを拡大縮小提供にがあります。 例えば:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -175,7 +175,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  手順 1: 200%、300%、NearestNeighbor を使用するようにイメージを prescale します。  
   
- バインディング、または XAML マークアップ拡張機能の適用にコンバーターを使用してイメージを prescale します。 例えば:  
+ バインディング、または XAML マークアップ拡張機能の適用にコンバーターを使用してイメージを prescale します。 例:  
   
 ```xaml  
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />  
@@ -207,13 +207,13 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  WPF には、UIElement に設定 BitmapScalingMode プロパティを使用して、現在 DPI の UI は拡大縮小、ため、ソースに 2 ~ 3 倍よりも大きくなります prescaled イメージを使用して、イメージ コントロールする必要があります。 以下は、この特殊効果のカウンターの値に、いくつかの方法です。  
   
--   100% で、元のイメージのサイズがわかっている場合は、イメージ コントロールの正確なサイズを指定できます。 スケールする前に、UI のサイズが適用されるこれらのサイズが反映されます。  
+- 100% で、元のイメージのサイズがわかっている場合は、イメージ コントロールの正確なサイズを指定できます。 スケールする前に、UI のサイズが適用されるこれらのサイズが反映されます。  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   元のイメージのサイズが不明である場合は、スケール ダウンが最終的なイメージ オブジェクトに、LayoutTransform を使用できます。 例えば:  
+- 元のイメージのサイズが不明である場合は、スケール ダウンが最終的なイメージ オブジェクトに、LayoutTransform を使用できます。 例えば:  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -344,9 +344,9 @@ public int GetHostInfo(DOCHOSTUIINFO info)
   
 ## <a name="tips"></a>ヒント  
   
-1.  WebOC コントロール上のドキュメント プロパティが変更された場合は、IDocHostUIHandler クラスを使用して、ドキュメントを再関連付けする必要があります。  
+1. WebOC コントロール上のドキュメント プロパティが変更された場合は、IDocHostUIHandler クラスを使用して、ドキュメントを再関連付けする必要があります。  
   
-2.  上記が機能しない場合、変更、DPI フラグを取得していない WebOC に関する既知の問題があります。 この問題の修正の最も信頼性の高い方法では、WebOC、ズームの比率に 2 つの異なる値の 2 つの呼び出しを意味の光学ズームを切り替えます。 さらに、この回避策が必要な場合、移動の呼び出しごとに実行するために必要な場合があります。  
+2. 上記が機能しない場合、変更、DPI フラグを取得していない WebOC に関する既知の問題があります。 この問題の修正の最も信頼性の高い方法では、WebOC、ズームの比率に 2 つの異なる値の 2 つの呼び出しを意味の光学ズームを切り替えます。 さらに、この回避策が必要な場合、移動の呼び出しごとに実行するために必要な場合があります。  
   
     ```csharp  
     // browser2 is a SHDocVw.IWebBrowser2 in this case  

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb5a9e6806c76cbb072090c35444d936ce50bb79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087119"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>チュートリアル: モデルにアクセスするテキスト テンプレートのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "58976843"
   
 #### <a name="to-create-a-text-template"></a>テキスト テンプレートを作成するには  
   
-1.  ソリューションをビルドし、デバッガーで実行を開始します。 (上、**ビルド** メニューのをクリックして**ソリューションのリビルド**、し、**デバッグ** メニューのをクリックして**デバッグの開始**)。Visual Studio の新しいインスタンスは、デバッグ プロジェクトを開きます。  
+1. ソリューションをビルドし、デバッガーで実行を開始します。 (上、**ビルド** メニューのをクリックして**ソリューションのリビルド**、し、**デバッグ** メニューのをクリックして**デバッグの開始**)。Visual Studio の新しいインスタンスは、デバッグ プロジェクトを開きます。  
   
-2.  という名前のテキスト ファイルを追加`DebugTest.tt`デバッグ プロジェクトへです。  
+2. という名前のテキスト ファイルを追加`DebugTest.tt`デバッグ プロジェクトへです。  
   
-3.  必ず、**カスタム ツール**DebugTest.tt のプロパティに設定されて`TextTemplatingFileGenerator`。  
+3. 必ず、**カスタム ツール**DebugTest.tt のプロパティに設定されて`TextTemplatingFileGenerator`。  
   
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>テキスト テンプレートから、モデルにアクセスするデバッグ ディレクティブ  
  ステートメントとテキスト テンプレート内の式からモデルにアクセスすることができます、生成済みディレクティブ プロセッサを呼び出す必要があります。 生成されたディレクティブ プロセッサを呼び出すことクラスは、モデルを使用できるように、テキスト テンプレート コード プロパティとして。 詳細については、[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)を参照してください。  
@@ -55,7 +55,7 @@ ms.locfileid: "58976843"
   
 #### <a name="to-debug-an-incorrect-directive-name"></a>正しくないのディレクティブ名をデバッグするには  
   
-1.  DebugTest.tt でコードを次のコードに置き換えます。  
+1. DebugTest.tt でコードを次のコードに置き換えます。  
   
     > [!NOTE]
     >  コードには、エラーが含まれています。 これをデバッグするために、エラーが導入されました。  
@@ -91,7 +91,7 @@ ms.locfileid: "58976843"
     #>  
     ```  
   
-2.  **ソリューション エクスプ ローラー**DebugTest.tt を右クリックし、クリックして**カスタム ツールの実行**します。  
+2. **ソリューション エクスプ ローラー**DebugTest.tt を右クリックし、クリックして**カスタム ツールの実行**します。  
   
      **エラー一覧**ウィンドウには、このエラーが表示されます。  
   
@@ -99,9 +99,9 @@ ms.locfileid: "58976843"
   
      この場合は、ディレクティブの呼び出しには、正しくないのディレクティブ名が含まれています。 指定した`modelRoot`ディレクティブの名前が正しいディレクティブ名が`DebuggingTestLanguage`します。  
   
-3.  エラーをダブルクリックして、**エラー一覧**コードに移動するウィンドウ。  
+3. エラーをダブルクリックして、**エラー一覧**コードに移動するウィンドウ。  
   
-4.  ディレクティブ名を変更して、コードを修正する`DebuggingTestLanguage`します。  
+4. ディレクティブ名を変更して、コードを修正する`DebuggingTestLanguage`します。  
   
      変更が強調表示されます。  
   
@@ -113,13 +113,13 @@ ms.locfileid: "58976843"
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
     ```  
   
-5.  **ソリューション エクスプ ローラー**DebugTest.tt を右クリックし、クリックして**カスタム ツールの実行**します。  
+5. **ソリューション エクスプ ローラー**DebugTest.tt を右クリックし、クリックして**カスタム ツールの実行**します。  
   
      これで、システムでは、テキスト テンプレート変換し、対応する出力ファイルを生成します。 内のエラーが表示されませんが、**エラー一覧**ウィンドウ。  
   
 #### <a name="to-debug-an-incorrect-property-name"></a>間違ったプロパティ名をデバッグするには  
   
-1.  DebugTest.tt でコードを次のコードに置き換えます。  
+1. DebugTest.tt でコードを次のコードに置き換えます。  
   
     > [!NOTE]
     >  コードには、エラーが含まれています。 これをデバッグするために、エラーが導入されました。  
@@ -155,7 +155,7 @@ ms.locfileid: "58976843"
     #>  
     ```  
   
-2.  **ソリューション エクスプ ローラー**DebugTest.tt を右クリックし、クリックして**カスタム ツールの実行**します。  
+2. **ソリューション エクスプ ローラー**DebugTest.tt を右クリックし、クリックして**カスタム ツールの実行**します。  
   
      **エラー一覧**ウィンドウが表示され、これらのエラーのいずれかが表示されます。  
   
@@ -173,9 +173,9 @@ ms.locfileid: "58976843"
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
     ```  
   
-3.  コードにジャンプする [エラー一覧] ウィンドウでエラーをダブルクリックします。  
+3. コードにジャンプする [エラー一覧] ウィンドウでエラーをダブルクリックします。  
   
-4.  プロパティ名を変更して、コードを修正する`LibraryModel`テキスト テンプレート コードでします。  
+4. プロパティ名を変更して、コードを修正する`LibraryModel`テキスト テンプレート コードでします。  
   
      変更が強調表示されます。  
   
@@ -210,6 +210,6 @@ ms.locfileid: "58976843"
     #>  
     ```  
   
-5.  **ソリューション エクスプ ローラー**DebugTest.tt を右クリックし、クリックして**カスタム ツールの実行**します。  
+5. **ソリューション エクスプ ローラー**DebugTest.tt を右クリックし、クリックして**カスタム ツールの実行**します。  
   
      これで、システムでは、テキスト テンプレート変換し、対応する出力ファイルを生成します。 内のエラーが表示されませんが、**エラー一覧**ウィンドウ。

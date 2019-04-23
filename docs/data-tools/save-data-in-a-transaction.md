@@ -17,24 +17,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc2626ba0efab60921ed721b9f06fec28c66f58b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ea312ca2858a02bc8a70c3e41dbb525c9d222adc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099053"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>チュートリアル: トランザクションにデータを保存する
 
 このチュートリアルを使用して、トランザクションでデータを保存する方法について説明、<xref:System.Transactions>名前空間。 このチュートリアルでは、Windows フォーム アプリケーションを作成します。 Northwind サンプル データベース内のデータセットを 2 つのテーブルを作成するのにデータ ソース構成ウィザードを使用します。 Windows フォームにデータ バインド コントロールと BindingNavigator の保存 ボタンを TransactionScope 内部でデータベースを更新するためにコードを変更するを追加します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 
-1.  SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 一部として Visual Studio インストーラーでは、SQL Server Express LocalDB をインストールすることができます、 **.NET デスクトップ開発**ワークロード、または個々 のコンポーネントとして。
+1. SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 一部として Visual Studio インストーラーでは、SQL Server Express LocalDB をインストールすることができます、 **.NET デスクトップ開発**ワークロード、または個々 のコンポーネントとして。
 
-2.  次の手順に従って、Northwind サンプル データベースをインストールします。
+2. 次の手順に従って、Northwind サンプル データベースをインストールします。
 
     1. Visual Studio で開く、 **SQL Server オブジェクト エクスプ ローラー**ウィンドウ。 (SQL Server オブジェクト エクスプ ローラーがの一部としてインストールされている、**データ ストレージと処理**Visual Studio インストーラーにワークロード)。展開、 **SQL Server**ノード。 LocalDB インスタンスを右クリックし、選択**新しいクエリ**します。
 
@@ -52,7 +52,7 @@ ms.locfileid: "55932275"
 
 1. Visual Studio での**ファイル**メニューの **新規** > **プロジェクト**します。
 
-2. いずれかを展開**Visual C#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
+2. いずれかを展開**Visual c#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
 
 3. 中央のペインで選択、 **Windows フォーム アプリ**プロジェクトの種類。
 
@@ -64,27 +64,27 @@ ms.locfileid: "55932275"
 
 このステップでは、**データ ソース構成ウィザード**に基づいてデータ ソースを作成する、`Customers`と`Orders`Northwind サンプル データベース内のテーブル。
 
-1.  開くには、**データ ソース**ウィンドウで、**データ**メニューの  **データ ソースの**します。
+1. 開くには、**データ ソース**ウィンドウで、**データ**メニューの  **データ ソースの**します。
 
-2.  **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成ウィザード**を起動します。
+2. **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成ウィザード**を起動します。
 
-3.  **データ ソースの種類を選択**画面で、**データベース**、し、**次**します。
+3. **データ ソースの種類を選択**画面で、**データベース**、し、**次**します。
 
-4.  **データ接続の選択**画面は、次のいずれか。
+4. **データ接続の選択**画面は、次のいずれか。
 
-    -   Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
+    - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
          - または -
 
-    -   **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示し、Northwind データベースへの接続を作成します。
+    - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示し、Northwind データベースへの接続を作成します。
 
-5.  データベースにパスワードが必要な場合は、機密データを含めるしを選択するオプションを選択**次**します。
+5. データベースにパスワードが必要な場合は、機密データを含めるしを選択するオプションを選択**次**します。
 
-6.  **接続文字列をアプリケーション構成ファイルに保存**画面で、**次**します。
+6. **接続文字列をアプリケーション構成ファイルに保存**画面で、**次**します。
 
-7.  **データベース オブジェクトの選択**画面で、展開、**テーブル**ノード。
+7. **データベース オブジェクトの選択**画面で、展開、**テーブル**ノード。
 
-8.  選択、`Customers`と`Orders`テーブル、および選択**完了**します。
+8. 選択、`Customers`と`Orders`テーブル、および選択**完了**します。
 
      プロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウに `Customers` テーブルと `Orders` テーブルが表示されます。
 
@@ -108,9 +108,9 @@ ms.locfileid: "55932275"
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>System.Transactions の DLL ファイルへの参照を追加するには
 
-1.  **プロジェクト**メニューの **参照の追加**します。
+1. **プロジェクト**メニューの **参照の追加**します。
 
-2.  選択**System.Transactions** (上、 **.NET** ] タブ)、し、[ **[ok]** します。
+2. 選択**System.Transactions** (上、 **.NET** ] タブ)、し、[ **[ok]** します。
 
      **System.Transactions** への参照がプロジェクトに追加されます。
 
@@ -120,48 +120,47 @@ ms.locfileid: "55932275"
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>自動生成された保存コードを変更するには
 
-1.  選択、**保存**のボタンでは、 **CustomersBindingNavigator** (フロッピー ディスクのアイコンのボタン)。
+1. 選択、**保存**のボタンでは、 **CustomersBindingNavigator** (フロッピー ディスクのアイコンのボタン)。
 
-2.  
-  `CustomersBindingNavigatorSaveItem_Click` メソッドを次のコードで置き換えます。
+2. `CustomersBindingNavigatorSaveItem_Click` メソッドを次のコードで置き換えます。
 
      [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]
 
 関連するデータへの変更を解決する順序は次のとおりです。
 
--   子レコードを削除します。 (この場合、レコードを削除、`Orders`テーブルです)。
+- 子レコードを削除します。 (この場合、レコードを削除、`Orders`テーブルです)。
 
--   親レコードを削除します。 (この場合、レコードを削除、`Customers`テーブルです)。
+- 親レコードを削除します。 (この場合、レコードを削除、`Customers`テーブルです)。
 
--   親レコードを挿入します。 (この場合は、内のレコードを挿入、`Customers`テーブルです)。
+- 親レコードを挿入します。 (この場合は、内のレコードを挿入、`Customers`テーブルです)。
 
--   子レコードを挿入します。 (この場合は、内のレコードを挿入、`Orders`テーブルです)。
+- 子レコードを挿入します。 (この場合は、内のレコードを挿入、`Orders`テーブルです)。
 
 ### <a name="to-delete-existing-orders"></a>既存の注文を削除するには
 
--   次の `DeleteOrders` メソッドを **Form1** に追加します。
+- 次の `DeleteOrders` メソッドを **Form1** に追加します。
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>既存の顧客を削除するには
 
--   次の `DeleteCustomers` メソッドを **Form1** に追加します。
+- 次の `DeleteCustomers` メソッドを **Form1** に追加します。
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>新規顧客を追加するには
 
--   次の `AddNewCustomers` メソッドを **Form1** に追加します。
+- 次の `AddNewCustomers` メソッドを **Form1** に追加します。
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>新規注文を追加するには
 
--   次の `AddNewOrders` メソッドを **Form1** に追加します。
+- 次の `AddNewOrders` メソッドを **Form1** に追加します。
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]

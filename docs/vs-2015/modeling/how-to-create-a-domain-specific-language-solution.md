@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f675b40f250505e654b287fcaa86e70aca4cdd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977456"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099573"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>方法: ドメイン固有言語ソリューションを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "58977456"
        **ドメイン固有言語デザイナー ウィザード**が表示されます。  
   
       > [!NOTE]
-      >  可能であれば、コードを生成するために使用可能性がありますので、入力した名は有効な Visual C# の識別子にする必要があります。  
+      >  可能であれば、コードを生成するために使用可能性がありますので、入力した名は有効な Visual c# の識別子にする必要があります。  
   
       ![DSL ダイアログの作成](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -67,9 +67,9 @@ ms.locfileid: "58977456"
   
 3. ファイル名拡張子を入力、**ファイル拡張子**ページ。 自分のコンピューターで一意である必要がありする任意のコンピューターでは、DSL をインストールします。 メッセージが表示する必要があります**アプリケーションまたは Visual Studio エディターにこの拡張機能使用しない**します。  
   
-   -   完全にインストールされていない以前の実験的な Dsl で、ファイル名拡張子を使用した場合ことができますをオフにすることを使用して、**実験用インスタンスをリセット**では、ツール、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK メニュー。  
+   - 完全にインストールされていない以前の実験的な Dsl で、ファイル名拡張子を使用した場合ことができますをオフにすることを使用して、**実験用インスタンスをリセット**では、ツール、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK メニュー。  
   
-   -   もう 1 つ場合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]このファイルの拡張機能を使用する拡張機能は完全にコンピューターにインストールされたをアンインストールすることを検討してください。 **ツール** メニューをクリックして **拡張機能マネージャー** をクリックします。  
+   - もう 1 つ場合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]このファイルの拡張機能を使用する拡張機能は完全にコンピューターにインストールされたをアンインストールすることを検討してください。 **ツール** メニューをクリックして **拡張機能マネージャー** をクリックします。  
   
 4. 検査、および必要に応じて調整、ウィザードの残りのページのフィールド。 設定に満足したら、クリックして**完了**します。 設定の詳細については、次を参照してください。 [DSL デザイナーのウィザード ページ](#settings)します。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "58977456"
    > [!NOTE]
    >  信頼されていないソースからのテキスト テンプレートを実行するには、をクリックしないを通知するメッセージが表示された場合**OK**します。 このメッセージが再び表示されるように設定できます。  
   
-##  <a name="settings"></a> DSL デザイナーのウィザード ページ  
+## <a name="settings"></a> DSL デザイナーのウィザード ページ  
  既定値から変更されていないフィールドのいくつかのままにすることができます。 ただし、ファイル拡張子のフィールドを設定することを確認します。  
   
 ### <a name="solution-settings-page"></a>ソリューションの設定 ページ  
@@ -98,15 +98,15 @@ ms.locfileid: "58977456"
   
  ツールまたはパッケージの一覧を表示する場合は、次のいずれかを実行する必要があります。  
   
--   別のファイル拡張子を入力します。  
+- 別のファイル拡張子を入力します。  
   
      \- または -  
   
--   リセット、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]実験用インスタンス。 これは、すべてが以前にビルドされた Dsl の登録解除します。 **開始** メニューのをクリックして**すべてのプログラム**、 **Microsoft Visual Studio 2010 SDK**、**ツール**、し**リセット、Microsoft Visual Studio 2010 実験用インスタンス**します。 もう一度使用するその他の任意の Dsl を再構築することができます。  
+- リセット、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]実験用インスタンス。 これは、すべてが以前にビルドされた Dsl の登録解除します。 **開始** メニューのをクリックして**すべてのプログラム**、 **Microsoft Visual Studio 2010 SDK**、**ツール**、し**リセット、Microsoft Visual Studio 2010 実験用インスタンス**します。 もう一度使用するその他の任意の Dsl を再構築することができます。  
   
      \- または -  
   
--   場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]このファイルの拡張機能を使用する拡張機能がコンピューターに完全にインストールされて、それをアンインストールします。 **ツール** メニューをクリックして **拡張機能マネージャー** をクリックします。  
+- 場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]このファイルの拡張機能を使用する拡張機能がコンピューターに完全にインストールされて、それをアンインストールします。 **ツール** メニューをクリックして **拡張機能マネージャー** をクリックします。  
   
 ### <a name="product-settings-page"></a>製品の設定 ページ  
  **新しいドメイン固有言語が含まれている製品の名前は何ですか。**  

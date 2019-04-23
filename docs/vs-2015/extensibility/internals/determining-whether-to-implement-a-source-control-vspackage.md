@@ -10,12 +10,12 @@ ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b47cfde4bbc228aa31d911a9499b74e12b78250c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cff53700dcd6a80f841108d5a2b486dcb0ba7a11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090843"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>ソース管理 VSPackage を実装するかどうかの決定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "58974314"
   
  柔軟性とソース制御ロジックと UI の高度な制御を提供するソース管理ソリューションを実装する場合は、ソース管理パッケージ統合ルートしたい場合があります。 次の操作を行うことができます。  
   
-1.  独自のソース管理 VSPackage の登録 (を参照してください[登録と選択](../../extensibility/internals/registration-and-selection-source-control-vspackage.md))。  
+1. 独自のソース管理 VSPackage の登録 (を参照してください[登録と選択](../../extensibility/internals/registration-and-selection-source-control-vspackage.md))。  
   
-2.  既定のソース管理 UI に、カスタム UI を置き換えます (を参照してください[カスタム ユーザー インターフェイス](../../extensibility/internals/custom-user-interface-source-control-vspackage.md))。  
+2. 既定のソース管理 UI に、カスタム UI を置き換えます (を参照してください[カスタム ユーザー インターフェイス](../../extensibility/internals/custom-user-interface-source-control-vspackage.md))。  
   
-3.  使用して、ソリューション エクスプ ローラーのグリフのイベントを処理するグリフの指定 (を参照してください[グリフ コントロール](../../extensibility/internals/glyph-control-source-control-vspackage.md))。  
+3. 使用して、ソリューション エクスプ ローラーのグリフのイベントを処理するグリフの指定 (を参照してください[グリフ コントロール](../../extensibility/internals/glyph-control-source-control-vspackage.md))。  
   
-4.  クエリを編集し、クエリの保存のイベントを処理 (を参照してください[クエリ編集のクエリの保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md))。  
+4. クエリを編集し、クエリの保存のイベントを処理 (を参照してください[クエリ編集のクエリの保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md))。  
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグインの作成](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b77e07524b6bcabd00de1d8082261e81807a72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644459"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051319"
 ---
 # <a name="create-sharepoint-features"></a>SharePoint の機能を作成します。
   SharePoint 機能を使用すると、展開が容易に関連の SharePoint プロジェクト アイテムのグループします。 機能の作成、スコープを設定、およびその他の機能を SharePoint フィーチャー デザイナーを使用して依存関係としてマークできます。 デザイナーには、各機能を説明する XML ファイルには、マニフェストも生成されます。
@@ -26,9 +26,9 @@ ms.locfileid: "56644459"
 ## <a name="add-features-to-the-sharepoint-solution"></a>SharePoint ソリューションに機能を追加します。
  ソリューション エクスプ ローラーまたはパッケージング エクスプ ローラーを使用して、SharePoint ソリューションに機能を追加できます。 機能を追加するのにには、次のメソッドのいずれかを使用できます。
 
--   **ソリューション エクスプ ローラー**、ショートカット メニューを開き**機能**を選び、**機能の追加**します。
+- **ソリューション エクスプ ローラー**、ショートカット メニューを開き**機能**を選び、**機能の追加**します。
 
--   **パッケージング エクスプ ローラー**、パッケージのショートカット メニューを開き、選択し、**機能の追加**します。
+- **パッケージング エクスプ ローラー**、パッケージのショートカット メニューを開き、選択し、**機能の追加**します。
 
 ## <a name="using-the-feature-designer"></a>フィーチャー デザイナーを使用します。
  SharePoint ソリューションは、ソリューション エクスプ ローラーで、そのフィーチャー ノードでグループ化された 1 つまたは複数の SharePoint 機能を含めることができます。 各機能には、独自**フィーチャー デザイナー**機能プロパティのカスタマイズを行えます。 詳細については、「[方法 :SharePoint フィーチャーをカスタマイズ](../sharepoint/how-to-customize-a-sharepoint-feature.md)します。 いずれかの別の機能を区別するために、タイトル、説明、バージョン、およびスコープなどの機能のプロパティを構成できます。
@@ -40,8 +40,8 @@ ms.locfileid: "56644459"
 
 |プロパティ|説明|
 |--------------|-----------------|
-|タイトル|任意。 設定されている機能の既定のタイトル*SolutionName* *FeatureName*します。|
-|説明|任意。 SharePoint 機能の説明です。|
+|Title|省略可能です。 設定されている機能の既定のタイトル*SolutionName* *FeatureName*します。|
+|説明|省略可能です。 SharePoint 機能の説明です。|
 |スコープ|必須。 使用して、機能が作成された場合**ソリューション エクスプ ローラー**既定で Web にスコープが設定されます。<br /><br /> -ファーム:サーバー ファーム全体の機能を有効にします。<br /><br /> サイト:サイト コレクション内のすべての web サイトの機能を有効にします。<br /><br /> Web:特定の web サイトの機能を有効にします。<br /><br /> -Web アプリケーション:Web アプリケーション内のすべての web サイトの機能を有効にします。|
 |[ソリューション内の項目]|フィーチャーに追加できるすべての SharePoint アイテム。|
 |フィーチャー内の項目|フィーチャーに追加されている SharePoint プロジェクト アイテム。|

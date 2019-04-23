@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077811"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>.NET コンパイラ プラットフォームのアナライザーをインストールします。
 
@@ -24,14 +24,14 @@ Visual Studio には、.NET コンパイラ プラットフォームのコア �
 
 ## <a name="to-install-nuget-analyzer-packages"></a>NuGet アナライザー パッケージをインストールするには
 
-1.  www.nuget.org をインストールするアナライザー パッケージを検索します。たとえば、したい場合があります[Microsoft FxCop アナライザーをインストール](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)コードの他のユーザーの間でのセキュリティとパフォーマンスの問題を確認します。
+1.  www.nuget.org をインストールするアナライザー パッケージを検索します。
+
+   たとえば、したい場合があります[Microsoft FxCop アナライザーをインストール](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)コードの他のユーザーの間でのセキュリティとパフォーマンスの問題を確認します。 または、インストール[StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)コードベースでスタイルの問題を検索します。
 
 2. いずれかを使用して、Visual Studio でパッケージをインストール、[パッケージ マネージャー コンソール](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)または[パッケージ マネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)します。
 
    > [!NOTE]
    > 各アナライザー パッケージ www.nuget.org ページに貼り付けるコマンドが表示されます、**パッケージ マネージャー コンソール**します。 テキストをクリップボードにコピーする便利なボタンもいます。
-   >
-   > ![パッケージ マネージャー コンソール コマンドを示す、NuGet.org のページ](media/nuget-install-command.png)
 
    アナライザー アセンブリがインストールされに表示**ソリューション エクスプ ローラー** **参照** > **アナライザー**します。
 

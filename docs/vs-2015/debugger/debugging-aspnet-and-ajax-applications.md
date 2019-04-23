@@ -19,21 +19,21 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116785"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>ASP.NET アプリケーションおよび AJAX アプリケーションのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションのデバッグ方法は、Windows フォームなど、他の Windows アプリケーションの場合と似ています。どちらのアプリケーションも、コントロールとイベントが関係するためです。 ただし、これらのアプリケーションには基本的な違いもあります。  
   
--   状態の追跡は、Web アプリケーションの方が複雑です。  
+- 状態の追跡は、Web アプリケーションの方が複雑です。  
   
--   Windows アプリケーションでは、ほとんどの場合、デバッグ対象のコードは 1 か所にあります。Web アプリケーションでは、クライアント側とサーバー側の両方に存在することがあります。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] コードはすべてサーバーにありますが、クライアント側に JavaScript や [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] コードが存在することがあります。  
+- Windows アプリケーションでは、ほとんどの場合、デバッグ対象のコードは 1 か所にあります。Web アプリケーションでは、クライアント側とサーバー側の両方に存在することがあります。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] コードはすべてサーバーにありますが、クライアント側に JavaScript や [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] コードが存在することがあります。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [ASP.NET のデバッグの準備](../debugger/preparing-to-debug-aspnet.md)  

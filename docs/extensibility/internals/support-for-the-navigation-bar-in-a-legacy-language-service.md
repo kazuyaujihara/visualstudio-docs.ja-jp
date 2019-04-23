@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdac288755ca02face6f3422e2da0c78629e2905
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085930"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>従来の言語サービスでのナビゲーション バーのサポート
 エディター ビューの上部にあるナビゲーション バーでは、ファイル内の型とメンバーを表示します。 種類は左ドロップダウンで表示され、メンバーを表示する右のドロップダウン リスト。 ユーザーは、型を選択する型の最初の行にキャレットが配置されます。 ユーザーがメンバーと、メンバーの定義にカーソルが配置されます。 ドロップダウン ボックスのキャレットの現在の場所を反映するように更新されます。
@@ -68,24 +68,24 @@ namespace TestLanguagePackage
 
   実装、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>メソッドは通常、次の手順を実行します。
 
-1.  ソース ファイルの現在の宣言の一覧を取得します。
+1. ソース ファイルの現在の宣言の一覧を取得します。
 
      リストを設定する方法を数多くあります。 1 つの方法は、のバージョンでカスタム メソッドを作成する、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスを呼び出す、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>カスタム解析理由は、すべての宣言の一覧を返すメソッド。 呼び出す別の方法があります、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドから直接、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>理由は、カスタムな parse メソッド。 3 番目のアプローチがキャッシュ内の宣言することがあります、<xref:Microsoft.VisualStudio.Package.AuthoringScope>クラスの最後の完全な解析操作によって返される、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスを取得する、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>メソッド。
 
-2.  設定または型の一覧を更新します。
+2. 設定または型の一覧を更新します。
 
      種類の一覧の内容は、ソースが変更されたとき、または現在のカレット位置に基づく種類のテキストのスタイルを変更することを選択した場合に更新することがあります。 注この位置に渡される、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>メソッド。
 
-3.  現在のカレット位置に基づく種類の一覧から選択する種類を決定します。
+3. 現在のカレット位置に基づく種類の一覧から選択する種類を決定します。
 
      現在のカレット位置を囲む型を検索する、手順 1 で取得した宣言を検索し、型の一覧にそのインデックスを判断するには、その型の種類の一覧を検索できます。
 
-4.  入力または選択した型に基づくメンバーの一覧を更新します。
+4. 入力または選択した型に基づくメンバーの一覧を更新します。
 
      メンバー リストの反映に現在表示されて、**メンバー**ドロップダウンします。 メンバーの一覧の内容は、ソースが変更された場合、または、選択した型のメンバーだけを表示して、選択した型が変更された場合に更新する必要があります。 ソース ファイル内のすべてのメンバーを表示する場合は、一覧内の各メンバーのテキスト スタイルを現在選択されている型が変更された場合に更新する必要があります。
 
-5.  現在のカレット位置に基づいてメンバーの一覧から選択するメンバーを決定します。
+5. 現在のカレット位置に基づいてメンバーの一覧から選択するメンバーを決定します。
 
      現在のカレット位置を含むメンバーを手順 1. で取得した宣言を検索し、メンバーの一覧にそのインデックスを判断するには、そのメンバーのメンバーの一覧を検索します。
 
-6.  返す`true`リスト、またはいずれかの一覧の選択項目への変更を加えた場合。
+6. 返す`true`リスト、またはいずれかの一覧の選択項目への変更を加えた場合。

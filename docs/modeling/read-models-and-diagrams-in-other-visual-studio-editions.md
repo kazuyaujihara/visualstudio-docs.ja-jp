@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5363a4d2f07b22aa0a256ff40f039792a3d2a6c2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087379"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Visual Studio の他のエディションでモデルおよびダイアグラムを読み取る
 
@@ -34,16 +34,16 @@ ms.locfileid: "55932197"
 
 依存関係図を読み取るには、必要なファイルの最小セットがとおりです。
 
--   2 つのダイアグラム ファイルを読み取るには、たとえば、ダイアグラムの**MyDiagram.classdiagram と MyDiagram.classdiagram.layout**します。
+- 2 つのダイアグラム ファイルを読み取るには、たとえば、ダイアグラムの**MyDiagram.classdiagram と MyDiagram.classdiagram.layout**します。
 
     > [!NOTE]
     > 依存関係を示す図については、という名前のファイルもがする必要があります_MyDiagram_**. layerdiagram.suppressions**します。
 
--   モデリング プロジェクト ファイル (**MyModel.modelproj**)
+- モデリング プロジェクト ファイル (**MyModel.modelproj**)
 
--   ルート モデル ファイル (**ModelDefinition\MyModel.uml**)
+- ルート モデル ファイル (**ModelDefinition\MyModel.uml**)
 
--   ダイアグラムで参照されているすべてのパッケージのパッケージ ファイル (**ModelDefinition\MyPackage.uml**)
+- ダイアグラムで参照されているすべてのパッケージのパッケージ ファイル (**ModelDefinition\MyPackage.uml**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>読み取り専用モードで行える変更
 
@@ -57,5 +57,5 @@ ms.locfileid: "55932197"
 
 ## <a name="see-also"></a>関連項目
 
-- [依存関係図:参照](../modeling/layer-diagrams-reference.md)
+- [依存関係図:リファレンス](../modeling/layer-diagrams-reference.md)
 - [アプリのモデルを生成する](../modeling/create-models-for-your-app.md)

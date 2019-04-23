@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d305fdfa74ff680a9d5ef0b12b1a84be10958204
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92f2dc0f425c86b7304ccde5778f8479678bc41f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037883"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>ドメイン固有言語エクスプローラーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,25 +25,25 @@ ms.locfileid: "58978275"
   
  以下のようなノードがあります。  
   
--   **接続ビルダー**します。 モデル内の接続ビルダーの一覧。 接続ビルダーの詳細については、次を参照してください。[リンク作成のカスタマイズ - リダイレクト](../misc/customizing-link-creation-redirection.md)します。  
+- **接続ビルダー**します。 モデル内の接続ビルダーの一覧。 接続ビルダーの詳細については、次を参照してください。[リンク作成のカスタマイズ - リダイレクト](../misc/customizing-link-creation-redirection.md)します。  
   
--   **コネクタ**します。 モデル内のコネクタ図要素の一覧。 コネクタの詳細については、次を参照してください。[リダイレクトの種類のシェイプとコネクタ -](../misc/types-of-shapes-and-connectors-redirect.md)します。  
+- **コネクタ**します。 モデル内のコネクタ図要素の一覧。 コネクタの詳細については、次を参照してください。[リダイレクトの種類のシェイプとコネクタ -](../misc/types-of-shapes-and-connectors-redirect.md)します。  
   
--   **図**します。 図を定義するプロパティとコネクタ マップおよび図形マップの一覧のセット。  
+- **図**します。 図を定義するプロパティとコネクタ マップおよび図形マップの一覧のセット。  
   
--   **ドメイン クラス**します。 モデル内のドメイン クラスの一覧。  
+- **ドメイン クラス**します。 モデル内のドメイン クラスの一覧。  
   
--   **ドメイン リレーションシップ**します。 モデル内のドメイン関係の一覧。  
+- **ドメイン リレーションシップ**します。 モデル内のドメイン関係の一覧。  
   
--   **ドメイン型**します。 モデル内で使用される組み込み型および外部型の一覧。  
+- **ドメイン型**します。 モデル内で使用される組み込み型および外部型の一覧。  
   
--   **エディター**します。 一連の**ツールボックス**タブと、項目が含まれていると、モデルの検証の設定。 検証の詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。  
+- **エディター**します。 一連の**ツールボックス**タブと、項目が含まれていると、モデルの検証の設定。 検証の詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。  
   
--   **エクスプ ローラーの動作**します。 生成されたデザイナー内のエクスプローラーの動作を指定する設定。 エクスプ ローラーをカスタマイズする方法の詳細については、次を参照してください。[モデル エクスプ ローラーのカスタマイズ](../modeling/customizing-the-model-explorer.md)します。  
+- **エクスプ ローラーの動作**します。 生成されたデザイナー内のエクスプローラーの動作を指定する設定。 エクスプ ローラーをカスタマイズする方法の詳細については、次を参照してください。[モデル エクスプ ローラーのカスタマイズ](../modeling/customizing-the-model-explorer.md)します。  
   
--   **図形**します。 モデル内の図形図要素の一覧。  
+- **図形**します。 モデル内の図形図要素の一覧。  
   
--   **Xml シリアル化動作**します。 モデルのシリアル化設定。 シリアル化の詳細については、次を参照してください。[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)します。  
+- **Xml シリアル化動作**します。 モデルのシリアル化設定。 シリアル化の詳細については、次を参照してください。[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

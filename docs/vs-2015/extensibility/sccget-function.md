@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baaa2691783562240b5e465c98aab43e6f8cd1e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964254"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068302"
 ---
 # <a name="sccget-function"></a>SccGet 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,21 +86,21 @@ SCCRTN SccGet(
   
  このソース コントロールのバージョンのローカル キャッシュに、ソース管理データベースと同期されなくなるような状況を解決するのには 2 つの方法はあります。  
   
-1.  現在チェック アウトされているソース管理データベースにファイル名の変更を許可しません。  
+1. 現在チェック アウトされているソース管理データベースにファイル名の変更を許可しません。  
   
-2.  "削除の古い"後に「新規追加」と同等の操作を行います。 次のアルゴリズムは、これを実現する 1 つの方法です。  
+2. "削除の古い"後に「新規追加」と同等の操作を行います。 次のアルゴリズムは、これを実現する 1 つの方法です。  
   
-    1.  呼び出す、 [SccQueryChanges](../extensibility/sccquerychanges-function.md)関数をソース管理データベースで b.txt:」に a.txt の名前の変更について説明します。  
+    1. 呼び出す、 [SccQueryChanges](../extensibility/sccquerychanges-function.md)関数をソース管理データベースで b.txt:」に a.txt の名前の変更について説明します。  
   
-    2.  ローカルの a.txt の「b.txt:」名前を変更します。  
+    2. ローカルの a.txt の「b.txt:」名前を変更します。  
   
-    3.  呼び出す、 `SccGet` a.txt と b.txt: の両方の関数。  
+    3. 呼び出す、 `SccGet` a.txt と b.txt: の両方の関数。  
   
-    4.  A.txt がソース管理データベースに存在しないので、不足している a.txt バージョン情報のローカル バージョンのキャッシュが削除されます。  
+    4. A.txt がソース管理データベースに存在しないので、不足している a.txt バージョン情報のローカル バージョンのキャッシュが削除されます。  
   
-    5.  B.txt: ファイルをチェック アウトされているが、ローカル b.txt: ファイルの内容と結合されます。  
+    5. B.txt: ファイルをチェック アウトされているが、ローカル b.txt: ファイルの内容と結合されます。  
   
-    6.  更新された b.txt: ファイルをチェックインにようになりましたことができます。  
+    6. 更新された b.txt: ファイルをチェックインにようになりましたことができます。  
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)   

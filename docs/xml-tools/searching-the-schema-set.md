@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbc41b24dd0e58dd24e0af99afe458d27f8ade6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070903"
 ---
-# <a name="search-the-schema-set"></a>スキーマ セットを検索します。
+# <a name="search-the-schema-set"></a>スキーマ セットを検索する
 
 **XML スキーマ エクスプ ローラー**次の方法でスキーマ セットを検索することができます。
 
--   キーワード検索
+- キーワード検索
 
--   スキーマ固有の検索
+- スキーマ固有の検索
 
 ## <a name="keyword-search"></a>キーワード検索
 
@@ -31,15 +31,15 @@ ms.locfileid: "55930858"
 
  **XML スキーマ エクスプ ローラー**スキーマは次の属性のセットを検索します。
 
--   指定したキーワードに一致する `name` 属性または `ref` 属性。 名前では、要素、属性、型、およびを見つけることができます。
+- 指定したキーワードに一致する `name` 属性または `ref` 属性。 名前では、要素、属性、型、およびを見つけることができます。
 
--   include ステートメントの `schemaLocation` 属性。
+- include ステートメントの `schemaLocation` 属性。
 
--   import ステートメントの `namespace` 属性。
+- import ステートメントの `namespace` 属性。
 
 ## <a name="schema-specific-search"></a>スキーマ固有の検索
 
- **XML スキーマ エクスプ ローラー**のコンテキスト (右クリック) メニューを使用してアクセスできる組み込みの検索機能もあります、 **XML スキーマ エクスプ ローラー**します。 使用できるコンテキスト メニューの詳細については、[コンテキスト メニュー](../xml-tools/context-menus-xml-schema-explorer.md)を参照してください。 スタート ビューからスキーマ固有の検索を実行することもできます。詳細については、「スキーマ セットの詳細」セクションを参照してください、[スタート ビュー](../xml-tools/start-view.md)トピック。
+ **XML スキーマ エクスプ ローラー**のコンテキスト (右クリック) メニューを使用してアクセスできる組み込みの検索機能もあります、 **XML スキーマ エクスプ ローラー**します。 使用できるコンテキスト メニューの詳細については、次を参照してください。[コンテキスト メニュー](../xml-tools/context-menus-xml-schema-explorer.md)します。 スタート ビューからスキーマ固有の検索を実行することもできます。詳細については、「スキーマ セットの詳細」セクションを参照してください、[スタート ビュー](../xml-tools/start-view.md)トピック。
 
 ## <a name="display-and-navigate-search-results"></a>表示し、検索結果を移動します。
 

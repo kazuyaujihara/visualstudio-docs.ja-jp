@@ -1,5 +1,5 @@
 ---
-title: CA2302:BinaryFormatter.Binder は BinaryFormatter.Deserialize を呼び出す前に設定してください。
+title: CA2302:BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します
 ms.date: 04/05/2019
 ms.topic: reference
 author: dotpaul
@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb997d8184ea9459b46eee95bfe2863e8c1c6ed0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: f8f2e98edd0cb1094422576b484be34f4f7ba8de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59367290"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047125"
 ---
-# <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302:BinaryFormatter.Binder は BinaryFormatter.Deserialize を呼び出す前に設定してください。
+# <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302:BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します
 
 |||
 |-|-|
@@ -34,25 +34,24 @@ A<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayPro
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-このルールは、検索<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>メソッドの呼び出しまたは参照を逆シリアル化時に<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>ときにその<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>が null でいます。 逆シリアル化を禁止する場合<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>に関係なく、<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>プロパティでは、このルールを無効にして[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)、ルールを有効にして[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)します。
+このルールは、検索<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>逆シリアル化メソッドの呼び出しまたは参照するときに、 <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> null にすることがあります。 逆シリアル化を禁止する場合<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>に関係なく、<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>プロパティでは、このルールを無効にして[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)、ルールを有効にして[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
 - 可能であれば、代わりに、セキュリティで保護されたシリアライザーを使用し、**攻撃者を任意の型を逆シリアル化の指定を許可しない**します。 安全なシリアライザーによっては、次のとおりです。
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -使用しないでください<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>します。 型競合回避モジュールを使用する必要がありますがする必要があります、予想されるリストを逆シリアル化された型が制限されます。
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -使用しないでください<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>します。 型競合回避モジュールを使用する必要があります、予想されるリストを逆シリアル化された型を制限します。
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - NewtonSoft Json.NET - TypeNameHandling.None を使用します。 TypeNameHandling を別の値を使用する必要がありますがある場合は、予想されるリストに、逆シリアル化された型を制限する必要があります。
+  - NewtonSoft Json.NET - TypeNameHandling.None を使用します。 TypeNameHandling を別の値を使用する必要がありますがある場合は、カスタム ISerializationBinder での予期される一覧に逆シリアル化された型を制限します。
   - Protocol Buffers
-- シリアル化されたデータの改ざんを作成します。 シリアル化後に、シリアル化されたデータを暗号で署名します。 逆シリアル化する前に、暗号化署名を検証します。 公開される暗号化キーを保護する必要があり、キーのローテーションを設計する必要があります。
+- シリアル化されたデータの耐タンパー性を確認します。 シリアル化後に、シリアル化されたデータを暗号で署名します。 逆シリアル化する前に、暗号化署名を検証します。 公開される暗号化キーを保護し、キーのローテーションのための設計。
 - 逆シリアル化された型を制限します。 カスタムの実装<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>します。 逆シリアル化する前に<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>、設定、<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>プロパティ、カスタムのインスタンスを<xref:System.Runtime.Serialization.SerializationBinder>します。 オーバーライドされた<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>し、メソッド、型が予想される場合は例外をスローします。
   - すべてのコード パスがいることを確認、<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>プロパティ セット。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 
-- 入力が信頼されていることがわかっている場合、この規則による警告を抑制するのには安全です。 時間の経過と共に変更することがあります、アプリケーションの信頼の境界とデータ フローを検討してください。
-- 上の予防策のいずれかを取得した場合、この警告を抑制するのには安全です。
+[!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
 ## <a name="pseudo-code-examples"></a>疑似コードの例
 
@@ -123,6 +122,7 @@ End Class
 ```
 
 ### <a name="solution"></a>ソリューション
+
 ```csharp
 using System;
 using System.IO;
@@ -144,7 +144,7 @@ public class BookRecordSerializationBinder : SerializationBinder
         }
         else
         {
-            throw new ArgumentException("Unexpected type", "typeName");
+            throw new ArgumentException("Unexpected type", nameof(typeName));
         }
     }
 }
@@ -197,7 +197,7 @@ Public Class BookRecordSerializationBinder
         If typeName = "BinaryFormatterVB.BookRecord" Or typeName = "BinaryFormatterVB.AisleLocation" Then
             Return Nothing
         Else
-            Throw New ArgumentException("Unexpected type", "typeName")
+            Throw New ArgumentException("Unexpected type", NameOf(typeName))
         End If
     End Function
 End Class

@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f85169ebb6460ac42031aec7c75ff2e29154a9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109129"
 ---
 # <a name="content-model-view"></a>コンテンツ モデル ビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 コンテンツ モデル ビューには、単純型、複合型、要素、モデル グループ、属性、属性グループなど、ローカル スキーマ ノードとグローバル スキーマ ノード、およびそのコンポーネントがグラフィック表示されます。 XML のコメントおよび処理命令は、コンテンツ モデル ビューには表示できません。 コンテンツ モデル ビューには、2 つのパネルが含まれています。**ワークスペース**パネル内のノードのリストを含む、 [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)、およびスキーマのコンテンツ モデルを表示するデザイン サーフェイス選択したノード、**ワークスペース**パネル。 さらにコンテンツ モデル ビューには、XML スキーマ デザイナーのツール バーおよび階層リンク バーがあります。  
   
  次の画像は、6 つのスキーマ ノードが表示された [ワークスペース] パネルを示しています。 `purchaseOrder` ノードが [ワークスペース] パネルで選択され、デザイン サーフェイスに表示されています。  
@@ -92,13 +91,13 @@ ms.locfileid: "58976596"
 ## <a name="undoredo"></a>元に戻す/やり直し  
  元に戻す/やり直し機能は、コンテンツ モデル ビューの次の操作に対して有効です。  
   
--   ドラッグ アンド ドロップして 1 つのノードを追加する。  
+- ドラッグ アンド ドロップして 1 つのノードを追加する。  
   
--   スキーマ エクスプローラーの検索結果ウィンドウから複数のノードを追加する。  
+- スキーマ エクスプローラーの検索結果ウィンドウから複数のノードを追加する。  
   
--   スタート ビューからノードを追加する。  
+- スタート ビューからノードを追加する。  
   
--   1 つまたは複数のノードを削除する。  
+- 1 つまたは複数のノードを削除する。  
   
 ## <a name="zoom"></a>ズーム  
  ズームはコンテンツ モデル ビューの右下隅にあります。  

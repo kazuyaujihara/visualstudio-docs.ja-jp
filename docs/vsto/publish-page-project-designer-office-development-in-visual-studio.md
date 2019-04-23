@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103531"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>[発行] ページ、プロジェクト デザイナー (Visual Studio での Office 開発)
   **プロジェクト デザイナー** の **[発行]** ページは、配置用のプロパティを構成する場合に使用します。
@@ -84,9 +84,9 @@ ms.locfileid: "54869672"
 
 - [VSTO アドインの読み込み動作]
 
-  -   起動時に読み込む: Office アプリケーションの起動時に VSTO アドインを読み込むことを指定します。
+  - 起動時に読み込む: Office アプリケーションの起動時に VSTO アドインを読み込むことを指定します。
 
-  -   要求に応じて読み込む: VSTO アドインの機能を使用する UI 要素をユーザーがクリックしたときなど、アプリケーションで VSTO アドインが必要になったときにアドインを読み込むことを指定します。
+  - 要求に応じて読み込む: VSTO アドインの機能を使用する UI 要素をユーザーがクリックしたときなど、アプリケーションで VSTO アドインが必要になったときにアドインを読み込むことを指定します。
 
   **発行の言語**このオプションは、Microsoft ソフトウェア ライセンス条項の言語を設定し、前提条件の一覧で、言語パックが含まれています。 カスタマイズの言語には影響しません。 セットアップ プログラムの言語は、インストールされている Visual Studio の言語によって決まります。
 
@@ -100,6 +100,6 @@ ms.locfileid: "54869672"
 
 ## <a name="see-also"></a>関連項目
 
-- [Office ソリューションをデプロイします。](../vsto/deploying-an-office-solution.md)
+- [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)
 - [ClickOnce を使用して Office ソリューションを配置します。](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [展開の office ソリューションの前提条件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)

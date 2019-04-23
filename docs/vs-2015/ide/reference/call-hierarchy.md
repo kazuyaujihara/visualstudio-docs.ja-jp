@@ -13,17 +13,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4846d00172c3d71be1f8a8dbdf68cf4e7fd1f065
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774775"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649408"
 ---
 # <a name="call-hierarchy"></a>呼び出し階層
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 呼び出し階層は、選択したメソッド、プロパティ、またはコンストラクターとの間のすべての呼び出しを表示することによって、コード内を移動することができます。 これにより、コード フローをより理解して、コードへの変更の効果を評価することができます。 複数のコードのレベルを調査して、メソッド呼び出しの複雑なチェーンとコードへの追加のエントリ ポイントを表示することで、すべての実行可能なパスを調べることができます。  
   
  呼び出し階層は、デバッガーによって表示される呼び出し履歴とは異なり、デザイン時に使用できます。  

@@ -1,5 +1,5 @@
 ---
-title: テスト領域 4:チェックイン |Microsoft Docs
+title: 'テスト領域 4: チェックイン |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2529b22d7039101f83952b3390221af5b78922b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34d988f88787efc2f40b663ef2f22e6273055533
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038713"
 ---
-# <a name="test-area-4-check-in"></a>テスト領域 4:チェックイン
+# <a name="test-area-4-check-in"></a>テスト領域 4: チェックイン
 このソース管理プラグインのテストの領域を使用してバージョン ストアに更新されたアイテムの送信について説明します、**チェックイン**コマンド。
 
 ## <a name="command-menu-access"></a>コマンド メニューへのアクセス
@@ -33,11 +33,11 @@ ms.locfileid: "56605108"
 
 ## <a name="common-expected-behavior"></a>共通の想定される動作
 
--   プロジェクトとソリューションまたはプロジェクトをソース管理に追加されたファイルに表示される、**チェックイン** ダイアログ ボックスおよび**保留中のチェックイン**ウィンドウ。
+- プロジェクトとソリューションまたはプロジェクトをソース管理に追加されたファイルに表示される、**チェックイン** ダイアログ ボックスおよび**保留中のチェックイン**ウィンドウ。
 
--   チェックイン後、は、ソース管理に追加された項目が表示されます。
+- チェックイン後、は、ソース管理に追加された項目が表示されます。
 
--   チェックイン後は、更新された項目は、ストアで適切にバージョン管理されました。
+- チェックイン後は、更新された項目は、ストアで適切にバージョン管理されました。
 
 ## <a name="test-cases"></a>テスト ケース
  チェックイン テスト領域の特定のテスト_ケースを次に示します。

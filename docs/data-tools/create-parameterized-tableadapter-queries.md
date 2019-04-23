@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d521e621436d02329b21e37a2ebfc47eef65f0b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 94712279b09a4def616ed264483b894c673bafc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062088"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>パラメーター付きの TableAdapter クエリを作成する
 
@@ -38,40 +38,40 @@ ms.locfileid: "55931027"
 
 ### <a name="to-create-a-parameterized-query-in-the-dataset-designer"></a>データセット デザイナーでパラメーター クエリを作成するには
 
--   新しい TableAdapter を作成し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。 詳細については、次を参照してください。[作成し、Tableadapter 構成](../data-tools/create-and-configure-tableadapters.md)します。
+- 新しい TableAdapter を作成し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。 詳細については、次を参照してください。[作成し、Tableadapter 構成](../data-tools/create-and-configure-tableadapters.md)します。
 
      - または -
 
--   既存の TableAdapter にクエリを追加し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。
+- 既存の TableAdapter にクエリを追加し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。
 
 ### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>データ バインド フォームの設計時にパラメーター クエリを作成するには
 
-1.  フォーム上の既にデータセットにバインドされているコントロールを選択します。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールを Windows フォームのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)します。
+1. フォーム上の既にデータセットにバインドされているコントロールを選択します。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールを Windows フォームのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)します。
 
-2.  **データ**メニューの **クエリの追加**します。
+2. **データ**メニューの **クエリの追加**します。
 
-3.  **[検索条件ビルダー]** ダイアログ ボックスの設定を完了し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。
+3. **[検索条件ビルダー]** ダイアログ ボックスの設定を完了し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。
 
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>既存のデータ バインド フォームにクエリを追加するには
 
-1.  **Windows フォーム デザイナー**でフォームを開きます。
+1. **Windows フォーム デザイナー**でフォームを開きます。
 
-2.  **データ**メニューの **クエリの追加**または**データ スマート タグ**します。
+2. **データ**メニューの **クエリの追加**または**データ スマート タグ**します。
 
     > [!NOTE]
     > **[データ]** メニューの **[クエリの追加]** が使用できない場合は、パラメーターの追加先のデータ ソースを表示するフォーム上のコントロールを選択します。 たとえば、フォームに <xref:System.Windows.Forms.DataGridView> コントロールのデータが表示される場合は、そのコントロールを選択します。 フォームに個々のコントロールのデータが表示される場合は、いずれかのデータ バインド コントロールを選択します。
 
-3.  **ソース テーブルのデータの選択**領域で、パラメーター化を追加するテーブルを選択します。
+3. **ソース テーブルのデータの選択**領域で、パラメーター化を追加するテーブルを選択します。
 
-4.  新しいクエリを作成する場合は、**[新しいクエリ名]** ボックスに名前を入力します。
+4. 新しいクエリを作成する場合は、**[新しいクエリ名]** ボックスに名前を入力します。
 
      - または -
 
      **[既存のクエリ名]** ボックスでクエリを選択します。
 
-5.  **クエリ テキスト**ボックスに、パラメーターを受け取るクエリを入力します。
+5. **クエリ テキスト**ボックスに、パラメーターを受け取るクエリを入力します。
 
-6.  **[OK]** を選択します。
+6. **[OK]** を選択します。
 
      パラメーターを入力するコントロールと **[読み込み]** ボタンが、<xref:System.Windows.Forms.ToolStrip> コントロールのフォームに追加されます。
 
@@ -92,11 +92,11 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 
 Null 値を使用するためのクエリを有効にします。
 
-1.  **データセット デザイナー**、null パラメーター値をそのまま使用する必要がある TableAdapter クエリを選択します。
+1. **データセット デザイナー**、null パラメーター値をそのまま使用する必要がある TableAdapter クエリを選択します。
 
-2.  **プロパティ**ウィンドウで、**パラメーター**、省略記号をクリックします (**.**) ボタンをクリックする、**パラメーター コレクション エディター**します。
+2. **プロパティ**ウィンドウで、**パラメーター**、省略記号をクリックします (**.**) ボタンをクリックする、**パラメーター コレクション エディター**します。
 
-3.  Null 値を許容するパラメーターを選択し、設定、 **AllowDbNull**プロパティを`true`します。
+3. Null 値を許容するパラメーターを選択し、設定、 **AllowDbNull**プロパティを`true`します。
 
 ## <a name="see-also"></a>関連項目
 

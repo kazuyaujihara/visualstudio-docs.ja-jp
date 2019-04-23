@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: caaf9026d949b2e1327e7d88507f27392bf07283
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58973897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053157"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>方法: 標準のコード分析チェックイン ポリシーを作成または更新する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ ms.locfileid: "58973897"
   
 ### <a name="to-open-the-check-in-policy-editor"></a>チェックイン ポリシー エディターを開く  
   
-1.  チーム エクスプ ローラーで、チーム プロジェクト名を右クリックして**チーム プロジェクトの設定**、 をクリックし、**ソース管理**します。  
+1. チーム エクスプ ローラーで、チーム プロジェクト名を右クリックして**チーム プロジェクトの設定**、 をクリックし、**ソース管理**します。  
   
-2.  **ソース管理**ダイアログ ボックスで、**チェックイン ポリシー**タブ。  
+2. **ソース管理**ダイアログ ボックスで、**チェックイン ポリシー**タブ。  
   
-3.  次のいずれかの操作を行います。  
+3. 次のいずれかの操作を行います。  
   
-    -   クリックして**追加**新しいチェックイン ポリシーを作成します。  
+    - クリックして**追加**新しいチェックイン ポリシーを作成します。  
   
-    -   既存をダブルクリックして**コード分析**内の項目、**ポリシーの種類**ポリシーを変更する ボックスの一覧。  
+    - 既存をダブルクリックして**コード分析**内の項目、**ポリシーの種類**ポリシーを変更する ボックスの一覧。  
   
 ### <a name="to-set-policy-options"></a>ポリシー オプションを設定するには  
   
--   選択するか、次のオプションをオフにします。  
+- 選択するか、次のオプションをオフにします。  
   
     |オプション|説明|  
     |------------|-----------------|  
@@ -58,19 +58,19 @@ ms.locfileid: "58973897"
     |**C/C++ コード分析を強制 (/analyze)**|すべての C または C++ プロジェクトをビルドすることが必要です、/analyze コンパイラ オプションがチェックインされる前に、コード分析を実行します。|  
     |**マネージ コードのコード分析を適用します。**|すべてのマネージ プロジェクトはコード分析を実行しがチェックインされる前に、ビルドが必要です。|  
   
--  
+- 
   
 ### <a name="to-specify-a-managed-rule-set"></a>"マネージ"規則セットを指定するには  
   
--   **この規則セットを実行**一覧で、次の方法のいずれかを使用します。  
+- **この規則セットを実行**一覧で、次の方法のいずれかを使用します。  
   
-    -   Microsoft の標準規則セットを選択します。  
+    - Microsoft の標準規則セットを選択します。  
   
-    -   カスタム規則セットを選択する をクリックして **\<... にソース管理からのルール セットの選択 >**、し、ソース コントロールのブラウザーで、規則セットのバージョン コントロール パスを入力します。 バージョン コントロール パスの構文です。  
+    - カスタム規則セットを選択する をクリックして **\<... にソース管理からのルール セットの選択 >**、し、ソース コントロールのブラウザーで、規則セットのバージョン コントロール パスを入力します。 バージョン コントロール パスの構文です。  
   
-    -   **$/** `TeamProjectName` **/** `VersionControlPath`  
+    - **$/** `TeamProjectName` **/** `VersionControlPath`  
   
-    -   セットを作成し、カスタム チェックイン ポリシーの規則を実装する方法の詳細についてを参照してください[マネージ コードを実装するカスタム チェックイン ポリシー](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)します。  
+    - セットを作成し、カスタム チェックイン ポリシーの規則を実装する方法の詳細についてを参照してください[マネージ コードを実装するカスタム チェックイン ポリシー](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [コード分析を用いたチェックイン ポリシーの作成と使用](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

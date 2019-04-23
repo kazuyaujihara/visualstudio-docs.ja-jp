@@ -10,12 +10,12 @@ ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 192d97d8d2096b37d2dd52d2ed942ccb595456d0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 37e0ae51589d85ac52ec962fb3cb193fc37a7ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795793"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081256"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>コード化された UI テストのベスト プラクティス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54795793"
   
  **必要条件**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
  柔軟性のあるコード化された UI テストを作成するには、次のガイドラインを使用します。  
@@ -64,11 +64,11 @@ ms.locfileid: "54795793"
   
 - 有効ではなくなったアサーションがコントロールにある場合は、次の操作を実行します。  
   
-  -   アサーションが含まれるメソッドを削除します。  
+  - アサーションが含まれるメソッドを削除します。  
   
-  -   テスト メソッドからこのメソッドへの呼び出しを削除します。  
+  - テスト メソッドからこのメソッドへの呼び出しを削除します。  
   
-  -   十字線のボタンを UI コントロールにドラッグすることで新しいアサーションを追加し、UI マップを開いて新しいアサーションを追加します。  
+  - 十字線のボタンを UI コントロールにドラッグすることで新しいアサーションを追加し、UI マップを開いて新しいアサーションを追加します。  
   
   コード化された UI テストを記録する方法の詳細については、「[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)」を参照してください。  
   

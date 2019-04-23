@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "59003146"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074126"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,15 +68,15 @@ Visual Studio の統合シェルには、統合開発環境 (IDE)、デバッガ
 ## <a name="features-not-included-in-the-integrated-shell"></a>Integrated Shell に含まれていない機能  
  統合シェルに含まれていない機能の一覧を次には。  
   
--   クラス デザイナー  
+- クラス デザイナー  
   
--   PreEmptive Protection - Dotfuscator  
+- PreEmptive Protection - Dotfuscator  
   
--   言語機能  
+- 言語機能  
   
--   VSHost  
+- VSHost  
   
--   言語の Visual Studio、または、関連付けられているプロジェクト テンプレートまたはプロジェクト項目テンプレートは、統合シェルに含まれます。 その他の機能の言語固有の実装が含まれる、Visual Basic コード スニペットの例ではありません。  
+- 言語の Visual Studio、または、関連付けられているプロジェクト テンプレートまたはプロジェクト項目テンプレートは、統合シェルに含まれます。 その他の機能の言語固有の実装が含まれる、Visual Basic コード スニペットの例ではありません。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio の拡張の概要](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

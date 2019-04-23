@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6768bb0100b3bb0052898efc6a57017fca3702b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962783"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061503"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119:プライベート インターフェイスを満たすメソッドをシールします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,20 +36,20 @@ ms.locfileid: "58962783"
  継承可能なパブリック型のオーバーライド可能なメソッド実装を提供する、 `internal` (`Friend` Visual Basic で) インターフェイス。
 
 ## <a name="rule-description"></a>規則の説明
- インターフェイス メソッドがあるパブリック アクセシビリティは、実装する型を変更できません。 内部のインターフェイスは、インターフェイスを定義するアセンブリの外側に実装されるものではありませんが、コントラクトを作成します。 使用して、内部のインターフェイスのメソッドを実装するパブリック型、 `virtual` (`Overridable` Visual Basic) 修飾子は、アセンブリ外にある派生型でオーバーライドされるメソッドを使用します。 2 番目の型定義のアセンブリでは、メソッドを呼び出し、内部専用の契約が必要ですが場合、代わりに、外部のアセンブリでオーバーライドされたメソッドが実行されるときに、動作が漏えいする可能性があります。 これには、セキュリティの脆弱性が作成されます。
+ インターフェイス メソッドがあるパブリック アクセシビリティは、実装する型を変更できません。 内部のインターフェイスは、インターフェイスを定義するアセンブリの外側に実装されるものではありませんが、コントラクトを作成します。 使用して、内部のインターフェイスのメソッドを実装するパブリック型、 `virtual` (`Overridable` Visual basic) 修飾子は、アセンブリ外にある派生型でオーバーライドされるメソッドを使用します。 2 番目の型定義のアセンブリでは、メソッドを呼び出し、内部専用の契約が必要ですが場合、代わりに、外部のアセンブリでオーバーライドされたメソッドが実行されるときに、動作が漏えいする可能性があります。 これには、セキュリティの脆弱性が作成されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則の違反を修正するには、メソッドが、次のいずれかを使用して、アセンブリの外部にオーバーライドされないように。
 
--   宣言する型`sealed`(`NotInheritable` Visual Basic で)。
+- 宣言する型`sealed`(`NotInheritable` Visual Basic で)。
 
--   宣言する型のアクセシビリティを変更する`internal`(`Friend` Visual Basic で)。
+- 宣言する型のアクセシビリティを変更する`internal`(`Friend` Visual Basic で)。
 
--   すべてのパブリック コンス トラクターを宣言する型から削除します。
+- すべてのパブリック コンス トラクターを宣言する型から削除します。
 
--   メソッドの実装を使用せず、`virtual`修飾子。
+- メソッドの実装を使用せず、`virtual`修飾子。
 
--   メソッドを明示的に実装します。
+- メソッドを明示的に実装します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この警告を抑制するには、安全ではルールの場合、セキュリティの問題が存在しないことを注意深くレビューは、アセンブリの外部メソッドがオーバーライドされた場合に悪用可能な場合があります。

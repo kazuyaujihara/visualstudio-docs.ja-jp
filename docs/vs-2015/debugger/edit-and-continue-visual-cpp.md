@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1f82c9e79957b12dba36eaa70a94cb6fff84ff7
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 3fd223b0a5891bc28cdef18dcd64312812607422
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58963806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060437"
 ---
 # <a name="edit-and-continue-visual-c"></a>エディット コンティニュ (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual C++ プロジェクトでエディット コンティニュを使用で�
   
  **/Zo**エディット コンティニュを無効にします。 「[方法:最適化されたコードをデバッグする](../debugger/how-to-debug-optimized-code.md)」を参照してください。  
   
-##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> エディット コンティニュを有効または無効にする  
+## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> エディット コンティニュを有効または無効にする  
  現在のデバッグ セッション中に適用しないコードの編集を行う場合は、エディット コンティニュの自動起動を無効にすることもできます。 自動エディット コンティニュをもう一度有効にすることもできます。  
   
 1. **[ツール]** メニューの **[オプション]** をクリックします。  
@@ -49,14 +49,14 @@ Visual C++ プロジェクトでエディット コンティニュを使用で�
   
    この設定を変更すると、作業するすべてのプロジェクトに影響します。 この設定の変更後にアプリケーションをリビルドする必要はありません。 この設定は、デバッグ中でも変更できます。 アプリケーションをコマンド ラインまたはメイクファイルでビルドし、Visual Studio 環境でデバッグする場合も、 **/ZI** オプションを設定するとエディット コンティニュを使用できます。  
   
-##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> コード変更を明示的に適用する方法  
+## <a name="BKMK_How_to_apply_code_changes_explicitly"></a> コード変更を明示的に適用する方法  
  Visual C++ では、エディット コンティニュは 2 つの方法でコード変更を適用できます。 実行コマンドを選択した場合、コード変更は暗黙的に適用できます。 **[コード変更を適用]** を使用した場合は明示的に適用できます。  
   
  コード変更を明示的に適用する場合、プログラムは中断モードのままとなり実行されません。  
   
--   コードの変更を明示的に適用するには、**[デバッグ]** メニューで **[コード変更を適用]** を選択します。  
+- コードの変更を明示的に適用するには、**[デバッグ]** メニューで **[コード変更を適用]** を選択します。  
   
-##  <a name="BKMK_How_to_stop_code_changes"></a> コード変更を停止する方法  
+## <a name="BKMK_How_to_stop_code_changes"></a> コード変更を停止する方法  
  エディット コンティニュがコード変更を適用するプロセスを実行している間、その操作は中断できます。  
   
  コードの変更内容の適用を停止するには  
@@ -67,12 +67,12 @@ Visual C++ プロジェクトでエディット コンティニュを使用で�
   
   このオプションを選択すると、コードの変更内容は一切コミットされません。  
   
-##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> 実行ポイントをリセットする方法  
+## <a name="BKMK_How_to_reset_the_point_of_execution"></a> 実行ポイントをリセットする方法  
  コードを変更してエディット コンティニュでその変更内容を適用すると、実行ポイントが新しい位置に移動する場合があります。 [エディット コンティニュ] では、実行ポイントができるだけ正確に位置付けられますが、結果が常に正しいとは限りません。  
   
  Visual C++ では、実行ポイントが変わると、それを示すダイアログ ボックスが表示されます。 デバッグを継続する前に、位置が正しいかどうかを確認する必要があります。 位置が正しくない場合は、 **[次のステートメントの設定]** を使用します。 詳しくは、「 [次に実行されるステートメントを設定する](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute)」をご覧ください。  
   
-##  <a name="BKMK_How_to_work_with_stale_code"></a> 古いコードを操作する方法  
+## <a name="BKMK_How_to_work_with_stale_code"></a> 古いコードを操作する方法  
  場合により、エディット コンティニュがコード変更を直ちに適用して実行可能にできないことがありますが、デバッグを続行すると、後でコード変更が適用できるようになる場合もあります。 これは、現在の関数を呼び出す関数を編集した場合や、呼び出し履歴上の関数に 64 バイトを超える新しい変数を追加した場合に発生します。  
   
  このような場合、変更が適用されるまで、デバッガーは元のコードを続けて実行します。 古いコードは、一時的なソース ファイル ウィンドウとして、 `enc25.tmp`などのタイトルで別のソース ウィンドウに表示されます。 編集されたソース コードは、元のソース ウィンドウに表示されます。 古いコードを編集しようとすると、警告メッセージが表示されます。  

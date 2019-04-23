@@ -25,17 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 147e9cc66518372e042230a30c16588ab719cb1c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972787"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661582"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>デザイナーを使用して SQL database を作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 テーブルを追加して、Visual Studio を使用して作成し、SQL Server Express LocalDB にローカル データベース ファイルを更新して、列を定義するなど、基本的なタスクを調べることができます。 このチュートリアルを終了すると、ローカル データベースを使用してさらに高度な機能を使用できるようになり、こうした機能を必要とする他のチュートリアルへの準備となります。  
   
  SQL Server Management Studio (個別のダウンロード) または TRANSACT-SQL ステートメントを使用してデータベースを作成することも、 **SQL Server オブジェクト エクスプ ローラー** Visual Studio でツール ウィンドウです。  

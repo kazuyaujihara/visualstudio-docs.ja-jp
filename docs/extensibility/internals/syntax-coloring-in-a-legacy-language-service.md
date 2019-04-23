@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e193f5c8363cda4e3519df45d001a1972865813e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629574"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057765"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>従来の言語サービスでの構文の色分け表示
 
@@ -36,31 +36,31 @@ Visual Studio では、言語の要素を特定し、エディターで指定し
 
 ## <a name="how-a-vspackage-uses-a-language-service-colorizer"></a>VSPackage が言語サービスの Colorizer を使用する方法
 
-1.  VSPackage では、言語サービスには、次の VSPackage を必要とする適切な言語サービスを取得する必要があります。
+1. VSPackage では、言語サービスには、次の VSPackage を必要とする適切な言語サービスを取得する必要があります。
 
-    1.  実装するオブジェクトを使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>を色分け表示するテキストを取得するインターフェイス。
+    1. 実装するオブジェクトを使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>を色分け表示するテキストを取得するインターフェイス。
 
          テキストが実装するオブジェクトを使用して表示される通常の<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>インターフェイス。
 
-    2.  言語サービスの GUID の VSPackage のサービス プロバイダーのクエリを実行して、言語サービスを取得します。 言語サービスは、レジストリでファイル拡張子によって識別されます。
+    2. 言語サービスの GUID の VSPackage のサービス プロバイダーのクエリを実行して、言語サービスを取得します。 言語サービスは、レジストリでファイル拡張子によって識別されます。
 
-    3.  使用して、言語サービスに関連付ける、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>を呼び出してその<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>メソッド。
+    3. 使用して、言語サービスに関連付ける、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>を呼び出してその<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>メソッド。
 
-2.  VSPackage は、今すぐ入手し、colorizer オブジェクトを使用して、次のようにできます。
+2. VSPackage は、今すぐ入手し、colorizer オブジェクトを使用して、次のようにできます。
 
     > [!NOTE]
     > コア エディターを使用して、Vspackage は、言語サービスの colorizer オブジェクトを明示的に取得する必要はありません。 コア エディターのインスタンスは、適切な言語サービスを取得するとすぐには、ここで示すようにすべての色づけのタスクを実行します。
 
-    1.  実装する、言語サービスの colorizer オブジェクトを取得、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>、および<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>インターフェイスを呼び出すことによって、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>メソッドを言語サービスの<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>オブジェクト。
+    1. 実装する、言語サービスの colorizer オブジェクトを取得、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>、および<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>インターフェイスを呼び出すことによって、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>メソッドを言語サービスの<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>オブジェクト。
 
-    2.  呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>テキストの特定の範囲の colorizer 情報を取得します。
+    2. 呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>テキストの特定の範囲の colorizer 情報を取得します。
 
          <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 色分けされて表示されるテキスト範囲内の各文字のいずれかの値の配列を返します。 値は、コア エディターによって管理される既定の配色可能な項目リストまたは言語サービス自体によって管理されるカスタムの装飾が可能な項目リストのいずれかである装飾が可能な項目のリストへのインデックスです。
 
-    3.  によって返される色づけの情報を使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>メソッドを選択したテキストを表示します。
+    3. によって返される色づけの情報を使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>メソッドを選択したテキストを表示します。
 
 > [!NOTE]
->  言語サービスの colorizer を使用するだけでなく、VSPackage は、汎用的な Visual Studio テキストが色分け表示メカニズムにも使用できます。 このメカニズムの詳細については、[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)を参照してください。
+>  言語サービスの colorizer を使用するだけでなく、VSPackage は、汎用的な Visual Studio テキストが色分け表示メカニズムにも使用できます。 このメカニズムの詳細については、次を参照してください。[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)します。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [構文の色分け表示の実装](../../extensibility/internals/implementing-syntax-coloring.md)

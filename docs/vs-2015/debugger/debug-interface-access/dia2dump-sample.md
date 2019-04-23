@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd52c635d5ade1bef73176601d6957ba5859723b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a817720c1ad73b666e0c9a586bb583120a2533c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976749"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092020"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump サンプル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,23 +28,23 @@ Dia2dump サンプルでは、Visual Studio と共にインストールされ、
   
 ### <a name="to-install-the-sample"></a>サンプルをインストールするには  
   
-1.  システムが Visual Studio セットアップの開始 ページで説明されているすべてのセットアップ要件を満たしていることを確認します。  
+1. システムが Visual Studio セットアップの開始 ページで説明されているすべてのセットアップ要件を満たしていることを確認します。  
   
-2.  Visual Studio をインストールして、サンプルは、のすべてのセットアップとインストールの指示に従います。  
+2. Visual Studio をインストールして、サンプルは、のすべてのセットアップとインストールの指示に従います。  
   
 #### <a name="to-build-the-sample"></a>サンプルをビルドするには  
   
-1.  Visual Studio で Dia2dump.sln ファイルを開きます。 (必要に応じて、Visual Studio 最初する際に役立つ Dia2dump プロジェクトをアップグレードします。)  
+1. Visual Studio で Dia2dump.sln ファイルを開きます。 (必要に応じて、Visual Studio 最初する際に役立つ Dia2dump プロジェクトをアップグレードします。)  
   
-2.  プロジェクトのプロパティ ページでの**C と C++** &#124; **全般** &#124; **追加のインクルード ディレクトリ**プロパティを指定、`..\DIA SDK\include`ディレクトリ。 これにより、コンパイラが dia2.h ファイルを見つけることができます。  
+2. プロジェクトのプロパティ ページでの**C と C++** &#124; **全般** &#124; **追加のインクルード ディレクトリ**プロパティを指定、`..\DIA SDK\include`ディレクトリ。 これにより、コンパイラが dia2.h ファイルを見つけることができます。  
   
-3.  **[ビルド]** メニューで、**[ソリューションのリビルド]** をクリックします。  
+3. **[ビルド]** メニューで、**[ソリューションのリビルド]** をクリックします。  
   
-4.  Visual Studio を閉じます。  
+4. Visual Studio を閉じます。  
   
 #### <a name="to-run-the-sample"></a>サンプルを実行するには  
   
-1.  コマンド プロンプトを開き、次に入力します。  
+1. コマンド プロンプトを開き、次に入力します。  
   
     ```  
     dia2dump filename  

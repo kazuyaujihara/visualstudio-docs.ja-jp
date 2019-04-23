@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796817"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652112"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ Core ガイドライン チェッカーの参照
 
@@ -107,12 +107,9 @@ ms.locfileid: "56796817"
 
 [C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md)関数 'シンボル %' は 'virtual'、'override' または 'final' の 1 つだけを指定する必要があります。 参照してください[C.128:仮想関数が正確に 1 つのオーバーライドでは仮想、または最後に指定する必要があります](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)します。
 
-
 [C26436 NEED_VIRTUAL_DTOR](C26436.md)かパブリック仮想または保護された非仮想デストラクターの型 '% のシンボル %' で仮想関数が必要です。 参照してください[C++ Core Guidelines C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual)します。
 
-
 [C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md)オーバーライド デストラクターでは、明示的な 'オーバーライド' または '仮想' 指定子は使用しないでください。 参照してください[C.128:仮想関数が正確に 1 つのオーバーライドでは仮想、または最後に指定する必要があります](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)します。
-
 
 ## <a name="type-group"></a>種類のグループ
 
@@ -205,7 +202,6 @@ ms.locfileid: "56796817"
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span`または`std::string_view`テンポラリから作成は無効になるときにテンポラリが無効になります。 参照してください[C++ Core Guidelines:GSL.view:ビュー](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)します。
-
 
 ## <a name="deprecated-warnings"></a>非推奨の警告
 

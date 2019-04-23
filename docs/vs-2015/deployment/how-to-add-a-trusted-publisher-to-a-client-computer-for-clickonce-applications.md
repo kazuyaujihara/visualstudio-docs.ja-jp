@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7aade658b3fbc70c244e99a6537746bdd4f3c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b8c2bc30814af9cdc6181d08b313df20146f855e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080957"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>方法: ClickOnce アプリケーション用のクライアント コンピューターに信頼された発行元を追加します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,21 +39,21 @@ ms.locfileid: "58975980"
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>信頼されたルートの下の信頼された発行者ストアに証明書を追加するには  
   
-1.  CA からデジタル証明書を取得します。  
+1. CA からデジタル証明書を取得します。  
   
-2.  証明書を Base64 X.509 (.cer) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書をエクスポートする](http://go.microsoft.com/fwlink/?LinkId=164793)」を参照してください。  
+2. 証明書を Base64 X.509 (.cer) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書をエクスポートする](http://go.microsoft.com/fwlink/?LinkId=164793)」を参照してください。  
   
-3.  クライアント コンピューターのコマンド プロンプトで、次のコマンドを実行します。  
+3. クライアント コンピューターのコマンド プロンプトで、次のコマンドを実行します。  
   
      **certmgr.exe -add certificate.cer -c -s -r localMachine TrustedPublisher**  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>他のルート下にある信頼された発行者ストアに証明書を追加するには  
   
-1.  CA からデジタル証明書を取得します。  
+1. CA からデジタル証明書を取得します。  
   
-2.  証明書を Base64 X.509 (.cer) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書をエクスポートする](http://go.microsoft.com/fwlink/?LinkId=164793)」を参照してください。  
+2. 証明書を Base64 X.509 (.cer) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書をエクスポートする](http://go.microsoft.com/fwlink/?LinkId=164793)」を参照してください。  
   
-3.  クライアント コンピューターのコマンド プロンプトで、次のコマンドを実行します。  
+3. クライアント コンピューターのコマンド プロンプトで、次のコマンドを実行します。  
   
      **certmgr.exe -add good.cer -c -s -r localMachine Root**  
   

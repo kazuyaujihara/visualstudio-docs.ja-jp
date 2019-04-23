@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 869075875f5de56cc7454c58f7dbb5dfda7a9f76
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: dbd65c5247a82f2a58a57e50402ecde5d330cc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928778"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111689"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>n 層アプリケーションのデータセットにコードを追加する
 データセットの機能を拡張するには、データセットの部分クラス ファイルを作成し、コードを追加 (コードを追加するのではなく、 *DatasetName*します。Dataset.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、次を参照してください。[部分](/dotnet/visual-basic/language-reference/modifiers/partial)または[部分クラスとメソッド](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)します。
@@ -35,15 +35,15 @@ ms.locfileid: "55928778"
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>N 層アプリケーションのデータセットにコードを追加するには
 
-1.  含むプロジェクトを見つけ、 *.xsd*ファイル。
+1. 含むプロジェクトを見つけ、 *.xsd*ファイル。
 
-2.  選択、 **.xsd**ファイル データセットを開きます。
+2. 選択、 **.xsd**ファイル データセットを開きます。
 
-3.  コード (タイトル バーのテーブル名) を追加し、選択するデータ テーブルを右クリックして**コードの表示**します。
+3. コード (タイトル バーのテーブル名) を追加し、選択するデータ テーブルを右クリックして**コードの表示**します。
 
      部分クラスが作成され、コード エディターで開きます。
 
-4.  部分クラス宣言内でコードを追加します。
+4. 部分クラス宣言内でコードを追加します。
 
      次の例は、NorthwindDataSet 内 CustomersDataTable にコードを追加する場所を示しています。
 
@@ -53,6 +53,7 @@ ms.locfileid: "55928778"
         ' to the CustomersDataTable.
     End Class
     ```
+
     ```csharp
     partial class CustomersDataTable
     {

@@ -1,5 +1,5 @@
 ---
-title: 名前の変更リファクタリング (C#) |Microsoft Docs
+title: 名前の変更リファクタリング (c#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975445"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114732"
 ---
 # <a name="rename-refactoring-c"></a>名前の変更リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "58975445"
   
 #### <a name="to-rename-an-identifier"></a>識別子の名前を変更するには  
   
-1.  `RenameIdentifier` という名前のコンソール アプリケーションを作成し、`Program` を次のコード例で置き換えます。  
+1. `RenameIdentifier` という名前のコンソール アプリケーションを作成し、`Program` を次のコード例で置き換えます。  
   
     ```csharp  
     class ProtoClassA  
@@ -76,23 +76,23 @@ ms.locfileid: "58975445"
     }  
     ```  
   
-2.  カーソルを置き`MethodB`メソッドの宣言またはメソッドの呼び出しで。  
+2. カーソルを置き`MethodB`メソッドの宣言またはメソッドの呼び出しで。  
   
-3.  **リファクタリング**メニューの **の名前を変更**します。 **の名前を変更** ダイアログ ボックスが表示されます。  
+3. **リファクタリング**メニューの **の名前を変更**します。 **の名前を変更** ダイアログ ボックスが表示されます。  
   
      カーソルを右クリックして をポイント**リファクタリング** をクリックし、コンテキスト メニューで**の名前を変更**を表示する、**の名前を変更** ダイアログ ボックス。  
   
-4.  **新しい名前**フィールドに「`MethodC`します。  
+4. **新しい名前**フィールドに「`MethodC`します。  
   
-5.  選択、**コメント内の検索**チェック ボックスをオンします。  
+5. 選択、**コメント内の検索**チェック ボックスをオンします。  
   
-6.  **[OK]** をクリックします。  
+6. **[OK]** をクリックします。  
   
-7.  **変更のプレビュー**ダイアログ ボックスで、をクリックして**適用**します。  
+7. **変更のプレビュー**ダイアログ ボックスで、をクリックして**適用**します。  
   
 #### <a name="to-rename-an-identifier-using-smart-tags"></a>スマート タグを使用して識別子の名前を変更するには  
   
-1.  `RenameIdentifier` という名前のコンソール アプリケーションを作成し、`Program` を次のコード例で置き換えます。  
+1. `RenameIdentifier` という名前のコンソール アプリケーションを作成し、`Program` を次のコード例で置き換えます。  
   
     ```csharp  
     class ProtoClassA  
@@ -113,18 +113,18 @@ ms.locfileid: "58975445"
     }  
     ```  
   
-2.  宣言で`MethodB`入力するか、backspace キーでメソッドの識別子。 スマート タグのプロンプトは、この識別子の下に表示されます。  
+2. 宣言で`MethodB`入力するか、backspace キーでメソッドの識別子。 スマート タグのプロンプトは、この識別子の下に表示されます。  
   
     > [!NOTE]
     >  名前の変更リファクタリング スマート タグを使用した識別子の宣言でのみ起動できます。  
   
-3.  SHIFT + ALT + F10 キーボード ショートカットを入力して、スマート タグ メニューを表示する下方向キーを押します。  
+3. SHIFT + ALT + F10 キーボード ショートカットを入力して、スマート タグ メニューを表示する下方向キーを押します。  
   
      - または -  
   
      スマート タグの表示にスマート タグのプロンプト上には、マウス ポインターを移動します。 スマート タグの上にマウス ポインターを移動し、スマート タグ メニューを表示する下矢印をクリックします。  
   
-4.  選択、**の名前を変更 '\<identifer1 >' を'\<identifier2 >'** のコードの変更のプレビューを使用しない名前の変更のリファクタリングを開始するメニュー項目。 すべての参照を **\<identifer1 >** に自動的に更新が **\<identifier2 >** します。  
+4. 選択、**の名前を変更 '\<identifer1 >' を'\<identifier2 >'** のコードの変更のプレビューを使用しない名前の変更のリファクタリングを開始するメニュー項目。 すべての参照を **\<identifer1 >** に自動的に更新が **\<identifier2 >** します。  
   
      - または -  
   

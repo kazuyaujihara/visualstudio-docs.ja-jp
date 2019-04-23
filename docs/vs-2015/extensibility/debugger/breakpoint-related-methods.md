@@ -11,23 +11,23 @@ ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 06f7904a1ae38ce9a2c8103208490bc67e8dc7b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47ba1529521fdce042512a38d32ad2ca2eb3cb82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085560"
 ---
 # <a name="breakpoint-related-methods"></a>ブレークポイントに関連するメソッド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 デバッグ エンジン (DE) には、ブレークポイントの設定をサポートする必要があります。 Visual Studio のデバッグには、次の種類のブレークポイントのサポートされています。  
   
--   バインドされています。  
+- バインドされています。  
   
      UI 経由で要求し、指定したコードの場所に正常にバインドされています。  
   
--   保留  
+- 保留  
   
      UI が実際にまだバインドされていません手順を通じて要求  
   

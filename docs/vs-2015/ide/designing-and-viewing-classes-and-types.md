@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4d9636a29485430be92ab622ae8ce56712f22aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c41dc9df835cc3799a35620730927b338224ea14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045045"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>クラスと型のデザインおよび表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Visual Studio のクラス デザイナーでは、コード内のクラスと�
   
  ここでは、クラス ダイアグラムで実現できることについて、さらに詳しく説明します。  
   
--   **デザイン**: クラス ダイアグラムを編集することによって、プロジェクトのコードを編集します。 新しい要素を追加し、不要な要素を削除します。 変更はコードに反映されます。  
+- **デザイン**: クラス ダイアグラムを編集することによって、プロジェクトのコードを編集します。 新しい要素を追加し、不要な要素を削除します。 変更はコードに反映されます。  
   
--   **視覚化**: プロジェクト内のクラスをダイアグラムに表示して、プロジェクトの構造を理解します。 プロジェクトの中で最も重要な部分に集中できるように、ダイアグラムをカスタマイズします。 ダイアグラムを保存すると、後からデモやドキュメントに使用できます。  
+- **視覚化**: プロジェクト内のクラスをダイアグラムに表示して、プロジェクトの構造を理解します。 プロジェクトの中で最も重要な部分に集中できるように、ダイアグラムをカスタマイズします。 ダイアグラムを保存すると、後からデモやドキュメントに使用できます。  
   
--   **リファクター**: メソッドのオーバーライド、識別子の名前変更、パラメーターのリファクター、インターフェイスと抽象クラスの実装を行います。  
+- **リファクター**: メソッドのオーバーライド、識別子の名前変更、パラメーターのリファクター、インターフェイスと抽象クラスの実装を行います。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [クラスと他の型の使用 (クラス デザイナー)](../ide/working-with-classes-and-other-types-class-designer.md)  

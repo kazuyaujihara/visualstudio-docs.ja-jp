@@ -15,36 +15,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3531fc79956b9c0f72d0dc5a333f1f9aedf5326d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 205fb184997130423072d556a60e1323a99e6ad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101458"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>方法: Visual Studio Tools for Office ランタイム再頒布可能パッケージをインストールする方法
   Visual Studio 2010 Tools for Office ランタイムは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の中で Microsoft Office developer tools を使用して作成されたソリューションを実行する各コンピューターにインストールする必要があります。 ランタイムは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、および Microsoft Office をインストールすると自動的にインストールされます。 詳細については、[Visual Studio Tools for Office runtime のインストール シナリオ](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)を参照してください。
 
  次の場合は、手動による以下のインストール手順を実行する必要があります。
 
--   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] をサーバーにインストールする必要がある場合。 たとえば、サーバー上のドキュメント レベルのソリューションを管理する <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> クラスを使用する場合です。
+- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] をサーバーにインストールする必要がある場合。 たとえば、サーバー上のドキュメント レベルのソリューションを管理する <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> クラスを使用する場合です。
 
--   Office ソリューションのその他の必須コンポーネントが既にインストールされているコンピューターにランタイムをインストールする必要がある場合。
+- Office ソリューションのその他の必須コンポーネントが既にインストールされているコンピューターにランタイムをインストールする必要がある場合。
 
     > [!NOTE]
     >  .NET Framework および [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] をインストールするには、開発コンピューターの管理者である必要があります。
 
 ## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Visual Studio Tools for Office ランタイムをインストールするには
 
-1.  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降をインストールします。
+1. [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降をインストールします。
 
-    -   [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]をダウンロードするには、[Microsoft .NET Framework 4 (Web インストーラー)](http://go.microsoft.com/fwlink/?LinkId=178957)を参照してください。
+    - [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]をダウンロードするには、[Microsoft .NET Framework 4 (Web インストーラー)](http://go.microsoft.com/fwlink/?LinkId=178957)を参照してください。
 
-    -   [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]をダウンロードするには、[Microsoft .NET Framework 4 Client Profile (Web インストーラー)](http://go.microsoft.com/fwlink/?LinkId=178958)を参照してください。
+    - [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]をダウンロードするには、[Microsoft .NET Framework 4 Client Profile (Web インストーラー)](http://go.microsoft.com/fwlink/?LinkId=178958)を参照してください。
 
-    -   [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]をダウンロードするには、[Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)を参照してください。
+    - [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]をダウンロードするには、[Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)を参照してください。
 
-2.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]をインストールするには、*vstor_redist.exe* を実行します。
+2. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]をインストールするには、*vstor_redist.exe* を実行します。
 
      これらのセットアップ ファイルは、[Visual Studio 2010 Tools for Office ランタイム](http://go.microsoft.com/fwlink/?LinkId=140384)からダウンロードできます。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] の必須コンポーネントは .NET Framework の場合と同じです。
 

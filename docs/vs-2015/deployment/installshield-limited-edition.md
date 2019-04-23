@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac447d3511365cf8e7f48344231d0ddb8d2a4374
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a05aba81292fba9520defe39af6977682452b850
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080632"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,10 +26,10 @@ InstallShield Limited Edition を使用し、セットアップ ファイルを�
   
 ### <a name="to-enable-installshield-limited-edition"></a>InstallShield Limited Edition を有効にするには  
   
-1.  メニュー バーで **[ファイル]**、 **[新規]**、 **[プロジェクト]** の順にクリックします。  
+1. メニュー バーで **[ファイル]**、 **[新規]**、 **[プロジェクト]** の順にクリックします。  
   
-2.  **[新しいプロジェクト]** ダイアログ ボックスで、 **[その他のプロジェクトの種類]** を展開し、 **[セットアップと配置]** ノードを選択します。  
+2. **[新しいプロジェクト]** ダイアログ ボックスで、 **[その他のプロジェクトの種類]** を展開し、 **[セットアップと配置]** ノードを選択します。  
   
-3.  テンプレート リストで、 **[InstallShield Limited Edition の有効化]** を選択し、 **[OK]** をクリックします。  
+3. テンプレート リストで、 **[InstallShield Limited Edition の有効化]** を選択し、 **[OK]** をクリックします。  
   
-4.  ブラウザー ウィンドウが開き、説明を読んで、 **[ダウンロード Web サイトにアクセスします。]** リンクをクリックします。
+4. ブラウザー ウィンドウが開き、説明を読んで、 **[ダウンロード Web サイトにアクセスします。]** リンクをクリックします。

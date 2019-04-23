@@ -18,12 +18,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a8fc28666a7b0c1d44ad36fabffa19974fea5956
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 275d3d0547d83e794801c45a7554d58e181d64e7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973604"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107061"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションの既定の Web ページをカスタマイズする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ ClickOnce アプリケーションの Web を発行するときに、Web ペー�
   
 ### <a name="to-customize-the-publish-web-page"></a>発行 Web ページをカスタマイズするには  
   
-1.  Web 上の場所に、ClickOnce アプリケーションを発行します。 詳細については、「[方法 :発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)」を参照してください。  
+1. Web 上の場所に、ClickOnce アプリケーションを発行します。 詳細については、「[方法 :発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)」を参照してください。  
   
-2.  Web サーバーでは、Visual Web Designer または別の HTML エディターで Publish.htm ファイルを開きます。  
+2. Web サーバーでは、Visual Web Designer または別の HTML エディターで Publish.htm ファイルを開きます。  
   
-3.  必要に応じて、ページをカスタマイズし、保存します。  
+3. 必要に応じて、ページをカスタマイズし、保存します。  
   
-4.  任意。 Visual Studio の発行のカスタマイズされた Web ページの上書きを防ぐためにオフにします。**後に配置 web ページを自動的に生成すべて発行**発行オプション ダイアログ ボックス。  
+4. 任意。 Visual Studio の発行のカスタマイズされた Web ページの上書きを防ぐためにオフにします。**後に配置 web ページを自動的に生成すべて発行**発行オプション ダイアログ ボックス。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   

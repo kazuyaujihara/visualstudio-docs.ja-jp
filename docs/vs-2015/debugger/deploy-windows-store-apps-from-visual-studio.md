@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 520113d97bdf41d750cad340c0ab8868eb85f603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978388"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116395"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Visual Studio からの Windows ストア アプリの配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
 
 - 別のアプリまたはメソッドによって起動される、デバッグ対象のアプリを配置します。
 
-##  <a name="BKMK_In_this_topic"></a> このトピックの内容
+## <a name="BKMK_In_this_topic"></a> このトピックの内容
  このトピックでは、次について説明します。
 
  [Windows ストア アプリの配置方法](#BKMK_How_to_deploy_a_Windows_Store_app)
@@ -49,25 +49,25 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
 
  [配置オプション](#BKMK_Deployment_options)
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Windows ストア アプリの配置方法
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Windows ストア アプリの配置方法
  アプリを手動で配置する手順はシンプルです。
 
-1.  リモート デバイスへ配置する場合は、アプリのスタートアップ プロジェクトのプロパティ プロジェクト ページに、デバイスの名前または IP アドレスを指定します。 (指定するステップはこのトピック内で後述)。
+1. リモート デバイスへ配置する場合は、アプリのスタートアップ プロジェクトのプロパティ プロジェクト ページに、デバイスの名前または IP アドレスを指定します。 (指定するステップはこのトピック内で後述)。
 
-2.  デバッガーの Visual Studio ツールバーで、 **[デバッグの開始]** ボタンの横のドロップダウン リストから配置ターゲットを選択します。
+2. デバッガーの Visual Studio ツールバーで、 **[デバッグの開始]** ボタンの横のドロップダウン リストから配置ターゲットを選択します。
 
      ![ローカル コンピューターで実行](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
-3.  **[ビルド]** メニューで **[配置]** を選択
+3. **[ビルド]** メニューで **[配置]** を選択
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> リモート デバイスの指定方法
+## <a name="BKMK_How_to_specify_a_remote_device"></a> リモート デバイスの指定方法
  **必要条件**
 
  アプリをリモート デバイスに配置するには
 
--   リモート デバイスに開発者ライセンスがインストールされている必要があります。
+- リモート デバイスに開発者ライセンスがインストールされている必要があります。
 
--   リモート デバイスには、Visual Studio リモート ツールをインストールする必要があり、リモート デバッグ モニターが動作している必要があります。
+- リモート デバイスには、Visual Studio リモート ツールをインストールする必要があり、リモート デバッグ モニターが動作している必要があります。
 
      配置では、リモート デバッガーのネットワーク チャネルを使用して、アプリのファイルをリモート デバイスに送信します。
 
@@ -101,7 +101,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
 
 8. リモート デバイスのネットワーク名を **[リモート コンピューター]** ボックスに入力するか、 **[検索]** をクリックし、 **[リモート デバッガー接続の選択]** ダイアログ ボックスでデバイスを選択します。
 
-##  <a name="BKMK_Deployment_options"></a> 配置オプション
+## <a name="BKMK_Deployment_options"></a> 配置オプション
  次の配置オプションを、スタートアップ プロジェクトのデバッグ プロパティ ページに設定できます。
 
  **ネットワーク Loopback を許可する**セキュリティ上の理由から、[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]にインストールされたデバイスへのネットワーク呼び出しを実行する標準的な方法でインストールされているアプリが許可されていません。 既定では、Visual Studio による配置では、配置されたアプリに対するこの規則の適用は免除されます。 この免除によって、1 台のコンピューター上で通信プロシージャをテストできます。 アプリを [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]に送信する前に、アプリを適用除外せずにテストする必要があります。

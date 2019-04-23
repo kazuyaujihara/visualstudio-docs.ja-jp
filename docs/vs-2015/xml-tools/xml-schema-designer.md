@@ -9,26 +9,25 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe81190bca91aba4655e551026458c9047739d66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 72d5defa8a9cef04a4564d8974859de024c97dea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977174"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108715"
 ---
 # <a name="xml-schema-designer"></a>XML スキーマ デザイナー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML スキーマ デザイナー (XSD デザイナー) は、スキーマ セットをさまざまな抽象レベルで視覚的に表現するためのグラフィカル ツールです。 XSD デザイナーには、次の主要コンポーネントがあります。    
   
--   [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)参照し、XML スキーマのツリーを移動し、検索を実行することができます。  
+- [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)参照し、XML スキーマのツリーを移動し、検索を実行することができます。  
   
--   [スタート ビュー](../xml-tools/start-view.md)の開始点には、XSD デザイナー; スタート ビューは、XSD デザイナーの他のビューに移動し、スキーマ セットの詳細を参照してください。  
+- [スタート ビュー](../xml-tools/start-view.md)の開始点には、XSD デザイナー; スタート ビューは、XSD デザイナーの他のビューに移動し、スキーマ セットの詳細を参照してください。  
   
--   [グラフ ビュー](../xml-tools/graph-view.md)スキーマ セットとスキーマ ノード間のリレーションシップの概要を確認することができます。  
+- [グラフ ビュー](../xml-tools/graph-view.md)スキーマ セットとスキーマ ノード間のリレーションシップの概要を確認することができます。  
   
--   [コンテンツ モデル ビュー](../xml-tools/content-model-view.md)単純および複雑な型、要素、グループ、属性、および属性グループを含む、ローカルとグローバル スキーマ ノードの詳細のグラフィカル表現を提供します。  
+- [コンテンツ モデル ビュー](../xml-tools/content-model-view.md)単純および複雑な型、要素、グループ、属性、および属性グループを含む、ローカルとグローバル スキーマ ノードの詳細のグラフィカル表現を提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [XML スキーマ エクスプローラー](../xml-tools/xml-schema-explorer.md)  

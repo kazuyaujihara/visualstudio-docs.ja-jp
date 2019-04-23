@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108717"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>モデル、クラス、およびリレーションシップについて
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ ms.locfileid: "58978412"
   
  DSL 定義図を並べ替えるには、次のことができます。  
   
--   メインのスワップし、ビューを使用して、参照、 **ツリーをここ**と**ツリーの分割**コマンド。 これらのコマンドを表示する 1 つのドメイン クラスを右クリックします。  
+- メインのスワップし、ビューを使用して、参照、 **ツリーをここ**と**ツリーの分割**コマンド。 これらのコマンドを表示する 1 つのドメイン クラスを右クリックします。  
   
--   再び ctrl キーを押しながら上と ctrl キーを押しながら下方向キーを押してでドメイン クラスとシェイプ クラスを並べ替えます。  
+- 再び ctrl キーを押しながら上と ctrl キーを押しながら下方向キーを押してでドメイン クラスとシェイプ クラスを並べ替えます。  
   
--   折りたたむか、各図形の右上にあるアイコンを使用してクラスを拡張します。  
+- 折りたたむか、各図形の右上にあるアイコンを使用してクラスを拡張します。  
   
--   ドメイン クラスの下部にあるマイナス記号 (-) をクリックして、ツリーの部分を折りたたみます。  
+- ドメイン クラスの下部にあるマイナス記号 (-) をクリックして、ツリーの部分を折りたたみます。  
   
 ## <a name="inheritance"></a>継承  
  ドメイン クラスは、継承を使用して定義することができます。 継承の派生を作成するには、継承ツールをクリックして、派生クラスをクリックしておよび基本クラスを順にクリックします。 モデル要素には、基本クラスから継承されたすべてのプロパティと共に、独自のドメイン クラスで定義されているすべてのプロパティがあります。 また、リレーションシップでは、そのロールを継承します。  

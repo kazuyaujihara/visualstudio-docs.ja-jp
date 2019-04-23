@@ -1,5 +1,5 @@
 ---
-title: '方法: spy++ を起動 |Microsoft Docs'
+title: '方法: Spy++ を起動 |Microsoft Docs'
 ms.date: 12/16/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91eda74b4f83f38434117ab1217d0a20d66d2842
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099144"
 ---
-# <a name="how-to-start-spy"></a>方法: Spy++ を起動する
+# <a name="how-to-start-spy"></a>方法: Spy++ の起動
 
 開始できます spy++ コマンド プロンプトまたは Visual Studio から。
 
@@ -30,8 +30,8 @@ ms.locfileid: "56712451"
 
 Spy++ は、次のコンポーネントが必要です。 選択すると、Visual Studio インストーラーからこれらのコンポーネントを選択することができます、**個々 のコンポーネント**タブをクリックし、次のコンポーネントを選択します。
 
-* デバッグとテスト選択**C++ のプロファイル ツール**
-* 開発アクティビティで、次のように選択します**Visual Studio c コア機能。**
+* デバッグとテスト選択**C++プロファイリング ツール**
+* 開発アクティビティで、次のように選択します**Visual StudioC++のコア機能。**
 
 変更を加えた場合は、これらのコンポーネントのインストールを指示します。
 
@@ -46,9 +46,9 @@ Spy++ が実行されるためいない、独立して開始した後は、Visua
 
 ## <a name="start-spy-at-a-command-prompt"></a>コマンド プロンプトで spy++ を起動します。
 
-1.  コマンド プロンプト ウィンドウで、spyxx.exe を含むフォルダーにディレクトリを変更します。 通常、このフォルダーへのパスには.\\ *Visual Studio インストール フォルダー*\Common7\Tools\\します。
+1. コマンド プロンプト ウィンドウで、spyxx.exe を含むフォルダーにディレクトリを変更します。 通常、このフォルダーへのパスには.\\ *Visual Studio インストール フォルダー*\Common7\Tools\\します。
 
-2.  入力**spyxx.exe**します。
+2. 入力**spyxx.exe**します。
 
 ## <a name="see-also"></a>関連項目
 - [Spy++ の使用](../debugger/using-spy-increment.md)

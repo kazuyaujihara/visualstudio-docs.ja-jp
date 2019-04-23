@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 493193e24fcee2b3f3290546abc656faee7d88a7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976569"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079851"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>単体テストを UML 拡張機能で実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,20 +50,20 @@ ms.locfileid: "58976569"
   
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
-##  <a name="Host"></a> VSIX 拡張機能の単体テストの設定  
+## <a name="Host"></a> VSIX 拡張機能の単体テストの設定  
  モデリング拡張機能のメソッドは通常、既に開いている図で行います。 メソッドでは、 **IDiagramContext** や **ILinkedUndoContext**などの MEF インポートを使います。 テストを実行する前にテスト環境でこのコンテキストを設定する必要があります。  
   
 #### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で実行される単体テストを設定するには  
   
-1.  UML 拡張プロジェクトおよび単体テスト プロジェクトを作成します。  
+1. UML 拡張プロジェクトおよび単体テスト プロジェクトを作成します。  
   
-    1.  **UML 拡張プロジェクト。** 通常、これはコマンド、ジェスチャ、または検証プロジェクト テンプレートを使って作成します。 たとえばを参照してください[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  
+    1. **UML 拡張プロジェクト。** 通常、これはコマンド、ジェスチャ、または検証プロジェクト テンプレートを使って作成します。 たとえばを参照してください[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  
   
-    2.  **単体テスト プロジェクトです。** 詳しくは、「[コードの単体テストUnit Test Your Code](../test/unit-test-your-code.md)」をご覧ください。  
+    2. **単体テスト プロジェクトです。** 詳しくは、「[コードの単体テストUnit Test Your Code](../test/unit-test-your-code.md)」をご覧ください。  
   
-2.  UML モデリング プロジェクトを含む [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。 このソリューションは、テストの初期段階として使用します。 Visual Studio ソリューションは、UML 拡張機能とその単体テストを記述するソリューションとは別にする必要があります。 詳細については、次を参照してください。 [UML モデリング プロジェクトおよびダイアグラム](../modeling/create-uml-modeling-projects-and-diagrams.md)します。  
+2. UML モデリング プロジェクトを含む [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。 このソリューションは、テストの初期段階として使用します。 Visual Studio ソリューションは、UML 拡張機能とその単体テストを記述するソリューションとは別にする必要があります。 詳細については、次を参照してください。 [UML モデリング プロジェクトおよびダイアグラム](../modeling/create-uml-modeling-projects-and-diagrams.md)します。  
   
-3.  **UML 拡張プロジェクトで**、.csproj ファイルをテキストとして編集し、次の行で `true`が表示されていることを確認します。  
+3. **UML 拡張プロジェクトで**、.csproj ファイルをテキストとして編集し、次の行で `true`が表示されていることを確認します。  
   
     ```  
     <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>  
@@ -72,33 +72,33 @@ ms.locfileid: "58976569"
   
      .csproj ファイルをテキストとして編集するには、ソリューション エクスプローラーにあるプロジェクトのショートカット メニューで **[プロジェクトのアンロード]** をクリックします。 その後、 **[.csproj の編集]** をクリックします。 テキストを編集した後、 **[プロジェクトの再読み込み]** をクリックします。  
   
-4.  UML 拡張プロジェクトで、次の行を **Properties\AssemblyInfo.cs**に追加します。 これにより、単体テストがテスト対象のメソッドにアクセスできるようになります。  
+4. UML 拡張プロジェクトで、次の行を **Properties\AssemblyInfo.cs**に追加します。 これにより、単体テストがテスト対象のメソッドにアクセスできるようになります。  
   
     ```csharp  
     [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
     ```  
   
-5.  **単体テスト プロジェクトで**、次のアセンブリ参照を追加します。  
+5. **単体テスト プロジェクトで**、次のアセンブリ参照を追加します。  
   
-    -   *UML 拡張プロジェクト*  
+    - *UML 拡張プロジェクト*  
   
-    -   **EnvDTE.dll**  
+    - **EnvDTE.dll**  
   
-    -   **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
+    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
   
-    -   **Microsoft.VisualStudio.ComponentModelHost.dll**  
+    - **Microsoft.VisualStudio.ComponentModelHost.dll**  
   
-    -   **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
+    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
   
-    -   **Microsoft.VisualStudio.Uml.Interfaces.dll**  
+    - **Microsoft.VisualStudio.Uml.Interfaces.dll**  
   
-    -   **Microsoft.VSSDK.TestHostFramework.dll**  
+    - **Microsoft.VSSDK.TestHostFramework.dll**  
   
-6.  初期化メソッドを含む各テスト メソッドに、属性 `[HostType("VS IDE")]` をプレフィックスとして含めます。  
+6. 初期化メソッドを含む各テスト メソッドに、属性 `[HostType("VS IDE")]` をプレフィックスとして含めます。  
   
      これにより、テストが Visual Studio の実験的なインスタンスで実行されることが保証されます。  
   
-##  <a name="DTE"></a> DTE および ModelStore へのアクセス  
+## <a name="DTE"></a> DTE および ModelStore へのアクセス  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]でモデリング プロジェクトを開くメソッドを記述します。 通常は、各テストの実行で 1 度だけソリューションを開きます。 メソッドを 1 度だけ実行するには、メソッドに `[AssemblyInitialize]` 属性をプレフィックスとして付けます。 また、各テスト メソッドで [HostType("VS IDE")] 属性も必要です。  例えば:  
   
 ```csharp  
@@ -166,7 +166,7 @@ namespace UnitTests
   
  <xref:EnvDTE.Project?displayProperty=fullName> のインスタンスがモデリング プロジェクトを表している場合、<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.IModelingProject> との間でそれをキャストできます。  
   
-##  <a name="Opening"></a> モデル図を開く  
+## <a name="Opening"></a> モデル図を開く  
  各テストまたはテストのクラスでは、開いている図で作業することがよくあります。 次の例では、このテスト クラスの他のメソッドよりも先にこのメソッドを実行する `[ClassInitialize]` 属性を使用します。 ここでも、各テスト メソッドには属性 [HostType("VS IDE")] も必要です。  
   
 ```csharp  
@@ -211,7 +211,7 @@ public class MyTestClass
   
 ```  
   
-##  <a name="UiThread"></a> モデルの変更を UI スレッドで実行します。  
+## <a name="UiThread"></a> モデルの変更を UI スレッドで実行します。  
  テストまたはテストのメソッドがモデル ストアを変更する場合は、それらをユーザー インターフェイス スレッドで実行する必要があります。 こうしない場合、 `AccessViolationException`が表示される可能性があります。 起動する呼び出しの中の、テスト メソッドのコードを囲みます。  
   
 ```  
@@ -231,7 +231,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
     }  
 ```  
   
-##  <a name="MEF"></a> コマンド、ジェスチャ、およびその他の MEF コンポーネントのテスト  
+## <a name="MEF"></a> コマンド、ジェスチャ、およびその他の MEF コンポーネントのテスト  
  MEF コンポーネントは、 `[Import]` 属性を持つプロパティ宣言を使用します。プロパティの値は、そのホストにより設定されます。 通常、そのようなプロパティには IDiagramContext、SVsServiceProvider、および ILinkedUndoContext が含まれます。 これらのいずれかのプロパティを使用するメソッドをテストする場合、テストでメソッドを実行する前にその値を設定する必要があります。 たとえば、次のコードのようなコマンド拡張機能を記述したとします。  
   
 ```  

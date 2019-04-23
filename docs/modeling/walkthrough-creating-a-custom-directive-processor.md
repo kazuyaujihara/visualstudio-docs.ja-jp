@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195126"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649109"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>チュートリアル: カスタム ディレクティブ プロセッサの作成
 
@@ -622,7 +622,7 @@ End Property
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\*.0\TextTemplating\DirectiveProcessors
 ```
 
-64 ビット システムの場合、レジストリの場所は次のとおりです。
+64 ビット システムの場合、レジストリは次の場所にあります。
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplating\DirectiveProcessors
@@ -654,22 +654,19 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      レジストリ キーの値は次のようになります。
 
-
    | 名前 | 型 | データ |
    |-|-|-|
-   | (既定) | REG_SZ | (値の設定なし) |
+   | (既定) | REG_SZ | (値が設定されていません) |
    | クラス | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | CodeBase | REG_SZ | <strong>\<ソリューションへのパス></strong>CustomDP\bin\Debug\CustomDP.dll |
 
      アセンブリを GAC に追加した場合は、値を次のように設定します。
 
-
    | 名前 | 型 | データ |
    |-|-|-|
-   | (既定) | REG_SZ | (値の設定なし) |
+   | (既定) | REG_SZ | (値が設定されていません) |
    | クラス | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
-
 
 6. Visual Studio を再起動します。
 
@@ -731,7 +728,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-create-a-text-template-to-test-the-directive-processor"></a>テキスト テンプレートを作成してディレクティブ プロセッサをテストするには
 
-1. Visual Studio で、TemplateTest という名前の C# または Visual Basic クラス ライブラリ プロジェクトを作成します。
+1. Visual Studio で、TemplateTest という名前の C# クラス ライブラリ プロジェクトまたは Visual Basic クラス ライブラリ プロジェクトを作成します。
 
 2. TestDP.tt という名前の新しいテキスト テンプレート ファイルを追加します。
 

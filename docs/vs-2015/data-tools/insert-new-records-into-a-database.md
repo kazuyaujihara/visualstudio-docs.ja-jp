@@ -20,17 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 13f87f5ffaa255fc2c1c0f53b527ecbbceb8e8ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 001f3a3c74f792fbe3028b6915cb350d359221a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043137"
 ---
 # <a name="insert-new-records-into-a-database"></a>データベースに新しいレコードを挿入する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 使用することができますをデータベースに新しいレコードを挿入するのには、`TableAdapter.Update`メソッド、または TableAdapter の DBDirect メソッドのいずれか (具体的には、`TableAdapter.Insert`メソッド)。
   
  アプリケーションでは、Tableadapter を使用しない場合は、コマンド オブジェクトを使用することができます (たとえば、 <xref:System.Data.SqlClient.SqlCommand>)、データベースに新しいレコードを挿入します。  
@@ -63,7 +62,7 @@ ms.locfileid: "58975463"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>TableAdapter.Insert メソッドを使用して、データベースに新しいレコードを挿入するには  
   
--   呼び出す TableAdapter の`Insert`メソッド、パラメーターとして各列の値で渡します。  
+- 呼び出す TableAdapter の`Insert`メソッド、パラメーターとして各列の値で渡します。  
   
     > [!NOTE]
     >  使用可能なインスタンスがいない場合に使用する TableAdapter をインスタンス化します。  
@@ -78,7 +77,7 @@ ms.locfileid: "58975463"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>コマンド オブジェクトを使用して、データベースに新しいレコードを挿入するには  
   
--   新しいコマンド オブジェクトを作成し、設定、 `Connection`、 `CommandType`、および`CommandText`プロパティ。  
+- 新しいコマンド オブジェクトを作成し、設定、 `Connection`、 `CommandType`、および`CommandText`プロパティ。  
   
      [!code-csharp[VbRaddataSaving#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#16)]
      [!code-vb[VbRaddataSaving#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#16)]  

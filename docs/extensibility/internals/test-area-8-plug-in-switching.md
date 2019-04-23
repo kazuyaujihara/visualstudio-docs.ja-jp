@@ -1,5 +1,5 @@
 ---
-title: テスト領域 8:プラグインの切り替え |Microsoft Docs
+title: 'テスト領域 8: プラグインの切り替え |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,22 +11,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002aa5cf9e1324eb81996a5a14f7a1933a26ba9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b308fb97a55f61645d038c9a81445f4561415e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047881"
 ---
-# <a name="test-area-8-plug-in-switching"></a>テスト領域 8:プラグインの切り替え
+# <a name="test-area-8-plug-in-switching"></a>テスト領域 8: プラグインの切り替え
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) では、ユーザー インターフェイス (UI) を持つ現在のソース管理プラグインを変更します。 このテストの領域は、ソリューションのソース管理を使用するプラグインの選択のプロセスのテスト_ケースを提供します。
 
 ## <a name="command-menu-access"></a>コマンド メニューへのアクセス
  次[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境のメニューのパスは、テスト_ケースで使用されます。
 
--   現在ソース管理プラグイン:**ツール** -> **オプション** -> **ソース管理** -> **プラグインの選択**します。
+- 現在ソース管理プラグイン:**ツール** -> **オプション** -> **ソース管理** -> **プラグインの選択**します。
 
--   ソースの変更管理のバインディング。**ファイル** -> **ソース管理** -> **ソース管理の変更**.
+- ソースの変更管理のバインディング。**ファイル** -> **ソース管理** -> **ソース管理の変更**.
 
 ## <a name="common-expected-behavior"></a>共通の想定される動作
  ソース管理ソリューションのプラグインの変更は、Visual Studio を終了するか、またはソリューションを再読み込みせず可能性があります。 さらに、現在のソース管理プラグインは、そのソリューションが読み込まれるときに、ソリューションで使用される 1 つに自動的に変更します。
@@ -39,7 +39,6 @@ ms.locfileid: "56605173"
 #### <a name="expected-behavior"></a>想定される動作
  ユーザーには、ソース管理下にあるソリューションが読み込まれたら、ソリューションが自動的に読み込まれ、適切なソース管理プラグインは、現在選択されています。
 
-
 | アクション | テスト ステップ | 予想される結果を確認します |
 | - | - | - |
 | 自動のソース管理プラグインの変更 | 1.現在テスト プラグインの選択 (**ツール** -> **オプション** -> **ソース管理** -> **プラグイン選択**)。<br />2.新しいプロジェクトを作成します。<br />3.ソース管理にソリューションを追加します。<br />4.別のプラグインを選択します (たとえば、 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)])。<br />5.ソリューションのアンロードのプロンプトを受け入れます。<br />6.ディスクからソリューションを再度開きます。 | ソリューションが開かれます。<br /><br /> テスト対象プラグインは、現在のソース管理プラグインです。 |
@@ -48,7 +47,6 @@ ms.locfileid: "56605173"
 
 #### <a name="expected-behavior"></a>想定される動作
  ソリューションは、その関連ソース管理プラグインを変更できます。
-
 
 | アクション | テスト ステップ | 予想される結果を確認します |
 |----------------------------------| - | - |

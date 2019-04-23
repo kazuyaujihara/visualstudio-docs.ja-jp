@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973585"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091481"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>方法: 使用する XML スキーマを選択する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML エディターはスキーマ キャッシュを提供します。このキャッシュは %InstallDir%\Xml\Schemas ディレクトリに配置されています。 スキーマ キャッシュには、IntelliSense と XML ドキュメントの検証に使用される既知の XML スキーマが格納されています。  
   
  **スキーマ**ドキュメント プロパティを使用して、1 つまたは複数 XML スキーマ定義言語 (XSD) スキーマを使用するを選択します。 このプロパティによって、スキーマ キャッシュにあるスキーマの選択、またはキャッシュ内に置かれていないスキーマの指定が可能になります。  
@@ -51,23 +50,23 @@ XML エディターはスキーマ キャッシュを提供します。このキ
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>XML スキーマをスキーマ キャッシュに追加するには  
   
-1.  ドキュメントのプロパティ ウィンドウでのボタンをクリックします。、**スキーマ**フィールド。  
+1. ドキュメントのプロパティ ウィンドウでのボタンをクリックします。、**スキーマ**フィールド。  
   
-2.  **[追加]** をクリックします。  
+2. **[追加]** をクリックします。  
   
      開き、 **XSD スキーマを開く**ダイアログ。  
   
-3.  スキーマ キャッシュに追加するスキーマを参照し、選択します。  
+3. スキーマ キャッシュに追加するスキーマを参照し、選択します。  
   
-4.  **[開く]** をクリックします。  
+4. **[開く]** をクリックします。  
   
      スキーマに追加するスキーマのキャッシュし、は、**使用**列の値に設定されて**このスキーマを使用して、** します。  
   
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>スキーマ キャッシュにある XML スキーマを削除するには  
   
-1.  ドキュメントのプロパティ ウィンドウでのボタンをクリックします。、**スキーマ**フィールド。  
+1. ドキュメントのプロパティ ウィンドウでのボタンをクリックします。、**スキーマ**フィールド。  
   
-2.  クリックして削除するスキーマを選択**削除**します。  
+2. クリックして削除するスキーマを選択**削除**します。  
   
      スキーマは、メモリ内のスキーマ キャッシュから削除されますが、ファイル システムからは削除されません。  
   

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d5749a4bd738d6ec7edbf926542dbde0eb59db6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4f9c46066393a930f6f30208940f0d18b3ed0883
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685548"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665575"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 ドキュメントのこの位置でテキストのサイズを取得します。
@@ -52,8 +52,7 @@ int GetSize( 
 
 ## <a name="remarks"></a>Remarks
 
- [C++ のみ]特定の値が望ましくない場合は、パラメーターの場合は NULL を渡します。
-
+ [C++のみ]特定の値が望ましくない場合は、パラメーターの場合は NULL を渡します。
 
  [C#のみ]両方のパラメーターを指定する必要があります。
 

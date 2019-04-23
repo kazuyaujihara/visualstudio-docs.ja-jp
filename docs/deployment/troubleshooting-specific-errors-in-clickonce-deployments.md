@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43648fb87202e3f61342bcabfc3acb55541a9985
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627975"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042382"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 配置の固有のエラーのトラブルシューティング
 この記事では、展開するときに発生する可能性がある次の一般的なエラーを示します、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションでは、各問題を解決する手順を示します。
 
 ## <a name="general-errors"></a>一般的なエラー
 
-#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>ときに何も問題が発生すると、アプリケーション ファイルを検索しようとするまたは Internet Explorer で、XML を表示または実行または名前を付けて保存 ダイアログ ボックスが表示されます。
+#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>アプリケーション ファイルを配置しようとしたときに、何も起きない、または XML が Internet Explorer に表示される、または「実行または名前を付けて保存」のダイアログ ボックスが表示される。
  このエラーは、サーバーまたはクライアントに正しく登録されていないコンテンツの種類 (MIME の種類とも呼ばれます) による可能性があります。
 
  まずに関連付けるサーバーが構成されていることを確認、 *.application*コンテンツを含む拡張機能の種類「/x ms-アプリケーションです」。
@@ -41,7 +41,7 @@ ms.locfileid: "56627975"
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>エラー メッセージでは、"アプリケーションを取得できません。 ファイルの展開が見つかりません"または「アプリケーションのダウンロードが中断された、ネットワーク エラーを確認し、後でもう一度お試しください」
  このメッセージを示すによって参照される 1 つまたは複数のファイル、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]マニフェストをダウンロードすることはできません。 このエラーをデバッグする最も簡単な方法は、URL をダウンロードしようとするする[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]をダウンロードできないことを示します。 考えられる原因を次に示します。
 
-- かどうか、ログ ファイルは "(403) Forbidden"または"(404) Not found"がこのファイルのダウンロードをブロックしないようにする Web サーバーが構成されていることを確認します。 詳細については、「[ClickOnce 配置でのサーバーおよびクライアント構成の問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)」を参照してください。
+- ログ ファイルが "(403) Forbidden" または "(404) Not found" かどうか、Web サーバーがこのファイルのダウンロードをブロックしないように構成されていることを確認します。 詳細については、「[ClickOnce 配置でのサーバーおよびクライアント構成の問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)」を参照してください。
 
 - 場合、 *.config*ファイルがサーバーによってブロックされてを参照してください"をインストールしようとすると、エラーをダウンロード、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .config ファイルがあるアプリケーション"この記事で後述します。
 
@@ -56,9 +56,9 @@ ms.locfileid: "56627975"
 
  設定することも必要があります、コンテンツの種類 (MIME の種類とも呼ばれます) は、適切の .application、.manifest、および .deploy ファイル。 詳細については、Web サーバーのマニュアルを参照してください。
 
- 詳細については、「Windows Server 2003:: ロックダウンされたコンテンツの種類」を参照してください[ClickOnce 配置でサーバーとクライアントの構成に関する問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)します。
+ 詳細については、次を参照してください。"Windows Server 2003。ロックされたコンテンツの種類" [ClickOnce 配置でサーバーとクライアントの構成に関する問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)します。
 
-#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>エラー メッセージ:「アプリケーションの形式が正しくありません」。ログ ファイルには、「XML 署名が無効です」が含まれています。
+#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>エラー メッセージ「アプリケーションの形式が正しくありません」。ログ ファイルには、「XML 署名が無効です」が含まれています。
  マニフェスト ファイルを更新して、再度署名されたことを確認してください。 使用して、アプリケーションを再発行[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]または Mage を使用して、もう一度アプリケーションに署名します。
 
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>サーバーで、アプリケーションの更新が、クライアントは、更新プログラムをダウンロードしていません。
@@ -70,20 +70,20 @@ ms.locfileid: "56627975"
 
 - [スタート] メニューにアプリケーションをもう一度起動してみてください。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] バック グラウンドで更新を検出した可能性がありますが、次回の起動時に、bits をインストールするように求められます。
 
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>更新中に次のログ エントリを持つエラーが発生する:「デプロイメント内の参照は、アプリケーション マニフェストで定義されている id に一致しない」
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>更新中には、次のログ エントリがあるエラーが表示されます。「デプロイメント内の参照は、アプリケーション マニフェストで定義されている id に一致しない」
  展開およびアプリケーション マニフェストでは、手動で編集し、両者を同期するように 1 つのマニフェストにアセンブリの id の説明が原因となったために、このエラーが発生する可能性があります。 アセンブリの id は、その名前、バージョン、カルチャ、および公開キー トークンで構成されます。 マニフェストの identity の説明を確認し、任意の相違点を修正します。
 
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>最初にローカル ディスクまたは CD-ROM からのアクティブ化は成功しますが、[スタート] メニューからの後続のアクティベーションが成功しなかった
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置プロバイダーの URL を使用して、アプリケーションの更新プログラムを受信します。 URL を指している場所が正しいことを確認します。
 
-#### <a name="error-cannot-start-the-application"></a>エラー:「アプリケーションを起動できません」
+#### <a name="error-cannot-start-the-application"></a>エラー :「アプリケーションを起動できません」
  このエラー メッセージが通常にこのアプリケーションのインストールに問題があることを示して、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]を格納します。 アプリケーション エラーがあるか、ストアが破損しています。 ログ ファイルわかる場合がありますエラーが発生しました。
 
  次の操作を行う必要があります。
 
--   配置マニフェストの id、アプリケーション マニフェストの id、およびメイン アプリケーションの EXE の id がすべて一意であることを確認します。
+- 配置マニフェストの id、アプリケーション マニフェストの id、およびメイン アプリケーションの EXE の id がすべて一意であることを確認します。
 
--   ファイルのパスが 100 文字を超えていないことを確認します。 アプリケーションには長すぎるファイル パスが含まれている場合は、格納できるパスの最大の制限を超える可能性があります。 再インストールして、パスを短くしてください。
+- ファイルのパスが 100 文字を超えていないことを確認します。 アプリケーションには長すぎるファイル パスが含まれている場合は、格納できるパスの最大の制限を超える可能性があります。 再インストールして、パスを短くしてください。
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>アプリケーション構成ファイルで PrivatePath 設定は適用されません。
  PrivatePath (Fusion のプローブ パス) を使用するには、アプリケーションは、完全な信頼のアクセス許可を要求する必要があります。 完全な信頼を要求し、もう一度お試しに、アプリケーション マニフェストを変更してください。
@@ -101,27 +101,26 @@ ms.locfileid: "56627975"
 
  URL を使用してパブリッシュする場合は、セットアップ先のコンピューターに有効になっている FrontPage Server Extensions を確認します。
 
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>エラー メッセージ: Web サイトを作成できません。 '\<サイト >'。 FrontPage Server Extensions と通信するためのコンポーネントがインストールされていません。
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>エラー メッセージWeb サイトを作成できません。 '\<サイト >'。 FrontPage Server Extensions と通信するためのコンポーネントがインストールされていません。
  Microsoft Visual Studio Web Authoring コンポーネントから公開しているコンピューターにインストールされているがあることを確認します。 Express ユーザーは、このコンポーネントは、既定ではインストールされません。 詳細については、「[http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310)」を参照してください。
 
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>エラー メッセージ: ファイルが見つかりませんでした ' Microsoft.Windows.Common-コントロール、バージョン 6.0.0.0、カルチャを = = *、PublicKeyToken = 6595b64144ccf1df、ProcessorArchitecture =\*型 = win32'
- Visual スタイルが有効になっている WPF アプリケーションを発行しようとしたときに、このエラー メッセージが表示されます。 この問題を解決するには、次を参照してください。[方法: Visual スタイルが有効な WPF アプリケーションを発行](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)します。
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>エラー メッセージファイルが見つかりませんでした ' Microsoft.Windows.Common-コントロール、バージョン 6.0.0.0、カルチャを = = *、PublicKeyToken = 6595b64144ccf1df、ProcessorArchitecture =\*型 = win32'
+ Visual スタイルが有効になっている WPF アプリケーションを発行しようとしたときに、このエラー メッセージが表示されます。 この問題を解決するには、次を参照してください。[方法。Visual スタイルが有効になっている WPF アプリケーションを発行](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)します。
 
 ## <a name="using-mage"></a>Mage を使用します。
 
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>証明書ストアと空白のメッセージを受信したボックス内の証明書に署名しようとしています。
  **署名** ダイアログ ボックスがあります。
 
--   選択**格納された証明書を使用してサインイン**と
+- 選択**格納された証明書を使用してサインイン**と
 
--   は、一覧から証明書を選択します。最初の証明書は、既定で選択します。
+- は、一覧から証明書を選択します。最初の証明書は、既定で選択します。
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>「署名のない」ボタンをクリックすると、例外が発生します。
  この問題は、既知のバグです。 すべて[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]マニフェストが署名するために必要です。 署名のオプションのいずれかを選択し、 **OK**します。
 
 ## <a name="additional-errors"></a>その他のエラー
  次の表は、クライアント コンピューターのユーザーがインストールするときに表示される一般的なエラー メッセージ、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション。 エラーの最も考えられる原因の説明の横にある各エラー メッセージが表示されます。
-
 
 | エラー メッセージ | 説明 |
 | - | - |

@@ -11,12 +11,12 @@ ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 12c57f83e992750ddc12c50fafb2065345022f80
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077720"
 ---
 # <a name="adding-a-toolbar"></a>ツール バーの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58973609"
   
 ## <a name="creating-a-toolbar-for-the-ide"></a>IDE のツールバーの作成  
   
-1.  ToolbarTestCommandPackage.vsct の Symbols セクションを探します。 GuidToolbarTestCommandPackageCmdSet をという名前の GuidSymbol 要素では、次のようにツールバーとツールバー、グループの宣言を追加します。  
+1. ToolbarTestCommandPackage.vsct の Symbols セクションを探します。 GuidToolbarTestCommandPackageCmdSet をという名前の GuidSymbol 要素では、次のようにツールバーとツールバー、グループの宣言を追加します。  
   
     ```xml  
     <IDSymbol name="Toolbar" value="0x1000" />  
@@ -45,7 +45,7 @@ ms.locfileid: "58973609"
   
     ```  
   
-2.  コマンドのセクションの上部にあるメニューのセクションを作成します。 メニュー セクションで、ツールバーを定義するには、メニュー要素を追加します。  
+2. コマンドのセクションの上部にあるメニューのセクションを作成します。 メニュー セクションで、ツールバーを定義するには、メニュー要素を追加します。  
   
     ```xml  
     <Menus>  
@@ -62,7 +62,7 @@ ms.locfileid: "58973609"
   
      ツールバーは、サブメニューのような入れ子にすることはできません。 そのため、親グループを割り当てるにはありません。 またがありません、優先順位を設定するため、ユーザーがツールバーを移動できます。 通常、ツールバーの初期配置がプログラムで定義されているが、ユーザーがそれ以降の変更が保存されます。  
   
-3.  [グループ](../extensibility/groups-element.md)セクションでは、既存のグループ エントリの後に定義、[グループ](../extensibility/group-element.md)ツールバーのコマンドを格納する要素。  
+3. [グループ](../extensibility/groups-element.md)セクションでは、既存のグループ エントリの後に定義、[グループ](../extensibility/group-element.md)ツールバーのコマンドを格納する要素。  
   
     ```xml  
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"  
@@ -71,7 +71,7 @@ ms.locfileid: "58973609"
     </Group>  
     ```  
   
-4.  ツールバーの表示 ボタンを作成します。 [ボタン] セクションで、ツールバーにボタンの親ブロックに置き換えます。 結果として得られるボタン ブロックは、このようになります。  
+4. ツールバーの表示 ボタンを作成します。 [ボタン] セクションで、ツールバーにボタンの親ブロックに置き換えます。 結果として得られるボタン ブロックは、このようになります。  
   
     ```xml  
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">  
@@ -85,11 +85,11 @@ ms.locfileid: "58973609"
   
      既定では、ツールバーにコマンドが存在しない場合に表示されません。  
   
-5.  プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。  
+5. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。  
   
-6.  ツールバーの一覧を取得する Visual Studio のメニュー バーを右クリックします。 選択**テスト ツールバー**します。  
+6. ツールバーの一覧を取得する Visual Studio のメニュー バーを右クリックします。 選択**テスト ツールバー**します。  
   
-7.  ファイル アイコンには、検索の右側にアイコンとして、ツールバーがわかります。 示すメッセージ ボックスが表示アイコンをクリックすると**ToolbarTestCommandPackage します。Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+7. ファイル アイコンには、検索の右側にアイコンとして、ツールバーがわかります。 示すメッセージ ボックスが表示アイコンをクリックすると**ToolbarTestCommandPackage します。Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
   
 ## <a name="see-also"></a>関連項目  
  [コマンド、メニュー、およびツール バー](../extensibility/internals/commands-menus-and-toolbars.md)

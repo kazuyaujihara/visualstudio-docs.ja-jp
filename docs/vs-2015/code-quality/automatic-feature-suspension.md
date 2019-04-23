@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976529"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045983"
 ---
 # <a name="automatic-feature-suspension"></a>自動機能の中断
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "58976529"
 
  メモリ不足の状態で、以下の処理が行われます。
 
--   Visual C# および Visual Basic の完全なソリューション分析は無効です。
+- Visual C# および Visual Basic の完全なソリューション分析は無効です。
 
--   [ガベージ コレクション](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)Visual C# と Visual Basic (GC) の待機時間の短いモードが無効になっています。
+- [ガベージ コレクション](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)Visual c# と Visual Basic (GC) の待機時間の短いモードが無効になっています。
 
--   Visual Studio のキャッシュがフラッシュされます。
+- Visual Studio のキャッシュがフラッシュされます。
 
 ## <a name="improve-visual-studio-performance"></a>Visual Studio のパフォーマンスを向上させる
  ヒントやテクニックが大規模なソリューションまたはメモリ不足の状態を扱うときは、Visual Studio のパフォーマンスを向上させる方法については、[大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)を参照してください。
@@ -48,11 +48,11 @@ ms.locfileid: "58976529"
 
 Visual Studio のすべてのキャッシュは、すぐに空になりますが、現在の開発セッションを続行するか、または Visual Studio を再起動する場合の再作成が開始されます。 フラッシュされたキャッシュには、次の機能のキャッシュが含まれます。
 
--   [すべての参照の検索]
+- [すべての参照の検索]
 
--   移動
+- 移動
 
--   使用して追加します。
+- 使用して追加します。
 
 さらに、Visual Studio の内部操作のために使用するキャッシュもクリアされます。
 

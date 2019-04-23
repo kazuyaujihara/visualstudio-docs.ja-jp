@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091565"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML コマンド テーブル (.vsct) ファイルを設計します。
 XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマンドの項目の外観とレイアウトについて説明します。 コマンドの項目には、ボタン、コンボ ボックス、メニューのツールバー、およびコマンドのアイテムのグループが含まれます。 この記事では、XML コマンド テーブルのファイル、コマンドの項目、メニューの影響、およびそれらを作成する方法について説明します。
@@ -25,7 +25,7 @@ XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマン
 
  実行して新しい VSPackage を作成する場合、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]パッケージのテンプレートがテンプレートによって生成、 *.vsct*メニュー コマンド、ツール ウィンドウ、または、選択内容に応じて、カスタム エディターの必要な要素を持つファイル。 これは、 *.vsct*ファイルは、特定の VSPackage の要件を満たす、変更できます。 変更する方法の例については、 *.vsct*ファイルを参照してください[メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)します。
 
- 新しいを作成するには、空白 *.vsct*ファイルを参照してください[方法。作成、 *.vsct*ファイル](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)します。 作成されると、ファイルに、コマンドの項目のレイアウトを記述する XML 要素、属性、および値を追加します。 詳細な XML スキーマでは、、 [VSCT XML スキーマ リファレンス](../../extensibility/vsct-xml-schema-reference.md)を参照してください。
+ 新しいを作成するには、空白 *.vsct*ファイルを参照してください[方法。作成、 *.vsct*ファイル](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)します。 作成されると、ファイルに、コマンドの項目のレイアウトを記述する XML 要素、属性、および値を追加します。 詳細な XML スキーマでは、次を参照してください。、 [VSCT XML スキーマ リファレンス](../../extensibility/vsct-xml-schema-reference.md)します。
 
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc と .vsct ファイルの間の相違点
  XML の背後にある意味でタグの中に、 *.vsct*ファイルは、現在は非推奨では、そのタグと同じ *.ctc*ファイル形式では、その実装は少し異なります。
@@ -40,7 +40,7 @@ XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマン
 
 - 値は、項目の属性として格納されます。
 
-- コマンドのフラグを個別に格納されているまたは積み上げことができます。  積み上げコマンド フラグでただし、IntelliSense は機能しません。 コマンドのフラグの詳細については、、 [CommandFlag 要素](../../extensibility/command-flag-element.md)を参照してください。
+- コマンドのフラグを個別に格納されているまたは積み上げことができます。  積み上げコマンド フラグでただし、IntelliSense は機能しません。 コマンドのフラグの詳細については、次を参照してください。、 [CommandFlag 要素](../../extensibility/command-flag-element.md)します。
 
 - 分割のドロップダウン リストから、combos など、複数の種類を指定することができます。
 
@@ -98,19 +98,19 @@ XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマン
 ## <a name="vsct-file-design-guidelines"></a>.vsct ファイルのデザイン ガイドライン
  正常に設計、 *.vsct*ファイルで、これらのガイドラインに従ってください。
 
--   グループでのみコマンドを配置することができます、メニューのでのみのグループを配置できるおよびメニューは、グループにのみ配置できます。 メニューにのみは実際には、IDE では、グループに表示され、コマンドはできません。
+- グループでのみコマンドを配置することができます、メニューのでのみのグループを配置できるおよびメニューは、グループにのみ配置できます。 メニューにのみは実際には、IDE では、グループに表示され、コマンドはできません。
 
--   サブメニューは、メニューに直接割り当てることはできませんが、メニューにさらに割り当てられているグループに割り当てる必要があります。
+- サブメニューは、メニューに直接割り当てることはできませんが、メニューにさらに割り当てられているグループに割り当てる必要があります。
 
--   1 つの親グループまたはその定義のディレクティブの親フィールドを使用してメニュー コマンド、サブメニュー、およびグループを割り当てることができます。
+- 1 つの親グループまたはその定義のディレクティブの親フィールドを使用してメニュー コマンド、サブメニュー、およびグループを割り当てることができます。
 
--   ディレクティブは、親フィールドを通じてのみコマンド テーブルを整理すると、重要な制限があります。 オブジェクトを定義するディレクティブでは、1 つだけの親引数を実行できます。
+- ディレクティブは、親フィールドを通じてのみコマンド テーブルを整理すると、重要な制限があります。 オブジェクトを定義するディレクティブでは、1 つだけの親引数を実行できます。
 
--   独自のオブジェクトの新しいインスタンスを作成する新しいディレクティブの使用を要求するコマンド、グループ、またはサブメニューを再利用`GUID:ID`ペア。
+- 独自のオブジェクトの新しいインスタンスを作成する新しいディレクティブの使用を要求するコマンド、グループ、またはサブメニューを再利用`GUID:ID`ペア。
 
--   各`GUID:ID`ペアは一意である必要があります。 によって処理は、たとえば、配置されたツールバー、メニューまたはコンテキスト メニューで、コマンドを再利用、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイス。
+- 各`GUID:ID`ペアは一意である必要があります。 によって処理は、たとえば、配置されたツールバー、メニューまたはコンテキスト メニューで、コマンドを再利用、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイス。
 
--   コマンドとサブメニューを複数のグループに割り当ても、グループを使用して複数のメニューに割り当てることができます、[コマンド要素](../../extensibility/commands-element.md)します。
+- コマンドとサブメニューを複数のグループに割り当ても、グループを使用して複数のメニューに割り当てることができます、[コマンド要素](../../extensibility/commands-element.md)します。
 
 ## <a name="vsct-file-notes"></a>.vsct ファイルのノート
  変更を加えた場合、 *.vsct*ファイルした後でそれをコンパイルして、ネイティブのサテライト DLL に配置、 **devenv.exe/setup/nosetupvstemplates**します。 強制的に再読み込みするのには、実験用のレジストリと記述されている内部データベースに指定される VSPackage のリソースを行う[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]再構築されます。

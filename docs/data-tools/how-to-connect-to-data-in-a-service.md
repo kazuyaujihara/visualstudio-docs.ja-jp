@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f3fd643ca29c5f5e4df20f244bc06b6bca04b9bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 7633d60ed672b64137b68bd9e6c3b860224753e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085962"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>方法: サービスのデータに接続する
 
@@ -36,20 +36,20 @@ ms.locfileid: "55930741"
 
 ## <a name="to-connect-your-application-to-a-service"></a>アプリケーション サービスに接続するには
 
-1.  **[データ]** メニューの **[新しいデータ ソースの追加]** をクリックします。
+1. **[データ]** メニューの **[新しいデータ ソースの追加]** をクリックします。
 
-2.  選択**サービス**上、**データ ソースの種類を選択**] ページの [クリックして **[次へ]**。
+2. 選択**サービス**上、**データ ソースの種類を選択**] ページの [クリックして **[次へ]**。
 
-3.  使用して、またはをクリックする、サービスのアドレスを入力**Discover**をクリックして、現在のソリューションでのサービスを探します**移動**します。
+3. 使用して、またはをクリックする、サービスのアドレスを入力**Discover**をクリックして、現在のソリューションでのサービスを探します**移動**します。
 
-4.  必要に応じて、入力、新しい**Namespace**既定値の代わりにします。
+4. 必要に応じて、入力、新しい**Namespace**既定値の代わりにします。
 
     > [!NOTE]
     > をクリックして**詳細**を開く、[サービス参照の構成 ダイアログ ボックス](../data-tools/configure-service-reference-dialog-box.md)します。
 
-5.  をクリックして**OK**をプロジェクトにサービス参照を追加します。
+5. をクリックして**OK**をプロジェクトにサービス参照を追加します。
 
-6.  **[完了]** をクリックします。
+6. **[完了]** をクリックします。
 
      **[データ ソース]** ウィンドウに、データ ソースが追加されます。
 

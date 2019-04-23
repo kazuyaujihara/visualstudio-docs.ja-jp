@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e3c479e7e5ae706121e0513d825d57d1cb540c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939633"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060424"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算プロパティおよびカスタム格納プロパティ
 ドメイン固有言語 (DSL) 内のすべてのドメイン プロパティは、図では、言語エクスプ ローラーで、ユーザーに表示されることができ、プログラム コードからアクセスできます。 ただし、プロパティは、その値が格納される方法では異なります。
@@ -33,30 +33,30 @@ ms.locfileid: "55939633"
 
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>計算またはカスタム ストレージ プロパティを定義するには
 
-1.  DslDefinition.dsl、ダイアグラムで、またはでは、ドメイン プロパティを選択します。 **DSL エクスプ ローラー**します。
+1. DslDefinition.dsl、ダイアグラムで、またはでは、ドメイン プロパティを選択します。 **DSL エクスプ ローラー**します。
 
-2.  **プロパティ**ウィンドウで、設定、**種類**フィールドを**Calculated**または**カスタム ストレージ**します。
+2. **プロパティ**ウィンドウで、設定、**種類**フィールドを**Calculated**または**カスタム ストレージ**します。
 
      設定されていることを確認、**型**の対象となります。
 
-3.  クリックして**すべてのテンプレートの変換**のツールバーで**ソリューション エクスプ ローラー**します。
+3. クリックして**すべてのテンプレートの変換**のツールバーで**ソリューション エクスプ ローラー**します。
 
-4.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
+4. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
      次のエラー メッセージが表示されます。"*YourClass* Get の定義が含まれていない*YourProperty*"。
 
-5.  エラー メッセージをダブルクリックします。
+5. エラー メッセージをダブルクリックします。
 
      Dsl\GeneratedCode\DomainClasses.cs または DomainRelationships.cs が開きます。 強調表示されているメソッドの呼び出しを上記コメント Get の実装を指定するように求め*YourProperty*()。
 
     > [!NOTE]
     >  このファイルは、DslDefinition.dsl から生成されます。 このファイルを編集する場合、変更は失われます をクリックした次回**すべてのテンプレートの変換**します。 代わりに、別のファイルに必要なメソッドを追加します。
 
-6.  作成またはクラス ファイルを別のフォルダー、たとえば CustomCode に\\*YourDomainClass*。 cs します。
+6. 作成またはクラス ファイルを別のフォルダー、たとえば CustomCode に\\*YourDomainClass*。 cs します。
 
      名前空間が、生成されたコードのように同じであることを確認します。
 
-7.  クラス ファイルでは、ドメイン クラスの実装の一部を記述します。 クラスで、不足しているの定義を記述`Get`次の例のようなメソッド。
+7. クラス ファイルでは、ドメイン クラスの実装の一部を記述します。 クラスで、不足しているの定義を記述`Get`次の例のようなメソッド。
 
     ```
     namespace Company.FamilyTree
@@ -66,7 +66,7 @@ ms.locfileid: "55939633"
     }  }
     ```
 
-8.  設定した場合**種類**に**カスタム ストレージ**、提供する必要がありますも、`Set`メソッド。 例:
+8. 設定した場合**種類**に**カスタム ストレージ**、提供する必要がありますも、`Set`メソッド。 例:
 
     ```
     void SetAgeValue(int value)
@@ -81,7 +81,7 @@ ms.locfileid: "55939633"
 
 10. プロパティをテストします。 試してみることを確認**を元に戻す**と**やり直し**します。
 
-##  <a name="setters"></a> トランザクションとカスタムの set アクセス操作子
+## <a name="setters"></a> トランザクションとカスタムの set アクセス操作子
  カスタム ストレージ プロパティのセット メソッドで必要はありません、トランザクションを開始するメソッドは通常、アクティブなトランザクション内で呼び出されるためです。
 
  ただし、Set メソッドは、Undo または Redo では、ユーザーが呼び出される場合、またはトランザクションがロールバックされている場合にも呼び出す可能性があります。 ときに<xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A>が true の場合、Set メソッドに次のように動作する必要があります。
@@ -105,7 +105,7 @@ void SetAgeValue(int value)
 }
 ```
 
- トランザクションの詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。
+ トランザクションの詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。
 
 ## <a name="see-also"></a>関連項目
 

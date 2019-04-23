@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113015"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>クラス ダイアグラムおよびクラスの詳細情報のウィンドウでのキーボードとマウスのショートカット (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "54775828"
   
  **このトピックの内容**  
   
--   [クラス デザイナーでマウスを使用する](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [クラス デザイナーでマウスを使用する](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [[クラスの詳細] ウィンドウでマウスを使用する](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [[クラスの詳細] ウィンドウでマウスを使用する](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [クラス デザイナーでキーボードを使用する](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [クラス デザイナーでキーボードを使用する](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [[クラスの詳細] ウィンドウでキーボードを使用する](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [[クラスの詳細] ウィンドウでキーボードを使用する](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> クラス デザイナーでマウスを使用する  
+## <a name="MouseClassDesigner"></a> クラス デザイナーでマウスを使用する  
  次のマウス操作がクラス ダイアグラムでサポートされます。  
   
 |マウス操作の組み合わせ|コンテキスト|説明|  
@@ -49,20 +49,20 @@ ms.locfileid: "54775828"
 |Ctrl + マウス ホイール|クラス ダイアグラム|ズームします。|  
 |Ctrl + Shift + クリック|クラス ダイアグラム|ズームします。|  
   
-##  <a name="MouseClassDetails"></a> [クラスの詳細] ウィンドウでマウスを使用する  
+## <a name="MouseClassDetails"></a> [クラスの詳細] ウィンドウでマウスを使用する  
  マウスを使用して、[クラスの詳細] ウィンドウの外観と表示されるデータを次のように変更できます。  
   
--   編集可能な任意のセルをクリックすると、そのセルの内容を編集できます。 変更内容は、[プロパティ] ウィンドウやソース コードなど、データが格納または表示されているすべての場所に反映されます。  
+- 編集可能な任意のセルをクリックすると、そのセルの内容を編集できます。 変更内容は、[プロパティ] ウィンドウやソース コードなど、データが格納または表示されているすべての場所に反映されます。  
   
--   行の任意のセルをクリックすると、その行によって表される要素のプロパティが [プロパティ] ウィンドウに表示されます。  
+- 行の任意のセルをクリックすると、その行によって表される要素のプロパティが [プロパティ] ウィンドウに表示されます。  
   
--   列の幅を変更するには、列見出しの右端の境界線を、必要な列幅になるまでドラッグします。  
+- 列の幅を変更するには、列見出しの右端の境界線を、必要な列幅になるまでドラッグします。  
   
--   行の左側の矢印記号をクリックすると、コンパートメントまたはプロパティ ノードの展開と折りたたみを実行することができます。  
+- 行の左側の矢印記号をクリックすると、コンパートメントまたはプロパティ ノードの展開と折りたたみを実行することができます。  
   
--   [クラスの詳細] ウィンドウには、現在のクラスに新規メンバーを作成したり、[クラスの詳細] ウィンドウ グリッドでメンバーのコンパートメント間を移動したりするためのボタンがいくつか用意されています。 詳細については、「[クラスの詳細] ウィンドウのボタン」を参照してください。  
+- [クラスの詳細] ウィンドウには、現在のクラスに新規メンバーを作成したり、[クラスの詳細] ウィンドウ グリッドでメンバーのコンパートメント間を移動したりするためのボタンがいくつか用意されています。 詳細については、「[クラスの詳細] ウィンドウのボタン」を参照してください。  
   
-##  <a name="KeyboardClassDesigner"></a> クラス デザイナーでキーボードを使用する  
+## <a name="KeyboardClassDesigner"></a> クラス デザイナーでキーボードを使用する  
  次のキーボード操作がクラス ダイアグラムでサポートされています。  
   
 |キー|コンテキスト|説明|  
@@ -89,7 +89,7 @@ ms.locfileid: "54775828"
 |Shift + Tab|すべてのコンテキスト|同じ親を持つ前の子に移動します (折り返しをサポートします)。|  
 |Space|すべてのコンテキスト|現在の要素の選択状態を切り替えます。|  
   
-##  <a name="KeyboardClassDetails"></a> [クラスの詳細] ウィンドウでキーボードを使用する  
+## <a name="KeyboardClassDetails"></a> [クラスの詳細] ウィンドウでキーボードを使用する  
   
 > [!NOTE]
 >  次のキー バインドは、コードを入力する場合の動作に特に類似したものとなるように選ばれています。  

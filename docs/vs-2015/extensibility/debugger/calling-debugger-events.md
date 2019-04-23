@@ -10,12 +10,12 @@ ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c6a5e75ab97f44efd52ef648791658ded34d085
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2f162affe2324afaa8fb1d506c3177311386bfc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110350"
 ---
 # <a name="calling-debugger-events"></a>デバッガーのイベントの呼び出し
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,21 +25,21 @@ ms.locfileid: "58975818"
 ## <a name="discussion"></a>説明  
  デバッグ エンジン (DE) とセッション デバッグ マネージャー (SDM) 間の呼び出しのパターンを理解するには、次は、一般的なデバッグ セッションで発生するイベントの呼び出しの順序を表します。  
   
-1.  [アタッチとデタッチをプログラムする](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
+1. [アタッチとデタッチをプログラムする](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
   
-2.  [デバッガーを起動します。](../../extensibility/debugger/launching-the-debugger.md)  
+2. [デバッガーを起動します。](../../extensibility/debugger/launching-the-debugger.md)  
   
-3.  [プログラムの終了](../../extensibility/debugger/terminating-a-program.md)  
+3. [プログラムの終了](../../extensibility/debugger/terminating-a-program.md)  
   
-4.  [ブレークポイントの作成](../../extensibility/debugger/creating-a-breakpoint.md)  
+4. [ブレークポイントの作成](../../extensibility/debugger/creating-a-breakpoint.md)  
   
-5.  [ときに、ブレークポイントがバインドまたはバインド解除になります。](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
+5. [ときに、ブレークポイントがバインドまたはバインド解除になります。](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
   
-6.  [ブレークポイント エラー](../../extensibility/debugger/breakpoint-errors.md)  
+6. [ブレークポイント エラー](../../extensibility/debugger/breakpoint-errors.md)  
   
-7.  [ブレークポイントのヒット](../../extensibility/debugger/hitting-a-breakpoint.md)  
+7. [ブレークポイントのヒット](../../extensibility/debugger/hitting-a-breakpoint.md)  
   
-8.  [ブレークポイントの削除](../../extensibility/debugger/deleting-a-breakpoint.md)  
+8. [ブレークポイントの削除](../../extensibility/debugger/deleting-a-breakpoint.md)  
   
 9. [中断モード](../../extensibility/debugger/entering-break-mode.md)  
   

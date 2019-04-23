@@ -9,29 +9,29 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076800"
 ---
-# <a name="how-to-create-a-basic-texture"></a>方法: 基本テクスチャを作成する
+# <a name="how-to-create-a-basic-texture"></a>方法: 基本的なテクスチャを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このドキュメントでは、イメージ エディターを使用した基本的なテクスチャの作成方法を示します。  
   
  このドキュメントでは、以下のアクティビティについて説明します。  
   
--   テクスチャのサイズの設定  
+- テクスチャのサイズの設定  
   
--   前景色と背景色の設定  
+- 前景色と背景色の設定  
   
--   アルファ チャネル (透過性) の使用  
+- アルファ チャネル (透過性) の使用  
   
--   **塗りつぶし**ツールと**楕円**ツールの使用  
+- **塗りつぶし**ツールと**楕円**ツールの使用  
   
--   ツール プロパティの設定  
+- ツール プロパティの設定  
   
 ## <a name="creating-a-basic-texture"></a>基本的なテクスチャの作成  
  イメージ エディターを使用すると、ゲームやアプリのイメージやテクスチャを作成したり変更したりできます。  
@@ -88,7 +88,7 @@ ms.locfileid: "54767100"
   
     !["bullseye" ターゲットのテクスチャ全体](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
-    次の手順では、このテクスチャの MIP レベルを生成できます。 詳細については、「[方法: MIP レベルを作成および変更する](../designers/how-to-create-and-modify-mip-levels.md)」を参照してください。  
+    次の手順では、このテクスチャの MIP レベルを生成できます。 詳細については、「[方法:作成し、MIP レベル](../designers/how-to-create-and-modify-mip-levels.md)します。  
   
 ## <a name="see-also"></a>関連項目
  [Image Editor](../designers/image-editor.md)

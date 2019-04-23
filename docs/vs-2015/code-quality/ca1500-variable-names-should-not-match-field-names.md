@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b1c80f1e6c7c11e61fcdd651ac924d8243298e82
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 8dc15c95398ed45954c3830d1c558a6653a4346f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59003063"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649968"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500:変数名はフィールド名と同一にすることはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新ドキュメントについては、次を参照してください[CA1500:。変数名は、フィールド名と一致する必要があります](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names)docs.microsoft.com でリリースされました。  
+Visual Studio の最新ドキュメントについては、次を参照してください[CA1500:。変数名は、フィールド名と一致する必要があります](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names)します。  
   
 |||  
 |-|-|  

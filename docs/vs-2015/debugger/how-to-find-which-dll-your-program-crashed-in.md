@@ -26,12 +26,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fcb5126d5281a62c9af55ba9e4283df4e1c3819c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da5ba504c22f78ebd3c0705bd5ee903fb4a2997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060567"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>方法: プログラムでクラッシュしている DLL を検索します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ ms.locfileid: "58973463"
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>[モジュール] ウィンドウを使ってクラッシュの発生場所を確認するには  
   
-1.  クラッシュが発生したアドレスをメモします。  
+1. クラッシュが発生したアドレスをメモします。  
   
-2.  **[デバッグ]** メニューの **[ウィンドウ]** をポイントし、**[モジュール]** をクリックします。  
+2. **[デバッグ]** メニューの **[ウィンドウ]** をポイントし、**[モジュール]** をクリックします。  
   
-3.  **[モジュール]** ウィンドウの **[アドレス]** 列に注目します。 必要に応じて、スクロール バーを使用します。  
+3. **[モジュール]** ウィンドウの **[アドレス]** 列に注目します。 必要に応じて、スクロール バーを使用します。  
   
-4.  列の上部にある **[アドレス]** ボタンをクリックして、DLL をアドレス順に並べ替えます。  
+4. 列の上部にある **[アドレス]** ボタンをクリックして、DLL をアドレス順に並べ替えます。  
   
-5.  並べ替えたリストを検索して、アドレス範囲内にクラッシュ場所がある DLL を探します。  
+5. 並べ替えたリストを検索して、アドレス範囲内にクラッシュ場所がある DLL を探します。  
   
-6.  **[名前]** 列と **[パス]** 列で、DLL の名前とパスを確認します。  
+6. **[名前]** 列と **[パス]** 列で、DLL の名前とパスを確認します。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: ネイティブ Dll をデバッグします。](../debugger/how-to-debug-native-dlls.md)   

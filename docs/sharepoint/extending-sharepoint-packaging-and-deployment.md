@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f18c88e72a40d3070d9a366e0c6c4e0f3888565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628391"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096999"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>SharePoint のパッケージ化と配置を拡張します。
   SharePoint プロジェクトのパッケージ化と配置のプロセスを拡張できます。
@@ -35,9 +35,9 @@ ms.locfileid: "56628391"
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>SharePoint ソリューションを配置または取り消すときに、コードを実行します。
  SharePoint ソリューションの配置時または取り消し時に、別途タスクを実行するためにイベントを処理することができます。 Visual Studio では、次のシナリオで処理できるイベントが生成されます。
 
--   SharePoint プロジェクト項目について各配置手順が実行される前後。 詳細については、「[方法 :配置手順の実行時にコードを実行](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)します。
+- SharePoint プロジェクト項目について各配置手順が実行される前後。 詳細については、「[方法 :配置手順の実行時にコードを実行](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)します。
 
--   SharePoint プロジェクトの配置または取り消しが行われる前後。 詳細については、「[方法 :SharePoint プロジェクトを配置または取り消すときに、コードを実行](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)します。
+- SharePoint プロジェクトの配置または取り消しが行われる前後。 詳細については、「[方法 :SharePoint プロジェクトを配置または取り消すときに、コードを実行](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)します。
 
 ## <a name="handle-deployment-conflicts"></a>配置競合を処理します。
  モジュール、Web パーツ、リスト インスタンス、コンテンツ タイプなど、一部の種類の SharePoint プロジェクト項目では、組み込みの配置競合の解決が用意されています。 これらのいずれかのプロジェクト項目が含まれるソリューションを配置すると、Visual Studio は、まず、配置しようとしている項目に含まれるファイルと同じ名前、URL、または ID を持つファイルが、SharePoint サイトに既に存在しているかどうかを確認します。 競合が発生する場合、Visual Studio に自動的に競合を解決させることも、Visual Studio に競合を解決させるか配置を取り消すかを判断するようユーザーに要求することもできます。 詳細については、「 [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)」を参照してください。
@@ -47,7 +47,7 @@ ms.locfileid: "56628391"
 ## <a name="run-command-line-operations-before-or-after-a-project-is-deployed"></a>前に、またはプロジェクトを配置後コマンドライン操作を実行します。
  SharePoint ソリューションの配置時にコマンド ライン操作を実行する場合、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> オブジェクトの <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.PreDeploymentCommand%2A> プロパティと <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.PostDeploymentCommand%2A> プロパティを設定することができます。 これらのコマンドは、プロジェクトが配置される前と後に Visual Studio によって実行されます。
 
- 場合によっては、配置の競合が発生することがあります。 競合を解決する方法はいくつかあります。 詳細については、[のトラブルシューティングを行う SharePoint のパッケージ化と配置](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)を参照してください。
+ 場合によっては、配置の競合が発生することがあります。 競合を解決する方法はいくつかあります。 詳細については、次を参照してください。[のトラブルシューティングを行う SharePoint のパッケージ化と配置](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)します。
 
 ## <a name="customize-validation-rules"></a>検証規則をカスタマイズします。
  ソリューション パッケージ (.wsp) を配置する前に、フィーチャーまたはパッケージが有効であることを検証するために、カスタムのフィーチャー検証規則およびパッケージ検証規則を作成できます。 たとえば、検証に関する問題の修正に役立つように、情報、警告、またはエラーを開発者に報告できます。 詳細については、「[方法 :SharePoint ソリューションの検証規則を使用したカスタムのフィーチャーとパッケージの作成](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)です。

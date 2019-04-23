@@ -13,17 +13,17 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 187a45a925b8124309da44e114ac63e2212bf7c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088445"
 ---
-# <a name="how-to-choose-collection-methods"></a>方法: 収集方法を選択する
+# <a name="how-to-choose-collection-methods"></a>方法: 収集方法を選択します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールでは、サンプリング、インストルメンテーション、同時実行という 3 種類のパフォーマンス データ収集方法をサポートしています。 また、.NET メモリ割り当てと有効期間データの収集には、サンプリングまたはインストルメンテーションの方式を使用できます。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールでは、サンプリング、インストルメンテーション、コンカレンシーという 3 種類のパフォーマンス データ収集方法をサポートしています。 また、.NET メモリ割り当てと有効期間データの収集には、サンプリングまたはインストルメンテーションの方式を使用できます。  
   
  **必要条件**  
   
@@ -35,7 +35,7 @@ ms.locfileid: "54792877"
   
 #### <a name="to-select-a-collection-method-using-the-performance-wizard"></a>パフォーマンス ウィザードを使用して収集方法を選択するには  
   
--   ウィザードの最初のページで、次のいずれかのオプションを選択します。  
+- ウィザードの最初のページで、次のいずれかのオプションを選択します。  
   
 |オプション|説明|  
 |------------|-----------------|  
@@ -48,53 +48,53 @@ ms.locfileid: "54792877"
   
 #### <a name="to-select-a-collection-method-using-performance-explorer"></a>パフォーマンス エクスプローラーを使用して収集方法を選択するには  
   
-1.  **パフォーマンス エクスプローラー**のツール バーで、**[メソッド]** ドロップダウン リストの横の矢印をクリックします。  
+1. **パフォーマンス エクスプローラー**のツール バーで、**[メソッド]** ドロップダウン リストの横の矢印をクリックします。  
   
-2.  必要な収集方法をクリックします。  
+2. 必要な収集方法をクリックします。  
   
 ## <a name="performance-session-property-pages"></a>パフォーマンス セッションのプロパティ ページ  
   
 #### <a name="to-select-the-sampling-or-instrumentation-method-using-performance-session-properties"></a>パフォーマンス セッションのプロパティを使用して、サンプリング方式またはインストルメンテーション方式を選択するには  
   
-1.  **パフォーマンス エクスプローラー**でパフォーマンス セッションを選択します。  
+1. **パフォーマンス エクスプローラー**でパフォーマンス セッションを選択します。  
   
      パフォーマンス セッション ファイル名の拡張子は .psess です。  
   
-2.  パフォーマンス セッションを右クリックして、**[プロパティ]** をクリックします。  
+2. パフォーマンス セッションを右クリックして、**[プロパティ]** をクリックします。  
   
-3.  **[プロパティ ページ]** で **[全般]** をクリックします。  
+3. **[プロパティ ページ]** で **[全般]** をクリックします。  
   
-4.  必要な収集方法をクリックします。  
+4. 必要な収集方法をクリックします。  
   
-    -   サンプリング データの収集に使用できるその他のオプションについては、「[サンプリングを使用したパフォーマンス統計情報の収集](../profiling/collecting-performance-statistics-by-using-sampling.md)」を参照してください。  
+    - サンプリング データの収集に使用できるその他のオプションについては、「[サンプリングを使用したパフォーマンス統計情報の収集](../profiling/collecting-performance-statistics-by-using-sampling.md)」を参照してください。  
   
-    -   サンプリング データの収集に使用できるその他のオプションについては、「[インストルメンテーションを使用した詳細なタイミング データの収集](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)」を参照してください。  
+    - サンプリング データの収集に使用できるその他のオプションについては、「[インストルメンテーションを使用した詳細なタイミング データの収集](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)」を参照してください。  
   
 #### <a name="to-select-net-memory-data-collection-by-using-performance-session-properties"></a>パフォーマンス セッションのプロパティを使用して .NET メモリ データの収集を選択するには  
   
-1.  **パフォーマンス エクスプローラー**でパフォーマンス セッションを選択します。  
+1. **パフォーマンス エクスプローラー**でパフォーマンス セッションを選択します。  
   
      パフォーマンス セッション ファイル名の拡張子は .psess です。  
   
-2.  パフォーマンス セッションを右クリックして、**[プロパティ]** をクリックします。  
+2. パフォーマンス セッションを右クリックして、**[プロパティ]** をクリックします。  
   
-3.  **[プロパティ ページ]** で **[全般]** をクリックします。  
+3. **[プロパティ ページ]** で **[全般]** をクリックします。  
   
-4.  **[サンプリング]** または **[インストルメンテーション]** をクリックします。  
+4. **[サンプリング]** または **[インストルメンテーション]** をクリックします。  
   
-5.  **[.NET オブジェクトの割り当て情報を収集]** をクリックして [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] オブジェクト割り当てのサイズと数を収集します。  
+5. **[.NET オブジェクトの割り当て情報を収集]** をクリックして [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] オブジェクト割り当てのサイズと数を収集します。  
   
-6.  (省略可能) **[.NET オブジェクトの有効期間情報も収集]** をクリックして、オブジェクト メモリが解放されたガベージ コレクションの生成に関するデータを収集します。  
+6. (省略可能) **[.NET オブジェクトの有効期間情報も収集]** をクリックして、オブジェクト メモリが解放されたガベージ コレクションの生成に関するデータを収集します。  
   
      .NET メモリ データの収集に使用できるその他のオプションについては、「[.NET メモリの割り当ておよび有効期間データの収集](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)」を参照してください。  
   
 #### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>パフォーマンス セッションのプロパティを使用してコンカレンシー データの収集を選択するには  
   
-1.  **パフォーマンス エクスプローラー**で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。  
+1. **パフォーマンス エクスプローラー**で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。  
   
-2.  **[プロパティ ページ]** で **[全般]** をクリックします。  
+2. **[プロパティ ページ]** で **[全般]** をクリックします。  
   
-3.  **[コンカレンシー]** をクリックします。  
+3. **[コンカレンシー]** をクリックします。  
   
 ## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   

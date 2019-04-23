@@ -23,40 +23,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d885cdc3d4321737541cd178d546c37e71ce42b7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: ecc36ae8ce0ccbe75cddb94ea69d953cc6307b0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684183"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050960"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>方法: エディット中断モードで編集を適用し、続行 (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>方法: 編集と中断モードで編集を適用し、続行 (Visual Basic)
 エディット コンティニュを使用すると、中断モードでコードを編集した後、コードを停止したり再起動したりせずにデバッグを継続できます。
 
 デバッグ中にエディット コンティニュの使用に関する制限については、次を参照してください。[サポートされているコードの変更 (C#および Visual Basic)](../debugger/supported-code-changes-csharp.md)します。
 
 ### <a name="to-edit-code-in-break-mode"></a>中断モードでコードを編集するには
 
-1.  以下のいずれかの操作を行って中断モードに入ります。
+1. 以下のいずれかの操作を行って中断モードに入ります。
 
-    -   コードにブレークポイントを設定した後、**[デバッグ]** メニューの **[デバッグ開始]** をクリックし、アプリケーションがブレークポイントにヒットするのを待ちます。
-
-         - または -
-
-    -   デバッグを開始し、**[デバッグ]** メニューの **[すべて中断]** をクリックします。
+    - コードにブレークポイントを設定した後、**[デバッグ]** メニューの **[デバッグ開始]** をクリックし、アプリケーションがブレークポイントにヒットするのを待ちます。
 
          - または -
 
-    -   例外が発生したときに選択**編集を有効にする**上、**例外処理アシスタント**します。
+    - デバッグを開始し、**[デバッグ]** メニューの **[すべて中断]** をクリックします。
 
-2.  必要なサポートされているコード変更を加えます。
+         - または -
+
+    - 例外が発生したときに選択**編集を有効にする**上、**例外処理アシスタント**します。
+
+2. 必要なサポートされているコード変更を加えます。
 
      詳細については、次を参照してください。 [(c# および Visual Basic) のサポートされているコード変更](../debugger/supported-code-changes-csharp.md)します。
 
     > [!NOTE]
     >  エディット コンティニュで許可されないコード変更を行おうとすると、編集部分の下に紫の波線が表示され、タスク一覧にタスクが表示されます。 この場合、無効なコード変更を元に戻さない限り、コードの実行を続行できません。
 
-3.  **[デバッグ]** メニューの **[続行]** をクリックして、コードの実行を再開します。
+3. **[デバッグ]** メニューの **[続行]** をクリックして、コードの実行を再開します。
 
      適用した編集がプロジェクトに取り込まれた状態でコードが実行されます。
 

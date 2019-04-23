@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f6cd0ac349d332f7e07d4f0ce6e5567cb5deb63c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954388"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067067"
 ---
 # <a name="manage-side-by-side-file-associations"></a>サイド バイ サイドでのファイルの関連付けを管理します。
 
@@ -81,9 +81,9 @@ ms.locfileid: "56954388"
 
 - ユーザーがファイルの関連付けを所有する VSPackage のバージョンの修復を実行するように指示します。
 
--   適切なレジストリ エントリをリライトする独立した実行可能プログラムを提供します。
+- 適切なレジストリ エントリをリライトする独立した実行可能プログラムを提供します。
 
--   ユーザーがファイルの関連付けを選択し、失われた関連付けを再利用できる構成オプションのページまたはダイアログ ボックスを提供します。 アンインストール後に実行するユーザーに指示します。
+- ユーザーがファイルの関連付けを選択し、失われた関連付けを再利用できる構成オプションのページまたはダイアログ ボックスを提供します。 アンインストール後に実行するユーザーに指示します。
 
 ## <a name="see-also"></a>関連項目
 

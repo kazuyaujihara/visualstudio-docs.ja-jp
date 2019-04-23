@@ -8,25 +8,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc41b980b012254ac263e027f1dd0361405c8366
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086638"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>チュートリアル: C# または Visual Basic を使用して、SDK を作成します。
 このチュートリアルでは、Visual c# を使用して単純な数値演算ライブラリの SDK を作成し、SDK と Visual Studio Extension (VSIX) パッケージ化する方法を学習します。 次の手順を完了します。
 
--   [SimpleMath Windows ランタイム コンポーネントを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
+- [SimpleMath Windows ランタイム コンポーネントを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
 
--   [SimpleMathVSIX 拡張機能プロジェクトを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
--   [クラス ライブラリを使用するサンプル アプリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
+- [SimpleMathVSIX 拡張機能プロジェクトを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
+- [クラス ライブラリを使用するサンプル アプリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
 
 ## <a name="prerequisites"></a>必須コンポーネント
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
 
-##  <a name="createClassLibrary"></a> SimpleMath Windows ランタイム コンポーネントを作成するには
+## <a name="createClassLibrary"></a> SimpleMath Windows ランタイム コンポーネントを作成するには
 
 1. メニュー バーで、**ファイル** > **新規** > **新しいプロジェクト**します。
 
@@ -54,25 +54,25 @@ ms.locfileid: "56954009"
 
 9. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **SimpleMath**プロジェクト ノードを選び、**ビルド**します。
 
-##  <a name="createVSIX"></a> SimpleMathVSIX 拡張機能プロジェクトを作成するには
+## <a name="createVSIX"></a> SimpleMathVSIX 拡張機能プロジェクトを作成するには
 
-1.  ショートカット メニューで、**ソリューション 'SimpleMath'** ノード選択**追加** > **新しいプロジェクト**します。
+1. ショートカット メニューで、**ソリューション 'SimpleMath'** ノード選択**追加** > **新しいプロジェクト**します。
 
-2.  テンプレートの一覧で展開**Visual c#** または**Visual Basic**、選択、**機能拡張**ノードを選択し、 **VSIX プロジェクト**テンプレート。
+2. テンプレートの一覧で展開**Visual c#** または**Visual Basic**、選択、**機能拡張**ノードを選択し、 **VSIX プロジェクト**テンプレート。
 
-3.  **名前**ボックスで、指定**SimpleMathVSIX**、選択し、 **OK**ボタン。
+3. **名前**ボックスで、指定**SimpleMathVSIX**、選択し、 **OK**ボタン。
 
-4.  **ソリューション エクスプ ローラー**、選択、 **source.extension.vsixmanifest**項目。
+4. **ソリューション エクスプ ローラー**、選択、 **source.extension.vsixmanifest**項目。
 
-5.  メニュー バーで **[表示]** > **[コード]** の順に選択します。
+5. メニュー バーで **[表示]** > **[コード]** の順に選択します。
 
-6.  既存の XML を次の XML に置き換えます。
+6. 既存の XML を次の XML に置き換えます。
 
      [!code-xml[CreatingAnSDKUsingWinRT#1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
 
-7.  **ソリューション エクスプ ローラー**、選択、 **SimpleMathVSIX**プロジェクト。
+7. **ソリューション エクスプ ローラー**、選択、 **SimpleMathVSIX**プロジェクト。
 
-8.  メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
+8. メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
 
 9. 一覧で**一般的な項目**、展開**データ**を選び、 **XML ファイル**します。
 
@@ -83,6 +83,7 @@ ms.locfileid: "56954009"
 12. ファイルの内容を次の XML に置き換えます。
 
     **C#**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (CS)"
@@ -95,6 +96,7 @@ ms.locfileid: "56954009"
     ```
 
     **Visual Basic**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (VB)"
@@ -149,7 +151,7 @@ ms.locfileid: "56954009"
 
 30. 選択、**インストール**ボタンをクリックし、インストールを完了するまで待機し、Visual Studio を再起動します。
 
-##  <a name="createSample"></a> クラス ライブラリを使用するサンプル アプリを作成するには
+## <a name="createSample"></a> クラス ライブラリを使用するサンプル アプリを作成するには
 
 1. メニュー バーで、**ファイル** > **新規** > **新しいプロジェクト**します。
 
@@ -176,6 +178,7 @@ ms.locfileid: "56954009"
 10. **ソリューション エクスプ ローラー**オープン**MainPage.xaml**、し、その内容を次の XAML に置き換えます。
 
     **C#**
+
     ```xml
     <Page
         x:Class="WinRTMathTestCS.MainPage"
@@ -201,6 +204,7 @@ ms.locfileid: "56954009"
     ```
 
     **Visual Basic**
+
     ```xml
     <Page
         x:Class="WinRTMathTest.MainPage"

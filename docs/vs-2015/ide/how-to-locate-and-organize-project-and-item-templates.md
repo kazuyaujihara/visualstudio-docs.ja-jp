@@ -16,14 +16,14 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091240"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>方法 : プロジェクト テンプレートと項目テンプレートを配置して整理する
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>方法: 配置して整理プロジェクト テンプレートと項目テンプレート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 テンプレート ファイルは、テンプレートが **[新しいプロジェクト]** ダイアログ ボックスや **[新しい項目の追加]** ダイアログ ボックスに表示されるように、Visual Studio が認識する場所に配置する必要があります。 テンプレートにはカスタム サブカテゴリを作成できます。作成したサブカテゴリも、ユーザー インターフェイスに表示されます。  
@@ -90,23 +90,23 @@ ms.locfileid: "54778527"
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>インストールされた項目テンプレートの新しいカテゴリを作成するには  
   
-1.  インストールされたテンプレートのディレクトリの言語フォルダーに、フォルダーを作成します。 たとえば、[!INCLUDE[csprcs](../includes/csprcs-md.md)] 項目テンプレートに対して Web カテゴリを作成するには、次のディレクトリを作成する必要があります。  
+1. インストールされたテンプレートのディレクトリの言語フォルダーに、フォルダーを作成します。 たとえば、[!INCLUDE[csprcs](../includes/csprcs-md.md)] 項目テンプレートに対して Web カテゴリを作成するには、次のディレクトリを作成する必要があります。  
   
      \\*Visual Studio のインストール ディレクトリ*\Common7\IDE\ItemTemplates\CSharp\1033\Web\  
   
-2.  このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。  
+2. このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。  
   
-3.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のすべてのインスタンスを閉じます。  
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のすべてのインスタンスを閉じます。  
   
-4.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックし、「**cmd**」と入力し、**[OK]** をクリックします。  
+4. **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックし、「**cmd**」と入力し、**[OK]** をクリックします。  
   
-5.  コマンド プロンプトで、devenv.exe を含むディレクトリに移動し、「**devenv /setup**」と入力します。  
+5. コマンド プロンプトで、devenv.exe を含むディレクトリに移動し、「**devenv /setup**」と入力します。  
   
-6.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行します。  
+6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行します。  
   
-7.  プロジェクトを作成するか、既存のプロジェクトを開きます。  
+7. プロジェクトを作成するか、既存のプロジェクトを開きます。  
   
-8.  **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。  
+8. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。  
   
 9. Web カテゴリが **[新しい項目の追加]** ダイアログ ボックスの **[プロジェクトの種類]** ウィンドウに表示されることを確認します。  
   
@@ -129,30 +129,30 @@ ms.locfileid: "54778527"
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>カスタム項目テンプレートの新しいカテゴリを作成するには  
   
-1.  カスタム項目テンプレートのディレクトリの言語フォルダーに、フォルダーを作成します。 たとえば、[!INCLUDE[csprcs](../includes/csprcs-md.md)] テンプレートに対して HelloWorld カテゴリを作成するには、次のディレクトリを作成する必要があります。  
+1. カスタム項目テンプレートのディレクトリの言語フォルダーに、フォルダーを作成します。 たとえば、[!INCLUDE[csprcs](../includes/csprcs-md.md)] テンプレートに対して HelloWorld カテゴリを作成するには、次のディレクトリを作成する必要があります。  
   
      \My Documents\\<Visual Studio バージョン\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
-2.  このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。  
+2. このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。  
   
-3.  プロジェクトを作成するか、既存のプロジェクトを開きます。  
+3. プロジェクトを作成するか、既存のプロジェクトを開きます。  
   
-4.  **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。  
+4. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。  
   
-5.  HelloWorld カテゴリが **[新しい項目の追加]** ダイアログ ボックスの **[プロジェクトの種類]** ウィンドウに表示されることを確認します。  
+5. HelloWorld カテゴリが **[新しい項目の追加]** ダイアログ ボックスの **[プロジェクトの種類]** ウィンドウに表示されることを確認します。  
   
 ### <a name="displaying-templates-in-parent-categories"></a>親カテゴリでのテンプレートの表示  
  .vstemplate ファイルの `NumberOfParentCategoriesToRollUp` 要素を使用して、サブカテゴリのテンプレートを親カテゴリに表示できます。 この手順は、プロジェクト テンプレートと項目テンプレートのどちらでも同じです。  
   
 ##### <a name="to-display-templates-in-parent-categories"></a>親カテゴリにテンプレートを表示するには  
   
-1.  テンプレートを含む .zip ファイルを探します。  
+1. テンプレートを含む .zip ファイルを探します。  
   
-2.  .zip ファイルを展開します。  
+2. .zip ファイルを展開します。  
   
-3.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で .vstemplate ファイルを開きます。  
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で .vstemplate ファイルを開きます。  
   
-4.  `TemplateData` 要素に、`NumberOfParentCategoriesToRollUp` 要素を追加します。 たとえば、次のコードを実行すると、テンプレートが親カテゴリに表示されますが、親カテゴリよりも上のレベルでは表示されません。  
+4. `TemplateData` 要素に、`NumberOfParentCategoriesToRollUp` 要素を追加します。 たとえば、次のコードを実行すると、テンプレートが親カテゴリに表示されますが、親カテゴリよりも上のレベルでは表示されません。  
   
     ```  
     <TemplateData>  
@@ -164,17 +164,17 @@ ms.locfileid: "54778527"
     </TemplateData>  
     ```  
   
-5.  .vstemplate ファイルを保存して、閉じます。  
+5. .vstemplate ファイルを保存して、閉じます。  
   
-6.  テンプレートでファイルを選択して右クリックし、**[送る]** をクリックして **[圧縮 (zip 形式) フォルダー]** をクリックします。 ファイルは .zip ファイルに圧縮されます。  
+6. テンプレートでファイルを選択して右クリックし、**[送る]** をクリックして **[圧縮 (zip 形式) フォルダー]** をクリックします。 ファイルは .zip ファイルに圧縮されます。  
   
-7.  抽出したテンプレート ファイルと古いテンプレート .zip ファイルを削除します。  
+7. 抽出したテンプレート ファイルと古いテンプレート .zip ファイルを削除します。  
   
-8.  削除した .zip ファイルが含まれていたディレクトリに、新しい .zip ファイルを配置します。  
+8. 削除した .zip ファイルが含まれていたディレクトリに、新しい .zip ファイルを配置します。  
   
 ## <a name="see-also"></a>関連項目
  [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (Visual Studio テンプレート)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
- [方法 : プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)   
- [方法 : 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)
+ [方法: プロジェクト テンプレートを作成します。](../ide/how-to-create-project-templates.md)   
+ [方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)

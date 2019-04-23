@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054483"
 ---
 # <a name="support-for-settings-categories"></a>設定カテゴリのサポート
 設定カテゴリは統合開発環境 (IDE) をカスタマイズするためのグループで構成されます。 たとえば設定により、メニューの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のウィンドウとコンテンツのレイアウトを制御できます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
@@ -29,11 +29,11 @@ ms.locfileid: "58972918"
   
  Managed Package Framework (MPF) は、最小限の追加コードでの設定カテゴリの作成をサポートしています。  
   
--   <xref:Microsoft.VisualStudio.Shell.Package> クラスをサブクラス化して、カテゴリのコンテナーとして使用するには、VSPackage を作成します。  
+- <xref:Microsoft.VisualStudio.Shell.Package> クラスをサブクラス化して、カテゴリのコンテナーとして使用するには、VSPackage を作成します。  
   
--   カテゴリ自体を作成するには、<xref:Microsoft.VisualStudio.Shell.DialogPage> クラスから派生させます。  
+- カテゴリ自体を作成するには、<xref:Microsoft.VisualStudio.Shell.DialogPage> クラスから派生させます。  
   
--   これら 2 つは <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> で接続します。  
+- これら 2 つは <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> で接続します。  
   
 ## <a name="support-for-settings-categories"></a>設定カテゴリのサポート  
  <xref:Microsoft.VisualStudio.Shell.Package> クラスは、カテゴリの作成をサポートしています。 <xref:Microsoft.VisualStudio.Shell.DialogPage> クラスは、カテゴリを実装しています。 <xref:Microsoft.VisualStudio.Shell.DialogPage> の既定の実装では、カテゴリとしてパブリック プロパティがユーザーに提供されます。 詳細については、「 [Creating a Settings Category](../extensibility/creating-a-settings-category.md)」を参照してください。  

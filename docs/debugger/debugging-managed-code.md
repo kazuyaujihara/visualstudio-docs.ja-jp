@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504147"
 ---
 # <a name="debugging-managed-code"></a>マネージド コードのデバッグ
@@ -47,7 +47,7 @@ Windows フォームを作成し、そのフォームをデバッグする方法
 [混合モードのデバッグ](../debugger/debugging-mixed-mode-applications.md)\
 混合モード アプリケーションのデバッグについて説明します。 これは、ネイティブ コードとマネージド コードを組み合わせたアプリケーションです。
 
-[エラー :システム上でカーネル デバッガーが有効になっているため、デバッグできません](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[エラー: システムのカーネル デバッガーが有効になっているため、デバッグできません。](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 デバッグ モードで起動された [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]、[!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]、[!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)]、または Windows NT システムでマネージド コードのデバッグを試みたときに発生するエラー メッセージについて説明します。
 
 [JIT の最適化とデバッグ](../debugger/jit-optimization-and-debugging.md)\
@@ -61,7 +61,7 @@ LINQ クエリのデバッグ手法について説明します。
 
 ## <a name="related-sections"></a>関連項目
 
-[[IntelliTrace]](../debugger/intellitrace.md)\
+[IntelliTrace](../debugger/intellitrace.md)\
 IntelliTrace でアプリの実行履歴を記録することにより、すばやく簡単にバグを検索します。 記録されたイベントと呼び出しを前後にステップ実行して重要な時点でのアプリの状態を調べます。 多くのブレークポイントを設定することも、アプリを頻繁に再起動することもなく、コードをデバッグします。 Visual Studio Enterprise が必要です。
 
 [アプリケーションのトレースとインストルメント](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)\
@@ -73,7 +73,7 @@ C++ で作成されたコードに <xref:System.Diagnostics.DebuggableAttribute>
 [Windows サービス アプリケーションのデバッグ](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)\
 Windows サービス アプリケーションのデバッグに関する注意事項を示します。セットアップ、プロセスとのアタッチ、サービスの `OnStart` メソッドと Main メソッドのコードのデバッグ、ブレークポイントの設定、サービス コントロール マネージャーを使用したサービスの開始、停止、一時中断、継続などが含まれます。
 
-[アプリケーションのデバッグとプロファイリング](/dotnet/framework/debug-trace-profile/index)\
+[デバッグとプロファイリング](/dotnet/framework/debug-trace-profile/index)\
 .NET Framework アプリケーションのデバッグと構成要件について説明します。
 
 [スクリプトと Web アプリケーションのデバッグ](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\

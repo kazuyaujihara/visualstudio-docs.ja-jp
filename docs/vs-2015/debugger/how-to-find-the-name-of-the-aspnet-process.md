@@ -17,12 +17,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c403cefee3aa7d45c11cd80cf5fc2dd53a06c1fc
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4cc62b8635a2d7a663b597d4f8a2363fe14ba432
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58963854"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071929"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>方法: ASP.NET プロセスの名前を見つける
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ ms.locfileid: "58963854"
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>プロジェクト コードがファイル システムと IIS のどちらに存在するかを判断するには  
   
-1.  Visual Studio で開く**ソリューション エクスプ ローラー**がまだ開いていない場合。  
+1. Visual Studio で開く**ソリューション エクスプ ローラー**がまだ開いていない場合。  
   
-2.  アプリケーション名を含む最上位のノードを選択します。  
+2. アプリケーション名を含む最上位のノードを選択します。  
   
-3.  場合、**プロパティ**ウィンドウのタイトルは、ファイルのパスを含む、アプリケーション コード、ファイル システムに存在します。  
+3. 場合、**プロパティ**ウィンドウのタイトルは、ファイルのパスを含む、アプリケーション コード、ファイル システムに存在します。  
   
      それ以外の場合、**プロパティ**ウィンドウのタイトルは、Web サイトの名前が格納されます。  
   
 ### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>アプリケーションが実行されている IIS のバージョンを判断するには  
   
-1.  検索**管理ツール**して実行します。 オペレーティング システムに応じて、アイコン内でこの可能性があります**コントロール パネルの **、またはクリックしたときに表示されるメニュー エントリ**開始**します。  
+1. 検索**管理ツール**して実行します。 オペレーティング システムに応じて、アイコン内でこの可能性があります**コントロール パネルの **、またはクリックしたときに表示されるメニュー エントリ**開始**します。  
   
      Windows XP で**コントロール パネルの **カテゴリの表示またはクラシック表示にすることができます。 カテゴリ表示は、をクリックする必要がある**クラシック表示に切り替える**または**パフォーマンスとメンテナンス**を参照してください、**管理ツール**アイコン。  
   
-2.  **管理ツール**、インターネット インフォメーション サービスを実行します。 MMC ダイアログ ボックスが表示されます。  
+2. **管理ツール**、インターネット インフォメーション サービスを実行します。 MMC ダイアログ ボックスが表示されます。  
   
-3.  左側のペインに複数のコンピューターが表示される場合、アプリケーション コードが存在するコンピューターを選択します。  
+3. 左側のペインに複数のコンピューターが表示される場合、アプリケーション コードが存在するコンピューターを選択します。  
   
-4.  IIS のバージョンは、**バージョン**右側のペインの列。  
+4. IIS のバージョンは、**バージョン**右側のペインの列。  
   
 ## <a name="see-also"></a>関連項目  
  [リモート Web アプリケーションをデバッグするための前提条件](../debugger/prerequistes-for-remote-debugging-web-applications.md)   

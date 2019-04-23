@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973739"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066715"
 ---
 # <a name="gpu-usage"></a>GPU 使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,11 +117,11 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>プロファイリングをアプリケーションの開始時から延期するには:  
   
-1.  メイン メニューで、**[デバッグ]**、**[パフォーマンスと診断]** を選びます (キーボード:Alt + F2 キーを押します)。  
+1. メイン メニューで、**[デバッグ]**、**[パフォーマンスと診断]** を選びます (キーボード:Alt + F2 キーを押します)。  
   
-2.  [パフォーマンスと診断] ハブで、**[GPU 使用率]** の横にある **[設定]** リンクに従います。  
+2. [パフォーマンスと診断] ハブで、**[GPU 使用率]** の横にある **[設定]** リンクに従います。  
   
-3.  **[GPU プロファイリングの構成]** の **[全般]** プロパティ ページで、**[アプリの起動時にプロファイリングを開始]** チェック ボックスをオフにして、プロファイリングを延期します。  
+3. **[GPU プロファイリングの構成]** の **[全般]** プロパティ ページで、**[アプリの起動時にプロファイリングを開始]** チェック ボックスをオフにして、プロファイリングを延期します。  
   
      ![GPU 使用率の収集の開始時に構成する](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
@@ -130,7 +130,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
   
  この設定を使用してプロファイリング情報のコレクションを延期すると、GPU 使用率ツールの下でアプリを実行したときに、GPU 使用率ツール ウィンドウの下部で追加のリンクを使用できるようになります。 プロファイリング情報の収集を開始するには、**[GPU 使用率データの収集を開始します]** メッセージの **[開始]** リンクをクリックします。  
   
-##  <a name="hwsupport"></a> ハードウェアとドライバーのサポート  
+## <a name="hwsupport"></a> ハードウェアとドライバーのサポート  
  次の GPU ハードウェアとドライバーがサポートされます。  
   
 |ベンダー|GPU の説明|必要なドライバー バージョン|  
@@ -143,10 +143,10 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
   
 ## <a name="see-also"></a>関連項目  
   
--   [DirectX ツールを使用してゲームの重大なグラフィックスの問題を解決する (ビデオ)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [DirectX ツールを使用してゲームの重大なグラフィックスの問題を解決する (ビデオ)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [Visual Studio での GPU 使用率ツール (ビデオ)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Visual Studio での GPU 使用率ツール (ビデオ)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [Visual Studio 2013 Update 4 CTP1 での GPU 使用率ツール (ブログ)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Visual Studio 2013 Update 4 CTP1 での GPU 使用率ツール (ブログ)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [Visual Studio での DirectX の GPU 使用率 (ブログ)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [Visual Studio での DirectX の GPU 使用率 (ブログ)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)

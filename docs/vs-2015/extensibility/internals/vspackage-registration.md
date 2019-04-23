@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a54f319034bc22f4dfd0f61e2c4f50d6b7bf94d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ec9bb626b44365dc27d46a235a1ee4895f3eb5c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074559"
 ---
 # <a name="vspackage-registration"></a>VSPackage の登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ Vspackage に通知する必要があります[!INCLUDE[vsprvs](../../includes/v
   
  理論上は適切です、自己登録は VSPackage のインストールには適さないするいくつかの欠点があります。  
   
--   インストール、アンインストール、インストールのロールバック、およびアンインストールのロールバックを正しくサポートするには、RegPkg を呼び出して自己登録するすべてのマネージ VSPackage の 4 つのカスタム アクションを作成する必要があります。  
+- インストール、アンインストール、インストールのロールバック、およびアンインストールのロールバックを正しくサポートするには、RegPkg を呼び出して自己登録するすべてのマネージ VSPackage の 4 つのカスタム アクションを作成する必要があります。  
   
--   サイド バイ サイドでサポートするアプローチがサポートされているどのバージョンの RegSvr32 または RegPkg を呼び出す次の 4 つのカスタム アクションを作成する必要があります[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
+- サイド バイ サイドでサポートするアプローチがサポートされているどのバージョンの RegSvr32 または RegPkg を呼び出す次の 4 つのカスタム アクションを作成する必要があります[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
   
--   自己登録済みモジュールのインストールは、自己登録キーが別の機能またはアプリケーションによって使用されるかどうかに通知する手段がないために戻す安全にロールバックできません。  
+- 自己登録済みモジュールのインストールは、自己登録キーが別の機能またはアプリケーションによって使用されるかどうかに通知する手段がないために戻す安全にロールバックできません。  
   
--   補助の Dll は存在しないか、間違ったバージョンがも自己登録済みの Dll にリンクします。 これに対し、Windows インストーラーは、システムの現在の状態に依存せずに、レジストリのテーブルを使用して Dll を登録できます。  
+- 補助の Dll は存在しないか、間違ったバージョンがも自己登録済みの Dll にリンクします。 これに対し、Windows インストーラーは、システムの現在の状態に依存せずに、レジストリのテーブルを使用して Dll を登録できます。  
   
--   タイプ ライブラリなどのネットワーク リソースへのアクセス コンポーネントがある場合ソースからの実行として指定し、SelfReg テーブルに格納されて、自己登録コードを拒否できます。 管理者用インストールが失敗するコンポーネントのインストールがある可能性があります。  
+- タイプ ライブラリなどのネットワーク リソースへのアクセス コンポーネントがある場合ソースからの実行として指定し、SelfReg テーブルに格納されて、自己登録コードを拒否できます。 管理者用インストールが失敗するコンポーネントのインストールがある可能性があります。  
   
 ## <a name="see-also"></a>関連項目  
  [Windows インストーラー](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   

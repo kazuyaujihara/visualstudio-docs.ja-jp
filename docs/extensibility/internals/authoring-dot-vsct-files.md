@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 442d78f494381021bd480f5649dbb6957bec5ae1
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 84c7a5194e48e73fbabf60b7c9ef89e6cb04d855
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053084"
 ---
 # <a name="author-vsct-files"></a>.Vsct ファイルの作成者
 このドキュメントを作成する方法を示しています、 *.vsct* Visual Studio 統合開発環境 (IDE) にメニュー項目、ツールバー、およびその他のユーザー インターフェイス (UI) 要素を追加するファイル。 次の手順を使用していない Visual Studio パッケージ (VSPackage) を UI 要素を追加すると、 *.vsct*ファイル。
@@ -30,7 +30,7 @@ ms.locfileid: "56954051"
 
 #### <a name="to-create-the-file-structure"></a>ファイル構造を作成するには
 
-1.  追加、 *.vsct*ファイルを次の手順に従って、プロジェクト[方法.Vsct ファイルを作成](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)です。
+1. 追加、 *.vsct*ファイルを次の手順に従って、プロジェクト[方法.Vsct ファイルを作成](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)です。
 
 2. 必要な名前空間を追加、`CommandTable`要素は、次の例に示すようにします。
 
@@ -40,7 +40,7 @@ ms.locfileid: "56954051"
 
     ```
 
-3.  `CommandTable`要素を追加、`Commands`すべてのカスタム メニューのツールバー、コマンド グループ、およびコマンドをホストする要素。 カスタム UI 要素を読み込むように、`Commands`要素があります、`Package`属性は、パッケージの名前に設定します。
+3. `CommandTable`要素を追加、`Commands`すべてのカスタム メニューのツールバー、コマンド グループ、およびコマンドをホストする要素。 カスタム UI 要素を読み込むように、`Commands`要素があります、`Package`属性は、パッケージの名前に設定します。
 
      後に、`Commands`要素を追加、`Symbols`要素をパッケージと名前の Guid を定義し、UI 要素のコマンド Id。
 
@@ -51,28 +51,28 @@ ms.locfileid: "56954051"
 
 1. 上部にある、`CommandTable`要素、1 つ追加`Extern`要素を設定し、参照する外部のファイルごとに、`href`属性をファイルの名前にします。 Visual Studio のリソースにアクセスする次のヘッダー ファイルを参照することができます。
 
-   -   *Stdidcmd.h*:Visual Studio によって公開されるすべてのコマンドの Id を定義します。
+   - *Stdidcmd.h*:Visual Studio によって公開されるすべてのコマンドの Id を定義します。
 
-   -   *Vsshlids.h*:Visual Studio のメニューのコマンド Id が含まれています。
+   - *Vsshlids.h*:Visual Studio のメニューのコマンド Id が含まれています。
 
 2. パッケージが Visual Studio によって、または他のパッケージで定義されている任意のコマンドを呼び出す場合は、追加、`UsedCommands`要素の後に、`Commands`要素。 この要素で設定を[UsedCommand](../../extensibility/usedcommand-element.md)各コマンドを呼び出すが、パッケージの一部ではないです。 設定、`guid`と`id`の属性、`UsedCommand`要素を呼び出すコマンドの GUID と ID の値。
 
-   Guid と Visual Studio の Id のコマンドを検索する方法の詳細については、[Guid と Visual Studio の Id コマンド](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)を参照してください。 他のパッケージからのコマンドを呼び出すを使用して GUID とコマンドの ID で定義されている、 *.vsct*それらのパッケージのファイル。
+   Guid と Visual Studio の Id のコマンドを検索する方法の詳細については、次を参照してください。 [Guid と Visual Studio の Id コマンド](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)します。 他のパッケージからのコマンドを呼び出すを使用して GUID とコマンドの ID で定義されている、 *.vsct*それらのパッケージのファイル。
 
 ### <a name="declare-ui-elements"></a>UI 要素を宣言します。
  内のすべての新しい UI 要素の宣言、`Symbols`のセクション、 *.vsct*ファイル。
 
 #### <a name="to-declare-ui-elements"></a>UI 要素を宣言するには
 
-1.  `Symbols`要素、3 つ追加[GuidSymbol](../../extensibility/guidsymbol-element.md)要素。 各`GuidSymbol`要素には、`name`属性と`value`属性。 設定、`name`属性、要素の目的が反映されるようにします。 `value`属性は GUID を受け取ります。 (GUID を生成する、**ツール**メニューの  **GUID の作成**、し、**レジストリ形式**)。
+1. `Symbols`要素、3 つ追加[GuidSymbol](../../extensibility/guidsymbol-element.md)要素。 各`GuidSymbol`要素には、`name`属性と`value`属性。 設定、`name`属性、要素の目的が反映されるようにします。 `value`属性は GUID を受け取ります。 (GUID を生成する、**ツール**メニューの  **GUID の作成**、し、**レジストリ形式**)。
 
      最初の`GuidSymbol`要素が、パッケージを表すし、通常、子がありません。 2 番目の`GuidSymbol`要素を表しますコマンドは、設定すると、し、メニューのグループ、およびコマンドを定義するシンボルのすべてが含まれます。 3 番目`GuidSymbol`要素は、イメージ ストアを表すし、コマンドのアイコンのすべてのシンボルが含まれています。 アイコンを使用するコマンドがない場合は、3 つ目を省略できます`GuidSymbol`要素。
 
-2.  `GuidSymbol`コマンド セットを表す要素が 1 つ以上追加[IDSymbol](../../extensibility/idsymbol-element.md)要素。 これらの各は、メニューのツールバー、グループ、または UI を追加するコマンドを表します。
+2. `GuidSymbol`コマンド セットを表す要素が 1 つ以上追加[IDSymbol](../../extensibility/idsymbol-element.md)要素。 これらの各は、メニューのツールバー、グループ、または UI を追加するコマンドを表します。
 
      各`IDSymbol`要素、設定、`name`属性を使用して、対応するメニューのグループ、または、コマンドを参照して、設定の名前に、`value`コマンド ID を表す 16 進数の要素 2 つ`IDSymbol`が同じ親を持つ要素が同じ値を持つことができます。
 
-3.  UI 要素のいずれかには、アイコンが必要とする場合は、追加、`IDSymbol`する各アイコンの要素、`GuidSymbol`要素、イメージ ストアを表します。
+3. UI 要素のいずれかには、アイコンが必要とする場合は、追加、`IDSymbol`する各アイコンの要素、`GuidSymbol`要素、イメージ ストアを表します。
 
 ### <a name="put-ui-elements-in-the-ide"></a>IDE での UI 要素を配置します。
  [メニュー](../../extensibility/menus-element.md)、[グループ](../../extensibility/groups-element.md)、および[ボタン](../../extensibility/buttons-element.md)要素には、メニューのグループ、および、パッケージで定義されているコマンドのすべての定義が含まれています。 使用するか、IDE でこれらのメニューのグループ、およびコマンドを配置、[親](../../extensibility/parent-element.md)またはを使用して、UI 要素の定義の一部である要素を[CommandPlacement](../../extensibility/commandplacement-element.md)である要素では、別の場所で定義されています。
@@ -92,25 +92,25 @@ ms.locfileid: "56954051"
 
     最初に作成する必要がある新しいコマンドのグループを追加すると、`Groups`要素を追加し、[グループ](../../extensibility/group-element.md)コマンド グループごとの要素。
 
-    設定、`guid`と`id`の各属性`Group`要素、および設定して、`priority`属性を親メニューのグループの相対位置を確立します。 詳細については、[ボタンの再利用可能なグループ作成](../../extensibility/creating-reusable-groups-of-buttons.md)を参照してください。
+    設定、`guid`と`id`の各属性`Group`要素、および設定して、`priority`属性を親メニューのグループの相対位置を確立します。 詳細については、次を参照してください。[ボタンの再利用可能なグループ作成](../../extensibility/creating-reusable-groups-of-buttons.md)です。
 
 3. IDE に新しいコマンドを追加する場合は、追加、`Buttons`要素を`Commands`要素。 次に、各コマンドでは、追加、[ボタン](../../extensibility/button-element.md)要素を`Buttons`要素。
 
-   1.  設定、`guid`と`id`の各属性`Button`要素、および設定して、`type`ボタンの種類に属性します。 設定することも、`priority`属性を親グループで、コマンドの相対位置を確立します。
+   1. 設定、`guid`と`id`の各属性`Button`要素、および設定して、`type`ボタンの種類に属性します。 設定することも、`priority`属性を親グループで、コマンドの相対位置を確立します。
 
        > [!NOTE]
        >  使用`type="button"`標準メニュー コマンドとツールバーのボタン。
 
-   2.  `Button`要素を追加、[文字列](../../extensibility/strings-element.md)要素を含む、 [ButtonText](../../extensibility/buttontext-element.md)要素と[CommandName](../../extensibility/commandname-element.md)要素。 `ButtonText`要素がメニュー項目、またはツール バー ボタンのツールヒントのテキスト ラベルを提供します。 `CommandName`要素も、コマンドで使用するコマンドの名前を提供します。
+   2. `Button`要素を追加、[文字列](../../extensibility/strings-element.md)要素を含む、 [ButtonText](../../extensibility/buttontext-element.md)要素と[CommandName](../../extensibility/commandname-element.md)要素。 `ButtonText`要素がメニュー項目、またはツール バー ボタンのツールヒントのテキスト ラベルを提供します。 `CommandName`要素も、コマンドで使用するコマンドの名前を提供します。
 
-   3.  コマンドがアイコンである場合は、作成、[アイコン](../../extensibility/icon-element.md)内の要素、`Button`要素、およびセットの`guid`と`id`属性を`Bitmap`アイコンの要素。
+   3. コマンドがアイコンである場合は、作成、[アイコン](../../extensibility/icon-element.md)内の要素、`Button`要素、およびセットの`guid`と`id`属性を`Bitmap`アイコンの要素。
 
        > [!NOTE]
        >  ツール バー ボタンのアイコンがあります。
 
-   詳細については、[Menucommand とを参照してください。OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)します。
+   詳細については、次を参照してください。 [Menucommand とします。OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)します。
 
-4. コマンドのいずれかには、アイコンが必要とする場合は、追加、[ビットマップ](../../extensibility/bitmaps-element.md)要素を`Commands`要素。 次に、各アイコンの追加、[ビットマップ](../../extensibility/bitmap-element.md)要素を`Bitmaps`要素。 これは、ビットマップ リソースの場所を指定します。 詳細については、[メニュー コマンドにアイコンを追加](../../extensibility/adding-icons-to-menu-commands.md)を参照してください。
+4. コマンドのいずれかには、アイコンが必要とする場合は、追加、[ビットマップ](../../extensibility/bitmaps-element.md)要素を`Commands`要素。 次に、各アイコンの追加、[ビットマップ](../../extensibility/bitmap-element.md)要素を`Bitmaps`要素。 これは、ビットマップ リソースの場所を指定します。 詳細については、次を参照してください。[メニュー コマンドにアイコンを追加](../../extensibility/adding-icons-to-menu-commands.md)します。
 
    ほとんどのメニューのグループ、およびコマンドを正しく配置する親子構造を利用できます。 非常に大量のコマンド セットでは、コマンドの配置を指定することをお勧め メニューのグループ、またはコマンドは、複数の場所に表示する必要があります、または。
 
@@ -120,9 +120,9 @@ ms.locfileid: "56954051"
 
     対象、`Parent`要素がメニューやメニューを含むグループをグループ、またはコマンド。
 
-   1.  設定、`guid`属性の名前を`GuidSymbol`コマンド セットを定義する要素。 ターゲット要素でない場合、パッケージの一部を使用して guid をコマンド セットの対応するで定義されている *.vsct*ファイル。
+   1. 設定、`guid`属性の名前を`GuidSymbol`コマンド セットを定義する要素。 ターゲット要素でない場合、パッケージの一部を使用して guid をコマンド セットの対応するで定義されている *.vsct*ファイル。
 
-   2.  設定、`id`と一致する属性、 `id` [ターゲット] メニューまたはグループの属性です。 メニューおよび Visual Studio によって公開されているグループの一覧については、[Guid と Visual Studio の Id のメニュー](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)または[Guid と Visual Studio の Id のツールバー](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)を参照してください。
+   2. 設定、`id`と一致する属性、 `id` [ターゲット] メニューまたはグループの属性です。 メニューおよび Visual Studio によって公開されているグループの一覧については、次を参照してください。 [Guid と Visual Studio の Id のメニュー](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)または[Guid と Visual Studio の Id のツールバー](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)します。
 
    IDE では、配置する UI 要素の数が多いがある場合、または複数の場所に表示される要素がある場合は、定義への配置、 [CommandPlacements](../../extensibility/commandplacements-element.md)要素は、次の手順で示すようにします。
 
@@ -145,79 +145,79 @@ ms.locfileid: "56954051"
 
 1. UI 要素を表示する UI、特定のコンテキストなどでのみソリューションが読み込まれるときに、可視性の制約を使用します。
 
-   1.  後に、`Commands`要素を追加、`VisibilityConstraints`要素。
+   1. 後に、`Commands`要素を追加、`VisibilityConstraints`要素。
 
-   2.  各 UI には、制約の項目が、追加、 [VisibilityItem](../../extensibility/visibilityitem-element.md)要素。
+   2. 各 UI には、制約の項目が、追加、 [VisibilityItem](../../extensibility/visibilityitem-element.md)要素。
 
-   3.  各`VisibilityItem`要素、設定、`guid`と`id`メニューのグループ、またはコマンド、および設定する属性、 `context` UI のコンテキストで定義されている属性、<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>クラス。
+   3. 各`VisibilityItem`要素、設定、`guid`と`id`メニューのグループ、またはコマンド、および設定する属性、 `context` UI のコンテキストで定義されている属性、<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>クラス。
 
 2. コードで、可視性または UI アイテムの可用性を設定するには、次のコマンド フラグの 1 つ以上を使用します。
 
-   -   `DefaultDisabled`
+   - `DefaultDisabled`
 
-   -   `DefaultInvisible`
+   - `DefaultInvisible`
 
-   -   `DynamicItemStart`
+   - `DynamicItemStart`
 
-   -   `DynamicVisibility`
+   - `DynamicVisibility`
 
-   -   `NoShowOnMenuController`
+   - `NoShowOnMenuController`
 
-   -   `NotInTBList`
+   - `NotInTBList`
 
    詳細については、次を参照してください。、 [CommandFlag](../../extensibility/command-flag-element.md)要素。
 
 3. 要素の表示、またはその外観を動的に変更を変更するには、次のコマンド フラグの 1 つ以上を使用します。
 
-   -   `AlwaysCreate`
+   - `AlwaysCreate`
 
-   -   `CommandWellOnly`
+   - `CommandWellOnly`
 
-   -   `DefaultDocked`
+   - `DefaultDocked`
 
-   -   `DontCache`
+   - `DontCache`
 
-   -   `DynamicItemStart`
+   - `DynamicItemStart`
 
-   -   `FixMenuController`
+   - `FixMenuController`
 
-   -   `IconAndText`
+   - `IconAndText`
 
-   -   `Pict`
+   - `Pict`
 
-   -   `StretchHorizontally`
+   - `StretchHorizontally`
 
-   -   `TextMenuUseButton`
+   - `TextMenuUseButton`
 
-   -   `TextChanges`
+   - `TextChanges`
 
-   -   `TextOnly`
+   - `TextOnly`
 
    詳細については、次を参照してください。、 [CommandFlag](../../extensibility/command-flag-element.md)要素。
 
 4. コマンドを受信したときの要素の反応を変更するには、次のコマンド フラグの 1 つ以上を使用します。
 
-   -   `AllowParams`
+   - `AllowParams`
 
-   -   `CaseSensitive`
+   - `CaseSensitive`
 
-   -   `CommandWellOnly`
+   - `CommandWellOnly`
 
-   -   `FilterKeys`
+   - `FilterKeys`
 
-   -   `NoAutoComplete`
+   - `NoAutoComplete`
 
-   -   `NoButtonCustomize`
+   - `NoButtonCustomize`
 
-   -   `NoKeyCustomize`
+   - `NoKeyCustomize`
 
-   -   `NoToolbarClose`
+   - `NoToolbarClose`
 
-   -   `PostExec`
+   - `PostExec`
 
-   -   `RouteToDocs`
+   - `RouteToDocs`
 
-   -   `TextIsAnchorCommand`
+   - `TextIsAnchorCommand`
 
    詳細については、次を参照してください。、 [CommandFlag](../../extensibility/command-flag-element.md)要素。
 

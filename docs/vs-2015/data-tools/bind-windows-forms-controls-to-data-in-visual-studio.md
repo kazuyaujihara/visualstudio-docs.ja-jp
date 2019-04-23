@@ -23,16 +23,15 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00435dab8c8f5e6379979a4eb1ada36033dc01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f2bd51570c8ad1976b6fc9eb5674177f9342833
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976132"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069459"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Visual Studio でのデータへの Windows フォーム コントロールのバインド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 データを Windows フォームにバインドすることで、アプリケーションのユーザーに対してデータを表示できます。 これらのデータ バインド コントロールを作成するから項目をドラッグすることができます、**データソース**Visual Studio での Windows フォーム デザイナー ウィンドウ。 このトピックでは、データ バインド Windows フォーム アプリケーションの作成に使用できる最も一般的なタスク、ツール、およびクラスについて説明します。
 
@@ -42,21 +41,21 @@ ms.locfileid: "58976132"
 
 ## <a name="in-this-section"></a>このセクションの内容
 
--   [Windows フォーム コントロールをデータにバインドする](../data-tools/bind-windows-forms-controls-to-data.md)
+- [Windows フォーム コントロールをデータにバインドする](../data-tools/bind-windows-forms-controls-to-data.md)
 
--   [データの保存前にデータ バインド コントロールで実行中の編集をコミットする](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
+- [データの保存前にデータ バインド コントロールで実行中の編集をコミットする](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
 
--   [Windows フォーム アプリケーションでルックアップ テーブルを作成する](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
+- [Windows フォーム アプリケーションでルックアップ テーブルを作成する](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
 
--   [データを検索する Windows フォームを作成する](../data-tools/create-a-windows-form-to-search-data.md)
+- [データを検索する Windows フォームを作成する](../data-tools/create-a-windows-form-to-search-data.md)
 
--   [単純なデータ バインディングをサポートする Windows フォーム ユーザー コントロールの作成](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
+- [単純なデータ バインディングをサポートする Windows フォーム ユーザー コントロールの作成](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
 
--   [複合データ バインディングをサポートする Windows フォーム ユーザー コントロールの作成](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
+- [複合データ バインディングをサポートする Windows フォーム ユーザー コントロールの作成](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
 
--   [ルックアップ データ バインディングをサポートする Windows フォーム ユーザー コントロールの作成](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+- [ルックアップ データ バインディングをサポートする Windows フォーム ユーザー コントロールの作成](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
 
--   [フォーム間でデータを渡す](../data-tools/pass-data-between-forms.md)
+- [フォーム間でデータを渡す](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>BindingSource コンポーネント
  <xref:System.Windows.Forms.BindingSource> コンポーネントは 2 つの目的で利用できます。 まず、フォームのコントロールをデータにバインドするときに、抽象化レイヤーの役割を果たします。 フォーム上のコントロールは、<xref:System.Windows.Forms.BindingSource> コンポーネントにバインドされます (データ ソースに直接バインドされるわけではありません)。
@@ -65,11 +64,11 @@ ms.locfileid: "58976132"
 
  <xref:System.Windows.Forms.BindingSource> コンポーネントの詳細については、次のトピックを参照してください。
 
--   [BindingSource コンポーネント](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [BindingSource コンポーネント](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
--   [BindingSource コンポーネントの概要](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
+- [BindingSource コンポーネントの概要](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
--   [BindingSource コンポーネント アーキテクチャ](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
+- [BindingSource コンポーネント アーキテクチャ](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator コントロール
  このコンポーネントには、Windows アプリケーションによって表示されるデータを移動するためのユーザー インターフェイスが用意されています。 詳細については、「[BindingNavigator コントロール](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)」を参照してください。

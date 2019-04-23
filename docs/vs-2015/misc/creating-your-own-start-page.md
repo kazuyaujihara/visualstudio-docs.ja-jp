@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 001af82f976728b55d2f3b2c3f47d3f39a9e2e73
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037896"
 ---
 # <a name="creating-your-own-start-page"></a>ユーザー独自のスタート ページの作成
 スタート ページのプロジェクト テンプレートを使用するか、または空白のスタート ページを作成することで、カスタム スタート ページを作成できます。  
@@ -28,22 +28,22 @@ ms.locfileid: "59002634"
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>スタート ページのプロジェクト テンプレートを使用してカスタム スタート ページを作成するには  
   
-1.  Visual Studio ギャラリーから [スタート ページのプロジェクト テンプレート](http://go.microsoft.com/fwlink/?LinkId=186204) をダウンロードしてインストールします。  
+1. Visual Studio ギャラリーから [スタート ページのプロジェクト テンプレート](http://go.microsoft.com/fwlink/?LinkId=186204) をダウンロードしてインストールします。  
   
     > [!WARNING]
     >  この時点では、Visual Studio 2010 のスタート ページのプロジェクト テンプレートはアップグレードされていません。 このテンプレートをアップグレードする方法については、次を参照してください。[方法。Visual Studio のカスタム スタート ページをアップグレード](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)します。  
   
-2.  テンプレートをインストールした後、それを使用して新しいスタート ページ プロジェクトを作成します。  
+2. テンプレートをインストールした後、それを使用して新しいスタート ページ プロジェクトを作成します。  
   
-3.  [新しいプロジェクト] ダイアログ ボックスの左ウィンドウで、 **[インストールされたテンプレート]** の下の **[その他のプロジェクトの種類]** ノードを展開し、 **[機能拡張]** をクリックします。  
+3. [新しいプロジェクト] ダイアログ ボックスの左ウィンドウで、 **[インストールされたテンプレート]** の下の **[その他のプロジェクトの種類]** ノードを展開し、 **[機能拡張]** をクリックします。  
   
-4.  中央のウィンドウで、 **[カスタム スタート ページ]** をクリックし、プロジェクトに名前を付けて **[OK]** をクリックします。  
+4. 中央のウィンドウで、 **[カスタム スタート ページ]** をクリックし、プロジェクトに名前を付けて **[OK]** をクリックします。  
   
      Visual Studio により、Visual Studio のスタート ページの完全なコピーであるスタート ページ プロジェクトが作成されます。  
   
-5.  **ソリューション エクスプローラー**で、 **StartPage.xaml**を開きます。  
+5. **ソリューション エクスプローラー**で、 **StartPage.xaml**を開きます。  
   
-6.  StartPage.xaml を編集します。  
+6. StartPage.xaml を編集します。  
   
      F5 キーを押してカスタム スタート ページがインストールされている Visual Studio の実験用インスタンスを開いて、作業内容を表示できます。  
   

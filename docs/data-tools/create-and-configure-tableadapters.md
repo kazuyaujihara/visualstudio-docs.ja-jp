@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4243bcedea1699ba02b3c3715cab7f61ba62281
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 026b670deb5beff42c927894ee9851ddb3ccc3ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042812"
 ---
 # <a name="create-and-configure-tableadapters"></a>Tableadapter の作成および構成
 
@@ -80,16 +80,16 @@ TableAdapter クエリの構成ウィザードを使用して、作成して、T
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>新しいクエリを使用して、TableAdapter クエリ構成ウィザードを開始するには
 
-1.  **データセット デザイナー**でご自分のデータセットを開きます。
+1. **データセット デザイナー**でご自分のデータセットを開きます。
 
-2.  新しいクエリを作成する場合は、ドラッグ、**クエリ**オブジェクトから、**データセット**のタブ、**ツールボックス**上に、 <xref:System.Data.DataTable>、または選択**クエリの追加**TableAdapter のショートカット メニューから。 ドラッグすることも、**クエリ**オブジェクトの空の領域に、**データセット デザイナー**、関連付けられていない TableAdapter を作成する<xref:System.Data.DataTable>します。 これらのクエリを返す単一の (スカラー) 値または実行 UPDATE、INSERT、または、データベースに対するコマンドの削除のみできます。
+2. 新しいクエリを作成する場合は、ドラッグ、**クエリ**オブジェクトから、**データセット**のタブ、**ツールボックス**上に、 <xref:System.Data.DataTable>、または選択**クエリの追加**TableAdapter のショートカット メニューから。 ドラッグすることも、**クエリ**オブジェクトの空の領域に、**データセット デザイナー**、関連付けられていない TableAdapter を作成する<xref:System.Data.DataTable>します。 これらのクエリを返す単一の (スカラー) 値または実行 UPDATE、INSERT、または、データベースに対するコマンドの削除のみできます。
 
-3.  **データ接続の選択**画面で、選択するか、クエリを使用する接続を作成します。
+3. **データ接続の選択**画面で、選択するか、クエリを使用する接続を作成します。
 
     > [!NOTE]
     > この画面は、デザイナーを使用する適切な接続が判断できないときに、または接続が使用できない場合にのみ表示されます。
 
-4.  **コマンドの種類を選択** 画面で、データベースからデータをフェッチする場合の次の方法から選択します。
+4. **コマンドの種類を選択** 画面で、データベースからデータをフェッチする場合の次の方法から選択します。
 
     - **SQL ステートメントを使用して**データベースからデータを選択する SQL ステートメントを入力することができます。
 

@@ -12,12 +12,12 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b028250c53ccf0d5af09671bca82848a626d3129
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4741059410e052c571d77088b9cbe109fb651642
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978177"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095068"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>コマンドの外観の変更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ ms.locfileid: "58978177"
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>メニュー コマンドの外観を変更するには  
   
-1.  指示に従って[メニュー コマンドのテキストを変更する](../extensibility/changing-the-text-of-a-menu-command.md)という名前のメニュー項目を作成する`New Text`します。  
+1. 指示に従って[メニュー コマンドのテキストを変更する](../extensibility/changing-the-text-of-a-menu-command.md)という名前のメニュー項目を作成する`New Text`します。  
   
-2.  ChangeMenuText.cs ファイルで次の追加ステートメントを使用します。  
+2. ChangeMenuText.cs ファイルで次の追加ステートメントを使用します。  
   
     ```csharp  
     using System.Security.Permissions;  
     ```  
   
-3.  ChangeMenuTextPackageGuids.cs ファイルでは、次の行を追加します。  
+3. ChangeMenuTextPackageGuids.cs ファイルでは、次の行を追加します。  
   
     ```csharp  
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
-4.  ChangeMenuText.cs ファイルでは、次のように ShowMessageBox メソッドのコードを置き換えます。  
+4. ChangeMenuText.cs ファイルでは、次のように ShowMessageBox メソッドのコードを置き換えます。  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -61,7 +61,7 @@ ms.locfileid: "58978177"
     }  
     ```  
   
-5.  更新するコマンドを取得、<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>オブジェクトし、コマンド オブジェクトで、適切なプロパティを設定します。 たとえば、次のメソッドは、使用または使用できない設定 VSPackage のコマンドから、指定したコマンドです。 次のコードでという名前の項目] メニューの [`New Text`がクリックしてされた後に使用できません。  
+5. 更新するコマンドを取得、<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>オブジェクトし、コマンド オブジェクトで、適切なプロパティを設定します。 たとえば、次のメソッドは、使用または使用できない設定 VSPackage のコマンドから、指定したコマンドです。 次のコードでという名前の項目] メニューの [`New Text`がクリックしてされた後に使用できません。  
   
     ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
@@ -80,11 +80,11 @@ ms.locfileid: "58978177"
     }  
     ```  
   
-6.  プロジェクトをビルドし、デバッグを開始します。 Visual Studio の実験用インスタンスが表示されます。  
+6. プロジェクトをビルドし、デバッグを開始します。 Visual Studio の実験用インスタンスが表示されます。  
   
-7.  **ツール** メニューのをクリックして、**呼び出す ChangeMenuText**コマンド。 コマンド名は、この時点で**呼び出す ChangeMenuText**コマンド ハンドラーが ChangeMyCommand() を呼び出さないため、します。  
+7. **ツール** メニューのをクリックして、**呼び出す ChangeMenuText**コマンド。 コマンド名は、この時点で**呼び出す ChangeMenuText**コマンド ハンドラーが ChangeMyCommand() を呼び出さないため、します。  
   
-8.  **ツール**メニューが表示**新しいテキスト**します。 クリックして**新しいテキスト**します。 コマンドを灰色に今すぐ必要があります。  
+8. **ツール**メニューが表示**新しいテキスト**します。 クリックして**新しいテキスト**します。 コマンドを灰色に今すぐ必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)   

@@ -11,32 +11,32 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973563"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042354"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>図に UML モデルを表示する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio に対する拡張機能のプログラム コードでは、モデル要素が図上でどのように表示されるかを制御できます。 UML モデルをサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
- このトピックの内容:  
- -   [図の要素を表示するには](#Display)  
+このトピックの内容:  
+- [図の要素を表示するには](#Display)  
   
--   [要素を表す図形へのアクセス](#GetShapes)  
+- [要素を表す図形へのアクセス](#GetShapes)  
   
--   [移動して、図形のサイズ変更](#Moving)  
+- [移動して、図形のサイズ変更](#Moving)  
   
--   [ダイアグラムから図形を削除するには](#Removing)  
+- [ダイアグラムから図形を削除するには](#Removing)  
   
--   [開くと、図を作成します。](#Opening)  
+- [開くと、図を作成します。](#Opening)  
   
--   [例:図形の整列のコマンド](#AlignCommand)  
+- [例:図形の整列のコマンド](#AlignCommand)  
   
-##  <a name="Display"></a> 図の要素を表示するには  
+## <a name="Display"></a> 図の要素を表示するには  
  ユース ケースやアクションなどの要素を作成すると、ユーザーはそれらを UML モデル エクスプ ローラーで表示できるようになりますが、いつも自動的に図に表示されるわけではありません。 場合によっては、それを表示するコードを記述する必要があります。 次の表に代替手段を示します。  
   
 |要素の型|次に例を示します。|表示するためのコード|  
@@ -47,7 +47,7 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
 |動作の子|生存線、メッセージ、操作、オブジェクト ノード|自動 - コード不要です。<br /><br /> 親が図にバインドされている場合に表示されます。|  
 |リレーションシップ|関連、汎化、フロー、依存関係|自動 - コード不要です。<br /><br /> 両端が表示されるすべての図に表示されます。|  
   
-##  <a name="GetShapes"></a> 要素を表す図形へのアクセス  
+## <a name="GetShapes"></a> 要素を表す図形へのアクセス  
  要素を表す図形は、次の型に属します。  
   
  `IShape`  
@@ -68,7 +68,7 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|ジェネリック `IShape` を厳密に型指定された `IShape<IElement>` にキャストします。|  
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|図形をパラメーター化された 1 つの図形型から別の型にキャストします。|  
   
-##  <a name="Moving"></a> 移動して、図形のサイズ変更  
+## <a name="Moving"></a> 移動して、図形のサイズ変更  
   
 |||  
 |-|-|  
@@ -77,7 +77,7 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
   
  例については、次を参照してください。[配置コマンドを定義する](#AlignCommand)します。  
   
-##  <a name="Removing"></a> ダイアグラムから図形を削除するには  
+## <a name="Removing"></a> ダイアグラムから図形を削除するには  
  一部の種類の要素の図形は、要素を削除せずに削除できます。  
   
 |モデル要素|図形を削除するには|  
@@ -86,7 +86,7 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
 |動作: 相互作用またはアクティビティ|図をプロジェクトから削除できます。 `IDiagram.FileName` を使用してパスを取得します。<br /><br /> これによってモデルから動作が削除されることはありません。|  
 |その他のすべての図形|図から他の図形を明示的に削除することはできません。 モデルから要素が削除される、または図から親シェイプが削除されると、図形は自動的に削除されます。|  
   
-##  <a name="Opening"></a> 開くと、図を作成します。  
+## <a name="Opening"></a> 開くと、図を作成します。  
   
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>コマンドまたはジェスチャ拡張機能から、ユーザーの現在のダイアグラムにアクセスするには  
  このインポートされたプロパティをクラスで宣言します。  
@@ -162,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;  
 ```  
   
-##  <a name="AlignCommand"></a> 例:図形の整列のコマンド  
+## <a name="AlignCommand"></a> 例:図形の整列のコマンド  
  次のコードは、図形を適切に揃えるメニュー コマンドを実装します。 ユーザーはまず、2 つ以上の図形を、垂直方向または水平方向のおよその場所に配置する必要があります。 その後、整列のコマンドを使用して中心を揃えることができます。  
   
  このコマンドを使用できるようにするには、このコードをメニュー コマンド プロジェクトに追加し、結果として得られる拡張機能をユーザーに配置します。 詳細については、次を参照してください。[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  

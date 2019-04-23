@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87b48a1cd5dc791609a2a15d1fcb657b41e9dcc8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5685adb5a10ddc109ec8a4695e1dbfae6d30a6df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114250"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF による DSL の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +125,7 @@ Managed Extensibility Framework (MEF) を使用して、ドメイン固有言語
   
 #### <a name="to-create-a-dsl-extension-vsix"></a>DSL 拡張 VSIX を作成するには  
   
-1. 新しいクラス ライブラリ プロジェクトを作成します。 これを実行する、**新しいプロジェクト**ダイアログ ボックスで、 **Visual Basic**または**Visual C#** 選び**クラス ライブラリ**します。  
+1. 新しいクラス ライブラリ プロジェクトを作成します。 これを実行する、**新しいプロジェクト**ダイアログ ボックスで、 **Visual Basic**または**Visual c#** 選び**クラス ライブラリ**します。  
   
 2. 新しいクラス ライブラリ プロジェクトでは、DSL のアセンブリへの参照を追加します。  
   
@@ -137,17 +137,17 @@ Managed Extensibility Framework (MEF) を使用して、ドメイン固有言語
   
 3. 次の .NET アセンブリへの参照を追加します。  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
   
-   -   System.ComponentModel.Composition.dll  
+   - System.ComponentModel.Composition.dll  
   
-   -   System.Windows.Forms.dll  
+   - System.Windows.Forms.dll  
   
-4. 同じソリューションで VSIX プロジェクトを作成します。 これを実行する、**新しいプロジェクト** ダイアログ ボックスで、展開**Visual Basic**または**Visual C#**、 をクリックして**Extensibility**、しを選択します。**VSIX プロジェクト**します。  
+4. 同じソリューションで VSIX プロジェクトを作成します。 これを実行する、**新しいプロジェクト** ダイアログ ボックスで、展開**Visual Basic**または**Visual c#**、 をクリックして**Extensibility**、しを選択します。**VSIX プロジェクト**します。  
   
 5. ソリューション エクスプ ローラーで VSIX プロジェクトを右クリックし をクリックし、**スタートアップ プロジェクトとして設定**します。  
   

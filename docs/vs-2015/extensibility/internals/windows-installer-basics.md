@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2566c97a4dc025e27aecf64a7a8950a578882348
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054381"
 ---
 # <a name="windows-installer-basics"></a>Windows インストーラーの基本事項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,15 +63,15 @@ Windows インストーラーは、Windows インストーラーのコンポー�
   
 #### <a name="installer-enforced-rules"></a>インストーラーによって適用される規則  
   
--   指定したコンポーネントのすべてのファイルは、同じディレクトリにインストールする必要があります。 逆に、コンポーネントを分離する個別のフォルダーにインストールされているファイルが属している必要があります。  
+- 指定したコンポーネントのすべてのファイルは、同じディレクトリにインストールする必要があります。 逆に、コンポーネントを分離する個別のフォルダーにインストールされているファイルが属している必要があります。  
   
--   要素ごとの 1 つだけのキーのパスがあります。 キーのパスは、単にファイルまたはレジストリ キーを全体の構成要素を表します。  
+- 要素ごとの 1 つだけのキーのパスがあります。 キーのパスは、単にファイルまたはレジストリ キーを全体の構成要素を表します。  
   
 #### <a name="component-provider-responsibilities"></a>コンポーネント プロバイダーの責任  
   
--   今後のバージョンでは別に出荷可能性がありますを 2 つのリソースは、個別のコンポーネントに存在する必要があります。 これらのリソースは個別に出荷されないは特定が場合にのみ、同じコンポーネントにリソースをグループ化する必要があります。 推奨実際には、すべての主要なリソース (たとえば、Dll) 常に個別の WICs に存在します。 詳細については、次を参照してください。[インストーラー コンポーネントを定義する](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx)します。  
+- 今後のバージョンでは別に出荷可能性がありますを 2 つのリソースは、個別のコンポーネントに存在する必要があります。 これらのリソースは個別に出荷されないは特定が場合にのみ、同じコンポーネントにリソースをグループ化する必要があります。 推奨実際には、すべての主要なリソース (たとえば、Dll) 常に個別の WICs に存在します。 詳細については、次を参照してください。[インストーラー コンポーネントを定義する](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx)します。  
   
--   バージョン管理されたリソース必要がありますこれまで出荷しない 1 つ以上の WIC でします。  
+- バージョン管理されたリソース必要がありますこれまで出荷しない 1 つ以上の WIC でします。  
   
 ## <a name="see-also"></a>関連項目  
  [コンポーネントのルールが破損するいるとどうなりますか。](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

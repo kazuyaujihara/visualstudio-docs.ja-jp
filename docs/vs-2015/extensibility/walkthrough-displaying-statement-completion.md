@@ -10,12 +10,12 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 06377a3bc8bd192a7c3f66d359350148fe912239
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974252"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045019"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>チュートリアル: 入力候補の表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "58974252"
   
 #### <a name="to-create-a-mef-project"></a>MEF プロジェクトを作成するには  
   
-1.  C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual C#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `CompletionTest`の名前を指定します。  
+1. C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `CompletionTest`の名前を指定します。  
   
-2.  エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能の作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)です。  
+2. エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能の作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)です。  
   
-3.  既存のクラス ファイルを削除します。  
+3. 既存のクラス ファイルを削除します。  
   
-4.  以下の参照をプロジェクトに追加し、ことを確認します**CopyLocal**に設定されている`false`:  
+4. 以下の参照をプロジェクトに追加し、ことを確認します**CopyLocal**に設定されている`false`:  
   
      Microsoft.VisualStudio.Editor  
   
@@ -58,39 +58,39 @@ ms.locfileid: "58974252"
   
 #### <a name="to-implement-the-completion-source"></a>入力候補のソースを実装するには  
   
-1.  クラス ファイルを追加し、その名前を `TestCompletionSource`にします。  
+1. クラス ファイルを追加し、その名前を `TestCompletionSource`にします。  
   
-2.  これらのインポートを追加します。  
+2. これらのインポートを追加します。  
   
      [!code-csharp[VSSDKCompletionTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#1)]
      [!code-vb[VSSDKCompletionTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#1)]  
   
-3.  クラス宣言を変更`TestCompletionSource`実装できるように<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:  
+3. クラス宣言を変更`TestCompletionSource`実装できるように<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:  
   
      [!code-csharp[VSSDKCompletionTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#2)]
      [!code-vb[VSSDKCompletionTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#2)]  
   
-4.  同期元プロバイダー、テキスト バッファー、および一連のプライベート フィールドを追加<xref:Microsoft.VisualStudio.Language.Intellisense.Completion>(オブジェクトを補完セッションに参加する識別子に対応しています)。  
+4. 同期元プロバイダー、テキスト バッファー、および一連のプライベート フィールドを追加<xref:Microsoft.VisualStudio.Language.Intellisense.Completion>(オブジェクトを補完セッションに参加する識別子に対応しています)。  
   
      [!code-csharp[VSSDKCompletionTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#3)]
      [!code-vb[VSSDKCompletionTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#3)]  
   
-5.  ソース プロバイダーとバッファーを設定するコンス トラクターを追加します。 `TestCompletionSourceProvider`クラスは、後の手順で定義されます。  
+5. ソース プロバイダーとバッファーを設定するコンス トラクターを追加します。 `TestCompletionSourceProvider`クラスは、後の手順で定義されます。  
   
      [!code-csharp[VSSDKCompletionTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#4)]
      [!code-vb[VSSDKCompletionTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#4)]  
   
-6.  実装、<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>コンテキストで提供するメソッドは、入力候補を含む入力候補セットを追加します。 各入力候補のセットは、一連の<xref:Microsoft.VisualStudio.Language.Intellisense.Completion>入力候補、補完ウィンドウのタブに対応しています。 (Visual Basic プロジェクトでは、入力候補ウィンドウ タブの名前は**共通**と**すべて**)。FindTokenSpanAtPosition メソッドは、次の手順で定義されます。  
+6. 実装、<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>コンテキストで提供するメソッドは、入力候補を含む入力候補セットを追加します。 各入力候補のセットは、一連の<xref:Microsoft.VisualStudio.Language.Intellisense.Completion>入力候補、補完ウィンドウのタブに対応しています。 (Visual Basic プロジェクトでは、入力候補ウィンドウ タブの名前は**共通**と**すべて**)。FindTokenSpanAtPosition メソッドは、次の手順で定義されます。  
   
      [!code-csharp[VSSDKCompletionTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#5)]
      [!code-vb[VSSDKCompletionTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#5)]  
   
-7.  次のメソッドを使用して、カーソルの位置から現在の単語を検索します。  
+7. 次のメソッドを使用して、カーソルの位置から現在の単語を検索します。  
   
      [!code-csharp[VSSDKCompletionTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#6)]
      [!code-vb[VSSDKCompletionTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#6)]  
   
-8.  実装、`Dispose()`メソッド。  
+8. 実装、`Dispose()`メソッド。  
   
      [!code-csharp[VSSDKCompletionTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#7)]
      [!code-vb[VSSDKCompletionTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#7)]  
@@ -100,17 +100,17 @@ ms.locfileid: "58974252"
   
 #### <a name="to-implement-the-completion-source-provider"></a>入力候補のソース プロバイダーを実装するには  
   
-1.  という名前のクラスを追加`TestCompletionSourceProvider`を実装する<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>します。 このクラスをエクスポート、 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 「プレーン テキスト」の<xref:Microsoft.VisualStudio.Utilities.NameAttribute>「テスト完了」のです。  
+1. という名前のクラスを追加`TestCompletionSourceProvider`を実装する<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>します。 このクラスをエクスポート、 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 「プレーン テキスト」の<xref:Microsoft.VisualStudio.Utilities.NameAttribute>「テスト完了」のです。  
   
      [!code-csharp[VSSDKCompletionTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#8)]
      [!code-vb[VSSDKCompletionTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#8)]  
   
-2.  インポート、<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>を使用して、入力候補のソースの現在の単語を検索します。  
+2. インポート、<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>を使用して、入力候補のソースの現在の単語を検索します。  
   
      [!code-csharp[VSSDKCompletionTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#9)]
      [!code-vb[VSSDKCompletionTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#9)]  
   
-3.  実装、<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A>入力候補のソースをインスタンス化するメソッド。  
+3. 実装、<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A>入力候補のソースをインスタンス化するメソッド。  
   
      [!code-csharp[VSSDKCompletionTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#10)]
      [!code-vb[VSSDKCompletionTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#10)]  
@@ -120,24 +120,24 @@ ms.locfileid: "58974252"
   
 #### <a name="to-implement-the-completion-command-handler-provider"></a>完了コマンド ハンドラーのプロバイダーを実装するには  
   
-1.  という名前のファイルを追加`TestCompletionCommandHandler`します。  
+1. という名前のファイルを追加`TestCompletionCommandHandler`します。  
   
-2.  次の using ステートメントを追加します。  
+2. 次の using ステートメントを追加します。  
   
      [!code-csharp[VSSDKCompletionTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#11)]
      [!code-vb[VSSDKCompletionTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#11)]  
   
-3.  という名前のクラスを追加`TestCompletionHandlerProvider`を実装する<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>します。 このクラスをエクスポート、 <xref:Microsoft.VisualStudio.Utilities.NameAttribute> 「トークンの完了ハンドラー」の<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>「プレーン テキスト」の<xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>の<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>します。  
+3. という名前のクラスを追加`TestCompletionHandlerProvider`を実装する<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>します。 このクラスをエクスポート、 <xref:Microsoft.VisualStudio.Utilities.NameAttribute> 「トークンの完了ハンドラー」の<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>「プレーン テキスト」の<xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>の<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>します。  
   
      [!code-csharp[VSSDKCompletionTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#12)]
      [!code-vb[VSSDKCompletionTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#12)]  
   
-4.  インポート、<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>から変換できる、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>を<xref:Microsoft.VisualStudio.Text.Editor.ITextView>、 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>、および<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>標準の Visual Studio services にアクセスできるようにします。  
+4. インポート、<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>から変換できる、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>を<xref:Microsoft.VisualStudio.Text.Editor.ITextView>、 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>、および<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>標準の Visual Studio services にアクセスできるようにします。  
   
      [!code-csharp[VSSDKCompletionTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#13)]
      [!code-vb[VSSDKCompletionTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#13)]  
   
-5.  実装、<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A>コマンド ハンドラーをインスタンス化するメソッド。  
+5. 実装、<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A>コマンド ハンドラーをインスタンス化するメソッド。  
   
      [!code-csharp[VSSDKCompletionTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#14)]
      [!code-vb[VSSDKCompletionTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#14)]  
@@ -195,13 +195,13 @@ ms.locfileid: "58974252"
   
 #### <a name="to-build-and-test-the-completiontest-solution"></a>ビルドして CompletionTest ソリューションをテストするには  
   
-1.  ソリューションをビルドします。  
+1. ソリューションをビルドします。  
   
-2.  デバッガーでこのプロジェクトを実行すると、Visual Studio の 2 つ目のインスタンスがインスタンス化されます。  
+2. デバッガーでこのプロジェクトを実行すると、Visual Studio の 2 つ目のインスタンスがインスタンス化されます。  
   
-3.  テキスト ファイルを作成し、"add"という単語を含むいくつかのテキストを入力します。  
+3. テキスト ファイルを作成し、"add"という単語を含むいくつかのテキストを入力します。  
   
-4.  を入力すると最初に、"a"と"d"、"addition"と「適応」を含む一覧が表示されます。 加算が選択されていることに注意してください。 別の"d"を入力すると、一覧は、のみ"addition"、現在選択されているを含める必要があります。 Space キー、タブ、または Enter キーを押す"addition"をコミットまたは esc キーまたはその他の任意のキーを入力して、一覧を無視できます。  
+4. を入力すると最初に、"a"と"d"、"addition"と「適応」を含む一覧が表示されます。 加算が選択されていることに注意してください。 別の"d"を入力すると、一覧は、のみ"addition"、現在選択されているを含める必要があります。 Space キー、タブ、または Enter キーを押す"addition"をコミットまたは esc キーまたはその他の任意のキーを入力して、一覧を無視できます。  
   
 ## <a name="see-also"></a>関連項目  
  [チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

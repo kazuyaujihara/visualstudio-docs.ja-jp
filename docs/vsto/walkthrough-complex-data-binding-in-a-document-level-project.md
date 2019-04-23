@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa8370dcf36eb13b6ba1491efc5def55a93fff34
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052533"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>チュートリアル: ドキュメント レベルのプロジェクトで複合データ バインディング
   このチュートリアルでは、ドキュメント レベルのプロジェクトで複合データ バインディングの基本について説明します。 Microsoft Office Excel ワークシート内で複数のセルは、Northwind SQL Server データベース内のフィールドにバインドできます。
@@ -40,20 +40,20 @@ ms.locfileid: "56643107"
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
--   SQL Server の Northwind サンプル データベースでのサーバーへのアクセス。
+- SQL Server の Northwind サンプル データベースでのサーバーへのアクセス。
 
--   SQL Server データベースの読み書きアクセス許可。
+- SQL Server データベースの読み書きアクセス許可。
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
  最初の手順では、Excel ブック プロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1.  名前の Excel ブック プロジェクトを作成**マイの複合データ バインディング**します。 ウィザードで、次のように選択します。**新しい文書を作成**です。
+1. 名前の Excel ブック プロジェクトを作成**マイの複合データ バインディング**します。 ウィザードで、次のように選択します。**新しい文書を作成**です。
 
      詳細については、「[方法 :Visual Studio での Office プロジェクトの作成](../vsto/how-to-create-office-projects-in-visual-studio.md)です。
 
@@ -91,15 +91,15 @@ ms.locfileid: "56643107"
 
 #### <a name="to-add-a-list-object"></a>リスト オブジェクトを追加するには
 
-1.  いることを確認、**マイの複雑なデータ Binding.xlsx** 、Visual Studio デザイナーで開いているブックで**Sheet1**が表示されます。
+1. いることを確認、**マイの複雑なデータ Binding.xlsx** 、Visual Studio デザイナーで開いているブックで**Sheet1**が表示されます。
 
-2.  開く、**データソース**ウィンドウと選択、**従業員**ノード。
+2. 開く、**データソース**ウィンドウと選択、**従業員**ノード。
 
-3.  表示されるドロップダウン矢印をクリックします。
+3. 表示されるドロップダウン矢印をクリックします。
 
-4.  選択**ListObject**ドロップダウン リストでします。
+4. 選択**ListObject**ドロップダウン リストでします。
 
-5.  ドラッグ、**従業員**テーブル セルに**A6**します。
+5. ドラッグ、**従業員**テーブル セルに**A6**します。
 
      A<xref:Microsoft.Office.Tools.Excel.ListObject>という名前のコントロール`EmployeesListObject`セルは**A6**します。 、同時に、<xref:System.Windows.Forms.BindingSource>という名前`EmployeesBindingSource`、テーブル アダプターの場合は、および<xref:System.Data.DataSet>インスタンスは、プロジェクトに追加されます。 コントロールにバインドする、<xref:System.Windows.Forms.BindingSource>にさらにバインドされます、<xref:System.Data.DataSet>インスタンス。
 
@@ -132,7 +132,7 @@ ms.locfileid: "56643107"
 
 ### <a name="to-save-changes-to-the-database"></a>データベースに変更を保存するには
 
-1.  イベント ハンドラーを追加、<xref:System.Windows.Forms.Control.Click>のイベント、`button`データセットの元のデータベースに行われたすべての変更をコミットする次のコードを追加します。
+1. イベント ハンドラーを追加、<xref:System.Windows.Forms.Control.Click>のイベント、`button`データセットの元のデータベースに行われたすべての変更をコミットする次のコードを追加します。
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
@@ -142,33 +142,33 @@ ms.locfileid: "56643107"
 
 ### <a name="to-test-the-data-binding"></a>データ バインドをテストするには
 
--   **F5**キーを押します。
+- **F5**キーを押します。
 
      ブックを開いたときに、リスト オブジェクトがからデータが入力されていることを確認、**従業員**テーブル。
 
 ### <a name="to-modify-data"></a>データを変更するには
 
-1.  セルをクリックします。 **B7**、名前を格納する必要があります**Davolio**します。
+1. セルをクリックします。 **B7**、名前を格納する必要があります**Davolio**します。
 
-2.  名前を入力します**Anderson**、し、キーを押します**Enter**します。
+2. 名前を入力します**Anderson**、し、キーを押します**Enter**します。
 
 ### <a name="to-modify-a-column-header"></a>列ヘッダーを変更するには
 
-1.  列ヘッダーを含むセルをクリックします。 **LastName**します。
+1. 列ヘッダーを含むセルをクリックします。 **LastName**します。
 
-2.  型**姓**2 つの単語の間にスペースをなど、キーを押します**Enter**します。
+2. 型**姓**2 つの単語の間にスペースをなど、キーを押します**Enter**します。
 
 ### <a name="to-save-data"></a>データを保存するには
 
-1.  クリックして**保存**ワークシートにします。
+1. クリックして**保存**ワークシートにします。
 
-2.  Excel を終了します。 クリックして**いいえ**行った変更を保存するように求められたらします。
+2. Excel を終了します。 クリックして**いいえ**行った変更を保存するように求められたらします。
 
-3.  キーを押して**F5**プロジェクトをもう一度実行します。
+3. キーを押して**F5**プロジェクトをもう一度実行します。
 
      リスト オブジェクトからのデータが格納、**従業員**テーブル。
 
-4.  注意してセル内の名前**B7**が**Anderson**、行われ、元のデータベースに保存するデータは変更できます。 列ヘッダー **LastName**が、列ヘッダーがデータベースにバインドされていないと、ワークシートに加えた変更を保存しなかったため、スペースを入れずに元の形式に変更されました。
+4. 注意してセル内の名前**B7**が**Anderson**、行われ、元のデータベースに保存するデータは変更できます。 列ヘッダー **LastName**が、列ヘッダーがデータベースにバインドされていないと、ワークシートに加えた変更を保存しなかったため、スペースを入れずに元の形式に変更されました。
 
 ### <a name="to-add-new-rows"></a>新しい行を追加するには
 
@@ -184,44 +184,44 @@ ms.locfileid: "56643107"
 
 ### <a name="to-delete-rows"></a>行を削除するには
 
--   ワークシートの左端までの番号 16 (16 行) を右クリックし、**削除**します。
+- ワークシートの左端までの番号 16 (16 行) を右クリックし、**削除**します。
 
 ### <a name="to-sort-the-rows-in-the-list"></a>一覧の行を並べ替える
 
-1.  リスト内のセルを選択します。
+1. リスト内のセルを選択します。
 
      各列ヘッダーの矢印ボタンが表示されます。
 
-2.  矢印ボタンをクリックして、**姓**列ヘッダー。
+2. 矢印ボタンをクリックして、**姓**列ヘッダー。
 
-3.  クリックして**昇順で並べ替えます**します。
+3. クリックして**昇順で並べ替えます**します。
 
      行は、姓でアルファベット順に並べ替えられます。
 
 ### <a name="to-filter-information"></a>情報をフィルター処理
 
-1.  リスト内のセルを選択します。
+1. リスト内のセルを選択します。
 
-2.  矢印ボタンをクリックして、**タイトル**列ヘッダー。
+2. 矢印ボタンをクリックして、**タイトル**列ヘッダー。
 
-3.  クリックして**営業担当者**します。
+3. クリックして**営業担当者**します。
 
      一覧にある行のみが表示**の営業担当者**で、**タイトル**列。
 
-4.  矢印ボタンをクリックして、**タイトル**列ヘッダーをもう一度です。
+4. 矢印ボタンをクリックして、**タイトル**列ヘッダーをもう一度です。
 
-5.  クリックして **(すべて)** します。
+5. クリックして **(すべて)** します。
 
      フィルターが削除され、すべての行が表示されます。
 
 ## <a name="next-steps"></a>次の手順
  このチュートリアルでは、データベース内のテーブルをリスト オブジェクトにバインドの基本を説明します。 ここでは、次のタスクを行います。
 
--   データをキャッシュにオフラインで使用できるようにします。 詳細については、「[方法 :オフラインか、サーバーで使用するデータをキャッシュ](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)します。
+- データをキャッシュにオフラインで使用できるようにします。 詳細については、「[方法 :オフラインか、サーバーで使用するデータをキャッシュ](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)します。
 
--   ソリューションをデプロイします。 詳細については、[Office ソリューションを配置](../vsto/deploying-an-office-solution.md)を参照してください。
+- ソリューションを展開する。 詳細については、次を参照してください。 [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
 
--   フィールドとテーブル間のマスター/詳細関係を作成します。 詳細については、「[チュートリアル:キャッシュされたデータセットを使用してマスター/詳細関係を作成して](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)します。
+- フィールドとテーブル間のマスター/詳細関係を作成します。 詳細については、「[チュートリアル:キャッシュされたデータセットを使用してマスター/詳細関係を作成して](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションでのコントロールにデータをバインドします。](../vsto/binding-data-to-controls-in-office-solutions.md)

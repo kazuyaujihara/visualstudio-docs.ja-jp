@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd9b728ee8537f5668914f05f05481fd3fe56d92
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d688e737593ab4eaaeddfe0edcae57c99be4f8ad
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780425"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663730"
 ---
 # <a name="toolbox-html-tab"></a>ツールボックス、[HTML] タブ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 ツールボックスの **[HTML]** タブは、Web ページと Web フォームで使用するコンポーネントを提供します。 このタブを表示するには、まず、HTML デザイナーで編集するためのドキュメントを開きます。 **[表示]** メニューで **[ツールボックス]** をクリックし、ツールボックスの **[HTML]** タブをクリックします。  
   
  **[HTML]** タブでツールのインスタンスを作成するには、ドキュメントに追加するツールをダブルクリックするか、またはツールを選択して編集サーフェイスの目的の位置にドラッグします。  
@@ -55,7 +54,7 @@ ms.locfileid: "54780425"
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- 詳細については、次を参照してください[HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputButton サーバー コントロール宣言構文](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa)、 [NIB: 方法: スクリプトの作成とイベント ハンドラーの編集](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)、 。[ボタンの Web サーバー コントロールのコンテンツ マップ](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf)、 <xref:System.Web.UI.HtmlControls.HtmlInputButton>、 <xref:System.Web.UI.HtmlControls.HtmlButton>、および<xref:System.Web.UI.WebControls.Button>します。  
+ 詳細については、「[HTML Input Controls (HTML Input コントロール)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputButton Server Control Declarative Syntax (HtmlInputButton サーバー コントロール宣言構文)](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa)」、[NIB: 方法 : スクリプトの作成とイベント ハンドラーの編集](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)に関するページ、[Button Web サーバー コントロールのコンテンツ マップ](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf)に関するページ、<xref:System.Web.UI.HtmlControls.HtmlInputButton>、<xref:System.Web.UI.HtmlControls.HtmlButton>、および <xref:System.Web.UI.WebControls.Button> をご覧ください。  
   
  **入力 (リセット)**  
  ![HTMLpageResetButton スクリーンショット](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -68,7 +67,7 @@ ms.locfileid: "54780425"
 <input id="Reset1" type="reset" value="Reset" name="Reset1">  
 ```  
   
- 詳細については、次を参照してください。 [HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputReset サーバー コントロール宣言構文](http://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979)、 <xref:System.Web.UI.HtmlControls.HtmlInputButton>、および<xref:System.Web.UI.WebControls.Button>します。  
+ 詳細については、「[HTML Input Controls (HTML Input コントロール)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputReset Server Control Declarative Syntax (HtmlInputReset サーバー コントロール宣言構文)](http://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979)」、<xref:System.Web.UI.HtmlControls.HtmlInputButton>、および <xref:System.Web.UI.WebControls.Button> をご覧ください。  
   
  **入力 (送信)**  
  ![HTMLpageToolbarSubmitButton スクリーンショット](../../ide/reference/media/vxsubmit.gif "vxSubmit")  
@@ -81,7 +80,7 @@ ms.locfileid: "54780425"
 <input id="Submit1" type="submit" value="Submit" name="Submit1">  
 ```  
   
- 詳細については、次を参照してください。 [HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputSubmit サーバー コントロール宣言構文](http://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2)、 <xref:System.Web.UI.HtmlControls.HtmlInputButton>、および<xref:System.Web.UI.WebControls.Button>します。  
+ 詳細については、「[HTML Input Controls (HTML Input コントロール)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputSubmit Server Control Declarative Syntax (HtmlInputSubmit サーバー コントロール宣言構文)](http://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2)」、<xref:System.Web.UI.HtmlControls.HtmlInputButton>、および <xref:System.Web.UI.WebControls.Button> をご覧ください。  
   
  **入力 (テキスト)**  
  ![HTMLpageToolbarTextField スクリーンショット](../../ide/reference/media/vxtextfield.gif "vxTextfield")  
@@ -94,7 +93,7 @@ ms.locfileid: "54780425"
 <input id="Text1" TYPE="text" value="Text Field" name="Text1">  
 ```  
   
- 詳細については、次を参照してください[HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputText サーバー コントロール宣言構文](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e)、 [TextBox Web サーバー コントロールの概要](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f)、 <xref:System.Web.UI.HtmlControls.HtmlInputText>、と。<xref:System.Web.UI.WebControls.TextBox>  
+ 詳細については、「[HTML Input Controls (HTML Input コントロール)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputText Server Control Declarative Syntax (HtmlInputText サーバー コントロール宣言構文)](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e)」、「[TextBox Web Server Control Overview (TextBox Web サーバー コントロールの概要)](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f)」、<xref:System.Web.UI.HtmlControls.HtmlInputText>、および <xref:System.Web.UI.WebControls.TextBox> をご覧ください。  
   
 > [!IMPORTANT]
 >  すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  
@@ -110,7 +109,7 @@ ms.locfileid: "54780425"
 <input id="File1" type="file" name="File1">  
 ```  
   
- 詳細については、次を参照してください。 [HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputFile サーバー コントロール宣言構文](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6)、および<xref:System.Web.UI.HtmlControls.HtmlInputFile>します。  
+ 詳細については、「[HTML Input Controls (HTML Input コントロール)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputFile Server Control Declarative Syntax (HtmlInputFile サーバー コントロール宣言構文)](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6)」、および <xref:System.Web.UI.HtmlControls.HtmlInputFile> をご覧ください。  
   
 > [!IMPORTANT]
 >  すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  
@@ -142,7 +141,7 @@ ms.locfileid: "54780425"
 <input id="Checkbox1" type="checkbox" name="Checkbox1">   
 ```  
   
- 詳細については、次を参照してください[HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputCheckBox サーバー コントロール宣言構文](http://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6)、[チェック ボックスをオンおよび CheckBoxList Web サーバー コントロールの概要](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf)、。<xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>、および<xref:System.Web.UI.WebControls.CheckBox>します。  
+ 詳細については、「[HTML Input Controls (HTML Input コントロール)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputCheckBox Server Control Declarative Syntax (HtmlInputCheckBox サーバー コントロール宣言構文)](http://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6)」、「[CheckBox and CheckBoxList Web Server Controls Overview (CheckBox Web サーバー コントロールおよび CheckBoxList Web サーバー コントロールの概要)](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf)」、<xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>、および <xref:System.Web.UI.WebControls.CheckBox> をご覧ください。  
   
  **入力 (ラジオ)**  
  ![VisualStudioHTMLpageRadioButton スクリーンショット](../../ide/reference/media/vxradio.gif "vxRadio")  
@@ -155,7 +154,7 @@ ms.locfileid: "54780425"
 <input id="Radio1" type="radio" name="Radio1">  
 ```  
   
- 詳細については、次を参照してください[HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputRadioButton サーバー コントロール宣言構文](http://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33)、 [RadioButton コントロールおよび RadioButtonList Web サーバー コントロール概要。](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747)、 <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>、および<xref:System.Web.UI.WebControls.RadioButton>します。  
+ 詳細については、「[HTML Input Controls (HTML Input コントロール)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputRadioButton Server Control Declarative Syntax (HtmlInputRadioButton サーバー コントロール宣言構文)](http://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33)」、「[RadioButton and RadioButtonList Web Server Controls Overview (RadioButton および RadioButtonList Web サーバー コントロールの概要)](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747)」、<xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>、および <xref:System.Web.UI.WebControls.RadioButton> をご覧ください。  
   
  **入力 (非表示)**  
  ![HTML ページ非表示項目](../../ide/reference/media/vxhidden.gif "vxhidden")  
@@ -168,7 +167,7 @@ ms.locfileid: "54780425"
 <input id="Hidden1" type="hidden" name="Hidden1">   
 ```  
   
- 詳細については、次を参照してください。 [HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、 [HtmlInputHidden サーバー コントロール宣言構文](http://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9)、および<xref:System.Web.UI.HtmlControls.HtmlInputHidden>します。  
+ 詳細については、「[HTML Input Controls (HTML Input コントロール)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputHidden Server Control Declarative Syntax (HtmlInputHidden サーバー コントロール宣言構文)](http://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9)」、および <xref:System.Web.UI.HtmlControls.HtmlInputHidden> をご覧ください。  
   
  **テキスト領域**  
  ![HTMLpage ツール バー テキスト領域](../../ide/reference/media/vxtextarea.gif "vxTextarea")  
@@ -181,7 +180,7 @@ ms.locfileid: "54780425"
 <textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>   
 ```  
   
- 詳細については、次を参照してください。 [HtmlTextArea サーバー コントロール宣言構文](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87)、 <xref:System.Web.UI.HtmlControls.HtmlTextArea>、および<xref:System.Web.UI.WebControls.TextBox>します。  
+ 詳細については、「[HtmlTextArea Server Control Declarative Syntax (HtmlTextArea サーバー コントロール宣言構文)](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87)」、<xref:System.Web.UI.HtmlControls.HtmlTextArea>、および <xref:System.Web.UI.WebControls.TextBox> をご覧ください。  
   
 > [!IMPORTANT]
 >  すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  
@@ -197,7 +196,7 @@ ms.locfileid: "54780425"
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>   
 ```  
   
- 詳細については、次を参照してください。 [HtmlTable サーバー コントロール宣言構文](http://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9)、 [Table、TableRow、TableCell Web サーバー コントロールの概要](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a)、 <xref:System.Web.UI.HtmlControls.HtmlTable>、および<xref:System.Web.UI.WebControls.Table>します。  
+ 詳細については、「[HtmlTable Server Control Declarative Syntax (HtmlTable サーバー コントロール宣言構文)](http://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9)」、「[Table, TableRow, and TableCell Web Server Control Overview (Table、TableRow、TableCell の各 Web サーバー コントロールの概要)](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a)」、<xref:System.Web.UI.HtmlControls.HtmlTable>、および <xref:System.Web.UI.WebControls.Table> をご覧ください。  
   
  **イメージ**  
  ![HTML ページ イメージ項目](../../ide/reference/media/vximage.gif "vxImage")  
@@ -210,7 +209,7 @@ ms.locfileid: "54780425"
 <img alt="" src="">  
 ```  
   
- 詳細については、次を参照してください。 [HtmlImage サーバー コントロール宣言構文](http://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6)、[イメージ Web サーバー コントロールの概要](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9)、 <xref:System.Web.UI.HtmlControls.HtmlImage>、 <xref:System.Web.UI.HtmlControls.HtmlInputImage>、および<xref:System.Web.UI.WebControls.Image>します。  
+ 詳細については、「[HtmlImage Server Control Declarative Syntax (HtmlImage サーバー コントロール宣言構文)](http://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6)」、「[Image Web Server Control Overview (Image Web サーバー コントロールの概要)](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9)」、<xref:System.Web.UI.HtmlControls.HtmlImage>、<xref:System.Web.UI.HtmlControls.HtmlInputImage>、および <xref:System.Web.UI.WebControls.Image> をご覧ください。  
   
  **選択**  
  ![HTML ページ ツールボックス ドロップダウン](../../ide/reference/media/vxdropdown.gif "vxDropdown")  
@@ -225,7 +224,7 @@ ms.locfileid: "54780425"
   
  サイズ プロパティの値を増やすことで、複数行の `select` 要素を作成できます。  
   
- 詳細については、次を参照してください[HtmlSelect サーバー コントロール宣言構文](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5)、 [NIB: 方法: スクリプトの作成とイベント ハンドラーの編集](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)、 [DropDownList Web サーバー コントロールの概要](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608)。、 [ListBox Web サーバー コントロールの概要](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97)、 <xref:System.Web.UI.HtmlControls.HtmlSelect>、および<xref:System.Web.UI.WebControls.DropDownList>します。  
+ 詳細については、「[HtmlSelect Server Control Declarative Syntax (HtmlSelect サーバー コントロール宣言構文)](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5)」、[NIB: 方法 : スクリプトの作成とイベント ハンドラーの編集](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)に関するページ、「[DropDownList Web Server Control Overview (DropDownList Web サーバー コントロールの概要)](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608)」、「[ListBox Web Server Control Overview (ListBox Web サーバー コントロールの概要)](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97)」、<xref:System.Web.UI.HtmlControls.HtmlSelect>、および <xref:System.Web.UI.WebControls.DropDownList> をご覧ください。  
   
  **水平線**  
  ![HTML ページの水平線項目](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
@@ -251,7 +250,7 @@ ms.locfileid: "54780425"
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>  
 ```  
   
- 詳細については、次を参照してください。 [HTML Div コントロール](http://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995)、 [Label Web サーバー コントロールの概要](http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac)、および<xref:System.Web.UI.WebControls.Label>します。  
+ 詳細については、「[HTML Div Control (HTML Div コントロール)](http://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995)」、「[Label Web Server Control Overview (Label Web サーバー コントロールの概要)](http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac)」、および <xref:System.Web.UI.WebControls.Label> をご覧ください。  
   
 ## <a name="see-also"></a>関連項目
  [ツールボックス](../../ide/reference/toolbox.md)   

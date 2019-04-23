@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537560"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097324"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Visual Studio のデバッガーの生産性に関するヒントと秘訣を学習します。
 
@@ -74,17 +74,17 @@ C#、Visual Basic、およびC++(C++/CLI コードのみ)、デバッガーを�
 
 #### <a name="to-create-an-object-id"></a>オブジェクト ID を作成するには
 
-1.  追跡する変数の近くのブレークポイントを設定します。
+1. 追跡する変数の近くのブレークポイントを設定します。
 
-2.  デバッガーを起動 (**F5**) し、ブレークポイントで停止します。
+2. デバッガーを起動 (**F5**) し、ブレークポイントで停止します。
 
 3. 変数を見つけて、**ローカル**ウィンドウ (**デバッグ > Windows > [ローカル]**) では、変数を右クリックし、選択**オブジェクト ID の作成**です。
 
     ![オブジェクト ID の作成](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  **$** ウィンドウに、 **[ローカル]** ウィンドウを閉じます。 この変数はオブジェクト ID です。
+4. **$** ウィンドウに、 **[ローカル]** ウィンドウを閉じます。 この変数はオブジェクト ID です。
 
-5.  オブジェクト ID の変数を右クリックし **ウォッチ式の追加**します。
+5. オブジェクト ID の変数を右クリックし **ウォッチ式の追加**します。
 
 詳細については、次を参照してください。[オブジェクト ID の作成](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds)です。
 
@@ -126,13 +126,13 @@ C#、Visual Basic、およびC++(C++/CLI コードのみ)、デバッガーを�
 
 #### <a name="to-show-threads-in-your-source-code"></a>ソース コードのスレッドを表示するには
 
-1.  デバッグ中に、をクリックして、**ソース スレッドを表示**ボタン![ソース スレッドを表示](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")で、**デバッグ**ツールバー。
+1. デバッグ中に、をクリックして、**ソース スレッドを表示**ボタン![ソース スレッドを表示](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")で、**デバッグ**ツールバー。
 
-2.  ウィンドウ左端の余白に注目します。 この行で表示、*スレッド マーカー*アイコン![スレッド マーカー](../debugger/media/dbg-thread-marker.png "ThreadMarker")布の 2 つのスレッドと類似しています。 スレッド マーカーは、スレッドが停止している位置を示します。
+2. ウィンドウ左端の余白に注目します。 この行で表示、*スレッド マーカー*アイコン![スレッド マーカー](../debugger/media/dbg-thread-marker.png "ThreadMarker")布の 2 つのスレッドと類似しています。 スレッド マーカーは、スレッドが停止している位置を示します。
 
     スレッド マーカーを部分的にブレークポイントによって隠さ可能性がありますに注意してください。
 
-3.  スレッド マーカーの上にポインターを置きます。 DataTip が表示されます。 データヒントは、停止したスレッドごとに名前とスレッド ID 番号を表示します。
+3. スレッド マーカーの上にポインターを置きます。 DataTip が表示されます。 データヒントは、停止したスレッドごとに名前とスレッド ID 番号を表示します。
 
     内のスレッドの場所を表示することも、[並列スタック ウィンドウ](../debugger/get-started-debugging-multithreaded-apps.md)します。
 

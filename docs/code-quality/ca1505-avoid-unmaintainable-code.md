@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232497"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505:メンテナンスできないコードを使用しないでください
@@ -51,4 +51,4 @@ ms.locfileid: "59232497"
 ## <a name="see-also"></a>関連項目
 
 - [保守性に関する警告](../code-quality/maintainability-warnings.md)
-- [メジャーの複雑さとマネージ コードの保守性](../code-quality/code-metrics-values.md)
+- [マネージド コードの複雑さと保守性の測定](../code-quality/code-metrics-values.md)

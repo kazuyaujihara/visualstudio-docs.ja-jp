@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204334"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856448"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Visual Studio for Mac のアンインストール
 
@@ -96,6 +96,7 @@ rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
 Xamarin のさまざまなファイルやフォルダーを含む次のディレクトリを削除することもできます。 ただし、実行する前に、このディレクトリに Android の署名キーが含まれていることに注意してください。 詳細については、セクション「**[Android SDK と Java SDK をアンインストールする](#uninstall-android-sdk-and-java-sdk)**」を参照してください。
@@ -194,10 +195,10 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 古いバージョンでは、次の成果物を手動で削除する必要があります。
 
-* `"/Applications/Xamarin Workbooks.app"` の Workbooks アプリを削除します
-* `"Applications/Xamarin Inspector.app"` の Inspector アプリを削除します
-* アドイン `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` と `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"` を削除します
-* `/Library/Frameworks/Xamarin.Interactive.framework` および `/Library/Frameworks/Xamarin.Inspector.framework` にある Inspector のファイルとサポート ファイルを削除します
+* 次の Workbooks アプリを削除します:  `"/Applications/Xamarin Workbooks.app"`
+* 次の Inspector アプリを削除します:  `"Applications/Xamarin Inspector.app"`
+* 次アドインを削除します: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` と  `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
+* 次の Inspector のファイルとサポート ファイルを削除します: `/Library/Frameworks/Xamarin.Interactive.framework` と  `/Library/Frameworks/Xamarin.Inspector.framework`
 
 ## <a name="uninstall-the-xamarin-profiler"></a>Xamarin Profiler をアンインストールする
 
@@ -216,6 +217,22 @@ rm -rf ~/Library/Logs/XamarinInstaller/
 rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
+```
+
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Visual Studio 2019 for Mac プレビューをアンインストールする
+
+Visual Studio 2019 for Mac プレビューは、独立したプレビューとして提供されており、サイドバイサイド Visual Studio 2017 for Mac インストールを引き続き使用できます。
+
+Visual Studio 2019 for Mac がリリースされたので、Visual Studio 2019 for Mac プレビュー アプリケーションを安全に削除できます。
+
+プレビュー アプリケーション バンドルをアンインストールするには、次の図に示すように、**アプリケーション** フォルダーで **[Visual Studio (プレビュー)]** を選択し、**[ごみ箱に移動]** をクリックします。
+
+![ファインダーで [ごみ箱に移動] オプションを選択](media/uninstall-remove-vspreview.png)
+
+また、次のコマンドを使用してプレビューの plist ファイルを削除することもできます。
+
+```bash
+rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
 ## <a name="see-also"></a>関連項目

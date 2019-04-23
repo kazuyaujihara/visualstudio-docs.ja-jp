@@ -19,17 +19,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7aee698498fa59c4dc6fee66f89b496f8b21f34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f7e119eccb31774bc5b300bf9608cb2e23eb83d7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804041"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654296"
 ---
 # <a name="import-element-msbuild"></a>Import 要素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 1 つのプロジェクト ファイルの内容を別のプロジェクト ファイルにインポートします。  
   
  \<Project>  
@@ -62,7 +61,7 @@ ms.locfileid: "54804041"
 |[プロジェクト](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルの必須のルート要素です。|  
 |[ImportGroup](../msbuild/importgroup-element.md)|オプションの条件下でグループ化された `Import` 要素のコレクションが格納されます。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>Remarks  
  `Import` 要素を使用すると、複数のプロジェクト ファイルに共通するコードを再利用できます。 これにより、共有されたコードに対する更新が、そのコードをインポートしたすべてのプロジェクトに反映されるため、コードの保守が容易になります。  
   
  慣例により、インポートされた共有プロジェクト ファイルは .targets ファイルとして保存されますが、これらは標準の [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルです。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] では、別のファイル名拡張子を使用してプロジェクトをインポートすることもできますが、一貫性を持たせるために .targets 拡張子を使用することをお勧めします。  
@@ -117,4 +116,4 @@ ms.locfileid: "54804041"
   
 ## <a name="see-also"></a>関連項目
  [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
- [方法: 複数のプロジェクト ファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [方法: 複数のプロジェクト ファイルで同じターゲットを使用します。](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

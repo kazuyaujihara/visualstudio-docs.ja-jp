@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4a781bee0d0ccb1acd7d9c6b035acac603aea3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 82e82a75ce5ecff8e9b7e6d0b6aaf2e29728fc45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049062"
 ---
-# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio でデザイン時にデバッグ (C#、C++、Visual Basic、 F#)
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio でデザイン時にデバッグ (C#、 C++、Visual Basic、 F#)
 
 アプリの中にではなく、デザイン時にコードをデバッグするには、実行されている、使用することができます、**イミディ エイト**ウィンドウ。
 
@@ -33,7 +33,7 @@ ms.locfileid: "56696702"
 
 Visual Studio を使用する**イミディ エイト**ウィンドウで、アプリを実行することがなく、関数またはサブルーチンを実行します。 関数またはサブルーチンにブレークポイントが含まれる場合は、Visual Studio がブレークポイントで中断されます。 デバッガー ウィンドウを使用して、プログラムの状態を確認できます。 この機能は、*デザイン時のデバッグ*と呼ばれます。
 
-次の例は、Visual Basic では。 使用することも、**イミディ エイト**でデザイン時にウィンドウC#、 F#、および C++ アプリ。
+次の例は、Visual Basic では。 使用することも、**イミディ エイト**でデザイン時にウィンドウC#、 F#、およびC++アプリ。
 
 1. 空の Visual Basic コンソール アプリケーションには、次のコードを貼り付けます。
 
@@ -102,6 +102,7 @@ Visual Studio を使用する**イミディ エイト**ウィンドウで、ア�
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
     ```
+
    ページが読み込まれると、ブレークポイントにヒットします。
 
 ## <a name="see-also"></a>関連項目

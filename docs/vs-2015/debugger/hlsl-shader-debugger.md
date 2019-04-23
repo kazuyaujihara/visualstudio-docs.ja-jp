@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aebe99754b19579bbc3475e0eb9a6941da43e558
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac9352af6bd22ca2cc21545945d56a10db2c458f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964354"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074389"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL シェーダーのデバッガー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ Visual Studio Graphics Analyzer で HLSL デバッガーを使用すると、ア
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>[グラフィックス パイプライン ステージ] ウィンドウから HLSL デバッガーを起動するには  
   
-1.  **[グラフィックス パイプライン ステージ]** ウィンドウで、デバッグするシェーダーに関連付けられているパイプライン ステージを見つけます。  
+1. **[グラフィックス パイプライン ステージ]** ウィンドウで、デバッグするシェーダーに関連付けられているパイプライン ステージを見つけます。  
   
-2.  パイプライン ステージのタイトルの下で、小さい緑色の矢印として表示される **[デバッグの開始]** をクリックします。  
+2. パイプライン ステージのタイトルの下で、小さい緑色の矢印として表示される **[デバッグの開始]** をクリックします。  
   
     > [!NOTE]
     >  HLSL デバッガーへのこのエントリ ポイントでは、対応するステージの最初のシェーダー スレッドのみをデバッグします。つまり、処理する最初の頂点またはピクセルです。 [ピクセル履歴] を使用して、これらのシェーダー ステージの他のスレッドにアクセスできます。  

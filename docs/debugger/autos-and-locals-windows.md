@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366550"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103096"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>[自動変数] と [ローカル] ウィンドウに変数を検査します。
 
@@ -56,9 +56,9 @@ ms.locfileid: "59366550"
 >[!CAUTION]
 >値と式を変更する前に、結果を理解することを確認します。 いくつか考えられる問題は次のとおりです。
 >
->-   式を評価すると、変数の値が変わる場合や、プログラムの状態に影響が及ぶ場合があります。 たとえば、評価`var1 = ++var2`両方の値を変更`var1`と`var2`します。 これらの式といいますが[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))します。 副作用で、それらを認識していない場合、予期しない結果が生じる場合があります。
+>- 式を評価すると、変数の値が変わる場合や、プログラムの状態に影響が及ぶ場合があります。 たとえば、評価`var1 = ++var2`両方の値を変更`var1`と`var2`します。 これらの式といいますが[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))します。 副作用で、それらを認識していない場合、予期しない結果が生じる場合があります。
 >
->-   浮動小数点値を編集すると、小数部分の 10 進とバイナリの変換により、多少の誤差が発生する場合があります。 一見無害の編集もバイトが、浮動小数点変数のビットの一部に変更します。
+>- 浮動小数点値を編集すると、小数部分の 10 進とバイナリの変換により、多少の誤差が発生する場合があります。 一見無害の編集もバイトが、浮動小数点変数のビットの一部に変更します。
 
 ::: moniker range=">= vs-2019" 
 ## <a name="search-in-the-autos-or-locals-window"></a>[自動変数] または [ローカル] ウィンドウで検索します。
@@ -85,9 +85,9 @@ ms.locfileid: "59366550"
 
 ## <a name="bkmk_whatvariables"></a> [自動変数] ウィンドウで変数 (C#、C++、Visual Basic、Python)
 
- 別のコードの言語での異なる変数を表示する、 **[自動変数]** ウィンドウ。
+別のコードの言語での異なる変数を表示する、 **[自動変数]** ウィンドウ。
 
- - C# および Visual Basic では、**[自動変数]** ウィンドウに現在の行または前の行に使用されている変数がすべて表示されます。 たとえば、C#または Visual Basic のコードは、次の 4 つの変数を宣言します。
+- C# および Visual Basic では、**[自動変数]** ウィンドウに現在の行または前の行に使用されている変数がすべて表示されます。 たとえば、C#または Visual Basic のコードは、次の 4 つの変数を宣言します。
 
    ```csharp
        public static void Main()
@@ -106,7 +106,7 @@ ms.locfileid: "59366550"
 
    値`c`なので、行`c = 3`実行されていません。
 
- - C++ では、 **[自動変数]** ウィンドウには、実行が一時停止している現在の行の前に少なくとも 3 つの行で使用される変数が表示されます。 たとえば、C++ コードでは、6 つの変数を宣言します。
+- C++ では、 **[自動変数]** ウィンドウには、実行が一時停止している現在の行の前に少なくとも 3 つの行で使用される変数が表示されます。 たとえば、C++ コードでは、6 つの変数を宣言します。
 
    ```C++
        void main() {
@@ -126,7 +126,7 @@ ms.locfileid: "59366550"
 
     変数`e`ために、初期化、されていない行`e = 5`が実行されていません。
 
-##  <a name="bkmk_returnValue"></a> View return values of method calls
+## <a name="bkmk_returnValue"></a> View return values of method calls
  .NET および C++ のコードでの戻り値を確認することができます、 **[自動変数]** ステップ上またはメソッドの呼び出しからステップするときにウィンドウ。 表示メソッドの呼び出しを返す、ローカル変数に保存されていない場合、値が役に立ちます。 メソッドは、パラメーター、または別のメソッドの戻り値として使用できます。
 
  たとえば、次C#コードは、2 つの関数の戻り値を追加します。

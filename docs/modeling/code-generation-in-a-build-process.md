@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02608d5bc1b2c03560b5d954084d84059c34224a
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 07f7c91c74961fa846abb70637f358de59d0eb94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117097"
 ---
 # <a name="code-generation-in-a-build-process"></a>ビルド プロセスでのコード生成
 
@@ -28,7 +28,7 @@ ms.locfileid: "57324326"
 
 これは、MSBuild でテキスト テンプレートをビルドする時と同じで、プロジェクトのファイル名のようなものにアクセスできないことを意味します。 ただし、[ビルド パラメーターを使用してテキスト テンプレートとディレクティブ プロセッサに環境情報を渡す](#parameters)ことができます。
 
-##  <a name="buildserver"></a> コンピューターを構成します。
+## <a name="buildserver"></a> コンピューターを構成します。
 
 開発用コンピューターでビルド タスクを有効にするには、for Visual Studio Modeling SDK をインストールします。
 
@@ -216,7 +216,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> テンプレートにビルド コンテキスト データを渡す
+## <a name="parameters"></a> テンプレートにビルド コンテキスト データを渡す
 
 プロジェクト ファイルにパラメーターと値を設定できます。 たとえば、[ビルド](../msbuild/msbuild-properties.md)プロパティと[環境変数](../msbuild/how-to-use-environment-variables-in-a-build.md)を渡すことができます。
 
@@ -250,7 +250,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue` は、MSBuild を使用する場合に限り、`T4ParameterValues` からデータを取得します。 Visual Studio を使用してテンプレートを変換すると、パラメーターは既定値になります。
 
-##  <a name="msbuild"></a> assembly および include ディレクティブで、プロジェクトのプロパティを使用する
+## <a name="msbuild"></a> assembly および include ディレクティブで、プロジェクトのプロパティを使用する
 
 Visual Studio のマクロ **$ (solutiondir)** などは、MSBuild では動作しません。 その代わりに、プロジェクト プロパティを使用できます。
 

@@ -11,12 +11,12 @@ ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 422a641455d6b706250ca34e3857c3e8d21920ca
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4da225417724f1de39f25a1527bdf980f3d369cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58973750"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039200"
 ---
 # <a name="enumerating-locals"></a>ローカルの列挙
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ ms.locfileid: "58973750"
   
  この実装の`IDebugProperty2::EnumChildren`は、次のタスクを実行します。  
   
-1.  により、このメソッドを表すです。  
+1. により、このメソッドを表すです。  
   
-2.  使用して、`guidFilter`引数を呼び出す方法を決定する、 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)オブジェクト。 場合`guidFilter`と等しい。  
+2. 使用して、`guidFilter`引数を呼び出す方法を決定する、 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)オブジェクト。 場合`guidFilter`と等しい。  
   
-    1.  `guidFilterLocals`を呼び出す[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)を取得する、 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md)オブジェクト。  
+    1. `guidFilterLocals`を呼び出す[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)を取得する、 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md)オブジェクト。  
   
-    2.  `guidFilterArgs`を呼び出す[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)を取得する、`IEnumDebugFields`オブジェクト。  
+    2. `guidFilterArgs`を呼び出す[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)を取得する、`IEnumDebugFields`オブジェクト。  
   
-    3.  `guidFilterLocalsPlusArgs`、から結果を結合する列挙体を合成`IDebugMethodField::EnumLocals`と`IDebugMethodField::EnumArguments`します。 この合成がクラスによって表される`CEnumMethodField`します。  
+    3. `guidFilterLocalsPlusArgs`、から結果を結合する列挙体を合成`IDebugMethodField::EnumLocals`と`IDebugMethodField::EnumArguments`します。 この合成がクラスによって表される`CEnumMethodField`します。  
   
-3.  クラスをインスタンス化します (と呼ばれる`CEnumPropertyInfo`この例では) を実装する、`IEnumDebugPropertyInfo2`インターフェイスし、が含まれています、`IEnumDebugFields`オブジェクト。  
+3. クラスをインスタンス化します (と呼ばれる`CEnumPropertyInfo`この例では) を実装する、`IEnumDebugPropertyInfo2`インターフェイスし、が含まれています、`IEnumDebugFields`オブジェクト。  
   
-4.  返します、`IEnumDebugProperty2Info2`からインターフェイス、`CEnumPropertyInfo`オブジェクト。  
+4. 返します、`IEnumDebugProperty2Info2`からインターフェイス、`CEnumPropertyInfo`オブジェクト。  
   
 ## <a name="managed-code"></a>マネージド コード  
  この例の実装を示しています。`IDebugProperty2::EnumChildren`マネージ コードでします。  

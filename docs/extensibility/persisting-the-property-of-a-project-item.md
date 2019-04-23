@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d2a359d49102daf4c221632fd275f9ef06e324
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58b2495adf66f6c83bc631650e2a0f06f5b7cdd0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047386"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>プロジェクト項目のプロパティを永続化します。
 ソース ファイルの作成者などのプロジェクト項目に追加するプロパティを保持することがあります。 プロジェクト ファイルでプロパティを格納することで、これを行うことができます。
@@ -27,7 +27,7 @@ ms.locfileid: "54963984"
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>DTE オブジェクトをプロジェクトの階層を取得するには
 
-1.  次のコードを VSPackage に追加します。
+1. 次のコードを VSPackage に追加します。
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -41,7 +41,7 @@ ms.locfileid: "54963984"
 
 ## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>DTE オブジェクトとプロジェクト項目のプロパティを永続化するには
 
-1.  メソッドで、前の手順で指定されたコードには、次のコードを追加します。
+1. メソッドで、前の手順で指定されたコードには、次のコードを追加します。
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,7 +58,7 @@ ms.locfileid: "54963984"
 
 ## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>IVsMonitorSelection を使用して、プロジェクト階層を取得するには
 
-1.  次のコードを VSPackage に追加します。
+1. 次のコードを VSPackage に追加します。
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,7 +102,7 @@ ms.locfileid: "54963984"
 
 ## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>プロジェクトの階層を指定された、選択したプロジェクト項目のプロパティを永続化するには
 
-1.  メソッドで、前の手順で指定されたコードには、次のコードを追加します。
+1. メソッドで、前の手順で指定されたコードには、次のコードを追加します。
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -122,7 +122,7 @@ ms.locfileid: "54963984"
 3. ブレークポイントを使用して、またはそれ以外の場合、VSPackage が読み込まれていると、SetItemAttribute が実行されることを確認します。
 
    > [!NOTE]
-   > UI のコンテキストで VSPackage を自動読み込みを実行できます<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>します。 詳細については、[ロード Vspackage](../extensibility/loading-vspackages.md)を参照してください。
+   > UI のコンテキストで VSPackage を自動読み込みを実行できます<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>します。 詳細については、次を参照してください。[ロード Vspackage](../extensibility/loading-vspackages.md)します。
 
 4. 閉じる[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]し、メモ帳でプロジェクト ファイルを開きます。 表示する必要があります、\<作成者 > 次のように、値は、Tom タグします。
 

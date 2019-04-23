@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b655609548d3de293abe2adc0ec3fb5c6fcf297b
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232484"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506:クラス結合度を大きくしすぎないでください
@@ -50,5 +50,5 @@ ms.locfileid: "59232484"
 
 ## <a name="see-also"></a>関連項目
 
-- [保守性に関する警告](../code-quality/maintainability-warnings.md)
+- [保守性の警告](../code-quality/maintainability-warnings.md)
 - [マネージド コードの複雑さと保守性の測定](../code-quality/code-metrics-values.md)

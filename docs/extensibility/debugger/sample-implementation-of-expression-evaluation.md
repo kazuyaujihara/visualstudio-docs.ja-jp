@@ -12,26 +12,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2afb20f2a337008bc3d3b7fe3dd6aaa5b3f163cf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b933277a2c509356037e585b7d2256a587c233
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090542"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>式の評価の実装のサンプル
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーター サンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
+>  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーター サンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
 
  **ウォッチ**ウィンドウ式、Visual Studio 呼び出し[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)生成するために、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクト。 `IDebugExpressionContext2::ParseText` 式エバリュエーター (EE) および呼び出しをインスタンス化[解析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)を取得する、 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)オブジェクト。
 
  `IDebugExpressionEvaluator::Parse`は、次のタスクを実行します。
 
-1.  [C++ のみ]エラーを検索する式を解析します。
+1. [C++のみ]エラーを検索する式を解析します。
 
-2.  クラスをインスタンス化します (と呼ばれる`CParsedExpression`この例では) を実行する、`IDebugParsedExpression`インターフェイスし、クラスで解析する式を格納します。
+2. クラスをインスタンス化します (と呼ばれる`CParsedExpression`この例では) を実行する、`IDebugParsedExpression`インターフェイスし、クラスで解析する式を格納します。
 
-3.  返します、`IDebugParsedExpression`からインターフェイス、`CParsedExpression`オブジェクト。
+3. 返します、`IDebugParsedExpression`からインターフェイス、`CParsedExpression`オブジェクト。
 
 > [!NOTE]
 >  以下の例と MyCEE サンプルでは、式エバリュエーターで分離されていない、評価を解析します。
